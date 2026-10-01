@@ -57,21 +57,50 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Close reading of Agamben's Homo Sacer",
+      "description": "Summarizes and contextualizes Agamben's account of bare life, sovereignty and the state of exception as the foundation for later sections.",
+      "evidence": "Here I provide an overall summary and contextualization of the work, to provide a foundation for the coming sections which will augment these ideas with perspectives from cognitive sovereignty, philosophy of science, and Active Inference."
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Agamben-Kuhn analogy of exception and revolutionary science",
+      "description": "Treats Kuhnian paradigm shifts as analogous to the sovereign decision on the state of exception, both grounding what counts as valid.",
+      "evidence": "This process of revolutionary science is analogous to the sovereign decision on the state of exception."
+    },
+    {
+      "name": "Mapping via the Active Inference Ontology (affordances, VFE, EFE)",
+      "description": "Uses Active Inference Ontology terms to map the state of exception to affordances, bare life to VFE, and sovereign agency to EFE.",
+      "evidence": "the state itself is analyzed in terms of affordances, bare life is considered in terms of variational free energy, and sovereign agency is explored in terms of expected free energy."
+    },
+    {
+      "name": "'Active Stateference' Python-style pseudocode",
+      "description": "Provides draft pseudocode of a single-agent generative model with lawful/unlawful/just/unjust states, a remapped model under exception, and a VFE loop.",
+      "evidence": "Here we provide a draft of pseudocode for “Active Stateference” an Active Inference generative model of the state of exception."
     }
   ],
   "key_findings": [
-    "This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science.",
-    "It argues that realized epist..."
+    "Asserts that realized epistemic agency is grounded in the enacted policy selection of the cognitive sovereign.",
+    "Argues that sovereigns in a state of exception gain exceptional affordances that emerge from new precision dynamics, sustained by perceiving the state as dangerous.",
+    "Proposes that the subject's VFE-bare life connection grounds the sovereign's EFE-agency relationship through the state of exception.",
+    "Concludes that, under 'Bayesian State Mechanics', the sovereign's expected free energy causally influences the subject's variational free energy.",
+    "Notes that the current model considers only one agent and outlines extensions to multi-agent 'Active GovernAnts', cognitive security and quantum settings."
   ],
   "related_papers": [
     "2020_EmergentTeams",
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
-  ]
+  ],
+  "key_findings_evidence": [
+    "We assert that realized epistemic agency is grounded in the enacted policy selection of the cognitive sovereign.",
+    "These exceptional affordances are not present in normal (or civic non-martial) times, but emerge as a result of new precision dynamics of the system.",
+    "through the crucible/regime of the state of exception, the {VFE - Bare Life} connection of the political subject grounds the {EFE - Sovereign Agency} relationship of the sovereign.",
+    "the Expected Free Energy (agentic planning as inference) of the sovereign causally influences the Variational Free Energy (bare life) of the subject.",
+    "Currently the model only considers a single decision-making agent. We can explore the use of multiple agents to enhance its capabilities and make it more robust"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Conceptual/philosophical paper; the Active Stateference model is draft pseudocode only (not run or evaluated)."
+  }
 }

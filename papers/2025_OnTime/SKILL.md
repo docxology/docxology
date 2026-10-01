@@ -26,7 +26,12 @@ No paper-specific methods have been summarized yet; see the abstract and the ful
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Proposes that knowledge is learning in time from sequences of observations, while wisdom is learning from time, from sequences of observed sequences as time passes.
+- Offers a counterpose in which knowledge is learning from time (causal consequences, patterns) and wisdom is learning in time, including learning "to know when".
+- Combines both framings into a four-quadrant tetralemma in which knowledge and wisdom can each be in and from time.
+- Argues this tetralemmal framing enables a perspective swap between unity and plurality (Blake's Innocence and Experience), i.e. between being out of and in time.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 

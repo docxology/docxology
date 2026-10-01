@@ -20,13 +20,23 @@ This work addresses topics in **Active Inference**: Active Inference, meta-analy
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Multi-source retrieval (arXiv, Semantic Scholar, OpenAlex) with ID-hierarchy dedup** — Literature was retrieved from three databases and deduplicated to 819 papers using a DOI > arXiv > Semantic Scholar > OpenAlex identifier hierarchy.
+- **Keyword-based A/B/C domain taxonomy (200+ indicators, 8 categories)** — Papers were classified into Core Theory, Tools & Translation and Application Domains by keyword matching rather than expert annotation.
+- **Abstract-only LLM assertion extraction with gemma3:4b on local Ollama** — Each abstract was assessed against eight hypotheses via a JSON-schema prompt returning direction, confidence and reasoning.
+- **Nanopublication knowledge graph with citation-weighted hypothesis scoring** — Extracted assertions became structured nanopublications in an RDF-compatible knowledge graph scored by a citation-weighted evidence function.
+- **NMF topic modelling and intra-corpus citation network analysis** — Non-negative matrix factorization was used to find latent topics, and citation edges among corpus papers were analyzed for network topology.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Application domains dominated the corpus (Domain C 64.0%), with tools (B) at 20.8% and core theory (A) at 15.2%.
+- The citation network was sparse: 2,176 intra-corpus edges out of 29,323 outgoing references (7.4% resolution), anchored by hub papers.
+- Hypothesis scores clustered into tiers, with H1 FEP Universality in a diffuse tier (about +0.48) dominated by neutral assessments.
+- The authors caution that all assertions are automatically generated and not manually validated, so hypothesis scores are preliminary.
+- Preliminary experiments indicated about 15-20% over-extraction, and error rates for the 819-paper run were not quantified.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.19461933`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

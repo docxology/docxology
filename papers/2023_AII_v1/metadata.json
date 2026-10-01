@@ -151,17 +151,32 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Program coordination",
-      "description": "Applied program coordination approach"
+      "name": "Versioned living-document survey of the Institute and Ecosystem",
+      "description": "Surveys the Institute's current state and future directions in a document meant to be versioned and updated over time.",
+      "evidence": "It will be versioned as a living representation (both cyclic and updating) of ecosystems both general and local, describing the past, present, and future actions of the Active Inference Institute."
     },
     {
-      "name": "Community governance design",
-      "description": "Applied community governance design approach"
+      "name": "PubMed citation-share trend for \"Active Inference\" (2006-July 2023)",
+      "description": "Plots the proportion of PubMed citations per 100,000 publications for \"Active Inference\" to illustrate growth of the field.",
+      "evidence": "Figure 3. Proportion of citations per 100,000 on NCBI PubMed for “Active Inference” (blue line) from 2006 till July 31, 2023."
+    },
+    {
+      "name": "Keyword scrape of affiliations in the Institute's livestream roster",
+      "description": "Scrapes affiliation keywords from people who appeared or were invited on livestreams, acknowledged as a partial sample.",
+      "evidence": "Figure 4. Keyword scrape from affiliations within The Institute’s roster of people who have appeared or been invited to join for a livestream."
+    },
+    {
+      "name": "Three-scale evaluation plan: participant, Institute, Ecosystem",
+      "description": "Proposes evaluation of quality, performance and growth at three scales, using metrics such as surveys, commits, and course completion.",
+      "evidence": "The Institute intends to evaluate quality, performance, and growth within community development at three scales, listed below, based on best practices within the open source community [123,124]"
     }
   ],
   "key_findings": [
-    "This document briefly surveys the current state of the Active Inference Institute and Active Inference Ecosystem, and outlines our future directions..",
-    "It will be versioned as a living representation (both cyclic and updating) of ecosystems both general and local, describing the past, present, and future actions of the Active Inference Institute.."
+    "The Institute traces its origin to a 2020 co-founder collaboration, the ActInfLab formed in 2021, and its 2022 transition into a Delaware non-profit.",
+    "The document reports that in 2022 there were 103 PubMed citations for \"Active Inference\" out of 1,772,674 publications.",
+    "The authors state the Institute has hosted or facilitated hundreds of open-source licensed products serving Awareness, Education, Commons, Support and Governance.",
+    "The authors identify key challenges including onboarding, tool usability, scalability of support functions, communications, and administrative and financial support.",
+    "The authors describe choosing an 'open' ecosystem approach over a closed, laboratory-centric one that might have siloed Active Inference academically."
   ],
   "related_papers": [
     "2022_ActiveDiffusion",
@@ -169,5 +184,19 @@
     "2024_OntologySUMO"
   ],
   "artifact_doi": "10.5281/zenodo.8266281",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.8266281"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.8266281",
+  "key_findings_evidence": [
+    "In 2022, ActInfLab made the developmental leap to become the Active Inference Institute, a non-profit formed in Delaware, USA",
+    "In the last complete year (2022), there were 103 citations for “Active Inference” of 1,772,674 publications total.",
+    "To date, The Institute has hosted or facilitated the development of hundreds of open-source licensed products which serve various functions in the Ecosystem including Awareness, Education, Commons, Support, and Governance",
+    "The following challenges were identified as among the most important to address for the Active Inference Institute in order to support further flourishing of the Active Inference Ecosystem:",
+    "rather than take a closed system (laboratory-centric) approach alone, which might have relegated Active Inference to an isolated academic disciplinary silo, we recognized the benefits that accrue from an “open” approach"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "book/report",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Organizational report (v1, 2023) rather than a research paper; methods describe the document's descriptive and planning approaches. Evaluation metrics are proposed, not reported."
+  }
 }

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: In this interview, Robert Sapolsky outlines his view on Free Will and related topics.., The discussion anticipates his upcoming book Determined: The Science of Life Without Free Will.., Various topics are covered at the intersection of neuroscience with philosophy, education, and the criminal justice system..
+- Extracts methods: Written Q&A interview of Robert Sapolsky by Mikhailova and Friedman, Questions seeded from Sapolsky's prior podcast appearances
+- Identifies findings: Sapolsky states he is fully convinced humans have no free will, a view he says he has held since adolescence., Sapolsky argues that our conscious sense of agency is usually a post-hoc attribution., Responding to claims that disbelief in free will increases cheating, Sapolsky says those studies have not been replicated and that people already disbelieving are not less ethical.
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR

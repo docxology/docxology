@@ -40,5 +40,53 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-08-02T15:11:27Z"
+  "checked_at": "2026-08-02T15:11:27Z",
+  "methods": [
+    {
+      "name": "Declarative set registry: four LineEntry records plus one shared token",
+      "description": "Declares the set (Red, Black, Golden, White Line) as data, each entry naming its question, job, and what it must not become.",
+      "evidence": "The package is pure standard library and depends on nothing. Its declaration is four LineEntry records and one shared token."
+    },
+    {
+      "name": "Five-stage reader with fixed-precedence set statuses",
+      "description": "Reads installed sibling packages through resolve, bind, collide, declare and status stages, returning one of four SET_-prefixed readings.",
+      "evidence": "Its reader runs five recorded stages — resolve, bind, collide, declare, status — and returns one of four readings, in fixed precedence:"
+    },
+    {
+      "name": "Enum-member name collision check across sibling package roots",
+      "description": "Collects enum member names each line publishes at its package root and flags any name carried by more than one line, unless declared and disambiguated.",
+      "evidence": "collects the enum member names each of them publishes at its package root, and reports whether any name is carried by more than one line."
+    },
+    {
+      "name": "Seven offline structural checks plus a self-application check",
+      "description": "Runs seven declaration-only checks and an eighth that applies the package's own collision check to a declaration including itself.",
+      "evidence": "Seven structural checks run offline over the declaration alone; an eighth, which needs the siblings importable, applies this package’s own collision check to a declaration that includes this package"
+    },
+    {
+      "name": "Executed extensibility example appending a fifth colour at runtime",
+      "description": "Appends a hypothetical green_line entry without editing the package and runs the battery and reader on the extended declaration.",
+      "evidence": "Here is a fifth colour, appended at runtime and put through the whole battery. Nothing in the package was edited to run it."
+    }
+  ],
+  "key_findings": [
+    "On the review date the four packages yielded 81 line-and-name pairs spanning 80 distinct names, and the only shared name was the already-declared, disambiguated one.",
+    "The single shared name was OUTSIDE_SCOPE, carried by red_line and black_line.",
+    "Appending a fifth line whose package is not installed yielded SET_PARTIAL, which the author argues is the correct answer rather than a shortfall.",
+    "The author stresses that disjoint vocabularies are a necessary, not sufficient, condition: the check cannot detect conceptual overlap between instruments.",
+    "The paper states the set digest is a comparison handle only, not tamper evidence or a record of who changed what."
+  ],
+  "key_findings_evidence": [
+    "the four packages between them put 81 line-and-name pairs in front of the reader, spanning 80 distinct names, and the single name carried by two lines was the one the set had already written down and disambiguated.",
+    "It is OUTSIDE_SCOPE, carried by red_line and black_line, and it is the one collision the set had already declared and disambiguated.",
+    "The reading is SET_PARTIAL, and that is the correct answer rather than a shortfall.",
+    "Disjoint vocabularies are a necessary condition for the separation I want, not a suﬀicient one.",
+    "It does not tell you which one is right, it does not record who changed what, and it is not tamper evidence."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "full_text.md (from line_set_combined.pdf) is 'The Line Set: The Collected Volume', compiling 5 works unchanged: The Line Set (sections 1-10) plus Personal Red Lines for Development, Black Line, Golden Line, and White Line. This summary covers only The Line Set work named in the bibliography. The PDF shows DOI 10.5281/zenodo.21754244 (collected volume) while README/metadata use 10.5281/zenodo.21754243; the bibliography entry may correspond to the compiled volume rather than the standalone paper."
+  }
 }

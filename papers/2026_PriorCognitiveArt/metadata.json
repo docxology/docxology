@@ -54,5 +54,53 @@
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-09-24T18:29:57Z"
+  "checked_at": "2026-09-24T18:29:57Z",
+  "methods": [
+    {
+      "name": "Tinbergen's four questions recast as a 2×2 grid of crossed axes",
+      "description": "Maps mechanism, function, ontogeny and phylogeny onto proximate/ultimate and static/developmental axes to type explanations of priors.",
+      "evidence": "Mechanism is proximate-static; function is ultimate-static; ontogeny is proximate- developmental; phylogeny is ultimate-developmental."
+    },
+    {
+      "name": "Five-step protocol for typing 'why' questions about priors",
+      "description": "Applies a protocol per question: type the request, expose deferral, name the stop, state the ceiling, then render and validate.",
+      "evidence": "The manuscript applies a compact five-step protocol to each “why” question:"
+    },
+    {
+      "name": "Three regress-termination families: pragmatic, selection, fixed-point",
+      "description": "Organizes responses to the hyperprior regress into pragmatic closure, selection closure and fixed-point termination, explicitly non-exhaustive.",
+      "evidence": "Three termination families organize the paper: pragmatic closure, selection closure, and fixed-point termination. They are organizing families, not an exhaustive taxonomy of every possible explanation."
+    },
+    {
+      "name": "Source-owned deterministic diagrams, formal claims and glossary",
+      "description": "Renders diagrams, formal claims and a symbol glossary from recorded source inventories (quadrants, termination modes, modules, figure specs).",
+      "evidence": "The source layer records 4 Tinbergen quadrants, 3 termination modes, 12 argument modules, 21 figure specifications, 12 formal claims, and 35 glossary rows."
+    },
+    {
+      "name": "One deterministic illustrative simulation trace over authored formal states",
+      "description": "Includes a single deterministic trace and explicitly no stochastic simulation, synthetic data, empirical estimates or benchmarks.",
+      "evidence": "It includes one deterministic illustrative simulation trace over authored formal states, but it uses no stochastic simulation, no synthetic data, no empirical-effect estimate, and no numerical performance claim."
+    }
+  ],
+  "key_findings": [
+    "The author argues the regress is not forced by Tinbergen's framework but arises when an ontogenetic answer is asked to do the work of every quadrant.",
+    "The paper argues that what comes before the first prior is a stack of constraints (viability, regulation, co-homeostasis, development, niche) rather than a hidden meta-prior.",
+    "Niche construction is treated as a constraint on selection termination rather than as a fourth termination type.",
+    "The art claim is bounded: aesthetic practices arrange encounters with predictive priors, without proving art directly rewires priors.",
+    "The author states the formal supplement does not prove the thesis but makes it checkable against its own artifacts."
+  ],
+  "key_findings_evidence": [
+    "The regress was never forced by Tinbergen. It appeared because an ontogenetic answer was asked to do the work of every quadrant.",
+    "The better answer is a stack of constraints that precede explicit inferential ownership: viability, predictive regulation, co-embodiment, co- homeostasis, developmental tuning, and niche-supported expectation.",
+    "The argument therefore treats niche construction as a constraint on selection termination rather than as a fourth stop",
+    "aesthetic practices arrange cues, contexts, and meanings that interact with predictive priors; they do not prove that art directly rewires priors as an empirical mechanism.",
+    "The supplement does not prove the thesis; it makes the thesis checkable against its own artifacts."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Conceptual working paper; no empirical data. Findings are the author's arguments."
+  }
 }

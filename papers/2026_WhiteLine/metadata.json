@@ -40,5 +40,53 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-08-02T15:12:11Z"
+  "checked_at": "2026-08-02T15:12:11Z",
+  "methods": [
+    {
+      "name": "Pure-data Python package: 11-record registry + assess_absence evaluator",
+      "description": "The instrument is a small Python package holding a versioned registry of eleven absence records and a staged evaluator, presented as a tested prototype.",
+      "evidence": "The executable instrument is a small, pure-data Python package: a versioned registry of eleven absence records and a staged evaluator, assess_absence."
+    },
+    {
+      "name": "Typology of three absence kinds and four ledger states",
+      "description": "Records are typed EPISTEMIC, ETHICAL or CONTEMPLATIVE, and observations assign NAMED, UNRESOLVED, WITHHELD or ledger-reserved NOT_RECORDED.",
+      "evidence": "Each record carries one of three kinds — EPISTEMIC, ETHICAL, or CONTEMPLATIVE — and a dated observation assigns it one of four states: NAMED, UNRESOLVED, WITHHELD, or NOT_RECORDED."
+    },
+    {
+      "name": "Staged intake/matching/scoring with caution order and staleness decay",
+      "description": "Intake screens inputs with typed events, conflicting observers resolve to the more cautious state, and dated NAMED entries decay past their review horizon.",
+      "evidence": "Intake normalizes and screens the input, matching keeps at most one contract-passing observation per record, and scoring assigns each record its state."
+    },
+    {
+      "name": "Formal definitions/propositions each bound to a named test",
+      "description": "The evaluator is restated as definitions and propositions, and a table maps each to the test that exercises it, checked by tests/test_formalism.py.",
+      "evidence": "Every definition and proposition above names the test that exercises it, keyed by the block’s own label, and tests/test_formalism.py asserts that each row names a test that exists"
+    },
+    {
+      "name": "Planted-defect battery for six structural invariants",
+      "description": "For each of six registry invariants, a registry carrying exactly that defect is constructed to show the check rejects it while passing the real registry.",
+      "evidence": "Each invariant 𝑃𝑖 is accompanied by a planted-defect registry: a registry carrying exactly the defect 𝑃𝑖 guards against is constructed, and 𝑃𝑖 fails on it while passing on the real registry 𝑅."
+    }
+  ],
+  "key_findings": [
+    "Under the stated contract, no input can make an absence appear more settled than its most cautious observer reported (caution monotonicity).",
+    "In a worked seven-input example with careless and adversarial inputs, intake logged five typed events and the tally was NAMED 0, UNRESOLVED 1, WITHHELD 1, NOT_RECORDED 9.",
+    "A positive-control battery shows every intake code can fire, so zero rows in a tally mean untriggered rather than unreachable; it shows reachability only.",
+    "The defect battery establishes detection of the planted defects only, not the absence of every possible structural fault.",
+    "The author stresses the registry's finiteness: absences outside its eleven categories are not tracked, and extending it requires human judgment."
+  ],
+  "key_findings_evidence": [
+    "Under this contract no input can make an absence look more settled than its most cautious observer reported.",
+    "The resulting state tally is NAMED 0, UNRESOLVED 1, WITHHELD 1, and NOT_RECORDED 9: eleven findings, one per record, as Proposition 5 requires.",
+    "Every member of the enumeration fires, so the zeros in the worked tally mean untriggered here.",
+    "the battery establishes detection of the planted defects, not the absence of every conceivable structural fault.",
+    "Eleven records name eleven categories a reviewer is prompted about; absences outside that list are not tracked, not flagged, and not counted as missing."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Self-described tested prototype for structured review, not a validated measurement instrument; all worked examples use constructed inputs, not observed data. No user study."
+  }
 }

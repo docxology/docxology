@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Iris dataset analysis demonstrates reproducible visual analytics workflow for educational contexts, Slide-based presentation format effectively communicates active inference concepts to diverse audiences
+- Extracts methods: Active Inference generative model drawn as a Bayesian graph, Mapping GPT onto a minimal prior/state/observation model, Perceptual-inference extension with a transition matrix B
+- Identifies findings: The slides identify that in the GPT framing the latent semantic state is not separated by speaker, so speakers are admixed and cannot be weighted or attended to differentially., The slides propose treating attention as a portfolio (regime) of nested attentions across persons, groups, sets of groups and the eco-niche., Listed next steps are adding visualizations/dashboards, specifying the model in GNN toward implementation, and adding an action component.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

@@ -430,29 +430,48 @@ Pipeline-streamlining and docs-accuracy pass (PRs #27/#28 and follow-ups):
   added to the inventory surface list; claims.json SAB
   verification_method count corrected 31 → 30 self-linked members.
 
-### DOC-016 — Curate paper summaries and the remaining metadata judgment calls
+### DOC-016 — Finish paper-archive curation and registry judgment calls
 
 - Priority: P1
 - Owner: RESEARCHER / ARCHIVIST
 - Trigger: next bibliography pass, or any per-paper review
-- Deliverable: replace the remaining domain-template `methods` and
-  abstract-echo `key_findings` in `papers/*/metadata.json` (generated
-  surfaces now suppress them via `code/src/metadata_templates.py`, but the
-  seed data still carries them) with paper-specific summaries drawn from
-  each `full_text.md`; decide the open registry discrepancies from the
-  2026-10-01 live DOI audit
-- Open discrepancies (2026-10-01): **#168** GNN — the latest Zenodo version
-  (v3.6.0) lists only Friedman and titles the record
-  "Generalized_Notation_Notation (GNN)", while the verified cache still
-  credits "The GeneralizedNotationNotation Community Contributors"; **#159**
-  Active Blockference — Crossref issues the IWAI 2022 chapter in 2023, but a
-  year edit re-slugs the frozen work URL; **#12** EvoJump and **#26**
-  Discovery Engine carry deliberate short titles whose full registry titles
-  would change the first four slug words (frozen URL); **#108** keeps the
-  2015 print year (Crossref issued online 2014)
-- Acceptance: no generated README/SKILL/work page states a method or
-  finding that is not paper-specific; each discrepancy has a recorded
-  keep/change decision; `test_bibliography_authority.py` stays green
+- Status (2026-10-01): the core is done. 190 folders carry
+  evidence-grounded methods/findings (see CHANGELOG 2026-10-01) and 70
+  displayed abstracts were adjudicated against the text. Remaining:
+- Archive the real documents for **#100** `2018_DopamineForaging`
+  (iScience 2018, open access, 10.1016/j.isci.2018.09.001) and **#63**
+  `2023_ToComment` (Physics of Life Reviews 2023,
+  10.1016/j.plrev.2023.06.002), then run
+  `extract_paper_texts.py --only <folder>` and summarize them with the
+  grounded procedure. Both folders currently hold metadata only. The
+  displayed abstract for #100 is unverified seed text.
+- Three folders have no full text, so they have no grounded summary
+  (`2024_PaleolithicRockstars`, `2026_FocusedAttentionMeditation`,
+  `2026_GeneralizedNotationNotationGNN`). Archive their documents where the
+  license allows.
+- Registry/document discrepancies to decide: **#168** GNN (latest Zenodo
+  version lists only Friedman; cache still credits the community
+  contributors); **#159** Active Blockference (Crossref issues the chapter in
+  2023, but changing the year re-slugs the frozen URL); **#12** EvoJump and
+  **#26** Discovery Engine short titles (a full title changes the frozen
+  slug); **#108** print vs online year; **#33** Digital Twins comment (the
+  registry lists only Cordes; the document names Zargham, Sisson, David,
+  Friedman, Cordes); **#29** Aligning AIO to SUMO (the registry lists
+  "Maybell, Scott Ryan", who does not appear in the paper's 13-author list);
+  PDF-vs-catalogue title variants for #165 iTrace, #207
+  THALIA, #166 DemoCreate, #74 TrustFinder; and version-vs-concept DOIs
+  printed in the PDFs of Skillarum, SilverLine and LineSet. #201 LineSet's
+  PDF is the five-work collected volume.
+- Content inconsistencies that the grounded summaries surfaced inside the
+  papers themselves (for the author): CognitiveIntegrityFramework Part 2
+  corpus size (950 vs 1,475), ConvergenceAnalysisGradient Discussion vs Table
+  1, MarkdownDecisionProcess GPT-2 Medium vs Small, PopulationSearch graph
+  counts, TemplateApproachReproducible "fourteen" vs "eleven", and
+  DomainLanguageSpecifying six vs seven dimensions.
+- Domain labels to review: `2025_ConCatEnate`, `2025_BeaconsPreEmulation`
+  (Genetics & Biomedical), `2026_DataDescriptorTemplate`.
+- Acceptance: each item has a recorded keep/change decision;
+  `test_bibliography_authority.py` stays green
 - Dependencies: `papers/*/full_text.md`, `data/work-authors.json`,
   `code/tests/fixtures/frozen-work-keys.json`
 

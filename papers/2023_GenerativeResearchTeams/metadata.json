@@ -63,20 +63,55 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Two-agent AutoGPT literature-review GRT (Professor Karl, RA Joe)",
+      "description": "A worked example built on open-source AutoGPT runs two LLM agents that forage for Active Inference literature and write a report.",
+      "evidence": "In this worked example, two agents, Professor Karl and Research Assistant Joe, are foraging for relevant resources on Active Inference."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Shared-folder file protocol for asynchronous agent coordination",
+      "description": "Agents communicated through text files (project description, requests.txt, research_data.txt, report.txt) in a shared folder.",
+      "evidence": "This file was found in a shared folder in which agents could store information found on the internet, asynchronously communicate through requests, and write notes on their task."
+    },
+    {
+      "name": "LangChain tools with FAISS vector memory per agent",
+      "description": "Setup code gives each agent file read/write, CSV and webpage-QA tools (plus DuckDuckGo search for the assistant) and FAISS-backed OpenAI-embedding memory.",
+      "evidence": "Box 1 shows a code snippet of how the agents are initialized. Each agent is described in terms of name, role, and available tools."
+    },
+    {
+      "name": "Sketched eight-role GRT for a project proposal using AEOS",
+      "description": "A larger GRT is sketched with roles such as Research Director, Statistical Modeler and Grant Forager, using AEOS Active/Informational Entities.",
+      "evidence": "In this case, the GRT would consist of roles such as: Research Director, Web Browser, Statistical Modeler, Graphic Designer, Mathematical Analyst, Financial Evaluator, Grant Forager, and Communications Specialist (Figure 1)."
+    },
+    {
+      "name": "Active Blockference and cadCAD as implementation layer",
+      "description": "GRT work is hosted in Active Blockference, which combines Active Inference modeling with the cadCAD complex systems framework.",
+      "evidence": "The Active Blockference package, where the GRT work is currently hosted, aims to combine various methods for Active Inference modeling (described above) with the complex systems modeling framework cadCAD"
     }
   ],
   "key_findings": [
-    "The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research top"
+    "The authors found it preferable to split browsing/gathering and curation across two agents rather than one agent doing all tasks.",
+    "In the worked example the agents completed a literature review and report summarizing ten Active Inference papers; the authors note the approach is currently limited.",
+    "Proposes that GRT roles be flexible: any role may be non-existent, singular, plural, or autonomous (e.g. DeSci DAOs).",
+    "Cognitive security concepts (NIM, VIE) are currently integrated only via meta-prompts, with fuller implementation left to future work.",
+    "States the primary contributions as augmented architectures, Active Inference as a cognitive kernel in GRTs, and cognitive models for research processes."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "key_findings_evidence": [
+    "we found it preferable to separate the agents into one that gathers more information and stores it in the shared database and one that curates it, allowing the agents to use multiple prompts.",
+    "The agents were able to successfully execute tasks, such as conducting literature reviews on active inference, summarizing the key points of the papers, and preparing a comprehensive report based on the findings. This approach, while currently limited,",
+    "Roles within these teams are interchangeable, redundant, or ambiguous, reflecting the dynamic and complex nature of the research landscape.",
+    "Currently these topics are integrated via the use of Meta-Prompts, and future work could implement them more comprehensively.",
+    "The primary novel contributions here include the exploration of augmented architectures, the integration of Active Inference as a cognitive kernel into GRTs with shared intelligence"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Preliminary position/methods paper. Worked example is a qualitative demonstration (no quantitative evaluation); the sketched example is not implemented in the text. Active Inference is not yet modeled in the worked example (the paper says future work could empirically model GRT using Active Inference)."
+  }
 }

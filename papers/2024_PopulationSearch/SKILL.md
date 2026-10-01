@@ -20,13 +20,23 @@ This work addresses topics in **Active Inference**: population search, Active In
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Active Inference-augmented Ant Colony Optimization for the TSP** — ACO is extended with a belief-update mechanism and a free-energy calculation so ant node selection adapts to current tour quality.
+- **Belief-weighted node selection and free-energy tour scoring** — Belief is set from current versus best path length, scales pheromone/distance selection probabilities, and enters a free energy of path length plus entropy.
+- **Benchmark against basic ACO and Nearest Neighbor on random symmetric graphs** — The AI-enhanced ACO was compared to basic ACO and a Nearest Neighbor heuristic on randomly generated symmetric graphs of several sizes.
+- **Paired t-test, Wilcoxon signed-rank, and Mann-Whitney U tests** — Tour length and computation time differences between basic and AI-enhanced ACO were assessed with paired and non-parametric tests.
+- **Python implementation released with appendix code and GitHub repo** — Python implementations of all methods are given in the appendix, with extended ANOVA results in the haailabs/ActiveACO repository.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The Active Inference-enhanced ACO gave mean tour-length improvements over basic ACO at every graph size tested, peaking at 8.81% for 100-node graphs.
+- Relative computational overhead fell with graph size, from 9.46% at 25 nodes to 1.97% at 500 nodes.
+- Tour-length improvements were significant by paired t-test and Wilcoxon test, but the Mann-Whitney U test found no significant difference in overall distributions.
+- The computation-time difference was not statistically significant at the 0.05 level.
+- The authors note high variability in tour lengths for both algorithms, with performance gains varying considerably across graph types.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.48550/arXiv.2408.09548`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

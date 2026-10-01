@@ -26,7 +26,12 @@ No paper-specific methods have been summarized yet; see the abstract and the ful
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The authors argue that workers in dependent-lineage systems are not hybrids in the usual sense, because both lineages contribute to colonies of a single species that cannot persist without both.
+- Because a queen must mate with at least one male of each lineage, the authors note (with Romiguier et al.) that such species likely have large, population-wide mating aggregations.
+- Citing their prior long-term study finding no ecological differences between lineages, the authors suggest the system may be maintained by lineage differences in male production rather than ecological forces.
+- The authors expect two-lineage systems to be found more widely across ant genera and subfamilies, and say Romiguier et al.'s high-throughput sequencing methods will aid that search.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 

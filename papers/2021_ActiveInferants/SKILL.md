@@ -20,14 +20,21 @@ This work addresses topics in **Entomology**: active inference, ant foraging, Ma
 
 Primary methods and techniques applied in this work:
 
-- Active inference agent-based simulation
-- Markov decision process modeling of foraging
+- **Per-forager MDP formulation of active inference** — Each simulated ant forager runs its own Markov decision process with A (likelihood), B (transition), and C (pheromone preference) components; the colony is not modelled as one agent.
+- **In silico alternating T-maze foraging paradigm** — Simulated colonies search a T-maze in which the food patch switches arm every 500 of 2,000 time steps, with a decaying attractant trail pheromone.
+- **Inbound-only trail pheromone deposition rule** — Foragers lay attractant pheromone only after finding food and returning to the nest, a strategy modelled on Formica red wood ants.
+- **Simulations of colony sizes 10, 30, 50, and 70 foragers** — Ran 2,000-step simulations at four colony sizes and tracked round trips and a mean Euclidean inter-ant distance coefficient as colony-level phenotypes.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Colonies of foragers with no internal map of the T-maze foraged successfully using local pheromone-following and return-trip deposition rules.
+- Colony size influenced per-nestmate round trips, apparently non-linearly, though the authors draw no generalization because key parameters were not varied.
+- Each colony size quickly converged onto a characteristic range of the inter-ant distance metric.
+- The model recovered basic colony phenomena such as trail formation after food discovery in the T-maze paradigm.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 

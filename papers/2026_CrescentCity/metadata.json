@@ -63,17 +63,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Archival analysis, secondary-source synthesis and quantitative data analysis",
+      "description": "Combines historical sources with census, labor, seismological and oceanographic data in one reproducible repository workflow.",
+      "evidence": "This study combines archival analysis, secondary-source synthesis, and quantitative data analysis."
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Narrative history from published sources, without original fieldwork or interviews",
+      "description": "Relies on published secondary sources, archives, federal datasets and peer-reviewed science; Indigenous material is drawn from public published sources.",
+      "evidence": "We do not present original archaeological fieldwork or ethnographic interviews, though we draw on such work by others"
+    },
+    {
+      "name": "Four-lens nested-systems structure: Space, Time, People, Ideas",
+      "description": "Organizes forty-six topical chapters into four parts rather than one strict chronology, drawing on hierarchy, social-ecological and resilience theory.",
+      "evidence": "The manuscript uses a four-lens nested-systems structure rather than a single strict chronology."
+    },
+    {
+      "name": "Explicit evidence-class labeling in prose and figure captions",
+      "description": "Distinguishes counts, measured records, model outputs, post-event reconstructions and dated public-status claims.",
+      "evidence": "The manuscript distinguishes among evidence classes in prose and captions wherever the distinction changes interpretation."
+    },
+    {
+      "name": "Peng (2011) reproducibility workflow with registry-backed generated figures",
+      "description": "Versions analytical choices, twenty-four registry-backed figures, data and plotting scripts alongside the manuscript.",
+      "evidence": "The workflow follows Peng’s reproducibility framework (Peng, 2011): analytical choices, twenty-four registry-backed figures (data-backed, schematic, and manuscript-metric)"
     }
   ],
   "key_findings": [
-    "<div>\n<div>This manuscript offers a synthetic scholarly history of Crescent City, California &mdash; seat of Del Norte County on the north- ernmost developed strip of the California coast &mdash; wher",
-    "The narrative reads the town as an emergent nested system: Tolowa Dee-ni&rsquo; villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s; "
+    "Argues that Crescent City is an emergent place in which Space, Time, People and Ideas continually alter one another.",
+    "Frames the often-cited 37% fifty-year probability of an M>=8.0 southern Cascadia rupture as paleoseismic model output, not a deterministic forecast.",
+    "Synthesizes that the 1964 Alaska tsunami killed eleven people in Crescent City, destroyed twenty-nine downtown blocks, and remains the deadliest on the contiguous U.S. Pacific coast.",
+    "Describes the shift from a timber-and-fishing economy to one anchored by Pelican Bay State Prison, the hospital, schools, the parks and the Dungeness-crab fishery.",
+    "Among four stated policy implications, argues that tribal co-management is an operational framework rather than a courtesy gesture."
   ],
   "related_papers": [
     "2020_EmergentTeams",
@@ -84,5 +104,19 @@
     "docxology/crescent_city"
   ],
   "artifact_doi": "10.5281/zenodo.20286171",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20286171"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20286171",
+  "key_findings_evidence": [
+    "Crescent City is an emergent place: Space, Time, People, and Ideas continually alter one another.",
+    "this study frames the often-cited thirty-seven-percent fifty-year probability of an M >= 8.0 southern-segment rupture as paleoseismic model output from turbidite correlation and time-dependent recurrence analysis, not as a deterministic forecast",
+    "The 1964 Alaska tsunami killed eleven people, destroyed twenty-nine downtown blocks, and remains the deadliest tsunami on the contiguous United States Pacific coast (sec. 3.11).",
+    "The 2026 city is anchored instead by Pelican Bay State Prison, Sutter Coast Hospital, Del Norte Unified School District, Redwood National and State Parks, and a Dungeness-crab fishery (secs. 5.5, 3.9).",
+    "Second, tribal co-management is an operational framework, not a courtesy gesture."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "book/report",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Book-length synthetic local history (~635 KB extraction). Findings are syntheses of cited secondary and primary sources, not original fieldwork. The abstract notes automated checks verify structure, citations and figures, not every historical interpretation."
+  }
 }

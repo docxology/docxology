@@ -61,17 +61,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Seeded synthetic panel instrument scored against a known oracle",
+      "description": "Generates synthetic expert populations and corpora, forms panels, runs the ntqr evaluator without labels, and scores its estimate against the supervised oracle.",
+      "evidence": "It generates known populations and corpora, hides the answer key from the ntqr estimator, and then scores the returned logically consistent evaluations against the supervised oracle that is available only because the data are synthetic."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Four panel-formation strategies compared",
+      "description": "Compares representative sortition, uniform random selection, single-bloc ideological selection, and competence-first expertise thresholding.",
+      "evidence": "We compare four panel-formation strategies against each other and against the supervised oracle: auditable representative sortition, uniform random selection (the honest baseline), single-bloc ideological selection"
+    },
+    {
+      "name": "ntqr error-independent (EIE) evaluator over judge trios",
+      "description": "Uses the ntqr package's exact three-judge EIE solver for no-answer-key evaluation, treating larger panels as ensembles of trios; recovery error is an L1-style distance to the oracle.",
+      "evidence": "NTQR’s exact error-independent evaluator solves for exactly three binary judges, so a panel of any larger size is evaluated as an ensemble of its constituent trios"
+    },
+    {
+      "name": "Gaussian-copula composition-coupled error confound",
+      "description": "Injects shared latent shocks among same-group judges via a Gaussian copula on probit-thresholded competence, preserving marginal accuracy while tuning cross-judge error correlation.",
+      "evidence": "same-group judges sharing a latent shock through a Gaussian copula on a probit-thresholded competence variable — is the standard construction for correlated binary outcomes"
+    },
+    {
+      "name": "Live gemma3:4b reviewer-panel companion and five pre-stated hypotheses",
+      "description": "Tests transfer (H5) with one local Ollama gemma3:4b model prompted as postdoctoral reviewers on fictitious applications; H1-H4 tested on the synthetic track.",
+      "evidence": "The synthetic deterministic track tests H1–H4 against a known oracle; the live single-model companion tests H5."
     }
   ],
   "key_findings": [
-    "How should you choose the judges, jurors, or reviewers who form a panel — and does\nthat upstream choice change how well you can evaluate them without an answer key?",
-    "A panel can be selected many ways — by competence, by a representative lottery\n(sortition), by ideological bloc, or at random — and, separately, its noisy\njudgments can be evaluated blind: given the a"
+    "Formation rule, not panel size, was the dominant lever: competence-first selection had the lowest recovery error (0.037), while the other three strategies clustered around 0.147-0.148.",
+    "With a composition-coupled error confound, single-bloc error exceeded representative error in 180/205 matched regimes, the gap widening from 0.000 to 0.112 as coupling rose.",
+    "Recovery error tracks the panel's Herfindahl concentration over the axis the shared error rides on; re-keying the confound to an unbalanced axis erased the protection (0.147 to 0.229).",
+    "Increasing panel size from three to six seats produced at most tiny increases in error (largest +0.015), so size was essentially neutral.",
+    "H5 was rejected: with the live gemma3:4b panel, the synthetically best expertise-threshold rule was the worst (0.347), which the author frames as a hypothesis to test beyond one model."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -80,5 +100,19 @@
   ],
   "related_software": [
     "docxology/ntqr_allotment"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Competence-first selection (expertise threshold) is clearly best at 0.037, while representative sortition, single-bloc selection, and random selection cluster around 0.147-0.148 with overlapping intervals.",
+    "single-bloc error exceeds representative error in 180/205 matched regimes (paired mean 0.102, 95% CI ±0.012), the gap widening from 0.000 to 0.112 as coupling rises.",
+    "The protection is conditional: re-keying the confound to an axis the lottery does not balance erases the protection (0.147→0.229).",
+    "The largest delta is +0.015, so more experts do not help and at most very slightly hurt.",
+    "the rule that is best blind on synthetic data (expertise threshold, 0.037) is the worst under the live gemma3:4b panel (0.347)."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "empirical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Simulation study (synthetic, oracle-scored) plus a single-model LLM companion; author stresses findings are simulation-bounded and not a general refutation or endorsement of sortition."
+  }
 }

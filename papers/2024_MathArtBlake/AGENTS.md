@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Slides for: MathArtStream 8 ~ 9/6/2024 at 17 UTC  Shanna Dobson, Daniel Friedman "William Blake, Kierkegaard, Gothic" https://www.youtube.com/live/yIS0OW2o18s.
+- Extracts methods: Four-part livestream slide outline on Blake's views, Curated quotations and secondary Blake scholarship, ActiveInferAnts package scans of Blake's works for terms
+- Identifies findings: Proposes reading Blake's 'Four-Fold vision' as one contextualization of how Blake situates science and formality, with 'Newton's Sleep' as single vision., Poses, as an open question, how Blake's tetrahedral four-fold concordances could connect with the four-fold particular partition of the Free Energy Principle., Links Blake's 'Minute Particulars' to the particular partition, glossed as what makes an agent of every thing within a scale-free framework.
 - Maps contributions to Presentations & Media literature
 
 ### 🎓 EDUCATOR

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Numerical simulations of language generation, acquisition and emergence, Discrete-state generative model of three sentinels observing a subject, With/without-communication comparison via zero-precision auditory mappings
+- Identifies findings: With communication, the third agent resolved uncertainty about the subject's location by the third epoch, versus only after seeing it at the fifth epoch without communication., In the generational simulation, children's learned auditory mappings were almost identical to their parents' after four generations, acquired solely through active learning., Three language-naive agents exposed to 512 episodes converged on shared mappings in which nearly every hidden state became associated with a unique shared 'word'.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

@@ -188,3 +188,92 @@ def test_start_here_sync_counts_is_idempotent(tmp_path, monkeypatch):
     assert build_start_here.sync_counts() is False
     assert page.read_text(encoding="utf-8") == first
     assert build_start_here.check_counts(first) == []
+
+
+# ── Evidence-grounded paper summaries (2026-10-01) ──────────────────────────
+
+
+def _norm_text(text: str) -> str:
+    for ligature, plain in (("ﬀ", "ff"), ("ﬁ", "fi"), ("ﬂ", "fl"), ("ﬃ", "ffi"), ("ﬄ", "ffl"), ("­", "")):
+        text = text.replace(ligature, plain)
+    return " ".join(text.split())
+
+
+def test_grounded_summary_evidence_occurs_verbatim_in_full_text():
+    """Every grounded method/finding must quote its own folder's full text."""
+    import json
+
+    failures = []
+    checked = 0
+    for path in sorted((REPO_ROOT / "papers").glob("*/metadata.json")):
+        meta = json.loads(path.read_text(encoding="utf-8"))
+        provenance = meta.get("summary_provenance")
+        if not isinstance(provenance, dict) or provenance.get("source") != "full_text.md":
+            continue
+        full_text = path.parent / "full_text.md"
+        assert full_text.is_file(), f"{path.parent.name}: grounded summary without full_text.md"
+        text = _norm_text(full_text.read_text(encoding="utf-8", errors="replace"))
+        findings = meta.get("key_findings") or []
+        evidence = meta.get("key_findings_evidence") or []
+        if len(findings) != len(evidence):
+            failures.append(f"{path.parent.name}: key_findings/evidence length mismatch")
+        quotes = [m.get("evidence", "") for m in meta.get("methods") or []] + list(evidence)
+        for quote in quotes:
+            checked += 1
+            if not quote or _norm_text(quote) not in text:
+                failures.append(f"{path.parent.name}: {quote[:60]!r}")
+    assert checked > 1000, "expected the grounded-summary corpus to be present"
+    assert not failures, f"grounded summary evidence missing from full text: {failures[:10]}"
+
+
+def test_no_two_paper_folders_share_a_source_document():
+    """A copied PDF once published one paper's text under another's title."""
+    import hashlib
+
+    seen: dict[str, str] = {}
+    duplicates = []
+    for path in sorted((REPO_ROOT / "papers").glob("*/*")):
+        if path.suffix.lower() not in {".pdf", ".pptx", ".docx", ".odt"} or not path.is_file():
+            continue
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        owner = seen.setdefault(digest, path.parent.name)
+        if owner != path.parent.name:
+            duplicates.append(f"{owner} == {path.parent.name}/{path.name}")
+    assert not duplicates, f"identical source documents in different paper folders: {duplicates}"
+
+
+def test_document_verified_authors_quote_their_source():
+    import json
+
+    payload = json.loads((REPO_ROOT / "data" / "work-authors.json").read_text(encoding="utf-8"))
+    assert fetch_work_authors.document_evidence_errors(payload) == []
+    assert any(e.get("status") == "document_verified" for e in payload["works"].values())
+
+
+def test_document_verified_rejects_a_missing_quote(tmp_path, monkeypatch):
+    source = tmp_path / "papers" / "x" / "full_text.md"
+    source.parent.mkdir(parents=True)
+    source.write_text("EDITED BY Someone Else", encoding="utf-8")
+    monkeypatch.setattr(fetch_work_authors, "REPO_ROOT", tmp_path)
+    payload = {"works": {"k": {"status": "document_verified", "doi": None, "authors": [{"family": "A"}],
+                               "source": "papers/x/full_text.md", "evidence": "EDITED BY Daniel"}}}
+    assert fetch_work_authors.document_evidence_errors(payload) == ["k: evidence quote not found in papers/x/full_text.md"]
+
+
+def test_paper_page_figure_alt_text_names_the_work_not_the_folder():
+    offenders = []
+    for page in sorted((REPO_ROOT / "papers").glob("*/index.html")):
+        if re.search(r'alt="Figure from \d{4}_', page.read_text(encoding="utf-8")):
+            offenders.append(page.parent.name)
+    assert not offenders, f"folder ids used as figure alt text: {offenders[:10]}"
+
+
+def test_extractor_reports_a_missing_primary_pdf(tmp_path):
+    import json
+    import extract_paper_texts
+
+    folder = tmp_path / "2026_Example"
+    folder.mkdir()
+    (folder / "deck.pdf").write_bytes(b"%PDF-1.4\n")
+    (folder / "metadata.json").write_text(json.dumps({"primary_pdf": "manuscript.pdf"}), encoding="utf-8")
+    assert extract_paper_texts.process_paper(folder, force=True) == "error: primary_pdf 'manuscript.pdf' not found"

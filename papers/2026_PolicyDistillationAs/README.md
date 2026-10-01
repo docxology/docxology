@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Formal mapping of OPD roles onto active-inference variational objects** — Teacher policy is read as the generative model, student policy as the approximate posterior, and per-token reverse-KL loss as variational free energy.
+- **Bernoulli-Ising oracle with closed-form and recomputed mutual-information sweeps** — A binary toy couples a teacher's privileged variable to the answer through a coupling parameter; MI and the free-energy gap are computed analytically.
+- **pymdp T-maze rollout with sophisticated-inference planning** — A pymdp agent samples its own observations under a privileged cue, serving as the on-policy student process witness.
+- **Two-agent classroom: privileged teacher vs on-policy student** — A teacher with cue validity 0.98 and a student with cue validity 0.5 are compared on belief entropy and reverse-KL distillation signal.
+- **Lean theorem inventory and fail-closed manuscript validation gates** — Lean theorem statements are extracted and checked against an inventory, with gates failing on sorry, axiom or native_decide.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The closed-form and independently recomputed mutual-information sweeps agree to machine precision (RMSE 2.1e-16 nats).
+- In the classroom toy, teacher belief entropy was 0.247 nats versus 0.347 nats for the student, with a mean reverse-KL distillation signal of 6.28 nats.
+- In a four-state/two-action witness, teacher-forced train loss (0.333 nats) underestimated student-induced test loss (0.409 nats); on-policy correction reduced it to 0.096 nats.
+- All reported numbers are hydrated from generated artifacts, and 16 of 16 invariant checks pass before rendering.
+- The author states these are toy, generated findings rather than production-LLM measurements; external OPD results are context, not reproduced.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

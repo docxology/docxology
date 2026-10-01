@@ -55,5 +55,48 @@
     "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked"
   ],
-  "checked_at": "2026-09-24T18:29:57Z"
+  "checked_at": "2026-09-24T18:29:57Z",
+  "methods": [
+    {
+      "name": "Organizing the field by eight legal roles an insect occupies",
+      "description": "Structures the synthesis around the insect's legal status in a dispute: witness, regulated threat, protected subject, property, invention, defendant, moral patient, weapon.",
+      "evidence": "It encodes 8 legal roles — witness, regulated threat, protected subject, property, invention, defendant, moral patient, and weapon — and binds to them 18 landmark decisions, 43 statutes and treaties across 9 categories and 10 jurisdictions"
+    },
+    {
+      "name": "Seven Python source-of-truth registries under src/",
+      "description": "All domain content (roles, cases, statutes, species, institutions, timeline, interconnections) lives in registries from which prose, figures and reports are regenerated.",
+      "evidence": "All domain knowledge lives in 7 source-of-truth registries under src/ — roles, cases, statutes, species, institutions, timeline, and interconnections — and every reader-facing artifact is regenerated from them"
+    },
+    {
+      "name": "Build-time token closure for every count in the prose",
+      "description": "Magnitude-bearing numbers are generated tokens; a closure test fails the build if a hand-typed count drifts from its registry.",
+      "evidence": "The closure test asserts that every token referenced in the manuscript is generated and that the generator emits no orphan"
+    },
+    {
+      "name": "Claim ledger with offline and live verification oracles",
+      "description": "External statistics and status claims are logged with source URL, verbatim quote and as-of date; an offline oracle checks attribution and a live oracle re-fetches sources.",
+      "evidence": "The current ledger contains 20 quote-backed entries, with section coverage shown in the claim-ledger coverage figure."
+    }
+  ],
+  "key_findings": [
+    "Alongside its roles, cases and statutes, the registries encode 24 insect taxa, 13 institutions, 44 historical milestones spanning 3676 years, and 5 cross-domain themes.",
+    "The roles are linked by recurring themes; the role-coverage matrix shows some roles are case-driven, some statute-driven, and defendant and weapon roles almost entirely history-driven.",
+    "The author argues the common frontier is institutional translation: insect facts enter law only through admissibility, quarantine, listing, authorization and moral-status filters.",
+    "Identified frontiers include insect sentience in welfare law, thin deployment-specific gene-drive governance, and forensic-entomology standardization.",
+    "The stated contribution is a registry-first, claim-sourced substrate rather than a new doctrine."
+  ],
+  "key_findings_evidence": [
+    "24 insect taxa, 13 certifying and regulatory institutions, 44 historical milestones spanning 3676 years, and 5 cross-domain themes that knit the roles together.",
+    "some roles are case-driven, some statute-driven, and some — the defendant and the weapon — almost entirely history-driven.",
+    "Entomological facts do not enter law raw: they are filtered through admissibility rules, quarantine thresholds, listing standards, market-authorization pathways, and moral-status tests.",
+    "The gene-drive governance question is a domain where deployment-specific insect governance remains thin relative to the power of the technology",
+    "The contribution of this reference is not a new doctrine but a new substrate: a registry-first, claim-sourced map in which every count is regenerated from source"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "review",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Source-anchored synthesis/reference work; counts describe the encoded registries, not the entirety of each legal sub-field (the paper's own caveat). The offline gate checks attribution/shape only; truth of claims depends on the live oracle. PDF title page shows 'State: unpublished / pending pairing' with SHA-256 pending; version DOI on title page is 10.5281/zenodo.21137277, concept DOI 21137276 (README uses the concept DOI). Bibliography domain is 'Computational'."
+  }
 }

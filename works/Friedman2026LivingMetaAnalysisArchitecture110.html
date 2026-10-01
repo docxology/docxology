@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications…</title>
-    <meta name="description" content="This paper presents a living meta-analysis framework for the Active Inference and Free Energy Principle literature. Literature is retrieved from arXiv…">
+    <meta name="description" content="No prior automated system tracks hypothesis-level evidence across the full Active Inference and Free Energy Principle (FEP) literature. Manual synthesis…">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/works/Friedman2026LivingMetaAnalysisArchitecture110.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -28,7 +28,7 @@
     <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
     <meta property="og:type" content="article">
     <meta property="og:title" content="A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring">
-    <meta property="og:description" content="This paper presents a living meta-analysis framework for the Active Inference and Free Energy Principle literature. Literature is retrieved from arXiv…">
+    <meta property="og:description" content="No prior automated system tracks hypothesis-level evidence across the full Active Inference and Free Energy Principle (FEP) literature. Manual synthesis…">
     <meta property="og:url" content="https://danielarifriedman.com/works/Friedman2026LivingMetaAnalysisArchitecture110.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
@@ -36,7 +36,7 @@
     <meta property="og:image:alt" content="A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring — Daniel Ari Friedman">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring">
-    <meta name="twitter:description" content="This paper presents a living meta-analysis framework for the Active Inference and Free Energy Principle literature. Literature is retrieved from arXiv…">
+    <meta name="twitter:description" content="No prior automated system tracks hypothesis-level evidence across the full Active Inference and Free Energy Principle (FEP) literature. Manual synthesis…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring — Daniel Ari Friedman">
     <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260530c">
@@ -160,7 +160,7 @@
         "@type": "Organization",
         "name": "Active Inference Journal"
     },
-    "abstract": "This paper presents a living meta-analysis framework for the Active Inference and Free Energy Principle literature. Literature is retrieved from arXiv, Semantic Scholar, and OpenAlex, deduplicated through a canonical identifier hierarchy, classified into a three-tier taxonomy, and evaluated with LLM-powered nanopublications over eight hypotheses. Citation-weighted evidence scoring supports...",
+    "abstract": "No prior automated system tracks hypothesis-level evidence across the full Active Inference and Free Energy Principle (FEP) literature. Manual synthesis cannot keep pace with a field that has grown at a compound annual rate of 20.36% across 2005–2026, and the FEP’s theoretical generality has invited falsifiability critiques that only hypothesis-specific evidence profiling can address. Building on...",
     "keywords": [
         "Active Inference",
         "meta-analysis",
@@ -171,6 +171,7 @@
         "Free Energy Principle",
         "computational bibliography"
     ],
+    "description": "Application domains dominated the corpus (Domain C 64.0%), with tools (B) at 20.8% and core theory (A) at 15.2%. The citation network was sparse: 2,176 intra-corpus edges out of 29,323 outgoing references (7.4% resolution), anchored by hub papers. Hypothesis scores clustered into tiers, with H1 FEP Universality in a diffuse tier (about +0.48) dominated by neutral assessments. The authors caution that all assertions are automatically generated and not manually validated, so hypothesis scores are preliminary. Preliminary experiments indicated about 15-20% over-extraction, and error rates for the 819-paper run were not quantified. Multi-source retrieval (arXiv, Semantic Scholar, OpenAlex) with ",
     "citation": "Friedman, Daniel Ari. 2026. A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring. Active Inference Journal. DOI: 10.5281/zenodo.19461933. URL: https://doi.org/10.5281/zenodo.19461933.",
     "hasPart": {
         "@type": "CreativeWork",
@@ -271,9 +272,13 @@
         <section class="section">
             <div class="section-header"><h2>Overview</h2><p>Extracted from the local paper documentation when available.</p><div class="section-divider"></div></div>
             <div class="work-detail">
-                <p>This paper presents a living meta-analysis framework for the Active Inference and Free Energy Principle literature. Literature is retrieved from arXiv, Semantic Scholar, and OpenAlex, deduplicated through a canonical identifier hierarchy, classified into a three-tier taxonomy, and evaluated with LLM-powered nanopublications over eight hypotheses. Citation-weighted evidence scoring supports...</p>
+                <p>No prior automated system tracks hypothesis-level evidence across the full Active Inference and Free Energy Principle (FEP) literature. Manual synthesis cannot keep pace with a field that has grown at a compound annual rate of 20.36% across 2005–2026, and the FEP’s theoretical generality has invited falsifiability critiques that only hypothesis-specific evidence profiling can address. Building on...</p>
                 <div class="keyword-row"><span>Active Inference</span><span>meta-analysis</span><span>nanopublications</span><span>assertion extraction</span><span>citation-weighted scoring</span><span>literature review architecture</span><span>Free Energy Principle</span><span>computational bibliography</span></div>
             </div>
+        </section>
+        <section class="section section-alt">
+            <div class="section-header"><h2>Use Notes</h2><p>Concise findings and methods pulled from README/SKILL documentation.</p><div class="section-divider"></div></div>
+            <div class="meta-grid"><div class="work-detail"><strong>Findings / Concepts</strong><ul><li>Application domains dominated the corpus (Domain C 64.0%), with tools (B) at 20.8% and core theory (A) at 15.2%.</li><li>The citation network was sparse: 2,176 intra-corpus edges out of 29,323 outgoing references (7.4% resolution), anchored by hub papers.</li><li>Hypothesis scores clustered into tiers, with H1 FEP Universality in a diffuse tier (about +0.48) dominated by neutral assessments.</li><li>The authors caution that all assertions are automatically generated and not manually validated, so hypothesis scores are preliminary.</li><li>Preliminary experiments indicated about 15-20% over-extraction, and error rates for the 819-paper run were not quantified.</li></ul></div><div class="work-detail"><strong>Methods / Techniques</strong><ul><li>Multi-source retrieval (arXiv, Semantic Scholar, OpenAlex) with ID-hierarchy dedup — Literature was retrieved from three databases and deduplicated to 819 papers using a DOI arXiv Semantic Scholar OpenAlex identifier hierarchy.</li><li>Keyword-based A/B/C domain taxonomy (200+ indicators, 8 categories) — Papers were classified into Core Theory, Tools &amp; Translation and Application Domains by keyword matching rather than expert annotation.</li><li>Abstract-only LLM assertion extraction with gemma3:4b on local Ollama — Each abstract was assessed against eight hypotheses via a JSON-schema prompt returning direction, confidence and reasoning.</li><li>Nanopublication knowledge graph with citation-weighted hypothesis scoring — Extracted assertions became structured nanopublications in an RDF-compatible knowledge graph scored by a citation-weighted evidence function.</li><li>NMF topic modelling and intra-corpus citation network analysis — Non-negative matrix factorization was used to find latent topics, and citation edges among corpus papers were analyzed for network topology.</li></ul></div></div>
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Citation</h2><p>Plain-text citation for quick reuse.</p><div class="section-divider"></div></div>

@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena. This paper argues that developing generative models is more like doing accounting than calculation or inference itself—the generative model does the inference for us. Using the metaphor of 'Active AccountAnts,' it explores how financial accounting principles...
+> In Active Inference, we develop (ensembles of) generative models of ecosystems of shared intelligence by accounting for cognitive system and phenomena. The work of developing generative models is more like doing accounting than doing calculation, memorization, or inference itself – the generative model does the inference for us. One of our functional roles or capacities as an engaged generative...
 
 ## Keywords
 
@@ -18,13 +18,17 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Analogy between financial accounting and generative modeling** — The essay frames building Active Inference generative models as accounting rather than calculation, using a spreadsheet/financial accounting situation as the guiding analogy.
+- **Research vs. Application distinction illustrated with a spreadsheet** — Uses the example of validating spreadsheet addition to separate Research questions from question-driven Application.
 
 ## Key Findings
 
-- This report provides a single-page account of Active Inference modeling..
-- This report was written entirely by hand without any synthetic computational-linguistic intelligences..
-- Thank you to the learners, interns, and participants of the Active Inference Institute to whom I've mostly learned from..
+- The author argues Active Inference's breadth rests on a first-principles scale-free approach rather than a scheme specific to cognitive systems: it can say more because it says less.
+- Building even simple cognitive phenomena (e.g. learning, attention) into the core formulation would, the author argues, restrict the scope of analysis to systems with that character.
+- Natural-language descriptors of cognitive phenomena are treated as secondary relational attributions about a realized generative model, not intrinsic aspects of the system.
+- The essay suggests the financial–cognitive accounting connection may run deeper than analogy, via category theory, but leaves this to future work.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

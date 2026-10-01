@@ -37,7 +37,11 @@ PAPERS_DIR = REPO_ROOT / "papers"
 
 from docxology_tools.biblio_table import iter_bibliography_rows  # noqa: E402
 from docxology_tools.domain_inference import DOMAIN_TO_EMOJI, infer_domain_name  # noqa: E402
-from docxology_tools.metadata_templates import specific_findings, specific_methods  # noqa: E402
+from docxology_tools.metadata_templates import (  # noqa: E402
+    specific_findings,
+    specific_method_details,
+    specific_methods,
+)
 
 log = logging.getLogger(__name__)
 BIBLIOGRAPHY_PATH = Path(os.environ.get("BIB_PATH", PAPERS_DIR.parent / "pages" / "BIBLIOGRAPHY.md"))
@@ -666,8 +670,25 @@ def extract_methods_from_metadata(meta: dict) -> list[str]:
     return specific_methods(meta.get('methods'))
 
 
+def method_bullets(meta: dict) -> list[str]:
+    """Render paper-specific methods as "**name** — description" bullet bodies."""
+    bullets = []
+    for name, description in specific_method_details(meta.get('methods')):
+        name = clean_markdown_text(name)
+        description = clean_markdown_text(description)
+        bullets.append(f'**{name}** — {description}' if description else name)
+    return bullets
+
+
 def extract_findings_from_metadata(meta: dict) -> list[str]:
-    """Return recorded findings, excluding placeholders and abstract echoes."""
+    """Return recorded findings, excluding placeholders and abstract echoes.
+
+    Evidence-grounded summaries (``summary_provenance.source == "full_text.md"``)
+    were verified item by item against the paper text, so a finding that
+    legitimately restates the abstract's result is kept.
+    """
+    if grounded_note(meta):
+        return specific_findings(meta.get('key_findings'))
     return specific_findings(meta.get('key_findings'), meta.get('abstract'), meta.get('description'))
 
 
@@ -706,6 +727,19 @@ def yaml_string(value: Any) -> str:
 
 NO_METHODS_NOTE = 'No paper-specific methods have been summarized yet; see the abstract and the full text.'
 NO_FINDINGS_NOTE = 'No paper-specific findings have been summarized yet; see the abstract and the full text.'
+NO_ABSTRACT_NOTE = 'No abstract is recorded for this work yet; see the DOI or bibliography link.'
+GROUNDED_NOTE = (
+    'Methods and findings are summarized from the full text; each item is backed by a '
+    'verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).'
+)
+
+
+def grounded_note(meta: dict) -> str:
+    """Return the provenance note for evidence-grounded summaries, else ''."""
+    provenance = meta.get('summary_provenance')
+    if isinstance(provenance, dict) and provenance.get('source') == 'full_text.md':
+        return GROUNDED_NOTE
+    return ''
 
 
 def extract_related_papers(meta: dict, all_folders: list[str]) -> list[str]:
@@ -731,6 +765,7 @@ FOLDER_METADATA_FIELDS = (
     "files",
     "methods",
     "key_findings",
+    "summary_provenance",
     "related_papers",
     "related_software",
     "domain",
@@ -892,7 +927,7 @@ def generate_readme(
     authors = work_authors(meta, bib_entry)
 
     # Get abstract from description or metadata
-    abstract = clean_abstract_text(meta.get('abstract', meta.get('description', f'Research paper on {topic}.')))
+    abstract = clean_abstract_text(meta.get('abstract', meta.get('description', ''))) or NO_ABSTRACT_NOTE
     # Truncate for display
     abstract_short = truncate_display_text(abstract)
 
@@ -938,8 +973,8 @@ def generate_readme(
         '',
     ])
 
-    for method in methods[:6]:
-        lines.append(f'- {clean_markdown_text(method)}')
+    for bullet in method_bullets(meta)[:6]:
+        lines.append(f'- {bullet}')
     if not methods:
         lines.append(f'_{NO_METHODS_NOTE}_')
     lines.append('')
@@ -954,6 +989,8 @@ def generate_readme(
     if not findings:
         lines.append(f'_{NO_FINDINGS_NOTE}_')
     lines.append('')
+    if grounded_note(meta) and (methods or findings):
+        lines.extend([f'_{grounded_note(meta)}_', ''])
 
     # Artifacts section
     lines.extend([
@@ -1089,7 +1126,7 @@ def generate_skill(folder: str, meta: dict, all_folders: list[str] | None = None
     title = work_title(folder, meta, bib_entry)
     authors = work_authors(meta, bib_entry)
     venue = work_venue(bib_entry)
-    description = meta.get('description', meta.get('abstract', f'Research on {topic}')).strip()
+    description = str(meta.get('description', meta.get('abstract', '')) or '').strip() or NO_ABSTRACT_NOTE
     domain = resolve_domain(folder, meta, bib_entry)
     tags = meta.get('tags', meta.get('keywords', [topic.lower()]))
     keywords = meta.get('keywords', tags)
@@ -1148,8 +1185,8 @@ def generate_skill(folder: str, meta: dict, all_folders: list[str] | None = None
         'Primary methods and techniques applied in this work:',
         '',
     ])
-    for method in methods[:6]:
-        lines.append(f'- {method}')
+    for bullet in method_bullets(meta)[:6]:
+        lines.append(f'- {bullet}')
     if not methods:
         lines.append(NO_METHODS_NOTE)
     lines.append('')
@@ -1166,6 +1203,8 @@ def generate_skill(folder: str, meta: dict, all_folders: list[str] | None = None
     if not findings:
         lines.append(NO_FINDINGS_NOTE)
     lines.append('')
+    if grounded_note(meta) and (methods or findings):
+        lines.extend([grounded_note(meta), ''])
 
     # Datasets section
     dataset_refs = meta.get('dataset_references', [])

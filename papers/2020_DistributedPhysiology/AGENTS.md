@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Analysis of We examine how this...
+- Extracts methods: Social anatomy / social physiology analogy to metazoan bodies, Two-kind trait classification: nestmate-measurable vs collective colony traits, Review of functional genomic case studies of colony-level regulation
+- Identifies findings: The authors argue the Reproductive Groundplan / toolkit idea is true to a degree but insufficient as a complete explanation for evolution of superorganismal complexity., They hypothesize that eusocial species have a larger cumulative number of exocrine glands across nestmate classes than solitary insects, with more complex secretions., They hypothesize that direct hormone transfer via trophallaxis, as found in carpenter ants, will prove commonplace in eusocial clades.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

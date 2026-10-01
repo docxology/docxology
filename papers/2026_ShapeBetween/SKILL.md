@@ -20,13 +20,16 @@ This work addresses topics in **Computational**: storybook, illustration, proced
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Storybook PDF generated from a public research-template repository** — The illustrated storybook is presented as a template exemplar produced by a research-template repository, with story and images labeled as illustrative fiction.
+- **Geometric fable drawing on Fuller's Synergetics (tetrahedron in cube)** — The narrative uses geometric motifs (a tetrahedron bracing a cube, tensegrity lantern, vector garden) acknowledged as drawn from Fuller's Synergetics.
 
 ## Key Findings
 
 Core contributions and results:
 
 No paper-specific findings have been summarized yet; see the abstract and the full text.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -52,5 +55,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21176000`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

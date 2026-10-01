@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Analysis of The package implemen...
+- Extracts methods: SymergeticsNumber exact-rational wrapper over Python fractions.Fraction, Quadray (four-axis tetrahedral) coordinates in the IVM lattice, IVM-unit volume calculation for Platonic solids
+- Identifies findings: The package reports 100% precision preservation across 953 test cases., Exact arithmetic returns 11/12 for 3/4 + 1/6 rather than the float 0.9166666666666666, with no approximation errors detected in any test case., The paper reports that its Platonic-solid volume relationships in IVM units were independently verified, confirming Fuller's original Synergetics calculations.
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR

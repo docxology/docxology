@@ -20,13 +20,19 @@ This work addresses topics in **AII Ecosystem**: Active Diffusion, diffusion mod
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Proposed theoretical analysis of formal relations between ActInf and diffusion models** — The catechism plans (for 2023) an analytical paper and literature review comparing Latent Diffusion Models with belief propagation in Active Inference.
+- **Proposed integration of diffusion models into the Active Inference formalism** — Planned applied work: build on existing implementations and design experiments testing DMs as learned representations within the action-perception loop.
+- **Proposed cadCAD-based multi-agent work extending Active Blockference** — Plans to use the cadCAD complex adaptive dynamics package for cognitive ecosystem design and to extend the Active Blockference package.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Analysis of The project, f...
+- The document states the 2023-AD mission: characterizing mathematical formalisms and computational applications of Active Inference and Diffusion Models.
+- It identifies shared ground between ActInf and DMs, including that both draw on stochastic thermodynamics for their internal representations.
+- It proposes that LDMs' compression of high-dimensional input into latent representations is analogous to how ActInf agents encode beliefs about their environment.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +60,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.7443847`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Timestamped transcript of a July 26, 2023 Active Inference Institute livestream, Peters' case examples of media coverage of consciousness science
+- Identifies findings: Peters states that the results unveiled at the 2023 public event challenged both Global Neuronal Workspace and Integrated Information Theory, contrary to how the press framed them., Peters argues that missing nuance in news coverage changed the meaning of what was presented., Peters argues that such journalism damages the field's legitimacy with peers, funders and publication venues.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

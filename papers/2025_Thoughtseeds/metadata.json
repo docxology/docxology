@@ -30,17 +30,37 @@
   ],
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Three-level agent-based model of focused-attention Vipassana meditation",
+      "description": "Levels are knowledge domains, a Thoughtseed Network of five competing thoughtseeds, and a meta-cognition layer regulating state transitions.",
+      "evidence": "we developed a three- level hierarchical model of focused-attention Vipassana meditation [37,38]."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Novice and expert state-transition matrices drawn from prior empirical research",
+      "description": "Reference transition probabilities among four meditation states for experts and novices were derived from published focused-attention research.",
+      "evidence": "These matrices, derived from focused attention meditation research [78–80], serve as a reference for understanding the 4 state cyclical patterns [37,38] in Vipassana meditation practice."
+    },
+    {
+      "name": "Rule-based hybrid learning of attractor weight matrices",
+      "description": "Rule-based constraints optimize thoughtseed weights and interaction patterns, avoiding manual parameter tuning.",
+      "evidence": "This frame- work optimizes weights and interaction patterns through rule-based constraints, thereby obviating the necessity of manual parameter adjustment."
+    },
+    {
+      "name": "Granger causality extraction of thoughtseed interaction network",
+      "description": "Pairwise Granger tests (max lag five timesteps, chi-squared significance) define directional thoughtseed influences, then scaled and thresholded.",
+      "evidence": "The interaction network encodes how thoughtseeds influence each other through a data-driven Granger causality framework [92,93]."
+    },
+    {
+      "name": "Modified Wilson-Cowan network dynamics with winner-takes-all dominance",
+      "description": "Competing thoughtseed populations are simulated with facilitatory/inhibitory connections and top-down meta-awareness; the most active thoughtseed dominates each timestep.",
+      "evidence": "At the network level, a modified Wilson–Cowan-type model simulates competing thoughtseed populations, where facilitatory and inhibitory connections shape their interac- tions."
     }
   ],
   "key_findings": [
-    "Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states..",
-    "The framework models thoughts as self-organizing agents (thoughtseeds) that compete...."
+    "Four meditation states (breath_control, mind_wandering, meta_awareness, redirect_breath) emerge from thoughtseed interactions rather than being hard-coded.",
+    "Simulated experts sustain control dominance of focused attention, whereas novices show more frequent, prolonged mind_wandering episodes.",
+    "Learned weights show stronger breath_focus activation during breath_control in experts (0.98) than novices (0.78).",
+    "In the interaction network, experts show strong facilitation from breath focus to self-reflection, absent in novices.",
+    "The authors note the model is not a comprehensive theory of consciousness and needs validation against real neuroimaging or behavioral datasets."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -49,5 +69,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.3390/e27050459",
-  "doi_url": "https://doi.org/10.3390/e27050459"
+  "doi_url": "https://doi.org/10.3390/e27050459",
+  "key_findings_evidence": [
+    "Four states—breath_control, mind_wandering, meta_awareness, and redirect_breath—emerge organically from thoughtseed interactions, demonstrating self- organizing dynamics.",
+    "Results indicate that experts sustain control dominance to reinforce focused attention, while novices exhibit frequent, prolonged mind_wandering episodes, reflecting beginner instability.",
+    "Experts display stronger breath_focus activation during breath_control (0.98 vs. 0.78 in novices), reflecting enhanced executive control [79].",
+    "Experts show stronger facilitatory connections from breath focus to self-reflection (+0.70 vs. novices’ +0.00)",
+    "Validating, refining, and fitting the model using specific real-world neuroimaging or behavioral datasets represents an important next step."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Computational simulation study; results are simulated outputs calibrated to literature-derived transition matrices, not new empirical meditation data."
+  }
 }

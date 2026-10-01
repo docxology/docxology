@@ -18,12 +18,21 @@
 
 ## Methods
 
-- Deterministic token injection for manuscript generation
-- Conditional IMRAD manuscript hydration
+- **Seeded SHA-256 digest selection of lexicon tokens per slot** — Each slot hashes the seed, slot name, category, ordinal and full category list; the digest indexes the configured lexicon category.
+- **YAML config-owned lexicon, slots, and section conditions** — Lexicon categories, slots, section switches, method rows and claims are declared in YAML; source code turns them into manuscript bodies.
+- **Staged pipeline from config validation to hydrated Markdown** — Validates the madlib block, builds a TokenPlan and section bodies, writes artifact JSON and a figure registry, then hydrates Markdown.
+- **Explicit vs. loader-default config field-origin inventory** — Classifies configuration paths as explicitly set in YAML or inherited from loader defaults and reports them as method evidence.
+- **Project tests and shared output validator** — Tests check determinism, seed and category sensitivity, malformed configs, section disablement and unresolved tokens; a validator checks rendered outputs.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- With seed 431, the schema expands 22 slot rules into 40 token choices across 10 lexicon categories.
+- The generated plan enabled all 11 manuscript sections and filled 40 token choices, each traced to its variable, category, section and config pointer.
+- Re-running generation with seed 431 and the same lexicon produces the same token plan.
+- The author frames the main result as traceability surviving a complete render path, not any particular word choice.
+- The paper explicitly does not claim lexical replacement creates scholarship; it shows a conditional text generator can be made accountable to config, tests and validation.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Synthetic 120-record measurement cohort with a fixed seed, Listwise deletion with a reported CleaningReport, no imputation, Descriptive statistics, group means and Pearson correlation ranking
+- Identifies findings: With the shipped data, four rows with missing values are removed, leaving a complete-case dataset., The correlation ranking recovers the designed strong positive height–weight relationship, with resting heart rate only weakly related., All tests pass with coverage above the 90% project gate and no mocks.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

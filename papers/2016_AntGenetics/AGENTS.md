@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Literature review organized by phenotypic trait, Coverage of quantitative-genetic, phylogenetic, omic and physiological studies, Comparative survey of published ant genomes
+- Identifies findings: The authors conclude that despite many results on reproductive physiology and morphology, few studies have investigated the genetics of ant behavior directly., The review reports that eusocial hymenopteran genomes show exceptionally high rates of gene turnover., Reviewed quantitative genetic studies show heritable differences in task performance among matrilines/patrilines.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

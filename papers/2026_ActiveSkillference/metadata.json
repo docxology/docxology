@@ -42,5 +42,51 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-08-10T17:11:39Z"
+  "checked_at": "2026-08-10T17:11:39Z",
+  "methods": [
+    {
+      "name": "Typed, validated DAG curriculum of skills across 8 Active Inference strata",
+      "description": "Encodes the curriculum as code from mathematics through FEP and active inference to applications, with prerequisite edges validated as a DAG.",
+      "evidence": "The curriculum is expressed as code: a typed, validated directed acyclic graph of 630 skills across 111 subjects spanning all 8 strata"
+    },
+    {
+      "name": "Content-provenance binding via tested kernels and typed claim tokens",
+      "description": "Learner-facing numbers come only from tested computational kernels via claim tokens; the build refuses export on unbacked claims.",
+      "evidence": "every quantitative value shown to a learner is produced by a tested computational kernel and inserted through a typed claim token, never hand-typed"
+    },
+    {
+      "name": "Export to SkillTree's Project-Subject-Skill model with REST seeding",
+      "description": "Exports the validated graph into SkillTree with learning-path dependencies and quiz-gated completion, plus a scripted REST seeding path.",
+      "evidence": "The validated graph exports directly into SkillTree’s data model (Project -> Subjects -> Skills with learning-path dependencies and quiz-gated completion), includes a scripted REST seeding path for a configured instance"
+    },
+    {
+      "name": "Deterministic artifact evaluation of structure, provenance, citations, reproducibility",
+      "description": "Evaluates structural validity, quantitative provenance, citation-role coverage and artifact reproducibility, explicitly not learner outcomes.",
+      "evidence": "The paper evaluates structural validity, quantitative provenance, citation-role coverage, and artifact reproducibility; it does not evaluate learner outcomes"
+    },
+    {
+      "name": "Kernel-backed VFE/EFE teaching examples on small discrete models",
+      "description": "Supplement derives model-bounded examples such as noisy-sensor posteriors, EFE policy comparison, sum-product inference and Dirichlet learning.",
+      "evidence": "The kernels implement small, model-dependent demonstrations of inference and policy evaluation."
+    }
+  ],
+  "key_findings": [
+    "The graph connects 630 skills in 111 subjects by 1199 prerequisite edges with maximum dependency depth 75, of which the substantive concept chain accounts for 33.",
+    "Reports a bounded engineering result: a contested formal subject can be represented as an inspectable prerequisite graph whose contracts are checked separately.",
+    "States these are properties of the build, not evidence that the chosen order is optimal for learners or that the framework is empirically confirmed.",
+    "Positions the release as a candidate foundation for a later adaptive study, not an adaptive system, with SkillTree owning progress and scoring."
+  ],
+  "key_findings_evidence": [
+    "connected by 1199 prerequisite edges with a maximum dependency depth of 75 (of which the substantive concept chain accounts for 33;",
+    "Active Skillference establishes a bounded engineering result: a contested formal subject can be represented as an inspectable prerequisite graph whose structural, quantitative, scholarly, and delivery contracts are checked separately.",
+    "These are properties of this checkout and its build process, not evidence that the selected order is optimal for every learner or that the underlying scientific framework is empirically confirmed.",
+    "This makes the repository a candidate foundation for a later adaptive study, not an adaptive system in the present release."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Systems/curriculum-infrastructure release; a learner-outcome study is described as design only and no learner data are reported."
+  }
 }

@@ -18,11 +18,19 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Edited transcript of a three-session moderated symposium** — Records the first Applied Active Inference Symposium with Karl Friston, organized into .edu, .comms and .tools sessions mirroring the lab's organizational units.
+- **Prepared question slides posed by lab participants to Friston** — Lab members developed questions in weekly meetings and presented them as slides; Friston answered and moderators gave recaps.
+- **Presentation of the lab's Active Inference terms list and ontology work** — The .edu session presented the lab's terms list and working ontology, developed within the SUMO ontology framework as a backbone for education.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- Friston recommends toy simulations as the best way to demystify Active Inference for learners in an academic setting.
+- Friston stresses that getting the generative model right is central: if it is apt for the target system, everything else usually follows.
+- Friston distinguishes Active Inference from predictive coding: minimizing variational free energy is only half the game, with expected free energy needed for future-oriented action.
+- On tools, Friston argues anything can be written as a generative model and hence as a variational free-energy-minimizing message-passing scheme, citing ForneyLab.
+- Friston describes epidemic modeling with PCR incidence and mobility data, using Bayesian optimal design to judge whether including a data source is worth the complexity.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

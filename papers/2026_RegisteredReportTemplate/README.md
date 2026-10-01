@@ -18,11 +18,20 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Content-hashed registration freeze plus completeness validation** — The registration is deep-copied and stamped with a SHA-256 hash over sorted-key JSON, then checked for required sections such as hypotheses, outcomes, exclusion rules, and analysis plan.
+- **Seeded synthetic two-group dataset (n = 24 per group)** — Instead of real data, a seeded generator draws control values from Normal(0, 1) and treatment values from Normal(0.8, 1) to demonstrate the workflow.
+- **Two-sided label-permutation test with 2000 shuffles and add-one correction** — The registered primary model tests the group mean difference at alpha = 0.05 using 2000 seeded label shuffles.
+- **Deviation ledger classifying executed elements as ok, warning, or error** — build_deviation_ledger records each executed outcome and model and grades unregistered elements by whether a documented rationale exists.
+- **Deliberately plan-divergent demo analysis to exercise the ledger** — The demo adds a secondary_score endpoint and swaps the permutation test for a linear model, each with a rationale, to show how deviations are recorded.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- On the synthetic data the registered test gives an observed mean difference of 1.003 and a two-sided permutation p-value of 0.0005, with 0 of 2000 shuffles at least as extreme.
+- With both documented deviations, the review packet stays valid, keeps primary_score as the only confirmatory outcome, and reports an integrity score of 0.9.
+- The author states that the result says nothing about any real-world phenomenon, because the data are synthetic and the effect is injected by construction.
+- The template turns registered-report discipline into code checks, such as a content hash that makes silent edits to the locked plan detectable.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

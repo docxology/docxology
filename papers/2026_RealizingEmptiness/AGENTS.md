@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Six-channel boundary screen read under three QRF sector relabelings, Equation registry mapping source qFEP/QRF equations to software artifacts, Bayesian model reduction sweep over prior precision and metacognitive access
+- Identifies findings: Within the finite ledger, the same bitstream supports different QRF partitions, so the partition organizes the model without being evidence for its ontology., All admissible deployments preserve normalized boundary probability mass, while the perturbation control fails., In the surrogate model, the separation prior is useful only through agency.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

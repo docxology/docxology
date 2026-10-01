@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: See paper
-- Identifies findings: See paper
+- Identifies findings: Proposes that knowledge is learning in time from sequences of observations, while wisdom is learning from time, from sequences of observed sequences as time passes., Offers a counterpose in which knowledge is learning from time (causal consequences, patterns) and wisdom is learning in time, including learning "to know when"., Combines both framings into a four-quadrant tetralemma in which knowledge and wisdom can each be in and from time.
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

@@ -20,13 +20,18 @@ This work addresses topics in **Entomology**: CRISPR/Cas9, Orco gene, olfactory 
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Side-by-side preview of two companion Cell ant CRISPR/Cas9 studies** — Compares Trible et al. (2017) and Yan et al. (2017), which knocked out the Orco olfactory co-receptor in O. biroi and H. saltator.
+- **Contrast of reproductive biology enabling mutant lines in each species** — Explains how clonal parthenogenesis in O. biroi and the gamergate transition in H. saltator were each used to propagate Orco mutants.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Analysis of In this issue of...
+- Homozygous Orco loss-of-function ants of both species showed similar altered behavior and reduced reproductive performance, supporting Orco's central role in ant olfaction.
+- Both studies unexpectedly found gross antennal lobe defects in Orco mutants, which the authors argue implies a novel neurodevelopmental role for Orco.
+- The commentary frames the two studies together as a watershed moment for eusocial insect genetics, moving beyond purely correlative evidence.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +59,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1016/j.cell.2017.07.046`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -20,13 +20,22 @@ This work addresses topics in **Genetics & Biomedical**: Ehrlichia, Anaplasma, l
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Clinical description of three illustrative patient cases** — Presents three cases (ALL, AML, and polycythemia vera progressing to AML) as direct or indirect evidence for the hypothesis, citing an earlier report.
+- **Therapeutic-dose Rifampin given to two moribund leukemia patients** — Two patients received Rifampin after other treatments were exhausted; their subsequent blood counts and condition are reported.
+- **Peripheral blood film and PCR analysis in one patient** — In the third case, blood-film inclusions resembling EA prompted PCR analysis, which indicated a previously unreported Ehrlichia.
+- **Appendix synthesizing EA transcriptomic and molecular-interaction studies** — Appendix A reviews published THP1 transcriptomic, ChIP-chip and yeast-two-hybrid studies of E. chaffeensis to compare with leukemia biology.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Hypothesizes that leukemia, multiple myeloma, myelodysplastic and autoimmune disorders may be associated with or caused by Ehrlichia/Anaplasma bacteria.
+- Reports that in one AML patient, leukocytes rose from 200 to 24,000 within a short period of Rifampin treatment.
+- The authors describe the three cases as not definitive but as suggestive evidence of a connection between leukemia and EA.
+- Proposes that leukemia may be an antibiotic-treatable infection rather than a malignancy, under this conceptualization.
+- Concludes that the data do not prove the hypothesis and that further serology and DNA studies are needed.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +63,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1016/j.mehy.2015.09.015`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

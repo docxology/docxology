@@ -1281,6 +1281,10 @@
             "author": [
                 {
                     "@type": "Person",
+                    "name": "Maria Luiza Iennaco"
+                },
+                {
+                    "@type": "Person",
                     "@id": "https://danielarifriedman.com/#person",
                     "name": "Daniel Ari Friedman",
                     "sameAs": [
@@ -2073,13 +2077,11 @@
             "author": [
                 {
                     "@type": "Person",
-                    "@id": "https://danielarifriedman.com/#person",
-                    "name": "Daniel Ari Friedman",
-                    "sameAs": [
-                        "https://orcid.org/0000-0001-6232-9096",
-                        "https://www.wikidata.org/wiki/Q138781444",
-                        "https://www.flickr.com/photos/daniel_friedman/"
-                    ]
+                    "name": "D. A. Friedman"
+                },
+                {
+                    "@type": "Person",
+                    "name": "O. C. Ripley"
                 }
             ],
             "publisher": {
@@ -3295,6 +3297,14 @@
             "author": [
                 {
                     "@type": "Person",
+                    "name": "Scott David"
+                },
+                {
+                    "@type": "Person",
+                    "name": "R.J. Cordes"
+                },
+                {
+                    "@type": "Person",
                     "@id": "https://danielarifriedman.com/#person",
                     "name": "Daniel Ari Friedman",
                     "sameAs": [
@@ -3605,6 +3615,10 @@
             "headline": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
             "datePublished": "2021",
             "author": [
+                {
+                    "@type": "Person",
+                    "name": "Richard J. Cordes"
+                },
                 {
                     "@type": "Person",
                     "@id": "https://danielarifriedman.com/#person",
@@ -4002,6 +4016,10 @@
                         "https://www.wikidata.org/wiki/Q138781444",
                         "https://www.flickr.com/photos/daniel_friedman/"
                     ]
+                },
+                {
+                    "@type": "Person",
+                    "name": "Richard J. Cordes"
                 }
             ],
             "publisher": {

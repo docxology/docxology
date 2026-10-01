@@ -20,13 +20,20 @@ This work addresses topics in **Active Inference**: shared protentions, multi-ag
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Husserlian time-consciousness as conceptual basis for shared goals** — Uses Husserl's retention, primal impression, and protention, extended to intersubjectivity, to cast shared goals as shared protentions.
+- **Polynomial-functor formalization of agent boundaries and generative models** — Represents agents' Markov blankets as polynomial functors with stochastic feedback, using tensors and hom polynomials to model multi-agent prediction.
+- **Sheaf- and topos-theoretic gluing of agents' world models** — Proposes gluing agents' spatial generative models into a sheaf of world models and their toposes into a consensus topos representing shared understanding.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Replacing the trivial interface with a hom over all agents' blankets yields agents that predict their own and companions' actions plus the environment's response, a starting point for formal theory of mind.
+- The authors argue that if agents' models can be glued into a sheaf of world models, the agents inhabit a shared universe and may be said to share protentions; failure to glue indicates disagreement.
+- The paper proposes shared protentions as an emergent, possibly necessary, property of collective self-organization.
+- The authors state the proposal is broad and does not yet provide a specific testable model, leaving that to future work.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +61,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.3390/e26040303`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

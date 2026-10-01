@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Three system-prompted trader personas as binary judges, Unsupervised NTQR ErrorIndependentEvaluation on vote counts, Deliberately unbalanced 40/24 scenario deck
+- Identifies findings: For mistral:latest, unsupervised recovery matched authored-truth accuracies to a mean absolute error of 0.012, within the 0.102 sampling-noise floor., The algebra recovered a poor judge's accuracy without labels: the pessimist's true bullish accuracy of 0.57 was recovered as 0.59., Inter-judge disagreement did not imply evaluability; what gated evaluation was whether every individual judge varied, not ensemble-level disagreement.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

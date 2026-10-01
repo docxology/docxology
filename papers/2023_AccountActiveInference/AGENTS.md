@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: This report provides a single-page account of Active Inference modeling.., This report was written entirely by hand without any synthetic computational-linguistic intelligences.., Thank you to the learners, interns, and participants of the Active Inference Institute to whom I&#39;ve mostly learned from..
+- Extracts methods: Analogy between financial accounting and generative modeling, Research vs. Application distinction illustrated with a spreadsheet
+- Identifies findings: The author argues Active Inference's breadth rests on a first-principles scale-free approach rather than a scheme specific to cognitive systems: it can say more because it says less., Building even simple cognitive phenomena (e.g. learning, attention) into the core formulation would, the author argues, restrict the scope of analysis to systems with that character., Natural-language descriptors of cognitive phenomena are treated as secondary relational attributions about a realized generative model, not intrinsic aspects of the system.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

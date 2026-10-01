@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: See paper
-- Identifies findings: See paper
+- Identifies findings: The submitters argue Digital Twins are not conceptually new, so lessons on vulnerabilities, exploits and remedies from control theory and cybernetics can be reused., They argue a Digital Twin can never perfectly map its physical counterpart and that the cyber-physical gap inevitably grows over time., They argue the functional surface of a cyber-physical system is essentially indistinguishable from its threat surface.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

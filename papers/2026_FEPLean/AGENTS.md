@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Lean 4 theorem proving for FEP formalization, AI-assisted theorem sketching and verification
-- Identifies findings: <p>The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked a, Dependent-type provers require explicit measure spaces, domination, and integrability that literature prose and equations may leave implicit.
+- Extracts methods: Curated catalog of 50 FEP topics as namespaced Lean 4 sketches against Mathlib4, Native lake env lean verification on a pinned Lean/Mathlib v4.29.0 stack, LLM-assisted commentary pipeline (Hermes/OpenGauss, kimi-k2.6 via OpenRouter)
+- Identifies findings: On the pinned Lean 4 / Mathlib4 v4.29.0 stack, the shipped catalog compiles 50/50 sorry-free., The Hermes-assisted Gauss run run_20260424_064334 achieved 50/50 clean compiles with 0 sorry and 0 errors., Constructions that already typecheck in today's Mathlib4 include finite-set probability, Bayesian updating, finite-space KL divergence and variational free-energy bounds.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

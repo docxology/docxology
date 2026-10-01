@@ -47,21 +47,53 @@
   "type": "Presentation",
   "methods": [
     {
-      "name": "Content production",
-      "description": "Applied content production approach"
+      "name": "Extension of Variational Neuroethology (Ramstead et al. 2017) to evolution",
+      "description": "Builds the proposed MVEE framework by extending VNE toward a general framework for evolutionary studies.",
+      "evidence": "Extend Variational Neuroethology (Ramstead et al. 2017) to specify a tractable general framework for all Evolutionary studies, Biological and Otherwise."
     },
     {
-      "name": "Pedagogical design",
-      "description": "Applied pedagogical design approach"
+      "name": "Genotype-Environment-Phenotype tensor representation through time",
+      "description": "Represents evolving systems as a dynamic multiscale G-E-P tensor over time, using only measurable quantities instead of fitness.",
+      "evidence": "Biology ∈ ℝGEP Generalized, Dynamic, multiscale Tensor representation of Any Evolving System. Free from “Fitness”!"
+    },
+    {
+      "name": "Pairing of state models and process models across scales",
+      "description": "Distinguishes predictive state theories (e.g. R = h2S) from algorithmic process theories and combines them via coarse-graining.",
+      "evidence": "Broadly we can consider two types of theory -- State and Process theories:"
+    },
+    {
+      "name": "Proposed compute-graph (TensorFlow) machine-learning architecture",
+      "description": "Proposes a single integrated ML framework on existing biological data to jointly consider coarse-grained state and process models.",
+      "evidence": "By using a single integrated machine learning framework on pre-existing biological data (TensorFlow/compute-graph), MVEE jointly and optimally considers coarse-grained state and process models across scales."
+    },
+    {
+      "name": "Worked example: harvester ant ('Pogo') foraging across three scales",
+      "description": "Sketches state and process models for one colony over a day, a colony population over a summer, and populations over generations.",
+      "evidence": "Example state/process + coarse-graining for “Pogo Foraging”"
     }
   ],
   "key_findings": [
-    "MVEE reflects where I was at in January 2018 ( solo presentation ) in thinking about Biology, Evolution, Active Inference, Free Energy Principle, and more..",
-    "Uploaded to Zenodo in 2024.."
+    "The talk claims EcoEvoDevo is stuck in a locally-optimizing regime because of an incoherent genotype-phenotype-environment and fitness framing.",
+    "It argues the data, theory and philosophy already exist for a tractable generalized model of evolution, with the challenge being integrating VNE with classical theory using limited data.",
+    "It critiques VNE's human-cognition case study as not yet operationalized for actual data and unclear for other evolutionary systems.",
+    "It proposes MVEE (Multilevel Variational Evolutionary Ecology) as a framework combining VNE, EcoEvoDevo, collective behavior and machine learning."
   ],
   "related_papers": [
     "2023_AntsAging",
     "2023_PostdocReview",
     "2025_BiofirmDevelopmentWith"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Claim 1: EcoEvoDevo is trapped in a locally-optimizing regime because it is trapped in an incoherent G-P-E & F phrasing.",
+    "The challenge lies in finding how to integrate the VNE with classical evolutionary theory and apply it to real systems using limited empirical data.",
+    "The case study in VNE on human cognition is still not operationalized in a way that allows usage of actual data:",
+    "MVEE == Variational Neuroethology + EcoEvoDevo + Collective Behavior + ML"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Slide deck; many slides are image-only so the extracted text is sparse. Claims are the presenter's proposals, not tested results."
+  }
 }

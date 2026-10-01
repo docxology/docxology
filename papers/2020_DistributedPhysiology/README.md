@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this distributed physiology emerges from local interactions, neurochemistry, and gene expression patterns. The colony operates as a superorganism in which physiological regulation—metabolism, water...
+> The traditional focus of physiological and functional genomic research is on molecular processes that play out within a single multicellular organism. In the colonial (eusocial) insects such as ants, bees, and termites, molecular and behavioral responses of interacting nestmates are tightly linked, and key physiological processes are regulated at the scale of the colony. Such colony-level...
 
 ## Keywords
 
@@ -18,11 +18,20 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Social anatomy / social physiology analogy to metazoan bodies** — Frames the colony via the social anatomy vs social physiology distinction, comparing specialized nestmates to organs and signaling to physiology.
+- **Two-kind trait classification: nestmate-measurable vs collective colony traits** — Distinguishes traits measurable in one nestmate (e.g. head width) from collective outcomes (e.g. nest architecture) to organize case studies.
+- **Review of functional genomic case studies of colony-level regulation** — Surveys case studies where physiological and functional genomic work clarified colony-level regulation of worker and queen traits.
+- **Formulation of testable hypotheses (glands, signaling, regulatory networks)** — Proposes hypotheses for glands, signaling pathways, and gene regulatory networks, to be tested with phylogenetic comparative methods.
 
 ## Key Findings
 
-- Analysis of We examine how this...
+- The authors argue the Reproductive Groundplan / toolkit idea is true to a degree but insufficient as a complete explanation for evolution of superorganismal complexity.
+- They hypothesize that eusocial species have a larger cumulative number of exocrine glands across nestmate classes than solitary insects, with more complex secretions.
+- They hypothesize that direct hormone transfer via trophallaxis, as found in carpenter ants, will prove commonplace in eusocial clades.
+- They hypothesize that novel gene regulatory networks will form from the decoupling of otherwise conserved pathways and traits in the colony context.
+- They caution that Drosophila-derived GO analysis in eusocial insects will ignore taxonomically restricted genes and overstate orthologous genes.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

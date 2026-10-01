@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Active inference modeling of consciousness, Bayesian mechanics of self-organizing systems, Philosophical analysis of Markov blanket formalism
-- Identifies findings: See paper
+- Extracts methods: Written Q&A interview of Karl Friston by Fortier and Friedman, Interviewer-framed contrasts of Bayesian brain, predictive coding and FEP, Questions drawing on empirical literatures (fluency, psychosis, altered states)
+- Identifies findings: Friston recounts that the prototype of the FEP came from noticing, at age eight, that woodlice simply moved faster in the sun and slower in the shade., Friston distinguishes the FEP as an unfalsifiable principle from process theories such as predictive coding, which are empirically testable hypotheses., Friston argues the Bayesian brain and predictive coding lack the enactive aspect of the FEP because they do not consider entropy reduction.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Fixed-step gradient descent on a 1-D convex quadratic (A=1, b=1), Six-point step-size grid from α=0.01 to α=2.5, Comparison to scalar contraction factor ρ(α)=|1−α|
+- Identifies findings: Four of the six grid step sizes converged; the non-converged runs either hit the iteration cap at small α or were unstable when |1−α| ≥ 1., α=1.0 reached the optimum in one iteration for this unit-Hessian problem, the fastest configuration., The paper reports a stability boundary at α=2: α<2 converges and α≥2 diverges for the unit-Hessian problem.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

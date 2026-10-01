@@ -57,17 +57,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Controlled vocabulary of 9 step intents and 3 execution targets",
+      "description": "Steps name one of nine intents (TRANSFER, ADD, MIX, etc.) and run on HUMAN, AUTOMATED or SIMULATION targets, generalizing BPL's protocol verbs.",
+      "evidence": "A StepKind is one of 9 controlled intents — TRANSFER, ADD, MIX, INCUBATE, MEASURE, WAIT, COMPUTE, VALIDATE, ANNOTATE — and a Target is one of 3 execution backends — HUMAN, AUTOMATED, SIMULATION."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Dimensional-safety unit system (Quantity/Dimension)",
+      "description": "Each quantity resolves to a controlled unit table and combining quantities of different dimensions raises an error at construction rather than at the bench.",
+      "evidence": "check_compatible raises DimensionError the moment two quantities with different dimensions are combined"
+    },
+    {
+      "name": "Four staged validation gates with short-circuit",
+      "description": "Structural, semantic, plan (acyclicity) and target-compatibility gates run in fixed order, returning early if the first two fail.",
+      "evidence": "run_all_gates runs exactly 4 gates in fixed order, mirroring BPL’s staged short-circuit (a syntax failure never reaches the plan gate):"
+    },
+    {
+      "name": "Deterministic compilation via Kahn's algorithm and SHA-256 plan hash",
+      "description": "Validated steps are topologically scheduled with an explicit ascending step_id tie-break and the canonical JSON plan is hashed with SHA-256.",
+      "evidence": "topological_order schedules the validated steps with Kahn’s algorithm [Kahn, 1962]: repeatedly remove a step whose dependencies are all already scheduled, breaking ties by ascending step_id so the same method always yields the same order"
+    },
+    {
+      "name": "Two worked example methods and zero-mock test suite",
+      "description": "Demonstrates the DSL on a wet-lab PBS preparation and an automated sensor-calibration sweep, tested without mocks under a 90% coverage gate.",
+      "evidence": "We specify two methods with all_example_methods() (src/methods_dsl/examples_methods.py): PBSPreparation, an original — not copied from BPL’s shipped examples — manual bench preparation in BPL’s own domain, and SensorCalibrationSweep"
     }
   ],
   "key_findings": [
-    "This paper describes a small, tested domain language for specifying\ncontrolled methods — the methods-paper exemplar of the\nResearch Project Template (https://github.com/docxology/template).",
-    "Unlike a\nresults paper, this manuscript's subject is the methodology itself: a\ncontrolled vocabulary, a unit system with dimensional safety, four staged\nvalidation gates, and a deterministic compiler,"
+    "Across the two worked example methods, 8 of 8 staged-gate evaluations passed.",
+    "Live recompilation of each example method produced identical plan hashes, and a 3-record demonstration provenance hash-chain verified.",
+    "The author concludes that a controlled vocabulary expressed as typed, validated dataclasses rather than a parsed grammar suffices to reproduce BPL's core safety properties at template-exemplar scope.",
+    "Stable scheduling depends on the explicit tie-break: Kahn's algorithm alone does not guarantee a reproducible plan hash.",
+    "The calibration example reused every step kind and target of the wet-lab example, with nothing added to support the second domain."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -76,5 +96,19 @@
   ],
   "related_software": [
     "docxology/template_methods_paper"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Across both methods, the analysis script tallies 8 of 8 staged-gate evaluations passing (run_all_gates × 2 methods × 4 gates each).",
+    "Recompiling each example method twice and comparing plan_hash values yields: determinism check = Yes.",
+    "a controlled vocabulary expressed as typed, validated dataclasses — not a parsed text grammar — is suﬀicient to reproduce BPL’s core safety properties at a scope appropriate for a template exemplar.",
+    "Kahn’s algorithm [Kahn, 1962] alone does not guarantee a stable schedule across runs — the ascending-step_id tie-break is what makes plan_hash reproducible",
+    "SensorCalibrationSweep reuses every StepKind and Target the wet-lab-flavored PBSPreparation example uses; nothing was added to support a second domain."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Methods-paper template exemplar; only two worked examples (not a corpus). The abstract says units span six dimensions while the methodology and setup tables list seven."
+  }
 }

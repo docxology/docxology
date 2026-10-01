@@ -83,17 +83,22 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Timestamped transcript of a July 26, 2023 Active Inference Institute livestream",
+      "description": "Records a ~10-minute talk by Megan Peters followed by a three-way discussion with Nora Bradford and Daniel Friedman.",
+      "evidence": "Transcript from livestream on July 26, 2023 at the Active Inference Institute."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Peters' case examples of media coverage of consciousness science",
+      "description": "Peters walks through quoted headlines and passages from news coverage (e.g. Nature, Science, The Economist) and critiques each.",
+      "evidence": "I thought that maybe in order to drive this point home, I could actually give you some examples of how consciousness science has been misrepresented in the media"
     }
   ],
   "key_findings": [
-    "Transcript from livestream on July 25, 2023 at the Active Inference Institute.",
-    "YouTube watch link: https://www.youtube.com/watch?v=dUXfgzKHV1c Repository with updated transcripts and accessory files: https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/tree/main/Gu"
+    "Peters states that the results unveiled at the 2023 public event challenged both Global Neuronal Workspace and Integrated Information Theory, contrary to how the press framed them.",
+    "Peters argues that missing nuance in news coverage changed the meaning of what was presented.",
+    "Peters argues that such journalism damages the field's legitimacy with peers, funders and publication venues.",
+    "Bradford advises readers that press articles making sensational claims, such as finding the root of consciousness, are probably not true.",
+    "Bradford recommends researchers be clear about what level of 'consciousness' they mean when presenting work or talking to journalists."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -101,5 +106,19 @@
     "2021_ModelingConflict"
   ],
   "artifact_doi": "10.5281/zenodo.8229512",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.8229512"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.8229512",
+  "key_findings_evidence": [
+    "And the hot off the press results that were shown in this event, they actually ended up challenging both theories.",
+    "the missing aspects, the missing nuance, really changes the meaning of what was presented.",
+    "These journalism articles, they're not just infuriating. They're really actively damaging the legitimacy of our field.",
+    "or one way is if it's making sensational claims, like claiming to have found the root of consciousness, or some really large claim... It's probably not true.",
+    "Just being really clear about what level you're talking at, I think is really helpful."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Livestream transcript; findings are speakers' stated views, attributed by name."
+  }
 }

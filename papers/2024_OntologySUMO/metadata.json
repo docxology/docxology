@@ -110,17 +110,29 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Suggested Upper Merged Ontology (SUMO) formalization",
-      "description": "Applied suggested upper merged ontology (sumo) formalization approach"
+      "name": "Tentative term-by-term alignment of Active Inference topics to SUMO entities",
+      "description": "Built an alignment table proposing, for a subset of Active Inference Ontology terms, the SUMO files, supersets, subsets and relations likely to correspond to each topic.",
+      "evidence": "For a subset of Active Inference terms, we identify published SUMO files (i.e. .kif files) likely to contain correctly delineated mappings of those topics; likely SUMO supersets of"
     },
     {
-      "name": "Cross-domain ontology alignment",
-      "description": "Applied cross-domain ontology alignment approach"
+      "name": "Grouping Active Inference topics into modules and core/entailed/supplemental lists",
+      "description": "Organized topics into informal modules (e.g. Action, Bayesian Statistics, Markov Partitioning) and assigned each to one of three exposition lists.",
+      "evidence": "List. Each individual topics has been assigned to one of three “lists.” This is a porous partition, created to help organize exposition."
+    },
+    {
+      "name": "Structured SUMO columns: superclass/instanceOf, subclasses, domains, other relations",
+      "description": "Situated each aligned term in SUMO via columns for more-general relations, less-general subclasses/subrelations, argument domains, and other SUMO relations.",
+      "evidence": "this column situates a conceptual entity in the whole SUMO ontology by showing the term’s place one or more “upward” or “including” or contextual or more-general relationships"
+    },
+    {
+      "name": "Flagging proposed terms absent from SUMO with an asterisk",
+      "description": "Marked candidate terms not yet present in SUMO with an asterisk prefix (e.g. *ActiveState), indicating where new SUMO topics would be needed.",
+      "evidence": "In this document, we often flag terms that do not yet belong to SUMO by prefixing an asterisk (as in “*ActiveState”)."
     }
   ],
   "key_findings": [
-    "SUMO formalization enables principled cross-domain reasoning for AI systems",
-    "Upper ontology alignment bridges cognitive science and artificial intelligence through shared category structures"
+    "The document provides a scaffolding: a tentative alignment of Active Inference terms with SUMO entities, intended to support a later rigorous mapping of Active Inference to SUMO.",
+    "The alignment table shows, for many core Active Inference terms, SUMO areas likely to hold corresponding topics or where new topics should be created to better match Active Inference concepts."
   ],
   "related_papers": [
     "2022_ActiveDiffusion",
@@ -128,5 +140,16 @@
     "2024_AII_v2"
   ],
   "artifact_doi": "10.5281/zenodo.11463326",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.11463326"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.11463326",
+  "key_findings_evidence": [
+    "This document aims to act as a scaffolding, displaying a tentative alignment of Active Inference terms with SUMO entities, in order to facilitate the anticipated process of rigorously mapping Active",
+    "This shows, for many core terms used in the Active Inference Ontology, areas of SUMO that are likely to contain corresponding topics; or which are portions of SUMO where topics should be created to more nearly match Active Inference concepts."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "other",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Alignment/scaffolding document (largely a table) rather than a study; no empirical results. Metadata check: the batch author list includes 'Maybell, Scott Ryan', who does not appear in the paper's author list (13 authors in text); text spells 'Ana Magdelena Hurtado' (batch: Magdalena). The full alignment table is an external .xlsx not included here."
+  }
 }

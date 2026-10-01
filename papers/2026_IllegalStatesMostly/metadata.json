@@ -40,5 +40,53 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-07-10T19:31:26Z"
+  "checked_at": "2026-07-10T19:31:26Z",
+  "methods": [
+    {
+      "name": "Simulated ant-robot colony: agents with own SQLite DB and protocol endpoint",
+      "description": "Each simulated colony member owns one on-disk SQLite database and one fault-injectable protocol endpoint, with no shared storage or network state.",
+      "evidence": "Each colony member is an Agent that owns exactly one real, on-disk SQLite database and one in-process, fault-injectable protocol endpoint; no agent ever touches another agent’s storage or network state."
+    },
+    {
+      "name": "mypy --strict as oracle on six known-bad and three known-good fixtures",
+      "description": "Runs mypy --strict as a subprocess on negative-control fixtures (expect errors), positive-control fixtures, and the src tree (expect zero exit).",
+      "evidence": "runs mypy --strict as a real subprocess against every fixture under tests/mypy_fixtures/ — six known- bad programs, one per ISC-2/4/15/18/31/32"
+    },
+    {
+      "name": "Seeded fault injection (drop/reorder/duplicate/corrupt) over an in-process bus",
+      "description": "Drives real handshakes through an in-process bus with each fault mode enabled, checking typed error results and seed determinism.",
+      "evidence": "drive a real handshake through the in-process bus (network/bus.py) with each fault mode enabled independently."
+    },
+    {
+      "name": "Pre-registered seeded experiments with Wilson CIs, Fisher and Cochran–Armitage tests",
+      "description": "Tests colony convergence over independently seeded trials at a calibrated baseline (8 agents, 2 locations, 30 ticks) using Wilson intervals, Fisher and trend tests.",
+      "evidence": "at the calibrated baseline configuration (8 heterogeneous agents, 2 locations, 30 ticks, sensing-noise 𝜎= 0.5, decay = 0.46)"
+    },
+    {
+      "name": "Design lenses: schema as functor; decision as expected-free-energy minimizer",
+      "description": "Frames per-agent storage as a functor Schema→Set and decisions via expected free energy, explicitly as design lenses rather than proofs.",
+      "evidence": "Both framings are declared as design lenses, not machine-checked mathematical results"
+    }
+  ],
+  "key_findings": [
+    "The stigmergic mechanism's convergence beat a random-choice null model: its Wilson lower bound (0.8816) clears the null model's upper bound (0.0368).",
+    "Disabling only pheromone deposit collapsed convergence to chance level, attributing the mechanism's advantage to the stigmergic channel in this configuration.",
+    "Convergence versus decay showed a threshold rather than a monotonic slope, with 0/60 trials converging at decay 0.10 and 0.30.",
+    "Convergence decreased strictly as preference heterogeneity widened (1.0000 > 0.9333 > 0.2500 > 0.0333).",
+    "An audit found a defect the src-only mypy gate missed (a Protocol a frozen dataclass could not satisfy), fixed with read-only properties and a good-fixture regression guard."
+  ],
+  "key_findings_evidence": [
+    "𝐻0 is decisively rejected: the two Wilson intervals do not overlap — the real mechanism’s lower bound (0.8816) clears the null model’s upper bound (0.0368) by a wide margin.",
+    "severing only the pheromone deposit channel — while leaving every other part of the real decision loop untouched — collapses convergence all the way down to (numerically, even slightly below) the null model’s own chance-level rate.",
+    "it is a threshold, not a monotonic slope. Below decay ≈0.35 the colony essentially never converges (both 0.10 and 0.30 score exactly 0/60, Wilson upper bound under 0.06)",
+    "the rate strictly decreases at every step of the sweep (1.0000 > 0.9333 > 0.2500 > 0.0333)",
+    "A cross-vendor audit of this template caught a genuine defect the src/-only oracle could not see"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Simulation-only template. The paper scopes all colony results to the tested configuration (8 agents, 2 locations, 30 ticks) and notes that the real-vs-null gap and zero-deposit ablation are established only at seed_base=0. The 3-agent integration test's agreement is explicitly 'guaranteed by construction', not emergence. The paper itself notes the reported decline at decay=1.00 rests on one pairwise gap whose Fisher test (p=0.1187) is not significant alone."
+  }
 }

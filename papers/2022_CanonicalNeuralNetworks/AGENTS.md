@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Three-session Active Inference livestream (#051) on Isomura et al. 2022, Solo slide walkthrough by Daniel Friedman with colour-coded paper quotes, Discussion of the complete class theorem via external online resources
+- Identifies findings: As read in the stream, the paper claims a class of canonical rate-coding neural networks is universally characterised as variational Bayesian inference under a particular but generic generative model., Friedman relays the paper's corollary of the complete class theorem: any neural network minimizing a cost function can be viewed as variational Bayesian inference under some priors., Quoted from the paper: a network of rate coding models with sigmoid activation formally corresponds to a class of POMDP models.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

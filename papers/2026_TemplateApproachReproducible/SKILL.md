@@ -20,13 +20,23 @@ This work addresses topics in **Computational**: reproducible research, infrastr
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Two-Layer Architecture separating shared infrastructure from project workspaces** — Describes a repository design where N independent research projects share infrastructure packages without coupling to each other.
+- **YAML-declared 12-stage build DAG from tests through Pandoc/XeLaTeX rendering** — Specifies the pipeline in pipeline.yaml; default full runs use 10 stages and --core-only runs 8.
+- **Zero-Mock testing policy with 90% project and 60% infrastructure coverage gates** — Tests use real filesystem operations and subprocess calls rather than mocks, with coverage thresholds enforced by the pipeline.
+- **Feature comparison against nine peer tools across fourteen dimensions** — Compares template/ with workflow managers, literate-programming systems, DVC, Overleaf and OpenAI Prism on enforcement features.
+- **Multi-project pipeline runs measuring coverage, timing, integrity and watermarking** — Exemplar projects were run through the core pipeline on an Apple Silicon workstation, recording tests passed, durations and steganography timings.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Reports 100% pipeline completion for the sampled multi-project runs, with timings described as illustrative.
+- The manuscript was itself produced by the pipeline it describes, with metrics injected from repository introspection.
+- The comparative analysis positions template/ as integrating fourteen distinctive enforcement capabilities in one repository.
+- States that the provenance layer offers SHA-256 tamper detection but not cryptographic non-repudiation, since it lacks private-key signatures.
+- Acknowledges the pipeline is single-machine, without native distributed execution, where Snakemake, Nextflow and CWL are superior.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20419007`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

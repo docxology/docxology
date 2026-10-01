@@ -20,13 +20,22 @@ This work addresses topics in **Active Inference**: variational synthesis, natur
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Bayesian mechanics of particular partitions (free energy principle)** — Particular partitions are used to analyze how slow phylogenetic processes constrain and are constrained by fast phenotypic processes.
+- **Two coupled random dynamical systems linked by a renormalisation group** — Phylogenetic and phenotypic processes are modelled as two random dynamical systems coupled via renormalisation-group reduction and grouping operators.
+- **Variational recipe: Bayesian filtering plus stochastic gradient descent on action** — A four-step protocol samples particles, finds least-action paths by generalised Bayesian filtering, scores the free-energy path integral, and updates parameters.
+- **Numerical simulation of synaptic selection in a single neuron** — A single dendrite with 20 synapses over five segments was simulated over 64 cycles, with synapses eliminated via Bayesian model reduction on synaptic precision.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The main result is a formulation of adaptive fitness as a path integral of phenotypic fitness, with least-action paths read as inference (phenotypic) and learning (phylogenetic).
+- The synthesis implies that a population of conspecifics cannot be modelled per se; one must consider populations of distinct natural kinds that influence each other.
+- Genotype and phenotype fitness are both selected through minimisation of the same free energy functional (Bayesian model evidence).
+- In the synaptic-selection simulation, free energy progressively decreased at the slow timescale as synapses enabling the cell to predict its inputs were selected.
+- The authors caution that the account is limited to mathematical apparatus, is not a process theory, and did not examine when the variational fitness lemma holds.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +63,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.3390/e25070964`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

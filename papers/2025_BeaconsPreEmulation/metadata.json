@@ -41,16 +41,31 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Genomic and bioinformatic analysis",
-      "description": "Applied genomic and bioinformatic analysis approach"
+      "name": "Cat-in-environment thought scenario for a simulated agent",
+      "description": "The design is framed around a single agent (a cat) perceiving an environment of objects, each treated as a signal-publishing beacon.",
+      "evidence": "Beacons are vision-labeled objects in a simulation, Though all of them is able to be considered as a Publisher of Signal (a beacon)"
     },
     {
-      "name": "Statistical genetics",
-      "description": "Applied statistical genetics approach"
+      "name": "Pattern-scan and labeling procedure with object-type codes",
+      "description": "A numbered formal process scans vision for patterns, ranks them by significance, and assigns labels such as OTSP, OTSA, OTSB and OTSSB by object type.",
+      "evidence": "1. Scan everything in vision for PATTERNS 2. Label all patterns and divide them by Significance"
+    },
+    {
+      "name": "Beacons table with confirmation and weight pulses",
+      "description": "Sketches building a beacons table, checking nearest object types, then publishing pulses as weights onto the agent's simulation.",
+      "evidence": "Make beacons table Run a process to check nearest, run confirmation"
+    },
+    {
+      "name": "Baseline-to-learned epigenetic reaction tables",
+      "description": "Beacon processing trees are encoded in a table that starts from an inherited baseline of reactions and is modified by learning.",
+      "evidence": "Starts from a Baseline (Inherited) reactionary table of actions Onto a Learned (modified) reactionary table of actions (reactions in this case)."
     }
   ],
   "key_findings": [
-    "primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of&nbsp; category and response, which might include a"
+    "Proposes classifying entities on a certainty spectrum, from predictable (walls, rocks) to highly dynamic social entities carrying their own prediction matrix.",
+    "Introduces a self-social (OTSSA) label so identities can be represented and swapped into social-social simulations in place of another social creature.",
+    "Notes that biologically objects may first be treated as social and then downgraded, but the sketch deliberately starts bottom-up for an optimized working agent.",
+    "States the aim of building an agent by attaching any vision model to a labeling regime, which the authors flag as subject to change."
   ],
   "related_papers": [
     "2015_CryptoJews",
@@ -58,5 +73,18 @@
     "2015_HoneyBeeEvolution"
   ],
   "artifact_doi": "10.5281/zenodo.14737060",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.14737060"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.14737060",
+  "key_findings_evidence": [
+    "But for optimization reasons; these are then classified onto a certainty spectrum. Some of them are almost absolutely predictable , such as Walls, Rocks. etc",
+    "This way; Identities (any psychological equivalent) are able to be represented As if they are whispering selves that adds weight or simulatable despite not being very clearly depicted",
+    "this reality actually implies that objects are initially labeled as Social) instead of the other way around",
+    "We hope to construct an agent by attaching a (any) Vision Model With the appropriate labeling regime"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Short informal design sketch (8 pages of notes); no implementation, data, or evaluation. Findings are proposals, not results. The repo assigns this work to the 'Genetics & Biomedical' domain (AGENTS.md), which does not match the content (agent / social-cortex emulation design)."
+  }
 }

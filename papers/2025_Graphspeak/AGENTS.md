@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Proposed three-layer graph sampling, conversion and decomposition scheme, Three provisional 'transmute' rules for node composition (Tr1-Tr3), Planned pipeline of LLM querying with manual human confirmation
+- Identifies findings: Defines graphspeak as an experimental communication method whose medium is permutative graphs requiring a pre-handshake selection of sampling nodes., Argues that such a language's success depends not on rigor but on empathy, framed as composing the recipient's capability with their context., States planned objectives of testing deployment for kids, for cross-language generalizability, and for rigor.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

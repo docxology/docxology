@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Power estimated as an operating characteristic of an investigator-declared design, Seeded Monte Carlo comparison of 9 FWER/FDR correction procedures, Dependence-regime stress grid for BH and BY
+- Identifies findings: In the configured design, FWER-oriented procedures reached power 0.315–0.321 while FDR-oriented procedures reached 0.430–0.749, framed as the expected trade-off, not dominance., Storey's paired power gain over BH was about 0.073, which the paper stresses is an operating-characteristic comparison, not a validity certificate., Under weak evidence the posterior-threshold policy had FDR 0.153 and FWER 0.366, while the calibrated BH policy made no rejections, illustrating a calibration gap.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,5 +37,5 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |

@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Six-channel boundary screen read under three QRF sector relabelings** — One b0–b5 bitstream is partitioned into separation-constrained, opacified and post-dual sector labelings to model QRF deployments.
+- **Equation registry mapping source qFEP/QRF equations to software artifacts** — Equations from Sandved-Smith et al. (2026) are mapped into a fourteen-row registry and instantiated as finite QRF and BMR surrogates.
+- **Bayesian model reduction sweep over prior precision and metacognitive access** — BMR is swept over separation-prior precision and metacognitive access, with an added sensitivity grid over observation noise.
+- **pymdp active-inference simulations with profile-specific A, B, C, D arrays** — Uses inferactively-pymdp to run each QRF profile as an explicit generative model, recording posteriors, policies and seeded ensembles with null controls.
+- **Finite quantum-information and contextuality audits with controls** — Runs finite checks such as two-qubit separability, Bell and contextuality witnesses, open-system dynamics and seeded trajectories checked against exact solutions.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- Within the finite ledger, the same bitstream supports different QRF partitions, so the partition organizes the model without being evidence for its ontology.
+- All admissible deployments preserve normalized boundary probability mass, while the perturbation control fails.
+- In the surrogate model, the separation prior is useful only through agency.
+- Bayesian model reduction prunes the separation prior at high metacognitive access, at the weakest credible precision.
+- The author explicitly does not claim that the software proves emptiness, removes a self, or realizes a physical quantum free-energy principle.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

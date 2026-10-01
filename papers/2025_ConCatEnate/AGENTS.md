@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Independent vision-processing modules (Scanning Trio, Track Trio), Chempool emulation of accumulated chemicals/hormones, CYC drivers decomposed into |n| slots by a CYC modulator
+- Identifies findings: The authors state the document's purpose is only to justify the proposed flow, which is a posit testable only once its components exist., They list missing components, including sim, CYC and chem tables, the CYC modulator (a process reward model), a trigger table and a sim resolver., The authors argue a process reward model is critical: without it, it would be impossible to check which route or CYC completion was better.
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

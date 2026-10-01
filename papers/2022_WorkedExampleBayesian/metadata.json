@@ -49,16 +49,26 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Transcripts of ActInf Livestream #049.0–049.2 discussing Sakthivadivel's preprint",
+      "description": "Records three Active Inference Institute livestream discussions of the 2022 arXiv preprint, with the author Dalton Sakthivadivel joining 49.1 and 49.2.",
+      "evidence": "Okay, we are here in Livestream number 49.1. We are having our second discussion on the paper, a worked example of the Bayesian mechanics of classical objects"
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Background/context session (49.0) by facilitators before author sessions",
+      "description": "The 49.0 session by Friedman, Rahmjoo and Smékal gives background and a preliminary discussion rather than a review or synthesis.",
+      "evidence": "It's an introduction and just a preliminary discussion of some of the ideas. It's not a review or a synthesis or a final word"
+    },
+    {
+      "name": "Section-by-section walk-through of the paper in 49.2",
+      "description": "In 49.2 the participants go through the paper's sections, building toward its equation 15 for Bayesian classical mechanics.",
+      "evidence": "that set us up very well today for 49.2 to be primarily going through the paper, which is very exciting."
     }
   ],
   "key_findings": [
-    "Transcripts of discussions of the 2022 preprint &quot;A Worked Example of the Bayesian Mechanics of Classical Objects&quot; by Dalton A R Sakthivadivel.&nbsp; https://arxiv.org/abs/2206.12996 Session "
+    "Sakthivadivel distinguishes dynamics (observed trajectories) from mechanics (the laws generating those trajectories), arguing this is often conflated in the FEP literature.",
+    "Rahmjoo highlights as new results the derivation of classical physics from constrained maximum entropy and the reintroduction of supersymmetry to explain classical chaos.",
+    "Sakthivadivel explains that the path minimizing classical action is the mode (most likely path), so classical mechanics can be structured as a least-surprisal problem leading to equation 15.",
+    "Sakthivadivel describes path tracking as handling nonstationary systems by relating the FEP over paths to the principle of maximum caliber."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -66,5 +76,18 @@
     "2021_ModelingConflict"
   ],
   "artifact_doi": "10.5281/zenodo.7400786",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7400786"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7400786",
+  "key_findings_evidence": [
+    "I think it is one of those things that's not made sufficiently clear in the FEP literature or at least in the physical places where it's adjacent to physics. So mechanics are about the laws that give you those trajectories.",
+    "one of which is the derivation of classical physics from the principle of constraint, maximum entropy and the reintroduction of supersymmetry as an explanation for classical chaos",
+    "the path that minimizes the classical action is the mode. So it is the most likely path. So the path of least surprising. So you can structure class mechanics as a least surprising problem.",
+    "you can relate the free energy principle over paths to what's called the principle of maximum caliber in statistical physics, which is all about nonequilibria and entry production and nonequilibrium steady states."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "The full_text is the (auto-transcribed, error-prone) transcript of livestreams 49.0, 49.1 and 49.2, not the arXiv paper itself; this matches the Zenodo record description ('Transcripts of discussions of the 2022 preprint'). Claims are attributed to speakers. metadata.json carries generic template methods ('Free energy minimization', 'Bayesian modeling and inference') and a findings entry that just repeats the description."
+  }
 }

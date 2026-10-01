@@ -135,18 +135,12 @@
   "checked_at": "2026-05-30T18:56:15Z",
   "domain": "Computational",
   "type": "Paper",
-  "methods": [
-    {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
-    },
-    {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
-    }
-  ],
+  "methods": [],
   "key_findings": [
-    "Letter on: \"A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance\".&nbsp; v1 released on December 12, 2023.&nbsp;"
+    "The letter argues that current LLMs and Transformer models are 'corpus bound', with parameter-setting criteria hidden in an undecipherable stochastic black box.",
+    "The signatories argue that research in computational neuroscience, biology and physics supports a more nuanced and positive narrative of intelligence than AGI/existential-threat narratives.",
+    "The letter contends AI need not be monolithic or concentrated in Big Tech to be commercialized and regulated, anticipating distributed, biologically grounded intelligences on mobile devices.",
+    "The signatories call for a science-based understanding of AI's biological foundations to be given public voice and for interdisciplinary public workshops among legislators, regulators and other stakeholders."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -154,5 +148,18 @@
     "2025_DiscoveryEngine"
   ],
   "artifact_doi": "10.5281/zenodo.10360148",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.10360148"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.10360148",
+  "key_findings_evidence": [
+    "Consequently, all current LLMs and Transformer models are “corpus bound,” and their parameter-setting criteria are confined to an inaccessible and undecipherable stochastic “black box”.",
+    "a substantial and credible body of scientific research exists today, grounded in computational neuroscience, biology, and physics, that supports a much more nuanced, and ultimately positive and tractable narrative",
+    "AI technology does not have to be monolithic nor concentrated to be successfully commercialized and appropriately regulated.",
+    "an alternative and science-based understanding of the biological foundations of AI be given public voice and that interdisciplinary public workshops be convened among legislators, regulators,"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "commentary/policy",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Multi-signatory open policy letter (Active Inference Institute, Neuropsychiatry and Society Program, Boston Global Forum); no methods. Findings are the signatories' arguments and calls to action, not empirical results."
+  }
 }

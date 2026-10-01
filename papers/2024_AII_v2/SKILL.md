@@ -20,13 +20,21 @@ This work addresses topics in **AII Ecosystem**: Active Inference Institute, org
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Collaboratively edited living document published as a linear v2 snapshot** — The Institute & Ecosystem living document, edited with a full trace of edits, is concatenated into a linear 2024 v2 snapshot with a Zenodo DOI.
+- **Structure derived from the 2023 paper, extended September-November 2024** — The document's sections come from the 2023 paper and were added to by the contributor team in late 2024.
+- **Prepare and Measure goal-setting and reporting system** — Describes the Institute's 2024 low-stakes reporting system in which members set goals and report back, with updates surfaced in the newsletter.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Reports that in 2024 the Institute received official recognition as a 501(c)(3) non-profit, with pro bono support from the Fried Frank law firm.
+- Reports that, as of November 2024, 5 Research Fellows had joined the new Fellows program.
+- Reports that the Institute's Discord server, its primary discussion and meeting venue, has over 1000 people.
+- Reports that the Institute had released over 500 videos to date.
+- Frames the Institute's approach as cultivating an 'open' ecosystem rather than a closed, laboratory-centric approach to Active Inference.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +62,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.14108992`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Dual-contract design: OPC/ODF surface contract plus signed intelligence manifest, Per-module sealing (Argon2id/Scrypt + AES-256-GCM, X25519, Shamir k-of-n, decoys), Five spec-sanctioned transport channels incl. LSB steganography
+- Identifies findings: In the reference dossier, all 5 modules across all 4 sealing lineages extracted and verified, and the container passed OPC conformance., Carrying a 14-file, 9-directory project tree into both .docx and .odt containers, all 18 of 18 round-trip invariants held, with byte-identical packed payloads between profiles., The round-trip harness found that packing followed symbolic links, embedding link targets such as an SSH key; symlinks are now refused by default.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,5 +37,5 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |

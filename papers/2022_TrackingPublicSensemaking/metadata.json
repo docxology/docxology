@@ -59,17 +59,32 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Toulmin claim/evidence/warrant annotation of example image memes",
+      "description": "Applies the Toulmin argument model to worked examples (e.g. a NASA meme, 'Condescending Wonka') to expose implicit warrants.",
+      "evidence": "We recommend applying the structural framework of the Toulmin model of argument analysis to trace the public argumentation performed by image meme circulation [11]."
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Archetypal-phase vignettes of three emergent-team collection approaches",
+      "description": "Describes Haphazard, Methodological, and Automated Collection and Analysis approaches, drawn from the authors' experiences, with challenge tables.",
+      "evidence": "Below, we offer an overview of the archetypal phases encountered by three common approaches to image meme analysis undertaken by emergent teams, based on the experiences of the authors."
+    },
+    {
+      "name": "Russo-Ukrainian War memes as illustrative examples",
+      "description": "Uses memes about the ongoing Russo-Ukrainian War to illustrate how memetic analysis can reveal shared public beliefs.",
+      "evidence": "Specific examples below illustrate how memetic analysis can reveal widely-shared public beliefs and opinions on the ongoing Russo-Ukrainian War."
+    },
+    {
+      "name": "Extension of the Digital Rhetorical Ecosystem (DRE3) framework",
+      "description": "Builds on the authors' prior computational framework combining rhetorical analysis with an ecosystem approach.",
+      "evidence": "we build on previous work that proposed a computational framework, combining rhetorical analysis with an ecosystem approach (see Figure 2)"
     }
   ],
   "key_findings": [
-    "Political polarization and declining trust in institutions are driving societal destabilization and radicalization.",
-    "Recently there has been increased interest in online misinformation intervention and deterrence, for example through the use of machine learning on language use."
+    "Argues that image memes function as quasi-arguments whose parsimonious form hides warrants, so interventions should target spurious evidence and hidden warrants.",
+    "Argues that framing the information crisis as true versus false information has not been effective at regaining trust of disaffected audiences.",
+    "Concludes that current image meme collection by emergent teams falls short of needs even though the needed affordances are within technological reach.",
+    "Recommends system requirements such as on-site information, dynamic web annotations, and proximal collection and tagging affordances.",
+    "Proposes digital ecosystem and API economy approaches as a viable route to many of the challenges, while noting data standardization and integration remain problems."
   ],
   "related_papers": [
     "2020_EmergentTeams",
@@ -77,5 +92,19 @@
     "2020_GreatPreset"
   ],
   "artifact_doi": "10.5281/zenodo.6904427",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.6904427"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.6904427",
+  "key_findings_evidence": [
+    "Interventional approaches to addressing memetic circulation of misinformation, therefore, need to target, expose, and challenge spurious evidence and hidden warrants that specific memes rely on",
+    "Framing the information crisis as a battle between true and false information has not proven effective in regaining the trust of those disaffected by mainstream channels of information.",
+    "the state of the art of image meme collection by emergent teams is not commensurate with either stakeholders’ or the team’s needs, despite direly needed affordances being well within technological reach.",
+    "Below we provide requirements for systems that might alleviate many of the key challenges for emergent teams tasked with analysis and annotation of image memes",
+    "Digital ecosystem and API economy approaches seem to be a viable route to addressing many of the challenges discussed"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "commentary/policy",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "White paper; no systematic dataset or quantitative analysis. Methods are argumentative/qualitative frameworks and experience-based vignettes."
+  }
 }

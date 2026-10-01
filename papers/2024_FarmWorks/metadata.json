@@ -81,20 +81,53 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Planned on-site sensor network (Vin-Q/ROMI) over 4G, 5G and LoRa",
+      "description": "WP1 proposes solar-powered sensors measuring soil and climate variables, with pilot installation in 20 Vin-Q fields in Catalonia.",
+      "evidence": "This network is based on developments of open-source projects Vin-Q and ROMI. The data collected includes soil moisture, temperature, pH, conductivity, humidity."
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Farm-local data processing with optional sharing of model updates only",
+      "description": "WP2 proposes per-farm instances where training data stays local and only model updates may be shared into a larger model.",
+      "evidence": "The decentralized architecture ensures that all training data remains on each farm, with only model updates that can be optionally shared with other users to combine in a larger model."
+    },
+    {
+      "name": "Active Inference generative models built with RxInfer.jl",
+      "description": "WP4 plans variational/expected free energy models, including wine-grape epidemiological and intervention models, implemented in RxInfer.jl.",
+      "evidence": "To support the implementation of these Active Inference models, the platform will use and extend RxInfer.jl, an open-source probabilistic programming interface for conducting variational inference."
+    },
+    {
+      "name": "Telegram-based virtual assistant optionally using local open-source LLMs",
+      "description": "WP3 proposes a chat-bot interface to each farm's personalized knowledge database, with custom alerts and recommendations.",
+      "evidence": "The virtual assistant optionally leverages Open Source Large Language Models (LLMs) installed locally in the platform with the function to interpret natural language queries"
+    },
+    {
+      "name": "QR/NFC embodied permission transfer for a data-sharing social network",
+      "description": "WP5 proposes simple QR code or NFC exchanges to grant data access between farmers within existing networks of trust.",
+      "evidence": "we propose to use a very simple QR code or NFC-based system, requiring embodied interaction, to transfer permission for data access."
     }
   ],
   "key_findings": [
-    "FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems."
+    "Proposes FarmWorks, an open-source decentralized platform for human-AI interaction in agriculture intended to resist power concentration from centralized AI.",
+    "Argues that Active Inference models in RxInfer.jl can be more computationally efficient and interpretable than deep or reinforcement learning for decentralized settings.",
+    "Sets as a core design principle a coherent but flexible coupling between users' self-models and FarmWorks, and between users.",
+    "Organizes the work into six work packages over a two-year timeline with stated evaluation metrics and risk mitigations."
   ],
   "related_papers": [
     "2020_EmergentTeams",
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
-  ]
+  ],
+  "key_findings_evidence": [
+    "We propose to develop FarmWorks — a platform for human-AI interaction in agriculture that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems.",
+    "In contrast, Active Inference generative models implemented in RxInfer.jl can be computationally efficient, interpretable, and operated in a decentralized sense/decision-making setting.",
+    "the core design principle we propose to follow is to keep a coherent but flexible coupling between humans users’ self-model and FarmWorks, as well as between human users.",
+    "The FarmWorks development and implementation will be divided into six Work Packages (WP), described below, whose iterations are shown in Figure 1."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "other",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Project/grant proposal (v1, Sept 2024); all methods are planned work packages, and no results are reported."
+  }
 }

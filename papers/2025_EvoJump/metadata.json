@@ -35,21 +35,55 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Cross-sectional 'laser plane' view of ontogeny as a stochastic process",
+      "description": "Development is conceptualised as stochastic trajectories examined through phenotype distributions at successive timepoints.",
+      "evidence": "We conceptualize ontogeny as a stochastic process analyzed through cross-sectional views of pheno- typic distributions—a “laser plane” sweeping through developmental time"
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Python package unifying OU-jump, fBM, Cox-Ingersoll-Ross and Lévy process models",
+      "description": "EvoJump implements several stochastic process models for developmental trajectories behind consistent interfaces.",
+      "evidence": "EvoJump unifies multiple stochastic process models (Ornstein-Uhlenbeck with jumps, fractional Brownian motion, Cox-Ingersoll-Ross, Lévy processes) in a single coherent framework with consistent interfaces"
+    },
+    {
+      "name": "Wavelet, copula, extreme value and regime-switching analyses of trajectories",
+      "description": "Statistical modules apply wavelets for multi-scale patterns, copulas for dependence, EVT for rare events and regime-switching for phase detection.",
+      "evidence": "wavelet analysis for multi-scale patterns, copula methods for complex dependencies, extreme value theory for rare events, and regime-switching for phase detection"
+    },
+    {
+      "name": "Validation via synthetic data, analytical solutions and integration tests",
+      "description": "Each process model and statistical method is checked with synthetic data of known parameters, analytical solutions where available, and end-to-end tests.",
+      "evidence": "We validate EvoJump’s implementation through synthetic data experiments, integration tests, and demonstration of key capabilities using the comprehensive test suite."
+    },
+    {
+      "name": "Simulated 100-generation Drosophila selective sweep case study",
+      "description": "A logistic-selection SDE with drift models a red-eye allele sweep and a correlated eye-size trait, based on a published classroom study.",
+      "evidence": "In this case study, we apply EvoJump to analyze a classic evolutionary scenario over 100 generations: the spread of an advantageous allele through a population"
     }
   ],
   "key_findings": [
-    "EvoJump examines evolutionary transitions and discontinuities through the Active Inference framework, exploring how systems undergo qualitative jumps in phenotypic and behavioral complexity.",
-    "Analysis of The work..."
+    "Validation tests confirmed expected properties, e.g. fBM recovered standard Brownian motion at H = 0.5 and distinguished persistence regimes.",
+    "The author reports that all tests in the testing framework pass.",
+    "On synthetic data, copula analysis showed significant positive dependence between early and late developmental phenotypes (Kendall's τ = 0.45).",
+    "The Drosophila simulation captured a near-fixation selective sweep, correlated eye-size evolution, hitchhiking, and selection-drift balance.",
+    "Stated limitations include time-homogeneous parameters, separate analysis of traits, and treating observations as exact without measurement error."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "key_findings_evidence": [
+    "(H = 0.5) recovered as special case - Parameter estimation successfully distinguishes persistence regimes",
+    "All tests pass successfully, validating the framework’s reliability for scientific analysis.",
+    "Kendall’s τ = 0.45 (p < 0.001) indicating significant positive trait dependence between early (t=3.3) and late (t=6.7) developmental phenotypes.",
+    "Selective sweeps: Complete rise to near-fixation of advantageous red-eye allele • Correlated trait evolution: Eye size evolution tracking eye color genetics",
+    "Measurement Error: The framework currently treats observations as exact. Incorporating measurement error would improve robustness."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Software/methods paper; validation is on synthetic data and a simulated case study, not new empirical biological data."
+  }
 }

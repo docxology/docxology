@@ -20,13 +20,23 @@ This work addresses topics in **Computational**: active inference, pymdp, sophis
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Bernoulli–Ising analytical oracle (K=2)** — Closed-form mutual information and free-energy decomposition on a symmetric Bernoulli–Ising toy, cross-checked by an independent exact recomputation via total correlation.
+- **Deterministic pymdp T-maze rollout** — A minimal T-maze following pymdp sophisticated_inference examples, defaulting to state_inference with planning horizon policy_len = 2 and logged beliefs and actions.
+- **Sheaf-indexed manuscript compose contract** — Binds 34 composable fragment types to manifest rows under an IMRAD outline, verifying sheaf axioms and negative controls before rendering.
+- **Lean boundary-witness formalization** — Lean modules checked by lake build state small finite T-maze and graph-world witnesses, with axioms audited via #print axioms; explicitly not a broad formalization.
+- **Artifact-hydrated reporting with validation gates** — Every reported number is hydrated from generated artifacts and cross-track claims are machine-checked by pipeline gates before the PDF is built.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The paper frames its result as a methodological discipline rather than a domain claim: 6 sheaf axioms are machine-checked and 25 negative controls keep failure paths live.
+- It reports 12/12 invariant checks passed and a sweep RMSE of 0 nats between analytical and empirical values on the coupling grid.
+- The measured state_inference T-maze rollout reports mean belief entropy 0.3251 nats over 2 steps, with goal reached and action diversity 2.
+- A coverage audit reports 95 present, 95 bound, and 0 missing cells on the IMRAD matrix.
+- The author states the models are pedagogical and validate consistency and artifact wiring, not empirical claims about biological agents.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20417021`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

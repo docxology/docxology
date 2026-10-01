@@ -26,17 +26,17 @@
   ],
   "methods": [
     {
-      "name": "Genomic and bioinformatic analysis",
-      "description": "Applied genomic and bioinformatic analysis approach"
-    },
-    {
-      "name": "Statistical genetics",
-      "description": "Applied statistical genetics approach"
+      "name": "Question-and-answer interview of Daniel Dennett by Fleig-Goldstein and Friedman",
+      "description": "The interviewers pose long contextualized questions on Quine, Freud, predictive processing, psychedelics and Plato, and Dennett answers each in turn.",
+      "evidence": "In this interview, Dennett discusses his philosophical roots, as well as his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens."
     }
   ],
   "key_findings": [
-    "In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens..",
-    "Dennett argues that philos...."
+    "Dennett argues that anyone can tell scientists how to do better science, since scientists are as vulnerable to illusion and sloppy thinking as anyone.",
+    "Dennett recalls arguing, with Hurley and Adams, that all control in nervous systems is accomplished by 'emotional' signals with no highest-level executive.",
+    "Dennett says dream content is not random and that theories are best confirmed by showing how a model predicts the results of targeted disruptions.",
+    "Dennett views psychedelics as risky but potentially enlightening and therapeutic, and says he has avoided them himself.",
+    "Dennett proposes that academic ethics policies apply everywhere, possibly enforced by strict liability laws for developers, including for AI, psychedelics and gene-tinkering."
   ],
   "related_papers": [
     "2015_CryptoJews",
@@ -45,5 +45,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.34700/7gkw-zh08",
-  "doi_url": "https://doi.org/10.34700/7gkw-zh08"
+  "doi_url": "https://doi.org/10.34700/7gkw-zh08",
+  "key_findings_evidence": [
+    "Anybody can, in principle, tell scientists how to do better science. Scientists are just as vulnerable to illusion, sloppy thinking, unrecognized presuppositions as anyone else.",
+    "Hurley, Adams and I argued that all control in nervous systems is accomplished by “emotional” signals; there is no highest-level executive control system",
+    "The royal road to theory confirmation here, as always, lies in showing how a model predicts the results of well-aimed disruptions of the system.",
+    "It’s risky to subject your brain and body to unusual substances and stimuli, but any new challenge may prove very enlightening¾and possibly therapeutic.",
+    "I think these conditions should be in force for AI as well as for psychedelics and gene-tinkering."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Interview (ALIUS Bulletin); findings are Dennett's stated views, not research results. The extraction renders em dashes as '¾' in some answers; the quote preserves this."
+  }
 }

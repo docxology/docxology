@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Python package with a versioned nine-entry aspiration registry, Staged progress_report evaluator (intake, matching, decision), Formal definitions and propositions bound to named tests
+- Identifies findings: Counter-signal precedence: any recorded declared counter-signal yields DRIFTING regardless of how many markers were observed or staleness., TOWARD requires every declared marker and no counter-signal; there is no partial credit, so all-but-one marker reads the same as none., Stale or date-unauditable fully-marked observations yield INQUIRY rather than DRIFTING; the currentness sweep shows an exclusive boundary (current at 90, stale at 91 days).
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,5 +37,5 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |

@@ -52,22 +52,50 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Mapping concepts between rhetorical studies and ecology",
+      "description": "The authors extend existing links between rhetoric and ecology, proposing ecological-rhetorical mappings (e.g., predator-prey style relations between communities) for digital discourse.",
+      "evidence": "Here we extend the interface between rhetoric and ecology to argue that the mapping between these two domains can find productive application in the monitoring and design of digital ecosystems."
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Three-phase DRE3 analysis: entity, rhetorical, hidden-state identification",
+      "description": "Image memes are analysed in three phases: identifying visual entities, tracing their relationships into claims and warrants, and inferring deeper hidden states of the ecosystem.",
+      "evidence": "Phase 1. Entity Identification. The first phase of analyzing the rhetorical function of a meme entails recognizing visual entities embedded in the meme."
+    },
+    {
+      "name": "Qualitative 'boutique' case analyses of two image memes",
+      "description": "The DRE3 model is applied to one meme without text (Bob Ross / G.W. Bush) and one with text (Bill Murray) to show the three tiers.",
+      "evidence": "Two examples below (Figure 8 and Figure 9) represent the qualitative application of the DRE3 model to shareable image memes."
+    },
+    {
+      "name": "Blueprint of a meme-analysis pipeline styled as a SCADA system",
+      "description": "The authors sketch a Supervisory, Control, and Data Acquisition style pipeline for collecting, annotating, analysing, and disseminating image memes at scale.",
+      "evidence": "Here we present the rough blueprint of a meme analysis pipeline built in the style of an ecological or industrial SCADA system"
     }
   ],
   "key_findings": [
-    "makes a case for integrating frameworks from two different knowledge domains, rhetorical studies and ecological studies, to catalog, monitor, and study digital image meme data, in order to support a more robust understanding of how memes produce and disseminate online narratives..",
-    "In the digital public sphere, the primacy of image-based communication motivates an over-reliance on the image meme for public argumentation..",
-    "Despite its ubiquity, the image meme format is currently understudied in large scale digital data analyses, relative to text -based formats such as natural language and hashtags.."
+    "The authors argue that a rhetorical approach, emphasizing message form and audience, can improve large-scale tools for categorizing, indexing, searching, and modeling online discourse.",
+    "They introduce the Digital Rhetorical Ecosystem three-tiered model (DRE3) to explain how memes affect public narratives and beliefs.",
+    "They suggest current software can perform many sub-tasks of image-meme rhetorical analysis, with crowd-sourced annotation filling gaps where software is insufficient.",
+    "Despite meme polysemy, the authors hold that it is possible and useful to identify the dominant argument encoded in an image meme.",
+    "The paper closes with recommendations, such as curating patterns in image-meme rhetorical structure and protecting user identity, privacy, and preferences in cataloging schemes."
   ],
   "related_papers": [
     "2020_EmergentTeams",
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
-  ]
+  ],
+  "key_findings_evidence": [
+    "We argue that using a rhetorical approach (which emphasizes message form and audience) in large-scale analyses of multimedia and other digital artifacts can enhance analytic tools for categorizing, indexing, searching, and modeling online discourse.",
+    "we introduce a Digital Rhetorical Ecosystem three-tiered model (DRE3) to explain how memes impact public narratives and beliefs.",
+    "We suggest that modern software algorithms are adequate to perform many of the sub-tasks required for the rhetorical analyses of image memes, and that crowd-sourced annotations (via participatory research, or micro-task platforms) could be used to support algorithms",
+    "Therefore, despite inherent polysemy, we believe it is both possible and useful to identify the dominant argument(s) that are encoded in an image meme.",
+    "Curate a list of qualitative and quantitative patterns in the rhetorical structure and use of image memes."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Conceptual/theoretical paper; the two meme analyses are illustrative qualitative examples, not a dataset study."
+  }
 }

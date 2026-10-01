@@ -35,21 +35,55 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Markdown elements modeled as states in a stochastic decision process",
+      "description": "Treats Markdown documents as stochastic processes drawing on MDP/POMDP theory, with transitions between elements following learned probabilistic patterns.",
+      "evidence": "At its core, MDP models Markdown elements as states in a stochastic process where transitions follow learned probabilistic patterns."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "MarkChain, PolicyOptimizer and BeliefUpdater components",
+      "description": "Higher-order Markov chains for generation, reinforcement-learning policy optimization against user reward functions, and Bayesian belief updating over semantic interpretations.",
+      "evidence": "Policy-Based Document Optimization: The first comprehensive application of reinforce- ment learning to document improvement, learning optimal transformation policies that max- imize user-defined reward functions"
+    },
+    {
+      "name": "Evaluation corpora: technical docs, arXiv papers, blogs, mixed",
+      "description": "Reports four evaluation corpora, e.g. 500 technical documents from 25 open-source projects and 200 arXiv CS papers converted to Markdown.",
+      "evidence": "Source: 500 technical documents from 25 popular open-source projects (React, TensorFlow, Kubernetes, Django, etc.)"
+    },
+    {
+      "name": "Comparisons against n-gram, GPT-2, BERT and rule-based baselines",
+      "description": "Compares MarkChain orders 1–3 against n-gram and GPT-2 baselines for structure learning, and BeliefUpdater against rule-based and BERT classifiers.",
+      "evidence": "Methodology: - Train MarkChain models on each corpus with varying orders (1-3) - Generate 100 documents of average length (~800 words) per model - Compare structural similarity between generated and training documents"
+    },
+    {
+      "name": "Manually annotated 200-document semantic classification test",
+      "description": "BeliefUpdater accuracy and calibration (ECE) assessed on 200 manually annotated documents with an 80/20 train/test split.",
+      "evidence": "Methodology: - Manually annotate 200 documents with semantic labels for sections - Train belief models on 80% of data, test on 20% - Measure classification accuracy and calibration"
     }
   ],
   "key_findings": [
-    "The Markdown Decision Process (MDP) framework treats Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, and optimization through probabilistic modeling.",
-    "Analysis of Dr..."
+    "The paper reports higher structural similarity for MarkChain than baselines, with higher-order chains performing better at the cost of longer generation time.",
+    "BeliefUpdater is reported as more calibrated than rule-based approaches but slightly less accurate than a BERT classifier.",
+    "Reported scalability is approximately linear in document size, with policy optimization the most computationally costly operation.",
+    "In one controlled example, optimization reduced average paragraph length from 16.0 to 14.4 words and the list-to-paragraph ratio from 1.0 to 0.2.",
+    "The paper lists threats to validity, including corpus bias, hyperparameter sensitivity and limited domain diversity in evaluation corpora."
   ],
   "related_papers": [
     "2023_NSFReporting",
     "2023_NaturalAIBased",
     "2025_AuBI"
-  ]
+  ],
+  "key_findings_evidence": [
+    "The MDP framework demonstrates superior structural coherence compared to baselines, with higher-order models achieving better performance at the cost of increased generation time.",
+    "The BeliefUpdater achieves competitive accuracy with superior calibration compared to rule- based approaches, though slightly behind neural methods in raw accuracy.",
+    "Performance scales approximately linearly with document size for most operations, with policy optimization showing the highest computational cost.",
+    "optimization reduced average paragraph length from 16.0 to 14.4 words while maintaining information content, and improved the list-to-paragraph ratio from 1.0 to 0.2",
+    "Limited domain diversity in evaluation corpora"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Reviewer caution: the evaluation section gives results tables but little procedural detail (several results defer to a 'Code Supplement'; the Experiment 3 results table is absent from the extracted text), and the baseline list names 'GPT-2 Medium' while the Experiment 1 table reports 'GPT-2 Small'. A 25-participant user study and blanket 'all improvements significant (p < 0.05)' claim appear without design details; findings above are stated as reported by the paper. README 'Key Findings' contains a garbled placeholder ('Analysis of Dr...') not supported by the text, and README DOI 10.5281/zenodo.17244386 differs from the PDF's 10.5281/zenodo.17244387 (likely concept vs version)."
+  }
 }

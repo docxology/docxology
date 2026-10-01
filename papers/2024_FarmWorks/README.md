@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems. The platform integrates real-time sensor data collection, edge computing, and Active Inference models to empower individual farmers with cutting-edge technology while preserving their autonomy. Key...
+> Project description submitted as part of application to Future of Life Institute - How to mitigate AI-driven power concentration Climate change intensifies agricultural challenges, requiring more and more advanced technological solutions. Small farmers increasingly rely on technical assistance, which is becoming centralized, dominated by large agricultural corporations and governments imposing...
 
 ## Keywords
 
@@ -18,11 +18,20 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Planned on-site sensor network (Vin-Q/ROMI) over 4G, 5G and LoRa** — WP1 proposes solar-powered sensors measuring soil and climate variables, with pilot installation in 20 Vin-Q fields in Catalonia.
+- **Farm-local data processing with optional sharing of model updates only** — WP2 proposes per-farm instances where training data stays local and only model updates may be shared into a larger model.
+- **Active Inference generative models built with RxInfer.jl** — WP4 plans variational/expected free energy models, including wine-grape epidemiological and intervention models, implemented in RxInfer.jl.
+- **Telegram-based virtual assistant optionally using local open-source LLMs** — WP3 proposes a chat-bot interface to each farm's personalized knowledge database, with custom alerts and recommendations.
+- **QR/NFC embodied permission transfer for a data-sharing social network** — WP5 proposes simple QR code or NFC exchanges to grant data access between farmers within existing networks of trust.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- Proposes FarmWorks, an open-source decentralized platform for human-AI interaction in agriculture intended to resist power concentration from centralized AI.
+- Argues that Active Inference models in RxInfer.jl can be more computationally efficient and interpretable than deep or reinforcement learning for decentralized settings.
+- Sets as a core design principle a coherent but flexible coupling between users' self-models and FarmWorks, and between users.
+- Organizes the work into six work packages over a two-year timeline with stated evaluation metrics and risk mitigations.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

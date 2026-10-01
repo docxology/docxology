@@ -4,7 +4,7 @@
 
 **Paper**: Writing on Curio Cards for the "On NFT" book (2024)
 **Domain**: Art & Synergetics
-**Authors**: Daniel A. Friedman
+**Authors**: D. A. Friedman, O. C. Ripley
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Curio card format combines artistic design with structured knowledge representation, Physical-to-digital workflow enables novel forms of scholarly communication and curation
+- Extracts methods: Catalogue table of all 30 Curio Cards with on-chain metadata
+- Identifies findings: The authors describe Curio Cards, launched May 9, 2017, as the first art NFT project on Ethereum, framed as a permanent online art show gallery., The official set has 30 artworks (plus the misprint 17b) by seven artists, including Daniel Friedman's cards 24-26., The authors suggest NFTs 24-29 may be the first physical artworks represented on Ethereum, and card 23 may be the first animated GIF on Ethereum.
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR

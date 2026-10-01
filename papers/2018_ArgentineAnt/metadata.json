@@ -42,17 +42,37 @@
   ],
   "methods": [
     {
-      "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays approach"
+      "name": "Field observation of three L. humile winter aggregations on Stanford campus",
+      "description": "Three winter aggregations nesting at the base of Coast live oak trees were monitored simultaneously in three 17–27 h observation sets in winter 2016.",
+      "evidence": "The foraging trails of the three L. humile colonies were simultaneously monitored in three sets of observations in winter 2016."
     },
     {
-      "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis approach"
+      "name": "Hourly trail counts of foraging rate and timed walking speed",
+      "description": "Ants crossing a rate line 1 m up the trunk were counted in sixteen 30 s intervals, and 1–10 foragers were timed over a 10 cm speed line.",
+      "evidence": "counting the number of L. humile ants that passed the rate line travelling to and from nests for 16 sequential 30 s intervals during each observation."
+    },
+    {
+      "name": "Arduino-based logger for temperature, humidity, and light",
+      "description": "A DHT22 sensor, CdS photoresistor, and Arduino UNO logged ambient conditions every 5 s; P. imparis abundance was also counted on trunks.",
+      "evidence": "we arranged and affixed a DHT22 temperature and humidity sensor, CdS photoresistor, Arduino UNO proces- sor, SD card, and 9V alkaline battery inside a transparent, cylindrical plastic tube"
+    },
+    {
+      "name": "Linear vs quadratic mixed effects models of foraging and speed",
+      "description": "Log-transformed foraging rate and walking speed were modelled against environmental predictors with colony and day random effects, comparing linear and quadratic fits.",
+      "evidence": "we performed both linear and quadratic mixed effects analyses with foraging rate or walking speed as dependent vari- ables and ambient temperature, relative humidity, light level, and P. imparis abundance as independent variables."
+    },
+    {
+      "name": "Autoregressive partial correlations of up- and down-tree traffic",
+      "description": "Partial correlation coefficients between normalized hourly foraging rates in both directions were computed at time shifts of -12 to 12 hours.",
+      "evidence": "The partial correlation coeffi- cients between normalized (0–1 scale) hourly colony foraging rates in both directions were cal- culated for each colony using autoregressive models"
     }
   ],
   "key_findings": [
-    "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers..",
-    "Here we examine the relationship between the...."
+    "Colonies foraged most between 10 and 15˚C regardless of maximum daily temperature.",
+    "Worker walking speed was positively associated with temperature and negatively associated with humidity.",
+    "Colonies foraged during all day and night hours in a predictable daily cycle, with incoming and outgoing forager rates correlated.",
+    "Foraging was unrelated to the low-abundance native ant P. imparis and stopped only in heavy rain, when ants aggregated in sheltered areas on trees.",
+    "Winter walking speed rose about 0.10 cm/s per ˚C, half the rate reported for L. humile at higher summer temperatures."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -61,5 +81,18 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1371/journal.pone.0202117",
-  "doi_url": "https://doi.org/10.1371/journal.pone.0202117"
+  "doi_url": "https://doi.org/10.1371/journal.pone.0202117",
+  "key_findings_evidence": [
+    "We found that colo- nies foraged most between 10 and 15˚C, regardless of the maximum daily temperature.",
+    "Worker walking speed was positively associated with temperature (range 6–24˚C) and neg- atively associated with humidity (range 25–93%RH).",
+    "All colonies foraged during all day and night hours in a predictable daily cycle, with a correlation between the rate of incoming and outgoing foragers.",
+    "Foraging activity was unrelated to the activity of a competing native ant species, Prenolepis imparis, which was present in low abundance, and ceased only during heavy rain when ants left foraging trails and aggregated in small sheltered areas on trees.",
+    "the average rate at which walking speed increased with temperature (0.10 cm s-1˚C-1) was half that reported in L. humile under higher summer temperatures"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "empirical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge."
+  }
 }

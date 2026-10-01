@@ -37,21 +37,55 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Visual and symbolic analysis",
-      "description": "Applied visual and symbolic analysis approach"
+      "name": "SymergeticsNumber exact-rational wrapper over Python fractions.Fraction",
+      "description": "Arithmetic is done with a Fraction-based class that keeps exact fractional representations and auto-simplifies via GCD.",
+      "evidence": "The class maintains exact fractional representations throughout all computations, ensuring operations like 3/4 + 1/6 = 11/12 preserve complete mathematical precision."
     },
     {
-      "name": "Cross-domain pattern mapping",
-      "description": "Applied cross-domain pattern mapping approach"
+      "name": "Quadray (four-axis tetrahedral) coordinates in the IVM lattice",
+      "description": "Points are represented as (a, b, c, d) along four tetrahedral axes, normalized by subtracting the minimum coordinate.",
+      "evidence": "The Quadray system uses four axes arranged in tetrahedral symmetry, extending traditional Cartesian coordinates to handle four-dimensional tetrahedral relationships."
+    },
+    {
+      "name": "IVM-unit volume calculation for Platonic solids",
+      "description": "The package computes polyhedron volumes in IVM units with the tetrahedron as the unit volume.",
+      "evidence": "exact volume calculations for Platonic solids using IVM units (tetrahedron = 1, octahedron = 4, cube = 3, cuboctahedron = 20)"
+    },
+    {
+      "name": "Pattern analysis of Scheherazade numbers (1001^n), primorials, palindromes",
+      "description": "Exact-arithmetic routines analyze powers of 1001, primorial sequences, and multi-base palindromes.",
+      "evidence": "pattern analysis algorithms for Scheherazade numbers (1001^n) and primorial sequences using exact arithmetic."
+    },
+    {
+      "name": "Test suite of 953 test functions across 32 files",
+      "description": "Validation is via a pytest suite covering arithmetic, coordinate transforms, geometry and integration cases.",
+      "evidence": "• 86% overall test coverage across 32 test files • 953 individual test functions"
     }
   ],
   "key_findings": [
-    "Symergetics (Symbolic Synergetics) provides a framework for rational arithmetic, geometric pattern discovery, and all-integer accounting based on Buckminster Fuller's Synergetics.",
-    "Analysis of The package implemen..."
+    "The package reports 100% precision preservation across 953 test cases.",
+    "Exact arithmetic returns 11/12 for 3/4 + 1/6 rather than the float 0.9166666666666666, with no approximation errors detected in any test case.",
+    "The paper reports that its Platonic-solid volume relationships in IVM units were independently verified, confirming Fuller's original Synergetics calculations.",
+    "Quadray-to-Cartesian conversions are reported to round-trip exactly.",
+    "Primorials are computed exactly, e.g. 10# = 6,469,693,230."
   ],
   "related_papers": [
     "2018_PPPiP",
     "2022_MirrorTest",
     "2023_BlakeFuller"
-  ]
+  ],
+  "key_findings_evidence": [
+    "demonstrating 100% precision preservation across 953 test cases.",
+    "• Basic operations (3/4 + 1/6) yield exactly 11/12 instead of 0.9166666666666666 • Complex calculations maintain exact precision through multiple operations • No approximation errors detected in any test case",
+    "All volume relationships have been verified through independent mathematical analysis, confirming Fuller's original Synergetics calculations with exact precision.",
+    "Bidirectional conversions show perfect round-trip accuracy",
+    "Exact computation of rapidly growing sequences (10# = 6,469,693,230)"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Software paper. Some benchmark lines appear garbled in extraction (e.g. '3.2 improvement' likely lost a multiplication sign; icosahedron volume lost its phi/sqrt symbols) and were not used."
+  }
 }

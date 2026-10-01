@@ -48,16 +48,27 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Transcribed ActInf Livestream #048 series (48.0, 48.1, 48.2)",
+      "description": "Transcript of Active Inference Institute livestream discussions of the 2021 paper 'Communication as Socially Extended Active Inference', held September 2, 7 and 14, 2022.",
+      "evidence": "It is still upcoming with the 48.1 and 48.2 so people are welcome to submit questions or things to discuss, write comments and join the panels live if they want."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "48.0 introductory walkthrough of aims, claims, abstract and roadmap",
+      "description": "In 48.0 Daniel Friedman and Dean Tickles present the paper's aims, claims, abstract and roadmap as an introduction rather than a full review.",
+      "evidence": "It's not a review or capturing every aspect. For that you can read the paper and explore some of the ideas. We are going to talk about aims and claims, abstract roadmap keywords and bring up some notable points."
+    },
+    {
+      "name": "Author-participation panel discussions with first author Rémi Tison",
+      "description": "In 48.1 and 48.2 the first author joins Friedman, Tickles and Bleu Knight to answer questions on content, context, shared affordances, and language.",
+      "evidence": "This is going to be really exciting discussion and we're appreciative of the first author joining us. We'll jump right in with some introductions and then on to the discussion."
     }
   ],
   "key_findings": [
-    "Discussion with an author of the 2021 paper &ldquo;Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior&rdquo; by Remi Tison &amp; Pierre Poirier.&nbsp"
+    "Tison explains that the paper aimed to give ecological and enactive approaches a view of communication that does not rely on content or representation, unlike the transmission view.",
+    "Tison states that content exists but is not at the basic level of cognition; it must be explained by a theory of communication rather than presupposed.",
+    "Tison reflects that defining a shared field of affordances as the subset common to two individual fields neglects the autonomy of the interaction dynamics.",
+    "Tison describes cooperative communication as a way for a group to achieve an optimal grip on the context of their joint action.",
+    "Tison says the paper ties the conventional nature of language to conventional affordances generated in communicative interaction."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -65,5 +76,19 @@
     "2021_ModelingConflict"
   ],
   "artifact_doi": "10.5281/zenodo.7401875",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7401875"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7401875",
+  "key_findings_evidence": [
+    "So the transmission view is a problem from an ecological view. And so what we tried to do was to develop a view of communication from which ecological and inactive approaches could start to understand language and communication without having to rely on the notion of content or representation.",
+    "the idea that content is not at the basic level, it's not something that we can presuppose in a theory of communication. It's something that can be explained by a theory of communication.",
+    "I define shared field of affordance as the subset that is common to both individual Fields of affordance. But I think that neglects this autonomy of the field of affordances that is shared in the interaction.",
+    "communication is a way of achieving that of achieving an optimal grip by a group of individuals on the context of their joint action.",
+    "So we tried to say that the conventional nature of the language comes from the conventional affordances that are generated in the communication interaction."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Automatic speech transcript with many recognition errors (e.g., 'inactive' for enactive, 'Philadelphia of mind'); speaker labels (Speaker B/C/D, even 'Daniel') are unreliable, so author attributions are inferred from self-introductions and content. The 48.1 session text appears twice in the file. Paper's second author name is transcribed as 'Pierre Pouyer'/'Kia Pouri'."
+  }
 }

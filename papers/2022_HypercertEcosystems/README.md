@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci). Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze how Hypercerts—a primitive for public goods funding—can be integrated with Active Inference frameworks to improve scientific funding, evaluation, and incentive alignment in decentralized systems.
+> On August 24th 2022, Holke Brammer of Protocol Labs released a blog “Hypercerts: A new primitive for public goods funding” describing how “Hypercerts” could be used for Decentralized Science (DeSci). With collaborators at the Active Inference Institute, we have been developing frameworks and tools for applied Active Inference, in the context of Remote Teams & DeSci, specifically highlighting the...
 
 ## Keywords
 
@@ -18,13 +18,19 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Proposed AEOS specification and Active Blockference models for Hypercerts** — The proposal plans to build an Active Entity Ontology for Science (AEOS) specification and Active Blockference implementation for Hypercert ecosystems.
+- **Planned extension of Active Blockference to multi-agent simulation** — Plans to expand the currently single-agent Active Blockference simulation into a multi-agent model of Hypercert ecosystems.
+- **Planned informative stakeholder interviews** — The research strategy begins with interviews with Protocol Labs, Hypercert developers and stakeholders before milestone development.
+- **Planned comparative simulations of funding models** — A milestone deliverable is comparable simulations of traditional, DeSci and Hypercert funding models.
 
 ## Key Findings
 
-- This document is a grant application to Protocol Labs, from Active Inference Institute (Active Blockference project)..
-- The grant was submitted in October 2022 and was not funded..
-- Learn more, get in touch, get involved, or fund us: https://www.activeinference.org/.
+- The proposal identifies limitations in DeSci systems design, including ad hoc flowcharts with informal ontologies and a lack of engineering-grade standards.
+- It argues agent-based methods are needed to move design from bulk or mean-field approaches to the granularity of single actions by particular entities.
+- It lays out tentative milestones beginning with entity model construction within 4 months of funding, budgeted at $20,000.
+- The authors acknowledge a risk that the entity ontology may not yield results favoring the Hypercert mechanism.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

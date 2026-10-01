@@ -243,21 +243,32 @@ def process_paper(paper_dir, force=False):
     if not pdfs:
         return None
     
-    # Use the largest PDF (likely the main manuscript)
-    main_pdf = max(pdfs, key=lambda p: p.stat().st_size)
-    
     # Check if full_text.md already exists
     full_text_path = paper_dir / "full_text.md"
     if full_text_path.exists() and not force:
         return "skipped"
-    
-    # Load metadata for title
+
+    # Load metadata for title and an explicit manuscript choice
     meta_path = paper_dir / "metadata.json"
     title = paper_dir.name
+    meta = {}
     if meta_path.exists():
         with open(meta_path) as f:
             meta = json.load(f)
         title = meta.get("title", title)
+
+    # ``primary_pdf`` names the manuscript when a folder also holds other PDFs
+    # (generated example decks, supplements). Without it, fall back to the
+    # largest PDF — a heuristic that picked an example pitch deck over the
+    # manuscript in papers/2026_TemplatePitchDeck before this override existed.
+    primary = str(meta.get("primary_pdf") or "").strip()
+    if primary:
+        candidate = paper_dir / Path(primary).name
+        if not candidate.is_file():
+            return f"error: primary_pdf {primary!r} not found"
+        main_pdf = candidate
+    else:
+        main_pdf = max(pdfs, key=lambda p: p.stat().st_size)
     
     # Create images directory
     images_dir = paper_dir / "images"
@@ -311,6 +322,13 @@ def process_paper(paper_dir, force=False):
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--force", action="store_true", help="re-extract papers that already have full_text.md")
+    parser.add_argument(
+        "--only",
+        action="append",
+        default=[],
+        metavar="FOLDER",
+        help="limit extraction to this papers/ folder name (repeatable)",
+    )
     args = parser.parse_args(argv)
     load_pdf_backends()
     if not HAVE_PYMUPDF and not HAVE_PYPDF and not PDFTOTEXT:
@@ -322,6 +340,13 @@ def main(argv=None) -> int:
     force = args.force
     
     papers = sorted(d for d in PAPERS_DIR.iterdir() if d.is_dir())
+    if args.only:
+        wanted = set(args.only)
+        unknown = wanted - {d.name for d in papers}
+        if unknown:
+            print(f"ERROR: unknown paper folder(s): {', '.join(sorted(unknown))}")
+            return 1
+        papers = [d for d in papers if d.name in wanted]
     stats = {"ok": 0, "skipped": 0, "no_pdf": 0, "error": 0}
     
     for paper_dir in papers:

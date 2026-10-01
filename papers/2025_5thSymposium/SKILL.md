@@ -21,13 +21,18 @@ This work addresses topics in **Presentations & Media**: Active Inference sympos
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Edited compilation of abstracts for the Nov 12-14, 2025 symposium** — Collects presenter abstracts into a DOI-registered abstract book edited by Maria Luiza Iennaco and Daniel Friedman.
+- **Organization by session format: keynotes, pre-recorded, panels, workshops** — Abstracts are grouped by presentation format, from Karl Friston's keynote to live-streamed panels and interactive workshops.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Sabine's CRR abstract reports that coherence appears to increase as the variational free energy bound decreases, proposing coherence as a proxy for uncertainty reduction.
+- Montañez's abstract claims classical economic models such as Stigler's search and Simon's bounded rationality are special cases of active inference under specific conditions.
+- Hinrichs's abstract presents a dyadic active inference framework for therapy linked to Forman-Ricci curvature of inter-brain hyperscanning networks.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -56,5 +61,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.17555266`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

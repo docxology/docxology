@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down onto muscle % tension follows / posits to experiment / emulate ideas of morphogenesis / morphospace (dr levin's) on differing scale of time & checkpoints to run with a modulator layer ; to then apply in...
+> BehavioralCycle / CYC / “ from epigenetic-sequence / epigenetic-cycle” transcribed onto ROS-like / gymnasium like Nodes-of-action-sequence; but in actual essence; is just an empty node-scaffold To fill with action-context-pairs that is designed so that they are decomposable Onto the lowest level (which is muscle tension %) “ BevCYC is a framework that implements a decomposable Chain of Node ( N –...
 
 ## Keywords
 
@@ -18,11 +18,19 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Decomposable chain of nodes (N–N–N) for action/concept sequences** — Proposes BevCYC as a chain of empty nodes for action-context pairs, modeled on epigenetic-cycle ideas, representing action or concept sequences.
+- **Hierarchical decomposition down to muscle tension %** — Nodes are decomposed hierarchically until they resolve to a muscle tension percentage at the lowest level.
+- **Shrinking $$$] / $$] / $] scaffold with interruption slots** — Experiments with a scaffold whose earlier nodes have more slots (L) for interruption or vision/theme injection than later ones.
+- **Worked sketch: cat food-seeking cycle (EpiFoodPlau) as ROS-style nodes** — Illustrates the idea with a cat morning routine of chained triplets (wake–roam–sleep, roam–hunt–roam) treated as ROS nodes with completion checkpoints.
+- **Proposed conversion node/table to robotics frameworks (BT, HTN, STRIPS)** — Suggests converting BevCycles to behavior trees, HTNs, motor primitives or STRIPS planning by adding a conversion node and table.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The authors posit that state–action–state triplets can be treated as state–state–state, deliberately blurring the state/action distinction.
+- The authors suggest a minimal 'silly cat' agent demonstrating only social-cortex logging and applying could be built in the near term.
+- The authors flag that the work is experimental and hypothesized, with later revision for proper active inference modeling contingent on technical help.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

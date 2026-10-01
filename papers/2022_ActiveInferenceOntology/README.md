@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature. The ontology provides structured navigation of the field's key components and supports interoperability with existing knowledge bases. This represents a collaborative open-science effort through the Active Inference...
+> In this work, we examine science from the vantage points of blockchain technology and its connection to decentralized science (DeSci). We consider science as a collective process using Active Inference, an integrative framework that models the cognitive processes of perception, planning, and action selection in terms of Bayesian probabilities and updating. We present the Active Entity Ontology...
 
 ## Keywords
 
@@ -18,11 +18,20 @@
 
 ## Methods
 
-- Active Inference
+- **Active Inference modeling of centralized (CeSci) vs decentralized (DeSci) science** — Used the Active Inference framework to model similarities and differences between Decentralized Science and Centralized Science as collective epistemic processes.
+- **Construction of the Active Entity Ontology for Science (AEOS)** — Built an entity-oriented, versionable ontology (hosted on Coda) whose entities use the Markov-blanket partition into internal, sense and active states.
+- **Example CeSci/DeSci entity-interaction motifs across areas of concern** — Drafted motifs (funding, communication, cryptographic relationship, scientific review, research, publishing) as natural-language sentences and graphical AEOS diagrams.
+- **Qualitative BOLTS analysis using the Active Inference Conflict Model** — Framed integration of DeSci into CeSci across business, operations, legal, technical and social surfaces, using bar-code adoption as a worked example.
 
 ## Key Findings
 
-- Analysis of The ontology provide...
+- The paper presents AEOS as a composable, versionable system for modeling science systems using Active Inference entity partitioning.
+- AEOS defines two entity classes: Active epistemic entities that select policies and enact affordances, and Informational entities that hold information and are acted upon.
+- The authors argue that a DeSci stance can aid governance of scientific knowledge as an epistemic common good by providing incentive and opportunity to build integrated understanding.
+- They identify a major limitation of Web3 tokenization: giving tokens real-world value makes them vulnerable to speculative investment and hoarding.
+- Stated next steps include Active Inference models in cadCAD via the Active Blockference package and a DeSciCAD graphical interface for using AEOS in ecosystem design.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

@@ -73,22 +73,53 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Action-Intention interaction model (no predictive intent inference yet)",
+      "description": "Design treats explicit user actions (uploading, annotating, opening a concept map) as signals of research direction; the document states intent is not yet inferred predictively.",
+      "evidence": "While the platform does not infer intent through predictive modelling in the current stage , its architecture allows for future development in this area"
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Knowledge graph of Conceptual Nexus Models (Research Discovery Engine)",
+      "description": "The proposed core engine builds a knowledge graph structured as Conceptual Nexus Models, modular representations of connected ideas from a research corpus.",
+      "evidence": "This graph is structured as a set of Conceptual Nexus Models (CNMs)—modular representations of connected ideas"
+    },
+    {
+      "name": "Proposed full-stack architecture (PDF.js, ElasticSearch, graph DB, Docker)",
+      "description": "Specifies frontend/backend components including PDF.js and LaTeX rendering, NLP document processing, ElasticSearch indexing, a graph database, and Docker/CI deployment.",
+      "evidence": "Database Management: Supports full-text search and indexing using ElasticSearch or similar."
+    },
+    {
+      "name": "Assumptions and harms/risks/amelioration tables",
+      "description": "Tabulates nine usage assumptions and a set of potential harms (e.g. algorithmic misrepresentation, marginalisation of less-cited research) with proposed mitigations.",
+      "evidence": "Citation count is a tunable parameter, not a ranking default."
+    },
+    {
+      "name": "Neuro-informed cognitive load design principles",
+      "description": "Applies progressive disclosure, contextual cues, fault tolerance (undo/redo, version history), and adaptive complexity, referencing a neuroscience-informed UX table.",
+      "evidence": "Progressive Disclosure: Showing essential information first and revealing more only when needed reduces the working memory burden."
     }
   ],
   "key_findings": [
-    "ResNei &mdash; Research Neighbourhood &ndash; is an AI-augmented environment designed to transform how we discover, analyse, and connect ideas..",
-    "At its core is the Research Discovery Engine, which constructs a living, responsive knowledge graph through the distillation of verified concepts and the dynamic linking of an evolving corpus of scientific knowledge..",
-    "This graph is structured as a set of Conceptual Nexus Models (CNMs)&mdash;modular representations of connected ideas, designed to surface signals to support impactful inquiry and collaboration.."
+    "The document presents ResNei as an AI-augmented research discovery and collaboration environment, and states the project is in early development with working prototypes.",
+    "It proposes an initial force-directed concept graph, similar to a simplified Obsidian.md structure, deferring clustering and semantic zooming to later work.",
+    "To counter misplaced trust, the design frames AI outputs as provisional suggestions and the knowledge graph as a navigational aid rather than a definitive map.",
+    "The authors state they are now seeking stakeholders, with special attention to trans- and interdisciplinary spaces, as they move from prototyping to implementation."
   ],
   "related_papers": [
     "2023_NSFReporting",
     "2023_NaturalAIBased",
     "2025_AuBI"
-  ]
+  ],
+  "key_findings_evidence": [
+    "The project is currently in early development, with a set of working prototypes and a technical paper in preprint. This document supports the transition from conceptual design to implementation.",
+    "Initially, the system will generate a force-directed graph based on links between concepts, similar to a simplified Obsidian.md structure.",
+    "AI-generated outputs are framed as suggestions, not truths.",
+    "We are now seeking stakeholders: individual researchers, research groups, and communities, with special attention to trans- and interdisciplinary spaces."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Solution design document (v2.0) describing a proposed platform; no evaluation or user study results are reported. Backend technical details are deferred to a companion paper (Baulin et al. 2025)."
+  }
 }

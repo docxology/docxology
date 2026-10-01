@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> The behavioral repertoire and ecology of ant colonies emerge from the interactions among individuals, each with distinct genetic, epigenetic, and physiological states. Genetic approaches are beginning to reveal the molecular mechanisms underlying colony-level phenomena such as division of labor, collective decision-making, and social immunity. Here we review ant genomics and genetics through the...
+> Many exciting studies have begun to elucidate the genetics of the morphological and physiological diversity of ants, but as yet few studies have investigated the genetics of ant behavior directly. Ant genomes are marked by extreme rates of gene turnover, especially in gene families related to olfactory communication, such as the synthesis of cuticular hydrocarbons and the perception of...
 
 ## Keywords
 
@@ -18,11 +18,19 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Literature review organized by phenotypic trait** — Structures the review of ant genetics by trait: species comparisons, sex, reproductive status, queen number, worker body size, then behavior.
+- **Coverage of quantitative-genetic, phylogenetic, omic and physiological studies** — Within each section, discusses studies using heritability, DNA sequence homology, RNA abundance, chromatin regulation and enzyme-activity approaches.
+- **Comparative survey of published ant genomes** — Draws on the first seven published ant genomes and later public genomes/transcriptomes for cross-species comparisons.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The authors conclude that despite many results on reproductive physiology and morphology, few studies have investigated the genetics of ant behavior directly.
+- The review reports that eusocial hymenopteran genomes show exceptionally high rates of gene turnover.
+- Reviewed quantitative genetic studies show heritable differences in task performance among matrilines/patrilines.
+- The authors caution that developmental stage, sampled tissue (e.g. whole-body samples) and time of day can strongly affect gene-expression results.
+- They identify the feedback between individual physiological changes and socially mediated responses to environment as the next step for ant behavioral genetics.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

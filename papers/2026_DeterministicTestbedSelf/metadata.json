@@ -196,17 +196,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Deterministic re-implementation of AutoScientists coordination mechanisms",
+      "description": "Re-implements AutoScientists' mechanisms (confirmation, dead-end registry, effect-size ranking, reorganization, team partitioning) as individually switchable modules.",
+      "evidence": "A deterministic, ablatable reference for the five AutoScientists coordination mechanisms, with every mechanism switchable via a single configuration object so its contribution can be isolated."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Synthetic rippled quadratic objective with seeded noise (d=4)",
+      "description": "Optimizes a 4-D objective with a global peak at the origin, cosine ripples and seeded bounded noise, allowing reported vs clean metric comparison.",
+      "evidence": "We use 𝑑= 4, ripple 𝜌= 0.15, and noise scale 𝜎noise = 0.02."
+    },
+    {
+      "name": "Matched 60-experiment sequential budget vs single-thread baseline",
+      "description": "Coordinated teams partition the same sequential budget as a single-thread baseline rather than adding parallel compute.",
+      "evidence": "Every configuration is given the same budget of 60 sequential experiments; coordinated configurations partition that budget across teams."
+    },
+    {
+      "name": "One-at-a-time per-mechanism ablation via SearchConfig",
+      "description": "Starts from the full coordinated configuration and switches off exactly one mechanism per ablation run.",
+      "evidence": "Ablations — the full configuration with exactly one mechanism switched off, generated via dataclasses.replace."
+    },
+    {
+      "name": "Pluggable Proposer: deterministic rule-based vs Hermes LLM via Ollama",
+      "description": "Figures use a rule-based DeterministicProposer; a HermesProposer served by Ollama can be swapped in and is tested only by an opt-in test.",
+      "evidence": "HermesProposer calls a Hermes model served by Ollama. It is not part of the rendered pipeline and is exercised only by an opt-in test marked requires_ollama:"
     }
   ],
   "key_findings": [
-    "Recent work on AutoScientists  coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired de",
-    "This exemplar provides a deterministic, standalone reference implementation of those mechanisms and studies them honestly as a testbed rather than as a performance claim."
+    "Under the matched budget, coordinated teams and the baseline reach the same clean optimum (advantage 0.0000); coordination was slightly slower to first reach it (16 vs 12 experiments).",
+    "Noise-band confirmation reduced accepted noise roughly 13-fold (reported-vs-clean gap 0.01565 to 0.00121) on this objective.",
+    "The dead-end registry cut redundant re-probes from 36 to 0 and let the search halt at 36 rather than 60 experiments, with the clean answer unchanged.",
+    "Effect-size ranking and reorganization did not change any measured quantity on this objective.",
+    "The author cautions that these magnitudes are properties of this synthetic objective, budget and deterministic proposer, not general constants."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -215,5 +235,19 @@
   ],
   "related_software": [
     "docxology/template_autoscientists"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Under a matched budget, coordinated teams neither beat nor lose to the single-thread baseline on clean solution quality (advantage = 0.0000), and partitioning is in fact marginally slower to first reach the optimum (16 vs 12 experiments).",
+    "Noise-band confirmation delivers a measurable, reproducible robustness benefit: a ∼13× reduction in accepted noise (0.01565 →0.00121 reported-vs-clean gap).",
+    "The dead-end registry delivers a measurable eﬀiciency benefit: redundant re-probes fall from 36 to 0 and the search halts at 36 rather than 60 experiments — with the clean answer unchanged.",
+    "Effect-size ranking and reorganization are correctly implemented and ablatable, but do not by themselves change any measured quantity on this objective",
+    "They illustrate the measurement, not a universal constant."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Synthetic-objective testbed; explicitly claims no speedup and no LLM-quality result. The live Hermes path is opt-in and not used for reported numbers."
+  }
 }

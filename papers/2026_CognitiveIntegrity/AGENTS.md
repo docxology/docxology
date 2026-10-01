@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Analysis of Part 1 of 3 covers theore...
+- Extracts methods: Trust Calculus with bounded, exponentially decaying delegation, Defense Composition Algebra (series/parallel detection), Information-theoretic attack/detection bounds
+- Identifies findings: Trust Boundedness theorem: delegated trust over a chain of depth d is at most δ^d, so trust cannot be amplified and vanishes exponentially with depth., The paper states a stealth-impact tradeoff as a theorem: high-impact attacks are easier to detect, while stealthy attacks have limited effect., The framework formalizes five architectural defenses with composition rules for reasoning about layered security.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

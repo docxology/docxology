@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Suggested Upper Merged Ontology (SUMO) formalization, Cross-domain ontology alignment
-- Identifies findings: SUMO formalization enables principled cross-domain reasoning for AI systems, Upper ontology alignment bridges cognitive science and artificial intelligence through shared category structures
+- Extracts methods: Tentative term-by-term alignment of Active Inference topics to SUMO entities, Grouping Active Inference topics into modules and core/entailed/supplemental lists, Structured SUMO columns: superclass/instanceOf, subclasses, domains, other relations
+- Identifies findings: The document provides a scaffolding: a tentative alignment of Active Inference terms with SUMO entities, intended to support a later rigorous mapping of Active Inference to SUMO., The alignment table shows, for many core Active Inference terms, SUMO areas likely to hold corresponding topics or where new topics should be created to better match Active Inference concepts.
 - Maps contributions to AII Ecosystem literature
 
 ### 🎓 EDUCATOR

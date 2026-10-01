@@ -39,16 +39,32 @@
   ],
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Bayesian mechanics of particular partitions (free energy principle)",
+      "description": "Particular partitions are used to analyze how slow phylogenetic processes constrain and are constrained by fast phenotypic processes.",
+      "evidence": "We use the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain—and are constrained by—fast, phenotypic processes."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Two coupled random dynamical systems linked by a renormalisation group",
+      "description": "Phylogenetic and phenotypic processes are modelled as two random dynamical systems coupled via renormalisation-group reduction and grouping operators.",
+      "evidence": "We assume that evolution can be described with two random dynamical systems, describing phylogenetic (evolutionary) and phenotypic (particular) processes, respec- tively."
+    },
+    {
+      "name": "Variational recipe: Bayesian filtering plus stochastic gradient descent on action",
+      "description": "A four-step protocol samples particles, finds least-action paths by generalised Bayesian filtering, scores the free-energy path integral, and updates parameters.",
+      "evidence": "For each particle, find the path of least action using a generalised Bayesian filter (i.e., active inference)."
+    },
+    {
+      "name": "Numerical simulation of synaptic selection in a single neuron",
+      "description": "A single dendrite with 20 synapses over five segments was simulated over 64 cycles, with synapses eliminated via Bayesian model reduction on synaptic precision.",
+      "evidence": "To simulate synaptic selection, we used Bayesian model selection to compare the ev- idence for a cell’s model with and without a particular synaptic connection."
     }
   ],
   "key_findings": [
-    "This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic proc"
+    "The main result is a formulation of adaptive fitness as a path integral of phenotypic fitness, with least-action paths read as inference (phenotypic) and learning (phylogenetic).",
+    "The synthesis implies that a population of conspecifics cannot be modelled per se; one must consider populations of distinct natural kinds that influence each other.",
+    "Genotype and phenotype fitness are both selected through minimisation of the same free energy functional (Bayesian model evidence).",
+    "In the synaptic-selection simulation, free energy progressively decreased at the slow timescale as synapses enabling the cell to predict its inputs were selected.",
+    "The authors caution that the account is limited to mathematical apparatus, is not a process theory, and did not examine when the variational fitness lemma holds."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -57,5 +73,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.3390/e25070964",
-  "doi_url": "https://doi.org/10.3390/e25070964"
+  "doi_url": "https://doi.org/10.3390/e25070964",
+  "key_findings_evidence": [
+    "The main result is a formulation of adaptive fitness as a path integral of phenotypic fitness. Paths of least action, at the phenotypic and phylogenetic scales, can then be read as inference and learning processes, respectively.",
+    "Perhaps the most notable is that it is not possible to describe or model a population of conspecifics per se. Rather, it is necessary to consider populations of distinct natural kinds that influence each other.",
+    "The fitness of (extended) genotypes and (extended) phenotypes is selected for through the minimisation of the same free energy functional: Bayesian model evidence or marginal likelihood.",
+    "Figure 3 shows the progressive reduction in free energy at a slow timescale as the synapses that enable the cell to predict or fit its environment are selected.",
+    "While a plausible assumption—that is intuitively consistent with Darwinian evolution— we did not examine the conditions under which this assumption holds."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Primarily a theoretical/formal paper with one illustrative numerical study; the authors state simulations and lab experiments are needed to test the framework."
+  }
 }

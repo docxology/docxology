@@ -20,13 +20,22 @@ This work addresses topics in **Entomology**: neurotransmitters, dopamine, serot
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Field-collected P. barbatus foragers from 9 colonies near Rodeo, NM** — Foragers were collected into liquid nitrogen at a long-term study site and single brains dissected for analysis (n = 53 brains).
+- **Capillary electrophoresis with fast-scan cyclic voltammetry (CE-FSCV)** — An in-house CE-FSCV system with a carbon-fiber microelectrode separated and detected four biogenic amines in individual ant brains.
+- **Field-amplified sample stacking of single-brain homogenates** — Each brain was homogenized in 5 μl acetonitrile/perchloric acid so low-conductivity stacking could preconcentrate trace amines.
+- **ANOVA, Pearson correlations, and RSD comparisons in GraphPad Prism** — Tested colony effects on amine content, inter-amine correlations, and within- vs. among-colony relative standard deviations.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The method achieved detection limits of 1 nM dopamine, 2 nM serotonin, 5 nM octopamine, and 4 nM tyramine.
+- Dopamine was the most abundant amine per forager brain, followed by octopamine, serotonin, and tyramine.
+- Variation in neurotransmitter content was larger among colonies than within colonies.
+- Colony dopamine did not correlate with the other amines, while octopamine correlated strongly with serotonin and tyramine.
+- Colonies with higher brain dopamine showed less foraging increase after exogenous dopamine, though the effect was largely driven by one colony (D24).
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +63,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1007/s00216-019-02355-3`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

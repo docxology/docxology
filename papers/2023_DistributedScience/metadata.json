@@ -36,17 +36,32 @@
   ],
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Free energy principle applied as a multi-scale description of science",
+      "description": "Uses the FEP and active inference to describe science as evidence-seeking processes in a nested hierarchy of living and epistemic structures.",
+      "evidence": "energy principle to provide a multi-scale description of science understood as evidence-seeking processes in a nested hierarchy of living (biological and behavioural) and epistemic (linguistic) structures."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Two-scale analysis: individual and collective scientific cognition",
+      "description": "Organizes the account into individual-level scientific cognition (Section 2) and collective, institutional scientific cognition (Section 3), treated as hierarchically integrated.",
+      "evidence": "We focus on two general scales of scientific cognition: (i) the individual scale, at which scientific cognition operates through individual-level cognitive functions"
+    },
+    {
+      "name": "Review of Thagard's ECHO explanatory-coherence model",
+      "description": "Discusses Thagard's connectionist ECHO model as a prior computational model of individual scientific cognition.",
+      "evidence": "Thagard's model, ECHO (Explanatory Coherence), simulates the establishment of various scientific theories"
+    },
+    {
+      "name": "Synthesis of distributed cognition and niche construction under the FEP",
+      "description": "Draws on distributed cognition, Latour's actor-networks and Giere to argue Bayesian mechanics and the FEP can formalize distributed scientific practice.",
+      "evidence": "In this section, we claim that the Bayesian Mechanics and the FEP are useful for formalising the distributed cognition approach to the practice of science"
     }
   ],
   "key_findings": [
-    "The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics..",
-    "We formalize the scientific process as multi-scale Active Inference, where individual rese...."
+    "The authors claim science can be described as a higher-level ensemble of Markov-blanketed systems that constrains and is constrained by its parts.",
+    "They argue the approach naturalises science as distributed self-evidencing, foregrounding inference to the best explanation over truth-pointing.",
+    "They propose scientific practice as collective inference on shared generative models, yielding persistent entities: the scientific community and cultural technologies.",
+    "They argue framing science as nested active inference implies a shift from falsificationism to evidence-based model comparison.",
+    "As future work, they claim an FEP-based computational model of scientific cognition could be used to predict via simulation which interactions and constraints promote higher-level intelligence."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -55,5 +70,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.31219/osf.io/dnw5k",
-  "doi_url": "https://doi.org/10.31219/osf.io/dnw5k"
+  "doi_url": "https://doi.org/10.31219/osf.io/dnw5k",
+  "key_findings_evidence": [
+    "We claim here that science is such a higher-level ensemble of Markov blanketed systems.",
+    "The ensuing meta-theoretical approach dispels the notion of science as truth-pointing and foregrounds inference to the best explanation",
+    "We have proposed to understand scientific practice in terms of collective inference premised on shared generative models, which consist largely of consensus hypotheses shared by the scientific community.",
+    "The shift has taken place from falsificationism to one focused on evidence-based model comparison.",
+    "We claim that an FEP-based computational model of scientific cognition could be used to predict (via simulation testing) which specific forms of interactions, affordances and top-down constraints (policies) might have led to"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Conceptual/philosophical paper; no simulations are reported (simulation is proposed as future work)."
+  }
 }

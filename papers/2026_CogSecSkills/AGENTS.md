@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Plan/Build/Teach architecture: registry, definitions, skills tree, AGEINT, Harness-neutral skill contract over a closed set of eight tool verbs, Deterministic rendering into Claude, Codex, and Hermes adapters
+- Identifies findings: The generated catalogue reports one hundred implemented skills across seven taxonomy groups, from Structured Analytic Techniques to Research and Synthesis Methods., The quality gate shows, for the current repository state, that all 100 skills carry group-aware defensive boundaries and skill-specific, non-reused governance entries., The worked-example gate verifies exact 100-skill coverage; the examples are expected-answer shapes, not live model transcripts.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

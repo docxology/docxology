@@ -23,21 +23,32 @@
   ],
   "methods": [
     {
-      "name": "Collective behavior and consciousness theory",
-      "description": "Applied collective behavior and consciousness theory approach"
+      "name": "Forward vs reverse tests, framed as Kuhnian normal vs revolutionary science",
+      "description": "Theories of consciousness are classed as forward tests (classifying arbitrary systems) needing calibration by a reverse test, analogised to normal vs revolutionary science.",
+      "evidence": "we first discuss the notion of a forward test versus a reverse test, analogous to the nor- mal and revolutionary phases of the scientific process."
     },
     {
-      "name": "Multi-agent modeling of ant colony cognition",
-      "description": "Applied multi-agent modeling of ant colony cognition approach"
+      "name": "The Ant Colony Test (ACT): does a theory allow consciousness in ant colonies?",
+      "description": "The authors define the ACT as a reverse test that checks the internal and external coherence of theories of consciousness against the ant colony.",
+      "evidence": "does the theory predict or allow for consciousness in ant colonies? The ACT is thus a reverse test for theories of con- sciousness."
     },
     {
-      "name": "Comparative neuroethological analysis",
-      "description": "Applied comparative neuroethological analysis approach"
+      "name": "Applying the ACT to four genres of consciousness frameworks",
+      "description": "The ACT is juxtaposed with neurobiological (structural/functional), behaviorist spatial-awareness, cognitive (emotion/bias), and mathematical (IIT, FEP) frameworks.",
+      "evidence": "We focus on four genres of forwards tests for con- sciousness, coming from four distinct fields."
+    },
+    {
+      "name": "Redeployment of published social insect neurobehavioral and ecological evidence",
+      "description": "Existing empirical studies of ant and bee colonies (planning, information transfer, inter-colony interaction) are used to evaluate each framework's predictions.",
+      "evidence": "A long lineage of philosophically-neutral neurobe- havioral, evolutionary, and ecological studies on social insect colonies can thus be redeployed for the study of consciousness in general."
     }
   ],
   "key_findings": [
-    "Here we address the scientific study of consciousness by proposing the ant colony as a model system..",
-    "We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that s...."
+    "Neuroanatomical theories exclude colony consciousness a priori, so the ACT suggests they have limited carryover to other species or architectures.",
+    "Under IIT, the authors argue the colony would likely have a higher Φmax than aggregated individual workers and thus represent a conscious entity.",
+    "Under the Free Energy Principle, long-term planning, possible counterfactuals and self/non-self modelling might support rudimentary colony self-awareness, though few experiments exist.",
+    "Since several frameworks predict colony-level awareness, either colonies are aware or current approaches are individually inadequate and collectively inconsistent.",
+    "The authors remain agnostic on colony consciousness and propose the ant colony as a tractable, ethically manipulable model system for consciousness experiments."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -46,5 +57,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1007/s11229-019-02130-y",
-  "doi_url": "https://doi.org/10.1007/s11229-019-02130-y"
+  "doi_url": "https://doi.org/10.1007/s11229-019-02130-y",
+  "key_findings_evidence": [
+    "since an ant colony is not liter- ally a brain (despite salient similarities, Hofstadter 1981), there is no possibility of consciousness in an ant colony according to any neuroanatomical theory.",
+    "it does seem that the colony will have a Φmax higher than that of aggregate individual workers, and thus represent a conscious entity.",
+    "In summary, FEP might support the notion of a rudimentary self-awareness or genuine self-consciousness for ant colonies, due to their ability to perform long-term planning",
+    "We are then left to either accept the claim that colonies of ants are phenomenologically-aware entities, or to acknowledge that current approaches to investigating consciousness scientifically are individually inadequate and collectively inconsistent.",
+    "Unlike brains, social insect colonies can be ethically manipulated (Gordon 1989), divided (Win- ston et al. 1990), or drugged (Friedman et al. 2018)."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Conceptual/philosophy-of-science paper; no new data. 'Methods' are the analytic framework and the evidence base it draws on."
+  }
 }

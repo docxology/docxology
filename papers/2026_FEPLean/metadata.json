@@ -102,17 +102,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Lean 4 theorem proving for FEP formalization",
-      "description": "Applied lean 4 theorem proving for fep formalization approach"
+      "name": "Curated catalog of 50 FEP topics as namespaced Lean 4 sketches against Mathlib4",
+      "description": "Compiled 50 topics across five pillars (FEP, Active Inference, Bayesian Mechanics, Information Geometry, Thermodynamics) as Lean 4 sketches from a single source of truth.",
+      "evidence": "We address this gap with a curated catalog of 50 topics that spans the five technical pillars of the framework"
     },
     {
-      "name": "AI-assisted theorem sketching and verification",
-      "description": "Applied ai-assisted theorem sketching and verification approach"
+      "name": "Native lake env lean verification on a pinned Lean/Mathlib v4.29.0 stack",
+      "description": "Verified every reported compilation result with a real lake env lean invocation against the pinned toolchain, with no mocked compilers or synthetic success signals.",
+      "evidence": "Every reported compilation result is produced by a real lake env lean invocation against the pinned Lean 4 4.29.0 toolchain and Mathlib4 v4.29.0."
+    },
+    {
+      "name": "LLM-assisted commentary pipeline (Hermes/OpenGauss, kimi-k2.6 via OpenRouter)",
+      "description": "Layered LLM drafting and commentary over the catalog, cached by Lean source hash, with the Lean kernel kept as sole ground truth for compilation claims.",
+      "evidence": "the language model can draft, explain, and cross-link each sketch, while the Lean 4 kernel remains sole ground truth for every compilation claim in the manuscript."
+    },
+    {
+      "name": "Zero-mock test suite with coverage gate and SQLite run persistence",
+      "description": "Ran 347 tests that each exercise real files, a real SQLite store, live compiler calls or actual HTTP calls, holding coverage above an 89% CI gate.",
+      "evidence": "every one of the 347 test cases exercises a real file, a real SQLite store, a live compiler invocation, or an actual HTTP call"
+    },
+    {
+      "name": "Three-level sorry-aware maturity taxonomy (real / partial / aspirational)",
+      "description": "Introduced a classification intended to make incomplete formalization explicit; all current rows are tagged real.",
+      "evidence": "We introduce a three-level sorry-aware classification (real / partial / aspirational) that makes incomplete formalization honest and auditable."
     }
   ],
   "key_findings": [
-    "<p>The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked a",
-    "Dependent-type provers require explicit measure spaces, domination, and integrability that literature prose and equations may leave implicit."
+    "On the pinned Lean 4 / Mathlib4 v4.29.0 stack, the shipped catalog compiles 50/50 sorry-free.",
+    "The Hermes-assisted Gauss run run_20260424_064334 achieved 50/50 clean compiles with 0 sorry and 0 errors.",
+    "Constructions that already typecheck in today's Mathlib4 include finite-set probability, Bayesian updating, finite-space KL divergence and variational free-energy bounds.",
+    "The author cautions that the catalog covers definitional lemmas and structural identities rather than end-to-end FEP theorems, and many rows stop short of what the informal text proves.",
+    "Formal verification here establishes formal adequacy only; it provides no empirical confirmation that brains minimize variational free energy."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -123,5 +143,19 @@
     "ActiveInferenceInstitute/fep_lean"
   ],
   "artifact_doi": "10.5281/zenodo.22072956",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.22072956"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.22072956",
+  "key_findings_evidence": [
+    "On the pinned stack leanprover/lean4:v4.29.0 / Mathlib4 v4.29.0 the shipped catalog compiles 50/50 sorry-free under lake env lean",
+    "Hermes-assisted Gauss run run_20260424_064334 (~2 min) achieved 50/50 clean compiles, 0 sorry, 0 errors",
+    "an initial set of FEP-related constructions that already typecheck against today’s Mathlib4 — finite-set probability, Bayesian updating, Kullback–Leibler divergence on finite spaces, variational free-energy bounds",
+    "The current catalogue covers definitional lemmas and structural identities (type disci- pline, algebraic identities, measure-monotonicity, skew-symmetry) rather than end-to-end theorems of the FEP dynamical program.",
+    "A formally verified theorem about variational free energy says nothing about whether biological brains minimize variational free energy."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Internal tension in the text: the abstract mentions 'some aspirational sketches' (SDEs, Fokker–Planck, Riemannian information geometry), while the contributions and conclusion state all 50 rows are tagged real (0 partial, 0 aspirational). Summary follows the explicit 50/50-real statements."
+  }
 }

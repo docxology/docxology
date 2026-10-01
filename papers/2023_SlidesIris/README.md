@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Some initial slides from today. For context see: @speakerjohnash
+> No abstract is recorded for this work yet; see the DOI or bibliography link.
 
 ## Keywords
 
@@ -18,12 +18,18 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Active Inference generative model drawn as a Bayesian graph** — The slides open with a labelled graph of the A, B, C, D, E, G and policy terms of an Active Inference generative model as the reference frame.
+- **Mapping GPT onto a minimal prior/state/observation model** — A reduced D-s-o model is used to describe what GPT does: prior as training set and parameters, latent semantic state, and word strings as observations.
+- **Perceptual-inference extension with a transition matrix B** — Temporal dynamics are added via the perceptual inference part of Active Inference, with hidden states changing over time and no action selection.
+- **Renormalization-group model of nested attention (Friston et al. 2023)** — A figure from Friston, Friedman et al. 2023 is reused to sketch how speakers, groups and sets of groups could be modelled as nested attention.
 
 ## Key Findings
 
-- Iris dataset analysis demonstrates reproducible visual analytics workflow for educational contexts
-- Slide-based presentation format effectively communicates active inference concepts to diverse audiences
+- The slides identify that in the GPT framing the latent semantic state is not separated by speaker, so speakers are admixed and cannot be weighted or attended to differentially.
+- The slides propose treating attention as a portfolio (regime) of nested attentions across persons, groups, sets of groups and the eco-niche.
+- Listed next steps are adding visualizations/dashboards, specifying the model in GNN toward implementation, and adding an action component.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

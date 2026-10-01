@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Typed immutable stimulus request (identifier, parameters, seed, encoding), Canonical little-endian float32 serialization with SHA digests and v2 manifests, Encode-decode verification with format-specific tolerances
+- Identifies findings: Version 0.5.0 contains 17 implemented generators and 18 catalog entries, supported by 36 source records and 18 evidence records., The publication workflow generates 15 publication figures and 10 machine-derived tables from the live registry., The package is framed around falsifiable engineering hypotheses, including that identical typed requests yield identical canonical arrays and digests.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,5 +37,5 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |

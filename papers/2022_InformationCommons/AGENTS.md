@@ -4,7 +4,7 @@
 
 **Paper**: Structuring the Information Commons: Open Standards and Cognitive Security (2022)
 **Domain**: Cognitive Security
-**Authors**: Scott David, R.J. Cordes, Daniel A. Friedman (editors)
+**Authors**: Scott David, R.J. Cordes, Daniel A. Friedman
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Edited volume of eleven chapters from the VIE program's first year, Catechism-based project management across participating teams, Framing the information environment as a proto-market needing exchange protocols
+- Identifies findings: The editors suggest focusing on shared context and meaning as a key element of co-managing the information commons, broadening attention from data security to context sharing., The editors argue that declining trust online, viewed as a market with growing pains, is a new instance of an old problem traditionally solved by shared exchange protocols and local rule-setting., Chapter I (Cordes et al.) proposes Narrative Information Management as a unifying term and framework for the features and challenges of collective sensemaking.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

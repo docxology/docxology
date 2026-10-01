@@ -63,16 +63,31 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Visual and symbolic analysis",
-      "description": "Applied visual and symbolic analysis approach"
+      "name": "Triangulation of Jiang's AI commentary, Blake's 1790s diagnostics and Active Inference",
+      "description": "Reads Jiang Xueqin's YouTube AI commentary through Blake's perceptual vocabulary and the formal vocabulary of Active Inference.",
+      "evidence": "This rapid-publication essay reads Professor Jiang Xueqin’s contemporary YouTube commentary on artificial intelli- gence — particularly his framing of AI as religion, empire, hallucination machine, and consciousness capture"
     },
     {
-      "name": "Cross-domain pattern mapping",
-      "description": "Applied cross-domain pattern mapping approach"
+      "name": "Reconstruction of Jiang's May 2026 diagnosis from four timestamped primary sources",
+      "description": "Draws on the Bartlett interview, Game Theory #23 and #24, and the Diesen podcast, with earlier lecture corpus as background.",
+      "evidence": "This chapter reconstructs Jiang’s diagnostic vocabulary as it stood in the week of 7–12 May 2026, drawing on four primary sources"
+    },
+    {
+      "name": "Mapping of Jiang's claims onto Blake's Four Zoas and a factorized generative model",
+      "description": "Maps claims such as the persuasion machine and edge-case suppression onto the Four Zoas and Active Inference, across twelve thematic nodes.",
+      "evidence": "What is new here is the mapping of Jiang’s claims — the persuasion machine, the demand for clean data, the suppression of edge cases, the black box as oracle, the engagement prime directive — onto Blake’s Four Zoas and the factorized generative model of Active Inference."
+    },
+    {
+      "name": "Same-day AI-augmented rapid publication with author in the loop",
+      "description": "Drafted within hours of the trigger lecture using AI assistance for transcript research, mapping, derivation and figures.",
+      "evidence": "The drafting process used contemporary AI assistance for transcript research, structural mapping, formal derivation, and figure ren- dering, while editorial judgment, quotation provenance, scholarly framing, and the final synthetic argument remained with the author."
     }
   ],
   "key_findings": [
-    "Essay mapping Jiang Xueqin's artificial-intelligence critique through William Blake's theory of single vision and Active Inference concepts including pathological prior dominance."
+    "Argues the three vocabularies converge structurally-functionally on one failure mode: closure of a perceiving system around its own top-down expectations.",
+    "Treats the Blake-Active Inference mapping as a functional analogy across incompatible metaphysics, not a translation or identity.",
+    "Argues that deployed systems such as LLMs and recommendation engines instantiate this closure as an architectural property, making it a design choice.",
+    "Reads the twelve thematic nodes as suggesting, not establishing, that the architectural corrective is multi-agent and precision-balanced."
   ],
   "related_papers": [
     "2018_PPPiP",
@@ -81,5 +96,18 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "artifact_doi": "10.5281/zenodo.20144984",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20144984"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20144984",
+  "key_findings_evidence": [
+    "What survives the qualifications is the structural-functional convergence. Three independent vocabularies point at the same failure mode of cognition: the closure of the perceiving system around its own top-down expectations.",
+    "The mapping of Blake’s “Newton’s Sleep” onto Active Inference’s pathological prior dominance is a functional analogy across incompatible metaphysics; Blake’s quarrel is ontological, the Active Inference critique is parameter-level.",
+    "That distinction is what makes the diagnosis actionable: closure is an architectural choice, and architectures can be designed otherwise.",
+    "the architectural corrective is not the absence of architecture but a specific kind of architecture, multi-agent and precision-balanced."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Rapid-publication interpretive essay; no empirical data. The author explicitly frames the FEP as a generative vocabulary rather than established science and brackets Jiang's conspiratorial material."
+  }
 }

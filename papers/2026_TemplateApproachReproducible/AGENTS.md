@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Two-Layer Architecture separating shared infrastructure from project workspaces, YAML-declared 12-stage build DAG from tests through Pandoc/XeLaTeX rendering, Zero-Mock testing policy with 90% project and 60% infrastructure coverage gates
+- Identifies findings: Reports 100% pipeline completion for the sampled multi-project runs, with timings described as illustrative., The manuscript was itself produced by the pipeline it describes, with metrics injected from repository introspection., The comparative analysis positions template/ as integrating fourteen distinctive enforcement capabilities in one repository.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

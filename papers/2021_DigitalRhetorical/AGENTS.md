@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: makes a case for integrating frameworks from two different knowledge domains, rhetorical studies and ecological studies, to catalog, monitor, and study digital image meme data, in order to support a more robust understanding of how memes produce and disseminate online narratives.., In the digital public sphere, the primacy of image-based communication motivates an over-reliance on the image meme for public argumentation.., Despite its ubiquity, the image meme format is currently understudied in large scale digital data analyses, relative to text -based formats such as natural language and hashtags..
+- Extracts methods: Mapping concepts between rhetorical studies and ecology, Three-phase DRE3 analysis: entity, rhetorical, hidden-state identification, Qualitative 'boutique' case analyses of two image memes
+- Identifies findings: The authors argue that a rhetorical approach, emphasizing message form and audience, can improve large-scale tools for categorizing, indexing, searching, and modeling online discourse., They introduce the Digital Rhetorical Ecosystem three-tiered model (DRE3) to explain how memes affect public narratives and beliefs., They suggest current software can perform many sub-tasks of image-meme rhetorical analysis, with crowd-sourced annotation filling gaps where software is insufficient.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

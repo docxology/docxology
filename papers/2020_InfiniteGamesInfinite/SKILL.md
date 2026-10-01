@@ -21,13 +21,21 @@ This work addresses topics in **Cognitive Security**: InfiniteGamesInfinite.
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Complex Adaptive Systems framing of remote teams and narrative ecosystems** — Uses the CAS framework to explore how games played by remote teams could be harnessed through platform design choices.
+- **World of Warcraft PvE/PvP play as a case study of rapid team formation** — Draws on WoW raid and player-vs-player teams to illustrate rapidly assembled teams and cultural transmission.
+- **Design sketch: formal-informal interface for collaborative world-building** — Idea I proposes formal memetics where technical users set world parameters while prose and art contributors co-evolve the narrative.
+- **Design sketch: Red/Blue/Green 'Cadavre Exquis' role-playing game** — Idea II proposes a case-management-like knowledge-mapping game with sword, shield and integrating roles plus role-specific guiding questions.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Introduces the term Instantaneous Remote Teams (IRT) for rapidly formed online-native teams, described as essential for institutional function and resilience.
+- Defines 'Infinite Teams' by analogy to Infinite Games as teams with open-ended, evolving composition, and uses 'Gray Zone' for the ambiguous space where they play.
+- Proposes that Polyplexus could serve as a platform hosting Infinite Games such as culture creation, narrative evolution and R&D.
+- Argues that AI alone struggles to detect links between memetic material and context, motivating curated knowledge networks with humans in the loop.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -56,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.12601674`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

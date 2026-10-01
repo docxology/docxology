@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Case-enabled reasoning over Bayesian models, Active inference with case-based priors
-- Identifies findings: See paper
+- Extracts methods: Mapping linguistic case grammar onto generative model roles, Category-theoretic formalization of case transformations as morphisms, Variational free energy formulation of case transformations
+- Identifies findings: Introduces CEREBRUM, which treats models as case-bearing entities, like declinable nouns, to give a formal linguistic-type calculus for model use and transformation., Frames CEREBRUM as integrating cognitive systems modeling, Active Inference, linguistic case systems and intelligence production., Describes nominative-accusative, ergative-absolutive and tripartite alignment patterns for organizing model relationships.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

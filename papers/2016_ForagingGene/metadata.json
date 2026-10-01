@@ -37,17 +37,37 @@
   ],
   "methods": [
     {
-      "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays approach"
+      "name": "Field collection of Pogonomyrmex barbatus workers in five task/age groups",
+      "description": "Workers from mature colonies near Rodeo, New Mexico were sorted into callows, brood workers, nest maintenance workers, patrollers, and foragers.",
+      "evidence": "Workers were designated as belonging to one of five groups: callows, brood workers, nest maintenance, patrollers or foragers, defined as in previous work [58,60]."
     },
     {
-      "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis approach"
+      "name": "24 h time-of-day sampling at 4 h intervals",
+      "description": "Ants of each task and colony were sampled every 4 h over a day and flash frozen to track daily changes in foraging gene expression.",
+      "evidence": "In the course of the subsequent 24 h, a sample of 4–5 ants from each task and colony were removed at 4 h intervals, and flash frozen in liquid nitrogen."
+    },
+    {
+      "name": "Light exposure experiment: 13 L : 11 D versus constant darkness",
+      "description": "Foragers and brood workers from six field colonies were housed in artificial nest-boxes under ambient light/dark cycles or complete darkness for 24 h.",
+      "evidence": "Foragers and brood workers (n ¼ 18 workers per task per colony) were collected from six medium-sized field colonies as described above."
+    },
+    {
+      "name": "Brain qPCR of Pbfor and cycle, normalized to PbEF1a",
+      "description": "Whole-brain RNA was assayed by TaqMan qPCR using harvester-ant-specific primers, with elongation factor 1a as the control gene.",
+      "evidence": "To standardize foraging expression, elongation factor 1a (64 bp) was used as a con- trol for each cDNA replicate."
+    },
+    {
+      "name": "Mixed-model ANOVAs and sinusoidal contrast analysis of forager expression",
+      "description": "Expression over time was tested with mixed-model ANOVAs, and forager patterns were compared to a sinusoid approximating daily foraging activity.",
+      "evidence": "The expression pattern of foragers was compared with a generalized sinusoidal curve that approximates the daily foraging activity rhythms of harvester ant foragers in the field"
     }
   ],
   "key_findings": [
-    "Previous work has found that workers of similar genotype adopt different behavioural phenotypes..",
-    "Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati...."
+    "Foraging mRNA levels are linked to changes over weeks in worker age, location, and task, and show significant daily oscillations in foragers.",
+    "Foragers have high foraging mRNA levels during daylight hours, when they are most active outside the nest.",
+    "Under a 13 L : 11 D light cycle, oscillations appeared in foragers but not in brood workers.",
+    "In constant darkness (DD), foraging expression showed no significant change over time in either task.",
+    "In both field and experimentally treated foragers, foraging expression was significantly correlated with expression of the circadian clock gene cycle."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -56,5 +76,18 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1098/rspb.2016.0841",
-  "doi_url": "https://doi.org/10.1098/rspb.2016.0841"
+  "doi_url": "https://doi.org/10.1098/rspb.2016.0841",
+  "key_findings_evidence": [
+    "levels of foraging mRNA are associated with ontogenetic changes over weeks in worker age, location and task, and there are significant daily oscillations in foraging expression in foragers.",
+    "foragers have high levels of foraging mRNA during daylight hours when they are most active outside the nests.",
+    "Oscillations occur in foragers following experimental exposure to 13 L : 11 D (LD) conditions, but not in brood workers under similar conditions.",
+    "No significant differences were seen in foraging expression over time in either task in 24 h dark (DD) conditions.",
+    "the expression of foraging in both undisturbed field and experimentally treated foragers is also significantly correlated with the expression of the circadian clock gene, cycle."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "empirical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge."
+  }
 }

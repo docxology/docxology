@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Historical review of military, business and gray-zone operations orders, Adapting the Facilitator's Catechism with Blank's innovation pipeline, Six-stage partition from Ideation to Integration
+- Identifies findings: Presents the Innovator's Catechism, a catechism-styled operations order for early-stage, market-facing innovation teams., The IC keeps the Facilitator's Catechism sections but replaces Implications of Outcome with Cost and Benefit., Unlike other OPORDs, the IC's questions depend on the team's pipeline stage, forming a 'family' of catechisms that grows as the team progresses.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

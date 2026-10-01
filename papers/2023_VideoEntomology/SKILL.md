@@ -20,13 +20,18 @@ This work addresses topics in **Entomology**: video entomology, behavioral track
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Editorial synthesis of four JoVE entomology protocol articles** — Summarizes four video protocols on Atta ant rearing, honey bee pollen collection, bee tissue histology, and agrochemical effects on queens.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The editorial highlights that Topitzhofer et al.'s pollen pipeline relies on passive mesh collection and low-cost visual identification rather than electron microscopy or metabarcoding.
+- It notes that Fine et al. and Nogueira et al. address colony-level scaling challenges for eusocial insect study in different ways: queen fecundity assays and large-scale leaf-cutter rearing.
+- The authors suggest video presentation of methods may increase their adoptability, proficiency, and reproducibility globally.
+- They propose future directions including expanding beyond ants and bees, using ecological databases, and exploring AR, robotics, and cognitive modeling.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +59,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.3791/65002`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

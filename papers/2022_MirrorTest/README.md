@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> We apply a predictive processing interpretation to mirror test results, offering a novel perspective on mirror self-recognition. We hypothesize that a 'reflection prediction' may explain mirror self-recognition, self-directed behavior, and how humans locate themselves relative to mirrors. Atypical reflection predictions may explain instances where self-recognition traits are atypical in certain...
+> The "mirror test" has been used as a behavioral measure of mirror self-recognition for a variety of species. In this article we apply a predictive processing interpretation to the results of the mirror test in order to offer a novel perspective with which to understand mirror self-recognition and self-directed behavior. Furthermore, we hypothesize that a “reflection prediction”, upon which our...
 
 ## Keywords
 
@@ -18,13 +18,19 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Predictive processing reinterpretation of published mirror-test results** — Applies the predictive processing framework (perceptual inference, active inference, sensory attenuation) to interpret prior mirror-test findings across species.
+- **'Reflection prediction' construct built on Apps and Tsakiris** — Defines a reflection prediction as optimized high-level priors about one's own visual reflection, following Apps and Tsakiris's free-energy self account.
+- **Hypothetical error analysis compared against observed symptoms** — Considers possible reflection prediction errors, their effects and corrections, then compares these with symptoms reported in the literature (summarized in Table 1).
 
 ## Key Findings
 
-- The "mirror test" has been used as a behavioral measure of mirror self-recognition for a variety of species..
-- In this article we apply a predictive processing interpretation to the results of the mirror test in order to offer a novel perspective with which to understand mirror self-recognition and self-directed behavior..
-- Furthermore, we hypothesize that a “reflection prediction”, upon which our predictive processing interpretation of the mirror test is built, may also offer a novel perspective to understand how humans locate themselves relative to a mirror, imitate others, and are self-aware from a socia
+- The authors propose mirror self-recognition results from sensory attenuation when a reflection is predicted, and mark-directed behavior is active inference to correct reflection prediction errors.
+- They argue species that learn to ignore their reflection, not only those showing self-directed behavior, may be capable of mirror self-recognition.
+- They argue the mirror test measures self-directed behavior rather than mirror self-recognition.
+- They hypothesize that self-directed behavior reflects whether a species faced selection pressure for active inference in front of reflective surfaces, citing the cleaner wrasse.
+- They argue a reflection prediction may also support mirror proprioception, imitation and self-awareness, and its errors may relate to atypical forms of these traits; they call the paper largely speculative.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

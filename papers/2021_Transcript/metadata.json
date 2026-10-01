@@ -86,17 +86,27 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Edited transcript of a three-session moderated symposium",
+      "description": "Records the first Applied Active Inference Symposium with Karl Friston, organized into .edu, .comms and .tools sessions mirroring the lab's organizational units.",
+      "evidence": "The Symposium was structured in three sections, corresponding to the Organizational Units of the Active Inference Lab: Education, Communication, and Tools. This publication reflects an edited and enriched transcript of the proceedings of the Symposium."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Prepared question slides posed by lab participants to Friston",
+      "description": "Lab members developed questions in weekly meetings and presented them as slides; Friston answered and moderators gave recaps.",
+      "evidence": "In our weekly meetings over the past weeks, for each organizational unit, we've been developing questions and getting excited about things that we wanted to talk to you about"
+    },
+    {
+      "name": "Presentation of the lab's Active Inference terms list and ontology work",
+      "description": "The .edu session presented the lab's terms list and working ontology, developed within the SUMO ontology framework as a backbone for education.",
+      "evidence": "And we're developing within the SUMO ontology development framework, which defines not just relational edges, but an actual logic."
     }
   ],
   "key_findings": [
-    "On June 21st, 2021, Active Inference Lab ( activeinference.org/ ) hosted its first Applied Active Inference Symposium, featuring Professor Karl Friston.",
-    "The Symposium was structured in three sections, corresponding to the Organizational Units of the Active Inference Lab: Education, Communication, and Tools."
+    "Friston recommends toy simulations as the best way to demystify Active Inference for learners in an academic setting.",
+    "Friston stresses that getting the generative model right is central: if it is apt for the target system, everything else usually follows.",
+    "Friston distinguishes Active Inference from predictive coding: minimizing variational free energy is only half the game, with expected free energy needed for future-oriented action.",
+    "On tools, Friston argues anything can be written as a generative model and hence as a variational free-energy-minimizing message-passing scheme, citing ForneyLab.",
+    "Friston describes epidemic modeling with PCR incidence and mobility data, using Bayesian optimal design to judge whether including a data source is worth the complexity."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -104,5 +114,19 @@
     "2021_ModelingConflict"
   ],
   "artifact_doi": "10.5281/zenodo.5797072",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.5797072"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.5797072",
+  "key_findings_evidence": [
+    "In my experience, in an academic setting, just having toy simulations is usually the best way to give people a feel for what this approach does and how it can be used.",
+    "So, if you get the generative model right, and it's apt to describe the thing that you want to understand or to simulate, then usually everything else follows suit.",
+    "But predictive coding is not what is meant by Active Inference: you can do predictive coding just by , if you're a statistician, just minimizing Variational Free Energy. That's only half the game",
+    "Absolutely everything can be written down as a generative model! If there's a generative model there, there's a Bayesian dependency graph. If there's a Bayesian dependency graph, you know there's a factor graph.",
+    "So, when we do this in a practical way, we use the instance rates from PCR testing, and Google mobility data, and Department of Transportation data - anything that speaks to them and reduces uncertainty about all the factors necessary."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Edited transcript (v2.0, March 2022) of a June 21, 2021 symposium; findings are Friston's spoken views, not results of the work. Methods describe the event format rather than research methods."
+  }
 }

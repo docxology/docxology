@@ -40,17 +40,26 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Three-session Active Inference livestream (#051) on Isomura et al. 2022",
+      "description": "The work is a transcript of livestream #051: a solo background session (#051.0) plus two participatory discussions with Takuya Isomura.",
+      "evidence": "LS #051.0: Background and context. https://www.youtube.com/watch?v=ZASG-rtkXDk"
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Solo slide walkthrough by Daniel Friedman with colour-coded paper quotes",
+      "description": "In #051.0 Friedman walks through the paper's structure on slides, colour-coding direct quotes by perception, action, and complete class theorem themes.",
+      "evidence": "The black quotes are the direct quotes from the paper Bleu quotes quotes are related to perception, orange for action, complete class theorems and neural networks together in purple."
+    },
+    {
+      "name": "Discussion of the complete class theorem via external online resources",
+      "description": "Friedman introduces the complete class theorem using external blog/LessWrong posts, inviting others with more expertise to contribute.",
+      "evidence": "One eformalism that I had no familiarity with before this paper and associated readings and conversations with Ali was the Complete Class Theorem."
     }
   ],
   "key_findings": [
-    "Transcript of a&nbsp;three-session series of discussions of the paper &quot;Canonical neural networks perform active inference&quot; by Takuya Isomura, Hideaki Shimazaki &amp; Karl J.",
-    "Friston.&nbsp; https://www.nature.com/articles/s42003-021-02994-2 LS #051.0: Background and context."
+    "As read in the stream, the paper claims a class of canonical rate-coding neural networks is universally characterised as variational Bayesian inference under a particular but generic generative model.",
+    "Friedman relays the paper's corollary of the complete class theorem: any neural network minimizing a cost function can be viewed as variational Bayesian inference under some priors.",
+    "Quoted from the paper: a network of rate coding models with sigmoid activation formally corresponds to a class of POMDP models.",
+    "The paper's maze-task simulations are described as supporting the proposition, and the implicit prior was estimated from simulated neural activity as a good approximation to the true value."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -58,5 +67,18 @@
     "2021_ModelingConflict"
   ],
   "artifact_doi": "10.5281/zenodo.7400536",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7400536"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7400536",
+  "key_findings_evidence": [
+    "The present work addresses these issues by demonstrating that a class of canonical neural networks of rate coding models is functioning as and thus universally characterized in terms of variational bayesian inference under a particular but generic form of the generative model.",
+    "Any neural network minimizing a class function can be viewed as performing variational Bayesian inference under some prior beliefs.",
+    "Remarkably, a network of rate coding models with sigmoid activation function formally corresponds to a class of POMDP models, which provide an analytically trackable example of the present equivalents.",
+    "we estimated implicit prior E, which is encoded by PSI from sequences of neural activity generated from the synthetic neural networks used in the simulations reported in figure four. We confirmed that this estimator was a good approximation to the true e."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Livestream transcript (auto-transcribed, with errors). Only session #051.0 (Friedman solo) has transcript text; #051.1 and #051.2 appear only as chapter lists. Findings are the Isomura, Shimazaki & Friston paper's claims as read/relayed by Friedman, not original results of this work."
+  }
 }

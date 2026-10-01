@@ -20,13 +20,19 @@ This work addresses topics in **Genetics & Biomedical**: consciousness, philosop
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Question-and-answer interview of Daniel Dennett by Fleig-Goldstein and Friedman** — The interviewers pose long contextualized questions on Quine, Freud, predictive processing, psychedelics and Plato, and Dennett answers each in turn.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Dennett argues that anyone can tell scientists how to do better science, since scientists are as vulnerable to illusion and sloppy thinking as anyone.
+- Dennett recalls arguing, with Hurley and Adams, that all control in nervous systems is accomplished by 'emotional' signals with no highest-level executive.
+- Dennett says dream content is not random and that theories are best confirmed by showing how a model predicts the results of targeted disruptions.
+- Dennett views psychedelics as risky but potentially enlightening and therapeutic, and says he has avoided them himself.
+- Dennett proposes that academic ethics policies apply everywhere, possibly enforced by strict liability laws for developers, including for AI, psychedelics and gene-tinkering.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +60,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.34700/7gkw-zh08`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

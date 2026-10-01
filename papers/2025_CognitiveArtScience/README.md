@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> This paper explores cognitive approaches to art-science integration, examining how cognitive science frameworks can inform both artistic practice and scientific investigation. Through Active Inference, we develop formal connections between aesthetic experience, creative cognition, and scientific reasoning.
+> Positioning cognitive science as the systematic study of intra-action and cognitive art as its reflexive twin, this paper traces a bidirectional trajectory toward systemic wholeness. Procedural craft (firstness) and conceptual articulation (secondness) co-evolve into adaptive intelligence (thirdness), as continuously audited by the observing niche that embeds, measures, and reinterprets those...
 
 ## Keywords
 
@@ -18,11 +18,16 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Four-fold firstness-to-fourthness conceptual schema** — Frames procedural craft, conceptual articulation, adaptive intelligence, and the observing niche as firstness through fourthness to relate cognitive science and art.
+- **Contrast of analytical 2→3 and generative 4→3 moves** — Distinguishes moves that compress past data into predictive structure from moves that open space for unknown futures, illustrated with Blake quotations and Goodhart's Law.
 
 ## Key Findings
 
-- Analysis of Through Active Inference...
+- The essay argues that alternating 2→3 analytical and 4→3 generative moves lets systems balance exploitation with exploration and optimization with open-ended creativity.
+- It concludes that cognitive wholeness emerges when explanation and anticipation co-operate in sustained dialogue across scales.
+- The author proposes that self-awareness of crossing the intra-activity threshold is when cognitive science becomes cognitive art.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

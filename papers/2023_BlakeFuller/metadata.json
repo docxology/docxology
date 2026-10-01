@@ -51,21 +51,41 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Visual and symbolic analysis",
-      "description": "Applied visual and symbolic analysis approach"
+      "name": "Slide-by-slide juxtaposition of Blake and Fuller images and texts",
+      "description": "Each slide places images and texts related to Blake alongside those related to Fuller to surface concordances, points of contact and provocative connections.",
+      "evidence": "Images and Texts related to Buckminster Fuller Images and Texts related to William Blake concordances points of contact areas of alignment provocative connections realms of ongoing exploration"
     },
     {
-      "name": "Cross-domain pattern mapping",
-      "description": "Applied cross-domain pattern mapping approach"
+      "name": "Thematic comparison across topics (symmetry, fourfold vision, faith, etc.)",
+      "description": "The deck is organized into themed pages such as Life & Times, Symmetries, Four-fold Vision, Negations & Contradictions, World-View and Faith.",
+      "evidence": "Life & Times ●Approaches & Practices ●Deep Generativity ●Full Page Creativity ●Children & Education ●Symmetries ●Four-fold Vision ●Negations & Contradictions ●Perception, Cognition, Action ●World-View ●Faith ●Closing Words"
+    },
+    {
+      "name": "Quotation of primary sources (Blake's plates; Fuller's Synergetics)",
+      "description": "Quotes primary texts such as Jerusalem and The Marriage of Heaven and Hell for Blake and numbered Synergetics passages for Fuller.",
+      "evidence": "Marriage of Heaven and Hell, Plate 3 Without Contraries is no progression. Attraction and Repulsion, Reason and Energy, Love and Hate, are necessary to Human existence."
     }
   ],
   "key_findings": [
-    "William Blake's prophetic works contain formal structures that prefigure modern systems thinking",
-    "Synergetic analysis reveals deep correspondences between poetic and mathematical modes of thought"
+    "The author concludes there are complex similarities, divergences and resonances between Blake and Fuller, open to multiple perspectives.",
+    "The deck proposes both used logical paradigms distinguishing Negation (not-A) from Contradiction (complement-to-A).",
+    "The deck suggests both find resonance with modern trends including 4EA cognitive science and Active Inference."
   ],
   "related_papers": [
     "2018_PPPiP",
     "2022_MirrorTest",
     "2024_CurioCards"
-  ]
+  ],
+  "key_findings_evidence": [
+    "There are complex and rewarding similarities, divergences, and resonances. ●There are multiple possible perspectives to take on this juxtaposition.",
+    "Used logical paradigms which distinguish between Negation (not-A) and Contradiction (complement-to-A)",
+    "Both find resonance with modern trends towards… ● Agential realism (Barad et al.) ● Embodied, Embedded, Enacted, Extended, Affective (4EA) cognitive science"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Slide deck presented for 52 Living Ideas (Jan 2023); the author frames it as a draft snapshot and early communication of an ongoing project, so findings are interpretive comparisons rather than results."
+  }
 }

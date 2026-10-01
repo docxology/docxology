@@ -61,22 +61,45 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Synthesis of common features of information systems from KM-type literature",
+      "description": "The authors draw on literature from information-focused disciplines such as knowledge management to compile an initial common set of NIM system features.",
+      "evidence": "we offer an initial common set of features of impactful information systems found in literature on information-focused disciplines, such as knowledge management"
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Exploratory domain studies in five fields sampled from coauthor experience",
+      "description": "Challenges and ad hoc solutions are examined in personal finance, ancestry research, hybrid cloud security, translational neuroscience and genomics.",
+      "evidence": "we explored an eclectic selection of fields sampled from the experience of the coauthors."
+    },
+    {
+      "name": "Cross-domain comparison of NIM features in the Discussion",
+      "description": "Each common feature (e.g. managing information gaps, situational awareness) is compared across the five domains to identify overlaps and new features.",
+      "evidence": "Here we review our initial insights about common NIM features and introduce 4 additional features of NIM that were revealed upon deep, field-specific consideration:"
     }
   ],
   "key_findings": [
-    "There are many areas of research defined by their interest in information dynamics related to facilitating organizational sensemaking, such as knowledge management, information management, and library science, and many more areas of research, disciplines, and even hobbies which are facing informatio",
-    "While all may be concerned with very similar challenges, lack of information exchange and common ontology between these areas may be causing silos, missed opportunities, and potentially even friction among areas..",
-    "In this paper, we address the need for synthesis and exchange of knowledge, tools, and approaches among various fields by proposing Narrative Information Management (NIM) as a unifying term and framework for the fundamental features and challenges of facilitating collective sensemaking.."
+    "The paper defines Narrative Information Management as the design, use, implementation and study of systems that manage information to facilitate narrative sensemaking.",
+    "Domain exploration surfaced four additional NIM features: communication, handling errors and inconsistency, managing trust signals, and social systems engineering and education.",
+    "Managing information gaps was central in all fields considered, and the defining element of ancestry research.",
+    "The authors recommend developing common interfaces, theory and data structures rather than a single common tool, since each community has unique needs.",
+    "They suggest NIM may be most useful as a bridge across disciplines, analogous to complexity theory, rather than as a new separate field."
   ],
   "related_papers": [
     "2020_EmergentTeams",
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Narrative Information Management: The design, use, implementation, and study of aspects and features of processes and systems which manage information in order to facilitate narrative sensemaking.",
+    "(1) facilitating communication, (2) handling of errors and inconsistency, (3) management of trust signals, and (4) social systems engineering and education.",
+    "The need to manage information gaps was central in all fields considered, indicating a degree of overlap between various NIM features.",
+    "Focus on development of common interfaces, common theory, and common data structures that help tools and communities communicate, rather than on singular, common tools.",
+    "NIM may instead be of most use if considered as an analog to complexity theory centered in the information sciences, existing as a nexus or bridge between many disciplines"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "review",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Conceptual/review paper proposing a framework; domain sections were authored by different coauthors (Friedman wrote the genomics section). No empirical data collection."
+  }
 }

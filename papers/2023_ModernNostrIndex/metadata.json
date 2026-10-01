@@ -45,16 +45,25 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Index cards as hashed Nostr notes (JSON to SHA256 ID)",
+      "description": "The notes sketch each index card as a JSON object (username, text, etc.) hashed into a 32-byte SHA256 identifier, with edges defined between card IDs.",
+      "evidence": "has JSON: Username, Text, etc — then hashes into 32 bytes, SHA256."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "LLM semantic embeddings attached to index cards",
+      "description": "Proposes using language-model embeddings, translations and summaries so cards act as semantic bridges between texts.",
+      "evidence": "Using semantic embeddings from LLM (and translations, summaries) to use index cards as contextual/semantic bridges."
+    },
+    {
+      "name": "Path analysis over composed index-card graphs",
+      "description": "Proposes analyzing paths through card graphs for simple features (length) and subtler ones (share of novel links).",
+      "evidence": "Paths can be analyzed for trivial features (e.g. overall length) or various subtle things (e.g. which proportion of links are novel reports)."
     }
   ],
   "key_findings": [
-    "Some concepts explored related to Knowledge Engineering, Nostr, Large Language Models, Complexity, and more.&nbsp;"
+    "The notes propose linking papers not only by citation edges but by syntactic bridges (keyword cards) and semantic bridges (embeddings).",
+    "The notes argue auto-generated flashcards pose less of an information-overload risk than auto-generated papers, since unused cards are simply ignored and useful ones composed.",
+    "The notes suggest review papers could follow the most popular paths through the card graph and novelty search the least traversed ones."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -62,5 +71,17 @@
     "2021_ModelingConflict"
   ],
   "artifact_doi": "10.5281/zenodo.8118156",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.8118156"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.8118156",
+  "key_findings_evidence": [
+    "Moving between the papers, not just with a citation edge. Could be with a Syntax side (e.g. bridging via a keyword Index Cards) and with a Semantic side (via the embeddings).",
+    "Don’t need to worry about auto-generated content with Flashcards. Because useless ones are simply not used. Useful ones are composed together",
+    "Review paper — most popular paths. • Novelty search — least traversed paths."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "other",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Three-page bullet-point meeting notes (dated 7/5/2023 per filename), not a formal paper; methods and findings are proposals/design ideas rather than tested results."
+  }
 }

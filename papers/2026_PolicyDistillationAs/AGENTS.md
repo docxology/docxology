@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Formal mapping of OPD roles onto active-inference variational objects, Bernoulli-Ising oracle with closed-form and recomputed mutual-information sweeps, pymdp T-maze rollout with sophisticated-inference planning
+- Identifies findings: The closed-form and independently recomputed mutual-information sweeps agree to machine precision (RMSE 2.1e-16 nats)., In the classroom toy, teacher belief entropy was 0.247 nats versus 0.347 nats for the student, with a mean reverse-KL distillation signal of 6.28 nats., In a four-state/two-action witness, teacher-forced train loss (0.333 nats) underestimated student-induced test loss (0.409 nats); on-policy correction reduced it to 0.096 nats.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

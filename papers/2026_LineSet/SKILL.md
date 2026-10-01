@@ -20,13 +20,23 @@ This work addresses topics in **Computational**: modularity, information hiding,
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Declarative set registry: four LineEntry records plus one shared token** — Declares the set (Red, Black, Golden, White Line) as data, each entry naming its question, job, and what it must not become.
+- **Five-stage reader with fixed-precedence set statuses** — Reads installed sibling packages through resolve, bind, collide, declare and status stages, returning one of four SET_-prefixed readings.
+- **Enum-member name collision check across sibling package roots** — Collects enum member names each line publishes at its package root and flags any name carried by more than one line, unless declared and disambiguated.
+- **Seven offline structural checks plus a self-application check** — Runs seven declaration-only checks and an eighth that applies the package's own collision check to a declaration including itself.
+- **Executed extensibility example appending a fifth colour at runtime** — Appends a hypothetical green_line entry without editing the package and runs the battery and reader on the extended declaration.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- On the review date the four packages yielded 81 line-and-name pairs spanning 80 distinct names, and the only shared name was the already-declared, disambiguated one.
+- The single shared name was OUTSIDE_SCOPE, carried by red_line and black_line.
+- Appending a fifth line whose package is not installed yielded SET_PARTIAL, which the author argues is the correct answer rather than a shortfall.
+- The author stresses that disjoint vocabularies are a necessary, not sufficient, condition: the check cannot detect conceptual overlap between instruments.
+- The paper states the set digest is a comparison handle only, not tamper evidence or a record of who changed what.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -52,5 +62,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21754243`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

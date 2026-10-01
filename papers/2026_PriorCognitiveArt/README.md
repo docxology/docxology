@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Tinbergen's four questions recast as a 2×2 grid of crossed axes** — Maps mechanism, function, ontogeny and phylogeny onto proximate/ultimate and static/developmental axes to type explanations of priors.
+- **Five-step protocol for typing 'why' questions about priors** — Applies a protocol per question: type the request, expose deferral, name the stop, state the ceiling, then render and validate.
+- **Three regress-termination families: pragmatic, selection, fixed-point** — Organizes responses to the hyperprior regress into pragmatic closure, selection closure and fixed-point termination, explicitly non-exhaustive.
+- **Source-owned deterministic diagrams, formal claims and glossary** — Renders diagrams, formal claims and a symbol glossary from recorded source inventories (quadrants, termination modes, modules, figure specs).
+- **One deterministic illustrative simulation trace over authored formal states** — Includes a single deterministic trace and explicitly no stochastic simulation, synthetic data, empirical estimates or benchmarks.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The author argues the regress is not forced by Tinbergen's framework but arises when an ontogenetic answer is asked to do the work of every quadrant.
+- The paper argues that what comes before the first prior is a stack of constraints (viability, regulation, co-homeostasis, development, niche) rather than a hidden meta-prior.
+- Niche construction is treated as a constraint on selection termination rather than as a fourth termination type.
+- The art claim is bounded: aesthetic practices arrange encounters with predictive priors, without proving art directly rewires priors.
+- The author states the formal supplement does not prove the thesis but makes it checkable against its own artifacts.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

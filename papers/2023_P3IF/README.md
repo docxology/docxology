@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> The Properties, Processes, and Perspectives Inter-Framework (P3IF) multiplexes interdisciplinary requirements frameworks to manage information risk and foster cognitive security. P3IF provides structured methods for integrating diverse analytical perspectives across security, policy, and organizational domains, with applications to health security and information risk management.
+> Requirements engineering frameworks have historically been developed in the context of cybersecurity and have tended to focus almost exclusively on the technical and operational aspects of data security. Now, however, frameworks are being stretched to support interdisciplinary and multiorganizational information systems, requirements, and risks, securing downstream processes such as data...
 
 ## Keywords
 
@@ -18,11 +18,20 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Snowball citation-tracking review of combinatorial requirements frameworks** — Starting from well-known frameworks (CIA triad, McCumber Cube, DoDAF), manual citation tracking identified antecedent and derived frameworks; 41 were included as of August 2023.
+- **Coda.io knowledge base and UI for framework collection** — Built a front-end UI and knowledge management system on the low-code Coda.io platform to store bibliographic, visual and textual aspects of each framework.
+- **Phylo-memetic lineage trees of framework clades** — Parent/child relationships from citation histories and direct references were arranged into phylogenetic-type trees grouping frameworks into seven context clades.
+- **Sorting framework dimensions into Properties, Processes, Perspectives** — Dimensions and attributes of the collected frameworks were categorized into three general categories that form the basis of the proposed P3IF.
 
 ## Key Findings
 
-- Analysis of P3IF provides structu...
+- All dimensions and attributes of the examined frameworks fit into one of three emergent categories: Properties, Processes, or Perspectives.
+- Derivative frameworks tend to be released as standalone replacements and are generally not backwards compatible.
+- The more expansive multi-factor frameworks were the most difficult to document due to inconsistent documentation, variable proliferation and visualization limits.
+- The paper proposes P3IF, a modular abstraction layer between existing frameworks that extends rather than replaces them.
+- The authors state the analysis is not an exhaustive or systematic meta-analysis but an initial snapshot of a sample of frameworks.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

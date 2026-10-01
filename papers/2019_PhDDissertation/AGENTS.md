@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Multi-year field observation of harvester ant colonies, Transcriptomic profiling of behavioral variation, Quantitative behavioral biology and statistics
-- Identifies findings: See paper
+- Extracts methods: RNA-seq of pooled forager brains from 6 P. barbatus colonies (Chapter 1), kallisto/sleuth expression analysis with Blast2GO annotation and Cytoscape coexpression, Oral dopamine administration with mass-spectrometry brain quantification
+- Identifies findings: Forager brains from different colonies varied significantly in biogenic amine titers and in expression of neurophysiological signaling pathways involved in foraging regulation., Raising forager brain dopamine increased foraging activity, while lowering brain dopamine decreased it., Foragers from colonies that reduce foraging in dry conditions lose water and motor coordination faster; hydrated foragers made more trips, especially as conditions got drier.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

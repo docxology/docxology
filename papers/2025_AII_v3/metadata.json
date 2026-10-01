@@ -182,21 +182,45 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Program coordination",
-      "description": "Applied program coordination approach"
+      "name": "Collaboratively edited living Coda document (v3 snapshot) by a named author team",
+      "description": "Snapshot of the Institute & Ecosystem living document, which authors edited with a full trace of edits; earlier versions date from 2023 and 2024.",
+      "evidence": "made various contributions to the (backend with full trace of edits). Authors Institute & Ecosystem writing document Last updated at the end of 2024."
     },
     {
-      "name": "Community governance design",
-      "description": "Applied community governance design approach"
+      "name": "Structure inherited from the 2023 paper and extended Sept-Nov 2024",
+      "description": "The document's sections derive from the 2023 paper and were expanded by contributors in late 2024.",
+      "evidence": "From that starting point, during September-November 2024, the made various contributions and additions to this living document."
+    },
+    {
+      "name": "Preparation and Measurement stages for project proposals and reporting",
+      "description": "Describes how Institute projects are proposed and reported, with Measurement form updates feeding the monthly newsletter.",
+      "evidence": "we structure project proposal and reporting at the Institute, according to"
     }
   ],
   "key_findings": [
-    "Third version of the Active Inference Institute overview, documenting continued organizational growth, expanded research programs, educational initiatives, and community engagement.",
-    "Analysis of Covers the institu..."
+    "Describes the Institute as a registered Delaware non-profit supporting education, research and ecosystem services, and a 501(c)(3) as of 2024.",
+    "Reports that the Institute's Discord server, its primary discussion and meeting venue, has over 1000 people.",
+    "Reports that the Institute had released over 500 videos to date.",
+    "Reports that RxInfer.jl Learning Group meetings in 2024 included over 20 active contributors.",
+    "Frames the Institute's approach as cultivating an 'open' ecosystem rather than a closed, laboratory-centric approach to Active Inference."
   ],
   "related_papers": [
     "2022_ActiveDiffusion",
     "2023_AII_v1",
     "2024_AII_v2"
-  ]
+  ],
+  "key_findings_evidence": [
+    "The Active Inference Institute is a registered non-profit organization (Delaware, USA) which identifies, establishes, scaffolds, and supports the sustainable implementation of:",
+    "Currently there are over 1000 people in the server, and we strive to keep it an accessible entry point for learning and applying Active Inference.",
+    "To date, we have released over 500 videos, all available",
+    "Over 2024, the meetings included over 20 active contributors with varying backgrounds and expertise levels in Julia programming and Bayesian modeling.",
+    "rather than take a closed system (laboratory-centric) approach alone, which might have relegated Active Inference to an isolated academic disciplinary silo, we recognized the benefits that accrue from an “open” approach"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "book/report",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Organizational report/living-document snapshot rather than a research paper; methods describe how the document and Institute processes are organized. PDF-from-web extraction separates hyperlink text from surrounding sentences, so many passages are fragmented."
+  }
 }

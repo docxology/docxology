@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: The &quot;mirror test&quot; has been used as a behavioral measure of mirror self-recognition for a variety of species.., In this article we apply a predictive processing interpretation to the results of the mirror test in order to offer a novel perspective with which to understand mirror self-recognition and self-directed behavior.., Furthermore, we hypothesize that a &ldquo;reflection prediction&rdquo;, upon which our predictive processing interpretation of the mirror test is built, may also offer a novel perspective to understand how humans locate themselves relative to a mirror, imitate others, and are self-aware from a socia
+- Extracts methods: Predictive processing reinterpretation of published mirror-test results, 'Reflection prediction' construct built on Apps and Tsakiris, Hypothetical error analysis compared against observed symptoms
+- Identifies findings: The authors propose mirror self-recognition results from sensory attenuation when a reflection is predicted, and mark-directed behavior is active inference to correct reflection prediction errors., They argue species that learn to ignore their reflection, not only those showing self-directed behavior, may be capable of mirror self-recognition., They argue the mirror test measures self-directed behavior rather than mirror self-recognition.
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Cat-in-environment thought scenario for a simulated agent, Pattern-scan and labeling procedure with object-type codes, Beacons table with confirmation and weight pulses
+- Identifies findings: Proposes classifying entities on a certainty spectrum, from predictable (walls, rocks) to highly dynamic social entities carrying their own prediction matrix., Introduces a self-social (OTSSA) label so identities can be represented and swapped into social-social simulations in place of another social creature., Notes that biologically objects may first be treated as social and then downgraded, but the sketch deliberately starts bottom-up for an optimized working agent.
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

@@ -18,11 +18,18 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Transcripts of ActInf Livestream #049.0–049.2 discussing Sakthivadivel's preprint** — Records three Active Inference Institute livestream discussions of the 2022 arXiv preprint, with the author Dalton Sakthivadivel joining 49.1 and 49.2.
+- **Background/context session (49.0) by facilitators before author sessions** — The 49.0 session by Friedman, Rahmjoo and Smékal gives background and a preliminary discussion rather than a review or synthesis.
+- **Section-by-section walk-through of the paper in 49.2** — In 49.2 the participants go through the paper's sections, building toward its equation 15 for Bayesian classical mechanics.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- Sakthivadivel distinguishes dynamics (observed trajectories) from mechanics (the laws generating those trajectories), arguing this is often conflated in the FEP literature.
+- Rahmjoo highlights as new results the derivation of classical physics from constrained maximum entropy and the reintroduction of supersymmetry to explain classical chaos.
+- Sakthivadivel explains that the path minimizing classical action is the mode (most likely path), so classical mechanics can be structured as a least-surprisal problem leading to equation 15.
+- Sakthivadivel describes path tracking as handling nonstationary systems by relating the FEP over paths to the principle of maximum caliber.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

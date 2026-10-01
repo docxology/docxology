@@ -43,5 +43,53 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-08-02T15:12:41Z"
+  "checked_at": "2026-08-02T15:12:41Z",
+  "methods": [
+    {
+      "name": "Versioned machine-readable registry of seven first-person refusals",
+      "description": "The author's seven red lines are recorded as a versioned registry that a proposed engagement is checked against via a strict intake gate.",
+      "evidence": "It records seven first-person refusals as a versioned, machine-readable registry and subjects a proposed engagement to a strict intake gate."
+    },
+    {
+      "name": "Nine-dimension evidence-gated ActionContext intake",
+      "description": "Each intake must carry a VERIFIED evidence record for nine dimensions (purpose, end use, affected parties, provenance, legal basis, etc.) before policy matching.",
+      "evidence": "ActionContext requires nine dimensions: purpose, end use, affected parties, data provenance, legal basis, human control, deployment, downstream transfer, and capability scope."
+    },
+    {
+      "name": "Adaptation of Turner's government AI red-line framework",
+      "description": "Turner's organization-to-government red line and oversight framework serves as mechanism source, adapted to one practitioner without importing its authority.",
+      "evidence": "Alex Turner’s A Red Line and Oversight Framework for Government AI Contracts is the principal comparative source for this project’s architecture"
+    },
+    {
+      "name": "Deterministic registry hashing and canary attestation",
+      "description": "Durability is implemented as hashing of canonical registry content and a canary that detects drift only against a prior copy held outside the writer's control.",
+      "evidence": "Durability becomes deterministic hashing and canary verification, while the successor rationale makes registry changes visible rather than forbidden."
+    },
+    {
+      "name": "Five-fixture outcome-coverage battery through the real evaluator",
+      "description": "A harness runs five ProposedAction fixtures, one per classification, through evaluate_action against the live registry at a fixed review date.",
+      "evidence": "the harness red_line.analysis.outcome_coverage.run_outcome_coverage runs a deterministic battery of five ProposedAction fixtures — one designed for each classification — through the real evaluate_action against the live registry"
+    }
+  ],
+  "key_findings": [
+    "Every intake is classified into one of five categories; missing, self-asserted, unverified, stale or contradicted context cannot produce COMPLIANT.",
+    "Degrading any one of the nine intake dimensions withdrew a compliant result in all 45 executed evaluations; an ALL-mode exemption stayed unreachable by a single token across 58 more.",
+    "All five classifications were reached by the fixture battery, but the fixtures are not evidence that any real engagement was reviewed, safe or lawful.",
+    "The author states decisive limitations: local evidence is not independent truth verification, lexical matching is not semantic understanding, and code is not enforcement.",
+    "The evaluator's visible boundary is a 34-word scope vocabulary, so OUTSIDE_SCOPE is a bounded registry statement rather than a safety claim."
+  ],
+  "key_findings_evidence": [
+    "Missing, self-asserted, unverified, stale, or contradicted context cannot produce COMPLIANT.",
+    "degrading any one of the nine intake dimensions withdraws a compliant result in all forty-five executed evaluations, and an ALL-mode exemption stays unreachable by a single declared token across fifty-eight more.",
+    "In the current registry all five of the five classifications are reached and every case lands on its intended outcome, with the evaluator’s stable reason codes recorded per case.",
+    "The decisive limitations follow: local evidence is not independent truth verification, lexical matching is not semantic understanding, and code is not enforcement.",
+    "Thirty-four words decide what this evaluator can see; two of them belong to more than one line."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Personal policy instrument with accompanying code; results are executed tests on constructed fixtures, not real-world validation. The paper states it is 'not yet externally attested publication'."
+  }
 }

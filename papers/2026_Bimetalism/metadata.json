@@ -42,20 +42,48 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Visual and symbolic analysis",
-      "description": "Applied visual and symbolic analysis approach"
+      "name": "Overlay of British/American bimetallic history with Blake's prophetic corpus",
+      "description": "Reads monetary events from the 1717 Mint ratio to the 1896 'Cross of Gold' alongside Blake's illuminated works as parallel narratives.",
+      "evidence": "This manuscript overlays the history of British and American bimetallism with the mythopoetic architecture of William Blake’s prophetic corpus"
     },
     {
-      "name": "Cross-domain pattern mapping",
-      "description": "Applied cross-domain pattern mapping approach"
+      "name": "Close reading of Blake's texts and plates against monetary acts",
+      "description": "Attends to Blake's specific textual attacks on gold, metallurgical imagery, and plate compositions while treating the 1797 and 1816 acts as 'topological fractures'.",
+      "evidence": "We attend to the minute particulars of Blake’s engagement—his specific textual attacks on gold, his metallurgical imagery, his precise plate compositions"
+    },
+    {
+      "name": "Velde border conditions for bimetallic circulation",
+      "description": "Uses Velde's inequality on world monetary demand shares to frame the 1816 Coinage Act's tokenization of silver as violating the conditions for concurrent circulation.",
+      "evidence": "The mathematical necessity of this collapse is formalized by Velde’s border conditions for bimetallism."
+    },
+    {
+      "name": "Active Inference expected free energy as an analogy for value",
+      "description": "Maps the pragmatic/epistemic split of expected free energy onto gold/silver to propose an 'epistemic bimetallism', drawing also on Sabine's CRR framework.",
+      "evidence": "Read alongside Blake’s monetary arc, that split suggests an epistemic bimetallism: a living intelligence must keep both moments in tension"
     }
   ],
   "key_findings": [
-    "A manuscript overlaying British and American bimetallism with William Blake's mythopoetic architecture, reading economic history through the lens of active inference and prophetic economics."
+    "The author reads Newton's 1717 Mint ratio (1:15.21) as an operationalization of 'Newton's sleep', a rigid prior that ignored evidence of silver's circulation.",
+    "The essay argues the 1816 Coinage Act erased the bimetallic tension by tokenizing silver rather than synthesizing the two metals.",
+    "It proposes epistemic bimetallism as a general norm for biological or institutional systems, avoiding both rigid 'Single Vision' and unconstrained scepticism.",
+    "The conclusion frames epistemic bimetallism as a refusal to let any single abstraction stand in for the full valuation of persons, rather than a policy prescription."
   ],
   "related_papers": [
     "2018_PPPiP",
     "2022_MirrorTest",
     "2023_BlakeFuller"
-  ]
+  ],
+  "key_findings_evidence": [
+    "identifying the 1717 Mint ratio (1:15.21) not merely as a failed economic policy but as the operationalization of “Newton’s sleep”—a cognitive pathology of pathologically rigid priors that crushed variable sensory evidence of silver’s circulation.",
+    "The structural bimetallic tension (Twofold Vision) was erased not by synthesizing gold and silver into a higher qualitative order of human flourishing, but by amputating the lunar element of silver entirely.",
+    "Epistemic bimetallism is therefore not a return to nineteenth-century coin ratios but a norm for any system, biological or institutional, that would avoid both the violence of Single Vision and the paralysis of unconstrained scepticism.",
+    "Epistemic bimetallism is therefore less a policy prescription than a refusal to let any one single abstraction—bullion weight, bank ledger, or executable token—stand in for the full fourfold valuation of persons in community."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Interpretive humanities essay (literary history, monetary history, and Active Inference analogy); no empirical analysis. Findings are the author's interpretive arguments. The √2 precision-ratio claim is attributed in the text to Sabine (2026), not derived here, so it is not listed as a finding."
+  }
 }

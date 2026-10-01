@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: While the underlying, fundamental principles of warfare have long remained unchanged, recent social and technological developments have necessitated new approaches to conflict management.., Specifically, the introduction of nuclear weapons and the maintenance of large military budgets during peacetime in the latter half of the 20th century have changed the risk calculus of conflict among state and non-state actors.., Consequently, the operating environment has changed..
+- Extracts methods: Complexity Science framing of counterinsurgency and team assembly, Case vignette of the 2008 Lashkar-e-Taiba attack on Mumbai, Synthesis of High Reliability Organization (HRO) literature
+- Identifies findings: Across the analyses reviewed, the authors identify superior information and OSINT exploitation for rapid planning and reorganization as the common explanation for the Mumbai attackers' success., The authors note the Indian government had the same information as the attackers but did not assemble specialists who could have used it., They introduce 'Complex Threat Surfaces' in place of 'attack surfaces' to stress integrated management of varied non-linear failure modes, including non-adversarial events.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

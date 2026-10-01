@@ -55,17 +55,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Six-channel boundary screen read under three QRF sector relabelings",
+      "description": "One b0–b5 bitstream is partitioned into separation-constrained, opacified and post-dual sector labelings to model QRF deployments.",
+      "evidence": "The central QRF move is to partition the same six channels in more than one way."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Equation registry mapping source qFEP/QRF equations to software artifacts",
+      "description": "Equations from Sandved-Smith et al. (2026) are mapped into a fourteen-row registry and instantiated as finite QRF and BMR surrogates.",
+      "evidence": "The project maps the paper’s equations into a fourteen-row registry, instantiates finite QRF and BMR surrogates,"
+    },
+    {
+      "name": "Bayesian model reduction sweep over prior precision and metacognitive access",
+      "description": "BMR is swept over separation-prior precision and metacognitive access, with an added sensitivity grid over observation noise.",
+      "evidence": "Bayesian model reduction is implemented as a sweep over prior precision and metacognitive access, extended with a sensitivity grid over observation noise."
+    },
+    {
+      "name": "pymdp active-inference simulations with profile-specific A, B, C, D arrays",
+      "description": "Uses inferactively-pymdp to run each QRF profile as an explicit generative model, recording posteriors, policies and seeded ensembles with null controls.",
+      "evidence": "The active-inference layer uses the inferactively-pymdp library [Heins et al., 2022] with profile-specific likelihood, transition, preference, and prior arrays"
+    },
+    {
+      "name": "Finite quantum-information and contextuality audits with controls",
+      "description": "Runs finite checks such as two-qubit separability, Bell and contextuality witnesses, open-system dynamics and seeded trajectories checked against exact solutions.",
+      "evidence": "spanning two-qubit separability and entanglement entropy, Bell and contextuality witnesses, thermodynamic and open-system dynamics, seeded quantum-trajectory sampling checked against exact solutions"
     }
   ],
   "key_findings": [
-    "<div>This project operationalizes the 2026 preprint \"There is no self-evidence: A physics of emptiness realisation\" as a source-anchored software artifact.",
-    "Its central claim is that a finite agent can use a boundary for prediction while never obtaining evidence that the boundary is ontologically real, and the software separates three local artifact roles"
+    "Within the finite ledger, the same bitstream supports different QRF partitions, so the partition organizes the model without being evidence for its ontology.",
+    "All admissible deployments preserve normalized boundary probability mass, while the perturbation control fails.",
+    "In the surrogate model, the separation prior is useful only through agency.",
+    "Bayesian model reduction prunes the separation prior at high metacognitive access, at the weakest credible precision.",
+    "The author explicitly does not claim that the software proves emptiness, removes a self, or realizes a physical quantum free-energy principle."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -74,5 +94,19 @@
   ],
   "related_software": [
     "docxology/realizing_emptiness"
-  ]
+  ],
+  "key_findings_evidence": [
+    "the same bitstream can support different QRF partitions, so the partition organizes the model without becoming evidence for the partition’s ontology.",
+    "fig. 5 shows that all admissible deployments preserve normalized boundary probability mass while the perturbation control fails",
+    "Under that license a separation prior earns its keep only through agency (fig. 7), then sheds it",
+    "Bayesian model reduction tracks the prior’s net value and prunes the prior at high metacognitive access, at the weakest credible precision (fig. 8, fig. 10).",
+    "The claim is not that the software proves emptiness, removes a self, or realizes a physical quantum free-energy principle."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Software operationalization of Sandved-Smith et al. (2026). All results are finite deterministic or seeded simulations; the paper says they are not empirical, neural, clinical or physical-qFEP evidence."
+  }
 }

@@ -20,13 +20,23 @@ This work addresses topics in **Entomology**: pheromone, ant foraging, computati
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Reanalysis of Dussutour et al. (2009) Pheidole megacephala Y-maze data** — Uses the published Y-maze branch-choice results (Experiments 1, 2 and 4) of Dussutour et al. as the empirical target; no new ant experiments were run.
+- **One-pheromone model with exponential decay and power-law amplification** — Models a single attractant pheromone that decays exponentially and is perceived through a concave power-law sensory amplification minus a noise level.
+- **Branch preference as a product of two sigmoid functions** — Choice probability is modeled as a product of logistic terms for the difference between branches and the overall signal robustness.
+- **Manual fitting and L-BFGS-B optimization in Python/SciPy** — Parameters were set by manual adjustment, then optimized with SciPy's bounded L-BFGS-B minimizing squared error against values read from the original figures.
+- **Simulation of the dynamic-environment food-switching experiment** — Simulated Experiment 4 with differing per-ant deposit rates on food vs no-food branches and total traffic around 50 ants per minute.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The main reported observations of Dussutour et al. can be explained by a one-pheromone model.
+- A one-pheromone model accounts for equal initial E+F preference across conditions followed by divergence after about 15 minutes.
+- The one-pheromone model also accounts for preference flipping in the dynamic-environment experiment, and one optimized parameter set fits both figures reasonably.
+- The authors conclude that two pheromones are plausible but unnecessary, so the original study is not dispositive evidence for a two-pheromone model.
+- The model predicts that with food on both branches traffic equalizes without the oscillation predicted by the two-pheromone model.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1016/j.cogsys.2023.02.005`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

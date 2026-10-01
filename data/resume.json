@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T16:43:54Z",
+  "generated_at": "2026-10-01T18:15:42Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "df9eb9b4734e2dcf77b6fc4e79d866df12ac398b967d2ba0ec2017b7fd35f605",
+      "sha256": "bef40a3aaba7beb7b4bfbc14fde06c8fe00ecd17aa869c25f02e2ddb7732b1d6",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 177216,
-          "sha256": "48b41035c709cce911292a4521c284601bb979a793bf75693e2065f1adc38058"
+          "bytes": 177913,
+          "sha256": "5f08c9332ff459ea433e57705e8e0ec97fa1f0332953944b1d06099fe81ddf71"
         },
         {
           "path": "data/software.json",
           "bytes": 78699,
-          "sha256": "b1298f3b1a838c317b16c3888740d0dcbb87fc59e96d96e3bc950e071539d4f5"
+          "sha256": "086a024c008081361fbd420ba8cda397408fa7e8ffeba52ae729d21743f2f30b"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 12976,
-          "sha256": "e0de86e143d05cc620b96a4c8244ddc0bc65d522bf5eab689f40c8de17b19930"
+          "sha256": "0280de3b35468eb9509db13a912cd5669edfdbb7ebd233e4a05869ff32c573f5"
         },
         {
           "path": "data/github-repositories.json",
@@ -3039,7 +3039,10 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2025_ConsciousnessAnts/full_text.md",
-      "authors": []
+      "authors": [
+        "Iennaco, Maria Luiza",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 29,
@@ -3457,7 +3460,10 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2024_CurioCards/full_text.md",
-      "authors": []
+      "authors": [
+        "Friedman, D. A.",
+        "Ripley, O. C."
+      ]
     },
     {
       "num": 45,
@@ -3912,12 +3918,12 @@
       "doi": "10.1016/j.plrev.2023.06.002",
       "docs_path": "papers/2023_ToComment/",
       "has_paper_folder": true,
-      "has_full_text": true,
-      "has_images": true,
+      "has_full_text": false,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_ToComment/full_text.md",
+      "full_text_url": "",
       "authors": [
         "Tickles, Dean",
         "Friedman, Daniel"
@@ -4139,7 +4145,11 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2022_InformationCommons/full_text.md",
-      "authors": []
+      "authors": [
+        "David, Scott",
+        "Cordes, R.J.",
+        "Friedman, Daniel A."
+      ]
     },
     {
       "num": 72,
@@ -4332,7 +4342,10 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2021_NarrativeEcosystems/full_text.md",
-      "authors": []
+      "authors": [
+        "Cordes, Richard J.",
+        "Friedman, Daniel A."
+      ]
     },
     {
       "num": 80,
@@ -4574,7 +4587,10 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2020_GreatPreset/full_text.md",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel A.",
+        "Cordes, Richard J."
+      ]
     },
     {
       "num": 90,
@@ -4670,7 +4686,9 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2019_PhDDissertation/full_text.md",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 94,
@@ -4836,12 +4854,12 @@
       "doi": "10.1016/j.isci.2018.09.001",
       "docs_path": "papers/2018_DopamineForaging/",
       "has_paper_folder": true,
-      "has_full_text": true,
-      "has_images": true,
+      "has_full_text": false,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2018_DopamineForaging/full_text.md",
+      "full_text_url": "",
       "authors": [
         "Friedman, Daniel A.",
         "Pilko, Anna",
@@ -6920,7 +6938,7 @@
       "docs_path": "papers/2026_TemplatePitchDeck/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -7520,12 +7538,12 @@
       "doi": "10.5281/zenodo.22134545",
       "docs_path": "papers/2026_CognitiveIntegrityFramework/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_CognitiveIntegrityFramework/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7543,12 +7561,12 @@
       "doi": "10.5281/zenodo.22134547",
       "docs_path": "papers/2026_CognitiveIntegrityFramework2/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_CognitiveIntegrityFramework2/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7589,12 +7607,12 @@
       "doi": "10.5281/zenodo.22663906",
       "docs_path": "papers/2026_Skillarum/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_Skillarum/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7612,12 +7630,12 @@
       "doi": "10.5281/zenodo.22712650",
       "docs_path": "papers/2026_FractiSkills/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_FractiSkills/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7635,12 +7653,12 @@
       "doi": "10.5281/zenodo.22754351",
       "docs_path": "papers/2026_AgenticSecurityOperating/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_AgenticSecurityOperating/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7658,12 +7676,12 @@
       "doi": "10.5281/zenodo.22816187",
       "docs_path": "papers/2026_JevPractice/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_JevPractice/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7681,12 +7699,12 @@
       "doi": "10.5281/zenodo.22833491",
       "docs_path": "papers/2026_GreenLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_GreenLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7704,12 +7722,12 @@
       "doi": "10.5281/zenodo.22833489",
       "docs_path": "papers/2026_BlueLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_BlueLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7727,12 +7745,12 @@
       "doi": "10.5281/zenodo.22833487",
       "docs_path": "papers/2026_VioletLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_VioletLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7750,12 +7768,12 @@
       "doi": "10.5281/zenodo.22833485",
       "docs_path": "papers/2026_SilverLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_SilverLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -9669,7 +9687,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-10-01T16:43:52+00:00",
+      "checked_at": "2026-10-01T18:15:40+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9684,7 +9702,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-10-01T16:43:52+00:00",
+      "checked_at": "2026-10-01T18:15:40+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

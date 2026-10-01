@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Content-hashed registration freeze plus completeness validation, Seeded synthetic two-group dataset (n = 24 per group), Two-sided label-permutation test with 2000 shuffles and add-one correction
+- Identifies findings: On the synthetic data the registered test gives an observed mean difference of 1.003 and a two-sided permutation p-value of 0.0005, with 0 of 2000 shuffles at least as extreme., With both documented deviations, the review packet stays valid, keeps primary_score as the only confirmatory outcome, and reports an integrity score of 0.9., The author states that the result says nothing about any real-world phenomenon, because the data are synthetic and the effect is injected by construction.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,5 +37,5 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |

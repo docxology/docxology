@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Single config.yaml source of truth for book structure, Tested Python backbone (textbook.models) and deterministic figures, Pandoc + pandoc-crossref rendering pipeline
+- Identifies findings: The book is explicitly a scaffold rather than a finished work: every structural element is present and author-specific passages are marked stubs., It provides twelve chapter shells across four parts, each with a matching lab and question bank., Claims building the book reproduces byte-identical figures and numbers, since nothing in the prose is computed by hand.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

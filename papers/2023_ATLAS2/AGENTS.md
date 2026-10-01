@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Alpha COGSEC ATLAS prototype built on Coda.io (2023), Object-class specification: Entity, Pattern, iQuery, Attribute, Prompt Interface, Question Oriented Design via iQuery routers and pattern QKits
+- Identifies findings: The prototype work revealed that numerous communities maintain pattern languages with limited interoperability., Combining parent-child pattern relationships with question lists (QKits) yields a dynamic type system in which objects acquire implied Patterns through requests for information., The prototype integrated several dozen pattern collections into over 1,000 networked patterns.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

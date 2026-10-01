@@ -54,21 +54,40 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Joint public comment to NTIA docket NTIA-2023-0005-0001",
+      "description": "Four organizations (IRSIRI, AII, PFH, COGSEC) submitted a policy comment organized as background/basis followed by recommendations.",
+      "evidence": "This submission is organized into two sections: (1) background information and basis, and (2) clear recommendations."
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "BOLTS (business, operations, legal, technical, social) framing",
+      "description": "The authors frame AI use-cases and risks across business, operations, legal, technical and social contexts drawing on their combined backgrounds.",
+      "evidence": "allows for a unique, synthesized perspective on this topic with consideration for business, operations, legal, technical, and social (BOLTS) use-cases and risks."
     }
   ],
   "key_findings": [
-    "Comments Submitted by University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Active Inference Institute (AII), Pivot for Humanity (PFH), and Cognitive Security and Education Forum (COGSEC)  to the National Telecommunications and Information Administrat",
-    "NTIA-2023-0005-0001.."
+    "The authors argue blanket regulation and ethical frameworks for AI as a whole are inappropriate and likely to generate negative externalities and new conflicts.",
+    "They argue sectoral standards (e.g. 'AI in medicine') built on existing licensure and duties of care are more practical than standards for AI as a whole.",
+    "They propose HIPPO, a no-fault mutual self-insurance structure with strict liability, a pooled reserve and mass contract components.",
+    "They call for data 'meta-standards' covering stable external reference to data and abstract entities, verified clearinghouses/data trusts, and annotation affordances.",
+    "They recommend NTIA act as facilitating and convening authority for professionalization, data standardization/stable reference, and insurance-like structures."
   ],
   "related_papers": [
     "2020_EmergentTeams",
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
-  ]
+  ],
+  "key_findings_evidence": [
+    "blanket regulation of and ethical frameworks for the broad range of AI technologies are inappropriate and likely to generate negative externalities and new conflicts",
+    "It is far more practical, productive, and safe to pursue the development of standards for safety and efficacy, discrimination and harms reduction, explainability, accountability, and fallbacks to human alternatives for “AI in medicine” (as a sectoral example) than for “AI” as a whole.",
+    "Forthcoming proposals from several contributors to this work consider the use of a no-fault mutual self-insurance structure referred to as a Harmful Intelligence People Protection Organization (HIPPO) for addressing this issue.",
+    "call for facilitation of the development of “meta-standards”, which focus on (i) stable external reference to both data and abstract entities",
+    "is uniquely situated to act as a facilitating and convening authority in relation to the (i) professionalization, (ii) data standardization and stable data reference, and (iii) related legal and insurance structures discussed above."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "commentary/policy",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Policy comment; no empirical methods. Findings are the submitting organizations' arguments and recommendations."
+  }
 }

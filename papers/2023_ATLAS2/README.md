@@ -18,11 +18,20 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Alpha COGSEC ATLAS prototype built on Coda.io (2023)** — A first digital ATLAS prototype applied to cognitive-security vulnerabilities and exploits, built on a low-code platform, informed the specification.
+- **Object-class specification: Entity, Pattern, iQuery, Attribute, Prompt Interface** — Defines core ATLAS components with properties and methods, sufficient for digital or paper-and-pencil implementation.
+- **Question Oriented Design via iQuery routers and pattern QKits** — Structured queries route answers to attributes and assign implied Patterns, which in turn attach new question kits (dynamic typing).
+- **IXE and VIE designations for interoperating ATLAS instances** — Defines Information Exchange Environments and Verified Information Exchange Environments with quality assurance and enforcement criteria.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The prototype work revealed that numerous communities maintain pattern languages with limited interoperability.
+- Combining parent-child pattern relationships with question lists (QKits) yields a dynamic type system in which objects acquire implied Patterns through requests for information.
+- The prototype integrated several dozen pattern collections into over 1,000 networked patterns.
+- The design treats questions, missing information, and disagreement over information as information in their own right.
+- The authors expect knowledge-base growth to follow a sigmoid rather than exponential curve as iQueries increasingly network existing objects.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

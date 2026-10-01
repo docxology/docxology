@@ -61,17 +61,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Flat ZIP layout: manifest.json, one encrypted member per track, optional proof",
+      "description": "Defines the container as a ZIP archive with a typed manifest, per-track .ento members and an optional hash-chain proof file.",
+      "evidence": "Concretely, an ENTO file is a ZIP archive holding a single manifest.json, one encrypted tracks/{id}.ento member per track, and an optional proof/chain.json."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Per-track AES-256-GCM envelopes with HKDF-derived keys",
+      "description": "Each track is sealed with authenticated encryption under a fixed nonce||tag||ciphertext header, specified in a Kaitai Struct file.",
+      "evidence": "Per-track authenticated envelope — Fixed header (nonce || tag || ciphertext) with HKDF-derived keys"
+    },
+    {
+      "name": "Four graded observability levels for export-time manifest redaction",
+      "description": "Observability levels 0–3 control which manifest metadata a recipient sees, without re-encrypting the track payloads.",
+      "evidence": "Graded export — observability levels redact manifests without re-encrypting payloads (sec. 5)."
+    },
+    {
+      "name": "Associated-data binding and PADMÉ length padding in the default profile",
+      "description": "The 0.4.0 default binds associated data and pads ciphertext members to PADMÉ buckets to coarsen the length channel.",
+      "evidence": "The default profile includes associated-data binding [McGrew, 2008] and PADMÉ length padding [Nikitin et al., 2019], bounding the on-disk ciphertext member-size channel to a coarse bucket."
+    },
+    {
+      "name": "Scripted benchmark: 150 repetitions over observability levels on fixture tracks",
+      "description": "Benchmarks on committed EEG, VCF and spectrogram fixtures plus a synthetic throughput track measure throughput, latency, expansion and tamper detection.",
+      "evidence": "This configuration runs 150 repetitions across observability levels 0,1,2,3."
     }
   ],
   "key_findings": [
-    "<p><strong>ENTO</strong> (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts &mdash; time series, genomics slices, s",
-    "Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADM&Eacute; length padding."
+    "Tamper detection succeeded on all 2400 benchmark rows (rate 1.0).",
+    "Mean pack throughput was 78.9296 MiB/s on the medium-track condition at observability level 3 (n = 150, CV 15.3%); the paper makes no superiority claim.",
+    "Ciphertext expansion on fixture tracks was an exact, zero-variance 1.7113.",
+    "Length is not hidden exactly: non-sealed levels disclose byte_length in the manifest, and sealed export still reveals the PADMÉ bucket.",
+    "Concludes that a flat ZIP container can carry typed multimodal tracks, authenticated encryption, graded observability and proof export without becoming a repository or hosted service."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -80,5 +100,19 @@
   ],
   "related_software": [
     "docxology/entofile"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Tamper detection succeeded on 2400 benchmark rows (rate 1.0; validation status pass).",
+    "mean pack throughput 78.9296 MiB/s on the medium-track condition at observability level 3 (n = 150, CV 15.3%;",
+    "an exact, zero-variance ciphertext expansion of 1.7113 on fixture tracks",
+    "Length is never hidden exactly: at non-sealed observability levels the manifest’s cleartext byte_length discloses it directly,",
+    "ENTO demonstrates a narrow but useful point: a flat ZIP container [zip, 2024] can carry typed multimodal tracks, authen- ticated encryption on format 0.4.0, graded observability, and proof export"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Format specification plus reference implementation; benchmark inputs are deterministic fixtures and a synthetic stress track, which the paper says are reproducibility inputs, not field-collected research observations."
+  }
 }

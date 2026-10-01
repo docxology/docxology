@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Analysis of We prov...
+- Extracts methods: Toulmin claim-evidence-warrant analysis of individual image memes, DRE3 three-tier model: Instrumental, Rhetorical, and Hidden layers, Ecological concepts transposed to memetic claims
+- Identifies findings: The authors argue that image memes function as quasi-arguments whose truncated structure and visual boundary insulate them from counter-arguments., In their Toulmin analysis, the Bush/9/11 template meme claims the Ohio derailment was a government conspiracy, relying on an audience-supplied 9/11 'inside-job' warrant., DRE3 is presented as filling a gap by adding an intermediate rhetorical-semantic layer between data collection and inference of hidden public narratives.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

@@ -27,17 +27,32 @@
   ],
   "methods": [
     {
-      "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays approach"
+      "name": "Social anatomy / social physiology analogy to metazoan bodies",
+      "description": "Frames the colony via the social anatomy vs social physiology distinction, comparing specialized nestmates to organs and signaling to physiology.",
+      "evidence": "Social anatomy is analogous to specialized anatomy (e.g., organs, tis- sues) in a metazoan body, while social physiology plays the analogous role to organismal physiology in a metazoan body."
     },
     {
-      "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis approach"
+      "name": "Two-kind trait classification: nestmate-measurable vs collective colony traits",
+      "description": "Distinguishes traits measurable in one nestmate (e.g. head width) from collective outcomes (e.g. nest architecture) to organize case studies.",
+      "evidence": "There are broadly two kinds of phenotypes (measurable traits or characteristics) of eusocial insects."
+    },
+    {
+      "name": "Review of functional genomic case studies of colony-level regulation",
+      "description": "Surveys case studies where physiological and functional genomic work clarified colony-level regulation of worker and queen traits.",
+      "evidence": "highlighting ex- amples where physiological and functional genomic studies have elu- cidated mechanistic details about colony traits."
+    },
+    {
+      "name": "Formulation of testable hypotheses (glands, signaling, regulatory networks)",
+      "description": "Proposes hypotheses for glands, signaling pathways, and gene regulatory networks, to be tested with phylogenetic comparative methods.",
+      "evidence": "We stress that all hypotheses should be evaluated empirically using rigorous phylogenetic comparative methodology"
     }
   ],
   "key_findings": [
-    "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals.",
-    "Analysis of We examine how this..."
+    "The authors argue the Reproductive Groundplan / toolkit idea is true to a degree but insufficient as a complete explanation for evolution of superorganismal complexity.",
+    "They hypothesize that eusocial species have a larger cumulative number of exocrine glands across nestmate classes than solitary insects, with more complex secretions.",
+    "They hypothesize that direct hormone transfer via trophallaxis, as found in carpenter ants, will prove commonplace in eusocial clades.",
+    "They hypothesize that novel gene regulatory networks will form from the decoupling of otherwise conserved pathways and traits in the colony context.",
+    "They caution that Drosophila-derived GO analysis in eusocial insects will ignore taxonomically restricted genes and overstate orthologous genes."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -46,5 +61,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1016/j.yhbeh.2020.104757",
-  "doi_url": "https://doi.org/10.1016/j.yhbeh.2020.104757"
+  "doi_url": "https://doi.org/10.1016/j.yhbeh.2020.104757",
+  "key_findings_evidence": [
+    "explain why we think this idea is certainly true to some degree, but insuﬃcient as a general and complete explanation for the evolution of",
+    "cumulative number of exocrine glands in all classes of nestmates in eusocial species will be larger when compared to solitary insects",
+    "showing direct transfer of hormones via trophallaxis, will be found to be commonplace in eusocial clades",
+    "We hypothesize that novel gene regulatory networks will be formed from this decoupling of otherwise conserved pathways and traits.",
+    "will systematically ignore the role of taxonomically re- stricted genes (Warner et al., 2019a), overstate the role of orthologous genes"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "review",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Review article (Hormones and Behavior special issue). Findings are the authors' arguments and hypotheses, not new data."
+  }
 }

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Transcripts of ActInf Livestream #049.0–049.2 discussing Sakthivadivel's preprint, Background/context session (49.0) by facilitators before author sessions, Section-by-section walk-through of the paper in 49.2
+- Identifies findings: Sakthivadivel distinguishes dynamics (observed trajectories) from mechanics (the laws generating those trajectories), arguing this is often conflated in the FEP literature., Rahmjoo highlights as new results the derivation of classical physics from constrained maximum entropy and the reintroduction of supersymmetry to explain classical chaos., Sakthivadivel explains that the path minimizing classical action is the mode (most likely path), so classical mechanics can be structured as a least-surprisal problem leading to equation 15.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

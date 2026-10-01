@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Single-forager brain RNA-seq from nine field colonies of P. barbatus, Expression-trait correlations with humidity sensitivity and brain DA:5HT, PCA and linear discriminant analysis of transcriptomes by colony
+- Identifies findings: Forager brain gene expression patterns were more similar among nestmates than non-nestmates, with substantial variability within colonies as well., A fraction of colony expression differences were associated with humidity sensitivity of foraging and forager brain DA:5HT ratio., Neurotransmitter receptors as a category were significantly correlated in expression with colony sensitivity of foraging activity to humidity.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

@@ -21,19 +21,21 @@ This work addresses topics in **🔍**: lean-4, formal-verification, millennium-
 
 Primary methods and techniques applied in this work:
 
-- Independent kernel reproduction (pinned toolchain, mathlib manifest revision)
-- Statement-level binder parsing vs official Clay statements
-- Meta-audit of the package's own evidence artifacts
-- Three-lane hostile red-team pass on the audit before publication
+- **Independent kernel reproduction under the pinned Lean 4/mathlib toolchain** — Rebuilt the MillenniumLean package with the exact pinned Lean toolchain and mathlib revision and re-ran its axiom report to check its kernel-hygiene claims.
+- **Statement-level binder parsing compared against official Clay statements** — Parsed each claimed final theorem with a binder extractor and classified it against the official Clay problem statements as conditional, definition-only, or off-topic.
+- **Script-checked, line-anchored quotation of the package source** — Verified all line-anchored quotations in the fourteen finding reports against the extracted package bytes by script, and disclosed an earlier failed draft.
+- **Test suite asserting audit facts on real package bytes** — Used fifteen test files that assert audit facts against the actual package bytes without mocks.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Kernel claims are TRUE and reproduce byte-for-byte - and evidentially void
-- Final theorems are conditionals, defs, or tautologies; no Clay content in any type
-- The universalization tower proves only 0 < n + 1 (Tower.lean:11)
-- 259/259 quoted lines byte-verified; no kernel output disputed
+- The package's kernel claims hold and reproduce exactly: clean build, zero live sorry, zero project axioms, and only standard axiom footprints.
+- The claimed final theorems are evidentially void: conditional implications with unproved premises, definitions of the open statements, or true theorems about unrelated simple objects.
+- The 'universalization tower' certifying Hodge, BSD and Navier-Stokes proves only that 0 < n + 1 for all naturals.
+- Verdict: none of the six Clay problems is resolved; the audit disputes no kernel output, only what those outputs are claimed to demonstrate.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Two-Layer Architecture: 12 shared infrastructure subpackages + standalone projects, Eight-stage build pipeline from environment setup to LLM review, Zero-Mock testing policy with 90%/60% coverage gates
+- Identifies findings: All three exemplar projects (39, 505 and 65 tests) completed the pipeline, a reported 100% success rate with zero mock violations., Total pipeline duration across the three projects was ~125s on Apple M-series hardware, ~42s per project on average., The infrastructure suite of ~3,083 tests reached 83%+ coverage against a 60% threshold, with zero mock violations.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

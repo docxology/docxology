@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Digital humanities corpus construction, Evidence-ledger provenance tracking, Rights-bounded release workflow
-- Identifies findings: See paper
+- Extracts methods: 7-phase DAG pipeline (blake) from discovery to reports, Versioned canonical target ledger of 104 work-level Blake targets, Tiered source registry with the William Blake Archive as primary authority
+- Identifies findings: The saved run represents 102 of 104 ledger targets (98.1%) but fully meets the required text/image evidence profile for only 90 (86.5%); 12 are partial and 2 missing., The text-bearing subset contains 156 works and 216878 words, and joint text-image diagnostics are available for 33 works., The ontology module produced a work-theme graph of 356 nodes and 297 edges, including 16 theme nodes.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

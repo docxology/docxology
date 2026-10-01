@@ -32,16 +32,26 @@
   ],
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Stigmergic-cognition lens: sematectonic stigmergy vs stigmergic markers",
+      "description": "Frames online sensemaking using the distinction between content-altering sematectonic stigmergy and signalling stigmergic markers such as likes, annotations and links.",
+      "evidence": "sematectonic stigmergy, which directly alters the environment state (in the digital case: creating new content, such as publishing a blog post), and stigmergic markers, which do not directly modify content, but rather serve as signalling cues"
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Three-element architecture for a maker-centered ecology",
+      "description": "Specifies the proposed ecosystem as annotation tools, self-sovereign storage, and content discovery services, contrasted with a platform-centric loop (Fig. 1).",
+      "evidence": "We envision decentralized, maker-centered ecologies, comprised of three main architectural elements (see also Fig. 1):"
+    },
+    {
+      "name": "Comparison with the Solid ecosystem and dokieli annotation client",
+      "description": "Positions the proposal against Solid and dokieli as the closest existing decentralization efforts and notes their limitations.",
+      "evidence": "While Solid and dokieli are inspiring initial steps, they are limited with regard to content discovery services or social incentives."
     }
   ],
   "key_findings": [
-    "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control thr"
+    "The authors argue that centralized platforms are a main source of epistemic pollution and that healthier environments require redesigning how attention is collectively governed.",
+    "They propose Open Source Attention, a framework for a decentralized ecosystem for creating, storing and querying stigmergic markers as digital traces of attention.",
+    "OSA aims to 'free' stigmergic markers starting from basic hypertext primitives: likes, bi-directional links, span highlighting, tags/bookmarks, and textual annotation.",
+    "The authors suggest existing personal knowledge management tools could be bootstrapped toward collective knowledge management via interoperable protocols and storage for stigmergic primitives."
   ],
   "related_papers": [
     "2020_EmergentTeams",
@@ -50,5 +60,18 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.48550/arXiv.2205.06345",
-  "doi_url": "https://doi.org/10.48550/arXiv.2205.06345"
+  "doi_url": "https://doi.org/10.48550/arXiv.2205.06345",
+  "key_findings_evidence": [
+    "We argue that centralized platforms are a main source of epistemic pollution, and that healthier environments require redesigning how we collectively govern attention.",
+    "we propose Open Source Attention, a socio-technical framework for “freeing” human attention from control by platforms, through a decentralized eco-system for creating, storing and querying stigmergic markers; the digital traces of human attention.",
+    "OSA is a movement to “free” stigmergic markers, starting from basic hypertext primitives: emotional valence (e.g., likes), bi-directional links, span highlighting, semantic categorization (tags, bookmarks), and textual annotation.",
+    "existing PKM growth can be bootstrapped for CKM by introducing interoperable protocols and storage for stigmergic primitives (e.g., links, tags)."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "commentary/policy",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Short (5-page) position paper / call to action; no empirical data or evaluation."
+  }
 }

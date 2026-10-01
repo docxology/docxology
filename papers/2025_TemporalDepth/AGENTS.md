@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Framework combining FEP, nonlinear dynamics, clinical and neurobiology views, Self modelled as a hierarchical component of the organism's generative model, Attractor-landscape and phase-transition description of Self regimes
+- Identifies findings: The authors propose that a substantial change in 'temporal depth' can be a common, causal factor in dissociative episodes of any etiology., Voluntary contractions of temporal depth (flow, meditation) are framed as healthy, while involuntary collapses are pathological and may indicate memory-system dysfunction., Clinically reported emotional flattening is mapped to top-down lowering of precision on affective prediction errors between the Core Self and peripheral Self.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

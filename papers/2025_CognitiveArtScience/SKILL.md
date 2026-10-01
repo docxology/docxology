@@ -20,13 +20,18 @@ This work addresses topics in **Art & Synergetics**: cognitive art-science, aest
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Four-fold firstness-to-fourthness conceptual schema** — Frames procedural craft, conceptual articulation, adaptive intelligence, and the observing niche as firstness through fourthness to relate cognitive science and art.
+- **Contrast of analytical 2→3 and generative 4→3 moves** — Distinguishes moves that compress past data into predictive structure from moves that open space for unknown futures, illustrated with Blake quotations and Goodhart's Law.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Analysis of Through Active Inference...
+- The essay argues that alternating 2→3 analytical and 4→3 generative moves lets systems balance exploitation with exploration and optimization with open-ended creativity.
+- It concludes that cognitive wholeness emerges when explanation and anticipation co-operate in sustained dialogue across scales.
+- The author proposes that self-awareness of crossing the intra-activity threshold is when cognitive science becomes cognitive art.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +59,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.16740438`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

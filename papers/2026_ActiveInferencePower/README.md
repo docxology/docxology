@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Power estimated as an operating characteristic of an investigator-declared design** — Defines power over replications of a declared model/process/setting/policy design, scoring traces against evaluator-only hidden truth.
+- **Seeded Monte Carlo comparison of 9 FWER/FDR correction procedures** — Compares Bonferroni, Šidák, Holm, Hochberg, BH, BY, Storey, adaptive BH and weighted BH on a seeded two-groups design with MC SE bands.
+- **Dependence-regime stress grid for BH and BY** — Evaluates BH and BY FDR and power under negative equicorrelation, independence, positive-factor and block covariance regimes.
+- **Discrete-state active-inference agent: posterior threshold vs BH on calibrated p-values** — Runs identical streams through a posterior-threshold decision and a BH-calibrated evidence rule under strong and weak evidence regimes.
+- **Action-in-the-loop policies with sensing reliability, cost and stopping** — Compares fixed-horizon, posterior-cutoff, information-gain, cost-aware, posterior-sampling and e-process stopping policies in a synthetic action loop.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- In the configured design, FWER-oriented procedures reached power 0.315–0.321 while FDR-oriented procedures reached 0.430–0.749, framed as the expected trade-off, not dominance.
+- Storey's paired power gain over BH was about 0.073, which the paper stresses is an operating-characteristic comparison, not a validity certificate.
+- Under weak evidence the posterior-threshold policy had FDR 0.153 and FWER 0.366, while the calibrated BH policy made no rejections, illustrating a calibration gap.
+- Across the dependence grid, BH estimates stayed within the finite-simulation band and BY stayed more conservative; the paper states this is not a new PRDS proof.
+- The paper concludes power numbers should not be carried into a new design; adaptive actions change data path, cost and evidence contract together.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

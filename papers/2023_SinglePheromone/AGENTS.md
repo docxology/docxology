@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Reanalysis of Dussutour et al. (2009) Pheidole megacephala Y-maze data, One-pheromone model with exponential decay and power-law amplification, Branch preference as a product of two sigmoid functions
+- Identifies findings: The main reported observations of Dussutour et al. can be explained by a one-pheromone model., A one-pheromone model accounts for equal initial E+F preference across conditions followed by divergence after about 15 minutes., The one-pheromone model also accounts for preference flipping in the dynamic-environment experiment, and one optimized parameter set fits both figures reasonably.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

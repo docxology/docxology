@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Independent kernel reproduction (pinned toolchain, mathlib manifest revision), Statement-level binder parsing vs official Clay statements, Meta-audit of the package's own evidence artifacts
-- Identifies findings: Kernel claims are TRUE and reproduce byte-for-byte - and evidentially void, Final theorems are conditionals, defs, or tautologies; no Clay content in any type, The universalization tower proves only 0 < n + 1 (Tower.lean:11)
+- Extracts methods: Independent kernel reproduction under the pinned Lean 4/mathlib toolchain, Statement-level binder parsing compared against official Clay statements, Script-checked, line-anchored quotation of the package source
+- Identifies findings: The package's kernel claims hold and reproduce exactly: clean build, zero live sorry, zero project axioms, and only standard axiom footprints., The claimed final theorems are evidentially void: conditional implications with unproved premises, definitions of the open statements, or true theorems about unrelated simple objects., The 'universalization tower' certifying Hodge, BSD and Navier-Stokes proves only that 0 < n + 1 for all naturals.
 - Maps contributions to 🔍 literature
 
 ### 🎓 EDUCATOR

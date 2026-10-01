@@ -53,5 +53,53 @@
   ],
   "github_repo": "docxology/agentic_os_security",
   "source": "zenodo-only",
-  "checked_at": "2026-09-14T21:09:28Z"
+  "checked_at": "2026-09-14T21:09:28Z",
+  "methods": [
+    {
+      "name": "Evaluation of 24 OS candidates against 9 security properties",
+      "description": "Qubes, NixOS, hardened desktops, server platforms, privacy systems, non-Linux comparators and offensive distros are each judged on nine properties.",
+      "evidence": "Each candidate is assessed against 9 properties — containment, authority, trusted computing base, application confinement, integrity, persistence and recovery, update operations, supply-chain trust, and human usability"
+    },
+    {
+      "name": "Document-based analysis with no penetration testing and no numeric scores",
+      "description": "Judgments draw on documented designs, advisories, and primary incident reports; the review explicitly avoids testing and composite scores.",
+      "evidence": "this review contains no penetration testing, and where defaults were not verifiable the assessment says so or withholds the claim."
+    },
+    {
+      "name": "Deterministic candidate-property and defensive-stack matrices from pinned data",
+      "description": "A companion codebase encodes the 24x9 stance matrix (strong/partial/weak/n_a) and a 24-candidate x 8-mitigation-class matrix, regenerated reproducibly.",
+      "evidence": "registry.py defines the 24-candidate × 9-property matrix as module constants, with each cell holding one qualitative stance (strong, partial, weak, or n_a)"
+    },
+    {
+      "name": "Two-path threat model: exploitation versus authorized misuse",
+      "description": "Frames threats by the authority a component already holds, grounded in a 2024-2026 incident record (NCSC, Anthropic, AISI, OpenAI, DARPA AIxCC).",
+      "evidence": "A two-path threat model with authority as the axis (sec. 3), extending the exploitation/authorized-misuse duality into a systematic argument"
+    },
+    {
+      "name": "Harness-neutral skill library with conformance tests",
+      "description": "Review concepts (stance evaluation, authority ladder, delegation bound, invariants, incident taxonomy) ship as SKILL.md files indexed by a registry.",
+      "evidence": "every one ships as a harness-neutral skill under skills/, defined by a machine-checkable SKILL.md"
+    }
+  ],
+  "key_findings": [
+    "The review argues that delegated legitimate authority, not exploit difficulty, should be the primary evaluation axis for agent-bearing systems.",
+    "Across the documented agentic incidents reviewed, damage was bounded by a boundary or human gate rather than by model restraint.",
+    "Qubes is judged to supply the strongest deployable compartmentalization, while NixOS supplies reproducible, auditable operations that are not by themselves confinement.",
+    "The author notes that three coding-agent vendors independently converged on OS-primitive sandboxing, proxy-mediated egress, and classifier-gated escalation.",
+    "The prospectus recommends capability mediation layers that make every agent tool call a checked decision made outside the agent."
+  ],
+  "key_findings_evidence": [
+    "the axis of analysis is the authority a component already holds, not merely the diﬀiculty of exploiting it.",
+    "In every documented case, what bounded the damage was a boundary or a human gate, not model restraint.",
+    "Qubes supplies the strongest deployable compartmentalization under operational conditions, and its own documentation states what it does not buy sec. 5. NixOS supplies reproducible, auditable operations that are not by themselves confinement",
+    "Three competing vendors, building independently, converged on the same triad — OS-primitive sandboxing, proxy-mediated egress, classifier-gated escalation.",
+    "Capability mediation layers that make every agent tool call a checked decision — operation, artifact, destination, scope, expiry — with the decision point outside the agent and the policy separate from the task."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "review",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Deep review/prospectus (v0.7.0); assessments are analytical judgments from documentation and incident reports, with vendor findings labelled as such. One quote preserves an 'ff' ligature (U+FB00) from extraction."
+  }
 }

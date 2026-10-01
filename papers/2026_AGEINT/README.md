@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Conversion of the SIST Guide TOC and bibliography into a modular curriculum** — Restructures an inherited source guide into parts, modules, methods appendices, named patterns, and parsed references while preserving source identities.
+- **Synthetic practice studios using safe fixtures instead of live targets** — Exercises use classroom records, declassified examples, owned-lab logs, toy datasets, and tabletop incidents, ending in a bounded evidence-packet artifact.
+- **Source-lane and tier system separating official, standards, scholarly, and vendor sources** — Each claim class is matched to a required evidence type; discovery tools may suggest sources but citations must resolve to checked anchors.
+- **Automated claim-calibration audit of generated manuscript language** — A verifier scans high-risk empirical, statistical, governance, and safety language and fails unsupported proof-language, p-values, or measured-performance claims.
+- **Generated manuscript from version-controlled Markdown, tested Python, and registry figures** — The textbook is built reproducibly from curriculum shards, Pandoc citation keys, and registry-backed figures with captions, alt text, and provenance.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- AGEINT presents itself as a versioned curriculum-and-assurance framework, explicitly not a new agent architecture, cognitive theory, attack benchmark, or measured learning outcome.
+- Its strongest stated claim is methodological: agentic assistance can be taught in intelligence education when reuse is forced through authority, source support, safe substitution, review, rollback, and refresh triggers.
+- The source corpus includes 10 source-quality anchors for the standards and assurance spine and 462 curated intelligence research anchors across domain lanes.
+- The work states that its page, citation, and figure counts and validator passes are artifact telemetry, not empirical outcome evidence.
+- Exercises are restricted to educational, defensive, synthetic material and give no instructions for unauthorized collection, evasion, exploitation, or manipulation.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

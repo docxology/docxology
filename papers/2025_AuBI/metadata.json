@@ -44,21 +44,53 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Version 0.1 system specification for an Adaptive Basic Income toolkit",
+      "description": "Specifies AuBI as a systems-engineering toolkit/sandbox for specifying, modeling, and designing basic-income economic systems.",
+      "evidence": "Here we describe a version 0.1 specification for an Adaptive (Universal) Basic Income system called AuBI, describing a systems engineering-grade toolkit/sandbox/design suite for specifying, modeling, and designing economic systems."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Layered architecture: UX, services, AI/LLM + Active Inference, decentralized, data",
+      "description": "Lays out five architectural layers, including an Active Inference engine using generative models and expected free energy for policy selection.",
+      "evidence": "Policy Selection: Expected free energy minimization for optimal actions."
+    },
+    {
+      "name": "Comparison of BOPS and GPI deployment archetypes",
+      "description": "Contrasts a Baseline-Oriented Predictive System with Generative Predictive Integration across operational, implementation, efficiency, and context criteria.",
+      "evidence": "Here we explore two variant deployment archetypes of AuBI: Baseline-Oriented Predictive Systems (BOPS) and Generative Predictive Integration (GPI)."
+    },
+    {
+      "name": "Indonesian micro-UBI thought experiments with projected metrics",
+      "description": "Sketches four hypothetical Indonesian micro-studies (e.g. Dana Bahasa language fund) with budgets, data to collect, and expected benefits.",
+      "evidence": "Here we’ve taken the liberty to add some conceptualized thought experiments on Micro-Studies from an AuBI perspective and what they could look like in post-colonial countries"
+    },
+    {
+      "name": "Active Inference interpretation of UBI effects",
+      "description": "Frames UBI as reducing environmental uncertainty and prediction errors, enabling exploratory behavior, and supporting collective predictive processing.",
+      "evidence": "In Active Inference terms, standard UBI could serve as a mechanism for reducing environmental uncertainty."
     }
   ],
   "key_findings": [
-    "AuBI (Augmented Biological Intelligence) explores the interface between biological intelligence and artificial augmentation through the Active Inference framework.",
-    "The paper examines how AI systems ca..."
+    "The authors argue that overlaying AI, decentralized infrastructure, and Active Inference on UBI can enhance its relevance, effectiveness, and impact.",
+    "They distinguish BOPS as using prediction to maintain static security targets, versus GPI using prediction to dynamically optimize welfare.",
+    "For real-world implementation they suggest a staged hybrid approach, starting with BOPS and gradually transitioning toward GPI.",
+    "The paper proposes targeted micro-UBI studies as the actionable next step, e.g. an Indonesian pilot encouraging language self-study."
   ],
   "related_papers": [
     "2023_NSFReporting",
     "2023_NaturalAIBased",
     "2025_DiscoveryEngine"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Here we argue that the overlay of several modern technologies on UBI can help enhance its relevance, effectiveness, and impact.",
+    "The core distinction remains: BOPS uses prediction to maintain static economic security targets, while GPI employs prediction to dynamically optimize welfare across evolving systems.",
+    "For a real-world implementation, a staged hybrid approach might be most efficient",
+    "To make this actionable, we propose deploying targeted micro-UBI studies, such as an Indonesian pilot for encouraging language oriented self study"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Self-described speculative design paper / 'Paper #1' primer; no system was built or deployed and no data collected. Percentages in the Indonesian supplement are projected 'Expected Benefits', not results, and were deliberately excluded."
+  }
 }

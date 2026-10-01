@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Three-level agent-based model of focused-attention Vipassana meditation, Novice and expert state-transition matrices drawn from prior empirical research, Rule-based hybrid learning of attractor weight matrices
+- Identifies findings: Four meditation states (breath_control, mind_wandering, meta_awareness, redirect_breath) emerge from thoughtseed interactions rather than being hard-coded., Simulated experts sustain control dominance of focused attention, whereas novices show more frequent, prolonged mind_wandering episodes., Learned weights show stronger breath_focus activation during breath_control in experts (0.98) than novices (0.78).
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

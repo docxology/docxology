@@ -49,22 +49,48 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Design recommendations built on expert feedback to UW APL VIEE program",
+      "description": "The report draws on feedback from dozens of experts submitted to the University of Washington Applied Physics Lab's Verified Information Exchange Environments Program.",
+      "evidence": "This document builds on the feedback of dozens of experts across myriad fields submitted to the University of Washington Applied Physics Lab’s Verified Information Exchange Environments Program"
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Object model of 10 informational classes (Claims, Claim Combinators, etc.)",
+      "description": "Specifies workspace contents such as Content, References, Claims, Questions, Claim/Question Instances, Claim Clusters, Claim Combinators, User Assertions and Stigmergic Tags.",
+      "evidence": "Claim Combinators are categorized as (i) supports, (ii) refutes, (iii) generalizes, (iv) modifies, and (v) relates to."
+    },
+    {
+      "name": "Set-cardinality reputation metrics with one decay-based score",
+      "description": "Defines five reputation types, most via set construction and cardinality, with the Network Impact Score also using a standard decay function.",
+      "evidence": "Nearly all are defined exclusively through set construction and calculation of cardinality, with the only exception being Network Impact Score, which uses set construction in combination with a standard decay function."
+    },
+    {
+      "name": "Toulmin argument framework and crowdsourcing principles as design basis",
+      "description": "The Background section synthesizes frameworks such as Toulmin's six-component argument structure to inform the design.",
+      "evidence": "The Toulmin rhetorical framework formalizes the structure of an argument through the relationships among 6 individual components"
     }
   ],
   "key_findings": [
-    "There is a broadly recognized need for better situational awareness within the information environment..",
-    "Each year, millions of articles, books, documents, and datasets are published..",
-    "Amidst this flood of information, even those with significant experience and expertise in the knowledge economy are struggling to evaluate and vet claims.."
+    "The report recommends TrustFinder, a sociotechnical system combining annotation, argument representation and crowdsourcing so users can find trusted sources and assess claims.",
+    "It recommends platform-level governance features be added only when requested by affected communities rather than imposed on all users.",
+    "It recommends TrustFinder take a facilitatory rather than authoritative role in how researchers adjust and access trust signals.",
+    "It proposes proximal, actor- and community-centric reputation calculation instead of a universal metric to limit viral spread of context-stripped trust signals."
   ],
   "related_papers": [
     "2020_EmergentTeams",
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
-  ]
+  ],
+  "key_findings_evidence": [
+    "TrustFinder implements controls and standards, web and document annotation affordances, argument representation frameworks, and crowdsourcing design principles in order to harness the work of global research communities.",
+    "Specific platform-level governance affordances are recommended to be added only upon request by affected communities, and not required for use by all users across all communities.",
+    "It is recommended that TrustFinder take a facilitatory role in how researchers across disciplines adjust and access the values of these signals, as opposed to an authoritative role",
+    "This approach intends to limit the negative effects of context- stripped trust signals “going viral,” and to protect user and community ratings from being unduly affected by external pressures."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "book/report",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Design-recommendations report; not an implemented or evaluated system. The report states it does not cover exhaustive UX or detailed data-structure/security requirements. Full-text title reads 'TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims', slightly different from the bibliography title, but it is the same work."
+  }
 }

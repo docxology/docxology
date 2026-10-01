@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Active Inference
-- Identifies findings: Analysis of The ontology provide...
+- Extracts methods: Active Inference modeling of centralized (CeSci) vs decentralized (DeSci) science, Construction of the Active Entity Ontology for Science (AEOS), Example CeSci/DeSci entity-interaction motifs across areas of concern
+- Identifies findings: The paper presents AEOS as a composable, versionable system for modeling science systems using Active Inference entity partitioning., AEOS defines two entity classes: Active epistemic entities that select policies and enact affordances, and Informational entities that hold information and are acted upon., The authors argue that a DeSci stance can aid governance of scientific knowledge as an epistemic common good by providing incentive and opportunity to build integrated understanding.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

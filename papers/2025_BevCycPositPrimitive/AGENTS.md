@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Decomposable chain of nodes (N–N–N) for action/concept sequences, Hierarchical decomposition down to muscle tension %, Shrinking $$$] / $$] / $] scaffold with interruption slots
+- Identifies findings: The authors posit that state–action–state triplets can be treated as state–state–state, deliberately blurring the state/action distinction., The authors suggest a minimal 'silly cat' agent demonstrating only social-cortex logging and applying could be built in the near term., The authors flag that the work is experimental and hypothesized, with later revision for proper active inference modeling contingent on technical help.
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

@@ -28,16 +28,32 @@
   ],
   "methods": [
     {
-      "name": "Genomic and bioinformatic analysis",
-      "description": "Applied genomic and bioinformatic analysis approach"
+      "name": "Clinical description of three illustrative patient cases",
+      "description": "Presents three cases (ALL, AML, and polycythemia vera progressing to AML) as direct or indirect evidence for the hypothesis, citing an earlier report.",
+      "evidence": "We refer- ence here three leukemia patients with direct or indirect evidence of EA infection."
     },
     {
-      "name": "Statistical genetics",
-      "description": "Applied statistical genetics approach"
+      "name": "Therapeutic-dose Rifampin given to two moribund leukemia patients",
+      "description": "Two patients received Rifampin after other treatments were exhausted; their subsequent blood counts and condition are reported.",
+      "evidence": "Two were treated with Rifampin when all other treatments had been exhausted and the patients were moribund and near death."
+    },
+    {
+      "name": "Peripheral blood film and PCR analysis in one patient",
+      "description": "In the third case, blood-film inclusions resembling EA prompted PCR analysis, which indicated a previously unreported Ehrlichia.",
+      "evidence": "Because of the presumed level of bacteria in her blood, a PCR analysis was done, and showed evidence of a previously unreported Ehrlichia."
+    },
+    {
+      "name": "Appendix synthesizing EA transcriptomic and molecular-interaction studies",
+      "description": "Appendix A reviews published THP1 transcriptomic, ChIP-chip and yeast-two-hybrid studies of E. chaffeensis to compare with leukemia biology.",
+      "evidence": "In Appendix A, we discuss EA-induced changes in the transcriptome and epigenome of human cells, as well as the known molecular similarities between the proliferative states of leukemia and EA infection."
     }
   ],
   "key_findings": [
-    "Hypothesis linking Ehrlichia/Anaplasma intracellular parasitic bacteria to leukemia and immune disorders, with clinical evidence for Rifampin treatment"
+    "Hypothesizes that leukemia, multiple myeloma, myelodysplastic and autoimmune disorders may be associated with or caused by Ehrlichia/Anaplasma bacteria.",
+    "Reports that in one AML patient, leukocytes rose from 200 to 24,000 within a short period of Rifampin treatment.",
+    "The authors describe the three cases as not definitive but as suggestive evidence of a connection between leukemia and EA.",
+    "Proposes that leukemia may be an antibiotic-treatable infection rather than a malignancy, under this conceptualization.",
+    "Concludes that the data do not prove the hypothesis and that further serology and DNA studies are needed."
   ],
   "related_papers": [
     "2015_CryptoJews",
@@ -46,5 +62,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1016/j.mehy.2015.09.015",
-  "doi_url": "https://doi.org/10.1016/j.mehy.2015.09.015"
+  "doi_url": "https://doi.org/10.1016/j.mehy.2015.09.015",
+  "key_findings_evidence": [
+    "may be associated with or caused by an obscure group of intracellular obligate parasitic bacteria named Ehrlichia/Anaplasma (EA).",
+    "Within a short period of treatment, his leukocytes rose from 200 to 24,000, of which 25% were mature.",
+    "Taken together these three cases, though not definitive, provide tantalizing",
+    "Leukemia, under this conceptualization, may not be a malignancy at all, but rather an infection that can be treated with antibiotics and other means.",
+    "much more study of serology and DNA must be done to see if there are enough cases to declare that there is a connection or not."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Medical Hypotheses article: a hypothesis supported by three previously reported cases (all patients died) and a literature appendix; not a controlled study."
+  }
 }

@@ -9,7 +9,8 @@
     ],
     "agency_lookup": "https://doi.org/doiRA/{doi}",
     "title_similarity_floor": 0.8,
-    "note": "Authors are adopted only from a record whose title matches the catalogued title; never inferred."
+    "note": "Authors are adopted only from a record whose title matches the catalogued title; never inferred.",
+    "document_verified": "Works without a DOI may carry hand-reviewed authors read from their own archived document, with source path and verbatim evidence; re-checked by --check."
   },
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
@@ -821,7 +822,21 @@
       "num": 28,
       "doi": null,
       "title": "Towards a Science of Consciousness and Social Complexity... For Ants",
-      "status": "no_doi"
+      "status": "document_verified",
+      "authors": [
+        {
+          "family": "Iennaco",
+          "given": "Maria Luiza"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel"
+        }
+      ],
+      "source": "papers/2025_ConsciousnessAnts/full_text.md",
+      "evidence": "Maria Luiza Iennaco; Daniel Friedman",
+      "verified_on": "2026-10-01",
+      "note": "No DOI, so no registry record; authorship read from the work's own archived document (title page / edited-by line / running header)."
     },
     "Friedman2024AligningActiveInferenceOntology029": {
       "num": 29,
@@ -1399,7 +1414,21 @@
       "num": 44,
       "doi": null,
       "title": "Writing on Curio Cards for the \"On NFT\" book",
-      "status": "no_doi"
+      "status": "document_verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "D. A."
+        },
+        {
+          "family": "Ripley",
+          "given": "O. C."
+        }
+      ],
+      "source": "papers/2024_CurioCards/full_text.md",
+      "evidence": "D. A. FRIEDMAN & O. C. RIPLEY ON",
+      "verified_on": "2026-10-01",
+      "note": "No DOI, so no registry record; authorship read from the work's own archived document (title page / edited-by line / running header)."
     },
     "Friedman2023GuidedTourThroughSpaces045": {
       "num": 45,
@@ -2207,7 +2236,25 @@
       "num": 71,
       "doi": null,
       "title": "Structuring the Information Commons: Open Standards and Cognitive Security",
-      "status": "no_doi"
+      "status": "document_verified",
+      "authors": [
+        {
+          "family": "David",
+          "given": "Scott"
+        },
+        {
+          "family": "Cordes",
+          "given": "R.J."
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel A."
+        }
+      ],
+      "source": "papers/2022_InformationCommons/full_text.md",
+      "evidence": "EDITED BY Scott David, R.J. Cordes, and Daniel A. Friedman",
+      "verified_on": "2026-10-01",
+      "note": "No DOI, so no registry record; authorship read from the work's own archived document (title page / edited-by line / running header)."
     },
     "Friedman2022SystemsModelingCognitiveAudits072": {
       "num": 72,
@@ -2372,7 +2419,21 @@
       "num": 79,
       "doi": null,
       "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-      "status": "no_doi"
+      "status": "document_verified",
+      "authors": [
+        {
+          "family": "Cordes",
+          "given": "Richard J."
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel A."
+        }
+      ],
+      "source": "papers/2021_NarrativeEcosystems/full_text.md",
+      "evidence": "EDITED BY Richard J. Cordes & Daniel A. Friedman",
+      "verified_on": "2026-10-01",
+      "note": "No DOI, so no registry record; authorship read from the work's own archived document (title page / edited-by line / running header)."
     },
     "Friedman2021NarrativeInformationManagement080": {
       "num": 80,
@@ -2581,7 +2642,21 @@
       "num": 89,
       "doi": null,
       "title": "The Great Preset: Remote Teams and Operational Art",
-      "status": "no_doi"
+      "status": "document_verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel A."
+        },
+        {
+          "family": "Cordes",
+          "given": "Richard J."
+        }
+      ],
+      "source": "papers/2020_GreatPreset/full_text.md",
+      "evidence": "EDITED BY Daniel A. Friedman & Richard J. Cordes",
+      "verified_on": "2026-10-01",
+      "note": "No DOI, so no registry record; authorship read from the work's own archived document (title page / edited-by line / running header)."
     },
     "Friedman2020InnovatorSCatechism090": {
       "num": 90,
@@ -2661,7 +2736,17 @@
       "num": 93,
       "doi": null,
       "title": "PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus",
-      "status": "no_doi"
+      "status": "document_verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari"
+        }
+      ],
+      "source": "papers/2019_PhDDissertation/full_text.md",
+      "evidence": "© 2019 by Daniel Ari Friedman. All Rights Reserved.",
+      "verified_on": "2026-10-01",
+      "note": "No DOI, so no registry record; authorship read from the work's own archived document (title page / edited-by line / running header)."
     },
     "Friedman2019AntColonyAsTest094": {
       "num": 94,

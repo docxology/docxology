@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Analysis of The work...
+- Extracts methods: Cross-sectional 'laser plane' view of ontogeny as a stochastic process, Python package unifying OU-jump, fBM, Cox-Ingersoll-Ross and Lévy process models, Wavelet, copula, extreme value and regime-switching analyses of trajectories
+- Identifies findings: Validation tests confirmed expected properties, e.g. fBM recovered standard Brownian motion at H = 0.5 and distinguished persistence regimes., The author reports that all tests in the testing framework pass., On synthetic data, copula analysis showed significant positive dependence between early and late developmental phenotypes (Kendall's τ = 0.45).
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

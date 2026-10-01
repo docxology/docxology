@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Organizing the field by eight legal roles an insect occupies, Seven Python source-of-truth registries under src/, Build-time token closure for every count in the prose
+- Identifies findings: Alongside its roles, cases and statutes, the registries encode 24 insect taxa, 13 institutions, 44 historical milestones spanning 3676 years, and 5 cross-domain themes., The roles are linked by recurring themes; the role-coverage matrix shows some roles are case-driven, some statute-driven, and defendant and weapon roles almost entirely history-driven., The author argues the common frontier is institutional translation: insect facts enter law only through admissibility, quarantine, listing, authorization and moral-status filters.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,5 +37,5 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |

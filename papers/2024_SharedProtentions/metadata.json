@@ -35,17 +35,26 @@
   ],
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Husserlian time-consciousness as conceptual basis for shared goals",
+      "description": "Uses Husserl's retention, primal impression, and protention, extended to intersubjectivity, to cast shared goals as shared protentions.",
+      "evidence": "we unpack the notion of shared goals in a social group by appealing to the construct of protention (or real-time, implicit anticipation) in Husserlian phenomenology."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Polynomial-functor formalization of agent boundaries and generative models",
+      "description": "Represents agents' Markov blankets as polynomial functors with stochastic feedback, using tensors and hom polynomials to model multi-agent prediction.",
+      "evidence": "By using tools from category theory, namely, polynomial morphisms and hom polynomials, we are able to design agent architectures that implement a form of recursive cognition and prediction of other agents’ actions and environmental responses."
+    },
+    {
+      "name": "Sheaf- and topos-theoretic gluing of agents' world models",
+      "description": "Proposes gluing agents' spatial generative models into a sheaf of world models and their toposes into a consensus topos representing shared understanding.",
+      "evidence": "In order to describe agents with such shared beliefs, we propose upgrading the formalism using the mathematical tools of sheaf and topos theory."
     }
   ],
   "key_findings": [
-    "We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference..",
-    "Protentions are future-directed expectations that shape perception and action; here we formaliz...."
+    "Replacing the trivial interface with a hom over all agents' blankets yields agents that predict their own and companions' actions plus the environment's response, a starting point for formal theory of mind.",
+    "The authors argue that if agents' models can be glued into a sheaf of world models, the agents inhabit a shared universe and may be said to share protentions; failure to glue indicates disagreement.",
+    "The paper proposes shared protentions as an emergent, possibly necessary, property of collective self-organization.",
+    "The authors state the proposal is broad and does not yet provide a specific testable model, leaving that to future work."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -54,5 +63,18 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.3390/e26040303",
-  "doi_url": "https://doi.org/10.3390/e26040303"
+  "doi_url": "https://doi.org/10.3390/e26040303",
+  "key_findings_evidence": [
+    "Such agents thus predict not only their individual actions but those of their companion agents, along with how the environment will respond to all of them.",
+    "If it is possible, then we may say that the agents inhabit a shared universe, and thus, with appropriate generative models, may be said to share protentions.",
+    "In this setting, shared protentions are an emergent property—and possibly a necessary property—of any collective scale of self-organization",
+    "it is formulated quite broadly and does not provide a specific testable model yet. Moving towards such a specific model making testable hypotheses will be left for future follow-up work."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Purely theoretical/formal paper; no data were created or analyzed (per its Data Availability Statement)."
+  }
 }

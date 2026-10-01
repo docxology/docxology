@@ -46,5 +46,53 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-08-02T20:55:01Z"
+  "checked_at": "2026-08-02T20:55:01Z",
+  "methods": [
+    {
+      "name": "Five-stage typed pipeline: Inspector, Retriever, Reasoner, Memory Gate, Compiler",
+      "description": "Implements a long-context memory harness where each stage has a typed input/output contract, runnable implementation, evidence trace and declared scope.",
+      "evidence": "We implement a 5-stage pipeline that makes retrieval, context narrowing, answer generation, memory mutation, and configuration search explicit."
+    },
+    {
+      "name": "Offline lexical/hashing retrieval fused by weighted reciprocal-rank fusion",
+      "description": "The deterministic core uses BM25/grep, hashing-based retrieval, weighted RRF, real SQLite state and bounded MIPRO/GEPA-style configuration search without network calls.",
+      "evidence": "The core is deterministic and offline: BM25/grep, hashing-based retrieval, weighted reciprocal-rank fusion, real SQLite state, and bounded MIPRO/GEPA-style search run without network calls or mocks."
+    },
+    {
+      "name": "Episodic-first memory: raw episodes appended before gated consolidation",
+      "description": "The Memory Gate appends each raw turn to state before evaluating a derived memory delta, preserving source material for auditing.",
+      "evidence": "The runtime appends raw episodes before evaluating gated consolidation, keeps the transcript outside the model prompt, and returns cited evidence with the answer."
+    },
+    {
+      "name": "Tiered evaluation on LongMemEval-style, local, and LongMemEval_S slices",
+      "description": "Evaluates a fixed 6-example diagnostic set, a 24-example local comparison with gemma3:4b, an external LongMemEval_S transfer slice, and a 40-question bottleneck slice.",
+      "evidence": "We evaluate the harness in separate evidence tiers. On the fixed 6-example LongMemEval-style diagnostic set, the default configuration reaches composite 0.621"
+    },
+    {
+      "name": "Injection and poisoning probes of cited excerpts",
+      "description": "Recorded injection probes test whether cited excerpts contain a supplied gold value and measure a poisoning effect, as negative controls.",
+      "evidence": "Under the recorded injection probes, THALIA’s cited excerpts contain the supplied gold value on 30 of 30 probes"
+    }
+  ],
+  "key_findings": [
+    "On the fixed 6-example diagnostic set the default configuration reaches composite 0.621 (token-F1 0.477, citation-support proxy 0.830, efficiency 0.854).",
+    "The 8-candidate compiler search ties on this easy set, so configuration improvement is unobserved; its main output is an auditable trace with a tie rule.",
+    "Replacing the extractive Reasoner with gemma3:4b changed mean token-F1 from 0.587 to 0.540 in the 24-example comparison, with an interval spanning zero.",
+    "In the 40-question bottleneck slice, ranking recall is 1.00 but Inspector recall is 0.60; an adaptive context policy raised neural token-F1 from 0.086 to 0.171.",
+    "The author reports operational provenance as the clearest advantage, with equality on poisoning and no general answer-quality advantage."
+  ],
+  "key_findings_evidence": [
+    "the default configuration reaches composite 0.621 (answer token-F1 0.477, citation-support proxy 0.830, efficiency 0.854).",
+    "The 8-candidate compiler search ties on this easy set. Its primary finding is a complete, auditable trace with a deterministic tie rule; configuration improvement is unobserved on this distribution.",
+    "replacing the extractive Reasoner with gemma3:4b changes mean token-F1 from 0.587 to 0.540 (paired difference -0.046, 95% descriptive interval [-0.161, 0.067]).",
+    "In the 40-question bottleneck slice, ranking recall is 1.00 while Inspector recall is 0.60; an adaptive context policy changes neural answer token-F1 from 0.086 to 0.171",
+    "The current evidence identifies operational provenance as the clearest advantage while showing equality on poisoning and no general answer-quality advantage."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Small, author-run evaluation tiers (6, 24 and 40 examples plus a LongMemEval_S slice); the author explicitly limits claims to method integrity and failure localization, treats token-F1 and citation overlap as operational diagnostics, and leaves RQ4 (expert quality, production acceptance) as unmet. PDF title differs from the bibliography title ('THALIA: A Typed Agentic Harness for Reproducible Long-Context Memory Experiments')."
+  }
 }

@@ -20,13 +20,20 @@ This work addresses topics in **Cognitive Security**: stigmergic annotation, ope
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Stigmergic-cognition lens: sematectonic stigmergy vs stigmergic markers** — Frames online sensemaking using the distinction between content-altering sematectonic stigmergy and signalling stigmergic markers such as likes, annotations and links.
+- **Three-element architecture for a maker-centered ecology** — Specifies the proposed ecosystem as annotation tools, self-sovereign storage, and content discovery services, contrasted with a platform-centric loop (Fig. 1).
+- **Comparison with the Solid ecosystem and dokieli annotation client** — Positions the proposal against Solid and dokieli as the closest existing decentralization efforts and notes their limitations.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The authors argue that centralized platforms are a main source of epistemic pollution and that healthier environments require redesigning how attention is collectively governed.
+- They propose Open Source Attention, a framework for a decentralized ecosystem for creating, storing and querying stigmergic markers as digital traces of attention.
+- OSA aims to 'free' stigmergic markers starting from basic hypertext primitives: likes, bi-directional links, span highlighting, tags/bookmarks, and textual annotation.
+- The authors suggest existing personal knowledge management tools could be bootstrapped toward collective knowledge management via interoperable protocols and storage for stigmergic primitives.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +61,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.48550/arXiv.2205.06345`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

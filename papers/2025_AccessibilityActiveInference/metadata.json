@@ -45,20 +45,48 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Proposed stipended community working groups to co-create playbooks",
+      "description": "The letter proposes Institute officers coordinating weekly working groups of paid community members to co-create Active Inference playbooks for target audiences.",
+      "evidence": "Officers of the Institute will coordinate the co-creation of playbooks with members of our community through working groups. Contributing members will receive a stipend for their participation."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Planned use of generative AI for multi-language, multi-level materials",
+      "description": "Generative AI is proposed to make playbook materials available across languages, media, and levels of technical detail.",
+      "evidence": "Appropriate usage of generative AI to ensure materials are available in different languages, media, and levels of technical detail."
+    },
+    {
+      "name": "Planned multi-perspective Summer School curriculum design",
+      "description": "A Summer School course is proposed that teaches Active Inference principles from sociology, philosophy, mathematics and linguistics perspectives.",
+      "evidence": "we will design a course that teaches principles of Active Inference from multiple perspectives, including sociology, philosophy, mathematics and linguistics."
+    },
+    {
+      "name": "Planned evaluation via advisory board review, interviews, and surveys",
+      "description": "Progress is to be evaluated through quarterly internal feedback, interviews with target groups, and surveys of Summer School participants.",
+      "evidence": "The playbook will have internal quarterly feedback as we develop it, with further interviews with the target groups who apply the"
     }
   ],
   "key_findings": [
-    "A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Devel"
+    "The letter commits to producing playbooks for Active Inference adoption targeted at neuroscience graduate students, educators and policy-makers.",
+    "It commits to an open-source Summer School curriculum in Active Inference, supporting an in-person 2025 event and versioned over subsequent years.",
+    "The Summer School template is to be published openly so that groups worldwide can run their own courses.",
+    "The proposed budget totals $100,000, split between personnel for the two initiatives and computing resources."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Playbooks for Active inference adoption targeted to key populations (neuroscience graduate students, educators and policy-makers).",
+    "A Summer School curriculum (open-source) in Active Inference for diverse backgrounds, in support of an in-person event to be held in 2025 & versioned over the coming years.",
+    "the template for a Summer School will be available publicly on our website, so that groups across the world can start their own summer course",
+    "$45,000 for personnel for the Summer School curriculum initiative."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "other",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Letter of intent (grant proposal to the Dana Foundation Frontiers program). Methods and findings are proposed activities and deliverables, not completed results."
+  }
 }

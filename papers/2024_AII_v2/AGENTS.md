@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Collaboratively edited living document published as a linear v2 snapshot, Structure derived from the 2023 paper, extended September-November 2024, Prepare and Measure goal-setting and reporting system
+- Identifies findings: Reports that in 2024 the Institute received official recognition as a 501(c)(3) non-profit, with pro bono support from the Fried Frank law firm., Reports that, as of November 2024, 5 Research Fellows had joined the new Fellows program., Reports that the Institute's Discord server, its primary discussion and meeting venue, has over 1000 people.
 - Maps contributions to AII Ecosystem literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

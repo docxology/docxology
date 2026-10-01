@@ -63,5 +63,53 @@
   "pairing_evidence": [
     "github_release_mentions_doi",
     "github_repo_self_linked"
-  ]
+  ],
+  "methods": [
+    {
+      "name": "Dual-contract design: OPC/ODF surface contract plus signed intelligence manifest",
+      "description": "A single archive is both a conforming .docx/.odt and a carrier of typed payload modules indexed by an Ed25519-signed manifest.",
+      "evidence": "an author can add, seal, or remove intelligence without ever risking the document’s openability, and a reader who has never heard of docxplus is never inconvenienced."
+    },
+    {
+      "name": "Per-module sealing (Argon2id/Scrypt + AES-256-GCM, X25519, Shamir k-of-n, decoys)",
+      "description": "Payloads are sealed individually rather than encrypting the whole package, with slot names bound as AES-GCM additional authenticated data.",
+      "evidence": "The design turns on one decision: seal payloads, never the package."
+    },
+    {
+      "name": "Five spec-sanctioned transport channels incl. LSB steganography",
+      "description": "Implements custom XML parts, auxiliary package parts, custom document properties, MCE choice blocks, and LSB embedding in displayed images.",
+      "evidence": "We implement and evaluate 5 spec-sanctioned transport channels: custom XML parts, auxiliary package parts, custom document properties, Markup Compatibility and Extensibility (MCE) choice blocks, and least-significant- bit steganography"
+    },
+    {
+      "name": "Merkle-tree provenance with composite surface digest and transparency log",
+      "description": "Signs a Merkle root over modules together with a digest of every part, content type and relationship; attestations go into a log anchored by a signed tree head.",
+      "evidence": "provenance.py builds a Merkle tree (Merkle 1987) over the module digests, giving logarithmic inclusion proofs: a third party can confirm that one module belongs to the signed set without being shown the others."
+    },
+    {
+      "name": "Mock-free test harness, project round-trip, chi-squared steganalysis and red-team review",
+      "description": "Evaluated with 467 mock-free tests at a 90% coverage gate, an in-tree chi-squared LSB detector, a project round-trip harness, and 14 adversarial review cycles.",
+      "evidence": "The harness comprises 467 test functions under a 90% coverage gate, with no mocks anywhere: tests run against real cryptographic primitives, real ZIP archives, real subprocess CLI invocations"
+    }
+  ],
+  "key_findings": [
+    "In the reference dossier, all 5 modules across all 4 sealing lineages extracted and verified, and the container passed OPC conformance.",
+    "Carrying a 14-file, 9-directory project tree into both .docx and .odt containers, all 18 of 18 round-trip invariants held, with byte-identical packed payloads between profiles.",
+    "The round-trip harness found that packing followed symbolic links, embedding link targets such as an SSH key; symlinks are now refused by default.",
+    "The chi-squared detector flags fully embedded sealed (ciphertext) carriers but does not detect unsealed low-entropy payloads at any fill rate.",
+    "Fourteen adversarial review cycles closed 88 confirmed findings, and a sample-pair analysis estimator was withdrawn after proving mis-scaled by roughly an order of magnitude."
+  ],
+  "key_findings_evidence": [
+    "All 5 modules extract and verify: • Structure. The container passes OPC conformance ( opc_valid = True ): no part collisions, no broken relationship pointers.",
+    "Over a 14-file, 9-directory tree, all 18 of 18 invariants hold.",
+    "Path.is_file() follows symbolic links, so a tree containing creds -> ~/.ssh/id_rsa had the key’s contents packed into the document under the link’s name, with nothing in the manifest to suggest it.",
+    "a fully embedded carrier reports 𝑝 ≈ 1 . An unsealed low-entropy payload is not detected at any fill rate",
+    "the format has been through 14 cycles of adversarial review closing 88 confirmed findings."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Specification + reference implementation paper; evaluation is software testing and adversarial review, not user study. Several quotes avoid 'ﬀ' ligature passages."
+  }
 }

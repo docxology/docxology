@@ -195,17 +195,31 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Meta -> Target -> Feedback three-agent SIA loop",
+      "description": "The harness cycles a meta agent that seeds a target agent, the target run on public data, and a feedback agent that reads private metrics to propose the next generation.",
+      "evidence": "1. Meta — proposes or seeds a target agent for generation 𝑛. 2. Target — runs against public task data and writes agent_execution.json. 3. Feedback — reads private evaluation metrics and proposes improvements for generation 𝑛+ 1."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Public/private task split with deterministic reference baseline",
+      "description": "Each task separates agent-visible data and instructions from held-out evaluation labels, plus a deterministic reference target agent.",
+      "evidence": "data/public/ — agent-visible instructions and data (task.md, train.csv, evaluate.py). • data/private/ — held-out labels for evaluation only. • reference/reference_target_agent.py — deterministic baseline."
+    },
+    {
+      "name": "Fixture-replay determinism contract with opt-in live mode",
+      "description": "By default generations replay recorded fixtures so CI never runs generated code or calls LLM APIs; a flag enables bounded subprocess execution with optional Ollama feedback.",
+      "evidence": "When sia.live: false (default), generations replay recorded fixtures from src/fixtures/recorded_generation s/. CI never executes generated agent code or calls external LLM APIs."
+    },
+    {
+      "name": "mini_classify single-feature threshold classifier task",
+      "description": "The bundled exemplar task is a threshold classifier on one feature column, evaluated over 3 generations on 6 held-out samples.",
+      "evidence": "Scope. The bundled mini_classify task is a threshold classifier on one feature column. Results demonstrate harness wiring and artifact contracts—not state-of-the-art accuracy."
     }
   ],
   "key_findings": [
-    "This exemplar documents template_sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in .",
-    "The default pipeline replays fixture-backed generations for the mini_classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps."
+    "In the bundled fixture-replay run, final accuracy on mini_classify was 0.8333 over 6 held-out samples after 3 generations.",
+    "Accuracy rose from the first to the final generation by a metric delta of 0.3333 in the fixture replay.",
+    "template_sia shows the SIA harness contract can be embedded in the Research Project Template without vendoring upstream orchestration code, split into an infrastructure layer and a project layer.",
+    "The author states the fixture-replay metrics validate wiring only and are not evidence of state-of-the-art self-improvement."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -214,5 +228,18 @@
   ],
   "related_software": [
     "docxology/template_sia"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Run snapshot. Task mini_classify, run 1, 3 generation(s), live=false. Final accuracy=0.8333 over 6 held-out samples.",
+    "Metric delta (final −first generation): 0.3333.",
+    "template_sia demonstrates how to embed the SIA harness contract in the Research Project Template without vendoring upstream orchestration code.",
+    "Fixture-replay metrics (final accuracy=0.8333) validate wiring only—they are not evidence of state-of-the-art self-improvement."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Short harness/documentation exemplar; reported metrics are from recorded fixtures, explicitly not a benchmark."
+  }
 }

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Toulmin claim/evidence/warrant annotation of example image memes, Archetypal-phase vignettes of three emergent-team collection approaches, Russo-Ukrainian War memes as illustrative examples
+- Identifies findings: Argues that image memes function as quasi-arguments whose parsimonious form hides warrants, so interventions should target spurious evidence and hidden warrants., Argues that framing the information crisis as true versus false information has not been effective at regaining trust of disaffected audiences., Concludes that current image meme collection by emergent teams falls short of needs even though the needed affordances are within technological reach.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

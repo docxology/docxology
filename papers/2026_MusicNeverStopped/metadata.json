@@ -58,17 +58,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Integration of nine primary Grateful Dead data sources into one schema",
+      "description": "Setlist.fm, SetList Program, CMU archive, GDsets, gdshowsdb, Internet Archive, whitegum, dead.net and Wikipedia are parsed by testable modules and merged.",
+      "evidence": "Each source is parsed by an independently testable reference module written against the documented record shape"
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Deterministic canonical-slug merge with frozen-dataclass schema",
+      "description": "Entities validate inputs and use canonical-slug primary keys so cross-source joins reduce to dictionary lookups; integration is a sort-keyed merge.",
+      "evidence": "every primary key is computed by a canonical-slug function so that joins across sources reduce to dictionary lookups."
+    },
+    {
+      "name": "Completeness audit, figure-validation gate, and first-principles claim ledger",
+      "description": "Runtime checks certify referential integrity and non-degenerate figures; a ledger classifies each major result by inputs, assumptions, and limits.",
+      "evidence": "A runtime completeness audit and figure-validation gate certify referential integrity and non-degenerate out- puts on every pipeline run."
+    },
+    {
+      "name": "First-order Markov model of within-show song order with permutation-null FDR screen",
+      "description": "Fits song-to-song transition probabilities, audits support thresholds, and screens transitions against a permutation null under FDR control.",
+      "evidence": "A first-order Markov model fit on within-show song order (see src/analysis/transitions.py) yields the sub-block in Figure 12."
+    },
+    {
+      "name": "Category-theoretic constructions: date poset, show category, functors, spans",
+      "description": "Builds setlist and lineup functors from dates into sets, an active-roster presheaf, and performances as spans between show and song.",
+      "evidence": "a span representation that takes each performance to be the apex of a span between its show and its song."
     }
   ],
   "key_findings": [
-    "<p>We present a modular, citation-bound data compendium for the Grateful Dead universe &mdash; shows, songs, performances, personnel timelines, venues, recordings, and reception &mdash; and a category",
-    "The work is grounded in the archival reality that Grateful Dead history is both institutional and participatory: UCSC's Grateful Dead Archive and the Internet Archive collection preserve formal and co"
+    "The committed compendium contains 3341 ingested shows, 645 songs, 912 venues, and 40757 performance rows.",
+    "Completeness is referential only: 282 of the 3341 catalogued shows have an empty setlist in gdshowsdb.",
+    "Repertoire is highly skewed: the song-performance Gini coefficient is 0.74 and the top decile of songs accounts for 50.61% of non-segment performances.",
+    "The most frequent explicit segue in the corpus is the structural \"drums\" -> \"space\" passage, with 1197 occurrences.",
+    "Wide pullbacks over a show recover its setlist and over a song recover its performance history, while the active roster is a non-monotone presheaf on the date poset."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -77,5 +97,19 @@
   ],
   "related_software": [
     "docxology/grateful_data"
-  ]
+  ],
+  "key_findings_evidence": [
+    "3341 ingested shows (gdshowsdb + truckin gap-fill; community literature estimates about 2318 canonical concerts), 645 songs, 912 venues, 40757 performance rows",
+    "explicitly NOT a claim that every show has a setlist: 282 of the 3341 catalogued shows have an empty setlist in gdshowsdb.",
+    "The song-performance Gini coeﬀicient is 0.74; the top decile of songs accounts for 50.61% of non-segment performance",
+    "The single most frequent is “drums” -> “space” with 1197 occurrences",
+    "Wide pullbacks over a fixed show recover the show’s setlist; wide pullbacks over a fixed song recover the song’s performance history. The active-band roster, by contrast, is a non-monotone presheaf on the date poset"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Data-compendium plus software/pipeline paper. The Gini quote preserves an 'ff' ligature (U+FB00) from extraction. Exploratory analyses are explicitly labelled as pattern discovery, not causal inference; segue/transition structures are described as descriptive, not causal or exhaustive. No lyrics or audio bundled."
+  }
 }

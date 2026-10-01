@@ -20,13 +20,22 @@ This work addresses topics in **Art & Synergetics**: William Blake, Active Infer
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Close reading of Blake's Marriage of Heaven and Hell, Milton, Jerusalem** — Blake's texts (Erdman edition as textual authority) are read closely to extract perceptual-philosophy claims for comparison with Active Inference.
+- **Eight-theme correspondence mapping (Boundary to Collectives) with equations** — Each theme pairs a Blake quotation/image with an Active Inference formalism such as Markov blankets, precision dynamics or multi-agent models.
+- **Review of FEP/Active Inference formalisms as theoretical foundation** — Variational free energy, Markov blankets, hierarchical generative models, precision and expected free energy are presented before the synthesis.
+- **Four Zoas modeled as a factorized collective generative model** — Blake's Four Zoas are interpreted as factors of a joint model of collective mind within the Collectives theme.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The paper argues Blake's 'doors' correspond to statistical (Markov-blanket) boundaries and 'Newton's sleep' to rigid priors overriding sensory evidence.
+- It maps 'fourfold vision' to hierarchical precision-weighting and Blake's view of Imagination to selfhood being constituted by the generative model.
+- The author claims to provide specific formal mappings between Blake's prophetic system and Active Inference, beyond thematic analogy.
+- Three empirical implications are proposed, concerning expert perception, precision modulation in contemplative practice, and psychedelic states.
+- The paper acknowledges that its predictions remain untested and no experiment has directly tested the Blake–Active Inference correspondence.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +63,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.18600040`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

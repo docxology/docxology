@@ -43,18 +43,32 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Visual and symbolic analysis",
-      "description": "Applied visual and symbolic analysis approach"
+      "name": "Primary textual analysis of Blake's America a Prophecy (Erdman edition)",
+      "description": "Each convergence dimension is grounded in verified quotations from America a Prophecy, using Erdman's edition as the source.",
+      "evidence": "Throughout, we employ verified primary source quotations from Erdman’s edition and maintain fidelity to the scholarly traditions of both Blake studies and pragmatist philosophy."
     },
     {
-      "name": "Cross-domain pattern mapping",
-      "description": "Applied cross-domain pattern mapping approach"
+      "name": "Structural-correspondence method rather than causal or genealogical claims",
+      "description": "The manuscript identifies shared topological features across Blake, Pragmatism and Active Inference without claiming historical influence.",
+      "evidence": "Our method is one of structural cor- respondence—identifying shared topological features across distinct intellectual systems—rather than causal influence or historical genealogy."
+    },
+    {
+      "name": "Synthesis of pragmatist scholarship from Peirce to Brandom",
+      "description": "Six convergence dimensions are developed against an account of American Pragmatism informed by Menand, Misak and Bernstein.",
+      "evidence": "This manuscript traces six structural convergences between Blake’s visionary epistemology and the pragmatist tradition from Peirce through Brandom."
+    },
+    {
+      "name": "Active Inference formalization in a nine-row triadic synthesis atlas",
+      "description": "Uses Parr, Pezzulo and Friston (2022) as technical reference to map nine Blake–Pragmatism–Active Inference correspondences (Table 6).",
+      "evidence": "Section 5 introduces Active Inference as the formal bridge, drawing on Parr, Pezzulo, and Friston’s Active Inference (2022) as the primary technical reference and mapping nine structural correspondences in a triadic synthesis atlas."
     }
   ],
   "key_findings": [
-    "When Boston's Angel in William Blake's America: a Prophecy (1793) declares \"No more I follow, no more obedience pay!\" and the Thirteen Governors rend their robes to stand with Washington in the revolutionary flames, Blake enacts a drama of cognition that the American Pragmatists&mdash;writing a cont",
-    "Orc's revolutionary fire maps onto Peirce's irritation of doubt that compels inquiry; the Thirteen Angels' collective transformation mirrors Mead's social self constituted through the generalized other; the consumption of the \"five gates of their law-built Heaven\" performs Dewey's collapse of the sp",
-    "The convergences are not analogical but structural, and this manuscript formalizes them through the mathematics of Active Inference&mdash;the process theory of the Free Energy Principle&mdash;in which the Markov blanket becomes Blake's doors of perception, the generative model becomes imagination as"
+    "The paper maps Orc's revolutionary fire to Peirce's irritation of doubt, and the Thirteen Angels' collective transformation to Mead's socially constituted self.",
+    "It reads Blake's Four Zoas as a proto-cognitive architecture anticipating Active Inference's factorized generative model, with fragmentation as 'Newton's Sleep'.",
+    "A sixth dimension links Fuller and Applewhite's Synergetics (tetrahedron replacing cube) to Blake's anti-Newtonian stance and Peirce's pragmatic maxim.",
+    "The author argues the convergences are structural rather than analogical and formalizes them with Markov blankets, generative models, precision weighting and multi-agent belief alignment.",
+    "Proposed implications span computational psychiatry, digital humanities, and AI alignment (Fourfold Vision as corrective to next-token prediction)."
   ],
   "related_papers": [
     "2018_PPPiP",
@@ -62,5 +76,19 @@
     "2023_BlakeFuller"
   ],
   "artifact_doi": "10.5281/zenodo.18984939",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.18984939"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.18984939",
+  "key_findings_evidence": [
+    "Orc’s revolutionary fire maps onto Peirce’s irrita- tion of doubt that compels inquiry; the Thirteen Angels’ collective transformation mirrors Mead’s social self constituted through the generalized other",
+    "the Four Zoas—Urizen, Luvah, Tharmas, Urthona—function as Blake’s proto-cognitive architec- ture, anticipating the factorized generative model of Active Inference",
+    "The sixth dimension extends the synthesis to Fuller and Applewhite’s Synergetics, where the tetrahedron replaces the cube as the fundamental unit of spatial thought",
+    "The convergences are not analogical but structural, and this manuscript formalizes them through the math- ematics of Active Inference",
+    "The implications extend from computational psychiatry (Newton’s Sleep as pathological prior dominance) through digital humanities (the Blake Archive as a semiotic laboratory) to AI alignment"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Humanities/theoretical synthesis with no empirical component; claims are interpretive arguments by the author."
+  }
 }

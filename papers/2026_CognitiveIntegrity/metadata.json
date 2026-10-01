@@ -44,21 +44,55 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Trust Calculus with bounded, exponentially decaying delegation",
+      "description": "Formalizes delegated trust with decay factor δ per delegation step and proves bounds by induction on chain depth.",
+      "evidence": "a Trust Calculus with bounded dele- gation (exponential 𝛿𝑑decay) that prevents trust amplification through delegation chains"
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Defense Composition Algebra (series/parallel detection)",
+      "description": "Derives detection rates for series and parallel composition of defenses, assuming independent detection events.",
+      "evidence": "Proof. Attack detected by first defense, or passes first and detected by second. Events are independent by design."
+    },
+    {
+      "name": "Information-theoretic attack/detection bounds",
+      "description": "Relates attack entropy, mutual information with detector output, and channel capacity to bound detection rate and attack impact.",
+      "evidence": "Information-Theoretic Limits relating stealth constraints to maximum attack impact through a fundamen- tal stealth-impact tradeoff"
+    },
+    {
+      "name": "Five-class adversary hierarchy (Ω1–Ω5)",
+      "description": "Defines external, peripheral, agent-level, coordination, and systemic adversary classes and maps them to multiagent architectures and OWASP Agentic Top 10.",
+      "evidence": "a formal Adversary Hierarchy (Ω1–Ω5) characterizing external, peripheral, agent-level, coordination, and systemic threats with increasing capability and decreasing detectability."
+    },
+    {
+      "name": "Operational semantics, invariants, and model-checking configurations",
+      "description": "Specifies operational semantics for message passing and trust updates, belief/goal/trust invariants, and model-checking setups for safety properties.",
+      "evidence": "Technical foundations include: operational semantics for message passing and trust updates; invariants for belief integrity, goal preservation, and trust boundedness; model checking configurations for safety property verification"
     }
   ],
   "key_findings": [
-    "The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems.",
-    "Analysis of Part 1 of 3 covers theore..."
+    "Trust Boundedness theorem: delegated trust over a chain of depth d is at most δ^d, so trust cannot be amplified and vanishes exponentially with depth.",
+    "The paper states a stealth-impact tradeoff as a theorem: high-impact attacks are easier to detect, while stealthy attacks have limited effect.",
+    "The framework formalizes five architectural defenses with composition rules for reasoning about layered security.",
+    "The author notes guarantees depend on assumptions (honest orchestrator, n ≥ 3f+1, authenticated channels) and that the O(n²) trust matrix limits deployment to moderate agent counts.",
+    "Semantic-equivalence attacks, sub-threshold progressive drift, and orchestrator compromise are identified as formally difficult to detect."
   ],
   "related_papers": [
     "2020_EmergentTeams",
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Corollary 4.3. Trust cannot be amplified through delegation chains. Corollary 4.4. Trust vanishes exponentially",
+    "The following theorem captures the fundamental tradeoff facing attackers: high-impact attacks are easier to detect, while stealthy attacks have limited effect.",
+    "The framework formalizes five architectural defense mechanisms (cognitive firewalls, belief sandboxing, be- havioral tripwires, provenance tracking, Byzantine consensus) with composition rules",
+    "The quadratic trust matrix (Equation (141)) limits practical deployment to systems with moderate agent counts.",
+    "These are not implementation failures but formal limitations of the detection paradigm."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Part 1 of 3 (formal foundations only); computational validation is deferred to Part 2 and deployment to Part 3, so findings are theorems and stated limits rather than empirical results. The abstract's claim of 'complete coverage of the OWASP Top 10 for Agentic Applications' is the paper's own mapping claim and was not independently verified here."
+  }
 }

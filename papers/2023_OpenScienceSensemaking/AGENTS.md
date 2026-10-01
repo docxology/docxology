@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Application of the FAIR data principles to scientific sensemaking data, Design of the Open Science Sensemaking Graph with three node types, Protocol-based, Murmurations-inspired four-module network architecture
+- Identifies findings: Contends that frictions in scientific sensemaking arise from deficiencies in open access to diverse sensemaking data such as annotations and usage traces., Proposes that sensemaking data be included in open science, published under FAIR principles, and embedded in stigmergic annotation networks., Argues that FAIR publishing alone is insufficient for sensemaking, which also needs personalizable algorithmic ranking and distribution.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

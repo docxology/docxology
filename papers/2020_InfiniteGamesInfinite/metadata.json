@@ -40,17 +40,31 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Complex Adaptive Systems framing of remote teams and narrative ecosystems",
+      "description": "Uses the CAS framework to explore how games played by remote teams could be harnessed through platform design choices.",
+      "evidence": "Here we draw upon the applied and theoretical framework of Complex Adaptive Systems (CAS) to explore how the power of the Games played by Remote Teams can be harnessed by sage platform design choices."
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "World of Warcraft PvE/PvP play as a case study of rapid team formation",
+      "description": "Draws on WoW raid and player-vs-player teams to illustrate rapidly assembled teams and cultural transmission.",
+      "evidence": "The many iterations of the popular Massively multiplayer online role-playing game (MMORPG) World of Warcraft (WoW) offer an instructive case study in IRTs."
+    },
+    {
+      "name": "Design sketch: formal-informal interface for collaborative world-building",
+      "description": "Idea I proposes formal memetics where technical users set world parameters while prose and art contributors co-evolve the narrative.",
+      "evidence": "A Formal-Informal interface allows for the co-evolution of narrative and formal aspects of a SciFi story through the use of an API/metadata/ontology/structure"
+    },
+    {
+      "name": "Design sketch: Red/Blue/Green 'Cadavre Exquis' role-playing game",
+      "description": "Idea II proposes a case-management-like knowledge-mapping game with sword, shield and integrating roles plus role-specific guiding questions.",
+      "evidence": "A case-management-like system for knowledge mapping, enabling a cooperative “Cadavre Exquis” role-playing game played by Infinite Teams."
     }
   ],
   "key_findings": [
-    "Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: &ldquo;Inventing a Remote Culture to Deal with Pandemics&rdquo;, and was done so with the ",
-    "How are global online narratives constructed and received in 2020?"
+    "Introduces the term Instantaneous Remote Teams (IRT) for rapidly formed online-native teams, described as essential for institutional function and resilience.",
+    "Defines 'Infinite Teams' by analogy to Infinite Games as teams with open-ended, evolving composition, and uses 'Gray Zone' for the ambiguous space where they play.",
+    "Proposes that Polyplexus could serve as a platform hosting Infinite Games such as culture creation, narrative evolution and R&D.",
+    "Argues that AI alone struggles to detect links between memetic material and context, motivating curated knowledge networks with humans in the loop."
   ],
   "related_papers": [
     "2020_EmergentTeams",
@@ -58,5 +72,18 @@
     "2020_GreatPreset"
   ],
   "artifact_doi": "10.5281/zenodo.12601675",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.12601675"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.12601675",
+  "key_findings_evidence": [
+    "In cases where Remote Team formation is rapid or instantaneous (as opposed to Remote Teams with low turnover), we introduce the term Instantaneous Remote Teams (IRT).",
+    "By analogy to Infinite Games, “Infinite Teams” are those with open-ended and evolving composition.",
+    "Polyplexus could be a Platform for Infinite Games of all kinds (culture creation, narrative evolution, research & development, etc).",
+    "The reason why we need curated knowledge networks rather than co- occurrence matrices here, is analogous to why we need curated path discovery"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Concept white paper for the DARPA Polyplexus Citizen Incubator; no empirical data. Methods are conceptual frameworks and proposed game designs."
+  }
 }

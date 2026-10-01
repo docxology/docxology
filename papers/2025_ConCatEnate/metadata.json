@@ -40,16 +40,36 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Genomic and bioinformatic analysis",
-      "description": "Applied genomic and bioinformatic analysis approach"
+      "name": "Independent vision-processing modules (Scanning Trio, Track Trio)",
+      "description": "Proposes organ-like modules (modScan/modLoc/modNav for maps, points, routes; modWatch/modLook/modTude for shading, attention, tests) that process vision input and publish triggers.",
+      "evidence": "This part deals with the : LABELING & TAGGING of objects (ScanTrio ; TrackTrio)"
     },
     {
-      "name": "Statistical genetics",
-      "description": "Applied statistical genetics approach"
+      "name": "Chempool emulation of accumulated chemicals/hormones",
+      "description": "Uses chempool nodes attached to modules to tally stacked chemical notations (e.g. STRESS^, #ERROR) that time and combine trigger initiation.",
+      "evidence": "Chempools are a depiction / special node to tally Accumulated affectors / chemicals / hormones That emulate how a organ depend on this triggers / combo"
+    },
+    {
+      "name": "CYC drivers decomposed into |n| slots by a CYC modulator",
+      "description": "Epigenetic-emulation CYC drivers (e.g. WAKE-HAPPY-WAKE) are split into six-slot blocks force-filled from priority tables set by the CYC modulator, then resolved.",
+      "evidence": "Dividing each CYC block onto | n n n n n n | six smaller blocks insisting on updates / force filling from the priority tables (decided by CYC-modulator); and then resolving each block"
+    },
+    {
+      "name": "modStream trigger grading into themes, latches and simulations",
+      "description": "Triggers from the vision trios (and CYCs) are graded by modStream into themes and latches (simulations), which modLatch resolves into updates.",
+      "evidence": "Taking CYCs and Triggers (from Trios) onto THEMES & LATCHES (sims)"
+    },
+    {
+      "name": "Planned DEMO 0.01 with hardcoded CYCs and simulations",
+      "description": "Proposes a demo that handwrites 11 CYCs and a simple map simulation, 'cheats' the PRM step, and shows chem accumulation and trigger selection without learning.",
+      "evidence": "Then cheat the PRM step; simply show a Tree; on what was decided"
     }
   ],
   "key_findings": [
-    "Updated &nbsp; added a number of pages at the start&nbsp; (from page 2) that describes the entire system and whats missing apologies for not giving this overview of&nbsp; what would happen given those"
+    "The authors state the document's purpose is only to justify the proposed flow, which is a posit testable only once its components exist.",
+    "They list missing components, including sim, CYC and chem tables, the CYC modulator (a process reward model), a trigger table and a sim resolver.",
+    "The authors argue a process reward model is critical: without it, it would be impossible to check which route or CYC completion was better.",
+    "The authors flag as untested whether the proposed decreasing-slot protocol for breaking down CYCs is valid or runs smoothly."
   ],
   "related_papers": [
     "2015_CryptoJews",
@@ -57,5 +77,18 @@
     "2015_HoneyBeeEvolution"
   ],
   "artifact_doi": "10.5281/zenodo.14738798",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.14738798"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.14738798",
+  "key_findings_evidence": [
+    "The purpose of the paper is actually only to justify the Flow On which itself is, :/ actually just a posit; that would only be test-able Given that these components already exist;",
+    "Currently missing parts are: 1. Sim table 2. Cyc table 3. Chem table 4. Cyc modulator",
+    "But the PRM is critical / process reward model (alphago like break-down-of-the-steps?) On which without such knowledge or implementation; it would be impossible To check which route was done better",
+    "Problem 2 worries that the protocol of breaking down cyc Is untested for which is which"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Informal, slide/notes-style conceptual design document for a cat-hippocampus agent; nothing has been implemented or tested in the text, and the authors repeatedly flag uncertainty ('We are not quite sure yet!'). Extraction of several pages is fragmentary (columns split). Bibliography domain is 'Genetics & Biomedical', which fits the content poorly (it is an agent-architecture proposal), though the text makes no genetics claims beyond a 'speculative Epigenetic Basis' framing."
+  }
 }

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Integration of nine primary Grateful Dead data sources into one schema, Deterministic canonical-slug merge with frozen-dataclass schema, Completeness audit, figure-validation gate, and first-principles claim ledger
+- Identifies findings: The committed compendium contains 3341 ingested shows, 645 songs, 912 venues, and 40757 performance rows., Completeness is referential only: 282 of the 3341 catalogued shows have an empty setlist in gdshowsdb., Repertoire is highly skewed: the song-performance Gini coefficient is 0.74 and the top decile of songs accounts for 50.61% of non-segment performances.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

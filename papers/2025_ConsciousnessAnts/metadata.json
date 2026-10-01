@@ -19,22 +19,46 @@
   ],
   "methods": [
     {
-      "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays approach"
+      "name": "System-Measurement-Theory framing under scientific pluralism",
+      "description": "Organizes consciousness studies by target system, empirical measurements, and theories, taking the ant colony as the system of interest.",
+      "evidence": "In this article, we set some context for consciousness studies, in terms of scientific pluralism (Longino, 2000), specifically regarding the target System, empirical Measurements, and utilized Theories."
     },
     {
-      "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis approach"
+      "name": "Comparative review of GWT, IIT, quantum, and FEP-based consciousness models",
+      "description": "Reviews Global Workspace Theory, Integrated Information Theory, quantum and 'inner screen' models, and FEP-AI syntheses for their applicability to non-human systems such as ants.",
+      "evidence": "Our intention here has been to review without pre-judging the epistemic or pragmatic utility of any of these theories for the ant colony system and beyond."
+    },
+    {
+      "name": "Operationalizing Birch et al. (2020) dimensions via Active Inference (Table 1)",
+      "description": "Maps Birch et al.'s five dimensions of animal consciousness to Active Inference constructs and to ant social-complexity phenotypes in a juxtaposition table.",
+      "evidence": "As Table 1 explores, Active Inference plays an intermediary, or mapping, role between aspects of consciousness (on the left) and dimensions of social complexity phenotypes (on the right)."
     }
   ],
   "key_findings": [
-    "Building on the Ant Colony Test (ACT) introduced in 2019, this paper further develops the case for using ant colonies as model systems for consciousness research.",
-    "We examine how colony-level informati..."
+    "The authors argue that consciousness and social complexity are both potentially scale-independent descriptors, and that Active Inference can operationalize their study separately and jointly.",
+    "They argue multidimensional measures of consciousness or social complexity have no simple higher/lower ordering unless collapsed to a single value, paralleling critiques of a social 'ladder' in insects.",
+    "They note that some ant social-complexity measures resemble consciousness properties yet carry little metaphysical baggage in ants, suggesting empirical measurement alone may not resolve philosophical debates.",
+    "The authors propose that consciousness studies should proceed recognizing that consciousness shares many properties, and overlapping referents, with social complexity in ants.",
+    "They argue against an entrenched 'Scala Conscientia', a singular ascending scale of consciousness within or across species."
   ],
   "related_papers": [
     "2016_AntGenetics",
     "2016_ForagingGene",
     "2017_MutAnts"
   ],
-  "checked_at": "2026-07-01T20:50:01Z"
+  "checked_at": "2026-07-01T20:50:01Z",
+  "key_findings_evidence": [
+    "Active Inference provides an approach and framework that can operationalize consciousness and social complexity studies, separately and jointly.",
+    "A multidimensional method applied to study consciousness or social complexity does not have a simple “higher/lower” or “more/less” unless it is collapsed or projected down to a single comparable numerical value.",
+    "suggesting that mere and even total empirical measurement, may not resolve philosophical debates.",
+    "studies should proceed with the understanding that consciousness shares many properties, and even overlapping referents, with social complexity in ants.",
+    "the notion of a “Scala Conscientia” — a singular, ascending scale of consciousness in which “more” and “less” consciousness could exist — within or across species remains implicitly or explicitly entrenched."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "full_text.md contains the entire edited volume (As colônias de formigas são conscientes?, Editora Fi, 2025, 335p); this summary covers only chapter 3 (approx. lines 2833-3770), co-authored by Maria Luiza Iennaco and Daniel Friedman (the bibliography entry lists no authors). Conceptual chapter; no new empirical data."
+  }
 }

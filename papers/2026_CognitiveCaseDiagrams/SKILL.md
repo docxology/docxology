@@ -20,13 +20,23 @@ This work addresses topics in **Active Inference**: CognitiveCaseDiagrams.
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Case systems formalized as categories with alignment types as functors** — Reviews case systems as categories whose objects are case roles and morphisms are grammatical relations, treating each alignment type as a structure-preserving functor.
+- **Case-typed DisCoCat/DisCoCirc string diagrams for sentence and discourse** — Extends DisCoCat with case-typed noun spaces and alignment-sensitive meaning functors, and uses DisCoCirc for discourse-level composition.
+- **[0,1]-enriched case categories and categorical magnitude** — Equips case categories with [0,1]-valued hom-objects and uses categorical magnitude as an invariant for comparing case systems.
+- **Integration with Distributional Active Inference to derive ERP predictions** — Embeds the case framework in a Distributional Active Inference model to state falsifiable predictions for P600, N400 and garden-path reanalysis.
+- **Open-source Python implementation with automated tests and generated figures** — Implements the formal structures in a src/ package with a no-mocks test suite and programmatically generated figures.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Linguistic case as categorical structure: alignment typology as functors, DisCoCat/DisCoCirc composition, bridges to Distributional Active Inference and protocol-level analysis of prompt injection.
+- The review captures nominative-accusative, ergative-absolutive, active-stative, tripartite and fluid-S alignment within one algebraic framework linked by alignment functors.
+- Within case-typed string diagrams, passivization reduces to a type permutation (a Swap in the pregroup category).
+- The author argues prompt injection can be analyzed as ill-typed role promotion, a functorial type violation, as a specification target rather than a guarantee on current LLM APIs.
+- The topos-theoretic equivalence chain across typological, type-logical, distributional and enriched case theories is presented as a research program, not a finished theorem.
+- The accompanying code has 1197 tests across 64 files at 95.96% line-and-branch coverage on src/, plus 30 programmatically generated figures.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.19695259`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

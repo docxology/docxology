@@ -18,11 +18,20 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Framework combining FEP, nonlinear dynamics, clinical and neurobiology views** — The authors build a model of dissociation by combining a first-principles (FEP/TAME) perspective with dynamical systems, clinical and neurobiological perspectives.
+- **Self modelled as a hierarchical component of the organism's generative model** — Using TAME and the Free Energy Principle, the Self is defined as part of a generative model with a Core Self and peripheral layers bounded by informational Markov blankets.
+- **Attractor-landscape and phase-transition description of Self regimes** — Health is cast as a point-attractor regime ('I am me'), with trauma potentially causing a phase transition to unstable or chaotic regimes.
+- **Literature analysis of co-occurring temporal depth collapse and dissociation** — Lacking an experimental design for humans, the authors rely on published literature showing co-occurrence as indirect illustration of the thesis.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The authors propose that a substantial change in 'temporal depth' can be a common, causal factor in dissociative episodes of any etiology.
+- Voluntary contractions of temporal depth (flow, meditation) are framed as healthy, while involuntary collapses are pathological and may indicate memory-system dysfunction.
+- Clinically reported emotional flattening is mapped to top-down lowering of precision on affective prediction errors between the Core Self and peripheral Self.
+- Prolonged inescapable stress is described as disintegrating the Self into components with smaller cognitive light cones, accompanied by temporal depth collapse.
+- The authors defer empirical data, a computer simulation, and therapeutic implications to planned follow-up papers.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

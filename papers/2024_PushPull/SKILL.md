@@ -21,13 +21,18 @@ This work addresses topics in **Active Inference**: PushPull.
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Eight-step self-guided computer exercise sequence (A-to-B cursor/eye movement)** — Readers move a mouse, touchpad, eyes, or attention between two points A and B, alternating 'push' and 'pull' cognitive strategies across eight progressively layered exercises.
+- **Layering push/pull movement with lip pursing, vocalization, and language generation** — Later steps add bodily constraints (pursed lips), repeated syllables, memorized text, and freeform speech while alternating push and pull movements.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The author reports a preliminary impression that attentional push movements are faster and carry lower cognitive burden than goal-oriented pull strategies.
+- The author stresses that push is not easier or better than pull, only different and faster.
+- The document presents itself as only an initial sequence meant to complement future development of 'hand-I' uncouplings.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -56,5 +61,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.10659374`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

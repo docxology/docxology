@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Index cards as hashed Nostr notes (JSON to SHA256 ID), LLM semantic embeddings attached to index cards, Path analysis over composed index-card graphs
+- Identifies findings: The notes propose linking papers not only by citation edges but by syntactic bridges (keyword cards) and semantic bridges (embeddings)., The notes argue auto-generated flashcards pose less of an information-overload risk than auto-generated papers, since unused cards are simply ignored and useful ones composed., The notes suggest review papers could follow the most popular paths through the card graph and novelty search the least traversed ones.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

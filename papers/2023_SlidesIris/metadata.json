@@ -36,17 +36,30 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Active Inference generative model drawn as a Bayesian graph",
+      "description": "The slides open with a labelled graph of the A, B, C, D, E, G and policy terms of an Active Inference generative model as the reference frame.",
+      "evidence": "Here is an Active Inference Generative Model, expressed as a Bayesian Graph"
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Mapping GPT onto a minimal prior/state/observation model",
+      "description": "A reduced D-s-o model is used to describe what GPT does: prior as training set and parameters, latent semantic state, and word strings as observations.",
+      "evidence": "Prior: Training set and parameters Latent state – Semantic state space that is “all at once” and not separated by speaker. Observation – this is strings of words."
+    },
+    {
+      "name": "Perceptual-inference extension with a transition matrix B",
+      "description": "Temporal dynamics are added via the perceptual inference part of Active Inference, with hidden states changing over time and no action selection.",
+      "evidence": "First let’s add in temporal dynamics, using the “Perceptual Inference” part of the full Active Inference model (there is no Action Selection in this model, just Hidden States changing through time & emitting Observations at each time)"
+    },
+    {
+      "name": "Renormalization-group model of nested attention (Friston et al. 2023)",
+      "description": "A figure from Friston, Friedman et al. 2023 is reused to sketch how speakers, groups and sets of groups could be modelled as nested attention.",
+      "evidence": "using the renormalization group approach towards modeling collective behavior from Friston et al. 2023"
     }
   ],
   "key_findings": [
-    "Iris dataset analysis demonstrates reproducible visual analytics workflow for educational contexts",
-    "Slide-based presentation format effectively communicates active inference concepts to diverse audiences"
+    "The slides identify that in the GPT framing the latent semantic state is not separated by speaker, so speakers are admixed and cannot be weighted or attended to differentially.",
+    "The slides propose treating attention as a portfolio (regime) of nested attentions across persons, groups, sets of groups and the eco-niche.",
+    "Listed next steps are adding visualizations/dashboards, specifying the model in GNN toward implementation, and adding an action component."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -54,5 +67,17 @@
     "2021_ModelingConflict"
   ],
   "artifact_doi": "10.5281/zenodo.7838653",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7838653"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7838653",
+  "key_findings_evidence": [
+    "Now that the model has a temporal aspect, we can see a possible way to address the second issue, that all speakers are admixed (and hence cannot have differential weighting or attention).",
+    "It is a portfolio (regime) of nested attentions at all levels.",
+    "Specification of this model in GNN so that we can move it towards implementation."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Short 8-page slide deck (pages 6-8 image-only/blank). Content is a conceptual sketch and to-do list, not results; 'findings' are the proposals the slides state. README CONTRADICTION: README Key Findings claim 'Iris dataset analysis demonstrates reproducible visual analytics workflow' and that the format 'effectively communicates ... to diverse audiences' — the slides contain no Iris dataset or analysis ('Iris' appears only in the title) and make no claim about audience effectiveness."
+  }
 }

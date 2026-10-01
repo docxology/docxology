@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inference research, application, and education.
+> This is the abstract for the Abstract Book for the 5th Applied Active Inference Symposium (Nov 12-14, 2025). The Active Inference Institute (AII) is an open-science institute dedicated to improving the accessibility, rigor, and applicability of the Active Inference framework. Included are the abstracts of the registered Presenters, who presented in a Live Session or submitted Pre-recorded Talks...
 
 ## Keywords
 
@@ -18,11 +18,16 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Edited compilation of abstracts for the Nov 12-14, 2025 symposium** — Collects presenter abstracts into a DOI-registered abstract book edited by Maria Luiza Iennaco and Daniel Friedman.
+- **Organization by session format: keynotes, pre-recorded, panels, workshops** — Abstracts are grouped by presentation format, from Karl Friston's keynote to live-streamed panels and interactive workshops.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- Sabine's CRR abstract reports that coherence appears to increase as the variational free energy bound decreases, proposing coherence as a proxy for uncertainty reduction.
+- Montañez's abstract claims classical economic models such as Stigler's search and Simon's bounded rationality are special cases of active inference under specific conditions.
+- Hinrichs's abstract presents a dyadic active inference framework for therapy linked to Forman-Ricci curvature of inter-brain hyperscanning networks.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

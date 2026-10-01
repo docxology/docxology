@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: See paper
-- Identifies findings: See paper
+- Identifies findings: The letter argues that current LLMs and Transformer models are 'corpus bound', with parameter-setting criteria hidden in an undecipherable stochastic black box., The signatories argue that research in computational neuroscience, biology and physics supports a more nuanced and positive narrative of intelligence than AGI/existential-threat narratives., The letter contends AI need not be monolithic or concentrated in Big Tech to be commercialized and regulated, anticipating distributed, biologically grounded intelligences on mobile devices.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

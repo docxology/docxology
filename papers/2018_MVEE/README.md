@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? This presentation introduces the Multilevel Variational Ecology and Evolution (MVEE) framework, which accounts for plasticity, meta-plasticity, interactions within and among scales, scientific knowledge constraints, ecological variability over behavioral, developmental, and...
+> Research Question: How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? Goal: Extend Variational Neuroethology (Ramstead et al. 2017) to specify a tractable general framework for all Evolutionary studies, Biological and Otherwise. This would allow us to integrate current data across systems and suggest new...
 
 ## Keywords
 
@@ -18,12 +18,20 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Extension of Variational Neuroethology (Ramstead et al. 2017) to evolution** — Builds the proposed MVEE framework by extending VNE toward a general framework for evolutionary studies.
+- **Genotype-Environment-Phenotype tensor representation through time** — Represents evolving systems as a dynamic multiscale G-E-P tensor over time, using only measurable quantities instead of fitness.
+- **Pairing of state models and process models across scales** — Distinguishes predictive state theories (e.g. R = h2S) from algorithmic process theories and combines them via coarse-graining.
+- **Proposed compute-graph (TensorFlow) machine-learning architecture** — Proposes a single integrated ML framework on existing biological data to jointly consider coarse-grained state and process models.
+- **Worked example: harvester ant ('Pogo') foraging across three scales** — Sketches state and process models for one colony over a day, a colony population over a summer, and populations over generations.
 
 ## Key Findings
 
-- MVEE reflects where I was at in January 2018 ( solo presentation ) in thinking about Biology, Evolution, Active Inference, Free Energy Principle, and more..
-- Uploaded to Zenodo in 2024..
+- The talk claims EcoEvoDevo is stuck in a locally-optimizing regime because of an incoherent genotype-phenotype-environment and fitness framing.
+- It argues the data, theory and philosophy already exist for a tractable generalized model of evolution, with the challenge being integrating VNE with classical theory using limited data.
+- It critiques VNE's human-cognition case study as not yet operationalized for actual data and unclear for other evolutionary systems.
+- It proposes MVEE (Multilevel Variational Evolutionary Ecology) as a framework combining VNE, EcoEvoDevo, collective behavior and machine learning.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

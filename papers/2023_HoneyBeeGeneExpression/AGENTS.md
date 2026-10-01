@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: The honey bee ( Apis mellifera ) is a pivotal species in both ecological and research contexts, serving as a model organism for studying complex social behavior and physiological processes.., A critical aspect of understanding these complexities is the analysis of tissue-specific gene expression (TSGE), a challenging task due to the need to handle large bioinformatics data and manual tissue processing.., In this study, we present a meta-analytic approach to investigate TSGE in A. mellifera , harnessing various open-source bioinformatics packages..
+- Extracts methods: Entrez/NCBI SRA query for Apis mellifera Illumina RNA-seq samples, Six-script MetaInformAnt pipeline built on AMALGKIT, Metadata tissue-name harmonization script
+- Identifies findings: From 4349 samples and 12,398 loci, AMALGKIT processing retained 731 samples and 177 loci, released as a public July 2023 TSGE snapshot., Curation reduced 133 uniquely named tissues to 54 groups; whole adult body, brain and mushroom body made up 62.3% of samples., Optional metadata fields were largely blank (e.g. 99.1% genotype, 67.5% sex, 77.8% age), limiting their use as surrogate variables in harmonization.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

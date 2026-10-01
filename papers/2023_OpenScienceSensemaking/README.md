@@ -18,11 +18,19 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Application of the FAIR data principles to scientific sensemaking data** — Works through what Findable, Accessible, Interoperable and Re-usable would mean for annotations, ratings and bookmarks.
+- **Design of the Open Science Sensemaking Graph with three node types** — Specifies a public knowledge graph of actors (SenseMakers), content (URLs) and stigmergic markers, starting from social bookmarking.
+- **Protocol-based, Murmurations-inspired four-module network architecture** — Outlines decentralized storage (e.g. Solid pods, IPFS), indexing/querying, content discovery services and user-facing apps.
+- **Minimum viable implementation sketch: bookmarking app and rating aggregator** — Proposes a reference bookmarking app and a Goodreads-like review/rating aggregator, with collaborative filtering for recommendation.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- Contends that frictions in scientific sensemaking arise from deficiencies in open access to diverse sensemaking data such as annotations and usage traces.
+- Proposes that sensemaking data be included in open science, published under FAIR principles, and embedded in stigmergic annotation networks.
+- Argues that FAIR publishing alone is insufficient for sensemaking, which also needs personalizable algorithmic ranking and distribution.
+- Observes that sensemaking data are being enclosed, noting that most scientific social bookmarking platforms and reference managers were bought by large publishers.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

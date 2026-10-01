@@ -20,13 +20,22 @@ This work addresses topics in **Computational**: prose analysis, readability, ed
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Five-stage pure-function pipeline: read, analyse, cross-check, evaluate, render** — template_prose_project implements editorial review as five pure-function stages in src/, with scripts limited to argument parsing and I/O.
+- **Readability metrics: Flesch Reading Ease, Flesch-Kincaid grade, Gunning Fog** — Per-file metrics are computed with textbook readability formulae over a vowel-group syllable heuristic.
+- **Heuristic quality flags: passive voice, hedge density, citation density** — A quality analyser flags passive-voice candidates, hedge words, Pandoc [@key] citation density, and long sentences.
+- **Citation-key cross-check against references.bib with configurable policy** — Every cited key is matched against the BibTeX file, with fail_on_missing / fail_on_unused settings in config.yaml.
+- **Run-twice diff test for byte-identical JSON output** — Reproducibility is checked locally by running the pipeline twice and diffing manuscript_report.json.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The paper reports that editorial review can be expressed as a configurable, deterministic pipeline with no novel domain algorithm of its own.
+- On the bundled manuscript, the run analysed 8 files totalling 1731 words, with average Flesch-Kincaid grade 15.87 and Gunning Fog 16.67.
+- Because no external service is consulted, a second run on the same inputs produces byte-identical JSON (modulo timestamp metadata).
+- The stated contribution is architectural: a reusable prose-quality module any template project can opt into, plus a minimal configurable exemplar.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +63,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20417104`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

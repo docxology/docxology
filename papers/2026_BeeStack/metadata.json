@@ -75,17 +75,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Five typed Python modules (Body, Brain, Mind, Swarm, Niche) with contracts",
+      "description": "A five-layer honeybee specification is converted into five typed Python modules with explicit contracts, deterministic seeding and a hydrated manuscript.",
+      "evidence": "It converts a five-layer biophysical specification — body, brain, mind, swarm, and niche — into 5 typed Python modules with explicit contracts, deterministic seeding, and a continuous evidentiary trail"
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "BeeBody: FlyBody walking/flight tasks on a generated honeybee MJCF in MuJoCo",
+      "description": "Body renders use FlyBody walking and wing-beat flight tasks through a generated honeybee MJCF body plan in MuJoCo; strict swarm scenes use scripted poses with real contact detection.",
+      "evidence": "BeeBody uses FlyBody [Vaxenburg et al., 2025] walking and wing-beat flight tasks through a generated honeybee MJCF body plan rendered in MuJoCo"
+    },
+    {
+      "name": "BeeBrain ingestion of curated public Apis mellifera datasets",
+      "description": "Public anatomy and activity datasets (Honey-Bee Standard Brain, glomerular odor codes, calcium imaging, etc.) are parsed into anatomy inventories, response panels and dance templates.",
+      "evidence": "BeeBrain ingests curated public Apis mellifera anatomy and activity datasets — including the Honey-Bee Standard Brain atlas and integration ecosystem"
+    },
+    {
+      "name": "Reduced deterministic kernels for BeeMind, BeeSwarm and BeeNiche",
+      "description": "Active-inference-style policy scoring, dance recruitment and comb/thermal stepping are implemented as reduced, hand-calibrated deterministic kernels with diagnostics.",
+      "evidence": "Validated reduced kernels for BeeMind active-inference policy scoring, BeeSwarm dance recruitment, and BeeNiche comb-and- thermal stepping, each with explicit diagnostic panels."
+    },
+    {
+      "name": "Claim ledger and manuscript hydration from run-time JSON",
+      "description": "A claim ledger maps each claim class to evidence and what it does not prove; manuscript numbers are read from pipeline-generated JSON, and tests use no mocks.",
+      "evidence": "The manuscript is hydrated from those artifacts via scripts/z_generate_manuscript_variables.py. Numbers in the prose are not transcribed from notes; they are read from the JSON files that the same pipeline writes."
     }
   ],
   "key_findings": [
-    "BeeStack is an executable, evidence-typed research scaffold for whole-colony simulation of the Western honey bee (Apis mellifera), organized as five layers (Body, Brain, Mind, Swarm, Niche).",
-    "It pairs FlyBody/MuJoCo body and small-scene swarm renders with curated empirical BeeBrain datasets and reduced deterministic kernels, keeping fidelity a declared per-module property: every quoted num"
+    "The empirical run integrates 48 response panels, 7 anatomy inventories and 24 odor templates, with a parseable-source fraction of 0.800.",
+    "All module contract self-tests pass (rate 1.000) alongside 11 catalogued open gaps; the authors stress this is contract conformance, not biological validation.",
+    "BeeBody visual scores (0.980 visual, 1.000 silhouette) certify that renders look like a bee, not that kinetics match; masses, adhesion and aerodynamics are FlyBody defaults.",
+    "Strict swarm scenes are small scripted-pose contact scenes (3 scenes, 15 unique contact pairs); colony dynamics use reduced kernels with 50 agents representing 20,000 workers.",
+    "The authors state the results do not show BeeStack can yet predict colony survival, pesticide response, full dance-language use, or field foraging success."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -94,5 +114,19 @@
   ],
   "related_software": [
     "docxology/BeeStack"
-  ]
+  ],
+  "key_findings_evidence": [
+    "The empirical run currently integrates 48 response panels, 7 anatomy inventories, 1 antennal-movement summaries, and 24 odor templates, with a parseable-source fraction of 0.800.",
+    "All module contract self-tests pass — a config-band self-test rate of 1.000 — measured alongside 11 explicitly catalogued open gaps, so this rate denotes contract conformance rather than biological validation.",
+    "The visual scoring (BeeBody visual score 0.980, silhouette score 1.000) certifies that the rendering looks like a bee. It does not certify that the kinetics match a bee.",
+    "3 strict scenes with 15.000 unique bee-contact pairs at the most recent run. The broader colony dynamics are still represented through deterministic reduced communication, pheromone, and task-allocation kernels at 50 simulated agents representing 20,000 workers",
+    "The results do not show that BeeStack can yet predict colony survival, pesticide response, full dance-language use, or field-scale foraging success."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Software scaffold paper; authors explicitly disclaim biological validation and calibrated simulation ('not a calibrated honey-bee biophysical simulator'). Field colony-health stressors are motivation only and are not modeled in v0."
+  }
 }

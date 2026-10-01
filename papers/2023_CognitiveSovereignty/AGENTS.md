@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Close reading of Agamben's Homo Sacer, Agamben-Kuhn analogy of exception and revolutionary science, Mapping via the Active Inference Ontology (affordances, VFE, EFE)
+- Identifies findings: Asserts that realized epistemic agency is grounded in the enacted policy selection of the cognitive sovereign., Argues that sovereigns in a state of exception gain exceptional affordances that emerge from new precision dynamics, sustained by perceiving the state as dangerous., Proposes that the subject's VFE-bare life connection grounds the sovereign's EFE-agency relationship through the state of exception.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

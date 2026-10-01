@@ -18,11 +18,19 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Transcripts of ActInf Livestream #050 sessions (50.0, 50.1, 50.2)** — Records three Active Inference Institute livestream discussions (Oct-Nov 2022) of the Biological Psychology paper 'Interoception as modeling, allostasis as control'.
+- **Background walkthrough by Friedman and Tickles (50.0)** — In 50.0 the hosts reviewed the paper's big questions, aims, abstract and roadmap before later sessions with authors.
+- **Author slide presentation by Eli Sennesh with Jordan Theriault (50.1)** — Paper co-authors presented the model (Section 4: allostasis as stochastic optimal control) and took questions from participants.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- As read in the session, the paper proposes studying allostasis in terms of control theory, with interoception providing performance feedback for allostasis.
+- Sennesh says the motivation was that real biological prior preferences cannot be fixed, raising how much must be learned over development rather than built in.
+- Sennesh summarizes that the model yields a notion of affordance competition via forward simulations of trajectories evaluated over time.
+- Sennesh states that normalizing to probability densities gives a common currency, so the model needs no separate reward currency.
+- Sennesh notes whether interoception is predictively coded below the neck remains an open empirical question.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

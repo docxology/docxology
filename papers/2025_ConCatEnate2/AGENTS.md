@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Pilot overview validates cat hippocampus emulation using generative AI as a viable research direction, Demonstrates feasibility of in-silico emulation of mammalian neural circuits for computational neuroscience
+- Extracts methods: Proposed decomposable action-sequence cat agent with ROS-style checkpoints, BEACONS: pulse-and-response-table emulation of a social cortex, BEV-CYC: inherited-then-learned chains of decomposable behavior nodes
+- Identifies findings: The authors summarise the pipeline as: get vision input, label/tag/process, combine with CYC, form a SIM, learn the SIM outcome, and update., The authors state the methods are currently handwritten and optimization is still in progress., The authors state they lack a consistent automated formula but believe they can produce a full behavior table for any requested video or activity.
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR

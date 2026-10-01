@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: When Boston's Angel in William Blake's America: a Prophecy (1793) declares "No more I follow, no more obedience pay!" and the Thirteen Governors rend their robes to stand with Washington in the revolutionary flames, Blake enacts a drama of cognition that the American Pragmatists&mdash;writing a cont, Orc's revolutionary fire maps onto Peirce's irritation of doubt that compels inquiry; the Thirteen Angels' collective transformation mirrors Mead's social self constituted through the generalized other; the consumption of the "five gates of their law-built Heaven" performs Dewey's collapse of the sp, The convergences are not analogical but structural, and this manuscript formalizes them through the mathematics of Active Inference&mdash;the process theory of the Free Energy Principle&mdash;in which the Markov blanket becomes Blake's doors of perception, the generative model becomes imagination as
+- Extracts methods: Primary textual analysis of Blake's America a Prophecy (Erdman edition), Structural-correspondence method rather than causal or genealogical claims, Synthesis of pragmatist scholarship from Peirce to Brandom
+- Identifies findings: The paper maps Orc's revolutionary fire to Peirce's irritation of doubt, and the Thirteen Angels' collective transformation to Mead's socially constituted self., It reads Blake's Four Zoas as a proto-cognitive architecture anticipating Active Inference's factorized generative model, with fragmentation as 'Newton's Sleep'., A sixth dimension links Fuller and Applewhite's Synergetics (tetrahedron replacing cube) to Blake's anti-Newtonian stance and Peirce's pragmatic maxim.
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR

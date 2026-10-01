@@ -41,17 +41,30 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Genomic and bioinformatic analysis",
-      "description": "Applied genomic and bioinformatic analysis approach"
+      "name": "Proposed decomposable action-sequence cat agent with ROS-style checkpoints",
+      "description": "The pilot sketches a cat agent built from decomposable action sequences using ROS-style action checkpoints.",
+      "evidence": "We’d like to create a cat ( a decomposable action sequence agent ) ( using ROS style action checkpoints )"
     },
     {
-      "name": "Statistical genetics",
-      "description": "Applied statistical genetics approach"
+      "name": "BEACONS: pulse-and-response-table emulation of a social cortex",
+      "description": "Tagged objects are assigned pulses with a response table so the cat can decide how to respond, hedge or prepare toward each object.",
+      "evidence": "SocialCortex –esque emulation; thru attaching PULSES (+response table)"
+    },
+    {
+      "name": "BEV-CYC: inherited-then-learned chains of decomposable behavior nodes",
+      "description": "Behavioral drives are represented as node chains, hardcoded from birth and then edited by learning, decomposed down to muscle-tension decisions.",
+      "evidence": "As a chain of nodes that each node can be decomposed All of them are first inherited (hardcoded from birth) And all of them are then learned"
+    },
+    {
+      "name": "Time-limited SIM resolution with 'quickcalc' free-energy shortcuts",
+      "description": "Each simulation is resolved within a time limit and updates parameters; low-novelty SIM types are converted to quickcalc formulas over a free-energy range.",
+      "evidence": "Quickcalcs are a way to simplify the simulation run onto a FE % calculation - Via active inference."
     }
   ],
   "key_findings": [
-    "Pilot overview validates cat hippocampus emulation using generative AI as a viable research direction",
-    "Demonstrates feasibility of in-silico emulation of mammalian neural circuits for computational neuroscience"
+    "The authors summarise the pipeline as: get vision input, label/tag/process, combine with CYC, form a SIM, learn the SIM outcome, and update.",
+    "The authors state the methods are currently handwritten and optimization is still in progress.",
+    "The authors state they lack a consistent automated formula but believe they can produce a full behavior table for any requested video or activity."
   ],
   "related_papers": [
     "2015_CryptoJews",
@@ -59,5 +72,17 @@
     "2015_HoneyBeeEvolution"
   ],
   "artifact_doi": "10.5281/zenodo.14737043",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.14737043"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.14737043",
+  "key_findings_evidence": [
+    "Get vision input  Label , tag , process  Combine with CYC  Becomes SIM  Learn SIM outcome  Update",
+    "Methods are currently handwritten, optimization still on work",
+    "We are not good at automizing Or making a good math formula For consistency! But we are pretty certain we are able to make Full behavior table for any video / activity that is requested!"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "other",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Informal, largely diagrammatic pilot slide-deck/notes describing a planned 'cat' agent architecture; some pages are truncated in extraction (pages 3, 17). No experiments or results. The existing AGENTS.md findings ('validates cat hippocampus emulation using generative AI', 'demonstrates feasibility of in-silico emulation of mammalian neural circuits') are not supported by the text."
+  }
 }

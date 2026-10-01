@@ -6,13 +6,9 @@ date-released: "2021"
 publisher:
   name: "COGSEC"
 authors:
-  - family-names: Cordes
-    given-names: Richard J.
-    role: ["editor"]
-    affiliation: "COGSEC"
-  - family-names: Friedman
-    given-names: Daniel Ari
-    role: ["editor"]
-    affiliation: "COGSEC"
+  - family-names: "Cordes"
+    given-names: "Richard J."
+  - family-names: "Friedman"
+    given-names: "Daniel A."
     orcid: "https://orcid.org/0000-0001-6232-9096"
 url: "https://www.cogsec.org/nim-21-8"

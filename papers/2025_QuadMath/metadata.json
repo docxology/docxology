@@ -35,21 +35,55 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "4D mathematical analysis and visualization",
-      "description": "Applied 4d mathematical analysis and visualization approach"
+      "name": "Three-namespace framing of '4D': Coxeter.4D, Einstein.4D, Fuller.4D",
+      "description": "Separated Euclidean E4, Minkowski spacetime, and synergetics/Quadray meanings of 4D with a dot-notation to avoid cross-domain confusion.",
+      "evidence": "In this synthetic review, we distinguish three internal meanings of “4D,” following a dot-notation that avoids cross-domain confusion."
     },
     {
-      "name": "Analytical geometry and topological methods",
-      "description": "Applied analytical geometry and topological methods approach"
+      "name": "Nelder–Mead adapted to the integer Quadray lattice with volume tracking",
+      "description": "Ran Nelder–Mead simplex steps, snapping each proposal to the nearest integer Quadray point and monitoring integer tetravolume as a convergence diagnostic.",
+      "evidence": "Projection: after each reflection/expansion/contraction, snap to nearest integer lattice point via projective normalization."
+    },
+    {
+      "name": "Fisher information and natural gradient in Quadray parameter space",
+      "description": "Defined Fisher information over Quadray parameters and analyzed optimization as geodesic motion on an information manifold.",
+      "evidence": "define Fisher information in Quadray parameter space, and analyze optimization as geodesic motion on an information manifold via the natural gradient."
+    },
+    {
+      "name": "Tested Python codebase with exact Bareiss determinants and cross-validation",
+      "description": "Accompanied the review with a fully tested Python codebase (100% coverage for src/), cross-validated against Kirby Urner's 4dsolutions reference implementations.",
+      "evidence": "The manuscript is accompanied by a fully-tested Python codebase under src/ with unit tests under tests/, complemented by extensive cross-validation against Kirby Urner’s reference implementations"
+    },
+    {
+      "name": "Bridging vs native tetravolume comparison (Cayley–Menger + S3 vs Ace 5x5)",
+      "description": "Compared IVM tetravolumes from edge-length Cayley–Menger determinants converted by S3 against Tom Ace's native 5x5 Quadray determinant on canonical cases.",
+      "evidence": "This bar chart compares IVM tetravolumes computed via two independent methods: the “bridg- ing” approach using Cayley–Menger determinants on Euclidean edge lengths converted to IVM units"
     }
   ],
   "key_findings": [
-    "Higher-dimensional geometry provides novel mathematical foundations for cognitive modeling and representation",
-    "4D visualization techniques significantly improve interpretability of abstract cognitive state representations"
+    "The review describes how integer lattice constraints quantize tetrahedral simplex volumes into discrete 'energy levels' that regularize optimization.",
+    "Bridging (Cayley–Menger + S3) and native (Ace 5x5) tetravolume computations agree at machine precision on the tested integer-Quadray examples.",
+    "On a simple quadratic objective, the discrete Nelder–Mead converges with simplex volume showing discrete plateaus characteristic of integer-lattice optimization.",
+    "In IVM units, common synergetic polyhedra have integer volumes, e.g. cube 3, octahedron 4, rhombic dodecahedron 6, cuboctahedron 20, relative to the unit tetrahedron.",
+    "The author notes limitations: embedding choice for distances, possible need for hybrid continuous/lattice strategies, and that empirical benchmarking is still needed to quantify benefits."
   ],
   "related_papers": [
     "2018_PPPiP",
     "2022_MirrorTest",
     "2023_BlakeFuller"
-  ]
+  ],
+  "key_findings_evidence": [
+    "we review how integer lattice constraints yield integer volume quantization of tetrahedral simplexes, creating discrete “energy levels” that regularize optimization and enable integer-based optimization.",
+    "demonstrate numerical agreement at machine precision between the length-based Coxeter.4D approach (Cayley–Menger + S3 conversion) and the coordinate-based Fuller.4D approach (Ace 5×5)",
+    "The simplex volume (orange) exhibits discrete plateaus characteristic of integer-lattice optimization, where the Nelder–Mead algorithm can only move to integer coordinate positions.",
+    "regular tetrahedron (V=1, fundamental unit), cube (V=3), oc- tahedron (V=4), rhombic dodecahedron (V=6), cuboctahedron (V=20), and truncated octahedron (V=20)",
+    "Benchmarking: Empirical benchmarking remains important to quantify benefits across domains."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "review",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Synthetic review plus companion code; demonstrations are small illustrative examples. Manuscript self-describes as a work in progress that may contain errors."
+  }
 }

@@ -31,5 +31,53 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-07-17T18:52:46Z"
+  "checked_at": "2026-07-17T18:52:46Z",
+  "methods": [
+    {
+      "name": "Comparative reading of Blake's fourfold vision anchored in the 1802 Butts letter",
+      "description": "Uses Blake's November 1802 letter-poem to Thomas Butts and Blake scholarship (Calè, Groves) as historical evidence for the problem of plural seeing.",
+      "evidence": "The strongest historical anchor is not a geometric passage in Jerusalem but Blake’s letter-poem to Thomas Butts from November 1802."
+    },
+    {
+      "name": "Exact rational Quadray/tetrahedral geometry with face-visibility classifier",
+      "description": "Models a tetrahedron in Quadray coordinates with exact rational arithmetic and classifies faces visible from strictly exterior cameras by outward-normal dot products.",
+      "evidence": "For a camera at position c, a face is visible when its outward normal has positive dot product with the direction from the face centroid to c."
+    },
+    {
+      "name": "Proof of face cardinality via area-weighted face-plane dependence",
+      "description": "Proves that an exterior camera sees between 1 and 3 faces of any non-degenerate tetrahedron using the identity that area-weighted outward normals sum to zero.",
+      "evidence": "Because every 𝐴𝑓 is positive, the 4 distances cannot all be positive simultaneously."
+    },
+    {
+      "name": "Argument graph with 'golden thread' path, ledgers and rights gate",
+      "description": "Encodes claims in an argument graph traversed by a selected path, with citation/claim ledgers, a rights-aware corpus ledger, and pinned upstream checks.",
+      "evidence": "This project calls the solution a golden thread: a selected path through a larger argument graph."
+    },
+    {
+      "name": "Ablation of the tetrahedral model against four-channel and planar alternatives",
+      "description": "Compares the tetrahedral atlas with an abstract four-channel state and a four-sided planar model to show what each retains or loses.",
+      "evidence": "The ablation removes each contribution while retaining 4-channel language; the analogy becomes weaker but does not collapse."
+    }
+  ],
+  "key_findings": [
+    "For any non-degenerate convex tetrahedron viewed from a strictly exterior camera, one frame exposes 1, 2, or 3 faces, never 4, while an atlas of views can preserve all 4.",
+    "The author's central claim is a qualified structural analogy: Blake's fourfold vision is analogous to a tetrahedral totality, not a historical identity between Blake and Fuller.",
+    "The author argues the Fuller Conjecture becomes tractable when presentation is a coupled graph, atlas, and golden thread.",
+    "The ablation indicates the tetrahedron is useful but not necessary to Blake's language; it is chosen for usefulness rather than historical necessity.",
+    "The reproducible project contains 51 ledger entries and a golden-thread path of 10 nodes."
+  ],
+  "key_findings_evidence": [
+    "for any non-degenerate convex tetrahedron observed by a strictly exterior camera, one frame exposes 1, 2, or 3 faces, never 4; an atlas can preserve all 4 across successive views.",
+    "Quadray and Synergetics model partial observation and integration; they do not prove a historical identity between Blake and Fuller.",
+    "The Fuller Conjecture becomes tractable when presentation is a coupled graph, atlas, and golden thread: the graph preserves branches, the atlas preserves 4 faces across partial views, and the thread provides a route through the state.",
+    "This is why the model is selected for usefulness, not presented as a historical necessity or as a deduction from Blake.",
+    "The project contains 51 ledger entries and a golden thread of 10 nodes."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Humanities-plus-formal-geometry essay with reproducible software; the main formal result is a proved proposition about tetrahedral face visibility. The author explicitly disclaims historical influence claims."
+  }
 }

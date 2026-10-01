@@ -71,5 +71,54 @@
     "github_release_mentions_doi",
     "github_repo_self_linked"
   ],
-  "checked_at": "2026-09-24T18:29:57Z"
+  "checked_at": "2026-09-24T18:29:57Z",
+  "primary_pdf": "Friedman_2026_Templatepitchdeck_66941950.pdf",
+  "methods": [
+    {
+      "name": "Shared format-agnostic DeckContent/Slide content model with slide budgets",
+      "description": "Defines Slide, DeckContent and SlideBudget (short <=10, medium <=22, long <=45 slides) consumed by both renderers, with a pure function truncating decks to a budget.",
+      "evidence": "SlideBudget — the three published lengths (SHORT ≤10 slides, MEDIUM ≤22, LONG ≤45)"
+    },
+    {
+      "name": "Dual PDF (ReportLab) and PPTX (python-pptx) renderers with a parity test",
+      "description": "Renders the same resolved content via ReportLab canvas onto 16:9 pages and via python-pptx, with a test asserting PDF page count equals PPTX slide count.",
+      "evidence": "including a direct parity test that renders the same DeckContent through both paths and asserts the PDF page count equals the PPTX slide count."
+    },
+    {
+      "name": "{{TOKEN}} resolution against deck_tokens.yaml with fail-loud checks",
+      "description": "Resolves {{TOKEN}} placeholders from a token file of facts read live from the pitched project, raising on any unresolved token and checking output for leftover braces.",
+      "evidence": "resolve_tokens raises if any token in the content has no matching key in manuscript/deck_tokens.yaml"
+    },
+    {
+      "name": "Word-boundary cliché denylist lint over every resolved slide",
+      "description": "Runs a denylist of pitch-deck stock phrases (e.g. synergy, disrupt, 10x) across all slides at all three lengths before rendering, as part of an audit script.",
+      "evidence": "src/cliche_lint.py runs a word-boundary denylist of pitch-deck stock phrases over every resolved slide before render."
+    },
+    {
+      "name": "Negative-control fixtures proving validation gates fire",
+      "description": "Uses deliberately broken token and cliché-laden fixtures to show each audit failure mode triggers before trusting that the real content passes.",
+      "evidence": "both failure modes are proven to actually fire (a deliberately-broken fixture triggers each) before the real content is checked clean."
+    }
+  ],
+  "key_findings": [
+    "The tool generates six artifacts (short, medium and long decks, each as PDF and PPTX) from one token-resolved content source.",
+    "PDF and PPTX decks built from identical content carry identical slide counts and text, verified by reading back both file formats rather than by inspection.",
+    "Rendering is deterministic: given the same repository state, two consecutive runs produce byte-identical PDF and PPTX output, with generation time kept only in deck metadata.",
+    "No LLM/Ollama stage is required, since deck content is authored and token-resolved rather than model-generated at render time, keeping artifacts deterministic.",
+    "The flagship deck pitches template_template to a meta-science and science-integrity audience using problem, solution, proof (currently measured facts) and ask arc."
+  ],
+  "key_findings_evidence": [
+    "It generates six artifacts from one token-resolved content source — short, medium, and long decks, each in both PDF and PPTX",
+    "so a PDF and a PPTX built from identical content carry identical slide counts and identical text — verified by direct read-back of both file formats, not by inspection.",
+    "two consecutive runs produce byte-identical PDF and PPTX output. No wall-clock timestamps appear in slide content; the only place a generation time is recorded is deck metadata",
+    "requires no LLM/Ollama stage — deck content is authored and token-resolved, not generated at render time by a model call, which keeps the artifact deterministic",
+    "Every length follows the same arc: the problem (research communication and reproducibility are under-tooled), the solution"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Confirmed: text is 'template_pitch_deck: Reproducible, Validated Pitch-Deck Generation' (Friedman, 2026-07-08, DOI 10.5281/zenodo.21281509). Software/methods manuscript; claims about determinism and parity are the paper's own statements, with no separate quantitative evaluation reported. References section is empty in the extracted text."
+  }
 }

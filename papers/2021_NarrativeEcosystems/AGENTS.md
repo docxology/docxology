@@ -4,7 +4,7 @@
 
 **Paper**: Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier (2021)
 **Domain**: Cognitive Security
-**Authors**: Richard J. Cordes, Daniel A. Friedman (editors); Shaun Applegate-Swanson, V. Bleu Knight, Alexandra Mikhailova (chapter authors)
+**Authors**: Richard J. Cordes, Daniel A. Friedman
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems.., We explore communication in located teams and all-....
+- Extracts methods: Cross-field survey of information challenges (finance, ancestry, genomics, etc.), Rhetorical plus ecological analysis of image memes (DRE3 model), Exploratory bibliometric co-occurrence analysis via Google Scholar
+- Identifies findings: Chapter I proposes Narrative Information Management (NIM) as a unifying term and framework for features of systems that support collective sensemaking., Chapter II's authors argue a rhetorical approach in large-scale analyses of multimedia artifacts can improve tools for categorizing, indexing, searching and modeling online discourse., Chapter III's bibliometric analysis found variable couplings and differential keyword prevalence, describing an 'archipelago' of partially connected areas around knowledge management.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

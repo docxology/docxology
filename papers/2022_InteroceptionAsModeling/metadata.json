@@ -57,17 +57,27 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Transcripts of ActInf Livestream #050 sessions (50.0, 50.1, 50.2)",
+      "description": "Records three Active Inference Institute livestream discussions (Oct-Nov 2022) of the Biological Psychology paper 'Interoception as modeling, allostasis as control'.",
+      "evidence": "Hello and welcome. This is ActInf Livestream number 50.2. It's November 3, 2022, and it's it's our third discussion on this paper."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Background walkthrough by Friedman and Tickles (50.0)",
+      "description": "In 50.0 the hosts reviewed the paper's big questions, aims, abstract and roadmap before later sessions with authors.",
+      "evidence": "We're going to go over some big questions, basic aims and abstract roadmap of the paper, then go into the paper, touch on a few key points and images and themes"
+    },
+    {
+      "name": "Author slide presentation by Eli Sennesh with Jordan Theriault (50.1)",
+      "description": "Paper co-authors presented the model (Section 4: allostasis as stochastic optimal control) and took questions from participants.",
+      "evidence": "So now we start getting into really what scant visual material is available for section four, which I think we'll have to go over in detail in a more Q and A format a little bit."
     }
   ],
   "key_findings": [
-    "Transcript of discussions of the 2022 paper &ldquo;Interoception as modeling, allostasis as control&rdquo; by Eli Sennesh, Jordan Theriault, Dana Brooks, Jan-Willemvan de Meent, Lisa Feldman Barrett, ",
-    "Quigley&nbsp; https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350 Session 050.0, October 17, 2022&nbsp; https://www.youtube.com/watch?v=l7r0ISlr-Hc &nbsp; Session 050.1, October 20"
+    "As read in the session, the paper proposes studying allostasis in terms of control theory, with interoception providing performance feedback for allostasis.",
+    "Sennesh says the motivation was that real biological prior preferences cannot be fixed, raising how much must be learned over development rather than built in.",
+    "Sennesh summarizes that the model yields a notion of affordance competition via forward simulations of trajectories evaluated over time.",
+    "Sennesh states that normalizing to probability densities gives a common currency, so the model needs no separate reward currency.",
+    "Sennesh notes whether interoception is predictively coded below the neck remains an open empirical question."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -75,5 +85,19 @@
     "2021_ModelingConflict"
   ],
   "artifact_doi": "10.5281/zenodo.7400709",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7400709"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7400709",
+  "key_findings_evidence": [
+    "In this paper, we examine how interception may provide performance feedback for allostasis. We suggest studying allostasis in terms of control theory, reviewing control theory's applications to related issues in biology, motor control, and decision making.",
+    "And so that's really the motivation we're coming from in this paper, is what if you have to acquire or learn prior preferences throughout development? How little can you bake in?",
+    "So as a few summary points, our computational model gives us a useful notion of affordance competition. Basically run a bunch of forward simulations.",
+    "We don't need any more notion of a reward currency in this model.",
+    "So if you ask very basic questions like is interception predictably coded below the neck? That's still an open question."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "WORK-TYPE MISMATCH: this is a machine-transcribed livestream transcript (many ASR errors, e.g. 'interception' for 'interoception'), not the original paper. The original Biological Psychology paper is by Sennesh, Theriault, Brooks, van de Meent, Barrett & Quigley; the bibliography authors here are livestream participants. metadata.json lists resource_type 'Journal article' and generic filler methods ('Free energy minimization', 'Bayesian modeling and inference') and key_findings that just echo the description; these do not reflect the text."
+  }
 }

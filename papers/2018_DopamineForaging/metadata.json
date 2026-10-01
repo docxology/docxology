@@ -37,20 +37,8 @@
     "biogenic amines",
     "harvester ants"
   ],
-  "methods": [
-    {
-      "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays approach"
-    },
-    {
-      "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis approach"
-    }
-  ],
-  "key_findings": [
-    "Individual behavioral variation within colonies is shaped by neurochemical signaling.",
-    "Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa."
-  ],
+  "methods": [],
+  "key_findings": [],
   "related_papers": [
     "2016_AntGenetics",
     "2016_ForagingGene",
@@ -58,5 +46,10 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1016/j.isci.2018.09.001",
-  "doi_url": "https://doi.org/10.1016/j.isci.2018.09.001"
+  "doi_url": "https://doi.org/10.1016/j.isci.2018.09.001",
+  "summary_provenance": {
+    "source": "none",
+    "date": "2026-10-01",
+    "notes": "The folder previously held a byte-identical copy of the 2016 Proc. R. Soc. B foraging-gene PDF (papers/2016_ForagingGene) with its extracted text and images; they were removed. The iScience 2018 article (10.1016/j.isci.2018.09.001, open access) still needs to be archived here before methods and findings can be summarized."
+  }
 }

@@ -57,17 +57,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Synthetic 120-record measurement cohort with a fixed seed",
+      "description": "Analyzes a shipped deterministic CSV of height, weight and resting heart rate across three groups, with designed correlations and a few blank cells.",
+      "evidence": "The analysis uses a shipped, deterministic CSV fixture (data/measurements.csv) generated once with a fixed NumPy seed. It contains 120 subject records with the following columns:"
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Listwise deletion with a reported CleaningReport, no imputation",
+      "description": "clean_dataset() drops rows missing any numeric feature and records rows in, remaining and dropped, rather than imputing.",
+      "evidence": "This exemplar makes a deliberate choice — listwise deletion with a visible count — rather than imputation, because a first EDA pass should see the missingness, not paper over it."
+    },
+    {
+      "name": "Descriptive statistics, group means and Pearson correlation ranking",
+      "description": "Computes per-column summaries and per-group means, then ranks distinct feature pairs by absolute Pearson correlation via strongest_pairs().",
+      "evidence": "src/eda/correlation.py::correlation_matrix() returns the Pearson correlation matrix of the numeric columns [Tukey, 1977]."
+    },
+    {
+      "name": "Side-effect-free src/eda library with figure-data preparers",
+      "description": "Library functions return plot-ready frozen dataclasses (histogram bins, heatmap grid, category counts); only the thin script and notebook call matplotlib.",
+      "evidence": "Plotting is kept out of the library entirely."
+    },
+    {
+      "name": "Zero-mock pytest suite, notebook-binding check and >=90% coverage gate",
+      "description": "Tests exercise real data with exact expected statistics, parse the .ipynb to check imports and absence of cell-defined logic, and enforce coverage.",
+      "evidence": "Notebook test parses the real .ipynb and asserts it is valid nbformat, that every name imported from src exists in the library’s public surface, and that no cell defines its own def/class."
     }
   ],
   "key_findings": [
-    "Exploratory data analysis (EDA) is the most common entry point in applied\nresearch, yet it is also where reproducibility most often breaks down: logic\naccumulates in notebook cells that are never test",
-    "This paper presents the computational-notebook\nexemplar of the Research Project Template (https://github.com/docxology/template):\nan interactive walkthrough notebook\n(projects/templates/template_eda_n"
+    "With the shipped data, four rows with missing values are removed, leaving a complete-case dataset.",
+    "The correlation ranking recovers the designed strong positive height–weight relationship, with resting heart rate only weakly related.",
+    "All tests pass with coverage above the 90% project gate and no mocks.",
+    "The paper states its contribution is procedural: the same tested functions back the notebook, the headless script and the manuscript.",
+    "Stated limitations: a single small synthetic cohort, listwise deletion only, Pearson correlation only, and static outputs only."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -76,5 +96,19 @@
   ],
   "related_software": [
     "docxology/template_eda_notebook"
-  ]
+  ],
+  "key_findings_evidence": [
+    "With the shipped data, four rows are removed, leaving a complete-case dataset for the analysis below.",
+    "On the shipped data the dominant relationship is height about weight (a strong positive correlation, by design), followed by the comparatively weak",
+    "All tests pass with coverage exceeding the 90% project gate, with no mocks.",
+    "The analytical steps here are standard. The non-standard contribution is procedural: the same tested functions in src/eda/ back the interactive notebook, the headless analysis script, and this manuscript",
+    "Dataset size: a single small synthetic cohort (120 rows) is used for transparent, fast reproduction; no large-scale or streaming data is handled."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Template/exemplar manuscript for the Research Project Template; data are synthetic by design and modelling/inference is explicitly out of scope. The manuscript deliberately omits concrete summary-statistic values."
+  }
 }

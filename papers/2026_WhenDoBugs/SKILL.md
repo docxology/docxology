@@ -20,13 +20,23 @@ This work addresses topics in **Computational**: insect olfaction, infrared dete
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Integration of literature morphometrics, ATR-FTIR evidence, ORN timing, and EM models** — Combines published sensilla ranges, FTIR insect-chemistry evidence, olfactory neuron timing constraints, and deterministic electromagnetic models.
+- **Coarse atmospheric IR transmission window model with sensitivity terms** — A baseline window model plus humidity, temperature, scattering, and path-length terms, explicitly framed as a scenario generator.
+- **Quarter-/half-wave resonance estimates for sensilla as dielectric antennas** — Representative sensilla classes, anchored to published Thripidae measurements, are compared against IR wavelengths via resonance and waveguide calculations.
+- **Unit-tested deterministic code (CohereAnts) with fixed seeds and coverage gate** — All models are implemented in tested src/ modules with seed 42 and a 90% coverage gate, with seven appendix case studies.
+- **Preregistered IR-only assay protocols with thermal-matched controls** — Specifies single-sensillum electrophysiology, behavioral IR-only assays, and SEM morphometrics with QCL/LED bands and N>=50 per condition.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The computed figures show where sensillum dimensions, CHC-associated mid-IR bands, and atmospheric windows overlap, but do not by themselves establish biological IR olfaction.
+- The framework yields five preregistered falsifiers, including spectral nulls under matched thermal load and geometric mismatch between sensilla and predicted resonances.
+- Published insect ORN timing is fast enough that any IR stage would need to be experimentally separated from already-rapid molecular responses.
+- Beetle, kissing-bug, ant, cycad, and mosquito examples establish radiant IR sensing precedents but not direct semiochemical IR olfaction.
+- Automated peak detection identifies CHC-associated bands that can support species discrimination in ATR-FTIR data, though perceptual use is untested.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20450880`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

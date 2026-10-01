@@ -27,17 +27,37 @@
   ],
   "methods": [
     {
-      "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays approach"
+      "name": "Field hydration manipulation of marked P. barbatus foragers",
+      "description": "Foragers from five colonies were cold-anesthetized, paint-marked by treatment, given 0.2 μL water or none, returned to the nest, and their next-day foraging trips counted.",
+      "evidence": "Ants in the hydrated treatment group were marked with a different color of paint, and administered 0.2 μL of pure water (Millipore)."
     },
     {
-      "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis approach"
+      "name": "Vapor Pressure Deficit regression of hydrated/unhydrated trip ratio",
+      "description": "Field temperature and humidity (iButton) were combined into VPD and regressed (linear vs quadratic, AIC/ANOVA) against the ratio of hydrated to unhydrated trips.",
+      "evidence": "A linear regression was performed with the ratio of hydrated to unhydrated foraging trips as the dependent variable and VPD as the independent variable."
+    },
+    {
+      "name": "Laboratory desiccation assays on 74 foragers from 24 colonies",
+      "description": "Ants were held over Drierite at about 40 °C and weighed every 20 minutes, recording time to morbidity and death, blinded, to derive water loss rates and water contents.",
+      "evidence": "We used desiccation experi- ments to compare the physiological characteristics of N = 74 foragers from N = 24 colonies."
+    },
+    {
+      "name": "Colony grouping by offspring success and foraging regulation",
+      "description": "Colonies were classified by prior parentage-analysis offspring status and by whether they reduce foraging in dry conditions, then compared with Wilcoxon and Chi-square tests.",
+      "evidence": "we classified colonies into two groups according to whether they reduced foraging activity in response to dry conditions"
+    },
+    {
+      "name": "PCA of five water-loss physiology measures",
+      "description": "Principal Component Analysis (factoextra in R) on water contents, times to morbidity and death, and area-independent water loss rate.",
+      "evidence": "We used Principle Component Analysis using the “factoextra” package64 to examine how forager water loss physiology was associated colony reproductive success"
     }
   ],
   "key_findings": [
-    "Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected..",
-    "Here we present field experiments showing t...."
+    "Pooled across five colonies, hydrated ants made 1.18-fold more foraging trips than unhydrated nestmates (paired Wilcoxon p = 0.0006).",
+    "The hydration effect on foraging grew with desiccation risk (VPD), with a quadratic model fitting better than linear, supporting a non-linear effect.",
+    "Foragers from colonies that reduce foraging in dry conditions lost water faster and reached morbidity and death sooner, without differing in total or critical water content.",
+    "Surprisingly, colonies with offspring colonies had foragers with lower desiccation tolerance, which the authors suggest may reflect more cautious, water-conserving foraging.",
+    "The authors infer that an ant's threshold response to olfactory interactions that trigger foraging is influenced by its current hydration level."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -46,5 +66,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1038/s41598-019-41586-3",
-  "doi_url": "https://doi.org/10.1038/s41598-019-41586-3"
+  "doi_url": "https://doi.org/10.1038/s41598-019-41586-3",
+  "key_findings_evidence": [
+    "Pooling data from all colonies, hydrated ants made 1.18-fold more foraging trips than their unhydrated nestmates (3125 trips for hydrated versus 2652 trips for unhydrated ants from 5 colonies, paired sample Wilcoxon signed-rank test, p = 0.0006, Table 1).",
+    "This supports a non-linear effect of VPD on the influence of hydration on foraging trips.",
+    "Thus, differences among colonies in desiccation tolerance do not appear to be due to dif- ferences in initial water balance, but instead to differences in water loss rates across the cuticle.",
+    "Colonies with higher reproductive success, that had offspring colonies, had lower desiccation tolerance (Fig. 2).",
+    "indicates that an ant’s threshold response to olfactory interac- tions is influenced by its current hydration level."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "empirical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Authors caveat that the hydration experiment measured each of 5 colonies only once, so colony-specific sensitivity to hydration could not be determined."
+  }
 }

@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Fixed-step gradient descent on a 1-D convex quadratic (A=1, b=1)** — Runs fixed-step gradient descent on f(x)=½xᵀAx−bᵀx with A=[1], b=[1], analytic optimum x*=1, f(x*)=−0.5.
+- **Six-point step-size grid from α=0.01 to α=2.5** — Sweeps six fixed step sizes spanning conservative, near-optimal, aggressive and divergent regimes, with a gradient-norm tolerance and iteration cap.
+- **Comparison to scalar contraction factor ρ(α)=|1−α|** — Relates empirical iteration counts and error decay to the contraction factor of the linear error recurrence for the unit-Hessian case.
+- **Stability grid (8 starts × 6 step sizes) and dimensional scaling benchmark** — Evaluates accuracy over 48 start/step-size combinations and separately times gradient_descent() on identity-Hessian quadratics of increasing dimension.
+- **Zero-mock test suite with ≥90% coverage gate and variable-injected manuscript** — Tests src/ without mocks under a CI coverage gate; results are injected into the manuscript from the analysis CSV via placeholders.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- Four of the six grid step sizes converged; the non-converged runs either hit the iteration cap at small α or were unstable when |1−α| ≥ 1.
+- α=1.0 reached the optimum in one iteration for this unit-Hessian problem, the fastest configuration.
+- The paper reports a stability boundary at α=2: α<2 converges and α≥2 diverges for the unit-Hessian problem.
+- In the dimensional benchmark, iterations to convergence rose only modestly (219 to 238) across two decades of dimension.
+- The author states the scientific claims are textbook material and the non-standard contribution is procedural (config-driven figures, CSV and manuscript numbers).
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

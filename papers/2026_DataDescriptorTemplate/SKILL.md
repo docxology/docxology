@@ -20,13 +20,22 @@ This work addresses topics in **Active Inference**: data descriptor, FAIR data, 
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Synthetic demo dataset: two CSV fixtures plus JSON descriptor** — Ships two small deterministic synthetic CSV files (measurements, subjects) described by a machine-readable descriptor with checksums and row counts.
+- **Six-field data dictionary with typed constraints** — Declares six fields with types, nullability, units, regex patterns, closed enumerations and numeric bounds for the measurement table.
+- **Order-independent sha256 schema fingerprint** — descriptor_fingerprint() hashes (name, type, nullable) triples so reordering fields does not change the schema fingerprint.
+- **Validation gate with readiness score and perturbed negative control** — validate_descriptor() emits severity-tagged findings folded into a readiness score; a deliberately broken copy tests that the gate reacts.
+- **Byte-level descriptor-to-file verification** — verify_descriptor_files() recomputes sha256 and row counts of present files and reports verified, mismatch, or absent status.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The clean fixture descriptor produces zero validation findings, while the deliberately perturbed demo produces several errors and warnings.
+- For the shipped fixture, both files verify: declared and actual row counts agree and each recomputed checksum matches, leaving the readiness score unpenalised.
+- The paper reports that its zero-mock test suite exceeds the 90% project coverage gate.
+- The work explicitly makes no scientific claim about the synthetic data; claims are limited to how to describe and release a dataset.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -52,5 +61,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21298883`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

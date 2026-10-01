@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Generalized Notation Notation (GNN) modeling, Active Inference simulation, Portfolio optimization analysis
-- Identifies findings: t-RSI metric recovers as standardized EFE-improvement certificate for recursive self-improvement, Corporate EWM maps to five-channel hidden-state factors: Investments, Sensors, Actuators, Parameters, R&D, Epistemic value equals information gain about EWM purchased by Sensors/R&D (data-scaling law)
+- Extracts methods: Construct-by-construct AlphaFund-to-Active Inference dictionary, GNN model file of the five-channel firm produced via the COGANT pattern, Deterministic tested NumPy Active Inference engine (src/alphacogant/)
+- Identifies findings: The paper argues AlphaFund's recursive-self-improvement-as-portfolio-optimization has an Active Inference representation that is expressible in GNN and producible by the COGANT pattern., t-RSI is recovered as the standardized distance between create-rate and decay-rate posteriors, i.e. a thresholded EFE-improvement certificate gating self-improvement commits., At point-estimate level the comparator discriminates: create exceeds decay (admit) at the self-improving point and falls below it (reject) at the coasting point.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

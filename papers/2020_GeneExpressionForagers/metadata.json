@@ -30,17 +30,37 @@
   ],
   "methods": [
     {
-      "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays approach"
+      "name": "Single-forager brain RNA-seq from nine field colonies of P. barbatus",
+      "description": "Foragers collected on one morning near Rodeo, New Mexico had single brains sequenced on Illumina HiSeq 4000, yielding 85 transcriptomes from 9 colonies.",
+      "evidence": "Ten brains from each of the nine colonies were sent for sequencing. Five samples were discarded before the library preparation phase, resulting in n = 85 high- quality single-forager brain transcriptomes."
     },
     {
-      "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis approach"
+      "name": "Expression-trait correlations with humidity sensitivity and brain DA:5HT",
+      "description": "Gene expression was correlated with colony sensitivity of foraging to humidity and forager brain dopamine-to-serotonin ratio, at colony-mean and per-sample levels.",
+      "evidence": "Correlations were calculated in two different ways: a measure of a colony trait with colony average expression regression (N = 9 points), and a measure of a colony trait with per-sample expression level (N = 85 points)."
+    },
+    {
+      "name": "PCA and linear discriminant analysis of transcriptomes by colony",
+      "description": "PCA on TPM expression, with 30 components retained for LDA stratified by colony, tested whether forager transcriptomes carry a colony signature.",
+      "evidence": "Thirty principal component dimensions were retained for the LDA, with colony used as a stratifying factor."
+    },
+    {
+      "name": "WGCNA signed coexpression network with iterative module-density filtering",
+      "description": "Coexpression modules were built in the R WGCNA library and iteratively filtered to retain densely interconnected modules, leaving 7085 genes.",
+      "evidence": "WGCNA was performed as described, in the R WGCNA library43,65–67. Signed Pearson correlations were computed for all gene–gene pairs to generate a symmetric correlation matrix"
+    },
+    {
+      "name": "dN/dS against honey bee and five ant species, modeled with a GLM",
+      "description": "Coding-sequence constraint was estimated with orthologr and related to coexpression centrality and trait correlation in a generalized linear model.",
+      "evidence": "We used a generalized linear model to consider how coexpression centrality and correlation with colony traits were associated with evolutionary coding sequencing constraint (dN/dS)"
     }
   ],
   "key_findings": [
-    "Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects..",
-    "Here we characterize transcriptomic profiles of foragers compar...."
+    "Forager brain gene expression patterns were more similar among nestmates than non-nestmates, with substantial variability within colonies as well.",
+    "A fraction of colony expression differences were associated with humidity sensitivity of foraging and forager brain DA:5HT ratio.",
+    "Neurotransmitter receptors as a category were significantly correlated in expression with colony sensitivity of foraging activity to humidity.",
+    "Gene coexpression analysis identified 11 modules of loci with coordinated expression patterns across colonies.",
+    "Genes more central to coexpression modules were more correlated with colony traits and evolving under increased coding-sequence constraint."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -49,5 +69,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1038/s42003-020-0813-8",
-  "doi_url": "https://doi.org/10.1038/s42003-020-0813-8"
+  "doi_url": "https://doi.org/10.1038/s42003-020-0813-8",
+  "key_findings_evidence": [
+    "We found that forager brain gene expression patterns were more similar among nestmates than non- nestmates. There was also substantial expression variability within a colony",
+    "a fraction of these gene expression differences are associated with two colony traits: sensitivity of foraging activity to humidity, and forager brain dopamine to serotonin ratio.",
+    "Neuro- transmitter receptors as a category were signiﬁcantly correlated in their expression pattern with colony sensitivity of foraging activity to humidity.",
+    "Gene coexpression analysis identiﬁed 11 modules of loci with coordinated expression patterns across colonies.",
+    "Genes with expression patterns more central to coexpression modules tended to be more correlated with colony traits and also evolving under increased coding sequence constraint."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "empirical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Authors note limits: no within-colony behavioral measurements, whole-brain (not region or single-cell) tissue, and no fitness estimates for this set of colonies."
+  }
 }

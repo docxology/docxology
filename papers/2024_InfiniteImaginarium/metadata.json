@@ -65,21 +65,43 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Visual and symbolic analysis",
-      "description": "Applied visual and symbolic analysis approach"
+      "name": "Spatial metaphor of Known territory, Gray Zone, and Dark Imaginarium",
+      "description": "The essay frames inquiry as a situation divided into known, peripheral, and unknown territories.",
+      "evidence": "The Gray Zone is an ever-receding forager-specific situational periphery."
     },
     {
-      "name": "Cross-domain pattern mapping",
-      "description": "Applied cross-domain pattern mapping approach"
+      "name": "Domino and Jenga-tower metaphors for speech acts and questions",
+      "description": "Uses stacked dominoes for uttered phonemes and verbal expression, and a Jenga tower for a question built by the questioner.",
+      "evidence": "A question is like a Jenga tower assembled by the questioner"
+    },
+    {
+      "name": "Illustrative student-librarian example (Alice and Bob)",
+      "description": "Walks through Alice asking librarian Bob where a geometry book is to illustrate factual versus tacit know-how responses.",
+      "evidence": "Alice the student constructs a stack of dominos to asks the librarian Bob a Quantum Question about where a Geometry book is"
     }
   ],
   "key_findings": [
-    "Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration.",
-    "Analysis of The work..."
+    "The essay contrasts \"gap-filling\" epistemic modes (solid, wide, slow) with \"gap-respecting\" modes (diaphanous, fast).",
+    "It argues that responding to a question involves at least two archetypal modes: resolving it toward known answers, or \"canal jumping\" to reframe it.",
+    "The second response mode is said to reflect Subject Matter Expertise and also present as Prediction Matter Expertise.",
+    "It concludes that language is gap-respecting."
   ],
   "related_papers": [
     "2018_PPPiP",
     "2022_MirrorTest",
     "2023_BlakeFuller"
-  ]
+  ],
+  "key_findings_evidence": [
+    "“Gap-respecting” epistemic modes are diaphanous and fast",
+    "you are always already in a situation where your agency over the strategy of the response contains (a minimum of) two archetypal modes.",
+    "the second mode reflects 12 the Subject Matter Expertise AND presents as Prediction Matter Expertise.",
+    "Language is gap-respecting even in funda-Mental Tet-essence"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "other",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Short conceptual/poetic essay with no empirical methods; 'methods' are the rhetorical framings and worked example the essay uses. One quote retains an inline footnote marker ('12') from extraction."
+  }
 }

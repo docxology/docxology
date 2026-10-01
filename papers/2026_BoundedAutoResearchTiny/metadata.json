@@ -219,17 +219,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Offline MNIST subset: 2000 train / 500 test images, seed 20260525",
+      "description": "Uses a committed, class-balanced local MNIST subset with recorded provenance hashes; no data are downloaded at runtime.",
+      "evidence": "The subset contains 2000 training images and 500 test images, with 10 classes present in both splits and image shape 28 by 28."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Bounded candidate search over MLP, softmax, nearest-centroid, patch-attention",
+      "description": "Evaluates at most 4 configured candidates against a nearest-centroid baseline, choosing by test accuracy with deterministic tie-breaks.",
+      "evidence": "The loop evaluates at most 4 configured iterations, selects the highest test_accuracy, and breaks ties by lower parameter count and identifier."
+    },
+    {
+      "name": "Seven-stage AutoResearch pipeline with file-backed ledgers",
+      "description": "Runs 7 configured stages, writing proposal, candidate, run, phase and review ledgers that hydrate manuscript variables.",
+      "evidence": "The run follows 7 configured stages: • Resolve the human-authored program, project topic, and research questions."
+    },
+    {
+      "name": "Safety controls: proposal-only autonomy, no LLM calls, deferred review",
+      "description": "Defaults to proposal_only autonomy, records 0 LLM calls and no cost, never executes generated code, and leaves publication approval to a human.",
+      "evidence": "The default autonomy level is proposal_only. The run ledger records 0 LLM calls and USD 0.00 cost."
+    },
+    {
+      "name": "Statistical diagnostics: Wilson intervals, bootstrap, McNemar, calibration",
+      "description": "Reports Wilson score intervals, deterministic bootstrap intervals, paired discordance tests, Brier score and negative log likelihood.",
+      "evidence": "binomial accuracy intervals use Wilson-style score intervals [Wilson, 1927], matched classifier comparison is summarized through paired discordance [Dietterich, 1998],"
     }
   ],
   "key_findings": [
-    "This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that\nturns an AutoResearch loop into ordinary reproducible research infrastruct",
-    "The case study is intentionally small but concrete: 2000 training\nand 500 test images from MNIST handwritten digit database are evaluated by the\nbounded small MNIST neural-network classification loop."
+    "The loop selected exp-mlp-tanh-64 after evaluating 4 of 5 proposed candidates, raising test accuracy from the 82.6% baseline to 89.4%.",
+    "Diagnostics report macro F1 of 89.4%, a bootstrap accuracy interval of 86.4% to 92.0%, and top-2 accuracy of 95.6%.",
+    "The selected candidate was top-ranked in 72.5% of deterministic bootstrap resamples, with exp-mlp-relu-32 as runner-up.",
+    "The local security attestation passed with 0 checksum mismatches, and readiness passed with review gates deferred to a human.",
+    "The paper states its contribution is not a new MNIST classifier but a template showing bounded AutoResearch run through a reproducible-paper lifecycle."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -238,5 +258,18 @@
   ],
   "related_software": [
     "docxology/template_autoresearch_project"
-  ]
+  ],
+  "key_findings_evidence": [
+    "The nearest_centroid_baseline (nearest-centroid) baseline reached 82.6% test_accuracy, while the selected candidate reached 89.4%, an absolute change of 6.8%.",
+    "The validated diagnostic layer reports macro F1 89.4%, bootstrap accuracy interval 86.4% to 92.0%, Brier score 0.161, negative log likelihood 0.361, top-2 accuracy 95.6%",
+    "Rank-stability diagnostics report that the selected candidate is top ranked in 72.5% of deterministic bootstrap resamples, with runner-up exp-mlp-relu-32.",
+    "The local security attestation status is passed, with 0 checksum mismatch(es). The final readiness status is passed, with review gates deferred to a human rather than self-approved by the generated run.",
+    "The contribution is not a new MNIST classifier. It is a template-level demonstration of how bounded AutoResearch can be orchestrated through the same lifecycle used for reproducible papers"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge."
+  }
 }

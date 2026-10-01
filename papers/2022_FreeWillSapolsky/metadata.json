@@ -52,22 +52,40 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Genomic and bioinformatic analysis",
-      "description": "Applied genomic and bioinformatic analysis approach"
+      "name": "Written Q&A interview of Robert Sapolsky by Mikhailova and Friedman",
+      "description": "The interviewers pose questions on free will, consciousness, law, and education; Sapolsky answers in prose, anticipating his book Determined.",
+      "evidence": "In this interview, Robert Sapolsky outlines his view on Free Will and related topics."
     },
     {
-      "name": "Statistical genetics",
-      "description": "Applied statistical genetics approach"
+      "name": "Questions seeded from Sapolsky's prior podcast appearances",
+      "description": "The opening question picks up statements Sapolsky made on the Huberman, Here We Are, and Freakonomics Radio podcasts.",
+      "evidence": "Recently you have appeared on various podcasts such as with Prof. Andrew Huberman (Huberman & Sapolsky, 2022), Here We Are (Mauss & Sapolsky, 2022), and Freakonomics Radio"
     }
   ],
   "key_findings": [
-    "In this interview, Robert Sapolsky outlines his view on Free Will and related topics..",
-    "The discussion anticipates his upcoming book Determined: The Science of Life Without Free Will..",
-    "Various topics are covered at the intersection of neuroscience with philosophy, education, and the criminal justice system.."
+    "Sapolsky states he is fully convinced humans have no free will, a view he says he has held since adolescence.",
+    "Sapolsky argues that our conscious sense of agency is usually a post-hoc attribution.",
+    "Responding to claims that disbelief in free will increases cheating, Sapolsky says those studies have not been replicated and that people already disbelieving are not less ethical.",
+    "Sapolsky cites roughly a 35% rise in likelihood of serious anti-social behavior with each increase in childhood adversity, arguing group-level science bears on legal responsibility.",
+    "Sapolsky says a key lesson to teach researchers is the very limited usefulness of reductionism, given chaos and emergent complexity."
   ],
   "related_papers": [
     "2015_CryptoJews",
     "2015_EhrlichialInfection",
     "2015_HoneyBeeEvolution"
-  ]
+  ],
+  "key_findings_evidence": [
+    "I am 100% convinced that we have no free will at all, and have thought that since I was an adolescent.",
+    "Our conscious sense of agency is usually post-hoc attributions to make sense of what you just did.",
+    "a) those studies haven’t been replicated; b) when you look at people who come into the study ALREADY believing there is no free will",
+    "there is about a 35% increase in the likelihood of them committing some serious (including criminal) anti-social behavior.",
+    "My personal bias is that one of the most important things to teach, is that people realize the very limited use of reductionism in science."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Interview; findings are Sapolsky's stated views, not empirical results of this work. Extraction substitutes odd glyphs for ligatures (e.g. 'ʿ' for 'fi', 'ʮ' for 'Th') in Sapolsky's answers, so quotes were chosen from clean passages."
+  }
 }

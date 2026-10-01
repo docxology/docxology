@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: 4D mathematical analysis and visualization, Analytical geometry and topological methods
-- Identifies findings: Higher-dimensional geometry provides novel mathematical foundations for cognitive modeling and representation, 4D visualization techniques significantly improve interpretability of abstract cognitive state representations
+- Extracts methods: Three-namespace framing of '4D': Coxeter.4D, Einstein.4D, Fuller.4D, Nelder–Mead adapted to the integer Quadray lattice with volume tracking, Fisher information and natural gradient in Quadray parameter space
+- Identifies findings: The review describes how integer lattice constraints quantize tetrahedral simplex volumes into discrete 'energy levels' that regularize optimization., Bridging (Cayley–Menger + S3) and native (Ace 5x5) tetravolume computations agree at machine precision on the tested integer-Quadray examples., On a simple quadratic objective, the discrete Nelder–Mead converges with simplex volume showing discrete plateaus characteristic of integer-lattice optimization.
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR

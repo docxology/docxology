@@ -18,11 +18,19 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Proposed stipended community working groups to co-create playbooks** — The letter proposes Institute officers coordinating weekly working groups of paid community members to co-create Active Inference playbooks for target audiences.
+- **Planned use of generative AI for multi-language, multi-level materials** — Generative AI is proposed to make playbook materials available across languages, media, and levels of technical detail.
+- **Planned multi-perspective Summer School curriculum design** — A Summer School course is proposed that teaches Active Inference principles from sociology, philosophy, mathematics and linguistics perspectives.
+- **Planned evaluation via advisory board review, interviews, and surveys** — Progress is to be evaluated through quarterly internal feedback, interviews with target groups, and surveys of Summer School participants.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The letter commits to producing playbooks for Active Inference adoption targeted at neuroscience graduate students, educators and policy-makers.
+- It commits to an open-source Summer School curriculum in Active Inference, supporting an in-person 2025 event and versioned over subsequent years.
+- The Summer School template is to be published openly so that groups worldwide can run their own courses.
+- The proposed budget totals $100,000, split between personnel for the two initiatives and computing resources.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

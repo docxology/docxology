@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data. We develop a Digital Rhetorical Ecosystem three-tiered model (DRE3) that explains how memes impact public narratives and beliefs through parsimony, polysemy, and identity construction. The DRE3 model provides a framework for designing systems for computational...
+> This paper makes a case for integrating frameworks from two different knowledge domains, rhetorical studies and ecological studies, to catalog, monitor, and study digital image meme data, in order to support a more robust understanding of how memes produce and disseminate online narratives. In the digital public sphere, the primacy of image-based communication motivates an over-reliance on the...
 
 ## Keywords
 
@@ -18,13 +18,20 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Mapping concepts between rhetorical studies and ecology** — The authors extend existing links between rhetoric and ecology, proposing ecological-rhetorical mappings (e.g., predator-prey style relations between communities) for digital discourse.
+- **Three-phase DRE3 analysis: entity, rhetorical, hidden-state identification** — Image memes are analysed in three phases: identifying visual entities, tracing their relationships into claims and warrants, and inferring deeper hidden states of the ecosystem.
+- **Qualitative 'boutique' case analyses of two image memes** — The DRE3 model is applied to one meme without text (Bob Ross / G.W. Bush) and one with text (Bill Murray) to show the three tiers.
+- **Blueprint of a meme-analysis pipeline styled as a SCADA system** — The authors sketch a Supervisory, Control, and Data Acquisition style pipeline for collecting, annotating, analysing, and disseminating image memes at scale.
 
 ## Key Findings
 
-- makes a case for integrating frameworks from two different knowledge domains, rhetorical studies and ecological studies, to catalog, monitor, and study digital image meme data, in order to support a more robust understanding of how memes produce and disseminate online narratives..
-- In the digital public sphere, the primacy of image-based communication motivates an over-reliance on the image meme for public argumentation..
-- Despite its ubiquity, the image meme format is currently understudied in large scale digital data analyses, relative to text -based formats such as natural language and hashtags..
+- The authors argue that a rhetorical approach, emphasizing message form and audience, can improve large-scale tools for categorizing, indexing, searching, and modeling online discourse.
+- They introduce the Digital Rhetorical Ecosystem three-tiered model (DRE3) to explain how memes affect public narratives and beliefs.
+- They suggest current software can perform many sub-tasks of image-meme rhetorical analysis, with crowd-sourced annotation filling gaps where software is insufficient.
+- Despite meme polysemy, the authors hold that it is possible and useful to identify the dominant argument encoded in an image meme.
+- The paper closes with recommendations, such as curating patterns in image-meme rhetorical structure and protecting user identity, privacy, and preferences in cataloging schemes.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

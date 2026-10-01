@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models. The project, facilitated through the Active Inference Institute, investigates how diffusion processes can be understood and enhanced through the lens of free energy minimization, with applications to generative AI...
+> This document is a call for participation in the initiative "Towards Active Diffusion: A Tale of Multiple (den)Cities" (2023-AD). The work will characterize mathematical formalisms and computational applications of Active Inference and Diffusion Models, and explore relevant applications.
 
 ## Keywords
 
@@ -18,11 +18,17 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Proposed theoretical analysis of formal relations between ActInf and diffusion models** — The catechism plans (for 2023) an analytical paper and literature review comparing Latent Diffusion Models with belief propagation in Active Inference.
+- **Proposed integration of diffusion models into the Active Inference formalism** — Planned applied work: build on existing implementations and design experiments testing DMs as learned representations within the action-perception loop.
+- **Proposed cadCAD-based multi-agent work extending Active Blockference** — Plans to use the cadCAD complex adaptive dynamics package for cognitive ecosystem design and to extend the Active Blockference package.
 
 ## Key Findings
 
-- Analysis of The project, f...
+- The document states the 2023-AD mission: characterizing mathematical formalisms and computational applications of Active Inference and Diffusion Models.
+- It identifies shared ground between ActInf and DMs, including that both draw on stochastic thermodynamics for their internal representations.
+- It proposes that LDMs' compression of high-dimensional input into latent representations is analogous to how ActInf agents encode beliefs about their environment.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

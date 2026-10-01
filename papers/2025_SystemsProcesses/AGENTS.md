@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Slides for a session at "Enduring Patterns, Emerging Futures: Celebrating Dr.., Len Troncale", an online event in September 2025 https://troncale.sched.com/ ..
+- Extracts methods: Mapping of SoSPT systems processes onto Active Inference concepts, Terminology alignment via the Active Inference Ontology, Curated literature pointers per systems process
+- Identifies findings: The talk presents the Free Energy Principle's Markov blankets as a formalisation of the systems process of Boundaries., The slides claim applied Active Inference adds computable, typable translations plus open-source education and software to the systems-processes view.
 - Maps contributions to Presentations & Media literature
 
 ### 🎓 EDUCATOR

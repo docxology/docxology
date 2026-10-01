@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: See paper
-- Identifies findings: See paper
+- Identifies findings: Sets out procedures, protocols and etiquette for asynchronous, remote catechism-based writing teams, organized by before, during and after the project., Recommends that teams converge on a writing approach, describing at least five styles: single primary writer, partition, joint, scribe and hybrid., Advises that changes to approaches, processes and expectations be declared and compared against the catechism to prevent mission creep.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

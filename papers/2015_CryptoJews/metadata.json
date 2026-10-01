@@ -28,20 +28,22 @@
   ],
   "methods": [
     {
-      "name": "Uniparental marker haplotype analysis",
-      "description": "Applied uniparental marker haplotype analysis approach"
+      "name": "Critical commentary on Nogueiro et al. (2015) uniparental-marker study",
+      "description": "Evaluates the Y-chromosome and mtDNA evidence and inferences of Nogueiro et al. on Portuguese crypto-Jews via two stated critiques.",
+      "evidence": "Nogueiro et al. (2015) utilize Y chromosome and mitochondrial genotype data from a contemporary Iberian and non-Iberian human populations to explore the genetic identity of Portuguese “crypto-Jews.”"
     },
     {
-      "name": "Population genetic admixture modeling",
-      "description": "Applied population genetic admixture modeling approach"
-    },
-    {
-      "name": "Molecular clock and phylogenetic inference",
-      "description": "Applied molecular clock and phylogenetic inference approach"
+      "name": "Comparison against prior work on Jewish haplotype motifs",
+      "description": "Uses Tofanelli et al. (2014) and related studies to assess whether the cited haplotypes are diagnostic of Jewish ancestry.",
+      "evidence": "A recent study (Tofanelli et al., 2014) finds that Jewish haplotype motifs in much previous work are inadequate for “forensic or genealogical purposes,”"
     }
   ],
   "key_findings": [
-    "Population genetics critique of uniparental marker methodology for inferring Jewish ancestry in Iberian crypto-Jewish communities"
+    "The authors argue the reviewed data are ambiguous for inferring Jewish ancestry and do not identify diagnostic patrilineal or matrilineal markers.",
+    "Many 'Jewish' haplotypes cited are pan-Middle Eastern markers also common in Arabic lineages, so their ancestry is ambiguous.",
+    "The commentary contends the 'complex mating strategies' hypothesis was not tested against demographic or admixture models, and small uniparental samples cannot support robust conclusions.",
+    "The authors propose that admixture in the Bragança Jews and a bottleneck in the Belmonte Jews could be statistically evaluated with existing demographic models.",
+    "They conclude the results offer no concrete support for specific claims about the mating habits, beliefs, or praxis of these historical Jewish populations."
   ],
   "related_papers": [
     "2015_EhrlichialInfection",
@@ -50,5 +52,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.3389/fgene.2015.00261",
-  "doi_url": "https://doi.org/10.3389/fgene.2015.00261"
+  "doi_url": "https://doi.org/10.3389/fgene.2015.00261",
+  "key_findings_evidence": [
+    "Specifically, the data are ambiguous with regards to the inference of Jewish ancestry and do not identify diagnostic patrilineal or matrilineal markers.",
+    "are pan-Middle Eastern markers— common in self-identified Jews, but also in multiple Arabic lineages. Thus, these haplotypes are of ambiguous ancestry",
+    "Small sample sizes of uniparental markers, as used in Nogueiro et al. (2015), are unable to draw robust conclusions.",
+    "Hypotheses of admixture in the Bragança Jews and a bottleneck in the Belmonte Jews could be statistically evaluated using extant demographic models.",
+    "The results and analysis oﬀer no concrete support for speciﬁc statements about the mating habits, beliefs, and/or praxis of these historical Jewish populations."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "commentary/policy",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "General commentary; no new data or analyses — methods describe the critique's approach."
+  }
 }

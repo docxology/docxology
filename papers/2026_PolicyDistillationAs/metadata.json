@@ -63,17 +63,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Formal mapping of OPD roles onto active-inference variational objects",
+      "description": "Teacher policy is read as the generative model, student policy as the approximate posterior, and per-token reverse-KL loss as variational free energy.",
+      "evidence": "In the construction, the intractable teacher policy plays the role of the generative model"
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Bernoulli-Ising oracle with closed-form and recomputed mutual-information sweeps",
+      "description": "A binary toy couples a teacher's privileged variable to the answer through a coupling parameter; MI and the free-energy gap are computed analytically.",
+      "evidence": "A Bernoulli-Ising oracle couples a teacher’s privileged variable to the answer through"
+    },
+    {
+      "name": "pymdp T-maze rollout with sophisticated-inference planning",
+      "description": "A pymdp agent samples its own observations under a privileged cue, serving as the on-policy student process witness.",
+      "evidence": "A pymdp T-maze rollout supplies the on-policy student that samples its own observations under a privileged cue"
+    },
+    {
+      "name": "Two-agent classroom: privileged teacher vs on-policy student",
+      "description": "A teacher with cue validity 0.98 and a student with cue validity 0.5 are compared on belief entropy and reverse-KL distillation signal.",
+      "evidence": "A two-agent classroom pits a privileged teacher (cue validity 0.98) against an on-policy student (cue validity 0.5)"
+    },
+    {
+      "name": "Lean theorem inventory and fail-closed manuscript validation gates",
+      "description": "Lean theorem statements are extracted and checked against an inventory, with gates failing on sorry, axiom or native_decide.",
+      "evidence": "where 22 theorem rows must match the Lean theorem inventory and constructive-token status is true."
     }
   ],
   "key_findings": [
-    "<p>This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them.",
-    "In the construction, the intractable teacher policy plays the role of the generative model $p(o,s)$, the tractable student policy is the approximate posterior $q(s)$, and the per-token reverse-KL dist"
+    "The closed-form and independently recomputed mutual-information sweeps agree to machine precision (RMSE 2.1e-16 nats).",
+    "In the classroom toy, teacher belief entropy was 0.247 nats versus 0.347 nats for the student, with a mean reverse-KL distillation signal of 6.28 nats.",
+    "In a four-state/two-action witness, teacher-forced train loss (0.333 nats) underestimated student-induced test loss (0.409 nats); on-policy correction reduced it to 0.096 nats.",
+    "All reported numbers are hydrated from generated artifacts, and 16 of 16 invariant checks pass before rendering.",
+    "The author states these are toy, generated findings rather than production-LLM measurements; external OPD results are context, not reproduced."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -82,5 +102,19 @@
   ],
   "related_software": [
     "ActiveInferenceInstitute/on_policy_distillation"
-  ]
+  ],
+  "key_findings_evidence": [
+    "the closed-form and independently recomputed mutual-information sweeps agree to machine precision (RMSE 2.1e-16 nats).",
+    "measuring teacher belief entropy 0.247 nats versus student 0.347 nats and a mean reverse-KL distillation signal of 6.28 nats.",
+    "A four-state/two-action sequential-shift witness shows teacher-forced train loss 0.333 nats underestimating student-induced test loss 0.409 nats, with deterministic on-policy correction reducing it to 0.096 nats.",
+    "every reported number is hydrated from a generated artifact, every figure is source-bound, and 16 / 16 invariant checks pass before rendering.",
+    "These are toy, generated findings, not production-LLM measurements."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Formal correspondence plus toy simulations; the paper scopes the claim to declared finite models and does not prove a general theorem or reproduce production-scale OPD results."
+  }
 }

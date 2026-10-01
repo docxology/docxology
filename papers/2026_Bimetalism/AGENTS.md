@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Overlay of British/American bimetallic history with Blake's prophetic corpus, Close reading of Blake's texts and plates against monetary acts, Velde border conditions for bimetallic circulation
+- Identifies findings: The author reads Newton's 1717 Mint ratio (1:15.21) as an operationalization of 'Newton's sleep', a rigid prior that ignored evidence of silver's circulation., The essay argues the 1816 Coinage Act erased the bimetallic tension by tokenizing silver rather than synthesizing the two metals., It proposes epistemic bimetallism as a general norm for biological or institutional systems, avoiding both rigid 'Single Vision' and unconstrained scepticism.
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

@@ -61,17 +61,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Hardware-decoupled pure NumPy/SciPy analysis core with optional capture shell",
+      "description": "Gaze geometry, I-VT/I-DT, Engbert-Kliegl microsaccade, main-sequence and pupil algorithms run headlessly, separate from an optional webcam/MediaPipe shell.",
+      "evidence": "The core never imports a hardware dependency, so its algorithms are exercised headlessly against constructed ground truth rather than camera availability."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Verification against synthetic traces with ground truth held out by construction",
+      "description": "Every detector is tested on generated signals whose events are known, e.g. a 250 Hz fixation-saccade-fixation trace and an embedded 0.5 deg microsaccade.",
+      "evidence": "Every trace in this section is synthetic: a generator builds the signal and returns the parameters used to build it, so the recovered numbers are checked against truth held out by construction."
+    },
+    {
+      "name": "3-D eyeball forward model closed loop through a pinhole camera",
+      "description": "Known gaze is projected to landmarks and back through the estimator on an animated 120 Hz scene to check geometric internal consistency.",
+      "evidence": "Running the full loop — 3-D eyeball →perspective projection →landmark extraction →estimation →recovery — on the default animated scene"
+    },
+    {
+      "name": "Seeded Monte-Carlo landmark-noise sweep (sigma 0-0.016, 25 trials/level)",
+      "description": "Independent landmark noise is injected into the synthetic scene to rank fragility of gaze, saccade and pupil recovery, with bootstrap confidence intervals.",
+      "evidence": "Sweeping the landmark-noise standard deviation 𝜎from 0 to 0.016 (normalised image units), 25 seeded trials per level, gives a clear and differentiated degradation of the three signals"
+    },
+    {
+      "name": "N=1 single-participant, single-device webcam pilot sessions",
+      "description": "One local webcam workflow recorded fixed-gaze, reading and target trials as derived records to give order-of-magnitude session diagnostics.",
+      "evidence": "The live empirical workflow is included here as an N=1, order-of-magnitude case study, not as a participant study or device validation claim."
     }
   ],
   "key_findings": [
-    "iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics.",
-    "Version 0.4.1 is a diagnostic v1 release: the pure NumPy/SciPy core is algorithmically verified against synthetic and closed-loop oracles, the optional webcam shell exports derived records, and the em"
+    "On synthetic traces the I-VT detector recovered a 10 deg saccade's amplitude within 5% and peak velocity within 10%.",
+    "The 3-D closed loop recovered gaze with 0.16 deg RMS residual (max 0.23 deg); the author states this is internal consistency, not device validation.",
+    "In the idealised noise sweep, saccade detection was most fragile (F1 < 0.8 at sigma about 0.0014), while gaze crossed the 2 deg bound near sigma 0.005.",
+    "The pupil noise robustness is reported only as a conditional illustration because it follows from the assumed pupil noise model.",
+    "The headline limitation is an unclosed device validation gap: correctness rests on constructed ground truth, not reference measurements of real eyes."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -82,5 +102,19 @@
     "docxology/itrace"
   ],
   "artifact_doi": "10.5281/zenodo.20614909",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20614909"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20614909",
+  "key_findings_evidence": [
+    "On synthetic traces, the I-VT detector recovers a 10 deg saccade’s amplitude to within 5% and peak velocity to within 10%",
+    "recovers gaze with an RMS residual of 0.16∘against the 3-D truth (maximum 0.23∘) for gaze within ±15∘, and recovers the three scripted saccades exactly",
+    "Gaze RMS error rises monotonically and approximately linearly with 𝜎, crossing the 2∘usability bound at 𝜎≈0.005. Saccade detection is the most fragile emergent signal: F1 falls below 0.8 already at 𝜎≈0.0014",
+    "It is reported as a conditional illustration, not a finding; the genuine emergent result is the gaze-vs-saccade ordering.",
+    "The headline limitation is the unclosed device validation gap: iTrace’s correctness claims rest on constructed ground truth and an internal-consistency loop, never on agreement with a reference measurement of real eyes."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Title differs: bibliography lists 'iTrace: verification-first webcam eye-movement analysis', while the PDF (v0.4.1 manuscript) is titled 'iTrace: an algorithmically verified open-source core for webcam gaze, saccade, and pupil analysis' — same work. All accuracy results are synthetic; pilot is N=1 diagnostic only."
+  }
 }

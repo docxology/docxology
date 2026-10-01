@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research topics. Roles within the GRT are modular and composable, allowing flexible resource and attention allocation. The GRT uses implementations blending human and computational capacities, with tools like...
+> The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research topics. Roles within the GRT are modular and composable, allowing for flexible resource and attention allocation. The GRT can be designed to address various areas of concern such as Research, Peer...
 
 ## Keywords
 
@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Two-agent AutoGPT literature-review GRT (Professor Karl, RA Joe)** — A worked example built on open-source AutoGPT runs two LLM agents that forage for Active Inference literature and write a report.
+- **Shared-folder file protocol for asynchronous agent coordination** — Agents communicated through text files (project description, requests.txt, research_data.txt, report.txt) in a shared folder.
+- **LangChain tools with FAISS vector memory per agent** — Setup code gives each agent file read/write, CSV and webpage-QA tools (plus DuckDuckGo search for the assistant) and FAISS-backed OpenAI-embedding memory.
+- **Sketched eight-role GRT for a project proposal using AEOS** — A larger GRT is sketched with roles such as Research Director, Statistical Modeler and Grant Forager, using AEOS Active/Informational Entities.
+- **Active Blockference and cadCAD as implementation layer** — GRT work is hosted in Active Blockference, which combines Active Inference modeling with the cadCAD complex systems framework.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The authors found it preferable to split browsing/gathering and curation across two agents rather than one agent doing all tasks.
+- In the worked example the agents completed a literature review and report summarizing ten Active Inference papers; the authors note the approach is currently limited.
+- Proposes that GRT roles be flexible: any role may be non-existent, singular, plural, or autonomous (e.g. DeSci DAOs).
+- Cognitive security concepts (NIM, VIE) are currently integrated only via meta-prompts, with fuller implementation left to future work.
+- States the primary contributions as augmented architectures, Active Inference as a cognitive kernel in GRTs, and cognitive models for research processes.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

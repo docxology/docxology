@@ -131,6 +131,7 @@
     "keywords": [
         "TemplateTextbook"
     ],
+    "description": "The book is explicitly a scaffold rather than a finished work: every structural element is present and author-specific passages are marked stubs. It provides twelve chapter shells across four parts, each with a matching lab and question bank. Claims building the book reproduces byte-identical figures and numbers, since nothing in the prose is computed by hand. The worked case study's linear fit gives slope 1.375 and R2 = 0.999, while warning that three averaged points cannot support prediction or extrapolation. Single config.yaml source of truth for book structure — Parts, chapters, front matter, appendices, labs and question banks are declared in config.yaml, from which TOC, numbering and i",
     "citation": "Friedman, Daniel Ari. 2026. The Template Textbook. Zenodo. DOI: 10.5281/zenodo.20533125. URL: https://doi.org/10.5281/zenodo.20533125.",
     "hasPart": {
         "@type": "CreativeWork",
@@ -234,6 +235,10 @@
                 <p>A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine.</p>
                 <div class="keyword-row"><span>TemplateTextbook</span></div>
             </div>
+        </section>
+        <section class="section section-alt">
+            <div class="section-header"><h2>Use Notes</h2><p>Concise findings and methods pulled from README/SKILL documentation.</p><div class="section-divider"></div></div>
+            <div class="meta-grid"><div class="work-detail"><strong>Findings / Concepts</strong><ul><li>The book is explicitly a scaffold rather than a finished work: every structural element is present and author-specific passages are marked stubs.</li><li>It provides twelve chapter shells across four parts, each with a matching lab and question bank.</li><li>Claims building the book reproduces byte-identical figures and numbers, since nothing in the prose is computed by hand.</li><li>The worked case study&#x27;s linear fit gives slope 1.375 and R2 = 0.999, while warning that three averaged points cannot support prediction or extrapolation.</li></ul></div><div class="work-detail"><strong>Methods / Techniques</strong><ul><li>Single config.yaml source of truth for book structure — Parts, chapters, front matter, appendices, labs and question banks are declared in config.yaml, from which TOC, numbering and integrity tests read.</li><li>Tested Python backbone (textbook.models) and deterministic figures — Worked equations are implemented as tested Python functions that chapter prose calls, and figures are generated deterministically from code.</li><li>Pandoc + pandoc-crossref rendering pipeline — The manuscript is assembled from Markdown in declared order after analysis scripts produce figures, then rendered to PDF via Pandoc with pandoc-crossref.</li><li>Stub-marker counting audit and manuscript-integrity tests — A quality audit counts STUB/TODO/TKTK markers and pytest checks the per-chapter content contract, unique labels, citations and glossary anchors.</li><li>Two filled worked-reference chapters (logistic growth; dose-response) — First Principles derives the logistic growth law; Case Studies fits a linear dose-response trend to a small synthetic six-condition dataset.</li></ul></div></div>
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Citation</h2><p>Plain-text citation for quick reuse.</p><div class="section-divider"></div></div>

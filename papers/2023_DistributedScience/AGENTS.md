@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Free energy principle applied as a multi-scale description of science, Two-scale analysis: individual and collective scientific cognition, Review of Thagard's ECHO explanatory-coherence model
+- Identifies findings: The authors claim science can be described as a higher-level ensemble of Markov-blanketed systems that constrains and is constrained by its parts., They argue the approach naturalises science as distributed self-evidencing, foregrounding inference to the best explanation over truth-pointing., They propose scientific practice as collective inference on shared generative models, yielding persistent entities: the scientific community and cultural technologies.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

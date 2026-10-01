@@ -41,16 +41,30 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Proposed three-layer graph sampling, conversion and decomposition scheme",
+      "description": "Outlines Layer 0-2 steps: sampling nodes with graph theory, converting via chosen permutative formats, then decomposing and comparing similarity.",
+      "evidence": "Sampling original intention and output using Graph Theory (math) - Converting it based on a staple table of known tools (limbs, etc) - Decomposing the Graph Theory nodes onto connected middle layers - Representing the handshake"
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Three provisional 'transmute' rules for node composition (Tr1-Tr3)",
+      "description": "Defines three temporary notational norms for combining and decomposing nodes, illustrated with car-component examples.",
+      "evidence": "Engine. Wheel. Chasis = Car onto Engine –[snug-onto][snug-chasis]- Chasis - [snug-onto][snug-chasis] – Wheel = Car"
+    },
+    {
+      "name": "Planned pipeline of LLM querying with manual human confirmation",
+      "description": "Proposes data flows in which LLM labeling of objects and transmutes is followed by a manual confirmation layer before stashing.",
+      "evidence": "Sampling data > Pre-Process (labeling objects; et) -> Stash -> LLM Query (labeling) -> Manual Confirmation -> Stash"
+    },
+    {
+      "name": "Proposed graph-composition game as a test and application vehicle",
+      "description": "Describes a planned game in which players compose trees of 3-node graphs and apply preselected transmutation types.",
+      "evidence": "We also seek to make a game; On which seeks to picture itself this way “ Please Help this ## person , compose a Graph “ as an interactive way to both test & apply graphspeak"
     }
   ],
   "key_findings": [
-    "An experiment on decomposing language onto initially established graph-theory representation applied then onto some pre-selected transformations&nbsp; (commonly used context/tool related transmutes) ("
+    "Defines graphspeak as an experimental communication method whose medium is permutative graphs requiring a pre-handshake selection of sampling nodes.",
+    "Argues that such a language's success depends not on rigor but on empathy, framed as composing the recipient's capability with their context.",
+    "States planned objectives of testing deployment for kids, for cross-language generalizability, and for rigor."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -58,5 +72,17 @@
     "2021_ModelingConflict"
   ],
   "artifact_doi": "10.5281/zenodo.14737157",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.14737157"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.14737157",
+  "key_findings_evidence": [
+    "Graphspeak is an experimental method of communication Where the transmission medium is based on <permutative> Graphs By permutative, we mean that it requires a Pre-handshake; selection of sampling nodes",
+    "Being a successful medium, does not actually depend on their RIGOR But rather on their rating of <empathy>",
+    "Test its deployment for kids (results may depend more on how fun the game is; still! )"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "other",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Informal slide-style concept proposal; all methods are proposed/planned, not executed, and no empirical results are reported. Several pages are mostly figures with little extractable text."
+  }
 }

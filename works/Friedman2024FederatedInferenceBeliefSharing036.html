@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Federated inference and belief sharing — Daniel Ari Friedman</title>
-    <meta name="description" content="This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to…">
+    <meta name="description" content="This paper concerns the distributed intelligence or federated inference that emerges under belief-sharing among agents who share a common world—and world…">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/works/Friedman2024FederatedInferenceBeliefSharing036.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -28,7 +28,7 @@
     <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Federated inference and belief sharing">
-    <meta property="og:description" content="This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to…">
+    <meta property="og:description" content="This paper concerns the distributed intelligence or federated inference that emerges under belief-sharing among agents who share a common world—and world…">
     <meta property="og:url" content="https://danielarifriedman.com/works/Friedman2024FederatedInferenceBeliefSharing036.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
@@ -36,7 +36,7 @@
     <meta property="og:image:alt" content="Federated inference and belief sharing — Daniel Ari Friedman">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Federated inference and belief sharing">
-    <meta name="twitter:description" content="This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to…">
+    <meta name="twitter:description" content="This paper concerns the distributed intelligence or federated inference that emerges under belief-sharing among agents who share a common world—and world…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Federated inference and belief sharing — Daniel Ari Friedman">
     <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260530c">
@@ -196,7 +196,7 @@
         "@type": "Organization",
         "name": "Neuroscience & Biobehavioral Reviews"
     },
-    "abstract": "This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to multi-agent settings, agents maintain local generative models while sharing beliefs through message passing to achieve collective inference. The framework addresses how agents can coordinate without sharing raw observations, preserving privacy while...",
+    "abstract": "This paper concerns the distributed intelligence or federated inference that emerges under belief-sharing among agents who share a common world—and world model. Imagine, for example, several animals keeping a lookout for predators. Their collective surveillance rests upon being able to communicate their beliefs—about what they see—among themselves. But, how is this possible? Here, we show how all...",
     "keywords": [
         "federated inference",
         "belief sharing",
@@ -207,6 +207,7 @@
         "collective cognition",
         "privacy-preserving inference"
     ],
+    "description": "With communication, the third agent resolved uncertainty about the subject's location by the third epoch, versus only after seeing it at the fifth epoch without communication. In the generational simulation, children's learned auditory mappings were almost identical to their parents' after four generations, acquired solely through active learning. Three language-naive agents exposed to 512 episodes converged on shared mappings in which nearly every hidden state became associated with a unique shared 'word'. A novice lacking precise visual mappings learned, from hearing supervisors, a visual mapping making her inferences indistinguishable from theirs by about 64 exposures. The authors state t",
     "citation": "Friedman, Daniel Ari. 2024. Federated inference and belief sharing. Neuroscience & Biobehavioral Reviews. DOI: 10.1016/j.neubiorev.2023.105500. URL: https://doi.org/10.1016/j.neubiorev.2023.105500.",
     "hasPart": {
         "@type": "CreativeWork",
@@ -307,9 +308,13 @@
         <section class="section">
             <div class="section-header"><h2>Overview</h2><p>Extracted from the local paper documentation when available.</p><div class="section-divider"></div></div>
             <div class="work-detail">
-                <p>This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to multi-agent settings, agents maintain local generative models while sharing beliefs through message passing to achieve collective inference. The framework addresses how agents can coordinate without sharing raw observations, preserving privacy while...</p>
+                <p>This paper concerns the distributed intelligence or federated inference that emerges under belief-sharing among agents who share a common world—and world model. Imagine, for example, several animals keeping a lookout for predators. Their collective surveillance rests upon being able to communicate their beliefs—about what they see—among themselves. But, how is this possible? Here, we show how all...</p>
                 <div class="keyword-row"><span>federated inference</span><span>belief sharing</span><span>Active Inference</span><span>distributed intelligence</span><span>multi-agent systems</span><span>message passing</span><span>collective cognition</span><span>privacy-preserving inference</span></div>
             </div>
+        </section>
+        <section class="section section-alt">
+            <div class="section-header"><h2>Use Notes</h2><p>Concise findings and methods pulled from README/SKILL documentation.</p><div class="section-divider"></div></div>
+            <div class="meta-grid"><div class="work-detail"><strong>Findings / Concepts</strong><ul><li>With communication, the third agent resolved uncertainty about the subject&#x27;s location by the third epoch, versus only after seeing it at the fifth epoch without communication.</li><li>In the generational simulation, children&#x27;s learned auditory mappings were almost identical to their parents&#x27; after four generations, acquired solely through active learning.</li><li>Three language-naive agents exposed to 512 episodes converged on shared mappings in which nearly every hidden state became associated with a unique shared &#x27;word&#x27;.</li><li>A novice lacking precise visual mappings learned, from hearing supervisors, a visual mapping making her inferences indistinguishable from theirs by about 64 exposures.</li><li>The authors state two technical contributions: belief-sharing among agents with different vantage points, and a belief-updating procedure for learning and model selection.</li></ul></div><div class="work-detail"><strong>Methods / Techniques</strong><ul><li>Numerical simulations of language generation, acquisition and emergence — Synthetic agents are simulated to study belief-sharing, with inference, learning and selection cast as minimising variational free energy over states, parameters and structure.</li><li>Discrete-state generative model of three sentinels observing a subject — Three agents with complementary views share a model with location, proximity, pose and gaze factors, four visual, one proprioceptive and three auditory modalities.</li><li>With/without-communication comparison via zero-precision auditory mappings — Communication is ablated by reducing auditory likelihood precision so agents can neither generate nor recognise auditory cues.</li><li>Active learning of Dirichlet counts and structure learning via Bayesian model reduction — Language acquisition uses accumulation of Dirichlet counts; emergence uses structure learning updating priors over Dirichlet counts with Bayesian model reduction.</li><li>SPM Matlab routines (spm MDP VB XXX.m) for belief updating — Generic belief updates were implemented with standard SPM academic software routines.</li></ul></div></div>
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Citation</h2><p>Plain-text citation for quick reuse.</p><div class="section-divider"></div></div>

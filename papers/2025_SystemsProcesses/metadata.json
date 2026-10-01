@@ -47,21 +47,39 @@
   "type": "Presentation",
   "methods": [
     {
-      "name": "Content production",
-      "description": "Applied content production approach"
+      "name": "Mapping of SoSPT systems processes onto Active Inference concepts",
+      "description": "The slides pair Troncale-style systems processes with Active Inference counterparts, e.g. Boundaries with Markov blankets and Feedback & Cycles with predictive coding loops.",
+      "evidence": "In the SoSPT model, a “systems” process is defined as that series of steps typical of surviving systems that adequately fulfills a needed systems function when considered at the abstract systems level"
     },
     {
-      "name": "Pedagogical design",
-      "description": "Applied pedagogical design approach"
+      "name": "Terminology alignment via the Active Inference Ontology",
+      "description": "Uses the Active Inference Ontology repository to frame cross-vocabulary correspondences between systems science and Active Inference terms.",
+      "evidence": "https://github.com/ActiveInferenceInstitute/Active_Inference_Ontology ● Same words, same meaning ● Different words, same meaning ● Same words, different meaning"
+    },
+    {
+      "name": "Curated literature pointers per systems process",
+      "description": "Each of five processes (boundaries, feedback, self-organization, flows/fields, hierarchies) is linked to specific FEP/Active Inference papers and 2022 textbook figures.",
+      "evidence": "5 Hierarchies & Networks ⇆ Nested Generative Models ● 2025 As One and Many: Relating Individual and Emergent Group-Level Generative Models in Active Inference"
     }
   ],
   "key_findings": [
-    "Slides for a session at \"Enduring Patterns, Emerging Futures: Celebrating Dr..",
-    "Len Troncale\", an online event in September 2025 https://troncale.sched.com/ .."
+    "The talk presents the Free Energy Principle's Markov blankets as a formalisation of the systems process of Boundaries.",
+    "The slides claim applied Active Inference adds computable, typable translations plus open-source education and software to the systems-processes view."
   ],
   "related_papers": [
     "2018_MVEE",
     "2023_AntsAging",
     "2023_PostdocReview"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Free Energy Principle formalises the idea of Boundaries through Markov blankets—statistical partitions of internal, sensory and active states that mediate all exchanges with the outside world",
+    "What do we get with applied Active Inference? Yes, and… Computable, Typable, Translations, Open Source education and software, first principles…"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Short slide deck (12 pages) with sparse text; findings are slide-level framing claims rather than results."
+  }
 }

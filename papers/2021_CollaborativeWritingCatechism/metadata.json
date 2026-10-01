@@ -44,19 +44,13 @@
   "checked_at": "2026-05-30T18:56:33Z",
   "domain": "Cognitive Security",
   "type": "Paper",
-  "methods": [
-    {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
-    },
-    {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
-    }
-  ],
+  "methods": [],
   "key_findings": [
-    "Asynchronous and remote collaborative written projects (research, field guides, code, etc.) in emergent, interdisciplinary teams can be an incredibly productive and enjoyable pursuit.",
-    "The convergence of diverse perspectives, personalities, and expertise in the rapid production of written deliverables can provide immense value and insight, not just to the situation, problem, or oppo"
+    "Sets out procedures, protocols and etiquette for asynchronous, remote catechism-based writing teams, organized by before, during and after the project.",
+    "Recommends that teams converge on a writing approach, describing at least five styles: single primary writer, partition, joint, scribe and hybrid.",
+    "Advises that changes to approaches, processes and expectations be declared and compared against the catechism to prevent mission creep.",
+    "Recommends giving honest, constructive critique first and positive feedback second when asked for feedback after a project.",
+    "Calls for a post-project debrief or 'hotwash' to plan next steps, future meetings and publicity."
   ],
   "related_papers": [
     "2020_EmergentTeams",
@@ -64,5 +58,19 @@
     "2020_GreatPreset"
   ],
   "artifact_doi": "10.5281/zenodo.4633921",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.4633921"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.4633921",
+  "key_findings_evidence": [
+    "There are a few basic procedures, processes, and protocols that can prevent a good team from going off-the-rails during the work or before the work even begins",
+    "There are at least five primary (effective) collaborative writing styles, which can be mixed together and also developed on:",
+    "Changes to approaches, processes, and expectations are good, but they need to be declared and compared to the original or most recent catechism.",
+    "If asked, you should always respond with honest, constructive critique first, followed by positive feedback.",
+    "it is incredibly important to have a debrief, concluding meeting, or “hotwash”, to go over what’s going to happen next"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "commentary/policy",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Short practical guide (5 pages) of team-writing protocols; no research methods."
+  }
 }

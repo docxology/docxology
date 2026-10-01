@@ -20,13 +20,22 @@ This work addresses topics in **Computational**: AuBI, augmented intelligence, b
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Version 0.1 system specification for an Adaptive Basic Income toolkit** — Specifies AuBI as a systems-engineering toolkit/sandbox for specifying, modeling, and designing basic-income economic systems.
+- **Layered architecture: UX, services, AI/LLM + Active Inference, decentralized, data** — Lays out five architectural layers, including an Active Inference engine using generative models and expected free energy for policy selection.
+- **Comparison of BOPS and GPI deployment archetypes** — Contrasts a Baseline-Oriented Predictive System with Generative Predictive Integration across operational, implementation, efficiency, and context criteria.
+- **Indonesian micro-UBI thought experiments with projected metrics** — Sketches four hypothetical Indonesian micro-studies (e.g. Dana Bahasa language fund) with budgets, data to collect, and expected benefits.
+- **Active Inference interpretation of UBI effects** — Frames UBI as reducing environmental uncertainty and prediction errors, enabling exploratory behavior, and supporting collective predictive processing.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The authors argue that overlaying AI, decentralized infrastructure, and Active Inference on UBI can enhance its relevance, effectiveness, and impact.
+- They distinguish BOPS as using prediction to maintain static security targets, versus GPI using prediction to dynamically optimize welfare.
+- For real-world implementation they suggest a staged hybrid approach, starting with BOPS and gradually transitioning toward GPI.
+- The paper proposes targeted micro-UBI studies as the actionable next step, e.g. an Indonesian pilot encouraging language self-study.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +63,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.17228945`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

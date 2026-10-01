@@ -20,13 +20,22 @@ This work addresses topics in **Cognitive Security**: cognitive sovereignty, Aga
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Close reading of Agamben's Homo Sacer** — Summarizes and contextualizes Agamben's account of bare life, sovereignty and the state of exception as the foundation for later sections.
+- **Agamben-Kuhn analogy of exception and revolutionary science** — Treats Kuhnian paradigm shifts as analogous to the sovereign decision on the state of exception, both grounding what counts as valid.
+- **Mapping via the Active Inference Ontology (affordances, VFE, EFE)** — Uses Active Inference Ontology terms to map the state of exception to affordances, bare life to VFE, and sovereign agency to EFE.
+- **'Active Stateference' Python-style pseudocode** — Provides draft pseudocode of a single-agent generative model with lawful/unlawful/just/unjust states, a remapped model under exception, and a VFE loop.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Asserts that realized epistemic agency is grounded in the enacted policy selection of the cognitive sovereign.
+- Argues that sovereigns in a state of exception gain exceptional affordances that emerge from new precision dynamics, sustained by perceiving the state as dangerous.
+- Proposes that the subject's VFE-bare life connection grounds the sovereign's EFE-agency relationship through the state of exception.
+- Concludes that, under 'Bayesian State Mechanics', the sovereign's expected free energy causally influences the subject's variational free energy.
+- Notes that the current model considers only one agent and outlines extensions to multi-agent 'Active GovernAnts', cognitive security and quantum settings.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +63,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.10038231`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

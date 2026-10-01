@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
+- Extracts methods: Storybook PDF generated from a public research-template repository, Geometric fable drawing on Fuller's Synergetics (tetrahedron in cube)
 - Identifies findings: See paper
 - Maps contributions to Computational literature
 
@@ -37,5 +37,5 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |

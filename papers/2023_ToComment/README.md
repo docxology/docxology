@@ -10,29 +10,25 @@
 
 ## Abstract
 
-> This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze how memes function as rhetorical artifacts that shape public discourse through parsimony, polysemy, and identity construction in digital public spheres.
+> No abstract is recorded for this work yet; see the DOI or bibliography link.
 
 ## Keywords
 
-`rhetorical analysis` · `image memes` · `digital discourse` · `narrative ecosystems` · `DRE3 model` · `sensemaking`
+`ToComment`
 
 ## Methods
 
-- Rhetorical ecosystem mapping
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Parsimony and polysemy give image memes narrative power
-- Image memes engage audiences through identity construction
-- DRE3 model supports formal tracing of memes across platforms
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
 - DOI: [10.1016/j.plrev.2023.06.002](https://doi.org/10.1016/j.plrev.2023.06.002)
 - Artifact DOI: [10.5281/zenodo.5573946](https://doi.org/10.5281/zenodo.5573946)
-- Zenodo record: [https://zenodo.org/records/5573947](https://zenodo.org/records/5573947)
-- PDF: [2023_ToComment.pdf](2023_ToComment.pdf)
-- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/5573947)
+- PDF SHA-256: Not recorded
 
 ## Citation
 

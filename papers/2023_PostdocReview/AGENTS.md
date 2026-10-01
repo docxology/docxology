@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Review structured by six working areas, GPT-4 (via Perplexity.ai) per-paper summaries, Overview followed by 10 highlighted works
+- Identifies findings: The review frames the period as an NSF Postdoctoral Research Fellowship in Biology (award 2010290), October 2020 to October 2023., The deck reports 375+ Active Inference livestreams over 2020-2023, with transcripts at the Active Inference Journal, as part of the Active Inference Institute ecosystem work., It highlights Active Inferants (2021) as the first Active Inference model of stigmergic collective behavior and an extensible framework for ant behavior.
 - Maps contributions to Presentations & Media literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

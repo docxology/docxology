@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Five-stage pure-function pipeline: read, analyse, cross-check, evaluate, render, Readability metrics: Flesch Reading Ease, Flesch-Kincaid grade, Gunning Fog, Heuristic quality flags: passive voice, hedge density, citation density
+- Identifies findings: The paper reports that editorial review can be expressed as a configurable, deterministic pipeline with no novel domain algorithm of its own., On the bundled manuscript, the run analysed 8 files totalling 1731 words, with average Flesch-Kincaid grade 15.87 and Gunning Fog 16.67., Because no external service is consulted, a second run on the same inputs produces byte-identical JSON (modulo timestamp metadata).
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

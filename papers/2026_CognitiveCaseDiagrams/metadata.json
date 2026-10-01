@@ -59,16 +59,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Case systems formalized as categories with alignment types as functors",
+      "description": "Reviews case systems as categories whose objects are case roles and morphisms are grammatical relations, treating each alignment type as a structure-preserving functor.",
+      "evidence": "We review formalized linguistic case systems as categories whose objects are case roles and whose morphisms are grammatical relations"
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Case-typed DisCoCat/DisCoCirc string diagrams for sentence and discourse",
+      "description": "Extends DisCoCat with case-typed noun spaces and alignment-sensitive meaning functors, and uses DisCoCirc for discourse-level composition.",
+      "evidence": "We extended the DisCoCat framework (section 8) with case-typed noun spaces and alignment-sensitive meaning functors"
+    },
+    {
+      "name": "[0,1]-enriched case categories and categorical magnitude",
+      "description": "Equips case categories with [0,1]-valued hom-objects and uses categorical magnitude as an invariant for comparing case systems.",
+      "evidence": "we showed that equipping case categories with [0, 1]-valued hom-objects yields a principled bridge between symbolic case grammar and statistical semantics."
+    },
+    {
+      "name": "Integration with Distributional Active Inference to derive ERP predictions",
+      "description": "Embeds the case framework in a Distributional Active Inference model to state falsifiable predictions for P600, N400 and garden-path reanalysis.",
+      "evidence": "three falsifiable ERP predictions (precision-weighted P600 amplitude, magnitude-change N400 proxy, garden-path reanalysis cost) that empirically test the framework"
+    },
+    {
+      "name": "Open-source Python implementation with automated tests and generated figures",
+      "description": "Implements the formal structures in a src/ package with a no-mocks test suite and programmatically generated figures.",
+      "evidence": "The framework is computationally implemented and verified through 1197 automated tests across 64 test files (sixty-four files)."
     }
   ],
   "key_findings": [
-    "Linguistic case as categorical structure: alignment typology as functors, DisCoCat/DisCoCirc composition, bridges to Distributional Active Inference and protocol-level analysis of prompt injection."
+    "The review captures nominative-accusative, ergative-absolutive, active-stative, tripartite and fluid-S alignment within one algebraic framework linked by alignment functors.",
+    "Within case-typed string diagrams, passivization reduces to a type permutation (a Swap in the pregroup category).",
+    "The author argues prompt injection can be analyzed as ill-typed role promotion, a functorial type violation, as a specification target rather than a guarantee on current LLM APIs.",
+    "The topos-theoretic equivalence chain across typological, type-logical, distributional and enriched case theories is presented as a research program, not a finished theorem.",
+    "The accompanying code has 1197 tests across 64 files at 95.96% line-and-branch coverage on src/, plus 30 programmatically generated figures."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -82,5 +103,19 @@
   "pairing_confidence": "strong",
   "pairing_evidence": [
     "github_release_mentions_doi"
-  ]
+  ],
+  "key_findings_evidence": [
+    "This formalization captures the full typological range of alignment systems—nominative-accusative, ergative- absolutive, active-stative, tripartite, and fluid-S—within a single algebraic framework",
+    "We further demonstrated that passivization reduces to a type permutation (a Swap operation in the pregroup category), making voice alternation visible as a topological feature of the string diagram.",
+    "prompt injection aligns with ill-typed role promotion and can be analyzed as a functorial type violation — an engi- neering and specification target, not an automatic guarantee, on present-day LLM APIs.",
+    "The schematic equivalence chain for typological, type-logical, distributional, and enriched case theories is a research program—not a single finished theorem covering all of linguistics",
+    "the manuscript is accompanied by 1197 executable tests across sixty-four test files at 95.96% line-and-branch coverage on src/ (from coverage.json) and 30 programmatically generated figures"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "review",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Long theoretical review with an accompanying software implementation; ERP predictions are proposed, not tested against neurophysiological data, and the prompt-injection result is explicitly scoped to an idealised protocol category. The extraction header names the PDF title 'Compositional Approaches to Linguistic Case for Cognitive Modeling', while page 1 matches the bibliography title."
+  }
 }

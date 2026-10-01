@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Tinbergen's four questions applied to ant and human aging, Decayed-house example illustrating four kinds of explanation, Insulin signaling as a focal example of aging mechanism
+- Identifies findings: The speaker distinguishes age (clock time elapsed) from aging (a process and embodied outcome linked to species-specific phenotypes and disease/death risk), stating the definition is not normative., The slides note that some ant species have colonies that do not age, possibly via asexual or intra-nest sexual reproduction., On the utility of aging, the talk suggests one shared answer for ants and humans may be that there is no specific utility, only an order-vs-disorder tradeoff.
 - Maps contributions to Presentations & Media literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

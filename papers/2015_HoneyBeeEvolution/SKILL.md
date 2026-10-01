@@ -20,15 +20,23 @@ This work addresses topics in **Genetics & Biomedical**: honey bees, Apis mellif
 
 Primary methods and techniques applied in this work:
 
-- Transcriptomic sequencing and assembly
-- Coding sequence evolution analysis
-- Comparative genomics of social insects
+- **Ten RNA-Seq experiments across novel and conserved honey bee tissues** — Tissues from nurse and forager bees (three colonies, three biological replicates per tissue and caste) were sequenced to compare novel and conserved tissues.
+- **Illumina HiSeq 2000 sequencing with Tophat/bowtie2, HTSeq, and EdgeR** — Reads were aligned to Apis mellifera genome build 4.5, counted per gene with HTSeq, and differentially expressed genes called with EdgeR at FDR < 0.05.
+- **BLASTx against 71 genomes to classify taxonomically restricted genes** — Each honey bee transcript was blasted against proteins from 71 published genomes to assign genes to TRG classes (Orphans, bee-specific, Hymenoptera, etc.) or conserved.
+- **Positive selection calls from published MK-test selection coefficients** — Genes were labelled positively selected or not using a population genomic study's MK-test estimates comparing A. mellifera and A. cerana.
+- **WGCNA gene coexpression network connectivity** — Weighted Gene Coexpression Network Analysis in R was used to estimate within-module and total connectivity for each gene.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- For novel adult physiological functions, positively selected tissue-specific genes of high expression underlie novelty by conferring specialized cellular functions.
+- Positively selected genes, whether TRGs or conserved genes, are the least connected genes within gene expression networks.
+- TRGs are strongly associated with novel functions and tissues, and much less with conserved tissues and functions.
+- Genes expressed in fewer tissues had a higher probability of being positively selected in 8 of 10 tissues.
+- The authors conclude that in adults, low-connectedness genes underlie novel phenotypes through rapid coding sequence change, suggesting the evo-devo paradigm is limited postdevelopment.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 

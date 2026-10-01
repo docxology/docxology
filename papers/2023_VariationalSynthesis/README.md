@@ -18,11 +18,20 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Bayesian mechanics of particular partitions (free energy principle)** — Particular partitions are used to analyze how slow phylogenetic processes constrain and are constrained by fast phenotypic processes.
+- **Two coupled random dynamical systems linked by a renormalisation group** — Phylogenetic and phenotypic processes are modelled as two random dynamical systems coupled via renormalisation-group reduction and grouping operators.
+- **Variational recipe: Bayesian filtering plus stochastic gradient descent on action** — A four-step protocol samples particles, finds least-action paths by generalised Bayesian filtering, scores the free-energy path integral, and updates parameters.
+- **Numerical simulation of synaptic selection in a single neuron** — A single dendrite with 20 synapses over five segments was simulated over 64 cycles, with synapses eliminated via Bayesian model reduction on synaptic precision.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The main result is a formulation of adaptive fitness as a path integral of phenotypic fitness, with least-action paths read as inference (phenotypic) and learning (phylogenetic).
+- The synthesis implies that a population of conspecifics cannot be modelled per se; one must consider populations of distinct natural kinds that influence each other.
+- Genotype and phenotype fitness are both selected through minimisation of the same free energy functional (Bayesian model evidence).
+- In the synaptic-selection simulation, free energy progressively decreased at the slow timescale as synapses enabling the cell to predict its inputs were selected.
+- The authors caution that the account is limited to mathematical apparatus, is not a process theory, and did not examine when the variational fitness lemma holds.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

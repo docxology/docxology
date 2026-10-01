@@ -18,13 +18,21 @@
 
 ## Methods
 
-- Digital humanities corpus construction
-- Evidence-ledger provenance tracking
-- Rights-bounded release workflow
+- **7-phase DAG pipeline (blake) from discovery to reports** — The corpus is built by a directed pipeline of discovery, acquisition, metadata, analysis, visualizations, export, and reports, whose JSON artifacts also populate the manuscript.
+- **Versioned canonical target ledger of 104 work-level Blake targets** — A ledger derived from Blake bibliographies, editions, Archive identifiers, and visual catalogues serves as the denominator for coverage claims.
+- **Tiered source registry with the William Blake Archive as primary authority** — The registry holds the Blake Archive, Project Gutenberg, and Internet Archive, with the Archive given priority when sources disagree and others used as fallback or corroboration.
+- **Descriptive text metrics: tokenization, type-token ratio, lexical sentiment** — Each text-bearing work is tokenized to compute word counts, sentiment, vocabulary richness, and themes, treated as descriptors rather than literary judgments.
+- **TF-IDF vectors with deterministic PCA/LSA projection over 162 works** — A 120-term TF-IDF vocabulary is built across text-bearing works and projected onto PCA/LSA axes as a reading instrument over local evidence.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The saved run represents 102 of 104 ledger targets (98.1%) but fully meets the required text/image evidence profile for only 90 (86.5%); 12 are partial and 2 missing.
+- The text-bearing subset contains 156 works and 216878 words, and joint text-image diagnostics are available for 33 works.
+- The ontology module produced a work-theme graph of 356 nodes and 297 edges, including 16 theme nodes.
+- The local analysis ledger reports all 340 works analyzed with 0 recorded analysis errors.
+- The author frames the contribution as an auditable corpus-governance method, not a completed or exhaustive analysis of Blake's works.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

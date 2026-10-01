@@ -64,17 +64,27 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Transcript of two GuestStream sessions with Mark Solms",
+      "description": "Edited transcript of participatory livestream sessions (#016.1, Jan. 22, 2022 and #016.2, June 11, 2022) presenting and discussing the 2018 Solms & Friston paper.",
+      "evidence": "Live presentations and group discussions of the 2018 paper \"How and Why Consciousness Arises: Some Considerations from Physics and Physiology\" by Mark Solms and Karl Friston,"
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Solms's ten-claim slide-led presentation with interleaved Q&A",
+      "description": "Solms presented a summary slide of points, taking each in turn and pausing for participants' questions and comments.",
+      "evidence": "I'm going to start with the summary slide of all the points that I propose to cover. And then I'll take them one by one, each of those points. And at the end of each of them, I'll stop and see if anyone wants to comment or ask a question."
+    },
+    {
+      "name": "Clinical neurological cases discussed as evidence",
+      "description": "Solms draws on cases including hydranencephalic children without cortex, patients lacking prefrontal or insular cortex, and deep brain stimulation of the substantia nigra.",
+      "evidence": "So I think the claim on the basis of the hydranencephalic children, the claim that the cortex is the seat of consciousness and of feeling in particular, has to be dismissed."
     }
   ],
   "key_findings": [
-    "This document is an enhanced transcript of the live presentations and group discussions with Mark Solms in 2022 at the Active Inference Institute.",
-    "The focus is the 2018 paper &quot;How and Why Consciousness Arises: Some Considerations from Physics and Physiology&quot; by Mark Solms and Karl Friston."
+    "Solms asserts that affect is the foundational form of consciousness and that affect is intrinsically conscious.",
+    "Solms argues, citing hydranencephalic children, that the cortex as seat of consciousness and feeling has to be dismissed.",
+    "Solms argues affect is not the same as interoceptive inference (distinguishing his view from Anil Seth's), because many interoceptive perceptual states are not affective.",
+    "Solms claims the mechanism of perceptual and cognitive consciousness is precision modulation of allostatic prediction errors.",
+    "Solms reports his group is trying to instantiate these affect mechanisms in an artificial system, with only preliminary findings presented so far."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -82,5 +92,19 @@
     "2021_ModelingConflict"
   ],
   "artifact_doi": "10.5281/zenodo.7267947",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7267947"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7267947",
+  "key_findings_evidence": [
+    "I start with the assertion (1) that \"affect is the foundational form of consciousness, and that affect is intrinsically conscious.\"",
+    "So I think the claim on the basis of the hydranencephalic children, the claim that the cortex is the seat of consciousness and of feeling in particular, has to be dismissed.",
+    "But why do I think that affect is not the same as interoceptive perception? Well, first of all: Because there are many interoceptive perceptual states which are not affective.",
+    "This one is a large point (8) - the empirical evidence about affect - \"The mechanism of perceptual and cognitive consciousness is precision modulation of allostatic prediction errors.\"",
+    "if this really is how affect is generated, if this really is how it is caused, then we should be able to instantiate it in an artificial system. And that's what we are trying to do at the moment."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Transcript of a guest presentation and discussion; all findings are Solms's spoken arguments, not results produced by this work. Claims 9 and 10 are only previewed. The PDF has ~5,800 extracted images, so the text is interleaved with image references."
+  }
 }

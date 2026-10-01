@@ -23,17 +23,37 @@
   ],
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Active Inference-augmented Ant Colony Optimization for the TSP",
+      "description": "ACO is extended with a belief-update mechanism and a free-energy calculation so ant node selection adapts to current tour quality.",
+      "evidence": "Our algorithm introduces a belief update mechanism and free energy calculation, enabling adaptive decision-making based on the cur- rent tour quality."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Belief-weighted node selection and free-energy tour scoring",
+      "description": "Belief is set from current versus best path length, scales pheromone/distance selection probabilities, and enters a free energy of path length plus entropy.",
+      "evidence": "computes the free energy for a given tour, combining the expected path length and associated uncertainty:"
+    },
+    {
+      "name": "Benchmark against basic ACO and Nearest Neighbor on random symmetric graphs",
+      "description": "The AI-enhanced ACO was compared to basic ACO and a Nearest Neighbor heuristic on randomly generated symmetric graphs of several sizes.",
+      "evidence": "we conducted a series of experiments comparing it against a basic ACO, and a baseline Nearest Neighbor heuristic (NN)."
+    },
+    {
+      "name": "Paired t-test, Wilcoxon signed-rank, and Mann-Whitney U tests",
+      "description": "Tour length and computation time differences between basic and AI-enhanced ACO were assessed with paired and non-parametric tests.",
+      "evidence": "Paired T-test for Tour Length: T-statistic = 2.7852, P-value = 0.00641"
+    },
+    {
+      "name": "Python implementation released with appendix code and GitHub repo",
+      "description": "Python implementations of all methods are given in the appendix, with extended ANOVA results in the haailabs/ActiveACO repository.",
+      "evidence": "Python implementations of the variaous methods considered in our experiments are provided in the Appendix of this manuscript."
     }
   ],
   "key_findings": [
-    "We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation..",
-    "Demonstrated with Ant Colony Optimization (ACO) on th...."
+    "The Active Inference-enhanced ACO gave mean tour-length improvements over basic ACO at every graph size tested, peaking at 8.81% for 100-node graphs.",
+    "Relative computational overhead fell with graph size, from 9.46% at 25 nodes to 1.97% at 500 nodes.",
+    "Tour-length improvements were significant by paired t-test and Wilcoxon test, but the Mann-Whitney U test found no significant difference in overall distributions.",
+    "The computation-time difference was not statistically significant at the 0.05 level.",
+    "The authors note high variability in tour lengths for both algorithms, with performance gains varying considerably across graph types."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -42,5 +62,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.48550/arXiv.2408.09548",
-  "doi_url": "https://doi.org/10.48550/arXiv.2408.09548"
+  "doi_url": "https://doi.org/10.48550/arXiv.2408.09548",
+  "key_findings_evidence": [
+    "For 25-node graphs, the average improvement was 2.52%. This improvement increased to 3.62% for 50-node graphs and rose significantly to 8.81% for 100- node graphs.",
+    "the percent- ages of increase in computation time are decreasing, from 9.46% seconds for 25-node graphs to 1.97% seconds for 500-node graphs.",
+    "Mann-Whitney U Test: U-statistic = 5291.0, P-value = 0.47783 Interestingly, this test does not show a statistically significant difference between the two algorithms.",
+    "This test indicates that there is no statistically significant difference in computation",
+    "However, the performance gain varies considerably across different graph types, suggesting the need for a more comprehensive understanding of the relationship between problem char- acteristics and algorithm performance."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "empirical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Internal inconsistency in the source: Section 4.1 says 100 graphs each of 50/100/250/500 nodes, while the Table 1 caption says 50 graphs per node size and includes a 25-node column."
+  }
 }

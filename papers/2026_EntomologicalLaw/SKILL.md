@@ -20,13 +20,22 @@ This work addresses topics in **Computational**: entomological law, legal entomo
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Organizing the field by eight legal roles an insect occupies** — Structures the synthesis around the insect's legal status in a dispute: witness, regulated threat, protected subject, property, invention, defendant, moral patient, weapon.
+- **Seven Python source-of-truth registries under src/** — All domain content (roles, cases, statutes, species, institutions, timeline, interconnections) lives in registries from which prose, figures and reports are regenerated.
+- **Build-time token closure for every count in the prose** — Magnitude-bearing numbers are generated tokens; a closure test fails the build if a hand-typed count drifts from its registry.
+- **Claim ledger with offline and live verification oracles** — External statistics and status claims are logged with source URL, verbatim quote and as-of date; an offline oracle checks attribution and a live oracle re-fetches sources.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Alongside its roles, cases and statutes, the registries encode 24 insect taxa, 13 institutions, 44 historical milestones spanning 3676 years, and 5 cross-domain themes.
+- The roles are linked by recurring themes; the role-coverage matrix shows some roles are case-driven, some statute-driven, and defendant and weapon roles almost entirely history-driven.
+- The author argues the common frontier is institutional translation: insect facts enter law only through admissibility, quarantine, listing, authorization and moral-status filters.
+- Identified frontiers include insect sentience in welfare law, thin deployment-specific gene-drive governance, and forensic-entomology standardization.
+- The stated contribution is a registry-first, claim-sourced substrate rather than a new doctrine.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -52,5 +61,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21137276`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

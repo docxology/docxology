@@ -28,17 +28,20 @@
   ],
   "methods": [
     {
-      "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays approach"
+      "name": "Side-by-side preview of two companion Cell ant CRISPR/Cas9 studies",
+      "description": "Compares Trible et al. (2017) and Yan et al. (2017), which knocked out the Orco olfactory co-receptor in O. biroi and H. saltator.",
+      "evidence": "Trible et al. (2017) and Yan et al. (2017) advance the ﬁeld of ant genetics into a new era by successfully performing CRISPR/Cas9-mediated knockout of the gene that encodes the same key olfactory co-receptor in two different ant species."
     },
     {
-      "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis approach"
+      "name": "Contrast of reproductive biology enabling mutant lines in each species",
+      "description": "Explains how clonal parthenogenesis in O. biroi and the gamergate transition in H. saltator were each used to propagate Orco mutants.",
+      "evidence": "Yan et al. take advantage of the gamergate transition of H. saltator to generate hemizygous mutant males, which can then be back- crossed to receptive females, producing heterozygous and homozygous mutant females."
     }
   ],
   "key_findings": [
-    "The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior.",
-    "Analysis of In this issue of..."
+    "Homozygous Orco loss-of-function ants of both species showed similar altered behavior and reduced reproductive performance, supporting Orco's central role in ant olfaction.",
+    "Both studies unexpectedly found gross antennal lobe defects in Orco mutants, which the authors argue implies a novel neurodevelopmental role for Orco.",
+    "The commentary frames the two studies together as a watershed moment for eusocial insect genetics, moving beyond purely correlative evidence."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -47,5 +50,17 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1016/j.cell.2017.07.046",
-  "doi_url": "https://doi.org/10.1016/j.cell.2017.07.046"
+  "doi_url": "https://doi.org/10.1016/j.cell.2017.07.046",
+  "key_findings_evidence": [
+    "In both O. biroi and H. saltator, ho- mozygous Orco loss-of-function individ- uals display similar patterns of altered behavior and decreased reproductive performance, supporting the hypothe- sized centrality of Orco in mediating the perception of olfactory stimuli in ants.",
+    "number in Orco mutants in both ant species implies a novel neurodevelop- mental role for Orco, perhaps related to the drastic expansion of glomerular num- ber (300–500 in ants",
+    "The work of Trible et al. and Yan et al. together represent a watershed moment for the budding ﬁeld of eusocial insect genetics."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "commentary/policy",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Cell 'Leading Edge Previews' commentary; methods describe the commentary's comparative framing, and findings are the reviewed studies' results as reported and interpreted by the authors. Evidence quotes include line-break hyphens from extraction."
+  }
 }

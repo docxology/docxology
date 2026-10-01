@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> We perform a systematic literature analysis of publications using the terms 'Free Energy Principle' or 'Active Inference', with emphasis on works by Karl Friston. We trace the history, growth, and diversification of the FEP/Active Inference literature, mapping its expansion across disciplines and identifying key themes, methods, and trends in the field.
+> Here we perform a literature analysis of publications in scientific literature using the term “Free Energy Principle” or “Active Inference”, with an emphasis on works written by Karl J Friston. For a subset of papers with accessible full texts, we performed manual annotation (related to structural, visual, and mathematical features) and automated analyses (related to the terms in the Active...
 
 ## Keywords
 
@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Publish or Perish / Google Scholar search for FEP, ActInf and Friston papers** — Citations from 1990–2021 matching the two terms or authored by Karl Friston were collected and de-duplicated manually by title.
+- **BioPython query of open-access PubMed papers for full-text subset** — The BioPython API was used to restrict analysis to open-source PubMed papers with the terms in title/abstract.
+- **PyPDF2 term-frequency extraction using Active Inference Ontology terms** — A custom PyPDF2 script counted 74 core, 250 supplement and 74 entailed ontology terms in each abstract and PDF.
+- **Manual annotation of figures, equations, tables, boxes, supplements** — Each analyzed paper was hand-annotated for structural/mathematical features and estimated citations per year.
+- **ResearchRabbit citation network; Coda tables; Orange clustering** — ResearchRabbit built a citation network of the focal papers; Coda merged data into reflexive tables; Orange clustered term usage.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- From the larger FEP/ActInf citation corpus, the analysis focused on an initial set of 237 open-access papers obtained via PubMed.
+- The most highly cited papers in the open-source dataset were from 2013 and all included Karl J. Friston as an author.
+- By citations per year, Friston is not in the top five first authors; Sterzer (109.3) and Carhart-Harris (108.5) lead, and top papers by this metric date from 2018–2020.
+- All core Active Inference Ontology terms increased in use frequency over time.
+- Term frequencies tracked specific publications, e.g. 'Information Geometry' rose after Parr et al. 2019 and 'Cognitivism' after Friston & Allen 2018.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

@@ -61,17 +61,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Deterministic token injection for manuscript generation",
-      "description": "Applied deterministic token injection for manuscript generation approach"
+      "name": "Seeded SHA-256 digest selection of lexicon tokens per slot",
+      "description": "Each slot hashes the seed, slot name, category, ordinal and full category list; the digest indexes the configured lexicon category.",
+      "evidence": "Each slot combines the seed, slot name, category, ordinal, and full category list into a SHA-256 digest; the digest indexes the configured category."
     },
     {
-      "name": "Conditional IMRAD manuscript hydration",
-      "description": "Applied conditional imrad manuscript hydration approach"
+      "name": "YAML config-owned lexicon, slots, and section conditions",
+      "description": "Lexicon categories, slots, section switches, method rows and claims are declared in YAML; source code turns them into manuscript bodies.",
+      "evidence": "authors declare categories, slots, section switches, method steps, and claim boundaries; source code transforms those declarations into manuscript bodies and evidence tables."
+    },
+    {
+      "name": "Staged pipeline from config validation to hydrated Markdown",
+      "description": "Validates the madlib block, builds a TokenPlan and section bodies, writes artifact JSON and a figure registry, then hydrates Markdown.",
+      "evidence": "The project script first validates the madlib: block, expands slots into a TokenPlan, builds section bodies, writes artifact JSON, emits a figure registry, and only then writes hydrated Markdown under output/manuscript/."
+    },
+    {
+      "name": "Explicit vs. loader-default config field-origin inventory",
+      "description": "Classifies configuration paths as explicitly set in YAML or inherited from loader defaults and reports them as method evidence.",
+      "evidence": "The config-origin inventory currently separates 125 explicit YAML path(s) from 11 loader-defaulted path(s)."
+    },
+    {
+      "name": "Project tests and shared output validator",
+      "description": "Tests check determinism, seed and category sensitivity, malformed configs, section disablement and unresolved tokens; a validator checks rendered outputs.",
+      "evidence": "Project tests cover deterministic token choice, seed sensitivity, category-input sensitivity, malformed config rejection, section disablement, artifact writing, and unresolved manuscript-token detection."
     }
   ],
   "key_findings": [
-    "This exemplar asks whether a reviewable pipeline can hydrate a complete IMRAD manuscript from configuration-owned lexical data while preserving an audit trail that remains readable before and after re",
-    "The project deliberately keeps playful Mad Lib mechanics inside a serious reproducibility contract: the manuscript shell names large placeholders, the config declares allowable language, and the sourc"
+    "With seed 431, the schema expands 22 slot rules into 40 token choices across 10 lexicon categories.",
+    "The generated plan enabled all 11 manuscript sections and filled 40 token choices, each traced to its variable, category, section and config pointer.",
+    "Re-running generation with seed 431 and the same lexicon produces the same token plan.",
+    "The author frames the main result as traceability surviving a complete render path, not any particular word choice.",
+    "The paper explicitly does not claim lexical replacement creates scholarship; it shows a conditional text generator can be made accountable to config, tests and validation."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -80,5 +100,19 @@
   ],
   "related_software": [
     "docxology/template_madlib"
-  ]
+  ],
+  "key_findings_evidence": [
+    "The committed seed is 431 and the current schema expands 22 slot rule(s) into 40 token choice(s) across 10 lexicon categories.",
+    "The generated plan enables 11 of 11 manuscript sections and fills 40 token choice(s).",
+    "Re-running generation with seed 431 and the same lexicon produces the same token plan.",
+    "The important result is therefore not a surprising word choice; it is the survival of traceability through a complete render path.",
+    "It shows that a conditional text generator can be made accountable to configuration, tests, and render-time validation."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Self-generated exemplar manuscript; contribution claims are explicitly labelled as local exemplar claims with no empirical validation."
+  }
 }

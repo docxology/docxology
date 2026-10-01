@@ -36,20 +36,41 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Visual and symbolic analysis",
-      "description": "Applied visual and symbolic analysis approach"
+      "name": "Section-by-section dialogue between Blake's text and ecological-psychology prose",
+      "description": "The work pairs passages of Blake's The Marriage of Heaven and Hell with commentary prose framed in active inference and ecological terms.",
+      "evidence": "A dialogue between William Blake's revolutionary vision and esoteric ecological psychology"
     },
     {
-      "name": "Cross-domain pattern mapping",
-      "description": "Applied cross-domain pattern mapping approach"
+      "name": "Paraphrastic rewriting of Blake's lines in information-theoretic vocabulary",
+      "description": "Each Blake passage is followed by a reworking that substitutes concepts such as singular value decomposition, priors and free energy for Blake's imagery.",
+      "evidence": "As I was walking among the fires of hell, delighted with the enjoyments of Cognition – each flame a singular value decomposition of experience"
+    },
+    {
+      "name": "Self-declared speculative, LLM-assisted composition",
+      "description": "The author states an explicitly speculative epistemic status and notes the influence of Claude 4.5 in composing the text.",
+      "evidence": "Epistemic status: Definitely Speculative & Claude 4.5-pilled"
     }
   ],
   "key_findings": [
-    "Synthesis of Agent and Niche is a visionary art-philosophy dialogue between William Blake's The Marriage of Heaven and Hell and ecological psychology, mediated by Active Inference and Buckminster Full"
+    "The text reads Blake's 'without contraries is no progression' as opposition generating the potential landscape that enables directed motion.",
+    "It casts organisms as active inference engines that construct the niches and possibility spaces they then navigate.",
+    "It concludes by framing 'everything that lives is holy' as a recognition of negentropy and self-modelling systems."
   ],
   "related_papers": [
     "2018_PPPiP",
     "2022_MirrorTest",
     "2023_BlakeFuller"
-  ]
+  ],
+  "key_findings_evidence": [
+    "theme: without contraries is no progression, for opposition generates the very potential landscape that enables directed motion through possibility space.",
+    "revealing how organisms don't just adapt to niches but actively construct the possibility spaces they then navigate.",
+    "For everything that lives is Holy — a recognition, a thermodynamic fact, universe's confession that wherever negentropy accumulates, wherever patterns resist their own dissolution"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "other",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Speculative, poetic/artistic essay (self-described as 'Definitely Speculative'); no empirical methods or testable results. Findings are the work's interpretive framings, not established results. Chapters mirror Blake's original divisions (Argument, Voice of the Devil, Memorable Fancies 1-5, Proverbs of Hell, Song of Liberty, Chorus)."
+  }
 }

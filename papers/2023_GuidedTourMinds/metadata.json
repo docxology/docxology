@@ -25,16 +25,21 @@
   ],
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Comparing Friston et al.'s particular kinds with existing taxonomies of minds",
+      "description": "The comment sets the target paper's typology of particular kinds against mindspace proposals by Sloman, Gray et al., Deacon, and Yudkowsky as signposts for future research.",
+      "evidence": "It remains to be seen to what extent it can be reconciled with the other taxonomies of minds. But some tentative signposts for possible future research are as follows:"
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Reflection from teaching 5 cohorts of Active Inference textbook groups",
+      "description": "The authors draw on their experience learning and teaching the 2022 Active Inference textbook at the Active Inference Institute to judge the target paper's educational value.",
+      "evidence": "the authors of the present commentary have been involved with learning and teaching the first Active Inference textbook of 2022 [15], across 5 cohorts of textbook groups at the Active Inference Institute [16]."
     }
   ],
   "key_findings": [
-    "This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argue"
+    "The authors argue that the typology of particular kinds in the target paper can be seen as a possible contribution to mapping the space of possible minds.",
+    "They propose that as particles move from inert to active, conservative, and strange, they can be seen as moving toward higher values on Gray et al.'s 'agency' axis.",
+    "They suggest the typology of particular kinds can serve as an exemplar and underlying scheme for building or revising taxonomies of mind more precisely.",
+    "From their teaching, the authors report finding the target paper's scope and visual representations almost uniquely relevant in educational settings."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -43,5 +48,18 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1016/j.plrev.2023.11.001",
-  "doi_url": "https://doi.org/10.1016/j.plrev.2023.11.001"
+  "doi_url": "https://doi.org/10.1016/j.plrev.2023.11.001",
+  "key_findings_evidence": [
+    "Viewed within this context, the typology of particular kinds proposed in the target paper [1] can be regarded as a potential contribution to such a project.",
+    "As the particular kinds (Figure 2 in [1]) move from inert to active to conservative and to strange particles, one can envisage them as moving towards higher values of",
+    "Hence, the typology of particular kinds can serve both as an exemplar and an underlying scheme for conceiving or modifying various taxonomies of mind in a much more precise and principled way.",
+    "We have found the scope and visual representations of this paper to be almost uniquely relevant in these educational settings, where learners vary greatly in terms of familiarity with the Active Inference Ontology [17] and burgeoning literature [18]."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "commentary/policy",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Two-page invited comment on Friston et al. 'Path integrals, particular kinds, and strange things'; no empirical methods."
+  }
 }

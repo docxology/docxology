@@ -64,17 +64,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Multi-engine literature retrieval across 7 engines with graceful degradation",
+      "description": "Dispatches the 'modafinil' query to arXiv, OpenAlex, Semantic Scholar, Crossref, PubMed, SovietRxiv and ChinaRxiv; unavailable engines report skipped without aborting.",
+      "evidence": "Retrieval (01_literature_search.py) — dispatch the configured query across 7 engines (arXiv, OpenAlex, Semantic Scholar, Crossref, PubMed, SovietRxiv, and ChinaRxiv), merge, and de-duplicate into corpus.jsonl."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Canonical-identifier de-duplication and keyword relevance filtering",
+      "description": "Merges records by DOI > arXiv ID > Semantic Scholar ID > OpenAlex ID > title digest, keeping the most complete version, then filters by relevance keywords and start year 2000.",
+      "evidence": "Heterogeneous records are reconciled by a canonical identifier hierarchy — DOI > arXiv ID > Semantic Scholar ID > OpenAlex ID > a stable digest of the normalized title."
+    },
+    {
+      "name": "Keyword-based 6-bucket subfield classification and growth metrics",
+      "description": "Classifies records into Clinical Sleep, Cognition, Pharmacology, Psychiatry, Safety and Neuroscience and computes year counts, CAGR and doubling time.",
+      "evidence": "Counts by year, venue, and author; growth metrics (CAGR 3.45%, doubling time 11.3 years); a configurable 6-bucket subfield classification; topic models; and a citation network with 1377 communities."
+    },
+    {
+      "name": "TF-IDF (500 features) + NMF topic model and TF-IDF/SVD embeddings",
+      "description": "Builds a 500-feature TF-IDF representation of titles/abstracts, extracts 5 NMF topics, and embeds texts with offline deterministic TF-IDF/SVD.",
+      "evidence": "TF-IDF over a 500-feature vocabulary feeds non-negative matrix factorization, which extracts 5 latent topics."
+    },
+    {
+      "name": "Intra-corpus citation network and config-driven token-injected manuscript",
+      "description": "Builds a citation graph with community detection; all manuscript numbers are injected from a single config file and pipeline outputs with fixed seeds.",
+      "evidence": "Every domain-specific value in this manuscript — the search term, keyword set, engine roster, subfield taxonomy, and hypotheses — is injected from a single configuration file and the pipeline’s own outputs"
     }
   ],
   "key_findings": [
-    "Manual synthesis cannot keep pace with a fast-growing research literature, and ad-hoc\nreviews bind no evidence to a reproducible pipeline.",
-    "We present a configurable,\nreproducible meta-analysis framework that takes a single search term and produces a\ncomplete quantitative portrait of its literature."
+    "The live run retrieved and de-duplicated a corpus of 2302 modafinil records spanning 2000-2026.",
+    "The modafinil literature grows at a CAGR of 3.45%, doubling every 11.3 years, with a peak of 112 publications in 2025.",
+    "Clinical Sleep is the largest subfield, at 64.3% of the classified corpus.",
+    "The citation network has 2204 nodes, 8,772 edges and 1377 communities, with 22.6% of outgoing references resolving inside the retrieved corpus.",
+    "The author notes the corpus is a bounded sample: a 1,000-per-engine cap applied and Semantic Scholar was rate-limited, returning zero records."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -83,5 +103,19 @@
   ],
   "related_software": [
     "docxology/template_literature_meta_analysis"
-  ]
+  ],
+  "key_findings_evidence": [
+    "into a corpus of 𝑁= 2302 records spanning 2000–2026 (26 years).",
+    "The modafinil literature spans 26 years (2000–2026) and grows at a CAGR of 3.45%, doubling every 11.3 years. The peak year 2025 produced 112 publications",
+    "the largest subfield is Clinical Sleep (64.3% of the classified corpus).",
+    "The citation network of 2204 nodes and 8,772 edges has a resolution rate of 22.6%, 1377 communities, and a maximum in-degree of",
+    "The max-results cap of 1,000 per engine means the full literature is larger than the retrieved corpus; the 2302 records represent a bounded sample rather than the complete literature."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Despite the title, this is a bibliometric/literature-mapping pipeline, not an effect-size meta-analysis of modafinil outcomes; the paper states it does not adjudicate scientific truth. The 6 hypothesis evidence scores are all +0.00 / pending (LLM-gated stage not executed), so no hypothesis findings are reported."
+  }
 }

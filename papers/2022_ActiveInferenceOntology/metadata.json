@@ -115,17 +115,32 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Active Inference",
-      "description": "Applied active inference approach"
+      "name": "Active Inference modeling of centralized (CeSci) vs decentralized (DeSci) science",
+      "description": "Used the Active Inference framework to model similarities and differences between Decentralized Science and Centralized Science as collective epistemic processes.",
+      "evidence": "In this paper, we model the similarities and differences between Decentralized Science (DeSci) and Centralized Science (CeSci) through the Active Inference framework"
     },
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Construction of the Active Entity Ontology for Science (AEOS)",
+      "description": "Built an entity-oriented, versionable ontology (hosted on Coda) whose entities use the Markov-blanket partition into internal, sense and active states.",
+      "evidence": "In accordance with the theory of Active Inference, any AEOS entity consists of 3 kinds of states that are partitioned off from the entity’s environment: Internal states"
+    },
+    {
+      "name": "Example CeSci/DeSci entity-interaction motifs across areas of concern",
+      "description": "Drafted motifs (funding, communication, cryptographic relationship, scientific review, research, publishing) as natural-language sentences and graphical AEOS diagrams.",
+      "evidence": "Table 1 below provides example entity interaction motifs for CeSci and DeSci ecosystem models. These motifs are presented as initial drafts on the specification and visualization of subsystems/modules"
+    },
+    {
+      "name": "Qualitative BOLTS analysis using the Active Inference Conflict Model",
+      "description": "Framed integration of DeSci into CeSci across business, operations, legal, technical and social surfaces, using bar-code adoption as a worked example.",
+      "evidence": "can be summarized through a qualitative use of the Active Inference Conflict Model, which helps to frame conflict across business, operations, legal, technical, and social (BOLTS) surfaces"
     }
   ],
   "key_findings": [
-    "We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature.",
-    "Analysis of The ontology provide..."
+    "The paper presents AEOS as a composable, versionable system for modeling science systems using Active Inference entity partitioning.",
+    "AEOS defines two entity classes: Active epistemic entities that select policies and enact affordances, and Informational entities that hold information and are acted upon.",
+    "The authors argue that a DeSci stance can aid governance of scientific knowledge as an epistemic common good by providing incentive and opportunity to build integrated understanding.",
+    "They identify a major limitation of Web3 tokenization: giving tokens real-world value makes them vulnerable to speculative investment and hoarding.",
+    "Stated next steps include Active Inference models in cadCAD via the Active Blockference package and a DeSciCAD graphical interface for using AEOS in ecosystem design."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -133,5 +148,19 @@
     "2021_ModelingConflict"
   ],
   "artifact_doi": "10.5281/zenodo.7484994",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7484994"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7484994",
+  "key_findings_evidence": [
+    "We present the Active Entity Ontology for Science (AEOS, available at coda.io/@active-inference-institute/active-entity-ontology-for-science-aeos) as a composable and versionable system for modeling various science systems",
+    "In AEOS, there are two Classes of Entity (Figure 3): Active epistemic entities (which select action policies and enact affordances), and Informational entities (which contain information and are acted upon).",
+    "We argued that the DeSci stance can facilitate the governance of scientific knowledge (understood as an epistemic common good) by providing both the incentive and the opportunity to build a detailed understanding",
+    "namely that creating real world value for the token renders it vulnerable to speculative investment and hoarding (and other corruptive influence).",
+    "In the open source Active Blockference package [131], we are developing Active Inference models that are implemented in the complex system modeling framework cadCAD [132]"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Conceptual/ontology paper with illustrative motifs; no empirical evaluation. Full-text title adds subtitle 'from Situated Sensemaking to the Epistemic Commons' (batch title is shortened)."
+  }
 }

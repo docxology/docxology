@@ -29,17 +29,32 @@
   ],
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Cross-field survey of information challenges (finance, ancestry, genomics, etc.)",
+      "description": "Chapter I synthesizes features of information systems from knowledge-management literature and examines ad hoc solutions in several applied fields.",
+      "evidence": "explore what insights and ad-hoc solutions may be found in an eclectic set of fields facing information challenges, including personal finance, ancestry research, hybrid cloud infrastructure security, translational neuroscience, and genomics."
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Rhetorical plus ecological analysis of image memes (DRE3 model)",
+      "description": "Chapter II combines rhetorical studies and ecosystem concepts into a three-tier model for cataloguing and studying digital image memes.",
+      "evidence": "Drawing from concepts in rhetoric, ecology, and complex systems analysis we introduce a Digital Rhetorical Ecosystem three-tiered model (DRE3) to explain how memes impact public narratives and beliefs."
+    },
+    {
+      "name": "Exploratory bibliometric co-occurrence analysis via Google Scholar",
+      "description": "Chapter III queried Google Scholar with combined search strings for knowledge-management-related fields, then quantified and visualized co-occurrence.",
+      "evidence": "Search-strings associated with selected areas of research were used to query Google Scholar in various combinations in search of co-occurrence, results were quantified and visualized."
+    },
+    {
+      "name": "Survey of conflict models and Active Inference Conflict (AIC) formalization",
+      "description": "Chapter IV surveys prior war/conflict models (OODA, generations of warfare, Rumsfeld Matrix) and recasts conflict using Active Inference.",
+      "evidence": "In this paper, we have briefly surveyed models of conflict, considered their strengths and inadequacies, proposed a unifying model based upon the application of Active Inference (ActInf)"
     }
   ],
   "key_findings": [
-    "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems..",
-    "We explore communication in located teams and all-...."
+    "Chapter I proposes Narrative Information Management (NIM) as a unifying term and framework for features of systems that support collective sensemaking.",
+    "Chapter II's authors argue a rhetorical approach in large-scale analyses of multimedia artifacts can improve tools for categorizing, indexing, searching and modeling online discourse.",
+    "Chapter III's bibliometric analysis found variable couplings and differential keyword prevalence, describing an 'archipelago' of partially connected areas around knowledge management.",
+    "Chapter III reports only ~6% of decision support systems results co-occurred with keywords of the areas studied, though that literature's volume was comparable to knowledge management.",
+    "Chapter IV's authors contend existing warfare models lack generalizability and interoperability, and propose the AIC model as tractable to simulate and able to incorporate empirical data."
   ],
   "related_papers": [
     "2020_EmergentTeams",
@@ -67,5 +82,19 @@
       "checksum": "md5:afc3d7837a9c00d0ec43b4366a0947a3",
       "download_url": "https://uploads-ssl.webflow.com/5fbe735a83a32b715dac6a28/61ba304e6e77f3eb38a816b4_NIE.pdf"
     }
-  ]
+  ],
+  "key_findings_evidence": [
+    "Narrative Information Management: The design, use, implementation, and study of aspects and features of processes and systems which manage information in order to facilitate narrative sensemaking.",
+    "We argue that using a rhetorical approach (which emphasizes message form and audience) in large-scale analyses of multimedia and other digital artifacts can enhance analytic tools for categorizing, indexing, searching, and modeling online discourse.",
+    "There appears to be an archipelago of partially-connected “islands” in the knowledge management space.",
+    "only ~6% of decision support systems results had co-occurrence of keywords with areas included in this study",
+    "The AIC model, as a consequence of it being founded on the matured quantitative models of ActInf, is tractable to simulate, can incorporate empirical data, and also can immediately be implemented qualitatively to produce novel insights about various forms of conflict."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "book/report",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Edited volume (eds. Cordes & Friedman, COGSEC 2021) with four multi-author chapters; methods/findings are attributed per chapter. The bibliography lists no authors for this entry. Chapter IV's AIC model is applied qualitatively, not simulated in the text summarized."
+  }
 }

@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Third version of the Active Inference Institute overview, documenting continued organizational growth, expanded research programs, educational initiatives, and community engagement. Covers the institute's evolving mission and impact across diverse application domains.
+> This document surveys the current state of The Active Inference Institute and The Active Inference Ecosystem , in the context of our current and future directions. As embodied agents, we aim to update our decisions, goals and predictions as an institute by actively gathering (sampling) insights (observations) from our members. As Heraclitus once said “No one ever steps in the same river twice...
 
 ## Keywords
 
@@ -18,11 +18,19 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Collaboratively edited living Coda document (v3 snapshot) by a named author team** — Snapshot of the Institute & Ecosystem living document, which authors edited with a full trace of edits; earlier versions date from 2023 and 2024.
+- **Structure inherited from the 2023 paper and extended Sept-Nov 2024** — The document's sections derive from the 2023 paper and were expanded by contributors in late 2024.
+- **Preparation and Measurement stages for project proposals and reporting** — Describes how Institute projects are proposed and reported, with Measurement form updates feeding the monthly newsletter.
 
 ## Key Findings
 
-- Analysis of Covers the institu...
+- Describes the Institute as a registered Delaware non-profit supporting education, research and ecosystem services, and a 501(c)(3) as of 2024.
+- Reports that the Institute's Discord server, its primary discussion and meeting venue, has over 1000 people.
+- Reports that the Institute had released over 500 videos to date.
+- Reports that RxInfer.jl Learning Group meetings in 2024 included over 20 active contributors.
+- Frames the Institute's approach as cultivating an 'open' ecosystem rather than a closed, laboratory-centric approach to Active Inference.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

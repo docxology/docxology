@@ -38,5 +38,48 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-08-28T17:19:17Z"
+  "checked_at": "2026-08-28T17:19:17Z",
+  "methods": [
+    {
+      "name": "CIF-AD-OODA integration model with a five-step domain template",
+      "description": "Combines CIF defense mechanisms, Axiomatic Design structural analysis, and the OODA loop into one model applied to Goal Hijacking via a standardized five-step template.",
+      "evidence": "We formalized the integration of three complementary frameworks— CIF (defense mechanisms), Axiomatic Design (structural analysis) Suh [2001], and the OODA Loop (temporal dynamics) Boyd [1987]—into a unified analytical model for Goal Hijacking."
+    },
+    {
+      "name": "Qualitative application across ten operational domains",
+      "description": "Applies the model to domains including rare-earth mining, drone warfare, supply chain, biowarfare, food security, trade wars, infrastructure, and information ecosystems.",
+      "evidence": "The integrated CIF-AD-OODA analytical model is applied across ten critical domains (rare-earth mining, nation-state alliances, cyber-security, drone warfare, supply chain, biowarfare, food security, trade wars, infrastructure, information ecosystems)"
+    },
+    {
+      "name": "Retrospective mapping of six documented 2024–2025 AI-agent incidents",
+      "description": "Maps incidents such as the Replit agent meltdown, a GitHub Copilot RCE, and Slack AI exfiltration onto the attack-pattern taxonomy and CIF mechanisms.",
+      "evidence": "Retrospective analysis of six documented AI agent security incidents (2024–2025)— including the Replit agent meltdown, GitHub Copilot RCE (CVE-2025-53773), Slack AI data exfiltration, and a $3.2M procurement fraud"
+    },
+    {
+      "name": "Practitioner synthesis of Part 1 formalism and Part 2 experiments",
+      "description": "Restates the trust calculus, adversary hierarchy, and Part 2 detection results in accessible language with deployment recommendations; no new experiments are run here.",
+      "evidence": "The practitioner section (§1–§8) synthesizes Parts 1 and 2 into accessible language, situates the formal results against current deployment practice, and gives practical recommendations for teams that build and run multiagent AI systems."
+    }
+  ],
+  "key_findings": [
+    "The cross-domain analysis identifies three universal Goal Hijacking patterns, with FR Polarity Inversion the most prevalent (5 of 10 domains).",
+    "All five canonical CIF mechanisms appear across the ten domains, each as a primary defense in at least three, and no domain needed mechanisms outside the CIF vocabulary.",
+    "Four domains contributed proposed new defense patterns: verification channel separation, active perturbation probing, physics-informed invariants, and semiotic decoupling.",
+    "Summarizing Part 2, the guide distinguishes a 96–100% parametric detection ceiling from a lower real-pipeline 30-seed mean of 86.3%.",
+    "Per Part 2's colony benchmark, emergent misalignment had the lowest detection rate (74.3%) of any evaluated scenario."
+  ],
+  "key_findings_evidence": [
+    "we identified three universal attack patterns—FR Polarity Inversion, Constraint Relaxation, and Context Boundary Violation—that characterize all Goal Hijacking attacks as specific manipulations of the Axiomatic Design Matrix. FR Polarity Inversion is the most prevalent (5/10 domains)",
+    "We demonstrated that all five canonical CIF mechanisms appear across the ten-domain portfolio, with each mechanism serving as a primary defense in at least three domains. No domain requires mechanisms beyond the CIF vocabulary",
+    "verification channel separation (Biowarfare), active perturbation probing (Trade Wars), physics-informed invariants (Infrastructure), and semiotic decoupling (Drone Wars).",
+    "The combined evidence includes 3,535 tests and a 96–100% parametric detection ceiling across all attack categories and architectures (Part 2), alongside a lower real-pipeline multi-seed mean of 86.3% (30 seeds).",
+    "emergent misalignment achieves the lowest detection rate (74.3%) of any evaluated scenario, at a false positive rate of 25.5%."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "commentary/policy",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Part 3+4 of a series; it is a practitioner guide plus qualitative cross-domain analysis. All quantitative detection results are reported from Part 2 (parametric simulation and pipeline runs), not produced here; the paper's own future work names controlled domain experiments as the critical next step. work_kind chosen as commentary/policy for the guidance-oriented framing; it could also be read as review."
+  }
 }

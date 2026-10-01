@@ -34,20 +34,55 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Two-Layer Architecture: 12 shared infrastructure subpackages + standalone projects",
+      "description": "template/ separates a reusable infrastructure/ layer (~150 Python modules) from self-contained projects/ workspaces that consume it.",
+      "evidence": "Infrastructure Layer (infrastructure/): 12 Python subpackages comprising ~150 modules and providing reusable services."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Eight-stage build pipeline from environment setup to LLM review",
+      "description": "Stages run sequentially: setup, tests with coverage, analysis scripts, Pandoc/XeLaTeX rendering, hashing/watermarking, PDF validation, LLM review.",
+      "evidence": "connected by an eight-stage build pipeline progressing from environment sanitization through test execution"
+    },
+    {
+      "name": "Zero-Mock testing policy with 90%/60% coverage gates",
+      "description": "Tests use real filesystem operations and subprocesses instead of mocks, with coverage thresholds of 90% for projects and 60% for infrastructure.",
+      "evidence": "with a Zero-Mock testing policy enforc- ing 90% project-level and 60% infrastructure-level coverage via real filesystem operations and subprocess invocations"
+    },
+    {
+      "name": "SHA-256 hashing with steganographic watermarking for provenance",
+      "description": "Rendered PDFs carry SHA-256 hashes in metadata plus alpha-channel overlays and QR codes for tamper detection.",
+      "evidence": "The SHA-256 hash embedded in the PDF metadata detects any modification to the file contents."
+    },
+    {
+      "name": "Multi-project evaluation and feature comparison with peer tools",
+      "description": "Three exemplar projects were run through the full pipeline, and template/ was compared with peer tools (e.g. Snakemake, Quarto, DVC) on fourteen dimensions.",
+      "evidence": "All three projects were executed through the full eight-stage pipeline using the run.sh interactive orchestrator with the “all projects core (fast)” configuration, which skips infrastructure tests and LLM review"
     }
   ],
   "key_findings": [
-    "Infrastructure-as-code research lifecycle: Two-Layer Architecture, eight-stage build pipeline, Zero-Mock testing, and Documentation Duality (README + AGENTS + SKILL)."
+    "All three exemplar projects (39, 505 and 65 tests) completed the pipeline, a reported 100% success rate with zero mock violations.",
+    "Total pipeline duration across the three projects was ~125s on Apple M-series hardware, ~42s per project on average.",
+    "The infrastructure suite of ~3,083 tests reached 83%+ coverage against a 60% threshold, with zero mock violations.",
+    "The comparative feature analysis is reported to show template/ uniquely combining eleven distinctive capabilities in one enforced pipeline.",
+    "Among stated limitations, the provenance layer offers SHA-256 tamper detection but not cryptographic non-repudiation, since it lacks private-key signatures."
   ],
   "related_papers": [
     "2023_NSFReporting",
     "2023_NaturalAIBased",
     "2025_AuBI"
-  ]
+  ],
+  "key_findings_evidence": [
+    "a gradient descent study (code_project, 39 tests), a meta-analysis pipeline (act_inf_metaanalysis, 505 tests), and this self-referential architectural analysis (template, 65 tests)—achieving 100% pipeline success with zero mock violations.",
+    "Overall success rate: 100.0% (3/3 projects) Total pipeline duration: ~125s Average per project: ~42s",
+    "Total tests ~3,083 Infrastructure coverage threshold 60% (achieved: 83%+) Zero-mock violations 0",
+    "A comparative feature analysis against nine peer tools across fourteen dimensions confirms that template/ uniquely integrates all eleven distinctive capabilities",
+    "The current system provides tamper detection (via SHA-256 hashing) but not non-repudiation in the cryptographic sense—it lacks private-key digital signatures."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Self-describing software/architecture paper; the manuscript was produced by the pipeline it describes. Peer-tool count is inconsistent in the text (abstract says nine, contributions list names ten). Timings are described as representative."
+  }
 }

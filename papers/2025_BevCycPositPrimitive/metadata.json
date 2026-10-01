@@ -41,16 +41,35 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Genomic and bioinformatic analysis",
-      "description": "Applied genomic and bioinformatic analysis approach"
+      "name": "Decomposable chain of nodes (N–N–N) for action/concept sequences",
+      "description": "Proposes BevCYC as a chain of empty nodes for action-context pairs, modeled on epigenetic-cycle ideas, representing action or concept sequences.",
+      "evidence": "BevCYC is a framework that implements a decomposable Chain of Node ( N – N – N ) Representing an Action Sequence / Concept Sequence That is based on the Epigenetic Cycle ideations."
     },
     {
-      "name": "Statistical genetics",
-      "description": "Applied statistical genetics approach"
+      "name": "Hierarchical decomposition down to muscle tension %",
+      "description": "Nodes are decomposed hierarchically until they resolve to a muscle tension percentage at the lowest level.",
+      "evidence": "Through hierarchal decomposition; these ultimately resolve onto a muscle Tension %"
+    },
+    {
+      "name": "Shrinking $$$] / $$] / $] scaffold with interruption slots",
+      "description": "Experiments with a scaffold whose earlier nodes have more slots (L) for interruption or vision/theme injection than later ones.",
+      "evidence": "Where the earlier the sequence is; the more Nodes there is to fill with Vision / Theme (refer to Demo0.01 entire agent build) injection nodes Whilst the closer it is to completion; the less space it is to inject /interfere"
+    },
+    {
+      "name": "Worked sketch: cat food-seeking cycle (EpiFoodPlau) as ROS-style nodes",
+      "description": "Illustrates the idea with a cat morning routine of chained triplets (wake–roam–sleep, roam–hunt–roam) treated as ROS nodes with completion checkpoints.",
+      "evidence": "these are ROS nodes (with their usual Checkpoint for completion)"
+    },
+    {
+      "name": "Proposed conversion node/table to robotics frameworks (BT, HTN, STRIPS)",
+      "description": "Suggests converting BevCycles to behavior trees, HTNs, motor primitives or STRIPS planning by adding a conversion node and table.",
+      "evidence": "simply by adding a conversion node - and a conversion table"
     }
   ],
   "key_findings": [
-    "Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down ont"
+    "The authors posit that state–action–state triplets can be treated as state–state–state, deliberately blurring the state/action distinction.",
+    "The authors suggest a minimal 'silly cat' agent demonstrating only social-cortex logging and applying could be built in the near term.",
+    "The authors flag that the work is experimental and hypothesized, with later revision for proper active inference modeling contingent on technical help."
   ],
   "related_papers": [
     "2015_CryptoJews",
@@ -58,5 +77,17 @@
     "2015_HoneyBeeEvolution"
   ],
   "artifact_doi": "10.5281/zenodo.14737076",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.14737076"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.14737076",
+  "key_findings_evidence": [
+    "The distinction between the states and the action is deliberately blurred",
+    "I think currently I can cook up a really silly cat that only has a Demonstration Of Social Cortex logging and applying",
+    "We can then revamp this for Proper Active inference modeling Upon more technical help! (note that these are described as “EXPERIMENTS”)"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Informal concept/posit note (≈10 KB) with no implementation, data, or results; findings are the authors' proposals and intentions, not tested outcomes. The README abstract mentions Levin's morphogenesis/morphospace, which does not appear in the extracted text (references are only YouTube links)."
+  }
 }

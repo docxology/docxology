@@ -18,11 +18,19 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Tinbergen's four questions applied to ant and human aging** — The talk organizes its question of why aging occurs around Tinbergen's 4 Questions, comparing ants (nestmate and colony scales) with humans.
+- **Decayed-house example illustrating four kinds of explanation** — A worked example explains why a house is decayed in developmental, material, functional and deep-time terms before applying the scheme to aging.
+- **Insulin signaling as a focal example of aging mechanism** — Mechanism discussion is restricted to insulin signaling, drawing on cited work such as Yan et al. 2022 on long-lived reproductive ant castes.
+- **Kin selection vs. multi-level selection distilled from a prior stream** — The evolutionary account is limited to kin selection and multi-level selection, presented as a distillation of ActInf PaperStream #001.0.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The speaker distinguishes age (clock time elapsed) from aging (a process and embodied outcome linked to species-specific phenotypes and disease/death risk), stating the definition is not normative.
+- The slides note that some ant species have colonies that do not age, possibly via asexual or intra-nest sexual reproduction.
+- On the utility of aging, the talk suggests one shared answer for ants and humans may be that there is no specific utility, only an order-vs-disorder tradeoff.
+- At nestmate scale, the speaker proposes turnover of damaged nestmate bodies may be favorable, favoring aging processes at that scale.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

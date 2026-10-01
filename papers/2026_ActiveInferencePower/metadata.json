@@ -80,5 +80,53 @@
     "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked",
     "title_overlap"
-  ]
+  ],
+  "methods": [
+    {
+      "name": "Power estimated as an operating characteristic of an investigator-declared design",
+      "description": "Defines power over replications of a declared model/process/setting/policy design, scoring traces against evaluator-only hidden truth.",
+      "evidence": "Thus the agent faces uncertainty within a specified process, whereas power is estimated across replications of an investigator-declared design"
+    },
+    {
+      "name": "Seeded Monte Carlo comparison of 9 FWER/FDR correction procedures",
+      "description": "Compares Bonferroni, Šidák, Holm, Hochberg, BH, BY, Storey, adaptive BH and weighted BH on a seeded two-groups design with MC SE bands.",
+      "evidence": "Unless otherwise stated, the comparison uses 𝑚 = 200, 𝜋0 = 0.8, one-sided tests at 𝛼 = 0.05, effect 3.0, and 10000 replications. The configured comparison contains 9 procedures."
+    },
+    {
+      "name": "Dependence-regime stress grid for BH and BY",
+      "description": "Evaluates BH and BY FDR and power under negative equicorrelation, independence, positive-factor and block covariance regimes.",
+      "evidence": "Across the configured dependence grid, including the negative-equicorrelation stress point and the positive-factor range ending at 𝜌 = 0.75"
+    },
+    {
+      "name": "Discrete-state active-inference agent: posterior threshold vs BH on calibrated p-values",
+      "description": "Runs identical streams through a posterior-threshold decision and a BH-calibrated evidence rule under strong and weak evidence regimes.",
+      "evidence": "The active-inference comparison uses 1000 replications per evidence regime and identical streams for the posterior-threshold decision and the BH-calibrated evidence rule."
+    },
+    {
+      "name": "Action-in-the-loop policies with sensing reliability, cost and stopping",
+      "description": "Compares fixed-horizon, posterior-cutoff, information-gain, cost-aware, posterior-sampling and e-process stopping policies in a synthetic action loop.",
+      "evidence": "It extends this to action loops with sensing reliability, latent context, target choice, cost, and stopping."
+    }
+  ],
+  "key_findings": [
+    "In the configured design, FWER-oriented procedures reached power 0.315–0.321 while FDR-oriented procedures reached 0.430–0.749, framed as the expected trade-off, not dominance.",
+    "Storey's paired power gain over BH was about 0.073, which the paper stresses is an operating-characteristic comparison, not a validity certificate.",
+    "Under weak evidence the posterior-threshold policy had FDR 0.153 and FWER 0.366, while the calibrated BH policy made no rejections, illustrating a calibration gap.",
+    "Across the dependence grid, BH estimates stayed within the finite-simulation band and BY stayed more conservative; the paper states this is not a new PRDS proof.",
+    "The paper concludes power numbers should not be carried into a new design; adaptive actions change data path, cost and evidence contract together."
+  ],
+  "key_findings_evidence": [
+    "The FWER-oriented procedures reach power from 0.315 to 0.321 and reject at least 12.6 hypotheses on average in the configured design. The FDR-oriented procedures reach power from 0.430 to 0.749.",
+    "Storey power is 0.90891 with standard error (SE) 0.000472, and its paired gain over BH is 0.07339 with SE 0.000436. The power component is therefore a comparison of operating characteristics, not a validity certificate.",
+    "Under weak evidence, the posterior-threshold policy has FDR 0.153 and FWER 0.366; the calibrated policy has FDR 0.000, power 0.000, and FWER 0.000.",
+    "the empirical BH estimates remain inside the configured finite-simulation band while BY remains more conservative. This is consistent with the stated positive-dependence regime; it is not a new PRDS proof.",
+    "The data path, resource cost, and evidence contract change together. Do not carry a power number into a new design"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "All results are seeded finite-simulation estimates under synthetic, declared scenarios; the paper explicitly disclaims universal power claims, new FDR procedures, or general agent evaluation."
+  }
 }

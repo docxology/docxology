@@ -21,15 +21,23 @@ This work addresses topics in **Entomology**: honey bees, Apis mellifera, gene e
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Entrez/NCBI SRA query for Apis mellifera Illumina RNA-seq samples** — Public RNA-seq samples were gathered via an Entrez search filtered to A. mellifera, Illumina platforms, rnaseq type and SRA biosample.
+- **Six-script MetaInformAnt pipeline built on AMALGKIT** — A versioned, openly available pipeline of six scripts covered environment setup, genome and metadata download, SRA download, quantification and curation.
+- **Metadata tissue-name harmonization script** — A 2.5_update_metadata.py script corrected inconsistent tissue labels so equivalent samples (e.g. variants of 'whole body') were grouped together.
+- **fastp QC, kallisto pseudoalignment, amalgkit curation** — Raw reads were QC'd with fastp, quantified with kallisto against Amel_HAv3.1, and merged/normalized into one dataset with amalgkit.
+- **PCA, clustering and differential expression descriptives** — Post-processing scripts ran principal component, clustering and differential expression analyses on the curated expression data.
 
 ## Key Findings
 
 Core contributions and results:
 
-- The honey bee ( Apis mellifera ) is a pivotal species in both ecological and research contexts, serving as a model organism for studying complex social behavior and physiological processes..
-- A critical aspect of understanding these complexities is the analysis of tissue-specific gene expression (TSGE), a challenging task due to the need to handle large bioinformatics data and manual tissue processing..
-- In this study, we present a meta-analytic approach to investigate TSGE in A. mellifera , harnessing various open-source bioinformatics packages..
+- From 4349 samples and 12,398 loci, AMALGKIT processing retained 731 samples and 177 loci, released as a public July 2023 TSGE snapshot.
+- Curation reduced 133 uniquely named tissues to 54 groups; whole adult body, brain and mushroom body made up 62.3% of samples.
+- Optional metadata fields were largely blank (e.g. 99.1% genotype, 67.5% sex, 77.8% age), limiting their use as surrogate variables in harmonization.
+- Average library size increased over time, but publication date explained only a small fraction of variance in total bases (R2=0.061).
+- The authors attribute the heavy winnowing to heterogeneous experiments, asymmetric tissue coverage with single-tissue designs, and incomplete metadata underpowering surrogate variable analysis.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -58,5 +66,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.10400744`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -61,17 +61,32 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Alpha COGSEC ATLAS prototype built on Coda.io (2023)",
+      "description": "A first digital ATLAS prototype applied to cognitive-security vulnerabilities and exploits, built on a low-code platform, informed the specification.",
+      "evidence": "resulting in an “alpha” version of the “COGSEC ATLAS” [4] built using the low-code data and knowledge management platform Coda.io."
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Object-class specification: Entity, Pattern, iQuery, Attribute, Prompt Interface",
+      "description": "Defines core ATLAS components with properties and methods, sufficient for digital or paper-and-pencil implementation.",
+      "evidence": "The Pattern, Attribute, and Prompt Interface classes are each subclasses which inherit from the Entity class."
+    },
+    {
+      "name": "Question Oriented Design via iQuery routers and pattern QKits",
+      "description": "Structured queries route answers to attributes and assign implied Patterns, which in turn attach new question kits (dynamic typing).",
+      "evidence": "In the ATLAS system, the iQuery functions as a router, capturing all information possible from both the resolution of the request and the implicit information in the request itself."
+    },
+    {
+      "name": "IXE and VIE designations for interoperating ATLAS instances",
+      "description": "Defines Information Exchange Environments and Verified Information Exchange Environments with quality assurance and enforcement criteria.",
+      "evidence": "VIEs are IXEs that offer one or more “verification” features in addition to IXE functionality."
     }
   ],
   "key_findings": [
-    "The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains.",
-    "The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions."
+    "The prototype work revealed that numerous communities maintain pattern languages with limited interoperability.",
+    "Combining parent-child pattern relationships with question lists (QKits) yields a dynamic type system in which objects acquire implied Patterns through requests for information.",
+    "The prototype integrated several dozen pattern collections into over 1,000 networked patterns.",
+    "The design treats questions, missing information, and disagreement over information as information in their own right.",
+    "The authors expect knowledge-base growth to follow a sigmoid rather than exponential curve as iQueries increasingly network existing objects."
   ],
   "related_papers": [
     "2020_EmergentTeams",
@@ -79,5 +94,19 @@
     "2020_GreatPreset"
   ],
   "artifact_doi": "10.5281/zenodo.10362561",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.10362561"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.10362561",
+  "key_findings_evidence": [
+    "numerous communities maintain pattern languages with limited interoperability, underscoring the necessity for enhanced integration approaches.",
+    "a “dynamic type system” emerges, wherein objects are assigned implied Patterns as a result of being involved in a particular request for information either as the subject or the response",
+    "allowing several dozen collections of patterns related to Cognitive Security and from other fields to be integrated rapidly, resulting in a collection of over 1,000 individual, networked patterns",
+    "We posit that (a) a question contains information, (b) lack of answers from the students contains information, (c) disagreement over answers among students contains information.",
+    "the accumulation of new objects instead is expected to follow a sigmoid curve, wherein, the rate of accumulation will hit a key inflection point as iQuery objects begin to network more existing objects than they generate."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Technical specification (v1.2) of a knowledge-management system; findings combine lessons from the 2023 prototype with stated design principles and expectations. Explicitly excludes RID implementation, prompt interfaces, security, governance."
+  }
 }

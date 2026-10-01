@@ -32,5 +32,46 @@
     "hilbert-polya",
     "proof-assistant-forensics"
   ],
-  "concept_doi": "10.5281/zenodo.22243472"
+  "concept_doi": "10.5281/zenodo.22243472",
+  "methods": [
+    {
+      "name": "Independent kernel reproduction under the pinned Lean 4/mathlib toolchain",
+      "description": "Rebuilt the MillenniumLean package with the exact pinned Lean toolchain and mathlib revision and re-ran its axiom report to check its kernel-hygiene claims.",
+      "evidence": "re-derived every kernel-hygiene claim independently under the pinned toolchain (leanprover/lean4:v4.34.0-rc1; mathlib at the manifest-pinned revision d0be1efe9a)"
+    },
+    {
+      "name": "Statement-level binder parsing compared against official Clay statements",
+      "description": "Parsed each claimed final theorem with a binder extractor and classified it against the official Clay problem statements as conditional, definition-only, or off-topic.",
+      "evidence": "Each claimed \"final theorem\" was parsed from Millennium.lean by a balanced-parenthesis binder extractor (src/lean_parser.py) that records the declaration kind (theorem vs def) and every explicit premise binder"
+    },
+    {
+      "name": "Script-checked, line-anchored quotation of the package source",
+      "description": "Verified all line-anchored quotations in the fourteen finding reports against the extracted package bytes by script, and disclosed an earlier failed draft.",
+      "evidence": "All 259 line-anchored quotations in docs/audit/*.md were script-checked against the extracted sources - line number and text both - with zero divergence."
+    },
+    {
+      "name": "Test suite asserting audit facts on real package bytes",
+      "description": "Used fifteen test files that assert audit facts against the actual package bytes without mocks.",
+      "evidence": "All fifteen test files in tests/ assert audit facts against the real package bytes (no mocks; 15/15 pass)."
+    }
+  ],
+  "key_findings": [
+    "The package's kernel claims hold and reproduce exactly: clean build, zero live sorry, zero project axioms, and only standard axiom footprints.",
+    "The claimed final theorems are evidentially void: conditional implications with unproved premises, definitions of the open statements, or true theorems about unrelated simple objects.",
+    "The 'universalization tower' certifying Hodge, BSD and Navier-Stokes proves only that 0 < n + 1 for all naturals.",
+    "Verdict: none of the six Clay problems is resolved; the audit disputes no kernel output, only what those outputs are claimed to demonstrate."
+  ],
+  "key_findings_evidence": [
+    "The kernel claims are TRUE and reproduce byte-for-byte: clean build, zero live `sorry`, zero project axioms, axiom footprints inside {propext, Classical.choice, Quot.sound}.",
+    "They are also evidentially void: the \"final theorems\" are either implications whose unproved premise binders carry the entire mathematical content (Riemann, Yang-Mills, P vs NP), definitions of the open statements (Navier-Stokes, BSD)",
+    "\"universalization tower\" that certifies Hodge, BSD, and Navier-Stokes proves only that 0 < n + 1 for all naturals.",
+    "Verdict: none of the six problems is resolved. The audit disputes no kernel output of the package; it disputes what those outputs are claimed to demonstrate."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "book/report",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Audit report of a third-party (AIX Global) Lean package; full text matches title."
+  }
 }

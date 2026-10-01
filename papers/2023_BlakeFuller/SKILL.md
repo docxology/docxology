@@ -20,14 +20,19 @@ This work addresses topics in **Art & Synergetics**: William Blake, Buckminster 
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Slide-by-slide juxtaposition of Blake and Fuller images and texts** — Each slide places images and texts related to Blake alongside those related to Fuller to surface concordances, points of contact and provocative connections.
+- **Thematic comparison across topics (symmetry, fourfold vision, faith, etc.)** — The deck is organized into themed pages such as Life & Times, Symmetries, Four-fold Vision, Negations & Contradictions, World-View and Faith.
+- **Quotation of primary sources (Blake's plates; Fuller's Synergetics)** — Quotes primary texts such as Jerusalem and The Marriage of Heaven and Hell for Blake and numbered Synergetics passages for Fuller.
 
 ## Key Findings
 
 Core contributions and results:
 
-- William Blake's prophetic works contain formal structures that prefigure modern systems thinking
-- Synergetic analysis reveals deep correspondences between poetic and mathematical modes of thought
+- The author concludes there are complex similarities, divergences and resonances between Blake and Fuller, open to multiple perspectives.
+- The deck proposes both used logical paradigms distinguishing Negation (not-A) from Contradiction (complement-to-A).
+- The deck suggests both find resonance with modern trends including 4EA cognitive science and Active Inference.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -55,5 +60,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.7514367`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

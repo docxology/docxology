@@ -27,22 +27,51 @@
   ],
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Edited volume of eleven chapters from the VIE program's first year",
+      "description": "Collects all work submitted and approved through the UW APL VIE program during Phase 1 of NSF Convergence Accelerator Track F (2021), ordered by submission.",
+      "evidence": "This volume presents all work submitted and approved for publication through the VIE program in the initial year of the project (during Phase 1 of the NSF Convergence Accelerator Track F in 2021), in order of their submission and approval."
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Catechism-based project management across participating teams",
+      "description": "The program coordinated contributing teams using question-based, versionable project documentation adapted from DARPA practice.",
+      "evidence": "The program made use of the recently formalized methodology known as “catechism-based project management”, which applies question-based, versionable project documentation"
+    },
+    {
+      "name": "Framing the information environment as a proto-market needing exchange protocols",
+      "description": "The program treated online information as a proto-market and aimed to lay foundations for Verified Information Exchange environments (VIEs).",
+      "evidence": "framed the global information environment as a proto-market for information in need of exchange protocols and local standards setting in order to de-risk, reduce volatility, and increase trust in digital information transactions."
+    },
+    {
+      "name": "Expert discussions and interviews feeding market-maturity and design chapters",
+      "description": "Chapters such as 'Elements Related to Maturity of Function in Markets' and 'TrustFinder' synthesize program discussions and interviews with experts.",
+      "evidence": "The VIE Program’s discussions and interviews with experts on mechanism design and economics featured a recurring theme of “maturity of function” in markets."
     }
   ],
   "key_findings": [
-    "An edited volume examining open standards and cognitive security for structuring the information commons..",
-    "The book addresses how information ecosystems can be designed to promote trust, transparency...."
+    "The editors suggest focusing on shared context and meaning as a key element of co-managing the information commons, broadening attention from data security to context sharing.",
+    "The editors argue that declining trust online, viewed as a market with growing pains, is a new instance of an old problem traditionally solved by shared exchange protocols and local rule-setting.",
+    "Chapter I (Cordes et al.) proposes Narrative Information Management as a unifying term and framework for the features and challenges of collective sensemaking.",
+    "Chapter V applies Active Inference to model conflict as multiscale processes of communication, trust, and relationship management among agents.",
+    "Chapter XI presents a design document for TrustFinder, a sociotechnical system for clearinghouses of granular, modular information products."
   ],
   "related_papers": [
     "2020_EmergentTeams",
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
   ],
-  "checked_at": "2026-07-01T20:50:01Z"
+  "checked_at": "2026-07-01T20:50:01Z",
+  "key_findings_evidence": [
+    "Our suggestion, explored in this volume, is that focus be placed on shared context and meaning as a key element of co- management of the information commons",
+    "the setting is revealed to be simply a new instance of an old problem with novel features. Traditionally, solutions to problems of this kind have involved the establishment of shared exchange protocols, tools, and local rule-setting.",
+    "by proposing Narrative Information Management (NIM) as a unifying term and framework for the fundamental features and challenges of facilitating collective sensemaking.",
+    "applies the cognitive modeling framework called “Active Inference” to formalize and model conflict in terms of multiscale processes of communication, trust, and relationship management",
+    "in order to present a design document for a sociotechnical system “TrustFinder”."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "book/report",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Edited multi-author collection (eds. Scott David, R.J. Cordes, Daniel A. Friedman); findings are attributed to the editors' foreword or to specific chapters, mostly via the foreword's chapter summaries. Only the front matter and Chapter I abstract were read in detail given the ~1.1 MB file size."
+  }
 }

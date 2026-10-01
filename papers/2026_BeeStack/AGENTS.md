@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Five typed Python modules (Body, Brain, Mind, Swarm, Niche) with contracts, BeeBody: FlyBody walking/flight tasks on a generated honeybee MJCF in MuJoCo, BeeBrain ingestion of curated public Apis mellifera datasets
+- Identifies findings: The empirical run integrates 48 response panels, 7 anatomy inventories and 24 odor templates, with a parseable-source fraction of 0.800., All module contract self-tests pass (rate 1.000) alongside 11 catalogued open gaps; the authors stress this is contract conformance, not biological validation., BeeBody visual scores (0.980 visual, 1.000 silhouette) certify that renders look like a bee, not that kinetics match; masses, adhesion and aerodynamics are FlyBody defaults.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

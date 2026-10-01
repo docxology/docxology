@@ -23,17 +23,37 @@
   ],
   "methods": [
     {
-      "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays approach"
+      "name": "Reanalysis of Dussutour et al. (2009) Pheidole megacephala Y-maze data",
+      "description": "Uses the published Y-maze branch-choice results (Experiments 1, 2 and 4) of Dussutour et al. as the empirical target; no new ant experiments were run.",
+      "evidence": "The values depicted as circle sizes were read off from Dussutour Fig. 2."
     },
     {
-      "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis approach"
+      "name": "One-pheromone model with exponential decay and power-law amplification",
+      "description": "Models a single attractant pheromone that decays exponentially and is perceived through a concave power-law sensory amplification minus a noise level.",
+      "evidence": "Proposed pheromone measurement function M is a power-law amplification of the raw pheromone level ph, subtracting a small base level noise factor, B."
+    },
+    {
+      "name": "Branch preference as a product of two sigmoid functions",
+      "description": "Choice probability is modeled as a product of logistic terms for the difference between branches and the overall signal robustness.",
+      "evidence": "The product of these terms in Eq. (2) models that strong branch preference occurs under a conjunction of two factors"
+    },
+    {
+      "name": "Manual fitting and L-BFGS-B optimization in Python/SciPy",
+      "description": "Parameters were set by manual adjustment, then optimized with SciPy's bounded L-BFGS-B minimizing squared error against values read from the original figures.",
+      "evidence": "Optimization method used is l-BFGS-B (Limited-memory Broy­ den–Fletcher–Goldfarb–Shanno method with Box constraints)."
+    },
+    {
+      "name": "Simulation of the dynamic-environment food-switching experiment",
+      "description": "Simulated Experiment 4 with differing per-ant deposit rates on food vs no-food branches and total traffic around 50 ants per minute.",
+      "evidence": "We conducted a simulation of Dussutour et al. Experiment 4, with ant preference following the model above"
     }
   ],
   "key_findings": [
-    "We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones..",
-    "Our model demonstrates that the dynamic...."
+    "The main reported observations of Dussutour et al. can be explained by a one-pheromone model.",
+    "A one-pheromone model accounts for equal initial E+F preference across conditions followed by divergence after about 15 minutes.",
+    "The one-pheromone model also accounts for preference flipping in the dynamic-environment experiment, and one optimized parameter set fits both figures reasonably.",
+    "The authors conclude that two pheromones are plausible but unnecessary, so the original study is not dispositive evidence for a two-pheromone model.",
+    "The model predicts that with food on both branches traffic equalizes without the oscillation predicted by the two-pheromone model."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -42,5 +62,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1016/j.cogsys.2023.02.005",
-  "doi_url": "https://doi.org/10.1016/j.cogsys.2023.02.005"
+  "doi_url": "https://doi.org/10.1016/j.cogsys.2023.02.005",
+  "key_findings_evidence": [
+    "Here we show that the main reported experimental observations can be explained by a one-pheromone model.",
+    "Clearly, a one-pheromone model can very handily account for the observation that the initial frequency of ants choosing the E + F branch is the same in the E + F vs N and E + F vs experiments but these fre­ quencies diverge after 15 min.",
+    "Through numerical optimization, a single set of values can be found that reasonably fits both Dussutour et al. Fig. 2 and Fig. 10.",
+    "it is plausible, but unnec­ essary, to hypothesize that these ants employ two distinct pheromones in order to account for the two principal results of the Dussutour et al. study",
+    "Our model makes a different prediction, namely that traffic and pheromone deposition equalizes without oscillation."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Modeling/reanalysis paper; initial pheromone amounts (10 and 1) are assumed since no chemical measurements exist. Authors note they could not compare directly with 2PM time-course predictions because those were not published."
+  }
 }

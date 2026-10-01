@@ -23,17 +23,31 @@
   ],
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Application of the FAIR data principles to scientific sensemaking data",
+      "description": "Works through what Findable, Accessible, Interoperable and Re-usable would mean for annotations, ratings and bookmarks.",
+      "evidence": "The FAIR Data Principles [46, 69] propose that research outputs should be Findable, Accessible, Interoperable, and Reusable. Here we consider the FAIR principles in the context of sensemaking data"
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Design of the Open Science Sensemaking Graph with three node types",
+      "description": "Specifies a public knowledge graph of actors (SenseMakers), content (URLs) and stigmergic markers, starting from social bookmarking.",
+      "evidence": "The core envisioned network infrastructure is the Open Science Sensemaking Graph (OSSG), a shared public knowledge graph representing sensemaking processes over scientific research."
+    },
+    {
+      "name": "Protocol-based, Murmurations-inspired four-module network architecture",
+      "description": "Outlines decentralized storage (e.g. Solid pods, IPFS), indexing/querying, content discovery services and user-facing apps.",
+      "evidence": "Broadly, the network architecture is inspired by the Murmurations pro- tocol for decentralized, interoperable data-sharing (for further details see §5.3, [6]). The network will consist of 4 main modules"
+    },
+    {
+      "name": "Minimum viable implementation sketch: bookmarking app and rating aggregator",
+      "description": "Proposes a reference bookmarking app and a Goodreads-like review/rating aggregator, with collaborative filtering for recommendation.",
+      "evidence": "A simple user-facing bookmarking app will be built as a reference implementation, providing an interface to enter input data as well as handling network registration and storage configuration."
     }
   ],
   "key_findings": [
-    "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute..",
-    "We contend that open access to diverse sources of scientific sensem...."
+    "Contends that frictions in scientific sensemaking arise from deficiencies in open access to diverse sensemaking data such as annotations and usage traces.",
+    "Proposes that sensemaking data be included in open science, published under FAIR principles, and embedded in stigmergic annotation networks.",
+    "Argues that FAIR publishing alone is insufficient for sensemaking, which also needs personalizable algorithmic ranking and distribution.",
+    "Observes that sensemaking data are being enclosed, noting that most scientific social bookmarking platforms and reference managers were bought by large publishers."
   ],
   "related_papers": [
     "2020_EmergentTeams",
@@ -42,5 +56,18 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.31222/osf.io/9nb3u",
-  "doi_url": "https://doi.org/10.31222/osf.io/9nb3u"
+  "doi_url": "https://doi.org/10.31222/osf.io/9nb3u",
+  "key_findings_evidence": [
+    "We con- tend that making sense of science requires open access to diverse sources of scientific sensemaking data, and that current frictions and failures of scientific sensemaking arise from deficiencies in reck- oning with these kinds of data.",
+    "we propose that scientific sensemaking data should be (1) included within the scope of the open science movement, (2) published under the FAIR principles (Findability, Accessibility, Interoperability, and Reuse), and (3) embedded in stigmergic annotation networks",
+    "While FAIR data publishing is necessary, in the context of sensemaking, FAIR is not suﬀicient.",
+    "Indeed, almost all scientific social bookmarking platforms (e.g., CiteULike and Connotea) and reference managers (e.g., Mendeley, Papers) were bought by large science publishers (e.g., Nature, Elsevier) for data tracking and analytics purposes"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "commentary/policy",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Position/proposal paper; methods are design specifications of a proposed system, not an evaluated implementation."
+  }
 }

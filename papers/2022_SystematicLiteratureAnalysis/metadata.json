@@ -64,21 +64,55 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Publish or Perish / Google Scholar search for FEP, ActInf and Friston papers",
+      "description": "Citations from 1990–2021 matching the two terms or authored by Karl Friston were collected and de-duplicated manually by title.",
+      "evidence": "we used Publish or Perish version 8 [16] for the terms “active inference” and/or “free energy principle” as well as papers authored by Karl J. Friston, from 1990 through 2021, searched with Google Scholar."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "BioPython query of open-access PubMed papers for full-text subset",
+      "description": "The BioPython API was used to restrict analysis to open-source PubMed papers with the terms in title/abstract.",
+      "evidence": "we used the BioPython API [17] to query for open source publications with titles and/or abstracts containing the terms “active inference” and/or “free energy principle” listed in the NCBI Pubmed Database"
+    },
+    {
+      "name": "PyPDF2 term-frequency extraction using Active Inference Ontology terms",
+      "description": "A custom PyPDF2 script counted 74 core, 250 supplement and 74 entailed ontology terms in each abstract and PDF.",
+      "evidence": "The script’s inputs included a list of ontology terms (74 core terms, 250 supplement terms, and 74 entailed terms, archived at [15])"
+    },
+    {
+      "name": "Manual annotation of figures, equations, tables, boxes, supplements",
+      "description": "Each analyzed paper was hand-annotated for structural/mathematical features and estimated citations per year.",
+      "evidence": "Papers that were analyzed for term usage, were also manually annotated with the following information (Figure 2): # Figures (count of Figures), Figures with equations? (are there equations within Figures), # Equations"
+    },
+    {
+      "name": "ResearchRabbit citation network; Coda tables; Orange clustering",
+      "description": "ResearchRabbit built a citation network of the focal papers; Coda merged data into reflexive tables; Orange clustered term usage.",
+      "evidence": "Research Rabbit [20] was used to analyze citations and construct an co-citation network of the focal set of papers (where nodes represent publications, and edges reflect an instance of one paper citing another)."
     }
   ],
   "key_findings": [
-    "We perform a systematic literature analysis of publications using the terms 'Free Energy Principle' or 'Active Inference', with emphasis on works by Karl Friston.",
-    "We trace the history, growth, and div..."
+    "From the larger FEP/ActInf citation corpus, the analysis focused on an initial set of 237 open-access papers obtained via PubMed.",
+    "The most highly cited papers in the open-source dataset were from 2013 and all included Karl J. Friston as an author.",
+    "By citations per year, Friston is not in the top five first authors; Sterzer (109.3) and Carhart-Harris (108.5) lead, and top papers by this metric date from 2018–2020.",
+    "All core Active Inference Ontology terms increased in use frequency over time.",
+    "Term frequencies tracked specific publications, e.g. 'Information Geometry' rose after Parr et al. 2019 and 'Cognitivism' after Friston & Allen 2018."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "key_findings_evidence": [
+    "From the large corpus of FEP/ActInf citations, we focused our analysis on an initial set of 237 papers via PubMed.",
+    "Figure 4 demonstrates that the most highly cited publications in our open source dataset were from 2013, and all included Karl J. Friston as an author.",
+    "The top five first authors with the highest average citations per year are, in order: Phillip Sterzer (109.3), R.L. Carhart-Harris (108.5), Michael Kirchoff (89), Giovanni Pezzulo (71.5), and Maxwell Ramstead (58.2).",
+    "Figure 9A illustrates that all core ontology terms (see Coda site and [22]) increased in use frequency over time.",
+    "Here it can be seen that the frequency of the term Information Geometry increased following the publication by Parr et al., 2019 which focused on the significance of the information geometry of the Markov blanket."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "empirical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "No quantitative analysis was performed on the citation network; authors flag PDF-extraction and nested-term counting limitations."
+  }
 }

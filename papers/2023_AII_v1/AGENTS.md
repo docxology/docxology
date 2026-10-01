@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: This document briefly surveys the current state of the Active Inference Institute and Active Inference Ecosystem, and outlines our future directions.., It will be versioned as a living representation (both cyclic and updating) of ecosystems both general and local, describing the past, present, and future actions of the Active Inference Institute..
+- Extracts methods: Versioned living-document survey of the Institute and Ecosystem, PubMed citation-share trend for "Active Inference" (2006-July 2023), Keyword scrape of affiliations in the Institute's livestream roster
+- Identifies findings: The Institute traces its origin to a 2020 co-founder collaboration, the ActInfLab formed in 2021, and its 2022 transition into a Delaware non-profit., The document reports that in 2022 there were 103 PubMed citations for "Active Inference" out of 1,772,674 publications., The authors state the Institute has hosted or facilitated hundreds of open-source licensed products serving Awareness, Education, Commons, Support and Governance.
 - Maps contributions to AII Ecosystem literature
 
 ### 🎓 EDUCATOR

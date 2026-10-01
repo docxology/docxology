@@ -47,17 +47,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Case-enabled reasoning over Bayesian models",
-      "description": "Applied case-enabled reasoning over bayesian models approach"
+      "name": "Mapping linguistic case grammar onto generative model roles",
+      "description": "Defines eight cases (NOM, ACC, GEN, DAT, INS, LOC, ABL, VOC), each specifying a relationship between models or between a model and data.",
+      "evidence": "Each case defines a specific relationship type between models or between models and data (Table 1)."
     },
     {
-      "name": "Active inference with case-based priors",
-      "description": "Applied active inference with case-based priors approach"
+      "name": "Category-theoretic formalization of case transformations as morphisms",
+      "description": "Treats models with case assignments as objects in a category and case transformations as morphisms between them.",
+      "evidence": "Case transformations are modeled as morphisms in a category where objects are models with specific case assignments."
+    },
+    {
+      "name": "Variational free energy formulation of case transformations",
+      "description": "Applies variational free energy calculations to model inference and structural case transformations, with per-case equations in a mathematical appendix.",
+      "evidence": "Variational Methods: Applying variational free energy calculations to optimize model inference as well as structural transformations."
+    },
+    {
+      "name": "KL divergence, Fisher information and Lyapunov functions as metrics",
+      "description": "Names these quantities as the metrics for assessing transformation efficacy and system stability.",
+      "evidence": "The framework employs metrics including Kullback-Leibler divergence, Fisher information, and Lyapunov functions to quantify transformation"
+    },
+    {
+      "name": "Worked example of a homeostatic thermostat model declined across cases",
+      "description": "Illustrates how one thermostat model plays different functional roles in each case (e.g. predicting in NOM, being optimized in ACC).",
+      "evidence": "Consider a cognitive model of a homeostatic thermostat that perceives room temperature with a thermometer, and regulates temperature through connected heating and cooling systems."
     }
   ],
   "key_findings": [
-    "<div>This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM).",
-    "CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe, design, and deploy generative models in an expressive fashion."
+    "Introduces CEREBRUM, which treats models as case-bearing entities, like declinable nouns, to give a formal linguistic-type calculus for model use and transformation.",
+    "Frames CEREBRUM as integrating cognitive systems modeling, Active Inference, linguistic case systems and intelligence production.",
+    "Describes nominative-accusative, ergative-absolutive and tripartite alignment patterns for organizing model relationships.",
+    "Proposes speculative novel cases beyond traditional grammar, including conjunctive, recursive and metaphorical cases.",
+    "Releases the code that generates the paper as open source on GitHub as a 1.0 milestone."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -66,5 +86,19 @@
   ],
   "related_software": [
     "ActiveInferenceInstitute/CEREBRUM"
-  ]
+  ],
+  "key_findings_evidence": [
+    "By treating models as case-bearing entities that can play multiple contextual roles (e.g. like declinable nouns), CEREBRUM establishes a formal linguistic-type",
+    "CEREBRUM integrates four key domains to create a unified framework for model management",
+    "This includes nominative-accusative alignment (where models are distinguished by their role as agents or patients), ergative-absolutive alignment (where models are grouped by their relationship to actions), and tripartite alignment (where each case is marked distinctly).",
+    "One speculative example of a novel case that might emerge within CEREBRUM is what we might term the “conjunctive” case [CNJ].",
+    "The code to generate this paper, and further open source development from this 1.0 milestone release, is available at https://github.com/ActiveInferenceInstitute/CEREBRUM"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Conceptual/formal framework paper (v1.0); no empirical evaluation. The conclusion's claims of mathematical rigor and computational tractability are not repeated here as findings."
+  }
 }

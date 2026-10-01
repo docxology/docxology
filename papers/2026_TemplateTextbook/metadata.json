@@ -189,17 +189,36 @@
   "type": "Book",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Single config.yaml source of truth for book structure",
+      "description": "Parts, chapters, front matter, appendices, labs and question banks are declared in config.yaml, from which TOC, numbering and integrity tests read.",
+      "evidence": "The whole book is data-driven from a single source of truth, config.yaml. That file declares the parts, the chapters inside each part, the front matter, the appendices, and the labs and question banks."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Tested Python backbone (textbook.models) and deterministic figures",
+      "description": "Worked equations are implemented as tested Python functions that chapter prose calls, and figures are generated deterministically from code.",
+      "evidence": "A tested computational backbone in src/ — the worked equations are real, tested Python func- tions (textbook.models), and figures are generated deterministically."
+    },
+    {
+      "name": "Pandoc + pandoc-crossref rendering pipeline",
+      "description": "The manuscript is assembled from Markdown in declared order after analysis scripts produce figures, then rendered to PDF via Pandoc with pandoc-crossref.",
+      "evidence": "The pipeline reads config.yaml, runs the analysis scripts that produce figures and diagrams, assembles the Markdown sections in declared order, and renders a PDF through Pandoc with pandoc-crossref resolving every cross-reference and citation."
+    },
+    {
+      "name": "Stub-marker counting audit and manuscript-integrity tests",
+      "description": "A quality audit counts STUB/TODO/TKTK markers and pytest checks the per-chapter content contract, unique labels, citations and glossary anchors.",
+      "evidence": "tests/test_manuscript_integrity.py verifies that every chapter satisfies the content contract, that labels are unique, that citations resolve, and that glossary links point at real anchors."
+    },
+    {
+      "name": "Two filled worked-reference chapters (logistic growth; dose-response)",
+      "description": "First Principles derives the logistic growth law; Case Studies fits a linear dose-response trend to a small synthetic six-condition dataset.",
+      "evidence": "This chapter is a worked reference in a different style from sec. 8: where that chapter derives a model, this one applies one to a small dataset. The remaining chapters ship as stubs."
     }
   ],
   "key_findings": [
-    "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and",
-    "---\nAssociated artifacts\nGitHub release: v0.1.2 (https://github.com/docxology/template_textbook/releases/tag/v0.1.2)\nDOI: https://doi.org/10.5281/zenodo.20533125\nZenodo: https://zenodo.org/records/205"
+    "The book is explicitly a scaffold rather than a finished work: every structural element is present and author-specific passages are marked stubs.",
+    "It provides twelve chapter shells across four parts, each with a matching lab and question bank.",
+    "Claims building the book reproduces byte-identical figures and numbers, since nothing in the prose is computed by hand.",
+    "The worked case study's linear fit gives slope 1.375 and R2 = 0.999, while warning that three averaged points cannot support prediction or extrapolation."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -208,5 +227,18 @@
   ],
   "related_software": [
     "docxology/template_textbook"
-  ]
+  ],
+  "key_findings_evidence": [
+    "This is not a finished book. It is a scaffold — a complete, internally consistent skeleton for a book-length technical work, with every structural element in place and every author-specific passage left as a marked stub for you to fill.",
+    "Twelve chapters across four parts, each a valid chapter shell with a labelled heading, a figure, a metadata badge, a Study Blueprint, Learning Objectives, a worked formalism (equation + parameter table)",
+    "Every equation in this book is implemented as a tested function and every figure is generated deterministically from code. Nothing in the prose is computed by hand. If you build the book yourself you will get byte- identical figures and numbers",
+    "A linear fit through three averaged points reports 𝑅2 = 0.999, but that number describes how well the line passes through three dots — not how well it predicts the next exper- iment."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "book/report",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Template/scaffold textbook: most chapters are stubs and the bibliography consists of placeholder references; the case-study data are explicitly synthetic. Findings describe the scaffold's design, not research results. full_text.md is extracted from one of three PDFs in the folder (Friedman_2026_Template_c6c97f24.pdf)."
+  }
 }

@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Versioned registry of eleven practices with coarse evidence labels** — Encodes practices such as question-first framing, source traceability, and clean reruns as 'wires', each with reviewed tags and required evidence labels.
+- **Staged evaluate_work evaluator returning four statuses** — Validates configuration and registry, then runs intake normalization, freshness partition, tag matching, and scoring to return ALIGNED, NEEDS_EVIDENCE, NEEDS_REWORK, or OUTSIDE_SCOPE.
+- **Structural invariants tested against planted-bad registries** — Seven invariants check the registry's own shape, each demonstrated firing on a deliberately broken registry rather than only passing on the real one.
+- **Executed adversarial declarations against the real evaluator** — Runs label-stuffing, tag-minimization, and refresh-date laundering attacks to show how self-declared inputs can game the status.
+- **Three claim classes with distinct evidentiary burdens** — Separates implementation, methodological, and world/authority claims so that tests or citations do not silently change the type of claim made.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- An ALIGNED status only means every required label for each applicable practice was declared fresh, never that a source is real or a claim true.
+- Label-stuffing works: a research-tagged attempt declaring all 22 vocabulary labels with no artifacts returns ALIGNED.
+- Coverage is asymmetric: 27 of the 55 tag-practice cells are applicable, computed directly from the registry.
+- Seeded permutation sweeps confirm that once a declaration is non-empty the status never regresses, with the empty declaration as the intentional exception.
+- The author makes a design and implementation claim only; no user study or outcome comparison was run.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

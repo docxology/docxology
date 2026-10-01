@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: There are many areas of research defined by their interest in information dynamics related to facilitating organizational sensemaking, such as knowledge management, information management, and library science, and many more areas of research, disciplines, and even hobbies which are facing informatio, While all may be concerned with very similar challenges, lack of information exchange and common ontology between these areas may be causing silos, missed opportunities, and potentially even friction among areas.., In this paper, we address the need for synthesis and exchange of knowledge, tools, and approaches among various fields by proposing Narrative Information Management (NIM) as a unifying term and framework for the fundamental features and challenges of facilitating collective sensemaking..
+- Extracts methods: Synthesis of common features of information systems from KM-type literature, Exploratory domain studies in five fields sampled from coauthor experience, Cross-domain comparison of NIM features in the Discussion
+- Identifies findings: The paper defines Narrative Information Management as the design, use, implementation and study of systems that manage information to facilitate narrative sensemaking., Domain exploration surfaced four additional NIM features: communication, handling errors and inconsistency, managing trust signals, and social systems engineering and education., Managing information gaps was central in all fields considered, and the defining element of ancestry research.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

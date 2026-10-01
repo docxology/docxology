@@ -69,5 +69,53 @@
     "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked"
   ],
-  "checked_at": "2026-09-24T18:29:58Z"
+  "checked_at": "2026-09-24T18:29:58Z",
+  "methods": [
+    {
+      "name": "Five-stage pipeline: acquisition, preparation, generation, parsing, rendering",
+      "description": "Skillarum turns selected server-rendered pages into SKILL.md packages through separated stages that record page hashes, URLs, request events, provider attempts and integrity metadata.",
+      "evidence": "The system separates acquisition, preparation, generation (the 03_process stage), parsing, and rendering, while recording page hashes, canonical and final URLs, request events, provider attempts, fallback history, and artifact integrity metadata."
+    },
+    {
+      "name": "SHA-256 content-aware cache identities and provenance predicates",
+      "description": "Defines a formal model with hashed cache identities and a provenance-completeness predicate combining package-level provenance with pagewise lineage.",
+      "evidence": "𝐻denotes SHA-256 over the implementation’s defined serialization; hash-based integrity relies on its collision resistance and does not authenticate a source or operator."
+    },
+    {
+      "name": "Interchangeable generators with deterministic default and fallback",
+      "description": "Deterministic, OpenAI, Ollama, command and fallback generators with typed retry traces; all recorded backends in the reported runs were deterministic.",
+      "evidence": "interchangeable deterministic, OpenAI, Ollama, command, and fallback generators with typed retry traces and target-name enforcement;"
+    },
+    {
+      "name": "Live case studies on two configured website source areas",
+      "description": "Evaluation runs on Math 4 Wisdom and Active Inference Institute website profiles and their target bundles, alongside local fixture tests for redirects, robots, injection and caching.",
+      "evidence": "The 2 configured source areas are Math 4 Wisdom and the Active Inference Institute, with target bundles declared in their profiles."
+    },
+    {
+      "name": "Clopper–Pearson reference intervals and planned weighted Cohen kappa",
+      "description": "Reports rates with exact binomial reference intervals and a seeded bootstrap policy; human-review agreement is to use linear-weighted kappa once two raters exist.",
+      "evidence": "Exact Clopper–Pearson intervals [Clopper and Pearson, 1934] are provided as binomial-model reference intervals, assuming independent Bernoulli trials with a common probability."
+    }
+  ],
+  "key_findings": [
+    "Across 7 completed observations from 2 source profiles, the package-valid rate was 100.0%, with 0 fallback observations and 5 truncated pages.",
+    "The author stresses these rates are conditional on run completion and descriptive, not an end-to-end success probability or population estimate.",
+    "Source coverage was 37 of 37 page mappings, with a 95% model reference interval of 90.5% to 100.0%.",
+    "Human-review agreement is pending: the report contains no rater identifiers or shared cases, so no inter-rater statistic is reported.",
+    "The paper states it does not establish improved semantic quality, lower latency, complete coverage or downstream safety; these remain hypotheses."
+  ],
+  "key_findings_evidence": [
+    "The current report summarizes 7 persisted observations from 2 source profiles and 7 target bundles. The package- valid rate among completed runs is 100.0%, with 0 recorded fallback observations and 5 truncated pages.",
+    "These values are conditional on run completion; they are descriptive observations, not an end-to-end success probability or a population estimate.",
+    "source coverage 37 / 37 100.0% 90.5% to 100.0%",
+    "The current report contains 0 distinct rater identifiers and 0 shared cases.",
+    "It does not establish that Skillarum improves semantic quality, reduces provider latency, provides complete website coverage, or is safer in every downstream agent runtime."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Small bounded case-study evaluation (2 sites, 7 runs, deterministic backend only, server-rendered HTML only); no human evaluation yet. Metadata flag: the PDF title page gives DOI 10.5281/zenodo.22663907, while README/metadata.json/AGENTS.md use 10.5281/zenodo.22663906 (metadata.json record_id is 22663907); likely concept vs version DOI, worth confirming."
+  }
 }

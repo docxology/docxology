@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Seeded synthetic panel instrument scored against a known oracle, Four panel-formation strategies compared, ntqr error-independent (EIE) evaluator over judge trios
+- Identifies findings: Formation rule, not panel size, was the dominant lever: competence-first selection had the lowest recovery error (0.037), while the other three strategies clustered around 0.147-0.148., With a composition-coupled error confound, single-bloc error exceeded representative error in 180/205 matched regimes, the gap widening from 0.000 to 0.112 as coupling rose., Recovery error tracks the panel's Herfindahl concentration over the axis the shared error rides on; re-keying the confound to an unbalanced axis erased the protection (0.147 to 0.229).
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

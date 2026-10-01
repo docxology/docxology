@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Triangulation of Jiang's AI commentary, Blake's 1790s diagnostics and Active Inference, Reconstruction of Jiang's May 2026 diagnosis from four timestamped primary sources, Mapping of Jiang's claims onto Blake's Four Zoas and a factorized generative model
+- Identifies findings: Argues the three vocabularies converge structurally-functionally on one failure mode: closure of a perceiving system around its own top-down expectations., Treats the Blake-Active Inference mapping as a functional analogy across incompatible metaphysics, not a translation or identity., Argues that deployed systems such as LLMs and recommendation engines instantiate this closure as an architectural property, making it a design choice.
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

@@ -48,22 +48,43 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Generalized Notation Notation (GNN) schema design",
-      "description": "Applied generalized notation notation (gnn) schema design approach"
+      "name": "GNN specification: ASCII model description in Markdown-structured source files",
+      "description": "Defines Generalized Notation Notation, which writes Active Inference generative models with ASCII letters and punctuation in a Markdown-style source file.",
+      "evidence": "GNN describes Active Inference models with ASCII letters and punctuation, structured in a source file that accords with the principles of Markdown."
     },
     {
-      "name": "Graph-based knowledge representation",
-      "description": "Applied graph-based knowledge representation approach"
+      "name": "Worked example re-expressing the Smith, Friston & Whyte 2022 step-by-step tutorial",
+      "description": "Demonstrates GNN by following the same progressive model-building sequence as the 2022 step-by-step Active Inference tutorial.",
+      "evidence": "Just as the goal of the initial step-by-step paper was to start simple and progressively add model features till one has arrived at a full Active Inference generative model, here we use that exact same progression"
+    },
+    {
+      "name": "'Triple Play' framing: text, graphical, and executable model renderings",
+      "description": "Proposes expressing a GNN model across three modalities: text-based models, statistical graphical models, and executable cognitive models.",
+      "evidence": "”the Triple Play” – a pragmatic approach to expressing GNN in three distinct modalities: text-based models, statistical graphical models, and executable cog- nitive models (Section 4)."
     }
   ],
   "key_findings": [
-    "introduces Generalized Notation Notation (GNN), a novel approach to generative model representation that facilitates communication, understanding, and application of Active Inference across various domains..",
-    "GNN complements the Active Inference Ontology as a flexible and expressive language for education and modeling, by providing a standardized method for describing cognitive models..",
-    "In this paper we introduce GNN, and provide a Step-by-Step example of what GNN looks like in practice.."
+    "Introduces GNN as a standardized method for describing cognitive models that complements the Active Inference Ontology for education and modeling.",
+    "Argues GNN's plain-text basis allows rendering into mathematical notation, figures, natural language, pseudocode and executable simulations, and use with regular expressions and LLMs.",
+    "As pseudocode, GNN does not restrict which programming language or package implements a model, which the authors argue aids backward and forward compatibility.",
+    "Names future directions: better automatic rendering software, tighter Active Inference Ontology integration, and cadCAD for execution order and parameter sweeps."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "key_findings_evidence": [
+    "GNN complements the Active Inference Ontology as a flexible and expressive language for education and modeling, by provid- ing a standardized method for describing cognitive models.",
+    "At its core, GNN is a text-based model that can be rendered into different for- mats, including mathematical notation, visualized figures, natural language de- scriptions, algorithmic pseudocode, and executable simulations.",
+    "GNN as a pseudocode does not restrict which programming language or package ultimately implements the particular generative model in question.",
+    "improved automatic rendering software and better integration with the Active Inference Ontology [9] will enable the ”Triple Play” outlined above."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Short position/specification paper; the GNN punctuation table, source-file structure and step-by-step examples are images only (pages 3-5), so their content is not in full_text.md. No software evaluation is reported. Existing AGENTS.md method label 'Graph-based knowledge representation' is not directly supported by the text."
+  }
 }

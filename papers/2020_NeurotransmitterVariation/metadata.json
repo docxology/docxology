@@ -31,17 +31,32 @@
   ],
   "methods": [
     {
-      "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays approach"
+      "name": "Field-collected P. barbatus foragers from 9 colonies near Rodeo, NM",
+      "description": "Foragers were collected into liquid nitrogen at a long-term study site and single brains dissected for analysis (n = 53 brains).",
+      "evidence": "Foraging ants were collected in the morning of 9/4/2017 at a long-term study site near Rodeo, New Mexico [28]. Ants were directly collected into liquid nitrogen and stored in a −80 °C freezer until dissection."
     },
     {
-      "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis approach"
+      "name": "Capillary electrophoresis with fast-scan cyclic voltammetry (CE-FSCV)",
+      "description": "An in-house CE-FSCV system with a carbon-fiber microelectrode separated and detected four biogenic amines in individual ant brains.",
+      "evidence": "Capillary electrophoresis coupled with fast-scan cyclic voltammetry (CE-FSCV) was used to separate and detect the amines in individual ant brains."
+    },
+    {
+      "name": "Field-amplified sample stacking of single-brain homogenates",
+      "description": "Each brain was homogenized in 5 μl acetonitrile/perchloric acid so low-conductivity stacking could preconcentrate trace amines.",
+      "evidence": "Low levels of biogenic amines were detected using field-amplified sample stacking by preparing a single brain tissue sample in acetonitrile and perchloric acid."
+    },
+    {
+      "name": "ANOVA, Pearson correlations, and RSD comparisons in GraphPad Prism",
+      "description": "Tested colony effects on amine content, inter-amine correlations, and within- vs. among-colony relative standard deviations.",
+      "evidence": "One-way ANOVA shows the significant main effect of colony on tissue content of each neurotransmitter"
     }
   ],
   "key_findings": [
-    "Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions..",
-    "Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a...."
+    "The method achieved detection limits of 1 nM dopamine, 2 nM serotonin, 5 nM octopamine, and 4 nM tyramine.",
+    "Dopamine was the most abundant amine per forager brain, followed by octopamine, serotonin, and tyramine.",
+    "Variation in neurotransmitter content was larger among colonies than within colonies.",
+    "Colony dopamine did not correlate with the other amines, while octopamine correlated strongly with serotonin and tyramine.",
+    "Colonies with higher brain dopamine showed less foraging increase after exogenous dopamine, though the effect was largely driven by one colony (D24)."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -50,5 +65,18 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1007/s00216-019-02355-3",
-  "doi_url": "https://doi.org/10.1007/s00216-019-02355-3"
+  "doi_url": "https://doi.org/10.1007/s00216-019-02355-3",
+  "key_findings_evidence": [
+    "The method provides low detection limits: 1 nM for dopamine, 2 nM for serotonin, 5 nM for octopamine, and 4 nM for tyramine.",
+    "Overall, the content of dopamine (47 ± 9 pg/brain) was highest, followed by octopamine (36 ± 10 pg/brain), serotonin (20 ± 4 pg/ brain), and tyramine (14 ± 3 pg/brain).",
+    "Variances within a colony in the level of each neurotransmitter were lower than the variance for all samples pooled, indicating that differences among colonies are larger than variation with- in colonies.",
+    "However, octopamine content was strongly correlated with serotonin (r2 = 0.80, p = 0.0011) and tyramine (r2 = 0.69 p = 0.0057), and tyramine was correlated with serotonin (r2 = 0.66, p = 0.0076).",
+    "However, this effect is largely driven by the one colony with 7large amounts of dopamine (colony D24) and so future studies are needed to understand the relationships be- tween ant behavior and biogenic amine content."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "empirical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge."
+  }
 }

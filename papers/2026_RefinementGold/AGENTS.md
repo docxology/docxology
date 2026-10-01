@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Five-stage gold-refining analogy mapped to manuscript operations, Seeded SHA-256 mega-madlib token selection from a config-owned lexicon, Monotone-purity constraint enforced in code and tests
+- Identifies findings: The paper argues the analogy is load-bearing rather than only rhetorical, since each metallurgical stage corresponds to a real template-infrastructure operation., The exemplar pipeline reports a monotone purity sequence over 5 stages ending at the nine-nines certification stage., The token engine generated 8 tokens from seed 431 across 4 lexicon categories, each traceable in a provenance table.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

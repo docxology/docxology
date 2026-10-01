@@ -20,13 +20,21 @@ This work addresses topics in **Entomology**: ants, behavioral genetics, genomic
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Literature review organized by phenotypic trait** — Structures the review of ant genetics by trait: species comparisons, sex, reproductive status, queen number, worker body size, then behavior.
+- **Coverage of quantitative-genetic, phylogenetic, omic and physiological studies** — Within each section, discusses studies using heritability, DNA sequence homology, RNA abundance, chromatin regulation and enzyme-activity approaches.
+- **Comparative survey of published ant genomes** — Draws on the first seven published ant genomes and later public genomes/transcriptomes for cross-species comparisons.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The authors conclude that despite many results on reproductive physiology and morphology, few studies have investigated the genetics of ant behavior directly.
+- The review reports that eusocial hymenopteran genomes show exceptionally high rates of gene turnover.
+- Reviewed quantitative genetic studies show heritable differences in task performance among matrilines/patrilines.
+- The authors caution that developmental stage, sampled tissue (e.g. whole-body samples) and time of day can strongly affect gene-expression results.
+- They identify the feedback between individual physiological changes and socially mediated responses to environment as the next step for ant behavioral genetics.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +62,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1146/annurev-neuro-070815-013927`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

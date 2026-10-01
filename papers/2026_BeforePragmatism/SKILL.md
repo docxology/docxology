@@ -21,15 +21,22 @@ This work addresses topics in **Art & Synergetics**: William Blake, pragmatism, 
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Primary textual analysis of Blake's America a Prophecy (Erdman edition)** — Each convergence dimension is grounded in verified quotations from America a Prophecy, using Erdman's edition as the source.
+- **Structural-correspondence method rather than causal or genealogical claims** — The manuscript identifies shared topological features across Blake, Pragmatism and Active Inference without claiming historical influence.
+- **Synthesis of pragmatist scholarship from Peirce to Brandom** — Six convergence dimensions are developed against an account of American Pragmatism informed by Menand, Misak and Bernstein.
+- **Active Inference formalization in a nine-row triadic synthesis atlas** — Uses Parr, Pezzulo and Friston (2022) as technical reference to map nine Blake–Pragmatism–Active Inference correspondences (Table 6).
 
 ## Key Findings
 
 Core contributions and results:
 
-- When Boston's Angel in William Blake's America: a Prophecy (1793) declares "No more I follow, no more obedience pay!" and the Thirteen Governors rend their robes to stand with Washington in the revolutionary flames, Blake enacts a drama of cognition that the American Pragmatists&mdash;writing a cont
-- Orc's revolutionary fire maps onto Peirce's irritation of doubt that compels inquiry; the Thirteen Angels' collective transformation mirrors Mead's social self constituted through the generalized other; the consumption of the "five gates of their law-built Heaven" performs Dewey's collapse of the sp
-- The convergences are not analogical but structural, and this manuscript formalizes them through the mathematics of Active Inference&mdash;the process theory of the Free Energy Principle&mdash;in which the Markov blanket becomes Blake's doors of perception, the generative model becomes imagination as
+- The paper maps Orc's revolutionary fire to Peirce's irritation of doubt, and the Thirteen Angels' collective transformation to Mead's socially constituted self.
+- It reads Blake's Four Zoas as a proto-cognitive architecture anticipating Active Inference's factorized generative model, with fragmentation as 'Newton's Sleep'.
+- A sixth dimension links Fuller and Applewhite's Synergetics (tetrahedron replacing cube) to Blake's anti-Newtonian stance and Peirce's pragmatic maxim.
+- The author argues the convergences are structural rather than analogical and formalizes them with Markov blankets, generative models, precision weighting and multi-agent belief alignment.
+- Proposed implications span computational psychiatry, digital humanities, and AI alignment (Fourfold Vision as corrective to next-token prediction).
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -58,5 +65,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.18807970`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Uniparental marker haplotype analysis, Population genetic admixture modeling, Molecular clock and phylogenetic inference
-- Identifies findings: See paper
+- Extracts methods: Critical commentary on Nogueiro et al. (2015) uniparental-marker study, Comparison against prior work on Jewish haplotype motifs
+- Identifies findings: The authors argue the reviewed data are ambiguous for inferring Jewish ancestry and do not identify diagnostic patrilineal or matrilineal markers., Many 'Jewish' haplotypes cited are pan-Middle Eastern markers also common in Arabic lineages, so their ancestry is ambiguous., The commentary contends the 'complex mating strategies' hypothesis was not tested against demographic or admixture models, and small uniparental samples cannot support robust conclusions.
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR

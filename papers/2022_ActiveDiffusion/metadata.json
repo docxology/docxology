@@ -45,21 +45,41 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Program coordination",
-      "description": "Applied program coordination approach"
+      "name": "Proposed theoretical analysis of formal relations between ActInf and diffusion models",
+      "description": "The catechism plans (for 2023) an analytical paper and literature review comparing Latent Diffusion Models with belief propagation in Active Inference.",
+      "evidence": "Write an analytical paper on the formal relationships between ActInf and DM. Provide a thorough review of the relevant literature on LDM and belief propagation in ActInf."
     },
     {
-      "name": "Community governance design",
-      "description": "Applied community governance design approach"
+      "name": "Proposed integration of diffusion models into the Active Inference formalism",
+      "description": "Planned applied work: build on existing implementations and design experiments testing DMs as learned representations within the action-perception loop.",
+      "evidence": "we will integrate diffusion models within the active inference formalism, building on top of existing implementations, and devise experiments to test the effectiveness of DMs in learning representations of a dynamic environment within the action-perception loop."
+    },
+    {
+      "name": "Proposed cadCAD-based multi-agent work extending Active Blockference",
+      "description": "Plans to use the cadCAD complex adaptive dynamics package for cognitive ecosystem design and to extend the Active Blockference package.",
+      "evidence": "The use of cadCAD will also open up the possibility to explore the connection between DMs and ActInf from the perspective of category theory"
     }
   ],
   "key_findings": [
-    "The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models.",
-    "Analysis of The project, f..."
+    "The document states the 2023-AD mission: characterizing mathematical formalisms and computational applications of Active Inference and Diffusion Models.",
+    "It identifies shared ground between ActInf and DMs, including that both draw on stochastic thermodynamics for their internal representations.",
+    "It proposes that LDMs' compression of high-dimensional input into latent representations is analogous to how ActInf agents encode beliefs about their environment."
   ],
   "related_papers": [
     "2023_AII_v1",
     "2024_AII_v2",
     "2024_OntologySUMO"
-  ]
+  ],
+  "key_findings_evidence": [
+    "The Mission of 2023-AD is to characterize mathematical formalisms and computational applications of Active Inference and Diffusion Models, and to explore relevant applications.",
+    "Fundamentals: Both ActInf and DM draw important notions from stochastic thermodynamics in their formulation of internal representations.",
+    "LDMs succeed in condensing high dimensional input data to latent representations which can be efficiently manipulated. This capacity is analogous to the manner in which agents encode their beliefs about their environment in ActInf."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "other",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Project call/catechism for the 2023 'Towards Active Diffusion' initiative; all methods are planned avenues of approach, not completed work, and findings are the document's stated mission and proposed analogies. Milestones were left 'To be determined'."
+  }
 }

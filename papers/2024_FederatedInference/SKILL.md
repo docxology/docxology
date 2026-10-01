@@ -20,13 +20,23 @@ This work addresses topics in **Active Inference**: federated inference, belief 
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Numerical simulations of language generation, acquisition and emergence** — Synthetic agents are simulated to study belief-sharing, with inference, learning and selection cast as minimising variational free energy over states, parameters and structure.
+- **Discrete-state generative model of three sentinels observing a subject** — Three agents with complementary views share a model with location, proximity, pose and gaze factors, four visual, one proprioceptive and three auditory modalities.
+- **With/without-communication comparison via zero-precision auditory mappings** — Communication is ablated by reducing auditory likelihood precision so agents can neither generate nor recognise auditory cues.
+- **Active learning of Dirichlet counts and structure learning via Bayesian model reduction** — Language acquisition uses accumulation of Dirichlet counts; emergence uses structure learning updating priors over Dirichlet counts with Bayesian model reduction.
+- **SPM Matlab routines (spm_MDP_VB_XXX.m) for belief updating** — Generic belief updates were implemented with standard SPM academic software routines.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- With communication, the third agent resolved uncertainty about the subject's location by the third epoch, versus only after seeing it at the fifth epoch without communication.
+- In the generational simulation, children's learned auditory mappings were almost identical to their parents' after four generations, acquired solely through active learning.
+- Three language-naive agents exposed to 512 episodes converged on shared mappings in which nearly every hidden state became associated with a unique shared 'word'.
+- A novice lacking precise visual mappings learned, from hearing supervisors, a visual mapping making her inferences indistinguishable from theirs by about 64 exposures.
+- The authors state two technical contributions: belief-sharing among agents with different vantage points, and a belief-updating procedure for learning and model selection.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1016/j.neubiorev.2023.105500`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

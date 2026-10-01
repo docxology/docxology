@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: California Public Records Act (CPRA) legal analysis, Open-data portal integration (CKAN/Socrata/ArcGIS), Government transparency framework evaluation
-- Identifies findings: California's AB 473 recodification of CPRA to Government Code §§ 7920.000 et seq. creates new technical access surfaces for public records, CKAN, Socrata, and ArcGIS API ecosystems form the operational backbone of California open-data infrastructure, Exemption rules constrain automated access and require domain-specific mitigation strategies for civic technology
+- Extracts methods: Registry-first compilation of CPRA statutes, portals, exemptions and datasets, Standard-library Python clients for California API surfaces, Metadata-schema validators (DCAT, CKAN, Dublin Core, RIPA stop data)
+- Identifies findings: The reference compiles California's public-records ecosystem into a machine-readable artifact: 22 CPRA statute sections, 17 portals, 7 exemption clusters and an 8-dataset OpenJustice taxonomy., It notes that the AB 473 recodification made no substantive changes to disclosure rights but split the exemption list into independent code sections for readability., Top-line verdict is 'CERTIFY-WITH-RESIDUALS': four CPRA sections from the upstream research document were misattributed or unverifiable and deliberately omitted.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

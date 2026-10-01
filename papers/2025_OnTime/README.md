@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and social systems.
+> This work explores the interplay between knowledge and wisdom as dynamic processes within the passage of time. Knowledge is framed as learning in time—sequentially accumulating observations—and learning from time, discerning causal patterns and tendencies. Wisdom, conversely, is presented as learning from time—metacognitive reflection on sequences of sequences—and learning in time, embracing the...
 
 ## Keywords
 
@@ -22,7 +22,12 @@ _No paper-specific methods have been summarized yet; see the abstract and the fu
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- Proposes that knowledge is learning in time from sequences of observations, while wisdom is learning from time, from sequences of observed sequences as time passes.
+- Offers a counterpose in which knowledge is learning from time (causal consequences, patterns) and wisdom is learning in time, including learning "to know when".
+- Combines both framings into a four-quadrant tetralemma in which knowledge and wisdom can each be in and from time.
+- Argues this tetralemmal framing enables a perspective swap between unity and plurality (Blake's Innocence and Experience), i.e. between being out of and in time.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

@@ -39,20 +39,55 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Multi-source retrieval (arXiv, Semantic Scholar, OpenAlex) with ID-hierarchy dedup",
+      "description": "Literature was retrieved from three databases and deduplicated to 819 papers using a DOI > arXiv > Semantic Scholar > OpenAlex identifier hierarchy.",
+      "evidence": "The pipeline retrieves literature from arXiv, Semantic Scholar, and OpenAlex, deduplicating 𝑁= 819 papers via a canonical identifier hierarchy (DOI > arXiv ID > Semantic Scholar ID > OpenAlex ID)."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Keyword-based A/B/C domain taxonomy (200+ indicators, 8 categories)",
+      "description": "Papers were classified into Core Theory, Tools & Translation and Application Domains by keyword matching rather than expert annotation.",
+      "evidence": "Domain classification uses keyword matching (200+ indicators across 8 categories) rather than expert annotation—a deliberate trade-off favoring reproducibility over precision"
+    },
+    {
+      "name": "Abstract-only LLM assertion extraction with gemma3:4b on local Ollama",
+      "description": "Each abstract was assessed against eight hypotheses via a JSON-schema prompt returning direction, confidence and reasoning.",
+      "evidence": "The default model is gemma3:4b on a local Ollama instance, configurable via --llm-model and --llm-url flags."
+    },
+    {
+      "name": "Nanopublication knowledge graph with citation-weighted hypothesis scoring",
+      "description": "Extracted assertions became structured nanopublications in an RDF-compatible knowledge graph scored by a citation-weighted evidence function.",
+      "evidence": "producing structured nanopublications—each encoding directionality, a confidence score, and natural-language reasoning—that populate an RDF-compatible knowledge graph scored by a citation-weighted evidence function."
+    },
+    {
+      "name": "NMF topic modelling and intra-corpus citation network analysis",
+      "description": "Non-negative matrix factorization was used to find latent topics, and citation edges among corpus papers were analyzed for network topology.",
+      "evidence": "We apply non-negative matrix factorization (NMF) to discover latent topics using multiplicative up-"
     }
   ],
   "key_findings": [
-    "Computational living meta-analysis of the Active Inference and Free Energy Principle literature: multi-source retrieval, nanopublication extraction, and hypothesis scoring architecture."
+    "Application domains dominated the corpus (Domain C 64.0%), with tools (B) at 20.8% and core theory (A) at 15.2%.",
+    "The citation network was sparse: 2,176 intra-corpus edges out of 29,323 outgoing references (7.4% resolution), anchored by hub papers.",
+    "Hypothesis scores clustered into tiers, with H1 FEP Universality in a diffuse tier (about +0.48) dominated by neutral assessments.",
+    "The authors caution that all assertions are automatically generated and not manually validated, so hypothesis scores are preliminary.",
+    "Preliminary experiments indicated about 15-20% over-extraction, and error rates for the 819-paper run were not quantified."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "key_findings_evidence": [
+    "The resulting evidence landscape reveals a field where application domains (Domain C, 64.0%) collectively dominate the corpus, with tools development (Domain B, 20.8%)",
+    "exposes a sparse yet structured graph (2,176 intra-corpus edges out of 29,323 total outgoing references—only 7.4% reference resolution",
+    "and a diffuse tier (H1 FEP Universality, ≈+0.48) where a large neutral plurality reflects the principle’s broad invocation without explicit empirical test",
+    "All extracted assertions are automatically generated and have not been manually validated; hypothesis scores should be considered preliminary.",
+    "Preliminary experiments indicated ~15–20% over-extraction. The current 𝑁= 819 corpus was processed without a validation set; error rates are not quantified for this run."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Abstract notes absolute score magnitudes are inflated by publication bias and linguistic asymmetry, so relative rankings are more reliable than point estimates."
+  }
 }

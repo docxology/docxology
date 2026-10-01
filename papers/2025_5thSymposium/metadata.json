@@ -192,16 +192,20 @@
   "type": "Presentation",
   "methods": [
     {
-      "name": "Content production",
-      "description": "Applied content production approach"
+      "name": "Edited compilation of abstracts for the Nov 12-14, 2025 symposium",
+      "description": "Collects presenter abstracts into a DOI-registered abstract book edited by Maria Luiza Iennaco and Daniel Friedman.",
+      "evidence": "Book Editors: Maria Luiza Iennaco & Daniel Friedman DOI: 10.5281/zenodo.17575211"
     },
     {
-      "name": "Pedagogical design",
-      "description": "Applied pedagogical design approach"
+      "name": "Organization by session format: keynotes, pre-recorded, panels, workshops",
+      "description": "Abstracts are grouped by presentation format, from Karl Friston's keynote to live-streamed panels and interactive workshops.",
+      "evidence": "Abstracts Keynote speakers Pre-recorded presentations Live-streamed pannels Interactive Workshops"
     }
   ],
   "key_findings": [
-    "Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inferenc"
+    "Sabine's CRR abstract reports that coherence appears to increase as the variational free energy bound decreases, proposing coherence as a proxy for uncertainty reduction.",
+    "Montañez's abstract claims classical economic models such as Stigler's search and Simon's bounded rationality are special cases of active inference under specific conditions.",
+    "Hinrichs's abstract presents a dyadic active inference framework for therapy linked to Forman-Ricci curvature of inter-brain hyperscanning networks."
   ],
   "related_papers": [
     "2018_MVEE",
@@ -209,5 +213,17 @@
     "2023_PostdocReview"
   ],
   "artifact_doi": "10.5281/zenodo.17575211",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.17575211"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.17575211",
+  "key_findings_evidence": [
+    "A central finding that connects CRR to the Free Energy Principle is that coherence appears to increase as free energy variational bound decreases, suggesting that coherence accumulation serves as a functional proxy for uncertainty reduction.",
+    "We show that foundational models in economics—including Stigler's (1961) optimal search, Simon's (1955) bounded rationality, Arrow's (1962) value of information, and Sims' (2003) rational inattention—constitute special cases of active inference under specific conditions.",
+    "We show ii) how to compute Forman‑Ricci curvature on the weighted inter‑brain network and track the entropy of its distribution."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Conference abstract book with many independent contributions; findings listed are a small sample of individual presenters' claims, not results of the book as a whole. Many pages are image-heavy (265 figures)."
+  }
 }

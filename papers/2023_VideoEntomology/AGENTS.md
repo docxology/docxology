@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Editorial synthesis of four JoVE entomology protocol articles
+- Identifies findings: The editorial highlights that Topitzhofer et al.'s pollen pipeline relies on passive mesh collection and low-cost visual identification rather than electron microscopy or metabarcoding., It notes that Fine et al. and Nogueira et al. address colony-level scaling challenges for eusocial insect study in different ways: queen fecundity assays and large-scale leaf-cutter rearing., The authors suggest video presentation of methods may increase their adoptability, proficiency, and reproducibility globally.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

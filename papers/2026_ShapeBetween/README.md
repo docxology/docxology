@@ -18,11 +18,14 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Storybook PDF generated from a public research-template repository** — The illustrated storybook is presented as a template exemplar produced by a research-template repository, with story and images labeled as illustrative fiction.
+- **Geometric fable drawing on Fuller's Synergetics (tetrahedron in cube)** — The narrative uses geometric motifs (a tetrahedron bracing a cube, tensegrity lantern, vector garden) acknowledged as drawn from Fuller's Synergetics.
 
 ## Key Findings
 
 _No paper-specific findings have been summarized yet; see the abstract and the full text._
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

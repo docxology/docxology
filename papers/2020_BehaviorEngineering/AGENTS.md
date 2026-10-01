@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Agent-based modeling of collective behavior, Behavioral engineering and incentive design
-- Identifies findings: Comprehensive frameworks for Teams should include various functionalities and structures in order to capture the broad range of affordances available for modern Remote Teams, including, but not limited to, synchronous & asynchronous communications, memes, geospatial maps, hardware/software use, and, We suggest that Systems Engineering provides guidelines to define the functions of Ontologies, Narratives, Formal documents, and Tools (ONFT) within the context of the life cycle of any System of Interest.., Following this ONFT assessment it is possible to break out to sub-systems levels and mechanistic analysis..
+- Extracts methods: Synthesis of FEP/Active Inference narrative work with Systems Engineering, OMG Essence Alphas (States and Checklists) applied to Remote Teams, Markov Blanket definition of a team as a shared informational niche
+- Identifies findings: The authors propose three classes of functional small teams by how members reduce uncertainty about each other: ontological, intimate-trust, and narrative alignment., They argue Remote Teams are especially tractable for formal analysis because most team state transitions are observable., Under their definition, non-communicating entities outside the same informational niche are not part of the same team even if aligned in values or behavior.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

@@ -37,5 +37,51 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-09-24T19:35:43Z"
+  "checked_at": "2026-09-24T19:35:43Z",
+  "methods": [
+    {
+      "name": "Keepsake registry with retention, restraint and lapse families",
+      "description": "Declares kept items in a registry that carries restraint and lapse families alongside retention, so lapse is part of the declaration.",
+      "evidence": "the Silver registry carries restraint and lapse families alongside retention so the drift is refused in the declaration itself."
+    },
+    {
+      "name": "Staged intake that sets aside malformed content with a note",
+      "description": "Normalizes each declared succession item at intake; malformed content is noted and set aside rather than crashing or being repaired.",
+      "evidence": "Intake first: each declared item is normalized, and malformed content is set aside with a note rather than crashing or being repaired into a fabricated value."
+    },
+    {
+      "name": "Tag-intersection matching and present/missing evidence-label split",
+      "description": "Matches keepsakes to items by intersecting tags, then splits each keepsake's required evidence labels into present and missing.",
+      "evidence": "keepsakes whose tags intersect the item’s tags are matched, and each matched keepsake’s required evidence labels are split into present and missing."
+    },
+    {
+      "name": "Verdict pinned to ISO review date and SHA-256 registry digest",
+      "description": "Each succession reading's verdict is tied to the review date and a SHA-256 digest of the keepsake registry that produced it.",
+      "evidence": "The verdict is pinned to the ISO review date and the SHA-256 digest of the keepsake registry that produced it."
+    },
+    {
+      "name": "Worked example envelope: small lab-archive succession",
+      "description": "Runs the reading on a worked JSON example with one declared record, a named custodian and a partial evidence set, plus an empty-registry control.",
+      "evidence": "intakes a small lab-archive succession: one declared record with a named custodian and a partial evidence set."
+    }
+  ],
+  "key_findings": [
+    "On the worked lab-archive example, the reading returns NEEDS_PROVISION, while the empty-registry control fails closed.",
+    "The formalism states that an empty scan set yields OUTSIDE_SCOPE with an intake note, and an unscorable registry yields NEEDS_REWORK with no findings.",
+    "A gap on a lapse-accepted keepsake is treated as a declared release (NEEDS_PROVISION), not a defect.",
+    "The paper limits verdicts to declaration coverage: it does not verify labels are real, judge quality, or guarantee survival."
+  ],
+  "key_findings_evidence": [
+    "the reading returns the Definition 3 status NEEDS_PROVISION: gaps on lapse-accepted keepsakes are declared releases under Proposition 2, while the empty-registry control fails closed under Proposition 1.",
+    "An empty scan set yields 𝑂𝑈𝑇𝑆𝐼𝐷𝐸_𝑆𝐶𝑂𝑃𝐸with an intake note; a registry that cannot be scored yields 𝑁𝐸𝐸𝐷𝑆_𝑅𝐸𝑊𝑂𝑅𝐾with no findings.",
+    "A lapse-accepted keepsake with a gap reads NEEDS_PROVISION — a declared release, not a defect.",
+    "Every verdict describes declaration coverage only. The instrument does not verify that a declared label names something real, does not judge the quality of what is kept, and does not guarantee that anything survives its custodians."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Very short (≈4.7 KB) instrument note; the formalism uses math-italic Unicode, quoted verbatim. The PDF lists DOI 10.5281/zenodo.22833486 while README/metadata use 10.5281/zenodo.22833485 (likely version vs concept DOI); worth checking."
+  }
 }

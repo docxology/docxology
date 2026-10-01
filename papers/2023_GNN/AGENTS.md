@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Generalized Notation Notation (GNN) schema design, Graph-based knowledge representation
-- Identifies findings: introduces Generalized Notation Notation (GNN), a novel approach to generative model representation that facilitates communication, understanding, and application of Active Inference across various domains.., GNN complements the Active Inference Ontology as a flexible and expressive language for education and modeling, by providing a standardized method for describing cognitive models.., In this paper we introduce GNN, and provide a Step-by-Step example of what GNN looks like in practice..
+- Extracts methods: GNN specification: ASCII model description in Markdown-structured source files, Worked example re-expressing the Smith, Friston & Whyte 2022 step-by-step tutorial, 'Triple Play' framing: text, graphical, and executable model renderings
+- Identifies findings: Introduces GNN as a standardized method for describing cognitive models that complements the Active Inference Ontology for education and modeling., Argues GNN's plain-text basis allows rendering into mathematical notation, figures, natural language, pseudocode and executable simulations, and use with regular expressions and LLMs., As pseudocode, GNN does not restrict which programming language or package implements a model, which the authors argue aids backward and forward compatibility.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

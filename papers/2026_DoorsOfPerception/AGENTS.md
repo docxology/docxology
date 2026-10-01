@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Close reading of Blake's Marriage of Heaven and Hell, Milton, Jerusalem, Eight-theme correspondence mapping (Boundary to Collectives) with equations, Review of FEP/Active Inference formalisms as theoretical foundation
+- Identifies findings: The paper argues Blake's 'doors' correspond to statistical (Markov-blanket) boundaries and 'Newton's sleep' to rigid priors overriding sensory evidence., It maps 'fourfold vision' to hierarchical precision-weighting and Blake's view of Imagination to selfhood being constituted by the generative model., The author claims to provide specific formal mappings between Blake's prophetic system and Active Inference, beyond thematic analogy.
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

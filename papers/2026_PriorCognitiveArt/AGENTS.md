@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Tinbergen's four questions recast as a 2×2 grid of crossed axes, Five-step protocol for typing 'why' questions about priors, Three regress-termination families: pragmatic, selection, fixed-point
+- Identifies findings: The author argues the regress is not forced by Tinbergen's framework but arises when an ontogenetic answer is asked to do the work of every quadrant., The paper argues that what comes before the first prior is a stack of constraints (viability, regulation, co-homeostasis, development, niche) rather than a hidden meta-prior., Niche construction is treated as a constraint on selection termination rather than as a fourth termination type.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,5 +37,5 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |

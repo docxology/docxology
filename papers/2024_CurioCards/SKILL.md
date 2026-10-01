@@ -4,12 +4,12 @@ name: "Writing on Curio Cards for the \"On NFT\" book"
 description: "Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation. The system facilitates creative and interdisciplinary thinking by providing struct..."
 tags: ["curio-cards", "research-ideation", "creativity-tools", "interdisciplinary-thinking", "prompt-based-exploration"]
 domain: "Art & Synergetics"
-citation: "Daniel A. Friedman (2024). *Writing on Curio Cards for the \"On NFT\" book*. Taschen."
+citation: "D. A. Friedman, O. C. Ripley (2024). *Writing on Curio Cards for the \"On NFT\" book*. Taschen."
 ---
 
 # Writing on Curio Cards for the "On NFT" book
 
-**Daniel A. Friedman** (2024) · Art & Synergetics
+**D. A. Friedman, O. C. Ripley** (2024) · Art & Synergetics
 
 ## Context
 
@@ -19,14 +19,18 @@ This work addresses topics in **Art & Synergetics**: Curio Cards, research ideat
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Catalogue table of all 30 Curio Cards with on-chain metadata** — Lists each card's artist, title, timestamp, medium, chain, contract address, token ID and edition size.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Curio card format combines artistic design with structured knowledge representation
-- Physical-to-digital workflow enables novel forms of scholarly communication and curation
+- The authors describe Curio Cards, launched May 9, 2017, as the first art NFT project on Ethereum, framed as a permanent online art show gallery.
+- The official set has 30 artworks (plus the misprint 17b) by seven artists, including Daniel Friedman's cards 24-26.
+- The authors suggest NFTs 24-29 may be the first physical artworks represented on Ethereum, and card 23 may be the first animated GIF on Ethereum.
+- Curio Cards are referenced in the original ERC-721 standard, and the authors argue the project reflects an advance in art and its social and computational aspects.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +58,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Use the canonical citation above.
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

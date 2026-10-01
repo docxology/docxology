@@ -28,20 +28,27 @@
   ],
   "methods": [
     {
-      "name": "Active inference modeling of consciousness",
-      "description": "Applied active inference modeling of consciousness approach"
+      "name": "Written Q&A interview of Karl Friston by Fortier and Friedman",
+      "description": "The work is a published interview: Martin Fortier and Daniel A. Friedman pose long-form questions and Karl Friston answers in writing.",
+      "evidence": "An interview with Karl Friston By Martin Fortier & Daniel A. Friedman"
     },
     {
-      "name": "Bayesian mechanics of self-organizing systems",
-      "description": "Applied bayesian mechanics of self-organizing systems approach"
+      "name": "Interviewer-framed contrasts of Bayesian brain, predictive coding and FEP",
+      "description": "Questions set out formal Bayesian belief-updating equations and contrast the three frameworks before asking Friston to respond.",
+      "evidence": "Do you agree with this characterization of the Bayesian brain hypothesis, of predictive coding, and of the free energy principle?"
     },
     {
-      "name": "Philosophical analysis of Markov blanket formalism",
-      "description": "Applied philosophical analysis of markov blanket formalism approach"
+      "name": "Questions drawing on empirical literatures (fluency, psychosis, altered states)",
+      "description": "Interviewers bring in specific prior work, e.g. Chetverikov's fluency/disfluency 'sweet spot' results and competing models of psychosis, as prompts.",
+      "evidence": "According to Chetverikov, at the experiential level human beings aim at finding a sweet spot between fluency and disfluency rather than minimizing disfluency."
     }
   ],
   "key_findings": [
-    "In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognit"
+    "Friston recounts that the prototype of the FEP came from noticing, at age eight, that woodlice simply moved faster in the sun and slower in the shade.",
+    "Friston distinguishes the FEP as an unfalsifiable principle from process theories such as predictive coding, which are empirically testable hypotheses.",
+    "Friston argues the Bayesian brain and predictive coding lack the enactive aspect of the FEP because they do not consider entropy reduction.",
+    "Friston contends that apparent inverted-U 'sweet spots' are all explained by minimizing expected free energy, not by different laws at different levels.",
+    "Friston holds that consciousness is the process of inference, so any free-energy-minimizing system is conscious to some degree; self-awareness requires a self-other model."
   ],
   "related_papers": [
     "2020_BehaviorEngineering",
@@ -50,5 +57,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.34700/h460-nz89",
-  "doi_url": "https://doi.org/10.34700/h460-nz89"
+  "doi_url": "https://doi.org/10.34700/h460-nz89",
+  "key_findings_evidence": [
+    "I realized their “scurrying” had no purpose or intent: they were simply moving faster in the sun—and slower in the shade.",
+    "On this view, the relation between the free energy principle and predictive coding is the relationship between a principle and a process theory.",
+    "It is this enactive, embodied, extended, embedded, and encultured aspect that is lacking from the Bayesian brain and predictive coding theories; precisely because they do not consider entropy reduction.",
+    "I see a singular and simple explanation for all the apparent dialectics above: they are all explained by minimization of expected free energy, expected surprise or uncertainty.",
+    "consciousness is a process and it is the process of inference. Therefore any system that minimizes variational free energy is conscious to a greater or lesser extent"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Interview; all findings are Friston's stated views, not results. AGENTS.md lists methods such as 'Active inference modeling of consciousness' that the interview does not perform (no modeling); the README abstract's woodlice description is consistent with the text."
+  }
 }

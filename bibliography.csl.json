@@ -1037,8 +1037,12 @@
     "title": "Towards a Science of Consciousness and Social Complexity... For Ants",
     "author": [
       {
+        "family": "Iennaco",
+        "given": "Maria Luiza"
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel"
       }
     ],
     "issued": {
@@ -1710,7 +1714,11 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "D. A."
+      },
+      {
+        "family": "Ripley",
+        "given": "O. C."
       }
     ],
     "issued": {
@@ -2701,8 +2709,16 @@
     "title": "Structuring the Information Commons: Open Standards and Cognitive Security",
     "author": [
       {
+        "family": "David",
+        "given": "Scott"
+      },
+      {
+        "family": "Cordes",
+        "given": "R.J."
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
       }
     ],
     "issued": {
@@ -2951,8 +2967,12 @@
     "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
     "author": [
       {
+        "family": "Cordes",
+        "given": "Richard J."
+      },
+      {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
       }
     ],
     "issued": {
@@ -3271,7 +3291,11 @@
     "author": [
       {
         "family": "Friedman",
-        "given": "Daniel Ari"
+        "given": "Daniel A."
+      },
+      {
+        "family": "Cordes",
+        "given": "Richard J."
       }
     ],
     "issued": {

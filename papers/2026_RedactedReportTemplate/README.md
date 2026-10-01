@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Invented fixture data with synthetic classified segments and reviewers** — The pipeline is exercised only on synthetic segments (UNCLASSIFIED to TOP_SECRET//SCI), synthetic redaction decisions and synthetic reviewer records.
+- **Text-level release-audit engine with mosaic-risk scoring** — Segments are audited against a public classification ceiling, redaction spans checked for overlap, orphan decisions flagged, source-control coverage enforced, and residual markers scored.
+- **4x4 visual redaction proof matrix plus nine steganographic methods** — Four redaction styles are rendered on four PDF backgrounds (16 PDFs), each post-processed with hash manifests, watermarks, barcodes, metadata and embedded manifests.
+- **Kmyth TPM sealing via swtpm and an mssim-to-swtpm proxy on macOS** — Hash manifests and steganography PDFs are sealed into .ski sidecars; on macOS a software TPM and protocol proxy were used, and kmyth-seal was patched to flush contexts.
+- **Source-safe SHA-256 redaction ledger and three-role review gate** — Redacted spans are recorded only as SHA-256 hashes, and release requires originator, classification reviewer and release authority approvals with rationales.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- On the fixture packet (fourteen segments), the audit reported the packet releasable with redaction coverage 1.0, plus warning-level residual-marker findings.
+- In the verified run, all sixteen variants produced both TPM sidecars, giving thirty-two .ski files.
+- Without the FlushContext patch, the second kmyth-seal invocation fails with an out-of-memory-for-object-contexts error on swtpm.
+- The author reports that visual presentation choices are orthogonal to the release gate: all four redaction treatments yield equivalent source-safe outputs.
+- Stated limitations: fixture data is invented, swtpm lacks hardware tamper resistance, and batch sealing of 32 sidecars takes about thirty seconds via the proxy.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

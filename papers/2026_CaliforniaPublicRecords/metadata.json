@@ -47,26 +47,55 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "California Public Records Act (CPRA) legal analysis",
-      "description": "Applied california public records act (cpra) legal analysis approach"
+      "name": "Registry-first compilation of CPRA statutes, portals, exemptions and datasets",
+      "description": "Held every cited section number, portal URL, schema field and dataset in Python registries under src/, with prose counts resolved from them at build time.",
+      "evidence": "every section number, portal URL, schema field, and dataset cited in the prose comes from a Python registry under src/"
     },
     {
-      "name": "Open-data portal integration (CKAN/Socrata/ArcGIS)",
-      "description": "Applied open-data portal integration (ckan/socrata/arcgis) approach"
+      "name": "Standard-library Python clients for California API surfaces",
+      "description": "Wrote working clients for CKAN Action API, Socrata SoQL, ArcGIS GeoServices REST, CIMIS REST, OpenJustice CSV and LegiScan endpoints.",
+      "evidence": "CKAN Action API, Socrata SoQL, ArcGIS GeoServices REST, CIMIS REST, OpenJustice CSV downloads, and LegiScan bulk-data endpoints, each with a working Python client in src/clients/"
     },
     {
-      "name": "Government transparency framework evaluation",
-      "description": "Applied government transparency framework evaluation approach"
+      "name": "Metadata-schema validators (DCAT, CKAN, Dublin Core, RIPA stop data)",
+      "description": "Implemented schema validators that accept a mapping and return a report of missing fields and warnings.",
+      "evidence": "Four schema validators live under src/schemas/. Each accepts a Python Mapping and returns a ValidationReport with ok, missing, and warnings fields."
+    },
+    {
+      "name": "Offline no-mocks test suite with optional live endpoint checks",
+      "description": "Validated registries, clients and schemas against a real local HTTP server, plus optional live checks against California open-data endpoints.",
+      "evidence": "are validated by an offline no-mocks suite against a real local HTTP server, plus optional live checks against California open-data endpoints"
+    },
+    {
+      "name": "Cross-vendor citation verification (leginfo, Justia, FindLaw)",
+      "description": "Source-verified statute citations against leginfo and re-confirmed selected ones via Justia and FindLaw, removing those that could not be verified.",
+      "evidence": "a later cross-vendor audit re-confirmed selected citations against Justia and FindLaw where leginfo was network-blocked; citations that could not be independently verified were removed rather than carried as conjectures."
     }
   ],
   "key_findings": [
-    "California's AB 473 recodification of CPRA to Government Code §§ 7920.000 et seq. creates new technical access surfaces for public records",
-    "CKAN, Socrata, and ArcGIS API ecosystems form the operational backbone of California open-data infrastructure",
-    "Exemption rules constrain automated access and require domain-specific mitigation strategies for civic technology"
+    "The reference compiles California's public-records ecosystem into a machine-readable artifact: 22 CPRA statute sections, 17 portals, 7 exemption clusters and an 8-dataset OpenJustice taxonomy.",
+    "It notes that the AB 473 recodification made no substantive changes to disclosure rights but split the exemption list into independent code sections for readability.",
+    "Top-line verdict is 'CERTIFY-WITH-RESIDUALS': four CPRA sections from the upstream research document were misattributed or unverifiable and deliberately omitted.",
+    "A scaffolded citation-laundering example was rejected: § 7928.200 does not govern peace-officer records, so that mandate is pinned to Penal Code § 832.7.",
+    "The package's generator methods are pure functions of the registries, so re-running them yields byte-identical output apart from a single provenance timestamp."
   ],
   "related_papers": [
     "2020_EmergentTeams",
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
-  ]
+  ],
+  "key_findings_evidence": [
+    "22 registered CPRA statute sections across 5 structural categories; 17 open-data and request portals across 7 hosting platforms and 10 subject-matter domains; 7 exemption clusters, including 1 balancing-test and 6 categorical clusters",
+    "The reorga- nization made no substantive changes to disclosure rights but split the formerly monolithic exemption list into multiple independent code sections, improving readability and navigation",
+    "Residuals: four CPRA sections cited in the upstream research document (Gov. Code §§ 7922.650, 7923.200, 7927.600 as “library patron records”, 7928.200 as “peace oﬀicer records”) were either misattributed or unverifiable",
+    "The peace-oﬀicer disclosure mandate is therefore pinned to Penal Code § 832.7 rather than carried as a Government Code companion claim.",
+    "Re-running any of them yields byte-identical output except a single provenance timestamp, a property enforced by tests/test_idempotency.py"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "book/report",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Technical/legal reference with an accompanying software package, not an empirical study. The paper states its security controls beyond local ones are target posture, not present assurances."
+  }
 }

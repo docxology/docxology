@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Combinatoric slot grammar in config.yaml with SHA-256 grammar hash, Five-stage pure-function spine: load, expand, materialize, verify, seal, Entropy-free seeded slot selection via SHA-256 digest modulo option count
+- Identifies findings: The grammar's nominal product space is 360 cells but only 45 are effective once the 3 presentation/sealing reserved slots are excluded; both are reported., The paper aims to make completeness, determinism and traceability of generated projects structurally verifiable by re-running code rather than asserting them in prose., On the example input, iterative gradient descent and the closed-form minimiser agree to within 1e-4.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,5 +37,5 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |

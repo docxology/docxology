@@ -20,13 +20,23 @@ This work addresses topics in **Computational**: demo-generation, screencast, te
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Declarative Demo schema of typed Actions and narration Chunks (JSON/YAML)** — Represents a demo as a validated value of scenes, narration chunks and typed actions that round-trips losslessly through JSON and YAML; rendering is a pure function of it.
+- **Abstract backend interfaces with pure-Python deterministic defaults** — TTS, transcription, capture, assembly and PDF ingestion each sit behind an abstract interface whose 'auto' factory resolves to a light default; heavy backends are guarded.
+- **TTS-to-STT round-trip with fuzzy trigger-word anchoring** — Narration is synthesized, transcribed back to word-level timestamps, and each action's trigger_word is fuzzy-matched to get an absolute millisecond timestamp.
+- **Poppler-CLI paper subsystem for research-paper demos** — Reads a PDF with poppler utilities to extract title, abstract (skipping the TOC), captions, sections, figures and pages, and composes them into a narrated demo.
+- **Real-filesystem test suite, content verifier and benchmark file** — Evaluates the package with a coverage-gated test suite, a verifier that checks rendered video has non-silent, non-black streams, and a reproducible benchmark file.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Across 51 source modules in 7 subsystems, 625 tests pass (3 skipped) under a ≥90% coverage gate, achieving roughly 95%.
+- The recorded benchmark reports a 25.8 ms median build and 256.7 ms of render compute per second of output, with complete, monotonic sync timestamps.
+- DemoCreate produced two content-verified 1080p H.264 videos: a 128.4 s self-explaining package demo and a 188.0 s demo of a 170-page paper.
+- The author states DemoCreate is narrower than agentic generators and less specialized than asciinema for terminals, but uniquely combines declarative, deterministic, narrated, paper-capable demos.
+- The steganographic provenance payload survives only in lossless PNG sidecars; H.264 encoding destroys it, so the MP4 carries provenance via container tags and on-screen bars.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20693216`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

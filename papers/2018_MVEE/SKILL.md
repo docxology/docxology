@@ -20,14 +20,22 @@ This work addresses topics in **Presentations & Media**: MVEE, evolutionary theo
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Extension of Variational Neuroethology (Ramstead et al. 2017) to evolution** — Builds the proposed MVEE framework by extending VNE toward a general framework for evolutionary studies.
+- **Genotype-Environment-Phenotype tensor representation through time** — Represents evolving systems as a dynamic multiscale G-E-P tensor over time, using only measurable quantities instead of fitness.
+- **Pairing of state models and process models across scales** — Distinguishes predictive state theories (e.g. R = h2S) from algorithmic process theories and combines them via coarse-graining.
+- **Proposed compute-graph (TensorFlow) machine-learning architecture** — Proposes a single integrated ML framework on existing biological data to jointly consider coarse-grained state and process models.
+- **Worked example: harvester ant ('Pogo') foraging across three scales** — Sketches state and process models for one colony over a day, a colony population over a summer, and populations over generations.
 
 ## Key Findings
 
 Core contributions and results:
 
-- MVEE reflects where I was at in January 2018 ( solo presentation ) in thinking about Biology, Evolution, Active Inference, Free Energy Principle, and more..
-- Uploaded to Zenodo in 2024..
+- The talk claims EcoEvoDevo is stuck in a locally-optimizing regime because of an incoherent genotype-phenotype-environment and fitness framing.
+- It argues the data, theory and philosophy already exist for a tractable generalized model of evolution, with the challenge being integrating VNE with classical theory using limited data.
+- It critiques VNE's human-cognition case study as not yet operationalized for actual data and unclear for other evolutionary systems.
+- It proposes MVEE (Multilevel Variational Evolutionary Ecology) as a framework combining VNE, EcoEvoDevo, collective behavior and machine learning.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -55,5 +63,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.13999298`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

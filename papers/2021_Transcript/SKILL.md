@@ -21,13 +21,21 @@ This work addresses topics in **Active Inference**: Active Inference, Free Energ
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Edited transcript of a three-session moderated symposium** — Records the first Applied Active Inference Symposium with Karl Friston, organized into .edu, .comms and .tools sessions mirroring the lab's organizational units.
+- **Prepared question slides posed by lab participants to Friston** — Lab members developed questions in weekly meetings and presented them as slides; Friston answered and moderators gave recaps.
+- **Presentation of the lab's Active Inference terms list and ontology work** — The .edu session presented the lab's terms list and working ontology, developed within the SUMO ontology framework as a backbone for education.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Friston recommends toy simulations as the best way to demystify Active Inference for learners in an academic setting.
+- Friston stresses that getting the generative model right is central: if it is apt for the target system, everything else usually follows.
+- Friston distinguishes Active Inference from predictive coding: minimizing variational free energy is only half the game, with expected free energy needed for future-oriented action.
+- On tools, Friston argues anything can be written as a generative model and hence as a variational free-energy-minimizing message-passing scheme, citing ForneyLab.
+- Friston describes epidemic modeling with PCR incidence and mobility data, using Bayesian optimal design to judge whether including a data source is worth the complexity.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -56,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.5797040`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

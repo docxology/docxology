@@ -27,7 +27,6 @@ _No paper-specific findings have been summarized yet; see the abstract and the f
 ## Artifacts
 
 - DOI: [10.1016/j.isci.2018.09.001](https://doi.org/10.1016/j.isci.2018.09.001)
-- PDF: [2018_DopamineForaging.pdf](2018_DopamineForaging.pdf)
 - PDF SHA-256: Not recorded
 
 ## Citation

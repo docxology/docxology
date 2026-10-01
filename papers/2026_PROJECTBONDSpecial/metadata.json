@@ -52,5 +52,53 @@
   "pairing_evidence": [
     "github_release_mentions_doi",
     "github_repo_self_linked"
-  ]
+  ],
+  "methods": [
+    {
+      "name": "33-package software fleet: 27 film packages plus 6 infrastructure packages",
+      "description": "Each James Bond film gets a standalone package implementing its concepts as tested algorithms; six packages supply shared utilities, protocol, control, orchestration, CLI and ops.",
+      "evidence": "PROJECT BOND is a fleet of 33 independent software packages — 27 film packages , one per James Bond motion picture, plus 6 mission-infrastructure packages"
+    },
+    {
+      "name": "Clean-copied template scaffold with a shared quality bar",
+      "description": "One template_code_project scaffold was copied into 33 packages, each with deterministic cores, no mocks, and >=90% line+branch coverage.",
+      "evidence": "Every package meets the same bar: pure, deterministic algorithm cores; zero mock framework; >=90% line+branch coverage on src/; thin orchestrator scripts; and manuscript variables injected from configuration."
+    },
+    {
+      "name": "Frozen MissionProvider protocol (brief/recon/plan/execute/debrief)",
+      "description": "bond-api freezes a five-phase mission contract that every film package implements and the orchestrator discovers.",
+      "evidence": "bond-api (THE PROTOCOL) freezes the MissionProvider contract — brief / recon / plan / execute / debrief — that every film implements, plus a gadget registry and slug-based discovery."
+    },
+    {
+      "name": "Generated compendium importing each package's full manuscript",
+      "description": "A script imports and token-hydrates every package manuscript, figures and references into one combined PDF and unified bibliography.",
+      "evidence": "the architecture chapter, the full-text package chapters, the reference list, and the bibliography are produced by scripts/generate_compendium.py and are regenerable on demand."
+    },
+    {
+      "name": "Example film model (Dr. No): gamma-spectrum ID, Gaussian plume, threat bands",
+      "description": "The CRAB KEY chapter couples isotope identification on a 10-isotope line library, Pasquill-Gifford plume dispersion and a 5-band island threat assessor.",
+      "evidence": "a gamma-spectrum isotope-identification engine built on a real emission-line library (10 isotopes, 23 principal lines)"
+    }
+  ],
+  "key_findings": [
+    "The aggregate gate ran pytest with a 90% coverage floor over the fleet and the compendium: 33 rows measured, all passing.",
+    "The cross-film mission OPERATION_OMNIBUS ran goldfinger, goldeneye and no_time_to_die in order over 6 plan steps, ending with an all-verdicts PASS.",
+    "Two independent fresh runs of OPERATION_OMNIBUS produced byte-identical reports, manifests, checkpoints, outcomes and provenance files.",
+    "An interrupted run resumed from its last completed step and produced a report byte-identical to a fresh run.",
+    "In the Dr. No (CRAB KEY) package's deterministic scenario, both injected isotopes were recovered among the top identifications."
+  ],
+  "key_findings_evidence": [
+    "the aggregate gate ran pytest --cov=src --cov-fail-under=90 over the fleet and this compendium itself (which measures its own gate): 33 rows measured, all passing, coverage well above the 90% floor.",
+    "The mission executed 6 plan steps across all packages, and the consolidated debrief closed with an all-verdicts outcome of P ASS.",
+    "Two fresh runs of OPERATION_OMNIBUS — executed independently into two separate directories — produced byte-identical report.json, manifest.json, checkpoint step files, outcomes.json and provenance.csv",
+    "A run interrupted before the final debrief resumed from the last completed step and produced a report.json byte-identical to a fresh run’s — the resumability contract of §2.3 holds.",
+    "Because the identification engine uses a real emission-line library and the round-trip from synthesis to detection is exact, both injected isotopes are recovered among the top identifications"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Very large (~340-page) generated compendium of 33 package manuscripts; summary covers the suite-level wrapper (abstract, introduction, architecture, closing), the orchestrator (DAG 00) results, and the Dr. No chapter as an example. Per-film chapters 5-33 were not individually summarized. OPERATION OMNIBUS results use deterministic reference providers."
+  }
 }

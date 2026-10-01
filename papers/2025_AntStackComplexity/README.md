@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Extending the AntStack framework, this paper examines complexity science approaches to understanding ant colony organization. We connect concepts from information theory, complex adaptive systems, and non-equilibrium thermodynamics to the multilevel analysis of social insect colonies.
+> We present a comprehensive computational complexity and energy analysis framework for the Ant Stack, an integrated biomimetic architecture for embodied artificial intelligence. Our investigation employs analytical models for contact dynamics physics, sparse spiking neural networks, and active inference to characterize complexity and energy consumption in real-time embodied systems operating at...
 
 ## Keywords
 
@@ -18,13 +18,20 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Closed-form per-module complexity for AntBody, AntBrain, and AntMind loops** — Derives time and space complexity for the body (contact dynamics), brain (sparse spiking network), and mind (active inference planning) loops of the Ant Stack.
+- **Device-coefficient energy model for compute, memory, spikes, and actuation** — Converts workload counts to Joules per decision using assumed coefficients such as 1.0 pJ per FLOP, SRAM/DRAM per-byte costs, and 1.0 aJ per spike.
+- **Manifest-driven experiments with seeding and bootstrap CIs** — Runs scaling sweeps from manifests with seed=123, reporting 1000-sample nonparametric bootstrap intervals and log-log regression fits.
+- **Comparison against Landauer limit and biological cost of transport** — Benchmarks module energies against kT ln 2 per bit and compares the hexapod's cost of transport with values for biological ants.
 
 ## Key Findings
 
-- We present a comprehensive computational complexity and energy analysis framework for the Ant Stack, an integrated biomimetic architecture for embodied artificial intelligence..
-- Our investigation employs analytical models for contact dynamics physics, sparse spiking neural networks, and active inference to characterize complexity and energy consumption in real-time embodied systems operating at 100 Hz control frequencies..
-- Energy efficiency has emerged as a critical constraint in embodied AI systems, yet traditional complexity analysis fails to capture the nuanced energy-performance trade-offs inherent in real-world implementations..
+- AntBody energy showed flat scaling with joint count across J from 6 to 30, making sensors and contact resolution the main efficiency targets.
+- With sparsity ρ = 0.02, AntBrain energy stayed roughly constant across a 16× expansion in sensory channels (64 to 1024).
+- AntMind energy grew steeply with planning horizon, and real-time operation was reported infeasible beyond a horizon of 15.
+- Modelled neural processing sits about 4.2 × 10^8 times above the Landauer minimum, which the author identifies as the largest optimization opportunity.
+- The hexapod's cost of transport (about 1.93) is within robotic ranges but higher than reported for biological ants (0.1-0.3).
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

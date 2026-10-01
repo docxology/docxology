@@ -25,17 +25,32 @@
   ],
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Toulmin claim-evidence-warrant analysis of individual image memes",
+      "description": "Applies Toulmin's argument model to illustrative memes about the 2023 East Palestine, Ohio train derailment (e.g., the G.W. Bush/9/11 template and a Bill Murray meme).",
+      "evidence": "The three major elements of an argument in the Toulmin model are the claim (the proposition the audience is required to accept), evidence (data supporting the proposition), and warrant(s)"
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "DRE3 three-tier model: Instrumental, Rhetorical, and Hidden layers",
+      "description": "Proposes a layered architecture moving from observed meme entities to extracted claims to inferred public narratives.",
+      "evidence": "The initial Instrumental layer describes empirical observations of the image meme artifacts (i.e., entities such as people, places, events repre- sented in an image meme). The Rhetorical layer identifies the claims that emerge"
+    },
+    {
+      "name": "Ecological concepts transposed to memetic claims",
+      "description": "Uses life history, niche succession, and complex interactions from ecology to frame research questions about how memetic claims emerge, change and interact.",
+      "evidence": "Some ecosystem concepts that can provide use- ful parallels for queries in a large-scale computational analysis of image memes are Life History, Niche Succes- sion, and Complex Interactions."
+    },
+    {
+      "name": "Fuzzy set formalism for multi-analyst claim annotation",
+      "description": "Proposes representing entity and claim annotations as fuzzy membership assertions so that disagreement between analysts becomes data rather than noise.",
+      "evidence": "fuzzy formalisms allow an analyst's process of entity detection and claim identification from an image meme to produce a fuzzy output in the form of an entity assertion or claim assertion"
     }
   ],
   "key_findings": [
-    "This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse.",
-    "Analysis of We prov..."
+    "The authors argue that image memes function as quasi-arguments whose truncated structure and visual boundary insulate them from counter-arguments.",
+    "In their Toulmin analysis, the Bush/9/11 template meme claims the Ohio derailment was a government conspiracy, relying on an audience-supplied 9/11 'inside-job' warrant.",
+    "DRE3 is presented as filling a gap by adding an intermediate rhetorical-semantic layer between data collection and inference of hidden public narratives.",
+    "Under the fuzzy-set approach, conflicting classifications become measurements of polarization, volatility, or analyst differences rather than intercoder-reliability problems.",
+    "The authors state that DRE3 elements can be incorporated piecemeal into existing meme knowledge graphs such as IMKG and MemeX."
   ],
   "related_papers": [
     "2020_EmergentTeams",
@@ -44,5 +59,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1002/asi.24900",
-  "doi_url": "https://doi.org/10.1002/asi.24900"
+  "doi_url": "https://doi.org/10.1002/asi.24900",
+  "key_findings_evidence": [
+    "the ubiquitous rectangular boundary of the meme—not only demarcates the meme's content but insulates it from the attack of counter-arguments, by cre- ating the illusion of a self-evident non-porous argument.",
+    "Since the Ohio train derailment is like the terrorist attack (evidence invoked by the photograph), the derail- ment is a US government conspiracy against its own people (claim), because the 9/11 attacks were a government inside-job (warrant).",
+    "The DRE3 model fills in a gap in the current landscape of image meme research, by highlighting an intermediate rhetorical-semantic layer between the instrumental layer of data collection and the inferential layer",
+    "conflict in outputs is no longer noise in measure- ment or a problem of intercoder reliability, but, rather, valuable data.",
+    "DRE3 could be integrated with existing image meme knowledge graphs such as the previously mentioned Internet Meme Knowledge Graph and MemeX."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Theoretical/framework paper; meme analyses are illustrative case examples, not a systematic dataset. Several evidence quotes include extraction hyphenation artifacts (e.g., 'repre- sented')."
+  }
 }

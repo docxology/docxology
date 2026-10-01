@@ -34,21 +34,56 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays approach"
+      "name": "AntBody: FlyBody MuJoCo simulator adapted to ant morphology",
+      "description": "The body layer adapts the FlyBody MuJoCo simulator to ant leg kinematics, exoskeleton and antennae/mandible actuation, portable to PyBullet.",
+      "evidence": "It adapts the FlyBody MuJoCo simulator to ant-specific leg kinematics, exoskeletal properties, and an- tennae/mandible actuation (portable to PyBullet)."
     },
     {
-      "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis approach"
+      "name": "Explicit Body–Brain I/O contract with fixed rates and SI units",
+      "description": "Specifies observations and actions at 100 Hz over a 1 ms physics step, with a latency budget and clock-drift bound.",
+      "evidence": "Timing: Physics step Δt = 1 ms; control loop acts every 10 steps (100 Hz)"
+    },
+    {
+      "name": "AntBrain AL→MB→CX pipeline templated from fly/bee brains",
+      "description": "A functional neural abstraction templated from Drosophila/Apis via Virtual Fly Brain, with sparse Kenyon-cell coding, local plasticity and a ring-attractor CX.",
+      "evidence": "We use VFB to align region nomenclature, ground functional abstractions of AL/MB/CX in mapped fly circuits, and inform parameters where ant‑specific data are sparse."
+    },
+    {
+      "name": "AntMind minimal active-inference generative model",
+      "description": "A single-agent generative model over pose, heading, hunger and pheromone expectation, with variational free energy updates and short-horizon policy selection.",
+      "evidence": "Update: variational free energy minimization (amortized); policy selection over 0.5–2.0 s"
+    },
+    {
+      "name": "Diffusion–decay pheromone field for stigmergy",
+      "description": "Colony coordination via a grid pheromone field with decay λ, diffusion D and reward-linked deposits, which agents follow along the gradient.",
+      "evidence": "Grid c_t(x): c_{t+1} = (1−λ) c_t + D ∇² c_t + Σ deposits"
     }
   ],
   "key_findings": [
-    "AntStack presents a multilevel framework for modeling ant colony organization, from molecular and neural processes at the individual scale through interaction networks to colony-level behavioral patte"
+    "The paper presents the Ant Stack, a compact modular framework (AntBody, AntBrain, AntMind) intended to emulate an ant from physics to cognition.",
+    "Stated contributions include an executable I/O contract between layers, a compact neural pipeline with local plasticity, and a minimal active-inference agent composing via stigmergy.",
+    "The work specifies (rather than reports results from) evaluation suites for navigation, trail following, task allocation and robustness under noise/adversaries.",
+    "The author states that no high-fidelity ant brain emulation yet closes the loop with a realistic body at interactive rates.",
+    "Stated limitations: no ant connectome (fly/bee templates used), simulation-first scope with embedded real-time operation as future work, and field validation still needed."
   ],
   "related_papers": [
     "2016_AntGenetics",
     "2016_ForagingGene",
     "2017_MutAnts"
   ],
-  "checked_at": "2026-07-01T20:50:01Z"
+  "checked_at": "2026-07-01T20:50:01Z",
+  "key_findings_evidence": [
+    "We present the Ant Stack: a compact, modular framework that emulates an ant from physics to cognition.",
+    "(1) an explicit, executable Input/Output contract between proposed Body, Brain, and Mind layers; (2) a compact neural control pipeline with local plasticity; (3) a minimal active‑inference ant nestmate agent that composes via stigmergy;",
+    "We specify evaluation suites for navigation, trail following, task allocation, and robustness under noise/adversaries.",
+    "Despite progress, no high‑fidelity ant brain emulation exists that closes the loop with a realistic body at interactive rates.",
+    "Real‑time embedded operation is future work; scope is simulation‑first reproducibility"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Framework/specification paper: describes proposed architecture, interfaces, parameters and evaluation protocols; no simulation or empirical results are reported in the text. Application sections (swarm robotics, cognitive security, biosurveillance, alignment) are prospective."
+  }
 }

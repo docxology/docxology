@@ -18,11 +18,19 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Triangulation of Jiang's AI commentary, Blake's 1790s diagnostics and Active Inference** — Reads Jiang Xueqin's YouTube AI commentary through Blake's perceptual vocabulary and the formal vocabulary of Active Inference.
+- **Reconstruction of Jiang's May 2026 diagnosis from four timestamped primary sources** — Draws on the Bartlett interview, Game Theory #23 and #24, and the Diesen podcast, with earlier lecture corpus as background.
+- **Mapping of Jiang's claims onto Blake's Four Zoas and a factorized generative model** — Maps claims such as the persuasion machine and edge-case suppression onto the Four Zoas and Active Inference, across twelve thematic nodes.
+- **Same-day AI-augmented rapid publication with author in the loop** — Drafted within hours of the trigger lecture using AI assistance for transcript research, mapping, derivation and figures.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- Argues the three vocabularies converge structurally-functionally on one failure mode: closure of a perceiving system around its own top-down expectations.
+- Treats the Blake-Active Inference mapping as a functional analogy across incompatible metaphysics, not a translation or identity.
+- Argues that deployed systems such as LLMs and recommendation engines instantiate this closure as an architectural property, making it a design choice.
+- Reads the twelve thematic nodes as suggesting, not establishing, that the architectural corrective is multi-agent and precision-balanced.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

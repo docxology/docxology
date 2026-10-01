@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Active inference agent-based simulation, Markov decision process modeling of foraging
-- Identifies findings: See paper
+- Extracts methods: Per-forager MDP formulation of active inference, In silico alternating T-maze foraging paradigm, Inbound-only trail pheromone deposition rule
+- Identifies findings: Colonies of foragers with no internal map of the T-maze foraged successfully using local pheromone-following and return-trip deposition rules., Colony size influenced per-nestmate round trips, apparently non-linearly, though the authors draw no generalization because key parameters were not varied., Each colony size quickly converged onto a characteristic range of the inter-ant distance metric.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

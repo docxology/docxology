@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Survey of qualitative and quantitative models of military conflict, Active Inference Conflict (AIC) model formulated from ActInf, Qualitative mapping of AIC onto OODA, generations of warfare, BOLTS
+- Identifies findings: The survey indicated existing warfare models are underdeveloped for non-kinetic, information-based conflict and are rarely interoperable., The authors contend war and politics are both continuations of conflict by other means, revising Clausewitz's dictum., They argue prioritizing the neglected unknown-knowns quadrant offers a pathway to multi-scale risk mitigation in online interactions.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

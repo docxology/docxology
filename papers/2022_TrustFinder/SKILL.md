@@ -20,15 +20,21 @@ This work addresses topics in **Cognitive Security**: TrustFinder, trust systems
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Design recommendations built on expert feedback to UW APL VIEE program** — The report draws on feedback from dozens of experts submitted to the University of Washington Applied Physics Lab's Verified Information Exchange Environments Program.
+- **Object model of 10 informational classes (Claims, Claim Combinators, etc.)** — Specifies workspace contents such as Content, References, Claims, Questions, Claim/Question Instances, Claim Clusters, Claim Combinators, User Assertions and Stigmergic Tags.
+- **Set-cardinality reputation metrics with one decay-based score** — Defines five reputation types, most via set construction and cardinality, with the Network Impact Score also using a standard decay function.
+- **Toulmin argument framework and crowdsourcing principles as design basis** — The Background section synthesizes frameworks such as Toulmin's six-component argument structure to inform the design.
 
 ## Key Findings
 
 Core contributions and results:
 
-- There is a broadly recognized need for better situational awareness within the information environment..
-- Each year, millions of articles, books, documents, and datasets are published..
-- Amidst this flood of information, even those with significant experience and expertise in the knowledge economy are struggling to evaluate and vet claims..
+- The report recommends TrustFinder, a sociotechnical system combining annotation, argument representation and crowdsourcing so users can find trusted sources and assess claims.
+- It recommends platform-level governance features be added only when requested by affected communities rather than imposed on all users.
+- It recommends TrustFinder take a facilitatory rather than authoritative role in how researchers adjust and access trust signals.
+- It proposes proximal, actor- and community-centric reputation calculation instead of a universal metric to limit viral spread of context-stripped trust signals.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -56,5 +62,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.7093836`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

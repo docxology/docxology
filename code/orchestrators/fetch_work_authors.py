@@ -14,6 +14,14 @@ a mistyped or recycled DOI resolves to a real but unrelated paper, and silently
 adopting its author list would corrupt the bibliography in a way no downstream
 check could catch.
 
+Works with no DOI have no registry to ask. For those, and only those, an entry
+may carry ``status: "document_verified"``: the author list was read from the
+work's own archived document, and the entry records the ``source`` file and a
+verbatim ``evidence`` quote (title page, "Edited by" line, running header).
+These entries are hand-reviewed, preserved across registry refreshes, applied
+to the bibliography like ``verified`` ones, and re-checked by ``--check``
+against the quoted file, so a moved or replaced document fails loudly.
+
 Network-dependent, so deliberately NOT part of regenerate_all.py (see the scope
 note there). Run it when the bibliography gains works:
 
@@ -52,6 +60,7 @@ USER_AGENT = f"docxology-bibliography/1.0 (https://danielarifriedman.com/; mailt
 # rather than demanding equality.
 TITLE_SIMILARITY_FLOOR = 0.80
 REQUEST_PAUSE_SECONDS = 0.2
+APPLIED_STATUSES = frozenset({"verified", "document_verified"})
 TIMEOUT_SECONDS = 30
 
 
@@ -305,7 +314,7 @@ def apply_to_bibliography() -> int:
     by_num = {
         entry["num"]: entry
         for entry in payload["works"].values()
-        if entry.get("status") == "verified" and entry.get("authors")
+        if entry.get("status") in APPLIED_STATUSES and entry.get("authors")
     }
 
     lines = BIBLIOGRAPHY.read_text(encoding="utf-8").splitlines(keepends=True)
@@ -348,6 +357,30 @@ def apply_to_bibliography() -> int:
     return 0
 
 
+def _norm_evidence(text: str) -> str:
+    for ligature, plain in (("\ufb00", "ff"), ("\ufb01", "fi"), ("\ufb02", "fl"), ("\u00ad", "")):
+        text = text.replace(ligature, plain)
+    return " ".join(text.split())
+
+
+def document_evidence_errors(payload: dict) -> list[str]:
+    """Every document_verified entry must quote its source file verbatim."""
+    errors = []
+    for key, entry in payload["works"].items():
+        if entry.get("status") != "document_verified":
+            continue
+        if entry.get("doi"):
+            errors.append(f"{key}: document_verified is only for works without a DOI")
+        source = REPO_ROOT / str(entry.get("source") or "")
+        evidence = _norm_evidence(str(entry.get("evidence") or ""))
+        if not entry.get("authors") or not evidence or not source.is_file():
+            errors.append(f"{key}: needs authors, evidence, and an existing source file")
+            continue
+        if evidence not in _norm_evidence(source.read_text(encoding="utf-8", errors="replace")):
+            errors.append(f"{key}: evidence quote not found in {entry.get('source')}")
+    return errors
+
+
 def audit(payload: dict) -> int:
     counts: dict[str, int] = {}
     for entry in payload["works"].values():
@@ -357,6 +390,9 @@ def audit(payload: dict) -> int:
         print(f"  {count:4}  {status}")
     multi = [e for e in payload["works"].values() if len(e.get("authors") or []) > 1]
     print(f"  {len(multi):4}  works with co-authors")
+    evidence_errors = document_evidence_errors(payload)
+    for error in evidence_errors:
+        print(f"document evidence: {error}")
     mismatches = [k for k, e in payload["works"].items() if e["status"] == "title_mismatch"]
     if mismatches:
         print("\ntitle mismatches needing a human DOI reconciliation:")
@@ -364,7 +400,7 @@ def audit(payload: dict) -> int:
             entry = payload["works"][key]
             print(f"  {key}\n    doi={entry.get('doi')} similarity={entry.get('title_similarity')}")
             print(f"    resolved: {entry.get('resolved_title', '')[:100]}")
-    return 1 if mismatches else 0
+    return 1 if mismatches or evidence_errors else 0
 
 
 def main() -> int:
@@ -403,8 +439,15 @@ def main() -> int:
         print(f"[{index:3}/{len(with_doi)}] {record['status']:20} {doi}")
         time.sleep(REQUEST_PAUSE_SECONDS)
 
+    previous = json.loads(OUTPUT.read_text(encoding="utf-8"))["works"] if OUTPUT.is_file() else {}
     for work in works:
         if (work.get("doi") or "").strip():
+            continue
+        kept = previous.get(work["citation_key"])
+        if kept and kept.get("status") == "document_verified":
+            # Hand-reviewed authorship from the work's own document survives a
+            # registry refresh; --check re-verifies its evidence quote.
+            resolved[work["citation_key"]] = kept
             continue
         # No DOI means no registry to ask. Recorded explicitly so the gap is
         # visible rather than looking like a work that simply has one author.

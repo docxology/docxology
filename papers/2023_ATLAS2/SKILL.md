@@ -21,13 +21,22 @@ This work addresses topics in **Cognitive Security**: ATLAS2.
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Alpha COGSEC ATLAS prototype built on Coda.io (2023)** — A first digital ATLAS prototype applied to cognitive-security vulnerabilities and exploits, built on a low-code platform, informed the specification.
+- **Object-class specification: Entity, Pattern, iQuery, Attribute, Prompt Interface** — Defines core ATLAS components with properties and methods, sufficient for digital or paper-and-pencil implementation.
+- **Question Oriented Design via iQuery routers and pattern QKits** — Structured queries route answers to attributes and assign implied Patterns, which in turn attach new question kits (dynamic typing).
+- **IXE and VIE designations for interoperating ATLAS instances** — Defines Information Exchange Environments and Verified Information Exchange Environments with quality assurance and enforcement criteria.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The prototype work revealed that numerous communities maintain pattern languages with limited interoperability.
+- Combining parent-child pattern relationships with question lists (QKits) yields a dynamic type system in which objects acquire implied Patterns through requests for information.
+- The prototype integrated several dozen pattern collections into over 1,000 networked patterns.
+- The design treats questions, missing information, and disagreement over information as information in their own right.
+- The authors expect knowledge-base growth to follow a sigmoid rather than exponential curve as iQueries increasingly network existing objects.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -56,5 +65,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.10296601`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -44,20 +44,48 @@
   "type": "Presentation",
   "methods": [
     {
-      "name": "Content production",
-      "description": "Applied content production approach"
+      "name": "Tinbergen's four questions applied to ant and human aging",
+      "description": "The talk organizes its question of why aging occurs around Tinbergen's 4 Questions, comparing ants (nestmate and colony scales) with humans.",
+      "evidence": "Why does biological Aging occur? ○Using Tinbergen’s 4 Questions to ask Why aging happens"
     },
     {
-      "name": "Pedagogical design",
-      "description": "Applied pedagogical design approach"
+      "name": "Decayed-house example illustrating four kinds of explanation",
+      "description": "A worked example explains why a house is decayed in developmental, material, functional and deep-time terms before applying the scheme to aging.",
+      "evidence": "Because generations of similar houses have been made before, out of materials that are planned to last decades not centuries Next we will use Tinbergen’s 4 Questions to explore Aging."
+    },
+    {
+      "name": "Insulin signaling as a focal example of aging mechanism",
+      "description": "Mechanism discussion is restricted to insulin signaling, drawing on cited work such as Yan et al. 2022 on long-lived reproductive ant castes.",
+      "evidence": "This is a large area, here we will just focus on Insulin signaling as an example"
+    },
+    {
+      "name": "Kin selection vs. multi-level selection distilled from a prior stream",
+      "description": "The evolutionary account is limited to kin selection and multi-level selection, presented as a distillation of ActInf PaperStream #001.0.",
+      "evidence": "Of the many Evolutionary phenomena/perspectives to consider, here we will just discuss Kin Selection (KS) & Multi-Level Selection (MLS)"
     }
   ],
   "key_findings": [
-    "A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social i"
+    "The speaker distinguishes age (clock time elapsed) from aging (a process and embodied outcome linked to species-specific phenotypes and disease/death risk), stating the definition is not normative.",
+    "The slides note that some ant species have colonies that do not age, possibly via asexual or intra-nest sexual reproduction.",
+    "On the utility of aging, the talk suggests one shared answer for ants and humans may be that there is no specific utility, only an order-vs-disorder tradeoff.",
+    "At nestmate scale, the speaker proposes turnover of damaged nestmate bodies may be favorable, favoring aging processes at that scale."
   ],
   "related_papers": [
     "2018_MVEE",
     "2023_PostdocReview",
     "2025_BiofirmDevelopmentWith"
-  ]
+  ],
+  "key_findings_evidence": [
+    "This definition of “aging” is clearly distinct from age, and in no ways is prescriptive or normative.",
+    "Some Ant species have colonies that don’t age! Immortal colonies may have asexual reproduction, or intra-nest sexual reproduction",
+    "One answer in common might be – there simply is no utility. Life is an Order vs. Disorder tradeoff frontier, and there is no further specific Utility or meaning to Aging",
+    "Turnover of damaged nestmate bodies may be favorable (favoring aging processes at nestmate scale)"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Slide deck (April 22, 2023). The speaker states he is not an aging-research expert and the talk is 'whimsical and promptive, rather than exhaustive'; many slide quotes (e.g. the KS/MLS conclusion, Rodrigues & Flatt, Yan et al.) are from cited literature and were not used as findings."
+  }
 }

@@ -36,5 +36,53 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-07-10T19:31:19Z"
+  "checked_at": "2026-07-10T19:31:19Z",
+  "methods": [
+    {
+      "name": "Invented fixture data with synthetic classified segments and reviewers",
+      "description": "The pipeline is exercised only on synthetic segments (UNCLASSIFIED to TOP_SECRET//SCI), synthetic redaction decisions and synthetic reviewer records.",
+      "evidence": "The pipeline operates on invented fixture data: synthetic segments with classification levels ranging from UNCLASSIFIED through TOP_SECRET//SCI, synthetic redaction decisions with bounded reasons, and synthetic reviewer records. No real source material is used."
+    },
+    {
+      "name": "Text-level release-audit engine with mosaic-risk scoring",
+      "description": "Segments are audited against a public classification ceiling, redaction spans checked for overlap, orphan decisions flagged, source-control coverage enforced, and residual markers scored.",
+      "evidence": "each segment is audited against a public classification ceiling, redaction spans are validated for non-overlap, orphan decisions are flagged, and source-control coverage is enforced."
+    },
+    {
+      "name": "4x4 visual redaction proof matrix plus nine steganographic methods",
+      "description": "Four redaction styles are rendered on four PDF backgrounds (16 PDFs), each post-processed with hash manifests, watermarks, barcodes, metadata and embedded manifests.",
+      "evidence": "Four redaction styles—blackout, whiteout, grayout, and blur—are rendered across four PDF backgrounds— white, gray, black, and blur—yielding sixteen base proof PDFs."
+    },
+    {
+      "name": "Kmyth TPM sealing via swtpm and an mssim-to-swtpm proxy on macOS",
+      "description": "Hash manifests and steganography PDFs are sealed into .ski sidecars; on macOS a software TPM and protocol proxy were used, and kmyth-seal was patched to flush contexts.",
+      "evidence": "On macOS, which lacks a hardware TPM, a software TPM emulator (swtpm) and an mssim-to-swtpm protocol proxy bridge the TPM2-TSS mssim TCTI to swtpm’s native socket protocol."
+    },
+    {
+      "name": "Source-safe SHA-256 redaction ledger and three-role review gate",
+      "description": "Redacted spans are recorded only as SHA-256 hashes, and release requires originator, classification reviewer and release authority approvals with rationales.",
+      "evidence": "A source-safe redaction ledger records SHA-256 hashes of each redacted span without exposing source text"
+    }
+  ],
+  "key_findings": [
+    "On the fixture packet (fourteen segments), the audit reported the packet releasable with redaction coverage 1.0, plus warning-level residual-marker findings.",
+    "In the verified run, all sixteen variants produced both TPM sidecars, giving thirty-two .ski files.",
+    "Without the FlushContext patch, the second kmyth-seal invocation fails with an out-of-memory-for-object-contexts error on swtpm.",
+    "The author reports that visual presentation choices are orthogonal to the release gate: all four redaction treatments yield equivalent source-safe outputs.",
+    "Stated limitations: fixture data is invented, swtpm lacks hardware tamper resistance, and batch sealing of 32 sidecars takes about thirty seconds via the proxy."
+  ],
+  "key_findings_evidence": [
+    "Releasable: true (no error-level findings after redaction). • Release safety score: weighted by error count, warning count, and mosaic risk. • Redaction coverage: 1.0 (all sensitive segments have at least one decision).",
+    "In the verified run, all sixteen variants produced both sidecars, yielding thirty-two .ski files total.",
+    "Without it, the second kmyth-seal invocation fails with “out of memory for object contexts” because the storage key from the first invocation remains loaded in the TPM’s transient object table.",
+    "The visual proof matrix confirms that blackout, whiteout, grayout, and blur treatments produce equivalent source-safe outputs—only the visual token differs.",
+    "The swtpm software TPM does not provide hardware-level tamper resistance; production deployments should use a hardware TPM."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Exemplar on invented fixture data only. Minor internal inconsistency: Section 3 says the architecture 'consists of two layers' while the text then describes a third (Kmyth TPM) layer."
+  }
 }

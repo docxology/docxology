@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Planned on-site sensor network (Vin-Q/ROMI) over 4G, 5G and LoRa, Farm-local data processing with optional sharing of model updates only, Active Inference generative models built with RxInfer.jl
+- Identifies findings: Proposes FarmWorks, an open-source decentralized platform for human-AI interaction in agriculture intended to resist power concentration from centralized AI., Argues that Active Inference models in RxInfer.jl can be more computationally efficient and interpretable than deep or reinforcement learning for decentralized settings., Sets as a core design principle a coherent but flexible coupling between users' self-models and FarmWorks, and between users.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

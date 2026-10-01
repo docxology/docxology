@@ -55,17 +55,32 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Concept white paper responding to the NGA 'Reimagining Maps' Polyplexus incubator",
+      "description": "The paper is structured around the incubator's driving questions about how emerging knowledge could make maps more flexible and understandable.",
+      "evidence": "Reimagining Maps was written in response to the National Geospatial-Intelligence Incubator of the same name hosted on the platform Polyplexus"
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Survey of the current geospatial problem space and its key challenge areas",
+      "description": "Part I reviews issues such as interoperability, skill gaps, uncertainty, threat actors, data volume, and accessibility, then condenses them into three challenge areas.",
+      "evidence": "Here we distill the challenges listed above into three key contemporary challenge areas for geospatial mapping"
+    },
+    {
+      "name": "Cross-field review of 'maps' in fields adjacent to cartography",
+      "description": "Part II examines how maps are used in process mapping, software, complex systems, communications, knowledge management, education, ecology, and mathematics.",
+      "evidence": "We then reviewed a variety of fields adjacent to cartography where “maps” play a key role, such as mathematics, ecology, project management, and complex adaptive systems."
+    },
+    {
+      "name": "Narrative case study based on DASA's 'Map the Gap' wet-gap crossing scenario",
+      "description": "A bridge-construction scenario for expeditionary forces in adversarial settings is used to illustrate what reimagined maps might look like.",
+      "evidence": "We now consider the potential impacts of a future of maps which includes these priorities and findings through the use of a narrative use-case based on a scenario offered by the United Kingdom’s Defence and Security Accelerator (DASA) “Map the Gap” competition [157,158]."
     }
   ],
   "key_findings": [
-    "Reimagining Maps was written after participation in&nbsp;a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus.",
-    "The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experience, and graphic design."
+    "The authors conclude that across fields and history, mappers face similar challenges: integrating multimodal data, representing uncertainty, user customization, and designing for action rather than archiving.",
+    "Across the mapping domains reviewed, the authors found the main cutting-edge limitation was the ability to integrate data rapidly, not data availability.",
+    "They propose BOLTS: data specifications reasonable for Business, Operational, Legal, Technical, and Social use-cases.",
+    "They argue that BOLTS reasonableness needs metadata to guide transformations, rather than fitting all data to universal schemas.",
+    "Drawing on OpenStreetMap and Wikipedia practice, the authors suggest future maps may rely on reputation-based 'network-sourcing' rather than crowd-sourcing."
   ],
   "related_papers": [
     "2020_EmergentTeams",
@@ -73,5 +88,19 @@
     "2020_GreatPreset"
   ],
   "artifact_doi": "10.5281/zenodo.4170026",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.4170026"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.4170026",
+  "key_findings_evidence": [
+    "Across fields and through history, maps and mappers are beset by similar challenges such as: integration of multimodal data, representation of uncertainty, user customization, and designing for action rather than archiving.",
+    "Across nearly every mapping domain reviewed, there were limitations at the cutting edge concerning, not the availability of data, but the ability to rapidly integrate it.",
+    "Synthesizing the requirements from each domain indicates a need for data specifications which are reasonable for Business, Operational, Legal, Technical, and Social (BOLTS, see Figure 4) use-cases.",
+    "It is not necessary that all data be universally fit to specific schematics in order to be BOLTS reasonable, instead, all that is necessary is that the objects referenced within a data object",
+    "prioritize crowd-sourcing, but instead “network-sourcing”. Based on the actual practice of data collaboration in OpenStreetMap and Wikipedia: reputation is foremost in the level of scrutiny any contribution receives."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "review",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Concept white paper; findings are the authors' synthesis and proposals, not empirical results."
+  }
 }

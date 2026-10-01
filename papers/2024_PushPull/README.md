@@ -18,11 +18,16 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Eight-step self-guided computer exercise sequence (A-to-B cursor/eye movement)** — Readers move a mouse, touchpad, eyes, or attention between two points A and B, alternating 'push' and 'pull' cognitive strategies across eight progressively layered exercises.
+- **Layering push/pull movement with lip pursing, vocalization, and language generation** — Later steps add bodily constraints (pursed lips), repeated syllables, memorized text, and freeform speech while alternating push and pull movements.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The author reports a preliminary impression that attentional push movements are faster and carry lower cognitive burden than goal-oriented pull strategies.
+- The author stresses that push is not easier or better than pull, only different and faster.
+- The document presents itself as only an initial sequence meant to complement future development of 'hand-I' uncouplings.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

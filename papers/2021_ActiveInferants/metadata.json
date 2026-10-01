@@ -33,17 +33,31 @@
   ],
   "methods": [
     {
-      "name": "Active inference agent-based simulation",
-      "description": "Applied active inference agent-based simulation approach"
+      "name": "Per-forager MDP formulation of active inference",
+      "description": "Each simulated ant forager runs its own Markov decision process with A (likelihood), B (transition), and C (pheromone preference) components; the colony is not modelled as one agent.",
+      "evidence": "it is important to understand that the MDP corresponds to the decision process of a single simulated ant forager, not the colony as an entity."
     },
     {
-      "name": "Markov decision process modeling of foraging",
-      "description": "Applied markov decision process modeling of foraging approach"
+      "name": "In silico alternating T-maze foraging paradigm",
+      "description": "Simulated colonies search a T-maze in which the food patch switches arm every 500 of 2,000 time steps, with a decaying attractant trail pheromone.",
+      "evidence": "The basic challenge faced by the ants in our simulation is to locate the food resource patch, which alternates every 500 time steps in the simulation (representing a transiently- available, patchy resource) over 2,000 steps."
+    },
+    {
+      "name": "Inbound-only trail pheromone deposition rule",
+      "description": "Foragers lay attractant pheromone only after finding food and returning to the nest, a strategy modelled on Formica red wood ants.",
+      "evidence": "Once a forager discovers the food resource (detects the scent of food), it begins depositing trail pheromone as it navigates back to the nest entrance."
+    },
+    {
+      "name": "Simulations of colony sizes 10, 30, 50, and 70 foragers",
+      "description": "Ran 2,000-step simulations at four colony sizes and tracked round trips and a mean Euclidean inter-ant distance coefficient as colony-level phenotypes.",
+      "evidence": "In this paper we show results from simulations with several diﬀerent numbers of foragers (10, 30, 50, 70), however with the provided code one can adjust this to any value."
     }
   ],
   "key_findings": [
-    "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments..",
-    "Active inference is a multiscale approach to behavi...."
+    "Colonies of foragers with no internal map of the T-maze foraged successfully using local pheromone-following and return-trip deposition rules.",
+    "Colony size influenced per-nestmate round trips, apparently non-linearly, though the authors draw no generalization because key parameters were not varied.",
+    "Each colony size quickly converged onto a characteristic range of the inter-ant distance metric.",
+    "The model recovered basic colony phenomena such as trail formation after food discovery in the T-maze paradigm."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -52,5 +66,18 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.3389/fnbeh.2021.647732",
-  "doi_url": "https://doi.org/10.3389/fnbeh.2021.647732"
+  "doi_url": "https://doi.org/10.3389/fnbeh.2021.647732",
+  "key_findings_evidence": [
+    "ant colonies consisting of foragers with no internal map of the T-maze were able to forage successfully given a set of simple behavior rules",
+    "However we do not draw any generalizations from this speciﬁc trend, since we did not explore variation in critical model parameters such as T-maze size, pheromone deposition rates.",
+    "For each colony size, the colony quickly converges onto a characteristic range for the distance metric (Figure 3B e.g., ∼100 for colony size of 10 and ∼900 for a colony of 70).",
+    "the alternating T-maze paradigm, to illustrate the ability of the model to recover basic colony phenomena such as trail formation after food location discovery."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Computational simulation study (no empirical ant data); authors state they did not perform extensive parameter sweeps and results are from representative runs."
+  }
 }

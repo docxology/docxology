@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **witness_register Python package with shape-check intake of envelopes** — A small Python package with no line-package imports accepts line.report-envelope/1.0 JSON envelopes by value after a schema shape check, storing native_status verbatim.
+- **SHA-256 sealed, prior_ref-chained append-only witness states** — Each state is sealed by SHA-256 over canonical JSON and chained to its predecessor; the prior seal is re-derived before extension so tampering fails closed.
+- **Non-compensatory -1/0/+1 projection with fixed precedence rules** — For a declared next use, a bounded posture is computed from relation records only: unresolved block forces -1, empty state is -1, any hold caps at 0.
+- **Formal definitions and propositions bound to named tests** — Definitions and propositions (append-only, non-compensatory, determinism, etc.) are each bound to a named test in the package's test suite.
+- **3x3 canonical witness battery with falsification pass; real envelopes** — Nine constructed cases (positive, negative, adversarial) are run against the projection, with planted errors to confirm checks can fail; worked examples use real envelopes from four lines.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- On four real envelopes describing different subjects, chain verification was clean, return recoverability and relation fidelity were 1.0, and the posture was held at 0.
+- In the same-subject example, meeting the return contract lifted only the return_due hold, and the posture stayed at 0 because one open question entered as an unresolved dependency.
+- A non-compensatory block forced -1 both alone and under fifty AGREES relations; an empty register was -1.
+- Every battery check passed on the real register, and every case raised BatteryError when its observed behaviour was deliberately falsified.
+- The author states limits: the chain tip is unbound without an external anchor, intake is a shape check not a truth check, and examples cover one date and nine constructed states.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

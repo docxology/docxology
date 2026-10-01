@@ -66,17 +66,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Conversion of the SIST Guide TOC and bibliography into a modular curriculum",
+      "description": "Restructures an inherited source guide into parts, modules, methods appendices, named patterns, and parsed references while preserving source identities.",
+      "evidence": "It converts SIST Guide TOC and Bibliography into 16 parts, 51 modules, 9 methods appendices, 20 named AGEINT patterns, and 312 parsed source-guide references without renumbering inherited source identities"
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Synthetic practice studios using safe fixtures instead of live targets",
+      "description": "Exercises use classroom records, declassified examples, owned-lab logs, toy datasets, and tabletop incidents, ending in a bounded evidence-packet artifact.",
+      "evidence": "works through a synthetic practice studio using classroom records, public declassified examples, owned-lab logs, toy datasets, rendered figures, or tabletop incidents"
+    },
+    {
+      "name": "Source-lane and tier system separating official, standards, scholarly, and vendor sources",
+      "description": "Each claim class is matched to a required evidence type; discovery tools may suggest sources but citations must resolve to checked anchors.",
+      "evidence": "Governance claims require oﬀicial or standards anchors; technical and theoretical claims require direct domain sources; empirical capability claims require evaluation or study evidence with context and subgroup caveats."
+    },
+    {
+      "name": "Automated claim-calibration audit of generated manuscript language",
+      "description": "A verifier scans high-risk empirical, statistical, governance, and safety language and fails unsupported proof-language, p-values, or measured-performance claims.",
+      "evidence": "The claim-calibration audit enforces that separation after manuscript generation."
+    },
+    {
+      "name": "Generated manuscript from version-controlled Markdown, tested Python, and registry figures",
+      "description": "The textbook is built reproducibly from curriculum shards, Pandoc citation keys, and registry-backed figures with captions, alt text, and provenance.",
+      "evidence": "This open textbook is generated from version-controlled Markdown, tested Python modules, programmatic figures, and rendered Mermaid diagrams."
     }
   ],
   "key_findings": [
-    "<p>Synthetic Analytic Tradecraft (AGEINT, or Agentic Intelligence), is a local curriculum-and-assurance atlas for teaching bounded AI-agent support inside intelligence education by making the machiner",
-    "It converts SIST Guide TOC and Bibliography into 16 parts, 51 modules, 9 methods appendices, 20 named AGEINT patterns, and 312 parsed source-guide references without renumbering inherited source ident"
+    "AGEINT presents itself as a versioned curriculum-and-assurance framework, explicitly not a new agent architecture, cognitive theory, attack benchmark, or measured learning outcome.",
+    "Its strongest stated claim is methodological: agentic assistance can be taught in intelligence education when reuse is forced through authority, source support, safe substitution, review, rollback, and refresh triggers.",
+    "The source corpus includes 10 source-quality anchors for the standards and assurance spine and 462 curated intelligence research anchors across domain lanes.",
+    "The work states that its page, citation, and figure counts and validator passes are artifact telemetry, not empirical outcome evidence.",
+    "Exercises are restricted to educational, defensive, synthetic material and give no instructions for unauthorized collection, evasion, exploitation, or manipulation."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -85,5 +105,19 @@
   ],
   "related_software": [
     "docxology/AGEINT"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Its contribution is not a new agent architecture, cognitive theory, attack benchmark, or measured learning outcome. The contribution is a versioned curriculum-and-assurance framework",
+    "Its strongest claim is methodological and inspectable: agentic assistance can be taught inside intelligence education when every reuse path is forced through authority, source support, safe substitution, evidence packet, negative controls, human review, rollback, and refresh triggers",
+    "10 source-quality anchors cover the governing standards and assurance spine, while 462 curated intelligence research anchors span the domain lanes",
+    "page counts, citation counts, figure counts, validator passes, and link audits are artifact telemetry, not empirical outcome evidence.",
+    "All exercises remain educational, lawful, defensive, historical, synthetic, and evidence-bounded."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "book/report",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Edition 0.1 open textbook/atlas (~6.9 MB extraction); summary drawn from the abstract, orientation, contribution-boundary, safety-rail, and method-reference sections only, not the full module content. Work explicitly disclaims being a benchmark or measuring learning outcomes. One quote preserves an 'ff' ligature (U+FB00)."
+  }
 }

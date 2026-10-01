@@ -36,5 +36,51 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-09-24T19:35:38Z"
+  "checked_at": "2026-09-24T19:35:38Z",
+  "methods": [
+    {
+      "name": "Versioned registry of twelve commitments with SHA-256 digest pinning",
+      "description": "Commitments are frozen records (id, title, wire, tags, required care signals, kind) whose sorted canonical form is hashed and pinned in every reading.",
+      "evidence": "The registry lists twelve commitments, each a frozen record with an id, a title, a wire (the practice in one sentence), applicable tags from a reviewed vocabulary, an ordered tuple of required care signals, and a kind family"
+    },
+    {
+      "name": "Staged, fail-closed intake normalization of declared files",
+      "description": "Declared files are normalized; malformed tags or undated signals are set aside as intake notes rather than causing crashes or invented values.",
+      "evidence": "dated care signals must carry ISO dates or they are set aside with notes. Nothing crashes and nothing is invented: every ignored token becomes an intake note the declarer can read."
+    },
+    {
+      "name": "Freshness-window evaluation into MAINTAINED / NEEDS_ATTENTION / STALE",
+      "description": "Required signals of tag-matched commitments are compared with signals declared within a freshness window (180 days by default) to assign a verdict.",
+      "evidence": "All fresh yields MAINTAINED; some missing yields NEEDS_ATTENTION; a missing signal that aged past the window yields STALE."
+    },
+    {
+      "name": "Formal definition of readings, commitments and fresh sets",
+      "description": "A reading is formalised as a tuple and properties (fail-closed, staleness monotonicity, digest pinning) are stated.",
+      "evidence": "A reading is a tuple 𝑅= (𝑣, 𝐹, 𝑁, 𝑑, 𝑔) where 𝑣is the file verdict, 𝐹is a tuple of commitment findings, 𝑁is a tuple of intake notes, 𝑑is the review date, and 𝑔is the registry digest."
+    },
+    {
+      "name": "Worked examples: maintained quarter, stale repository, unmatched scan",
+      "description": "Three illustrative declared files show the verdicts the instrument returns; these are examples, not an empirical evaluation.",
+      "evidence": "The same file with every signal dated 2025-01-01, read at 2026-08-01. Every signal is older than the 180-day window, so the applicable commitments read STALE and the file verdict is STALE."
+    }
+  ],
+  "key_findings": [
+    "An empty scan set (no matching commitment or unreadable file) returns OUTSIDE_SCOPE with notes and never yields MAINTAINED.",
+    "The stated staleness-monotonicity property holds that the stale set is always a subset of the missing set.",
+    "The verdict is a declaration-coverage statement, explicitly not a warranty, SLA, availability guarantee or proof of maintenance.",
+    "The author notes the instrument only reads declarations and does not inspect repositories, run checks or contact anyone; the freshness window is a policy constant, not empirical."
+  ],
+  "key_findings_evidence": [
+    "Fail-closed property. If no commitment applies to the declared file, the verdict is $v = $ OUTSIDE_SCOPE and 𝐹is empty. An empty scan never yields MAINTAINED.",
+    "If a signal label is in the stale set at date 𝑑, it is in the missing set for every commitment requiring it; stale is always a subset of missing.",
+    "The verdict is a declaration-coverage statement and never a warranty, SLA, availability guarantee, or proof of maintenance.",
+    "It does not inspect repositories, run checks, or contact anyone whose obligation is recorded. • The freshness window is a policy constant, not an empirical threshold."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Short instrument description (11 pp.) in the docxology colour-line set; no empirical data or user study."
+  }
 }

@@ -20,13 +20,20 @@ This work addresses topics in **Art & Synergetics**: quantum mechanics, art, phe
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **First-person visual-phenomenological reflection on a gym squat rack** — The essay restricts itself to visually triggered experiences and thoughts while looking at a squat-rack framework during 'Spring Training' in a gym.
+- **Successively zoomed photographs of the rack used as the case** — Photographs of the rack are shown and zoomed in twice on a blurry region to isolate the gap between two vertical structures.
+- **Extended baseball metaphor and staged dialog interlude** — The piece is framed as a Quantum Baseball spring training, with a mock radio ad and an ExecutI'VE/ExecutOR dialog as a '7th inning stretch'.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Analysis of The work uses Morse...
+- The authors argue that a gap in a framework can either be retained as-is (barrier-like) or filled, enabling different functions.
+- They argue a trade-off between stability/rigidity and adjustability affordance exists in frameworks, typically settled by the rack's fabricator.
+- They propose that a framework does not do the work but provides room for work to be done.
+- They argue blind spots exist from any vantage point and that moving attention, eyes and body removes them.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +61,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.10798144`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

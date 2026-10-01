@@ -63,17 +63,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Three system-prompted trader personas as binary judges",
+      "description": "Optimist, neutral and pessimist personas each make a bullish/bearish call on the same 64 authored market scenarios, run through six local models via Ollama.",
+      "evidence": "Three trader “personas” (optimistic, neutral, pessimistic), instantiated as system prompts, each make a binary bullish/bearish call on the same 64 market scenarios; we run the identical trio through six locally-hosted models via Ollama."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Unsupervised NTQR ErrorIndependentEvaluation on vote counts",
+      "description": "Recovers per-persona, per-label accuracy from unlabeled vote patterns only; authored truth is held out and used afterward to score recovery error.",
+      "evidence": "For each model we recover per-persona, per-label accuracy with ErrorIndependentEvaluation (unsupervised) and score it against the authored ground truth (supervised), which is used only as a check."
+    },
+    {
+      "name": "Deliberately unbalanced 40/24 scenario deck",
+      "description": "The answer key is set to prevalence 0.625 to avoid the evaluator's removable singularity at prevalence exactly 1/2.",
+      "evidence": "The authored prevalence is 40 bullish, 24 bearish — true prevalence of label a = 0.625. This is a methodological requirement, not an accident."
+    },
+    {
+      "name": "Schema-constrained JSON vote collection",
+      "description": "Uses Ollama structured output with a JSON Schema so parsing is a measured interface check before the binary vote matrix is analysed.",
+      "evidence": "First, a schema-constrained collection interface makes parsing a measured engineering boundary rather than a hidden source of invented labels."
+    },
+    {
+      "name": "Scenario bootstrap and deterministic synthetic-ensemble study",
+      "description": "Bootstraps over scenarios for a CI on recovery MAE, and runs synthetic ensembles with known truth to test error scaling, correlated errors and tie-break failure.",
+      "evidence": "A log–log fit of error against Q has slope -0.58 (R2 = 0.989; the prevalence error scales the same way, slope -0.55)"
     }
   ],
   "key_findings": [
-    "<p>Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses &mdash; no answer key.",
-    "We test this end to end on real large language models."
+    "For mistral:latest, unsupervised recovery matched authored-truth accuracies to a mean absolute error of 0.012, within the 0.102 sampling-noise floor.",
+    "The algebra recovered a poor judge's accuracy without labels: the pessimist's true bullish accuracy of 0.57 was recovered as 0.59.",
+    "Inter-judge disagreement did not imply evaluability; what gated evaluation was whether every individual judge varied, not ensemble-level disagreement.",
+    "A label-free per-judge diagnostic (modal-vote fraction reaching 1.0) predicted exactly which models would be evaluable, before any solve.",
+    "Synthetic studies show the failure alarm catches anti-correlated judges but can miss positively-correlated errors, and the tie-break inverts near chance-level judges."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -82,5 +102,19 @@
   ],
   "related_software": [
     "docxology/ntqr_llm"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Among five evaluable models, mistral:latest recovered the authored truth most closely. Its unsupervised recovery tracked the authored truth to a mean absolute error of 0.012, within the 0.102 sampling-noise floor:",
+    "the pessimist was genuinely bad at the bullish calls (true accuracy 0.57 — it called bearish even when the facts were clearly bullish), and the unsupervised algebra recovered that poor accuracy as 0.59 (against a true 0.57) — with no answer key.",
+    "The central, non-obvious result: inter-judge disagreement does not imply evaluability.",
+    "We formalize this as a label-free evaluability diagnostic (a judge whose modal-vote fraction reaches 1.0 is a constant classifier; an unparseable vote is an abstention) that predicted exactly which models would be evaluable, before any solve and without ground truth.",
+    "the built-in failure alarm catches anti-correlated judges with no false positives yet can miss positively-correlated (shared-training) errors, and the two-solution tie-break inverts once judges are no longer clearly better than random"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "empirical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Author-stated limitations: single stochastic run (T=1, Q=64, temperature 0.1), only five evaluable real models, 'truth' is the authors' authored call rather than market outcomes, and the diagnostic is necessary but not proven sufficient."
+  }
 }

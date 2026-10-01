@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Synthetic waypoint benchmark: FractalRabbit fixture plus NSA simulator lane, Discrete POMDP generative model over grid cells with four categorical modalities, Matched-information comparison of 14 predictors incl. HMM, particle, pymdp
+- Identifies findings: Soft belief marginalization beats a point estimate as emissions degrade: 0 nats at a clean channel to 0.739 nats at flip probability 0.400, with a cross-draw mean of 0.495 nats., Under noisy emission, active inference ranks 1 of 14 but leads the strongest non-AIF belief filter by only 0.005 nats, a statistical tie., No directional comparison in the clustered-bootstrap family survives multiplicity correction.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -37,5 +37,5 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |

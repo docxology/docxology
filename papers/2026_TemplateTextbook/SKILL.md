@@ -20,13 +20,22 @@ This work addresses topics in **Computational**: TemplateTextbook.
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Single config.yaml source of truth for book structure** — Parts, chapters, front matter, appendices, labs and question banks are declared in config.yaml, from which TOC, numbering and integrity tests read.
+- **Tested Python backbone (textbook.models) and deterministic figures** — Worked equations are implemented as tested Python functions that chapter prose calls, and figures are generated deterministically from code.
+- **Pandoc + pandoc-crossref rendering pipeline** — The manuscript is assembled from Markdown in declared order after analysis scripts produce figures, then rendered to PDF via Pandoc with pandoc-crossref.
+- **Stub-marker counting audit and manuscript-integrity tests** — A quality audit counts STUB/TODO/TKTK markers and pytest checks the per-chapter content contract, unique labels, citations and glossary anchors.
+- **Two filled worked-reference chapters (logistic growth; dose-response)** — First Principles derives the logistic growth law; Case Studies fits a linear dose-response trend to a small synthetic six-condition dataset.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The book is explicitly a scaffold rather than a finished work: every structural element is present and author-specific passages are marked stubs.
+- It provides twelve chapter shells across four parts, each with a matching lab and question bank.
+- Claims building the book reproduces byte-identical figures and numbers, since nothing in the prose is computed by hand.
+- The worked case study's linear fit gives slope 1.375 and R2 = 0.999, while warning that three averaged points cannot support prediction or extrapolation.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +63,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20533125`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -53,20 +53,45 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "OPORD analysis and catechism-style process design",
-      "description": "Applied opord analysis and catechism-style process design approach"
+      "name": "Historical analysis of Operations Orders from Roman origins to the present",
+      "description": "Traced the origins and evolution of military Operations Orders (OPORDs), beginning with the Roman Army, and their civilian counterparts.",
+      "evidence": "Given that the Roman Army has so often served as the source of ideals for modern militaries to replicate and given its clear status as the common root from which modern military theory springs, it is an obvious first -candidate for an analysis of the origin of OPORDs"
     },
     {
-      "name": "Organizational sensemaking and high-reliability frameworks",
-      "description": "Applied organizational sensemaking and high-reliability frameworks approach"
+      "name": "Multidisciplinary synthesis (complexity, HROs, memetics, Active Inference, etc.)",
+      "description": "Drew on complexity science, organizational psychology, high reliability organizations, memetics, logistics, knowledge management and Active Inference to frame OPORD requirements.",
+      "evidence": "Perspectives from research on Complexity Science, Organizational Psychology, High Reliability Organizations, Memetics, Logistics, Knowledge Management Systems, and Active Inference are used to consider the historical, contemporary, and future requirements and constraints of Operations Orders."
+    },
+    {
+      "name": "Design of a sectioned OPORD template with guiding questions (Heilmeier-style)",
+      "description": "Designed a new OPORD format with a header, footer and six sections, each paired with questions modeled on the Heilmeier Catechism.",
+      "evidence": "Building from the success of the Heilmeier Catechism, each section is paired with questions which, if answered with rigor and in good faith, will ensure a format-valid order without the need for supplementary materials."
     }
   ],
   "key_findings": [
-    "Historical and futures-oriented analysis of operations orders (OPORD) for organizational sensemaking, leading to a catechism-style OPORD format for process facilitators in military, intelligence, and "
+    "The authors conclude that ongoing feedback-driven recalibration, clear alignment on values/narrative/goals/identity, and high-quality distributed sensemaking are critical to HRO success and enhanced by a well-formatted OPORD.",
+    "From historical adaptations, they identify that structural changes in warfare or unprecedented uncertainty create the need for a new OPORD.",
+    "The paper proposes the Facilitator's Catechism, an OPORD for Process Facilitators with six sections: Situation, Mission, Potential Avenues of Approach, Milestones, Implications for Outcome, and Administrative/Logistics/Communications.",
+    "The format is designed to circumvent prior OPORD limitations where team composition and members' organizational and narrative alignment are not known before the order is written.",
+    "The authors caveat that impact is hard to predict and measure, and recommend Serious Games (e.g. hackathons) to address sample-size and comparability problems in evaluating it."
   ],
   "related_papers": [
     "2020_EmergentTeams",
     "2020_GreatPreset",
     "2020_InfiniteGamesInfinite"
-  ]
+  ],
+  "key_findings_evidence": [
+    "1. Ongoing, feedback-driven reflexive recalibration of process and capability . 2. Clear alignment of participants on values, narrative, goals, and identity . 3. High quality distributed & multilevel sensemaking",
+    "When the nature of warfare undergoes structural changes, and/or there is unprecedented levels of uncertainty in the operating theater, the necessity for a new OPORD emerges",
+    "The Facilitator’s Catechism contains a Header, Footer, and six sections: (1) Situation, (2) Mission, (3) Potential Avenues of Approach, (4) Milestones, (5) Implications for Outcome, and (6) Administrative, Logistics, and Communications.",
+    "1. Team Composition is not necessarily known prior to writing. 2. Organizational and narrative alignment of members is not necessarily achieved prior to writing.",
+    "In the absence of such standardizations, we recommend the use of Serious Games applied through tools like collaborative case-management software and events like hackathons [177] as a basis for overcoming challenges of sample size and comparability."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Conceptual/historical paper proposing a new Operations Order format; no empirical evaluation of the format is reported."
+  }
 }

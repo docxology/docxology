@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Multi-backend literature search with DOI/arXiv/title deduplication, Deterministic SHA-256-keyed JSON search cache, Abstract and PDF full-text enrichment with on-disk caching
+- Identifies findings: In the reported run, the query "reproducible research optimization" against the local backend returned 6 deduplicated papers (4 with a DOI, 6 with an abstract) and no backend errors., A second run with identical config produces byte-identical artifacts apart from cache timestamps, which the paper calls the property it exists to demonstrate., Results from live arXiv and Crossref are not reproducible across weeks; strict reproducibility requires pinning a local corpus, committing the cache, and pinning the LLM seed.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,5 +37,5 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |

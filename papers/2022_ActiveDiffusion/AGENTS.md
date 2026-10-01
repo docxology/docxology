@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Analysis of The project, f...
+- Extracts methods: Proposed theoretical analysis of formal relations between ActInf and diffusion models, Proposed integration of diffusion models into the Active Inference formalism, Proposed cadCAD-based multi-agent work extending Active Blockference
+- Identifies findings: The document states the 2023-AD mission: characterizing mathematical formalisms and computational applications of Active Inference and Diffusion Models., It identifies shared ground between ActInf and DMs, including that both draw on stochastic thermodynamics for their internal representations., It proposes that LDMs' compression of high-dimensional input into latent representations is analogous to how ActInf agents encode beliefs about their environment.
 - Maps contributions to AII Ecosystem literature
 
 ### 🎓 EDUCATOR

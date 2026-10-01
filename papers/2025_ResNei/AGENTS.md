@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: ResNei &mdash; Research Neighbourhood &ndash; is an AI-augmented environment designed to transform how we discover, analyse, and connect ideas.., At its core is the Research Discovery Engine, which constructs a living, responsive knowledge graph through the distillation of verified concepts and the dynamic linking of an evolving corpus of scientific knowledge.., This graph is structured as a set of Conceptual Nexus Models (CNMs)&mdash;modular representations of connected ideas, designed to surface signals to support impactful inquiry and collaboration..
+- Extracts methods: Action-Intention interaction model (no predictive intent inference yet), Knowledge graph of Conceptual Nexus Models (Research Discovery Engine), Proposed full-stack architecture (PDF.js, ElasticSearch, graph DB, Docker)
+- Identifies findings: The document presents ResNei as an AI-augmented research discovery and collaboration environment, and states the project is in early development with working prototypes., It proposes an initial force-directed concept graph, similar to a simplified Obsidian.md structure, deferring clustering and semantic zooming to later work., To counter misplaced trust, the design frames AI outputs as provisional suggestions and the knowledge graph as a navigational aid rather than a definitive map.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

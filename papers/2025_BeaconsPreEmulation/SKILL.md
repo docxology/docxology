@@ -21,13 +21,21 @@ This work addresses topics in **Genetics & Biomedical**: BeaconsPreEmulation.
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Cat-in-environment thought scenario for a simulated agent** — The design is framed around a single agent (a cat) perceiving an environment of objects, each treated as a signal-publishing beacon.
+- **Pattern-scan and labeling procedure with object-type codes** — A numbered formal process scans vision for patterns, ranks them by significance, and assigns labels such as OTSP, OTSA, OTSB and OTSSB by object type.
+- **Beacons table with confirmation and weight pulses** — Sketches building a beacons table, checking nearest object types, then publishing pulses as weights onto the agent's simulation.
+- **Baseline-to-learned epigenetic reaction tables** — Beacon processing trees are encoded in a table that starts from an inherited baseline of reactions and is modified by learning.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Proposes classifying entities on a certainty spectrum, from predictable (walls, rocks) to highly dynamic social entities carrying their own prediction matrix.
+- Introduces a self-social (OTSSA) label so identities can be represented and swapped into social-social simulations in place of another social creature.
+- Notes that biologically objects may first be treated as social and then downgraded, but the sketch deliberately starts bottom-up for an optimized working agent.
+- States the aim of building an agent by attaching any vision model to a labeling regime, which the authors flag as subject to change.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -56,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.14737059`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

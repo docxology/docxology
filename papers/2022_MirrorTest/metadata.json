@@ -59,22 +59,45 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Visual and symbolic analysis",
-      "description": "Applied visual and symbolic analysis approach"
+      "name": "Predictive processing reinterpretation of published mirror-test results",
+      "description": "Applies the predictive processing framework (perceptual inference, active inference, sensory attenuation) to interpret prior mirror-test findings across species.",
+      "evidence": "In this article we apply a predictive processing interpretation to the results of the mirror test in order to offer a novel perspective with which to understand mirror self-recognition and self-directed behavior."
     },
     {
-      "name": "Cross-domain pattern mapping",
-      "description": "Applied cross-domain pattern mapping approach"
+      "name": "'Reflection prediction' construct built on Apps and Tsakiris",
+      "description": "Defines a reflection prediction as optimized high-level priors about one's own visual reflection, following Apps and Tsakiris's free-energy self account.",
+      "evidence": "These optimized high level empirical priors are an individual’s expectations about their own visual reflection and therefore what we refer to here as a “reflection prediction”."
+    },
+    {
+      "name": "Hypothetical error analysis compared against observed symptoms",
+      "description": "Considers possible reflection prediction errors, their effects and corrections, then compares these with symptoms reported in the literature (summarized in Table 1).",
+      "evidence": "one method to investigate this topic is to consider what errors a reflection prediction could have, what the effects of this error would be, and how the brain could correct this error, then compare these predictions with symptoms and behaviors actually observed in various individuals."
     }
   ],
   "key_findings": [
-    "The &quot;mirror test&quot; has been used as a behavioral measure of mirror self-recognition for a variety of species..",
-    "In this article we apply a predictive processing interpretation to the results of the mirror test in order to offer a novel perspective with which to understand mirror self-recognition and self-directed behavior..",
-    "Furthermore, we hypothesize that a &ldquo;reflection prediction&rdquo;, upon which our predictive processing interpretation of the mirror test is built, may also offer a novel perspective to understand how humans locate themselves relative to a mirror, imitate others, and are self-aware from a socia"
+    "The authors propose mirror self-recognition results from sensory attenuation when a reflection is predicted, and mark-directed behavior is active inference to correct reflection prediction errors.",
+    "They argue species that learn to ignore their reflection, not only those showing self-directed behavior, may be capable of mirror self-recognition.",
+    "They argue the mirror test measures self-directed behavior rather than mirror self-recognition.",
+    "They hypothesize that self-directed behavior reflects whether a species faced selection pressure for active inference in front of reflective surfaces, citing the cleaner wrasse.",
+    "They argue a reflection prediction may also support mirror proprioception, imitation and self-awareness, and its errors may relate to atypical forms of these traits; they call the paper largely speculative."
   ],
   "related_papers": [
     "2018_PPPiP",
     "2023_BlakeFuller",
     "2024_CurioCards"
-  ]
+  ],
+  "key_findings_evidence": [
+    "mirror self-recognition is due to sensory attenuation when an individual successfully predicts their reflection and self-directed behavior is active inference to correct reflection prediction errors.",
+    "both species which learn to ignore their reflection in the mirror and species which display self-directed behavior in the mirror are capable of mirror self-recognition.",
+    "the mirror test measures self-directed behavior, not mirror self-recognition, and many individuals or even species who fail to exhibit self-directed behavior may nevertheless be capable of mirror self-recognition",
+    "self-directed behavior in a species is a measurement of whether the species faced a strong enough selection pressure to drive the natural selection of active inference in front of a reflective surface.",
+    "Though grounded firmly in the predictive processing model built by others, this paper is largely speculative and we have offered novel perspectives on a variety of topics that have been discussed for decades or longer."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Conceptual/hypothesis paper with no new data; the clinical links (e.g. BIID, Table 1) are explicitly framed as hypothetical by the authors."
+  }
 }

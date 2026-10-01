@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Pure-Python engine rendering YAML content to a print-ready PDF** — template_newspaper reads a masthead manifest and per-page YAML files and renders a twelve-page large-format newspaper to PDF.
+- **Hybrid drawn-furniture / ReportLab-flowed-body layout strategy** — Fixed furniture is drawn on the canvas first, then body copy flows through ReportLab frames via Frame.addFromList, splitting paragraphs across columns.
+- **Nine single-responsibility modules with a deterministic four-step pipeline** — Editions are produced by Load, Measure, Compose and Emit steps across modules such as geometry, content, typography, figures, layout and engine.
+- **Procedural Pillow halftone scenes and monochrome Matplotlib charts** — Photographic elements are procedural grayscale Pillow scenes with a 45-degree halftone screen; data graphics are black-and-gray Matplotlib charts.
+- **pytest end-to-end render tests, mypy type checking, ruff linting** — A pytest suite tests the pure logic and renders the edition end-to-end, asserting a valid twelve-page PDF at correct trim with no over-set page.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The engine keeps content and code strictly separate, so producing a new newspaper title is a data edit rather than a code change.
+- Drawing furniture first and starting column frames below it lets spanning headlines, standing boxes and automatic text flow coexist on one page.
+- Rendering is deterministic: the same edition manifest always yields a byte-identical paper.
+- The bold weight in a .ttc font collection sits at a face-specific subfont index; an early render produced italic Didot headlines from assuming the wrong index.
+- The test suite reports roughly ninety-five percent line coverage.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

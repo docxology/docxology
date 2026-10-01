@@ -63,17 +63,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Coupling-parameter deformation of the independent policy posterior",
+      "description": "Multi-stream policy posteriors are deformed away from the mean-field product by a scalar coupling strength plus compatibility and preference potentials.",
+      "evidence": "a controlled deformation of the usual independent policy posterior by a scalar coupling strength and explicit compatibility and preference potentials."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Lean 4 formalization: Mathlib proof of the central identity plus stock-Lean boundary",
+      "description": "MathlibProofs machine-checks the S01 free-energy identity with an axiom audit and negative controls; a stock-Lean fragment exposes a 21-row theorem surface as typed contracts.",
+      "evidence": "MathlibProofs/, which machine-checks the central S01 free-energy identity (Theorem 5.1)"
+    },
+    {
+      "name": "pymdp/NumPy POMDP simulations of coupled policy ensembles",
+      "description": "Simulations sweep coupled ensembles, run short and long rollouts, check the projection identity, and produce free-energy, entropy, total-correlation, robustness, and adversarial sidecars.",
+      "evidence": "The empirical companion uses a partially observable Markov decision process (POMDP) simulation layer built with pymdp and NumPy to sweep coupled policy ensembles, run short and long rollouts"
+    },
+    {
+      "name": "Interval brackets on Float residuals for the K=2 decomposition sweep",
+      "description": "Conservative interval brackets check that Float-pipeline residuals fall within a widened high-precision envelope, without counting this as a proof.",
+      "evidence": "conservative interval brackets on the K=2 decomposition sweep certify Float residuals within a widened high-precision envelope"
+    },
+    {
+      "name": "Claim-strength ledger separating exact, parametric, numerical, and analogical claims",
+      "description": "Connections to prior frameworks are tagged as exact recoveries, parameterized embeddings, numerical witnesses, or structural analogies.",
+      "evidence": "The framework keeps a claim-strength ledger that distinguishes exact recoveries, parameterized embeddings, numerical witnesses, and structural analogies."
     }
   ],
   "key_findings": [
-    "<p>Active inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning hori",
-    "Standard discrete active-inference implementations keep this manageable by treating those streams as independent, but that simplification removes the dependencies that make coordinated action possible"
+    "The central result is a free-energy decomposition into per-stream free energy, coupling preference terms, the coupling normalizer, and the information cost of leaving independence.",
+    "The decomposition makes multi-information the explicit surcharge paid by a non-factorized policy posterior.",
+    "Mean-field active inference is recovered as the exact independent case, with other frameworks linked through stated posterior-factorization maps.",
+    "A verified Float-to-real error bridge for the numerical layer remains an explicitly open interface rather than an implied proof.",
+    "The author states the manuscript does not claim a neural, clinical, biological, or quantum implementation; Markov-blanket and tensor-network language is a scoped analogy."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -82,5 +102,19 @@
   ],
   "related_software": [
     "ActiveInferenceInstitute/policy_entanglement"
-  ]
+  ],
+  "key_findings_evidence": [
+    "The central result is a free-energy decomposition that separates ordinary per-stream free energy, coupling preference terms, the coupling normalizer, and the information cost of leaving independence.",
+    "The decomposition makes multi- information the explicit surcharge paid by a non-factorized policy posterior",
+    "Mean-field active inference is the exact independent case.",
+    "The executable numerical layer remains a Float pipeline, so a verified Float↔ℝerror bridge is still an explicitly open interface rather than an implied proof",
+    "the manuscript does not claim a neural, clinical, biological, or quantum implementation, and Markov-blanket and tensor-network language is used as scoped modeling analogy"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Very large file (~590 KB); summary drawn from abstract, Part I overview, and Limitations section."
+  }
 }

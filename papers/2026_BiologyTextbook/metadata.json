@@ -65,17 +65,32 @@
   "type": "Book",
   "methods": [
     {
-      "name": "Generative textbook scaffold methodology",
-      "description": "Applied generative textbook scaffold methodology approach"
+      "name": "Generation from version-controlled Markdown, tested Python, and Mermaid diagrams",
+      "description": "The open textbook is built from Markdown manuscript sources, tested Python modules, programmatically generated figures and rendered Mermaid diagrams.",
+      "evidence": "This open textbook is generated from version-controlled Markdown, tested Python modules, programmatic figures, and rendered Mermaid diagrams."
     },
     {
-      "name": "Modular pedagogical content design",
-      "description": "Applied modular pedagogical content design approach"
+      "name": "Python modules for models such as Michaelis-Menten and Hodgkin-Huxley",
+      "description": "Each quantitative model introduced in a chapter exists as a working module in the codebase, used to generate figures.",
+      "evidence": "Whether we examine Michaelis–Menten enzyme kinetics, Lotka–Volterra predator–prey dynamics, or Hodgkin–Huxley action potentials, the underlying math- ematical model exists as a working module in the accompanying codebase."
+    },
+    {
+      "name": "Manifest-driven organisation from manuscript/config.yaml",
+      "description": "Navigation, scope tables and appendix ordering are generated from a single config.yaml manifest so they stay aligned with the rendered table of contents.",
+      "evidence": "The entries below are generated from manuscript/config.yaml so navigation stays aligned with the rendered table of contents."
+    },
+    {
+      "name": "Five Big Ideas mapped to AAAS Vision and Change core concepts",
+      "description": "The book organises recurring themes as Five Big Ideas aligned pedagogically to the Vision and Change report's five core concepts.",
+      "evidence": "They map pedagogically to the five core concepts in AAAS Vision and Change in Undergraduate Biology Education [vis, 2011]"
     }
   ],
   "key_findings": [
-    "<p><em>Introduction to Biology: A Generative Approach</em> is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, geneti",
-    "Organized as Unit 0 plus Units I&ndash;X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simple models are developed together, so readers can move "
+    "The book covers introductory biology in a systems unit plus Units I-X with 44 core chapters, plus optional laboratories and question banks.",
+    "Each chapter is followed by a companion lab and a 30-item question bank in the same canonical order.",
+    "The author positions active inference and the free energy principle as optional graduate-depth lenses, not part of the introductory canon.",
+    "The text includes a master glossary of 225 terms with etymology and chapter cross-references, and is released under CC BY 4.0.",
+    "The stated pedagogical philosophy is to understand biology by computing biology."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -86,5 +101,19 @@
     "docxology/biology_textbook"
   ],
   "artifact_doi": "10.5281/zenodo.20286478",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20286478"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20286478",
+  "key_findings_evidence": [
+    "the thematic sequence from Unit I — Chemistry of Life: Introduction through Unit X — Ecology: Introduction, and 44 core chapters, plus optional laboratories and question banks in the appendices.",
+    "Question banks: one 30-item question bank follows each chapter in the same canonical order.",
+    "active inference and the free energy principle are graduate-depth lenses for connecting feedback, prediction, and behavior [Friston, 2017, Parr et al., 2022], not part of the introductory-biology canon",
+    "225 terms with etymology and chapter cross-references",
+    "For instructors and independent learners, this supports inspection, extension, and reproducible re-generation of results. The philosophy is: understand biology by computing biology."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "book/report",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Open textbook (5.8 MB extraction); summary drawn from front matter (About This Textbook, Preface, Scope). Findings are stated contributions/design features of the book, not research results. Only front matter was read in detail given file size."
+  }
 }

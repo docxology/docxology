@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Linguistic case as categorical structure: alignment typology as functors, DisCoCat/DisCoCirc composition, bridges to Distributional Active Inference and protocol-level analysis of prompt injection.
+- Extracts methods: Case systems formalized as categories with alignment types as functors, Case-typed DisCoCat/DisCoCirc string diagrams for sentence and discourse, [0,1]-enriched case categories and categorical magnitude
+- Identifies findings: The review captures nominative-accusative, ergative-absolutive, active-stative, tripartite and fluid-S alignment within one algebraic framework linked by alignment functors., Within case-typed string diagrams, passivization reduces to a type permutation (a Swap in the pregroup category)., The author argues prompt injection can be analyzed as ill-typed role promotion, a functorial type violation, as a specification target rather than a guarantee on current LLM APIs.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

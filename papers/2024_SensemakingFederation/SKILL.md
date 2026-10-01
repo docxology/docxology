@@ -20,15 +20,20 @@ This work addresses topics in **Presentations & Media**: sensemaking federation,
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Lightly edited transcript of a recorded Sensemaking Scenius panel** — The work is a readability-edited transcript of a December 5, 2024 online panel; the recording is the reference for verbatim quotes.
+- **Facilitated panel (~45 min) followed by open Q&A with participants** — Kristen Pavle facilitated, Daniel Friedman moderated panelists Park, Parent and Bhatia, with chat questions taken in a later discussion phase.
 
 ## Key Findings
 
 Core contributions and results:
 
-- This transcript comes from an event &ldquo;Sensemaking Federation: Exploring the Frontiers of Digital Innovation&rdquo; on December 5, 2024: https://www.youtube.com/watch?v=5R3VmqrE2Zg , hosted by the Sensemaking Scenius http://welcome.scenius.space ..
-- The panel was facilitated by Kristen Pavle and featured Jack Park, Marc-Antoine Parent, Aaditya (Sonny) Bhatia, and Daniel Friedman, as well as other participants at the meeting..
-- This version of the transcript has been lightly edited for readability..
+- Jack Park describes his vision of a federation of servers acting as digital public libraries indexing knowledge artifacts created in epistemic communities he calls K-Hubs.
+- Marc-Antoine Parent proposes nested, recursive frames as the unit of knowledge to bridge informal stories and formal data for federation.
+- Parent proposes 'forking meaning': concepts found ambiguous get a distinguishing question and branches, producing an update cascade to reduce ambiguity in the federation.
+- Sonny Bhatia argues trust is easier under a final decision authority with set protocols, but must be built slowly in ad hoc communities.
+- Park rejects the premise of a single ontology for sensemaking, describing instead a plurality of ontologies, with IBIS used for structured conversation in SenseCraft.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -56,5 +61,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.14574046`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

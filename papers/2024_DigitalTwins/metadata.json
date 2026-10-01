@@ -33,22 +33,31 @@
   "checked_at": "2026-06-30T23:25:26Z",
   "domain": "Cognitive Security",
   "type": "Paper",
-  "methods": [
-    {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
-    },
-    {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
-    }
-  ],
+  "methods": [],
   "key_findings": [
-    "This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative models that actively min"
+    "The submitters argue Digital Twins are not conceptually new, so lessons on vulnerabilities, exploits and remedies from control theory and cybernetics can be reused.",
+    "They argue a Digital Twin can never perfectly map its physical counterpart and that the cyber-physical gap inevitably grows over time.",
+    "They argue the functional surface of a cyber-physical system is essentially indistinguishable from its threat surface.",
+    "They recommend treating common data and reference management as critical infrastructure for Digital Twin ecosystems.",
+    "They recommend treating cognitive security of Digital Twin interfaces as equally important to cyber- and network-security in the research portfolio."
   ],
   "related_papers": [
     "2020_EmergentTeams",
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
-  ]
+  ],
+  "key_findings_evidence": [
+    "conceptually, Digital Twins are not new – and thus we can learn from the common vulnerabilities, exploits, and remedies developed by prior approaches to closely-related problems in control theory and cybernetics",
+    "a Digital Twin will never be perfectly mapped with its physical counterpart – and the cyber-physical gap between a real-world system and its digital representation will inevitably grow over time.",
+    "In other words, the functional surface of a cyber-physical system is essentially indistinguishable from its threat surface.",
+    "Common data and reference management schemes should be considered critical infrastructure for Digital Twin “ecosystem” implementations.",
+    "Cognitive security (i.e. human factors and ergonomics) related to perception and use of Digital Twin and related interfaces should be treated as equally important to cyber- and network-security"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "commentary/policy",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Policy comment submitted 28 July 2024 to the NITRD/NCO request for comment NITRD-2024-13379 by BlockScience, UW APL IRSIRI, COGSEC and the Active Inference Institute; no methods. METADATA MISMATCH: bibliography lists only 'Cordes, RJ' as author, but the document names five contributing representatives: Michael Zargham, David Sisson, Scott David, Daniel Ari Friedman and R.J. Cordes."
+  }
 }

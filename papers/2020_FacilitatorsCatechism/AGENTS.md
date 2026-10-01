@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: OPORD analysis and catechism-style process design, Organizational sensemaking and high-reliability frameworks
-- Identifies findings: See paper
+- Extracts methods: Historical analysis of Operations Orders from Roman origins to the present, Multidisciplinary synthesis (complexity, HROs, memetics, Active Inference, etc.), Design of a sectioned OPORD template with guiding questions (Heilmeier-style)
+- Identifies findings: The authors conclude that ongoing feedback-driven recalibration, clear alignment on values/narrative/goals/identity, and high-quality distributed sensemaking are critical to HRO success and enhanced by a well-formatted OPORD., From historical adaptations, they identify that structural changes in warfare or unprecedented uncertainty create the need for a new OPORD., The paper proposes the Facilitator's Catechism, an OPORD for Process Facilitators with six sections: Situation, Mission, Potential Avenues of Approach, Milestones, Implications for Outcome, and Administrative/Logistics/Communications.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

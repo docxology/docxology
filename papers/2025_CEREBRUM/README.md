@@ -18,12 +18,21 @@
 
 ## Methods
 
-- Case-enabled reasoning over Bayesian models
-- Active inference with case-based priors
+- **Mapping linguistic case grammar onto generative model roles** — Defines eight cases (NOM, ACC, GEN, DAT, INS, LOC, ABL, VOC), each specifying a relationship between models or between a model and data.
+- **Category-theoretic formalization of case transformations as morphisms** — Treats models with case assignments as objects in a category and case transformations as morphisms between them.
+- **Variational free energy formulation of case transformations** — Applies variational free energy calculations to model inference and structural case transformations, with per-case equations in a mathematical appendix.
+- **KL divergence, Fisher information and Lyapunov functions as metrics** — Names these quantities as the metrics for assessing transformation efficacy and system stability.
+- **Worked example of a homeostatic thermostat model declined across cases** — Illustrates how one thermostat model plays different functional roles in each case (e.g. predicting in NOM, being optimized in ACC).
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- Introduces CEREBRUM, which treats models as case-bearing entities, like declinable nouns, to give a formal linguistic-type calculus for model use and transformation.
+- Frames CEREBRUM as integrating cognitive systems modeling, Active Inference, linguistic case systems and intelligence production.
+- Describes nominative-accusative, ergative-absolutive and tripartite alignment patterns for organizing model relationships.
+- Proposes speculative novel cases beyond traditional grammar, including conjunctive, recursive and metaphorical cases.
+- Releases the code that generates the paper as open source on GitHub as a 1.0 milestone.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

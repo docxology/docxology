@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Transcriptomic sequencing and assembly, Coding sequence evolution analysis, Comparative genomics of social insects
-- Identifies findings: See paper
+- Extracts methods: Ten RNA-Seq experiments across novel and conserved honey bee tissues, Illumina HiSeq 2000 sequencing with Tophat/bowtie2, HTSeq, and EdgeR, BLASTx against 71 genomes to classify taxonomically restricted genes
+- Identifies findings: For novel adult physiological functions, positively selected tissue-specific genes of high expression underlie novelty by conferring specialized cellular functions., Positively selected genes, whether TRGs or conserved genes, are the least connected genes within gene expression networks., TRGs are strongly associated with novel functions and tissues, and much less with conserved tissues and functions.
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR

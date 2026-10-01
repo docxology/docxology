@@ -25,21 +25,36 @@
   ],
   "methods": [
     {
-      "name": "Experimental paradigm design for relational improvement",
-      "description": "Applied experimental paradigm design for relational improvement approach"
+      "name": "Definition and practice description of Partner Pen Play in Parallel",
+      "description": "Specifies PPPiP as two people simultaneously drawing on one sheet with pens, and outlines how sessions begin, proceed, and end.",
+      "evidence": "PPPiP is the act of two people simultaneously drawing on one piece of paper. Partners sit across from each other, or side by side if permitted by handedness."
     },
     {
-      "name": "Mixed-methods analysis of partnered interaction",
-      "description": "Applied mixed-methods analysis of partnered interaction approach"
+      "name": "Interdisciplinary synthesis from art therapy, sexology, neuroscience, aesthetics",
+      "description": "In the absence of direct studies, the authors synthesize prior research to argue a plausible scientific basis for PPPiP.",
+      "evidence": "As there are currently no studies that directly test the neural or psychological efficacy of PPPiP, here we synthesize research from various fields to describe a plausible scientific basis for PPPiP"
     },
     {
-      "name": "Arts-based research methodology",
-      "description": "Applied arts-based research methodology approach"
+      "name": "Mapping PPPiP onto Wadeson's five-element art therapy framework",
+      "description": "Re-enumerates Wadeson's five advantages of art therapy (Immediate, Genuine, Spatial Expression, Permanent, Shared Pleasure) and checks PPPiP against them.",
+      "evidence": "Wadeson (2010, p. 401) presents five advantageous aspects of art therapy relative to traditional couples therapy."
+    },
+    {
+      "name": "Free Energy Principle framing of partner modeling (FEPPPPiP)",
+      "description": "Interprets joint drawing as building a generative model of the partner and as collective self-evidencing of the relationship.",
+      "evidence": "PPPiP is an exercise in strengthening one’s neural representation of a partner."
+    },
+    {
+      "name": "Appendix of example drawings by the authors",
+      "description": "Presents author-made examples of the two PPPiP categories, fontplay and pure abstraction.",
+      "evidence": "In the Appendix to this paper, we present several examples of fontplay (Appendix A) and pure abstraction (Appendix B)."
     }
   ],
   "key_findings": [
-    "Healthy romantic relationships contribute to human physical health and emotional well-being..",
-    "Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on...."
+    "The authors conclude PPPiP shares all five characteristics hypothesized to make art therapy effective in marital contexts.",
+    "They propose a model in which PPPiP synergistically activates motor and cortico-limbic circuits, supported by imaging evidence from improvisational and aesthetic contexts.",
+    "PPPiP is distinguished from traditional art therapy as less clinically oriented, with fewer external constraints and direct integration of art-making with relationship co-creation.",
+    "The authors predict greater neural synchrony between partners than strangers, and in PPPiP versus isolated tandem drawing, as a testable future direction."
   ],
   "related_papers": [
     "2022_MirrorTest",
@@ -48,5 +63,18 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.3390/arts7030039",
-  "doi_url": "https://doi.org/10.3390/arts7030039"
+  "doi_url": "https://doi.org/10.3390/arts7030039",
+  "key_findings_evidence": [
+    "Thus we conclude that PPPiP shares all five of the implicit qualitative characteristics that are hypothesized to make art therapy effective in marital contexts",
+    "Evidence from brain imaging in improvisational and aesthetic contexts supports a model in which PPPiP synergistically activates motor and cortico-limbic neural circuits associated with skilled emotive-creative processes.",
+    "Relative to traditional art therapy practices, PPPiP is less clinically oriented, features fewer external constraints, and directly encourages the dynamic integration of artistic creation with relationship co-creation.",
+    "We predict increased neural synchrony between partners than between strangers in all task cases, and increased neural synchrony in PPPiP conditions versus isolated tandem drawing conditions."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Prospective/conceptual article; no empirical data collected. Neural-synchrony claims are proposed predictions, not results."
+  }
 }

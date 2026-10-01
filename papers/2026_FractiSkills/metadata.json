@@ -53,5 +53,53 @@
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-09-24T18:29:58Z"
+  "checked_at": "2026-09-24T18:29:58Z",
+  "methods": [
+    {
+      "name": "Four-stage discover-render-publish-research pipeline built on Skillarum v0.2.0",
+      "description": "Normalizes every reachable page of a website into one SKILL.md-style skill, with each stage a separately testable module.",
+      "evidence": "The pipeline is four stages — discover →render →publish →research — each a separate testable module under src/fractiskills/, orchestrated by thin scripts and a fractiskills CLI."
+    },
+    {
+      "name": "Sitemap-union-crawl discovery with canonical alias resolution",
+      "description": "Unions the declared sitemap with a bounded, robots-respecting BFS crawl, deduplicating URLs by canonical or final post-redirect identity.",
+      "evidence": "The union — sitemap ∪crawl, deduplicated by canonical/final URL — is persisted as the page inventory"
+    },
+    {
+      "name": "Declared same-origin JSON augmentation for client-rendered pages",
+      "description": "An AugmentedGenerator retrieves documents behind client-rendered shells from reviewed endpoints and stamps per-fetch receipts.",
+      "evidence": "An AugmentedGenerator keeps Skillarum’s deterministic skill body but retrieves client-rendered documents from reviewed, same-origin JSON endpoints, stamping per-fetch receipts into metadata and artifacts"
+    },
+    {
+      "name": "Case study: crawl of the SS Vibelandia Omniversal Canvas website",
+      "description": "Applies the pipeline to the SS Vibelandia site, which mixes static pages, client-rendered readers, JSON catalogs and redirect stubs.",
+      "evidence": "The subject corpus is the SS Vibelandia Omniversal Canvas at https://www.ssvibelandiaquestfest24x365.com/"
+    },
+    {
+      "name": "Token-bound manuscript statistics with per-page fetch receipts",
+      "description": "Every reported statistic resolves against a generated data contract; each page carries URL, timestamp and SHA-256 hash.",
+      "evidence": "every statistic in this manuscript is emitted as a token that must resolve against a machine-generated data contract, and every page carries a fetch receipt — URL, timestamp, SHA-256 content hash, and augmentation status"
+    }
+  ],
+  "key_findings": [
+    "The run produced a corpus of 405 pages from 53 sitemap URLs, in 12 sections and 405 skills totaling 497896 words.",
+    "Sitemap-only ingestion would have missed 88.9% of the corpus: 360 of 405 pages were found only by the crawl, including all Ship-Blog and Voyage content.",
+    "Augmentation succeeded in 169 of 173 attempts, with the 4 failures recorded as receipts rather than dropped.",
+    "Augmented skills had a median of 1824 words versus 486 for static pages, a 3.8x ratio.",
+    "The modal BFS depth was 4, holding 53% of pages, with the deepest page at depth 5."
+  ],
+  "key_findings_evidence": [
+    "The resulting corpus covers 405 pages from 53 sitemap URLs, organized into 12 sections and 405 skills totaling 497896 words (3887524 characters).",
+    "is 88.9%: 360 of 405 pages exist only because the crawl followed links the sitemap does not enumerate — including the entire Ship-Blog archive and all Voyage content.",
+    "was attempted 173 times and succeeded 169 times (1988848 document characters retrieved), with 4 failures recorded as receipts.",
+    "augmented skills have a median of 1824 words versus 486 for static pages, a ratio of 3.8×.",
+    "gives the modal depth depth 4 holding 53% of all pages, with the deepest page found at depth 5."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Software/methods paper reporting a single live run; results are descriptive corpus statistics for one website snapshot."
+  }
 }

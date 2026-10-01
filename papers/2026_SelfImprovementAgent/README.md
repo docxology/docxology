@@ -18,11 +18,19 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Meta -> Target -> Feedback three-agent SIA loop** — The harness cycles a meta agent that seeds a target agent, the target run on public data, and a feedback agent that reads private metrics to propose the next generation.
+- **Public/private task split with deterministic reference baseline** — Each task separates agent-visible data and instructions from held-out evaluation labels, plus a deterministic reference target agent.
+- **Fixture-replay determinism contract with opt-in live mode** — By default generations replay recorded fixtures so CI never runs generated code or calls LLM APIs; a flag enables bounded subprocess execution with optional Ollama feedback.
+- **mini_classify single-feature threshold classifier task** — The bundled exemplar task is a threshold classifier on one feature column, evaluated over 3 generations on 6 held-out samples.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- In the bundled fixture-replay run, final accuracy on mini_classify was 0.8333 over 6 held-out samples after 3 generations.
+- Accuracy rose from the first to the final generation by a metric delta of 0.3333 in the fixture replay.
+- template_sia shows the SIA harness contract can be embedded in the Research Project Template without vendoring upstream orchestration code, split into an infrastructure layer and a project layer.
+- The author states the fixture-replay metrics validate wiring only and are not evidence of state-of-the-art self-improvement.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

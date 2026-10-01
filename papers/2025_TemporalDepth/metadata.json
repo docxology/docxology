@@ -38,17 +38,32 @@
   ],
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Framework combining FEP, nonlinear dynamics, clinical and neurobiology views",
+      "description": "The authors build a model of dissociation by combining a first-principles (FEP/TAME) perspective with dynamical systems, clinical and neurobiological perspectives.",
+      "evidence": "This framework combines a first-principles-based perspective with nonlinear dynamical systems, clinical, and neurobiological perspectives."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Self modelled as a hierarchical component of the organism's generative model",
+      "description": "Using TAME and the Free Energy Principle, the Self is defined as part of a generative model with a Core Self and peripheral layers bounded by informational Markov blankets.",
+      "evidence": "We see the Self as a component of a system’s generative model that"
+    },
+    {
+      "name": "Attractor-landscape and phase-transition description of Self regimes",
+      "description": "Health is cast as a point-attractor regime ('I am me'), with trauma potentially causing a phase transition to unstable or chaotic regimes.",
+      "evidence": "The system’s change from one regime to another can be described as a phase transition."
+    },
+    {
+      "name": "Literature analysis of co-occurring temporal depth collapse and dissociation",
+      "description": "Lacking an experimental design for humans, the authors rely on published literature showing co-occurrence as indirect illustration of the thesis.",
+      "evidence": "In the absence of the experimental design to prove or falsify our hypothesis for humans, we are left with the analysis of the literature where temporal depth collapse and dissociative experiences co-occur."
     }
   ],
   "key_findings": [
-    "develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization..",
-    "Using Active Inference, we formalize how subjective temporal experience i...."
+    "The authors propose that a substantial change in 'temporal depth' can be a common, causal factor in dissociative episodes of any etiology.",
+    "Voluntary contractions of temporal depth (flow, meditation) are framed as healthy, while involuntary collapses are pathological and may indicate memory-system dysfunction.",
+    "Clinically reported emotional flattening is mapped to top-down lowering of precision on affective prediction errors between the Core Self and peripheral Self.",
+    "Prolonged inescapable stress is described as disintegrating the Self into components with smaller cognitive light cones, accompanied by temporal depth collapse.",
+    "The authors defer empirical data, a computer simulation, and therapeutic implications to planned follow-up papers."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -57,5 +72,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.3389/fpsyg.2025.1585315",
-  "doi_url": "https://doi.org/10.3389/fpsyg.2025.1585315"
+  "doi_url": "https://doi.org/10.3389/fpsyg.2025.1585315",
+  "key_findings_evidence": [
+    "We propose that a substantial change in the parameter we call “temporal depth” can be a common factor in dissociative episodes of any etiology, moreover, we consider such a change to have causal power.",
+    "Involuntary collapses of temporal depth, however, are pathological, and may indicate a dysfunction in an underlying memory system.",
+    "In FEP terms this corresponds to the top-down lowering of precision associated with affective prediction error messages.",
+    "Such experience is bound to cause the Self’s disintegration – its breakdown into a collection of components, each with a smaller cognitive light cone.",
+    "In the follow-up series of papers, we will provide empirical data supporting the collapse of temporal depth in various kinds of dissociative experiences, a computer simulation that would test this model’s computational components"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Theoretical/hypothesis paper; no new data or simulation are reported here. The Summary states the authors 'have shown from multiple perspectives' that temporal depth collapse causes dissociation, but the body notes the supporting evidence is correlational."
+  }
 }

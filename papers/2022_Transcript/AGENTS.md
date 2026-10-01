@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Transcript of two GuestStream sessions with Mark Solms, Solms's ten-claim slide-led presentation with interleaved Q&A, Clinical neurological cases discussed as evidence
+- Identifies findings: Solms asserts that affect is the foundational form of consciousness and that affect is intrinsically conscious., Solms argues, citing hydranencephalic children, that the cortex as seat of consciousness and feeling has to be dismissed., Solms argues affect is not the same as interoceptive inference (distinguishing his view from Anil Seth's), because many interoceptive perceptual states are not affective.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

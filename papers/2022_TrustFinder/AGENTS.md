@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: There is a broadly recognized need for better situational awareness within the information environment.., Each year, millions of articles, books, documents, and datasets are published.., Amidst this flood of information, even those with significant experience and expertise in the knowledge economy are struggling to evaluate and vet claims..
+- Extracts methods: Design recommendations built on expert feedback to UW APL VIEE program, Object model of 10 informational classes (Claims, Claim Combinators, etc.), Set-cardinality reputation metrics with one decay-based score
+- Identifies findings: The report recommends TrustFinder, a sociotechnical system combining annotation, argument representation and crowdsourcing so users can find trusted sources and assess claims., It recommends platform-level governance features be added only when requested by affected communities rather than imposed on all users., It recommends TrustFinder take a facilitatory rather than authoritative role in how researchers adjust and access trust signals.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

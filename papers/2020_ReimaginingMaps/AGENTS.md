@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Concept white paper responding to the NGA 'Reimagining Maps' Polyplexus incubator, Survey of the current geospatial problem space and its key challenge areas, Cross-field review of 'maps' in fields adjacent to cartography
+- Identifies findings: The authors conclude that across fields and history, mappers face similar challenges: integrating multimodal data, representing uncertainty, user customization, and designing for action rather than archiving., Across the mapping domains reviewed, the authors found the main cutting-edge limitation was the ability to integrate data rapidly, not data availability., They propose BOLTS: data specifications reasonable for Business, Operational, Legal, Technical, and Social use-cases.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

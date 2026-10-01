@@ -1,138 +1,210 @@
 # Full Text: template_pitch_deck: Reproducible, Validated Pitch-Deck Generation
 
-> Extracted from `template_template_pitch_short.pdf`
-
-> 12 figures extracted to `images/`
+> Extracted from `Friedman_2026_Templatepitchdeck_66941950.pdf`
 
 ---
 
 ## Page 1
 
-A template/ approach to
-Reproducible Generative Research
-Research infrastructure that documents itself — a case study for meta-science
-and science-integrity teams
-
-![page1_img1.png](images/page1_img1.png)
+template_pitch_deck: Reproducible, Validated
+Pitch-Deck Generation
+Short/Medium/Long PDF+PPTX decks from one token-resolved content source
+Daniel Ari Friedman
+Active Inference Institute
+daniel@activeinference.institute
+ORCID: 0000-0001-6232-9096
+DOI: 10.5281/zenodo.21281509
+2026-07-08
 
 ## Page 2
 
-The problem
-• Research groups publish claims about their own tools and pipelines that no
-one outside the team can re-check.
-• Manuscripts describing infrastructure go stale the moment the infrastructure
-changes underneath them.
-• Reproducibility efforts usually stop at the data and code layer — the
-documentation layer is still hand-maintained and drifts silently.
-
-![page2_img1.png](images/page2_img1.png)
+Contents
+1
+Abstract
+2
+2
+Introduction
+3
+3
+Deck Rendering Architecture
+4
+3.1
+Content model
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+3.2
+Two renderers, one model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+3.3
+Project-side content
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+4
+Content and Validation
+5
+4.1
+The flagship pitch
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+4.2
+Token resolution
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+4.3
+Cliché lint . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+5
+Reproducibility
+6
 
 ## Page 3
 
-What template_template is
-• A manuscript that is generated FROM the repository it describes, not written
-ABOUT it from memory.
-• Every metric in the paper — module counts, test counts, pipeline stages — is
-computed live by template_template's own introspection code.
-• One of 19 public exemplar templates in the same monorepo, each
-independently tested and coverage-gated.
-Source: infrastructure/project/public_scope.py
-
-![page3_img1.png](images/page3_img1.png)
+1
+Abstract
+Research groups routinely need to pitch their work — to funders, partners, or collaborators — yet pitch
+decks are almost never treated as reproducible research artifacts: they are hand-assembled in proprietary
+slide tools, contain unverifiable claims, and cannot be regenerated when the underlying facts change. templ
+ate_pitch_deck closes that gap. It generates six artifacts from one token-resolved content source — short,
+medium, and long decks, each in both PDF and PPTX — with every numeric claim traced back to a live
+introspection of the repository it describes, every {{TOKEN}} substitution verified to have actually landed,
+and every sentence checked against a denylist of pitch-deck clichés.
+The flagship content pitches template_template, this monorepo’s own autopoietic meta-project, to a meta-
+science and science-integrity audience — the kind of pitch an organization like the Active Inference Institute
+or COGSEC would actually hand to a funder. The rendering engine itself is new, reusable infrastructure:
+infrastructure/rendering/slide_deck.py (ReportLab, PDF) and infrastructure/rendering/pptx
+_deck.py (python-pptx) both consume the same DeckContent model, so a PDF and a PPTX built from
+identical content carry identical slide counts and identical text — verified by direct read-back of both file
+formats, not by inspection.
+Keywords: pitch deck, slide generation, reproducible research communication, meta-science infrastructure,
+token validation, PPTX, PDF rendering.
+2
 
 ## Page 4
 
-How it works
-• src/template_template/introspection.py scans infrastructure/ modules, the
-pipeline DAG, and the public project roster.
-• metrics.py turns that scan into a dictionary of ${variable} values;
-inject_metrics.py substitutes them into the manuscript text.
-• Re-running the pipeline regenerates the paper from current repository state —
-the citation and the artifact cannot drift apart.
-
-![page4_img1.png](images/page4_img1.png)
+2
+Introduction
+Every other public exemplar in this monorepo renders a manuscript: prose, figures, citations, a combined
+PDF. None of them render a pitch — a short-form, persuasion-oriented artifact whose job is not to document
+a method but to move an audience to a decision. Pitch decks live outside the repository’s reproducibility
+guarantees entirely: built by hand in proprietary tools, their claims untethered from any generator, their
+content unchecked for the boilerplate language (“synergy,” “disruptive,” “10x”) that makes a real pitch land
+badly with a sophisticated audience.
+template_pitch_deck treats a pitch deck the same way this repository treats a manuscript: as a build
+artifact with a single source of truth, a validation gate, and a reproducibility guarantee. Three properties
+make that possible.
+One content source, six artifacts. manuscript/deck_content_{short,medium,long}.yaml define the
+slide-by-slide narrative at three lengths; manuscript/deck_tokens.yaml supplies the facts. scripts/ren
+der_decks.py resolves tokens once and calls both renderers — infrastructure.rendering.slide_deck
+.render_pdf and infrastructure.rendering.pptx_deck.render_pptx — against the identical resolved
+content, so PDF and PPTX cannot drift from each other.
+Facts, not fabrication. Every numeric claim in deck_tokens.yaml about the pitch subject (template_te
+mplate) is generated from a live read of that project’s own README.md/AGENTS.md or the repository’s public
+exemplar roster — never hand-typed, never a plausible-sounding invented metric. src/token_resolution.
+py raises loudly if any {{TOKEN}} in the content source has no corresponding resolved value, and a rendered
+artifact’s extracted text is checked to contain zero leftover {{ literals.
+Cliché is a lint, not a vibe. src/cliche_lint.py runs a word-boundary denylist of pitch-deck stock
+phrases over every resolved slide before render. A pitch that reads as generic — regardless of how factually
+accurate it is — fails the same way an uncovered line of code fails a coverage gate.
+The remainder of this manuscript covers the deck-rendering architecture (sec. 3), the validation model (sec. 4),
+and the reproducibility guarantees (sec. 5) that let uv run python scripts/render_decks.py --project
+templates/template_pitch_deck produce the same six files, byte-for-byte, on any machine with this repo
+checked out.
+3
 
 ## Page 5
 
-Two-layer architecture, at a glance
-Source: CLAUDE.md
-
-![page5_img1.png](images/page5_img1.png)
-
-![page5_img2.png](images/page5_img2.png)
+3
+Deck Rendering Architecture
+3.1
+Content model
+infrastructure/rendering/slide_deck.py defines the format-agnostic content model shared by both
+renderers:
+• Slide — one slide’s title, bullets, an optional speaker-notes string, an optional local figure path, and
+a kind (title, section, or content).
+• DeckContent — a deck title/subtitle plus an ordered tuple of Slide.
+• SlideBudget — the three published lengths (SHORT ≤10 slides, MEDIUM ≤22, LONG ≤45) and filte
+r_deck_for_budget, a pure function that truncates a deck to a budget without mutating slide order
+or content.
+3.2
+Two renderers, one model
+infrastructure/rendering/slide_deck.render_pdf draws each slide directly with ReportLab’s canvas
+API onto a 16:9 page — no LaTeX/pandoc dependency, following the same “project needs pixel-level layout
+control” reasoning that led template_newspaper to a hand-written ReportLab engine, but implemented as
+a generic, project-agnostic format renderer (like infrastructure/rendering/docx_renderer.py or epu
+b_renderer.py) rather than a project-owned layout engine, because a slide deck — unlike a newspaper’s
+column geometry — is a reusable output shape any future project can consume.
+infrastructure/rendering/pptx_deck.render_pptx builds the identical slide sequence with python-pptx
+(an opt-in dependency: uv sync --group rendering-pptx), matching title/section/content slide handling
+1:1 with the PDF path. Both renderers are exercised by tests/infra_tests/rendering/test_slide_de
+ck.py and test_pptx_deck.py, including a direct parity test that renders the same DeckContent through
+both paths and asserts the PDF page count equals the PPTX slide count.
+3.3
+Project-side content
+projects/templates/template_pitch_deck/src/ holds only pitch-deck-domain code — loading manuscr
+ipt/deck_content_*.yaml into DeckContent objects, resolving {{TOKEN}} values, and linting for cliché —
+never layout/drawing code. scripts/render_decks.py is the thin orchestrator that ties content loading,
+token resolution, cliché linting, and the two infra renderers together into the six published artifacts under
+output/{pdf,pptx}/.
+4
 
 ## Page 6
 
-Proof, not adjectives
-130 tests
-99.37% coverage on template_template's own source — the same gate
-every exemplar in the repo must pass.
-Source: docs/_generated/COUNTS.md
-
-![page6_img1.png](images/page6_img1.png)
+4
+Content and Validation
+4.1
+The flagship pitch
+The shipped content pitches template_template — this monorepo’s autopoietic meta-project, which intro-
+spects the repository’s own architecture and regenerates its manuscript from live counts — to a meta-science
+and science-integrity audience. Every length follows the same arc: the problem (research communication
+and reproducibility are under-tooled), the solution (a two-layer, thin-orchestrator monorepo with a 90%/60%
+coverage floor, no-mocks testing, and multi-platform publication), proof (real, currently-measured facts: ex-
+emplar count, coverage floors, the publishing surface template_template itself already reaches), and an
+ask. Medium and long variants add landscape, architecture, and roadmap detail; long adds a full gover-
+nance/confidentiality walkthrough and an appendix.
+4.2
+Token resolution
+src/token_resolution.py implements the same {{TOKEN}} convention used by infrastructure/renderi
+ng/manuscript_injection.py (\{\{[A-Z][A-Z0-9_]*\}\}), scoped to manuscript/deck_content_*.ya
+ml instead of manuscript/*.md. resolve_tokens raises if any token in the content has no matching key in
+manuscript/deck_tokens.yaml — mirroring template_madlib’s test_all_manuscript_tokens_are_gen
+erated pre-substitution coverage check, adapted to deck content. scripts/audit_deck_content.py runs
+this check plus the cliché lint in one pass and exits non-zero on either class of failure; both failure modes are
+proven to actually fire (a deliberately-broken fixture triggers each) before the real content is checked clean.
+4.3
+Cliché lint
+src/cliche_lint.py maintains a word-boundary-safe denylist of pitch-deck stock phrases (“synergy,” “dis-
+rupt,” “10x,” “game-changing,” “rocket ship,” “paradigm shift,” and more).
+It is checked against every
+resolved slide across all three lengths as part of the same audit script, and — like the token check — is
+proven to fire on a deliberately cliché-laden sentence before the real content’s cleanliness is trusted.
+5
 
 ## Page 7
 
-Already public
-• Concept DOI 10.5281/zenodo.20419007, 9 durable publication records already
-on file: Zenodo, GitHub, PyPI (sandbox), IPFS, Software Heritage, GitHub
-Pages, Netlify, Hugging Face, OSF.
-• Licensed Apache-2.0 — the introspection code, not only the prose, is available
-for a science-integrity team to audit directly.
-Source: projects/templates/template_template/docs/manuscript/config.yaml
-
-![page7_img1.png](images/page7_img1.png)
+5
+Reproducibility
+scripts/render_decks.py is deterministic: given the same repository state (manuscript/deck_content
+_*.yaml, manuscript/deck_tokens.yaml, and the live facts src/deck_tokens.py reads from template
+_template’s own files and the public exemplar roster), two consecutive runs produce byte-identical PDF
+and PPTX output. No wall-clock timestamps appear in slide content; the only place a generation time
+is recorded is deck metadata, following the STEGANOGRAPHY_DETERMINISTIC-style convention already used
+elsewhere in this repository for reproducible builds.
+uv run python scripts/render_decks.py
+# →output/pdf/template_template_pitch_{short,medium,long}.pdf
+# →output/pptx/template_template_pitch_{short,medium,long}.pptx
+uv run pytest projects/templates/template_pitch_deck/tests/ \
+--cov=projects/templates/template_pitch_deck/src --cov-fail-under=90
+uv run python scripts/audit/check_template_drift.py
+This project participates in the standard multi-project pipeline like any other public exemplar (./run.sh
+--project templates/template_pitch_deck --pipeline --core-only) and requires no LLM/Ollama
+stage — deck content is authored and token-resolved, not generated at render time by a model call, which
+keeps the artifact deterministic and the core pipeline Ollama-optional.
+6
 
 ## Page 8
 
-Why this matters for science integrity
-• A funder or reviewer can clone the repository and regenerate the exact figures
-and counts cited in the manuscript, on their own machine.
-• The same no-mocks, coverage-gated testing discipline that verifies the code
-also verifies the claims made about the code.
-• The pattern generalizes across the whole projects/templates/ folder — all 19
-exemplars, not just one cherry-picked example — follow the identical
-thin-orchestrator, two-layer architecture.
-Source: docs/_generated/active_projects.md
-
-![page8_img1.png](images/page8_img1.png)
-
-## Page 9
-
-Cite this deck
-• This pitch deck (template_template_pitch_short.pdf) is its own exemplar in the
-same monorepo — it has its own source, tests, and citable identity, separate
-from the DOI of the project it pitches.
-• This deck's own DOI: 10.5281/zenodo.21281509.
-• Every slide also carries a QR code to its own standalone, citable page — see
-the deep-linking mechanism described later in the medium and long versions of
-this deck.
-Source: projects/templates/template_pitch_deck/docs/manuscript/config.yaml
-
-![page9_img1.png](images/page9_img1.png)
-
-## Page 10
-
-The ask
-• Adopt this pattern for your own methods papers: bind every reported number
-to the code that produced it, not to a hand-typed table.
-• Pilot it on one existing manuscript in your group before committing to a full
-rewrite.
-• Happy to pair with your team through a first regeneration cycle, if useful — no
-prior engagements to point to yet, this pattern is newly forkable.
-• Open to funding conversations and scoping a consulting engagement for a
-deeper or custom integration — no prior engagements exist yet; this is an
-invitation to talk, not an established offering.
-
-![page10_img1.png](images/page10_img1.png)
-
-## Page 11
-
-Questions
-Research infrastructure that documents itself — a case study for meta-science
-and science-integrity teams
-
-![page11_img1.png](images/page11_img1.png)
+References
+7
 
 
 ---

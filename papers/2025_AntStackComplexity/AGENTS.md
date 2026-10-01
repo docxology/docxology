@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: We present a comprehensive computational complexity and energy analysis framework for the Ant Stack, an integrated biomimetic architecture for embodied artificial intelligence.., Our investigation employs analytical models for contact dynamics physics, sparse spiking neural networks, and active inference to characterize complexity and energy consumption in real-time embodied systems operating at 100 Hz control frequencies.., Energy efficiency has emerged as a critical constraint in embodied AI systems, yet traditional complexity analysis fails to capture the nuanced energy-performance trade-offs inherent in real-world implementations..
+- Extracts methods: Closed-form per-module complexity for AntBody, AntBrain, and AntMind loops, Device-coefficient energy model for compute, memory, spikes, and actuation, Manifest-driven experiments with seeding and bootstrap CIs
+- Identifies findings: AntBody energy showed flat scaling with joint count across J from 6 to 30, making sensors and contact resolution the main efficiency targets., With sparsity ρ = 0.02, AntBrain energy stayed roughly constant across a 16× expansion in sensory channels (64 to 1024)., AntMind energy grew steeply with planning horizon, and real-time operation was reported infeasible beyond a horizon of 15.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

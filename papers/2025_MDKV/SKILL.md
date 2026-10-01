@@ -20,15 +20,23 @@ This work addresses topics in **Computational**: MDKV, Markdown, key-value forma
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **ZIP container with YAML manifest and tracks/ directory of Markdown files** — MDKV defines an .mdkv file as a ZIP archive holding a manifest.yaml index plus one UTF-8 Markdown file per track.
+- **Seven-type track taxonomy (primary, translation, commentary, code, etc.)** — Document layers are separated into typed tracks that are composed into views only at export time.
+- **Python reference implementation split into core, storage, services, and CLI** — The software follows a thin-orchestrator design with separate modules for data model and validation, persistence, search/export, and command-line entry points.
+- **Round-trip export via HTML-comment track headers** — Combined Markdown exports prefix each track with a comment encoding its id, type, and language so attribution can be reconstructed.
+- **Normative MUST/SHOULD conformance requirements and minimal validator** — The paper specifies conformance rules and a base validator checking title, authors, a primary track, track paths, types, and unique ids.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Digital knowledge work increasingly demands documents that are simultaneously multilingual, multi‑audience, and multi‑channel..
-- Traditional single‑file Markdown struggles when the same canonical content must coexist with translations, commentary, references, code exemplars, and revision notes &ndash; each with distinct lifecycles and audiences..
-- This paper introduces MDKV, a simple but rigorous multitrack Markdown container that packages a document&rsquo;s canonical content and auxiliary tracks into a single, portable `.mdkv` file..
+- The paper lists four contributions: a precise model and container format, a modular architecture exposed via CLI and GUI, detailed use cases, and guidance on cryptographic provenance and conformance.
+- Export is designed to be deterministic: order follows the manifest, and identical inputs produce identical outputs.
+- The author lists format limitations, including no built-in encryption or signing and code tracks that are listings rather than runnable notebooks.
+- The paper notes that the reference validator currently checks for a track with id 'primary' rather than the type-level requirement.
+- The paper is itself authored as a Markdown file that renders into a valid MDKV.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -56,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.16790554`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

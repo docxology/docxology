@@ -27,7 +27,12 @@ No paper-specific methods have been summarized yet; see the abstract and the ful
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The letter argues that current LLMs and Transformer models are 'corpus bound', with parameter-setting criteria hidden in an undecipherable stochastic black box.
+- The signatories argue that research in computational neuroscience, biology and physics supports a more nuanced and positive narrative of intelligence than AGI/existential-threat narratives.
+- The letter contends AI need not be monolithic or concentrated in Big Tech to be commercialized and regulated, anticipating distributed, biologically grounded intelligences on mobile devices.
+- The signatories call for a science-based understanding of AI's biological foundations to be given public voice and for interdisciplinary public workshops among legislators, regulators and other stakeholders.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 

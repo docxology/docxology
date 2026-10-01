@@ -20,15 +20,21 @@ This work addresses topics in **Cognitive Security**: Narrative Information Mana
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Synthesis of common features of information systems from KM-type literature** — The authors draw on literature from information-focused disciplines such as knowledge management to compile an initial common set of NIM system features.
+- **Exploratory domain studies in five fields sampled from coauthor experience** — Challenges and ad hoc solutions are examined in personal finance, ancestry research, hybrid cloud security, translational neuroscience and genomics.
+- **Cross-domain comparison of NIM features in the Discussion** — Each common feature (e.g. managing information gaps, situational awareness) is compared across the five domains to identify overlaps and new features.
 
 ## Key Findings
 
 Core contributions and results:
 
-- There are many areas of research defined by their interest in information dynamics related to facilitating organizational sensemaking, such as knowledge management, information management, and library science, and many more areas of research, disciplines, and even hobbies which are facing informatio
-- While all may be concerned with very similar challenges, lack of information exchange and common ontology between these areas may be causing silos, missed opportunities, and potentially even friction among areas..
-- In this paper, we address the need for synthesis and exchange of knowledge, tools, and approaches among various fields by proposing Narrative Information Management (NIM) as a unifying term and framework for the fundamental features and challenges of facilitating collective sensemaking..
+- The paper defines Narrative Information Management as the design, use, implementation and study of systems that manage information to facilitate narrative sensemaking.
+- Domain exploration surfaced four additional NIM features: communication, handling errors and inconsistency, managing trust signals, and social systems engineering and education.
+- Managing information gaps was central in all fields considered, and the defining element of ancestry research.
+- The authors recommend developing common interfaces, theory and data structures rather than a single common tool, since each community has unique needs.
+- They suggest NIM may be most useful as a bridge across disciplines, analogous to complexity theory, rather than as a new separate field.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -56,5 +62,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.5565577`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

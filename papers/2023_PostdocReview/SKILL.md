@@ -20,13 +20,20 @@ This work addresses topics in **Presentations & Media**: postdoctoral review, re
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Review structured by six working areas** — The slide deck organizes 2020-2023 postdoc outputs into Biology, Entomology, Active Inference, Cognitive Security, Meta-Science, and Philosophy & Arts.
+- **GPT-4 (via Perplexity.ai) per-paper summaries** — Each paper was uploaded to GPT-4 via Perplexity.ai with a fixed prompt asking for Context, Contributions, and Implications paragraphs, shown on a Coda website.
+- **Overview followed by 10 highlighted works** — After an overview of all works, the talk presents 10 highlights sorted by working area rather than by relevance.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The review frames the period as an NSF Postdoctoral Research Fellowship in Biology (award 2010290), October 2020 to October 2023.
+- The deck reports 375+ Active Inference livestreams over 2020-2023, with transcripts at the Active Inference Journal, as part of the Active Inference Institute ecosystem work.
+- It highlights Active Inferants (2021) as the first Active Inference model of stigmergic collective behavior and an extensible framework for ant behavior.
+- Beyond research, it reports 230 total drawing livestreams (about 150 in the last three years), plus Synergetics and PaperStreams on a personal channel.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +61,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.8377987`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

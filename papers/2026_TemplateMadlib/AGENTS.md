@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic token injection for manuscript generation, Conditional IMRAD manuscript hydration
-- Identifies findings: See paper
+- Extracts methods: Seeded SHA-256 digest selection of lexicon tokens per slot, YAML config-owned lexicon, slots, and section conditions, Staged pipeline from config validation to hydrated Markdown
+- Identifies findings: With seed 431, the schema expands 22 slot rules into 40 token choices across 10 lexicon categories., The generated plan enabled all 11 manuscript sections and filled 40 token choices, each traced to its variable, category, section and config pointer., Re-running generation with seed 431 and the same lexicon produces the same token plan.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

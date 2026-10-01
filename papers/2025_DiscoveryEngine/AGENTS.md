@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Active Inference
-- Identifies findings: See paper
+- Extracts methods: Template-guided LLM distillation of papers into knowledge artifacts, Encoding artifacts into a high-dimensional Conceptual Tensor, Case study: intelligent soft matter corpus with expert template refinement
+- Identifies findings: Introduces the Discovery Engine as a methodology and conceptual platform for moving from document-centric literature to synthesized, structured knowledge repositories., Proposes that human-interpretable views such as the CNM knowledge graph and semantic vector spaces can be generated from the central tensor representation., In the soft matter case study, the synthesized CNM served as the basis for a collaborative expert-AI perspective outlining challenges and a research roadmap.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

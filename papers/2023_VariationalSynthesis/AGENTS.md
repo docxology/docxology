@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Bayesian mechanics of particular partitions (free energy principle), Two coupled random dynamical systems linked by a renormalisation group, Variational recipe: Bayesian filtering plus stochastic gradient descent on action
+- Identifies findings: The main result is a formulation of adaptive fitness as a path integral of phenotypic fitness, with least-action paths read as inference (phenotypic) and learning (phylogenetic)., The synthesis implies that a population of conspecifics cannot be modelled per se; one must consider populations of distinct natural kinds that influence each other., Genotype and phenotype fitness are both selected through minimisation of the same free energy functional (Bayesian model evidence).
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

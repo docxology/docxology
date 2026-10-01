@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Analysis of Through Active Inference...
+- Extracts methods: Four-fold firstness-to-fourthness conceptual schema, Contrast of analytical 2→3 and generative 4→3 moves
+- Identifies findings: The essay argues that alternating 2→3 analytical and 4→3 generative moves lets systems balance exploitation with exploration and optimization with open-ended creativity., It concludes that cognitive wholeness emerges when explanation and anticipation co-operate in sustained dialogue across scales., The author proposes that self-awareness of crossing the intra-activity threshold is when cognitive science becomes cognitive art.
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR

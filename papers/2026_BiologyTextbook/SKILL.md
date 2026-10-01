@@ -21,14 +21,22 @@ This work addresses topics in **Computational**: Biology.
 
 Primary methods and techniques applied in this work:
 
-- Generative textbook scaffold methodology
-- Modular pedagogical content design
+- **Generation from version-controlled Markdown, tested Python, and Mermaid diagrams** — The open textbook is built from Markdown manuscript sources, tested Python modules, programmatically generated figures and rendered Mermaid diagrams.
+- **Python modules for models such as Michaelis-Menten and Hodgkin-Huxley** — Each quantitative model introduced in a chapter exists as a working module in the codebase, used to generate figures.
+- **Manifest-driven organisation from manuscript/config.yaml** — Navigation, scope tables and appendix ordering are generated from a single config.yaml manifest so they stay aligned with the rendered table of contents.
+- **Five Big Ideas mapped to AAAS Vision and Change core concepts** — The book organises recurring themes as Five Big Ideas aligned pedagogically to the Vision and Change report's five core concepts.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The book covers introductory biology in a systems unit plus Units I-X with 44 core chapters, plus optional laboratories and question banks.
+- Each chapter is followed by a companion lab and a 30-item question bank in the same canonical order.
+- The author positions active inference and the free energy principle as optional graduate-depth lenses, not part of the introductory canon.
+- The text includes a master glossary of 225 terms with etymology and chapter cross-references, and is released under CC BY 4.0.
+- The stated pedagogical philosophy is to understand biology by computing biology.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 

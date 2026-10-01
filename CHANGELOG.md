@@ -5,6 +5,50 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-10-01
 
+- **Evidence-grounded paper summaries (DOC-016 core):** every paper folder
+  that has full text (197 of them) now carries paper-specific Methods (801)
+  and Key Findings (904) extracted from
+  their own `full_text.md`. Each item records a verbatim quote (`evidence`,
+  `key_findings_evidence`) that was mechanically verified against the text
+  before merge, and `summary_provenance` says how it was produced. These
+  replace the domain-template filler and abstract echoes, as well as several
+  "specific" method lists the text did not support (for example, interviews
+  credited with "modeling"). Paper READMEs/SKILLs render the methods as
+  "**name** — description" with a provenance note, and work pages pick them up
+  as their Use Notes. `test_grounded_summary_evidence_occurs_verbatim_in_full_text`
+  re-checks every quote on each run.
+- **Displayed abstracts audited against the paper text:** 70 folders whose
+  abstract disagreed with the Zenodo description or the paper were each judged
+  against the full text, choosing only among the existing abstract, the
+  Zenodo description, or the paper's own abstract copied verbatim. 39 now use
+  the Zenodo description, 13 the paper's own abstract text, 16 are unchanged,
+  and 2 show an explicit "no abstract recorded" note instead of an invented
+  one. Some of the replaced abstracts described a different paper (EvoJump,
+  HoneyBeeGeneExpression, ArgentineAnt, AuBI, GNN, MDKV, VideoEntomology,
+  among others). Separately, 14 journal papers whose stored abstract was a
+  500-character-truncated paraphrase now carry their published abstract,
+  recovered verbatim from the text. The generator's invented fallback
+  ("Research paper on {topic}.") is gone.
+- **Mis-filed source documents removed:** `papers/2018_DopamineForaging`
+  held a byte-identical copy of the 2016 foraging-gene PDF, and
+  `papers/2023_ToComment` held the DRE3 paper (#77, Zenodo 5573947). Their
+  PDFs, extracted text, images, and the borrowed Zenodo fields were removed,
+  because the real documents are not yet archived (DOC-016).
+  `papers/2025_OnTime/full_text.md` contained another paper's text and was
+  re-extracted from its own PDF. `papers/2026_TemplatePitchDeck` had been
+  extracted from an example deck and was re-extracted from the manuscript;
+  `extract_paper_texts.py` now honours a `primary_pdf` metadata field and
+  accepts `--only FOLDER`. Ten folders whose PDFs had never been extracted now
+  have full text. New test: no two paper folders may share an identical source
+  document.
+- **Document-verified authorship for works without a DOI:**
+  `fetch_work_authors.py` accepts `status: "document_verified"`, which
+  requires a source file and a verbatim title-page / edited-by quote.
+  These entries survive registry refreshes and are re-checked by `--check`.
+  It is applied to six works (#28, #44, #71, #79, #89, #93: dissertation,
+  edited volumes, essay, chapter), so 209 of 219 works now list authors.
+- **Figure alt text** on paper pages names the work instead of the folder id
+  and distinguishes slides from pages.
 - **Bibliography accuracy pass (live registry audit):** all 205 catalogued
   DOIs were re-resolved against Crossref/DataCite. Every author list matched
   except eight works with no Authors cell, now filled from verified records

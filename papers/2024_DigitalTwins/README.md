@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative models that actively minimize free energy. The work connects digital twin technology to predictive processing and organizational modeling.
+> Digital Twins are useful enough to be dangerous. US Government Agency interest in funding and facilitating research, development, engineering, and implementation of Digital Twins (alongside factors related to their safe implementation) is therefore both reassuring and urgently necessary. Factors such as trustworthiness, reliability, interoperability, stability, sustainability, and responsible use...
 
 ## Keywords
 
@@ -22,7 +22,13 @@ _No paper-specific methods have been summarized yet; see the abstract and the fu
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The submitters argue Digital Twins are not conceptually new, so lessons on vulnerabilities, exploits and remedies from control theory and cybernetics can be reused.
+- They argue a Digital Twin can never perfectly map its physical counterpart and that the cyber-physical gap inevitably grows over time.
+- They argue the functional surface of a cyber-physical system is essentially indistinguishable from its threat surface.
+- They recommend treating common data and reference management as critical infrastructure for Digital Twin ecosystems.
+- They recommend treating cognitive security of Digital Twin interfaces as equally important to cyber- and network-security in the research portfolio.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

@@ -20,13 +20,23 @@ This work addresses topics in **Cognitive Security**: cognitive security, agent 
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Plan/Build/Teach architecture: registry, definitions, skills tree, AGEINT** — Separates a catalogue registry, canonical per-skill definitions, a harness-facing skills tree, and the AGEINT educational upstream.
+- **Harness-neutral skill contract over a closed set of eight tool verbs** — Each skill may use only neutral verbs (read, search, write, exec, reason, web, delegate, ask), bound per harness through adapters.
+- **Deterministic rendering into Claude, Codex, and Hermes adapters** — Renders each canonical definition into a spec, skill description, workflow, and one adapter per configured harness.
+- **Automated anti-boilerplate per-skill quality audit** — Requires a skill-specific quality bundle and rejects generic or reused negative controls, rubrics, evidence and privacy entries.
+- **Evidence ladder: 28 scenario fixtures and per-skill worked examples** — Checks curated safe and unsafe scenarios against the local router and verifies one reviewed worked example per skill.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The generated catalogue reports one hundred implemented skills across seven taxonomy groups, from Structured Analytic Techniques to Research and Synthesis Methods.
+- The quality gate shows, for the current repository state, that all 100 skills carry group-aware defensive boundaries and skill-specific, non-reused governance entries.
+- The worked-example gate verifies exact 100-skill coverage; the examples are expected-answer shapes, not live model transcripts.
+- The author states the evidence is local conformance only and does not establish operational effectiveness, adversary coverage, user outcomes, or superiority over other libraries.
+- The deterministic gates do not show that a live runtime will select the same skill, use tools correctly, or answer well in the field.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21513316`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

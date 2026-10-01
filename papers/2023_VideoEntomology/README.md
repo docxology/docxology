@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> We examine the transformative impact of video technology on experimental entomology. Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies, and novel experimental paradigms for studying insect behavior. We review current video methods, discuss their applications in entomological research, and identify future directions for...
+> Entomology, the science of insects, has developed over thousands of years of human–insect interactions. As insects exist across essentially all terrestrial surfaces and play various critical ecological roles, theoretical and applied entomology are central research domains for the 21st century and beyond. Recent technological developments, including international accessibility to transparent video...
 
 ## Keywords
 
@@ -18,11 +18,16 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Editorial synthesis of four JoVE entomology protocol articles** — Summarizes four video protocols on Atta ant rearing, honey bee pollen collection, bee tissue histology, and agrochemical effects on queens.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The editorial highlights that Topitzhofer et al.'s pollen pipeline relies on passive mesh collection and low-cost visual identification rather than electron microscopy or metabarcoding.
+- It notes that Fine et al. and Nogueira et al. address colony-level scaling challenges for eusocial insect study in different ways: queen fecundity assays and large-scale leaf-cutter rearing.
+- The authors suggest video presentation of methods may increase their adoptability, proficiency, and reproducibility globally.
+- They propose future directions including expanding beyond ants and bees, using ecological databases, and exploring AR, robotics, and cognitive modeling.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

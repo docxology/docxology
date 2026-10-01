@@ -21,13 +21,21 @@ This work addresses topics in **Active Inference**: TranscriptDiscussions.
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Transcribed ActInf Livestream #048 series (48.0, 48.1, 48.2)** — Transcript of Active Inference Institute livestream discussions of the 2021 paper 'Communication as Socially Extended Active Inference', held September 2, 7 and 14, 2022.
+- **48.0 introductory walkthrough of aims, claims, abstract and roadmap** — In 48.0 Daniel Friedman and Dean Tickles present the paper's aims, claims, abstract and roadmap as an introduction rather than a full review.
+- **Author-participation panel discussions with first author Rémi Tison** — In 48.1 and 48.2 the first author joins Friedman, Tickles and Bleu Knight to answer questions on content, context, shared affordances, and language.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Tison explains that the paper aimed to give ecological and enactive approaches a view of communication that does not rely on content or representation, unlike the transmission view.
+- Tison states that content exists but is not at the basic level of cognition; it must be explained by a theory of communication rather than presupposed.
+- Tison reflects that defining a shared field of affordances as the subset common to two individual fields neglects the autonomy of the interaction dynamics.
+- Tison describes cooperative communication as a way for a group to achieve an optimal grip on the context of their joint action.
+- Tison says the paper ties the conventional nature of language to conventional affordances generated in communicative interaction.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -56,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.7401874`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

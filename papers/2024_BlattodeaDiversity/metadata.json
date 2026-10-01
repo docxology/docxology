@@ -32,17 +32,37 @@
   ],
   "methods": [
     {
-      "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays approach"
+      "name": "Seven Blattodea species spanning solitary cockroaches to OPT and ST termites",
+      "description": "Two cockroaches and five termite species of low (one-piece) and high (separate life type) social complexity were sampled from BAM Berlin lab colonies and populations.",
+      "evidence": "we restricted ourselves to two re- spective laboratory colonies per termite species and two respec- tive laboratory populations per cockroach species."
     },
     {
-      "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis approach"
+      "name": "Hexane extraction and GC-MS/MS profiling of cuticular hydrocarbons",
+      "description": "CHCs from single cockroaches or pools of three termite workers were analyzed by GC-MS/MS and quantified as relative proportions in MassHunter.",
+      "evidence": "Three microliters of the resuspended extract was then injected into a gas chromato- graph coupled with a tandem mass spectrometer (GC–MS/MS)"
+    },
+    {
+      "name": "UPGMA chemical dendrogram on Manhattan distances vs published phylogeny (Mantel test)",
+      "description": "A chemical dendrogram from Manhattan CHC distances was compared with the He et al. (2021) molecular phylogeny using Mantel tests with 9999 permutations.",
+      "evidence": "A Mantel test (Mantel, 1967), conducted with the R package “ade4” (Dray & Dufour, 2007), compared the mo- lecular distances based on the published Blattodea phylogeny with the average Manhattan CHC divergence."
+    },
+    {
+      "name": "HMM-based counting of CHC biosynthesis gene transcripts in whole-body transcriptomes",
+      "description": "HMMs built from orthologs across 17 insect proteomes were searched against the seven species' proteomes with hmmsearch, then verified against Swiss-Prot.",
+      "evidence": "These HMMs were then used to search the proteomes of our seven focal Blattodea species using hmmsearch with a maximum e-­value of 1e−5."
+    },
+    {
+      "name": "Poisson GLM and chi-square tests of transcript and compound counts",
+      "description": "A Poisson GLM compared transcript counts across social complexity levels, and a chi-square test compared transcript counts with CHC compound counts per species.",
+      "evidence": "We used a generalized linear model (GLM) with Poisson family distribution to compare the variation in transcript counts among the levels of social complexity in our tested species"
     }
   ],
   "key_findings": [
-    "This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology.",
-    "Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles."
+    "A total of 134 CHC compounds were identified across the representative termite and cockroach species.",
+    "No consistent pattern of CHC chemical complexity paralleled the levels of social complexity across the studied Blattodea species.",
+    "The chemical dendrogram did not reflect the molecular phylogeny; a Mantel test found no significant correlation between them.",
+    "Total CHC biosynthesis gene transcript counts did not correlate with the total number of CHC compounds detected per species.",
+    "Counts of CHC biosynthesis gene transcripts did not vary systematically by social complexity level."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -51,5 +71,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1002/ece3.70063",
-  "doi_url": "https://doi.org/10.1002/ece3.70063"
+  "doi_url": "https://doi.org/10.1002/ece3.70063",
+  "key_findings_evidence": [
+    "We identified 134 CHC compounds in total from our representa- tive termite and cockroach species (Table S1).",
+    "Overall, we did not find a consistent correlative pattern of CHC-­based chemical complexity paralleling the different levels of social complex- ity in our representative Blattodea species.",
+    "Unsurprisingly, a Mantel test found no signifi- cant correlation between the molecular and chemical phylogeny (r = 0.3971, p = .1291).",
+    "We also found no significant correlation comparing overall CHC biosynthesis gene transcript counts with the total number of CHC compounds detected in each species (χ2 – test, r = 0.12, p = .79;",
+    "counts did not vary systematically by social complexity level (χ2 = 1.11, df = 1, p = .29)"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "empirical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Authors caveat that transcript counts approximate the genomic repertoire only and remain speculative until knockdown studies confirm gene functions; analysis used workers only for termites and did not separate sexes."
+  }
 }

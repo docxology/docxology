@@ -21,13 +21,21 @@ This work addresses topics in **Active Inference**: InteroceptionAsModeling.
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Transcripts of ActInf Livestream #050 sessions (50.0, 50.1, 50.2)** — Records three Active Inference Institute livestream discussions (Oct-Nov 2022) of the Biological Psychology paper 'Interoception as modeling, allostasis as control'.
+- **Background walkthrough by Friedman and Tickles (50.0)** — In 50.0 the hosts reviewed the paper's big questions, aims, abstract and roadmap before later sessions with authors.
+- **Author slide presentation by Eli Sennesh with Jordan Theriault (50.1)** — Paper co-authors presented the model (Section 4: allostasis as stochastic optimal control) and took questions from participants.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- As read in the session, the paper proposes studying allostasis in terms of control theory, with interoception providing performance feedback for allostasis.
+- Sennesh says the motivation was that real biological prior preferences cannot be fixed, raising how much must be learned over development rather than built in.
+- Sennesh summarizes that the model yields a notion of affordance competition via forward simulations of trajectories evaluated over time.
+- Sennesh states that normalizing to probability densities gives a common currency, so the model needs no separate reward currency.
+- Sennesh notes whether interoception is predictively coded below the neck remains an open empirical question.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -56,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.7400708`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

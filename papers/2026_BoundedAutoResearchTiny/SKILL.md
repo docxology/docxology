@@ -20,13 +20,23 @@ This work addresses topics in **Computational**: autoresearch, reproducible rese
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Offline MNIST subset: 2000 train / 500 test images, seed 20260525** — Uses a committed, class-balanced local MNIST subset with recorded provenance hashes; no data are downloaded at runtime.
+- **Bounded candidate search over MLP, softmax, nearest-centroid, patch-attention** — Evaluates at most 4 configured candidates against a nearest-centroid baseline, choosing by test accuracy with deterministic tie-breaks.
+- **Seven-stage AutoResearch pipeline with file-backed ledgers** — Runs 7 configured stages, writing proposal, candidate, run, phase and review ledgers that hydrate manuscript variables.
+- **Safety controls: proposal-only autonomy, no LLM calls, deferred review** — Defaults to proposal_only autonomy, records 0 LLM calls and no cost, never executes generated code, and leaves publication approval to a human.
+- **Statistical diagnostics: Wilson intervals, bootstrap, McNemar, calibration** — Reports Wilson score intervals, deterministic bootstrap intervals, paired discordance tests, Brier score and negative log likelihood.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The loop selected exp-mlp-tanh-64 after evaluating 4 of 5 proposed candidates, raising test accuracy from the 82.6% baseline to 89.4%.
+- Diagnostics report macro F1 of 89.4%, a bootstrap accuracy interval of 86.4% to 92.0%, and top-2 accuracy of 95.6%.
+- The selected candidate was top-ranked in 72.5% of deterministic bootstrap resamples, with exp-mlp-relu-32 as runner-up.
+- The local security attestation passed with 0 checksum mismatches, and readiness passed with review gates deferred to a human.
+- The paper states its contribution is not a new MNIST classifier but a template showing bounded AutoResearch run through a reproducible-paper lifecycle.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20417016`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

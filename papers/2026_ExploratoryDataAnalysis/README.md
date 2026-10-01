@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Synthetic 120-record measurement cohort with a fixed seed** — Analyzes a shipped deterministic CSV of height, weight and resting heart rate across three groups, with designed correlations and a few blank cells.
+- **Listwise deletion with a reported CleaningReport, no imputation** — clean_dataset() drops rows missing any numeric feature and records rows in, remaining and dropped, rather than imputing.
+- **Descriptive statistics, group means and Pearson correlation ranking** — Computes per-column summaries and per-group means, then ranks distinct feature pairs by absolute Pearson correlation via strongest_pairs().
+- **Side-effect-free src/eda library with figure-data preparers** — Library functions return plot-ready frozen dataclasses (histogram bins, heatmap grid, category counts); only the thin script and notebook call matplotlib.
+- **Zero-mock pytest suite, notebook-binding check and >=90% coverage gate** — Tests exercise real data with exact expected statistics, parse the .ipynb to check imports and absence of cell-defined logic, and enforce coverage.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- With the shipped data, four rows with missing values are removed, leaving a complete-case dataset.
+- The correlation ranking recovers the designed strong positive height–weight relationship, with resting heart rate only weakly related.
+- All tests pass with coverage above the 90% project gate and no mocks.
+- The paper states its contribution is procedural: the same tested functions back the notebook, the headless script and the manuscript.
+- Stated limitations: a single small synthetic cohort, listwise deletion only, Pearson correlation only, and static outputs only.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

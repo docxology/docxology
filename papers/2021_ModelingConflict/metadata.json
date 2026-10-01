@@ -50,20 +50,50 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Survey of qualitative and quantitative models of military conflict",
+      "description": "Reviews narrative models (heuristics, military revolutions, generations of warfare), quantitative models (Lanchester, fault trees, DoDAF) and decision models (OODA, Rumsfeld Matrix).",
+      "evidence": "In this paper, we begin by offering a survey of past qualitative and quantitative models of conflict and the insights they provide."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Active Inference Conflict (AIC) model formulated from ActInf",
+      "description": "Applies Active Inference, with expected free energy balancing epistemic and pragmatic value, to frame conflict as multiscale communication, trust and relationship management.",
+      "evidence": "Here we propose a framework for modeling modern multiscale conflict, based upon an application of Active Inference (ActInf)."
+    },
+    {
+      "name": "Qualitative mapping of AIC onto OODA, generations of warfare, BOLTS",
+      "description": "Uses AIC qualitatively to relate entity action loops to OODA, move beyond generations of warfare, and model business, operations, legal, technical and social conflict.",
+      "evidence": "Specifically connecting the AIC model to OODA and GW demonstrated the relevance of integrating previous tactical and strategic frameworks within a single multi-scale formal model."
+    },
+    {
+      "name": "Rumsfeld Matrix analysis of the 'unknown-knowns' quadrant",
+      "description": "Uses Rumsfeld's knowledge quadrants as a lens on inter-organizational conflict to examine the neglected unknown-knowns quadrant and the role of trust.",
+      "evidence": "Using Rumsfeld’s Quadrants, which frame the information spaces and voids of value to organizations, as a lens over conflict"
     }
   ],
   "key_findings": [
-    "We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management"
+    "The survey indicated existing warfare models are underdeveloped for non-kinetic, information-based conflict and are rarely interoperable.",
+    "The authors contend war and politics are both continuations of conflict by other means, revising Clausewitz's dictum.",
+    "They argue prioritizing the neglected unknown-knowns quadrant offers a pathway to multi-scale risk mitigation in online interactions.",
+    "They suggest trust-management frameworks could channel information conflicts into generative 'risk commons' structures rather than discord.",
+    "They recommend treating de-risking as an ongoing process and mining disagreement for value via shared protocols in information-exchange design."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_Transcript"
-  ]
+  ],
+  "key_findings_evidence": [
+    "the survey disclosed that existing warfare models did not have the necessary generalizability to be broadly applicable to",
+    "we contend his famous quote, that “war is the continuation of politics by other means”, is incomplete within this context as it would appear that both war and politics are a continuation of conflict by other means",
+    "We suggest that management of relationship and conflict with a prioritization of the often neglected “unknown-knowns” quadrant provides a pathway to multi-scale risk mitigation and leverage points for human interactions online.",
+    "could attract an increasing subset of information conflicts into generative structures (perhaps best framed as structures which operate in the manner of what might be called a “risk commons”) which can capture value and grow trust, rather than accelerate discord.",
+    "Consider disagreement, inconsistency, and incoherence as events which can be mined for value via shared protocols and standards rather than creating an illusion of security through attempts at their removal."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Conceptual paper; the AIC model is applied qualitatively only. Simulation (e.g. with cadCAD, ForneyLab) is listed as future work, not performed."
+  }
 }

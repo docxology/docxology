@@ -20,15 +20,22 @@ This work addresses topics in **Entomology**: consciousness, ant colony, Ant Col
 
 Primary methods and techniques applied in this work:
 
-- Collective behavior and consciousness theory
-- Multi-agent modeling of ant colony cognition
-- Comparative neuroethological analysis
+- **Forward vs reverse tests, framed as Kuhnian normal vs revolutionary science** — Theories of consciousness are classed as forward tests (classifying arbitrary systems) needing calibration by a reverse test, analogised to normal vs revolutionary science.
+- **The Ant Colony Test (ACT): does a theory allow consciousness in ant colonies?** — The authors define the ACT as a reverse test that checks the internal and external coherence of theories of consciousness against the ant colony.
+- **Applying the ACT to four genres of consciousness frameworks** — The ACT is juxtaposed with neurobiological (structural/functional), behaviorist spatial-awareness, cognitive (emotion/bias), and mathematical (IIT, FEP) frameworks.
+- **Redeployment of published social insect neurobehavioral and ecological evidence** — Existing empirical studies of ant and bee colonies (planning, information transfer, inter-colony interaction) are used to evaluate each framework's predictions.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Neuroanatomical theories exclude colony consciousness a priori, so the ACT suggests they have limited carryover to other species or architectures.
+- Under IIT, the authors argue the colony would likely have a higher Φmax than aggregated individual workers and thus represent a conscious entity.
+- Under the Free Energy Principle, long-term planning, possible counterfactuals and self/non-self modelling might support rudimentary colony self-awareness, though few experiments exist.
+- Since several frameworks predict colony-level awareness, either colonies are aware or current approaches are individually inadequate and collectively inconsistent.
+- The authors remain agnostic on colony consciousness and propose the ant colony as a tractable, ethically manipulable model system for consciousness experiments.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 

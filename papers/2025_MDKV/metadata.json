@@ -59,22 +59,55 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "ZIP container with YAML manifest and tracks/ directory of Markdown files",
+      "description": "MDKV defines an .mdkv file as a ZIP archive holding a manifest.yaml index plus one UTF-8 Markdown file per track.",
+      "evidence": "An .mdkv  is a ZIP archive with a YAML manifest.yaml  and a tracks/  directory of UTF‑8 Markdown files."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Seven-type track taxonomy (primary, translation, commentary, code, etc.)",
+      "description": "Document layers are separated into typed tracks that are composed into views only at export time.",
+      "evidence": "MDKV separates concerns into tracks— primary  (canonical), translation , commentary , code , reference , media_ref , and revision —and composes views at export time."
+    },
+    {
+      "name": "Python reference implementation split into core, storage, services, and CLI",
+      "description": "The software follows a thin-orchestrator design with separate modules for data model and validation, persistence, search/export, and command-line entry points.",
+      "evidence": "mdkv.core : data model and validation mdkv.storage : persistence (read/write .mdkv ) mdkv.services : search and export utilities mdkv.cli : CLI entry points and subcommands"
+    },
+    {
+      "name": "Round-trip export via HTML-comment track headers",
+      "description": "Combined Markdown exports prefix each track with a comment encoding its id, type, and language so attribution can be reconstructed.",
+      "evidence": "When exporting multiple tracks into a single Markdown stream, MDKV prefixes each track with a lightweight HTML comment that encodes track metadata."
+    },
+    {
+      "name": "Normative MUST/SHOULD conformance requirements and minimal validator",
+      "description": "The paper specifies conformance rules and a base validator checking title, authors, a primary track, track paths, types, and unique ids.",
+      "evidence": "The MDKV container is defined by the following MUST/SHOULD requirements:"
     }
   ],
   "key_findings": [
-    "Digital knowledge work increasingly demands documents that are simultaneously multilingual, multi‑audience, and multi‑channel..",
-    "Traditional single‑file Markdown struggles when the same canonical content must coexist with translations, commentary, references, code exemplars, and revision notes &ndash; each with distinct lifecycles and audiences..",
-    "This paper introduces MDKV, a simple but rigorous multitrack Markdown container that packages a document&rsquo;s canonical content and auxiliary tracks into a single, portable `.mdkv` file.."
+    "The paper lists four contributions: a precise model and container format, a modular architecture exposed via CLI and GUI, detailed use cases, and guidance on cryptographic provenance and conformance.",
+    "Export is designed to be deterministic: order follows the manifest, and identical inputs produce identical outputs.",
+    "The author lists format limitations, including no built-in encryption or signing and code tracks that are listings rather than runnable notebooks.",
+    "The paper notes that the reference validator currently checks for a track with id 'primary' rather than the type-level requirement.",
+    "The paper is itself authored as a Markdown file that renders into a valid MDKV."
   ],
   "related_papers": [
     "2023_NSFReporting",
     "2023_NaturalAIBased",
     "2025_AuBI"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Contributions. (i) A precise model and container format with minimal but sufficient validation; (ii) a modular architecture separating model, storage, and services, surfaced via CLI and GUI;",
+    "Export determinism: order is manifest‑driven; identical inputs produce identical outputs.",
+    "No encryption or signing baked in: use external tools for security (see Security and provenance guidance). Not an execution environment: code  tracks are listings, not runnable notebooks",
+    "Implementation note: the reference validator currently checks for the presence of a track with id primary ; this could be aligned to the type‑level requirement in future releases.",
+    "This paper is itself a Markdown file that renders into a valid MDKV."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Software specification paper; no empirical evaluation beyond design trade-off discussion."
+  }
 }

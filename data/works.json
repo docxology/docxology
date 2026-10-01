@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T16:36:04Z",
+  "generated_at": "2026-10-01T18:15:39Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
   "count": 219,
@@ -731,7 +731,10 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2025_ConsciousnessAnts/full_text.md",
-      "authors": []
+      "authors": [
+        "Iennaco, Maria Luiza",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 29,
@@ -1149,7 +1152,10 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2024_CurioCards/full_text.md",
-      "authors": []
+      "authors": [
+        "Friedman, D. A.",
+        "Ripley, O. C."
+      ]
     },
     {
       "num": 45,
@@ -1604,12 +1610,12 @@
       "doi": "10.1016/j.plrev.2023.06.002",
       "docs_path": "papers/2023_ToComment/",
       "has_paper_folder": true,
-      "has_full_text": true,
-      "has_images": true,
+      "has_full_text": false,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2023_ToComment/full_text.md",
+      "full_text_url": "",
       "authors": [
         "Tickles, Dean",
         "Friedman, Daniel"
@@ -1831,7 +1837,11 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2022_InformationCommons/full_text.md",
-      "authors": []
+      "authors": [
+        "David, Scott",
+        "Cordes, R.J.",
+        "Friedman, Daniel A."
+      ]
     },
     {
       "num": 72,
@@ -2024,7 +2034,10 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2021_NarrativeEcosystems/full_text.md",
-      "authors": []
+      "authors": [
+        "Cordes, Richard J.",
+        "Friedman, Daniel A."
+      ]
     },
     {
       "num": 80,
@@ -2266,7 +2279,10 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2020_GreatPreset/full_text.md",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel A.",
+        "Cordes, Richard J."
+      ]
     },
     {
       "num": 90,
@@ -2362,7 +2378,9 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2019_PhDDissertation/full_text.md",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 94,
@@ -2528,12 +2546,12 @@
       "doi": "10.1016/j.isci.2018.09.001",
       "docs_path": "papers/2018_DopamineForaging/",
       "has_paper_folder": true,
-      "has_full_text": true,
-      "has_images": true,
+      "has_full_text": false,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "/papers/2018_DopamineForaging/full_text.md",
+      "full_text_url": "",
       "authors": [
         "Friedman, Daniel A.",
         "Pilko, Anna",
@@ -4612,7 +4630,7 @@
       "docs_path": "papers/2026_TemplatePitchDeck/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -5212,12 +5230,12 @@
       "doi": "10.5281/zenodo.22134545",
       "docs_path": "papers/2026_CognitiveIntegrityFramework/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_CognitiveIntegrityFramework/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -5235,12 +5253,12 @@
       "doi": "10.5281/zenodo.22134547",
       "docs_path": "papers/2026_CognitiveIntegrityFramework2/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_CognitiveIntegrityFramework2/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -5281,12 +5299,12 @@
       "doi": "10.5281/zenodo.22663906",
       "docs_path": "papers/2026_Skillarum/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_Skillarum/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -5304,12 +5322,12 @@
       "doi": "10.5281/zenodo.22712650",
       "docs_path": "papers/2026_FractiSkills/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_FractiSkills/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -5327,12 +5345,12 @@
       "doi": "10.5281/zenodo.22754351",
       "docs_path": "papers/2026_AgenticSecurityOperating/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_AgenticSecurityOperating/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -5350,12 +5368,12 @@
       "doi": "10.5281/zenodo.22816187",
       "docs_path": "papers/2026_JevPractice/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_JevPractice/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -5373,12 +5391,12 @@
       "doi": "10.5281/zenodo.22833491",
       "docs_path": "papers/2026_GreenLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_GreenLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -5396,12 +5414,12 @@
       "doi": "10.5281/zenodo.22833489",
       "docs_path": "papers/2026_BlueLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_BlueLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -5419,12 +5437,12 @@
       "doi": "10.5281/zenodo.22833487",
       "docs_path": "papers/2026_VioletLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_VioletLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -5442,12 +5460,12 @@
       "doi": "10.5281/zenodo.22833485",
       "docs_path": "papers/2026_SilverLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_SilverLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]

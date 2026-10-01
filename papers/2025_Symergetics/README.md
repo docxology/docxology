@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Symergetics (Symbolic Synergetics) provides a framework for rational arithmetic, geometric pattern discovery, and all-integer accounting based on Buckminster Fuller's Synergetics. The package implements Quadray coordinates, IVM lattice operations, and symbolic computation tools for exact geometric analysis. Released as open-source software with comprehensive documentation and tests.
+> Floating-point arithmetic introduces systematic approximation errors that obscure fundamental mathematical relationships in geometric calculations, producing results like 2.999999999999999 instead of the exact integer 3. These compounding and confounding precision losses stymie a full-featured implementation of Buckminster Fuller's Synergetics framework, which requires symbolic operations on...
 
 ## Keywords
 
@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **SymergeticsNumber exact-rational wrapper over Python fractions.Fraction** — Arithmetic is done with a Fraction-based class that keeps exact fractional representations and auto-simplifies via GCD.
+- **Quadray (four-axis tetrahedral) coordinates in the IVM lattice** — Points are represented as (a, b, c, d) along four tetrahedral axes, normalized by subtracting the minimum coordinate.
+- **IVM-unit volume calculation for Platonic solids** — The package computes polyhedron volumes in IVM units with the tetrahedron as the unit volume.
+- **Pattern analysis of Scheherazade numbers (1001^n), primorials, palindromes** — Exact-arithmetic routines analyze powers of 1001, primorial sequences, and multi-base palindromes.
+- **Test suite of 953 test functions across 32 files** — Validation is via a pytest suite covering arithmetic, coordinate transforms, geometry and integration cases.
 
 ## Key Findings
 
-- Analysis of The package implemen...
+- The package reports 100% precision preservation across 953 test cases.
+- Exact arithmetic returns 11/12 for 3/4 + 1/6 rather than the float 0.9166666666666666, with no approximation errors detected in any test case.
+- The paper reports that its Platonic-solid volume relationships in IVM units were independently verified, confirming Fuller's original Synergetics calculations.
+- Quadray-to-Cartesian conversions are reported to round-trip exactly.
+- Primorials are computed exactly, e.g. 10# = 6,469,693,230.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

@@ -21,13 +21,19 @@ This work addresses topics in **Active Inference**: Nostr, Complexity, Large Lan
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Index cards as hashed Nostr notes (JSON to SHA256 ID)** — The notes sketch each index card as a JSON object (username, text, etc.) hashed into a 32-byte SHA256 identifier, with edges defined between card IDs.
+- **LLM semantic embeddings attached to index cards** — Proposes using language-model embeddings, translations and summaries so cards act as semantic bridges between texts.
+- **Path analysis over composed index-card graphs** — Proposes analyzing paths through card graphs for simple features (length) and subtler ones (share of novel links).
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The notes propose linking papers not only by citation edges but by syntactic bridges (keyword cards) and semantic bridges (embeddings).
+- The notes argue auto-generated flashcards pose less of an information-overload risk than auto-generated papers, since unused cards are simply ignored and useful ones composed.
+- The notes suggest review papers could follow the most popular paths through the card graph and novelty search the least traversed ones.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -56,5 +62,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.8118155`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

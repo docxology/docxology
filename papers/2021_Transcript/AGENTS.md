@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Edited transcript of a three-session moderated symposium, Prepared question slides posed by lab participants to Friston, Presentation of the lab's Active Inference terms list and ontology work
+- Identifies findings: Friston recommends toy simulations as the best way to demystify Active Inference for learners in an academic setting., Friston stresses that getting the generative model right is central: if it is apt for the target system, everything else usually follows., Friston distinguishes Active Inference from predictive coding: minimizing variational free energy is only half the game, with expected free energy needed for future-oriented action.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

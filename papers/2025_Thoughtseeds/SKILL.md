@@ -20,13 +20,23 @@ This work addresses topics in **Active Inference**: Thoughtseeds, meditation, th
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Three-level agent-based model of focused-attention Vipassana meditation** — Levels are knowledge domains, a Thoughtseed Network of five competing thoughtseeds, and a meta-cognition layer regulating state transitions.
+- **Novice and expert state-transition matrices drawn from prior empirical research** — Reference transition probabilities among four meditation states for experts and novices were derived from published focused-attention research.
+- **Rule-based hybrid learning of attractor weight matrices** — Rule-based constraints optimize thoughtseed weights and interaction patterns, avoiding manual parameter tuning.
+- **Granger causality extraction of thoughtseed interaction network** — Pairwise Granger tests (max lag five timesteps, chi-squared significance) define directional thoughtseed influences, then scaled and thresholded.
+- **Modified Wilson-Cowan network dynamics with winner-takes-all dominance** — Competing thoughtseed populations are simulated with facilitatory/inhibitory connections and top-down meta-awareness; the most active thoughtseed dominates each timestep.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Four meditation states (breath_control, mind_wandering, meta_awareness, redirect_breath) emerge from thoughtseed interactions rather than being hard-coded.
+- Simulated experts sustain control dominance of focused attention, whereas novices show more frequent, prolonged mind_wandering episodes.
+- Learned weights show stronger breath_focus activation during breath_control in experts (0.98) than novices (0.78).
+- In the interaction network, experts show strong facilitation from breath focus to self-reflection, absent in novices.
+- The authors note the model is not a comprehensive theory of consciousness and needs validation against real neuroimaging or behavioral datasets.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.3390/e27050459`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

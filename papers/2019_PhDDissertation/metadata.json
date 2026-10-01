@@ -22,26 +22,56 @@
   ],
   "methods": [
     {
-      "name": "Multi-year field observation of harvester ant colonies",
-      "description": "Applied multi-year field observation of harvester ant colonies approach"
+      "name": "RNA-seq of pooled forager brains from 6 P. barbatus colonies (Chapter 1)",
+      "description": "Three libraries per colony, each pooling three forager brains, compared colonies that did or did not strongly reduce foraging on dry days.",
+      "evidence": "3 libraries were made for each of 6 colonies. Each library consisted of poly-AAA+ mRNA extracted from the pooled dissected brains of 3 foragers."
     },
     {
-      "name": "Transcriptomic profiling of behavioral variation",
-      "description": "Applied transcriptomic profiling of behavioral variation approach"
+      "name": "kallisto/sleuth expression analysis with Blast2GO annotation and Cytoscape coexpression",
+      "description": "Reads were pseudoaligned to the P. barbatus reference transcriptome with kallisto and analyzed in sleuth; GO enrichment used Blast2GO and a coexpression network was built in Cytoscape.",
+      "evidence": "For the kallisto/sleuth differential gene expression analysis pipeline, the reference transcriptome was indexed by kallisto v.0.42.5 123. RNA-seq reads were pseudoaligned to the indexed reference transcriptome with kallisto."
     },
     {
-      "name": "Quantitative behavioral biology and statistics",
-      "description": "Applied quantitative behavioral biology and statistics approach"
+      "name": "Oral dopamine administration with mass-spectrometry brain quantification",
+      "description": "Single ants were fed water or dopamine solutions and brain dopamine titers were quantified by mass spectrometry with a labeled internal standard.",
+      "evidence": "we used mass spectroscopy to quantify the brain biogenic amine levels of single ants after feeding them either water or water with dissolved dopamine at a concentration of either 3 mg/mL or 30 mg/mL"
+    },
+    {
+      "name": "Field counts of foraging trips by paint-marked dopamine- vs control-treated foragers",
+      "description": "Marked foragers given 0 or 3 mg/mL dopamine in PBS were returned to their nests and their foraging trips counted the next morning in 30-second intervals.",
+      "evidence": "Each group was administered either 0 mg/mL or 3 mg/mL dopamine in 1x PBS."
+    },
+    {
+      "name": "Hydration manipulations, single-brain RNA-seq and individual-trip analyses (Chapters 2-4)",
+      "description": "Later chapters tested forager desiccation physiology and exogenous hydration, RNA-seq on single forager brains, and trip distributions of individually marked treated ants.",
+      "evidence": "Chapter 3 uses RNA-seq on single forager brains to investigate how variation in gene expression variation within and among colonies is associated with colony traits"
     }
   ],
   "key_findings": [
-    "This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus)..",
-    "It integrates field behavioral ecology, neuroche...."
+    "Forager brains from different colonies varied significantly in biogenic amine titers and in expression of neurophysiological signaling pathways involved in foraging regulation.",
+    "Raising forager brain dopamine increased foraging activity, while lowering brain dopamine decreased it.",
+    "Foragers from colonies that reduce foraging in dry conditions lose water and motor coordination faster; hydrated foragers made more trips, especially as conditions got drier.",
+    "Hundreds of genes had expression patterns correlated with colony traits; loci more central to coexpression networks correlated better with colony traits and showed greater coding-sequence constraint.",
+    "The stimulatory effect of hydration and dopamine on foraging trips came from slight increases across many treated ants, not from a small subset."
   ],
   "related_papers": [
     "2016_AntGenetics",
     "2016_ForagingGene",
     "2017_MutAnts"
   ],
-  "checked_at": "2026-07-01T20:50:01Z"
+  "checked_at": "2026-07-01T20:50:01Z",
+  "key_findings_evidence": [
+    "Forager brains of different colonies significantly varied in brain biogenic amine titers, as well as in the expression of multiple neurophysiological signaling pathways involved in regulating foraging in social and solitary insect species.",
+    "Pharmacological experiments demonstrated that increases in forager brain dopamine titer resulted in increases in foraging activity, whereas decreases in brain dopamine decreased foraging activity.",
+    "Manipulative experiments in the field show that hydrated foragers go on significantly more foraging trips than their unhydrated nestmates, and that this effect increases in strength as conditions get drier.",
+    "Loci that are more central to coexpression networks tend to be better correlated with colony traits, and are evolving under increased coding sequencing constraint relative to less central loci.",
+    "the effect of hydration and dopamine on increasing P. barbatus foraging activity is due to a slight increase in activity from many treated ants, not from a large increase in activity of a few treated foragers."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "empirical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "full_text.md is a ProQuest PREVIEW covering only front matter, the abstract, the introduction and the first part of Chapter 1 (through early results, page 16). Chapter 2-4 findings are taken from the dissertation abstract and introduction summaries, not from those chapters' own text. Bibliography authors field is empty; the dissertation author is Daniel Ari Friedman (adviser Deborah Gordon)."
+  }
 }

@@ -38,5 +38,48 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-09-24T19:35:31Z"
+  "checked_at": "2026-09-24T19:35:31Z",
+  "methods": [
+    {
+      "name": "Three-stage read: intake, tag-intersection matching, status projection",
+      "description": "Self-declared observations are normalized fail-closed, matched to growth records whose tags intersect the attempt's tags, then projected into present/missing/stale marker surfaces.",
+      "evidence": "Growth records whose tags intersect the attempt’s declared tags apply. An empty intersection is the outcome OUTSIDE_SCOPE, not an exception."
+    },
+    {
+      "name": "Formal definitions of growth records, freshness windows and aggregation",
+      "description": "Defines growth records, cultivation attempts, freshness relative to a review date and window, a finding rule, and an aggregation rule over four statuses.",
+      "evidence": "Given a review date 𝑟and window 𝑤, an observation dated 𝑡is fresh if 𝑡≤𝑟and 𝑟−𝑡≤𝑤; stale if 𝑡≤𝑟and 𝑟−𝑡> 𝑤; not counted otherwise. Undated observations are fresh."
+    },
+    {
+      "name": "Lexical counter-signal staging of certification/credential language",
+      "description": "Observations labeled with certification, credential or resume language are set aside with a note and not counted toward any marker surface.",
+      "evidence": "counter-signal labels (certification, credential, resume language) are staged aside with an explanatory note and never counted. Nothing crashes on hostile input and no value is invented."
+    },
+    {
+      "name": "Canonical serialization pinned by SHA-256 digests (pure stdlib package)",
+      "description": "Each read is a pure function of attempt, registry and review config, serialized canonically and pinned by a SHA-256 digest of reading and registry.",
+      "evidence": "Reads are serialized canonically (sorted keys, declaration order preserved with explicit sorts before emit) and pinned by a SHA-256 digest of both the reading and the registry that produced it."
+    }
+  ],
+  "key_findings": [
+    "A read returns one of four staged statuses describing marker coverage at a review date, explicitly not competence, mastery or permission.",
+    "In the worked example, one applied record reads STAGED and the rest NEEDS_MARKER, so the overall status is NEEDS_MARKER.",
+    "Adding a 'certified as expert' observation leaves the read unchanged because certification language is staged aside rather than scored.",
+    "The author states the limit that a read describes marker declarations, not verified practice or skill growth.",
+    "The author notes counter-signal detection is lexical, so an innocently phrased resume-shaped record passes intake."
+  ],
+  "key_findings_evidence": [
+    "A read returns staged statuses (STAGED, NEEDS_MARKER, NEEDS_REWORK, OUTSIDE_SCOPE) that describe marker coverage at a review date and never competence, mastery, or permission.",
+    "The overall status is NEEDS_MARKER: gaps ask for practice, not judgment.",
+    "the read is unchanged, because certification language is exactly the drift the line refuses to score.",
+    "A read describes marker declarations, not practice: a declared marker is not verified evidence that a mentor met, a drill ran, or a skill grew.",
+    "Counter-signal detection is lexical; a resume-shaped growth record phrased innocently passes intake. The instrument surfaces vocabulary drift, not intent."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Short instrument/specification document; examples are illustrative worked reads, not empirical evaluation."
+  }
 }

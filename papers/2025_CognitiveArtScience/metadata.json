@@ -53,21 +53,36 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Visual and symbolic analysis",
-      "description": "Applied visual and symbolic analysis approach"
+      "name": "Four-fold firstness-to-fourthness conceptual schema",
+      "description": "Frames procedural craft, conceptual articulation, adaptive intelligence, and the observing niche as firstness through fourthness to relate cognitive science and art.",
+      "evidence": "Procedural craft (firstness) and conceptual articulation (secondness) co-evolve into adaptive intelligence (thirdness), as continuously audited by the observing niche that embeds, measures, and reinterprets those intelligences (fourthness)."
     },
     {
-      "name": "Cross-domain pattern mapping",
-      "description": "Applied cross-domain pattern mapping approach"
+      "name": "Contrast of analytical 2→3 and generative 4→3 moves",
+      "description": "Distinguishes moves that compress past data into predictive structure from moves that open space for unknown futures, illustrated with Blake quotations and Goodhart's Law.",
+      "evidence": "2→3 is a next-move perspective which is based upon “figuring out” the past"
     }
   ],
   "key_findings": [
-    "This paper explores cognitive approaches to art-science integration, examining how cognitive science frameworks can inform both artistic practice and scientific investigation.",
-    "Analysis of Through Active Inference..."
+    "The essay argues that alternating 2→3 analytical and 4→3 generative moves lets systems balance exploitation with exploration and optimization with open-ended creativity.",
+    "It concludes that cognitive wholeness emerges when explanation and anticipation co-operate in sustained dialogue across scales.",
+    "The author proposes that self-awareness of crossing the intra-activity threshold is when cognitive science becomes cognitive art."
   ],
   "related_papers": [
     "2018_PPPiP",
     "2022_MirrorTest",
     "2023_BlakeFuller"
-  ]
+  ],
+  "key_findings_evidence": [
+    "these systems are capable of balancing exploitation with exploration, measurement with meaning, and optimization with open-ended creativity.",
+    "True cognitive wholeness emerges when explanation and anticipation co-operate in sustained dialogue across scales.",
+    "Self-awareness of that threshold-crossing, is the moment Cognitive Science becomes Cognitive Art."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Short (5-page) conceptual essay; no empirical methods."
+  }
 }

@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Hardware-decoupled pure NumPy/SciPy analysis core with optional capture shell** — Gaze geometry, I-VT/I-DT, Engbert-Kliegl microsaccade, main-sequence and pupil algorithms run headlessly, separate from an optional webcam/MediaPipe shell.
+- **Verification against synthetic traces with ground truth held out by construction** — Every detector is tested on generated signals whose events are known, e.g. a 250 Hz fixation-saccade-fixation trace and an embedded 0.5 deg microsaccade.
+- **3-D eyeball forward model closed loop through a pinhole camera** — Known gaze is projected to landmarks and back through the estimator on an animated 120 Hz scene to check geometric internal consistency.
+- **Seeded Monte-Carlo landmark-noise sweep (sigma 0-0.016, 25 trials/level)** — Independent landmark noise is injected into the synthetic scene to rank fragility of gaze, saccade and pupil recovery, with bootstrap confidence intervals.
+- **N=1 single-participant, single-device webcam pilot sessions** — One local webcam workflow recorded fixed-gaze, reading and target trials as derived records to give order-of-magnitude session diagnostics.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- On synthetic traces the I-VT detector recovered a 10 deg saccade's amplitude within 5% and peak velocity within 10%.
+- The 3-D closed loop recovered gaze with 0.16 deg RMS residual (max 0.23 deg); the author states this is internal consistency, not device validation.
+- In the idealised noise sweep, saccade detection was most fragile (F1 < 0.8 at sigma about 0.0014), while gaze crossed the 2 deg bound near sigma 0.005.
+- The pupil noise robustness is reported only as a conditional illustration because it follows from the assumed pupil noise model.
+- The headline limitation is an unclosed device validation gap: correctness rests on constructed ground truth, not reference measurements of real eyes.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

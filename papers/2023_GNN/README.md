@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Generalized Notation Notation (GNN) is a framework for representing, translating between, and reasoning about diverse notational systems. GNN provides meta-notational tools for describing any symbolic system, enabling formal comparison and interoperability across mathematical, scientific, and computational notations. The framework supports automated notation analysis and cross-system translation.
+> This paper introduces Generalized Notation Notation (GNN), a novel approach to generative model representation that facilitates communication, understanding, and application of Active Inference across various domains. GNN complements the Active Inference Ontology as a flexible and expressive language for education and modeling, by providing a standardized method for describing cognitive models...
 
 ## Keywords
 
@@ -18,14 +18,18 @@
 
 ## Methods
 
-- Generalized Notation Notation (GNN) schema design
-- Graph-based knowledge representation
+- **GNN specification: ASCII model description in Markdown-structured source files** — Defines Generalized Notation Notation, which writes Active Inference generative models with ASCII letters and punctuation in a Markdown-style source file.
+- **Worked example re-expressing the Smith, Friston & Whyte 2022 step-by-step tutorial** — Demonstrates GNN by following the same progressive model-building sequence as the 2022 step-by-step Active Inference tutorial.
+- **'Triple Play' framing: text, graphical, and executable model renderings** — Proposes expressing a GNN model across three modalities: text-based models, statistical graphical models, and executable cognitive models.
 
 ## Key Findings
 
-- introduces Generalized Notation Notation (GNN), a novel approach to generative model representation that facilitates communication, understanding, and application of Active Inference across various domains..
-- GNN complements the Active Inference Ontology as a flexible and expressive language for education and modeling, by providing a standardized method for describing cognitive models..
-- In this paper we introduce GNN, and provide a Step-by-Step example of what GNN looks like in practice..
+- Introduces GNN as a standardized method for describing cognitive models that complements the Active Inference Ontology for education and modeling.
+- Argues GNN's plain-text basis allows rendering into mathematical notation, figures, natural language, pseudocode and executable simulations, and use with regular expressions and LLMs.
+- As pseudocode, GNN does not restrict which programming language or package implements a model, which the authors argue aids backward and forward compatibility.
+- Names future directions: better automatic rendering software, tighter Active Inference Ontology integration, and cadCAD for execution order and parameter sweeps.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

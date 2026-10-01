@@ -18,12 +18,21 @@
 
 ## Methods
 
-- Deterministic codebase-to-GNN translation
-- Software architecture pattern extraction
+- **Program-graph IR with confidence and provenance on nodes and edges** — Repositories are parsed (primarily via Python's standard-library ast) into a program graph IR whose nodes and edges carry confidence and provenance.
+- **Fixpoint translation engine with 22 declarative rules in five families** — Rules (structural, semantic, control, behavioural, resilience) map nodes to 7 Active Inference mapping kinds, with priority-and-score conflict resolution.
+- **A/B/C/D matrix derivation and GNN (Generalized Notation Notation) export** — Derives likelihood, transition, preference and prior matrices from the compiled state space and program-graph edges, normalized for the upstream GNN validator.
+- **Forward-reverse-forward roundtrip over a 25-target regression corpus** — A reverse synthesizer rebuilds a Python package from each GNN bundle; role_preservation_score and strict isomorphism are recorded per target.
+- **Rule-family and fixpoint-iteration ablations on packaged fixtures** — Removes each rule family and varies the iteration cap K in {1, 2, 5, 10}, recording changes in SemanticMapping counts on the shipped fixtures.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- On the v0.6.0 roundtrip ledger, all 25 targets are role-preserved, but only 1 of 25 meets strict structural isomorphism.
+- The author cautions that fixtures are in-sample, with no held-out split or confidence intervals, so scores upper-bound rather than estimate out-of-sample performance.
+- The fixpoint ablation shows a single pass suffices on every shipped fixture, with the K=10 cap serving as a safety valve.
+- Rule-family ablation indicates structural rules drive HIDDEN_STATE while semantic rules drive OBSERVATION/ACTION/POLICY/PREFERENCE roles.
+- The author states the passing test suite, coverage and type-check gates support reliability and reproducibility but do not by themselves establish semantic adequacy.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

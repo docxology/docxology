@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Synthesis of Agent and Niche is a visionary art-philosophy dialogue between William Blake's The Marriage of Heaven and Hell and ecological psychology, mediated by Active Inference and Buckminster Fuller's Synergetics. The text juxtaposes Blake's prophetic verses with speculative ecological-cognitive commentary, exploring themes of contraries as generative principles, threshold dynamics...
+> This paper enacts a computational juxtaposition between William Blake's 1790 illuminated poem "The Marriage of Heaven and Hell", and a personal-poetic perspective on ecological psychology. This paper is rendered as a dual-column PDF reflecting Blake's insight — "Without contraries is no progression" — in its very architecture. The left column ("Synthesis of Agent and Niche") transposes Blake's...
 
 ## Keywords
 
@@ -18,11 +18,17 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Section-by-section dialogue between Blake's text and ecological-psychology prose** — The work pairs passages of Blake's The Marriage of Heaven and Hell with commentary prose framed in active inference and ecological terms.
+- **Paraphrastic rewriting of Blake's lines in information-theoretic vocabulary** — Each Blake passage is followed by a reworking that substitutes concepts such as singular value decomposition, priors and free energy for Blake's imagery.
+- **Self-declared speculative, LLM-assisted composition** — The author states an explicitly speculative epistemic status and notes the influence of Claude 4.5 in composing the text.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The text reads Blake's 'without contraries is no progression' as opposition generating the potential landscape that enables directed motion.
+- It casts organisms as active inference engines that construct the niches and possibility spaces they then navigate.
+- It concludes by framing 'everything that lives is holy' as a recognition of negentropy and self-modelling systems.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

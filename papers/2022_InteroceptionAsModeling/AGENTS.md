@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Transcripts of ActInf Livestream #050 sessions (50.0, 50.1, 50.2), Background walkthrough by Friedman and Tickles (50.0), Author slide presentation by Eli Sennesh with Jordan Theriault (50.1)
+- Identifies findings: As read in the session, the paper proposes studying allostasis in terms of control theory, with interoception providing performance feedback for allostasis., Sennesh says the motivation was that real biological prior preferences cannot be fixed, raising how much must be learned over development rather than built in., Sennesh summarizes that the model yields a notion of affordance competition via forward simulations of trajectories evaluated over time.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

@@ -20,13 +20,22 @@ This work addresses topics in **Entomology**: EntoLinguistics.
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Corpus of 369 entomology publications mined from PubMed and arXiv** — Literature-mining classes queried PubMed (ants/eusocial/colony terms) and arXiv q-bio, then deduplicated and quality-filtered the records.
+- **Seed-expansion term extraction into six Ento-Linguistic domains** — Tokens matched to domain seed lexicons (e.g. Power & Labor, Kin & Relatedness, Economics) are extended to co-occurring tokens in a 3-token window.
+- **Semantic entropy of terms via k-means over TF-IDF usage contexts** — Ambiguity of each sufficiently attested term is scored as Shannon entropy (bits) over clustered usage contexts.
+- **Six-layer deterministic analysis pipeline including networks and CACE scoring** — Layers cover extraction, entropy, domain statistics, conceptual networks/centrality, rhetorical scoring, and CACE meta-standard evaluation.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Six-domain Ento-Linguistic framework, open-source corpus pipeline (term extraction, co-occurrence networks, semantic entropy), and CACE meta-standards for lexical engineering in entomology.
+- The corpus (48787 tokens) yields 888 candidate terms, 261 of them assigned to domains, across 6 conceptual clusters linked by 9 weighted relationships.
+- Terminology networks are strongly modular with cross-domain bridging, most prominently in Power and Labor, which has 43 bridging terms.
+- 16.9% of the 261 domain-assigned terms exhibit context-dependent semantic drift.
+- Economics terms have the highest mean semantic entropy (1.21 bits) of all domains despite having zero bridging terms.
+- CACE scoring of the "slave" to "host worker" reform shows aggregate scores rising from 0.38 to 0.81.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +63,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.19574117`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

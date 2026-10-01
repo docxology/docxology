@@ -78,18 +78,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays approach"
+      "name": "Entrez/NCBI SRA query for Apis mellifera Illumina RNA-seq samples",
+      "description": "Public RNA-seq samples were gathered via an Entrez search filtered to A. mellifera, Illumina platforms, rnaseq type and SRA biosample.",
+      "evidence": "Initial querying through Entrez search for relevant samples was accomplished with a species focus on \"Apis mellifera\", and a set of focusing criteria (utilization of any Illumina platform, and a filter for \"type rnaseq\" and \"sra biosample\")."
     },
     {
-      "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis approach"
+      "name": "Six-script MetaInformAnt pipeline built on AMALGKIT",
+      "description": "A versioned, openly available pipeline of six scripts covered environment setup, genome and metadata download, SRA download, quantification and curation.",
+      "evidence": "This pipeline comprises six distinct scripts, each responsible for a specific stage in the setup, data processing, and analysis workflow."
+    },
+    {
+      "name": "Metadata tissue-name harmonization script",
+      "description": "A 2.5_update_metadata.py script corrected inconsistent tissue labels so equivalent samples (e.g. variants of 'whole body') were grouped together.",
+      "evidence": "we generated a 2.5_update_metadata.py script, which updates specific fields in the initial metadata curation in order to make corrections to existing data"
+    },
+    {
+      "name": "fastp QC, kallisto pseudoalignment, amalgkit curation",
+      "description": "Raw reads were QC'd with fastp, quantified with kallisto against Amel_HAv3.1, and merged/normalized into one dataset with amalgkit.",
+      "evidence": "We performed transcript quantification using the 4_quant.py script, which leverages the capabilities of the kallisto tool for rapid pseudoalignment."
+    },
+    {
+      "name": "PCA, clustering and differential expression descriptives",
+      "description": "Post-processing scripts ran principal component, clustering and differential expression analyses on the curated expression data.",
+      "evidence": "These analyses included principal component analysis to examine the overall structure of the data, clustering analysis to identify groups of samples with similar expression patterns"
     }
   ],
   "key_findings": [
-    "The honey bee ( Apis mellifera ) is a pivotal species in both ecological and research contexts, serving as a model organism for studying complex social behavior and physiological processes..",
-    "A critical aspect of understanding these complexities is the analysis of tissue-specific gene expression (TSGE), a challenging task due to the need to handle large bioinformatics data and manual tissue processing..",
-    "In this study, we present a meta-analytic approach to investigate TSGE in A. mellifera , harnessing various open-source bioinformatics packages.."
+    "From 4349 samples and 12,398 loci, AMALGKIT processing retained 731 samples and 177 loci, released as a public July 2023 TSGE snapshot.",
+    "Curation reduced 133 uniquely named tissues to 54 groups; whole adult body, brain and mushroom body made up 62.3% of samples.",
+    "Optional metadata fields were largely blank (e.g. 99.1% genotype, 67.5% sex, 77.8% age), limiting their use as surrogate variables in harmonization.",
+    "Average library size increased over time, but publication date explained only a small fraction of variance in total bases (R2=0.061).",
+    "The authors attribute the heavy winnowing to heterogeneous experiments, asymmetric tissue coverage with single-tissue designs, and incomplete metadata underpowering surrogate variable analysis."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -97,5 +116,19 @@
     "2017_MutAnts"
   ],
   "artifact_doi": "10.5281/zenodo.10400745",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.10400745"
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.10400745",
+  "key_findings_evidence": [
+    "From an initial pool of 4349 samples and 12,398 loci, our rigorous analysis resulted in a snapshot of 731 samples and 177 loci, representing high-quality estimates of TSGE patterns.",
+    "Initially the metadata table contained 133 unique named tissues; after the 2.5_update_metadata.py script was used to resolve spelling/naming this was distilled down to 54 unique curation groups.",
+    "Several optional metadata fields showed variable use, limiting their ability to serve as surrogate variables during the data harmonization stage (including 99.1% blank for “genotype”, 67.5% blank for “sex”, 77.8% blank for “age”",
+    "Average library size increased through time, though only a small fraction of variance across libraries in total base size was associated with publishing date (Figure 4, R2=0.061).",
+    "incomplete and heterogeneous usage of metadata fields means that the surrogate variable analysis used in data harmonization may have been underpowered, reflecting the partial state of information in the NCBI SRA database."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "empirical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Full text matches the title. WARNING: the README abstract describes a different paper (rapidly evolving / taxonomically restricted genes in novel honey bee tissues, i.e. Jasper et al. 2015, cited here as ref. 20); the full text contains no TRG or molecular-evolution analysis. The README abstract contradicts the text and should be replaced."
+  }
 }

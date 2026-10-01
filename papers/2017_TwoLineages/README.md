@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior. In dependent-lineage species, queens must mate with males from a different genetic lineage to produce workers, while same-lineage matings produce new queens. This unusual mating system creates colonies with complex genetic architectures that provide a...
+> In ants as in bees, a diploid female is either a reproductive or worker. In honeybees, female larvae fed a high protein substance known as ‘royal jelly’ become reproductives, while those not fed the necessary nutrients become workers (Linksvayer et al. 2011). Feeding experiments in ants suggested that like honeybees, the fate of a diploid female egg is usually determined as a larva by food supply...
 
 ## Keywords
 
@@ -22,7 +22,12 @@ _No paper-specific methods have been summarized yet; see the abstract and the fu
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The authors argue that workers in dependent-lineage systems are not hybrids in the usual sense, because both lineages contribute to colonies of a single species that cannot persist without both.
+- Because a queen must mate with at least one male of each lineage, the authors note (with Romiguier et al.) that such species likely have large, population-wide mating aggregations.
+- Citing their prior long-term study finding no ecological differences between lineages, the authors suggest the system may be maintained by lineage differences in male production rather than ecological forces.
+- The authors expect two-lineage systems to be found more widely across ant genera and subfamilies, and say Romiguier et al.'s high-throughput sequencing methods will aid that search.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Analysis of Covers the institu...
+- Extracts methods: Collaboratively edited living Coda document (v3 snapshot) by a named author team, Structure inherited from the 2023 paper and extended Sept-Nov 2024, Preparation and Measurement stages for project proposals and reporting
+- Identifies findings: Describes the Institute as a registered Delaware non-profit supporting education, research and ecosystem services, and a 501(c)(3) as of 2024., Reports that the Institute's Discord server, its primary discussion and meeting venue, has over 1000 people., Reports that the Institute had released over 500 videos to date.
 - Maps contributions to AII Ecosystem literature
 
 ### 🎓 EDUCATOR

@@ -20,13 +20,23 @@ This work addresses topics in **Computational**: algebraic evaluation, NTQR, uns
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Three system-prompted trader personas as binary judges** — Optimist, neutral and pessimist personas each make a bullish/bearish call on the same 64 authored market scenarios, run through six local models via Ollama.
+- **Unsupervised NTQR ErrorIndependentEvaluation on vote counts** — Recovers per-persona, per-label accuracy from unlabeled vote patterns only; authored truth is held out and used afterward to score recovery error.
+- **Deliberately unbalanced 40/24 scenario deck** — The answer key is set to prevalence 0.625 to avoid the evaluator's removable singularity at prevalence exactly 1/2.
+- **Schema-constrained JSON vote collection** — Uses Ollama structured output with a JSON Schema so parsing is a measured interface check before the binary vote matrix is analysed.
+- **Scenario bootstrap and deterministic synthetic-ensemble study** — Bootstraps over scenarios for a CI on recovery MAE, and runs synthetic ensembles with known truth to test error scaling, correlated errors and tie-break failure.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- For mistral:latest, unsupervised recovery matched authored-truth accuracies to a mean absolute error of 0.012, within the 0.102 sampling-noise floor.
+- The algebra recovered a poor judge's accuracy without labels: the pessimist's true bullish accuracy of 0.57 was recovered as 0.59.
+- Inter-judge disagreement did not imply evaluability; what gated evaluation was whether every individual judge varied, not ensemble-level disagreement.
+- A label-free per-judge diagnostic (modal-vote fraction reaching 1.0) predicted exactly which models would be evaluable, before any solve.
+- Synthetic studies show the failure alarm catches anti-correlated judges but can miss positively-correlated errors, and the tie-break inverts near chance-level judges.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20498699`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

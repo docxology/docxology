@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Version 0.1 system specification for an Adaptive Basic Income toolkit, Layered architecture: UX, services, AI/LLM + Active Inference, decentralized, data, Comparison of BOPS and GPI deployment archetypes
+- Identifies findings: The authors argue that overlaying AI, decentralized infrastructure, and Active Inference on UBI can enhance its relevance, effectiveness, and impact., They distinguish BOPS as using prediction to maintain static security targets, versus GPI using prediction to dynamically optimize welfare., For real-world implementation they suggest a staged hybrid approach, starting with BOPS and gradually transitioning toward GPI.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

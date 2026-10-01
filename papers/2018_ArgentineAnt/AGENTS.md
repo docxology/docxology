@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Field observation of three L. humile winter aggregations on Stanford campus, Hourly trail counts of foraging rate and timed walking speed, Arduino-based logger for temperature, humidity, and light
+- Identifies findings: Colonies foraged most between 10 and 15˚C regardless of maximum daily temperature., Worker walking speed was positively associated with temperature and negatively associated with humidity., Colonies foraged during all day and night hours in a predictable daily cycle, with incoming and outgoing forager rates correlated.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

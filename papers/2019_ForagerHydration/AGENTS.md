@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Field hydration manipulation of marked P. barbatus foragers, Vapor Pressure Deficit regression of hydrated/unhydrated trip ratio, Laboratory desiccation assays on 74 foragers from 24 colonies
+- Identifies findings: Pooled across five colonies, hydrated ants made 1.18-fold more foraging trips than unhydrated nestmates (paired Wilcoxon p = 0.0006)., The hydration effect on foraging grew with desiccation risk (VPD), with a quadratic model fitting better than linear, supporting a non-linear effect., Foragers from colonies that reduce foraging in dry conditions lost water faster and reached morbidity and death sooner, without differing in total or critical water content.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

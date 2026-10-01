@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Generative textbook scaffold methodology, Modular pedagogical content design
-- Identifies findings: See paper
+- Extracts methods: Generation from version-controlled Markdown, tested Python, and Mermaid diagrams, Python modules for models such as Michaelis-Menten and Hodgkin-Huxley, Manifest-driven organisation from manuscript/config.yaml
+- Identifies findings: The book covers introductory biology in a systems unit plus Units I-X with 44 core chapters, plus optional laboratories and question banks., Each chapter is followed by a companion lab and a 30-item question bank in the same canonical order., The author positions active inference and the free energy principle as optional graduate-depth lenses, not part of the introductory canon.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

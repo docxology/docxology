@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Invented fixture data with synthetic classified segments and reviewers, Text-level release-audit engine with mosaic-risk scoring, 4x4 visual redaction proof matrix plus nine steganographic methods
+- Identifies findings: On the fixture packet (fourteen segments), the audit reported the packet releasable with redaction coverage 1.0, plus warning-level residual-marker findings., In the verified run, all sixteen variants produced both TPM sidecars, giving thirty-two .ski files., Without the FlushContext patch, the second kmyth-seal invocation fails with an out-of-memory-for-object-contexts error on swtpm.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,5 +37,5 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |

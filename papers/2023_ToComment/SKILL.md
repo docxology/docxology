@@ -1,8 +1,8 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "To comment or not to comment"
-description: "Integrates frameworks from rhetorical studies and ecological studies to catalog, monitor, and study digital image meme data; introduces the Digital Rhetorical Ecosystem three-tiered model (DRE3)."
-tags: ["rhetorical-analysis", "image-memes", "digital-discourse", "narrative-ecosystems", "dre3-model", "sensemaking"]
+description: "No abstract is recorded for this work yet; see the DOI or bibliography link."
+tags: ["tocomment"]
 domain: "Genetics & Biomedical"
 citation: "Dean Tickles, Daniel Friedman (2023). *To comment or not to comment*. Physics of Life Reviews."
 doi: "10.1016/j.plrev.2023.06.002"
@@ -15,21 +15,19 @@ artifact_doi: "10.5281/zenodo.5573946"
 
 ## Context
 
-This work addresses topics in **Genetics & Biomedical**: rhetorical analysis, image memes, digital discourse, narrative ecosystems.
+This work addresses topics in **Genetics & Biomedical**: tocomment.
 
 ## Methods
 
 Primary methods and techniques applied in this work:
 
-- Rhetorical ecosystem mapping
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Parsimony and polysemy give image memes narrative power
-- Image memes engage audiences through identity construction
-- DRE3 model supports formal tracing of memes across platforms
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -49,7 +47,7 @@ Verification points for this work:
 
 ## Prerequisites
 
-- Familiarity with rhetorical analysis, image memes, digital discourse
+- Familiarity with tocomment
 - Background in Genetics & Biomedical fundamentals
 - Access to source repository: N/A
 
@@ -58,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1016/j.plrev.2023.06.002`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

@@ -18,12 +18,19 @@
 
 ## Methods
 
-- OPORD analysis and catechism-style process design
-- Organizational sensemaking and high-reliability frameworks
+- **Historical analysis of Operations Orders from Roman origins to the present** — Traced the origins and evolution of military Operations Orders (OPORDs), beginning with the Roman Army, and their civilian counterparts.
+- **Multidisciplinary synthesis (complexity, HROs, memetics, Active Inference, etc.)** — Drew on complexity science, organizational psychology, high reliability organizations, memetics, logistics, knowledge management and Active Inference to frame OPORD requirements.
+- **Design of a sectioned OPORD template with guiding questions (Heilmeier-style)** — Designed a new OPORD format with a header, footer and six sections, each paired with questions modeled on the Heilmeier Catechism.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The authors conclude that ongoing feedback-driven recalibration, clear alignment on values/narrative/goals/identity, and high-quality distributed sensemaking are critical to HRO success and enhanced by a well-formatted OPORD.
+- From historical adaptations, they identify that structural changes in warfare or unprecedented uncertainty create the need for a new OPORD.
+- The paper proposes the Facilitator's Catechism, an OPORD for Process Facilitators with six sections: Situation, Mission, Potential Avenues of Approach, Milestones, Implications for Outcome, and Administrative/Logistics/Communications.
+- The format is designed to circumvent prior OPORD limitations where team composition and members' organizational and narrative alignment are not known before the order is written.
+- The authors caveat that impact is hard to predict and measure, and recommend Serious Games (e.g. hackathons) to address sample-size and comparability problems in evaluating it.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

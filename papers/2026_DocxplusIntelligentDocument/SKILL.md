@@ -20,13 +20,23 @@ This work addresses topics in **Computational**: OOXML, DOCX, Open Packaging Con
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Dual-contract design: OPC/ODF surface contract plus signed intelligence manifest** — A single archive is both a conforming .docx/.odt and a carrier of typed payload modules indexed by an Ed25519-signed manifest.
+- **Per-module sealing (Argon2id/Scrypt + AES-256-GCM, X25519, Shamir k-of-n, decoys)** — Payloads are sealed individually rather than encrypting the whole package, with slot names bound as AES-GCM additional authenticated data.
+- **Five spec-sanctioned transport channels incl. LSB steganography** — Implements custom XML parts, auxiliary package parts, custom document properties, MCE choice blocks, and LSB embedding in displayed images.
+- **Merkle-tree provenance with composite surface digest and transparency log** — Signs a Merkle root over modules together with a digest of every part, content type and relationship; attestations go into a log anchored by a signed tree head.
+- **Mock-free test harness, project round-trip, chi-squared steganalysis and red-team review** — Evaluated with 467 mock-free tests at a 90% coverage gate, an in-tree chi-squared LSB detector, a project round-trip harness, and 14 adversarial review cycles.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- In the reference dossier, all 5 modules across all 4 sealing lineages extracted and verified, and the container passed OPC conformance.
+- Carrying a 14-file, 9-directory project tree into both .docx and .odt containers, all 18 of 18 round-trip invariants held, with byte-identical packed payloads between profiles.
+- The round-trip harness found that packing followed symbolic links, embedding link targets such as an SSH key; symlinks are now refused by default.
+- The chi-squared detector flags fully embedded sealed (ciphertext) carriers but does not detect unsealed low-entropy payloads at any fill rate.
+- Fourteen adversarial review cycles closed 88 confirmed findings, and a sample-pair analysis estimator was withdrawn after proving mis-scaled by roughly an order of magnitude.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -52,5 +62,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21983948`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

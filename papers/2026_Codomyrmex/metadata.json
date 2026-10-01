@@ -116,5 +116,53 @@
     "github_release_mentions_doi",
     "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked"
-  ]
+  ],
+  "methods": [
+    {
+      "name": "Colony Control Plane with 8 named subsystems",
+      "description": "The implementation separates signal storage, resource accounting, actuation gating, consequence records, role inference, pruning, deterministic falsification, and integration.",
+      "evidence": "8 named subsystems separate typed signal storage, resource accounting, actuation gating, consequence records, role inference, pruning nomination, deterministic falsification, and integration."
+    },
+    {
+      "name": "Ternary EXECUTE/HOLD/REFUSE gate with weighted bounded score",
+      "description": "Budget, effective local hazard, trust credit, and proposal completeness are combined into a weighted score with hard overrides that route each proposal.",
+      "evidence": "Budget, effective local hazard, trust credit, and proposal completeness form a bounded weighted score, subject to explicit hard overrides and EXECUTE/HOLD/REFUSE routing."
+    },
+    {
+      "name": "Stigmergic signal field with FAILURE and RISK pressure at target locations",
+      "description": "Reported failures and prospective risks are stored separately in a process-local field, and the gate uses their maximum as the local hazard.",
+      "evidence": "Reported FAILURE and prospective RISK remain separately inspectable but jointly constrain the gate through their maximum"
+    },
+    {
+      "name": "Contract test suite using real subsystem instances",
+      "description": "Tests check same-target inhibition, cross-target isolation, linear decay recovery, score bounds, trust updates, and interface behavior.",
+      "evidence": "Tests use real subsystem instances to establish same-target inhibition, cross-target isolation, linear decay recovery, score bounds, trust updates, and interface behavior."
+    },
+    {
+      "name": "Paired deterministic replay of same-target vs. unrelated-target proposals",
+      "description": "Identical proposals are evaluated with and without a reported failure at the target location to test failure-to-gate coupling.",
+      "evidence": "The checked-in paired test submits identical proposals under identical agent, budget, completeness, and falsification state, varying only whether the target location has a reported failed outcome."
+    }
+  ],
+  "key_findings": [
+    "The scoped Colony Kernel surface has 819 passing tests with 76.6% branch coverage, 0 Ruff errors, and 0 ty diagnostics.",
+    "After a reported failure, the paired replay moves the same-target proposal from 0.875/EXECUTE to 0.725/HOLD while an unrelated target is unchanged.",
+    "The author states these results support reproducible software contracts, not ecological optimality, calibrated risk, production harm reduction, or generalization to external workloads.",
+    "The proposed comparative benchmark has not been run, and no raw trial traces are included in this release.",
+    "Default state is in memory, so the artifact does not support claims that pressure, trust, or gate state survive process restarts, model swaps, or deployment across machines."
+  ],
+  "key_findings_evidence": [
+    "the scoped Colony Kernel surface contains 819 passing tests with 76.6% branch coverage, 0 Ruff errors, and 0 ty diagnostics.",
+    "A paired deterministic replay moves the same-target proposal from 0.875/EXECUTE to 0.725/HOLD after a reported failure while leaving an unrelated target unchanged.",
+    "These results support reproducible software contracts, not ecological optimality, calibrated risk, production harm reduction, or generalization to external workloads.",
+    "The comparative benchmark has not been run, its baselines are not implemented as released adapters, and no raw trial traces are included.",
+    "The present artifact therefore does not support a claim that local pressure, trust, or gate state automatically survives process restarts, model swaps, or deployment across machines."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Software report with explicit evidence boundaries; all results are implementation/fixture properties. Colony/pheromone terms are described as engineering metaphors."
+  }
 }

@@ -18,11 +18,20 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Toulmin claim/evidence/warrant annotation of example image memes** — Applies the Toulmin argument model to worked examples (e.g. a NASA meme, 'Condescending Wonka') to expose implicit warrants.
+- **Archetypal-phase vignettes of three emergent-team collection approaches** — Describes Haphazard, Methodological, and Automated Collection and Analysis approaches, drawn from the authors' experiences, with challenge tables.
+- **Russo-Ukrainian War memes as illustrative examples** — Uses memes about the ongoing Russo-Ukrainian War to illustrate how memetic analysis can reveal shared public beliefs.
+- **Extension of the Digital Rhetorical Ecosystem (DRE3) framework** — Builds on the authors' prior computational framework combining rhetorical analysis with an ecosystem approach.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- Argues that image memes function as quasi-arguments whose parsimonious form hides warrants, so interventions should target spurious evidence and hidden warrants.
+- Argues that framing the information crisis as true versus false information has not been effective at regaining trust of disaffected audiences.
+- Concludes that current image meme collection by emergent teams falls short of needs even though the needed affordances are within technological reach.
+- Recommends system requirements such as on-site information, dynamic web annotations, and proximal collection and tagging affordances.
+- Proposes digital ecosystem and API economy approaches as a viable route to many of the challenges, while noting data standardization and integration remain problems.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

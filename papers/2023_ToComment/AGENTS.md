@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Rhetorical ecosystem mapping
-- Identifies findings: Parsimony and polysemy give image memes narrative power, Image memes engage audiences through identity construction, DRE3 model supports formal tracing of memes across platforms
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

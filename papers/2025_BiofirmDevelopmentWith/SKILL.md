@@ -21,13 +21,19 @@ This work addresses topics in **Active Inference**: BiofirmDevelopmentWith.
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Mapping biofirm design to Ostrom's commons governance principles** — The slides use Ostrom's commons design principles and social-ecological system concept as the reference framework for biofirm governance.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Presents Active Inference 'biofirm' homeostatic agents as an approach to bioregional and regenerative finance.
+- Lists features to avoid in a new economy, including commodification of nature and people and total fungibility of asset classes.
+- Proposes an open-source biofirm kernel built on homeostatic, biomimetic principles such as self-organization, self-healing and self-modeling.
+- Names the Free Energy Principle and Shapley Value as the basis for cooperative incentives and value allocation.
+- States criteria grounding the biofirm in the scientific method, Bayesian statistics and the Markov blanket, with scale- and domain-free MRV metrics.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -56,5 +62,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.14861595`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

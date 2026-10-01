@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Integration of literature morphometrics, ATR-FTIR evidence, ORN timing, and EM models, Coarse atmospheric IR transmission window model with sensitivity terms, Quarter-/half-wave resonance estimates for sensilla as dielectric antennas
+- Identifies findings: The computed figures show where sensillum dimensions, CHC-associated mid-IR bands, and atmospheric windows overlap, but do not by themselves establish biological IR olfaction., The framework yields five preregistered falsifiers, including spectral nulls under matched thermal load and geometric mismatch between sensilla and predicted resonances., Published insect ORN timing is fast enough that any IR stage would need to be experimentally separated from already-rapid molecular responses.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

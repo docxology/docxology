@@ -41,21 +41,50 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Visual and symbolic analysis",
-      "description": "Applied visual and symbolic analysis approach"
+      "name": "Close reading of Blake's Marriage of Heaven and Hell, Milton, Jerusalem",
+      "description": "Blake's texts (Erdman edition as textual authority) are read closely to extract perceptual-philosophy claims for comparison with Active Inference.",
+      "evidence": "Through close reading of The Marriage of Heaven and Hell, Milton, Jerusalem, and other works, we trace eight structural correspondences between Blake’s perceptual philosophy and the Active Inference framework"
     },
     {
-      "name": "Cross-domain pattern mapping",
-      "description": "Applied cross-domain pattern mapping approach"
+      "name": "Eight-theme correspondence mapping (Boundary to Collectives) with equations",
+      "description": "Each theme pairs a Blake quotation/image with an Active Inference formalism such as Markov blankets, precision dynamics or multi-agent models.",
+      "evidence": "Each correspondence begins with Blake’s phenomenologi- cal fire—his exact words, his illuminated images—and follows the mathematical shadow that Active Inference casts across the same ground"
+    },
+    {
+      "name": "Review of FEP/Active Inference formalisms as theoretical foundation",
+      "description": "Variational free energy, Markov blankets, hierarchical generative models, precision and expected free energy are presented before the synthesis.",
+      "evidence": "We present the core formalisms—variational free energy, Markov blankets, hierarchical generative models, precision weighting, prediction error, expected free energy, and multi-agent extensions"
+    },
+    {
+      "name": "Four Zoas modeled as a factorized collective generative model",
+      "description": "Blake's Four Zoas are interpreted as factors of a joint model of collective mind within the Collectives theme.",
+      "evidence": "the last encompassing Blake’s Four Zoas as a factorized model of collective mind."
     }
   ],
   "key_findings": [
-    "The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference.",
-    "The paper develops a 'Thematic Atl..."
+    "The paper argues Blake's 'doors' correspond to statistical (Markov-blanket) boundaries and 'Newton's sleep' to rigid priors overriding sensory evidence.",
+    "It maps 'fourfold vision' to hierarchical precision-weighting and Blake's view of Imagination to selfhood being constituted by the generative model.",
+    "The author claims to provide specific formal mappings between Blake's prophetic system and Active Inference, beyond thematic analogy.",
+    "Three empirical implications are proposed, concerning expert perception, precision modulation in contemplative practice, and psychedelic states.",
+    "The paper acknowledges that its predictions remain untested and no experiment has directly tested the Blake–Active Inference correspondence."
   ],
   "related_papers": [
     "2018_PPPiP",
     "2022_MirrorTest",
     "2023_BlakeFuller"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Blake’s “doors” are statistical boundaries separating self from world; his “Newton’s sleep” is the pathology of rigid priors crushing sensory evidence",
+    "his “fourfold vision” maps onto hierarchical precision-weighting across processing depths; his insistence that “Imagination is the Human Existence itself” anticipates the insight that selfhood is constituted by the generative model.",
+    "Our paper is the first to provide specific formal mappings between Blake’s prophetic system and the mathematical apparatus of Active Inference. We move beyond analogy to structural correspondence",
+    "Three empirical implications follow from the Blake–Active Inference correspondence:",
+    "The predictions generated in §5.2 remain untested."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Theoretical/humanities synthesis. The author frames it as a 'Glass Bead Game' juxtaposition and not as proof that either tradition vindicates the other; the 'first' claim is the author's own."
+  }
 }

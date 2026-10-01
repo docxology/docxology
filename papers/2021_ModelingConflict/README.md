@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management enacted by interacting entities. The AIC model captures and extends OODA loops, the generations of warfare model, and the Rumsfeld Matrix. It aids analysis of modern conflict including cyber...
+> In this paper, we integrate conflict studies with Active Inference, a developing framework which provides an integrative and systems-level perspective on cognition and behavior. This formalization, the Active Inference Conflict (AIC) model, situates conflict in terms of a multiscale process of communication, trust, and relationship management enacted by interacting entities. The AIC model helps...
 
 ## Keywords
 
@@ -18,11 +18,20 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Survey of qualitative and quantitative models of military conflict** — Reviews narrative models (heuristics, military revolutions, generations of warfare), quantitative models (Lanchester, fault trees, DoDAF) and decision models (OODA, Rumsfeld Matrix).
+- **Active Inference Conflict (AIC) model formulated from ActInf** — Applies Active Inference, with expected free energy balancing epistemic and pragmatic value, to frame conflict as multiscale communication, trust and relationship management.
+- **Qualitative mapping of AIC onto OODA, generations of warfare, BOLTS** — Uses AIC qualitatively to relate entity action loops to OODA, move beyond generations of warfare, and model business, operations, legal, technical and social conflict.
+- **Rumsfeld Matrix analysis of the 'unknown-knowns' quadrant** — Uses Rumsfeld's knowledge quadrants as a lens on inter-organizational conflict to examine the neglected unknown-knowns quadrant and the role of trust.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The survey indicated existing warfare models are underdeveloped for non-kinetic, information-based conflict and are rarely interoperable.
+- The authors contend war and politics are both continuations of conflict by other means, revising Clausewitz's dictum.
+- They argue prioritizing the neglected unknown-knowns quadrant offers a pathway to multi-scale risk mitigation in online interactions.
+- They suggest trust-management frameworks could channel information conflicts into generative 'risk commons' structures rather than discord.
+- They recommend treating de-risking as an ongoing process and mining disagreement for value via shared protocols in information-exchange design.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

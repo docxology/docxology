@@ -1,13 +1,13 @@
 # Current Source Coverage
 
-Generated: `2026-10-01T16:36:06Z`
+Generated: `2026-10-01T18:15:40Z`
 
 This report records legitimate bibliography coverage gaps explicitly. A gap is not evidence that a work is invalid; it identifies what is or is not available in the repository projection.
 
 ## Summary
 
 - no_paper_folder: `17`
-- no_full_text: `30`
+- no_full_text: `22`
 - no_doi: `15`
 - no_canonical_url: `2`
 - non_paper_record: `21`
@@ -27,6 +27,7 @@ This report records legitimate bibliography coverage gaps explicitly. A gap is n
 | Friedman2024WritingCurioCardsNFT044 | Paper | no_doi | legitimate_gap |
 | Friedman2023AntsAging058 | Presentation | non_paper_record | legitimate_gap |
 | Friedman2023PostdocReview20202023060 | Presentation | non_paper_record | legitimate_gap |
+| Friedman2023CommentOrNotComment063 | Paper | no_full_text | needs_review |
 | Friedman2023TranscriptChrisFieldsPhysics064 | Course | no_paper_folder, no_full_text, non_paper_record | legitimate_gap |
 | Friedman2022StructuringInformationCommonsOpen071 | Book | no_doi, non_paper_record | legitimate_gap |
 | Friedman2021InnovatorSDigitalPlaybook078 | Playbook | no_paper_folder, no_full_text, no_doi, non_paper_record | legitimate_gap |
@@ -37,6 +38,7 @@ This report records legitimate bibliography coverage gaps explicitly. A gap is n
 | Friedman2020GreatPresetRemoteTeams089 | Book | no_doi, non_paper_record | legitimate_gap |
 | Friedman2019PhDBehavioralPhysiologicalTranscriptomic093 | Paper | no_doi | legitimate_gap |
 | Friedman2018MVEEFrameworkEvolutionaryStudies097 | Presentation | non_paper_record | legitimate_gap |
+| Friedman2018RoleDopamineCollectiveRegulation100 | Paper | no_full_text | needs_review |
 | Friedman2026DynamicAttentionalAgentsFocused111 | Paper | no_full_text | needs_review |
 | Friedman2026IntroductionBiologyGenerativeApproach117 | Book | non_paper_record | legitimate_gap |
 | Friedman2025BiofirmDevelopmentFirstPrinciples128 | Presentation | non_paper_record | legitimate_gap |
@@ -52,14 +54,4 @@ This report records legitimate bibliography coverage gaps explicitly. A gap is n
 | Friedman2017OsteopathyVariableVariabilityHealth163 | Paper | no_paper_folder, no_full_text, no_doi, no_canonical_url | needs_review |
 | Friedman2016CellsMechanobiologyOsteopathy164 | Paper | no_paper_folder, no_full_text, no_doi, no_canonical_url | needs_review |
 | Friedman2026GeneralizedNotationNotationGNN168 | Paper | no_full_text | needs_review |
-| Friedman2026CognitiveIntegrityFrameworkComputational213 | Paper | no_full_text | needs_review |
-| Friedman2026CognitiveIntegrityFrameworkPractical214 | Paper | no_full_text | needs_review |
 | Friedman2026ForensicAuditMillenniumLeanClay215 | Report | non_paper_record | legitimate_gap |
-| Friedman2026SkillarumConditionallyReproducibleWebsite216 | Paper | no_full_text | needs_review |
-| Friedman2026FractiSkillsOnePortableAgent217 | Paper | no_full_text | needs_review |
-| Friedman2026AgenticSecurityOperatingSystems218 | Paper | no_full_text | needs_review |
-| Friedman2026JevPracticeComposablePython219 | Paper | no_full_text | needs_review |
-| Friedman2026GreenLineCapacityUnder220 | Paper | no_full_text | needs_review |
-| Friedman2026BlueLineStewardshipInstrument221 | Paper | no_full_text | needs_review |
-| Friedman2026VioletLineConsentLedger222 | Paper | no_full_text | needs_review |
-| Friedman2026SilverLineMemorySuccession223 | Paper | no_full_text | needs_review |

@@ -18,11 +18,20 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Concept white paper responding to the NGA 'Reimagining Maps' Polyplexus incubator** — The paper is structured around the incubator's driving questions about how emerging knowledge could make maps more flexible and understandable.
+- **Survey of the current geospatial problem space and its key challenge areas** — Part I reviews issues such as interoperability, skill gaps, uncertainty, threat actors, data volume, and accessibility, then condenses them into three challenge areas.
+- **Cross-field review of 'maps' in fields adjacent to cartography** — Part II examines how maps are used in process mapping, software, complex systems, communications, knowledge management, education, ecology, and mathematics.
+- **Narrative case study based on DASA's 'Map the Gap' wet-gap crossing scenario** — A bridge-construction scenario for expeditionary forces in adversarial settings is used to illustrate what reimagined maps might look like.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The authors conclude that across fields and history, mappers face similar challenges: integrating multimodal data, representing uncertainty, user customization, and designing for action rather than archiving.
+- Across the mapping domains reviewed, the authors found the main cutting-edge limitation was the ability to integrate data rapidly, not data availability.
+- They propose BOLTS: data specifications reasonable for Business, Operational, Legal, Technical, and Social use-cases.
+- They argue that BOLTS reasonableness needs metadata to guide transformations, rather than fitting all data to universal schemas.
+- Drawing on OpenStreetMap and Wikipedia practice, the authors suggest future maps may rely on reputation-based 'network-sourcing' rather than crowd-sourcing.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

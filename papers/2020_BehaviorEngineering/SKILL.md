@@ -20,16 +20,23 @@ This work addresses topics in **Active Inference**: behavior engineering, system
 
 Primary methods and techniques applied in this work:
 
-- Agent-based modeling of collective behavior
-- Behavioral engineering and incentive design
+- **Synthesis of FEP/Active Inference narrative work with Systems Engineering** — The authors combine the FEP-ActInf-Narrative literature with Systems Engineering to begin formalizing Remote Team formation and lifecycle management.
+- **OMG Essence Alphas (States and Checklists) applied to Remote Teams** — The Essence framework's seven Alphas, and their SE extension to System Definition and System Realization, are summarized in tables and applied to teams.
+- **Markov Blanket definition of a team as a shared informational niche** — A team is defined as the set of human and non-human agents sharing a specific informational niche, bounded by a Markov Blanket.
+- **ONFT (Ontologies, Narratives, Formal documents, Tools) application framework** — The ONFT framework organizes proposed applications of Active Inference to Remote Team communication design.
+- **Reflexive case: the authors' own all-online team writing this paper** — The authors describe how their Remote Team, formed via a Discord channel and moved to Keybase, used Division of Labor, ONFT and Alphas to produce the paper.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Comprehensive frameworks for Teams should include various functionalities and structures in order to capture the broad range of affordances available for modern Remote Teams, including, but not limited to, synchronous & asynchronous communications, memes, geospatial maps, hardware/software use, and
-- We suggest that Systems Engineering provides guidelines to define the functions of Ontologies, Narratives, Formal documents, and Tools (ONFT) within the context of the life cycle of any System of Interest..
-- Following this ONFT assessment it is possible to break out to sub-systems levels and mechanistic analysis..
+- The authors propose three classes of functional small teams by how members reduce uncertainty about each other: ontological, intimate-trust, and narrative alignment.
+- They argue Remote Teams are especially tractable for formal analysis because most team state transitions are observable.
+- Under their definition, non-communicating entities outside the same informational niche are not part of the same team even if aligned in values or behavior.
+- They suggest required ontological fields for team communication (Date, Time, Sender, Role, Alpha) with optional Seals, Symbols, Context and Signposts.
+- They frame Active Inference as a 'two stroke engine' (Act -> Infer -> Act) for Remote Teams, realized through the team's communicative structure.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 

@@ -39,5 +39,53 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-08-02T15:12:58Z"
+  "checked_at": "2026-08-02T15:12:58Z",
+  "methods": [
+    {
+      "name": "Versioned registry of eleven practices with coarse evidence labels",
+      "description": "Encodes practices such as question-first framing, source traceability, and clean reruns as 'wires', each with reviewed tags and required evidence labels.",
+      "evidence": "A versioned registry names eleven practices in six practice families, each with coarse review labels a collaborator could inspect."
+    },
+    {
+      "name": "Staged evaluate_work evaluator returning four statuses",
+      "description": "Validates configuration and registry, then runs intake normalization, freshness partition, tag matching, and scoring to return ALIGNED, NEEDS_EVIDENCE, NEEDS_REWORK, or OUTSIDE_SCOPE.",
+      "evidence": "runs four stages — intake normalization, freshness partition, tag matching, and scoring with aggregation — and returns ALIGNED, NEEDS_EVIDENCE, NEEDS_REWORK, or OUTSIDE_SCOPE."
+    },
+    {
+      "name": "Structural invariants tested against planted-bad registries",
+      "description": "Seven invariants check the registry's own shape, each demonstrated firing on a deliberately broken registry rather than only passing on the real one.",
+      "evidence": "Seven structural invariants check the registry’s own shape, and each is shown firing on a planted-bad registry rather than merely passing on the real one."
+    },
+    {
+      "name": "Executed adversarial declarations against the real evaluator",
+      "description": "Runs label-stuffing, tag-minimization, and refresh-date laundering attacks to show how self-declared inputs can game the status.",
+      "evidence": "Because every input is self-declared, the instrument can be gamed by construction, and the honest response is to demonstrate the attacks rather than deny them. Each of the following was executed against the real evaluator."
+    },
+    {
+      "name": "Three claim classes with distinct evidentiary burdens",
+      "description": "Separates implementation, methodological, and world/authority claims so that tests or citations do not silently change the type of claim made.",
+      "evidence": "The boundary becomes operational when claims are classified before they are written. Black Line distinguishes three burdens:"
+    }
+  ],
+  "key_findings": [
+    "An ALIGNED status only means every required label for each applicable practice was declared fresh, never that a source is real or a claim true.",
+    "Label-stuffing works: a research-tagged attempt declaring all 22 vocabulary labels with no artifacts returns ALIGNED.",
+    "Coverage is asymmetric: 27 of the 55 tag-practice cells are applicable, computed directly from the registry.",
+    "Seeded permutation sweeps confirm that once a declaration is non-empty the status never regresses, with the empty declaration as the intentional exception.",
+    "The author makes a design and implementation claim only; no user study or outcome comparison was run."
+  ],
+  "key_findings_evidence": [
+    "An ALIGNED status means only that every required label for every applicable practice was declared as fresh under the chosen review date — never that a source is real or a claim is true.",
+    "The registry’s evidence vocabulary contains 22 distinct labels. A research-tagged attempt that simply declares all 22 — with no artifact behind any of them — returns ALIGNED.",
+    "Computed directly from the registry via coverage_matrix, 27 of the 55 tag-practice cells are applicable",
+    "seeded permutation sweeps over incremental declarations confirm that once a declaration is non-empty the status never regresses, with the empty-declaration boundary pinned as the one intentional exception",
+    "I am making a design and implementation claim, not an outcome claim. I have not run a user study, compared teams working with and without Black Line, or measured whether the practices improve correctness, speed, equity, or downstream decisions."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Second work in the author's four-line set (Red/Black/Golden/White Line); findings are about the instrument's behaviour, not effects on work quality."
+  }
 }

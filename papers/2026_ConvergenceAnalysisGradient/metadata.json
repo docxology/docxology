@@ -312,17 +312,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Fixed-step gradient descent on a 1-D convex quadratic (A=1, b=1)",
+      "description": "Runs fixed-step gradient descent on f(x)=½xᵀAx−bᵀx with A=[1], b=[1], analytic optimum x*=1, f(x*)=−0.5.",
+      "evidence": "with 𝐴= [(1.0, )] and 𝑏= [1.0], yielding the analytical optimum at 𝑥∗= 1.0 with 𝑓(𝑥∗) = −0.5."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Six-point step-size grid from α=0.01 to α=2.5",
+      "description": "Sweeps six fixed step sizes spanning conservative, near-optimal, aggressive and divergent regimes, with a gradient-norm tolerance and iteration cap.",
+      "evidence": "We evaluate 6 step sizes from 𝛼= 0.01 to 𝛼= 2.5, spanning conservative, near-optimal, aggressive, and divergent regimes for a unit Hessian model."
+    },
+    {
+      "name": "Comparison to scalar contraction factor ρ(α)=|1−α|",
+      "description": "Relates empirical iteration counts and error decay to the contraction factor of the linear error recurrence for the unit-Hessian case.",
+      "evidence": "so the distance to the minimizer contracts by 𝜌(𝛼) = |1 −𝛼| per iteration whenever 𝜌< 1."
+    },
+    {
+      "name": "Stability grid (8 starts × 6 step sizes) and dimensional scaling benchmark",
+      "description": "Evaluates accuracy over 48 start/step-size combinations and separately times gradient_descent() on identity-Hessian quadratics of increasing dimension.",
+      "evidence": "To validate robustness, the optimizer is exercised across a grid of 8 starting points and 6 step sizes, producing 48 total evaluations."
+    },
+    {
+      "name": "Zero-mock test suite with ≥90% coverage gate and variable-injected manuscript",
+      "description": "Tests src/ without mocks under a CI coverage gate; results are injected into the manuscript from the analysis CSV via placeholders.",
+      "evidence": "The GitHub Actions CI workflow enforces a mandatory >=90% statement coverage gate on projects/temp lates/template_code_project/src/ prior to treating the project as build-green."
     }
   ],
   "key_findings": [
-    "This paper presents a convergence study of fixed-step gradient descent on a convex quadratic, framed as the computational exemplar of the Research Project Template (https://github.com/docxology/templa",
-    "The implementation lives in projects/templates/template_code_project/src/optimizer.py; experiments and figures are orchestrated by projects/templates/template_code_project/scripts/optimization_analysi"
+    "Four of the six grid step sizes converged; the non-converged runs either hit the iteration cap at small α or were unstable when |1−α| ≥ 1.",
+    "α=1.0 reached the optimum in one iteration for this unit-Hessian problem, the fastest configuration.",
+    "The paper reports a stability boundary at α=2: α<2 converges and α≥2 diverges for the unit-Hessian problem.",
+    "In the dimensional benchmark, iterations to convergence rose only modestly (219 to 238) across two decades of dimension.",
+    "The author states the scientific claims are textbook material and the non-standard contribution is procedural (config-driven figures, CSV and manuscript numbers)."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -331,5 +351,19 @@
   ],
   "related_software": [
     "docxology/template_code_project"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Results (this configuration): 4 of 6 grid points report converged=True in the CSV; non-convergent rows flag either slow progress at small 𝛼under the iteration cap or instability when |1 −𝛼| ≥1.",
+    "Fastest configuration in this experiment: 𝛼= 1.0 converges in 1 iteration(s).",
+    "Stability boundary: The critical threshold is 𝛼= 2 for this unit-Hessian problem; 𝛼< 2 converges, 𝛼≥2 diverges",
+    "iterations-to-convergence rises only modestly across two decades of 𝑑(219 →238).",
+    "The scientific claims through sec. 2, sec. 3, and sec. 4 are standard textbook material. The non-standard contribution is procedural:"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Template exemplar; limitations (d=1 emphasis, identity Hessians, constant α only) are stated in sec. 8.4. Internal inconsistencies a reviewer may want to check: the Discussion claims 'uniform solution accuracy across all step sizes' and a 'monotonic relationship between step size and iteration count', and sec. 7.3.2 claims 'uniform convergence across the entire parameter space', but Table 1 shows α=2.5 diverging (inf objective) and α=0.01 capped at 1000, with iterations non-monotonic (1.5→27, 2.5→1000). Release block lists Version 2.5.2 but GitHub tag v2.5.1; README links v2.5.2."
+  }
 }

@@ -172,7 +172,7 @@
         "@type": "Organization",
         "name": "Frontiers in Behavioral Neuroscience"
     },
-    "abstract": "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavioral modeling being applied across settings in theoretical biology and ethology. We specify and simulate a Markov decision process (MDP) model for ant colony foraging using the alternating T-maze...",
+    "abstract": "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavioral modeling that is being applied across settings in theoretical biology and ethology. The ant colony is a classic case system in the function of distributed systems in terms of stigmergic...",
     "keywords": [
         "active inference",
         "ant foraging",
@@ -183,7 +183,7 @@
         "behavioral modeling",
         "eco-evo-devo"
     ],
-    "description": "Active inference agent-based simulation Markov decision process modeling of foraging",
+    "description": "Colonies of foragers with no internal map of the T-maze foraged successfully using local pheromone-following and return-trip deposition rules. Colony size influenced per-nestmate round trips, apparently non-linearly, though the authors draw no generalization because key parameters were not varied. Each colony size quickly converged onto a characteristic range of the inter-ant distance metric. The model recovered basic colony phenomena such as trail formation after food discovery in the T-maze paradigm. Per-forager MDP formulation of active inference — Each simulated ant forager runs its own Markov decision process with A (likelihood), B (transition), and C (pheromone preference) components; ",
     "citation": "Friedman, Daniel Ari. 2021. Active Inferants: An Active Inference Framework for Ant Colony Behavior. Frontiers in Behavioral Neuroscience. DOI: 10.3389/fnbeh.2021.647732. URL: https://doi.org/10.3389/fnbeh.2021.647732.",
     "hasPart": {
         "@type": "CreativeWork",
@@ -284,13 +284,13 @@
         <section class="section">
             <div class="section-header"><h2>Overview</h2><p>Extracted from the local paper documentation when available.</p><div class="section-divider"></div></div>
             <div class="work-detail">
-                <p>In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavioral modeling being applied across settings in theoretical biology and ethology. We specify and simulate a Markov decision process (MDP) model for ant colony foraging using the alternating T-maze...</p>
+                <p>In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavioral modeling that is being applied across settings in theoretical biology and ethology. The ant colony is a classic case system in the function of distributed systems in terms of stigmergic...</p>
                 <div class="keyword-row"><span>active inference</span><span>ant foraging</span><span>Markov decision process</span><span>stigmergy</span><span>T-maze</span><span>collective behavior</span><span>behavioral modeling</span><span>eco-evo-devo</span></div>
             </div>
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Use Notes</h2><p>Concise findings and methods pulled from README/SKILL documentation.</p><div class="section-divider"></div></div>
-            <div class="meta-grid"><div class="work-detail"><strong>Methods / Techniques</strong><ul><li>Active inference agent-based simulation</li><li>Markov decision process modeling of foraging</li></ul></div></div>
+            <div class="meta-grid"><div class="work-detail"><strong>Findings / Concepts</strong><ul><li>Colonies of foragers with no internal map of the T-maze foraged successfully using local pheromone-following and return-trip deposition rules.</li><li>Colony size influenced per-nestmate round trips, apparently non-linearly, though the authors draw no generalization because key parameters were not varied.</li><li>Each colony size quickly converged onto a characteristic range of the inter-ant distance metric.</li><li>The model recovered basic colony phenomena such as trail formation after food discovery in the T-maze paradigm.</li></ul></div><div class="work-detail"><strong>Methods / Techniques</strong><ul><li>Per-forager MDP formulation of active inference — Each simulated ant forager runs its own Markov decision process with A (likelihood), B (transition), and C (pheromone preference) components; the colony is not modelled as one agent.</li><li>In silico alternating T-maze foraging paradigm — Simulated colonies search a T-maze in which the food patch switches arm every 500 of 2,000 time steps, with a decaying attractant trail pheromone.</li><li>Inbound-only trail pheromone deposition rule — Foragers lay attractant pheromone only after finding food and returning to the nest, a strategy modelled on Formica red wood ants.</li><li>Simulations of colony sizes 10, 30, 50, and 70 foragers — Ran 2,000-step simulations at four colony sizes and tracked round trips and a mean Euclidean inter-ant distance coefficient as colony-level phenotypes.</li></ul></div></div>
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Citation</h2><p>Plain-text citation for quick reuse.</p><div class="section-divider"></div></div>

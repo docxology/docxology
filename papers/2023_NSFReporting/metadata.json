@@ -46,24 +46,29 @@
   "checked_at": "2026-06-30T23:25:19Z",
   "domain": "Computational",
   "type": "Paper",
-  "methods": [
-    {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
-    },
-    {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
-    }
-  ],
+  "methods": [],
   "key_findings": [
-    "This report presents an approach for enhancing postdoctoral reporting at the National Science Foundation (NSF) using generative intelligence systems..",
-    "The proposed system integrates updatable profiles, intelligent processing prompts, and a dynamic reporting system to transform how postdocs report their research progress and collaborations..",
-    "The system's design focuses on operational efficiency, real-time evaluation, and a consistent reporting framework.."
+    "Proposes refining NSF postdoctoral reporting with generative intelligence systems to improve efficiency and widen dissemination.",
+    "Proposes updatable postdoc profiles of structured and unstructured data on deliverables, progress, insights and collaborations as the system's input.",
+    "Proposes using prompt engineering to reformat and standardize submissions without distorting factual content.",
+    "Proposes a dynamic system generating real-time, evolving reports, which the author expects to reduce administrative demands on postdocs and program managers."
   ],
   "related_papers": [
     "2023_NaturalAIBased",
     "2025_AuBI",
     "2025_DiscoveryEngine"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Refine postdoctoral reporting at the National Science Foundation (NSF) through generative intelligence systems, bolstering efficiency and broadening dissemination scope.",
+    "Postdocs provide structured and unstructured data regarding deliverables, research progress, insights, collaborations, and more.",
+    "Employ prompt engineering and synthetic intelligence approaches to coherently reformat and standardize submissions, like converting publication details into bullet points without distorting factual content.",
+    "Generates real-time, evolving reports, substantially reducing administrative demands for postdocs and NSF program managers."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "commentary/policy",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "One-page proposal/concept note with no implementation, data or evaluation; methods list intentionally empty and findings are the proposal's stated design elements and anticipated benefits, not demonstrated results."
+  }
 }

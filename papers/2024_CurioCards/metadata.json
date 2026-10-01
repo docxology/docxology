@@ -18,22 +18,34 @@
   ],
   "methods": [
     {
-      "name": "Visual and symbolic analysis",
-      "description": "Applied visual and symbolic analysis approach"
-    },
-    {
-      "name": "Cross-domain pattern mapping",
-      "description": "Applied cross-domain pattern mapping approach"
+      "name": "Catalogue table of all 30 Curio Cards with on-chain metadata",
+      "description": "Lists each card's artist, title, timestamp, medium, chain, contract address, token ID and edition size.",
+      "evidence": "ARTIST NAME TITLE TIMESTAMP MEDIUM CHAIN CONTRACT ADDRESS TOKEN ID EDITION SIZE"
     }
   ],
   "key_findings": [
-    "Curio card format combines artistic design with structured knowledge representation",
-    "Physical-to-digital workflow enables novel forms of scholarly communication and curation"
+    "The authors describe Curio Cards, launched May 9, 2017, as the first art NFT project on Ethereum, framed as a permanent online art show gallery.",
+    "The official set has 30 artworks (plus the misprint 17b) by seven artists, including Daniel Friedman's cards 24-26.",
+    "The authors suggest NFTs 24-29 may be the first physical artworks represented on Ethereum, and card 23 may be the first animated GIF on Ethereum.",
+    "Curio Cards are referenced in the original ERC-721 standard, and the authors argue the project reflects an advance in art and its social and computational aspects."
   ],
   "related_papers": [
     "2018_PPPiP",
     "2022_MirrorTest",
     "2023_BlakeFuller"
   ],
-  "checked_at": "2026-07-01T20:50:01Z"
+  "checked_at": "2026-07-01T20:50:01Z",
+  "key_findings_evidence": [
+    "Curio Cards is the first art NFT project on Ethereum, launched as a perma- nent online art show gallery on May 9, 2017.",
+    "The official set of Curio Cards contains 30 pieces of art (also, there is a misprint of 17, titled 17b).",
+    "The NFTs 24–29 contain perhaps the first physical artworks represented on the Ethereum blockchain, and 23 may be the first animated GIF on the Ethereum blockchain.",
+    "Curio Cards are referenced in the original ERC-721 Non-Fungible Token Standard, and introduced several other computational features that were novel for the time."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "commentary/policy",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Short book contribution (D. A. Friedman & O. C. Ripley) for the Taschen 'On NFT' book; descriptive essay plus catalogue table, no research methods. Bibliography lists no authors; text credits Friedman and Ripley."
+  }
 }

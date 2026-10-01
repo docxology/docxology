@@ -432,7 +432,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#full-text-corpus",
       "name": "Full-Text Extraction Corpus",
-      "description": "189 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 138 images/ subdirectories with 8,936 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
+      "description": "197 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 145 images/ subdirectories with 8,959 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
       "url": "https://danielarifriedman.com/papers/",
       "encodingFormat": "application/json",
       "creator": {

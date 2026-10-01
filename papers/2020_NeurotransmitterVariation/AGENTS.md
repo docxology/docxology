@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Field-collected P. barbatus foragers from 9 colonies near Rodeo, NM, Capillary electrophoresis with fast-scan cyclic voltammetry (CE-FSCV), Field-amplified sample stacking of single-brain homogenates
+- Identifies findings: The method achieved detection limits of 1 nM dopamine, 2 nM serotonin, 5 nM octopamine, and 4 nM tyramine., Dopamine was the most abundant amine per forager brain, followed by octopamine, serotonin, and tyramine., Variation in neurotransmitter content was larger among colonies than within colonies.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

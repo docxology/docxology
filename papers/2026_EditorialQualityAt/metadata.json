@@ -241,17 +241,36 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Five-stage pure-function pipeline: read, analyse, cross-check, evaluate, render",
+      "description": "template_prose_project implements editorial review as five pure-function stages in src/, with scripts limited to argument parsing and I/O.",
+      "evidence": "The pipeline runs in five stages, each a pure function in the project’s src/ modules; the orchestrator script in scripts/ does only argument parsing and filesystem I/O."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Readability metrics: Flesch Reading Ease, Flesch-Kincaid grade, Gunning Fog",
+      "description": "Per-file metrics are computed with textbook readability formulae over a vowel-group syllable heuristic.",
+      "evidence": "The implementations are textbook formulae over a vowel-group syllable heuristic; they’re good enough for a writer-facing signal, not for linguistic research."
+    },
+    {
+      "name": "Heuristic quality flags: passive voice, hedge density, citation density",
+      "description": "A quality analyser flags passive-voice candidates, hedge words, Pandoc [@key] citation density, and long sentences.",
+      "evidence": "passive-voice candidates (heuristic: “be” form + past participle), hedge-word density, citation density (Pandoc-style [@key] extraction), long-sentence flagging."
+    },
+    {
+      "name": "Citation-key cross-check against references.bib with configurable policy",
+      "description": "Every cited key is matched against the BibTeX file, with fail_on_missing / fail_on_unused settings in config.yaml.",
+      "evidence": "Every cited key is matched against the BibTeX file at bibliography.references_path. The check has four tunable behaviours via config.yaml:"
+    },
+    {
+      "name": "Run-twice diff test for byte-identical JSON output",
+      "description": "Reproducibility is checked locally by running the pipeline twice and diffing manuscript_report.json.",
+      "evidence": "The diff should be empty. If it is not, the pipeline has acquired non-determinism — file an issue."
     }
   ],
   "key_findings": [
-    "This paper documents template_prose_project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template).",
-    "It pairs the template's two-layer architecture with the prose analysis infrastructure (https://github.com/docxology/template/tree/main/infrastructure/prose) (readability metrics, structural outline, e"
+    "The paper reports that editorial review can be expressed as a configurable, deterministic pipeline with no novel domain algorithm of its own.",
+    "On the bundled manuscript, the run analysed 8 files totalling 1731 words, with average Flesch-Kincaid grade 15.87 and Gunning Fog 16.67.",
+    "Because no external service is consulted, a second run on the same inputs produces byte-identical JSON (modulo timestamp metadata).",
+    "The stated contribution is architectural: a reusable prose-quality module any template project can opt into, plus a minimal configurable exemplar."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -260,5 +279,18 @@
   ],
   "related_software": [
     "docxology/template_prose_project"
-  ]
+  ],
+  "key_findings_evidence": [
+    "demonstrating that rigorous editorial review can be expressed as a configurable, deterministic pipeline with no novel domain algorithm of its own.",
+    "The current configuration analyses 8 file(s) totalling 1731 words across 86 sentence(s) and 64 paragraph(s). Average Flesch-Kincaid grade level is 15.87; average Gunning Fog index is 16.67",
+    "Because the pipeline does not consult any external service, every artefact is reproducible from the manuscript text + config.yaml alone. A second run on the same inputs produces byte-identical JSON",
+    "The contribution of this exemplar is architectural: a generic, reusable prose-quality module that any project in the template can opt into, and a minimal, configurable exemplar wiring it to the bibliography and the manuscript pipeline."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Paper explicitly states it carries no novel research contribution; run-snapshot numbers are auto-substituted per run and may differ across versions."
+  }
 }

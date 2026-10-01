@@ -36,5 +36,51 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-07-10T19:31:29Z"
+  "checked_at": "2026-07-10T19:31:29Z",
+  "methods": [
+    {
+      "name": "Synthetic demo dataset: two CSV fixtures plus JSON descriptor",
+      "description": "Ships two small deterministic synthetic CSV files (measurements, subjects) described by a machine-readable descriptor with checksums and row counts.",
+      "evidence": "It ships a small, public, synthetic demonstration dataset (two CSV files under data/fixtures/) and a machine-readable descriptor (data/example_descriptor.json)"
+    },
+    {
+      "name": "Six-field data dictionary with typed constraints",
+      "description": "Declares six fields with types, nullability, units, regex patterns, closed enumerations and numeric bounds for the measurement table.",
+      "evidence": "The six declared fields exercise the constraint vocabulary the validator understands:"
+    },
+    {
+      "name": "Order-independent sha256 schema fingerprint",
+      "description": "descriptor_fingerprint() hashes (name, type, nullable) triples so reordering fields does not change the schema fingerprint.",
+      "evidence": "Reordering the fields leaves the fingerprint unchanged, so two descriptors with the same schema hash identically regardless of authoring order"
+    },
+    {
+      "name": "Validation gate with readiness score and perturbed negative control",
+      "description": "validate_descriptor() emits severity-tagged findings folded into a readiness score; a deliberately broken copy tests that the gate reacts.",
+      "evidence": "demo_broken_descriptor() (which strips the license, corrupts a checksum, zeroes a row count, and removes a unit)."
+    },
+    {
+      "name": "Byte-level descriptor-to-file verification",
+      "description": "verify_descriptor_files() recomputes sha256 and row counts of present files and reports verified, mismatch, or absent status.",
+      "evidence": "verify_descriptor_files() recomputes the sha256 digest and data-row count of every declared file that is present on disk and compares them to the descriptor’s declarations"
+    }
+  ],
+  "key_findings": [
+    "The clean fixture descriptor produces zero validation findings, while the deliberately perturbed demo produces several errors and warnings.",
+    "For the shipped fixture, both files verify: declared and actual row counts agree and each recomputed checksum matches, leaving the readiness score unpenalised.",
+    "The paper reports that its zero-mock test suite exceeds the 90% project coverage gate.",
+    "The work explicitly makes no scientific claim about the synthetic data; claims are limited to how to describe and release a dataset."
+  ],
+  "key_findings_evidence": [
+    "The clean fixture produces zero findings; the perturbed demo produces several errors and warnings.",
+    "both files verify, declared and actual row counts agree, and each recomputed checksum matches its declaration, so the readiness score is unpenalised.",
+    "Coverage exceeds the 90% project gate with no mocks.",
+    "This is a template with a demonstration dataset: it makes no scientific claim about the data, only about how to describe and release a dataset responsibly."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Template/exemplar with synthetic data only. Per-paper AGENTS.md lists Domain as Active Inference, although the content is a data-descriptor/FAIR software template with no active inference content."
+  }
 }

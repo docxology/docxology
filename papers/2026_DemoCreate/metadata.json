@@ -75,17 +75,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Declarative Demo schema of typed Actions and narration Chunks (JSON/YAML)",
+      "description": "Represents a demo as a validated value of scenes, narration chunks and typed actions that round-trips losslessly through JSON and YAML; rendering is a pure function of it.",
+      "evidence": "A Demo owns an ordered list of Scene objects. Each Scene declares a SceneKind — one of codebase, website, terminal, or slide — which selects the capture and render strategy for that chapter"
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Abstract backend interfaces with pure-Python deterministic defaults",
+      "description": "TTS, transcription, capture, assembly and PDF ingestion each sit behind an abstract interface whose 'auto' factory resolves to a light default; heavy backends are guarded.",
+      "evidence": "Backend selection is uniform: each subsystem exposes a get_* factory keyed on a name, where \"auto\" always resolves to the deterministic default."
+    },
+    {
+      "name": "TTS-to-STT round-trip with fuzzy trigger-word anchoring",
+      "description": "Narration is synthesized, transcribed back to word-level timestamps, and each action's trigger_word is fuzzy-matched to get an absolute millisecond timestamp.",
+      "evidence": "narration audio is synthesized, transcribed back to word-level timestamps, and each action’s trigger_word is fuzzy-matched against the transcript to receive an absolute millisecond timestamp"
+    },
+    {
+      "name": "Poppler-CLI paper subsystem for research-paper demos",
+      "description": "Reads a PDF with poppler utilities to extract title, abstract (skipping the TOC), captions, sections, figures and pages, and composes them into a narrated demo.",
+      "evidence": "a paper/ subsystem reads a PDF with the poppler utilities (The Poppler Developers 2024) (zero pip dependencies), extracts a title, the real abstract (skipping the table of contents), figure captions, sections, figures, and pages"
+    },
+    {
+      "name": "Real-filesystem test suite, content verifier and benchmark file",
+      "description": "Evaluates the package with a coverage-gated test suite, a verifier that checks rendered video has non-silent, non-black streams, and a reproducible benchmark file.",
+      "evidence": "a content verifier asserts that a rendered video carries real, non-silent, non-black streams. Its measured performance is recorded in a reproducible benchmark file"
     }
   ],
   "key_findings": [
-    "<p>DemoCreate generates audio-visual demos of software &mdash; codebase tours, website walkthroughs, and terminal/CLI demos &mdash; from a single declarative, deterministic spine.",
-    "A Demo is an ordered action stream plus narration chunks, merging CodeVideo's event-sourced virtual-IDE model with VSpeak's chunk/trigger model."
+    "Across 51 source modules in 7 subsystems, 625 tests pass (3 skipped) under a ≥90% coverage gate, achieving roughly 95%.",
+    "The recorded benchmark reports a 25.8 ms median build and 256.7 ms of render compute per second of output, with complete, monotonic sync timestamps.",
+    "DemoCreate produced two content-verified 1080p H.264 videos: a 128.4 s self-explaining package demo and a 188.0 s demo of a 170-page paper.",
+    "The author states DemoCreate is narrower than agentic generators and less specialized than asciinema for terminals, but uniquely combines declarative, deterministic, narrated, paper-capable demos.",
+    "The steganographic provenance payload survives only in lossless PNG sidecars; H.264 encoding destroys it, so the MP4 carries provenance via container tags and on-screen bars."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -94,5 +114,19 @@
   ],
   "related_software": [
     "docxology/democreate"
-  ]
+  ],
+  "key_findings_evidence": [
+    "of 625 passing tests (3 skipped) holds a ≥90% coverage gate — achieving roughly 95% — with thin backend adapters excluded only where they cannot run without proprietary binaries",
+    "a 25.8 ms median build, 256.7 ms of render compute per second of output, and complete, monotonic synchronization timestamps.",
+    "DemoCreate produced two content-verified 1920×1080 H.264 videos: a 128.4-second package demo in which the tool explains itself, and a 188.0-second demo of the Policy Entanglement in Active Inference paper",
+    "The honest summary is that DemoCreate is narrower than the agentic generators in raw output ambition and less specialized than asciinema for pure terminals",
+    "The hidden payload therefore lives in the lossless PNG sidecars only; the MP4 itself carries provenance through its container tags and its on-screen bars, not through hidden pixels."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Software paper; evaluation is the author's own test suite, benchmark file and two example renders, with no user study. The default heuristic transcriber gives length-weighted (not acoustic) word timings; Whisper is the high-fidelity path. Manuscript title in the PDF ('DemoCreate: Declarative, Deterministic Generation of Narrated Demos of Software and Research Papers', dated 2026-06-04) differs from the bibliography title."
+  }
 }

@@ -54,5 +54,53 @@
     "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked"
   ],
-  "checked_at": "2026-09-24T18:29:58Z"
+  "checked_at": "2026-09-24T18:29:58Z",
+  "methods": [
+    {
+      "name": "Typed immutable stimulus request (identifier, parameters, seed, encoding)",
+      "description": "Each stimulus is generated from an immutable request whose value objects validate finite parameter ranges, yielding a canonical image, audio, video or audiovisual artifact.",
+      "evidence": "Its basic unit is an immutable request containing an illusion identifier, validated parameters, a seed, and an encoding specification."
+    },
+    {
+      "name": "Canonical little-endian float32 serialization with SHA digests and v2 manifests",
+      "description": "Canonical arrays plus shape, clock and units are hashed independently of PNG/WAV/GIF/MP4/NPZ delivery, and a v2 manifest records parameters, metrics and verification status.",
+      "evidence": "Canonical arrays are contiguous little-endian float32 buffers with explicit metadata. Serialization includes the array values, shape, clock, and units"
+    },
+    {
+      "name": "Encode-decode verification with format-specific tolerances",
+      "description": "Delivered files are decoded and checked against canonical facts; PNG, GIF, WAV and NPZ use local adapters while MP4 uses an optional ffmpeg backend.",
+      "evidence": "The manifest 𝑀 binds 𝐴, 𝐹 , and 𝐼 through hashes, typed summaries, and format-specific tolerances."
+    },
+    {
+      "name": "Objective media metrics (luminance, RMS, spectral centroid, frame deltas, sync offsets)",
+      "description": "Computes physical or decoded-media metrics with units and computation versions, explicitly kept separate from observer responses.",
+      "evidence": "Luminance statistics, quantization levels, RMS and peak amplitude, spectral summaries, frame deltas, stream durations, and syn- chronization offsets are physical or decoded-media facts."
+    },
+    {
+      "name": "Hand-specified synthetic feature observer (logistic, human_data=false)",
+      "description": "A serialized feature observer with fixed weights and temperature exercises analysis orchestration across parameter sweeps; it is not trained or calibrated on humans.",
+      "evidence": "It is a hand-specified feature observer, not a pretrained vision model and not an empirical psychophysics substitute."
+    }
+  ],
+  "key_findings": [
+    "Version 0.5.0 contains 17 implemented generators and 18 catalog entries, supported by 36 source records and 18 evidence records.",
+    "The publication workflow generates 15 publication figures and 10 machine-derived tables from the live registry.",
+    "The package is framed around falsifiable engineering hypotheses, including that identical typed requests yield identical canonical arrays and digests.",
+    "The author states the validation suite establishes software repeatability, not replicability of an observer effect under new displays, populations or tasks.",
+    "No participant data are bundled; the synthetic observer output is explicitly nonhuman and does not estimate human thresholds or effect sizes."
+  ],
+  "key_findings_evidence": [
+    "Version 0.5.0 contains 17 implemented generators and 18 catalog entries, supported by 36 source records and 18 evidence records in a checked-in audit snapshot.",
+    "The package generates 15 publication figures and 10 machine-derived tables from the live registry.",
+    "1. Identical typed requests produce identical canonical arrays and canonical digests.",
+    "The tests establish repeatability under the declared software and dependency conditions; they do not establish replicability of an observer effect under a new display, playback chain, population, or task.",
+    "No participant data are bundled; synthetic model output is explicitly nonhuman."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Software/methods paper with no human psychophysics; the author repeatedly states that generated stimuli and media metrics are not evidence of perceptual effects, and the observer harness is scaffolding for future preregistered studies. Text says the DOI is forthcoming in one place but lists DOI 10.5281/zenodo.21419693 on the title page."
+  }
 }

@@ -63,16 +63,32 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays approach"
+      "name": "Corpus of 369 entomology publications mined from PubMed and arXiv",
+      "description": "Literature-mining classes queried PubMed (ants/eusocial/colony terms) and arXiv q-bio, then deduplicated and quality-filtered the records.",
+      "evidence": "The primary corpus was assembled by querying two open-access databases — PubMed (NCBI) and arXiv — using the PubMedMiner and ArXivMiner classes implemented in src/data/literature_mining.py ."
     },
     {
-      "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis approach"
+      "name": "Seed-expansion term extraction into six Ento-Linguistic domains",
+      "description": "Tokens matched to domain seed lexicons (e.g. Power & Labor, Kin & Relatedness, Economics) are extended to co-occurring tokens in a 3-token window.",
+      "evidence": "tokens are first matched against a domain seed lexicon, then extended to co-occurring tokens within a 3-token sliding window."
+    },
+    {
+      "name": "Semantic entropy of terms via k-means over TF-IDF usage contexts",
+      "description": "Ambiguity of each sufficiently attested term is scored as Shannon entropy (bits) over clustered usage contexts.",
+      "evidence": "To quantify terminological ambiguity, we compute Semantic Entropy 𝐻(𝑡) for each term 𝑡with suﬀicient attestation (≥5 valid contexts):"
+    },
+    {
+      "name": "Six-layer deterministic analysis pipeline including networks and CACE scoring",
+      "description": "Layers cover extraction, entropy, domain statistics, conceptual networks/centrality, rhetorical scoring, and CACE meta-standard evaluation.",
+      "evidence": "(4) conceptual network construction and centrality analysis, (5) rhetorical and discourse pattern scoring, and (6) CACE meta-standard evaluation."
     }
   ],
   "key_findings": [
-    "Six-domain Ento-Linguistic framework, open-source corpus pipeline (term extraction, co-occurrence networks, semantic entropy), and CACE meta-standards for lexical engineering in entomology."
+    "The corpus (48787 tokens) yields 888 candidate terms, 261 of them assigned to domains, across 6 conceptual clusters linked by 9 weighted relationships.",
+    "Terminology networks are strongly modular with cross-domain bridging, most prominently in Power and Labor, which has 43 bridging terms.",
+    "16.9% of the 261 domain-assigned terms exhibit context-dependent semantic drift.",
+    "Economics terms have the highest mean semantic entropy (1.21 bits) of all domains despite having zero bridging terms.",
+    "CACE scoring of the \"slave\" to \"host worker\" reform shows aggregate scores rising from 0.38 to 0.81."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -86,5 +102,19 @@
   "pairing_confidence": "strong",
   "pairing_evidence": [
     "github_release_mentions_doi"
-  ]
+  ],
+  "key_findings_evidence": [
+    "extracts 888 candidate terms (with 261 assigned to specific semantic domains across 6 conceptual clusters linked by 9 weighted relationships).",
+    "The resulting terminology networks display strong modularity alongside systematic cross-domain bridging—most prominently in the Power and Labor domain, where 43 bridging terms generate extensive semantic bleed-over into adjacent domains.",
+    "Across all 261 domain-assigned terms, 16.9% exhibit context-dependent semantic drift",
+    "Notably, Economics terms exhibit the highest mean semantic entropy (1.21 bits) of all domains despite zero",
+    "Aggregate scores rise from 0.38 (“slave”) to 0.81 (“host worker”)"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "empirical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Computational corpus analysis plus a proposed CACE (Clarity, Appropriateness, Consistency, Evolvability) framework. The semantic-entropy quote preserves an 'ff' ligature (U+FB00) and math-italic characters from extraction. Corpus is English-only, per the paper's stated limitations."
+  }
 }

@@ -26,7 +26,13 @@ No paper-specific methods have been summarized yet; see the abstract and the ful
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The submitters argue Digital Twins are not conceptually new, so lessons on vulnerabilities, exploits and remedies from control theory and cybernetics can be reused.
+- They argue a Digital Twin can never perfectly map its physical counterpart and that the cyber-physical gap inevitably grows over time.
+- They argue the functional surface of a cyber-physical system is essentially indistinguishable from its threat surface.
+- They recommend treating common data and reference management as critical infrastructure for Digital Twin ecosystems.
+- They recommend treating cognitive security of Digital Twin interfaces as equally important to cyber- and network-security in the research portfolio.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 

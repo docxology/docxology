@@ -62,21 +62,50 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Snowball citation-tracking review of combinatorial requirements frameworks",
+      "description": "Starting from well-known frameworks (CIA triad, McCumber Cube, DoDAF), manual citation tracking identified antecedent and derived frameworks; 41 were included as of August 2023.",
+      "evidence": "An exploratory, literature-based “snowballing” method was employed to capture the most relevant combinatorial frameworks for information systems, based upon citations and in-text mentions."
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Coda.io knowledge base and UI for framework collection",
+      "description": "Built a front-end UI and knowledge management system on the low-code Coda.io platform to store bibliographic, visual and textual aspects of each framework.",
+      "evidence": "First a front-end user interface (UI) and an underlying knowledge management system was developed using the low-code data management platform Coda.io to facilitate collection"
+    },
+    {
+      "name": "Phylo-memetic lineage trees of framework clades",
+      "description": "Parent/child relationships from citation histories and direct references were arranged into phylogenetic-type trees grouping frameworks into seven context clades.",
+      "evidence": "This lineage information was processed into a phylogenetic-type arrangement, resulting in “clades” of frameworks based on their common characteristics and lineages."
+    },
+    {
+      "name": "Sorting framework dimensions into Properties, Processes, Perspectives",
+      "description": "Dimensions and attributes of the collected frameworks were categorized into three general categories that form the basis of the proposed P3IF.",
+      "evidence": "All dimensions and underlying attributes of all examined frameworks fit into one of the following emergent categories: Properties, Processes, or Perspectives (see Table 3)."
     }
   ],
   "key_findings": [
-    "The Properties, Processes, and Perspectives Inter-Framework (P3IF) multiplexes interdisciplinary requirements frameworks to manage information risk and foster cognitive security.",
-    "Analysis of P3IF provides structu..."
+    "All dimensions and attributes of the examined frameworks fit into one of three emergent categories: Properties, Processes, or Perspectives.",
+    "Derivative frameworks tend to be released as standalone replacements and are generally not backwards compatible.",
+    "The more expansive multi-factor frameworks were the most difficult to document due to inconsistent documentation, variable proliferation and visualization limits.",
+    "The paper proposes P3IF, a modular abstraction layer between existing frameworks that extends rather than replaces them.",
+    "The authors state the analysis is not an exhaustive or systematic meta-analysis but an initial snapshot of a sample of frameworks."
   ],
   "related_papers": [
     "2020_EmergentTeams",
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
-  ]
+  ],
+  "key_findings_evidence": [
+    "All dimensions and underlying attributes of all examined frameworks fit into one of the following emergent categories: Properties, Processes, or Perspectives (see Table 3).",
+    "each derivative release tends to be considered its own, standalone novel framework to replace the previous one. Later frameworks tend to not be “backwards compatible.”",
+    "the more expansive (multi-factor) frameworks tended to be the most difficult to document, due to inconsistencies in documentation, proliferation of variables, and limitations of visualization.",
+    "P3IF enables flexible requirements engineering for complex information systems by providing a modular abstraction layer between existing frameworks, extending their value without replacing them.",
+    "The work as presented here is not considered an exhaustive compilation or systematic meta-analysis of all available frameworks for information systems, nor of all versions of the frameworks which have been included."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "review",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Framework review plus conceptual proposal; health security used as an illustrative domain. No quantitative evaluation of P3IF."
+  }
 }

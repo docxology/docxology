@@ -31,5 +31,53 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-07-10T19:31:22Z"
+  "checked_at": "2026-07-10T19:31:22Z",
+  "methods": [
+    {
+      "name": "Four-module reader architecture: fonds_reader, rules_applier, tools_invoker, integration",
+      "description": "One Python reader module per resource category (data pools, governance rules, executable tools) plus an orchestrator that runs all three.",
+      "evidence": "This paper introduces template_pools_rules_tools, a meta-project exemplar that resolves this dilemma with a four-module archi- tecture (fig. 1). Each module handles one resource category plus a fourth orchestration module:"
+    },
+    {
+      "name": "Typed YAML manifests (fonds.yaml, rules.yaml, tools.yaml) for discovery",
+      "description": "Each shared resource exposes a typed manifest that its reader uses for discovery and validation; consumers never modify resources.",
+      "evidence": "Each resource exposes a typed manifest (fonds.yaml, rules.yaml, tools.yaml) that the corresponding reader module uses for discovery and validation."
+    },
+    {
+      "name": "Repo-root-relative path resolution and graceful-degradation readers",
+      "description": "Paths resolve via pathlib parents[N]; readers check existence, catch yaml.YAMLError, log warnings and return empty values rather than raising.",
+      "evidence": "Graceful degradation: every reader checks file existence before parsing and catches yaml.YAMLError around the parse itself, logging a warning and returning a safe empty value either way."
+    },
+    {
+      "name": "{{TOKEN}} injection of runtime statistics into the manuscript",
+      "description": "A script hydrates manuscript tokens from integration-run JSON just before pandoc renders, so counts in the prose come from the pipeline.",
+      "evidence": "Hydrate {{TOKEN}} values and inject them into output/manuscript/ immediately before rendering"
+    },
+    {
+      "name": "Real-file tests (no mocks), property-based tests and a negative control",
+      "description": "Nine test files exercise the eight src/ modules with real YAML/BibTeX files; one test monkeypatches the source to prove tokens are live-wired.",
+      "evidence": "Tests use real file paths, real YAML files, and real BibTeX content rather than mocks, ensuring that coverage numbers reflect genuine code paths through the resource-discovery logic."
+    }
+  ],
+  "key_findings": [
+    "In a representative run, the integration demo loaded 3 fonds, validated 2 rule sets, discovered 3 tools and processed 8 bibliography entries.",
+    "The paper claims typed manifests shift failure detection from runtime to pipeline startup, which it frames as an improvement for reproducibility.",
+    "It proposes a three-level resilience design (resource absence, schema malformation, script absence) so the pipeline reports failures informatively instead of crashing.",
+    "The authors argue a manifest-and-reader pattern avoids the packaging overhead of shared libraries, the lost validation of symlinks, and the setup burden of environment variables.",
+    "Stated limitations include structural-only validation by default, no concurrency handling against parallel writers, and a small-scale design assumption."
+  ],
+  "key_findings_evidence": [
+    "In a representative pipeline run, the integration demo loaded 3 fonds, validated 2 rule sets, discovered 3 tools, and processed 8 bibliography entries",
+    "A typed manifest convention (fonds.yaml, rules.yaml, tools.yaml) that makes resource capabilities explicit and checkable at pipeline initialisation time, shifting failure detection from runtime to startup",
+    "A three-level resilience design — resource absence, schema malformation, and script absence — that allows the pipeline to degrade gracefully and report failures informatively rather than crashing",
+    "The manifest-and-reader pattern adopted here — versioned typed manifests, repo-root-relative discovery, and graceful degradation — sits between these alternatives: no packaging overhead, structured validation, and zero required environment configuration.",
+    "The architecture tolerates absence gracefully; it does not guarantee atomicity against concurrent writers."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Software exemplar paper; run counts are auto-injected snapshots and the paper itself warns that test/coverage numbers drift."
+  }
 }

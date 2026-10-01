@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Seven Blattodea species spanning solitary cockroaches to OPT and ST termites** — Two cockroaches and five termite species of low (one-piece) and high (separate life type) social complexity were sampled from BAM Berlin lab colonies and populations.
+- **Hexane extraction and GC-MS/MS profiling of cuticular hydrocarbons** — CHCs from single cockroaches or pools of three termite workers were analyzed by GC-MS/MS and quantified as relative proportions in MassHunter.
+- **UPGMA chemical dendrogram on Manhattan distances vs published phylogeny (Mantel test)** — A chemical dendrogram from Manhattan CHC distances was compared with the He et al. (2021) molecular phylogeny using Mantel tests with 9999 permutations.
+- **HMM-based counting of CHC biosynthesis gene transcripts in whole-body transcriptomes** — HMMs built from orthologs across 17 insect proteomes were searched against the seven species' proteomes with hmmsearch, then verified against Swiss-Prot.
+- **Poisson GLM and chi-square tests of transcript and compound counts** — A Poisson GLM compared transcript counts across social complexity levels, and a chi-square test compared transcript counts with CHC compound counts per species.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- A total of 134 CHC compounds were identified across the representative termite and cockroach species.
+- No consistent pattern of CHC chemical complexity paralleled the levels of social complexity across the studied Blattodea species.
+- The chemical dendrogram did not reflect the molecular phylogeny; a Mantel test found no significant correlation between them.
+- Total CHC biosynthesis gene transcript counts did not correlate with the total number of CHC compounds detected per species.
+- Counts of CHC biosynthesis gene transcripts did not vary systematically by social complexity level.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

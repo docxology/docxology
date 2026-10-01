@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Transcribed ActInf Livestream #048 series (48.0, 48.1, 48.2), 48.0 introductory walkthrough of aims, claims, abstract and roadmap, Author-participation panel discussions with first author Rémi Tison
+- Identifies findings: Tison explains that the paper aimed to give ecological and enactive approaches a view of communication that does not rely on content or representation, unlike the transmission view., Tison states that content exists but is not at the basic level of cognition; it must be explained by a theory of communication rather than presupposed., Tison reflects that defining a shared field of affordances as the subset common to two individual fields neglects the autonomy of the interaction dynamics.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

@@ -36,5 +36,51 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-09-24T19:35:41Z"
+  "checked_at": "2026-09-24T19:35:41Z",
+  "methods": [
+    {
+      "name": "Per-project consent ledger with four recorded states",
+      "description": "Defines a ledger of (party, state, scope, date) records where absence of consent is represented only by an explicit UNRECORDED state.",
+      "evidence": "The ledger records four states: CONSENTED, DECLINED, WITHDRAWN, and UNRECORDED Definition 1."
+    },
+    {
+      "name": "Staged, fail-closed intake with set-aside codes",
+      "description": "Intake dispositions every submitted record as KEPT or one of four set-aside codes with a preserving note, never dropping or inventing states.",
+      "evidence": "Intake first dispositions every submitted record: KEPT, or one of four set-aside codes (malformed, unreadable date, future date, unknown state), each carrying a note that preserves the submission Definition 3."
+    },
+    {
+      "name": "Tag-matched rule registry producing three verdicts",
+      "description": "Versioned consent rules are matched to projects by declared tags and scored against the kept ledger to yield ACCOUNTED, UNACCOUNTED, or OUT_OF_SCOPE.",
+      "evidence": "Rules are then matched to the project by declared tags and scored against the kept ledger Definition 2. A rule is ACCOUNTED only when the kept ledger holds the states it requires"
+    },
+    {
+      "name": "Formal definitions and propositions bound to tests",
+      "description": "States the instrument's behaviour as definitions and propositions (non-permission, fail-closed, declines persist, scope travels) linked to a claim-ledger test.",
+      "evidence": "All formalism references in this manuscript resolve to blocks declared in 03b_formalism.md and are bound by tests/test_form alism_claim_ledger.py through data/formalism_claim_ledger.json."
+    },
+    {
+      "name": "Worked example reviews",
+      "description": "Illustrates behaviour with a community interview study, a fully set-aside submission, and an out-of-scope project.",
+      "evidence": "A community interview study declares tags research and community and submits two records: interviewees CONSENTED with scope “quoted, named”, and a moderator UNRECORDED."
+    }
+  ],
+  "key_findings": [
+    "In the worked interview example, one UNRECORDED moderator entry causes the review to return UNACCOUNTED, with absence recorded rather than inferred.",
+    "Empty, fully set-aside, or unscorable inputs return UNACCOUNTED with a note rather than raising an exception or a fabricated value.",
+    "No verdict, including ACCOUNTED, grants or implies permission; it describes ledger coverage only.",
+    "The author notes the instrument cannot verify that a recorded state was given honestly, freely, or recently, and that ACCOUNTED is coverage, not safety."
+  ],
+  "key_findings_evidence": [
+    "The review keeps both records, applies the naming, recording, and decline rules, and returns UNACCOUNTED with reasons naming the UNRECORDED entry. Absence is recorded; nothing is inferred.",
+    "For every empty or fully set-aside scan set, and for every unscorable registry, the review returns UNACCOUNTED with an explanatory note and zero findings; no path raises an exception or returns a fabricated value.",
+    "No verdict grants, implies, or encodes permission.",
+    "It cannot verify that a recorded state was given honestly, freely, or recently. • ACCOUNTED is coverage, not safety: a complete ledger of coerced consent is still complete."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Short software/instrument specification with formal definitions; no empirical data."
+  }
 }

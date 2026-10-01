@@ -21,15 +21,19 @@ This work addresses topics in **AII Ecosystem**: ontology alignment, SUMO, Activ
 
 Primary methods and techniques applied in this work:
 
-- Suggested Upper Merged Ontology (SUMO) formalization
-- Cross-domain ontology alignment
+- **Tentative term-by-term alignment of Active Inference topics to SUMO entities** — Built an alignment table proposing, for a subset of Active Inference Ontology terms, the SUMO files, supersets, subsets and relations likely to correspond to each topic.
+- **Grouping Active Inference topics into modules and core/entailed/supplemental lists** — Organized topics into informal modules (e.g. Action, Bayesian Statistics, Markov Partitioning) and assigned each to one of three exposition lists.
+- **Structured SUMO columns: superclass/instanceOf, subclasses, domains, other relations** — Situated each aligned term in SUMO via columns for more-general relations, less-general subclasses/subrelations, argument domains, and other SUMO relations.
+- **Flagging proposed terms absent from SUMO with an asterisk** — Marked candidate terms not yet present in SUMO with an asterisk prefix (e.g. *ActiveState), indicating where new SUMO topics would be needed.
 
 ## Key Findings
 
 Core contributions and results:
 
-- SUMO formalization enables principled cross-domain reasoning for AI systems
-- Upper ontology alignment bridges cognitive science and artificial intelligence through shared category structures
+- The document provides a scaffolding: a tentative alignment of Active Inference terms with SUMO entities, intended to support a later rigorous mapping of Active Inference to SUMO.
+- The alignment table shows, for many core Active Inference terms, SUMO areas likely to hold corresponding topics or where new topics should be created to better match Active Inference concepts.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 

@@ -18,11 +18,20 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Five-stage gold-refining analogy mapped to manuscript operations** — Maps ore, smelting, assaying, cupellation, and certification onto manuscript template-infrastructure operations such as claim removal, evidence checks, and cross-reference resolution.
+- **Seeded SHA-256 mega-madlib token selection from a config-owned lexicon** — Selects domain vocabulary tokens deterministically from lexicon categories declared in config.yaml so every prose token is traceable to its config key.
+- **Monotone-purity constraint enforced in code and tests** — Stage purity values must strictly increase, enforced by assert_monotone_increase in src/refinery.py and covered by the test suite.
+- **Karat grading of stage purities via karat_for_purity()** — Maps each stage's purity fraction to a standard gold fineness grade (9K to 24K and nine-nines) in src/purity.py.
+- **Deterministic seeded regeneration of all outputs** — The pipeline regenerates figures, data, and reports from the same config and source code; the reported run used seed 431.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The paper argues the analogy is load-bearing rather than only rhetorical, since each metallurgical stage corresponds to a real template-infrastructure operation.
+- The exemplar pipeline reports a monotone purity sequence over 5 stages ending at the nine-nines certification stage.
+- The token engine generated 8 tokens from seed 431 across 4 lexicon categories, each traceable in a provenance table.
+- The paper explicitly does not claim empirical validation of manuscript quality metrics or generalizability of its purity fractions.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

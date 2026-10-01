@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Analysis of Dr...
+- Extracts methods: Markdown elements modeled as states in a stochastic decision process, MarkChain, PolicyOptimizer and BeliefUpdater components, Evaluation corpora: technical docs, arXiv papers, blogs, mixed
+- Identifies findings: The paper reports higher structural similarity for MarkChain than baselines, with higher-order chains performing better at the cost of longer generation time., BeliefUpdater is reported as more calibrated than rule-based approaches but slightly less accurate than a BERT classifier., Reported scalability is approximately linear in document size, with policy optimization the most computationally costly operation.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

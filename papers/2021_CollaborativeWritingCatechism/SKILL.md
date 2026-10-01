@@ -27,7 +27,13 @@ No paper-specific methods have been summarized yet; see the abstract and the ful
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Sets out procedures, protocols and etiquette for asynchronous, remote catechism-based writing teams, organized by before, during and after the project.
+- Recommends that teams converge on a writing approach, describing at least five styles: single primary writer, partition, joint, scribe and hybrid.
+- Advises that changes to approaches, processes and expectations be declared and compared against the catechism to prevent mission creep.
+- Recommends giving honest, constructive critique first and positive feedback second when asked for feedback after a project.
+- Calls for a post-project debrief or 'hotwash' to plan next steps, future meetings and publicity.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 

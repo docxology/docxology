@@ -20,15 +20,21 @@ This work addresses topics in **Active Inference**: Free Energy Principle, Karl 
 
 Primary methods and techniques applied in this work:
 
-- Active inference modeling of consciousness
-- Bayesian mechanics of self-organizing systems
-- Philosophical analysis of Markov blanket formalism
+- **Written Q&A interview of Karl Friston by Fortier and Friedman** — The work is a published interview: Martin Fortier and Daniel A. Friedman pose long-form questions and Karl Friston answers in writing.
+- **Interviewer-framed contrasts of Bayesian brain, predictive coding and FEP** — Questions set out formal Bayesian belief-updating equations and contrast the three frameworks before asking Friston to respond.
+- **Questions drawing on empirical literatures (fluency, psychosis, altered states)** — Interviewers bring in specific prior work, e.g. Chetverikov's fluency/disfluency 'sweet spot' results and competing models of psychosis, as prompts.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Friston recounts that the prototype of the FEP came from noticing, at age eight, that woodlice simply moved faster in the sun and slower in the shade.
+- Friston distinguishes the FEP as an unfalsifiable principle from process theories such as predictive coding, which are empirically testable hypotheses.
+- Friston argues the Bayesian brain and predictive coding lack the enactive aspect of the FEP because they do not consider entropy reduction.
+- Friston contends that apparent inverted-U 'sweet spots' are all explained by minimizing expected free energy, not by different laws at different levels.
+- Friston holds that consciousness is the process of inference, so any free-energy-minimizing system is conscious to some degree; self-awareness requires a self-other model.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 

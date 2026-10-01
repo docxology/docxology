@@ -98,7 +98,7 @@ def pdf_rows(folder: Path) -> str:
     )
 
 
-def image_gallery_link(folder: Path) -> str:
+def image_gallery_link(folder: Path, work_title: str = "") -> str:
     """Return GitHub-backed image previews for the repository-only binaries."""
     images_dir = folder / "images"
     if not images_dir.is_dir():
@@ -112,14 +112,17 @@ def image_gallery_link(folder: Path) -> str:
     count = len(img_files)
     # Show up to 6 thumbnail previews
     thumbs = img_files[:6]
-    # Build descriptive alt text from folder name + image filename
-    folder_title = folder.name
+    # Alt text names the work itself (not the folder id) so screen-reader
+    # users hear what the figure belongs to.
+    folder_title = work_title.strip() or folder.name
     thumb_html = '<div class="image-thumbs">'
     for img in thumbs:
         # Extract page number from filename like "page10_img1.png" or "slide1_img1.png"
-        page_match = __import__('re').search(r'(?:page|slide)(\d+)', img.name)
-        page_num = page_match.group(1) if page_match else img.stem
-        alt_text = f"Figure from {folder_title}, page {page_num}"
+        page_match = __import__('re').search(r'(page|slide)(\d+)', img.name)
+        if page_match:
+            alt_text = f"Figure from {folder_title}, {page_match.group(1)} {page_match.group(2)}"
+        else:
+            alt_text = f"Figure from {folder_title} ({img.stem})"
         raw_url = "https://raw.githubusercontent.com/docxology/docxology/main/" + \
             "/".join(quote(part) for part in (*folder.relative_to(REPO_ROOT).parts, "images", img.name))
         tree_url = "https://github.com/docxology/docxology/tree/main/" + \
@@ -234,7 +237,7 @@ def render_page(work: dict) -> str:
             <div class="artifact-grid">
                 <div class="artifact-card"><strong>Documentation</strong><p>{required_links(folder)}</p></div>
                 <div class="artifact-card"><strong>PDF Files</strong><ul>{pdf_rows(folder)}</ul></div>
-                <div class="artifact-card"><strong>Extracted Content</strong><p>{image_gallery_link(folder) or '<span class="muted">Full text extraction pending.</span>'}</p></div>
+                <div class="artifact-card"><strong>Extracted Content</strong><p>{image_gallery_link(folder, work['title']) or '<span class="muted">Full text extraction pending.</span>'}</p></div>
             </div>
         </section>
     </main>

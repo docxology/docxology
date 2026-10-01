@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T16:38:39Z",
+  "generated_at": "2026-10-01T18:17:05Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -65,14 +65,14 @@
   "signal_totals": {
     "persistent_id": 204,
     "public_archive": 162,
-    "open_full_text": 189,
+    "open_full_text": 197,
     "source_documents": 202,
     "executable_code": 72,
     "agent_readable": 202
   },
   "band_counts": {
-    "independently reproducible": 156,
-    "independently checkable": 46,
+    "independently reproducible": 159,
+    "independently checkable": 43,
     "citable only": 8,
     "unverified": 9
   },
@@ -80,12 +80,12 @@
     "0": 9,
     "1": 4,
     "2": 4,
-    "3": 8,
-    "4": 38,
-    "5": 93,
-    "6": 63
+    "3": 10,
+    "4": 33,
+    "5": 89,
+    "6": 70
   },
-  "mean_score": 4.708,
+  "mean_score": 4.744,
   "works": [
     {
       "num": 5,
@@ -1409,6 +1409,153 @@
       },
       "repositories": [
         "millennium_audit"
+      ]
+    },
+    {
+      "num": 216,
+      "citation_key": "Friedman2026SkillarumConditionallyReproducibleWebsite216",
+      "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "Skillarum"
+      ]
+    },
+    {
+      "num": 217,
+      "citation_key": "Friedman2026FractiSkillsOnePortableAgent217",
+      "title": "FractiSkills: One Portable Agent Skill per Page",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "FractiSkills"
+      ]
+    },
+    {
+      "num": 218,
+      "citation_key": "Friedman2026AgenticSecurityOperatingSystems218",
+      "title": "Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "agentic_os_security"
+      ]
+    },
+    {
+      "num": 219,
+      "citation_key": "Friedman2026JevPracticeComposablePython219",
+      "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "daf-jev"
+      ]
+    },
+    {
+      "num": 220,
+      "citation_key": "Friedman2026GreenLineCapacityUnder220",
+      "title": "Green Line: a capacity-under-development instrument",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "green_line"
+      ]
+    },
+    {
+      "num": 221,
+      "citation_key": "Friedman2026BlueLineStewardshipInstrument221",
+      "title": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "blue_line"
+      ]
+    },
+    {
+      "num": 223,
+      "citation_key": "Friedman2026SilverLineMemorySuccession223",
+      "title": "The Silver Line: A Memory-and-Succession Instrument",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "silver_line"
       ]
     },
     {
@@ -3051,114 +3198,47 @@
       "repositories": []
     },
     {
-      "num": 216,
-      "citation_key": "Friedman2026SkillarumConditionallyReproducibleWebsite216",
-      "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+      "num": 213,
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkComputational213",
+      "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
       "year": 2026,
-      "domain_name": "Computational",
+      "domain_name": "Cognitive Security",
       "type": "Paper",
       "score": 5,
       "band": "independently reproducible",
       "signals": {
         "persistent_id": true,
         "public_archive": true,
-        "open_full_text": false,
+        "open_full_text": true,
         "source_documents": true,
-        "executable_code": true,
+        "executable_code": false,
         "agent_readable": true
       },
-      "repositories": [
-        "Skillarum"
-      ]
+      "repositories": []
     },
     {
-      "num": 217,
-      "citation_key": "Friedman2026FractiSkillsOnePortableAgent217",
-      "title": "FractiSkills: One Portable Agent Skill per Page",
+      "num": 214,
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkPractical214",
+      "title": "Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)",
       "year": 2026,
-      "domain_name": "Computational",
+      "domain_name": "Cognitive Security",
       "type": "Paper",
       "score": 5,
       "band": "independently reproducible",
       "signals": {
         "persistent_id": true,
         "public_archive": true,
-        "open_full_text": false,
+        "open_full_text": true,
         "source_documents": true,
-        "executable_code": true,
+        "executable_code": false,
         "agent_readable": true
       },
-      "repositories": [
-        "FractiSkills"
-      ]
+      "repositories": []
     },
     {
-      "num": 218,
-      "citation_key": "Friedman2026AgenticSecurityOperatingSystems218",
-      "title": "Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "agentic_os_security"
-      ]
-    },
-    {
-      "num": 219,
-      "citation_key": "Friedman2026JevPracticeComposablePython219",
-      "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "daf-jev"
-      ]
-    },
-    {
-      "num": 220,
-      "citation_key": "Friedman2026GreenLineCapacityUnder220",
-      "title": "Green Line: a capacity-under-development instrument",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "green_line"
-      ]
-    },
-    {
-      "num": 221,
-      "citation_key": "Friedman2026BlueLineStewardshipInstrument221",
-      "title": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
+      "num": 222,
+      "citation_key": "Friedman2026VioletLineConsentLedger222",
+      "title": "The Violet Line: A Consent Ledger of Affected Parties",
       "year": 2026,
       "domain_name": "Active Inference",
       "type": "Paper",
@@ -3167,35 +3247,12 @@
       "signals": {
         "persistent_id": true,
         "public_archive": true,
-        "open_full_text": false,
+        "open_full_text": true,
         "source_documents": true,
-        "executable_code": true,
+        "executable_code": false,
         "agent_readable": true
       },
-      "repositories": [
-        "blue_line"
-      ]
-    },
-    {
-      "num": 223,
-      "citation_key": "Friedman2026SilverLineMemorySuccession223",
-      "title": "The Silver Line: A Memory-and-Succession Instrument",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "silver_line"
-      ]
+      "repositories": []
     },
     {
       "num": 23,
@@ -3445,25 +3502,6 @@
       "repositories": []
     },
     {
-      "num": 63,
-      "citation_key": "Friedman2023CommentOrNotComment063",
-      "title": "To comment or not to comment",
-      "year": 2023,
-      "domain_name": "Genetics & Biomedical",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": false,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
       "num": 68,
       "citation_key": "Friedman2022FromUsersSenseMakers068",
       "title": "From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking",
@@ -3673,25 +3711,6 @@
       "repositories": []
     },
     {
-      "num": 100,
-      "citation_key": "Friedman2018RoleDopamineCollectiveRegulation100",
-      "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
-      "year": 2018,
-      "domain_name": "Entomology",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": false,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
       "num": 101,
       "citation_key": "Friedman2017MutAntsAreHere101",
       "title": "The MutAnts are here",
@@ -3863,63 +3882,6 @@
       "repositories": []
     },
     {
-      "num": 213,
-      "citation_key": "Friedman2026CognitiveIntegrityFrameworkComputational213",
-      "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
-      "year": 2026,
-      "domain_name": "Cognitive Security",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 214,
-      "citation_key": "Friedman2026CognitiveIntegrityFrameworkPractical214",
-      "title": "Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)",
-      "year": 2026,
-      "domain_name": "Cognitive Security",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 222,
-      "citation_key": "Friedman2026VioletLineConsentLedger222",
-      "title": "The Violet Line: A Consent Ledger of Affected Parties",
-      "year": 2026,
-      "domain_name": "Active Inference",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
       "num": 28,
       "citation_key": "Friedman2025TowardsScienceConsciousnessSocial028",
       "title": "Towards a Science of Consciousness and Social Complexity... For Ants",
@@ -3970,6 +3932,25 @@
         "persistent_id": false,
         "public_archive": false,
         "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 63,
+      "citation_key": "Friedman2023CommentOrNotComment063",
+      "title": "To comment or not to comment",
+      "year": 2023,
+      "domain_name": "Genetics & Biomedical",
+      "type": "Paper",
+      "score": 3,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": false,
         "source_documents": true,
         "executable_code": false,
         "agent_readable": true
@@ -4046,6 +4027,25 @@
         "persistent_id": false,
         "public_archive": false,
         "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 100,
+      "citation_key": "Friedman2018RoleDopamineCollectiveRegulation100",
+      "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
+      "year": 2018,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 3,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": false,
+        "open_full_text": false,
         "source_documents": true,
         "executable_code": false,
         "agent_readable": true

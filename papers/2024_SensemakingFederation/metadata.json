@@ -64,22 +64,40 @@
   "type": "Presentation",
   "methods": [
     {
-      "name": "Content production",
-      "description": "Applied content production approach"
+      "name": "Lightly edited transcript of a recorded Sensemaking Scenius panel",
+      "description": "The work is a readability-edited transcript of a December 5, 2024 online panel; the recording is the reference for verbatim quotes.",
+      "evidence": "This version of the transcript has been lightly edited for readability. For verbatim quotations, please refer to the original recording."
     },
     {
-      "name": "Pedagogical design",
-      "description": "Applied pedagogical design approach"
+      "name": "Facilitated panel (~45 min) followed by open Q&A with participants",
+      "description": "Kristen Pavle facilitated, Daniel Friedman moderated panelists Park, Parent and Bhatia, with chat questions taken in a later discussion phase.",
+      "evidence": "So we will have a panel discussion with Marc-Antoine, Jack, and Sonny. Daniel will facilitate that. We've got some prompt questions in our back pocket, but it's going to be a bit freewheeling."
     }
   ],
   "key_findings": [
-    "This transcript comes from an event &ldquo;Sensemaking Federation: Exploring the Frontiers of Digital Innovation&rdquo; on December 5, 2024: https://www.youtube.com/watch?v=5R3VmqrE2Zg , hosted by the Sensemaking Scenius http://welcome.scenius.space ..",
-    "The panel was facilitated by Kristen Pavle and featured Jack Park, Marc-Antoine Parent, Aaditya (Sonny) Bhatia, and Daniel Friedman, as well as other participants at the meeting..",
-    "This version of the transcript has been lightly edited for readability.."
+    "Jack Park describes his vision of a federation of servers acting as digital public libraries indexing knowledge artifacts created in epistemic communities he calls K-Hubs.",
+    "Marc-Antoine Parent proposes nested, recursive frames as the unit of knowledge to bridge informal stories and formal data for federation.",
+    "Parent proposes 'forking meaning': concepts found ambiguous get a distinguishing question and branches, producing an update cascade to reduce ambiguity in the federation.",
+    "Sonny Bhatia argues trust is easier under a final decision authority with set protocols, but must be built slowly in ad hoc communities.",
+    "Park rejects the premise of a single ontology for sensemaking, describing instead a plurality of ontologies, with IBIS used for structured conversation in SenseCraft."
   ],
   "related_papers": [
     "2018_MVEE",
     "2023_AntsAging",
     "2023_PostdocReview"
-  ]
+  ],
+  "key_findings_evidence": [
+    "logically it consists of a plurality of federation servers. Now, I refer to them actually as digital public libraries where they maintain an indexed and annotated collection of all of the knowledge artifacts that are created in what my diagram calls K-Hubs.",
+    "So nesting frames I think is both familiar to our mind and its structures. They're frames, they're schemas. We know how to do schemas in computer science.",
+    "And the notion of forking meaning as a way to - and there is a kind of update cascade there, but I think it's a very healthy update cascade to reduce ambiguity in the federation.",
+    "In the case of communities that are ad hoc and just working together, just groups coming together, trust has to be built, it takes a lot of time and effort.",
+    "There is no \"the\" ontology for sensemaking. The ontology community has for years tried to invent the upper ontology that would satisfy all the universe. It's not happening."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Panel transcript; findings are attributed views of individual speakers, not results. Bibliography author is 'Sensemaking Scenius'; the transcript lists Park, Parent, Bhatia and Friedman as authors."
+  }
 }

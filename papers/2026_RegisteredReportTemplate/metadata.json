@@ -36,5 +36,51 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-07-10T19:31:16Z"
+  "checked_at": "2026-07-10T19:31:16Z",
+  "methods": [
+    {
+      "name": "Content-hashed registration freeze plus completeness validation",
+      "description": "The registration is deep-copied and stamped with a SHA-256 hash over sorted-key JSON, then checked for required sections such as hypotheses, outcomes, exclusion rules, and analysis plan.",
+      "evidence": "freeze_registration deep-copies the registration, strips any pre-existing hash, and stamps a canonical SHA-256 hash over the sorted-key JSON encoding."
+    },
+    {
+      "name": "Seeded synthetic two-group dataset (n = 24 per group)",
+      "description": "Instead of real data, a seeded generator draws control values from Normal(0, 1) and treatment values from Normal(0.8, 1) to demonstrate the workflow.",
+      "evidence": "It draws n = 24 control observations from Normal(0, 1) and n = 24 treatment observations from Normal(0.8, 1) using a single seeded generator, so the entire dataset is a pure function of the plan seed."
+    },
+    {
+      "name": "Two-sided label-permutation test with 2000 shuffles and add-one correction",
+      "description": "The registered primary model tests the group mean difference at alpha = 0.05 using 2000 seeded label shuffles.",
+      "evidence": "Primary model — a two-sided label-permutation test on the group mean difference."
+    },
+    {
+      "name": "Deviation ledger classifying executed elements as ok, warning, or error",
+      "description": "build_deviation_ledger records each executed outcome and model and grades unregistered elements by whether a documented rationale exists.",
+      "evidence": "build_deviation_ledger produces one row per executed outcome and model, classifying each as ok (registered), warning (an unregistered element carried with a documented rationale), or error (an unregistered element with no rationale)."
+    },
+    {
+      "name": "Deliberately plan-divergent demo analysis to exercise the ledger",
+      "description": "The demo adds a secondary_score endpoint and swaps the permutation test for a linear model, each with a rationale, to show how deviations are recorded.",
+      "evidence": "it adds a secondary_score endpoint and swaps the registered permutation_test for a linear_model, each accompa- nied by a rationale."
+    }
+  ],
+  "key_findings": [
+    "On the synthetic data the registered test gives an observed mean difference of 1.003 and a two-sided permutation p-value of 0.0005, with 0 of 2000 shuffles at least as extreme.",
+    "With both documented deviations, the review packet stays valid, keeps primary_score as the only confirmatory outcome, and reports an integrity score of 0.9.",
+    "The author states that the result says nothing about any real-world phenomenon, because the data are synthetic and the effect is injected by construction.",
+    "The template turns registered-report discipline into code checks, such as a content hash that makes silent edits to the locked plan detectable."
+  ],
+  "key_findings_evidence": [
+    "the registered test yields an observed mean difference of 1.003 with a two-sided permutation p-value of 0.0005 (0 of 2000 shuffles at least as extreme), significant at the preregistered alpha = 0.05.",
+    "Because both departures are documented, the review packet remains valid: it reports primary_score as the only confirmatory outcome, secondary_score as exploratory, and an integrity score of 0.9",
+    "It does not show anything about any real-world phenomenon. The data are synthetic and the effect is injected by construction",
+    "The content hash on the frozen registration makes silent edits to the locked plan detectable (hash_mismatch)."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Explicitly a template, not an empirical study; all numbers come from seeded synthetic data."
+  }
 }

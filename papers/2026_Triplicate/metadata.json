@@ -195,17 +195,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Pure-Python engine rendering YAML content to a print-ready PDF",
+      "description": "template_newspaper reads a masthead manifest and per-page YAML files and renders a twelve-page large-format newspaper to PDF.",
+      "evidence": "We present template_newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML content."
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Hybrid drawn-furniture / ReportLab-flowed-body layout strategy",
+      "description": "Fixed furniture is drawn on the canvas first, then body copy flows through ReportLab frames via Frame.addFromList, splitting paragraphs across columns.",
+      "evidence": "pours the flowables into the frames with ReportLab’s Frame.addFromList, which splits paragraphs across columns automatically."
+    },
+    {
+      "name": "Nine single-responsibility modules with a deterministic four-step pipeline",
+      "description": "Editions are produced by Load, Measure, Compose and Emit steps across modules such as geometry, content, typography, figures, layout and engine.",
+      "evidence": "Producing an edition is a deterministic, four-step method, run by the pipeline and covered end-to-end by the test suite:"
+    },
+    {
+      "name": "Procedural Pillow halftone scenes and monochrome Matplotlib charts",
+      "description": "Photographic elements are procedural grayscale Pillow scenes with a 45-degree halftone screen; data graphics are black-and-gray Matplotlib charts.",
+      "evidence": "Photo- graphic elements — the harbor, the lighthouse, the redwoods — are procedural grayscale scenes drawn with Pillow and passed through a forty-five- degree halftone screen"
+    },
+    {
+      "name": "pytest end-to-end render tests, mypy type checking, ruff linting",
+      "description": "A pytest suite tests the pure logic and renders the edition end-to-end, asserting a valid twelve-page PDF at correct trim with no over-set page.",
+      "evidence": "renders the real edition end-to-end, asserting that the output is a valid PDF of exactly twelve pages at the correct trim with no over-set page."
     }
   ],
   "key_findings": [
-    "We present template_newspaper, a pure-Python engine that renders a complete\ntwelve-page, large-format newspaper to a print-ready PDF from structured YAML\ncontent.",
-    "The exemplar edition is The Triplicate, a homage to the historic\nnewspaper of Crescent City, California (founded 1879)."
+    "The engine keeps content and code strictly separate, so producing a new newspaper title is a data edit rather than a code change.",
+    "Drawing furniture first and starting column frames below it lets spanning headlines, standing boxes and automatic text flow coexist on one page.",
+    "Rendering is deterministic: the same edition manifest always yields a byte-identical paper.",
+    "The bold weight in a .ttc font collection sits at a face-specific subfont index; an early render produced italic Didot headlines from assuming the wrong index.",
+    "The test suite reports roughly ninety-five percent line coverage."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -214,5 +234,18 @@
   ],
   "related_software": [
     "docxology/template_newspaper"
-  ]
+  ],
+  "key_findings_evidence": [
+    "while keeping a strict separation between content (data) and engine (code): a new title is a data edit, never a code change.",
+    "drawing the furniture first, and beginning the column frames below it, makes spanning headlines, standing boxes and automatic text flow coexist on the same page.",
+    "Every step is pure-data-in, artifact-out and seeded deterministically, so the same edition manifest always yields a byte-identical paper",
+    "an early render produced italic headlines because the bold index was assumed to be one rather than two.",
+    "The engine is type-checked with mypy and linted with ruff, and the test suite reports roughly ninety-five percent line coverage."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge."
+  }
 }

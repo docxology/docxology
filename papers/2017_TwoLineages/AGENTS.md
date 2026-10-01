@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: See paper
-- Identifies findings: See paper
+- Identifies findings: The authors argue that workers in dependent-lineage systems are not hybrids in the usual sense, because both lineages contribute to colonies of a single species that cannot persist without both., Because a queen must mate with at least one male of each lineage, the authors note (with Romiguier et al.) that such species likely have large, population-wide mating aggregations., Citing their prior long-term study finding no ecological differences between lineages, the authors suggest the system may be maintained by lineage differences in male production rather than ecological forces.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Publish or Perish / Google Scholar search for FEP, ActInf and Friston papers, BioPython query of open-access PubMed papers for full-text subset, PyPDF2 term-frequency extraction using Active Inference Ontology terms
+- Identifies findings: From the larger FEP/ActInf citation corpus, the analysis focused on an initial set of 237 open-access papers obtained via PubMed., The most highly cited papers in the open-source dataset were from 2013 and all included Karl J. Friston as an author., By citations per year, Friston is not in the top five first authors; Sterzer (109.3) and Carhart-Harris (108.5) lead, and top papers by this metric date from 2018–2020.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

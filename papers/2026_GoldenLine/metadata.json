@@ -39,5 +39,53 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-08-02T15:12:53Z"
+  "checked_at": "2026-08-02T15:12:53Z",
+  "methods": [
+    {
+      "name": "Python package with a versioned nine-entry aspiration registry",
+      "description": "Each aspiration pairs a thread and horizon with lists of Markers (signs of movement toward) and Counter-signals (signs of movement away).",
+      "evidence": "The executable instrument is a small Python package with a versioned aspiration registry of nine entries — four founding aspirations and five further ones — and a staged progress_report evaluator."
+    },
+    {
+      "name": "Staged progress_report evaluator (intake, matching, decision)",
+      "description": "Horizon entries are screened and normalized, matched against declared markers/counter-signals, and mapped to TOWARD, INQUIRY, DRIFTING, or NOT_OBSERVED without numeric scores.",
+      "evidence": "progress_report reads a batch of horizon entries against the versioned registry in three stages, and every finding it returns carries a full reasons trail plus structured derivation fields"
+    },
+    {
+      "name": "Formal definitions and propositions bound to named tests",
+      "description": "The evaluator's decision rule is restated as definitions and propositions matching the code, each tied to a test, plus seven structural invariants with planted-bad detection tests.",
+      "evidence": "records seven structural invariants, each proven by a planted-bad proof-of-detection test."
+    },
+    {
+      "name": "Descriptive analysis helpers and code-derived figures",
+      "description": "Pure read-only helpers (signal_inventory, horizon_distribution, temporal_currentness_sweep, report_overview) generate figures, several replaying the evaluator on synthetic entries.",
+      "evidence": "A small analysis module sits beside the evaluator and is deliberately weaker than it: every helper is pure, deterministic, and read-only, and none can change what a reading means."
+    },
+    {
+      "name": "Scholarship lineage for the founding aspirations",
+      "description": "Situates the four founding aspirations in a lineage from practical wisdom and practice-internal goods through capabilities, repair, commons governance, and metric hazards.",
+      "evidence": "in a lineage running from practical wisdom and goods internal to a practice through the capability approach, reflective practice, repair, commons governance, technical power"
+    }
+  ],
+  "key_findings": [
+    "Counter-signal precedence: any recorded declared counter-signal yields DRIFTING regardless of how many markers were observed or staleness.",
+    "TOWARD requires every declared marker and no counter-signal; there is no partial credit, so all-but-one marker reads the same as none.",
+    "Stale or date-unauditable fully-marked observations yield INQUIRY rather than DRIFTING; the currentness sweep shows an exclusive boundary (current at 90, stale at 91 days).",
+    "The shipped registry declares 18 markers and 9 counter-signals, all distinct; the paper stresses this counts vocabulary, not fulfilment.",
+    "The author acknowledges the instrument does not handle the adversarial case: an observer can file the tokens that produce a TOWARD."
+  ],
+  "key_findings_evidence": [
+    "the status is DRIFTING, regardless of how many markers were observed and regardless of staleness.",
+    "There is no partial credit: an entry recording every marker but one reads exactly as an entry recording none.",
+    "exposing the exclusive staleness boundary (current at age 90, stale at 91 for a 90-day window) as an observed trajectory rather than a claim.",
+    "for the shipped registry, 18 markers and 9 counter-signals, with every token distinct — describing the vocabulary the evaluator can match, never its fulfilment.",
+    "so an observer who wants a TOWARD can file the tokens that produce one, and no clause ordering prevents it."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Software/formal instrument paper; results are properties of the evaluator's own rules and synthetic replays, not empirical findings. The paper explicitly says a reading is not a compliance score or certification."
+  }
 }

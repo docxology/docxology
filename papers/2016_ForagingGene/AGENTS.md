@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Field collection of Pogonomyrmex barbatus workers in five task/age groups, 24 h time-of-day sampling at 4 h intervals, Light exposure experiment: 13 L : 11 D versus constant darkness
+- Identifies findings: Foraging mRNA levels are linked to changes over weeks in worker age, location, and task, and show significant daily oscillations in foragers., Foragers have high foraging mRNA levels during daylight hours, when they are most active outside the nest., Under a 13 L : 11 D light cycle, oscillations appeared in foragers but not in brood workers.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

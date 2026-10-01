@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: MVEE reflects where I was at in January 2018 ( solo presentation ) in thinking about Biology, Evolution, Active Inference, Free Energy Principle, and more.., Uploaded to Zenodo in 2024..
+- Extracts methods: Extension of Variational Neuroethology (Ramstead et al. 2017) to evolution, Genotype-Environment-Phenotype tensor representation through time, Pairing of state models and process models across scales
+- Identifies findings: The talk claims EcoEvoDevo is stuck in a locally-optimizing regime because of an incoherent genotype-phenotype-environment and fitness framing., It argues the data, theory and philosophy already exist for a tractable generalized model of evolution, with the challenge being integrating VNE with classical theory using limited data., It critiques VNE's human-cognition case study as not yet operationalized for actual data and unclear for other evolutionary systems.
 - Maps contributions to Presentations & Media literature
 
 ### 🎓 EDUCATOR

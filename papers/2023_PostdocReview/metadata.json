@@ -47,20 +47,43 @@
   "type": "Presentation",
   "methods": [
     {
-      "name": "Content production",
-      "description": "Applied content production approach"
+      "name": "Review structured by six working areas",
+      "description": "The slide deck organizes 2020-2023 postdoc outputs into Biology, Entomology, Active Inference, Cognitive Security, Meta-Science, and Philosophy & Arts.",
+      "evidence": "Biology b. Entomology c. Active Inference d. Cognitive Security e. Meta-Science f. Philosophy & Arts"
     },
     {
-      "name": "Pedagogical design",
-      "description": "Applied pedagogical design approach"
+      "name": "GPT-4 (via Perplexity.ai) per-paper summaries",
+      "description": "Each paper was uploaded to GPT-4 via Perplexity.ai with a fixed prompt asking for Context, Contributions, and Implications paragraphs, shown on a Coda website.",
+      "evidence": "For this presentation, I used GPT4 via Perplexity.ai to upload each paper and ask the following prompt"
+    },
+    {
+      "name": "Overview followed by 10 highlighted works",
+      "description": "After an overview of all works, the talk presents 10 highlights sorted by working area rather than by relevance.",
+      "evidence": "Following the overview section, I will cover 10 highlights. The highlights are sorted by working area, not relevance."
     }
   ],
   "key_findings": [
-    "A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Sci"
+    "The review frames the period as an NSF Postdoctoral Research Fellowship in Biology (award 2010290), October 2020 to October 2023.",
+    "The deck reports 375+ Active Inference livestreams over 2020-2023, with transcripts at the Active Inference Journal, as part of the Active Inference Institute ecosystem work.",
+    "It highlights Active Inferants (2021) as the first Active Inference model of stigmergic collective behavior and an extensible framework for ant behavior.",
+    "Beyond research, it reports 230 total drawing livestreams (about 150 in the last three years), plus Synergetics and PaperStreams on a personal channel."
   ],
   "related_papers": [
     "2018_MVEE",
     "2023_AntsAging",
     "2025_BiofirmDevelopmentWith"
-  ]
+  ],
+  "key_findings_evidence": [
+    "NSF: 2010290 - October 2020 to October 2023 Postdoctoral Research Fellowships in Biology (PRFB)",
+    "375+ livestreams on Active Inference 2020-2023 along with transcripts at the Active Inference Journal",
+    "First Active Inference model of stigmergic collective behavior ● Sets up extensible framework for studying the diversity of Ant behaviors; foraging and beyond",
+    "230 total drawing livestreams (~150 during the last 3 years)."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "presentation/transcript",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Slide deck for a livestreamed self-review; findings are the author's self-reported outputs and characterizations of highlighted works, not research results. Several slides are image-only."
+  }
 }

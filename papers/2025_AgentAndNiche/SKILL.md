@@ -20,13 +20,19 @@ This work addresses topics in **Art & Synergetics**: William Blake, Marriage of 
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Section-by-section dialogue between Blake's text and ecological-psychology prose** — The work pairs passages of Blake's The Marriage of Heaven and Hell with commentary prose framed in active inference and ecological terms.
+- **Paraphrastic rewriting of Blake's lines in information-theoretic vocabulary** — Each Blake passage is followed by a reworking that substitutes concepts such as singular value decomposition, priors and free energy for Blake's imagery.
+- **Self-declared speculative, LLM-assisted composition** — The author states an explicitly speculative epistemic status and notes the influence of Claude 4.5 in composing the text.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The text reads Blake's 'without contraries is no progression' as opposition generating the potential landscape that enables directed motion.
+- It casts organisms as active inference engines that construct the niches and possibility spaces they then navigate.
+- It concludes by framing 'everything that lives is holy' as a recognition of negentropy and self-modelling systems.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +60,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.17235137`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

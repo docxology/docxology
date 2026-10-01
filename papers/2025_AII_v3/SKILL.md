@@ -20,13 +20,21 @@ This work addresses topics in **AII Ecosystem**: Active Inference Institute, org
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Collaboratively edited living Coda document (v3 snapshot) by a named author team** — Snapshot of the Institute & Ecosystem living document, which authors edited with a full trace of edits; earlier versions date from 2023 and 2024.
+- **Structure inherited from the 2023 paper and extended Sept-Nov 2024** — The document's sections derive from the 2023 paper and were expanded by contributors in late 2024.
+- **Preparation and Measurement stages for project proposals and reporting** — Describes how Institute projects are proposed and reported, with Measurement form updates feeding the monthly newsletter.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Analysis of Covers the institu...
+- Describes the Institute as a registered Delaware non-profit supporting education, research and ecosystem services, and a 501(c)(3) as of 2024.
+- Reports that the Institute's Discord server, its primary discussion and meeting venue, has over 1000 people.
+- Reports that the Institute had released over 500 videos to date.
+- Reports that RxInfer.jl Learning Group meetings in 2024 included over 20 active contributors.
+- Frames the Institute's approach as cultivating an 'open' ecosystem rather than a closed, laboratory-centric approach to Active Inference.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +62,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.17982447`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

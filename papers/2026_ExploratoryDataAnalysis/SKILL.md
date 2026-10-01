@@ -20,13 +20,23 @@ This work addresses topics in **Computational**: exploratory data analysis, comp
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Synthetic 120-record measurement cohort with a fixed seed** — Analyzes a shipped deterministic CSV of height, weight and resting heart rate across three groups, with designed correlations and a few blank cells.
+- **Listwise deletion with a reported CleaningReport, no imputation** — clean_dataset() drops rows missing any numeric feature and records rows in, remaining and dropped, rather than imputing.
+- **Descriptive statistics, group means and Pearson correlation ranking** — Computes per-column summaries and per-group means, then ranks distinct feature pairs by absolute Pearson correlation via strongest_pairs().
+- **Side-effect-free src/eda library with figure-data preparers** — Library functions return plot-ready frozen dataclasses (histogram bins, heatmap grid, category counts); only the thin script and notebook call matplotlib.
+- **Zero-mock pytest suite, notebook-binding check and >=90% coverage gate** — Tests exercise real data with exact expected statistics, parse the .ipynb to check imports and absence of cell-defined logic, and enforce coverage.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- With the shipped data, four rows with missing values are removed, leaving a complete-case dataset.
+- The correlation ranking recovers the designed strong positive height–weight relationship, with resting heart rate only weakly related.
+- All tests pass with coverage above the 90% project gate and no mocks.
+- The paper states its contribution is procedural: the same tested functions back the notebook, the headless script and the manuscript.
+- Stated limitations: a single small synthetic cohort, listwise deletion only, Pearson correlation only, and static outputs only.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21086292`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

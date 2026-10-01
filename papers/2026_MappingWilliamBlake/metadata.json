@@ -55,21 +55,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Digital humanities corpus construction",
-      "description": "Applied digital humanities corpus construction approach"
+      "name": "7-phase DAG pipeline (blake) from discovery to reports",
+      "description": "The corpus is built by a directed pipeline of discovery, acquisition, metadata, analysis, visualizations, export, and reports, whose JSON artifacts also populate the manuscript.",
+      "evidence": "The blake pipeline is organized as a 7-phase DAG: discovery, acquisition, metadata, analysis, visualizations, export, and reports."
     },
     {
-      "name": "Evidence-ledger provenance tracking",
-      "description": "Applied evidence-ledger provenance tracking approach"
+      "name": "Versioned canonical target ledger of 104 work-level Blake targets",
+      "description": "A ledger derived from Blake bibliographies, editions, Archive identifiers, and visual catalogues serves as the denominator for coverage claims.",
+      "evidence": "The completeness authority is the target ledger under the canonical profile, version 2026-06-22, with 104 work-level entries."
     },
     {
-      "name": "Rights-bounded release workflow",
-      "description": "Applied rights-bounded release workflow approach"
+      "name": "Tiered source registry with the William Blake Archive as primary authority",
+      "description": "The registry holds the Blake Archive, Project Gutenberg, and Internet Archive, with the Archive given priority when sources disagree and others used as fallback or corroboration.",
+      "evidence": "The William Blake Archive is treated as the primary authority when sources disagree"
+    },
+    {
+      "name": "Descriptive text metrics: tokenization, type-token ratio, lexical sentiment",
+      "description": "Each text-bearing work is tokenized to compute word counts, sentiment, vocabulary richness, and themes, treated as descriptors rather than literary judgments.",
+      "evidence": "The text module tokenizes each text-bearing work, computes word and unique-word counts, estimates lexical sentiment, derives vocabulary richness as type-token ratio"
+    },
+    {
+      "name": "TF-IDF vectors with deterministic PCA/LSA projection over 162 works",
+      "description": "A 120-term TF-IDF vocabulary is built across text-bearing works and projected onto PCA/LSA axes as a reading instrument over local evidence.",
+      "evidence": "constructs a TF-IDF vocabulary of 120 retained terms across 162 text-bearing works, normalizes each work vector, and projects the centered matrix onto deterministic PCA/LSA axes."
     }
   ],
   "key_findings": [
-    "A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source",
-    "This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the open-source software release bundle."
+    "The saved run represents 102 of 104 ledger targets (98.1%) but fully meets the required text/image evidence profile for only 90 (86.5%); 12 are partial and 2 missing.",
+    "The text-bearing subset contains 156 works and 216878 words, and joint text-image diagnostics are available for 33 works.",
+    "The ontology module produced a work-theme graph of 356 nodes and 297 edges, including 16 theme nodes.",
+    "The local analysis ledger reports all 340 works analyzed with 0 recorded analysis errors.",
+    "The author frames the contribution as an auditable corpus-governance method, not a completed or exhaustive analysis of Blake's works."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -78,5 +94,19 @@
   ],
   "related_software": [
     "docxology/blake"
-  ]
+  ],
+  "key_findings_evidence": [
+    "It represents 102 of 104 ledger targets (98.1%) and fully satisfies the required text/image evidence profile for 90 targets (86.5%); 12 targets remain partial and 2 remain missing.",
+    "The text-bearing subset contains 156 works and 216878 words.",
+    "the manuscript reports the graph-level summary of 356 nodes and 297 edges, including 16 theme nodes.",
+    "The local analysis ledger reports 340/340 works analyzed with 0 recorded analysis errors.",
+    "The contribution is an auditable corpus-governance method, not a claim to have completed or exhaustively analyzed Blake’s works."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Computational humanities pipeline paper; counts are descriptive outputs of one saved run."
+  }
 }

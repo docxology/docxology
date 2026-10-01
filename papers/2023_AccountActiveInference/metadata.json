@@ -44,22 +44,38 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Analogy between financial accounting and generative modeling",
+      "description": "The essay frames building Active Inference generative models as accounting rather than calculation, using a spreadsheet/financial accounting situation as the guiding analogy.",
+      "evidence": "The work of developing generative models is more like doing accounting than doing calculation, memorization, or inference itself – the generative model does the inference for us."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Research vs. Application distinction illustrated with a spreadsheet",
+      "description": "Uses the example of validating spreadsheet addition to separate Research questions from question-driven Application.",
+      "evidence": "Basic (and beautiful) questions like “how are numbers added in principle?” and “does this spreadsheet program accurately implement number adding?” are Research questions."
     }
   ],
   "key_findings": [
-    "This report provides a single-page account of Active Inference modeling..",
-    "This report was written entirely by hand without any synthetic computational-linguistic intelligences..",
-    "Thank you to the learners, interns, and participants of the Active Inference Institute to whom I&#39;ve mostly learned from.."
+    "The author argues Active Inference's breadth rests on a first-principles scale-free approach rather than a scheme specific to cognitive systems: it can say more because it says less.",
+    "Building even simple cognitive phenomena (e.g. learning, attention) into the core formulation would, the author argues, restrict the scope of analysis to systems with that character.",
+    "Natural-language descriptors of cognitive phenomena are treated as secondary relational attributions about a realized generative model, not intrinsic aspects of the system.",
+    "The essay suggests the financial–cognitive accounting connection may run deeper than analogy, via category theory, but leaves this to future work."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "key_findings_evidence": [
+    "rests upon a first-principles scale-free approach, rather than a highly-specific scheme for cognitive systems. In other words, Active Inference can be used to say more, because by itself it says less.",
+    "if Active Inference were to include even relatively simple cognitive phenomena (e.g. learning, attention) in its essential particular formulation, this would explicitly restrict the scope of analysis to systems with that character",
+    "natural language or conceptual descriptors of cognitive phenomena are secondary attributions better understood as relational rhetorical assertions using a pattern language of phenomena about a given realized generative model",
+    "Thus the connection among financial and cognitive accounting likely goes far deeper than the analogical or pedagogical. Such connections, and a further account of modeling, awaits future attention and collaboration."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "commentary/policy",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "One-page conceptual essay (Active Inference Institute, 10/6/2023); no data, models, or analyses. Findings are the author's arguments."
+  }
 }

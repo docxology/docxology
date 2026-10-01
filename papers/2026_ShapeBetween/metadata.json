@@ -87,5 +87,26 @@
     "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked"
   ],
-  "checked_at": "2026-09-24T18:29:57Z"
+  "checked_at": "2026-09-24T18:29:57Z",
+  "methods": [
+    {
+      "name": "Storybook PDF generated from a public research-template repository",
+      "description": "The illustrated storybook is presented as a template exemplar produced by a research-template repository, with story and images labeled as illustrative fiction.",
+      "evidence": "Template storybook exemplar, version 0.1.0 Generated in the public research-template repository. Primary artifact: output/pdf/the-shape-between.pdf"
+    },
+    {
+      "name": "Geometric fable drawing on Fuller's Synergetics (tetrahedron in cube)",
+      "description": "The narrative uses geometric motifs (a tetrahedron bracing a cube, tensegrity lantern, vector garden) acknowledged as drawn from Fuller's Synergetics.",
+      "evidence": "for families that make room; and for R. Buckminster Fuller's Synergetics, where triangular structure reveals how a square room can become steady."
+    }
+  ],
+  "key_findings": [],
+  "key_findings_evidence": [],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "other",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Illustrated children's fiction / template exemplar, not a research paper; no findings to report. Text was OCR-extracted and several pages (4, 6, 9, 14) are garbled, so those story pages could not be read."
+  }
 }

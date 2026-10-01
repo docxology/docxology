@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Deterministic codebase-to-GNN translation, Software architecture pattern extraction
-- Identifies findings: See paper
+- Extracts methods: Program-graph IR with confidence and provenance on nodes and edges, Fixpoint translation engine with 22 declarative rules in five families, A/B/C/D matrix derivation and GNN (Generalized Notation Notation) export
+- Identifies findings: On the v0.6.0 roundtrip ledger, all 25 targets are role-preserved, but only 1 of 25 meets strict structural isomorphism., The author cautions that fixtures are in-sample, with no held-out split or confidence intervals, so scores upper-bound rather than estimate out-of-sample performance., The fixpoint ablation shows a single pass suffices on every shipped fixture, with the K=10 cap serving as a safety valve.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

@@ -25,17 +25,16 @@
   ],
   "methods": [
     {
-      "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays approach"
-    },
-    {
-      "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis approach"
+      "name": "Editorial synthesis of four JoVE entomology protocol articles",
+      "description": "Summarizes four video protocols on Atta ant rearing, honey bee pollen collection, bee tissue histology, and agrochemical effects on queens.",
+      "evidence": "This editorial summarizes the protocols associated with modern entomology and aims to communicate recent methodological developments in entomology in order to facilitate their adoption."
     }
   ],
   "key_findings": [
-    "We examine the transformative impact of video technology on experimental entomology..",
-    "Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies...."
+    "The editorial highlights that Topitzhofer et al.'s pollen pipeline relies on passive mesh collection and low-cost visual identification rather than electron microscopy or metabarcoding.",
+    "It notes that Fine et al. and Nogueira et al. address colony-level scaling challenges for eusocial insect study in different ways: queen fecundity assays and large-scale leaf-cutter rearing.",
+    "The authors suggest video presentation of methods may increase their adoptability, proficiency, and reproducibility globally.",
+    "They propose future directions including expanding beyond ants and bees, using ecological databases, and exploring AR, robotics, and cognitive modeling."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -44,5 +43,18 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.3791/65002",
-  "doi_url": "https://doi.org/10.3791/65002"
+  "doi_url": "https://doi.org/10.3791/65002",
+  "key_findings_evidence": [
+    "the pipeline uses the passive collection of pollen with an installed mesh (as opposed to manual collection from single bees) and low-cost visual methods of pollen identification (as opposed to electron microscopy or metabarcoding).",
+    "Two methods here1,4 address these challenges with different approaches. Specifically, in Fine et al.4, the authors report a method for directly assessing the impact of single chemicals on the fecundity of queens",
+    "More broadly, the video presentation of methods may increase the adoptability, proficiency, and reproducibility of methods developed by researchers globally.",
+    "The scope of species could expand beyond ants and bees to include other insects and non-insects. Ecological databases could be leveraged to highlight niches and species where methods might be fruitfully applied."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "commentary/policy",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Short JoVE editorial (4 pages) summarizing other authors' protocols; findings attribute content to the discussed articles or are the editors' views."
+  }
 }

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Analysis of P3IF provides structu...
+- Extracts methods: Snowball citation-tracking review of combinatorial requirements frameworks, Coda.io knowledge base and UI for framework collection, Phylo-memetic lineage trees of framework clades
+- Identifies findings: All dimensions and attributes of the examined frameworks fit into one of three emergent categories: Properties, Processes, or Perspectives., Derivative frameworks tend to be released as standalone replacements and are generally not backwards compatible., The more expansive multi-factor frameworks were the most difficult to document due to inconsistent documentation, variable proliferation and visualization limits.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

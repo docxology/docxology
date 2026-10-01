@@ -65,27 +65,37 @@
   "venue": "Zenodo",
   "methods": [
     {
-      "name": "Generalized Notation Notation (GNN) modeling",
-      "description": "Formal specification of generative models in JSON/YAML format"
+      "name": "Construct-by-construct AlphaFund-to-Active Inference dictionary",
+      "description": "Mapped each AlphaFund whitepaper construct (corporation tuple, EWM, filtration, action vector, t-RSI, etc.) to an Active Inference object.",
+      "evidence": "Below, each AlphaFund construct is matched to its Active Inference counterpart. The match is structural, not metaphorical: the equations coincide."
     },
     {
-      "name": "Active Inference simulation",
-      "description": "NumPy engine for EFE computation and t-RSI evaluation"
+      "name": "GNN model file of the five-channel firm produced via the COGANT pattern",
+      "description": "Wrote AlphaFund's Economic World Model as a Generalized Notation Notation file with channel factors, A/B matrices, log-preferences and an EFE objective, using COGANT's codebase-to-GNN step.",
+      "evidence": "We write AlphaFund’s five-channel EWM as a GNN model file (models/alphafund_ewm.m d): channel factors, likelihood and transition matrices, log-preferences, and an Expected-Free-Energy objective"
     },
     {
-      "name": "Portfolio optimization analysis",
-      "description": "Marginal-return vector computation and epistemic/pragmatic split"
+      "name": "Deterministic tested NumPy Active Inference engine (src/alphacogant/)",
+      "description": "Implemented state inference over channels, the epistemic/pragmatic EFE split, the marginal-return vector, and t-RSI certificate evaluation.",
+      "evidence": "A small, deterministic, fully-tested NumPy engine (src/alphacogant/) performs state inference over the channels, computes the Expected-Free-Energy decomposition into epistemic and pragmatic value"
     },
     {
-      "name": "State inference",
-      "description": "Partially-observed model inference over five capital channels"
+      "name": "Engine-gated manuscript numbers and figure-provenance registry",
+      "description": "Generated every cited numeric from one function and cross-checked it by test, and registered each figure with its producer script and hashed manifest.",
+      "evidence": "every numeric the manuscript cites is a AlphaCOGANT emitted by one function (ma nuscript_variables.generate_variables) and cross-checked by one test"
+    },
+    {
+      "name": "Bootstrap of create/decay posteriors with Dirichlet concentration sensitivity",
+      "description": "Bootstrapped belief uncertainty to compute standardized t-RSI and reported its sensitivity to the Dirichlet concentration parameter alpha.",
+      "evidence": "fig. 11 shows that the headline t-RSI is sensitive to the Dirichlet concentration parameter that controls how tightly bootstrap perturbations hug the operating belief."
     }
   ],
   "key_findings": [
-    "t-RSI metric recovers as standardized EFE-improvement certificate for recursive self-improvement",
-    "Corporate EWM maps to five-channel hidden-state factors: Investments, Sensors, Actuators, Parameters, R&D",
-    "Epistemic value equals information gain about EWM purchased by Sensors/R&D (data-scaling law)",
-    "Filtration integrity constraint enforces no-peeking discipline in corporate modeling"
+    "The paper argues AlphaFund's recursive-self-improvement-as-portfolio-optimization has an Active Inference representation that is expressible in GNN and producible by the COGANT pattern.",
+    "t-RSI is recovered as the standardized distance between create-rate and decay-rate posteriors, i.e. a thresholded EFE-improvement certificate gating self-improvement commits.",
+    "At point-estimate level the comparator discriminates: create exceeds decay (admit) at the self-improving point and falls below it (reject) at the coasting point.",
+    "Caveat: with bootstrapped uncertainty the reduced two-level model's headline t-RSI is negative (-13.2552) at the self-improving point, so it does not robustly certify net improvement.",
+    "The authors state AlphaCOGANT is a modeling and integrity instrument, not a trading system or financial advice, and does not reproduce AlphaFund's proprietary surfaces or track record."
   ],
   "related_papers": [
     "2026_COGANT",
@@ -103,5 +113,19 @@
     "GNN model file for five-channel firm",
     "NumPy Active Inference engine with tests",
     "t-RSI certificate evaluation scripts"
-  ]
+  ],
+  "key_findings_evidence": [
+    "The transferable claim is structural and survives the reduction: AlphaFund’s recursive-self-improvement-as-portfolio-optimization has an Active Inference representation, it is expressible in GNN, it is producible by the COGANT pattern from an API-complete firm",
+    "t-RSI is recovered as the standardized distance between the create-rate and decay-rate posteriors — the thresholded EFE-improvement certificate that admits a self-improvement commit only when creation confidently exceeds decay.",
+    "at the self-improving point create > decay (the gate would admit), while at the coasting point create < decay (the gate rejects).",
+    "The headline t-RSI of -13.2552 standardised units is modestly negative at the self-improving operating point, not because the firm is not self-improving (the point-estimate create-rate does exceed decay)",
+    "AlphaCOGANT is a modeling and integrity instrument, not a trading system and not financial advice. It does not reproduce AlphaFund’s proprietary execution- friction surface, its fitted scaling exponents, or its live track record"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Reduced illustrative model (two capability levels, discrete six-action control, fixed matrices, no cross-channel transition coupling) per the paper's own limitations section; all numbers are properties of that model."
+  }
 }

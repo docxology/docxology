@@ -21,13 +21,21 @@ This work addresses topics in **Genetics & Biomedical**: BevCycPositPrimitive.
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Decomposable chain of nodes (N–N–N) for action/concept sequences** — Proposes BevCYC as a chain of empty nodes for action-context pairs, modeled on epigenetic-cycle ideas, representing action or concept sequences.
+- **Hierarchical decomposition down to muscle tension %** — Nodes are decomposed hierarchically until they resolve to a muscle tension percentage at the lowest level.
+- **Shrinking $$$] / $$] / $] scaffold with interruption slots** — Experiments with a scaffold whose earlier nodes have more slots (L) for interruption or vision/theme injection than later ones.
+- **Worked sketch: cat food-seeking cycle (EpiFoodPlau) as ROS-style nodes** — Illustrates the idea with a cat morning routine of chained triplets (wake–roam–sleep, roam–hunt–roam) treated as ROS nodes with completion checkpoints.
+- **Proposed conversion node/table to robotics frameworks (BT, HTN, STRIPS)** — Suggests converting BevCycles to behavior trees, HTNs, motor primitives or STRIPS planning by adding a conversion node and table.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The authors posit that state–action–state triplets can be treated as state–state–state, deliberately blurring the state/action distinction.
+- The authors suggest a minimal 'silly cat' agent demonstrating only social-cortex logging and applying could be built in the near term.
+- The authors flag that the work is experimental and hypothesized, with later revision for proper active inference modeling contingent on technical help.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -56,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.14737075`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

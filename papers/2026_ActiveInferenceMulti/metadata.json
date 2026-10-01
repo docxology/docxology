@@ -218,17 +218,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Bernoulli–Ising analytical oracle (K=2)",
+      "description": "Closed-form mutual information and free-energy decomposition on a symmetric Bernoulli–Ising toy, cross-checked by an independent exact recomputation via total correlation.",
+      "evidence": "closed-form mutual information and free-energy decomposition on a symmetric Bernoulli–Ising toy with an independent exact-recomputation cross-check"
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Deterministic pymdp T-maze rollout",
+      "description": "A minimal T-maze following pymdp sophisticated_inference examples, defaulting to state_inference with planning horizon policy_len = 2 and logged beliefs and actions.",
+      "evidence": "The pymdp track follows the pymdp sophisticated_inference examples [Heins et al., 2022] with a minimal T-maze and planning horizon policy_len = 2."
+    },
+    {
+      "name": "Sheaf-indexed manuscript compose contract",
+      "description": "Binds 34 composable fragment types to manifest rows under an IMRAD outline, verifying sheaf axioms and negative controls before rendering.",
+      "evidence": "a sheaf- indexed compose contract that binds 34 fragment tracks into 12 flat IMRAD sections."
+    },
+    {
+      "name": "Lean boundary-witness formalization",
+      "description": "Lean modules checked by lake build state small finite T-maze and graph-world witnesses, with axioms audited via #print axioms; explicitly not a broad formalization.",
+      "evidence": "The Lean method is a boundary witness track, not a broad formalization of active inference."
+    },
+    {
+      "name": "Artifact-hydrated reporting with validation gates",
+      "description": "Every reported number is hydrated from generated artifacts and cross-track claims are machine-checked by pipeline gates before the PDF is built.",
+      "evidence": "every reported number is hydrated from a generated artifact and every cross-track claim is machine- checked before rendering"
     }
   ],
   "key_findings": [
-    "We study a minimal Active Inference stack on toy models: a Bernoulli–Ising analytical oracle, a pymdp T-maze rollout, and a sheaf-indexed compose contract that binds 34 fragment tracks into 12 flat IM",
-    "The methodological contribution is a discipline rather than a domain finding: every reported number is hydrated from a generated artifact and every cross-track claim is machine-checked before renderin"
+    "The paper frames its result as a methodological discipline rather than a domain claim: 6 sheaf axioms are machine-checked and 25 negative controls keep failure paths live.",
+    "It reports 12/12 invariant checks passed and a sweep RMSE of 0 nats between analytical and empirical values on the coupling grid.",
+    "The measured state_inference T-maze rollout reports mean belief entropy 0.3251 nats over 2 steps, with goal reached and action diversity 2.",
+    "A coverage audit reports 95 present, 95 bound, and 0 missing cells on the IMRAD matrix.",
+    "The author states the models are pedagogical and validate consistency and artifact wiring, not empirical claims about biological agents."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -237,5 +257,19 @@
   ],
   "related_software": [
     "docxology/template_active_inference"
-  ]
+  ],
+  "key_findings_evidence": [
+    "The result of this manuscript is a discipline, not a domain claim: across three toy models every reported number is hydrated from a generated artifact, 6 sheaf axioms are machine-checked before composition, and 25 negative controls keep each failure path live.",
+    "sec. 12 records 12 / 12 invariant checks passed. SI planning horizon: 2 steps. Sweep RMSE 0 nats bounds analytical–empirical agreement on the coupling grid.",
+    "mean belief entropy 0.3251 nats over 2 steps; goal reached flag 1; action diversity 2.",
+    "Coverage audit: 95 present / 95 bound / 0 missing cells on the IMRAD matrix.",
+    "They validate analytical consistency, ar- tifact wiring, renderer dispatch, and manuscript hydration, not empirical claims about biological agents."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Toy-model/template exemplar; all numbers are from deterministic generated artifacts. Folder holds three PDFs; full_text.md is from Friedman_2026_Active_f191b48f.pdf, whose cover page shows release state 'unpublished / pending pairing'."
+  }
 }

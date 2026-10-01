@@ -18,11 +18,21 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Deterministic re-implementation of AutoScientists coordination mechanisms** — Re-implements AutoScientists' mechanisms (confirmation, dead-end registry, effect-size ranking, reorganization, team partitioning) as individually switchable modules.
+- **Synthetic rippled quadratic objective with seeded noise (d=4)** — Optimizes a 4-D objective with a global peak at the origin, cosine ripples and seeded bounded noise, allowing reported vs clean metric comparison.
+- **Matched 60-experiment sequential budget vs single-thread baseline** — Coordinated teams partition the same sequential budget as a single-thread baseline rather than adding parallel compute.
+- **One-at-a-time per-mechanism ablation via SearchConfig** — Starts from the full coordinated configuration and switches off exactly one mechanism per ablation run.
+- **Pluggable Proposer: deterministic rule-based vs Hermes LLM via Ollama** — Figures use a rule-based DeterministicProposer; a HermesProposer served by Ollama can be swapped in and is tested only by an opt-in test.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- Under the matched budget, coordinated teams and the baseline reach the same clean optimum (advantage 0.0000); coordination was slightly slower to first reach it (16 vs 12 experiments).
+- Noise-band confirmation reduced accepted noise roughly 13-fold (reported-vs-clean gap 0.01565 to 0.00121) on this objective.
+- The dead-end registry cut redundant re-probes from 36 to 0 and let the search halt at 36 rather than 60 experiments, with the clean answer unchanged.
+- Effect-size ranking and reorganization did not change any measured quantity on this objective.
+- The author cautions that these magnitudes are properties of this synthetic objective, budget and deterministic proposer, not general constants.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

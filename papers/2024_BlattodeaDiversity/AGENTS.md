@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Seven Blattodea species spanning solitary cockroaches to OPT and ST termites, Hexane extraction and GC-MS/MS profiling of cuticular hydrocarbons, UPGMA chemical dendrogram on Manhattan distances vs published phylogeny (Mantel test)
+- Identifies findings: A total of 134 CHC compounds were identified across the representative termite and cockroach species., No consistent pattern of CHC chemical complexity paralleled the levels of social complexity across the studied Blattodea species., The chemical dendrogram did not reflect the molecular phylogeny; a Mantel test found no significant correlation between them.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

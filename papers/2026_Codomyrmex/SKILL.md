@@ -21,13 +21,23 @@ This work addresses topics in **Computational**: ai-agents, model-context-protoc
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Colony Control Plane with 8 named subsystems** — The implementation separates signal storage, resource accounting, actuation gating, consequence records, role inference, pruning, deterministic falsification, and integration.
+- **Ternary EXECUTE/HOLD/REFUSE gate with weighted bounded score** — Budget, effective local hazard, trust credit, and proposal completeness are combined into a weighted score with hard overrides that route each proposal.
+- **Stigmergic signal field with FAILURE and RISK pressure at target locations** — Reported failures and prospective risks are stored separately in a process-local field, and the gate uses their maximum as the local hazard.
+- **Contract test suite using real subsystem instances** — Tests check same-target inhibition, cross-target isolation, linear decay recovery, score bounds, trust updates, and interface behavior.
+- **Paired deterministic replay of same-target vs. unrelated-target proposals** — Identical proposals are evaluated with and without a reported failure at the target location to test failure-to-gate coupling.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- The scoped Colony Kernel surface has 819 passing tests with 76.6% branch coverage, 0 Ruff errors, and 0 ty diagnostics.
+- After a reported failure, the paired replay moves the same-target proposal from 0.875/EXECUTE to 0.725/HOLD while an unrelated target is unchanged.
+- The author states these results support reproducible software contracts, not ecological optimality, calibrated risk, production harm reduction, or generalization to external workloads.
+- The proposed comparative benchmark has not been run, and no raw trial traces are included in this release.
+- Default state is in memory, so the artifact does not support claims that pressure, trust, or gate state survive process restarts, model swaps, or deployment across machines.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21750800`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: This transcript comes from an event &ldquo;Sensemaking Federation: Exploring the Frontiers of Digital Innovation&rdquo; on December 5, 2024: https://www.youtube.com/watch?v=5R3VmqrE2Zg , hosted by the Sensemaking Scenius http://welcome.scenius.space .., The panel was facilitated by Kristen Pavle and featured Jack Park, Marc-Antoine Parent, Aaditya (Sonny) Bhatia, and Daniel Friedman, as well as other participants at the meeting.., This version of the transcript has been lightly edited for readability..
+- Extracts methods: Lightly edited transcript of a recorded Sensemaking Scenius panel, Facilitated panel (~45 min) followed by open Q&A with participants
+- Identifies findings: Jack Park describes his vision of a federation of servers acting as digital public libraries indexing knowledge artifacts created in epistemic communities he calls K-Hubs., Marc-Antoine Parent proposes nested, recursive frames as the unit of knowledge to bridge informal stories and formal data for federation., Parent proposes 'forking meaning': concepts found ambiguous get a distinguishing question and branches, producing an update cascade to reduce ambiguity in the federation.
 - Maps contributions to Presentations & Media literature
 
 ### 🎓 EDUCATOR

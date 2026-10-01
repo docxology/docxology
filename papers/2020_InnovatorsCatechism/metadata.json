@@ -52,21 +52,50 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Historical review of military, business and gray-zone operations orders",
+      "description": "Reviews the history, development and organizational impact of military OPORDs and their business counterparts as the basis for the proposed catechism.",
+      "evidence": "This paper summarizes the history, development, and impact of military operations orders, discusses the history and development of their business counterparts"
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Adapting the Facilitator's Catechism with Blank's innovation pipeline",
+      "description": "Combines the authors' earlier catechism-styled OPORD with Steve Blank's innovation pipeline to derive stage-specific question sets.",
+      "evidence": "This paper combines the Facilitator’s Catechism approach with Blank’s recent discussion on an innovation pipeline to produce a family of innovator catechisms."
+    },
+    {
+      "name": "Six-stage partition from Ideation to Integration",
+      "description": "Partitions a startup's journey into Ideation, Curation, Pitch, Exploration, Incubation and Integration, each with its own mission and information requirements.",
+      "evidence": "In the context of the Innovation pipeline [121], we can partition the startup’s journey as occurring through a sequence of stages:"
+    },
+    {
+      "name": "Example renderings of the catechism to NABC, canvas and slide formats",
+      "description": "Illustrates reformatting a filled-in catechism into other pitch formats such as canvas variants, the Heilmeier Catechism and NABC.",
+      "evidence": "First, the IC can be rapidly rendered to the large variety of formats (e.g. canvas variants, Heilmeier Catechism, NABC) asked for by different organizations"
     }
   ],
   "key_findings": [
-    "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives.",
-    "Many of these teams fail due to..."
+    "Presents the Innovator's Catechism, a catechism-styled operations order for early-stage, market-facing innovation teams.",
+    "The IC keeps the Facilitator's Catechism sections but replaces Implications of Outcome with Cost and Benefit.",
+    "Unlike other OPORDs, the IC's questions depend on the team's pipeline stage, forming a 'family' of catechisms that grows as the team progresses.",
+    "The authors identify catechism format, narrative development, versioning and modularity as the IC's distinguishing features.",
+    "The authors recommend IC use in hackathons, accelerators and incubators, and describe it as a first attempt at a catechism-styled OPORD for this area."
   ],
   "related_papers": [
     "2020_EmergentTeams",
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
-  ]
+  ],
+  "key_findings_evidence": [
+    "presented a modified Facilitators Catechism [4] that is specialized for early-stage innovation teams: The Innovator’s Catechism (IC).",
+    "Logistics and Signal, and (g) Footer with one exception, as Implications of Outcome has been replaced with Cost and Benefit.",
+    "the IC is unique among OPORDs in that its questions and format are dependent on the team’s position in an innovation pipeline, creating what could be considered a “family” of catechisms",
+    "The IC has several features that distinguish it from alternative approaches for facilitating development in early-stage startups:",
+    "the Innovator’s Catechism is a first attempt at a catechism-styled OPORD specific to use-cases in this area."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Conceptual/framework paper; the catechism is proposed, not empirically evaluated with teams. Claimed benefits (e.g. increased efficacy) are stated as potential."
+  }
 }

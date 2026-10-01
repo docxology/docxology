@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Proposed stipended community working groups to co-create playbooks, Planned use of generative AI for multi-language, multi-level materials, Planned multi-perspective Summer School curriculum design
+- Identifies findings: The letter commits to producing playbooks for Active Inference adoption targeted at neuroscience graduate students, educators and policy-makers., It commits to an open-source Summer School curriculum in Active Inference, supporting an in-person 2025 event and versioned over subsequent years., The Summer School template is to be published openly so that groups worldwide can run their own courses.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

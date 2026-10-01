@@ -25,17 +25,27 @@
   ],
   "methods": [
     {
-      "name": "Field observation and behavioral assays",
-      "description": "Applied field observation and behavioral assays approach"
+      "name": "Literature review organized by phenotypic trait",
+      "description": "Structures the review of ant genetics by trait: species comparisons, sex, reproductive status, queen number, worker body size, then behavior.",
+      "evidence": "The review is divided into sections according to the phenotypic traits considered."
     },
     {
-      "name": "Population genetics analysis",
-      "description": "Applied population genetics analysis approach"
+      "name": "Coverage of quantitative-genetic, phylogenetic, omic and physiological studies",
+      "description": "Within each section, discusses studies using heritability, DNA sequence homology, RNA abundance, chromatin regulation and enzyme-activity approaches.",
+      "evidence": "Within each section, we discuss a variety of methods. These include quantitative genetic ap- proaches that examine heritability due to genetic, epigenetic, or environmental sources"
+    },
+    {
+      "name": "Comparative survey of published ant genomes",
+      "description": "Draws on the first seven published ant genomes and later public genomes/transcriptomes for cross-species comparisons.",
+      "evidence": "there are now at least 24 ant species with publicly accessible genomes, transcriptomes, or both (http://www.antgenomes.org, accessed Jan. 21, 2015)."
     }
   ],
   "key_findings": [
-    "The behavioral repertoire and ecology of ant colonies emerge from the interactions among individuals, each with distinct genetic, epigenetic, and physiological states.",
-    "Genetic approaches are beginning..."
+    "The authors conclude that despite many results on reproductive physiology and morphology, few studies have investigated the genetics of ant behavior directly.",
+    "The review reports that eusocial hymenopteran genomes show exceptionally high rates of gene turnover.",
+    "Reviewed quantitative genetic studies show heritable differences in task performance among matrilines/patrilines.",
+    "The authors caution that developmental stage, sampled tissue (e.g. whole-body samples) and time of day can strongly affect gene-expression results.",
+    "They identify the feedback between individual physiological changes and socially mediated responses to environment as the next step for ant behavioral genetics."
   ],
   "related_papers": [
     "2016_ForagingGene",
@@ -44,5 +54,19 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1146/annurev-neuro-070815-013927",
-  "doi_url": "https://doi.org/10.1146/annurev-neuro-070815-013927"
+  "doi_url": "https://doi.org/10.1146/annurev-neuro-070815-013927",
+  "key_findings_evidence": [
+    "and suggest that despite many recent exciting results, few studies have investigated the genetics of ant behavior directly.",
+    "The genomes of eusocial hymenopteran species are marked by exceptionally high rates of gene turnover",
+    "Quantitative genetic studies show heritable differences in task performance.",
+    "To investigate ant behavior genetically, we will need to be aware of how different variables, such as the developmental stage, sampled tissue, and time of day, affect results.",
+    "The next step in the study of the genetics of ant behavior will be to learn about the feedback between individual-level physiological changes and socially mediated responses to environmental conditions."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "review",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Narrative review (Annual Review of Neuroscience, 'Review in Advance' version); findings are the authors' synthesis of prior literature, not new data."
+  }
 }

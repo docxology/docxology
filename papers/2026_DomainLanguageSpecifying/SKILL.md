@@ -20,13 +20,23 @@ This work addresses topics in **Computational**: methods paper, domain-specific 
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Controlled vocabulary of 9 step intents and 3 execution targets** — Steps name one of nine intents (TRANSFER, ADD, MIX, etc.) and run on HUMAN, AUTOMATED or SIMULATION targets, generalizing BPL's protocol verbs.
+- **Dimensional-safety unit system (Quantity/Dimension)** — Each quantity resolves to a controlled unit table and combining quantities of different dimensions raises an error at construction rather than at the bench.
+- **Four staged validation gates with short-circuit** — Structural, semantic, plan (acyclicity) and target-compatibility gates run in fixed order, returning early if the first two fail.
+- **Deterministic compilation via Kahn's algorithm and SHA-256 plan hash** — Validated steps are topologically scheduled with an explicit ascending step_id tie-break and the canonical JSON plan is hashed with SHA-256.
+- **Two worked example methods and zero-mock test suite** — Demonstrates the DSL on a wet-lab PBS preparation and an automated sensor-calibration sweep, tested without mocks under a 90% coverage gate.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+- Across the two worked example methods, 8 of 8 staged-gate evaluations passed.
+- Live recompilation of each example method produced identical plan hashes, and a 3-record demonstration provenance hash-chain verified.
+- The author concludes that a controlled vocabulary expressed as typed, validated dataclasses rather than a parsed grammar suffices to reproduce BPL's core safety properties at template-exemplar scope.
+- Stable scheduling depends on the explicit tie-break: Kahn's algorithm alone does not guarantee a reproducible plan hash.
+- The calibration example reused every step kind and target of the wet-lab example, with nothing added to support the second domain.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -54,5 +64,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21086548`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

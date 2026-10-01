@@ -65,17 +65,37 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Software pipeline design",
-      "description": "Applied software pipeline design approach"
+      "name": "Integration of literature morphometrics, ATR-FTIR evidence, ORN timing, and EM models",
+      "description": "Combines published sensilla ranges, FTIR insect-chemistry evidence, olfactory neuron timing constraints, and deterministic electromagnetic models.",
+      "evidence": "We integrate: (i) literature-grounded morphometric ranges for antennal sensilla, (ii) ATR-FTIR evidence that insect body chemistry can support species discrimination, (iii) published olfactory receptor neuron timing constraints"
     },
     {
-      "name": "Data-driven analysis",
-      "description": "Applied data-driven analysis approach"
+      "name": "Coarse atmospheric IR transmission window model with sensitivity terms",
+      "description": "A baseline window model plus humidity, temperature, scattering, and path-length terms, explicitly framed as a scenario generator.",
+      "evidence": "The code should therefore be read as a scenario generator, not as a substitute for line-by-line radiative transfer."
+    },
+    {
+      "name": "Quarter-/half-wave resonance estimates for sensilla as dielectric antennas",
+      "description": "Representative sensilla classes, anchored to published Thripidae measurements, are compared against IR wavelengths via resonance and waveguide calculations.",
+      "evidence": "Insect antennae host micron-scale sensilla that can be compared against IR wavelengths using simple quarter- and half-wave estimates."
+    },
+    {
+      "name": "Unit-tested deterministic code (CohereAnts) with fixed seeds and coverage gate",
+      "description": "All models are implemented in tested src/ modules with seed 42 and a 90% coverage gate, with seven appendix case studies.",
+      "evidence": "All models are unit-tested and reproducible with fixed random seeds (42)."
+    },
+    {
+      "name": "Preregistered IR-only assay protocols with thermal-matched controls",
+      "description": "Specifies single-sensillum electrophysiology, behavioral IR-only assays, and SEM morphometrics with QCL/LED bands and N>=50 per condition.",
+      "evidence": "Preregistered experimental protocols specify QCL/LED bands (2–25 𝜇m), thermal matched controls, power density 0.1–2 mW/cm2, and N>=50 per condition."
     }
   ],
   "key_findings": [
-    "<p>Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration",
-    "The vibrational theory remains contested, so the framework treats IR/vibrational sensing as a testable complement to molecular recognition rather than a replacement for receptor binding ."
+    "The computed figures show where sensillum dimensions, CHC-associated mid-IR bands, and atmospheric windows overlap, but do not by themselves establish biological IR olfaction.",
+    "The framework yields five preregistered falsifiers, including spectral nulls under matched thermal load and geometric mismatch between sensilla and predicted resonances.",
+    "Published insect ORN timing is fast enough that any IR stage would need to be experimentally separated from already-rapid molecular responses.",
+    "Beetle, kissing-bug, ant, cycad, and mosquito examples establish radiant IR sensing precedents but not direct semiochemical IR olfaction.",
+    "Automated peak detection identifies CHC-associated bands that can support species discrimination in ATR-FTIR data, though perceptual use is untested."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -84,5 +104,19 @@
   ],
   "related_software": [
     "docxology/cohereants"
-  ]
+  ],
+  "key_findings_evidence": [
+    "The computational figures show where sensillum-scale dimensions, CHC-associated mid-IR bands, and atmospheric windows overlap, but they do not by themselves establish biological IR olfaction.",
+    "The framework yields five preregistered falsifiers aligned with Section 4: (1) spectral nulls under matched thermal load, (2) geometric mismatch between sensilla dimensions and predicted resonances",
+    "Published insect ORN timing is fast enough that any IR stage must be experimentally separated from already-rapid molecular responses",
+    "establish biological IR/radiant sensing precedents, not direct semiochemical IR olfaction",
+    "Automated peak detection identifies CHC-associated bands that can support species discrimination in ATR-FTIR data, while perceptual use of those bands remains to be tested"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "theoretical",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Computational framework plus literature review for a contested hypothesis; no new insect experiments were run. The 'Experimental Results' section reports model outputs (e.g. ~1.2–4x response-time improvement framed as a sensitivity result) alongside published evidence. The paper repeatedly bounds its claims; summaries preserve those caveats."
+  }
 }

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: This document is a grant application to Protocol Labs, from Active Inference Institute (Active Blockference project).., The grant was submitted in October 2022 and was not funded.., Learn more, get in touch, get involved, or fund us:  https://www.activeinference.org/.
+- Extracts methods: Proposed AEOS specification and Active Blockference models for Hypercerts, Planned extension of Active Blockference to multi-agent simulation, Planned informative stakeholder interviews
+- Identifies findings: The proposal identifies limitations in DeSci systems design, including ad hoc flowcharts with informal ontologies and a lack of engineering-grade standards., It argues agent-based methods are needed to move design from bulk or mean-field approaches to the granularity of single actions by particular entities., It lays out tentative milestones beginning with entity model construction within 4 months of funding, budgeted at $20,000.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

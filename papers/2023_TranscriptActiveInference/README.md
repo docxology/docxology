@@ -18,11 +18,18 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Timestamped transcript of a July 26, 2023 Active Inference Institute livestream** — Records a ~10-minute talk by Megan Peters followed by a three-way discussion with Nora Bradford and Daniel Friedman.
+- **Peters' case examples of media coverage of consciousness science** — Peters walks through quoted headlines and passages from news coverage (e.g. Nature, Science, The Economist) and critiques each.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- Peters states that the results unveiled at the 2023 public event challenged both Global Neuronal Workspace and Integrated Information Theory, contrary to how the press framed them.
+- Peters argues that missing nuance in news coverage changed the meaning of what was presented.
+- Peters argues that such journalism damages the field's legitimacy with peers, funders and publication venues.
+- Bradford advises readers that press articles making sensational claims, such as finding the root of consciousness, are probably not true.
+- Bradford recommends researchers be clear about what level of 'consciousness' they mean when presenting work or talking to journalists.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

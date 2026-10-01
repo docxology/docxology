@@ -20,22 +20,22 @@
     }
   },
   "source_sha256": {
-    "pages/BIBLIOGRAPHY.md": "20e9505737f6db84d835a7a3c25225a4bae05b063f82fcc42dd3e6f0de98f141",
+    "pages/BIBLIOGRAPHY.md": "df7e7f22d5e9526dbebcb0f118da8cac03410a6db7dae341fb2f38d7a4af3640",
     "pages/SOFTWARE.md": "e4635f0990319097a04dbdaffd35d287cc9bbb7475e444864dbbee189f202255",
     "resume/source.json": "209c5b0b1df978813d6ad7c08e2b7c0e2cbc1f7445a4cbdf2c422165983b2f6a",
-    "data/current-counts.json": "a2e12fbf6ce396acbb5991d1548ff02c968b6d5eaf207948774eb1f74be083e5",
-    "data/coverage-exceptions.json": "4355f7b2a7d6b796b9232a4892e46ea4499defbadd73d000262bdbe0e165fb3f",
+    "data/current-counts.json": "89a3d38fa4811440c5964fa61de9993192f3f81f6e0d4a388729f59e956ba77e",
+    "data/coverage-exceptions.json": "f919983c9ce8ba33d091a3817c27346b482d593c5e0ab6e92cd58828cd208719",
     "data/repository-classification.json": "782da5e4f884230dd1285dc143104427ab17a433c12909b8a5ae0cf1dc17a31a",
-    "data/agent-index.json": "c90a2faa20366fcabff70b59ab7eb7ea80facdd0c42cdc6884ae70087f25e667",
+    "data/agent-index.json": "9a5c98e4febf5dae2b9bac8a9375dbae90c1865a5a2726e5c3faf519827e7f26",
     "data/generated-manifest.json": "f674010423c4bbd624a490000f68e24eed8b42fbdf1d28f87129e7118bb89025",
-    "data/pages-artifact-manifest.json": "7d9555071e6adeb425a4fc66cce61f36c1100c1a1ee71775d2167c7930025bd4"
+    "data/pages-artifact-manifest.json": "b192fbe7f67a623831b93352e0aebcc6e72fac032fa619ba4d88f24eb78a0666"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
     "source_commit_at_generation": "6ae630666c9a0a2c243d7172acee7b1dbecd2535",
-    "artifact_file_count": 5862,
-    "artifact_bytes": 924101005,
-    "omitted_paper_image_count": 8936,
+    "artifact_file_count": 5882,
+    "artifact_bytes": 924413088,
+    "omitted_paper_image_count": 8959,
     "omitted_superseded_report_count": 559
   },
   "deployment": {
@@ -61,8 +61,8 @@
       "Genetics & Biomedical": 15,
       "Presentations & Media": 14
     },
-    "extracted_images": 8936,
-    "full_text_papers": 189,
+    "extracted_images": 8959,
+    "full_text_papers": 197,
     "generated_exports": {
       "data_publications_ld_main_entity": 219,
       "data_software_json": 158,
@@ -103,7 +103,7 @@
       "zenodo_records": 162
     },
     "paper_folder_docs": 202,
-    "papers_with_images": 138,
+    "papers_with_images": 145,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,

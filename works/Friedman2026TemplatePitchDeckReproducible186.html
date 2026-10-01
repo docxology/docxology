@@ -164,6 +164,7 @@
         "PPTX",
         "PDF rendering"
     ],
+    "description": "The tool generates six artifacts (short, medium and long decks, each as PDF and PPTX) from one token-resolved content source. PDF and PPTX decks built from identical content carry identical slide counts and text, verified by reading back both file formats rather than by inspection. Rendering is deterministic: given the same repository state, two consecutive runs produce byte-identical PDF and PPTX output, with generation time kept only in deck metadata. No LLM/Ollama stage is required, since deck content is authored and token-resolved rather than model-generated at render time, keeping artifacts deterministic. The flagship deck pitches template template to a meta-science and science-integrit",
     "citation": "Friedman, Daniel Ari. 2026. template_pitch_deck: Reproducible, Validated Pitch-Deck Generation. Zenodo. DOI: 10.5281/zenodo.21281509. URL: https://doi.org/10.5281/zenodo.21281509.",
     "hasPart": {
         "@type": "CreativeWork",
@@ -268,6 +269,10 @@
             </div>
         </section>
         <section class="section section-alt">
+            <div class="section-header"><h2>Use Notes</h2><p>Concise findings and methods pulled from README/SKILL documentation.</p><div class="section-divider"></div></div>
+            <div class="meta-grid"><div class="work-detail"><strong>Findings / Concepts</strong><ul><li>The tool generates six artifacts (short, medium and long decks, each as PDF and PPTX) from one token-resolved content source.</li><li>PDF and PPTX decks built from identical content carry identical slide counts and text, verified by reading back both file formats rather than by inspection.</li><li>Rendering is deterministic: given the same repository state, two consecutive runs produce byte-identical PDF and PPTX output, with generation time kept only in deck metadata.</li><li>No LLM/Ollama stage is required, since deck content is authored and token-resolved rather than model-generated at render time, keeping artifacts deterministic.</li><li>The flagship deck pitches template template to a meta-science and science-integrity audience using problem, solution, proof (currently measured facts) and ask arc.</li></ul></div><div class="work-detail"><strong>Methods / Techniques</strong><ul><li>Shared format-agnostic DeckContent/Slide content model with slide budgets — Defines Slide, DeckContent and SlideBudget (short =10, medium =22, long =45 slides) consumed by both renderers, with a pure function truncating decks to a budget.</li><li>Dual PDF (ReportLab) and PPTX (python-pptx) renderers with a parity test — Renders the same resolved content via ReportLab canvas onto 16:9 pages and via python-pptx, with a test asserting PDF page count equals PPTX slide count.</li><li>{{TOKEN}} resolution against deck tokens.yaml with fail-loud checks — Resolves {{TOKEN}} placeholders from a token file of facts read live from the pitched project, raising on any unresolved token and checking output for leftover braces.</li><li>Word-boundary cliché denylist lint over every resolved slide — Runs a denylist of pitch-deck stock phrases (e.g. synergy, disrupt, 10x) across all slides at all three lengths before rendering, as part of an audit script.</li><li>Negative-control fixtures proving validation gates fire — Uses deliberately broken token and cliché-laden fixtures to show each audit failure mode triggers before trusting that the real content passes.</li></ul></div></div>
+        </section>
+        <section class="section section-alt">
             <div class="section-header"><h2>Citation</h2><p>Plain-text citation for quick reuse.</p><div class="section-divider"></div></div>
             <div class="cite-box">Friedman, Daniel Ari. 2026. template_pitch_deck: Reproducible, Validated Pitch-Deck Generation. Zenodo. DOI: 10.5281/zenodo.21281509. URL: https://doi.org/10.5281/zenodo.21281509.</div>
             <p class="text-center mt-2">
@@ -285,7 +290,6 @@
 }</script>
                 <a class="btn btn-outline" href="../papers/2026_TemplatePitchDeck/">Documentation</a>
                 <a class="btn btn-outline" href="../papers/2026_TemplatePitchDeck/full_text.md">Full Text</a>
-                <a class="btn btn-outline" href="https://github.com/docxology/docxology/tree/main/papers/2026_TemplatePitchDeck/images">Image Gallery</a>
                 <a class="btn btn-outline" href="https://github.com/docxology/template-pitch-deck">Source repository</a>
                 <a class="btn btn-outline" href="../bibliography.bib">BibTeX</a>
             </p>

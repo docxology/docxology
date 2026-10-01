@@ -20,14 +20,18 @@ This work addresses topics in **Presentations & Media**: systems processes, Acti
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+- **Mapping of SoSPT systems processes onto Active Inference concepts** — The slides pair Troncale-style systems processes with Active Inference counterparts, e.g. Boundaries with Markov blankets and Feedback & Cycles with predictive coding loops.
+- **Terminology alignment via the Active Inference Ontology** — Uses the Active Inference Ontology repository to frame cross-vocabulary correspondences between systems science and Active Inference terms.
+- **Curated literature pointers per systems process** — Each of five processes (boundaries, feedback, self-organization, flows/fields, hierarchies) is linked to specific FEP/Active Inference papers and 2022 textbook figures.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Slides for a session at "Enduring Patterns, Emerging Futures: Celebrating Dr..
-- Len Troncale", an online event in September 2025 https://troncale.sched.com/ ..
+- The talk presents the Free Energy Principle's Markov blankets as a formalisation of the systems process of Boundaries.
+- The slides claim applied Active Inference adds computable, typable translations plus open-source education and software to the systems-processes view.
+
+Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
@@ -55,5 +59,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.17138223`
-2. Read the methods in the full text before reusing this work.
+2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

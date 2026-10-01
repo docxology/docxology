@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> This paper proposes refining postdoctoral reporting at the NSF through generative intelligence systems, bolstering efficiency and broadening dissemination scope. The framework includes updatable profiles, intelligent processing prompts, and automated reporting tools to enhance the quality and accessibility of postdoctoral research outputs.
+> This report presents an approach for enhancing postdoctoral reporting at the National Science Foundation (NSF) using generative intelligence systems. The proposed system integrates updatable profiles, intelligent processing prompts, and a dynamic reporting system to transform how postdocs report their research progress and collaborations. The system's design focuses on operational efficiency...
 
 ## Keywords
 
@@ -22,9 +22,12 @@ _No paper-specific methods have been summarized yet; see the abstract and the fu
 
 ## Key Findings
 
-- This report presents an approach for enhancing postdoctoral reporting at the National Science Foundation (NSF) using generative intelligence systems..
-- The proposed system integrates updatable profiles, intelligent processing prompts, and a dynamic reporting system to transform how postdocs report their research progress and collaborations..
-- The system's design focuses on operational efficiency, real-time evaluation, and a consistent reporting framework..
+- Proposes refining NSF postdoctoral reporting with generative intelligence systems to improve efficiency and widen dissemination.
+- Proposes updatable postdoc profiles of structured and unstructured data on deliverables, progress, insights and collaborations as the system's input.
+- Proposes using prompt engineering to reformat and standardize submissions without distorting factual content.
+- Proposes a dynamic system generating real-time, evolving reports, which the author expects to reduce administrative demands on postdocs and program managers.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 

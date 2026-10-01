@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Bernoulli–Ising analytical oracle (K=2), Deterministic pymdp T-maze rollout, Sheaf-indexed manuscript compose contract
+- Identifies findings: The paper frames its result as a methodological discipline rather than a domain claim: 6 sheaf axioms are machine-checked and 25 negative controls keep failure paths live., It reports 12/12 invariant checks passed and a sweep RMSE of 0 nats between analytical and empirical values on the coupling grid., The measured state_inference T-maze rollout reports mean belief entropy 0.3251 nats over 2 steps, with goal reached and action diversity 2.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

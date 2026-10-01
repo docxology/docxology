@@ -48,5 +48,53 @@
   "pairing_evidence": [
     "github_release_mentions_doi"
   ],
-  "checked_at": "2026-09-24T18:29:58Z"
+  "checked_at": "2026-09-24T18:29:58Z",
+  "methods": [
+    {
+      "name": "daf-jev layered Python client for the System One endpoint",
+      "description": "Implements typed builders (noul, choice, score), sync/async clients with a pure retry policy, and a typed exception hierarchy over one HTTP endpoint.",
+      "evidence": "daf-jev is organized as a strict layering: an ergonomic surface (CLI, MCP server, scripts, benchmarks) on top of pure-logic composition, on top of primitives and wire types, on top of a single transport and client layer that owns all I/O."
+    },
+    {
+      "name": "Pure-function decision patterns and a concurrent batch Evaluator",
+      "description": "composite_score, confidence_gate, and route/pick turn typed answers into decisions locally; the Evaluator runs a fixed question set over many states without aborting on failures.",
+      "evidence": "Per-state failures never abort the batch; they are captured into the evaluation record alongside the answers and the measured latency, so one malformed state cannot cost the run."
+    },
+    {
+      "name": "Live-API batching benchmark at batch widths 5, 10, and 20",
+      "description": "Compares one batched call against sequential single-question calls on the jev-latest model, recording wall time and token totals.",
+      "evidence": "The batching benchmark compares two strategies over the same state and question mix: one call carrying all questions in a batch, versus one sequential single-question call per question, repeated for each configured batch width over multiple measured runs."
+    },
+    {
+      "name": "Self-consistency calibration benchmark (6 states × 5 repeats)",
+      "description": "Scores choice answers against the modal choice across repeats and noul answers by pairwise stability, computing ECE and Brier score without external ground truth.",
+      "evidence": "benchmarks/bench_calibration.py runs 6 short states 5 times each against the jev-latest model and scores choice answers under a self-consistency proxy"
+    },
+    {
+      "name": "No-mock test suite and hash-manifested documentation snapshot",
+      "description": "Unit tests drive the real transport against a local HTTP server; model claims are grounded in a 108-page hashed snapshot of the vendor documentation.",
+      "evidence": "The test suite follows the no-mock convention: unit tests drive the real transport against a real local HTTP server fixture, and live tests hit the real API only when a key is present in the environment"
+    }
+  ],
+  "key_findings": [
+    "Batching questions into one call gave wall-time speedups of 3.98, 8.77, and 18.55 across the configured batch widths.",
+    "At the widest batch width the sequential strategy used 4.22 times the tokens of the batched call, so batching was both faster and cheaper.",
+    "End-to-end decision pipelines had median wall times of 0.133 s (composite scoring) and 0.129 s (intent routing).",
+    "Under a self-consistency proxy, the calibration benchmark reported ECE 0.0730 and Brier 0.0252; the author notes this shows consistency with proxy labels, not correctness about the world.",
+    "The unit test suite reached 93.08 measured coverage."
+  ],
+  "key_findings_evidence": [
+    "Batching a batch’s worth of questions into one call yields wall-time speedups of 3.98, 8.77, and 18.55 across the configured batch widths",
+    "the sequential strategy consumes 4.22 times the tokens of the batched call at the widest setting — batching is simultaneously faster and cheaper.",
+    "End-to-end decision pipelines complete at a median wall time of 0.133 for composite scoring and 0.129 for intent routing, so confidence-gated decisions can sit inline on interactive request paths.",
+    "The expected calibration error of 0.0730 and the Brier score of 0.0252 indicate that reported choice confidence is broadly consistent with the proxy labels",
+    "The unit test suite stands at 93.08 measured coverage"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "All benchmarks are single-model (jev-latest) live-API measurements from one session (2026-09-16); the paper flags live-API variance, early-access documentation, and the self-referential calibration proxy as limitations. One method quote contains a Greek question mark (U+037E) from extraction in place of a semicolon."
+  }
 }

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Analysis of The work...
+- Extracts methods: Spatial metaphor of Known territory, Gray Zone, and Dark Imaginarium, Domino and Jenga-tower metaphors for speech acts and questions, Illustrative student-librarian example (Alice and Bob)
+- Identifies findings: The essay contrasts "gap-filling" epistemic modes (solid, wide, slow) with "gap-respecting" modes (diaphanous, fast)., It argues that responding to a question involves at least two archetypal modes: resolving it toward known answers, or "canal jumping" to reframe it., The second response mode is said to reflect Subject Matter Expertise and also present as Prediction Matter Expertise.
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR

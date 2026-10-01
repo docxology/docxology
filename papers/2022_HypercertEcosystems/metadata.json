@@ -47,22 +47,48 @@
   "type": "Paper",
   "methods": [
     {
-      "name": "Narrative analysis",
-      "description": "Applied narrative analysis approach"
+      "name": "Proposed AEOS specification and Active Blockference models for Hypercerts",
+      "description": "The proposal plans to build an Active Entity Ontology for Science (AEOS) specification and Active Blockference implementation for Hypercert ecosystems.",
+      "evidence": "We aim to develop the Hypercert ecosystem towards flexibility, utility, and maturity by creating an AEOS specification, and Active Blockference implementation, for Hypercerts."
     },
     {
-      "name": "Trust and integrity modeling",
-      "description": "Applied trust and integrity modeling approach"
+      "name": "Planned extension of Active Blockference to multi-agent simulation",
+      "description": "Plans to expand the currently single-agent Active Blockference simulation into a multi-agent model of Hypercert ecosystems.",
+      "evidence": "Currently, Active Blockference simulates the cognitive processes and goal-directed behavior of a single-agent. Our goal is to expand this simulation into a multi-agent model"
+    },
+    {
+      "name": "Planned informative stakeholder interviews",
+      "description": "The research strategy begins with interviews with Protocol Labs, Hypercert developers and stakeholders before milestone development.",
+      "evidence": "We will initially engage in a series of informative interviews with Protocol Labs and Hypercert developers, and stakeholders, to understand the landscape which we will be then developing in."
+    },
+    {
+      "name": "Planned comparative simulations of funding models",
+      "description": "A milestone deliverable is comparable simulations of traditional, DeSci and Hypercert funding models.",
+      "evidence": "Compose comparable simulations of traditional, DeSci, and Hypercert funding models that demonstrate advantages and opportunities for improvement for Hypercerts."
     }
   ],
   "key_findings": [
-    "This document is a grant application to Protocol Labs, from Active Inference Institute (Active Blockference project)..",
-    "The grant was submitted in October 2022 and was not funded..",
-    "Learn more, get in touch, get involved, or fund us:  https://www.activeinference.org/."
+    "The proposal identifies limitations in DeSci systems design, including ad hoc flowcharts with informal ontologies and a lack of engineering-grade standards.",
+    "It argues agent-based methods are needed to move design from bulk or mean-field approaches to the granularity of single actions by particular entities.",
+    "It lays out tentative milestones beginning with entity model construction within 4 months of funding, budgeted at $20,000.",
+    "The authors acknowledge a risk that the entity ontology may not yield results favoring the Hypercert mechanism."
   ],
   "related_papers": [
     "2020_EmergentTeams",
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
-  ]
+  ],
+  "key_findings_evidence": [
+    "Systems are often communicated with ad hoc flowcharts with heterogeneous or partially-specified types of nodes and edges (informal ontologies).",
+    "We suggest that agent-based methods are essential to move design considerations from the bulk or mean-field approach, towards the granularity which design & realtime analysis demand",
+    "Milestone 1: Entity Model Construction Date: Within 4 months of funding beginning. Budget: $20,000",
+    "There is no certainty that the development of an entity ontology for systems using hypercerts will yield results in favor of the hypercert mechanism."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "other",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "This is a grant proposal to Protocol Labs ('As submitted, October 2022'); methods are planned, not executed, and there are no empirical results. Milestones, budgets and deliverables are explicitly tentative."
+  }
 }

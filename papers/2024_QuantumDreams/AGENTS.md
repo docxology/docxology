@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: Analysis of The work uses Morse...
+- Extracts methods: First-person visual-phenomenological reflection on a gym squat rack, Successively zoomed photographs of the rack used as the case, Extended baseball metaphor and staged dialog interlude
+- Identifies findings: The authors argue that a gap in a framework can either be retained as-is (barrier-like) or filled, enabling different functions., They argue a trade-off between stability/rigidity and adjustability affordance exists in frameworks, typically settled by the rack's fabricator., They propose that a framework does not do the work but provides room for work to be done.
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR

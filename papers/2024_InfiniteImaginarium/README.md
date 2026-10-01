@@ -18,11 +18,18 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Spatial metaphor of Known territory, Gray Zone, and Dark Imaginarium** — The essay frames inquiry as a situation divided into known, peripheral, and unknown territories.
+- **Domino and Jenga-tower metaphors for speech acts and questions** — Uses stacked dominoes for uttered phonemes and verbal expression, and a Jenga tower for a question built by the questioner.
+- **Illustrative student-librarian example (Alice and Bob)** — Walks through Alice asking librarian Bob where a geometry book is to illustrate factual versus tacit know-how responses.
 
 ## Key Findings
 
-- Analysis of The work...
+- The essay contrasts "gap-filling" epistemic modes (solid, wide, slow) with "gap-respecting" modes (diaphanous, fast).
+- It argues that responding to a question involves at least two archetypal modes: resolving it toward known answers, or "canal jumping" to reframe it.
+- The second response mode is said to reflect Subject Matter Expertise and also present as Prediction Matter Expertise.
+- It concludes that language is gap-respecting.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 
