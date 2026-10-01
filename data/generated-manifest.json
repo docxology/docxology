@@ -18,13 +18,14 @@
       "command": "uv run python3 code/orchestrators/regenerate_docs.py --apply"
     },
     {
-      "name": "Paper CFF DOI-role synchronization",
+      "name": "Paper CFF citation identity synchronization",
       "outputs": [
-        "papers/*/CITATION.cff (canonical top-level DOI/URL and explicit artifact identifiers)"
+        "papers/*/CITATION.cff (bibliography title/authors, canonical DOI/URL, and explicit artifact identifiers)"
       ],
       "sources": [
+        "pages/BIBLIOGRAPHY.md",
         "papers/*/metadata.json (doi and optional artifact_doi)",
-        "papers/*/CITATION.cff (non-DOI fields and identifiers)",
+        "papers/*/CITATION.cff (other hand-maintained fields and non-DOI identifiers)",
         "code/orchestrators/generate_citation_cff.py"
       ],
       "command": "uv run python3 code/orchestrators/generate_citation_cff.py --apply"
@@ -578,7 +579,7 @@
     {
       "name": "External link report",
       "outputs": [
-        "reports/external_links_2026-09-30.json"
+        "reports/external_links_2026-10-01.json"
       ],
       "sources": [
         "all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"
@@ -628,11 +629,11 @@
     {
       "name": "External link triage",
       "outputs": [
-        "reports/external_links_triage_2026-09-30.json",
-        "reports/external_links_triage_2026-09-30.md"
+        "reports/external_links_triage_2026-10-01.json",
+        "reports/external_links_triage_2026-10-01.md"
       ],
       "sources": [
-        "reports/external_links_2026-09-30.json"
+        "reports/external_links_2026-10-01.json"
       ],
       "command": "python3 code/orchestrators/build_external_link_triage.py"
     },

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.5",
-  "generated_at": "2026-10-01T18:15:40+00:00",
+  "generated_at": "2026-10-01T21:36:28+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -329,7 +329,7 @@
     },
     "coverage_exceptions": {
       "path": "/data/coverage-exceptions.json",
-      "count": 39,
+      "count": 37,
       "schema": "CoverageException"
     },
     "repository_classification": {
@@ -1031,7 +1031,7 @@
     ],
     "VideoIndex": {
       "schema_version": "VideoIndex.v1",
-      "generated_at": "2026-10-01T20:58:50Z",
+      "generated_at": "2026-10-01T21:36:53Z",
       "source": "data/videos.json",
       "count": 1127,
       "counts": {
@@ -1128,7 +1128,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-10-01T18:15:40+00:00",
+        "checked_at": "2026-10-01T21:36:28+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1226,16 +1226,16 @@
         "bibliography_works": 219,
         "domains": {
           "AII Ecosystem": 6,
-          "Active Inference": 47,
+          "Active Inference": 46,
           "Art & Synergetics": 16,
           "Cognitive Security": 37,
-          "Computational": 60,
+          "Computational": 63,
           "Entomology": 23,
-          "Genetics & Biomedical": 15,
+          "Genetics & Biomedical": 13,
           "Presentations & Media": 14
         },
         "extracted_images": 8959,
-        "full_text_papers": 197,
+        "full_text_papers": 199,
         "generated_exports": {
           "data_publications_ld_main_entity": 219,
           "data_software_json": 158,
@@ -1302,7 +1302,7 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-10-01T18:15:40+00:00",
+      "generated_at": "2026-10-01T21:36:28+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
@@ -1326,11 +1326,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 923981357,
+        "source_bytes": 928782034,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5882,
-        "artifact_bytes": 925020786
+        "artifact_file_count": 5892,
+        "artifact_bytes": 929823324
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1342,7 +1342,7 @@
       "note": "See /data/release-integrity.json for the current envelope."
     },
     "ReproducibilityLedger": {
-      "generated_at": "2026-10-01T18:17:05Z",
+      "generated_at": "2026-10-01T21:37:30Z",
       "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
       "sources": [
         "data/works.json",
@@ -1408,14 +1408,14 @@
       "signal_totals": {
         "persistent_id": 204,
         "public_archive": 162,
-        "open_full_text": 197,
+        "open_full_text": 199,
         "source_documents": 202,
         "executable_code": 72,
         "agent_readable": 202
       },
       "band_counts": {
-        "independently reproducible": 159,
-        "independently checkable": 43,
+        "independently reproducible": 160,
+        "independently checkable": 42,
         "citable only": 8,
         "unverified": 9
       },
@@ -1423,12 +1423,12 @@
         "0": 9,
         "1": 4,
         "2": 4,
-        "3": 10,
+        "3": 9,
         "4": 33,
-        "5": 89,
+        "5": 90,
         "6": 70
       },
-      "mean_score": 4.744,
+      "mean_score": 4.753,
       "works": [
         {
           "num": 5,
@@ -3937,7 +3937,7 @@
           "citation_key": "Friedman2025ConCatEnateEmulation129",
           "title": "Con-cat-enate: emulation of Cat Hippocampus",
           "year": 2025,
-          "domain_name": "Genetics & Biomedical",
+          "domain_name": "Computational",
           "type": "Paper",
           "score": 5,
           "band": "independently reproducible",
@@ -3994,7 +3994,7 @@
           "citation_key": "Friedman2025BeaconsPreEmulationSocial132",
           "title": "Beacons - pre emulation of social cortex",
           "year": 2025,
-          "domain_name": "Genetics & Biomedical",
+          "domain_name": "Computational",
           "type": "Paper",
           "score": 5,
           "band": "independently reproducible",
@@ -4332,6 +4332,25 @@
           "repositories": []
         },
         {
+          "num": 168,
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+          "title": "GeneralizedNotationNotation (GNN)",
+          "year": 2026,
+          "domain_name": "Active Inference",
+          "type": "Paper",
+          "score": 5,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": false,
+            "agent_readable": true
+          },
+          "repositories": []
+        },
+        {
           "num": 173,
           "citation_key": "Friedman2026CaliforniaPublicRecordsTechnical173",
           "title": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era",
@@ -4469,7 +4488,7 @@
           "citation_key": "Friedman2026DataDescriptorTemplateSchema192",
           "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
           "year": 2026,
-          "domain_name": "Active Inference",
+          "domain_name": "Computational",
           "type": "Paper",
           "score": 5,
           "band": "independently reproducible",
@@ -5054,6 +5073,25 @@
           "repositories": []
         },
         {
+          "num": 100,
+          "citation_key": "Friedman2018RoleDopamineCollectiveRegulation100",
+          "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
+          "year": 2018,
+          "domain_name": "Entomology",
+          "type": "Paper",
+          "score": 4,
+          "band": "independently checkable",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": false,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": false,
+            "agent_readable": true
+          },
+          "repositories": []
+        },
+        {
           "num": 101,
           "citation_key": "Friedman2017MutAntsAreHere101",
           "title": "The MutAnts are here",
@@ -5206,25 +5244,6 @@
           "repositories": []
         },
         {
-          "num": 168,
-          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
-          "title": "GeneralizedNotationNotation (GNN)",
-          "year": 2026,
-          "domain_name": "Active Inference",
-          "type": "Paper",
-          "score": 4,
-          "band": "independently checkable",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": false,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
           "num": 28,
           "citation_key": "Friedman2025TowardsScienceConsciousnessSocial028",
           "title": "Towards a Science of Consciousness and Social Complexity... For Ants",
@@ -5284,7 +5303,7 @@
         {
           "num": 63,
           "citation_key": "Friedman2023CommentOrNotComment063",
-          "title": "To comment or not to comment",
+          "title": "To comment or not to comment, that is the question!",
           "year": 2023,
           "domain_name": "Genetics & Biomedical",
           "type": "Paper",
@@ -5370,25 +5389,6 @@
             "persistent_id": false,
             "public_archive": false,
             "open_full_text": true,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
-          "num": 100,
-          "citation_key": "Friedman2018RoleDopamineCollectiveRegulation100",
-          "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
-          "year": 2018,
-          "domain_name": "Entomology",
-          "type": "Paper",
-          "score": 3,
-          "band": "independently checkable",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": false,
-            "open_full_text": false,
             "source_documents": true,
             "executable_code": false,
             "agent_readable": true
@@ -5741,27 +5741,27 @@
     }
   },
   "dataset_hashes": {
-    "works": "5f08c9332ff459ea433e57705e8e0ec97fa1f0332953944b1d06099fe81ddf71",
-    "software": "086a024c008081361fbd420ba8cda397408fa7e8ffeba52ae729d21743f2f30b",
+    "works": "e837976ef28d29e87ecee678edfbabfda7659b6f34e3ee06626043179ad68c5e",
+    "software": "703b528c18d18cb56934004c9261d769a7608aaff8af4436af51e2d7197e2ee8",
     "repositories": "7921e3722f3ec20c8d8a8fc5090396d3b66e4d557e732a6d1055a5d9d25cb772",
     "artworks_index": "053e66edbd2257c157f9baeb45d7ee6cf04395a59d7253ff31bd55b9d904a0d5",
     "artworks": "32bd21124bd391638295aac6bad7a0621746c296695e10b0586351ca4069f6c3",
-    "videos": "68b706200243486f8c990942b8d02bf706cb3e7f9429e082150458c3c130eb58",
-    "videos_index": "b2634e28fe245b5dedc63dc3e8073f3899134a83be9b6639c0422c36f8ceb552",
-    "search": "d6d94d0891185709e2bd190eabde5a603e98255610f8f7bc4102cc5b2d1c2b6f",
-    "claims": "0280de3b35468eb9509db13a912cd5669edfdbb7ebd233e4a05869ff32c573f5",
+    "videos": "156e30236dca0a02424f24da850262b045a783fe9518fea949fc635a29a77804",
+    "videos_index": "a06980704fbd35fb6c47654879b77e2a58006bc7e2dd99eb0c56a703e02d42b5",
+    "search": "74687596d176c5557c87b6df34c93ea7ede78ee23b25ec7dfe6d27a6934fef53",
+    "claims": "63e252827b301a561f230a4f3ad649f05db89b361a1435ffbd32e64decb5f3a1",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
-    "coverage_exceptions": "f919983c9ce8ba33d091a3817c27346b482d593c5e0ab6e92cd58828cd208719",
+    "coverage_exceptions": "f308718a5931e16a030ae98631988795d4c782fc8b957252f8d373050287a731",
     "repository_classification": "782da5e4f884230dd1285dc143104427ab17a433c12909b8a5ae0cf1dc17a31a",
-    "people": "9edede502174d10c17933c7dff8c9c01bdbd71b49551cdf75d8c91ac81844add",
-    "organizations": "41df10d84c7664a8f68807839b2a1b688b1b5b86832c5515320ea8006400be5d",
-    "resume": "2453b9d4191cde814216843177cc92f214cd99fbfdf386d60e9471153baf1454",
-    "work_enrichment": "b588a5174fb3cb98b98d0b2f4c95d312b96cf5c0932d0dc2d547f227efa4dd16",
-    "catalog": "30718f479637bee4fb12a549a0786bed43653f613401b99f92bbff5c7be69722",
+    "people": "77c0808385642f2caf59d73b344593b687d919724309ca82980119c50a18335c",
+    "organizations": "4ac184ff2d82b286fce5105b1944f8410b44b7119755e09dba8db7667ebe0f55",
+    "resume": "c62ef00dc44bd5cb82a239ffb71213824c79c27d0d2b2fda61130c6c2dbbd6c3",
+    "work_enrichment": "64b9e56464d40410c6ee86e907af9f92b7ae392e54708fbcded3690d1a7edc00",
+    "catalog": "0c04bfae7ee7a6f28132ed94e62487f12164726b6fb377785aaaa068d7086f70",
     "reconciliation": "a6a852bd1784c0f12d050c74b1363ebb60001b14409497505a8504a35df0d164",
-    "reproducibility": "10a84145d111866da01ee9e32780f561243dbb2e2f32d55e655bcf96f324475a",
-    "generated_manifest": "f674010423c4bbd624a490000f68e24eed8b42fbdf1d28f87129e7118bb89025",
-    "current_counts": "89a3d38fa4811440c5964fa61de9993192f3f81f6e0d4a388729f59e956ba77e"
+    "reproducibility": "bb1ca409df8d3593db78ae4fdb87685aa33dd37b5063a2d204abb5f5fe0f4f5e",
+    "generated_manifest": "0104ccb3ddfd1c87c2f3f9914431ac32d87b04e12fda694b4e2d46a8d846cb0e",
+    "current_counts": "5be9ec0e0dbb6ff806585f6e5f0e342d24499eb3031fd725ca5bc547d5ee954f"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -5793,16 +5793,16 @@
     "bibliography_works": 219,
     "domains": {
       "AII Ecosystem": 6,
-      "Active Inference": 47,
+      "Active Inference": 46,
       "Art & Synergetics": 16,
       "Cognitive Security": 37,
-      "Computational": 60,
+      "Computational": 63,
       "Entomology": 23,
-      "Genetics & Biomedical": 15,
+      "Genetics & Biomedical": 13,
       "Presentations & Media": 14
     },
     "extracted_images": 8959,
-    "full_text_papers": 197,
+    "full_text_papers": 199,
     "generated_exports": {
       "data_publications_ld_main_entity": 219,
       "data_software_json": 158,
