@@ -84,6 +84,7 @@
     "date": "2026-10-01",
     "work_kind": "review",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Synthetic review plus companion code; demonstrations are small illustrative examples. Manuscript self-describes as a work in progress that may contain errors."
+    "notes": "Synthetic review plus companion code; demonstrations are small illustrative examples. Manuscript self-describes as a work in progress that may contain errors.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

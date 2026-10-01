@@ -25,11 +25,11 @@
 
 ## Key Findings
 
-- AntBody energy showed flat scaling with joint count across J from 6 to 30, making sensors and contact resolution the main efficiency targets.
-- With sparsity ρ = 0.02, AntBrain energy stayed roughly constant across a 16× expansion in sensory channels (64 to 1024).
+- In the energy model, AntBody energy stayed constant despite morphological scaling, making sensor optimization and contact resolution the main efficiency targets rather than joint count.
+- In the energy model, biological sparsity allowed 16× sensory scaling (64 to 1024 channels) with constant energy consumption.
 - AntMind energy grew steeply with planning horizon, and real-time operation was reported infeasible beyond a horizon of 15.
 - Modelled neural processing sits about 4.2 × 10^8 times above the Landauer minimum, which the author identifies as the largest optimization opportunity.
-- The hexapod's cost of transport (about 1.93) is within robotic ranges but higher than reported for biological ants (0.1-0.3).
+- The modelled locomotion cost of transport (≈1.93) falls within robotic platform ranges but is 2-6× higher than biological ants (0.1-0.3).
 
 _Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 

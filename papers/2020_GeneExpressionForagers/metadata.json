@@ -60,7 +60,7 @@
     "A fraction of colony expression differences were associated with humidity sensitivity of foraging and forager brain DA:5HT ratio.",
     "Neurotransmitter receptors as a category were significantly correlated in expression with colony sensitivity of foraging activity to humidity.",
     "Gene coexpression analysis identified 11 modules of loci with coordinated expression patterns across colonies.",
-    "Genes more central to coexpression modules were more correlated with colony traits and evolving under increased coding-sequence constraint."
+    "Genes more central to coexpression modules tended to be more correlated with colony traits and to be evolving under increased coding-sequence constraint."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -82,6 +82,7 @@
     "date": "2026-10-01",
     "work_kind": "empirical",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Authors note limits: no within-colony behavioral measurements, whole-brain (not region or single-cell) tissue, and no fitness estimates for this set of colonies."
+    "notes": "Authors note limits: no within-colony behavioral measurements, whole-brain (not region or single-cell) tissue, and no fitness estimates for this set of colonies.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

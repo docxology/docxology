@@ -28,7 +28,7 @@ Primary methods and techniques applied in this work:
 Core contributions and results:
 
 - Homozygous Orco loss-of-function ants of both species showed similar altered behavior and reduced reproductive performance, supporting Orco's central role in ant olfaction.
-- Both studies unexpectedly found gross antennal lobe defects in Orco mutants, which the authors argue implies a novel neurodevelopmental role for Orco.
+- Both studies unexpectedly found gross antennal lobe defects in Orco mutants; the commentary argues the reduced glomerular number implies a novel neurodevelopmental role for Orco, perhaps tied to ants' expanded glomerular number.
 - The commentary frames the two studies together as a watershed moment for eusocial insect genetics, moving beyond purely correlative evidence.
 
 Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).

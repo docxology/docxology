@@ -77,7 +77,7 @@
     }
   ],
   "key_findings": [
-    "Soft belief marginalization beats a point estimate as emissions degrade: 0 nats at a clean channel to 0.739 nats at flip probability 0.400, with a cross-draw mean of 0.495 nats.",
+    "On the synthetic fixture, soft Bayesian marginalization beats a hard point estimate as emissions degrade: 0 nats at a clean channel to 0.739 nats at flip probability 0.400 on the primary draw, with a mean of 0.495 nats.",
     "Under noisy emission, active inference ranks 1 of 14 but leads the strongest non-AIF belief filter by only 0.005 nats, a statistical tie.",
     "No directional comparison in the clustered-bootstrap family survives multiplicity correction.",
     "Withholding location collapses the filter's mean mass on the true cell from 0.995 to 0.069.",
@@ -95,6 +95,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "All results are on synthetic data; the paper explicitly disclaims real-mobility, privacy-guarantee, operational, and state-of-the-art claims (cross-generator gate reports sota_program_not_cleared; oracle-fed baseline remains the ceiling)."
+    "notes": "All results are on synthetic data; the paper explicitly disclaims real-mobility, privacy-guarantee, operational, and state-of-the-art claims (cross-generator gate reports sota_program_not_cleared; oracle-fed baseline remains the ceiling).",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

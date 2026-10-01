@@ -117,6 +117,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Software/system manuscript (v0.6.0). 'GNN' means Generalized Notation Notation, not graph neural networks. The Markov-blanket partition is explicitly a structural interface decomposition, not a conditional-independence proof. All evaluation is on in-sample fixtures."
+    "notes": "Software/system manuscript (v0.6.0). 'GNN' means Generalized Notation Notation, not graph neural networks. The Markov-blanket partition is explicitly a structural interface decomposition, not a conditional-independence proof. All evaluation is on in-sample fixtures.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

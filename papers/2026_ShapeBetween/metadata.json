@@ -107,6 +107,7 @@
     "date": "2026-10-01",
     "work_kind": "other",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Illustrated children's fiction / template exemplar, not a research paper; no findings to report. Text was OCR-extracted and several pages (4, 6, 9, 14) are garbled, so those story pages could not be read."
+    "notes": "Illustrated children's fiction / template exemplar, not a research paper; no findings to report. Text was OCR-extracted and several pages (4, 6, 9, 14) are garbled, so those story pages could not be read.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

@@ -28,7 +28,7 @@
 - Reports that the Institute's Discord server, its primary discussion and meeting venue, has over 1000 people.
 - Reports that the Institute had released over 500 videos to date.
 - Reports that RxInfer.jl Learning Group meetings in 2024 included over 20 active contributors.
-- Frames the Institute's approach as cultivating an 'open' ecosystem rather than a closed, laboratory-centric approach to Active Inference.
+- Frames the Institute's approach as embracing the benefits of an 'open' ecosystem rather than relying on a closed, laboratory-centric approach alone, which might have siloed Active Inference academically.
 
 _Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 

@@ -95,7 +95,7 @@
     "The framework yields five preregistered falsifiers, including spectral nulls under matched thermal load and geometric mismatch between sensilla and predicted resonances.",
     "Published insect ORN timing is fast enough that any IR stage would need to be experimentally separated from already-rapid molecular responses.",
     "Beetle, kissing-bug, ant, cycad, and mosquito examples establish radiant IR sensing precedents but not direct semiochemical IR olfaction.",
-    "Automated peak detection identifies CHC-associated bands that can support species discrimination in ATR-FTIR data, though perceptual use is untested."
+    "On a CHC spectrum fixture, the paper's automated peak detection identifies CHC-associated bands that published ATR-FTIR work links to species discrimination; perceptual use of those bands remains to be tested."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -117,6 +117,7 @@
     "date": "2026-10-01",
     "work_kind": "theoretical",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Computational framework plus literature review for a contested hypothesis; no new insect experiments were run. The 'Experimental Results' section reports model outputs (e.g. ~1.2–4x response-time improvement framed as a sensitivity result) alongside published evidence. The paper repeatedly bounds its claims; summaries preserve those caveats."
+    "notes": "Computational framework plus literature review for a contested hypothesis; no new insect experiments were run. The 'Experimental Results' section reports model outputs (e.g. ~1.2–4x response-time improvement framed as a sensitivity result) alongside published evidence. The paper repeatedly bounds its claims; summaries preserve those caveats.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

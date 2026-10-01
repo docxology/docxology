@@ -58,6 +58,7 @@
     "date": "2026-10-01",
     "work_kind": "commentary/policy",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Policy comment submitted 28 July 2024 to the NITRD/NCO request for comment NITRD-2024-13379 by BlockScience, UW APL IRSIRI, COGSEC and the Active Inference Institute; no methods. METADATA MISMATCH: bibliography lists only 'Cordes, RJ' as author, but the document names five contributing representatives: Michael Zargham, David Sisson, Scott David, Daniel Ari Friedman and R.J. Cordes."
+    "notes": "Policy comment submitted 28 July 2024 to the NITRD/NCO request for comment NITRD-2024-13379 by BlockScience, UW APL IRSIRI, COGSEC and the Active Inference Institute; no methods. METADATA MISMATCH: bibliography lists only 'Cordes, RJ' as author, but the document names five contributing representatives: Michael Zargham, David Sisson, Scott David, Daniel Ari Friedman and R.J. Cordes.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

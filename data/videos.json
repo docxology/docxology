@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T18:16:36Z",
+  "generated_at": "2026-10-01T20:58:50Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -2585,25 +2585,25 @@
           "url": "/works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html"
         },
         {
+          "title": "The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)",
+          "citation_key": "Friedman2024ActiveInferenceInstituteActive041",
+          "year": 2024,
+          "domain": "AII Ecosystem",
+          "url": "/works/Friedman2024ActiveInferenceInstituteActive041.html"
+        },
+        {
+          "title": "The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)",
+          "citation_key": "Friedman2025ActiveInferenceInstituteActive024",
+          "year": 2025,
+          "domain": "AII Ecosystem",
+          "url": "/works/Friedman2025ActiveInferenceInstituteActive024.html"
+        },
+        {
           "title": "DuckRabbit: Typed Multimodal Illusion Generator",
           "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html"
-        },
-        {
-          "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
-          "citation_key": "Friedman2026ENTOENcryptedTypedOmnitrack167",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026ENTOENcryptedTypedOmnitrack167.html"
-        },
-        {
-          "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
-          "citation_key": "Friedman2026SelfImprovementAgentHarness127",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026SelfImprovementAgentHarness127.html"
         }
       ]
     },
@@ -3535,13 +3535,6 @@
       ],
       "related_works": [
         {
-          "title": "Generative Research Teams: Active Inference Compositions for Research and Meta-Science",
-          "citation_key": "Friedman2023GenerativeResearchTeamsActive057",
-          "year": 2023,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2023GenerativeResearchTeamsActive057.html"
-        },
-        {
           "title": "DuckRabbit: Typed Multimodal Illusion Generator",
           "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
           "year": 2026,
@@ -3561,6 +3554,13 @@
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html"
+        },
+        {
+          "title": "docxplus — the Intelligent Document Container",
+          "citation_key": "Friedman2026DocxplusIntelligentDocumentContainer212",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026DocxplusIntelligentDocumentContainer212.html"
         }
       ]
     },
@@ -8162,13 +8162,6 @@
       ],
       "related_works": [
         {
-          "title": "Autopoietic Project Generation",
-          "citation_key": "Friedman2026AutopoieticProjectGeneration185",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026AutopoieticProjectGeneration185.html"
-        },
-        {
           "title": "DuckRabbit: Typed Multimodal Illusion Generator",
           "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
           "year": 2026,
@@ -8188,6 +8181,13 @@
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026EditorialQualityAtScale122.html"
+        },
+        {
+          "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
+          "citation_key": "Friedman2026SynthOBSFractiSynthGoldenRatio198",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html"
         }
       ]
     },
@@ -11768,11 +11768,11 @@
           "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
         },
         {
-          "title": "Autopoietic Project Generation",
-          "citation_key": "Friedman2026AutopoieticProjectGeneration185",
+          "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+          "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026AutopoieticProjectGeneration185.html"
+          "url": "/works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html"
         }
       ]
     },
@@ -18822,18 +18822,18 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
+          "title": "Slides for Iris",
+          "citation_key": "Friedman2023SlidesIris139",
+          "year": 2023,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2023SlidesIris139.html"
+        },
+        {
           "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
           "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
           "domain": "Active Inference",
           "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
-        },
-        {
-          "title": "Structuring the Information Commons: Open Standards and Cognitive Security",
-          "citation_key": "Friedman2022StructuringInformationCommonsOpen071",
-          "year": 2022,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2022StructuringInformationCommonsOpen071.html"
         }
       ]
     },
@@ -23327,13 +23327,6 @@
       ],
       "related_works": [
         {
-          "title": "Generative Research Teams: Active Inference Compositions for Research and Meta-Science",
-          "citation_key": "Friedman2023GenerativeResearchTeamsActive057",
-          "year": 2023,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2023GenerativeResearchTeamsActive057.html"
-        },
-        {
           "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
           "citation_key": "Friedman2026SynthOBSFractiSynthGoldenRatio198",
           "year": 2026,
@@ -23353,6 +23346,13 @@
           "year": 2022,
           "domain": "Active Inference",
           "url": "/works/Friedman2022ActiveInferenceOntologyDecentralized066.html"
+        },
+        {
+          "title": "A single-pheromone model accounts for empirical patterns of ant colony foraging",
+          "citation_key": "Friedman2023SinglePheromoneModelAccounts046",
+          "year": 2023,
+          "domain": "Entomology",
+          "url": "/works/Friedman2023SinglePheromoneModelAccounts046.html"
         }
       ]
     },
@@ -58733,6 +58733,13 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
+          "title": "Synthesis of Agent and Niche",
+          "citation_key": "Friedman2025SynthesisAgentNiche021",
+          "year": 2025,
+          "domain": "Art & Synergetics",
+          "url": "/works/Friedman2025SynthesisAgentNiche021.html"
+        },
+        {
           "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
           "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
@@ -58745,13 +58752,6 @@
           "year": 2022,
           "domain": "Active Inference",
           "url": "/works/Friedman2022InteroceptionAsModelingAllostasis141.html"
-        },
-        {
-          "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
-          "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
-          "year": 2022,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         }
       ]
     },
@@ -61152,18 +61152,18 @@
           "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         },
         {
+          "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees",
+          "citation_key": "Friedman2023SnapshotPipelineTissueSpecific047",
+          "year": 2023,
+          "domain": "Entomology",
+          "url": "/works/Friedman2023SnapshotPipelineTissueSpecific047.html"
+        },
+        {
           "title": "The Active Inference Institute and Active Inference Ecosystem (v1)",
           "citation_key": "Friedman2023ActiveInferenceInstituteActive061",
           "year": 2023,
           "domain": "AII Ecosystem",
           "url": "/works/Friedman2023ActiveInferenceInstituteActive061.html"
-        },
-        {
-          "title": "The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)",
-          "citation_key": "Friedman2025ActiveInferenceInstituteActive024",
-          "year": 2025,
-          "domain": "AII Ecosystem",
-          "url": "/works/Friedman2025ActiveInferenceInstituteActive024.html"
         }
       ]
     },
@@ -64437,18 +64437,18 @@
           "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         },
         {
+          "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees",
+          "citation_key": "Friedman2023SnapshotPipelineTissueSpecific047",
+          "year": 2023,
+          "domain": "Entomology",
+          "url": "/works/Friedman2023SnapshotPipelineTissueSpecific047.html"
+        },
+        {
           "title": "The Active Inference Institute and Active Inference Ecosystem (v1)",
           "citation_key": "Friedman2023ActiveInferenceInstituteActive061",
           "year": 2023,
           "domain": "AII Ecosystem",
           "url": "/works/Friedman2023ActiveInferenceInstituteActive061.html"
-        },
-        {
-          "title": "The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)",
-          "citation_key": "Friedman2025ActiveInferenceInstituteActive024",
-          "year": 2025,
-          "domain": "AII Ecosystem",
-          "url": "/works/Friedman2025ActiveInferenceInstituteActive024.html"
         }
       ]
     },
@@ -66268,6 +66268,13 @@
       ],
       "related_works": [
         {
+          "title": "The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)",
+          "citation_key": "Friedman2025ActiveInferenceInstituteActive024",
+          "year": 2025,
+          "domain": "AII Ecosystem",
+          "url": "/works/Friedman2025ActiveInferenceInstituteActive024.html"
+        },
+        {
           "title": "Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations",
           "citation_key": "Friedman2018ForagingBehaviorLocomotionInvasive096",
           "year": 2018,
@@ -66287,13 +66294,6 @@
           "year": 2020,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2020ReimaginingMaps148.html"
-        },
-        {
-          "title": "Narrative Information Management",
-          "citation_key": "Friedman2021NarrativeInformationManagement080",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         }
       ]
     },
@@ -69789,13 +69789,6 @@
           "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         },
         {
-          "title": "Synthesis of Agent and Niche",
-          "citation_key": "Friedman2025SynthesisAgentNiche021",
-          "year": 2025,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2025SynthesisAgentNiche021.html"
-        },
-        {
           "title": "Prior Cognitive Art",
           "citation_key": "Friedman2026PriorCognitiveArt194",
           "year": 2026,
@@ -69808,6 +69801,13 @@
           "year": 2026,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2026DoorsPerceptionAreThreshold007.html"
+        },
+        {
+          "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
+          "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
+          "year": 2018,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         }
       ]
     },
@@ -77608,13 +77608,6 @@
       ],
       "related_works": [
         {
-          "title": "Computational Complexity and Energetics of the Ant Stack",
-          "citation_key": "Friedman2025ComputationalComplexityEnergeticsAnt011",
-          "year": 2025,
-          "domain": "Entomology",
-          "url": "/works/Friedman2025ComputationalComplexityEnergeticsAnt011.html"
-        },
-        {
           "title": "Towards a Science of Consciousness and Social Complexity... For Ants",
           "citation_key": "Friedman2025TowardsScienceConsciousnessSocial028",
           "year": 2025,
@@ -77627,6 +77620,13 @@
           "year": 2021,
           "domain": "Entomology",
           "url": "/works/Friedman2021ActiveInferantsActiveInference075.html"
+        },
+        {
+          "title": "Computational Complexity and Energetics of the Ant Stack",
+          "citation_key": "Friedman2025ComputationalComplexityEnergeticsAnt011",
+          "year": 2025,
+          "domain": "Entomology",
+          "url": "/works/Friedman2025ComputationalComplexityEnergeticsAnt011.html"
         },
         {
           "title": "Increasing the Accessibility and Applicability of Active Inference",

@@ -58,11 +58,11 @@
     }
   ],
   "key_findings": [
-    "AntBody energy showed flat scaling with joint count across J from 6 to 30, making sensors and contact resolution the main efficiency targets.",
-    "With sparsity ρ = 0.02, AntBrain energy stayed roughly constant across a 16× expansion in sensory channels (64 to 1024).",
+    "In the energy model, AntBody energy stayed constant despite morphological scaling, making sensor optimization and contact resolution the main efficiency targets rather than joint count.",
+    "In the energy model, biological sparsity allowed 16× sensory scaling (64 to 1024 channels) with constant energy consumption.",
     "AntMind energy grew steeply with planning horizon, and real-time operation was reported infeasible beyond a horizon of 15.",
     "Modelled neural processing sits about 4.2 × 10^8 times above the Landauer minimum, which the author identifies as the largest optimization opportunity.",
-    "The hexapod's cost of transport (about 1.93) is within robotic ranges but higher than reported for biological ants (0.1-0.3)."
+    "The modelled locomotion cost of transport (≈1.93) falls within robotic platform ranges but is 2-6× higher than biological ants (0.1-0.3)."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -81,6 +81,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Companion to The Ant Stack; results are analytical/simulated estimates from assumed device energy coefficients, not hardware power measurements. The text gives inconsistent actuation shares (96.5% in Background vs 95.3% in Results), so neither is used here. Extraction renders superscripts inline (e.g. '4.2 × 108×' = 4.2 × 10^8)."
+    "notes": "Companion to The Ant Stack; results are analytical/simulated estimates from assumed device energy coefficients, not hardware power measurements. The text gives inconsistent actuation shares (96.5% in Background vs 95.3% in Results), so neither is used here. Extraction renders superscripts inline (e.g. '4.2 × 108×' = 4.2 × 10^8).",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

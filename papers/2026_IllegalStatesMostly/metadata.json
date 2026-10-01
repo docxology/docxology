@@ -69,7 +69,7 @@
     }
   ],
   "key_findings": [
-    "The stigmergic mechanism's convergence beat a random-choice null model: its Wilson lower bound (0.8816) clears the null model's upper bound (0.0368).",
+    "In the tested calibrated configuration, the stigmergic mechanism beat a random-choice null model: its Wilson lower bound (0.8816) clears the null model's upper bound (0.0368).",
     "Disabling only pheromone deposit collapsed convergence to chance level, attributing the mechanism's advantage to the stigmergic channel in this configuration.",
     "Convergence versus decay showed a threshold rather than a monotonic slope, with 0/60 trials converging at decay 0.10 and 0.30.",
     "Convergence decreased strictly as preference heterogeneity widened (1.0000 > 0.9333 > 0.2500 > 0.0333).",
@@ -87,6 +87,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Simulation-only template. The paper scopes all colony results to the tested configuration (8 agents, 2 locations, 30 ticks) and notes that the real-vs-null gap and zero-deposit ablation are established only at seed_base=0. The 3-agent integration test's agreement is explicitly 'guaranteed by construction', not emergence. The paper itself notes the reported decline at decay=1.00 rests on one pairwise gap whose Fisher test (p=0.1187) is not significant alone."
+    "notes": "Simulation-only template. The paper scopes all colony results to the tested configuration (8 agents, 2 locations, 30 ticks) and notes that the real-vs-null gap and zero-deposit ablation are established only at seed_base=0. The 3-agent integration test's agreement is explicitly 'guaranteed by construction', not emergence. The paper itself notes the reported decline at decay=1.00 rests on one pairwise gap whose Fisher test (p=0.1187) is not significant alone.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

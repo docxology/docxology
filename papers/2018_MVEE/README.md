@@ -22,7 +22,7 @@
 - **Genotype-Environment-Phenotype tensor representation through time** — Represents evolving systems as a dynamic multiscale G-E-P tensor over time, using only measurable quantities instead of fitness.
 - **Pairing of state models and process models across scales** — Distinguishes predictive state theories (e.g. R = h2S) from algorithmic process theories and combines them via coarse-graining.
 - **Proposed compute-graph (TensorFlow) machine-learning architecture** — Proposes a single integrated ML framework on existing biological data to jointly consider coarse-grained state and process models.
-- **Worked example: harvester ant ('Pogo') foraging across three scales** — Sketches state and process models for one colony over a day, a colony population over a summer, and populations over generations.
+- **Worked example: 'Pogo Foraging' state/process models across three scales** — Sketches state and process models for one ant colony over a day, a population of colonies over a summer, and populations over intergenerational time.
 
 ## Key Findings
 

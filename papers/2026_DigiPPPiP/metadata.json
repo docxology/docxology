@@ -101,7 +101,7 @@
   "key_findings": [
     "The authors identify a modest irreducible design kernel: two partners, a shared mark field, perceptible agency traces, a temporal relation among contributions, and consentful persistence control.",
     "The stated contribution is reframing PPPiP as a reproducible, partner-centered research program, not the existence of digital co-drawing.",
-    "The authors argue active inference does explanatory work only if a study maps interface events to observations and partner-relevant policies.",
+    "The authors argue active inference does explanatory work for a study only if it maps interface events to observations, defines partner-relevant policies, and distinguishes reciprocal updating from shared-stimulus effects.",
     "The paper explicitly disclaims that DigiPPPiP is clinically therapeutic, universally accessible, or causally validated by neural synchrony, leaving these to controlled studies."
   ],
   "key_findings_evidence": [
@@ -115,6 +115,7 @@
     "date": "2026-10-01",
     "work_kind": "theoretical",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Framework/research-program manuscript with no participant data; all computational outputs and session traces are illustrative. Findings are the authors' framing claims and stated scope limits."
+    "notes": "Framework/research-program manuscript with no participant data; all computational outputs and session traces are illustrative. Findings are the authors' framing claims and stated scope limits.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

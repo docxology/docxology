@@ -29,7 +29,7 @@
 - Within the finite ledger, the same bitstream supports different QRF partitions, so the partition organizes the model without being evidence for its ontology.
 - All admissible deployments preserve normalized boundary probability mass, while the perturbation control fails.
 - In the surrogate model, the separation prior is useful only through agency.
-- Bayesian model reduction prunes the separation prior at high metacognitive access, at the weakest credible precision.
+- In the finite surrogate, Bayesian model reduction tracks the separation prior's net value and prunes it at high metacognitive access, at the weakest credible precision.
 - The author explicitly does not claim that the software proves emptiness, removes a self, or realizes a physical quantum free-energy principle.
 
 _Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._

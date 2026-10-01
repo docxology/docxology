@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Multi-engine literature retrieval across 7 engines with graceful degradation, Canonical-identifier de-duplication and keyword relevance filtering, Keyword-based 6-bucket subfield classification and growth metrics
-- Identifies findings: The live run retrieved and de-duplicated a corpus of 2302 modafinil records spanning 2000-2026., The modafinil literature grows at a CAGR of 3.45%, doubling every 11.3 years, with a peak of 112 publications in 2025., Clinical Sleep is the largest subfield, at 64.3% of the classified corpus.
+- Identifies findings: The live run retrieved and de-duplicated a corpus of 2302 modafinil records spanning 2000-2026., In the retrieved corpus (2000–2026), modafinil publications grow at a CAGR of 3.45%, doubling every 11.3 years, with a peak of 112 publications in 2025., Clinical Sleep is the largest subfield, at 64.3% of the classified corpus.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

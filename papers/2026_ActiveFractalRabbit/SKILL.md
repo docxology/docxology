@@ -30,7 +30,7 @@ Primary methods and techniques applied in this work:
 
 Core contributions and results:
 
-- Soft belief marginalization beats a point estimate as emissions degrade: 0 nats at a clean channel to 0.739 nats at flip probability 0.400, with a cross-draw mean of 0.495 nats.
+- On the synthetic fixture, soft Bayesian marginalization beats a hard point estimate as emissions degrade: 0 nats at a clean channel to 0.739 nats at flip probability 0.400 on the primary draw, with a mean of 0.495 nats.
 - Under noisy emission, active inference ranks 1 of 14 but leads the strongest non-AIF belief filter by only 0.005 nats, a statistical tie.
 - No directional comparison in the clustered-bootstrap family survives multiplicity correction.
 - Withholding location collapses the filter's mean mass on the true cell from 0.995 to 0.069.

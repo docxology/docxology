@@ -46,6 +46,7 @@
     "date": "2026-10-01",
     "work_kind": "commentary/policy",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Short book contribution (D. A. Friedman & O. C. Ripley) for the Taschen 'On NFT' book; descriptive essay plus catalogue table, no research methods. Bibliography lists no authors; text credits Friedman and Ripley."
+    "notes": "Short book contribution (D. A. Friedman & O. C. Ripley) for the Taschen 'On NFT' book; descriptive essay plus catalogue table, no research methods. Bibliography lists no authors; text credits Friedman and Ripley.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

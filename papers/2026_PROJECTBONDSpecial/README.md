@@ -27,7 +27,7 @@
 ## Key Findings
 
 - The aggregate gate ran pytest with a 90% coverage floor over the fleet and the compendium: 33 rows measured, all passing.
-- The cross-film mission OPERATION_OMNIBUS ran goldfinger, goldeneye and no_time_to_die in order over 6 plan steps, ending with an all-verdicts PASS.
+- Run over deterministic reference providers, the cross-film mission OPERATION_OMNIBUS executed 6 plan steps (goldfinger, goldeneye, no_time_to_die) and closed with an all-verdicts PASS.
 - Two independent fresh runs of OPERATION_OMNIBUS produced byte-identical reports, manifests, checkpoints, outcomes and provenance files.
 - An interrupted run resumed from its last completed step and produced a report byte-identical to a fresh run.
 - In the Dr. No (CRAB KEY) package's deterministic scenario, both injected isotopes were recovered among the top identifications.

@@ -93,6 +93,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Small, author-run evaluation tiers (6, 24 and 40 examples plus a LongMemEval_S slice); the author explicitly limits claims to method integrity and failure localization, treats token-F1 and citation overlap as operational diagnostics, and leaves RQ4 (expert quality, production acceptance) as unmet. PDF title differs from the bibliography title ('THALIA: A Typed Agentic Harness for Reproducible Long-Context Memory Experiments')."
+    "notes": "Small, author-run evaluation tiers (6, 24 and 40 examples plus a LongMemEval_S slice); the author explicitly limits claims to method integrity and failure localization, treats token-F1 and citation overlap as operational diagnostics, and leaves RQ4 (expert quality, production acceptance) as unmet. PDF title differs from the bibliography title ('THALIA: A Typed Agentic Harness for Reproducible Long-Context Memory Experiments').",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

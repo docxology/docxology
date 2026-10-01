@@ -55,7 +55,7 @@
     },
     {
       "name": "Multi-project evaluation and feature comparison with peer tools",
-      "description": "Three exemplar projects were run through the full pipeline, and template/ was compared with peer tools (e.g. Snakemake, Quarto, DVC) on fourteen dimensions.",
+      "description": "Three exemplar projects were run through the pipeline in a fast configuration that skips infrastructure tests and LLM review; template/ was also compared with peer tools on fourteen dimensions.",
       "evidence": "All three projects were executed through the full eight-stage pipeline using the run.sh interactive orchestrator with the “all projects core (fast)” configuration, which skips infrastructure tests and LLM review"
     }
   ],
@@ -83,6 +83,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Self-describing software/architecture paper; the manuscript was produced by the pipeline it describes. Peer-tool count is inconsistent in the text (abstract says nine, contributions list names ten). Timings are described as representative."
+    "notes": "Self-describing software/architecture paper; the manuscript was produced by the pipeline it describes. Peer-tool count is inconsistent in the text (abstract says nine, contributions list names ten). Timings are described as representative.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

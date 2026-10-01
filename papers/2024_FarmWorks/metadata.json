@@ -128,6 +128,7 @@
     "date": "2026-10-01",
     "work_kind": "other",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Project/grant proposal (v1, Sept 2024); all methods are planned work packages, and no results are reported."
+    "notes": "Project/grant proposal (v1, Sept 2024); all methods are planned work packages, and no results are reported.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

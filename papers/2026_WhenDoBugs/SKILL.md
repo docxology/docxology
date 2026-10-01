@@ -34,7 +34,7 @@ Core contributions and results:
 - The framework yields five preregistered falsifiers, including spectral nulls under matched thermal load and geometric mismatch between sensilla and predicted resonances.
 - Published insect ORN timing is fast enough that any IR stage would need to be experimentally separated from already-rapid molecular responses.
 - Beetle, kissing-bug, ant, cycad, and mosquito examples establish radiant IR sensing precedents but not direct semiochemical IR olfaction.
-- Automated peak detection identifies CHC-associated bands that can support species discrimination in ATR-FTIR data, though perceptual use is untested.
+- On a CHC spectrum fixture, the paper's automated peak detection identifies CHC-associated bands that published ATR-FTIR work links to species discrimination; perceptual use of those bands remains to be tested.
 
 Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 

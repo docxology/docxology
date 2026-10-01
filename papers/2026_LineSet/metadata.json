@@ -87,6 +87,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "full_text.md (from line_set_combined.pdf) is 'The Line Set: The Collected Volume', compiling 5 works unchanged: The Line Set (sections 1-10) plus Personal Red Lines for Development, Black Line, Golden Line, and White Line. This summary covers only The Line Set work named in the bibliography. The PDF shows DOI 10.5281/zenodo.21754244 (collected volume) while README/metadata use 10.5281/zenodo.21754243; the bibliography entry may correspond to the compiled volume rather than the standalone paper."
+    "notes": "full_text.md (from line_set_combined.pdf) is 'The Line Set: The Collected Volume', compiling 5 works unchanged: The Line Set (sections 1-10) plus Personal Red Lines for Development, Black Line, Golden Line, and White Line. This summary covers only The Line Set work named in the bibliography. The PDF shows DOI 10.5281/zenodo.21754244 (collected volume) while README/metadata use 10.5281/zenodo.21754243; the bibliography entry may correspond to the compiled volume rather than the standalone paper.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

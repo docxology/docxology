@@ -67,8 +67,8 @@
       "evidence": "By using a single integrated machine learning framework on pre-existing biological data (TensorFlow/compute-graph), MVEE jointly and optimally considers coarse-grained state and process models across scales."
     },
     {
-      "name": "Worked example: harvester ant ('Pogo') foraging across three scales",
-      "description": "Sketches state and process models for one colony over a day, a colony population over a summer, and populations over generations.",
+      "name": "Worked example: 'Pogo Foraging' state/process models across three scales",
+      "description": "Sketches state and process models for one ant colony over a day, a population of colonies over a summer, and populations over intergenerational time.",
       "evidence": "Example state/process + coarse-graining for “Pogo Foraging”"
     }
   ],
@@ -94,6 +94,7 @@
     "date": "2026-10-01",
     "work_kind": "presentation/transcript",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Slide deck; many slides are image-only so the extracted text is sparse. Claims are the presenter's proposals, not tested results."
+    "notes": "Slide deck; many slides are image-only so the extracted text is sparse. Claims are the presenter's proposals, not tested results.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

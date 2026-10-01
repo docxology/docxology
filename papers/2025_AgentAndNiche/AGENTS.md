@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Section-by-section dialogue between Blake's text and ecological-psychology prose, Paraphrastic rewriting of Blake's lines in information-theoretic vocabulary, Self-declared speculative, LLM-assisted composition
+- Extracts methods: Section-by-section dialogue between Blake's text and ecological-psychology prose, Paraphrastic rewriting of Blake's lines in information-theoretic vocabulary, Self-declared speculative epistemic status
 - Identifies findings: The text reads Blake's 'without contraries is no progression' as opposition generating the potential landscape that enables directed motion., It casts organisms as active inference engines that construct the niches and possibility spaces they then navigate., It concludes by framing 'everything that lives is holy' as a recognition of negentropy and self-modelling systems.
 - Maps contributions to Art & Synergetics literature
 

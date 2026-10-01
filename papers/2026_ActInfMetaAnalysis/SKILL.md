@@ -32,7 +32,7 @@ Core contributions and results:
 
 - Application domains dominated the corpus (Domain C 64.0%), with tools (B) at 20.8% and core theory (A) at 15.2%.
 - The citation network was sparse: 2,176 intra-corpus edges out of 29,323 outgoing references (7.4% resolution), anchored by hub papers.
-- Hypothesis scores clustered into tiers, with H1 FEP Universality in a diffuse tier (about +0.48) dominated by neutral assessments.
+- LLM-derived hypothesis scores clustered into tiers, with H1 FEP Universality in a diffuse tier (about +0.48) where a large neutral plurality reflects broad invocation of the principle without explicit empirical test.
 - The authors caution that all assertions are automatically generated and not manually validated, so hypothesis scores are preliminary.
 - Preliminary experiments indicated about 15-20% over-extraction, and error rates for the 819-paper run were not quantified.
 

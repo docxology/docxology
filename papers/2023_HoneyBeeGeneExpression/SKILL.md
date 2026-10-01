@@ -35,7 +35,7 @@ Core contributions and results:
 - Curation reduced 133 uniquely named tissues to 54 groups; whole adult body, brain and mushroom body made up 62.3% of samples.
 - Optional metadata fields were largely blank (e.g. 99.1% genotype, 67.5% sex, 77.8% age), limiting their use as surrogate variables in harmonization.
 - Average library size increased over time, but publication date explained only a small fraction of variance in total bases (R2=0.061).
-- The authors attribute the heavy winnowing to heterogeneous experiments, asymmetric tissue coverage with single-tissue designs, and incomplete metadata underpowering surrogate variable analysis.
+- The authors suggest several possible reasons for the heavy winnowing: heterogeneous experiments, asymmetric tissue coverage with single-tissue designs, and incomplete metadata that may have underpowered surrogate variable analysis.
 
 Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 

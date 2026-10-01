@@ -118,6 +118,7 @@
     "date": "2026-10-01",
     "work_kind": "book/report",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Edition 0.1 open textbook/atlas (~6.9 MB extraction); summary drawn from the abstract, orientation, contribution-boundary, safety-rail, and method-reference sections only, not the full module content. Work explicitly disclaims being a benchmark or measuring learning outcomes. One quote preserves an 'ff' ligature (U+FB00)."
+    "notes": "Edition 0.1 open textbook/atlas (~6.9 MB extraction); summary drawn from the abstract, orientation, contribution-boundary, safety-rail, and method-reference sections only, not the full module content. Work explicitly disclaims being a benchmark or measuring learning outcomes. One quote preserves an 'ff' ligature (U+FB00).",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

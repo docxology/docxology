@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Joint public comment to NTIA docket NTIA-2023-0005-0001, BOLTS (business, operations, legal, technical, social) framing
-- Identifies findings: The authors argue blanket regulation and ethical frameworks for AI as a whole are inappropriate and likely to generate negative externalities and new conflicts., They argue sectoral standards (e.g. 'AI in medicine') built on existing licensure and duties of care are more practical than standards for AI as a whole., They propose HIPPO, a no-fault mutual self-insurance structure with strict liability, a pooled reserve and mass contract components.
+- Identifies findings: The authors argue blanket regulation and ethical frameworks for AI as a whole are inappropriate and likely to generate negative externalities and new conflicts., They argue sectoral standards (e.g. 'AI in medicine') built on existing licensure and duties of care are more practical than standards for AI as a whole., The comment describes HIPPO, a no-fault mutual self-insurance structure considered in forthcoming proposals by several contributors, with strict liability, pooled reserve and mass contract components.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

@@ -31,7 +31,7 @@ Core contributions and results:
 - The authors conclude that despite many results on reproductive physiology and morphology, few studies have investigated the genetics of ant behavior directly.
 - The review reports that eusocial hymenopteran genomes show exceptionally high rates of gene turnover.
 - Reviewed quantitative genetic studies show heritable differences in task performance among matrilines/patrilines.
-- The authors caution that developmental stage, sampled tissue (e.g. whole-body samples) and time of day can strongly affect gene-expression results.
+- The authors argue that genetic studies of ant behavior will need to be aware of how variables such as developmental stage, sampled tissue and time of day affect results.
 - They identify the feedback between individual physiological changes and socially mediated responses to environment as the next step for ant behavioral genetics.
 
 Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).

@@ -111,6 +111,7 @@
     "date": "2026-10-01",
     "work_kind": "theoretical",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Extracted text lacks a title page/abstract but content matches the bibliography title. Proposals are conceptual; the only 'empirical results' are a reflexive description of the authors' own team. Several pages are image-only, including Russian-language pages (26, 32). README CONTRADICTION: README Methods list 'Agent-based modeling of collective behavior' and 'Behavioral engineering and incentive design'; the text contains no agent-based modeling or incentive design."
+    "notes": "Extracted text lacks a title page/abstract but content matches the bibliography title. Proposals are conceptual; the only 'empirical results' are a reflexive description of the authors' own team. Several pages are image-only, including Russian-language pages (26, 32). README CONTRADICTION: README Methods list 'Agent-based modeling of collective behavior' and 'Behavioral engineering and incentive design'; the text contains no agent-based modeling or incentive design.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

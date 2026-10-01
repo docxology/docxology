@@ -89,6 +89,7 @@
     "date": "2026-10-01",
     "work_kind": "presentation/transcript",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Automatic speech transcript with many recognition errors (e.g., 'inactive' for enactive, 'Philadelphia of mind'); speaker labels (Speaker B/C/D, even 'Daniel') are unreliable, so author attributions are inferred from self-introductions and content. The 48.1 session text appears twice in the file. Paper's second author name is transcribed as 'Pierre Pouyer'/'Kia Pouri'."
+    "notes": "Automatic speech transcript with many recognition errors (e.g., 'inactive' for enactive, 'Philadelphia of mind'); speaker labels (Speaker B/C/D, even 'Daniel') are unreliable, so author attributions are inferred from self-introductions and content. The 48.1 session text appears twice in the file. Paper's second author name is transcribed as 'Pierre Pouyer'/'Kia Pouri'.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

@@ -88,6 +88,7 @@
     "date": "2026-10-01",
     "work_kind": "theoretical",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Informal concept/posit note (≈10 KB) with no implementation, data, or results; findings are the authors' proposals and intentions, not tested outcomes. The README abstract mentions Levin's morphogenesis/morphospace, which does not appear in the extracted text (references are only YouTube links)."
+    "notes": "Informal concept/posit note (≈10 KB) with no implementation, data, or results; findings are the authors' proposals and intentions, not tested outcomes. The README abstract mentions Levin's morphogenesis/morphospace, which does not appear in the extracted text (references are only YouTube links).",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

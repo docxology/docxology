@@ -116,6 +116,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Small bounded case-study evaluation (2 sites, 7 runs, deterministic backend only, server-rendered HTML only); no human evaluation yet. Metadata flag: the PDF title page gives DOI 10.5281/zenodo.22663907, while README/metadata.json/AGENTS.md use 10.5281/zenodo.22663906 (metadata.json record_id is 22663907); likely concept vs version DOI, worth confirming."
+    "notes": "Small bounded case-study evaluation (2 sites, 7 runs, deterministic backend only, server-rendered HTML only); no human evaluation yet. Metadata flag: the PDF title page gives DOI 10.5281/zenodo.22663907, while README/metadata.json/AGENTS.md use 10.5281/zenodo.22663906 (metadata.json record_id is 22663907); likely concept vs version DOI, worth confirming.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

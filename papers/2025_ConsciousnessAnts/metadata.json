@@ -59,6 +59,7 @@
     "date": "2026-10-01",
     "work_kind": "theoretical",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "full_text.md contains the entire edited volume (As colônias de formigas são conscientes?, Editora Fi, 2025, 335p); this summary covers only chapter 3 (approx. lines 2833-3770), co-authored by Maria Luiza Iennaco and Daniel Friedman (the bibliography entry lists no authors). Conceptual chapter; no new empirical data."
+    "notes": "full_text.md contains the entire edited volume (As colônias de formigas são conscientes?, Editora Fi, 2025, 335p); this summary covers only chapter 3 (approx. lines 2833-3770), co-authored by Maria Luiza Iennaco and Daniel Friedman (the bibliography entry lists no authors). Conceptual chapter; no new empirical data.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

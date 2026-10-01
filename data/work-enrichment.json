@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T18:16:05Z",
+  "generated_at": "2026-10-01T20:58:08Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
   "count": 219,
   "works": {
@@ -25,7 +25,7 @@
         "Eight-stage build pipeline from environment setup to LLM review — Stages run sequentially: setup, tests with coverage, analysis scripts, Pandoc/XeLaTeX rendering, hashing/watermarking, PDF validation, LLM review.",
         "Zero-Mock testing policy with 90%/60% coverage gates — Tests use real filesystem operations and subprocesses instead of mocks, with coverage thresholds of 90% for projects and 60% for infrastructure.",
         "SHA-256 hashing with steganographic watermarking for provenance — Rendered PDFs carry SHA-256 hashes in metadata plus alpha-channel overlays and QR codes for tamper detection.",
-        "Multi-project evaluation and feature comparison with peer tools — Three exemplar projects were run through the full pipeline, and template/ was compared with peer tools (e.g. Snakemake, Quarto, DVC) on fourteen dimensions."
+        "Multi-project evaluation and feature comparison with peer tools — Three exemplar projects were run through the pipeline in a fast configuration that skips infrastructure tests and LLM review; template/ was also compared with peer tools on fourteen dimensions."
       ],
       "source": "papers/2026_ReproducibleResearch/README.md"
     },
@@ -238,11 +238,11 @@
         "non-equilibrium thermodynamics"
       ],
       "findings": [
-        "AntBody energy showed flat scaling with joint count across J from 6 to 30, making sensors and contact resolution the main efficiency targets.",
-        "With sparsity ρ = 0.02, AntBrain energy stayed roughly constant across a 16× expansion in sensory channels (64 to 1024).",
+        "In the energy model, AntBody energy stayed constant despite morphological scaling, making sensor optimization and contact resolution the main efficiency targets rather than joint count.",
+        "In the energy model, biological sparsity allowed 16× sensory scaling (64 to 1024 channels) with constant energy consumption.",
         "AntMind energy grew steeply with planning horizon, and real-time operation was reported infeasible beyond a horizon of 15.",
         "Modelled neural processing sits about 4.2 × 10^8 times above the Landauer minimum, which the author identifies as the largest optimization opportunity.",
-        "The hexapod's cost of transport (about 1.93) is within robotic ranges but higher than reported for biological ants (0.1-0.3)."
+        "The modelled locomotion cost of transport (≈1.93) falls within robotic platform ranges but is 2-6× higher than biological ants (0.1-0.3)."
       ],
       "methods": [
         "Closed-form per-module complexity for AntBody, AntBrain, and AntMind loops — Derives time and space complexity for the body (contact dynamics), brain (sparse spiking network), and mind (active inference planning) loops of the Ant Stack.",
@@ -510,7 +510,7 @@
       "methods": [
         "Section-by-section dialogue between Blake's text and ecological-psychology prose — The work pairs passages of Blake's The Marriage of Heaven and Hell with commentary prose framed in active inference and ecological terms.",
         "Paraphrastic rewriting of Blake's lines in information-theoretic vocabulary — Each Blake passage is followed by a reworking that substitutes concepts such as singular value decomposition, priors and free energy for Blake's imagery.",
-        "Self-declared speculative, LLM-assisted composition — The author states an explicitly speculative epistemic status and notes the influence of Claude 4.5 in composing the text."
+        "Self-declared speculative epistemic status — The author labels the work's epistemic status 'Definitely Speculative & Claude 4.5-pilled', framing it as speculative rather than empirical."
       ],
       "source": "papers/2025_AgentAndNiche/README.md"
     },
@@ -532,7 +532,7 @@
       "methods": [
         "Mapping of SoSPT systems processes onto Active Inference concepts — The slides pair Troncale-style systems processes with Active Inference counterparts, e.g. Boundaries with Markov blankets and Feedback & Cycles with predictive coding loops.",
         "Terminology alignment via the Active Inference Ontology — Uses the Active Inference Ontology repository to frame cross-vocabulary correspondences between systems science and Active Inference terms.",
-        "Curated literature pointers per systems process — Each of five processes (boundaries, feedback, self-organization, flows/fields, hierarchies) is linked to specific FEP/Active Inference papers and 2022 textbook figures."
+        "Curated literature pointers per systems process — Each of five processes (boundaries, feedback, self-organization, flows/fields, hierarchies) is linked to specific FEP/Active Inference papers, some also to 2022 textbook figures."
       ],
       "source": "papers/2025_SystemsProcesses/README.md"
     },
@@ -578,7 +578,7 @@
         "Reports that the Institute's Discord server, its primary discussion and meeting venue, has over 1000 people.",
         "Reports that the Institute had released over 500 videos to date.",
         "Reports that RxInfer.jl Learning Group meetings in 2024 included over 20 active contributors.",
-        "Frames the Institute's approach as cultivating an 'open' ecosystem rather than a closed, laboratory-centric approach to Active Inference."
+        "Frames the Institute's approach as embracing the benefits of an 'open' ecosystem rather than relying on a closed, laboratory-centric approach alone, which might have siloed Active Inference academically."
       ],
       "methods": [
         "Collaboratively edited living Coda document (v3 snapshot) by a named author team — Snapshot of the Institute & Ecosystem living document, which authors edited with a full trace of edits; earlier versions date from 2023 and 2024.",
@@ -920,7 +920,7 @@
         "Proposes reading Blake's 'Four-Fold vision' as one contextualization of how Blake situates science and formality, with 'Newton's Sleep' as single vision.",
         "Poses, as an open question, how Blake's tetrahedral four-fold concordances could connect with the four-fold particular partition of the Free Energy Principle.",
         "Links Blake's 'Minute Particulars' to the particular partition, glossed as what makes an agent of every thing within a scale-free framework.",
-        "Suggests that 'deep structures' in Narrative Unbound are misnomers for unstable structures, relating this to hierarchical depth in Active Inference generative models."
+        "Highlights a quoted line from a featured page of Narrative Unbound that “deep structures” are misnomers of “unstable structures”, and relates it to hierarchical depth in Active Inference generative models."
       ],
       "methods": [
         "Four-part livestream slide outline on Blake's views — The slide deck structures the stream around Blake's view on art, on math, and on Active Inference, with an open fourth section.",
@@ -991,7 +991,7 @@
         "Reports that, as of November 2024, 5 Research Fellows had joined the new Fellows program.",
         "Reports that the Institute's Discord server, its primary discussion and meeting venue, has over 1000 people.",
         "Reports that the Institute had released over 500 videos to date.",
-        "Frames the Institute's approach as cultivating an 'open' ecosystem rather than a closed, laboratory-centric approach to Active Inference."
+        "Frames the Institute as recognizing the benefits of an 'open' ecosystem approach rather than taking a closed, laboratory-centric approach alone, which might have siloed Active Inference."
       ],
       "methods": [
         "Collaboratively edited living document published as a linear v2 snapshot — The Institute & Ecosystem living document, edited with a full trace of edits, is concatenated into a linear 2024 v2 snapshot with a Zenodo DOI.",
@@ -1131,7 +1131,7 @@
         "Curation reduced 133 uniquely named tissues to 54 groups; whole adult body, brain and mushroom body made up 62.3% of samples.",
         "Optional metadata fields were largely blank (e.g. 99.1% genotype, 67.5% sex, 77.8% age), limiting their use as surrogate variables in harmonization.",
         "Average library size increased over time, but publication date explained only a small fraction of variance in total bases (R2=0.061).",
-        "The authors attribute the heavy winnowing to heterogeneous experiments, asymmetric tissue coverage with single-tissue designs, and incomplete metadata underpowering surrogate variable analysis."
+        "The authors suggest several possible reasons for the heavy winnowing: heterogeneous experiments, asymmetric tissue coverage with single-tissue designs, and incomplete metadata that may have underpowered surrogate variable analysis."
       ],
       "methods": [
         "Entrez/NCBI SRA query for Apis mellifera Illumina RNA-seq samples — Public RNA-seq samples were gathered via an Entrez search filtered to A. mellifera, Illumina platforms, rnaseq type and SRA biosample.",
@@ -1240,7 +1240,7 @@
       "findings": [
         "The authors argue blanket regulation and ethical frameworks for AI as a whole are inappropriate and likely to generate negative externalities and new conflicts.",
         "They argue sectoral standards (e.g. 'AI in medicine') built on existing licensure and duties of care are more practical than standards for AI as a whole.",
-        "They propose HIPPO, a no-fault mutual self-insurance structure with strict liability, a pooled reserve and mass contract components.",
+        "The comment describes HIPPO, a no-fault mutual self-insurance structure considered in forthcoming proposals by several contributors, with strict liability, pooled reserve and mass contract components.",
         "They call for data 'meta-standards' covering stable external reference to data and abstract entities, verified clearinghouses/data trusts, and annotation affordances.",
         "They recommend NTIA act as facilitating and convening authority for professionalization, data standardization/stable reference, and insurance-like structures."
       ],
@@ -1362,7 +1362,7 @@
       ],
       "findings": [
         "The authors found it preferable to split browsing/gathering and curation across two agents rather than one agent doing all tasks.",
-        "In the worked example the agents completed a literature review and report summarizing ten Active Inference papers; the authors note the approach is currently limited.",
+        "In the worked example the agents executed tasks such as literature review on active inference, summarizing key points, and preparing a report; the authors note the approach is currently limited.",
         "Proposes that GRT roles be flexible: any role may be non-existent, singular, plural, or autonomous (e.g. DeSci DAOs).",
         "Cognitive security concepts (NIM, VIE) are currently integrated only via meta-prompts, with fuller implementation left to future work.",
         "States the primary contributions as augmented architectures, Active Inference as a cognitive kernel in GRTs, and cognitive models for research processes."
@@ -2048,7 +2048,7 @@
         "A fraction of colony expression differences were associated with humidity sensitivity of foraging and forager brain DA:5HT ratio.",
         "Neurotransmitter receptors as a category were significantly correlated in expression with colony sensitivity of foraging activity to humidity.",
         "Gene coexpression analysis identified 11 modules of loci with coordinated expression patterns across colonies.",
-        "Genes more central to coexpression modules were more correlated with colony traits and evolving under increased coding-sequence constraint."
+        "Genes more central to coexpression modules tended to be more correlated with colony traits and to be evolving under increased coding-sequence constraint."
       ],
       "methods": [
         "Single-forager brain RNA-seq from nine field colonies of P. barbatus — Foragers collected on one morning near Rodeo, New Mexico had single brains sequenced on Illumina HiSeq 4000, yielding 85 transcriptomes from 9 colonies.",
@@ -2171,7 +2171,7 @@
         "Hanks takes an inclusive view of decision making, holding that even a single neuron can make a decision, though with less complexity than a network."
       ],
       "methods": [
-        "Written Q&A interview with neuroscientist Timothy Hanks — Mikhailova and Friedman pose long-form questions to Hanks on neuroscience, decision making, philosophy, and science careers, published in ALIUS Bulletin.",
+        "Q&A interview with neuroscientist Timothy Hanks — Mikhailova and Friedman pose long-form questions to Hanks on neuroscience, decision making, philosophy, and science careers, published in ALIUS Bulletin.",
         "Questions anchored in Hanks's published studies — Interviewers frame questions around specific prior work, such as his macaque speed-accuracy study and an auditory-click change detection task."
       ],
       "source": "papers/2020_NeuroscienceDecision/README.md"
@@ -2189,7 +2189,7 @@
         "altered states"
       ],
       "findings": [
-        "Dennett argues that anyone can tell scientists how to do better science, since scientists are as vulnerable to illusion and sloppy thinking as anyone.",
+        "Dennett argues that anybody can, in principle, tell scientists how to do better science, since scientists are as vulnerable to illusion and sloppy thinking as anyone.",
         "Dennett recalls arguing, with Hurley and Adams, that all control in nervous systems is accomplished by 'emotional' signals with no highest-level executive.",
         "Dennett says dream content is not random and that theories are best confirmed by showing how a model predicts the results of targeted disruptions.",
         "Dennett views psychedelics as risky but potentially enlightening and therapeutic, and says he has avoided them himself.",
@@ -2218,7 +2218,7 @@
         "Forager brains from different colonies varied significantly in biogenic amine titers and in expression of neurophysiological signaling pathways involved in foraging regulation.",
         "Raising forager brain dopamine increased foraging activity, while lowering brain dopamine decreased it.",
         "Foragers from colonies that reduce foraging in dry conditions lose water and motor coordination faster; hydrated foragers made more trips, especially as conditions got drier.",
-        "Hundreds of genes had expression patterns correlated with colony traits; loci more central to coexpression networks correlated better with colony traits and showed greater coding-sequence constraint.",
+        "Hundreds of genes had expression patterns correlated with colony traits; loci more central to coexpression networks tended to correlate better with colony traits and showed greater coding-sequence constraint.",
         "The stimulatory effect of hydration and dopamine on foraging trips came from slight increases across many treated ants, not from a small subset."
       ],
       "methods": [
@@ -2244,10 +2244,10 @@
       ],
       "findings": [
         "Neuroanatomical theories exclude colony consciousness a priori, so the ACT suggests they have limited carryover to other species or architectures.",
-        "Under IIT, the authors argue the colony would likely have a higher Φmax than aggregated individual workers and thus represent a conscious entity.",
+        "Under IIT, the authors tentatively argue that the colony seems to have a higher Φmax than aggregate individual workers and thus would represent a conscious entity, while noting it is too early for firm claims.",
         "Under the Free Energy Principle, long-term planning, possible counterfactuals and self/non-self modelling might support rudimentary colony self-awareness, though few experiments exist.",
         "Since several frameworks predict colony-level awareness, either colonies are aware or current approaches are individually inadequate and collectively inconsistent.",
-        "The authors remain agnostic on colony consciousness and propose the ant colony as a tractable, ethically manipulable model system for consciousness experiments."
+        "Unlike brains, social insect colonies can be ethically manipulated, divided, or drugged, which the authors present as making the ant colony a tractable model system for consciousness experiments."
       ],
       "methods": [
         "Forward vs reverse tests, framed as Kuhnian normal vs revolutionary science — Theories of consciousness are classed as forward tests (classifying arbitrary systems) needing calibration by a reverse test, analogised to normal vs revolutionary science.",
@@ -2339,7 +2339,7 @@
         "Genotype-Environment-Phenotype tensor representation through time — Represents evolving systems as a dynamic multiscale G-E-P tensor over time, using only measurable quantities instead of fitness.",
         "Pairing of state models and process models across scales — Distinguishes predictive state theories (e.g. R = h2S) from algorithmic process theories and combines them via coarse-graining.",
         "Proposed compute-graph (TensorFlow) machine-learning architecture — Proposes a single integrated ML framework on existing biological data to jointly consider coarse-grained state and process models.",
-        "Worked example: harvester ant ('Pogo') foraging across three scales — Sketches state and process models for one colony over a day, a colony population over a summer, and populations over generations."
+        "Worked example: 'Pogo Foraging' state/process models across three scales — Sketches state and process models for one ant colony over a day, a population of colonies over a summer, and populations over intergenerational time."
       ],
       "source": "papers/2018_MVEE/README.md"
     },
@@ -2365,7 +2365,7 @@
         "Friston holds that consciousness is the process of inference, so any free-energy-minimizing system is conscious to some degree; self-awareness requires a self-other model."
       ],
       "methods": [
-        "Written Q&A interview of Karl Friston by Fortier and Friedman — The work is a published interview: Martin Fortier and Daniel A. Friedman pose long-form questions and Karl Friston answers in writing.",
+        "Long-form Q&A interview of Karl Friston by Fortier and Friedman — The work is a published interview (ALIUS Bulletin): Martin Fortier and Daniel A. Friedman pose long-form questions and Karl Friston answers them.",
         "Interviewer-framed contrasts of Bayesian brain, predictive coding and FEP — Questions set out formal Bayesian belief-updating equations and contrast the three frameworks before asking Friston to respond.",
         "Questions drawing on empirical literatures (fluency, psychosis, altered states) — Interviewers bring in specific prior work, e.g. Chetverikov's fluency/disfluency 'sweet spot' results and competing models of psychosis, as prompts."
       ],
@@ -2433,7 +2433,7 @@
       ],
       "findings": [
         "Homozygous Orco loss-of-function ants of both species showed similar altered behavior and reduced reproductive performance, supporting Orco's central role in ant olfaction.",
-        "Both studies unexpectedly found gross antennal lobe defects in Orco mutants, which the authors argue implies a novel neurodevelopmental role for Orco.",
+        "Both studies unexpectedly found gross antennal lobe defects in Orco mutants; the commentary argues the reduced glomerular number implies a novel neurodevelopmental role for Orco, perhaps tied to ants' expanded glomerular number.",
         "The commentary frames the two studies together as a watershed moment for eusocial insect genetics, moving beyond purely correlative evidence."
       ],
       "methods": [
@@ -2482,7 +2482,7 @@
         "The authors conclude that despite many results on reproductive physiology and morphology, few studies have investigated the genetics of ant behavior directly.",
         "The review reports that eusocial hymenopteran genomes show exceptionally high rates of gene turnover.",
         "Reviewed quantitative genetic studies show heritable differences in task performance among matrilines/patrilines.",
-        "The authors caution that developmental stage, sampled tissue (e.g. whole-body samples) and time of day can strongly affect gene-expression results.",
+        "The authors argue that genetic studies of ant behavior will need to be aware of how variables such as developmental stage, sampled tissue and time of day affect results.",
         "They identify the feedback between individual physiological changes and socially mediated responses to environment as the next step for ant behavioral genetics."
       ],
       "methods": [
@@ -2592,7 +2592,7 @@
       ],
       "findings": [
         "Hypothesizes that leukemia, multiple myeloma, myelodysplastic and autoimmune disorders may be associated with or caused by Ehrlichia/Anaplasma bacteria.",
-        "Reports that in one AML patient, leukocytes rose from 200 to 24,000 within a short period of Rifampin treatment.",
+        "Recounts a previously reported case in which an AML patient's leukocytes rose from 200 to 24,000 within a short period of Rifampin treatment.",
         "The authors describe the three cases as not definitive but as suggestive evidence of a connection between leukemia and EA.",
         "Proposes that leukemia may be an antibiotic-treatable infection rather than a malignancy, under this conceptualization.",
         "Concludes that the data do not prove the hypothesis and that further serology and DNA studies are needed."
@@ -2673,7 +2673,7 @@
       "findings": [
         "Application domains dominated the corpus (Domain C 64.0%), with tools (B) at 20.8% and core theory (A) at 15.2%.",
         "The citation network was sparse: 2,176 intra-corpus edges out of 29,323 outgoing references (7.4% resolution), anchored by hub papers.",
-        "Hypothesis scores clustered into tiers, with H1 FEP Universality in a diffuse tier (about +0.48) dominated by neutral assessments.",
+        "LLM-derived hypothesis scores clustered into tiers, with H1 FEP Universality in a diffuse tier (about +0.48) where a large neutral plurality reflects broad invocation of the principle without explicit empirical test.",
         "The authors caution that all assertions are automatically generated and not manually validated, so hypothesis scores are preliminary.",
         "Preliminary experiments indicated about 15-20% over-extraction, and error rates for the 819-paper run were not quantified."
       ],
@@ -2714,7 +2714,7 @@
       "findings": [
         "The review captures nominative-accusative, ergative-absolutive, active-stative, tripartite and fluid-S alignment within one algebraic framework linked by alignment functors.",
         "Within case-typed string diagrams, passivization reduces to a type permutation (a Swap in the pregroup category).",
-        "The author argues prompt injection can be analyzed as ill-typed role promotion, a functorial type violation, as a specification target rather than a guarantee on current LLM APIs.",
+        "When multi-turn agent interactions are modeled as a fixed category of licensed morphisms, prompt injection can be analyzed as ill-typed role promotion (a functorial type violation): a specification target, not a guarantee on current LLM APIs.",
         "The topos-theoretic equivalence chain across typological, type-logical, distributional and enriched case theories is presented as a research program, not a finished theorem.",
         "The accompanying code has 1197 tests across 64 files at 95.96% line-and-branch coverage on src/, plus 30 programmatically generated figures."
       ],
@@ -3085,7 +3085,7 @@
         "The framework yields five preregistered falsifiers, including spectral nulls under matched thermal load and geometric mismatch between sensilla and predicted resonances.",
         "Published insect ORN timing is fast enough that any IR stage would need to be experimentally separated from already-rapid molecular responses.",
         "Beetle, kissing-bug, ant, cycad, and mosquito examples establish radiant IR sensing precedents but not direct semiochemical IR olfaction.",
-        "Automated peak detection identifies CHC-associated bands that can support species discrimination in ATR-FTIR data, though perceptual use is untested."
+        "On a CHC spectrum fixture, the paper's automated peak detection identifies CHC-associated bands that published ATR-FTIR work links to species discrimination; perceptual use of those bands remains to be tested."
       ],
       "methods": [
         "Integration of literature morphometrics, ATR-FTIR evidence, ORN timing, and EM models — Combines published sensilla ranges, FTIR insect-chemistry evidence, olfactory neuron timing constraints, and deterministic electromagnetic models.",
@@ -3330,7 +3330,7 @@
       "methods": [
         "Index cards as hashed Nostr notes (JSON to SHA256 ID) — The notes sketch each index card as a JSON object (username, text, etc.) hashed into a 32-byte SHA256 identifier, with edges defined between card IDs.",
         "LLM semantic embeddings attached to index cards — Proposes using language-model embeddings, translations and summaries so cards act as semantic bridges between texts.",
-        "Path analysis over composed index-card graphs — Proposes analyzing paths through card graphs for simple features (length) and subtler ones (share of novel links)."
+        "Path analysis over composed index-card graphs — Proposes analyzing paths through card graphs for trivial features (overall length) and subtler ones (e.g. which proportion of links are novel reports)."
       ],
       "source": "papers/2023_ModernNostrIndex/README.md"
     },
@@ -3342,7 +3342,7 @@
       ],
       "findings": [
         "The slides identify that in the GPT framing the latent semantic state is not separated by speaker, so speakers are admixed and cannot be weighted or attended to differentially.",
-        "The slides propose treating attention as a portfolio (regime) of nested attentions across persons, groups, sets of groups and the eco-niche.",
+        "Reusing a renormalization-group figure from Friston, Friedman et al. 2023, the slides sketch speaker attention as a portfolio (regime) of nested attentions at all levels.",
         "Listed next steps are adding visualizations/dashboards, specifying the model in GNN toward implementation, and adding an action component."
       ],
       "methods": [
@@ -3706,7 +3706,7 @@
         "Tested Python backbone (textbook.models) and deterministic figures — Worked equations are implemented as tested Python functions that chapter prose calls, and figures are generated deterministically from code.",
         "Pandoc + pandoc-crossref rendering pipeline — The manuscript is assembled from Markdown in declared order after analysis scripts produce figures, then rendered to PDF via Pandoc with pandoc-crossref.",
         "Stub-marker counting audit and manuscript-integrity tests — A quality audit counts STUB/TODO/TKTK markers and pytest checks the per-chapter content contract, unique labels, citations and glossary anchors.",
-        "Two filled worked-reference chapters (logistic growth; dose-response) — First Principles derives the logistic growth law; Case Studies fits a linear dose-response trend to a small synthetic six-condition dataset."
+        "Two filled worked-reference chapters (logistic growth; dose-response) — First Principles derives the logistic growth law; Case Studies applies a linear dose-response fit to a small dataset of replicate measurements across control, low and high conditions."
       ],
       "source": "papers/2026_TemplateTextbook/README.md"
     },
@@ -3804,7 +3804,7 @@
       ],
       "findings": [
         "On synthetic traces the I-VT detector recovered a 10 deg saccade's amplitude within 5% and peak velocity within 10%.",
-        "The 3-D closed loop recovered gaze with 0.16 deg RMS residual (max 0.23 deg); the author states this is internal consistency, not device validation.",
+        "On the synthetic 3-D closed loop, gaze was recovered with 0.16 deg RMS residual (max 0.23 deg) for gaze within ±15 deg; the author states this is internal consistency, not device validation.",
         "In the idealised noise sweep, saccade detection was most fragile (F1 0.8 at sigma about 0.0014), while gaze crossed the 2 deg bound near sigma 0.005.",
         "The pupil noise robustness is reported only as a conditional illustration because it follows from the assumed pupil noise model.",
         "The headline limitation is an unclosed device validation gap: correctness rests on constructed ground truth, not reference measurements of real eyes."
@@ -4052,7 +4052,7 @@
       ],
       "findings": [
         "The generated catalogue reports one hundred implemented skills across seven taxonomy groups, from Structured Analytic Techniques to Research and Synthesis Methods.",
-        "The quality gate shows, for the current repository state, that all 100 skills carry group-aware defensive boundaries and skill-specific, non-reused governance entries.",
+        "The author describes a local quality gate, explicitly 'not a safety proof', that can show all 100 skills include group-aware defensive boundaries and skill-specific governance entries in the current repository state.",
         "The worked-example gate verifies exact 100-skill coverage; the examples are expected-answer shapes, not live model transcripts.",
         "The author states the evidence is local conformance only and does not establish operational effectiveness, adversary coverage, user outcomes, or superiority over other libraries.",
         "The deterministic gates do not show that a live runtime will select the same skill, use tools correctly, or answer well in the field."
@@ -4081,7 +4081,7 @@
         "Within the finite ledger, the same bitstream supports different QRF partitions, so the partition organizes the model without being evidence for its ontology.",
         "All admissible deployments preserve normalized boundary probability mass, while the perturbation control fails.",
         "In the surrogate model, the separation prior is useful only through agency.",
-        "Bayesian model reduction prunes the separation prior at high metacognitive access, at the weakest credible precision.",
+        "In the finite surrogate, Bayesian model reduction tracks the separation prior's net value and prunes it at high metacognitive access, at the weakest credible precision.",
         "The author explicitly does not claim that the software proves emptiness, removes a self, or realizes a physical quantum free-energy principle."
       ],
       "methods": [
@@ -4112,7 +4112,7 @@
       ],
       "findings": [
         "The live run retrieved and de-duplicated a corpus of 2302 modafinil records spanning 2000-2026.",
-        "The modafinil literature grows at a CAGR of 3.45%, doubling every 11.3 years, with a peak of 112 publications in 2025.",
+        "In the retrieved corpus (2000–2026), modafinil publications grow at a CAGR of 3.45%, doubling every 11.3 years, with a peak of 112 publications in 2025.",
         "Clinical Sleep is the largest subfield, at 64.3% of the classified corpus.",
         "The citation network has 2204 nodes, 8,772 edges and 1377 communities, with 22.6% of outgoing references resolving inside the retrieved corpus.",
         "The author notes the corpus is a bounded sample: a 1,000-per-engine cap applied and Semantic Scholar was rate-limited, returning zero records."
@@ -4278,7 +4278,7 @@
         "dimensional analysis"
       ],
       "findings": [
-        "Across the two worked example methods, 8 of 8 staged-gate evaluations passed.",
+        "Across the two worked examples, which were built to pass, the analysis script recorded 8 of 8 staged-gate evaluations passing (2 methods x 4 gates).",
         "Live recompilation of each example method produced identical plan hashes, and a 3-record demonstration provenance hash-chain verified.",
         "The author concludes that a controlled vocabulary expressed as typed, validated dataclasses rather than a parsed grammar suffices to reproduce BPL's core safety properties at template-exemplar scope.",
         "Stable scheduling depends on the explicit tie-break: Kahn's algorithm alone does not guarantee a reproducible plan hash.",
@@ -4362,7 +4362,7 @@
         "Five-stage pure-function spine: load, expand, materialize, verify, seal — Child projects are generated by five pure-function stages in separate modules, with no interactive state or network access.",
         "Entropy-free seeded slot selection via SHA-256 digest modulo option count — Each slot choice is derived from a digest of seed, slot name, ordinal and options, with no RNG calls in the expansion path.",
         "Tree-hash provenance re-computed from disk by verify child() — materialize() records a tree hash of sorted (path, content hash) pairs; verify child() re-reads files and recomputes it rather than trusting the record.",
-        "Primitive kernels with analytic ground truth and negative-control mutants — Eight kernels across five domains are checked against analytic outputs, and a mutation meta-gate asserts deliberately wrong controls fail."
+        "Primitive kernels with analytic checks and a mutation meta-gate — Kernels are checked against analytic outputs; a mutation meta-gate (test meta teeth.py) asserts per domain that a constant-success stub fails and the real implementation passes."
       ],
       "source": "papers/2026_AutopoieticProjectGeneration/README.md"
     },
@@ -4505,7 +4505,7 @@
         "illegal state unrepresentable"
       ],
       "findings": [
-        "The stigmergic mechanism's convergence beat a random-choice null model: its Wilson lower bound (0.8816) clears the null model's upper bound (0.0368).",
+        "In the tested calibrated configuration, the stigmergic mechanism beat a random-choice null model: its Wilson lower bound (0.8816) clears the null model's upper bound (0.0368).",
         "Disabling only pheromone deposit collapsed convergence to chance level, attributing the mechanism's advantage to the stigmergic channel in this configuration.",
         "Convergence versus decay showed a threshold rather than a monotonic slope, with 0/60 trials converging at decay 0.10 and 0.30.",
         "Convergence decreased strictly as preference heterogeneity widened (1.0000 0.9333 0.2500 0.0333).",
@@ -4579,7 +4579,7 @@
         "ActiveFractalRabbit"
       ],
       "findings": [
-        "Soft belief marginalization beats a point estimate as emissions degrade: 0 nats at a clean channel to 0.739 nats at flip probability 0.400, with a cross-draw mean of 0.495 nats.",
+        "On the synthetic fixture, soft Bayesian marginalization beats a hard point estimate as emissions degrade: 0 nats at a clean channel to 0.739 nats at flip probability 0.400 on the primary draw, with a mean of 0.495 nats.",
         "Under noisy emission, active inference ranks 1 of 14 but leads the strongest non-AIF belief filter by only 0.005 nats, a statistical tie.",
         "No directional comparison in the clustered-bootstrap family survives multiplicity correction.",
         "Withholding location collapses the filter's mean mass on the true cell from 0.995 to 0.069.",
@@ -4947,7 +4947,7 @@
       ],
       "findings": [
         "The aggregate gate ran pytest with a 90% coverage floor over the fleet and the compendium: 33 rows measured, all passing.",
-        "The cross-film mission OPERATION OMNIBUS ran goldfinger, goldeneye and no time to die in order over 6 plan steps, ending with an all-verdicts PASS.",
+        "Run over deterministic reference providers, the cross-film mission OPERATION OMNIBUS executed 6 plan steps (goldfinger, goldeneye, no time to die) and closed with an all-verdicts PASS.",
         "Two independent fresh runs of OPERATION OMNIBUS produced byte-identical reports, manifests, checkpoints, outcomes and provenance files.",
         "An interrupted run resumed from its last completed step and produced a report byte-identical to a fresh run.",
         "In the Dr. No (CRAB KEY) package's deterministic scenario, both injected isotopes were recovered among the top identifications."
@@ -4978,7 +4978,7 @@
       "findings": [
         "The authors identify a modest irreducible design kernel: two partners, a shared mark field, perceptible agency traces, a temporal relation among contributions, and consentful persistence control.",
         "The stated contribution is reframing PPPiP as a reproducible, partner-centered research program, not the existence of digital co-drawing.",
-        "The authors argue active inference does explanatory work only if a study maps interface events to observations and partner-relevant policies.",
+        "The authors argue active inference does explanatory work for a study only if it maps interface events to observations, defines partner-relevant policies, and distinguishes reciprocal updating from shared-stimulus effects.",
         "The paper explicitly disclaims that DigiPPPiP is clinically therapeutic, universally accessible, or causally validated by neural synchrony, leaving these to controlled studies."
       ],
       "methods": [

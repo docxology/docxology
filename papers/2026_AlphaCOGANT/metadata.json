@@ -126,6 +126,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Reduced illustrative model (two capability levels, discrete six-action control, fixed matrices, no cross-channel transition coupling) per the paper's own limitations section; all numbers are properties of that model."
+    "notes": "Reduced illustrative model (two capability levels, discrete six-action control, fixed matrices, no cross-channel transition coupling) per the paper's own limitations section; all numbers are properties of that model.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

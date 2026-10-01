@@ -110,6 +110,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Data-compendium plus software/pipeline paper. The Gini quote preserves an 'ff' ligature (U+FB00) from extraction. Exploratory analyses are explicitly labelled as pattern discovery, not causal inference; segue/transition structures are described as descriptive, not causal or exhaustive. No lyrics or audio bundled."
+    "notes": "Data-compendium plus software/pipeline paper. The Gini quote preserves an 'ff' ligature (U+FB00) from extraction. Exploratory analyses are explicitly labelled as pattern discovery, not causal inference; segue/transition structures are described as descriptive, not causal or exhaustive. No lyrics or audio bundled.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

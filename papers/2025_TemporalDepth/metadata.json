@@ -85,6 +85,7 @@
     "date": "2026-10-01",
     "work_kind": "theoretical",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Theoretical/hypothesis paper; no new data or simulation are reported here. The Summary states the authors 'have shown from multiple perspectives' that temporal depth collapse causes dissociation, but the body notes the supporting evidence is correlational."
+    "notes": "Theoretical/hypothesis paper; no new data or simulation are reported here. The Summary states the authors 'have shown from multiple perspectives' that temporal depth collapse causes dissociation, but the body notes the supporting evidence is correlational.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

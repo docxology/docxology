@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Side-by-side preview of two companion Cell ant CRISPR/Cas9 studies, Contrast of reproductive biology enabling mutant lines in each species
-- Identifies findings: Homozygous Orco loss-of-function ants of both species showed similar altered behavior and reduced reproductive performance, supporting Orco's central role in ant olfaction., Both studies unexpectedly found gross antennal lobe defects in Orco mutants, which the authors argue implies a novel neurodevelopmental role for Orco., The commentary frames the two studies together as a watershed moment for eusocial insect genetics, moving beyond purely correlative evidence.
+- Identifies findings: Homozygous Orco loss-of-function ants of both species showed similar altered behavior and reduced reproductive performance, supporting Orco's central role in ant olfaction., Both studies unexpectedly found gross antennal lobe defects in Orco mutants; the commentary argues the reduced glomerular number implies a novel neurodevelopmental role for Orco, perhaps tied to ants' expanded glomerular number., The commentary frames the two studies together as a watershed moment for eusocial insect genetics, moving beyond purely correlative evidence.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

@@ -32,7 +32,7 @@ Core contributions and results:
 - Forager brains from different colonies varied significantly in biogenic amine titers and in expression of neurophysiological signaling pathways involved in foraging regulation.
 - Raising forager brain dopamine increased foraging activity, while lowering brain dopamine decreased it.
 - Foragers from colonies that reduce foraging in dry conditions lose water and motor coordination faster; hydrated foragers made more trips, especially as conditions got drier.
-- Hundreds of genes had expression patterns correlated with colony traits; loci more central to coexpression networks correlated better with colony traits and showed greater coding-sequence constraint.
+- Hundreds of genes had expression patterns correlated with colony traits; loci more central to coexpression networks tended to correlate better with colony traits and showed greater coding-sequence constraint.
 - The stimulatory effect of hydration and dopamine on foraging trips came from slight increases across many treated ants, not from a small subset.
 
 Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).

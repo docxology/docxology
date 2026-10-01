@@ -86,6 +86,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Software/formal instrument paper; results are properties of the evaluator's own rules and synthetic replays, not empirical findings. The paper explicitly says a reading is not a compliance score or certification."
+    "notes": "Software/formal instrument paper; results are properties of the evaluator's own rules and synthetic replays, not empirical findings. The paper explicitly says a reading is not a compliance score or certification.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

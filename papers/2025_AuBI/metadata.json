@@ -91,6 +91,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Self-described speculative design paper / 'Paper #1' primer; no system was built or deployed and no data collected. Percentages in the Indonesian supplement are projected 'Expected Benefits', not results, and were deliberately excluded."
+    "notes": "Self-described speculative design paper / 'Paper #1' primer; no system was built or deployed and no data collected. Percentages in the Indonesian supplement are projected 'Expected Benefits', not results, and were deliberately excluded.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

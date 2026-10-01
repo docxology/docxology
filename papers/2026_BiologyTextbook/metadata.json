@@ -114,6 +114,7 @@
     "date": "2026-10-01",
     "work_kind": "book/report",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Open textbook (5.8 MB extraction); summary drawn from front matter (About This Textbook, Preface, Scope). Findings are stated contributions/design features of the book, not research results. Only front matter was read in detail given file size."
+    "notes": "Open textbook (5.8 MB extraction); summary drawn from front matter (About This Textbook, Preface, Scope). Findings are stated contributions/design features of the book, not research results. Only front matter was read in detail given file size.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

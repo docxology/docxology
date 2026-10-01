@@ -16,7 +16,11 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   credited with "modeling"). Paper READMEs/SKILLs render the methods as
   "**name** — description" with a provenance note, and work pages pick them up
   as their Use Notes. `test_grounded_summary_evidence_occurs_verbatim_in_full_text`
-  re-checks every quote on each run.
+  re-checks every quote on each run. An independent second-pass review read
+  every item against its quote and surrounding text. It found 0 major and 39
+  minor issues (dropped hedges or scope conditions, cited or relayed claims
+  worded as the paper's own, one added detail), and all were corrected. Each
+  folder's `summary_provenance.reviewed` records the review.
 - **Displayed abstracts audited against the paper text:** 70 folders whose
   abstract disagreed with the Zenodo description or the paper were each judged
   against the full text, choosing only among the existing abstract, the

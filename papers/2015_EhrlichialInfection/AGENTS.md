@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Clinical description of three illustrative patient cases, Therapeutic-dose Rifampin given to two moribund leukemia patients, Peripheral blood film and PCR analysis in one patient
-- Identifies findings: Hypothesizes that leukemia, multiple myeloma, myelodysplastic and autoimmune disorders may be associated with or caused by Ehrlichia/Anaplasma bacteria., Reports that in one AML patient, leukocytes rose from 200 to 24,000 within a short period of Rifampin treatment., The authors describe the three cases as not definitive but as suggestive evidence of a connection between leukemia and EA.
+- Identifies findings: Hypothesizes that leukemia, multiple myeloma, myelodysplastic and autoimmune disorders may be associated with or caused by Ehrlichia/Anaplasma bacteria., Recounts a previously reported case in which an AML patient's leukocytes rose from 200 to 24,000 within a short period of Rifampin treatment., The authors describe the three cases as not definitive but as suggestive evidence of a connection between leukemia and EA.
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR

@@ -48,6 +48,7 @@
     "date": "2026-10-01",
     "work_kind": "commentary/policy",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "News and Views perspective on Romiguier et al. (2016) Messor study; no original data or methods, so methods list is empty. Findings are the authors' arguments/interpretations."
+    "notes": "News and Views perspective on Romiguier et al. (2016) Messor study; no original data or methods, so methods list is empty. Findings are the authors' arguments/interpretations.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

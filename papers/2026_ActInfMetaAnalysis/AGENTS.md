@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Multi-source retrieval (arXiv, Semantic Scholar, OpenAlex) with ID-hierarchy dedup, Keyword-based A/B/C domain taxonomy (200+ indicators, 8 categories), Abstract-only LLM assertion extraction with gemma3:4b on local Ollama
-- Identifies findings: Application domains dominated the corpus (Domain C 64.0%), with tools (B) at 20.8% and core theory (A) at 15.2%., The citation network was sparse: 2,176 intra-corpus edges out of 29,323 outgoing references (7.4% resolution), anchored by hub papers., Hypothesis scores clustered into tiers, with H1 FEP Universality in a diffuse tier (about +0.48) dominated by neutral assessments.
+- Identifies findings: Application domains dominated the corpus (Domain C 64.0%), with tools (B) at 20.8% and core theory (A) at 15.2%., The citation network was sparse: 2,176 intra-corpus edges out of 29,323 outgoing references (7.4% resolution), anchored by hub papers., LLM-derived hypothesis scores clustered into tiers, with H1 FEP Universality in a diffuse tier (about +0.48) where a large neutral plurality reflects broad invocation of the principle without explicit empirical test.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

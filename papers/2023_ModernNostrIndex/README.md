@@ -20,7 +20,7 @@
 
 - **Index cards as hashed Nostr notes (JSON to SHA256 ID)** — The notes sketch each index card as a JSON object (username, text, etc.) hashed into a 32-byte SHA256 identifier, with edges defined between card IDs.
 - **LLM semantic embeddings attached to index cards** — Proposes using language-model embeddings, translations and summaries so cards act as semantic bridges between texts.
-- **Path analysis over composed index-card graphs** — Proposes analyzing paths through card graphs for simple features (length) and subtler ones (share of novel links).
+- **Path analysis over composed index-card graphs** — Proposes analyzing paths through card graphs for trivial features (overall length) and subtler ones (e.g. which proportion of links are novel reports).
 
 ## Key Findings
 

@@ -88,6 +88,7 @@
     "date": "2026-10-01",
     "work_kind": "presentation/transcript",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "The full_text is the (auto-transcribed, error-prone) transcript of livestreams 49.0, 49.1 and 49.2, not the arXiv paper itself; this matches the Zenodo record description ('Transcripts of discussions of the 2022 preprint'). Claims are attributed to speakers. metadata.json carries generic template methods ('Free energy minimization', 'Bayesian modeling and inference') and a findings entry that just repeats the description."
+    "notes": "The full_text is the (auto-transcribed, error-prone) transcript of livestreams 49.0, 49.1 and 49.2, not the arXiv paper itself; this matches the Zenodo record description ('Transcripts of discussions of the 2022 preprint'). Claims are attributed to speakers. metadata.json carries generic template methods ('Free energy minimization', 'Bayesian modeling and inference') and a findings entry that just repeats the description.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

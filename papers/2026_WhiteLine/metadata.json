@@ -87,6 +87,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Self-described tested prototype for structured review, not a validated measurement instrument; all worked examples use constructed inputs, not observed data. No user study."
+    "notes": "Self-described tested prototype for structured review, not a validated measurement instrument; all worked examples use constructed inputs, not observed data. No user study.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

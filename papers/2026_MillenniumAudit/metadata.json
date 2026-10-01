@@ -72,6 +72,7 @@
     "date": "2026-10-01",
     "work_kind": "book/report",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Audit report of a third-party (AIX Global) Lean package; full text matches title."
+    "notes": "Audit report of a third-party (AIX Global) Lean package; full text matches title.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

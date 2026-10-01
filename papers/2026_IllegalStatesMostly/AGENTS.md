@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Simulated ant-robot colony: agents with own SQLite DB and protocol endpoint, mypy --strict as oracle on six known-bad and three known-good fixtures, Seeded fault injection (drop/reorder/duplicate/corrupt) over an in-process bus
-- Identifies findings: The stigmergic mechanism's convergence beat a random-choice null model: its Wilson lower bound (0.8816) clears the null model's upper bound (0.0368)., Disabling only pheromone deposit collapsed convergence to chance level, attributing the mechanism's advantage to the stigmergic channel in this configuration., Convergence versus decay showed a threshold rather than a monotonic slope, with 0/60 trials converging at decay 0.10 and 0.30.
+- Identifies findings: In the tested calibrated configuration, the stigmergic mechanism beat a random-choice null model: its Wilson lower bound (0.8816) clears the null model's upper bound (0.0368)., Disabling only pheromone deposit collapsed convergence to chance level, attributing the mechanism's advantage to the stigmergic channel in this configuration., Convergence versus decay showed a threshold rather than a monotonic slope, with 0/60 trials converging at decay 0.10 and 0.30.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

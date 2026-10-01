@@ -83,7 +83,7 @@
     }
   ],
   "key_findings": [
-    "Across the two worked example methods, 8 of 8 staged-gate evaluations passed.",
+    "Across the two worked examples, which were built to pass, the analysis script recorded 8 of 8 staged-gate evaluations passing (2 methods x 4 gates).",
     "Live recompilation of each example method produced identical plan hashes, and a 3-record demonstration provenance hash-chain verified.",
     "The author concludes that a controlled vocabulary expressed as typed, validated dataclasses rather than a parsed grammar suffices to reproduce BPL's core safety properties at template-exemplar scope.",
     "Stable scheduling depends on the explicit tie-break: Kahn's algorithm alone does not guarantee a reproducible plan hash.",
@@ -109,6 +109,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Methods-paper template exemplar; only two worked examples (not a corpus). The abstract says units span six dimensions while the methodology and setup tables list seven."
+    "notes": "Methods-paper template exemplar; only two worked examples (not a corpus). The abstract says units span six dimensions while the methodology and setup tables list seven.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Controlled vocabulary of 9 step intents and 3 execution targets, Dimensional-safety unit system (Quantity/Dimension), Four staged validation gates with short-circuit
-- Identifies findings: Across the two worked example methods, 8 of 8 staged-gate evaluations passed., Live recompilation of each example method produced identical plan hashes, and a 3-record demonstration provenance hash-chain verified., The author concludes that a controlled vocabulary expressed as typed, validated dataclasses rather than a parsed grammar suffices to reproduce BPL's core safety properties at template-exemplar scope.
+- Identifies findings: Across the two worked examples, which were built to pass, the analysis script recorded 8 of 8 staged-gate evaluations passing (2 methods x 4 gates)., Live recompilation of each example method produced identical plan hashes, and a 3-record demonstration provenance hash-chain verified., The author concludes that a controlled vocabulary expressed as typed, validated dataclasses rather than a parsed grammar suffices to reproduce BPL's core safety properties at template-exemplar scope.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

@@ -56,7 +56,7 @@
     },
     {
       "name": "Path analysis over composed index-card graphs",
-      "description": "Proposes analyzing paths through card graphs for simple features (length) and subtler ones (share of novel links).",
+      "description": "Proposes analyzing paths through card graphs for trivial features (overall length) and subtler ones (e.g. which proportion of links are novel reports).",
       "evidence": "Paths can be analyzed for trivial features (e.g. overall length) or various subtle things (e.g. which proportion of links are novel reports)."
     }
   ],
@@ -82,6 +82,7 @@
     "date": "2026-10-01",
     "work_kind": "other",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Three-page bullet-point meeting notes (dated 7/5/2023 per filename), not a formal paper; methods and findings are proposals/design ideas rather than tested results."
+    "notes": "Three-page bullet-point meeting notes (dated 7/5/2023 per filename), not a formal paper; methods and findings are proposals/design ideas rather than tested results.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

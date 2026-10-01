@@ -58,7 +58,7 @@
     },
     {
       "name": "Curated literature pointers per systems process",
-      "description": "Each of five processes (boundaries, feedback, self-organization, flows/fields, hierarchies) is linked to specific FEP/Active Inference papers and 2022 textbook figures.",
+      "description": "Each of five processes (boundaries, feedback, self-organization, flows/fields, hierarchies) is linked to specific FEP/Active Inference papers, some also to 2022 textbook figures.",
       "evidence": "5 Hierarchies & Networks ⇆ Nested Generative Models ● 2025 As One and Many: Relating Individual and Emergent Group-Level Generative Models in Active Inference"
     }
   ],
@@ -80,6 +80,7 @@
     "date": "2026-10-01",
     "work_kind": "presentation/transcript",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Short slide deck (12 pages) with sparse text; findings are slide-level framing claims rather than results."
+    "notes": "Short slide deck (12 pages) with sparse text; findings are slide-level framing claims rather than results.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

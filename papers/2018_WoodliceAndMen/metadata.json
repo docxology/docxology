@@ -28,8 +28,8 @@
   ],
   "methods": [
     {
-      "name": "Written Q&A interview of Karl Friston by Fortier and Friedman",
-      "description": "The work is a published interview: Martin Fortier and Daniel A. Friedman pose long-form questions and Karl Friston answers in writing.",
+      "name": "Long-form Q&A interview of Karl Friston by Fortier and Friedman",
+      "description": "The work is a published interview (ALIUS Bulletin): Martin Fortier and Daniel A. Friedman pose long-form questions and Karl Friston answers them.",
       "evidence": "An interview with Karl Friston By Martin Fortier & Daniel A. Friedman"
     },
     {
@@ -70,6 +70,7 @@
     "date": "2026-10-01",
     "work_kind": "presentation/transcript",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Interview; all findings are Friston's stated views, not results. AGENTS.md lists methods such as 'Active inference modeling of consciousness' that the interview does not perform (no modeling); the README abstract's woodlice description is consistent with the text."
+    "notes": "Interview; all findings are Friston's stated views, not results. AGENTS.md lists methods such as 'Active inference modeling of consciousness' that the interview does not perform (no modeling); the README abstract's woodlice description is consistent with the text.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

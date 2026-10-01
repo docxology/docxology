@@ -20,7 +20,7 @@ This work addresses topics in **Active Inference**: Free Energy Principle, Karl 
 
 Primary methods and techniques applied in this work:
 
-- **Written Q&A interview of Karl Friston by Fortier and Friedman** — The work is a published interview: Martin Fortier and Daniel A. Friedman pose long-form questions and Karl Friston answers in writing.
+- **Long-form Q&A interview of Karl Friston by Fortier and Friedman** — The work is a published interview (ALIUS Bulletin): Martin Fortier and Daniel A. Friedman pose long-form questions and Karl Friston answers them.
 - **Interviewer-framed contrasts of Bayesian brain, predictive coding and FEP** — Questions set out formal Bayesian belief-updating equations and contrast the three frameworks before asking Friston to respond.
 - **Questions drawing on empirical literatures (fluency, psychosis, altered states)** — Interviewers bring in specific prior work, e.g. Chetverikov's fluency/disfluency 'sweet spot' results and competing models of psychosis, as prompts.
 

@@ -79,6 +79,7 @@
     "date": "2026-10-01",
     "work_kind": "presentation/transcript",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Livestream transcript (auto-transcribed, with errors). Only session #051.0 (Friedman solo) has transcript text; #051.1 and #051.2 appear only as chapter lists. Findings are the Isomura, Shimazaki & Friston paper's claims as read/relayed by Friedman, not original results of this work."
+    "notes": "Livestream transcript (auto-transcribed, with errors). Only session #051.0 (Friedman solo) has transcript text; #051.1 and #051.2 appear only as chapter lists. Findings are the Isomura, Shimazaki & Friston paper's claims as read/relayed by Friedman, not original results of this work.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

@@ -224,6 +224,7 @@
     "date": "2026-10-01",
     "work_kind": "presentation/transcript",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Conference abstract book with many independent contributions; findings listed are a small sample of individual presenters' claims, not results of the book as a whole. Many pages are image-heavy (265 figures)."
+    "notes": "Conference abstract book with many independent contributions; findings listed are a small sample of individual presenters' claims, not results of the book as a whole. Many pages are image-heavy (265 figures).",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

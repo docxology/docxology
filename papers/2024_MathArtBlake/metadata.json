@@ -66,7 +66,7 @@
     "Proposes reading Blake's 'Four-Fold vision' as one contextualization of how Blake situates science and formality, with 'Newton's Sleep' as single vision.",
     "Poses, as an open question, how Blake's tetrahedral four-fold concordances could connect with the four-fold particular partition of the Free Energy Principle.",
     "Links Blake's 'Minute Particulars' to the particular partition, glossed as what makes an agent of every thing within a scale-free framework.",
-    "Suggests that 'deep structures' in Narrative Unbound are misnomers for unstable structures, relating this to hierarchical depth in Active Inference generative models."
+    "Highlights a quoted line from a featured page of Narrative Unbound that “deep structures” are misnomers of “unstable structures”, and relates it to hierarchical depth in Active Inference generative models."
   ],
   "related_papers": [
     "2018_MVEE",
@@ -84,6 +84,7 @@
     "date": "2026-10-01",
     "work_kind": "presentation/transcript",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Slide deck for a livestream; content is largely questions, quotations, links and images, so findings are framed as proposals/questions posed in the slides. README abstract claims 'formal analysis of Blake's visual and poetic works' identifying mathematical structures; the slides do not contain a formal analysis, so that abstract overstates the content."
+    "notes": "Slide deck for a livestream; content is largely questions, quotations, links and images, so findings are framed as proposals/questions posed in the slides. README abstract claims 'formal analysis of Blake's visual and poetic works' identifying mathematical structures; the slides do not contain a formal analysis, so that abstract overstates the content.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

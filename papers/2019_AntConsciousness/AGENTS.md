@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Forward vs reverse tests, framed as Kuhnian normal vs revolutionary science, The Ant Colony Test (ACT): does a theory allow consciousness in ant colonies?, Applying the ACT to four genres of consciousness frameworks
-- Identifies findings: Neuroanatomical theories exclude colony consciousness a priori, so the ACT suggests they have limited carryover to other species or architectures., Under IIT, the authors argue the colony would likely have a higher Φmax than aggregated individual workers and thus represent a conscious entity., Under the Free Energy Principle, long-term planning, possible counterfactuals and self/non-self modelling might support rudimentary colony self-awareness, though few experiments exist.
+- Identifies findings: Neuroanatomical theories exclude colony consciousness a priori, so the ACT suggests they have limited carryover to other species or architectures., Under IIT, the authors tentatively argue that the colony seems to have a higher Φmax than aggregate individual workers and thus would represent a conscious entity, while noting it is too early for firm claims., Under the Free Energy Principle, long-term planning, possible counterfactuals and self/non-self modelling might support rudimentary colony self-awareness, though few experiments exist.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

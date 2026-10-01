@@ -89,6 +89,7 @@
     "date": "2026-10-01",
     "work_kind": "other",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "This is a grant proposal to Protocol Labs ('As submitted, October 2022'); methods are planned, not executed, and there are no empirical results. Milestones, budgets and deliverables are explicitly tentative."
+    "notes": "This is a grant proposal to Protocol Labs ('As submitted, October 2022'); methods are planned, not executed, and there are no empirical results. Milestones, budgets and deliverables are explicitly tentative.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

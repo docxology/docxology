@@ -91,6 +91,7 @@
     "date": "2026-10-01",
     "work_kind": "book/report",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Design-recommendations report; not an implemented or evaluated system. The report states it does not cover exhaustive UX or detailed data-structure/security requirements. Full-text title reads 'TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims', slightly different from the bibliography title, but it is the same work."
+    "notes": "Design-recommendations report; not an implemented or evaluated system. The report states it does not cover exhaustive UX or detailed data-structure/security requirements. Full-text title reads 'TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims', slightly different from the bibliography title, but it is the same work.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

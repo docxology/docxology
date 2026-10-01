@@ -31,7 +31,7 @@ Primary methods and techniques applied in this work:
 Core contributions and results:
 
 - The live run retrieved and de-duplicated a corpus of 2302 modafinil records spanning 2000-2026.
-- The modafinil literature grows at a CAGR of 3.45%, doubling every 11.3 years, with a peak of 112 publications in 2025.
+- In the retrieved corpus (2000–2026), modafinil publications grow at a CAGR of 3.45%, doubling every 11.3 years, with a peak of 112 publications in 2025.
 - Clinical Sleep is the largest subfield, at 64.3% of the classified corpus.
 - The citation network has 2204 nodes, 8,772 edges and 1377 communities, with 22.6% of outgoing references resolving inside the retrieved corpus.
 - The author notes the corpus is a bounded sample: a 1,000-per-engine cap applied and Semantic Scholar was rate-limited, returning zero records.

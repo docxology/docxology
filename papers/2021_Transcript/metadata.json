@@ -127,6 +127,7 @@
     "date": "2026-10-01",
     "work_kind": "presentation/transcript",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Edited transcript (v2.0, March 2022) of a June 21, 2021 symposium; findings are Friston's spoken views, not results of the work. Methods describe the event format rather than research methods."
+    "notes": "Edited transcript (v2.0, March 2022) of a June 21, 2021 symposium; findings are Friston's spoken views, not results of the work. Methods describe the event format rather than research methods.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

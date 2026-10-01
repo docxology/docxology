@@ -46,8 +46,8 @@
       "evidence": "As I was walking among the fires of hell, delighted with the enjoyments of Cognition – each flame a singular value decomposition of experience"
     },
     {
-      "name": "Self-declared speculative, LLM-assisted composition",
-      "description": "The author states an explicitly speculative epistemic status and notes the influence of Claude 4.5 in composing the text.",
+      "name": "Self-declared speculative epistemic status",
+      "description": "The author labels the work's epistemic status 'Definitely Speculative & Claude 4.5-pilled', framing it as speculative rather than empirical.",
       "evidence": "Epistemic status: Definitely Speculative & Claude 4.5-pilled"
     }
   ],
@@ -71,6 +71,7 @@
     "date": "2026-10-01",
     "work_kind": "other",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Speculative, poetic/artistic essay (self-described as 'Definitely Speculative'); no empirical methods or testable results. Findings are the work's interpretive framings, not established results. Chapters mirror Blake's original divisions (Argument, Voice of the Devil, Memorable Fancies 1-5, Proverbs of Hell, Song of Liberty, Chorus)."
+    "notes": "Speculative, poetic/artistic essay (self-described as 'Definitely Speculative'); no empirical methods or testable results. Findings are the work's interpretive framings, not established results. Chapters mirror Blake's original divisions (Argument, Voice of the Devil, Memorable Fancies 1-5, Proverbs of Hell, Song of Liberty, Chorus).",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

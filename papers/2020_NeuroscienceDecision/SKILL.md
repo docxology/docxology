@@ -20,7 +20,7 @@ This work addresses topics in **Genetics & Biomedical**: decision making, comput
 
 Primary methods and techniques applied in this work:
 
-- **Written Q&A interview with neuroscientist Timothy Hanks** — Mikhailova and Friedman pose long-form questions to Hanks on neuroscience, decision making, philosophy, and science careers, published in ALIUS Bulletin.
+- **Q&A interview with neuroscientist Timothy Hanks** — Mikhailova and Friedman pose long-form questions to Hanks on neuroscience, decision making, philosophy, and science careers, published in ALIUS Bulletin.
 - **Questions anchored in Hanks's published studies** — Interviewers frame questions around specific prior work, such as his macaque speed-accuracy study and an auditory-click change detection task.
 
 ## Key Findings

@@ -67,7 +67,7 @@
   "key_findings": [
     "Application domains dominated the corpus (Domain C 64.0%), with tools (B) at 20.8% and core theory (A) at 15.2%.",
     "The citation network was sparse: 2,176 intra-corpus edges out of 29,323 outgoing references (7.4% resolution), anchored by hub papers.",
-    "Hypothesis scores clustered into tiers, with H1 FEP Universality in a diffuse tier (about +0.48) dominated by neutral assessments.",
+    "LLM-derived hypothesis scores clustered into tiers, with H1 FEP Universality in a diffuse tier (about +0.48) where a large neutral plurality reflects broad invocation of the principle without explicit empirical test.",
     "The authors caution that all assertions are automatically generated and not manually validated, so hypothesis scores are preliminary.",
     "Preliminary experiments indicated about 15-20% over-extraction, and error rates for the 819-paper run were not quantified."
   ],
@@ -88,6 +88,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Abstract notes absolute score magnitudes are inflated by publication bias and linguistic asymmetry, so relative rankings are more reliable than point estimates."
+    "notes": "Abstract notes absolute score magnitudes are inflated by publication bias and linguistic asymmetry, so relative rankings are more reliable than point estimates.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

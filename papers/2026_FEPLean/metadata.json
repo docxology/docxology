@@ -156,6 +156,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Internal tension in the text: the abstract mentions 'some aspirational sketches' (SDEs, Fokker–Planck, Riemannian information geometry), while the contributions and conclusion state all 50 rows are tagged real (0 partial, 0 aspirational). Summary follows the explicit 50/50-real statements."
+    "notes": "Internal tension in the text: the abstract mentions 'some aspirational sketches' (SDEs, Fokker–Planck, Riemannian information geometry), while the contributions and conclusion state all 50 rows are tagged real (0 partial, 0 aspirational). Summary follows the explicit 50/50-real statements.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

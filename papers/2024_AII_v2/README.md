@@ -28,7 +28,7 @@
 - Reports that, as of November 2024, 5 Research Fellows had joined the new Fellows program.
 - Reports that the Institute's Discord server, its primary discussion and meeting venue, has over 1000 people.
 - Reports that the Institute had released over 500 videos to date.
-- Frames the Institute's approach as cultivating an 'open' ecosystem rather than a closed, laboratory-centric approach to Active Inference.
+- Frames the Institute as recognizing the benefits of an 'open' ecosystem approach rather than taking a closed, laboratory-centric approach alone, which might have siloed Active Inference.
 
 _Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 

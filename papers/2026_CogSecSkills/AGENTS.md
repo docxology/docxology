@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Plan/Build/Teach architecture: registry, definitions, skills tree, AGEINT, Harness-neutral skill contract over a closed set of eight tool verbs, Deterministic rendering into Claude, Codex, and Hermes adapters
-- Identifies findings: The generated catalogue reports one hundred implemented skills across seven taxonomy groups, from Structured Analytic Techniques to Research and Synthesis Methods., The quality gate shows, for the current repository state, that all 100 skills carry group-aware defensive boundaries and skill-specific, non-reused governance entries., The worked-example gate verifies exact 100-skill coverage; the examples are expected-answer shapes, not live model transcripts.
+- Identifies findings: The generated catalogue reports one hundred implemented skills across seven taxonomy groups, from Structured Analytic Techniques to Research and Synthesis Methods., The author describes a local quality gate, explicitly 'not a safety proof', that can show all 100 skills include group-aware defensive boundaries and skill-specific governance entries in the current repository state., The worked-example gate verifies exact 100-skill coverage; the examples are expected-answer shapes, not live model transcripts.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

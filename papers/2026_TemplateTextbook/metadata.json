@@ -210,7 +210,7 @@
     },
     {
       "name": "Two filled worked-reference chapters (logistic growth; dose-response)",
-      "description": "First Principles derives the logistic growth law; Case Studies fits a linear dose-response trend to a small synthetic six-condition dataset.",
+      "description": "First Principles derives the logistic growth law; Case Studies applies a linear dose-response fit to a small dataset of replicate measurements across control, low and high conditions.",
       "evidence": "This chapter is a worked reference in a different style from sec. 8: where that chapter derives a model, this one applies one to a small dataset. The remaining chapters ship as stubs."
     }
   ],
@@ -239,6 +239,7 @@
     "date": "2026-10-01",
     "work_kind": "book/report",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Template/scaffold textbook: most chapters are stubs and the bibliography consists of placeholder references; the case-study data are explicitly synthetic. Findings describe the scaffold's design, not research results. full_text.md is extracted from one of three PDFs in the folder (Friedman_2026_Template_c6c97f24.pdf)."
+    "notes": "Template/scaffold textbook: most chapters are stubs and the bibliography consists of placeholder references; the case-study data are explicitly synthetic. Findings describe the scaffold's design, not research results. full_text.md is extracted from one of three PDFs in the folder (Friedman_2026_Template_c6c97f24.pdf).",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

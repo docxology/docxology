@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Case systems formalized as categories with alignment types as functors, Case-typed DisCoCat/DisCoCirc string diagrams for sentence and discourse, [0,1]-enriched case categories and categorical magnitude
-- Identifies findings: The review captures nominative-accusative, ergative-absolutive, active-stative, tripartite and fluid-S alignment within one algebraic framework linked by alignment functors., Within case-typed string diagrams, passivization reduces to a type permutation (a Swap in the pregroup category)., The author argues prompt injection can be analyzed as ill-typed role promotion, a functorial type violation, as a specification target rather than a guarantee on current LLM APIs.
+- Identifies findings: The review captures nominative-accusative, ergative-absolutive, active-stative, tripartite and fluid-S alignment within one algebraic framework linked by alignment functors., Within case-typed string diagrams, passivization reduces to a type permutation (a Swap in the pregroup category)., When multi-turn agent interactions are modeled as a fixed category of licensed morphisms, prompt injection can be analyzed as ill-typed role promotion (a functorial type violation): a specification target, not a guarantee on current LLM APIs.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

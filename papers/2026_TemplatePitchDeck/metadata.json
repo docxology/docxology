@@ -119,6 +119,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Confirmed: text is 'template_pitch_deck: Reproducible, Validated Pitch-Deck Generation' (Friedman, 2026-07-08, DOI 10.5281/zenodo.21281509). Software/methods manuscript; claims about determinism and parity are the paper's own statements, with no separate quantitative evaluation reported. References section is empty in the extracted text."
+    "notes": "Confirmed: text is 'template_pitch_deck: Reproducible, Validated Pitch-Deck Generation' (Friedman, 2026-07-08, DOI 10.5281/zenodo.21281509). Software/methods manuscript; claims about determinism and parity are the paper's own statements, with no separate quantitative evaluation reported. References section is empty in the extracted text.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

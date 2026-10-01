@@ -32,7 +32,7 @@
     }
   ],
   "key_findings": [
-    "Dennett argues that anyone can tell scientists how to do better science, since scientists are as vulnerable to illusion and sloppy thinking as anyone.",
+    "Dennett argues that anybody can, in principle, tell scientists how to do better science, since scientists are as vulnerable to illusion and sloppy thinking as anyone.",
     "Dennett recalls arguing, with Hurley and Adams, that all control in nervous systems is accomplished by 'emotional' signals with no highest-level executive.",
     "Dennett says dream content is not random and that theories are best confirmed by showing how a model predicts the results of targeted disruptions.",
     "Dennett views psychedelics as risky but potentially enlightening and therapeutic, and says he has avoided them himself.",
@@ -58,6 +58,7 @@
     "date": "2026-10-01",
     "work_kind": "presentation/transcript",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Interview (ALIUS Bulletin); findings are Dennett's stated views, not research results. The extraction renders em dashes as '¾' in some answers; the quote preserves this."
+    "notes": "Interview (ALIUS Bulletin); findings are Dennett's stated views, not research results. The extraction renders em dashes as '¾' in some answers; the quote preserves this.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

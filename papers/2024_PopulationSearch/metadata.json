@@ -75,6 +75,7 @@
     "date": "2026-10-01",
     "work_kind": "empirical",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Internal inconsistency in the source: Section 4.1 says 100 graphs each of 50/100/250/500 nodes, while the Table 1 caption says 50 graphs per node size and includes a 25-node column."
+    "notes": "Internal inconsistency in the source: Section 4.1 says 100 graphs each of 50/100/250/500 nodes, while the Table 1 caption says 50 graphs per node size and includes a 25-node column.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

@@ -160,6 +160,7 @@
     "date": "2026-10-01",
     "work_kind": "commentary/policy",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Multi-signatory open policy letter (Active Inference Institute, Neuropsychiatry and Society Program, Boston Global Forum); no methods. Findings are the signatories' arguments and calls to action, not empirical results."
+    "notes": "Multi-signatory open policy letter (Active Inference Institute, Neuropsychiatry and Society Program, Boston Global Forum); no methods. Findings are the signatories' arguments and calls to action, not empirical results.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

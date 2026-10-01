@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Three-by-three temporal-spatial taxonomy of dyadic drawing, Code-generated research artifact (modalities, dimensions, figures), Illustrative deterministic conceptual models (active inference etc.)
-- Identifies findings: The authors identify a modest irreducible design kernel: two partners, a shared mark field, perceptible agency traces, a temporal relation among contributions, and consentful persistence control., The stated contribution is reframing PPPiP as a reproducible, partner-centered research program, not the existence of digital co-drawing., The authors argue active inference does explanatory work only if a study maps interface events to observations and partner-relevant policies.
+- Identifies findings: The authors identify a modest irreducible design kernel: two partners, a shared mark field, perceptible agency traces, a temporal relation among contributions, and consentful persistence control., The stated contribution is reframing PPPiP as a reproducible, partner-centered research program, not the existence of digital co-drawing., The authors argue active inference does explanatory work for a study only if it maps interface events to observations, defines partner-relevant policies, and distinguishes reciprocal updating from shared-stimulus effects.
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

@@ -27,7 +27,7 @@
 ## Key Findings
 
 - The authors found it preferable to split browsing/gathering and curation across two agents rather than one agent doing all tasks.
-- In the worked example the agents completed a literature review and report summarizing ten Active Inference papers; the authors note the approach is currently limited.
+- In the worked example the agents executed tasks such as literature review on active inference, summarizing key points, and preparing a report; the authors note the approach is currently limited.
 - Proposes that GRT roles be flexible: any role may be non-existent, singular, plural, or autonomous (e.g. DeSci DAOs).
 - Cognitive security concepts (NIM, VIE) are currently integrated only via meta-prompts, with fuller implementation left to future work.
 - States the primary contributions as augmented architectures, Active Inference as a cognitive kernel in GRTs, and cognitive models for research processes.

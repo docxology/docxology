@@ -86,6 +86,7 @@
     "date": "2026-10-01",
     "work_kind": "presentation/transcript",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Slide deck presented for 52 Living Ideas (Jan 2023); the author frames it as a draft snapshot and early communication of an ongoing project, so findings are interpretive comparisons rather than results."
+    "notes": "Slide deck presented for 52 Living Ideas (Jan 2023); the author frames it as a draft snapshot and early communication of an ongoing project, so findings are interpretive comparisons rather than results.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

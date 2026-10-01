@@ -51,7 +51,7 @@
     "Forager brains from different colonies varied significantly in biogenic amine titers and in expression of neurophysiological signaling pathways involved in foraging regulation.",
     "Raising forager brain dopamine increased foraging activity, while lowering brain dopamine decreased it.",
     "Foragers from colonies that reduce foraging in dry conditions lose water and motor coordination faster; hydrated foragers made more trips, especially as conditions got drier.",
-    "Hundreds of genes had expression patterns correlated with colony traits; loci more central to coexpression networks correlated better with colony traits and showed greater coding-sequence constraint.",
+    "Hundreds of genes had expression patterns correlated with colony traits; loci more central to coexpression networks tended to correlate better with colony traits and showed greater coding-sequence constraint.",
     "The stimulatory effect of hydration and dopamine on foraging trips came from slight increases across many treated ants, not from a small subset."
   ],
   "related_papers": [
@@ -72,6 +72,7 @@
     "date": "2026-10-01",
     "work_kind": "empirical",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "full_text.md is a ProQuest PREVIEW covering only front matter, the abstract, the introduction and the first part of Chapter 1 (through early results, page 16). Chapter 2-4 findings are taken from the dissertation abstract and introduction summaries, not from those chapters' own text. Bibliography authors field is empty; the dissertation author is Daniel Ari Friedman (adviser Deborah Gordon)."
+    "notes": "full_text.md is a ProQuest PREVIEW covering only front matter, the abstract, the introduction and the first part of Chapter 1 (through early results, page 16). Chapter 2-4 findings are taken from the dissertation abstract and introduction summaries, not from those chapters' own text. Bibliography authors field is empty; the dissertation author is Daniel Ari Friedman (adviser Deborah Gordon).",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

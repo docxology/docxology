@@ -85,6 +85,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Short position/specification paper; the GNN punctuation table, source-file structure and step-by-step examples are images only (pages 3-5), so their content is not in full_text.md. No software evaluation is reported. Existing AGENTS.md method label 'Graph-based knowledge representation' is not directly supported by the text."
+    "notes": "Short position/specification paper; the GNN punctuation table, source-file structure and step-by-step examples are images only (pages 3-5), so their content is not in full_text.md. No software evaluation is reported. Existing AGENTS.md method label 'Graph-based knowledge representation' is not directly supported by the text.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

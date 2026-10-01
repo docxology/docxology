@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Closed-form per-module complexity for AntBody, AntBrain, and AntMind loops, Device-coefficient energy model for compute, memory, spikes, and actuation, Manifest-driven experiments with seeding and bootstrap CIs
-- Identifies findings: AntBody energy showed flat scaling with joint count across J from 6 to 30, making sensors and contact resolution the main efficiency targets., With sparsity ρ = 0.02, AntBrain energy stayed roughly constant across a 16× expansion in sensory channels (64 to 1024)., AntMind energy grew steeply with planning horizon, and real-time operation was reported infeasible beyond a horizon of 15.
+- Identifies findings: In the energy model, AntBody energy stayed constant despite morphological scaling, making sensor optimization and contact resolution the main efficiency targets rather than joint count., In the energy model, biological sparsity allowed 16× sensory scaling (64 to 1024 channels) with constant energy consumption., AntMind energy grew steeply with planning horizon, and real-time operation was reported infeasible beyond a horizon of 15.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR

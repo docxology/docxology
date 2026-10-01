@@ -364,6 +364,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Template exemplar; limitations (d=1 emphasis, identity Hessians, constant α only) are stated in sec. 8.4. Internal inconsistencies a reviewer may want to check: the Discussion claims 'uniform solution accuracy across all step sizes' and a 'monotonic relationship between step size and iteration count', and sec. 7.3.2 claims 'uniform convergence across the entire parameter space', but Table 1 shows α=2.5 diverging (inf objective) and α=0.01 capped at 1000, with iterations non-monotonic (1.5→27, 2.5→1000). Release block lists Version 2.5.2 but GitHub tag v2.5.1; README links v2.5.2."
+    "notes": "Template exemplar; limitations (d=1 emphasis, identity Hessians, constant α only) are stated in sec. 8.4. Internal inconsistencies a reviewer may want to check: the Discussion claims 'uniform solution accuracy across all step sizes' and a 'monotonic relationship between step size and iteration count', and sec. 7.3.2 claims 'uniform convergence across the entire parameter space', but Table 1 shows α=2.5 diverging (inf objective) and α=0.01 capped at 1000, with iterations non-monotonic (1.5→27, 2.5→1000). Release block lists Version 2.5.2 but GitHub tag v2.5.1; README links v2.5.2.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

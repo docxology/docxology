@@ -30,7 +30,7 @@ Primary methods and techniques applied in this work:
 Core contributions and results:
 
 - Hypothesizes that leukemia, multiple myeloma, myelodysplastic and autoimmune disorders may be associated with or caused by Ehrlichia/Anaplasma bacteria.
-- Reports that in one AML patient, leukocytes rose from 200 to 24,000 within a short period of Rifampin treatment.
+- Recounts a previously reported case in which an AML patient's leukocytes rose from 200 to 24,000 within a short period of Rifampin treatment.
 - The authors describe the three cases as not definitive but as suggestive evidence of a connection between leukemia and EA.
 - Proposes that leukemia may be an antibiotic-treatable infection rather than a malignancy, under this conceptualization.
 - Concludes that the data do not prove the hypothesis and that further serology and DNA studies are needed.

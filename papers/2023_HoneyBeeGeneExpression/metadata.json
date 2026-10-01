@@ -108,7 +108,7 @@
     "Curation reduced 133 uniquely named tissues to 54 groups; whole adult body, brain and mushroom body made up 62.3% of samples.",
     "Optional metadata fields were largely blank (e.g. 99.1% genotype, 67.5% sex, 77.8% age), limiting their use as surrogate variables in harmonization.",
     "Average library size increased over time, but publication date explained only a small fraction of variance in total bases (R2=0.061).",
-    "The authors attribute the heavy winnowing to heterogeneous experiments, asymmetric tissue coverage with single-tissue designs, and incomplete metadata underpowering surrogate variable analysis."
+    "The authors suggest several possible reasons for the heavy winnowing: heterogeneous experiments, asymmetric tissue coverage with single-tissue designs, and incomplete metadata that may have underpowered surrogate variable analysis."
   ],
   "related_papers": [
     "2016_AntGenetics",
@@ -129,6 +129,7 @@
     "date": "2026-10-01",
     "work_kind": "empirical",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Full text matches the title. WARNING: the README abstract describes a different paper (rapidly evolving / taxonomically restricted genes in novel honey bee tissues, i.e. Jasper et al. 2015, cited here as ref. 20); the full text contains no TRG or molecular-evolution analysis. The README abstract contradicts the text and should be replaced."
+    "notes": "Full text matches the title. WARNING: the README abstract describes a different paper (rapidly evolving / taxonomically restricted genes in novel honey bee tissues, i.e. Jasper et al. 2015, cited here as ref. 20); the full text contains no TRG or molecular-evolution analysis. The README abstract contradicts the text and should be replaced.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

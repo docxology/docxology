@@ -30,7 +30,7 @@ Primary methods and techniques applied in this work:
 
 Core contributions and results:
 
-- Across the two worked example methods, 8 of 8 staged-gate evaluations passed.
+- Across the two worked examples, which were built to pass, the analysis script recorded 8 of 8 staged-gate evaluations passing (2 methods x 4 gates).
 - Live recompilation of each example method produced identical plan hashes, and a 3-record demonstration provenance hash-chain verified.
 - The author concludes that a controlled vocabulary expressed as typed, validated dataclasses rather than a parsed grammar suffices to reproduce BPL's core safety properties at template-exemplar scope.
 - Stable scheduling depends on the explicit tie-break: Kahn's algorithm alone does not guarantee a reproducible plan hash.

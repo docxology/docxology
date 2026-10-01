@@ -84,6 +84,7 @@
     "date": "2026-10-01",
     "work_kind": "theoretical",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Interpretive humanities essay (literary history, monetary history, and Active Inference analogy); no empirical analysis. Findings are the author's interpretive arguments. The √2 precision-ratio claim is attributed in the text to Sabine (2026), not derived here, so it is not listed as a finding."
+    "notes": "Interpretive humanities essay (literary history, monetary history, and Active Inference analogy); no empirical analysis. Findings are the author's interpretive arguments. The √2 precision-ratio claim is attributed in the text to Sabine (2026), not derived here, so it is not listed as a finding.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

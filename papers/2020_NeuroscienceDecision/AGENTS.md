@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Written Q&A interview with neuroscientist Timothy Hanks, Questions anchored in Hanks's published studies
+- Extracts methods: Q&A interview with neuroscientist Timothy Hanks, Questions anchored in Hanks's published studies
 - Identifies findings: Hanks argues free will is better approached as "To what extent do we have free will?", answerable by describing the neural mechanisms underlying decisions., Hanks recounts that speed-accuracy control in his work operated via added internal drive (an "urgency" signal) rather than a lower neural threshold., Hanks suggests simultaneous evaluation of evidence over multiple timescales could be supported by cascade models with progressively longer timescales, noting this is not yet shown.
 - Maps contributions to Genetics & Biomedical literature
 

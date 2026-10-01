@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Active Inference generative model drawn as a Bayesian graph, Mapping GPT onto a minimal prior/state/observation model, Perceptual-inference extension with a transition matrix B
-- Identifies findings: The slides identify that in the GPT framing the latent semantic state is not separated by speaker, so speakers are admixed and cannot be weighted or attended to differentially., The slides propose treating attention as a portfolio (regime) of nested attentions across persons, groups, sets of groups and the eco-niche., Listed next steps are adding visualizations/dashboards, specifying the model in GNN toward implementation, and adding an action component.
+- Identifies findings: The slides identify that in the GPT framing the latent semantic state is not separated by speaker, so speakers are admixed and cannot be weighted or attended to differentially., Reusing a renormalization-group figure from Friston, Friedman et al. 2023, the slides sketch speaker attention as a portfolio (regime) of nested attentions at all levels., Listed next steps are adding visualizations/dashboards, specifying the model in GNN toward implementation, and adding an action component.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

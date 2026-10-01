@@ -74,8 +74,8 @@
       "evidence": "it re-reads every file listed in provenance.json from disk, recomputes the tree hash from what is actually present, and compares the two."
     },
     {
-      "name": "Primitive kernels with analytic ground truth and negative-control mutants",
-      "description": "Eight kernels across five domains are checked against analytic outputs, and a mutation meta-gate asserts deliberately wrong controls fail.",
+      "name": "Primitive kernels with analytic checks and a mutation meta-gate",
+      "description": "Kernels are checked against analytic outputs; a mutation meta-gate (test_meta_teeth.py) asserts per domain that a constant-success stub fails and the real implementation passes.",
       "evidence": "a mutation meta-gate (test_meta_teeth.py, parametrized over every known domain) asserts that a constant-success stub fails and that the real implementation passes, for each domain independently."
     }
   ],
@@ -98,6 +98,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "The paper states the 'autopoietic' label is a structural metaphor, not a claim to implement biological autopoiesis; test/coverage numbers are render-time snapshots."
+    "notes": "The paper states the 'autopoietic' label is a structural metaphor, not a claim to implement biological autopoiesis; test/coverage numbers are render-time snapshots.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

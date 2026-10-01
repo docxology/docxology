@@ -31,7 +31,7 @@ Primary methods and techniques applied in this work:
 Core contributions and results:
 
 - The slides identify that in the GPT framing the latent semantic state is not separated by speaker, so speakers are admixed and cannot be weighted or attended to differentially.
-- The slides propose treating attention as a portfolio (regime) of nested attentions across persons, groups, sets of groups and the eco-niche.
+- Reusing a renormalization-group figure from Friston, Friedman et al. 2023, the slides sketch speaker attention as a portfolio (regime) of nested attentions at all levels.
 - Listed next steps are adding visualizations/dashboards, specifying the model in GNN toward implementation, and adding an action component.
 
 Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).

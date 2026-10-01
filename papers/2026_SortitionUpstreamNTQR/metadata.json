@@ -113,6 +113,7 @@
     "date": "2026-10-01",
     "work_kind": "empirical",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Simulation study (synthetic, oracle-scored) plus a single-model LLM companion; author stresses findings are simulation-bounded and not a general refutation or endorsement of sortition."
+    "notes": "Simulation study (synthetic, oracle-scored) plus a single-model LLM companion; author stresses findings are simulation-bounded and not a general refutation or endorsement of sortition.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

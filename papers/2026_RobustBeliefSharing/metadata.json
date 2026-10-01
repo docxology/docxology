@@ -86,6 +86,7 @@
     "date": "2026-10-01",
     "work_kind": "theoretical",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Theory plus simulation-only evaluation (synthetic categorical POMDP, declared contamination mechanisms); no real federated deployment. Paper explicitly separates theorem-bearing client-side results from the server-side heuristic, which carries only a recovery-limit guarantee. Some contribution text contains extraction-garbled residual values (e.g. '≤ 0 residual'), avoided in quotes."
+    "notes": "Theory plus simulation-only evaluation (synthetic categorical POMDP, declared contamination mechanisms); no real federated deployment. Paper explicitly separates theorem-bearing client-side results from the server-side heuristic, which carries only a recovery-limit guarantee. Some contribution text contains extraction-garbled residual values (e.g. '≤ 0 residual'), avoided in quotes.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

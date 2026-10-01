@@ -32,7 +32,7 @@ Core contributions and results:
 
 - The authors identify a modest irreducible design kernel: two partners, a shared mark field, perceptible agency traces, a temporal relation among contributions, and consentful persistence control.
 - The stated contribution is reframing PPPiP as a reproducible, partner-centered research program, not the existence of digital co-drawing.
-- The authors argue active inference does explanatory work only if a study maps interface events to observations and partner-relevant policies.
+- The authors argue active inference does explanatory work for a study only if it maps interface events to observations, defines partner-relevant policies, and distinguishes reciprocal updating from shared-stimulus effects.
 - The paper explicitly disclaims that DigiPPPiP is clinically therapeutic, universally accessible, or causally validated by neural synchrony, leaving these to controlled studies.
 
 Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).

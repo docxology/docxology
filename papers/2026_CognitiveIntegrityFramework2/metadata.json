@@ -80,6 +80,7 @@
     "date": "2026-10-01",
     "work_kind": "commentary/policy",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Part 3+4 of a series; it is a practitioner guide plus qualitative cross-domain analysis. All quantitative detection results are reported from Part 2 (parametric simulation and pipeline runs), not produced here; the paper's own future work names controlled domain experiments as the critical next step. work_kind chosen as commentary/policy for the guidance-oriented framing; it could also be read as review."
+    "notes": "Part 3+4 of a series; it is a practitioner guide plus qualitative cross-domain analysis. All quantitative detection results are reported from Part 2 (parametric simulation and pipeline runs), not produced here; the paper's own future work names controlled domain experiments as the critical next step. work_kind chosen as commentary/policy for the guidance-oriented framing; it could also be read as review.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

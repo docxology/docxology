@@ -105,6 +105,7 @@
     "date": "2026-10-01",
     "work_kind": "presentation/transcript",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Transcript of a guest presentation and discussion; all findings are Solms's spoken arguments, not results produced by this work. Claims 9 and 10 are only previewed. The PDF has ~5,800 extracted images, so the text is interleaved with image references."
+    "notes": "Transcript of a guest presentation and discussion; all findings are Solms's spoken arguments, not results produced by this work. Claims 9 and 10 are only previewed. The PDF has ~5,800 extracted images, so the text is interleaved with image references.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

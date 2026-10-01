@@ -113,6 +113,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Self-generated exemplar manuscript; contribution claims are explicitly labelled as local exemplar claims with no empirical validation."
+    "notes": "Self-generated exemplar manuscript; contribution claims are explicitly labelled as local exemplar claims with no empirical validation.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

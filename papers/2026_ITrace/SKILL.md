@@ -32,7 +32,7 @@ Primary methods and techniques applied in this work:
 Core contributions and results:
 
 - On synthetic traces the I-VT detector recovered a 10 deg saccade's amplitude within 5% and peak velocity within 10%.
-- The 3-D closed loop recovered gaze with 0.16 deg RMS residual (max 0.23 deg); the author states this is internal consistency, not device validation.
+- On the synthetic 3-D closed loop, gaze was recovered with 0.16 deg RMS residual (max 0.23 deg) for gaze within ±15 deg; the author states this is internal consistency, not device validation.
 - In the idealised noise sweep, saccade detection was most fragile (F1 < 0.8 at sigma about 0.0014), while gaze crossed the 2 deg bound near sigma 0.005.
 - The pupil noise robustness is reported only as a conditional illustration because it follows from the assumed pupil noise model.
 - The headline limitation is an unclosed device validation gap: correctness rests on constructed ground truth, not reference measurements of real eyes.

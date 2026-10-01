@@ -27,7 +27,7 @@
 ## Key Findings
 
 - The generated catalogue reports one hundred implemented skills across seven taxonomy groups, from Structured Analytic Techniques to Research and Synthesis Methods.
-- The quality gate shows, for the current repository state, that all 100 skills carry group-aware defensive boundaries and skill-specific, non-reused governance entries.
+- The author describes a local quality gate, explicitly 'not a safety proof', that can show all 100 skills include group-aware defensive boundaries and skill-specific governance entries in the current repository state.
 - The worked-example gate verifies exact 100-skill coverage; the examples are expected-answer shapes, not live model transcripts.
 - The author states the evidence is local conformance only and does not establish operational effectiveness, adversary coverage, user outcomes, or superiority over other libraries.
 - The deterministic gates do not show that a live runtime will select the same skill, use tools correctly, or answer well in the field.

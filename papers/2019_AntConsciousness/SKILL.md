@@ -30,10 +30,10 @@ Primary methods and techniques applied in this work:
 Core contributions and results:
 
 - Neuroanatomical theories exclude colony consciousness a priori, so the ACT suggests they have limited carryover to other species or architectures.
-- Under IIT, the authors argue the colony would likely have a higher Φmax than aggregated individual workers and thus represent a conscious entity.
+- Under IIT, the authors tentatively argue that the colony seems to have a higher Φmax than aggregate individual workers and thus would represent a conscious entity, while noting it is too early for firm claims.
 - Under the Free Energy Principle, long-term planning, possible counterfactuals and self/non-self modelling might support rudimentary colony self-awareness, though few experiments exist.
 - Since several frameworks predict colony-level awareness, either colonies are aware or current approaches are individually inadequate and collectively inconsistent.
-- The authors remain agnostic on colony consciousness and propose the ant colony as a tractable, ethically manipulable model system for consciousness experiments.
+- Unlike brains, social insect colonies can be ethically manipulated, divided, or drugged, which the authors present as making the ant colony a tractable model system for consciousness experiments.
 
 Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 

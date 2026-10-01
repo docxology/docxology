@@ -82,7 +82,7 @@
   ],
   "key_findings": [
     "The aggregate gate ran pytest with a 90% coverage floor over the fleet and the compendium: 33 rows measured, all passing.",
-    "The cross-film mission OPERATION_OMNIBUS ran goldfinger, goldeneye and no_time_to_die in order over 6 plan steps, ending with an all-verdicts PASS.",
+    "Run over deterministic reference providers, the cross-film mission OPERATION_OMNIBUS executed 6 plan steps (goldfinger, goldeneye, no_time_to_die) and closed with an all-verdicts PASS.",
     "Two independent fresh runs of OPERATION_OMNIBUS produced byte-identical reports, manifests, checkpoints, outcomes and provenance files.",
     "An interrupted run resumed from its last completed step and produced a report byte-identical to a fresh run.",
     "In the Dr. No (CRAB KEY) package's deterministic scenario, both injected isotopes were recovered among the top identifications."
@@ -99,6 +99,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Very large (~340-page) generated compendium of 33 package manuscripts; summary covers the suite-level wrapper (abstract, introduction, architecture, closing), the orchestrator (DAG 00) results, and the Dr. No chapter as an example. Per-film chapters 5-33 were not individually summarized. OPERATION OMNIBUS results use deterministic reference providers."
+    "notes": "Very large (~340-page) generated compendium of 33 package manuscripts; summary covers the suite-level wrapper (abstract, introduction, architecture, closing), the orchestrator (DAG 00) results, and the Dr. No chapter as an example. Per-film chapters 5-33 were not individually summarized. OPERATION OMNIBUS results use deterministic reference providers.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

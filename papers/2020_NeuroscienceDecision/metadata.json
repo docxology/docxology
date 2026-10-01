@@ -26,7 +26,7 @@
   ],
   "methods": [
     {
-      "name": "Written Q&A interview with neuroscientist Timothy Hanks",
+      "name": "Q&A interview with neuroscientist Timothy Hanks",
       "description": "Mikhailova and Friedman pose long-form questions to Hanks on neuroscience, decision making, philosophy, and science careers, published in ALIUS Bulletin.",
       "evidence": "In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career."
     },
@@ -63,6 +63,7 @@
     "date": "2026-10-01",
     "work_kind": "presentation/transcript",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Interview; findings are Hanks's views and recollections of his lab's work, not new results. The cascade-model point is explicitly framed by Hanks as an untested hypothesis."
+    "notes": "Interview; findings are Hanks's views and recollections of his lab's work, not new results. The cascade-model point is explicitly framed by Hanks as an untested hypothesis.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

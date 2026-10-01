@@ -93,6 +93,7 @@
     "date": "2026-10-01",
     "work_kind": "theoretical",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Part 1 of 3 (formal foundations only); computational validation is deferred to Part 2 and deployment to Part 3, so findings are theorems and stated limits rather than empirical results. The abstract's claim of 'complete coverage of the OWASP Top 10 for Agentic Applications' is the paper's own mapping claim and was not independently verified here."
+    "notes": "Part 1 of 3 (formal foundations only); computational validation is deferred to Part 2 and deployment to Part 3, so findings are theorems and stated limits rather than empirical results. The abstract's claim of 'complete coverage of the OWASP Top 10 for Agentic Applications' is the paper's own mapping claim and was not independently verified here.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

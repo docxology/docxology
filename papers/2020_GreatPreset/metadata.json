@@ -70,6 +70,7 @@
     "date": "2026-10-01",
     "work_kind": "book/report",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Multi-author edited book (COGSEC, ISBN 978-1-7364269-0-6); bibliography lists no authors, but the volume is edited by Daniel A. Friedman & Richard J. Cordes. Findings are largely the editors' foreword summaries of each chapter's contribution and are attributed to chapters; no empirical studies."
+    "notes": "Multi-author edited book (COGSEC, ISBN 978-1-7364269-0-6); bibliography lists no authors, but the volume is edited by Daniel A. Friedman & Richard J. Cordes. Findings are largely the editors' foreword summaries of each chapter's contribution and are attributed to chapters; no empirical studies.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

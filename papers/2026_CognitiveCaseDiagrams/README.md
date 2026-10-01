@@ -28,7 +28,7 @@
 
 - The review captures nominative-accusative, ergative-absolutive, active-stative, tripartite and fluid-S alignment within one algebraic framework linked by alignment functors.
 - Within case-typed string diagrams, passivization reduces to a type permutation (a Swap in the pregroup category).
-- The author argues prompt injection can be analyzed as ill-typed role promotion, a functorial type violation, as a specification target rather than a guarantee on current LLM APIs.
+- When multi-turn agent interactions are modeled as a fixed category of licensed morphisms, prompt injection can be analyzed as ill-typed role promotion (a functorial type violation): a specification target, not a guarantee on current LLM APIs.
 - The topos-theoretic equivalence chain across typological, type-logical, distributional and enriched case theories is presented as a research program, not a finished theorem.
 - The accompanying code has 1197 tests across 64 files at 95.96% line-and-branch coverage on src/, plus 30 programmatically generated figures.
 

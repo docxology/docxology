@@ -127,6 +127,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Software paper; evaluation is the author's own test suite, benchmark file and two example renders, with no user study. The default heuristic transcriber gives length-weighted (not acoustic) word timings; Whisper is the high-fidelity path. Manuscript title in the PDF ('DemoCreate: Declarative, Deterministic Generation of Narrated Demos of Software and Research Papers', dated 2026-06-04) differs from the bibliography title."
+    "notes": "Software paper; evaluation is the author's own test suite, benchmark file and two example renders, with no user study. The default heuristic transcriber gives length-weighted (not acoustic) word timings; Whisper is the high-fidelity path. Manuscript title in the PDF ('DemoCreate: Declarative, Deterministic Generation of Narrated Demos of Software and Research Papers', dated 2026-06-04) differs from the bibliography title.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

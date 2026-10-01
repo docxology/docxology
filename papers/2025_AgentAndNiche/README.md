@@ -20,7 +20,7 @@
 
 - **Section-by-section dialogue between Blake's text and ecological-psychology prose** — The work pairs passages of Blake's The Marriage of Heaven and Hell with commentary prose framed in active inference and ecological terms.
 - **Paraphrastic rewriting of Blake's lines in information-theoretic vocabulary** — Each Blake passage is followed by a reworking that substitutes concepts such as singular value decomposition, priors and free energy for Blake's imagery.
-- **Self-declared speculative, LLM-assisted composition** — The author states an explicitly speculative epistemic status and notes the influence of Claude 4.5 in composing the text.
+- **Self-declared speculative epistemic status** — The author labels the work's epistemic status 'Definitely Speculative & Claude 4.5-pilled', framing it as speculative rather than empirical.
 
 ## Key Findings
 

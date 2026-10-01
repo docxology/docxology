@@ -31,7 +31,7 @@ Core contributions and results:
 - Proposes reading Blake's 'Four-Fold vision' as one contextualization of how Blake situates science and formality, with 'Newton's Sleep' as single vision.
 - Poses, as an open question, how Blake's tetrahedral four-fold concordances could connect with the four-fold particular partition of the Free Energy Principle.
 - Links Blake's 'Minute Particulars' to the particular partition, glossed as what makes an agent of every thing within a scale-free framework.
-- Suggests that 'deep structures' in Narrative Unbound are misnomers for unstable structures, relating this to hierarchical depth in Active Inference generative models.
+- Highlights a quoted line from a featured page of Narrative Unbound that “deep structures” are misnomers of “unstable structures”, and relates it to hierarchical depth in Active Inference generative models.
 
 Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 

@@ -202,7 +202,7 @@
     "Reports that the Institute's Discord server, its primary discussion and meeting venue, has over 1000 people.",
     "Reports that the Institute had released over 500 videos to date.",
     "Reports that RxInfer.jl Learning Group meetings in 2024 included over 20 active contributors.",
-    "Frames the Institute's approach as cultivating an 'open' ecosystem rather than a closed, laboratory-centric approach to Active Inference."
+    "Frames the Institute's approach as embracing the benefits of an 'open' ecosystem rather than relying on a closed, laboratory-centric approach alone, which might have siloed Active Inference academically."
   ],
   "related_papers": [
     "2022_ActiveDiffusion",
@@ -221,6 +221,7 @@
     "date": "2026-10-01",
     "work_kind": "book/report",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Organizational report/living-document snapshot rather than a research paper; methods describe how the document and Institute processes are organized. PDF-from-web extraction separates hyperlink text from surrounding sentences, so many passages are fragmented."
+    "notes": "Organizational report/living-document snapshot rather than a research paper; methods describe how the document and Institute processes are organized. PDF-from-web extraction separates hyperlink text from surrounding sentences, so many passages are fragmented.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
   }
 }

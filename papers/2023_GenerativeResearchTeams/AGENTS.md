@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Two-agent AutoGPT literature-review GRT (Professor Karl, RA Joe), Shared-folder file protocol for asynchronous agent coordination, LangChain tools with FAISS vector memory per agent
-- Identifies findings: The authors found it preferable to split browsing/gathering and curation across two agents rather than one agent doing all tasks., In the worked example the agents completed a literature review and report summarizing ten Active Inference papers; the authors note the approach is currently limited., Proposes that GRT roles be flexible: any role may be non-existent, singular, plural, or autonomous (e.g. DeSci DAOs).
+- Identifies findings: The authors found it preferable to split browsing/gathering and curation across two agents rather than one agent doing all tasks., In the worked example the agents executed tasks such as literature review on active inference, summarizing key points, and preparing a report; the authors note the approach is currently limited., Proposes that GRT roles be flexible: any role may be non-existent, singular, plural, or autonomous (e.g. DeSci DAOs).
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

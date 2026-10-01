@@ -22,7 +22,7 @@
 - **Eight-stage build pipeline from environment setup to LLM review** — Stages run sequentially: setup, tests with coverage, analysis scripts, Pandoc/XeLaTeX rendering, hashing/watermarking, PDF validation, LLM review.
 - **Zero-Mock testing policy with 90%/60% coverage gates** — Tests use real filesystem operations and subprocesses instead of mocks, with coverage thresholds of 90% for projects and 60% for infrastructure.
 - **SHA-256 hashing with steganographic watermarking for provenance** — Rendered PDFs carry SHA-256 hashes in metadata plus alpha-channel overlays and QR codes for tamper detection.
-- **Multi-project evaluation and feature comparison with peer tools** — Three exemplar projects were run through the full pipeline, and template/ was compared with peer tools (e.g. Snakemake, Quarto, DVC) on fourteen dimensions.
+- **Multi-project evaluation and feature comparison with peer tools** — Three exemplar projects were run through the pipeline in a fast configuration that skips infrastructure tests and LLM review; template/ was also compared with peer tools on fourteen dimensions.
 
 ## Key Findings
 

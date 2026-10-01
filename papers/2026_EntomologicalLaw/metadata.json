@@ -97,6 +97,7 @@
     "date": "2026-10-01",
     "work_kind": "review",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Source-anchored synthesis/reference work; counts describe the encoded registries, not the entirety of each legal sub-field (the paper's own caveat). The offline gate checks attribution/shape only; truth of claims depends on the live oracle. PDF title page shows 'State: unpublished / pending pairing' with SHA-256 pending; version DOI on title page is 10.5281/zenodo.21137277, concept DOI 21137276 (README uses the concept DOI). Bibliography domain is 'Computational'."
+    "notes": "Source-anchored synthesis/reference work; counts describe the encoded registries, not the entirety of each legal sub-field (the paper's own caveat). The offline gate checks attribution/shape only; truth of claims depends on the live oracle. PDF title page shows 'State: unpublished / pending pairing' with SHA-256 pending; version DOI on title page is 10.5281/zenodo.21137277, concept DOI 21137276 (README uses the concept DOI). Bibliography domain is 'Computational'.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }

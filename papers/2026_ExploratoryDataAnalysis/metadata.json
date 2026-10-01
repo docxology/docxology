@@ -109,6 +109,7 @@
     "date": "2026-10-01",
     "work_kind": "software/methods",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Template/exemplar manuscript for the Research Project Template; data are synthetic by design and modelling/inference is explicitly out of scope. The manuscript deliberately omits concrete summary-statistic values."
+    "notes": "Template/exemplar manuscript for the Research Project Template; data are synthetic by design and modelling/inference is explicitly out of scope. The manuscript deliberately omits concrete summary-statistic values.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   }
 }
