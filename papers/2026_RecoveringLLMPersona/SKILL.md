@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Recovering LLM-Persona Accuracies from Unlabeled Votes"
-description: "<p>Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses &mdash; no answer key. We test this end to end on real large language models. Three trader \"personas\" (optimistic, neutral..."
+description: "Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key. We test this end to end on real large language models. Three trader \"personas\" (optimistic, neutral, pessimi..."
 tags: ["algebraic-evaluation", "ntqr", "unsupervised-evaluation", "evaluation-on-unlabeled-data", "llm-as-judge", "error-independent-evaluation", "ensemble-evaluability", "constant-classifier", "ai-safety-warning-light", "reproducible-research"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *Recovering LLM-Persona Accuracies from Unlabeled Votes*. Zenodo."

@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Bridging gaps in image meme research: A multidisciplinary paradigm"
-description: "This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse. We prov..."
+description: "This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse. We provide frameworks for classifying meme content, track..."
 tags: ["image-memes", "meme-research", "digital-communication", "narrative-analysis", "rhetorical-analysis", "sensemaking"]
 domain: "Cognitive Security"
 citation: "Mridula Mascarenhas, Daniel Ari Friedman, Richard J Cordes (2024). *Bridging gaps in image meme research: A multidisciplinary paradigm*. JASIST."

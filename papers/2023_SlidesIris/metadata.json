@@ -80,5 +80,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Short 8-page slide deck (pages 6-8 image-only/blank). Content is a conceptual sketch and to-do list, not results; 'findings' are the proposals the slides state. README CONTRADICTION: README Key Findings claim 'Iris dataset analysis demonstrates reproducible visual analytics workflow' and that the format 'effectively communicates ... to diverse audiences' — the slides contain no Iris dataset or analysis ('Iris' appears only in the title) and make no claim about audience effectiveness.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
+  },
+  "abstract": "",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "No abstract recorded"
   }
 }

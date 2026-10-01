@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Cognitive Sovereignty & Active Inference in the State of Exception"
-description: "This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science. It argues that realized epist..."
+description: "This paper provides an analysis of Giorgio Agamben's book Homo Sacer in the tradition of Active Inference. Homo Sacer articulates the relationship between bare life and political existence in Western politics and metaphysics. Agamben argues that poli..."
 tags: ["cognitive-sovereignty", "agamben", "homo-sacer", "active-inference", "state-of-exception", "thomas-kuhn", "paradigm-shifts", "epistemic-agency", "biopolitics", "bare-life"]
 domain: "Cognitive Security"
 citation: "Daniel Ari Friedman (2023). *Cognitive Sovereignty & Active Inference in the State of Exception*. Zenodo."

@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "William Blake & Buckminster Fuller: Lives in Juxtaposition"
-description: "A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition. The study in comprehensivity explores structural parallels between Blake's..."
+description: "A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition. The study in comprehensivity explores structural parallels between Blake's prophetic vision and Fuller's design science, iden..."
 tags: ["william-blake", "buckminster-fuller", "comprehensivity", "design-science", "prophetic-vision", "art-science-synthesis", "52-living-ideas", "juxtaposition"]
 domain: "Art & Synergetics"
 citation: "Daniel Ari Friedman (2023). *William Blake & Buckminster Fuller: Lives in Juxtaposition*. Zenodo."

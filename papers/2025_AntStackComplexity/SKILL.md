@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Computational Complexity and Energetics of the Ant Stack"
-description: "Extending the AntStack framework, this paper examines complexity science approaches to understanding ant colony organization. We connect concepts from information theory, complex adaptive systems, and..."
+description: "We present a comprehensive computational complexity and energy analysis framework for the Ant Stack, an integrated biomimetic architecture for embodied artificial intelligence. Our investigation employs analytical models for contact dynamics physics,..."
 tags: ["antstack", "complexity-science", "information-theory", "complex-adaptive-systems", "ant-colonies", "non-equilibrium-thermodynamics"]
 domain: "Entomology"
 citation: "Daniel Friedman (2025). *Computational Complexity and Energetics of the Ant Stack*. Zenodo."

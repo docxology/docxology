@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Way Finding in the Infinite Imaginarium"
-description: "Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration. The work..."
+description: "Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration. The work juxtaposes different rhythms of knowing—from rapi..."
 tags: ["epistemic-tempos", "knowledge-production", "creative-exploration", "way-finding", "imagination", "operational-frameworks"]
 domain: "Art & Synergetics"
 citation: "Daniel Ari Friedman (2024). *Way Finding in the Infinite Imaginarium*. Zenodo."

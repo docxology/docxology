@@ -131,6 +131,14 @@ def clip_description(text: str, limit: int = 155) -> str:
     cut = text[: limit - 1].rsplit(" ", 1)[0].rstrip(" ,;:.–—-")
     if not cut:  # single very long token; hard cut as last resort
         cut = text[: limit - 1].rstrip()
+    trailing_url = re.search(r"https?://\S*$", cut)
+    if trailing_url:
+        # A clipped URL or adjacent ellipsis becomes a different external
+        # address for readers and link scanners. Keep only complete URLs.
+        if text[len(cut):len(cut) + 1] != " " or len(cut) + 2 > limit:
+            cut = cut[:trailing_url.start()].rstrip()
+        else:
+            return cut + " …"
     return cut + "…"
 
 

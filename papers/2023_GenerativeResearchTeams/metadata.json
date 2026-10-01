@@ -114,5 +114,12 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Preliminary position/methods paper. Worked example is a qualitative demonstration (no quantitative evaluation); the sketched example is not implemented in the text. Active Inference is not yet modeled in the worked example (the paper says future work could empirically model GRT using Active Inference).",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
+  },
+  "abstract": "The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research topics. Roles within the GRT are modular and composable, allowing for flexible resource and attention allocation. The GRT can be designed to address various areas of concern such as Research, Peer Review, Funding, Communication, Cryptography, and more, using implementations that blend human and computational capacities. Tools like Active Blockference and cadCAD, along with Cognitive Security concepts like Narrative Information Management (NIM) and Verifiable Information Ecosystem (VIE), ensure situational awareness and reliability in research trajectories. Here we provide both a worked and a sketched example of a GRT with specific roles and functions. Through collaborative environments, innovation, resilient architectures, and meta-prompting, the GRT adapts to unexpected changes. Effective communication strategies facilitate wide dissemination of research findings. The primary novel contributions here include the exploration of augmented architectures, the integration of Active Inference as a cognitive kernel into GRTs with shared intelligence, and the application of cognitive models for enhanced research processes. Additionally lists of related work and tools are provided, reflecting some of the contemporary work in this space. In the future, advanced GRT will be able to navigate uncertain landscapes and produce impactful outcomes. Today we are using GRT to study Active Inference; tomorrow we will use Active Inference to study GRT.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Passage recovered from the document",
+    "evidence_source": "full_text.md"
   }
 }

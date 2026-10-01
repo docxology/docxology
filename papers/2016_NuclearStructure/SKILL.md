@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Influence of nuclear structure on the formation of radiation-induced lethal lesions"
-description: "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) tec..."
+description: "Purpose The rejoining of fragmented nuclear DNA caused by ionizing radiation may lead to lethal chromosome rearrangements, such as rings or dicentrics. The clinically useful linear quadratic relationship between dose and cell survival has been interp..."
 tags: ["hi-c", "chromosome-conformation", "radiation-biology", "chromatin-architecture", "dna-damage", "topologically-associating-domains", "nuclear-organization", "3c-technologies"]
 domain: "Genetics & Biomedical"
 citation: "Daniel A. Friedman, Lauren Tait, Andrew T. M. Vaughan (2016). *Influence of nuclear structure on the formation of radiation-induced lethal lesions*. Int. J. Radiation Biology."

@@ -1,8 +1,8 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees"
-description: "The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology. We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novel..."
-tags: ["honey-bees", "apis-mellifera", "gene-expression", "rna-seq", "novel-traits", "taxonomically-restricted-genes", "coding-sequence-evolution"]
+description: "The honey bee ( Apis mellifera ) is a pivotal species in both ecological and research contexts, serving as a model organism for studying complex social behavior and physiological processes. A critical aspect of understanding these complexities is the..."
+tags: ["honey-bees", "apis-mellifera", "tissue-specific-gene-expression", "meta-analysis", "rna-seq", "bioinformatics"]
 domain: "Entomology"
 citation: "Daniel Ari Friedman, Chao Tong, Timothy A. Linksvayer, Matthias Freund, Nicole Weronika Keough, Brian Johnson (2023). *A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees*. Zenodo."
 doi: "10.5281/zenodo.10400744"
@@ -15,7 +15,7 @@ artifact_doi: "10.5281/zenodo.10400745"
 
 ## Context
 
-This work addresses topics in **Entomology**: honey bees, Apis mellifera, gene expression, RNA-Seq.
+This work addresses topics in **Entomology**: honey bees, Apis mellifera, tissue-specific gene expression, meta-analysis.
 
 ## Methods
 
@@ -57,7 +57,7 @@ Verification points for this work:
 
 ## Prerequisites
 
-- Familiarity with honey bees, Apis mellifera, gene expression
+- Familiarity with honey bees, Apis mellifera, tissue-specific gene expression
 - Background in Entomology fundamentals
 - Access to source repository: N/A
 

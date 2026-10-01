@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "A variational synthesis of evolutionary and developmental dynamics"
-description: "This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic proc..."
+description: "This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic processes. The main result is a formulation of adaptiv..."
 tags: ["variational-synthesis", "natural-selection", "free-energy-principle", "bayesian-mechanics", "path-integral", "evo-devo", "adaptive-fitness", "particular-partition"]
 domain: "Active Inference"
 citation: "Karl Friston, Daniel A. Friedman, Axel Constant, V. Bleu Knight, Chris Fields, Thomas Parr, John O. Campbell (2023). *A variational synthesis of evolutionary and developmental dynamics*. Entropy."

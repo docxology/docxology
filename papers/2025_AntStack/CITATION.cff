@@ -11,5 +11,8 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.16782756
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.16782756"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.16782756"
+    description: "Canonical citation DOI resolver"

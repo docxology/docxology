@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior"
-description: "Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected. Here we present field experiments showing t..."
+description: "Ants are abundant in desiccating environments despite their high surface area to volume ratios and exposure to harsh conditions outside the nest. Red harvester ant (Pogonomyrmex barbatus) colonies must spend water to obtain water: colonies lose water..."
 tags: ["pogonomyrmex-barbatus", "desiccation-physiology", "foraging-behavior", "water-balance", "colony-variation", "collective-behavior", "behavioral-ecology", "reproductive-fitness"]
 domain: "Entomology"
 citation: "Daniel A. Friedman, Michael J. Greene, Deborah M. Gordon (2019). *The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior*. Scientific Reports."

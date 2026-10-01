@@ -1,8 +1,8 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Experimental Entomology in the Age of Video"
-description: "We examine the transformative impact of video technology on experimental entomology. Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies..."
-tags: ["video-entomology", "behavioral-tracking", "automated-phenotyping", "insect-behavior", "experimental-methods", "high-throughput-analysis"]
+description: "Entomology, the science of insects, has developed over thousands of years of human–insect interactions. As insects exist across essentially all terrestrial surfaces and play various critical ecological roles, theoretical and applied entomology are ce..."
+tags: ["experimental-entomology", "protocols", "leaf-cutting-ant-rearing", "pollen-identification", "honey-bee-histology", "agrochemical-risk"]
 domain: "Entomology"
 citation: "Daniel  A. Friedman, Judith R. Wexler, Sebastian Alvarado (2023). *Experimental Entomology in the Age of Video*. JoVE."
 doi: "10.3791/65002"
@@ -14,7 +14,7 @@ doi: "10.3791/65002"
 
 ## Context
 
-This work addresses topics in **Entomology**: video entomology, behavioral tracking, automated phenotyping, insect behavior.
+This work addresses topics in **Entomology**: experimental entomology, protocols, leaf-cutting ant rearing, pollen identification.
 
 ## Methods
 
@@ -50,7 +50,7 @@ Verification points for this work:
 
 ## Prerequisites
 
-- Familiarity with video entomology, behavioral tracking, automated phenotyping
+- Familiarity with experimental entomology, protocols, leaf-cutting ant rearing
 - Background in Entomology fundamentals
 - Access to source repository: N/A
 

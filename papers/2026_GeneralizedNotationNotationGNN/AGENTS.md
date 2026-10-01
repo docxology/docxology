@@ -4,7 +4,7 @@
 
 **Paper**: GeneralizedNotationNotation (GNN) (2026)
 **Domain**: Active Inference
-**Authors**: Daniel Ari Friedman, The GeneralizedNotationNotation Community Contributors
+**Authors**: Daniel Ari Friedman
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Parsing and structured export, Model-kind type checking and validation, Kind-aware model rendering
+- Identifies findings: The manuscript presents the Triple Play as text, graphical, and executable views derived from a shared model specification., At the manuscript snapshot, the framework covers 32 exemplar specifications across nine model families and ten registered rendering backends., The manuscript reports profiled execution gaps for continuous and hierarchical models, and a deliberate render-only scope for structural models; it does not claim that every model executes on every backend.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

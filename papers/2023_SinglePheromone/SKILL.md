@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "A single-pheromone model accounts for empirical patterns of ant colony foraging"
-description: "We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones. Our model demonstrates that the dynamic..."
+description: "We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones. Our model demonstrates that the dynamics of pheromone deposition, evaporation, and ant be..."
 tags: ["pheromone", "ant-foraging", "computational-model", "collective-behavior", "stigmergy", "trail-formation", "parsimony"]
 domain: "Entomology"
 citation: "Eric Saund, Daniel Ari Friedman (2023). *A single-pheromone model accounts for empirical patterns of ant colony foraging*. Cognitive Systems Research."

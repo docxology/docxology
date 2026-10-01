@@ -163,5 +163,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Conceptual/ontology paper with illustrative motifs; no empirical evaluation. Full-text title adds subtitle 'from Situated Sensemaking to the Epistemic Commons' (batch title is shortened).",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "In this work, we examine science from the vantage points of blockchain technology and its connection to decentralized science (DeSci). We consider science as a collective process using Active Inference, an integrative framework that models the cognitive processes of perception, planning, and action selection in terms of Bayesian probabilities and updating. We present the Active Entity Ontology for Science ( AEOS , available at coda.io/@active-inference-institute/active-entity-ontology-for-science-aeos ) as a composable and versionable system for modeling various science systems, using the Active Inference entity partitioning. Such DeSci systems are considered from the perspective of BOLTS (Business, Operations, Legal, Technical, Social). Further steps for developing and utilizing AEOS in the context of scientific ecosystems are provided.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
   }
 }

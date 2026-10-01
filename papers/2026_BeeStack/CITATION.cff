@@ -15,11 +15,11 @@ authors:
     given-names: Tucker Cahill
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.20420556
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.20420556"
+    description: "Canonical citation DOI"
   - type: url
-    value: "https://zenodo.org/records/20420556"
-    description: "Zenodo landing page"
+    value: "https://doi.org/10.5281/zenodo.20420556"
+    description: "Canonical citation DOI resolver"
   - type: url
     value: "https://github.com/docxology/BeeStack/releases/tag/v1.0.0"
     description: "GitHub release"

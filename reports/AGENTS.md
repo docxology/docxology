@@ -1,26 +1,17 @@
-# AGENTS.md — `docxology/reports/`
+# AGENTS.md — `reports/`
 
-Added by the 2026-08-29 ongoing-docs fleet pass.
+Public QA receipts, source-review records, and generated summaries. Follow
+the root `AGENTS.md` and the report's owning orchestrator or runbook.
 
-## What this is
+- Regenerate receipts with their tools; do not hand-edit results or infer
+  successful checks that did not run. Separate local tests, hosted checks,
+  and direct live-service observations.
+- Preserve dated evidence and binder relationships. Review and track new
+  report files before regenerating surfaces that resolve tracked receipts;
+  follow `docs/operations/settle.md` for payload and control-tail ordering.
+- Inspect report contents before public publication. Exclude credentials,
+  private records, and conversation-derived artifacts; preserve unrelated work.
+- Commit authorized reports on a work branch; never commit on local `main`.
 
-Timestamped QA and attestation artifacts for the docxology site: static
-accessibility audits, dated browser-QA / browser-smoke / visual-QA run folders,
-and deployment attestations. Generated output, not source.
-
-## Layout
-
-- `accessibility_static_YYYY-MM-DD.json` — dated static accessibility audits (2026-05→06 series).
-- `browser-qa/YYYY-MM-DD/` — per-run browser QA (`manifest.json` per run: 2026-07-18, 2026-07-29, 2026-08-25, 2026-08-26).
-- `browser-smoke/2026-08-26/` — smoke run artifacts.
-- `visual-qa/2026-08-26/` — visual QA run artifacts.
-- `deployment-attestations/` — per-commit attestation JSON (hash-named).
-
-## Invariants
-
-- Local-only; never commit. Generated artifacts — regenerate, don't hand-edit.
-- Live work tree (docxology, 3 remotes) — read, don't write.
-
-## Verify
-
-- `ls docxology/reports | head` — dated JSON series present.
+Use the report's check mode where available and
+`uv run python3 code/orchestrators/validate_repo.py` for repository integrity.

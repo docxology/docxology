@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "A guided tour through the spaces of particular \"minds\""
-description: "This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argue..."
+description: "This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argues that the proposed typology—based on particle dyn..."
 tags: ["path-integrals", "particular-kinds", "mindspace", "active-inference", "free-energy-principle", "consciousness", "sloman", "non-anthropocentric", "sentience-taxonomy"]
 domain: "Active Inference"
 citation: "Ali Rahmjoo, Daniel Ari Friedman (2023). *A guided tour through the spaces of particular \"minds\"*. Physics of Life Reviews."

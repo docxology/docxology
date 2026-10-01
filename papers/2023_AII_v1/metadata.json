@@ -199,5 +199,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Organizational report (v1, 2023) rather than a research paper; methods describe the document's descriptive and planning approaches. Evaluation metrics are proposed, not reported.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "This document briefly surveys the current state of the Active Inference Institute and Active Inference Ecosystem, and outlines our future directions. It will be versioned as a living representation (both cyclic and updating) of ecosystems both general and local, describing the past, present, and future actions of the Active Inference Institute.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
   }
 }

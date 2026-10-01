@@ -25,8 +25,8 @@
       "name": "Deborah M. Gordon"
     }
   ],
-  "description": "Individual behavioral variation within colonies is shaped by neurochemical signaling. Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa. Here we investigate...",
-  "abstract": "Individual behavioral variation within colonies is shaped by neurochemical signaling. Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa. Here we investigate the role of dopamine in regulating the transition between behavioral states in red harvester ant workers. We show that dopamine levels differ between ants performing different tasks, and that experimental manipulation of dopamine signaling alters the propensity of workers to leave the nest and forag",
+  "description": "Transcriptomic, physiological, and field pharmacological experiments link variation among red harvester ant colonies in humidity-sensitive foraging to forager brain neurophysiology.",
+  "abstract": "Colonies of the red harvester ant (Pogonomyrmex barbatus) differ in how they regulate collective foraging activity in response to changes in humidity. We used transcriptomic, physiological, and pharmacological experiments to investigate the molecular basis of this ecologically important variation in collective behavior among colonies. RNA sequencing of forager brain tissue showed an association between colony foraging activity and differential expression of transcripts related to biogenic amine and neurohormonal metabolism and signaling. In field experiments, pharmacological increases in forager brain dopamine titer caused significant increases in foraging activity. Colonies that were naturally most sensitive to humidity were significantly more responsive to the stimulatory effect of exogenous dopamine. In addition, forager brain tissue significantly varied among colonies in biogenic amine content. Neurophysiological variation among colonies associated with individual forager sensitivity to humidity may reflect the heritable molecular variation on which natural selection acts to shape the collective regulation of foraging.",
   "keywords": [
     "dopamine",
     "foraging behavior",
@@ -37,8 +37,35 @@
     "biogenic amines",
     "harvester ants"
   ],
-  "methods": [],
-  "key_findings": [],
+  "methods": [
+    {
+      "name": "Forager brain RNA sequencing",
+      "description": "Compared six colonies differing in sensitivity to dry conditions, using three replicate libraries per colony from three pooled dissected brains and the kallisto/sleuth pipeline.",
+      "evidence": "For each colony, 3 replicate RNA-seq libraries were sequenced from the mRNA extracted from 3 pooled dissected forager brains. We used the kallisto/sleuth RNA-seq analysis pipeline ( Bray et al., 2016 ) to quantify transcript expression against the P. barbatus"
+    },
+    {
+      "name": "Field pharmacological manipulation",
+      "description": "Compared foraging activity of dopamine-treated foragers with control-treated nestmates in field experiments over two years.",
+      "evidence": "Next, we tested the hypothesis that increasing forager brain dopamine titer would increase foraging activity in the field (see Transparent Methods 1E). Foragers treated with 3 mg/mL dopamine made signif- icantly more foraging trips compared with their control-treated nestmates in field experiments over"
+    },
+    {
+      "name": "Colony humidity sensitivity",
+      "description": "Estimated how much each colony reduced its daily number of foraging trips per percent decrease in humidity and compared this with response to drug treatment.",
+      "evidence": "Colony reduction of foraging activity in response to humidity was quantified by estimating the decrease in daily foraging trips made by the colony per percent decrease in humidity"
+    },
+    {
+      "name": "Brain biogenic amine assays",
+      "description": "Quantified dopamine and serotonin in active forager brain tissue from the nine colonies used for field pharmacology.",
+      "evidence": "Brain dopamine and serotonin titers were quantified from active foragers from the 9 colonies used in the aforementioned pharmacological experiments"
+    }
+  ],
+  "key_findings": [
+    "Forager brain transcriptomes differed between colony sets with different foraging responses to dry conditions: 273 of 20,387 reference transcripts were significantly differentially expressed.",
+    "Dopamine-treated foragers made on average 20.5% more foraging trips than control-treated nestmates in the nine-colony 2016 field experiment.",
+    "In 2017, foragers treated with the dopamine synthesis inhibitor 3-iodotyrosine made on average 19.1% fewer foraging trips than control-treated nestmates; the study did not directly quantify the inhibitor-induced brain dopamine change.",
+    "Colonies that reduced foraging more strongly in dry conditions responded more strongly to the stimulatory effect of exogenous dopamine.",
+    "Colonies differed in average forager brain dopamine-to-serotonin ratio; the study did not find a significant relationship between that ratio and humidity-sensitive foraging."
+  ],
   "related_papers": [
     "2016_AntGenetics",
     "2016_ForagingGene",
@@ -48,8 +75,38 @@
   "doi": "10.1016/j.isci.2018.09.001",
   "doi_url": "https://doi.org/10.1016/j.isci.2018.09.001",
   "summary_provenance": {
-    "source": "none",
+    "source": "full_text.md",
     "date": "2026-10-01",
-    "notes": "The folder previously held a byte-identical copy of the 2016 Proc. R. Soc. B foraging-gene PDF (papers/2016_ForagingGene) with its extracted text and images; they were removed. The iScience 2018 article (10.1016/j.isci.2018.09.001, open access) still needs to be archived here before methods and findings can be summarized."
-  }
+    "procedure": "Read the correctly identified CC BY 4.0 published article and its Transparent Methods supplement; every summary item includes a verbatim evidence excerpt from the archived article text.",
+    "notes": "The previously mis-filed 2016 foraging-gene document was removed. The replacement iScience PDF was acquired from the NLM PMC Open Data AWS dataset with matching publisher DOI, seven authors, published-version metadata, and verified MD5. The NLM PDF includes the Transparent Methods supplement on its final eight pages. No unsupported behavioral mechanism or natural-selection conclusion is treated as demonstrated. The Results paragraph reports 113 transcripts upregulated in colonies that do not reduce foraging on dry days and 160 in humidity-sensitive colonies, but the next GO-enrichment paragraph reverses these counts; the summary avoids attributing the disputed group counts.",
+    "reviewed": "2026-10-01: independent contextual review of all four methods and five findings, with source identity, abstract, license and hash verification."
+  },
+  "primary_pdf": "2018_DopamineForaging.pdf",
+  "key_findings_evidence": [
+    "Of the 20,387 transcripts in the reference transcriptome 273 were significantly differentially ex- pressed in whole forager brains between the 2 sets of colonies ( Figure 1 A).",
+    "In 2016, dopamine-treated foragers made on average 20.5% more foraging trips than control-treated nestmates (N = 9 colonies, effect s 0, p < 0.001, t = 5.60).",
+    "To test the hypothesis that decreasing forager brain d opamine would lead to a decrease in foraging activ- ity, we tested the effect of 3-iodotyrosine (3IY) on foraging activity. 3IY is a metabolic inhibitor that reduces brain dopamine titer in insects ( Neckameyer, 1996 ) however, we did not use mass spectrometry to quantify brain dopamine titer change due to 3IY. In the same colonies used in the aforementioned dopamine ex- periments, foragers treated with 3 mg/mL 3IY made significantly fewer foraging trips than control-treated nestmates ( Figure 3 , Data S1 ). In 2017, 3IY-treated foragers made on average 19.1% fewer foraging trips than control-treated nestmates (effect s 0, p < 0.001, t = 13.60).",
+    "Colonies that more strongly reduced foraging activity in dry conditions were more responsive to the stim- ulatory effect of exogenous dopamine ( Figure 4 ) (N = 9 colonies, Kendall’s rank correlation test, t = 0.44, p = 0.013, Pearson’s correlation r 2 = 0.52, p = 0.028).",
+    "Colonies significantly varied in their average forager brain dopamine to serotonin ratio ( Figure 5 )( N=9c o l o n i e s ,N=5s a m p l e s / c o l o n y of 2 pooled brains, ANOVA for effect of colony, p < 0. 001). There was no significant relationship between the colony’s average forager brain dopamine to serotonin ratio and how strongly the colony reduced foraging activity in dry conditions earlier in the season (Spearman’s R = /C00.13, p = 0.74). Colonies with higher dopamine to serotonin ratios tended to be less responsive toward the stimulatory effects of dopa- mine, but this trend was not significant (Spearman’s R = /C00.48, p = 0.19)."
+  ],
+  "source_provenance": {
+    "source": "NLM PubMed Central Open Data AWS dataset",
+    "retrieved_on": "2026-10-01",
+    "pmcid": "PMC6205345",
+    "metadata_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6205345.1/PMC6205345.1.json",
+    "download_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6205345.1/PMC6205345.1.pdf",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "sha256": "7325c9a11c8cd665622ec8143afb64b606cd967607e7a7cc8359411fd2e773f8",
+    "md5": "6194ee88c8187c3afd44cf0727a61be5",
+    "source_version": "published article; NLM is_manuscript=false",
+    "identity_check": "Exact DOI, title, and seven-author sequence confirmed in the published PDF and corresponding NLM JATS XML."
+  },
+  "abstract_provenance": {
+    "source": "published Summary in NLM JATS full text",
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6205345.1/PMC6205345.1.xml",
+    "retrieved_on": "2026-10-01",
+    "license": "CC BY 4.0"
+  },
+  "pdf_sha256": "7325c9a11c8cd665622ec8143afb64b606cd967607e7a7cc8359411fd2e773f8"
 }

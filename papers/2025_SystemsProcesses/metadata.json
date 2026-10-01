@@ -82,5 +82,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Short slide deck (12 pages) with sparse text; findings are slide-level framing claims rather than results.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
+  },
+  "abstract": "Slides for a session at \"Enduring Patterns, Emerging Futures: Celebrating Dr. Len Troncale\", an online event in September 2025 https://troncale.sched.com/ .",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
   }
 }

@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)"
-description: "The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems. Part 1 of 3 covers theore..."
+description: "Multiagent AI systems introduce cognitive attack surfaces absent in single-model inference. When agents delegate to agents, forming beliefs about beliefs through recursive trust hierarchies, manipulation of reasoning processes—rather than mere data c..."
 tags: ["cognitive-integrity", "multiagent-security", "cognitive-security", "active-inference", "category-theory", "formal-foundations", "threat-modeling"]
 domain: "Cognitive Security"
 citation: "Daniel Ari Friedman (2026). *Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)*. Zenodo."

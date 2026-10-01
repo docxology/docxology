@@ -935,7 +935,7 @@ TY  - JOUR
 AU  - Tickles, Dean
 AU  - Friedman, Daniel
 PY  - 2023
-TI  - To comment or not to comment
+TI  - To comment or not to comment, that is the question!
 T2  - Physics of Life Reviews
 DO  - 10.1016/j.plrev.2023.06.002
 UR  - https://doi.org/10.1016/j.plrev.2023.06.002
@@ -1838,7 +1838,7 @@ TI  - Con-cat-enate: emulation of Cat Hippocampus
 T2  - Zenodo
 DO  - 10.5281/zenodo.13626536
 UR  - https://doi.org/10.5281/zenodo.13626536
-KW  - Genetics & Biomedical
+KW  - Computational
 KW  - Paper
 N1  - Catalog row 129; docs: papers/2025_ConCatEnate/
 ER  -
@@ -1877,7 +1877,7 @@ TI  - Beacons - pre emulation of social cortex
 T2  - Zenodo
 DO  - 10.5281/zenodo.14737059
 UR  - https://doi.org/10.5281/zenodo.14737059
-KW  - Genetics & Biomedical
+KW  - Computational
 KW  - Paper
 N1  - Catalog row 132; docs: papers/2025_BeaconsPreEmulation/
 ER  -
@@ -2395,7 +2395,6 @@ ER  -
 
 TY  - JOUR
 AU  - Friedman, Daniel Ari
-AU  - The GeneralizedNotationNotation Community Contributors
 PY  - 2026
 TI  - GeneralizedNotationNotation (GNN)
 T2  - Zenodo
@@ -2690,7 +2689,7 @@ TI  - Data Descriptor Template: Schema, Provenance, and Release Readiness
 T2  - Zenodo
 DO  - 10.5281/zenodo.21298883
 UR  - https://doi.org/10.5281/zenodo.21298883
-KW  - Active Inference
+KW  - Computational
 KW  - Paper
 N1  - Catalog row 192; docs: papers/2026_DataDescriptorTemplate/
 ER  -

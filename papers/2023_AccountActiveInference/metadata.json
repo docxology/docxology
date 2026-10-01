@@ -78,5 +78,12 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "One-page conceptual essay (Active Inference Institute, 10/6/2023); no data, models, or analyses. Findings are the author's arguments.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "In Active Inference, we develop (ensembles of) generative models of ecosystems of shared intelligence by accounting for cognitive system and phenomena. The work of developing generative models is more like doing accounting than doing calculation, memorization, or inference itself – the generative model does the inference for us. One of our functional roles or capacities as an engaged generative modeler, is to take an analytical stance towards accounting for cognitive properties, processes, and perspectives. In this setting, we are the Active AccountAnts. The generative model we create is an Active InferAnt.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Passage recovered from the document",
+    "evidence_source": "full_text.md"
   }
 }

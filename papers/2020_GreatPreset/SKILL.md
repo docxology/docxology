@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Great Preset: Remote Teams and Operational Art"
-description: "This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior. Through the lens of Active Inferen..."
+description: "This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior. Through the lens of Active Inference, narrative ecosystems, and information theory, ..."
 tags: ["cognitive-security", "narrative-ecosystems", "great-reset", "sensemaking", "active-inference", "information-theory", "socioeconomic-narratives"]
 domain: "Cognitive Security"
 citation: "Daniel A. Friedman, Richard J. Cordes (2020). *The Great Preset: Remote Teams and Operational Art*. COGSEC.org."

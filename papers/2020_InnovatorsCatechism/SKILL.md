@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Innovator's Catechism"
-description: "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to..."
+description: "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives in order to achieve success. Many of these teams disintegrate or fail to perform d..."
 tags: ["operations-orders", "innovation-teams", "innovator's-catechism", "team-alignment", "military-transfer", "organizational-design", "hackathons"]
 domain: "Cognitive Security"
 citation: "Richard J. Cordes, Daniel A. Friedman, Steven E. Phelan (2020). *The Innovator's Catechism*. Zenodo."

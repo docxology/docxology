@@ -3,7 +3,7 @@
 # AGENTS.md — Data Descriptor Template: Schema, Provenance, and Release Readiness
 
 **Paper**: Data Descriptor Template: Schema, Provenance, and Release Readiness (2026)
-**Domain**: Active Inference
+**Domain**: Computational
 **Authors**: Daniel Ari Friedman
 
 ---
@@ -18,10 +18,10 @@
 ### 🔬 RESEARCHER
 - Extracts methods: Synthetic demo dataset: two CSV fixtures plus JSON descriptor, Six-field data dictionary with typed constraints, Order-independent sha256 schema fingerprint
 - Identifies findings: The clean fixture descriptor produces zero validation findings, while the deliberately perturbed demo produces several errors and warnings., For the shipped fixture, both files verify: declared and actual row counts agree and each recomputed checksum matches, leaving the readiness score unpenalised., The paper reports that its zero-mock test suite exceeds the 90% project coverage gate.
-- Maps contributions to Active Inference literature
+- Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
-- Creates learning pathways for Active Inference concepts
+- Creates learning pathways for Computational concepts
 - Develops SKILL.md with executable instructions
 - Maintains prerequisite knowledge mapping
 

@@ -3,7 +3,7 @@
 # AGENTS.md — Con-cat-enate: emulation of Cat Hippocampus
 
 **Paper**: Con-cat-enate: emulation of Cat Hippocampus (2025)
-**Domain**: Genetics & Biomedical
+**Domain**: Computational
 **Authors**: Andrew Djuwidja, Daniel Friedman
 
 ---
@@ -18,10 +18,10 @@
 ### 🔬 RESEARCHER
 - Extracts methods: Independent vision-processing modules (Scanning Trio, Track Trio), Chempool emulation of accumulated chemicals/hormones, CYC drivers decomposed into |n| slots by a CYC modulator
 - Identifies findings: The authors state the document's purpose is only to justify the proposed flow, which is a posit testable only once its components exist., They list missing components, including sim, CYC and chem tables, the CYC modulator (a process reward model), a trigger table and a sim resolver., The authors argue a process reward model is critical: without it, it would be impossible to check which route or CYC completion was better.
-- Maps contributions to Genetics & Biomedical literature
+- Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
-- Creates learning pathways for Genetics & Biomedical concepts
+- Creates learning pathways for Computational concepts
 - Develops SKILL.md with executable instructions
 - Maintains prerequisite knowledge mapping
 

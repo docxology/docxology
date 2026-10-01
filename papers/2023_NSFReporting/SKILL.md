@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing"
-description: "This paper proposes refining postdoctoral reporting at the NSF through generative intelligence systems, bolstering efficiency and broadening dissemination scope. The framework includes updatable profi..."
+description: "This report presents an approach for enhancing postdoctoral reporting at the National Science Foundation (NSF) using generative intelligence systems. The proposed system integrates updatable profiles, intelligent processing prompts, and a dynamic rep..."
 tags: ["nsf-reporting", "postdoctoral-research", "synthetic-intelligence", "automated-reporting", "research-dissemination", "prompt-engineering"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2023). *Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing*. Zenodo."

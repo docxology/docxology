@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States"
-description: "Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states. The framework models thoughts as self-organizing agents (thoughtseeds) that compete..."
+description: "Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states. The framework models thoughts as self-organizing agents (thoughtseeds) that compete and cooperate within a cognitive landscape, using ..."
 tags: ["thoughtseeds", "meditation", "thought-dynamics", "hierarchical-modeling", "agentic-framework", "active-inference", "attention", "mindfulness"]
 domain: "Active Inference"
 citation: "Prakash Chandra Kavi, Gorka Zamora-López, Daniel Ari Friedman, Gustavo Patow (2025). *Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States*. Entropy."

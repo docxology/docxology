@@ -3,7 +3,7 @@
 # AGENTS.md — Beacons - pre emulation of social cortex
 
 **Paper**: Beacons - pre emulation of social cortex (2025)
-**Domain**: Genetics & Biomedical
+**Domain**: Computational
 **Authors**: andrew djuwidja, Daniel Friedman
 
 ---
@@ -18,10 +18,10 @@
 ### 🔬 RESEARCHER
 - Extracts methods: Cat-in-environment thought scenario for a simulated agent, Pattern-scan and labeling procedure with object-type codes, Beacons table with confirmation and weight pulses
 - Identifies findings: Proposes classifying entities on a certainty spectrum, from predictable (walls, rocks) to highly dynamic social entities carrying their own prediction matrix., Introduces a self-social (OTSSA) label so identities can be represented and swapped into social-social simulations in place of another social creature., Notes that biologically objects may first be treated as social and then downgraded, but the sketch deliberately starts bottom-up for an optimized working agent.
-- Maps contributions to Genetics & Biomedical literature
+- Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
-- Creates learning pathways for Genetics & Biomedical concepts
+- Creates learning pathways for Computational concepts
 - Develops SKILL.md with executable instructions
 - Maintains prerequisite knowledge mapping
 

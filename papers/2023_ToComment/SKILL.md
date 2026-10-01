@@ -1,15 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "To comment or not to comment"
+name: "To comment or not to comment, that is the question!"
 description: "No abstract is recorded for this work yet; see the DOI or bibliography link."
 tags: ["tocomment"]
 domain: "Genetics & Biomedical"
-citation: "Dean Tickles, Daniel Friedman (2023). *To comment or not to comment*. Physics of Life Reviews."
+citation: "Dean Tickles, Daniel Friedman (2023). *To comment or not to comment, that is the question!*. Physics of Life Reviews."
 doi: "10.1016/j.plrev.2023.06.002"
-artifact_doi: "10.5281/zenodo.5573946"
 ---
 
-# To comment or not to comment
+# To comment or not to comment, that is the question!
 
 **Dean Tickles, Daniel Friedman** (2023) · Genetics & Biomedical
 
@@ -43,7 +42,6 @@ Verification points for this work:
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-08-22T20:40:00Z
-- Artifact DOI: 10.5281/zenodo.5573946
 
 ## Prerequisites
 

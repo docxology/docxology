@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction"
-description: "<div>This project operationalizes the 2026 preprint \"There is no self-evidence: A physics of emptiness realisation\" as a source-anchored software artifact. Its central claim is that a finite agent can use a boundary for prediction while never obtaini..."
+description: "This project operationalizes the 2026 preprint \"There is no self-evidence: A physics of emptiness realisation\" as a source-anchored software artifact. Its central claim is that a finite agent can use a boundary for prediction while never obtaining ev..."
 tags: ["active-inference", "bayesian-model-reduction", "quantum-reference-frames", "emptiness", "formal-methods", "pymdp"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction*. Zenodo."

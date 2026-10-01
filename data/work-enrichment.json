@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T20:58:08Z",
+  "generated_at": "2026-10-01T21:36:41Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
   "count": 219,
   "works": {
@@ -183,11 +183,12 @@
       "abstract": "Universal Basic Income (UBI) is defined as a transformative economic policy designed to provide all citizens with a regular, unconditional sum of money, regardless of their circumstances. Here we argue that the overlay of several modern technologies on UBI can help enhance its relevance, effectiveness, and impact. We review applications of artificial intelligence (AI) and decentralized...",
       "keywords": [
         "AuBI",
-        "augmented intelligence",
-        "biological intelligence",
-        "Active Inference",
-        "cognitive augmentation",
-        "human-AI interaction"
+        "Adaptive Basic Income",
+        "Universal Basic Income",
+        "decentralized infrastructure",
+        "active inference modules",
+        "data sovereignty",
+        "adaptive economic agents"
       ],
       "findings": [
         "The authors argue that overlaying AI, decentralized infrastructure, and Active Inference on UBI can enhance its relevance, effectiveness, and impact.",
@@ -256,12 +257,11 @@
       "citation_key": "Friedman2025EvoJumpStochasticModelingEvolutionary012",
       "abstract": "Biological development unfolds as a stochastic process characterized by continuous variation and discrete transitions, yet traditional analytical methods fail to capture this complexity, and we present EvoJump, a unified computational framework that models developmental trajectories as stochastic processes analyzed through cross-sectional laser plane views of phenotypic distributions. EvoJump...",
       "keywords": [
-        "evolutionary transitions",
         "EvoJump",
-        "Active Inference",
-        "major transitions",
-        "phenotypic complexity",
-        "Free Energy Principle"
+        "stochastic modeling",
+        "ontogenetic trajectories",
+        "jump-diffusion",
+        "fractional Brownian motion"
       ],
       "findings": [
         "Validation tests confirmed expected properties, e.g. fBM recovered standard Brownian motion at H = 0.5 and distinguished persistence regimes.",
@@ -313,11 +313,10 @@
       "keywords": [
         "MDKV",
         "Markdown",
-        "key-value format",
-        "structured data",
-        "document specification",
-        "YAML-free",
-        "round-trip transformation"
+        "multitrack documents",
+        "ZIP container",
+        "YAML manifest",
+        "round-trip export"
       ],
       "findings": [
         "The paper lists four contributions: a precise model and container format, a modular architecture exposed via CLI and GUI, detailed use cases, and guidance on cryptographic provenance and conformance.",
@@ -1026,14 +1025,9 @@
     },
     "Friedman2024WhyPaleolithicRockstarsWere043": {
       "citation_key": "Friedman2024WhyPaleolithicRockstarsWere043",
-      "abstract": "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression. The work examines cave paintings and rock art as evidence of early human cognitive capabilities and their connection to modern theories of consciousness and aesthetic experience.",
+      "abstract": "No abstract is recorded for this work yet; see the DOI or bibliography link.",
       "keywords": [
-        "Paleolithic art",
-        "cave paintings",
-        "cognitive evolution",
-        "consciousness",
-        "aesthetic experience",
-        "rock art"
+        "PaleolithicRockstars"
       ],
       "findings": [],
       "methods": [],
@@ -1044,10 +1038,10 @@
       "abstract": "Curio Cards is the first art NFT project on Ethereum, launched as a permanent online art show gallery on May 9, 2017. Curio Cards used Ethereum to establish a new model for the creation and ownership of digital artwork. The Curio Cards approach was to create a unique set of rare collectible art, with contributions from seven artists with different styles and backgrounds. In doing so, Curio Cards...",
       "keywords": [
         "Curio Cards",
-        "research ideation",
-        "creativity tools",
-        "interdisciplinary thinking",
-        "prompt-based exploration"
+        "Ethereum",
+        "NFT art",
+        "art gallery",
+        "art history"
       ],
       "findings": [
         "The authors describe Curio Cards, launched May 9, 2017, as the first art NFT project on Ethereum, framed as a permanent online art show gallery.",
@@ -1120,11 +1114,10 @@
       "keywords": [
         "honey bees",
         "Apis mellifera",
-        "gene expression",
+        "tissue-specific gene expression",
+        "meta-analysis",
         "RNA-Seq",
-        "novel traits",
-        "taxonomically restricted genes",
-        "coding sequence evolution"
+        "bioinformatics"
       ],
       "findings": [
         "From 4349 samples and 12,398 loci, AMALGKIT processing retained 731 samples and 177 loci, released as a public July 2023 TSGE snapshot.",
@@ -1302,12 +1295,12 @@
       "citation_key": "Friedman2023ExperimentalEntomologyAgeVideo055",
       "abstract": "Entomology, the science of insects, has developed over thousands of years of human–insect interactions. As insects exist across essentially all terrestrial surfaces and play various critical ecological roles, theoretical and applied entomology are central research domains for the 21st century and beyond. Recent technological developments, including international accessibility to transparent video...",
       "keywords": [
-        "video entomology",
-        "behavioral tracking",
-        "automated phenotyping",
-        "insect behavior",
-        "experimental methods",
-        "high-throughput analysis"
+        "experimental entomology",
+        "protocols",
+        "leaf-cutting ant rearing",
+        "pollen identification",
+        "honey bee histology",
+        "agrochemical risk"
       ],
       "findings": [
         "The editorial highlights that Topitzhofer et al.'s pollen pipeline relies on passive mesh collection and low-cost visual identification rather than electron microscopy or metabarcoding.",
@@ -2293,11 +2286,11 @@
         "Argentine ant",
         "Linepithema humile",
         "invasive species",
-        "supercolony",
-        "nestmate recognition",
-        "collective behavior",
-        "chemical ecology",
-        "cuticular hydrocarbons"
+        "winter foraging",
+        "locomotion",
+        "temperature",
+        "humidity",
+        "collective behavior"
       ],
       "findings": [
         "Colonies foraged most between 10 and 15˚C regardless of maximum daily temperature.",
@@ -2345,7 +2338,7 @@
     },
     "Friedman2018WoodliceMenBayesianAccount098": {
       "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
-      "abstract": "In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognition, life, and consciousness. Friston recounts how watching woodlice scurry in sunlight and slow in shade led to the insight that biological self-organization can be explained by simple thermodynamic...",
+      "abstract": "In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognition, life, and consciousness. Friston recounts how watching woodlice scurry in sunlight and slow in shade led to the insight that biological self-organization can be explained by principles of...",
       "keywords": [
         "Free Energy Principle",
         "Karl Friston",
@@ -2402,7 +2395,7 @@
     },
     "Friedman2018RoleDopamineCollectiveRegulation100": {
       "citation_key": "Friedman2018RoleDopamineCollectiveRegulation100",
-      "abstract": "Individual behavioral variation within colonies is shaped by neurochemical signaling. Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa. Here we investigate the role of dopamine in regulating the transition between behavioral states in red harvester ant workers. We show that dopamine levels differ between ants performing different tasks, and that...",
+      "abstract": "Colonies of the red harvester ant (Pogonomyrmex barbatus) differ in how they regulate collective foraging activity in response to changes in humidity. We used transcriptomic, physiological, and pharmacological experiments to investigate the molecular basis of this ecologically important variation in collective behavior among colonies. RNA sequencing of forager brain tissue showed an association...",
       "keywords": [
         "dopamine",
         "foraging behavior",
@@ -2413,8 +2406,19 @@
         "biogenic amines",
         "harvester ants"
       ],
-      "findings": [],
-      "methods": [],
+      "findings": [
+        "Forager brain transcriptomes differed between colony sets with different foraging responses to dry conditions: 273 of 20,387 reference transcripts were significantly differentially expressed.",
+        "Dopamine-treated foragers made on average 20.5% more foraging trips than control-treated nestmates in the nine-colony 2016 field experiment.",
+        "In 2017, foragers treated with the dopamine synthesis inhibitor 3-iodotyrosine made on average 19.1% fewer foraging trips than control-treated nestmates; the study did not directly quantify the inhibitor-induced brain dopamine change.",
+        "Colonies that reduced foraging more strongly in dry conditions responded more strongly to the stimulatory effect of exogenous dopamine.",
+        "Colonies differed in average forager brain dopamine-to-serotonin ratio; the study did not find a significant relationship between that ratio and humidity-sensitive foraging."
+      ],
+      "methods": [
+        "Forager brain RNA sequencing — Compared six colonies differing in sensitivity to dry conditions, using three replicate libraries per colony from three pooled dissected brains and the kallisto/sleuth pipeline.",
+        "Field pharmacological manipulation — Compared foraging activity of dopamine-treated foragers with control-treated nestmates in field experiments over two years.",
+        "Colony humidity sensitivity — Estimated how much each colony reduced its daily number of foraging trips per percent decrease in humidity and compared this with response to drug treatment.",
+        "Brain biogenic amine assays — Quantified dopamine and serotonin in active forager brain tissue from the nine colonies used for field pharmacology."
+      ],
       "source": "papers/2018_DopamineForaging/README.md"
     },
     "Friedman2017MutAntsAreHere101": {
@@ -3879,7 +3883,7 @@
     },
     "Friedman2026GeneralizedNotationNotationGNN168": {
       "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
-      "abstract": "Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models. It aims to enhance clarity, reproducibility, and interoperability in the field of Active Inference and cognitive modeling. GNN provides a structured way to describe complex models, making them human-readable and machine-parsable. It...",
+      "abstract": "Active Inference offers a unifying account of perception, learning, and action under the free energy principle, yet the generative models at its core are still communicated ad hoc: scattered across prose descriptions, bespoke notebooks, and framework-specific code that rarely agree. This fragmentation makes published models hard to reproduce, compare, or port between tools, and it raises the...",
       "keywords": [
         "active inference",
         "generative models",
@@ -3892,8 +3896,19 @@
         "gnn",
         "python"
       ],
-      "findings": [],
-      "methods": [],
+      "findings": [
+        "The manuscript presents the Triple Play as text, graphical, and executable views derived from a shared model specification.",
+        "At the manuscript snapshot, the framework covers 32 exemplar specifications across nine model families and ten registered rendering backends.",
+        "The manuscript reports profiled execution gaps for continuous and hierarchical models, and a deliberate render-only scope for structural models; it does not claim that every model executes on every backend.",
+        "The manuscript specifies reproducible validation commands and explicitly avoids asserting a fixed passing-check count.",
+        "The manuscript describes long-running orchestration contracts that generate, validate, and replay data without mutating live infrastructure."
+      ],
+      "methods": [
+        "Parsing and structured export — Parses plain-text model specifications into an internal representation and structured export formats, retaining declared model vocabulary.",
+        "Model-kind type checking and validation — Checks state spaces, observation modalities, control factors, matrix dimensions, and kind-specific shape contracts before code generation.",
+        "Kind-aware model rendering — Carries structurally determined model kinds into rendering and execution, recording which backends can handle each kind and which report it unsupported.",
+        "Semantic fidelity and cross-framework gates — Provides reproducible commands for testing semantic preservation in round trips and comparing generated model structure across backend implementations."
+      ],
       "source": "papers/2026_GeneralizedNotationNotationGNN/README.md"
     },
     "Friedman2026COGANTDeterministicCodebaseGNN169": {

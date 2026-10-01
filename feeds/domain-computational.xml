@@ -148,6 +148,13 @@
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
     </item>
     <item>
+      <title>Data Descriptor Template: Schema, Provenance, and Release Readiness</title>
+      <link>https://doi.org/10.5281/zenodo.21298883</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21298883</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
       <title>DemoCreate: Declarative Audio-Visual Demo Generation for Software</title>
       <link>https://doi.org/10.5281/zenodo.20693216</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20693216</guid>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22833491</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>Introduction to Biology: A Generative Approach</title>
-      <link>https://doi.org/10.5281/zenodo.20286477</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20286477</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Book — Zenodo — Friedman, Daniel Ari</description>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧬 To comment or not to comment
+# 🧬 To comment or not to comment, that is the question!
 
 **Dean Tickles, Daniel Friedman** (2023) · *Physics of Life Reviews*
 
@@ -27,12 +27,11 @@ _No paper-specific findings have been summarized yet; see the abstract and the f
 ## Artifacts
 
 - DOI: [10.1016/j.plrev.2023.06.002](https://doi.org/10.1016/j.plrev.2023.06.002)
-- Artifact DOI: [10.5281/zenodo.5573946](https://doi.org/10.5281/zenodo.5573946)
 - PDF SHA-256: Not recorded
 
 ## Citation
 
-> Dean Tickles, Daniel Friedman (2023). *To comment or not to comment*. Physics of Life Reviews. DOI: 10.1016/j.plrev.2023.06.002. URL: https://doi.org/10.1016/j.plrev.2023.06.002.
+> Dean Tickles, Daniel Friedman (2023). *To comment or not to comment, that is the question!*. Physics of Life Reviews. DOI: 10.1016/j.plrev.2023.06.002. URL: https://doi.org/10.1016/j.plrev.2023.06.002.
 
 ## Related
 

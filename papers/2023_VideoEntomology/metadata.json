@@ -13,15 +13,15 @@
       "name": "Sebastian Alvarado"
     }
   ],
-  "description": "We examine the transformative impact of video technology on experimental entomology. Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies...",
-  "abstract": "We examine the transformative impact of video technology on experimental entomology. Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies, and novel experimental paradigms for studying insect behavior. We review current video methods, discuss their applications in entomological research, and identify future directions for video-enhanced insect science.",
+  "description": "Entomology, the science of insects, has developed over thousands of years of human–insect interactions. As insects exist across essentially all terrestrial surfaces and play various critical ecological roles, theoretical and applied entomology are central research domains for the 21st century and beyond. Recent technological developments, including international accessibility to transparent video creation, are transforming social processes of education, research, and governance. This editorial summarizes the protocols associated with modern entomology and aims to communicate recent methodological developments in entomology in order to facilitate their adoption.",
+  "abstract": "Entomology, the science of insects, has developed over thousands of years of human–insect interactions. As insects exist across essentially all terrestrial surfaces and play various critical ecological roles, theoretical and applied entomology are central research domains for the 21st century and beyond. Recent technological developments, including international accessibility to transparent video creation, are transforming social processes of education, research, and governance. This editorial summarizes the protocols associated with modern entomology and aims to communicate recent methodological developments in entomology in order to facilitate their adoption.",
   "keywords": [
-    "video entomology",
-    "behavioral tracking",
-    "automated phenotyping",
-    "insect behavior",
-    "experimental methods",
-    "high-throughput analysis"
+    "experimental entomology",
+    "protocols",
+    "leaf-cutting ant rearing",
+    "pollen identification",
+    "honey bee histology",
+    "agrochemical risk"
   ],
   "methods": [
     {
@@ -57,5 +57,21 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Short JoVE editorial (4 pages) summarizing other authors' protocols; findings attribute content to the discussed articles or are the editors' views.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Passage recovered from the document",
+    "evidence_source": "full_text.md"
+  },
+  "description_provenance": {
+    "source": "abstract",
+    "date": "2026-10-01",
+    "basis": "Replaced an inaccurate hand-seeded description with the curated document summary"
+  },
+  "keywords_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "basis": "Terms selected from the document subject and methods; replaces inaccurate hand-seeded keywords"
   }
 }

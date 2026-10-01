@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — To comment or not to comment
+# AGENTS.md — To comment or not to comment, that is the question!
 
-**Paper**: To comment or not to comment (2023)
+**Paper**: To comment or not to comment, that is the question! (2023)
 **Domain**: Genetics & Biomedical
 **Authors**: Dean Tickles, Daniel Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects To comment or not to comment to related works in the bibliography
+- Connects To comment or not to comment, that is the question! to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

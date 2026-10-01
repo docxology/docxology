@@ -130,5 +130,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Project/grant proposal (v1, Sept 2024); all methods are planned work packages, and no results are reported.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "Project description submitted as part of application to Future of Life Institute - How to mitigate AI-driven power concentration Climate change intensifies agricultural challenges, requiring more and more advanced technological solutions. Small farmers increasingly rely on technical assistance, which is becoming centralized, dominated by large agricultural corporations and governments imposing sophisticated pre-designated solutions. As AI proliferates within these centralized solutions, diseases mitigation methods, climate credits, government subsidies, and regulations risk monopolizing farmers' activities. This tendency, amplified by AI development, threatens to undermine farmers' autonomy and limit their ability to make independent decisions, converting them into consumers of centralized technological solutions. We propose to develop FarmWorks — a platform for human-AI interaction in agriculture that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems. FarmWorks addresses the above challenges by providing an open source decentralized AI-powered agricultural platform that empowers individual farmers with cutting-edge technology while preserving their autonomy and promoting sustainable practices. By integrating real-time data collection, edge computing, and Active Inference models, FarmWorks enables farmers to make informed decisions tailored to their specific contexts (for example, integrating humidity data and epidemiological models to assist farmers with remediative and anticipatory treatments for mold).",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
   }
 }

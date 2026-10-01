@@ -1507,7 +1507,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/line_set#software",
             "name": "line_set",
-            "description": "A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice ·  · Zenodo",
+            "description": "A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice ·  · Citation DOI · Zenodo artifact v0.1.0",
             "codeRepository": "https://github.com/docxology/line_set",
             "author": {
                 "@type": "Person",
@@ -1633,7 +1633,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/silver_line#software",
             "name": "silver_line",
-            "description": "A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse ·  · Zenodo",
+            "description": "A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse ·  · Citation DOI · Zenodo artifact v0.1.0",
             "codeRepository": "https://github.com/docxology/silver_line",
             "author": {
                 "@type": "Person",
@@ -1853,7 +1853,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/Skillarum#software",
             "name": "Skillarum",
-            "description": "Turns selected public website pages into portable SKILL.md documents for agent harnesses — five inspectable stages, provenance, safety-bounded crawling, evidence-gated research outputs (renders the FractiSkills skill pages) ·  · Zenodo",
+            "description": "Turns selected public website pages into portable SKILL.md documents for agent harnesses — five inspectable stages, provenance, safety-bounded crawling, evidence-gated research outputs (renders the FractiSkills skill pages) ·  · Citation DOI · Zenodo artifact v0.2.0",
             "codeRepository": "https://github.com/docxology/Skillarum",
             "author": {
                 "@type": "Person",

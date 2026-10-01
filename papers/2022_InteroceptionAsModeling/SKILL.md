@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Interoception as modeling, allostasis as control"
-description: "Transcript of discussions of the 2022 paper &ldquo;Interoception as modeling, allostasis as control&rdquo; by Eli Sennesh, Jordan Theriault, Dana Brooks, Jan-Willemvan de Meent, Lisa Feldman Barrett, &amp; Karen S. Quigley&nbsp; https://www.sciencedi..."
+description: "Transcript of discussions of the 2022 paper “Interoception as modeling, allostasis as control” by Eli Sennesh, Jordan Theriault, Dana Brooks, Jan-Willemvan de Meent, Lisa Feldman Barrett, & Karen S. Quigley https://www.sciencedirect.com/science/artic..."
 tags: ["interoceptionasmodeling"]
 domain: "Active Inference"
 citation: "Eli Sennesh, Jordan Theriault, Dave Douglass, Ian Tennant, Dean Tickles, Daniel Friedman (2022). *Interoception as modeling, allostasis as control*. Zenodo."

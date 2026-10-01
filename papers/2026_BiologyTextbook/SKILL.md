@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Introduction to Biology: A Generative Approach"
-description: "<p><em>Introduction to Biology: A Generative Approach</em> is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, evolution, and ecolo..."
+description: "Introduction to Biology: A Generative Approach is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, evolution, and ecology. Organize..."
 tags: ["biology"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *Introduction to Biology: A Generative Approach*. Zenodo."

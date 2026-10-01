@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "BevCyc - posit on primitive drivers of creatures"
-description: "Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down onto muscle % tension follows / posits to experiment ..."
+description: "BehavioralCycle / CYC / “ from epigenetic-sequence / epigenetic-cycle” transcribed onto ROS-like / gymnasium like Nodes-of-action-sequence; but in actual essence; is just an empty node-scaffold To fill with action-context-pairs that is designed so th..."
 tags: ["bevcycpositprimitive"]
 domain: "Genetics & Biomedical"
 citation: "andrew djuwidja, Daniel Friedman (2025). *BevCyc - posit on primitive drivers of creatures*. Zenodo."

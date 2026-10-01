@@ -1,8 +1,8 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories"
-description: "EvoJump examines evolutionary transitions and discontinuities through the Active Inference framework, exploring how systems undergo qualitative jumps in phenotypic and behavioral complexity. The work..."
-tags: ["evolutionary-transitions", "evojump", "active-inference", "major-transitions", "phenotypic-complexity", "free-energy-principle"]
+description: "Biological development unfolds as a stochastic process characterized by continuous variation and discrete transitions, yet traditional analytical methods fail to capture this complexity, and we present EvoJump, a unified computational framework that ..."
+tags: ["evojump", "stochastic-modeling", "ontogenetic-trajectories", "jump-diffusion", "fractional-brownian-motion"]
 domain: "Active Inference"
 citation: "Daniel Friedman (2025). *EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories*. Zenodo."
 doi: "10.5281/zenodo.17229924"
@@ -14,7 +14,7 @@ doi: "10.5281/zenodo.17229924"
 
 ## Context
 
-This work addresses topics in **Active Inference**: evolutionary transitions, EvoJump, Active Inference, major transitions.
+This work addresses topics in **Active Inference**: EvoJump, stochastic modeling, ontogenetic trajectories, jump-diffusion.
 
 ## Methods
 
@@ -55,7 +55,7 @@ Verification points for this work:
 
 ## Prerequisites
 
-- Familiarity with evolutionary transitions, EvoJump, Active Inference
+- Familiarity with EvoJump, stochastic modeling, ontogenetic trajectories
 - Background in Active Inference fundamentals
 - Access to source repository: N/A
 

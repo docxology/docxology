@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Open Access science needs Open Science Sensemaking (OSSm)"
-description: "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensem..."
+description: "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensemaking data is essential. We propose Open Science S..."
 tags: ["ossm", "open-science-sensemaking", "scientific-sensemaking", "annotation-networks", "open-access", "decentralized", "information-overload"]
 domain: "Cognitive Security"
 citation: "Ronen Tamari, Daniel Friedman (2023). *Open Access science needs Open Science Sensemaking (OSSm)*. MetaArXiv."

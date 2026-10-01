@@ -100,5 +100,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "WORK-TYPE MISMATCH: this is a machine-transcribed livestream transcript (many ASR errors, e.g. 'interception' for 'interoception'), not the original paper. The original Biological Psychology paper is by Sennesh, Theriault, Brooks, van de Meent, Barrett & Quigley; the bibliography authors here are livestream participants. metadata.json lists resource_type 'Journal article' and generic filler methods ('Free energy minimization', 'Bayesian modeling and inference') and key_findings that just echo the description; these do not reflect the text.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "Transcript of discussions of the 2022 paper &ldquo;Interoception as modeling, allostasis as control&rdquo; by Eli Sennesh, Jordan Theriault, Dana Brooks, Jan-Willemvan de Meent, Lisa Feldman Barrett, &amp; Karen S. Quigley&nbsp; https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350 Session 050.0, October 17, 2022&nbsp; https://www.youtube.com/watch?v=l7r0ISlr-Hc &nbsp; Session 050.1, October 20, 2022&nbsp; https://www.youtube.com/watch?v=tGd-mgSdbio Session 050.2, November 3, 2022&nbsp; https://www.youtube.com/watch?v=4o-LmkycAC0 &nbsp;",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Retained source-grounded summary"
   }
 }

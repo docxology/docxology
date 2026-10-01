@@ -118,5 +118,25 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Small bounded case-study evaluation (2 sites, 7 runs, deterministic backend only, server-rendered HTML only); no human evaluation yet. Metadata flag: the PDF title page gives DOI 10.5281/zenodo.22663907, while README/metadata.json/AGENTS.md use 10.5281/zenodo.22663906 (metadata.json record_id is 22663907); likely concept vs version DOI, worth confirming.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "artifact_doi": "10.5281/zenodo.22663907",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.22663907",
+  "concept_doi": "10.5281/zenodo.22663906",
+  "doi_role_verification": {
+    "date": "2026-10-01",
+    "source": "https://zenodo.org/api/records/22663907",
+    "response_sha256": "7cf6d2cdb6f710335d94fbb66ea0c0da5f5849eab92778cb12ce0a42ff7efdd5",
+    "note": "The archived local PDF matches the registered version-file MD5 and size. The concept DOI remains the citation identity; the printed version DOI identifies the archived artifact.",
+    "local_pdf_checks": [
+      {
+        "path": "papers/2026_Skillarum/Skillarum_combined.pdf",
+        "size_bytes": 3629479,
+        "md5": "ee6a7ad8a2bd3381896ac99efd213d93",
+        "sha256": "f3b3e1d8176bd0c148dd66f19202f321e0046e5bd89aa9953d9188fd370251fa",
+        "matching_registered_files": [
+          "Skillarum_combined.pdf"
+        ]
+      }
+    ]
   }
 }

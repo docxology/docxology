@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Two lineages that need each other"
-description: "Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior. In dependent-lineage species, queens must mate with males..."
+description: "In ants as in bees, a diploid female is either a reproductive or worker. In honeybees, female larvae fed a high protein substance known as ‘royal jelly’ become reproductives, while those not fed the necessary nutrients become workers (Linksvayer et a..."
 tags: ["dependent-lineage", "mating-systems", "pogonomyrmex", "harvester-ants", "genetic-caste-determination", "intragenomic-conflict", "colony-organization", "social-evolution"]
 domain: "Entomology"
 citation: "D. M. Gordon, D. A. Friedman (2017). *Two lineages that need each other*. Molecular Ecology."

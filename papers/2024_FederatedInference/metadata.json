@@ -38,7 +38,7 @@
     }
   ],
   "description": "This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to multi-agent settings, agents maintain local generati...",
-  "abstract": "This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to multi-agent settings, agents maintain local generative models while sharing beliefs through message passing to achieve collective inference. The framework addresses how agents can coordinate without sharing raw observations, preserving privacy while enabling collective cognition. This speaks to multi-scale inference architectures and distributed deci",
+  "abstract": "This paper concerns the distributed intelligence or federated inference that emerges under belief-sharing among agents who share a common world—and world model. Imagine, for example, several animals keeping a lookout for predators. Their collective surveillance rests upon being able to communicate their beliefs—about what they see—among themselves. But, how is this possible? Here, we show how all the necessary components arise from minimising free energy. We use numerical studies to simulate the generation, acquisition and emergence of language in synthetic agents. Specifically, we consider inference, learning and selection as minimising the variational free energy of posterior (i.e., Bayesian) beliefs about the states, parameters and structure of generative models, respectively. The common theme—that attends these optimisation processes—is the selection of actions that minimise expected free energy, leading to active inference, learning and model selection (a.k.a., structure learning). We first illustrate the role of communication in resolving uncertainty about the latent states of a partially observed world, on which agents have complementary perspectives. We then consider the acquisition of the requisite language—entailed by a likelihood mapping from an agent’s beliefs to their overt expression (e.g., speech)—showing that language can be transmitted across generations by active learning. Finally, we show that language is an emergent property of free energy minimisation, when agents operate within the same econiche. We conclude with a discussion of various perspectives on these phenomena; ranging from cultural niche construction, through federated learning, to the emergence of complexity in ensembles of self-organising systems.",
   "keywords": [
     "federated inference",
     "belief sharing",
@@ -105,5 +105,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "All results are from simulations of synthetic agents. Last finding's evidence includes soft hyphens from the PDF ('bio­ logical'), which the verifier normalizes.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Passage recovered from the document",
+    "evidence_source": "full_text.md"
   }
 }

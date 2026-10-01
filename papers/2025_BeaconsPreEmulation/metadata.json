@@ -37,7 +37,7 @@
   "github_repo": "",
   "source": "zenodo-only",
   "checked_at": "2026-05-30T18:56:09Z",
-  "domain": "Genetics & Biomedical",
+  "domain": "Computational",
   "type": "Paper",
   "methods": [
     {
@@ -87,5 +87,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Short informal design sketch (8 pages of notes); no implementation, data, or evaluation. Findings are proposals, not results. The repo assigns this work to the 'Genetics & Biomedical' domain (AGENTS.md), which does not match the content (agent / social-cortex emulation design).",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of&nbsp; category and response, which might include a sim of their own sensitive to cues such as mood or transferable cues of&nbsp; when the object type is called; then \"emulated\" in the mind a pulse-to-response only version of the associated objects for this purpose ( should update with more social cortex posits soon )",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Retained source-grounded summary"
   }
 }

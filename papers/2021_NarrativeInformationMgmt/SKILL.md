@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Narrative Information Management"
-description: "We propose Narrative Information Management (NIM) as a unifying framework for facilitating collective sensemaking. We address the need for synthesis among knowledge management, information management..."
+description: "There are many areas of research defined by their interest in information dynamics related to facilitating organizational sensemaking, such as knowledge management, information management, and library science, and many more areas of research, discipl..."
 tags: ["narrative-information-management", "nim", "collective-sensemaking", "knowledge-management", "information-systems", "cognitive-load", "interdisciplinary-synthesis"]
 domain: "Cognitive Security"
 citation: "Richard J. Cordes, Shaun Applegate-Swanson, Daniel Ari Friedman, Virginia Bleu Knight, Alexandra Mikhailova (2021). *Narrative Information Management*. Zenodo."

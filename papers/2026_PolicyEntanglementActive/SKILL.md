@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Policy Entanglement in Active Inference"
-description: "<p>Active inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning horizons. Standard discrete active-inference implement..."
+description: "Active inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning horizons. Standard discrete active-inference implementati..."
 tags: ["active-inference", "free-energy-principle", "policy-inference", "mean-field", "total-correlation", "information-geometry", "schmidt-rank", "tensor-networks", "sophisticated-inference", "lean-theorem-proving"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *Policy Entanglement in Active Inference*. Zenodo."

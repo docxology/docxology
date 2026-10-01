@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior"
-description: "The behavioral repertoire and ecology of ant colonies emerge from the interactions among individuals, each with distinct genetic, epigenetic, and physiological states. Genetic approaches are beginning..."
+description: "Many exciting studies have begun to elucidate the genetics of the morphological and physiological diversity of ants, but as yet few studies have investigated the genetics of ant behavior directly. Ant genomes are marked by extreme rates of gene turno..."
 tags: ["ants", "behavioral-genetics", "genomics", "colony-organization", "caste-determination", "division-of-labor", "foraging-gene", "social-insects", "pheromone-communication"]
 domain: "Entomology"
 citation: "D.A. Friedman, D.M. Gordon (2016). *Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior*. Annual Review of Neuroscience."

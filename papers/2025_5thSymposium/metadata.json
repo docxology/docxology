@@ -226,5 +226,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Conference abstract book with many independent contributions; findings listed are a small sample of individual presenters' claims, not results of the book as a whole. Many pages are image-heavy (265 figures).",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "This is the abstract for the Abstract Book for the 5th Applied Active Inference Symposium (Nov 12-14, 2025). The Active Inference Institute (AII) is an open-science institute dedicated to improving the accessibility, rigor, and applicability of the Active Inference framework. Included are the abstracts of the registered Presenters, who presented in a Live Session or submitted Pre-recorded Talks. All information: http://symposium.activeinference.institute/ Direct link to program: https://coda.io/d/_d08cdDbWwRy/Symposium-Program_surazvwP",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
   }
 }

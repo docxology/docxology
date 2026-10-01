@@ -14,7 +14,7 @@
     }
   ],
   "description": "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) tec...",
-  "abstract": "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) technologies, particularly Hi-C, have revolutionized our understanding of three-dimensional genome organization. Here we review the intersection of radiation biology with chromatin conformation studies, examining how radiation impacts nuclear organization at multiple scales from nucleosomes to chromoso",
+  "abstract": "Purpose The rejoining of fragmented nuclear DNA caused by ionizing radiation may lead to lethal chromosome rearrangements, such as rings or dicentrics. The clinically useful linear quadratic relationship between dose and cell survival has been interpreted as the generation of lethal lesions secondary to damage occurring in two separate chromosomes simultaneously (a component), or as potentially repairable separate events (b component). Here, the generation of such lesions is discussed, synthesizing existing knowledge with new insights gleaned from spatial proximity data made possible by high-throughput sequencing of chromosome conformation capture experiments. Over a range of several Mbp, the linear DNA strand is organized as a fractal globule generating multiple sites of contact that may facilitate deletions or inversions if the points of contact are damaged. On a larger scale, transcriptionally active euchromatin occupies a physically identifiable space separate from inactive areas and is preferentially susceptible to free radical attack after irradiation. Specific transcriptional programs link genomic locations within that space, potentially enhancing their interaction if subject to simultaneous fragmentation by a single radiation event. Conclusions High throughput spatial analysis of the factors that control chromosome proximity has the potential to better describe the formation of the lethal chromosome aberrations that kill irradiated cells.",
   "keywords": [
     "Hi-C",
     "chromosome conformation",
@@ -71,5 +71,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Labelled REVIEW by the journal; no new experiments. Methods describe the bodies of evidence synthesized. Radiosensitization idea is explicitly conditional.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Passage recovered from the document",
+    "evidence_source": "full_text.md"
   }
 }

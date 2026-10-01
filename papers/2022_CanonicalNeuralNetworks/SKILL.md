@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Canonical neural networks perform active inference"
-description: "Transcript of a&nbsp;three-session series of discussions of the paper &quot;Canonical neural networks perform active inference&quot; by Takuya Isomura, Hideaki Shimazaki &amp; Karl J. Friston.&nbsp; https://www.nature.com/articles/s42003-021-02994-2 ..."
+description: "Transcript of a three-session series of discussions of the paper \"Canonical neural networks perform active inference\" by Takuya Isomura, Hideaki Shimazaki & Karl J. Friston. https://www.nature.com/articles/s42003-021-02994-2 LS #051.0: Background and..."
 tags: ["canonicalneuralnetworks"]
 domain: "Active Inference"
 citation: "Takuya Isomura, Daniel Friedman (2022). *Canonical neural networks perform active inference*. Zenodo."

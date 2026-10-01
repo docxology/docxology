@@ -1,24 +1,17 @@
-# AGENTS.md — `docxology/code/orchestrators`
+# AGENTS.md — `code/orchestrators/`
 
-Added by the 2026-08-29 ongoing-docs fleet pass.
+Runnable generators, source-intake tools, and validators for the public
+`docxology/docxology` repository. Follow the root and `code/AGENTS.md` rules.
 
-## What this is
+- Inspect the script's declared source inputs and write scope before running it.
+  Use `GENERATED.md` for the source-to-output rebuild commands and the ordered
+  `regenerate_all.py` pipeline when several generated layers change.
+- Edit authoritative sources; rebuild owned outputs with their generators.
+  Keep network intake and reviewed source corrections distinct from rendering.
+- Preserve concurrent edits and keep private records, credentials, and
+  conversation-derived material out of public sources and reports.
+- Commit authorized changes on a work branch; never commit on local `main`.
+  Follow `docs/operations/settle.md` for publication and binder ordering.
 
-Pipeline orchestrator scripts for the site.
-
-## Layout
-
-- orchestration scripts.
-
-## Invariants & gotchas
-
-- Local-only under `projects/ongoing/` — never commit.
-- `docxology` is a live work tree with THREE git remotes (`origin`/`public` = the
-  public mirror, `docxology-private` upstream; local main ahead 114): read, don't
-  write, never run git operations here.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls docxology/code/orchestrators`
-- Parent: `docxology/AGENTS.md`; lane policy: `../../AGENTS.md` (ongoing root).
+Run focused checks for changed scripts, then `uv run python3 -m pytest code/tests -q`
+and `uv run python3 code/orchestrators/validate_repo.py` for substantive changes.

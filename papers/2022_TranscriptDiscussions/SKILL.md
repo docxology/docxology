@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\""
-description: "Discussion with an author of the 2021 paper &ldquo;Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior&rdquo; by Remi Tison &amp; Pierre Poirier.&nbsp; https://www.tandfonline.com/doi/abs/10.1080/1040..."
+description: "Discussion with an author of the 2021 paper “Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior” by Remi Tison & Pierre Poirier. https://www.tandfonline.com/doi/abs/10.1080/10407413.2021.1965480 Sess..."
 tags: ["transcriptdiscussions"]
 domain: "Active Inference"
 citation: "Rémi Tison, Dean Tickles, Bleu Knight, Daniel Friedman (2022). *Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\"*. Zenodo."

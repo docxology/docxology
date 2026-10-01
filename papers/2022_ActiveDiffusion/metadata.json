@@ -82,5 +82,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Project call/catechism for the 2023 'Towards Active Diffusion' initiative; all methods are planned avenues of approach, not completed work, and findings are the document's stated mission and proposed analogies. Milestones were left 'To be determined'.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "This document is a call for participation in the initiative \"Towards Active Diffusion: A Tale of Multiple (den)Cities\" (2023-AD). The work will characterize mathematical formalisms and computational applications of Active Inference and Diffusion Models, and explore relevant applications.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
   }
 }

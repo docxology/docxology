@@ -12,8 +12,8 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 
 
-import generate_citation_cff as cff  # noqa: E402
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+import generate_citation_cff as cff  # noqa: E402
 
 
 def _metadata() -> dict[str, object]:
@@ -104,3 +104,28 @@ def test_artifact_doi_without_canonical_doi_fails_closed(tmp_path: Path):
         assert "requires a canonical doi citation identity" in str(exc)
     else:  # pragma: no cover - assertion branch
         raise AssertionError("an artifact DOI must not become the only CFF identity")
+
+
+def test_removed_artifact_doi_is_detected_and_removed_from_cff(tmp_path: Path):
+    paper = tmp_path / "2026_Example"
+    metadata = _metadata()
+    metadata["github_release_url"] = "https://github.com/example/example/releases/tag/v1.0.0"
+    stale = cff.generate_cff(metadata, paper)
+    metadata.pop("artifact_doi")
+    assert cff.cff_doi_role_errors(stale, metadata, paper)
+    corrected = cff.reconcile_cff_doi_roles(stale, metadata, paper)
+    assert "zenodo.101" not in corrected
+    assert "zenodo.100" in corrected
+    assert metadata["github_release_url"] in corrected
+    assert cff.cff_doi_role_errors(corrected, metadata, paper) == []
+    assert cff.reconcile_cff_doi_roles(corrected, metadata, paper) == corrected
+
+
+def test_cff_author_identity_accepts_orcid_before_names():
+    text = (
+        'title: "Example work"\nauthors:\n'
+        '  - orcid: "https://orcid.org/0000-0001-6232-9096"\n'
+        '    family-names: "Friedman"\n    given-names: "Daniel Ari"\n'
+    )
+    citation = {"title": "Example work", "authors": ["Friedman, Daniel Ari"]}
+    assert cff.reconcile_cff_bibliography(text, citation) == text

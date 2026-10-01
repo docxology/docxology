@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value"
-description: "A manuscript overlaying British and American bimetallism with William Blake's mythopoetic architecture, reading economic history through the lens of active inference and prophetic economics."
+description: "This manuscript overlays the history of British and American bimetallism with the mythopoetic architecture of William Blake’s prophetic corpus, reading the disintegration of the gold–silver standard as a material enactment of the catastrophic cosmolo..."
 tags: ["william-blake", "bimetallism", "active-inference", "newton", "gresham's-law", "hamilton", "william-jennings-bryan", "value", "economic-history", "prophetic-economics"]
 domain: "Art & Synergetics"
 citation: "Daniel Ari Friedman (2026). *The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value*. Zenodo."

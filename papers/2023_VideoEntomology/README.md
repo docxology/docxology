@@ -14,7 +14,7 @@
 
 ## Keywords
 
-`video entomology` · `behavioral tracking` · `automated phenotyping` · `insect behavior` · `experimental methods` · `high-throughput analysis`
+`experimental entomology` · `protocols` · `leaf-cutting ant rearing` · `pollen identification` · `honey bee histology` · `agrochemical risk`
 
 ## Methods
 

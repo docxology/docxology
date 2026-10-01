@@ -88,5 +88,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Slide deck (April 22, 2023). The speaker states he is not an aging-research expert and the talk is 'whimsical and promptive, rather than exhaustive'; many slide quotes (e.g. the KS/MLS conclusion, Rodrigues & Flatt, Yan et al.) are from cited literature and were not used as findings.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social insects, where queens can live decades while workers live weeks to months. It connects ant aging biology to broader questions about the evolution of senescence and the role of social structure in shaping longevity.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Retained source-grounded summary"
   }
 }

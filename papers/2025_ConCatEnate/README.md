@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧬 Con-cat-enate: emulation of Cat Hippocampus
+# 💻 Con-cat-enate: emulation of Cat Hippocampus
 
 **Andrew Djuwidja, Daniel Friedman** (2025) · *Zenodo*
 

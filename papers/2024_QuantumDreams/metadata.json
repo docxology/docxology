@@ -113,5 +113,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Speculative/poetic essay rather than a research paper; 'findings' are the authors' interpretive arguments, not empirical results.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "A very human consideration about taking perspectives on frameworks, told through an adventure playing out in a moment at a Quantum Baseball Spring Training gym.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
   }
 }

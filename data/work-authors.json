@@ -4501,20 +4501,17 @@
       "doi": "10.5281/zenodo.7803313",
       "title": "GeneralizedNotationNotation (GNN)",
       "registration_agency": "DataCite",
-      "resolved_title": "GeneralizedNotationNotation (GNN)",
-      "title_similarity": 1.0,
+      "resolved_title": "Generalized_Notation_Notation (GNN)",
+      "title_similarity": 0.9688,
       "status": "verified",
       "authors": [
         {
           "family": "Friedman",
           "given": "Daniel Ari",
           "orcid": "0000-0001-6232-9096"
-        },
-        {
-          "family": "The GeneralizedNotationNotation Community Contributors",
-          "given": ""
         }
-      ]
+      ],
+      "checked_at": "2026-10-01"
     },
     "Friedman2026COGANTDeterministicCodebaseGNN169": {
       "num": 169,

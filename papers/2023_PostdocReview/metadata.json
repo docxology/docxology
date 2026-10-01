@@ -86,5 +86,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Slide deck for a livestreamed self-review; findings are the author's self-reported outputs and characterizations of highlighted works, not research results. Several slides are image-only.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Science, and (f) Philosophy & Arts. The presentation covers research contributions, collaborations, publications, and future directions across these domains, demonstrating the interdisciplinary breadth of the postdoctoral research program.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Retained source-grounded summary"
   }
 }

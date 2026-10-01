@@ -1,13 +1,13 @@
 # Current Source Coverage
 
-Generated: `2026-10-01T18:15:40Z`
+Generated: `2026-10-01T21:36:28Z`
 
 This report records legitimate bibliography coverage gaps explicitly. A gap is not evidence that a work is invalid; it identifies what is or is not available in the repository projection.
 
 ## Summary
 
 - no_paper_folder: `17`
-- no_full_text: `22`
+- no_full_text: `20`
 - no_doi: `15`
 - no_canonical_url: `2`
 - non_paper_record: `21`
@@ -38,7 +38,6 @@ This report records legitimate bibliography coverage gaps explicitly. A gap is n
 | Friedman2020GreatPresetRemoteTeams089 | Book | no_doi, non_paper_record | legitimate_gap |
 | Friedman2019PhDBehavioralPhysiologicalTranscriptomic093 | Paper | no_doi | legitimate_gap |
 | Friedman2018MVEEFrameworkEvolutionaryStudies097 | Presentation | non_paper_record | legitimate_gap |
-| Friedman2018RoleDopamineCollectiveRegulation100 | Paper | no_full_text | needs_review |
 | Friedman2026DynamicAttentionalAgentsFocused111 | Paper | no_full_text | needs_review |
 | Friedman2026IntroductionBiologyGenerativeApproach117 | Book | non_paper_record | legitimate_gap |
 | Friedman2025BiofirmDevelopmentFirstPrinciples128 | Presentation | non_paper_record | legitimate_gap |
@@ -53,5 +52,4 @@ This report records legitimate bibliography coverage gaps explicitly. A gap is n
 | Friedman2024CommentsSubmittedByBlockScience162 | Paper | no_paper_folder, no_full_text | needs_review |
 | Friedman2017OsteopathyVariableVariabilityHealth163 | Paper | no_paper_folder, no_full_text, no_doi, no_canonical_url | needs_review |
 | Friedman2016CellsMechanobiologyOsteopathy164 | Paper | no_paper_folder, no_full_text, no_doi, no_canonical_url | needs_review |
-| Friedman2026GeneralizedNotationNotationGNN168 | Paper | no_full_text | needs_review |
 | Friedman2026ForensicAuditMillenniumLeanClay215 | Report | non_paper_record | legitimate_gap |

@@ -225,7 +225,7 @@ def format_markdown(pages, title, pdf_name, images=None):
             text = f"*[Page {page_num} appears to be blank or image-only]*"
         lines.append(f"## Page {page_num}")
         lines.append("")
-        lines.append(text.strip())
+        lines.append("\n".join(line.rstrip() for line in text.strip().splitlines()))
         lines.append("")
 
         # Embed image references for this page

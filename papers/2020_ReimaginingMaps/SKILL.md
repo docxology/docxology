@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Reimagining Maps"
-description: "Reimagining Maps was written after participation in&nbsp;a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus. The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experie..."
+description: "Reimagining Maps was written after participation in a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus. The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experience, ..."
 tags: ["maps", "cartography", "remote-teams", "interdisciplinary-research", "process-mapping", "knowledge-management-systems", "instantaneous-remote-teams", "intelligence-production", "osint"]
 domain: "Cognitive Security"
 citation: "Richard J. Cordes, Daniel Ari Friedman, Mikel Maron (2020). *Reimagining Maps*. Zenodo."

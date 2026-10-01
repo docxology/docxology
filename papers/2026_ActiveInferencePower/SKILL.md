@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings"
-description: "<p class=\"p1\">Statistical power is an investigator-facing operating characteristic of an adaptive-study design. Before simulation, the investigator fixes an agent-side model, evaluator-side process, testing setting, policy, and replication plan. Each..."
+description: "Statistical power is an investigator-facing operating characteristic of an adaptive-study design. Before simulation, the investigator fixes an agent-side model, evaluator-side process, testing setting, policy, and replication plan. Each embedded agen..."
 tags: ["multiple-testing", "false-discovery-rate", "benjamini-hochberg", "statistical-power", "active-inference", "pymdp", "sequential-hypothesis-testing", "reproducible-research"]
 domain: "Active Inference"
 citation: "Daniel Ari Friedman (2026). *Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings*. Zenodo."

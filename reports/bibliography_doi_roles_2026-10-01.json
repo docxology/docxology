@@ -1,0 +1,221 @@
+[
+  {
+    "name": "Skillarum",
+    "retrieved_on": "2026-10-01",
+    "url": "https://zenodo.org/api/records/22663907",
+    "http_status": 200,
+    "response_sha256": "7cf6d2cdb6f710335d94fbb66ea0c0da5f5849eab92778cb12ce0a42ff7efdd5",
+    "record_id": 22663907,
+    "doi": "10.5281/zenodo.22663907",
+    "conceptdoi": "10.5281/zenodo.22663906",
+    "conceptrecid": "22663906",
+    "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+    "creators": [
+      {
+        "name": "Friedman, Daniel Ari",
+        "affiliation": "Active Inference Institute",
+        "orcid": "0000-0001-6232-9096"
+      }
+    ],
+    "version": "0.2.0",
+    "publication_date": "2026-09-08",
+    "version_relations": [
+      {
+        "index": 0,
+        "is_last": true,
+        "parent": {
+          "pid_type": "recid",
+          "pid_value": "22663906"
+        }
+      }
+    ],
+    "links": {
+      "self": "https://zenodo.org/api/records/22663907",
+      "self_html": "https://zenodo.org/records/22663907",
+      "doi": "https://doi.org/10.5281/zenodo.22663907",
+      "parent": "https://zenodo.org/api/records/22663906",
+      "parent_doi": "https://doi.org/10.5281/zenodo.22663906",
+      "parent_html": "https://zenodo.org/records/22663906"
+    },
+    "files": [
+      {
+        "id": "bfd4e40d-cd92-4975-bcf2-e3e34e4ba2b8",
+        "key": "Skillarum_combined.pdf",
+        "size": 3629479,
+        "checksum": "md5:ee6a7ad8a2bd3381896ac99efd213d93",
+        "links": {
+          "self": "https://zenodo.org/api/records/22663907/files/Skillarum_combined.pdf/content"
+        }
+      },
+      {
+        "id": "e962dc0b-bc3f-4f62-8e67-cc7a66d465e5",
+        "key": "CHECKSUMS.sha256",
+        "size": 287,
+        "checksum": "md5:1009038039779a6f575dae270fe1b98c",
+        "links": {
+          "self": "https://zenodo.org/api/records/22663907/files/CHECKSUMS.sha256/content"
+        }
+      },
+      {
+        "id": "e95b9663-0f0b-4f2a-b1fe-b4dddbab9b4f",
+        "key": "skillarum-0.2.0-research-artifacts.zip",
+        "size": 3916565,
+        "checksum": "md5:f8834330fee198b7bc343557ce33b42c",
+        "links": {
+          "self": "https://zenodo.org/api/records/22663907/files/skillarum-0.2.0-research-artifacts.zip/content"
+        }
+      },
+      {
+        "id": "b24241b1-23ad-454d-ae8d-2806a4792149",
+        "key": "skillarum-0.2.0-source.zip",
+        "size": 2728580,
+        "checksum": "md5:6ea7a14706ae3556cb78600469855c60",
+        "links": {
+          "self": "https://zenodo.org/api/records/22663907/files/skillarum-0.2.0-source.zip/content"
+        }
+      }
+    ],
+    "expected_concept_doi": "10.5281/zenodo.22663906",
+    "matches_expected_concept": true,
+    "matches_expected_version": true,
+    "local_pdf_checks": [
+      {
+        "path": "papers/2026_Skillarum/Skillarum_combined.pdf",
+        "size_bytes": 3629479,
+        "md5": "ee6a7ad8a2bd3381896ac99efd213d93",
+        "sha256": "f3b3e1d8176bd0c148dd66f19202f321e0046e5bd89aa9953d9188fd370251fa",
+        "matching_registered_files": [
+          "Skillarum_combined.pdf"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SilverLine",
+    "retrieved_on": "2026-10-01",
+    "url": "https://zenodo.org/api/records/22833486",
+    "http_status": 200,
+    "response_sha256": "16a451115bdf39f535a876a656bf0e2b0da9206c34c4f4c131a769b7c96ee017",
+    "record_id": 22833486,
+    "doi": "10.5281/zenodo.22833486",
+    "conceptdoi": "10.5281/zenodo.22833485",
+    "conceptrecid": "22833485",
+    "title": "The Silver Line: A Memory-and-Succession Instrument",
+    "creators": [
+      {
+        "name": "Friedman, Daniel Ari",
+        "affiliation": "Active Inference Institute",
+        "orcid": "0000-0001-6232-9096"
+      }
+    ],
+    "version": "0.1.0",
+    "publication_date": "2026-09-18",
+    "version_relations": [
+      {
+        "index": 0,
+        "is_last": true,
+        "parent": {
+          "pid_type": "recid",
+          "pid_value": "22833485"
+        }
+      }
+    ],
+    "links": {
+      "self": "https://zenodo.org/api/records/22833486",
+      "self_html": "https://zenodo.org/records/22833486",
+      "doi": "https://doi.org/10.5281/zenodo.22833486",
+      "parent": "https://zenodo.org/api/records/22833485",
+      "parent_doi": "https://doi.org/10.5281/zenodo.22833485",
+      "parent_html": "https://zenodo.org/records/22833485"
+    },
+    "files": [
+      {
+        "id": "ed9204c8-e3d1-46e9-a13d-0ac5da441921",
+        "key": "silver_line_combined.pdf",
+        "size": 83420,
+        "checksum": "md5:3fc50cefc59cc9ebe9ece7ae64c06b9a",
+        "links": {
+          "self": "https://zenodo.org/api/records/22833486/files/silver_line_combined.pdf/content"
+        }
+      }
+    ],
+    "expected_concept_doi": "10.5281/zenodo.22833485",
+    "matches_expected_concept": true,
+    "matches_expected_version": true,
+    "local_pdf_checks": [
+      {
+        "path": "papers/2026_SilverLine/silver_line_combined.pdf",
+        "size_bytes": 83420,
+        "md5": "3fc50cefc59cc9ebe9ece7ae64c06b9a",
+        "sha256": "8abeec4716a67d9bd7e8b73ef6c5535238c5f3a7775831f2bd6da913899086d2",
+        "matching_registered_files": [
+          "silver_line_combined.pdf"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "LineSet",
+    "retrieved_on": "2026-10-01",
+    "url": "https://zenodo.org/api/records/21754244",
+    "http_status": 200,
+    "response_sha256": "8a699b891a0515290e6677213ff317702d52d925bcda503b642d4bf389807f99",
+    "record_id": 21754244,
+    "doi": "10.5281/zenodo.21754244",
+    "conceptdoi": "10.5281/zenodo.21754243",
+    "conceptrecid": "21754243",
+    "title": "The Line Set: Holding Instruments Apart",
+    "creators": [
+      {
+        "name": "Friedman, Daniel Ari",
+        "affiliation": "Active Inference Institute",
+        "orcid": "0000-0001-6232-9096"
+      }
+    ],
+    "version": "0.1.0",
+    "publication_date": "2026-08-02",
+    "version_relations": [
+      {
+        "index": 0,
+        "is_last": false,
+        "parent": {
+          "pid_type": "recid",
+          "pid_value": "21754243"
+        }
+      }
+    ],
+    "links": {
+      "self": "https://zenodo.org/api/records/21754244",
+      "self_html": "https://zenodo.org/records/21754244",
+      "doi": "https://doi.org/10.5281/zenodo.21754244",
+      "parent": "https://zenodo.org/api/records/21754243",
+      "parent_doi": "https://doi.org/10.5281/zenodo.21754243",
+      "parent_html": "https://zenodo.org/records/21754243"
+    },
+    "files": [
+      {
+        "id": "627f423f-05a5-4460-aa56-447bddbc93be",
+        "key": "line_set_combined.pdf",
+        "size": 22672214,
+        "checksum": "md5:2368ccd965706d43be340c5e03d6f3f2",
+        "links": {
+          "self": "https://zenodo.org/api/records/21754244/files/line_set_combined.pdf/content"
+        }
+      }
+    ],
+    "expected_concept_doi": "10.5281/zenodo.21754243",
+    "matches_expected_concept": true,
+    "matches_expected_version": true,
+    "local_pdf_checks": [
+      {
+        "path": "papers/2026_LineSet/line_set_combined.pdf",
+        "size_bytes": 22672214,
+        "md5": "2368ccd965706d43be340c5e03d6f3f2",
+        "sha256": "00fe16032bb4965b226a7770718177c6843ef0d08c413d7b82f4261b929b6838",
+        "matching_registered_files": [
+          "line_set_combined.pdf"
+        ]
+      }
+    ]
+  }
+]

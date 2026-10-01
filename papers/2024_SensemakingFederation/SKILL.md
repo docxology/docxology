@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Sensemaking Federation: Exploring the Frontiers of Digital Innovation"
-description: "Transcript from the event 'Sensemaking Federation: Exploring the Frontiers of Digital Innovation' hosted by the Sensemaking Scenius. The panel discusses decentralized sensemaking infrastructure, knowl..."
+description: "This transcript comes from an event “Sensemaking Federation: Exploring the Frontiers of Digital Innovation” on December 5, 2024: https://www.youtube.com/watch?v=5R3VmqrE2Zg , hosted by the Sensemaking Scenius http://welcome.scenius.space . The panel ..."
 tags: ["sensemaking-federation", "digital-innovation", "knowledge-federation", "collaborative-sensemaking", "decentralized-infrastructure"]
 domain: "Presentations & Media"
 citation: "Sensemaking Scenius (2024). *Sensemaking Federation: Exploring the Frontiers of Digital Innovation*. Presentation."

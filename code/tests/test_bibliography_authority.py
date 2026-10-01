@@ -154,6 +154,15 @@ def test_display_author_name_inverts_family_given():
     assert regenerate_docs.display_author_name("John Clippinger") == "John Clippinger"
 
 
+@pytest.mark.parametrize("abstract", ["Corrected paper abstract.", ""])
+def test_skill_prefers_curated_abstract_including_explicit_none(abstract):
+    metadata = {"abstract": abstract, "description": "Incorrect seed description."}
+    skill = regenerate_docs.generate_skill("2026_Example", metadata)
+    expected = abstract or regenerate_docs.NO_ABSTRACT_NOTE
+    assert f'description: "{expected}"' in skill
+    assert "Incorrect seed description" not in skill
+
+
 def test_cff_reconcile_is_byte_stable_when_identity_matches():
     text = (
         'cff-version: 1.2.0\ntitle: Example Title\nauthors:\n'
@@ -251,13 +260,23 @@ def test_document_verified_authors_quote_their_source():
 
 
 def test_document_verified_rejects_a_missing_quote(tmp_path, monkeypatch):
-    source = tmp_path / "papers" / "x" / "full_text.md"
+    source = tmp_path / "papers" / "2026_Example" / "full_text.md"
     source.parent.mkdir(parents=True)
     source.write_text("EDITED BY Someone Else", encoding="utf-8")
+    bibliography = tmp_path / "BIBLIOGRAPHY.md"
+    bibliography.write_text(
+        "| 999 | 2026 | 💻 | Paper | Example work | Archive | — | "
+        "[docs](../papers/2026_Example/) | — |\n", encoding="utf-8",
+    )
     monkeypatch.setattr(fetch_work_authors, "REPO_ROOT", tmp_path)
-    payload = {"works": {"k": {"status": "document_verified", "doi": None, "authors": [{"family": "A"}],
-                               "source": "papers/x/full_text.md", "evidence": "EDITED BY Daniel"}}}
-    assert fetch_work_authors.document_evidence_errors(payload) == ["k: evidence quote not found in papers/x/full_text.md"]
+    monkeypatch.setattr(fetch_work_authors, "BIBLIOGRAPHY", bibliography)
+    payload = {"works": {"Friedman2026ExampleWork999": {
+        "num": 999, "status": "document_verified", "doi": None, "authors": [{"family": "A"}],
+        "source": "papers/2026_Example/full_text.md", "evidence": "EDITED BY Daniel",
+    }}}
+    assert fetch_work_authors.document_evidence_errors(payload) == [
+        "Friedman2026ExampleWork999: evidence quote not found in papers/2026_Example/full_text.md"
+    ]
 
 
 def test_paper_page_figure_alt_text_names_the_work_not_the_folder():

@@ -113,5 +113,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Extracted text lacks a title page/abstract but content matches the bibliography title. Proposals are conceptual; the only 'empirical results' are a reflexive description of the authors' own team. Several pages are image-only, including Russian-language pages (26, 32). README CONTRADICTION: README Methods list 'Agent-based modeling of collective behavior' and 'Behavioral engineering and incentive design'; the text contains no agent-based modeling or incentive design.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "Comprehensive frameworks for Teams should include various functionalities and structures in order to capture the broad range of affordances available for modern Remote Teams, including, but not limited to, synchronous & asynchronous communications, memes, geospatial maps, hardware/software use, and contact escalation. We suggest that Systems Engineering provides guidelines to define the functions of Ontologies, Narratives, Formal documents, and Tools (ONFT) within the context of the life cycle of any System of Interest. Following this ONFT assessment it is possible to break out to sub-systems levels and mechanistic analysis. In this paper we explore how a new generation of ONFT for Remote Teams could be based on Active Inference, a process theory related to the Free Energy Principle. Effective ONFT based upon Active Inference could lead to the realization of lightweight and powerful epistemic tools to guide everyday decision-making in an embodied, enactive fashion. Such a technology for Remote Teams would lead to fundamental changes in various aspects of Team function, for example the efficiency of a Team’s production of artifacts or self-reported “phenomenology of the working day”.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
   }
 }

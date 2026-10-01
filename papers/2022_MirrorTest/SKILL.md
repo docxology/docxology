@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Predictive Processing Interpretation of the Mirror Test"
-description: "We apply a predictive processing interpretation to mirror test results, offering a novel perspective on mirror self-recognition. We hypothesize that a 'reflection prediction' may explain mirror self-r..."
+description: "The \"mirror test\" has been used as a behavioral measure of mirror self-recognition for a variety of species. In this article we apply a predictive processing interpretation to the results of the mirror test in order to offer a novel perspective with ..."
 tags: ["mirror-test", "predictive-processing", "self-recognition", "reflection-prediction", "active-inference", "self-awareness", "prediction-error"]
 domain: "Art & Synergetics"
 citation: "Sean O'Connor, Daniel Ari Friedman (2022). *Predictive Processing Interpretation of the Mirror Test*. Zenodo."

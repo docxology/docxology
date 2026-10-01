@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Comments on National Digital Twins R&D Strategic Plan"
-description: "This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative models that actively min..."
+description: "Digital Twins are useful enough to be dangerous. US Government Agency interest in funding and facilitating research, development, engineering, and implementation of Digital Twins (alongside factors related to their safe implementation) is therefore b..."
 tags: ["digital-twins", "active-inference", "generative-models", "predictive-processing", "cyber-physical-systems", "simulation"]
 domain: "Cognitive Security"
 citation: "RJ Cordes (2024). *Comments on National Digital Twins R&D Strategic Plan*. Zenodo."

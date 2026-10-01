@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: See paper
-- Identifies findings: See paper
+- Extracts methods: Forager brain RNA sequencing, Field pharmacological manipulation, Colony humidity sensitivity
+- Identifies findings: Forager brain transcriptomes differed between colony sets with different foraging responses to dry conditions: 273 of 20,387 reference transcripts were significantly differentially expressed., Dopamine-treated foragers made on average 20.5% more foraging trips than control-treated nestmates in the nine-colony 2016 field experiment., In 2017, foragers treated with the dopamine synthesis inhibitor 3-iodotyrosine made on average 19.1% fewer foraging trips than control-treated nestmates; the study did not directly quantify the inhibitor-induced brain dopamine change.
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

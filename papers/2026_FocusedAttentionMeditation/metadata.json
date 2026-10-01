@@ -27,19 +27,8 @@
     "Neuronal Packet Hypothesis",
     "contemplative neuroscience"
   ],
-  "methods": [
-    {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
-    },
-    {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
-    }
-  ],
-  "key_findings": [
-    "Three-level hierarchical Active Inference framework for focused attention meditation: thoughtseed agents (Markov blankets) couple to DMN/VAN/DAN/FPN; simulations reproduce 49% lower free energy and DM"
-  ],
+  "methods": [],
+  "key_findings": [],
   "related_papers": [
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
@@ -47,5 +36,16 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1007/978-3-032-16955-6_11",
-  "doi_url": "https://doi.org/10.1007/978-3-032-16955-6_11"
+  "doi_url": "https://doi.org/10.1007/978-3-032-16955-6_11",
+  "summary_provenance": {
+    "source": "none",
+    "date": "2026-10-01",
+    "notes": "No licensed full text is archived; domain-template methods and ungrounded findings have been cleared."
+  },
+  "abstract_provenance": {
+    "source": "abridged publisher synopsis",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-032-16955-6_11",
+    "date": "2026-10-01",
+    "notes": "Public publisher abstract verified; full chapter is subscription content. The synopsis describes simulated agents and future empirical/Active Inference work, not an empirical meditation study."
+  }
 }

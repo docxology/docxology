@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Systems Processes, Active Inference, and Beyond"
-description: "This presentation explores roads from Systems Processes to Active Inference, examining the warp and weave of metatheoretical frameworks. The work discusses how systems science concepts connect to and..."
+description: "Slides for a session at \"Enduring Patterns, Emerging Futures: Celebrating Dr. Len Troncale\", an online event in September 2025 https://troncale.sched.com/ ."
 tags: ["systems-processes", "active-inference", "systems-science", "metatheory", "process-philosophy", "anticipatory-systems"]
 domain: "Presentations & Media"
 citation: "Daniel Friedman (2025). *Systems Processes, Active Inference, and Beyond*. Presentation."

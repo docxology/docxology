@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
-description: "Edited 2021 COGSEC volume from the Narrative Information Management (NIM-21) initiative: Narrative Information Management; Digital Rhetorical Ecosystem Analysis; Knowledge Management Archipelago; and Active Inference in Modeling Conflict. Edited by R..."
+description: "COGSEC's 2021 edited volume collects research outputs of the Narrative Information Management initiative, spanning information management across disciplines, digital rhetorical ecosystem analysis of image memes, knowledge management field synthesis, ..."
 tags: ["narrative-information-ecosystems", "cognitive-security", "sensemaking", "narrative-information-management", "digital-rhetoric", "knowledge-management", "active-inference", "conflict-modeling"]
 domain: "Cognitive Security"
 citation: "Richard J. Cordes, Daniel A. Friedman (2021). *Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier*. COGSEC.org."

@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "On Time"
-description: "On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and..."
+description: "This work explores the interplay between knowledge and wisdom as dynamic processes within the passage of time. Knowledge is framed as learning in time—sequentially accumulating observations—and learning from time, discerning causal patterns and tende..."
 tags: ["temporal-dynamics", "active-inference", "synchronization", "collective-behavior", "temporal-coordination"]
 domain: "Art & Synergetics"
 citation: "Daniel Ari Friedman (2025). *On Time*. Zenodo."

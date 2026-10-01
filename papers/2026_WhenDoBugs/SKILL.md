@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "When do bugs see (infra)red?"
-description: "<p>Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration of comparative entomology, spectroscopy, neural t..."
+description: "Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration of comparative entomology, spectroscopy, neural timi..."
 tags: ["insect-olfaction", "infrared-detection", "vibrational-theory-of-olfaction", "semiochemicals", "sensilla-morphology", "electromagnetic-sensing", "active-inference", "reproducible-research"]
 domain: "Computational"
 citation: "Tucker Chambers, Daniel A. Friedman (2026). *When do bugs see (infra)red?*. Zenodo."

@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Enhancing Population-based Search with Active Inference"
-description: "We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation. Demonstrated with Ant Colony Optimization (ACO) on th..."
+description: "We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation. Demonstrated with Ant Colony Optimization (ACO) on the Travelling Salesman Problem (TSP), experimental ..."
 tags: ["population-search", "active-inference", "ant-colony-optimization", "tsp", "metaheuristics", "anticipatory-adaptation", "computational-optimization"]
 domain: "Active Inference"
 citation: "Nassim Dehouche, Daniel Friedman (2024). *Enhancing Population-based Search with Active Inference*. ArXiv."

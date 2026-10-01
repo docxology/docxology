@@ -71,5 +71,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "One-page proposal/concept note with no implementation, data or evaluation; methods list intentionally empty and findings are the proposal's stated design elements and anticipated benefits, not demonstrated results.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "This report presents an approach for enhancing postdoctoral reporting at the National Science Foundation (NSF) using generative intelligence systems. The proposed system integrates updatable profiles, intelligent processing prompts, and a dynamic reporting system to transform how postdocs report their research progress and collaborations. The system's design focuses on operational efficiency, real-time evaluation, and a consistent reporting framework. Implementation strategies include a user-centric interface, robust cyber/cognitive security measures, and adaptive evolution. The goal is to streamline postdoctoral reporting, reduce administrative burdens, and enable more effective monitoring and support of postdoctoral research activities.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
   }
 }

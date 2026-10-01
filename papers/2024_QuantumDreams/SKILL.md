@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Four-fold Fields of Quantum Dreams"
-description: "Four-fold Fields of Quantum Dreams explores the intersections of quantum mechanics, art, phenomenology, and Active Inference through a structured visual-phenomenological analysis. The work uses Morse..."
+description: "A very human consideration about taking perspectives on frameworks, told through an adventure playing out in a moment at a Quantum Baseball Spring Training gym."
 tags: ["quantum-mechanics", "art", "phenomenology", "active-inference", "visual-analysis", "symbolism", "morse-code"]
 domain: "Art & Synergetics"
 citation: "Daniel Ari Friedman, Dean Tickles (2024). *Four-fold Fields of Quantum Dreams*. Zenodo."

@@ -23,7 +23,7 @@
     }
   ],
   "description": "Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati...",
-  "abstract": "Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulation of task allocation are rare. Here, we investigate the expression of the foraging gene in harvester ant workers from five age- and task-related groups in a natural population, and we experimentally test how exposure to light affects foraging expression in brood workers and foragers. Results from o",
+  "abstract": "Task allocation among social insect workers is an ideal framework for studying the molecular mechanisms underlying behavioural plasticity because workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulation of task allocation are rare. Here, we investigate the expression of the foraging gene in harvester ant workers from five age- and task-related groups in a natural population, and we experimentally test how exposure to light affects foraging expression in brood workers and foragers. Results from our field study show that the regulation of the foraging gene in harvester ants occurs at two time scales: levels of foraging mRNA are associated with ontogenetic changes over weeks in worker age, location and task, and there are significant daily oscillations in foraging expression in foragers. The temporal dissection of foraging expression reveals that gene expression changes in foragers occur across a scale of hours and the level of expression is predicted by activity rhythms: foragers have high levels of foraging mRNA during daylight hours when they are most active outside the nests. In the experimental study, we find complex interactions in foraging expression between task behaviour and light exposure. Oscillations occur in foragers following experimental exposure to 13 L : 11 D (LD) conditions, but not in brood workers under similar conditions. No significant differences were seen in foraging expression over time in either task in 24 h dark (DD) conditions. Interestingly, the expression of foraging in both undisturbed field and experimentally treated foragers is also significantly correlated with the expression of the circadian clock gene, cycle. Our results provide evidence that the regulation of this gene is context-dependent and associated with both ontogenetic and daily behavioural plasticity in field colonies of harvester ants. Our results underscore the importance of assaying temporal patterns in behavioural gene expression and suggest that gene regulation is an integral mechanism associated with behavioural plasticity in harvester ants.",
   "keywords": [
     "foraging gene",
     "Pogonomyrmex barbatus",
@@ -90,5 +90,11 @@
     "work_kind": "empirical",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Passage recovered from the document",
+    "evidence_source": "full_text.md"
   }
 }

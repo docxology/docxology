@@ -98,5 +98,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Conceptual/framework paper; the catechism is proposed, not empirically evaluated with teams. Claimed benefits (e.g. increased efficacy) are stated as potential.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives in order to achieve success. Many of these teams disintegrate or fail to perform due to lack of alignment. Operations orders, such as those in use by the military, have demonstrable impact on organizational efficacy and success. This paper summarizes the history, development, and impact of military operations orders, discusses the history and development of their business counterparts, and presents the “The Innovator’s Catechism”, a catechism-styled operations order for use by early-stage innovation teams. This operations order is built from the “Facilitator’s Catechism”, an operations order for rapidly formed research teams, with acknowledgment for the special information requirements present for emergent and early-stage teams that are market-facing.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
   }
 }

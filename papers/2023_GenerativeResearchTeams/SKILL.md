@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Generative Research Teams: Active Inference Compositions for Research and Meta-Science"
-description: "The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research top..."
+description: "The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research topics. Roles within the GRT are modular and composab..."
 tags: ["generative-research-team", "active-inference", "generative-model", "cognitive-modeling", "llms", "autonomous-agents", "open-science", "decentralized-science", "active-blockference", "meta-prompting"]
 domain: "Active Inference"
 citation: "Daniel Friedman, Jakub Smékal (2023). *Generative Research Teams: Active Inference Compositions for Research and Meta-Science*. Zenodo."

@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Active Inference in Modeling Conflict"
-description: "We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management..."
+description: "In this paper, we integrate conflict studies with Active Inference, a developing framework which provides an integrative and systems-level perspective on cognition and behavior. This formalization, the Active Inference Conflict (AIC) model, situates ..."
 tags: ["active-inference", "conflict-modeling", "aic-model", "ooda-loops", "cognitive-security", "information-warfare", "bolts-framework", "trust-management"]
 domain: "Active Inference"
 citation: "Scott David, Richard J. Cordes, Daniel A. Friedman (2021). *Active Inference in Modeling Conflict*. Zenodo."

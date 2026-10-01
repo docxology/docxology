@@ -14,7 +14,7 @@
 
 ## Keywords
 
-`AuBI` · `augmented intelligence` · `biological intelligence` · `Active Inference` · `cognitive augmentation` · `human-AI interaction`
+`AuBI` · `Adaptive Basic Income` · `Universal Basic Income` · `decentralized infrastructure` · `active inference modules` · `data sovereignty` · `adaptive economic agents`
 
 ## Methods
 

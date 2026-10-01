@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Aligning Active Inference Ontology to SUMO"
-description: "We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities. For a subset of Active Inference terms, we identify published SUMO files likely to cont..."
+description: "We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities. For a subset of Active Inference terms, we identify published SUMO files likely to contain correct mappings, indicate SUMO supersets and ..."
 tags: ["ontology-alignment", "sumo", "active-inference-ontology", "knowledge-representation", "formal-ontology", "semantic-mapping"]
 domain: "AII Ecosystem"
 citation: "David S. Douglass, Adam Pease, Daniel Ari Friedman, Jessica Angeli Balbuena, Rhea Chokhalingam, Ana Magdalena Hurtado, Maria Luiza Iennaco, V. Bleu Knight, Scott Ryan Maybell, Ali Rahmjoo, Paulo Duare Andrade Sayeg, Jakub Smékal, Dean Tickles, Alex Vyatkin (2024). *Aligning Active Inference Ontology to SUMO*. Zenodo."

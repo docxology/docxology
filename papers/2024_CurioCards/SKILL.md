@@ -1,8 +1,8 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Writing on Curio Cards for the \"On NFT\" book"
-description: "Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation. The system facilitates creative and interdisciplinary thinking by providing struct..."
-tags: ["curio-cards", "research-ideation", "creativity-tools", "interdisciplinary-thinking", "prompt-based-exploration"]
+description: "Curio Cards is the first art NFT project on Ethereum, launched as a permanent online art show gallery on May 9, 2017. Curio Cards used Ethereum to establish a new model for the creation and ownership of digital artwork. The Curio Cards approach was t..."
+tags: ["curio-cards", "ethereum", "nft-art", "art-gallery", "art-history"]
 domain: "Art & Synergetics"
 citation: "D. A. Friedman, O. C. Ripley (2024). *Writing on Curio Cards for the \"On NFT\" book*. Taschen."
 ---
@@ -13,7 +13,7 @@ citation: "D. A. Friedman, O. C. Ripley (2024). *Writing on Curio Cards for the 
 
 ## Context
 
-This work addresses topics in **Art & Synergetics**: Curio Cards, research ideation, creativity tools, interdisciplinary thinking.
+This work addresses topics in **Art & Synergetics**: Curio Cards, Ethereum, NFT art, art gallery.
 
 ## Methods
 
@@ -49,7 +49,7 @@ Verification points for this work:
 
 ## Prerequisites
 
-- Familiarity with Curio Cards, research ideation, creativity tools
+- Familiarity with Curio Cards, Ethereum, NFT art
 - Background in Art & Synergetics fundamentals
 - Access to source repository: N/A
 

@@ -85,5 +85,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Self-describing software/architecture paper; the manuscript was produced by the pipeline it describes. Peer-tool count is inconsistent in the text (abstract says nine, contributions list names ten). Timings are described as representative.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
+  },
+  "abstract": "The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools. template/ applies Infrastructure as Code to the research lifecycle, making the manuscript, test suite, and provenance chain version-controlled, deterministically buildable, and independently verifiable.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Retained source-grounded summary"
   }
 }

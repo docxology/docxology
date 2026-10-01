@@ -14,7 +14,7 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-10-01T18:15:42Z
+Generated: 2026-10-01T22:08:35Z
 
 Current public metrics: 219 curated works; 158 catalogued software repositories (119 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 224 docxology + 43 AII public repositories (170 primary, 97 forks).
 
@@ -114,7 +114,7 @@ WORKS AND PUBLICATIONS (211)
 [060] 2023 | Presentation | Postdoc review (2020–2023) | Presentation | 10.5281/zenodo.8377987
 [061] 2023 | Paper | The Active Inference Institute and Active Inference Ecosystem (v1) | Zenodo | 10.5281/zenodo.8266280
 [062] 2023 | Paper | The P3IF: Properties, Processes, and Perspectives Inter-Framework | Zenodo | 10.5281/zenodo.10034511
-[063] 2023 | Paper | To comment or not to comment | Physics of Life Reviews | 10.1016/j.plrev.2023.06.002
+[063] 2023 | Paper | To comment or not to comment, that is the question! | Physics of Life Reviews | 10.1016/j.plrev.2023.06.002
 [065] 2023 | Paper | William Blake & Buckminster Fuller: Lives in Juxtaposition | Zenodo | 10.5281/zenodo.7514367
 [066] 2022 | Paper | An Active Inference Ontology for Decentralized Science | Zenodo | 10.5281/zenodo.6320574
 [067] 2022 | Paper | Catechism for Towards Active Diffusion | Zenodo | 10.5281/zenodo.7443847
@@ -364,7 +364,7 @@ docxology/template_storybook | TeX | https://github.com/docxology/template_story
 docxology/template_template | TeX | https://github.com/docxology/template_template | Template meta-research exemplar: self-documenting reproducible research repo · Zenodo | paper: papers/2026_TemplateApproachReproducible/ | zenodo: https://doi.org/10.5281/zenodo.20419007
 docxology/template_bioinformatics_project | Python | https://github.com/docxology/template_bioinformatics_project | template_bioinformatics_project — Active Inference / research exemplar repository
 docxology/bond | Markdown/Python | https://github.com/docxology/bond | Top-level wrapper manuscript and reproducible 33-package special-agent operations compendium, with generated chapters, unified bibliography, deterministic regeneration, and tested release artifacts · · Zenodo | paper: papers/2026_PROJECTBONDSpecial/ | zenodo: https://doi.org/10.5281/zenodo.21843592
-docxology/line_set | Python | https://github.com/docxology/line_set | A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice · · Zenodo | paper: papers/2026_LineSet/ | zenodo: https://doi.org/10.5281/zenodo.21754243
+docxology/line_set | Python | https://github.com/docxology/line_set | A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice · · Citation DOI · Zenodo artifact v0.1.0 | paper: papers/2026_LineSet/ | zenodo: https://doi.org/10.5281/zenodo.21754243
 docxology/black_line | Python | https://github.com/docxology/black_line | A positive operating discipline for concise, inspectable, revisable work · · Zenodo | paper: papers/2026_BlackLine/ | zenodo: https://doi.org/10.5281/zenodo.21754235
 docxology/white_line | Python | https://github.com/docxology/white_line | A typed ledger for the edge of a claim: absence, restraint, and the unknowable · · Zenodo | paper: papers/2026_WhiteLine/ | zenodo: https://doi.org/10.5281/zenodo.21754241
 docxology/golden_line | Python | https://github.com/docxology/golden_line | An aspirational thread and long-horizon direction for personal work · · Zenodo | paper: papers/2026_GoldenLine/ | zenodo: https://doi.org/10.5281/zenodo.21754237
@@ -372,7 +372,7 @@ docxology/red_line | Python | https://github.com/docxology/red_line | A personal
 docxology/witness_register | Python | https://github.com/docxology/witness_register | Co-registration without aggregation — the Witness Register holding instrument · · Zenodo | paper: papers/2026_WitnessRegister/ | zenodo: https://doi.org/10.5281/zenodo.21754245
 docxology/blue_line | Python | https://github.com/docxology/blue_line | A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work · · Zenodo | paper: papers/2026_BlueLine/ | zenodo: https://doi.org/10.5281/zenodo.22833489
 docxology/green_line | Python | https://github.com/docxology/green_line | A capacity-under-development instrument: the green line of the docxology line set · · Zenodo | paper: papers/2026_GreenLine/ | zenodo: https://doi.org/10.5281/zenodo.22833491
-docxology/silver_line | Python | https://github.com/docxology/silver_line | A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse · · Zenodo | paper: papers/2026_SilverLine/ | zenodo: https://doi.org/10.5281/zenodo.22833485
+docxology/silver_line | Python | https://github.com/docxology/silver_line | A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse · · Citation DOI · Zenodo artifact v0.1.0 | paper: papers/2026_SilverLine/ | zenodo: https://doi.org/10.5281/zenodo.22833485
 docxology/Digi-PPPiP | TeX | https://github.com/docxology/Digi-PPPiP | DigiPPPiP — Digital Partner Pen Play in Parallel: a composable, fully-tested computational companion for remote, semisynchronous, and asynchronous dyadic drawing · · Zenodo | paper: papers/2026_DigiPPPiP/ | zenodo: https://doi.org/10.5281/zenodo.21815704
 docxology/BeeStack | Python | https://github.com/docxology/BeeStack | Evidence-typed scaffold for whole-colony honeybee simulation · · Zenodo | paper: papers/2026_BeeStack/ | zenodo: https://doi.org/10.5281/zenodo.20420556
 docxology/template_advanced_literature_review | Python | https://github.com/docxology/template_advanced_literature_review | Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, and deterministic synthesis
@@ -386,7 +386,7 @@ docxology/FractiSkills | Python | https://github.com/docxology/FractiSkills | On
 docxology/multi-time | Python | https://github.com/docxology/multi-time | Multi-frequency time-series analysis toolkit built on sktime — validates irregular series, tests stationarity and Granger causality, and evaluates forecasting models
 docxology/cognitive_integrity | Python | https://github.com/docxology/cognitive_integrity | Cognitive Integrity Framework (CIF) — formal security architecture for multiagent systems · | paper: papers/2026_CognitiveIntegrity/
 docxology/dicklesworthstone_meta_operator | HTML | https://github.com/docxology/dicklesworthstone_meta_operator | Meta-operator over the Dicklesworthstone GitHub corpus: clone, verify upstream sync, orchestrate, interpret, and dashboard the ~207-repo corpus
-docxology/Skillarum | Python | https://github.com/docxology/Skillarum | Turns selected public website pages into portable SKILL.md documents for agent harnesses — five inspectable stages, provenance, safety-bounded crawling, evidence-gated research outputs (renders the FractiSkills skill pages) · · Zenodo | paper: papers/2026_Skillarum/ | zenodo: https://doi.org/10.5281/zenodo.22663906
+docxology/Skillarum | Python | https://github.com/docxology/Skillarum | Turns selected public website pages into portable SKILL.md documents for agent harnesses — five inspectable stages, provenance, safety-bounded crawling, evidence-gated research outputs (renders the FractiSkills skill pages) · · Citation DOI · Zenodo artifact v0.2.0 | paper: papers/2026_Skillarum/ | zenodo: https://doi.org/10.5281/zenodo.22663906
 docxology/nockchain-migration | Python | https://github.com/docxology/nockchain-migration | Operator-gated wizard and tooling for migrating Nockchain wallets from legacy v0 notes to v1 P2PKH addresses (one-off functional tool, no paper)
 docxology/daf-jev | Python | https://github.com/docxology/daf-jev | Modular, composable Python client and decision toolkit for the TypeSafe Jev (System One) API — typed question primitives (noul/choice/score), concurrent batch evaluation, composition patterns, calibration statistics, CLI, and MCP server · Zenodo | paper: papers/2026_JevPractice/ | zenodo: https://doi.org/10.5281/zenodo.22816187
 ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output

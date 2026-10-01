@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Of Ants & Aging"
-description: "A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social i..."
+description: "A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social insects, where queens can live decades while worker..."
 tags: ["ants", "aging", "senescence", "lifespan", "caste", "queen-longevity", "social-insects", "evolutionary-biology"]
 domain: "Presentations & Media"
 citation: "Daniel Ari Friedman (2023). *Of Ants & Aging*. Presentation."

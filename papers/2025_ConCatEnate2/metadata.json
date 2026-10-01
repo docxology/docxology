@@ -85,5 +85,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Informal, largely diagrammatic pilot slide-deck/notes describing a planned 'cat' agent architecture; some pages are truncated in extraction (pages 3, 17). No experiments or results. The existing AGENTS.md findings ('validates cat hippocampus emulation using generative AI', 'demonstrates feasibility of in-silico emulation of mammalian neural circuits') are not supported by the text.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "Short overview of the concatenate amateur cat Combined with Beacons Bevcyc and demo 0.01 plan",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Retained source-grounded summary"
   }
 }

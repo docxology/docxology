@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees"
-description: "A key question in evolutionary biology concerns how novel traits arise at the molecular level. Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly..."
+description: "Whether coding or regulatory sequence change is more important to the evolution of phenotypic novelty is one of biology’s major unresolved questions. The field of evo–devo has shown that in early development changes to regulatory regions are the domi..."
 tags: ["honey-bees", "apis-mellifera", "rna-seq", "taxonomically-restricted-genes", "novel-traits", "gene-expression", "evolutionary-biology", "royal-jelly", "beeswax", "venom"]
 domain: "Genetics & Biomedical"
 citation: "William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson (2015). *Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees*. Molecular Biology & Evolution."

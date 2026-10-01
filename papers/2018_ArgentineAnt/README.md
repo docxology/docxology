@@ -14,7 +14,7 @@
 
 ## Keywords
 
-`Argentine ant` · `Linepithema humile` · `invasive species` · `supercolony` · `nestmate recognition` · `collective behavior` · `chemical ecology` · `cuticular hydrocarbons`
+`Argentine ant` · `Linepithema humile` · `invasive species` · `winter foraging` · `locomotion` · `temperature` · `humidity` · `collective behavior`
 
 ## Methods
 

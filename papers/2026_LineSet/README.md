@@ -37,6 +37,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 ## Artifacts
 
 - DOI: [10.5281/zenodo.21754243](https://doi.org/10.5281/zenodo.21754243)
+- Artifact DOI: [10.5281/zenodo.21754244](https://doi.org/10.5281/zenodo.21754244)
 - Zenodo record: [https://zenodo.org/records/21754243](https://zenodo.org/records/21754243)
 - PDF: [line_set_combined.pdf](line_set_combined.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/21754243)

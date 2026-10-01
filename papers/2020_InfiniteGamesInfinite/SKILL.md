@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Infinite Games for Infinite Teams"
-description: "Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: &ldquo;Inventing a Remote Culture to Deal with Pandemics&rdquo;, and was done so with the intent of discussing the questions outlined below...."
+description: "Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: “Inventing a Remote Culture to Deal with Pandemics”, and was done so with the intent of discussing the questions outlined below. How are glo..."
 tags: ["infinitegamesinfinite"]
 domain: "Cognitive Security"
 citation: "Daniel Friedman, RJ Cordes (2020). *Infinite Games for Infinite Teams*. Zenodo."

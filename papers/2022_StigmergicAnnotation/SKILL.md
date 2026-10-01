@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking"
-description: "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control thr..."
+description: "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control through a decentralized ecosystem for creating, stori..."
 tags: ["stigmergic-annotation", "open-source-attention", "collective-sensemaking", "epistemic-pollution", "decentralized-platforms", "social-annotation", "digital-attention"]
 domain: "Cognitive Security"
 citation: "Ronen Tamari, Daniel Friedman, William Fischer, Lauren Hebert, Dafna Shahaf (2022). *From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking*. Hypertext '22."

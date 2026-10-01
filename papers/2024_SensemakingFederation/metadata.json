@@ -100,5 +100,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Panel transcript; findings are attributed views of individual speakers, not results. Bibliography author is 'Sensemaking Scenius'; the transcript lists Park, Parent, Bhatia and Friedman as authors.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "This transcript comes from an event “Sensemaking Federation: Exploring the Frontiers of Digital Innovation” on December 5, 2024: https://www.youtube.com/watch?v=5R3VmqrE2Zg , hosted by the Sensemaking Scenius http://welcome.scenius.space . The panel was facilitated by Kristen Pavle and featured Jack Park, Marc-Antoine Parent, Aaditya (Sonny) Bhatia, and Daniel Friedman, as well as other participants at the meeting. This version of the transcript has been lightly edited for readability. For verbatim quotations, please refer to the original recording.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
   }
 }

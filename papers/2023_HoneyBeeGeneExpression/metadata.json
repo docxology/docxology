@@ -43,7 +43,14 @@
     }
   ],
   "description": "The honey bee ( Apis mellifera ) is a pivotal species in both ecological and research contexts, serving as a model organism for studying complex social behavior and physiological processes. A critical aspect of understanding these complexities is the analysis of tissue-specific gene expression (TSGE), a challenging task due to the need to handle large bioinformatics data and manual tissue processing. In this study, we present a meta-analytic approach to investigate TSGE in A. mellifera , harnessing various open-source bioinformatics packages. From an initial pool of 4349 samples and 12,398 loci, our rigorous analysis resulted in a snapshot of 731 samples and 177 loci, representing high-quality estimates of TSGE patterns. This snapshot is publicly available, serving as a valuable resource for researchers interested in A. mellifera and beyond. Ongoing work will refine this analytical tool and expand its application to other species, thereby contributing to the broader understanding of gene expression patterns.",
-  "keywords": [],
+  "keywords": [
+    "honey bees",
+    "Apis mellifera",
+    "tissue-specific gene expression",
+    "meta-analysis",
+    "RNA-Seq",
+    "bioinformatics"
+  ],
   "files": [
     {
       "name": "MetaInformAnt_Transcriptome_12-18-2023.zip",
@@ -131,5 +138,16 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Full text matches the title. WARNING: the README abstract describes a different paper (rapidly evolving / taxonomically restricted genes in novel honey bee tissues, i.e. Jasper et al. 2015, cited here as ref. 20); the full text contains no TRG or molecular-evolution analysis. The README abstract contradicts the text and should be replaced.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
+  },
+  "abstract": "The honey bee ( Apis mellifera ) is a pivotal species in both ecological and research contexts, serving as a model organism for studying complex social behavior and physiological processes. A critical aspect of understanding these complexities is the analysis of tissue-specific gene expression (TSGE), a challenging task due to the need to handle large bioinformatics data and manual tissue processing. In this study, we present a meta-analytic approach to investigate TSGE in A. mellifera , harnessing various open-source bioinformatics packages. From an initial pool of 4349 samples and 12,398 loci, our rigorous analysis resulted in a snapshot of 731 samples and 177 loci, representing high-quality estimates of TSGE patterns. This snapshot is publicly available, serving as a valuable resource for researchers interested in A. mellifera and beyond. Ongoing work will refine this analytical tool and expand its application to other species, thereby contributing to the broader understanding of gene expression patterns.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
+  },
+  "keywords_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "basis": "Terms selected from the document subject and methods; replaces inaccurate hand-seeded keywords"
   }
 }

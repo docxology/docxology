@@ -1,24 +1,17 @@
-# AGENTS.md — `docxology/code/src`
+# AGENTS.md — `code/src/`
 
-Added by the 2026-08-29 ongoing-docs fleet pass.
+Shared parsers, renderers, and validation contracts for the public repository.
+Follow the root and `code/AGENTS.md` rules, including the `docxology_tools`
+import bootstrap and generated-output ownership boundaries.
 
-## What this is
+- Inspect callers and connected generators before changing shared behavior.
+  Preserve authoritative source identity and reject invalid input explicitly.
+- Keep source changes reviewable with focused failure-case regressions.
+  Obtain fresh independent review for shared infrastructure or security changes.
+- Preserve concurrent edits and exclude private records, credentials, and
+  conversation-derived material from public artifacts.
+- Commit authorized changes on a work branch; never commit on local `main`.
 
-Site application source.
-
-## Layout
-
-- source modules.
-
-## Invariants & gotchas
-
-- Local-only under `projects/ongoing/` — never commit.
-- `docxology` is a live work tree with THREE git remotes (`origin`/`public` = the
-  public mirror, `docxology-private` upstream; local main ahead 114): read, don't
-  write, never run git operations here.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls docxology/code/src`
-- Parent: `docxology/AGENTS.md`; lane policy: `../../AGENTS.md` (ongoing root).
+Run focused tests, then `uv run python3 -m pytest code/tests -q` and
+`uv run python3 code/orchestrators/validate_repo.py` for substantive changes.
+Regenerate affected outputs using `GENERATED.md` and the ordered pipeline.

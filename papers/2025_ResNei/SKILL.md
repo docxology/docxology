@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "ResNei: Solution Design Document"
-description: "ResNei (Research Neighbourhood) supports the lateral growth of ideas through distributed, asynchronous, and non-linear collaboration. Knowledge develops across disciplines and methods through shared..."
+description: "ResNei — Research Neighbourhood – is an AI-augmented environment designed to transform how we discover, analyse, and connect ideas. At its core is the Research Discovery Engine, which constructs a living, responsive knowledge graph through the distil..."
 tags: ["resnei", "research-neighbourhood", "collaborative-research", "distributed-collaboration", "interdisciplinary", "knowledge-sharing"]
 domain: "Computational"
 citation: "Janna Lumiruusu, Daniel Friedman, Shagor Rahman, Vladimir Baulin, Andrew Pashea (2025). *ResNei: Solution Design Document*. Zenodo."

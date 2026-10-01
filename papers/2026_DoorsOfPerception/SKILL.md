@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing"
-description: "The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference. The paper develops a 'Thematic Atl..."
+description: "Looking at the sun, William Blake saw an innumerable company of the heavenly host where Newton's heirs saw only a golden coin. \"If the doors of perception were cleansed,\" Blake wrote, \"every thing would appear to man as it is: infinite.\" This paper a..."
 tags: ["william-blake", "active-inference", "perception", "prediction", "thematic-atlas", "prophetic-vision", "generative-models", "markov-blankets"]
 domain: "Art & Synergetics"
 citation: "Daniel Ari Friedman (2026). *The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing*. Zenodo."

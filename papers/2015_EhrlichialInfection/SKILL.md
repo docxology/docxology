@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?"
-description: "Hypothesis linking Ehrlichia/Anaplasma intracellular parasitic bacteria to leukemia and immune disorders, with clinical evidence for Rifampin treatment"
+description: "We hypothesize that a large group of medical conditions of unknown etiology including leukemia, multiple myeloma, myelodysplastic and autoimmune disorders, may be associated with or caused by an obscure group of intracellular obligate parasitic bacte..."
 tags: ["ehrlichia", "anaplasma", "leukemia", "intracellular-parasites", "apoptosis-suppression", "rifampin", "hematological-malignancy"]
 domain: "Genetics & Biomedical"
 citation: "Charles A. Kallick, Daniel A. Friedman, Mramba B.A. Nyindo (2015). *Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?*. Medical Hypotheses."

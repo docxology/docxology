@@ -96,5 +96,12 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Slide deck; many slides are image-only so the extracted text is sparse. Claims are the presenter's proposals, not tested results.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
+  },
+  "abstract": "Research Question: How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? Goal: Extend Variational Neuroethology (Ramstead et al. 2017) to specify a tractable general framework for all Evolutionary studies, Biological and Otherwise. This would allow us to integrate current data across systems and suggest new measurements/experiments/systems.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Passage recovered from the document",
+    "evidence_source": "full_text.md"
   }
 }

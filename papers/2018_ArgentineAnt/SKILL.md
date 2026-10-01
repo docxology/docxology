@@ -1,8 +1,8 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations"
-description: "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the..."
-tags: ["argentine-ant", "linepithema-humile", "invasive-species", "supercolony", "nestmate-recognition", "collective-behavior", "chemical-ecology", "cuticular-hydrocarbons"]
+description: "The collective behavior of ant colonies, and locomotion of individuals within a colony, both respond to changing conditions. The invasive Argentine ant (Linepithema humile) thrives in Mediterranean climates with hot, dry summers and colder, wet winte..."
+tags: ["argentine-ant", "linepithema-humile", "invasive-species", "winter-foraging", "locomotion", "temperature", "humidity", "collective-behavior"]
 domain: "Entomology"
 citation: "Benjamin P. Burford, Gail Lee, Daniel A. Friedman, Esmé Brachmann, Rebia Khan, Dylan J. MacArthur-Waltz, Aidan D. McCarty, Deborah M. Gordon (2018). *Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations*. PLoS One."
 doi: "10.1371/journal.pone.0202117"
@@ -14,7 +14,7 @@ doi: "10.1371/journal.pone.0202117"
 
 ## Context
 
-This work addresses topics in **Entomology**: Argentine ant, Linepithema humile, invasive species, supercolony.
+This work addresses topics in **Entomology**: Argentine ant, Linepithema humile, invasive species, winter foraging.
 
 ## Methods
 

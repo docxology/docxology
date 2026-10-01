@@ -14,7 +14,7 @@
     }
   ],
   "description": "In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognit...",
-  "abstract": "In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognition, life, and consciousness. Friston recounts how watching woodlice scurry in sunlight and slow in shade led to the insight that biological self-organization can be explained by simple thermodynamic principles. The conversation covers the FEP's relationship to Bayesian inference, predictive process",
+  "abstract": "In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognition, life, and consciousness. Friston recounts how watching woodlice scurry in sunlight and slow in shade led to the insight that biological self-organization can be explained by principles of self-organization. The conversation covers the FEP's relationship to Bayesian inference, predictive process",
   "keywords": [
     "Free Energy Principle",
     "Karl Friston",
@@ -72,5 +72,10 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Interview; all findings are Friston's stated views, not results. AGENTS.md lists methods such as 'Active inference modeling of consciousness' that the interview does not perform (no modeling); the README abstract's woodlice description is consistent with the text.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
+  },
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Retained source-grounded summary"
   }
 }

@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Facilitator's Catechism"
-description: "Historical and futures-oriented analysis of operations orders (OPORD) for organizational sensemaking, leading to a catechism-style OPORD format for process facilitators in military, intelligence, and civilian teams."
+description: "This paper discusses the origins and evolution of Operations Orders from antiquity to modern times and the impact of Operations Orders on organizational sensemaking. Perspectives from Complexity Science, Organizational Psychology, High Reliability Or..."
 tags: ["opord", "operations-orders", "sensemaking", "high-reliability-organizations", "complexity", "active-inference"]
 domain: "Cognitive Security"
 citation: "Richard J. Cordes, Daniel Ari Friedman (2020). *The Facilitator's Catechism*. Zenodo."

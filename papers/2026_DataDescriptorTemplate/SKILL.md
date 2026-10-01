@@ -3,18 +3,18 @@
 name: "Data Descriptor Template: Schema, Provenance, and Release Readiness"
 description: "This exemplar demonstrates a data descriptor workflow in which the schema, file inventory, provenance chain, license boundary, and validation gate are treated as first-class research artifacts rather than afterthoughts. It ships a small, public, synt..."
 tags: ["data-descriptor", "fair-data", "provenance", "schema-validation"]
-domain: "Active Inference"
+domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *Data Descriptor Template: Schema, Provenance, and Release Readiness*. Zenodo."
 doi: "10.5281/zenodo.21298883"
 ---
 
 # Data Descriptor Template: Schema, Provenance, and Release Readiness
 
-**Daniel Ari Friedman** (2026) · Active Inference
+**Daniel Ari Friedman** (2026) · Computational
 
 ## Context
 
-This work addresses topics in **Active Inference**: data descriptor, FAIR data, provenance, schema validation.
+This work addresses topics in **Computational**: data descriptor, FAIR data, provenance, schema validation.
 
 ## Methods
 
@@ -53,7 +53,7 @@ Verification points for this work:
 ## Prerequisites
 
 - Familiarity with data descriptor, FAIR data, provenance
-- Background in Active Inference fundamentals
+- Background in Computational fundamentals
 - Access to source repository: N/A
 
 ## Instructions

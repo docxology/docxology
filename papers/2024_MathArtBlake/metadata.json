@@ -86,5 +86,12 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Slide deck for a livestream; content is largely questions, quotations, links and images, so findings are framed as proposals/questions posed in the slides. README abstract claims 'formal analysis of Blake's visual and poetic works' identifying mathematical structures; the slides do not contain a formal analysis, so that abstract overstates the content.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
+  },
+  "abstract": "This Stream: 0. What might Blake have to do with any of this? 1. A view on Blake’s view on Art 2. A view on Blake’s view on Math 3. A view on Blake’s view on Active Inference",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Passage recovered from the document",
+    "evidence_source": "full_text.md"
   }
 }

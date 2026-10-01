@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Federated inference and belief sharing"
-description: "This paper formulates federated inference and belief sharing as a principled approach to distributed intelligence. By extending Active Inference to multi-agent settings, agents maintain local generati..."
+description: "This paper concerns the distributed intelligence or federated inference that emerges under belief-sharing among agents who share a common world—and world model. Imagine, for example, several animals keeping a lookout for predators. Their collective s..."
 tags: ["federated-inference", "belief-sharing", "active-inference", "distributed-intelligence", "multi-agent-systems", "message-passing", "collective-cognition", "privacy-preserving-inference"]
 domain: "Active Inference"
 citation: "Karl J. Friston, Thomas Parr, Conor Heins, Axel Constant, Daniel Friedman, Takuya Isomura, Chris Fields, Tim Verbelen, Maxwell Ramstead, John Clippinger, Christopher D. Frith (2024). *Federated inference and belief sharing*. Neuroscience & Biobehavioral Reviews."

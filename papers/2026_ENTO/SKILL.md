@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data"
-description: "<p><strong>ENTO</strong> (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts &mdash; time series, genomics slices, spectrograms, provenance proofs &mdash; into a sing..."
+description: "ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts — time series, genomics slices, spectrograms, provenance proofs — into a single verifiable file. Each track i..."
 tags: ["research-data-formats", "authenticated-encryption", "aes-256-gcm", "reproducible-research", "multimodal-containers"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data*. Zenodo."

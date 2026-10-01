@@ -57,7 +57,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 
 Free Energy Principle, generative models, belief sharing, formalization, and educational infrastructure.
 
-- Works: 47
+- Works: 46
 - Selected repositories: 11
 - Collaborator context: Karl Friston, Thomas Parr, Maxwell J. D. Ramstead, Conor Heins, Tim Verbelen
 
@@ -167,7 +167,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 60
+- Works: 63
 - Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 
@@ -204,7 +204,7 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 
 Honey bee evolution, gene expression variation, nuclear structure, population genetics, and biomedical mechanisms.
 
-- Works: 15
+- Works: 13
 - Selected repositories: 5
 - Collaborator context: Deborah Gordon, UC Davis Genetics, Stanford Biology
 
@@ -219,12 +219,12 @@ Honey bee evolution, gene expression variation, nuclear structure, population ge
 
 **Selected works**
 
-- 2025 — [Con-cat-enate: emulation of Cat Hippocampus](https://doi.org/10.5281/zenodo.13626536)
 - 2025 — [BevCyc - posit on primitive drivers of creatures](https://doi.org/10.5281/zenodo.14737075)
-- 2025 — [Beacons - pre emulation of social cortex](https://doi.org/10.5281/zenodo.14737059)
 - 2025 — [Con-cat-enate: pilot overview](https://doi.org/10.5281/zenodo.14737042)
 - 2024 — [Why Paleolithic Rockstars were both enigmatic and sporadic](https://doi.org/10.1016/j.plrev.2024.04.010)
-- 2023 — [To comment or not to comment](https://doi.org/10.1016/j.plrev.2023.06.002)
+- 2023 — [To comment or not to comment, that is the question!](https://doi.org/10.1016/j.plrev.2023.06.002)
+- 2022 — [On free will or the lack thereof (interview with Robert Sapolsky)](https://doi.org/10.5281/zenodo.7394900)
+- 2020 — [The neuroscience of decision making (interview with Timothy Hanks)](https://doi.org/10.34700/8pg4-0h12)
 
 **Selected repositories**
 

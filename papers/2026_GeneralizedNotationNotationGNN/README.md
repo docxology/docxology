@@ -2,7 +2,7 @@
 
 # 🧠 GeneralizedNotationNotation (GNN)
 
-**Daniel Ari Friedman, The GeneralizedNotationNotation Community Contributors** (2026) · *Zenodo*
+**Daniel Ari Friedman** (2026) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7803313-blue)](https://doi.org/10.5281/zenodo.7803313)
 
@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models. It aims to enhance clarity, reproducibility, and interoperability in the field of Active Inference and cognitive modeling. GNN provides a structured way to describe complex models, making them human-readable and machine-parsable. It...
+> Active Inference offers a unifying account of perception, learning, and action under the free energy principle, yet the generative models at its core are still communicated ad hoc: scattered across prose descriptions, bespoke notebooks, and framework-specific code that rarely agree. This fragmentation makes published models hard to reproduce, compare, or port between tools, and it raises the...
 
 ## Keywords
 
@@ -18,22 +18,33 @@
 
 ## Methods
 
-_No paper-specific methods have been summarized yet; see the abstract and the full text._
+- **Parsing and structured export** — Parses plain-text model specifications into an internal representation and structured export formats, retaining declared model vocabulary.
+- **Model-kind type checking and validation** — Checks state spaces, observation modalities, control factors, matrix dimensions, and kind-specific shape contracts before code generation.
+- **Kind-aware model rendering** — Carries structurally determined model kinds into rendering and execution, recording which backends can handle each kind and which report it unsupported.
+- **Semantic fidelity and cross-framework gates** — Provides reproducible commands for testing semantic preservation in round trips and comparing generated model structure across backend implementations.
 
 ## Key Findings
 
-_No paper-specific findings have been summarized yet; see the abstract and the full text._
+- The manuscript presents the Triple Play as text, graphical, and executable views derived from a shared model specification.
+- At the manuscript snapshot, the framework covers 32 exemplar specifications across nine model families and ten registered rendering backends.
+- The manuscript reports profiled execution gaps for continuous and hierarchical models, and a deliberate render-only scope for structural models; it does not claim that every model executes on every backend.
+- The manuscript specifies reproducible validation commands and explicitly avoids asserting a fixed passing-check count.
+- The manuscript describes long-running orchestration contracts that generate, validate, and replay data without mutating live infrastructure.
+
+_Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 
+- GitHub repository: [ActiveInferenceInstitute/Generalized_Notation_Notation](https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation)
 - DOI: [10.5281/zenodo.7803313](https://doi.org/10.5281/zenodo.7803313)
-- Artifact DOI: [10.5281/zenodo.20671741](https://doi.org/10.5281/zenodo.20671741)
-- Zenodo record: [https://zenodo.org/records/7803313](https://zenodo.org/records/7803313)
-- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/7803313)
+- Artifact DOI: [10.5281/zenodo.22985529](https://doi.org/10.5281/zenodo.22985529)
+- Zenodo record: [https://zenodo.org/records/22985529](https://zenodo.org/records/22985529)
+- PDF: [GeneralizedNotationNotation_v3.6.0.pdf](GeneralizedNotationNotation_v3.6.0.pdf)
+- PDF SHA-256: acb7749c561b26562064421ca2f7fbca68c8b0e8a955082e5d5a3e28b50bd784
 
 ## Citation
 
-> Daniel Ari Friedman, The GeneralizedNotationNotation Community Contributors (2026). *GeneralizedNotationNotation (GNN)*. Zenodo. DOI: 10.5281/zenodo.7803313. URL: https://doi.org/10.5281/zenodo.7803313.
+> Daniel Ari Friedman (2026). *GeneralizedNotationNotation (GNN)*. Zenodo. DOI: 10.5281/zenodo.7803313. URL: https://doi.org/10.5281/zenodo.7803313.
 
 ## Related
 

@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Pools, Rules, and Tools: A Template-Integrated Resource Architecture"
-description: "No abstract is recorded for this work yet; see the DOI or bibliography link."
+description: "Research software repositories in monorepo configurations accumulate three categories of shared resources that individual projects must consume without re-implementing discovery logic: data pools (bibliographies, contacts, datasets), governance rules..."
 tags: ["poolsrulestools"]
 domain: "Active Inference"
 citation: "Daniel Ari Friedman (2026). *Pools, Rules, and Tools: A Template-Integrated Resource Architecture*. Zenodo."

@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance"
-description: "Letter on: \"A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance\".&nbsp; v1 released on December 12, 2023.&nbsp;"
+description: "Letter on: \"A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance\". v1 released on December 12, 2023."
 tags: ["active-inference", "ai", "natural", "policy"]
 domain: "Computational"
 citation: "John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, David A. Silbersweig, Francesco Lapenta, Holly Grimm, Jeff Emmett, Joshua Shane, Karl Friston, Martin Nkafu Nkemnkia, Matthew Brown, Matthew Pirkowski, Michael Levin, Michael Zargham, Nguyen Anh Tuan, Krishnashree Achuthan, Thomas Patterson, Scott L. David, Thomas Kehler, Virginia Bleu Knight, Yasuhide Nakayama (2023). *A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance*. Zenodo."

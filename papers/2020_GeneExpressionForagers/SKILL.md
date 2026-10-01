@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Gene expression variation in the brains of harvester ant foragers is associated with collective behavior"
-description: "Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects. Here we characterize transcriptomic profiles of foragers compar..."
+description: "Natural selection on collective behavior acts on variation among colonies in behavior that is associated with reproductive success. In the red harvester ant (Pogonomyrmex barbatus), variation among colonies in the collective regulation of foraging in..."
 tags: ["gene-expression", "foragers", "rna-seq", "division-of-labor", "transcriptomics", "harvester-ants", "behavioral-castes", "pogonomyrmex-barbatus"]
 domain: "Entomology"
 citation: "Daniel Ari Friedman, Ryan Alexander York, Austin Travis Hilliard, Deborah M. Gordon (2020). *Gene expression variation in the brains of harvester ant foragers is associated with collective behavior*. Communications Biology."

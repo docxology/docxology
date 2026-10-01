@@ -1,9 +1,9 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Con-cat-enate: emulation of Cat Hippocampus"
-description: "Updated &nbsp; added a number of pages at the start&nbsp; (from page 2) that describes the entire system and whats missing apologies for not giving this overview of&nbsp; what would happen given those missing parts and the purpose of demo0.01 which s..."
+description: "Updated added a number of pages at the start (from page 2) that describes the entire system and whats missing apologies for not giving this overview of what would happen given those missing parts and the purpose of demo0.01 which substitute those par..."
 tags: ["concatenate"]
-domain: "Genetics & Biomedical"
+domain: "Computational"
 citation: "Andrew Djuwidja, Daniel Friedman (2025). *Con-cat-enate: emulation of Cat Hippocampus*. Zenodo."
 doi: "10.5281/zenodo.13626536"
 artifact_doi: "10.5281/zenodo.14738798"
@@ -11,11 +11,11 @@ artifact_doi: "10.5281/zenodo.14738798"
 
 # Con-cat-enate: emulation of Cat Hippocampus
 
-**Andrew Djuwidja, Daniel Friedman** (2025) · Genetics & Biomedical
+**Andrew Djuwidja, Daniel Friedman** (2025) · Computational
 
 ## Context
 
-This work addresses topics in **Genetics & Biomedical**: ConCatEnate.
+This work addresses topics in **Computational**: ConCatEnate.
 
 ## Methods
 
@@ -57,7 +57,7 @@ Verification points for this work:
 ## Prerequisites
 
 - Familiarity with ConCatEnate
-- Background in Genetics & Biomedical fundamentals
+- Background in Computational fundamentals
 - Access to source repository: N/A
 
 ## Instructions

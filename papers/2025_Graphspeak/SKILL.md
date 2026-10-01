@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Graphspeak: of language and handshake"
-description: "An experiment on decomposing language onto initially established graph-theory representation applied then onto some pre-selected transformations&nbsp; (commonly used context/tool related transmutes) (t1,t2,t3) then upon some layers of decomposition f..."
+description: "An experiment on decomposing language onto initially established graph-theory representation applied then onto some pre-selected transformations (commonly used context/tool related transmutes) (t1,t2,t3) then upon some layers of decomposition finding..."
 tags: ["graphspeak"]
 domain: "Active Inference"
 citation: "andrew djuwidja, Daniel Friedman (2025). *Graphspeak: of language and handshake*. Zenodo."

@@ -85,5 +85,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Short (5-page) conceptual essay; no empirical methods.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "Positioning cognitive science as the systematic study of intra-action and cognitive art as its reflexive twin, this paper traces a bidirectional trajectory toward systemic wholeness. Procedural craft (firstness) and conceptual articulation (secondness) co-evolve into adaptive intelligence (thirdness), as continuously audited by the observing niche that embeds, measures, and reinterprets those intelligences (fourthness). This four-fold schema maps onto concrete information architectures: from insect bodies, to cryptographically verifiable plain texts, on through variational Bayesian simulations approached from the Low Road of Active Inference. Alternating 2→3 analytical moves which compress past data into predictive structure, with 4→3 generative moves which open space for unknown futures – these systems are capable of balancing exploitation with exploration, measurement with meaning, and optimization with open-ended creativity. True cognitive wholeness emerges when explanation and anticipation co-operate in sustained dialogue across scales.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
   }
 }

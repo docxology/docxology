@@ -5,6 +5,34 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-10-01
 
+- **Independent accuracy follow-up and source recovery:** archived the correct
+  CC BY iScience dopamine article (including its methods supplement) and the
+  CC BY-NC-SA manuscript from the checksum-verified GNN v3.6.0 release.
+  Both have source/version/license hashes and evidence-backed summaries;
+  GNN command gates are described as manuscript claims, not newly executed
+  runtime acceptance. Current concept-DOI authors were verified directly;
+  historical community credit remains documented. Removed the unrelated DRE3
+  artifact DOI/version/date from ToComment and restored its full registered
+  title without changing its permanent work URL. Cleared unsupported seed
+  content where licensed full text remains unavailable. Decisions and open
+  source discrepancies are recorded in
+  [the accuracy report](reports/bibliography_accuracy_2026-10-01.md).
+  Skillarum, SilverLine and LineSet's archived PDFs match their registered
+  version-file checksums and sizes; their verified version DOIs are now
+  labeled artifacts under the existing concept citation DOIs.
+- **Citation and public metadata consistency:** work-page citations and their
+  JSON-LD now preserve the recorded author order and collective names.
+  SKILL descriptions prefer the curated abstract, including explicit absence.
+  Audited per-folder abstracts match the displayed source; four false seed
+  descriptions and seven unsupported keyword sets were corrected. ConCatEnate,
+  Beacons, and DataDescriptorTemplate are classified as Computational from
+  their source subject matter. CFF synchronization detects removed artifact
+  identifiers and accepts ORCID-first author entries; document-verified author
+  intake validates the matching work/folder/quote before applying changes.
+  Name inversion now uses only audited ORCID/name aliases. Excerpt clipping
+  preserves valid complete URLs. Updated the generator dependency manifest
+  and obsolete directory instructions for this public repository.
+
 - **Evidence-grounded paper summaries (DOC-016 core):** every paper folder
   that has full text (197 of them) now carries paper-specific Methods (801)
   and Key Findings (904) extracted from
@@ -100,7 +128,7 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   `test_one_seo_pass_reads_each_page_once…` failure; SKILL.md frontmatter
   scalars are JSON-quoted, so titles with quotes stay valid YAML, and the
   SKILL citation names the venue instead of the domain. New
-  `code/tests/test_bibliography_authority.py` (17 tests) pins all of the
+  `code/tests/test_bibliography_authority.py` pins all of the
   above.
 
 ## 2026-09-27

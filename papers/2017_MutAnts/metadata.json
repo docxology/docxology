@@ -63,5 +63,10 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Cell 'Leading Edge Previews' commentary; methods describe the commentary's comparative framing, and findings are the reviewed studies' results as reported and interpreted by the authors. Evidence quotes include line-break hyphens from extraction.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
+  },
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Retained source-grounded summary"
   }
 }

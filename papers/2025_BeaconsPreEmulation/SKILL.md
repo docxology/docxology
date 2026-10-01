@@ -1,9 +1,9 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Beacons - pre emulation of social cortex"
-description: "primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of&nbsp; category and response, which might include a sim of their own sensitive to cues such as mood o..."
+description: "primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of category and response, which might include a sim of their own sensitive to cues such as mood or tran..."
 tags: ["beaconspreemulation"]
-domain: "Genetics & Biomedical"
+domain: "Computational"
 citation: "andrew djuwidja, Daniel Friedman (2025). *Beacons - pre emulation of social cortex*. Zenodo."
 doi: "10.5281/zenodo.14737059"
 artifact_doi: "10.5281/zenodo.14737060"
@@ -11,11 +11,11 @@ artifact_doi: "10.5281/zenodo.14737060"
 
 # Beacons - pre emulation of social cortex
 
-**andrew djuwidja, Daniel Friedman** (2025) · Genetics & Biomedical
+**andrew djuwidja, Daniel Friedman** (2025) · Computational
 
 ## Context
 
-This work addresses topics in **Genetics & Biomedical**: BeaconsPreEmulation.
+This work addresses topics in **Computational**: BeaconsPreEmulation.
 
 ## Methods
 
@@ -56,7 +56,7 @@ Verification points for this work:
 ## Prerequisites
 
 - Familiarity with BeaconsPreEmulation
-- Background in Genetics & Biomedical fundamentals
+- Background in Computational fundamentals
 - Access to source repository: N/A
 
 ## Instructions

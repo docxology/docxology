@@ -310,6 +310,13 @@ def cff_doi_role_errors(text: str, meta: dict[str, Any], paper_dir: Path) -> lis
         errors.append("CFF declares a top-level doi but metadata has no canonical doi")
     if artifact and artifact.casefold() != canonical.casefold() and not _artifact_identifier_is_explicit(text, artifact):
         errors.append(f"artifact DOI {artifact} must be an explicitly labelled secondary identifier")
+    _before, entries, _after = _identifier_entries(text)
+    managed = sorted(_identifier_fields(entry) for entry in entries if _is_managed_doi_identifier(entry))
+    expected = sorted(_identifier_fields(entry) for entry in _identifier_entries(
+        "identifiers:\n" + "".join(doi_role_identifier_entries(canonical, artifact))
+    )[1])
+    if managed != expected:
+        errors.append("managed DOI identifiers must match the canonical and current artifact DOI roles")
     return errors
 
 
@@ -403,13 +410,15 @@ def _cff_citation_identity(text: str) -> tuple[str, list[tuple[str, str]]] | Non
             break
         if not in_authors:
             continue
+        if line.startswith("  - "):
+            authors.append(("", ""))
         match = _AUTHOR_FIELD_RE.match(line)
         if not match:
             continue
         key, value = match.group(1), _yaml_unquoted(match.group(2))
-        if line.lstrip().startswith("-"):
-            authors.append(("", ""))
-        family, given = authors[-1] if authors else ("", "")
+        if not authors:
+            continue
+        family, given = authors[-1]
         if key == "given-names":
             authors[-1] = (family, value)
         else:

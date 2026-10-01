@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T18:15:42Z",
+  "generated_at": "2026-10-01T22:08:35Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "bef40a3aaba7beb7b4bfbc14fde06c8fe00ecd17aa869c25f02e2ddb7732b1d6",
+      "sha256": "3c3eedb0ab24524e815b14b6fcf5d597d6c80c3c4ba9e13bb1f804204ce791d2",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 177913,
-          "sha256": "5f08c9332ff459ea433e57705e8e0ec97fa1f0332953944b1d06099fe81ddf71"
+          "bytes": 177947,
+          "sha256": "e837976ef28d29e87ecee678edfbabfda7659b6f34e3ee06626043179ad68c5e"
         },
         {
           "path": "data/software.json",
-          "bytes": 78699,
-          "sha256": "086a024c008081361fbd420ba8cda397408fa7e8ffeba52ae729d21743f2f30b"
+          "bytes": 78795,
+          "sha256": "703b528c18d18cb56934004c9261d769a7608aaff8af4436af51e2d7197e2ee8"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 12976,
-          "sha256": "0280de3b35468eb9509db13a912cd5669edfdbb7ebd233e4a05869ff32c573f5"
+          "sha256": "63e252827b301a561f230a4f3ad649f05db89b361a1435ffbd32e64decb5f3a1"
         },
         {
           "path": "data/github-repositories.json",
@@ -3912,7 +3912,7 @@
       "domain": "🧬",
       "domain_name": "Genetics & Biomedical",
       "type": "Paper",
-      "title": "To comment or not to comment",
+      "title": "To comment or not to comment, that is the question!",
       "venue": "Physics of Life Reviews",
       "url": "https://doi.org/10.1016/j.plrev.2023.06.002",
       "doi": "10.1016/j.plrev.2023.06.002",
@@ -4854,12 +4854,12 @@
       "doi": "10.1016/j.isci.2018.09.001",
       "docs_path": "papers/2018_DopamineForaging/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2018_DopamineForaging/full_text.md",
       "authors": [
         "Friedman, Daniel A.",
         "Pilko, Anna",
@@ -5524,8 +5524,8 @@
       "num": 129,
       "citation_key": "Friedman2025ConCatEnateEmulation129",
       "year": 2025,
-      "domain": "🧬",
-      "domain_name": "Genetics & Biomedical",
+      "domain": "💻",
+      "domain_name": "Computational",
       "type": "Paper",
       "title": "Con-cat-enate: emulation of Cat Hippocampus",
       "venue": "Zenodo",
@@ -5596,8 +5596,8 @@
       "num": 132,
       "citation_key": "Friedman2025BeaconsPreEmulationSocial132",
       "year": 2025,
-      "domain": "🧬",
-      "domain_name": "Genetics & Biomedical",
+      "domain": "💻",
+      "domain_name": "Computational",
       "type": "Paper",
       "title": "Beacons - pre emulation of social cortex",
       "venue": "Zenodo",
@@ -6521,15 +6521,14 @@
       "doi": "10.5281/zenodo.7803313",
       "docs_path": "papers/2026_GeneralizedNotationNotationGNN/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_GeneralizedNotationNotationGNN/full_text.md",
       "authors": [
-        "Friedman, Daniel Ari",
-        "The GeneralizedNotationNotation Community Contributors"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -7066,8 +7065,8 @@
       "num": 192,
       "citation_key": "Friedman2026DataDescriptorTemplateSchema192",
       "year": 2026,
-      "domain": "🧠",
-      "domain_name": "Active Inference",
+      "domain": "💻",
+      "domain_name": "Computational",
       "type": "Paper",
       "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
       "venue": "Zenodo",
@@ -8913,7 +8912,7 @@
       "url": "https://github.com/docxology/line_set",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice · · Zenodo",
+      "description": "A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice · · Citation DOI · Zenodo artifact v0.1.0",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-07",
@@ -9009,7 +9008,7 @@
       "url": "https://github.com/docxology/silver_line",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse · · Zenodo",
+      "description": "A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse · · Citation DOI · Zenodo artifact v0.1.0",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-09",
@@ -9177,7 +9176,7 @@
       "url": "https://github.com/docxology/Skillarum",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Turns selected public website pages into portable SKILL.md documents for agent harnesses — five inspectable stages, provenance, safety-bounded crawling, evidence-gated research outputs (renders the FractiSkills skill pages) · · Zenodo",
+      "description": "Turns selected public website pages into portable SKILL.md documents for agent harnesses — five inspectable stages, provenance, safety-bounded crawling, evidence-gated research outputs (renders the FractiSkills skill pages) · · Citation DOI · Zenodo artifact v0.2.0",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-09",
@@ -9687,7 +9686,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-10-01T18:15:40+00:00",
+      "checked_at": "2026-10-01T21:36:28+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9702,7 +9701,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-10-01T18:15:40+00:00",
+      "checked_at": "2026-10-01T21:36:28+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "A Worked Example of the Bayesian Mechanics of Classical Objects"
-description: "Transcripts of discussions of the 2022 preprint &quot;A Worked Example of the Bayesian Mechanics of Classical Objects&quot; by Dalton A R Sakthivadivel.&nbsp; https://arxiv.org/abs/2206.12996 Session 049.0, September 30, 2022&nbsp; https://www.youtub..."
+description: "Transcripts of discussions of the 2022 preprint \"A Worked Example of the Bayesian Mechanics of Classical Objects\" by Dalton A R Sakthivadivel. https://arxiv.org/abs/2206.12996 Session 049.0, September 30, 2022 https://www.youtube.com/watch?v=OtX2Fpzn..."
 tags: ["workedexamplebayesian"]
 domain: "Active Inference"
 citation: "Dalton AR Sakthivadivel, Ali Rahmjoo, Jakub Smékal, Daniel Friedman (2022). *A Worked Example of the Bayesian Mechanics of Classical Objects*. Zenodo."

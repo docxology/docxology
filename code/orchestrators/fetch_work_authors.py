@@ -46,6 +46,16 @@ from datetime import datetime, timezone
 from difflib import SequenceMatcher
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
+import docxology_tools  # noqa: E402,F401
+from docxology_tools.biblio_table import iter_bibliography_rows  # noqa: E402
+from docxology_tools.bibliography_links import canonical_link_url  # noqa: E402
+from export_bibliography import citation_key, doi_from_url  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 WORKS = REPO_ROOT / "data" / "works.json"
 OUTPUT = REPO_ROOT / "data" / "work-authors.json"
@@ -265,22 +275,34 @@ def load_works() -> list[dict]:
 
 
 def normalise_person(author: dict) -> tuple[str, str]:
-    """Return (family, given) with registry display-name packing undone.
+    """Return (family, given), correcting only audited registry name aliases.
 
     Zenodo frequently deposits a creator as ``familyName: "Daniel Ari Friedman"``
     with no ``givenName``. Rendered verbatim that becomes an uninvertible
     "Daniel Ari Friedman" cell, which every export then treats as an
-    organisation (CSL ``literal``). The split is applied only when the creator
-    carries an ORCID iD: an ORCID identifies one individual, so the display name
-    is a personal "Given Family" name. Without one the string may be a
-    pseudonym or collective ("Die Schwarze Katze", "Sensemaking Scenius"), and
-    it is left exactly as the registry recorded it.
+    organisation (CSL ``literal``). ORCID establishes personhood, but does not
+    establish name order or whether a surname has several words. Only the
+    exact display-name/ORCID pairs audited in this catalogue are inverted;
+    unknown names remain exactly as the registry recorded them.
     """
     family = (author.get("family") or "").strip()
     given = (author.get("given") or "").strip()
-    if not given and author.get("orcid") and "," not in family and len(family.split()) >= 2:
-        family, given = _split_display_name(family)
+    if not given:
+        orcid = str(author.get("orcid") or "").strip().rstrip("/").split("/")[-1]
+        family, given = AUDITED_DISPLAY_NAME_ALIASES.get((family, orcid), (family, given))
     return OWNER_NAME_CORRECTIONS.get((family, given), (family, given))
+
+
+# Exact aliases from the registry records reviewed on 2026-10-01. These are
+# identity-bound corrections, not a last-token surname heuristic.
+AUDITED_DISPLAY_NAME_ALIASES: dict[tuple[str, str], tuple[str, str]] = {
+    ("Andrew Pashea", "0009-0004-4061-6296"): ("Pashea", "Andrew"),
+    ("Daniel A. Friedman", "0000-0001-6232-9096"): ("Friedman", "Daniel A."),
+    ("Daniel Ari Friedman", "0000-0001-6232-9096"): ("Friedman", "Daniel Ari"),
+    ("Evelyn C. Goh", "0000-0001-7182-3950"): ("Goh", "Evelyn C."),
+    ("Siddhant Shrivastava", "0000-0002-9688-4730"): ("Shrivastava", "Siddhant"),
+    ("Tucker Chambers", "0009-0008-3793-7872"): ("Chambers", "Tucker"),
+}
 
 
 # Registry records that mis-split the catalogue owner's own name, mapped to the
@@ -311,6 +333,11 @@ def apply_to_bibliography() -> int:
         print(f"missing {OUTPUT.relative_to(REPO_ROOT)}; run without --apply first", file=sys.stderr)
         return 1
     payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    evidence_errors = document_evidence_errors(payload)
+    if evidence_errors:
+        for error in evidence_errors:
+            print(f"document evidence: {error}", file=sys.stderr)
+        return 1
     by_num = {
         entry["num"]: entry
         for entry in payload["works"].values()
@@ -364,19 +391,48 @@ def _norm_evidence(text: str) -> str:
 
 
 def document_evidence_errors(payload: dict) -> list[str]:
-    """Every document_verified entry must quote its source file verbatim."""
+    """Bind document evidence to the matching DOI-free bibliography work.
+
+    Quote occurrence is a mechanical integrity check. It does not replace the
+    human review that establishes whether the quote supports the author list.
+    """
     errors = []
-    for key, entry in payload["works"].items():
-        if entry.get("status") != "document_verified":
+    entries = [(key, entry) for key, entry in payload["works"].items()
+               if entry.get("status") == "document_verified"]
+    if not entries:
+        return errors
+    try:
+        by_key = {citation_key(row): row for row in iter_bibliography_rows(BIBLIOGRAPHY)}
+    except (OSError, ValueError) as exc:
+        return [f"document_verified validation needs a readable bibliography: {exc}"]
+    root = REPO_ROOT.resolve()
+    for key, entry in entries:
+        row = by_key.get(key)
+        if row is None or entry.get("num") != row.num or not row.folder:
+            errors.append(f"{key}: must match a bibliography work with a paper folder and the same num")
             continue
-        if entry.get("doi"):
+        if entry.get("doi") or doi_from_url(canonical_link_url(row.link_cell, row.venue)):
             errors.append(f"{key}: document_verified is only for works without a DOI")
-        source = REPO_ROOT / str(entry.get("source") or "")
+            continue
+        folder = root / "papers" / row.folder
+        source_name = str(entry.get("source") or "")
+        source = root / source_name
         evidence = _norm_evidence(str(entry.get("evidence") or ""))
-        if not entry.get("authors") or not evidence or not source.is_file():
+        try:
+            resolved_folder = folder.resolve(strict=True)
+            resolved_source = source.resolve(strict=True)
+            contained = (not Path(source_name).is_absolute()
+                         and resolved_folder == folder
+                         and resolved_source.is_relative_to(resolved_folder))
+        except (OSError, RuntimeError):
+            contained = False
+        if not contained:
+            errors.append(f"{key}: source must remain inside papers/{row.folder}/")
+            continue
+        if not entry.get("authors") or not evidence or not resolved_source.is_file():
             errors.append(f"{key}: needs authors, evidence, and an existing source file")
             continue
-        if evidence not in _norm_evidence(source.read_text(encoding="utf-8", errors="replace")):
+        if evidence not in _norm_evidence(resolved_source.read_text(encoding="utf-8", errors="replace")):
             errors.append(f"{key}: evidence quote not found in {entry.get('source')}")
     return errors
 

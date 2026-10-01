@@ -12,7 +12,7 @@
 
 ## Keywords
 
-`Curio Cards` · `research ideation` · `creativity tools` · `interdisciplinary thinking` · `prompt-based exploration`
+`Curio Cards` · `Ethereum` · `NFT art` · `art gallery` · `art history`
 
 ## Methods
 

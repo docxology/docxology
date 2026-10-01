@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Systems Modeling and Cognitive Audits for Hypercert Ecosystems"
-description: "We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci). Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze..."
+description: "On August 24th 2022, Holke Brammer of Protocol Labs released a blog “Hypercerts: A new primitive for public goods funding” describing how “Hypercerts” could be used for Decentralized Science (DeSci). With collaborators at the Active Inference Institu..."
 tags: ["hypercerts", "desci", "decentralized-science", "active-blockference", "aeos", "cognitive-audits", "public-goods-funding", "systems-modeling"]
 domain: "Cognitive Security"
 citation: "Jakub Smékal, Daniel Ari Friedman (2022). *Systems Modeling and Cognitive Audits for Hypercert Ecosystems*. Zenodo."

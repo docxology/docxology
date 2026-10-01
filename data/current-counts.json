@@ -6,16 +6,16 @@
     "bibliography_works": 219,
     "domains": {
       "AII Ecosystem": 6,
-      "Active Inference": 47,
+      "Active Inference": 46,
       "Art & Synergetics": 16,
       "Cognitive Security": 37,
-      "Computational": 60,
+      "Computational": 63,
       "Entomology": 23,
-      "Genetics & Biomedical": 15,
+      "Genetics & Biomedical": 13,
       "Presentations & Media": 14
     },
     "extracted_images": 8959,
-    "full_text_papers": 197,
+    "full_text_papers": 199,
     "generated_exports": {
       "data_publications_ld_main_entity": 219,
       "data_software_json": 158,
@@ -82,7 +82,7 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-10-01T18:15:40+00:00",
+  "generated_at": "2026-10-01T21:36:28+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

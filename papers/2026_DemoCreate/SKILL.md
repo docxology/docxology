@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "DemoCreate: Declarative Audio-Visual Demo Generation for Software"
-description: "<p>DemoCreate generates audio-visual demos of software &mdash; codebase tours, website walkthroughs, and terminal/CLI demos &mdash; from a single declarative, deterministic spine. A Demo is an ordered action stream plus narration chunks, merging Code..."
+description: "DemoCreate generates audio-visual demos of software — codebase tours, website walkthroughs, and terminal/CLI demos — from a single declarative, deterministic spine. A Demo is an ordered action stream plus narration chunks, merging CodeVideo's event-s..."
 tags: ["demo-generation", "screencast", "text-to-speech", "code-walkthrough", "video", "narration", "whisper", "manim", "playwright", "reproducible"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *DemoCreate: Declarative Audio-Visual Demo Generation for Software*. Zenodo."

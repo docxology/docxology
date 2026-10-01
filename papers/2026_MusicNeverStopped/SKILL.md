@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation"
-description: "<p>We present a modular, citation-bound data compendium for the Grateful Dead universe &mdash; shows, songs, performances, personnel timelines, venues, recordings, and reception &mdash; and a category-theoretic interpretation of the performance graph..."
+description: "We present a modular, citation-bound data compendium for the Grateful Dead universe — shows, songs, performances, personnel timelines, venues, recordings, and reception — and a category-theoretic interpretation of the performance graph. The work is g..."
 tags: ["grateful-dead", "setlist-data", "category-theory", "music-information-retrieval", "reproducible-data-compendium"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation*. Zenodo."

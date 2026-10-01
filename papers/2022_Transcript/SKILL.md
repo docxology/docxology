@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016"
-description: "This document is an enhanced transcript of the live presentations and group discussions with Mark Solms in 2022 at the Active Inference Institute. The focus is the 2018 paper &quot;How and Why Consciousness Arises: Some Considerations from Physics an..."
+description: "This document is an enhanced transcript of the live presentations and group discussions with Mark Solms in 2022 at the Active Inference Institute. The focus is the 2018 paper \"How and Why Consciousness Arises: Some Considerations from Physics and Phy..."
 tags: ["active-inference", "consciousness", "neuroanatomy", "psychology", "free-energy-principle", "livestream"]
 domain: "Active Inference"
 citation: "Mark Solms, David S Douglass, Stephen Sillett, Daniel Ari Friedman (2022). *Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016*. Zenodo."

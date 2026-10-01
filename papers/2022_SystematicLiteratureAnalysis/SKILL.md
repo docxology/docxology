@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Free Energy Principle & Active Inference: a Systematic Literature Analysis"
-description: "We perform a systematic literature analysis of publications using the terms 'Free Energy Principle' or 'Active Inference', with emphasis on works by Karl Friston. We trace the history, growth, and div..."
+description: "Here we perform a literature analysis of publications in scientific literature using the term “Free Energy Principle” or “Active Inference”, with an emphasis on works written by Karl J Friston. For a subset of papers with accessible full texts, we pe..."
 tags: ["systematic-literature-analysis", "free-energy-principle", "active-inference", "karl-friston", "history-of-science", "bibliometrics", "ontology"]
 domain: "Active Inference"
 citation: "Virginia Bleu Knight, RJ Cordes, Daniel Friedman (2022). *The Free Energy Principle & Active Inference: a Systematic Literature Analysis*. Zenodo."

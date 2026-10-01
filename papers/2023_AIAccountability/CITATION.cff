@@ -18,8 +18,8 @@ authors:
     given-names: "RJ"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.8025956
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.8025956"
+    description: "Canonical citation DOI"
   - type: url
-    value: "https://zenodo.org/records/8025956"
-    description: "Zenodo landing page"
+    value: "https://doi.org/10.5281/zenodo.8025956"
+    description: "Canonical citation DOI resolver"

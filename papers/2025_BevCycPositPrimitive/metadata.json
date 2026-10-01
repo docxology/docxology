@@ -90,5 +90,12 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Informal concept/posit note (≈10 KB) with no implementation, data, or results; findings are the authors' proposals and intentions, not tested outcomes. The README abstract mentions Levin's morphogenesis/morphospace, which does not appear in the extracted text (references are only YouTube links).",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "BehavioralCycle / CYC / “ from epigenetic-sequence / epigenetic-cycle” transcribed onto ROS-like / gymnasium like Nodes-of-action-sequence; but in actual essence; is just an empty node-scaffold To fill with action-context-pairs that is designed so that they are decomposable Onto the lowest level (which is muscle tension %) “ BevCYC is a framework that implements a decomposable Chain of Node ( N – N – N ) Representing an Action Sequence / Concept Sequence That is based on the Epigenetic Cycle ideations.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Passage recovered from the document",
+    "evidence_source": "full_text.md"
   }
 }

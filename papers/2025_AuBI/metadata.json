@@ -27,7 +27,15 @@
     }
   ],
   "description": "Universal Basic Income (UBI) is defined as a transformative economic policy designed to provide all citizens with a regular, unconditional sum of money, regardless of their circumstances.&nbsp;Here we argue that the overlay of several modern technologies on UBI can help enhance its relevance, effectiveness, and impact. We review applications of artificial intelligence (AI) and decentralized infrastructure in UBI application, and describe prospects for a cognitive ecosystems approach towards modeling.&nbsp;Here we describe a version 0.1 specification for an Adaptive (Universal) Basic Income system called AuBI, describing a systems engineering-grade toolkit/sandbox/design suite for specifying, modeling, and designing economic systems.&nbsp;Keywords for AuBI include decentralized infrastructure, active inference modules, informed adaptive income, Bayesian community income floors, LLM, AI, data storage, data sovereignty, micro UBI, adaptive economic agents, collective predictive processing and more.",
-  "keywords": [],
+  "keywords": [
+    "AuBI",
+    "Adaptive Basic Income",
+    "Universal Basic Income",
+    "decentralized infrastructure",
+    "active inference modules",
+    "data sovereignty",
+    "adaptive economic agents"
+  ],
   "files": [
     {
       "name": "AuBI_9-29-2025.pdf",
@@ -93,5 +101,16 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Self-described speculative design paper / 'Paper #1' primer; no system was built or deployed and no data collected. Percentages in the Indonesian supplement are projected 'Expected Benefits', not results, and were deliberately excluded.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "Universal Basic Income (UBI) is defined as a transformative economic policy designed to provide all citizens with a regular, unconditional sum of money, regardless of their circumstances. Here we argue that the overlay of several modern technologies on UBI can help enhance its relevance, effectiveness, and impact. We review applications of artificial intelligence (AI) and decentralized infrastructure in UBI application, and describe prospects for a cognitive ecosystems approach towards modeling. Here we describe a version 0.1 specification for an Adaptive (Universal) Basic Income system called AuBI, describing a systems engineering-grade toolkit/sandbox/design suite for specifying, modeling, and designing economic systems. Keywords for AuBI include decentralized infrastructure, active inference modules, informed adaptive income, Bayesian community income floors, LLM, AI, data storage, data sovereignty, micro UBI, adaptive economic agents, collective predictive processing and more.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
+  },
+  "keywords_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "basis": "Terms selected from the document subject and methods; replaces inaccurate hand-seeded keywords"
   }
 }

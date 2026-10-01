@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Structuring the Information Commons: Open Standards and Cognitive Security"
-description: "An edited volume examining open standards and cognitive security for structuring the information commons. The book addresses how information ecosystems can be designed to promote trust, transparency..."
+description: "An edited volume examining open standards and cognitive security for structuring the information commons. The book addresses how information ecosystems can be designed to promote trust, transparency, and collective sensemaking through open standards,..."
 tags: ["information-commons", "cognitive-security", "open-standards", "trust", "governance", "decentralized-systems", "information-integrity", "collective-sensemaking"]
 domain: "Cognitive Security"
 citation: "Scott David, R.J. Cordes, Daniel A. Friedman (2022). *Structuring the Information Commons: Open Standards and Cognitive Security*. COGSEC.org."

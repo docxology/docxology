@@ -1,24 +1,17 @@
-# AGENTS.md — `docxology/code/tests`
+# AGENTS.md — `code/tests/`
 
-Added by the 2026-08-29 ongoing-docs fleet pass.
+Regression and repository-invariant tests for the public repository. Follow
+the root and `code/AGENTS.md` rules and the declared Python runtime.
 
-## What this is
-
-Site code tests (incl. `fixtures/`).
-
-## Layout
-
-- tests + fixtures.
-
-## Invariants & gotchas
-
-- Local-only under `projects/ongoing/` — never commit.
-- `docxology` is a live work tree with THREE git remotes (`origin`/`public` = the
-  public mirror, `docxology-private` upstream; local main ahead 114): read, don't
-  write, never run git operations here.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls docxology/code/tests`
-- Parent: `docxology/AGENTS.md`; lane policy: `../../AGENTS.md` (ongoing root).
+- Use disposable `tmp_path` fixtures for mutation tests. Never tamper with
+  tracked outputs: parallel readers and interrupted runs must leave the
+  checkout intact.
+- Test meaningful source, identity, evidence, and failure boundaries. Keep
+  synthetic fixtures public and free of credentials or private records.
+- Run the focused tests for a change before the substantive-change gate:
+  `uv run python3 -m pytest code/tests -q`.
+- Validate generated layers with
+  `uv run python3 code/orchestrators/validate_repo.py`; rebuild drift with the
+  owning generator rather than editing a golden output to hide a failure.
+- Preserve concurrent edits. Commit authorized changes on a work branch;
+  never commit on local `main`.

@@ -6,6 +6,7 @@ tags: ["modularity", "information-hiding", "separation-of-concerns", "boundary-o
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *The Line Set: Holding Instruments Apart*. Zenodo."
 doi: "10.5281/zenodo.21754243"
+artifact_doi: "10.5281/zenodo.21754244"
 ---
 
 # The Line Set: Holding Instruments Apart
@@ -50,6 +51,7 @@ Verification points for this work:
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-08-02T15:11:27Z
+- Artifact DOI: 10.5281/zenodo.21754244
 
 ## Prerequisites
 

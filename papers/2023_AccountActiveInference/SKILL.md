@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "An Account of Active Inference Modeling"
-description: "In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena. This paper argues that developing generative models is more li..."
+description: "In Active Inference, we develop (ensembles of) generative models of ecosystems of shared intelligence by accounting for cognitive system and phenomena. The work of developing generative models is more like doing accounting than doing calculation, mem..."
 tags: ["active-inference", "generative-modeling", "accounting-metaphor", "active-accountants", "cognitive-modeling", "epistemic-agency", "model-development"]
 domain: "Active Inference"
 citation: "Daniel Ari Friedman (2023). *An Account of Active Inference Modeling*. Zenodo."

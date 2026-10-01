@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon"
-description: "<p>There is no statute, treatise, or law-school casebook titled \"Entomological Law.\" The phrase names a synthetic field &mdash; the convergence zone where the six-legged world repeatedly forces the legal system to answer questions it was not designed..."
+description: "There is no statute, treatise, or law-school casebook titled \"Entomological Law.\" The phrase names a synthetic field — the convergence zone where the six-legged world repeatedly forces the legal system to answer questions it was not designed for: Can..."
 tags: ["entomological-law", "legal-entomology", "forensic-entomology", "endangered-species", "invasive-species", "insect-welfare", "gene-drive", "biological-weapons-convention", "reproducible-legal-scholarship"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon*. Zenodo."

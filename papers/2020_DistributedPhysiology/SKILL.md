@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Distributed physiology and the molecular basis of social life in eusocial insects"
-description: "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this..."
+description: "The traditional focus of physiological and functional genomic research is on molecular processes that play out within a single multicellular organism. In the colonial (eusocial) insects such as ants, bees, and termites, molecular and behavioral respo..."
 tags: ["distributed-physiology", "superorganism", "collective-behavior", "ant-colonies", "decentralized-control", "interaction-networks", "colony-metabolism", "social-immunity"]
 domain: "Entomology"
 citation: "D.A. Friedman, B.R. Johnson, T.A. Linksvayer (2020). *Distributed physiology and the molecular basis of social life in eusocial insects*. Hormones & Behavior."

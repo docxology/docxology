@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Towards a Science of Consciousness and Social Complexity... For Ants"
-description: "Building on the Ant Colony Test (ACT) introduced in 2019, this paper further develops the case for using ant colonies as model systems for consciousness research. We examine how colony-level informati..."
+description: "Building on the Ant Colony Test (ACT) introduced in 2019, this paper further develops the case for using ant colonies as model systems for consciousness research. We examine how colony-level information integration, adaptive behavior, and meta-cognit..."
 tags: ["consciousness", "ant-colonies", "ant-colony-test", "information-integration", "collective-cognition", "meta-cognition"]
 domain: "Entomology"
 citation: "Maria Luiza Iennaco, Daniel Friedman (2025). *Towards a Science of Consciousness and Social Complexity... For Ants*. Book Chapter."

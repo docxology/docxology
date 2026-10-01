@@ -19,6 +19,7 @@ website extraction · agent skills · provenance · reproducibility · prompt in
 | Field | Value |
 |------|-------|
 | **DOI** | [10.5281/zenodo.22663906](https://doi.org/10.5281/zenodo.22663906) |
+| **Artifact DOI (archived version)** | [10.5281/zenodo.22663907](https://doi.org/10.5281/zenodo.22663907) |
 | **Published** | 2026-09-08 |
 | **Version** | 0.2.0 |
 | **Zenodo record** | https://zenodo.org/records/22663906 |

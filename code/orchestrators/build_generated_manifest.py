@@ -73,13 +73,14 @@ ARTIFACTS = [
         "command": "uv run python3 code/orchestrators/regenerate_docs.py --apply",
     },
     {
-        "name": "Paper CFF DOI-role synchronization",
+        "name": "Paper CFF citation identity synchronization",
         "outputs": [
-            "papers/*/CITATION.cff (canonical top-level DOI/URL and explicit artifact identifiers)",
+            "papers/*/CITATION.cff (bibliography title/authors, canonical DOI/URL, and explicit artifact identifiers)",
         ],
         "sources": [
+            "pages/BIBLIOGRAPHY.md",
             "papers/*/metadata.json (doi and optional artifact_doi)",
-            "papers/*/CITATION.cff (non-DOI fields and identifiers)",
+            "papers/*/CITATION.cff (other hand-maintained fields and non-DOI identifiers)",
             "code/orchestrators/generate_citation_cff.py",
         ],
         "command": "uv run python3 code/orchestrators/generate_citation_cff.py --apply",
@@ -617,7 +618,7 @@ UTILITIES = [
     ("generate_redirect_stubs.py", "Renders or checks all centrally declared redirect stubs without inline JavaScript", "maintenance"),
     ("extract_paper_texts.py", "Extracts full text and images from paper PDFs into the papers/ tree", "maintenance"),
     ("fetch_youtube_data.py", "Fetches YouTube channel metadata for both channels into code/data/youtube_*.json (network)", "fetch"),
-    ("generate_citation_cff.py", "Synchronizes canonical citation DOI and labelled artifact DOI roles in per-paper CFF files while preserving non-DOI identifiers", "maintenance"),
+    ("generate_citation_cff.py", "Synchronizes bibliography title/authors and canonical/artifact DOI roles in per-paper CFF files while preserving non-DOI identifiers", "maintenance"),
     ("render_github_inventory.py", "Renders the primary and fork GitHub inventory pages deterministically from the reviewed cached JSON inventory", "generation"),
     ("deploy_seo_security.py", "Deploys/refreshes the CSP and rel=\"me\" head tags across indexable pages; idempotent and re-run on every rebuild (not a one-shot)", "maintenance"),
     ("migrate_inline_handlers.py", "One-shot migration: inline event handlers to data-* + addEventListener for CSP (completed; kept for provenance)", "one-shot"),

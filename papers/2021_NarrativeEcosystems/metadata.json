@@ -16,7 +16,7 @@
     }
   ],
   "description": "Edited 2021 COGSEC volume collecting research outputs of the Narrative Information Management (NIM-21) initiative: Narrative Information Management; Digital Rhetorical Ecosystem Analysis; Knowledge Management Archipelago; and Active Inference in Modeling Conflict.",
-  "abstract": "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-online Remote Teams, proposing the ONFT (Ontologies, Narratives, Formal documents, and Tools) framework for Remote Team formation and lifecycle management. We connect epistemic foraging and niche construction concepts to team development.",
+  "abstract": "COGSEC's 2021 edited volume collects research outputs of the Narrative Information Management initiative, spanning information management across disciplines, digital rhetorical ecosystem analysis of image memes, knowledge management field synthesis, and an Active Inference Conflict model applied to conflict settings.",
   "keywords": [
     "narrative ecosystems",
     "Active Inference",
@@ -97,5 +97,10 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Edited volume (eds. Cordes & Friedman, COGSEC 2021) with four multi-author chapters; methods/findings are attributed per chapter. The bibliography lists no authors for this entry. Chapter IV's AIC model is applied qualitatively, not simulated in the text summarized.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Retained source-grounded summary"
   }
 }

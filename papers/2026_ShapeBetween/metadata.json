@@ -109,5 +109,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Illustrated children's fiction / template exemplar, not a research paper; no findings to report. Text was OCR-extracted and several pages (4, 6, 9, 14) are garbled, so those story pages could not be read.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "template_storybook demonstrates a public, standalone picture-book workflow in\nthe research template repository. The bundled project renders a deterministic\nfourteen-page storybook subtitled A geometric fable of belonging, bracing, and\nreciprocal form: a clear cover, a publication-and-acknowledgements page, and\ntwelve story pages in which a child tetrahedron raised by cubes meets a child\ncube raised by tetrahedra. The story uses a large reciprocal symbol, a\ntetrahedron-inside-cube stability spread, a shadow-projection lesson, a\ntensegrity lantern, and a vector garden to frame belonging without sameness:\nsquare and triangle families remain distinct while the space between them\nbecomes navigable.\n\nThe project separates story data, rendering logic, and orchestration. Story\ntext, characters, page order, palettes, and overlay choices live in\ncontent/story.yaml; character generation and illustration live in\nsrc/storybook/; one script renders the cover, each page script renders a\nnumbered page, and a final script assembles the PDF. This makes the exemplar a\nforkable pattern for full-page creative artifacts rather than standard\nmanuscript-centered figure generation.\n\n---\nAssociated artifacts\nGitHub release: The Shape Between v0.1.0 (https://github.com/docxology/template_storybook/releases/tag/v0.1.0)\nDOI: https://doi.org/10.5281/zenodo.21176001\nZenodo: https://zenodo.org/records/21176001\nPDF SHA-256: 7fb0ed775db212cd9f4b5b578bef8900c9f925bc0c5cc047331eb6900679eeda",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Retained source-grounded summary"
   }
 }

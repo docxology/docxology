@@ -2359,7 +2359,7 @@
   {
     "id": "Friedman2023CommentOrNotComment063",
     "type": "article-journal",
-    "title": "To comment or not to comment",
+    "title": "To comment or not to comment, that is the question!",
     "author": [
       {
         "family": "Tickles",
@@ -4498,7 +4498,7 @@
       ]
     },
     "genre": "Paper",
-    "keyword": "Genetics & Biomedical; Paper",
+    "keyword": "Computational; Paper",
     "note": "Catalog row 129; docs: papers/2025_ConCatEnate/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
@@ -4585,7 +4585,7 @@
       ]
     },
     "genre": "Paper",
-    "keyword": "Genetics & Biomedical; Paper",
+    "keyword": "Computational; Paper",
     "note": "Catalog row 132; docs: papers/2025_BeaconsPreEmulation/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
@@ -5857,9 +5857,6 @@
       {
         "family": "Friedman",
         "given": "Daniel Ari"
-      },
-      {
-        "literal": "The GeneralizedNotationNotation Community Contributors"
       }
     ],
     "issued": {
@@ -6473,7 +6470,7 @@
       ]
     },
     "genre": "Paper",
-    "keyword": "Active Inference; Paper",
+    "keyword": "Computational; Paper",
     "note": "Catalog row 192; docs: papers/2026_DataDescriptorTemplate/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",

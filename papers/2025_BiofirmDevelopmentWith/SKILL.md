@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024"
-description: "Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024 &nbsp;"
+description: "No abstract is recorded for this work yet; see the DOI or bibliography link."
 tags: ["biofirmdevelopmentwith"]
 domain: "Active Inference"
 citation: "John Clippinger, Andrew Pashea, Daniel Friedman (2025). *Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024*. Zenodo."

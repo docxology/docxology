@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "AGEINT: Agentic Intelligence"
-description: "<p>Synthetic Analytic Tradecraft (AGEINT, or Agentic Intelligence), is a local curriculum-and-assurance atlas for teaching bounded AI-agent support inside intelligence education by making the machinery of Synthetic Analytic Tradecraft visible on the ..."
+description: "Synthetic Analytic Tradecraft (AGEINT, or Agentic Intelligence), is a local curriculum-and-assurance atlas for teaching bounded AI-agent support inside intelligence education by making the machinery of Synthetic Analytic Tradecraft visible on the pag..."
 tags: ["agentic-intelligence", "ageint", "ai-agents", "intelligence-tradecraft", "cognitive-security", "structured-analytic-techniques", "active-inference", "model-context-protocol", "multi-agent-systems", "operational-governance"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *AGEINT: Agentic Intelligence*. Zenodo."

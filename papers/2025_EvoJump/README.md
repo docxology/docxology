@@ -14,7 +14,7 @@
 
 ## Keywords
 
-`evolutionary transitions` · `EvoJump` · `Active Inference` · `major transitions` · `phenotypic complexity` · `Free Energy Principle`
+`EvoJump` · `stochastic modeling` · `ontogenetic trajectories` · `jump-diffusion` · `fractional Brownian motion`
 
 ## Methods
 

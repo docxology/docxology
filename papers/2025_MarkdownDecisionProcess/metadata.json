@@ -86,5 +86,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Reviewer caution: the evaluation section gives results tables but little procedural detail (several results defer to a 'Code Supplement'; the Experiment 3 results table is absent from the extracted text), and the baseline list names 'GPT-2 Medium' while the Experiment 1 table reports 'GPT-2 Small'. A 25-participant user study and blanket 'all improvements significant (p < 0.05)' claim appear without design details; findings above are stated as reported by the paper. README 'Key Findings' contains a garbled placeholder ('Analysis of Dr...') not supported by the text, and README DOI 10.5281/zenodo.17244386 differs from the PDF's 10.5281/zenodo.17244387 (likely concept vs version).",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "The Markdown Decision Process (MDP) framework treats Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, and optimization through probabilistic modeling. Drawing from Markov Decision Process and POMDP theory, the framework operates at Marr's three levels: computational, algorithmic, and implementational. Key innovations include MarkChain for document generation, PolicyOptimizer for reinforcement learning optimization, and BeliefUpdater for probabilisti",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Retained source-grounded summary"
   }
 }

@@ -10,11 +10,11 @@
 
 ## Abstract
 
-> An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression. The work examines cave paintings and rock art as evidence of early human cognitive capabilities and their connection to modern theories of consciousness and aesthetic experience.
+> No abstract is recorded for this work yet; see the DOI or bibliography link.
 
 ## Keywords
 
-`Paleolithic art` · `cave paintings` · `cognitive evolution` · `consciousness` · `aesthetic experience` · `rock art`
+`PaleolithicRockstars`
 
 ## Methods
 

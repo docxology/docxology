@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Active Inference & Behavior Engineering for Teams"
-description: "Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales. This paper proposes frameworks for conn..."
+description: "Comprehensive frameworks for Teams should include various functionalities and structures in order to capture the broad range of affordances available for modern Remote Teams, including, but not limited to, synchronous & asynchronous communications, m..."
 tags: ["behavior-engineering", "systems-engineering", "organizational-behavior", "complex-adaptive-systems", "team-formation", "behavioral-design"]
 domain: "Active Inference"
 citation: "Alexander Vyatkin, Ivan Metelkin, Alexandra Mikhailova, RJ Cordes, Daniel Ari Friedman (2020). *Active Inference & Behavior Engineering for Teams*. Zenodo."

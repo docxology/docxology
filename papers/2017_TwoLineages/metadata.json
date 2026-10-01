@@ -11,7 +11,7 @@
     }
   ],
   "description": "Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior. In dependent-lineage species, queens must mate with males...",
-  "abstract": "Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior. In dependent-lineage species, queens must mate with males from a different genetic lineage to produce workers, while same-lineage matings produce new queens. This unusual mating system creates colonies with complex genetic architectures that provide a natural experiment for studying the relationship between genotype and division of labor. We discuss how d",
+  "abstract": "In ants as in bees, a diploid female is either a reproductive or worker. In honeybees, female larvae fed a high protein substance known as ‘royal jelly’ become reproductives, while those not fed the necessary nutrients become workers (Linksvayer et al. 2011). Feeding experiments in ants suggested that like honeybees, the fate of a diploid female egg is usually determined as a larva by food supply (Brian 1951). It was thus unexpected to discover about 15 years ago (Volny & Gordon 2002; Cahan & Keller 2003), using microsatellite markers, that in some populations in the harvester ant genus Pogonomyrmex, there is an association between genotype and reproductive status. There are two interdependent lineages. Matings between a reproductive and a male of the same lineage produce daughter reproductives, while matings between a female reproductive and a male of the other lineage produce daughter workers (Fig. 1). The haploid males are produced from unfertilized eggs. The two lineages need each other because a colony cannot produce offspring colonies without reproductives, and it cannot raise and maintain reproductives without workers. In this issue of Molecular Ecology, Romiguier et al. use RNA sequencing to demonstrate a similar system in Messor, another harvester ant genus.",
   "keywords": [
     "dependent-lineage",
     "mating systems",
@@ -50,5 +50,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "News and Views perspective on Romiguier et al. (2016) Messor study; no original data or methods, so methods list is empty. Findings are the authors' arguments/interpretations.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Passage recovered from the document",
+    "evidence_source": "full_text.md"
   }
 }

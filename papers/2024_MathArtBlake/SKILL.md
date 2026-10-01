@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "MathArt Stream #8: William Blake and Active Inference"
-description: "This work explores the intersection of mathematics, art, and William Blake's prophetic vision. Through formal analysis of Blake's visual and poetic works, we identify mathematical structures and patte..."
+description: "This Stream: 0. What might Blake have to do with any of this? 1. A view on Blake’s view on Art 2. A view on Blake’s view on Math 3. A view on Blake’s view on Active Inference"
 tags: ["william-blake", "mathematics", "art", "prophetic-vision", "geometric-structures", "active-inference"]
 domain: "Presentations & Media"
 citation: "Daniel Ari Friedman (2024). *MathArt Stream #8: William Blake and Active Inference*. Presentation."

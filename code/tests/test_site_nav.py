@@ -49,6 +49,18 @@ def test_clip_description_collapses_whitespace():
     assert clip_description("a   b\n c") == "a b c"
 
 
+def test_clip_description_keeps_complete_url_separate_from_ellipsis():
+    url = "https://www.youtube.com/watch?v=5R3VmqrE2Zg"
+    text = f"Recording: {url} with a much longer description afterwards."
+    clipped = clip_description(text, limit=len(f"Recording: {url}") + 3)
+    assert clipped == f"Recording: {url} …"
+
+
+def test_clip_description_drops_url_that_cannot_fit_completely():
+    text = "https://example.com/" + "a" * 200
+    assert clip_description(text, limit=30) == "…"
+
+
 def test_social_meta_tags_emits_card_and_alt():
     block = social_meta_tags(
         "Title — Daniel Ari Friedman",

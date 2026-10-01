@@ -11,9 +11,9 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 
 
-import build_work_pages as bwp  # noqa: E402
 from docxology_tools.generated_outputs import UnsafeGeneratedOutputPathError  # noqa: E402
 from docxology_tools.site_nav import BREADCRUMB_CSS, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+import build_work_pages as bwp  # noqa: E402
 
 
 def _work(**overrides: object) -> dict:
@@ -41,6 +41,18 @@ def test_citation_text_falls_back_to_work_page_url():
 
     assert "DOI:" not in citation
     assert "URL: https://danielarifriedman.com/works/Friedman2026Example001.html." in citation
+
+
+def test_citation_preserves_verified_author_order_and_collectives():
+    names = ["Tickles, Dean", "Friedman, Daniel", "Research Collective"]
+    work = _work(authors=names, type="Paper", domain_name="Entomology")
+    citation = bwp.citation_text(work)
+    assert citation.startswith("Tickles, Dean; Friedman, Daniel; Research Collective. 2026.")
+    assert citation in bwp.json_ld(work)
+
+
+def test_citation_does_not_invent_an_author_when_none_are_recorded():
+    assert bwp.citation_text(_work()).startswith("2026. Example Work.")
 
 
 def test_work_page_ownership_requires_an_explicit_renderer_marker(tmp_path: Path):

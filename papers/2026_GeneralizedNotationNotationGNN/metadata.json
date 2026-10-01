@@ -1,14 +1,14 @@
 {
   "title": "GeneralizedNotationNotation (GNN)",
-  "version": "v2.0.0",
+  "version": "v3.6.0",
   "doi": "10.5281/zenodo.7803313",
   "doi_url": "https://doi.org/10.5281/zenodo.7803313",
   "concept_doi": "10.5281/zenodo.7803313",
-  "artifact_doi": "10.5281/zenodo.20671741",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20671741",
-  "zenodo_record": "https://zenodo.org/records/7803313",
-  "record_id": "20671741",
-  "publication_date": "2026-06-12",
+  "artifact_doi": "10.5281/zenodo.22985529",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.22985529",
+  "zenodo_record": "https://zenodo.org/records/22985529",
+  "record_id": "22985529",
+  "publication_date": "2026-09-27",
   "resource_type": {
     "title": "Software",
     "type": "software"
@@ -18,10 +18,6 @@
       "name": "Friedman, Daniel Ari",
       "affiliation": "Active Inference Institute",
       "orcid": "0000-0001-6232-9096"
-    },
-    {
-      "name": "The GeneralizedNotationNotation Community Contributors",
-      "affiliation": null
     }
   ],
   "description": "Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models. It aims to enhance clarity, reproducibility, and interoperability in the field of Active Inference and cognitive modeling. GNN provides a structured way to describe complex models, making them human-readable and machine-parsable. It supports a \"Triple Play\" approach: text-based models, graphical model visualizations, and a blueprint for executable cognitive models.",
@@ -39,35 +35,113 @@
   ],
   "files": [
     {
-      "name": "ActiveInferenceInstitute/GeneralizedNotationNotation-v2.0.0.zip",
-      "size_bytes": 137202416,
-      "checksum": "md5:9739334452859f0a132d9e11acd509af",
-      "download_url": "https://zenodo.org/api/records/20671741/files/ActiveInferenceInstitute/GeneralizedNotationNotation-v2.0.0.zip/content"
+      "name": "ActiveInferenceInstitute/Generalized_Notation_Notation-v3.6.0.zip",
+      "size_bytes": 22218700,
+      "checksum": "md5:bc1c3cd5b4de0f60f51ddf0f24e261da",
+      "download_url": "https://zenodo.org/api/records/22985529/files/ActiveInferenceInstitute/Generalized_Notation_Notation-v3.6.0.zip/content"
     }
   ],
-  "related_resources": [],
-  "github_repo": "",
+  "related_resources": [
+    {
+      "identifier": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/tree/v3.6.0",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url",
+      "url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/tree/v3.6.0"
+    }
+  ],
+  "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
   "source": "zenodo-only",
-  "checked_at": "2026-06-14T22:26:11Z",
+  "checked_at": "2026-10-01",
   "domain": "Active Inference",
   "type": "Paper",
   "methods": [
     {
-      "name": "Free energy minimization",
-      "description": "Applied free energy minimization approach"
+      "name": "Parsing and structured export",
+      "description": "Parses plain-text model specifications into an internal representation and structured export formats, retaining declared model vocabulary.",
+      "evidence": "The pipeline begins by ingesting GNN model files written in the plain-text notation. Parsing (step 3) reads each specification, builds an internal model representation, and re-emits it across a family of structured export formats so that downstream tools, and human readers, can consume the same model through whichever serialization they prefer."
     },
     {
-      "name": "Bayesian modeling and inference",
-      "description": "Applied bayesian modeling and inference approach"
+      "name": "Model-kind type checking and validation",
+      "description": "Checks state spaces, observation modalities, control factors, matrix dimensions, and kind-specific shape contracts before code generation.",
+      "evidence": "Steps 5 and 6 apply type checking and validation to confirm that the state spaces, observation modalities, control factors, and the matrices relating them are mutually consistent before any code is generated."
+    },
+    {
+      "name": "Kind-aware model rendering",
+      "description": "Carries structurally determined model kinds into rendering and execution, recording which backends can handle each kind and which report it unsupported.",
+      "evidence": "A GNN file denotes a generative model, and the language lets that model take the several shapes the field actually uses: the notation blocks a file declares — categorical A/B/C/D[/E] tensors, linear-Gaussian system matrices F/H/Q/R with a Gaussian prior, per-agent and per-level compositions — fix its model kind, which the pipeline classifies structurally and carries through rendering and execution, recording explicitly which registered backends can render and run a model of each kind and which report it unsupported."
+    },
+    {
+      "name": "Semantic fidelity and cross-framework gates",
+      "description": "Provides reproducible commands for testing semantic preservation in round trips and comparing generated model structure across backend implementations.",
+      "evidence": "The semantic-fidelity gate, scripts/run_semantic_fidelity_gate.py, checks that a model parsed from GNN text and then re-emitted preserves its semantic content: the state-space structure, the factor and modality declarations, and the matrix shapes implied by a discrete Active Inference generative model survive the round trip [ Da Costa et al. , 2020]. It is meant to be run as a command and to report fidelity per model, not as a static claim baked into prose. The cross-framework reliability gate, scripts/run_cross_framework_reliability.py, takes a single GNN model and ren- ders it across multiple simulation backends, then checks that the resulting executable models agree on the structure they were generated from."
     }
   ],
   "key_findings": [
-    "Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models.",
-    "It aims to enhance clarity, reproducibility, and interoperability in the field of Active Inference and cognitive modeling."
+    "The manuscript presents the Triple Play as text, graphical, and executable views derived from a shared model specification.",
+    "At the manuscript snapshot, the framework covers 32 exemplar specifications across nine model families and ten registered rendering backends.",
+    "The manuscript reports profiled execution gaps for continuous and hierarchical models, and a deliberate render-only scope for structural models; it does not claim that every model executes on every backend.",
+    "The manuscript specifies reproducible validation commands and explicitly avoids asserting a fixed passing-check count.",
+    "The manuscript describes long-running orchestration contracts that generate, validate, and replay data without mutating live infrastructure."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "document_title": "GeneralizedNotationNotation: A Text Language for Active Inference Models",
+  "source_record_title": "Generalized_Notation_Notation (GNN)",
+  "abstract": "Active Inference offers a unifying account of perception, learning, and action under the free energy principle, yet the generative models at its core are still communicated ad hoc: scattered across prose descriptions, bespoke notebooks, and framework-specific code that rarely agree. This fragmentation makes published models hard to reproduce, compare, or port between tools, and it raises the barrier for newcomers learning the formalism. GeneralizedNotationNotation (GNN) addresses this gap with a standardized, human- and machine-readable text language for specifying Active Inference generative models, paired with a 25-step processing pipeline that transforms a single specification into validation, visualization, simulation, and analysis artifacts. A GNN file denotes a generative model, and the language lets that model take the several shapes the field actually uses: the notation blocks a file declares — categorical A/B/C/D[/E] tensors, linear-Gaussian system matrices F/H/Q/R with a Gaussian prior, per-agent and per-level compositions — fix its model kind, which the pipeline classifies structurally and carries through rendering and execution, recording explicitly which registered backends can render and run a model of each kind and which report it unsupported. GNN's \"Triple Play\" treats each model as three coordinated views — a textual specification, graphical visualizations, and executable cognitive models — so that one source yields consistent outputs across modalities. The framework spans 32 exemplar specifications (27 discrete-state and 5 continuous linear-Gaussian) across 9 model families and 10 registered rendering backends, with explicit gates for cross-format semantic fidelity and cross-framework reliability. GNN 3.0.0 layered safe-by-design long-running orchestration on top of this language and pipeline — durable observation streams, resumable run sessions, and auditable container plans that generate, validate, and replay data only, with no live infrastructure mutation. We describe the language, the model kinds it denotes, the pipeline architecture, and the validation that confirms specifications round-trip faithfully across formats and execute across multiple simulation backends — with coverage gaps recorded as explicit profiled-unsupported statuses rather than silently omitted — establishing GNN as reproducible, interoperable infrastructure for communicating Active Inference models.",
+  "license": {
+    "id": "cc-by-nc-sa-4.0"
+  },
+  "primary_pdf": "GeneralizedNotationNotation_v3.6.0.pdf",
+  "key_findings_evidence": [
+    "GNN’s “Triple Play” treats each model as three coordinated views — a textual specification, graphical visualizations, and executable cognitive models — so that one source yields consistent outputs across modalities.",
+    "The framework spans 32 exemplar specifications (27 discrete- state and 5 continuous linear-Gaussian) across 9 model families and 10 registered rendering backends, with explicit gates for cross-format semantic fidelity and cross-framework reliability.",
+    "The practical consequence is that not every model expressible in the GNN syntax can be executed on every registered backend today, and authors should consult the profiled-unsupported ledger that scripts/run_model_family_acceptance.py writes — the command is given in sec. 6 — before assuming a given family will round-trip through a given framework. The per-kind shape of that matrix matters as much as its gaps: the categorical-only backends report the continuous linear-Gaussian kind unsupported by declared capability rather than by accident, the structural kind is render-only by design on every backend, and the recursive corpus is reserved for bounded autonomous runs and holds no committed models yet — boundaries recorded where the kinds are defined (sec. 3.2) rather than discovered mid-run.",
+    "Both gates are stated here as commands you can run, not as asserted pass counts. The manuscript deliberately does not quote a fixed number of passing checks: the authoritative, current result is whatever those scripts report when executed against the corpus, and binding a frozen count into prose would invite exactly the drift the auto-injection contract exists to prevent.",
+    "GNN 3.0.0 layered safe-by-design long-running orchestration on top of this language and pipeline — durable observation streams, resumable run sessions, and auditable container plans that generate, validate, and replay data only, with no live infrastructure mutation."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "procedure": "Read the manuscript distributed in the exact v3.6.0 Zenodo archive and summarize its documented methods, capabilities, and limitations with verbatim excerpts.",
+    "notes": "The manuscript is a descriptive software account. Source summaries do not assert that the downstream commands or runtime capabilities were independently executed in this bibliography pass. The PDF cover is dated 2026-09-22; the enclosing v3.6.0 release was published 2026-09-27, and its limitations section refers to GNN 3.5.0. Numerical scope is the manuscript snapshot rather than a fresh live repository count.",
+    "reviewed": "2026-10-01: independent contextual review of all four methods and five findings, with source identity, abstract, license and hash verification."
+  },
+  "source_provenance": {
+    "source": "Zenodo record 22985529, GNN v3.6.0",
+    "retrieved_on": "2026-10-01",
+    "metadata_url": "https://zenodo.org/api/records/22985529",
+    "download_url": "https://zenodo.org/api/records/22985529/files/ActiveInferenceInstitute/Generalized_Notation_Notation-v3.6.0.zip/content",
+    "archive_member": "ActiveInferenceInstitute-Generalized_Notation_Notation-da3b26e/output/pdf/GeneralizedNotationNotation_combined.pdf",
+    "archive_md5": "bc1c3cd5b4de0f60f51ddf0f24e261da",
+    "archive_sha256": "b1bddab4b96f890338e23064300cde2ce9200dc223ae24a4e0a7287f244cb0cf",
+    "archive_size_bytes": 22218700,
+    "sha256": "acb7749c561b26562064421ca2f7fbca68c8b0e8a955082e5d5a3e28b50bd784",
+    "size_bytes": 1431074,
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "license_evidence": "The exact Zenodo record license id is cc-by-nc-sa-4.0; the archive LICENSE.md independently states CC BY-NC-SA 4.0.",
+    "identity_check": "The PDF cover names Daniel Ari Friedman, Active Inference Institute, ORCID 0000-0001-6232-9096 and concept DOI 10.5281/zenodo.7803313. The enclosing archive matches the current registered file MD5."
+  },
+  "abstract_provenance": {
+    "source": "Rendered manuscript Abstract in exact Zenodo v3.6.0 archive",
+    "source_document": "GeneralizedNotationNotation_v3.6.0.pdf",
+    "archive_member": "ActiveInferenceInstitute-Generalized_Notation_Notation-da3b26e/output/manuscript/00_abstract.md",
+    "retrieved_on": "2026-10-01",
+    "notes": "Transcribed from the generated, substituted Abstract section; Markdown inline-code markers and bibliography citation keys removed for display."
+  },
+  "creator_credit_decision": {
+    "date": "2026-10-01",
+    "decision": "The v3.6.0 archived artifact uses the single creator recorded by its Zenodo version and manuscript cover. Earlier v1.8.0 metadata credited The GeneralizedNotationNotation Community Contributors; this historical credit is preserved here instead of represented as a current v3.6.0 author.",
+    "earlier_version_doi": "10.5281/zenodo.20668103",
+    "earlier_creators": [
+      "Friedman, Daniel Ari",
+      "The GeneralizedNotationNotation Community Contributors"
+    ],
+    "current_concept_verification": "Direct DataCite resolution of the canonical concept DOI on 2026-10-01 also names Friedman alone; the current author list follows that record and the v3.6.0 manuscript."
+  },
+  "pdf_sha256": "acb7749c561b26562064421ca2f7fbca68c8b0e8a955082e5d5a3e28b50bd784"
 }

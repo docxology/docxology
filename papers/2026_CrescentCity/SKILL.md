@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast"
-description: "<div> <div>This manuscript offers a synthetic scholarly history of Crescent City, California &mdash; seat of Del Norte County on the north- ernmost developed strip of the California coast &mdash; where published accounts remain fragmentary or era-bou..."
+description: "This manuscript offers a synthetic scholarly history of Crescent City, California — seat of Del Norte County on the north- ernmost developed strip of the California coast — where published accounts remain fragmentary or era-bound (Huntsinger et al., ..."
 tags: ["california", "cascadia", "crescent-city", "jefferson", "usa"]
 domain: "Cognitive Security"
 citation: "Daniel Friedman (2026). *Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast*. Zenodo."

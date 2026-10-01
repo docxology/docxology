@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T20:58:50Z",
+  "generated_at": "2026-10-01T21:36:53Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -168,18 +168,18 @@
           "url": "/works/Friedman2016ContextDependentExpressionForaging104.html"
         },
         {
+          "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
+          "citation_key": "Friedman2018RoleDopamineCollectiveRegulation100",
+          "year": 2018,
+          "domain": "Entomology",
+          "url": "/works/Friedman2018RoleDopamineCollectiveRegulation100.html"
+        },
+        {
           "title": "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior",
           "citation_key": "Friedman2019PhysiologyForagerHydrationVariation095",
           "year": 2019,
           "domain": "Entomology",
           "url": "/works/Friedman2019PhysiologyForagerHydrationVariation095.html"
-        },
-        {
-          "title": "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains",
-          "citation_key": "Friedman2020MeasurementNaturalVariationNeurotransmitter088",
-          "year": 2020,
-          "domain": "Entomology",
-          "url": "/works/Friedman2020MeasurementNaturalVariationNeurotransmitter088.html"
         }
       ]
     },
@@ -2293,6 +2293,13 @@
           "url": "/works/Friedman2016ContextDependentExpressionForaging104.html"
         },
         {
+          "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
+          "citation_key": "Friedman2018RoleDopamineCollectiveRegulation100",
+          "year": 2018,
+          "domain": "Entomology",
+          "url": "/works/Friedman2018RoleDopamineCollectiveRegulation100.html"
+        },
+        {
           "title": "Gene expression variation in the brains of harvester ant foragers is associated with collective behavior",
           "citation_key": "Friedman2020GeneExpressionVariationBrains086",
           "year": 2020,
@@ -2305,13 +2312,6 @@
           "year": 2023,
           "domain": "Entomology",
           "url": "/works/Friedman2023SinglePheromoneModelAccounts046.html"
-        },
-        {
-          "title": "Computational Complexity and Energetics of the Ant Stack",
-          "citation_key": "Friedman2025ComputationalComplexityEnergeticsAnt011",
-          "year": 2025,
-          "domain": "Entomology",
-          "url": "/works/Friedman2025ComputationalComplexityEnergeticsAnt011.html"
         }
       ]
     },
@@ -4565,13 +4565,6 @@
       ],
       "related_works": [
         {
-          "title": "MDKV: A Multitrack Markdown Container for Structured, Portable Documents",
-          "citation_key": "Friedman2025MDKVMultitrackMarkdownContainer014",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025MDKVMultitrackMarkdownContainer014.html"
-        },
-        {
           "title": "DuckRabbit: Typed Multimodal Illusion Generator",
           "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
           "year": 2026,
@@ -4591,6 +4584,13 @@
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html"
+        },
+        {
+          "title": "docxplus — the Intelligent Document Container",
+          "citation_key": "Friedman2026DocxplusIntelligentDocumentContainer212",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026DocxplusIntelligentDocumentContainer212.html"
         }
       ]
     },
@@ -10360,13 +10360,6 @@
       ],
       "related_works": [
         {
-          "title": "Writing on Curio Cards for the \"On NFT\" book",
-          "citation_key": "Friedman2024WritingCurioCardsNFT044",
-          "year": 2024,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2024WritingCurioCardsNFT044.html"
-        },
-        {
           "title": "DuckRabbit: Typed Multimodal Illusion Generator",
           "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
           "year": 2026,
@@ -10386,6 +10379,13 @@
           "year": 2026,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2026PersonalRedLinesDevelopment203.html"
+        },
+        {
+          "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
+          "citation_key": "Friedman2026SynthOBSFractiSynthGoldenRatio198",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html"
         }
       ]
     },
@@ -28801,11 +28801,11 @@
           "url": "/works/Friedman2024FederatedInferenceBeliefSharing036.html"
         },
         {
-          "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference",
-          "citation_key": "Friedman2025AdaptiveBasicIncomeAuBI009",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025AdaptiveBasicIncomeAuBI009.html"
+          "title": "Active Inferants: An Active Inference Framework for Ant Colony Behavior",
+          "citation_key": "Friedman2021ActiveInferantsActiveInference075",
+          "year": 2021,
+          "domain": "Entomology",
+          "url": "/works/Friedman2021ActiveInferantsActiveInference075.html"
         }
       ]
     },
@@ -34655,18 +34655,18 @@
           "url": "/works/Friedman2026BeforePragmatismHadName003.html"
         },
         {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html"
+        },
+        {
           "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Active Inference & Behavior Engineering for Teams",
-          "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
-          "year": 2020,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         }
       ]
     },
@@ -34732,18 +34732,18 @@
           "url": "/works/Friedman2026BeforePragmatismHadName003.html"
         },
         {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html"
+        },
+        {
           "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Active Inference & Behavior Engineering for Teams",
-          "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
-          "year": 2020,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         }
       ]
     },
@@ -35139,18 +35139,18 @@
           "url": "/works/Friedman2026BeforePragmatismHadName003.html"
         },
         {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html"
+        },
+        {
           "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Active Inference & Behavior Engineering for Teams",
-          "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
-          "year": 2020,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         }
       ]
     },
@@ -35524,18 +35524,18 @@
           "url": "/works/Friedman2026BeforePragmatismHadName003.html"
         },
         {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html"
+        },
+        {
           "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Active Inference & Behavior Engineering for Teams",
-          "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
-          "year": 2020,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         }
       ]
     },
@@ -35832,18 +35832,18 @@
           "url": "/works/Friedman2026BeforePragmatismHadName003.html"
         },
         {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html"
+        },
+        {
           "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Active Inference & Behavior Engineering for Teams",
-          "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
-          "year": 2020,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         }
       ]
     },
@@ -35999,18 +35999,18 @@
           "url": "/works/Friedman2026BeforePragmatismHadName003.html"
         },
         {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html"
+        },
+        {
           "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Active Inference & Behavior Engineering for Teams",
-          "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
-          "year": 2020,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         }
       ]
     },
@@ -36153,18 +36153,18 @@
           "url": "/works/Friedman2026BeforePragmatismHadName003.html"
         },
         {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html"
+        },
+        {
           "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Active Inference & Behavior Engineering for Teams",
-          "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
-          "year": 2020,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         }
       ]
     },
@@ -37633,6 +37633,13 @@
       ],
       "related_works": [
         {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html"
+        },
+        {
           "title": "Active Inference in Modeling Conflict",
           "citation_key": "Friedman2021ActiveInferenceModelingConflict076",
           "year": 2021,
@@ -37652,13 +37659,6 @@
           "year": 2022,
           "domain": "Active Inference",
           "url": "/works/Friedman2022ActiveBlockferenceCadCADActive159.html"
-        },
-        {
-          "title": "An Active Inference Ontology for Decentralized Science",
-          "citation_key": "Friedman2022ActiveInferenceOntologyDecentralized066",
-          "year": 2022,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2022ActiveInferenceOntologyDecentralized066.html"
         }
       ]
     },
@@ -38764,18 +38764,18 @@
           "url": "/works/Friedman2026BeforePragmatismHadName003.html"
         },
         {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html"
+        },
+        {
           "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Active Inference & Behavior Engineering for Teams",
-          "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
-          "year": 2020,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         }
       ]
     },
@@ -39004,18 +39004,18 @@
           "url": "/works/Friedman2026BeforePragmatismHadName003.html"
         },
         {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html"
+        },
+        {
           "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Active Inference & Behavior Engineering for Teams",
-          "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
-          "year": 2020,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         }
       ]
     },
@@ -40181,18 +40181,18 @@
           "url": "/works/Friedman2026BeforePragmatismHadName003.html"
         },
         {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html"
+        },
+        {
           "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Active Inference & Behavior Engineering for Teams",
-          "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
-          "year": 2020,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         }
       ]
     },
@@ -40643,18 +40643,18 @@
           "url": "/works/Friedman2026BeforePragmatismHadName003.html"
         },
         {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html"
+        },
+        {
           "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Active Inference & Behavior Engineering for Teams",
-          "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
-          "year": 2020,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         }
       ]
     },
@@ -40705,7 +40705,7 @@
           "title": "Beacons - pre emulation of social cortex",
           "citation_key": "Friedman2025BeaconsPreEmulationSocial132",
           "year": 2025,
-          "domain": "Genetics & Biomedical",
+          "domain": "Computational",
           "url": "/works/Friedman2025BeaconsPreEmulationSocial132.html"
         },
         {
@@ -41255,18 +41255,18 @@
           "url": "/works/Friedman2026BeforePragmatismHadName003.html"
         },
         {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html"
+        },
+        {
           "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Active Inference & Behavior Engineering for Teams",
-          "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
-          "year": 2020,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         }
       ]
     },
@@ -45088,18 +45088,18 @@
           "url": "/works/Friedman2026COGANTDeterministicCodebaseGNN169.html"
         },
         {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html"
+        },
+        {
           "title": "Introduction to Biology: A Generative Approach",
           "citation_key": "Friedman2026IntroductionBiologyGenerativeApproach117",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026IntroductionBiologyGenerativeApproach117.html"
-        },
-        {
-          "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
-          "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
         }
       ]
     },
@@ -48686,11 +48686,11 @@
           "url": "/works/Friedman2017TwoLineagesThatNeed102.html"
         },
         {
-          "title": "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior",
-          "citation_key": "Friedman2019PhysiologyForagerHydrationVariation095",
-          "year": 2019,
+          "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
+          "citation_key": "Friedman2018RoleDopamineCollectiveRegulation100",
+          "year": 2018,
           "domain": "Entomology",
-          "url": "/works/Friedman2019PhysiologyForagerHydrationVariation095.html"
+          "url": "/works/Friedman2018RoleDopamineCollectiveRegulation100.html"
         }
       ]
     },
@@ -51828,11 +51828,11 @@
           "url": "/works/Friedman2024FederatedInferenceBeliefSharing036.html"
         },
         {
-          "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference",
-          "citation_key": "Friedman2025AdaptiveBasicIncomeAuBI009",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025AdaptiveBasicIncomeAuBI009.html"
+          "title": "Active Inferants: An Active Inference Framework for Ant Colony Behavior",
+          "citation_key": "Friedman2021ActiveInferantsActiveInference075",
+          "year": 2021,
+          "domain": "Entomology",
+          "url": "/works/Friedman2021ActiveInferantsActiveInference075.html"
         }
       ]
     },
@@ -53019,13 +53019,6 @@
       ],
       "related_works": [
         {
-          "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference",
-          "citation_key": "Friedman2025AdaptiveBasicIncomeAuBI009",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025AdaptiveBasicIncomeAuBI009.html"
-        },
-        {
           "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
           "year": 2018,
@@ -53045,6 +53038,13 @@
           "year": 2022,
           "domain": "Active Inference",
           "url": "/works/Friedman2022CanonicalNeuralNetworksPerform140.html"
+        },
+        {
+          "title": "Comments on National Digital Twins R&D Strategic Plan",
+          "citation_key": "Friedman2024CommentsNationalDigitalTwins033",
+          "year": 2024,
+          "domain": "Cognitive Security",
+          "url": "/works/Friedman2024CommentsNationalDigitalTwins033.html"
         }
       ]
     },
@@ -54566,13 +54566,6 @@
       ],
       "related_works": [
         {
-          "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference",
-          "citation_key": "Friedman2025AdaptiveBasicIncomeAuBI009",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025AdaptiveBasicIncomeAuBI009.html"
-        },
-        {
           "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
           "year": 2018,
@@ -54592,6 +54585,13 @@
           "year": 2022,
           "domain": "Active Inference",
           "url": "/works/Friedman2022CanonicalNeuralNetworksPerform140.html"
+        },
+        {
+          "title": "Comments on National Digital Twins R&D Strategic Plan",
+          "citation_key": "Friedman2024CommentsNationalDigitalTwins033",
+          "year": 2024,
+          "domain": "Cognitive Security",
+          "url": "/works/Friedman2024CommentsNationalDigitalTwins033.html"
         }
       ]
     },
@@ -57583,11 +57583,11 @@
           "url": "/works/Friedman2024FederatedInferenceBeliefSharing036.html"
         },
         {
-          "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference",
-          "citation_key": "Friedman2025AdaptiveBasicIncomeAuBI009",
+          "title": "Towards a Science of Consciousness and Social Complexity... For Ants",
+          "citation_key": "Friedman2025TowardsScienceConsciousnessSocial028",
           "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025AdaptiveBasicIncomeAuBI009.html"
+          "domain": "Entomology",
+          "url": "/works/Friedman2025TowardsScienceConsciousnessSocial028.html"
         }
       ]
     },
@@ -65912,11 +65912,11 @@
           "url": "/works/Friedman2016ContextDependentExpressionForaging104.html"
         },
         {
-          "title": "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior",
-          "citation_key": "Friedman2019PhysiologyForagerHydrationVariation095",
-          "year": 2019,
+          "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
+          "citation_key": "Friedman2018RoleDopamineCollectiveRegulation100",
+          "year": 2018,
           "domain": "Entomology",
-          "url": "/works/Friedman2019PhysiologyForagerHydrationVariation095.html"
+          "url": "/works/Friedman2018RoleDopamineCollectiveRegulation100.html"
         }
       ]
     },
@@ -72728,11 +72728,11 @@
           "url": "/works/Friedman2025TowardsScienceConsciousnessSocial028.html"
         },
         {
-          "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
-          "citation_key": "Friedman2026DataDescriptorTemplateSchema192",
+          "title": "Prior Cognitive Art",
+          "citation_key": "Friedman2026PriorCognitiveArt194",
           "year": 2026,
           "domain": "Active Inference",
-          "url": "/works/Friedman2026DataDescriptorTemplateSchema192.html"
+          "url": "/works/Friedman2026PriorCognitiveArt194.html"
         }
       ]
     },
@@ -74422,18 +74422,18 @@
           "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
         },
         {
+          "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
+          "citation_key": "Friedman2018RoleDopamineCollectiveRegulation100",
+          "year": 2018,
+          "domain": "Entomology",
+          "url": "/works/Friedman2018RoleDopamineCollectiveRegulation100.html"
+        },
+        {
           "title": "Active Inferants: An Active Inference Framework for Ant Colony Behavior",
           "citation_key": "Friedman2021ActiveInferantsActiveInference075",
           "year": 2021,
           "domain": "Entomology",
           "url": "/works/Friedman2021ActiveInferantsActiveInference075.html"
-        },
-        {
-          "title": "Canonical neural networks perform active inference",
-          "citation_key": "Friedman2022CanonicalNeuralNetworksPerform140",
-          "year": 2022,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2022CanonicalNeuralNetworksPerform140.html"
         }
       ]
     },
@@ -79186,18 +79186,18 @@
           "url": "/works/Friedman2021ActiveInferenceModelingConflict076.html"
         },
         {
+          "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference",
+          "citation_key": "Friedman2025AdaptiveBasicIncomeAuBI009",
+          "year": 2025,
+          "domain": "Computational",
+          "url": "/works/Friedman2025AdaptiveBasicIncomeAuBI009.html"
+        },
+        {
           "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
           "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
-        },
-        {
-          "title": "AGEINT: Agentic Intelligence",
-          "citation_key": "Friedman2026AGEINTAgenticIntelligence170",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
         }
       ]
     },
@@ -81432,6 +81432,13 @@
           "url": "/works/Friedman2023GeneralizedNotationNotationActive056.html"
         },
         {
+          "title": "GeneralizedNotationNotation (GNN)",
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html"
+        },
+        {
           "title": "Computational Complexity and Energetics of the Ant Stack",
           "citation_key": "Friedman2025ComputationalComplexityEnergeticsAnt011",
           "year": 2025,
@@ -81444,13 +81451,6 @@
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026ActiveInferenceMultiTrack124.html"
-        },
-        {
-          "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
-          "citation_key": "Friedman2026AlphaCOGANTRecursiveCorporateSelf178",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026AlphaCOGANTRecursiveCorporateSelf178.html"
         }
       ]
     },
@@ -82466,11 +82466,11 @@
           "url": "/works/Friedman2026AlphaCOGANTRecursiveCorporateSelf178.html"
         },
         {
-          "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
-          "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
+          "title": "GeneralizedNotationNotation (GNN)",
+          "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
           "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026GeneralizedNotationNotationGNN168.html"
         }
       ]
     },
@@ -84319,13 +84319,6 @@
           "url": "/works/Friedman2023GenerativeResearchTeamsActive057.html"
         },
         {
-          "title": "Writing on Curio Cards for the \"On NFT\" book",
-          "citation_key": "Friedman2024WritingCurioCardsNFT044",
-          "year": 2024,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2024WritingCurioCardsNFT044.html"
-        },
-        {
           "title": "5th Applied Active Inference Symposium — Abstract Book",
           "citation_key": "Friedman20255thAppliedActiveInference008",
           "year": 2025,
@@ -84338,6 +84331,13 @@
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026COGANTDeterministicCodebaseGNN169.html"
+        },
+        {
+          "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+          "citation_key": "Friedman2026CognitiveDiagramsReviewingCategorical112",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026CognitiveDiagramsReviewingCategorical112.html"
         }
       ]
     },
@@ -86340,18 +86340,18 @@
           "url": "/works/Friedman2016ContextDependentExpressionForaging104.html"
         },
         {
-          "title": "Writing on Curio Cards for the \"On NFT\" book",
-          "citation_key": "Friedman2024WritingCurioCardsNFT044",
-          "year": 2024,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2024WritingCurioCardsNFT044.html"
-        },
-        {
           "title": "Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States",
           "citation_key": "Friedman2025ThoughtseedsHierarchicalAgenticFramework027",
           "year": 2025,
           "domain": "Active Inference",
           "url": "/works/Friedman2025ThoughtseedsHierarchicalAgenticFramework027.html"
+        },
+        {
+          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative001.html"
         }
       ]
     },
@@ -86413,18 +86413,18 @@
           "url": "/works/Friedman2016ContextDependentExpressionForaging104.html"
         },
         {
-          "title": "Writing on Curio Cards for the \"On NFT\" book",
-          "citation_key": "Friedman2024WritingCurioCardsNFT044",
-          "year": 2024,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2024WritingCurioCardsNFT044.html"
-        },
-        {
           "title": "Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States",
           "citation_key": "Friedman2025ThoughtseedsHierarchicalAgenticFramework027",
           "year": 2025,
           "domain": "Active Inference",
           "url": "/works/Friedman2025ThoughtseedsHierarchicalAgenticFramework027.html"
+        },
+        {
+          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative001.html"
         }
       ]
     },

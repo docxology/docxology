@@ -1,8 +1,8 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Why Paleolithic Rockstars were both enigmatic and sporadic"
-description: "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression. The work examines cave paintings and rock art as evidence of early human cognitiv..."
-tags: ["paleolithic-art", "cave-paintings", "cognitive-evolution", "consciousness", "aesthetic-experience", "rock-art"]
+description: "No abstract is recorded for this work yet; see the DOI or bibliography link."
+tags: ["paleolithicrockstars"]
 domain: "Genetics & Biomedical"
 citation: "Dean Tickles, Daniel Ari Friedman (2024). *Why Paleolithic Rockstars were both enigmatic and sporadic*. Physics of Life Reviews."
 doi: "10.1016/j.plrev.2024.04.010"
@@ -14,7 +14,7 @@ doi: "10.1016/j.plrev.2024.04.010"
 
 ## Context
 
-This work addresses topics in **Genetics & Biomedical**: Paleolithic art, cave paintings, cognitive evolution, consciousness.
+This work addresses topics in **Genetics & Biomedical**: PaleolithicRockstars.
 
 ## Methods
 
@@ -45,7 +45,7 @@ Verification points for this work:
 
 ## Prerequisites
 
-- Familiarity with Paleolithic art, cave paintings, cognitive evolution
+- Familiarity with PaleolithicRockstars
 - Background in Genetics & Biomedical fundamentals
 - Access to source repository: N/A
 

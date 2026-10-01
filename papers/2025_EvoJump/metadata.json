@@ -18,7 +18,13 @@
     }
   ],
   "description": "Biological development unfolds as a stochastic process characterized by continuous variation and discrete transitions, yet traditional analytical methods fail to capture this complexity, and we present EvoJump, a unified computational framework that models developmental trajectories as stochastic processes analyzed through cross-sectional laser plane views of phenotypic distributions. EvoJump integrates multiple stochastic process models including jump-diffusion, fractional Brownian motion, Cox-Ingersoll-Ross, and L&eacute;vy processes with advanced statistical methods including wavelet analysis, copula modeling, extreme value theory, and regime-switching detection, enabling analysis of developmental trajectories and evolutionary constraints, prediction of phenotypic outcomes with uncertainty quantification, and identification of developmental phase transitions and dependencies. Implemented in Python with comprehensive testing framework and extensive documentation, EvoJump bridges quantitative genetics and modern computational methods, enabling researchers to address fundamental questions about the mechanistic basis of phenotypic evolution across ontogeny, and the framework demonstrates robust performance with synthetic data validation and scales efficiently to large phenotyping datasets. All methods and the material for generating the paper are available in https://github.com/docxology/EvoJump",
-  "keywords": [],
+  "keywords": [
+    "EvoJump",
+    "stochastic modeling",
+    "ontogenetic trajectories",
+    "jump-diffusion",
+    "fractional Brownian motion"
+  ],
   "files": [
     {
       "name": "EvoJump_DAF_9-30-2025.pdf",
@@ -86,5 +92,16 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Software/methods paper; validation is on synthetic data and a simulated case study, not new empirical biological data.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "Biological development unfolds as a stochastic process characterized by continuous variation and discrete transitions, yet traditional analytical methods fail to capture this complexity, and we present EvoJump, a unified computational framework that models developmental trajectories as stochastic processes analyzed through cross-sectional laser plane views of phenotypic distributions. EvoJump integrates multiple stochastic process models including jump-diffusion, fractional Brownian motion, Cox-Ingersoll-Ross, and Lévy processes with advanced statistical methods including wavelet analysis, copula modeling, extreme value theory, and regime-switching detection, enabling analysis of developmental trajectories and evolutionary constraints, prediction of phenotypic outcomes with uncertainty quantification, and identification of developmental phase transitions and dependencies. Implemented in Python with comprehensive testing framework and extensive documentation, EvoJump bridges quantitative genetics and modern computational methods, enabling researchers to address fundamental questions about the mechanistic basis of phenotypic evolution across ontogeny, and the framework demonstrates robust performance with synthetic data validation and scales efficiently to large phenotyping datasets. All methods and the material for generating the paper are available in https://github.com/docxology/EvoJump",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
+  },
+  "keywords_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "basis": "Terms selected from the document subject and methods; replaces inaccurate hand-seeded keywords"
   }
 }

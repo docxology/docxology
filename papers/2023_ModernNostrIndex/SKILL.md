@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Modern Nostr Index Card-based Knowledge Engineering"
-description: "Some concepts explored related to Knowledge Engineering, Nostr, Large Language Models, Complexity, and more.&nbsp;"
+description: "Some concepts explored related to Knowledge Engineering, Nostr, Large Language Models, Complexity, and more."
 tags: ["nostr", "complexity", "large-language-model", "knowledge-engineering"]
 domain: "Active Inference"
 citation: "Andrew Claros, Daniel Friedman (2023). *Modern Nostr Index Card-based Knowledge Engineering*. Zenodo."

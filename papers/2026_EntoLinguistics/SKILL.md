@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology"
-description: "<p>Release v1.1.1 of the Ento-Linguistics research project.</p><p>Corpus: 7,609 PubMed abstracts (full search surface drained), 7,073 PMC open-access full texts, 2,460 BHL historical documents (1850&ndash;1970), 61 arXiv preprints, 536/536 OpenAlex c..."
+description: "Scientific language does not merely describe biological phenomena; it actively constitutes the generative models through which researchers parse complex systems. This paper makes three core contributions to understanding—and correcting—the epistemic ..."
 tags: ["entolinguistics"]
 domain: "Entomology"
 citation: "Daniel Ari Friedman, Tucker Cahill Chambers (2026). *Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology*. Zenodo."

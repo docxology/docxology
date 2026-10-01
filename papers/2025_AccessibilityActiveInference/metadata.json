@@ -89,5 +89,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Letter of intent (grant proposal to the Dana Foundation Frontiers program). Methods and findings are proposed activities and deliverables, not completed results.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Development. The proposal identifies technical, academic, linguistic, and cultural barriers to disseminating high-quality Active Inference materials and cognitive modeling practices, and proposes open-source educational resources to address these gaps at different education levels.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Retained source-grounded summary"
   }
 }

@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "On free will or the lack thereof (interview with Robert Sapolsky)"
-description: "In this interview, Robert Sapolsky outlines his view on Free Will, anticipating his book Determined: The Science of Life Without Free Will. Topics covered include neuroscience, genetics, environmental..."
+description: "In this interview, Robert Sapolsky outlines his view on Free Will and related topics. The discussion anticipates his upcoming book Determined: The Science of Life Without Free Will. Various topics are covered at the intersection of neuroscience with ..."
 tags: ["free-will", "determinism", "robert-sapolsky", "neuroscience", "behavioral-genetics", "philosophy", "consciousness", "moral-philosophy"]
 domain: "Genetics & Biomedical"
 citation: "Robert Sapolsky, Alexandra Mikhailova, Daniel Friedman (2022). *On free will or the lack thereof (interview with Robert Sapolsky)*. ALIUS Bulletin."

@@ -14,7 +14,7 @@
 
 ## Keywords
 
-`honey bees` · `Apis mellifera` · `gene expression` · `RNA-Seq` · `novel traits` · `taxonomically restricted genes` · `coding sequence evolution`
+`honey bees` · `Apis mellifera` · `tissue-specific gene expression` · `meta-analysis` · `RNA-Seq` · `bioinformatics`
 
 ## Methods
 

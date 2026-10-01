@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧬 Beacons - pre emulation of social cortex
+# 💻 Beacons - pre emulation of social cortex
 
 **andrew djuwidja, Daniel Friedman** (2025) · *Zenodo*
 

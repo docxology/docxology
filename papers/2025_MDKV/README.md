@@ -14,7 +14,7 @@
 
 ## Keywords
 
-`MDKV` · `Markdown` · `key-value format` · `structured data` · `document specification` · `YAML-free` · `round-trip transformation`
+`MDKV` · `Markdown` · `multitrack documents` · `ZIP container` · `YAML manifest` · `round-trip export`
 
 ## Methods
 

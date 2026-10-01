@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The P3IF: Properties, Processes, and Perspectives Inter-Framework"
-description: "The Properties, Processes, and Perspectives Inter-Framework (P3IF) multiplexes interdisciplinary requirements frameworks to manage information risk and foster cognitive security. P3IF provides structu..."
+description: "Requirements engineering frameworks have historically been developed in the context of cybersecurity and have tended to focus almost exclusively on the technical and operational aspects of data security. Now, however, frameworks are being stretched t..."
 tags: ["p3if", "information-risk", "cognitive-security", "interdisciplinary-frameworks", "requirements-management", "dhs", "health-security"]
 domain: "Cognitive Security"
 citation: "Thomas M. Wilkinson, RJ Cordes, Scott David, Daniel Ari Friedman (2023). *The P3IF: Properties, Processes, and Perspectives Inter-Framework*. Zenodo."

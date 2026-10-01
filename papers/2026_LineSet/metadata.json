@@ -89,5 +89,25 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "full_text.md (from line_set_combined.pdf) is 'The Line Set: The Collected Volume', compiling 5 works unchanged: The Line Set (sections 1-10) plus Personal Red Lines for Development, Black Line, Golden Line, and White Line. This summary covers only The Line Set work named in the bibliography. The PDF shows DOI 10.5281/zenodo.21754244 (collected volume) while README/metadata use 10.5281/zenodo.21754243; the bibliography entry may correspond to the compiled volume rather than the standalone paper.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "artifact_doi": "10.5281/zenodo.21754244",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.21754244",
+  "concept_doi": "10.5281/zenodo.21754243",
+  "doi_role_verification": {
+    "date": "2026-10-01",
+    "source": "https://zenodo.org/api/records/21754244",
+    "response_sha256": "8a699b891a0515290e6677213ff317702d52d925bcda503b642d4bf389807f99",
+    "note": "The archived local PDF matches the registered version-file MD5 and size. The concept DOI remains the citation identity; the printed version DOI identifies the archived artifact.",
+    "local_pdf_checks": [
+      {
+        "path": "papers/2026_LineSet/line_set_combined.pdf",
+        "size_bytes": 22672214,
+        "md5": "2368ccd965706d43be340c5e03d6f3f2",
+        "sha256": "00fe16032bb4965b226a7770718177c6843ef0d08c413d7b82f4261b929b6838",
+        "matching_registered_files": [
+          "line_set_combined.pdf"
+        ]
+      }
+    ]
   }
 }

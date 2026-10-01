@@ -1,9 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "To comment or not to comment"
-version: "v1.1"
-date-released: "2022-06-16"
+title: "To comment or not to comment, that is the question!"
+date-released: 2023
 doi: 10.1016/j.plrev.2023.06.002
 url: "https://doi.org/10.1016/j.plrev.2023.06.002"
 authors:
@@ -19,12 +18,3 @@ identifiers:
   - type: url
     value: "https://doi.org/10.1016/j.plrev.2023.06.002"
     description: "Canonical citation DOI resolver"
-  - type: doi
-    value: "10.5281/zenodo.5573946"
-    description: "Version/download DOI (Zenodo artifact)"
-  - type: url
-    value: "https://doi.org/10.5281/zenodo.5573946"
-    description: "Version/download DOI resolver (Zenodo artifact)"
-  - type: url
-    value: "https://zenodo.org/records/5573946"
-    description: "Version/download landing page (Zenodo artifact)"

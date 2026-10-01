@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology"
-description: "Before Pragmatism Had a Name examines how William Blake's America: A Prophecy anticipates American anticipatory epistemology. The paper identifies six structural convergences between Blake's prophetic..."
+description: "Before Pragmatism Had a Name examines how William Blake's America: A Prophecy anticipates American anticipatory epistemology. The paper identifies six structural convergences between Blake's prophetic vision and pragmatist philosophy, arguing that Bl..."
 tags: ["william-blake", "pragmatism", "anticipatory-epistemology", "america-a-prophecy", "peirce", "dewey", "james", "prophetic-vision"]
 domain: "Art & Synergetics"
 citation: "Daniel Ari Friedman (2026). *Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology*. Zenodo."

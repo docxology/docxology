@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The MutAnts are here"
-description: "The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior. In this issue of..."
+description: "The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior. In this issue of Cell, Trible et al. (2017) and Yan et al. (2017) ..."
 tags: ["crispr/cas9", "orco-gene", "olfactory-receptor", "ant-genetics", "ooceraea-biroi", "harpegnathos-saltator", "social-behavior", "pheromone", "gene-knockout"]
 domain: "Entomology"
 citation: "Daniel A. Friedman, Deborah M. Gordon, Liqun Luo (2017). *The MutAnts are here*. Cell."

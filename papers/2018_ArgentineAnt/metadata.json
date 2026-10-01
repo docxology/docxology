@@ -28,17 +28,17 @@
       "name": "Deborah M. Gordon"
     }
   ],
-  "description": "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the...",
-  "abstract": "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the ecological success of Argentine ants and the behavioral, genetic, and chemical mechanisms underlying their colony organization. Unlike most ant species, Argentine ants show reduced intraspecific aggression, allowing colony fusion and supercolony formation. We review the sensory ecology of nestmate ",
+  "description": "The collective behavior of ant colonies, and locomotion of individuals within a colony, both respond to changing conditions. The invasive Argentine ant (Linepithema humile) thrives in Mediterranean climates with hot, dry summers and colder, wet winters. However, its foraging behavior and locomotion has rarely been studied in the winter. We examined how the foraging behavior of three distinct L. humile colonies was related to environmental conditions and the locomotion of workers during winter in northern California. We found that colonies foraged most between 10 and 15˚C, regardless of the maximum daily temperature. Worker walking speed was positively associated with temperature (range 6–24˚C) and negatively associated with humidity (range 25–93%RH). All colonies foraged during all day and night hours in a predictable daily cycle, with a correlation between the rate of incoming and outgoing foragers. Foraging activity was unrelated to the activity of a competing native ant species, Prenolepis imparis, which was present in low abundance, and ceased only during heavy rain when ants left foraging trails and aggregated in small sheltered areas on trees.",
+  "abstract": "The collective behavior of ant colonies, and locomotion of individuals within a colony, both respond to changing conditions. The invasive Argentine ant (Linepithema humile) thrives in Mediterranean climates with hot, dry summers and colder, wet winters. However, its foraging behavior and locomotion has rarely been studied in the winter. We examined how the foraging behavior of three distinct L. humile colonies was related to environmental conditions and the locomotion of workers during winter in northern California. We found that colonies foraged most between 10 and 15˚C, regardless of the maximum daily temperature. Worker walking speed was positively associated with temperature (range 6–24˚C) and negatively associated with humidity (range 25–93%RH). All colonies foraged during all day and night hours in a predictable daily cycle, with a correlation between the rate of incoming and outgoing foragers. Foraging activity was unrelated to the activity of a competing native ant species, Prenolepis imparis, which was present in low abundance, and ceased only during heavy rain when ants left foraging trails and aggregated in small sheltered areas on trees.",
   "keywords": [
     "Argentine ant",
     "Linepithema humile",
     "invasive species",
-    "supercolony",
-    "nestmate recognition",
-    "collective behavior",
-    "chemical ecology",
-    "cuticular hydrocarbons"
+    "winter foraging",
+    "locomotion",
+    "temperature",
+    "humidity",
+    "collective behavior"
   ],
   "methods": [
     {
@@ -95,5 +95,21 @@
     "work_kind": "empirical",
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Passage recovered from the document",
+    "evidence_source": "full_text.md"
+  },
+  "description_provenance": {
+    "source": "abstract",
+    "date": "2026-10-01",
+    "basis": "Replaced an inaccurate hand-seeded description with the curated document summary"
+  },
+  "keywords_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "basis": "Terms selected from the document subject and methods; replaces inaccurate hand-seeded keywords"
   }
 }

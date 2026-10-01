@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "MVEE: A Framework for Evolutionary Studies"
-description: "How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? This presentation introduces the Multilevel Variational Ecology and Evolution (MVE..."
+description: "Research Question: How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? Goal: Extend Variational Neuroethology (Ramstead et al. 2017) to specify a tractable general framework for all Ev..."
 tags: ["mvee", "evolutionary-theory", "multilevel-evolution", "phenotypic-plasticity", "eco-evo-devo", "variational-methods", "multilevel-selection", "open-ended-evolution"]
 domain: "Presentations & Media"
 citation: "Daniel Friedman (2018). *MVEE: A Framework for Evolutionary Studies*. Presentation."

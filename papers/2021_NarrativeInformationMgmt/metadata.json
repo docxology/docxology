@@ -102,5 +102,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Conceptual/review paper proposing a framework; domain sections were authored by different coauthors (Friedman wrote the genomics section). No empirical data collection.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "There are many areas of research defined by their interest in information dynamics related to facilitating organizational sensemaking, such as knowledge management, information management, and library science, and many more areas of research, disciplines, and even hobbies which are facing information-related challenges. While all may be concerned with very similar challenges, lack of information exchange and common ontology between these areas may be causing silos, missed opportunities, and potentially even friction among areas. In this paper, we address the need for synthesis and exchange of knowledge, tools, and approaches among various fields by proposing Narrative Information Management (NIM) as a unifying term and framework for the fundamental features and challenges of facilitating collective sensemaking. Through this framework, we offer an initial common set of features of impactful information systems found in literature on information-focused disciplines, such as knowledge management, and explore what insights and ad-hoc solutions may be found in an eclectic set of fields facing information challenges, including personal finance, ancestry research, hybrid cloud infrastructure security, translational neuroscience, and genomics. Finally, we offer recommendations for future research.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
   }
 }

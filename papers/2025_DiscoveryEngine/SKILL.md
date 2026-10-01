@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes"
-description: "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the scientific discovery process as an inference problem..."
+description: "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the scientific discovery process as an inference problem, where hypotheses are generated, tested, and refi..."
 tags: ["discovery-engine", "automated-discovery", "active-inference", "scientific-reasoning", "hypothesis-generation", "computational-science"]
 domain: "Computational"
 citation: "Vladimir Baulin, Austin Cook, Daniel Friedman, Janna Lumiruusu, Andrew Pashea, Shagor Rahman, Benedikt Waldeck (2025). *The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes*. ArXiv."

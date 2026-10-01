@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse"
-description: "This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data. We develop a Digital Rhetorical Ecosystem three-tiered model..."
+description: "This paper makes a case for integrating frameworks from two different knowledge domains, rhetorical studies and ecological studies, to catalog, monitor, and study digital image meme data, in order to support a more robust understanding of how memes p..."
 tags: ["digital-rhetoric", "image-memes", "dre3-model", "narrative-ecosystems", "rhetorical-ecology", "sensemaking", "computational-discourse-analysis"]
 domain: "Cognitive Security"
 citation: "Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman (2021). *Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse*. Zenodo."

@@ -435,41 +435,33 @@ Pipeline-streamlining and docs-accuracy pass (PRs #27/#28 and follow-ups):
 - Priority: P1
 - Owner: RESEARCHER / ARCHIVIST
 - Trigger: next bibliography pass, or any per-paper review
-- Status (2026-10-01): the core is done. 190 folders carry
-  evidence-grounded methods/findings (see CHANGELOG 2026-10-01) and 70
-  displayed abstracts were adjudicated against the text. Remaining:
-- Archive the real documents for **#100** `2018_DopamineForaging`
-  (iScience 2018, open access, 10.1016/j.isci.2018.09.001) and **#63**
-  `2023_ToComment` (Physics of Life Reviews 2023,
-  10.1016/j.plrev.2023.06.002), then run
-  `extract_paper_texts.py --only <folder>` and summarize them with the
-  grounded procedure. Both folders currently hold metadata only. The
-  displayed abstract for #100 is unverified seed text.
-- Three folders have no full text, so they have no grounded summary
-  (`2024_PaleolithicRockstars`, `2026_FocusedAttentionMeditation`,
-  `2026_GeneralizedNotationNotationGNN`). Archive their documents where the
-  license allows.
-- Registry/document discrepancies to decide: **#168** GNN (latest Zenodo
-  version lists only Friedman; cache still credits the community
-  contributors); **#159** Active Blockference (Crossref issues the chapter in
+- Status (2026-10-01): completed curation and keep/change decisions are in
+  [the accuracy report](reports/bibliography_accuracy_2026-10-01.md).
+  Current archive coverage follows [the generated snapshot](reports/current_counts.md).
+  Remaining:
+- Acquire licensed full text for **#63** `2023_ToComment`,
+  `2024_PaleolithicRockstars`, and `2026_FocusedAttentionMeditation`, then
+  extract and summarize from those sources. Direct publisher/registry checks
+  found no accessible licensed full text. Unsupported seed content has been
+  cleared; the meditation chapter retains a labeled publisher synopsis.
+- Registry/document discrepancies to decide: **#159** Active Blockference (Crossref issues the chapter in
   2023, but changing the year re-slugs the frozen URL); **#12** EvoJump and
   **#26** Discovery Engine short titles (a full title changes the frozen
-  slug); **#108** print vs online year; **#33** Digital Twins comment (the
+  slug); **#33** Digital Twins comment (the
   registry lists only Cordes; the document names Zargham, Sisson, David,
   Friedman, Cordes); **#29** Aligning AIO to SUMO (the registry lists
   "Maybell, Scott Ryan", who does not appear in the paper's 13-author list);
-  PDF-vs-catalogue title variants for #165 iTrace, #207
-  THALIA, #166 DemoCreate, #74 TrustFinder; and version-vs-concept DOIs
-  printed in the PDFs of Skillarum, SilverLine and LineSet. #201 LineSet's
-  PDF is the five-work collected volume.
+  and #74 TrustFinder's full-title variant.
 - Content inconsistencies that the grounded summaries surfaced inside the
   papers themselves (for the author): CognitiveIntegrityFramework Part 2
   corpus size (950 vs 1,475), ConvergenceAnalysisGradient Discussion vs Table
   1, MarkdownDecisionProcess GPT-2 Medium vs Small, PopulationSearch graph
   counts, TemplateApproachReproducible "fourteen" vs "eleven", and
-  DomainLanguageSpecifying six vs seven dimensions.
-- Domain labels to review: `2025_ConCatEnate`, `2025_BeaconsPreEmulation`
-  (Genetics & Biomedical), `2026_DataDescriptorTemplate`.
+  DomainLanguageSpecifying six vs seven dimensions; DopamineForaging's
+  reversed 113/160 transcript group assignments; FEPLean's aspirational vs
+  runtime claims; Symergetics' 953 vs 757 tests; and MappingWilliamBlake's
+  156 vs 162 works. Resolve in the originating publications, then update
+  the archived versions and summaries with source evidence.
 - Acceptance: each item has a recorded keep/change decision;
   `test_bibliography_authority.py` stays green
 - Dependencies: `papers/*/full_text.md`, `data/work-authors.json`,

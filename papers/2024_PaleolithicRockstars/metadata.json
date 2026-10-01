@@ -10,30 +10,11 @@
       "name": "Daniel Ari Friedman"
     }
   ],
-  "description": "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression. The work examines cave paintings and rock art as evidence of early human cognitiv...",
-  "abstract": "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression. The work examines cave paintings and rock art as evidence of early human cognitive capabilities and their connection to modern theories of consciousness and aesthetic experience.",
-  "keywords": [
-    "Paleolithic art",
-    "cave paintings",
-    "cognitive evolution",
-    "consciousness",
-    "aesthetic experience",
-    "rock art"
-  ],
-  "methods": [
-    {
-      "name": "Genomic and bioinformatic analysis",
-      "description": "Applied genomic and bioinformatic analysis approach"
-    },
-    {
-      "name": "Statistical genetics",
-      "description": "Applied statistical genetics approach"
-    }
-  ],
-  "key_findings": [
-    "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression..",
-    "The work examines cave paintings and rock art as evidence of early human cognitiv...."
-  ],
+  "description": "",
+  "abstract": "",
+  "keywords": [],
+  "methods": [],
+  "key_findings": [],
   "related_papers": [
     "2015_CryptoJews",
     "2015_EhrlichialInfection",
@@ -41,5 +22,16 @@
   ],
   "checked_at": "2026-07-01T20:50:01Z",
   "doi": "10.1016/j.plrev.2024.04.010",
-  "doi_url": "https://doi.org/10.1016/j.plrev.2024.04.010"
+  "doi_url": "https://doi.org/10.1016/j.plrev.2024.04.010",
+  "summary_provenance": {
+    "source": "none",
+    "date": "2026-10-01",
+    "notes": "No licensed full text is archived; domain-template methods and ungrounded findings have been cleared."
+  },
+  "tags": [],
+  "abstract_provenance": {
+    "source": "none",
+    "date": "2026-10-01",
+    "notes": "No abstract or licensed full text was identified in the verified publisher/registry records; the unsupported seed synopsis has been removed."
+  }
 }

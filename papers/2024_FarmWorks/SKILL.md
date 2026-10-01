@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "FarmWorks: Decentralized AI Agents for Personalized Solutions"
-description: "FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems..."
+description: "Project description submitted as part of application to Future of Life Institute - How to mitigate AI-driven power concentration Climate change intensifies agricultural challenges, requiring more and more advanced technological solutions. Small farme..."
 tags: ["farmworks", "decentralized-ai", "precision-agriculture", "active-inference", "sensor-networks", "edge-computing", "farmer-autonomy", "sustainable-agriculture", "iot", "community-driven-innovation"]
 domain: "Cognitive Security"
 citation: "Vladimir Baulin, Alex Vyatkin, Avel GUÉNIN—CARLUT, Daniel Friedman, John Bolt, Stefan Falkenstein, Parishrut Jassal, Celio Trois, Jonathan Minchin (2024). *FarmWorks: Decentralized AI Agents for Personalized Solutions*. Zenodo."

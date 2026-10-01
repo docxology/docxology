@@ -84,5 +84,25 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Very short (≈4.7 KB) instrument note; the formalism uses math-italic Unicode, quoted verbatim. The PDF lists DOI 10.5281/zenodo.22833486 while README/metadata use 10.5281/zenodo.22833485 (likely version vs concept DOI); worth checking.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "artifact_doi": "10.5281/zenodo.22833486",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.22833486",
+  "concept_doi": "10.5281/zenodo.22833485",
+  "doi_role_verification": {
+    "date": "2026-10-01",
+    "source": "https://zenodo.org/api/records/22833486",
+    "response_sha256": "16a451115bdf39f535a876a656bf0e2b0da9206c34c4f4c131a769b7c96ee017",
+    "note": "The archived local PDF matches the registered version-file MD5 and size. The concept DOI remains the citation identity; the printed version DOI identifies the archived artifact.",
+    "local_pdf_checks": [
+      {
+        "path": "papers/2026_SilverLine/silver_line_combined.pdf",
+        "size_bytes": 83420,
+        "md5": "3fc50cefc59cc9ebe9ece7ae64c06b9a",
+        "sha256": "8abeec4716a67d9bd7e8b73ef6c5535238c5f3a7775831f2bd6da913899086d2",
+        "matching_registered_files": [
+          "silver_line_combined.pdf"
+        ]
+      }
+    ]
   }
 }

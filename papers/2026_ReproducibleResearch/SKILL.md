@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
-description: "Infrastructure-as-code research lifecycle: Two-Layer Architecture, eight-stage build pipeline, Zero-Mock testing, and Documentation Duality (README + AGENTS + SKILL)."
+description: "The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools. template/ applies Infrastructure as Code to the research lifecycle, making the manuscript, test suite, and p..."
 tags: ["reproducible-research", "infrastructure-as-code", "build-pipeline", "open-science", "model-context-protocol"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication*. Zenodo."

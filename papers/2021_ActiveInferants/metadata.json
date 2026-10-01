@@ -20,7 +20,7 @@
     }
   ],
   "description": "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavi...",
-  "abstract": "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavioral modeling being applied across settings in theoretical biology and ethology. We specify and simulate a Markov decision process (MDP) model for ant colony foraging using the alternating T-maze paradigm, illustrating the model's ability to recover basic colony phenomena such as trail formation aft",
+  "abstract": "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavioral modeling that is being applied across settings in theoretical biology and ethology. The ant colony is a classic case system in the function of distributed systems in terms of stigmergic decision-making and information sharing. Here we specify and simulate a Markov decision process (MDP) model for ant colony foraging. We investigate a well-known paradigm from laboratory ant colony behavioral experiments, the alternating T-maze paradigm, to illustrate the ability of the model to recover basic colony phenomena such as trail formation after food location discovery. We conclude by outlining how the active inference ant colony foraging behavioral model can be extended and situated within a nested multiscale framework and systems approaches to biology more generally.",
   "keywords": [
     "active inference",
     "ant foraging",
@@ -80,5 +80,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Computational simulation study (no empirical ant data); authors state they did not perform extensive parameter sweeps and results are from representative runs.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Passage recovered from the document",
+    "evidence_source": "full_text.md"
   }
 }

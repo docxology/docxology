@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Emergent Teams for Complex Threats"
-description: "Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives. This paper presents the Facilitator's Catechism, an operation..."
+description: "While the underlying, fundamental principles of warfare have long remained unchanged, recent social and technological developments have necessitated new approaches to conflict management. Specifically, the introduction of nuclear weapons and the main..."
 tags: ["emergent-teams", "operations-orders", "team-formation", "innovation", "facilitation", "collective-intelligence", "hackathons", "research-accelerators"]
 domain: "Cognitive Security"
 citation: "Richard J. Cordes, Daniel Ari Friedman (2020). *Emergent Teams for Complex Threats*. Zenodo."

@@ -101,5 +101,11 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Conceptual/perspective paper built on secondary-source case vignettes; no original data.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract": "While the underlying, fundamental principles of warfare have long remained unchanged, recent social and technological developments have necessitated new approaches to conflict management. Specifically, the introduction of nuclear weapons and the maintenance of large military budgets during peacetime in the latter half of the 20th century have changed the risk calculus of conflict among state and non-state actors. Consequently, the operating environment has changed. Extant, centralized actors have experienced new adversities such as ideological warfare and sustained low intensity and gray zone conflict while new, decentralized participants have emerged and evolved. Nation states, as a part of normal operations, now have to contend with the potential for novel, emergent hazards from a myriad of Complex Threat Surfaces in littoral and other environments. We highlight how Complexity Science has been of use in the analysis of Complex Threat Surfaces in the military and within civilian organizations, particularly High Reliability Organisations or HROs. This paper discusses the intersection of Complexity Science and Military Science by focusing on analysis of counterinsurgency and counterterrorism operations. We highlight rapid reorganization, pooling collective expertise, and the assembly of novel organizational components as a potential basis for developing spontaneous expertise, actionable intelligence, and solutions to the aforementioned novel, emergent hazards.",
+  "abstract_provenance": {
+    "source": "papers/paper_metadata.json",
+    "date": "2026-10-01",
+    "basis": "Zenodo description checked against the document"
   }
 }

@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Ant Stack"
-description: "AntStack presents a multilevel framework for modeling ant colony organization, from molecular and neural processes at the individual scale through interaction networks to colony-level behavioral patte..."
+description: "AntStack presents a multilevel framework for modeling ant colony organization, from molecular and neural processes at the individual scale through interaction networks to colony-level behavioral patterns. The framework provides a structured approach ..."
 tags: ["antstack", "multilevel-modeling", "ant-colonies", "social-insects", "multiscale-biology", "colony-organization"]
 domain: "Entomology"
 citation: "Daniel Ari Friedman (2025). *The Ant Stack*. Zenodo."

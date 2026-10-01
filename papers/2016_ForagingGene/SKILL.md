@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Context-dependent expression of the foraging gene in field colonies of ants"
-description: "Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati..."
+description: "Task allocation among social insect workers is an ideal framework for studying the molecular mechanisms underlying behavioural plasticity because workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pion..."
 tags: ["foraging-gene", "pogonomyrmex-barbatus", "harvester-ants", "gene-expression", "circadian-rhythms", "task-allocation", "division-of-labor", "field-study", "behavioral-ecology"]
 domain: "Entomology"
 citation: "Krista K. Ingram, Deborah M. Gordon, Daniel A. Friedman, Michael Greene, John Kahler, Swetha Peteru (2016). *Context-dependent expression of the foraging gene in field colonies of ants*. Proceedings of the Royal Society B."
