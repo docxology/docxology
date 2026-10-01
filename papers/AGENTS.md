@@ -84,7 +84,7 @@ Additional files required
 | 🧬 Genetics & Biomedical | `2015_HoneyBeeEvolution`, `2016_NuclearStructure`, `2019_DennettExplained` |
 | 💻 Computational | `2026_DeterministicTestbedSelf`, `2026_RecoveringLLMPersona`, `2026_Triplicate`, `2026_TemplateTextbook`, `2026_BiologyTextbook` |
 | 🌍 AII Ecosystem | `2025_AII_v3`, `2024_OntologySUMO` |
-| 🎥 Presentations & Media | `2025_5thSymposium`, `2024_BioFirm`; rows with Domain 🎥 also include courses, series, and playbooks in the unified table |
+| 🎥 Presentations & Media | `2025_5thSymposium`; rows with Domain 🎥 also include courses, series, and playbooks in the unified table |
 
 Counts follow the **Domain** column in [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md) and are generated in [`../reports/current_counts.md`](../reports/current_counts.md).
 

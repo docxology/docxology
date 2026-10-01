@@ -345,7 +345,6 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 - **2026** — Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions
 - **2025** — 5th Applied Active Inference Symposium — Abstract Book · [📁](../papers/2025_5thSymposium/)
 - **2025** — Systems Processes, Active Inference, and Beyond · [📁](../papers/2025_SystemsProcesses/)
-- **2024** — BioFirm Development at Applied Active Inference Symposium 2024 · [📁](../papers/2024_BioFirm/)
 - *More entries appear in the table above.*
 
 ### 🧬 Genetics & Biomedical
