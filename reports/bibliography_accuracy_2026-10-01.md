@@ -68,3 +68,9 @@ Verification uses the repository's full test suite, Ruff, generated-layer
 validation, external-link triage and artifact-budget gate. Published commit
 parity, hosted checks, Pages deployment and live-site acceptance are separate
 evidence steps; this source-review report alone does not assert them.
+
+The subsequent [live acceptance receipt](bibliography_live_acceptance_2026-10-01.json)
+records the successful Pages deployment, its exact commit, the previous main
+commit, and seven matching server/local SHA-256 comparisons. The paired
+[site verification receipt](live_site_verification_2026-10-01.json) records
+all 17 live contract checks passing at that deployed revision.

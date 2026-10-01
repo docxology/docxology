@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-10-01T22:37:58.389029+00:00",
+  "scope": "Post-deploy byte comparison of the recovered sources, representative work pages and canonical works export. This does not establish the truth of manuscript results or execute described software.",
+  "previous_main_commit": "d3e6686200adac77c80bab2263758df8d942a201",
+  "deployment": {
+    "workflow_run_id": 36935474176,
+    "workflow_url": "https://github.com/docxology/docxology/actions/runs/36935474176",
+    "head_sha": "398050e47a9dcb2f6736310c1e4d27c8f44c6452",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-01T22:30:27Z",
+    "updated_at": "2026-10-01T22:37:24Z"
+  },
+  "live_site_receipt": "reports/live_site_verification_2026-10-01.json",
+  "source_commit": "398050e47a9dcb2f6736310c1e4d27c8f44c6452",
+  "passing": 7,
+  "checked": 7,
+  "results": [
+    {
+      "path": "papers/2018_DopamineForaging/2018_DopamineForaging.pdf",
+      "ok": true,
+      "bytes": 2454046,
+      "expected_sha256": "7325c9a11c8cd665622ec8143afb64b606cd967607e7a7cc8359411fd2e773f8",
+      "observed_sha256": "7325c9a11c8cd665622ec8143afb64b606cd967607e7a7cc8359411fd2e773f8",
+      "error": ""
+    },
+    {
+      "path": "papers/2026_GeneralizedNotationNotationGNN/GeneralizedNotationNotation_v3.6.0.pdf",
+      "ok": true,
+      "bytes": 1431074,
+      "expected_sha256": "acb7749c561b26562064421ca2f7fbca68c8b0e8a955082e5d5a3e28b50bd784",
+      "observed_sha256": "acb7749c561b26562064421ca2f7fbca68c8b0e8a955082e5d5a3e28b50bd784",
+      "error": ""
+    },
+    {
+      "path": "papers/2018_DopamineForaging/full_text.md",
+      "ok": true,
+      "bytes": 82216,
+      "expected_sha256": "1bc92765f5a2ba8543aeaa8d3b9900d8338bdc566004d25782e7dc6177c9179d",
+      "observed_sha256": "1bc92765f5a2ba8543aeaa8d3b9900d8338bdc566004d25782e7dc6177c9179d",
+      "error": ""
+    },
+    {
+      "path": "papers/2026_GeneralizedNotationNotationGNN/full_text.md",
+      "ok": true,
+      "bytes": 106073,
+      "expected_sha256": "42d7d31e6e7b3238bd571f0262c0a0d1cc8b5ceb44dfa5478269355fdfce5983",
+      "observed_sha256": "42d7d31e6e7b3238bd571f0262c0a0d1cc8b5ceb44dfa5478269355fdfce5983",
+      "error": ""
+    },
+    {
+      "path": "works/Friedman2018RoleDopamineCollectiveRegulation100.html",
+      "ok": true,
+      "bytes": 23787,
+      "expected_sha256": "d61255f40a350dd21b01bffa12220f8a779b3ea507b19bfb7ec368bbd64d6832",
+      "observed_sha256": "d61255f40a350dd21b01bffa12220f8a779b3ea507b19bfb7ec368bbd64d6832",
+      "error": ""
+    },
+    {
+      "path": "works/Friedman2026GeneralizedNotationNotationGNN168.html",
+      "ok": true,
+      "bytes": 22443,
+      "expected_sha256": "583331ebcf1d869414a8f41f6a7855d62ce0d8d56d86cf8ef765c556ce130857",
+      "observed_sha256": "583331ebcf1d869414a8f41f6a7855d62ce0d8d56d86cf8ef765c556ce130857",
+      "error": ""
+    },
+    {
+      "path": "data/works.json",
+      "ok": true,
+      "bytes": 177947,
+      "expected_sha256": "e837976ef28d29e87ecee678edfbabfda7659b6f34e3ee06626043179ad68c5e",
+      "observed_sha256": "e837976ef28d29e87ecee678edfbabfda7659b6f34e3ee06626043179ad68c5e",
+      "error": ""
+    }
+  ]
+}
