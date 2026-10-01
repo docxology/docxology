@@ -32,6 +32,9 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   Name inversion now uses only audited ORCID/name aliases. Excerpt clipping
   preserves valid complete URLs. Updated the generator dependency manifest
   and obsolete directory instructions for this public repository.
+- **Freshness workflow repair:** replaced an invalid direct secret condition
+  with a job-level availability flag; the Flickr key remains confined to its
+  own step. Independent review and `actionlint` confirmed the workflow syntax.
 
 - **Evidence-grounded paper summaries (DOC-016 core):** every paper folder
   that has full text (197 of them) now carries paper-specific Methods (801)
