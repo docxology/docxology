@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-01T18:25:11Z",
-  "source_commit_at_generation": "4d5da2e442abf545720316612a617daab3d61b4b",
+  "generated_at": "2026-10-01T18:27:44Z",
+  "source_commit_at_generation": "0b6ef98d35f516df072fcfee46a35534284018c9",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 923947003,
+    "source_bytes": 923946985,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 5882,
-    "artifact_bytes": 924986431
+    "artifact_bytes": 924986413
   },
   "included_files": [
     {
@@ -22525,8 +22525,8 @@
     },
     {
       "path": "resume/resume.pdf",
-      "bytes": 368159,
-      "sha256": "a87ac464ba6388fa96dce7683eca1b5614b41acc677712780597383f59dd8642"
+      "bytes": 368141,
+      "sha256": "76676c78f51116e0c27d0ba12f6ecb115db02b81a0a50c893392bbc45f7ee33d"
     },
     {
       "path": "resume/software-consulting.txt",
