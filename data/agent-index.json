@@ -1031,7 +1031,7 @@
     ],
     "VideoIndex": {
       "schema_version": "VideoIndex.v1",
-      "generated_at": "2026-10-01T18:16:36Z",
+      "generated_at": "2026-10-01T20:58:50Z",
       "source": "data/videos.json",
       "count": 1127,
       "counts": {
@@ -1326,11 +1326,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 923946985,
+        "source_bytes": 923981357,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
         "artifact_file_count": 5882,
-        "artifact_bytes": 924986413
+        "artifact_bytes": 925020786
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5746,9 +5746,9 @@
     "repositories": "7921e3722f3ec20c8d8a8fc5090396d3b66e4d557e732a6d1055a5d9d25cb772",
     "artworks_index": "053e66edbd2257c157f9baeb45d7ee6cf04395a59d7253ff31bd55b9d904a0d5",
     "artworks": "32bd21124bd391638295aac6bad7a0621746c296695e10b0586351ca4069f6c3",
-    "videos": "326e04532c572d2e9d8a907252d148e45dafd3a43df34653b56030ea05caa8df",
-    "videos_index": "db0fb012b46a00c28ef0c88235faf32f14d42a367026fa4ffe7a6ab958bc87b3",
-    "search": "74897cae730fe0bb8554bfb27384773c1e0799ace59dae509d39d930b7820430",
+    "videos": "68b706200243486f8c990942b8d02bf706cb3e7f9429e082150458c3c130eb58",
+    "videos_index": "b2634e28fe245b5dedc63dc3e8073f3899134a83be9b6639c0422c36f8ceb552",
+    "search": "d6d94d0891185709e2bd190eabde5a603e98255610f8f7bc4102cc5b2d1c2b6f",
     "claims": "0280de3b35468eb9509db13a912cd5669edfdbb7ebd233e4a05869ff32c573f5",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "f919983c9ce8ba33d091a3817c27346b482d593c5e0ab6e92cd58828cd208719",
@@ -5756,7 +5756,7 @@
     "people": "9edede502174d10c17933c7dff8c9c01bdbd71b49551cdf75d8c91ac81844add",
     "organizations": "41df10d84c7664a8f68807839b2a1b688b1b5b86832c5515320ea8006400be5d",
     "resume": "2453b9d4191cde814216843177cc92f214cd99fbfdf386d60e9471153baf1454",
-    "work_enrichment": "3a6289c4b95fbaad4b3fc96ad3845e3a08866a27347998a25ec9e0e3601e9b91",
+    "work_enrichment": "b588a5174fb3cb98b98d0b2f4c95d312b96cf5c0932d0dc2d547f227efa4dd16",
     "catalog": "30718f479637bee4fb12a549a0786bed43653f613401b99f92bbff5c7be69722",
     "reconciliation": "a6a852bd1784c0f12d050c74b1363ebb60001b14409497505a8504a35df0d164",
     "reproducibility": "10a84145d111866da01ee9e32780f561243dbb2e2f32d55e655bcf96f324475a",
