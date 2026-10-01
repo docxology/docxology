@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-01T17:11:34Z",
-  "source_commit_at_generation": "f3c4689bbfd5fb962d8733fea5f0cd3656c5e3fa",
+  "generated_at": "2026-10-01T17:19:45Z",
+  "source_commit_at_generation": "6ae630666c9a0a2c243d7172acee7b1dbecd2535",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 923065175,
+    "source_bytes": 923065124,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 5862,
-    "artifact_bytes": 924101056
+    "artifact_bytes": 924101005
   },
   "included_files": [
     {
@@ -12060,8 +12060,8 @@
     },
     {
       "path": "media.html",
-      "bytes": 16123,
-      "sha256": "1d9607a6e80a591b4db4aef2c492fbf3433c352869b9c7540f48f76cd68009b0"
+      "bytes": 16201,
+      "sha256": "43df20698d9ef48833db0cebc577a4e0625ebacce0e2fb1dc613faa71bcb8788"
     },
     {
       "path": "meditations.html",
@@ -12190,8 +12190,8 @@
     },
     {
       "path": "pages/BIBLIOGRAPHY.md",
-      "bytes": 71268,
-      "sha256": "e6f4fcfe77cb2f4fae46dffb54389d26b554a1ddaabffff8db04c23f31b5de2d"
+      "bytes": 71155,
+      "sha256": "20e9505737f6db84d835a7a3c25225a4bae05b063f82fcc42dd3e6f0de98f141"
     },
     {
       "path": "pages/CITE_VERIFY.md",
@@ -21800,8 +21800,8 @@
     },
     {
       "path": "papers/AGENTS.md",
-      "bytes": 9123,
-      "sha256": "f6dcd94915a73fecc53aa8c45a3877af4bc76103d40425d6e12852c5b5d90f14"
+      "bytes": 9107,
+      "sha256": "5e98c3503087eb0c67496fc70949cb3dbdd3d75a13cd4fc75cc908617f3fd211"
     },
     {
       "path": "papers/README.md",
@@ -22486,7 +22486,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 415864,
-      "sha256": "592861da405ad8102fdf01695b8eed8e54c3d3ec85318472a05f3a4e2fcafc91"
+      "sha256": "ab6ae34fa4daf8c8820cd0bd16d41204914cac5bf64642016e20c657839afc24"
     },
     {
       "path": "software.html",
