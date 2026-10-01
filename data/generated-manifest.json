@@ -608,8 +608,8 @@
     {
       "name": "Public-source review record",
       "outputs": [
-        "reports/public_source_review_2026-09-30.json",
-        "reports/public_source_review_2026-09-30.md"
+        "reports/public_source_review_2026-10-01.json",
+        "reports/public_source_review_2026-10-01.md"
       ],
       "sources": [
         "reports/public_source_snapshot_*.json",
