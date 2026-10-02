@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import glob
 import json
+import math
 import sys
 from pathlib import Path
 
@@ -29,9 +30,15 @@ def artifact_mib_from_report(path: Path) -> float:
     """Extract artifact_mib from a growth report JSON."""
     payload = json.loads(path.read_text(encoding="utf-8"))
     mib = payload.get("artifact_mib")
-    if not isinstance(mib, (int, float)):
-        raise ArtifactBudgetError(f"{path}: missing numeric 'artifact_mib'")
-    return float(mib)
+    if isinstance(mib, bool) or not isinstance(mib, (int, float)):
+        raise ArtifactBudgetError(f"{path}: 'artifact_mib' must be a finite nonnegative number")
+    try:
+        measured = float(mib)
+    except OverflowError as exc:
+        raise ArtifactBudgetError(f"{path}: 'artifact_mib' is outside the supported range") from exc
+    if not math.isfinite(measured) or measured < 0:
+        raise ArtifactBudgetError(f"{path}: 'artifact_mib' must be a finite nonnegative number")
+    return measured
 
 
 def enforce_budget(repo_root: Path, budget_mib: float = BUDGET_MIB) -> float:

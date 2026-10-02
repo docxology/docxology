@@ -1,20 +1,20 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes"
-description: "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the scientific discovery process as an inference problem, where hypotheses are generated, tested, and refi..."
-tags: ["discovery-engine", "automated-discovery", "active-inference", "scientific-reasoning", "hypothesis-generation", "computational-science"]
+name: "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes"
+description: "The prevailing model for disseminating scientific knowledge relies on individual publications dispersed across numerous journals and archives. This legacy system is ill suited to the recent exponential proliferation of publications, contributing to i..."
+tags: ["discovery-engine", "scientific-knowledge-synthesis", "llm-driven-distillation", "knowledge-artifacts", "conceptual-tensor", "knowledge-graphs", "ai-assisted-scientific-inquiry"]
 domain: "Computational"
-citation: "Vladimir Baulin, Austin Cook, Daniel Friedman, Janna Lumiruusu, Andrew Pashea, Shagor Rahman, Benedikt Waldeck (2025). *The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes*. ArXiv."
+citation: "Vladimir Baulin, Austin Cook, Daniel Friedman, Janna Lumiruusu, Andrew Pashea, Shagor Rahman, Benedikt Waldeck (2025). *The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes*. ArXiv."
 doi: "10.48550/arXiv.2505.17500"
 ---
 
-# The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes
+# The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes
 
 **Vladimir Baulin, Austin Cook, Daniel Friedman, Janna Lumiruusu, Andrew Pashea, Shagor Rahman, Benedikt Waldeck** (2025) · Computational
 
 ## Context
 
-This work addresses topics in **Computational**: Discovery Engine, automated discovery, Active Inference, scientific reasoning.
+This work addresses topics in **Computational**: Discovery Engine, scientific knowledge synthesis, LLM-driven distillation, knowledge artifacts.
 
 ## Methods
 
@@ -55,7 +55,7 @@ Verification points for this work:
 
 ## Prerequisites
 
-- Familiarity with Discovery Engine, automated discovery, Active Inference
+- Familiarity with Discovery Engine, scientific knowledge synthesis, LLM-driven distillation
 - Background in Computational fundamentals
 - Access to source repository: N/A
 

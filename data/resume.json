@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T22:08:35Z",
+  "generated_at": "2026-10-02T15:11:25Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -35,14 +35,14 @@
   },
   "metrics": {
     "works": 219,
-    "software_catalogued": 158,
-    "owned_software_catalogued": 119,
+    "software_catalogued": 159,
+    "owned_software_catalogued": 120,
     "aii_software_catalogued": 39,
     "google_scholar": {
-      "citations": 815,
+      "citations": 823,
       "h_index": 14,
-      "i10_index": 16,
-      "as_of": "2026-08-26",
+      "i10_index": 17,
+      "as_of": "2026-10-02",
       "profile_url": "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en"
     },
     "docxology_public_repositories_claim": {
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "3c3eedb0ab24524e815b14b6fcf5d597d6c80c3c4ba9e13bb1f804204ce791d2",
+      "sha256": "655f00a16d64df8cca9d22d8bb01302680d36000029b24b01674e281568c52c1",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,23 +97,23 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 177947,
-          "sha256": "e837976ef28d29e87ecee678edfbabfda7659b6f34e3ee06626043179ad68c5e"
+          "bytes": 178032,
+          "sha256": "29f481871fdc8b0b1075d590399e08f2e8ab5ad629019b2cd02f88b63bcd5d56"
         },
         {
           "path": "data/software.json",
-          "bytes": 78795,
-          "sha256": "703b528c18d18cb56934004c9261d769a7608aaff8af4436af51e2d7197e2ee8"
+          "bytes": 79285,
+          "sha256": "24f93a28ff044cfbd070564c33c8fe570825c8f7db246d326f04e2e11846d6dd"
         },
         {
           "path": "data/scholar-snapshot.json",
-          "bytes": 2264,
-          "sha256": "d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2"
+          "bytes": 2680,
+          "sha256": "d9c4b848ad04238eb731f05748bbb88e473518ffe87a422526cfd9b11651b00d"
         },
         {
           "path": "data/claims.json",
-          "bytes": 12976,
-          "sha256": "63e252827b301a561f230a4f3ad649f05db89b361a1435ffbd32e64decb5f3a1"
+          "bytes": 13025,
+          "sha256": "8153aabff59727a5710226e9c79943015f72eca1cda8f586c3ffcdc14f8ff26b"
         },
         {
           "path": "data/github-repositories.json",
@@ -2609,7 +2609,7 @@
       "domain": "🧠",
       "domain_name": "Active Inference",
       "type": "Paper",
-      "title": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+      "title": "EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.17229924",
       "doi": "10.5281/zenodo.17229924",
@@ -2972,7 +2972,7 @@
       "domain": "💻",
       "domain_name": "Computational",
       "type": "Paper",
-      "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+      "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
       "venue": "ArXiv",
       "url": "https://doi.org/10.48550/arXiv.2505.17500",
       "doi": "10.48550/arXiv.2505.17500",
@@ -4207,7 +4207,7 @@
       "domain": "🛡️",
       "domain_name": "Cognitive Security",
       "type": "Paper",
-      "title": "TrustFinder: Recommendations for Community-Based Trust Systems",
+      "title": "TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.7093836",
       "doi": "10.5281/zenodo.7093836",
@@ -6301,7 +6301,7 @@
     {
       "num": 159,
       "citation_key": "Friedman2022ActiveBlockferenceCadCADActive159",
-      "year": 2022,
+      "year": 2023,
       "domain": "🧠",
       "domain_name": "Active Inference",
       "type": "Paper",
@@ -9208,6 +9208,18 @@
       "zenodo_url": "https://doi.org/10.5281/zenodo.22816187"
     },
     {
+      "name": "OmniLatticeTextbook",
+      "url": "https://github.com/docxology/OmniLatticeTextbook",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Modular textbook project with computational models, deterministic figure generation, and manuscript validation; no publication DOI assigned at the source review",
+      "language": "HTML",
+      "stars": 0,
+      "updated_or_year": "2026-09",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
       "name": "ActiveInferenceJournal",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
       "owner": "ActiveInferenceInstitute",
@@ -9233,7 +9245,7 @@
     },
     {
       "name": "ActiveInferAnts",
-      "url": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts",
+      "url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference",
@@ -9257,7 +9269,7 @@
     },
     {
       "name": "GeneralizedNotationNotation",
-      "url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software",
@@ -9305,7 +9317,7 @@
     },
     {
       "name": "Journal-Utilities",
-      "url": "https://github.com/ActiveInferenceInstitute/Journal-Utilities",
+      "url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release",
@@ -9341,7 +9353,7 @@
     },
     {
       "name": "GEO-INFER",
-      "url": "https://github.com/ActiveInferenceInstitute/GEO-INFER",
+      "url": "https://github.com/ActiveInferenceInstitute/GEO_INFER",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "Geospatial Active Inference — applying free energy minimization to geographic systems, spatial planning, and bioregional intelligence",
@@ -9448,11 +9460,11 @@
       "zenodo_url": ""
     },
     {
-      "name": "fep_lean",
-      "url": "https://github.com/ActiveInferenceInstitute/fep_lean",
+      "name": "fep_formal",
+      "url": "https://github.com/ActiveInferenceInstitute/fep_formal",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 155-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline · · Zenodo artifact v1.1.0 · Citation DOI",
+      "description": "Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline · · Zenodo artifact v1.1.0 · Citation DOI",
       "language": "Python",
       "stars": 3,
       "updated_or_year": "2026",
@@ -9686,7 +9698,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-10-01T21:36:28+00:00",
+      "checked_at": "2026-10-02T15:11:20+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9701,7 +9713,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-10-01T21:36:28+00:00",
+      "checked_at": "2026-10-02T15:11:20+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -9772,16 +9784,16 @@
     },
     {
       "id": "google-scholar-citations",
-      "claim": "Google Scholar metrics are recorded as a dated snapshot: 815 citations, h-index 14, i10-index 16 (as of 2026-08-26).",
+      "claim": "Google Scholar metrics are recorded as a dated snapshot: 823 citations, h-index 14, i10-index 17 (as of 2026-10-02).",
       "status": "dated-snapshot",
       "sources": [
         "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en",
         "data/scholar-snapshot.json",
         "pages/VERIFICATION_LOG.md"
       ],
-      "checked_at": "2026-08-26",
+      "checked_at": "2026-10-02",
       "confidence": "high",
-      "verification_method": "Direct authenticated Chrome browser-session fetch of the canonical profile on 2026-08-26 (non-cached, non-anonymous; profile-owner controls visible): All-time 815 citations, h-index 14, i10-index 16 (Since-2021: 586 / 14 / 14).",
+      "verification_method": "Direct Chrome browser observation of the canonical profile on 2026-10-02 in an authenticated Google session (signed-in account control visible). All-time: 823 citations, h-index 14, i10-index 17; Since-2021: 594 / 14 / 15. No anonymous or search-engine cached result was used.",
       "maintenance_owner": "ARCHIVIST",
       "caveat": "Single source of truth: data/scholar-snapshot.json. Update only from a direct (non-cached) Scholar fetch, recording the new value, as_of date, and method there; regenerate surfaces via code/orchestrators/sync_scholar_metrics.py. Never publish a citation number above the most recent direct-fetch value."
     },

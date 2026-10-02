@@ -11,7 +11,7 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
-    <link rel="stylesheet" href="../../style.css?v=work-access-20261001">
+    <link rel="stylesheet" href="../../style.css?v=site-20261002">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
@@ -23,6 +23,7 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <link rel="me" href="https://www.flickr.com/photos/daniel_friedman/" title="Flickr">
     <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
+    <script src="/js/nav-toggle.js?v=nav-20261002"></script>
     <meta property="og:type" content="article">
     <meta property="og:title" content="template_pitch_deck: Reproducible, Validated Pitch-Deck Generation Documentation">
     <meta property="og:description" content="Research groups routinely need to pitch their work — to funders, partners, or collaborators — yet pitch decks are almost never treated as reproducible…">
@@ -91,38 +92,7 @@
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Overview</h2><p>Curated abstract when available.</p><div class="section-divider"></div></div>
-            <div class="overview-box"><p>Research groups routinely need to pitch their work — to funders, partners, or
-collaborators — yet pitch decks are almost never treated as reproducible
-research artifacts: they are hand-assembled in proprietary slide tools,
-contain unverifiable claims, and cannot be regenerated when the underlying
-facts change. template_pitch_deck closes that gap. It generates six
-artifacts from one token-resolved content source — short, medium, and long
-decks, each in both PDF and PPTX — with every numeric claim traced back to a
-live introspection of the repository it describes, every {{TOKEN}}
-substitution verified to have actually landed, and every sentence checked
-against a denylist of pitch-deck clichés.
-
-The flagship content pitches template_template (../../template_template/), this
-monorepo&#x27;s own autopoietic meta-project, to a meta-science and
-science-integrity audience — the kind of pitch an organization like the
-Active Inference Institute or COGSEC would actually hand to a funder. The
-rendering engine itself is new, reusable infrastructure:
-infrastructure/rendering/slide_deck.py (ReportLab, PDF) and
-infrastructure/rendering/pptx_deck.py (python-pptx) both consume the same
-DeckContent model, so a PDF and a PPTX built from identical content carry
-identical slide counts and identical text — verified by direct read-back of
-both file formats, not by inspection.
-
-Keywords: pitch deck, slide generation, reproducible research
-communication, meta-science infrastructure, token validation, PPTX, PDF
-rendering.
-
----
-Associated artifacts
-GitHub release: v1.0.0 (https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.0)
-DOI: https://doi.org/10.5281/zenodo.21281509
-Zenodo: https://zenodo.org/records/21281509
-PDF SHA-256: 66941950e2307d1e9717c0045f3db3196d7d2542c3f5ffceced00438f653c55b</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
+            <div class="overview-box"><p>Research groups routinely need to pitch their work — to funders, partners, or<br>collaborators — yet pitch decks are almost never treated as reproducible<br>research artifacts: they are hand-assembled in proprietary slide tools,<br>contain unverifiable claims, and cannot be regenerated when the underlying<br>facts change. template_pitch_deck closes that gap. It generates six<br>artifacts from one token-resolved content source — short, medium, and long<br>decks, each in both PDF and PPTX — with every numeric claim traced back to a<br>live introspection of the repository it describes, every {{TOKEN}}<br>substitution verified to have actually landed, and every sentence checked<br>against a denylist of pitch-deck clichés.</p><p>The flagship content pitches template_template (../../template_template/), this<br>monorepo&#x27;s own autopoietic meta-project, to a meta-science and<br>science-integrity audience — the kind of pitch an organization like the<br>Active Inference Institute or COGSEC would actually hand to a funder. The<br>rendering engine itself is new, reusable infrastructure:<br>infrastructure/rendering/slide_deck.py (ReportLab, PDF) and<br>infrastructure/rendering/pptx_deck.py (python-pptx) both consume the same<br>DeckContent model, so a PDF and a PPTX built from identical content carry<br>identical slide counts and identical text — verified by direct read-back of<br>both file formats, not by inspection.</p><p>Keywords: pitch deck, slide generation, reproducible research<br>communication, meta-science infrastructure, token validation, PPTX, PDF<br>rendering.</p><p>---<br>Associated artifacts<br>GitHub release: v1.0.0 (https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.0)<br>DOI: https://doi.org/10.5281/zenodo.21281509<br>Zenodo: https://zenodo.org/records/21281509<br>PDF SHA-256: 66941950e2307d1e9717c0045f3db3196d7d2542c3f5ffceced00438f653c55b</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section">
             <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation and PDFs served directly from this folder.</p><div class="section-divider"></div></div>
@@ -144,10 +114,10 @@ PDF SHA-256: 66941950e2307d1e9717c0045f3db3196d7d2542c3f5ffceced00438f653c55b</p
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../../publications.html">Unified bibliography</a> · <a href="../../works/">Works index</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/c12a6458d">build c12a6458d 2026-10-01</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/e296b3ae8">build e296b3ae8 2026-10-02</a></p>
     </footer>
-<script src="/js/search-utils.js?v=20260813"></script>
+<script src="/js/search-utils.js?v=site-20261002"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
-<script src="/js/interactive.js?v=20260813" defer></script>
+<script src="/js/interactive.js?v=site-20261002" defer></script>
 <script src="/js/menu-esc.js?v=20260813" defer></script></body>
 </html>

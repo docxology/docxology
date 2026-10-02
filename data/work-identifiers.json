@@ -1,0 +1,902 @@
+{
+  "schema_version": "WorkIdentifierRegistry.v1",
+  "policy": "Reviewed permanent numeric-ID to citation-key reservations. Editable titles, years, DOI metadata, and folder names do not alter existing keys. Retired IDs and keys are never reused.",
+  "identifiers": {
+    "1": {
+      "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
+      "status": "active"
+    },
+    "2": {
+      "citation_key": "Friedman2026ActiveInferenceJournal500002",
+      "status": "active"
+    },
+    "3": {
+      "citation_key": "Friedman2026BeforePragmatismHadName003",
+      "status": "active"
+    },
+    "4": {
+      "citation_key": "Friedman2026GoldenCompassLunarFlux004",
+      "status": "active"
+    },
+    "5": {
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkFormal005",
+      "status": "active"
+    },
+    "6": {
+      "citation_key": "Friedman2026PersonalYouTube200Livestreams006",
+      "status": "active"
+    },
+    "7": {
+      "citation_key": "Friedman2026DoorsPerceptionAreThreshold007",
+      "status": "active"
+    },
+    "8": {
+      "citation_key": "Friedman20255thAppliedActiveInference008",
+      "status": "active"
+    },
+    "9": {
+      "citation_key": "Friedman2025AdaptiveBasicIncomeAuBI009",
+      "status": "active"
+    },
+    "10": {
+      "citation_key": "Friedman2025CEREBRUMCaseEnabledReasoning010",
+      "status": "active"
+    },
+    "11": {
+      "citation_key": "Friedman2025ComputationalComplexityEnergeticsAnt011",
+      "status": "active"
+    },
+    "12": {
+      "citation_key": "Friedman2025EvoJumpStochasticModelingEvolutionary012",
+      "status": "active"
+    },
+    "13": {
+      "citation_key": "Friedman2025IncreasingAccessibilityApplicabilityActive013",
+      "status": "active"
+    },
+    "14": {
+      "citation_key": "Friedman2025MDKVMultitrackMarkdownContainer014",
+      "status": "active"
+    },
+    "15": {
+      "citation_key": "Friedman2025MarkdownDecisionProcessFramework015",
+      "status": "active"
+    },
+    "16": {
+      "citation_key": "Friedman2025CognitiveArtScienceToward016",
+      "status": "active"
+    },
+    "17": {
+      "citation_key": "Friedman2025Time017",
+      "status": "active"
+    },
+    "18": {
+      "citation_key": "Friedman2025QuadMathAnalyticalReview4D018",
+      "status": "active"
+    },
+    "19": {
+      "citation_key": "Friedman2025ResNeiSolutionDesignDocument019",
+      "status": "active"
+    },
+    "20": {
+      "citation_key": "Friedman2025SymergeticsSymbolicSynergeticsRational020",
+      "status": "active"
+    },
+    "21": {
+      "citation_key": "Friedman2025SynthesisAgentNiche021",
+      "status": "active"
+    },
+    "22": {
+      "citation_key": "Friedman2025SystemsProcessesActiveInference022",
+      "status": "active"
+    },
+    "23": {
+      "citation_key": "Friedman2025TemporalDepthCoherentSelf023",
+      "status": "active"
+    },
+    "24": {
+      "citation_key": "Friedman2025ActiveInferenceInstituteActive024",
+      "status": "active"
+    },
+    "25": {
+      "citation_key": "Friedman2025AntStack025",
+      "status": "active"
+    },
+    "26": {
+      "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
+      "status": "active"
+    },
+    "27": {
+      "citation_key": "Friedman2025ThoughtseedsHierarchicalAgenticFramework027",
+      "status": "active"
+    },
+    "28": {
+      "citation_key": "Friedman2025TowardsScienceConsciousnessSocial028",
+      "status": "active"
+    },
+    "29": {
+      "citation_key": "Friedman2024AligningActiveInferenceOntology029",
+      "status": "active"
+    },
+    "30": {
+      "citation_key": "Friedman2024BioFirmDevelopmentAtApplied030",
+      "status": "retired",
+      "reason": "Duplicate record retired in favor of catalog #128."
+    },
+    "31": {
+      "citation_key": "Friedman2024BridgingGapsImageMeme031",
+      "status": "active"
+    },
+    "32": {
+      "citation_key": "Friedman2024ChemicalTranscriptomicDiversityDo032",
+      "status": "active"
+    },
+    "33": {
+      "citation_key": "Friedman2024CommentsNationalDigitalTwins033",
+      "status": "active"
+    },
+    "34": {
+      "citation_key": "Friedman2024EnhancingPopulationBasedSearch034",
+      "status": "active"
+    },
+    "35": {
+      "citation_key": "Friedman2024FarmWorksDecentralizedAIAgents035",
+      "status": "active"
+    },
+    "36": {
+      "citation_key": "Friedman2024FederatedInferenceBeliefSharing036",
+      "status": "active"
+    },
+    "37": {
+      "citation_key": "Friedman2024FourFoldFieldsQuantum037",
+      "status": "active"
+    },
+    "38": {
+      "citation_key": "Friedman2024MathArtStream8William038",
+      "status": "active"
+    },
+    "39": {
+      "citation_key": "Friedman2024SensemakingFederationExploringFrontiers039",
+      "status": "active"
+    },
+    "40": {
+      "citation_key": "Friedman2024SharedProtentionsMultiAgent040",
+      "status": "active"
+    },
+    "41": {
+      "citation_key": "Friedman2024ActiveInferenceInstituteActive041",
+      "status": "active"
+    },
+    "42": {
+      "citation_key": "Friedman2024WayFindingInfiniteImaginarium042",
+      "status": "active"
+    },
+    "43": {
+      "citation_key": "Friedman2024WhyPaleolithicRockstarsWere043",
+      "status": "active"
+    },
+    "44": {
+      "citation_key": "Friedman2024WritingCurioCardsNFT044",
+      "status": "active"
+    },
+    "45": {
+      "citation_key": "Friedman2023GuidedTourThroughSpaces045",
+      "status": "active"
+    },
+    "46": {
+      "citation_key": "Friedman2023SinglePheromoneModelAccounts046",
+      "status": "active"
+    },
+    "47": {
+      "citation_key": "Friedman2023SnapshotPipelineTissueSpecific047",
+      "status": "active"
+    },
+    "48": {
+      "citation_key": "Friedman2023VariationalSynthesisEvolutionaryDevelopmental048",
+      "status": "active"
+    },
+    "49": {
+      "citation_key": "Friedman2023ATLASQuestionOrientedApproach049",
+      "status": "retired",
+      "reason": "Duplicate ATLAS record retired; numeric ID and published key remain reserved."
+    },
+    "50": {
+      "citation_key": "Friedman2023AccountActiveInferenceModeling050",
+      "status": "active"
+    },
+    "51": {
+      "citation_key": "Friedman2023CognitiveSovereigntyActiveInference051",
+      "status": "active"
+    },
+    "52": {
+      "citation_key": "Friedman2023CommentsAIAccountabilityPolicy052",
+      "status": "active"
+    },
+    "53": {
+      "citation_key": "Friedman2023DistributedScienceScientificProcess053",
+      "status": "active"
+    },
+    "54": {
+      "citation_key": "Friedman2023EnhancedNSFPostdoctoralReporting054",
+      "status": "active"
+    },
+    "55": {
+      "citation_key": "Friedman2023ExperimentalEntomologyAgeVideo055",
+      "status": "active"
+    },
+    "56": {
+      "citation_key": "Friedman2023GeneralizedNotationNotationActive056",
+      "status": "active"
+    },
+    "57": {
+      "citation_key": "Friedman2023GenerativeResearchTeamsActive057",
+      "status": "active"
+    },
+    "58": {
+      "citation_key": "Friedman2023AntsAging058",
+      "status": "active"
+    },
+    "59": {
+      "citation_key": "Friedman2023OpenAccessScienceNeeds059",
+      "status": "active"
+    },
+    "60": {
+      "citation_key": "Friedman2023PostdocReview20202023060",
+      "status": "active"
+    },
+    "61": {
+      "citation_key": "Friedman2023ActiveInferenceInstituteActive061",
+      "status": "active"
+    },
+    "62": {
+      "citation_key": "Friedman2023P3IFPropertiesProcessesPerspectives062",
+      "status": "active"
+    },
+    "63": {
+      "citation_key": "Friedman2023CommentOrNotComment063",
+      "status": "active"
+    },
+    "64": {
+      "citation_key": "Friedman2023TranscriptChrisFieldsPhysics064",
+      "status": "active"
+    },
+    "65": {
+      "citation_key": "Friedman2023WilliamBlakeBuckminsterFuller065",
+      "status": "active"
+    },
+    "66": {
+      "citation_key": "Friedman2022ActiveInferenceOntologyDecentralized066",
+      "status": "active"
+    },
+    "67": {
+      "citation_key": "Friedman2022CatechismTowardsActiveDiffusion067",
+      "status": "active"
+    },
+    "68": {
+      "citation_key": "Friedman2022FromUsersSenseMakers068",
+      "status": "active"
+    },
+    "69": {
+      "citation_key": "Friedman2022FreeWillOrLack069",
+      "status": "active"
+    },
+    "70": {
+      "citation_key": "Friedman2022PredictiveProcessingInterpretationMirror070",
+      "status": "active"
+    },
+    "71": {
+      "citation_key": "Friedman2022StructuringInformationCommonsOpen071",
+      "status": "active"
+    },
+    "72": {
+      "citation_key": "Friedman2022SystemsModelingCognitiveAudits072",
+      "status": "active"
+    },
+    "73": {
+      "citation_key": "Friedman2022FreeEnergyPrincipleActive073",
+      "status": "active"
+    },
+    "74": {
+      "citation_key": "Friedman2022TrustFinderRecommendationsCommunityBased074",
+      "status": "active"
+    },
+    "75": {
+      "citation_key": "Friedman2021ActiveInferantsActiveInference075",
+      "status": "active"
+    },
+    "76": {
+      "citation_key": "Friedman2021ActiveInferenceModelingConflict076",
+      "status": "active"
+    },
+    "77": {
+      "citation_key": "Friedman2021DigitalRhetoricalEcosystemAnalysis077",
+      "status": "active"
+    },
+    "78": {
+      "citation_key": "Friedman2021InnovatorSDigitalPlaybook078",
+      "status": "active"
+    },
+    "79": {
+      "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+      "status": "active"
+    },
+    "80": {
+      "citation_key": "Friedman2021NarrativeInformationManagement080",
+      "status": "active"
+    },
+    "81": {
+      "citation_key": "Friedman2021FacilitatorSCatechismPlaybook081",
+      "status": "active"
+    },
+    "82": {
+      "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
+      "status": "active"
+    },
+    "83": {
+      "citation_key": "Friedman2020CommunicationRemoteTeams083",
+      "status": "active"
+    },
+    "84": {
+      "citation_key": "Friedman2020DistributedPhysiologyMolecularBasis084",
+      "status": "active"
+    },
+    "85": {
+      "citation_key": "Friedman2020EmergentTeamsComplexThreats085",
+      "status": "active"
+    },
+    "86": {
+      "citation_key": "Friedman2020GeneExpressionVariationBrains086",
+      "status": "active"
+    },
+    "87": {
+      "citation_key": "Friedman2020HowUseKeybaseRemote087",
+      "status": "active"
+    },
+    "88": {
+      "citation_key": "Friedman2020MeasurementNaturalVariationNeurotransmitter088",
+      "status": "active"
+    },
+    "89": {
+      "citation_key": "Friedman2020GreatPresetRemoteTeams089",
+      "status": "active"
+    },
+    "90": {
+      "citation_key": "Friedman2020InnovatorSCatechism090",
+      "status": "active"
+    },
+    "91": {
+      "citation_key": "Friedman2020NeuroscienceDecisionMakingInterview091",
+      "status": "active"
+    },
+    "92": {
+      "citation_key": "Friedman2019DennettExplainedInterviewDaniel092",
+      "status": "active"
+    },
+    "93": {
+      "citation_key": "Friedman2019PhDBehavioralPhysiologicalTranscriptomic093",
+      "status": "active"
+    },
+    "94": {
+      "citation_key": "Friedman2019AntColonyAsTest094",
+      "status": "active"
+    },
+    "95": {
+      "citation_key": "Friedman2019PhysiologyForagerHydrationVariation095",
+      "status": "active"
+    },
+    "96": {
+      "citation_key": "Friedman2018ForagingBehaviorLocomotionInvasive096",
+      "status": "active"
+    },
+    "97": {
+      "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
+      "status": "active"
+    },
+    "98": {
+      "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
+      "status": "active"
+    },
+    "99": {
+      "citation_key": "Friedman2018PartnerPenPlayParallel099",
+      "status": "active"
+    },
+    "100": {
+      "citation_key": "Friedman2018RoleDopamineCollectiveRegulation100",
+      "status": "active"
+    },
+    "101": {
+      "citation_key": "Friedman2017MutAntsAreHere101",
+      "status": "active"
+    },
+    "102": {
+      "citation_key": "Friedman2017TwoLineagesThatNeed102",
+      "status": "active"
+    },
+    "103": {
+      "citation_key": "Friedman2016AntGeneticsReproductivePhysiology103",
+      "status": "active"
+    },
+    "104": {
+      "citation_key": "Friedman2016ContextDependentExpressionForaging104",
+      "status": "active"
+    },
+    "105": {
+      "citation_key": "Friedman2016InfluenceNuclearStructureFormation105",
+      "status": "active"
+    },
+    "106": {
+      "citation_key": "Friedman2015CommentaryPortugueseCryptoJews106",
+      "status": "active"
+    },
+    "107": {
+      "citation_key": "Friedman2015CouldEhrlichialInfectionCause107",
+      "status": "active"
+    },
+    "108": {
+      "citation_key": "Friedman2015LargeScaleCodingSequence108",
+      "status": "active"
+    },
+    "109": {
+      "citation_key": "Friedman2026EntoLinguisticsLanguageAmbiguity109",
+      "status": "active"
+    },
+    "110": {
+      "citation_key": "Friedman2026LivingMetaAnalysisArchitecture110",
+      "status": "active"
+    },
+    "111": {
+      "citation_key": "Friedman2026DynamicAttentionalAgentsFocused111",
+      "status": "active"
+    },
+    "112": {
+      "citation_key": "Friedman2026CognitiveDiagramsReviewingCategorical112",
+      "status": "active"
+    },
+    "113": {
+      "citation_key": "Friedman2026TowardsLean4Formalization113",
+      "status": "active"
+    },
+    "114": {
+      "citation_key": "Friedman2020FacilitatorSCatechism114",
+      "status": "active"
+    },
+    "115": {
+      "citation_key": "Friedman2026ArchitectureFalseGodsWilliam115",
+      "status": "active"
+    },
+    "116": {
+      "citation_key": "Friedman2026CrescentCityLivingWaves116",
+      "status": "active"
+    },
+    "117": {
+      "citation_key": "Friedman2026IntroductionBiologyGenerativeApproach117",
+      "status": "active"
+    },
+    "118": {
+      "citation_key": "Friedman2025CEREBRUMCaseEnabledReasoning118",
+      "status": "retired",
+      "reason": "Duplicate CEREBRUM record retired; numeric ID and published key remain reserved."
+    },
+    "119": {
+      "citation_key": "Friedman2026PolicyEntanglementActiveInference119",
+      "status": "active"
+    },
+    "120": {
+      "citation_key": "Friedman2026BoundedAutoResearchTinyReproducible120",
+      "status": "active"
+    },
+    "121": {
+      "citation_key": "Friedman2026ConvergenceAnalysisGradientDescent121",
+      "status": "active"
+    },
+    "122": {
+      "citation_key": "Friedman2026EditorialQualityAtScale122",
+      "status": "active"
+    },
+    "123": {
+      "citation_key": "Friedman2026TemplateApproachReproducibleGenerative123",
+      "status": "active"
+    },
+    "124": {
+      "citation_key": "Friedman2026ActiveInferenceMultiTrack124",
+      "status": "active"
+    },
+    "125": {
+      "citation_key": "Friedman2026BeeStackEvidenceTypedScaffold125",
+      "status": "active"
+    },
+    "126": {
+      "citation_key": "Friedman2026WhenDoBugsSee126",
+      "status": "active"
+    },
+    "127": {
+      "citation_key": "Friedman2026SelfImprovementAgentHarness127",
+      "status": "active"
+    },
+    "128": {
+      "citation_key": "Friedman2025BiofirmDevelopmentFirstPrinciples128",
+      "status": "active"
+    },
+    "129": {
+      "citation_key": "Friedman2025ConCatEnateEmulation129",
+      "status": "active"
+    },
+    "130": {
+      "citation_key": "Friedman2025GraphspeakLanguageHandshake130",
+      "status": "active"
+    },
+    "131": {
+      "citation_key": "Friedman2025BevCycPositPrimitiveDrivers131",
+      "status": "active"
+    },
+    "132": {
+      "citation_key": "Friedman2025BeaconsPreEmulationSocial132",
+      "status": "active"
+    },
+    "133": {
+      "citation_key": "Friedman2025ConCatEnatePilot133",
+      "status": "active"
+    },
+    "134": {
+      "citation_key": "Friedman2024PushPullPrimingSequence134",
+      "status": "active"
+    },
+    "135": {
+      "citation_key": "Friedman2023NaturalAIBasedScience135",
+      "status": "active"
+    },
+    "136": {
+      "citation_key": "Friedman2023ATLASQuestionOrientedApproach136",
+      "status": "active"
+    },
+    "137": {
+      "citation_key": "Friedman2023TranscriptActiveInferenceGuestStream137",
+      "status": "active"
+    },
+    "138": {
+      "citation_key": "Friedman2023ModernNostrIndexCard138",
+      "status": "active"
+    },
+    "139": {
+      "citation_key": "Friedman2023SlidesIris139",
+      "status": "active"
+    },
+    "140": {
+      "citation_key": "Friedman2022CanonicalNeuralNetworksPerform140",
+      "status": "active"
+    },
+    "141": {
+      "citation_key": "Friedman2022InteroceptionAsModelingAllostasis141",
+      "status": "active"
+    },
+    "142": {
+      "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
+      "status": "active"
+    },
+    "143": {
+      "citation_key": "Friedman2022WorkedExampleBayesianMechanics143",
+      "status": "active"
+    },
+    "144": {
+      "citation_key": "Friedman2022TranscriptDiscussionsCommunicationAs144",
+      "status": "active"
+    },
+    "145": {
+      "citation_key": "Friedman2022TrackingPublicSensemakingThrough145",
+      "status": "active"
+    },
+    "146": {
+      "citation_key": "Friedman2021TranscriptKarlFriston1st146",
+      "status": "active"
+    },
+    "147": {
+      "citation_key": "Friedman2021CollaborativeWritingCatechismBased147",
+      "status": "active"
+    },
+    "148": {
+      "citation_key": "Friedman2020ReimaginingMaps148",
+      "status": "active"
+    },
+    "149": {
+      "citation_key": "Friedman2020InfiniteGamesInfiniteTeams149",
+      "status": "active"
+    },
+    "150": {
+      "citation_key": "Friedman2026MusicNeverStoppedGrateful150",
+      "status": "active"
+    },
+    "151": {
+      "citation_key": "Friedman2026DeterministicTestbedSelfOrganizing151",
+      "status": "active"
+    },
+    "152": {
+      "citation_key": "Friedman2026RecoveringLLMPersonaAccuracies152",
+      "status": "active"
+    },
+    "153": {
+      "citation_key": "Friedman2026TriplicateDataDrivenLarge153",
+      "status": "active"
+    },
+    "154": {
+      "citation_key": "Friedman2026TemplateTextbook154",
+      "status": "active"
+    },
+    "155": {
+      "citation_key": "Friedman2016LessonsFromColony155",
+      "status": "active"
+    },
+    "156": {
+      "citation_key": "Friedman2016FullSpeedAheadCity156",
+      "status": "active"
+    },
+    "157": {
+      "citation_key": "Friedman2021Disinforge157",
+      "status": "active"
+    },
+    "158": {
+      "citation_key": "Friedman2021DefiningEvents2020Hindsight158",
+      "status": "active"
+    },
+    "159": {
+      "citation_key": "Friedman2022ActiveBlockferenceCadCADActive159",
+      "status": "active"
+    },
+    "160": {
+      "citation_key": "Friedman2024FromNeuronalPacketsThoughtseeds160",
+      "status": "active"
+    },
+    "161": {
+      "citation_key": "Friedman2021KnowledgeManagementArchipelago161",
+      "status": "active"
+    },
+    "162": {
+      "citation_key": "Friedman2024CommentsSubmittedByBlockScience162",
+      "status": "active"
+    },
+    "163": {
+      "citation_key": "Friedman2017OsteopathyVariableVariabilityHealth163",
+      "status": "active"
+    },
+    "164": {
+      "citation_key": "Friedman2016CellsMechanobiologyOsteopathy164",
+      "status": "active"
+    },
+    "165": {
+      "citation_key": "Friedman2026ITraceVerificationFirstWebcam165",
+      "status": "active"
+    },
+    "166": {
+      "citation_key": "Friedman2026DemoCreateDeclarativeAudioVisual166",
+      "status": "active"
+    },
+    "167": {
+      "citation_key": "Friedman2026ENTOENcryptedTypedOmnitrack167",
+      "status": "active"
+    },
+    "168": {
+      "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+      "status": "active"
+    },
+    "169": {
+      "citation_key": "Friedman2026COGANTDeterministicCodebaseGNN169",
+      "status": "active"
+    },
+    "170": {
+      "citation_key": "Friedman2026AGEINTAgenticIntelligence170",
+      "status": "active"
+    },
+    "171": {
+      "citation_key": "Friedman2026PolicyDistillationAsActive171",
+      "status": "active"
+    },
+    "172": {
+      "citation_key": "Friedman2026TemplateMadlibDeterministicToken172",
+      "status": "active"
+    },
+    "173": {
+      "citation_key": "Friedman2026CaliforniaPublicRecordsTechnical173",
+      "status": "active"
+    },
+    "174": {
+      "citation_key": "Friedman2026CogSecSkillsMultiharnessAgenticSkills174",
+      "status": "active"
+    },
+    "175": {
+      "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
+      "status": "active"
+    },
+    "176": {
+      "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
+      "status": "active"
+    },
+    "177": {
+      "citation_key": "Friedman2026RefinementGoldMetallurgicalAnalogy177",
+      "status": "active"
+    },
+    "178": {
+      "citation_key": "Friedman2026AlphaCOGANTRecursiveCorporateSelf178",
+      "status": "active"
+    },
+    "179": {
+      "citation_key": "Friedman2026MappingWilliamBlakeS179",
+      "status": "active"
+    },
+    "180": {
+      "citation_key": "Friedman2026SortitionUpstreamNTQR180",
+      "status": "active"
+    },
+    "181": {
+      "citation_key": "Friedman2026ExploratoryDataAnalysisReproducible181",
+      "status": "active"
+    },
+    "182": {
+      "citation_key": "Friedman2026DomainLanguageSpecifyingControlled182",
+      "status": "active"
+    },
+    "183": {
+      "citation_key": "Friedman2026EntomologicalLawFieldMap183",
+      "status": "active"
+    },
+    "184": {
+      "citation_key": "Friedman2026ShapeBetweenFullPage184",
+      "status": "active"
+    },
+    "185": {
+      "citation_key": "Friedman2026AutopoieticProjectGeneration185",
+      "status": "active"
+    },
+    "186": {
+      "citation_key": "Friedman2026TemplatePitchDeckReproducible186",
+      "status": "active"
+    },
+    "187": {
+      "citation_key": "Friedman2026ReproducibleLiteratureSynthesisInfrastructure187",
+      "status": "active"
+    },
+    "188": {
+      "citation_key": "Friedman2026RegisteredReportTemplatePreregistration188",
+      "status": "active"
+    },
+    "189": {
+      "citation_key": "Friedman2026RedactedReportTemplateDisclosure189",
+      "status": "active"
+    },
+    "190": {
+      "citation_key": "Friedman2026PoolsRulesToolsTemplate190",
+      "status": "active"
+    },
+    "191": {
+      "citation_key": "Friedman2026IllegalStatesMostlyUnrepresentable191",
+      "status": "active"
+    },
+    "192": {
+      "citation_key": "Friedman2026DataDescriptorTemplateSchema192",
+      "status": "active"
+    },
+    "193": {
+      "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
+      "status": "retired",
+      "reason": "Duplicate Template/Reproducible record retired; numeric ID and published key remain reserved."
+    },
+    "194": {
+      "citation_key": "Friedman2026PriorCognitiveArt194",
+      "status": "active"
+    },
+    "195": {
+      "citation_key": "Friedman2026ActiveFractalRabbitSyntheticBenchmark195",
+      "status": "active"
+    },
+    "196": {
+      "citation_key": "Friedman2026FourfoldVisionWilliamBlake196",
+      "status": "active"
+    },
+    "197": {
+      "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
+      "status": "active"
+    },
+    "198": {
+      "citation_key": "Friedman2026SynthOBSFractiSynthGoldenRatio198",
+      "status": "active"
+    },
+    "199": {
+      "citation_key": "Friedman2026ActiveInferencePowerSuite199",
+      "status": "active"
+    },
+    "200": {
+      "citation_key": "Friedman2026WitnessRegisterCoRegistration200",
+      "status": "active"
+    },
+    "201": {
+      "citation_key": "Friedman2026LineSetHoldingInstruments201",
+      "status": "active"
+    },
+    "202": {
+      "citation_key": "Friedman2026WhiteLineTypedLedger202",
+      "status": "active"
+    },
+    "203": {
+      "citation_key": "Friedman2026PersonalRedLinesDevelopment203",
+      "status": "active"
+    },
+    "204": {
+      "citation_key": "Friedman2026GoldenLineTowardWhat204",
+      "status": "active"
+    },
+    "205": {
+      "citation_key": "Friedman2026BlackLineStrongWork205",
+      "status": "active"
+    },
+    "206": {
+      "citation_key": "Friedman2026CodomyrmexArtificialEcologyAgentic206",
+      "status": "active"
+    },
+    "207": {
+      "citation_key": "Friedman2026THALIATypedHarnessAnalytical207",
+      "status": "active"
+    },
+    "208": {
+      "citation_key": "Friedman2026PROJECTBONDSpecialAgent208",
+      "status": "active"
+    },
+    "209": {
+      "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
+      "status": "active"
+    },
+    "210": {
+      "citation_key": "Friedman2026RobustBeliefSharingFederated210",
+      "status": "active"
+    },
+    "211": {
+      "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
+      "status": "active"
+    },
+    "212": {
+      "citation_key": "Friedman2026DocxplusIntelligentDocumentContainer212",
+      "status": "active"
+    },
+    "213": {
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkComputational213",
+      "status": "active"
+    },
+    "214": {
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkPractical214",
+      "status": "active"
+    },
+    "215": {
+      "citation_key": "Friedman2026ForensicAuditMillenniumLeanClay215",
+      "status": "active"
+    },
+    "216": {
+      "citation_key": "Friedman2026SkillarumConditionallyReproducibleWebsite216",
+      "status": "active"
+    },
+    "217": {
+      "citation_key": "Friedman2026FractiSkillsOnePortableAgent217",
+      "status": "active"
+    },
+    "218": {
+      "citation_key": "Friedman2026AgenticSecurityOperatingSystems218",
+      "status": "active"
+    },
+    "219": {
+      "citation_key": "Friedman2026JevPracticeComposablePython219",
+      "status": "active"
+    },
+    "220": {
+      "citation_key": "Friedman2026GreenLineCapacityUnder220",
+      "status": "active"
+    },
+    "221": {
+      "citation_key": "Friedman2026BlueLineStewardshipInstrument221",
+      "status": "active"
+    },
+    "222": {
+      "citation_key": "Friedman2026VioletLineConsentLedger222",
+      "status": "active"
+    },
+    "223": {
+      "citation_key": "Friedman2026SilverLineMemorySuccession223",
+      "status": "active"
+    }
+  }
+}

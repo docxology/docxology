@@ -531,8 +531,8 @@
         },
         {
             "@type": "ScholarlyArticle",
-            "name": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
-            "headline": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+            "name": "EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+            "headline": "EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
             "datePublished": "2025",
             "author": [
                 {
@@ -561,7 +561,7 @@
                 "url": "https://doi.org/10.5281/zenodo.17229924"
             },
             "sameAs": "https://doi.org/10.5281/zenodo.17229924",
-            "citation": "Friedman, Daniel. 2025. EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories. Zenodo. DOI: 10.5281/zenodo.17229924. URL: https://doi.org/10.5281/zenodo.17229924."
+            "citation": "Friedman, Daniel. 2025. EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories. Zenodo. DOI: 10.5281/zenodo.17229924. URL: https://doi.org/10.5281/zenodo.17229924."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1171,8 +1171,8 @@
         },
         {
             "@type": "ScholarlyArticle",
-            "name": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-            "headline": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+            "name": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+            "headline": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
             "datePublished": "2025",
             "author": [
                 {
@@ -1225,7 +1225,7 @@
                 "url": "https://doi.org/10.48550/arXiv.2505.17500"
             },
             "sameAs": "https://doi.org/10.48550/arXiv.2505.17500",
-            "citation": "Baulin, Vladimir; Cook, Austin; Friedman, Daniel; Lumiruusu, Janna; Pashea, Andrew; Rahman, Shagor; Waldeck, Benedikt. 2025. The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes. ArXiv. DOI: 10.48550/arXiv.2505.17500. URL: https://doi.org/10.48550/arXiv.2505.17500."
+            "citation": "Baulin, Vladimir; Cook, Austin; Friedman, Daniel; Lumiruusu, Janna; Pashea, Andrew; Rahman, Shagor; Waldeck, Benedikt. 2025. The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes. ArXiv. DOI: 10.48550/arXiv.2505.17500. URL: https://doi.org/10.48550/arXiv.2505.17500."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3407,8 +3407,8 @@
         },
         {
             "@type": "ScholarlyArticle",
-            "name": "TrustFinder: Recommendations for Community-Based Trust Systems",
-            "headline": "TrustFinder: Recommendations for Community-Based Trust Systems",
+            "name": "TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims",
+            "headline": "TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims",
             "datePublished": "2022",
             "author": [
                 {
@@ -3445,7 +3445,7 @@
                 "url": "https://doi.org/10.5281/zenodo.7093836"
             },
             "sameAs": "https://doi.org/10.5281/zenodo.7093836",
-            "citation": "Cordes, R.J.; David, Scott; Friedman, Daniel. 2022. TrustFinder: Recommendations for Community-Based Trust Systems. Zenodo. DOI: 10.5281/zenodo.7093836. URL: https://doi.org/10.5281/zenodo.7093836."
+            "citation": "Cordes, R.J.; David, Scott; Friedman, Daniel. 2022. TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims. Zenodo. DOI: 10.5281/zenodo.7093836. URL: https://doi.org/10.5281/zenodo.7093836."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6911,7 +6911,7 @@
             "@type": "ScholarlyArticle",
             "name": "Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling",
             "headline": "Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling",
-            "datePublished": "2022",
+            "datePublished": "2023",
             "author": [
                 {
                     "@type": "Person",
@@ -6955,7 +6955,7 @@
                 "url": "https://doi.org/10.1007/978-3-031-28719-0_10"
             },
             "sameAs": "https://doi.org/10.1007/978-3-031-28719-0_10",
-            "citation": "Smékal, Jakub; Choudhury, Arhan; Singh, Amit Kumar; Damaty, Shady El; Friedman, Daniel Ari. 2022. Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling. International Workshop on Active Inference. DOI: 10.1007/978-3-031-28719-0_10. URL: https://doi.org/10.1007/978-3-031-28719-0_10."
+            "citation": "Smékal, Jakub; Choudhury, Arhan; Singh, Amit Kumar; Damaty, Shady El; Friedman, Daniel Ari. 2023. Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling. International Workshop on Active Inference. DOI: 10.1007/978-3-031-28719-0_10. URL: https://doi.org/10.1007/978-3-031-28719-0_10."
         },
         {
             "@type": "ScholarlyArticle",

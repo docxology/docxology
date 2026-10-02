@@ -260,6 +260,8 @@ def test_document_verified_authors_quote_their_source():
 
 
 def test_document_verified_rejects_a_missing_quote(tmp_path, monkeypatch):
+    import json
+
     source = tmp_path / "papers" / "2026_Example" / "full_text.md"
     source.parent.mkdir(parents=True)
     source.write_text("EDITED BY Someone Else", encoding="utf-8")
@@ -270,6 +272,11 @@ def test_document_verified_rejects_a_missing_quote(tmp_path, monkeypatch):
     )
     monkeypatch.setattr(fetch_work_authors, "REPO_ROOT", tmp_path)
     monkeypatch.setattr(fetch_work_authors, "BIBLIOGRAPHY", bibliography)
+    registry = tmp_path / "data/work-identifiers.json"
+    registry.parent.mkdir()
+    registry.write_text(json.dumps({"schema_version": "WorkIdentifierRegistry.v1", "identifiers": {
+        "999": {"citation_key": "Friedman2026ExampleWork999", "status": "active"},
+    }}) + "\n", encoding="utf-8")
     payload = {"works": {"Friedman2026ExampleWork999": {
         "num": 999, "status": "document_verified", "doi": None, "authors": [{"family": "A"}],
         "source": "papers/2026_Example/full_text.md", "evidence": "EDITED BY Daniel",

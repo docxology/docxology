@@ -24,7 +24,7 @@ import re
 import stat
 import sys
 from dataclasses import dataclass
-from html import unescape
+from html import escape, unescape
 from pathlib import Path
 from typing import Any, Iterable, Sequence
 from urllib.parse import quote, urlsplit, urlunsplit
@@ -36,6 +36,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
 
 from docxology_tools.biblio_table import iter_bibliography_rows  # noqa: E402
+from docxology_tools.abstract_text import abstract_display_text  # noqa: E402
 from docxology_tools.domain_inference import DOMAIN_TO_EMOJI, infer_domain_name  # noqa: E402
 from docxology_tools.metadata_templates import (  # noqa: E402
     specific_findings,
@@ -608,7 +609,7 @@ def clean_markdown_text(value: Any) -> str:
 
 
 def clean_abstract_text(value: Any) -> str:
-    text = clean_markdown_text(value)
+    text = abstract_display_text(value)
     return re.split(r"\s---\s+Associated artifacts\b", text, maxsplit=1)[0].strip()
 
 
@@ -961,7 +962,7 @@ def generate_readme(
         '',
         '## Abstract',
         '',
-        f'> {abstract}',
+        '\n'.join('> ' + escape(line, quote=False) if line else '>' for line in abstract.splitlines()),
         '',
     ])
     if kw_str:

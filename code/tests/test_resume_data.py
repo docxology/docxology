@@ -203,3 +203,4 @@ def test_resume_verify_html_records_hashes_and_artifact_links():
     assert 'scope="col"' in html
     assert "Source manifest matches the payload" in html
     assert "JavaScript-free" in html
+    assert 'script src=' not in html

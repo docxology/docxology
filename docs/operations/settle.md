@@ -222,7 +222,7 @@ push/PR.
 ## Notes
 
 - The budget gate lives at `code/src/artifact_budget.py` and takes no flags
-  (`main()` enforces the 880 MiB budget from the newest
+  (`main()` enforces the 890 MiB budget from the newest
   `reports/pages_artifact_growth_*.json`); settle runs it without `--check`.
 - The release step binds `--deployment-attestation
   reports/deployment-attestations/<HEAD>.json` when that conventional receipt

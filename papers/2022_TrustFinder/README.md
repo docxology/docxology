@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ TrustFinder: Recommendations for Community-Based Trust Systems
+# 🛡️ TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims
 
 **R.J. Cordes, Scott David, Daniel Friedman** (2022) · *Zenodo*
 
@@ -42,7 +42,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> R.J. Cordes, Scott David, Daniel Friedman (2022). *TrustFinder: Recommendations for Community-Based Trust Systems*. Zenodo. DOI: 10.5281/zenodo.7093836. URL: https://doi.org/10.5281/zenodo.7093836.
+> R.J. Cordes, Scott David, Daniel Friedman (2022). *TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims*. Zenodo. DOI: 10.5281/zenodo.7093836. URL: https://doi.org/10.5281/zenodo.7093836.
 
 ## Related
 

@@ -33,6 +33,7 @@ from docxology_tools.collection_jsonld import display_paths, replace_inline_coll
 from export_bibliography import row_to_work, source_paths  # noqa: E402
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 from docxology_tools.site_facts import generated_date, generated_month_year  # noqa: E402
+from docxology_tools.work_identifiers import load_registry  # noqa: E402
 
 PUBLICATIONS_HTML = REPO_ROOT / "publications.html"
 PUBLICATIONS_LD_JSON = REPO_ROOT / "data" / "publications-ld.json"
@@ -118,7 +119,8 @@ def source_works_by_num(rows: list[BiblioRow]) -> dict[int, dict]:
     verifies the JSON export.
     """
     visible_source_paths = source_paths()
-    works = [asdict(row_to_work(row, visible_source_paths=visible_source_paths)) for row in rows]
+    registry = load_registry()
+    works = [asdict(row_to_work(row, visible_source_paths=visible_source_paths, registry=registry)) for row in rows]
     by_num = {work["num"]: work for work in works}
     if len(by_num) != len(rows):  # validate_rows prevents this; retain a hard guard for callers.
         raise ValueError("Duplicate bibliography row number in static table projection")

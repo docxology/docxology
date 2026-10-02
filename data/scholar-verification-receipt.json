@@ -4,20 +4,20 @@
   "profile_id": "DXjPFtYAAAAJ",
   "direct": true,
   "authenticated": true,
-  "verified_at": "2026-08-26T17:41:35Z",
+  "verified_at": "2026-10-02T14:38:54Z",
   "snapshot_path": "data/scholar-snapshot.json",
-  "snapshot_sha256": "d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2",
-  "snapshot_as_of": "2026-08-26",
+  "snapshot_sha256": "d9c4b848ad04238eb731f05748bbb88e473518ffe87a422526cfd9b11651b00d",
+  "snapshot_as_of": "2026-10-02",
   "metrics": {
-    "citations": 815,
+    "citations": 823,
     "h_index": 14,
-    "i10_index": 16,
+    "i10_index": 17,
     "since_2021": {
-      "citations": 586,
+      "citations": 594,
       "h_index": 14,
-      "i10_index": 14
+      "i10_index": 15
     }
   },
-  "source": "Direct authenticated browser observation of https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en in the canonical profile-owner session.",
-  "method": "Direct non-cached authenticated Chrome browser-session fetch on 2026-08-26. Profile-owner controls were visible; observed all-time metrics were 815 citations, h-index 14, and i10-index 16 (Since-2021: 586 / 14 / 14)."
+  "source": "Direct authenticated browser observation of https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en",
+  "method": "Direct Chrome browser observation of the canonical profile on 2026-10-02 in an authenticated Google session (signed-in account control visible). All-time: 823 citations, h-index 14, i10-index 17; Since-2021: 594 / 14 / 15. No anonymous or search-engine cached result was used."
 }

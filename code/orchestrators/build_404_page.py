@@ -81,7 +81,7 @@ def render() -> str:
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Page Not Found — Daniel Ari Friedman">
     <meta name="twitter:image:alt" content="Page Not Found — Daniel Ari Friedman">
-    <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260530c">
+    <link rel="stylesheet" href="/style.css?v=site-20261002">
     <meta name="theme-color" content="#0c0c0e">
     <style>
         .notfound-shell{{max-width:880px;margin:0 auto;padding:7rem 2rem 4rem;text-align:center}}
@@ -128,7 +128,7 @@ def render() -> str:
     </footer>
 {INTERACTIVE_SCRIPTS}
 {MENU_ESC_SCRIPT}
-    <script src="/js/search-page.js?v=20260827a" defer></script>
+    <script src="/js/search-page.js?v=site-20261002" defer></script>
 </body>
 </html>
 """

@@ -29,6 +29,9 @@ from docxology_tools.biblio_table import BiblioRow, iter_bibliography_rows  # no
 from docxology_tools.bibliography_links import canonical_link_url  # noqa: E402
 
 from docxology_tools.report_paths import generated_timestamp, stable_generated_at  # noqa: E402
+from docxology_tools.work_identifiers import (  # noqa: E402
+    key_for_num, load_registry, register_new_rows, validate_catalog,
+)
 
 
 DOMAIN_NAMES = {
@@ -112,16 +115,9 @@ def doi_from_url(url: str) -> str:
     return m.group(1).rstrip(").,") if m else ""
 
 
-def slug_words(title: str) -> list[str]:
-    words = re.findall(r"[A-Za-z0-9]+", title)
-    stop = {"a", "an", "and", "for", "in", "of", "on", "the", "to", "with"}
-    return [w for w in words if w.lower() not in stop][:4]
-
-
-def citation_key(row: BiblioRow) -> str:
-    words = slug_words(row.title)
-    suffix = "".join(w[:1].upper() + w[1:] for w in words) or "Work"
-    return f"Friedman{row.year}{suffix}{row.num:03d}"
+def citation_key(row: BiblioRow, *, registry: dict | None = None) -> str:
+    """Resolve the permanent source reservation; title/year never derive an ID."""
+    return key_for_num(row.num, registry if registry is not None else load_registry())
 
 
 def docs_path(row: BiblioRow) -> str:
@@ -151,7 +147,9 @@ def source_paths(repo_root: Path = REPO_ROOT) -> frozenset[str]:
     )
 
 
-def row_to_work(row: BiblioRow, *, visible_source_paths: frozenset[str]) -> Work:
+def row_to_work(
+    row: BiblioRow, *, visible_source_paths: frozenset[str], registry: dict | None = None
+) -> Work:
     url = canonical_link_url(row.link_cell, row.venue)
     domain = row.domain.strip()
     docs = docs_path(row)
@@ -176,7 +174,7 @@ def row_to_work(row: BiblioRow, *, visible_source_paths: frozenset[str]) -> Work
         has_readme = f"{paper_root}/README.md" in visible_source_paths
     return Work(
         num=row.num,
-        citation_key=citation_key(row),
+        citation_key=citation_key(row, registry=registry),
         year=int(row.year) if row.year.isdigit() else row.year,
         domain=domain,
         domain_name=DOMAIN_NAMES.get(domain, DOMAIN_NAMES.get(domain.rstrip("\ufe0f"), "Other")),
@@ -316,10 +314,22 @@ def render_outputs(works: list[Work], generated_at: str | None = None) -> dict[P
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if generated files are stale")
+    parser.add_argument(
+        "--register-new-identifiers", action="store_true",
+        help="Explicitly allocate permanent keys for reviewed new bibliography rows before exporting",
+    )
     args = parser.parse_args()
+    if args.check and args.register_new_identifiers:
+        parser.error("--check cannot write new identifier reservations")
 
     visible_source_paths = source_paths()
-    works = [row_to_work(r, visible_source_paths=visible_source_paths) for r in iter_bibliography_rows()]
+    rows = list(iter_bibliography_rows())
+    if args.register_new_identifiers:
+        allocated = register_new_rows(rows)
+        print(f"registered {len(allocated)} new permanent work identifiers")
+    registry = load_registry()
+    validate_catalog(rows, registry)
+    works = [row_to_work(r, visible_source_paths=visible_source_paths, registry=registry) for r in rows]
     works_path = REPO_ROOT / "data" / "works.json"
     generated_at = existing_generated_at(works_path) if args.check else None
     if not args.check:

@@ -44,6 +44,10 @@ ordered gate's receipts to already exist.
 6. Verify the deployed site with `verify_live_site.py` after the Pages deployment
    for the source commit being released; require all checked routes, current
    JSON-level counts, Pages status `built`, and a successful deployment run.
+   The Pages workflow additionally retains a SHA-bound technical acceptance
+   receipt from `verify_deployed_artifact.py` as an Actions artifact. That
+   automated hash/HEAD evidence does not substitute for step 7's browser,
+   source, link, and human visual review or its full release attestation.
 7. After Pages reports the candidate SHA as built, re-run the affected browser,
    visual, raw-link, and live-site evidence against that exact SHA. Inspect the
    pending `reports/visual-qa/<date>/*.png` set, then approve that same set with
@@ -105,13 +109,16 @@ chase that historically accompanied ordinary regeneration is therefore a
 release-gate-only phenomenon now: a routine re-render in payload-anchored
 mode never rewrites committed review history just because `HEAD` moved.
 
-The footer build stamp follows the same payload-anchored contract. Its short
-SHA comes from `release_controls.source_payload_commit` (not `HEAD`), so
-re-rendering pages in a clean worktree on top of a control-only tail produces
-byte-identical stamps naming the candidate SHA. `BUILD_SHA`/`BUILD_DATE` still
-override the stamp for release runs that must pin it explicitly, and
-`--exact-source-revision` does not change the stamp; it changes only the
-review record's own provenance fields.
+The footer build stamp records the source revision available at the last
+content-changing render. Unchanged pages keep their previous stamp; a changed
+page gets the current payload-anchor stamp. Stamp-only differences never
+rewrite a page, while differences elsewhere cannot inherit an older footer.
+This is generation provenance, not proof of the exact later deployment SHA
+or of a future commit that did not yet exist during a dirty-tree render.
+`BUILD_SHA`/`BUILD_DATE` allow explicit source-base overrides. Exact deployed
+revision and live bytes are established separately by deployment acceptance
+and the release attestation. Generated manifest and integrity timestamps also
+refresh only when their substantive bodies change.
 
 `data/release-integrity.json` is a pre-deploy envelope: it records source and
 generator hashes, the Pages artifact summary, CV privacy status, and the

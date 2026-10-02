@@ -8,8 +8,8 @@ Verifies:
    - text-secondary on bg-primary >= 4.5:1
    - gold          on bg-primary >= 3:1   (large text / UI)
    - nav link color (text-secondary) >= 4.5:1
-3. Zero existing lines were modified: the original dark rules are still
-   present verbatim and the pre-append file content is an exact prefix.
+3. The reviewed dark-style prefix remains byte-identical, and both
+   palettes retain their token and contrast contracts.
 """
 
 from __future__ import annotations
@@ -22,11 +22,12 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[2]
 STYLE = REPO / "style.css"
 
-# sha256 of style.css exactly as it was before the light block was
-# appended (1436 lines, boundary = everything before the light-marker
-# comment; base commit 94bd3699).
-DARK_PREFIX_SHA256 = "b0b4bd6f69863c5c082aec48a08d6b426797ceba46b09ff2695145685ff196e6"  # re-pinned after a8cd2a44f (approved dead-CSS sweep: unused selector groups, unreferenced keyframes, one duplicate print rule; boundary re-anchored to the light-marker line, guard still locks the prefix from here)
-DARK_PREFIX_LINES = 1436
+# Reviewed dark-style prefix through the light-theme marker. Re-pinned for
+# the 2026-10-02 mobile progressive-navigation changes: routes remain visible
+# unless a working menu listener has been attached. Palette assertions below
+# retain their original dark and light contrast contracts.
+DARK_PREFIX_SHA256 = "79f73c865713f3a18167cc5f84ca7166fb819c12182e56b6a6064d54624822fa"
+DARK_PREFIX_LINES = 1439
 
 # Verbatim dark :root tokens that must be untouched.
 DARK_TOKENS = [
@@ -108,7 +109,7 @@ def _light_block(text: str) -> str:
 
 
 def test_dark_rules_untouched_prefix_hash() -> None:
-    """The original file content is an exact, unmodified prefix."""
+    """The reviewed dark-style content remains an exact prefix."""
     text = STYLE.read_text(encoding="utf-8")
     prefix = "\n".join(text.split("\n")[:DARK_PREFIX_LINES]) + "\n"
     assert (

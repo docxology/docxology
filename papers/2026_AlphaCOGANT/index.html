@@ -11,7 +11,7 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
-    <link rel="stylesheet" href="../../style.css?v=work-access-20261001">
+    <link rel="stylesheet" href="../../style.css?v=site-20261002">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
@@ -23,6 +23,7 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <link rel="me" href="https://www.flickr.com/photos/daniel_friedman/" title="Flickr">
     <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
+    <script src="/js/nav-toggle.js?v=nav-20261002"></script>
     <meta property="og:type" content="article">
     <meta property="og:title" content="AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference Documentation">
     <meta property="og:description" content="The AlphaFund whitepaper reframes recursive self-improvement (RSI) as a portfolio optimization problem: a corporation recursively improves when realized…">
@@ -91,47 +92,7 @@
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Overview</h2><p>Curated abstract when available.</p><div class="section-divider"></div></div>
-            <div class="overview-box"><p>The AlphaFund whitepaper reframes recursive self-improvement (RSI) as a portfolio
-optimization problem:  a corporation recursively improves when realized economic
-gains finance the next cycle of better prediction and deployment, and the firm&#x27;s
-standing is summarized by t-RSI, a standardized gap between alpha-creation and
-alpha-decay rates. AlphaCOGANT observes that this construction is, term for
-term, an Active Inference agent  — and makes the correspondence executable.
-
-We render AlphaFund&#x27;s Economic World Model (EWM) as a generative model written
-in Generalized Notation Notation (GNN), produced by the COGANT
-codebase-to-GNN translation pattern. The firm&#x27;s five capital channels —
-Investments, Sensors, Actuators, Parameters, and R&amp;amp;D — become the hidden-state
-factors of a partially-observed model; capital allocation becomes the control
-vector; and the portfolio optimizer&#x27;s marginal-return objective becomes
-Expected Free Energy (EFE) minimization. The EFE decomposition supplies a
-principled reading of AlphaFund&#x27;s own categories: its pragmatic value is
-expected log-equity growth (the alpha-creation rate, read off the broker ledger),
-and its epistemic value is the information gain about the EWM that Sensors and
-R&amp;amp;D purchase (the data-scaling and forecast-sharpening laws). t-RSI is recovered
-as the standardized distance between the create-rate and decay-rate posteriors —
-the thresholded EFE-improvement certificate that admits a self-improvement commit
-only when creation confidently exceeds decay.
-
-We give the technical and computational realization: a GNN model file for the
-five-channel firm, a tested NumPy Active Inference engine that performs state
-inference, computes the epistemic/pragmatic EFE split and the marginal-return
-vector, and evaluates the t-RSI certificate. We argue that GNN-via-COGANT brings
-two things AlphaFund&#x27;s program needs and Active Inference already enforces:
-filtration integrity (the model may condition only on information available
-at decision time — the same &quot;no-peeking&quot; discipline that separates an EWM from a
-language model) and auditable capital allocation (every admissible funding
-move has a negative-EFE score under a single, legible objective). This is not
-financial advice; it is a demonstration that this reduced
-recursive-corporate-self-improvement model has a direct Active Inference
-representation supported by source-owning methods and artifact checks .
-
----
-Associated artifacts
-GitHub release: v1.0.1 (https://github.com/docxology/alphacogant/releases/tag/v1.0.1)
-DOI: https://doi.org/10.5281/zenodo.20976824
-Zenodo: https://zenodo.org/records/20976824
-PDF SHA-256: 41efa7a8a98e6a67cece68377b8f0c5f19304e85c664ec9516353ee24eb0421f</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
+            <div class="overview-box"><p>The AlphaFund whitepaper reframes recursive self-improvement (RSI) as a portfolio<br>optimization problem: a corporation recursively improves when realized economic<br>gains finance the next cycle of better prediction and deployment, and the firm&#x27;s<br>standing is summarized by t-RSI, a standardized gap between alpha-creation and<br>alpha-decay rates. AlphaCOGANT observes that this construction is, term for<br>term, an Active Inference agent — and makes the correspondence executable.</p><p>We render AlphaFund&#x27;s Economic World Model (EWM) as a generative model written<br>in Generalized Notation Notation (GNN), produced by the COGANT<br>codebase-to-GNN translation pattern. The firm&#x27;s five capital channels —<br>Investments, Sensors, Actuators, Parameters, and R&amp;D — become the hidden-state<br>factors of a partially-observed model; capital allocation becomes the control<br>vector; and the portfolio optimizer&#x27;s marginal-return objective becomes<br>Expected Free Energy (EFE) minimization. The EFE decomposition supplies a<br>principled reading of AlphaFund&#x27;s own categories: its pragmatic value is<br>expected log-equity growth (the alpha-creation rate, read off the broker ledger),<br>and its epistemic value is the information gain about the EWM that Sensors and<br>R&amp;D purchase (the data-scaling and forecast-sharpening laws). t-RSI is recovered<br>as the standardized distance between the create-rate and decay-rate posteriors —<br>the thresholded EFE-improvement certificate that admits a self-improvement commit<br>only when creation confidently exceeds decay.</p><p>We give the technical and computational realization: a GNN model file for the<br>five-channel firm, a tested NumPy Active Inference engine that performs state<br>inference, computes the epistemic/pragmatic EFE split and the marginal-return<br>vector, and evaluates the t-RSI certificate. We argue that GNN-via-COGANT brings<br>two things AlphaFund&#x27;s program needs and Active Inference already enforces:<br>filtration integrity (the model may condition only on information available<br>at decision time — the same &quot;no-peeking&quot; discipline that separates an EWM from a<br>language model) and auditable capital allocation (every admissible funding<br>move has a negative-EFE score under a single, legible objective). This is not<br>financial advice; it is a demonstration that this reduced<br>recursive-corporate-self-improvement model has a direct Active Inference<br>representation supported by source-owning methods and artifact checks .</p><p>---<br>Associated artifacts<br>GitHub release: v1.0.1 (https://github.com/docxology/alphacogant/releases/tag/v1.0.1)<br>DOI: https://doi.org/10.5281/zenodo.20976824<br>Zenodo: https://zenodo.org/records/20976824<br>PDF SHA-256: 41efa7a8a98e6a67cece68377b8f0c5f19304e85c664ec9516353ee24eb0421f</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section">
             <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation and PDFs served directly from this folder.</p><div class="section-divider"></div></div>
@@ -150,10 +111,10 @@ PDF SHA-256: 41efa7a8a98e6a67cece68377b8f0c5f19304e85c664ec9516353ee24eb0421f</p
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../../publications.html">Unified bibliography</a> · <a href="../../works/">Works index</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/c12a6458d">build c12a6458d 2026-10-01</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/e296b3ae8">build e296b3ae8 2026-10-02</a></p>
     </footer>
-<script src="/js/search-utils.js?v=20260813"></script>
+<script src="/js/search-utils.js?v=site-20261002"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
-<script src="/js/interactive.js?v=20260813" defer></script>
+<script src="/js/interactive.js?v=site-20261002" defer></script>
 <script src="/js/menu-esc.js?v=20260813" defer></script></body>
 </html>

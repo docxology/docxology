@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T23:33:56Z",
+  "generated_at": "2026-10-02T15:30:05Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -2223,7 +2223,7 @@
           "url": "/works/Friedman2025ResNeiSolutionDesignDocument019.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -5083,7 +5083,7 @@
           "url": "/works/Friedman2026SelfImprovementAgentHarness127.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -37654,11 +37654,11 @@
           "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
         },
         {
-          "title": "Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling",
-          "citation_key": "Friedman2022ActiveBlockferenceCadCADActive159",
+          "title": "An Active Inference Ontology for Decentralized Science",
+          "citation_key": "Friedman2022ActiveInferenceOntologyDecentralized066",
           "year": 2022,
           "domain": "Active Inference",
-          "url": "/works/Friedman2022ActiveBlockferenceCadCADActive159.html"
+          "url": "/works/Friedman2022ActiveInferenceOntologyDecentralized066.html"
         }
       ]
     },
@@ -37737,18 +37737,18 @@
           "url": "/works/Friedman2022TranscriptDiscussionsCommunicationAs144.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
-        },
-        {
           "title": "AGEINT: Agentic Intelligence",
           "citation_key": "Friedman2026AGEINTAgenticIntelligence170",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
+        },
+        {
+          "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+          "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
         }
       ]
     },
@@ -42111,18 +42111,18 @@
           "url": "/works/Friedman2022SystemsModelingCognitiveAudits072.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
-        },
-        {
           "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
           "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
+        },
+        {
+          "title": "The Great Preset: Remote Teams and Operational Art",
+          "citation_key": "Friedman2020GreatPresetRemoteTeams089",
+          "year": 2020,
+          "domain": "Cognitive Security",
+          "url": "/works/Friedman2020GreatPresetRemoteTeams089.html"
         }
       ]
     },
@@ -53632,11 +53632,11 @@
           "url": "/works/Friedman2023GenerativeResearchTeamsActive057.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
+          "title": "AGEINT: Agentic Intelligence",
+          "citation_key": "Friedman2026AGEINTAgenticIntelligence170",
+          "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
+          "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
         }
       ]
     },
@@ -54261,11 +54261,11 @@
           "url": "/works/Friedman2023DistributedScienceScientificProcess053.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
+          "title": "COGANT: Deterministic Codebase-to-GNN Translation",
+          "citation_key": "Friedman2026COGANTDeterministicCodebaseGNN169",
+          "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
+          "url": "/works/Friedman2026COGANTDeterministicCodebaseGNN169.html"
         }
       ]
     },
@@ -55029,11 +55029,11 @@
           "url": "/works/Friedman2024MathArtStream8William038.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
+          "title": "Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology",
+          "citation_key": "Friedman2026BeforePragmatismHadName003",
+          "year": 2026,
+          "domain": "Art & Synergetics",
+          "url": "/works/Friedman2026BeforePragmatismHadName003.html"
         }
       ]
     },
@@ -56701,11 +56701,11 @@
           "url": "/works/Friedman2024MathArtStream8William038.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
+          "title": "Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology",
+          "citation_key": "Friedman2026BeforePragmatismHadName003",
+          "year": 2026,
+          "domain": "Art & Synergetics",
+          "url": "/works/Friedman2026BeforePragmatismHadName003.html"
         }
       ]
     },
@@ -58842,11 +58842,11 @@
           "url": "/works/Friedman2024MathArtStream8William038.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
+          "title": "Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology",
+          "citation_key": "Friedman2026BeforePragmatismHadName003",
+          "year": 2026,
+          "domain": "Art & Synergetics",
+          "url": "/works/Friedman2026BeforePragmatismHadName003.html"
         }
       ]
     },
@@ -61013,7 +61013,7 @@
           "url": "/works/Friedman2024BridgingGapsImageMeme031.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -61079,7 +61079,7 @@
           "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -61378,7 +61378,7 @@
           "url": "/works/Friedman2024BridgingGapsImageMeme031.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -61444,7 +61444,7 @@
           "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -61590,7 +61590,7 @@
           "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -61663,7 +61663,7 @@
           "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -62035,7 +62035,7 @@
           "url": "/works/Friedman2024BridgingGapsImageMeme031.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -62181,7 +62181,7 @@
           "url": "/works/Friedman2024BridgingGapsImageMeme031.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -62247,7 +62247,7 @@
           "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -62327,7 +62327,7 @@
           "url": "/works/Friedman2024BridgingGapsImageMeme031.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -62400,7 +62400,7 @@
           "url": "/works/Friedman2024BridgingGapsImageMeme031.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -62692,7 +62692,7 @@
           "url": "/works/Friedman2024BridgingGapsImageMeme031.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -63196,7 +63196,7 @@
           "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -63422,7 +63422,7 @@
           "url": "/works/Friedman2024BridgingGapsImageMeme031.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -63568,7 +63568,7 @@
           "url": "/works/Friedman2024BridgingGapsImageMeme031.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -63634,7 +63634,7 @@
           "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -64006,7 +64006,7 @@
           "url": "/works/Friedman2024BridgingGapsImageMeme031.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -64291,7 +64291,7 @@
           "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -64517,7 +64517,7 @@
           "url": "/works/Friedman2024BridgingGapsImageMeme031.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -64583,7 +64583,7 @@
           "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -64736,7 +64736,7 @@
           "url": "/works/Friedman2024BridgingGapsImageMeme031.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -65028,7 +65028,7 @@
           "url": "/works/Friedman2024BridgingGapsImageMeme031.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -65459,7 +65459,7 @@
           "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -71310,11 +71310,11 @@
           "url": "/works/Friedman2025TemporalDepthCoherentSelf023.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
+          "title": "COGANT: Deterministic Codebase-to-GNN Translation",
+          "citation_key": "Friedman2026COGANTDeterministicCodebaseGNN169",
+          "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
+          "url": "/works/Friedman2026COGANTDeterministicCodebaseGNN169.html"
         }
       ]
     },
@@ -71468,11 +71468,11 @@
           "url": "/works/Friedman2025ActiveInferenceInstituteActive024.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
+          "title": "AGEINT: Agentic Intelligence",
+          "citation_key": "Friedman2026AGEINTAgenticIntelligence170",
+          "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
+          "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
         }
       ]
     },
@@ -72547,7 +72547,7 @@
           "url": "/works/Friedman2024EnhancingPopulationBasedSearch034.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -73660,13 +73660,6 @@
           "url": "/works/Friedman2025CEREBRUMCaseEnabledReasoning010.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
-        },
-        {
           "title": "Computational Complexity and Energetics of the Ant Stack",
           "citation_key": "Friedman2025ComputationalComplexityEnergeticsAnt011",
           "year": 2025,
@@ -73679,6 +73672,13 @@
           "year": 2021,
           "domain": "Entomology",
           "url": "/works/Friedman2021ActiveInferantsActiveInference075.html"
+        },
+        {
+          "title": "Enhancing Population-based Search with Active Inference",
+          "citation_key": "Friedman2024EnhancingPopulationBasedSearch034",
+          "year": 2024,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2024EnhancingPopulationBasedSearch034.html"
         }
       ]
     },
@@ -74176,11 +74176,11 @@
           "url": "/works/Friedman2025ComputationalComplexityEnergeticsAnt011.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
+          "title": "AGEINT: Agentic Intelligence",
+          "citation_key": "Friedman2026AGEINTAgenticIntelligence170",
+          "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
+          "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
         }
       ]
     },
@@ -76072,18 +76072,18 @@
           "url": "/works/Friedman2024EnhancingPopulationBasedSearch034.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
-        },
-        {
           "title": "AGEINT: Agentic Intelligence",
           "citation_key": "Friedman2026AGEINTAgenticIntelligence170",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
+        },
+        {
+          "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+          "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
         }
       ]
     },
@@ -79193,11 +79193,11 @@
           "url": "/works/Friedman2025AdaptiveBasicIncomeAuBI009.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
+          "title": "AGEINT: Agentic Intelligence",
+          "citation_key": "Friedman2026AGEINTAgenticIntelligence170",
+          "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
+          "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
         }
       ]
     },
@@ -79258,13 +79258,6 @@
       ],
       "related_works": [
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
-        },
-        {
           "title": "Active Inferants: An Active Inference Framework for Ant Colony Behavior",
           "citation_key": "Friedman2021ActiveInferantsActiveInference075",
           "year": 2021,
@@ -79284,6 +79277,13 @@
           "year": 2025,
           "domain": "Entomology",
           "url": "/works/Friedman2025TowardsScienceConsciousnessSocial028.html"
+        },
+        {
+          "title": "Context-dependent expression of the foraging gene in field colonies of ants",
+          "citation_key": "Friedman2016ContextDependentExpressionForaging104",
+          "year": 2016,
+          "domain": "Entomology",
+          "url": "/works/Friedman2016ContextDependentExpressionForaging104.html"
         }
       ]
     },
@@ -81900,13 +81900,6 @@
       ],
       "related_works": [
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
-        },
-        {
           "title": "Catechism for Towards Active Diffusion",
           "citation_key": "Friedman2022CatechismTowardsActiveDiffusion067",
           "year": 2022,
@@ -81926,6 +81919,13 @@
           "year": 2022,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2022StructuringInformationCommonsOpen071.html"
+        },
+        {
+          "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
+          "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
+          "year": 2022,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         }
       ]
     },
@@ -82863,13 +82863,6 @@
           "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
-        },
-        {
           "title": "AGEINT: Agentic Intelligence",
           "citation_key": "Friedman2026AGEINTAgenticIntelligence170",
           "year": 2026,
@@ -82882,6 +82875,13 @@
           "year": 2021,
           "domain": "Active Inference",
           "url": "/works/Friedman2021ActiveInferenceModelingConflict076.html"
+        },
+        {
+          "title": "An Active Inference Ontology for Decentralized Science",
+          "citation_key": "Friedman2022ActiveInferenceOntologyDecentralized066",
+          "year": 2022,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2022ActiveInferenceOntologyDecentralized066.html"
         }
       ]
     },
@@ -85100,7 +85100,7 @@
           "url": "/works/Friedman2022CatechismTowardsActiveDiffusion067.html"
         },
         {
-          "title": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+          "title": "EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
           "citation_key": "Friedman2025EvoJumpStochasticModelingEvolutionary012",
           "year": 2025,
           "domain": "Active Inference",
@@ -86476,13 +86476,6 @@
       ],
       "related_works": [
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
-        },
-        {
           "title": "The Free Energy Principle & Active Inference: a Systematic Literature Analysis",
           "citation_key": "Friedman2022FreeEnergyPrincipleActive073",
           "year": 2022,
@@ -86502,6 +86495,13 @@
           "year": 2025,
           "domain": "Active Inference",
           "url": "/works/Friedman2025BiofirmDevelopmentFirstPrinciples128.html"
+        },
+        {
+          "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+          "citation_key": "Friedman2026CognitiveDiagramsReviewingCategorical112",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026CognitiveDiagramsReviewingCategorical112.html"
         }
       ]
     },
@@ -86637,7 +86637,7 @@
           "url": "/works/Friedman2024EnhancingPopulationBasedSearch034.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
           "year": 2025,
           "domain": "Computational",
@@ -88722,18 +88722,18 @@
           "url": "/works/Friedman2025CEREBRUMCaseEnabledReasoning010.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
-        },
-        {
           "title": "AGEINT: Agentic Intelligence",
           "citation_key": "Friedman2026AGEINTAgenticIntelligence170",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
+        },
+        {
+          "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+          "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
         }
       ]
     },
@@ -89034,18 +89034,18 @@
           "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
         },
         {
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
-          "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "year": 2025,
-          "domain": "Computational",
-          "url": "/works/Friedman2025DiscoveryEngineAIDriven026.html"
-        },
-        {
           "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
           "citation_key": "Friedman2026BeeStackEvidenceTypedScaffold125",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026BeeStackEvidenceTypedScaffold125.html"
+        },
+        {
+          "title": "Reimagining Maps",
+          "citation_key": "Friedman2020ReimaginingMaps148",
+          "year": 2020,
+          "domain": "Cognitive Security",
+          "url": "/works/Friedman2020ReimaginingMaps148.html"
         }
       ]
     },

@@ -17,6 +17,8 @@ from docxology_tools.site_nav import (  # noqa: E402
     CSP_META_TAG,
     nav_manifest,
     HEAD_EXTRAS,
+    HEAD_EXTRAS_WITHOUT_NAV,
+    NAV_TOGGLE_SCRIPT_TAG,
     breadcrumb_jsonld_script,
     clip_description,
     ensure_agent_map_link,
@@ -146,6 +148,13 @@ def test_shared_security_policy_allows_only_required_frame_origin():
     assert "fonts.googleapis.com" not in CSP_META_TAG
     assert 'name="referrer"' in HEAD_EXTRAS
     assert "data/agent-index.json" in HEAD_EXTRAS
+
+
+def test_navigation_initializer_is_synchronous_and_separate_from_no_toggle_heads():
+    assert HEAD_EXTRAS.count(NAV_TOGGLE_SCRIPT_TAG) == 1
+    assert "nav-toggle.js" not in HEAD_EXTRAS_WITHOUT_NAV
+    assert "defer" not in NAV_TOGGLE_SCRIPT_TAG and "async" not in NAV_TOGGLE_SCRIPT_TAG
+    assert HEAD_EXTRAS.index(CSP_META_TAG) < HEAD_EXTRAS.index(NAV_TOGGLE_SCRIPT_TAG)
 
 
 def test_ensure_agent_map_link_is_idempotent_for_bespoke_navigation():

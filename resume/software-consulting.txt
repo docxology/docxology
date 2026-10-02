@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-10-01T22:08:35Z
+Generated: 2026-10-02T15:11:25Z
 
-Current public metrics: 219 curated works; 158 catalogued software repositories (119 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 224 docxology + 43 AII public repositories (170 primary, 97 forks).
+Current public metrics: 219 curated works; 159 catalogued software repositories (120 owned + 39 AII); 823 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-02; GitHub inventory 224 docxology + 43 AII public repositories (170 primary, 97 forks).
 
 SUMMARY
 -------
@@ -65,7 +65,7 @@ WORKS AND PUBLICATIONS (211)
 [009] 2025 | Paper | Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference | Zenodo | 10.5281/zenodo.17228945
 [010] 2025 | Paper | CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling | Zenodo | 10.5281/zenodo.15170907
 [011] 2025 | Paper | Computational Complexity and Energetics of the Ant Stack | Zenodo | 10.5281/zenodo.17238736
-[012] 2025 | Paper | EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories | Zenodo | 10.5281/zenodo.17229924
+[012] 2025 | Paper | EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories | Zenodo | 10.5281/zenodo.17229924
 [013] 2025 | Paper | Increasing the Accessibility and Applicability of Active Inference | Zenodo | 10.5281/zenodo.15061666
 [014] 2025 | Paper | MDKV: A Multitrack Markdown Container for Structured, Portable Documents | Zenodo | 10.5281/zenodo.16790554
 [015] 2025 | Paper | Markdown Decision Process: A Framework for Probabilistic Document Analysis | Zenodo | 10.5281/zenodo.17244386
@@ -79,7 +79,7 @@ WORKS AND PUBLICATIONS (211)
 [023] 2025 | Paper | Temporal Depth in a Coherent Self and in Depersonalization | Frontiers in Psychology | 10.3389/fpsyg.2025.1585315
 [024] 2025 | Paper | The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot) | Zenodo | 10.5281/zenodo.17982447
 [025] 2025 | Paper | The Ant Stack | Zenodo | 10.5281/zenodo.16782756
-[026] 2025 | Paper | The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes | ArXiv | 10.48550/arXiv.2505.17500
+[026] 2025 | Paper | The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes | ArXiv | 10.48550/arXiv.2505.17500
 [027] 2025 | Paper | Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States | Entropy | 10.3390/e27050459
 [028] 2025 | Paper | Towards a Science of Consciousness and Social Complexity... For Ants | Book Chapter | https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes
 [029] 2024 | Paper | Aligning Active Inference Ontology to SUMO | Zenodo | 10.5281/zenodo.11459322
@@ -124,7 +124,7 @@ WORKS AND PUBLICATIONS (211)
 [071] 2022 | Book | Structuring the Information Commons: Open Standards and Cognitive Security | COGSEC.org | https://cogsec.org
 [072] 2022 | Paper | Systems Modeling and Cognitive Audits for Hypercert Ecosystems | Zenodo | 10.5281/zenodo.7626768
 [073] 2022 | Paper | The Free Energy Principle & Active Inference: a Systematic Literature Analysis | Zenodo | 10.5281/zenodo.7449367
-[074] 2022 | Paper | TrustFinder: Recommendations for Community-Based Trust Systems | Zenodo | 10.5281/zenodo.7093836
+[074] 2022 | Paper | TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims | Zenodo | 10.5281/zenodo.7093836
 [075] 2021 | Paper | Active Inferants: An Active Inference Framework for Ant Colony Behavior | Frontiers in Behavioral Neuroscience | 10.3389/fnbeh.2021.647732
 [076] 2021 | Paper | Active Inference in Modeling Conflict | Zenodo | 10.5281/zenodo.5750934
 [077] 2021 | Paper | Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse | Zenodo | 10.5281/zenodo.5573946
@@ -204,7 +204,7 @@ WORKS AND PUBLICATIONS (211)
 [156] 2016 | Paper | Full speed ahead to the City on the Hill | Science | 10.1126/science.aag1520
 [157] 2021 | Paper | Disinforge | Science | https://www.science.org/doi/10.1126/science.abg0904
 [158] 2021 | Paper | Defining events: 2020 in hindsight | Science | 10.1126/science.abg0904
-[159] 2022 | Paper | Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling | International Workshop on Active Inference | 10.1007/978-3-031-28719-0_10
+[159] 2023 | Paper | Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling | International Workshop on Active Inference | 10.1007/978-3-031-28719-0_10
 [160] 2024 | Paper | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | arXiv | 10.48550/arXiv.2408.15982
 [161] 2021 | Paper | Knowledge Management Archipelago | Zenodo | 10.5281/zenodo.5034808
 [162] 2024 | Paper | Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum | Zenodo | 10.5281/zenodo.13273682
@@ -268,7 +268,7 @@ WORKS AND PUBLICATIONS (211)
 [222] 2026 | Paper | The Violet Line: A Consent Ledger of Affected Parties | Zenodo | 10.5281/zenodo.22833487
 [223] 2026 | Paper | The Silver Line: A Memory-and-Succession Instrument | Zenodo | 10.5281/zenodo.22833485
 
-SOFTWARE (158)
+SOFTWARE (159)
 --------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
@@ -389,18 +389,19 @@ docxology/dicklesworthstone_meta_operator | HTML | https://github.com/docxology/
 docxology/Skillarum | Python | https://github.com/docxology/Skillarum | Turns selected public website pages into portable SKILL.md documents for agent harnesses — five inspectable stages, provenance, safety-bounded crawling, evidence-gated research outputs (renders the FractiSkills skill pages) · · Citation DOI · Zenodo artifact v0.2.0 | paper: papers/2026_Skillarum/ | zenodo: https://doi.org/10.5281/zenodo.22663906
 docxology/nockchain-migration | Python | https://github.com/docxology/nockchain-migration | Operator-gated wizard and tooling for migrating Nockchain wallets from legacy v0 notes to v1 P2PKH addresses (one-off functional tool, no paper)
 docxology/daf-jev | Python | https://github.com/docxology/daf-jev | Modular, composable Python client and decision toolkit for the TypeSafe Jev (System One) API — typed question primitives (noul/choice/score), concurrent batch evaluation, composition patterns, calibration statistics, CLI, and MCP server · Zenodo | paper: papers/2026_JevPractice/ | zenodo: https://doi.org/10.5281/zenodo.22816187
+docxology/OmniLatticeTextbook | HTML | https://github.com/docxology/OmniLatticeTextbook | Modular textbook project with computational models, deterministic figure generation, and manuscript validation; no publication DOI assigned at the source review
 ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output
 ActiveInferenceInstitute/ActiveBlockference | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveBlockference | Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework
-ActiveInferenceInstitute/ActiveInferAnts | Python | https://github.com/ActiveInferenceInstitute/ActiveInferAnts | Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
+ActiveInferenceInstitute/ActiveInferAnts | Python | https://github.com/ActiveInferenceInstitute/Active_InferAnts | Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
 ActiveInferenceInstitute/fundamentals | Python | https://github.com/ActiveInferenceInstitute/fundamentals | Unofficial repo for materials and code related to "Fundamentals of Active Inference" (Namjoshi 2026).
-ActiveInferenceInstitute/GeneralizedNotationNotation | Python | https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software | zenodo: https://doi.org/10.5281/zenodo.19600217
+ActiveInferenceInstitute/GeneralizedNotationNotation | Python | https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software | zenodo: https://doi.org/10.5281/zenodo.19600217
 ActiveInferenceInstitute/cognitive | Python | https://github.com/ActiveInferenceInstitute/cognitive | Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization
 ActiveInferenceInstitute/Active_Inference_Ontology | unspecified | https://github.com/ActiveInferenceInstitute/Active_Inference_Ontology | Formal OWL/RDF ontology for Active Inference — defines classes, properties, and axioms for free energy principle concepts
 ActiveInferenceInstitute/CEREBRUM | Python | https://github.com/ActiveInferenceInstitute/CEREBRUM | Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo | paper: papers/2025_CEREBRUM/ | zenodo: https://doi.org/10.5281/zenodo.15170907
-ActiveInferenceInstitute/Journal-Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal-Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966
+ActiveInferenceInstitute/Journal-Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal_Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966
 ActiveInferenceInstitute/Symposium | Python | https://github.com/ActiveInferenceInstitute/Symposium | Applied Active Inference Symposium materials — talks, workshops, proceedings, and collaborative session artifacts from annual Applied AIF symposia
 ActiveInferenceInstitute/ActiveInferenceCategoryTheory | unspecified | https://github.com/ActiveInferenceInstitute/ActiveInferenceCategoryTheory | Formal categorical foundations for Active Inference — string diagrams, functorial semantics, and compositional models using category theory
-ActiveInferenceInstitute/GEO-INFER | HTML | https://github.com/ActiveInferenceInstitute/GEO-INFER | Geospatial Active Inference — applying free energy minimization to geographic systems, spatial planning, and bioregional intelligence
+ActiveInferenceInstitute/GEO-INFER | HTML | https://github.com/ActiveInferenceInstitute/GEO_INFER | Geospatial Active Inference — applying free energy minimization to geographic systems, spatial planning, and bioregional intelligence
 ActiveInferenceInstitute/AEOS | unspecified | https://github.com/ActiveInferenceInstitute/AEOS | Active Entity Ontology for Science — OWL ontology for representing active entities, their actions, and causal relationships in scientific models
 ActiveInferenceInstitute/courses | HTML | https://github.com/ActiveInferenceInstitute/courses | Structured Active Inference learning courses — cohort-based curriculum materials, exercises, and collaborative learning artifacts
 ActiveInferenceInstitute/Research-Discovery-Engine | HTML | https://github.com/ActiveInferenceInstitute/Research-Discovery-Engine | AI-driven research synthesis and navigation — semantic search, citation graph analysis, and cross-domain connection discovery across the Active Inference literature
@@ -409,7 +410,7 @@ ActiveInferenceInstitute/Biofirm | Python | https://github.com/ActiveInferenceIn
 ActiveInferenceInstitute/Start | Python | https://github.com/ActiveInferenceInstitute/Start | Institute onboarding hub — getting-started guides, contributor pathways, project index, and orientation materials for new participants
 ActiveInferenceInstitute/act_inf_metaanalysis | TeX | https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis | A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus.
 ActiveInferenceInstitute/Knowledge-Engineering | Jupyter | https://github.com/ActiveInferenceInstitute/Knowledge-Engineering | Knowledge engineering tools and workflows — ontology alignment, concept mapping, and structured knowledge-base construction for Active Inference
-ActiveInferenceInstitute/fep_lean | Python | https://github.com/ActiveInferenceInstitute/fep_lean | Lean 4 / Mathlib4 formalization of FEP-related mathematics — 155-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline · · Zenodo artifact v1.1.0 · Citation DOI | paper: papers/2026_FEPLean/ | zenodo: https://doi.org/10.5281/zenodo.19699233
+ActiveInferenceInstitute/fep_formal | Python | https://github.com/ActiveInferenceInstitute/fep_formal | Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline · · Zenodo artifact v1.1.0 · Citation DOI | paper: papers/2026_FEPLean/ | zenodo: https://doi.org/10.5281/zenodo.19699233
 ActiveInferenceInstitute/ActInf_RxInfer | unspecified | https://github.com/ActiveInferenceInstitute/ActInf_RxInfer | Active Inference with RxInfer.jl — Julia-based reactive message passing for efficient Bayesian inference in Active Inference models
 ActiveInferenceInstitute/pymcp | Python | https://github.com/ActiveInferenceInstitute/pymcp | PyMCP — Model Context Protocol bridge for PyMDP, enabling Active Inference agents to interoperate with MCP-compatible AI tooling
 ActiveInferenceInstitute/policy_entanglement | Python | https://github.com/ActiveInferenceInstitute/policy_entanglement | Policy Entanglement in Active Inference v1.0.0 · Zenodo | paper: papers/2026_PolicyEntanglementActive/ | zenodo: https://doi.org/10.5281/zenodo.20418904

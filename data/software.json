@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-01T22:08:34Z",
+  "generated_at": "2026-10-02T15:11:23Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 158,
+  "count": 159,
   "repositories": [
     {
       "name": "template",
@@ -1433,6 +1433,18 @@
       "zenodo_url": "https://doi.org/10.5281/zenodo.22816187"
     },
     {
+      "name": "OmniLatticeTextbook",
+      "url": "https://github.com/docxology/OmniLatticeTextbook",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Modular textbook project with computational models, deterministic figure generation, and manuscript validation; no publication DOI assigned at the source review",
+      "language": "HTML",
+      "stars": 0,
+      "updated_or_year": "2026-09",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
       "name": "ActiveInferenceJournal",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
       "owner": "ActiveInferenceInstitute",
@@ -1458,7 +1470,7 @@
     },
     {
       "name": "ActiveInferAnts",
-      "url": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts",
+      "url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference",
@@ -1482,7 +1494,7 @@
     },
     {
       "name": "GeneralizedNotationNotation",
-      "url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software",
@@ -1530,7 +1542,7 @@
     },
     {
       "name": "Journal-Utilities",
-      "url": "https://github.com/ActiveInferenceInstitute/Journal-Utilities",
+      "url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release",
@@ -1566,7 +1578,7 @@
     },
     {
       "name": "GEO-INFER",
-      "url": "https://github.com/ActiveInferenceInstitute/GEO-INFER",
+      "url": "https://github.com/ActiveInferenceInstitute/GEO_INFER",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "Geospatial Active Inference — applying free energy minimization to geographic systems, spatial planning, and bioregional intelligence",
@@ -1673,11 +1685,11 @@
       "zenodo_url": ""
     },
     {
-      "name": "fep_lean",
-      "url": "https://github.com/ActiveInferenceInstitute/fep_lean",
+      "name": "fep_formal",
+      "url": "https://github.com/ActiveInferenceInstitute/fep_formal",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 155-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI",
+      "description": "Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI",
       "language": "Python",
       "stars": 3,
       "updated_or_year": "2026",

@@ -68,6 +68,7 @@ __path__ = [str(_SRC_DIR)]
 
 #: Legacy flat modules (``code/src/*.py``) reachable through this package.
 MODULES: tuple[str, ...] = (
+    "abstract_text",
     "artifact_budget",
     "biblio_table",
     "bibliography_links",
@@ -100,6 +101,7 @@ MODULES: tuple[str, ...] = (
     "software_table",
     "title_policy",
     "youtube_fetcher",
+    "work_identifiers",
 )
 
 _PACKAGE_PREFIX = __name__ + "."

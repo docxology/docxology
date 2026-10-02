@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Software",
-    "description": "119 original repositories and 39 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
+    "description": "120 original repositories and 39 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -1898,6 +1898,21 @@
         },
         {
             "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/OmniLatticeTextbook#software",
+            "name": "OmniLatticeTextbook",
+            "description": "Modular textbook project with computational models, deterministic figure generation, and manuscript validation; no publication DOI assigned at the source review",
+            "codeRepository": "https://github.com/docxology/OmniLatticeTextbook",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "HTML",
+            "license": "https://spdx.org/licenses/Apache-2.0.html",
+            "dateCreated": "2026-09-08T22:27:05Z",
+            "dateModified": "2026-09-09T01:21:05Z"
+        },
+        {
+            "@type": "SoftwareSourceCode",
             "@id": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal#software",
             "name": "ActiveInferenceJournal",
             "description": "Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output",
@@ -1929,15 +1944,18 @@
         },
         {
             "@type": "SoftwareSourceCode",
-            "@id": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts#software",
+            "@id": "https://github.com/ActiveInferenceInstitute/Active_InferAnts#software",
             "name": "ActiveInferAnts",
             "description": "Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference",
-            "codeRepository": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/Active_InferAnts",
             "author": {
                 "@type": "Person",
                 "name": "Daniel Ari Friedman"
             },
-            "programmingLanguage": "Python"
+            "programmingLanguage": "Python",
+            "dateCreated": "2024-04-04T19:21:29Z",
+            "dateModified": "2026-09-22T19:14:55Z",
+            "keywords": "active-inference, ant-colony-optimization, free-energy-principle, multi-agent-systems, python, swarm-intelligence, variational-inference"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1957,15 +1975,18 @@
         },
         {
             "@type": "SoftwareSourceCode",
-            "@id": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation#software",
+            "@id": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation#software",
             "name": "GeneralizedNotationNotation",
             "description": "GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software",
-            "codeRepository": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation",
             "author": {
                 "@type": "Person",
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
+            "dateCreated": "2023-04-02T19:45:34Z",
+            "dateModified": "2026-09-24T19:19:02Z",
+            "keywords": "active, active-inference, active-inference-notation, inference",
             "sameAs": "https://doi.org/10.5281/zenodo.19600217"
         },
         {
@@ -2016,15 +2037,19 @@
         },
         {
             "@type": "SoftwareSourceCode",
-            "@id": "https://github.com/ActiveInferenceInstitute/Journal-Utilities#software",
+            "@id": "https://github.com/ActiveInferenceInstitute/Journal_Utilities#software",
             "name": "Journal-Utilities",
             "description": "Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release",
-            "codeRepository": "https://github.com/ActiveInferenceInstitute/Journal-Utilities",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/Journal_Utilities",
             "author": {
                 "@type": "Person",
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "HTML",
+            "license": "https://spdx.org/licenses/CC0-1.0.html",
+            "dateCreated": "2022-11-07T14:21:08Z",
+            "dateModified": "2026-09-24T17:03:51Z",
+            "keywords": "python, rag, transcription, video-processing, whisper, youtube",
             "sameAs": "https://doi.org/10.5281/zenodo.18686966"
         },
         {
@@ -2060,15 +2085,18 @@
         },
         {
             "@type": "SoftwareSourceCode",
-            "@id": "https://github.com/ActiveInferenceInstitute/GEO-INFER#software",
+            "@id": "https://github.com/ActiveInferenceInstitute/GEO_INFER#software",
             "name": "GEO-INFER",
             "description": "Geospatial Active Inference — applying free energy minimization to geographic systems, spatial planning, and bioregional intelligence",
-            "codeRepository": "https://github.com/ActiveInferenceInstitute/GEO-INFER",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/GEO_INFER",
             "author": {
                 "@type": "Person",
                 "name": "Daniel Ari Friedman"
             },
-            "programmingLanguage": "HTML"
+            "programmingLanguage": "HTML",
+            "dateCreated": "2025-05-13T14:17:56Z",
+            "dateModified": "2026-09-23T23:02:16Z",
+            "keywords": "active-inference, agent-workflows, bayesian-inference, domain-modeling, geospatial, h3, monorepo, python, reproducible-research, spatial-analysis, uv"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -2193,15 +2221,18 @@
         },
         {
             "@type": "SoftwareSourceCode",
-            "@id": "https://github.com/ActiveInferenceInstitute/fep_lean#software",
-            "name": "fep_lean",
-            "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 155-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI",
-            "codeRepository": "https://github.com/ActiveInferenceInstitute/fep_lean",
+            "@id": "https://github.com/ActiveInferenceInstitute/fep_formal#software",
+            "name": "fep_formal",
+            "description": "Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/fep_formal",
             "author": {
                 "@type": "Person",
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
+            "dateCreated": "2026-04-14T13:33:35Z",
+            "dateModified": "2026-09-24T16:25:54Z",
+            "keywords": "active-inference, bayesian-mechanics, formal-verification, free-energy-principle, information-geometry, lean4, theorem-proving",
             "sameAs": "https://doi.org/10.5281/zenodo.19699233"
         },
         {

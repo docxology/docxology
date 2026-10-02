@@ -892,13 +892,16 @@ footer{
 }
 
 @media(max-width:860px){
-    .nav-links{display:none;position:absolute;top:74px;left:0;right:0;background:rgba(0,0,0,0.98);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);flex-direction:column;align-items:stretch;padding:1.25rem 2rem;gap:0;border-bottom:1px solid rgba(255,255,255,0.18)}
+    /* Keep routes reachable before enhancement and when JavaScript fails. */
+    nav:not(.breadcrumb):not(.nav-enhanced){position:relative;height:auto;min-height:74px;flex-wrap:wrap;padding-top:.75rem}
+    .nav-links{display:flex;position:static;flex-basis:100%;background:rgba(0,0,0,0.98);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);flex-direction:column;align-items:stretch;padding:1.25rem 2rem;gap:0;border-bottom:1px solid rgba(255,255,255,0.18)}
+    nav.nav-enhanced .nav-links{display:none;position:absolute;top:74px;left:0;right:0}
     .nav-links li{display:block}
     .nav-links a,.nav-more summary{display:flex;align-items:center;min-height:44px;min-width:44px;padding:.5rem 0}
     .nav-more-panel{position:static;border:0;box-shadow:none;background:transparent;padding:0 0 0 1rem;min-width:0}
     .nav-more[open] .nav-more-panel{display:block}
-    .nav-links.open{display:flex}
-    .menu-btn{display:block}
+    nav.nav-enhanced .nav-links.open{display:flex;max-height:calc(100dvh - 74px);overflow-y:auto}
+    .menu-btn{display:none}
     
     .hero{min-height:68svh;padding:6.9rem 1rem 2rem}
     .hero-content h1{
@@ -946,7 +949,7 @@ footer{
 
 /* Mobile hamburger: >=44px WCAG touch target, glyph centered */
 @media (max-width: 860px) {
-    .menu-btn {
+    nav.nav-enhanced .menu-btn {
         min-width: 44px;
         min-height: 44px;
         display: flex;

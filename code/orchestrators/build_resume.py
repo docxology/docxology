@@ -17,7 +17,7 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-from docxology_tools.site_nav import HEAD_EXTRAS  # noqa: E402
+from docxology_tools.site_nav import HEAD_EXTRAS_WITHOUT_NAV  # noqa: E402
 from docxology_tools.resume_data import (  # noqa: E402
     VARIANTS,
     build_resume_payload,
@@ -1219,8 +1219,8 @@ def render_resume_html(payload: dict, variant: str = "full") -> bytes:
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-image.jpg">
     <meta name="twitter:image:alt" content="Daniel Ari Friedman public profile">
-{HEAD_EXTRAS}
-    <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260530c">
+{HEAD_EXTRAS_WITHOUT_NAV}
+    <link rel="stylesheet" href="/style.css?v=site-20261002">
     <script type="application/ld+json">{structured_data}</script>
     <style>
         :root {{ color-scheme: dark; }}
@@ -1328,8 +1328,8 @@ def render_verify_html(payload: dict, provenance: dict) -> bytes:
     <meta property="og:image" content="https://danielarifriedman.com/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-{HEAD_EXTRAS}
-    <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260530c">
+{HEAD_EXTRAS_WITHOUT_NAV}
+    <link rel="stylesheet" href="/style.css?v=site-20261002">
     <style>
         :root {{
             --resume-red: #ff0000;

@@ -24,6 +24,7 @@ DEPLOYMENT_COMPARE_EXCLUDES = (
     ":(exclude)reports/**",
 )
 from docxology_tools.public_integrity import scan_public_files  # noqa: E402
+from docxology_tools.report_paths import generated_timestamp, stable_generated_at  # noqa: E402
 
 # Keep the release envelope coupled to the same source-revision policy as the
 # Pages manifest.  A stale manifest must not be able to mint a fresh-looking
@@ -32,6 +33,7 @@ import build_pages_artifact  # noqa: E402
 
 SOURCE_FILES = (
     "pages/BIBLIOGRAPHY.md",
+    "data/work-identifiers.json",
     "pages/SOFTWARE.md",
     "resume/source.json",
     "data/current-counts.json",
@@ -50,6 +52,7 @@ GENERATOR_FILES = (
     "code/orchestrators/audit_assets.py",
     "code/src/public_integrity.py",
     "code/src/release_controls.py",
+    "code/src/work_identifiers.py",
 )
 
 
@@ -158,7 +161,7 @@ def build_payload() -> dict:
     }
     return {
         "schema_version": "1.0",
-        "generated_at": current.get("generated_at"),
+        "generated_at": generated_timestamp(),
         # The release envelope is itself part of the commit, so recording the
         # current commit SHA here would be self-referential. Anchor it to the
         # source commit measured by the Pages manifest instead; deployment
@@ -204,11 +207,7 @@ def main() -> None:
     )
     args = parser.parse_args()
     payload = build_payload()
-    if OUT.exists():
-        try:
-            payload["generated_at"] = json.loads(OUT.read_text(encoding="utf-8")).get("generated_at", payload["generated_at"])
-        except json.JSONDecodeError:
-            pass
+    payload["generated_at"] = stable_generated_at(OUT, payload) or payload["generated_at"]
     rendered = json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
     if args.require_deployed:
         raise SystemExit(

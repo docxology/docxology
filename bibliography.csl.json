@@ -423,7 +423,7 @@
   {
     "id": "Friedman2025EvoJumpStochasticModelingEvolutionary012",
     "type": "article-journal",
-    "title": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+    "title": "EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
     "author": [
       {
         "family": "Friedman",
@@ -936,7 +936,7 @@
   {
     "id": "Friedman2025DiscoveryEngineAIDriven026",
     "type": "article-journal",
-    "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+    "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
     "author": [
       {
         "family": "Baulin",
@@ -2788,7 +2788,7 @@
   {
     "id": "Friedman2022TrustFinderRecommendationsCommunityBased074",
     "type": "article-journal",
-    "title": "TrustFinder: Recommendations for Community-Based Trust Systems",
+    "title": "TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims",
     "author": [
       {
         "family": "Cordes",
@@ -5581,7 +5581,7 @@
     "issued": {
       "date-parts": [
         [
-          2022
+          2023
         ]
       ]
     },

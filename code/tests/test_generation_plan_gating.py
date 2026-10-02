@@ -26,6 +26,7 @@ import regenerate_all  # noqa: E402
 from docxology_tools.generation_plan import (  # noqa: E402
     LOCAL_GENERATION_STEPS,
     GenerationStep,
+    effective_step_inputs,
     load_regeneration_state,
     step_skip_reason,
 )
@@ -95,7 +96,7 @@ def test_seed_pattern_supports_case_insensitive_pdf_glob(tmp_path: Path) -> None
 
 
 def _seed_inputs(repo_root: Path, step: GenerationStep) -> list[Path]:
-    return [_seed_pattern(repo_root, pattern) for pattern in step.inputs]
+    return [_seed_pattern(repo_root, pattern) for pattern in effective_step_inputs(step)]
 
 
 def _run(step: GenerationStep, repo_root: Path, calls: list[str]) -> tuple[int, int]:
@@ -112,7 +113,8 @@ def _run(step: GenerationStep, repo_root: Path, calls: list[str]) -> tuple[int, 
 
 def test_newly_gated_step_skips_then_reruns_on_changed_input(tmp_path: Path) -> None:
     step = STEPS["updates-page"]
-    changelog = _seed_pattern(tmp_path, "CHANGELOG.md")
+    _seed_inputs(tmp_path, step)
+    changelog = tmp_path / "CHANGELOG.md"
     calls: list[str] = []
 
     assert _run(step, tmp_path, calls) == (1, 0)

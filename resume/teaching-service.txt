@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-10-01T22:08:35Z
+Generated: 2026-10-02T15:11:25Z
 
-Current public metrics: 219 curated works; 158 catalogued software repositories (119 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 224 docxology + 43 AII public repositories (170 primary, 97 forks).
+Current public metrics: 219 curated works; 159 catalogued software repositories (120 owned + 39 AII); 823 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-02; GitHub inventory 224 docxology + 43 AII public repositories (170 primary, 97 forks).
 
 SUMMARY
 -------
@@ -107,7 +107,7 @@ WORKS AND PUBLICATIONS (83)
 [008] 2025 | Presentation | 5th Applied Active Inference Symposium — Abstract Book | Presentation | 10.5281/zenodo.17555266
 [010] 2025 | Paper | CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling | Zenodo | 10.5281/zenodo.15170907
 [011] 2025 | Paper | Computational Complexity and Energetics of the Ant Stack | Zenodo | 10.5281/zenodo.17238736
-[012] 2025 | Paper | EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories | Zenodo | 10.5281/zenodo.17229924
+[012] 2025 | Paper | EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories | Zenodo | 10.5281/zenodo.17229924
 [013] 2025 | Paper | Increasing the Accessibility and Applicability of Active Inference | Zenodo | 10.5281/zenodo.15061666
 [022] 2025 | Presentation | Systems Processes, Active Inference, and Beyond | Presentation | 10.5281/zenodo.17138223
 [023] 2025 | Paper | Temporal Depth in a Coherent Self and in Depersonalization | Frontiers in Psychology | 10.3389/fpsyg.2025.1585315
@@ -173,7 +173,7 @@ WORKS AND PUBLICATIONS (83)
 [144] 2022 | Paper | Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior" | Zenodo | 10.5281/zenodo.7401874
 [146] 2021 | Paper | Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021 | Zenodo | 10.5281/zenodo.5797040
 [155] 2016 | Paper | Lessons from the colony | Science | https://www.science.org/doi/10.1126/science.352.6288.886
-[159] 2022 | Paper | Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling | International Workshop on Active Inference | 10.1007/978-3-031-28719-0_10
+[159] 2023 | Paper | Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling | International Workshop on Active Inference | 10.1007/978-3-031-28719-0_10
 [160] 2024 | Paper | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | arXiv | 10.48550/arXiv.2408.15982
 [168] 2026 | Paper | GeneralizedNotationNotation (GNN) | Zenodo | 10.5281/zenodo.7803313
 [171] 2026 | Paper | On-Policy Distillation as Active Inference in Finite Variational Models | Zenodo | 10.5281/zenodo.20747834
@@ -186,7 +186,7 @@ WORKS AND PUBLICATIONS (83)
 [221] 2026 | Paper | The Blue Line: A Stewardship Instrument for Maintained Commitments | Zenodo | 10.5281/zenodo.22833489
 [222] 2026 | Paper | The Violet Line: A Consent Ledger of Affected Parties | Zenodo | 10.5281/zenodo.22833487
 
-SOFTWARE (14)
+SOFTWARE (15)
 -------------
 docxology/curriculum | HTML | https://github.com/docxology/curriculum | Curriculum development framework for interdisciplinary education in Active Inference, biology, and computational science
 docxology/AGEINT | HTML | https://github.com/docxology/AGEINT | Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft · · Citation DOI | paper: papers/2026_AGEINT/ | zenodo: https://doi.org/10.5281/zenodo.20732274
@@ -197,8 +197,9 @@ docxology/biol-8 | HTML | https://github.com/docxology/biol-8 | BIOL-8: Human Bi
 docxology/biology_textbook | Python | https://github.com/docxology/biology_textbook | Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI | paper: papers/2026_BiologyTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20286477
 docxology/course | Python | https://github.com/docxology/course | Course materials framework for structured interdisciplinary learning modules
 docxology/template_textbook | HTML | https://github.com/docxology/template_textbook | Modular fillable scaffold for book-length technical works · · Zenodo | paper: papers/2026_TemplateTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20533125
+docxology/OmniLatticeTextbook | HTML | https://github.com/docxology/OmniLatticeTextbook | Modular textbook project with computational models, deterministic figure generation, and manuscript validation; no publication DOI assigned at the source review
 ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output
-ActiveInferenceInstitute/Journal-Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal-Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966
+ActiveInferenceInstitute/Journal-Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal_Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966
 ActiveInferenceInstitute/courses | HTML | https://github.com/ActiveInferenceInstitute/courses | Structured Active Inference learning courses — cohort-based curriculum materials, exercises, and collaborative learning artifacts
 ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook | Julia | https://github.com/ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook | Active Inference Textbook Study Group — code, exercises, and reading notes accompanying Parr, Pezzulo & Friston (2022)
 ActiveInferenceInstitute/ISSS | Python | https://github.com/ActiveInferenceInstitute/ISSS | International Society for the Systems Sciences collaboration — joint research and educational materials bridging Active Inference and systems science

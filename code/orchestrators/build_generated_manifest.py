@@ -13,7 +13,7 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-from docxology_tools.report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel  # noqa: E402
+from docxology_tools.report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel, stable_generated_at  # noqa: E402
 
 JSON_OUT = REPO_ROOT / "data" / "generated-manifest.json"
 MD_OUT = REPO_ROOT / "GENERATED.md"
@@ -44,15 +44,6 @@ def _latest_subdir_pngs(prefix: str, fallback: str) -> str:
     return rel(latest.parent / "*.png")
 
 
-def _existing_generated_at() -> str | None:
-    if not JSON_OUT.exists():
-        return None
-    try:
-        return json.loads(JSON_OUT.read_text(encoding="utf-8")).get("generated_at")
-    except json.JSONDecodeError:
-        return None
-
-
 LATEST_EXTERNAL_LINK_REPORT = _latest_report("external_links_[0-9]*.json", "reports/external_links_2026-05-13.json")
 
 ARTIFACTS = [
@@ -69,6 +60,8 @@ ARTIFACTS = [
             "pages/BIBLIOGRAPHY.md",
             "papers/*/metadata.json",
             "papers/generated-documents.json",
+            "code/src/abstract_text.py",
+            "code/src/metadata_templates.py",
         ],
         "command": "uv run python3 code/orchestrators/regenerate_docs.py --apply",
     },
@@ -90,6 +83,7 @@ ARTIFACTS = [
         "outputs": ["publications.html", "data/publications-ld.json"],
         "sources": [
             "pages/BIBLIOGRAPHY.md",
+            "data/work-identifiers.json",
             "data/current-counts.json",
             "papers/*/README.md",
             "papers/*/AGENTS.md",
@@ -97,6 +91,12 @@ ARTIFACTS = [
             "papers/*/full_text.md",
             "papers/*/images/",
             "code/src/biblio_table.py",
+            "code/src/work_identifiers.py",
+            "code/orchestrators/export_bibliography.py",
+            "code/orchestrators/build_work_pages.py",
+            "code/src/site_nav.py",
+            "code/src/build_stamp.py",
+            "code/src/metadata_templates.py",
             "code/templates/publications.html.tmpl",
             "code/orchestrators/sync_publications_html.py",
         ],
@@ -119,12 +119,15 @@ ARTIFACTS = [
         "outputs": ["bibliography.bib", "bibliography.csl.json", "bibliography.ris", "data/works.json"],
         "sources": [
             "pages/BIBLIOGRAPHY.md",
+            "data/work-identifiers.json",
             "papers/*/README.md",
             "papers/*/AGENTS.md",
             "papers/*/SKILL.md",
             "papers/*/full_text.md",
             "papers/*/images/",
             "code/src/biblio_table.py",
+            "code/src/work_identifiers.py",
+            "code/orchestrators/export_bibliography.py",
         ],
         "command": "python3 code/orchestrators/export_bibliography.py",
     },
@@ -295,6 +298,7 @@ ARTIFACTS = [
             "data/claims.json",
             "data/github-repositories.json",
             "code/src/resume_data.py",
+            "code/src/site_nav.py",
             "code/orchestrators/build_resume.py",
         ],
         "command": "uv run python3 code/orchestrators/build_resume.py --all",
@@ -306,6 +310,7 @@ ARTIFACTS = [
             "pages/SOFTWARE.md",
             "data/github-repositories.json",
             "code/src/software_table.py",
+            "code/src/site_nav.py",
             "code/templates/software.html.tmpl",
             "code/orchestrators/sync_software_html.py",
         ],
@@ -324,6 +329,8 @@ ARTIFACTS = [
             "data/github-repositories.json",
             "code/orchestrators/build_github_inventory.py",
             "code/orchestrators/render_github_inventory.py",
+            "code/src/site_nav.py",
+            "code/src/build_stamp.py",
         ],
         "command": "python3 code/orchestrators/render_github_inventory.py",
     },
@@ -372,7 +379,7 @@ ARTIFACTS = [
     {
         "name": "Domain feeds",
         "outputs": ["feeds/domain-*.xml"],
-        "sources": ["data/works.json", "data/videos.json", "code/orchestrators/build_domain_pages.py", "code/orchestrators/build_domain_feeds.py"],
+        "sources": ["data/works.json", "data/videos.json", "code/orchestrators/build_domain_pages.py", "code/orchestrators/build_domain_feeds.py", "code/src/site_nav.py", "code/src/build_stamp.py"],
         "command": "python3 code/orchestrators/build_domain_feeds.py",
     },
     {
@@ -396,6 +403,8 @@ ARTIFACTS = [
             "code/src/paper_artifacts.py",
             "code/src/metadata_templates.py",
             "code/src/site_nav.py",
+            "code/src/abstract_text.py",
+            "code/src/build_stamp.py",
         ],
         "command": "python3 code/orchestrators/build_work_pages.py",
     },
@@ -419,6 +428,9 @@ ARTIFACTS = [
             "data/video-transcripts/*.txt",
             "data/works.json",
             "data/work-enrichment.json",
+            "code/orchestrators/build_video_pages.py",
+            "code/src/site_nav.py",
+            "code/src/build_stamp.py",
         ],
         "command": "python3 code/orchestrators/build_video_pages.py",
     },
@@ -448,19 +460,21 @@ ARTIFACTS = [
             "code/orchestrators/build_work_pages.py",
             "code/src/metadata_templates.py",
             "code/src/site_nav.py",
+            "code/src/abstract_text.py",
+            "code/src/build_stamp.py",
         ],
         "command": "python3 code/orchestrators/build_paper_pages.py",
     },
     {
         "name": "Evidence pages",
         "outputs": ["evidence.html", "pages/EVIDENCE.md"],
-        "sources": ["data/claims.json", "code/orchestrators/build_evidence_page.py"],
+        "sources": ["data/claims.json", "data/current-counts.json", "reports/public_source_snapshot_*.json", "reports/public_source_inventory_*.json", "code/orchestrators/build_evidence_page.py", "code/src/site_nav.py", "code/src/build_stamp.py"],
         "command": "python3 code/orchestrators/build_evidence_page.py",
     },
     {
         "name": "Reproducibility ledger",
         "outputs": ["reproducibility.html", "pages/REPRODUCIBILITY.md", "data/reproducibility.json"],
-        "sources": ["data/works.json", "papers/paper_metadata.json", "code/orchestrators/build_reproducibility_ledger.py"],
+        "sources": ["data/works.json", "data/software.json", "code/orchestrators/build_reproducibility_ledger.py", "code/src/site_nav.py", "code/src/build_stamp.py"],
         "command": "python3 code/orchestrators/build_reproducibility_ledger.py",
     },
     {
@@ -472,19 +486,19 @@ ARTIFACTS = [
     {
         "name": "Data catalog",
         "outputs": ["catalog.html", "data/catalog.json"],
-        "sources": ["code/orchestrators/build_catalog.py", "data/*.json"],
+        "sources": ["code/orchestrators/build_catalog.py", "data/*.json", "code/src/site_nav.py", "code/src/build_stamp.py"],
         "command": "python3 code/orchestrators/build_catalog.py",
     },
     {
         "name": "Exports hub",
         "outputs": ["exports.html"],
-        "sources": ["code/orchestrators/build_exports_page.py", "data/catalog.json"],
+        "sources": ["code/orchestrators/build_exports_page.py", "data/works.json", "data/current-counts.json", "code/src/site_nav.py", "code/src/build_stamp.py"],
         "command": "python3 code/orchestrators/build_exports_page.py",
     },
     {
         "name": "Updates page",
         "outputs": ["updates.html"],
-        "sources": ["CHANGELOG.md", "code/orchestrators/build_updates_page.py"],
+        "sources": ["CHANGELOG.md", "pages/THINKING_LOG.md", "code/orchestrators/build_updates_page.py", "code/src/site_nav.py", "code/src/build_stamp.py"],
         "command": "python3 code/orchestrators/build_updates_page.py",
     },
     {
@@ -543,7 +557,7 @@ ARTIFACTS = [
     {
         "name": "Static accessibility report",
         "outputs": [_latest_report("accessibility_static_*.json", "reports/accessibility_static_2026-05-13.json")],
-        "sources": ["root HTML pages", "style.css", "code/orchestrators/accessibility_audit.py"],
+        "sources": ["root HTML pages", "style.css", "code/orchestrators/accessibility_audit.py", "code/orchestrators/deploy_seo_security.py", "code/src/site_nav.py"],
         "command": "python3 code/orchestrators/accessibility_audit.py",
     },
     {
@@ -603,6 +617,7 @@ ARTIFACTS = [
             "pages/ART_COLLECTIONS.md",
             "code/src/artwork_pages.py",
             "code/src/art_collections.py",
+            "code/src/site_nav.py",
             "code/orchestrators/build_artwork_pages.py",
         ],
         "command": "python3 code/orchestrators/build_artwork_pages.py",
@@ -709,7 +724,8 @@ def main() -> None:
     parser.add_argument("--check", action="store_true", help="Fail if generated manifest files are stale")
     args = parser.parse_args()
     stale = []
-    generated_at = _existing_generated_at() or generated_timestamp()
+    candidate = json.loads(render_json())
+    generated_at = stable_generated_at(JSON_OUT, candidate) or candidate["generated_at"]
     for path, content in outputs(generated_at).items():
         if args.check:
             if not path.exists() or path.read_text(encoding="utf-8") != content:

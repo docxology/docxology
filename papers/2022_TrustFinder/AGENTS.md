@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — TrustFinder: Recommendations for Community-Based Trust Systems
+# AGENTS.md — TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims
 
-**Paper**: TrustFinder: Recommendations for Community-Based Trust Systems (2022)
+**Paper**: TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims (2022)
 **Domain**: Cognitive Security
 **Authors**: R.J. Cordes, Scott David, Daniel Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects TrustFinder: Recommendations for Community-Based Trust Systems to related works in the bibliography
+- Connects TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

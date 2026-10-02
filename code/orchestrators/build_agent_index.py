@@ -19,6 +19,7 @@ from docxology_tools.report_paths import latest_source_report  # noqa: E402
 
 DATASET_PATHS = {
     "works": "data/works.json",
+    "work_identifiers": "data/work-identifiers.json",
     "software": "data/software.json",
     "repositories": "data/github-repositories.json",
     "artworks_index": "data/artworks-index.json",
@@ -72,6 +73,15 @@ def latest_report(pattern: str, _fallback: str) -> str:
 
 
 SCHEMAS = {
+    "WorkIdentifierRegistry": {
+        "type": "object",
+        "description": "Reviewed permanent work IDs and citation keys; active rows and retired reservations are never renumbered or recomputed from metadata.",
+        "required": ["schema_version", "identifiers"],
+        "fields": {
+            "schema_version": "WorkIdentifierRegistry.v1",
+            "identifiers": "object keyed by positive numeric catalog ID; each record has citation_key and status (active or retired); retired records require reason",
+        },
+    },
     "Work": {
         "type": "object",
         "description": "One curated bibliography row; citation_key is the permanent public URL identifier.",
@@ -458,6 +468,7 @@ def payload() -> dict:
     videos = load_json("data/videos.json")
     videos_index = load_json("data/videos-index.json")
     works = load_json("data/works.json")
+    work_identifiers = load_json("data/work-identifiers.json")
     software = load_json("data/software.json")
     repositories = load_json("data/github-repositories.json")
     claims = load_json("data/claims.json")
@@ -541,6 +552,7 @@ def payload() -> dict:
         ],
         "datasets": {
             "works": {"path": "/data/works.json", "count": counts.get("bibliography_works"), "schema": "Work"},
+            "work_identifiers": {"path": "/data/work-identifiers.json", "count": len(work_identifiers.get("identifiers", {})), "schema": "WorkIdentifierRegistry"},
             "software": {"path": "/data/software.json", "count": counts.get("software", {}).get("curated_total"), "schema": "SoftwareRepository"},
             "repositories": {"path": "/data/github-repositories.json", "count": counts.get("github_inventory", {}).get("total"), "schema": "Repository"},
             "artworks": {"path": "/data/artworks.json", "count": artworks.get("count", len(artworks.get("artworks", []))), "schema": "VisualArtwork"},
@@ -576,6 +588,10 @@ def payload() -> dict:
         "schema_registry_version": "1.5",
         "schema_examples": {
             "Work": works.get("works", [])[:1],
+            "WorkIdentifierRegistry": {
+                "schema_version": work_identifiers.get("schema_version"),
+                "identifiers": dict(list(work_identifiers.get("identifiers", {}).items())[:1]),
+            },
             "SoftwareRepository": software.get("repositories", [])[:1],
             "ArtworkIndex": artworks_index.get("artworks", [])[:1],
             "VideoIndex": {
@@ -596,7 +612,7 @@ def payload() -> dict:
         "dataset_hashes": dataset_hashes,
         "source_provenance": {
             "generated_by": "code/orchestrators/build_agent_index.py",
-            "source_of_truth": ["pages/BIBLIOGRAPHY.md", "pages/SOFTWARE.md", "data/current-counts.json", "data/scholar-snapshot.json", "data/scholar-verification-receipt.json"],
+            "source_of_truth": ["pages/BIBLIOGRAPHY.md", "data/work-identifiers.json", "pages/SOFTWARE.md", "data/current-counts.json", "data/scholar-snapshot.json", "data/scholar-verification-receipt.json"],
             "hash_policy": "SHA-256 values cover hosted JSON datasets and integrity manifests at generation time.",
         },
         "hosted_availability": {

@@ -23,6 +23,7 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
+import docxology_tools  # noqa: E402,F401 (canonical orchestrator bootstrap)
 import regenerate_all  # noqa: E402
 import validate_repo  # noqa: E402
 from docxology_tools.generation_plan import (  # noqa: E402
@@ -31,16 +32,21 @@ from docxology_tools.generation_plan import (  # noqa: E402
     input_fingerprint,
     load_regeneration_state,
     save_regeneration_state,
+    step_input_fingerprint,
     step_skip_reason,
 )
 
 
 @pytest.fixture(autouse=True)
 def _seed_inputs(tmp_path: Path) -> None:
-    """Give every test the two declared inputs most steps consume."""
+    """Seed data plus the minimal writer/shared-source cache prerequisites."""
     (tmp_path / "data").mkdir()
     (tmp_path / "data" / "works.json").write_text("{}\n", encoding="utf-8")
     (tmp_path / "data" / "work-enrichment.json").write_text("{}\n", encoding="utf-8")
+    for relative in ("code/orchestrators/fixture.py", "code/src/site_nav.py"):
+        path = tmp_path / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("# fixture source\n", encoding="utf-8")
 
 
 def _write_step(*inputs: str) -> GenerationStep:
@@ -285,7 +291,7 @@ def test_step_state_records_only_nonempty_fingerprints(tmp_path: Path) -> None:
 
     regenerate_all.record_step_state(step, state, tmp_path)
     assert step.identifier in state
-    assert state[step.identifier] == input_fingerprint(tmp_path, ("data/works.json",))
+    assert state[step.identifier] == step_input_fingerprint(step, tmp_path)
 
 
 def test_fingerprint_hashes_content_not_paths_alone(tmp_path: Path) -> None:

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import sys
+import json
 from pathlib import Path
 
 # docxology_tools owns the canonical bootstrap; this locate makes the package importable.
@@ -59,3 +60,22 @@ def test_release_envelope_rejects_a_stale_pages_source_commit() -> None:
         assert "source_commit_at_generation" in str(exc)
     else:  # pragma: no cover - regression guard
         raise AssertionError("stale source revision was accepted")
+
+
+def test_changed_integrity_body_gets_fresh_timestamp_then_reaches_fixed_point(tmp_path, monkeypatch):
+    out = tmp_path / "release-integrity.json"
+    old = {"generated_at": "2026-08-13T00:00:00Z", "source_sha256": {"source": "old"}}
+    out.write_text(json.dumps(old) + "\n", encoding="utf-8")
+    candidate = {"generated_at": "2026-10-02T00:00:00Z", "source_sha256": {"source": "new"}}
+    monkeypatch.setattr(bri, "OUT", out)
+    monkeypatch.setattr(bri, "build_payload", lambda: dict(candidate))
+    monkeypatch.setattr(sys, "argv", ["build_release_integrity.py"])
+    monkeypatch.setattr(bri, "REPO_ROOT", tmp_path)
+    bri.main()
+    assert json.loads(out.read_text(encoding="utf-8"))["generated_at"] == "2026-10-02T00:00:00Z"
+    written = out.read_bytes()
+    candidate["generated_at"] = "2026-10-03T00:00:00Z"
+    bri.main()
+    assert out.read_bytes() == written
+    monkeypatch.setattr(sys, "argv", ["build_release_integrity.py", "--check"])
+    bri.main()

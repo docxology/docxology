@@ -31,6 +31,7 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <link rel="me" href="https://www.flickr.com/photos/daniel_friedman/" title="Flickr">
     <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
+    <script src="/js/nav-toggle.js?v=nav-20261002"></script>
     <meta property="og:type" content="article">
     <meta property="og:title" content="Sortition Upstream of NTQR">
     <meta property="og:description" content="How should you choose the judges, jurors, or reviewers who form a panel — and does that upstream choice change how well you can evaluate them without an…">
@@ -44,7 +45,7 @@
     <meta name="twitter:description" content="How should you choose the judges, jurors, or reviewers who form a panel — and does that upstream choice change how well you can evaluate them without an…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Sortition Upstream of NTQR — Daniel Ari Friedman">
-    <link rel="stylesheet" href="../style.css?v=work-access-20261001">
+    <link rel="stylesheet" href="../style.css?v=site-20261002">
     <meta name="theme-color" content="#0c0c0e">
     <style>
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
@@ -257,51 +258,7 @@
 
         <section class="section">
             <div class="section-header"><h2>Overview</h2><div class="section-divider"></div></div>
-            <div class="work-detail"><p>How should you choose the judges, jurors, or reviewers who form a panel — and does
-that upstream choice change how well you can evaluate them without an answer key?
-A panel can be selected many ways — by competence, by a representative lottery
-(sortition), by ideological bloc, or at random — and, separately, its noisy
-judgments can be evaluated blind: given the agreement/disagreement pattern among
-three binary judges, the ntqr package&#x27;s error-independent (EIE) evaluator returns
-logically consistent estimates of item prevalence and per-judge accuracy with no
-labels at all. But that evaluator takes the panel as given. We join the two
-questions and ask whether the rule that forms the panel changes the
-oracle-referenced error of the no-answer-key evaluation — how far the blind estimate
-lands from the answer-key result, lower being better.
-
-On a fully deterministic instrument (96 seeds, 96 experts,
-300 items), the dominant lever is which rule forms the panel, not its size:
-competence-first selection recovers best (0.037), while
-representative, single-bloc, and random selection collapse together — by
-construction, because with independent judge errors composition cannot move an
-estimator that only sees agreement. Supplying the missing channel — same-group judges
-sharing a latent, marginal-accuracy-preserving error confound — makes the strategies
-fan out monotonically as within-bloc coupling rises: representative sortition stays
-flat while single-bloc selection degrades, the gap widening from 0.000 to
-0.112. Within this instrument the relationship is closed-form: recovery
-error tracks the panel&#x27;s Herfindahl concentration index over the axis a shared
-error rides on — minimized exactly by a balanced (representative) draw, maximized by a
-single bloc — and a continuous representativeness dial confirms error rises
-monotonically with it.
-
-The protection is conditional: re-keying the confound to an axis the lottery does
-not balance erases the protection (0.147→0.229). The
-lesson for selecting and evaluating panels is thus a falsifiable, simulation-bounded
-prediction, not a preference for any one rule — representativeness protects blind
-recovery precisely when the panel balances the attribute a shared error rides on.
-Evidence is synthetic and oracle-scored; in a single small live model
-(gemma3:4b) the synthetically-best competence-first rule was the worst,
-illustrating that a selection rule validated on parameterized judges need not carry
-over to prompted ones — a hypothesis to test, not an established caution. All methods
-and documentation are openly available at the public repository
-docxology/ntqr_allotment.
-
----
-Associated artifacts
-GitHub release: v0.1.0 (https://github.com/docxology/ntqr_allotment/releases/tag/v0.1.0)
-DOI: https://doi.org/10.5281/zenodo.21083779
-Zenodo: https://zenodo.org/records/21083779
-PDF SHA-256: 73289489d2d123f198ccee83adac10e61a752805d908970030c2d5ac009061e4</p><div class="keyword-row" aria-label="Keywords"><span>sortition</span><span>NTQR</span><span>unlabeled evaluation</span><span>expert panels</span><span>peer review</span><span>error independence</span><span>statistical power</span><span>panel formation</span><span>synthetic evaluation</span><span>LLM reviewers</span></div><p class="summary-sources abstract-source">Overview source: <a href="../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
+            <div class="work-detail"><p>How should you choose the judges, jurors, or reviewers who form a panel — and does<br>that upstream choice change how well you can evaluate them without an answer key?<br>A panel can be selected many ways — by competence, by a representative lottery<br>(sortition), by ideological bloc, or at random — and, separately, its noisy<br>judgments can be evaluated blind: given the agreement/disagreement pattern among<br>three binary judges, the ntqr package&#x27;s error-independent (EIE) evaluator returns<br>logically consistent estimates of item prevalence and per-judge accuracy with no<br>labels at all. But that evaluator takes the panel as given. We join the two<br>questions and ask whether the rule that forms the panel changes the<br>oracle-referenced error of the no-answer-key evaluation — how far the blind estimate<br>lands from the answer-key result, lower being better.</p><p>On a fully deterministic instrument (96 seeds, 96 experts,<br>300 items), the dominant lever is which rule forms the panel, not its size:<br>competence-first selection recovers best (0.037), while<br>representative, single-bloc, and random selection collapse together — by<br>construction, because with independent judge errors composition cannot move an<br>estimator that only sees agreement. Supplying the missing channel — same-group judges<br>sharing a latent, marginal-accuracy-preserving error confound — makes the strategies<br>fan out monotonically as within-bloc coupling rises: representative sortition stays<br>flat while single-bloc selection degrades, the gap widening from 0.000 to<br>0.112. Within this instrument the relationship is closed-form: recovery<br>error tracks the panel&#x27;s Herfindahl concentration index over the axis a shared<br>error rides on — minimized exactly by a balanced (representative) draw, maximized by a<br>single bloc — and a continuous representativeness dial confirms error rises<br>monotonically with it.</p><p>The protection is conditional: re-keying the confound to an axis the lottery does<br>not balance erases the protection (0.147→0.229). The<br>lesson for selecting and evaluating panels is thus a falsifiable, simulation-bounded<br>prediction, not a preference for any one rule — representativeness protects blind<br>recovery precisely when the panel balances the attribute a shared error rides on.<br>Evidence is synthetic and oracle-scored; in a single small live model<br>(gemma3:4b) the synthetically-best competence-first rule was the worst,<br>illustrating that a selection rule validated on parameterized judges need not carry<br>over to prompted ones — a hypothesis to test, not an established caution. All methods<br>and documentation are openly available at the public repository<br>docxology/ntqr_allotment.</p><p>---<br>Associated artifacts<br>GitHub release: v0.1.0 (https://github.com/docxology/ntqr_allotment/releases/tag/v0.1.0)<br>DOI: https://doi.org/10.5281/zenodo.21083779<br>Zenodo: https://zenodo.org/records/21083779<br>PDF SHA-256: 73289489d2d123f198ccee83adac10e61a752805d908970030c2d5ac009061e4</p><div class="keyword-row" aria-label="Keywords"><span>sortition</span><span>NTQR</span><span>unlabeled evaluation</span><span>expert panels</span><span>peer review</span><span>error independence</span><span>statistical power</span><span>panel formation</span><span>synthetic evaluation</span><span>LLM reviewers</span></div><p class="summary-sources abstract-source">Overview source: <a href="../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Methods and contributions</h2><p>Read the source for the full argument, qualifications, and evidence.</p><div class="section-divider"></div></div>
@@ -336,11 +293,11 @@ PDF SHA-256: 73289489d2d123f198ccee83adac10e61a752805d908970030c2d5ac009061e4</p
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite &amp; Verify</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/a3028183">build a3028183 2026-08-28</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/e296b3ae8">build e296b3ae8 2026-10-02</a></p>
     </footer>
-<script src="/js/search-utils.js?v=20260813"></script>
+<script src="/js/search-utils.js?v=site-20261002"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
-<script src="/js/interactive.js?v=20260813" defer></script>
+<script src="/js/interactive.js?v=site-20261002" defer></script>
 <script src="/js/cite-export.js?v=work-access-20261001" defer></script>
 <script src="/js/menu-esc.js?v=20260813" defer></script></body>
 </html>

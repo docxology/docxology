@@ -24,6 +24,7 @@ generated-layer rebuild ordering, canonical/reports). This README is the human m
 | **Operations** | [`operations/cv-release.md`](operations/cv-release.md) | CV source-of-truth, generated outputs, privacy, reproducibility, and claim-boundary checks |
 | **Operations** | [`operations/evidence-refresh.md`](operations/evidence-refresh.md) | Public-source refresh, publication-pair review, coverage exceptions, and dated claim evidence |
 | **Operations** | [`operations/accessibility-qa.md`](operations/accessibility-qa.md) | Static accessibility, browser behavior, responsive, reduced-motion, forced-colors, and visual QA |
+| **Operations** | [`operations/site-runtime.md`](operations/site-runtime.md) | Progressive search, bounded offline caching, transfer budgets, and mandatory browser/Lighthouse acceptance |
 | **Operations** | [`operations/live-verification.md`](operations/live-verification.md) | Post-deployment route, JSON-count, Pages-status, and propagation checks |
 | **SEO** | [`seo/canonical-policy.md`](seo/canonical-policy.md) | Redirect + canonical URL policy; permanent work-URL contract (GitHub Pages) |
 | **SEO** | [`seo/gsc-followup.md`](seo/gsc-followup.md) | Google Search Console manual follow-up runbook |

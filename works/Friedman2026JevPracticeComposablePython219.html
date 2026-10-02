@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model</title>
-    <meta name="description" content="&lt;p&gt;Jev is TypeSafe&#x27;s flagship &lt;em&gt;System One&lt;/em&gt; decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a…">
+    <meta name="description" content="Jev is TypeSafe&#x27;s flagship System One decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with…">
     <meta name="robots" content="index, follow">
     <meta name="citation_title" content="Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model">
     <meta name="citation_publication_date" content="2026">
@@ -31,9 +31,10 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <link rel="me" href="https://www.flickr.com/photos/daniel_friedman/" title="Flickr">
     <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
+    <script src="/js/nav-toggle.js?v=nav-20261002"></script>
     <meta property="og:type" content="article">
     <meta property="og:title" content="Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model">
-    <meta property="og:description" content="&lt;p&gt;Jev is TypeSafe&#x27;s flagship &lt;em&gt;System One&lt;/em&gt; decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a…">
+    <meta property="og:description" content="Jev is TypeSafe&#x27;s flagship System One decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with…">
     <meta property="og:url" content="https://danielarifriedman.com/works/Friedman2026JevPracticeComposablePython219.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
@@ -41,10 +42,10 @@
     <meta property="og:image:alt" content="Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model — Daniel Ari Friedman">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model">
-    <meta name="twitter:description" content="&lt;p&gt;Jev is TypeSafe&#x27;s flagship &lt;em&gt;System One&lt;/em&gt; decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a…">
+    <meta name="twitter:description" content="Jev is TypeSafe&#x27;s flagship System One decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model — Daniel Ari Friedman">
-    <link rel="stylesheet" href="../style.css?v=work-access-20261001">
+    <link rel="stylesheet" href="../style.css?v=site-20261002">
     <meta name="theme-color" content="#0c0c0e">
     <style>
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
@@ -107,7 +108,7 @@
         "@type": "Organization",
         "name": "Zenodo"
     },
-    "abstract": "\u003cp>Jev is TypeSafe's flagship \u003cem>System One\u003c/em> decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with calibrated probabilities that software can branch on directly. This work presents \u003ccode>daf-jev\u003c/code>, an open, modular, composable Python toolkit for the Jev API, together with a live-API characterization of the model. The package layers ergonomic question builders, a decision-composition library (confidence gates, tiered routing, composite scoring), a concurrent corpus evaluator, a calibration module, a CLI, an agent skill, and a Model Context Protocol (MCP) server over a thin typed client. Live benchmarks show that batching questions into one call is faster and cheaper than sequential calls (up to ~18x speedup and ~4x fewer tokens), that decision pipelines complete within the model's millisecond envelope, and that reported confidence is self-consistent across repeated evaluations. All numbers in the accompanying manuscript are generated from benchmark artifacts; the full provenance chain (hashed documentation snapshot, figure registry, validation receipts) is machine-checked.\u003c/p>",
+    "abstract": "Jev is TypeSafe's flagship System One decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with calibrated probabilities that software can branch on directly. This work presents daf-jev, an open, modular, composable Python toolkit for the Jev API, together with a live-API characterization of the model. The package layers ergonomic question builders, a decision-composition library (confidence gates, tiered routing, composite scoring), a concurrent corpus evaluator, a calibration module, a CLI, an agent skill, and a Model Context Protocol (MCP) server over a thin typed client. Live benchmarks show that batching questions into one call is faster and cheaper than sequential calls (up to ~18x speedup and ~4x fewer tokens), that decision pipelines complete within the model's millisecond envelope, and that reported confidence is self-consistent across repeated evaluations. All numbers in the accompanying manuscript are generated from benchmark artifacts; the full provenance chain (hashed documentation snapshot, figure registry, validation receipts) is machine-checked.",
     "description": "Batching questions into one call gave wall-time speedups of 3.98, 8.77, and 18.55 across the configured batch widths. At the widest batch width the sequential strategy used 4.22 times the tokens of the batched call, so batching was both faster and cheaper. End-to-end decision pipelines had median wall times of 0.133 s (composite scoring) and 0.129 s (intent routing). Under a self-consistency proxy, the calibration benchmark reported ECE 0.0730 and Brier 0.0252; the author notes this shows consistency with proxy labels, not correctness about the world. The unit test suite reached 93.08 measured coverage. daf-jev layered Python client for the System One endpoint — Implements typed builders (no",
     "citation": "Friedman, Daniel Ari. 2026. Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model. Zenodo. DOI: 10.5281/zenodo.22816187. URL: https://doi.org/10.5281/zenodo.22816187.",
     "hasPart": {
@@ -213,7 +214,7 @@
 
         <section class="section">
             <div class="section-header"><h2>Overview</h2><div class="section-divider"></div></div>
-            <div class="work-detail"><p>&lt;p&gt;Jev is TypeSafe&#x27;s flagship &lt;em&gt;System One&lt;/em&gt; decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with calibrated probabilities that software can branch on directly. This work presents &lt;code&gt;daf-jev&lt;/code&gt;, an open, modular, composable Python toolkit for the Jev API, together with a live-API characterization of the model. The package layers ergonomic question builders, a decision-composition library (confidence gates, tiered routing, composite scoring), a concurrent corpus evaluator, a calibration module, a CLI, an agent skill, and a Model Context Protocol (MCP) server over a thin typed client. Live benchmarks show that batching questions into one call is faster and cheaper than sequential calls (up to ~18x speedup and ~4x fewer tokens), that decision pipelines complete within the model&#x27;s millisecond envelope, and that reported confidence is self-consistent across repeated evaluations. All numbers in the accompanying manuscript are generated from benchmark artifacts; the full provenance chain (hashed documentation snapshot, figure registry, validation receipts) is machine-checked.&lt;/p&gt;</p><p class="summary-sources abstract-source">Overview source: <a href="../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
+            <div class="work-detail"><p>Jev is TypeSafe&#x27;s flagship System One decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with calibrated probabilities that software can branch on directly. This work presents daf-jev, an open, modular, composable Python toolkit for the Jev API, together with a live-API characterization of the model. The package layers ergonomic question builders, a decision-composition library (confidence gates, tiered routing, composite scoring), a concurrent corpus evaluator, a calibration module, a CLI, an agent skill, and a Model Context Protocol (MCP) server over a thin typed client. Live benchmarks show that batching questions into one call is faster and cheaper than sequential calls (up to ~18x speedup and ~4x fewer tokens), that decision pipelines complete within the model&#x27;s millisecond envelope, and that reported confidence is self-consistent across repeated evaluations. All numbers in the accompanying manuscript are generated from benchmark artifacts; the full provenance chain (hashed documentation snapshot, figure registry, validation receipts) is machine-checked.</p><p class="summary-sources abstract-source">Overview source: <a href="../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Methods and contributions</h2><p>Read the source for the full argument, qualifications, and evidence.</p><div class="section-divider"></div></div>
@@ -248,11 +249,11 @@
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite &amp; Verify</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/9341c79f">build 9341c79f 2026-09-18</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/e296b3ae8">build e296b3ae8 2026-10-02</a></p>
     </footer>
-<script src="/js/search-utils.js?v=20260813"></script>
+<script src="/js/search-utils.js?v=site-20261002"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
-<script src="/js/interactive.js?v=20260813" defer></script>
+<script src="/js/interactive.js?v=site-20261002" defer></script>
 <script src="/js/cite-export.js?v=work-access-20261001" defer></script>
 <script src="/js/menu-esc.js?v=20260813" defer></script></body>
 </html>

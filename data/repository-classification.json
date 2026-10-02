@@ -1,20 +1,20 @@
 {
   "schema_version": "1.4",
-  "generated_at": "2026-09-26T01:17:51Z",
+  "generated_at": "2026-10-02T15:11:20Z",
   "source": "data/github-repositories.json",
   "acknowledged_exclusions_source": "data/repository-exclusions.json",
   "policy": "Complete GitHub inventory remains distinct from the curated software catalog; unknown primary repositories stay reviewable and are never auto-promoted. Repositories listed in data/repository-exclusions.json are deliberate not-catalog decisions (profile/website/test/mirror/duplicate or public forks) and are marked acknowledged only when their full_name and immutable github_id/github_node_id match the reviewed repository. Each row reports how its decision was reached in reviewed_by: principal means the principal reviewed that repository individually; standing_policy means an already-recorded principal decision was applied to a fork nobody reviewed one by one, and policy_source names that decision.",
   "summary": {
     "total_inventory": 267,
-    "uncatalogued": 114,
+    "uncatalogued": 112,
     "forks": 96,
     "acknowledged_forks": 96,
-    "primary_requires_review": 6,
+    "primary_requires_review": 4,
     "acknowledged_excluded": 12,
     "archived": 4,
     "missing_description": 11,
     "short_description": 18,
-    "substantive_description": 85
+    "substantive_description": 83
   },
   "repositories": [
     {
@@ -106,34 +106,6 @@
       "acknowledged_reason": "fork_not_curated",
       "reviewed_by": "principal",
       "reviewed_at": "2026-08-26"
-    },
-    {
-      "full_name": "ActiveInferenceInstitute/fep_formal",
-      "github_id": 1210503162,
-      "github_node_id": "R_kgDOSCbP-g",
-      "name": "fep_formal",
-      "owner": "ActiveInferenceInstitute",
-      "html_url": "https://github.com/ActiveInferenceInstitute/fep_formal",
-      "fork": false,
-      "archived": false,
-      "private": false,
-      "description": "Standalone catalog of formally verified theorems spanning the Free Energy Principle, Active Inference, Bayesian Mechanics, Information Geometry, and Thermodynamics.",
-      "description_quality": "substantive",
-      "language": "Python",
-      "topics": [
-        "active-inference",
-        "bayesian-mechanics",
-        "formal-verification",
-        "free-energy-principle",
-        "information-geometry",
-        "lean4",
-        "theorem-proving"
-      ],
-      "recently_updated": true,
-      "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
     },
     {
       "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation",
@@ -1971,26 +1943,6 @@
       "reviewed_by": "standing_policy",
       "reviewed_at": "2026-09-10",
       "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated"
-    },
-    {
-      "full_name": "docxology/OmniLatticeTextbook",
-      "github_id": 1361963595,
-      "github_node_id": "R_kgDOUS3qSw",
-      "name": "OmniLatticeTextbook",
-      "owner": "docxology",
-      "html_url": "https://github.com/docxology/OmniLatticeTextbook",
-      "fork": false,
-      "archived": false,
-      "private": false,
-      "description": "The Infinite Octaves Omni-Lattice Textbook — a modular synthesis of the SynthOBS engine papers (SS Vibelandia): 30 chapters, tested formalisms, deterministic figures",
-      "description_quality": "substantive",
-      "language": "HTML",
-      "topics": [],
-      "recently_updated": true,
-      "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
     },
     {
       "full_name": "docxology/OpenGauss",

@@ -221,12 +221,21 @@ def is_visual_qa_screenshot(path: Path) -> bool:
     nested path remains visible to the artifact policy rather than using a
     suffix match to evade it.
     """
-    return (
-        len(path.parts) >= 4
-        and path.parts[0] == "reports"
-        and path.parts[1] == "visual-qa"
-        and path.suffix.lower() in VISUAL_QA_SCREENSHOT_SUFFIXES
-    )
+    if not path.parts or path.parts[0] != "reports" or path.suffix.lower() not in VISUAL_QA_SCREENSHOT_SUFFIXES:
+        return False
+    if len(path.parts) >= 4 and path.parts[1] == "visual-qa":
+        return True
+    # The original visual captures used reports/YYYY-MM-DD/*.png rather
+    # than reports/visual-qa/YYYY-MM-DD/*.png. Keep those committed evidence
+    # binaries under the same GitHub-backed projection policy. Match a real
+    # calendar date and the exact layout, never a broad reports/image glob.
+    if len(path.parts) != 3 or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", path.parts[1]):
+        return False
+    try:
+        date.fromisoformat(path.parts[1])
+    except ValueError:
+        return False
+    return True
 
 
 def is_published_path(path: Path) -> bool:

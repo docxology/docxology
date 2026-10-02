@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-02T14:39:51Z",
+  "reviewed_by": "agent source review under authorized repository improvement task",
+  "scope": "six primary repositories in the recorded catalog classification queue",
+  "decisions": [
+    {
+      "prior_catalog_url": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts",
+      "canonical_url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts",
+      "github_id": 782172228,
+      "github_node_id": "R_kgDOLp8ARA",
+      "sources": [
+        "https://api.github.com/repos/ActiveInferenceInstitute/ActiveInferAnts",
+        "https://api.github.com/repos/ActiveInferenceInstitute/Active_InferAnts"
+      ],
+      "decision": "applied: canonicalize existing catalog URL; same immutable repository identity, no duplicate promotion"
+    },
+    {
+      "prior_catalog_url": "https://github.com/ActiveInferenceInstitute/fep_lean",
+      "canonical_url": "https://github.com/ActiveInferenceInstitute/fep_formal",
+      "github_id": 1210503162,
+      "github_node_id": "R_kgDOSCbP-g",
+      "sources": [
+        "https://api.github.com/repos/ActiveInferenceInstitute/fep_lean",
+        "https://api.github.com/repos/ActiveInferenceInstitute/fep_formal"
+      ],
+      "decision": "applied: canonicalize existing catalog URL; same immutable repository identity, no duplicate promotion"
+    },
+    {
+      "prior_catalog_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "canonical_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation",
+      "github_id": 622673569,
+      "github_node_id": "R_kgDOJR0-oQ",
+      "sources": [
+        "https://api.github.com/repos/ActiveInferenceInstitute/GeneralizedNotationNotation",
+        "https://api.github.com/repos/ActiveInferenceInstitute/Generalized_Notation_Notation"
+      ],
+      "decision": "applied: canonicalize existing catalog URL; same immutable repository identity, no duplicate promotion"
+    },
+    {
+      "prior_catalog_url": "https://github.com/ActiveInferenceInstitute/GEO-INFER",
+      "canonical_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER",
+      "github_id": 982865943,
+      "github_node_id": "R_kgDOOpVYFw",
+      "sources": [
+        "https://api.github.com/repos/ActiveInferenceInstitute/GEO-INFER",
+        "https://api.github.com/repos/ActiveInferenceInstitute/GEO_INFER"
+      ],
+      "decision": "applied: canonicalize existing catalog URL; same immutable repository identity, no duplicate promotion"
+    },
+    {
+      "prior_catalog_url": "https://github.com/ActiveInferenceInstitute/Journal-Utilities",
+      "canonical_url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities",
+      "github_id": 562914273,
+      "github_node_id": "R_kgDOIY1j4Q",
+      "sources": [
+        "https://api.github.com/repos/ActiveInferenceInstitute/Journal-Utilities",
+        "https://api.github.com/repos/ActiveInferenceInstitute/Journal_Utilities"
+      ],
+      "decision": "applied: canonicalize existing catalog URL; same immutable repository identity, no duplicate promotion"
+    },
+    {
+      "canonical_url": "https://github.com/docxology/OmniLatticeTextbook",
+      "github_id": 1361963595,
+      "github_node_id": "R_kgDOUS3qSw",
+      "source_commit": "d55df0802a69cc92481edbf397b48e3393dd443d",
+      "sources": [
+        "https://api.github.com/repos/docxology/OmniLatticeTextbook",
+        "https://github.com/docxology/OmniLatticeTextbook/blob/d55df0802a69cc92481edbf397b48e3393dd443d/README.md"
+      ],
+      "readme_sha256": "9a05ba4affa5109e349b5b1711b225834d772a67d5b43b387d7f6f745366a383",
+      "decision": "applied: add public owned textbook/tooling project to software catalog; retain no-DOI publication status; source claims about scientific validity or complete testing are not adopted"
+    }
+  ]
+}

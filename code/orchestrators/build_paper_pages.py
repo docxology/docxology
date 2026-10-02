@@ -35,6 +35,7 @@ from docxology_tools.site_nav import (  # noqa: E402
 )
 
 from docxology_tools.paper_artifacts import PaperResources, source_paths  # noqa: E402
+from docxology_tools.abstract_text import abstract_display_text  # noqa: E402
 from build_work_pages import abstract_source_html, enrichment_map  # noqa: E402
 
 
@@ -174,7 +175,8 @@ def render_page(work: dict) -> str:
     folder = resources.folder
     if folder is None:
         raise ValueError(f"No public source folder: {docs_path}")
-    summary = work.get("_enrichment", {}).get("abstract") or "An abstract is not available in this archive."
+    summary = abstract_display_text(work.get("_enrichment", {}).get("abstract")) or "An abstract is not available in this archive."
+    summary_html = "".join("<p>" + h(paragraph).replace("\n", "<br>") + "</p>" for paragraph in summary.split("\n\n"))
     doi_url = f"https://doi.org/{work['doi']}" if work.get("doi") else ""
     canonical = works_canonical(work)
     domain_href = domain_page_href(work.get("domain", ""), depth=2)
@@ -194,7 +196,7 @@ def render_page(work: dict) -> str:
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
-    <link rel="stylesheet" href="../../style.css?v=work-access-20261001">
+    <link rel="stylesheet" href="../../style.css?v=site-20261002">
 {HEAD_EXTRAS}
     <meta property="og:type" content="article">
     <meta property="og:title" content="{h(work['title'])} Documentation">
@@ -230,7 +232,7 @@ def render_page(work: dict) -> str:
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Overview</h2><p>Curated abstract when available.</p><div class="section-divider"></div></div>
-            <div class="overview-box"><p>{h(summary)}</p>{abstract_source_html(work.get("_enrichment", {}), prefix="../../")}</div>
+            <div class="overview-box">{summary_html}{abstract_source_html(work.get("_enrichment", {}), prefix="../../")}</div>
         </section>
         <section class="section">
             <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation and PDFs served directly from this folder.</p><div class="section-divider"></div></div>

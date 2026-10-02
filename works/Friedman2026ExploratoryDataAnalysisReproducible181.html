@@ -31,6 +31,7 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <link rel="me" href="https://www.flickr.com/photos/daniel_friedman/" title="Flickr">
     <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
+    <script src="/js/nav-toggle.js?v=nav-20261002"></script>
     <meta property="og:type" content="article">
     <meta property="og:title" content="Exploratory Data Analysis: A Reproducible Notebook Template">
     <meta property="og:description" content="Exploratory data analysis (EDA) is the most common entry point in applied research, yet it is also where reproducibility most often breaks down: logic…">
@@ -44,7 +45,7 @@
     <meta name="twitter:description" content="Exploratory data analysis (EDA) is the most common entry point in applied research, yet it is also where reproducibility most often breaks down: logic…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Exploratory Data Analysis: A Reproducible Notebook Template — Daniel Ari Friedman">
-    <link rel="stylesheet" href="../style.css?v=work-access-20261001">
+    <link rel="stylesheet" href="../style.css?v=site-20261002">
     <meta name="theme-color" content="#0c0c0e">
     <style>
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
@@ -245,39 +246,7 @@
 
         <section class="section">
             <div class="section-header"><h2>Overview</h2><div class="section-divider"></div></div>
-            <div class="work-detail"><p>Exploratory data analysis (EDA) is the most common entry point in applied
-research, yet it is also where reproducibility most often breaks down: logic
-accumulates in notebook cells that are never tested and quietly drift from the
-prose describing them. This paper presents the computational-notebook
-exemplar of the Research Project Template (https://github.com/docxology/template):
-an interactive walkthrough notebook
-(projects/templates/template_eda_notebook/notebooks/eda_walkthrough.ipynb)
-that imports a small, fully-tested EDA library rather than carrying logic in its
-cells.
-
-We ship a deterministic dataset (data/measurements.csv) with a designed
-correlation structure and a handful of missing values, then load, clean,
-summarize, correlate, and visualize it entirely through tested functions in
-src/eda/. The library is side-effect-free — no plotting and no file I/O — and
-standalone (numpy and pandas only), so it is covered above the 90% project gate
-and reused identically from the notebook, the thin analysis script
-(scripts/eda_analysis.py), and this manuscript.
-
-Contributions are methodological and architectural. On the methods side,
-we walk the canonical first EDA pass: surface missingness explicitly rather than
-imputing it, compute per-column descriptive statistics and per-group means, and
-rank features by Pearson correlation. On the architecture side, we demonstrate
-the notebook-to-tested-source extraction workflow — explore fast in a cell, and
-the moment a computation matters, move it into the library behind a failing
-test — verified by a zero-mock suite and a structural notebook-binding check
-().
-
----
-Associated artifacts
-GitHub release: v1.0.0 (https://github.com/docxology/template_eda_notebook/releases/tag/v1.0.0)
-DOI: https://doi.org/10.5281/zenodo.21086292
-Zenodo: https://zenodo.org/records/21086292
-PDF SHA-256: 0b10852bda89361cd71063867b55d9aed942881476867813facd549a961b0c1d</p><div class="keyword-row" aria-label="Keywords"><span>exploratory data analysis</span><span>computational notebook</span><span>reproducible research</span><span>pandas</span><span>data cleaning</span><span>correlation analysis</span></div><p class="summary-sources abstract-source">Overview source: <a href="../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
+            <div class="work-detail"><p>Exploratory data analysis (EDA) is the most common entry point in applied<br>research, yet it is also where reproducibility most often breaks down: logic<br>accumulates in notebook cells that are never tested and quietly drift from the<br>prose describing them. This paper presents the computational-notebook<br>exemplar of the Research Project Template (https://github.com/docxology/template):<br>an interactive walkthrough notebook<br>(projects/templates/template_eda_notebook/notebooks/eda_walkthrough.ipynb)<br>that imports a small, fully-tested EDA library rather than carrying logic in its<br>cells.</p><p>We ship a deterministic dataset (data/measurements.csv) with a designed<br>correlation structure and a handful of missing values, then load, clean,<br>summarize, correlate, and visualize it entirely through tested functions in<br>src/eda/. The library is side-effect-free — no plotting and no file I/O — and<br>standalone (numpy and pandas only), so it is covered above the 90% project gate<br>and reused identically from the notebook, the thin analysis script<br>(scripts/eda_analysis.py), and this manuscript.</p><p>Contributions are methodological and architectural. On the methods side,<br>we walk the canonical first EDA pass: surface missingness explicitly rather than<br>imputing it, compute per-column descriptive statistics and per-group means, and<br>rank features by Pearson correlation. On the architecture side, we demonstrate<br>the notebook-to-tested-source extraction workflow — explore fast in a cell, and<br>the moment a computation matters, move it into the library behind a failing<br>test — verified by a zero-mock suite and a structural notebook-binding check<br>().</p><p>---<br>Associated artifacts<br>GitHub release: v1.0.0 (https://github.com/docxology/template_eda_notebook/releases/tag/v1.0.0)<br>DOI: https://doi.org/10.5281/zenodo.21086292<br>Zenodo: https://zenodo.org/records/21086292<br>PDF SHA-256: 0b10852bda89361cd71063867b55d9aed942881476867813facd549a961b0c1d</p><div class="keyword-row" aria-label="Keywords"><span>exploratory data analysis</span><span>computational notebook</span><span>reproducible research</span><span>pandas</span><span>data cleaning</span><span>correlation analysis</span></div><p class="summary-sources abstract-source">Overview source: <a href="../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Methods and contributions</h2><p>Read the source for the full argument, qualifications, and evidence.</p><div class="section-divider"></div></div>
@@ -312,11 +281,11 @@ PDF SHA-256: 0b10852bda89361cd71063867b55d9aed942881476867813facd549a961b0c1d</p
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite &amp; Verify</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/a3028183">build a3028183 2026-08-28</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/e296b3ae8">build e296b3ae8 2026-10-02</a></p>
     </footer>
-<script src="/js/search-utils.js?v=20260813"></script>
+<script src="/js/search-utils.js?v=site-20261002"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
-<script src="/js/interactive.js?v=20260813" defer></script>
+<script src="/js/interactive.js?v=site-20261002" defer></script>
 <script src="/js/cite-export.js?v=work-access-20261001" defer></script>
 <script src="/js/menu-esc.js?v=20260813" defer></script></body>
 </html>

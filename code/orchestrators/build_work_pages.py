@@ -43,6 +43,7 @@ from docxology_tools.site_nav import (  # noqa: E402
 )
 
 from docxology_tools.report_paths import generated_timestamp  # noqa: E402
+from docxology_tools.abstract_text import abstract_display_text  # noqa: E402
 from docxology_tools.paper_artifacts import PaperResources, source_file, source_paths  # noqa: E402
 
 
@@ -690,7 +691,7 @@ def json_ld(work: dict) -> str:
     if work.get("venue"):
         data["publisher"] = {"@type": "Organization", "name": work["venue"]}
     if enrich.get("abstract"):
-        data["abstract"] = enrich["abstract"]
+        data["abstract"] = abstract_display_text(enrich["abstract"])
     if enrich.get("keywords"):
         data["keywords"] = enrich["keywords"]
         data["about"].extend({"@type": "DefinedTerm", "name": keyword} for keyword in enrich["keywords"][:8])
@@ -764,7 +765,7 @@ def page_head(work: dict) -> str:
         f"{work['title']} — {str(work['type']).lower()} in {work['domain_name']} "
         f"({work['year']}). Part of the unified bibliography."
     )
-    description = work.get("enrichment", {}).get("abstract") or fallback
+    description = abstract_display_text(work.get("enrichment", {}).get("abstract")) or fallback
     description = clip_description(description)
     canon_url = f"https://danielarifriedman.com/works/{canonical_work_key(work['citation_key'])}.html"
     page_title = work_page_title(work)
@@ -808,7 +809,7 @@ def page_head(work: dict) -> str:
     <meta name="twitter:description" content="{h(description)}">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="{h(work['title'])} — Daniel Ari Friedman">
-    <link rel="stylesheet" href="../style.css?v=work-access-20261001">
+    <link rel="stylesheet" href="../style.css?v=site-20261002">
     <meta name="theme-color" content="#0c0c0e">
     <style>
         {BREADCRUMB_CSS}
@@ -885,14 +886,17 @@ def render_work_page(work: dict) -> str:
         meta_cards.append(platform_card)
     meta_cards_html = "\n".join(meta_cards)
     enrich = work.get("enrichment", {})
-    abstract = enrich.get("abstract", "")
+    abstract = abstract_display_text(enrich.get("abstract", ""))
     keywords = enrich.get("keywords", [])
     findings = enrich.get("findings", [])
     methods = enrich.get("methods", [])
     concepts = enrich.get("concepts", [])
     detail_sections = ""
     if abstract or keywords:
-        abstract_html = f"<p>{h(abstract)}</p>" if abstract else "<p>An abstract is not available in this archive.</p>"
+        abstract_html = (
+            "".join("<p>" + h(paragraph).replace("\n", "<br>") + "</p>" for paragraph in abstract.split("\n\n"))
+            if abstract else "<p>An abstract is not available in this archive.</p>"
+        )
         keyword_spans = "".join(f"<span>{h(k)}</span>" for k in keywords)
         keyword_row = f'<div class="keyword-row" aria-label="Keywords">{keyword_spans}</div>' if keywords else ""
         detail_sections += f'''
@@ -991,7 +995,7 @@ def render_index(works: list[dict]) -> str:
     <meta name="description" content="Browse {len(works)} per-work pages — the paper trail of a longitudinal thinking practice: papers, books, courses, and presentations across Active Inference, computational biology, cognitive security, entomology, and art, each with DOI, citation tools, and related works.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/works/">
-    <link rel="stylesheet" href="../style.css?v=work-access-20261001">
+    <link rel="stylesheet" href="../style.css?v=site-20261002">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
     <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">

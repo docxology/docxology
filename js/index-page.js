@@ -5,11 +5,6 @@ function showTab(e, name) {
         document.getElementById('tab-' + name).classList.add('active');
         e.currentTarget.classList.add('active');
     }
-    // Hamburger menu: toggle aria-expanded
-    document.querySelector('.menu-btn').addEventListener('click', function() {
-        const expanded = this.getAttribute('aria-expanded') === 'true';
-        this.setAttribute('aria-expanded', !expanded);
-    });
     // Scroll-based nav highlighting
     const sections = document.querySelectorAll('section[id], div[id]');
     const navLinks = document.querySelectorAll('.nav-links a:not(.nav-art-link)');

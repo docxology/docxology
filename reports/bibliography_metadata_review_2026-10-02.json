@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-02T14:49:11Z",
+  "reviewed_by": "agent source review under authorized bibliography maintenance",
+  "decisions": [
+    {
+      "num": 12,
+      "decision": "applied: full title from archived document title page",
+      "prior_title": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+      "title": "EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+      "source_path": "papers/2025_EvoJump/full_text.md",
+      "source_sha256": "f1d1db112de454ccdde29004a04cff932c0a53aa3a96316215445b561d455d9e",
+      "evidence_location": "Page 1 title",
+      "citation_key_policy": "permanent reservation unchanged"
+    },
+    {
+      "num": 26,
+      "decision": "applied: full title from archived document title page",
+      "prior_title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+      "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+      "source_path": "papers/2025_DiscoveryEngine/full_text.md",
+      "source_sha256": "e27aeb68840601ab01427832c6e00f1d7afac5f2386070bdb249f91d8fdc5413",
+      "evidence_location": "Page 1 title",
+      "citation_key_policy": "permanent reservation unchanged"
+    },
+    {
+      "num": 74,
+      "decision": "applied: full title from archived document title page",
+      "prior_title": "TrustFinder: Recommendations for Community-Based Trust Systems",
+      "title": "TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims",
+      "source_path": "papers/2022_TrustFinder/full_text.md",
+      "source_sha256": "7e02374079155664c7b520009254f2730948a37833035daba3b4d362bcb28f88",
+      "evidence_location": "Page 1 title",
+      "citation_key_policy": "permanent reservation unchanged"
+    },
+    {
+      "num": 159,
+      "decision": "applied: chapter citation year follows registered publication year (2023), distinct from 2022 workshop event year",
+      "prior_year": 2022,
+      "year": 2023,
+      "source_url": "https://api.crossref.org/works/10.1007%2F978-3-031-28719-0_10",
+      "issued": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "citation_key_policy": "Friedman2022ActiveBlockferenceCadCADActive159 remains unchanged; its embedded year is opaque"
+    },
+    {
+      "num": 26,
+      "decision": "applied: replace unsupported seed abstract, description and keywords with archived manuscript abstract and qualified display summary",
+      "source_path": "papers/2025_DiscoveryEngine/full_text.md",
+      "source_sha256": "e27aeb68840601ab01427832c6e00f1d7afac5f2386070bdb249f91d8fdc5413",
+      "evidence_location": "Page 2 Abstract",
+      "curated_sources": [
+        "papers/paper_metadata.json:2025_DiscoveryEngine",
+        "papers/2025_DiscoveryEngine/metadata.json"
+      ],
+      "authority_rule": "Paper documentation and work enrichment use the consolidated curated abstract and keywords; folder metadata supplies grounded methods/findings and provenance. Both reviewed source copies are aligned without globally promoting unaudited folder abstracts."
+    }
+  ],
+  "author_decisions": [
+    {
+      "num": 33,
+      "decision": "deferred: retain registered creator Cordes; the five-person document list identifies organizations/representatives and does not clearly establish a five-author byline",
+      "prior_review": "reports/bibliography_accuracy_2026-10-01.md"
+    },
+    {
+      "num": 29,
+      "decision": "deferred: retain registered concept-record creators pending depositor reconciliation; title-page absence does not establish that a concept-record contributor should be removed",
+      "prior_review": "reports/bibliography_accuracy_2026-10-01.md"
+    },
+    {
+      "num": 74,
+      "decision": "keep registered creators and document contributor roles; consultant is not automatically added as author",
+      "prior_review": "reports/bibliography_accuracy_2026-10-01.md"
+    }
+  ],
+  "remaining_boundary": "Missing licensed full texts and inconsistencies inside originating publications still require source acquisition or author correction; this review does not rewrite those sources."
+}

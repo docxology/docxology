@@ -64,7 +64,7 @@ evidence of anything.
 | [Cells, Mechanobiology, and Osteopathy](../works/Friedman2016CellsMechanobiologyOsteopathy164.html) | 2016 | 0 / 6 | Persistent identifier, Public archive, Open full text, Source documents, Executable code, Agent-readable guidance |
 | [Full speed ahead to the City on the Hill](../works/Friedman2016FullSpeedAheadCity156.html) | 2016 | 1 / 6 | Public archive, Open full text, Source documents, Executable code, Agent-readable guidance |
 | [Defining events: 2020 in hindsight](../works/Friedman2021DefiningEvents2020Hindsight158.html) | 2021 | 1 / 6 | Public archive, Open full text, Source documents, Executable code, Agent-readable guidance |
-| [Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling](../works/Friedman2022ActiveBlockferenceCadCADActive159.html) | 2022 | 1 / 6 | Public archive, Open full text, Source documents, Executable code, Agent-readable guidance |
+| [Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling](../works/Friedman2022ActiveBlockferenceCadCADActive159.html) | 2023 | 1 / 6 | Public archive, Open full text, Source documents, Executable code, Agent-readable guidance |
 
 ## Maintenance
 

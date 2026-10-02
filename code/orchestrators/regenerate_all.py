@@ -35,7 +35,9 @@ Usage:
 This is the single write-mode entry point for the intake path: one command runs
 the full local chain twice by default. Steps that declare ``inputs`` in
 ``code/src/generation_plan.py`` are skipped when those declared inputs hash to
-the same content as the previous successful run (persisted in
+the same content as the previous successful run. The cache also fingerprints
+each writer, the shared ``code/src`` Python libraries, and declared imported
+orchestrator helpers (persisted in
 ``reports/regeneration-state.json``, gitignored); ``--force`` disables
 skipping. ``validate_repo.py`` never consults this state — its ``--check``
 battery stays the authority, so a write-mode skip can never mask a check
@@ -66,6 +68,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 from docxology_tools.generation_plan import (  # noqa: E402
     LOCAL_GENERATION_STEPS,
     GenerationStep,
+    effective_step_inputs,
     load_regeneration_state,
     record_step_state,
     save_regeneration_state,
@@ -169,7 +172,7 @@ def main() -> int:
         for i, step in enumerate(LOCAL_GENERATION_STEPS, 1):
             line = f"{i:2}. {step.script} {' '.join(step.write_args)}".rstrip()
             if step.inputs:
-                line += f"  # inputs: {', '.join(step.inputs)}"
+                line += f"  # inputs: {', '.join(effective_step_inputs(step))}"
             print(line)
         return 0
 

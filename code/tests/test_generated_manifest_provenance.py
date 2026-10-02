@@ -3,7 +3,10 @@
 from __future__ import annotations
 
 import sys
+import json
 from pathlib import Path
+
+import pytest
 
 # docxology_tools owns the canonical bootstrap; this locate makes the package importable.
 _DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
@@ -45,6 +48,8 @@ def test_manifest_declares_count_paper_availability_and_repository_inventory_inp
     assert "data/github-repositories.json" in software["sources"]
     assert "data/github-repositories.json" in routes["sources"]
     assert {"papers/*/full_text.md", "papers/*/images/*"}.issubset(counts["sources"])
+    assert {"data/work-identifiers.json", "code/src/work_identifiers.py"}.issubset(bibliography["sources"])
+    assert "data/work-identifiers.json" in publications["sources"]
 
 
 def test_browser_qa_manifest_uses_the_portable_uv_optional_group_command():
@@ -67,6 +72,35 @@ def test_page_manifest_discloses_resource_selection_and_citation_sources():
     assert "data/work-enrichment.json" not in _artifact("Work pages")["sources"]
 
 
+@pytest.mark.parametrize("name", [
+    "Publications HTML sync", "Resume and CV exports", "Software catalog HTML sync",
+    "Cached GitHub repository inventory pages", "Domain feeds", "Work pages", "Video pages",
+    "Paper folder pages", "Evidence pages", "Reproducibility ledger", "Data catalog",
+    "Exports hub", "Updates page", "Static accessibility report",
+    "Artwork landing pages and curated collections",
+])
+def test_shared_navigation_sources_are_disclosed_for_affected_artifacts(name):
+    assert "code/src/site_nav.py" in _artifact(name)["sources"]
+
+
+def test_manifest_tracks_actual_imported_renderers_and_updates_sources():
+    assert {
+        "code/orchestrators/export_bibliography.py", "code/orchestrators/build_work_pages.py",
+        "code/src/build_stamp.py", "code/src/metadata_templates.py",
+    }.issubset(_artifact("Publications HTML sync")["sources"])
+    assert "code/orchestrators/build_github_inventory.py" in _artifact(
+        "Cached GitHub repository inventory pages"
+    )["sources"]
+    assert "code/orchestrators/deploy_seo_security.py" in _artifact(
+        "Static accessibility report"
+    )["sources"]
+    assert "pages/THINKING_LOG.md" in _artifact("Updates page")["sources"]
+    assert {"data/works.json", "data/current-counts.json"}.issubset(
+        _artifact("Exports hub")["sources"]
+    )
+    assert "data/software.json" in _artifact("Reproducibility ledger")["sources"]
+
+
 def test_every_declared_generator_script_still_exists():
     """GENERATED.md is the rebuild matrix; a row for a deleted script is a trap.
 
@@ -85,3 +119,22 @@ def test_every_declared_generator_script_still_exists():
     assert referenced, "no generator scripts are declared in the manifest"
     missing = sorted(rel for rel in referenced if not (REPO_ROOT / rel).is_file())
     assert missing == [], f"generated manifest names scripts that do not exist: {missing}"
+
+
+def test_manifest_timestamp_changes_only_when_artifact_matrix_changes(tmp_path, monkeypatch):
+    out = tmp_path / "manifest.json"
+    monkeypatch.setattr(build_generated_manifest, "JSON_OUT", out)
+    monkeypatch.setattr(build_generated_manifest, "MD_OUT", tmp_path / "GENERATED.md")
+    monkeypatch.setattr(build_generated_manifest, "REPO_ROOT", tmp_path)
+    monkeypatch.setattr(build_generated_manifest, "ARTIFACTS", [])
+    out.write_text(json.dumps({"generated_at": "2026-08-13T00:00:00Z", "artifacts": [{"old": True}]}) + "\n", encoding="utf-8")
+    monkeypatch.setattr(build_generated_manifest, "generated_timestamp", lambda: "2026-10-02T00:00:00Z")
+    monkeypatch.setattr(sys, "argv", ["build_generated_manifest.py"])
+    build_generated_manifest.main()
+    assert json.loads(out.read_text(encoding="utf-8"))["generated_at"] == "2026-10-02T00:00:00Z"
+    written = out.read_bytes()
+    monkeypatch.setattr(build_generated_manifest, "generated_timestamp", lambda: "2026-10-03T00:00:00Z")
+    build_generated_manifest.main()
+    assert out.read_bytes() == written
+    monkeypatch.setattr(sys, "argv", ["build_generated_manifest.py", "--check"])
+    build_generated_manifest.main()

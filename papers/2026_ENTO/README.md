@@ -10,7 +10,9 @@
 
 ## Abstract
 
-> ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts — time series, genomics slices, spectrograms, provenance proofs — into a single verifiable file. Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADMÉ length padding. The default wire format is 0.4.0; formats 0.2.0, 0.3.0, and 0.3.1 remain read/write compatibility profiles. Graded observability levels control how much manifest metadata a recipient sees, and an optional hash-chained proof export provides tamper-evident lineage. Verification deliberately separates key-authenticated integrity from keyless corruption detection. This deposit is the 0.4 manuscript release candidate together with the MIT-licensed reference implementation source. Planned code home: https://github.com/docxology/entofile.
+> ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts — time series, genomics slices, spectrograms, provenance proofs — into a single verifiable file. Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADMÉ length padding. The default wire format is 0.4.0; formats 0.2.0, 0.3.0, and 0.3.1 remain read/write compatibility profiles. Graded observability levels control how much manifest metadata a recipient sees, and an optional hash-chained proof export provides tamper-evident lineage. Verification deliberately separates key-authenticated integrity from keyless corruption detection.
+>
+> This deposit is the 0.4 manuscript release candidate together with the MIT-licensed reference implementation source. Planned code home: https://github.com/docxology/entofile.
 
 ## Keywords
 

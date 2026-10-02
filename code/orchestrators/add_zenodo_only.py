@@ -33,6 +33,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 from docxology_tools.domain_inference import infer_domain_emoji_zenodo as infer_domain  # noqa: E402
 from docxology_tools.publication_pairing import slug_topic, yaml_double_quoted, zenodo_record_url_from_doi  # noqa: E402
 from sync_paired_publications import refresh_bibliography_counts  # noqa: E402
+from docxology_tools.biblio_table import bibliography_rows_from_lines  # noqa: E402
+from docxology_tools.generated_outputs import read_generated_output_text  # noqa: E402
+from docxology_tools.work_identifiers import next_catalog_num, write_catalog_with_identifiers  # noqa: E402
 
 ORCID = "0000-0001-6232-9096"
 UA = "docxology-zenodo-backfill/1.0 (+https://danielarifriedman.com/)"
@@ -328,17 +331,12 @@ def download_pdf(rec: dict, folder: Path) -> None:
 
 
 def next_bib_num() -> int:
-    nums = []
-    for line in BIB.read_text(encoding="utf-8").splitlines():
-        if line.startswith("|"):
-            cells = [c.strip() for c in line.strip().strip("|").split("|")]
-            if cells and cells[0].isdigit():
-                nums.append(int(cells[0]))
-    return max(nums, default=0) + 1
+    text = read_generated_output_text(REPO_ROOT, BIB) or ""
+    return next_catalog_num(bibliography_rows_from_lines(text.splitlines()), REPO_ROOT / "data/work-identifiers.json", repo_root=REPO_ROOT)
 
 
 def add_bib_row(num: int, year: str, domain: str, typ: str, title: str, doi: str, folder: str) -> None:
-    text = BIB.read_text(encoding="utf-8")
+    text = read_generated_output_text(REPO_ROOT, BIB) or ""
     if doi in text:
         return
     row = (f"| {num} | {year} | {domain} | {typ} | {title} | *Zenodo* | "
@@ -356,7 +354,8 @@ def add_bib_row(num: int, year: str, domain: str, typ: str, title: str, doi: str
             insert_at = idx
             break
     lines.insert(insert_at, row)
-    BIB.write_text(refresh_bibliography_counts("\n".join(lines).rstrip() + "\n"), encoding="utf-8")
+    candidate = refresh_bibliography_counts("\n".join(lines).rstrip() + "\n")
+    write_catalog_with_identifiers(BIB, candidate, repo_root=REPO_ROOT, expected_previous=text)
 
 
 def add_papers_readme_row(folder: str, year: str, has_pdf: bool) -> None:

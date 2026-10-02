@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories
+# AGENTS.md — EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories
 
-**Paper**: EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories (2025)
+**Paper**: EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories (2025)
 **Domain**: Active Inference
 **Authors**: Daniel Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories to related works in the bibliography
+- Connects EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

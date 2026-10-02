@@ -6,7 +6,7 @@
  * 2. Scroll-to-Top Button — appears after 300px scroll
  * 3. Keyboard Shortcuts Hints — press ? to show/hide overlay
  * 4. Section Anchor Copy — click section heading to copy anchor link
- * 5. Search Autocomplete — lightweight suggestions from search-index.json
+ * 5. Search Autocomplete — lightweight suggestions from search-index-core.json
  * 6. Image Lazy Loading — adds loading="lazy" to images
  * 7. External Link Indicator — adds rel="noopener noreferrer" + icon to external links
  *
@@ -102,6 +102,8 @@
     overlay.setAttribute('role', 'dialog');
     overlay.setAttribute('aria-label', 'Keyboard shortcuts');
     overlay.setAttribute('aria-hidden', 'true');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.inert = true;
     overlay.innerHTML = `
       <div class="shortcuts-panel">
         <div class="shortcuts-header">
@@ -125,16 +127,33 @@
 
     const closeBtn = overlay.querySelector('.shortcuts-close');
     const panel = overlay.querySelector('.shortcuts-panel');
+    let opener = null;
+
+    function isOpen() {
+      return overlay.getAttribute('aria-hidden') === 'false';
+    }
+
+    function focusableElements() {
+      return Array.from(panel.querySelectorAll('button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'))
+        .filter(element => element.getClientRects().length > 0);
+    }
 
     function show() {
+      if (isOpen()) return;
+      opener = document.activeElement;
+      overlay.inert = false;
       overlay.classList.add('shortcuts-open');
       overlay.setAttribute('aria-hidden', 'false');
       closeBtn.focus();
     }
 
     function hide() {
+      if (!isOpen()) return;
       overlay.classList.remove('shortcuts-open');
       overlay.setAttribute('aria-hidden', 'true');
+      overlay.inert = true;
+      if (opener && opener.isConnected && typeof opener.focus === 'function') opener.focus();
+      opener = null;
     }
 
     closeBtn.addEventListener('click', hide);
@@ -149,7 +168,23 @@
       if (e.key === 'Escape') {
         e.preventDefault();
         hide();
+      } else if (e.key === 'Tab') {
+        const elements = focusableElements();
+        const first = elements[0] || closeBtn;
+        const last = elements[elements.length - 1] || closeBtn;
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
       }
+    });
+
+    // Also contain programmatic focus changes while the modal is open.
+    document.addEventListener('focusin', (e) => {
+      if (isOpen() && !overlay.contains(e.target)) closeBtn.focus();
     });
 
     // Global ? key to toggle
@@ -163,7 +198,9 @@
         } else {
           hide();
         }
+        return;
       }
+      if (isOpen()) return;
       // / to focus search on search page
       if (e.key === '/' && !e.ctrlKey && !e.metaKey) {
         const searchInput = document.querySelector('.search-input, .search-wrap input');
@@ -198,11 +235,23 @@
       link.setAttribute('title', 'Copy link to this section');
       link.textContent = '#';
       link.addEventListener('click', (e) => {
+        // Preserve native anchor activation (including open-in-new-tab) when
+        // copying is unavailable. A denied asynchronous write also navigates
+        // to the section, and success is shown only after the write resolves.
+        if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || e.button !== 0 ||
+            !navigator.clipboard || typeof navigator.clipboard.writeText !== 'function') return;
         e.preventDefault();
-        const url = window.location.origin + window.location.pathname + '#' + id;
-        navigator.clipboard.writeText(url).catch(() => {});
-        link.textContent = '✓';
-        setTimeout(() => { link.textContent = '#'; }, 1500);
+        const url = new URL(link.getAttribute('href'), window.location.href).href;
+        Promise.resolve().then(() => navigator.clipboard.writeText(url)).then(() => {
+          link.textContent = '✓';
+          link.setAttribute('title', 'Section link copied');
+          setTimeout(() => {
+            link.textContent = '#';
+            link.setAttribute('title', 'Copy link to this section');
+          }, 1500);
+        }).catch(() => {
+          window.location.hash = link.getAttribute('href');
+        });
       });
       heading.appendChild(link);
     });
@@ -212,47 +261,12 @@
   // 5. SEARCH AUTOCOMPLETE
   // ═══════════════════════════════════════════════
 
-  let searchIndex = null;
-  let searchIndexLoading = false;
-  const searchIndexWaiting = [];
-
   function loadSearchIndex(callback) {
-    if (searchIndex) { callback(searchIndex); return; }
-    // Queue rather than drop: keystrokes arriving while the fetch is in flight
-    // used to return early and lose their callback, so the first characters
-    // typed on a cold page produced no suggestions at all.
-    searchIndexWaiting.push(callback);
-    if (searchIndexLoading) return;
-    searchIndexLoading = true;
-
-    fetch('/search-index.json')
-      .then(r => r.json())
-      .then(data => {
-        // Flatten the index
-        if (Array.isArray(data)) {
-          searchIndex = data;
-        } else if (data.items) {
-          searchIndex = data.items;
-        } else if (data.results) {
-          searchIndex = data.results;
-        } else if (data.entries) {
-          searchIndex = data.entries;
-        } else {
-          searchIndex = [];
-        }
-      })
-      .catch((err) => {
-        // An empty index makes every query answer "No matches", which reads as
-        // "nothing on this site matches" rather than "the index failed to load".
-        console.error('search autocomplete: /search-index.json unavailable', err);
-        searchIndex = [];
-      })
-      .then(() => {
-        searchIndexLoading = false;
-        while (searchIndexWaiting.length) {
-          searchIndexWaiting.shift()(searchIndex);
-        }
-      });
+    if (!window.DocxologySearch) { callback(null); return; }
+    window.DocxologySearch.loadCore().then(callback).catch(err => {
+      console.error('search autocomplete: core index unavailable', err);
+      callback(null);
+    });
   }
 
   // Cached lowercase haystack per index entry. Rebuilding this for all ~1650
@@ -453,6 +467,7 @@
         loadSearchIndex((index) => {
           // The box may have moved on while the index loaded.
           if (input.value.trim() !== val) return;
+          if (!index) { setOpen(false); return; }
           const terms = val.toLowerCase().split(/\s+/).filter(Boolean);
           const scored = [];
           for (let i = 0; i < index.length; i++) {
@@ -553,30 +568,12 @@
   }
 
   // ═══════════════════════════════════════════════
-  // 8. NAV TOGGLE (replaces inline onclick handlers)
+  // 8. NAV TOGGLE
   // ═══════════════════════════════════════════════
 
-  /**
-   * Wires up the .menu-btn button to toggle .nav-links.open.
-   * Replaces the inline onclick handler that was on 21+ pages.
-   * Also handles keyboard activation (Enter/Space) for a11y.
-   */
-  function initNavToggle() {
-    const btn = document.querySelector('.menu-btn');
-    if (!btn) return;
-    // Don't double-wire if the button already has a listener
-    if (btn.dataset.navToggleWired) return;
-    btn.dataset.navToggleWired = 'true';
-
-    function toggle() {
-      const navLinks = document.querySelector('.nav-links');
-      if (!navLinks) return;
-      const isOpen = navLinks.classList.toggle('open');
-      btn.setAttribute('aria-expanded', String(isOpen));
-    }
-
-    btn.addEventListener('click', toggle);
-  }
+  // The parser-blocking head asset nav-toggle.js owns the complete control.
+  // Never collapse a rendered fallback here: a failed head download must keep
+  // its usable expanded layout, rather than shifting content after first paint.
 
   /**
    * Wires up tab-switching buttons on the homepage.
@@ -816,9 +813,6 @@
     addSectionAnchors();
     addLazyLoading();
     addExternalLinkAttributes();
-
-    // Nav toggle (replaces inline onclick on .menu-btn)
-    initNavToggle();
 
     // Tab switcher (homepage media tabs)
     initTabSwitcher();

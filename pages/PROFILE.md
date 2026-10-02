@@ -22,7 +22,7 @@ keywords: "Daniel Ari Friedman, active inference, PROFILE"
 
 Daniel Ari Friedman is a multidisciplinary researcher, educator, and artist working at the intersection of biology, cognitive science, philosophy, complex systems, and computational modeling. As President and co-founder of the Active Inference Institute — a 501(c)(3) non-profit educational organization — he leads an open science community dedicated to learning, teaching, and applying Active Inference, a Bayesian framework for understanding minds, brains, and behavior.
 
-His research spans from the molecular neuroscience of ant colonies to theoretical frameworks for consciousness, conflict resolution, and cognitive security, complemented by artistic contributions including pen-and-ink drawings, collaborative art paradigms, and early Ethereum NFT art contributions. His work has garnered **815 citations** on Google Scholar (h-index: 14, i10-index: 16, as of 2026-08-26) across his Scholar-indexed publications; the [unified bibliography](BIBLIOGRAPHY.md) lists books, presentations, and recent deposits not yet reflected on Scholar ([current totals](../reports/current_counts.md)).
+His research spans from the molecular neuroscience of ant colonies to theoretical frameworks for consciousness, conflict resolution, and cognitive security, complemented by artistic contributions including pen-and-ink drawings, collaborative art paradigms, and early Ethereum NFT art contributions. His work has garnered **823 citations** on Google Scholar (h-index: 14, i10-index: 17, as of 2026-10-02) across his Scholar-indexed publications; the [unified bibliography](BIBLIOGRAPHY.md) lists books, presentations, and recent deposits not yet reflected on Scholar ([current totals](../reports/current_counts.md)).
 
 ---
 
@@ -164,10 +164,10 @@ Curio Cards debuted on Ethereum on May 9, 2017, and all original cards were mint
 |--------|-------|
 | Works (unified bibliography) | [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) · [current totals](../reports/current_counts.md) |
 | Google Scholar indexed publications | 107 |
-| Google Scholar Citations | 815 (as of 2026-08-26) |
+| Google Scholar Citations | 823 (as of 2026-10-02) |
 | h-index | 14 |
-| i10-index | 16 |
-| Citations since 2021 | 586 (as of 2026-08-26) |
+| i10-index | 17 |
+| Citations since 2021 | 594 (as of 2026-10-02) |
 | Open-Source Repositories (owned, catalogued) | [SOFTWARE.md](SOFTWARE.md) · [current totals](../reports/current_counts.md) |
 | GitHub Public Repositories (total) | [Current generated count](../reports/current_counts.md) |
 | Active Inference Institute Repos (catalogued) | [SOFTWARE.md](SOFTWARE.md) · [current totals](../reports/current_counts.md) |

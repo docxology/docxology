@@ -1,6 +1,6 @@
 {
   "schema_version": "VideoIndex.v1",
-  "generated_at": "2026-10-01T23:33:56Z",
+  "generated_at": "2026-10-02T15:30:05Z",
   "source": "data/videos.json",
   "source_files": [
     "code/data/youtube_personal.json",

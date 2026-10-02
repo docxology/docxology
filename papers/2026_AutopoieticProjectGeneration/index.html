@@ -11,7 +11,7 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
-    <link rel="stylesheet" href="../../style.css?v=work-access-20261001">
+    <link rel="stylesheet" href="../../style.css?v=site-20261002">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
@@ -23,6 +23,7 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <link rel="me" href="https://www.flickr.com/photos/daniel_friedman/" title="Flickr">
     <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
+    <script src="/js/nav-toggle.js?v=nav-20261002"></script>
     <meta property="og:type" content="article">
     <meta property="og:title" content="Autopoietic Project Generation Documentation">
     <meta property="og:description" content="template_autopoiesis is a combinatoric grammar that deterministically generates whole runnable projects — not files or snippets, but complete…">
@@ -91,56 +92,7 @@
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Overview</h2><p>Curated abstract when available.</p><div class="section-divider"></div></div>
-            <div class="overview-box"><p>template_autopoiesis is a combinatoric grammar that deterministically generates
-whole runnable projects — not files or snippets, but complete, independently
-testable child repositories with their own kernel source, tests, analysis
-entry point, and manuscript. A single integer seed plus a grammar of orthogonal
-slots (primitive domain, analytical track, section set, and three
-presentation/provenance slots) selects one child from a combinatoric product
-space of 360 nominal (45 content-distinct)
-configurations, via a SHA-256 digest of the seed and slot identity — with no
-random-number generator anywhere in the expansion path.
-
-Project generators routinely claim completeness, determinism, and
-traceability without making any of the three independently checkable. This
-exemplar treats each claim as a structural property to verify rather than a
-rhetorical one to assert: verify_child() recomputes a tree hash from the
-files actually on disk and compares it against the recorded provenance,
-rather than trusting a value the same run wrote down; a honesty manifest
-inspects the live source AST to confirm every claim in this manuscript
-resolves to a real function in a real file; and a per-domain mutation gate
-checks that the acceptance tests reject a constant-success stub before
-trusting that they accept the real kernel. The same discipline governs this
-document itself — every number below is substituted at render time from a
-live measurement rather than hand-typed as a literal.
-
-Across 5 heterogeneous primitive domains
-(- optimization
-- dynamics
-- statistics
-- signal
-- graph), 493 tests exercise both fixed ground-truth
-checks and Hypothesis-driven property invariants at 96.28% branch
-coverage, with an explicit negative control per domain distinguishing the
-real kernel from a deliberately-wrong one.
-
-Generation pipeline
-
-Grammar product space
-
-- Domain count: 5
-- Effective product size: 45
-- Total product size: 360
-- Reserved slots: 3 (figure_profile, qr_profile, integrity_profile)
-- Grammar hash: f84a8f9dbcb18e37
-- Tests: 493 · Coverage: 96.28%
-
----
-Associated artifacts
-GitHub release: Autopoietic Project Generation (v1.0.1) — improved abstract (https://github.com/docxology/template/releases/tag/v1.0.1)
-DOI: https://doi.org/10.5281/zenodo.21227869
-Zenodo: https://zenodo.org/records/21227869
-PDF SHA-256: 84145371f10c7ee97a75c53d78917d247fd6bd987d2c1764ee437b6fbdef8f51</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
+            <div class="overview-box"><p>template_autopoiesis is a combinatoric grammar that deterministically generates<br>whole runnable projects — not files or snippets, but complete, independently<br>testable child repositories with their own kernel source, tests, analysis<br>entry point, and manuscript. A single integer seed plus a grammar of orthogonal<br>slots (primitive domain, analytical track, section set, and three<br>presentation/provenance slots) selects one child from a combinatoric product<br>space of 360 nominal (45 content-distinct)<br>configurations, via a SHA-256 digest of the seed and slot identity — with no<br>random-number generator anywhere in the expansion path.</p><p>Project generators routinely claim completeness, determinism, and<br>traceability without making any of the three independently checkable. This<br>exemplar treats each claim as a structural property to verify rather than a<br>rhetorical one to assert: verify_child() recomputes a tree hash from the<br>files actually on disk and compares it against the recorded provenance,<br>rather than trusting a value the same run wrote down; a honesty manifest<br>inspects the live source AST to confirm every claim in this manuscript<br>resolves to a real function in a real file; and a per-domain mutation gate<br>checks that the acceptance tests reject a constant-success stub before<br>trusting that they accept the real kernel. The same discipline governs this<br>document itself — every number below is substituted at render time from a<br>live measurement rather than hand-typed as a literal.</p><p>Across 5 heterogeneous primitive domains<br>(- optimization<br>- dynamics<br>- statistics<br>- signal<br>- graph), 493 tests exercise both fixed ground-truth<br>checks and Hypothesis-driven property invariants at 96.28% branch<br>coverage, with an explicit negative control per domain distinguishing the<br>real kernel from a deliberately-wrong one.</p><p>Generation pipeline</p><p>Grammar product space</p><p>- Domain count: 5<br>- Effective product size: 45<br>- Total product size: 360<br>- Reserved slots: 3 (figure_profile, qr_profile, integrity_profile)<br>- Grammar hash: f84a8f9dbcb18e37<br>- Tests: 493 · Coverage: 96.28%</p><p>---<br>Associated artifacts<br>GitHub release: Autopoietic Project Generation (v1.0.1) — improved abstract (https://github.com/docxology/template/releases/tag/v1.0.1)<br>DOI: https://doi.org/10.5281/zenodo.21227869<br>Zenodo: https://zenodo.org/records/21227869<br>PDF SHA-256: 84145371f10c7ee97a75c53d78917d247fd6bd987d2c1764ee437b6fbdef8f51</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section">
             <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation and PDFs served directly from this folder.</p><div class="section-divider"></div></div>
@@ -159,10 +111,10 @@ PDF SHA-256: 84145371f10c7ee97a75c53d78917d247fd6bd987d2c1764ee437b6fbdef8f51</p
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../../publications.html">Unified bibliography</a> · <a href="../../works/">Works index</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/c12a6458d">build c12a6458d 2026-10-01</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/e296b3ae8">build e296b3ae8 2026-10-02</a></p>
     </footer>
-<script src="/js/search-utils.js?v=20260813"></script>
+<script src="/js/search-utils.js?v=site-20261002"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
-<script src="/js/interactive.js?v=20260813" defer></script>
+<script src="/js/interactive.js?v=site-20261002" defer></script>
 <script src="/js/menu-esc.js?v=20260813" defer></script></body>
 </html>

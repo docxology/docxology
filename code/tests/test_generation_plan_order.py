@@ -37,6 +37,7 @@ from docxology_tools.generation_plan import (  # noqa: E402
     ASSET_AUDIT_INPUTS,
     LOCAL_GENERATION_STEPS,
     GenerationStep,
+    effective_step_inputs,
 )
 from docxology_tools.release_controls import is_control_path  # noqa: E402
 
@@ -118,7 +119,7 @@ def test_every_declared_input_resolves_at_plan_build_time() -> None:
     """Each input glob matches files on disk, or an earlier step's outputs."""
     failures: list[str] = []
     for step in LOCAL_GENERATION_STEPS:
-        for pattern in step.inputs:
+        for pattern in effective_step_inputs(step):
             if _files_matching(REPO_ROOT, pattern):
                 continue
             covered = any(
@@ -139,7 +140,7 @@ def test_no_step_consumes_a_later_steps_output() -> None:
     producers = _earliest_producers(REPO_ROOT)
     violations: list[str] = []
     for position, step in enumerate(LOCAL_GENERATION_STEPS):
-        for pattern in step.inputs:
+        for pattern in effective_step_inputs(step):
             if _is_scan_scope(step, pattern):
                 continue
             for path in _files_matching(REPO_ROOT, pattern):

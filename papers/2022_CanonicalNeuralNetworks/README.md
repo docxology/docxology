@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Transcript of a three-session series of discussions of the paper "Canonical neural networks perform active inference" by Takuya Isomura, Hideaki Shimazaki & Karl J. Friston. https://www.nature.com/articles/s42003-021-02994-2 LS #051.0: Background and context. https://www.youtube.com/watch?v=ZASG-rtkXDk LS #051.1: First participatory group discussion. https://www.youtube.com/watch?v=IM_NlUzyq8M LS #051.2: Second participatory group discussion. https://www.youtube.com/watch?v=hY_CajLpt9Q
+> Transcript of a three-session series of discussions of the paper "Canonical neural networks perform active inference" by Takuya Isomura, Hideaki Shimazaki &amp; Karl J. Friston. https://www.nature.com/articles/s42003-021-02994-2 LS #051.0: Background and context. https://www.youtube.com/watch?v=ZASG-rtkXDk LS #051.1: First participatory group discussion. https://www.youtube.com/watch?v=IM_NlUzyq8M LS #051.2: Second participatory group discussion. https://www.youtube.com/watch?v=hY_CajLpt9Q
 
 ## Methods
 

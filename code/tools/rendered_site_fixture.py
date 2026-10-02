@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import functools
 import http.server
+import os
 import shutil
 import threading
 from pathlib import Path
@@ -32,35 +33,63 @@ LANE_PAGES = (
 )
 
 NAV_VIEWPORTS = (900, 1024, 1152, 1280, 1440, 1920)
+ROOT_RUNTIME_FILES = frozenset({
+    "style.css", "favicon.ico", "robots.txt", "sitemap.xml",
+    "manifest.json", "sw.js", "opensearch.xml", "feed.xml",
+})
+PWA_ICON_FILES = ("art/favicon-192.png", "art/favicon-512.png")
+
+
+def browser_qa_required() -> bool:
+    return os.environ.get("DOCXOLOGY_REQUIRE_BROWSER_QA", "").lower() in {"1", "true"} or os.environ.get("GITHUB_JOB") == "browser-tests"
+
+
+def unavailable_browser_capability(reason: str) -> None:
+    """Missing local optional capabilities skip; mandatory hosted gates fail."""
+    if browser_qa_required():
+        pytest.fail(f"Required browser QA capability unavailable: {reason}")
+    pytest.skip(reason)
 
 
 def skip_without_playwright() -> None:
-    """pytest.skip when playwright or the chromium binary is unavailable."""
+    """Require an installed executable, failing closed in the hosted browser job."""
     try:
         from playwright.sync_api import sync_playwright  # noqa: F401
     except Exception as exc:  # pragma: no cover - local env without playwright
-        pytest.skip(f"playwright unavailable: {exc}")
+        unavailable_browser_capability(f"playwright unavailable: {exc}")
     try:
         from playwright.sync_api import sync_playwright
 
         with sync_playwright() as p:
-            if not p.chromium.executable_path:
+            if not p.chromium.executable_path or not Path(p.chromium.executable_path).is_file():
                 raise RuntimeError("chromium executable missing")
+            # Complete an actual API round trip before shutting down Playwright;
+            # path access alone does not prove the browser can launch.
+            browser = p.chromium.launch(headless=True)
+            browser.close()
     except Exception as exc:  # pragma: no cover - chromium not installed
-        pytest.skip(f"chromium unavailable: {exc}")
+        unavailable_browser_capability(f"chromium unavailable: {exc}")
 
 
 def copy_site(tmp_path: Path) -> Path:
-    """Copy the rendered site (html pages + asset dirs) into tmp_path/site."""
+    """Copy rendered pages and their actual runtime exports into tmp_path/site.
+
+    Keep root selection bounded; a page without its search/worker/PWA exports
+    is an incomplete application and cannot supply representative browser QA.
+    """
     site = tmp_path / "site"
     site.mkdir(parents=True, exist_ok=True)
     for item in sorted(REPO_ROOT.iterdir()):
         if item.suffix == ".html":
             shutil.copy2(item, site / item.name)
-        elif item.is_file() and item.name in {"style.css", "favicon.ico", "robots.txt", "sitemap.xml"}:
+        elif item.is_file() and (item.name in ROOT_RUNTIME_FILES or item.match("search-index*.json")):
             shutil.copy2(item, site / item.name)
         elif item.is_dir() and item.name in {"css", "js", "data", "works", "videos", "assets"}:
             shutil.copytree(item, site / item.name)
+    for relative in PWA_ICON_FILES:
+        target = site / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(REPO_ROOT / relative, target)
     return site
 
 
@@ -85,7 +114,7 @@ def serve_site(site_dir: Path) -> tuple[str, object]:
         # capability, exactly like a missing chromium binary — not a site
         # defect. Only EACCES/EPERM is treated this way: an address already in
         # use, a missing directory, or any other OSError still fails the test.
-        pytest.skip(f"local HTTP server not permitted in this environment: {exc}")
+        unavailable_browser_capability(f"local HTTP server not permitted in this environment: {exc}")
     thread = threading.Thread(target=httpd.serve_forever, daemon=True)
     thread.start()
     return f"http://127.0.0.1:{httpd.server_address[1]}", httpd
@@ -109,7 +138,9 @@ def page_and_server(tmp_path: Path):
     base_url, httpd = serve_copy(tmp_path)
     pw = sync_playwright().start()
     browser = pw.chromium.launch(headless=True)
-    context = browser.new_context(viewport={"width": 1280, "height": 900})
+    # Ordinary interaction QA inspects direct responses; worker lifecycle is
+    # explicitly enabled only in its dedicated real-browser acceptance tests.
+    context = browser.new_context(viewport={"width": 1280, "height": 900}, service_workers="block")
     page = context.new_page()
     try:
         yield page, base_url, httpd

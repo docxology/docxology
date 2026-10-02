@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes
+# AGENTS.md — The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes
 
-**Paper**: The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes (2025)
+**Paper**: The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes (2025)
 **Domain**: Computational
 **Authors**: Vladimir Baulin, Austin Cook, Daniel Friedman, Janna Lumiruusu, Andrew Pashea, Shagor Rahman, Benedikt Waldeck
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes to related works in the bibliography
+- Connects The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T21:37:30Z",
+  "generated_at": "2026-10-02T15:08:24Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -132,7 +132,7 @@
     {
       "num": 12,
       "citation_key": "Friedman2025EvoJumpStochasticModelingEvolutionary012",
-      "title": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+      "title": "EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
       "year": 2025,
       "domain_name": "Active Inference",
       "type": "Paper",
@@ -315,7 +315,7 @@
         "agent_readable": true
       },
       "repositories": [
-        "fep_lean"
+        "fep_formal"
       ]
     },
     {
@@ -2361,7 +2361,7 @@
     {
       "num": 74,
       "citation_key": "Friedman2022TrustFinderRecommendationsCommunityBased074",
-      "title": "TrustFinder: Recommendations for Community-Based Trust Systems",
+      "title": "TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims",
       "year": 2022,
       "domain_name": "Cognitive Security",
       "type": "Paper",
@@ -3295,7 +3295,7 @@
     {
       "num": 26,
       "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-      "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+      "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
       "year": 2025,
       "domain_name": "Computational",
       "type": "Paper",
@@ -4189,7 +4189,7 @@
       "num": 159,
       "citation_key": "Friedman2022ActiveBlockferenceCadCADActive159",
       "title": "Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling",
-      "year": 2022,
+      "year": 2023,
       "domain_name": "Active Inference",
       "type": "Paper",
       "score": 1,

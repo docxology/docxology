@@ -2,6 +2,42 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-10-02
+
+- **Permanent bibliography identity:** a reviewed work-identifier registry
+  preserves every existing work URL and reserves retired identifiers. Metadata
+  corrections no longer rename citation keys. New intake validates the complete
+  bibliography and identifier pair before writing; unsafe paths, collisions,
+  retired-ID reuse, and unsupported partial updates fail closed.
+- **Search and navigation:** autocomplete and the search page share a compact
+  core and load work/video text when needed. Revision mismatches recover through
+  a bounded core refresh. Mobile navigation works without JavaScript; keyboard
+  shortcuts contain and restore focus; clipboard failures offer an ordinary
+  link with a truthful status message.
+- **Offline and browser reliability:** a small service-worker shell and bounded
+  runtime cache preserve previously visited pages through updates. Network
+  deadlines cover complete response bodies; failed requests cannot replace good
+  cached entries. Required browser and Lighthouse tooling, malformed reports,
+  and missing score categories fail the hosted gate. Real browser regressions
+  exercise offline updates, error responses, progressive search, and focus.
+- **Publication provenance and growth:** unchanged generated content retains
+  its timestamp and footer stamp; changed content receives the current rendering
+  provenance. Cached generation tracks each writer, shared Python libraries,
+  and declared renderer helpers so code changes rebuild dependent outputs.
+  Exact legacy QA screenshots remain in GitHub while leaving the
+  bounded Pages projection, preserving all archived PDFs and manuscript files.
+  Pages deployments now retain a SHA-bound technical acceptance receipt checking
+  every work page, critical assets, all paper-PDF HEAD contracts, and sample PDF
+  hashes. This evidence is distinct from the human-reviewed release attestation.
+- **Source-backed curation:** corrected three full publication titles and one
+  publication year without URL changes; corrected the Discovery Engine source
+  abstract; updated five repository URLs after immutable GitHub-ID checks and
+  added the reviewed OmniLatticeTextbook repository. Scholar metrics were
+  refreshed from a direct authenticated observation with an exact snapshot
+  receipt. Remaining author reconciliation, licensed full-text acquisition,
+  account access, and publication-source discrepancies remain explicit in
+  [the active backlog](TODO.md). Implementation scope and verification boundaries
+  are recorded in [the forward reliability review](reports/site_reliability_2026-10-02.md).
 
 ## 2026-10-01
 

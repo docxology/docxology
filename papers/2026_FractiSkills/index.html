@@ -11,7 +11,7 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
-    <link rel="stylesheet" href="../../style.css?v=work-access-20261001">
+    <link rel="stylesheet" href="../../style.css?v=site-20261002">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
@@ -23,6 +23,7 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <link rel="me" href="https://www.flickr.com/photos/daniel_friedman/" title="Flickr">
     <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
+    <script src="/js/nav-toggle.js?v=nav-20261002"></script>
     <meta property="og:type" content="article">
     <meta property="og:title" content="FractiSkills: One Portable Agent Skill per Page Documentation">
     <meta property="og:description" content="FractiSkills treats an entire website as a corpus of agent skills: every reachable page is normalized into a SKILL.md-style artifact so that a whole site…">
@@ -91,18 +92,7 @@
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Overview</h2><p>Curated abstract when available.</p><div class="section-divider"></div></div>
-            <div class="overview-box"><p>FractiSkills treats an entire website as a corpus of agent skills: every reachable page is normalized into a SKILL.md-style artifact so that a whole site — not a single document — becomes loadable context for an agent. The work is organized around a four-stage pipeline — discover, render, publish, research — with Skillarum  serving as the engine that turns raw crawl output into citable, receipt-bearing skill documents. Discovery unions the declared sitemap with a bounded, robots-respecting breadth-first crawl (reaching a maximum depth of 5), resolves redirect and canonical aliases, and partitions every page into site-derived sections; the render stage emits one receipt-bearing skill per page; publish and research then validate, organize, and measure the corpus.
-
-The resulting corpus covers 405 pages from 53 sitemap URLs, organized into 12 sections and 405 skills totaling 497896 words (3887524 characters). Augmentation — a declared, same-origin document retrieval for client-rendered pages — was attempted 173 times and succeeded 169 times (1988848 document characters retrieved), with 4 failures recorded as receipts. The size effect is stark: augmented skills have a median of 1824 words versus 486 for static pages, a ratio of 3.8$\times$. The run issued 417 network requests, all evidence origins marked live, under pipeline version 0.8 and cache version 7.
-
-Reproducibility is enforced rather than promised: every statistic in this manuscript is emitted as a token that must resolve against a machine-generated data contract, and every page carries a fetch receipt — URL, timestamp, SHA-256 content hash, and augmentation status — so any number can be traced to a specific observation within the 2026-09-10T23:51:05.959201+00:00 through 2026-09-10T22:19:21.394219+00:00 (UTC) window. Failed augmentations are reported, not silently dropped. Keywords: agent skills, SKILL.md, web scraping, Skillarum, provenance, reproducible research.
-
----
-Associated artifacts
-GitHub release: v0.1.0 (https://github.com/docxology/FractiSkills/releases/tag/v0.1.0)
-DOI: https://doi.org/10.5281/zenodo.22712651
-Zenodo: https://zenodo.org/records/22712651
-PDF SHA-256: af96db3ef73bb648ddbfed92c2c4f9dff099e772ca9e9ff0041101eeb6135b4b</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
+            <div class="overview-box"><p>FractiSkills treats an entire website as a corpus of agent skills: every reachable page is normalized into a SKILL.md-style artifact so that a whole site — not a single document — becomes loadable context for an agent. The work is organized around a four-stage pipeline — discover, render, publish, research — with Skillarum serving as the engine that turns raw crawl output into citable, receipt-bearing skill documents. Discovery unions the declared sitemap with a bounded, robots-respecting breadth-first crawl (reaching a maximum depth of 5), resolves redirect and canonical aliases, and partitions every page into site-derived sections; the render stage emits one receipt-bearing skill per page; publish and research then validate, organize, and measure the corpus.</p><p>The resulting corpus covers 405 pages from 53 sitemap URLs, organized into 12 sections and 405 skills totaling 497896 words (3887524 characters). Augmentation — a declared, same-origin document retrieval for client-rendered pages — was attempted 173 times and succeeded 169 times (1988848 document characters retrieved), with 4 failures recorded as receipts. The size effect is stark: augmented skills have a median of 1824 words versus 486 for static pages, a ratio of 3.8$\times$. The run issued 417 network requests, all evidence origins marked live, under pipeline version 0.8 and cache version 7.</p><p>Reproducibility is enforced rather than promised: every statistic in this manuscript is emitted as a token that must resolve against a machine-generated data contract, and every page carries a fetch receipt — URL, timestamp, SHA-256 content hash, and augmentation status — so any number can be traced to a specific observation within the 2026-09-10T23:51:05.959201+00:00 through 2026-09-10T22:19:21.394219+00:00 (UTC) window. Failed augmentations are reported, not silently dropped. Keywords: agent skills, SKILL.md, web scraping, Skillarum, provenance, reproducible research.</p><p>---<br>Associated artifacts<br>GitHub release: v0.1.0 (https://github.com/docxology/FractiSkills/releases/tag/v0.1.0)<br>DOI: https://doi.org/10.5281/zenodo.22712651<br>Zenodo: https://zenodo.org/records/22712651<br>PDF SHA-256: af96db3ef73bb648ddbfed92c2c4f9dff099e772ca9e9ff0041101eeb6135b4b</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section">
             <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation and PDFs served directly from this folder.</p><div class="section-divider"></div></div>
@@ -121,10 +111,10 @@ PDF SHA-256: af96db3ef73bb648ddbfed92c2c4f9dff099e772ca9e9ff0041101eeb6135b4b</p
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../../publications.html">Unified bibliography</a> · <a href="../../works/">Works index</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/c12a6458d">build c12a6458d 2026-10-01</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/e296b3ae8">build e296b3ae8 2026-10-02</a></p>
     </footer>
-<script src="/js/search-utils.js?v=20260813"></script>
+<script src="/js/search-utils.js?v=site-20261002"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
-<script src="/js/interactive.js?v=20260813" defer></script>
+<script src="/js/interactive.js?v=site-20261002" defer></script>
 <script src="/js/menu-esc.js?v=20260813" defer></script></body>
 </html>

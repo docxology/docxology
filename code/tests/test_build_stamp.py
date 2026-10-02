@@ -79,3 +79,31 @@ def test_stamp_markup_is_csp_clean_and_link_only():
     sample = build_stamp.footer_build_stamp_html(REPO_ROOT)
     assert "onclick" not in sample.lower()
     assert "<script" not in sample.lower()
+
+
+def _stamped_page(body: str, sha: str) -> str:
+    return f'<html><main>{body}</main><footer><p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/{sha}">build {sha} 2026-01-02</a></p></footer></html>'
+
+
+def test_stamp_reuse_requires_complete_equal_content_and_preserves_href():
+    old = _stamped_page("same body", "aaaaaaa")
+    new = _stamped_page("same body", "bbbbbbb")
+    assert build_stamp.reuse_on_disk_stamp(new, old) == old
+
+
+def test_changed_content_gets_current_stamp_instead_of_old_provenance():
+    old = _stamped_page("old body", "aaaaaaa")
+    new = _stamped_page("corrected body", "bbbbbbb")
+    assert build_stamp.reuse_on_disk_stamp(new, old) == new
+
+
+def test_stamp_fragment_cannot_claim_equality_of_a_whole_page():
+    old = _stamped_page("old body", "aaaaaaa")
+    new = '<p class="build-stamp"><a href="new">build bbbbbbb 2026-01-02</a></p>'
+    assert build_stamp.reuse_on_disk_stamp(new, old) == new
+
+
+def test_multiple_stamps_are_not_normalized_away():
+    old = _stamped_page("same body", "aaaaaaa")
+    new = _stamped_page("same body", "bbbbbbb")
+    assert build_stamp.reuse_on_disk_stamp(new + new, old + old) == new + new

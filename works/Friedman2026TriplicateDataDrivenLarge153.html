@@ -31,6 +31,7 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <link rel="me" href="https://www.flickr.com/photos/daniel_friedman/" title="Flickr">
     <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
+    <script src="/js/nav-toggle.js?v=nav-20261002"></script>
     <meta property="og:type" content="article">
     <meta property="og:title" content="The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine">
     <meta property="og:description" content="We present template_newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML…">
@@ -44,7 +45,7 @@
     <meta name="twitter:description" content="We present template_newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine — Daniel Ari Friedman">
-    <link rel="stylesheet" href="../style.css?v=work-access-20261001">
+    <link rel="stylesheet" href="../style.css?v=site-20261002">
     <meta name="theme-color" content="#0c0c0e">
     <style>
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
@@ -258,27 +259,7 @@
 
         <section class="section">
             <div class="section-header"><h2>Overview</h2><div class="section-divider"></div></div>
-            <div class="work-detail"><p>We present template_newspaper, a pure-Python engine that renders a complete
-twelve-page, large-format newspaper to a print-ready PDF from structured YAML
-content. The exemplar edition is The Triplicate, a homage to the historic
-newspaper of Crescent City, California (founded 1879). The engine demonstrates
-designed multi-column page layout — nameplate and ears, spanning headlines,
-flowing column frames with an optional rail, drop caps, pull quotes, ruled
-modular boxes, data tables, halftone &quot;engraving&quot; figures and running folios —
-while keeping a strict separation between content (data) and engine (code):
-a new title is a data edit, never a code change. The layout strategy is a hybrid
-in which fixed furniture is drawn directly on the canvas to establish where
-the column grid begins, after which body copy flows through ReportLab frames
-that split paragraphs across columns automatically. The project obeys the
-research-template monorepo contract and is discovered and executed by the same
-orchestration pipeline as its code- and prose-focused siblings.
-
----
-Associated artifacts
-GitHub release: v1.0.2 (https://github.com/docxology/template_newspaper/releases/tag/v1.0.2)
-DOI: https://doi.org/10.5281/zenodo.20533675
-Zenodo: https://zenodo.org/records/20533675
-PDF SHA-256: 6c693dbd80a4234d30d99f6a890191ff47faf197a0636753fa9785588c550a77</p><div class="keyword-row" aria-label="Keywords"><span>newspaper layout</span><span>typography</span><span>reportlab</span><span>reproducible publishing</span><span>document engineering</span></div><p class="summary-sources abstract-source">Overview source: <a href="../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
+            <div class="work-detail"><p>We present template_newspaper, a pure-Python engine that renders a complete<br>twelve-page, large-format newspaper to a print-ready PDF from structured YAML<br>content. The exemplar edition is The Triplicate, a homage to the historic<br>newspaper of Crescent City, California (founded 1879). The engine demonstrates<br>designed multi-column page layout — nameplate and ears, spanning headlines,<br>flowing column frames with an optional rail, drop caps, pull quotes, ruled<br>modular boxes, data tables, halftone &quot;engraving&quot; figures and running folios —<br>while keeping a strict separation between content (data) and engine (code):<br>a new title is a data edit, never a code change. The layout strategy is a hybrid<br>in which fixed furniture is drawn directly on the canvas to establish where<br>the column grid begins, after which body copy flows through ReportLab frames<br>that split paragraphs across columns automatically. The project obeys the<br>research-template monorepo contract and is discovered and executed by the same<br>orchestration pipeline as its code- and prose-focused siblings.</p><p>---<br>Associated artifacts<br>GitHub release: v1.0.2 (https://github.com/docxology/template_newspaper/releases/tag/v1.0.2)<br>DOI: https://doi.org/10.5281/zenodo.20533675<br>Zenodo: https://zenodo.org/records/20533675<br>PDF SHA-256: 6c693dbd80a4234d30d99f6a890191ff47faf197a0636753fa9785588c550a77</p><div class="keyword-row" aria-label="Keywords"><span>newspaper layout</span><span>typography</span><span>reportlab</span><span>reproducible publishing</span><span>document engineering</span></div><p class="summary-sources abstract-source">Overview source: <a href="../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Methods and contributions</h2><p>Read the source for the full argument, qualifications, and evidence.</p><div class="section-divider"></div></div>
@@ -313,11 +294,11 @@ PDF SHA-256: 6c693dbd80a4234d30d99f6a890191ff47faf197a0636753fa9785588c550a77</p
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite &amp; Verify</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/a3028183">build a3028183 2026-08-28</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/e296b3ae8">build e296b3ae8 2026-10-02</a></p>
     </footer>
-<script src="/js/search-utils.js?v=20260813"></script>
+<script src="/js/search-utils.js?v=site-20261002"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
-<script src="/js/interactive.js?v=20260813" defer></script>
+<script src="/js/interactive.js?v=site-20261002" defer></script>
 <script src="/js/cite-export.js?v=work-access-20261001" defer></script>
 <script src="/js/menu-esc.js?v=20260813" defer></script></body>
 </html>

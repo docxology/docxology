@@ -663,7 +663,7 @@ def render_video_page(video: dict, *, transcript: str | None = None) -> str:
     <meta property="og:image:width" content="480">
     <meta property="og:image:height" content="360">
 {social_meta_tags(title, description, video['thumbnail_url'], image_alt=title)}
-    <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260530c">
+    <link rel="stylesheet" href="../style.css?v=site-20261002">
     <style>{BREADCRUMB_CSS}</style>
     <style>
         .video-layout{{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.6fr);gap:1.25rem;align-items:start}}
@@ -817,7 +817,7 @@ def render_index(payload: dict) -> str:
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 {social_meta_tags(title, clip_description(description, 155), SITE_ORIGIN + "og-media.jpg", image_alt=title)}
-    <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260530c">
+    <link rel="stylesheet" href="../style.css?v=site-20261002">
     <style>{BREADCRUMB_CSS}</style>
     <style>
         .pill-row{{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.75rem}}

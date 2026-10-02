@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 💻 The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes
+# 💻 The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes
 
 **Vladimir Baulin, Austin Cook, Daniel Friedman, Janna Lumiruusu, Andrew Pashea, Shagor Rahman, Benedikt Waldeck** (2025) · *ArXiv*
 
@@ -10,11 +10,11 @@
 
 ## Abstract
 
-> The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the scientific discovery process as an inference problem, where hypotheses are generated, tested, and refined through free energy minimization, enabling structured exploration of research questions.
+> The prevailing model for disseminating scientific knowledge relies on individual publications dispersed across numerous journals and archives. This legacy system is ill suited to the recent exponential proliferation of publications, contributing to insurmountable information overload, issues surrounding reproducibility and retractions. We introduce the Discovery Engine, a framework to address these challenges by transforming an array of disconnected literature into a unified, computationally tractable representation of a scientific domain. Central to our approach is the LLM-driven distillation of publications into structured "knowledge artifacts," instances of a universal conceptual schema, complete with verifiable links to source evidence. These artifacts are then encoded into a high-dimensional Conceptual Tensor. This tensor serves as the primary, compressed representation of the synthesized field, where its labeled modes index scientific components (concepts, methods, parameters, relations) and its entries quantify their interdependencies. The Discovery Engine allows dynamic "unrolling" of this tensor into human-interpretable views, such as explicit knowledge graphs (the CNM graph) or semantic vector spaces, for targeted exploration. Crucially, AI agents operate directly on the graph using abstract mathematical and learned operations to navigate the knowledge landscape, identify non-obvious connections, pinpoint gaps, and assist researchers in generating novel knowledge artifacts (hypotheses, designs). By converting literature into a structured tensor and enabling agent-based interaction with this compact representation, the Discovery Engine offers a new paradigm for AI-augmented scientific inquiry and accelerated discovery.
 
 ## Keywords
 
-`Discovery Engine` · `automated discovery` · `Active Inference` · `scientific reasoning` · `hypothesis generation` · `computational science`
+`Discovery Engine` · `scientific knowledge synthesis` · `LLM-driven distillation` · `knowledge artifacts` · `Conceptual Tensor` · `knowledge graphs` · `AI-assisted scientific inquiry`
 
 ## Methods
 
@@ -42,7 +42,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Vladimir Baulin, Austin Cook, Daniel Friedman, Janna Lumiruusu, Andrew Pashea, Shagor Rahman, Benedikt Waldeck (2025). *The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes*. ArXiv. DOI: 10.48550/arXiv.2505.17500. URL: https://doi.org/10.48550/arXiv.2505.17500.
+> Vladimir Baulin, Austin Cook, Daniel Friedman, Janna Lumiruusu, Andrew Pashea, Shagor Rahman, Benedikt Waldeck (2025). *The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes*. ArXiv. DOI: 10.48550/arXiv.2505.17500. URL: https://doi.org/10.48550/arXiv.2505.17500.
 
 ## Related
 

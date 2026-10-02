@@ -32,6 +32,12 @@ def document_case(tmp_path, monkeypatch):
     )
     output = tmp_path / "data" / "work-authors.json"
     output.parent.mkdir()
+    (output.parent / "work-identifiers.json").write_text(json.dumps({
+        "schema_version": "WorkIdentifierRegistry.v1",
+        "identifiers": {
+            "999": {"citation_key": "Friedman2026ExampleWork999", "status": "active"},
+        },
+    }), encoding="utf-8")
     monkeypatch.setattr(authors, "REPO_ROOT", tmp_path)
     monkeypatch.setattr(authors, "BIBLIOGRAPHY", bibliography)
     monkeypatch.setattr(authors, "OUTPUT", output)

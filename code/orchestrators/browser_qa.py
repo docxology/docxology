@@ -43,6 +43,7 @@ CHECK_NAMES = (
     "gallery lightbox traps and restores focus",
     "320px layout honors reduced motion without page overflow",
     "forced colors and YouTube iframe policy remain covered",
+    "keyboard shortcuts contain and restore focus",
 )
 
 
@@ -174,7 +175,7 @@ def run_report() -> dict:
                     "art.html": "full artwork data export",
                     "videos.html": "static video index",
                 }
-                with new_context(browser, java_script_enabled=False) as context:
+                with new_context(browser, java_script_enabled=False, viewport={"width": 320, "height": 760}) as context:
                     page = context.new_page()
                     for route, marker in routes.items():
                         page.goto(base + "/" + route, wait_until="domcontentloaded")
@@ -182,7 +183,14 @@ def run_report() -> dict:
                             raise AssertionError(f"{route} has no heading without JavaScript")
                         if marker not in page.locator("body").inner_text():
                             raise AssertionError(f"{route} missing fallback marker: {marker}")
-                return {"routes": len(routes), "fallbacks": "visible"}
+                        nav_links = page.locator(".nav-links > li > a")
+                        if not nav_links.count() or any(not link.is_visible() for link in nav_links.all()):
+                            raise AssertionError(f"{route} hides primary navigation without JavaScript")
+                        more = page.locator(".nav-more summary").first
+                        more.click()
+                        if not page.locator(".nav-more-panel a").first.is_visible():
+                            raise AssertionError(f"{route} hides native More disclosure without JavaScript")
+                return {"routes": len(routes), "fallbacks": "visible", "mobile_navigation": "reachable at 320px"}
 
             record(CHECK_NAMES[2], no_javascript_fallback)
 
@@ -296,6 +304,27 @@ def run_report() -> dict:
                 return {"forced_colors": True, "iframe_origin": "www.youtube-nocookie.com", "iframe_title": True}
 
             record(CHECK_NAMES[6], forced_colors_and_iframes)
+
+            def shortcuts_focus() -> dict:
+                with new_context(browser) as context:
+                    page = context.new_page()
+                    page.goto(base + "/index.html", wait_until="domcontentloaded")
+                    opener = page.locator(".nav-logo").first
+                    opener.focus()
+                    page.keyboard.press("?")
+                    page.wait_for_selector("#shortcuts-overlay[aria-hidden='false']")
+                    for key in ("Tab", "Shift+Tab", "Tab"):
+                        page.keyboard.press(key)
+                        if not page.evaluate("document.querySelector('#shortcuts-overlay').contains(document.activeElement)"):
+                            raise AssertionError(f"{key} escaped the shortcuts dialog")
+                    page.keyboard.press("Escape")
+                    if page.locator("#shortcuts-overlay").get_attribute("aria-hidden") != "true":
+                        raise AssertionError("Escape did not close shortcuts")
+                    if not opener.evaluate("node => node === document.activeElement"):
+                        raise AssertionError("shortcuts did not restore opener focus")
+                return {"tab_trapped": True, "escape_closed": True, "focus_restored": True}
+
+            record(CHECK_NAMES[7], shortcuts_focus)
             browser.close()
 
         if tuple(check.get("name") for check in checks) != CHECK_NAMES:

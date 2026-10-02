@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import re
 import sys
+from html.parser import HTMLParser
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
@@ -21,7 +22,7 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-from docxology_tools.site_nav import CSP_META_TAG  # noqa: E402
+from docxology_tools.site_nav import CSP_META_TAG, NAV_TOGGLE_SCRIPT_TAG  # noqa: E402
 from docxology_tools.redirect_stubs import discover_redirect_stubs  # noqa: E402
 from docxology_tools.generated_outputs import (  # noqa: E402
     UnsafeGeneratedOutputPathError,
@@ -164,6 +165,61 @@ def add_rel_me_if_missing(html: str) -> str:
 
 
 HREFLANG_TAG_RE = re.compile(r"\s*<link\b[^>]*\bhreflang=[^>]*>\s*", re.I)
+NAV_TOGGLE_SCRIPT_RE = re.compile(
+    r"<script\b[^>]*\bsrc\s*=\s*(['\"])(?:[^'\"]*/)?js/nav-toggle\.js"
+    r"(?:\?[^'\"]*)?\1[^>]*>\s*</script>", re.I,
+)
+
+
+class _NavigationControls(HTMLParser):
+    """Find a real toggle and link list inside the same navigation element."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.navigation: list[set[str]] = []
+        self.found = False
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "nav":
+            self.navigation.append(set())
+        if not self.navigation:
+            return
+        classes = set((dict(attrs).get("class") or "").split())
+        if tag == "button" and "menu-btn" in classes:
+            self.navigation[-1].add("toggle")
+        if "nav-links" in classes:
+            self.navigation[-1].add("links")
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "nav" and self.navigation:
+            controls = self.navigation.pop()
+            self.found = self.found or controls == {"toggle", "links"}
+
+
+def add_early_navigation_if_needed(html: str) -> str:
+    """Normalize one synchronous head initializer only on usable header navs.
+
+    Comments, source examples and breadcrumb navigation do not load the asset.
+    A misplaced/deferred duplicate is replaced rather than creating two owners.
+    """
+    parser = _NavigationControls()
+    parser.feed(html)
+    parser.close()
+    closing_head = re.search(r"</head\s*>", html, re.I)
+    tags = list(NAV_TOGGLE_SCRIPT_RE.finditer(html))
+    if parser.found and closing_head and len(tags) == 1:
+        tag = tags[0]
+        opening_head = re.search(r"<head\b[^>]*>", html, re.I)
+        if (opening_head and opening_head.end() <= tag.start() < closing_head.start()
+                and tag.group() == NAV_TOGGLE_SCRIPT_TAG):
+            return html
+    html = NAV_TOGGLE_SCRIPT_RE.sub("", html)
+    if not parser.found:
+        return html
+    closing_head = re.search(r"</head\s*>", html, re.I)
+    if not closing_head:
+        return html
+    return html[:closing_head.start()] + f"    {NAV_TOGGLE_SCRIPT_TAG}\n" + html[closing_head.start():]
 
 
 def strip_hreflang_tags(html: str) -> str:
@@ -207,6 +263,10 @@ def transform_html(html: str, *, is_redirect: bool = False, is_skipped: bool = F
     if html != original:
         changes.append("hreflang-stripped")
         original = html
+
+    html = add_early_navigation_if_needed(html)
+    if html != original:
+        changes.append("early-navigation")
 
     return html, changes, False
 

@@ -17,7 +17,7 @@ from __future__ import annotations
 
 import os
 import re
-from release_controls import source_payload_commit
+from docxology_tools.release_controls import source_payload_commit
 import subprocess
 from pathlib import Path
 
@@ -106,25 +106,25 @@ def reuse_on_disk_stamp(candidate: str, on_disk: str | None) -> str:
     disk_match = STAMP_HTML_RE.search(on_disk)
     if not disk_match:
         return candidate
+    candidate_matches = list(STAMP_HTML_RE.finditer(candidate))
+    disk_matches = list(STAMP_HTML_RE.finditer(on_disk))
+    if len(candidate_matches) != 1 or len(disk_matches) != 1:
+        return candidate
+    # Normalize the complete anchor (including href), and nothing else. A
+    # stamp-only candidate cannot establish equality of the rendered page.
+    if STAMP_HTML_RE.sub("<build-stamp>", candidate) != STAMP_HTML_RE.sub("<build-stamp>", on_disk):
+        return candidate
     disk_anchor = disk_match.group(0)
-    return STAMP_HTML_RE.sub(disk_anchor.replace("\\", "\\\\"), candidate, count=1)
-
-
-_CACHED_STAMP_HTML: str | None = None
+    return STAMP_HTML_RE.sub(lambda _match: disk_anchor, candidate, count=1)
 
 
 def reuse_or_current(existing_html: str | None = None) -> str:
-    """Return the footer stamp, preferring an on-disk stamp when present.
+    """Return a current footer; stamp reuse requires a complete rendered page.
 
-    A page whose content is byte-identical apart from the stamp is not stale:
-    reusing the on-disk stamp keeps --check green across non-rendering commits
-    instead of churning every page's stamp to each new HEAD.
+    Retained for compatibility. Call ``reuse_on_disk_stamp(candidate, existing)``
+    after rendering instead, so changed content cannot inherit old provenance.
     """
-    global _CACHED_HTML_FOR_STAMP
-    stamp = footer_build_stamp_html()
-    if existing_html:
-        return reuse_on_disk_stamp(stamp, existing_html)
-    return stamp
+    return footer_build_stamp_html()
 
 
 def build_stamp_text(repo_root: Path | str | None = None) -> str:

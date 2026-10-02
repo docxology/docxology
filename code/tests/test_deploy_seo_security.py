@@ -14,12 +14,63 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 
 
+from docxology_tools.generated_outputs import UnsafeGeneratedOutputPathError  # noqa: E402
+from docxology_tools.site_nav import NAV_TOGGLE_SCRIPT_TAG  # noqa: E402
 from deploy_seo_security import (  # noqa: E402
+    add_early_navigation_if_needed,
     is_indexable_html_path,
     process_file,
     transform_html,
 )
-from docxology_tools.generated_outputs import UnsafeGeneratedOutputPathError  # noqa: E402
+
+
+NAV = '<nav><button class="menu-btn">Menu</button><ul class="nav-links"><li><a href="/">Home</a></li></ul></nav>'
+
+
+def test_early_navigation_is_in_head_before_body_and_idempotent():
+    source = f"<html><head></head><body>{NAV}</body></html>"
+    normalized = add_early_navigation_if_needed(source)
+    assert normalized.count(NAV_TOGGLE_SCRIPT_TAG) == 1
+    assert normalized.index(NAV_TOGGLE_SCRIPT_TAG) < normalized.index("</head>")
+    assert add_early_navigation_if_needed(normalized) == normalized
+    complete, _, skipped = transform_html(source)
+    assert not skipped
+    assert transform_html(complete) == (complete, [], False)
+
+
+def test_early_navigation_normalizes_deferred_body_and_duplicate_owners():
+    deferred = '<script src="../js/nav-toggle.js?v=old" defer></script>'
+    source = f"<html><head>{deferred}</head><body>{NAV}{NAV_TOGGLE_SCRIPT_TAG}</body></html>"
+    normalized = add_early_navigation_if_needed(source)
+    assert normalized.count("nav-toggle.js") == 1
+    assert NAV_TOGGLE_SCRIPT_TAG in normalized.split("</head>")[0]
+    assert add_early_navigation_if_needed(normalized) == normalized
+
+
+@pytest.mark.parametrize("navigation", [
+    '<nav class="breadcrumb"><a href="/">Home</a></nav>',
+    '<nav><div class="nav-links"><a href="/">Home</a></div></nav>',
+    '<nav class><button class>Menu</button><ul class></ul></nav>',
+    '<nav><button class="menu-btn">Menu</button></nav><nav><ul class="nav-links"></ul></nav>',
+    '<!-- ' + NAV + ' -->',
+    '<script type="text/plain">' + NAV + '</script>',
+])
+def test_pages_without_real_toggle_controls_do_not_load_navigation_asset(navigation):
+    source = f"<html><head>{NAV_TOGGLE_SCRIPT_TAG}</head><body>{navigation}</body></html>"
+    normalized = add_early_navigation_if_needed(source)
+    assert "nav-toggle.js" not in normalized
+    assert add_early_navigation_if_needed(normalized) == normalized
+
+
+def test_navigation_normalization_check_preserves_actual_file_bytes(tmp_path):
+    repo = tmp_path / "repo"
+    repo.mkdir()
+    page = repo / "index.html"
+    source = f"<html><head></head><body>{NAV}</body></html>"
+    page.write_text(source, encoding="utf-8")
+    result = process_file(page, redirect_paths=set(), write=False, repo_root=repo)
+    assert "early-navigation" in result["changes"]
+    assert page.read_text(encoding="utf-8") == source
 
 
 def test_dependency_html_is_not_a_site_normalization_target():

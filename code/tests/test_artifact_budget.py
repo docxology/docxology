@@ -55,3 +55,10 @@ def test_enforce_budget_fails_over_budget(tmp_path: Path) -> None:
     _write_report(tmp_path, 901.5)
     with pytest.raises(ArtifactBudgetError, match="ARTIFACT BUDGET EXCEEDED"):
         enforce_budget(tmp_path)
+
+
+@pytest.mark.parametrize("measurement", [True, False, None, "835.2", -1, float("nan"), float("inf"), -float("inf"), 10**1000])
+def test_invalid_measurements_cannot_pass_budget(tmp_path: Path, measurement) -> None:
+    _write_report(tmp_path, measurement)
+    with pytest.raises(ArtifactBudgetError, match="artifact_mib"):
+        enforce_budget(tmp_path)

@@ -8,8 +8,8 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-10-01; active items retained and completed session history
-  separated from current work.
+- Last reviewed: 2026-10-02; implementation progress and remaining evidence/access
+  dependencies recorded separately from completed history.
 
 ## P0 — Release and integrity
 
@@ -74,20 +74,22 @@ criteria, and dependencies. Re-review this file before each public release.
 - Status (2026-10-01): completed curation and keep/change decisions are in
   [the accuracy report](reports/bibliography_accuracy_2026-10-01.md).
   Current archive coverage follows [the generated snapshot](reports/current_counts.md).
+  Permanent keys now come from `data/work-identifiers.json`; metadata corrections
+  no longer require changing the public URL.
   Remaining:
 - Acquire licensed full text for **#63** `2023_ToComment`,
   `2024_PaleolithicRockstars`, and `2026_FocusedAttentionMeditation`, then
   extract and summarize from those sources. Direct publisher/registry checks
   found no accessible licensed full text. Unsupported seed content has been
   cleared; the meditation chapter retains a labeled publisher synopsis.
-- Registry/document discrepancies to decide: **#159** Active Blockference (Crossref issues the chapter in
-  2023, but changing the year re-slugs the frozen URL); **#12** EvoJump and
-  **#26** Discovery Engine short titles (a full title changes the frozen
-  slug); **#33** Digital Twins comment (the
-  registry lists only Cordes; the document names Zargham, Sisson, David,
-  Friedman, Cordes); **#29** Aligning AIO to SUMO (the registry lists
-  "Maybell, Scott Ryan", who does not appear in the paper's 13-author list);
-  and #74 TrustFinder's full-title variant.
+- Remaining registry/document author discrepancies: **#33** Digital Twins
+  (registry creator Cordes versus the document's organization/representative
+  list), and **#29** Aligning AIO to SUMO (a registered concept-record creator
+  does not appear on the title-page author list). Keep the registered creators
+  pending depositor reconciliation; neither observation establishes a safe
+  authorship change. Full-title corrections for #12, #26, and #74 and the
+  publication-year correction for #159 were applied without changing URLs;
+  see [the metadata decisions](reports/bibliography_metadata_review_2026-10-02.json).
 - Content inconsistencies that the grounded summaries surfaced inside the
   papers themselves (for the author): CognitiveIntegrityFramework Part 2
   corpus size (950 vs 1,475), ConvergenceAnalysisGradient Discussion vs Table
@@ -131,6 +133,14 @@ criteria, and dependencies. Re-review this file before each public release.
 - Deliverable: retain compact artwork and video indexes with lazy detail loading, document per-asset budgets, and review Pages growth trends
 - Acceptance: current HTML, JS, JSON, hero, thumbnail, CV, and generated-data budgets are measured and remain below documented thresholds; large interactive datasets do not load detail-only payloads before user need
 - Dependencies: Pages artifact manifest, asset audit, browser QA
+- Performance follow-up: use retained candidate-SHA Lighthouse diagnostics to
+  improve pages below the aspirational performance 85, accessibility 95, and
+  SEO 95 scores. Keep existing floors and measured results visible; passing
+  the ratchet does not establish that every aspirational target was met.
+- Measured follow-up (2026-10-02): Search CLS is 0.110704 after its footer
+  repair. Reserve type-filter geometry during core loading, verify delayed
+  initialization at 320px and 412px, and retain the next real Lighthouse result
+  before claiming a zero-shift or below-0.1 result.
 
 ### DOC-010 — Security and SEO follow-up
 
@@ -140,6 +150,9 @@ criteria, and dependencies. Re-review this file before each public release.
 - Deliverable: validate meta-policy limitations, CSP/URL/iframe/rel invariants, canonical and sitemap families, then record Search Console follow-up
 - Acceptance: no inline handlers/scripts or unsafe schemes; approved YouTube origin only; every public family has canonical, metadata, schema, and sitemap policy coverage
 - Dependencies: `seo_invariants.py`, `gsc_followup_preflight.py`, signed-in Search Console review
+- Access check (2026-10-02): the available signed-in browser has no accessible
+  Search Console property for the domain; owner-granted property access is needed.
+  No ownership, DNS, or account settings were changed.
 
 ## P1 — Pages and repository growth
 

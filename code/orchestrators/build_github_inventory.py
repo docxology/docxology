@@ -268,8 +268,6 @@ def render_rows(repositories: list[dict[str, Any]]) -> str:
 
 def render_html(payload: dict[str, Any], *, forks: bool = False, existing_html: str | None = None) -> str:
     footer_stamp = footer_build_stamp_html()
-    if existing_html:
-        footer_stamp = reuse_on_disk_stamp(footer_stamp, existing_html)
     all_counts = payload["counts"]
     repositories = [repo for repo in payload["repositories"] if repo["fork"] is forks]
     counts = count_repositories(repositories)
@@ -328,7 +326,7 @@ def render_html(payload: dict[str, Any], *, forks: bool = False, existing_html: 
         f'                <option value="{h(language)}">{h(language)}</option>'
         for language in sorted({repo["language"].strip().lower() for repo in repositories if repo["language"]})
     )
-    return f"""<!DOCTYPE html>
+    rendered = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -354,7 +352,7 @@ def render_html(payload: dict[str, Any], *, forks: bool = False, existing_html: 
     <meta name="twitter:description" content="{h(page_description)}">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-software.jpg">
     <meta name="twitter:image:alt" content="{h(page_title)}">
-    <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
+    <link rel="stylesheet" href="style.css?v=site-20261002">
     <style>
         .inventory-controls{{display:flex;flex-wrap:wrap;gap:.65rem;align-items:center;margin:1rem 0}}
         .inventory-search{{flex:1 1 260px;min-width:0;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);padding:.75rem .9rem}}
@@ -477,6 +475,7 @@ def render_html(payload: dict[str, Any], *, forks: bool = False, existing_html: 
 {MENU_ESC_SCRIPT}</body>
 </html>
 """
+    return reuse_on_disk_stamp(rendered, existing_html)
 
 
 def write_outputs(payload: dict[str, Any]) -> None:

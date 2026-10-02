@@ -84,6 +84,9 @@ def _write_minimal_repo(root: Path) -> None:
         encoding="utf-8",
     )
     (root / "papers" / "paper_metadata.json").write_text("{}\n", encoding="utf-8")
+    (root / "data/work-identifiers.json").write_text(
+        '{"schema_version": "WorkIdentifierRegistry.v1", "identifiers": {}}\n', encoding="utf-8"
+    )
     (root / "papers" / "README.md").write_text("# Papers\n\n## Papers (0)\n", encoding="utf-8")
     (root / "papers" / "AGENTS.md").write_text(
         "# Papers\n\nREADME.md present | 0/0 folders\n", encoding="utf-8"
@@ -555,10 +558,27 @@ def test_apply_creates_new_publication_and_is_idempotent(tmp_path: Path):
     bibliography = (tmp_path / "pages" / "BIBLIOGRAPHY.md").read_text(encoding="utf-8")
     assert bibliography.count("New Computational Project: Reproducible Research") == 1
     assert "[📁](../papers/2026_NewComputationalProject/)" in bibliography
+    registry = json.loads((tmp_path / "data/work-identifiers.json").read_text(encoding="utf-8"))
+    assert registry["identifiers"]["1"] == {
+        "citation_key": "Friedman2026NewComputationalProjectReproducible001", "status": "active"
+    }
 
     software = (tmp_path / "pages" / "SOFTWARE.md").read_text(encoding="utf-8")
     assert "https://doi.org/10.5281/zenodo.20990001" in software
     assert "[📄](../papers/2026_NewComputationalProject/)" in software
+
+
+def test_paired_intake_rejects_unsafe_key_before_bibliography_write(tmp_path):
+    from docxology_tools.work_identifiers import WorkIdentifierError
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    pair = replace(pair, record=replace(pair.record, title="A" * 220))
+    bibliography = tmp_path / "pages/BIBLIOGRAPHY.md"
+    registry = tmp_path / "data/work-identifiers.json"
+    before = (bibliography.read_bytes(), registry.read_bytes())
+    with pytest.raises(WorkIdentifierError, match="unsafe citation key"):
+        sync_paired_publications.ensure_bibliography_row(pair, "2026_Example", [], tmp_path)
+    assert (bibliography.read_bytes(), registry.read_bytes()) == before
 
 
 def test_same_title_and_release_new_doi_updates_existing_folder(tmp_path: Path):

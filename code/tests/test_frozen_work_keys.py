@@ -1,21 +1,12 @@
 """Work-page URLs are a permanent public contract.
 
 `works/{citation_key}.html` is the canonical, indexed, externally-cited URL for each
-work (it is also the BibTeX key in bibliography.bib). The citation_key is derived from
-year + title-slug + num (export_bibliography.py), so an *edit to an existing work's title
-or year would silently change its filename* — breaking the live URL, every inbound link,
-the sitemap entry, and the JSON-LD @id, with no error on a static host that cannot 301.
+work (it is also the BibTeX key in bibliography.bib). Permanent production reservations
+live in data/work-identifiers.json, independently of editable titles and years.
 
-This test freezes the citation_key of every existing work, keyed by its immutable `num`.
-Adding a work (new num) or removing one (num disappears) is fine. But if a work that is
-still in the catalogue changes its citation_key, this fails — catching the churn before it
-ships. When you intentionally change an existing work's key, regenerate the fixture:
-
-    python3 -c "import json; d=json.load(open('data/works.json')); \
-        w=d.get('works') or d.get('items'); \
-        open('code/tests/fixtures/frozen-work-keys.json','w').write( \
-        json.dumps({str(x['num']): x['citation_key'] for x in w}, indent=2, \
-        ensure_ascii=False, sort_keys=True)+chr(10))"
+This historical fixture independently catches accidental rewriting of established keys.
+New works require an explicit registry allocation; removed works retain retired
+reservations. Do not regenerate this fixture to authorize metadata-induced URL churn.
 """
 
 import json
@@ -41,8 +32,7 @@ def test_existing_work_urls_are_stable():
         if num in current and current[num] != key
     }
     assert not drift, (
-        "Existing work URLs changed (retitle/year edit churns a live works/*.html URL). "
-        f"Regenerate the fixture only if this is intentional: {drift}"
+        f"Existing work URLs changed despite permanent identity reservations: {drift}"
     )
 
 

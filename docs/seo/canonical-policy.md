@@ -20,11 +20,16 @@ redirects, so a changed key = a 404 (or a forever-maintained meta-refresh stub).
 
 - **Never re-slug an existing work's key on a title/year edit.** The work's `num` is its
   immutable id; if you must fix a title, keep the URL stable.
-- Uniqueness is enforced at build time (`build_work_pages.py` raises on a duplicate
-  `citation_key`) and stability is guarded by `code/tests/test_frozen_work_keys.py`
-  (freezes every existing `num -> citation_key`; adds/removes are fine, churn fails).
-- New works get the next `num` (`max+1`, auto-assigned by `add_zenodo_only.py`); gaps from
-  removed works are retired, never renumbered (`sync_publications_html.validate_rows`).
+- The authoritative `data/work-identifiers.json` reserves each numeric ID and
+  permanent key independently of editable title/year fields. Ordinary export fails
+  on missing, retired, duplicate, or orphan identities. The frozen-key regression
+  independently checks the existing public contract; never rewrite its fixture to
+  authorize URL churn.
+- New works get a numeric ID above every active and retired reservation. The
+  authorized Zenodo and paired-publication intake tools reserve the key once. For
+  manual reviewed additions, run `uv run python3 code/orchestrators/export_bibliography.py
+  --register-new-identifiers` before ordinary regeneration. Retire a removed record
+  explicitly with a reason while keeping its ID and key reserved; never renumber.
 
 ## Known Entry Points
 

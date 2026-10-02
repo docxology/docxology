@@ -55,6 +55,7 @@ import docxology_tools  # noqa: E402,F401
 from docxology_tools.biblio_table import iter_bibliography_rows  # noqa: E402
 from docxology_tools.bibliography_links import canonical_link_url  # noqa: E402
 from export_bibliography import citation_key, doi_from_url  # noqa: E402
+from docxology_tools.work_identifiers import load_registry  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 WORKS = REPO_ROOT / "data" / "works.json"
@@ -402,7 +403,8 @@ def document_evidence_errors(payload: dict) -> list[str]:
     if not entries:
         return errors
     try:
-        by_key = {citation_key(row): row for row in iter_bibliography_rows(BIBLIOGRAPHY)}
+        registry = load_registry(REPO_ROOT / "data/work-identifiers.json", repo_root=REPO_ROOT)
+        by_key = {citation_key(row, registry=registry): row for row in iter_bibliography_rows(BIBLIOGRAPHY)}
     except (OSError, ValueError) as exc:
         return [f"document_verified validation needs a readable bibliography: {exc}"]
     root = REPO_ROOT.resolve()

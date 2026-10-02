@@ -48,6 +48,12 @@ def test_default_two_passes_refresh_an_early_consumer_after_a_late_producer(tmp_
     consumer = data / "consumer.json"
     source.write_text("new\n")
     projection.write_text("old\n")
+    for relative in (
+        "code/orchestrators/consumer.py", "code/orchestrators/producer.py", "code/src/site_nav.py",
+    ):
+        path = tmp_path / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("# fixture source\n")
     steps = (
         GenerationStep("consumer", "consumer.py", (), ("--check",), "early consumer",
                        ("data/projection.json",)),

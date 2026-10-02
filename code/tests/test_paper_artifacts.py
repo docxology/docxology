@@ -178,7 +178,7 @@ def test_companion_pdfs_do_not_claim_to_encode_the_primary_work(repo):
     assert bwp.source_repository_url(resources.docs_path, resources) == "https://github.com/docxology/example"
 
 
-def test_work_jsonld_preserves_title_and_abstract_without_script_termination(repo):
+def test_work_jsonld_normalizes_inert_abstract_without_mutating_source(repo):
     title = 'A </script><img src=x onerror=alert(1)> & "B"'
     abstract = "An abstract </script> with < and >"
     work = dict(citation_key="Example001", title=title, year=2026, type="Paper", domain_name="Art", doi="", url="", _resources=resolve(repo), enrichment={"abstract": abstract})
@@ -186,4 +186,5 @@ def test_work_jsonld_preserves_title_and_abstract_without_script_termination(rep
     assert "<" not in payload
     graph = json.loads(payload)
     assert graph["name"] == title
-    assert graph["abstract"] == abstract
+    assert graph["abstract"] == "An abstract with < and >"
+    assert work["enrichment"]["abstract"] == abstract

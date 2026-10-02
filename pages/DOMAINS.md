@@ -46,7 +46,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 **Selected repositories**
 
 - [MetaInformAnt](https://github.com/docxology/MetaInformAnt) — Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond
-- [ActiveInferAnts](https://github.com/ActiveInferenceInstitute/ActiveInferAnts) — Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
+- [ActiveInferAnts](https://github.com/ActiveInferenceInstitute/Active_InferAnts) — Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
 - [ActiveInferAnts](https://github.com/docxology/ActiveInferAnts) — Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy
 - [ant_stack](https://github.com/docxology/ant_stack) — The Ant Stack — layered computational model of collective ant-colony intelligence
 - [ant-pheromone](https://github.com/docxology/ant-pheromone) — Computational simulation of ant pheromone trail dynamics and stigmergic communication
@@ -58,7 +58,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 Free Energy Principle, generative models, belief sharing, formalization, and educational infrastructure.
 
 - Works: 46
-- Selected repositories: 11
+- Selected repositories: 10
 - Collaborator context: Karl Friston, Thomas Parr, Maxwell J. D. Ramstead, Conor Heins, Tim Verbelen
 
 **Learning path**
@@ -87,10 +87,10 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 - [active_torchference](https://github.com/docxology/active_torchference) — PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization
 - [goference](https://github.com/docxology/goference) — Active Goference — production-ready Go framework for Active Inference autonomous agents; genuine variational inference, free energy minimization, POMDP policy planning via gonum
 - [AgenticMesh](https://github.com/docxology/AgenticMesh) — Active Inference & Agentic Mesh — modular Python infrastructure for building agentic systems using free-energy-minimizing Active Inference principles
-- [ActiveInferAnts](https://github.com/ActiveInferenceInstitute/ActiveInferAnts) — Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
+- [ActiveInferAnts](https://github.com/ActiveInferenceInstitute/Active_InferAnts) — Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
 - [ActiveInferAnts](https://github.com/docxology/ActiveInferAnts) — Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy
-- [GeneralizedNotationNotation](https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation) — GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software
-- [fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) — Lean 4 / Mathlib4 formalization of FEP-related mathematics — 155-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI
+- [GeneralizedNotationNotation](https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation) — GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software
+- [CEREBRUM](https://github.com/ActiveInferenceInstitute/CEREBRUM) — Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo
 
 ## 🛡️ [Cognitive Security](../domain-cognitive-security.html)
 
@@ -239,7 +239,7 @@ Honey bee evolution, gene expression variation, nuclear structure, population ge
 Active Inference Institute programs, infrastructure, textbook cohorts, and organizational ecosystem work.
 
 - Works: 6
-- Selected repositories: 5
+- Selected repositories: 4
 - Collaborator context: Active Inference Institute educators and contributors, Institute program participants
 
 **Learning path**
@@ -263,7 +263,6 @@ Active Inference Institute programs, infrastructure, textbook cohorts, and organ
 **Selected repositories**
 
 - [active_inference](https://github.com/docxology/active_inference) — Active Inference for, with, and by Generative AI — Python implementations of free-energy-minimizing agents integrated with modern AI tooling
-- [fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) — Lean 4 / Mathlib4 formalization of FEP-related mathematics — 155-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI
 - [cognitive](https://github.com/ActiveInferenceInstitute/cognitive) — Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization
 - [cognitive](https://github.com/docxology/cognitive) — Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization
 - [AgenticMesh](https://github.com/docxology/AgenticMesh) — Active Inference & Agentic Mesh — modular Python infrastructure for building agentic systems using free-energy-minimizing Active Inference principles

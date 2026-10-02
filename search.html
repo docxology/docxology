@@ -15,7 +15,6 @@
     <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
     <link rel="alternate" type="application/json" href="/data/works.json" title="Works JSON">
     <!-- Resource hints -->
-    <link rel="prefetch" href="/search-index.json" as="fetch" crossorigin>
 
 <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
     <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
@@ -49,7 +48,7 @@
     <meta name="twitter:image:alt" content="Search — Daniel Ari Friedman">
 
 
-<link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
+<link rel="stylesheet" href="style.css?v=site-20261002">
     <meta name="theme-color" content="#0c0c0e">
     <script type="application/ld+json">
     {
@@ -71,9 +70,9 @@
         .search-controls{display:flex;gap:.5rem;flex-wrap:wrap}
         .search-controls button{border:1px solid var(--border);background:var(--bg-glass);color:var(--text-secondary);border-radius:6px;padding:.4rem .75rem;font:inherit;font-size:.8rem;cursor:pointer}
         .search-controls button.active{border-color:var(--gold);color:var(--gold)}
-        .result-list{display:grid;gap:.8rem;margin-top:1.5rem}
-        #result-status .result-count{font-size:.85rem;color:var(--text-secondary);margin:0}
-        #result-status .no-results{text-align:center;padding:3rem 1rem;color:var(--text-muted);font-size:.9rem}
+        .result-list{display:grid;align-content:start;gap:.8rem;margin-top:1.5rem;min-height:70vh;min-height:70svh}
+        #result-status .result-count{font-size:.85rem;color:var(--text-secondary);margin:0;white-space:normal;overflow-wrap:anywhere}
+        #result-status .no-results{overflow-wrap:anywhere;text-align:center;padding:3rem 1rem;color:var(--text-muted);font-size:.9rem}
         #result-status .no-results a{color:var(--gold,#d4a857)}
         .result-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}
         .result-card h2{font-size:1.02rem;line-height:1.4;margin-bottom:.35rem}
@@ -105,6 +104,7 @@
     ]
 }
     </script>
+    <script src="/js/nav-toggle.js?v=nav-20261002"></script>
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
@@ -152,21 +152,21 @@
             <input id="q" class="search-input" type="search" aria-label="Search publications and works" autocomplete="off" placeholder="Search Active Inference, ants, Curio Cards, CEREBRUM..." autofocus>
             <div id="filters" class="search-controls" role="group" aria-label="Result type filters"></div>
         </section>
-        <section id="result-status" aria-live="polite"></section>
-        <section class="result-list" id="results" aria-live="polite" aria-label="Search results"></section>
         <noscript>
             <p class="no-results">JavaScript is disabled. Use the <a href="data/catalog.json">data catalog</a>,
                 <a href="works/">canonical works</a>, or <a href="search-index.json">search index JSON</a>.</p>
         </noscript>
+        <section id="result-status" aria-live="polite"></section>
+        <section class="result-list" id="results" aria-live="polite" aria-label="Search results"></section>
     </main>
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="search-index.json">search-index.json</a> · <a href="opensearch.xml">OpenSearch</a></p>
     </footer>
-    <script src="/js/search-utils.js?v=20260813"></script>
-    <script src="/js/search-page.js?v=20260827a" defer></script>
+    <script src="/js/search-utils.js?v=site-20261002"></script>
+    <script src="/js/search-page.js?v=site-20261002" defer></script>
 <script src="/js/tts-controls.js?v=20260712" defer></script>
-<script src="/js/interactive.js?v=20260712" defer></script>
+<script src="/js/interactive.js?v=site-20261002" defer></script>
     <script src="/js/menu-esc.js?v=20260712" defer></script>
 </body>
 </html>

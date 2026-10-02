@@ -7,11 +7,15 @@ provenance and reproducibility.
 
 `.github/workflows/pages.yml` therefore assembles a bounded artifact with
 `code/orchestrators/build_pages_artifact.py` and deploys it with the official
-Pages artifact workflow. It retains the public HTML, data exports, generated
+Pages artifact workflow. Deployment waits for both repository validation and
+the reusable required browser acceptance job in
+`.github/workflows/browser-qa.yml`; a failure in either blocks publication.
+The validation workflow calls that same browser job. It retains the public HTML, data exports, generated
 work/paper pages, full-text files, CV outputs, PDFs, artwork assets, report
 manifests, and agent documentation. It omits duplicate binary files under
 `papers/**/images/`, dated visual-QA screenshot binaries under
-`reports/visual-qa/*/`, and superseded dated reports: a top-level
+`reports/visual-qa/*/` and the legacy `reports/YYYY-MM-DD/*` capture layout,
+and superseded dated reports: a top-level
 `reports/<family>_<YYYY-MM-DD>` receipt strictly older than the newest receipt
 of its family, and whole dated screenshot directories under
 `reports/visual-qa/`, `reports/browser-smoke/`, and `reports/browser-qa/`
@@ -25,7 +29,9 @@ only images actually hosted by the site (the artwork gallery and its supported
 remote image sources), so no published sitemap entry points at an omitted
 Pages asset.
 
-The artifact builder emits a documented review warning at 885 MiB, fails at the
+The artifact builder emits a review warning at 890 MiB; ordinary CI enforces
+that 890 MiB budget. The projection growth target is at most 850 MiB, preserving
+40 MiB of ordinary-CI headroom. The builder separately fails at the
 900 MiB release hard ceiling, and records GitHub's 1 GiB platform limit as a
 separate physical constraint. The current full server-rendered
 `publications.html` is allowed a 600 KB page-budget exception because it
@@ -67,3 +73,20 @@ projection for repository-relative `reports/` references and fails the build
 if any referenced repository path was not copied (GitHub raw/tree fallback
 URLs do not count as local references); this is an artifact-boundary decision,
 not deletion or report pruning.
+
+The legacy dated capture layout is matched only for real calendar dates and
+direct child image files; arbitrary report images and nested directories do
+not inherit the omission rule. All paper PDFs, full text, and the archival
+transcript DOCX remain hosted. No source evidence is deleted by this policy.
+
+After deployment, the Pages workflow runs `verify_deployed_artifact.py` and
+retains `deployment-acceptance-<full SHA>` as an Actions artifact for 90 days.
+It checks exact manifest and critical-asset/work-page hashes, all archived
+paper PDF HEAD contracts, and three deterministic PDF content hashes. Failed
+checks fail the workflow and retain diagnostics. This technical receipt is
+bounded to 12 minutes across requests and propagation retries, with a separate
+15-minute hosted step limit so an exhausted deadline can still retain its
+failure receipt. Queued checks after the deadline are explicitly unattempted.
+The receipt is
+separate from the human-reviewed full release attestation in
+[release-integrity.md](release-integrity.md).

@@ -1,5 +1,5 @@
 {
-  "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+  "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
   "domain": "Computational",
   "type": "Paper",
   "creators": [
@@ -25,15 +25,16 @@
       "name": "Benedikt Waldeck"
     }
   ],
-  "description": "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the scientific discovery process as an inference problem...",
-  "abstract": "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the scientific discovery process as an inference problem, where hypotheses are generated, tested, and refined through free energy minimization, enabling structured exploration of research questions.",
+  "description": "The paper proposes LLM-driven distillation of scientific publications into source-linked knowledge artifacts, encoding them in a Conceptual Tensor and exposing graph or semantic-space views for AI-assisted exploration, gap identification, and hypothesis/design generation.",
+  "abstract": "The prevailing model for disseminating scientific knowledge relies on individual publications dispersed across numerous journals and archives. This legacy system is ill suited to the recent exponential proliferation of publications, contributing to insurmountable information overload, issues surrounding reproducibility and retractions. We introduce the Discovery Engine, a framework to address these challenges by transforming an array of disconnected literature into a unified, computationally tractable representation of a scientific domain. Central to our approach is the LLM-driven distillation of publications into structured \"knowledge artifacts,\" instances of a universal conceptual schema, complete with verifiable links to source evidence. These artifacts are then encoded into a high-dimensional Conceptual Tensor. This tensor serves as the primary, compressed representation of the synthesized field, where its labeled modes index scientific components (concepts, methods, parameters, relations) and its entries quantify their interdependencies. The Discovery Engine allows dynamic \"unrolling\" of this tensor into human-interpretable views, such as explicit knowledge graphs (the CNM graph) or semantic vector spaces, for targeted exploration. Crucially, AI agents operate directly on the graph using abstract mathematical and learned operations to navigate the knowledge landscape, identify non-obvious connections, pinpoint gaps, and assist researchers in generating novel knowledge artifacts (hypotheses, designs). By converting literature into a structured tensor and enabling agent-based interaction with this compact representation, the Discovery Engine offers a new paradigm for AI-augmented scientific inquiry and accelerated discovery.",
   "keywords": [
     "Discovery Engine",
-    "automated discovery",
-    "Active Inference",
-    "scientific reasoning",
-    "hypothesis generation",
-    "computational science"
+    "scientific knowledge synthesis",
+    "LLM-driven distillation",
+    "knowledge artifacts",
+    "Conceptual Tensor",
+    "knowledge graphs",
+    "AI-assisted scientific inquiry"
   ],
   "methods": [
     {
@@ -91,5 +92,21 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Framework paper with two qualitative case studies; no quantitative evaluation. The paper states the current frontend demonstrates parsing, graph construction and visualization, while LLM extraction and algorithmic synthesis are conceptualized as backend processes.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "abstract_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-02",
+    "kind": "published manuscript abstract",
+    "source_path": "papers/2025_DiscoveryEngine/full_text.md",
+    "source_sha256": "e27aeb68840601ab01427832c6e00f1d7afac5f2386070bdb249f91d8fdc5413",
+    "source_pdf": "2025_DiscoveryEngine.pdf",
+    "source_pdf_sha256": "62efc6e0f910ec6d78b037157790c92afe11d7d5fa32e74e1098ef85621f0f74",
+    "page": 2,
+    "basis": "Verbatim arXiv v1 manuscript Abstract on page 2, with whitespace normalized and only line-wrap word hyphens removed. The description is a qualified summary, not a quotation."
+  },
+  "keywords_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-02",
+    "basis": "Terms selected from the archived page 2 Abstract; replaces hand-seeded keywords implying a primary Active Inference/free-energy mechanism."
   }
 }

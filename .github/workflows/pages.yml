@@ -25,6 +25,7 @@ jobs:
           # The validator derives sitemap dates from Git history and the
           # artifact manifest may need to walk past a control-only commit.
           fetch-depth: 0
+          ref: ${{ github.sha }}
 
       - name: Set up Python
         uses: actions/setup-python@v7
@@ -43,8 +44,15 @@ jobs:
       - name: Lint Python sources (ruff default rules + W605)
         run: uv run --group lint ruff check code
 
+      - name: Artifact budget gate (890 MiB)
+        run: uv run python3 code/src/artifact_budget.py
+
+  browser-tests:
+    if: github.ref == 'refs/heads/main'
+    uses: ./.github/workflows/browser-qa.yml
+
   deploy:
-    needs: validate
+    needs: [validate, browser-tests]
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     permissions:
@@ -61,6 +69,7 @@ jobs:
           # The artifact manifest binds to the latest payload commit, which
           # may precede a control-only commit in the first-parent history.
           fetch-depth: 0
+          ref: ${{ github.sha }}
 
       - name: Set up Python
         uses: actions/setup-python@v7
@@ -85,3 +94,18 @@ jobs:
       - name: Deploy Pages artifact
         id: deployment
         uses: actions/deploy-pages@v5
+
+      - name: Verify deployed artifact against candidate SHA
+        timeout-minutes: 15
+        env:
+          CANDIDATE_SHA: ${{ github.sha }}
+        run: uv run python3 code/orchestrators/verify_deployed_artifact.py --expected-commit "$CANDIDATE_SHA" --output /tmp/deployment-acceptance.json
+
+      - name: Retain deployment acceptance receipt
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: deployment-acceptance-${{ github.sha }}
+          path: /tmp/deployment-acceptance.json
+          if-no-files-found: error
+          retention-days: 90

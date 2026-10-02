@@ -45,6 +45,16 @@ def test_visual_qa_screenshot_exclusion_cannot_match_a_nested_untrusted_path():
     assert bpa.is_published_path(nested)
 
 
+def test_legacy_dated_visual_captures_share_archival_projection_policy():
+    assert not bpa.is_published_path(Path("reports/2026-09-16/updates-mobile.png"))
+    assert bpa.is_published_path(Path("reports/2026-09-16/manifest.json"))
+    assert bpa.is_published_path(Path("reports/2026-09-16/notes.md"))
+    assert bpa.is_published_path(Path("reports/2026-02-30/figure.png"))
+    assert bpa.is_published_path(Path("reports/topic/figure.png"))
+    assert bpa.is_published_path(Path("reports/2026-09-16/nested/figure.png"))
+    assert bpa.is_published_path(Path("untrusted/reports/2026-09-16/figure.png"))
+
+
 def test_artwork_and_public_site_images_are_retained():
     assert bpa.is_published_path(Path("art/42_drawing.jpg"))
     assert bpa.is_published_path(Path("og-image.jpg"))

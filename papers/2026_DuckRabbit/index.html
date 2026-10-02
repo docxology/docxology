@@ -11,7 +11,7 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
-    <link rel="stylesheet" href="../../style.css?v=work-access-20261001">
+    <link rel="stylesheet" href="../../style.css?v=site-20261002">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
@@ -23,6 +23,7 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <link rel="me" href="https://www.flickr.com/photos/daniel_friedman/" title="Flickr">
     <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
+    <script src="/js/nav-toggle.js?v=nav-20261002"></script>
     <meta property="og:type" content="article">
     <meta property="og:title" content="DuckRabbit: Typed Multimodal Illusion Generator Documentation">
     <meta property="og:description" content="DuckRabbit is typed, deterministic research software by Daniel Ari Friedman (Active Inference Institute) for constructing reproducible visual, auditory…">
@@ -91,55 +92,7 @@
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Overview</h2><p>Curated abstract when available.</p><div class="section-divider"></div></div>
-            <div class="overview-box"><p>DuckRabbit is typed, deterministic research software by Daniel Ari Friedman
-(Active Inference Institute) for constructing reproducible visual, auditory,
-temporal, and audiovisual stimulus families. The intended public release will
-be available at the following repository:
-
-https://github.com/docxology/DuckRabbit
-
-DuckRabbit is released under the MIT License.
-
-Its basic unit is an immutable request containing an illusion identifier,
-validated parameters, a seed, and an encoding specification. The request yields
-a canonical artifact, objective media measurements, and a versioned provenance
-manifest before any delivery codec is selected. This separation makes the
-stimulus a testable computational object while reserving claims about
-perception for controlled observer protocols.
-
-The release situates its engineering choices within a deliberately broad
-historical foundation spanning Greek, Arabic/Islamicate, Chinese, and
-early-modern work on optics, visual inference, and cross-sensory knowledge,
-alongside later psychophysics and illusion research. These traditions motivate
-questions about construction, observation, and evidence; they are contextual
-precedents, not evidence that a generated file reproduces an ancient,
-early-modern, or clinical observation.
-
-Version 0.5.0 contains 17 implemented
-generators and 18 catalog entries, supported by
-36 source records and 18 evidence records
-in a checked-in audit snapshot. The package generates
-15 publication figures and 10
-machine-derived tables from the live registry. It also provides a typed
-observer-study harness and a transparent synthetic diagnostic: a
-hand-specified feature observer with serialized weights, temperature, analytic
-calibration, and human_data=false. No participant data are bundled; synthetic model output is explicitly nonhuman.
-
-DuckRabbit verifies physical stimulus properties, media round trips, hashes,
-timing, and declared provenance. It does not infer a universal percept, effect
-size, or cross-device perceptual equivalence from a generated artifact. Its
-contribution is a reproducibility and epistemic boundary: source-backed family
-descriptions, deterministic media facts, and future observer hypotheses remain
-different typed records rather than being collapsed into one claim. DuckRabbit
-is software for reproducible stimulus construction and audit, not a claim that
-a generated file alone produces a universal perceptual effect.
-
----
-Associated artifacts
-GitHub release: v0.5.0 (https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0)
-DOI: https://doi.org/10.5281/zenodo.21419693
-Zenodo: https://zenodo.org/records/21419693
-PDF SHA-256: 3afefaeeccb5616448cc6da83b5807dd996ccc96bfff113d635b8da140baea06</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
+            <div class="overview-box"><p>DuckRabbit is typed, deterministic research software by Daniel Ari Friedman<br>(Active Inference Institute) for constructing reproducible visual, auditory,<br>temporal, and audiovisual stimulus families. The intended public release will<br>be available at the following repository:</p><p>https://github.com/docxology/DuckRabbit</p><p>DuckRabbit is released under the MIT License.</p><p>Its basic unit is an immutable request containing an illusion identifier,<br>validated parameters, a seed, and an encoding specification. The request yields<br>a canonical artifact, objective media measurements, and a versioned provenance<br>manifest before any delivery codec is selected. This separation makes the<br>stimulus a testable computational object while reserving claims about<br>perception for controlled observer protocols.</p><p>The release situates its engineering choices within a deliberately broad<br>historical foundation spanning Greek, Arabic/Islamicate, Chinese, and<br>early-modern work on optics, visual inference, and cross-sensory knowledge,<br>alongside later psychophysics and illusion research. These traditions motivate<br>questions about construction, observation, and evidence; they are contextual<br>precedents, not evidence that a generated file reproduces an ancient,<br>early-modern, or clinical observation.</p><p>Version 0.5.0 contains 17 implemented<br>generators and 18 catalog entries, supported by<br>36 source records and 18 evidence records<br>in a checked-in audit snapshot. The package generates<br>15 publication figures and 10<br>machine-derived tables from the live registry. It also provides a typed<br>observer-study harness and a transparent synthetic diagnostic: a<br>hand-specified feature observer with serialized weights, temperature, analytic<br>calibration, and human_data=false. No participant data are bundled; synthetic model output is explicitly nonhuman.</p><p>DuckRabbit verifies physical stimulus properties, media round trips, hashes,<br>timing, and declared provenance. It does not infer a universal percept, effect<br>size, or cross-device perceptual equivalence from a generated artifact. Its<br>contribution is a reproducibility and epistemic boundary: source-backed family<br>descriptions, deterministic media facts, and future observer hypotheses remain<br>different typed records rather than being collapsed into one claim. DuckRabbit<br>is software for reproducible stimulus construction and audit, not a claim that<br>a generated file alone produces a universal perceptual effect.</p><p>---<br>Associated artifacts<br>GitHub release: v0.5.0 (https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0)<br>DOI: https://doi.org/10.5281/zenodo.21419693<br>Zenodo: https://zenodo.org/records/21419693<br>PDF SHA-256: 3afefaeeccb5616448cc6da83b5807dd996ccc96bfff113d635b8da140baea06</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section">
             <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation and PDFs served directly from this folder.</p><div class="section-divider"></div></div>
@@ -158,10 +111,10 @@ PDF SHA-256: 3afefaeeccb5616448cc6da83b5807dd996ccc96bfff113d635b8da140baea06</p
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../../publications.html">Unified bibliography</a> · <a href="../../works/">Works index</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/c12a6458d">build c12a6458d 2026-10-01</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/e296b3ae8">build e296b3ae8 2026-10-02</a></p>
     </footer>
-<script src="/js/search-utils.js?v=20260813"></script>
+<script src="/js/search-utils.js?v=site-20261002"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
-<script src="/js/interactive.js?v=20260813" defer></script>
+<script src="/js/interactive.js?v=site-20261002" defer></script>
 <script src="/js/menu-esc.js?v=20260813" defer></script></body>
 </html>

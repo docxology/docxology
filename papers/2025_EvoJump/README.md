@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories
+# 🧠 EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories
 
 **Daniel Friedman** (2025) · *Zenodo*
 
@@ -44,7 +44,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Friedman (2025). *EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories*. Zenodo. DOI: 10.5281/zenodo.17229924. URL: https://doi.org/10.5281/zenodo.17229924.
+> Daniel Friedman (2025). *EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories*. Zenodo. DOI: 10.5281/zenodo.17229924. URL: https://doi.org/10.5281/zenodo.17229924.
 
 ## Related
 

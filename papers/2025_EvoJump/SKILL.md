@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories"
+name: "EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories"
 description: "Biological development unfolds as a stochastic process characterized by continuous variation and discrete transitions, yet traditional analytical methods fail to capture this complexity, and we present EvoJump, a unified computational framework that ..."
 tags: ["evojump", "stochastic-modeling", "ontogenetic-trajectories", "jump-diffusion", "fractional-brownian-motion"]
 domain: "Active Inference"
-citation: "Daniel Friedman (2025). *EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories*. Zenodo."
+citation: "Daniel Friedman (2025). *EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories*. Zenodo."
 doi: "10.5281/zenodo.17229924"
 ---
 
-# EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories
+# EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories
 
 **Daniel Friedman** (2025) · Active Inference
 

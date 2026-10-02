@@ -29,6 +29,7 @@ This repository is the public research, software, citation, evidence, and websit
 | --- | --- | --- |
 | Cite the repository | [`CITATION.cff`](CITATION.cff), [`cite-verify.html`](cite-verify.html) | [`bibliography.bib`](bibliography.bib), [`bibliography.csl.json`](bibliography.csl.json) |
 | Find a publication | [`search.html`](search.html), [`works/`](works/) | [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md), DOI links |
+| Allocate a new work identity | [`data/work-identifiers.json`](data/work-identifiers.json), [`docs/seo/canonical-policy.md`](docs/seo/canonical-policy.md) | Reviewed intake allocates once; manual rows require `uv run python3 code/orchestrators/export_bibliography.py --register-new-identifiers` |
 | Verify a public claim | [`evidence.html`](evidence.html), [`data/claims.json`](data/claims.json) | Primary URLs listed in the claim ledger |
 | Find software | [`software.html`](software.html), [`repositories.html`](repositories.html), [`data/software.json`](data/software.json), [`data/github-repositories.json`](data/github-repositories.json) | Curated and full GitHub repository inventories |
 | Generate resume/CV artifacts | [`resume/`](resume/), [`data/resume.json`](data/resume.json) | `uv run python3 code/orchestrators/build_resume.py --all`, then `--check` |
@@ -37,6 +38,7 @@ This repository is the public research, software, citation, evidence, and websit
 | Refresh generated files | [`GENERATED.md`](GENERATED.md) | `uv run python3 code/orchestrators/regenerate_all.py --validate`; rerun as a byte-stability assurance |
 | Google Search Console follow-up | [`docs/seo/gsc-followup.md`](docs/seo/gsc-followup.md), [`data/gsc-followup-checklist.json`](data/gsc-followup-checklist.json) | `uv run python3 code/orchestrators/gsc_followup_preflight.py` |
 | Check deployed site health | latest `reports/live_site_verification_*.json` | `uv run python3 code/orchestrators/verify_live_site.py` |
+| Verify a deployed candidate's bytes | [`docs/operations/github-pages-artifact.md`](docs/operations/github-pages-artifact.md) | `verify_deployed_artifact.py --expected-commit <full-HEAD-SHA> --output /tmp/deployment-acceptance.json`; receipt is technical acceptance, separate from full release attestation |
 | Classify repository inventory | [`docs/operations/repository-classification.md`](docs/operations/repository-classification.md) | `uv run python3 code/orchestrators/classify_repositories.py --check` |
 | Refresh evidence and coverage | [`docs/operations/evidence-refresh.md`](docs/operations/evidence-refresh.md) | latest `reports/public_source_*.json`, `reports/source_coverage_*.json` |
 | Run accessibility and visual QA | [`docs/operations/accessibility-qa.md`](docs/operations/accessibility-qa.md) | `uv run python3 code/orchestrators/accessibility_audit.py --check`; use the `browser-qa` extra for dynamic commands |
@@ -67,6 +69,7 @@ see the do-not-skip list in
 
 - Curated local counts intentionally differ from public index counts when public sources include forks, duplicates, software archives, preprints, or name variants.
 - Public APIs are freshness checks, not automatic replacements for curated bibliography and software rows.
+- Permanent citation keys and numeric reservations live in `data/work-identifiers.json`. Editing a title or year does not rename a published work URL; removing a row requires an explicit retired reservation with a reason.
 - Treat Wikidata as an entity anchor, not sole evidence for lightly referenced claims.
 - Google Scholar citation counts use [`data/scholar-snapshot.json`](data/scholar-snapshot.json) as the single source of truth; propagate with [`code/orchestrators/sync_scholar_metrics.py`](code/orchestrators/sync_scholar_metrics.py) (`--check` exits 1 on drift). Update only after a direct (non-cached) Scholar verify—anonymous or cached UI views can disagree with the snapshot. Every snapshot revision also needs a matching direct-authenticated [`data/scholar-verification-receipt.json`](data/scholar-verification-receipt.json), bound to the exact snapshot SHA-256.
 - Do not edit generated outputs directly unless the generator itself is also updated.

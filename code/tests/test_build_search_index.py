@@ -90,3 +90,32 @@ def test_unchanged_content_reuses_the_existing_timestamp(
 
     assert second == first
     assert len(set(first.values())) == 1
+
+
+def test_progressive_split_preserves_every_full_text_field(monkeypatch):
+    """Deferred work/video text and retained site text reconstruct the full index."""
+    source = {
+        "generated_at": "2026-10-02T00:00:00Z",
+        "source_files": [],
+        "count": 4,
+        "items": [
+            {"id": "work:1", "type": "work", "title": "Paper", "content": "work text"},
+            {"id": "video:1", "type": "video", "title": "Talk", "content": "transcript"},
+            {"id": "page:1", "type": "page", "title": "Page", "content": "body-only phrase"},
+            {"id": "software:1", "type": "software", "title": "Code", "content": "repository details"},
+        ],
+    }
+    monkeypatch.setattr(build_search_index, "render", lambda stamp=None: json.dumps(source))
+    outputs = build_search_index.render_split(source["generated_at"])
+    core = json.loads(outputs[build_search_index.CORE_OUT])["items"]
+    assert "content" not in core[0]
+    assert "content" not in core[1]
+    assert core[2]["content"] == "body-only phrase"
+    assert core[3]["content"] == "repository details"
+    content_by_id = {
+        item["id"]: item["content"]
+        for item_type in ("work", "video")
+        for item in json.loads(outputs[build_search_index.content_segment_path(item_type)])["items"]
+    }
+    restored = [dict(item, content=content_by_id[item["id"]]) if item["id"] in content_by_id else item for item in core]
+    assert restored == source["items"]

@@ -47,6 +47,11 @@ Hero artwork is tokenized as `--art-a` … `--art-e` (`assets/hero-art/*.webp`).
 - Table captions and `aria-live` on filter result counts (publications, search)
 - Mobile menu button carries `aria-expanded` (toggled on open/close), a ≥44px touch
   target, and an Esc-to-close handler (`site_nav.MENU_ESC_SCRIPT`)
+- At mobile widths, navigation remains in normal flow without JavaScript.
+  Collapsing it is enabled only after the menu handler is successfully wired.
+- Keyboard-shortcut dialogs contain Tab/Shift-Tab focus and return focus to
+  the invoking control on Escape/close. Section-copy controls show success
+  only after the clipboard write resolves; failures retain real anchor navigation.
 - Heading hierarchy: one `<h1>` per page, no skipped levels; all form controls labelled
 - Enforced by [`code/orchestrators/accessibility_audit.py`](../../code/orchestrators/accessibility_audit.py)
   (`single_h1`, `no_heading_skips`, `form_controls_labelled`, skip-link, focus-visible,
@@ -67,6 +72,10 @@ Hero artwork is tokenized as `--art-a` … `--art-e` (`assets/hero-art/*.webp`).
 - Publications: `.pub-table`, `.filter-row`, `.domain-pill`
 - **TTS controls** (added 2026-07-05): floating toggle + panel; [`design/components/tts.md`](components/tts.md)
 - **Interactive:** reading progress bar, scroll-to-top, keyboard shortcuts overlay, search autocomplete, section anchor links ([`design/animations.md`](animations.md))
+- Search autocomplete shares the compact core request. The dedicated search
+  page loads work/video text segments only when the query needs them, preserves
+  other entry text in the core, and reports partial-search failures with retry.
+  It does not overlay autocomplete on its own full result controls.
 
 ## Stylesheet structure
 

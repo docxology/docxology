@@ -51,15 +51,21 @@ REL_ME_LINKS = (
     '    <link rel="me" href="https://www.flickr.com/photos/daniel_friedman/" title="Flickr">'
 )
 
+# The complete mobile-navigation initializer blocks parsing in the head. It
+# attaches the real control as markup arrives, before first paint; never defer
+# this tag or replace it with a marker depending on a later script.
+NAV_TOGGLE_SCRIPT_TAG = '<script src="/js/nav-toggle.js?v=nav-20261002"></script>'
+
 # Combined head extras block — CSP + rel-me + resource hints.
 # Inject this before the closing </head> or before the first <meta property="og:">
 # in generated HTML templates.
-HEAD_EXTRAS = (
+HEAD_EXTRAS_WITHOUT_NAV = (
     f"    {CSP_META_TAG}\n"
     f"    {REFERRER_POLICY_META}\n"
     f"{REL_ME_LINKS}\n"
     '    <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">'
 )
+HEAD_EXTRAS = f"{HEAD_EXTRAS_WITHOUT_NAV}\n    {NAV_TOGGLE_SCRIPT_TAG}"
 
 # Shared mobile-menu Escape-to-close handler — moved to external JS file
 # (js/menu-esc.js) so it complies with the CSP (script-src 'self').
@@ -68,9 +74,9 @@ MENU_ESC_SCRIPT = '<script src="/js/menu-esc.js?v=20260813" defer></script>'
 
 # search-utils.js defines global esc() and must load before interactive.js.
 INTERACTIVE_SCRIPTS = (
-    '<script src="/js/search-utils.js?v=20260813"></script>\n'
+    '<script src="/js/search-utils.js?v=site-20261002"></script>\n'
     '<script src="/js/tts-controls.js?v=20260813" defer></script>\n'
-    '<script src="/js/interactive.js?v=20260813" defer></script>'
+    '<script src="/js/interactive.js?v=site-20261002" defer></script>'
 )
 
 # Copy-BibTeX wiring (js/cite-export.js). Loaded only on generated work pages
@@ -219,7 +225,7 @@ def render_pillar_head(
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 {social_meta_tags(title, description, image_url, image_alt=title)}
-    <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
+    <link rel="stylesheet" href="style.css?v=site-20261002">
     <meta name="theme-color" content="#0c0c0e">
     <style>
 {BREADCRUMB_CSS}

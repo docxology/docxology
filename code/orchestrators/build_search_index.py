@@ -360,7 +360,14 @@ def render_split(generated_at: str | None = None) -> dict[Path, str]:
     for item in content["items"]:
         if item["type"] in segments:
             segments[item["type"]].append(item)
-        core_items.append({key: value for key, value in item.items() if key != "content"})
+        # Only work/video content has a deferred companion. Dropping content
+        # from other types would make page, software, claim, and CV text
+        # unsearchable for clients using the progressive index.
+        core_items.append(
+            {key: value for key, value in item.items() if key != "content"}
+            if item["type"] in segments
+            else item
+        )
     outputs = {
         CORE_OUT: _compact(
             {
@@ -368,8 +375,9 @@ def render_split(generated_at: str | None = None) -> dict[Path, str]:
                 "source_files": content["source_files"],
                 "count": content["count"],
                 "note": (
-                    "Companion of search-index.json without item content; "
-                    "fetch search-index-content-<type>.json segments for full-text fields."
+                    "Companion of search-index.json with work/video content deferred; "
+                    "other item content remains in core. Fetch search-index-content-<type>.json "
+                    "segments for the deferred full-text fields."
                 ),
                 "content_segments": list(CONTENT_SEGMENT_TYPES),
                 "items": core_items,

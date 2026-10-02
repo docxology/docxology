@@ -170,7 +170,7 @@ ER  -
 TY  - JOUR
 AU  - Friedman, Daniel
 PY  - 2025
-TI  - EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories
+TI  - EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories
 T2  - Zenodo
 DO  - 10.5281/zenodo.17229924
 UR  - https://doi.org/10.5281/zenodo.17229924
@@ -385,7 +385,7 @@ AU  - Pashea, Andrew
 AU  - Rahman, Shagor
 AU  - Waldeck, Benedikt
 PY  - 2025
-TI  - The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes
+TI  - The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes
 T2  - ArXiv
 DO  - 10.48550/arXiv.2505.17500
 UR  - https://doi.org/10.48550/arXiv.2505.17500
@@ -1107,7 +1107,7 @@ AU  - Cordes, R.J.
 AU  - David, Scott
 AU  - Friedman, Daniel
 PY  - 2022
-TI  - TrustFinder: Recommendations for Community-Based Trust Systems
+TI  - TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims
 T2  - Zenodo
 DO  - 10.5281/zenodo.7093836
 UR  - https://doi.org/10.5281/zenodo.7093836
@@ -2280,7 +2280,7 @@ AU  - Choudhury, Arhan
 AU  - Singh, Amit Kumar
 AU  - Damaty, Shady El
 AU  - Friedman, Daniel Ari
-PY  - 2022
+PY  - 2023
 TI  - Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling
 T2  - International Workshop on Active Inference
 DO  - 10.1007/978-3-031-28719-0_10

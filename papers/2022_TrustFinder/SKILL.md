@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "TrustFinder: Recommendations for Community-Based Trust Systems"
+name: "TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims"
 description: "There is a broadly recognized need for better situational awareness within the information environment. Each year, millions of articles, books, documents, and datasets are published. Amidst this flood of information, even those with significant exper..."
 tags: ["trustfinder", "trust-systems", "information-evaluation", "cognitive-security", "verified-information", "collaborative-assessment", "sociotechnical-systems"]
 domain: "Cognitive Security"
-citation: "R.J. Cordes, Scott David, Daniel Friedman (2022). *TrustFinder: Recommendations for Community-Based Trust Systems*. Zenodo."
+citation: "R.J. Cordes, Scott David, Daniel Friedman (2022). *TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims*. Zenodo."
 doi: "10.5281/zenodo.7093836"
 ---
 
-# TrustFinder: Recommendations for Community-Based Trust Systems
+# TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims
 
 **R.J. Cordes, Scott David, Daniel Friedman** (2022) · Cognitive Security
 

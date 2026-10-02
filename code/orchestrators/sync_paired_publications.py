@@ -54,6 +54,10 @@ from docxology_tools.publication_pairing import (  # noqa: E402
     slug_topic,
 )
 
+from docxology_tools.biblio_table import bibliography_rows_from_lines  # noqa: E402
+from docxology_tools.generated_outputs import read_generated_output_text  # noqa: E402
+from docxology_tools.work_identifiers import next_catalog_num, write_catalog_with_identifiers  # noqa: E402
+
 ORCID = "0000-0001-6232-9096"
 DEFAULT_OWNERS = ("docxology",)
 AII_OWNER = "ActiveInferenceInstitute"
@@ -846,7 +850,7 @@ def download_zenodo_pdf(pair: PublicationPair, folder_path: Path, updated: list[
 
 def ensure_bibliography_row(pair: PublicationPair, folder: str, updated: list[str], repo_root: Path) -> None:
     path = repo_root / BIBLIOGRAPHY
-    text = _safe_read(path)
+    text = read_generated_output_text(repo_root, path) or ""
     if pair.doi in text:
         return
     folder_link = f"../papers/{folder}/"
@@ -866,10 +870,12 @@ def ensure_bibliography_row(pair: PublicationPair, folder: str, updated: list[st
     if replaced:
         out = "\n".join(out_lines).rstrip() + "\n"
         out = refresh_bibliography_counts(out)
-        _write_if_changed(path, out, updated, repo_root)
+        write_catalog_with_identifiers(path, out, repo_root=repo_root, expected_previous=text)
+        if out != text:
+            updated.append(BIBLIOGRAPHY)
         return
-    rows = parse_bibliography_rows(repo_root)
-    next_num = max([int(row["num"]) for row in rows], default=0) + 1
+    registry_path = repo_root / "data/work-identifiers.json"
+    next_num = next_catalog_num(bibliography_rows_from_lines(text.splitlines()), registry_path, repo_root=repo_root)
     year = (pair.record.publication_date or "")[:4] or (pair.release.published_at or "")[:4] or "n.d."
     typ = infer_type(pair.record) or "Paper"
     domain = infer_domain(pair) or "💻"
@@ -892,7 +898,10 @@ def ensure_bibliography_row(pair: PublicationPair, folder: str, updated: list[st
     lines.insert(insert_at, row)
     out = "\n".join(lines).rstrip() + "\n"
     out = refresh_bibliography_counts(out)
-    _write_if_changed(path, out, updated, repo_root)
+    added = write_catalog_with_identifiers(path, out, repo_root=repo_root, expected_previous=text)
+    updated.append(BIBLIOGRAPHY)
+    if added:
+        updated.append("data/work-identifiers.json")
 
 
 def refresh_bibliography_counts(text: str) -> str:
