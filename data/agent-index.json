@@ -419,14 +419,14 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-10-01.json",
+      "path": "/reports/accessibility_static_2026-10-02.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-10-01.json",
+      "path": "/reports/asset_size_2026-10-02.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1031,7 +1031,7 @@
     ],
     "VideoIndex": {
       "schema_version": "VideoIndex.v1",
-      "generated_at": "2026-10-01T21:36:53Z",
+      "generated_at": "2026-10-01T23:33:56Z",
       "source": "data/videos.json",
       "count": 1127,
       "counts": {
@@ -1326,11 +1326,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 928329239,
+        "source_bytes": 929953473,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5890,
-        "artifact_bytes": 929370181
+        "artifact_file_count": 5899,
+        "artifact_bytes": 930995956
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5746,9 +5746,9 @@
     "repositories": "7921e3722f3ec20c8d8a8fc5090396d3b66e4d557e732a6d1055a5d9d25cb772",
     "artworks_index": "053e66edbd2257c157f9baeb45d7ee6cf04395a59d7253ff31bd55b9d904a0d5",
     "artworks": "32bd21124bd391638295aac6bad7a0621746c296695e10b0586351ca4069f6c3",
-    "videos": "156e30236dca0a02424f24da850262b045a783fe9518fea949fc635a29a77804",
-    "videos_index": "a06980704fbd35fb6c47654879b77e2a58006bc7e2dd99eb0c56a703e02d42b5",
-    "search": "ab4e5520b0a2c6f0b154e072baaa43c82ee9114587fba76da4c14b8f6f434d00",
+    "videos": "4fd95a5516e3fd5776ca570d7adcdfc37e8a4aaec16bf00cd84e4b598f631206",
+    "videos_index": "99f52b864988495713fe921acfb8a579f1705687c6550572de6b21281d6c192a",
+    "search": "f5bcb0aa7aad7ef0d2ff5090ac24d2d788d9fa2c67cc42d3cdf57af7ae14b62e",
     "claims": "63e252827b301a561f230a4f3ad649f05db89b361a1435ffbd32e64decb5f3a1",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "f308718a5931e16a030ae98631988795d4c782fc8b957252f8d373050287a731",
@@ -5756,11 +5756,11 @@
     "people": "77c0808385642f2caf59d73b344593b687d919724309ca82980119c50a18335c",
     "organizations": "4ac184ff2d82b286fce5105b1944f8410b44b7119755e09dba8db7667ebe0f55",
     "resume": "c62ef00dc44bd5cb82a239ffb71213824c79c27d0d2b2fda61130c6c2dbbd6c3",
-    "work_enrichment": "64b9e56464d40410c6ee86e907af9f92b7ae392e54708fbcded3690d1a7edc00",
-    "catalog": "099fb727900f2439f5bd93983b990592b63753d97a8296e0d1ed9e7e36a79cc4",
+    "work_enrichment": "047f297cac793b86ae3a610a12bb5d3a66cef52748b0a5e896a4ba6664b03022",
+    "catalog": "3b56376c3c32cd20c49e88e606281f904482ae8d9454083126f1d02c69262798",
     "reconciliation": "a6a852bd1784c0f12d050c74b1363ebb60001b14409497505a8504a35df0d164",
     "reproducibility": "bb1ca409df8d3593db78ae4fdb87685aa33dd37b5063a2d204abb5f5fe0f4f5e",
-    "generated_manifest": "7c64d45ff02d4c2afc9166bdf9f4f88a04775b968477a7a2f131d1cf18b5f3ef",
+    "generated_manifest": "b780055043f56c95a0173bf4afa5603fbc0c06c418b8e8f9f91ee0e9155ca43b",
     "current_counts": "5be9ec0e0dbb6ff806585f6e5f0e342d24499eb3031fd725ca5bc547d5ee954f"
   },
   "source_provenance": {

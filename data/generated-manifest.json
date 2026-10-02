@@ -267,7 +267,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-10-01.json"
+        "reports/pages_artifact_growth_2026-10-02.json"
       ],
       "sources": [
         "tracked repository files",
@@ -446,9 +446,22 @@
       ],
       "sources": [
         "data/works.json",
-        "data/work-enrichment.json",
+        "data/publishing-status.json",
+        "bibliography.bib",
+        "papers/paper_metadata.json",
+        "papers/*/metadata.json",
         "papers/*/README.md",
-        "papers/*/SKILL.md"
+        "papers/*/AGENTS.md",
+        "papers/*/SKILL.md",
+        "papers/*/CITATION.cff",
+        "papers/*/full_text.md",
+        "papers/*/*.[pP][dD][fF]",
+        "papers/*/images/*",
+        ".gitignore",
+        "code/orchestrators/build_work_pages.py",
+        "code/src/paper_artifacts.py",
+        "code/src/metadata_templates.py",
+        "code/src/site_nav.py"
       ],
       "command": "python3 code/orchestrators/build_work_pages.py"
     },
@@ -499,9 +512,21 @@
       ],
       "sources": [
         "data/works.json",
+        "papers/paper_metadata.json",
+        "papers/*/metadata.json",
         "papers/*/README.md",
         "papers/*/AGENTS.md",
-        "papers/*/*.pdf"
+        "papers/*/SKILL.md",
+        "papers/*/CITATION.cff",
+        "papers/*/full_text.md",
+        "papers/*/*.[pP][dD][fF]",
+        "papers/*/images/*",
+        ".gitignore",
+        "code/orchestrators/build_paper_pages.py",
+        "code/src/paper_artifacts.py",
+        "code/orchestrators/build_work_pages.py",
+        "code/src/metadata_templates.py",
+        "code/src/site_nav.py"
       ],
       "command": "python3 code/orchestrators/build_paper_pages.py"
     },
@@ -640,7 +665,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-10-01.json"
+        "reports/asset_size_2026-10-02.json"
       ],
       "sources": [
         "root HTML pages",
@@ -654,7 +679,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-10-01.json"
+        "reports/accessibility_static_2026-10-02.json"
       ],
       "sources": [
         "root HTML pages",

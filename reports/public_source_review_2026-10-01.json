@@ -3870,8 +3870,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "c12a6458d870fa5ae0ed6e8f2b2354bae8557ffe",
-  "source_tree_sha": "4e7b7e9a6417630d6a70513bed33cb546b0ee968",
+  "source_commit": "629215c75a1439a8f684b64a6410123d96fd5a35",
+  "source_tree_sha": "e4642725cbda5a9766e62b8a637abf1fb2089957",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
