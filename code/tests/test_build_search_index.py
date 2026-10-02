@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import copy
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -16,6 +18,57 @@ import docxology_tools  # noqa: E402, F401  (canonical bootstrap: code/src + cod
 
 
 import build_search_index  # noqa: E402
+from docxology_tools.abstract_text import abstract_display_text  # noqa: E402
+
+
+def test_real_work_abstract_is_readable_search_prose_without_mutating_source():
+    root = Path(__file__).resolve().parents[2]
+    source_paths = [root / "data/works.json", root / "data/work-enrichment.json"]
+    source_bytes = {path: path.read_bytes() for path in source_paths}
+    works = json.loads(source_bytes[source_paths[0]])["works"]
+    enrichments = json.loads(source_bytes[source_paths[1]])["works"]
+    key = "Friedman2026TowardsLean4Formalization113"
+    work = next(item for item in works if item["citation_key"] == key)
+    original_work, original_enrichment = copy.deepcopy(work), copy.deepcopy(enrichments[key])
+    raw = enrichments[key]["abstract"]
+    assert raw.startswith("<p><strong>FEP_Lean")
+
+    item = build_search_index.work_item(work, enrichments)
+
+    assert item["summary"].startswith("FEP_Lean v1.1.0 is a source-bound, machine-checked catalogue")
+    assert "155 topics" in item["summary"]
+    assert item["summary"] == abstract_display_text(raw)[:220]
+    assert abstract_display_text(raw) in item["content"]
+    for field in ("summary", "content"):
+        assert not re.search(r"</?(?:p|strong|code|em|ul|li|br)\b", item[field], re.I)
+    assert work == original_work
+    assert enrichments[key] == original_enrichment
+    assert all(path.read_bytes() == before for path, before in source_bytes.items())
+
+
+@pytest.mark.parametrize("raw,expected", [
+    (
+        "A < B and C > D. Use type <T> &amp; literal &lt;code&gt; notation.",
+        "A < B and C > D. Use type <T> & literal <code> notation.",
+    ),
+    (
+        "<p><strong>Comparison</strong>: A &lt; B and type <T>.</p><p>Final qualification.</p>",
+        "Comparison: A < B and type <T>.\n\nFinal qualification.",
+    ),
+])
+def test_work_search_prose_preserves_literal_math_and_source(raw, expected):
+    work = {
+        "citation_key": "Example2026", "title": "Public math fixture", "type": "Paper",
+        "venue": "Fixture", "domain_name": "Mathematics", "year": 2026,
+    }
+    enrichments = {work["citation_key"]: {"abstract": raw}}
+    original = copy.deepcopy(enrichments)
+
+    item = build_search_index.work_item(work, enrichments)
+
+    assert item["summary"] == expected
+    assert expected in item["content"]
+    assert enrichments == original
 
 
 @pytest.fixture

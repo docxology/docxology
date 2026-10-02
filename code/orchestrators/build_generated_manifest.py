@@ -480,7 +480,7 @@ ARTIFACTS = [
     {
         "name": "Search index",
         "outputs": ["search-index.json"],
-        "sources": ["data/*.json", "data/work-enrichment.json"],
+        "sources": ["data/*.json", "data/work-enrichment.json", "code/src/abstract_text.py"],
         "command": "python3 code/orchestrators/build_search_index.py",
     },
     {

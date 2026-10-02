@@ -29,6 +29,7 @@ def content_segment_path(item_type: str) -> Path:
 
 from docxology_tools.report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel, stable_generated_at  # noqa: E402
 from docxology_tools.artwork_pages import created_date, is_thin, meta_description, page_rel_path, plain_text  # noqa: E402
+from docxology_tools.abstract_text import abstract_display_text  # noqa: E402
 
 
 def _latest_url(pattern: str, _fallback: str) -> str:
@@ -128,7 +129,7 @@ def load_json(rel: str) -> dict:
 def work_item(work: dict, enrichments: dict[str, dict]) -> dict:
     enrich = enrichments.get(work["citation_key"], {})
     keywords = enrich.get("keywords", [])
-    abstract = enrich.get("abstract", "")
+    abstract = abstract_display_text(enrich.get("abstract", ""))
     docs_path = str(work.get("docs_path") or "").rstrip("/")
     full_text_path = REPO_ROOT / docs_path / "full_text.md" if docs_path else None
     full_text_url = f"/{docs_path}/full_text.md" if full_text_path and full_text_path.exists() else ""

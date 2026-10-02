@@ -584,6 +584,10 @@ def stale_output_paths(
     stale - the on-disk stamp is authoritative for non-rendering commits, so a
     commit that touches no page content does not churn every footer.
     """
+    # Stamp reuse reads existing outputs, so validate the complete mapping
+    # before even the first reuse read, just as the writer does below.
+    for path in expected:
+        safe_generated_output_path(repo_root, path)
     drift = output_drift(
         {path: _with_reused_stamp(path, content, repo_root) for path, content in expected.items()},
         read_output_texts(expected, repo_root=repo_root),
@@ -593,20 +597,23 @@ def stale_output_paths(
 
 def _with_reused_stamp(path: Path, content: str, repo_root: Path) -> str:
     """Return content with the on-disk stamp substituted when content matches modulo stamp."""
-    from build_stamp import reuse_on_disk_stamp  # local: avoid import cycle
-    try:
-        disk = (repo_root / path if not path.is_absolute() else path).read_text(encoding="utf-8")
-    except OSError:
-        return content
+    from docxology_tools.build_stamp import reuse_on_disk_stamp  # local: avoid import cycle
+    disk = read_generated_output_text(repo_root, path)
     return reuse_on_disk_stamp(content, disk)
 
 
 def write_output_texts(outputs: Mapping[Path, str], *, repo_root: Path) -> None:
-    """Write a complete rendered-output mapping using UTF-8 text files."""
+    """Write the same stamp-aware rendered mapping used by the drift check."""
     # Validate every output first so a bad later target cannot leave an
     # earlier generated file partially refreshed.  Individual writes repeat
     # descriptor-relative validation to protect against a path-swap race.
     for path in outputs:
         safe_generated_output_path(repo_root, path)
-    for path, content in outputs.items():
+    # Finish every safe reuse read before writing any target. A later read
+    # failure must not leave the earlier outputs partially refreshed.
+    reused = {
+        path: _with_reused_stamp(path, content, repo_root)
+        for path, content in outputs.items()
+    }
+    for path, content in reused.items():
         write_generated_output_text(repo_root, path, content)

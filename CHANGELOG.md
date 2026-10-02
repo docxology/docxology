@@ -11,7 +11,9 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   retired-ID reuse, and unsupported partial updates fail closed.
 - **Search and navigation:** autocomplete and the search page share a compact
   core and load work/video text when needed. Revision mismatches recover through
-  a bounded core refresh. Mobile navigation works without JavaScript; keyboard
+  a bounded core refresh. Search summaries show normalized abstract prose while
+  retaining literal mathematical notation and the original source metadata.
+  Mobile navigation works without JavaScript; keyboard
   shortcuts contain and restore focus; clipboard failures offer an ordinary
   link with a truthful status message.
 - **Offline and browser reliability:** a small service-worker shell and bounded

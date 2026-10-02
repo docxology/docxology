@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import os
 import sys
+from contextlib import contextmanager
 from pathlib import Path
 
 import pytest
@@ -14,6 +15,7 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 
 
+from docxology_tools import generated_outputs  # noqa: E402
 from docxology_tools.generated_outputs import (  # noqa: E402
     UnsafeGeneratedOutputPathError,
     read_generated_output_text,
@@ -171,3 +173,98 @@ def test_mapping_write_preflights_every_target_before_changing_any_file(tmp_path
 
     assert not safe_target.exists()
     assert outside.read_text(encoding="utf-8") == "outside must survive\n"
+
+
+@pytest.mark.parametrize("operation", [stale_output_paths, write_output_texts])
+@pytest.mark.parametrize("alias", ["symlink", "hardlink", "ancestor", "outside"])
+def test_mapping_preflights_every_target_before_any_stamp_read(tmp_path, monkeypatch, operation, alias):
+    root = tmp_path / "repo"
+    root.mkdir()
+    safe_target = root / "safe.html"
+    safe_target.write_text("unchanged safe bytes\n", encoding="utf-8")
+    outside = tmp_path / "private" / "private.html"
+    outside.parent.mkdir()
+    outside.write_text("private bytes must not be read\n", encoding="utf-8")
+    unsafe_target = root / "unsafe.html"
+    if alias == "symlink":
+        unsafe_target.symlink_to(outside)
+    elif alias == "hardlink":
+        os.link(outside, unsafe_target)
+    elif alias == "ancestor":
+        (root / "unsafe").symlink_to(outside.parent, target_is_directory=True)
+        unsafe_target = root / "unsafe" / outside.name
+    else:
+        unsafe_target = outside
+    reads = []
+
+    def unexpected_read(*args, **kwargs):
+        reads.append(args)
+        pytest.fail("no stamp or observation read may precede complete-map validation")
+
+    monkeypatch.setattr(generated_outputs, "read_generated_output_text", unexpected_read)
+
+    with pytest.raises(UnsafeGeneratedOutputPathError):
+        operation({safe_target: "new safe bytes\n", unsafe_target: "unsafe\n"}, repo_root=root)
+
+    assert reads == []
+    assert safe_target.read_text(encoding="utf-8") == "unchanged safe bytes\n"
+    assert outside.read_text(encoding="utf-8") == "private bytes must not be read\n"
+
+
+@pytest.mark.parametrize("operation", [stale_output_paths, write_output_texts])
+def test_late_unsafe_stamp_read_fails_before_any_mapping_write(tmp_path, monkeypatch, operation):
+    root = tmp_path / "repo"
+    root.mkdir()
+    first, later = root / "first.html", root / "later.html"
+    first.write_text("original first bytes\n", encoding="utf-8")
+    later.write_text("original later bytes\n", encoding="utf-8")
+    outside = tmp_path / "private.html"
+    outside.write_text("private bytes must not be read\n", encoding="utf-8")
+    original_read = generated_outputs.read_generated_output_text
+
+    def swap_later_target_before_reuse(repo_root, target, **kwargs):
+        if target == first:
+            later.unlink()
+            later.symlink_to(outside)
+        return original_read(repo_root, target, **kwargs)
+
+    monkeypatch.setattr(generated_outputs, "read_generated_output_text", swap_later_target_before_reuse)
+
+    with pytest.raises(UnsafeGeneratedOutputPathError, match="symlinked"):
+        operation({first: "new first bytes\n", later: "new later bytes\n"}, repo_root=root)
+
+    assert first.read_text(encoding="utf-8") == "original first bytes\n"
+    assert outside.read_text(encoding="utf-8") == "private bytes must not be read\n"
+
+
+@pytest.mark.parametrize("operation", [stale_output_paths, write_output_texts])
+@pytest.mark.parametrize("alias", ["symlink", "hardlink"])
+def test_stamp_reuse_rejects_final_alias_race_before_reading_content(tmp_path, monkeypatch, operation, alias):
+    root = tmp_path / "repo"
+    root.mkdir()
+    target = root / "output.html"
+    target.write_text("original output\n", encoding="utf-8")
+    outside = tmp_path / "private.html"
+    outside.write_text("private bytes must not be read\n", encoding="utf-8")
+    original_parent = generated_outputs._parent_directory_fd
+
+    @contextmanager
+    def swap_before_final_open(repo_root, output, *, create):
+        with original_parent(repo_root, output, create=create) as pair:
+            target.unlink()
+            if alias == "symlink":
+                target.symlink_to(outside)
+            else:
+                os.link(outside, target)
+            yield pair
+
+    def unexpected_content_open(*args, **kwargs):
+        pytest.fail("unsafe alias must be rejected before opening a text reader")
+
+    monkeypatch.setattr(generated_outputs, "_parent_directory_fd", swap_before_final_open)
+    monkeypatch.setattr(generated_outputs.os, "fdopen", unexpected_content_open)
+
+    with pytest.raises(UnsafeGeneratedOutputPathError):
+        operation({target: "would be generated\n"}, repo_root=root)
+
+    assert outside.read_text(encoding="utf-8") == "private bytes must not be read\n"

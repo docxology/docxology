@@ -44,7 +44,9 @@ bind three full titles to archived title pages and the Active Blockference
 publication year to Crossref. Existing citation keys remain unchanged, including
 the historically named 2022 key for the chapter published in 2023. The Discovery
 Engine abstract is corrected against its archived source instead of perpetuating
-an unsupported free-energy synopsis.
+an unsupported free-energy synopsis. Human-facing search summaries and abstract
+search text also use the reviewed inert-prose normalization; raw enrichment and
+archived source bytes remain intact, including literal mathematical notation.
 
 [Repository catalog decisions](repository_catalog_review_2026-10-02.json) record
 five canonical URL migrations with matching immutable GitHub repository IDs and
@@ -65,30 +67,35 @@ Local acceptance on 2026-10-02:
 
 | Check | Observed result |
 | --- | --- |
-| Forced ordered regeneration | Two passes; 100 local surfaces run, none skipped |
-| `DOCXOLOGY_REQUIRE_BROWSER_QA=1 uv run python3 -m pytest code/tests -q` | 1,181 passed; zero failures, errors, or skips; 330.789 seconds |
+| Initial forced ordered regeneration | Two passes; 100 local surfaces run, none skipped |
+| Final source follow-up regeneration | Two ordered passes; 69 surfaces run, 31 skipped with unchanged complete inputs |
+| `DOCXOLOGY_REQUIRE_BROWSER_QA=1 uv run python3 -m pytest code/tests -q` | 1,204 passed; zero failures, errors, or skips; 346.471 seconds |
 | `uv run python3 code/orchestrators/validate_repo.py` | Repository validation completed |
 | `uv run --group lint ruff check code` | Passed |
 | Workflow lint and `git diff --check` | Passed |
 | Static accessibility | 2,535 of 2,535 checked pages passed |
-| Artifact budget | 834.34 MiB against the 890 MiB gate; Pages projection 835.6 MiB |
+| Artifact budget | 834.35 MiB against the 890 MiB gate; Pages projection 835.5 MiB |
 | Fresh external links | 853 observed: 699 OK, 146 rate-limited/bot-protected, one connection failure, three timeouts, four transient responses, zero HTTP 404s |
 | Independent cache review | 139 focused cases passed; no missing imported helpers across 31 cached stages |
+| Independent shared writer review | 70 focused cases passed; full-page stamp reuse and descriptor-safe, complete-map reads verified |
 
 The full test run included real Chromium lifecycle, progressive search,
 mobile/no-JavaScript navigation, focus, clipboard, first-paint geometry, and
 all eight real Lighthouse 13.4.1 reports. Thirty-two runtime/source hashes
-remained unchanged during the run. All eight pages passed their existing
+remained unchanged during the run. An earlier local Lighthouse process failed
+with a Puppeteer connection closure on Videos; its unchanged retry succeeded.
+That failure remains recorded separately; the final full run above passed
+cleanly without retries or runtime errors. All eight pages passed their existing
 floors with one Lighthouse run each:
 
 | Page | Performance | Accessibility | SEO | CLS |
 | --- | ---: | ---: | ---: | ---: |
 | Homepage | 75 | 100 | 100 | 0 |
-| Publications | 69 | 100 | 100 | 0 |
+| Publications | 69 | 100 | 100 | 0.001407 |
 | Art | 74 | 100 | 100 | 0 |
 | Videos | 88 | 93 | 100 | 0.021526 |
-| Search | 71 | 100 | 100 | 0.110704 |
-| 404 | 97 | 100 | 100 | 0 |
+| Search | 72 | 100 | 100 | 0.110704 |
+| 404 | 99 | 100 | 100 | 0 |
 | Representative work | 97 | 100 | 100 | 0 |
 | Representative video detail | 95 | 100 | 100 | 0 |
 
@@ -110,7 +117,9 @@ review exercised shared search, service-worker, intake, and deployment-verifier
 failure cases; its findings were repaired before landing.
 
 Footer stamps record rendering provenance and retain their date only when the
-complete page is unchanged except for the stamp. They do not prove that a future
+complete page is unchanged except for the stamp. Shared writers and checks now
+use the same rule, validate the complete output mapping before reads, and finish
+all descriptor-safe reuse reads before writes. They do not prove that a future
 publication commit contains the rendering. Exact deployment SHA and live bytes
 are separately bound in the retained technical acceptance receipt. That receipt
 does not claim all artifact files were downloaded, human visual review occurred,

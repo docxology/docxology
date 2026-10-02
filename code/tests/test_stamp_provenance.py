@@ -22,6 +22,7 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 
 from docxology_tools import build_stamp  # noqa: E402
+from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 
 FOOTER_STAMP_RE = re.compile(
     r'<p class="build-stamp"><a href="https://github\.com/docxology/docxology/commit/'
@@ -146,3 +147,57 @@ def test_stamp_raises_outside_a_git_checkout(tmp_path):
     empty.mkdir()
     with pytest.raises(build_stamp.BuildStampError):
         build_stamp.build_stamp_info(empty)
+
+
+def _stamped_page(body: str, sha: str, date: str) -> str:
+    return (
+        f"<main>{body}</main><footer>"
+        f'<p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/{sha}">'
+        f"build {sha} {date}</a></p></footer>\n"
+    )
+
+
+def test_mapping_writer_preserves_the_complete_stamp_on_unchanged_page(tmp_path):
+    target = tmp_path / "domain.html"
+    existing = _stamped_page("Complete unchanged page", "abc1234", "2026-01-02")
+    candidate = _stamped_page("Complete unchanged page", "def5678", "2026-02-03")
+    target.write_text(existing, encoding="utf-8")
+
+    assert stale_output_paths({target: candidate}, repo_root=tmp_path) == ()
+    write_output_texts({target: candidate}, repo_root=tmp_path)
+
+    # The original commit href and human-readable date/SHA remain paired.
+    assert target.read_text(encoding="utf-8") == existing
+    assert stale_output_paths({target: candidate}, repo_root=tmp_path) == ()
+
+
+def test_mapping_writer_refreshes_the_complete_stamp_when_page_body_changes(tmp_path):
+    target = tmp_path / "domain.html"
+    existing = _stamped_page("Old page body", "abc1234", "2026-01-02")
+    candidate = _stamped_page("New page body", "def5678", "2026-02-03")
+    target.write_text(existing, encoding="utf-8")
+
+    assert stale_output_paths({target: candidate}, repo_root=tmp_path) == (target,)
+    write_output_texts({target: candidate}, repo_root=tmp_path)
+
+    assert target.read_text(encoding="utf-8") == candidate
+    assert stale_output_paths({target: candidate}, repo_root=tmp_path) == ()
+
+
+@pytest.mark.parametrize("existing,candidate", [
+    (None, _stamped_page("New page", "def5678", "2026-02-03")),
+    ("<main>Same page</main>\n", _stamped_page("Same page", "def5678", "2026-02-03")),
+    (_stamped_page("Same page", "abc1234", "2026-01-02"), "<main>Same page</main>\n"),
+    ("<main>Old page</main>\n", "<main>New page</main>\n"),
+])
+def test_mapping_writer_uses_current_content_for_missing_outputs_or_stamps(tmp_path, existing, candidate):
+    target = tmp_path / "nested" / "new.html"
+    if existing is not None:
+        target.parent.mkdir()
+        target.write_text(existing, encoding="utf-8")
+
+    assert stale_output_paths({target: candidate}, repo_root=tmp_path) == (target,)
+    write_output_texts({target: candidate}, repo_root=tmp_path)
+
+    assert target.read_text(encoding="utf-8") == candidate
+    assert stale_output_paths({target: candidate}, repo_root=tmp_path) == ()
