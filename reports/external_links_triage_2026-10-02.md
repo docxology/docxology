@@ -3,9 +3,9 @@
 Scoped network-link triage for public-facing repository hubs.
 
 - Source report: `reports/external_links_2026-10-02.json`
-- Checked URLs: 853
-- OK: 699
-- Warnings: 154
+- Checked URLs: 856
+- OK: 706
+- Warnings: 150
 
 ## Categories
 
@@ -13,9 +13,9 @@ Scoped network-link triage for public-facing repository hubs.
 | --- | ---: | --- |
 | `bot-protected-or-rate-limited` | 146 | Likely blocks automated checks; verify manually before replacing. |
 | `connection-failure` | 1 | Could not connect during this run. |
-| `ok` | 699 | Returned a 2xx/3xx response. |
-| `timeout` | 3 | Timed out under the bounded checker timeout. |
-| `upstream-transient` | 4 | Server-side outage or temporary upstream failure. |
+| `ok` | 706 | Returned a 2xx/3xx response. |
+| `timeout` | 2 | Timed out under the bounded checker timeout. |
+| `upstream-transient` | 1 | Server-side outage or temporary upstream failure. |
 
 ## bot-protected-or-rate-limited
 
@@ -112,7 +112,6 @@ Scoped network-link triage for public-facing repository hubs.
 
 | Status | URL | Sources |
 | ---: | --- | --- |
-| 0 | <https://grantome.com/grant/NSF/DBI-2010290> | pages/EVIDENCE.md, pages/EVIDENCE.md |
 | 0 | <https://www.christies.com/en/lot/lot-6337619> | README.md, art.html, media.html |
 | 0 | <https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd> | pages/EVIDENCE.md, pages/EVIDENCE.md |
 
@@ -121,6 +120,3 @@ Scoped network-link triage for public-facing repository hubs.
 | Status | URL | Sources |
 | ---: | --- | --- |
 | 503 | <https://dfri.people.stanford.edu/> | pages/LINKS.md |
-| 504 | <https://github.com/docxology/metta-1> | repositories-forks.html |
-| 504 | <https://github.com/docxology/millennium_audit> | pages/SOFTWARE.md, repositories.html, software.html |
-| 504 | <https://github.com/docxology/millennium_audit#software> | software.html |

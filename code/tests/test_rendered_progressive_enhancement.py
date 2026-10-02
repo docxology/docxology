@@ -162,9 +162,22 @@ def test_search_reserves_loading_space_and_keeps_sparse_results_usable(tmp_path,
             page.evaluate("() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))")
             assert page.locator(".result-card").count() == 0
             assert page.locator("footer").bounding_box()["y"] >= viewport["height"]
+            pending_filter_box = page.locator("#filters").bounding_box()
+            pending_results_y = page.locator("#results").bounding_box()["y"]
             assert len(held_core) == 1
             held_core[0].continue_()
             page.wait_for_function("() => document.querySelectorAll('.result-card').length === 40 && document.getElementById('results').getAttribute('aria-busy') === 'false'")
+            loaded_filter_box = page.locator("#filters").bounding_box()
+            assert abs(loaded_filter_box["height"] - pending_filter_box["height"]) <= 1
+            assert abs(page.locator("#results").bounding_box()["y"] - pending_results_y) <= 1
+            # Every type remains available in the bounded horizontal strip;
+            # keyboard focus must bring a later option into its visible area.
+            last_filter = page.locator("#filters button").last
+            last_filter.focus()
+            assert last_filter.evaluate("node => node === document.activeElement")
+            page.wait_for_function("() => document.getElementById('filters').scrollLeft > 0")
+            page.wait_for_function("() => { const group = document.getElementById('filters').getBoundingClientRect(); const last = document.querySelector('#filters button:last-child').getBoundingClientRect(); return last.right <= group.right + 1; }")
+            assert last_filter.bounding_box()["x"] + last_filter.bounding_box()["width"] <= loaded_filter_box["x"] + loaded_filter_box["width"] + 1
             page.get_by_role("button", name=f"work ({len(works)})", exact=True).click()
             absent = "docxology_no_matching_results_" + "x" * 120
             page.locator("#q").fill(absent)

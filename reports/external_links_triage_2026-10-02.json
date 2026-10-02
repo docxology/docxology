@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-02T16:14:14Z",
+  "generated_at": "2026-10-02T22:03:11Z",
   "source": "reports/external_links_2026-10-02.json",
-  "checked_urls": 853,
-  "ok": 699,
-  "warnings": 154,
+  "checked_urls": 856,
+  "ok": 706,
+  "warnings": 150,
   "categories": {
     "bot-protected-or-rate-limited": 146,
     "connection-failure": 1,
-    "ok": 699,
-    "timeout": 3,
-    "upstream-transient": 4
+    "ok": 706,
+    "timeout": 2,
+    "upstream-transient": 1
   },
   "note": "Warnings classify observed network behavior; bot-protected and rate-limited sources are not automatically stale.",
   "warnings_by_category": {
@@ -2144,21 +2144,10 @@
         "sources": [
           "pages/LINKS.md"
         ],
-        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 166 ms: Couldn't connect to server"
+        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 165 ms: Couldn't connect to server"
       }
     ],
     "timeout": [
-      {
-        "url": "https://grantome.com/grant/NSF/DBI-2010290",
-        "status": 0,
-        "ok": false,
-        "category": "timeout",
-        "sources": [
-          "pages/EVIDENCE.md",
-          "pages/EVIDENCE.md"
-        ],
-        "error": "curl: (28) Operation timed out after 10001 milliseconds with 0 bytes received"
-      },
       {
         "url": "https://www.christies.com/en/lot/lot-6337619",
         "status": 0,
@@ -2172,7 +2161,7 @@
           "pages/EVIDENCE.md",
           "pages/LINKS.md"
         ],
-        "error": "curl: (28) Operation timed out after 10002 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10010 milliseconds with 0 bytes received"
       },
       {
         "url": "https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd",
@@ -2183,7 +2172,7 @@
           "pages/EVIDENCE.md",
           "pages/EVIDENCE.md"
         ],
-        "error": "curl: (28) Operation timed out after 10006 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10009 milliseconds with 0 bytes received"
       }
     ],
     "upstream-transient": [
@@ -2194,41 +2183,6 @@
         "category": "upstream-transient",
         "sources": [
           "pages/LINKS.md"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/metta-1",
-        "status": 504,
-        "ok": false,
-        "category": "upstream-transient",
-        "sources": [
-          "repositories-forks.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/millennium_audit",
-        "status": 504,
-        "ok": false,
-        "category": "upstream-transient",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html",
-          "updates.html",
-          "updates.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/millennium_audit#software",
-        "status": 504,
-        "ok": false,
-        "category": "upstream-transient",
-        "sources": [
-          "software.html"
         ],
         "error": ""
       }

@@ -4,6 +4,33 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-10-02
 
+- **Homepage and Curio Cards:** clearer introduction and routes into publications,
+  software, art, and teaching; responsive typography, accessible profile disclosure,
+  and readable media without JavaScript. The three art tiles now show the exact
+  complete Complexity, Passion, and Education card images, with primary card links,
+  source hashes, and documented artwork rights. Connected profile and art copy
+  removes unsupported edition/market claims and repairs the Curio gallery anchor.
+- **Source-text custody:** restored 43 paper extractions whose literal
+  `manuscript/` paths had been changed by a directory migration, and corrected
+  one evidence quotation against the archived PDF. All archived PDFs and the
+  newer Pitch Deck extraction are preserved; the
+  [custody receipt](reports/paper_text_custody_2026-10-02.md) records exact checks
+  and their limits.
+- **Search and deployment follow-up:** type filters reserve their loading space
+  and remain keyboard-accessible in a bounded scrollable row. The generated
+  manifest now records all four search exports and their paper/report inputs;
+  the offline shell includes the homepage stylesheet, and deployed-byte checks
+  include that stylesheet and all three Curio images. Real Lighthouse 13.4.1
+  measured search CLS at zero after delayed-core mobile geometry tests passed.
+  All 1,214 integration tests passed without skips; the
+  [homepage receipt](reports/homepage_curio_2026-10-02.md) separates local
+  measurements from hosted and live acceptance.
+- **Public smoke-report privacy:** the capture generator removes the known
+  workspace prefix from diagnostics before limiting their length. A regression
+  covers partial-path exposure during truncation. Fresh smoke results retain
+  selectors and image hashes; historical diagnostic redaction is explicitly
+  marked and preserves the original capture results.
+
 - **Permanent bibliography identity:** a reviewed work-identifier registry
   preserves every existing work URL and reserves retired identifiers. Metadata
   corrections no longer rename citation keys. New intake validates the complete

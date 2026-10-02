@@ -104,7 +104,7 @@ Friedman has conducted in-depth published interviews with leading researchers fo
 |------|-------------------|--------|------|
 | 2024 | "Active Inference: Pioneering a New Era of Artificial Intelligence" (features Friedman & AII) | Denise Holt | [deniseholt.us](https://deniseholt.us/active-inference-pioneering-a-new-era-of-artificial-intelligence/) |
 | 2024 | Writing on Curio Cards for "On NFT" book | Taschen (ISBN 978-3-8365-9970-2) | [Paper folder](../papers/2024_CurioCards/) |
-| 2021-10 | Christie's auction: Full set of 30 Curio Cards + rare "17b" — first ETH-denominated auction at Christie's | Christie's | [christies.com](https://www.christies.com/en/lot/lot-6337619) |
+| 2021-09-30 | Christie's auction: Full set of 30 Curio Cards + "17b" misprint | Christie's | [Lot](https://www.christies.com/en/lot/lot-6337619) · [Christie's sale-date record](https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd) |
 | 2021 | "Daniel Friedman — Decentralized Beauty: NFT Art and Ants" | Curio Cards / Medium | [medium.com](https://medium.com/@curiocards/daniel-friedman-decentralized-beauty-nft-art-and-ants-7dc664b72534) |
 | 2017-05-09 | NFT Archaeology entry: Curio Cards recognized as early Ethereum art NFTs | NFT Archaeology | [nftarchaeology.io](https://nftarchaeology.io/nft-details/curiocards) |
 

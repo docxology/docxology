@@ -1,0 +1,277 @@
+{
+  "generated_at": "2026-10-02T22:07:03Z",
+  "source_commit": "cf368af238de371865d9876afd5321314eb03406",
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    ".github/workflows/browser-qa.yml",
+    "CHANGELOG.md",
+    "GENERATED.md",
+    "TODO.md",
+    "art.html",
+    "assets/curio-cards/24-complexity.jpg",
+    "assets/curio-cards/25-passion.jpg",
+    "assets/curio-cards/26-education.jpg",
+    "assets/curio-cards/README.md",
+    "assets/curio-cards/provenance.json",
+    "code/orchestrators/build_generated_manifest.py",
+    "code/orchestrators/verify_deployed_artifact.py",
+    "code/tests/test_home_landing.py",
+    "code/tests/test_rendered_progressive_enhancement.py",
+    "css/home.css",
+    "data/agent-index.json",
+    "data/generated-manifest.json",
+    "data/pages-artifact-manifest.json",
+    "data/release-integrity.json",
+    "docs/design/design-system.md",
+    "docs/operations/site-runtime.md",
+    "index.html",
+    "pages/MEDIA.md",
+    "pages/PROFILE.md",
+    "pages/WIKIPEDIA.md",
+    "papers/2026_ActInfMetaAnalysis/full_text.md",
+    "papers/2026_ActiveInferenceMulti/full_text.md",
+    "papers/2026_ActiveSkillference/full_text.md",
+    "papers/2026_AutopoieticProjectGeneration/full_text.md",
+    "papers/2026_BeeStack/full_text.md",
+    "papers/2026_COGANT/full_text.md",
+    "papers/2026_CaliforniaPublicRecords/full_text.md",
+    "papers/2026_CogSecSkills/full_text.md",
+    "papers/2026_ConvergenceAnalysisGradient/full_text.md",
+    "papers/2026_CrescentCity/full_text.md",
+    "papers/2026_DataDescriptorTemplate/full_text.md",
+    "papers/2026_DeterministicTestbedSelf/full_text.md",
+    "papers/2026_DigiPPPiP/full_text.md",
+    "papers/2026_DomainLanguageSpecifying/full_text.md",
+    "papers/2026_DuckRabbit/full_text.md",
+    "papers/2026_ENTO/full_text.md",
+    "papers/2026_EditorialQualityAt/full_text.md",
+    "papers/2026_EntomologicalLaw/full_text.md",
+    "papers/2026_ExploratoryDataAnalysis/full_text.md",
+    "papers/2026_FEPLean/full_text.md",
+    "papers/2026_FourfoldVision/full_text.md",
+    "papers/2026_IllegalStatesMostly/full_text.md",
+    "papers/2026_LineSet/full_text.md",
+    "papers/2026_LivingMetaAnalysis/full_text.md",
+    "papers/2026_MappingWilliamBlake/full_text.md",
+    "papers/2026_MusicNeverStopped/full_text.md",
+    "papers/2026_PROJECTBONDSpecial/full_text.md",
+    "papers/2026_PolicyDistillationAs/full_text.md",
+    "papers/2026_PolicyEntanglementActive/full_text.md",
+    "papers/2026_PoolsRulesTools/full_text.md",
+    "papers/2026_RecoveringLLMPersona/full_text.md",
+    "papers/2026_RefinementGold/full_text.md",
+    "papers/2026_RefinementGold/metadata.json",
+    "papers/2026_RegisteredReportTemplate/full_text.md",
+    "papers/2026_ReproducibleLiteratureSynthesis/full_text.md",
+    "papers/2026_ReproducibleResearch/full_text.md",
+    "papers/2026_RobustBeliefSharing/full_text.md",
+    "papers/2026_SelfImprovementAgent/full_text.md",
+    "papers/2026_SortitionUpstreamNTQR/full_text.md",
+    "papers/2026_SynthOBSFractiSynth/full_text.md",
+    "papers/2026_THALIA/full_text.md",
+    "papers/2026_TemplateApproachReproducible/full_text.md",
+    "papers/2026_TemplateMadlib/full_text.md",
+    "papers/2026_TemplateTextbook/full_text.md",
+    "papers/AGENTS.md",
+    "reports/asset_size_2026-10-02.json",
+    "reports/homepage_curio_2026-10-02.md",
+    "reports/pages_artifact_growth_2026-10-02.json",
+    "reports/paper_text_custody_2026-10-02.json",
+    "reports/paper_text_custody_2026-10-02.md",
+    "search.html",
+    "sw.js",
+    "updates.html"
+  ],
+  "source_tree_sha": "e594384baaae89bee87934547ebddfe4f32fb516",
+  "tool": "playwright screenshot",
+  "note": "Human review still required; these snapshots guard against obvious layout regressions.",
+  "screenshots": [
+    {
+      "page": "index.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-02/home-desktop.png",
+      "sha256": "7eca8bc83d760e10495f0d67aa821fa8a4c68561316791585eea7095dadb73f0"
+    },
+    {
+      "page": "index.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-02/home-mobile.png",
+      "sha256": "8cddf4e4965bc35413807fb35d12285c1fd3a520e6d04904fc4d5588c3ff1134"
+    },
+    {
+      "page": "publications.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-02/publications-desktop.png",
+      "sha256": "93d79d7f98647352b343a54e108ffcf42e01a64a6600e88603eebb8da9303956"
+    },
+    {
+      "page": "publications.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-02/publications-mobile.png",
+      "sha256": "cba03799083bf65141210680d4381c59af407216fcff4b7c19ea04b93bafd067"
+    },
+    {
+      "page": "works/index.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-02/works-desktop.png",
+      "sha256": "6ebd19c1737eea70ab82f0b56b53f38e56acf90c458f5705d45ac08b359beb44"
+    },
+    {
+      "page": "works/index.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-02/works-mobile.png",
+      "sha256": "b77e414b2f89a9b74779efa95207bcdc63308009f3015f55d761cedb731642bf"
+    },
+    {
+      "page": "domains.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-02/domains-desktop.png",
+      "sha256": "83435060bb17b8f9e765e873037f8269ba760827e7f7a43b1e49c0b8f2d21e03"
+    },
+    {
+      "page": "domains.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-02/domains-mobile.png",
+      "sha256": "781085a5c42ce69b21b48c910b2408fe1fd999419af07cfd9c7af12c9491b12c"
+    },
+    {
+      "page": "search.html?q=active%20inference",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-02/search-desktop.png",
+      "sha256": "61074085fac04c11c8f1d0b4d5d183f9cbc90d49f602f2ed5f3344f75b3161d7"
+    },
+    {
+      "page": "search.html?q=active%20inference",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-02/search-mobile.png",
+      "sha256": "9b5d391b20c172c8f8495881904734cc435e535d2c2fa15cae683986d5ba3ffb"
+    },
+    {
+      "page": "repositories.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-02/repositories-desktop.png",
+      "sha256": "e7d754d63686e7150c224e223a4132918b22aab20738ddb4efab9a31f10b2a20"
+    },
+    {
+      "page": "repositories.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-02/repositories-mobile.png",
+      "sha256": "a0eb510b0e3c9aece1ea4abd3a3630fb7e789eaec8f0968a620d47c2f9bff832"
+    },
+    {
+      "page": "repositories-forks.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-02/repository-forks-desktop.png",
+      "sha256": "c2d9a360c9b510c92bc53011f1688c76d7bd7638dbe17b4c8291496b34091f67"
+    },
+    {
+      "page": "repositories-forks.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-02/repository-forks-mobile.png",
+      "sha256": "7fc4397e9bcf934f3e0770c4432acb60023aa885c78d6ff7be5c984a1783c441"
+    },
+    {
+      "page": "catalog.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-02/catalog-desktop.png",
+      "sha256": "e098136d61cea7ea1216414a7f8856f5c0b4a6ae69610a5ecfedb5520b55a859"
+    },
+    {
+      "page": "catalog.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-02/catalog-mobile.png",
+      "sha256": "afd877e10c744f96c92ab31467ad0db9106e83c4dc3d3797c1be2c885ed78ec7"
+    },
+    {
+      "page": "updates.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-02/updates-desktop.png",
+      "sha256": "7a8a454f7ab119cc4aca1a3af170e7e94d7c64cfb3c8c26b95e19a9f2662dee7"
+    },
+    {
+      "page": "updates.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-02/updates-mobile.png",
+      "sha256": "3859335a5c67aac5b33cec98c7552c5ff1b05cd42df69192c5a2af5ca4358ac5"
+    },
+    {
+      "page": "art.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-02/art-desktop.png",
+      "sha256": "22fddf2028643a0f9c58dc0c488921f97ab736401a1598210ba4f5713713d90b"
+    },
+    {
+      "page": "art.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-02/art-mobile.png",
+      "sha256": "472697a8ad8cc9eafdf3567d38413b304db219b2f573e8c2bb9c69616a2f1406"
+    },
+    {
+      "page": "discovery.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-02/discovery-desktop.png",
+      "sha256": "5e417cf63a3e2f0d750a263cdbfc77baffb59f44c036268c05aa1bd898bbf40a"
+    },
+    {
+      "page": "discovery.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-02/discovery-mobile.png",
+      "sha256": "3e998bb2f2a465c5e8a7ce65cb7f1e52b36f6f61ef6849cb6f9362d6daf4429b"
+    },
+    {
+      "page": "cite-verify.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-02/cite-verify-desktop.png",
+      "sha256": "68964845a24ae9f184addf1b0fff0c0559696599e4a663d96e7d9188ea701ab1"
+    },
+    {
+      "page": "cite-verify.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-02/cite-verify-mobile.png",
+      "sha256": "0cb37362a6af831014993e9abb2a68dce9bc94f819a6bb38c104bec083fc03ce"
+    },
+    {
+      "page": "evidence.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-02/evidence-desktop.png",
+      "sha256": "807ea949e6b6aa4347069bc65aa8ce44b293ecdc43473ac514302782c7bcbc3d"
+    },
+    {
+      "page": "evidence.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-02/evidence-mobile.png",
+      "sha256": "296c5de1c9a89b9c73b2de0fe4d3503e3bfa026716724a7926a8705da54ba0a7"
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "reviewed_by": null,
+    "reviewed_at": null
+  }
+}

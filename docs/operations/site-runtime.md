@@ -29,10 +29,15 @@ status and a retry, rather than silently claiming a complete search.
 agents and offline tooling. Generate all projections together with
 `code/orchestrators/build_search_index.py`; do not hand-edit them.
 
+The search page reserves the type-filter row before the core arrives. Its
+horizontal strip keeps the result area in place at narrow widths, and keyboard
+focus scrolls later options into view. Keep the search panel's grid column
+bounded with `minmax(0, 1fr)` so long labels cannot widen the document.
+
 ## Offline and cache contracts
 
 The service worker installs only the small homepage shell, shared scripts, CSS,
-favicon, and manifest. It downloads complete shell responses in parallel under
+homepage stylesheet, favicon, and manifest. It downloads complete shell responses in parallel under
 the same bounded transfer helper used at runtime. Every response must succeed
 and stay on the same origin before shell writes begin. The new worker activates
 only after every shell write succeeds; a failed or stalled installation leaves
@@ -75,7 +80,8 @@ uv run playwright install chromium
 uv run --extra browser-qa python3 -m pytest \
   code/tests/test_service_worker.py \
   code/tests/test_rendered_frontend.py \
-  code/tests/test_rendered_progressive_enhancement.py -q
+  code/tests/test_rendered_progressive_enhancement.py \
+  code/tests/test_home_landing.py -q
 uv run --extra browser-qa python3 code/orchestrators/browser_qa.py
 uv run --extra browser-qa python3 code/orchestrators/browser_qa.py --check
 ```

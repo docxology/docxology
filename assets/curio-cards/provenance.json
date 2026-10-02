@@ -1,0 +1,52 @@
+{
+  "purpose": "Display the actual associated Curio Cards on the artist homepage.",
+  "rights_source": "https://docs.curio.cards/info/artwork-licensing",
+  "rights": "Display permission for galleries and documentation. Artists retain their rights. Daniel Friedman cards 24\u201326: the official page states CC BY for holders and CC BY-NC for non-holders, as of 2022; no license version is specified.",
+  "assets": [
+    {
+      "card_number": 24,
+      "title": "Complexity",
+      "artist": "Daniel Friedman",
+      "filename": "24-complexity.jpg",
+      "source_page": "https://curio.cards/card/24/",
+      "source_image": "https://curio.cards/static/24-30352ee263c335988f9fa791f289dca9.jpg",
+      "fetched_on": "2026-10-02",
+      "sha256": "b0b832c56edd3c72b842e43039256a6a1f6e2a31eb63c7e26d42d0c7afa6219a",
+      "bytes": 790968,
+      "width": 900,
+      "height": 1200,
+      "format": "JPEG",
+      "transformation": "none"
+    },
+    {
+      "card_number": 25,
+      "title": "Passion",
+      "artist": "Daniel Friedman",
+      "filename": "25-passion.jpg",
+      "source_page": "https://curio.cards/card/25/",
+      "source_image": "https://curio.cards/static/25-cfb62381738d9de3707288783e66017c.jpg",
+      "fetched_on": "2026-10-02",
+      "sha256": "b601063f76e78c4117c77a185d1cf4af5837543d640d1c96e3d0d5c39b5304ed",
+      "bytes": 800055,
+      "width": 900,
+      "height": 1200,
+      "format": "JPEG",
+      "transformation": "none"
+    },
+    {
+      "card_number": 26,
+      "title": "Education",
+      "artist": "Daniel Friedman",
+      "filename": "26-education.jpg",
+      "source_page": "https://curio.cards/card/26/",
+      "source_image": "https://curio.cards/static/26-0c3eba9cfe002545ddd9c3953a37ece5.jpg",
+      "fetched_on": "2026-10-02",
+      "sha256": "164dc0a6f02c84c0bfa79ac786e524fa727264e72adfb11eb2bf4d6c718781eb",
+      "bytes": 757897,
+      "width": 900,
+      "height": 1200,
+      "format": "JPEG",
+      "transformation": "none"
+    }
+  ]
+}

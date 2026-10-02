@@ -32,10 +32,13 @@ ORIGIN = "https://danielarifriedman.com/"
 MANIFEST_PATH = "data/pages-artifact-manifest.json"
 CRITICAL_PATHS = {
     "index.html", "search.html", "publications.html", "software.html",
-    "style.css", "sw.js", "js/search-utils.js", "js/search-page.js",
+    "style.css", "css/home.css", "sw.js", "js/search-utils.js", "js/search-page.js",
     "js/interactive.js", "js/index-page.js", "js/nav-toggle.js", "js/cite-export.js", "search-index-core.json",
     "search-index-content-work.json", "search-index-content-video.json",
     "data/work-identifiers.json",
+    "assets/curio-cards/24-complexity.jpg",
+    "assets/curio-cards/25-passion.jpg",
+    "assets/curio-cards/26-education.jpg",
 }
 MAX_BODY_BYTES = 64 * 1024 * 1024
 

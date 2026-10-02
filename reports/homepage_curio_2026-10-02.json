@@ -1,0 +1,139 @@
+{
+  "kind": "local_integration_observation",
+  "source_base_commit": "cf368af238de371865d9876afd5321314eb03406",
+  "source_worktree_clean": false,
+  "observed_on": "2026-10-02",
+  "command": "DOCXOLOGY_REQUIRE_BROWSER_QA=1 uv run python3 -m pytest code/tests -q",
+  "tests": {
+    "tests": 1214,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "duration_seconds": 349.759,
+  "junit_sha256": "a83c4865a83d0e85d4280a43ac33445fe774705ea43f77b8d74a8d15b80fb6dc",
+  "runtime_code_files_bound": 2847,
+  "runtime_code_files_changed_during_run": 0,
+  "selected_source_sha256": {
+    "assets/curio-cards/24-complexity.jpg": "b0b832c56edd3c72b842e43039256a6a1f6e2a31eb63c7e26d42d0c7afa6219a",
+    "assets/curio-cards/25-passion.jpg": "b601063f76e78c4117c77a185d1cf4af5837543d640d1c96e3d0d5c39b5304ed",
+    "assets/curio-cards/26-education.jpg": "164dc0a6f02c84c0bfa79ac786e524fa727264e72adfb11eb2bf4d6c718781eb",
+    "assets/curio-cards/README.md": "c3cbb3830fa72dd9b763b27b92c2863d49ba1e96505898f89dcf4d8607c30c67",
+    "assets/curio-cards/provenance.json": "6a416a86daa31cf4a597371adc11c78273f225506d101bf4af4e4a2d2dea3e44",
+    "code/orchestrators/build_generated_manifest.py": "e5761a189c0b50ef8c1978063e9f608f7300559f24c99f622c0dec444b997526",
+    "code/orchestrators/verify_deployed_artifact.py": "235abb25eac64646a57fdd9b382ec516511be59c9729f0f448c6fb17a450ad97",
+    "code/tests/test_home_landing.py": "aceac3eac8653e86a1df7c9cbd14299f0096daf97a28625d444e39fd14086376",
+    "code/tests/test_rendered_progressive_enhancement.py": "5a562a72d72dc0429f6abbbdda6c1030a2541736b4ca63cf038035b57ede0534",
+    "css/home.css": "ea02457c1fa0c4c9c820131aad0439411492157f1c3cefb494d1a1080338a0e6",
+    "index.html": "d81e788ae993982c15597b2d6c339ec843c380d4379dfc6f3fa5c49aafc5b97d",
+    "search.html": "03fb7af03bb4688f0b6b65984a8d1fe1c4a1f742885ca62004c1ba48e9359219",
+    "sw.js": "4363c11655e0eb1ead847e7736f7c39e5f9878405b4fbec0f57fd43932ae0995"
+  },
+  "lighthouse": {
+    "404.html": {
+      "version": "13.4.1",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "cls": 0,
+      "runtime_error": null,
+      "diagnostic_sha256": "8e5e6fa71b6773c6b7e6d5e383297ce3570107a410fcd237f15cde705e39625d"
+    },
+    "art.html": {
+      "version": "13.4.1",
+      "scores": {
+        "performance": 74,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "cls": 0,
+      "runtime_error": null,
+      "diagnostic_sha256": "e3e7504f73a434d614c80bea8b424bd1dd0523356f65eff3b2be4cf1bb4d3b48"
+    },
+    "index.html": {
+      "version": "13.4.1",
+      "scores": {
+        "performance": 75,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "cls": 0,
+      "runtime_error": null,
+      "diagnostic_sha256": "c7155a032caa95ef1e08e453ee6ad213d40b10ffee74c9871b3a7643edd0f16e"
+    },
+    "publications.html": {
+      "version": "13.4.1",
+      "scores": {
+        "performance": 69,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "cls": 0.001407441540040049,
+      "runtime_error": null,
+      "diagnostic_sha256": "0337dd65d6b4445286c857a5021136c5790236a3996b0d45cc684c76ce29c555"
+    },
+    "search.html": {
+      "version": "13.4.1",
+      "scores": {
+        "performance": 75,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "cls": 0,
+      "runtime_error": null,
+      "diagnostic_sha256": "cc31c6a51a13797342dedc738439a670f1aabb5b255a52a8daacb7dbde67fb78"
+    },
+    "videos--institute--39CESDAfLM.html": {
+      "version": "13.4.1",
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "cls": 0,
+      "runtime_error": null,
+      "diagnostic_sha256": "7cf9a49afe07e03d9e196a9a5bc1ec918dc9ed8cc1a38c1113037525103e9aef"
+    },
+    "videos.html": {
+      "version": "13.4.1",
+      "scores": {
+        "performance": 89,
+        "accessibility": 93,
+        "seo": 100
+      },
+      "cls": 0.02152644182237405,
+      "runtime_error": null,
+      "diagnostic_sha256": "c3ffdb815d99192cbc7a3e92cc337b240b4a2c5dc5c1e6f750936fb96cac01f1"
+    },
+    "works--Friedman2015CommentaryPortugueseCryptoJews106.html": {
+      "version": "13.4.1",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "cls": 0,
+      "runtime_error": null,
+      "diagnostic_sha256": "354c313b82532b4452e8ec8bd8ab7339e15e5d178faa4b4bd85b626d3d5c7e06"
+    }
+  },
+  "bounds": {
+    "hosted_checks": false,
+    "deployed_sha_acceptance": false,
+    "managed_security_scan": false,
+    "human_visual_review": false,
+    "full_release_attestation": false
+  },
+  "privacy_follow_up": {
+    "focused_writer_regression_passed": 1,
+    "fresh_smoke_passing": 10,
+    "independent_review": "GO",
+    "source_sha256": {
+      "code/orchestrators/browser_smoke.py": "f224413677083b17b9757cb61b4673db971f7c083f3b8026bebd6bfa8d223363",
+      "code/tests/test_smoke_report_privacy.py": "b84466120482e9714e6aa26d0068d9db83d7c6731a4674f9f953684d779e5b11"
+    },
+    "note": "The full 1214-case observation precedes this diagnostic-only generator fix. Final clean-candidate integration remains a separate publication gate."
+  }
+}

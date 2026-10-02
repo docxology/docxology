@@ -137,10 +137,6 @@ criteria, and dependencies. Re-review this file before each public release.
   improve pages below the aspirational performance 85, accessibility 95, and
   SEO 95 scores. Keep existing floors and measured results visible; passing
   the ratchet does not establish that every aspirational target was met.
-- Measured follow-up (2026-10-02): Search CLS is 0.110704 after its footer
-  repair. Reserve type-filter geometry during core loading, verify delayed
-  initialization at 320px and 412px, and retain the next real Lighthouse result
-  before claiming a zero-shift or below-0.1 result.
 
 ### DOC-010 — Security and SEO follow-up
 

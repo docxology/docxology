@@ -46,6 +46,7 @@ jobs:
             code/tests/test_rendered_work_pages.py \
             code/tests/test_rendered_frontend.py \
             code/tests/test_rendered_progressive_enhancement.py \
+            code/tests/test_home_landing.py \
             code/tests/test_early_navigation.py \
             code/tests/test_service_worker.py \
             code/tests/test_lighthouse_budgets.py \

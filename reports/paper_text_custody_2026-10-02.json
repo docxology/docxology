@@ -1,0 +1,456 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-02",
+  "kind": "paper text source-custody correction",
+  "source_baseline_commit": "cf368af238de371865d9876afd5321314eb03406",
+  "recovery_source_commit": "5c25de204170cdf03c2f341f0fdc10f399aebaa4",
+  "corrected_full_text_count": 43,
+  "grounded_metadata_quote_corrections": 1,
+  "grounded_quotes_checked_all_papers": 1723,
+  "grounded_quotes_checked_affected_papers": 419,
+  "unchanged_archive_pdf_count": 222,
+  "excluded": [
+    {
+      "path": "papers/2026_TemplatePitchDeck/full_text.md",
+      "decision": "Retained newer extraction from the current manuscript PDF; historical short-deck extraction is superseded."
+    }
+  ],
+  "method": "Restore exact pre-migration text blobs only where current text equals the historical migration blob, every changed hunk only inserts docs/ before manuscript/, and the header-selected archived PDF plus all parent PDF bytes are unchanged. Validate all grounded quotations using whitespace and ligature normalization.",
+  "verification_bounds": {
+    "all_43_source_pdf_bytes_match_recovery_commit": true,
+    "all_222_current_pdf_bytes_unchanged": true,
+    "all_43_text_blobs_match_recovery_commit": true,
+    "independent_pdf_text_samples": [
+      {
+        "pdf": "papers/2026_FourfoldVision/blake_fourfold_synergetics_combined.pdf",
+        "original_pdf_references": [
+          "The bibliography is stored in manuscript/references.bib and rendered by Pandoc with the project citation ledger."
+        ]
+      },
+      {
+        "pdf": "papers/2026_ENTO/entofile-0.4.pdf",
+        "original_pdf_references": [
+          "src/benchmarks.py::run_all_benchmarks using parameters from manuscript/config.yaml (experiment.be",
+          "Configuration hash: 68cac678fc92a913 (SHA-256 prefix of manuscript/config.yaml, version 0.4).",
+          "Bibliography lives in manuscript/references.bib and is read by Pandoc during PDF render. Inline citations use",
+          "projects/working/entofile/manuscript/references.bib --strict"
+        ]
+      },
+      {
+        "pdf": "papers/2026_FEPLean/fep-lean-manuscript-1.1.0.pdf",
+        "original_pdf_references": [
+          "manuscript Markdown: rendering writes to output/manuscript/ only after validating every placeholder across the full source set.",
+          "ceholder and theorem-reference audits, and render to output/manuscript/;",
+          "References are in manuscript/references.bib. Inline [@key] resolved by Pandoc citeproc during rendering. See"
+        ]
+      },
+      {
+        "pdf": "papers/2026_FEPLean/fep_lean_v1_04-24-2026.pdf",
+        "original_pdf_references": [
+          "e Manuscript Artifacts stage in src/pipeline/core.py writes manuscript/manuscript_vars.yaml",
+          "manuscript/09z_unified_formalism_catalogue.md: for each fep-NNN, a Lean sketch subsection and a Typeset",
+          "• manuscript/manuscript_vars.yaml receives the injected catalogue statistics used during rendering.",
+          "References are in manuscript/references.bib. Inline [@key] resolved by Pandoc citeproc during rendering. See"
+        ]
+      }
+    ],
+    "repaired_quote_directly_checked_against_pdf": {
+      "metadata_path": "papers/2026_RefinementGold/metadata.json",
+      "field": "methods[4].evidence",
+      "source_pdf": "papers/2026_RefinementGold/Friedman_2026_Refinement_36431789.pdf",
+      "quote": "The refinery pipeline is fully deterministic. Given the same manuscript/config.yaml and src/ code, every run produces identical output."
+    },
+    "independent_pdf_reextraction_of_every_text_character": false,
+    "independent_research_result_replication": false,
+    "hosted_or_live_acceptance": false
+  },
+  "files": [
+    {
+      "text_path": "papers/2026_ActInfMetaAnalysis/full_text.md",
+      "source_pdf": "papers/2026_ActInfMetaAnalysis/act_inf_metaanalysis_v2_04-30-2026.pdf",
+      "source_pdf_sha256": "b25955c9c3ade35c3edf8a9299094d19bd4cecb2f10a8e007d203725c65f4df2",
+      "before_text_sha256": "9ca46ce00688e015f9f140205405d48a06b687b873f085aff18d8791f1e4f051",
+      "restored_text_sha256": "c9648013ea66898d549caa40843e8d1d4bdaadeab31f40ea1c87a61151dc48ed",
+      "restored_git_blob": "47dbd3a99b14be2fadfa3048851d0621fb707a96",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_ActiveInferenceMulti/full_text.md",
+      "source_pdf": "papers/2026_ActiveInferenceMulti/Friedman_2026_Active_f191b48f.pdf",
+      "source_pdf_sha256": "f191b48f94394cab17069fd04502c59fc1c287e7893eb078e05ba4be04d4a04c",
+      "before_text_sha256": "25a2a149639c5bebcbe855fa7778ee1ec8e6731dbcb34fa7d4e19b640f2f210e",
+      "restored_text_sha256": "1ec348d46ad0fd2d72d4cb2482cbbbc8c2f4db29f7981dd3b6077b42c6ea09c0",
+      "restored_git_blob": "6d9733dabcad699dd0418c9c9eb406fb3d90dd00",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_ActiveSkillference/full_text.md",
+      "source_pdf": "papers/2026_ActiveSkillference/Active_Skillference_v1.0.0_DOI-10.5281-zenodo.21865644.pdf",
+      "source_pdf_sha256": "4dd5ba411e2606ca7db4a6258fff658020bf40906236591d0e5c4559bec2e3ca",
+      "before_text_sha256": "73bd9b5503bef31428ef5d7924f1e6267154f89af9dfa4dd8579e31a20749c89",
+      "restored_text_sha256": "b2f21709ecd0b491fda25a3dec0e92937f99ed659656be03659cf967971d699d",
+      "restored_git_blob": "8ac9392c84e21cb7208bb93893eaf935cae49a8d",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_AutopoieticProjectGeneration/full_text.md",
+      "source_pdf": "papers/2026_AutopoieticProjectGeneration/Friedman_2026_Autopoietic_84145371.pdf",
+      "source_pdf_sha256": "84145371f10c7ee97a75c53d78917d247fd6bd987d2c1764ee437b6fbdef8f51",
+      "before_text_sha256": "b73bbcd60e95583c6b3a4ffcab8b83f617e501cae84fa1866a8eb6a4580cdec9",
+      "restored_text_sha256": "0ce51a8bbaa31b59ebc8b4a6f580cc00fbbadd2d7907661162ddc653b4e58a7c",
+      "restored_git_blob": "b6610b48087f14cb2bd256f59d0e5dcc3526a39c",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_BeeStack/full_text.md",
+      "source_pdf": "papers/2026_BeeStack/BeeStack_combined.pdf",
+      "source_pdf_sha256": "7444ae8f3d64eb5daae06ff9b8b0651fab109178caa770e86bfcb3633d80a218",
+      "before_text_sha256": "01f359e96d184ccb36c74839ec70587044030fcdd6ce0d4ef07445874face0a2",
+      "restored_text_sha256": "5a55602e86c6a5e9198ff0cbd31290b364147336e35423321161d4a5db661bc5",
+      "restored_git_blob": "323019fbe4aba58b91e5a9c7f792fe6fa7f7f251",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_COGANT/full_text.md",
+      "source_pdf": "papers/2026_COGANT/COGANT-0.6.0.pdf",
+      "source_pdf_sha256": "c9f2f66e0a5d901e526d1a9ff6c7e50784a05257103d8ef09d6877e0e414efbb",
+      "before_text_sha256": "edbcb033521cacfce1fa28df8b1f75300e184b334d5dc73175972b110ad1c3d1",
+      "restored_text_sha256": "c82cdefdae45fd39385b37317138a7fe48e476805dd7046e9ee9b40517f23dd0",
+      "restored_git_blob": "efda3863aedec338d02890f57dfcc24fac0f5e15",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_CaliforniaPublicRecords/full_text.md",
+      "source_pdf": "papers/2026_CaliforniaPublicRecords/Friedman_2026_California_8f09eac2.pdf",
+      "source_pdf_sha256": "8f09eac27807918f7b2f48a13d88f40c3ac326a915bafbb78ca1a0c242b9ee97",
+      "before_text_sha256": "fa04771300525df96fd6dd2c38f34abe18c36f32281c7e3c2017b55d78abb7e4",
+      "restored_text_sha256": "b6186e63f78dc3292a9492b43c96c4f90890a399d942e6a5ead05e7c2eb455c3",
+      "restored_git_blob": "e4953a19d992d07b45e1a88470bb2def80008bbd",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_CogSecSkills/full_text.md",
+      "source_pdf": "papers/2026_CogSecSkills/Friedman_2026_Cogsecskills_1a99a2e4.pdf",
+      "source_pdf_sha256": "1a99a2e474b07d21593094b7a3b4fd923197904056189a53b206126506b1040d",
+      "before_text_sha256": "e083498a005465ff655666eca018cbae82067dddb26cf77099707dcba85ea462",
+      "restored_text_sha256": "872fee662a64118964e13689850d93fe4e5ad3878ea4a392f478628dc7281b50",
+      "restored_git_blob": "4e6a1da7de225a87b1154fc4ca30b5b9ab35887e",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_ConvergenceAnalysisGradient/full_text.md",
+      "source_pdf": "papers/2026_ConvergenceAnalysisGradient/Friedman_2026_Convergence_cd54b958.pdf",
+      "source_pdf_sha256": "cd54b95893501467503fab2c4b432573306bc94f7040085550beb87d094b4e50",
+      "before_text_sha256": "ff86d6ecd6d25e6a4e603c970c539731fa9408421d4204c4c89e657552aaa805",
+      "restored_text_sha256": "a50a88d1ab718a26be7ac11a0350fca15d3d83994a3f97b8bc7ab8c8252cf362",
+      "restored_git_blob": "345071487fb348261032f39a01eb2d9b60cb58d8",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_CrescentCity/full_text.md",
+      "source_pdf": "papers/2026_CrescentCity/crescent_city_v1_DAF_05_19_2026.pdf",
+      "source_pdf_sha256": "6c4592645489a7ebdd5d69b990f906de6e33b0ef46ff235fe5e8b6fb58b810a9",
+      "before_text_sha256": "651caf404f1352272ebc22338a79ce4606eaf1c45bc8ea852630e0c424d4ab8e",
+      "restored_text_sha256": "13762facd34876b909288e038bd0ca9fe50dbde5ca692e6106655ab0006bdad7",
+      "restored_git_blob": "50644f39627b6ea0acdc53cebea625f8dffab6e0",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_DataDescriptorTemplate/full_text.md",
+      "source_pdf": "papers/2026_DataDescriptorTemplate/Friedman_2026_Data_a542f49d.pdf",
+      "source_pdf_sha256": "a542f49d6a82b8481159c02a8f35f7bd19d8dab241dd0a9fb1392dbd9bee8dd3",
+      "before_text_sha256": "5c53c7d1c2aee26756d4ba68a374b5b7a10cb008adf70536c258e79f2a192d66",
+      "restored_text_sha256": "4ce04d172c40fae4dac0cf118ef700a985beb6f0cebea1f79524b9ff9758bb3e",
+      "restored_git_blob": "8edee3745dbf84e2703429fa09003f856cb78cde",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_DeterministicTestbedSelf/full_text.md",
+      "source_pdf": "papers/2026_DeterministicTestbedSelf/Friedman_2026_Deterministic_972bc4e0.pdf",
+      "source_pdf_sha256": "972bc4e0a82c97a88442ffc4370a17dd3323de96f27f91294dcb19dab3934a29",
+      "before_text_sha256": "fa412436515ba47639e5344ad7b300c659d7042755973e624fc3e2f597504be5",
+      "restored_text_sha256": "fd019b863be5a601247b6515eb70f75354dcbee58a2b01e3bbdef1b950ee5f95",
+      "restored_git_blob": "63ca1ed30f41832f11c5a40e78b6fc3d726d391b",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_DigiPPPiP/full_text.md",
+      "source_pdf": "papers/2026_DigiPPPiP/Shrivastava_2026_Digipppip_f5ca95ce.pdf",
+      "source_pdf_sha256": "f5ca95ce77c7c5367c0a0e68d5b4a640f0865b4c2b0827fa78ff1babbcbd986d",
+      "before_text_sha256": "110396d76a1b0b63090f18951c071ae74ed36443a62cc6af4baad0480aa7bbac",
+      "restored_text_sha256": "126598b6542fe97022290d096cbe53355fdc7e6bfa1c52954d7058ad8548b795",
+      "restored_git_blob": "95bb06d298529cb2d601c19e47289ab4ebe00098",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_DomainLanguageSpecifying/full_text.md",
+      "source_pdf": "papers/2026_DomainLanguageSpecifying/Friedman_2026_Domain_ecd8519f.pdf",
+      "source_pdf_sha256": "ecd8519fc2a9a674bd8a4cf89f96122af76529c913e32bf880a7c842da08771a",
+      "before_text_sha256": "e3510d18858c911742d14dd2ea91d461fc726e48685fb6a5b2dbbd06f5a9e9f0",
+      "restored_text_sha256": "7be04cb518a3b939dfae1bae18e68656a453cc924c6b41c08be0e57193ad8803",
+      "restored_git_blob": "f1673bb4dbe48d658c39af3ab3b957215ea35c49",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_DuckRabbit/full_text.md",
+      "source_pdf": "papers/2026_DuckRabbit/Friedman_2026_Duckrabbit_3afefaee.pdf",
+      "source_pdf_sha256": "3afefaeeccb5616448cc6da83b5807dd996ccc96bfff113d635b8da140baea06",
+      "before_text_sha256": "d243514f65412a225e4649c5fde28cd8682ca181ace3721d4d46b88cfcc7089c",
+      "restored_text_sha256": "c9495d68364a48014bedac21e5b14215170f4469a324eb56307206c34446860a",
+      "restored_git_blob": "757b72260fb531a3084234bb374d704331ffca8d",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_ENTO/full_text.md",
+      "source_pdf": "papers/2026_ENTO/entofile-0.4.pdf",
+      "source_pdf_sha256": "0087617c01fcfe901259e4f76e8b8b560684bd297002b19b38f0fc9a0ff819f9",
+      "before_text_sha256": "6654c2a89103512fc2cd3d5455a601f6a64d1ee0f4e42975411b865b45351f87",
+      "restored_text_sha256": "6e91b67b36181fc6c95d0a00e21d5b4c5f0b228612e0917d313d74a8d98b9964",
+      "restored_git_blob": "389c240561d222d9cbd65fe4bfd84f9e77a64bf1",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_EditorialQualityAt/full_text.md",
+      "source_pdf": "papers/2026_EditorialQualityAt/Friedman_2026_Editorial_b59313ea.pdf",
+      "source_pdf_sha256": "b59313ea73cb3c639ef2c5acf76f64e9f68b99ab5db7ca951482d5c709c6346b",
+      "before_text_sha256": "d970a539b52f75b7ed23ebd526069384fd5441b5183da6db83e0582744085e6c",
+      "restored_text_sha256": "65bfcea754a4d01382b35f910508a1a0f471b0cd3a7d3409ac122788656d259c",
+      "restored_git_blob": "924ba05accbbb2dd4d69aebd1883f478c4a65d6e",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_EntomologicalLaw/full_text.md",
+      "source_pdf": "papers/2026_EntomologicalLaw/Friedman_2026_Entomological_5a189170.pdf",
+      "source_pdf_sha256": "5a1891704c285491c97297dea66e9a4ea019b2dabddcc28cb5aeb18d6a335225",
+      "before_text_sha256": "4ff6d3023108e2a03fafaa2a4ed193e0394e6b91ea709db0ee328da20bae2e2b",
+      "restored_text_sha256": "0928c6442be67b5e5fd9b30c691c88b00d819c7b24c7b88a3f506ef062078242",
+      "restored_git_blob": "e4060a6737c652e12bf9a0dff508bac9594d795d",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_ExploratoryDataAnalysis/full_text.md",
+      "source_pdf": "papers/2026_ExploratoryDataAnalysis/Friedman_2026_Exploratory_0b10852b.pdf",
+      "source_pdf_sha256": "0b10852bda89361cd71063867b55d9aed942881476867813facd549a961b0c1d",
+      "before_text_sha256": "e207d8d1e6953d2be0e8a2d2bd5e3645197210ceb6e307ce656d798aaf808789",
+      "restored_text_sha256": "fc65a151bdfd1075f5a3a8a246b7919b4edb7b91af07a643ca570bea0230e1f2",
+      "restored_git_blob": "89e6a0b3d38130979bbf1ddc4f99b630feeb354f",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_FEPLean/full_text.md",
+      "source_pdf": "papers/2026_FEPLean/fep_lean_v1_04-24-2026.pdf",
+      "source_pdf_sha256": "1cdb831fe6c9c46531f27b8aa661f9507b2a14664350ea5e3105311775e84526",
+      "before_text_sha256": "81bbf7eded007bafba2223f733743992e88c208e63538e7ce071917dc9ce0911",
+      "restored_text_sha256": "e33a13b5f15e5eee6a425e7621ec49a4c760a03317876c9af10e3420446554f7",
+      "restored_git_blob": "60cc81a87287f13888e055e176c9351370652cd0",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_FourfoldVision/full_text.md",
+      "source_pdf": "papers/2026_FourfoldVision/blake_fourfold_synergetics_combined.pdf",
+      "source_pdf_sha256": "a1812e2a64560100714c0a8e867a5e767f3cd58e2464cfdbfbe38c199f8555f4",
+      "before_text_sha256": "36464e768cd03bd0e7ee061f2d682c4c9e33b1d6c97aca1f621d62e70ea2c418",
+      "restored_text_sha256": "2d67f1238d76be9acab28d686721190c05693535d934b242f996f2d89163ab01",
+      "restored_git_blob": "85f0699db9af5733871742d03c9e8f9d24d0aa69",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_IllegalStatesMostly/full_text.md",
+      "source_pdf": "papers/2026_IllegalStatesMostly/Friedman_2026_Illegal_5bda439c.pdf",
+      "source_pdf_sha256": "5bda439c4af4d84b9d6d89513fb35d2ad391d2484fc16bf9f1338eab02161efb",
+      "before_text_sha256": "d7c1e132e89bd2d06d3786c8216535f99c54dac505653cacf85c55c3c3022750",
+      "restored_text_sha256": "f6fd70fc8d1d9681c21055bc9576a53ef994a3a9b05328f63877ee359a3ddf78",
+      "restored_git_blob": "0ae9ec238a7d91fa12ab5cc8b328f8085549ef1e",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_LineSet/full_text.md",
+      "source_pdf": "papers/2026_LineSet/line_set_combined.pdf",
+      "source_pdf_sha256": "00fe16032bb4965b226a7770718177c6843ef0d08c413d7b82f4261b929b6838",
+      "before_text_sha256": "ad620414c934a3b63a1586cdd57dc9c60ec7fdde46b341835f6c4f5838f31bf5",
+      "restored_text_sha256": "6c2a7bbfd53777a10e309dfcfbc2f530ba8aa8afcb2672c108d66bb47616d6eb",
+      "restored_git_blob": "2b4a2b5e7f756789d53ed6756d218028852baab7",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_LivingMetaAnalysis/full_text.md",
+      "source_pdf": "papers/2026_LivingMetaAnalysis/Friedman_2026_Living_412d4fcf.pdf",
+      "source_pdf_sha256": "412d4fcf4b0c2e14fb950f9080f107d81fd9a90dfdf216b9161a13833eff62ff",
+      "before_text_sha256": "400da1caec51ea0c82bfbfcf7d96a3b8f46514548adc213d58ed836bf3271c4b",
+      "restored_text_sha256": "4a44d3f3761c5a585727f1aaf0f93d68e8eeb9c2b1fad79e2fd355d24048e1f2",
+      "restored_git_blob": "73930c58ba0f1c55b02b558e8a6dc422efd39118",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_MappingWilliamBlake/full_text.md",
+      "source_pdf": "papers/2026_MappingWilliamBlake/blake_working_paper.pdf",
+      "source_pdf_sha256": "b5a20713e45ad739e759648ea96442d86d3fddb9f886111d9c5675c21392161f",
+      "before_text_sha256": "787b51a74bee3261efaf50abb702ef2567be182624a66ef175e47b9717034412",
+      "restored_text_sha256": "63e2b39398e938bebfa72cde08a5f0470f57b2cd435526daea4389f3acb68d47",
+      "restored_git_blob": "2c4dfa3f828122b311aa20f873046aadabaf8477",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_MusicNeverStopped/full_text.md",
+      "source_pdf": "papers/2026_MusicNeverStopped/Friedman_2026_Music_2d42bfd0.pdf",
+      "source_pdf_sha256": "2d42bfd04e0b32e4871d5bcbe2c65bcce58cca336da240af7c6fd03a6563a709",
+      "before_text_sha256": "f82afac844fb13c5d6c8ef0647ef739a541745b792559ae2c29d5fba6d3559c0",
+      "restored_text_sha256": "243509474f35e951aa1625632aeebdddafb21422d831d1ce8dbf7b0e8c0fc517",
+      "restored_git_blob": "6f8929c2dd32899d3a942824ffb5615d46bb5a82",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_PROJECTBONDSpecial/full_text.md",
+      "source_pdf": "papers/2026_PROJECTBONDSpecial/bond-manuscript_combined.pdf",
+      "source_pdf_sha256": "72634276f9a90f1318be80ff0ece561ace2ead85559d2c05a11b86915e61fa0e",
+      "before_text_sha256": "4753b9c6455078d61efc1a2d195e7eef123fab5b9b3b041ba55bf6b3261c88b6",
+      "restored_text_sha256": "37e54c80fa2f454a5b790ae3b0d76f4e7b96494368d6053f01897496555e238e",
+      "restored_git_blob": "ce35f2a915fb159ac819293de87ef4385c99f3ff",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_PolicyDistillationAs/full_text.md",
+      "source_pdf": "papers/2026_PolicyDistillationAs/Friedman_2026_Onpolicy_c6b5ec49.pdf",
+      "source_pdf_sha256": "c6b5ec494915e6e046f24cf723f8dbbf93a5b168544daed3cca14c089d4087aa",
+      "before_text_sha256": "5a8573b39c784c51b1783d8baf82814cbc74a2ff2abe7720ebeaee96928d64c3",
+      "restored_text_sha256": "6dc4bc63d005d1624d2cd306ffba622f261f0711018194278b0d1bb76ac4960d",
+      "restored_git_blob": "d4316a949f4cdd8ac6762f76a1c06ccbf36fb7b0",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_PolicyEntanglementActive/full_text.md",
+      "source_pdf": "papers/2026_PolicyEntanglementActive/Friedman_2026_Policy_ae7cdd62.pdf",
+      "source_pdf_sha256": "ae7cdd62929324101ead3eba8177199141b0089a9baf35558107149331666fde",
+      "before_text_sha256": "cf4b58f2f525afc344cc5807d66e888a78d2806ace0090f863fe03592fa08695",
+      "restored_text_sha256": "50e6fbb6bda73f55a92dc4aeeac08f04a127e57677e794796c50015f39183759",
+      "restored_git_blob": "57a90903f10b7b71c1707e5317360f096779c7dc",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_PoolsRulesTools/full_text.md",
+      "source_pdf": "papers/2026_PoolsRulesTools/Friedman_2026_Pools_6908c1a0.pdf",
+      "source_pdf_sha256": "6908c1a01fbcff12c33a409d16f438b4cd4583ab383780b7b95dda121c8dcd66",
+      "before_text_sha256": "a8fea942072626a38ff8cbf32be50c74eb68b91199fcdf98f90044c68c125cb6",
+      "restored_text_sha256": "1c35dfa86f433f6d14a25a958e795eb3758eb9282b935da22a31fbbb5d0d0368",
+      "restored_git_blob": "b70fdaadf02ae6fdce6ba1c1cdc7fb4857f4ea51",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_RecoveringLLMPersona/full_text.md",
+      "source_pdf": "papers/2026_RecoveringLLMPersona/Friedman_2026_Recovering_e1196698.pdf",
+      "source_pdf_sha256": "e1196698427f9fe04d1f3071705adb6e5459983649c78d7f5d074756e989148b",
+      "before_text_sha256": "4c13f4a4a2c70b5820427a72623dd3747c0ea7a4893d9526fddd4fc1033cfa08",
+      "restored_text_sha256": "6ca586f96b38aded015e244b497bdb6535b35f8590becd5475def86c548f29f8",
+      "restored_git_blob": "a21fe1b8f62356ad8d8493e1c17c5028d7c39c7a",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_RefinementGold/full_text.md",
+      "source_pdf": "papers/2026_RefinementGold/Friedman_2026_Refinement_36431789.pdf",
+      "source_pdf_sha256": "3643178951b267632e607606b6daaba21ea75d8f7590899948b5999d1854198b",
+      "before_text_sha256": "667f0302f08076da11fc52f40141ab396683f54eff4531328168fae999c824de",
+      "restored_text_sha256": "70664513ee039922aaed1292427c916171ca8726b29b5693e10c53e8e9b46b48",
+      "restored_git_blob": "447b5dfb452cd63a4d94c00b8e21c73b43a9c72a",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_RegisteredReportTemplate/full_text.md",
+      "source_pdf": "papers/2026_RegisteredReportTemplate/Friedman_2026_Registered_61a9addb.pdf",
+      "source_pdf_sha256": "61a9addb1b23d83637271bd0000584ebe920c944a3f54f95743e27a55c38b180",
+      "before_text_sha256": "33a22048c7c59a3b87f8b83ba5f5890ab6e68fae1aa9ae78051132d0c9f0b6d6",
+      "restored_text_sha256": "fc0fea1feabda24dab4fe6f4949645d2440a6721ef60fed92118545b498187c4",
+      "restored_git_blob": "362b59b01a356a66a39bb4190cebd67464652a5f",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_ReproducibleLiteratureSynthesis/full_text.md",
+      "source_pdf": "papers/2026_ReproducibleLiteratureSynthesis/Friedman_2026_Reproducible_003aed0d.pdf",
+      "source_pdf_sha256": "003aed0d68dc65ac8c588c3084dc72e9b9d2f2950b4866c4fd8ee7dbc753ddeb",
+      "before_text_sha256": "ed7990e7f90259e7ff19868c6ade50a5a76c18af2cc80a8222716e7f69f6b7ab",
+      "restored_text_sha256": "a34dc14b1649cdbf6495334442c59d96f04393abf7e55662cfa37f98936d39d7",
+      "restored_git_blob": "3e72ef6f568b935cc6c542ba9ac43006fcaa5b7b",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_ReproducibleResearch/full_text.md",
+      "source_pdf": "papers/2026_ReproducibleResearch/template_daf_v1_03202026.pdf",
+      "source_pdf_sha256": "e1e885b952d814a86e3d178c6e3bce82c78faf5fbd5e4d514b3fbd3e533d7fef",
+      "before_text_sha256": "d14906d6ea72b2f140846243d633e8389c1e098ca24f764792772ca70aecd8a7",
+      "restored_text_sha256": "7b7ded517171060879a469c2a5ec8e64b0a80eb0ea5b0299f29a40ff4927cd85",
+      "restored_git_blob": "7ad696690c43546b43f6a672e7ebade3ad9f3aae",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_RobustBeliefSharing/full_text.md",
+      "source_pdf": "papers/2026_RobustBeliefSharing/active_fedference_combined.pdf",
+      "source_pdf_sha256": "78aef444aa56b584977e8ace939bd99c6b048b615f72fd042ffdf0a9d393be15",
+      "before_text_sha256": "6f7135a08acdca55eeee69eeb55533000d4f5d3da4b0b1b1cbb6c34c7405b6b6",
+      "restored_text_sha256": "0b7c673154605b510a0503b398966cafb7d294096d3dea1502cffe569881f0f5",
+      "restored_git_blob": "ccb647db54b06d6e6b2ca73681d2f2b217dde83f",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_SelfImprovementAgent/full_text.md",
+      "source_pdf": "papers/2026_SelfImprovementAgent/Friedman_2026_Selfimprovement_6e6d19d0.pdf",
+      "source_pdf_sha256": "6e6d19d04182628bb825471cf8094b5c32d2c491d2c646652ec7e2439ba80773",
+      "before_text_sha256": "8794f754aed9935e85f0ee4b95dcc71ea08d01ad022668ee330966993b4dc0d2",
+      "restored_text_sha256": "9259ded509f487bac01ce7578b300b17e84be72249ccf574e19348d079c40476",
+      "restored_git_blob": "3cdee0cecc2bc31ba14a84772296e445a569db50",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_SortitionUpstreamNTQR/full_text.md",
+      "source_pdf": "papers/2026_SortitionUpstreamNTQR/Friedman_2026_Sortition_73289489.pdf",
+      "source_pdf_sha256": "73289489d2d123f198ccee83adac10e61a752805d908970030c2d5ac009061e4",
+      "before_text_sha256": "e7af225fe4d2090872e7e144077cd16d2722665eb6564014566b6e6b30fc3e24",
+      "restored_text_sha256": "5590910b62753ff80b169cc65bf358b6ffc7a7dfece715dcb1c6feda338088af",
+      "restored_git_blob": "a6f32f9ce231cb9ad1504ec939746890315048f9",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_SynthOBSFractiSynth/full_text.md",
+      "source_pdf": "papers/2026_SynthOBSFractiSynth/SynthOBS_v1.618.0.pdf",
+      "source_pdf_sha256": "30d05a8669e6f8cbeb8fa706ea402808694cd260a5170076816c7f7b39608315",
+      "before_text_sha256": "256f553f92a443df2f349e99ee0b376bb458819e977f0b2a419425f238112eb6",
+      "restored_text_sha256": "1d57de6da70c3426022a73cff7fe658f54d7e7792fbc20cf7aca3945f9a49b62",
+      "restored_git_blob": "a2658e6c76f33e8e70e2e3dac1820135a3eaa136",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_THALIA/full_text.md",
+      "source_pdf": "papers/2026_THALIA/thalia-0.1.0.pdf",
+      "source_pdf_sha256": "063278d477bdfadf821e62f1719a0860ced187a458256e2e399b9a8e2715eede",
+      "before_text_sha256": "a13c224adbfb8c3cc61c9e5d09eb19f89e51cb6b5beddfaae3e5e019cfe2def6",
+      "restored_text_sha256": "f79bc579b0951495f6af26dbed88a5ae4b3bd511eef5ee2189bab44f45f1dbdb",
+      "restored_git_blob": "9fdf809fa88a2d0a96dbd635d514dc1c96acdd5d",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_TemplateApproachReproducible/full_text.md",
+      "source_pdf": "papers/2026_TemplateApproachReproducible/Friedman_2026_Template_cc674248.pdf",
+      "source_pdf_sha256": "cc674248dd0a2a59e1c3f26a557474bb1561d6b7926036ac9e6d050a810f87ad",
+      "before_text_sha256": "7a3c0c7a9fd68184b3e9c1afc528d8611ae9998bbca9bf3d48b057ce4743a179",
+      "restored_text_sha256": "797d5dc337adb69bc763c4df287b02433e0ce0eaa7f1e3ad464c6e369677116c",
+      "restored_git_blob": "7428aff54eb3ee9d4b5e81f7c7e7d8cc2f067ac4",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_TemplateMadlib/full_text.md",
+      "source_pdf": "papers/2026_TemplateMadlib/Friedman_2026_Template_d9248f4f.pdf",
+      "source_pdf_sha256": "d9248f4f372fc3baf21cbf5cc5cdb7daffe0e22e62ac6fa2e3a697a26f3308b6",
+      "before_text_sha256": "9f5e386b4cc3317b3875ce0d28f18837ad3c04b20ac7eb14a2459c7e2a409599",
+      "restored_text_sha256": "a18fd46a948765ee88b5fcc97e6825a7691d782ebe97af732a604689afa1e68a",
+      "restored_git_blob": "5385e45be862c158f3190dc7ef8f757bebc60756",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    },
+    {
+      "text_path": "papers/2026_TemplateTextbook/full_text.md",
+      "source_pdf": "papers/2026_TemplateTextbook/Friedman_2026_Template_c6c97f24.pdf",
+      "source_pdf_sha256": "c6c97f24b860f1972e3437f13ce71c2d967399d6d5d5ded1ba39eae2f38ecc2d",
+      "before_text_sha256": "80d1b0d8499d2596dda7069ad2103f8030994b4282a6d6416489df613f06a025",
+      "restored_text_sha256": "62e1edc6897e714155ece79d497d6439e9308867d00ffea224d5de68a57f300c",
+      "restored_git_blob": "a3cdba82bfd747219cab9b967efe6acc55f7fe0f",
+      "decision": "Recovered literal archived-PDF paths; no PDF or publication-claim changes."
+    }
+  ]
+}

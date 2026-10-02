@@ -81,7 +81,7 @@
     {
       "name": "Deterministic seeded regeneration of all outputs",
       "description": "The pipeline regenerates figures, data, and reports from the same config and source code; the reported run used seed 431.",
-      "evidence": "The refinery pipeline is fully deterministic. Given the same docs/manuscript/config.yaml and src/ code, every run produces identical output."
+      "evidence": "The refinery pipeline is fully deterministic. Given the same manuscript/config.yaml and src/ code, every run produces identical output."
     }
   ],
   "key_findings": [

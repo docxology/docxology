@@ -32,6 +32,12 @@ Values below are the source of truth in [`style.css`](../../style.css) `:root`; 
 
 Hero artwork is tokenized as `--art-a` … `--art-e` (`assets/hero-art/*.webp`).
 
+The homepage composition lives in [`css/home.css`](../../css/home.css), using
+these shared tokens for its masthead, reading paths, profile disclosure, and
+Curio Cards. The three card tiles display complete numbered images with their
+original 3:4 proportions. Sources, exact image hashes, and artwork rights are
+recorded in [`assets/curio-cards/`](../../assets/curio-cards/README.md).
+
 ## Typography
 
 - **Body:** `'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif` (`font-size: 17px`); no runtime font provider is required

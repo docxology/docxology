@@ -48,6 +48,14 @@
 
 ### Quality Checks (spot-check after adds)
 
+Treat `full_text.md` as extracted source text. Directory migrations and link
+repairs must not rewrite literal paths, code, or quotations inside the paper.
+Regenerate from the identified archived document when extraction needs repair;
+record its hash and verify affected evidence quotations against that source.
+Keep newer extractions when they supersede an older version. Source-custody
+receipts distinguish exact byte identity, sampled PDF checks, and quotation
+matching from a complete independent extraction or research replication.
+
 Universal baseline (every paper folder, regardless of when it was created):
 
 | Check | Status |
@@ -55,14 +63,14 @@ Universal baseline (every paper folder, regardless of when it was created):
 | README.md present | required per folder; current coverage is generated in [`../reports/current_counts.md`](../reports/current_counts.md) |
 | AGENTS.md present | required per folder |
 | SKILL.md present | required per folder |
-|| SKILL.md YAML frontmatter (name, description, tags, domain, citation) | required per folder |
-|| SKILL.md `## Context` section | required |
-|| SKILL.md `## Methods` section | required |
-|| SKILL.md `## Key Findings` section | required |
-|| SKILL.md `## Related Works` section | required |
-|| SKILL.md `## Validation` section | required |
-|| SKILL.md `## Prerequisites` section | required |
-|| SKILL.md `## Instructions` section | required |
+| SKILL.md YAML frontmatter (name, description, tags, domain, citation) | required per folder |
+| SKILL.md `## Context` section | required |
+| SKILL.md `## Methods` section | required |
+| SKILL.md `## Key Findings` section | required |
+| SKILL.md `## Related Works` section | required |
+| SKILL.md `## Validation` section | required |
+| SKILL.md `## Prerequisites` section | required |
+| SKILL.md `## Instructions` section | required |
 
 Additional files required
 

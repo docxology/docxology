@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import socket
 import subprocess
 import time
@@ -63,6 +64,13 @@ def wait_for_server(url: str) -> None:
     raise RuntimeError(f"Server did not become ready: {url}")
 
 
+def public_diagnostic(output: str, repo_root: Path) -> str:
+    """Keep useful capture diagnostics without publishing the workspace path."""
+    # Normalize before truncation: a retained suffix must not reveal part of
+    # an absolute path whose beginning was discarded by the diagnostic limit.
+    return output.replace(str(repo_root) + os.sep, "").replace(str(repo_root), ".").strip()[-500:]
+
+
 def run_smoke() -> dict:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     port = free_port()
@@ -101,8 +109,8 @@ def run_smoke() -> dict:
                     "ok": proc.returncode == 0 and out.exists(),
                     "screenshot": str(out.relative_to(REPO_ROOT)) if out.exists() else "",
                     "screenshot_sha256": sha256_file(out) if out.exists() else "",
-                    "stdout": proc.stdout.strip()[-500:],
-                    "stderr": proc.stderr.strip()[-500:],
+                    "stdout": public_diagnostic(proc.stdout, REPO_ROOT),
+                    "stderr": public_diagnostic(proc.stderr, REPO_ROOT),
                 }
             )
         manifest = {

@@ -253,7 +253,7 @@ Claim boundaries travel with prose, Forks must add validators, Invariants preced
 is a method artifact, Fork migration is part of the method. These principles prevent the Mad Lib surface from becoming a hidden
 authoring channel. They require the visible manuscript to stay downstream of declared inputs, the generated outputs to remain
 disposable, and the audit surface to be broad enough for a reviewer to reconstruct how a sentence reached the PDF.
-The operational phases are Schema intake maps docs/manuscript/config.yaml to MadlibConfig; Scenario declaration maps MadlibConfig to
+The operational phases are Schema intake maps manuscript/config.yaml to MadlibConfig; Scenario declaration maps MadlibConfig to
 review scenario; Field-origin inventory maps MadlibConfig and raw YAML keys to configured_field_inventory.json; Lexicon validation
 maps madlib.lexicon and madlib.slots to validated slot inventory; Digest token planning maps MadlibConfig to TokenPlan; Invariant
 review maps TokenPlan and method protocol to selection invariant set; Slot-to-section allocation maps TokenPlan to section token
@@ -374,7 +374,7 @@ Transformation
 Output
 Guard
 Schema intake
-docs/manuscript/config.yaml
+manuscript/config.yaml
 Load paper metadata
 and validate the madlib
 schema before
@@ -565,7 +565,7 @@ Ingest declared manuscript
 schema
 Parse paper metadata and the
 madlib block from
-docs/manuscript/config.yaml before
+manuscript/config.yaml before
 any prose or figures are
 composed.
 Config validation tests and
@@ -1046,69 +1046,69 @@ STUDY_ADJECTIVE
 adjectives
 reviewable
 abstract
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 STUDY_NOUN
 nouns
 pipeline
 abstract
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 STUDY_VERB
 verbs
 hydrate
 abstract
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 INTRO_NOUNS_1
 nouns
 protocol
 introduction
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 INTRO_NOUNS_2
 nouns
 section
 introduction
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 INTRO_NOUNS_3
 nouns
 lexicon
 introduction
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 INTRO_NOUNS_4
 nouns
 artifact
 introduction
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 INTRO_VERBS_1
 verbs
 condition
 introduction
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 INTRO_VERBS_2
 verbs
 bind
 introduction
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 INTRO_VERBS_3
 verbs
 bind
 introduction
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 INTRO_VERBS_4
 verbs
 compose
 introduction
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 METHOD_NAME
 methods
 conditional section
 hydration
 methods
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 METHOD_CONSTRAINT
 constraints
 publication claims stay
 local until release
 methods
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 
 ![page14_img1.png](images/page14_img1.png)
 
@@ -1123,146 +1123,146 @@ METHOD_ARTIFACT_1
 artifacts
 token-injection flow
 methods
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 METHOD_ARTIFACT_2
 artifacts
 quality-gate matrix
 methods
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 METHOD_QUALITY_1
 qualities
 claim humility
 methods
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 METHOD_QUALITY_2
 qualities
 render readiness
 methods
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 RESULT_MEASURE_1
 measures
 provenance coverage
 results
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 RESULT_MEASURE_2
 measures
 evidence registry
 cleanliness
 results
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 RESULT_MEASURE_3
 measures
 category density
 results
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 RESULT_ARTIFACT_1
 artifacts
 configured-field figures
 results
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 RESULT_ARTIFACT_2
 artifacts
 token inventory
 results
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 DISCUSSION_ADJECTIVE
 adjectives
 auditable
 discussion
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 DISCUSSION_AUDIENCE_1
 audiences
 pipeline maintainers
 discussion
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 DISCUSSION_AUDIENCE_2
 audiences
 research educators
 discussion
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 CONFIG_CONSTRAINT
 constraints
 disabled sections retain
 explicit traceability
 configuration
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 EVALUATION_MEASURE_1
 measures
 copied output readiness
 evaluation
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 EVALUATION_MEASURE_2
 measures
 figure registry
 completeness
 evaluation
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 EVALUATION_MEASURE_3
 measures
 category density
 evaluation
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 EVALUATION_ARTIFACT_1
 artifacts
 manuscript variable
 map
 evaluation
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 EVALUATION_ARTIFACT_2
 artifacts
 provenance trace map
 evaluation
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 REPRODUCIBILITY_ARTIFA
 CT_1
 artifacts
 section plan
 reproducibility
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 REPRODUCIBILITY_ARTIFA
 CT_2
 artifacts
 manuscript variable
 map
 reproducibility
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 LIMITATION_FAILURE_1
 failures
 domain misuse
 limitations
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 LIMITATION_FAILURE_2
 failures
 overclaimed generated
 prose
 limitations
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 LIMITATION_FAILURE_3
 failures
 figure provenance gap
 limitations
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 SCOPE_CONSTRAINT
 constraints
 all lexicon entries live in
 config
 scope
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 SCOPE_AUDIENCE
 audiences
 pipeline maintainers
 scope
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 AUTHORING_AUDIENCE
 audiences
 manuscript reviewers
 authoring_contract
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 AUTHORING_QUALITY
 qualities
 render readiness
 authoring_contract
-docs/manuscript/config.yaml#madl
+manuscript/config.yaml#madl
 4.2
 Provenance Matrix
 Section
@@ -2291,7 +2291,7 @@ handoff?
 method_protocol includes
 rows for every major pipeline
 responsibility.
-docs/manuscript/config.yaml and o
+manuscript/config.yaml and o
 utput/data/section_plan.json
 Field-origin visibility
 Can a reviewer tell which
@@ -2669,7 +2669,7 @@ Review config diffs
 Treat lexicon, slot, title, move, and
 section-switch edits as source-data
 changes.
-docs/manuscript/config.yaml
+manuscript/config.yaml
 Extend claim evidence
 Update the claim ledger when generated
 prose adds a new claim boundary.

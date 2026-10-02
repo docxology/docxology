@@ -479,8 +479,16 @@ ARTIFACTS = [
     },
     {
         "name": "Search index",
-        "outputs": ["search-index.json"],
-        "sources": ["data/*.json", "data/work-enrichment.json", "code/src/abstract_text.py"],
+        "outputs": ["search-index.json", "search-index-core.json", "search-index-content-work.json", "search-index-content-video.json"],
+        "sources": [
+            "data/*.json", "papers/*/full_text.md", "papers/*/images/*",
+            "reports/reconciliation_*.md", "reports/public_source_inventory_*.json",
+            "reports/accessibility_static_*.json", "reports/external_links_[0-9]*.json",
+            "reports/external_links_triage_*.md", "reports/asset_size_*.json",
+            "reports/live_site_verification_*.json", "reports/visual-qa/*/manifest.json",
+            "reports/browser-smoke/*/manifest.json", "code/orchestrators/build_search_index.py",
+            "code/src/abstract_text.py",
+        ],
         "command": "python3 code/orchestrators/build_search_index.py",
     },
     {

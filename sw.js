@@ -1,5 +1,5 @@
 // Small offline shell; visited content is cached on demand, never bulk-downloaded.
-const CACHE_NAME = 'daf-portfolio-v24';
+const CACHE_NAME = 'daf-portfolio-v25';
 const CACHE_PREFIX = 'daf-portfolio-';
 const SHELL_CACHE = `${CACHE_NAME}-shell`;
 // Keep successful visited content across shell updates for returning visitors.
@@ -11,7 +11,7 @@ const MAX_NETWORK_BODY_BYTES = 16 * 1024 * 1024;
 const NETWORK_HEADER_TIMEOUT_MS = 5000;
 const NETWORK_BODY_TIMEOUT_MS = 25000;
 const STATIC_ASSETS = [
-  '/', '/index.html', '/style.css', '/favicon.ico', '/manifest.json',
+  '/', '/index.html', '/style.css', '/css/home.css', '/favicon.ico', '/manifest.json',
   '/js/index-page.js', '/js/interactive.js', '/js/menu-esc.js',
   '/js/tts-controls.js', '/js/search-utils.js', '/js/nav-toggle.js'
 ];

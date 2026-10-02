@@ -63,9 +63,9 @@ Through [COGSEC.org](https://cogsec.org) (the Cognitive Security and Education F
 
 Friedman's artistic practice includes abstract black-and-white pen drawings, collaborative art paradigms (Partner Pen Play in Parallel), and deep explorations of William Blake and Buckminster Fuller. His work on synergetics encompasses formal mathematical treatments of quadray/IVM coordinate systems, symbolic synergetics, and software implementations (QuadCraft, symergetics, ivm-xyz). Curio Cards debuted on Ethereum on May 9, 2017, and all original cards were minted in 2017. Friedman created three pen drawings for Cards 24, 25, and 26:
 
-- **Card 24** — "Complexity" (333 copies): fragmented geometric fields inspired by brains, ant colonies, and complex systems
-- **Card 25** — (222 copies): rhythmic patterns exploring complexity, passion, and education
-- **Card 26** — (106 copies, rarest in set): playful decreasing supply mechanic; last recorded sale at **17.9 ETH** (>$44,000)
+- **[Card 24 — Complexity](https://curio.cards/card/24/)**: ink-drawn patterns exploring relationships across systems
+- **[Card 25 — Passion](https://curio.cards/card/25/)**: a meditation on the energy of living processes
+- **[Card 26 — Education](https://curio.cards/card/26/)**: geometric patterns reflecting improvement and discovery
 
 Founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, the 30-card collection from **seven artists** (Cryptograffiti, Cryptopop, Daniel Friedman, Marisol Vengas, Phneep, Robek World, Thoros of Myr) was sold directly on-chain for $0.50–$1.00 per card using individual ERC-20 contracts (predating ERC-721). A full set of Curio Cards plus the rare "17b" misprint sold at **Christie's New York** on September 30, 2021 for **$1,202,108 (393 ETH)**.
 
