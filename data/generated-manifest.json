@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T16:54:52Z",
+  "generated_at": "2026-10-02T17:28:07Z",
   "artifacts": [
     {
       "name": "Paper folder doc regeneration",
@@ -595,7 +595,8 @@
       ],
       "sources": [
         "data/*.json",
-        "data/work-enrichment.json"
+        "data/work-enrichment.json",
+        "code/src/abstract_text.py"
       ],
       "command": "python3 code/orchestrators/build_search_index.py"
     },
