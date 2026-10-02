@@ -110,6 +110,13 @@ receipts; local tests alone do not establish successful deployment. The fresh
 external-link capture records its dirty worktree honestly and is an outbound
 observation, rather than clean candidate release evidence.
 
+A pre-publication hosted run caught an ambiguous clipboard-test selector after
+asynchronous search results added more headings. The regression tests now scope
+clicks and completion assertions to the intended Research heading while keeping
+the real search rendering, pending clipboard promise, query-preservation, and
+unavailable/denied clipboard checks. The failed run is retained in Actions;
+the replacement candidate must pass the complete hosted gate before publication.
+
 Independent source review checked the title pages, Crossref publication year,
 GitHub repository identities, pinned README hash, public-text privacy, all active
 work keys, retired reservations, and Scholar snapshot binding. Independent code

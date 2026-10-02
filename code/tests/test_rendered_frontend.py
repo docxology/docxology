@@ -159,13 +159,15 @@ def test_section_copy_reports_success_after_resolution_and_preserves_query(front
         page = context.new_page()
         page.add_init_script("Object.defineProperty(navigator, 'clipboard', {configurable:true, value:{writeText:url=>{window.copiedURL=url; return new Promise(resolve=>window.finishCopy=resolve);}}});")
         page.goto(frontend_site + "/index.html?q=paper", wait_until="load")
-        link = page.locator(".anchor-link")
+        page.locator("#results h2").first.wait_for()
+        link = page.locator("#topic h2 .anchor-link")
+        assert link.count() == 1
         link.click()
         page.wait_for_function("typeof window.finishCopy === 'function'")
         assert link.inner_text() == "#"
         assert page.evaluate("window.copiedURL") == frontend_site + "/index.html?q=paper#topic"
         page.evaluate("window.finishCopy()")
-        page.wait_for_function("document.querySelector('.anchor-link').textContent === '✓'")
+        page.wait_for_function("document.querySelector('#topic h2 .anchor-link').textContent === '✓'")
         context.close()
         browser.close()
 
@@ -182,9 +184,12 @@ def test_section_copy_unavailable_or_denied_uses_real_anchor(frontend_site, clip
         page.on("pageerror", lambda error: errors.append(str(error)))
         page.add_init_script("Object.defineProperty(navigator, 'clipboard', {configurable:true, value:" + clipboard + "});")
         page.goto(frontend_site + "/index.html", wait_until="load")
-        page.locator(".anchor-link").click()
+        page.locator("#results h2").first.wait_for()
+        link = page.locator("#topic h2 .anchor-link")
+        assert link.count() == 1
+        link.click()
         page.wait_for_function("location.hash === '#topic'")
-        assert page.locator(".anchor-link").inner_text() == "#"
+        assert link.inner_text() == "#"
         assert not errors
         context.close()
         browser.close()
