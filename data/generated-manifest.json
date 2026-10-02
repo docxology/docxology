@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T17:28:07Z",
+  "generated_at": "2026-10-02T22:15:43Z",
   "artifacts": [
     {
       "name": "Paper folder doc regeneration",
@@ -591,11 +591,25 @@
     {
       "name": "Search index",
       "outputs": [
-        "search-index.json"
+        "search-index.json",
+        "search-index-core.json",
+        "search-index-content-work.json",
+        "search-index-content-video.json"
       ],
       "sources": [
         "data/*.json",
-        "data/work-enrichment.json",
+        "papers/*/full_text.md",
+        "papers/*/images/*",
+        "reports/reconciliation_*.md",
+        "reports/public_source_inventory_*.json",
+        "reports/accessibility_static_*.json",
+        "reports/external_links_[0-9]*.json",
+        "reports/external_links_triage_*.md",
+        "reports/asset_size_*.json",
+        "reports/live_site_verification_*.json",
+        "reports/visual-qa/*/manifest.json",
+        "reports/browser-smoke/*/manifest.json",
+        "code/orchestrators/build_search_index.py",
         "code/src/abstract_text.py"
       ],
       "command": "python3 code/orchestrators/build_search_index.py"
@@ -734,8 +748,8 @@
     {
       "name": "Browser smoke checks",
       "outputs": [
-        "reports/browser-smoke/2026-09-30/*.png",
-        "reports/browser-smoke/2026-09-30/manifest.json"
+        "reports/browser-smoke/2026-10-02/*.png",
+        "reports/browser-smoke/2026-10-02/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -747,7 +761,7 @@
     {
       "name": "Progressive browser QA",
       "outputs": [
-        "reports/browser-qa/2026-09-30/manifest.json"
+        "reports/browser-qa/2026-10-02/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -844,8 +858,8 @@
     {
       "name": "Visual QA",
       "outputs": [
-        "reports/visual-qa/2026-09-30/*.png",
-        "reports/visual-qa/2026-09-30/manifest.json"
+        "reports/visual-qa/2026-10-02/*.png",
+        "reports/visual-qa/2026-10-02/manifest.json"
       ],
       "sources": [
         "root HTML pages",
