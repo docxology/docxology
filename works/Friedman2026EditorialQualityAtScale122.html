@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editorial Quality at Scale: A Reproducible Prose-Review Pipeline — Daniel Ari Friedman</title>
-    <meta name="description" content="This paper documents template prose project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It…">
+    <meta name="description" content="This paper documents template_prose_project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It…">
     <meta name="robots" content="index, follow">
+    <meta name="citation_title" content="Editorial Quality at Scale: A Reproducible Prose-Review Pipeline">
+    <meta name="citation_publication_date" content="2026">
+    <meta name="citation_author" content="Daniel Ari Friedman">
+    <meta name="citation_doi" content="10.5281/zenodo.20417104">
+    <meta name="citation_pdf_url" content="https://danielarifriedman.com/papers/2026_EditorialQualityAt/Friedman_2026_Editorial_b59313ea.pdf">
     <link rel="canonical" href="https://danielarifriedman.com/works/Friedman2026EditorialQualityAtScale122.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
@@ -28,7 +33,7 @@
     <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Editorial Quality at Scale: A Reproducible Prose-Review Pipeline">
-    <meta property="og:description" content="This paper documents template prose project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It…">
+    <meta property="og:description" content="This paper documents template_prose_project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It…">
     <meta property="og:url" content="https://danielarifriedman.com/works/Friedman2026EditorialQualityAtScale122.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
@@ -36,32 +41,13 @@
     <meta property="og:image:alt" content="Editorial Quality at Scale: A Reproducible Prose-Review Pipeline — Daniel Ari Friedman">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Editorial Quality at Scale: A Reproducible Prose-Review Pipeline">
-    <meta name="twitter:description" content="This paper documents template prose project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It…">
+    <meta name="twitter:description" content="This paper documents template_prose_project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Editorial Quality at Scale: A Reproducible Prose-Review Pipeline — Daniel Ari Friedman">
-    <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260530c">
+    <link rel="stylesheet" href="../style.css?v=work-access-20261001">
     <meta name="theme-color" content="#0c0c0e">
     <style>
-        .work-hero{max-width:960px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}
-        .work-hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2rem,4vw,3.4rem);line-height:1.12;margin-bottom:1rem}
-        .meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}
-        .meta-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}
-        .meta-card strong{display:block;color:var(--gold);margin-bottom:.25rem}
-        .cite-box{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;line-height:1.7;color:var(--text-secondary)}
-        .work-detail{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.15rem;line-height:1.75;color:var(--text-secondary)}
-        .work-detail ul{margin-left:1.2rem}
-        .keyword-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem}
-        .keyword-row span{border:1px solid var(--border);border-radius:999px;padding:.2rem .55rem;color:var(--silver-bright);font-size:.76rem;background:rgba(255,255,255,.03)}
-        .platform-card{grid-column:1/-1}
-        .platform-list{list-style:none;padding:0;margin:.35rem 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.25rem .9rem;font-size:.85rem}
-        .platform-list a{color:var(--silver-bright);text-decoration:none}
-        .platform-list a:hover{text-decoration:underline}
-        .platform-list .muted{color:var(--text-muted)}
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
-        .related-list{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}
-        .related-list li{padding:.6rem .9rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}
-        .related-list a{color:var(--silver-bright);text-decoration:none}
-        .related-list a:hover{text-decoration:underline}
     </style>
     <script type="application/ld+json">
 {
@@ -70,17 +56,6 @@
     "@id": "https://danielarifriedman.com/works/Friedman2026EditorialQualityAtScale122.html#work",
     "name": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
     "headline": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
-    "author": {
-        "@type": "Person",
-        "@id": "https://danielarifriedman.com/#person",
-        "name": "Daniel Ari Friedman",
-        "url": "https://danielarifriedman.com/",
-        "sameAs": [
-            "https://orcid.org/0000-0001-6232-9096",
-            "https://www.wikidata.org/wiki/Q138781444",
-            "https://www.flickr.com/photos/daniel_friedman/"
-        ]
-    },
     "datePublished": "2026",
     "url": "https://danielarifriedman.com/works/Friedman2026EditorialQualityAtScale122.html",
     "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026EditorialQualityAtScale122.html",
@@ -126,6 +101,17 @@
         "https://danielarifriedman.com/papers/2026_EditorialQualityAt/"
     ],
     "image": "https://danielarifriedman.com/og-publications.jpg",
+    "author": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/",
+        "sameAs": [
+            "https://orcid.org/0000-0001-6232-9096",
+            "https://www.wikidata.org/wiki/Q138781444",
+            "https://www.flickr.com/photos/daniel_friedman/"
+        ]
+    },
     "identifier": [
         {
             "@type": "PropertyValue",
@@ -143,7 +129,7 @@
         "@type": "Organization",
         "name": "Zenodo"
     },
-    "abstract": "This paper documents template prose project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It pairs the template's two-layer architecture with the prose analysis infrastructure (https://github.com/docxology/template/tree/main/infrastructure/prose) (readability metrics, structural outline, editorial quality flags) and the reference validation...",
+    "abstract": "This paper documents template_prose_project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It pairs the template's two-layer architecture with the prose analysis infrastructure (https://github.com/docxology/template/tree/main/infrastructure/prose) (readability metrics, structural outline, editorial quality flags) and the reference validation infrastructure (https://github.com/docxology/template/tree/main/infrastructure/reference) (BibTeX validation), demonstrating that rigorous editorial review can be expressed as a configurable, deterministic pipeline with no novel domain algorithm of its own.\n\nA single manuscript/config.yaml defines target grade-level bands, citation-density floors, structural rules (every section has an H1, no heading levels skipped), and bibliography-consistency policy. The pipeline reads the manuscript, runs the prose analysers, cross-checks every  citation against manuscript/references.bib, evaluates the configured checks, and writes a deterministic markdown review report alongside three figures (per-file word counts, readability metrics, citation density) and a JSON manuscript_report.json suitable for CI artefacts.\n\nRun snapshot. The current configuration analyses 8 file(s) totalling 1742 words across 86 sentence(s) and 64 paragraph(s). Average Flesch-Kincaid grade level is 15.93; average Gunning Fog index is 16.69; the manuscript references 6 unique citation key(s); the longest section is 413 words and the shortest is 17. These numbers are auto-substituted by scripts/z_generate_manuscript_variables.py after every run, so the abstract tracks the JSON outputs in output/.\n\nThe contribution is methodological and architectural: a generic, reusable prose-quality module (infrastructure/prose/) that any project in the template can opt into, plus a minimal, configurable exemplar (projects/templates/template_prose_project/) that wires it to the bibliography and the manuscript pipeline.\n\nKeywords: prose analysis, readability, editorial review, reproducible manuscript review, scientific infrastructure\n\n---\nAssociated artifacts\nGitHub release: v0.4.2 (https://github.com/docxology/template_prose_project/releases/tag/v0.4.2)\nDOI: https://doi.org/10.5281/zenodo.20417104\nZenodo: https://zenodo.org/records/20417104\nPDF SHA-256: 290d21b10bd588b978d6a3200cdf0e3c2441ca86fcdc777ab41975fa910a260e",
     "keywords": [
         "prose analysis",
         "readability",
@@ -151,19 +137,45 @@
         "reproducible research",
         "manuscript quality"
     ],
-    "description": "The paper reports that editorial review can be expressed as a configurable, deterministic pipeline with no novel domain algorithm of its own. On the bundled manuscript, the run analysed 8 files totalling 1731 words, with average Flesch-Kincaid grade 15.87 and Gunning Fog 16.67. Because no external service is consulted, a second run on the same inputs produces byte-identical JSON (modulo timestamp metadata). The stated contribution is architectural: a reusable prose-quality module any template project can opt into, plus a minimal configurable exemplar. Five-stage pure-function pipeline: read, analyse, cross-check, evaluate, render — template prose project implements editorial review as five p",
+    "description": "The paper reports that editorial review can be expressed as a configurable, deterministic pipeline with no novel domain algorithm of its own. On the bundled manuscript, the run analysed 8 files totalling 1731 words, with average Flesch-Kincaid grade 15.87 and Gunning Fog 16.67. Because no external service is consulted, a second run on the same inputs produces byte-identical JSON (modulo timestamp metadata). The stated contribution is architectural: a reusable prose-quality module any template project can opt into, plus a minimal configurable exemplar. Five-stage pure-function pipeline: read, analyse, cross-check, evaluate, render — template_prose_project implements editorial review as five p",
     "citation": "Friedman, Daniel Ari. 2026. Editorial Quality at Scale: A Reproducible Prose-Review Pipeline. Zenodo. DOI: 10.5281/zenodo.20417104. URL: https://doi.org/10.5281/zenodo.20417104.",
     "hasPart": {
         "@type": "CreativeWork",
-        "name": "Local paper documentation",
+        "name": "Paper documentation and source files",
         "url": "https://github.com/docxology/docxology/tree/main/papers/2026_EditorialQualityAt"
     },
-    "encoding": {
-        "@type": "TextObject",
-        "encodingFormat": "text/markdown",
-        "url": "https://danielarifriedman.com/papers/2026_EditorialQualityAt/full_text.md",
-        "name": "Full text (extracted)"
-    }
+    "encoding": [
+        {
+            "@type": "MediaObject",
+            "encodingFormat": "application/pdf",
+            "contentUrl": "https://danielarifriedman.com/papers/2026_EditorialQualityAt/Friedman_2026_Editorial_b59313ea.pdf",
+            "url": "https://danielarifriedman.com/papers/2026_EditorialQualityAt/Friedman_2026_Editorial_b59313ea.pdf",
+            "name": "Friedman_2026_Editorial_b59313ea.pdf",
+            "contentSize": "270739 bytes"
+        },
+        {
+            "@type": "TextObject",
+            "encodingFormat": "text/markdown",
+            "url": "https://danielarifriedman.com/papers/2026_EditorialQualityAt/full_text.md",
+            "name": "Full text (extracted)"
+        }
+    ],
+    "associatedMedia": [
+        {
+            "@type": "MediaObject",
+            "encodingFormat": "application/pdf",
+            "name": "Friedman_2026_Editorial_290d21b1.pdf",
+            "contentUrl": "https://danielarifriedman.com/papers/2026_EditorialQualityAt/Friedman_2026_Editorial_290d21b1.pdf",
+            "contentSize": "132373 bytes"
+        },
+        {
+            "@type": "MediaObject",
+            "encodingFormat": "application/pdf",
+            "name": "Friedman_2026_Editorial_cbe5adae.pdf",
+            "contentUrl": "https://danielarifriedman.com/papers/2026_EditorialQualityAt/Friedman_2026_Editorial_cbe5adae.pdf",
+            "contentSize": "270712 bytes"
+        }
+    ]
 }
     </script>
     <script type="application/ld+json">
@@ -193,7 +205,7 @@
 }
     </script>
 </head>
-<body>
+<body class="work-page">
     <a href="#main" class="skip-link">Skip to main content</a>
     <nav aria-label="Main navigation">
         <a href="../index.html" class="nav-logo">Daniel Ari Friedman</a>
@@ -237,51 +249,55 @@
         <h1>Editorial Quality at Scale: A Reproducible Prose-Review Pipeline</h1>
         <p class="byline">Daniel Ari Friedman</p>
         <p class="sub">Zenodo</p>
+<div class="work-actions" role="group" aria-label="Read and download this work"><a class="btn btn-gold" href="../papers/2026_EditorialQualityAt/Friedman_2026_Editorial_b59313ea.pdf" download="Friedman_2026_Editorial_b59313ea.pdf" type="application/pdf">Download PDF</a>
+<a class="btn btn-outline" href="https://doi.org/10.5281/zenodo.20417104">Publication source</a>
+<a class="btn btn-outline" href="https://github.com/docxology/docxology/tree/main/papers/2026_EditorialQualityAt">Paper folder on GitHub</a>
+<a class="btn btn-outline" href="../papers/2026_EditorialQualityAt/full_text.md">Read extracted text</a></div>
     </header>
     <main id="main" class="main">
-        <section class="section">
-            <div class="meta-grid">
-                <div class="meta-card"><strong>Catalog Row</strong>122</div>
-                <div class="meta-card"><strong>Citation Key</strong>Friedman2026EditorialQualityAtScale122</div>
-                <div class="meta-card"><strong>Paper Folder</strong>Available</div>
-                <div class="meta-card"><strong>DOI</strong><a href="https://doi.org/10.5281/zenodo.20417104">10.5281/zenodo.20417104</a></div>
-                <div class="meta-card platform-card"><strong>Platform availability</strong><ul class="platform-list"><li>✅ <a href="https://doi.org/10.5281/zenodo.20417104">Zenodo</a></li><li>✅ <a href="https://github.com/docxology/template">GitHub</a></li><li class="muted">⬜ arXiv</li><li class="muted">⬜ OSF</li><li class="muted">⬜ HuggingFace</li><li class="muted">⬜ Software Heritage</li><li class="muted">⬜ PyPI</li><li>✅ <a href="https://danielarifriedman.com/papers/2026_EditorialQualityAt/">Full documentation</a></li></ul></div>
-            </div>
-        </section>
 
         <section class="section">
-            <div class="section-header"><h2>Overview</h2><p>Extracted from the local paper documentation when available.</p><div class="section-divider"></div></div>
-            <div class="work-detail">
-                <p>This paper documents template prose project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It pairs the template&#x27;s two-layer architecture with the prose analysis infrastructure (https://github.com/docxology/template/tree/main/infrastructure/prose) (readability metrics, structural outline, editorial quality flags) and the reference validation...</p>
-                <div class="keyword-row"><span>prose analysis</span><span>readability</span><span>editorial review</span><span>reproducible research</span><span>manuscript quality</span></div>
-            </div>
+            <div class="section-header"><h2>Overview</h2><div class="section-divider"></div></div>
+            <div class="work-detail"><p>This paper documents template_prose_project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It pairs the template&#x27;s two-layer architecture with the prose analysis infrastructure (https://github.com/docxology/template/tree/main/infrastructure/prose) (readability metrics, structural outline, editorial quality flags) and the reference validation infrastructure (https://github.com/docxology/template/tree/main/infrastructure/reference) (BibTeX validation), demonstrating that rigorous editorial review can be expressed as a configurable, deterministic pipeline with no novel domain algorithm of its own.
+
+A single manuscript/config.yaml defines target grade-level bands, citation-density floors, structural rules (every section has an H1, no heading levels skipped), and bibliography-consistency policy. The pipeline reads the manuscript, runs the prose analysers, cross-checks every  citation against manuscript/references.bib, evaluates the configured checks, and writes a deterministic markdown review report alongside three figures (per-file word counts, readability metrics, citation density) and a JSON manuscript_report.json suitable for CI artefacts.
+
+Run snapshot. The current configuration analyses 8 file(s) totalling 1742 words across 86 sentence(s) and 64 paragraph(s). Average Flesch-Kincaid grade level is 15.93; average Gunning Fog index is 16.69; the manuscript references 6 unique citation key(s); the longest section is 413 words and the shortest is 17. These numbers are auto-substituted by scripts/z_generate_manuscript_variables.py after every run, so the abstract tracks the JSON outputs in output/.
+
+The contribution is methodological and architectural: a generic, reusable prose-quality module (infrastructure/prose/) that any project in the template can opt into, plus a minimal, configurable exemplar (projects/templates/template_prose_project/) that wires it to the bibliography and the manuscript pipeline.
+
+Keywords: prose analysis, readability, editorial review, reproducible manuscript review, scientific infrastructure
+
+---
+Associated artifacts
+GitHub release: v0.4.2 (https://github.com/docxology/template_prose_project/releases/tag/v0.4.2)
+DOI: https://doi.org/10.5281/zenodo.20417104
+Zenodo: https://zenodo.org/records/20417104
+PDF SHA-256: 290d21b10bd588b978d6a3200cdf0e3c2441ca86fcdc777ab41975fa910a260e</p><div class="keyword-row" aria-label="Keywords"><span>prose analysis</span><span>readability</span><span>editorial review</span><span>reproducible research</span><span>manuscript quality</span></div><p class="summary-sources abstract-source">Overview source: <a href="../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section section-alt">
-            <div class="section-header"><h2>Use Notes</h2><p>Concise findings and methods pulled from README/SKILL documentation.</p><div class="section-divider"></div></div>
-            <div class="meta-grid"><div class="work-detail"><strong>Findings / Concepts</strong><ul><li>The paper reports that editorial review can be expressed as a configurable, deterministic pipeline with no novel domain algorithm of its own.</li><li>On the bundled manuscript, the run analysed 8 files totalling 1731 words, with average Flesch-Kincaid grade 15.87 and Gunning Fog 16.67.</li><li>Because no external service is consulted, a second run on the same inputs produces byte-identical JSON (modulo timestamp metadata).</li><li>The stated contribution is architectural: a reusable prose-quality module any template project can opt into, plus a minimal configurable exemplar.</li></ul></div><div class="work-detail"><strong>Methods / Techniques</strong><ul><li>Five-stage pure-function pipeline: read, analyse, cross-check, evaluate, render — template prose project implements editorial review as five pure-function stages in src/, with scripts limited to argument parsing and I/O.</li><li>Readability metrics: Flesch Reading Ease, Flesch-Kincaid grade, Gunning Fog — Per-file metrics are computed with textbook readability formulae over a vowel-group syllable heuristic.</li><li>Heuristic quality flags: passive voice, hedge density, citation density — A quality analyser flags passive-voice candidates, hedge words, Pandoc [@key] citation density, and long sentences.</li><li>Citation-key cross-check against references.bib with configurable policy — Every cited key is matched against the BibTeX file, with fail on missing / fail on unused settings in config.yaml.</li><li>Run-twice diff test for byte-identical JSON output — Reproducibility is checked locally by running the pipeline twice and diffing manuscript report.json.</li></ul></div></div>
+            <div class="section-header"><h2>Methods and contributions</h2><p>Read the source for the full argument, qualifications, and evidence.</p><div class="section-divider"></div></div>
+            <div class="work-summary-grid"><div class="work-detail"><h3>Findings and contributions</h3><ul><li>The paper reports that editorial review can be expressed as a configurable, deterministic pipeline with no novel domain algorithm of its own.</li><li>On the bundled manuscript, the run analysed 8 files totalling 1731 words, with average Flesch-Kincaid grade 15.87 and Gunning Fog 16.67.</li><li>Because no external service is consulted, a second run on the same inputs produces byte-identical JSON (modulo timestamp metadata).</li><li>The stated contribution is architectural: a reusable prose-quality module any template project can opt into, plus a minimal configurable exemplar.</li></ul></div><div class="work-detail"><h3>Methods</h3><ul><li>Five-stage pure-function pipeline: read, analyse, cross-check, evaluate, render — template_prose_project implements editorial review as five pure-function stages in src/, with scripts limited to argument parsing and I/O.</li><li>Readability metrics: Flesch Reading Ease, Flesch-Kincaid grade, Gunning Fog — Per-file metrics are computed with textbook readability formulae over a vowel-group syllable heuristic.</li><li>Heuristic quality flags: passive voice, hedge density, citation density — A quality analyser flags passive-voice candidates, hedge words, Pandoc [@key] citation density, and long sentences.</li><li>Citation-key cross-check against references.bib with configurable policy — Every cited key is matched against the BibTeX file, with fail_on_missing / fail_on_unused settings in config.yaml.</li><li>Run-twice diff test for byte-identical JSON output — Reproducibility is checked locally by running the pipeline twice and diffing manuscript_report.json.</li></ul></div></div><p class="summary-sources">Summary sources: <a href="../papers/2026_EditorialQualityAt/metadata.json">Paper metadata and evidence</a> · <a href="../papers/2026_EditorialQualityAt/full_text.md">Extracted source text</a>.</p>
+        </section>
+<section class="section" id="downloads" aria-labelledby="downloads-title">
+            <div class="section-header"><h2 id="downloads-title">PDF downloads</h2><p>Archived files available directly from this site.</p><div class="section-divider"></div></div>
+            <div class="work-detail"><ul class="download-list"><li><a href="../papers/2026_EditorialQualityAt/Friedman_2026_Editorial_290d21b1.pdf" download="Friedman_2026_Editorial_290d21b1.pdf" type="application/pdf">Friedman_2026_Editorial_290d21b1.pdf</a><span class="muted"> PDF · 0.13 MiB</span></li><li><a href="../papers/2026_EditorialQualityAt/Friedman_2026_Editorial_b59313ea.pdf" download="Friedman_2026_Editorial_b59313ea.pdf" type="application/pdf">Friedman_2026_Editorial_b59313ea.pdf</a><span class="muted"> PDF · 0.26 MiB · extracted-text source</span></li><li><a href="../papers/2026_EditorialQualityAt/Friedman_2026_Editorial_cbe5adae.pdf" download="Friedman_2026_Editorial_cbe5adae.pdf" type="application/pdf">Friedman_2026_Editorial_cbe5adae.pdf</a><span class="muted"> PDF · 0.26 MiB</span></li></ul><p class="muted">These files may be different versions or companion documents. The archive does not identify a latest edition.</p></div>
         </section>
         <section class="section section-alt">
-            <div class="section-header"><h2>Citation</h2><p>Plain-text citation for quick reuse.</p><div class="section-divider"></div></div>
+            <div class="section-header"><h2>Citation</h2><p>Citation metadata follows the unified bibliography.</p><div class="section-divider"></div></div>
             <div class="cite-box">Friedman, Daniel Ari. 2026. Editorial Quality at Scale: A Reproducible Prose-Review Pipeline. Zenodo. DOI: 10.5281/zenodo.20417104. URL: https://doi.org/10.5281/zenodo.20417104.</div>
-            <p class="text-center mt-2">
-                <a class="btn btn-gold" href="https://doi.org/10.5281/zenodo.20417104">Primary source</a>
-                <button type="button" class="btn btn-outline" id="cite-bibtex-btn" aria-label="Copy BibTeX entry to clipboard">Copy BibTeX</button>
-        <script type="application/x-bibtex" id="work-bibtex">@article{Friedman2026EditorialQualityAtScale122,
-  title = {Editorial Quality at Scale: A Reproducible Prose-Review Pipeline},
-  author = {Friedman, Daniel Ari},
-  year = {2026},
-  journal = {Zenodo},
-  doi = {10.5281/zenodo.20417104},
-  url = {https://doi.org/10.5281/zenodo.20417104},
-  keywords = {Computational; Paper},
-  note = {Catalog row 122; docs: papers/2026_EditorialQualityAt/}
-}</script>
-                <a class="btn btn-outline" href="../papers/2026_EditorialQualityAt/">Documentation</a>
-                <a class="btn btn-outline" href="../papers/2026_EditorialQualityAt/full_text.md">Full Text</a>
-                <a class="btn btn-outline" href="https://github.com/docxology/docxology/tree/main/papers/2026_EditorialQualityAt/images">Image Gallery</a>
-                <a class="btn btn-outline" href="https://github.com/docxology/template_prose_project">Source repository</a>
-                <a class="btn btn-outline" href="../bibliography.bib">BibTeX</a>
-            </p>
+            <div class="work-actions"><button type="button" class="btn btn-outline" id="cite-bibtex-btn" aria-label="Copy BibTeX entry to clipboard">Copy BibTeX</button>
+        <script type="application/json" id="work-bibtex">"@article{Friedman2026EditorialQualityAtScale122,\n  title = {Editorial Quality at Scale: A Reproducible Prose-Review Pipeline},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.20417104},\n  url = {https://doi.org/10.5281/zenodo.20417104},\n  keywords = {Computational; Paper},\n  note = {Catalog row 122; docs: papers/2026_EditorialQualityAt/}\n}"</script>
+<a class="btn btn-outline" href="../bibliography.bib" download>Download bibliography</a></div>
+        </section>
+        <section class="section">
+            <div class="section-header"><h2>Catalog details and resources</h2><div class="section-divider"></div></div>
+            <div class="meta-grid"><div class="meta-card"><strong>Catalog row</strong><a href="../publications.html">122</a></div>
+<div class="meta-card"><strong>Citation key</strong>Friedman2026EditorialQualityAtScale122</div>
+<div class="meta-card"><strong>DOI</strong><a href="https://doi.org/10.5281/zenodo.20417104">10.5281/zenodo.20417104</a></div>
+<div class="meta-card platform-card"><strong>Platform availability</strong><ul class="platform-list"><li>✅ <a href="https://doi.org/10.5281/zenodo.20417104">Zenodo</a></li><li>✅ <a href="https://github.com/docxology/template">GitHub</a></li><li class="muted">⬜ arXiv</li><li class="muted">⬜ OSF</li><li class="muted">⬜ HuggingFace</li><li class="muted">⬜ Software Heritage</li><li class="muted">⬜ PyPI</li><li>✅ <a href="https://danielarifriedman.com/papers/2026_EditorialQualityAt/">Full documentation</a></li></ul></div></div><div class="work-actions" role="group" aria-label="Documentation and related resources"><a class="btn btn-outline" href="../papers/2026_EditorialQualityAt/">Paper documentation</a>
+<a class="btn btn-outline" href="https://github.com/docxology/docxology/tree/main/papers/2026_EditorialQualityAt/images">Figures on GitHub</a>
+<a class="btn btn-outline" href="https://github.com/docxology/template_prose_project">Associated software repository</a></div>
         </section>
 
         <section class="section">
@@ -292,12 +308,12 @@
     </main>
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
-        <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite & Verify</a></p>
+        <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite &amp; Verify</a></p>
         <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/a3028183">build a3028183 2026-08-28</a></p>
     </footer>
 <script src="/js/search-utils.js?v=20260813"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
 <script src="/js/interactive.js?v=20260813" defer></script>
-<script src="/js/cite-export.js?v=20260829" defer></script>
+<script src="/js/cite-export.js?v=work-access-20261001" defer></script>
 <script src="/js/menu-esc.js?v=20260813" defer></script></body>
 </html>

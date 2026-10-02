@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> In this paper, we integrate conflict studies with Active Inference, a developing framework which provides an integrative and systems-level perspective on cognition and behavior. This formalization, the Active Inference Conflict (AIC) model, situates conflict in terms of a multiscale process of communication, trust, and relationship management enacted by interacting entities. The AIC model helps...
+> In this paper, we integrate conflict studies with Active Inference, a developing framework which provides an integrative and systems-level perspective on cognition and behavior. This formalization, the Active Inference Conflict (AIC) model, situates conflict in terms of a multiscale process of communication, trust, and relationship management enacted by interacting entities. The AIC model helps capture and extend the insights of previous models applied to aspects of conflict and war, such as OODA loops (observe-orient-decide-act), the generations of warfare model, and the Rumsfeld Matrix. The AIC model aids in the analysis of pertinent aspects of modern conflict, such as cyber, psychological, biological, informational, financial, and ideological conflict, that are not amenable to coherent or consistent analysis using traditional models of human conflict. AIC is demonstrated to be of use in both monitoring and studying conflict, as well as in designing systems intended to facilitate controlled or managed conflict in scenarios characterized by business, operations, legal, technical, and social (BOLTS) components. Insights and implications from qualitative use are used as a foundation for offering recommendations for future research and social systems design.
 
 ## Keywords
 

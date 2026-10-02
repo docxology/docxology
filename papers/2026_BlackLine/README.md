@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> A positive practice instrument for concise, inspectable, revisable work. It reads self-declared tags and evidence labels against a versioned practice registry and returns one of four statuses over declaration coverage. It measures whether the evidence a practice asks for was declared — never whether the work is true, good, or permitted; an ALIGNED reading authorizes nothing. Subtitle: A Positive...
+> A positive practice instrument for concise, inspectable, revisable work. It reads self-declared tags and evidence labels against a versioned practice registry and returns one of four statuses over declaration coverage. It measures whether the evidence a practice asks for was declared — never whether the work is true, good, or permitted; an ALIGNED reading authorizes nothing. Subtitle: A Positive Operating Discipline for Concise, Rigorous Research and Engineering Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.
 
 ## Keywords
 

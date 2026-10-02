@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> The collective behavior of ant colonies, and locomotion of individuals within a colony, both respond to changing conditions. The invasive Argentine ant (Linepithema humile) thrives in Mediterranean climates with hot, dry summers and colder, wet winters. However, its foraging behavior and locomotion has rarely been studied in the winter. We examined how the foraging behavior of three distinct L...
+> The collective behavior of ant colonies, and locomotion of individuals within a colony, both respond to changing conditions. The invasive Argentine ant (Linepithema humile) thrives in Mediterranean climates with hot, dry summers and colder, wet winters. However, its foraging behavior and locomotion has rarely been studied in the winter. We examined how the foraging behavior of three distinct L. humile colonies was related to environmental conditions and the locomotion of workers during winter in northern California. We found that colonies foraged most between 10 and 15˚C, regardless of the maximum daily temperature. Worker walking speed was positively associated with temperature (range 6–24˚C) and negatively associated with humidity (range 25–93%RH). All colonies foraged during all day and night hours in a predictable daily cycle, with a correlation between the rate of incoming and outgoing foragers. Foraging activity was unrelated to the activity of a competing native ant species, Prenolepis imparis, which was present in low abundance, and ceased only during heavy rain when ants left foraging trails and aggregated in small sheltered areas on trees.
 
 ## Keywords
 

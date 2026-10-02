@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognition, life, and consciousness. Friston recounts how watching woodlice scurry in sunlight and slow in shade led to the insight that biological self-organization can be explained by principles of...
+> In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognition, life, and consciousness. Friston recounts how watching woodlice scurry in sunlight and slow in shade led to the insight that biological self-organization can be explained by principles of self-organization. The conversation covers the FEP's relationship to Bayesian inference, predictive process
 
 ## Keywords
 

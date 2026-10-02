@@ -11,7 +11,7 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
-    <link rel="stylesheet" href="../../style.css?v=newspaper-glitch-20260530c">
+    <link rel="stylesheet" href="../../style.css?v=work-access-20261001">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
@@ -34,18 +34,10 @@
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)">
     <style>
-        .paper-hero{max-width:980px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}
-        .paper-hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2rem,4vw,3.35rem);line-height:1.12;margin-bottom:1rem}
-        .artifact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-        .artifact-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;line-height:1.7}
-        .artifact-card strong{display:block;color:var(--gold);margin-bottom:.25rem}
-        .artifact-card ul{margin-left:1.1rem}
-        .muted{color:var(--text-muted);font-size:.86rem}
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
-        .overview-box{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.15rem;line-height:1.75;color:var(--text-secondary)}
     </style>
 </head>
-<body>
+<body class="paper-page">
     <a href="#main" class="skip-link">Skip to main content</a>
     <nav aria-label="Main navigation">
         <a href="../../index.html" class="nav-logo">Daniel Ari Friedman</a>
@@ -87,6 +79,7 @@
         <p class="eyebrow"><a href="../../domain-cognitive-security.html">Cognitive Security</a> · Paper · 2026</p>
         <h1>Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)</h1>
         <p class="sub">Documentation folder for catalog row 5 · <a href="../../works/Friedman2026CognitiveIntegrityFrameworkFormal005.html">Canonical work page</a></p>
+        <div class="work-actions" role="group" aria-label="Paper source files"><a class="btn btn-outline" href="https://github.com/docxology/docxology/tree/main/papers/2026_CognitiveIntegrity">Paper folder on GitHub</a></div>
     </header>
     <main id="main" class="main">
         <section class="section">
@@ -97,8 +90,8 @@
             </div>
         </section>
         <section class="section section-alt">
-            <div class="section-header"><h2>Overview</h2><p>Extracted from the local README when available.</p><div class="section-divider"></div></div>
-            <div class="overview-box"><p>Multiagent AI systems introduce cognitive attack surfaces absent in single-model inference. When agents delegate to agents, forming beliefs about beliefs through recursive trust hierarchies, manipulation of reasoning processes—rather than mere data corruption—becomes a primary security concern. This paper presents the Cognitive Integrity Framework (CIF), providing formal foundations for cognitive...</p></div>
+            <div class="section-header"><h2>Overview</h2><p>Curated abstract when available.</p><div class="section-divider"></div></div>
+            <div class="overview-box"><p>Multiagent AI systems introduce cognitive attack surfaces absent in single-model inference. When agents delegate to agents, forming beliefs about beliefs through recursive trust hierarchies, manipulation of reasoning processes—rather than mere data corruption—becomes a primary security concern. This paper presents the Cognitive Integrity Framework (CIF), providing formal foundations for cognitive security in multiagent operators. We develop four interconnected theoretical contributions: a Trust Calculus with bounded delegation (exponential 𝛿𝑑 decay) that prevents trust amplification through delegation chains; a Defense Composition Algebra with series and parallel composition theorems establishing multiplicative detection bounds; Information-Theoretic Limits relating stealth constraints to maximum attack impact through a fundamental stealth-impact tradeoff; and a formal Adversary Hierarchy (Ω1–Ω5) characterizing external, peripheral, agent-level, coordination, and systemic threats with increasing capability and decreasing detectability. The framework provides complete coverage of the OWASP Top 10 for Agentic Applications through formal threat models grounded in cognitive state manipulation rather than traditional input/output filtering. CIF bridges classical security concepts with the cognitive requirements of agentic systems. We extend Byzantine fault tolerance to cognitive manipulation—agents that appear functional but hold corrupted beliefs—and adapt trust management systems to continuous trust evolution with provable decay bounds. The framework formalizes five architectural defense mechanisms (cognitive firewalls, belief sandboxing, behavioral tripwires, provenance tracking, Byzantine consensus) with composition rules enabling formal reasoning about layered security. Technical foundations include: operational semantics for message passing and trust updates; invariants for belief integrity, goal preservation, and trust boundedness; model checking configurations for safety property verification; and a complete notation system for attack parameterization, defense specification, and cognitive state representation. This is Part 1 of a three-part series: Part 1 (this paper, DOI: 10.5281/zenodo.18364119) presents formal foundations and theoretical analysis; Part 2 (DOI: 10.5281/zenodo.18364128) provides computational validation and implementation; Part 3 (DOI: 10.5281/zenodo.18364130) offers practical deployment guidance. The framework will continue to be developed and versioned at https://github.com/docxology/cognitive_integrity/ .</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section">
             <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation and PDFs served directly from this folder.</p><div class="section-divider"></div></div>
@@ -107,16 +100,17 @@
 <a class="btn btn-outline" href="AGENTS.md">AGENTS</a>
 <a class="btn btn-outline" href="SKILL.md">SKILL</a>
 <a class="btn btn-outline" href="metadata.json">Metadata</a>
-<a class="btn btn-outline" href="full_text.md">Full Text</a></p></div>
-                <div class="artifact-card"><strong>PDF Files</strong><ul><li><a href="2026_CognitiveIntegrity.pdf">2026_CognitiveIntegrity.pdf</a> <span class="muted">931,657 bytes</span></li></ul></div>
-                <div class="artifact-card"><strong>Extracted Content</strong><p><span class="muted">Full text extraction pending.</span></p></div>
+<a class="btn btn-outline" href="full_text.md">Extracted text</a>
+<a class="btn btn-outline" href="CITATION.cff">Citation metadata</a></p></div>
+                <div class="artifact-card"><strong>PDF Files</strong><ul><li><a href="../../papers/2026_CognitiveIntegrity/2026_CognitiveIntegrity.pdf" download="2026_CognitiveIntegrity.pdf" type="application/pdf">2026_CognitiveIntegrity.pdf</a> <span class="muted">931,657 bytes · extracted-text source</span></li></ul></div>
+                <div class="artifact-card"><strong>Extracted Content</strong><p><span class="muted">No extracted figures are archived.</span></p></div>
             </div>
         </section>
     </main>
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../../publications.html">Unified bibliography</a> · <a href="../../works/">Works index</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/526c3f392">build 526c3f392 2026-10-01</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/c12a6458d">build c12a6458d 2026-10-01</a></p>
     </footer>
 <script src="/js/search-utils.js?v=20260813"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

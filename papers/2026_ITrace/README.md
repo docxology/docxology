@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics. Version 0.4.1 is a diagnostic v1 release: the pure NumPy/SciPy core is algorithmically verified against synthetic and closed-loop oracles, the optional webcam shell exports derived records, and the empirical ledger covers a single-participant, single-device, five-session diagnostic pilot...
+> iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics. Version 0.4.1 is a diagnostic v1 release: the pure NumPy/SciPy core is algorithmically verified against synthetic and closed-loop oracles, the optional webcam shell exports derived records, and the empirical ledger covers a single-participant, single-device, five-session diagnostic pilot. This release does not claim reference-device accuracy, cross-device generality, population generality, or webcam-accuracy validation.
 
 ## Keywords
 

@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> A versioned, evidence-gated personal security boundary and explicit No document for dual-use development work. It requires a complete, reviewable action intake before returning compliance, distinguishes outside-scope work from compliance, and records uncertainty as a blocking result rather than a permission. It is a personal auditability aid, not enforcement, legal compliance, semantic safety...
+> A versioned, evidence-gated personal security boundary and explicit No document for dual-use development work. It requires a complete, reviewable action intake before returning compliance, distinguishes outside-scope work from compliance, and records uncertainty as a blocking result rather than a permission. It is a personal auditability aid, not enforcement, legal compliance, semantic safety classification, or external certification. Subtitle: An Evidence-Gated Personal Security Boundary and Explicit No Document for Dual-Use Development Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.
 
 ## Keywords
 

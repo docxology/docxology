@@ -75,7 +75,7 @@ INTERACTIVE_SCRIPTS = (
 
 # Copy-BibTeX wiring (js/cite-export.js). Loaded only on generated work pages
 # (build_work_pages.py); external file keeps the site CSP (script-src 'self').
-CITE_EXPORT_SCRIPT_TAG = '<script src="/js/cite-export.js?v=20260829" defer></script>'
+CITE_EXPORT_SCRIPT_TAG = '<script src="/js/cite-export.js?v=work-access-20261001" defer></script>'
 
 # Work pages that are duplicates of another catalogued work (same paper, different
 # Zenodo deposit/version) point their rel=canonical at the primary entry so search
@@ -329,7 +329,7 @@ def breadcrumb_list_jsonld(trail: list[tuple[str, str]]) -> dict:
 
 
 def breadcrumb_jsonld_script(trail: list[tuple[str, str]]) -> str:
-    payload = json.dumps(breadcrumb_list_jsonld(trail), indent=4, ensure_ascii=False)
+    payload = json.dumps(breadcrumb_list_jsonld(trail), indent=4, ensure_ascii=False).replace("<", "\\u003c")
     return f'    <script type="application/ld+json">\n{payload}\n    </script>'
 
 

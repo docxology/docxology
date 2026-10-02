@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> THALIA is an executable research harness for long-context memory systems. It combines typed stage contracts, inspectable context selection, evidence-preserving episodic state, lexical-first retrieval, and bounded compiler search with source-bound evaluation and reproducible artifact checks. The deterministic results are finite diagnostic evidence; model-quality, integrity-advantage, and...
+> THALIA is an executable research harness for long-context memory systems. It combines typed stage contracts, inspectable context selection, evidence-preserving episodic state, lexical-first retrieval, and bounded compiler search with source-bound evaluation and reproducible artifact checks. The deterministic results are finite diagnostic evidence; model-quality, integrity-advantage, and production-readiness claims remain separately gated.
 
 ## Keywords
 

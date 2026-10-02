@@ -10,11 +10,7 @@
 
 ## Abstract
 
-> The primary objectives of this Push and Pull document are to explore the decoupling of cognitive ( covert , attentional) and bodily ( overt ) behaviors , and to provide a sequence of hands-on computer exercises for further exploration . The priming sequence of exercises is presented to inform an individual’s understanding of how their attention interacts with computer use movements, such as...
-
-## Keywords
-
-`PushPull`
+> The primary objectives of this Push and Pull document are to explore the decoupling of cognitive ( covert , attentional) and bodily ( overt ) behaviors , and to provide a sequence of hands-on computer exercises for further exploration . The priming sequence of exercises is presented to inform an individual’s understanding of how their attention interacts with computer use movements, such as controlling the on-screen cursor with mouse, touchpad, or eye movements. What is presented here is only an initial sequence to complement other and future development of “hand-I” uncouplings, in principle and in practice.
 
 ## Methods
 

@@ -1,21 +1,23 @@
 #!/usr/bin/env python3
-"""Regenerate every locally-derived site artifact in one dependency-ordered pass.
+"""Regenerate locally-derived site artifacts with two ordered passes by default.
 
 `validate_repo.py` runs each generator with ``--check`` in its authoritative order and
 fails on the first stale output. There was no write-mode equivalent, so after a
 publication apply (or any source edit) the regeneration order had to be rediscovered by
 hand, re-running generators one at a time until `validate_repo.py` went green.
 
-This script encodes that order once, in *write* mode, so a single command rebuilds the
-generated layer deterministically from the current sources. The order below is
-dependency-correct (each step's inputs are produced by an earlier step). The integrity
+This script encodes the shared order in *write* mode. Some consumers precede a
+producer (counts/software, domain pages/work enrichment, and resume/folder flags),
+so the default second pass refreshes those consumers after their producers ran.
+Two passes address those known dependencies; ``--validate`` remains the authority
+for stale outputs and does not promise arbitrary fixed-point convergence. The integrity
 tail is deliberately explicit: Pages budget → generated manifest → agent index → release
 integrity → final generated manifest. The first generated-manifest pass must precede the
 agent index because the latter records the manifest hash; the final pass confirms the
 complete command matrix after release-integrity is written.
 
-Scope: LOCAL artifacts only. This script is deliberately offline and idempotent — run it
-as many times as you like and (absent a source edit) it changes nothing. Network
+Scope: LOCAL artifacts only. This script is deliberately offline; after the
+generated layer converges, repeated runs preserve its content. Network
 *freshness* operations are intentionally NOT bundled here, because each fetch writes a new
 dated report and mutates GitHub/Zenodo-derived data, which would make this command
 non-idempotent and inflate `reports/`. Run those deliberately instead (see
@@ -24,13 +26,14 @@ docs/operations/publication-sync.md → "Refresh Public Sources"):
     refresh_public_source_inventory.py, verify_live_site.py
 
 Usage:
-    uv run python3 code/orchestrators/regenerate_all.py            # rebuild local layer
+    uv run python3 code/orchestrators/regenerate_all.py            # two local passes
     uv run python3 code/orchestrators/regenerate_all.py --validate # then run validate_repo
     uv run python3 code/orchestrators/regenerate_all.py --force    # run every step, no skipping
+    uv run python3 code/orchestrators/regenerate_all.py --passes 1 # diagnostic single pass
     uv run python3 code/orchestrators/regenerate_all.py --list     # print the plan, run nothing
 
 This is the single write-mode entry point for the intake path: one command runs
-the full local chain once. Steps that declare ``inputs`` in
+the full local chain twice by default. Steps that declare ``inputs`` in
 ``code/src/generation_plan.py`` are skipped when those declared inputs hash to
 the same content as the previous successful run (persisted in
 ``reports/regeneration-state.json``, gitignored); ``--force`` disables
@@ -119,6 +122,34 @@ def run_regeneration(
     return ran, skipped
 
 
+def run_regeneration_passes(
+    *,
+    passes: int = 2,
+    force: bool = False,
+    runner: Callable[[str, list[str]], None] = _run,
+    repo_root: Path = REPO_ROOT,
+    emit: Callable[[str], None] = print,
+    steps: tuple[GenerationStep, ...] = LOCAL_GENERATION_STEPS,
+) -> tuple[int, int]:
+    """Run bounded ordered passes; validate only after the final one.
+
+    Keep ``run_regeneration`` as the single-pass API used by scoped callers.
+    A failed pass propagates immediately, preventing later passes or checks
+    from presenting a partial render as successful.
+    """
+    if not 1 <= passes <= 4:
+        raise ValueError("regeneration passes must be between 1 and 4")
+    ran = skipped = 0
+    for number in range(1, passes + 1):
+        emit(f"Local regeneration pass {number}/{passes}")
+        pass_ran, pass_skipped = run_regeneration(
+            force=force, runner=runner, repo_root=repo_root, emit=emit, steps=steps,
+        )
+        ran += pass_ran
+        skipped += pass_skipped
+    return ran, skipped
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
@@ -127,6 +158,8 @@ def main() -> int:
                         help="run validate_repo.py after regeneration")
     parser.add_argument("--force", action="store_true",
                         help="run every step even when its declared inputs are unchanged")
+    parser.add_argument("--passes", type=int, choices=range(1, 5), default=2,
+                        help="ordered local passes (default: 2; 1 is diagnostic)")
     parser.add_argument("--list", action="store_true", dest="list_only",
                         help="print the ordered plan and exit without running anything")
     args = parser.parse_args()
@@ -140,7 +173,7 @@ def main() -> int:
             print(line)
         return 0
 
-    ran, skipped = run_regeneration(force=args.force)
+    ran, skipped = run_regeneration_passes(force=args.force, passes=args.passes)
 
     print(f"\nRan {ran} local surfaces (skipped {skipped} with unchanged declared inputs).")
     print("Note: network freshness (GitHub inventory, live-site snapshot, public sources) "

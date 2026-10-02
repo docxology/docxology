@@ -12,10 +12,6 @@
 
 > Short overview of the concatenate amateur cat Combined with Beacons Bevcyc and demo 0.01 plan
 
-## Keywords
-
-`ConCatEnate2`
-
 ## Methods
 
 - **Proposed decomposable action-sequence cat agent with ROS-style checkpoints** — The pilot sketches a cat agent built from decomposable action sequences using ROS-style action checkpoints.

@@ -58,6 +58,12 @@ Hero artwork is tokenized as `--art-a` … `--art-e` (`assets/hero-art/*.webp`).
   an accessible mobile toggle (`.menu-btn` + `aria-expanded`, `.nav-links.open`)
 - `.page-hero` / `.section` / `.section-alt` rhythm
 - `.btn`, `.btn-gold`, `.btn-outline` for CTAs
+- Work and paper-folder pages share the stylesheet's editorial hero, readable
+  overview, source actions, summary, and download-list rules. Source actions
+  use `.work-actions` groups so they do not inherit the fixed site-navigation
+  layout. Filenames and citation identifiers wrap on small screens. A real
+  browser regression checks download bytes, exact citation copying, 320px
+  layout, enlarged text, and serious/critical accessibility violations.
 - Publications: `.pub-table`, `.filter-row`, `.domain-pill`
 - **TTS controls** (added 2026-07-05): floating toggle + panel; [`design/components/tts.md`](components/tts.md)
 - **Interactive:** reading progress bar, scroll-to-top, keyboard shortcuts overlay, search autocomplete, section anchor links ([`design/animations.md`](animations.md))

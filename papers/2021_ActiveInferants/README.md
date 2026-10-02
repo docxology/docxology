@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavioral modeling that is being applied across settings in theoretical biology and ethology. The ant colony is a classic case system in the function of distributed systems in terms of stigmergic...
+> In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavioral modeling that is being applied across settings in theoretical biology and ethology. The ant colony is a classic case system in the function of distributed systems in terms of stigmergic decision-making and information sharing. Here we specify and simulate a Markov decision process (MDP) model for ant colony foraging. We investigate a well-known paradigm from laboratory ant colony behavioral experiments, the alternating T-maze paradigm, to illustrate the ability of the model to recover basic colony phenomena such as trail formation after food location discovery. We conclude by outlining how the active inference ant colony foraging behavioral model can be extended and situated within a nested multiscale framework and systems approaches to biology more generally.
 
 ## Keywords
 

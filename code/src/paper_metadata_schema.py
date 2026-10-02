@@ -47,6 +47,7 @@ class PaperMetadata:
 
     # Technical
     files: list[dict[str, Any]] = field(default_factory=list)
+    primary_pdf: str | None = None  # Explicit source filename in this paper folder
     related_resources: list[dict[str, Any]] = field(default_factory=list)
 
     # Publication source
@@ -91,7 +92,7 @@ class PaperMetadata:
             "title", "version", "doi", "doi_url", "artifact_doi", "artifact_doi_url",
             "zenodo_record", "record_id",
             "publication_date", "resource_type", "domain", "type", "creators",
-            "description", "abstract", "keywords", "files", "related_resources",
+            "description", "abstract", "keywords", "files", "primary_pdf", "related_resources",
             "venue", "github_repo", "github_release_url", "release_tag", "release_name",
             "pdf_sha256", "pairing_confidence", "pairing_evidence", "checked_at",
             "methods", "key_findings", "related_papers", "related_software",

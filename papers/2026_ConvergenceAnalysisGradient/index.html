@@ -11,7 +11,7 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
-    <link rel="stylesheet" href="../../style.css?v=newspaper-glitch-20260530c">
+    <link rel="stylesheet" href="../../style.css?v=work-access-20261001">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
@@ -34,18 +34,10 @@
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Convergence Analysis of Gradient Descent Optimization">
     <style>
-        .paper-hero{max-width:980px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}
-        .paper-hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2rem,4vw,3.35rem);line-height:1.12;margin-bottom:1rem}
-        .artifact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-        .artifact-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;line-height:1.7}
-        .artifact-card strong{display:block;color:var(--gold);margin-bottom:.25rem}
-        .artifact-card ul{margin-left:1.1rem}
-        .muted{color:var(--text-muted);font-size:.86rem}
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
-        .overview-box{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.15rem;line-height:1.75;color:var(--text-secondary)}
     </style>
 </head>
-<body>
+<body class="paper-page">
     <a href="#main" class="skip-link">Skip to main content</a>
     <nav aria-label="Main navigation">
         <a href="../../index.html" class="nav-logo">Daniel Ari Friedman</a>
@@ -87,6 +79,7 @@
         <p class="eyebrow"><a href="../../domain-computational.html">Computational</a> · Paper · 2026</p>
         <h1>Convergence Analysis of Gradient Descent Optimization</h1>
         <p class="sub">Documentation folder for catalog row 121 · <a href="../../works/Friedman2026ConvergenceAnalysisGradientDescent121.html">Canonical work page</a></p>
+        <div class="work-actions" role="group" aria-label="Paper source files"><a class="btn btn-outline" href="https://github.com/docxology/docxology/tree/main/papers/2026_ConvergenceAnalysisGradient">Paper folder on GitHub</a></div>
     </header>
     <main id="main" class="main">
         <section class="section">
@@ -97,8 +90,23 @@
             </div>
         </section>
         <section class="section section-alt">
-            <div class="section-header"><h2>Overview</h2><p>Extracted from the local README when available.</p><div class="section-divider"></div></div>
-            <div class="overview-box"><p>This paper presents a convergence study of fixed-step gradient descent on a convex quadratic, framed as the computational exemplar of the Research Project Template (https://github.com/docxology/template). The implementation lives in projects/templates/template code project/src/optimizer.py; experiments and figures are orchestrated by...</p></div>
+            <div class="section-header"><h2>Overview</h2><p>Curated abstract when available.</p><div class="section-divider"></div></div>
+            <div class="overview-box"><p>This paper presents a convergence study of fixed-step gradient descent on a convex quadratic, framed as the computational exemplar of the Research Project Template (https://github.com/docxology/template). The implementation lives in projects/templates/template_code_project/src/optimizer.py; experiments and figures are orchestrated by projects/templates/template_code_project/scripts/optimization_analysis.py and hydrated into the manuscript through scripts/z_generate_manuscript_variables.py, so tables and prose track output/data/optimization_results.csv after every pipeline run.
+
+We evaluate 6 step sizes from $\alpha = 0.01$ to $\alpha = 2.5$, spanning conservative, near-optimal, aggressive, and divergent regimes for a unit Hessian model. The build chain exercises template infrastructure end-to-end: scientific helpers (infrastructure.scientific.stability, infrastructure.scientific.benchmarking), validation, rendering (infrastructure/rendering/pdf_renderer.py), and reporting. Accessibility-oriented plotting defaults (colourblind-safe palette, 300 dpi exports) are centralized in src/figures/ and src/analysis/.
+
+Contributions are methodological and architectural. On the methods side, we relate empirical iteration counts and error decay to the scalar contraction factor $\rho(\alpha) = |1-\alpha|$ and document cases where runs hit $N_{\max} = 1000$ before meeting the gradient tolerance. On the architecture side, we demonstrate a zero-mock test suite on project src/ (see test_optimizer.py (https://github.com/docxology/template/blob/main/projects/templates/template_code_project/tests/test_optimizer.py)), automated six-figure analysis, and reproducibility metadata (configuration hash, artifact counts) injected into .
+
+Results (this configuration): 4 of 6 grid points report converged=True in the CSV; non-convergent rows flag either slow progress at small $\alpha$ under the iteration cap or instability when $|1-\alpha| \geq 1$. The analytical minimizer remains $x^\ast = 1.0$ with $f(x^\ast) = -0.5$ for the configured $(A,b)$.
+
+Keywords: optimization algorithms, gradient descent, convergence analysis, numerical methods, mathematical programming, reproducible research, infrastructure automation
+
+---
+Associated artifacts
+GitHub release: v2.5.2 (https://github.com/docxology/template_code_project/releases/tag/v2.5.2)
+DOI: https://doi.org/10.5281/zenodo.20417136
+Zenodo: https://zenodo.org/records/20417136
+PDF SHA-256: cd54b95893501467503fab2c4b432573306bc94f7040085550beb87d094b4e50</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section">
             <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation and PDFs served directly from this folder.</p><div class="section-divider"></div></div>
@@ -107,10 +115,11 @@
 <a class="btn btn-outline" href="AGENTS.md">AGENTS</a>
 <a class="btn btn-outline" href="SKILL.md">SKILL</a>
 <a class="btn btn-outline" href="metadata.json">Metadata</a>
-<a class="btn btn-outline" href="full_text.md">Full Text</a></p></div>
-                <div class="artifact-card"><strong>PDF Files</strong><ul><li><a href="Friedman_2026_Convergence_33ceeb67.pdf">Friedman_2026_Convergence_33ceeb67.pdf</a> <span class="muted">1,725,781 bytes</span></li>
-<li><a href="Friedman_2026_Convergence_cd54b958.pdf">Friedman_2026_Convergence_cd54b958.pdf</a> <span class="muted">1,731,747 bytes</span></li>
-<li><a href="Friedman_2026_Convergence_d63f738b.pdf">Friedman_2026_Convergence_d63f738b.pdf</a> <span class="muted">1,727,340 bytes</span></li></ul></div>
+<a class="btn btn-outline" href="full_text.md">Extracted text</a>
+<a class="btn btn-outline" href="CITATION.cff">Citation metadata</a></p></div>
+                <div class="artifact-card"><strong>PDF Files</strong><ul><li><a href="../../papers/2026_ConvergenceAnalysisGradient/Friedman_2026_Convergence_33ceeb67.pdf" download="Friedman_2026_Convergence_33ceeb67.pdf" type="application/pdf">Friedman_2026_Convergence_33ceeb67.pdf</a> <span class="muted">1,725,781 bytes</span></li>
+<li><a href="../../papers/2026_ConvergenceAnalysisGradient/Friedman_2026_Convergence_cd54b958.pdf" download="Friedman_2026_Convergence_cd54b958.pdf" type="application/pdf">Friedman_2026_Convergence_cd54b958.pdf</a> <span class="muted">1,731,747 bytes · extracted-text source</span></li>
+<li><a href="../../papers/2026_ConvergenceAnalysisGradient/Friedman_2026_Convergence_d63f738b.pdf" download="Friedman_2026_Convergence_d63f738b.pdf" type="application/pdf">Friedman_2026_Convergence_d63f738b.pdf</a> <span class="muted">1,727,340 bytes</span></li></ul></div>
                 <div class="artifact-card"><strong>Extracted Content</strong><p><a class="btn btn-outline" href="https://github.com/docxology/docxology/tree/main/papers/2026_ConvergenceAnalysisGradient/images">Extracted Images (9) — GitHub</a> <span class="muted">+3 more</span><div class="image-thumbs"><a href="https://github.com/docxology/docxology/tree/main/papers/2026_ConvergenceAnalysisGradient/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_ConvergenceAnalysisGradient/images/page10_img1.png" alt="Figure from Convergence Analysis of Gradient Descent Optimization, page 10" loading="lazy"></a><a href="https://github.com/docxology/docxology/tree/main/papers/2026_ConvergenceAnalysisGradient/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_ConvergenceAnalysisGradient/images/page11_img1.png" alt="Figure from Convergence Analysis of Gradient Descent Optimization, page 11" loading="lazy"></a><a href="https://github.com/docxology/docxology/tree/main/papers/2026_ConvergenceAnalysisGradient/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_ConvergenceAnalysisGradient/images/page12_img1.png" alt="Figure from Convergence Analysis of Gradient Descent Optimization, page 12" loading="lazy"></a><a href="https://github.com/docxology/docxology/tree/main/papers/2026_ConvergenceAnalysisGradient/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_ConvergenceAnalysisGradient/images/page14_img1.png" alt="Figure from Convergence Analysis of Gradient Descent Optimization, page 14" loading="lazy"></a><a href="https://github.com/docxology/docxology/tree/main/papers/2026_ConvergenceAnalysisGradient/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_ConvergenceAnalysisGradient/images/page15_img1.png" alt="Figure from Convergence Analysis of Gradient Descent Optimization, page 15" loading="lazy"></a><a href="https://github.com/docxology/docxology/tree/main/papers/2026_ConvergenceAnalysisGradient/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_ConvergenceAnalysisGradient/images/page15_img2.png" alt="Figure from Convergence Analysis of Gradient Descent Optimization, page 15" loading="lazy"></a></div></p></div>
             </div>
         </section>
@@ -118,7 +127,7 @@
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../../publications.html">Unified bibliography</a> · <a href="../../works/">Works index</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/526c3f392">build 526c3f392 2026-10-01</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/c12a6458d">build c12a6458d 2026-10-01</a></p>
     </footer>
 <script src="/js/search-utils.js?v=20260813"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

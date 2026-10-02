@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> There are many areas of research defined by their interest in information dynamics related to facilitating organizational sensemaking, such as knowledge management, information management, and library science, and many more areas of research, disciplines, and even hobbies which are facing information-related challenges. While all may be concerned with very similar challenges, lack of information...
+> There are many areas of research defined by their interest in information dynamics related to facilitating organizational sensemaking, such as knowledge management, information management, and library science, and many more areas of research, disciplines, and even hobbies which are facing information-related challenges. While all may be concerned with very similar challenges, lack of information exchange and common ontology between these areas may be causing silos, missed opportunities, and potentially even friction among areas. In this paper, we address the need for synthesis and exchange of knowledge, tools, and approaches among various fields by proposing Narrative Information Management (NIM) as a unifying term and framework for the fundamental features and challenges of facilitating collective sensemaking. Through this framework, we offer an initial common set of features of impactful information systems found in literature on information-focused disciplines, such as knowledge management, and explore what insights and ad-hoc solutions may be found in an eclectic set of fields facing information challenges, including personal finance, ancestry research, hybrid cloud infrastructure security, translational neuroscience, and genomics. Finally, we offer recommendations for future research.
 
 ## Keywords
 

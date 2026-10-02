@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Research Question: How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? Goal: Extend Variational Neuroethology (Ramstead et al. 2017) to specify a tractable general framework for all Evolutionary studies, Biological and Otherwise. This would allow us to integrate current data across systems and suggest new...
+> Research Question: How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? Goal: Extend Variational Neuroethology (Ramstead et al. 2017) to specify a tractable general framework for all Evolutionary studies, Biological and Otherwise. This would allow us to integrate current data across systems and suggest new measurements/experiments/systems.
 
 ## Keywords
 

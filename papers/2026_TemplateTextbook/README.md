@@ -12,10 +12,6 @@
 
 > A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine.
 
-## Keywords
-
-`TemplateTextbook`
-
 ## Methods
 
 - **Single config.yaml source of truth for book structure** — Parts, chapters, front matter, appendices, labs and question banks are declared in config.yaml, from which TOC, numbering and integrity tests read.

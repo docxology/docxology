@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> A shared register that co-registers independent instruments' report envelopes without aggregating them. It stores each report's envelope verbatim, records cross-instrument relations as separate describing records, keeps history append-only and sealed, and — only when asked, for one declared next use — emits a bounded posture that always points back at the state that earned it. It never parses...
+> A shared register that co-registers independent instruments' report envelopes without aggregating them. It stores each report's envelope verbatim, records cross-instrument relations as separate describing records, keeps history append-only and sealed, and — only when asked, for one declared next use — emits a bounded posture that always points back at the state that earned it. It never parses, compares, ranks, averages, or merges any instrument's native status. Subtitle: A shared register for line report envelopes that never ranks, merges, or overrides the instruments it holds Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.
 
 ## Keywords
 

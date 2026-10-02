@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition. The study in comprehensivity explores structural parallels between Blake's prophetic vision and Fuller's design science, identifying convergences in their approaches to creativity, systems thinking, and human potential. Both figures challenged conventional boundaries...
+> A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition. The study in comprehensivity explores structural parallels between Blake's prophetic vision and Fuller's design science, identifying convergences in their approaches to creativity, systems thinking, and human potential. Both figures challenged conventional boundaries between disciplines and proposed integrative frameworks for understanding reality.
 
 ## Keywords
 

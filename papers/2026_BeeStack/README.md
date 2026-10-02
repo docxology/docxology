@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> BeeStack is an executable, evidence-typed research scaffold for whole-colony simulation of the Western honey bee (Apis mellifera), organized as five layers (Body, Brain, Mind, Swarm, Niche). It pairs FlyBody/MuJoCo body and small-scene swarm renders with curated empirical BeeBrain datasets and reduced deterministic kernels, keeping fidelity a declared per-module property: every quoted number is...
+> BeeStack is an executable, evidence-typed research scaffold for whole-colony simulation of the Western honey bee (Apis mellifera), organized as five layers (Body, Brain, Mind, Swarm, Niche). It pairs FlyBody/MuJoCo body and small-scene swarm renders with curated empirical BeeBrain datasets and reduced deterministic kernels, keeping fidelity a declared per-module property: every quoted number is traceable from configuration to artifact to manuscript, gaps are catalogued rather than hidden, and the validation rate is a config-band self-test measure, not a biological-realism score. This 1.0 release accompanies the manuscript 'BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation' and includes the combined PDF and the full source archive. Source: https://github.com/docxology/BeeStack
 
 ## Keywords
 

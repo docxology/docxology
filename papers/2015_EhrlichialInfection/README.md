@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> We hypothesize that a large group of medical conditions of unknown etiology including leukemia, multiple myeloma, myelodysplastic and autoimmune disorders, may be associated with or caused by an obscure group of intracellular obligate parasitic bacteria named Ehrlichia/Anaplasma (EA). Ensconced in the stem cells of the bone marrow, EA may disrupt the normal development and function of many of the...
+> We hypothesize that a large group of medical conditions of unknown etiology including leukemia, multiple myeloma, myelodysplastic and autoimmune disorders, may be associated with or caused by an obscure group of intracellular obligate parasitic bacteria named Ehrlichia/Anaplasma (EA). Ensconced in the stem cells of the bone marrow, EA may disrupt the normal development and function of many of the cells of immunity, manifesting itself as different syndromes. Recent studies of the activity of EA suggest direct effects on the immune system consistent with the manifestations of leukemia. We reference here three leukemia patients with direct or indirect evidence of EA infection. Moreover, EA have been shown to be most sensitive to rifamycins. Two moribund leukemia patients with levels of platelets and white cells incompatible with life were treated with therapeutic doses of Rifampin. Though they did not survive, their condition improved dramatically for a time, suggesting Rifampin provided some therapeutic benefit. We assert that these results warrant more extensive study.
 
 ## Keywords
 

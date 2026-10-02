@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> This work explores the interplay between knowledge and wisdom as dynamic processes within the passage of time. Knowledge is framed as learning in time—sequentially accumulating observations—and learning from time, discerning causal patterns and tendencies. Wisdom, conversely, is presented as learning from time—metacognitive reflection on sequences of sequences—and learning in time, embracing the...
+> This work explores the interplay between knowledge and wisdom as dynamic processes within the passage of time. Knowledge is framed as learning in time—sequentially accumulating observations—and learning from time, discerning causal patterns and tendencies. Wisdom, conversely, is presented as learning from time—metacognitive reflection on sequences of sequences—and learning in time, embracing the immediacy of perspective and timing. Together, these dualities form a tetralemma: a unified framework where knowledge and wisdom intersect across temporal dimensions. This relational synthesis invites a perspective shift between unity and plurality, situating human experience both within and beyond time. Ultimately, the inquiry seeks to honor the role of Eldership as a temporal guide, fostering recognition and empowerment for collective growth across generations.
 
 ## Keywords
 

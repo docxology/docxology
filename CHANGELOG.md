@@ -5,6 +5,24 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-10-01
 
+- **Paper access and complete summaries:** work pages now offer direct PDF
+  downloads and the archive's GitHub paper folder beside the title. Multiple
+  PDFs retain their filenames and source-selection basis; companion files are
+  distinguished from the primary document in structured data. Work pages and
+  folder READMEs preserve complete curated abstracts, separate concepts from
+  findings, link summary evidence, and omit synthetic keywords and unverified
+  authorship. Associated software repositories remain separately labeled.
+  Shared responsive page styles reduce repeated HTML; citation copying
+  preserves literal BibTeX text and inert JSON payloads escape script boundaries.
+- **Reliable publication and active guidance:** scoped landing commits preserve
+  unrelated staged work; bounded binder replays preserve source-review inputs,
+  reach a byte fixed point, and validate the landed tree before push. Local
+  regeneration uses two ordered passes for known cross-pass dependencies.
+  The active backlog now contains unfinished work only; public completed notes
+  are archived separately and stale private-checkout guidance is corrected.
+  Scope and verification are recorded in
+  [the work-page access review](reports/work_page_access_2026-10-01.md).
+
 - **Independent accuracy follow-up and source recovery:** archived the correct
   CC BY iScience dopamine article (including its methods supplement) and the
   CC BY-NC-SA manuscript from the checksum-verified GNN v3.6.0 release.

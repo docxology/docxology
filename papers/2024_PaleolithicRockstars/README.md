@@ -12,10 +12,6 @@
 
 > No abstract is recorded for this work yet; see the DOI or bibliography link.
 
-## Keywords
-
-`PaleolithicRockstars`
-
 ## Methods
 
 _No paper-specific methods have been summarized yet; see the abstract and the full text._

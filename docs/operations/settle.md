@@ -1,8 +1,10 @@
 # Settle driver
 
 `code/orchestrators/settle.py` is the one-command way to finish a change: it
-classifies the dirty paths, runs the tiered check battery (stopping at the
-first failure), and only then lands the payload and control-tail commits. It
+classifies the dirty paths, replays the existing public-source review when
+landing changes, runs the tiered check battery (stopping at the
+first failure), lands scoped payload and control-tail commits, and validates
+the landed tree before an optional push. It
 replaces the manual rhythm of *payload commit, control-tail commit, then the
 gate cascade by hand* with a single driver whose exit code answers one
 question: is this work safe to push?
@@ -41,7 +43,8 @@ no-write battery, so settle's full tier covers them; the rendered-browser
 
 `routine` is the deliberate lighter contract for **control-only landings and
 clean-tree checks** ("is everything consistent right now?"): the fast floor
-plus standard validation, no pytest, and no binder work. The raise rule is a
+plus standard validation and no pytest. Binder refreshes belong to the
+landing phase and also run for pending control changes. The raise rule is a
 correctness rule, not a convenience rule: **any payload-dirty path — `data/`,
 `code/`, `docs/`, `papers/`, `pages/`, dated receipts — raises the tier to
 `full` before the battery runs**, because every payload commit moves the
@@ -63,7 +66,7 @@ as payload for this rule (fail-closed). What routine gives up vs `full`:
 `--tier` is a floor, not a switch. Every run first classifies the dirty paths
 (`git status --porcelain`, then `classify_paths` from
 `code/src/change_classifier.py`) and raises the tier when the paths demand it:
-`fast < routine < full < release`. Nothing is ever refused — the driver
+`fast < routine < full < release`. The driver
 prints a decision line such as
 `tier decision: requested=fast path-derived=full -> effective=full` and runs
 the stronger battery.
@@ -115,13 +118,27 @@ Which tier to reach for:
 ## Commit chain
 
 After the battery passes (and unless `--dry-run` or `--skip-commit`), the
-driver makes two commits on the current branch:
+driver uses this sequence on the current branch:
 
-1. **Payload commit** — `git add` of exactly the classified payload paths,
-   using `--commit-message` (default: `Settle pending payload changes`).
-2. **Control-tail commit** — the classified control paths, with the same
+1. **Payload commit** — stage the classified payload paths, then use
+   `git commit --only -- <paths>` with `--commit-message` (default:
+   `Settle pending payload changes`). Other previously staged paths stay
+   staged. Rename sources and destinations are included; staged and
+   unstaged deletions and literal wildcard filenames are supported.
+2. **Binder convergence** — for a payload landing or pending control paths,
+   run public-source review → Pages manifest → generated manifest → agent index → release integrity
+   → final generated manifest. Stage recognized control outputs after every
+   writer so index-tracked receipt discovery sees new reports. Repeat until
+   the controls are byte-stable, with a four-pass bound, then run binder
+   checks. Payload drift aborts instead of entering an extra automatic commit.
+3. **Control-tail commit** — discover the current control paths, including
+   new growth receipts, and commit only those paths, with the same
    message plus the ` (control tail)` suffix, per the CONTROL_FILES
    semantics the classifier encodes.
+4. **Post-landing validation** — require a clean worktree, check the Pages
+   manifest against the landed payload commit, and run standard validation.
+   These checks must pass before push or PR creation. They use local sources
+   and existing evidence receipts; they do not refresh remote evidence.
 
 A phase with an empty path set is skipped with a signpost line. Paths the
 classifier assigns to neither group are left uncommitted and reported, so a
@@ -129,7 +146,27 @@ stray file cannot vanish into a commit silently. Work on a branch: settle
 commits wherever you are, and committing on local `main` is a known failure
 mode (see the Source-Of-Truth rules in `AGENT_START.md`).
 
-`--push` runs `git push -u origin HEAD` after the commit chain.
+If the battery observes concurrent payload changes, settle preserves them
+and aborts before committing. Binder failure, non-convergence, unexpected
+payload changes, and post-landing validation failure leave reviewable local
+changes/commits and prevent push. No reset or automatic rollback occurs.
+
+The preflight review replay is required because standard validation checks
+the report's dirty-worktree provenance as well as its payload anchor. Both
+preflight and post-payload replay preserve the existing report's date, all
+recorded input paths, comparison baseline, and pairing-refresh context. A
+missing report, absent optional input, changed input schema, or input outside
+tracked local `data/`/`reports/` JSON stops settle before replay. Resolve those
+cases through the explicit public-source review workflow.
+Inputs, output JSON/Markdown, and their temporary siblings must be regular
+files with one hard link and no symlink ancestors; missing output files are
+allowed. These custody checks run before reads/replay, including aliases to
+ignored private files inside the checkout. Staging and convergence snapshots
+use the same custody boundary.
+
+`--push` runs `git push -u origin HEAD` after post-landing validation.
+`--skip-commit --push` also requires a clean tree and post-landing validation;
+`--skip-commit` alone executes only the battery and writes no binders.
 `--pr TITLE` then creates a pull request with `gh pr create` (it therefore
 requires `--push`) and never merges — merging stays a human/CI decision.
 
@@ -138,12 +175,12 @@ requires `--push`) and never merges — merging stays a human/CI decision.
 | Code | Meaning |
 | --- | --- |
 | 0 | Every executed check passed; the commit chain, push, and PR ran or were intentionally skipped (`--dry-run` always exits 0) |
-| 1 | The first failing battery check, a failed commit, or a failed push/PR — the run stops there and prints the failing output tail |
+| 1 | A failing check, commit, binder convergence, concurrent-edit guard, or push/PR — the run stops there with diagnostics |
 | 2 | Usage error (argparse), e.g. `--pr` without `--push` |
 
 ## Worked examples
 
-Reports-only edit (one commit, no control tail):
+Reports-only payload edit (payload, binder refresh, control tail):
 
 ```bash
 python3 code/orchestrators/settle.py --tier fast \
@@ -191,48 +228,42 @@ push/PR.
   reports/deployment-attestations/<HEAD>.json` when that conventional receipt
   exists; `validate_repo.py --release` cannot pass without an attestation,
   which settle's CLI has no flag to supply.
-- `--commit-message` sets the payload message only; the control-tail commit is
+- `--commit-message` sets the payload message; the control tail appends
+  ` (control tail)`.
 - Battery commands run with `uv run --no-sync` (the lint step uses
   `uv run --group lint` instead) so settling rarely mutates the lockfile
   environment mid-run.
-- **Binder ordering (land-then-confirm cycle):** regenerate the binder chain
-  only *after* the payload commit — the Pages manifest binds
-  `source_commit_at_generation` to the commit that last changed Pages payload
-  content, so a pre-commit render goes stale the moment the payload lands.
-  Render binders only after dated receipts are *tracked*:
-  `build_agent_index.py` resolves receipt paths among tracked files, so a
-  receipt that exists only untracked is invisible to the render. Chain order
-  is dependency order: `build_pages_artifact.py --write-manifest` first (it
-  binds the payload commit and produces the growth receipt; on a dirty tree
-  it fails closed with "dirty post-deploy Pages inputs" unless the only dirty
-  input is a current pre-payload public-source snapshot receipt recording
-  `source_worktree_clean: false`, permitted via
-  `--allow-dirty-prepayload-evidence` — see `build_pages_artifact.py`
-  :105-114 and :172-186) → `build_generated_manifest.py` →
-  `build_agent_index.py` → `build_release_integrity.py` → a final
-  `build_generated_manifest.py` pass (the canonical chain in
-  `code/src/generation_plan.py` ends on it) — re-run `sync_site_facts.py`/
-  `build_catalog.py`/`build_search_index.py` first if the new receipts change
-  their rendered links. Root cause: `latest_source_report()` resolves only
-  git-**tracked** receipts (clean-checkout determinism), so the commit that
-  lands a new dated report deliberately flips every discovery pointer to it —
-  render the pointer surfaces after the payload commit and land them as a
-  second payload commit before the binder tail (receipts staged before the
-  render fold both into one commit; see the
-  [`publication-sync.md`](publication-sync.md) do-not-skip list).
-  `build_public_source_review.py` stays a deliberate manual render (excluded
-  from the local chain) and embeds digests of the dated evidence receipts,
-  not the binder outputs. Commit any payload churn from the consumer renders, then
-  re-render the manifest once against that final payload commit — after the
-  receipt *paths* are stable only the manifest and growth receipt churn, and
-  the downstream binders are byte-stable. Then confirm with
-  `settle.py --tier full --skip-commit` on the clean tree before pushing.
+- **Binder ordering (land-then-confirm cycle):** settle implements the
+  bounded control chain described above after the payload commit. A
+  pre-commit manifest becomes stale as soon as payload lands. New receipts
+  must be index-tracked before dependent renderers run. The agent index can
+  retire an old report pointer, which changes Pages report retention on the
+  next pass; convergence therefore includes the Pages manifest, generated
+  manifest, agent index, release envelope, and dated control receipts.
+  Four passes are a bound, not permission to publish non-convergent output.
+  Settle prints the changing control paths and aborts if they remain unstable.
+  Source consumers such as `sync_site_facts.py`, `build_catalog.py`,
+  `build_search_index.py`, and git-date-dependent `build_sitemap.py` remain
+  deliberate payload renders. If post-landing validation reports those stale,
+  regenerate the named consumers, review and land their payload changes,
+  then rerun settle; it will not automatically commit unrelated payload
+  churn. Staging dated receipts before their initial consumer render can fold
+  those pointer changes into the original payload commit (see
+  [`publication-sync.md`](publication-sync.md)).
+  Initial source-review creation and changes to its baseline/input set remain
+  manual. Settle calls `build_public_source_review.py` only to replay the
+  existing report with every recorded input supplied explicitly, preserving
+  its date, previous snapshot, decision-ledger paths, refresh status, and note.
   Post-deploy: commit the live-site receipt *together with* its binder
   rebind — a receipt-only push re-stales the binders and turns main CI red
   until the rebind lands.
-- **Routine tier and the binder chain:** a control-only routine landing
-  (binder tails, PSR re-renders, agent-index) needs no rebind — the payload
-  anchor does not move. A payload landing can never ride routine: the tier
-  raises to `full`, whose landing flow includes the land-then-confirm binder
-  cycle, so the manifest is fresh before the push and the pages.yml deploy
-  check cannot red on a stale manifest. The pytest gate rides `full` with it.
+- **Routine tier and the binder chain:** a control-only landing preserves
+  the payload anchor but can still alter receipt discovery and report
+  retention, so settle runs the bounded binder cycle for pending controls.
+  A clean-tree routine check runs no binder writers. Payload changes raise
+  routine to `full`, including the pytest gate.
+- **Local regeneration:** `regenerate_all.py` runs two ordered passes by
+  default to refresh consumers of late-produced counts/software, work
+  enrichment, and paper-folder flags. Use `--validate` to check the result;
+  `--passes 1` is a diagnostic override, not a convergence guarantee. Binder
+  convergence after landing is separate from those pre-commit local passes.

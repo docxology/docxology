@@ -11,7 +11,7 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
-    <link rel="stylesheet" href="../../style.css?v=newspaper-glitch-20260530c">
+    <link rel="stylesheet" href="../../style.css?v=work-access-20261001">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
@@ -34,18 +34,10 @@
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations">
     <style>
-        .paper-hero{max-width:980px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}
-        .paper-hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2rem,4vw,3.35rem);line-height:1.12;margin-bottom:1rem}
-        .artifact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-        .artifact-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;line-height:1.7}
-        .artifact-card strong{display:block;color:var(--gold);margin-bottom:.25rem}
-        .artifact-card ul{margin-left:1.1rem}
-        .muted{color:var(--text-muted);font-size:.86rem}
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
-        .overview-box{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.15rem;line-height:1.75;color:var(--text-secondary)}
     </style>
 </head>
-<body>
+<body class="paper-page">
     <a href="#main" class="skip-link">Skip to main content</a>
     <nav aria-label="Main navigation">
         <a href="../../index.html" class="nav-logo">Daniel Ari Friedman</a>
@@ -87,6 +79,7 @@
         <p class="eyebrow"><a href="../../domain-cognitive-security.html">Cognitive Security</a> · Paper · 2026</p>
         <h1>Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations</h1>
         <p class="sub">Documentation folder for catalog row 195 · <a href="../../works/Friedman2026ActiveFractalRabbitSyntheticBenchmark195.html">Canonical work page</a></p>
+        <div class="work-actions" role="group" aria-label="Paper source files"><a class="btn btn-outline" href="https://github.com/docxology/docxology/tree/main/papers/2026_ActiveFractalRabbit">Paper folder on GitHub</a></div>
     </header>
     <main id="main" class="main">
         <section class="section">
@@ -97,8 +90,15 @@
             </div>
         </section>
         <section class="section section-alt">
-            <div class="section-header"><h2>Overview</h2><p>Extracted from the local README when available.</p><div class="section-divider"></div></div>
-            <div class="overview-box"><p>Sparse waypoint analysis is privacy-sensitive: it must separate movement from irregular reporting, missingness, spatial coarsening, and corruption while preserving uncertainty about hidden location. Active FractalRabbit provides a controlled, artifact-bound benchmark whose headline lane uses a deterministic project-local synthetic FractalRabbit-format fixture; a separately retained lane exercises...</p></div>
+            <div class="section-header"><h2>Overview</h2><p>Curated abstract when available.</p><div class="section-divider"></div></div>
+            <div class="overview-box"><p>Sparse waypoint analysis is privacy-sensitive: it must separate movement from irregular reporting, missingness, spatial coarsening, and corruption while preserving uncertainty about hidden location. Active FractalRabbit provides a controlled, artifact-bound benchmark whose headline lane uses a deterministic project-local synthetic FractalRabbit-format fixture; a separately retained lane exercises pinned open-source software from the National Security Agency as an independent simulator surface. The benchmark converts sporadic reports into categorical evidence, fits explicit hidden-state generative models, and compares transparent temporal, Markov, sequence, state-space, neural, latent-state, and active inference predictors under matched information sets. Under noisy partial-observability, Active Inference is the lowest-loss implemented predictor: it clearly leads point-estimate and raw-observation families and sits in a statistical tie with the strongest non-AIF belief-preserving comparator. The shared mechanism is soft Bayesian marginalization, which preserves probability across plausible cells instead of committing early to one state. Point estimates suffice for clean observations, an online base-rate predictor leads under regime switching, transparent temporal and disclosed kinematic controls anchor sparse reporting gaps, and withholding location sharply limits specific-cell recovery from metadata. The partially observable Markov decision process (POMDP) formulation also exposes variational and expected-free-energy diagnostics for belief, minimization, and integrity. These results establish a regime-specific synthetic model map and a reproducible evidence chain. The present contract covers synthetic software behavior; separate evidence protocols govern privacy and empirical evaluation. Code, fixtures, manuscript source, and the release manifest are public at github.com/ActiveInferenceInstitute/active_fractal_rabbit (https://github.com/ActiveInferenceInstitute/active_fractal_rabbit).
+
+---
+Associated artifacts
+GitHub release: v0.2.0 (https://github.com/ActiveInferenceInstitute/active_fractal_rabbit/releases/tag/v0.2.0)
+DOI: https://doi.org/10.5281/zenodo.21330636
+Zenodo: https://zenodo.org/records/21330636
+PDF SHA-256: d676159d149a12a1e990457329ad4cf52d2d8ab4ffcf09f55b42bad8e0c3c052</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section">
             <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation and PDFs served directly from this folder.</p><div class="section-divider"></div></div>
@@ -107,16 +107,17 @@
 <a class="btn btn-outline" href="AGENTS.md">AGENTS</a>
 <a class="btn btn-outline" href="SKILL.md">SKILL</a>
 <a class="btn btn-outline" href="metadata.json">Metadata</a>
-<a class="btn btn-outline" href="full_text.md">Full Text</a></p></div>
-                <div class="artifact-card"><strong>PDF Files</strong><ul><li><a href="Friedman_2026_Active_d676159d.pdf">Friedman_2026_Active_d676159d.pdf</a> <span class="muted">14,942,798 bytes</span></li></ul></div>
-                <div class="artifact-card"><strong>Extracted Content</strong><p><span class="muted">Full text extraction pending.</span></p></div>
+<a class="btn btn-outline" href="full_text.md">Extracted text</a>
+<a class="btn btn-outline" href="CITATION.cff">Citation metadata</a></p></div>
+                <div class="artifact-card"><strong>PDF Files</strong><ul><li><a href="../../papers/2026_ActiveFractalRabbit/Friedman_2026_Active_d676159d.pdf" download="Friedman_2026_Active_d676159d.pdf" type="application/pdf">Friedman_2026_Active_d676159d.pdf</a> <span class="muted">14,942,798 bytes · extracted-text source</span></li></ul></div>
+                <div class="artifact-card"><strong>Extracted Content</strong><p><span class="muted">No extracted figures are archived.</span></p></div>
             </div>
         </section>
     </main>
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../../publications.html">Unified bibliography</a> · <a href="../../works/">Works index</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/526c3f392">build 526c3f392 2026-10-01</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/c12a6458d">build c12a6458d 2026-10-01</a></p>
     </footer>
 <script src="/js/search-utils.js?v=20260813"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

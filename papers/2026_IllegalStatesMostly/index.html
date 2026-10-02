@@ -11,7 +11,7 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
-    <link rel="stylesheet" href="../../style.css?v=newspaper-glitch-20260530c">
+    <link rel="stylesheet" href="../../style.css?v=work-access-20261001">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
@@ -34,18 +34,10 @@
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Illegal States, Mostly Unrepresentable">
     <style>
-        .paper-hero{max-width:980px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}
-        .paper-hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2rem,4vw,3.35rem);line-height:1.12;margin-bottom:1rem}
-        .artifact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-        .artifact-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;line-height:1.7}
-        .artifact-card strong{display:block;color:var(--gold);margin-bottom:.25rem}
-        .artifact-card ul{margin-left:1.1rem}
-        .muted{color:var(--text-muted);font-size:.86rem}
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
-        .overview-box{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.15rem;line-height:1.75;color:var(--text-secondary)}
     </style>
 </head>
-<body>
+<body class="paper-page">
     <a href="#main" class="skip-link">Skip to main content</a>
     <nav aria-label="Main navigation">
         <a href="../../index.html" class="nav-logo">Daniel Ari Friedman</a>
@@ -87,6 +79,7 @@
         <p class="eyebrow"><a href="../../domain-entomology.html">Entomology</a> · Paper · 2026</p>
         <h1>Illegal States, Mostly Unrepresentable</h1>
         <p class="sub">Documentation folder for catalog row 191 · <a href="../../works/Friedman2026IllegalStatesMostlyUnrepresentable191.html">Canonical work page</a></p>
+        <div class="work-actions" role="group" aria-label="Paper source files"><a class="btn btn-outline" href="https://github.com/docxology/docxology/tree/main/papers/2026_IllegalStatesMostly">Paper folder on GitHub</a></div>
     </header>
     <main id="main" class="main">
         <section class="section">
@@ -97,8 +90,8 @@
             </div>
         </section>
         <section class="section section-alt">
-            <div class="section-header"><h2>Overview</h2><p>Extracted from the local README when available.</p><div class="section-divider"></div></div>
-            <div class="overview-box"><p>This paper presents a strongly-typed, decentralized multiagent simulation — an ant-robot colony — as the computational exemplar of the Research Project Template (https://github.com/docxology/template). Each colony member is an Agent that owns exactly one real, on-disk SQLite database and one in-process, fault-injectable protocol endpoint; no agent ever touches another agent&#x27;s storage or network...</p></div>
+            <div class="section-header"><h2>Overview</h2><p>Curated abstract when available.</p><div class="section-divider"></div></div>
+            <div class="overview-box"><p>This paper presents a strongly-typed, decentralized multiagent simulation — an ant-robot colony — as the computational exemplar of the Research Project Template (https://github.com/docxology/template). Each colony member is an Agent that owns exactly one real, on-disk SQLite database and one in-process, fault-injectable protocol endpoint; no agent ever touches another agent&#x27;s storage or network state. The implementation lives under projects/templates/template_formal/src/template_formal/; the demo pipeline is orchestrated by scripts/02_run_analysis.py. The paper&#x27;s central claim is methodological, not a typing-features showcase: static typing&#x27;s honest value in Python is edit-time/CI-time error prevention on structurally representable invariants, and nothing more. Nominal identifiers (AgentId, MessageId, TxnId as distinct NewType wrappers), a tagged-union Result[T, E] ADT with match-exhaustiveness, and a session-typed protocol state machine (IdleSession → HandshakingSession → EstablishedSession → ClosedSession) each make an illegal program a type error, verified by a real mypy --strict subprocess run against six known-bad negative-control fixtures plus three known-good positive-control fixtures (tests/mypy_fixtures/). Where the type system cannot help — reusing a consumed transaction handle, reusing a consumed protocol-phase instance, or receiving malformed bytes off an untyped network boundary — the implementation runtime-guards instead, and the manuscript says so explicitly rather than eliding the distinction. We also frame, without over-claiming, two additional lenses: the per-agent storage schema as a functor $\mathrm{Schema} \to \mathbf{Set}$ in the sense of @fong2018seven, and each agent&#x27;s per-tick decision as an approximate minimizer of a closed-form expected-free-energy quantity in the spirit of @friston2005theory, bridged to collective organization via the Memory Evolutive Systems framework of . Both framings are declared as design lenses, not machine-checked mathematical results — the paper is explicit about which of its claims are proofs and which are analogies. Contributions are architectural, epistemic, and empirical. Architecturally: a zero-mock test suite (tests/) covering ADT exhaustiveness, affine-handle reuse, session-type phase transitions, seeded fault injection over a real in-process bus, and a three-agent colony integration test exhibiting a real stigmergic positive-feedback mechanism (deliberately not overclaimed as &quot;emergence&quot; — see @sec:results-discussion). Epistemically: an explicit &quot;What mypy --strict proves vs. what is a runtime discipline&quot; section (@sec:honesty-line) that pins every strong claim to the ISC (Ideal-State Criterion) number of its paired negative-control test, so the claim-to-evidence mapping is auditable rather than asserted. Empirically: eight pre-registered analyses grouped across three experiment families, falsifiable experiments (@sec:results-discussion) — a decay-rate sweep revealing a real, non-monotonic threshold effect (near-zero convergence below decay $\approx 0.35$, a $100\%$ plateau at moderate decay, and a measurable decline at total evaporation); a random-choice null-model comparison showing the real mechanism&#x27;s Wilson-bounded convergence rate ($93.3\%$) does not overlap a chance baseline&#x27;s ($0.67\%$); and a heterogeneity-magnitude sweep showing convergence rate decreases strictly monotonically as agent preferences spread wider — each stated with its falsification criterion before its real, seeded result, using genuinely new stdlib-only infrastructure (colony/nullmodel.py, colony/sweep.py) rather than one-off scripts. Keywords: strongly typed programming, session types, algebraic data types, category theory, Active Inference, multiagent systems, affine types, illegal state unrepresentable.</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section">
             <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation and PDFs served directly from this folder.</p><div class="section-divider"></div></div>
@@ -107,8 +100,9 @@
 <a class="btn btn-outline" href="AGENTS.md">AGENTS</a>
 <a class="btn btn-outline" href="SKILL.md">SKILL</a>
 <a class="btn btn-outline" href="metadata.json">Metadata</a>
-<a class="btn btn-outline" href="full_text.md">Full Text</a></p></div>
-                <div class="artifact-card"><strong>PDF Files</strong><ul><li><a href="Friedman_2026_Illegal_5bda439c.pdf">Friedman_2026_Illegal_5bda439c.pdf</a> <span class="muted">551,781 bytes</span></li></ul></div>
+<a class="btn btn-outline" href="full_text.md">Extracted text</a>
+<a class="btn btn-outline" href="CITATION.cff">Citation metadata</a></p></div>
+                <div class="artifact-card"><strong>PDF Files</strong><ul><li><a href="../../papers/2026_IllegalStatesMostly/Friedman_2026_Illegal_5bda439c.pdf" download="Friedman_2026_Illegal_5bda439c.pdf" type="application/pdf">Friedman_2026_Illegal_5bda439c.pdf</a> <span class="muted">551,781 bytes · extracted-text source</span></li></ul></div>
                 <div class="artifact-card"><strong>Extracted Content</strong><p><a class="btn btn-outline" href="https://github.com/docxology/docxology/tree/main/papers/2026_IllegalStatesMostly/images">Extracted Images (5) — GitHub</a><div class="image-thumbs"><a href="https://github.com/docxology/docxology/tree/main/papers/2026_IllegalStatesMostly/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_IllegalStatesMostly/images/page11_img1.png" alt="Figure from Illegal States, Mostly Unrepresentable, page 11" loading="lazy"></a><a href="https://github.com/docxology/docxology/tree/main/papers/2026_IllegalStatesMostly/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_IllegalStatesMostly/images/page13_img1.png" alt="Figure from Illegal States, Mostly Unrepresentable, page 13" loading="lazy"></a><a href="https://github.com/docxology/docxology/tree/main/papers/2026_IllegalStatesMostly/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_IllegalStatesMostly/images/page1_img1.png" alt="Figure from Illegal States, Mostly Unrepresentable, page 1" loading="lazy"></a><a href="https://github.com/docxology/docxology/tree/main/papers/2026_IllegalStatesMostly/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_IllegalStatesMostly/images/page5_img1.png" alt="Figure from Illegal States, Mostly Unrepresentable, page 5" loading="lazy"></a><a href="https://github.com/docxology/docxology/tree/main/papers/2026_IllegalStatesMostly/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_IllegalStatesMostly/images/page6_img1.png" alt="Figure from Illegal States, Mostly Unrepresentable, page 6" loading="lazy"></a></div></p></div>
             </div>
         </section>
@@ -116,7 +110,7 @@
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../../publications.html">Unified bibliography</a> · <a href="../../works/">Works index</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/526c3f392">build 526c3f392 2026-10-01</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/c12a6458d">build c12a6458d 2026-10-01</a></p>
     </footer>
 <script src="/js/search-utils.js?v=20260813"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

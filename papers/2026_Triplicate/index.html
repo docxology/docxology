@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine Documentation — Daniel Ari Friedman</title>
-    <meta name="description" content="We present template newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML…">
+    <meta name="description" content="We present template_newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML…">
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="https://danielarifriedman.com/works/Friedman2026TriplicateDataDrivenLarge153.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
-    <link rel="stylesheet" href="../../style.css?v=newspaper-glitch-20260530c">
+    <link rel="stylesheet" href="../../style.css?v=work-access-20261001">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
@@ -25,27 +25,19 @@
     <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
     <meta property="og:type" content="article">
     <meta property="og:title" content="The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine Documentation">
-    <meta property="og:description" content="We present template newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML…">
+    <meta property="og:description" content="We present template_newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML…">
     <meta property="og:url" content="https://danielarifriedman.com/works/Friedman2026TriplicateDataDrivenLarge153.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine Documentation">
-    <meta name="twitter:description" content="We present template newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML…">
+    <meta name="twitter:description" content="We present template_newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine">
     <style>
-        .paper-hero{max-width:980px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}
-        .paper-hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2rem,4vw,3.35rem);line-height:1.12;margin-bottom:1rem}
-        .artifact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-        .artifact-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;line-height:1.7}
-        .artifact-card strong{display:block;color:var(--gold);margin-bottom:.25rem}
-        .artifact-card ul{margin-left:1.1rem}
-        .muted{color:var(--text-muted);font-size:.86rem}
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
-        .overview-box{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.15rem;line-height:1.75;color:var(--text-secondary)}
     </style>
 </head>
-<body>
+<body class="paper-page">
     <a href="#main" class="skip-link">Skip to main content</a>
     <nav aria-label="Main navigation">
         <a href="../../index.html" class="nav-logo">Daniel Ari Friedman</a>
@@ -87,6 +79,7 @@
         <p class="eyebrow"><a href="../../domain-computational.html">Computational</a> · Paper · 2026</p>
         <h1>The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine</h1>
         <p class="sub">Documentation folder for catalog row 153 · <a href="../../works/Friedman2026TriplicateDataDrivenLarge153.html">Canonical work page</a></p>
+        <div class="work-actions" role="group" aria-label="Paper source files"><a class="btn btn-outline" href="https://github.com/docxology/docxology/tree/main/papers/2026_Triplicate">Paper folder on GitHub</a></div>
     </header>
     <main id="main" class="main">
         <section class="section">
@@ -97,8 +90,28 @@
             </div>
         </section>
         <section class="section section-alt">
-            <div class="section-header"><h2>Overview</h2><p>Extracted from the local README when available.</p><div class="section-divider"></div></div>
-            <div class="overview-box"><p>We present template newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML content. The exemplar edition is The Triplicate, a homage to the historic newspaper of Crescent City, California (founded 1879). The engine demonstrates designed multi-column page layout — nameplate and ears, spanning headlines, flowing column...</p></div>
+            <div class="section-header"><h2>Overview</h2><p>Curated abstract when available.</p><div class="section-divider"></div></div>
+            <div class="overview-box"><p>We present template_newspaper, a pure-Python engine that renders a complete
+twelve-page, large-format newspaper to a print-ready PDF from structured YAML
+content. The exemplar edition is The Triplicate, a homage to the historic
+newspaper of Crescent City, California (founded 1879). The engine demonstrates
+designed multi-column page layout — nameplate and ears, spanning headlines,
+flowing column frames with an optional rail, drop caps, pull quotes, ruled
+modular boxes, data tables, halftone &quot;engraving&quot; figures and running folios —
+while keeping a strict separation between content (data) and engine (code):
+a new title is a data edit, never a code change. The layout strategy is a hybrid
+in which fixed furniture is drawn directly on the canvas to establish where
+the column grid begins, after which body copy flows through ReportLab frames
+that split paragraphs across columns automatically. The project obeys the
+research-template monorepo contract and is discovered and executed by the same
+orchestration pipeline as its code- and prose-focused siblings.
+
+---
+Associated artifacts
+GitHub release: v1.0.2 (https://github.com/docxology/template_newspaper/releases/tag/v1.0.2)
+DOI: https://doi.org/10.5281/zenodo.20533675
+Zenodo: https://zenodo.org/records/20533675
+PDF SHA-256: 6c693dbd80a4234d30d99f6a890191ff47faf197a0636753fa9785588c550a77</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section">
             <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation and PDFs served directly from this folder.</p><div class="section-divider"></div></div>
@@ -107,18 +120,19 @@
 <a class="btn btn-outline" href="AGENTS.md">AGENTS</a>
 <a class="btn btn-outline" href="SKILL.md">SKILL</a>
 <a class="btn btn-outline" href="metadata.json">Metadata</a>
-<a class="btn btn-outline" href="full_text.md">Full Text</a></p></div>
-                <div class="artifact-card"><strong>PDF Files</strong><ul><li><a href="Friedman_2026_Triplicate_5c991b5c.pdf">Friedman_2026_Triplicate_5c991b5c.pdf</a> <span class="muted">54,757 bytes</span></li>
-<li><a href="Friedman_2026_Triplicate_6c693dbd.pdf">Friedman_2026_Triplicate_6c693dbd.pdf</a> <span class="muted">58,491 bytes</span></li>
-<li><a href="Friedman_2026_Triplicate_851f9973.pdf">Friedman_2026_Triplicate_851f9973.pdf</a> <span class="muted">58,485 bytes</span></li></ul></div>
-                <div class="artifact-card"><strong>Extracted Content</strong><p><span class="muted">Full text extraction pending.</span></p></div>
+<a class="btn btn-outline" href="full_text.md">Extracted text</a>
+<a class="btn btn-outline" href="CITATION.cff">Citation metadata</a></p></div>
+                <div class="artifact-card"><strong>PDF Files</strong><ul><li><a href="../../papers/2026_Triplicate/Friedman_2026_Triplicate_5c991b5c.pdf" download="Friedman_2026_Triplicate_5c991b5c.pdf" type="application/pdf">Friedman_2026_Triplicate_5c991b5c.pdf</a> <span class="muted">54,757 bytes</span></li>
+<li><a href="../../papers/2026_Triplicate/Friedman_2026_Triplicate_6c693dbd.pdf" download="Friedman_2026_Triplicate_6c693dbd.pdf" type="application/pdf">Friedman_2026_Triplicate_6c693dbd.pdf</a> <span class="muted">58,491 bytes · extracted-text source</span></li>
+<li><a href="../../papers/2026_Triplicate/Friedman_2026_Triplicate_851f9973.pdf" download="Friedman_2026_Triplicate_851f9973.pdf" type="application/pdf">Friedman_2026_Triplicate_851f9973.pdf</a> <span class="muted">58,485 bytes</span></li></ul></div>
+                <div class="artifact-card"><strong>Extracted Content</strong><p><span class="muted">No extracted figures are archived.</span></p></div>
             </div>
         </section>
     </main>
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../../publications.html">Unified bibliography</a> · <a href="../../works/">Works index</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/526c3f392">build 526c3f392 2026-10-01</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/c12a6458d">build c12a6458d 2026-10-01</a></p>
     </footer>
 <script src="/js/search-utils.js?v=20260813"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

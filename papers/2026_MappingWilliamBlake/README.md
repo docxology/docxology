@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source code and project-authored aggregate analytics from provider-supplied source materials. This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the...
+> A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source code and project-authored aggregate analytics from provider-supplied source materials. This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the open-source software release bundle. The MIT license covers project code and project-authored outputs only; provider-supplied Blake Archive TEI, transcriptions, images, and fallback source texts are excluded and remain under their source-provider terms.
 
 ## Keywords
 

@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> This paper introduces Generalized Notation Notation (GNN), a novel approach to generative model representation that facilitates communication, understanding, and application of Active Inference across various domains. GNN complements the Active Inference Ontology as a flexible and expressive language for education and modeling, by providing a standardized method for describing cognitive models...
+> This paper introduces Generalized Notation Notation (GNN), a novel approach to generative model representation that facilitates communication, understanding, and application of Active Inference across various domains. GNN complements the Active Inference Ontology as a flexible and expressive language for education and modeling, by providing a standardized method for describing cognitive models. In this paper we introduce GNN, and provide a Step-by-Step example of what GNN looks like in practice. We then explore "the Triple Play", a pragmatic approach to expressing GNN in linguistic, visual, and executable cognitive models. By situating GNN within the broader context of cognitive modeling and Active Inference, this work aims to bridge and respect the gaps among different modeling settings. The goal of this work is to facilitate interdisciplinary research and application, ultimately promoting the advancement of the field. Github: https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation Coda: https://coda.io/@active-inference-institute/generalized-notation-notation
 
 ## Keywords
 

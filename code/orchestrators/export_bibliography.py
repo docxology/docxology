@@ -197,15 +197,9 @@ def row_to_work(row: BiblioRow, *, visible_source_paths: frozenset[str]) -> Work
     )
 
 
-# This is a bibliography *of Daniel's own works*, so his authorship of every row
-# is given; what the registries supply is the co-author list. Where no registry
-# confirmed one, fall through to the sole-author form the exports have always
-# emitted rather than dropping authorship entirely.
-DEFAULT_AUTHOR = "Friedman, Daniel Ari"
-
-
 def author_names(work: Work) -> list[str]:
-    return work.authors or [DEFAULT_AUTHOR]
+    """Export only the confirmed Authors column; an unknown list stays unknown."""
+    return list(work.authors)
 
 
 def split_author(name: str) -> dict:
@@ -247,11 +241,12 @@ def bibtex_entry(work: Work) -> str:
 
 
 def csl_item(work: Work) -> dict:
+    authors = author_names(work)
     item = {
         "id": work.citation_key,
         "type": TYPE_TO_CSL.get(work.type, "article-journal"),
         "title": work.title,
-        "author": [split_author(name) for name in author_names(work)],
+        **({"author": [split_author(name) for name in authors]} if authors else {}),
         "issued": {"date-parts": [[work.year]]},
         "genre": work.type,
         "keyword": f"{work.domain_name}; {work.type}",

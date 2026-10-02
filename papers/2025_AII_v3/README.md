@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> This document surveys the current state of The Active Inference Institute and The Active Inference Ecosystem , in the context of our current and future directions. As embodied agents, we aim to update our decisions, goals and predictions as an institute by actively gathering (sampling) insights (observations) from our members. As Heraclitus once said “No one ever steps in the same river twice...
+> This document surveys the current state of The Active Inference Institute and The Active Inference Ecosystem , in the context of our current and future directions. As embodied agents, we aim to update our decisions, goals and predictions as an institute by actively gathering (sampling) insights (observations) from our members. As Heraclitus once said “No one ever steps in the same river twice. For it’s never the same river and it’s never the same person”. In the same way, the Institute evolves with each new member, accumulating a variety of perspectives to drive improvement.
 
 ## Keywords
 

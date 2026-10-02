@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> The "mirror test" has been used as a behavioral measure of mirror self-recognition for a variety of species. In this article we apply a predictive processing interpretation to the results of the mirror test in order to offer a novel perspective with which to understand mirror self-recognition and self-directed behavior. Furthermore, we hypothesize that a “reflection prediction”, upon which our...
+> The "mirror test" has been used as a behavioral measure of mirror self-recognition for a variety of species. In this article we apply a predictive processing interpretation to the results of the mirror test in order to offer a novel perspective with which to understand mirror self-recognition and self-directed behavior. Furthermore, we hypothesize that a “reflection prediction”, upon which our predictive processing interpretation of the mirror test is built, may also offer a novel perspective to understand how humans locate themselves relative to a mirror, imitate others, and are self-aware from a social perspective. As we show that a reflection prediction may help to explain how these traits may emerge in human cognition, we also point out that atypical reflection predictions or atypical use of a reflection prediction may help to explain instances where these traits are atypical in certain individuals.
 
 ## Keywords
 

@@ -52,6 +52,21 @@ def test_browser_qa_manifest_uses_the_portable_uv_optional_group_command():
     assert browser_qa["command"] == "uv run --extra browser-qa python3 code/orchestrators/browser_qa.py"
 
 
+def test_page_manifest_discloses_resource_selection_and_citation_sources():
+    common = {
+        "papers/paper_metadata.json", "papers/*/metadata.json",
+        "papers/*/README.md", "papers/*/AGENTS.md", "papers/*/SKILL.md",
+        "papers/*/CITATION.cff", "papers/*/full_text.md",
+        "papers/*/*.[pP][dD][fF]", "papers/*/images/*", ".gitignore",
+        "code/src/paper_artifacts.py", "code/src/metadata_templates.py",
+        "code/orchestrators/build_work_pages.py", "code/src/site_nav.py",
+    }
+    assert common.issubset(_artifact("Work pages")["sources"])
+    assert common.issubset(_artifact("Paper folder pages")["sources"])
+    assert {"data/publishing-status.json", "bibliography.bib"}.issubset(_artifact("Work pages")["sources"])
+    assert "data/work-enrichment.json" not in _artifact("Work pages")["sources"]
+
+
 def test_every_declared_generator_script_still_exists():
     """GENERATED.md is the rebuild matrix; a row for a deleted script is a trap.
 

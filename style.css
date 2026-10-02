@@ -1608,3 +1608,71 @@ section h2:hover .anchor-link,
 .artwork-list{list-style:none;padding:0;margin:0;display:grid;gap:.35rem;max-width:60rem}
 .artwork-list li{padding:.45rem .75rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}
 .artwork-list a{color:var(--silver-bright);text-decoration:none}
+/* Shared generated work and paper-folder pages. Keep artifact links readable
+   at narrow widths; repeating these rules per page inflates the Pages artifact. */
+.work-hero, .paper-hero {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 5rem 2rem 2rem;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+.work-hero h1, .paper-hero h1 {
+    font-family: var(--font-display, Georgia, serif);
+    font-size: clamp(1.8rem, 4vw, 3.35rem);
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+.work-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .65rem;
+    margin-top: 1.5rem;
+}
+.work-actions .btn { margin: 0; white-space: normal; text-align: center; }
+.work-page .section, .paper-page .section { overflow-wrap: anywhere; }
+.work-page .meta-grid, .paper-page .artifact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 1rem;
+}
+.work-summary-grid { display: grid; gap: 1rem; }
+.work-page .meta-card, .work-page .cite-box, .work-detail,
+.paper-page .artifact-card, .paper-page .overview-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.15rem;
+    line-height: 1.75;
+    min-width: 0;
+}
+.work-page .meta-card strong, .paper-page .artifact-card strong {
+    display: block;
+    color: var(--gold);
+    margin-bottom: .25rem;
+}
+.work-detail, .work-page .cite-box, .paper-page .overview-box { color: var(--text-secondary); }
+.work-detail p { max-width: 75ch; }
+.work-detail h3 { color: var(--text-primary); margin-bottom: .6rem; font-size: 1.1rem; }
+.work-detail ul, .paper-page .artifact-card ul { margin-left: 1.2rem; }
+.work-detail li + li, .paper-page .artifact-card li + li { margin-top: .6rem; }
+.keyword-row { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: 1rem; }
+.keyword-row span { border: 1px solid var(--border); padding: .2rem .55rem; font-size: .8rem; }
+.work-page .platform-card { grid-column: 1 / -1; }
+.work-page .platform-list {
+    list-style: none;
+    padding: 0;
+    margin: .35rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr));
+    gap: .25rem .9rem;
+    font-size: .85rem;
+}
+.work-page .related-list { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
+.work-page .related-list li { padding: .6rem .9rem; background: var(--bg-card); border: 1px solid var(--border); }
+.work-page .muted, .paper-page .muted, .summary-sources { color: var(--text-muted); font-size: .86rem; }
+.download-list span { display: block; }
+@media (max-width: 600px) {
+    .work-hero, .paper-hero { padding: 3rem 1rem 1.5rem; }
+    .work-actions .btn { max-width: 100%; }
+}

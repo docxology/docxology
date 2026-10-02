@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> This is the abstract for the Abstract Book for the 5th Applied Active Inference Symposium (Nov 12-14, 2025). The Active Inference Institute (AII) is an open-science institute dedicated to improving the accessibility, rigor, and applicability of the Active Inference framework. Included are the abstracts of the registered Presenters, who presented in a Live Session or submitted Pre-recorded Talks...
+> This is the abstract for the Abstract Book for the 5th Applied Active Inference Symposium (Nov 12-14, 2025). The Active Inference Institute (AII) is an open-science institute dedicated to improving the accessibility, rigor, and applicability of the Active Inference framework. Included are the abstracts of the registered Presenters, who presented in a Live Session or submitted Pre-recorded Talks. All information: http://symposium.activeinference.institute/ Direct link to program: https://coda.io/d/_d08cdDbWwRy/Symposium-Program_surazvwP
 
 ## Keywords
 

@@ -1,7 +1,5 @@
 # AGENTS.md — `docxology/docs/design`
 
-Added by the 2026-08-29 ongoing-docs fleet pass.
-
 ## What this is
 
 Design documentation for the docxology site.
@@ -20,5 +18,5 @@ Design documentation for the docxology site.
 
 ## Verify
 
-- `ls docxology/docs/design`
-- Parent: `docxology/AGENTS.md`; lane policy: `../../AGENTS.md` (ongoing root).
+- `ls docs/design`
+- Follow the [root repository instructions](../../AGENTS.md) and nearer parent instructions.

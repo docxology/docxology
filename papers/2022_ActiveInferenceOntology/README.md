@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> In this work, we examine science from the vantage points of blockchain technology and its connection to decentralized science (DeSci). We consider science as a collective process using Active Inference, an integrative framework that models the cognitive processes of perception, planning, and action selection in terms of Bayesian probabilities and updating. We present the Active Entity Ontology...
+> In this work, we examine science from the vantage points of blockchain technology and its connection to decentralized science (DeSci). We consider science as a collective process using Active Inference, an integrative framework that models the cognitive processes of perception, planning, and action selection in terms of Bayesian probabilities and updating. We present the Active Entity Ontology for Science ( AEOS , available at coda.io/@active-inference-institute/active-entity-ontology-for-science-aeos ) as a composable and versionable system for modeling various science systems, using the Active Inference entity partitioning. Such DeSci systems are considered from the perspective of BOLTS (Business, Operations, Legal, Technical, Social). Further steps for developing and utilizing AEOS in the context of scientific ecosystems are provided.
 
 ## Keywords
 

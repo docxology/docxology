@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> A tested Python reference engine, native libobs plugin, and obspython bridge for a telemetry-driven broadcast console. Includes deterministic figures, a versioned live OBS evidence bundle, fail-closed telemetry contracts, and a research-grade technical design manuscript. 1217 tests passing, 96.09% coverage on src/synthobs. Source: https://github.com/docxology/SynthOBS/releases/tag/v1.618.0. This...
+> A tested Python reference engine, native libobs plugin, and obspython bridge for a telemetry-driven broadcast console. Includes deterministic figures, a versioned live OBS evidence bundle, fail-closed telemetry contracts, and a research-grade technical design manuscript. 1217 tests passing, 96.09% coverage on src/synthobs. Source: https://github.com/docxology/SynthOBS/releases/tag/v1.618.0. This version replaces the PDF with one that carries its own DOI on the cover/citation page (the v1 PDF referenced the DOI only externally).
 
 ## Keywords
 

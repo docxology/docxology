@@ -9,7 +9,12 @@
     function readBibtex() {
         const node = document.getElementById("work-bibtex");
         if (!node) return "";
-        return (node.textContent || "").trim();
+        try {
+            const entry = JSON.parse(node.textContent || "");
+            return typeof entry === "string" ? entry : "";
+        } catch (err) {
+            return "";
+        }
     }
 
     function flash(button) {

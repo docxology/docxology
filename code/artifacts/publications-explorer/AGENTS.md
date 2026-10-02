@@ -1,7 +1,5 @@
 # AGENTS.md — `docxology/code/artifacts/publications-explorer`
 
-Added by the 2026-08-29 ongoing-docs fleet pass.
-
 ## What this is
 
 Generated publications-explorer data app artifact.
@@ -12,9 +10,9 @@ Generated publications-explorer data app artifact.
 
 ## Invariants & gotchas
 
-- Local-only under `projects/ongoing/` — never commit.
+- Commit only reviewed public content authorized by the user; preserve concurrent edits.
 - Live repo tree: read, don't write (see lane-root AGENTS.md for which trees are dirty).
 
 ## Verify
 
-- `ls docxology/code/artifacts/publications-explorer`
+- `ls code/artifacts/publications-explorer`

@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> A directional instrument for recording long-horizon aspirations and observable movement toward them. It returns one of four directional readings per aspiration against a versioned registry and deliberately computes no aggregate: there is no virtue score, and NOT_OBSERVED means no valid entry was admitted rather than that nobody looked. Subtitle: An Aspirational Thread for Long-Horizon Work Code...
+> A directional instrument for recording long-horizon aspirations and observable movement toward them. It returns one of four directional readings per aspiration against a versioned registry and deliberately computes no aggregate: there is no virtue score, and NOT_OBSERVED means no valid entry was admitted rather than that nobody looked. Subtitle: An Aspirational Thread for Long-Horizon Work Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.
 
 ## Keywords
 

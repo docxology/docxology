@@ -34,6 +34,9 @@ from docxology_tools.site_nav import (  # noqa: E402
     render_nav,
 )
 
+from docxology_tools.paper_artifacts import PaperResources, source_paths  # noqa: E402
+from build_work_pages import abstract_source_html, enrichment_map  # noqa: E402
+
 
 def h(value: object) -> str:
     return html.escape(str(value), quote=True)
@@ -88,25 +91,24 @@ def unique_doc_works(works: list[dict]) -> list[dict]:
     return [by_path[path] for path in sorted(by_path)]
 
 
-def pdf_rows(folder: Path) -> str:
-    pdfs = sorted(folder.glob("*.pdf"))
-    if not pdfs:
-        return '<li class="muted">No PDF file is tracked in this folder.</li>'
-    return "\n".join(
-        f'<li><a href="{h(path.name)}">{h(path.name)}</a> <span class="muted">{path.stat().st_size:,} bytes</span></li>'
-        for path in pdfs
-    )
+def pdf_rows(folder: Path, resources: PaperResources | None = None) -> str:
+    resources = resources or PaperResources.load(REPO_ROOT, folder.relative_to(REPO_ROOT).as_posix())
+    if not resources.pdfs:
+        return '<li class="muted">No PDF file is archived in this folder.</li>'
+    rows = []
+    for path in resources.pdfs:
+        label = f" · {resources.primary_basis}" if path == resources.primary_pdf else ""
+        rows.append(
+            f'<li><a href="{h(resources.url(path, prefix="../../"))}" download="{h(path.name)}" type="application/pdf">'
+            f'{h(path.name)}</a> <span class="muted">{path.stat().st_size:,} bytes{h(label)}</span></li>'
+        )
+    return "\n".join(rows)
 
 
-def image_gallery_link(folder: Path, work_title: str = "") -> str:
+def image_gallery_link(folder: Path, work_title: str = "", resources: PaperResources | None = None) -> str:
     """Return GitHub-backed image previews for the repository-only binaries."""
-    images_dir = folder / "images"
-    if not images_dir.is_dir():
-        return ""
-    img_files = sorted(
-        [f for f in images_dir.iterdir() if f.is_file() and f.suffix.lower() in (".png", ".jpg", ".jpeg", ".gif")],
-        key=lambda f: f.name,
-    )
+    resources = resources or PaperResources.load(REPO_ROOT, folder.relative_to(REPO_ROOT).as_posix())
+    img_files = resources.images
     if not img_files:
         return ""
     count = len(img_files)
@@ -135,18 +137,20 @@ def image_gallery_link(folder: Path, work_title: str = "") -> str:
     return f'<a class="btn btn-outline" href="{h(tree_url)}">Extracted Images ({count}) — GitHub</a>{more}{thumb_html}'
 
 
-def required_links(folder: Path) -> str:
+def required_links(folder: Path, resources: PaperResources | None = None) -> str:
+    resources = resources or PaperResources.load(REPO_ROOT, folder.relative_to(REPO_ROOT).as_posix())
     labels = [
         ("README.md", "README"),
         ("AGENTS.md", "AGENTS"),
         ("SKILL.md", "SKILL"),
         ("metadata.json", "Metadata"),
-        ("full_text.md", "Full Text"),
+        ("full_text.md", "Extracted text"),
+        ("CITATION.cff", "Citation metadata"),
     ]
     return "\n".join(
         f'<a class="btn btn-outline" href="{h(filename)}">{h(label)}</a>'
         for filename, label in labels
-        if (folder / filename).is_file()
+        if resources.file(filename)
     )
 
 
@@ -166,8 +170,11 @@ def breadcrumb_trail(work: dict) -> list[tuple[str, str]]:
 def render_page(work: dict) -> str:
     footer_stamp = footer_build_stamp_html()
     docs_path = str(work["docs_path"]).rstrip("/")
-    folder = REPO_ROOT / docs_path
-    summary = overview(folder) or "Local documentation and source artifacts for this bibliography entry."
+    resources = work.get("_resources") or PaperResources.load(REPO_ROOT, docs_path)
+    folder = resources.folder
+    if folder is None:
+        raise ValueError(f"No public source folder: {docs_path}")
+    summary = work.get("_enrichment", {}).get("abstract") or "An abstract is not available in this archive."
     doi_url = f"https://doi.org/{work['doi']}" if work.get("doi") else ""
     canonical = works_canonical(work)
     domain_href = domain_page_href(work.get("domain", ""), depth=2)
@@ -187,7 +194,7 @@ def render_page(work: dict) -> str:
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
-    <link rel="stylesheet" href="../../style.css?v=newspaper-glitch-20260530c">
+    <link rel="stylesheet" href="../../style.css?v=work-access-20261001">
 {HEAD_EXTRAS}
     <meta property="og:type" content="article">
     <meta property="og:title" content="{h(work['title'])} Documentation">
@@ -200,18 +207,10 @@ def render_page(work: dict) -> str:
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="{h(work['title'])}">
     <style>
-        .paper-hero{{max-width:980px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}}
-        .paper-hero h1{{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2rem,4vw,3.35rem);line-height:1.12;margin-bottom:1rem}}
-        .artifact-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}}
-        .artifact-card{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;line-height:1.7}}
-        .artifact-card strong{{display:block;color:var(--gold);margin-bottom:.25rem}}
-        .artifact-card ul{{margin-left:1.1rem}}
-        .muted{{color:var(--text-muted);font-size:.86rem}}
         {BREADCRUMB_CSS}
-        .overview-box{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.15rem;line-height:1.75;color:var(--text-secondary)}}
     </style>
 </head>
-<body>
+<body class="paper-page">
     <a href="#main" class="skip-link">Skip to main content</a>
 {render_nav(active="works", depth=2)}
 {render_breadcrumb(breadcrumb_trail(work), depth=2)}
@@ -219,6 +218,7 @@ def render_page(work: dict) -> str:
         <p class="eyebrow">{domain_label} · {h(work['type'])} · {h(work['year'])}</p>
         <h1>{h(work['title'])}</h1>
         <p class="sub">Documentation folder for catalog row {h(work['num'])} · <a href="../../works/{h(work['citation_key'])}.html">Canonical work page</a></p>
+        <div class="work-actions" role="group" aria-label="Paper source files"><a class="btn btn-outline" href="{h(resources.github_url)}">Paper folder on GitHub</a></div>
     </header>
     <main id="main" class="main">
         <section class="section">
@@ -229,15 +229,15 @@ def render_page(work: dict) -> str:
             </div>
         </section>
         <section class="section section-alt">
-            <div class="section-header"><h2>Overview</h2><p>Extracted from the local README when available.</p><div class="section-divider"></div></div>
-            <div class="overview-box"><p>{h(summary)}</p></div>
+            <div class="section-header"><h2>Overview</h2><p>Curated abstract when available.</p><div class="section-divider"></div></div>
+            <div class="overview-box"><p>{h(summary)}</p>{abstract_source_html(work.get("_enrichment", {}), prefix="../../")}</div>
         </section>
         <section class="section">
             <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation and PDFs served directly from this folder.</p><div class="section-divider"></div></div>
             <div class="artifact-grid">
-                <div class="artifact-card"><strong>Documentation</strong><p>{required_links(folder)}</p></div>
-                <div class="artifact-card"><strong>PDF Files</strong><ul>{pdf_rows(folder)}</ul></div>
-                <div class="artifact-card"><strong>Extracted Content</strong><p>{image_gallery_link(folder, work['title']) or '<span class="muted">Full text extraction pending.</span>'}</p></div>
+                <div class="artifact-card"><strong>Documentation</strong><p>{required_links(folder, resources)}</p></div>
+                <div class="artifact-card"><strong>PDF Files</strong><ul>{pdf_rows(folder, resources)}</ul></div>
+                <div class="artifact-card"><strong>Extracted Content</strong><p>{image_gallery_link(folder, work['title'], resources) or '<span class="muted">No extracted figures are archived.</span>'}</p></div>
             </div>
         </section>
     </main>
@@ -254,7 +254,11 @@ def render_page(work: dict) -> str:
 def render_outputs() -> dict[Path, str]:
     outputs: dict[Path, str] = {}
     failures: list[str] = []
-    for work in unique_doc_works(load_works()):
+    visible = source_paths(REPO_ROOT)
+    works = [{**work, "_resources": PaperResources.load(REPO_ROOT, work["docs_path"], visible)} for work in unique_doc_works(load_works())]
+    enrichments = enrichment_map(works, visible_paths=visible)
+    for work in works:
+        work["_enrichment"] = enrichments[work["citation_key"]]
         try:
             path = REPO_ROOT / work["docs_path"] / "index.html"
             outputs[path] = render_page(work)

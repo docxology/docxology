@@ -12,10 +12,6 @@
 
 > No abstract is recorded for this work yet; see the DOI or bibliography link.
 
-## Keywords
-
-`BiofirmDevelopmentWith`
-
 ## Methods
 
 - **Mapping biofirm design to Ostrom's commons governance principles** — The slides use Ostrom's commons design principles and social-ecological system concept as the reference framework for biofirm governance.

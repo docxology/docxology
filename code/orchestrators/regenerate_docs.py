@@ -928,8 +928,6 @@ def generate_readme(
 
     # Get abstract from description or metadata
     abstract = clean_abstract_text(meta.get('abstract', meta.get('description', ''))) or NO_ABSTRACT_NOTE
-    # Truncate for display
-    abstract_short = truncate_display_text(abstract)
 
     keywords = meta.get('keywords', meta.get('tags', []))
     domain = resolve_domain(folder, meta, bib_entry)
@@ -941,7 +939,7 @@ def generate_readme(
 
     emoji = DOMAIN_TO_EMOJI.get(domain, '📄')
 
-    kw_str = ' · '.join(f'`{k}`' for k in keywords[:12]) if keywords else f'`{topic}`'
+    kw_str = ' · '.join(f'`{k}`' for k in keywords[:12]) if keywords else ''
 
     lines = [
         f'# {emoji} {title}',
@@ -963,12 +961,12 @@ def generate_readme(
         '',
         '## Abstract',
         '',
-        f'> {abstract_short}',
+        f'> {abstract}',
         '',
-        '## Keywords',
-        '',
-        kw_str,
-        '',
+    ])
+    if kw_str:
+        lines.extend(['## Keywords', '', kw_str, ''])
+    lines.extend([
         '## Methods',
         '',
     ])

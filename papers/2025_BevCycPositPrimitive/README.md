@@ -10,11 +10,7 @@
 
 ## Abstract
 
-> BehavioralCycle / CYC / “ from epigenetic-sequence / epigenetic-cycle” transcribed onto ROS-like / gymnasium like Nodes-of-action-sequence; but in actual essence; is just an empty node-scaffold To fill with action-context-pairs that is designed so that they are decomposable Onto the lowest level (which is muscle tension %) “ BevCYC is a framework that implements a decomposable Chain of Node ( N –...
-
-## Keywords
-
-`BevCycPositPrimitive`
+> BehavioralCycle / CYC / “ from epigenetic-sequence / epigenetic-cycle” transcribed onto ROS-like / gymnasium like Nodes-of-action-sequence; but in actual essence; is just an empty node-scaffold To fill with action-context-pairs that is designed so that they are decomposable Onto the lowest level (which is muscle tension %) “ BevCYC is a framework that implements a decomposable Chain of Node ( N – N – N ) Representing an Action Sequence / Concept Sequence That is based on the Epigenetic Cycle ideations.
 
 ## Methods
 

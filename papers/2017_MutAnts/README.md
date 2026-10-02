@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior. In this issue of Cell, Trible et al. (2017) and Yan et al. (2017) advance the field of ant genetics by performing CRISPR/Cas9-mediated knockout of the Orco olfactory co-receptor gene in two ant species separated by...
+> The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior. In this issue of Cell, Trible et al. (2017) and Yan et al. (2017) advance the field of ant genetics by performing CRISPR/Cas9-mediated knockout of the Orco olfactory co-receptor gene in two ant species separated by 100+ million years of evolution: the clonal raider ant (Ooceraea biroi) and Jerdon's jumping ant (Har
 
 ## Keywords
 

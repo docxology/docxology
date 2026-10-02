@@ -1,8 +1,6 @@
 # AGENTS.md — `docxology/reports/browser-qa/2026-08-26/`
 
-Added by the 2026-08-29 ongoing-docs fleet pass.
-
 ## What this is
 
 Single dated run folder of the `browser-qa` series: `manifest.json`
-plus run artifacts. Generated, local-only — never commit, never hand-edit.
+plus run artifacts. Generated; rebuild rather than hand-edit. Commit only reviewed public evidence under the repository release and retention policies.

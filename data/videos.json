@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T21:36:53Z",
+  "generated_at": "2026-10-01T23:33:56Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -2658,6 +2658,13 @@
           "url": "/works/Friedman2020ReimaginingMaps148.html"
         },
         {
+          "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
+          "citation_key": "Friedman2026BeeStackEvidenceTypedScaffold125",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026BeeStackEvidenceTypedScaffold125.html"
+        },
+        {
           "title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
           "citation_key": "Friedman2026DemoCreateDeclarativeAudioVisual166",
           "year": 2026,
@@ -2670,13 +2677,6 @@
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html"
-        },
-        {
-          "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
-          "citation_key": "Friedman2026ENTOENcryptedTypedOmnitrack167",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026ENTOENcryptedTypedOmnitrack167.html"
         }
       ]
     },
@@ -3253,18 +3253,18 @@
           "url": "/works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html"
         },
         {
+          "title": "A Living Meta-Analysis of the Modafinil Literature",
+          "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026LivingMetaAnalysisModafinil176.html"
+        },
+        {
           "title": "AGEINT: Agentic Intelligence",
           "citation_key": "Friedman2026AGEINTAgenticIntelligence170",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
-        },
-        {
-          "title": "Autopoietic Project Generation",
-          "citation_key": "Friedman2026AutopoieticProjectGeneration185",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026AutopoieticProjectGeneration185.html"
         }
       ]
     },
@@ -3633,11 +3633,11 @@
           "url": "/works/Friedman2023GenerativeResearchTeamsActive057.html"
         },
         {
-          "title": "AGEINT: Agentic Intelligence",
-          "citation_key": "Friedman2026AGEINTAgenticIntelligence170",
+          "title": "A Living Meta-Analysis of the Modafinil Literature",
+          "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
+          "url": "/works/Friedman2026LivingMetaAnalysisModafinil176.html"
         }
       ]
     },
@@ -9626,6 +9626,13 @@
       ],
       "related_works": [
         {
+          "title": "A Living Meta-Analysis of the Modafinil Literature",
+          "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026LivingMetaAnalysisModafinil176.html"
+        },
+        {
           "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
           "citation_key": "Friedman2026ActiveInferencePowerSuite199",
           "year": 2026,
@@ -9645,13 +9652,6 @@
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026AlphaCOGANTRecursiveCorporateSelf178.html"
-        },
-        {
-          "title": "Convergence Analysis of Gradient Descent Optimization",
-          "citation_key": "Friedman2026ConvergenceAnalysisGradientDescent121",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026ConvergenceAnalysisGradientDescent121.html"
         }
       ]
     },
@@ -9772,6 +9772,13 @@
       ],
       "related_works": [
         {
+          "title": "A Living Meta-Analysis of the Modafinil Literature",
+          "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026LivingMetaAnalysisModafinil176.html"
+        },
+        {
           "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
           "citation_key": "Friedman2026ENTOENcryptedTypedOmnitrack167",
           "year": 2026,
@@ -9791,13 +9798,6 @@
           "year": 2020,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2020EmergentTeamsComplexThreats085.html"
-        },
-        {
-          "title": "The Great Preset: Remote Teams and Operational Art",
-          "citation_key": "Friedman2020GreatPresetRemoteTeams089",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020GreatPresetRemoteTeams089.html"
         }
       ]
     },
@@ -10071,6 +10071,13 @@
           "url": "/works/Friedman2020ReimaginingMaps148.html"
         },
         {
+          "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
+          "citation_key": "Friedman2026BeeStackEvidenceTypedScaffold125",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026BeeStackEvidenceTypedScaffold125.html"
+        },
+        {
           "title": "DuckRabbit: Typed Multimodal Illusion Generator",
           "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
           "year": 2026,
@@ -10083,13 +10090,6 @@
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026ENTOENcryptedTypedOmnitrack167.html"
-        },
-        {
-          "title": "Golden Line: Toward What Matters",
-          "citation_key": "Friedman2026GoldenLineTowardWhat204",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026GoldenLineTowardWhat204.html"
         }
       ]
     },
@@ -10210,6 +10210,13 @@
       ],
       "related_works": [
         {
+          "title": "A Living Meta-Analysis of the Modafinil Literature",
+          "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026LivingMetaAnalysisModafinil176.html"
+        },
+        {
           "title": "DuckRabbit: Typed Multimodal Illusion Generator",
           "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
           "year": 2026,
@@ -10229,13 +10236,6 @@
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html"
-        },
-        {
-          "title": "docxplus — the Intelligent Document Container",
-          "citation_key": "Friedman2026DocxplusIntelligentDocumentContainer212",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026DocxplusIntelligentDocumentContainer212.html"
         }
       ]
     },
@@ -11542,18 +11542,18 @@
           "url": "/works/Friedman2026ENTOENcryptedTypedOmnitrack167.html"
         },
         {
+          "title": "FractiSkills: One Portable Agent Skill per Page",
+          "citation_key": "Friedman2026FractiSkillsOnePortableAgent217",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026FractiSkillsOnePortableAgent217.html"
+        },
+        {
           "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
           "citation_key": "Friedman2026SynthOBSFractiSynthGoldenRatio198",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html"
-        },
-        {
-          "title": "docxplus — the Intelligent Document Container",
-          "citation_key": "Friedman2026DocxplusIntelligentDocumentContainer212",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026DocxplusIntelligentDocumentContainer212.html"
         }
       ]
     },
@@ -12231,11 +12231,11 @@
           "url": "/works/Friedman2023ActiveInferenceInstituteActive061.html"
         },
         {
-          "title": "DuckRabbit: Typed Multimodal Illusion Generator",
-          "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
+          "title": "A Living Meta-Analysis of the Modafinil Literature",
+          "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html"
+          "url": "/works/Friedman2026LivingMetaAnalysisModafinil176.html"
         }
       ]
     },
@@ -16447,11 +16447,11 @@
           "url": "/works/Friedman2020ReimaginingMaps148.html"
         },
         {
-          "title": "DuckRabbit: Typed Multimodal Illusion Generator",
-          "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
+          "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
+          "citation_key": "Friedman2026BeeStackEvidenceTypedScaffold125",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html"
+          "url": "/works/Friedman2026BeeStackEvidenceTypedScaffold125.html"
         }
       ]
     },
@@ -17337,6 +17337,13 @@
           "url": "/works/Friedman20255thAppliedActiveInference008.html"
         },
         {
+          "title": "A Living Meta-Analysis of the Modafinil Literature",
+          "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026LivingMetaAnalysisModafinil176.html"
+        },
+        {
           "title": "DuckRabbit: Typed Multimodal Illusion Generator",
           "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
           "year": 2026,
@@ -17349,13 +17356,6 @@
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026ENTOENcryptedTypedOmnitrack167.html"
-        },
-        {
-          "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
-          "citation_key": "Friedman2026SynthOBSFractiSynthGoldenRatio198",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html"
         }
       ]
     },
@@ -84765,6 +84765,13 @@
           "url": "/works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html"
         },
         {
+          "title": "A Living Meta-Analysis of the Modafinil Literature",
+          "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026LivingMetaAnalysisModafinil176.html"
+        },
+        {
           "title": "CogSecSkills: Multiharness Agentic Skills for Cognitive Security",
           "citation_key": "Friedman2026CogSecSkillsMultiharnessAgenticSkills174",
           "year": 2026,
@@ -84777,13 +84784,6 @@
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html"
-        },
-        {
-          "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
-          "citation_key": "Friedman2026ENTOENcryptedTypedOmnitrack167",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026ENTOENcryptedTypedOmnitrack167.html"
         }
       ]
     },
@@ -87128,6 +87128,13 @@
       ],
       "related_works": [
         {
+          "title": "A Living Meta-Analysis of the Modafinil Literature",
+          "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026LivingMetaAnalysisModafinil176.html"
+        },
+        {
           "title": "Black Line: Strong Work in Public",
           "citation_key": "Friedman2026BlackLineStrongWork205",
           "year": 2026,
@@ -87147,13 +87154,6 @@
           "year": 2026,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2026PersonalRedLinesDevelopment203.html"
-        },
-        {
-          "title": "docxplus — the Intelligent Document Container",
-          "citation_key": "Friedman2026DocxplusIntelligentDocumentContainer212",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026DocxplusIntelligentDocumentContainer212.html"
         }
       ]
     },

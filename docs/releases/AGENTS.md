@@ -1,7 +1,5 @@
 # AGENTS.md — `docxology/docs/releases`
 
-Added by the 2026-08-29 ongoing-docs fleet pass.
-
 ## What this is
 
 Release notes for the docxology site.
@@ -20,5 +18,5 @@ Release notes for the docxology site.
 
 ## Verify
 
-- `ls docxology/docs/releases`
-- Parent: `docxology/AGENTS.md`; lane policy: `../../AGENTS.md` (ongoing root).
+- `ls docs/releases`
+- Follow the [root repository instructions](../../AGENTS.md) and nearer parent instructions.

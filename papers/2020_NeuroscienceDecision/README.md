@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career. Hanks explores how ideas from computational neuroscience have helped him set his own research agenda and navigate everyday situations. He discusses the intertwining of brain decision-making with free will, conscious awareness, and mental health, recommending an...
+> In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career. Hanks explores how ideas from computational neuroscience have helped him set his own research agenda and navigate everyday situations. He discusses the intertwining of brain decision-making with free will, conscious awareness, and mental health, recommending an integrative approach drawing on multiple types of experiments and model systems.
 
 ## Keywords
 

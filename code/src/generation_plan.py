@@ -129,7 +129,18 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # Final pass adds the paper-documents outputs and current-counts so the
     # fixed point (folder flags + "as of" month) is reached in one pass.
     GenerationStep("sync-publications-final", "sync_publications_html.py", ("--apply",), ("--check",), "Publication HTML and JSON-LD after paper documents", ("pages/BIBLIOGRAPHY.md", "code/templates/publications.html.tmpl", "data/current-counts.json", "papers/*/README.md", "papers/*/AGENTS.md", "papers/*/SKILL.md", "papers/*/full_text.md", "papers/*/images/*")),
-    GenerationStep("work-pages", "build_work_pages.py", (), ("--check",), "Per-work landing pages", ("data/works.json", "data/work-enrichment.json", "papers/*/README.md", "papers/*/SKILL.md")),
+    GenerationStep(
+        "work-pages", "build_work_pages.py", (), ("--check",), "Per-work landing pages",
+        (
+            "data/works.json", "data/publishing-status.json", "bibliography.bib",
+            "papers/paper_metadata.json", "papers/*/metadata.json",
+            "papers/*/README.md", "papers/*/AGENTS.md", "papers/*/SKILL.md",
+            "papers/*/CITATION.cff", "papers/*/full_text.md",
+            "papers/*/*.[pP][dD][fF]", "papers/*/images/*", ".gitignore",
+            "code/orchestrators/build_work_pages.py", "code/src/paper_artifacts.py",
+            "code/src/metadata_templates.py", "code/src/site_nav.py",
+        ),
+    ),
     GenerationStep("video-pages", "build_video_pages.py", (), ("--check",), "Video landing pages and exports", ("data/works.json", "data/work-enrichment.json", "data/video-transcripts/*.txt", "code/data/youtube_*.json")),
     # Artwork pages consume the (freshness-updated) Flickr export and the
     # curated ART_COLLECTIONS.md table; they run before the SEO/security
@@ -150,7 +161,18 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # date-free) so a bibliography add or retirement no longer halts the
     # rebuild. The page is now written by the step, so it is not an input.
     GenerationStep("start-here", "build_start_here.py", ("--sync-counts",), ("--check",), "Start Here curated reading paths page"),
-    GenerationStep("paper-pages", "build_paper_pages.py", (), ("--check",), "Paper folder HTML pages", ("data/works.json", "papers/*/README.md", "papers/*/*.pdf", "papers/*/images/*")),
+    GenerationStep(
+        "paper-pages", "build_paper_pages.py", (), ("--check",), "Paper folder HTML pages",
+        (
+            "data/works.json", "papers/paper_metadata.json", "papers/*/metadata.json",
+            "papers/*/README.md", "papers/*/AGENTS.md", "papers/*/SKILL.md",
+            "papers/*/CITATION.cff", "papers/*/full_text.md",
+            "papers/*/*.[pP][dD][fF]", "papers/*/images/*", ".gitignore",
+            "code/orchestrators/build_paper_pages.py", "code/src/paper_artifacts.py",
+            "code/orchestrators/build_work_pages.py", "code/src/metadata_templates.py",
+            "code/src/site_nav.py",
+        ),
+    ),
     # DERIVED (always-run): renders from the centrally declared stub table in
     # code/src/redirect_stubs.py; consumes no repository files.
     GenerationStep("redirect-stubs", "generate_redirect_stubs.py", ("--apply",), ("--check",), "Centrally rendered legacy redirects"),

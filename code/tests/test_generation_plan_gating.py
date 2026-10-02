@@ -12,6 +12,7 @@ stays the ungated authority; the skip mechanics themselves are pinned by
 
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 
@@ -71,6 +72,7 @@ DERIVED_STEPS = {
 def _seed_pattern(repo_root: Path, pattern: str) -> Path:
     """Create one file matched by ``pattern`` in a disposable repo."""
     literal = pattern.replace("[0-9]*", "2026-01-01")
+    literal = re.sub(r"\[([A-Za-z]+)\]", lambda match: match.group(1)[0], literal)
     parts = []
     for segment in Path(literal).parts:
         if segment in ("*", "**"):
@@ -85,6 +87,11 @@ def _seed_pattern(repo_root: Path, pattern: str) -> Path:
         f"seeded {path.relative_to(repo_root)} does not match pattern {pattern!r}"
     )
     return path
+
+
+def test_seed_pattern_supports_case_insensitive_pdf_glob(tmp_path: Path) -> None:
+    path = _seed_pattern(tmp_path, "papers/*/*.[pP][dD][fF]")
+    assert path.suffix == ".pdf"
 
 
 def _seed_inputs(repo_root: Path, step: GenerationStep) -> list[Path]:

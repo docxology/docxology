@@ -39,3 +39,13 @@ def test_schema_rejects_an_artifact_doi_without_a_canonical_identity():
         "Missing both DOI and venue",
         "Artifact DOI requires a canonical DOI",
     ]
+
+
+def test_schema_round_trip_preserves_the_explicit_source_pdf_choice():
+    metadata = PaperMetadata.from_dict(
+        {"title": "Example", "venue": "Example venue", "primary_pdf": "manuscript.pdf"}
+    )
+
+    restored = PaperMetadata.from_dict(metadata.to_dict())
+    assert restored.primary_pdf == "manuscript.pdf"
+    assert restored.validate() == []

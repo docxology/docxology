@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> There is a broadly recognized need for better situational awareness within the information environment. Each year, millions of articles, books, documents, and datasets are published. Amidst this flood of information, even those with significant experience and expertise in the knowledge economy are struggling to evaluate and vet claims. This document builds on the feedback of dozens of experts...
+> There is a broadly recognized need for better situational awareness within the information environment. Each year, millions of articles, books, documents, and datasets are published. Amidst this flood of information, even those with significant experience and expertise in the knowledge economy are struggling to evaluate and vet claims. This document builds on the feedback of dozens of experts across myriad fields submitted to the University of Washington Applied Physics Lab’s Verified Information Exchange Environments Program, to present recommendations for a sociotechnical system, “TrustFinder”, for collaborative management of the information supply chain. TrustFinder implements controls and standards, web and document annotation affordances, argument representation frameworks, and crowdsourcing design principles in order to harness the work of global research communities. The ultimate goal of TrustFinder is to structure the information environment to such an extent that it enables users to find trusted sources of information and rapidly assess concepts and claims.
 
 ## Keywords
 

@@ -12,10 +12,6 @@
 
 > An experiment on decomposing language onto initially established graph-theory representation applied then onto some pre-selected transformations (commonly used context/tool related transmutes) (t1,t2,t3) then upon some layers of decomposition finding out the shared context / what we label as a handshake; for the purpose of education / others
 
-## Keywords
-
-`Graphspeak`
-
 ## Methods
 
 - **Proposed three-layer graph sampling, conversion and decomposition scheme** — Outlines Layer 0-2 steps: sampling nodes with graph theory, converting via chosen permutative formats, then decomposing and comparing similarity.

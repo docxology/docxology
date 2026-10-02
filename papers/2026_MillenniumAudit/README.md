@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Statement-level forensic audit of the MillenniumLean package (AIX Global, Zenodo 10.5281/zenodo.22226553), which claims kernel-checked Lean 4 proofs of the six remaining Clay Millennium Problems. The audit independently reproduces every kernel-hygiene claim (clean build, zero sorry, zero project axioms) under the pinned toolchain, then audits what the theorem types actually say. Verdict: none of...
+> Statement-level forensic audit of the MillenniumLean package (AIX Global, Zenodo 10.5281/zenodo.22226553), which claims kernel-checked Lean 4 proofs of the six remaining Clay Millennium Problems. The audit independently reproduces every kernel-hygiene claim (clean build, zero sorry, zero project axioms) under the pinned toolchain, then audits what the theorem types actually say. Verdict: none of the six problems is resolved.
 
 ## Keywords
 

@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Many exciting studies have begun to elucidate the genetics of the morphological and physiological diversity of ants, but as yet few studies have investigated the genetics of ant behavior directly. Ant genomes are marked by extreme rates of gene turnover, especially in gene families related to olfactory communication, such as the synthesis of cuticular hydrocarbons and the perception of...
+> Many exciting studies have begun to elucidate the genetics of the morphological and physiological diversity of ants, but as yet few studies have investigated the genetics of ant behavior directly. Ant genomes are marked by extreme rates of gene turnover, especially in gene families related to olfactory communication, such as the synthesis of cuticular hydrocarbons and the perception of environmental semiochemicals. Transcriptomic and epigenetic differences are apparent between reproductive and sterile females, males and females, and workers that differ in body size. Quantitative genetic approaches suggest heritability of task performance, and population genetic studies indicate a genetic association with reproductive status in some species. Gene expression is associated with behavior including foraging, response to queens attempting to join a colony, circadian patterns of task performance, and age-related changes of task. Ant behavioral genetics needs further investigation of the feedback between individual-level physiological changes and socially mediated responses to environmental conditions.
 
 ## Keywords
 

@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> DemoCreate generates audio-visual demos of software — codebase tours, website walkthroughs, and terminal/CLI demos — from a single declarative, deterministic spine. A Demo is an ordered action stream plus narration chunks, merging CodeVideo's event-sourced virtual-IDE model with VSpeak's chunk/trigger model. Every heavy backend (TTS via Kokoro/Chatterbox, transcription via Whisper, capture via...
+> DemoCreate generates audio-visual demos of software — codebase tours, website walkthroughs, and terminal/CLI demos — from a single declarative, deterministic spine. A Demo is an ordered action stream plus narration chunks, merging CodeVideo's event-sourced virtual-IDE model with VSpeak's chunk/trigger model. Every heavy backend (TTS via Kokoro/Chatterbox, transcription via Whisper, capture via mss/Playwright, animation via Manim, assembly via MoviePy/ffmpeg) sits behind an abstract interface with a pure-Python deterministic default, so the package produces a real demo with only light dependencies and upgrades when extras are installed. On-screen actions are anchored to spoken trigger words via TTS→STT synchronization: narration audio is generated, transcribed back to word-level timestamps, and used to align the action stream with the narration.
 
 ## Keywords
 

@@ -12,10 +12,6 @@
 
 > No abstract is recorded for this work yet; see the DOI or bibliography link.
 
-## Keywords
-
-`SlidesIris`
-
 ## Methods
 
 - **Active Inference generative model drawn as a Bayesian graph** — The slides open with a labelled graph of the A, B, C, D, E, G and policy terms of an Active Inference generative model as the reference frame.

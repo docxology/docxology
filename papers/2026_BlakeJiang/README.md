@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> This rapid-publication essay synthesizes three intellectual frameworks examining cognitive closure. The author analyzes Professor Jiang Xueqin's commentary on artificial intelligence through William Blake's late-18th-century perceptual analysis and Active Inference terminology. The core convergence identified is closure of the perceiving system around its own top-down expectations, which Blake...
+> This rapid-publication essay synthesizes three intellectual frameworks examining cognitive closure. The author analyzes Professor Jiang Xueqin's commentary on artificial intelligence through William Blake's late-18th-century perceptual analysis and Active Inference terminology. The core convergence identified is closure of the perceiving system around its own top-down expectations, which Blake termed Newton's Sleep, Jiang calls consciousness capture, and Active Inference designates as pathological prior dominance. The work maps Jiang's concepts, including persuasion machinery, data sanitization, edge-case suppression, and engagement directives, onto Blake's cosmological schema and Active Inference's generative models.
 
 ## Keywords
 

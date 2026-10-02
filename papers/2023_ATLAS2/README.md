@@ -10,11 +10,7 @@
 
 ## Abstract
 
-> The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions. Here we provide an initial specification for digital prototypes and...
-
-## Keywords
-
-`ATLAS2`
+> The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions. Here we provide an initial specification for digital prototypes and paper-and-pencil implementations of a matured ATLAS architecture which integrates pattern language approaches with question-oriented procedures to manage and interpret meaning and context. The ATLAS system facilitates the management and communication of nuanced data sets and knowledge bases with an eye towards interoperability without the need for fully shared standards. The development of ATLAS, driven by the need for enhanced data interoperability and shared understanding in an increasingly complex and volatile digital landscape, reflects a profound, community response to the challenges of information environments and the fragility of extreme specialization. ATLAS's ongoing evolution showcases its adaptability and significance in the realms of data analysis, knowledge management, and cognitive security, and this first release of a technical specification establishes a foundation for a transition from prototype to scale-appropriate implementation.
 
 ## Methods
 

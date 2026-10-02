@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Entomology, the science of insects, has developed over thousands of years of human–insect interactions. As insects exist across essentially all terrestrial surfaces and play various critical ecological roles, theoretical and applied entomology are central research domains for the 21st century and beyond. Recent technological developments, including international accessibility to transparent video...
+> Entomology, the science of insects, has developed over thousands of years of human–insect interactions. As insects exist across essentially all terrestrial surfaces and play various critical ecological roles, theoretical and applied entomology are central research domains for the 21st century and beyond. Recent technological developments, including international accessibility to transparent video creation, are transforming social processes of education, research, and governance. This editorial summarizes the protocols associated with modern entomology and aims to communicate recent methodological developments in entomology in order to facilitate their adoption.
 
 ## Keywords
 

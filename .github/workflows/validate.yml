@@ -85,5 +85,6 @@ jobs:
             code/tests/test_rendered_art_grid.py \
             code/tests/test_nav_more_dropdown.py \
             code/tests/test_axe_smoke.py \
+            code/tests/test_rendered_work_pages.py \
             code/tests/test_lighthouse_budgets.py \
             -q

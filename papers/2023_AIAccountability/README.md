@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> As a result of recent advances in Large Language Models (LLMs), Artificial Intelligence (AI) has become a focus of popular discussion. Risks associated with AI have been considered for as long as such technologies have been imagined, and have been considered from a wide variety of perspectives. As such, there has been no shortage of discourse on the matter and there are now numerous calls to...
+> As a result of recent advances in Large Language Models (LLMs), Artificial Intelligence (AI) has become a focus of popular discussion. Risks associated with AI have been considered for as long as such technologies have been imagined, and have been considered from a wide variety of perspectives. As such, there has been no shortage of discourse on the matter and there are now numerous calls to consider regulation, ethical frameworks, and even full halts to continued research on AI. Here we argue (i) that despite the very real risks associated with AI technologies, blanket regulation of and ethical frameworks for the broad range of AI technologies are inappropriate and likely to generate negative externalities and new conflicts, (ii) that instead, facilitation of amendment and adaptation of adjacent regulatory and self-regulatory systems, and instantiation of new professionalization, insurance, and self-regulatory structures would be far more productive, practical, and safe, and (iii) that the National Telecommunications and Information Administration (NTIA) is uniquely positioned to perform such facilitation and related convening and recommendation, given its mission and history. We conclude with summary recommendations.
 
 ## Keywords
 

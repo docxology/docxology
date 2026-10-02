@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Development. The proposal identifies technical, academic, linguistic, and cultural barriers to disseminating high-quality Active Inference materials and cognitive modeling practices, and proposes...
+> A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Development. The proposal identifies technical, academic, linguistic, and cultural barriers to disseminating high-quality Active Inference materials and cognitive modeling practices, and proposes open-source educational resources to address these gaps at different education levels.
 
 ## Keywords
 

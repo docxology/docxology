@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Colonies of the red harvester ant (Pogonomyrmex barbatus) differ in how they regulate collective foraging activity in response to changes in humidity. We used transcriptomic, physiological, and pharmacological experiments to investigate the molecular basis of this ecologically important variation in collective behavior among colonies. RNA sequencing of forager brain tissue showed an association...
+> Colonies of the red harvester ant (Pogonomyrmex barbatus) differ in how they regulate collective foraging activity in response to changes in humidity. We used transcriptomic, physiological, and pharmacological experiments to investigate the molecular basis of this ecologically important variation in collective behavior among colonies. RNA sequencing of forager brain tissue showed an association between colony foraging activity and differential expression of transcripts related to biogenic amine and neurohormonal metabolism and signaling. In field experiments, pharmacological increases in forager brain dopamine titer caused significant increases in foraging activity. Colonies that were naturally most sensitive to humidity were significantly more responsive to the stimulatory effect of exogenous dopamine. In addition, forager brain tissue significantly varied among colonies in biogenic amine content. Neurophysiological variation among colonies associated with individual forager sensitivity to humidity may reflect the heritable molecular variation on which natural selection acts to shape the collective regulation of foraging.
 
 ## Keywords
 

@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Reimagining Maps was written after participation in a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus. The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experience, and graphic design. Methodologies and concepts from cartography have been creatively applied in a variety of fields, such as the application of...
+> Reimagining Maps was written after participation in a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus. The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experience, and graphic design. Methodologies and concepts from cartography have been creatively applied in a variety of fields, such as the application of spatial mapping techniques to information in knowledge management, or the use of itinerary visualization methods in non-spatial journeys such as learning maps in learning management systems. These fields have been subjected to their own forms of development and evolution leading to new methodologies and concepts somewhat removed from their origins. Cartography itself has undergone a great deal of technology-driven development but would look very different today had it been developed as a new field through the creative application of methodologies and concepts from those it inspired. As the modern information and logistical context presents new challenges and thus new demands for maps, we propose a “reimagining of maps” through an interdisciplinary synthesis inspired by the interdisciplinary origins of maps themselves.
 
 ## Keywords
 

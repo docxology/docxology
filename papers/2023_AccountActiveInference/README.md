@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> In Active Inference, we develop (ensembles of) generative models of ecosystems of shared intelligence by accounting for cognitive system and phenomena. The work of developing generative models is more like doing accounting than doing calculation, memorization, or inference itself – the generative model does the inference for us. One of our functional roles or capacities as an engaged generative...
+> In Active Inference, we develop (ensembles of) generative models of ecosystems of shared intelligence by accounting for cognitive system and phenomena. The work of developing generative models is more like doing accounting than doing calculation, memorization, or inference itself – the generative model does the inference for us. One of our functional roles or capacities as an engaged generative modeler, is to take an analytical stance towards accounting for cognitive properties, processes, and perspectives. In this setting, we are the Active AccountAnts. The generative model we create is an Active InferAnt.
 
 ## Keywords
 

@@ -43,6 +43,7 @@ from docxology_tools.site_nav import (  # noqa: E402
 )
 
 from docxology_tools.report_paths import generated_timestamp  # noqa: E402
+from docxology_tools.paper_artifacts import PaperResources, source_file, source_paths  # noqa: E402
 
 
 def h(value: object) -> str:
@@ -97,7 +98,7 @@ PRINCIPAL_LD = {
 }
 
 
-def author_ld(work: dict) -> dict | list[dict]:
+def author_ld(work: dict) -> dict | list[dict] | None:
     """schema.org author(s) for a work.
 
     The principal keeps his full identity node (@id + ORCID/Wikidata sameAs);
@@ -106,7 +107,7 @@ def author_ld(work: dict) -> dict | list[dict]:
     """
     names = work.get("authors") or []
     if not names:
-        return PRINCIPAL_LD
+        return None
     entities: list[dict] = []
     for name in names:
         family, _, given = name.partition(",")
@@ -285,87 +286,299 @@ def keyword_list(markdown: str, limit: int = 12) -> list[str]:
     return out
 
 
-def enrichment_for(work: dict) -> dict:
-    path = work.get("docs_path")
-    readme = REPO_ROOT / path / "README.md" if path else None
-    skill = REPO_ROOT / path / "SKILL.md" if path else None
-    source = ""
-    if readme and readme.exists():
-        source = readme.read_text(encoding="utf-8", errors="ignore")
-    skill_text = skill.read_text(encoding="utf-8", errors="ignore") if skill and skill.exists() else ""
-    abstract = section_paragraph(source, "Abstract")
-    keywords = keyword_list(source) or keyword_list(skill_text)
-    findings = (
-        bullet_section(source, "Key Findings")
-        or bullet_section(source, "Key Contributions")
-        or bullet_section(skill_text, "Key Findings")
-        or bullet_section(skill_text, "Key Concepts")
+def enrichment_for(
+    work: dict, *, resources: PaperResources | None = None, curated: dict | None = None,
+    visible_paths: frozenset[str] | None = None,
+) -> dict:
+    """Read complete curated content, retaining a source for each displayed field.
+
+    Explicitly empty curated fields and cleared metadata summaries are decisions,
+    so they never fall back to stale generated README/SKILL text. Hand-authored
+    documentation remains a fallback when the corresponding authoritative field
+    is absent. Concepts and contributions are kept apart from findings.
+    """
+    from urllib.parse import urlsplit
+
+    from docxology_tools.metadata_templates import (
+        is_template_method,
+        specific_findings,
+        specific_method_details,
     )
-    methods = bullet_section(source, "Methods") or bullet_section(skill_text, "Methods")
+
+    resources = resources or work.get("_resources")
+    if resources is None:
+        resources = PaperResources.load(REPO_ROOT, work.get("docs_path") or "", visible_paths)
+    if curated is None:
+        master_path = source_file(REPO_ROOT, "papers/paper_metadata.json", visible_paths)
+        curated = json.loads(master_path.read_text(encoding="utf-8")) if master_path else {}
+    if not isinstance(curated, dict):
+        raise ValueError("Consolidated paper metadata must be an object")
+    folder = resources.folder.name if resources.folder else ""
+    entry = curated.get(folder, {})
+    if not isinstance(entry, dict):
+        raise ValueError(f"Curated metadata must be an object for {folder}")
+    metadata = resources.metadata or {}
+    sources: dict[str, str] = {}
+    master_source = "papers/paper_metadata.json"
+    metadata_source = f"{resources.docs_path}metadata.json" if folder else ""
+    readme_text = resources.readme.read_text(encoding="utf-8", errors="replace") if resources.readme else ""
+    skill_text = resources.skill.read_text(encoding="utf-8", errors="replace") if resources.skill else ""
+    documents = [
+        (readme_text, f"{resources.docs_path}README.md"),
+        (skill_text, f"{resources.docs_path}SKILL.md"),
+    ]
+
+    def missing_notice(value: str) -> bool:
+        return bool(re.match(
+            r"^(?:No abstract (?:is recorded|is available|available)|"
+            r"Detailed local abstract is not available|"
+            r"(?:Abstract|Summary) (?:is )?not available)\b", value, re.I,
+        ))
+
+    def provenance(value: object) -> dict:
+        if not isinstance(value, dict):
+            return {}
+        result = {}
+        for field in ("source", "date", "work_kind", "kind"):
+            text = value.get(field)
+            if isinstance(text, str) and text and not text.startswith(("/", "file:", "~/")):
+                result[field] = text
+        url = value.get("url")
+        if isinstance(url, str):
+            try:
+                parsed = urlsplit(url)
+            except ValueError:
+                return result
+            if parsed.scheme == "https" and parsed.hostname and not parsed.username and not parsed.password:
+                result["url"] = url
+        return result
+
+    if "abstract" in entry:
+        value = entry["abstract"]
+        abstract = value.strip() if isinstance(value, str) else ""
+        if abstract and not missing_notice(abstract):
+            sources["abstract"] = master_source
+        else:
+            abstract = ""
+    else:
+        abstract = ""
+        for text, origin in documents:
+            candidate = strip_md(section(text, "Abstract"))
+            if candidate and not missing_notice(candidate):
+                abstract = candidate
+                sources["abstract"] = origin
+                break
+
+    topic = str(entry.get("topic") or folder.partition("_")[2]).casefold()
+    if "keywords" in entry or "tags" in entry:
+        keywords = entry.get("keywords", entry.get("tags")) or []
+        keyword_source = master_source
+    elif "keywords" in metadata or "tags" in metadata:
+        keywords = metadata.get("keywords", metadata.get("tags")) or []
+        keyword_source = metadata_source
+    else:
+        keywords, keyword_source = [], ""
+        for text, origin in documents:
+            candidate = keyword_list(text)
+            if len(candidate) == 1 and candidate[0].casefold() == topic:
+                candidate = []
+            if candidate:
+                keywords, keyword_source = candidate, origin
+                break
+    keywords = list(dict.fromkeys(
+        word.strip() for word in keywords
+        if isinstance(word, str) and word.strip()
+    )) if isinstance(keywords, list) else []
+    if keywords:
+        sources["keywords"] = keyword_source
+
+    methods = []
+    if "methods" in metadata:
+        methods = [
+            f"{name} — {description}" if description else name
+            for name, description in specific_method_details(metadata.get("methods"))
+        ]
+        method_source = metadata_source
+    else:
+        method_source = ""
+        for text, origin in documents:
+            candidates = bullet_section(text, "Methods", limit=10000)
+            candidates = [item for item in candidates if not is_template_method({"name": item.split(" — ", 1)[0]})]
+            if candidates:
+                methods, method_source = candidates, origin
+                break
+    if methods:
+        sources["methods"] = method_source
+
+    grounded = (
+        isinstance(metadata.get("summary_provenance"), dict)
+        and metadata["summary_provenance"].get("source") == "full_text.md"
+    )
+    findings = []
+    if "key_findings" in metadata:
+        findings = specific_findings(metadata.get("key_findings"), *([] if grounded else [abstract]))
+        finding_source = metadata_source
+    else:
+        finding_source = ""
+        for text, origin in documents:
+            candidate = specific_findings(bullet_section(text, "Key Findings", limit=10000), abstract)
+            if candidate:
+                findings, finding_source = candidate, origin
+                break
+    if findings:
+        sources["findings"] = finding_source
+
+    concepts = []
+    if "key_concepts" in metadata or "concepts" in metadata:
+        concepts = [str(item).strip() for item in metadata.get("key_concepts", metadata.get("concepts")) or [] if str(item).strip()]
+        concept_source = metadata_source
+    else:
+        concept_source = ""
+        for text, origin in documents:
+            candidate = bullet_section(text, "Key Concepts", limit=10000) or bullet_section(text, "Key Contributions", limit=10000)
+            if candidate:
+                concepts, concept_source = candidate, origin
+                break
+    if concepts:
+        sources["concepts"] = concept_source
+
     return {
         "citation_key": work["citation_key"],
         "abstract": abstract,
         "keywords": keywords,
         "findings": findings,
         "methods": methods,
-        "source": f"{path}README.md" if abstract or keywords or findings or methods else "",
+        "concepts": concepts,
+        "sources": sources,
+        "source": next((sources[field] for field in ("abstract", "findings", "methods", "concepts", "keywords") if field in sources), ""),
+        "abstract_provenance": provenance(metadata.get("abstract_provenance")) if abstract else {},
+        "summary_provenance": provenance(metadata.get("summary_provenance")) if methods or findings else {},
     }
 
 
-def enrichment_map(works: list[dict]) -> dict[str, dict]:
-    return {work["citation_key"]: enrichment_for(work) for work in works}
+def enrichment_map(
+    works: list[dict], *, visible_paths: frozenset[str] | None = None,
+) -> dict[str, dict]:
+    """Load the curated collection and Git-visible source inventory once per batch."""
+    visible = source_paths(REPO_ROOT) if visible_paths is None else visible_paths
+    master_path = source_file(REPO_ROOT, "papers/paper_metadata.json", visible)
+    curated = json.loads(master_path.read_text(encoding="utf-8")) if master_path else {}
+    return {
+        work["citation_key"]: enrichment_for(
+            work,
+            resources=work.get("_resources") or PaperResources.load(REPO_ROOT, work.get("docs_path") or "", visible),
+            curated=curated,
+            visible_paths=visible,
+        )
+        for work in works
+    }
+
+
+def abstract_source_html(enrichment: dict, prefix: str = "../") -> str:
+    """Label the overview's public source without exposing review notes.
+
+    Provenance labels and external hosts are the audited values already used by
+    the archive. Unknown free-text provenance falls back to the actual public
+    source file, rather than being copied into the page.
+    """
+    from urllib.parse import urlsplit
+
+    from docxology_tools.paper_artifacts import encoded_path
+
+    if not enrichment.get("abstract"):
+        return ""
+    provenance = enrichment.get("abstract_provenance") or {}
+    if not isinstance(provenance, dict):
+        provenance = {}
+    labels = {
+        "papers/paper_metadata.json": ("Curated paper metadata", ""),
+        "abridged publisher synopsis": ("Abridged publisher synopsis", "link.springer.com"),
+        "published Summary in NLM JATS full text": ("Published Summary (NLM full text)", "pmc-oa-opendata.s3.amazonaws.com"),
+        "Rendered manuscript Abstract in exact Zenodo v3.6.0 archive": ("Archived manuscript abstract", ""),
+    }
+    label, allowed_host = labels.get(provenance.get("source"), ("", ""))
+    target = ""
+    url = provenance.get("url")
+    if allowed_host and isinstance(url, str):
+        try:
+            parsed = urlsplit(url)
+        except ValueError:
+            parsed = None
+        if (
+            parsed and parsed.scheme == "https" and parsed.netloc == allowed_host
+            and not parsed.username and not parsed.password
+            and not parsed.query and not parsed.fragment
+        ):
+            target = url
+    sources = enrichment.get("sources") or {}
+    origin = sources.get("abstract", "") if isinstance(sources, dict) else ""
+    if isinstance(origin, str):
+        if origin == "papers/paper_metadata.json":
+            label = label or "Curated paper metadata"
+            target = target or prefix + encoded_path(origin)
+        elif re.fullmatch(r"papers/\d{4}_[^/\\\x00-\x1f]+/(?:README\.md|SKILL\.md|metadata\.json)", origin):
+            name = origin.rsplit("/", 1)[-1]
+            label = label or {
+                "README.md": "Paper overview (README)",
+                "SKILL.md": "Paper documentation (SKILL)",
+                "metadata.json": "Paper metadata",
+            }[name]
+            target = target or prefix + encoded_path(origin)
+    if not label:
+        return ""
+    source = f'<a href="{h(target)}">{h(label)}</a>' if target else h(label)
+    return f'<p class="summary-sources abstract-source">Overview source: {source}.</p>'
+
+
+def resources_for(work: dict) -> PaperResources:
+    return work.get("_resources") or PaperResources.load(REPO_ROOT, work.get("docs_path", ""))
 
 
 def local_docs_link(path: str) -> str:
-    return f"../{path.rstrip('/')}/" if path else "../publications.html"
+    return PaperResources.load(REPO_ROOT, path).docs_url
 
 
 def full_text_link(docs_path: str) -> str:
-    """Return a link to the paper's full_text.md if it exists."""
-    if not docs_path:
-        return ""
-    full_text_path = REPO_ROOT / docs_path / "full_text.md"
-    if not full_text_path.is_file():
-        return ""
-    return f"../{docs_path.rstrip('/')}/full_text.md"
+    resources = PaperResources.load(REPO_ROOT, docs_path)
+    return resources.url(resources.full_text) if resources.full_text else ""
 
 
 def image_gallery_link_work(docs_path: str) -> str:
-    """Return the canonical GitHub image directory if paper images exist.
-
-    Paper-extracted binaries are retained in the repository but excluded from
-    the bounded Pages artifact. Linking to GitHub keeps the gallery discoverable
-    without creating broken relative links on the deployed site.
-    """
-    if not docs_path:
-        return ""
-    images_dir = REPO_ROOT / docs_path / "images"
-    if not images_dir.is_dir():
-        return ""
-    count = sum(
-        1 for f in images_dir.iterdir()
-        if f.is_file() and f.suffix.lower() in (".png", ".jpg", ".jpeg", ".gif")
-    )
-    if count == 0:
-        return ""
-    return f"https://github.com/docxology/docxology/tree/main/{docs_path.rstrip('/')}/images"
+    resources = PaperResources.load(REPO_ROOT, docs_path)
+    return resources.github_url + "/images" if resources.images else ""
 
 
-def source_repository_url(docs_path: str) -> str:
-    if not docs_path:
-        return ""
-    meta_path = REPO_ROOT / docs_path / "metadata.json"
-    if not meta_path.is_file():
-        return ""
-    try:
-        meta = json.loads(meta_path.read_text(encoding="utf-8"))
-    except json.JSONDecodeError:
-        return ""
-    for item in meta.get("related_resources", []):
-        url = item.get("url", "")
-        if item.get("type") == "repository" and url.startswith("https://github.com/"):
-            return url
+def source_repository_url(docs_path: str, resources: PaperResources | None = None) -> str:
+    """Associated software repository, distinct from this archive's paper folder."""
+    from urllib.parse import urlsplit
+
+    resources = resources or PaperResources.load(REPO_ROOT, docs_path)
+    meta = resources.metadata or {}
+    candidates = [meta.get("github_repo", "")]
+    candidates.extend(item.get("url", "") for item in meta.get("related_resources", []) if item.get("type") == "repository")
+    for url in candidates:
+        if re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", str(url)):
+            url = "https://github.com/" + str(url)
+        parsed = urlsplit(str(url))
+        if parsed.scheme == "https" and parsed.netloc == "github.com" and not parsed.query and not parsed.fragment:
+            parts = parsed.path.strip("/").split("/")
+            if len(parts) == 2 and all(re.fullmatch(r"[A-Za-z0-9_.-]+", part) and part not in {".", ".."} for part in parts):
+                return "https://github.com/" + "/".join(parts)
     return ""
+
+
+def load_bibtex_entries() -> dict[str, str]:
+    """Read the managed bibliography safely once for a rendering batch."""
+    source = read_generated_output_text(REPO_ROOT, REPO_ROOT / "bibliography.bib")
+    if source is None:
+        return {}
+    entries = {}
+    for match in re.finditer(r"(?ms)^@\w+\{([^,\n]+),.*?^\}\s*$", source):
+        key = match.group(1)
+        if key in entries:
+            raise ValueError(f"Duplicate BibTeX citation key: {key}")
+        entries[key] = match.group(0).strip()
+    return entries
 
 
 def work_bibtex(citation_key: str) -> str:
@@ -374,22 +587,22 @@ def work_bibtex(citation_key: str) -> str:
     Returns '' when the key is absent so pages for un-bibbed works simply omit
     the Copy-BibTeX affordance instead of embedding a stale/wrong entry.
     """
-    match = re.search(
-        rf"(?ms)^@\w+\{{{re.escape(citation_key)},.*?^\}}\s*$",
-        (REPO_ROOT / "bibliography.bib").read_text(encoding="utf-8"),
-    )
-    return match.group(0).strip() if match else ""
+    return load_bibtex_entries().get(citation_key, "")
 
 
 def bibtex_button_html(work: dict) -> str:
     """Copy-BibTeX button + embedded entry, wired by js/cite-export.js (CSP-safe)."""
-    bib = work_bibtex(work["citation_key"])
+    bib = work["_bibtex"] if "_bibtex" in work else work_bibtex(work["citation_key"])
     if not bib:
         return ""
+    # Script contents are raw text: HTML entities would be copied literally.
+    # JSON preserves the entry exactly; escaping '<' prevents a citation from
+    # closing the inert script element with a literal </script> sequence.
+    payload = json.dumps(bib, ensure_ascii=False).replace("<", "\\u003c")
     return (
         '<button type="button" class="btn btn-outline" id="cite-bibtex-btn" '
         'aria-label="Copy BibTeX entry to clipboard">Copy BibTeX</button>\n'
-        f'        <script type="application/x-bibtex" id="work-bibtex">{h(bib)}</script>'
+        f'        <script type="application/json" id="work-bibtex">{payload}</script>'
     )
 
 
@@ -452,7 +665,6 @@ def json_ld(work: dict) -> str:
         "@id": f"https://danielarifriedman.com/works/{work['citation_key']}.html#work",
         "name": work["title"],
         "headline": work["title"],
-        "author": author_ld(work),
         "datePublished": str(work["year"]),
         "url": f"https://danielarifriedman.com/works/{work['citation_key']}.html",
         "mainEntityOfPage": f"https://danielarifriedman.com/works/{work['citation_key']}.html",
@@ -466,6 +678,8 @@ def json_ld(work: dict) -> str:
         "sameAs": same_as,
         "image": "https://danielarifriedman.com/og-publications.jpg",
     }
+    if author := author_ld(work):
+        data["author"] = author
     if work.get("doi"):
         data["identifier"] = [
             {"@type": "PropertyValue", "propertyID": "DOI", "value": work["doi"], "url": f"https://doi.org/{work['doi']}"},
@@ -489,21 +703,39 @@ def json_ld(work: dict) -> str:
     if work.get("license"):
         data["license"] = work["license"]
 
-    if work.get("docs_path"):
+    resources = resources_for(work)
+    if resources.github_url:
         data["hasPart"] = {
-            "@type": "CreativeWork",
-            "name": "Local paper documentation",
-            "url": f"https://github.com/docxology/docxology/tree/main/{work['docs_path'].rstrip('/')}",
+            "@type": "CreativeWork", "name": "Paper documentation and source files",
+            "url": resources.github_url,
         }
-        ft_link = full_text_link(work["docs_path"])
-        if ft_link:
-            data["encoding"] = {
-                "@type": "TextObject",
-                "encodingFormat": "text/markdown",
-                "url": f"https://danielarifriedman.com/{work['docs_path'].rstrip('/')}/full_text.md",
-                "name": "Full text (extracted)",
-            }
-    return json.dumps(data, indent=4, ensure_ascii=False)
+    encodings = [
+        {"@type": "MediaObject", "encodingFormat": "application/pdf",
+         "contentUrl": resources.absolute_url(pdf), "url": resources.absolute_url(pdf),
+         "name": pdf.name, "contentSize": f"{pdf.stat().st_size} bytes"}
+        for pdf in ([resources.primary_pdf] if resources.primary_pdf else [])
+    ]
+    attachments = [
+        {"@type": "MediaObject", "encodingFormat": "application/pdf", "name": pdf.name,
+         "contentUrl": resources.absolute_url(pdf), "contentSize": f"{pdf.stat().st_size} bytes"}
+        for pdf in resources.pdfs if pdf != resources.primary_pdf
+    ]
+    if resources.full_text:
+        text_encoding = {
+            "@type": "TextObject", "encodingFormat": "text/markdown",
+            "url": resources.absolute_url(resources.full_text), "name": "Full text (extracted)",
+        }
+        if resources.primary_pdf and resources.extraction_source and resources.extraction_source != resources.primary_pdf.name:
+            attachments.append({**text_encoding, "@type": "MediaObject",
+                                "contentUrl": text_encoding["url"],
+                                "name": f"Extracted text from {resources.extraction_source}"})
+        else:
+            encodings.append(text_encoding)
+    if encodings:
+        data["encoding"] = encodings
+    if attachments:
+        data["associatedMedia"] = attachments
+    return json.dumps(data, indent=4, ensure_ascii=False).replace("<", "\\u003c")
 
 
 def work_page_title(work: dict, max_len: int = 100) -> str:
@@ -530,12 +762,21 @@ def page_head(work: dict) -> str:
     # (a bare "{type} in {domain} by ..." template collides across same-type works).
     fallback = (
         f"{work['title']} — {str(work['type']).lower()} in {work['domain_name']} "
-        f"by Daniel Ari Friedman ({work['year']}). Part of the unified bibliography."
+        f"({work['year']}). Part of the unified bibliography."
     )
     description = work.get("enrichment", {}).get("abstract") or fallback
     description = clip_description(description)
     canon_url = f"https://danielarifriedman.com/works/{canonical_work_key(work['citation_key'])}.html"
     page_title = work_page_title(work)
+    resources = resources_for(work)
+    citation_meta = [f'<meta name="citation_title" content="{h(work["title"])}">',
+                     f'<meta name="citation_publication_date" content="{h(work["year"])}">']
+    citation_meta.extend(f'<meta name="citation_author" content="{h(display_name(name))}">' for name in work.get("authors") or [])
+    if work.get("doi"):
+        citation_meta.append(f'<meta name="citation_doi" content="{h(work["doi"])}">')
+    if resources.primary_pdf:
+        citation_meta.append(f'<meta name="citation_pdf_url" content="{h(resources.absolute_url(resources.primary_pdf))}">')
+    citation_meta_html = "\n    ".join(citation_meta)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -544,6 +785,7 @@ def page_head(work: dict) -> str:
     <title>{h(page_title)}</title>
     <meta name="description" content="{h(description)}">
     <meta name="robots" content="index, follow">
+    {citation_meta_html}
     <link rel="canonical" href="{h(canon_url)}">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
@@ -566,150 +808,154 @@ def page_head(work: dict) -> str:
     <meta name="twitter:description" content="{h(description)}">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="{h(work['title'])} — Daniel Ari Friedman">
-    <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260530c">
+    <link rel="stylesheet" href="../style.css?v=work-access-20261001">
     <meta name="theme-color" content="#0c0c0e">
     <style>
-        .work-hero{{max-width:960px;margin:0 auto;text-align:center;padding:7rem 2rem 2.5rem}}
-        .work-hero h1{{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2rem,4vw,3.4rem);line-height:1.12;margin-bottom:1rem}}
-        .meta-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}}
-        .meta-card{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}}
-        .meta-card strong{{display:block;color:var(--gold);margin-bottom:.25rem}}
-        .cite-box{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;line-height:1.7;color:var(--text-secondary)}}
-        .work-detail{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.15rem;line-height:1.75;color:var(--text-secondary)}}
-        .work-detail ul{{margin-left:1.2rem}}
-        .keyword-row{{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem}}
-        .keyword-row span{{border:1px solid var(--border);border-radius:999px;padding:.2rem .55rem;color:var(--silver-bright);font-size:.76rem;background:rgba(255,255,255,.03)}}
-        .platform-card{{grid-column:1/-1}}
-        .platform-list{{list-style:none;padding:0;margin:.35rem 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.25rem .9rem;font-size:.85rem}}
-        .platform-list a{{color:var(--silver-bright);text-decoration:none}}
-        .platform-list a:hover{{text-decoration:underline}}
-        .platform-list .muted{{color:var(--text-muted)}}
         {BREADCRUMB_CSS}
-        .related-list{{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}}
-        .related-list li{{padding:.6rem .9rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}}
-        .related-list a{{color:var(--silver-bright);text-decoration:none}}
-        .related-list a:hover{{text-decoration:underline}}
     </style>
     <script type="application/ld+json">
 {json_ld(work)}
     </script>
 {breadcrumb_jsonld_script(breadcrumb_trail(work))}
 </head>
-<body>
+<body class="work-page">
     <a href="#main" class="skip-link">Skip to main content</a>
 {render_nav(active="works", depth=1)}
 """
 
 
+def pdf_downloads_html(resources: PaperResources) -> str:
+    if not resources.pdfs:
+        return ""
+    rows = []
+    for pdf in resources.pdfs:
+        size = pdf.stat().st_size / (1024 * 1024)
+        basis = f" · {resources.primary_basis}" if pdf == resources.primary_pdf else ""
+        rows.append(
+            f'<li><a href="{h(resources.url(pdf))}" download="{h(pdf.name)}" type="application/pdf">'
+            f'{h(pdf.name)}</a><span class="muted"> PDF · {size:.2f} MiB{h(basis)}</span></li>'
+        )
+    note = resources.selection_issue
+    if len(resources.pdfs) > 1:
+        note = (note + " " if note else "") + "These files may be different versions or companion documents. The archive does not identify a latest edition."
+    note_html = f'<p class="muted">{h(note)}</p>' if note else ""
+    return f'''<section class="section" id="downloads" aria-labelledby="downloads-title">
+            <div class="section-header"><h2 id="downloads-title">PDF downloads</h2><p>Archived files available directly from this site.</p><div class="section-divider"></div></div>
+            <div class="work-detail"><ul class="download-list">{"".join(rows)}</ul>{note_html}</div>
+        </section>'''
+
+
 def render_work_page(work: dict) -> str:
+    resources = resources_for(work)
+    work = {**work, "_resources": resources}
     footer_stamp = footer_build_stamp_html()
     doi_link = f"https://doi.org/{work['doi']}" if work.get("doi") else ""
-    docs = local_docs_link(work.get("docs_path", ""))
-    primary = work.get("url") or "../publications.html"
-    source_repo = source_repository_url(work.get("docs_path", ""))
-    source_repo_btn = (
-        f'<a class="btn btn-outline" href="{h(source_repo)}">Source repository</a>'
-        if source_repo
-        else ""
-    )
-    optional_buttons = []
-    full_text = full_text_link(work.get("docs_path", ""))
-    image_gallery = image_gallery_link_work(work.get("docs_path", ""))
-    if full_text:
-        optional_buttons.append(f'<a class="btn btn-outline" href="{h(full_text)}">Full Text</a>')
-    if image_gallery:
-        optional_buttons.append(f'<a class="btn btn-outline" href="{h(image_gallery)}">Image Gallery</a>')
-    if source_repo_btn:
-        optional_buttons.append(source_repo_btn)
-    button_links = [
-        f'<a class="btn btn-gold" href="{h(primary)}">Primary source</a>',
-        f'{bibtex_button_html(work)}',
-        f'<a class="btn btn-outline" href="{h(docs)}">Documentation</a>',
-        *optional_buttons,
-        '<a class="btn btn-outline" href="../bibliography.bib">BibTeX</a>',
-    ]
-    button_links_html = "\n                ".join(button_links)
+    primary = work.get("url") or doi_link
+    actions = []
+    if resources.primary_pdf:
+        pdf = resources.primary_pdf
+        actions.append(f'<a class="btn btn-gold" href="{h(resources.url(pdf))}" download="{h(pdf.name)}" type="application/pdf">Download PDF</a>')
+    elif resources.pdfs:
+        actions.append('<a class="btn btn-gold" href="#downloads">PDF downloads</a>')
+    if primary:
+        actions.append(f'<a class="btn btn-outline" href="{h(primary)}">Publication source</a>')
+    if resources.github_url:
+        actions.append(f'<a class="btn btn-outline" href="{h(resources.github_url)}">Paper folder on GitHub</a>')
+    if resources.full_text:
+        actions.append(f'<a class="btn btn-outline" href="{h(resources.url(resources.full_text))}">Read extracted text</a>')
+    actions_html = '<div class="work-actions" role="group" aria-label="Read and download this work">' + "\n".join(actions) + '</div>' if actions else ""
+
+    extras = []
+    if resources.docs_url:
+        extras.append(f'<a class="btn btn-outline" href="{h(resources.docs_url)}">Paper documentation</a>')
+    if resources.images:
+        extras.append(f'<a class="btn btn-outline" href="{h(resources.github_url + "/images")}">Figures on GitHub</a>')
+    source_repo = source_repository_url(work.get("docs_path", ""), resources)
+    if source_repo:
+        extras.append(f'<a class="btn btn-outline" href="{h(source_repo)}">Associated software repository</a>')
+    extras_html = '<div class="work-actions" role="group" aria-label="Documentation and related resources">' + "\n".join(extras) + '</div>' if extras else ""
     doi_value = f'<a href="{h(doi_link)}">{h(work["doi"])}</a>' if doi_link else "Not listed"
     meta_cards = [
-        f'<div class="meta-card"><strong>Catalog Row</strong>{h(work["num"])}</div>',
-        f'<div class="meta-card"><strong>Citation Key</strong>{h(work["citation_key"])}</div>',
-        f'<div class="meta-card"><strong>Paper Folder</strong>{"Available" if work.get("has_paper_folder") else "Not available"}</div>',
+        f'<div class="meta-card"><strong>Catalog row</strong><a href="../publications.html">{h(work["num"])}</a></div>',
+        f'<div class="meta-card"><strong>Citation key</strong>{h(work["citation_key"])}</div>',
         f'<div class="meta-card"><strong>DOI</strong>{doi_value}</div>',
     ]
     platform_card = platform_availability_card(work)
     if platform_card:
         meta_cards.append(platform_card)
-    meta_cards_html = "\n                ".join(meta_cards)
+    meta_cards_html = "\n".join(meta_cards)
     enrich = work.get("enrichment", {})
     abstract = enrich.get("abstract", "")
     keywords = enrich.get("keywords", [])
     findings = enrich.get("findings", [])
     methods = enrich.get("methods", [])
+    concepts = enrich.get("concepts", [])
     detail_sections = ""
     if abstract or keywords:
-        abstract_html = f"<p>{h(abstract)}</p>" if abstract else "<p>Detailed local abstract is not available for this work yet.</p>"
+        abstract_html = f"<p>{h(abstract)}</p>" if abstract else "<p>An abstract is not available in this archive.</p>"
         keyword_spans = "".join(f"<span>{h(k)}</span>" for k in keywords)
-        keyword_row = f'<div class="keyword-row">{keyword_spans}</div>' if keywords else ""
-        detail_sections += f"""
+        keyword_row = f'<div class="keyword-row" aria-label="Keywords">{keyword_spans}</div>' if keywords else ""
+        detail_sections += f'''
         <section class="section">
-            <div class="section-header"><h2>Overview</h2><p>Extracted from the local paper documentation when available.</p><div class="section-divider"></div></div>
-            <div class="work-detail">
-                {abstract_html}
-                {keyword_row}
-            </div>
-        </section>"""
-    if findings or methods:
-        findings_html = "".join(f"<li>{h(item)}</li>" for item in findings)
-        methods_html = "".join(f"<li>{h(item)}</li>" for item in methods)
-        findings_card = (
-            f'<div class="work-detail"><strong>Findings / Concepts</strong><ul>{findings_html}</ul></div>'
-            if findings
-            else ""
-        )
-        methods_card = (
-            f'<div class="work-detail"><strong>Methods / Techniques</strong><ul>{methods_html}</ul></div>'
-            if methods
-            else ""
-        )
-        detail_sections += f"""
+            <div class="section-header"><h2>Overview</h2><div class="section-divider"></div></div>
+            <div class="work-detail">{abstract_html}{keyword_row}{abstract_source_html(enrich)}</div>
+        </section>'''
+    cards = []
+    for heading, items in (("Findings and contributions", findings), ("Methods", methods), ("Key concepts", concepts)):
+        if items:
+            rows = "".join(f"<li>{h(item)}</li>" for item in items)
+            cards.append(f'<div class="work-detail"><h3>{heading}</h3><ul>{rows}</ul></div>')
+    if cards:
+        sources = enrich.get("sources", {})
+        source_links = []
+        for source in dict.fromkeys(sources.get(field, "") for field in ("findings", "methods", "concepts")):
+            if source:
+                path = REPO_ROOT / source
+                if path in resources.files:
+                    label = {"metadata.json": "Paper metadata and evidence", "README.md": "Paper documentation", "SKILL.md": "Learning guide"}.get(path.name, "Summary source")
+                    source_links.append(f'<a href="{h(resources.url(path))}">{label}</a>')
+        if resources.full_text:
+            source_links.append(f'<a href="{h(resources.url(resources.full_text))}">Extracted source text</a>')
+        provenance = '<p class="summary-sources">Summary sources: ' + ' · '.join(source_links) + '.</p>' if source_links else ""
+        detail_sections += f'''
         <section class="section section-alt">
-            <div class="section-header"><h2>Use Notes</h2><p>Concise findings and methods pulled from README/SKILL documentation.</p><div class="section-divider"></div></div>
-            <div class="meta-grid">{findings_card}{methods_card}</div>
-        </section>"""
+            <div class="section-header"><h2>Methods and contributions</h2><p>Read the source for the full argument, qualifications, and evidence.</p><div class="section-divider"></div></div>
+            <div class="work-summary-grid">{"".join(cards)}</div>{provenance}
+        </section>'''
+    citation_buttons = bibtex_button_html(work) + '\n<a class="btn btn-outline" href="../bibliography.bib" download>Download bibliography</a>'
     return (
         page_head(work)
-        + f"""
+        + f'''
 {render_breadcrumb(breadcrumb_trail(work), depth=1)}
     <header class="work-hero">
         <p class="eyebrow">{h(work['domain_name'])} · {h(work['type'])} · {h(work['year'])}</p>
         <h1>{h(work['title'])}</h1>
 {byline_html(work)}
         <p class="sub">{h(work.get('venue') or 'Curated bibliography entry')}</p>
+{actions_html}
     </header>
     <main id="main" class="main">
-        <section class="section">
-            <div class="meta-grid">
-                {meta_cards_html}
-            </div>
-        </section>
 {detail_sections}
+{pdf_downloads_html(resources)}
         <section class="section section-alt">
-            <div class="section-header"><h2>Citation</h2><p>Plain-text citation for quick reuse.</p><div class="section-divider"></div></div>
+            <div class="section-header"><h2>Citation</h2><p>Citation metadata follows the unified bibliography.</p><div class="section-divider"></div></div>
             <div class="cite-box">{h(citation_text(work))}</div>
-            <p class="text-center mt-2">
-                {button_links_html}
-            </p>
+            <div class="work-actions">{citation_buttons}</div>
+        </section>
+        <section class="section">
+            <div class="section-header"><h2>Catalog details and resources</h2><div class="section-divider"></div></div>
+            <div class="meta-grid">{meta_cards_html}</div>{extras_html}
         </section>
 {related_works_html(work)}
     </main>
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
-        <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite & Verify</a></p>
+        <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite &amp; Verify</a></p>
         {footer_stamp}
     </footer>
-""" + INTERACTIVE_SCRIPTS + "\n" + CITE_EXPORT_SCRIPT_TAG + "\n" + MENU_ESC_SCRIPT + """</body>
+''' + INTERACTIVE_SCRIPTS + "\n" + CITE_EXPORT_SCRIPT_TAG + "\n" + MENU_ESC_SCRIPT + '''</body>
 </html>
-"""
+'''
     )
 
 
@@ -735,7 +981,7 @@ def render_index(works: list[dict]) -> str:
             for index, w in enumerate(sorted(works, key=lambda x: (int(x["year"]), -int(x["num"])), reverse=True))
         ],
         ensure_ascii=False,
-    )
+    ).replace("<", "\\u003c")
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -745,7 +991,7 @@ def render_index(works: list[dict]) -> str:
     <meta name="description" content="Browse {len(works)} per-work pages — the paper trail of a longitudinal thinking practice: papers, books, courses, and presentations across Active Inference, computational biology, cognitive security, entomology, and art, each with DOI, citation tools, and related works.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/works/">
-    <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260530c">
+    <link rel="stylesheet" href="../style.css?v=work-access-20261001">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
     <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
@@ -809,8 +1055,10 @@ def existing_generated_at(path: Path) -> str | None:
 
 
 def render_outputs(generated_at: str | None = None) -> dict[Path, str]:
-    works = load_works()
-    enrichments = enrichment_map(works)
+    visible = source_paths(REPO_ROOT)
+    citations = load_bibtex_entries()
+    works = [{**work, "_resources": PaperResources.load(REPO_ROOT, work.get("docs_path", ""), visible), "_bibtex": citations.get(work["citation_key"], "")} for work in load_works()]
+    enrichments = enrichment_map(works, visible_paths=visible)
     works = [{**work, "enrichment": enrichments.get(work["citation_key"], {})} for work in works]
     by_domain: dict[str, list[dict]] = {}
     for w in works:
@@ -846,7 +1094,7 @@ def render_outputs(generated_at: str | None = None) -> dict[Path, str]:
     outputs[ENRICHMENT_OUT] = json.dumps(
         {
             "generated_at": generated_at or generated_timestamp(),
-            "source": "papers/*/README.md and papers/*/SKILL.md",
+            "source": "papers/paper_metadata.json, papers/*/metadata.json, README.md and SKILL.md",
             "count": len(enrichments),
             "works": enrichments,
         },

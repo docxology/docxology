@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import json
+import re
 import sys
 from pathlib import Path
 
@@ -15,6 +17,7 @@ from docxology_tools.site_nav import (  # noqa: E402
     CSP_META_TAG,
     nav_manifest,
     HEAD_EXTRAS,
+    breadcrumb_jsonld_script,
     clip_description,
     ensure_agent_map_link,
     render_nav,
@@ -22,6 +25,16 @@ from docxology_tools.site_nav import (  # noqa: E402
     render_nav_domain,
     social_meta_tags,
 )
+
+
+def test_breadcrumb_jsonld_preserves_labels_without_allowing_script_termination():
+    label = 'Art & "Science" </script><img src=x onerror=alert(1)>'
+    rendered = breadcrumb_jsonld_script([(label, "works/example.html")])
+    match = re.fullmatch(r'\s*<script type="application/ld\+json">\s*(.*?)\s*</script>', rendered, re.S)
+    assert match is not None
+    assert "<" not in match.group(1)
+    assert rendered.count("</script>") == 1
+    assert json.loads(match.group(1))["itemListElement"][0]["name"] == label
 
 
 def test_clip_description_short_text_unchanged():

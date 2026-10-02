@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> This paper discusses the origins and evolution of Operations Orders from antiquity to modern times and the impact of Operations Orders on organizational sensemaking. Perspectives from Complexity Science, Organizational Psychology, High Reliability Organizations, Memetics, Logistics, Knowledge Management Systems, and Active Inference frame historical, contemporary, and future requirements and...
+> This paper discusses the origins and evolution of Operations Orders from antiquity to modern times and the impact of Operations Orders on organizational sensemaking. Perspectives from Complexity Science, Organizational Psychology, High Reliability Organizations, Memetics, Logistics, Knowledge Management Systems, and Active Inference frame historical, contemporary, and future requirements and constraints. Traditional military operations orders and civilian counterparts are compared in context; survivability, limitations of existing formats, and facilitator needs inform a proposed operations order format—the Facilitator's Catechism.
 
 ## Keywords
 

@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> In ants as in bees, a diploid female is either a reproductive or worker. In honeybees, female larvae fed a high protein substance known as ‘royal jelly’ become reproductives, while those not fed the necessary nutrients become workers (Linksvayer et al. 2011). Feeding experiments in ants suggested that like honeybees, the fate of a diploid female egg is usually determined as a larva by food supply...
+> In ants as in bees, a diploid female is either a reproductive or worker. In honeybees, female larvae fed a high protein substance known as ‘royal jelly’ become reproductives, while those not fed the necessary nutrients become workers (Linksvayer et al. 2011). Feeding experiments in ants suggested that like honeybees, the fate of a diploid female egg is usually determined as a larva by food supply (Brian 1951). It was thus unexpected to discover about 15 years ago (Volny & Gordon 2002; Cahan & Keller 2003), using microsatellite markers, that in some populations in the harvester ant genus Pogonomyrmex, there is an association between genotype and reproductive status. There are two interdependent lineages. Matings between a reproductive and a male of the same lineage produce daughter reproductives, while matings between a female reproductive and a male of the other lineage produce daughter workers (Fig. 1). The haploid males are produced from unfertilized eggs. The two lineages need each other because a colony cannot produce offspring colonies without reproductives, and it cannot raise and maintain reproductives without workers. In this issue of Molecular Ecology, Romiguier et al. use RNA sequencing to demonstrate a similar system in Messor, another harvester ant genus.
 
 ## Keywords
 

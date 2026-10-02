@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Natural selection on collective behavior acts on variation among colonies in behavior that is associated with reproductive success. In the red harvester ant (Pogonomyrmex barbatus), variation among colonies in the collective regulation of foraging in response to humidity is associated with colony reproductive success. We used RNA-seq to examine gene expression in the brains of foragers in a...
+> Natural selection on collective behavior acts on variation among colonies in behavior that is associated with reproductive success. In the red harvester ant (Pogonomyrmex barbatus), variation among colonies in the collective regulation of foraging in response to humidity is associated with colony reproductive success. We used RNA-seq to examine gene expression in the brains of foragers in a natural setting. We find that colonies differ in the expression of neurophysiologically-relevant genes in forager brains, and a fraction of these gene expression differences are associated with two colony traits: sensitivity of foraging activity to humidity, and forager brain dopamine to serotonin ratio. Loci that were correlated with colony behavioral differences were enriched in neurotransmitter receptor signaling & metabolic functions, tended to be more central to coexpression networks, and are evolving under higher protein-coding sequence constraint. Natural selection may shape colony foraging behavior through variation in gene expression.
 
 ## Keywords
 

@@ -419,7 +419,7 @@ def render_domain_page(
                     <div>
                         <a href="{h(work_link(w))}"><strong>{h(w['title'])}</strong></a>
                         <div class="venue">{h(w['venue'])} · {h(w['type'])}</div>
-                        {desc_html}
+{desc_html}
                         {meta_links_html}
                     </div>
                     <a href="{h(w['url'])}" aria-label="Primary link for {h(w['title'])}" class="btn btn-sm btn-outline">Primary Link</a>

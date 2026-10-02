@@ -5,6 +5,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+import pytest
 # docxology_tools owns the canonical bootstrap; this locate makes the package importable.
 _DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
 if str(_DOCXOLOGY_SRC) not in sys.path:
@@ -34,3 +35,61 @@ def test_integrity_tail_resolves_generated_manifest_before_agent_index():
     accessibility_indices = [i for i, name in enumerate(names) if name == "accessibility_audit.py"]
     assert len(site_facts_indices) >= 2
     assert site_facts_indices[-1] > accessibility_indices[-1]
+
+
+def test_default_two_passes_refresh_an_early_consumer_after_a_late_producer(tmp_path):
+    """Exercise the known cross-pass boundary without touching site outputs."""
+    from docxology_tools.generation_plan import GenerationStep
+
+    data = tmp_path / "data"
+    data.mkdir()
+    source = data / "source.json"
+    projection = data / "projection.json"
+    consumer = data / "consumer.json"
+    source.write_text("new\n")
+    projection.write_text("old\n")
+    steps = (
+        GenerationStep("consumer", "consumer.py", (), ("--check",), "early consumer",
+                       ("data/projection.json",)),
+        GenerationStep("producer", "producer.py", (), ("--check",), "late producer",
+                       ("data/source.json",)),
+    )
+
+    def runner(script, _args):
+        if script == "consumer.py":
+            consumer.write_text(projection.read_text())
+        else:
+            projection.write_text(source.read_text())
+
+    ran, skipped = regenerate_all.run_regeneration_passes(
+        steps=steps, repo_root=tmp_path, runner=runner, emit=lambda _message: None,
+    )
+
+    assert consumer.read_text() == "new\n"
+    assert (ran, skipped) == (3, 1)
+    assert regenerate_all.run_regeneration_passes(
+        steps=steps, repo_root=tmp_path, runner=runner, emit=lambda _message: None,
+    ) == (0, 4)
+
+
+def test_regeneration_failure_stops_before_another_pass(tmp_path):
+    from docxology_tools.generation_plan import GenerationStep
+
+    steps = (GenerationStep("fixture", "fixture.py", (), ("--check",), "fixture"),)
+    calls = []
+
+    def runner(script, _args):
+        calls.append(script)
+        raise RuntimeError("writer failed")
+
+    with pytest.raises(RuntimeError, match="writer failed"):
+        regenerate_all.run_regeneration_passes(
+            steps=steps, repo_root=tmp_path, runner=runner, emit=lambda _message: None,
+        )
+    assert calls == ["fixture.py"]
+
+
+@pytest.mark.parametrize("passes", [0, 5])
+def test_regeneration_pass_bound_is_enforced(passes):
+    with pytest.raises(ValueError, match="between 1 and 4"):
+        regenerate_all.run_regeneration_passes(passes=passes, steps=())
