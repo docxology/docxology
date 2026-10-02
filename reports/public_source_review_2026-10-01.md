@@ -2,14 +2,14 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `629215c75a1439a8f684b64a6410123d96fd5a35`
+Source commit: `d783ad71aeed04b92c267b65087e58cad1b2da16`
 
 ## Disposition summary
 
 | Status | Items |
 |---|---:|
 | Applied | 181 |
-| Deferred | 17 |
+| Deferred | 15 |
 | Rejected | 0 |
 
 | Category | Applied | Deferred | Rejected |
@@ -17,14 +17,14 @@ Source commit: `629215c75a1439a8f684b64a6410123d96fd5a35`
 | `ambiguous_doi_change` | 64 | 0 | 0 |
 | `biographical_claim_change` | 8 | 2 | 0 |
 | `public_source_observation` | 0 | 8 | 0 |
-| `repository_classification` | 108 | 6 | 0 |
+| `repository_classification` | 108 | 4 | 0 |
 | `scholar_metric_change` | 1 | 0 | 0 |
 | `zenodo_candidate` | 0 | 1 | 0 |
 
 ## Evidence inputs
 
 - `biographical_claim_decisions`: `data/biographical-claim-decisions.json` (`1d01574cb4fb9c626202fd7572f637da37c4602ce38c2b79bd0c2390c057c60f`)
-- `claims_ledger`: `data/claims.json` (`63e252827b301a561f230a4f3ad649f05db89b361a1435ffbd32e64decb5f3a1`)
+- `claims_ledger`: `data/claims.json` (`8153aabff59727a5710226e9c79943015f72eca1cda8f586c3ffcdc14f8ff26b`)
 - `doi_role_review`: `reports/doi_role_reconciliation_2026-08-25.json` (`8813014df946b8fd6b1777de95d16e57300fba56b32f3da59819bf8c5d8a01a6`)
 - `paired_publication_decisions`: `data/paired-publication-decisions.json` (`f1cac466f885ccc9ed92cac8039575fabfe1778a4563088af79c72cdbfaa498a`)
 - `paired_publications`: `reports/paired_publications_2026-09-24.json` (`2f95360123cdc2d7f16021312a4e753603cbc37fa8f3b257082dbba988072388`)
@@ -32,9 +32,9 @@ Source commit: `629215c75a1439a8f684b64a6410123d96fd5a35`
 - `public_source_inventory`: `reports/public_source_inventory_2026-09-24.json` (`ad47ece1be15f93d235e8f7d067eb9fb48f7a4b61433b46a91a1505fc13e5bff`)
 - `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`cff826363c7ca0e66bf583ee039a27cf0bfebc05ef57fb3222a8d91f50f73714`)
 - `public_source_snapshot`: `reports/public_source_snapshot_2026-09-30.json` (`f0dbd6d14f420cea7251cba0a14e81828781a3d22416502134a25890ec590504`)
-- `repository_classification`: `data/repository-classification.json` (`782da5e4f884230dd1285dc143104427ab17a433c12909b8a5ae0cf1dc17a31a`)
-- `scholar_snapshot`: `data/scholar-snapshot.json` (`d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2`)
-- `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5`)
+- `repository_classification`: `data/repository-classification.json` (`ba9df46fa148f2d96aea5703e3a573bde721bc7f1da9516d0c9d0126d0e9a4b5`)
+- `scholar_snapshot`: `data/scholar-snapshot.json` (`d9c4b848ad04238eb731f05748bbb88e473518ffe87a422526cfd9b11651b00d`)
+- `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`44bf1affbfb214f7a566666da9f2f2af528866b5ee6b7fab57e68b47ea6018a8`)
 
 ## Deferred review
 
@@ -52,8 +52,6 @@ Source commit: `629215c75a1439a8f684b64a6410123d96fd5a35`
 - **`repository_classification` — repository:ActiveInferenceInstitute/GEO_INFER**: The repository remains outside the curated catalog pending a human classification decision.
 - **`repository_classification` — repository:ActiveInferenceInstitute/Generalized_Notation_Notation**: The repository remains outside the curated catalog pending a human classification decision.
 - **`repository_classification` — repository:ActiveInferenceInstitute/Journal_Utilities**: The repository remains outside the curated catalog pending a human classification decision.
-- **`repository_classification` — repository:ActiveInferenceInstitute/fep_formal**: The repository remains outside the curated catalog pending a human classification decision.
-- **`repository_classification` — repository:docxology/OmniLatticeTextbook**: The repository remains outside the curated catalog pending a human classification decision.
 - **`zenodo_candidate` — zenodo-refresh-incomplete**: The latest successful GitHub–Zenodo pairing report predates the public-source snapshot and cannot be treated as current release evidence.
 
 ## Applied decisions

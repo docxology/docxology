@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-10-01T22:08:34Z",
+      "generated_at": "2026-10-02T15:11:23Z",
       "path": "data/claims.json",
-      "sha256": "63e252827b301a561f230a4f3ad649f05db89b361a1435ffbd32e64decb5f3a1",
+      "sha256": "8153aabff59727a5710226e9c79943015f72eca1cda8f586c3ffcdc14f8ff26b",
       "source_commit": null
     },
     "doi_role_review": {
@@ -57,21 +57,21 @@
       "source_commit": "ba2fd036ae42cd92927ef995a935a0d7c76fe87f"
     },
     "repository_classification": {
-      "generated_at": "2026-09-26T01:17:51Z",
+      "generated_at": "2026-10-02T15:11:20Z",
       "path": "data/repository-classification.json",
-      "sha256": "782da5e4f884230dd1285dc143104427ab17a433c12909b8a5ae0cf1dc17a31a",
+      "sha256": "ba9df46fa148f2d96aea5703e3a573bde721bc7f1da9516d0c9d0126d0e9a4b5",
       "source_commit": null
     },
     "scholar_snapshot": {
       "generated_at": null,
       "path": "data/scholar-snapshot.json",
-      "sha256": "d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2",
+      "sha256": "d9c4b848ad04238eb731f05748bbb88e473518ffe87a422526cfd9b11651b00d",
       "source_commit": null
     },
     "scholar_verification_receipt": {
       "generated_at": null,
       "path": "data/scholar-verification-receipt.json",
-      "sha256": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
+      "sha256": "44bf1affbfb214f7a566666da9f2f2af528866b5ee6b7fab57e68b47ea6018a8",
       "source_commit": null
     }
   },
@@ -3785,57 +3785,19 @@
     },
     {
       "candidate": {
-        "acknowledged_reason": "",
-        "archived": false,
-        "catalog_role": "not_curated",
-        "exclusion_reason": "primary_repo_requires_manual_review",
-        "fork": false,
-        "full_name": "ActiveInferenceInstitute/fep_formal",
-        "html_url": "https://github.com/ActiveInferenceInstitute/fep_formal",
-        "review_status": "defer"
-      },
-      "category": "repository_classification",
-      "id": "repository:ActiveInferenceInstitute/fep_formal",
-      "reason": "The repository remains outside the curated catalog pending a human classification decision.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "",
-        "archived": false,
-        "catalog_role": "not_curated",
-        "exclusion_reason": "primary_repo_requires_manual_review",
-        "fork": false,
-        "full_name": "docxology/OmniLatticeTextbook",
-        "html_url": "https://github.com/docxology/OmniLatticeTextbook",
-        "review_status": "defer"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/OmniLatticeTextbook",
-      "reason": "The repository remains outside the curated catalog pending a human classification decision.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
         "current": {
-          "citations": 815,
+          "citations": 823,
           "h_index": 14,
-          "i10_index": 16
+          "i10_index": 17
         },
         "observed": {
-          "citations": 815,
+          "citations": 823,
           "h_index": 14,
-          "i10_index": 16
+          "i10_index": 17
         },
         "profile_id": "DXjPFtYAAAAJ",
         "receipt_valid": true,
-        "receipt_verified_at": "2026-08-26T17:41:35Z"
+        "receipt_verified_at": "2026-10-02T14:38:54Z"
       },
       "category": "scholar_metric_change",
       "id": "scholar-metrics",
@@ -3870,8 +3832,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "629215c75a1439a8f684b64a6410123d96fd5a35",
-  "source_tree_sha": "e4642725cbda5a9766e62b8a637abf1fb2089957",
+  "source_commit": "d783ad71aeed04b92c267b65087e58cad1b2da16",
+  "source_tree_sha": "dd96ead4dc1d379ae8289e016d59055a7d18593b",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
@@ -3894,7 +3856,7 @@
       },
       "repository_classification": {
         "applied": 108,
-        "deferred": 6,
+        "deferred": 4,
         "rejected": 0
       },
       "scholar_metric_change": {
@@ -3908,8 +3870,8 @@
         "rejected": 0
       }
     },
-    "deferred": 17,
-    "items": 198,
+    "deferred": 15,
+    "items": 196,
     "rejected": 0,
     "review_required": true
   }

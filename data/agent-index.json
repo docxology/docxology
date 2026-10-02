@@ -1,6 +1,6 @@
 {
   "schema_version": "1.5",
-  "generated_at": "2026-10-01T21:36:28+00:00",
+  "generated_at": "2026-10-02T15:11:20+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -282,9 +282,14 @@
       "count": 219,
       "schema": "Work"
     },
+    "work_identifiers": {
+      "path": "/data/work-identifiers.json",
+      "count": 223,
+      "schema": "WorkIdentifierRegistry"
+    },
     "software": {
       "path": "/data/software.json",
-      "count": 158,
+      "count": 159,
       "schema": "SoftwareRepository"
     },
     "repositories": {
@@ -334,7 +339,7 @@
     },
     "repository_classification": {
       "path": "/data/repository-classification.json",
-      "count": 114,
+      "count": 112,
       "schema": "RepositoryClassification"
     },
     "pages_artifact": {
@@ -440,6 +445,18 @@
     }
   ],
   "schemas": {
+    "WorkIdentifierRegistry": {
+      "type": "object",
+      "description": "Reviewed permanent work IDs and citation keys; active rows and retired reservations are never renumbered or recomputed from metadata.",
+      "required": [
+        "schema_version",
+        "identifiers"
+      ],
+      "fields": {
+        "schema_version": "WorkIdentifierRegistry.v1",
+        "identifiers": "object keyed by positive numeric catalog ID; each record has citation_key and status (active or retired); retired records require reason"
+      }
+    },
     "Work": {
       "type": "object",
       "description": "One curated bibliography row; citation_key is the permanent public URL identifier.",
@@ -1004,6 +1021,15 @@
         ]
       }
     ],
+    "WorkIdentifierRegistry": {
+      "schema_version": "WorkIdentifierRegistry.v1",
+      "identifiers": {
+        "1": {
+          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
+          "status": "active"
+        }
+      }
+    },
     "SoftwareRepository": [
       {
         "name": "template",
@@ -1031,7 +1057,7 @@
     ],
     "VideoIndex": {
       "schema_version": "VideoIndex.v1",
-      "generated_at": "2026-10-01T23:33:56Z",
+      "generated_at": "2026-10-02T15:30:05Z",
       "source": "data/videos.json",
       "count": 1127,
       "counts": {
@@ -1128,7 +1154,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-10-01T21:36:28+00:00",
+        "checked_at": "2026-10-02T15:11:20+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1141,22 +1167,22 @@
       "profile_id": "DXjPFtYAAAAJ",
       "direct": true,
       "authenticated": true,
-      "verified_at": "2026-08-26T17:41:35Z",
+      "verified_at": "2026-10-02T14:38:54Z",
       "snapshot_path": "data/scholar-snapshot.json",
-      "snapshot_sha256": "d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2",
-      "snapshot_as_of": "2026-08-26",
+      "snapshot_sha256": "d9c4b848ad04238eb731f05748bbb88e473518ffe87a422526cfd9b11651b00d",
+      "snapshot_as_of": "2026-10-02",
       "metrics": {
-        "citations": 815,
+        "citations": 823,
         "h_index": 14,
-        "i10_index": 16,
+        "i10_index": 17,
         "since_2021": {
-          "citations": 586,
+          "citations": 594,
           "h_index": 14,
-          "i10_index": 14
+          "i10_index": 15
         }
       },
-      "source": "Direct authenticated browser observation of https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en in the canonical profile-owner session.",
-      "method": "Direct non-cached authenticated Chrome browser-session fetch on 2026-08-26. Profile-owner controls were visible; observed all-time metrics were 815 citations, h-index 14, and i10-index 16 (Since-2021: 586 / 14 / 14)."
+      "source": "Direct authenticated browser observation of https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en",
+      "method": "Direct Chrome browser observation of the canonical profile on 2026-10-02 in an authenticated Google session (signed-in account control visible). All-time: 823 citations, h-index 14, i10-index 17; Since-2021: 594 / 14 / 15. No anonymous or search-engine cached result was used."
     },
     "SearchResult": [
       {
@@ -1238,8 +1264,8 @@
         "full_text_papers": 199,
         "generated_exports": {
           "data_publications_ld_main_entity": 219,
-          "data_software_json": 158,
-          "data_software_ld_main_entity": 158,
+          "data_software_json": 159,
+          "data_software_ld_main_entity": 159,
           "data_works_json": 219
         },
         "github_inventory": {
@@ -1289,8 +1315,8 @@
         },
         "software": {
           "active_inference_institute": 39,
-          "curated_total": 158,
-          "docxology_owned": 119
+          "curated_total": 159,
+          "docxology_owned": 120
         },
         "types": {
           "Books": 5,
@@ -1302,7 +1328,7 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-10-01T21:36:28+00:00",
+      "generated_at": "2026-10-02T15:11:20+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
@@ -1326,11 +1352,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 929953473,
+        "source_bytes": 873831711,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5899,
-        "artifact_bytes": 930995956
+        "artifact_file_count": 5884,
+        "artifact_bytes": 874871311
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1342,7 +1368,7 @@
       "note": "See /data/release-integrity.json for the current envelope."
     },
     "ReproducibilityLedger": {
-      "generated_at": "2026-10-01T21:37:30Z",
+      "generated_at": "2026-10-02T15:08:24Z",
       "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
       "sources": [
         "data/works.json",
@@ -1475,7 +1501,7 @@
         {
           "num": 12,
           "citation_key": "Friedman2025EvoJumpStochasticModelingEvolutionary012",
-          "title": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+          "title": "EvoJump: A Unified Framework for Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
           "year": 2025,
           "domain_name": "Active Inference",
           "type": "Paper",
@@ -1658,7 +1684,7 @@
             "agent_readable": true
           },
           "repositories": [
-            "fep_lean"
+            "fep_formal"
           ]
         },
         {
@@ -3704,7 +3730,7 @@
         {
           "num": 74,
           "citation_key": "Friedman2022TrustFinderRecommendationsCommunityBased074",
-          "title": "TrustFinder: Recommendations for Community-Based Trust Systems",
+          "title": "TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims",
           "year": 2022,
           "domain_name": "Cognitive Security",
           "type": "Paper",
@@ -4638,7 +4664,7 @@
         {
           "num": 26,
           "citation_key": "Friedman2025DiscoveryEngineAIDriven026",
-          "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
+          "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
           "year": 2025,
           "domain_name": "Computational",
           "type": "Paper",
@@ -5532,7 +5558,7 @@
           "num": 159,
           "citation_key": "Friedman2022ActiveBlockferenceCadCADActive159",
           "title": "Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling",
-          "year": 2022,
+          "year": 2023,
           "domain_name": "Active Inference",
           "type": "Paper",
           "score": 1,
@@ -5741,32 +5767,34 @@
     }
   },
   "dataset_hashes": {
-    "works": "e837976ef28d29e87ecee678edfbabfda7659b6f34e3ee06626043179ad68c5e",
-    "software": "703b528c18d18cb56934004c9261d769a7608aaff8af4436af51e2d7197e2ee8",
+    "works": "29f481871fdc8b0b1075d590399e08f2e8ab5ad629019b2cd02f88b63bcd5d56",
+    "work_identifiers": "253c7b613f95b267c2d7491e0eb05c35f9a957f56bc624aa3dc07ec4e0a2f254",
+    "software": "24f93a28ff044cfbd070564c33c8fe570825c8f7db246d326f04e2e11846d6dd",
     "repositories": "7921e3722f3ec20c8d8a8fc5090396d3b66e4d557e732a6d1055a5d9d25cb772",
     "artworks_index": "053e66edbd2257c157f9baeb45d7ee6cf04395a59d7253ff31bd55b9d904a0d5",
     "artworks": "32bd21124bd391638295aac6bad7a0621746c296695e10b0586351ca4069f6c3",
-    "videos": "4fd95a5516e3fd5776ca570d7adcdfc37e8a4aaec16bf00cd84e4b598f631206",
-    "videos_index": "99f52b864988495713fe921acfb8a579f1705687c6550572de6b21281d6c192a",
-    "search": "f5bcb0aa7aad7ef0d2ff5090ac24d2d788d9fa2c67cc42d3cdf57af7ae14b62e",
-    "claims": "63e252827b301a561f230a4f3ad649f05db89b361a1435ffbd32e64decb5f3a1",
-    "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
+    "videos": "fc078bcc6821335aea2f96e8ac84c0847743b2fb4a0dd1fe048975f53a8f201b",
+    "videos_index": "f000507bade7b3ab852931adcc701752d12487622521a11a435c276600d7be81",
+    "search": "37f912583f0ba49be9fa27240dcbebd263a0e0417061af1014ac488ff491c814",
+    "claims": "8153aabff59727a5710226e9c79943015f72eca1cda8f586c3ffcdc14f8ff26b",
+    "scholar_verification_receipt": "44bf1affbfb214f7a566666da9f2f2af528866b5ee6b7fab57e68b47ea6018a8",
     "coverage_exceptions": "f308718a5931e16a030ae98631988795d4c782fc8b957252f8d373050287a731",
-    "repository_classification": "782da5e4f884230dd1285dc143104427ab17a433c12909b8a5ae0cf1dc17a31a",
-    "people": "77c0808385642f2caf59d73b344593b687d919724309ca82980119c50a18335c",
-    "organizations": "4ac184ff2d82b286fce5105b1944f8410b44b7119755e09dba8db7667ebe0f55",
-    "resume": "c62ef00dc44bd5cb82a239ffb71213824c79c27d0d2b2fda61130c6c2dbbd6c3",
-    "work_enrichment": "047f297cac793b86ae3a610a12bb5d3a66cef52748b0a5e896a4ba6664b03022",
-    "catalog": "3b56376c3c32cd20c49e88e606281f904482ae8d9454083126f1d02c69262798",
-    "reconciliation": "a6a852bd1784c0f12d050c74b1363ebb60001b14409497505a8504a35df0d164",
-    "reproducibility": "bb1ca409df8d3593db78ae4fdb87685aa33dd37b5063a2d204abb5f5fe0f4f5e",
-    "generated_manifest": "b780055043f56c95a0173bf4afa5603fbc0c06c418b8e8f9f91ee0e9155ca43b",
-    "current_counts": "5be9ec0e0dbb6ff806585f6e5f0e342d24499eb3031fd725ca5bc547d5ee954f"
+    "repository_classification": "ba9df46fa148f2d96aea5703e3a573bde721bc7f1da9516d0c9d0126d0e9a4b5",
+    "people": "efdac74d2c407fe2a309abbc449d22abaf99228b9b0903a89d565dbf8a4ea0e7",
+    "organizations": "8b48ed5097f356431a7da15790decd39f083481fc018236dece7faafc4842cdb",
+    "resume": "3dd3a5ca59dccc35198b3bd04028aeae147aa98ec53c1a600e5b90007297cf74",
+    "work_enrichment": "775cc6fd2c211e5ab22a5eb3846e733880a10f42dde65f3c2e78d4a0cf73ede0",
+    "catalog": "f1a01887d8216647f99d02f99a38103286fd46cda3456a9c4517a9572ff70aff",
+    "reconciliation": "07502402e5c7f8773b065f00c0452fdfa2398503134fa912ece60ab80adaee75",
+    "reproducibility": "dd9629014483d62938a630eb94ec3d218621cd61a013bd91ff5433d5eb095a2e",
+    "generated_manifest": "2cdf871fb4a498143431e7888cf3ca78f2df1db7352025e61debfc0a91232ea2",
+    "current_counts": "dc0990c3769b6224dd5c856666b4a5ac37b7cb6ccdd4dd30ac12167d474a2c94"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
     "source_of_truth": [
       "pages/BIBLIOGRAPHY.md",
+      "data/work-identifiers.json",
       "pages/SOFTWARE.md",
       "data/current-counts.json",
       "data/scholar-snapshot.json",
@@ -5805,8 +5833,8 @@
     "full_text_papers": 199,
     "generated_exports": {
       "data_publications_ld_main_entity": 219,
-      "data_software_json": 158,
-      "data_software_ld_main_entity": 158,
+      "data_software_json": 159,
+      "data_software_ld_main_entity": 159,
       "data_works_json": 219
     },
     "github_inventory": {
@@ -5856,8 +5884,8 @@
     },
     "software": {
       "active_inference_institute": 39,
-      "curated_total": 158,
-      "docxology_owned": 119
+      "curated_total": 159,
+      "docxology_owned": 120
     },
     "types": {
       "Books": 5,

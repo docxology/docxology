@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T19:20:14Z",
+  "generated_at": "2026-10-02T16:54:52Z",
   "artifacts": [
     {
       "name": "Paper folder doc regeneration",
@@ -13,7 +13,9 @@
         "papers/paper_metadata.json",
         "pages/BIBLIOGRAPHY.md",
         "papers/*/metadata.json",
-        "papers/generated-documents.json"
+        "papers/generated-documents.json",
+        "code/src/abstract_text.py",
+        "code/src/metadata_templates.py"
       ],
       "command": "uv run python3 code/orchestrators/regenerate_docs.py --apply"
     },
@@ -38,6 +40,7 @@
       ],
       "sources": [
         "pages/BIBLIOGRAPHY.md",
+        "data/work-identifiers.json",
         "data/current-counts.json",
         "papers/*/README.md",
         "papers/*/AGENTS.md",
@@ -45,6 +48,12 @@
         "papers/*/full_text.md",
         "papers/*/images/",
         "code/src/biblio_table.py",
+        "code/src/work_identifiers.py",
+        "code/orchestrators/export_bibliography.py",
+        "code/orchestrators/build_work_pages.py",
+        "code/src/site_nav.py",
+        "code/src/build_stamp.py",
+        "code/src/metadata_templates.py",
         "code/templates/publications.html.tmpl",
         "code/orchestrators/sync_publications_html.py"
       ],
@@ -81,12 +90,15 @@
       ],
       "sources": [
         "pages/BIBLIOGRAPHY.md",
+        "data/work-identifiers.json",
         "papers/*/README.md",
         "papers/*/AGENTS.md",
         "papers/*/SKILL.md",
         "papers/*/full_text.md",
         "papers/*/images/",
-        "code/src/biblio_table.py"
+        "code/src/biblio_table.py",
+        "code/src/work_identifiers.py",
+        "code/orchestrators/export_bibliography.py"
       ],
       "command": "python3 code/orchestrators/export_bibliography.py"
     },
@@ -131,8 +143,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-10-01.json",
-        "reports/source_coverage_2026-10-01.md"
+        "reports/source_coverage_2026-10-02.json",
+        "reports/source_coverage_2026-10-02.md"
       ],
       "sources": [
         "data/works.json",
@@ -326,6 +338,7 @@
         "data/claims.json",
         "data/github-repositories.json",
         "code/src/resume_data.py",
+        "code/src/site_nav.py",
         "code/orchestrators/build_resume.py"
       ],
       "command": "uv run python3 code/orchestrators/build_resume.py --all"
@@ -340,6 +353,7 @@
         "pages/SOFTWARE.md",
         "data/github-repositories.json",
         "code/src/software_table.py",
+        "code/src/site_nav.py",
         "code/templates/software.html.tmpl",
         "code/orchestrators/sync_software_html.py"
       ],
@@ -366,7 +380,9 @@
       "sources": [
         "data/github-repositories.json",
         "code/orchestrators/build_github_inventory.py",
-        "code/orchestrators/render_github_inventory.py"
+        "code/orchestrators/render_github_inventory.py",
+        "code/src/site_nav.py",
+        "code/src/build_stamp.py"
       ],
       "command": "python3 code/orchestrators/render_github_inventory.py"
     },
@@ -434,7 +450,9 @@
         "data/works.json",
         "data/videos.json",
         "code/orchestrators/build_domain_pages.py",
-        "code/orchestrators/build_domain_feeds.py"
+        "code/orchestrators/build_domain_feeds.py",
+        "code/src/site_nav.py",
+        "code/src/build_stamp.py"
       ],
       "command": "python3 code/orchestrators/build_domain_feeds.py"
     },
@@ -461,7 +479,9 @@
         "code/orchestrators/build_work_pages.py",
         "code/src/paper_artifacts.py",
         "code/src/metadata_templates.py",
-        "code/src/site_nav.py"
+        "code/src/site_nav.py",
+        "code/src/abstract_text.py",
+        "code/src/build_stamp.py"
       ],
       "command": "python3 code/orchestrators/build_work_pages.py"
     },
@@ -490,7 +510,10 @@
         "code/data/youtube_institute.json",
         "data/video-transcripts/*.txt",
         "data/works.json",
-        "data/work-enrichment.json"
+        "data/work-enrichment.json",
+        "code/orchestrators/build_video_pages.py",
+        "code/src/site_nav.py",
+        "code/src/build_stamp.py"
       ],
       "command": "python3 code/orchestrators/build_video_pages.py"
     },
@@ -526,7 +549,9 @@
         "code/src/paper_artifacts.py",
         "code/orchestrators/build_work_pages.py",
         "code/src/metadata_templates.py",
-        "code/src/site_nav.py"
+        "code/src/site_nav.py",
+        "code/src/abstract_text.py",
+        "code/src/build_stamp.py"
       ],
       "command": "python3 code/orchestrators/build_paper_pages.py"
     },
@@ -538,7 +563,12 @@
       ],
       "sources": [
         "data/claims.json",
-        "code/orchestrators/build_evidence_page.py"
+        "data/current-counts.json",
+        "reports/public_source_snapshot_*.json",
+        "reports/public_source_inventory_*.json",
+        "code/orchestrators/build_evidence_page.py",
+        "code/src/site_nav.py",
+        "code/src/build_stamp.py"
       ],
       "command": "python3 code/orchestrators/build_evidence_page.py"
     },
@@ -551,8 +581,10 @@
       ],
       "sources": [
         "data/works.json",
-        "papers/paper_metadata.json",
-        "code/orchestrators/build_reproducibility_ledger.py"
+        "data/software.json",
+        "code/orchestrators/build_reproducibility_ledger.py",
+        "code/src/site_nav.py",
+        "code/src/build_stamp.py"
       ],
       "command": "python3 code/orchestrators/build_reproducibility_ledger.py"
     },
@@ -575,7 +607,9 @@
       ],
       "sources": [
         "code/orchestrators/build_catalog.py",
-        "data/*.json"
+        "data/*.json",
+        "code/src/site_nav.py",
+        "code/src/build_stamp.py"
       ],
       "command": "python3 code/orchestrators/build_catalog.py"
     },
@@ -586,7 +620,10 @@
       ],
       "sources": [
         "code/orchestrators/build_exports_page.py",
-        "data/catalog.json"
+        "data/works.json",
+        "data/current-counts.json",
+        "code/src/site_nav.py",
+        "code/src/build_stamp.py"
       ],
       "command": "python3 code/orchestrators/build_exports_page.py"
     },
@@ -597,14 +634,17 @@
       ],
       "sources": [
         "CHANGELOG.md",
-        "code/orchestrators/build_updates_page.py"
+        "pages/THINKING_LOG.md",
+        "code/orchestrators/build_updates_page.py",
+        "code/src/site_nav.py",
+        "code/src/build_stamp.py"
       ],
       "command": "python3 code/orchestrators/build_updates_page.py"
     },
     {
       "name": "External link report",
       "outputs": [
-        "reports/external_links_2026-10-01.json"
+        "reports/external_links_2026-10-02.json"
       ],
       "sources": [
         "all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"
@@ -654,11 +694,11 @@
     {
       "name": "External link triage",
       "outputs": [
-        "reports/external_links_triage_2026-10-01.json",
-        "reports/external_links_triage_2026-10-01.md"
+        "reports/external_links_triage_2026-10-02.json",
+        "reports/external_links_triage_2026-10-02.md"
       ],
       "sources": [
-        "reports/external_links_2026-10-01.json"
+        "reports/external_links_2026-10-02.json"
       ],
       "command": "python3 code/orchestrators/build_external_link_triage.py"
     },
@@ -684,7 +724,9 @@
       "sources": [
         "root HTML pages",
         "style.css",
-        "code/orchestrators/accessibility_audit.py"
+        "code/orchestrators/accessibility_audit.py",
+        "code/orchestrators/deploy_seo_security.py",
+        "code/src/site_nav.py"
       ],
       "command": "python3 code/orchestrators/accessibility_audit.py"
     },
@@ -782,6 +824,7 @@
         "pages/ART_COLLECTIONS.md",
         "code/src/artwork_pages.py",
         "code/src/art_collections.py",
+        "code/src/site_nav.py",
         "code/orchestrators/build_artwork_pages.py"
       ],
       "command": "python3 code/orchestrators/build_artwork_pages.py"

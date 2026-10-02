@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-02T02:20:04Z",
+  "generated_at": "2026-10-02T16:53:00Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
-  "asset_count": 111,
+  "asset_count": 112,
   "budget_exceptions": {
     "publications.html": {
       "budget_bytes": 600000,
@@ -10,12 +10,12 @@
     }
   },
   "warnings": 0,
-  "total_bytes": 16985353,
+  "total_bytes": 17026146,
   "largest": [
     {
       "path": "data/videos.json",
       "kind": "json-data",
-      "bytes": 3420322,
+      "bytes": 3420637,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -33,7 +33,7 @@
     {
       "path": "data/work-enrichment.json",
       "kind": "json-data",
-      "bytes": 794974,
+      "bytes": 796562,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -60,7 +60,7 @@
     {
       "path": "data/publications-ld.json",
       "kind": "json-data",
-      "bytes": 445912,
+      "bytes": 446167,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -69,7 +69,7 @@
     {
       "path": "resume/resume.pdf",
       "kind": "resume-export",
-      "bytes": 368190,
+      "bytes": 369040,
       "baseline_budget_bytes": 5000000,
       "budget_bytes": 5000000,
       "budget_exception": null,
@@ -78,7 +78,7 @@
     {
       "path": "publications.html",
       "kind": "html",
-      "bytes": 346297,
+      "bytes": 346650,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 600000,
       "budget_exception": {
@@ -91,7 +91,7 @@
     {
       "path": "data/resume.json",
       "kind": "json-data",
-      "bytes": 332122,
+      "bytes": 332746,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -127,7 +127,7 @@
     {
       "path": "repositories.html",
       "kind": "html",
-      "bytes": 229415,
+      "bytes": 229475,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,
@@ -136,7 +136,7 @@
     {
       "path": "software.html",
       "kind": "html",
-      "bytes": 219705,
+      "bytes": 222026,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,
@@ -145,7 +145,7 @@
     {
       "path": "data/works.json",
       "kind": "json-data",
-      "bytes": 177947,
+      "bytes": 178032,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -154,7 +154,7 @@
     {
       "path": "bibliography.csl.json",
       "kind": "citation-export",
-      "bytes": 173507,
+      "bytes": 173592,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -181,7 +181,7 @@
     {
       "path": "data/software-ld.json",
       "kind": "json-data",
-      "bytes": 139205,
+      "bytes": 141255,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -190,7 +190,7 @@
     {
       "path": "data/reproducibility.json",
       "kind": "json-data",
-      "bytes": 130882,
+      "bytes": 130969,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
