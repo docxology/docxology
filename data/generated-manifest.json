@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T22:15:43Z",
+  "generated_at": "2026-10-03T01:24:24Z",
   "artifacts": [
     {
       "name": "Paper folder doc regeneration",
@@ -143,8 +143,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-10-02.json",
-        "reports/source_coverage_2026-10-02.md"
+        "reports/source_coverage_2026-10-03.json",
+        "reports/source_coverage_2026-10-03.md"
       ],
       "sources": [
         "data/works.json",
@@ -279,7 +279,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-10-02.json"
+        "reports/pages_artifact_growth_2026-10-03.json"
       ],
       "sources": [
         "tracked repository files",
@@ -594,7 +594,8 @@
         "search-index.json",
         "search-index-core.json",
         "search-index-content-work.json",
-        "search-index-content-video.json"
+        "search-index-content-video.json",
+        "search-index-bootstrap.json"
       ],
       "sources": [
         "data/*.json",
@@ -720,7 +721,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-10-02.json"
+        "reports/asset_size_2026-10-03.json"
       ],
       "sources": [
         "root HTML pages",
@@ -734,7 +735,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-10-02.json"
+        "reports/accessibility_static_2026-10-03.json"
       ],
       "sources": [
         "root HTML pages",
@@ -748,8 +749,8 @@
     {
       "name": "Browser smoke checks",
       "outputs": [
-        "reports/browser-smoke/2026-10-02/*.png",
-        "reports/browser-smoke/2026-10-02/manifest.json"
+        "reports/browser-smoke/2026-10-03/*.png",
+        "reports/browser-smoke/2026-10-03/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -761,7 +762,7 @@
     {
       "name": "Progressive browser QA",
       "outputs": [
-        "reports/browser-qa/2026-10-02/manifest.json"
+        "reports/browser-qa/2026-10-03/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -858,8 +859,8 @@
     {
       "name": "Visual QA",
       "outputs": [
-        "reports/visual-qa/2026-10-02/*.png",
-        "reports/visual-qa/2026-10-02/manifest.json"
+        "reports/visual-qa/2026-10-03/*.png",
+        "reports/visual-qa/2026-10-03/manifest.json"
       ],
       "sources": [
         "root HTML pages",
