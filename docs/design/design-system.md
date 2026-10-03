@@ -38,6 +38,15 @@ Curio Cards. The three card tiles display complete numbered images with their
 original 3:4 proportions. Sources, exact image hashes, and artwork rights are
 recorded in [`assets/curio-cards/`](../../assets/curio-cards/README.md).
 
+The homepage overrides its decorative `--art-a` … `--art-e` values to `none`
+and removes generic card pseudo-image layers. This suppression is scoped to
+`.home-page`; it reduces eager background downloads while keeping the actual
+Curio artwork intact and leaving other pages' shared artwork tokens available.
+The publications template similarly suppresses only its `.publications-page`
+artwork tokens, preserving gradients, borders, and catalog content. Maintain
+this generated-page rule in
+[`code/templates/publications.html.tmpl`](../../code/templates/publications.html.tmpl).
+
 ## Typography
 
 - **Body:** `'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif` (`font-size: 17px`); no runtime font provider is required
@@ -58,6 +67,14 @@ recorded in [`assets/curio-cards/`](../../assets/curio-cards/README.md).
 - Keyboard-shortcut dialogs contain Tab/Shift-Tab focus and return focus to
   the invoking control on Escape/close. Section-copy controls show success
   only after the clipboard write resolves; failures retain real anchor navigation.
+- The shared reading-progress widget sits within the main landmark and keeps
+  its announced value between 0 and 100. The video introduction uses a header
+  landmark instead of leaving its visible content outside landmarks.
+- Crowded video dates form non-overlapping numbered groups. Native dialogs
+  disclose each original title, upload date, and video-page link, contain focus,
+  and restore it on close. Single-video tiles retain native links. Mobile year
+  jumps target visible filtered list entries and respect reduced motion; custom
+  dialog surfaces and focus outlines also support forced colors.
 - Heading hierarchy: one `<h1>` per page, no skipped levels; all form controls labelled
 - Enforced by [`code/orchestrators/accessibility_audit.py`](../../code/orchestrators/accessibility_audit.py)
   (`single_h1`, `no_heading_skips`, `form_controls_labelled`, skip-link, focus-visible,
@@ -76,12 +93,30 @@ recorded in [`assets/curio-cards/`](../../assets/curio-cards/README.md).
   browser regression checks download bytes, exact citation copying, 320px
   layout, enlarged text, and serious/critical accessibility violations.
 - Publications: `.pub-table`, `.filter-row`, `.domain-pill`
+- The publication catalog and server-rendered links are usable before optional
+  abstract/keyword enrichment loads. A nonempty query requests that enrichment;
+  pending and incomplete search remain explicit and retryable.
+- The artwork grid filters and sorts the complete compact catalog, renders
+  48-item batches, and focuses the first newly revealed tile on “Show more.”
+  Reused source tiles keep their images and canonical artwork-page hrefs even
+  when titles repeat. Description and lightbox metadata load on demand; failures
+  preserve compact matches and native page access with retryable detail loading.
 - **TTS controls** (added 2026-07-05): floating toggle + panel; [`design/components/tts.md`](components/tts.md)
 - **Interactive:** reading progress bar, scroll-to-top, keyboard shortcuts overlay, search autocomplete, section anchor links ([`design/animations.md`](animations.md))
 - Search autocomplete shares the compact core request. The dedicated search
-  page loads work/video text segments only when the query needs them, preserves
-  other entry text in the core, and reports partial-search failures with retry.
-  It does not overlay autocomplete on its own full result controls.
+  page first browses a preview of up to 40 entries with complete type counts;
+  queries and scoped browsing load the full core. Work/video text segments load
+  only when the query needs them, other entry text remains in the core, and
+  partial-search failures expose retry. Late responses preserve the current
+  controls. Autocomplete does not overlay the page's own full result controls.
+
+The 2026-10-02 focused accessibility checks covered real catalog completeness,
+target geometry, contrast, focus, mobile navigation, reduced motion, forced
+colors, and no-JavaScript access. A local Lighthouse observation reached
+100 accessibility on the video page. Automated checks and local scores do not
+constitute human visual sign-off or establish hosted/live acceptance; retain
+those evidence stages separately as described in
+[`site-runtime.md`](../operations/site-runtime.md).
 
 ## Stylesheet structure
 

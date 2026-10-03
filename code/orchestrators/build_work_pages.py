@@ -809,7 +809,7 @@ def page_head(work: dict) -> str:
     <meta name="twitter:description" content="{h(description)}">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="{h(work['title'])} — Daniel Ari Friedman">
-    <link rel="stylesheet" href="../style.css?v=site-20261002">
+    <link rel="stylesheet" href="../style.css?v=site-20261002b">
     <meta name="theme-color" content="#0c0c0e">
     <style>
         {BREADCRUMB_CSS}
@@ -995,7 +995,7 @@ def render_index(works: list[dict]) -> str:
     <meta name="description" content="Browse {len(works)} per-work pages — the paper trail of a longitudinal thinking practice: papers, books, courses, and presentations across Active Inference, computational biology, cognitive security, entomology, and art, each with DOI, citation tools, and related works.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/works/">
-    <link rel="stylesheet" href="../style.css?v=site-20261002">
+    <link rel="stylesheet" href="../style.css?v=site-20261002b">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
     <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">

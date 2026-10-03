@@ -12,9 +12,9 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
+from docxology_tools.generated_outputs import UnsafeGeneratedOutputPathError  # noqa: E402
 import build_video_pages  # noqa: E402
 from fetch_video_transcripts import transcript_from_vtt  # noqa: E402
-from docxology_tools.generated_outputs import UnsafeGeneratedOutputPathError  # noqa: E402
 
 
 def sample_video() -> dict:

@@ -47,6 +47,11 @@ jobs:
             code/tests/test_rendered_frontend.py \
             code/tests/test_rendered_progressive_enhancement.py \
             code/tests/test_home_landing.py \
+            code/tests/test_homepage_performance.py \
+            code/tests/test_accessibility_refinements.py \
+            code/tests/test_art_gallery_progressive.py \
+            code/tests/test_search_bootstrap.py \
+            code/tests/test_publications_startup.py \
             code/tests/test_early_navigation.py \
             code/tests/test_service_worker.py \
             code/tests/test_lighthouse_budgets.py \

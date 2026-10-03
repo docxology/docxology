@@ -33,7 +33,7 @@
   <meta name="twitter:image" content="https://danielarifriedman.com/og-media.jpg">
   <meta name="twitter:image:alt" content="Daniel Ari Friedman Videos | Active Inference Talks">
   <meta property="og:site_name" content="Daniel Ari Friedman">
-  <link rel="stylesheet" href="style.css?v=site-20261002">
+  <link rel="stylesheet" href="style.css?v=site-20261002b">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -275,7 +275,7 @@
     .tb-btn:hover { border-color: var(--gold); color: var(--text-primary); }
     .tb-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
     .tb-btn.active { background: var(--gold-glow); border-color: var(--gold); color: var(--gold); }
-    .tb-btn.active-red { background: var(--red-glow); border-color: var(--red); color: var(--red); }
+    .tb-btn.active-red { background: var(--red-glow); border-color: var(--red); color: var(--red-bright); }
 
     .tb-label {
       font-size: .72rem; color: var(--text-secondary); font-weight: 600;
@@ -369,11 +369,72 @@
       transition: transform .15s, box-shadow .15s, z-index 0s;
       z-index: 1;
       text-decoration: none;
+      padding: 0;
+      background: var(--bg-card);
+      border: 0;
+      cursor: pointer;
     }
     .vid-card:hover {
-      transform: scale(1.15);
       z-index: 100;
       box-shadow: 0 4px 20px rgba(0,0,0,.7);
+    }
+    .vid-card:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 1px;
+      z-index: 100;
+    }
+    .video-group-count {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      min-width: 24px;
+      padding: 1px 4px;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 700;
+      pointer-events: none;
+    }
+    .video-group-dialog {
+      width: min(740px, calc(100% - 2rem));
+      max-height: calc(100dvh - 2rem);
+      margin: auto;
+      padding: 1.5rem;
+      overflow: auto;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .video-group-dialog::backdrop { background: rgba(0,0,0,.65); }
+    .video-group-dialog h2 { font-size: 1.4rem; margin: .75rem 0; }
+    .video-group-dialog p { color: var(--text-secondary); line-height: 1.6; }
+    .video-group-dialog ul { list-style: none; margin-top: 1rem; }
+    .video-group-dialog li { padding: .5rem 0; border-top: 1px solid var(--border); }
+    .video-group-dialog a {
+      display: block;
+      min-height: 32px;
+      padding: .25rem 0;
+      color: var(--text-primary);
+      text-decoration: underline;
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+    .video-group-dialog time { display: block; color: var(--text-secondary); font-size: .8rem; }
+    .video-group-close {
+      min-height: 44px;
+      padding: .5rem 1rem;
+      background: var(--bg-card);
+      color: var(--text-primary);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font: inherit;
+      cursor: pointer;
+    }
+    .video-group-dialog a:focus-visible, .video-group-close:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 2px;
     }
     .vid-personal {
       border-top: 2px solid var(--gold);
@@ -492,7 +553,7 @@
         color: var(--gold); background: var(--gold-glow);
       }
       .mobile-channel-title.institute {
-        color: var(--red); background: var(--red-glow);
+        color: var(--red-bright); background: var(--red-glow);
       }
       .mobile-vid-item {
         display: flex; gap: .75rem; align-items: flex-start;
@@ -524,6 +585,15 @@
       .vid-card:hover { transform: none; }
       .spinner { animation: none; border-top-color: var(--gold); }
       * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+    }
+    @media (forced-colors: active) {
+      .video-group-count, .video-group-dialog, .video-group-close {
+        background: Canvas;
+        color: CanvasText;
+      }
+      .vid-card:focus-visible, .video-group-dialog a:focus-visible, .video-group-close:focus-visible {
+        outline-color: Highlight;
+      }
     }
 
     /* ── FOOTER ──────────────────────────────────────────── */
@@ -601,7 +671,7 @@
     </nav>
 
 <!-- ── HERO ── -->
-<div class="hero">
+<header class="hero">
   <h1>Active Inference Video Timeline</h1>
   <div class="hero-meta">
     <a href="https://www.youtube.com/@danielarifriedman" target="_blank" rel="noopener" class="channel-badge badge-personal">
@@ -612,7 +682,7 @@
     </a>
   </div>
   <p class="hero-stats" id="hero-stats">Loading video data…</p>
-</div>
+</header>
 
 <main id="main">
 
@@ -620,7 +690,7 @@
   <h2 id="video-topic-heading">Talks, Courses, Interviews, and Research Livestreams</h2>
   <p>Browse Daniel Ari Friedman's public video record across Active Inference Institute education, cognitive security, computational biology, art, complexity science, and open research practice.</p>
   <p class="panel-note">What is behind this page: the timeline renders the full public video record exported to <a href="data/videos.json">data/videos.json</a> — 1,127 videos at the 2026-09-11 index build, 405 on the personal channel and 722 on the Active Inference Institute channel. A compact timeline index ships separately as <a href="data/videos-index.json">videos-index.json</a>, every video also has a static page under <a href="videos/">videos/</a>, and selected episodes include extracted transcripts in the repository's <code>data/video-transcripts/</code> directory.</p>
-  <p class="panel-note">How to use it: the search box filters by title; the channel buttons show both channels, only the personal one, or only the institute one; zoom steps from an overview down to months and weeks; the year menu jumps to a period; arrow keys navigate the timeline once it loads. Without JavaScript, the static <a href="videos/">video index</a> and the JSON exports above carry the same record.</p>
+  <p class="panel-note">How to use it: search by title, filter by channel, zoom from an overview to months or weeks, and jump to a year. Nearby videos share a numbered tile; open it to choose from the original titles and upload dates. Arrow keys scroll the timeline; on mobile, browse the searchable video list. Without JavaScript, the static <a href="videos/">video index</a> and the JSON exports above carry the same record.</p>
   <div class="video-topic-links" aria-label="Related video and research routes">
     <a href="domain-active-inference.html">Active Inference</a>
     <a href="publications.html">Research publications</a>
@@ -645,9 +715,9 @@
 
   <span class="tb-label">Zoom</span>
   <div class="btn-group" role="group" aria-label="Zoom level">
-    <button class="tb-btn active" data-zoom="0" data-zoom="0">Overview</button>
-    <button class="tb-btn" data-zoom="1" data-zoom="1">Month</button>
-    <button class="tb-btn" data-zoom="2" data-zoom="2">Week</button>
+    <button class="tb-btn active" data-zoom="0">Overview</button>
+    <button class="tb-btn" data-zoom="1">Month</button>
+    <button class="tb-btn" data-zoom="2">Week</button>
   </div>
 
   <span class="tb-label">Jump</span>
@@ -690,10 +760,10 @@
   <p>Daniel Ari Friedman, PhD · <a href="https://activeinference.institute/">Active Inference Institute</a> · <a href="discovery.html">Discovery Map</a> · <a href="https://danielarifriedman.com/">danielarifriedman.com</a></p>
 </footer>
 
-<script src="/js/videos-page.js?v=20260715" defer></script>
+<script src="/js/videos-page.js?v=site-20261002b" defer></script>
 
 <script src="/js/tts-controls.js?v=20260712" defer></script>
-<script src="/js/interactive.js?v=site-20261002" defer></script>
+<script src="/js/interactive.js?v=site-20261002b" defer></script>
     <script src="/js/menu-esc.js?v=20260712" defer></script>
 </body>
 </html>

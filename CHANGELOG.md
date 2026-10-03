@@ -4,6 +4,40 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-10-02
 
+- **Progressive catalog startup:** the search page browses a generated preview
+  with complete type counts before loading the full core for queries or scoped
+  browsing, then requests only the needed work/video text segments. Failed or
+  malformed requests expose retries, and late responses preserve current
+  controls. The artwork gallery filters the complete catalog but renders
+  48-item batches, preserves canonical page links and source images even for
+  duplicate titles, and loads descriptions/details on demand. Publications
+  render before optional abstract/keyword enrichment; failed interactive loads
+  preserve the available catalog links.
+- **Accessible video navigation:** overlapping timeline links now become
+  truthful numbered date groups with native dialogs exposing every original
+  video link. Mobile screens use the filtered list and a working year jump;
+  pressed states, focus restoration, contrast, forced colors, reduced motion,
+  and UTC date arithmetic are covered by browser regressions. The shared
+  reading-progress widget and video introduction now belong to landmarks.
+  Decorative background suppression is scoped to the homepage stylesheet and
+  publication template, preserving the complete Curio images, publication
+  gradients and content, and other pages' design tokens.
+- **Candidate-bound follow-ups:** live verification checks out the triggering
+  Pages candidate and binds its exact run, workflow, branch, and completion
+  status. A built same-candidate 404, transport/server failure, or malformed
+  boolean flag cannot be accepted as propagation; marker/contract mismatches
+  require explicit deployment-lag evidence.
+  Dedicated fresh failure receipts replace stale-report glob selection and
+  remain available from failed workflow steps; IndexNow also reads the deployed
+  candidate. Cached offline checks remain separate from fresh acceptance.
+- **Scoped local verification:** 13 focused accessibility browser checks passed
+  without skips, including complete video coverage across zoom levels and dense
+  same-day fixtures. One local Lighthouse 13.4.1 video-page observation measured
+  87 performance / 100 accessibility / 100 SEO. An independent maintenance review
+  and 89 focused regression tests verified the deployment-binding and typed
+  failure rules. These local results do not establish hosted execution, live
+  publication, performance stability, or human visual sign-off; earlier dated
+  receipts remain unchanged.
 - **Homepage and Curio Cards:** clearer introduction and routes into publications,
   software, art, and teaching; responsive typography, accessible profile disclosure,
   and readable media without JavaScript. The three art tiles now show the exact

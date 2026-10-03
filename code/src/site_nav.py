@@ -74,9 +74,9 @@ MENU_ESC_SCRIPT = '<script src="/js/menu-esc.js?v=20260813" defer></script>'
 
 # search-utils.js defines global esc() and must load before interactive.js.
 INTERACTIVE_SCRIPTS = (
-    '<script src="/js/search-utils.js?v=site-20261002"></script>\n'
+    '<script src="/js/search-utils.js?v=site-20261002b"></script>\n'
     '<script src="/js/tts-controls.js?v=20260813" defer></script>\n'
-    '<script src="/js/interactive.js?v=site-20261002" defer></script>'
+    '<script src="/js/interactive.js?v=site-20261002b" defer></script>'
 )
 
 # Copy-BibTeX wiring (js/cite-export.js). Loaded only on generated work pages
@@ -225,7 +225,7 @@ def render_pillar_head(
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 {social_meta_tags(title, description, image_url, image_alt=title)}
-    <link rel="stylesheet" href="style.css?v=site-20261002">
+    <link rel="stylesheet" href="style.css?v=site-20261002b">
     <meta name="theme-color" content="#0c0c0e">
     <style>
 {BREADCRUMB_CSS}

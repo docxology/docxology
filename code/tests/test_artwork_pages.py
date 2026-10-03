@@ -169,7 +169,7 @@ def test_art_html_tiles_are_links_with_fresh_data() -> None:
     # The interactive layer hydrates the same tiles and keeps them links.
     js = (REPO_ROOT / "js" / "art-gallery.js").read_text(encoding="utf-8")
     assert "art-thumb.ssr" in js
-    assert "ssrByTitle" in js
+    assert "ssrByPage" in js
     assert 'data-src="${esc(largeThumb(art.thumb))}"' in js
     assert "createElement('a')" in js and "card.href = art.page" in js
 

@@ -49,3 +49,26 @@ def test_publication_and_validation_share_required_browser_acceptance():
     for test_file in ("test_lighthouse_budgets.py", "test_service_worker.py",
                       "test_rendered_frontend.py", "test_rendered_progressive_enhancement.py"):
         assert test_file in reusable
+
+
+def test_live_verification_binds_triggering_candidate_and_retains_failed_receipt():
+    workflow = (REPO_ROOT / ".github/workflows/live-verify.yml").read_text(encoding="utf-8")
+    assert "ref: ${{ github.event.workflow_run.head_sha || github.sha }}" in workflow
+    assert "CANDIDATE_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}" in workflow
+    assert "DEPLOYMENT_RUN_ID: ${{ github.event.workflow_run.id }}" in workflow
+    assert "--expected-commit \"$CANDIDATE_SHA\"" in workflow
+    assert "--deployment-run-id \"$DEPLOYMENT_RUN_ID\"" in workflow
+    assert "github.event.workflow_run.head_branch == 'main'" in workflow
+    assert "glob.glob" not in workflow
+    upload = workflow.split("- name: Upload live verification report", 1)[1]
+    assert "if: always()" in upload
+    assert "path: /tmp/live-site-verification.json" in upload
+    assert "if-no-files-found: error" in upload
+    assert "retention-days: 90" in upload
+
+
+def test_indexnow_submits_the_deployed_candidate_from_main():
+    workflow = (REPO_ROOT / ".github/workflows/indexnow-on-push.yml").read_text(encoding="utf-8")
+    assert "ref: ${{ github.event.workflow_run.head_sha || github.sha }}" in workflow
+    assert "github.event.workflow_run.head_branch == 'main'" in workflow
+    assert "github.ref == 'refs/heads/main'" in workflow

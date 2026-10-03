@@ -1,5 +1,5 @@
 // Small offline shell; visited content is cached on demand, never bulk-downloaded.
-const CACHE_NAME = 'daf-portfolio-v25';
+const CACHE_NAME = 'daf-portfolio-v26';
 const CACHE_PREFIX = 'daf-portfolio-';
 const SHELL_CACHE = `${CACHE_NAME}-shell`;
 // Keep successful visited content across shell updates for returning visitors.

@@ -26,13 +26,13 @@ const CANVAS_PADDING = 80; // px left/right margin
 // ═══════════════════════════════════════════════════════════════
 
 let allVideos = [];      // combined + sorted
-let positions = {};      // videoId → {left, top} per zoom level
 let currentZoom = 0;
 let channelFilter = 'both';
 let searchQuery = '';
 let minDate, maxDate, totalDays;
 let yearOffsets = {};    // year → leftPx
 let imgObserver = null;
+let groupDialog = null;
 
 // ═══════════════════════════════════════════════════════════════
 //  BOOTSTRAP
@@ -69,8 +69,8 @@ async function init() {
   minDate = new Date(Math.min(...dates));
   maxDate = new Date(Math.max(...dates));
   // Pad by 30 days on each side
-  minDate.setDate(minDate.getDate() - 30);
-  maxDate.setDate(maxDate.getDate() + 30);
+  minDate.setUTCDate(minDate.getUTCDate() - 30);
+  maxDate.setUTCDate(maxDate.getUTCDate() + 30);
   totalDays = Math.ceil((maxDate - minDate) / 86400000);
 
   // Hero stats
@@ -85,18 +85,15 @@ async function init() {
   // Populate year jump
   buildYearJump();
 
-  // Pre-compute positions for all zoom levels
-  computeAllPositions();
-
   // Render
   document.getElementById('loading').style.display = 'none';
-  document.getElementById('timeline-wrap').style.display = 'block';
+  // Let the responsive stylesheet choose timeline versus list. An inline
+  // display:block overrides the mobile display:none rule and exposes both.
+  document.getElementById('timeline-wrap').style.removeProperty('display');
   document.getElementById('status-bar').style.display = 'flex';
 
-  buildTimeline();
   buildMobileList();
   setupInteractions();
-  updateCount();
 
   // Read URL params (may re-zoom/filter, so do after setup)
   applyUrlParams();
@@ -132,39 +129,97 @@ function fmtDate(yyyymmdd) {
 }
 
 // ═══════════════════════════════════════════════════════════════
-//  POSITION COMPUTATION
+//  DATE-BASED GROUPING
 // ═══════════════════════════════════════════════════════════════
 
-function computeAllPositions() {
-  positions = {};
-  for (let z = 0; z < ZOOM.length; z++) {
-    const { pxPerDay, thumbW, thumbH } = ZOOM[z];
-    const rowH = thumbH + ROW_GAP;
-    const trackH = TRACK_ROWS * rowH;
-    const canvasH = 2 * trackH + AXIS_ZONE;
-    const axisMid = trackH + AXIS_ZONE / 2;
+function matchesFilter(video) {
+  return (channelFilter === 'both' || video.channel === channelFilter) &&
+    (!searchQuery || video.title.toLowerCase().includes(searchQuery));
+}
 
-    // Separate by channel, maintain order (already date-sorted)
-    const personalVideos  = allVideos.filter(v => v.channel === 'personal');
-    const instituteVideos = allVideos.filter(v => v.channel === 'institute');
+function timelineGroups(zoom) {
+  const { pxPerDay, thumbW, thumbH } = ZOOM[zoom];
+  const rowH = thumbH + ROW_GAP;
+  const trackH = TRACK_ROWS * rowH;
+  const axisMid = trackH + AXIS_ZONE / 2;
+  const groups = [];
 
-    [personalVideos, instituteVideos].forEach((group, gi) => {
-      group.forEach((v, idx) => {
-        const left = CANVAS_PADDING + dayOffset(v.upload_date) * pxPerDay - thumbW / 2;
-        const row = idx % TRACK_ROWS;
-        let top;
-        if (gi === 0) {
-          // personal: above axis → positioned from axis upward
-          top = axisMid - ROW_GAP - (row + 1) * rowH;
-        } else {
-          // institute: below axis → positioned from axis downward
-          top = axisMid + AXIS_ZONE / 2 + row * rowH + ROW_GAP;
-        }
-        if (!positions[v.id]) positions[v.id] = {};
-        positions[v.id][z] = { left, top, canvasH };
-      });
+  ['personal', 'institute'].forEach(channel => {
+    const rows = Array(TRACK_ROWS).fill(null);
+    allVideos.filter(video => video.channel === channel && matchesFilter(video)).forEach(video => {
+      const left = CANVAS_PADDING + dayOffset(video.upload_date) * pxPerDay - thumbW / 2;
+      const row = rows.findIndex(group => !group || group.left + thumbW + ROW_GAP <= left);
+      if (row === -1) {
+        // Every row has a target in this date interval. Group nearby records
+        // rather than obscuring links or inventing different upload dates.
+        const closest = rows.reduce((best, group) => {
+          const distance = left - group.left;
+          const bestDistance = left - best.left;
+          return distance < bestDistance ||
+            (distance === bestDistance && group.videos.length < best.videos.length) ? group : best;
+        });
+        closest.videos.push(video);
+        return;
+      }
+      const top = channel === 'personal'
+        ? axisMid - ROW_GAP - (row + 1) * rowH
+        : axisMid + AXIS_ZONE / 2 + row * rowH + ROW_GAP;
+      const group = { left, top, channel, videos: [video] };
+      rows[row] = group;
+      groups.push(group);
     });
+  });
+  return groups;
+}
+
+function groupDateRange(group) {
+  const date = value => parseDate(value).toLocaleDateString('en-US', {
+    month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC',
+  });
+  const first = group.videos[0].upload_date;
+  const last = group.videos[group.videos.length - 1].upload_date;
+  return first === last ? date(first) : `${date(first)} – ${date(last)}`;
+}
+
+function showVideoGroup(group, opener) {
+  if (!groupDialog) {
+    groupDialog = document.createElement('dialog');
+    groupDialog.className = 'video-group-dialog';
+    groupDialog.setAttribute('aria-labelledby', 'video-group-title');
+    groupDialog.setAttribute('aria-describedby', 'video-group-description');
+    // Native dialog owns focus and Escape. Do not open the site's separate
+    // shortcuts/TTS overlays from inside this modal.
+    groupDialog.addEventListener('keydown', event => event.stopPropagation());
+    document.querySelector('main').appendChild(groupDialog);
   }
+  groupDialog.replaceChildren();
+  const heading = document.createElement('h2');
+  heading.id = 'video-group-title';
+  heading.textContent = `${group.videos.length} ${group.channel === 'personal' ? 'personal' : 'institute'} videos`;
+  const description = document.createElement('p');
+  description.id = 'video-group-description';
+  description.textContent = `${groupDateRange(group)}. Choose a video to read its details and watch on YouTube.`;
+  const close = document.createElement('button');
+  close.type = 'button';
+  close.className = 'video-group-close';
+  close.textContent = 'Close';
+  close.autofocus = true;
+  close.addEventListener('click', () => groupDialog.close());
+  const list = document.createElement('ul');
+  group.videos.forEach(video => {
+    const item = document.createElement('li');
+    const link = document.createElement('a');
+    link.href = `videos/${video.channel}-${video.id}.html`;
+    link.textContent = video.title;
+    const time = document.createElement('time');
+    time.dateTime = `${video.upload_date.slice(0,4)}-${video.upload_date.slice(4,6)}-${video.upload_date.slice(6,8)}`;
+    time.textContent = groupDateRange({videos: [video]});
+    item.append(link, time);
+    list.appendChild(item);
+  });
+  groupDialog.append(close, heading, description, list);
+  groupDialog.onclose = () => { if (opener.isConnected) opener.focus(); };
+  groupDialog.showModal();
 }
 
 function canvasWidth(zoom) {
@@ -256,35 +311,50 @@ function buildTimeline() {
     threshold: 0,
   });
 
-  allVideos.forEach((v, i) => {
-    const pos = positions[v.id]?.[z];
-    if (!pos) return;
-
-    const card = document.createElement('a');
+  timelineGroups(z).forEach(group => {
+    const v = group.videos[0];
+    const clustered = group.videos.length > 1;
+    const card = document.createElement(clustered ? 'button' : 'a');
     card.className = `vid-card vid-${v.channel}`;
-    card.href = `videos/${v.channel}-${v.id}.html`;
+    if (clustered) {
+      card.type = 'button';
+      card.setAttribute('aria-haspopup', 'dialog');
+      card.addEventListener('click', () => showVideoGroup(group, card));
+    } else {
+      card.href = `videos/${v.channel}-${v.id}.html`;
+    }
     card.dataset.id = v.id;
+    card.dataset.videoIds = JSON.stringify(group.videos.map(video => video.id));
     card.dataset.channel = v.channel;
     card.dataset.year = v.year;
     card.dataset.date = v.upload_date;
-    card.dataset.title = v.title;
-    card.dataset.query = v.title.toLowerCase();
-    card.setAttribute('aria-label', `${v.title} (${fmtDate(v.upload_date)})`);
-    card.style.cssText = `left:${pos.left}px;top:${pos.top}px;width:${thumbW}px;height:${thumbH}px;`;
+    const label = clustered
+      ? `${group.videos.length} ${v.channel} videos, ${groupDateRange(group)}`
+      : `${v.title} (${groupDateRange(group)})`;
+    card.dataset.title = label;
+    card.title = label;
+    card.setAttribute('aria-label', label);
+    card.style.cssText = `left:${group.left}px;top:${group.top}px;width:${thumbW}px;height:${thumbH}px;`;
 
     const img = document.createElement('img');
     img.dataset.src = `https://img.youtube.com/vi/${v.id}/mqdefault.jpg`;
-    img.alt = v.title;
+    img.alt = '';
     img.className = 'placeholder';
     img.width = thumbW;
     img.height = thumbH;
     card.appendChild(img);
+    if (clustered) {
+      const count = document.createElement('span');
+      count.className = 'video-group-count';
+      count.textContent = group.videos.length;
+      count.setAttribute('aria-hidden', 'true');
+      card.appendChild(count);
+    }
 
     canvas.appendChild(card);
     imgObserver.observe(img);
   });
 
-  applyFilter();
 }
 
 function onImgIntersect(entries) {
@@ -321,6 +391,7 @@ function buildMobileList() {
       a.className = 'mobile-vid-item';
       a.href = `videos/${v.channel}-${v.id}.html`;
       a.dataset.query = v.title.toLowerCase();
+      a.dataset.year = v.year;
 
       const img = document.createElement('img');
       img.src = `https://img.youtube.com/vi/${v.id}/mqdefault.jpg`;
@@ -353,10 +424,14 @@ function filterMobileList() {
   document.querySelectorAll('#mobile-list .mobile-channel-section').forEach(sec => {
     const titleEl = sec.querySelector('.mobile-channel-title');
     const chOk = channelFilter === 'both' || (titleEl && titleEl.classList.contains(channelFilter));
+    let hasMatches = false;
     sec.querySelectorAll('.mobile-vid-item').forEach(item => {
       const qOk = !searchQuery || item.dataset.query.includes(searchQuery);
-      item.style.display = (chOk && qOk) ? 'flex' : 'none';
+      const show = chOk && qOk;
+      item.style.display = show ? 'flex' : 'none';
+      if (show) hasMatches = true;
     });
+    sec.hidden = !hasMatches;
   });
 }
 
@@ -365,18 +440,9 @@ function filterMobileList() {
 // ═══════════════════════════════════════════════════════════════
 
 function applyFilter() {
-  const cards = document.querySelectorAll('.vid-card');
-  let visible = 0;
-  cards.forEach(card => {
-    const ch = card.dataset.channel;
-    const chOk = channelFilter === 'both' || ch === channelFilter;
-    const qOk  = !searchQuery || card.dataset.query.includes(searchQuery);
-    const show = chOk && qOk;
-    card.style.display = show ? 'block' : 'none';
-    if (show) visible++;
-  });
+  buildTimeline();
   filterMobileList();
-  updateCount(visible);
+  updateCount(allVideos.filter(matchesFilter).length);
 }
 
 function updateCount(visible) {
@@ -400,7 +466,10 @@ function setZoom(level, btn) {
   const centerDay = (centerPx - CANVAS_PADDING) / oldPpd;
 
   currentZoom = level;
-  document.querySelectorAll('[data-zoom]').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('[data-zoom]').forEach(b => {
+    b.classList.remove('active');
+    b.setAttribute('aria-pressed', String(b === btn));
+  });
   btn.classList.add('active');
 
   buildTimeline();
@@ -416,6 +485,7 @@ function setChannel(ch, btn) {
   channelFilter = ch;
   document.querySelectorAll('[data-ch]').forEach(b => {
     b.classList.remove('active', 'active-red');
+    b.setAttribute('aria-pressed', String(b === btn));
   });
   if (ch === 'institute') {
     btn.classList.add('active-red');
@@ -443,6 +513,16 @@ function buildYearJump() {
 }
 
 function jumpToYear(year) {
+  const list = document.getElementById('mobile-list');
+  if (getComputedStyle(list).display !== 'none') {
+    const target = Array.from(list.querySelectorAll('.mobile-vid-item')).find(item =>
+      item.dataset.year === String(year) && item.style.display !== 'none' && !item.closest('[hidden]'));
+    if (target) {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      target.scrollIntoView({block: 'center', behavior: reduced ? 'instant' : 'smooth'});
+    }
+    return;
+  }
   const wrap = document.getElementById('timeline-wrap');
   const x = yearOffsets[year];
   if (x !== undefined) {
@@ -455,6 +535,9 @@ function jumpToYear(year) {
 // ═══════════════════════════════════════════════════════════════
 
 function setupInteractions() {
+  document.querySelectorAll('[data-zoom], [data-ch]').forEach(button => {
+    button.setAttribute('aria-pressed', String(button.classList.contains('active')));
+  });
   // Search
   const searchInput = document.getElementById('search');
   searchInput.addEventListener('input', () => {
@@ -517,8 +600,8 @@ function pushUrlState() {
 function applyUrlParams() {
   const params = new URLSearchParams(location.search);
   if (params.get('q')) {
-    searchQuery = params.get('q');
-    document.getElementById('search').value = searchQuery;
+    document.getElementById('search').value = params.get('q');
+    searchQuery = params.get('q').trim().toLowerCase();
   }
   if (params.get('ch') && params.get('ch') !== 'both') {
     const btn = document.querySelector(`[data-ch="${params.get('ch')}"]`);

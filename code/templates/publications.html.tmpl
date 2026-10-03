@@ -22,7 +22,6 @@
     <link rel="alternate" type="application/json" href="/data/works.json" title="Works JSON">
     <!-- Resource hints -->
 
-<link rel="prefetch" href="/data/works.json" as="fetch" crossorigin>
     <link rel="me" href="https://orcid.org/0000-0001-6232-9096">    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
 
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -47,7 +46,7 @@
     <!-- <PUBLICATIONS_LD_SYNC_BEGIN> -->
 {{PUBLICATIONS_INLINE_LD}}
     <!-- <PUBLICATIONS_LD_SYNC_END> -->
-    <link rel="stylesheet" href="style.css?v=site-20261002">
+    <link rel="stylesheet" href="style.css?v=site-20261002b">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <meta name="theme-color" content="#0c0c0e">
 <script type="application/ld+json">
@@ -72,6 +71,16 @@
     </script>
     <style>.breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}</style>
   <style>
+    /* Keep the bibliography's initial transfer focused on the catalog.
+       Shared decorative pseudo-elements retain their gradients and borders
+       without eagerly loading unrelated artwork throughout this page. */
+    .publications-page {
+      --art-a: none;
+      --art-b: none;
+      --art-c: none;
+      --art-d: none;
+      --art-e: none;
+    }
     /* More disclosure dropdown (mirrors style.css nav-more rules so secondary
        destinations stay collapsed behind "More" even when style.css is absent) */
     .nav-more { position: relative; }
@@ -250,10 +259,10 @@
         <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed August 2026</p>
     </footer>
 
-    <script src="js/search-utils.js?v=site-20261002"></script>
-    <script src="js/publications.js?v=newspaper-glitch-20260530c" defer></script>
+    <script src="js/search-utils.js?v=site-20261002b"></script>
+    <script src="js/publications.js?v=site-20261002b" defer></script>
     <script src="/js/tts-controls.js?v=20260813" defer></script>
-    <script src="/js/interactive.js?v=site-20261002" defer></script>
+    <script src="/js/interactive.js?v=site-20261002b" defer></script>
     <script src="/js/menu-esc.js?v=20260813" defer></script>
 </body>
 </html>

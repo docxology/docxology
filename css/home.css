@@ -1,4 +1,18 @@
 /* Homepage composition. Shared site styles and navigation remain in style.css. */
+.home-page {
+    /* Decorative CSS images otherwise download eagerly throughout the page,
+       including pseudo-elements without visible content. Keep the landing
+       page focused on its text and complete, lazily loaded Curio originals. */
+    --art-a: none;
+    --art-b: none;
+    --art-c: none;
+    --art-d: none;
+    --art-e: none;
+}
+.home-page .card::before, .home-page .connect-card::before {
+    content: none;
+    background-image: none;
+}
 .home-page .hero {
     min-height: 0;
     padding: 8.5rem 2rem 3.5rem;

@@ -2,7 +2,7 @@
 (function () {
     'use strict';
 
-    const state = { items: [], type: 'all', q: '', loading: true, contentError: false, revision: null };
+    const state = { items: [], type: 'all', q: '', loading: true, contentError: false, revision: null, coreLoaded: false, bootstrapReady: false, typeCounts: null };
     const input = document.getElementById('q');
     const filters = document.getElementById('filters');
     const results = document.getElementById('results');
@@ -39,12 +39,16 @@
     }
 
     function renderFilters() {
-        const types = ['all', ...Array.from(new Set(state.items.map(item => item.type))).sort()];
+        const counts = state.typeCounts || state.items.reduce((totals, item) => {
+            totals[item.type] = (totals[item.type] || 0) + 1;
+            return totals;
+        }, Object.create(null));
+        const types = ['all', ...Object.keys(counts).sort()];
         // Preserve the user's selected scope even if a new revision has no
         // entries of that type; silently switching to all would broaden it.
         if (!types.includes(state.type)) types.push(state.type);
         filters.innerHTML = types.map(type => {
-            const count = type === 'all' ? state.items.length : state.items.filter(item => item.type === type).length;
+            const count = type === 'all' ? Object.values(counts).reduce((sum, count) => sum + count, 0) : counts[type] || 0;
             return `<button type="button" class="${type === state.type ? 'active' : ''}" aria-pressed="${type === state.type}" data-type="${esc(type)}">${esc(type)} (${count})</button>`;
         }).join('');
         filters.querySelectorAll('button').forEach(button => button.addEventListener('click', () => {
@@ -113,11 +117,30 @@
 
     async function refresh() {
         const sequence = ++requestSequence;
+        results.removeAttribute('role');
         const types = contentTypes();
         state.contentError = false;
-        state.loading = types.length > 0;
-        state.items = window.DocxologySearch.getItems();
+        const needsCore = state.coreLoaded || !state.bootstrapReady || state.q.trim() || state.type !== 'all';
+        state.loading = Boolean(types.length || needsCore && !state.coreLoaded);
+        if (state.coreLoaded) state.items = window.DocxologySearch.getItems();
         render();
+        if (needsCore) {
+            try {
+                await window.DocxologySearch.loadCore();
+                if (sequence !== requestSequence) return;
+                state.coreLoaded = true;
+                state.typeCounts = null;
+                state.items = window.DocxologySearch.getItems();
+                state.revision = window.DocxologySearch.getRevision();
+                state.loading = types.length > 0;
+                renderFilters();
+                render();
+            } catch (error) {
+                if (sequence !== requestSequence) return;
+                coreUnavailable(error);
+                return;
+            }
+        }
         if (!types.length) return;
         try {
             const items = await window.DocxologySearch.loadContent(types);
@@ -145,16 +168,69 @@
         debounceTimer = setTimeout(refresh, 120);
     });
 
-    results.setAttribute('aria-busy', 'true');
-    Promise.resolve().then(() => window.DocxologySearch.loadCore()).then(items => {
-        state.items = items;
-        state.revision = window.DocxologySearch.getRevision();
-        renderFilters();
-        refresh();
-    }).catch(error => {
+    function coreUnavailable(error) {
         console.error('Search core index unavailable', error);
-        results.innerHTML = '<p class="text-center text-muted mt-2">Search index unavailable. Browse the <a href="works/">works index</a>, or reload to retry.</p>';
+        state.loading = false;
+        state.bootstrapReady = false;
+        const status = document.getElementById('result-status');
+        if (status) { status.innerHTML = ''; status.hidden = true; }
+        results.innerHTML = '<p class="text-center text-muted mt-2">Search index unavailable. Browse the <a href="works/">works index</a>, or <button type="button" class="filter-btn" data-search-core-retry>retry search</button>.</p>';
         results.setAttribute('role', 'alert');
         results.setAttribute('aria-busy', 'false');
-    });
+        results.querySelector('[data-search-core-retry]').addEventListener('click', () => {
+            results.removeAttribute('role');
+            refresh();
+        });
+    }
+
+    async function browseBootstrap() {
+        const sequence = requestSequence;
+        try {
+            const response = await fetch('/search-index-bootstrap.json', { cache: 'no-cache' });
+            if (!response.ok) throw new Error('Search bootstrap request failed: ' + response.status);
+            const data = await response.json();
+            const counts = data && data.type_counts;
+            if (!data || typeof data.generated_at !== 'string' || !Number.isSafeInteger(data.count) || data.count < 0 ||
+                    !Array.isArray(data.items) || data.items.length !== Math.min(data.count, 40) ||
+                    !counts || typeof counts !== 'object' || Array.isArray(counts) ||
+                    Object.values(counts).some(count => !Number.isSafeInteger(count) || count <= 0) ||
+                    Object.values(counts).reduce((sum, count) => sum + count, 0) !== data.count) {
+                throw new Error('Invalid search bootstrap');
+            }
+            const seen = new Set();
+            const sampleCounts = Object.create(null);
+            data.items.forEach(item => {
+                if (!item || typeof item.id !== 'string' || typeof item.type !== 'string' ||
+                        typeof item.title !== 'string' || typeof item.url !== 'string' || seen.has(item.id) ||
+                        !Object.prototype.hasOwnProperty.call(counts, item.type)) {
+                    throw new Error('Invalid or duplicate bootstrap search entry');
+                }
+                seen.add(item.id);
+                sampleCounts[item.type] = (sampleCounts[item.type] || 0) + 1;
+            });
+            if (Object.entries(sampleCounts).some(([type, count]) => count > counts[type])) {
+                throw new Error('Invalid search bootstrap counts');
+            }
+            // Typing or choosing a scope already started the full search. A
+            // late bootstrap must never replace those results or filter counts.
+            if (sequence !== requestSequence || state.q.trim() || state.type !== 'all' || state.coreLoaded) return;
+            state.items = data.items;
+            state.typeCounts = counts;
+            state.revision = data.generated_at;
+            state.bootstrapReady = true;
+            state.loading = false;
+            renderFilters();
+            render();
+        } catch (error) {
+            if (sequence !== requestSequence || state.coreLoaded) return;
+            // The additive browsing companion is optional: existing exports
+            // remain the complete search authority and provide the fallback.
+            console.warn('Search browsing preview unavailable', error);
+            refresh();
+        }
+    }
+
+    results.setAttribute('aria-busy', 'true');
+    if (state.q.trim()) refresh();
+    else browseBootstrap();
 })();

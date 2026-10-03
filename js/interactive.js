@@ -38,13 +38,17 @@
     bar.setAttribute('aria-valuemin', '0');
     bar.setAttribute('aria-valuemax', '100');
     bar.setAttribute('aria-valuenow', '0');
-    document.body.prepend(bar);
+    // Keep the accessible widget within the main landmark; its fixed visual
+    // position is unchanged. A body-level progressbar is otherwise reported
+    // as content outside landmarks on every enhanced page.
+    const main = document.querySelector('main, [role="main"]');
+    (main || document.body).prepend(bar);
 
     let ticking = false;
     function updateProgress() {
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const progress = docHeight > 0 ? Math.min((scrollTop / docHeight) * 100, 100) : 0;
+      const progress = docHeight > 0 ? Math.max(0, Math.min((scrollTop / docHeight) * 100, 100)) : 0;
       bar.style.width = progress + '%';
       bar.setAttribute('aria-valuenow', Math.round(progress));
       ticking = false;
@@ -763,7 +767,7 @@
    */
   function initVideoControls() {
     // Channel buttons
-    const channelButtons = document.querySelectorAll('[data-channel]');
+    const channelButtons = document.querySelectorAll('button[data-channel][data-ch]');
     channelButtons.forEach(function (btn) {
       if (btn.dataset.videoWired) return;
       btn.dataset.videoWired = 'true';

@@ -251,7 +251,7 @@ def render_html(date_modified: str | None = None) -> str:
     <meta name="twitter:description" content="Structured JSON datasets for the public research and software index.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-discovery.jpg">
     <meta name="twitter:image:alt" content="Data Catalog — Daniel Ari Friedman">
-    <link rel="stylesheet" href="style.css?v=site-20261002">
+    <link rel="stylesheet" href="style.css?v=site-20261002b">
     <style>.catalog-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}}.catalog-card{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}}.catalog-card h2{{font-size:1rem;margin-bottom:.4rem}}.catalog-card p{{color:var(--text-secondary);font-size:.86rem;line-height:1.6}}.catalog-card span{{display:block;margin-top:.75rem;color:var(--text-muted);font-size:.75rem;overflow-wrap:anywhere}}</style>
     <script type="application/ld+json">
 {render_json(date_modified)}

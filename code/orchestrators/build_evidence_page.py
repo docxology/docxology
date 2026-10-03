@@ -135,7 +135,7 @@ def render_html(claims: list[dict]) -> str:
     <meta name="twitter:description" content="Claim-level evidence ledger with source links, confidence levels, and caveats.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-cite-verify.jpg">
     <meta name="twitter:image:alt" content="Evidence Ledger — Daniel Ari Friedman">
-    <link rel="stylesheet" href="style.css?v=site-20261002">
+    <link rel="stylesheet" href="style.css?v=site-20261002b">
     <meta name="theme-color" content="#0c0c0e">
     <style>
         .claim-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}}

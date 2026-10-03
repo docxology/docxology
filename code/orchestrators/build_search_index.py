@@ -17,10 +17,12 @@ OUT = REPO_ROOT / "search-index.json"
 # Split-index companions (search-index.json remains the complete, valid,
 # backward-compatible surface for every existing consumer).  The core file is
 # the full item set minus the heavy ``content`` fields, so a lazy client can
-# paint from ~0.5 MB and fetch content segments only for the type being
-# searched.  Only the two heavy types (work, video) ship content segments;
-# every other type's content is small enough to stay negligible in the core.
+# fetch content segments only for the type being searched. The bootstrap
+# companion supplies the first browsing page without downloading the complete
+# core; work/video full text remains deferred until a query needs it.
 CORE_OUT = REPO_ROOT / "search-index-core.json"
+BOOTSTRAP_OUT = REPO_ROOT / "search-index-bootstrap.json"
+BOOTSTRAP_LIMIT = 40
 CONTENT_SEGMENT_TYPES = ("work", "video")
 
 
@@ -385,6 +387,18 @@ def render_split(generated_at: str | None = None) -> dict[Path, str]:
             }
         )
     }
+    type_counts: dict[str, int] = {}
+    for item in core_items:
+        item_type = item["type"]
+        type_counts[item_type] = type_counts.get(item_type, 0) + 1
+    outputs[BOOTSTRAP_OUT] = _compact(
+        {
+            "generated_at": content["generated_at"],
+            "count": content["count"],
+            "type_counts": type_counts,
+            "items": core_items[:BOOTSTRAP_LIMIT],
+        }
+    )
     for typ, items in segments.items():
         outputs[content_segment_path(typ)] = _compact(
             {

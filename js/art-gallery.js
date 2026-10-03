@@ -14,18 +14,32 @@
   let currentIdx = 0;
   let DETAIL_DATA = null;
   let detailPromise = null;
+  const PAGE_SIZE = 48;
+  let visibleLimit = PAGE_SIZE;
+  let detailRequest = 0;
+  let descriptionsIndexed = false;
 
   const grid = document.getElementById('grid');
   const lb = document.getElementById('lightbox');
+  const more = document.getElementById('gallery-more');
+  const searchStatus = document.getElementById('gallery-search-status');
+  const retrySearch = document.getElementById('gallery-search-retry');
+  // Titles need not be unique. Keep source tiles by their permanent page URL,
+  // including tiles temporarily removed by a filter.
+  const ssrByPage = new Map(Array.from(grid.querySelectorAll('a.art-card'))
+    .filter(card => card.querySelector('img.art-thumb.ssr'))
+    .map(card => [card.getAttribute('href'), card]));
 
   async function loadGalleryData() {
     try {
       const res = await fetch('data/artworks-index.json', { cache: 'default' });
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const payload = await res.json();
-      DATA = payload.artworks || [];
+      if (!Array.isArray(payload.artworks)) throw new Error('Invalid artwork index');
+      DATA = payload.artworks;
       filtered = [...DATA];
       filterGallery();
+      if (document.getElementById('searchInput').value.trim()) await searchDescriptions();
     } catch (err) {
       console.error('Unable to load artwork data', err);
       const empty = document.getElementById('emptyState');
@@ -57,6 +71,31 @@
   async function enrich(art) {
     const details = await loadDetailData();
     return details.get(String(art.id)) || art;
+  }
+
+  async function searchDescriptions() {
+    if (!DATA.length || descriptionsIndexed) return;
+    searchStatus.hidden = false;
+    searchStatus.textContent = 'Loading descriptions…';
+    retrySearch.hidden = true;
+    grid.setAttribute('aria-busy', 'true');
+    try {
+      const details = await loadDetailData();
+      if (!descriptionsIndexed) {
+        DATA = DATA.map(art => ({ ...art, ...details.get(String(art.id)), page: art.page }));
+        descriptionsIndexed = true;
+      }
+      searchStatus.hidden = true;
+    } catch (err) {
+      console.error('Unable to load searchable artwork details', err);
+      searchStatus.textContent = 'Descriptions could not be loaded. Results include titles and tags.';
+      const querying = Boolean(document.getElementById('searchInput').value.trim());
+      searchStatus.hidden = !querying;
+      retrySearch.hidden = !querying;
+    } finally {
+      grid.setAttribute('aria-busy', 'false');
+      filterGallery();
+    }
   }
 
   // Lazy-load observer
@@ -94,6 +133,7 @@
     : null;
 
   function plain(s) {
+    if (!s) return '';
     const parsed = new DOMParser().parseFromString(String(s || ''), 'text/html');
     return (parsed.body.textContent || '').replace(/\s+/g, ' ').trim();
   }
@@ -113,18 +153,22 @@
     // Hydrate, don't replace: reuse SSR tiles (art-thumb.ssr) whose title and
     // ordering already match the filtered list. Rebuilding them would drop
     // their server-rendered _z src and size attributes.
-    const existing = Array.from(grid.querySelectorAll('a.art-card, button.art-card'));
-    const ssrByTitle = new Map(existing
-      .filter(card => card.querySelector('img.art-thumb.ssr'))
-      .map(card => [card.querySelector('.art-title').textContent, card]));
+    imgObs?.disconnect();
     grid.innerHTML = '';
     document.getElementById('emptyState').style.display = filtered.length ? 'none' : 'block';
-    document.getElementById('resultCount').textContent = filtered.length + ' artworks';
-    filtered.forEach((art, i) => {
-      const reused = ssrByTitle.get(art.title || 'Untitled artwork');
+    const visible = filtered.slice(0, visibleLimit);
+    document.getElementById('resultCount').textContent = visible.length < filtered.length
+      ? `Showing ${visible.length} of ${filtered.length} artworks`
+      : filtered.length + ' artworks';
+    more.hidden = visible.length >= filtered.length;
+    more.textContent = `Show ${Math.min(PAGE_SIZE, filtered.length - visible.length)} more artworks`;
+    const fragment = document.createDocumentFragment();
+    visible.forEach((art, i) => {
+      const reused = ssrByPage.get(art.page);
       if (reused) {
-        grid.appendChild(reused);
-        reused.addEventListener('click', (e) => tileClick(e, i, reused));
+        reused.dataset.index = String(i);
+        reused.dataset.artworkId = String(art.id);
+        fragment.appendChild(reused);
         return;
       }
       const card = document.createElement('a');
@@ -132,6 +176,8 @@
       card.href = art.page || ('artworks/' + art.id + '.html');
       card.setAttribute('aria-haspopup', 'dialog');
       card.setAttribute('aria-label', `Open artwork: ${art.title || 'Untitled artwork'}`);
+      card.dataset.index = String(i);
+      card.dataset.artworkId = String(art.id);
       card.innerHTML =
         `<img data-src="${esc(largeThumb(art.thumb))}" alt="${esc(artAlt(art))}" class="art-thumb" loading="lazy" decoding="async">` +
         `<div class="art-info">` +
@@ -139,12 +185,12 @@
         `<div class="art-meta">${art.date ? art.date.slice(0, 10) : ''}</div>` +
         (art.views ? `<div class="art-views">${parseInt(art.views).toLocaleString()} views</div>` : '') +
         `</div>`;
-      card.addEventListener('click', (e) => tileClick(e, i, card));
-      grid.appendChild(card);
+      fragment.appendChild(card);
       const image = card.querySelector('.art-thumb');
       if (imgObs) imgObs.observe(image);
       else loadImage(image);
     });
+    grid.appendChild(fragment);
   }
 
   // Progressive enhancement: plain middle/ctrl/cmd/shift clicks navigate to
@@ -158,18 +204,19 @@
 
   // ── FILTER + SORT ──
   function filterGallery() {
-    const q = document.getElementById('searchInput').value.toLowerCase();
+    visibleLimit = PAGE_SIZE;
+    const q = document.getElementById('searchInput').value.trim().toLowerCase();
     const sort = document.getElementById('sortSelect').value;
     filtered = DATA.filter(a => {
       if (!q) return true;
-      return a.title.toLowerCase().includes(q) ||
-        (a.desc || '').toLowerCase().includes(q) ||
-        (a.tags || []).some(t => t.toLowerCase().includes(q));
+      return String(a.title || '').toLowerCase().includes(q) ||
+        String(a.desc || '').toLowerCase().includes(q) ||
+        (a.tags || []).some(t => String(t).toLowerCase().includes(q));
     });
     filtered.sort((a, b) => {
-      if (sort === 'newest') return (b.date || '') > (a.date || '') ? 1 : -1;
-      if (sort === 'oldest') return (a.date || '') > (b.date || '') ? 1 : -1;
-      if (sort === 'title') return a.title.localeCompare(b.title);
+      if (sort === 'newest') return String(b.date || '').localeCompare(String(a.date || ''));
+      if (sort === 'oldest') return String(a.date || '').localeCompare(String(b.date || ''));
+      if (sort === 'title') return String(a.title || '').localeCompare(String(b.title || ''));
       if (sort === 'views') return parseInt(b.views || 0) - parseInt(a.views || 0);
       return 0;
     });
@@ -199,11 +246,24 @@
     lb.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
     document.getElementById('lb-close')?.focus();
+    await showArtwork(filtered[i]);
+  }
+
+  async function showArtwork(art) {
+    const request = ++detailRequest;
+    populate(art);
+    lb.setAttribute('aria-busy', 'true');
+    document.getElementById('lb-desc').textContent = 'Loading artwork details…';
     try {
-      populate(await enrich(filtered[i]));
+      const details = await enrich(art);
+      if (request !== detailRequest || !lb.classList.contains('open')) return;
+      populate(details);
     } catch (err) {
+      if (request !== detailRequest || !lb.classList.contains('open')) return;
       console.error('Unable to load artwork details', err);
       document.getElementById('lb-desc').textContent = 'Artwork details could not be loaded.';
+    } finally {
+      if (request === detailRequest) lb.setAttribute('aria-busy', 'false');
     }
   }
 
@@ -216,9 +276,10 @@
     const mainSrc = sizes['Large 1600'] || sizes['Large'] || sizes['Medium 640'] || sizes['Medium'] || art.thumb;
     const img = document.getElementById('lb-img');
     img.style.opacity = '0';
-    img.src = mainSrc;
     img.alt = artAlt(art);
     img.onload = () => { img.style.opacity = '1'; };
+    img.onerror = () => { img.style.opacity = '1'; };
+    img.src = mainSrc;
 
     const origUrl = sizes['Original'] || sizes['Large 2048'] || sizes['X-Large 4K'] || mainSrc;
     document.getElementById('lb-download').href = origUrl;
@@ -256,40 +317,49 @@
   }
 
   function closeLightbox() {
+    detailRequest++;
     lb.classList.remove('open');
     lb.setAttribute('aria-hidden', 'true');
+    lb.setAttribute('aria-busy', 'false');
     document.body.style.overflow = '';
     if (previouslyFocused && typeof previouslyFocused.focus === 'function') previouslyFocused.focus();
   }
 
   async function navLightbox(dir) {
+    if (!filtered.length) return;
     currentIdx = (currentIdx + dir + filtered.length) % filtered.length;
-    try {
-      populate(await enrich(filtered[currentIdx]));
-    } catch (err) {
-      console.error('Unable to load artwork details', err);
-    }
+    await showArtwork(filtered[currentIdx]);
   }
 
   // ── EVENT WIRING (CSP-safe, no inline handlers) ──
+  grid.addEventListener('click', event => {
+    const card = event.target.closest('a.art-card');
+    if (!card || !grid.contains(card) || !card.hasAttribute('data-index')) return;
+    const index = Number(card.dataset.index);
+    if (Number.isInteger(index) && filtered[index]) tileClick(event, index, card);
+  });
+  more.addEventListener('click', () => {
+    const firstNew = visibleLimit;
+    visibleLimit += PAGE_SIZE;
+    renderGrid();
+    grid.querySelector(`[data-index="${firstNew}"]`)?.focus();
+  });
   // The sort <select> (data-filter-gallery), size buttons (data-set-size), and
   // lightbox nav/close buttons (data-lightbox) are wired by js/interactive.js's
   // generic delegation, which calls the window.* globals exposed below. Do NOT
   // also addEventListener them here — double-binding advances the lightbox two
   // items per click. Only wire what interactive.js does not handle:
-  document.getElementById('searchInput').addEventListener('input', async () => {
+  document.getElementById('searchInput').addEventListener('input', () => {
     const query = document.getElementById('searchInput').value.trim();
-    if (query && !DETAIL_DATA) {
-      document.getElementById('resultCount').textContent = 'Loading descriptions…';
-      try {
-        const details = await loadDetailData();
-        DATA = DATA.map(art => details.get(String(art.id)) || art);
-      } catch (err) {
-        console.error('Unable to load searchable artwork details', err);
-      }
-    }
     filterGallery();
+    if (query && !descriptionsIndexed) {
+      searchDescriptions();
+    } else {
+      searchStatus.hidden = true;
+      retrySearch.hidden = true;
+    }
   });
+  retrySearch.addEventListener('click', searchDescriptions);
 
   document.addEventListener('keydown', e => {
     if (!lb.classList.contains('open')) return;

@@ -17,13 +17,23 @@ deferring it would restore the first-paint layout shift.
 
 ## Search loading
 
+The dedicated search page initially browses
+[`search-index-bootstrap.json`](../../search-index-bootstrap.json): up to 40
+entries plus complete catalog type counts. This preview supplies the first
+unfiltered result page without fetching the full core or text segments. Typing
+a query or selecting a scoped type loads the full core before searching that
+scope; a query in the URL starts that complete search immediately. A missing or
+malformed preview falls back to the core. Late preview responses cannot replace
+a newer query or filter selection.
+
 [`search-utils.js`](../../js/search-utils.js) shares one cached core-index
 request across consumers. Header autocomplete uses
 [`search-index-core.json`](../../search-index-core.json). The dedicated search
-page loads work/video detail segments on a nonempty query; a work-only filter
-loads only the work segment. Deep text matches retain the same AND, word-boundary,
-and symbol-search rules. Failed or malformed segments expose an incomplete-search
-status and a retry, rather than silently claiming a complete search.
+page adds work/video detail segments only for a nonempty query; a work-only
+filter loads only the work segment, and a video-only filter only the video
+segment. Deep text matches retain the same AND, word-boundary, and symbol-search
+rules. Failed core requests and failed or malformed segments expose retryable
+errors; available matches remain distinct from a complete full-text search.
 
 [`search-index.json`](../../search-index.json) remains the complete export for
 agents and offline tooling. Generate all projections together with
@@ -33,6 +43,59 @@ The search page reserves the type-filter row before the core arrives. Its
 horizontal strip keeps the result area in place at narrow widths, and keyboard
 focus scrolls later options into view. Keep the search panel's grid column
 bounded with `minmax(0, 1fr)` so long labels cannot widen the document.
+
+## Gallery and publication loading
+
+The artwork gallery filters and sorts the complete compact
+[`data/artworks-index.json`](../../data/artworks-index.json), then renders up to
+48 matching tiles. “Show more” adds the next batch and focuses its first new
+tile. Filtering resets the rendered batch, without limiting the searchable
+catalog to the previously visible tiles. Server-rendered cards retain their
+images and native generated artwork-page links; identity follows the canonical
+page URL so duplicate titles remain separate works. Modified or middle clicks
+keep native navigation, while an ordinary click opens the detail lightbox.
+
+[`data/artworks.json`](../../data/artworks.json) loads when a description query
+or detail view needs it. Description-load failure preserves title/tag matches
+and exposes a retry. Failed detail requests can be retried by reopening or
+navigating the lightbox; older responses cannot overwrite a newer selection or
+reopen a closed view. The complete export remains available independently of
+the initial batch and compact index.
+
+The publications page renders its catalog from
+[`data/works.json`](../../data/works.json) before fetching
+[`data/work-enrichment.json`](../../data/work-enrichment.json). Abstract and
+keyword enrichment begins only after a nonempty publication query. While that
+request is pending or failed, catalog matches remain usable with an explicit
+status and retry. Completion applies the current query, scope, and sort instead
+of restoring the state that initiated the request. Catalog-load failure keeps
+the server-rendered publication links available.
+
+## Accessible video browsing
+
+The video timeline keeps four rows per channel and groups records when nearby
+upload dates would otherwise overlap their click targets. Single-video tiles
+remain native links. Numbered groups show their actual count and date range,
+then open a native dialog containing every original title, upload date, and
+generated video-page link. No records are discarded to reduce the timeline.
+The dialog owns Escape and focus restoration, and does not open the site's
+separate shortcut or speech overlays from its keyboard events.
+
+Mobile widths use the searchable list rather than an inline-style override of
+the hidden timeline. The year menu scrolls to a visible matching-channel item;
+an absent year leaves the viewport in place. Reduced-motion preferences disable
+that scroll animation. Zoom and channel controls expose their pressed state,
+date calculations use UTC across daylight-saving boundaries, and the video
+hero and shared reading-progress widget live within appropriate landmarks.
+Without JavaScript, native links still reach the static video index.
+
+Homepage decorative background suppression is scoped to
+[`css/home.css`](../../css/home.css); it avoids generic hero/card imagery
+competing with the actual Curio images. The publications page also disables
+decorative artwork tokens within `.publications-page` in its authoritative
+[`template`](../../code/templates/publications.html.tmpl), preserving the shared
+gradients, borders, and catalog content. Other pages retain the shared artwork
+tokens.
 
 ## Offline and cache contracts
 
@@ -81,7 +144,12 @@ uv run --extra browser-qa python3 -m pytest \
   code/tests/test_service_worker.py \
   code/tests/test_rendered_frontend.py \
   code/tests/test_rendered_progressive_enhancement.py \
-  code/tests/test_home_landing.py -q
+  code/tests/test_home_landing.py \
+  code/tests/test_homepage_performance.py \
+  code/tests/test_search_bootstrap.py \
+  code/tests/test_art_gallery_progressive.py \
+  code/tests/test_publications_startup.py \
+  code/tests/test_accessibility_refinements.py -q
 uv run --extra browser-qa python3 code/orchestrators/browser_qa.py
 uv run --extra browser-qa python3 code/orchestrators/browser_qa.py --check
 ```
@@ -91,7 +159,12 @@ returning visits, successful updates, failed/stalled updates, 404/500 fallback,
 delayed headers, dripping bodies, oversized streams, and cache eviction.
 Interaction checks cover mobile navigation without JavaScript, native More
 disclosures, shortcut focus containment/restoration, progressive full-text
-search, and clipboard success/failure behavior.
+search, and clipboard success/failure behavior. Startup checks observe actual
+requests and delayed responses for preview/core/segment transitions, artwork
+batches and details, and publication enrichment. Video checks cover every
+catalog ID across zoom levels, dense same-day groups, actual target geometry,
+contrast, dialog focus, mobile year jumps, UTC date boundaries, forced colors,
+reduced motion, and static index access.
 
 The hosted browser job sets `DOCXOLOGY_REQUIRE_BROWSER_QA=1`; missing Chromium,
 Playwright, loopback capability, or Lighthouse fails that mandatory job. Local
@@ -111,3 +184,10 @@ Local tests do not establish live deployment acceptance. Follow
 [`live-verification.md`](live-verification.md) and
 [`release-integrity.md`](release-integrity.md) to bind published routes,
 artifacts, and hosted checks to the deployed commit.
+
+The 2026-10-02 accessibility pass obtained 13 passing focused browser checks
+with no skips and one local Lighthouse 13.4.1 video-page observation of
+87 performance / 100 accessibility / 100 SEO. These describe the tested local
+source and machine; they do not establish hosted performance stability, a
+published candidate, or human visual sign-off. Preserve earlier dated receipts
+and record subsequent hosted/live acceptance separately.

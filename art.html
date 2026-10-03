@@ -34,7 +34,7 @@
     <meta name="twitter:image" content="https://danielarifriedman.com/og-art.jpg">
     <meta name="twitter:image:alt" content="Art Gallery — Daniel Ari Friedman | 943 Pen Drawings &amp; Curio Cards NFTs">
     <meta property="og:site_name" content="Daniel Ari Friedman">
-    <link rel="stylesheet" href="/style.css?v=site-20261002">
+    <link rel="stylesheet" href="/style.css?v=site-20261002b">
 
     <script type="application/ld+json">
     {
@@ -43,7 +43,7 @@
     "@id": "https://danielarifriedman.com/art.html#collection",
     "name": "Art Gallery — Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/art.html",
-    "description": "942 pen-and-ink drawings and Curio Cards (2017, early Ethereum art NFTs) by Daniel Ari Friedman.",
+    "description": "Pen-and-ink drawings and Curio Cards (2017, early Ethereum art NFTs) by Daniel Ari Friedman.",
     "creator": { "@id": "https://danielarifriedman.com/#person" },
     "isPartOf": { "@id": "https://danielarifriedman.com/#website" },
     "numberOfItems": 943
@@ -188,6 +188,8 @@
         .lb-next{right:340px}
 
         .empty{text-align:center;padding:5rem 2rem;color:var(--fg3)}
+        .gallery-more{display:block;margin:2rem auto;padding:.75rem 1.25rem;border:1px solid var(--bdr);background:var(--bg2);color:var(--fg);font:inherit;cursor:pointer}
+        .gallery-more[hidden]{display:none}
         .empty-icon{font-size:3rem;margin-bottom:.75rem}
 
         @media(max-width:680px){
@@ -294,10 +296,12 @@
         <button class="size-btn active" id="btn-md" data-set-size="md" title="Medium" aria-label="Medium artwork tiles" aria-pressed="true">▪▪</button>
         <button class="size-btn" id="btn-lg" data-set-size="lg" title="Large" aria-label="Large artwork tiles" aria-pressed="false">▪</button>
     </div>
-    <span class="result-count" id="resultCount"></span>
+    <span class="result-count" id="resultCount" role="status"></span>
 </div>
 
 <main class="gallery" id="main">
+    <p id="gallery-search-status" role="status" hidden></p>
+    <button type="button" id="gallery-search-retry" class="gallery-more" aria-controls="grid" hidden>Retry description search</button>
     <div class="grid grid-md" id="grid">
 
 <!-- docxology:ssr-gallery-cards (first 30; no-JS/crawler content; hydrated by js/art-gallery.js; maintained by code/orchestrators/sync_art_gallery.py) -->
@@ -332,6 +336,7 @@
       <a class="art-card" href="artworks/51642982190-strange-loop.html" aria-label="Open artwork: Strange Loop"><img src="https://live.staticflickr.com/65535/51642982190_13420e2cc6_z.jpg" alt="Strange Loop — pen and ink drawing by Daniel Ari Friedman. &quot;I returned, and saw under the sun, that the race is not to the swift, nor the battle to the strong, neither yet bread t" class="art-thumb ssr" loading="lazy" decoding="async"><div class="art-info"><div class="art-title">Strange Loop</div><div class="art-meta">2021-10-30</div><div class="art-views">1,458 views</div></div></a>
       <a class="art-card" href="artworks/51642348378-family.html" aria-label="Open artwork: Family"><img src="https://live.staticflickr.com/65535/51642348378_6204d76201_z.jpg" alt="Family — pen and ink drawing by Daniel Ari Friedman. ​​&quot;I learn more from the anatomy of an ant or a blade of grass...than from all the books which have been written since t" class="art-thumb ssr" loading="lazy" decoding="async"><div class="art-info"><div class="art-title">Family</div><div class="art-meta">2021-09-24</div><div class="art-views">1,533 views</div></div></a>
     </div>
+    <button type="button" id="gallery-more" class="gallery-more" aria-controls="grid" hidden>Show more artworks</button>
     <div class="empty" id="emptyState" style="display:none">
         <div class="empty-icon">ART</div>
         <div>No artworks match your search.</div>
@@ -386,10 +391,10 @@
     </div>
 </div>
 
-<script src="/js/search-utils.js?v=site-20261002"></script>
-<script src="/js/art-gallery.js?v=20260813" defer></script>
+<script src="/js/search-utils.js?v=site-20261002b"></script>
+<script src="/js/art-gallery.js?v=site-20261002b" defer></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
-<script src="/js/interactive.js?v=site-20261002" defer></script>
+<script src="/js/interactive.js?v=site-20261002b" defer></script>
     <script src="/js/menu-esc.js?v=20260813" defer></script>
 </body>
 </html>

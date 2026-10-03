@@ -78,11 +78,13 @@ def isolated_outputs(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> dict[st
     paths = {
         "main": tmp_path / "search-index.json",
         "core": tmp_path / "search-index-core.json",
+        "bootstrap": tmp_path / "search-index-bootstrap.json",
         "work": tmp_path / "search-index-content-work.json",
         "video": tmp_path / "search-index-content-video.json",
     }
     monkeypatch.setattr(build_search_index, "OUT", paths["main"])
     monkeypatch.setattr(build_search_index, "CORE_OUT", paths["core"])
+    monkeypatch.setattr(build_search_index, "BOOTSTRAP_OUT", paths["bootstrap"])
     monkeypatch.setattr(
         build_search_index,
         "content_segment_path",
@@ -172,3 +174,24 @@ def test_progressive_split_preserves_every_full_text_field(monkeypatch):
     }
     restored = [dict(item, content=content_by_id[item["id"]]) if item["id"] in content_by_id else item for item in core]
     assert restored == source["items"]
+
+
+def test_bootstrap_preserves_first_browse_page_and_complete_type_counts(monkeypatch):
+    items = [
+        {"id": f"work:{i}", "type": "work", "title": f"Paper {i}", "content": f"text {i}", "extra": i}
+        for i in range(45)
+    ] + [{"id": "page:1", "type": "page", "title": "Page", "content": "page-only phrase"}]
+    source = {"generated_at": "2026-10-02T00:00:00Z", "source_files": [], "count": len(items), "items": items}
+    original = copy.deepcopy(source)
+    monkeypatch.setattr(build_search_index, "render", lambda stamp=None: json.dumps(source))
+
+    outputs = build_search_index.render_split(source["generated_at"])
+    core = json.loads(outputs[build_search_index.CORE_OUT])
+    bootstrap = json.loads(outputs[build_search_index.BOOTSTRAP_OUT])
+
+    assert bootstrap["items"] == core["items"][:40]
+    assert bootstrap["count"] == 46
+    assert bootstrap["type_counts"] == {"work": 45, "page": 1}
+    assert bootstrap["generated_at"] == core["generated_at"]
+    assert sum(bootstrap["type_counts"].values()) == core["count"]
+    assert source == original

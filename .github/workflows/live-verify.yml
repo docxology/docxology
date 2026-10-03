@@ -15,11 +15,19 @@ concurrency:
 
 jobs:
   verify-live:
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    if: (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main') || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
     runs-on: ubuntu-latest
+    env:
+      CANDIDATE_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+      DEPLOYMENT_RUN_ID: ${{ github.event.workflow_run.id }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
+        with:
+          # A workflow_run can queue after main advances. Verify the candidate
+          # that actually triggered this job, rather than floating main HEAD.
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v7
@@ -59,39 +67,30 @@ jobs:
           PY
 
       - name: Verify live site
+        # Retain route/run diagnostics even when the preceding freshness alarm
+        # fails; an older checked-in receipt cannot stand in for this attempt.
+        if: always()
         env:
           GITHUB_TOKEN: ${{ github.token }}
           GH_TOKEN: ${{ github.token }}
-        run: python3 code/orchestrators/verify_live_site.py
-
-      - name: Enforce live verification
         run: |
-          python3 - <<'PY'
-          import glob
-          import json
-
-          path = sorted(glob.glob("reports/live_site_verification_*.json"))[-1]
-          report = json.load(open(path, encoding="utf-8"))
-          hard_failures = [
-              item for item in report.get("results", [])
-              if not item.get("ok") and not item.get("deployment_pending")
-          ]
-          pages = report.get("github_pages", {})
-          if not pages.get("ok") and not pages.get("deployment_pending"):
-              hard_failures.append({"path": "GitHub Pages API", "status": pages.get("status")})
-          if hard_failures:
-              raise SystemExit(f"Live verification hard failures: {hard_failures}")
-          if not report.get("overall_ok"):
-              print("Live verification deferred only for explicitly classified deployment propagation.")
-          PY
+          args=(--expected-commit "$CANDIDATE_SHA" --output /tmp/live-site-verification.json)
+          if [ -n "$DEPLOYMENT_RUN_ID" ]; then
+            args+=(--deployment-run-id "$DEPLOYMENT_RUN_ID")
+          fi
+          python3 code/orchestrators/verify_live_site.py "${args[@]}"
 
       - name: Show summary
+        if: always()
         run: |
           python3 - <<'PY'
-          import glob
           import json
-          path = sorted(glob.glob("reports/live_site_verification_*.json"))[-1]
-          report = json.load(open(path))
+          from pathlib import Path
+          path = Path("/tmp/live-site-verification.json")
+          if not path.is_file():
+              print("Fresh live verification receipt was not produced; see the failed preflight step.")
+              raise SystemExit(0)
+          report = json.loads(path.read_text(encoding="utf-8"))
           print(f"Report: {path}")
           print(f"GitHub Pages status: {report['github_pages'].get('status')}")
           print(f"Passing checks: {report['passing']}/{report['checked_urls']}")
@@ -99,7 +98,10 @@ jobs:
           PY
 
       - name: Upload live verification report
+        if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: live-site-verification
-          path: reports/live_site_verification_*.json
+          name: live-site-verification-${{ github.event.workflow_run.head_sha || github.sha }}
+          path: /tmp/live-site-verification.json
+          if-no-files-found: error
+          retention-days: 90

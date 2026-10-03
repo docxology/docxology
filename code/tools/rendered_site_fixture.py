@@ -84,7 +84,7 @@ def copy_site(tmp_path: Path) -> Path:
             shutil.copy2(item, site / item.name)
         elif item.is_file() and (item.name in ROOT_RUNTIME_FILES or item.match("search-index*.json")):
             shutil.copy2(item, site / item.name)
-        elif item.is_dir() and item.name in {"css", "js", "data", "works", "videos", "assets"}:
+        elif item.is_dir() and item.name in {"css", "js", "data", "works", "videos", "artworks", "assets"}:
             shutil.copytree(item, site / item.name)
     for relative in PWA_ICON_FILES:
         target = site / relative

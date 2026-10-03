@@ -31,11 +31,13 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 ORIGIN = "https://danielarifriedman.com/"
 MANIFEST_PATH = "data/pages-artifact-manifest.json"
 CRITICAL_PATHS = {
-    "index.html", "search.html", "publications.html", "software.html",
+    "index.html", "search.html", "publications.html", "software.html", "art.html", "videos.html",
     "style.css", "css/home.css", "sw.js", "js/search-utils.js", "js/search-page.js",
     "js/interactive.js", "js/index-page.js", "js/nav-toggle.js", "js/cite-export.js", "search-index-core.json",
-    "search-index-content-work.json", "search-index-content-video.json",
+    "search-index-content-work.json", "search-index-content-video.json", "search-index-bootstrap.json",
     "data/work-identifiers.json",
+    "js/publications.js", "js/art-gallery.js", "js/videos-page.js",
+    "data/artworks-index.json", "data/videos-index.json",
     "assets/curio-cards/24-complexity.jpg",
     "assets/curio-cards/25-passion.jpg",
     "assets/curio-cards/26-education.jpg",

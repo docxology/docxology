@@ -89,7 +89,8 @@ def test_actual_generated_search_exports_render_a_deferred_text_match(tmp_path):
             page.on("request", lambda request: requests.append(urlsplit(request.url).path))
             page.goto(base + "/search.html", wait_until="load")
             page.wait_for_selector(".result-card")
-            assert requests.count("/search-index-core.json") == 1
+            assert requests.count("/search-index-bootstrap.json") == 1
+            assert "/search-index-core.json" not in requests
             assert "/search-index-content-work.json" not in requests
             assert "/search-index-content-video.json" not in requests
             work_count = sum(item["type"] == "work" for item in core["items"])
@@ -100,6 +101,7 @@ def test_actual_generated_search_exports_render_a_deferred_text_match(tmp_path):
               Array.from(document.querySelectorAll('.result-card h2 a')).some(link => link.getAttribute('href') === url)
             """, arg={"term": term, "url": expected_url})
             assert requests.count("/search-index-core.json") == 1
+            assert requests.count("/search-index-bootstrap.json") == 1
             assert requests.count("/search-index-content-work.json") == 1
             assert "/search-index-content-video.json" not in requests
             assert "/search-index.json" not in requests
@@ -123,7 +125,7 @@ def test_actual_generated_search_exports_render_a_deferred_text_match(tmp_path):
 
 @pytest.mark.parametrize("width", [320, 412])
 def test_search_reserves_loading_space_and_keeps_sparse_results_usable(tmp_path, width):
-    """The real core may arrive late without moving a visible mobile footer."""
+    """Late preview layout stays stable; delayed query core still settles honestly."""
     skip_without_playwright()
     from playwright.sync_api import sync_playwright
 
@@ -152,20 +154,25 @@ def test_search_reserves_loading_space_and_keeps_sparse_results_usable(tmp_path,
             browser = p.chromium.launch(headless=True)
             context = browser.new_context(viewport=viewport, service_workers="block")
             page = context.new_page()
+            requests = []
+            page.on("request", lambda request: requests.append(urlsplit(request.url).path))
+            held_bootstrap = []
             held_core = []
+            page.route("**/search-index-bootstrap.json", lambda route: held_bootstrap.append(route))
             page.route("**/search-index-core.json", lambda route: held_core.append(route))
-            with page.expect_request("**/search-index-core.json"):
+            with page.expect_request("**/search-index-bootstrap.json"):
                 page.goto(base + "/search.html", wait_until="domcontentloaded")
             page.wait_for_function("() => document.getElementById('results').getAttribute('aria-busy') === 'true'")
             # Let the browser complete layout while the actual export remains
-            # pending; no invented core or injected page styles are involved.
+            # pending; no invented preview or injected page styles are involved.
             page.evaluate("() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))")
             assert page.locator(".result-card").count() == 0
             assert page.locator("footer").bounding_box()["y"] >= viewport["height"]
             pending_filter_box = page.locator("#filters").bounding_box()
             pending_results_y = page.locator("#results").bounding_box()["y"]
-            assert len(held_core) == 1
-            held_core[0].continue_()
+            assert len(held_bootstrap) == 1
+            assert "/search-index-core.json" not in requests
+            held_bootstrap[0].continue_()
             page.wait_for_function("() => document.querySelectorAll('.result-card').length === 40 && document.getElementById('results').getAttribute('aria-busy') === 'false'")
             loaded_filter_box = page.locator("#filters").bounding_box()
             assert abs(loaded_filter_box["height"] - pending_filter_box["height"]) <= 1
@@ -178,10 +185,16 @@ def test_search_reserves_loading_space_and_keeps_sparse_results_usable(tmp_path,
             page.wait_for_function("() => document.getElementById('filters').scrollLeft > 0")
             page.wait_for_function("() => { const group = document.getElementById('filters').getBoundingClientRect(); const last = document.querySelector('#filters button:last-child').getBoundingClientRect(); return last.right <= group.right + 1; }")
             assert last_filter.bounding_box()["x"] + last_filter.bounding_box()["width"] <= loaded_filter_box["x"] + loaded_filter_box["width"] + 1
-            page.get_by_role("button", name=f"work ({len(works)})", exact=True).click()
+            with page.expect_request("**/search-index-core.json"):
+                page.get_by_role("button", name=f"work ({len(works)})", exact=True).click()
             absent = "docxology_no_matching_results_" + "x" * 120
             page.locator("#q").fill(absent)
+            page.wait_for_function("query => new URLSearchParams(location.search).get('q') === query && document.getElementById('results').getAttribute('aria-busy') === 'true'", arg=absent)
+            assert len(held_core) == 1
+            held_core[0].continue_()
             page.wait_for_function("query => new URLSearchParams(location.search).get('q') === query && document.getElementById('results').getAttribute('aria-busy') === 'false' && document.querySelectorAll('.result-card').length === 0", arg=absent)
+            assert requests.count("/search-index-bootstrap.json") == 1
+            assert requests.count("/search-index-core.json") == 1
             status = page.locator("#result-status")
             assert status.is_visible()
             assert status.get_attribute("aria-live") == "polite"
@@ -190,6 +203,7 @@ def test_search_reserves_loading_space_and_keeps_sparse_results_usable(tmp_path,
             assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
             page.locator("#q").fill(query)
             page.wait_for_function("({query, url}) => new URLSearchParams(location.search).get('q') === query && document.getElementById('results').getAttribute('aria-busy') === 'false' && document.querySelectorAll('.result-card').length === 1 && document.querySelector('.result-card h2 a').getAttribute('href') === url", arg={"query": query, "url": expected_url})
+            assert requests.count("/search-index-core.json") == 1
             assert "1 result for" in status.inner_text()
             card = page.locator(".result-card")
             area = page.locator("#results").bounding_box()

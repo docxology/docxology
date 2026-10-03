@@ -77,7 +77,7 @@ OUTPUTS: dict[str, tuple[str, ...]] = {
     "accessibility-first": ("reports/accessibility_static_*.json",),
     "catalog": ("catalog.html", "data/catalog.json"),
     "github-readme": (".github/README.md",),
-    "search-index": ("search-index.json", "search-index-core.json", "search-index-content-*.json"),
+    "search-index": ("search-index.json", "search-index-core.json", "search-index-bootstrap.json", "search-index-content-*.json"),
     "feed": ("feed.xml",),
     "domain-feeds": ("feeds/domain-*.xml",),
     "sitemap": ("sitemap.xml",),
@@ -185,6 +185,7 @@ def test_catalog_and_search_index_outputs_are_payload_not_control() -> None:
         "catalog.html",
         "search-index.json",
         "search-index-core.json",
+        "search-index-bootstrap.json",
         "search-index-content-work.json",
         "search-index-content-video.json",
     )

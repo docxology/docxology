@@ -479,7 +479,7 @@ ARTIFACTS = [
     },
     {
         "name": "Search index",
-        "outputs": ["search-index.json", "search-index-core.json", "search-index-content-work.json", "search-index-content-video.json"],
+        "outputs": ["search-index.json", "search-index-core.json", "search-index-content-work.json", "search-index-content-video.json", "search-index-bootstrap.json"],
         "sources": [
             "data/*.json", "papers/*/full_text.md", "papers/*/images/*",
             "reports/reconciliation_*.md", "reports/public_source_inventory_*.json",

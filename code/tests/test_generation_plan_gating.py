@@ -189,6 +189,7 @@ def test_catalog_and_search_index_outputs_classify_as_payload() -> None:
         "catalog.html",
         "search-index.json",
         "search-index-core.json",
+        "search-index-bootstrap.json",
         "search-index-content-work.json",
         "search-index-content-video.json",
     )

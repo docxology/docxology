@@ -234,7 +234,7 @@ def render_html(ledger: dict) -> str:
     <meta name="twitter:description" content="What a third party can check without asking the author: per-work reproducibility signals.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-cite-verify.jpg">
     <meta name="twitter:image:alt" content="Reproducibility Ledger — Daniel Ari Friedman">
-    <link rel="stylesheet" href="style.css?v=site-20261002">
+    <link rel="stylesheet" href="style.css?v=site-20261002b">
     <meta name="theme-color" content="#0c0c0e">
     <style>
         .repro-table{{width:100%;border-collapse:collapse;font-size:.86rem}}

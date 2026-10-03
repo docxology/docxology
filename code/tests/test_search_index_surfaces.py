@@ -1,7 +1,7 @@
-"""The four search-index surfaces must agree on one `generated_at`.
+"""All search-index surfaces must agree on one `generated_at`.
 
-`search-index.json` and its three split companions are written together, but
-`--check` re-renders all four pinned to the timestamp it reads out of
+`search-index.json`, its three split companions, and bounded preview are written together, but
+`--check` re-renders all surfaces pinned to the timestamp it reads out of
 `search-index.json`. So if a write ever stamps the companions with a different
 clock reading, the companions are stale from that moment on and no amount of
 regeneration fixes them — the writer keeps reproducing the split.
@@ -30,6 +30,7 @@ SURFACES = (
     REPO_ROOT / "search-index-core.json",
     REPO_ROOT / "search-index-content-work.json",
     REPO_ROOT / "search-index-content-video.json",
+    REPO_ROOT / "search-index-bootstrap.json",
 )
 
 

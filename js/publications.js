@@ -1,5 +1,11 @@
 /** Publications table: loads catalog from data/works.json (canonical export of BIBLIOGRAPHY.md). */
+// This input owns the publication results and filters. Site-wide autocomplete
+// would fetch an unrelated index and cover this local search surface.
+document.getElementById('pub-search')?.setAttribute('data-local-search', '');
 let PUBS = [];
+let catalogLoaded = false;
+let enrichmentState = 'idle';
+let enrichmentPromise = null;
 const SCRIPT_QUERY = (() => {
     const script = document.currentScript || document.querySelector('script[src*="publications.js"]');
     if (!script) return '';
@@ -174,6 +180,9 @@ function updateSortUI() {
 }
 
 function renderTable() {
+    // Preserve the server-rendered native links while the catalog is loading
+    // or unavailable; early filter interactions must not erase that fallback.
+    if (!catalogLoaded) return;
     const table = document.getElementById('pub-table');
     if (table) table.setAttribute('aria-busy', 'true');
     const q = (document.getElementById('pub-search').value || '').toLowerCase().trim();
@@ -205,8 +214,9 @@ function renderTable() {
     }
     if (data.length === 0) {
         tbody.innerHTML = '';
-        empty.hidden = false;
-        empty.classList.remove('d-none');
+        const incomplete = q && enrichmentState !== 'ready';
+        empty.hidden = Boolean(incomplete);
+        empty.classList.toggle('d-none', Boolean(incomplete));
     } else {
         empty.hidden = true;
         empty.classList.add('d-none');
@@ -249,8 +259,57 @@ function renderTable() {
         const active = button.classList.contains('active');
         button.setAttribute('aria-pressed', String(active));
     });
-    if (table) table.setAttribute('aria-busy', 'false');
+    if (table) table.setAttribute('aria-busy', String(Boolean(q && enrichmentState === 'loading')));
+    renderSearchStatus(q);
     updateSortUI();
+}
+
+function renderSearchStatus(query) {
+    let status = document.getElementById('pub-search-status');
+    if (!status) {
+        const count = document.getElementById('result-count');
+        if (!count) return;
+        status = document.createElement('div');
+        status.id = 'pub-search-status';
+        status.className = 'text-muted';
+        status.setAttribute('role', 'status');
+        count.insertAdjacentElement('afterend', status);
+    }
+    status.hidden = !query || enrichmentState === 'ready';
+    if (status.hidden) { status.textContent = ''; return; }
+    if (enrichmentState === 'error') {
+        status.textContent = 'Abstract and keyword search is temporarily unavailable. Showing available catalog matches. ';
+        const retry = document.createElement('button');
+        retry.type = 'button';
+        retry.className = 'filter-btn';
+        retry.textContent = 'Retry abstract search';
+        retry.addEventListener('click', () => {
+            ensureEnrichment(true);
+            renderTable();
+        });
+        status.appendChild(retry);
+    } else {
+        status.textContent = 'Searching publication abstracts and keywords…';
+    }
+}
+
+function ensureEnrichment(retry = false) {
+    const query = (document.getElementById('pub-search').value || '').trim();
+    if (!catalogLoaded || !query || enrichmentState === 'ready' || enrichmentState === 'error' && !retry) return;
+    if (enrichmentPromise) return enrichmentPromise;
+    enrichmentState = 'loading';
+    enrichmentPromise = fetchEnrichment().then(byKey => {
+        PUBS.forEach(pub => buildSearchIndex(pub, byKey[pub.citationKey]));
+        enrichmentState = 'ready';
+        // Read current controls here. A completed older request must not
+        // reinstate a cleared query, previous scope, or obsolete sort order.
+        renderTable();
+    }).catch(error => {
+        enrichmentState = 'error';
+        console.warn('publication search: abstract/keyword index unavailable', error);
+        renderTable();
+    }).finally(() => { enrichmentPromise = null; });
+    return enrichmentPromise;
 }
 
 function ensureLoadMoreButton(tbody) {
@@ -272,6 +331,7 @@ function ensureLoadMoreButton(tbody) {
 
 function filterPubs() {
     currentLimit = PAGE_SIZE;
+    ensureEnrichment();
     renderTable();
 }
 
@@ -348,13 +408,15 @@ function initPublications(works, enrichmentByKey) {
     for (let i = 0; i < PUBS.length; i++) {
         buildSearchIndex(PUBS[i], enrichmentByKey[PUBS[i].citationKey]);
     }
+    catalogLoaded = true;
     populateFilterSelects();
+    ensureEnrichment();
     renderTable();
 }
 
 function fetchEnrichment() {
-    // Optional: abstracts and keywords widen what the search box can find.
-    // A failure here must not take the table down with it.
+    // Abstracts and keywords are needed only after a nonempty query. Keep a
+    // failure explicit and retryable instead of claiming an empty search index.
     const url = new URL(`data/work-enrichment.json${SCRIPT_QUERY}`, window.location.href);
     return fetch(url, { cache: 'no-store' })
         .then((response) => {
@@ -362,44 +424,47 @@ function fetchEnrichment() {
             return response.json();
         })
         .then((data) => {
-            const byKey = {};
-            const works = (data && data.works) || {};
+            const byKey = Object.create(null);
+            const works = data && data.works;
+            if (!works || typeof works !== 'object' || Array.isArray(works)) {
+                throw new Error('Invalid publication enrichment');
+            }
             Object.keys(works).forEach((key) => {
+                const work = works[key];
+                if (!work || typeof work !== 'object' ||
+                        work.abstract !== undefined && typeof work.abstract !== 'string' ||
+                        work.keywords !== undefined && (!Array.isArray(work.keywords) || work.keywords.some(word => typeof word !== 'string'))) {
+                    throw new Error('Invalid publication enrichment entry');
+                }
                 byKey[works[key].citation_key || key] = works[key];
             });
+            if (PUBS.some(pub => !Object.prototype.hasOwnProperty.call(byKey, pub.citationKey))) {
+                throw new Error('Incomplete publication enrichment for the loaded catalog');
+            }
             return byKey;
-        })
-        .catch((err) => {
-            // Report rather than swallow: the table still renders, but searching
-            // an abstract phrase quietly stops working, which is otherwise
-            // indistinguishable from the work simply not existing.
-            console.error('publication search: abstract/keyword index unavailable', err);
-            return {};
         });
 }
 
 function loadPublications() {
     const catalogUrl = new URL(`data/works.json${SCRIPT_QUERY}`, window.location.href);
-    Promise.all([
-        fetch(catalogUrl, { cache: 'no-store' }).then((response) => {
+    fetch(catalogUrl, { cache: 'no-store' }).then((response) => {
             if (!response.ok) throw new Error(`works.json HTTP ${response.status}`);
             return response.json();
-        }),
-        fetchEnrichment(),
-    ])
-        .then(([data, enrichmentByKey]) => {
-            initPublications(data.works || [], enrichmentByKey);
+        })
+        .then((data) => {
+            if (!data || !Array.isArray(data.works)) throw new Error('Invalid publication catalog');
+            initPublications(data.works, {});
         })
         .catch((err) => {
-            const tbody = document.getElementById('pub-tbody');
             const empty = document.getElementById('no-results');
-            if (tbody) tbody.innerHTML = '';
             if (empty) {
                 empty.hidden = false;
                 empty.classList.remove('d-none');
-                empty.textContent = 'Could not load publication catalog. Try again later.';
+                empty.textContent = 'Interactive publication catalog could not be loaded. The publication links above remain available. Try again later.';
                 empty.setAttribute('role', 'alert');
             }
+            document.getElementById('pub-table')?.setAttribute('aria-busy', 'false');
+            document.getElementById('result-count').textContent = 'Interactive catalog unavailable';
             console.error('publications catalog load failed', err);
         });
 }

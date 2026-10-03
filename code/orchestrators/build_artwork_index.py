@@ -62,7 +62,7 @@ def build_payload(source: dict) -> dict:
 
 
 def render(payload: dict) -> str:
-    return json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
+    return json.dumps(payload, separators=(",", ":"), ensure_ascii=False) + "\n"
 
 
 def write() -> None:

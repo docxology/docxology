@@ -22,7 +22,7 @@ def test_injected_tiles_request_z_and_ssr_tiles_are_reused():
     js = ART_GALLERY_JS.read_text(encoding="utf-8")
     # Hydrate presence: the script must reuse existing SSR tiles...
     assert "art-thumb.ssr" in js
-    assert "ssrByTitle" in js
+    assert "ssrByPage" in js
     # ...and injected tiles must promote data-src through largeThumb (no raw _m).
     assert 'data-src="${esc(largeThumb(art.thumb))}"' in js
 

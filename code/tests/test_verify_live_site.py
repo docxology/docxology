@@ -251,7 +251,12 @@ def test_verify_live_site_check_allows_marker_only_deploy_lag(tmp_path, capsys):
     report_path = tmp_path / "reports" / "live_site_verification_2026-06-16.json"
     _write_report(
         report_path,
-        {},
+        {
+            "deployment_sha_mismatch": True,
+            "deployment_pending_paths": ["index.html"],
+            "results": [{"path": "index.html", "status": 200, "ok": False,
+                         "markers": {"new candidate marker": False}, "deployment_pending": True}],
+        },
         overall_ok=False,
         expected_counts=vl.load_current_counts_fingerprint(counts_path),
     )
@@ -272,7 +277,7 @@ def test_verify_live_site_check_fails_on_http_error(tmp_path):
         expected_counts=vl.load_current_counts_fingerprint(counts_path),
     )
 
-    with pytest.raises(SystemExit, match="Live-site page failure"):
+    with pytest.raises(SystemExit, match="hard failures"):
         vl.main(["--check"], current_counts_json=counts_path, report_dir=report_path.parent)
 
 
@@ -284,6 +289,7 @@ def test_verify_live_site_check_allows_local_404_during_built_pages_deploy(tmp_p
         report_path,
         {
             "github_pages": {"ok": True, "status": "built"},
+            "deployment_sha_mismatch": True,
             "deployment_pending_paths": ["data/agent-index.json"],
             "results": [
                 {
@@ -331,3 +337,227 @@ def test_verify_live_site_check_allows_stale_fingerprint_for_offline_candidate(t
     )
 
     assert "pre-deploy count drift" in capsys.readouterr().out
+
+
+@pytest.mark.parametrize("status", [0, 500, 503])
+def test_transport_and_server_failures_never_become_propagation(status):
+    payload = {
+        "overall_ok": False,
+        "source_dirty": True,
+        "deployment_sha_mismatch": True,
+        "github_pages": {"ok": True, "status": "built"},
+        "results": [{"path": "index.html", "status": status, "ok": False,
+                     "deployment_pending": True}],
+    }
+    assert vl.hard_failures(payload)[0]["path"] == "index.html"
+
+
+@pytest.mark.parametrize("row", [
+    {"status": 0, "ok": False, "error": "network timeout"},
+    {"status": 200, "ok": False, "markers": {"expected heading": False}},
+    {"status": 200, "jsonld_types": {"CollectionPage": False}},
+])
+def test_cached_unclassified_failure_is_rejected(tmp_path, row):
+    counts = tmp_path / "data/current-counts.json"
+    _write_current_counts(counts)
+    report = tmp_path / "reports/live_site_verification_2026-06-16.json"
+    _write_report(report, {"results": [{"path": "index.html", **row}]}, overall_ok=False,
+                  expected_counts=vl.load_current_counts_fingerprint(counts))
+    with pytest.raises(SystemExit, match="hard failures"):
+        vl.main(["--check"], current_counts_json=counts, report_dir=report.parent)
+
+
+def test_pending_flag_alone_cannot_defer_same_candidate_404():
+    payload = {"overall_ok": False, "github_pages": {"ok": True, "status": "built"},
+               "results": [{"path": "index.html", "status": 404, "ok": False,
+                            "local_exists": True, "deployment_pending": True}]}
+    assert vl.hard_failures(payload)[0]["path"] == "index.html"
+
+
+@pytest.fixture
+def live_candidate(tmp_path, monkeypatch):
+    counts = tmp_path / "data/current-counts.json"
+    _write_current_counts(counts)
+    (tmp_path / "index.html").write_text("candidate heading", encoding="utf-8")
+    run = {"workflow_run_id": 101, "workflow_name": "Deploy bounded GitHub Pages artifact",
+           "workflow_path": ".github/workflows/pages.yml", "head_sha": "a" * 40,
+           "head_branch": "main", "status": "completed", "conclusion": "success"}
+    response = {"status": 200, "ok": True, "text": "candidate heading", "headers": {},
+                "bytes": 17, "elapsed_ms": 1, "error": ""}
+    monkeypatch.setattr(vl, "load_dynamic_checks", lambda _: [{"path": "", "markers": ["candidate heading"]}])
+    monkeypatch.setattr(vl, "fetch_with_retries", lambda *_: response)
+    monkeypatch.setattr(vl, "pages_status", lambda _: {"ok": True, "status": "built"})
+    monkeypatch.setattr(vl, "latest_deployment_run", lambda *_: run)
+    monkeypatch.setattr(vl, "local_source_commit", lambda *_: "a" * 40)
+    monkeypatch.setattr(vl, "source_worktree_state", lambda *_: {"source_worktree_clean": True})
+    return tmp_path, counts, run, response
+
+
+def test_same_candidate_built_deployment_missing_route_is_hard_failure(live_candidate):
+    root, counts, _, response = live_candidate
+    response.update(status=404, ok=False, text="not found")
+    report = vl.build_report(1, repo_root=root, current_counts_json=counts,
+                             expected_commit="a" * 40, deployment_run_id=101)
+    assert report["deployment_binding"]["ok"]
+    assert not report["deployment_sha_mismatch"]
+    assert not report["results"][0]["deployment_pending"]
+    assert vl.hard_failures(report)[0]["path"] == "index.html"
+
+
+def test_actual_predeploy_missing_route_remains_explicitly_pending(live_candidate):
+    root, counts, run, response = live_candidate
+    run["head_sha"] = "b" * 40
+    response.update(status=404, ok=False, text="not found")
+    report = vl.build_report(1, repo_root=root, current_counts_json=counts)
+    assert report["deployment_sha_mismatch"]
+    assert report["results"][0]["deployment_pending"]
+    assert not report["overall_ok"]
+    assert vl.hard_failures(report) == []
+
+
+@pytest.mark.parametrize("status", [0, 500])
+def test_build_report_keeps_transport_errors_hard_during_predeploy(live_candidate, status):
+    root, counts, run, response = live_candidate
+    run["head_sha"] = "b" * 40
+    response.update(status=status, ok=False, text="failure")
+    report = vl.build_report(1, repo_root=root, current_counts_json=counts)
+    assert not report["results"][0]["deployment_pending"]
+    assert vl.hard_failures(report)
+
+
+def test_triggering_candidate_and_run_binding_passes(live_candidate, monkeypatch):
+    root, counts, run, _ = live_candidate
+    requested = []
+    monkeypatch.setattr(vl, "latest_deployment_run", lambda timeout, run_id: requested.append(run_id) or run)
+    report = vl.build_report(1, repo_root=root, current_counts_json=counts,
+                             expected_commit="a" * 40, deployment_run_id=101)
+    assert requested == [101]
+    assert report["deployment_binding"]["ok"]
+    assert report["overall_ok"]
+    assert vl.hard_failures(report) == []
+
+
+@pytest.mark.parametrize("field,value", [
+    ("head_sha", "b" * 40), ("workflow_run_id", 102), ("head_branch", "feature"),
+    ("status", "in_progress"), ("conclusion", "failure"),
+    ("workflow_path", ".github/workflows/other.yml"), ("workflow_name", "Other workflow"),
+])
+def test_mismatched_deployment_identity_fails_even_when_routes_pass(live_candidate, field, value):
+    root, counts, run, _ = live_candidate
+    run[field] = value
+    report = vl.build_report(1, repo_root=root, current_counts_json=counts,
+                             expected_commit="a" * 40, deployment_run_id=101)
+    assert report["results"][0]["ok"]
+    assert not report["deployment_binding"]["ok"]
+    assert not report["overall_ok"]
+    assert any(item["path"] == "deployment binding" for item in vl.hard_failures(report))
+
+
+def test_exact_run_lookup_does_not_select_floating_latest(monkeypatch):
+    commands = []
+    run = {"id": 101, "name": "Deploy bounded GitHub Pages artifact", "head_sha": "a" * 40,
+           "path": ".github/workflows/pages.yml", "head_branch": "main", "status": "completed",
+           "conclusion": "success"}
+    def run_api(command, **kwargs):
+        commands.append(command)
+        return subprocess.CompletedProcess(command, 0, stdout=json.dumps(run), stderr="")
+    monkeypatch.setattr(vl.subprocess, "run", run_api)
+    observed = vl.latest_deployment_run(1, run_id=101)
+    assert commands == [["gh", "api", "repos/docxology/docxology/actions/runs/101"]]
+    assert observed["workflow_run_id"] == 101
+    assert observed["head_sha"] == "a" * 40
+
+
+def test_failed_candidate_verification_retains_dedicated_receipt(live_candidate):
+    root, counts, _, response = live_candidate
+    response.update(status=404, ok=False, text="not found")
+    output = root / "private-evidence/live.json"
+    with pytest.raises(SystemExit, match="hard failures"):
+        vl.main(["--expected-commit", "a" * 40, "--deployment-run-id", "101", "--output", str(output)],
+                repo_root=root, current_counts_json=counts)
+    payload = json.loads(output.read_text(encoding="utf-8"))
+    assert payload["source_commit"] == "a" * 40
+    assert not payload["overall_ok"]
+    assert not (root / "reports").exists()
+
+
+def test_non_object_live_json_records_failed_contract_instead_of_raising():
+    checks, observed = vl.parse_json_contract("data/works.json", '[]', {"works": 1})
+    assert checks == {"valid_json": True, "json_object": False}
+    assert observed == {}
+
+
+def _successful_typed_report() -> dict:
+    return {
+        "overall_ok": True, "source_dirty": False, "deployment_sha_mismatch": False,
+        "source_worktree_clean": True,
+        "github_pages": {"ok": True, "status": "built", "deployment_pending": False},
+        "deployment_binding": {"required": False, "ok": True, "checks": {}},
+        "results": [{"path": "index.html", "status": 200, "ok": True,
+                     "deployment_pending": False, "local_exists": True,
+                     "markers": {"required heading": True},
+                     "json_checks": {"valid_json": True},
+                     "jsonld_types": {"WebPage": True}}],
+    }
+
+
+@pytest.mark.parametrize("path,value", [
+    (("overall_ok",), "false"), (("overall_ok",), "true"), (("overall_ok",), 1),
+    (("overall_ok",), 0), (("overall_ok",), None),
+    (("source_dirty",), "false"), (("deployment_sha_mismatch",), 1),
+    (("source_worktree_clean",), "true"),
+    (("github_pages", "ok"), "true"), (("github_pages", "deployment_pending"), "false"),
+    (("results", 0, "ok"), 1), (("results", 0, "deployment_pending"), 0),
+    (("results", 0, "local_exists"), "true"),
+    (("results", 0, "markers", "required heading"), "false"),
+    (("results", 0, "markers", "required heading"), 1),
+    (("results", 0, "json_checks", "valid_json"), "true"),
+    (("results", 0, "jsonld_types", "WebPage"), "false"),
+    (("results", 0, "markers"), None),
+    (("deployment_binding", "required"), "false"), (("deployment_binding", "ok"), 1),
+    (("deployment_binding", "checks"), {"checkout_matches": "false"}),
+    (("github_pages",), []), (("deployment_binding",), None),
+])
+def test_cached_malformed_boolean_fields_are_rejected_by_check(tmp_path, path, value):
+    counts = tmp_path / "data/current-counts.json"
+    _write_current_counts(counts)
+    payload = _successful_typed_report()
+    record = payload
+    for part in path[:-1]:
+        record = record[part]
+    record[path[-1]] = value
+    report = tmp_path / "reports/live_site_verification_2026-06-16.json"
+    _write_report(report, payload, expected_counts=vl.load_current_counts_fingerprint(counts))
+    with pytest.raises(SystemExit, match="hard failures"):
+        vl.main(["--check"], current_counts_json=counts, report_dir=report.parent)
+
+
+def test_malformed_contract_cannot_hide_behind_valid_propagation_flags(tmp_path):
+    counts = tmp_path / "data/current-counts.json"
+    _write_current_counts(counts)
+    payload = _successful_typed_report()
+    payload.update(overall_ok=False, source_dirty=True)
+    payload["results"][0].update(ok=False, deployment_pending=True,
+                                 markers={"required heading": "false"})
+    report = tmp_path / "reports/live_site_verification_2026-06-16.json"
+    _write_report(report, payload, expected_counts=vl.load_current_counts_fingerprint(counts))
+    with pytest.raises(SystemExit, match="boolean values"):
+        vl.main(["--check"], current_counts_json=counts, report_dir=report.parent)
+
+
+@pytest.mark.parametrize("checks", [{"checkout_matches": False}, {}])
+def test_required_binding_cannot_claim_success_with_failed_or_missing_checks(tmp_path, checks):
+    counts = tmp_path / "data/current-counts.json"
+    _write_current_counts(counts)
+    payload = _successful_typed_report()
+    payload["deployment_binding"] = {"required": True, "ok": True, "checks": checks}
+    report = tmp_path / "reports/live_site_verification_2026-06-16.json"
+    _write_report(report, payload, expected_counts=vl.load_current_counts_fingerprint(counts))
+    with pytest.raises(SystemExit, match="deployment binding"):
+        vl.main(["--check"], current_counts_json=counts, report_dir=report.parent)
+
+
+def test_legacy_successful_row_without_ok_remains_accepted():
+    payload = _successful_typed_report()
+    del payload["results"][0]["ok"]
+    assert vl.hard_failures(payload) == []

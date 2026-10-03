@@ -1220,7 +1220,7 @@ def render_resume_html(payload: dict, variant: str = "full") -> bytes:
     <meta name="twitter:image" content="https://danielarifriedman.com/og-image.jpg">
     <meta name="twitter:image:alt" content="Daniel Ari Friedman public profile">
 {HEAD_EXTRAS_WITHOUT_NAV}
-    <link rel="stylesheet" href="/style.css?v=site-20261002">
+    <link rel="stylesheet" href="/style.css?v=site-20261002b">
     <script type="application/ld+json">{structured_data}</script>
     <style>
         :root {{ color-scheme: dark; }}
@@ -1329,7 +1329,7 @@ def render_verify_html(payload: dict, provenance: dict) -> bytes:
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 {HEAD_EXTRAS_WITHOUT_NAV}
-    <link rel="stylesheet" href="/style.css?v=site-20261002">
+    <link rel="stylesheet" href="/style.css?v=site-20261002b">
     <style>
         :root {{
             --resume-red: #ff0000;

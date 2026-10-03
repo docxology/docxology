@@ -295,7 +295,7 @@ def page_head(
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 {social_meta_tags(f"{title} — Daniel Ari Friedman", description, f"https://danielarifriedman.com/{og_image}", image_alt=f"{title} — Daniel Ari Friedman")}
-    <link rel="stylesheet" href="style.css?v=site-20261002">
+    <link rel="stylesheet" href="style.css?v=site-20261002b">
     <meta name="theme-color" content="#0c0c0e">
     <style>
         .domain-hero{{max-width:980px;margin:0 auto;text-align:center;padding:7rem 2rem 3rem}}

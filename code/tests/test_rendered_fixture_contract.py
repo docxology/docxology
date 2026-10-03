@@ -45,6 +45,6 @@ def test_hosted_browser_job_is_mandatory_without_extra_flag(monkeypatch):
 def test_copied_site_contains_actual_root_runtime_exports_and_pwa_icons(tmp_path):
     site = fixture.copy_site(tmp_path)
     names = sorted(fixture.ROOT_RUNTIME_FILES | {path.name for path in fixture.REPO_ROOT.glob("search-index*.json")})
-    assert {"search-index.json", "search-index-core.json", "search-index-content-work.json", "search-index-content-video.json"}.issubset(names)
+    assert {"search-index.json", "search-index-core.json", "search-index-bootstrap.json", "search-index-content-work.json", "search-index-content-video.json"}.issubset(names)
     for relative in [*names, *fixture.PWA_ICON_FILES]:
         assert (site / relative).read_bytes() == (fixture.REPO_ROOT / relative).read_bytes(), relative
