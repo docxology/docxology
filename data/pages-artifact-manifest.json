@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-05T15:27:24Z",
-  "source_commit_at_generation": "a847ffc72518f472efb94af5f58764da19d5e7a0",
+  "generated_at": "2026-10-05T15:45:05Z",
+  "source_commit_at_generation": "90216db97c875534d2db5fde9b151fc8d0cb7318",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 876047125,
+    "source_bytes": 876048245,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 5907,
-    "artifact_bytes": 877090661
+    "artifact_bytes": 877091781
   },
   "included_files": [
     {
@@ -85,8 +85,8 @@
     },
     {
       "path": "CLAUDE.md",
-      "bytes": 10910,
-      "sha256": "051dab36d916eee9c0de0178b62f07f63a372a8ed2408b457788bd710bbeb084"
+      "bytes": 10920,
+      "sha256": "70e1b8974b361f498171f47c866dc1df071d268f89e5d8fd2ba2f1e8226c1d52"
     },
     {
       "path": "CNAME",
@@ -10855,8 +10855,8 @@
     },
     {
       "path": "code/tests/test_art_gallery_progressive.py",
-      "bytes": 23087,
-      "sha256": "8ad254331b644044b7289fe5370ca4ba4a3188c46b8034d5b1fc844647d0816e"
+      "bytes": 23837,
+      "sha256": "4cb6f60bc67a2d0e594701fd41ddad0e8bed989c7363397ea98a94f0991f5deb"
     },
     {
       "path": "code/tests/test_art_thumb_dimensions.py",
@@ -11576,7 +11576,7 @@
     {
       "path": "data/gsc-followup-checklist.json",
       "bytes": 3475,
-      "sha256": "2a88c879520cbdffcbeb59add252198d6195a3546d283e3272f92390d7e2b60d"
+      "sha256": "8bedf50bcc7f61c00717801720a6d56222e57cad42ba3d13fc298fcbad487454"
     },
     {
       "path": "data/og-image-counts.json",
@@ -12210,8 +12210,8 @@
     },
     {
       "path": "js/art-gallery.js",
-      "bytes": 20775,
-      "sha256": "77bb42ea2810609b07ad1e97df4076af21c42edccbfeaafec58ac6265d23a186"
+      "bytes": 21135,
+      "sha256": "f90ff5f73c5375271c4c7f08efa6d8b8e31bdb8a86cb075aeb7fa6812bc0e0b4"
     },
     {
       "path": "js/cite-export.js",
@@ -22379,9 +22379,9 @@
       "sha256": "0ea7218ef1a2acfccadf4008f380a0b84b4907d697880358aca7cbcccf181a70"
     },
     {
-      "path": "reports/gsc_preflight_2026-09-26.json",
+      "path": "reports/gsc_preflight_2026-10-05.json",
       "bytes": 7299,
-      "sha256": "e6050cef1d47936c68dc3c66de92aeb34e809692428807a85415ec47a019f39b"
+      "sha256": "e6ea172abc036f5baefebee6fab0cd415b06d68d7146d4eb445ee9be6f6f15c2"
     },
     {
       "path": "reports/homepage_curio_2026-10-02.json",
@@ -29604,8 +29604,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 621,
-    "bytes": 133887776,
+    "count": 622,
+    "bytes": 133895075,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",
