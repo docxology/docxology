@@ -147,7 +147,7 @@ def test_failed_index_preserves_native_source_links(gallery_server):
         browser.close()
 
 
-@pytest.mark.parametrize('failure', ['http', 'schema', 'thumb', 'date', 'identity'])
+@pytest.mark.parametrize('failure', ['http', 'schema', 'thumb', 'date', 'identity', 'views', 'views-overflow', 'views-negative'])
 def test_early_filters_preserve_source_tiles_while_index_is_pending_or_invalid(gallery_server, failure):
     from playwright.sync_api import sync_playwright
 
@@ -176,11 +176,18 @@ def test_early_filters_preserve_source_tiles_while_index_is_pending_or_invalid(g
         elif failure == 'schema':
             held[0].fulfill(json={'artworks': [{'id': 'public-invalid-fixture', 'title': 'Missing canonical path'}]})
         else:
-            record = json.loads((REPO_ROOT / 'data/artworks-index.json').read_text())['artworks'][0]
+            records = json.loads((REPO_ROOT / 'data/artworks-index.json').read_text())['artworks']
+            # A retained SSR tile skips view-label construction. Use a record
+            # outside that initial source batch to reproduce destructive render
+            # failures from malformed view counts rather than masking them.
+            record = next(art for art in records if art['page'] not in links) if failure.startswith('views') else records[0]
             field, value = {
                 'thumb': ('thumb', 'http://%'),
                 'date': ('date', '2026-02-30'),
                 'identity': ('page', 'artworks/999-different.html'),
+                'views': ('views', {'toString': None, 'valueOf': None}),
+                'views-overflow': ('views', '9' * 400),
+                'views-negative': ('views', -1),
             }[failure]
             record[field] = value
             held[0].fulfill(json={'artworks': [record]})
@@ -280,7 +287,7 @@ def test_description_failure_is_visible_and_retry_restores_matches(gallery_serve
         browser.close()
 
 
-@pytest.mark.parametrize('failure', ['schema', 'missing', 'duplicate', 'url', 'date'])
+@pytest.mark.parametrize('failure', ['schema', 'missing', 'duplicate', 'url', 'date', 'views', 'views-overflow'])
 def test_invalid_detail_payload_is_retryable_without_claiming_complete_search(gallery_server, failure):
     from playwright.sync_api import sync_playwright
 
@@ -294,8 +301,10 @@ def test_invalid_detail_payload_is_retryable_without_claiming_complete_search(ga
         invalid['artworks'].append(invalid['artworks'][0])
     elif failure == 'url':
         invalid['artworks'][0]['sizes']['Large'] = 'http://%'
-    else:
+    elif failure == 'date':
         invalid['artworks'][0]['date'] = 17
+    else:
+        invalid['artworks'][0]['views'] = {'toString': None, 'valueOf': None} if failure == 'views' else '9' * 400
     with sync_playwright() as p:
         browser = p.chromium.launch()
         context = browser.new_context(service_workers='block')

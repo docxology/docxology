@@ -47,6 +47,13 @@
     return !Number.isNaN(date.valueOf()) && date.toISOString().slice(0, 10) === value.slice(0, 10);
   }
 
+  function validArtworkViews(value) {
+    if (value == null) return true;
+    if (typeof value === 'number') return Number.isFinite(value) && value >= 0;
+    return typeof value === 'string' && value.length > 0 && !/\D/.test(value) &&
+      Number.isFinite(Number(value));
+  }
+
   function validArtworkIdentity(art) {
     if (!art || typeof art.id !== 'string' || !/^\d+$/.test(art.id)) return false;
     return typeof art.page === 'string' &&
@@ -60,7 +67,7 @@
       const payload = await res.json();
       if (!Array.isArray(payload.artworks) || payload.artworks.some(art =>
           !validArtworkIdentity(art) || typeof art.title !== 'string' || !validMediaUrl(art.thumb) ||
-          !validArtworkDate(art.date) ||
+          !validArtworkDate(art.date) || !validArtworkViews(art.views) ||
           !Array.isArray(art.tags) || art.tags.some(tag => typeof tag !== 'string')) ||
           new Set(payload.artworks.map(art => String(art.id))).size !== payload.artworks.length ||
           new Set(payload.artworks.map(art => art.page)).size !== payload.artworks.length) {
@@ -95,6 +102,7 @@
                 !Array.isArray(art.tags) || art.tags.some(tag => typeof tag !== 'string') ||
                 (art.title != null && typeof art.title !== 'string') ||
                 (art.thumb != null && !validMediaUrl(art.thumb)) || !validArtworkDate(art.date) ||
+                !validArtworkViews(art.views) ||
                 (art.flickr_url != null && !validMediaUrl(art.flickr_url)) ||
                 !art.sizes || typeof art.sizes !== 'object' || Array.isArray(art.sizes) ||
                 Object.values(art.sizes).some(url => !validMediaUrl(url)) ||
