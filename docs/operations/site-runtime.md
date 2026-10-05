@@ -72,7 +72,7 @@ preserves the native artwork-page link. Changing selection retires previous
 image callbacks so late failures cannot overwrite the current view.
 
 The publications page renders its catalog from
-[`data/works.json`](../../data/works.json) before fetching
+[`data/works.json`](../../data/works.json) without waiting for
 [`data/work-enrichment.json`](../../data/work-enrichment.json). Abstract and
 keyword enrichment begins only after a nonempty publication query. While that
 request is pending or failed, catalog matches remain usable with an explicit
