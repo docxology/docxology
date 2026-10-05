@@ -54,6 +54,8 @@ catalog to the previously visible tiles. Server-rendered cards retain their
 images and native generated artwork-page links; identity follows the canonical
 page URL so duplicate titles remain separate works. Modified or middle clicks
 keep native navigation, while an ordinary click opens the detail lightbox.
+Compact-catalog validation happens before replacing the server-rendered cards;
+malformed or failed data cannot erase that native fallback.
 
 [`data/artworks.json`](../../data/artworks.json) loads when a description query
 or detail view needs it. Description-load failure preserves title/tag matches
@@ -61,6 +63,13 @@ and exposes a retry. Failed detail requests can be retried by reopening or
 navigating the lightbox; older responses cannot overwrite a newer selection or
 reopen a closed view. The complete export remains available independently of
 the initial batch and compact index.
+Full-detail records must have unique identities, valid retained fields/media
+URLs, and coverage of the loaded compact catalog before they are cached as
+complete. Malformed or incomplete responses leave description search explicitly
+partial and retryable. Thumbnail and lightbox images try only the distinct
+retained source URLs once each; exhaustion marks the image unavailable and
+preserves the native artwork-page link. Changing selection retires previous
+image callbacks so late failures cannot overwrite the current view.
 
 The publications page renders its catalog from
 [`data/works.json`](../../data/works.json) before fetching
@@ -70,6 +79,11 @@ request is pending or failed, catalog matches remain usable with an explicit
 status and retry. Completion applies the current query, scope, and sort instead
 of restoring the state that initiated the request. Catalog-load failure keeps
 the server-rendered publication links available.
+The page sorts the complete matching catalog before rendering its first 50
+rows. “Load more” adds another batch and focuses the first newly added title
+link. Filtering or changing sort resets the batch; the button is hidden when
+all matches are shown, including empty results. Row counts describe the current
+matching catalog rather than treating the rendered batch as the full index.
 
 ## Accessible video browsing
 
@@ -96,6 +110,13 @@ decorative artwork tokens within `.publications-page` in its authoritative
 [`template`](../../code/templates/publications.html.tmpl), preserving the shared
 gradients, borders, and catalog content. Other pages retain the shared artwork
 tokens.
+
+The optional [`hero-glitch.js`](../../js/hero-glitch.js) runs only on pages that
+include its canvas and module. The current homepage includes neither. Opted-in
+pages draw a single static source under reduced motion, pause ongoing frames
+offscreen or in a hidden document, and handle motion-preference changes; see
+[`animations.md`](../design/animations.md). These behavior checks do not imply a
+measured homepage performance change.
 
 ## Offline and cache contracts
 

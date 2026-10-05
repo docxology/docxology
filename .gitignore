@@ -23,7 +23,9 @@ _site/
 
 # Skip-on-unchanged fingerprints for regenerate_all (local build bookkeeping, not a site artifact).
 /reports/regeneration-state.json
+/reports/.regeneration-state-*.tmp
 
-# Session-local tooling state (never deploy, never commit)
+# Session-local tooling state, including the persistent regeneration flock inode
+# (never deploy, never commit; an existing lock file does not imply an active run).
 /.docxology/
 /HERDR.md

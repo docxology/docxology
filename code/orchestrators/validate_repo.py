@@ -551,6 +551,7 @@ def validate_release_evidence(args: argparse.Namespace) -> None:
 
 def run_standard_validation(*, strict_reports: bool) -> None:
     """Validate the committed source layer and its deterministic cache inputs."""
+    run([sys.executable, "code/orchestrators/validate_manuscript.py"])
     run_local_generation_checks()
     run([sys.executable, "code/orchestrators/build_github_inventory.py", "--check"])
     run([sys.executable, "code/orchestrators/sync_paired_publications.py", "--check"])

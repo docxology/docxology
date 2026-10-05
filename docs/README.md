@@ -12,6 +12,8 @@ generated-layer rebuild ordering, canonical/reports). This README is the human m
 | Area | Document | What it's for |
 |------|----------|---------------|
 | **Architecture** | [`AGENTS.md`](AGENTS.md) | Repo structure: bibliography vs paper folders, generated discovery-layer rebuild ordering, volatile-count policy |
+| **Development** | [`operations/development.md`](operations/development.md) | Source authority, thin command/shared-module boundaries, configuration ownership, and local/hosted/live evidence |
+| **Operations** | [`operations/regeneration.md`](operations/regeneration.md) | Declared local writers/checks, ordered passes, source fingerprints, interruption behavior, and release boundaries |
 | **Backlog** | [`../TODO.md`](../TODO.md) | Active unfinished release, evidence, accessibility, Pages, and operating-model work; no completed history |
 | **Operations** | [`operations/settle.md`](operations/settle.md) | One-command settle driver: tiered gate battery, payload/control-tail commit split, push/PR |
 | **Operations** | [`operations/publication-sync.md`](operations/publication-sync.md) | GitHub + Zenodo publication intake, Zenodo-only backfill, and software-only GitHub record triage |
@@ -33,7 +35,7 @@ generated-layer rebuild ordering, canonical/reports). This README is the human m
 | **Design** | [`design/animations.md`](design/animations.md) | Animation system: scroll-reveal, reduced-motion policy, interaction transitions |
 | **Design** | [`design/components/tts.md`](design/components/tts.md) | TTS controls: Web Speech read-aloud panel, voice/speed, paragraph highlighting |
 | **Security** | [`security/security-posture.md`](security/security-posture.md) | Static-site security posture, XSS, CSP, responsible disclosure |
-| **Manuscript** | [`manuscript/`](manuscript/README.md) | Template-format manuscript scaffold (sections `00_abstract` … `99_references`, `SYNTAX.md`, `config.yaml`, `MANUSCRIPT_STATUS.md`) |
+| **Manuscript** | [`manuscript/`](manuscript/README.md) | Source-bound repository-methods draft, local structural validation, section/evidence map, and explicit rendering/publication limitations |
 | **Releases** | [`releases/2026-05-discovery-layer.md`](releases/2026-05-discovery-layer.md) | Archived 2026-05 discovery-layer snapshot |
 
 ## Conventions

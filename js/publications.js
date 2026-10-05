@@ -210,6 +210,8 @@ function renderTable() {
     const loadMore = ensureLoadMoreButton(tbody);
     if (loadMore) {
         loadMore.hidden = data.length <= currentLimit;
+        // The shared .btn display rule overrides the browser's hidden style.
+        loadMore.classList.toggle('d-none', loadMore.hidden);
         loadMore.textContent = `Load more (${data.length - shown.length} of ${data.length} remaining)`;
     }
     if (data.length === 0) {
@@ -336,14 +338,16 @@ function filterPubs() {
 }
 
 function loadMorePubs() {
+    const firstNew = currentLimit;
     currentLimit += PAGE_SIZE;
     renderTable();
+    document.querySelectorAll('#pub-tbody .td-title a')[firstNew]?.focus();
 }
 
 function setTypeFilter(t, btn) {
     currentTypeFilter = t;
     currentLimit = PAGE_SIZE;
-    document.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('active'));
+    document.querySelectorAll('[data-type-filter]').forEach((b) => b.classList.remove('active'));
     if (btn) btn.classList.add('active');
     renderTable();
 }
@@ -393,7 +397,7 @@ function defaultDirForCol(col) {
 }
 
 function sortBy(col) {
-    currentLimit = PUBS.length; // re-sorting implies "show everything"
+    currentLimit = PAGE_SIZE;
     if (currentSort.col === col) {
         currentSort.dir = -currentSort.dir;
     } else {

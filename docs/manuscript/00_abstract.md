@@ -1,7 +1,7 @@
 # Abstract {#sec:abstract}
 
-docxology: Research, Software, and Citation Index is represented here as a template-format manuscript scaffold. A master profile repository indexing bibliography, software, generated GitHub inventory, and research documentation across entomology, active inference, cognitive security, and art/synergetics.
+docxology maintains a public research, software, and citation index through curated source tables, archived paper documentation, structured exports, and a static website [@docxologyIndex]. This technical draft describes how the repository separates source authority from generated projections and connects those projections to local validation, browser acceptance, and commit-bound deployment evidence.
 
-The current draft is an evidence map rather than a completed paper. It records the project problem, source surfaces, expected methods narrative, reproducibility hooks, and open evidence gaps so later work can promote the scaffold into a rendered manuscript without inventing unsupported claims.
+The system assigns stable work identities, declares ordered generation and no-write checks in shared code, progressively loads browser catalogs, and publishes a bounded GitHub Pages artifact while retaining the complete repository archive. Its evidence model distinguishes source observations, byte identity, runtime checks, and human visual review. Each supports a different claim; generated inventories and structural checks alone cannot establish scientific validity or publication readiness.
 
-Evidence boundary: Treat generated inventories and profile pages as index artifacts; distinguish current generated state from external publication readiness.
+The draft links the implementing files and maintenance commands. It contains no new experimental measurements, comparative benchmarks, or scientific conclusions about the indexed publications. Manuscript rendering and editorial review remain separate steps.

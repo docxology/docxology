@@ -20,6 +20,15 @@ warnings. The known meta-CSP `frame-ancestors` limitation is retained as a
 warning because GitHub Pages does not provide response-header control; other
 console or page errors fail the report.
 
+Focused startup tests additionally cover complete-catalog sorting before row
+batching, focus on the first added publication/gallery item, malformed catalog
+and detail responses, preservation of native artwork links, finite image
+fallback attempts, and stale selection responses. The optional hero canvas is
+tested through a fixture that opts into the module: reduced motion must remain
+static, and hidden/offscreen states must stop its frame loop. The current
+homepage does not opt in, so that fixture establishes the module contract rather
+than a homepage effect or performance measurement.
+
 Check screenshots at representative desktop, mobile, high-zoom, and print
 states. Preserve intrinsic image dimensions, meaningful alt text, lazy loading,
 transcript links, and non-JavaScript content when changing gallery or video

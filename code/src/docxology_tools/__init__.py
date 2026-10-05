@@ -80,6 +80,7 @@ MODULES: tuple[str, ...] = (
     "domain_inference",
     "generated_outputs",
     "generation_plan",
+    "manuscript_validation",
     "metadata_templates",
     "paper_artifacts",
     "paper_metadata_schema",

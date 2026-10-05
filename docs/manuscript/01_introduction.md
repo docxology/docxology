@@ -2,12 +2,14 @@
 
 ## Motivation
 
-A public profile repository can become a broad index without a concise manuscript-grade account of scope, provenance, and update guarantees.
+A scholarly profile can combine papers, software, teaching, art, video, and public identifiers without making their sources and update rules easy to inspect. In docxology, those surfaces share a repository and a static website [@docxologyIndex]. Maintaining their consistency requires explicit authority: a curated bibliography row, an external API observation, an extracted PDF, and a generated page carry different information and different uncertainty.
 
-## Contribution of This Scaffold
+## Repository-system contribution
 
-This manuscript directory supplies the parent template surfaces that were absent from the project root. It adds modular sections, local rendering metadata, a bibliography placeholder, manuscript-specific agent guidance, and a source-surface supplement.
+The repository connects authored source, machine-readable discovery exports, stable work pages, and deployment controls. The implementation uses shared parsers and policies, runnable command entry points, a declared generation plan, and proportionate checks. Browser catalogs build on native HTML links and fetch larger data when an interaction needs it.
 
-## Reader Orientation
+This draft explains those mechanisms using local source references. It is an account of the implemented design with verification boundaries; it does not report a comparison with other scholarly-profile systems.
 
-The manuscript should be read as a controlled starting point. It names the project evidence surfaces and the claims they may eventually support, but it does not yet assert final publication readiness.
+## Reader orientation
+
+System boundaries are defined in @sec:system_context. Methods and reproducibility commands follow in @sec:methods and @sec:reproducibility. The evidence map in @sec:artifacts_evidence identifies what each check can establish. The supplement links source owners so future changes can update the narrative alongside the implementation.

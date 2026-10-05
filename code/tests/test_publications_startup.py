@@ -182,3 +182,33 @@ def test_unavailable_catalog_preserves_server_rendered_native_links(publication_
         assert page.locator("#pub-tbody .td-title a").first.get_attribute("href").startswith("works/")
         assert page.locator("#pub-tbody .td-title a").first.is_visible()
         browser.close()
+
+
+def test_sorting_keeps_catalog_bounded_and_load_more_moves_keyboard_focus(publication_site):
+    from playwright.sync_api import sync_playwright
+
+    works = [{'num': number, 'year': 2026, 'citation_key': f'PublicFixture{number}',
+              'title': f'Fixture work {number:03d}', 'authors': ['Public Author'],
+              'domain': '🧠', 'type': 'Paper', 'venue': 'Public Fixture'}
+             for number in range(1, 124)]
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page(service_workers='block')
+        page.route('**/data/works.json*', lambda route: route.fulfill(json={'works': works}))
+        requests = _record_requests(page)
+        page.goto(publication_site + '/publications.html')
+        page.wait_for_function('() => document.getElementById("result-count").textContent === "50 of 123 shown"')
+        page.get_by_role('button', name='Sort by Title', exact=True).click()
+        assert page.locator('#pub-tbody tr').count() == 50
+        page.locator('#pub-load-more').click()
+        assert page.locator('#pub-tbody tr').count() == 100
+        assert page.evaluate('() => document.activeElement.textContent') == 'Fixture work 051'
+        page.get_by_role('button', name='Sorted by Title ascending', exact=True).click()
+        assert page.locator('#pub-tbody tr').count() == 50
+        page.locator('#pub-load-more').click()
+        page.locator('#pub-load-more').click()
+        assert page.locator('#pub-tbody tr').count() == len(works)
+        assert page.locator('#pub-load-more').is_hidden()
+        assert page.locator('#pub-tbody .td-title').all_text_contents() == [work['title'] for work in reversed(works)]
+        assert 'work-enrichment.json' not in requests
+        browser.close()

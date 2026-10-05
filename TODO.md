@@ -8,7 +8,7 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-10-02; implementation progress and remaining evidence/access
+- Last reviewed: 2026-10-05; implementation progress and remaining evidence/access
   dependencies recorded separately from completed history.
 
 ## P0 — Release and integrity

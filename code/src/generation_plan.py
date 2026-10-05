@@ -11,7 +11,9 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
+import tempfile
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -405,20 +407,41 @@ def load_regeneration_state(repo_root: Path = REPO_ROOT) -> dict[str, str]:
         payload = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError):
         return {}
-    if not isinstance(payload, dict) or not isinstance(payload.get("steps"), dict):
+    if not isinstance(payload, dict):
         return {}
-    return {str(key): str(value) for key, value in payload["steps"].items()}
+    version = payload.get("schema_version")
+    entries = payload.get("steps")
+    if type(version) is not int or version != REGENERATION_STATE_SCHEMA_VERSION:
+        return {}
+    if not isinstance(entries, dict) or any(
+        not isinstance(key, str) or not key or not isinstance(value, str)
+        or re.fullmatch(r"[0-9a-f]{64}", value) is None
+        for key, value in entries.items()
+    ):
+        return {}
+    return entries.copy()
 
 
 def save_regeneration_state(state: dict[str, str], repo_root: Path = REPO_ROOT) -> None:
-    """Persist fingerprints deterministically (no timestamps, sorted keys)."""
+    """Atomically persist deterministic fingerprints without replacing on failure."""
     payload = {
         "schema_version": REGENERATION_STATE_SCHEMA_VERSION,
         "steps": dict(sorted(state.items())),
     }
     path = regeneration_state_path(repo_root)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    temporary: Path | None = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w", encoding="utf-8", dir=path.parent,
+            prefix=".regeneration-state-", suffix=".tmp", delete=False,
+        ) as handle:
+            temporary = Path(handle.name)
+            handle.write(json.dumps(payload, indent=2, sort_keys=True) + "\n")
+        os.replace(temporary, path)
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
 
 
 def input_fingerprint(
@@ -454,8 +477,8 @@ def input_fingerprint(
             return None
         for path in matches:
             rel = path.relative_to(repo_root).as_posix()
-            digest.update(f"{rel}\0{path.stat().st_size}\0".encode())
             try:
+                digest.update(f"{rel}\0{path.stat().st_size}\0".encode())
                 with path.open("rb") as handle:
                     for chunk in iter(lambda: handle.read(1 << 20), b""):
                         digest.update(chunk)
@@ -495,10 +518,22 @@ def record_step_state(
     step: GenerationStep,
     state: dict[str, str],
     repo_root: Path = REPO_ROOT,
-) -> None:
-    """Store the current input fingerprint after a step ran successfully."""
+    *,
+    expected_fingerprint: str | None = None,
+) -> bool:
+    """Cache a successful writer only while its source contract is unchanged.
+
+    Drivers pass the fingerprint observed before invoking the writer. An input
+    change or unreadable input removes any previous cache entry so the next pass
+    renders again. Returns whether a usable fingerprint was recorded.
+    """
     if not step.inputs:
-        return
+        return False
     fingerprint = step_input_fingerprint(step, repo_root)
-    if fingerprint is not None:
-        state[step.identifier] = fingerprint
+    if fingerprint is None or (
+        expected_fingerprint is not None and fingerprint != expected_fingerprint
+    ):
+        state.pop(step.identifier, None)
+        return False
+    state[step.identifier] = fingerprint
+    return True

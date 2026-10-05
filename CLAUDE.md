@@ -39,7 +39,7 @@ Python tooling is `uv`-only (never bare `pip`). Everything runs from the repo ro
 
 ```bash
 # Environment (the .venv interpreter path goes stale if the repo is moved — recreate it):
-uv venv --python 3.12 && uv pip install -e .
+uv sync --python 3.12
 
 # Tests (CI gate):
 uv run python3 -m pytest code/tests -q
@@ -62,12 +62,20 @@ hosted projection and GitHub tree/raw fallbacks for omitted extracted paper imag
 
 ## Interactive Layer (added 2026-07-05)
 
-Every indexable page includes the two site-wide JS modules:
+Every indexable page includes the shared interactive modules; page-specific runtimes are declared by the corresponding source page or generator:
 
 | Module | File | Features |
 |--------|------|----------|
 | **TTS Controls** | `js/tts-controls.js` | Web Speech API read-aloud, floating panel (T key), speed/voice selection, paragraph highlighting, auto-scroll |
 | **Interactive** | `js/interactive.js` | Reading progress bar, scroll-to-top button, keyboard shortcuts overlay (? key), section anchor copy-links, search autocomplete (search-index.json), image lazy loading, external link safety |
+| **Menu Escape** | `js/menu-esc.js` | Closes the mobile navigation with Escape |
+
+`js/nav-toggle.js` is loaded synchronously in pages that include the mobile
+toggle. Navigation stays expanded if that small head asset is blocked or
+JavaScript is disabled. Search autocomplete uses `search-index-core.json`;
+the dedicated search page initially browses the small bootstrap export and
+loads deeper segments on demand. See [`docs/operations/site-runtime.md`](docs/operations/site-runtime.md)
+for the exact gallery, publications, search, video, and worker contracts.
 
 To verify:
 - Press `T` → TTS panel opens
@@ -76,7 +84,10 @@ To verify:
 - Type in search input → autocomplete suggestions from search-index.json
 - Hover section `h2` heading → `#` anchor link appears (click to copy URL)
 
-**CSS** for all new components appended to `style.css`. Respects `prefers-reduced-motion`. Hidden in print + mobile responsive.
+Shared styling lives in `style.css`, with homepage overrides in `css/home.css`.
+Use the design-system tokens, preserve reduced-motion behavior, and check the
+specific component's print/mobile contract rather than assuming every widget
+is hidden in every context.
 
 `.github/workflows/validate.yml` runs `validate_repo.py` + `pytest` on every push/PR.
 Other workflows: `pages.yml` (Pages deploy on main), `indexnow-on-push.yml`, `freshness.yml`, `live-verify.yml`.
@@ -134,8 +145,10 @@ derives each URL's `<lastmod>` from **git commit dates**, so regenerate `sitemap
 committing page changes (a fresh commit bumps every touched file's date) and keep CI on a
 full-history checkout (`fetch-depth: 0`) or `build_sitemap.py --check` reports a stale sitemap. Network-dependent
 generators (`build_github_inventory.py`, `refresh_public_sources.py`) hit live APIs; their
-outputs are committed — patch the output by hand if you only need a small head/meta change
-and can't reach the API, then keep the template in sync.
+outputs are committed. Render cached inventory data with `render_github_inventory.py`
+when changing its template or presentation. If fresh API data is unavailable,
+retain the dated snapshot and its caveat; do not silently replace generated
+records with hand-written substitutes.
 
 For interactive-layer changes, run the cached Playwright behavior suite in
 `code/orchestrators/browser_qa.py` in addition to `browser_smoke.py`; it covers
@@ -185,3 +198,7 @@ After major SEO/sitemap changes, run `gsc_followup_preflight.py` then follow
 - `GENERATED.md` — the exhaustive rebuild matrix. `AGENT_START.md` — task recipes.
 - `docs/README.md` — human docs index; `docs/seo/`, `docs/design/`, `docs/operations/`,
   `docs/security/` hold the topic runbooks.
+- `docs/operations/development.md` — architecture, configuration ownership, source
+  boundaries, and proportionate validation. `docs/manuscript/README.md` documents
+  the repository-methods draft and local `validate_manuscript.py` gate; structural
+  acceptance is separate from rendering and external publication readiness.

@@ -2,6 +2,28 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-10-05
+
+- **Regeneration reliability:** the default writer and fingerprint cache use
+  the same scoped repository root. Source changes during rendering invalidate
+  the cache, failed forced writers retire prior entries, and malformed cache
+  records trigger a cold rebuild. Atomic bookkeeping and a repository-scoped
+  single-writer lock preserve the restart boundary across concurrent runs.
+- **Gallery and catalog resilience:** invalid compact/detail records preserve
+  native artwork links or expose an explicit retry. Viewer images try a finite
+  set of retained source resolutions, with visible source links on mobile when
+  media fails. Sorting preserves publication batches; exhausted load controls
+  disappear and keyboard load-more moves focus to newly revealed works.
+  The art page suppresses unrelated decorative media. The optional hero canvas
+  stays static for reduced motion and pauses when hidden or outside the viewport.
+- **Repository manuscript and development guidance:** a source-backed methods
+  draft replaces generic scaffold prose, with architecture/evidence diagrams
+  and explicit source ownership. The local read-only manuscript gate checks
+  configuration, section labels, citation-key/entry boundaries, and local
+  references. It does not render outputs, validate full BibTeX field syntax,
+  or establish publication readiness. Onboarding and configuration runbooks
+  point to the shared generation plan and preserve archive/evidence boundaries.
+
 ## 2026-10-02
 
 - **Progressive catalog startup:** the search page browses a generated preview

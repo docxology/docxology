@@ -17,15 +17,22 @@ See root [AGENTS.md](../AGENTS.md) for site/SEO, teaching-line alignment (`index
 
 Use [GENERATED.md](../GENERATED.md) and [`data/generated-manifest.json`](../data/generated-manifest.json) as the exhaustive rebuild matrix (orchestrator → output paths). This file records **ordering principles** only:
 
-1. **Bibliography edits** — `code/orchestrators/sync_publications_html.py --apply`, then `export_bibliography.py`, then downstream HTML/JSON that consume `data/works.json` (work pages, domain pages, search index, feed, sitemap).
-2. **Software or claims edits** — `export_agent_data.py`, then evidence/catalog/search exports that read `data/claims.json` or `data/software.json`.
+1. **Bibliography edits** — `export_bibliography.py`, then `code/orchestrators/sync_publications_html.py --apply`, then downstream HTML/JSON that consume `data/works.json` (work pages, domain pages, search index, feed, sitemap). Use `regenerate_all.py` for the authoritative ordered passes rather than constructing a partial chain from this overview.
+2. **Software or claims edits** — `sync_software_html.py --apply` after curated software edits, then `export_agent_data.py` and evidence/catalog/search exports that read `data/claims.json` or `data/software.json`.
 3. **YouTube metadata edits** — `build_video_pages.py`, then catalog/search/sitemap exports that read `data/videos.json`; run `fetch_video_transcripts.py` first only when refreshing cached caption text.
 4. **Resume/CV edits** — `build_resume.py --all` after `resume/source.json`, bibliography/software exports, Scholar snapshot, or claim data changes.
 5. **Changelog or manifest changes** — `build_updates_page.py` / `build_generated_manifest.py` when public changelog or generated-artifact lists change.
 6. **Freshness and QA** — public-source snapshots, external-link checks, live-site verification, accessibility/visual QA under [`reports/`](../reports/); triage bot-protection (403/429) before rewriting site copy based on checker output alone.
 7. **Health gate** — `code/orchestrators/validate_repo.py` before declaring the repo healthy; it includes publication-skill coverage/frontmatter checks through `code/orchestrators/audit_publication_skills.py --check`.
-8. **Interactive layer rebuild** — after updating `js/tts-controls.js`, `js/interactive.js`, `js/search-utils.js`, `js/search-page.js`, or `js/menu-esc.js`, or changing the shared script constants in `code/src/site_nav.py` (`INTERACTIVE_SCRIPTS`, `MENU_ESC_SCRIPT`, `HEAD_EXTRAS`), regenerate all generated pages (`regenerate_all.py`) and update hand-authored pages. Script tags use a cache-busting `?v=<date>` token — bump it in `site_nav.py` (shared search/interactive token currently `?v=site-20261002`) and corresponding hand-authored `<script src>` tags when the JS changes. CSP meta tag (`script-src 'self'`) blocks inline handlers — use `code/orchestrators/deploy_seo_security.py` to add CSP/rel-me/hreflang to new pages, and `code/orchestrators/migrate_inline_handlers.py` to convert any new inline `on*` handlers to `data-*` attributes.
+8. **Interactive layer rebuild** — after updating shared or page-specific JavaScript, change its cache token at the authoritative source (`code/src/site_nav.py`, templates, and hand-authored pages), regenerate all generated pages (`regenerate_all.py`), and update the worker shell/cache version when those assets change. Read current tokens from source rather than copying a dated value from documentation. CSP meta tag (`script-src 'self'`) blocks inline handlers — use `code/orchestrators/deploy_seo_security.py` to add CSP/rel-me/hreflang to new pages, and `code/orchestrators/migrate_inline_handlers.py` to convert any new inline `on*` handlers to `data-*` attributes. Run actual browser behavior checks as described in [`operations/site-runtime.md`](operations/site-runtime.md).
 9. **Landing** — `docs/operations/settle.md` (`code/orchestrators/settle.py`) classifies the dirty paths, runs the tiered battery, and splits payload/control-tail commits.
+
+## Architecture and manuscript boundaries
+
+- [`operations/development.md`](operations/development.md) maps the static site, thin command entry points, shared modules, configuration, and source authority. Keep reusable policy in shared code and the ordered plan; documentation should link that authority instead of introducing a second configuration layer.
+- [`manuscript/`](manuscript/README.md) documents the repository system itself. It is distinct from archived publication text under `papers/`.
+- `uv run python3 code/orchestrators/validate_manuscript.py` checks manuscript structure, config/path binding, citations, tokens, and local references. It does not render a document or attest scientific validity, source extraction completeness, licensing, or publication readiness.
+- See [`operations/accessibility-qa.md`](operations/accessibility-qa.md) for capture and explicit visual-review records. Screenshot generation, automated browser assertions, and human visual approval are separate evidence.
 
 ## Canonical URLs and reports
 

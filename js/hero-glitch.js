@@ -22,20 +22,22 @@ if (canvas) {
     boostUntil: 0,
     pointer: { x: 0, y: 0, target: 0, value: 0 },
     particles: [],
+    frameId: 0,
   };
 
+  const loadImage = (src) => new Promise((resolve) => {
+    const img = new Image();
+    img.decoding = "async";
+    img.onload = () => resolve(img);
+    img.onerror = () => resolve(null);
+    img.src = src;
+  });
+  // A reduced-motion visit needs one static source, not a five-image cycle.
+  const initialSources = reduceMotion.matches ? sources.slice(0, 1) : sources;
   const images = await Promise.all(
-    sources.map(
-      (src) =>
-        new Promise((resolve) => {
-          const img = new Image();
-          img.decoding = "async";
-          img.onload = () => resolve(img);
-          img.onerror = () => resolve(null);
-          img.src = src;
-        }),
-    ),
+    initialSources.map(loadImage),
   ).then((loaded) => loaded.filter(Boolean));
+  let additionalImages = null;
 
   if (images.length > 0 && ctx && hero) {
     const sampleCanvas = document.createElement("canvas");
@@ -67,9 +69,11 @@ if (canvas) {
       canvas.style.height = `${rect.height}px`;
       state.renderedActive = -1;
       sampleParticles(images[state.active]);
+      drawFrame(reduceMotion.matches ? 0 : performance.now());
     }
 
     function sampleParticles(img) {
+      if (reduceMotion.matches) { state.particles = []; return; }
       if (!sampleCtx || !img) return;
       sampleCtx.clearRect(0, 0, sampleSize.width, sampleSize.height);
       sampleCtx.fillStyle = "#fff";
@@ -175,7 +179,18 @@ if (canvas) {
     }
 
     function drawFrame(time) {
-      const cycleMs = reduceMotion.matches ? 18000 : 7600;
+      if (reduceMotion.matches) {
+        state.active = 0;
+        ctx.fillStyle = "#000";
+        ctx.fillRect(0, 0, state.width, state.height);
+        const rect = coverRect(images[0], state.width, state.height, 1.02);
+        ctx.save();
+        ctx.filter = "grayscale(1) contrast(1.42) brightness(0.46)";
+        ctx.drawImage(images[0], rect.x, rect.y, rect.width, rect.height);
+        ctx.restore();
+        return;
+      }
+      const cycleMs = 7600;
       const nextActive = Math.floor(time / cycleMs) % images.length;
       if (nextActive !== state.active) {
         state.active = nextActive;
@@ -224,13 +239,21 @@ if (canvas) {
     }
 
     function loop(time) {
-      if (state.visible && !document.hidden) {
-        drawFrame(time);
+      state.frameId = 0;
+      if (reduceMotion.matches || !state.visible || document.hidden) return;
+      drawFrame(time);
+      startAnimation();
+    }
+
+    function startAnimation() {
+      if (!state.frameId && !reduceMotion.matches && state.visible && !document.hidden) {
+        state.frameId = window.requestAnimationFrame(loop);
       }
-      window.setTimeout(
-        () => window.requestAnimationFrame(loop),
-        reduceMotion.matches ? 700 : 0,
-      );
+    }
+
+    function stopAnimation() {
+      window.cancelAnimationFrame(state.frameId);
+      state.frameId = 0;
     }
 
     hero.addEventListener("pointermove", (event) => {
@@ -255,17 +278,34 @@ if (canvas) {
     });
 
     reduceMotion.addEventListener("change", () => {
+      stopAnimation();
+      state.pointer = { x: 0, y: 0, target: 0, value: 0 };
+      state.boostUntil = 0;
       state.renderedActive = -1;
       sampleParticles(images[state.active]);
+      if (reduceMotion.matches) drawFrame(0);
+      else {
+        if (initialSources.length < sources.length && !additionalImages) {
+          additionalImages = Promise.all(sources.slice(1).map(loadImage))
+            .then(loaded => images.push(...loaded.filter(Boolean)));
+        }
+        startAnimation();
+      }
     });
 
     const observer = new IntersectionObserver(([entry]) => {
       state.visible = Boolean(entry?.isIntersecting);
+      if (state.visible) startAnimation();
+      else stopAnimation();
     });
     observer.observe(hero);
 
     window.addEventListener("resize", resize, { passive: true });
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) stopAnimation();
+      else startAnimation();
+    });
     resize();
-    window.requestAnimationFrame(loop);
+    startAnimation();
   }
 }

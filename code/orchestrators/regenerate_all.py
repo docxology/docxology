@@ -45,6 +45,8 @@ failure.
 
 Caveats:
   * Run from the repo root (enforced via REPO_ROOT).
+  * A private POSIX flock rejects overlapping coordinated runs before any writer;
+    it covers all passes and optional validation. Never delete its lock file.
   * `sitemap.xml` <lastmod> derives from git commit dates, so for an accurate sitemap
     regenerate it AGAIN after committing (see the runbook's Acceptance Checks).
   * When counts changed (e.g. a new publication), the cached live-site snapshot's
@@ -55,12 +57,22 @@ Caveats:
 from __future__ import annotations
 
 import argparse
+import os
+import stat
 import subprocess
 import sys
-from collections.abc import Callable
+from collections.abc import Callable, Iterator
+from contextlib import contextmanager
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+try:
+    import fcntl
+except ImportError:  # POSIX flock is required; never silently run unlocked.
+    fcntl = None
+
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -72,6 +84,7 @@ from docxology_tools.generation_plan import (  # noqa: E402
     load_regeneration_state,
     record_step_state,
     save_regeneration_state,
+    step_input_fingerprint,
     step_skip_reason,
     validate_generation_plan,
 )
@@ -84,32 +97,98 @@ CHAIN: list[tuple[str, list[str]]] = [
 ]
 
 
-def _run(script: str, args: list[str]) -> None:
+class RegenerationLockError(RuntimeError):
+    """The repository cannot safely acquire its single-writer lock."""
+
+
+@contextmanager
+def _regeneration_lock(repo_root: Path) -> Iterator[int]:
+    """Acquire one private, nonblocking POSIX lock without replacing its inode."""
+    if fcntl is None or not hasattr(os, "O_NOFOLLOW") or not hasattr(os, "O_DIRECTORY"):
+        raise RegenerationLockError("regeneration requires POSIX flock and safe file opens")
+    directory = repo_root.resolve() / ".docxology"
+    descriptor = directory_descriptor = None
+    try:
+        try:
+            directory.mkdir(mode=0o700, exist_ok=True)
+            directory_descriptor = os.open(
+                directory, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW,
+            )
+            descriptor = os.open(
+                "regeneration.lock", os.O_RDWR | os.O_CREAT | os.O_NOFOLLOW | os.O_NONBLOCK,
+                0o600, dir_fd=directory_descriptor,
+            )
+            metadata = os.fstat(descriptor)
+            if not stat.S_ISREG(metadata.st_mode) or metadata.st_nlink != 1:
+                raise RegenerationLockError("regeneration lock must be a regular, unshared file")
+            os.fchmod(descriptor, 0o600)
+            try:
+                fcntl.flock(descriptor, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            except BlockingIOError as exc:
+                raise RegenerationLockError(
+                    f"another regeneration is active for {repo_root.resolve()}; "
+                    "wait for it to finish and retry (do not delete the lock file)"
+                ) from exc
+        except OSError as exc:
+            raise RegenerationLockError(f"cannot acquire regeneration lock: {exc}") from exc
+        yield descriptor
+    finally:
+        # Closing releases flock on success or failure. Do not explicitly unlock:
+        # a launched writer may still hold this descriptor if the driver exits.
+        if descriptor is not None:
+            os.close(descriptor)
+        if directory_descriptor is not None:
+            os.close(directory_descriptor)
+
+
+def _run(
+    script: str, args: list[str], *, repo_root: Path = REPO_ROOT,
+    lock_descriptor: int | None = None,
+) -> None:
     # ReportLab is pinned in pyproject.toml for byte-identical PDFs. Use the
     # locked uv environment for the CV generator even when this driver is
     # launched with a different system Python.
     interpreter = ["uv", "run", "python3"] if script == "build_resume.py" else [sys.executable]
     cmd = [*interpreter, f"code/orchestrators/{script}", *args]
     print(f"\n=== {script} {' '.join(args)} ".rstrip().ljust(72, "="))
-    subprocess.run(cmd, cwd=REPO_ROOT, check=True)
+    subprocess.run(
+        cmd, cwd=repo_root, check=True,
+        pass_fds=() if lock_descriptor is None else (lock_descriptor,),
+    )
 
 
 def run_regeneration(
     *,
     force: bool = False,
-    runner: Callable[[str, list[str]], None] = _run,
+    runner: Callable[[str, list[str]], None] | None = None,
     repo_root: Path = REPO_ROOT,
     emit: Callable[[str], None] = print,
     steps: tuple[GenerationStep, ...] = LOCAL_GENERATION_STEPS,
 ) -> tuple[int, int]:
-    """Run the write chain, skipping input-gated steps whose inputs are fresh.
+    """Acquire the repository lock and run one input-gated write pass.
 
     Steps without declared inputs always run. Fingerprint state is persisted
     only after a step ran successfully, and only when something actually ran,
     so a crash or a pure-skip run can never record a state the tree does not
-    reflect. Returns ``(ran, skipped)``.
+    reflect. Inputs must have the same fingerprint before and after the writer;
+    a concurrent change invalidates that cache entry. The default child process
+    runs in ``repo_root`` just like the cache. Returns ``(ran, skipped)``.
     """
+    with _regeneration_lock(repo_root) as lock_descriptor:
+        return _run_regeneration_locked(
+            force=force, runner=runner, repo_root=repo_root, emit=emit, steps=steps,
+            lock_descriptor=lock_descriptor,
+        )
+
+
+def _run_regeneration_locked(
+    *, force: bool, runner: Callable[[str, list[str]], None] | None,
+    repo_root: Path, emit: Callable[[str], None], steps: tuple[GenerationStep, ...],
+    lock_descriptor: int,
+) -> tuple[int, int]:
+    """Run a pass under its caller's lock; never acquire recursively."""
     state = load_regeneration_state(repo_root)
+    persisted_state = state.copy()
     ran = skipped = 0
     for step in steps:
         reason = None if force else step_skip_reason(step, state, repo_root)
@@ -117,8 +196,26 @@ def run_regeneration(
             emit(f"skip {step.identifier}: {reason}")
             skipped += 1
             continue
-        runner(step.script, list(step.write_args))
-        record_step_state(step, state, repo_root)
+        before = step_input_fingerprint(step, repo_root)
+        # Invalidate an older successful entry before touching outputs. A
+        # forced writer can fail or be interrupted with unchanged inputs;
+        # leaving that old entry would let the next run skip partial output.
+        # Persist only invalidations here, never successful partial-pass work.
+        if step.identifier in persisted_state:
+            persisted_state.pop(step.identifier)
+            save_regeneration_state(persisted_state, repo_root)
+        if runner is None:
+            _run(
+                step.script, list(step.write_args), repo_root=repo_root,
+                lock_descriptor=lock_descriptor,
+            )
+        else:
+            runner(step.script, list(step.write_args))
+        if step.inputs:
+            if before is None:
+                state.pop(step.identifier, None)
+            elif not record_step_state(step, state, repo_root, expected_fingerprint=before):
+                emit(f"cache invalidated {step.identifier}: declared inputs changed during writer")
         ran += 1
     if ran:
         save_regeneration_state(state, repo_root)
@@ -129,7 +226,7 @@ def run_regeneration_passes(
     *,
     passes: int = 2,
     force: bool = False,
-    runner: Callable[[str, list[str]], None] = _run,
+    runner: Callable[[str, list[str]], None] | None = None,
     repo_root: Path = REPO_ROOT,
     emit: Callable[[str], None] = print,
     steps: tuple[GenerationStep, ...] = LOCAL_GENERATION_STEPS,
@@ -142,11 +239,24 @@ def run_regeneration_passes(
     """
     if not 1 <= passes <= 4:
         raise ValueError("regeneration passes must be between 1 and 4")
+    with _regeneration_lock(repo_root) as lock_descriptor:
+        return _run_regeneration_passes_locked(
+            passes=passes, force=force, runner=runner, repo_root=repo_root,
+            emit=emit, steps=steps, lock_descriptor=lock_descriptor,
+        )
+
+
+def _run_regeneration_passes_locked(
+    *, passes: int, force: bool, runner: Callable[[str, list[str]], None] | None,
+    repo_root: Path, emit: Callable[[str], None], steps: tuple[GenerationStep, ...],
+    lock_descriptor: int,
+) -> tuple[int, int]:
     ran = skipped = 0
     for number in range(1, passes + 1):
         emit(f"Local regeneration pass {number}/{passes}")
-        pass_ran, pass_skipped = run_regeneration(
+        pass_ran, pass_skipped = _run_regeneration_locked(
             force=force, runner=runner, repo_root=repo_root, emit=emit, steps=steps,
+            lock_descriptor=lock_descriptor,
         )
         ran += pass_ran
         skipped += pass_skipped
@@ -176,16 +286,27 @@ def main() -> int:
             print(line)
         return 0
 
-    ran, skipped = run_regeneration_passes(force=args.force, passes=args.passes)
+    try:
+        with _regeneration_lock(REPO_ROOT) as lock_descriptor:
+            ran, skipped = _run_regeneration_passes_locked(
+                force=args.force, passes=args.passes, repo_root=REPO_ROOT,
+                runner=None, emit=print, steps=LOCAL_GENERATION_STEPS,
+                lock_descriptor=lock_descriptor,
+            )
+            if args.validate:
+                print("\n=== validate_repo.py ".ljust(72, "="))
+                subprocess.run(
+                    [sys.executable, "code/orchestrators/validate_repo.py"],
+                    cwd=REPO_ROOT, check=True, pass_fds=(lock_descriptor,),
+                )
+    except RegenerationLockError as exc:
+        print(f"regeneration refused: {exc}", file=sys.stderr)
+        return 1
 
     print(f"\nRan {ran} local surfaces (skipped {skipped} with unchanged declared inputs).")
     print("Note: network freshness (GitHub inventory, live-site snapshot, public sources) "
           "was NOT run — do that deliberately per docs/operations/publication-sync.md. "
           "Use --force to ignore skip-on-unchanged state and rebuild every surface.")
-
-    if args.validate:
-        print("\n=== validate_repo.py ".ljust(72, "="))
-        subprocess.run([sys.executable, "code/orchestrators/validate_repo.py"], cwd=REPO_ROOT, check=True)
 
     return 0
 

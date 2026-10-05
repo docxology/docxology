@@ -45,13 +45,22 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `orchestrators/generate_citation_cff.py` | Reconcile paper CITATION.cff (CFF 1.2.0): titles/authors from `pages/BIBLIOGRAPHY.md`, canonical/artifact DOI roles from `metadata.json`, and other hand-maintained fields preserved |
 | `orchestrators/deploy_seo_security.py` | Idempotent deployment of CSP, rel-me, and hreflang tags to indexable HTML pages |
 | `orchestrators/migrate_inline_handlers.py` | Migrate inline `onclick`/`onchange`/`onsubmit` handlers to `data-*` attributes for CSP compliance |
-| `orchestrators/optimize_font_loading.py` | Make Google Fonts CSS non-render-blocking via `media="print" onload` pattern |
+| `orchestrators/optimize_font_loading.py` | Migrate legacy Google Fonts links to CSP-safe `media="print" data-media-swap="all"`; current runtime uses same-origin/system fallbacks |
 | `data/youtube_personal.json` | Cached export (personal channel) |
 | `data/youtube_institute.json` | Cached export (institute channel) |
 | `tests/test_youtube_fetcher.py` | Unit tests for fetcher parsing and normalization |
 | `tests/test_count_consistency.py` | Unit tests for volatile-count drift detection |
 
 Other orchestrators (external links, sitemap, visual QA, GitHub inventory, etc.) are listed in [GENERATED.md](../GENERATED.md) and [`data/generated-manifest.json`](../data/generated-manifest.json).
+
+The executable local write/check order lives in
+[`src/generation_plan.py`](src/generation_plan.py); do not introduce a second
+hand-maintained command matrix. Commands own CLI parsing and entry-point I/O,
+while reusable policy belongs in shared modules. See
+[`development.md`](../docs/operations/development.md) and
+[`regeneration.md`](../docs/operations/regeneration.md) for configuration owners,
+ordered passes, and cache/failure boundaries. The read-only manuscript command
+delegates its source checks to [`src/manuscript_validation.py`](src/manuscript_validation.py).
 
 ## Imports and the package bootstrap
 
@@ -101,7 +110,7 @@ Rules:
 
 Use [GENERATED.md](../GENERATED.md) as the exhaustive rebuild matrix. Dependency order:
 
-1. Bibliography edits — `code/orchestrators/sync_publications_html.py --apply`, `export_bibliography.py`, then work/domain/search/feed/sitemap exports.
+1. Bibliography edits — `export_bibliography.py`, then `code/orchestrators/sync_publications_html.py --apply`, then work/domain/search/feed/sitemap exports. Use the declared regeneration plan for the full ordered passes.
 2. Software catalog edits — `code/orchestrators/sync_software_html.py --apply`, `export_agent_data.py`, then domain/search/catalog exports.
 3. YouTube metadata edits — `build_video_pages.py`, then search/catalog/sitemap exports; run `fetch_video_transcripts.py` first only when refreshing cached caption text.
 4. Claims-only edits — `export_agent_data.py`, then evidence/catalog/search exports.

@@ -11,7 +11,7 @@ This directory follows the docxology/template manuscript contract:
 
 ## Editing Rules
 
-- Treat this scaffold as an outline until project-specific evidence is bound.
+- Keep this technical draft bound to public repository sources linked in its sections. New architecture statements need current source evidence; new quantitative results need a repeatable method and dated receipts.
 - Do not fabricate results, benchmark numbers, citations, DOIs, or release claims.
 - Keep project-specific computation in source modules and scripts; keep manuscript files as prose and evidence maps.
 - Prefer explicit paths to source surfaces when describing evidence.
@@ -22,3 +22,5 @@ This directory follows the docxology/template manuscript contract:
 A master profile repository indexing bibliography, software, generated GitHub inventory, and research documentation across entomology, active inference, cognitive security, and art/synergetics.
 
 Evidence boundary: Treat generated inventories and profile pages as index artifacts; distinguish current generated state from external publication readiness.
+
+Run `uv run python3 code/orchestrators/validate_manuscript.py` from the repository root after edits. This read-only gate checks source structure and configuration, not complete BibTeX syntax, rendering, source extraction accuracy, licensing, or scientific/editorial approval. `config.yaml` paths are relative to this repository root. Archived paper bytes and metadata are outside this directory's editing scope.

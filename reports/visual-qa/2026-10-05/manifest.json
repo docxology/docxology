@@ -1,0 +1,251 @@
+{
+  "generated_at": "2026-10-05T15:10:56Z",
+  "source_commit": "a7ef3df9cfb4daa928807aaadda25df2a71e9616",
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    ".gitignore",
+    "AGENT_START.md",
+    "CHANGELOG.md",
+    "CLAUDE.md",
+    "TODO.md",
+    "art.html",
+    "code/AGENTS.md",
+    "code/orchestrators/build_generated_manifest.py",
+    "code/orchestrators/regenerate_all.py",
+    "code/orchestrators/validate_repo.py",
+    "code/src/docxology_tools/__init__.py",
+    "code/src/generation_plan.py",
+    "code/templates/publications.html.tmpl",
+    "code/tests/test_art_gallery_progressive.py",
+    "code/tests/test_homepage_performance.py",
+    "code/tests/test_publications_startup.py",
+    "docs/AGENTS.md",
+    "docs/README.md",
+    "docs/design/animations.md",
+    "docs/manuscript/00_abstract.md",
+    "docs/manuscript/01_introduction.md",
+    "docs/manuscript/02_system_context.md",
+    "docs/manuscript/03_methods.md",
+    "docs/manuscript/04_artifacts_and_evidence.md",
+    "docs/manuscript/05_reproducibility.md",
+    "docs/manuscript/06_limitations_and_next_steps.md",
+    "docs/manuscript/98_symbols_glossary.md",
+    "docs/manuscript/99_references.md",
+    "docs/manuscript/AGENTS.md",
+    "docs/manuscript/MANUSCRIPT_STATUS.md",
+    "docs/manuscript/README.md",
+    "docs/manuscript/S01_source_surface.md",
+    "docs/manuscript/SYNTAX.md",
+    "docs/manuscript/config.yaml",
+    "docs/manuscript/preamble.md",
+    "docs/manuscript/references.bib",
+    "docs/operations/README.md",
+    "docs/operations/accessibility-qa.md",
+    "docs/operations/site-runtime.md",
+    "js/art-gallery.js",
+    "js/hero-glitch.js",
+    "js/publications.js",
+    "publications.html",
+    "pyproject.toml",
+    "updates.html",
+    "uv.lock",
+    "code/orchestrators/validate_manuscript.py",
+    "code/src/manuscript_validation.py",
+    "code/tests/test_manuscript_validation.py",
+    "code/tests/test_regeneration_contracts.py",
+    "docs/operations/development.md",
+    "docs/operations/regeneration.md"
+  ],
+  "source_tree_sha": "9142017adc02cec13bfe6eb24364b0aeac3dfef4",
+  "tool": "playwright screenshot",
+  "note": "Human review still required; these snapshots guard against obvious layout regressions.",
+  "screenshots": [
+    {
+      "page": "index.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-05/home-desktop.png",
+      "sha256": "03c400a82d6bb2eb8403dcd86c5aefe0b4f0d6f412930cc60266e78f3678bd32"
+    },
+    {
+      "page": "index.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-05/home-mobile.png",
+      "sha256": "669d02d9d5037e0c7d1fc9155f991882b80722e20b153c9fd5cd730337b2b36d"
+    },
+    {
+      "page": "publications.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-05/publications-desktop.png",
+      "sha256": "13b548db2ef4f629982f669922bbef3af8815574dde8ad926a0b708e26e5e474"
+    },
+    {
+      "page": "publications.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-05/publications-mobile.png",
+      "sha256": "88f01d4730e612e3f2cb17b714dafd16f21327c12e0652eaefb1ecba8fdc2a0f"
+    },
+    {
+      "page": "works/index.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-05/works-desktop.png",
+      "sha256": "6ebd19c1737eea70ab82f0b56b53f38e56acf90c458f5705d45ac08b359beb44"
+    },
+    {
+      "page": "works/index.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-05/works-mobile.png",
+      "sha256": "b77e414b2f89a9b74779efa95207bcdc63308009f3015f55d761cedb731642bf"
+    },
+    {
+      "page": "domains.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-05/domains-desktop.png",
+      "sha256": "83435060bb17b8f9e765e873037f8269ba760827e7f7a43b1e49c0b8f2d21e03"
+    },
+    {
+      "page": "domains.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-05/domains-mobile.png",
+      "sha256": "781085a5c42ce69b21b48c910b2408fe1fd999419af07cfd9c7af12c9491b12c"
+    },
+    {
+      "page": "search.html?q=active%20inference",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-05/search-desktop.png",
+      "sha256": "61074085fac04c11c8f1d0b4d5d183f9cbc90d49f602f2ed5f3344f75b3161d7"
+    },
+    {
+      "page": "search.html?q=active%20inference",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-05/search-mobile.png",
+      "sha256": "9b5d391b20c172c8f8495881904734cc435e535d2c2fa15cae683986d5ba3ffb"
+    },
+    {
+      "page": "repositories.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-05/repositories-desktop.png",
+      "sha256": "e7d754d63686e7150c224e223a4132918b22aab20738ddb4efab9a31f10b2a20"
+    },
+    {
+      "page": "repositories.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-05/repositories-mobile.png",
+      "sha256": "a0eb510b0e3c9aece1ea4abd3a3630fb7e789eaec8f0968a620d47c2f9bff832"
+    },
+    {
+      "page": "repositories-forks.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-05/repository-forks-desktop.png",
+      "sha256": "c2d9a360c9b510c92bc53011f1688c76d7bd7638dbe17b4c8291496b34091f67"
+    },
+    {
+      "page": "repositories-forks.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-05/repository-forks-mobile.png",
+      "sha256": "7fc4397e9bcf934f3e0770c4432acb60023aa885c78d6ff7be5c984a1783c441"
+    },
+    {
+      "page": "catalog.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-05/catalog-desktop.png",
+      "sha256": "e991d9312088130ef439b2c615efa5f9fa3d666f8452c174015f0b74dbed4932"
+    },
+    {
+      "page": "catalog.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-05/catalog-mobile.png",
+      "sha256": "cf8dd1952e11e1e16114746af8f3eab564c86aef3f83063ff76db1868d75a309"
+    },
+    {
+      "page": "updates.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-05/updates-desktop.png",
+      "sha256": "192c390a3aa32575d36ef36d3398ba57be039a89cb43d1ccf976a417c3099435"
+    },
+    {
+      "page": "updates.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-05/updates-mobile.png",
+      "sha256": "47783d9445cf061f37fd00a811e3efaa4903f8f7d9639dac6639ad167cd14951"
+    },
+    {
+      "page": "art.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-05/art-desktop.png",
+      "sha256": "b4998b89563765a9f1a555530db236d66778b7b97db939f5e7364c3c9600142f"
+    },
+    {
+      "page": "art.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-05/art-mobile.png",
+      "sha256": "4cd42f1e2fcb363db7d0dd75ee19635fd1318285547528061ec733f59043b39f"
+    },
+    {
+      "page": "discovery.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-05/discovery-desktop.png",
+      "sha256": "ac9def64abfa5c0d0ae2fb96eaac4bae6c443368182ba37663479e734d8d06d9"
+    },
+    {
+      "page": "discovery.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-05/discovery-mobile.png",
+      "sha256": "8f5c0b5d7a37a27a3561893f1c863042e2334b96db34a4b616a08a79794a7907"
+    },
+    {
+      "page": "cite-verify.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-05/cite-verify-desktop.png",
+      "sha256": "68964845a24ae9f184addf1b0fff0c0559696599e4a663d96e7d9188ea701ab1"
+    },
+    {
+      "page": "cite-verify.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-05/cite-verify-mobile.png",
+      "sha256": "0cb37362a6af831014993e9abb2a68dce9bc94f819a6bb38c104bec083fc03ce"
+    },
+    {
+      "page": "evidence.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-10-05/evidence-desktop.png",
+      "sha256": "807ea949e6b6aa4347069bc65aa8ce44b293ecdc43473ac514302782c7bcbc3d"
+    },
+    {
+      "page": "evidence.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-10-05/evidence-mobile.png",
+      "sha256": "296c5de1c9a89b9c73b2de0fe4d3503e3bfa026716724a7926a8705da54ba0a7"
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "reviewed_by": null,
+    "reviewed_at": null
+  }
+}

@@ -1,10 +1,12 @@
 # Manuscript - docxology
 
-This directory is a template-format manuscript scaffold for:
+This directory contains a source-backed technical draft for:
 
 **docxology: Research, Software, and Citation Index**
 
-A master profile repository indexing bibliography, software, generated GitHub inventory, and research documentation across entomology, active inference, cognitive security, and art/synergetics.
+A public profile repository indexing bibliography, software, generated GitHub inventory, and research documentation across entomology, active inference, cognitive security, and art/synergetics. The draft describes this repository system; archived publications remain under [`papers/`](../../papers/).
+
+Read [`MANUSCRIPT_STATUS.md`](MANUSCRIPT_STATUS.md) for the evidence and rendering boundary. The architecture and configuration map is in [`development.md`](../operations/development.md).
 
 ## File Inventory
 
@@ -30,21 +32,23 @@ A master profile repository indexing bibliography, software, generated GitHub in
 
 | Surface | Role |
 |---|---|
-| `pages/` | Source directory to inspect before turning prose into claims. |
-| `papers/` | Source directory to inspect before turning prose into claims. |
-| `code/` | Source directory to inspect before turning prose into claims. |
-| `reports/` | Source directory to inspect before turning prose into claims. |
-| `resume/` | Source directory to inspect before turning prose into claims. |
-| `works/` | Source directory to inspect before turning prose into claims. |
-| `data/` | Source directory to inspect before turning prose into claims. |
+| [`pages/`](../../pages/) | Curated bibliography, software catalog, profile, and discovery documentation |
+| [`papers/`](../../papers/) | Archived source documents, extracted text, and per-paper documentation |
+| [`code/`](../../code/) | Executable generation, validation, intake, and browser tests |
+| [`reports/`](../../reports/) | Dated source observations and scoped QA evidence |
+| [`resume/`](../../resume/) | Structured CV authority and generated exports |
+| [`works/`](../../works/) | Generated permanent work landing pages |
+| [`data/`](../../data/) | Identity reservations, cached observations, structured exports, and release controls |
 
 ## Verification
 
-From the sibling template checkout, after `link-projects` has synced the sidecar:
+From this repository root:
 
 ```bash
-uv run python -m infrastructure.orchestration link-projects
-uv run python -m infrastructure.validation.cli markdown projects/working/docxology/manuscript/
+uv run python3 code/orchestrators/validate_manuscript.py
+uv run python3 code/orchestrators/validate_manuscript.py --json
 ```
 
-Render only after replacing scaffold prose with project-bound evidence and checking any project-local gates documented in the repository root.
+The read-only validator checks root-relative configuration, section labels, citation-key resolution, unresolved tokens, cross-references, and local references, including reference-style links/images. It checks bounded BibTeX entry delimiters and key inventory, rejecting unclosed entries, stray text, duplicate keys, and unresolved citations. It rejects duplicate YAML keys and non-boolean gate/render settings. It does not validate complete BibTeX field grammar, citation style, TeX rendering, external sources, or publication readiness. `--root PATH` supports disposable repository fixtures; JSON goes to stdout without creating a receipt.
+
+The declared formats in `config.yaml` are requested rendering targets. This repository does not currently declare a manuscript rendering command. A future rendering integration must specify its pinned runtime, output location, cross-reference support, figure handling, and inspected artifact before a rendered-publication claim is added.

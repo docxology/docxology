@@ -1,0 +1,147 @@
+{
+  "generated_at": "2026-10-05T15:10:31Z",
+  "source_commit": "a7ef3df9cfb4daa928807aaadda25df2a71e9616",
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    ".gitignore",
+    "AGENT_START.md",
+    "CHANGELOG.md",
+    "CLAUDE.md",
+    "TODO.md",
+    "art.html",
+    "code/AGENTS.md",
+    "code/orchestrators/build_generated_manifest.py",
+    "code/orchestrators/regenerate_all.py",
+    "code/orchestrators/validate_repo.py",
+    "code/src/docxology_tools/__init__.py",
+    "code/src/generation_plan.py",
+    "code/templates/publications.html.tmpl",
+    "code/tests/test_art_gallery_progressive.py",
+    "code/tests/test_homepage_performance.py",
+    "code/tests/test_publications_startup.py",
+    "docs/AGENTS.md",
+    "docs/README.md",
+    "docs/design/animations.md",
+    "docs/manuscript/00_abstract.md",
+    "docs/manuscript/01_introduction.md",
+    "docs/manuscript/02_system_context.md",
+    "docs/manuscript/03_methods.md",
+    "docs/manuscript/04_artifacts_and_evidence.md",
+    "docs/manuscript/05_reproducibility.md",
+    "docs/manuscript/06_limitations_and_next_steps.md",
+    "docs/manuscript/98_symbols_glossary.md",
+    "docs/manuscript/99_references.md",
+    "docs/manuscript/AGENTS.md",
+    "docs/manuscript/MANUSCRIPT_STATUS.md",
+    "docs/manuscript/README.md",
+    "docs/manuscript/S01_source_surface.md",
+    "docs/manuscript/SYNTAX.md",
+    "docs/manuscript/config.yaml",
+    "docs/manuscript/preamble.md",
+    "docs/manuscript/references.bib",
+    "docs/operations/README.md",
+    "docs/operations/accessibility-qa.md",
+    "docs/operations/site-runtime.md",
+    "js/art-gallery.js",
+    "js/hero-glitch.js",
+    "js/publications.js",
+    "publications.html",
+    "pyproject.toml",
+    "updates.html",
+    "uv.lock",
+    "code/orchestrators/validate_manuscript.py",
+    "code/src/manuscript_validation.py",
+    "code/tests/test_manuscript_validation.py",
+    "code/tests/test_regeneration_contracts.py",
+    "docs/operations/development.md",
+    "docs/operations/regeneration.md"
+  ],
+  "source_tree_sha": "9142017adc02cec13bfe6eb24364b0aeac3dfef4",
+  "tool": "Playwright Python sync API",
+  "scope": "progressive enhancement, interaction, responsive, CSP-adjacent runtime checks",
+  "passing": 8,
+  "count": 8,
+  "checks": [
+    {
+      "name": "core routes render without console errors",
+      "ok": true,
+      "details": {
+        "routes": 6,
+        "console_errors": 0,
+        "page_errors": 0,
+        "known_meta_csp_warnings": 0
+      },
+      "duration_ms": 3039
+    },
+    {
+      "name": "mobile menu opens, closes, and restores focus",
+      "ok": true,
+      "details": {
+        "opened_and_closed": true,
+        "focus_restored": true
+      },
+      "duration_ms": 192
+    },
+    {
+      "name": "no-JavaScript fallbacks remain usable",
+      "ok": true,
+      "details": {
+        "routes": 3,
+        "fallbacks": "visible",
+        "mobile_navigation": "reachable at 320px"
+      },
+      "duration_ms": 271
+    },
+    {
+      "name": "publication filters, announcements, and sorting update state",
+      "ok": true,
+      "details": {
+        "count_before": "50 of 219 shown",
+        "count_after": "50 of 198 shown (filtered from 219)",
+        "non_paper_rows": 0,
+        "sort_state": "descending"
+      },
+      "duration_ms": 364
+    },
+    {
+      "name": "gallery lightbox traps and restores focus",
+      "ok": true,
+      "details": {
+        "trigger": "Open artwork: Solstice (Turning Point)",
+        "focus_restored": true
+      },
+      "duration_ms": 241
+    },
+    {
+      "name": "320px layout honors reduced motion without page overflow",
+      "ok": true,
+      "details": {
+        "routes": 4,
+        "viewport": "320x760",
+        "reduced_motion": true,
+        "max_overflow_px": 2
+      },
+      "duration_ms": 1202
+    },
+    {
+      "name": "forced colors and YouTube iframe policy remain covered",
+      "ok": true,
+      "details": {
+        "forced_colors": true,
+        "iframe_origin": "www.youtube-nocookie.com",
+        "iframe_title": true
+      },
+      "duration_ms": 185
+    },
+    {
+      "name": "keyboard shortcuts contain and restore focus",
+      "ok": true,
+      "details": {
+        "tab_trapped": true,
+        "escape_closed": true,
+        "focus_restored": true
+      },
+      "duration_ms": 161
+    }
+  ]
+}

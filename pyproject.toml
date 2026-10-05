@@ -11,6 +11,8 @@ dependencies = [
     "pytest>=8.0",
     # Parallel test execution for the hosted repository suite.
     "pytest-xdist>=3.6",
+    # Parse the repository manuscript configuration with safe YAML semantics.
+    "pyyaml>=6.0.2",
     "reportlab==4.5.1",
 ]
 

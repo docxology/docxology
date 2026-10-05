@@ -1,81 +1,33 @@
-# Animation System
+# Animation system
 
-Added: 2026-07-05
+Animations support navigation, feedback, and visual continuity. Keep essential content and native links available when animation or JavaScript is unavailable. Source owners are [style.css](../../style.css), [index-page.js](../../js/index-page.js), [interactive.js](../../js/interactive.js), and the optional [hero-glitch.js](../../js/hero-glitch.js).
 
-## Philosophy
+## Motion preferences
 
-The site uses **micro-interactions** — subtle, purposeful animations that enhance usability without distracting. All animations respect `prefers-reduced-motion: reduce` (disabled entirely).
+Shared CSS reduces animation/transition durations and disables smooth scrolling for `prefers-reduced-motion: reduce`. Interactive widgets additionally disable their transitions. The homepage entrance observer is created only when reduced motion is not requested; it does not hide content awaiting animation.
 
-## Animation Types
+The optional canvas runtime observes changes to the motion preference. A reduced-motion visit loads one source image, draws a static frame, and schedules no animation loop. A later change back to motion can fetch the remaining source images once and resume the visible effect.
 
-### Entrance Animations
-```css
-@keyframes fadeUp {
-    from { opacity: 0; transform: translateY(18px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-@keyframes slideUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-```
+## Entrance and interaction effects
 
-Applied via `.animate` class (triggered by the IntersectionObserver in the external `js/interactive.js` runtime):
-- Cards (`.card`, `.stat`, `.pub-item`, `.art-card`, `.connect-card`)
-- Fade in with upward slide when scrolled into view (threshold: 8%)
+[index-page.js](../../js/index-page.js) adds `.animate` to homepage cards, stats, publication items, art cards, and contact cards when its IntersectionObserver reaches an 8% threshold. The shared `.animate` rule uses `fadeUp`; stats override it with `slideUp`. This entrance behavior belongs to the homepage module rather than the shared interactive runtime.
 
-### Hover Transitions
-All interactive cards share a `.25s` transition on:
-- `border-color` — shift from `var(--border)` to `var(--border-hover)` (red)
-- `transform` — subtle `translateY(-2px)` elevation
-- `box-shadow` — increased shadow for depth
+Hover transitions use the actual component rules in `style.css`; keep keyboard focus visible independently of hover. Speech and shortcut panels, scroll-to-top controls, anchor links, and reading progress use their scoped transitions. The reading-progress calculation is clamped to 0–100, updates in a requested animation frame, and lives within the main landmark. Search suggestion visibility changes immediately.
 
-### Interactive Components
-| Component | Animation | Duration |
-|-----------|-----------|----------|
-| TTS Panel | Scale + fade entrance | 0.25s |
-| TTS Toggle | Scale on hover | 0.25s |
-| Scroll-to-top | Fade + translate | 0.25s |
-| Shortcuts overlay | Backdrop blur + fade | 0.25s |
-| Anchor links | Opacity on hover | 0.2s |
-| Reading progress | Width via rAF | 0.1s linear |
-| Search suggestions | Instant (display toggle) | — |
+## Optional canvas effect
 
-### Complex Animations (hero-glitch.js)
-The hero section on `index.html` uses a canvas-based particle system:
-- 150 particles sampled from 5 artwork images
-- Gentle sine-wave oscillation on each particle
-- DPR-aware rendering (capped at 1.65× for performance)
-- 42 particles when reduced motion is preferred
-- Resize handler recalculates positions
+`hero-glitch.js` activates only when a `.hero-glitch-canvas` exists. The current [homepage](../../index.html) includes neither that canvas nor the module, so changes to this optional runtime do not establish a homepage performance improvement.
 
-## Performance
+For pages that opt in, the runtime samples the declared artwork sources, caps normal-motion particles at 150, and caps device-pixel ratio at 1.65. Reduced motion uses a static image without particles, pointer drift, or source cycling. Animation frames pause when the hero leaves the viewport or the document becomes hidden, then resume when visible and motion is permitted. The resize handler recalculates the canvas and draws the appropriate frame.
 
-- All scroll listeners use `{ passive: true }` for non-blocking scroll
-- Progress bar updates use `requestAnimationFrame` throttling
-- Canvas rendering uses `willReadFrequently: true` for sampled data
-- Particle count caps at 150 for battery/mobile
-- No animation on elements below the fold until IntersectionObserver triggers
+This is a source contract, not a battery-use or frame-rate measurement. Validate it in a browser before adding it to a page.
 
-## CSS Custom Properties as Animation Tokens
+## Adding or changing effects
 
-```css
---gold-glow: rgba(232,226,212,0.13);    /* Card glow on hover */
---red-glow: rgba(226,59,46,0.16);       /* TTS highlight */
-```
+1. Locate the owning CSS rule or external module and preserve native content and focus behavior.
+2. Use opacity/transform for decorative movement where appropriate; reserve layout updates for components whose behavior requires them.
+3. Respect reduced motion at initial load and, for long-running effects, when the preference changes.
+4. Stop ongoing animation when its surface is offscreen or the document is hidden.
+5. Run the declared [browser acceptance](../operations/site-runtime.md) and inspect responsive/forced-colors states under the [QA procedure](../operations/accessibility-qa.md).
 
-## Adding New Animations
-
-1. Define `@keyframes` in the animations section of `style.css`
-2. Ensure the `prefers-reduced-motion` override disables it:
-   ```css
-   @media (prefers-reduced-motion: reduce) {
-       .your-class { animation: none !important; transition: none !important; }
-   }
-   ```
-3. Use `opacity` + `transform` properties for GPU-composited animations (avoid `left`, `top`, `width` for non-progress elements)
-4. For entrance animations, use the existing `.animate` class with IntersectionObserver
+CSS tokens and component contracts are documented in [design-system.md](design-system.md). Read current values from source rather than copying cache tags or timing constants into a new module.

@@ -1,23 +1,26 @@
-# Manuscript Status — docxology (canonical repo)
+# Manuscript status — docxology
 
-Repo type: personal public research/software/citation/website index
-(Daniel Ari Friedman's public archive and GitHub Pages source; the site
-projection lives here alongside the complete repository archive).
+As of 2026-10-05, this is a source-backed repository-methods draft describing the public research/software/citation index and its static website. It is separate from the research publications archived under [papers/](../../papers/).
 
-Evidence checked: top-level listing (site HTML pages, `data/`, `docs/`
-with design/operations/releases/security/seo subdirectories, `pages/`,
-`code/`, `works/`, `art/`, `blog/`, `resume/`, bibliography files,
-`CITATION.cff`, `CHANGELOG.md`, `TODO.md`), `AGENT_START.md`,
-`README.md`, `docs/README.md`. A top-level `docs/manuscript/` directory DOES
-exist (sections 00_abstract … 99_references, config.yaml, preamble.md,
-references.bib) — it documents the repository/publication system itself,
-so this status file only records scope.
+## Established source scope
 
-Why no additional `docs/manuscript/` status layer applies: the
-publication-track material is already canonical at `docs/manuscript/` (config
-parses as YAML; section files present; the `{{TOKEN}}` mention in
-docs/manuscript/AGENTS.md is the documented variable-injection convention).
+- Sections explain source authority, stable identity, thin command entry points, shared policy, ordered generation, progressive browser discovery, and candidate-bound release evidence.
+- Implementation statements link public repository sources and runbooks. Current catalog totals and historical pass counts remain in their generated or dated evidence surfaces.
+- `config.yaml` binds `manuscript_dir` to `docs/manuscript` and the bibliography path to this repository.
+- The bibliography identifies the repository from `CITATION.cff`; it adds no new manuscript DOI or external study.
+- A read-only local validator checks source/configuration structure, citation-key resolution, labels, tokens, and local references.
 
-What would trigger changes here: new publication-track material for a
-research output of the docxology system itself would follow the same
-template-standard manuscript layout as the existing `docs/manuscript/`.
+## Separate, unfinished evidence
+
+There is no declared manuscript rendering command, rendered PDF/HTML receipt, new experimental or comparative result, independent scientific review, or publication-readiness attestation. Complete BibTeX grammar, manuscript licensing, editorial review, and later quantitative results need separate verification. Desired render formats in configuration do not establish that rendering ran.
+
+## Verification
+
+Run from the repository root:
+
+```bash
+uv run python3 code/orchestrators/validate_manuscript.py
+uv run python3 code/orchestrators/validate_manuscript.py --json
+```
+
+These commands inspect current sources without writing an artifact. Report their success as structural source validation. Repository-wide checks and publication evidence remain governed by [development.md](../operations/development.md) and [release-integrity.md](../operations/release-integrity.md).

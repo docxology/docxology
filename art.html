@@ -129,6 +129,9 @@
         .toolbar{padding-right:72px}
 
         /* GALLERY */
+        /* Artwork thumbnails carry the imagery; decorative card assets add
+           download work without representing the selected artwork. */
+        .art-page{--art-a:none;--art-b:none;--art-c:none;--art-d:none;--art-e:none}
         .gallery{max-width:1500px;margin:0 auto;padding:2rem 1.5rem}
         .grid{display:grid;gap:14px}
         .grid-sm{grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
@@ -169,6 +172,10 @@
         .lb-download:hover{box-shadow:0 4px 12px rgba(255,0,0,0.26);transform:none;color:#fff}
         .lb-flickr{display:flex;align-items:center;justify-content:center;gap:.4rem;background:rgba(255,255,255,0.04);border:1px solid var(--bdr);color:#f0f0f0;border-radius:2px;padding:.5rem 1rem;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:.8rem;font-weight:600;width:100%;text-decoration:none;transition:all .2s;margin-bottom:.65rem}
         .lb-flickr:hover{background:rgba(255,0,0,0.08);border-color:var(--red);color:#fff}
+        .lb-links{flex-shrink:0;padding:.65rem 1.5rem;background:var(--bg2);border-top:1px solid var(--bdr)}
+        .lb-links-actions{display:flex;flex-wrap:wrap;gap:.65rem}
+        .lb-links .lb-flickr{width:auto;margin:0}
+        .lb-links p{font-size:.85rem;color:var(--fg2);margin:0 0 .65rem}
 
         .res-list{display:flex;flex-direction:column;gap:.35rem;max-height:260px;overflow-y:auto}
         .res-item{display:flex;align-items:center;justify-content:space-between;padding:.4rem .65rem;background:rgba(255,255,255,0.03);border:1px solid var(--bdr);border-radius:6px;font-size:.76rem;transition:all .2s}
@@ -372,7 +379,6 @@
                 <div class="lb-desc" id="lb-desc"></div>
                 <div class="lb-section">
                     <a id="lb-download" class="lb-download" href="#" target="_blank" rel="noopener">Download Original</a>
-                    <a id="lb-flickr-link" class="lb-flickr" href="#" target="_blank" rel="noopener">View on Flickr</a>
                 </div>
                 <div class="lb-section">
                     <div class="lb-section-title">Available Resolutions</div>
@@ -389,10 +395,17 @@
             </div>
         </div>
     </div>
+    <div class="lb-links">
+        <p id="lb-image-status" role="status" hidden></p>
+        <div class="lb-links-actions">
+            <a id="lb-artwork-link" class="lb-flickr" href="#">Open artwork page</a>
+            <a id="lb-flickr-link" class="lb-flickr" href="#" target="_blank" rel="noopener">View on Flickr</a>
+        </div>
+    </div>
 </div>
 
 <script src="/js/search-utils.js?v=site-20261002b"></script>
-<script src="/js/art-gallery.js?v=site-20261002b" defer></script>
+<script src="/js/art-gallery.js?v=art-20261005" defer></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
 <script src="/js/interactive.js?v=site-20261002b" defer></script>
     <script src="/js/menu-esc.js?v=20260813" defer></script>

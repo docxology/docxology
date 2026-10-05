@@ -1,6 +1,6 @@
 # Manuscript Syntax - docxology
 
-This manuscript uses the shared template conventions from `docs/guides/manuscript-semantics.md` in the sibling template repository.
+This draft follows numbered section files, Pandoc-style labels and citations, and repository-local references. [`validate_manuscript.py`](../../code/orchestrators/validate_manuscript.py) enforces the local source contract; no sibling checkout is needed for that check.
 
 ## Section Labels
 
@@ -23,7 +23,7 @@ Use Pandoc citation syntax only, for example `[@real_key]`. Every key must exist
 
 ## Figures
 
-Generated figures should live under `../output/figures/` and be referenced with labels such as:
+If a figure producer is introduced, document its command and write inspectable outputs under `../output/figures/`. Reference a real file with a label such as:
 
 ```markdown
 ![Caption text.](../output/figures/example.png){#fig:example width=80%}
@@ -31,4 +31,6 @@ Generated figures should live under `../output/figures/` and be referenced with 
 
 ## Claims
 
-This scaffold intentionally avoids quantitative and publication claims. Add those only after a source file, test, generated artifact, or citation supports them.
+Architecture claims link current source owners. Quantitative and publication claims require appropriate dated evidence; a structural check cannot establish them. Volatile generated-value tokens are rejected until a declared producer resolves them before validation.
+
+The validator resolves inline, reference-style, and shortcut image references and requires regular local figure files. It rejects malformed URLs, NUL characters, and references that escape the repository. Its bounded BibTeX entry/key checks reject unclosed entries, stray text, duplicates, and unresolved citations; complete field grammar, citation style, and TeX processing remain separate. It does not assess image interpretation, figure rendering, or renderer compatibility. Fenced examples are excluded from prose checks so example syntax is not mistaken for a missing artifact.

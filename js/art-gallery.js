@@ -1,6 +1,6 @@
 /**
  * Art Gallery — externalized from art.html inline script (CSP: script-src 'self').
- * Loads the compact data/artworks-index.json (942 pieces), renders the grid,
+ * Loads the complete compact data/artworks-index.json, renders the grid,
  * and lazily fetches data/artworks.json only when a description search or
  * lightbox detail view needs the full resolution/media record.
  * window.filterGallery / window.setSize stay exposed for the data-attribute
@@ -10,6 +10,7 @@
   'use strict';
 
   let DATA = [];
+  let galleryLoaded = false;
   let filtered = [];
   let currentIdx = 0;
   let DETAIL_DATA = null;
@@ -24,19 +25,49 @@
   const more = document.getElementById('gallery-more');
   const searchStatus = document.getElementById('gallery-search-status');
   const retrySearch = document.getElementById('gallery-search-retry');
-  // Titles need not be unique. Keep source tiles by their permanent page URL,
-  // including tiles temporarily removed by a filter.
+  // Titles need not be unique. Keep tiles by their permanent page URL,
+  // including tiles temporarily removed by a filter. Retaining hydrated tiles
+  // also preserves decoded images and avoids retrying failed media on sorting.
   const ssrByPage = new Map(Array.from(grid.querySelectorAll('a.art-card'))
     .filter(card => card.querySelector('img.art-thumb.ssr'))
     .map(card => [card.getAttribute('href'), card]));
+
+  function validMediaUrl(value) {
+    if (typeof value !== 'string' || !value.trim()) return false;
+    try {
+      const url = new URL(value, window.location.href);
+      return ['http:', 'https:'].includes(url.protocol) && !url.username && !url.password;
+    } catch (_) { return false; }
+  }
+
+  function validArtworkDate(value) {
+    if (value == null || value === '') return true;
+    if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}(?:[ T].*)?$/.test(value)) return false;
+    const date = new Date(value.slice(0, 10) + 'T00:00:00Z');
+    return !Number.isNaN(date.valueOf()) && date.toISOString().slice(0, 10) === value.slice(0, 10);
+  }
+
+  function validArtworkIdentity(art) {
+    if (!art || typeof art.id !== 'string' || !/^\d+$/.test(art.id)) return false;
+    return typeof art.page === 'string' &&
+      new RegExp('^artworks/' + art.id + '(?:-[a-z0-9]+(?:-[a-z0-9]+)*)?\\.html$').test(art.page);
+  }
 
   async function loadGalleryData() {
     try {
       const res = await fetch('data/artworks-index.json', { cache: 'default' });
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const payload = await res.json();
-      if (!Array.isArray(payload.artworks)) throw new Error('Invalid artwork index');
+      if (!Array.isArray(payload.artworks) || payload.artworks.some(art =>
+          !validArtworkIdentity(art) || typeof art.title !== 'string' || !validMediaUrl(art.thumb) ||
+          !validArtworkDate(art.date) ||
+          !Array.isArray(art.tags) || art.tags.some(tag => typeof tag !== 'string')) ||
+          new Set(payload.artworks.map(art => String(art.id))).size !== payload.artworks.length ||
+          new Set(payload.artworks.map(art => art.page)).size !== payload.artworks.length) {
+        throw new Error('Invalid artwork index');
+      }
       DATA = payload.artworks;
+      galleryLoaded = true;
       filtered = [...DATA];
       filterGallery();
       if (document.getElementById('searchInput').value.trim()) await searchDescriptions();
@@ -57,7 +88,23 @@
           return res.json();
         })
         .then(payload => {
-          DETAIL_DATA = new Map((payload.artworks || []).map(art => [String(art.id), art]));
+          if (!Array.isArray(payload.artworks)) throw new Error('Invalid artwork details');
+          const details = new Map();
+          payload.artworks.forEach(art => {
+            if (!art || !art.id || typeof art.desc !== 'string' ||
+                !Array.isArray(art.tags) || art.tags.some(tag => typeof tag !== 'string') ||
+                (art.title != null && typeof art.title !== 'string') ||
+                (art.thumb != null && !validMediaUrl(art.thumb)) || !validArtworkDate(art.date) ||
+                (art.flickr_url != null && !validMediaUrl(art.flickr_url)) ||
+                !art.sizes || typeof art.sizes !== 'object' || Array.isArray(art.sizes) ||
+                Object.values(art.sizes).some(url => !validMediaUrl(url)) ||
+                details.has(String(art.id))) throw new Error('Invalid artwork detail record');
+            details.set(String(art.id), art);
+          });
+          if (DATA.some(art => !details.has(String(art.id)))) {
+            throw new Error('Incomplete artwork details for the loaded gallery');
+          }
+          DETAIL_DATA = details;
           return DETAIL_DATA;
         })
         .catch(err => {
@@ -70,7 +117,7 @@
 
   async function enrich(art) {
     const details = await loadDetailData();
-    return details.get(String(art.id)) || art;
+    return { ...art, ...details.get(String(art.id)), page: art.page };
   }
 
   async function searchDescriptions() {
@@ -105,21 +152,47 @@
   // the stored URL on error (loadImage's onerror path).
   const largeThumb = (url) => (url || '').replace(/_m\.jpg(\?.*)?$/, '_z.jpg$1');
 
+  // Use only retained source records, once each, and retire previous callbacks
+  // whenever the lightbox selection changes.
+  const imageAttempts = new WeakMap();
+  function setImageSources(img, sources, onReady, onUnavailable) {
+    const urls = Array.from(new Set(sources.filter(validMediaUrl)
+      .map(url => new URL(url, window.location.href).href)));
+    const attempt = { index: 0 };
+    imageAttempts.set(img, attempt);
+    const current = () => imageAttempts.get(img) === attempt;
+    img.onload = () => { if (current()) onReady(attempt.index > 0); };
+    img.onerror = () => {
+      if (!current()) return;
+      if (++attempt.index < urls.length) img.src = urls[attempt.index];
+      else onUnavailable();
+    };
+    if (!urls.length) { onUnavailable(); return; }
+    if (img.getAttribute('src') && img.src === urls[0]) {
+      if (img.complete) {
+        if (img.naturalWidth) onReady(false);
+        else img.onerror();
+      }
+    } else img.src = urls[0];
+  }
+
+  function thumbnailSources(img, fallback) {
+    if (imageAttempts.has(img)) return;
+    const alt = img.alt;
+    setImageSources(img, [img.getAttribute('src') || img.dataset.src, fallback], () => {
+      img.classList.add('loaded');
+    }, () => {
+      img.classList.add('loaded', 'load-error');
+      img.alt = `${alt} (image unavailable)`;
+    });
+  }
+
   const loadImage = (img) => {
     // Hydrate-first: SSR tiles already carry their _z src and must not be
     // rebuilt or downgraded; only data-src placeholders get a (large) src.
     if (!img || img.src) return;
     if (!img.dataset.src) return;
-    img.src = largeThumb(img.dataset.src);
-    img.onload = () => img.classList.add('loaded');
-    img.onerror = () => {
-      if (img.src !== img.dataset.src) {
-        img.src = img.dataset.src;
-        return;
-      }
-      img.classList.add('loaded', 'load-error');
-      img.alt = `${img.alt} (image unavailable)`;
-    };
+    thumbnailSources(img, img.dataset.fallback);
   };
 
   const imgObs = 'IntersectionObserver' in window
@@ -168,6 +241,11 @@
       if (reused) {
         reused.dataset.index = String(i);
         reused.dataset.artworkId = String(art.id);
+        reused.setAttribute('aria-haspopup', 'dialog');
+        const image = reused.querySelector('img');
+        if (image.getAttribute('src')) thumbnailSources(image, art.thumb);
+        else if (imgObs) imgObs.observe(image);
+        else loadImage(image);
         fragment.appendChild(reused);
         return;
       }
@@ -179,13 +257,14 @@
       card.dataset.index = String(i);
       card.dataset.artworkId = String(art.id);
       card.innerHTML =
-        `<img data-src="${esc(largeThumb(art.thumb))}" alt="${esc(artAlt(art))}" class="art-thumb" loading="lazy" decoding="async">` +
+        `<img data-src="${esc(largeThumb(art.thumb))}" data-fallback="${esc(art.thumb)}" alt="${esc(artAlt(art))}" class="art-thumb" loading="lazy" decoding="async">` +
         `<div class="art-info">` +
         `<div class="art-title" title="${esc(art.title)}">${esc(art.title)}</div>` +
         `<div class="art-meta">${art.date ? art.date.slice(0, 10) : ''}</div>` +
         (art.views ? `<div class="art-views">${parseInt(art.views).toLocaleString()} views</div>` : '') +
         `</div>`;
       fragment.appendChild(card);
+      ssrByPage.set(art.page, card);
       const image = card.querySelector('.art-thumb');
       if (imgObs) imgObs.observe(image);
       else loadImage(image);
@@ -204,6 +283,9 @@
 
   // ── FILTER + SORT ──
   function filterGallery() {
+    // Early controls and failed fetches must leave the native source links
+    // intact, just as they are when JavaScript is unavailable.
+    if (!galleryLoaded) return;
     visibleLimit = PAGE_SIZE;
     const q = document.getElementById('searchInput').value.trim().toLowerCase();
     const sort = document.getElementById('sortSelect').value;
@@ -275,11 +357,24 @@
     const sizes = art.sizes || {};
     const mainSrc = sizes['Large 1600'] || sizes['Large'] || sizes['Medium 640'] || sizes['Medium'] || art.thumb;
     const img = document.getElementById('lb-img');
+    const imageStatus = document.getElementById('lb-image-status');
     img.style.opacity = '0';
+    img.hidden = false;
     img.alt = artAlt(art);
-    img.onload = () => { img.style.opacity = '1'; };
-    img.onerror = () => { img.style.opacity = '1'; };
-    img.src = mainSrc;
+    imageStatus.hidden = true;
+    imageStatus.textContent = '';
+    setImageSources(img, [mainSrc, sizes['Large'], sizes['Medium 800'],
+      sizes['Medium 640'], sizes['Medium'], art.thumb], smaller => {
+      img.style.opacity = '1';
+      imageStatus.hidden = !smaller;
+      imageStatus.textContent = smaller ? 'Full-resolution image unavailable; showing a smaller preview.' : '';
+    }, () => {
+      img.hidden = true;
+      imageStatus.hidden = false;
+      imageStatus.textContent = 'Artwork image could not be loaded. The artwork page and Flickr links remain available.';
+    });
+
+    document.getElementById('lb-artwork-link').href = art.page;
 
     const origUrl = sizes['Original'] || sizes['Large 2048'] || sizes['X-Large 4K'] || mainSrc;
     document.getElementById('lb-download').href = origUrl;
