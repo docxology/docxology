@@ -108,31 +108,20 @@ separate step; see `docs/operations/publication-sync.md`), and ends with the Pag
 artifact manifest, then `build_generated_manifest.py` → `build_agent_index.py` →
 `build_release_integrity.py` → the final `build_generated_manifest.py` and
 `validate_repo.py`.
-Run `--list` to print the plan without executing. The authoritative order lives in
-`code/src/generation_plan.py` (`LOCAL_GENERATION_STEPS`) and is pinned against this
-paragraph by `code/tests/test_generation_plan_docs.py`, so `--list` and the chain below
-can never drift apart. Internally it runs, in order:
-`export_bibliography.py` → `sync_publications_html.py --apply` → `sync_software_html.py
---apply` → `render_github_inventory.py` → `build_current_counts.py` →
-`build_coverage_exceptions.py` → `classify_repositories.py` → `sync_scholar_metrics.py` →
-`generate_og_images.py` → `export_agent_data.py` → `build_resume.py --all` →
-`build_domain_pages.py` → `generate_pillar_pages.py` → `regenerate_docs.py --apply` →
-`generate_citation_cff.py --apply` → `export_bibliography.py` → `sync_publications_html.py
---apply` → `build_work_pages.py` → `build_video_pages.py` (complete `data/videos.json` +
-compact `data/videos-index.json`) → `build_artwork_pages.py` (per-artwork
-`artworks/*.html`, the crawlable `artworks/index.html` hub, curated
-`art-collections/*.html`, and `data/artwork-pages-manifest.json`) →
-`sync_art_gallery.py` (art.html SSR gallery floor) → `sync_site_facts.py` →
-`build_start_here.py` →
-`build_paper_pages.py` → `generate_redirect_stubs.py --apply` → `deploy_seo_security.py` →
-`build_exports_page.py` → `build_updates_page.py` → `build_evidence_page.py` →
-`build_reproducibility_ledger.py` → `ensure_agent_navigation.py` →
-`build_reconciliation_report.py` → `audit_assets.py` → `accessibility_audit.py` →
-`build_catalog.py` → `audit_assets.py` → `accessibility_audit.py` → `sync_site_facts.py` →
-`build_github_readme.py` → `build_search_index.py` → `generate_feed.py` → `build_domain_feeds.py` → `build_sitemap.py` → `build_404_page.py` →
-`build_artwork_index.py` → `build_pages_artifact.py --write-manifest
---allow-dirty-prepayload-evidence --check-size-only` → `build_generated_manifest.py` →
-`build_agent_index.py` → `build_release_integrity.py` → final `build_generated_manifest.py`.
+Inspect the current order directly from the authoritative plan instead of
+maintaining a second script list in these instructions:
+
+```bash
+uv run python3 code/orchestrators/regenerate_all.py --list
+```
+
+The driver and no-write checks share
+[`LOCAL_GENERATION_STEPS`](code/src/generation_plan.py).
+[`test_generation_plan_docs.py`](code/tests/test_generation_plan_docs.py) checks
+the actual read-only plan command and this documented entry point. Use
+[`GENERATED.md`](GENERATED.md) for the output matrix and the
+[regeneration runbook](docs/operations/regeneration.md) for cache and locking
+contracts.
 
 `prune_old_reports.py --apply` is deliberately NOT in the chain: it deletes report
 artifacts, and a destructive step has no place in an idempotent rebuild. Run it on its own
