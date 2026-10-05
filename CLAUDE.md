@@ -67,7 +67,7 @@ Every indexable page includes the shared interactive modules; page-specific runt
 | Module | File | Features |
 |--------|------|----------|
 | **TTS Controls** | `js/tts-controls.js` | Web Speech API read-aloud, floating panel (T key), speed/voice selection, paragraph highlighting, auto-scroll |
-| **Interactive** | `js/interactive.js` | Reading progress bar, scroll-to-top button, keyboard shortcuts overlay (? key), section anchor copy-links, search autocomplete (search-index.json), image lazy loading, external link safety |
+| **Interactive** | `js/interactive.js` | Reading progress bar, scroll-to-top button, keyboard shortcuts overlay (? key), section anchor copy-links, search autocomplete (search-index-core.json), image lazy loading, external link safety |
 | **Menu Escape** | `js/menu-esc.js` | Closes the mobile navigation with Escape |
 
 `js/nav-toggle.js` is loaded synchronously in pages that include the mobile
@@ -81,7 +81,7 @@ To verify:
 - Press `T` → TTS panel opens
 - Press `?` → keyboard shortcuts overlay
 - Scroll down → red-gold progress bar fills, `↑` button appears
-- Type in search input → autocomplete suggestions from search-index.json
+- Type in search input → autocomplete suggestions from search-index-core.json
 - Hover section `h2` heading → `#` anchor link appears (click to copy URL)
 
 Shared styling lives in `style.css`, with homepage overrides in `css/home.css`.
