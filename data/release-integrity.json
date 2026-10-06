@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-05T16:41:08Z",
-  "source_commit_at_generation": "23da673206ef1b5c1eaa3b15cf1d7af66ad617a6",
+  "generated_at": "2026-10-06T01:02:29Z",
+  "source_commit_at_generation": "7e1c4f11ff1d29d5e1518dff3c23821dd6f78f61",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -21,28 +21,28 @@
     }
   },
   "source_sha256": {
-    "pages/BIBLIOGRAPHY.md": "1392fbced6e67ca7c94269b2e0282c37f94365170ea618a3b44d9146581b6159",
-    "data/work-identifiers.json": "253c7b613f95b267c2d7491e0eb05c35f9a957f56bc624aa3dc07ec4e0a2f254",
+    "pages/BIBLIOGRAPHY.md": "bde56539cfe924deaa3e205a20d93209e04702c6dd99db88dab1d904eed72ddb",
+    "data/work-identifiers.json": "ce6bfe37f2b2494fb26dcdbef06d903bf3a29405e71c2cd9f64d71f09040300f",
     "pages/SOFTWARE.md": "12d463165045ae48f8cfc608d0f3fc5bfabe8004e3094a63dc881e8cdb021818",
     "resume/source.json": "209c5b0b1df978813d6ad7c08e2b7c0e2cbc1f7445a4cbdf2c422165983b2f6a",
-    "data/current-counts.json": "dc0990c3769b6224dd5c856666b4a5ac37b7cb6ccdd4dd30ac12167d474a2c94",
-    "data/coverage-exceptions.json": "f308718a5931e16a030ae98631988795d4c782fc8b957252f8d373050287a731",
+    "data/current-counts.json": "bef76b82449ad56d22238a908447ee0e1777f38d8d3988672878a24380c914de",
+    "data/coverage-exceptions.json": "8df47104acdb09d984bd784c96b80e91e10f9c466b0157aec198b7cb61db06d6",
     "data/repository-classification.json": "ba9df46fa148f2d96aea5703e3a573bde721bc7f1da9516d0c9d0126d0e9a4b5",
-    "data/agent-index.json": "c866e8756d1f9324b2d43f94f273014fc50cc3f7d3da7797387101d1bc27d720",
-    "data/generated-manifest.json": "24d6ae4a1f4e9ccf5aaededf3dcfdc9723bdf2ca811b9d5cace25e887120da64",
-    "data/pages-artifact-manifest.json": "ddef9fd4b67320c2d0b700d88c5d9a71fbbafa2138bb1b3a16512474044100ef"
+    "data/agent-index.json": "7e5330b8898285e9c4887c456a617ed5d540a4ef1f04d0e61678ff3dc2e8aa7e",
+    "data/generated-manifest.json": "0e1124cd4bd65c20d6b6d8645414b8bd96fd173c717ecc9439589c69dbfb24eb",
+    "data/pages-artifact-manifest.json": "713c41237193872d0a427ebda2059f8fa7da7d8141835e7f911dcdb2788def2a"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "23da673206ef1b5c1eaa3b15cf1d7af66ad617a6",
-    "artifact_file_count": 5907,
-    "artifact_bytes": 877091804,
+    "source_commit_at_generation": "7e1c4f11ff1d29d5e1518dff3c23821dd6f78f61",
+    "artifact_file_count": 5978,
+    "artifact_bytes": 882843824,
     "omitted_paper_image_count": 8959,
-    "omitted_superseded_report_count": 622
+    "omitted_superseded_report_count": 571
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "23da673206ef1b5c1eaa3b15cf1d7af66ad617a6",
+    "candidate_source_commit": "7e1c4f11ff1d29d5e1518dff3c23821dd6f78f61",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
@@ -51,11 +51,11 @@
     "policy": "No local filesystem paths, secret-like tokens, or unsafe URL schemes in public CV/source manifests."
   },
   "counts": {
-    "bibliography_docs_links": 202,
-    "bibliography_works": 219,
+    "bibliography_docs_links": 203,
+    "bibliography_works": 220,
     "domains": {
       "AII Ecosystem": 6,
-      "Active Inference": 46,
+      "Active Inference": 47,
       "Art & Synergetics": 16,
       "Cognitive Security": 37,
       "Computational": 63,
@@ -66,10 +66,10 @@
     "extracted_images": 8959,
     "full_text_papers": 199,
     "generated_exports": {
-      "data_publications_ld_main_entity": 219,
+      "data_publications_ld_main_entity": 220,
       "data_software_json": 159,
       "data_software_ld_main_entity": 159,
-      "data_works_json": 219
+      "data_works_json": 220
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 43,
@@ -104,7 +104,7 @@
       "update_existing": 55,
       "zenodo_records": 162
     },
-    "paper_folder_docs": 202,
+    "paper_folder_docs": 203,
     "papers_with_images": 145,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
@@ -124,7 +124,7 @@
     "types": {
       "Books": 5,
       "Courses": 3,
-      "Papers": 198,
+      "Papers": 199,
       "Playbooks": 2,
       "Presentations": 8,
       "Report": 1,

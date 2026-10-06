@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-10-02T15:11:23Z",
+      "generated_at": "2026-10-05T22:43:27Z",
       "path": "data/claims.json",
-      "sha256": "8153aabff59727a5710226e9c79943015f72eca1cda8f586c3ffcdc14f8ff26b",
+      "sha256": "04156ca1865cbef616f30754181d28eee837cdfdc47332a50cebe044224263eb",
       "source_commit": null
     },
     "doi_role_review": {
@@ -65,13 +65,13 @@
     "scholar_snapshot": {
       "generated_at": null,
       "path": "data/scholar-snapshot.json",
-      "sha256": "d9c4b848ad04238eb731f05748bbb88e473518ffe87a422526cfd9b11651b00d",
+      "sha256": "cd143d9d0e4a33a75cb32da5a4b63281c1b1fd09916a231731701b4ff842eb81",
       "source_commit": null
     },
     "scholar_verification_receipt": {
       "generated_at": null,
       "path": "data/scholar-verification-receipt.json",
-      "sha256": "44bf1affbfb214f7a566666da9f2f2af528866b5ee6b7fab57e68b47ea6018a8",
+      "sha256": "eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759",
       "source_commit": null
     }
   },
@@ -3786,18 +3786,18 @@
     {
       "candidate": {
         "current": {
-          "citations": 823,
+          "citations": 824,
           "h_index": 14,
           "i10_index": 17
         },
         "observed": {
-          "citations": 823,
+          "citations": 824,
           "h_index": 14,
           "i10_index": 17
         },
         "profile_id": "DXjPFtYAAAAJ",
         "receipt_valid": true,
-        "receipt_verified_at": "2026-10-02T14:38:54Z"
+        "receipt_verified_at": "2026-10-05T22:43:15Z"
       },
       "category": "scholar_metric_change",
       "id": "scholar-metrics",
@@ -3832,8 +3832,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "23da673206ef1b5c1eaa3b15cf1d7af66ad617a6",
-  "source_tree_sha": "18e6edad10d3cd485f6d89eab0fc84eb22b87d39",
+  "source_commit": "7e1c4f11ff1d29d5e1518dff3c23821dd6f78f61",
+  "source_tree_sha": "bddf96b0483ccf09208c4dff380c248e68b956b5",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {

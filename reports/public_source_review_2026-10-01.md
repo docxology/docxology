@@ -2,7 +2,7 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `23da673206ef1b5c1eaa3b15cf1d7af66ad617a6`
+Source commit: `7e1c4f11ff1d29d5e1518dff3c23821dd6f78f61`
 
 ## Disposition summary
 
@@ -24,7 +24,7 @@ Source commit: `23da673206ef1b5c1eaa3b15cf1d7af66ad617a6`
 ## Evidence inputs
 
 - `biographical_claim_decisions`: `data/biographical-claim-decisions.json` (`1d01574cb4fb9c626202fd7572f637da37c4602ce38c2b79bd0c2390c057c60f`)
-- `claims_ledger`: `data/claims.json` (`8153aabff59727a5710226e9c79943015f72eca1cda8f586c3ffcdc14f8ff26b`)
+- `claims_ledger`: `data/claims.json` (`04156ca1865cbef616f30754181d28eee837cdfdc47332a50cebe044224263eb`)
 - `doi_role_review`: `reports/doi_role_reconciliation_2026-08-25.json` (`8813014df946b8fd6b1777de95d16e57300fba56b32f3da59819bf8c5d8a01a6`)
 - `paired_publication_decisions`: `data/paired-publication-decisions.json` (`f1cac466f885ccc9ed92cac8039575fabfe1778a4563088af79c72cdbfaa498a`)
 - `paired_publications`: `reports/paired_publications_2026-09-24.json` (`2f95360123cdc2d7f16021312a4e753603cbc37fa8f3b257082dbba988072388`)
@@ -33,8 +33,8 @@ Source commit: `23da673206ef1b5c1eaa3b15cf1d7af66ad617a6`
 - `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`cff826363c7ca0e66bf583ee039a27cf0bfebc05ef57fb3222a8d91f50f73714`)
 - `public_source_snapshot`: `reports/public_source_snapshot_2026-09-30.json` (`f0dbd6d14f420cea7251cba0a14e81828781a3d22416502134a25890ec590504`)
 - `repository_classification`: `data/repository-classification.json` (`ba9df46fa148f2d96aea5703e3a573bde721bc7f1da9516d0c9d0126d0e9a4b5`)
-- `scholar_snapshot`: `data/scholar-snapshot.json` (`d9c4b848ad04238eb731f05748bbb88e473518ffe87a422526cfd9b11651b00d`)
-- `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`44bf1affbfb214f7a566666da9f2f2af528866b5ee6b7fab57e68b47ea6018a8`)
+- `scholar_snapshot`: `data/scholar-snapshot.json` (`cd143d9d0e4a33a75cb32da5a4b63281c1b1fd09916a231731701b4ff842eb81`)
+- `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759`)
 
 ## Deferred review
 
