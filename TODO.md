@@ -237,6 +237,11 @@ criteria, and dependencies. Re-review this file before each public release.
 - Deliverable: choose and pin a rendering backend with declared outputs; render the draft and inspect its figures and cross-references; validate `docs/manuscript/references.bib` with a real BibTeX parser; obtain editorial review
 - Acceptance: a declared render command produces output whose figures and references have been inspected, a bibliography syntax check passes outside the structural gate, and a named editorial reviewer's decision is recorded; until then `validate_manuscript.py` is reported only as structural source validation
 - Dependencies: `docs/manuscript/config.yaml`, `code/orchestrators/validate_manuscript.py`, [MANUSCRIPT_STATUS.md](docs/manuscript/MANUSCRIPT_STATUS.md)
+- Status (2026-10-05): `references.bib` (one `@misc` entry) parses under pybtex
+  strict mode and bibtexparser 1.4.3, run from a throwaway environment so no
+  dependency was added; repeat the check whenever entries change. The
+  rendering-backend choice, rendered-output inspection, and editorial review
+  remain open.
 
 ### SEC-002 — Re-run the managed-profile deep security scan
 
