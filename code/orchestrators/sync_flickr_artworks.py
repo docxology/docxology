@@ -126,6 +126,13 @@ class FlickrSyncError(RuntimeError):
     """Raised when the live fetch is unusable (missing key, API error, drift guard)."""
 
 
+def redact_url(url: str) -> str:
+    """The request URL with its ``api_key`` value masked, for messages and logs."""
+    parts = urllib.parse.urlsplit(url)
+    query = [(key, "REDACTED" if key == "api_key" else value) for key, value in urllib.parse.parse_qsl(parts.query, keep_blank_values=True)]
+    return urllib.parse.urlunsplit(parts._replace(query=urllib.parse.urlencode(query)))
+
+
 def api_url(method: str, api_key: str, **params: object) -> str:
     query = {"method": method, "api_key": api_key, "format": "json", "nojsoncallback": "1"}
     query.update(params)
@@ -149,7 +156,7 @@ def fetch_json(url: str, *, attempts: int = 3, timeout: float = 30.0) -> dict:
             message = payload.get("message", "unknown Flickr error")
             raise FlickrSyncError(f"Flickr API error {code}: {message}")
         return payload
-    raise FlickrSyncError(f"Flickr fetch failed after {attempts} attempts: {url} ({last_error})")
+    raise FlickrSyncError(f"Flickr fetch failed after {attempts} attempts: {redact_url(url)} ({last_error})")
 
 
 def fetch_license_map(api_key: str) -> dict[str, dict[str, str]]:

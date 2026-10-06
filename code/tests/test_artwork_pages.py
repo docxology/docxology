@@ -41,6 +41,14 @@ def test_checked_in_artworks_export_is_structurally_valid() -> None:
     assert sync_flickr_artworks.validate_export(_payload()) == []
 
 
+def test_checked_in_artworks_keep_complete_metadata() -> None:
+    # Ratchet: since the 2026-10-06 re-sync every public artwork carries Flickr
+    # tags and a non-empty description. A re-sync that loses either fails here
+    # (run `sync_flickr_artworks.py --require-complete` to refuse it earlier).
+    summary = sync_flickr_artworks.coverage_summary(_payload())
+    assert (summary["untagged"], summary["empty_desc"]) == (0, 0), summary
+
+
 def test_every_artwork_record_has_a_page() -> None:
     payload = _payload()
     for rel in artwork_page_paths(payload):

@@ -815,3 +815,11 @@ def test_a_truncated_later_page_cannot_lower_the_total(monkeypatch, second_page)
     assert (len(photos), total) == (2, 3)
     with pytest.raises(sync_mod.FlickrSyncError):
         sync_mod._count_mismatch_gate(len(photos), total, allow=False)
+
+
+def test_failure_messages_never_carry_the_api_key() -> None:
+    url = sync_mod.api_url("flickr.photos.getSizes", "secret-key-value", photo_id="42")
+    redacted = sync_mod.redact_url(url)
+    assert "secret-key-value" not in redacted
+    assert "api_key=REDACTED" in redacted and "photo_id=42" in redacted
+    assert "method=flickr.photos.getSizes" in redacted

@@ -2,6 +2,14 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-10-06
+
+- **Flickr artwork re-sync:** the gallery export was refreshed from Flickr with
+  the API key now held as a repository secret. Every public artwork carries
+  tags and a description, the newly tagged records join tag-driven pages, and a
+  test keeps the export complete. Request URLs in sync failure messages no
+  longer include the API key.
+
 ## 2026-10-05
 
 - **Regeneration reliability:** the default writer and fingerprint cache use

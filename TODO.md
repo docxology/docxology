@@ -210,12 +210,13 @@ criteria, and dependencies. Re-review this file before each public release.
 - Dependencies: Flickr account edits (out of repo scope); a non-commercial
   `FLICKR_API_KEY` (shell variable and repository secret);
   `code/orchestrators/sync_flickr_artworks.py`; `pages/ART_COLLECTIONS.md`
-- Status (2026-10-05): the Flickr-side tags and descriptions are reported done.
-  The re-sync is blocked until `FLICKR_API_KEY` exists: the script refuses to
-  run without it, and the scheduled `freshness.yml` drift step is skipped (not
-  failed), so a skipped check is not evidence that the export is current. The
-  export is public-only: the public photostream count matches it, while the
-  signed-in owner view also counts non-public photos.
+- Status (2026-10-06): re-synced with the key held in the `FLICKR_API_KEY`
+  repository secret. Every public artwork now has tags and a description, and
+  the export matches Flickr's public total; a test keeps both complete. The
+  export is public-only, so the signed-in owner view, which also counts
+  non-public photos, stays larger. Remaining: *Solstice (Turning Point)* is
+  tagged but no current collection in `pages/ART_COLLECTIONS.md` matches its
+  tags; adding a collection or tag mapping for it is a curatorial choice.
 - Review: the descriptions written for the Curio Card records are deliberately
   generic and need DAF to confirm or enrich them before they are treated as
   final artwork copy.
