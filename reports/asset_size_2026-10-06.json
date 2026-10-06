@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T16:28:08Z",
+  "generated_at": "2026-10-06T18:30:56Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 112,
   "budget_exceptions": {
@@ -10,7 +10,7 @@
     }
   },
   "warnings": 0,
-  "total_bytes": 16843255,
+  "total_bytes": 16843490,
   "largest": [
     {
       "path": "data/videos.json",
@@ -145,7 +145,7 @@
     {
       "path": "updates.html",
       "kind": "html",
-      "bytes": 190372,
+      "bytes": 190607,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,
