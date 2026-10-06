@@ -5,8 +5,8 @@
     "bibliography_docs_links": 203,
     "bibliography_works": 220,
     "domains": {
-      "AII Ecosystem": 6,
-      "Active Inference": 47,
+      "AII Ecosystem": 7,
+      "Active Inference": 46,
       "Art & Synergetics": 16,
       "Cognitive Security": 37,
       "Computational": 63,
@@ -82,7 +82,7 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-10-06T21:01:40+00:00",
+  "generated_at": "2026-10-06T22:23:45+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

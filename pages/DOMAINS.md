@@ -57,7 +57,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 
 Free Energy Principle, generative models, belief sharing, formalization, and educational infrastructure.
 
-- Works: 47
+- Works: 46
 - Selected repositories: 11
 - Collaborator context: Karl Friston, Thomas Parr, Maxwell J. D. Ramstead, Conor Heins, Tim Verbelen
 
@@ -238,7 +238,7 @@ Honey bee evolution, gene expression variation, nuclear structure, population ge
 
 Active Inference Institute programs, infrastructure, textbook cohorts, and organizational ecosystem work.
 
-- Works: 6
+- Works: 7
 - Selected repositories: 5
 - Collaborator context: Active Inference Institute educators and contributors, Institute program participants
 
@@ -253,12 +253,12 @@ Active Inference Institute programs, infrastructure, textbook cohorts, and organ
 
 **Selected works**
 
+- 2026 — [Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference](https://doi.org/10.5281/zenodo.23066903)
 - 2025 — [The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)](https://doi.org/10.5281/zenodo.17982447)
 - 2024 — [Aligning Active Inference Ontology to SUMO](https://doi.org/10.5281/zenodo.11459322)
 - 2024 — [The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)](https://doi.org/10.5281/zenodo.14108992)
 - 2023 — [The Active Inference Institute and Active Inference Ecosystem (v1)](https://doi.org/10.5281/zenodo.8266280)
 - 2022 — [Catechism for Towards Active Diffusion](https://doi.org/10.5281/zenodo.7443847)
-- 2016 — [Full speed ahead to the City on the Hill](https://doi.org/10.1126/science.aag1520)
 
 **Selected repositories**
 

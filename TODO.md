@@ -220,9 +220,8 @@ criteria, and dependencies. Re-review this file before each public release.
   repository secret. Every public artwork now has tags and a description, and
   the export matches Flickr's public total; a test keeps both complete. The
   export is public-only, so the signed-in owner view, which also counts
-  non-public photos, stays larger. Remaining: *Solstice (Turning Point)* is
-  tagged but no current collection in `pages/ART_COLLECTIONS.md` matches its
-  tags; adding a collection or tag mapping for it is a curatorial choice.
+  non-public photos, stays larger. *Solstice (Turning Point)* now belongs to
+  the Lettering & Verse collection.
 - Review: the descriptions written for the Curio Card records are deliberately
   generic and need DAF to confirm or enrich them before they are treated as
   final artwork copy.

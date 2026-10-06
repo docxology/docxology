@@ -4,9 +4,16 @@
     <title>AII Ecosystem — RSS</title>
     <link>https://danielarifriedman.com/domain-aii-ecosystem.html</link>
     <description>Active Inference Institute programs, infrastructure, textbook cohorts, and organizational ecosystem work.</description>
-    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
     <language>en</language>
     <atom:link href="https://danielarifriedman.com/feeds/domain-aii-ecosystem.xml" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
+    <item>
+      <title>Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference</title>
+      <link>https://doi.org/10.5281/zenodo.23066903</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.23066903</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Ober, Edward, Maren, Alianna, Friston, Karl J., Hurtado, Ana Magdalena, Pashea, Andrew, Friedman, Daniel, Sabine, Alexander, Safron, Adam</description>
+    </item>
     <item>
       <title>The Active Inference Institute &amp; Active Inference Ecosystem (v3, 2025 snapshot)</title>
       <link>https://doi.org/10.5281/zenodo.17982447</link>

@@ -257,7 +257,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 221 | 2026 | 🧠 | Paper | The Blue Line: A Stewardship Instrument for Maintained Commitments | *Zenodo* | [10.5281/zenodo.22833489](https://doi.org/10.5281/zenodo.22833489) | [📁](../papers/2026_BlueLine/) | Friedman, Daniel Ari |
 | 222 | 2026 | 🧠 | Paper | The Violet Line: A Consent Ledger of Affected Parties | *Zenodo* | [10.5281/zenodo.22833487](https://doi.org/10.5281/zenodo.22833487) | [📁](../papers/2026_VioletLine/) | Friedman, Daniel Ari |
 | 223 | 2026 | 💻 | Paper | The Silver Line: A Memory-and-Succession Instrument | *Zenodo* | [10.5281/zenodo.22833485](https://doi.org/10.5281/zenodo.22833485) | [📁](../papers/2026_SilverLine/) | Friedman, Daniel Ari |
-| 224 | 2026 | 🧠 | Paper | Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference | *Zenodo* | [10.5281/zenodo.23066903](https://doi.org/10.5281/zenodo.23066903) | [📁](../papers/2026_CoordinatingField/) | Ober, Edward; Maren, Alianna; Friston, Karl J.; Hurtado, Ana Magdalena; Pashea, Andrew; Friedman, Daniel; Sabine, Alexander; Safron, Adam |
+| 224 | 2026 | 🌍 | Paper | Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference | *Zenodo* | [10.5281/zenodo.23066903](https://doi.org/10.5281/zenodo.23066903) | [📁](../papers/2026_CoordinatingField/) | Ober, Edward; Maren, Alianna; Friston, Karl J.; Hurtado, Ana Magdalena; Pashea, Andrew; Friedman, Daniel; Sabine, Alexander; Safron, Adam |
 ---
 
 ## Domain Index

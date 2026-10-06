@@ -14,7 +14,7 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-10-06T21:01:45Z
+Generated: 2026-10-06T22:23:50Z
 
 Current public metrics: 220 curated works; 161 catalogued software repositories (120 owned + 41 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 231 docxology + 45 AII public repositories (172 primary, 104 forks).
 
@@ -100,7 +100,7 @@ AWARDS AND FELLOWSHIPS
   - Campus Community Service Silver Award and Stanley and Jacqueline Schilling Award for Service.
   - Sources: UC Davis: https://www.ucdavis.edu/
 
-WORKS AND PUBLICATIONS (84)
+WORKS AND PUBLICATIONS (83)
 ---------------------------
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
 [006] 2026 | Series | Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions | YouTube | https://www.youtube.com/@danielarifriedman/playlists
@@ -185,7 +185,6 @@ WORKS AND PUBLICATIONS (84)
 [211] 2026 | Paper | Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract | Zenodo | 10.5281/zenodo.21865643
 [221] 2026 | Paper | The Blue Line: A Stewardship Instrument for Maintained Commitments | Zenodo | 10.5281/zenodo.22833489
 [222] 2026 | Paper | The Violet Line: A Consent Ledger of Affected Parties | Zenodo | 10.5281/zenodo.22833487
-[224] 2026 | Paper | Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference | Zenodo | 10.5281/zenodo.23066903
 
 SOFTWARE (15)
 -------------

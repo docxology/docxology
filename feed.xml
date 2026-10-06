@@ -6,7 +6,7 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Oct 2026 22:45:43 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 22:26:46 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
@@ -33,7 +33,7 @@
       <link>https://danielarifriedman.com/works/Friedman2026CoordinatingFieldCaseEcosystem224.html</link>
       <guid isPermaLink="false">work-Friedman2026CoordinatingFieldCaseEcosystem224</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Active Inference · 2026</description>
+      <description>Paper · Zenodo · AII Ecosystem · 2026</description>
     </item>
     <item>
       <title>The Silver Line: A Memory-and-Succession Instrument</title>

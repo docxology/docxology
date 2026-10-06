@@ -45,6 +45,12 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 - **AII claims re-checked:** the Scientific Advisory Board count and Textbook
   Group cohort claims were re-read against the institute's pages, found
   unchanged, and re-dated.
+- **Lettering & Verse collection:** a sixth art collection gathers the
+  handwritten verse, lettering, and calligraphy drawings, including
+  *Solstice (Turning Point)*.
+- **Coordinating the Field filed under the AII Ecosystem:** work #224 moves to
+  the AII Ecosystem domain beside the Institute's other organisational work; its
+  URL is unchanged.
 
 ## 2026-10-05
 

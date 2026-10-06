@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T16:28:07Z",
+  "generated_at": "2026-10-06T22:25:14Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -3278,7 +3278,7 @@
       "citation_key": "Friedman2026CoordinatingFieldCaseEcosystem224",
       "title": "Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference",
       "year": 2026,
-      "domain_name": "Active Inference",
+      "domain_name": "AII Ecosystem",
       "type": "Paper",
       "score": 5,
       "band": "independently reproducible",
