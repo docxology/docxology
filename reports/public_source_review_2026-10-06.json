@@ -5,13 +5,13 @@
     "biographical_claim_decisions": {
       "generated_at": null,
       "path": "data/biographical-claim-decisions.json",
-      "sha256": "1d01574cb4fb9c626202fd7572f637da37c4602ce38c2b79bd0c2390c057c60f",
+      "sha256": "903cc0eb20dc926e887267998f5f686b69df88dacbccf99845e19e5f8073be3d",
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-10-06T16:26:37Z",
+      "generated_at": "2026-10-06T21:01:43Z",
       "path": "data/claims.json",
-      "sha256": "f8308afcd711718a14ac19f07f14c4a806e5533ff8cfc25f622e65798441ab3d",
+      "sha256": "772990c872214dec1b7d4a43cdc81666a3976f5303020bdcb4c5891d045c7317",
       "source_commit": null
     },
     "doi_role_review": {
@@ -57,9 +57,9 @@
       "source_commit": "f39ad87925f764daf51f88f8e0dfd43da379422c"
     },
     "repository_classification": {
-      "generated_at": "2026-10-06T16:23:40Z",
+      "generated_at": "2026-10-06T21:00:57Z",
       "path": "data/repository-classification.json",
-      "sha256": "f2091c3df03c41d7451639c918c59b74b70ff6893cfafd6881e6dfdb3c257078",
+      "sha256": "410b12ee92d3750326eea7d9b234d91d6f816f873ea4cb421ab9623d8eaccf6e",
       "source_commit": null
     },
     "scholar_snapshot": {
@@ -1169,6 +1169,64 @@
     },
     {
       "candidate": {
+        "checked_at": "2026-10-06",
+        "claim": "The Active Inference Institute site lists 32 current Scientific Advisory Board members.",
+        "claim_id": "aii-scientific-advisory-board-count",
+        "claim_sha256": "2cbd61bc920cd3b7e4f4ca6a201a47978554f32b64257a489beedd22cf288786",
+        "claim_status": "public-profile",
+        "curated_targets": [
+          "code/orchestrators/export_agent_data.py"
+        ],
+        "evidence_sha256": "696082534953d1f42556b5f9fb09a05bca0d4ab0e332cd731d25c00c2e86be17",
+        "refreshed_sources": [
+          "https://activeinference.institute/structure/scientific-advisory-board/"
+        ],
+        "review_decision": "acknowledged",
+        "review_rationale": "Re-read the official Scientific Advisory Board page on 2026-10-06: it still states 32 current members and lists exactly 32 names (30 link to their own public page). The count is unchanged; checked_at advanced to 2026-10-06. Reviewed under the principal's 2026-10-06 instruction to re-read the pages."
+      },
+      "category": "biographical_claim_change",
+      "id": "biographical-claim:aii-scientific-advisory-board-count",
+      "reason": "A durable review decision matches the exact claim and cited-source evidence.",
+      "sources": [
+        "data/biographical-claim-decisions.json",
+        "data/claims.json",
+        "https://activeinference.institute/structure/scientific-advisory-board/",
+        "reports/public_source_inventory_2026-10-06.json",
+        "reports/public_source_snapshot_2026-10-06.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "checked_at": "2026-10-06",
+        "claim": "AII's Textbook Group reports nine completed 2022-textbook cohorts and a first 2026 Fundamentals cohort currently live.",
+        "claim_id": "aii-textbook-cohorts",
+        "claim_sha256": "e5da119b837e89d378a19cd773c76bfbdc280618119905cdb735b6c6a7a83e41",
+        "claim_status": "curated-program-copy",
+        "curated_targets": [
+          "code/orchestrators/export_agent_data.py"
+        ],
+        "evidence_sha256": "cc10cd33d616eb64e8f6dc1c5ed6922768fd38919069a0ed6a8b0bed72d10702",
+        "refreshed_sources": [
+          "https://activeinference.institute/projects/textbook-group/"
+        ],
+        "review_decision": "acknowledged",
+        "review_rationale": "Re-read the official Textbook Group page on 2026-10-06: it still reports nine completed cohorts on the 2022 textbook and a live first cohort on the 2026 Fundamentals textbook. The claim is unchanged; checked_at advanced to 2026-10-06. Reviewed under the principal's 2026-10-06 instruction to re-read the pages."
+      },
+      "category": "biographical_claim_change",
+      "id": "biographical-claim:aii-textbook-cohorts",
+      "reason": "A durable review decision matches the exact claim and cited-source evidence.",
+      "sources": [
+        "data/biographical-claim-decisions.json",
+        "data/claims.json",
+        "https://activeinference.institute/projects/textbook-group/",
+        "reports/public_source_inventory_2026-10-06.json",
+        "reports/public_source_snapshot_2026-10-06.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
         "checked_at": "2026-08-26",
         "claim": "COGSEC.org is the cognitive security publication and research context linked from the profile.",
         "claim_id": "cogsec-role",
@@ -1348,60 +1406,6 @@
         "reports/public_source_snapshot_2026-10-06.json"
       ],
       "status": "applied"
-    },
-    {
-      "candidate": {
-        "checked_at": "2026-08-26",
-        "claim": "The Active Inference Institute site lists 32 current Scientific Advisory Board members.",
-        "claim_id": "aii-scientific-advisory-board-count",
-        "claim_sha256": "bd802c76fdf5297d2d409f6d72df57c187659d1a37b6e652ed6273524d785039",
-        "claim_status": "public-profile",
-        "curated_targets": [],
-        "evidence_sha256": "696082534953d1f42556b5f9fb09a05bca0d4ab0e332cd731d25c00c2e86be17",
-        "refreshed_sources": [
-          "https://activeinference.institute/structure/scientific-advisory-board/"
-        ],
-        "review_decision": "",
-        "review_rationale": ""
-      },
-      "category": "biographical_claim_change",
-      "id": "biographical-claim:aii-scientific-advisory-board-count",
-      "reason": "A durable review decision exists, but its SHA-bound claim or cited-source evidence no longer matches; re-review is required.",
-      "sources": [
-        "data/biographical-claim-decisions.json",
-        "data/claims.json",
-        "https://activeinference.institute/structure/scientific-advisory-board/",
-        "reports/public_source_inventory_2026-10-06.json",
-        "reports/public_source_snapshot_2026-10-06.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "checked_at": "2026-08-26",
-        "claim": "AII's Textbook Group reports nine completed 2022-textbook cohorts and a first 2026 Fundamentals cohort currently live.",
-        "claim_id": "aii-textbook-cohorts",
-        "claim_sha256": "812951d77b2b7c0415143cd9b998503dd67265ee79c770008bf25281b7fec346",
-        "claim_status": "curated-program-copy",
-        "curated_targets": [],
-        "evidence_sha256": "cc10cd33d616eb64e8f6dc1c5ed6922768fd38919069a0ed6a8b0bed72d10702",
-        "refreshed_sources": [
-          "https://activeinference.institute/projects/textbook-group/"
-        ],
-        "review_decision": "",
-        "review_rationale": ""
-      },
-      "category": "biographical_claim_change",
-      "id": "biographical-claim:aii-textbook-cohorts",
-      "reason": "A durable review decision exists, but its SHA-bound claim or cited-source evidence no longer matches; re-review is required.",
-      "sources": [
-        "data/biographical-claim-decisions.json",
-        "data/claims.json",
-        "https://activeinference.institute/projects/textbook-group/",
-        "reports/public_source_inventory_2026-10-06.json",
-        "reports/public_source_snapshot_2026-10-06.json"
-      ],
-      "status": "deferred"
     },
     {
       "candidate": {
@@ -2972,6 +2976,25 @@
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
+        "full_name": "docxology/cadence",
+        "html_url": "https://github.com/docxology/cadence",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/cadence",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
         "full_name": "docxology/cogames",
         "html_url": "https://github.com/docxology/cogames",
         "review_status": "acknowledged"
@@ -4069,82 +4092,6 @@
     },
     {
       "candidate": {
-        "acknowledged_reason": "",
-        "archived": false,
-        "catalog_role": "not_curated",
-        "exclusion_reason": "primary_repo_requires_manual_review",
-        "fork": false,
-        "full_name": "ActiveInferenceInstitute/Active_InferAnts",
-        "html_url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts",
-        "review_status": "defer"
-      },
-      "category": "repository_classification",
-      "id": "repository:ActiveInferenceInstitute/Active_InferAnts",
-      "reason": "The repository remains outside the curated catalog pending a human classification decision.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "",
-        "archived": false,
-        "catalog_role": "not_curated",
-        "exclusion_reason": "primary_repo_requires_manual_review",
-        "fork": false,
-        "full_name": "ActiveInferenceInstitute/GEO_INFER",
-        "html_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER",
-        "review_status": "defer"
-      },
-      "category": "repository_classification",
-      "id": "repository:ActiveInferenceInstitute/GEO_INFER",
-      "reason": "The repository remains outside the curated catalog pending a human classification decision.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "",
-        "archived": false,
-        "catalog_role": "not_curated",
-        "exclusion_reason": "primary_repo_requires_manual_review",
-        "fork": false,
-        "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation",
-        "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation",
-        "review_status": "defer"
-      },
-      "category": "repository_classification",
-      "id": "repository:ActiveInferenceInstitute/Generalized_Notation_Notation",
-      "reason": "The repository remains outside the curated catalog pending a human classification decision.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "",
-        "archived": false,
-        "catalog_role": "not_curated",
-        "exclusion_reason": "primary_repo_requires_manual_review",
-        "fork": false,
-        "full_name": "ActiveInferenceInstitute/Journal_Utilities",
-        "html_url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities",
-        "review_status": "defer"
-      },
-      "category": "repository_classification",
-      "id": "repository:ActiveInferenceInstitute/Journal_Utilities",
-      "reason": "The repository remains outside the curated catalog pending a human classification decision.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
         "current": {
           "citations": 824,
           "h_index": 14,
@@ -4192,12 +4139,12 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "334e2801f5a3a6130f9a14e1b688f0934e349a70",
-  "source_tree_sha": "29d1170d13614c5da0ab8365c7180cb4da0d6cb5",
+  "source_commit": "b6688d5aa6a35df540a084b285fdc24ca78fca0a",
+  "source_tree_sha": "9b2b9266e8e60bb5e49ae1dabfa3128579394032",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
-    "applied": 201,
+    "applied": 204,
     "categories": {
       "ambiguous_doi_change": {
         "applied": 64,
@@ -4205,8 +4152,8 @@
         "rejected": 0
       },
       "biographical_claim_change": {
-        "applied": 8,
-        "deferred": 2,
+        "applied": 10,
+        "deferred": 0,
         "rejected": 0
       },
       "public_source_observation": {
@@ -4215,8 +4162,8 @@
         "rejected": 0
       },
       "repository_classification": {
-        "applied": 114,
-        "deferred": 4,
+        "applied": 115,
+        "deferred": 0,
         "rejected": 0
       },
       "scholar_metric_change": {
@@ -4230,8 +4177,8 @@
         "rejected": 0
       }
     },
-    "deferred": 7,
-    "items": 208,
+    "deferred": 1,
+    "items": 205,
     "rejected": 0,
     "review_required": true
   }

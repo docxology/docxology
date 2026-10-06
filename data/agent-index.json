@@ -1,6 +1,6 @@
 {
   "schema_version": "1.5",
-  "generated_at": "2026-10-06T16:26:34+00:00",
+  "generated_at": "2026-10-06T21:01:40+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -294,7 +294,7 @@
     },
     "repositories": {
       "path": "/data/github-repositories.json",
-      "count": 275,
+      "count": 276,
       "schema": "Repository"
     },
     "artworks": {
@@ -339,7 +339,7 @@
     },
     "repository_classification": {
       "path": "/data/repository-classification.json",
-      "count": 118,
+      "count": 115,
       "schema": "RepositoryClassification"
     },
     "pages_artifact": {
@@ -1169,7 +1169,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-10-06T16:26:34+00:00",
+        "checked_at": "2026-10-06T21:01:40+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1231,32 +1231,35 @@
     ],
     "RepositoryClassification": [
       {
-        "full_name": "ActiveInferenceInstitute/Active_InferAnts",
-        "github_id": 782172228,
-        "github_node_id": "R_kgDOLp8ARA",
-        "name": "Active_InferAnts",
+        "full_name": "ActiveInferenceInstitute/aii-org",
+        "github_id": 1184581029,
+        "github_node_id": "R_kgDORptFpQ",
+        "name": "aii-org",
         "owner": "ActiveInferenceInstitute",
-        "html_url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts",
+        "html_url": "https://github.com/ActiveInferenceInstitute/aii-org",
         "fork": false,
         "archived": false,
         "private": false,
-        "description": "Multi-language Active Inference framework combining ant-colony-optimization-inspired multi-agent simulation with variational message passing, implemented across 50 programming languages for research and benchmarking.",
+        "description": "Active Inference Institute organizational website.",
         "description_quality": "substantive",
-        "language": "Python",
+        "language": "HTML",
         "topics": [
           "active-inference",
-          "ant-colony-optimization",
+          "education",
           "free-energy-principle",
-          "multi-agent-systems",
-          "python",
-          "swarm-intelligence",
-          "variational-inference"
+          "github-pages",
+          "javascript",
+          "nonprofit",
+          "static-site"
         ],
         "recently_updated": true,
         "relevance": "unknown",
-        "catalog_role": "not_curated",
-        "exclusion_reason": "primary_repo_requires_manual_review",
-        "review_status": "defer"
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "acknowledged_not_catalogued",
+        "review_status": "acknowledged",
+        "acknowledged_reason": "website",
+        "reviewed_by": "principal",
+        "reviewed_at": "2026-08-26"
       }
     ],
     "GeneratedReport": {
@@ -1286,19 +1289,19 @@
         "github_inventory": {
           "ActiveInferenceInstitute": 45,
           "archived": 5,
-          "curated": 157,
-          "docxology": 230,
+          "curated": 161,
+          "docxology": 231,
           "fork_ActiveInferenceInstitute": 2,
-          "fork_docxology": 101,
-          "forks": 103,
+          "fork_docxology": 102,
+          "forks": 104,
           "primary_ActiveInferenceInstitute": 43,
           "primary_docxology": 129,
           "primary_total": 172,
           "private": 0,
-          "public": 275,
-          "recently_updated": 216,
-          "total": 275,
-          "uncataloged": 118
+          "public": 276,
+          "recently_updated": 217,
+          "total": 276,
+          "uncataloged": 115
         },
         "paired_publication_decisions": {
           "decision": "accept",
@@ -1343,7 +1346,7 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-10-06T16:26:34+00:00",
+      "generated_at": "2026-10-06T21:01:40+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
@@ -1367,11 +1370,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 877665246,
+        "source_bytes": 877669318,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
         "artifact_file_count": 5922,
-        "artifact_bytes": 878711493
+        "artifact_bytes": 878715565
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5805,26 +5808,26 @@
   "dataset_hashes": {
     "works": "2928692b983afe5dde4060234bbada84f37fda00bad76beab9c3fcd77347f5fb",
     "work_identifiers": "ce6bfe37f2b2494fb26dcdbef06d903bf3a29405e71c2cd9f64d71f09040300f",
-    "software": "b29fad895a4e78eaa4ccd3bccd21cd5059db639af55845b30ee31be459b0b544",
-    "repositories": "338de534ebf787ba0bb005ab46d6bbdcd881acf890237273a353751778ec5c33",
+    "software": "d1961defe577f755c0a3da72ec1cbee289711cca8720b0f682ccb89c114571b4",
+    "repositories": "f4490ba4d6213bdf59c572a06d2e16b52f2b00c6e72c64f9b50de44b9dd65560",
     "artworks_index": "29270719124f00fb4d9c2729262c33318c82e9dbb114ec8b0f777436bb270769",
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "fc078bcc6821335aea2f96e8ac84c0847743b2fb4a0dd1fe048975f53a8f201b",
     "videos_index": "f000507bade7b3ab852931adcc701752d12487622521a11a435c276600d7be81",
-    "search": "dd7b4db5c14a2f1bba8c5dad05a6fb9234a96d227ba96134ce3467a55c1cbc83",
-    "claims": "f8308afcd711718a14ac19f07f14c4a806e5533ff8cfc25f622e65798441ab3d",
+    "search": "078e654e072fc293367e7a4747089703e4cf4922b60fbfc1248959f3fd512dfc",
+    "claims": "772990c872214dec1b7d4a43cdc81666a3976f5303020bdcb4c5891d045c7317",
     "scholar_verification_receipt": "eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759",
     "coverage_exceptions": "8df47104acdb09d984bd784c96b80e91e10f9c466b0157aec198b7cb61db06d6",
-    "repository_classification": "f2091c3df03c41d7451639c918c59b74b70ff6893cfafd6881e6dfdb3c257078",
-    "people": "7b9868f981d58ee333bd64244ab17bf06ab8792165303bdfd1416708c04ff1ec",
-    "organizations": "cd0d479b639f723350502d7c0bc62b9edd305a5ad32250b7dc74667037d9c35a",
-    "resume": "4c2583072a648e372bed5cc826d859ee830b6a507f9da0180ccf340b37f2a48f",
+    "repository_classification": "410b12ee92d3750326eea7d9b234d91d6f816f873ea4cb421ab9623d8eaccf6e",
+    "people": "bfc5f748da61ed61722c239989df82dbca1f7a871aa2ee3f1dcaef8b13a45827",
+    "organizations": "53b12ba82cd0c16a72b37b72c220c8e881cd22b0bd887286de638334bad96134",
+    "resume": "35ae9f2cbc0b4c5e8e4018015de18b85136bd1fb4b7471e7b42e937fcd6c1e03",
     "work_enrichment": "f41c1bfe7a3880998d00b46af6392de048e0fa66228cdd951e5f28f35c47a98d",
     "catalog": "de4c67e6ea9460d3f2c408fb1e1b9bdb331d903c7ed3250409ba9abdee78e2fb",
     "reconciliation": "8da34e180deb5776064acab444f663eca5458dda9b8e255e42c47d81d3900779",
     "reproducibility": "68a2c46e600751d96baa23a2fe2ad69cd69fa5857346b51c0222788d79215a48",
     "generated_manifest": "f04130e93290e3e4f08ba9a61159c41dc90be5601041cfc340939e1ec06637fa",
-    "current_counts": "027ebaf2063bc9954b29d6901badb38a8cf535a35d4c42cf187082428174857c"
+    "current_counts": "2e20718a1c54027e1196ce6ca1bcc5f26f2089b4a7e44180f6a2f256335cafe9"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -5876,19 +5879,19 @@
     "github_inventory": {
       "ActiveInferenceInstitute": 45,
       "archived": 5,
-      "curated": 157,
-      "docxology": 230,
+      "curated": 161,
+      "docxology": 231,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 101,
-      "forks": 103,
+      "fork_docxology": 102,
+      "forks": 104,
       "primary_ActiveInferenceInstitute": 43,
       "primary_docxology": 129,
       "primary_total": 172,
       "private": 0,
-      "public": 275,
-      "recently_updated": 216,
-      "total": 275,
-      "uncataloged": 118
+      "public": 276,
+      "recently_updated": 217,
+      "total": 276,
+      "uncataloged": 115
     },
     "paired_publication_decisions": {
       "decision": "accept",

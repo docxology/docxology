@@ -2,29 +2,29 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `334e2801f5a3a6130f9a14e1b688f0934e349a70`
+Source commit: `b6688d5aa6a35df540a084b285fdc24ca78fca0a`
 
 ## Disposition summary
 
 | Status | Items |
 |---|---:|
-| Applied | 201 |
-| Deferred | 7 |
+| Applied | 204 |
+| Deferred | 1 |
 | Rejected | 0 |
 
 | Category | Applied | Deferred | Rejected |
 |---|---:|---:|---:|
 | `ambiguous_doi_change` | 64 | 0 | 0 |
-| `biographical_claim_change` | 8 | 2 | 0 |
+| `biographical_claim_change` | 10 | 0 | 0 |
 | `public_source_observation` | 14 | 0 | 0 |
-| `repository_classification` | 114 | 4 | 0 |
+| `repository_classification` | 115 | 0 | 0 |
 | `scholar_metric_change` | 1 | 0 | 0 |
 | `zenodo_candidate` | 0 | 1 | 0 |
 
 ## Evidence inputs
 
-- `biographical_claim_decisions`: `data/biographical-claim-decisions.json` (`1d01574cb4fb9c626202fd7572f637da37c4602ce38c2b79bd0c2390c057c60f`)
-- `claims_ledger`: `data/claims.json` (`f8308afcd711718a14ac19f07f14c4a806e5533ff8cfc25f622e65798441ab3d`)
+- `biographical_claim_decisions`: `data/biographical-claim-decisions.json` (`903cc0eb20dc926e887267998f5f686b69df88dacbccf99845e19e5f8073be3d`)
+- `claims_ledger`: `data/claims.json` (`772990c872214dec1b7d4a43cdc81666a3976f5303020bdcb4c5891d045c7317`)
 - `doi_role_review`: `reports/doi_role_reconciliation_2026-08-25.json` (`8813014df946b8fd6b1777de95d16e57300fba56b32f3da59819bf8c5d8a01a6`)
 - `paired_publication_decisions`: `data/paired-publication-decisions.json` (`f1cac466f885ccc9ed92cac8039575fabfe1778a4563088af79c72cdbfaa498a`)
 - `paired_publications`: `reports/paired_publications_2026-09-24.json` (`2f95360123cdc2d7f16021312a4e753603cbc37fa8f3b257082dbba988072388`)
@@ -32,18 +32,12 @@ Source commit: `334e2801f5a3a6130f9a14e1b688f0934e349a70`
 - `public_source_inventory`: `reports/public_source_inventory_2026-10-06.json` (`28a9fedc13d56c6ec50cee625ebf9d777afedb05716b7d5e11bd445926bcc8d4`)
 - `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`3d2502d0311a4f2f6d2682530c2509847c93fff4de8773143ba05cad85500555`)
 - `public_source_snapshot`: `reports/public_source_snapshot_2026-10-06.json` (`d95e95c22497b72c5314961ab6b38a708803277d695db7b404308e642293f28a`)
-- `repository_classification`: `data/repository-classification.json` (`f2091c3df03c41d7451639c918c59b74b70ff6893cfafd6881e6dfdb3c257078`)
+- `repository_classification`: `data/repository-classification.json` (`410b12ee92d3750326eea7d9b234d91d6f816f873ea4cb421ab9623d8eaccf6e`)
 - `scholar_snapshot`: `data/scholar-snapshot.json` (`cd143d9d0e4a33a75cb32da5a4b63281c1b1fd09916a231731701b4ff842eb81`)
 - `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759`)
 
 ## Deferred review
 
-- **`biographical_claim_change` — biographical-claim:aii-scientific-advisory-board-count**: A durable review decision exists, but its SHA-bound claim or cited-source evidence no longer matches; re-review is required.
-- **`biographical_claim_change` — biographical-claim:aii-textbook-cohorts**: A durable review decision exists, but its SHA-bound claim or cited-source evidence no longer matches; re-review is required.
-- **`repository_classification` — repository:ActiveInferenceInstitute/Active_InferAnts**: The repository remains outside the curated catalog pending a human classification decision.
-- **`repository_classification` — repository:ActiveInferenceInstitute/GEO_INFER**: The repository remains outside the curated catalog pending a human classification decision.
-- **`repository_classification` — repository:ActiveInferenceInstitute/Generalized_Notation_Notation**: The repository remains outside the curated catalog pending a human classification decision.
-- **`repository_classification` — repository:ActiveInferenceInstitute/Journal_Utilities**: The repository remains outside the curated catalog pending a human classification decision.
 - **`zenodo_candidate` — zenodo-refresh-incomplete**: The latest successful GitHub–Zenodo pairing report predates the public-source snapshot and cannot be treated as current release evidence.
 
 ## Applied decisions
@@ -114,6 +108,8 @@ Source commit: `334e2801f5a3a6130f9a14e1b688f0934e349a70`
 - **`ambiguous_doi_change` — doi-role:2026_ITrace**: The exact DOI-role proposal was applied after a separately recorded review approval.
 - **`biographical_claim_change` — biographical-claim:aii-board-count**: A durable review decision matches the exact claim and cited-source evidence.
 - **`biographical_claim_change` — biographical-claim:aii-officer-roles**: A durable review decision matches the exact claim and cited-source evidence.
+- **`biographical_claim_change` — biographical-claim:aii-scientific-advisory-board-count**: A durable review decision matches the exact claim and cited-source evidence.
+- **`biographical_claim_change` — biographical-claim:aii-textbook-cohorts**: A durable review decision matches the exact claim and cited-source evidence.
 - **`biographical_claim_change` — biographical-claim:cogsec-role**: A durable review decision matches the exact claim and cited-source evidence.
 - **`biographical_claim_change` — biographical-claim:college-of-the-redwoods-teaching**: A durable review decision matches the exact claim and cited-source evidence.
 - **`biographical_claim_change` — biographical-claim:curio-cards-early-ethereum-art**: A durable review decision matches the exact claim and cited-source evidence.
@@ -190,6 +186,7 @@ Source commit: `334e2801f5a3a6130f9a14e1b688f0934e349a70`
 - **`repository_classification` — repository:docxology/aqua-js-cli**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/axiom**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/bend**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
+- **`repository_classification` — repository:docxology/cadence**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/cogames**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/covid19-forecast-hub**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/crescent_city**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
