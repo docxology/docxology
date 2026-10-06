@@ -1048,9 +1048,24 @@
       {
         "id": "55349041831",
         "title": "Solstice (Turning Point)",
-        "tags": [],
+        "tags": [
+          "solstice",
+          "summersolstice",
+          "turningpoint",
+          "poem",
+          "haiku",
+          "goodandevil",
+          "cross",
+          "handwriting",
+          "sketch",
+          "danielarifriedman",
+          "pen",
+          "ink",
+          "drawing",
+          "art"
+        ],
         "date": "2026-06-21 14:25:06",
-        "views": "320",
+        "views": "323",
         "thumb": "https://live.staticflickr.com/65535/55349041831_27dc604d5c.jpg",
         "page": "artworks/55349041831-solstice-turning-point.html"
       }
@@ -1352,11 +1367,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 879609343,
+        "source_bytes": 879631008,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
         "artifact_file_count": 5973,
-        "artifact_bytes": 880663039
+        "artifact_bytes": 880684706
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5790,11 +5805,11 @@
     "work_identifiers": "ce6bfe37f2b2494fb26dcdbef06d903bf3a29405e71c2cd9f64d71f09040300f",
     "software": "85cc2aeff4b28a6920103f6abe928fafa9b01be0487e4a45f5d9093a4a61e832",
     "repositories": "7921e3722f3ec20c8d8a8fc5090396d3b66e4d557e732a6d1055a5d9d25cb772",
-    "artworks_index": "f9555b9bba6e9e6ae141cbeacc7389c6cebeadefa016e87e04d3bbe1aab7af62",
-    "artworks": "32bd21124bd391638295aac6bad7a0621746c296695e10b0586351ca4069f6c3",
+    "artworks_index": "29270719124f00fb4d9c2729262c33318c82e9dbb114ec8b0f777436bb270769",
+    "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "fc078bcc6821335aea2f96e8ac84c0847743b2fb4a0dd1fe048975f53a8f201b",
     "videos_index": "f000507bade7b3ab852931adcc701752d12487622521a11a435c276600d7be81",
-    "search": "30a7fb57bc9b20f2af4316e04f2a914643414c1449dab751e8004d50ef2ea518",
+    "search": "2547b05f86eb0c731462bffd0e5ebad2cd688f7c8986be709a552655c4f88f34",
     "claims": "04156ca1865cbef616f30754181d28eee837cdfdc47332a50cebe044224263eb",
     "scholar_verification_receipt": "eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759",
     "coverage_exceptions": "8df47104acdb09d984bd784c96b80e91e10f9c466b0157aec198b7cb61db06d6",
