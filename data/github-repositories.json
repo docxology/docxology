@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T16:23:24Z",
+  "generated_at": "2026-10-06T21:00:50Z",
   "source": "GitHub REST API /users/{owner}/repos",
   "owners": [
     "docxology",
@@ -9,7 +9,7 @@
     "docxology": {
       "login": "docxology",
       "html_url": "https://github.com/docxology",
-      "public_repos": 230,
+      "public_repos": 231,
       "updated_at": "2026-10-05T21:44:09Z"
     },
     "ActiveInferenceInstitute": {
@@ -20,20 +20,20 @@
     }
   },
   "counts": {
-    "total": 275,
-    "docxology": 230,
+    "total": 276,
+    "docxology": 231,
     "ActiveInferenceInstitute": 45,
-    "curated": 157,
-    "uncataloged": 118,
-    "forks": 103,
+    "curated": 161,
+    "uncataloged": 115,
+    "forks": 104,
     "archived": 5,
-    "public": 275,
+    "public": 276,
     "private": 0,
-    "recently_updated": 216,
+    "recently_updated": 217,
     "primary_total": 172,
     "primary_docxology": 129,
     "primary_ActiveInferenceInstitute": 43,
-    "fork_docxology": 101,
+    "fork_docxology": 102,
     "fork_ActiveInferenceInstitute": 2
   },
   "warnings": [],
@@ -221,7 +221,7 @@
       "created_at": "2024-04-04T19:21:29Z",
       "updated_at": "2026-09-22T19:15:57Z",
       "pushed_at": "2026-09-22T19:14:55Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -925,7 +925,7 @@
       "stars": 3,
       "forks": 3,
       "watchers": 3,
-      "open_issues": 34,
+      "open_issues": 33,
       "visibility": "public",
       "private": false,
       "fork": false,
@@ -944,8 +944,8 @@
       "license": "NOASSERTION",
       "default_branch": "main",
       "created_at": "2026-04-14T13:33:35Z",
-      "updated_at": "2026-10-06T00:11:02Z",
-      "pushed_at": "2026-10-06T16:16:25Z",
+      "updated_at": "2026-10-06T19:23:08Z",
+      "pushed_at": "2026-10-06T20:09:10Z",
       "curated": true,
       "recently_updated": true
     },
@@ -1118,8 +1118,8 @@
       "default_branch": "main",
       "created_at": "2023-04-02T19:45:34Z",
       "updated_at": "2026-09-29T17:24:09Z",
-      "pushed_at": "2026-10-06T16:06:17Z",
-      "curated": false,
+      "pushed_at": "2026-10-06T19:25:14Z",
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -1160,7 +1160,7 @@
       "created_at": "2025-05-13T14:17:56Z",
       "updated_at": "2026-10-06T05:08:57Z",
       "pushed_at": "2026-10-06T13:56:28Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -1267,7 +1267,7 @@
       "created_at": "2022-11-07T14:21:08Z",
       "updated_at": "2026-09-25T13:54:57Z",
       "pushed_at": "2026-09-30T18:39:47Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -2899,6 +2899,35 @@
       "recently_updated": true
     },
     {
+      "github_id": 1407667303,
+      "github_node_id": "R_kgDOU-dMZw",
+      "name": "cadence",
+      "full_name": "docxology/cadence",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/cadence",
+      "description": "A brain that learns from live experience. System 1 by default: perception, memory, plasticity and action. Optional System 2 for self-observation and slow corrections.",
+      "homepage": "https://floatingpragma.io/cadence/",
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "visibility": "public",
+      "private": false,
+      "fork": true,
+      "archived": false,
+      "disabled": false,
+      "is_template": false,
+      "topics": [],
+      "license": "GPL-3.0",
+      "default_branch": "main",
+      "created_at": "2026-10-06T17:05:29Z",
+      "updated_at": "2026-10-06T17:05:29Z",
+      "pushed_at": "2026-10-06T17:05:47Z",
+      "curated": false,
+      "recently_updated": true
+    },
+    {
       "github_id": 1044988600,
       "github_node_id": "R_kgDOPklCuA",
       "name": "cascadia",
@@ -3836,8 +3865,8 @@
       "license": "",
       "default_branch": "main",
       "created_at": "2025-03-20T21:31:03Z",
-      "updated_at": "2026-10-06T16:22:41Z",
-      "pushed_at": "2026-10-06T16:22:35Z",
+      "updated_at": "2026-10-06T19:32:27Z",
+      "pushed_at": "2026-10-06T19:32:22Z",
       "curated": false,
       "recently_updated": true
     },
@@ -4122,8 +4151,8 @@
       "license": "",
       "default_branch": "main",
       "created_at": "2026-04-14T17:24:32Z",
-      "updated_at": "2026-09-22T17:08:18Z",
-      "pushed_at": "2026-09-22T17:30:44Z",
+      "updated_at": "2026-10-06T17:45:08Z",
+      "pushed_at": "2026-10-06T17:45:04Z",
       "curated": true,
       "recently_updated": true
     },
@@ -6209,8 +6238,8 @@
       "license": "Apache-2.0",
       "default_branch": "main",
       "created_at": "2022-01-08T18:33:36Z",
-      "updated_at": "2026-10-06T14:44:18Z",
-      "pushed_at": "2026-10-06T14:44:14Z",
+      "updated_at": "2026-10-06T19:36:15Z",
+      "pushed_at": "2026-10-06T19:36:10Z",
       "curated": true,
       "recently_updated": true
     },

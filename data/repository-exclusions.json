@@ -1053,6 +1053,16 @@
       "note": "Public fork created 2026-09-28 with no catalog role; excluded by the standing fork policy, not by an individual review.",
       "github_id": 1393402154,
       "github_node_id": "R_kgDOUw2hKg"
+    },
+    {
+      "full_name": "docxology/cadence",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-06",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-10-06 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1407667303,
+      "github_node_id": "R_kgDOU-dMZw"
     }
   ]
 }

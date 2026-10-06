@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T16:26:39Z",
+  "generated_at": "2026-10-06T21:01:45Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -74,13 +74,13 @@
       "caveat": "The public-source snapshot records this account's type as Organization; the repository count is read from /users/ActiveInferenceInstitute, which serves Organization accounts as well as Users. Local software catalog tracks 41 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-10-06T16:23:24Z",
+      "generated_at": "2026-10-06T21:00:50Z",
       "source": "GitHub REST API /users/{owner}/repos",
-      "total": 275,
-      "public": 275,
+      "total": 276,
+      "public": 276,
       "primary_total": 172,
-      "forks": 103,
-      "docxology": 230,
+      "forks": 104,
+      "docxology": 231,
       "ActiveInferenceInstitute": 45
     }
   },
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "b5e4e65faf1d9aa4a535eeb407270ff39e2a6e0a5020246fabfb17fbb3b4cc3e",
+      "sha256": "e7b0ad72acd865ba98ab37235d2fd7b46de29948aae1a50ab3a21e7fd04c13ed",
       "files": [
         {
           "path": "resume/source.json",
@@ -102,8 +102,8 @@
         },
         {
           "path": "data/software.json",
-          "bytes": 80385,
-          "sha256": "b29fad895a4e78eaa4ccd3bccd21cd5059db639af55845b30ee31be459b0b544"
+          "bytes": 80388,
+          "sha256": "d1961defe577f755c0a3da72ec1cbee289711cca8720b0f682ccb89c114571b4"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 13114,
-          "sha256": "f8308afcd711718a14ac19f07f14c4a806e5533ff8cfc25f622e65798441ab3d"
+          "sha256": "772990c872214dec1b7d4a43cdc81666a3976f5303020bdcb4c5891d045c7317"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 322352,
-          "sha256": "338de534ebf787ba0bb005ab46d6bbdcd881acf890237273a353751778ec5c33"
+          "bytes": 323351,
+          "sha256": "f4490ba4d6213bdf59c572a06d2e16b52f2b00c6e72c64f9b50de44b9dd65560"
         }
       ]
     },
@@ -9274,7 +9274,7 @@
       "zenodo_url": ""
     },
     {
-      "name": "ActiveInferAnts",
+      "name": "Active_InferAnts",
       "url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
@@ -9298,7 +9298,7 @@
       "zenodo_url": ""
     },
     {
-      "name": "GeneralizedNotationNotation",
+      "name": "Generalized_Notation_Notation",
       "url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
@@ -9346,7 +9346,7 @@
       "zenodo_url": "https://doi.org/10.5281/zenodo.15170907"
     },
     {
-      "name": "Journal-Utilities",
+      "name": "Journal_Utilities",
       "url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
@@ -9382,7 +9382,7 @@
       "zenodo_url": ""
     },
     {
-      "name": "GEO-INFER",
+      "name": "GEO_INFER",
       "url": "https://github.com/ActiveInferenceInstitute/GEO_INFER",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
@@ -9752,7 +9752,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-10-06T16:26:34+00:00",
+      "checked_at": "2026-10-06T21:01:40+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9767,7 +9767,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-10-06T16:26:34+00:00",
+      "checked_at": "2026-10-06T21:01:40+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -9924,7 +9924,7 @@
         "pages/LINKS.md",
         "pages/DISCOVERY.md"
       ],
-      "checked_at": "2026-08-26",
+      "checked_at": "2026-10-06",
       "confidence": "medium",
       "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 30 link to a public page.",
       "maintenance_owner": "INTEGRATOR",
@@ -9939,7 +9939,7 @@
         "README.md",
         "pages/VIDEOS.md"
       ],
-      "checked_at": "2026-08-26",
+      "checked_at": "2026-10-06",
       "confidence": "medium",
       "verification_method": "Current AII Textbook Group page states nine cohorts on the 2022 textbook and a live first 2026 Fundamentals cohort.",
       "maintenance_owner": "EDUCATOR",

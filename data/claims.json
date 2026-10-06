@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T16:26:37Z",
+  "generated_at": "2026-10-06T21:01:43Z",
   "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence",
   "claims": [
     {
@@ -11,7 +11,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-10-06T16:26:34+00:00",
+      "checked_at": "2026-10-06T21:01:40+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -26,7 +26,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-10-06T16:26:34+00:00",
+      "checked_at": "2026-10-06T21:01:40+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -183,7 +183,7 @@
         "pages/LINKS.md",
         "pages/DISCOVERY.md"
       ],
-      "checked_at": "2026-08-26",
+      "checked_at": "2026-10-06",
       "confidence": "medium",
       "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 30 link to a public page.",
       "maintenance_owner": "INTEGRATOR",
@@ -198,7 +198,7 @@
         "README.md",
         "pages/VIDEOS.md"
       ],
-      "checked_at": "2026-08-26",
+      "checked_at": "2026-10-06",
       "confidence": "medium",
       "verification_method": "Current AII Textbook Group page states nine cohorts on the 2022 textbook and a live first 2026 Fundamentals cohort.",
       "maintenance_owner": "EDUCATOR",

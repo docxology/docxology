@@ -484,7 +484,7 @@ def _claims() -> list[dict]:
                 "pages/LINKS.md",
                 "pages/DISCOVERY.md"
             ],
-            "checked_at": "2026-08-26",
+            "checked_at": "2026-10-06",
             "confidence": "medium",
             "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 30 link to a public page.",
             "maintenance_owner": "INTEGRATOR",
@@ -499,7 +499,7 @@ def _claims() -> list[dict]:
                 "README.md",
                 "pages/VIDEOS.md"
             ],
-            "checked_at": "2026-08-26",
+            "checked_at": "2026-10-06",
             "confidence": "medium",
             "verification_method": "Current AII Textbook Group page states nine cohorts on the 2022 textbook and a live first 2026 Fundamentals cohort.",
             "maintenance_owner": "EDUCATOR",

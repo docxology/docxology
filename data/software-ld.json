@@ -55,7 +55,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2022-01-08T18:33:36Z",
-            "dateModified": "2026-10-06T14:44:14Z",
+            "dateModified": "2026-10-06T19:36:10Z",
             "keywords": "active-inference, ant-behavior, ants, bioinformatics, computational-biology, data-visualization, ecology, entomology, epigenomics, eqtl, genomics, gwas, hymenoptera, multi-agent-systems, multi-omics, proteomics, python, rna-seq, single-cell, transcriptomics"
         },
         {
@@ -560,7 +560,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-04-14T17:24:32Z",
-            "dateModified": "2026-09-22T17:30:44Z",
+            "dateModified": "2026-10-06T17:45:04Z",
             "keywords": "ants, arxiv, discourse-analysis, entomology, linguistics, networkx, philosophy-of-science, pubmed, python, text-mining",
             "sameAs": "https://doi.org/10.5281/zenodo.19574117"
         },
@@ -1945,7 +1945,7 @@
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/ActiveInferenceInstitute/Active_InferAnts#software",
-            "name": "ActiveInferAnts",
+            "name": "Active_InferAnts",
             "description": "Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/Active_InferAnts",
             "author": {
@@ -1976,7 +1976,7 @@
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation#software",
-            "name": "GeneralizedNotationNotation",
+            "name": "Generalized_Notation_Notation",
             "description": "GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation",
             "author": {
@@ -1985,7 +1985,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2023-04-02T19:45:34Z",
-            "dateModified": "2026-10-06T16:06:17Z",
+            "dateModified": "2026-10-06T19:25:14Z",
             "keywords": "active, active-inference, active-inference-notation, inference",
             "sameAs": "https://doi.org/10.5281/zenodo.19600217"
         },
@@ -2038,7 +2038,7 @@
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/ActiveInferenceInstitute/Journal_Utilities#software",
-            "name": "Journal-Utilities",
+            "name": "Journal_Utilities",
             "description": "Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/Journal_Utilities",
             "author": {
@@ -2086,7 +2086,7 @@
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/ActiveInferenceInstitute/GEO_INFER#software",
-            "name": "GEO-INFER",
+            "name": "GEO_INFER",
             "description": "Geospatial Active Inference — applying free energy minimization to geographic systems, spatial planning, and bioregional intelligence",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/GEO_INFER",
             "author": {
@@ -2231,7 +2231,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-04-14T13:33:35Z",
-            "dateModified": "2026-10-06T16:16:25Z",
+            "dateModified": "2026-10-06T20:09:10Z",
             "keywords": "active-inference, bayesian-mechanics, formal-verification, free-energy-principle, information-geometry, lean4, theorem-proving",
             "sameAs": "https://doi.org/10.5281/zenodo.19699233"
         },

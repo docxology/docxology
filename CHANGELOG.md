@@ -37,6 +37,14 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 - **Deterministic Pages manifest:** the scan that keeps cited reports published
   now ignores git-ignored local files, so a manifest built on a working machine
   matches a clean checkout and the deploy check accepts it.
+- **Catalog follows GitHub renames:** four Active Inference Institute rows now
+  use their current repository names (`Active_InferAnts`, `GEO_INFER`,
+  `Generalized_Notation_Notation`, `Journal_Utilities`), so the repository
+  review queue is empty. Domain pages keep both ant repositories and list
+  `fep_formal` under its current name.
+- **AII claims re-checked:** the Scientific Advisory Board count and Textbook
+  Group cohort claims were re-read against the institute's pages, found
+  unchanged, and re-dated.
 
 ## 2026-10-05
 

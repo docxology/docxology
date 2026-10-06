@@ -51,6 +51,8 @@ criteria, and dependencies. Re-review this file before each public release.
   primary-repository promotion requires an individual source-backed decision.
   Review the current classification queue rather than relying on historical
   queue counts.
+- Status (2026-10-06): the queue is empty. Catalog rows use each repository's
+  current GitHub name, so an upstream rename needs a matching row update.
 
 ### DOC-006 — Refresh external evidence and coverage exceptions
 
@@ -69,6 +71,9 @@ criteria, and dependencies. Re-review this file before each public release.
 - Deliverable: record an applied, deferred, or rejected decision for every affected AII officer, board, advisory-board, and textbook-cohort claim before updating curated profile surfaces
 - Acceptance: the dated evidence report and claim ledger identify the reviewed source, decision, owner, and rationale; approved edits regenerate dependent HTML, JSON, resume, and discovery outputs
 - Dependencies: official AII governance/program pages, `reports/public_source_review_*.json`, `pages/EVIDENCE.md`, `data/claims.json`
+- Status (2026-10-06): every AII governance and program claim carries a reviewed
+  decision; the advisory-board count and Textbook Group cohort claims were
+  re-read against the official pages, found unchanged, and re-dated.
 
 ### DOC-016 — Finish paper-archive curation and registry judgment calls
 

@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-10-06T16:26:39Z
+Generated: 2026-10-06T21:01:45Z
 
-Current public metrics: 220 curated works; 161 catalogued software repositories (120 owned + 41 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 230 docxology + 45 AII public repositories (172 primary, 103 forks).
+Current public metrics: 220 curated works; 161 catalogued software repositories (120 owned + 41 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 231 docxology + 45 AII public repositories (172 primary, 104 forks).
 
 SUMMARY
 -------
@@ -509,16 +509,16 @@ docxology/daf-jev | Python | https://github.com/docxology/daf-jev | Modular, com
 docxology/OmniLatticeTextbook | HTML | https://github.com/docxology/OmniLatticeTextbook | Modular textbook project with computational models, deterministic figure generation, and manuscript validation; no publication DOI assigned at the source review
 ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output
 ActiveInferenceInstitute/ActiveBlockference | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveBlockference | Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework
-ActiveInferenceInstitute/ActiveInferAnts | Python | https://github.com/ActiveInferenceInstitute/Active_InferAnts | Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
+ActiveInferenceInstitute/Active_InferAnts | Python | https://github.com/ActiveInferenceInstitute/Active_InferAnts | Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
 ActiveInferenceInstitute/fundamentals | Python | https://github.com/ActiveInferenceInstitute/fundamentals | Unofficial repo for materials and code related to "Fundamentals of Active Inference" (Namjoshi 2026).
-ActiveInferenceInstitute/GeneralizedNotationNotation | Python | https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software | zenodo: https://doi.org/10.5281/zenodo.19600217
+ActiveInferenceInstitute/Generalized_Notation_Notation | Python | https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software | zenodo: https://doi.org/10.5281/zenodo.19600217
 ActiveInferenceInstitute/cognitive | Python | https://github.com/ActiveInferenceInstitute/cognitive | Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization
 ActiveInferenceInstitute/Active_Inference_Ontology | unspecified | https://github.com/ActiveInferenceInstitute/Active_Inference_Ontology | Formal OWL/RDF ontology for Active Inference — defines classes, properties, and axioms for free energy principle concepts
 ActiveInferenceInstitute/CEREBRUM | Python | https://github.com/ActiveInferenceInstitute/CEREBRUM | Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo | paper: papers/2025_CEREBRUM/ | zenodo: https://doi.org/10.5281/zenodo.15170907
-ActiveInferenceInstitute/Journal-Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal_Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966
+ActiveInferenceInstitute/Journal_Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal_Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966
 ActiveInferenceInstitute/Symposium | Python | https://github.com/ActiveInferenceInstitute/Symposium | Applied Active Inference Symposium materials — talks, workshops, proceedings, and collaborative session artifacts from annual Applied AIF symposia
 ActiveInferenceInstitute/ActiveInferenceCategoryTheory | unspecified | https://github.com/ActiveInferenceInstitute/ActiveInferenceCategoryTheory | Formal categorical foundations for Active Inference — string diagrams, functorial semantics, and compositional models using category theory
-ActiveInferenceInstitute/GEO-INFER | HTML | https://github.com/ActiveInferenceInstitute/GEO_INFER | Geospatial Active Inference — applying free energy minimization to geographic systems, spatial planning, and bioregional intelligence
+ActiveInferenceInstitute/GEO_INFER | HTML | https://github.com/ActiveInferenceInstitute/GEO_INFER | Geospatial Active Inference — applying free energy minimization to geographic systems, spatial planning, and bioregional intelligence
 ActiveInferenceInstitute/AEOS | unspecified | https://github.com/ActiveInferenceInstitute/AEOS | Active Entity Ontology for Science — OWL ontology for representing active entities, their actions, and causal relationships in scientific models
 ActiveInferenceInstitute/courses | HTML | https://github.com/ActiveInferenceInstitute/courses | Structured Active Inference learning courses — cohort-based curriculum materials, exercises, and collaborative learning artifacts
 ActiveInferenceInstitute/Research-Discovery-Engine | HTML | https://github.com/ActiveInferenceInstitute/Research-Discovery-Engine | AI-driven research synthesis and navigation — semantic search, citation graph analysis, and cross-domain connection discovery across the Active Inference literature

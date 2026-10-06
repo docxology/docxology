@@ -38,34 +38,26 @@
     {
       "id": "biographical-claim:aii-scientific-advisory-board-count",
       "claim_id": "aii-scientific-advisory-board-count",
-      "claim_sha256": "baea4a0d07e11c374907fc656d126c929c1092dcbe9d7ff848fad8f727e1d9e7",
+      "claim_sha256": "2cbd61bc920cd3b7e4f4ca6a201a47978554f32b64257a489beedd22cf288786",
       "evidence_sha256": "696082534953d1f42556b5f9fb09a05bca0d4ab0e332cd731d25c00c2e86be17",
       "decision": "acknowledged",
       "decided_by": "user",
-      "decided_at": "2026-08-26T17:44:21Z",
-      "rationale": "User-authorized review applied the official page's current 32-member Scientific Advisory Board count.",
+      "decided_at": "2026-10-06T21:01:11Z",
+      "rationale": "Re-read the official Scientific Advisory Board page on 2026-10-06: it still states 32 current members and lists exactly 32 names (30 link to their own public page). The count is unchanged; checked_at advanced to 2026-10-06. Reviewed under the principal's 2026-10-06 instruction to re-read the pages.",
       "curated_targets": [
-        "code/orchestrators/export_agent_data.py",
-        "pages/WIKIPEDIA.md",
-        "pages/VERIFICATION_LOG.md",
-        "data/verification-log.json"
+        "code/orchestrators/export_agent_data.py"
       ]
     },
     {
       "id": "biographical-claim:aii-textbook-cohorts",
       "claim_id": "aii-textbook-cohorts",
-      "claim_sha256": "812951d77b2b7c0415143cd9b998503dd67265ee79c770008bf25281b7fec346",
-      "evidence_sha256": "4382dc302fc3b9a7e58197ef20f1dffa39aabd68057a6d943c60497aa2b77f9f",
+      "claim_sha256": "e5da119b837e89d378a19cd773c76bfbdc280618119905cdb735b6c6a7a83e41",
+      "evidence_sha256": "cc10cd33d616eb64e8f6dc1c5ed6922768fd38919069a0ed6a8b0bed72d10702",
       "decision": "acknowledged",
       "decided_by": "user",
-      "decided_at": "2026-08-26T17:44:21Z",
-      "rationale": "User-authorized review applied the official program wording: nine completed 2022-textbook cohorts plus a live first 2026 Fundamentals cohort.",
+      "decided_at": "2026-10-06T21:01:11Z",
+      "rationale": "Re-read the official Textbook Group page on 2026-10-06: it still reports nine completed cohorts on the 2022 textbook and a live first cohort on the 2026 Fundamentals textbook. The claim is unchanged; checked_at advanced to 2026-10-06. Reviewed under the principal's 2026-10-06 instruction to re-read the pages.",
       "curated_targets": [
-        "AGENTS.md",
-        "README.md",
-        "index.html",
-        "pages/PROFILE.md",
-        "pages/VIDEOS.md",
         "code/orchestrators/export_agent_data.py"
       ]
     },
