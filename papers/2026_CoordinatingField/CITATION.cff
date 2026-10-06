@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference"
+version: "1.0.0"
+date-released: 2026-09-30
+doi: 10.5281/zenodo.23066903
+url: "https://doi.org/10.5281/zenodo.23066903"
+authors:
+  - family-names: "Ober"
+    given-names: "Edward"
+  - family-names: "Maren"
+    given-names: "Alianna"
+  - family-names: "Friston"
+    given-names: "Karl J."
+  - family-names: "Hurtado"
+    given-names: "Ana Magdalena"
+  - family-names: "Pashea"
+    given-names: "Andrew"
+  - family-names: "Friedman"
+    given-names: "Daniel"
+  - family-names: "Sabine"
+    given-names: "Alexander"
+  - family-names: "Safron"
+    given-names: "Adam"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23066903"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.23066903"
+    description: "Canonical citation DOI resolver"

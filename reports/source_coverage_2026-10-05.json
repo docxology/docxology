@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-01T21:36:28Z",
+  "generated_at": "2026-10-05T22:43:25Z",
   "source": "data/works.json",
   "summary": {
     "no_paper_folder": 17,
-    "no_full_text": 20,
+    "no_full_text": 21,
     "no_doi": 15,
     "no_canonical_url": 2,
     "non_paper_record": 21
@@ -453,6 +453,17 @@
         "non_paper_record"
       ],
       "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 224,
+      "citation_key": "Friedman2026CoordinatingFieldCaseEcosystem224",
+      "title": "Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference",
+      "type": "Paper",
+      "reasons": [
+        "no_full_text"
+      ],
+      "review_status": "needs_review",
       "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
     }
   ]

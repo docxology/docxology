@@ -192,3 +192,33 @@ def test_sync_scholar_metrics_check_rejects_unbound_since_2021_metrics(tmp_path:
 
     assert result.returncode == 1
     assert "since_2021 metrics do not match" in result.stdout
+
+
+def test_sync_scholar_metrics_check_reports_an_undecodable_receipt_without_a_traceback(tmp_path: Path):
+    script, _snapshot = _sync_fixture(tmp_path)
+    receipt = tmp_path / "data" / "scholar-verification-receipt.json"
+    receipt.write_bytes(b"\xff\xfe\x00garbage")
+
+    result = subprocess.run(
+        [sys.executable, str(script), "--check"],
+        cwd=tmp_path,
+        text=True,
+        capture_output=True,
+    )
+
+    assert result.returncode == 1
+    assert "Traceback" not in result.stderr
+    assert "invalid Scholar verification receipt" in result.stdout + result.stderr
+
+
+def test_parse_verified_at_turns_out_of_range_instants_into_value_errors():
+    sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+    from scholar_verification import parse_verified_at
+
+    for value in ("0001-01-01T00:00:00+05:00", "9999-12-31T23:59:59-05:00"):
+        try:
+            parse_verified_at(value)
+        except ValueError as exc:
+            assert "representable range" in str(exc)
+        else:
+            raise AssertionError(f"{value} should be refused")

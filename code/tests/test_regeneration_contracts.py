@@ -181,19 +181,31 @@ def test_input_vanishing_between_discovery_and_stat_is_not_cached(tmp_path, monk
     source = tmp_path / "source.txt"
     source.write_text("fixture\n")
     original_stat = Path.stat
-    calls = 0
+    original_is_file = Path.is_file
+    discovered = False
+    vanished = False
+
+    # Fail the first stat *after* discovery. Keying on discovery rather than a
+    # call count keeps the race simulated on every Python: before 3.14
+    # Path.is_file() itself calls Path.stat(), from 3.14 it does not.
+    def is_file(path, *args, **kwargs):
+        nonlocal discovered
+        result = original_is_file(path, *args, **kwargs)
+        if path == source:
+            discovered = True
+        return result
 
     def stat(path, *args, **kwargs):
-        nonlocal calls
-        if path == source:
-            calls += 1
-            if calls == 2:
-                raise FileNotFoundError("fixture vanished after discovery")
+        nonlocal vanished
+        if path == source and discovered:
+            vanished = True
+            raise FileNotFoundError("fixture vanished after discovery")
         return original_stat(path, *args, **kwargs)
 
+    monkeypatch.setattr(Path, "is_file", is_file)
     monkeypatch.setattr(Path, "stat", stat)
     assert generation_plan.input_fingerprint(tmp_path, ("source.txt",)) is None
-    assert calls == 2
+    assert discovered and vanished
 
 
 @pytest.fixture

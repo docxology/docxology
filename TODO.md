@@ -18,9 +18,15 @@ criteria, and dependencies. Re-review this file before each public release.
 - Priority: P0
 - Owner: MAINTAINER
 - Trigger: every release or Pages deployment
-- Deliverable: run `regenerate_all.py --validate`, then verify the Pages artifact and live deployment before each release
-- Acceptance: source hashes, generator metadata, Pages file/byte counts, omitted-image policy, deployment metadata, fresh revision-bound browser/link/source/live evidence, and a deployment-SHA attestation are present; a second offline regeneration pass produces no content changes
+- Deliverable: run `regenerate_all.py --validate`, then verify the Pages artifact and live deployment before each release; a named human reviewer inspects the post-deploy desktop and mobile visual-QA captures and records the review (`visual_qa.py --approve-existing --reviewed-by <reviewer>`, see [accessibility-qa.md](docs/operations/accessibility-qa.md))
+- Acceptance: source hashes, generator metadata, Pages file/byte counts, omitted-image policy, deployment metadata, fresh revision-bound browser/link/source/live evidence, and a deployment-SHA attestation that includes the human visual-review record are present; a second offline regeneration pass produces no content changes
 - Dependencies: `regenerate_all.py`, Pages workflow, live verification
+- Status (2026-10-05): the human visual review and the full release attestation
+  are not done. The newest capture set (`reports/visual-qa/2026-10-05/`) records
+  `review.status: pending`. Automated browser, smoke, and hosted-artifact
+  receipts are separate evidence and stand in for neither; a release-ready claim
+  waits for `validate_repo.py --release` with the deployment attestation
+  ([release-integrity.md](docs/operations/release-integrity.md)).
 
 ### DOC-003 — Public privacy and claim safety
 
@@ -50,7 +56,7 @@ criteria, and dependencies. Re-review this file before each public release.
 
 - Priority: P1
 - Owner: RESEARCHER
-- Trigger: monthly or before a claim-sensitive release
+- Trigger: monthly, before a claim-sensitive release, or when the weekly `freshness.yml` run opens or comments on the "Public-source freshness drift detected" issue (open as #12 on 2026-10-05; close it by hand once a reviewed refresh is the committed baseline)
 - Deliverable: refresh ORCID, Crossref, Zenodo, PubMed, Europe PMC, GitHub, Scholar, organizational, teaching, art, and software evidence; review `data/coverage-exceptions.json`
 - Acceptance: only verified metadata is applied, access dates and caveats remain visible, and current coverage is linked from agent and human discovery surfaces
 - Dependencies: public-source APIs, primary profile pages, coverage report
@@ -137,6 +143,13 @@ criteria, and dependencies. Re-review this file before each public release.
   improve pages below the aspirational performance 85, accessibility 95, and
   SEO 95 scores. Keep existing floors and measured results visible; passing
   the ratchet does not establish that every aspirational target was met.
+- Measured gap (operator-reported 2026-10-05; the Lighthouse JSON was not
+  retained in a dated report): `art.html` performance 76 and
+  `publications.html` performance 83, both below the aspirational 85. Close the
+  gap by reducing page weight and load work; the floors and targets in
+  `code/tests/test_lighthouse_budgets.py` stay unchanged. Retain the
+  `lighthouse-<sha>` Actions artifact for the measured candidate before citing
+  scores elsewhere.
 
 ### DOC-010 — Security and SEO follow-up
 
@@ -146,9 +159,18 @@ criteria, and dependencies. Re-review this file before each public release.
 - Deliverable: validate meta-policy limitations, CSP/URL/iframe/rel invariants, canonical and sitemap families, then record Search Console follow-up
 - Acceptance: no inline handlers/scripts or unsafe schemes; approved YouTube origin only; every public family has canonical, metadata, schema, and sitemap policy coverage
 - Dependencies: `seo_invariants.py`, `gsc_followup_preflight.py`, signed-in Search Console review
-- Access check (2026-10-02): the available signed-in browser has no accessible
-  Search Console property for the domain; owner-granted property access is needed.
-  No ownership, DNS, or account settings were changed.
+- Access: the owner's signed-in Search Console property was available on
+  2026-10-05; observations are in
+  [the dated report](reports/gsc_observations_2026-10-05.md) and the procedure
+  in [gsc-followup.md](docs/seo/gsc-followup.md). Open Search Console actions:
+  - Remove the retired `sitemap-images.xml` entry from the Sitemaps report. The
+    file and its generator were retired on 2026-08-28 and the URL returns 404 by
+    design; never recreate it to clear the entry.
+  - From 2026-10-06, request indexing for selected indexable work and video
+    detail pages, spread across days for the quota; never the noindex `videos/`
+    index or redirect stubs.
+  - Recheck Page indexing and the inspected URLs around 2026-10-12, then weekly
+    through about 2026-11-02.
 
 ## P1 — Pages and repository growth
 
@@ -178,11 +200,23 @@ criteria, and dependencies. Re-review this file before each public release.
   `sync_flickr_artworks.py` then the `artwork-pages` step
 - Deliverable: Flickr records enriched so no artwork page is thin and every
   collection membership is tag-driven; site re-synced and rebuilt
-- Acceptance: 0 thin (noindex) artwork pages hold; the 14 untagged records
-  gain Flickr tags; *Solstice (Turning Point)* (55349041831) tagged (currently
-  the only untagged record with a description) and joins a themed collection
-- Dependencies: Flickr account edits (out of repo scope);
+- Acceptance: 0 thin (noindex) artwork pages hold; every record that is
+  untagged in `data/artworks.json` gains Flickr tags (check with
+  `sync_flickr_artworks.py --coverage-local`); *Solstice (Turning Point)*
+  (55349041831), the untagged record with the shortest description, is tagged
+  and joins a themed collection
+- Dependencies: Flickr account edits (out of repo scope); a non-commercial
+  `FLICKR_API_KEY` (shell variable and repository secret);
   `code/orchestrators/sync_flickr_artworks.py`; `pages/ART_COLLECTIONS.md`
+- Status (2026-10-05): the Flickr-side tags and descriptions are reported done.
+  The re-sync is blocked until `FLICKR_API_KEY` exists: the script refuses to
+  run without it, and the scheduled `freshness.yml` drift step is skipped (not
+  failed), so a skipped check is not evidence that the export is current. The
+  export is public-only: the public photostream count matches it, while the
+  signed-in owner view also counts non-public photos.
+- Review: the descriptions written for the Curio Card records are deliberately
+  generic and need DAF to confirm or enrich them before they are treated as
+  final artwork copy.
 
 ## P2 — Operating model
 
@@ -194,6 +228,15 @@ criteria, and dependencies. Re-review this file before each public release.
 - Deliverable: maintain runbooks for intake, repository classification, CV release, Pages release, live verification, retention, claims, accessibility, and visual QA
 - Acceptance: `AGENT_START.md`, `AGENTS.md`, `CLAUDE.md`, `docs/README.md`, `GENERATED.md`, and the release checklist point to the same ordered commands
 - Dependencies: generated manifest and CI workflows
+
+### DOC-017 — Manuscript rendering, references, and editorial review
+
+- Priority: P2
+- Owner: RESEARCHER / MAINTAINER
+- Trigger: before any claim that the repository-methods draft is rendered, reviewed, or publication-ready
+- Deliverable: choose and pin a rendering backend with declared outputs; render the draft and inspect its figures and cross-references; validate `docs/manuscript/references.bib` with a real BibTeX parser; obtain editorial review
+- Acceptance: a declared render command produces output whose figures and references have been inspected, a bibliography syntax check passes outside the structural gate, and a named editorial reviewer's decision is recorded; until then `validate_manuscript.py` is reported only as structural source validation
+- Dependencies: `docs/manuscript/config.yaml`, `code/orchestrators/validate_manuscript.py`, [MANUSCRIPT_STATUS.md](docs/manuscript/MANUSCRIPT_STATUS.md)
 
 ### SEC-002 — Re-run the managed-profile deep security scan
 

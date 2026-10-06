@@ -41,6 +41,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `orchestrators/submit_indexnow.py` | Bulk IndexNow POST for index-priority URLs (`--list-urls`, `--dry-run`) |
 | `orchestrators/validate_repo.py` | Validate generated files, JSON-LD, metadata, sitemap targets, local links, and count consistency |
 | `orchestrators/sync_scholar_metrics.py` | Propagate `data/scholar-snapshot.json` to hand-maintained surfaces |
+| `orchestrators/record_scholar_observation.py` | Record an operator-attested direct authenticated Scholar observation: update `data/scholar-snapshot.json` (history-superseding) and write its SHA-256-bound receipt together (`--dry-run`, `--check`) |
 | `orchestrators/extract_paper_texts.py` | Extract full text and embedded images from paper PDFs; optional PyMuPDF provides image extraction, while base `pypdf`/system `pdftotext` remain text fallbacks |
 | `orchestrators/generate_citation_cff.py` | Reconcile paper CITATION.cff (CFF 1.2.0): titles/authors from `pages/BIBLIOGRAPHY.md`, canonical/artifact DOI roles from `metadata.json`, and other hand-maintained fields preserved |
 | `orchestrators/deploy_seo_security.py` | Idempotent deployment of CSP, rel-me, and hreflang tags to indexable HTML pages |

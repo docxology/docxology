@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-05T15:14:54Z",
+  "generated_at": "2026-10-05T22:44:52Z",
   "scope": "All public HTML page families; complements, but does not replace, browser-based accessibility testing.",
-  "page_count": 2535,
-  "passing": 2535,
+  "page_count": 2537,
+  "passing": 2537,
   "results": [
     {
       "path": "404.html",
@@ -27881,6 +27881,31 @@
     },
     {
       "path": "papers/2026_ConvergenceAnalysisGradient/index.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "papers/2026_CoordinatingField/index.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -61756,6 +61781,31 @@
     },
     {
       "path": "works/Friedman2026ConvergenceAnalysisGradientDescent121.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "works/Friedman2026CoordinatingFieldCaseEcosystem224.html",
       "ok": true,
       "checks": {
         "lang": true,

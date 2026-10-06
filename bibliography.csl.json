@@ -7177,5 +7177,58 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.22833485",
     "URL": "https://doi.org/10.5281/zenodo.22833485"
+  },
+  {
+    "id": "Friedman2026CoordinatingFieldCaseEcosystem224",
+    "type": "article-journal",
+    "title": "Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference",
+    "author": [
+      {
+        "family": "Ober",
+        "given": "Edward"
+      },
+      {
+        "family": "Maren",
+        "given": "Alianna"
+      },
+      {
+        "family": "Friston",
+        "given": "Karl J."
+      },
+      {
+        "family": "Hurtado",
+        "given": "Ana Magdalena"
+      },
+      {
+        "family": "Pashea",
+        "given": "Andrew"
+      },
+      {
+        "family": "Friedman",
+        "given": "Daniel"
+      },
+      {
+        "family": "Sabine",
+        "given": "Alexander"
+      },
+      {
+        "family": "Safron",
+        "given": "Adam"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 224; docs: papers/2026_CoordinatingField/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.23066903",
+    "URL": "https://doi.org/10.5281/zenodo.23066903"
   }
 ]

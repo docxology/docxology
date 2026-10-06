@@ -99,10 +99,11 @@ Revisit Option A when **any** of the following becomes true:
 
 When Option A is executed, self-host every `artworks.json` thumbnail on an
 origin this site owns, then (and only then) reintroduce an image sitemap whose
-every `<image:loc>` is same-origin — the live pin in
-`code/tests/test_regenerate_all.py:20-21` (`build_image_sitemap.py` removed
-from the generation chain) encodes exactly this reversal condition and will
-fail until the precondition holds.
+every `<image:loc>` is same-origin — the live pin
+`test_integrity_tail_resolves_generated_manifest_before_agent_index` in
+`code/tests/test_regenerate_all.py` (`build_image_sitemap.py` removed from the
+generation chain) encodes exactly this reversal condition and will fail until
+the precondition holds.
 
 
 ## Correction (2026-08-29, handoff #3 section 3)

@@ -161,8 +161,9 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # several of which are hand-authored shells.
     GenerationStep("site-facts-first", "sync_site_facts.py", (), ("--check",), "Volatile public facts after content projections"),
     # DERIVED (always-run): start-here.html is hand-authored; the chain only
-    # re-stamps its two generated counts (``--sync-counts``, idempotent and
-    # date-free) so a bibliography add or retirement no longer halts the
+    # re-stamps its three generated counts (bibliography works, paper folders
+    # and catalogued artworks; ``--sync-counts``, idempotent and date-free) so
+    # a bibliography add, retirement or artwork resync no longer halts the
     # rebuild. The page is now written by the step, so it is not an input.
     GenerationStep("start-here", "build_start_here.py", ("--sync-counts",), ("--check",), "Start Here curated reading paths page"),
     GenerationStep(
@@ -264,6 +265,7 @@ EXCLUDED_OPERATIONS: tuple[ExcludedOperation, ...] = (
     ExcludedOperation("migrate_inline_handlers.py", "source-migration/manual-review", "This migration edits hand-authored HTML and lacks an exact no-write renderer."),
     ExcludedOperation("optimize_font_loading.py", "source-migration/manual-review", "This migration edits hand-authored HTML and lacks an exact no-write renderer."),
     ExcludedOperation("reconcile_paper_dois.py", "manual-review/source-reconciliation", "DOI role changes require an approval-bound source reconciliation receipt."),
+    ExcludedOperation("record_scholar_observation.py", "source-authoring/manual-review", "An operator-attested direct authenticated Scholar observation cannot be derived locally, so recording it (snapshot history plus the SHA-256-bound receipt) stays an explicit action; sync_scholar_metrics.py remains the deterministic propagator."),
     ExcludedOperation("refresh_public_sources.py", "network", "Public API evidence requires explicit review before curated claims change."),
     ExcludedOperation("refresh_public_source_inventory.py", "network", "Public inventory fetch writes dated evidence and may expose review candidates."),
     ExcludedOperation("build_github_inventory.py", "network", "GitHub inventory refresh is an explicit freshness operation."),

@@ -7,12 +7,13 @@ is validation and targeted enrichment, never wholesale re-rendering:
 * ``--check`` (default when no flag is passed): fail non-zero unless the page
   exists, contains all four curated reading paths, every local link resolves
   to a real file in the repository, no visible card title exceeds 65
-  characters, and the hand-authored bibliography/paper-folder counts match
-  ``data/current-counts.json``.
+  characters, the hand-authored bibliography/paper-folder counts match
+  ``data/current-counts.json``, and the catalogued-drawings count matches
+  ``data/artworks.json``.
 * ``--enrich``: rewrite the page's shared navigation from the single nav
   manifest in ``code/src/site_nav.py`` (keeping ``aria-current`` on the
   start-here link), stamp the hand-authored counts from
-  ``data/current-counts.json`` (the same volatile-fact pattern
+  ``data/current-counts.json`` and ``data/artworks.json`` (the same volatile-fact pattern
   ``sync_site_facts.py`` applies elsewhere), and refresh ``dateModified`` in
   the WebPage JSON-LD to today, so the hand-authored shell cannot drift from
   the manifest or the count report.
@@ -36,6 +37,7 @@ PAGE = REPO_ROOT / "start-here.html"
 
 PAGE_KEY = "start-here.html"
 CURRENT_COUNTS = REPO_ROOT / "data" / "current-counts.json"
+ARTWORKS = REPO_ROOT / "data" / "artworks.json"
 
 
 # Card section ids that must all be present (acceptance criterion 1).
@@ -102,8 +104,85 @@ def load_public_counts() -> dict:
         return json.load(f)["counts"]
 
 
+# The whole number token is captured (digits with optional ",ddd" thousands
+# groups, not preceded by a word character, comma or period) so a stale larger
+# number such as "1,943" or "9943" can never satisfy a check for "943".
+_ART_COUNT_RE = re.compile(r"(?<![\w,.])(?P<count>\d+(?:,\d{3})*) catalogued pen-and-ink drawings")
+
+
+# Full-text and extracted-image counts in the paper-folder bullet, anchored like
+# _ART_COUNT_RE so a stale number can never satisfy the check by suffix.
+_FULL_TEXT_RE = re.compile(r"(?<![\w,.])(?P<count>\d+(?:,\d{3})*) with full-text extraction")
+_IMAGES_RE = re.compile(r"(?<![\w,.])(?P<count>\d+(?:,\d{3})*) extracted images")
+_EXTRACTION_COUNTS = (
+    (_FULL_TEXT_RE, "full_text_papers", "with full-text extraction"),
+    (_IMAGES_RE, "extracted_images", "extracted images"),
+)
+
+
+def stamp_extraction_counts(markup: str, counts: dict) -> str:
+    """Stamp the full-text and extracted-image counts from data/current-counts.json."""
+    for pattern, key, phrase in _EXTRACTION_COUNTS:
+        value = counts.get(key)
+        if type(value) is int:
+            markup = pattern.sub(f"{value:,} {phrase}", markup)
+    return markup
+
+
+def check_extraction_counts(markup: str, counts: dict) -> list[str]:
+    """Every full-text/extracted-image count on the page equals data/current-counts.json."""
+    errors = []
+    for pattern, key, phrase in _EXTRACTION_COUNTS:
+        value = counts.get(key)
+        if type(value) is not int:
+            errors.append(f"current-counts.json missing integer {key}")
+            continue
+        found = [match.group("count") for match in pattern.finditer(markup)]
+        if not found:
+            errors.append(f"start-here.html has no '{phrase}' count")
+        elif any(number != f"{value:,}" for number in found):
+            errors.append(f"stale '{phrase}' count in start-here.html (current-counts says {value:,})")
+    return errors
+
+
+def load_artwork_count(path: Path | None = None) -> int:
+    """Number of catalogued artworks in the Flickr gallery export (``data/artworks.json``)."""
+    with open(path or ARTWORKS, encoding="utf-8") as f:
+        payload = json.load(f)
+    count = payload.get("count") if isinstance(payload, dict) else None
+    if type(count) is not int or count < 0:
+        raise ValueError(f"artworks export has no non-negative integer count: {count!r}")
+    return count
+
+
+def stamp_art_count(markup: str, art_count: int) -> str:
+    """Stamp the 'N catalogued pen-and-ink drawings' count (thousands separator from 1,000)."""
+    return _ART_COUNT_RE.sub(f"{art_count:,} catalogued pen-and-ink drawings", markup)
+
+
+def check_art_count(markup: str, art_count: int) -> list[str]:
+    """The catalogued-drawings count must be present and every occurrence must equal the export count.
+
+    The phrase is matched with the same anchored regex ``stamp_art_count``
+    rewrites and each captured number is compared exactly with the formatted
+    count, so a page that lost the phrase, or carries any occurrence with a
+    different number (including a longer one that merely ends in the expected
+    digits), is an error.
+    """
+    expected = f"{art_count:,}"
+    found = [match.group("count") for match in _ART_COUNT_RE.finditer(markup)]
+    if not found:
+        return [
+            "missing 'N catalogued pen-and-ink drawings' count in start-here.html "
+            f"(artworks.json says {art_count})"
+        ]
+    if any(number != expected for number in found):
+        return [f"stale art count in start-here.html (artworks.json says {art_count})"]
+    return []
+
+
 def stamp_counts(markup: str) -> str:
-    """Stamp the hand-authored bibliography/paper-folder counts (sync_site_facts-style)."""
+    """Stamp the hand-authored bibliography/paper-folder/art counts (sync_site_facts-style)."""
     counts = load_public_counts()
     markup = re.sub(
         r"a unified bibliography of \d+ works",
@@ -115,11 +194,12 @@ def stamp_counts(markup: str) -> str:
         f"{counts['paper_folder_docs']} folders under <code>papers/</code>",
         markup,
     )
-    return markup
+    markup = stamp_extraction_counts(markup, counts)
+    return stamp_art_count(markup, load_artwork_count())
 
 
 def check_counts(markup: str) -> list[str]:
-    """The two hand-authored counts must match data/current-counts.json."""
+    """The hand-authored counts must match data/current-counts.json and data/artworks.json."""
     try:
         counts = load_public_counts()
     except (OSError, KeyError, ValueError) as exc:
@@ -133,6 +213,11 @@ def check_counts(markup: str) -> list[str]:
         errors.append(f"stale works count in start-here.html (current-counts says {works})")
     if not re.search(rf"\b{folders} folders under <code>papers/</code>", markup):
         errors.append(f"stale paper-folder count in start-here.html (current-counts says {folders})")
+    errors.extend(check_extraction_counts(markup, counts))
+    try:
+        errors.extend(check_art_count(markup, load_artwork_count()))
+    except (OSError, KeyError, ValueError) as exc:
+        errors.append(f"cannot read {ARTWORKS.name}: {exc}")
     return errors
 
 
@@ -166,10 +251,11 @@ def enrich() -> None:
 
 
 def sync_counts() -> bool:
-    """Stamp only the two generated counts; idempotent and date-free.
+    """Stamp only the generated counts; idempotent and date-free.
 
     This is the regeneration-chain mode: a bibliography add or retirement
-    changes ``data/current-counts.json``, and the hand-authored prose must
+    changes ``data/current-counts.json`` (and an artwork resync changes
+    ``data/artworks.json``), and the hand-authored prose must
     follow without the clock-dependent ``dateModified`` stamp that ``--enrich``
     applies (that would break the chain's byte-stable rerun guarantee).
     Returns whether the page changed.
@@ -189,13 +275,13 @@ def main() -> None:
     parser.add_argument(
         "--sync-counts",
         action="store_true",
-        help="stamp only the generated work/paper-folder counts (idempotent; used by regenerate_all.py)",
+        help="stamp only the generated work/paper-folder/art counts (idempotent; used by regenerate_all.py)",
     )
     args = parser.parse_args()
 
     if args.sync_counts:
         changed = sync_counts()
-        print(f"{PAGE.name}: counts {'stamped from' if changed else 'already match'} {CURRENT_COUNTS.name}")
+        print(f"{PAGE.name}: counts {'stamped from' if changed else 'already match'} {CURRENT_COUNTS.name} and {ARTWORKS.name}")
         errors = check()
         if errors:
             print("\n".join(errors), file=sys.stderr)

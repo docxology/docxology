@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-from docxology_tools.site_facts import SiteFactsError, counts, generated_date, generated_month_year  # noqa: E402
+from docxology_tools.site_facts import SiteFactsError, counts, generated_date, generated_month_year, public_source_checked_date  # noqa: E402
 from docxology_tools.report_paths import latest_source_report, latest_source_subdir_file  # noqa: E402
 TARGETS = [
     REPO_ROOT / "index.html",
@@ -91,20 +91,21 @@ def render(path: Path) -> str:
         text = re.sub(rf"as of {MONTH_YEAR_PATTERN}", f"as of {month}", text, count=1, flags=re.IGNORECASE)
         text = re.sub(r"<meta name=\"revised\" content=\"[^\"]+\">", f'<meta name="revised" content="{date}">', text)
     elif path.name == "discovery.html":
+        checked = public_source_checked_date()
         text = re.sub(r'("dateModified":\s*")[^"]+(")', rf"\g<1>{date}\g<2>", text, count=1)
         text = re.sub(r'<meta name="revised" content="[^"]+">', f'<meta name="revised" content="{date}">', text)
-        text = re.sub(r"checked on \d{4}-\d{2}-\d{2}", f"checked on {date}", text)
+        text = re.sub(r"checked on \d{4}-\d{2}-\d{2}", f"checked on {checked}", text)
         text = re.sub(r"Returned \d+ exact-name records", f"Returned {public_facts.get('Zenodo exact-name creator records', 0)} exact-name records", text)
         text = re.sub(r"Returned \d+ records, including versioned deposits", f"Returned {public_facts.get('Zenodo ORCID-linked records', 0)} records, including versioned deposits", text)
         text = re.sub(
             r'(<tr><td>GitHub API — docxology</td>.*?<td>Returned )\d+( public repositories on )\d{4}-\d{2}-\d{2}',
-            rf"\g<1>{public_facts.get('GitHub user docxology', github.get('docxology', 0))}\g<2>{date}",
+            rf"\g<1>{public_facts.get('GitHub user docxology', github.get('docxology', 0))}\g<2>{checked}",
             text,
             flags=re.S,
         )
         text = re.sub(
             r'(<tr><td>GitHub API — AII</td>.*?<td>Returned )\d+( public repositories on )\d{4}-\d{2}-\d{2}',
-            rf"\g<1>{public_facts.get('GitHub user ActiveInferenceInstitute', github.get('ActiveInferenceInstitute', 0))}\g<2>{date}",
+            rf"\g<1>{public_facts.get('GitHub user ActiveInferenceInstitute', github.get('ActiveInferenceInstitute', 0))}\g<2>{checked}",
             text,
             flags=re.S,
         )
@@ -118,14 +119,15 @@ def render(path: Path) -> str:
             if name:
                 text = re.sub(rf"{prefix}_\d{{4}}-\d{{2}}-\d{{2}}\.json", name, text)
     elif path.name == "DISCOVERY.md":
+        checked = public_source_checked_date()
         # Keep the Scholar snapshot's own provenance date intact. The other
         # source rows are refreshed from the latest public-source report below.
-        text = re.sub(r"checked on \d{4}-\d{2}-\d{2}", f"checked on {date}", text)
-        text = re.sub(r"Zenodo returned \d+ exact-name records on \d{4}-\d{2}-\d{2}", f"Zenodo returned {public_facts.get('Zenodo exact-name creator records', 0)} exact-name records on {date}", text)
-        text = re.sub(r"ORCID-linked query returned \d+ records on \d{4}-\d{2}-\d{2}", f"ORCID-linked query returned {public_facts.get('Zenodo ORCID-linked records', 0)} records on {date}", text)
-        text = re.sub(r"NCBI E-utilities returned \d+ records for the exact author query on \d{4}-\d{2}-\d{2}", f"NCBI E-utilities returned {public_facts.get('PubMed exact author records', 0)} records for the exact author query on {date}", text)
-        text = re.sub(r"Europe PMC returned \d+ exact-author results, including preprints, on \d{4}-\d{2}-\d{2}", f"Europe PMC returned {public_facts.get('Europe PMC exact author records', 0)} exact-author results, including preprints, on {date}", text)
-        text = re.sub(r"Crossref returned \d+ DOI records attached to the ORCID on \d{4}-\d{2}-\d{2}", f"Crossref returned {public_facts.get('Crossref ORCID DOI records', 0)} DOI records attached to the ORCID on {date}", text)
+        text = re.sub(r"checked on \d{4}-\d{2}-\d{2}", f"checked on {checked}", text)
+        text = re.sub(r"Zenodo returned \d+ exact-name records on \d{4}-\d{2}-\d{2}", f"Zenodo returned {public_facts.get('Zenodo exact-name creator records', 0)} exact-name records on {checked}", text)
+        text = re.sub(r"ORCID-linked query returned \d+ records on \d{4}-\d{2}-\d{2}", f"ORCID-linked query returned {public_facts.get('Zenodo ORCID-linked records', 0)} records on {checked}", text)
+        text = re.sub(r"NCBI E-utilities returned \d+ records for the exact author query on \d{4}-\d{2}-\d{2}", f"NCBI E-utilities returned {public_facts.get('PubMed exact author records', 0)} records for the exact author query on {checked}", text)
+        text = re.sub(r"Europe PMC returned \d+ exact-author results, including preprints, on \d{4}-\d{2}-\d{2}", f"Europe PMC returned {public_facts.get('Europe PMC exact author records', 0)} exact-author results, including preprints, on {checked}", text)
+        text = re.sub(r"Crossref returned \d+ DOI records attached to the ORCID on \d{4}-\d{2}-\d{2}", f"Crossref returned {public_facts.get('Crossref ORCID DOI records', 0)} DOI records attached to the ORCID on {checked}", text)
         for prefix, suffix in (("public_source_snapshot", "json"), ("public_source_inventory", "json")):
             name = latest_report(prefix, suffix)
             if name:

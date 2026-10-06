@@ -64,20 +64,83 @@ and add it as the `FLICKR_API_KEY` repository secret for the scheduled drift che
 
 ```bash
 export FLICKR_API_KEY="<your non-commercial key>"
-uv run python3 code/orchestrators/sync_flickr_artworks.py --dry-run   # summary, no write
+uv run python3 code/orchestrators/sync_flickr_artworks.py --dry-run   # summary + coverage, no write
 uv run python3 code/orchestrators/sync_flickr_artworks.py             # applies data/artworks.json
 ```
 
 Modes: default writes the export; `--dry-run` fetches and prints a summary without writing;
-`--check-drift` exits nonzero when the checked-in export differs from live (the CI gate).
+`--check-drift` exits nonzero when the checked-in export differs from live (the CI gate);
+`--allow-count-mismatch` accepts a fetch that returned fewer public photos than Flickr's
+public total (see "Tags and scope" below; the default is to refuse it).
 The export is deterministic — records sort by upload date descending, and `generated_at` is
 reused when the body is unchanged — so an unchanged photostream produces a no-op rebuild.
-Descriptions are HTML-unescaped once (the pre-sync snapshot carried double-encoded
-`&quot;` entities). After applying, rebuild dependents in one pass:
+Descriptions are HTML-unescaped exactly once (the pre-sync snapshot carried double-encoded
+`&quot;` entities), so a description that literally contains `&amp;amp;` is stored as `&amp;`.
+
+The dry-run and write paths print a coverage report: artwork count against Flickr's public
+total, untagged records, empty and short (< 40 plain characters) descriptions, thin pages,
+tag-count spread, license and media mixes, and the delta against the checked-in export (ids
+added or removed, records whose tags or description changed). Before anything is written the
+sync runs `validate_export` (key order, unique numeric ids, exact record fields,
+whitespace-free unique tags, `flickr_url` and `https` URL shapes, upload timestamps, sort
+order) and refuses to write an invalid export.
+
+Offline and completeness options:
+
+- `--coverage-local` needs **no API key and no network**: it runs the same structural
+  validation and coverage report on the checked-in `data/artworks.json` and (without
+  `--require-complete`) exits 1 only when validation finds errors. Use it to see tag and description coverage before or after a sync.
+- `--require-complete` is opt-in: after a live fetch it exits nonzero, writing nothing, when
+  any record is untagged or has an empty description. It combines with `--dry-run`
+  (`--dry-run --require-complete` is the read-only gate) and, with `--coverage-local`, applies
+  to the checked-in file. The default run does not require completeness.
+- `--check-drift` ignores Flickr's volatile `views` counter (`DRIFT_IGNORED_FIELDS`): a
+  views-only difference is reported as informational and exits 0, so the weekly
+  `freshness.yml` check does not fail on view counts. The write path still stores the current
+  views.
+
+Tags and scope:
+
+- `tags` holds Flickr's **clean** tag tokens (lowercase, spaces and punctuation stripped) and
+  is the key that art collections ([`pages/ART_COLLECTIONS.md`](../../pages/ART_COLLECTIONS.md)),
+  related works, the gallery filter and search match on. A quoted multiword Flickr tag arrives
+  without its spaces — `"summer solstice"` is `summersolstice` — and is stored that way. The
+  human-readable (raw) spellings are available from `flickr.photos.getInfo` (not called by
+  this sync), so raw display tags are not synced and `tags` is never split further.
+- The export is **public-only**: it uses the unauthenticated `flickr.people.getPublicPhotos`.
+  Totals shown in Flickr's signed-in owner view include non-public photos and will be larger
+  than `count` here; the public profile count is the one that should match. That owner-view
+  caveat is about what you see on flickr.com, not about the sync's own check: the sync
+  compares the fetched count with the `total` Flickr returns in the same
+  `getPublicPhotos` response, so the two are the same public set.
+- **A fetched count below that public total is a truncated fetch** (for example a pagination
+  page that came back empty). The sync refuses it in every mode (write, `--dry-run`,
+  `--check-drift`) with an error and writes nothing, before spending the per-photo
+  `getSizes` requests, because writing the shrunken export would drop real artworks and a
+  later `build_artwork_pages.py --prune-owned` would delete their pages. Re-run the sync; if
+  the lower count is genuinely correct, pass `--allow-count-mismatch` to proceed (a warning is
+  still printed and the coverage report shows the `MISMATCH`). A fetched count **above** the
+  public total (photos uploaded while the fetch ran) is only a warning and does not block
+  the write. `--allow-count-mismatch` has no meaning offline and cannot be combined with
+  `--coverage-local`.
+- A checked-in `data/artworks.json` that is not an object with an `artworks` list is treated
+  as no previous export (with a warning) by `--dry-run` and the write path, so a resync can
+  repair it; `--check-drift` reports it as drift. `--coverage-local` prints only the
+  validator's messages (exit 1) for a structurally broken export and no coverage report.
+- `width`/`height` are deliberately not synced; the art grid contract is pinned by
+  [`code/tests/test_art_thumb_dimensions.py`](../../code/tests/test_art_thumb_dimensions.py).
+
+Post-sync order: after the sync writes `data/artworks.json`, rebuild every dependent in one
+pass with `regenerate_all.py`, then review the diff.
 
 ```bash
-uv run python3 code/orchestrators/regenerate_all.py --validate
+uv run python3 code/orchestrators/sync_flickr_artworks.py             # 1. sync
+uv run python3 code/orchestrators/regenerate_all.py --validate        # 2. rebuild + validate
 ```
+
+Run `uv run python3 code/orchestrators/build_artwork_pages.py --prune-owned` only if photos
+were **removed** from Flickr: it is the one manual step that deletes generated pages for ids
+no longer in the export (the rebuild only reports them as orphans).
 
 The runbook continues with the bibliographic intake flow below.
 

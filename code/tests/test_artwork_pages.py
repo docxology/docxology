@@ -18,6 +18,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 import build_artwork_pages  # noqa: E402
 import sync_art_gallery  # noqa: E402
+import sync_flickr_artworks  # noqa: E402
 from docxology_tools.art_collections import load_collections, normalize_tag  # noqa: E402
 from docxology_tools.artwork_pages import (  # noqa: E402
     ARTWORK_PAGE_MARKER,
@@ -30,6 +31,14 @@ from docxology_tools.artwork_pages import (  # noqa: E402
 
 def _payload() -> dict:
     return json.loads((REPO_ROOT / "data" / "artworks.json").read_text(encoding="utf-8"))
+
+
+def test_checked_in_artworks_export_is_structurally_valid() -> None:
+    # Offline schema gate for data/artworks.json (key order, unique ids, exact
+    # record fields, clean whitespace-free tags, URL shapes, sort order). It is
+    # deliberately not a completeness ratchet: untagged or undescribed records
+    # are valid here; see `sync_flickr_artworks.py --coverage-local` for coverage.
+    assert sync_flickr_artworks.validate_export(_payload()) == []
 
 
 def test_every_artwork_record_has_a_page() -> None:

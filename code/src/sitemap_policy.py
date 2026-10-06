@@ -72,11 +72,11 @@ INDEX_PRIORITY_STATIC: list[tuple[str, str, str]] = [
 
 SITE_ORIGIN = "https://danielarifriedman.com/"
 
+# videos/ is absent on purpose: that index is noindex,follow and unsitemapped; videos.html and videos/<id>.html are the indexable surfaces.
 GSC_PRIORITY_PATHS: tuple[str, ...] = (
     "",
     "repositories.html",
     "videos.html",
-    "videos/",
     "software.html",
     "exports.html",
     "catalog.html",
@@ -85,6 +85,12 @@ GSC_PRIORITY_PATHS: tuple[str, ...] = (
     "publications.html",
     "works/",
 )
+
+
+# Sitemap files removed on purpose. Search Console may still list them as
+# "Couldn't fetch"; the live preflight probe expects 404 or 410 for each.
+# sitemap-images.xml was removed 2026-08-28 (see docs/operations/asset-strategy-adr.md).
+RETIRED_SITEMAP_PATHS: tuple[str, ...] = ("sitemap-images.xml",)
 
 
 def gsc_priority_urls() -> list[str]:

@@ -3,7 +3,8 @@
 from __future__ import annotations
 
 import json
-from datetime import datetime
+import re
+from datetime import date, datetime
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -46,6 +47,23 @@ def generated_date(path: Path | None = None) -> str:
     except ValueError as exc:
         raise SiteFactsError(f"malformed site-facts generated_at revision: {value!r}") from exc
     return parsed.date().isoformat()
+
+
+def public_source_checked_date(path: Path | None = None) -> str:
+    """Date of the dated public-source snapshot the published source counts come from.
+
+    Discovery prose says when the external sources were checked; that is the
+    snapshot's date, not the date the site was regenerated.
+    """
+    sources = load_facts(path).get("sources")
+    source = sources.get("public_source_snapshot") if isinstance(sources, dict) else None
+    match = re.fullmatch(r"reports/public_source_snapshot_(\d{4}-\d{2}-\d{2})\.json", source or "")
+    if not match:
+        raise SiteFactsError(f"site-facts input must name a dated public_source_snapshot report, got {source!r}")
+    try:
+        return date.fromisoformat(match.group(1)).isoformat()
+    except ValueError as exc:
+        raise SiteFactsError(f"malformed public_source_snapshot date: {source!r}") from exc
 
 
 def generated_month_year(path: Path | None = None) -> str:

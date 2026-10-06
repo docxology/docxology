@@ -55,8 +55,10 @@ unless a direct authenticated verification receipt is supplied. A valid receipt
 must name the canonical `profile_id`, state `direct: true` and
 `authenticated: true`, include `verified_at`, and provide non-negative integer
 `citations`, `h_index`, and `i10_index` fields under `metrics`. Even then, a
-difference is only a reviewed candidate: update
-`data/scholar-snapshot.json` deliberately, run
+difference is only a reviewed candidate: record the observation deliberately
+with
+[`record_scholar_observation.py`](../../code/orchestrators/record_scholar_observation.py)
+(it writes the snapshot and its SHA-256-bound receipt together), run
 `sync_scholar_metrics.py`, and regenerate dependent outputs afterward.
 
 The release source contract is stricter than the review queue: every curated
@@ -64,7 +66,25 @@ snapshot is bound to
 [`data/scholar-verification-receipt.json`](../../data/scholar-verification-receipt.json).
 That sidecar records the direct/authenticated assertion, the canonical metrics
 and as-of date, a source/method note, and the SHA-256 of the exact snapshot
-bytes. Update the receipt in the same review as any snapshot edit, then run
+bytes. The recorder writes both files from one in-memory representation, so the
+receipt is never edited by hand: the operator supplies the observed values and,
+for a run that writes, `--attest-direct-authenticated` (the assertion is never
+inferred), and the tool validates the written pair from disk, restoring the
+original bytes on any failure (and saying so plainly, with the files and the
+re-run recovery path, if the restoration itself fails). Use `--dry-run` to
+preview the old-to-new values and the predicted snapshot SHA-256, and `--check`
+to confirm the pair already records an exact observation; neither writes, so
+neither needs the attestation. The six typed numbers are cross-checked first: a
+since-2021 value above its all-time counterpart, or an h-index or i10-index above
+the citations in its column, is refused. An observation must be strictly newer
+than the recorded `as_of`; `verified_at` defaults to now only within one day of
+`as_of`, so pass `--verified-at` to state a later verification. Re-running a
+recorded observation is a no-op, and a missing, stale, or undecodable receipt for
+an already-recorded snapshot is regenerated on its own, reusing the earlier
+receipt's `verified_at` when it still fits. The default receipt `source` and
+method assert only a direct authenticated observation of the canonical profile;
+put interface details such as which browser in `--source` or `--method` only when
+you attest them. Then run
 `uv run python3 code/orchestrators/sync_scholar_metrics.py --check`; a stale,
 missing, anonymous, or mismatched receipt fails before derived surfaces can be
 accepted. The sidecar can preserve an already-verified baseline across later

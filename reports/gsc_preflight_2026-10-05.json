@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-05T15:43:57Z",
+  "generated_at": "2026-10-05T22:52:07Z",
   "property": "https://danielarifriedman.com/",
   "preflight_ok": true,
   "local_checks": [
     {
       "check": "sitemap_url_count",
       "ok": true,
-      "detail": "2332 URLs (expected 2332)"
+      "detail": "2333 URLs (expected 2333)"
     },
     {
       "check": "sitemap_excludes_papers",
@@ -22,73 +22,77 @@
       "check": "robots_open_crawl",
       "ok": true,
       "detail": "Allow: / without Disallow"
+    },
+    {
+      "check": "sitemap_files_canonical_only",
+      "ok": true,
+      "detail": "sitemap.xml is the only root sitemap file; robots.txt names only it"
+    },
+    {
+      "check": "priority_urls_indexable",
+      "ok": true,
+      "detail": "10 priority URLs in the sitemap and indexable"
     }
   ],
   "live_checks": [
     {
       "check": "priority_hub_home",
       "ok": true,
-      "detail": "HTTP 200 (428ms)",
+      "detail": "HTTP 200 (239ms)",
       "url": "https://danielarifriedman.com/"
     },
     {
       "check": "priority_hub_repositories.html",
       "ok": true,
-      "detail": "HTTP 200 (408ms)",
+      "detail": "HTTP 200 (327ms)",
       "url": "https://danielarifriedman.com/repositories.html"
     },
     {
       "check": "priority_hub_videos.html",
       "ok": true,
-      "detail": "HTTP 200 (311ms)",
+      "detail": "HTTP 200 (322ms)",
       "url": "https://danielarifriedman.com/videos.html"
-    },
-    {
-      "check": "priority_hub_videos/",
-      "ok": true,
-      "detail": "HTTP 200 (364ms)",
-      "url": "https://danielarifriedman.com/videos/"
     },
     {
       "check": "priority_hub_software.html",
       "ok": true,
-      "detail": "HTTP 200 (347ms)",
+      "detail": "HTTP 200 (363ms)",
       "url": "https://danielarifriedman.com/software.html"
     },
     {
       "check": "priority_hub_exports.html",
       "ok": true,
-      "detail": "HTTP 200 (538ms)",
+      "detail": "HTTP 200 (356ms)",
       "url": "https://danielarifriedman.com/exports.html"
     },
     {
       "check": "priority_hub_catalog.html",
       "ok": true,
-      "detail": "HTTP 200 (366ms)",
+      "detail": "HTTP 200 (346ms)",
       "url": "https://danielarifriedman.com/catalog.html"
     },
     {
       "check": "priority_hub_cite-verify.html",
       "ok": true,
-      "detail": "HTTP 200 (347ms)",
+      "detail": "HTTP 200 (331ms)",
       "url": "https://danielarifriedman.com/cite-verify.html"
     },
     {
       "check": "priority_hub_discovery.html",
       "ok": true,
-      "detail": "HTTP 200 (421ms)",
+      "detail": "HTTP 200 (320ms)",
       "url": "https://danielarifriedman.com/discovery.html"
     },
     {
       "check": "priority_hub_publications.html",
       "ok": true,
-      "detail": "HTTP 200 (337ms)",
+      "detail": "HTTP 200 (374ms)",
       "url": "https://danielarifriedman.com/publications.html"
     },
     {
       "check": "priority_hub_works/",
       "ok": true,
-      "detail": "HTTP 200 (325ms)",
+      "detail": "HTTP 200 (516ms)",
       "url": "https://danielarifriedman.com/works/"
     },
     {
@@ -144,13 +148,18 @@
       "ok": true,
       "detail": "HTTP 200",
       "url": "https://danielarifriedman.com/sitemap.xml"
+    },
+    {
+      "check": "retired_sitemap_sitemap-images.xml",
+      "ok": true,
+      "detail": "HTTP 404 (expected 404 or 410)",
+      "url": "https://danielarifriedman.com/sitemap-images.xml"
     }
   ],
   "priority_urls": [
     "https://danielarifriedman.com/",
     "https://danielarifriedman.com/repositories.html",
     "https://danielarifriedman.com/videos.html",
-    "https://danielarifriedman.com/videos/",
     "https://danielarifriedman.com/software.html",
     "https://danielarifriedman.com/exports.html",
     "https://danielarifriedman.com/catalog.html",
@@ -173,28 +182,22 @@
       "action": "Add sitemap: sitemap.xml \u2192 Submit"
     },
     {
+      "id": "gsc-remove-retired-sitemap",
+      "title": "Remove the retired sitemap entry",
+      "gsc_url": "https://search.google.com/search-console/sitemaps?resource_id=https://danielarifriedman.com/",
+      "action": "Sitemaps \u2192 open the row for sitemap-images.xml \u2192 remove it; it returns 404 by design, so never recreate or resubmit it"
+    },
+    {
       "id": "gsc-index-hubs",
       "title": "Request indexing for priority URLs",
       "gsc_url": "https://search.google.com/search-console/inspect?resource_id=https://danielarifriedman.com/",
       "action": "URL Inspection \u2192 Request indexing for each priority URL"
     },
     {
-      "id": "gsc-validate-redirect",
-      "title": "Validate fix: Page with redirect",
+      "id": "gsc-review-exclusions",
+      "title": "Review exclusions; Validate fix only after a real fix",
       "gsc_url": "https://search.google.com/search-console/index?resource_id=https://danielarifriedman.com/",
-      "action": "Page indexing \u2192 Page with redirect \u2192 Validate fix"
-    },
-    {
-      "id": "gsc-validate-canonical",
-      "title": "Validate fix: Alternate page with proper canonical",
-      "gsc_url": "https://search.google.com/search-console/index?resource_id=https://danielarifriedman.com/",
-      "action": "Page indexing \u2192 Alternate canonical \u2192 Validate fix"
-    },
-    {
-      "id": "gsc-validate-404",
-      "title": "Validate fix: Not found (404)",
-      "gsc_url": "https://search.google.com/search-console/index?resource_id=https://danielarifriedman.com/",
-      "action": "Page indexing \u2192 Not found (404) \u2192 Validate fix"
+      "action": "Page indexing \u2192 Why pages aren\u2019t indexed \u2192 compare each bucket with the legitimate-exclusion list in docs/seo/gsc-followup.md; use Validate fix only for a site change that is live across all affected URLs"
     },
     {
       "id": "gsc-monitor",
@@ -207,10 +210,9 @@
     "[ ] Signed into GSC for https://danielarifriedman.com/",
     "[ ] Preflight passed (this script)",
     "[ ] Submitted sitemap.xml",
-    "[ ] Requested indexing: /, /repositories.html, /videos.html, /videos/, /software.html, /exports.html, /catalog.html, /cite-verify.html, /discovery.html, /publications.html, /works/",
-    "[ ] Validate fix: Page with redirect",
-    "[ ] Validate fix: Alternate page with proper canonical",
-    "[ ] Validate fix: Not found (404)",
+    "[ ] Removed the retired sitemap from GSC Sitemaps: sitemap-images.xml",
+    "[ ] Requested indexing: /, /repositories.html, /videos.html, /software.html, /exports.html, /catalog.html, /cite-verify.html, /discovery.html, /publications.html, /works/",
+    "[ ] Reviewed exclusions against the legitimate-exclusion list (Validate fix only after a real, live, site-wide fix)",
     "[ ] Calendar reminder: recheck Page indexing in 7 days"
   ]
 }

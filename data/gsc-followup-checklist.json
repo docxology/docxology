@@ -1,12 +1,11 @@
 {
-  "generated_at": "2026-10-05T15:43:57Z",
+  "generated_at": "2026-10-05T22:52:07Z",
   "property": "https://danielarifriedman.com/",
   "preflight_ok": true,
   "priority_urls": [
     "https://danielarifriedman.com/",
     "https://danielarifriedman.com/repositories.html",
     "https://danielarifriedman.com/videos.html",
-    "https://danielarifriedman.com/videos/",
     "https://danielarifriedman.com/software.html",
     "https://danielarifriedman.com/exports.html",
     "https://danielarifriedman.com/catalog.html",
@@ -29,28 +28,22 @@
       "action": "Add sitemap: sitemap.xml \u2192 Submit"
     },
     {
+      "id": "gsc-remove-retired-sitemap",
+      "title": "Remove the retired sitemap entry",
+      "gsc_url": "https://search.google.com/search-console/sitemaps?resource_id=https://danielarifriedman.com/",
+      "action": "Sitemaps \u2192 open the row for sitemap-images.xml \u2192 remove it; it returns 404 by design, so never recreate or resubmit it"
+    },
+    {
       "id": "gsc-index-hubs",
       "title": "Request indexing for priority URLs",
       "gsc_url": "https://search.google.com/search-console/inspect?resource_id=https://danielarifriedman.com/",
       "action": "URL Inspection \u2192 Request indexing for each priority URL"
     },
     {
-      "id": "gsc-validate-redirect",
-      "title": "Validate fix: Page with redirect",
+      "id": "gsc-review-exclusions",
+      "title": "Review exclusions; Validate fix only after a real fix",
       "gsc_url": "https://search.google.com/search-console/index?resource_id=https://danielarifriedman.com/",
-      "action": "Page indexing \u2192 Page with redirect \u2192 Validate fix"
-    },
-    {
-      "id": "gsc-validate-canonical",
-      "title": "Validate fix: Alternate page with proper canonical",
-      "gsc_url": "https://search.google.com/search-console/index?resource_id=https://danielarifriedman.com/",
-      "action": "Page indexing \u2192 Alternate canonical \u2192 Validate fix"
-    },
-    {
-      "id": "gsc-validate-404",
-      "title": "Validate fix: Not found (404)",
-      "gsc_url": "https://search.google.com/search-console/index?resource_id=https://danielarifriedman.com/",
-      "action": "Page indexing \u2192 Not found (404) \u2192 Validate fix"
+      "action": "Page indexing \u2192 Why pages aren\u2019t indexed \u2192 compare each bucket with the legitimate-exclusion list in docs/seo/gsc-followup.md; use Validate fix only for a site change that is live across all affected URLs"
     },
     {
       "id": "gsc-monitor",
@@ -63,10 +56,9 @@
     "[ ] Signed into GSC for https://danielarifriedman.com/",
     "[ ] Preflight passed (this script)",
     "[ ] Submitted sitemap.xml",
-    "[ ] Requested indexing: /, /repositories.html, /videos.html, /videos/, /software.html, /exports.html, /catalog.html, /cite-verify.html, /discovery.html, /publications.html, /works/",
-    "[ ] Validate fix: Page with redirect",
-    "[ ] Validate fix: Alternate page with proper canonical",
-    "[ ] Validate fix: Not found (404)",
+    "[ ] Removed the retired sitemap from GSC Sitemaps: sitemap-images.xml",
+    "[ ] Requested indexing: /, /repositories.html, /videos.html, /software.html, /exports.html, /catalog.html, /cite-verify.html, /discovery.html, /publications.html, /works/",
+    "[ ] Reviewed exclusions against the legitimate-exclusion list (Validate fix only after a real, live, site-wide fix)",
     "[ ] Calendar reminder: recheck Page indexing in 7 days"
   ]
 }

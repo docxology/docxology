@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T15:11:25Z",
+  "generated_at": "2026-10-05T22:43:28Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,15 +34,15 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 219,
+    "works": 220,
     "software_catalogued": 159,
     "owned_software_catalogued": 120,
     "aii_software_catalogued": 39,
     "google_scholar": {
-      "citations": 823,
+      "citations": 824,
       "h_index": 14,
       "i10_index": 17,
-      "as_of": "2026-10-02",
+      "as_of": "2026-10-05",
       "profile_url": "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en"
     },
     "docxology_public_repositories_claim": {
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "655f00a16d64df8cca9d22d8bb01302680d36000029b24b01674e281568c52c1",
+      "sha256": "bc0307926a0cbcacc10ea5e135370ea7a790de4c2e0142574d5ce5ad90b2c3d6",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,23 +97,23 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 178032,
-          "sha256": "29f481871fdc8b0b1075d590399e08f2e8ab5ad629019b2cd02f88b63bcd5d56"
+          "bytes": 179003,
+          "sha256": "2928692b983afe5dde4060234bbada84f37fda00bad76beab9c3fcd77347f5fb"
         },
         {
           "path": "data/software.json",
           "bytes": 79285,
-          "sha256": "24f93a28ff044cfbd070564c33c8fe570825c8f7db246d326f04e2e11846d6dd"
+          "sha256": "85cc2aeff4b28a6920103f6abe928fafa9b01be0487e4a45f5d9093a4a61e832"
         },
         {
           "path": "data/scholar-snapshot.json",
-          "bytes": 2680,
-          "sha256": "d9c4b848ad04238eb731f05748bbb88e473518ffe87a422526cfd9b11651b00d"
+          "bytes": 2869,
+          "sha256": "cd143d9d0e4a33a75cb32da5a4b63281c1b1fd09916a231731701b4ff842eb81"
         },
         {
           "path": "data/claims.json",
-          "bytes": 13025,
-          "sha256": "8153aabff59727a5710226e9c79943015f72eca1cda8f586c3ffcdc14f8ff26b"
+          "bytes": 13031,
+          "sha256": "04156ca1865cbef616f30754181d28eee837cdfdc47332a50cebe044224263eb"
         },
         {
           "path": "data/github-repositories.json",
@@ -7776,6 +7776,36 @@
       "authors": [
         "Friedman, Daniel Ari"
       ]
+    },
+    {
+      "num": 224,
+      "citation_key": "Friedman2026CoordinatingFieldCaseEcosystem224",
+      "year": 2026,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.23066903",
+      "doi": "10.5281/zenodo.23066903",
+      "docs_path": "papers/2026_CoordinatingField/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Ober, Edward",
+        "Maren, Alianna",
+        "Friston, Karl J.",
+        "Hurtado, Ana Magdalena",
+        "Pashea, Andrew",
+        "Friedman, Daniel",
+        "Sabine, Alexander",
+        "Safron, Adam"
+      ]
     }
   ],
   "software": [
@@ -9691,14 +9721,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 219 works.",
+      "claim": "The curated bibliography contains 220 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-10-02T15:11:20+00:00",
+      "checked_at": "2026-10-05T22:43:25+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9706,14 +9736,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 202 per-paper documentation folders.",
+      "claim": "The repository contains 203 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-10-02T15:11:20+00:00",
+      "checked_at": "2026-10-05T22:43:25+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -9784,16 +9814,16 @@
     },
     {
       "id": "google-scholar-citations",
-      "claim": "Google Scholar metrics are recorded as a dated snapshot: 823 citations, h-index 14, i10-index 17 (as of 2026-10-02).",
+      "claim": "Google Scholar metrics are recorded as a dated snapshot: 824 citations, h-index 14, i10-index 17 (as of 2026-10-05).",
       "status": "dated-snapshot",
       "sources": [
         "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en",
         "data/scholar-snapshot.json",
         "pages/VERIFICATION_LOG.md"
       ],
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-05",
       "confidence": "high",
-      "verification_method": "Direct Chrome browser observation of the canonical profile on 2026-10-02 in an authenticated Google session (signed-in account control visible). All-time: 823 citations, h-index 14, i10-index 17; Since-2021: 594 / 14 / 15. No anonymous or search-engine cached result was used.",
+      "verification_method": "Direct authenticated observation of the canonical profile on 2026-10-05 in the site owner's signed-in Chrome session (operator handoff of 2026-10-05). All-time: 824 citations, h-index 14, i10-index 17; Since-2021: 595 / 14 / 15. No anonymous or search-engine cached result was used.",
       "maintenance_owner": "ARCHIVIST",
       "caveat": "Single source of truth: data/scholar-snapshot.json. Update only from a direct (non-cached) Scholar fetch, recording the new value, as_of date, and method there; regenerate surfaces via code/orchestrators/sync_scholar_metrics.py. Never publish a citation number above the most recent direct-fetch value."
     },

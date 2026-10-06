@@ -42,13 +42,39 @@ def strip_visual_emoji(value: str) -> str:
 
 def inline_md(value: str) -> str:
     escaped = h(strip_visual_emoji(value))
-    escaped = re.sub(r"`([^`]+)`", r"<code>\1</code>", escaped)
+    # Code spans are set aside first so an asterisk inside one (a glob such as
+    # papers/*/metadata.json) never opens or closes emphasis.
+    spans: list[str] = []
+
+    def hold(match: re.Match[str]) -> str:
+        spans.append(f"<code>{match.group(1)}</code>")
+        return f"\x00{len(spans) - 1}\x00"
+
+    escaped = re.sub(r"`([^`]+)`", hold, escaped)
     escaped = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", r'<a href="\2">\1</a>', escaped)
-    return re.sub(r"\*([^*]+)\*", r"<em>\1</em>", escaped)
+    escaped = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", escaped)
+    escaped = re.sub(r"\*([^*]+)\*", r"<em>\1</em>", escaped)
+    return re.sub(r"\x00(\d+)\x00", lambda m: spans[int(m.group(1))], escaped)
 
 
-def parse_changelog() -> list[dict]:
-    text = SOURCE.read_text(encoding="utf-8")
+def plain_md(value: str) -> str:
+    """Inline markdown reduced to plain text for JSON-LD descriptions."""
+    spans: list[str] = []
+
+    def hold(match: re.Match[str]) -> str:
+        spans.append(match.group(1))
+        return f"\x00{len(spans) - 1}\x00"
+
+    text = re.sub(r"`([^`]+)`", hold, strip_visual_emoji(value))
+    text = re.sub(r"\[([^\]]+)\]\([^)\s]+\)", r"\1", text)
+    text = re.sub(r"\*\*([^*]+)\*\*", r"\1", text)
+    text = re.sub(r"\*([^*]+)\*", r"\1", text)
+    return re.sub(r"\x00(\d+)\x00", lambda m: spans[int(m.group(1))], text)
+
+
+def parse_changelog(text: str | None = None) -> list[dict]:
+    if text is None:
+        text = SOURCE.read_text(encoding="utf-8")
     matches = list(re.finditer(r"^##\s+(.+?)\s*$", text, flags=re.M))
     sections = []
     for i, match in enumerate(matches):
@@ -60,6 +86,9 @@ def parse_changelog() -> list[dict]:
             stripped = line.strip()
             if stripped.startswith("- "):
                 bullets.append(stripped[2:])
+            elif stripped and bullets and line[:1].isspace():
+                # Hard-wrapped continuation of the preceding bullet.
+                bullets[-1] = f"{bullets[-1]} {stripped}"
         if bullets:
             sections.append({"date": title, "items": bullets})
     return sections
@@ -99,7 +128,7 @@ def json_ld(sections: list[dict]) -> str:
                     "@type": "ListItem",
                     "position": idx + 1,
                     "name": section["date"],
-                    "description": strip_visual_emoji(" ".join(section["items"]))[:500],
+                    "description": plain_md(" ".join(section["items"]))[:500],
                 }
                 for idx, section in enumerate(sections)
             ],

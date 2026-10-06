@@ -63,3 +63,31 @@ def test_site_fact_renderer_replaces_any_calendar_month_not_a_fixed_allowlist(tm
     assert rendered.count(f"Data refreshed {expected_month}") == 2
     assert "January 2024" not in rendered
     assert "December 2023" not in rendered
+
+
+def test_public_source_checked_date_comes_from_the_snapshot_report_not_the_build(tmp_path: Path):
+    facts = tmp_path / "current-counts.json"
+    facts.write_text(
+        json.dumps({
+            "generated_at": "2026-10-05T22:00:00+00:00",
+            "counts": {},
+            "sources": {"public_source_snapshot": "reports/public_source_snapshot_2026-09-30.json"},
+        }),
+        encoding="utf-8",
+    )
+    assert site_facts.public_source_checked_date(facts) == "2026-09-30"
+    assert site_facts.generated_date(facts) == "2026-10-05"
+
+
+@pytest.mark.parametrize(
+    "sources",
+    [None, {}, {"public_source_snapshot": "reports/public_source_snapshot_latest.json"}, {"public_source_snapshot": "reports/public_source_snapshot_2026-13-40.json"}],
+)
+def test_public_source_checked_date_fails_closed(tmp_path: Path, sources):
+    facts = tmp_path / "current-counts.json"
+    payload = {"generated_at": "2026-10-05T22:00:00+00:00", "counts": {}}
+    if sources is not None:
+        payload["sources"] = sources
+    facts.write_text(json.dumps(payload), encoding="utf-8")
+    with pytest.raises(site_facts.SiteFactsError):
+        site_facts.public_source_checked_date(facts)

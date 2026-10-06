@@ -79,3 +79,4 @@ def test_network_manual_and_destructive_operations_are_explicitly_excluded():
     assert categories["fetch_youtube_data.py"] == "network/cache-refresh/manual-review"
     assert categories["batch_enrich_metadata.py"] == "source-authoring/manual-review"
     assert categories["improve_metadata_quality.py"] == "source-authoring/manual-review"
+    assert categories["record_scholar_observation.py"] == "source-authoring/manual-review"

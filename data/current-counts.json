@@ -2,11 +2,11 @@
   "check_command": "uv run python3 code/orchestrators/build_current_counts.py --check",
   "command": "uv run python3 code/orchestrators/build_current_counts.py",
   "counts": {
-    "bibliography_docs_links": 202,
-    "bibliography_works": 219,
+    "bibliography_docs_links": 203,
+    "bibliography_works": 220,
     "domains": {
       "AII Ecosystem": 6,
-      "Active Inference": 46,
+      "Active Inference": 47,
       "Art & Synergetics": 16,
       "Cognitive Security": 37,
       "Computational": 63,
@@ -17,10 +17,10 @@
     "extracted_images": 8959,
     "full_text_papers": 199,
     "generated_exports": {
-      "data_publications_ld_main_entity": 219,
+      "data_publications_ld_main_entity": 220,
       "data_software_json": 159,
       "data_software_ld_main_entity": 159,
-      "data_works_json": 219
+      "data_works_json": 220
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 43,
@@ -55,7 +55,7 @@
       "update_existing": 55,
       "zenodo_records": 162
     },
-    "paper_folder_docs": 202,
+    "paper_folder_docs": 203,
     "papers_with_images": 145,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
@@ -75,14 +75,14 @@
     "types": {
       "Books": 5,
       "Courses": 3,
-      "Papers": 198,
+      "Papers": 199,
       "Playbooks": 2,
       "Presentations": 8,
       "Report": 1,
       "Series": 2
     }
   },
-  "generated_at": "2026-10-02T15:11:20+00:00",
+  "generated_at": "2026-10-05T22:43:25+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

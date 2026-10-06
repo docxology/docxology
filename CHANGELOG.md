@@ -23,6 +23,38 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   references. It does not render outputs, validate full BibTeX field syntax,
   or establish publication readiness. Onboarding and configuration runbooks
   point to the shared generation plan and preserve archive/evidence boundaries.
+- **New work:** *Coordinating the Field: The Case for Ecosystem-Level Technology
+  Roadmapping and Community Working Groups in Active Inference* (Zenodo concept
+  DOI 10.5281/zenodo.23066903) joins the bibliography with its eight registered
+  creators and an archived PDF.
+- **Scholar observations through tooling:** `record_scholar_observation.py`
+  writes the metric snapshot and its SHA-256-bound receipt together from an
+  operator-attested direct authenticated observation. It refuses older,
+  same-day, or internally inconsistent values, predicts the bound hash in a dry
+  run, and restores both files if a write fails. The 2026-10-05 observation was
+  recorded with it.
+- **Search Console follow-up:** the runbook no longer advises a blanket
+  "Validate fix". It names the legitimate exclusions (canonicalized `papers/`
+  pages, redirect stubs, the noindex `videos/` index), drops `videos/` from the
+  indexing-request list, and covers removing the retired image sitemap, which
+  returns 404 by design. The preflight now checks that `robots.txt` names only
+  the canonical sitemap, that every priority URL is indexable and in the
+  sitemap, and that retired sitemaps stay gone. Dated observations are in
+  [the 2026-10-05 report](reports/gsc_observations_2026-10-05.md).
+- **Flickr sync hardening:** `sync_flickr_artworks.py` validates the export
+  before writing, reports tag and description coverage (key-free with
+  `--coverage-local`), refuses a fetch shorter than Flickr's public total, can
+  require complete metadata, and no longer reports view-count changes as drift.
+  Quoted multiword Flickr tags arrive in Flickr's normalized form (for example
+  `summersolstice`) and stay single matching tokens. The live re-sync waits on a
+  Flickr API key. The start page's artwork count is now derived from the export.
+- **Updates page rendering:** wrapped changelog bullets were published cut at
+  their first line and bold titles showed stray asterisks; full bullets and bold
+  titles now render, and structured-data descriptions carry plain text.
+- **Backlog:** the active backlog tracks the remaining human visual review and
+  release attestation, the measured performance gap, manuscript rendering and
+  editorial review, the Flickr re-sync and Curio-description review, and the
+  Search Console queue.
 
 ## 2026-10-02
 

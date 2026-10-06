@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-02T15:06:16Z",
+  "generated_at": "2026-10-05T22:42:58Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
-  "count": 219,
+  "count": 220,
   "works": [
     {
       "num": 1,
@@ -5467,6 +5467,36 @@
       "full_text_url": "/papers/2026_SilverLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 224,
+      "citation_key": "Friedman2026CoordinatingFieldCaseEcosystem224",
+      "year": 2026,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.23066903",
+      "doi": "10.5281/zenodo.23066903",
+      "docs_path": "papers/2026_CoordinatingField/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Ober, Edward",
+        "Maren, Alianna",
+        "Friston, Karl J.",
+        "Hurtado, Ana Magdalena",
+        "Pashea, Andrew",
+        "Friedman, Daniel",
+        "Sabine, Alexander",
+        "Safron, Adam"
       ]
     }
   ]

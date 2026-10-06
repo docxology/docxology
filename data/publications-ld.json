@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 219 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 220 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -9106,6 +9106,68 @@
             },
             "sameAs": "https://doi.org/10.5281/zenodo.22833485",
             "citation": "Friedman, Daniel Ari. 2026. The Silver Line: A Memory-and-Succession Instrument. Zenodo. DOI: 10.5281/zenodo.22833485. URL: https://doi.org/10.5281/zenodo.22833485."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference",
+            "headline": "Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Edward Ober"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Alianna Maren"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Karl J. Friston"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Ana Magdalena Hurtado"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Andrew Pashea"
+                },
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
+                },
+                {
+                    "@type": "Person",
+                    "name": "Alexander Sabine"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Adam Safron"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🧠",
+            "@id": "https://danielarifriedman.com/works/Friedman2026CoordinatingFieldCaseEcosystem224.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026CoordinatingFieldCaseEcosystem224.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026CoordinatingFieldCaseEcosystem224.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.23066903",
+                "url": "https://doi.org/10.5281/zenodo.23066903"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.23066903",
+            "citation": "Ober, Edward; Maren, Alianna; Friston, Karl J.; Hurtado, Ana Magdalena; Pashea, Andrew; Friedman, Daniel; Sabine, Alexander; Safron, Adam. 2026. Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference. Zenodo. DOI: 10.5281/zenodo.23066903. URL: https://doi.org/10.5281/zenodo.23066903."
         }
     ]
 }

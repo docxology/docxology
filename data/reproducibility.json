@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T15:08:24Z",
+  "generated_at": "2026-10-05T22:44:49Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -61,18 +61,18 @@
     }
   ],
   "max_score": 6,
-  "work_count": 219,
+  "work_count": 220,
   "signal_totals": {
-    "persistent_id": 204,
-    "public_archive": 162,
+    "persistent_id": 205,
+    "public_archive": 163,
     "open_full_text": 199,
-    "source_documents": 202,
+    "source_documents": 203,
     "executable_code": 72,
-    "agent_readable": 202
+    "agent_readable": 203
   },
   "band_counts": {
     "independently reproducible": 160,
-    "independently checkable": 42,
+    "independently checkable": 43,
     "citable only": 8,
     "unverified": 9
   },
@@ -81,11 +81,11 @@
     "1": 4,
     "2": 4,
     "3": 9,
-    "4": 33,
+    "4": 34,
     "5": 90,
     "6": 70
   },
-  "mean_score": 4.753,
+  "mean_score": 4.75,
   "works": [
     {
       "num": 5,
@@ -3894,6 +3894,25 @@
         "persistent_id": true,
         "public_archive": false,
         "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 224,
+      "citation_key": "Friedman2026CoordinatingFieldCaseEcosystem224",
+      "title": "Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
         "source_documents": true,
         "executable_code": false,
         "agent_readable": true
