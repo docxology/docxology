@@ -431,6 +431,28 @@ def test_referenced_report_scan_covers_projected_surfaces_only(tmp_path: Path):
     assert target not in report_references.referenced_report_paths(tmp_path)
 
 
+def test_git_ignored_files_never_protect_a_report(tmp_path: Path):
+    # A local tool cache that git ignores (here via .git/info/exclude) must not
+    # change which reports are published: a clean checkout never has it.
+    _git(tmp_path, "init", "-q")
+    (tmp_path / "pages").mkdir()
+    (tmp_path / "pages" / "index.md").write_text("home", encoding="utf-8")
+    _git(tmp_path, "add", "-A")
+    _git(tmp_path, "-c", "user.email=t@example.com", "-c", "user.name=t", "commit", "-qm", "fixture")
+    target = "reports/asset_size_2026-05-13.json"
+    cache = tmp_path / "localcache"
+    cache.mkdir()
+    (cache / "card.md").write_text(f"indexes {target}", encoding="utf-8")
+    assert target in report_references.referenced_report_paths(tmp_path)
+
+    (tmp_path / ".git" / "info" / "exclude").write_text("/localcache/\n", encoding="utf-8")
+    assert target not in report_references.referenced_report_paths(tmp_path)
+
+    (tmp_path / "notes.md").write_text(f"see {target}", encoding="utf-8")
+    # Untracked but not ignored still counts.
+    assert target in report_references.referenced_report_paths(tmp_path)
+
+
 def test_superseded_rule_with_the_shared_citation_scan(tmp_path: Path):
     _init_pages_fixture(tmp_path)
     (tmp_path / "reports").mkdir()

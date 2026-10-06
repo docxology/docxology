@@ -81,15 +81,38 @@ def _git_grep_report_references(repo_root: Path) -> set[str]:
     return {token for token in result.stdout.splitlines() if token}
 
 
+def _unignored_working_tree_files(root: Path) -> list[Path] | None:
+    """Tracked plus untracked files that git does not ignore, or None without git.
+
+    Ignored files (local tool caches, editor state, anything in ``.gitignore`` or
+    ``.git/info/exclude``) never reach a clean checkout, so letting them protect a
+    report would make the Pages manifest depend on one machine's local state.
+    """
+    try:
+        result = subprocess.run(
+            ["git", "ls-files", "-co", "--exclude-standard", "-z"],
+            cwd=root,
+            capture_output=True,
+            check=False,
+        )
+    except FileNotFoundError:
+        return None
+    if result.returncode != 0:
+        return None
+    return [root / raw for raw in result.stdout.decode("utf-8", "surrogateescape").split("\0") if raw]
+
+
 def _working_tree_report_references(repo_root: Path) -> set[str]:
     """Return report tokens found in working-tree text files (tracked or not).
 
     Skips the same trees and inventory manifests as the tracked scan: those
-    enumerate report paths without serving them as live links.
+    enumerate report paths without serving them as live links. Git-ignored files
+    are skipped too, so the result matches what a clean checkout would see.
     """
     references: set[str] = set()
     root = repo_root.resolve()
-    for path in root.rglob("*"):
+    candidates = _unignored_working_tree_files(root)
+    for path in candidates if candidates is not None else root.rglob("*"):
         if not path.is_file():
             continue
         try:

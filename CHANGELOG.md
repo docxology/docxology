@@ -34,6 +34,9 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   to the claims and discovery pages; star counts, update times, renames, and an
   upstream creator-list change are acknowledged. This resolves the drift
   reported in issue #12.
+- **Deterministic Pages manifest:** the scan that keeps cited reports published
+  now ignores git-ignored local files, so a manifest built on a working machine
+  matches a clean checkout and the deploy check accepts it.
 
 ## 2026-10-05
 
