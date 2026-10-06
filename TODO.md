@@ -143,13 +143,15 @@ criteria, and dependencies. Re-review this file before each public release.
   improve pages below the aspirational performance 85, accessibility 95, and
   SEO 95 scores. Keep existing floors and measured results visible; passing
   the ratchet does not establish that every aspirational target was met.
-- Measured gap (operator-reported 2026-10-05; the Lighthouse JSON was not
-  retained in a dated report): `art.html` performance 76 and
-  `publications.html` performance 83, both below the aspirational 85. Close the
-  gap by reducing page weight and load work; the floors and targets in
-  `code/tests/test_lighthouse_budgets.py` stay unchanged. Retain the
-  `lighthouse-<sha>` Actions artifact for the measured candidate before citing
-  scores elsewhere.
+- Measured gap: CI scored `art.html` 75 and `publications.html` 82 on
+  `a08e455d`, below the aspirational 85, while production measured 99–100 for
+  both with the same Lighthouse version and flags. Most of the gap comes from the
+  uncompressed CI fixture server; CI's blocking time also reflects real long
+  tasks in the gallery and publication-table renders. Evidence and options are in
+  [the 2026-10-06 report](reports/lighthouse_gap_2026-10-06.md). Decision
+  needed: serve the fixture with gzip like GitHub Pages (measurement parity), or
+  reduce uncompressed bytes and split the long tasks. The floors and targets in
+  `code/tests/test_lighthouse_budgets.py` stay unchanged either way.
 
 ### DOC-010 — Security and SEO follow-up
 
