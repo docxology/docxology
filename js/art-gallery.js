@@ -54,10 +54,58 @@
       Number.isFinite(Number(value));
   }
 
+  // Compiled once: a RegExp built from each record's id cost ~20 ms of CPU
+  // across the index at 4x throttle. Equivalent to
+  // /^artworks\/<id>(?:-<slug>)?\.html$/ for a digits-only id.
+  const ARTWORK_SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+
   function validArtworkIdentity(art) {
     if (!art || typeof art.id !== 'string' || !/^\d+$/.test(art.id)) return false;
-    return typeof art.page === 'string' &&
-      new RegExp('^artworks/' + art.id + '(?:-[a-z0-9]+(?:-[a-z0-9]+)*)?\\.html$').test(art.page);
+    if (typeof art.page !== 'string') return false;
+    const stem = 'artworks/' + art.id;
+    if (art.page === stem + '.html') return true;
+    return art.page.startsWith(stem + '-') && art.page.endsWith('.html') &&
+      ARTWORK_SLUG.test(art.page.slice(stem.length + 1, art.page.length - 5));
+  }
+
+  function validArtworkRecord(art) {
+    return validArtworkIdentity(art) && typeof art.title === 'string' && validMediaUrl(art.thumb) &&
+      validArtworkDate(art.date) && validArtworkViews(art.views) &&
+      Array.isArray(art.tags) && art.tags.every(tag => typeof tag === 'string');
+  }
+
+  // Startup work is split into short tasks so input is never blocked behind one
+  // long one. scheduler.yield() resumes ahead of other queued tasks where it
+  // exists; setTimeout(0) is the fallback. Only the initial hydration yields:
+  // filter, sort and load-more renders stay synchronous.
+  function yieldToMain() {
+    if (window.scheduler && typeof window.scheduler.yield === 'function') {
+      return window.scheduler.yield();
+    }
+    return new Promise(resolve => setTimeout(resolve, 0));
+  }
+
+  const VALIDATION_CHUNK = 100;
+
+  // All-or-nothing: nothing is published (and no tile replaced) unless every
+  // record is valid, however many tasks the check takes.
+  async function validArtworkIndex(artworks) {
+    if (!Array.isArray(artworks)) return false;
+    const ids = new Set();
+    const pages = new Set();
+    for (let start = 0; start < artworks.length; start += VALIDATION_CHUNK) {
+      if (start) await yieldToMain();
+      const end = Math.min(start + VALIDATION_CHUNK, artworks.length);
+      for (let i = start; i < end; i++) {
+        const art = artworks[i];
+        if (!validArtworkRecord(art)) return false;
+        const id = String(art.id);
+        if (ids.has(id) || pages.has(art.page)) return false;
+        ids.add(id);
+        pages.add(art.page);
+      }
+    }
+    return true;
   }
 
   async function loadGalleryData() {
@@ -65,18 +113,14 @@
       const res = await fetch('data/artworks-index.json', { cache: 'default' });
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const payload = await res.json();
-      if (!Array.isArray(payload.artworks) || payload.artworks.some(art =>
-          !validArtworkIdentity(art) || typeof art.title !== 'string' || !validMediaUrl(art.thumb) ||
-          !validArtworkDate(art.date) || !validArtworkViews(art.views) ||
-          !Array.isArray(art.tags) || art.tags.some(tag => typeof tag !== 'string')) ||
-          new Set(payload.artworks.map(art => String(art.id))).size !== payload.artworks.length ||
-          new Set(payload.artworks.map(art => art.page)).size !== payload.artworks.length) {
-        throw new Error('Invalid artwork index');
-      }
+      if (!await validArtworkIndex(payload.artworks)) throw new Error('Invalid artwork index');
       DATA = payload.artworks;
       galleryLoaded = true;
       filtered = [...DATA];
-      filterGallery();
+      applyFilter();
+      // Sorting pays the one-time locale-collation setup; render in its own task.
+      await yieldToMain();
+      renderGrid();
       if (document.getElementById('searchInput').value.trim()) await searchDescriptions();
     } catch (err) {
       console.error('Unable to load artwork data', err);
@@ -290,10 +334,7 @@
   }
 
   // ── FILTER + SORT ──
-  function filterGallery() {
-    // Early controls and failed fetches must leave the native source links
-    // intact, just as they are when JavaScript is unavailable.
-    if (!galleryLoaded) return;
+  function applyFilter() {
     visibleLimit = PAGE_SIZE;
     const q = document.getElementById('searchInput').value.trim().toLowerCase();
     const sort = document.getElementById('sortSelect').value;
@@ -310,6 +351,13 @@
       if (sort === 'views') return parseInt(b.views || 0) - parseInt(a.views || 0);
       return 0;
     });
+  }
+
+  function filterGallery() {
+    // Early controls and failed fetches must leave the native source links
+    // intact, just as they are when JavaScript is unavailable.
+    if (!galleryLoaded) return;
+    applyFilter();
     renderGrid();
   }
 

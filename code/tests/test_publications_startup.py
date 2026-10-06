@@ -10,7 +10,7 @@ from pathlib import Path
 import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
-from rendered_site_fixture import REPO_ROOT, serve_site, skip_without_playwright, stop_server  # noqa: E402
+from rendered_site_fixture import REPO_ROOT, serve_copy, serve_site, skip_without_playwright, stop_server  # noqa: E402
 
 
 @pytest.fixture
@@ -40,6 +40,27 @@ def publication_site(tmp_path):
         yield base
     finally:
         stop_server(server)
+
+
+@pytest.fixture(scope="module")
+def real_site(tmp_path_factory):
+    """A copy of the real built site, so the startup paths see the real catalog."""
+    skip_without_playwright()
+    base, server = serve_copy(tmp_path_factory.mktemp("publications-real-site"))
+    try:
+        yield base
+    finally:
+        stop_server(server)
+
+
+# scheduler.yield lives on Scheduler.prototype; remove it there and shadow it on
+# the instance so no lookup can find it, forcing the setTimeout(0) fallback.
+DELETE_SCHEDULER_YIELD = """(() => {
+    if (window.scheduler) {
+        try { delete Scheduler.prototype.yield; } catch (_) {}
+        Object.defineProperty(window.scheduler, 'yield', { value: undefined, configurable: true });
+    }
+})();"""
 
 
 def _wait_catalog(page):
@@ -181,6 +202,33 @@ def test_unavailable_catalog_preserves_server_rendered_native_links(publication_
         assert page.locator("#pub-tbody tr").count() == 50
         assert page.locator("#pub-tbody .td-title a").first.get_attribute("href").startswith("works/")
         assert page.locator("#pub-tbody .td-title a").first.is_visible()
+        browser.close()
+
+
+def test_real_catalog_hydrates_without_scheduler_yield(real_site):
+    from playwright.sync_api import sync_playwright
+
+    total = len(json.loads((REPO_ROOT / "data/works.json").read_text())["works"])
+    assert total > 50
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page(service_workers="block")
+        errors = []
+        page.on("console", lambda message: errors.append(message.text) if message.type == "error" else None)
+        page.on("pageerror", lambda error: errors.append(str(error)))
+        page.add_init_script(DELETE_SCHEDULER_YIELD)
+        page.goto(real_site + "/publications.html", wait_until="load")
+        page.wait_for_function(f"() => document.getElementById('result-count').textContent === '50 of {total} shown'")
+        assert page.evaluate("() => typeof (window.scheduler && window.scheduler.yield)") == "undefined"
+        assert page.locator("#pub-tbody tr").count() == 50
+        assert page.locator("#pub-table").get_attribute("aria-busy") == "false"
+        assert page.locator("#no-results").is_hidden()
+        # Hydration committed the interactive controls, not just the server-rendered rows.
+        assert page.locator("#pub-load-more").text_content() == f"Load more ({total - 50} of {total} remaining)"
+        assert page.locator("#year-filter option").count() > 1
+        page.locator("#pub-load-more").click()
+        assert page.locator("#pub-tbody tr").count() == 100
+        assert errors == []
         browser.close()
 
 

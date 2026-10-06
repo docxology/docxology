@@ -9,6 +9,20 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   tags and a description, the newly tagged records join tag-driven pages, and a
   test keeps the export complete. Request URLs in sync failure messages no
   longer include the API key.
+- **Lighthouse measured like production:** the rendered-test and Lighthouse
+  fixture serves text assets gzip-compressed, as GitHub Pages does, so the
+  ratchet scores what visitors download; thresholds are unchanged. The gallery
+  validates its index in yielded chunks and the publications table initialises
+  across short tasks, removing the long startup tasks on slow processors.
+- **ActiveInferenceInstitute is a GitHub Organization:** GitHub now reports the
+  account as an Organization. Identity notes and catalog text say so, and the
+  public-source snapshot records each account's type, so the claim wording
+  follows the recorded type instead of a fixed assumption.
+- **Steadier freshness detection:** the weekly public-source refresh runs
+  authenticated, retries transient network and server errors, lists Zenodo
+  results newest-first, and compares snapshots without star counts and
+  update timestamps, so drift reports name changes that matter to curated
+  claims.
 
 ## 2026-10-05
 

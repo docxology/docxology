@@ -16,6 +16,8 @@ import os
 import shutil
 import subprocess
 import sys
+import urllib.error
+import urllib.request
 from pathlib import Path
 
 import pytest
@@ -117,6 +119,61 @@ def median(values: list[int]) -> int:
     return sorted(values)[len(values) // 2]
 
 
+# One asset of each type the lane pages load: an HTML page, the shared stylesheet,
+# a script and a JSON export. Each must exist in the served copy and be a type
+# GitHub Pages compresses (see ``rendered_site_fixture.GZIP_CONTENT_TYPES``).
+PARITY_ASSETS = ("index.html", "style.css", "js/interactive.js", "data/works.json")
+
+
+def _urllib_transport(base_url: str):
+    """Real-socket transport: ``(path, headers) -> (status, response headers)``.
+
+    An HTTP error status is returned, never raised, so a missing asset reports
+    as a parity failure naming the asset instead of a bare ``HTTPError``.
+    """
+
+    def transport(path: str, headers: dict[str, str]):
+        request = urllib.request.Request(f"{base_url}/{path}", headers=headers)
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                response.read()  # drain: closing early makes the server log a broken pipe
+                return response.status, response.headers
+        except urllib.error.HTTPError as error:
+            with error:
+                error.read()
+                return error.code, error.headers
+
+    return transport
+
+
+def assert_gzip_parity(base_url: str, *, assets=PARITY_ASSETS, transport=None) -> None:
+    """The served copy must compress like GitHub Pages, or the scores are not comparable.
+
+    Requests every asset in ``assets`` with ``Accept-Encoding: gzip`` and requires
+    HTTP 200, ``Content-Encoding: gzip`` and ``Accept-Encoding`` among the ``Vary``
+    tokens. All shortfalls are reported together. ``transport`` replaces the
+    default urllib client (tests drive the request handler without a socket).
+    """
+    transport = transport or _urllib_transport(base_url)
+    problems: list[str] = []
+    for asset in assets:
+        status, headers = transport(asset, {"Accept-Encoding": "gzip"})
+        if status != 200:
+            problems.append(f"{asset}: HTTP {status}, expected 200")
+            continue
+        encoding = headers.get("Content-Encoding")
+        if (encoding or "").strip().lower() != "gzip":
+            problems.append(f"{asset}: Content-Encoding={encoding!r}, expected 'gzip'")
+        vary_values = headers.get_all("Vary") or []
+        vary = {token.strip().lower() for value in vary_values for token in value.split(",")}
+        if "accept-encoding" not in vary:
+            problems.append(f"{asset}: Vary={', '.join(vary_values) or None!r}, expected it to include 'Accept-Encoding'")
+    assert not problems, (
+        "Lighthouse fixture does not match GitHub Pages compression parity "
+        f"(scores would not be comparable to production): {'; '.join(problems)}"
+    )
+
+
 def test_lighthouse_budgets(tmp_path: Path, record_property) -> None:
     if not lighthouse_available():
         if browser_qa_required():
@@ -135,6 +192,7 @@ def test_lighthouse_budgets(tmp_path: Path, record_property) -> None:
     base_url, httpd = serve_copy(tmp_path)
     failures: list[str] = []
     try:
+        assert_gzip_parity(base_url)
         for path in LANE_PAGES:
             floor_for = lambda category: min(  # noqa: E731 - per-page predicate
                 BUDGETS[category],

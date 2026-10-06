@@ -119,3 +119,33 @@ verification. If a signed-in or otherwise authoritative view is unavailable,
 keep the dated snapshot and caveat rather than guessing. Finish with
 `regenerate_all.py --validate`, then inspect the newest source, reconciliation,
 and pairing reports — then land per [settle.md](settle.md).
+
+## Drift detection
+
+`.github/workflows/freshness.yml` runs weekly (and on demand). It regenerates a
+snapshot with `refresh_public_sources.py`, authenticated with the workflow's
+`GITHUB_TOKEN`, and compares its `facts` with the `facts` of the newest committed
+dated `reports/public_source_snapshot_YYYY-MM-DD.json`. Both sides drop only the
+`updated_at` and `stargazers_count` telemetry, which moves with ordinary
+repository activity and is not a curated claim; counts, Zenodo first results,
+repository renames, record titles, and the GitHub account `type` all still
+count. Any difference opens a "Public-source freshness drift detected" issue, or
+comments on the one already open, and the job log shows the differing facts.
+
+- Zenodo searches request `sort=mostrecent`, so `first_title` and `first_doi`
+  name the newest deposit and change only when a new deposit appears. Under
+  relevance ranking they flipped between runs with no new record.
+- The snapshot records each GitHub account's `type` (`User` or `Organization`),
+  so a change of account type surfaces as drift instead of silently staling the
+  wording in claims and `organizations.json`.
+- `fetch_json` retries HTTP 429 and transient connection errors (`URLError`,
+  `ConnectionResetError`, `IncompleteRead`) with bounded backoff and never
+  retries any other 4xx. A check that still fails is stored `ok: false` and
+  left out of `facts`, which the detector reads as a missing label; the script
+  exits 0 regardless, so confirm every check is `ok` before accepting a snapshot
+  as a baseline.
+- A reviewed baseline must reach `main` to quiet the detector. The workflow
+  reads the checked-out default branch, so a snapshot that exists only on a
+  working branch or in a local tree changes nothing. Closing an issue does not
+  quiet it either: the next drift opens a new issue. Land extractor changes that
+  add or rename facts together with, or before, the snapshot they shape.

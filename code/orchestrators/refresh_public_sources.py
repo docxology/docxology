@@ -8,8 +8,11 @@ Use the report as evidence before making deliberate site-wide claim updates.
 
 import argparse
 import datetime as dt
+import http.client
 import json
+import math
 import os
+import ssl
 import sys
 import time
 import urllib.error
@@ -28,6 +31,24 @@ from docxology_tools.report_paths import source_commit, source_worktree_state  #
 
 ORCID = "0000-0001-6232-9096"
 USER_AGENT = "docxology-public-source-refresh/1.0 (https://github.com/docxology/docxology)"
+# Connection-level failures worth a bounded retry. ConnectionError covers resets,
+# aborts, refusals and broken pipes (ConnectionResetError, ConnectionAbortedError,
+# http.client.RemoteDisconnected, ...); TimeoutError covers a socket timeout raised
+# while reading the body, which urllib does not wrap in URLError. ssl.SSLError covers
+# TLS failures raised while reading the body (SSLEOFError: the peer closed the TLS
+# stream mid-response), which urllib likewise leaves unwrapped; it subclasses OSError,
+# not ConnectionError. HTTPError subclasses URLError, so fetch_json handles it first and
+# only retries the statuses below.
+TRANSIENT_ERRORS = (
+    urllib.error.URLError,
+    TimeoutError,
+    ConnectionError,
+    http.client.IncompleteRead,
+    ssl.SSLError,
+)
+# Gateway-level HTTP statuses that signal a momentary upstream hiccup, not a verdict.
+# 429 is handled alongside them; every other 4xx/5xx status is raised on the first call.
+RETRYABLE_HTTP_STATUS = frozenset({429, 502, 503, 504})
 SELECTED_AII_REPOS = (
     "ActiveInferenceJournal",
     "ActiveBlockference",
@@ -60,7 +81,37 @@ def expected_check_labels() -> tuple[str, ...]:
     )
 
 
+def _backoff_delay(attempt: int, retry_after: str | None = None) -> float:
+    """Bounded backoff: honor a numeric Retry-After (capped at 10s), else 2s, 4s, ...
+
+    A Retry-After that is not a finite, non-negative number (an HTTP-date, "-5",
+    "nan", "inf") falls back to the default delay: time.sleep rejects negative and
+    NaN values, and an infinite one would be clamped to the cap rather than meant.
+    """
+    if retry_after:
+        try:
+            seconds = float(retry_after)
+        except ValueError:
+            pass
+        else:
+            if math.isfinite(seconds) and seconds >= 0:
+                return min(seconds, 10.0)
+    return 2.0 * (attempt + 1)
+
+
 def fetch_json(url: str, *, accept: str = "application/json", timeout: int = 30, retries: int = 2) -> dict[str, Any]:
+    """GET `url` as JSON with a bounded retry budget (`retries` extra attempts).
+
+    Retried, with the `_backoff_delay` schedule (2s, 4s, ...; a finite numeric
+    Retry-After header is honored up to 10s):
+      * connection-level failures in `TRANSIENT_ERRORS` (URLError, TimeoutError,
+        ConnectionError and its subclasses, IncompleteRead, ssl.SSLError and its
+        subclasses such as SSLEOFError), including mid-read;
+      * HTTP 429, 502, 503 and 504 (`RETRYABLE_HTTP_STATUS`): rate limiting and
+        gateway/proxy hiccups.
+    Never retried: any other HTTP status (a 403 or 404 is a verdict, not a flaky
+    link). The last error is re-raised once the budget is spent.
+    """
     headers = {
         "Accept": accept,
         "User-Agent": USER_AGENT,
@@ -76,14 +127,17 @@ def fetch_json(url: str, *, accept: str = "application/json", timeout: int = 30,
             with urllib.request.urlopen(req, timeout=timeout) as response:
                 return json.loads(response.read().decode("utf-8"))
         except urllib.error.HTTPError as exc:
-            if exc.code != 429 or attempt >= retries:
+            # Listed before TRANSIENT_ERRORS on purpose: a 403/404 is a verdict, not a flaky connection.
+            if exc.code not in RETRYABLE_HTTP_STATUS or attempt >= retries:
                 raise
-            retry_after = exc.headers.get("Retry-After")
-            try:
-                delay = min(float(retry_after), 10.0) if retry_after else 2.0 * (attempt + 1)
-            except ValueError:
-                delay = 2.0 * (attempt + 1)
-            time.sleep(delay)
+            retry_after = exc.headers.get("Retry-After") if exc.headers is not None else None
+            time.sleep(_backoff_delay(attempt, retry_after))
+        except TRANSIENT_ERRORS:
+            # Proxies and CDNs reset or truncate connections intermittently; a missed
+            # check would otherwise vanish from `facts` and read as false drift.
+            if attempt >= retries:
+                raise
+            time.sleep(_backoff_delay(attempt))
     raise RuntimeError("unreachable retry loop")
 
 
@@ -96,18 +150,20 @@ def safe_fetch(label: str, url: str, extractor) -> dict[str, Any]:
         return {"label": label, "url": url, "ok": False, "error": f"{type(exc).__name__}: {exc}"}
 
 
+def github_user_facts(data: dict[str, Any]) -> dict[str, Any]:
+    """Facts kept from GET /users/<login>; `type` is "User" or "Organization"."""
+    return {
+        "login": data.get("login"),
+        "type": data.get("type"),
+        "public_repos": data.get("public_repos"),
+        "updated_at": data.get("updated_at"),
+        "html_url": data.get("html_url"),
+    }
+
+
 def github_user(login: str) -> dict[str, Any]:
     url = f"https://api.github.com/users/{login}"
-    return safe_fetch(
-        f"GitHub user {login}",
-        url,
-        lambda data: {
-            "login": data.get("login"),
-            "public_repos": data.get("public_repos"),
-            "updated_at": data.get("updated_at"),
-            "html_url": data.get("html_url"),
-        },
-    )
+    return safe_fetch(f"GitHub user {login}", url, github_user_facts)
 
 
 def github_repo(owner: str, repo: str) -> dict[str, Any]:
@@ -178,8 +234,13 @@ def orcid_works() -> dict[str, Any]:
     )
 
 
+def zenodo_query_url(q: str) -> str:
+    """Search URL whose single hit is the newest deposit, so first_title/first_doi are deterministic."""
+    return "https://zenodo.org/api/records?" + urllib.parse.urlencode({"q": q, "size": 1, "sort": "mostrecent"})
+
+
 def zenodo_query(label: str, q: str) -> dict[str, Any]:
-    url = "https://zenodo.org/api/records?" + urllib.parse.urlencode({"q": q, "size": 1})
+    url = zenodo_query_url(q)
 
     def extract(data: dict[str, Any]) -> dict[str, Any]:
         hits = data.get("hits", {})
@@ -270,7 +331,11 @@ def main() -> None:
         facts_out.parent.mkdir(parents=True, exist_ok=True)
         facts_out.write_text(json.dumps(report["facts"], indent=2, sort_keys=True, ensure_ascii=False) + "\n", encoding="utf-8")
     failures = [c["label"] for c in report["checks"] if not c.get("ok")]
-    print(f"wrote {out.relative_to(REPO_ROOT)} with {len(report['checks'])} checks")
+    try:
+        shown = out.relative_to(REPO_ROOT)
+    except ValueError:  # --output pointed outside the repo (a scratch rehearsal); the files are already written
+        shown = out
+    print(f"wrote {shown} with {len(report['checks'])} checks")
     if failures:
         print("warnings:", ", ".join(failures))
 

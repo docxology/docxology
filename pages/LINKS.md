@@ -99,7 +99,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 |----------|------|-------------|
 | GitHub (primary) | [github.com/docxology](https://github.com/docxology) | Primary development profile; current public repo totals are in [current counts](../reports/current_counts.md) |
 | GitHub (secondary) | [github.com/danielarifriedman](https://github.com/danielarifriedman) | Secondary profile |
-| Active Inference Institute GitHub | [github.com/ActiveInferenceInstitute](https://github.com/ActiveInferenceInstitute) | User-account software profile; current public repo totals are in [current counts](../reports/current_counts.md) |
+| Active Inference Institute GitHub | [github.com/ActiveInferenceInstitute](https://github.com/ActiveInferenceInstitute) | Organization software profile; current public repo totals are in [current counts](../reports/current_counts.md) |
 | Full Repository Inventory | [repositories.html](../repositories.html) / [data/github-repositories.json](../data/github-repositories.json) | Generated full public GitHub inventory for docxology and AII repositories |
 | Journal-Utilities Zenodo Release | [10.5281/zenodo.18686966](https://doi.org/10.5281/zenodo.18686966) | AII video-processing software release with Daniel Ari Friedman listed as creator |
 | GNN Zenodo Software Release | [10.5281/zenodo.19600217](https://doi.org/10.5281/zenodo.19600217) | Software record for GeneralizedNotationNotation (GNN) |

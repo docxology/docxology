@@ -61,7 +61,7 @@
                 "@type": "ListItem",
                 "position": 1,
                 "name": "2026-10-06",
-                "description": "Flickr artwork re-sync: the gallery export was refreshed from Flickr with the API key now held as a repository secret. Every public artwork carries tags and a description, the newly tagged records join tag-driven pages, and a test keeps the export complete. Request URLs in sync failure messages no longer include the API key."
+                "description": "Flickr artwork re-sync: the gallery export was refreshed from Flickr with the API key now held as a repository secret. Every public artwork carries tags and a description, the newly tagged records join tag-driven pages, and a test keeps the export complete. Request URLs in sync failure messages no longer include the API key. Lighthouse measured like production: the rendered-test and Lighthouse fixture serves text assets gzip-compressed, as GitHub Pages does, so the ratchet scores what visitors d"
             },
             {
                 "@type": "ListItem",
@@ -422,7 +422,7 @@
     <section class="section"><div class="updates-list">
             <article class="update-card">
                 <h2>2026-10-06</h2>
-                <ul><li><strong>Flickr artwork re-sync:</strong> the gallery export was refreshed from Flickr with the API key now held as a repository secret. Every public artwork carries tags and a description, the newly tagged records join tag-driven pages, and a test keeps the export complete. Request URLs in sync failure messages no longer include the API key.</li></ul>
+                <ul><li><strong>Flickr artwork re-sync:</strong> the gallery export was refreshed from Flickr with the API key now held as a repository secret. Every public artwork carries tags and a description, the newly tagged records join tag-driven pages, and a test keeps the export complete. Request URLs in sync failure messages no longer include the API key.</li><li><strong>Lighthouse measured like production:</strong> the rendered-test and Lighthouse fixture serves text assets gzip-compressed, as GitHub Pages does, so the ratchet scores what visitors download; thresholds are unchanged. The gallery validates its index in yielded chunks and the publications table initialises across short tasks, removing the long startup tasks on slow processors.</li><li><strong>ActiveInferenceInstitute is a GitHub Organization:</strong> GitHub now reports the account as an Organization. Identity notes and catalog text say so, and the public-source snapshot records each account&#x27;s type, so the claim wording follows the recorded type instead of a fixed assumption.</li><li><strong>Steadier freshness detection:</strong> the weekly public-source refresh runs authenticated, retries transient network and server errors, lists Zenodo results newest-first, and compares snapshots without star counts and update timestamps, so drift reports name changes that matter to curated claims.</li></ul>
             </article>
             <article class="update-card">
                 <h2>2026-10-05</h2>
@@ -633,7 +633,7 @@
                 <ul><li>Renamed paper folders from author-title form to <code>YYYY_Topic</code>.</li><li>Added <code>2020_FacilitatorsCatechism</code>.</li><li>Added shared bibliography-table parser and publication HTML synchronization script.</li></ul>
             </article>
     </div></section></main>
-    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="CHANGELOG.md">CHANGELOG.md</a> · <a href="feed.xml">RSS feed</a></p><p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/97d197d0">build 97d197d0 2026-10-05</a></p></footer>
+    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="CHANGELOG.md">CHANGELOG.md</a> · <a href="feed.xml">RSS feed</a></p><p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/c15dd3e4">build c15dd3e4 2026-10-06</a></p></footer>
 <script src="/js/search-utils.js?v=site-20261002b"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
 <script src="/js/interactive.js?v=site-20261002b" defer></script>

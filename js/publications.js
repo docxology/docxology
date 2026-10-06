@@ -407,13 +407,30 @@ function sortBy(col) {
     renderTable();
 }
 
-function initPublications(works, enrichmentByKey) {
+// Startup runs as several short tasks instead of one long one. scheduler.yield()
+// resumes ahead of other queued tasks where it exists; setTimeout(0) is the
+// fallback. Only initial hydration yields: filter, sort and load-more renders
+// stay synchronous.
+function yieldToMain() {
+    if (window.scheduler && typeof window.scheduler.yield === 'function') {
+        return window.scheduler.yield();
+    }
+    return new Promise((resolve) => setTimeout(resolve, 0));
+}
+
+async function initPublications(works, enrichmentByKey) {
     PUBS = works.map(workToPub);
     for (let i = 0; i < PUBS.length; i++) {
         buildSearchIndex(PUBS[i], enrichmentByKey[PUBS[i].citationKey]);
     }
-    catalogLoaded = true;
+    await yieldToMain();
+    // The first locale collation (venue sort) pays an indivisible ICU setup;
+    // give it a task of its own rather than adding it to the table render.
     populateFilterSelects();
+    await yieldToMain();
+    // Publish the catalog last so early filter clicks and typing stay inert
+    // until the table, counts and load-more button commit in one synchronous step.
+    catalogLoaded = true;
     ensureEnrichment();
     renderTable();
 }
@@ -457,7 +474,7 @@ function loadPublications() {
         })
         .then((data) => {
             if (!data || !Array.isArray(data.works)) throw new Error('Invalid publication catalog');
-            initPublications(data.works, {});
+            return initPublications(data.works, {});
         })
         .catch((err) => {
             const empty = document.getElementById('no-results');

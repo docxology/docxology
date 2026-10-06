@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T22:43:27Z",
+  "generated_at": "2026-10-06T16:09:10Z",
   "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence",
   "claims": [
     {
@@ -48,7 +48,7 @@
     },
     {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 44 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account has 44 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
@@ -56,9 +56,9 @@
       ],
       "checked_at": "2026-09-30T04:40:05.337364+00:00",
       "confidence": "high",
-      "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
+      "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",
-      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 39 AII repositories with docxology contributions."
+      "caveat": "The repository count is read from /users/ActiveInferenceInstitute; the public-source snapshot records no recognized account type, so none is asserted. Local software catalog tracks 39 AII repositories with docxology contributions."
     },
     {
       "id": "orcid-canonical-identifier",

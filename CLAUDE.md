@@ -174,7 +174,10 @@ After major SEO/sitemap changes, run `gsc_followup_preflight.py` then follow
 
 - Wikidata **Q138781444** must be first in the `index.html` Person `sameAs` (not the merged
   duplicate Q85887463). Scholar profile `DXjPFtYAAAAJ`; ORCID `0000-0001-6232-9096`.
-- `ActiveInferenceInstitute` on GitHub is a **User** account (`/users/...`, not `/orgs/...`).
+- `ActiveInferenceInstitute` on GitHub is an **Organization** (API `type: Organization`, observed
+  2026-10-06; `/users/...` calls remain valid for organizations and `/orgs/...` now resolves too).
+  The profile's `updated_at` of 2026-09-22 is consistent with a conversion around then; do not
+  state a conversion date as fact.
 - Scholar metrics: only publish a count from a direct (non-cached) fetch; record it with
   `code/orchestrators/record_scholar_observation.py` (writes `data/scholar-snapshot.json`
   and its SHA-256-bound receipt together), run `sync_scholar_metrics.py`, then regenerate

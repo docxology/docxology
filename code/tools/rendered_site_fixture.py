@@ -4,15 +4,27 @@ Serves a COPY of the built site (never the live checkout) over a local
 ephemeral port using http.server in a daemon thread. Browser tests pytest.skip
 cleanly when playwright, the chromium binary, or permission to bind a loopback
 socket is unavailable locally; CI has all three (validate.yml browser-tests job).
+
+The copy is served gzip-compressed, like GitHub Pages: text types are
+compressed at level 5 (the zlib level whose output matches the Pages sizes for
+the published files) whenever the client sends ``Accept-Encoding: gzip``, and
+every response carries ``Vary: Accept-Encoding``. Measuring an uncompressed copy scores the
+site far below its production Lighthouse results. ``compress=False`` restores
+the identity transport.
 """
 
 from __future__ import annotations
 
 import functools
+import gzip
 import http.server
+import io
 import os
+import re
 import shutil
 import threading
+import urllib.parse
+from http import HTTPStatus
 from pathlib import Path
 
 import pytest
@@ -38,6 +50,31 @@ ROOT_RUNTIME_FILES = frozenset({
     "manifest.json", "sw.js", "opensearch.xml", "feed.xml",
 })
 PWA_ICON_FILES = ("art/favicon-192.png", "art/favicon-512.png")
+
+# GitHub Pages compresses text responses of any size, plus SVG and ICO
+# (verified: ``favicon.ico`` is served ``Content-Encoding: gzip``); raster images
+# other than icons are never compressed. Python maps ``.js`` to text/javascript
+# (3.12+) or application/javascript (older mimetypes tables) and ``.ico`` to
+# image/x-icon or image/vnd.microsoft.icon (platform mime tables differ), so
+# both spellings of each are listed.
+GZIP_CONTENT_TYPES = frozenset({
+    "text/html",
+    "text/css",
+    "text/plain",
+    "text/xml",
+    "text/javascript",
+    "application/javascript",
+    "application/json",
+    "application/manifest+json",
+    "application/xml",
+    "image/svg+xml",
+    "image/x-icon",
+    "image/vnd.microsoft.icon",
+})
+# zlib level 5 matches the GitHub Pages gzip sizes for the published files
+# (identical for most, within 1% for the rest).
+GZIP_LEVEL = 5
+_QVALUE = re.compile(r"(?:0(?:\.\d{0,3})?|1(?:\.0{0,3})?)")
 
 
 def browser_qa_required() -> bool:
@@ -93,14 +130,127 @@ def copy_site(tmp_path: Path) -> Path:
     return site
 
 
-def serve_site(site_dir: Path) -> tuple[str, object]:
+def accepts_gzip(header: str | None) -> bool:
+    """True when an ``Accept-Encoding`` value permits a gzip response (RFC 9110).
+
+    ``gzip``/``x-gzip`` need a positive q-value; an explicit coding overrides
+    ``*``; a malformed q-value rejects the coding.
+    """
+    if not header:
+        return False
+    explicit: float | None = None
+    wildcard: float | None = None
+    for item in header.split(","):
+        coding, _, parameters = item.partition(";")
+        coding = coding.strip().lower()
+        if coding not in {"gzip", "x-gzip", "*"}:
+            continue
+        quality = 1.0
+        for parameter in parameters.split(";"):
+            name, _, value = parameter.partition("=")
+            if name.strip().lower() == "q":
+                value = value.strip()
+                quality = float(value) if _QVALUE.fullmatch(value) else 0.0
+        if coding == "*":
+            wildcard = quality if wildcard is None else max(wildcard, quality)
+        else:
+            explicit = quality if explicit is None else max(explicit, quality)
+    chosen = explicit if explicit is not None else wildcard
+    return chosen is not None and chosen > 0
+
+
+class FixtureHandler(http.server.SimpleHTTPRequestHandler):
+    """Quiet static handler that gzips text responses like GitHub Pages.
+
+    Only plain 200 file responses are compressed: redirects, 404s and directory
+    listings fall through to the stock handler untouched.
+
+    Requests carrying ``If-Modified-Since``, ``If-None-Match`` or ``Range`` are
+    also served by the stock handler, uncompressed: ``SimpleHTTPRequestHandler``
+    answers them from the raw file (a 304 when the file is unchanged, otherwise
+    the full identity body, since it ignores ``Range``), and re-deriving those
+    semantics for a gzipped representation is not worth the code. This does not
+    distort measurements. A fresh browser context, which is what Lighthouse and
+    the Playwright suite use, never sends these headers on its first request for
+    a URL, so every measured load is compressed; a real revalidation of an
+    unchanged file still yields ``304 Not Modified``, which has no body to
+    compress. ``Vary: Accept-Encoding`` is sent on every response regardless.
+    """
+
+    compress = True
+
+    def log_message(self, format, *args):  # noqa: A002 - signature of the base class
+        return None
+
+    def end_headers(self) -> None:
+        if self.compress:
+            self.send_header("Vary", "Accept-Encoding")
+        super().end_headers()
+
+    def _gzip_target(self) -> tuple[str, str] | None:
+        """Return (file path, Content-Type) when this request is served gzipped."""
+        if not self.compress or not accepts_gzip(self.headers.get("Accept-Encoding")):
+            return None
+        if any(name in self.headers for name in ("If-Modified-Since", "If-None-Match", "Range")):
+            return None
+        path = self.translate_path(self.path)
+        if os.path.isdir(path):
+            # Redirects (no trailing slash) and listings stay with the parent.
+            if not urllib.parse.urlsplit(self.path).path.endswith("/"):
+                return None
+            for index in getattr(self, "index_pages", ("index.html", "index.htm")):
+                candidate = os.path.join(path, index)
+                if os.path.isfile(candidate):
+                    path = candidate
+                    break
+            else:
+                return None
+        if path.endswith("/") or not os.path.isfile(path):
+            return None
+        content_type = self.guess_type(path)
+        if content_type.partition(";")[0].strip().lower() not in GZIP_CONTENT_TYPES:
+            return None
+        return path, content_type
+
+    def send_head(self):
+        target = self._gzip_target()
+        if target is None:
+            return super().send_head()
+        path, content_type = target
+        try:
+            with open(path, "rb") as source:
+                modified = os.fstat(source.fileno()).st_mtime
+                raw = source.read()
+        except OSError:
+            self.send_error(HTTPStatus.NOT_FOUND, "File not found")
+            return None
+        body = gzip.compress(raw, compresslevel=GZIP_LEVEL, mtime=0)
+        self.send_response(HTTPStatus.OK)
+        self.send_header("Content-type", content_type)
+        self.send_header("Content-Encoding", "gzip")
+        self.send_header("Content-Length", str(len(body)))
+        self.send_header("Last-Modified", self.date_time_string(modified))
+        self.end_headers()
+        # do_GET copies this stream to the client; do_HEAD closes it unread,
+        # so HEAD reports the compressed length and sends no body.
+        return io.BytesIO(body)
+
+
+class PlainFixtureHandler(FixtureHandler):
+    """The identity transport: no compression, no ``Vary`` header."""
+
+    compress = False
+
+
+def make_handler(site_dir: Path, *, compress: bool = True) -> functools.partial:
+    """Request-handler factory serving ``site_dir`` (gzip unless ``compress=False``)."""
+    handler = FixtureHandler if compress else PlainFixtureHandler
+    return functools.partial(handler, directory=str(site_dir))
+
+
+def serve_site(site_dir: Path, *, compress: bool = True) -> tuple[str, object]:
     """Serve ``site_dir`` on an ephemeral local port. Returns (base_url, httpd)."""
-    handler = type(
-        "QuietHandler",
-        (http.server.SimpleHTTPRequestHandler,),
-        {"log_message": lambda self, *args: None},
-    )
-    handler = functools.partial(handler, directory=str(site_dir))
+    handler = make_handler(site_dir, compress=compress)
 
     class _Server(http.server.ThreadingHTTPServer):
         def __init__(self, directory: Path) -> None:
@@ -120,9 +270,9 @@ def serve_site(site_dir: Path) -> tuple[str, object]:
     return f"http://127.0.0.1:{httpd.server_address[1]}", httpd
 
 
-def serve_copy(tmp_path: Path) -> tuple[str, object]:
+def serve_copy(tmp_path: Path, *, compress: bool = True) -> tuple[str, object]:
     """Copy the built site into tmp_path and serve it. Caller must stop server."""
-    return serve_site(copy_site(tmp_path))
+    return serve_site(copy_site(tmp_path), compress=compress)
 
 
 def stop_server(httpd: object) -> None:

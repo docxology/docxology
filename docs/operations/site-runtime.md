@@ -193,6 +193,12 @@ optional-tool absence produces an explicit skip. A present tool that fails, or
 a Lighthouse report missing a required finite score, fails in both contexts.
 The npx fallback uses the hosted Lighthouse version, **13.4.1**.
 
+Rendered tests and the Lighthouse ratchet serve the site copy gzip-compressed,
+like GitHub Pages (`serve_site(..., compress=False)` gives the identity
+transport), and the Lighthouse test asserts that the served copy negotiates gzip
+so its scores stay comparable with the published site. Running them locally needs
+loopback bind permission and a launchable Chromium.
+
 Lighthouse aspirational scores remain performance 85, accessibility 95, and SEO
 95. The gate retains the recorded per-page floors and shared-runner noise policy:
 only a below-floor first run triggers two more runs and a median decision. Green

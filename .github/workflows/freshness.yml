@@ -28,6 +28,10 @@ jobs:
           python-version: "3.12"
 
       - name: Refresh public-source snapshot
+        # An authenticated GitHub rate limit keeps a throttled run from dropping
+        # checks, which would otherwise read as drift (missing labels).
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: python3 code/orchestrators/refresh_public_sources.py --output reports/public_source_snapshot_latest.json --facts-output reports/public_source_snapshot_latest.facts.json
       - name: Check Flickr artwork export drift
         # Skipped (not failed) until the FLICKR_API_KEY repository secret is
@@ -48,11 +52,21 @@ jobs:
           shopt -s nullglob
           candidates=(reports/public_source_snapshot_[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json)
           BASELINE="$(printf '%s\n' "${candidates[@]}" | sort | tail -n 1)"
-          jq -S '.facts' "$BASELINE" > reports/public_source_snapshot_baseline.facts.json
-          if cmp -s reports/public_source_snapshot_baseline.facts.json reports/public_source_snapshot_latest.facts.json; then
+          # Normalize BOTH sides identically before comparing. updated_at and
+          # stargazers_count move with ordinary repository activity and are
+          # telemetry, not curated claims; every other fact still counts: repo
+          # and record totals, Zenodo first_* (newest-first, so deterministic),
+          # renames, titles, DOIs, and the GitHub account type.
+          NORMALIZE='walk(if type == "object" then del(.updated_at, .stargazers_count) else . end)'
+          jq -S ".facts | $NORMALIZE" "$BASELINE" > reports/public_source_snapshot_baseline.facts.norm.json
+          jq -S "$NORMALIZE" reports/public_source_snapshot_latest.facts.json > reports/public_source_snapshot_latest.facts.norm.json
+          if cmp -s reports/public_source_snapshot_baseline.facts.norm.json reports/public_source_snapshot_latest.facts.norm.json; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
+            # Show which facts moved in the job log; diff exits 1 when files differ
+            # (expected here) and 2 on trouble, which must still fail the step.
+            diff -u reports/public_source_snapshot_baseline.facts.norm.json reports/public_source_snapshot_latest.facts.norm.json || test "$?" -eq 1
           fi
           echo "baseline=$BASELINE" >> "$GITHUB_OUTPUT"
 

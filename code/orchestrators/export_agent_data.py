@@ -182,6 +182,62 @@ def _snapshot_value(snapshot: dict, label: str, key: str) -> int | str | None:
     return None
 
 
+AII_GITHUB_LABEL = "GitHub user ActiveInferenceInstitute"
+# GitHub's `type` field values the claim wording knows how to state; anything else
+# (absent in snapshots up to 2026-09-30, null, or e.g. "Bot") asserts nothing.
+_GITHUB_ACCOUNT_PHRASES = {"Organization": "an Organization", "User": "a User account"}
+
+
+def _aii_account_type(snapshot: dict) -> str | None:
+    """The AII GitHub account `type` recorded in the public-source snapshot, or None."""
+    value = _snapshot_value(snapshot, AII_GITHUB_LABEL, "type")
+    return value if isinstance(value, str) and value in _GITHUB_ACCOUNT_PHRASES else None
+
+
+def _aii_claim_texts(snapshot: dict, public_repos: int | str | None) -> dict[str, str]:
+    """Snapshot-driven wording for the `aii-github-public-repos` claim.
+
+    Shared by the static claim (`_claims`) and the hydrated claim
+    (`_hydrate_claim_checks`) so both read the account type from the same snapshot
+    fact and cannot disagree. Nothing here hard-codes an observation date: the
+    account type is whatever the snapshot recorded, and a snapshot without the
+    `type` fact yields wording that asserts no type. `caveat` is the type-dependent
+    head only; each caller appends its own catalog-count sentence.
+    """
+    account_type = _aii_account_type(snapshot)
+    subject = "The ActiveInferenceInstitute GitHub account"
+    endpoint = "/users/ActiveInferenceInstitute"
+    if account_type is None:
+        return {
+            "claim": f"{subject} has {public_repos} public repositories.",
+            "verification_method": (
+                f"GitHub REST API {endpoint} response as recorded in the public-source snapshot."
+            ),
+            "caveat": (
+                f"The repository count is read from {endpoint}; the public-source snapshot "
+                "records no recognized account type, so none is asserted."
+            ),
+        }
+    if account_type == "Organization":
+        caveat = (
+            "The public-source snapshot records this account's type as Organization; the repository "
+            f"count is read from {endpoint}, which serves Organization accounts as well as Users."
+        )
+    else:
+        caveat = (
+            "The public-source snapshot records this account's type as User; use "
+            f"{endpoint}, since /orgs/ActiveInferenceInstitute applies only to Organization accounts."
+        )
+    return {
+        "claim": f"{subject} ({_GITHUB_ACCOUNT_PHRASES[account_type]}) has {public_repos} public repositories.",
+        "verification_method": (
+            f"GitHub REST API {endpoint} response, type: {account_type} "
+            "as recorded in the public-source snapshot."
+        ),
+        "caveat": caveat,
+    }
+
+
 PEOPLE = [
     {
         "name": "Daniel Ari Friedman",
@@ -222,8 +278,8 @@ ORGANIZATIONS = [
         "public_landing_page": "https://activeinference.org/",
         "wikidata": "https://www.wikidata.org/wiki/Q139600792",
         "github": "https://github.com/ActiveInferenceInstitute",
-        "github_account_type": "user",
-        "github_note": "The ActiveInferenceInstitute GitHub account is a User account, not an Organization; requests to /orgs/ActiveInferenceInstitute return 404. Use /users/ActiveInferenceInstitute.",
+        "github_account_type": "organization",
+        "github_note": "GitHub reports the ActiveInferenceInstitute account as type Organization (observed 2026-10-06). Both /users/ActiveInferenceInstitute and /orgs/ActiveInferenceInstitute resolve; the public repository count is read from the /users/ response.",
         "ein": "88-2985125",
         "irs_status": "501(c)(3) public charity; IRS ruling March 2024",
         "irs_record": "https://projects.propublica.org/nonprofits/organizations/882985125",
@@ -258,9 +314,10 @@ def _claims() -> list[dict]:
     docx_public_repos = _snapshot_value(snapshot, "GitHub user docxology", "public_repos")
     if docx_public_repos is None:
         docx_public_repos = github_inventory.get("docxology")
-    aii_public_repos = _snapshot_value(snapshot, "GitHub user ActiveInferenceInstitute", "public_repos")
+    aii_public_repos = _snapshot_value(snapshot, AII_GITHUB_LABEL, "public_repos")
     if aii_public_repos is None:
         aii_public_repos = github_inventory.get("ActiveInferenceInstitute")
+    aii_texts = _aii_claim_texts(snapshot, aii_public_repos)
     work_count = int(counts.get("bibliography_works", _current_work_count()))
     folder_count = int(counts.get("paper_folder_docs", _current_paper_folder_count()))
     try:
@@ -303,10 +360,7 @@ def _claims() -> list[dict]:
         },
         {
             "id": "aii-github-public-repos",
-            "claim": (
-                "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) "
-                f"has {aii_public_repos} public repositories."
-            ),
+            "claim": aii_texts["claim"],
             "status": "public-api",
             "sources": [
                 "https://api.github.com/users/ActiveInferenceInstitute",
@@ -314,9 +368,12 @@ def _claims() -> list[dict]:
             ],
             "checked_at": snapshot_ts or counts_ts or "2026-06-09T03:41:15.072709+00:00",
             "confidence": "high",
-            "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
+            "verification_method": aii_texts["verification_method"],
             "maintenance_owner": "INTEGRATOR",
-            "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks AII repositories with docxology contributions (see pages/SOFTWARE.md and reports/current_counts.md).",
+            "caveat": (
+                f"{aii_texts['caveat']} Local software catalog tracks AII repositories with docxology "
+                "contributions (see pages/SOFTWARE.md and reports/current_counts.md)."
+            ),
         },
         {
             "id": "orcid-canonical-identifier",
@@ -512,7 +569,7 @@ def _hydrate_claim_checks(*, enforce_stale_checks: bool = True) -> list[dict]:
     docxology_public_repos = _snapshot_value(snapshot, "GitHub user docxology", "public_repos")
     if docxology_public_repos is None:
         docxology_public_repos = counts_payload.get("docxology")
-    aii_public_repos = _snapshot_value(snapshot, "GitHub user ActiveInferenceInstitute", "public_repos")
+    aii_public_repos = _snapshot_value(snapshot, AII_GITHUB_LABEL, "public_repos")
     if aii_public_repos is None:
         aii_public_repos = counts_payload.get("ActiveInferenceInstitute")
     source_counts_timestamp = payload_json.get("generated_at")
@@ -550,12 +607,13 @@ def _hydrate_claim_checks(*, enforce_stale_checks: bool = True) -> list[dict]:
         elif claim_copy["id"] == "docxology-github-public-repos" and docxology_public_repos is not None:
             claim_copy["claim"] = f"The docxology GitHub profile has {docxology_public_repos} public repositories."
         elif claim_copy["id"] == "aii-github-public-repos" and aii_public_repos is not None:
-            claim_copy["claim"] = (
-                "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) "
-                f"has {aii_public_repos} public repositories."
-            )
+            # Same helper as the static claim in _claims(): both read the account type from
+            # the snapshot, so the hydrated and static texts cannot disagree.
+            aii_texts = _aii_claim_texts(snapshot, aii_public_repos)
+            claim_copy["claim"] = aii_texts["claim"]
+            claim_copy["verification_method"] = aii_texts["verification_method"]
             claim_copy["caveat"] = (
-                "Use /users/ActiveInferenceInstitute, not /orgs/. "
+                f"{aii_texts['caveat']} "
                 f"Local software catalog tracks {catalogued_aii} AII repositories with docxology contributions."
             )
         # Do not stamp claim_copy["checked_at"] with the export run's timestamp here:
