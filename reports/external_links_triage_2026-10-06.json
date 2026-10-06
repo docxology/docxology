@@ -1,19 +1,48 @@
 {
-  "generated_at": "2026-10-06T16:40:31Z",
+  "generated_at": "2026-10-06T21:13:50Z",
   "source": "reports/external_links_2026-10-06.json",
-  "checked_urls": 868,
-  "ok": 717,
-  "warnings": 151,
+  "checked_urls": 869,
+  "ok": 716,
+  "warnings": 153,
   "categories": {
-    "bot-protected-or-rate-limited": 146,
+    "bot-protected-or-rate-limited": 148,
     "connection-failure": 1,
-    "ok": 717,
+    "ok": 716,
     "timeout": 3,
     "upstream-transient": 1
   },
   "note": "Warnings classify observed network behavior; bot-protected and rate-limited sources are not automatically stale.",
   "warnings_by_category": {
     "bot-protected-or-rate-limited": [
+      {
+        "url": "https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "discovery.html",
+          "domain-active-inference.html",
+          "domain-active-inference.html",
+          "domain-aii-ecosystem.html",
+          "domain-aii-ecosystem.html",
+          "domain-art-synergetics.html",
+          "domain-art-synergetics.html",
+          "domain-biomedicine.html",
+          "domain-biomedicine.html",
+          "domain-cognitive-security.html",
+          "domain-cognitive-security.html",
+          "domain-computational.html",
+          "domain-computational.html",
+          "domain-entomology.html",
+          "domain-entomology.html",
+          "domain-presentations-media.html",
+          "domain-presentations-media.html",
+          "pages/DISCOVERY.md",
+          "pages/LINKS.md",
+          "pages/PROFILE.md"
+        ],
+        "error": ""
+      },
       {
         "url": "https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind",
         "status": 403,
@@ -2131,6 +2160,17 @@
           "publications.html"
         ],
         "error": ""
+      },
+      {
+        "url": "https://www.worldcat.org/isbn/978-3-8365-9970-2",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
       }
     ],
     "connection-failure": [
@@ -2142,7 +2182,7 @@
         "sources": [
           "pages/LINKS.md"
         ],
-        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 270 ms: Couldn't connect to server"
+        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 167 ms: Couldn't connect to server"
       }
     ],
     "timeout": [
@@ -2155,7 +2195,7 @@
           "pages/EVIDENCE.md",
           "pages/EVIDENCE.md"
         ],
-        "error": "curl: (28) Operation timed out after 10006 milliseconds with 0 bytes received"
+        "error": "curl: (28) Connection timed out after 10005 milliseconds"
       },
       {
         "url": "https://www.christies.com/en/lot/lot-6337619",
@@ -2170,7 +2210,7 @@
           "pages/EVIDENCE.md",
           "pages/LINKS.md"
         ],
-        "error": "curl: (28) Operation timed out after 10002 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10001 milliseconds with 0 bytes received"
       },
       {
         "url": "https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd",
@@ -2181,7 +2221,7 @@
           "pages/EVIDENCE.md",
           "pages/EVIDENCE.md"
         ],
-        "error": "curl: (28) Operation timed out after 10006 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10003 milliseconds with 0 bytes received"
       }
     ],
     "upstream-transient": [
