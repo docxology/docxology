@@ -18,26 +18,26 @@
     "full_text_papers": 199,
     "generated_exports": {
       "data_publications_ld_main_entity": 220,
-      "data_software_json": 159,
-      "data_software_ld_main_entity": 159,
+      "data_software_json": 161,
+      "data_software_ld_main_entity": 161,
       "data_works_json": 220
     },
     "github_inventory": {
-      "ActiveInferenceInstitute": 43,
+      "ActiveInferenceInstitute": 45,
       "archived": 5,
-      "curated": 153,
-      "docxology": 224,
+      "curated": 157,
+      "docxology": 230,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 95,
-      "forks": 97,
-      "primary_ActiveInferenceInstitute": 41,
+      "fork_docxology": 101,
+      "forks": 103,
+      "primary_ActiveInferenceInstitute": 43,
       "primary_docxology": 129,
-      "primary_total": 170,
+      "primary_total": 172,
       "private": 0,
-      "public": 267,
-      "recently_updated": 207,
-      "total": 267,
-      "uncataloged": 114
+      "public": 275,
+      "recently_updated": 216,
+      "total": 275,
+      "uncataloged": 118
     },
     "paired_publication_decisions": {
       "decision": "accept",
@@ -60,7 +60,7 @@
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
-      "GitHub user ActiveInferenceInstitute": 44,
+      "GitHub user ActiveInferenceInstitute": 45,
       "GitHub user docxology": 230,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
@@ -68,8 +68,8 @@
       "Zenodo exact-name creator records": 71
     },
     "software": {
-      "active_inference_institute": 39,
-      "curated_total": 159,
+      "active_inference_institute": 41,
+      "curated_total": 161,
       "docxology_owned": 120
     },
     "types": {
@@ -82,14 +82,14 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-10-05T22:43:25+00:00",
+  "generated_at": "2026-10-06T16:26:34+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",
     "paired_publication_decisions": "data/paired-publication-decisions.json",
     "paired_publications": "reports/paired_publications_2026-09-24.json",
     "paper_folders": "papers/README.md",
-    "public_source_snapshot": "reports/public_source_snapshot_2026-09-30.json",
+    "public_source_snapshot": "reports/public_source_snapshot_2026-10-06.json",
     "software_catalog": "pages/SOFTWARE.md",
     "software_export": "data/software.json",
     "works_export": "data/works.json"

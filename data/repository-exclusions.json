@@ -993,6 +993,66 @@
       "note": "Public fork created 2026-09-22 with no catalog role; excluded by the standing fork policy, not by an individual review.",
       "github_id": 1381827372,
       "github_node_id": "R_kgDOUl0DLA"
+    },
+    {
+      "full_name": "docxology/MacroEnergy.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-06",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-25 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1387880521,
+      "github_node_id": "R_kgDOUrlgSQ"
+    },
+    {
+      "full_name": "docxology/groma.md",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-06",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-25 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1387974428,
+      "github_node_id": "R_kgDOUrrPHA"
+    },
+    {
+      "full_name": "docxology/FluSight-forecast-hub",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-06",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-28 with no description with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1393276879,
+      "github_node_id": "R_kgDOUwu3zw"
+    },
+    {
+      "full_name": "docxology/covid19-forecast-hub",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-06",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-28 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1393276967,
+      "github_node_id": "R_kgDOUwu4Jw"
+    },
+    {
+      "full_name": "docxology/rsv-forecast-hub",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-06",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-28 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1393303531,
+      "github_node_id": "R_kgDOUwwf6w"
+    },
+    {
+      "full_name": "docxology/flu-metrocast",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-06",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-28 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1393402154,
+      "github_node_id": "R_kgDOUw2hKg"
     }
   ]
 }

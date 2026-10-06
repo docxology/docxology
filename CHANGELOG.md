@@ -23,6 +23,17 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   results newest-first, and compares snapshots without star counts and
   update timestamps, so drift reports name changes that matter to curated
   claims.
+- **Two Active Inference Institute repositories catalogued:** `Working_Groups`,
+  which supplements work #224 (release v1.0.0), and
+  `active_inference_language_model`, empty at review, join the software catalog.
+  Work #224 now links its source repository. Six new docxology forks are
+  recorded under the standing fork policy.
+- **Reviewed public-source baseline:** a new dated snapshot and review cover
+  every observation since the last reviewed baseline (2026-08-26). Repository
+  counts, the Organization account type, and Zenodo record totals are applied
+  to the claims and discovery pages; star counts, update times, renames, and an
+  upstream creator-list change are acknowledged. This resolves the drift
+  reported in issue #12.
 
 ## 2026-10-05
 

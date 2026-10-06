@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T22:44:49Z",
+  "generated_at": "2026-10-06T16:28:07Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -67,12 +67,12 @@
     "public_archive": 163,
     "open_full_text": 199,
     "source_documents": 203,
-    "executable_code": 72,
+    "executable_code": 73,
     "agent_readable": 203
   },
   "band_counts": {
-    "independently reproducible": 160,
-    "independently checkable": 43,
+    "independently reproducible": 161,
+    "independently checkable": 42,
     "citable only": 8,
     "unverified": 9
   },
@@ -81,11 +81,11 @@
     "1": 4,
     "2": 4,
     "3": 9,
-    "4": 34,
-    "5": 90,
+    "4": 33,
+    "5": 91,
     "6": 70
   },
-  "mean_score": 4.75,
+  "mean_score": 4.755,
   "works": [
     {
       "num": 5,
@@ -3274,6 +3274,27 @@
       "repositories": []
     },
     {
+      "num": 224,
+      "citation_key": "Friedman2026CoordinatingFieldCaseEcosystem224",
+      "title": "Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "Working_Groups"
+      ]
+    },
+    {
       "num": 23,
       "citation_key": "Friedman2025TemporalDepthCoherentSelf023",
       "title": "Temporal Depth in a Coherent Self and in Depersonalization",
@@ -3894,25 +3915,6 @@
         "persistent_id": true,
         "public_archive": false,
         "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 224,
-      "citation_key": "Friedman2026CoordinatingFieldCaseEcosystem224",
-      "title": "Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference",
-      "year": 2026,
-      "domain_name": "Active Inference",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
         "source_documents": true,
         "executable_code": false,
         "agent_readable": true

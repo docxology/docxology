@@ -8,7 +8,7 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-10-05; implementation progress and remaining evidence/access
+- Last reviewed: 2026-10-06; implementation progress and remaining evidence/access
   dependencies recorded separately from completed history.
 
 ## P0 — Release and integrity
@@ -56,7 +56,7 @@ criteria, and dependencies. Re-review this file before each public release.
 
 - Priority: P1
 - Owner: RESEARCHER
-- Trigger: monthly, before a claim-sensitive release, or when the weekly `freshness.yml` run opens or comments on the "Public-source freshness drift detected" issue (open as #12 on 2026-10-05; close it by hand once a reviewed refresh is the committed baseline)
+- Trigger: monthly, before a claim-sensitive release, or when the weekly `freshness.yml` run opens or comments on the "Public-source freshness drift detected" issue (the reviewed baseline `reports/public_source_snapshot_2026-10-06.json` resolved #12; a later drift opens a new issue, which is closed by hand once a reviewed refresh is the committed baseline)
 - Deliverable: refresh ORCID, Crossref, Zenodo, PubMed, Europe PMC, GitHub, Scholar, organizational, teaching, art, and software evidence; review `data/coverage-exceptions.json`
 - Acceptance: only verified metadata is applied, access dates and caveats remain visible, and current coverage is linked from agent and human discovery surfaces
 - Dependencies: public-source APIs, primary profile pages, coverage report

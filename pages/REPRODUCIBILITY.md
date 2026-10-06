@@ -32,17 +32,17 @@ from that computation.
 | Public archive | 163 / 220 | 74% | Fetch a deposited copy from a third-party archive. |
 | Open full text | 199 / 220 | 90% | Read the full text without a paywall or request. |
 | Source documents | 203 / 220 | 92% | Inspect the working folder behind the entry. |
-| Executable code | 72 / 220 | 33% | Run the software that produced or accompanies it. |
+| Executable code | 73 / 220 | 33% | Run the software that produced or accompanies it. |
 | Agent-readable guidance | 203 / 220 | 92% | Parse structured guidance without scraping prose. |
 
-Mean score 4.75 of 6.
+Mean score 4.755 of 6.
 
 ## Bands
 
 | Band | Works | Share | Meaning |
 | --- | --- | --- | --- |
-| independently reproducible | 160 | 73% | Code, archive, and text are all reachable without contacting the author. |
-| independently checkable | 43 | 20% | Enough is public to confirm the record and read the argument. |
+| independently reproducible | 161 | 73% | Code, archive, and text are all reachable without contacting the author. |
+| independently checkable | 42 | 19% | Enough is public to confirm the record and read the argument. |
 | citable only | 8 | 4% | The record resolves, but little beyond it is machine-checkable. |
 | unverified | 9 | 4% | Nothing here is independently checkable from this site alone. |
 

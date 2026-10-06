@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-10-06T16:09:12Z
+Generated: 2026-10-06T16:26:39Z
 
-Current public metrics: 220 curated works; 159 catalogued software repositories (120 owned + 39 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 224 docxology + 43 AII public repositories (170 primary, 97 forks).
+Current public metrics: 220 curated works; 161 catalogued software repositories (120 owned + 41 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 230 docxology + 45 AII public repositories (172 primary, 103 forks).
 
 SUMMARY
 -------
@@ -385,7 +385,7 @@ WORKS AND PUBLICATIONS (220)
 [223] 2026 | Paper | The Silver Line: A Memory-and-Succession Instrument | Zenodo | 10.5281/zenodo.22833485
 [224] 2026 | Paper | Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference | Zenodo | 10.5281/zenodo.23066903
 
-SOFTWARE (159)
+SOFTWARE (161)
 --------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
@@ -546,6 +546,8 @@ ActiveInferenceInstitute/Active_Fedference | Python | https://github.com/ActiveI
 ActiveInferenceInstitute/Active_Skillference | Python | https://github.com/ActiveInferenceInstitute/Active_Skillference | Validated prerequisite graph, computational claim registry, and SkillTree delivery contract for Active Inference · · Zenodo | paper: papers/2026_ActiveSkillference/ | zenodo: https://doi.org/10.5281/zenodo.21865643
 ActiveInferenceInstitute/active_inference_power | Python | https://github.com/ActiveInferenceInstitute/active_inference_power | Conditional statistical power under controlled generative settings for Active Inference · · Zenodo | paper: papers/2026_ActiveInferencePower/ | zenodo: https://doi.org/10.5281/zenodo.21695160
 ActiveInferenceInstitute/Active_Inference_Un0 | unspecified | https://github.com/ActiveInferenceInstitute/Active_Inference_Un0 | Public repository with no description, language, or committed contents at the 2026-08-26 review
+ActiveInferenceInstitute/Working_Groups | unspecified | https://github.com/ActiveInferenceInstitute/Working_Groups | Active Inference Institute Working Groups: draft Charter, Operating Procedures, and the position paper Coordinating the Field · Zenodo version v1.0.0 · Citation DOI | paper: papers/2026_CoordinatingField/ | zenodo: https://doi.org/10.5281/zenodo.23066903
+ActiveInferenceInstitute/active_inference_language_model | unspecified | https://github.com/ActiveInferenceInstitute/active_inference_language_model | Active Inference Language Model — public repository with no committed contents at the 2026-10-06 review
 
 CONFERENCES, POSTERS, SEMINARS, WORKSHOPS
 -----------------------------------------

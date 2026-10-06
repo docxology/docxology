@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-10-05T22:43:25+00:00`
+Generated: `2026-10-06T16:26:34+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -24,7 +24,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - works_export: `data/works.json`
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
-- public_source_snapshot: `reports/public_source_snapshot_2026-09-30.json`
+- public_source_snapshot: `reports/public_source_snapshot_2026-10-06.json`
 - paired_publications: `reports/paired_publications_2026-09-24.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
@@ -61,38 +61,38 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 ### Software
 
 - docxology_owned: `120`
-- active_inference_institute: `39`
-- curated_total: `159`
+- active_inference_institute: `41`
+- curated_total: `161`
 
 ### Generated Exports
 
 - data_works_json: `220`
-- data_software_json: `159`
+- data_software_json: `161`
 - data_publications_ld_main_entity: `220`
-- data_software_ld_main_entity: `159`
+- data_software_ld_main_entity: `161`
 
 ### GitHub Inventory
 
-- total: `267`
-- docxology: `224`
-- ActiveInferenceInstitute: `43`
-- curated: `153`
-- uncataloged: `114`
-- forks: `97`
+- total: `275`
+- docxology: `230`
+- ActiveInferenceInstitute: `45`
+- curated: `157`
+- uncataloged: `118`
+- forks: `103`
 - archived: `5`
-- public: `267`
+- public: `275`
 - private: `0`
-- recently_updated: `207`
-- primary_total: `170`
+- recently_updated: `216`
+- primary_total: `172`
 - primary_docxology: `129`
-- primary_ActiveInferenceInstitute: `41`
-- fork_docxology: `95`
+- primary_ActiveInferenceInstitute: `43`
+- fork_docxology: `101`
 - fork_ActiveInferenceInstitute: `2`
 
 ### Public Source Snapshot
 
 - GitHub user docxology: `230`
-- GitHub user ActiveInferenceInstitute: `44`
+- GitHub user ActiveInferenceInstitute: `45`
 - ORCID work groups: `20`
 - PubMed exact author records: `8`
 - Europe PMC exact author records: `10`

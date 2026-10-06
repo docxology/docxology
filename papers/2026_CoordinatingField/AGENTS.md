@@ -18,4 +18,4 @@
 ## Extraction Log
 
 - **Zenodo record**: https://zenodo.org/records/23066903
-- **Source**: Zenodo-only record (no paired GitHub release)
+- **Source**: Zenodo record paired with GitHub repository ActiveInferenceInstitute/Working_Groups (release v1.0.0)

@@ -22,6 +22,7 @@ active inference · free energy principle · technology roadmapping · working g
 | **Published** | 2026-09-30 |
 | **Version** | 1.0.0 |
 | **Zenodo record** | https://zenodo.org/records/23066903 |
+| **GitHub repository** | [ActiveInferenceInstitute/Working_Groups](https://github.com/ActiveInferenceInstitute/Working_Groups) (release [v1.0.0](https://github.com/ActiveInferenceInstitute/Working_Groups/releases/tag/v1.0.0)) |
 
 ## Files
 

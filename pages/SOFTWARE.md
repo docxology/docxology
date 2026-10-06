@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
  
- *120 original repositories · 39 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+ *120 original repositories · 41 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
  
  *[All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -209,6 +209,8 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [Active_Skillference](https://github.com/ActiveInferenceInstitute/Active_Skillference) | Validated prerequisite graph, computational claim registry, and SkillTree delivery contract for Active Inference · [📄](../papers/2026_ActiveSkillference/) · [Zenodo](https://doi.org/10.5281/zenodo.21865643) | Python | 0 | 2026 |
 | [active_inference_power](https://github.com/ActiveInferenceInstitute/active_inference_power) | Conditional statistical power under controlled generative settings for Active Inference · [📄](../papers/2026_ActiveInferencePower/) · [Zenodo](https://doi.org/10.5281/zenodo.21695160) | Python | 0 | 2026 |
 | [Active_Inference_Un0](https://github.com/ActiveInferenceInstitute/Active_Inference_Un0) | Public repository with no description, language, or committed contents at the 2026-08-26 review | — | 0 | 2026 |
+| [Working_Groups](https://github.com/ActiveInferenceInstitute/Working_Groups) | Active Inference Institute Working Groups: draft Charter, Operating Procedures, and the position paper Coordinating the Field · [Zenodo version v1.0.0](https://doi.org/10.5281/zenodo.23066904) · [Citation DOI](https://doi.org/10.5281/zenodo.23066903) · [📄](../papers/2026_CoordinatingField/) | — | 0 | 2026 |
+| [active_inference_language_model](https://github.com/ActiveInferenceInstitute/active_inference_language_model) | Active Inference Language Model — public repository with no committed contents at the 2026-10-06 review | — | 0 | 2026 |
 
 ---
 
@@ -226,7 +228,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Other | 6 | `cascadia`, `fuller-obsidian`, `service`, `flick`, `Digi-PPPiP`, `math4wisdom-superhuman-docs-archive` |
 | Research Practice | 9 | `line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register`, `blue_line`, `green_line`, `silver_line` |
 | **docxology subtotal** | **120** | |
-| **Grand Total** | **159** | |
+| **Grand Total** | **161** | |
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; GitHub reports the AII account as an **Organization** (observed 2026-10-06). See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 
 ---
