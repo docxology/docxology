@@ -148,9 +148,11 @@ criteria, and dependencies. Re-review this file before each public release.
   Lighthouse fixture now serves gzip like GitHub Pages, and the gallery and
   publication-table startups yield instead of running one long task; local
   medians on the gzip fixture are 99–100 for both pages with zero blocking time
-  ([the 2026-10-06 report](reports/lighthouse_gap_2026-10-06.md)). Confirm on the
-  next retained CI `lighthouse-<sha>` artifact before citing CI scores; the
-  floors and targets in `code/tests/test_lighthouse_budgets.py` are unchanged.
+  ([the 2026-10-06 report](reports/lighthouse_gap_2026-10-06.md)). The CI
+  `lighthouse-8d4c7c17…` artifact confirms it: performance 95 (`art.html`) and
+  99 (`publications.html`), and 95–100 on every ratchet page; the floors and
+  targets in `code/tests/test_lighthouse_budgets.py` are unchanged. `art.html`
+  still shows about 240 ms of blocking time on the CI runner.
 
 ### DOC-010 — Security and SEO follow-up
 

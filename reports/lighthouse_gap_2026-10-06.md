@@ -144,3 +144,12 @@ control), controls changed while the index fetch is held, or while the loader is
 parked after publishing, decide the final grid, and both `art.html` and
 `publications.html` hydrate with `scheduler.yield` deleted (the `setTimeout(0)`
 fallback) and a clean console.
+
+## CI confirmation (2026-10-06)
+
+The first CI run with the gzip fixture and the yielding startups
+(`lighthouse-8d4c7c17…` artifact, one run per page) scored performance 95 on
+`art.html` (LCP 1.2 s, TBT 240 ms) and 99 on `publications.html` (LCP 1.4 s,
+TBT 130 ms), against 75 and 82 on `a08e455d`. Every ratchet page scored 95–100
+for performance, 96–100 for accessibility and 100 for SEO. Thresholds are
+unchanged.
