@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-06T16:20:13Z",
-  "source_commit_at_generation": "16f9a381e882e851630e1ae11a9c7ec239aa5f6c",
+  "generated_at": "2026-10-06T16:59:52Z",
+  "source_commit_at_generation": "7d5356a45786f5aca60fc7655401f2f7203f990f",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -23,26 +23,26 @@
   "source_sha256": {
     "pages/BIBLIOGRAPHY.md": "bde56539cfe924deaa3e205a20d93209e04702c6dd99db88dab1d904eed72ddb",
     "data/work-identifiers.json": "ce6bfe37f2b2494fb26dcdbef06d903bf3a29405e71c2cd9f64d71f09040300f",
-    "pages/SOFTWARE.md": "d31fbf6b58d879de15d9768bf5a71395f596fe7d4a2c92edfe711bbdbd3d1e5b",
+    "pages/SOFTWARE.md": "02e0cd27054f7a486aeb0291df3b45d8c74be2dbd72c9219da155ac0c892c1b7",
     "resume/source.json": "209c5b0b1df978813d6ad7c08e2b7c0e2cbc1f7445a4cbdf2c422165983b2f6a",
-    "data/current-counts.json": "bef76b82449ad56d22238a908447ee0e1777f38d8d3988672878a24380c914de",
+    "data/current-counts.json": "027ebaf2063bc9954b29d6901badb38a8cf535a35d4c42cf187082428174857c",
     "data/coverage-exceptions.json": "8df47104acdb09d984bd784c96b80e91e10f9c466b0157aec198b7cb61db06d6",
-    "data/repository-classification.json": "ba9df46fa148f2d96aea5703e3a573bde721bc7f1da9516d0c9d0126d0e9a4b5",
-    "data/agent-index.json": "2176b6b5d1d862e95ce31b61fd408d2f7d4f0e543754a035e5a48575d977906f",
-    "data/generated-manifest.json": "0e1124cd4bd65c20d6b6d8645414b8bd96fd173c717ecc9439589c69dbfb24eb",
-    "data/pages-artifact-manifest.json": "2926d9a11687c05296a69d8326604301f671a23ee57ca02e5adf7ee082b9b46b"
+    "data/repository-classification.json": "f2091c3df03c41d7451639c918c59b74b70ff6893cfafd6881e6dfdb3c257078",
+    "data/agent-index.json": "365d5fd8bedcff836bf57ad8fdb70275f1716dd58feaec7acdddf1d4a027323b",
+    "data/generated-manifest.json": "f04130e93290e3e4f08ba9a61159c41dc90be5601041cfc340939e1ec06637fa",
+    "data/pages-artifact-manifest.json": "5d9a1f34c21a1caf02c4cb19c15841669f2c3349a91bc724a372e50abefa5fde"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "16f9a381e882e851630e1ae11a9c7ec239aa5f6c",
-    "artifact_file_count": 5975,
-    "artifact_bytes": 880792614,
+    "source_commit_at_generation": "7d5356a45786f5aca60fc7655401f2f7203f990f",
+    "artifact_file_count": 5977,
+    "artifact_bytes": 880859529,
     "omitted_paper_image_count": 8959,
-    "omitted_superseded_report_count": 577
+    "omitted_superseded_report_count": 583
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "16f9a381e882e851630e1ae11a9c7ec239aa5f6c",
+    "candidate_source_commit": "7d5356a45786f5aca60fc7655401f2f7203f990f",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
@@ -67,26 +67,26 @@
     "full_text_papers": 199,
     "generated_exports": {
       "data_publications_ld_main_entity": 220,
-      "data_software_json": 159,
-      "data_software_ld_main_entity": 159,
+      "data_software_json": 161,
+      "data_software_ld_main_entity": 161,
       "data_works_json": 220
     },
     "github_inventory": {
-      "ActiveInferenceInstitute": 43,
+      "ActiveInferenceInstitute": 45,
       "archived": 5,
-      "curated": 153,
-      "docxology": 224,
+      "curated": 157,
+      "docxology": 230,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 95,
-      "forks": 97,
-      "primary_ActiveInferenceInstitute": 41,
+      "fork_docxology": 101,
+      "forks": 103,
+      "primary_ActiveInferenceInstitute": 43,
       "primary_docxology": 129,
-      "primary_total": 170,
+      "primary_total": 172,
       "private": 0,
-      "public": 267,
-      "recently_updated": 207,
-      "total": 267,
-      "uncataloged": 114
+      "public": 275,
+      "recently_updated": 216,
+      "total": 275,
+      "uncataloged": 118
     },
     "paired_publication_decisions": {
       "decision": "accept",
@@ -109,7 +109,7 @@
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
-      "GitHub user ActiveInferenceInstitute": 44,
+      "GitHub user ActiveInferenceInstitute": 45,
       "GitHub user docxology": 230,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
@@ -117,8 +117,8 @@
       "Zenodo exact-name creator records": 71
     },
     "software": {
-      "active_inference_institute": 39,
-      "curated_total": 159,
+      "active_inference_institute": 41,
+      "curated_total": 161,
       "docxology_owned": 120
     },
     "types": {

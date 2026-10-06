@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T01:01:34Z",
+  "generated_at": "2026-10-06T16:59:06Z",
   "artifacts": [
     {
       "name": "Paper folder doc regeneration",
@@ -660,7 +660,7 @@
     {
       "name": "External link report",
       "outputs": [
-        "reports/external_links_2026-10-05.json"
+        "reports/external_links_2026-10-06.json"
       ],
       "sources": [
         "all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"
@@ -670,7 +670,7 @@
     {
       "name": "Public source snapshot",
       "outputs": [
-        "reports/public_source_snapshot_2026-09-30.json"
+        "reports/public_source_snapshot_2026-10-06.json"
       ],
       "sources": [
         "GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs"
@@ -680,7 +680,7 @@
     {
       "name": "Public source inventory",
       "outputs": [
-        "reports/public_source_inventory_2026-09-24.json"
+        "reports/public_source_inventory_2026-10-06.json"
       ],
       "sources": [
         "ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages"
@@ -690,8 +690,8 @@
     {
       "name": "Public-source review record",
       "outputs": [
-        "reports/public_source_review_2026-10-01.json",
-        "reports/public_source_review_2026-10-01.md"
+        "reports/public_source_review_2026-10-06.json",
+        "reports/public_source_review_2026-10-06.md"
       ],
       "sources": [
         "reports/public_source_snapshot_*.json",
@@ -710,11 +710,11 @@
     {
       "name": "External link triage",
       "outputs": [
-        "reports/external_links_triage_2026-10-05.json",
-        "reports/external_links_triage_2026-10-05.md"
+        "reports/external_links_triage_2026-10-06.json",
+        "reports/external_links_triage_2026-10-06.md"
       ],
       "sources": [
-        "reports/external_links_2026-10-05.json"
+        "reports/external_links_2026-10-06.json"
       ],
       "command": "python3 code/orchestrators/build_external_link_triage.py"
     },

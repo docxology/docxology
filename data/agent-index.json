@@ -1,6 +1,6 @@
 {
   "schema_version": "1.5",
-  "generated_at": "2026-10-05T22:43:25+00:00",
+  "generated_at": "2026-10-06T16:26:34+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -289,12 +289,12 @@
     },
     "software": {
       "path": "/data/software.json",
-      "count": 159,
+      "count": 161,
       "schema": "SoftwareRepository"
     },
     "repositories": {
       "path": "/data/github-repositories.json",
-      "count": 267,
+      "count": 275,
       "schema": "Repository"
     },
     "artworks": {
@@ -339,7 +339,7 @@
     },
     "repository_classification": {
       "path": "/data/repository-classification.json",
-      "count": 112,
+      "count": 118,
       "schema": "RepositoryClassification"
     },
     "pages_artifact": {
@@ -403,14 +403,14 @@
     },
     {
       "id": "public-source-snapshot",
-      "path": "/reports/public_source_snapshot_2026-09-30.json",
+      "path": "/reports/public_source_snapshot_2026-10-06.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "public-source-inventory",
-      "path": "/reports/public_source_inventory_2026-09-24.json",
+      "path": "/reports/public_source_inventory_2026-10-06.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1169,7 +1169,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-10-05T22:43:25+00:00",
+        "checked_at": "2026-10-06T16:26:34+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1279,26 +1279,26 @@
         "full_text_papers": 199,
         "generated_exports": {
           "data_publications_ld_main_entity": 220,
-          "data_software_json": 159,
-          "data_software_ld_main_entity": 159,
+          "data_software_json": 161,
+          "data_software_ld_main_entity": 161,
           "data_works_json": 220
         },
         "github_inventory": {
-          "ActiveInferenceInstitute": 43,
+          "ActiveInferenceInstitute": 45,
           "archived": 5,
-          "curated": 153,
-          "docxology": 224,
+          "curated": 157,
+          "docxology": 230,
           "fork_ActiveInferenceInstitute": 2,
-          "fork_docxology": 95,
-          "forks": 97,
-          "primary_ActiveInferenceInstitute": 41,
+          "fork_docxology": 101,
+          "forks": 103,
+          "primary_ActiveInferenceInstitute": 43,
           "primary_docxology": 129,
-          "primary_total": 170,
+          "primary_total": 172,
           "private": 0,
-          "public": 267,
-          "recently_updated": 207,
-          "total": 267,
-          "uncataloged": 114
+          "public": 275,
+          "recently_updated": 216,
+          "total": 275,
+          "uncataloged": 118
         },
         "paired_publication_decisions": {
           "decision": "accept",
@@ -1321,7 +1321,7 @@
         "public_source_snapshot": {
           "Crossref ORCID DOI records": 15,
           "Europe PMC exact author records": 10,
-          "GitHub user ActiveInferenceInstitute": 44,
+          "GitHub user ActiveInferenceInstitute": 45,
           "GitHub user docxology": 230,
           "ORCID work groups": 20,
           "PubMed exact author records": 8,
@@ -1329,8 +1329,8 @@
           "Zenodo exact-name creator records": 71
         },
         "software": {
-          "active_inference_institute": 39,
-          "curated_total": 159,
+          "active_inference_institute": 41,
+          "curated_total": 161,
           "docxology_owned": 120
         },
         "types": {
@@ -1343,14 +1343,14 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-10-05T22:43:25+00:00",
+      "generated_at": "2026-10-06T16:26:34+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
         "paired_publication_decisions": "data/paired-publication-decisions.json",
         "paired_publications": "reports/paired_publications_2026-09-24.json",
         "paper_folders": "papers/README.md",
-        "public_source_snapshot": "reports/public_source_snapshot_2026-09-30.json",
+        "public_source_snapshot": "reports/public_source_snapshot_2026-10-06.json",
         "software_catalog": "pages/SOFTWARE.md",
         "software_export": "data/software.json",
         "works_export": "data/works.json"
@@ -1367,11 +1367,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 879738556,
+        "source_bytes": 879805117,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5975,
-        "artifact_bytes": 880792614
+        "artifact_file_count": 5977,
+        "artifact_bytes": 880859529
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1383,7 +1383,7 @@
       "note": "See /data/release-integrity.json for the current envelope."
     },
     "ReproducibilityLedger": {
-      "generated_at": "2026-10-05T22:44:49Z",
+      "generated_at": "2026-10-06T16:28:07Z",
       "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
       "sources": [
         "data/works.json",
@@ -1451,12 +1451,12 @@
         "public_archive": 163,
         "open_full_text": 199,
         "source_documents": 203,
-        "executable_code": 72,
+        "executable_code": 73,
         "agent_readable": 203
       },
       "band_counts": {
-        "independently reproducible": 160,
-        "independently checkable": 43,
+        "independently reproducible": 161,
+        "independently checkable": 42,
         "citable only": 8,
         "unverified": 9
       },
@@ -1465,11 +1465,11 @@
         "1": 4,
         "2": 4,
         "3": 9,
-        "4": 34,
-        "5": 90,
+        "4": 33,
+        "5": 91,
         "6": 70
       },
-      "mean_score": 4.75,
+      "mean_score": 4.755,
       "works": [
         {
           "num": 5,
@@ -4658,6 +4658,27 @@
           "repositories": []
         },
         {
+          "num": 224,
+          "citation_key": "Friedman2026CoordinatingFieldCaseEcosystem224",
+          "title": "Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference",
+          "year": 2026,
+          "domain_name": "Active Inference",
+          "type": "Paper",
+          "score": 5,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": false,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "Working_Groups"
+          ]
+        },
+        {
           "num": 23,
           "citation_key": "Friedman2025TemporalDepthCoherentSelf023",
           "title": "Temporal Depth in a Coherent Self and in Depersonalization",
@@ -5285,25 +5306,6 @@
           "repositories": []
         },
         {
-          "num": 224,
-          "citation_key": "Friedman2026CoordinatingFieldCaseEcosystem224",
-          "title": "Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference",
-          "year": 2026,
-          "domain_name": "Active Inference",
-          "type": "Paper",
-          "score": 4,
-          "band": "independently checkable",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": false,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
           "num": 28,
           "citation_key": "Friedman2025TowardsScienceConsciousnessSocial028",
           "title": "Towards a Science of Consciousness and Social Complexity... For Ants",
@@ -5803,26 +5805,26 @@
   "dataset_hashes": {
     "works": "2928692b983afe5dde4060234bbada84f37fda00bad76beab9c3fcd77347f5fb",
     "work_identifiers": "ce6bfe37f2b2494fb26dcdbef06d903bf3a29405e71c2cd9f64d71f09040300f",
-    "software": "9956699726395302d49855ea3f1127c7a748159c06d21ea23163478b7b65d2c8",
-    "repositories": "7921e3722f3ec20c8d8a8fc5090396d3b66e4d557e732a6d1055a5d9d25cb772",
+    "software": "b29fad895a4e78eaa4ccd3bccd21cd5059db639af55845b30ee31be459b0b544",
+    "repositories": "338de534ebf787ba0bb005ab46d6bbdcd881acf890237273a353751778ec5c33",
     "artworks_index": "29270719124f00fb4d9c2729262c33318c82e9dbb114ec8b0f777436bb270769",
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "fc078bcc6821335aea2f96e8ac84c0847743b2fb4a0dd1fe048975f53a8f201b",
     "videos_index": "f000507bade7b3ab852931adcc701752d12487622521a11a435c276600d7be81",
-    "search": "0b12f245b3615c273ba0ab13de2df3396e7c5b8c9461bf43c6ea144704207e71",
-    "claims": "999202cde24ee1a932390b8b197d054d2a4ea3db63931d1707f5c5f7fb31486f",
+    "search": "4612abe1f95f075c38a5a8732d83dc129370559f361134618e8bf679b80555ac",
+    "claims": "f8308afcd711718a14ac19f07f14c4a806e5533ff8cfc25f622e65798441ab3d",
     "scholar_verification_receipt": "eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759",
     "coverage_exceptions": "8df47104acdb09d984bd784c96b80e91e10f9c466b0157aec198b7cb61db06d6",
-    "repository_classification": "ba9df46fa148f2d96aea5703e3a573bde721bc7f1da9516d0c9d0126d0e9a4b5",
-    "people": "f1bb72265986ae50153410dbba1b3da716378cef9d402504c9ede4c9ab082434",
-    "organizations": "047b54f195cd5c23ed44c562d90959745e8aba2064d276dbdb075970e8bb52bc",
-    "resume": "c1c61ebb05cc843937b71f2f56e419965c3407faf32612d4031e882bb0a9bf63",
+    "repository_classification": "f2091c3df03c41d7451639c918c59b74b70ff6893cfafd6881e6dfdb3c257078",
+    "people": "7b9868f981d58ee333bd64244ab17bf06ab8792165303bdfd1416708c04ff1ec",
+    "organizations": "cd0d479b639f723350502d7c0bc62b9edd305a5ad32250b7dc74667037d9c35a",
+    "resume": "4c2583072a648e372bed5cc826d859ee830b6a507f9da0180ccf340b37f2a48f",
     "work_enrichment": "f41c1bfe7a3880998d00b46af6392de048e0fa66228cdd951e5f28f35c47a98d",
-    "catalog": "693528d51f2402a578bde908c810253873e445c96a787039c94dbed0226382fc",
-    "reconciliation": "8b16d119fa4a0796ae45f7862ad1b42ead9b95f96683d5436bde7289170a3b4f",
-    "reproducibility": "5a4b9ace33374ea7462ceb9c2f8236c8f8a7afada29e73ab69f970c5b67117ef",
-    "generated_manifest": "0e1124cd4bd65c20d6b6d8645414b8bd96fd173c717ecc9439589c69dbfb24eb",
-    "current_counts": "bef76b82449ad56d22238a908447ee0e1777f38d8d3988672878a24380c914de"
+    "catalog": "de4c67e6ea9460d3f2c408fb1e1b9bdb331d903c7ed3250409ba9abdee78e2fb",
+    "reconciliation": "8da34e180deb5776064acab444f663eca5458dda9b8e255e42c47d81d3900779",
+    "reproducibility": "68a2c46e600751d96baa23a2fe2ad69cd69fa5857346b51c0222788d79215a48",
+    "generated_manifest": "f04130e93290e3e4f08ba9a61159c41dc90be5601041cfc340939e1ec06637fa",
+    "current_counts": "027ebaf2063bc9954b29d6901badb38a8cf535a35d4c42cf187082428174857c"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -5867,26 +5869,26 @@
     "full_text_papers": 199,
     "generated_exports": {
       "data_publications_ld_main_entity": 220,
-      "data_software_json": 159,
-      "data_software_ld_main_entity": 159,
+      "data_software_json": 161,
+      "data_software_ld_main_entity": 161,
       "data_works_json": 220
     },
     "github_inventory": {
-      "ActiveInferenceInstitute": 43,
+      "ActiveInferenceInstitute": 45,
       "archived": 5,
-      "curated": 153,
-      "docxology": 224,
+      "curated": 157,
+      "docxology": 230,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 95,
-      "forks": 97,
-      "primary_ActiveInferenceInstitute": 41,
+      "fork_docxology": 101,
+      "forks": 103,
+      "primary_ActiveInferenceInstitute": 43,
       "primary_docxology": 129,
-      "primary_total": 170,
+      "primary_total": 172,
       "private": 0,
-      "public": 267,
-      "recently_updated": 207,
-      "total": 267,
-      "uncataloged": 114
+      "public": 275,
+      "recently_updated": 216,
+      "total": 275,
+      "uncataloged": 118
     },
     "paired_publication_decisions": {
       "decision": "accept",
@@ -5909,7 +5911,7 @@
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
-      "GitHub user ActiveInferenceInstitute": 44,
+      "GitHub user ActiveInferenceInstitute": 45,
       "GitHub user docxology": 230,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
@@ -5917,8 +5919,8 @@
       "Zenodo exact-name creator records": 71
     },
     "software": {
-      "active_inference_institute": 39,
-      "curated_total": 159,
+      "active_inference_institute": 41,
+      "curated_total": 161,
       "docxology_owned": 120
     },
     "types": {
