@@ -424,14 +424,14 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-10-06.json",
+      "path": "/reports/accessibility_static_2026-10-07.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-10-06.json",
+      "path": "/reports/asset_size_2026-10-07.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1370,11 +1370,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 877693980,
+        "source_bytes": 879428086,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5923,
-        "artifact_bytes": 878740399
+        "artifact_file_count": 5927,
+        "artifact_bytes": 880475136
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5823,10 +5823,10 @@
     "organizations": "20eb5e6378671636112491d7d8cd8635b5f9c4fbffe65cef30c893c167ef6aeb",
     "resume": "8457769dcae08242bfcefba6a76ff92cfeb5aea7679626a2bdda8f55b3a4b523",
     "work_enrichment": "f41c1bfe7a3880998d00b46af6392de048e0fa66228cdd951e5f28f35c47a98d",
-    "catalog": "de4c67e6ea9460d3f2c408fb1e1b9bdb331d903c7ed3250409ba9abdee78e2fb",
+    "catalog": "1639bf0aa1e4b0fe1a6e867a450899c58718ee55b07d77905e6046dd50a08640",
     "reconciliation": "8da34e180deb5776064acab444f663eca5458dda9b8e255e42c47d81d3900779",
     "reproducibility": "1c876d04b5197c43ad51a1eaf82b26cbebb3c368e31f21c7a8900077688c073c",
-    "generated_manifest": "f04130e93290e3e4f08ba9a61159c41dc90be5601041cfc340939e1ec06637fa",
+    "generated_manifest": "dcdcc673dce3d763a652e06e2fb631c07d935e629606541f75bbb1dd20c6952e",
     "current_counts": "3ee6914e81d1f2f7dadd23f257c3e9aa7d31b7e708c4ddbdca7de776f359f895"
   },
   "source_provenance": {
