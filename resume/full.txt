@@ -14,7 +14,7 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-10-06T22:23:50Z
+Generated: 2026-10-07T16:41:31Z
 
 Current public metrics: 220 curated works; 161 catalogued software repositories (120 owned + 41 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 231 docxology + 45 AII public repositories (172 primary, 104 forks).
 
@@ -527,7 +527,7 @@ ActiveInferenceInstitute/Biofirm | Python | https://github.com/ActiveInferenceIn
 ActiveInferenceInstitute/Start | Python | https://github.com/ActiveInferenceInstitute/Start | Institute onboarding hub — getting-started guides, contributor pathways, project index, and orientation materials for new participants
 ActiveInferenceInstitute/act_inf_metaanalysis | TeX | https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis | A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus.
 ActiveInferenceInstitute/Knowledge-Engineering | Jupyter | https://github.com/ActiveInferenceInstitute/Knowledge-Engineering | Knowledge engineering tools and workflows — ontology alignment, concept mapping, and structured knowledge-base construction for Active Inference
-ActiveInferenceInstitute/fep_formal | Python | https://github.com/ActiveInferenceInstitute/fep_formal | Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline · · Zenodo artifact v1.1.0 · Citation DOI | paper: papers/2026_FEPLean/ | zenodo: https://doi.org/10.5281/zenodo.19699233
+ActiveInferenceInstitute/fep_formal | Python | https://github.com/ActiveInferenceInstitute/fep_formal | Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline · · Zenodo artifact v1.1.0 · Citation DOI · Zenodo software archive | paper: papers/2026_FEPLean/ | zenodo: https://doi.org/10.5281/zenodo.19699233
 ActiveInferenceInstitute/ActInf_RxInfer | unspecified | https://github.com/ActiveInferenceInstitute/ActInf_RxInfer | Active Inference with RxInfer.jl — Julia-based reactive message passing for efficient Bayesian inference in Active Inference models
 ActiveInferenceInstitute/pymcp | Python | https://github.com/ActiveInferenceInstitute/pymcp | PyMCP — Model Context Protocol bridge for PyMDP, enabling Active Inference agents to interoperate with MCP-compatible AI tooling
 ActiveInferenceInstitute/policy_entanglement | Python | https://github.com/ActiveInferenceInstitute/policy_entanglement | Policy Entanglement in Active Inference v1.0.0 · Zenodo | paper: papers/2026_PolicyEntanglementActive/ | zenodo: https://doi.org/10.5281/zenodo.20418904

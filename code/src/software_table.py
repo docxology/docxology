@@ -115,6 +115,19 @@ def _doi_from_zenodo_link(url: str) -> str:
     return f"10.5281/zenodo.{match.group(1)}" if match else ""
 
 
+def zenodo_link_dois(description_raw: str) -> list[str]:
+    """Return the DOI of every Zenodo link in a catalog description, in source order.
+
+    Only Markdown links count: a linked DOI is a curated citation, while a bare
+    inline DOI string is not.
+    """
+    return [
+        doi
+        for _label, url in MARKDOWN_LINK_RE.findall(description_raw)
+        if _is_zenodo_url(url) and (doi := _doi_from_zenodo_link(url))
+    ]
+
+
 def _doi_role_label_errors_for_row(row: SoftwareRow, repo_root: Path) -> list[str]:
     """Require explicit labels when a linked paper has citation and artifact DOI roles."""
     paper = paper_path(row.description_raw)

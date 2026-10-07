@@ -19,6 +19,7 @@ from docxology_tools.software_table import (  # noqa: E402
     iter_software_rows,
     paper_path,
     software_rows_to_dict,
+    zenodo_link_dois,
     zenodo_url,
 )
 
@@ -124,3 +125,12 @@ def test_doi_role_labels_require_explicit_citation_and_artifact_terms(tmp_path: 
         "example: canonical DOI link 10.5281/zenodo.100 must be labelled citation or canonical",
         "example: artifact DOI link 10.5281/zenodo.101 must be labelled artifact, version, or download",
     ]
+
+
+def test_zenodo_link_dois_reads_every_linked_zenodo_doi_in_order():
+    description = (
+        "Demo · [Zenodo artifact v1](https://doi.org/10.5281/zenodo.11) · "
+        "[Record](https://zenodo.org/records/12) · [Paper](https://doi.org/10.1000/xyz) · "
+        "inline 10.5281/zenodo.13 is not a link"
+    )
+    assert zenodo_link_dois(description) == ["10.5281/zenodo.11", "10.5281/zenodo.12"]

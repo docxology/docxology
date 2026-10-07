@@ -58,7 +58,8 @@ criteria, and dependencies. Re-review this file before each public release.
 
 - Priority: P1
 - Owner: RESEARCHER
-- Trigger: monthly, before a claim-sensitive release, or when the weekly `freshness.yml` run opens or comments on the "Public-source freshness drift detected" issue (the reviewed baseline `reports/public_source_snapshot_2026-10-06.json` resolved #12; a later drift opens a new issue, which is closed by hand once a reviewed refresh is the committed baseline)
+- Trigger: monthly, before a claim-sensitive release, or when the weekly `freshness.yml` run opens or comments on the "Public-source freshness drift detected" issue (the reviewed baseline `reports/public_source_snapshot_2026-10-07.json` resolved #44; a later drift opens a new issue, which is closed by hand once a reviewed refresh is the committed baseline)
+- Status (2026-10-07): the `fep_formal` v1.5.0 Zenodo software archive is linked from its catalog row by concept DOI. A same-day pairing dry run (releases since 2026-09-26, AII included) found 3 strong existing-work updates, including the `fep_formal` v1.5.0 and Ento-Linguistics v1.2.0 releases, and 25 needs-review pairs, most of them the `template` v3.8.0 release; they await a reviewed pairing pass (`sync_paired_publications.py`, then decisions in `data/paired-publication-decisions.json`).
 - Deliverable: refresh ORCID, Crossref, Zenodo, PubMed, Europe PMC, GitHub, Scholar, organizational, teaching, art, and software evidence; review `data/coverage-exceptions.json`
 - Acceptance: only verified metadata is applied, access dates and caveats remain visible, and current coverage is linked from agent and human discovery surfaces
 - Dependencies: public-source APIs, primary profile pages, coverage report

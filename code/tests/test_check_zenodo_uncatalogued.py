@@ -28,14 +28,19 @@ from check_zenodo_uncatalogued import (  # noqa: E402
 )
 
 
-def _record(record_id: str, concept_doi: str, title: str) -> ZenodoRecord:
+def _record(
+    record_id: str,
+    concept_doi: str,
+    title: str,
+    resource_type: dict[str, str] | None = None,
+) -> ZenodoRecord:
     return ZenodoRecord(
         record_id=record_id,
         doi=concept_doi,
         title=title,
         publication_date="2026-07-01",
         version="1.0.0",
-        resource_type={"type": "publication", "title": "Publication"},
+        resource_type=resource_type or {"type": "publication", "title": "Publication"},
         creators=[{"name": "Friedman, Daniel Ari", "orcid": "0000-0001-6232-9096"}],
         description="A test record.",
         keywords=[],
@@ -249,3 +254,71 @@ def test_build_report_uses_injected_records_without_network(tmp_path: Path, monk
     assert report["zenodo_records_fetched"] == 1
     assert report["warnings"] == []
     assert report["zenodo_records_source"] == {"mode": "cached", "source_report": None}
+
+
+_SOFTWARE = {"type": "software", "title": "Software"}
+
+
+def _software_repo(tmp_path: Path, description: str) -> Path:
+    """A minimal checkout whose software catalog has one row with ``description``."""
+    pages = tmp_path / "pages"
+    pages.mkdir()
+    (pages / "SOFTWARE.md").write_text(
+        "## 🧬 docxology\n\n"
+        "| Repository | Description | Language | Stars | Updated |\n"
+        "|---|---|---|---|---|\n"
+        f"| [demo](https://github.com/docxology/demo) | {description} | Python | 0 | 2026 |\n",
+        encoding="utf-8",
+    )
+    return tmp_path
+
+
+def _uncatalogued_problems(tmp_path: Path, report: dict) -> list[str]:
+    """``check_report``'s uncatalogued finding only; toy records also trip exception drift."""
+    path = tmp_path / "zenodo_uncatalogued_2026-10-07.json"
+    path.write_text(json.dumps(report), encoding="utf-8")
+    return [problem for problem in check_report(path) if "not in the bibliography" in problem]
+
+
+def test_software_archive_linked_by_concept_doi_is_software_catalogued(tmp_path: Path):
+    # A later release under the same concept (record 502) needs no new entry.
+    root = _software_repo(tmp_path, "Demo · [Zenodo software archive](https://doi.org/10.5281/zenodo.500)")
+    records = [
+        _record("501", "10.5281/zenodo.500", "demo v1", _SOFTWARE),
+        _record("502", "10.5281/zenodo.500", "demo v2", _SOFTWARE),
+    ]
+    report = build_report(root, records=records, records_source="cached")
+    assert report["uncatalogued_count"] == 0
+    assert report["software_catalogued_count"] == 2
+    assert {item["software_row"] for item in report["software_catalogued"]} == {"demo"}
+    assert _uncatalogued_problems(tmp_path, report) == []
+
+
+def test_record_url_link_counts_like_a_resolver_link(tmp_path: Path):
+    root = _software_repo(tmp_path, "Demo · [Zenodo](https://zenodo.org/records/500)")
+    record = _record("501", "10.5281/zenodo.500", "demo", {"id": "software"})
+    report = build_report(root, records=[record], records_source="cached")
+    assert report["uncatalogued_count"] == 0
+    assert report["software_catalogued_count"] == 1
+
+
+def test_publication_linked_only_from_the_software_table_stays_uncatalogued(tmp_path: Path):
+    # A paper needs a bibliography row; a software-catalog link cannot stand in for it.
+    root = _software_repo(tmp_path, "Demo · [Zenodo](https://doi.org/10.5281/zenodo.500)")
+    report = build_report(root, records=[_record("501", "10.5281/zenodo.500", "A Paper")], records_source="cached")
+    assert report["uncatalogued_count"] == 1
+    assert report["software_catalogued_count"] == 0
+    assert _uncatalogued_problems(tmp_path, report) == ["1 Zenodo record(s) not in the bibliography: A Paper"]
+
+
+def test_software_archive_of_an_unlinked_concept_stays_uncatalogued(tmp_path: Path):
+    # The concept DOI identifies the archive; a link to some other record does not.
+    root = _software_repo(tmp_path, "Demo · [Zenodo](https://doi.org/10.5281/zenodo.501)")
+    report = build_report(root, records=[_record("777", "10.5281/zenodo.776", "other", _SOFTWARE)], records_source="cached")
+    assert report["uncatalogued_count"] == 1
+    assert report["software_catalogued"] == []
+
+
+def test_uncatalogued_records_without_a_software_catalog_is_unchanged():
+    record = _record("501", "10.5281/zenodo.500", "demo", _SOFTWARE)
+    assert uncatalogued_records([record], set()) == [record]

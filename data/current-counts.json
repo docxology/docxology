@@ -61,11 +61,11 @@
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
       "GitHub user ActiveInferenceInstitute": 45,
-      "GitHub user docxology": 230,
+      "GitHub user docxology": 231,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
-      "Zenodo ORCID-linked records": 159,
-      "Zenodo exact-name creator records": 71
+      "Zenodo ORCID-linked records": 160,
+      "Zenodo exact-name creator records": 72
     },
     "software": {
       "active_inference_institute": 41,
@@ -82,14 +82,14 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-10-06T22:23:45+00:00",
+  "generated_at": "2026-10-07T16:41:23+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",
     "paired_publication_decisions": "data/paired-publication-decisions.json",
     "paired_publications": "reports/paired_publications_2026-09-24.json",
     "paper_folders": "papers/README.md",
-    "public_source_snapshot": "reports/public_source_snapshot_2026-10-06.json",
+    "public_source_snapshot": "reports/public_source_snapshot_2026-10-07.json",
     "software_catalog": "pages/SOFTWARE.md",
     "software_export": "data/software.json",
     "works_export": "data/works.json"

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T22:23:50Z",
+  "generated_at": "2026-10-07T16:41:31Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -47,13 +47,13 @@
     },
     "docxology_public_repositories_claim": {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 230 public repositories.",
+      "claim": "The docxology GitHub profile has 231 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-10-06.json"
+        "reports/public_source_snapshot_2026-10-07.json"
       ],
-      "checked_at": "2026-10-06T16:23:51.956845+00:00",
+      "checked_at": "2026-10-07T16:02:49.869449+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -65,9 +65,9 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-10-06.json"
+        "reports/public_source_snapshot_2026-10-07.json"
       ],
-      "checked_at": "2026-10-06T16:23:51.956845+00:00",
+      "checked_at": "2026-10-07T16:02:49.869449+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "b49df02fde441a42431d0e21a92dbd2c8c21ea3692fe80ab47b878666c7bfb23",
+      "sha256": "371ce7b0a1db230ec58aa99a1feec6e0e118ff8a0730cc2239dc34cc2146db02",
       "files": [
         {
           "path": "resume/source.json",
@@ -102,8 +102,8 @@
         },
         {
           "path": "data/software.json",
-          "bytes": 80388,
-          "sha256": "21e86bd385e0c68bcd3bba4dbfe53fefe196e200efb4bfbd9b46c5b8d528e503"
+          "bytes": 80415,
+          "sha256": "392998388041dca6f29b2c4028d8c986bbb128cc0aeb17c6a51d01160c6775da"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 13114,
-          "sha256": "41532e6fe9a78cc89ee9e8cc93e77a8527b5c9f86b689dbdbeeb594621d50ec2"
+          "sha256": "abb6a2aa9feb3805f1077eccab7197cf8c37ea0dc41e2040eca9c917aec51553"
         },
         {
           "path": "data/github-repositories.json",
@@ -9494,7 +9494,7 @@
       "url": "https://github.com/ActiveInferenceInstitute/fep_formal",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline · · Zenodo artifact v1.1.0 · Citation DOI",
+      "description": "Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline · · Zenodo artifact v1.1.0 · Citation DOI · Zenodo software archive",
       "language": "Python",
       "stars": 3,
       "updated_or_year": "2026",
@@ -9752,7 +9752,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-10-06T22:23:45+00:00",
+      "checked_at": "2026-10-07T16:41:23+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9767,7 +9767,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-10-06T22:23:45+00:00",
+      "checked_at": "2026-10-07T16:41:23+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -9775,13 +9775,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 230 public repositories.",
+      "claim": "The docxology GitHub profile has 231 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-10-06.json"
+        "reports/public_source_snapshot_2026-10-07.json"
       ],
-      "checked_at": "2026-10-06T16:23:51.956845+00:00",
+      "checked_at": "2026-10-07T16:02:49.869449+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -9793,9 +9793,9 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-10-06.json"
+        "reports/public_source_snapshot_2026-10-07.json"
       ],
-      "checked_at": "2026-10-06T16:23:51.956845+00:00",
+      "checked_at": "2026-10-07T16:02:49.869449+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",

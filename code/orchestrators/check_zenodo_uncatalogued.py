@@ -16,6 +16,11 @@ Two independent findings, not one:
   DOI (``10.5281/zenodo.<record_id>``) appears anywhere in the bibliography --
   a genuine gap. Belongs in the bibliography via
   ``add_zenodo_only.py <record_id>`` (see docs/operations/publication-sync.md).
+  A software-type record (a GitHub-release archive) whose concept DOI a
+  ``pages/SOFTWARE.md`` catalog row links is catalogued there instead, as the
+  software-only policy requires, and is listed under ``software_catalogued``;
+  later releases under the same concept need no new entry. A non-software
+  record linked only from the software table is still uncatalogued.
 - ``non_canonical_doi``: the record IS represented, but only under its
   version-specific DOI, not the documented canonical concept DOI
   ("Canonical DOI = Zenodo concept DOI", docs/operations/publication-sync.md).
@@ -44,6 +49,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 from docxology_tools.report_paths import dated_report_path, generated_timestamp, latest_report, report_date_string  # noqa: E402
 
 from docxology_tools.publication_pairing import ZenodoRecord  # noqa: E402
+from docxology_tools.software_table import iter_software_rows, zenodo_link_dois  # noqa: E402
 from sync_paired_publications import (  # noqa: E402
     fetch_zenodo_records,
     parse_bibliography_rows,
@@ -107,14 +113,60 @@ def bibliography_doi_set(repo_root: Path = REPO_ROOT) -> set[str]:
     return {row["doi"] for row in parse_bibliography_rows(repo_root) if row["doi"]}
 
 
-def uncatalogued_records(records: list[ZenodoRecord], catalogued_dois: set[str]) -> list[ZenodoRecord]:
-    """Records where neither the concept DOI nor the version DOI is cited anywhere."""
+def software_catalog_dois(repo_root: Path = REPO_ROOT) -> dict[str, str]:
+    """Map each Zenodo DOI linked from a ``pages/SOFTWARE.md`` row (casefolded) to that row's name."""
+    path = repo_root / "pages" / "SOFTWARE.md"
+    if not path.is_file():
+        return {}
+    linked: dict[str, str] = {}
+    for row in iter_software_rows(path):
+        for doi in zenodo_link_dois(row.description_raw):
+            linked.setdefault(doi.casefold(), row.name)
+    return linked
+
+
+def is_software_record(record: ZenodoRecord) -> bool:
+    """Whether Zenodo types the record as software (legacy ``type`` or RDM ``id``)."""
+    kind = record.resource_type.get("type") or record.resource_type.get("id") or ""
+    return str(kind).casefold() == "software"
+
+
+def _in_bibliography(record: ZenodoRecord, catalogued_dois: set[str]) -> bool:
+    return record.doi in catalogued_dois or version_doi(record) in catalogued_dois
+
+
+def software_catalogued_records(
+    records: list[ZenodoRecord],
+    catalogued_dois: set[str],
+    software_dois: dict[str, str],
+) -> list[ZenodoRecord]:
+    """Software records outside the bibliography whose concept DOI a software catalog row links."""
     return [
         record
         for record in records
         if record.record_id not in KNOWN_STALE_RECORD_IDS
-        and record.doi not in catalogued_dois
-        and version_doi(record) not in catalogued_dois
+        and not _in_bibliography(record, catalogued_dois)
+        and is_software_record(record)
+        and record.doi.casefold() in software_dois
+    ]
+
+
+def uncatalogued_records(
+    records: list[ZenodoRecord],
+    catalogued_dois: set[str],
+    software_dois: dict[str, str] | None = None,
+) -> list[ZenodoRecord]:
+    """Records cited nowhere: not in the bibliography and not a software-catalogued archive."""
+    software_ids = {
+        record.record_id
+        for record in software_catalogued_records(records, catalogued_dois, software_dois or {})
+    }
+    return [
+        record
+        for record in records
+        if record.record_id not in KNOWN_STALE_RECORD_IDS
+        and not _in_bibliography(record, catalogued_dois)
+        and record.record_id not in software_ids
     ]
 
 
@@ -218,7 +270,9 @@ def build_report(
     else:
         warnings = []
     catalogued = bibliography_doi_set(repo_root)
-    missing = uncatalogued_records(records, catalogued)
+    software_dois = software_catalog_dois(repo_root)
+    software_catalogued = software_catalogued_records(records, catalogued, software_dois)
+    missing = uncatalogued_records(records, catalogued, software_dois)
     version_only = non_canonical_doi_records(records, catalogued)
     approved_exceptions, exception_drift = approved_version_specific_doi_exceptions(
         records, catalogued
@@ -236,6 +290,7 @@ def build_report(
         },
         "bibliography_dois": len(catalogued),
         "uncatalogued_count": len(missing),
+        "software_catalogued_count": len(software_catalogued),
         "non_canonical_doi_count": len(non_canonical),
         "approved_version_specific_doi_exception_count": len(approved_exceptions),
         "version_specific_doi_exception_drift_count": len(exception_drift),
@@ -249,6 +304,15 @@ def build_report(
                 "html_url": record.html_url,
             }
             for record in missing
+        ],
+        "software_catalogued": [
+            {
+                "record_id": record.record_id,
+                "concept_doi": record.doi,
+                "title": record.title,
+                "software_row": software_dois[record.doi.casefold()],
+            }
+            for record in software_catalogued
         ],
         "non_canonical_doi": [
             {
@@ -408,6 +472,8 @@ def main() -> int:
         print("Add real publications with: uv run python3 code/orchestrators/add_zenodo_only.py <record_id>")
     else:
         print(f"wrote {out.relative_to(REPO_ROOT)}: 0 uncatalogued records (bibliography is caught up)")
+    for item in report["software_catalogued"]:
+        print(f"  software-catalogued: {item['record_id']}  {item['concept_doi']}  via the {item['software_row']} row  {item['title']}")
     if non_canonical_count:
         print(f"{non_canonical_count} record(s) cited only by version DOI, not the canonical concept DOI:")
         for item in report["non_canonical_doi"]:

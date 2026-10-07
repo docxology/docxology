@@ -9,6 +9,16 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   published content. Those files never reach the Pages site, so routine action
   updates validate and deploy without regenerating the release manifests. Any
   other file in the same commit still makes it a content commit.
+- **Reviewed public-source baseline:** a new dated snapshot and review cover
+  every observation since the 2026-10-06 baseline. The repository count (the
+  `cadence` fork) and Zenodo record totals are applied to the claims and
+  discovery pages; newer Ento-Linguistics and GNN versions and repository
+  activity are acknowledged. This resolves the drift reported in issue #44.
+- **Software archives on Zenodo:** the `fep_formal` v1.5.0 release archive is
+  linked from its software catalog row. The uncatalogued-records check now
+  treats a Zenodo software record as catalogued when its software row links
+  its concept DOI, so later releases of the same repository are not reported
+  again; papers still need a bibliography row.
 
 ## 2026-10-06
 

@@ -90,7 +90,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 - [ActiveInferAnts](https://github.com/docxology/ActiveInferAnts) — Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy
 - [Active_InferAnts](https://github.com/ActiveInferenceInstitute/Active_InferAnts) — Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
 - [Generalized_Notation_Notation](https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation) — GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software
-- [fep_formal](https://github.com/ActiveInferenceInstitute/fep_formal) — Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI
+- [fep_formal](https://github.com/ActiveInferenceInstitute/fep_formal) — Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI · Zenodo software archive
 
 ## 🛡️ [Cognitive Security](../domain-cognitive-security.html)
 
@@ -263,7 +263,7 @@ Active Inference Institute programs, infrastructure, textbook cohorts, and organ
 **Selected repositories**
 
 - [active_inference](https://github.com/docxology/active_inference) — Active Inference for, with, and by Generative AI — Python implementations of free-energy-minimizing agents integrated with modern AI tooling
-- [fep_formal](https://github.com/ActiveInferenceInstitute/fep_formal) — Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI
+- [fep_formal](https://github.com/ActiveInferenceInstitute/fep_formal) — Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI · Zenodo software archive
 - [cognitive](https://github.com/ActiveInferenceInstitute/cognitive) — Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization
 - [cognitive](https://github.com/docxology/cognitive) — Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization
 - [AgenticMesh](https://github.com/docxology/AgenticMesh) — Active Inference & Agentic Mesh — modular Python infrastructure for building agentic systems using free-energy-minimizing Active Inference principles
