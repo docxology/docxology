@@ -100,12 +100,17 @@ def is_payload_neutral_path(path: Path) -> bool:
     return path.parent == Path(".github/workflows") and _WORKFLOW_FILE_NAME.fullmatch(path.name) is not None
 
 
+def _carries_no_payload(paths: list[Path]) -> bool:
+    return all(is_control_path(path) or is_payload_neutral_path(path) for path in paths)
+
+
 def latest_payload_commit(
     head: str,
     parent_for: Callable[[str], str | None],
     changed_paths_for: Callable[[str], list[Path]],
     parents_for: Callable[[str], list[str]] | None = None,
     tree_for: Callable[[str], str | None] | None = None,
+    diff_paths_for: Callable[[str, str], list[Path]] | None = None,
 ) -> str:
     """Return the latest payload commit reachable for provenance binding.
 
@@ -119,32 +124,43 @@ def latest_payload_commit(
     tree is identical to one of its parents is stepped through to that parent:
     a synthetic PR merge ref's first parent is the base branch, so its
     first-parent diff is the entire branch and the commit-bound provenance
-    recorded on the branch tip could never resolve there. A merge whose tree
-    matches no parent is judged by its first-parent diff like any other
-    commit: a true content merge brings payload paths and stops the walk,
-    while merging a workflow-only branch onto an advanced base does not.
+    recorded on the branch tip could never resolve there. Otherwise a merge is
+    judged by its first-parent diff like any other commit. When that diff
+    carries payload and ``diff_paths_for(parent, commit)`` is supplied, a later
+    parent from which the merge differs only by control or payload-neutral
+    paths is stepped through instead: GitHub's "Update branch" merges the base
+    into a PR with the PR branch as first parent, so a workflow-only PR updated
+    that way differs from the base only by its workflow files. A true content
+    merge differs from every parent by payload and stops the walk.
     """
     candidate = head
     while True:
         parent = parent_for(candidate)
         if not parent:
             return candidate
-        if parents_for is not None and tree_for is not None:
-            parents = parents_for(candidate)
-            if len(parents) > 1:
-                candidate_tree = tree_for(candidate)
-                if candidate_tree:
-                    match = next(
-                        (p for p in parents if tree_for(p) == candidate_tree),
-                        None,
-                    )
-                    if match is not None:
-                        candidate = match
-                        continue
-        changed = changed_paths_for(candidate)
-        if not all(is_control_path(path) or is_payload_neutral_path(path) for path in changed):
-            return candidate
-        candidate = parent
+        parents = parents_for(candidate) if parents_for is not None else [parent]
+        if len(parents) > 1 and tree_for is not None:
+            candidate_tree = tree_for(candidate)
+            if candidate_tree:
+                match = next(
+                    (p for p in parents if tree_for(p) == candidate_tree),
+                    None,
+                )
+                if match is not None:
+                    candidate = match
+                    continue
+        if _carries_no_payload(changed_paths_for(candidate)):
+            candidate = parent
+            continue
+        if len(parents) > 1 and diff_paths_for is not None:
+            match = next(
+                (p for p in parents[1:] if _carries_no_payload(diff_paths_for(p, candidate))),
+                None,
+            )
+            if match is not None:
+                candidate = match
+                continue
+        return candidate
 
 
 def _first_parent(repo_root: Path, commit: str) -> str | None:
@@ -166,6 +182,11 @@ def _changed_paths(repo_root: Path, commit: str) -> list[Path]:
     parent = _first_parent(repo_root, commit)
     if not parent:
         return []
+    return _diff_paths(repo_root, parent, commit)
+
+
+def _diff_paths(repo_root: Path, parent: str, commit: str) -> list[Path]:
+    """Return the paths that differ between two commits, failing closed."""
     result = subprocess.run(
         ["git", "diff-tree", "--no-commit-id", "--name-only", "-r", "-z", parent, commit],
         cwd=repo_root,
@@ -226,6 +247,7 @@ def source_payload_commit(repo_root: Path) -> str:
         lambda commit: _changed_paths(repo_root, commit),
         parents_for=lambda commit: _parents(repo_root, commit),
         tree_for=lambda commit: _tree(repo_root, commit),
+        diff_paths_for=lambda parent, commit: _diff_paths(repo_root, parent, commit),
     )
 
 

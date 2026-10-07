@@ -24,7 +24,7 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-from docxology_tools import report_references  # noqa: E402
+from docxology_tools import release_controls, report_references  # noqa: E402
 from docxology_tools.generation_plan import LOCAL_GENERATION_STEPS, effective_step_inputs  # noqa: E402
 from docxology_tools.release_controls import (  # noqa: E402
     is_control_path,
@@ -181,6 +181,110 @@ def test_content_branch_merged_onto_an_advanced_base_is_payload(tmp_path: Path):
     _commit(tmp_path, {"pages/SOFTWARE.md": "later payload\n"}, "later payload")
     _git(tmp_path, "merge", "--no-ff", "-q", "-m", "merge feature", "feature")
     assert source_payload_commit(tmp_path) == _git(tmp_path, "rev-parse", "HEAD")
+
+
+def _workflow_pr_behind_an_advanced_main(repo: Path) -> str:
+    """A workflow-only PR cut before main gained a payload commit and its tail; returns that payload."""
+    _init(repo)
+    _commit(repo, {"pages/BIBLIOGRAPHY.md": "payload\n"}, "payload")
+    _commit(repo, {"data/pages-artifact-manifest.json": "{}\n"}, "payload (control tail)")
+    _git(repo, "checkout", "-qb", "dependabot/github_actions/bump")
+    _commit(repo, {".github/workflows/pages.yml": "uses: actions/upload-artifact@v7\n"}, "bump")
+    _git(repo, "checkout", "-q", "main")
+    advanced = _commit(repo, {"pages/SOFTWARE.md": "later payload\n"}, "later payload")
+    _commit(repo, {"data/pages-artifact-manifest.json": "{\"v\": 2}\n"}, "later payload (control tail)")
+    return advanced
+
+
+def test_update_branch_merge_on_a_workflow_pr_keeps_base_payload_anchor(tmp_path: Path):
+    """GitHub's "Update branch" merges main into the PR with the PR branch as first parent."""
+    advanced = _workflow_pr_behind_an_advanced_main(tmp_path)
+    _git(tmp_path, "checkout", "-q", "dependabot/github_actions/bump")
+    _git(tmp_path, "merge", "--no-ff", "-q", "-m", "Merge branch 'main' into bump", "main")
+    assert source_payload_commit(tmp_path) == advanced
+
+
+def test_merge_commit_landing_of_an_updated_workflow_pr_keeps_payload_anchor(tmp_path: Path):
+    advanced = _workflow_pr_behind_an_advanced_main(tmp_path)
+    _git(tmp_path, "checkout", "-q", "dependabot/github_actions/bump")
+    _git(tmp_path, "merge", "--no-ff", "-q", "-m", "Merge branch 'main' into bump", "main")
+    _git(tmp_path, "checkout", "-q", "main")
+    _git(tmp_path, "merge", "--no-ff", "-q", "-m", "Merge pull request", "dependabot/github_actions/bump")
+    assert source_payload_commit(tmp_path) == advanced
+
+
+def test_merge_ref_of_a_branch_with_payload_resolves_the_branch_payload(tmp_path: Path):
+    """The merge's first-parent diff carries the branch payload, so only merge awareness resolves it."""
+    _init(tmp_path)
+    _commit(tmp_path, {"pages/BIBLIOGRAPHY.md": "payload\n"}, "payload")
+    _commit(tmp_path, {"data/pages-artifact-manifest.json": "{}\n"}, "payload (control tail)")
+    _git(tmp_path, "checkout", "-qb", "feature")
+    branch_payload = _commit(tmp_path, {"pages/SOFTWARE.md": "branch payload\n"}, "branch payload")
+    _commit(tmp_path, {".github/workflows/pages.yml": "uses: actions/upload-artifact@v7\n"}, "bump")
+    _git(tmp_path, "checkout", "-q", "main")
+    _git(tmp_path, "merge", "--no-ff", "-q", "-m", "merge feature", "feature")
+    assert source_payload_commit(tmp_path) == branch_payload
+
+
+def test_content_pr_merged_onto_a_main_advanced_only_by_ci_resolves_the_pr_payload(tmp_path: Path):
+    """The merge differs from the PR tip only by main's workflow bump, so the PR's records still bind."""
+    _init(tmp_path)
+    _commit(tmp_path, {"pages/BIBLIOGRAPHY.md": "payload\n"}, "payload")
+    _commit(tmp_path, {"data/pages-artifact-manifest.json": "{}\n"}, "payload (control tail)")
+    _git(tmp_path, "checkout", "-qb", "feature")
+    feature = _commit(tmp_path, {"pages/SOFTWARE.md": "feature payload\n"}, "feature payload")
+    _commit(tmp_path, {"data/pages-artifact-manifest.json": "{\"f\": 1}\n"}, "feature payload (control tail)")
+    _git(tmp_path, "checkout", "-q", "main")
+    _commit(tmp_path, {".github/workflows/pages.yml": "uses: actions/upload-artifact@v7\n"}, "bump")
+    _git(tmp_path, "merge", "--no-ff", "-q", "-m", "merge feature", "feature")
+    assert source_payload_commit(tmp_path) == feature
+
+
+def test_merge_with_payload_on_both_sides_is_the_payload_commit(tmp_path: Path):
+    """A later parent's own last commit being a control tail is not enough to step to it.
+
+    The merge differs from each parent by the other side's payload, so it is the
+    anchor; judging the parent by its own changes would silently drop main's payload.
+    """
+    _init(tmp_path)
+    _commit(tmp_path, {"pages/BIBLIOGRAPHY.md": "payload\n"}, "payload")
+    _commit(tmp_path, {"data/pages-artifact-manifest.json": "{}\n"}, "payload (control tail)")
+    _git(tmp_path, "checkout", "-qb", "feature")
+    _commit(tmp_path, {"pages/SOFTWARE.md": "feature payload\n"}, "feature payload")
+    _commit(tmp_path, {"data/pages-artifact-manifest.json": "{\"f\": 1}\n"}, "feature payload (control tail)")
+    _git(tmp_path, "checkout", "-q", "main")
+    _commit(tmp_path, {"README.md": "main payload\n"}, "main payload")
+    _commit(tmp_path, {"data/pages-artifact-manifest.json": "{\"g\": 1}\n"}, "main payload (control tail)")
+    _git(tmp_path, "merge", "--no-ff", "-q", "-X", "ours", "-m", "merge feature", "feature")
+    assert source_payload_commit(tmp_path) == _git(tmp_path, "rev-parse", "HEAD")
+
+
+def test_octopus_merge_steps_to_any_later_payload_equal_parent(tmp_path: Path):
+    """Parents [workflow PR, workflow PR, main]: only the third parent matches the merge's payload."""
+    advanced = _workflow_pr_behind_an_advanced_main(tmp_path)
+    _git(tmp_path, "checkout", "-q", "-b", "other-bump", "main~2")
+    _commit(tmp_path, {".github/workflows/browser-qa.yml": "uses: actions/upload-artifact@v7\n"}, "other bump")
+    _git(tmp_path, "checkout", "-q", "dependabot/github_actions/bump")
+    _git(tmp_path, "merge", "--no-ff", "-q", "-m", "octopus", "other-bump", "main")
+    assert len(_git(tmp_path, "show", "-s", "--format=%P", "HEAD").split()) == 3
+    assert source_payload_commit(tmp_path) == advanced
+
+
+def test_an_unreadable_parent_diff_fails_closed(tmp_path: Path):
+    _init(tmp_path)
+    head = _commit(tmp_path, {"pages/BIBLIOGRAPHY.md": "payload\n"}, "payload")
+    paths = release_controls._diff_paths(tmp_path, "0" * 40, head)
+    assert paths and not release_controls._carries_no_payload(paths)
+    # A merge whose later parent cannot be diffed stays the anchor.
+    walked = latest_payload_commit(
+        "merge",
+        lambda c: {"merge": "base", "base": None}[c],
+        lambda c: [Path("pages/BIBLIOGRAPHY.md")],
+        parents_for=lambda c: {"merge": ["base", "branch"], "base": []}[c],
+        tree_for=lambda c: {"merge": "t-merge", "base": "t-base", "branch": "t-branch"}[c],
+        diff_paths_for=lambda parent, commit: paths,
+    )
+    assert walked == "merge"
 
 
 def test_ci_configuration_is_outside_the_pages_projection():

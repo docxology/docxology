@@ -97,3 +97,19 @@ def test_indexnow_submits_the_deployed_candidate_from_main():
     assert "ref: ${{ github.event.workflow_run.head_sha || github.sha }}" in workflow
     assert "github.event.workflow_run.head_branch == 'main'" in workflow
     assert "github.ref == 'refs/heads/main'" in workflow
+
+
+def test_pages_workflow_name_matches_every_follower_trigger():
+    """Live verification and IndexNow follow the Pages run by its display name.
+
+    A workflow-only commit needs no control tail, so nothing else would notice
+    a rename of ``pages.yml`` that silently stops both followers.
+    """
+    pages = (REPO_ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
+    name = re.search(r"^name:\s*(.+?)\s*$", pages, re.MULTILINE).group(1)
+    for follower in ("live-verify.yml", "indexnow-on-push.yml"):
+        text = (REPO_ROOT / ".github/workflows" / follower).read_text(encoding="utf-8")
+        triggers = re.search(r"^\s+workflows:\s*\[(.+)\]\s*$", text, re.MULTILINE).group(1)
+        assert [t.strip().strip("\"'") for t in triggers.split(",")] == [name], follower
+    verifier = (REPO_ROOT / "code/orchestrators/verify_live_site.py").read_text(encoding="utf-8")
+    assert verifier.count(f'"{name}"') == 2

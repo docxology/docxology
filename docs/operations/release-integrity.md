@@ -102,6 +102,12 @@ excludes `.github`, so no payload-anchored record names that commit. The
 deploy job's exact-`HEAD` acceptance (`verify_deployed_artifact.py
 --expected-commit`) and the post-deploy live verification are what cover it,
 and `code/tests/test_pages_workflow.py` pins the deploy steps it could change.
+Merges follow the same rule: a merge steps through to a parent whose tree it
+matches, or to a later parent from which it differs only by control or
+payload-neutral paths. A Dependabot PR brought up to date with GitHub's
+"Update branch" (which makes the PR branch the first parent) and its
+merge-commit landing therefore keep the anchor, while a merge that differs
+from every parent by payload remains the payload commit.
 
 The dated pre-deploy public-source review follows the same control-tail
 policy, with two explicit provenance modes: routine landings use the default

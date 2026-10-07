@@ -8,7 +8,9 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   CI workflow files or the Dependabot configuration no longer counts as new
   published content. Those files never reach the Pages site, so routine action
   updates validate and deploy without regenerating the release manifests. Any
-  other file in the same commit still makes it a content commit.
+  other file in the same commit still makes it a content commit. This holds
+  whether the update is rebased, squashed, merged, or first brought up to date
+  with GitHub's "Update branch".
 - **Reviewed public-source baseline:** a new dated snapshot and review cover
   every observation since the 2026-10-06 baseline. The repository count (the
   `cadence` fork) and Zenodo record totals are applied to the claims and
