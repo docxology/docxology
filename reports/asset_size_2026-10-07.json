@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T14:48:01Z",
+  "generated_at": "2026-10-07T16:47:44Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 112,
   "budget_exceptions": {
@@ -10,7 +10,7 @@
     }
   },
   "warnings": 0,
-  "total_bytes": 16847560,
+  "total_bytes": 16849391,
   "largest": [
     {
       "path": "data/videos.json",
@@ -69,7 +69,7 @@
     {
       "path": "resume/resume.pdf",
       "kind": "resume-export",
-      "bytes": 370959,
+      "bytes": 370954,
       "baseline_budget_bytes": 5000000,
       "budget_bytes": 5000000,
       "budget_exception": null,
@@ -91,7 +91,7 @@
     {
       "path": "data/resume.json",
       "kind": "json-data",
-      "bytes": 334990,
+      "bytes": 335017,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -136,7 +136,7 @@
     {
       "path": "software.html",
       "kind": "html",
-      "bytes": 224626,
+      "bytes": 224734,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,
@@ -145,7 +145,7 @@
     {
       "path": "updates.html",
       "kind": "html",
-      "bytes": 192652,
+      "bytes": 193563,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,
@@ -190,7 +190,7 @@
     {
       "path": "data/software-ld.json",
       "kind": "json-data",
-      "bytes": 142829,
+      "bytes": 142856,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
