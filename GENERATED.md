@@ -76,7 +76,7 @@ Scripts under `code/orchestrators/` that do not produce a matrix artifact row: r
 | `code/orchestrators/build_reconciliation_report.py` | audit | Builds the public-source reconciliation report from local indexes and the freshness snapshot |
 | `code/orchestrators/build_public_source_review.py` | review | Builds dated applied/deferred/rejected review evidence from refresh snapshots without changing curated claims, metrics, classifications, or bibliography data |
 | `code/orchestrators/audit_private_reconciliation.py` | audit | Classifies public-main versus private-only changes without merging history and records source ports, derived regeneration, and binary deferrals |
-| `code/orchestrators/check_zenodo_uncatalogued.py` | audit | Diffs live Zenodo records under the profile ORCID against the curated bibliography |
+| `code/orchestrators/check_zenodo_uncatalogued.py` | audit | Diffs live Zenodo records under the profile ORCID against the curated bibliography and catalogued software supplements |
 | `code/orchestrators/gsc_followup_preflight.py` | audit | Prints the pre-GSC-followup checklist (sitemap and robots checks, retired-sitemap probe, indexable priority URLs, exclusion-review steps); see docs/seo/gsc-followup.md |
 | `code/orchestrators/indexnow_urls.py` | seo | Emits the IndexNow URL list from the sitemap index-priority policy |
 | `code/orchestrators/submit_indexnow.py` | seo | Submits index-priority URLs to IndexNow endpoints (Bing, Yandex, Naver) |

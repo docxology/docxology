@@ -47,7 +47,7 @@
     "public_source_observation_decisions": {
       "generated_at": null,
       "path": "data/public-source-observation-decisions.json",
-      "sha256": "27eaae469fbb897e151ca9d69a274fefb1c6332cc48b50801725e05da4d1b559",
+      "sha256": "2290a7f851f0652b598792cfee8302a97d052ce9fec7dcb29c02045e30be5efd",
       "source_commit": null
     },
     "public_source_snapshot": {
@@ -1503,7 +1503,7 @@
         },
         "previous_sha256": "449e96147193fc0896a17bbebecef6be89bc31411141df5577d0d00a1b7e3432",
         "review_decision": "applied",
-        "review_rationale": "GitHub public_repos 230 -> 231: the new repository is the docxology/cadence fork (created 2026-10-06), already in the GitHub inventory under the standing fork policy (b083c697); counts, claim, and discovery rows regenerated from this snapshot. Reviewed for issue #44 against the last reviewed baseline (public_source_snapshot_2026-10-06); approved by the principal on 2026-10-07 (reviewed refresh to close #44)."
+        "review_rationale": "GitHub public_repos 230 -> 231: the new repository is the docxology/cadence fork (created 2026-10-06), already in the GitHub inventory under the standing fork policy (b6688d5a); counts, claim, and discovery rows regenerated from this snapshot. Reviewed for issue #44 against the last reviewed baseline (public_source_snapshot_2026-10-06); approved by the principal on 2026-10-07 (reviewed refresh to close #44)."
       },
       "category": "public_source_observation",
       "id": "public-source-observation:GitHub user docxology",
@@ -3817,8 +3817,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "5d85fcf059202c6a48911aed7e252ee94e37ca9a",
-  "source_tree_sha": "eb25a7201b155cf9917a451fa83bfa52f62eb222",
+  "source_commit": "7110a6b50867844dd483ae845e390d27e2155b17",
+  "source_tree_sha": "d4c676a95d4dbecb4d400b269063f41555f8b284",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
