@@ -103,7 +103,7 @@ jobs:
 
       - name: Retain deployment acceptance receipt
         if: always()
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: deployment-acceptance-${{ github.sha }}
           path: /tmp/deployment-acceptance.json
