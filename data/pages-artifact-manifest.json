@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-07T17:17:57Z",
-  "source_commit_at_generation": "a0afc3db8a403b235547bf210aebc46139acbde4",
+  "generated_at": "2026-10-07T17:35:41Z",
+  "source_commit_at_generation": "413ce3fc05b3a29785d10585417ab90ae744fd49",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 877716444,
+    "source_bytes": 877714412,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 5925,
-    "artifact_bytes": 878763207
+    "artifact_file_count": 5924,
+    "artifact_bytes": 878761004
   },
   "included_files": [
     {
@@ -11776,7 +11776,7 @@
     {
       "path": "discovery.html",
       "bytes": 33521,
-      "sha256": "fd433112114bc020a404422eac4ed63e413c8e3c8380e45f2ab466a8e5cb87d8"
+      "sha256": "23eb492ff0b632e0f0261d4916ab55da63542cae292e76989f45b8e9df4bc3cc"
     },
     {
       "path": "docs/AGENTS.md",
@@ -12316,7 +12316,7 @@
     {
       "path": "llms.txt",
       "bytes": 12092,
-      "sha256": "a209ff8bc2eedad3b902b8ca29c25499bb552851bf277e75ebb9d01e2bd295a5"
+      "sha256": "534d39e021da5d3d4552207b3579e42ad1a0581af69b13217f7446b6f4c5f724"
     },
     {
       "path": "manifest.json",
@@ -12471,7 +12471,7 @@
     {
       "path": "pages/DISCOVERY.md",
       "bytes": 15495,
-      "sha256": "81ecbefaa8ee296c8a3322f8f3d4e88140af5a9d4af63a3d0f6f6e461a0b1c84"
+      "sha256": "62ee16f3194fb5f7683ef13700747c3e894d58f630c94601acc4535bb2fac5e5"
     },
     {
       "path": "pages/DOMAINS.md",
@@ -22619,11 +22619,6 @@
       "sha256": "bd90349bb4ebde59bce601bc991e666c09f809a0d2394b5cf38d13167dc7cc67"
     },
     {
-      "path": "reports/reconciliation_2026-10-06.md",
-      "bytes": 2032,
-      "sha256": "6e7d051ee5c45b17ca9f794d3a30bab692aaab9f6fa68b9df29155ba2ba7047a"
-    },
-    {
       "path": "reports/reconciliation_2026-10-07.md",
       "bytes": 2032,
       "sha256": "6c4c009de4021732ceeb3a86daca707d6ec360e4cd02211b70b3eafa65cab94c"
@@ -22761,27 +22756,27 @@
     {
       "path": "search-index-bootstrap.json",
       "bytes": 13936,
-      "sha256": "43928f349cec2f95b9fe48953e944cf48188c46e15a95438ce31a95a1b16e1e3"
+      "sha256": "9d2cf1a8f1dd03823384d94a5a8c7fc5f172ca4a2d80fbf0282993095e3951d5"
     },
     {
       "path": "search-index-content-video.json",
       "bytes": 965916,
-      "sha256": "2795f631c0066ffc5cefe9888268404f64e48d17985a1d581714d50d814fa046"
+      "sha256": "eb7b5c78e9675ff9cda15e0823ec970ccc323ffae778caab15c44365a0f79848"
     },
     {
       "path": "search-index-content-work.json",
       "bytes": 830056,
-      "sha256": "b56777583cc25f76066c8503bb03facc1d1c488c15a244932f186f917dee7f77"
+      "sha256": "6cdbb9a30c7d7a848968c5f3838bb21acc224fdf62ac68138af3764981006d71"
     },
     {
       "path": "search-index-core.json",
       "bytes": 1785489,
-      "sha256": "5310f6c4184ce880aa452f55cad4173b58958099ef497b80b8aada5053b0ac8d"
+      "sha256": "fde0e97d9597452c393d31362784d12f941c4f1fbda68cf543684926a181dcdb"
     },
     {
       "path": "search-index.json",
       "bytes": 2926078,
-      "sha256": "abea827ca0fab2773317134196eefd63019516686a6362b0cb13097f00a95345"
+      "sha256": "84510ccccbc15ea16246b978e4b41f2f1d9516c1215c87d2828d34bb4cb6d89f"
     },
     {
       "path": "search.html",
@@ -22796,7 +22791,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 416236,
-      "sha256": "bc2dd943b659c438072e506a34cd69b7849768c3e1289583e1295c54cd335a8f"
+      "sha256": "807f4f828ac8b9f29ead358d1c7d30dc9a4a7d9f45d6f3a64c9da4759da1d47b"
     },
     {
       "path": "software.html",
@@ -29694,8 +29689,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 650,
-    "bytes": 139309421,
+    "count": 651,
+    "bytes": 139311453,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",
