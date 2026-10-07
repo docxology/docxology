@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-07T17:35:41Z",
-  "source_commit_at_generation": "413ce3fc05b3a29785d10585417ab90ae744fd49",
+  "generated_at": "2026-10-07T17:53:14Z",
+  "source_commit_at_generation": "5d85fcf059202c6a48911aed7e252ee94e37ca9a",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 877714412,
+    "source_bytes": 877723258,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 5924,
-    "artifact_bytes": 878761004
+    "artifact_bytes": 878769852
   },
   "included_files": [
     {
@@ -75,8 +75,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 127737,
-      "sha256": "7180a66ffaaed9c923bea2aeb053e93fea3fcacc20a5e098006f56d97a0366ab"
+      "bytes": 127860,
+      "sha256": "439ce0843cca3164e8c4cfed47b9fd0a7e4c1639d4d1ce537cbab163d1ad2fdf"
     },
     {
       "path": "CITATION.cff",
@@ -10715,8 +10715,8 @@
     },
     {
       "path": "code/src/release_controls.py",
-      "bytes": 9010,
-      "sha256": "43e82659248f526ccd8720430eb86a3bbce830ba7a783db9f5253934cf69b7db"
+      "bytes": 10036,
+      "sha256": "4defd7ac7bbd4bc12bbeea2a5b9b13e9bd349d9fd4419b98b81fd09f8021506d"
     },
     {
       "path": "code/src/release_evidence.py",
@@ -11160,8 +11160,8 @@
     },
     {
       "path": "code/tests/test_pages_workflow.py",
-      "bytes": 5512,
-      "sha256": "6809a434f3107e665a6f5296a07ad3329e204ec3d73b76762f78fc737515de89"
+      "bytes": 6445,
+      "sha256": "b3ca7bd3a27468909e22785cf64ef969b62bfa8e52cedc01430ba442396ba39b"
     },
     {
       "path": "code/tests/test_paper_artifacts.py",
@@ -11190,8 +11190,8 @@
     },
     {
       "path": "code/tests/test_payload_neutral_ci.py",
-      "bytes": 9846,
-      "sha256": "b21b1eaae163019fea2c0e5e16b8e50c8400635829a61ddb330453cad5062d02"
+      "bytes": 16053,
+      "sha256": "a81e43d1f0356b857822faf071d12d1d7bfadfe175f2409761cac3343decf56d"
     },
     {
       "path": "code/tests/test_pillar_and_domain_pages.py",
@@ -12015,8 +12015,8 @@
     },
     {
       "path": "docs/operations/release-integrity.md",
-      "bytes": 11534,
-      "sha256": "02ff7c9cac636e36f3aa9432fb4cd67760d52030f6a222a20764ffc520c9d3a5"
+      "bytes": 11955,
+      "sha256": "08b76aa8b0b6819476e48382d21d993d39c9bdfee41b42c57e3247b3f9eee2b9"
     },
     {
       "path": "docs/operations/report-retention.md",
@@ -22691,7 +22691,7 @@
     {
       "path": "reproducibility.html",
       "bytes": 17546,
-      "sha256": "884016d3bf6f4c841a45822463ef0deda578bb894083884e06bb3e0019734433"
+      "sha256": "a04477adf5711282d065621bf4d019eedfec0b4cae9511c198d6bc46b96c0697"
     },
     {
       "path": "research.html",
@@ -22815,8 +22815,8 @@
     },
     {
       "path": "updates.html",
-      "bytes": 193563,
-      "sha256": "f1753a3c562cd0f6a87e9d9c322b7d6f7add4b48c18d6e61380b5fbcca971af0"
+      "bytes": 193699,
+      "sha256": "d186cdab0b68c6c53459178f2f3830984f5cc6b09bfdcad3ebdf6f0588afb21f"
     },
     {
       "path": "uv.lock",
