@@ -96,7 +96,12 @@ payload/generator candidate, regenerate the control artifacts and commit that
 control-only tail. Its `source_commit_at_generation` remains the candidate
 payload SHA. The Pages check permits only that narrow tail and fails if any
 later commit changes published content while the manifest still names the old
-SHA.
+SHA. A commit that changes only CI configuration (`.github/workflows/*.yml`,
+`.github/dependabot.yml`) is payload-neutral and needs no tail: the projection
+excludes `.github`, so no payload-anchored record names that commit. The
+deploy job's exact-`HEAD` acceptance (`verify_deployed_artifact.py
+--expected-commit`) and the post-deploy live verification are what cover it,
+and `code/tests/test_pages_workflow.py` pins the deploy steps it could change.
 
 The dated pre-deploy public-source review follows the same control-tail
 policy, with two explicit provenance modes: routine landings use the default

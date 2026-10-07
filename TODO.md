@@ -222,9 +222,11 @@ criteria, and dependencies. Re-review this file before each public release.
   export is public-only, so the signed-in owner view, which also counts
   non-public photos, stays larger. *Solstice (Turning Point)* now belongs to
   the Lettering & Verse collection.
-- Review: the descriptions written for the Curio Card records are deliberately
-  generic and need DAF to confirm or enrich them before they are treated as
-  final artwork copy.
+- Curio copy (DAF decision, 2026-10-07): public information only. Non-public
+  Flickr photos stay out of scope, with no handle list and no authenticated
+  read. *26 Too* keeps its current text, because no public source ties it to
+  Card 26. The one remaining step is optional: DAF may paste a sourced
+  *CurioDAO* description on Flickr, followed by a re-sync.
 
 ## P2 — Operating model
 

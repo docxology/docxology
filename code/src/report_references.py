@@ -8,7 +8,9 @@ Citing sources are projected surfaces: ``pages/``, ``data/``, ``docs/``, root
 HTML/MD/JSON/txt, and ``papers/*/metadata.json``. Excluded sources mirror
 ``prune_old_reports``: ``reports/`` (a set's own manifest cites its own files),
 ``code/`` (generators carry stale fallback-default literals), ``_site/`` (a
-generated projection, not a consumer), and the inventory manifests
+generated projection, not a consumer), ``.github/`` (CI configuration outside
+the projection; ``release_controls.is_payload_neutral_path`` relies on it never
+deciding the published file set), and the inventory manifests
 (``data/pages-artifact-manifest.json``, ``data/generated-manifest.json``,
 ``data/report-retention.json``), which enumerate paths without serving them as
 live links.
@@ -26,13 +28,14 @@ _GIT_GREP_EXCLUDES = (
     ":(exclude)reports/*",
     ":(exclude)code/*",
     ":(exclude)_site/*",
+    ":(exclude).github/*",
     ":(exclude)data/pages-artifact-manifest.json",
     ":(exclude)data/generated-manifest.json",
     ":(exclude)data/report-retention.json",
 )
 
 _WORKING_TREE_SUFFIXES = {".html", ".json", ".md", ".xml"}
-_WORKING_TREE_SKIP_DIRS = {"reports", "code", ".git", "__pycache__", "_site"}
+_WORKING_TREE_SKIP_DIRS = {"reports", "code", ".git", ".github", "__pycache__", "_site"}
 _WORKING_TREE_SKIP_FILES = {
     "data/pages-artifact-manifest.json",
     "data/generated-manifest.json",

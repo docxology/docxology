@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 
@@ -34,6 +35,30 @@ def test_pages_deploy_waits_for_the_authoritative_validation_job():
     assert "ref: ${{ github.sha }}" in deploy_job
     assert "uv run python3 code/orchestrators/build_pages_artifact.py --output _site --check-size --check-manifest" in deploy_job
 
+
+
+def test_pages_deploy_projects_and_verifies_the_exact_candidate():
+    """Tripwire for the deploy steps that workflow-only commits can change.
+
+    Workflow files are payload-neutral (``release_controls.is_payload_neutral_path``),
+    so no payload-anchored record names a commit that edits them; the deployed
+    projection and its exact-HEAD acceptance must therefore stay pinned here.
+    Action versions are deliberately not pinned, so Dependabot bumps pass.
+    """
+    workflow = (REPO_ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
+    deploy_job = workflow.split("\n  deploy:\n", 1)[1]
+    upload = deploy_job.split("- name: Upload Pages artifact", 1)[1].split("- name:", 1)[0]
+    assert re.search(r"uses: actions/upload-pages-artifact@v\d+", upload)
+    assert "path: _site" in upload
+    assert "include-hidden-files: true" in upload
+    assert re.search(r"uses: actions/deploy-pages@v\d+", deploy_job)
+    verify = deploy_job.split("- name: Verify deployed artifact against candidate SHA", 1)[1].split("- name:", 1)[0]
+    assert "CANDIDATE_SHA: ${{ github.sha }}" in verify
+    assert 'verify_deployed_artifact.py --expected-commit "$CANDIDATE_SHA"' in verify
+    receipt = deploy_job.split("- name: Retain deployment acceptance receipt", 1)[1]
+    assert "if: always()" in receipt
+    assert "path: /tmp/deployment-acceptance.json" in receipt
+    assert "if-no-files-found: error" in receipt
 
 def test_publication_and_validation_share_required_browser_acceptance():
     reusable = (REPO_ROOT / ".github/workflows/browser-qa.yml").read_text(encoding="utf-8")

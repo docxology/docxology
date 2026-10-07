@@ -49,7 +49,13 @@ index, release-integrity envelope, generated manifest, dated public-source
 review, and growth receipt without making that SHA self-referential. The
 shared `code/src/release_controls.py` policy recognizes only exact, valid
 date-stamped control-report names at the top-level `reports/` directory; a
-nested or ad hoc report remains payload. After committing any payload change,
+nested or ad hoc report remains payload. A commit that changes only CI
+configuration (`.github/workflows/*.yml` or `.github/dependabot.yml`, both
+under the excluded `.github` root and read by no generator) is
+payload-neutral: the walk passes over it, so a Dependabot action bump needs no
+control tail and validates as-is. Any other path in the same commit, including
+the generated `.github/README.md`, keeps it a payload commit
+(`code/tests/test_payload_neutral_ci.py`). After committing any payload change,
 regenerate these control artifacts and commit them separately (ordering
 rules: [settle.md](settle.md) Notes, binder ordering);
 `--check-manifest` rejects a manifest that still names an older payload commit

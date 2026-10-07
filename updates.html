@@ -47,7 +47,7 @@
     "url": "https://danielarifriedman.com/updates.html",
     "name": "Updates — Daniel Ari Friedman",
     "description": "On-my-mind thinking updates and human-readable changelog for the docxology public research and software index.",
-    "dateModified": "2026-10-06",
+    "dateModified": "2026-10-07",
     "isPartOf": {
         "@id": "https://danielarifriedman.com/#website"
     },
@@ -60,318 +60,324 @@
             {
                 "@type": "ListItem",
                 "position": 1,
+                "name": "2026-10-07",
+                "description": "Workflow-only commits keep the release anchor: a commit that changes only CI workflow files or the Dependabot configuration no longer counts as new published content. Those files never reach the Pages site, so routine action updates validate and deploy without regenerating the release manifests. Any other file in the same commit still makes it a content commit."
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
                 "name": "2026-10-06",
                 "description": "Flickr artwork re-sync: the gallery export was refreshed from Flickr with the API key now held as a repository secret. Every public artwork carries tags and a description, the newly tagged records join tag-driven pages, and a test keeps the export complete. Request URLs in sync failure messages no longer include the API key. Lighthouse measured like production: the rendered-test and Lighthouse fixture serves text assets gzip-compressed, as GitHub Pages does, so the ratchet scores what visitors d"
             },
             {
                 "@type": "ListItem",
-                "position": 2,
+                "position": 3,
                 "name": "2026-10-05",
                 "description": "Regeneration reliability: the default writer and fingerprint cache use the same scoped repository root. Source changes during rendering invalidate the cache, failed forced writers retire prior entries, and malformed cache records trigger a cold rebuild. Atomic bookkeeping and a repository-scoped single-writer lock preserve the restart boundary across concurrent runs. Gallery and catalog resilience: invalid compact/detail records preserve native artwork links or expose an explicit retry. Viewer i"
             },
             {
                 "@type": "ListItem",
-                "position": 3,
+                "position": 4,
                 "name": "2026-10-02",
                 "description": "Progressive catalog startup: the search page browses a generated preview with complete type counts before loading the full core for queries or scoped browsing, then requests only the needed work/video text segments. Failed or malformed requests expose retries, and late responses preserve current controls. The artwork gallery filters the complete catalog but renders 48-item batches, preserves canonical page links and source images even for duplicate titles, and loads descriptions/details on deman"
             },
             {
                 "@type": "ListItem",
-                "position": 4,
+                "position": 5,
                 "name": "2026-10-01",
                 "description": "Paper access and complete summaries: work pages now offer direct PDF downloads and the archive's GitHub paper folder beside the title. Multiple PDFs retain their filenames and source-selection basis; companion files are distinguished from the primary document in structured data. Work pages and folder READMEs preserve complete curated abstracts, separate concepts from findings, link summary evidence, and omit synthetic keywords and unverified authorship. Associated software repositories remain se"
             },
             {
                 "@type": "ListItem",
-                "position": 5,
+                "position": 6,
                 "name": "2026-09-27",
                 "description": "SEO ergonomics wave (serp_title decoupling, breadcrumbs, works-index copy): root-level pillar pages now carry the full title in og:title, twitter:title, and JSON-LD headline while only <title> is SERP-clipped (render_pillar_head(serp_title=...)); 404 page gained BreadcrumbList JSON-LD; the works index leads with the longitudinal-record framing and a year-range hero; per-work pages dropped the duplicate Copy-BibTeX control and now render Findings/Methods cards without \"Not yet summarized.\" placeh"
             },
             {
                 "@type": "ListItem",
-                "position": 6,
+                "position": 7,
                 "name": "2026-09-25",
                 "description": "Projections page (the \"one surface, many projections\" thesis, on site): new hand-authored projections.html documents the site as a single corpus with many projections (works, videos, artworks, domains, feeds, agent index), with SoftwarePage/WebPage JSON-LD, #page nav anchor, breadcrumb, and its own data/agent-index.json route. Registered in the sitemap, llms.txt, the nav manifest (top-level \"Projections\" entry), start-here, discovery, 404, and the software/publications/video hub navs. Thinking l"
             },
             {
                 "@type": "ListItem",
-                "position": 7,
+                "position": 8,
                 "name": "2026-09-24",
                 "description": "Art collection discoverability (the Flickr → site loop closed): data/artworks.json refreshed live from Flickr via the new code/orchestrators/sync_flickr_artworks.py freshness step (flickr.people.getPublicPhotos + per-photo getSizes, key from the FLICKR_API_KEY env var/CI secret, deterministic upload-desc order, one-time HTML entity unescape of descriptions). Export now carries 943 artworks including the previously missing Solstice (Turning Point) (55349041831, 2026-06-21) plus additive license/l"
             },
             {
                 "@type": "ListItem",
-                "position": 8,
+                "position": 9,
                 "name": "2026-09-18",
                 "description": "Zenodo intake hygiene: the four software-only Zenodo deposits that kept re-flagging the uncatalogued check are now registered in KNOWN_STALE_RECORD_IDS with their curation dispositions — daf-jev release archive 22817425 (SOFTWARE.md row cites concept 10.5281/zenodo.22816187), EvoJump canonical curated deposit 22667290 per R80, EvoJump GitHub-Zenodo automated integration archive 22667291 per R81 (superseded; kept record 22667290), and the CCD software revision archive v2.6.0 22760881 (supplement "
             },
             {
                 "@type": "ListItem",
-                "position": 9,
+                "position": 10,
                 "name": "2026-09-17",
                 "description": "September 17 publication and repository intake: full pairing scan (464 pairs, 247 releases, 158 records, zero warnings) — 50 strong update_existing actions applied (DOI-already-represented metadata and software-link refreshes), two needs_review pairs dispositioned as version-history-only (R82 fep_lean v1.2.0, R83 GNN v3.4.0; both works already in the bibliography). docxology/daf-jev curated into pages/SOFTWARE.md Developer Tools (TypeSafe Jev client toolkit, Zenodo concept DOI 10.5281/zenodo.228"
             },
             {
                 "@type": "ListItem",
-                "position": 10,
+                "position": 11,
                 "name": "2026-09-15",
                 "description": "Full-backlog orchestration wave (DOC-002/003/005/006/007/008/009/011/012/013/015): external evidence refreshed end-to-end (21-check snapshot, 20-section inventory — the AII textbook-group source added to the surface list, Scholar sync, GitHub inventory, fresh full pairing scan: 462 pairs, 0 needs_review, all 43 coverage exceptions re-validated). Catalog: three principal curations promoted to SOFTWARE.md Developer Tools (dicklesworthstone_meta_operator, Skillarum, nockchain-migration) — 115 origi"
             },
             {
                 "@type": "ListItem",
-                "position": 11,
+                "position": 12,
                 "name": "2026-09-12",
                 "description": "Unified settle driver (code/orchestrators/settle.py) + change classifier (code/src/change_classifier.py): one command classifies dirty paths into surfaces (reports/site/code/tests/ci/docs/other) and runs a tiered gate battery — fast (sitemap --check, artifact budget, ruff), full (adds pytest + standard validate_repo.py, CI-equivalent per .github/workflows/validate.yml), release (adds validate_repo.py --release --strict-reports, binding the conventional reports/deployment-attestations/<HEAD>.json"
             },
             {
                 "@type": "ListItem",
-                "position": 12,
+                "position": 13,
                 "name": "2026-09-11",
                 "description": "Backlog batch — all five 2026-09-10 principal-review items resolved: EvoJump: R80 accepts the six release pairs under the canonical curated concept 10.5281/zenodo.22664675 as software-catalog and R81 supersedes the six auto-archive pairs under 10.5281/zenodo.22664645 (data/paired-publication-decisions.json, groups 79 → 81; the citable paper remains row #12, concept 10.5281/zenodo.17229924; no new bibliography row). CCD row #112 adopted the Zenodo v2.4.0 self-title \"Cognitive Diagrams: Reviewing "
             },
             {
                 "@type": "ListItem",
-                "position": 13,
+                "position": 14,
                 "name": "2026-09-10",
                 "description": "Publication intake — Skillarum #216 and 48 versioned updates (GitHub + Zenodo pairing): broad warning-free scan (reports/paired_publications_ 2026-09-10.json: 462 pairs; 239 releases; 155 Zenodo records) against the 2026-09-07 baseline. Applied the single strong create_new and 48 strong update_existing actions; works total 212 → 213. New work #216 Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation (concept DOI 10.5281/zenodo.22663906; v0.2.0, 2026-09-08) with a complete pap"
             },
             {
                 "@type": "ListItem",
-                "position": 14,
+                "position": 15,
                 "name": "2026-09-08",
                 "description": "Deploy-freshness alarm now passes — stamp comparison fixed to prefix semantics: the Verify live site workflow (added 2026-09-05) compared the live homepage's build stamp against main's HEAD truncated to 7 characters, but git's --short auto-lengthens on ambiguity and the deployed stamp is 8 (8ecdaa07) — 8ecdaa07 != 8ecdaa0 retried through the whole grace window and failed every run since the alarm shipped. Two corrections: the comparison is now prefix-based (run_freshness_check in code/src/deploy"
             },
             {
                 "@type": "ListItem",
-                "position": 15,
+                "position": 16,
                 "name": "2026-09-07",
                 "description": "Search index split surfaces no longer skew their timestamps: when a regeneration changed the rendered body, build_search_index.py wrote search-index.json and its three split companions (search-index-core.json, search-index-content-work.json, search-index-content-video.json) with different generated_at values — stable_generated_at returned None for changed bodies, and the fallback None made render() and render_split() call the clock independently. The committed tree then failed validate_repo.py -"
             },
             {
                 "@type": "ListItem",
-                "position": 16,
+                "position": 17,
                 "name": "2026-09-05",
                 "description": "Child processes inherit the running interpreter: every orchestrator that shelled out to another repository script spawned a bare python3 resolved through PATH, so running validate_repo.py with the project's own .venv/bin/python silently validated under a different Python — reproducibly failing with ModuleNotFoundError: No module named 'PIL' while Pillow was installed in the launching environment. All 30 call sites in validate_repo.py, regenerate_all.py, sync_paired_publications.py, add_zenodo_on"
             },
             {
                 "@type": "ListItem",
-                "position": 17,
+                "position": 18,
                 "name": "2026-09-02",
                 "description": "MillenniumAudit follow-through and counts refresh (daf-stack docxsite pass): Linked the standalone implementation repository docxology/millennium_audit from papers/2026_MillenniumAudit/ (README pointer and github_repo metadata field; AGENTS/SKILL/papers/paper_metadata.json regenerated). Mirrored the full README into .github/README.md for GitHub profile rendering and dropped the duplicated tagline from the root README. Refreshed reports/current_counts.md and data/current-counts.json via the docum"
             },
             {
                 "@type": "ListItem",
-                "position": 18,
+                "position": 19,
                 "name": "2026-09-01",
                 "description": "Publication Intake — MillenniumAudit (#215): Cataloged Zenodo record 22243473 (concept DOI 10.5281/zenodo.22243472, version DOI 10.5281/zenodo.22243473): Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global) — a statement-level audit that independently reproduces every kernel-hygiene claim of the AIX Global MillenniumLean package (clean build, zero sorry, zero project axioms) under the pinned toolchain, then audits what the theorem types actually say; verdict: none of the six Clay"
             },
             {
                 "@type": "ListItem",
-                "position": 19,
+                "position": 20,
                 "name": "2026-08-31",
                 "description": "Agent-navigation doc pass (see REVIEW_LOG_2026-08-31.md): pointed the AGENT_START.md external-link triage recipe at the GENERATED.md triage row and the two-command refresh instead of the stale hard-coded 2026-05-15 report; added llms.txt to the GENERATED.md Volatile-site-facts outputs row (it is rewritten by sync_site_facts.py); refreshed the TODO.md last-reviewed stamp and recorded the two minor doc findings as resolved."
             },
             {
                 "@type": "ListItem",
-                "position": 20,
+                "position": 21,
                 "name": "2026-08-26",
                 "description": "Release-blocking link repair: corrected the canonical Science DOI for Defining events: 2020 in hindsight, removed three verified-dead AII software aliases rather than inventing replacement ownership, and migrated moved AII governance/program links to their live canonical routes. Bounded link-gate coverage: external-link validation now scans every root-level public HTML route, while excluding only URLs used as CSP source expressions; real YouTube embed paths remain in scope. This exposed and corr"
             },
             {
                 "@type": "ListItem",
-                "position": 21,
+                "position": 22,
                 "name": "2026-08-25",
                 "description": "Public-main release-integrity controls: established a source-payload versus control-tail provenance model so deterministic manifests, artifact budgets, and review records can be checked without masking source drift. Publication, software, paper-document, pillar-page, redirect, and generation-plan checks now fail on stale source-rendered output. Release deployment gate: GitHub Pages now runs the repository validator, full test suite, and pinned W605 Ruff gate before it assembles or deploys the bo"
             },
             {
                 "@type": "ListItem",
-                "position": 22,
+                "position": 23,
                 "name": "2026-08-17",
                 "description": "Publication Intake — docxplus (#212): Cataloged new Zenodo publication record 21985580 (concept DOI 10.5281/zenodo.21983948, version DOI 10.5281/zenodo.21985580): docxplus — the Intelligent Document Container. Added paper documentation folder papers/2026_DocxplusIntelligentDocument/ with full metadata, skill, and extracted text representations. Updated active cataloged bibliography works count to 209 (212 work rows across 192 indexed paper folders). Regenerated all 40 local surfaces, search indi"
             },
             {
                 "@type": "ListItem",
-                "position": 23,
+                "position": 24,
                 "name": "2026-08-14",
                 "description": "SEO/GEO Optimization Pass & Technical Defects Resolved: Hreflang elimination: Removed non-self-referential alternate links pointing 1,563 pages at the homepage from () and . noindex + cross-canonical consolidation: Removed conflicting directives from paper pages and , keeping clean consolidation to landing pages. Video title disambiguation: Implemented series/lecture token preservation in , eliminating all 30 duplicate collision groups across 1,127 video pages. Work page title bounding: Bounded "
             },
             {
                 "@type": "ListItem",
-                "position": 24,
+                "position": 25,
                 "name": "2026-08-13",
                 "description": "DOC-005: promoted three paper-paired Active Inference Institute repositories into pages/SOFTWARE.md after they gained descriptions: Active_Fedference (paper 2026_RobustBeliefSharing), Active_Skillference (paper 2026_ActiveSkillference), and active_inference_power (paper 2026_ActiveInferencePower). AII catalogued 38→41; curated software total 143→146. Left as explicit deferrals (description-less or not auto-promoted): Active_Inference_Un0, docxology/GrowthModel, docxology/multi-time, and docxolog"
             },
             {
                 "@type": "ListItem",
-                "position": 25,
+                "position": 26,
                 "name": "2026-08-10",
                 "description": "Two new Zenodo software publications catalogued with full paper-folder documentation (README/AGENTS/SKILL/CITATION.cff/metadata.json + PDF) and regenerated bibliography, exports, work pages, domain pages, catalog, feed, sitemap, resume, accessibility, and Pages-manifest surfaces (works 206→208): #210 Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus (, concept DOI zenodo.21864003; source reposito"
             },
             {
                 "@type": "ListItem",
-                "position": 26,
+                "position": 27,
                 "name": "2026-08-07",
                 "description": "Two new Zenodo publications catalogued with paper-folder documentation and regenerated bibliography, exports, work pages, feeds, sitemap, resume, accessibility, and Pages-manifest surfaces: #208 PROJECT BOND — The Special-Agent Operations Compendium (, concept DOI zenodo.21843592; source repository docxology/bond). #209 DigiPPPiP: Digital Partner Pen Play in Parallel (, concept DOI zenodo.21815704; authors Siddhant Shrivastava, Evelyn C. Goh, Alexandra Mikhailova, and Daniel Ari Friedman). Repos"
             },
             {
                 "@type": "ListItem",
-                "position": 27,
+                "position": 28,
                 "name": "2026-08-02",
                 "description": "Seven new Zenodo publications catalogued via add_zenodo_only.py as the DAF \"line set\" research-practice instruments plus a software release, each with full paper-folder documentation (README/AGENTS/SKILL/CITATION.cff/metadata.json + PDF) and regenerated downstream surfaces: #200 The Witness Register: Co-Registration Without Aggregation (, zenodo.21754245) #201 The Line Set: Holding Instruments Apart (, zenodo.21754243) #202 White Line: A Typed Ledger for the Edge of the Claim (, zenodo.21754241)"
             },
             {
                 "@type": "ListItem",
-                "position": 28,
+                "position": 29,
                 "name": "2026-07-30",
                 "description": "One new Zenodo publication catalogued via add_zenodo_only.py: #199 Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings (, zenodo.21695160), with full paper folder documentation and regenerated downstream surfaces. Two existing works updated to newer Zenodo records (same work, re-deposited): #174 CogSecSkills (20804585 → 21513316, domain corrected to ) and #198 SynthOBS & FractiSynth (21418687 → 21418782). Duplicate rows #200–#201 retired. Comprehensiv"
             },
             {
                 "@type": "ListItem",
-                "position": 29,
+                "position": 30,
                 "name": "2026-07-24",
                 "description": "Repo-wide functional and signposting audit implemented: Pages growth reports are date-stable control metadata across UTC rollovers; release-integrity now records explicit deployment-pending reasons and supports a strict --require-deployed gate; accessibility commands use the supported --check flag; public-page SEO guidance distinguishes indexable pages from intentional paper/redirect exceptions; cache-buster documentation matches the generated layer; and the historical maintenance table moved ou"
             },
             {
                 "@type": "ListItem",
-                "position": 30,
+                "position": 31,
                 "name": "2026-07-17",
                 "description": "Compact video projection and repository triage added: the interactive timeline now loads generated data/videos-index.json (VideoIndex.v1, 1127 compact records) while the complete data/videos.json remains available for downloads and detail pages; the repository classification queue now preserves description, language, topics, privacy, update, and derived description-quality fields for all 292 uncatalogued repositories (45 missing, 43 short, 204 substantive descriptions) without auto-promotion. Op"
             },
             {
                 "@type": "ListItem",
-                "position": 31,
+                "position": 32,
                 "name": "2026-07-16",
                 "description": "Service worker v20 — content data is network-first: data/*.json and search-index.json were served cache-first, and each page fetches them at a stable ?v= query that does not change when the data does — so a returning visitor kept seeing the previous publication list (e.g. 193 works after #195 was added) until the SW version happened to bump. These content-data requests are now network-first (cache fallback for offline), matching navigations; static assets (JS/CSS/images/fonts) stay cache-first f"
             },
             {
                 "@type": "ListItem",
-                "position": 32,
+                "position": 33,
                 "name": "2026-07-12 (session 5)",
                 "description": "Non-render-blocking Google Fonts: All 17 HTML pages with Google Fonts links converted to media=\"print\" onload=\"this.media='all'\" pattern, eliminating render-blocking CSS on first paint. New code/orchestrators/optimize_font_loading.py orchestrator. Twitter Card tags on about.html: Added twitter:card, twitter:title, twitter:description, twitter:image meta tags for social sharing parity with OG tags. apple-touch-icon optimized: Reduced from 77KB to 39KB (48% reduction) via PNG quantization to 128 c"
             },
             {
                 "@type": "ListItem",
-                "position": 33,
+                "position": 34,
                 "name": "2026-07-12 (session 4)",
                 "description": "CITATION.cff generated for all 176 papers: New generate_citation_cff.py script creates CFF 1.2.0 files from metadata.json. 47 papers that were missing CITATION.cff now have it. Year extracted from folder names for older papers. Multi-line author format with ORCID for DAF. 2024_BioFirm PPTX extraction: Downloaded BIOFIBIOFIRM_v2.pptx from Zenodo, extracted 11 slides of text + 8 images using python-pptx. 173 of 176 papers now have full_text.md (98.3% coverage). Content-Security-Policy deployed: CS"
             },
             {
                 "@type": "ListItem",
-                "position": 34,
+                "position": 35,
                 "name": "2026-07-12 (session 3)",
                 "description": "Image thumbnail previews on paper landing pages: image_gallery_link() in build_paper_pages.py now shows up to 6 thumbnail previews of extracted figures with lazy loading and a \"+N more\" indicator. All 176 paper pages regenerated. CSS classes for thumbnails: .image-thumbs, .thumb-link, and .muted added to style.css, replacing inline styles for cleaner maintenance and consistent rendering. Search index image_count: build_search_index.py now includes image_count for works with extracted images (140"
             },
             {
                 "@type": "ListItem",
-                "position": 35,
+                "position": 36,
                 "name": "2026-07-12",
                 "description": "Added work #194 \"Prior Cognitive Art\" (zenodo.21316510, docxology/prior_cognitive_art v0.1.0) via the canonical sync_paired_publications.py --apply path. Paper folder, bibliography row, work page, domain page, search index, sitemap, and all generated surfaces updated. Enhanced full-text extraction pipeline: extract_paper_texts.py now embeds inline image references in full_text.md at the correct page positions, so readers and crawlers can discover extracted figures in context. 171 papers now have"
             },
             {
                 "@type": "ListItem",
-                "position": 36,
+                "position": 37,
                 "name": "2026-07-05",
                 "description": "Comprehensive interactive-layer buildout across all 23 indexable pages: Text-to-Speech (TTS): Web Speech API integration (js/tts-controls.js) — floating control panel, speed/voice selection, paragraph highlighting, keyboard shortcut T Interactive features (js/interactive.js): reading progress bar, scroll-to-top button, keyboard shortcuts overlay (?), section anchor copy-links, search autocomplete from search-index.json, image lazy loading, external link safety +515 lines CSS for all new componen"
             },
             {
                 "@type": "ListItem",
-                "position": 37,
+                "position": 38,
                 "name": "2026-07-01",
                 "description": "Massive metadata enrichment sweep: all 164 paper folders now have extended schema (domain, type, methods, key_findings, related_papers, checked_at) via batch_enrich_metadata.py. 44 previously-missing metadata.json files created, 119 existing ones extended with paper-specific content. Multi-agent triple audit completed: metadata completeness (164/164 pass), navigability (all SKILL.md cross-references valid, all bibliography rows linked), domain accuracy (0 discrepancies), HTML output quality (26 "
             },
             {
                 "@type": "ListItem",
-                "position": 38,
+                "position": 39,
                 "name": "2026-06-29",
                 "description": "Added work #179 \"Mapping William Blake's Works\" (zenodo.21047573, docxology/blake v0.1.0) via the canonical sync_paired_publications.py --apply path, plus benign checked_at metadata bumps on existing rows. Full local regenerate (works.json, exports, publications, work/domain/paper pages, resume, claims, catalog, search index, feed, sitemap, counts) and live-site snapshot refresh; validate_repo + pytest green. Also fixed 32 malformed bare-domain markdown links in reports/publishing_status_megaind"
             },
             {
                 "@type": "ListItem",
-                "position": 39,
+                "position": 40,
                 "name": "2026-06-27",
                 "description": "Added work #178 \"AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference\" (zenodo.20976824, docxology/alphacogant v1.0.1) with paper folder, PDF, and work page; updated \"A template/ approach to Reproducible Generative Research\" to Zenodo version v1.0.9. Regenerated the dependent layer and refreshed the live-site verification snapshot. build_work_pages.py now renders a Platform availability card on every canonical work page (Zenodo/GitHub/arXiv/OSF/HuggingFace/Software-Heritage/PyPI"
             },
             {
                 "@type": "ListItem",
-                "position": 40,
+                "position": 41,
                 "name": "2026-06-26",
                 "description": "Added works #176 \"A Living Meta-Analysis of the Modafinil Literature\" and #177 \"Refinement of Gold\" via the paired GitHub+Zenodo scan, with new paper folders (README/AGENTS/SKILL/CITATION.cff/metadata.json) and Zenodo PDFs; refreshed checked_at metadata on 27 existing paired works. Regenerated bibliography exports, publications/works/paper/domain pages, catalog, search index, feed, sitemap, resume, claims, evidence/reconciliation, and current counts; live-site snapshot refreshed."
             },
             {
                 "@type": "ListItem",
-                "position": 41,
+                "position": 42,
                 "name": "2026-06-24",
                 "description": "Added work #175 \"Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction\" (zenodo.20834846, docxology/realizing_emptiness v1.0.0) via sync_paired_publications.py --apply; refreshed checked_at metadata and software links for 25 existing works; fixed the pages/BIBLIOGRAPHY.md paper-folder prose count (156→157). Added code/orchestrators/regenerate_all.py: a single-command, dependency-ordered, local-only write-mode counterpart to validate_rep"
             },
             {
                 "@type": "ListItem",
-                "position": 42,
+                "position": 43,
                 "name": "2026-06-22",
                 "description": "Synced the CogSecSkills publication (zenodo.20804585, ) and hardened publication intake."
             },
             {
                 "@type": "ListItem",
-                "position": 43,
+                "position": 44,
                 "name": "2026-06-21",
                 "description": "Added two Zenodo publications: Template Madlib (zenodo.20786638, ) — docxology/template_madlib, deterministic token injection for conditional IMRAD manuscripts — as work 172, and California Public Records (zenodo.20789899, ) — a technical and legal reference for the post-AB 473 era — as work 173. Downloaded both PDFs, generated work/paper pages, and registered papers/README.md entries. Bibliography 170→172; paper folders 153→155. Also added the previously-missing COGANT-0.6.0.pdf and removed a d"
             },
             {
                 "@type": "ListItem",
-                "position": 44,
+                "position": 45,
                 "name": "2026-06-17",
                 "description": "Added AGEINT: Agentic Intelligence (zenodo.20732275, ) — docxology/AGEINT v0.1.0, a Synthetic Analytic Tradecraft curriculum-and-assurance atlas — as work 170 via the canonical sync_paired_publications.py apply path, scoped --since 2026-06-16 to isolate the single new release. Stripped the <p> HTML the Zenodo abstract carried into metadata.json/README.md; renumbered the papers/README.md index strictly 1..152 (closed the gap at 111 left by the CEREBRUM dedup, plus a duplicate 152). Regenerated al"
             },
             {
                 "@type": "ListItem",
-                "position": 45,
+                "position": 46,
                 "name": "2026-06-15",
                 "description": "Completed COGANT (zenodo.20705351, ) and coasys / COGANT software-catalog intake after commit b6fa1b4: added 2026_COGANT to papers/README.md (151 folders), paper_metadata.json, and the Computational domain blurb (27 works); regenerated publications, software, sitemap, resume, evidence, search, feed, domain, and count exports. Bibliography 167→168; software catalog 89→91 (58 owned + 33 AII); paper folders 150→151."
             },
             {
                 "@type": "ListItem",
-                "position": 46,
+                "position": 47,
                 "name": "2026-06-14",
                 "description": "Added two Zenodo-only publications via add_zenodo_only.py: DemoCreate (zenodo.20693217, ) and ENTO (zenodo.20647443, ); added the GeneralizedNotationNotation (GNN) software v2.0.0 (zenodo.20671741, ) as a distinct work from the 2023 GNN paper (different Zenodo concept). Bibliography 165→167. Completed the CEREBRUM dedup the 2026-06-10 pass flagged for the maintainer: removed the duplicate work …118 (papers/2025_CEREBRUM2, the v1.4 deposit zenodo.15231156) outright, keeping the primary …010 (pape"
             },
             {
                 "@type": "ListItem",
-                "position": 47,
+                "position": 48,
                 "name": "2026-06-10",
                 "description": "SEO/discoverability pass. Fixed work-page meta descriptions that were hard-cut mid-word: build_work_pages.py now clips on a word boundary with an ellipsis via new clip_description() in code/src/site_nav.py (145 of 165 work descriptions corrected; rendered length ≤160). Added Twitter Card (summary_large_image) and og:image:alt tags site-wide. Generators (build_work_pages, build_domain_pages, build_catalog, build_exports_page, build_evidence_page, build_updates_page, build_github_inventory) emit t"
             },
             {
                 "@type": "ListItem",
-                "position": 48,
+                "position": 49,
                 "name": "2026-06-04",
                 "description": "Applied four strong GitHub release + Zenodo publication pairs: 2026_DeterministicTestbedSelf, 2026_RecoveringLLMPersona, 2026_Triplicate, and 2026_TemplateTextbook; bibliography 150→154, paper folders 143→147. Refreshed represented GitHub/Zenodo publication pairs for existing works, including WhenDoBugs, MusicNeverStopped, BeeStack, BiologyTextbook, CrescentCity, and template-derived exemplars; left review-only pairings untouched. Added six owned repositories to the curated software catalog (tem"
             },
             {
                 "@type": "ListItem",
-                "position": 49,
+                "position": 50,
                 "name": "2026-05-26",
                 "description": "Thermo-nuclear documentation pass: aligned volatile counts (116 works / 109 paper folders) across llms.txt, release notes, and publications head meta; added count-consistency validation (code/src/count_consistency.py). Refactored publications.html to load catalog rows from data/works.json via js/publications.js; externalized CollectionPage JSON-LD to data/publications-ld.json (166-line shell). Added docs/SECURITY.md, docs/DESIGN_SYSTEM.md, reports/web_assessment_2026-05-26.md, shared nav (code/s"
             },
             {
                 "@type": "ListItem",
-                "position": 50,
+                "position": 51,
                 "name": "2026-05-19",
                 "description": "Added 2026_CrescentCity — Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast (DOI 10.5281/zenodo.20286171; repo docxology/crescent_city), filed under Cognitive Security. Created the per-paper documentation set: README.md, AGENTS.md, SKILL.md, CITATION.cff, and metadata.json. Registered the work in papers/paper_metadata.json, the papers/README.md index, and papers/AGENTS.md (counts + maintenance log + domain coverage). Added bibliography table row 116 in"
             },
             {
                 "@type": "ListItem",
-                "position": 51,
+                "position": 52,
                 "name": "2026-05-13",
                 "description": "Added machine-readable discovery artifacts: llms.txt, CITATION.cff, codemeta.json, bibliography exports, and structured data/*.json. Added domain landing pages, per-work landing pages, a generated search index, and an RSS feed. Added search.html, opensearch.xml, catalog.html, data/catalog.json, GENERATED.md, and data/generated-manifest.json for human search, browser discovery, dataset discovery, and generated-file rebuild provenance. Enriched generated work pages and the search index with abstra"
             },
             {
                 "@type": "ListItem",
-                "position": 52,
+                "position": 53,
                 "name": "2026-05-12",
                 "description": "Performed repo-wide README and AGENTS audit. Updated public GitHub repository count and domain figures from bibliography ground truth. Verified public-source discrepancies around Google Scholar cache, AII officers, board size, and Scientific Advisory Board context."
             },
             {
                 "@type": "ListItem",
-                "position": 53,
+                "position": 54,
                 "name": "2026-05-04",
                 "description": "Renamed paper folders from author-title form to YYYY_Topic. Added 2020_FacilitatorsCatechism. Added shared bibliography-table parser and publication HTML synchronization script."
             }
@@ -420,6 +426,10 @@
                 </article>
     </div></section>
     <section class="section"><div class="updates-list">
+            <article class="update-card">
+                <h2>2026-10-07</h2>
+                <ul><li><strong>Workflow-only commits keep the release anchor:</strong> a commit that changes only CI workflow files or the Dependabot configuration no longer counts as new published content. Those files never reach the Pages site, so routine action updates validate and deploy without regenerating the release manifests. Any other file in the same commit still makes it a content commit.</li></ul>
+            </article>
             <article class="update-card">
                 <h2>2026-10-06</h2>
                 <ul><li><strong>Flickr artwork re-sync:</strong> the gallery export was refreshed from Flickr with the API key now held as a repository secret. Every public artwork carries tags and a description, the newly tagged records join tag-driven pages, and a test keeps the export complete. Request URLs in sync failure messages no longer include the API key.</li><li><strong>Lighthouse measured like production:</strong> the rendered-test and Lighthouse fixture serves text assets gzip-compressed, as GitHub Pages does, so the ratchet scores what visitors download; thresholds are unchanged. The gallery validates its index in yielded chunks and the publications table initialises across short tasks, removing the long startup tasks on slow processors.</li><li><strong>ActiveInferenceInstitute is a GitHub Organization:</strong> GitHub now reports the account as an Organization. Identity notes and catalog text say so, and the public-source snapshot records each account&#x27;s type, so the claim wording follows the recorded type instead of a fixed assumption.</li><li><strong>Steadier freshness detection:</strong> the weekly public-source refresh runs authenticated, retries transient network and server errors, lists Zenodo results newest-first, and compares snapshots without star counts and update timestamps, so drift reports name changes that matter to curated claims.</li><li><strong>Two Active Inference Institute repositories catalogued:</strong> <code>Working_Groups</code>, which supplements work #224 (release v1.0.0), and <code>active_inference_language_model</code>, empty at review, join the software catalog. Work #224 now links its source repository. Six new docxology forks are recorded under the standing fork policy.</li><li><strong>Reviewed public-source baseline:</strong> a new dated snapshot and review cover every observation since the last reviewed baseline (2026-08-26). Repository counts, the Organization account type, and Zenodo record totals are applied to the claims and discovery pages; star counts, update times, renames, and an upstream creator-list change are acknowledged. This resolves the drift reported in issue #12.</li><li><strong>Deterministic Pages manifest:</strong> the scan that keeps cited reports published now ignores git-ignored local files, so a manifest built on a working machine matches a clean checkout and the deploy check accepts it.</li><li><strong>Catalog follows GitHub renames:</strong> four Active Inference Institute rows now use their current repository names (<code>Active_InferAnts</code>, <code>GEO_INFER</code>, <code>Generalized_Notation_Notation</code>, <code>Journal_Utilities</code>), so the repository review queue is empty. Domain pages keep both ant repositories and list <code>fep_formal</code> under its current name.</li><li><strong>AII claims re-checked:</strong> the Scientific Advisory Board count and Textbook Group cohort claims were re-read against the institute&#x27;s pages, found unchanged, and re-dated.</li><li><strong>Lettering &amp; Verse collection:</strong> a sixth art collection gathers the handwritten verse, lettering, and calligraphy drawings, including <em>Solstice (Turning Point)</em>.</li><li><strong>Coordinating the Field filed under the AII Ecosystem:</strong> work #224 moves to the AII Ecosystem domain beside the Institute&#x27;s other organisational work; its URL is unchanged.</li></ul>
@@ -633,7 +643,7 @@
                 <ul><li>Renamed paper folders from author-title form to <code>YYYY_Topic</code>.</li><li>Added <code>2020_FacilitatorsCatechism</code>.</li><li>Added shared bibliography-table parser and publication HTML synchronization script.</li></ul>
             </article>
     </div></section></main>
-    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="CHANGELOG.md">CHANGELOG.md</a> · <a href="feed.xml">RSS feed</a></p><p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/b6688d5a">build b6688d5a 2026-10-06</a></p></footer>
+    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="CHANGELOG.md">CHANGELOG.md</a> · <a href="feed.xml">RSS feed</a></p><p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/18a442d6">build 18a442d6 2026-10-06</a></p></footer>
 <script src="/js/search-utils.js?v=site-20261002b"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
 <script src="/js/interactive.js?v=site-20261002b" defer></script>

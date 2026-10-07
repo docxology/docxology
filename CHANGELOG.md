@@ -2,6 +2,14 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-10-07
+
+- **Workflow-only commits keep the release anchor:** a commit that changes only
+  CI workflow files or the Dependabot configuration no longer counts as new
+  published content. Those files never reach the Pages site, so routine action
+  updates validate and deploy without regenerating the release manifests. Any
+  other file in the same commit still makes it a content commit.
+
 ## 2026-10-06
 
 - **Flickr artwork re-sync:** the gallery export was refreshed from Flickr with

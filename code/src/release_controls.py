@@ -77,6 +77,29 @@ def is_control_path(path: Path) -> bool:
     return path.parent == Path("reports") and _is_control_report_name(path.name)
 
 
+# CI configuration that can never reach a release payload: ``.github`` is an
+# excluded root of the Pages projection (``build_pages_artifact.EXCLUDED_ROOTS``)
+# and no generator reads these files.  A commit that changes only them (the
+# routine Dependabot action bump) therefore leaves the payload anchor where it
+# was instead of staling every committed control record.  This is not a control
+# path: settle still commits these files as payload, and ``.github/README.md``
+# (a generated output) and the ``.github`` docs stay ordinary payload.
+_PAYLOAD_NEUTRAL_FILES = frozenset({Path(".github/dependabot.yml")})
+_WORKFLOW_FILE_NAME = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*\.ya?ml$")
+
+
+def is_payload_neutral_path(path: Path) -> bool:
+    """Return whether a path is CI configuration outside every release payload.
+
+    Only exact top-level ``.github/workflows/*.yml`` files and
+    ``.github/dependabot.yml`` qualify; nested or look-alike paths remain
+    payload, mirroring the exact-parent rule of ``is_control_path``.
+    """
+    if path in _PAYLOAD_NEUTRAL_FILES:
+        return True
+    return path.parent == Path(".github/workflows") and _WORKFLOW_FILE_NAME.fullmatch(path.name) is not None
+
+
 def latest_payload_commit(
     head: str,
     parent_for: Callable[[str], str | None],
@@ -84,8 +107,11 @@ def latest_payload_commit(
     parents_for: Callable[[str], list[str]] | None = None,
     tree_for: Callable[[str], str | None] | None = None,
 ) -> str:
-    """Return the latest non-control commit reachable for provenance binding.
+    """Return the latest payload commit reachable for provenance binding.
 
+    A commit is skipped when every path it changes is control metadata
+    (``is_control_path``) or payload-neutral CI configuration
+    (``is_payload_neutral_path``); any other path makes it the payload commit.
     Explicit collaborators keep the decision testable with a small local
     fixture rather than coupling it to the caller's checkout.
 
@@ -93,8 +119,10 @@ def latest_payload_commit(
     tree is identical to one of its parents is stepped through to that parent:
     a synthetic PR merge ref's first parent is the base branch, so its
     first-parent diff is the entire branch and the commit-bound provenance
-    recorded on the branch tip could never resolve there. A true content merge
-    (tree matching no parent) stops the walk conservatively.
+    recorded on the branch tip could never resolve there. A merge whose tree
+    matches no parent is judged by its first-parent diff like any other
+    commit: a true content merge brings payload paths and stops the walk,
+    while merging a workflow-only branch onto an advanced base does not.
     """
     candidate = head
     while True:
@@ -110,12 +138,11 @@ def latest_payload_commit(
                         (p for p in parents if tree_for(p) == candidate_tree),
                         None,
                     )
-                    if match is None:
-                        return candidate
-                    candidate = match
-                    continue
+                    if match is not None:
+                        candidate = match
+                        continue
         changed = changed_paths_for(candidate)
-        if not all(is_control_path(path) for path in changed):
+        if not all(is_control_path(path) or is_payload_neutral_path(path) for path in changed):
             return candidate
         candidate = parent
 
