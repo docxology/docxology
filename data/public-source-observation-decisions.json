@@ -119,7 +119,7 @@
       "decision": "applied",
       "decided_by": "user",
       "decided_at": "2026-10-07T16:29:46Z",
-      "rationale": "GitHub public_repos 230 -> 231: the new repository is the docxology/cadence fork (created 2026-10-06), already in the GitHub inventory under the standing fork policy (b083c697); counts, claim, and discovery rows regenerated from this snapshot. Reviewed for issue #44 against the last reviewed baseline (public_source_snapshot_2026-10-06); approved by the principal on 2026-10-07 (reviewed refresh to close #44).",
+      "rationale": "GitHub public_repos 230 -> 231: the new repository is the docxology/cadence fork (created 2026-10-06), already in the GitHub inventory under the standing fork policy (b6688d5a); counts, claim, and discovery rows regenerated from this snapshot. Reviewed for issue #44 against the last reviewed baseline (public_source_snapshot_2026-10-06); approved by the principal on 2026-10-07 (reviewed refresh to close #44).",
       "curated_targets": [
         "data/current-counts.json",
         "reports/current_counts.md",

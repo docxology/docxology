@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T16:37:37Z",
+  "generated_at": "2026-10-07T17:57:04Z",
   "zenodo_records_fetched": 163,
   "zenodo_records_source": {
     "mode": "live",
@@ -18,7 +18,8 @@
       "record_id": "23196892",
       "concept_doi": "10.5281/zenodo.23196891",
       "title": "fep_formal: Towards Lean 4 Formalization of the Free Energy Principle",
-      "software_row": "fep_formal"
+      "software_row": "fep_formal",
+      "paper_folder": "2026_FEPLean"
     }
   ],
   "non_canonical_doi": [],

@@ -661,7 +661,7 @@ UTILITIES = [
     ("build_reconciliation_report.py", "Builds the public-source reconciliation report from local indexes and the freshness snapshot", "audit"),
     ("build_public_source_review.py", "Builds dated applied/deferred/rejected review evidence from refresh snapshots without changing curated claims, metrics, classifications, or bibliography data", "review"),
     ("audit_private_reconciliation.py", "Classifies public-main versus private-only changes without merging history and records source ports, derived regeneration, and binary deferrals", "audit"),
-    ("check_zenodo_uncatalogued.py", "Diffs live Zenodo records under the profile ORCID against the curated bibliography", "audit"),
+    ("check_zenodo_uncatalogued.py", "Diffs live Zenodo records under the profile ORCID against the curated bibliography and catalogued software supplements", "audit"),
     ("gsc_followup_preflight.py", "Prints the pre-GSC-followup checklist (sitemap and robots checks, retired-sitemap probe, indexable priority URLs, exclusion-review steps); see docs/seo/gsc-followup.md", "audit"),
     ("indexnow_urls.py", "Emits the IndexNow URL list from the sitemap index-priority policy", "seo"),
     ("submit_indexnow.py", "Submits index-priority URLs to IndexNow endpoints (Bing, Yandex, Naver)", "seo"),

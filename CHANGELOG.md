@@ -18,9 +18,11 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   activity are acknowledged. This resolves the drift reported in issue #44.
 - **Software archives on Zenodo:** the `fep_formal` v1.5.0 release archive is
   linked from its software catalog row. The uncatalogued-records check now
-  treats a Zenodo software record as catalogued when its software row links
-  its concept DOI, so later releases of the same repository are not reported
-  again; papers still need a bibliography row.
+  treats a Zenodo software record as catalogued when it supplements an already
+  catalogued work, that is, when the work's software row links its concept
+  DOI, so later releases of the same repository are not reported again. Any
+  other record, including a paper Zenodo files as software, still needs a
+  bibliography row.
 
 ## 2026-10-06
 

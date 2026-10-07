@@ -259,15 +259,27 @@ def test_build_report_uses_injected_records_without_network(tmp_path: Path, monk
 _SOFTWARE = {"type": "software", "title": "Software"}
 
 
-def _software_repo(tmp_path: Path, description: str) -> Path:
-    """A minimal checkout whose software catalog has one row with ``description``."""
+def _software_repo(tmp_path: Path, description: str, *, paper_catalogued: bool = True) -> Path:
+    """A minimal checkout: one software row linking paper folder 2026_Demo plus ``description``.
+
+    With ``paper_catalogued`` the bibliography cites that folder, so the row
+    belongs to an already catalogued work.
+    """
     pages = tmp_path / "pages"
     pages.mkdir()
     (pages / "SOFTWARE.md").write_text(
         "## 🧬 docxology\n\n"
         "| Repository | Description | Language | Stars | Updated |\n"
         "|---|---|---|---|---|\n"
-        f"| [demo](https://github.com/docxology/demo) | {description} | Python | 0 | 2026 |\n",
+        f"| [demo](https://github.com/docxology/demo) | Demo · [📄](../papers/2026_Demo/) · {description} | Python | 0 | 2026 |\n",
+        encoding="utf-8",
+    )
+    folder = "2026_Demo" if paper_catalogued else "2026_Other"
+    (pages / "BIBLIOGRAPHY.md").write_text(
+        "| # | Year | D | Type | Title | Venue | Link | Docs | Authors |\n"
+        "|---|---|---|---|---|---|---|---|---|\n"
+        "| 1 | 2026 | 🧠 | Paper | Demo paper | *Zenodo* | [10.5281/zenodo.900](https://doi.org/10.5281/zenodo.900)"
+        f" | [📁](../papers/{folder}/) | Friedman, Daniel Ari |\n",
         encoding="utf-8",
     )
     return tmp_path
@@ -290,7 +302,7 @@ def test_software_archive_linked_by_concept_doi_is_software_catalogued(tmp_path:
     report = build_report(root, records=records, records_source="cached")
     assert report["uncatalogued_count"] == 0
     assert report["software_catalogued_count"] == 2
-    assert {item["software_row"] for item in report["software_catalogued"]} == {"demo"}
+    assert {(item["software_row"], item["paper_folder"]) for item in report["software_catalogued"]} == {("demo", "2026_Demo")}
     assert _uncatalogued_problems(tmp_path, report) == []
 
 
@@ -317,6 +329,26 @@ def test_software_archive_of_an_unlinked_concept_stays_uncatalogued(tmp_path: Pa
     report = build_report(root, records=[_record("777", "10.5281/zenodo.776", "other", _SOFTWARE)], records_source="cached")
     assert report["uncatalogued_count"] == 1
     assert report["software_catalogued"] == []
+
+
+def test_software_typed_archive_of_an_uncatalogued_paper_stays_uncatalogued(tmp_path: Path):
+    # Zenodo types many paper repositories' release archives as software; a
+    # software link must not hide one whose paper the bibliography lacks.
+    root = _software_repo(tmp_path, "[Zenodo](https://doi.org/10.5281/zenodo.500)", paper_catalogued=False)
+    report = build_report(root, records=[_record("501", "10.5281/zenodo.500", "A New Paper", _SOFTWARE)], records_source="cached")
+    assert report["uncatalogued_count"] == 1
+    assert report["software_catalogued"] == []
+
+
+def test_software_row_without_a_paper_folder_does_not_catalogue_archives(tmp_path: Path):
+    root = _software_repo(tmp_path, "unused")
+    (root / "pages" / "SOFTWARE.md").write_text(
+        "## 🧬 docxology\n\n| Repository | Description | Language | Stars | Updated |\n|---|---|---|---|---|\n"
+        "| [tool](https://github.com/docxology/tool) | Tool · [Zenodo](https://doi.org/10.5281/zenodo.500) | Python | 0 | 2026 |\n",
+        encoding="utf-8",
+    )
+    report = build_report(root, records=[_record("501", "10.5281/zenodo.500", "tool", _SOFTWARE)], records_source="cached")
+    assert report["uncatalogued_count"] == 1
 
 
 def test_uncatalogued_records_without_a_software_catalog_is_unchanged():
