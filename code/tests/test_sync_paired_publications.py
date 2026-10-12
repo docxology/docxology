@@ -982,3 +982,29 @@ def test_software_methods_pdf_without_catalogued_supplement_stays_new(tmp_path: 
     software.write_text(software.read_text().replace("Reproducible computational research project", description))
     assert pair.record.files[0]["key"].endswith(".pdf")
     assert build_sync_actions([pair], repo_root=tmp_path)[0].action_type == "create_new"
+
+
+def test_observation_refresh_retains_exact_apply_receipt_without_new_approval(tmp_path, monkeypatch):
+    import sync_paired_publications as sync
+
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    apply_publication_pair(pair, repo_root=tmp_path, download_files=False)
+    action = build_sync_actions([pair], repo_root=tmp_path)[0]
+    applied = apply_publication_pair(pair, repo_root=tmp_path, download_files=False, folder=action.folder)
+    attested = attest_applied_publication(applied, action, repo_root=tmp_path)
+    report = tmp_path / 'reports/paired_publications_2026-10-12.json'
+    kwargs = dict(owners=['docxology'], releases=[pair.release], records=[pair.record],
+                  pairs=[pair], actions=[action], warnings=[])
+    monkeypatch.setattr(sync, 'generated_timestamp', lambda: '2026-10-12T10:00:00Z')
+    write_report(report, **kwargs, applied=[attested])
+    old = json.loads(report.read_text())['applied']
+    monkeypatch.setattr(sync, 'generated_timestamp', lambda: '2026-10-12T11:00:00Z')
+    write_report(report, **kwargs)
+    refreshed = json.loads(report.read_text())
+    assert refreshed['generated_at'] == '2026-10-12T11:00:00Z'
+    assert refreshed['applied'] == old  # Original hashes, approval, and apply time survive.
+    check_report(repo_root=tmp_path)
+    kwargs['actions'] = []
+    write_report(report, **kwargs)
+    assert json.loads(report.read_text())['applied'] == []  # No receipt transferred to another action.

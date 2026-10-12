@@ -45,6 +45,7 @@ from docxology_tools.site_nav import (  # noqa: E402
 from docxology_tools.report_paths import generated_timestamp  # noqa: E402
 from docxology_tools.abstract_text import abstract_display_text  # noqa: E402
 from docxology_tools.paper_artifacts import PaperResources, source_file, source_paths  # noqa: E402
+from docxology_tools.citation_metadata import journal_fields, publication_date  # noqa: E402
 
 
 def h(value: object) -> str:
@@ -666,7 +667,7 @@ def json_ld(work: dict) -> str:
         "@id": f"https://danielarifriedman.com/works/{work['citation_key']}.html#work",
         "name": work["title"],
         "headline": work["title"],
-        "datePublished": str(work["year"]),
+        "datePublished": publication_date(work, resources_for(work).metadata or {}),
         "url": f"https://danielarifriedman.com/works/{work['citation_key']}.html",
         "mainEntityOfPage": f"https://danielarifriedman.com/works/{work['citation_key']}.html",
         "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
@@ -771,8 +772,9 @@ def page_head(work: dict) -> str:
     page_title = work_page_title(work)
     resources = resources_for(work)
     citation_meta = [f'<meta name="citation_title" content="{h(work["title"])}">',
-                     f'<meta name="citation_publication_date" content="{h(work["year"])}">']
+                     f'<meta name="citation_publication_date" content="{h(publication_date(work, resources.metadata or {}).replace("-", "/"))}">']
     citation_meta.extend(f'<meta name="citation_author" content="{h(display_name(name))}">' for name in work.get("authors") or [])
+    citation_meta.extend(f'<meta name="citation_{name}" content="{h(value)}">' for name, value in journal_fields(work, resources.metadata or {}).items())
     if work.get("doi"):
         citation_meta.append(f'<meta name="citation_doi" content="{h(work["doi"])}">')
     if resources.primary_pdf:

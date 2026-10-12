@@ -29,5 +29,16 @@
     "date": "2026-10-01",
     "notes": "The folder previously held the PDF, full text, images and Zenodo record 5573947 of a different work (#77, Digital Rhetorical Ecosystem Analysis, papers/2021_DigitalRhetorical). They were removed; no copy of this Physics of Life Reviews commentary (10.1016/j.plrev.2023.06.002) is archived here yet."
   },
-  "publication_date": "2023"
+  "publication_date": "2023",
+  "citation_metadata": {
+    "doi": "10.1016/j.plrev.2023.06.002",
+    "title": "To comment or not to comment, that is the question!",
+    "source_url": "https://api.crossref.org/works/10.1016%2Fj.plrev.2023.06.002",
+    "checked_at": "2026-10-12T21:03:03Z",
+    "resource_type": "journal-article",
+    "journal_title": "Physics of Life Reviews",
+    "volume": "46",
+    "pages": "85-87",
+    "issn": "1571-0645"
+  }
 }

@@ -91,5 +91,13 @@
     "date": "2026-10-01",
     "basis": "Passage recovered from the document",
     "evidence_source": "full_text.md"
+  },
+  "citation_metadata": {
+    "doi": "10.31219/osf.io/dnw5k",
+    "title": "Distributed Science - The Scientific Process as Multi-Scale Active Inference",
+    "source_url": "https://api.crossref.org/works/10.31219%2Fosf.io%2Fdnw5k",
+    "checked_at": "2026-10-12T21:03:03Z",
+    "resource_type": "posted-content",
+    "publication_date": "2023-10-17"
   }
 }

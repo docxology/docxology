@@ -83,5 +83,17 @@
     "date": "2026-10-01",
     "basis": "Passage recovered from the document",
     "evidence_source": "full_text.md"
+  },
+  "citation_metadata": {
+    "doi": "10.1016/j.mehy.2015.09.015",
+    "title": "Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?",
+    "source_url": "https://api.crossref.org/works/10.1016%2Fj.mehy.2015.09.015",
+    "checked_at": "2026-10-12T21:03:05Z",
+    "resource_type": "journal-article",
+    "journal_title": "Medical Hypotheses",
+    "volume": "85",
+    "issue": "6",
+    "pages": "891-893",
+    "issn": "0306-9877"
   }
 }

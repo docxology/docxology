@@ -4,6 +4,17 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-10-12
 
+- **Publication curation:** recorded the disposition of all 30 ambiguous
+  release pairs. The 21 template manuscripts retain separate citation DOIs
+  and canonical pages; GNN stays under its existing concept, and older
+  CogSecSkills, FEP, Ento-Linguistics, and antropy archives retain history
+  without duplicate bibliography rows.
+- **Citation discovery:** work pages now retain valid source-backed date
+  precision and reviewed journal citation fields. The SEO gate detects
+  citation identity, ordered-author, and primary-PDF drift. Scholar's PDF
+  directory constraint remains explicit in the
+  [inclusion notes](docs/seo/scholar-inclusion.md), with permanent URLs and
+  the artifact ceiling preserved.
 - **Publication intake:** added the Zenodo records for *Active Inference -- A
   Synthetic Overview* and *antropy: native multidimensional entropy and
   configurable complexity analysis*, retaining concept citation DOIs and

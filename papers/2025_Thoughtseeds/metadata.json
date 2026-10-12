@@ -84,5 +84,18 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Computational simulation study; results are simulated outputs calibrated to literature-derived transition matrices, not new empirical meditation data.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "citation_metadata": {
+    "doi": "10.3390/e27050459",
+    "title": "Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States",
+    "source_url": "https://api.crossref.org/works/10.3390%2Fe27050459",
+    "checked_at": "2026-10-12T21:03:03Z",
+    "resource_type": "journal-article",
+    "journal_title": "Entropy",
+    "volume": "27",
+    "issue": "5",
+    "pages": "459",
+    "issn": "1099-4300",
+    "publication_date": "2025-04-24"
   }
 }

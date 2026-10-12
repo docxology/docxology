@@ -47,5 +47,12 @@
     "url": "https://link.springer.com/chapter/10.1007/978-3-032-16955-6_11",
     "date": "2026-10-01",
     "notes": "Public publisher abstract verified; full chapter is subscription content. The synopsis describes simulated agents and future empirical/Active Inference work, not an empirical meditation study."
+  },
+  "citation_metadata": {
+    "doi": "10.1007/978-3-032-16955-6_11",
+    "title": "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences",
+    "source_url": "https://api.crossref.org/works/10.1007%2F978-3-032-16955-6_11",
+    "checked_at": "2026-10-12T21:03:05Z",
+    "resource_type": "book-chapter"
   }
 }

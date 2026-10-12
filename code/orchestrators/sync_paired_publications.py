@@ -1105,6 +1105,7 @@ def write_report(
     warnings: list[str],
     applied: list[AppliedPublication] | None = None,
     classification_cache: dict[str, Any] | None = None,
+    previous_report: dict[str, Any] | None = None,
 ) -> None:
     generated_at = generated_timestamp()
 
@@ -1133,6 +1134,25 @@ def write_report(
         }
         return result
 
+    # A scan is an observation, not a new apply. Preserve existing exact
+    # receipts byte-for-byte instead of erasing them or minting new approvals.
+    # The report check still validates their provenance and current metadata.
+    preserved: list[dict[str, Any]] = []
+    if applied is None:
+        if previous_report is None and path.is_file():
+            previous_report = json.loads(path.read_text(encoding="utf-8"))
+        if previous_report is not None:
+            if not isinstance(previous_report, dict):
+                raise ValueError("previous report must be an object")
+            prior = previous_report.get("applied", [])
+            if not isinstance(prior, list):
+                raise ValueError("previous report applied receipts must be a list")
+            current_actions = [action.to_dict() for action in actions]
+            preserved = [
+                item for item in prior
+                if isinstance(item, dict) and item.get("action") in current_actions
+            ]
+
     payload = {
         "generated_at": generated_at,
         "source": "GitHub Releases API + Zenodo Records API",
@@ -1153,7 +1173,7 @@ def write_report(
         "pairs": [pair.to_dict() for pair in pairs],
         "github_releases": [release.to_dict() for release in releases],
         "zenodo_records": [record.to_dict() for record in records],
-        "applied": [applied_payload(item) for item in (applied or [])],
+        "applied": preserved if applied is None else [applied_payload(item) for item in applied],
     }
     if classification_cache is not None:
         payload["classification_cache"] = classification_cache
@@ -1425,7 +1445,7 @@ def main(argv: list[str] | None = None) -> int:
         pairs=pairs,
         actions=actions,
         warnings=warnings,
-        applied=applied,
+        applied=applied if args.apply else None,
         classification_cache=classification_cache_payload(already_reviewed_entries),
     )
     print(

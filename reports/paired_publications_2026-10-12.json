@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T18:48:30Z",
+  "generated_at": "2026-10-12T21:11:21Z",
   "source": "GitHub Releases API + Zenodo Records API",
   "owners": [
     "docxology",
@@ -11,8 +11,8 @@
     "pairs": 40,
     "strong_pairs": 10,
     "software_catalogued": 1,
-    "already_reviewed": 0,
-    "needs_review": 30,
+    "already_reviewed": 30,
+    "needs_review": 0,
     "create_new": 0,
     "update_existing": 9
   },
@@ -139,23 +139,23 @@
       "folder": "2026_Antropy"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.20804585",
       "title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-01 records this pair as earlier-software-archive; do not create a duplicate bibliography row",
       "github_repo": "docxology/CogSecSkills",
       "github_release_url": "https://github.com/docxology/CogSecSkills/releases/tag/v1.8.0",
       "zenodo_record_url": "https://zenodo.org/records/20804585",
       "release_tag": "v1.8.0",
-      "folder": "2026_CogSecSkills2"
+      "folder": "2026_CogSecSkills"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.20417016",
       "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-02 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/20417016",
@@ -163,11 +163,11 @@
       "folder": "2026_BoundedAutoResearchTiny"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.20417104",
       "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-03 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/20417104",
@@ -175,11 +175,11 @@
       "folder": "2026_EditorialQualityAt"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.20453879",
       "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-04 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/20453879",
@@ -187,11 +187,11 @@
       "folder": "2026_SelfImprovementAgent"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.20533125",
       "title": "The Template Textbook",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-05 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/20533125",
@@ -199,11 +199,11 @@
       "folder": "2026_TemplateTextbook"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.20533675",
       "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-06 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/20533675",
@@ -211,11 +211,11 @@
       "folder": "2026_Triplicate"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.20931964",
       "title": "A Living Meta-Analysis of the Modafinil Literature",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-07 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/20931964",
@@ -223,11 +223,11 @@
       "folder": "2026_LivingMetaAnalysis"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.21086292",
       "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-08 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/21086292",
@@ -235,11 +235,11 @@
       "folder": "2026_ExploratoryDataAnalysis"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.21086548",
       "title": "A Domain Language for Specifying Controlled Methods",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-09 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/21086548",
@@ -247,11 +247,11 @@
       "folder": "2026_DomainLanguageSpecifying"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.21176000",
       "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-10 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/21176000",
@@ -259,11 +259,11 @@
       "folder": "2026_ShapeBetween"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.20931955",
       "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-11 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/20931955",
@@ -271,11 +271,11 @@
       "folder": "2026_RefinementGold"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.20417021",
       "title": "Active Inference Multi-Track Exemplar",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-12 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/20417021",
@@ -283,11 +283,11 @@
       "folder": "2026_ActiveInferenceMulti"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.20417136",
       "title": "Convergence Analysis of Gradient Descent Optimization",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-13 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/20417136",
@@ -295,11 +295,11 @@
       "folder": "2026_ConvergenceAnalysisGradient"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.20533669",
       "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-14 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/20533669",
@@ -307,11 +307,11 @@
       "folder": "2026_DeterministicTestbedSelf"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.20786638",
       "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-15 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/20786638",
@@ -319,11 +319,11 @@
       "folder": "2026_TemplateMadlib"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.20419007",
       "title": "A template/ approach to Reproducible Generative Research",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-16 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/20419007",
@@ -331,11 +331,11 @@
       "folder": "2026_TemplateApproachReproducible"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.21227869",
       "title": "Autopoietic Project Generation",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-17 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/21227869",
@@ -343,11 +343,11 @@
       "folder": "2026_AutopoieticProjectGeneration"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.21281509",
       "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-18 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/21281509",
@@ -355,11 +355,11 @@
       "folder": "2026_TemplatePitchDeck"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.21298883",
       "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-19 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/21298883",
@@ -367,11 +367,11 @@
       "folder": "2026_DataDescriptorTemplate"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.21298890",
       "title": "Redacted Report Template: Disclosure Control and Release Audit",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-20 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/21298890",
@@ -379,11 +379,11 @@
       "folder": "2026_RedactedReportTemplate"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.21298892",
       "title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-21 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/21298892",
@@ -391,11 +391,11 @@
       "folder": "2026_RegisteredReportTemplate"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.16903351",
       "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-22 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "docxology/template",
       "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
       "zenodo_record_url": "https://zenodo.org/records/16903351",
@@ -403,11 +403,11 @@
       "folder": "2026_ReproducibleResearch"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.7803313",
       "title": "Generalized_Notation_Notation (GNN)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-23 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v4.1.0",
       "zenodo_record_url": "https://zenodo.org/records/7803313",
@@ -415,11 +415,11 @@
       "folder": "2026_GeneralizedNotationNotationGNN"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.7803313",
       "title": "Generalized_Notation_Notation (GNN)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-23 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v4.0.1",
       "zenodo_record_url": "https://zenodo.org/records/7803313",
@@ -427,11 +427,11 @@
       "folder": "2026_GeneralizedNotationNotationGNN"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.7803313",
       "title": "Generalized_Notation_Notation (GNN)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-23 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v4.0.0",
       "zenodo_record_url": "https://zenodo.org/records/7803313",
@@ -439,11 +439,11 @@
       "folder": "2026_GeneralizedNotationNotationGNN"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.7803313",
       "title": "Generalized_Notation_Notation (GNN)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-23 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.6.0",
       "zenodo_record_url": "https://zenodo.org/records/7803313",
@@ -451,23 +451,23 @@
       "folder": "2026_GeneralizedNotationNotationGNN"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.23196891",
       "title": "fep_formal: Towards Lean 4 Formalization of the Free Energy Principle",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-24 records this pair as historical-software-archive; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/fep_formal",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.5.0",
       "zenodo_record_url": "https://zenodo.org/records/23196891",
       "release_tag": "v1.5.0",
-      "folder": "2026_FepFormal"
+      "folder": "2026_FEPLean"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.19574117",
       "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-25 records this pair as version-history-only; do not create a duplicate bibliography row",
       "github_repo": "docxology/ento_linguistics",
       "github_release_url": "https://github.com/docxology/ento_linguistics/releases/tag/v1.3.0",
       "zenodo_record_url": "https://zenodo.org/records/19574117",
@@ -475,11 +475,11 @@
       "folder": "2026_EntoLinguistics"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.19574117",
       "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-25 records this pair as version-history-only; do not create a duplicate bibliography row",
       "github_repo": "docxology/ento_linguistics",
       "github_release_url": "https://github.com/docxology/ento_linguistics/releases/tag/v1.2.1",
       "zenodo_record_url": "https://zenodo.org/records/19574117",
@@ -487,11 +487,11 @@
       "folder": "2026_EntoLinguistics"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.23306200",
       "title": "antropy: native multidimensional entropy and configurable complexity analysis",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "curation-2026-10-12-26 records this pair as version-history-only; do not create a duplicate bibliography row",
       "github_repo": "docxology/antropy",
       "github_release_url": "https://github.com/docxology/antropy/releases/tag/v0.3.0",
       "zenodo_record_url": "https://zenodo.org/records/23306200",
@@ -16433,8 +16433,459 @@
   "classification_cache": {
     "inputs": {
       "bibliography_sha256": "f6c4137e0dd58aae06da584ce33345fcbfb977698d592d43262d00d390ed1903",
-      "decisions_sha256": "f1cac466f885ccc9ed92cac8039575fabfe1778a4563088af79c72cdbfaa498a"
+      "decisions_sha256": "e8a855347eca329fc66b1ac479d47009a8ea2b90e45af3619faa5484f801867a"
     },
-    "already_reviewed": []
+    "already_reviewed": [
+      [
+        [
+          "10.5281/zenodo.20804585",
+          "https://github.com/docxology/CogSecSkills/releases/tag/v1.8.0",
+          "https://zenodo.org/records/20804585",
+          "docxology/cogsecskills",
+          "cogsecskills: multiharness cognitive security skill library",
+          "v1.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-01",
+          "representation": "earlier-software-archive",
+          "folder": "2026_CogSecSkills"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.20417016",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/20417016",
+          "docxology/template",
+          "bounded autoresearch for a tiny reproducible machine-learning task",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-02",
+          "representation": "bibliography-folder",
+          "folder": "2026_BoundedAutoResearchTiny"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.20417104",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/20417104",
+          "docxology/template",
+          "editorial quality at scale: a reproducible prose-review pipeline",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-03",
+          "representation": "bibliography-folder",
+          "folder": "2026_EditorialQualityAt"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.20453879",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/20453879",
+          "docxology/template",
+          "self-improvement agent harness: a deterministic sia exemplar",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-04",
+          "representation": "bibliography-folder",
+          "folder": "2026_SelfImprovementAgent"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.20533125",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/20533125",
+          "docxology/template",
+          "the template textbook",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-05",
+          "representation": "bibliography-folder",
+          "folder": "2026_TemplateTextbook"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.20533675",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/20533675",
+          "docxology/template",
+          "the triplicate: a data-driven large-format newspaper layout engine",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-06",
+          "representation": "bibliography-folder",
+          "folder": "2026_Triplicate"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.20931964",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/20931964",
+          "docxology/template",
+          "a living meta-analysis of the modafinil literature",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-07",
+          "representation": "bibliography-folder",
+          "folder": "2026_LivingMetaAnalysis"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.21086292",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/21086292",
+          "docxology/template",
+          "exploratory data analysis: a reproducible notebook template",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-08",
+          "representation": "bibliography-folder",
+          "folder": "2026_ExploratoryDataAnalysis"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.21086548",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/21086548",
+          "docxology/template",
+          "a domain language for specifying controlled methods",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-09",
+          "representation": "bibliography-folder",
+          "folder": "2026_DomainLanguageSpecifying"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.21176000",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/21176000",
+          "docxology/template",
+          "the shape between: a full-page illustrated storybook template",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-10",
+          "representation": "bibliography-folder",
+          "folder": "2026_ShapeBetween"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.20931955",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/20931955",
+          "docxology/template",
+          "refinement of gold: a metallurgical analogy for scientific manuscript composition",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-11",
+          "representation": "bibliography-folder",
+          "folder": "2026_RefinementGold"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.20417021",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/20417021",
+          "docxology/template",
+          "active inference multi-track exemplar",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-12",
+          "representation": "bibliography-folder",
+          "folder": "2026_ActiveInferenceMulti"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.20417136",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/20417136",
+          "docxology/template",
+          "convergence analysis of gradient descent optimization",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-13",
+          "representation": "bibliography-folder",
+          "folder": "2026_ConvergenceAnalysisGradient"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.20533669",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/20533669",
+          "docxology/template",
+          "a deterministic testbed for self-organizing agent-team coordination",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-14",
+          "representation": "bibliography-folder",
+          "folder": "2026_DeterministicTestbedSelf"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.20786638",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/20786638",
+          "docxology/template",
+          "template madlib: deterministic token injection for conditional imrad manuscripts",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-15",
+          "representation": "bibliography-folder",
+          "folder": "2026_TemplateMadlib"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.20419007",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/20419007",
+          "docxology/template",
+          "a template/ approach to reproducible generative research",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-16",
+          "representation": "bibliography-folder",
+          "folder": "2026_TemplateApproachReproducible"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.21227869",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/21227869",
+          "docxology/template",
+          "autopoietic project generation",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-17",
+          "representation": "bibliography-folder",
+          "folder": "2026_AutopoieticProjectGeneration"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.21281509",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/21281509",
+          "docxology/template",
+          "template_pitch_deck: reproducible, validated pitch-deck generation",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-18",
+          "representation": "bibliography-folder",
+          "folder": "2026_TemplatePitchDeck"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.21298883",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/21298883",
+          "docxology/template",
+          "data descriptor template: schema, provenance, and release readiness",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-19",
+          "representation": "bibliography-folder",
+          "folder": "2026_DataDescriptorTemplate"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.21298890",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/21298890",
+          "docxology/template",
+          "redacted report template: disclosure control and release audit",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-20",
+          "representation": "bibliography-folder",
+          "folder": "2026_RedactedReportTemplate"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.21298892",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/21298892",
+          "docxology/template",
+          "registered report template: preregistration, deviations, and claim boundaries",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-21",
+          "representation": "bibliography-folder",
+          "folder": "2026_RegisteredReportTemplate"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.16903351",
+          "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "https://zenodo.org/records/16903351",
+          "docxology/template",
+          "a template/ approach to reproducible generative research: architecture and ergonomics from configuration through publication",
+          "v3.8.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-22",
+          "representation": "bibliography-folder",
+          "folder": "2026_ReproducibleResearch"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.7803313",
+          "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v4.1.0",
+          "https://zenodo.org/records/7803313",
+          "activeinferenceinstitute/generalized_notation_notation",
+          "generalized_notation_notation (gnn)",
+          "v4.1.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-23",
+          "representation": "bibliography-folder",
+          "folder": "2026_GeneralizedNotationNotationGNN"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.7803313",
+          "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v4.0.1",
+          "https://zenodo.org/records/7803313",
+          "activeinferenceinstitute/generalized_notation_notation",
+          "generalized_notation_notation (gnn)",
+          "v4.0.1"
+        ],
+        {
+          "group_id": "curation-2026-10-12-23",
+          "representation": "bibliography-folder",
+          "folder": "2026_GeneralizedNotationNotationGNN"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.7803313",
+          "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v4.0.0",
+          "https://zenodo.org/records/7803313",
+          "activeinferenceinstitute/generalized_notation_notation",
+          "generalized_notation_notation (gnn)",
+          "v4.0.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-23",
+          "representation": "bibliography-folder",
+          "folder": "2026_GeneralizedNotationNotationGNN"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.7803313",
+          "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.6.0",
+          "https://zenodo.org/records/7803313",
+          "activeinferenceinstitute/generalized_notation_notation",
+          "generalized_notation_notation (gnn)",
+          "v3.6.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-23",
+          "representation": "bibliography-folder",
+          "folder": "2026_GeneralizedNotationNotationGNN"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.23196891",
+          "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.5.0",
+          "https://zenodo.org/records/23196891",
+          "activeinferenceinstitute/fep_formal",
+          "fep_formal: towards lean 4 formalization of the free energy principle",
+          "v1.5.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-24",
+          "representation": "historical-software-archive",
+          "folder": "2026_FEPLean"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.19574117",
+          "https://github.com/docxology/ento_linguistics/releases/tag/v1.3.0",
+          "https://zenodo.org/records/19574117",
+          "docxology/ento_linguistics",
+          "ento-linguistics: language, ambiguity, and scientific communication in entomology",
+          "v1.3.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-25",
+          "representation": "version-history-only",
+          "folder": "2026_EntoLinguistics"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.19574117",
+          "https://github.com/docxology/ento_linguistics/releases/tag/v1.2.1",
+          "https://zenodo.org/records/19574117",
+          "docxology/ento_linguistics",
+          "ento-linguistics: language, ambiguity, and scientific communication in entomology",
+          "v1.2.1"
+        ],
+        {
+          "group_id": "curation-2026-10-12-25",
+          "representation": "version-history-only",
+          "folder": "2026_EntoLinguistics"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.23306200",
+          "https://github.com/docxology/antropy/releases/tag/v0.3.0",
+          "https://zenodo.org/records/23306200",
+          "docxology/antropy",
+          "antropy: native multidimensional entropy and configurable complexity analysis",
+          "v0.3.0"
+        ],
+        {
+          "group_id": "curation-2026-10-12-26",
+          "representation": "version-history-only",
+          "folder": "2026_Antropy"
+        }
+      ]
+    ]
   }
 }

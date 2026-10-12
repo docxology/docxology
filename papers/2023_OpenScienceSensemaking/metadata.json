@@ -70,5 +70,13 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Position/proposal paper; methods are design specifications of a proposed system, not an evaluated implementation.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "citation_metadata": {
+    "doi": "10.31222/osf.io/9nb3u",
+    "title": "Open Access science needs Open Science Sensemaking (OSSm): open infrastructure for sharing scientific sensemaking data",
+    "source_url": "https://api.crossref.org/works/10.31222%2Fosf.io%2F9nb3u",
+    "checked_at": "2026-10-12T21:03:03Z",
+    "resource_type": "posted-content",
+    "publication_date": "2023-05-03"
   }
 }

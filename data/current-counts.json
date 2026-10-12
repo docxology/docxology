@@ -46,10 +46,10 @@
       "raw_candidates": 524
     },
     "paired_publications": {
-      "already_reviewed": 0,
+      "already_reviewed": 30,
       "create_new": 0,
       "github_releases": 27,
-      "needs_review": 30,
+      "needs_review": 0,
       "pairs": 40,
       "software_catalogued": 1,
       "strong_pairs": 10,
@@ -83,7 +83,7 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-10-12T18:49:01+00:00",
+  "generated_at": "2026-10-12T21:06:00+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

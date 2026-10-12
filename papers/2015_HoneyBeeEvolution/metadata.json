@@ -97,5 +97,18 @@
     "date": "2026-10-01",
     "basis": "Passage recovered from the document",
     "evidence_source": "full_text.md"
+  },
+  "citation_metadata": {
+    "doi": "10.1093/molbev/msu292",
+    "title": "Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees",
+    "source_url": "https://api.crossref.org/works/10.1093%2Fmolbev%2Fmsu292",
+    "checked_at": "2026-10-12T21:03:05Z",
+    "resource_type": "journal-article",
+    "journal_title": "Molecular Biology and Evolution",
+    "volume": "32",
+    "issue": "2",
+    "pages": "334-346",
+    "issn": "0737-4038",
+    "publication_date": "2014-10-28"
   }
 }

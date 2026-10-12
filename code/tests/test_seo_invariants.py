@@ -226,3 +226,44 @@ def test_one_seo_pass_reads_each_page_once_across_the_eight_checks(monkeypatch):
         "a page was decoded more than once in a single SEO pass: "
         + ", ".join(sorted({p for p in reads if reads.count(p) > 1})[:5])
     )
+
+
+def test_work_citation_identity_rejects_collapsed_doi_missing_author_and_wrong_pdf(tmp_path):
+    from docxology_tools.seo_invariants import check_work_citations
+
+    subprocess.run(['git', 'init', '-q', str(tmp_path)], check=True)
+    (tmp_path / 'data').mkdir()
+    (tmp_path / 'works').mkdir()
+    folder = tmp_path / 'papers/2026_Example'
+    folder.mkdir(parents=True)
+    (folder / 'primary.pdf').write_bytes(b'%PDF-primary')
+    (folder / 'other.pdf').write_bytes(b'%PDF-other')
+    (folder / 'metadata.json').write_text(json.dumps({'primary_pdf': 'primary.pdf'}))
+    work = {'citation_key': 'Example', 'title': 'Methods & Evidence', 'year': 2026,
+            'doi': '10.5281/zenodo.12345', 'authors': ['First, Alice', 'Second, Bob'],
+            'docs_path': 'papers/2026_Example/'}
+    (tmp_path / 'data/works.json').write_text(json.dumps({'works': [work]}))
+    page = tmp_path / 'works/Example.html'
+    correct = '''<html><head><meta name="citation_title" content="Methods &amp; Evidence">
+    <meta name="citation_author" content="Alice First">
+    <meta name="citation_author" content="Bob Second">
+    <meta name="citation_publication_date" content="2026">
+    <meta name="citation_doi" content="10.5281/zenodo.12345">
+    <meta name="citation_pdf_url" content="https://danielarifriedman.com/papers/2026_Example/primary.pdf"></head><body></body></html>'''
+    page.write_text(correct)
+    assert check_work_citations(tmp_path) == []
+    page.write_text(correct.replace('10.5281/zenodo.12345', '10.5281/zenodo.99999'))
+    assert any('citation_doi' in e for e in check_work_citations(tmp_path))
+    page.write_text(correct.replace('<meta name="citation_author" content="Bob Second">', ''))
+    assert any('citation_author' in e for e in check_work_citations(tmp_path))
+    page.write_text(correct.replace('/primary.pdf', '/other.pdf'))
+    assert any('citation_pdf_url' in e for e in check_work_citations(tmp_path))
+    page.write_text(correct.replace('<meta name="citation_author" content="Bob Second">', '<!-- <meta name="citation_author" content="Bob Second"> -->'))
+    assert any('citation_author' in e for e in check_work_citations(tmp_path))
+    page.write_text(correct.replace('</head>', '</head><meta name="citation_author" content="Fake Author">'))
+    assert check_work_citations(tmp_path) == []  # Body metadata cannot change head identity.
+    page.write_text(correct)
+    (folder / 'primary.pdf').unlink()
+    import pytest
+    with pytest.raises(ValueError, match='Unavailable primary_pdf'):
+        check_work_citations(tmp_path)

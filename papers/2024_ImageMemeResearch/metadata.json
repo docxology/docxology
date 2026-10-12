@@ -74,5 +74,18 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Theoretical/framework paper; meme analyses are illustrative case examples, not a systematic dataset. Several evidence quotes include extraction hyphenation artifacts (e.g., 'repre- sented').",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "citation_metadata": {
+    "doi": "10.1002/asi.24900",
+    "title": "Bridging gaps in image meme research: A multidisciplinary paradigm for scaling up qualitative analyses",
+    "source_url": "https://api.crossref.org/works/10.1002%2Fasi.24900",
+    "checked_at": "2026-10-12T21:03:03Z",
+    "resource_type": "journal-article",
+    "journal_title": "Journal of the Association for Information Science and Technology",
+    "volume": "75",
+    "issue": "10",
+    "pages": "1087-1103",
+    "issn": "2330-1635",
+    "publication_date": "2024-05-16"
   }
 }

@@ -77,5 +77,18 @@
     "date": "2026-10-01",
     "basis": "Passage recovered from the document",
     "evidence_source": "full_text.md"
+  },
+  "citation_metadata": {
+    "doi": "10.3109/09553002.2016.1144941",
+    "title": "Influence of nuclear structure on the formation of radiation-induced lethal lesions",
+    "source_url": "https://api.crossref.org/works/10.3109%2F09553002.2016.1144941",
+    "checked_at": "2026-10-12T21:03:04Z",
+    "resource_type": "journal-article",
+    "journal_title": "International Journal of Radiation Biology",
+    "volume": "92",
+    "issue": "5",
+    "pages": "229-240",
+    "issn": "0955-3002",
+    "publication_date": "2016-02-26"
   }
 }
