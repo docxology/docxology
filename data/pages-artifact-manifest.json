@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-12T21:24:59Z",
-  "source_commit_at_generation": "e6675d52c5e8c8e7e81f2c2f5f7dbe8bb8bccad9",
+  "generated_at": "2026-10-12T21:58:15Z",
+  "source_commit_at_generation": "47c1737911b354093b6c0181767e9182553fc909",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 905379459,
+    "source_bytes": 905387966,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 5949,
-    "artifact_bytes": 906430524
+    "artifact_bytes": 906439031
   },
   "included_files": [
     {
@@ -75,8 +75,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 130254,
-      "sha256": "d0d106fea8d2f75cb87c0aa4512792b8518d898324fc368f54ab1d1cc4fb3ae7"
+      "bytes": 130733,
+      "sha256": "763c6d13b079ffaa559d2f25c44c696d5192946202ca45dc30b6babaade96c34"
     },
     {
       "path": "CITATION.cff",
@@ -105,8 +105,8 @@
     },
     {
       "path": "TODO.md",
-      "bytes": 18923,
-      "sha256": "8e69b55455309ab14b6aed183f4e5e1692116a7f645eb6f6fc3c3e959572f8bd"
+      "bytes": 18862,
+      "sha256": "a4a6dad4edb3c5fec453de55797087d873e9ace07077f4fac97b8f4014068561"
     },
     {
       "path": "a3f7c1b8d4e9426b8f2c5a7d9e3f1b6c.txt",
@@ -11000,8 +11000,8 @@
     },
     {
       "path": "code/tests/test_deployed_artifact.py",
-      "bytes": 8667,
-      "sha256": "953a267d00837d26ac80cca661fd63a5fa5e7707943218d4d3a8a2a4ab1cb25e"
+      "bytes": 8926,
+      "sha256": "b65a0ca22e3d999b190774376473914765386abf14a6d71adf4236e016df102c"
     },
     {
       "path": "code/tests/test_domain_feeds.py",
@@ -12095,8 +12095,8 @@
     },
     {
       "path": "docs/seo/scholar-inclusion.md",
-      "bytes": 3445,
-      "sha256": "0f7051e93fe0803e3883e4880446562897d998f3252f93816c52fa4aaed86932"
+      "bytes": 3500,
+      "sha256": "561264dad6597a79fbf8694ea9d2a6bb7f2a649d7c208e2c1bc0c887d7826bc3"
     },
     {
       "path": "domain-active-inference.html",
@@ -13025,8 +13025,8 @@
     },
     {
       "path": "papers/2018_DopamineForaging/metadata.json",
-      "bytes": 9462,
-      "sha256": "152ff429926ea2a8392941264b726c8746c26114bff659d37a5d7f99328a5b7f"
+      "bytes": 9892,
+      "sha256": "30f55952cf8b53fc23d5f61938aeb3fae37dda93b545c0cfc8091d85f95d5b35"
     },
     {
       "path": "papers/2018_MVEE/2018_MVEE.pdf",
@@ -13125,8 +13125,8 @@
     },
     {
       "path": "papers/2018_PPPiP/metadata.json",
-      "bytes": 7091,
-      "sha256": "14c5986a9f806d7e45281250e7d073d7dfddb94eed63160116039bdf23b4ccea"
+      "bytes": 7560,
+      "sha256": "10a1e991d72e2b5b5b612625ab63588f3cc11ea626bf443103ff038bf029de8d"
     },
     {
       "path": "papers/2018_WoodliceAndMen/2018_WoodliceAndMen.pdf",
@@ -13315,8 +13315,8 @@
     },
     {
       "path": "papers/2019_ForagerHydration/metadata.json",
-      "bytes": 7254,
-      "sha256": "3ecc42466cc26b2a96a538e1ef1d22467031db0bbf83fd1f5f83967e532a0923"
+      "bytes": 7781,
+      "sha256": "7cc1049c4b5309fbe5102b379b413454fb35bb7aa8b742ddfedc86435b7072f2"
     },
     {
       "path": "papers/2019_PhDDissertation/2019_PhDDissertation.pdf",
@@ -13595,8 +13595,8 @@
     },
     {
       "path": "papers/2020_GeneExpressionForagers/metadata.json",
-      "bytes": 7950,
-      "sha256": "7bacdc3ffcf3802fecf65d29c3f275ea5a6a53540eacb14d01b02733639523c6"
+      "bytes": 8449,
+      "sha256": "1cefc34985121ea31d035855607c810abdd0815ef0379dba5c13dc3e78537291"
     },
     {
       "path": "papers/2020_GreatPreset/2020_GreatPreset.pdf",
@@ -13845,8 +13845,8 @@
     },
     {
       "path": "papers/2020_NeurotransmitterVariation/metadata.json",
-      "bytes": 6627,
-      "sha256": "1f365f8606e8e9a2784d00d275fc35ba17f79fee4bcbcc30ee10a1ab551cd3d6"
+      "bytes": 7189,
+      "sha256": "fedadefe91fba051edc4193251e382004f98d7fd495621f02f9bdb164fa2a181"
     },
     {
       "path": "papers/2020_ReimaginingMaps/AGENTS.md",
@@ -13945,8 +13945,8 @@
     },
     {
       "path": "papers/2021_ActiveInferants/metadata.json",
-      "bytes": 5971,
-      "sha256": "1ee0f01e1ef57bb151cd066935094696463caa4a2e0c2a34854e30e969e216fb"
+      "bytes": 6434,
+      "sha256": "c177c5a1b86f649002cb67f8c1d406c17060627dbea1b2eea23d1dedeee6dd98"
     },
     {
       "path": "papers/2021_CollaborativeWritingCatechism/AGENTS.md",
@@ -15430,8 +15430,8 @@
     },
     {
       "path": "papers/2023_GuidedTourMinds/metadata.json",
-      "bytes": 4762,
-      "sha256": "3dcce75e87cf6e203cc8664244151f3448005a7cf64296384f2f5d1a2b47ee54"
+      "bytes": 5262,
+      "sha256": "4de3105f2c9d3e8325988e3d10186f6e6c4d9d6466a6a17894efbe199db82ddf"
     },
     {
       "path": "papers/2023_HoneyBeeGeneExpression/2023_HoneyBeeGeneExpression.pdf",
@@ -16310,8 +16310,8 @@
     },
     {
       "path": "papers/2024_FederatedInference/metadata.json",
-      "bytes": 8293,
-      "sha256": "86d9066dcb40800b2eeb9ce0932d5bb1c7787769cc667313d5333e1dfbb51144"
+      "bytes": 8721,
+      "sha256": "5b7393e4db66aaae8cf2248c6fc58f4f5d492e91789f097f45875df2a23e9a61"
     },
     {
       "path": "papers/2024_ImageMemeResearch/2024_ImageMemeResearch.pdf",
@@ -16760,8 +16760,8 @@
     },
     {
       "path": "papers/2024_SharedProtentions/metadata.json",
-      "bytes": 4873,
-      "sha256": "22e5efe8e73c27bd0765e40b0ad261a6690ed850ec41b4610884761013fd8f81"
+      "bytes": 5308,
+      "sha256": "99c1e8e783bb7fc5ec7aebf028605c3614b1b2ad9584a12717a6f22017102009"
     },
     {
       "path": "papers/2025_5thSymposium/2025_5thSymposium.pdf",
@@ -18015,8 +18015,8 @@
     },
     {
       "path": "papers/2025_TemporalDepth/metadata.json",
-      "bytes": 5686,
-      "sha256": "09d6deb7744315b155ea1a1ffcabaf015f802d1c6ae316fa1f3cd3ab2c732c0d"
+      "bytes": 6144,
+      "sha256": "02f2e5ff8f928b61ecd2ad4a499a25d5be088166a89c40d37b606d6347fd31bf"
     },
     {
       "path": "papers/2025_Thoughtseeds/2025_Thoughtseeds.pdf",
@@ -22906,7 +22906,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 416636,
-      "sha256": "8a7d492fa08cfdfd9900463a8ab5863ea9dfe6deb02530bc5a47f3da5dabe2d7"
+      "sha256": "8f66e3ff2662daf70516549a06fbfbcf0d70a999611983f3f7422dbde0668aff"
     },
     {
       "path": "software.html",
@@ -22930,8 +22930,8 @@
     },
     {
       "path": "updates.html",
-      "bytes": 197001,
-      "sha256": "a2050f48afd37ca437cc0fdceaa00aa42c4e51312b8a9a185a0fa96cce59955c"
+      "bytes": 197508,
+      "sha256": "345a103ec584a22e8e09a7053d79a2d406766f03f20df0cd2e003c6076ec7979"
     },
     {
       "path": "uv.lock",
@@ -28670,13 +28670,13 @@
     },
     {
       "path": "works/Friedman2018PartnerPenPlayParallel099.html",
-      "bytes": 26197,
-      "sha256": "b89046492cc955564785498bc1e448563667f4eef25e3383b4bb98c5dd5ec439"
+      "bytes": 26458,
+      "sha256": "cd098c2e4cbc63cd0b7e5013956a81b6174fd5b444e2b0fc73170995733636bc"
     },
     {
       "path": "works/Friedman2018RoleDopamineCollectiveRegulation100.html",
-      "bytes": 26132,
-      "sha256": "292f27b149aa46c86b3623227768b3a0c9c3de77848ac32dd043cfd1f424e6ac"
+      "bytes": 26391,
+      "sha256": "cdb07383618eb5e8d6b7cf3b099dff238bab1df48322768693e6625d9d91a819"
     },
     {
       "path": "works/Friedman2018WoodliceMenBayesianAccount098.html",
@@ -28700,8 +28700,8 @@
     },
     {
       "path": "works/Friedman2019PhysiologyForagerHydrationVariation095.html",
-      "bytes": 27200,
-      "sha256": "a6dfb61b7c324ee0686947144da1719f067dda53a1635122affb31b76054e854"
+      "bytes": 27425,
+      "sha256": "66b5fe84de477bc48ec0a2804823bd134a845e153c69b2f2c16b7759a877a4cd"
     },
     {
       "path": "works/Friedman2020ActiveInferenceBehaviorEngineering082.html",
@@ -28730,8 +28730,8 @@
     },
     {
       "path": "works/Friedman2020GeneExpressionVariationBrains086.html",
-      "bytes": 26087,
-      "sha256": "d665a9ad944a1020cbb71bf3f609849a9a576b4da23bdcddf468e9caa91d9fbc"
+      "bytes": 26316,
+      "sha256": "f6037eee6749562af3dbe70e1a232b37e07ad620693f6ecbcec0df3f672e0cb9"
     },
     {
       "path": "works/Friedman2020GreatPresetRemoteTeams089.html",
@@ -28755,8 +28755,8 @@
     },
     {
       "path": "works/Friedman2020MeasurementNaturalVariationNeurotransmitter088.html",
-      "bytes": 26828,
-      "sha256": "56b3de6a7615968b042c6839e3c64c6eadcb4230c25ead7e6a19b494dba3f636"
+      "bytes": 27179,
+      "sha256": "c98214cfc2d5d2e9fcd321d0c4e2f1c9d72f83baa65d1e5678cee79898846f0f"
     },
     {
       "path": "works/Friedman2020NeuroscienceDecisionMakingInterview091.html",
@@ -28770,8 +28770,8 @@
     },
     {
       "path": "works/Friedman2021ActiveInferantsActiveInference075.html",
-      "bytes": 25068,
-      "sha256": "b0e0a397345f883263670cb79ffeec20ab93fd76d7a44bea0eca540943897c01"
+      "bytes": 25267,
+      "sha256": "350e3d55b51b2c1f19d02b23097cd808ce33a19530d16556fff637d4c91dd06d"
     },
     {
       "path": "works/Friedman2021ActiveInferenceModelingConflict076.html",
@@ -28970,8 +28970,8 @@
     },
     {
       "path": "works/Friedman2023GuidedTourThroughSpaces045.html",
-      "bytes": 23341,
-      "sha256": "752c262596c6355a822ef6f80ca14c3d37368bc53d05a276a37ab4f886c24db0"
+      "bytes": 23616,
+      "sha256": "8c1740937ac3a8ae25322458ef97c2481ccb39843bf791ee88af8a78eb43b68d"
     },
     {
       "path": "works/Friedman2023ModernNostrIndexCard138.html",
@@ -29075,8 +29075,8 @@
     },
     {
       "path": "works/Friedman2024FederatedInferenceBeliefSharing036.html",
-      "bytes": 28620,
-      "sha256": "3b0d71f575cc94c675aab87cd2926723a2fd31909924dff27215263eebcaf821"
+      "bytes": 28866,
+      "sha256": "581a174c5d7d192d70ff331674b1b5d83941abf576af3dc03247a89e4eca3fa8"
     },
     {
       "path": "works/Friedman2024FourFoldFieldsQuantum037.html",
@@ -29105,8 +29105,8 @@
     },
     {
       "path": "works/Friedman2024SharedProtentionsMultiAgent040.html",
-      "bytes": 23683,
-      "sha256": "0fe8a3e1f50eb71f2c91952ed6f8907f7fd3fbe817a898b61665094208612273"
+      "bytes": 23949,
+      "sha256": "37b06258548c4401b053c30bf88411f84b9020c2912728748aee7ee3afba9f04"
     },
     {
       "path": "works/Friedman2024WayFindingInfiniteImaginarium042.html",
@@ -29240,8 +29240,8 @@
     },
     {
       "path": "works/Friedman2025TemporalDepthCoherentSelf023.html",
-      "bytes": 24361,
-      "sha256": "c48106fb019709cedbb23868c5763082612811ca5a7f5d0b9cffdfe79a345dcb"
+      "bytes": 24547,
+      "sha256": "0650be01e59104663b7b18f918abe3378ce50daf62c69fb50ec1afc49b033d17"
     },
     {
       "path": "works/Friedman2025ThoughtseedsHierarchicalAgenticFramework027.html",
