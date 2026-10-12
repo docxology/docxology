@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T18:49:04Z",
+  "generated_at": "2026-10-12T18:55:54Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "8b271b92d4cab03747707890200a53a801c27e582d7c9e857d146381fc30906c",
+      "sha256": "a5de167c931baf3c2bfcd38bc28a66de9f92594e235ad6a628672587e5f3ec86",
       "files": [
         {
           "path": "resume/source.json",
@@ -102,8 +102,8 @@
         },
         {
           "path": "data/software.json",
-          "bytes": 81586,
-          "sha256": "1bc156a8fc39619777045538045d1f97b22733f27eced2abc7f68e0ae45a3bba"
+          "bytes": 81601,
+          "sha256": "95cbe1561b128c70ba28b4c2a385a2ce88933a712f814d389796be6117c39e22"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 13114,
-          "sha256": "b13865fab3ddb599542c4e210b41a4e22da36396dd5ccf5538833b162e422507"
+          "sha256": "0d4458fb3282d356ec0d141c20e19d7966f16e9b043acd78ed82f2a728ca42fa"
         },
         {
           "path": "data/github-repositories.json",
@@ -8197,12 +8197,12 @@
       "url": "https://github.com/docxology/CogSecSkills",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes · · Zenodo · Zenodo",
+      "description": "Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes · · Earlier archive · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-06",
       "paper_path": "papers/2026_CogSecSkills/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.20804585"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21513316"
     },
     {
       "name": "template_madlib",

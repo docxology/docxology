@@ -456,7 +456,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/CogSecSkills#software",
             "name": "CogSecSkills",
-            "description": "Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes ·  · Zenodo · Zenodo",
+            "description": "Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes ·  · Earlier archive · Citation DOI",
             "codeRepository": "https://github.com/docxology/CogSecSkills",
             "author": {
                 "@type": "Person",
@@ -467,7 +467,7 @@
             "dateCreated": "2026-06-18T23:40:37Z",
             "dateModified": "2026-10-01T21:30:36Z",
             "keywords": "agentic-ai, claude, claude-code, cognitive-security, counterintelligence, defensive-security, information-warfare, intelligence-analysis, multiharness, osint, python, skills, structured-analytic-techniques, tradecraft, zenodo",
-            "sameAs": "https://doi.org/10.5281/zenodo.20804585"
+            "sameAs": "https://doi.org/10.5281/zenodo.21513316"
         },
         {
             "@type": "SoftwareSourceCode",

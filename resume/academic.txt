@@ -14,7 +14,7 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-10-12T18:49:04Z
+Generated: 2026-10-12T18:55:54Z
 
 Current public metrics: 222 curated works; 163 catalogued software repositories (122 owned + 41 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 233 docxology + 45 AII public repositories (174 primary, 104 forks).
 
@@ -371,7 +371,7 @@ docxology/template_autoscientists | Python | https://github.com/docxology/templa
 docxology/template_newspaper | Python | https://github.com/docxology/template_newspaper | The Triplicate data-driven large-format newspaper layout engine · · Zenodo | paper: papers/2026_Triplicate/ | zenodo: https://doi.org/10.5281/zenodo.20533675
 docxology/ntqr_llm | Python | https://github.com/docxology/ntqr_llm | Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes · · Zenodo | paper: papers/2026_RecoveringLLMPersona/ | zenodo: https://doi.org/10.5281/zenodo.20498699
 docxology/itrace | Python | https://github.com/docxology/itrace | Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports · · Citation DOI | paper: papers/2026_ITrace/ | zenodo: https://doi.org/10.5281/zenodo.20614908
-docxology/CogSecSkills | Python | https://github.com/docxology/CogSecSkills | Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes · · Zenodo · Zenodo | paper: papers/2026_CogSecSkills/ | zenodo: https://doi.org/10.5281/zenodo.20804585
+docxology/CogSecSkills | Python | https://github.com/docxology/CogSecSkills | Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes · · Earlier archive · Citation DOI | paper: papers/2026_CogSecSkills/ | zenodo: https://doi.org/10.5281/zenodo.21513316
 docxology/template_madlib | Python | https://github.com/docxology/template_madlib | Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing · · Citation DOI | paper: papers/2026_TemplateMadlib/ | zenodo: https://doi.org/10.5281/zenodo.20786638
 docxology/ant_stack | Python | https://github.com/docxology/ant_stack | The Ant Stack — layered computational model of collective ant-colony intelligence | paper: papers/2025_AntStack/
 docxology/cohereants | Python | https://github.com/docxology/cohereants | Computational research on insect infrared sensing and olfaction modeling · · Zenodo · Zenodo | paper: papers/2026_WhenDoBugs/ | zenodo: https://doi.org/10.5281/zenodo.20450970
