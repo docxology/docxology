@@ -95,5 +95,17 @@
     "source": "abstract",
     "date": "2026-10-01",
     "basis": "Replaced an inaccurate hand-seeded description with the curated document summary"
+  },
+  "citation_metadata": {
+    "doi": "10.1038/s42003-020-0813-8",
+    "title": "Gene expression variation in the brains of harvester ant foragers is associated with collective behavior",
+    "source_url": "https://api.crossref.org/works/10.1038%2Fs42003-020-0813-8",
+    "checked_at": "2026-10-12T21:33:54Z",
+    "resource_type": "journal-article",
+    "journal_title": "Communications Biology",
+    "volume": "3",
+    "issue": "1",
+    "issn": "2399-3642",
+    "publication_date": "2020-03-05"
   }
 }

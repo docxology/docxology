@@ -31,3 +31,9 @@ identifiers:
   - type: url
     value: "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.1.0"
     description: "GitHub release"
+  - type: url
+    value: "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.5.0"
+    description: "GitHub release"
+  - type: url
+    value: "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.6.0"
+    description: "GitHub release"

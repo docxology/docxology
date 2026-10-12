@@ -87,5 +87,16 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Theoretical/hypothesis paper; no new data or simulation are reported here. The Summary states the authors 'have shown from multiple perspectives' that temporal depth collapse causes dissociation, but the body notes the supporting evidence is correlational.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "citation_metadata": {
+    "doi": "10.3389/fpsyg.2025.1585315",
+    "title": "Temporal depth in a coherent self and in depersonalization: theoretical model",
+    "source_url": "https://api.crossref.org/works/10.3389%2Ffpsyg.2025.1585315",
+    "checked_at": "2026-10-12T21:33:51Z",
+    "resource_type": "journal-article",
+    "journal_title": "Frontiers in Psychology",
+    "volume": "16",
+    "issn": "1664-1078",
+    "publication_date": "2025-09-03"
   }
 }

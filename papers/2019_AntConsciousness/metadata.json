@@ -72,5 +72,18 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Conceptual/philosophy-of-science paper; no new data. 'Methods' are the analytic framework and the evidence base it draws on.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
+  },
+  "citation_metadata": {
+    "doi": "10.1007/s11229-019-02130-y",
+    "title": "The ant colony as a test for scientific theories of consciousness",
+    "source_url": "https://api.crossref.org/works/10.1007%2Fs11229-019-02130-y",
+    "checked_at": "2026-10-12T21:03:04Z",
+    "resource_type": "journal-article",
+    "journal_title": "Synthese",
+    "volume": "198",
+    "issue": "2",
+    "pages": "1457-1480",
+    "issn": "0039-7857",
+    "publication_date": "2019-02-12"
   }
 }

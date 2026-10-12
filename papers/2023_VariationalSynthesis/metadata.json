@@ -88,5 +88,18 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Primarily a theoretical/formal paper with one illustrative numerical study; the authors state simulations and lab experiments are needed to test the framework.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "citation_metadata": {
+    "doi": "10.3390/e25070964",
+    "title": "A Variational Synthesis of Evolutionary and Developmental Dynamics",
+    "source_url": "https://api.crossref.org/works/10.3390%2Fe25070964",
+    "checked_at": "2026-10-12T21:03:03Z",
+    "resource_type": "journal-article",
+    "journal_title": "Entropy",
+    "volume": "25",
+    "issue": "7",
+    "pages": "964",
+    "issn": "1099-4300",
+    "publication_date": "2023-06-21"
   }
 }

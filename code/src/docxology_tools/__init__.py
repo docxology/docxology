@@ -74,6 +74,7 @@ MODULES: tuple[str, ...] = (
     "bibliography_links",
     "build_stamp",
     "change_classifier",
+    "citation_metadata",
     "collection_jsonld",
     "count_consistency",
     "deploy_freshness",

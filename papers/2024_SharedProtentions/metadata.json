@@ -77,5 +77,18 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Purely theoretical/formal paper; no data were created or analyzed (per its Data Availability Statement).",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "citation_metadata": {
+    "doi": "10.3390/e26040303",
+    "title": "Shared Protentions in Multi-Agent Active Inference",
+    "source_url": "https://api.crossref.org/works/10.3390%2Fe26040303",
+    "checked_at": "2026-10-12T21:33:52Z",
+    "resource_type": "journal-article",
+    "journal_title": "Entropy",
+    "volume": "26",
+    "issue": "4",
+    "pages": "303",
+    "issn": "1099-4300",
+    "publication_date": "2024-03-29"
   }
 }

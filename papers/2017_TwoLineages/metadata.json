@@ -56,5 +56,17 @@
     "date": "2026-10-01",
     "basis": "Passage recovered from the document",
     "evidence_source": "full_text.md"
+  },
+  "citation_metadata": {
+    "doi": "10.1111/mec.13964",
+    "title": "Two lineages that need each other",
+    "source_url": "https://api.crossref.org/works/10.1111%2Fmec.13964",
+    "checked_at": "2026-10-12T21:03:04Z",
+    "resource_type": "journal-article",
+    "journal_title": "Molecular Ecology",
+    "volume": "26",
+    "issue": "4",
+    "pages": "975-976",
+    "issn": "0962-1083"
   }
 }

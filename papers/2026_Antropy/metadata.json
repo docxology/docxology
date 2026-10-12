@@ -1,0 +1,93 @@
+{
+  "title": "antropy: native multidimensional entropy and configurable complexity analysis",
+  "version": "0.3.1",
+  "doi": "10.5281/zenodo.23306200",
+  "doi_url": "https://doi.org/10.5281/zenodo.23306200",
+  "zenodo_record": "https://zenodo.org/records/23306200",
+  "record_id": "23306201",
+  "publication_date": "2026-10-11",
+  "resource_type": {
+    "title": "Software",
+    "type": "software"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute"
+    }
+  ],
+  "description": "<p>antropy v0.3.1 provides typed, configurable entropy and complexity methods for native multidimensional data, including high-dimensional sample entropy (HDSE), related local-template estimators, probability and dependence measures, ordinal measures, FFT/SVD entropy, resource planning and whole-observation inference. This software archive includes reproducible synthetic experiments, prospective power and null-calibration studies, tests, documentation, configuration plans, provenance and the methods manuscript rendered through the pinned docxology/template pipeline. Synthetic demonstrations do not establish biological sample sizes or reproduce the original HDSE paper&rsquo;s empirical results. Version 0.3.1 adds an authenticated root-level copy of the rendered manuscript; the underlying scientific study snapshots retain their original producer metadata. Repository: https://github.com/docxology/antropy.</p>",
+  "keywords": [
+    "entropy",
+    "HDSE",
+    "complexity",
+    "reproducibility"
+  ],
+  "files": [
+    {
+      "name": "antropy_hd-0.3.1.tar.gz",
+      "size_bytes": 16746773,
+      "checksum": "md5:e9b69011db390697626bac99b844c702",
+      "download_url": "https://zenodo.org/api/records/23306201/files/antropy_hd-0.3.1.tar.gz/content"
+    },
+    {
+      "name": "manifest.json",
+      "size_bytes": 247596,
+      "checksum": "md5:859a2d6f5e79f4ed20e0d2091efe551a",
+      "download_url": "https://zenodo.org/api/records/23306201/files/manifest.json/content"
+    },
+    {
+      "name": "release-identity.json",
+      "size_bytes": 102371,
+      "checksum": "md5:4e0b5c7afc9c5a07d70f833c4b34f713",
+      "download_url": "https://zenodo.org/api/records/23306201/files/release-identity.json/content"
+    },
+    {
+      "name": "antropy-methods.pdf",
+      "size_bytes": 1817938,
+      "checksum": "md5:c5af5f2aae4a9dbfeefb236fec50ae58",
+      "download_url": "https://zenodo.org/api/records/23306201/files/antropy-methods.pdf/content"
+    },
+    {
+      "name": "antropy_hd-0.3.1-py3-none-any.whl",
+      "size_bytes": 53037,
+      "checksum": "md5:d359519aa3b4bf1be5c21aa38662004f",
+      "download_url": "https://zenodo.org/api/records/23306201/files/antropy_hd-0.3.1-py3-none-any.whl/content"
+    },
+    {
+      "name": "antropy-v0.3.1-source.zip",
+      "size_bytes": 17874917,
+      "checksum": "md5:a98f8898f84e3937565e922abfe896c6",
+      "download_url": "https://zenodo.org/api/records/23306201/files/antropy-v0.3.1-source.zip/content"
+    },
+    {
+      "name": "release-verification.json",
+      "size_bytes": 8816,
+      "checksum": "md5:8fd879b9ac2f9861ed095b3dde1882bb",
+      "download_url": "https://zenodo.org/api/records/23306201/files/release-verification.json/content"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size_bytes": 628,
+      "checksum": "md5:f242308778e7d556b7d7be17230b3de9",
+      "download_url": "https://zenodo.org/api/records/23306201/files/SHA256SUMS/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/antropy"
+    }
+  ],
+  "github_repo": "docxology/antropy",
+  "github_release_url": "https://github.com/docxology/antropy/releases/tag/v0.3.1",
+  "release_tag": "v0.3.1",
+  "release_name": "antropy v0.3.1",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked"
+  ],
+  "checked_at": "2026-10-12T18:48:30Z"
+}

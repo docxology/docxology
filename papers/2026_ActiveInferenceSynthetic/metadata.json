@@ -1,0 +1,80 @@
+{
+  "title": "Active Inference -- A Synthetic Overview",
+  "version": "0.5.0",
+  "doi": "10.5281/zenodo.23321280",
+  "doi_url": "https://doi.org/10.5281/zenodo.23321280",
+  "zenodo_record": "https://zenodo.org/records/23321280",
+  "record_id": "23321281",
+  "publication_date": "2026-10-12",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
+      "name": "Alexandra Mikhailova",
+      "affiliation": "Active Inference Institute"
+    }
+  ],
+  "description": "This tutorial connects Active Inference and synthetic intelligences to explicitly specified informational and dynamical models. Finite categorical examples make Bayesian conditioning, variational free energy, expected free energy, policy planning, and observation-contingent commitments executable. A decision-value example separates information gain in nats from improved expected utility and observation cost. Gaussian examples distinguish deterministic relaxing paths from stationary ensemble probability current, and marginal dependence from conditional independence. A two-level model illustrates prediction and joint conditioning without assuming a neural implementation. The standalone Python package supplies reproducible figures, independent analytical checks, and counterexamples; a separate Lean layer imports selected real-valued results from a pinned revision of the broader FEP_Formal library. Generalized Notation Notation and other Active Inference Institute resources provide further routes for model specification and learning. The paper distinguishes computational correctness, theorem hypotheses, thermodynamic units, and scientific interpretation. These controlled demonstrations explain particular models; they neither establish general intelligence nor infer life from circulation.",
+  "keywords": [
+    "active inference",
+    "free energy principle",
+    "Bayesian mechanics",
+    "non-equilibrium steady state",
+    "variational inference",
+    "self-organization",
+    "synthetic intelligence"
+  ],
+  "files": [
+    {
+      "name": "ActiveInferenceSynthetic_v0.5.0.pdf",
+      "size_bytes": 3356707,
+      "checksum": "md5:5eaf1df7ff9fab64020f8f94a405086c",
+      "download_url": "https://zenodo.org/api/records/23321281/files/ActiveInferenceSynthetic_v0.5.0.pdf/content"
+    },
+    {
+      "name": "ActiveInferenceSynthetic_source_v0.5.0.zip",
+      "size_bytes": 3277405,
+      "checksum": "md5:01d28f6bae2199b43e791b3f860196d4",
+      "download_url": "https://zenodo.org/api/records/23321281/files/ActiveInferenceSynthetic_source_v0.5.0.zip/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "identifier": "https://github.com/docxology/ActiveInferenceSynthetic",
+      "relation": "references",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.23220027",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.7803328",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.23196891",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.7803313",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-10-12T18:31:36Z"
+}

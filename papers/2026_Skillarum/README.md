@@ -36,6 +36,10 @@ website extraction · agent skills · provenance · reproducibility · prompt in
 
 ## Related
 
+- GitHub release: https://github.com/docxology/Skillarum/releases/tag/v0.3.1
+
+- GitHub release: https://github.com/docxology/Skillarum/releases/tag/v0.3.0
+
 - Zenodo record: https://zenodo.org/records/22663906
 - GitHub release: https://github.com/docxology/Skillarum/releases/tag/v0.2.0
 - Source repository: https://github.com/docxology/Skillarum

@@ -16,10 +16,36 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from docxology_tools.software_table import software_catalog_dois
+
 from publication_pairing import (
     canonical_pair_candidate_fingerprint,
     reviewed_pair_decision_index,
 )
+
+
+def _software_pair_matches(report: dict[str, Any], fingerprint: tuple[str, ...] | None) -> bool:
+    """Verify the exact action against a serialized software publication pair."""
+    pairs = report.get("pairs")
+    if fingerprint is None or not isinstance(pairs, list):
+        return False
+    for pair in pairs:
+        if not isinstance(pair, dict):
+            continue
+        record, release = pair.get("record"), pair.get("release")
+        if not isinstance(record, dict) or not isinstance(release, dict):
+            continue
+        kind = record.get("resource_type")
+        if not isinstance(kind, dict) or str(kind.get("type") or kind.get("id") or "").casefold() != "software":
+            continue
+        actual = canonical_pair_candidate_fingerprint(
+            doi=pair.get("doi"), github_release_url=pair.get("github_release_url"),
+            zenodo_record_url=pair.get("zenodo_record_url"), github_repo=pair.get("github_repo"),
+            title=record.get("title"), release_tag=release.get("tag"),
+        )
+        if actual == fingerprint and record.get("doi") == pair.get("doi"):
+            return True
+    return False
 
 
 SCHEMA_VERSION = "1.0"
@@ -656,6 +682,18 @@ def paired_publication_items(
                 "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row."
                 if status != "deferred"
                 else "The pairing report says this candidate was reviewed, but no exact durable decision was found; re-review it."
+            )
+        elif action_type == "software_catalogued":
+            catalog = software_catalog_dois(repo_root).get(doi.casefold())
+            valid = bool(
+                catalog and catalog["paper_folder"] == action.get("folder")
+                and _software_pair_matches(report, candidate_fingerprint)
+            )
+            status = "applied" if valid else "deferred"
+            category = "zenodo_candidate"
+            reason = (
+                "The software archive is already linked by its DOI from a software row supplementing a bibliography-cited paper; no new bibliography entry is required."
+                if valid else "The claimed software-catalog linkage is no longer verifiable; re-review it."
             )
         elif action_type == "update_existing":
             applied_receipt_valid, applied_receipt_reason = (

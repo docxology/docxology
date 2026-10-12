@@ -86,5 +86,17 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Authors caveat that transcript counts approximate the genomic repertoire only and remain speculative until knockdown studies confirm gene functions; analysis used workers only for termites and did not separate sexes.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "citation_metadata": {
+    "doi": "10.1002/ece3.70063",
+    "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea",
+    "source_url": "https://api.crossref.org/works/10.1002%2Fece3.70063",
+    "checked_at": "2026-10-12T21:03:03Z",
+    "resource_type": "journal-article",
+    "journal_title": "Ecology and Evolution",
+    "volume": "14",
+    "issue": "8",
+    "issn": "2045-7758",
+    "publication_date": "2024-07-31"
   }
 }

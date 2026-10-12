@@ -30,3 +30,9 @@ identifiers:
   - type: url
     value: "https://github.com/docxology/Skillarum/releases/tag/v0.2.0"
     description: "GitHub release"
+  - type: url
+    value: "https://github.com/docxology/Skillarum/releases/tag/v0.3.0"
+    description: "GitHub release"
+  - type: url
+    value: "https://github.com/docxology/Skillarum/releases/tag/v0.3.1"
+    description: "GitHub release"

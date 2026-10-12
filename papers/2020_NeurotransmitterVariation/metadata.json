@@ -85,5 +85,18 @@
     "date": "2026-10-01",
     "basis": "Passage recovered from the document",
     "evidence_source": "full_text.md"
+  },
+  "citation_metadata": {
+    "doi": "10.1007/s00216-019-02355-3",
+    "title": "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies",
+    "source_url": "https://api.crossref.org/works/10.1007%2Fs00216-019-02355-3",
+    "checked_at": "2026-10-12T21:33:54Z",
+    "resource_type": "journal-article",
+    "journal_title": "Analytical and Bioanalytical Chemistry",
+    "volume": "412",
+    "issue": "24",
+    "pages": "6167-6175",
+    "issn": "1618-2642",
+    "publication_date": "2020-01-07"
   }
 }

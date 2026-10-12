@@ -8,7 +8,7 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-10-06; implementation progress and remaining evidence/access
+- Last reviewed: 2026-10-12; implementation progress and remaining evidence/access
   dependencies recorded separately from completed history.
 
 ## P0 — Release and integrity
@@ -59,7 +59,18 @@ criteria, and dependencies. Re-review this file before each public release.
 - Priority: P1
 - Owner: RESEARCHER
 - Trigger: monthly, before a claim-sensitive release, or when the weekly `freshness.yml` run opens or comments on the "Public-source freshness drift detected" issue (the reviewed baseline `reports/public_source_snapshot_2026-10-07.json` resolved #44; a later drift opens a new issue, which is closed by hand once a reviewed refresh is the committed baseline)
-- Status (2026-10-07): the `fep_formal` v1.5.0 Zenodo software archive is linked from its catalog row by concept DOI. A same-day pairing dry run (releases since 2026-09-26, AII included) found 3 strong existing-work updates, including the `fep_formal` v1.5.0 and Ento-Linguistics v1.2.0 releases, and 25 needs-review pairs, most of them the `template` v3.8.0 release; they await a reviewed pairing pass (`sync_paired_publications.py`, then decisions in `data/paired-publication-decisions.json`).
+- Status (2026-10-12): refreshed the public-source snapshot, inventory, and
+  warning-free GitHub–Zenodo pairing scan. Strong publication intake added
+  the synthetic overview and antropy methods archive and refreshed existing
+  release metadata. The supplemental `fep_formal` software archive remains
+  linked to its existing paper. Ambiguous publication pairs remain visible in [the current source review](reports/public_source_review_2026-10-12.md).
+  ResearchGate, SciProfiles, and PhilPeople returned 403; a live Flickr refresh
+  needs an API key. Scholar retains its existing authenticated snapshot.
+  YouTube refreshes failed canonical metadata checks, so both channel caches
+  were preserved. The `antropy` and `reason` catalog entries have source-backed
+  reviews in [the repository review](reports/repository_catalog_review_2026-10-12.json).
+  The synthetic overview’s referenced GitHub repository returns 404 to an
+  anonymous read; its public Zenodo PDF and source archive remain available.
 - Deliverable: refresh ORCID, Crossref, Zenodo, PubMed, Europe PMC, GitHub, Scholar, organizational, teaching, art, and software evidence; review `data/coverage-exceptions.json`
 - Acceptance: only verified metadata is applied, access dates and caveats remain visible, and current coverage is linked from agent and human discovery surfaces
 - Dependencies: public-source APIs, primary profile pages, coverage report
@@ -168,6 +179,11 @@ criteria, and dependencies. Re-review this file before each public release.
 - Deliverable: validate meta-policy limitations, CSP/URL/iframe/rel invariants, canonical and sitemap families, then record Search Console follow-up
 - Acceptance: no inline handlers/scripts or unsafe schemes; approved YouTube origin only; every public family has canonical, metadata, schema, and sitemap policy coverage
 - Dependencies: `seo_invariants.py`, `gsc_followup_preflight.py`, signed-in Search Console review
+- Scholar follow-up: preserve permanent URLs and the artifact ceiling while
+  planning a hash-bound PDF placement strategy for the same-directory
+  requirement.
+  See [scholar-inclusion.md](docs/seo/scholar-inclusion.md). Valid citation tags
+  do not close PDF eligibility or actual Scholar indexing.
 - Access: the owner's signed-in Search Console property was available on
   2026-10-05; observations are in
   [the dated report](reports/gsc_observations_2026-10-05.md) and the procedure

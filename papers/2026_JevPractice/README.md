@@ -35,6 +35,8 @@ paired GitHub and Zenodo publication
 
 ## Related
 
+- GitHub release: https://github.com/docxology/daf-jev/releases/tag/v0.7.0
+
 - GitHub release: https://github.com/docxology/daf-jev/releases/tag/v0.6.0
 
 - GitHub release: https://github.com/docxology/daf-jev/releases/tag/v0.5.0

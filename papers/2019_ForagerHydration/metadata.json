@@ -87,5 +87,17 @@
     "date": "2026-10-01",
     "basis": "Passage recovered from the document",
     "evidence_source": "full_text.md"
+  },
+  "citation_metadata": {
+    "doi": "10.1038/s41598-019-41586-3",
+    "title": "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior",
+    "source_url": "https://api.crossref.org/works/10.1038%2Fs41598-019-41586-3",
+    "checked_at": "2026-10-12T21:33:55Z",
+    "resource_type": "journal-article",
+    "journal_title": "Scientific Reports",
+    "volume": "9",
+    "issue": "1",
+    "issn": "2045-2322",
+    "publication_date": "2019-03-26"
   }
 }

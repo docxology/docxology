@@ -67,5 +67,16 @@
     "source": "papers/paper_metadata.json",
     "date": "2026-10-01",
     "basis": "Retained source-grounded summary"
+  },
+  "citation_metadata": {
+    "doi": "10.1016/j.plrev.2023.11.001",
+    "title": "A guided tour through the spaces of particular “minds”: A Comment on “Path integrals, particular kinds, and strange things”",
+    "source_url": "https://api.crossref.org/works/10.1016%2Fj.plrev.2023.11.001",
+    "checked_at": "2026-10-12T21:33:53Z",
+    "resource_type": "journal-article",
+    "journal_title": "Physics of Life Reviews",
+    "volume": "47",
+    "pages": "271-272",
+    "issn": "1571-0645"
   }
 }

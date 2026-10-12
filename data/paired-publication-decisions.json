@@ -11890,6 +11890,816 @@
           "source_report": "reports/paired_publications_2026-09-24.json"
         }
       ]
+    },
+    {
+      "id": "curation-2026-10-12-01",
+      "decision": "superseded",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.20804585",
+      "title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+      "candidate_github_repo": "docxology/CogSecSkills",
+      "folder": "2026_CogSecSkills",
+      "representation": "earlier-software-archive",
+      "note": "Retain DOI 10.5281/zenodo.20804585 as the earlier archive in the CogSecSkills software catalog. Keep current citation DOI 10.5281/zenodo.21513316 and its existing manuscript entry; do not create a duplicate publication from this weak release match.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20804585",
+          "record_title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+          "zenodo_record_url": "https://zenodo.org/records/20804585",
+          "github_repo": "docxology/CogSecSkills",
+          "github_release_url": "https://github.com/docxology/CogSecSkills/releases/tag/v1.8.0",
+          "release_tag": "v1.8.0",
+          "release_name": "v1.8.0 — reliability, modular runtime, and coherent archives",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-02",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.20417016",
+      "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_BoundedAutoResearchTiny",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20417016",
+          "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+          "zenodo_record_url": "https://zenodo.org/records/20417016",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-03",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.20417104",
+      "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_EditorialQualityAt",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20417104",
+          "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+          "zenodo_record_url": "https://zenodo.org/records/20417104",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-04",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.20453879",
+      "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_SelfImprovementAgent",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20453879",
+          "record_title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+          "zenodo_record_url": "https://zenodo.org/records/20453879",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-05",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.20533125",
+      "title": "The Template Textbook",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_TemplateTextbook",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20533125",
+          "record_title": "The Template Textbook",
+          "zenodo_record_url": "https://zenodo.org/records/20533125",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-06",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.20533675",
+      "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_Triplicate",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20533675",
+          "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+          "zenodo_record_url": "https://zenodo.org/records/20533675",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-07",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.20931964",
+      "title": "A Living Meta-Analysis of the Modafinil Literature",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_LivingMetaAnalysis",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20931964",
+          "record_title": "A Living Meta-Analysis of the Modafinil Literature",
+          "zenodo_record_url": "https://zenodo.org/records/20931964",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-08",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.21086292",
+      "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_ExploratoryDataAnalysis",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21086292",
+          "record_title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+          "zenodo_record_url": "https://zenodo.org/records/21086292",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-09",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.21086548",
+      "title": "A Domain Language for Specifying Controlled Methods",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_DomainLanguageSpecifying",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21086548",
+          "record_title": "A Domain Language for Specifying Controlled Methods",
+          "zenodo_record_url": "https://zenodo.org/records/21086548",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-10",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.21176000",
+      "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_ShapeBetween",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21176000",
+          "record_title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+          "zenodo_record_url": "https://zenodo.org/records/21176000",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-11",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.20931955",
+      "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_RefinementGold",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20931955",
+          "record_title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
+          "zenodo_record_url": "https://zenodo.org/records/20931955",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-12",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.20417021",
+      "title": "Active Inference Multi-Track Exemplar",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_ActiveInferenceMulti",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20417021",
+          "record_title": "Active Inference Multi-Track Exemplar",
+          "zenodo_record_url": "https://zenodo.org/records/20417021",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-13",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.20417136",
+      "title": "Convergence Analysis of Gradient Descent Optimization",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_ConvergenceAnalysisGradient",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20417136",
+          "record_title": "Convergence Analysis of Gradient Descent Optimization",
+          "zenodo_record_url": "https://zenodo.org/records/20417136",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-14",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.20533669",
+      "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_DeterministicTestbedSelf",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20533669",
+          "record_title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+          "zenodo_record_url": "https://zenodo.org/records/20533669",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-15",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.20786638",
+      "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_TemplateMadlib",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20786638",
+          "record_title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+          "zenodo_record_url": "https://zenodo.org/records/20786638",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-16",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.20419007",
+      "title": "A template/ approach to Reproducible Generative Research",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_TemplateApproachReproducible",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20419007",
+          "record_title": "A template/ approach to Reproducible Generative Research",
+          "zenodo_record_url": "https://zenodo.org/records/20419007",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-17",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.21227869",
+      "title": "Autopoietic Project Generation",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_AutopoieticProjectGeneration",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21227869",
+          "record_title": "Autopoietic Project Generation",
+          "zenodo_record_url": "https://zenodo.org/records/21227869",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-18",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.21281509",
+      "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_TemplatePitchDeck",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21281509",
+          "record_title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+          "zenodo_record_url": "https://zenodo.org/records/21281509",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-19",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.21298883",
+      "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_DataDescriptorTemplate",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21298883",
+          "record_title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
+          "zenodo_record_url": "https://zenodo.org/records/21298883",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-20",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.21298890",
+      "title": "Redacted Report Template: Disclosure Control and Release Audit",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_RedactedReportTemplate",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21298890",
+          "record_title": "Redacted Report Template: Disclosure Control and Release Audit",
+          "zenodo_record_url": "https://zenodo.org/records/21298890",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-21",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.21298892",
+      "title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_RegisteredReportTemplate",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21298892",
+          "record_title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
+          "zenodo_record_url": "https://zenodo.org/records/21298892",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-22",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.16903351",
+      "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_ReproducibleResearch",
+      "representation": "bibliography-folder",
+      "note": "Retain this publication as a separate work with its own citation DOI, bibliography entry, and canonical work page. The shared template release is tooling context, not evidence that distinct publications should be merged or that every manuscript changed at this release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.16903351",
+          "record_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "zenodo_record_url": "https://zenodo.org/records/16903351",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v3.8.0",
+          "release_tag": "v3.8.0",
+          "release_name": "Research Project Template v3.8.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-23",
+      "decision": "accept",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.7803313",
+      "title": "Generalized_Notation_Notation (GNN)",
+      "candidate_github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+      "folder": "2026_GeneralizedNotationNotationGNN",
+      "representation": "bibliography-folder",
+      "note": "These releases are version history of the existing GNN concept DOI 10.5281/zenodo.7803313. Retain the represented work and canonical page; no duplicate publication or inferred DOI/release cross-link.",
+      "raw_candidate_count": 4,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v4.1.0",
+          "release_tag": "v4.1.0",
+          "release_name": "GNN 4.1.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        },
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v4.0.1",
+          "release_tag": "v4.0.1",
+          "release_name": "GNN 4.0.1",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        },
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v4.0.0",
+          "release_tag": "v4.0.0",
+          "release_name": "GNN 4.0.0 — Current-run Reliability",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        },
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.6.0",
+          "release_tag": "v3.6.0",
+          "release_name": "v3.6.0 — Composability & Offline Truth",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-24",
+      "decision": "superseded",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.23196891",
+      "title": "fep_formal: Towards Lean 4 Formalization of the Free Energy Principle",
+      "candidate_github_repo": "ActiveInferenceInstitute/fep_formal",
+      "folder": "2026_FEPLean",
+      "representation": "historical-software-archive",
+      "note": "Retain v1.5.0 as historical software under archive concept DOI 10.5281/zenodo.23196891, supplemental to the existing FEP manuscript. Keep v1.6.0 current; do not create a separate manuscript.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23196891",
+          "record_title": "fep_formal: Towards Lean 4 Formalization of the Free Energy Principle",
+          "zenodo_record_url": "https://zenodo.org/records/23196891",
+          "github_repo": "ActiveInferenceInstitute/fep_formal",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.5.0",
+          "release_tag": "v1.5.0",
+          "release_name": "FEP_Lean v1.5.0 — 168-topic catalogue, finite information program and streamlined release gate",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-25",
+      "decision": "superseded",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.19574117",
+      "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
+      "candidate_github_repo": "docxology/ento_linguistics",
+      "folder": "2026_EntoLinguistics",
+      "representation": "version-history-only",
+      "note": "Retain v1.3.0 and v1.2.1 as intermediate version history of the existing Ento-Linguistics publication. Keep verified v1.3.1 metadata current; no new bibliography rows or rollback.",
+      "raw_candidate_count": 2,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.19574117",
+          "record_title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
+          "zenodo_record_url": "https://zenodo.org/records/19574117",
+          "github_repo": "docxology/ento_linguistics",
+          "github_release_url": "https://github.com/docxology/ento_linguistics/releases/tag/v1.3.0",
+          "release_tag": "v1.3.0",
+          "release_name": "Ento-Linguistics v1.3.0 — Complex systems and matched research lecture",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        },
+        {
+          "doi": "10.5281/zenodo.19574117",
+          "record_title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
+          "zenodo_record_url": "https://zenodo.org/records/19574117",
+          "github_repo": "docxology/ento_linguistics",
+          "github_release_url": "https://github.com/docxology/ento_linguistics/releases/tag/v1.2.1",
+          "release_tag": "v1.2.1",
+          "release_name": "Ento-Linguistics v1.2.1 — Validated network evidence",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
+    },
+    {
+      "id": "curation-2026-10-12-26",
+      "decision": "superseded",
+      "decided_at": "2026-10-12T21:01:26Z",
+      "decided_by": "Daniel Ari Friedman",
+      "doi": "10.5281/zenodo.23306200",
+      "title": "antropy: native multidimensional entropy and configurable complexity analysis",
+      "candidate_github_repo": "docxology/antropy",
+      "folder": "2026_Antropy",
+      "representation": "version-history-only",
+      "note": "Retain v0.3.0 as prior version history under the represented antropy methods manuscript concept DOI 10.5281/zenodo.23306200. Keep v0.3.1 current; no duplicate publication.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23306200",
+          "record_title": "antropy: native multidimensional entropy and configurable complexity analysis",
+          "zenodo_record_url": "https://zenodo.org/records/23306200",
+          "github_repo": "docxology/antropy",
+          "github_release_url": "https://github.com/docxology/antropy/releases/tag/v0.3.0",
+          "release_tag": "v0.3.0",
+          "release_name": "antropy 0.3.0",
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked"
+          ],
+          "source_report": "reports/paired_publications_2026-10-12.json"
+        }
+      ]
     }
   ]
 }

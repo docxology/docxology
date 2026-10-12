@@ -206,7 +206,8 @@ This writes `reports/paired_publications_YYYY-MM-DD.json`. Review:
   - `create_new`: strong GitHub + Zenodo pair not already represented in the bibliography.
   - `update_existing`: existing row/folder should receive newer DOI, version, PDF, metadata, or source links.
   - `needs_review`: plausible but ambiguous pair; inspect manually before changing curated files.
-  - `already_reviewed`: exact release/record pair is recorded in `data/paired-publication-decisions.json` as represented, superseded, or version-history-only; do not create a duplicate row.
+  - `software_catalogued`: a software-typed record already linked by concept DOI from a software row whose paper folder is cited in the bibliography; preserve that supplemental linkage without creating or updating a publication. Publication-typed records and unlinked software methods manuscripts still require normal intake.
+- `already_reviewed`: exact release/record pair is recorded in `data/paired-publication-decisions.json` as represented, superseded, or version-history-only; do not create a duplicate row.
 - `warnings[]` for API or metadata issues that may affect completeness.
 
 Validate the latest cached report:

@@ -909,3 +909,9 @@ identifiers:
     value: "{pair.github_release_url}"
     description: "GitHub release"
 """
+
+
+def is_software_record(record: ZenodoRecord) -> bool:
+    """Whether Zenodo types the record as software (legacy ``type`` or RDM ``id``)."""
+    kind = record.resource_type.get("type") or record.resource_type.get("id") or ""
+    return str(kind).casefold() == "software"

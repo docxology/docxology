@@ -1,11 +1,11 @@
 {
-  "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
-  "version": "0.6.0",
+  "title": "daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation",
+  "version": "0.7.2",
   "doi": "10.5281/zenodo.22816187",
   "doi_url": "https://doi.org/10.5281/zenodo.22816187",
   "zenodo_record": "https://zenodo.org/records/22816187",
-  "record_id": "22921974",
-  "publication_date": "2026-09-23",
+  "record_id": "23270982",
+  "publication_date": "2026-10-09",
   "resource_type": {
     "title": "Software",
     "type": "software"
@@ -17,20 +17,57 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "<p>Jev is TypeSafe's flagship <em>System One</em> decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with calibrated probabilities that software can branch on directly. This work presents <code>daf-jev</code>, an open, modular, composable Python toolkit for the Jev API, together with a live-API characterization of the model. The package layers ergonomic question builders, a decision-composition library (confidence gates, tiered routing, composite scoring), a concurrent corpus evaluator, a calibration module, a CLI, an agent skill, and a Model Context Protocol (MCP) server over a thin typed client. Live benchmarks show that batching questions into one call is faster and cheaper than sequential calls (up to ~18x speedup and ~4x fewer tokens), that decision pipelines complete within the model's millisecond envelope, and that reported confidence is self-consistent across repeated evaluations. All numbers in the accompanying manuscript are generated from benchmark artifacts; the full provenance chain (hashed documentation snapshot, figure registry, validation receipts) is machine-checked.</p>",
-  "keywords": [],
+  "description": "<p>daf-jev 0.7.2 provides typed native decision clients, provider-neutral backends, pure composition, exact discrete graphical inference, independently labeled dataset preparation, frozen benchmark protocols, decimal cost accounting, and reproducible manuscript evidence. This release adds an explicitly bounded native OpenRouter execution contract for TypeSafe Jev, a separately defined Perplexity Decisions contract, and prospective interleaved native-model comparison protocols. The selected native hosted evidence contains 12 successful capability calls, including complete 77-way BANKING77 and 151-way CLINC option vocabularies, with reported billing of USD 0.000556920. These capability checks establish endpoint and task support; they do not establish dataset accuracy or calibrated probability meaning. Larger native hosted studies are ongoing and remain outside this release's completed research claims. Historical unknown billing and partial local results remain explicitly identified. Two native Mac Python profiles passed all 2,436 unit cases with combined coverage above 92%; package and manuscript reproduction were independently reviewed. The seven release assets contain the source, wheel, sdist, 30-page manuscript, selected evidence archive, release manifest, and checksums. Historical synthetic security-test canaries are retained as fixtures; real credentials, private journals, model weights, and raw corpora are excluded. Source build, artifact, and main commit identities are recorded separately in the release manifest.</p>",
+  "keywords": [
+    "decision-models",
+    "benchmarking",
+    "typed-interfaces",
+    "reproducibility",
+    "bayesian-inference",
+    "selective-prediction"
+  ],
   "files": [
     {
-      "name": "daf-jev-0.6.0-source.zip",
-      "size_bytes": 3112166,
-      "checksum": "md5:7545c1b3188d8b71ddc12a1524edaea7",
-      "download_url": "https://zenodo.org/api/records/22921974/files/daf-jev-0.6.0-source.zip/content"
+      "name": "daf_jev-0.7.2.tar.gz",
+      "size_bytes": 304832,
+      "checksum": "md5:b93e2b49d0fba5c496e91869201940e5",
+      "download_url": "https://zenodo.org/api/records/23270982/files/daf_jev-0.7.2.tar.gz/content"
     },
     {
-      "name": "daf-jev_combined.pdf",
-      "size_bytes": 742862,
-      "checksum": "md5:fac04ad1523513cf5a3ce032a1f1d427",
-      "download_url": "https://zenodo.org/api/records/22921974/files/daf-jev_combined.pdf/content"
+      "name": "daf-jev-0.7.2-source.zip",
+      "size_bytes": 16559062,
+      "checksum": "md5:033b7eb2cb116a7872486fc3635a37a4",
+      "download_url": "https://zenodo.org/api/records/23270982/files/daf-jev-0.7.2-source.zip/content"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size_bytes": 551,
+      "checksum": "md5:63469ebeebd771358ac8231b4d8e8606",
+      "download_url": "https://zenodo.org/api/records/23270982/files/SHA256SUMS/content"
+    },
+    {
+      "name": "release-manifest.json",
+      "size_bytes": 239695,
+      "checksum": "md5:9c94908aa00514b6d449afbdb5edd950",
+      "download_url": "https://zenodo.org/api/records/23270982/files/release-manifest.json/content"
+    },
+    {
+      "name": "daf_jev-0.7.2-py3-none-any.whl",
+      "size_bytes": 285991,
+      "checksum": "md5:085718dfbbeecb55d28114ead9503bad",
+      "download_url": "https://zenodo.org/api/records/23270982/files/daf_jev-0.7.2-py3-none-any.whl/content"
+    },
+    {
+      "name": "daf-jev-0.7.2-evidence.zip",
+      "size_bytes": 6664751,
+      "checksum": "md5:e0a32f30db33fd714e348bac29a48b2e",
+      "download_url": "https://zenodo.org/api/records/23270982/files/daf-jev-0.7.2-evidence.zip/content"
+    },
+    {
+      "name": "daf-jev-0.7.2-manuscript.pdf",
+      "size_bytes": 1829991,
+      "checksum": "md5:ddc85f75a6a13fa72ce04f8aa627a263",
+      "download_url": "https://zenodo.org/api/records/23270982/files/daf-jev-0.7.2-manuscript.pdf/content"
     }
   ],
   "related_resources": [
@@ -40,15 +77,15 @@
     }
   ],
   "github_repo": "docxology/daf-jev",
-  "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.6.0",
-  "release_tag": "v0.6.0",
-  "release_name": "v0.6.0 — Jev as a factor source for graphical models",
+  "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.7.0",
+  "release_tag": "v0.7.0",
+  "release_name": "daf-jev v0.7.0 — Modular decision benchmarks and reproducible manuscript",
   "pdf_sha256": "",
   "pairing_confidence": "strong",
   "pairing_evidence": [
     "github_release_mentions_doi"
   ],
-  "checked_at": "2026-09-24T18:29:58Z",
+  "checked_at": "2026-10-12T18:48:29Z",
   "methods": [
     {
       "name": "daf-jev layered Python client for the System One endpoint",

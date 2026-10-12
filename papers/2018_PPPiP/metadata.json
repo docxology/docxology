@@ -83,5 +83,18 @@
     "date": "2026-10-01",
     "basis": "Passage recovered from the document",
     "evidence_source": "full_text.md"
+  },
+  "citation_metadata": {
+    "doi": "10.3390/arts7030039",
+    "title": "Partner Pen Play in Parallel (PPPiP): A New PPPiParadigm for Relationship Improvement",
+    "source_url": "https://api.crossref.org/works/10.3390%2Farts7030039",
+    "checked_at": "2026-10-12T21:33:55Z",
+    "resource_type": "journal-article",
+    "journal_title": "Arts",
+    "volume": "7",
+    "issue": "3",
+    "pages": "39",
+    "issn": "2076-0752",
+    "publication_date": "2018-08-13"
   }
 }

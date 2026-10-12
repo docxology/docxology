@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model</title>
-    <meta name="description" content="Jev is TypeSafe&#x27;s flagship System One decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with…">
+    <meta name="description" content="daf-jev 0.7.2 provides typed native decision clients, provider-neutral backends, pure composition, exact discrete graphical inference, independently…">
     <meta name="robots" content="index, follow">
     <meta name="citation_title" content="Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model">
-    <meta name="citation_publication_date" content="2026">
+    <meta name="citation_publication_date" content="2026/10/09">
     <meta name="citation_author" content="Daniel Ari Friedman">
     <meta name="citation_doi" content="10.5281/zenodo.22816187">
     <meta name="citation_pdf_url" content="https://danielarifriedman.com/papers/2026_JevPractice/daf-jev_combined.pdf">
@@ -34,7 +34,7 @@
     <script src="/js/nav-toggle.js?v=nav-20261002"></script>
     <meta property="og:type" content="article">
     <meta property="og:title" content="Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model">
-    <meta property="og:description" content="Jev is TypeSafe&#x27;s flagship System One decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with…">
+    <meta property="og:description" content="daf-jev 0.7.2 provides typed native decision clients, provider-neutral backends, pure composition, exact discrete graphical inference, independently…">
     <meta property="og:url" content="https://danielarifriedman.com/works/Friedman2026JevPracticeComposablePython219.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
@@ -42,7 +42,7 @@
     <meta property="og:image:alt" content="Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model — Daniel Ari Friedman">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model">
-    <meta name="twitter:description" content="Jev is TypeSafe&#x27;s flagship System One decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with…">
+    <meta name="twitter:description" content="daf-jev 0.7.2 provides typed native decision clients, provider-neutral backends, pure composition, exact discrete graphical inference, independently…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model — Daniel Ari Friedman">
     <link rel="stylesheet" href="../style.css?v=site-20261002b">
@@ -57,7 +57,7 @@
     "@id": "https://danielarifriedman.com/works/Friedman2026JevPracticeComposablePython219.html#work",
     "name": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
     "headline": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
-    "datePublished": "2026",
+    "datePublished": "2026-10-09",
     "url": "https://danielarifriedman.com/works/Friedman2026JevPracticeComposablePython219.html",
     "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026JevPracticeComposablePython219.html",
     "isPartOf": {
@@ -71,6 +71,30 @@
         {
             "@type": "DefinedTerm",
             "name": "Paper"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "decision-models"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "benchmarking"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "typed-interfaces"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "reproducibility"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "bayesian-inference"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "selective-prediction"
         }
     ],
     "genre": "Paper",
@@ -108,7 +132,15 @@
         "@type": "Organization",
         "name": "Zenodo"
     },
-    "abstract": "Jev is TypeSafe's flagship System One decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with calibrated probabilities that software can branch on directly. This work presents daf-jev, an open, modular, composable Python toolkit for the Jev API, together with a live-API characterization of the model. The package layers ergonomic question builders, a decision-composition library (confidence gates, tiered routing, composite scoring), a concurrent corpus evaluator, a calibration module, a CLI, an agent skill, and a Model Context Protocol (MCP) server over a thin typed client. Live benchmarks show that batching questions into one call is faster and cheaper than sequential calls (up to ~18x speedup and ~4x fewer tokens), that decision pipelines complete within the model's millisecond envelope, and that reported confidence is self-consistent across repeated evaluations. All numbers in the accompanying manuscript are generated from benchmark artifacts; the full provenance chain (hashed documentation snapshot, figure registry, validation receipts) is machine-checked.",
+    "abstract": "daf-jev 0.7.2 provides typed native decision clients, provider-neutral backends, pure composition, exact discrete graphical inference, independently labeled dataset preparation, frozen benchmark protocols, decimal cost accounting, and reproducible manuscript evidence. This release adds an explicitly bounded native OpenRouter execution contract for TypeSafe Jev, a separately defined Perplexity Decisions contract, and prospective interleaved native-model comparison protocols. The selected native hosted evidence contains 12 successful capability calls, including complete 77-way BANKING77 and 151-way CLINC option vocabularies, with reported billing of USD 0.000556920. These capability checks establish endpoint and task support; they do not establish dataset accuracy or calibrated probability meaning. Larger native hosted studies are ongoing and remain outside this release's completed research claims. Historical unknown billing and partial local results remain explicitly identified. Two native Mac Python profiles passed all 2,436 unit cases with combined coverage above 92%; package and manuscript reproduction were independently reviewed. The seven release assets contain the source, wheel, sdist, 30-page manuscript, selected evidence archive, release manifest, and checksums. Historical synthetic security-test canaries are retained as fixtures; real credentials, private journals, model weights, and raw corpora are excluded. Source build, artifact, and main commit identities are recorded separately in the release manifest.",
+    "keywords": [
+        "decision-models",
+        "benchmarking",
+        "typed-interfaces",
+        "reproducibility",
+        "bayesian-inference",
+        "selective-prediction"
+    ],
     "description": "Batching questions into one call gave wall-time speedups of 3.98, 8.77, and 18.55 across the configured batch widths. At the widest batch width the sequential strategy used 4.22 times the tokens of the batched call, so batching was both faster and cheaper. End-to-end decision pipelines had median wall times of 0.133 s (composite scoring) and 0.129 s (intent routing). Under a self-consistency proxy, the calibration benchmark reported ECE 0.0730 and Brier 0.0252; the author notes this shows consistency with proxy labels, not correctness about the world. The unit test suite reached 93.08 measured coverage. daf-jev layered Python client for the System One endpoint — Implements typed builders (no",
     "citation": "Friedman, Daniel Ari. 2026. Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model. Zenodo. DOI: 10.5281/zenodo.22816187. URL: https://doi.org/10.5281/zenodo.22816187.",
     "hasPart": {
@@ -130,6 +162,15 @@
             "encodingFormat": "text/markdown",
             "url": "https://danielarifriedman.com/papers/2026_JevPractice/full_text.md",
             "name": "Full text (extracted)"
+        }
+    ],
+    "associatedMedia": [
+        {
+            "@type": "MediaObject",
+            "encodingFormat": "application/pdf",
+            "name": "daf-jev-0.7.2-manuscript.pdf",
+            "contentUrl": "https://danielarifriedman.com/papers/2026_JevPractice/daf-jev-0.7.2-manuscript.pdf",
+            "contentSize": "1829991 bytes"
         }
     ]
 }
@@ -214,7 +255,7 @@
 
         <section class="section">
             <div class="section-header"><h2>Overview</h2><div class="section-divider"></div></div>
-            <div class="work-detail"><p>Jev is TypeSafe&#x27;s flagship System One decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with calibrated probabilities that software can branch on directly. This work presents daf-jev, an open, modular, composable Python toolkit for the Jev API, together with a live-API characterization of the model. The package layers ergonomic question builders, a decision-composition library (confidence gates, tiered routing, composite scoring), a concurrent corpus evaluator, a calibration module, a CLI, an agent skill, and a Model Context Protocol (MCP) server over a thin typed client. Live benchmarks show that batching questions into one call is faster and cheaper than sequential calls (up to ~18x speedup and ~4x fewer tokens), that decision pipelines complete within the model&#x27;s millisecond envelope, and that reported confidence is self-consistent across repeated evaluations. All numbers in the accompanying manuscript are generated from benchmark artifacts; the full provenance chain (hashed documentation snapshot, figure registry, validation receipts) is machine-checked.</p><p class="summary-sources abstract-source">Overview source: <a href="../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
+            <div class="work-detail"><p>daf-jev 0.7.2 provides typed native decision clients, provider-neutral backends, pure composition, exact discrete graphical inference, independently labeled dataset preparation, frozen benchmark protocols, decimal cost accounting, and reproducible manuscript evidence. This release adds an explicitly bounded native OpenRouter execution contract for TypeSafe Jev, a separately defined Perplexity Decisions contract, and prospective interleaved native-model comparison protocols. The selected native hosted evidence contains 12 successful capability calls, including complete 77-way BANKING77 and 151-way CLINC option vocabularies, with reported billing of USD 0.000556920. These capability checks establish endpoint and task support; they do not establish dataset accuracy or calibrated probability meaning. Larger native hosted studies are ongoing and remain outside this release&#x27;s completed research claims. Historical unknown billing and partial local results remain explicitly identified. Two native Mac Python profiles passed all 2,436 unit cases with combined coverage above 92%; package and manuscript reproduction were independently reviewed. The seven release assets contain the source, wheel, sdist, 30-page manuscript, selected evidence archive, release manifest, and checksums. Historical synthetic security-test canaries are retained as fixtures; real credentials, private journals, model weights, and raw corpora are excluded. Source build, artifact, and main commit identities are recorded separately in the release manifest.</p><div class="keyword-row" aria-label="Keywords"><span>decision-models</span><span>benchmarking</span><span>typed-interfaces</span><span>reproducibility</span><span>bayesian-inference</span><span>selective-prediction</span></div><p class="summary-sources abstract-source">Overview source: <a href="../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Methods and contributions</h2><p>Read the source for the full argument, qualifications, and evidence.</p><div class="section-divider"></div></div>
@@ -222,7 +263,7 @@
         </section>
 <section class="section" id="downloads" aria-labelledby="downloads-title">
             <div class="section-header"><h2 id="downloads-title">PDF downloads</h2><p>Archived files available directly from this site.</p><div class="section-divider"></div></div>
-            <div class="work-detail"><ul class="download-list"><li><a href="../papers/2026_JevPractice/daf-jev_combined.pdf" download="daf-jev_combined.pdf" type="application/pdf">daf-jev_combined.pdf</a><span class="muted"> PDF · 0.71 MiB · extracted-text source</span></li></ul></div>
+            <div class="work-detail"><ul class="download-list"><li><a href="../papers/2026_JevPractice/daf-jev-0.7.2-manuscript.pdf" download="daf-jev-0.7.2-manuscript.pdf" type="application/pdf">daf-jev-0.7.2-manuscript.pdf</a><span class="muted"> PDF · 1.75 MiB</span></li><li><a href="../papers/2026_JevPractice/daf-jev_combined.pdf" download="daf-jev_combined.pdf" type="application/pdf">daf-jev_combined.pdf</a><span class="muted"> PDF · 0.71 MiB · extracted-text source</span></li></ul><p class="muted">These files may be different versions or companion documents. The archive does not identify a latest edition.</p></div>
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Citation</h2><p>Citation metadata follows the unified bibliography.</p><div class="section-divider"></div></div>
@@ -242,14 +283,14 @@
 
         <section class="section">
             <div class="section-header"><h2>Related in <a href="../domain-computational.html">Computational</a></h2><p>Other catalogued works in the same domain.</p><div class="section-divider"></div></div>
-            <ul class="related-list"><li><a href="Friedman2026SilverLineMemorySuccession223.html">The Silver Line: A Memory-and-Succession Instrument</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026GreenLineCapacityUnder220.html">Green Line: a capacity-under-development instrument</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026AgenticSecurityOperatingSystems218.html">Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026FractiSkillsOnePortableAgent217.html">FractiSkills: One Portable Agent Skill per Page</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026SkillarumConditionallyReproducibleWebsite216.html">Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026DocxplusIntelligentDocumentContainer212.html">docxplus — the Intelligent Document Container</a><span class="muted"> · 2026</span></li></ul>
+            <ul class="related-list"><li><a href="Friedman2026AntropyNativeMultidimensionalEntropy226.html">antropy: native multidimensional entropy and configurable complexity analysis</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026SilverLineMemorySuccession223.html">The Silver Line: A Memory-and-Succession Instrument</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026GreenLineCapacityUnder220.html">Green Line: a capacity-under-development instrument</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026AgenticSecurityOperatingSystems218.html">Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026FractiSkillsOnePortableAgent217.html">FractiSkills: One Portable Agent Skill per Page</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026SkillarumConditionallyReproducibleWebsite216.html">Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation</a><span class="muted"> · 2026</span></li></ul>
             <p><a class="related-hub-link" href="../domain-computational.html">View all Computational works, software &amp; media →</a></p>
         </section>
     </main>
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite &amp; Verify</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/e296b3ae8">build e296b3ae8 2026-10-02</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/23ed2fe0b">build 23ed2fe0b 2026-10-12</a></p>
     </footer>
 <script src="/js/search-utils.js?v=site-20261002b"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

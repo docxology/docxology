@@ -10,13 +10,13 @@
 
 ## Abstract
 
-> FEP_Lean v1.1.0 is a source-bound, machine-checked catalogue of 155 topics across 20 reviewed families and five areas: the Free Energy Principle, Active Inference, Bayesian Mechanics, Information Geometry, and non-equilibrium Thermodynamics. Every catalogue row carries a reviewed invariant, explicit assumptions and boundaries, a namespaced Lean 4 theorem body, and deterministic manuscript metadata.
+> FEP_Lean / FEP Formal v1.6.0 is a reproducible catalogue of 168 canonical Lean topic bodies in 22 reviewed families across the Free Energy Principle, Active Inference, Bayesian Mechanics, Information Geometry and Thermodynamics. Each topic retains its carrier, exact qualified statement, assumptions, non-vacuity boundary, semantic disposition and evidence requirements. Lean and Mathlib are pinned to 4.34.1.
 >
-> The release is pinned to Lean 4.33.1 and Mathlib 4.33.1 (locked Mathlib revision 0df444a360eaa60ab8c11dca51a86af692955474). Its native receipt verifies 155/155 topic closures with zero errors, warnings, or sorry. The schema-4 formalism audit covers all 823 required formal-resource declarations, including 699 evidence declarations, and reports no sorryAx or untrusted project axioms. The canonical Python acceptance run collected 1,203 tests: 1,080 passed, 123 skipped, zero failed or errored, with 89.81% line coverage (8,808/9,807 statements). The schema-4 Chrome 151 browser receipt replays six source-bound screenshots covering 155 topics, 20 families, 133 relations, 48 satisfied capabilities, and 15 typed numerical witnesses.
+> This version adds a greatly extended Supplement A, modular installed-package mathematical methods, source-grounded Lean statement and natural-language analysis, and reproducible publication figures and an offline explorer. It compares 22 FEP family context unions with twelve selected OpenAI mathematics result units in 30 explicitly authored binary coordinates. The deterministic MDS projection reports its spectrum, distance distortion, stress and axis ambiguity. The upstream corpus is pinned at adc7f1241b42e322a6451854ab7e4b4c146bf78a; its statements are reference comparisons, with no imported proof authority or runtime dependency.
 >
-> These checks establish the exact shipped formal statements and reproducible software evidence; they do not prove the Free Energy Principle as a physical theory. Provider-backed Hermes commentary is optional and unavailable for this release cut, and no historical provider report is promoted to current full-mode evidence.
+> Compilation establishes the exact selected Lean bodies, not the Free Energy Principle as a physical theory. Semantic maturity is separate from compilation. Numerical and embedding visualizations are explanatory evidence. Frozen H3 primary execution, full seven-stage capture, Q7 generated-runner execution, provider runs and future empirical work retain their separate acceptance requirements.
 >
-> Source and release: github.com/ActiveInferenceInstitute/fep_lean (https://github.com/ActiveInferenceInstitute/fep_lean) and GitHub release v1.1.0 (https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.1.0). The exact deterministic 232-member evidence bundle has SHA-256 0009447598ecd3bbf68548eab360704a2539480379791eb0128186fa230884ea and binds release commit d7b6f8b15ea9dc451b191e3674a1fd72b5e586b4.
+> The release includes the manuscript PDF, offline companion, Python wheel and source distribution, exact tagged repository source and SHA-256 checksums. Source: ActiveInferenceInstitute/fep_formal (https://github.com/ActiveInferenceInstitute/fep_formal). Release: v1.6.0 (https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.6.0). This manuscript continues scholarly concept DOI 10.5281/zenodo.19699233; GitHub software archives are maintained separately under concept DOI 10.5281/zenodo.23196891.
 
 ## Keywords
 
@@ -43,11 +43,12 @@ _Methods and findings are summarized from the full text; each item is backed by 
 ## Artifacts
 
 - GitHub repository: [ActiveInferenceInstitute/fep_formal](https://github.com/ActiveInferenceInstitute/fep_formal)
-- GitHub release: [v1.1.0](https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.1.0)
+- GitHub release: [v1.6.0](https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.6.0)
 - DOI: [10.5281/zenodo.19699233](https://doi.org/10.5281/zenodo.19699233)
 - Artifact DOI: [10.5281/zenodo.22072956](https://doi.org/10.5281/zenodo.22072956)
 - Zenodo record: [https://zenodo.org/records/19699233](https://zenodo.org/records/19699233)
 - PDF: [fep-lean-manuscript-1.1.0.pdf](fep-lean-manuscript-1.1.0.pdf)
+- PDF: [fep_lean-v1.6.0.pdf](fep_lean-v1.6.0.pdf)
 - PDF: [fep_lean_v1_04-24-2026.pdf](fep_lean_v1_04-24-2026.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/19699233)
 

@@ -367,3 +367,28 @@ def test_merge_ref_provenance_resolves_branch_payload_commit(tmp_path: Path):
 
     assert source_payload_commit(tmp_path) == branch_payload
     assert base != branch_payload
+
+
+def test_latest_source_report_stops_at_newest_tracked_receipt_without_caching(tmp_path: Path, monkeypatch):
+    _init_repo(tmp_path)
+    reports = tmp_path / "reports"
+    reports.mkdir()
+    oldest = reports / "snapshot_2026-08-24.json"
+    middle = reports / "snapshot_2026-08-25.json"
+    newest = reports / "snapshot_2026-08-26.json"
+    for path in (oldest, middle):
+        path.write_text("{}")
+    _git(tmp_path, "add", "reports")
+    newest.write_text("{}")
+    calls = []
+    original = report_paths.is_git_tracked
+    def observe(path, *, repo_root):
+        calls.append(path)
+        return original(path, repo_root=repo_root)
+    monkeypatch.setattr(report_paths, "is_git_tracked", observe)
+    assert latest_source_report("snapshot_*.json", report_dir=reports, repo_root=tmp_path) == middle
+    assert calls == [newest, middle]
+    _git(tmp_path, "add", str(newest.relative_to(tmp_path)))
+    calls.clear()
+    assert latest_source_report("snapshot_*.json", report_dir=reports, repo_root=tmp_path) == newest
+    assert calls == [newest]

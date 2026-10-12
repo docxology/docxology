@@ -96,5 +96,18 @@
     "date": "2026-10-01",
     "basis": "Passage recovered from the document",
     "evidence_source": "full_text.md"
+  },
+  "citation_metadata": {
+    "doi": "10.1098/rspb.2016.0841",
+    "title": "Context-dependent expression of the\n            <i>foraging</i>\n            gene in field colonies of ants: the interacting roles of age, environment and task",
+    "source_url": "https://api.crossref.org/works/10.1098%2Frspb.2016.0841",
+    "checked_at": "2026-10-12T21:03:04Z",
+    "resource_type": "journal-article",
+    "journal_title": "Proceedings of the Royal Society B: Biological Sciences",
+    "volume": "283",
+    "issue": "1837",
+    "pages": "20160841",
+    "issn": "0962-8452",
+    "publication_date": "2016-08-31"
   }
 }

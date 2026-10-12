@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model Documentation — Daniel Ari Friedman</title>
-    <meta name="description" content="Jev is TypeSafe&#x27;s flagship System One decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with…">
+    <meta name="description" content="daf-jev 0.7.2 provides typed native decision clients, provider-neutral backends, pure composition, exact discrete graphical inference, independently…">
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="https://danielarifriedman.com/works/Friedman2026JevPracticeComposablePython219.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -26,12 +26,12 @@
     <script src="/js/nav-toggle.js?v=nav-20261002"></script>
     <meta property="og:type" content="article">
     <meta property="og:title" content="Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model Documentation">
-    <meta property="og:description" content="Jev is TypeSafe&#x27;s flagship System One decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with…">
+    <meta property="og:description" content="daf-jev 0.7.2 provides typed native decision clients, provider-neutral backends, pure composition, exact discrete graphical inference, independently…">
     <meta property="og:url" content="https://danielarifriedman.com/works/Friedman2026JevPracticeComposablePython219.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model Documentation">
-    <meta name="twitter:description" content="Jev is TypeSafe&#x27;s flagship System One decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with…">
+    <meta name="twitter:description" content="daf-jev 0.7.2 provides typed native decision clients, provider-neutral backends, pure composition, exact discrete graphical inference, independently…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model">
     <style>
@@ -92,7 +92,7 @@
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Overview</h2><p>Curated abstract when available.</p><div class="section-divider"></div></div>
-            <div class="overview-box"><p>Jev is TypeSafe&#x27;s flagship System One decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with calibrated probabilities that software can branch on directly. This work presents daf-jev, an open, modular, composable Python toolkit for the Jev API, together with a live-API characterization of the model. The package layers ergonomic question builders, a decision-composition library (confidence gates, tiered routing, composite scoring), a concurrent corpus evaluator, a calibration module, a CLI, an agent skill, and a Model Context Protocol (MCP) server over a thin typed client. Live benchmarks show that batching questions into one call is faster and cheaper than sequential calls (up to ~18x speedup and ~4x fewer tokens), that decision pipelines complete within the model&#x27;s millisecond envelope, and that reported confidence is self-consistent across repeated evaluations. All numbers in the accompanying manuscript are generated from benchmark artifacts; the full provenance chain (hashed documentation snapshot, figure registry, validation receipts) is machine-checked.</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
+            <div class="overview-box"><p>daf-jev 0.7.2 provides typed native decision clients, provider-neutral backends, pure composition, exact discrete graphical inference, independently labeled dataset preparation, frozen benchmark protocols, decimal cost accounting, and reproducible manuscript evidence. This release adds an explicitly bounded native OpenRouter execution contract for TypeSafe Jev, a separately defined Perplexity Decisions contract, and prospective interleaved native-model comparison protocols. The selected native hosted evidence contains 12 successful capability calls, including complete 77-way BANKING77 and 151-way CLINC option vocabularies, with reported billing of USD 0.000556920. These capability checks establish endpoint and task support; they do not establish dataset accuracy or calibrated probability meaning. Larger native hosted studies are ongoing and remain outside this release&#x27;s completed research claims. Historical unknown billing and partial local results remain explicitly identified. Two native Mac Python profiles passed all 2,436 unit cases with combined coverage above 92%; package and manuscript reproduction were independently reviewed. The seven release assets contain the source, wheel, sdist, 30-page manuscript, selected evidence archive, release manifest, and checksums. Historical synthetic security-test canaries are retained as fixtures; real credentials, private journals, model weights, and raw corpora are excluded. Source build, artifact, and main commit identities are recorded separately in the release manifest.</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section">
             <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation and PDFs served directly from this folder.</p><div class="section-divider"></div></div>
@@ -103,7 +103,8 @@
 <a class="btn btn-outline" href="metadata.json">Metadata</a>
 <a class="btn btn-outline" href="full_text.md">Extracted text</a>
 <a class="btn btn-outline" href="CITATION.cff">Citation metadata</a></p></div>
-                <div class="artifact-card"><strong>PDF Files</strong><ul><li><a href="../../papers/2026_JevPractice/daf-jev_combined.pdf" download="daf-jev_combined.pdf" type="application/pdf">daf-jev_combined.pdf</a> <span class="muted">742,862 bytes · extracted-text source</span></li></ul></div>
+                <div class="artifact-card"><strong>PDF Files</strong><ul><li><a href="../../papers/2026_JevPractice/daf-jev-0.7.2-manuscript.pdf" download="daf-jev-0.7.2-manuscript.pdf" type="application/pdf">daf-jev-0.7.2-manuscript.pdf</a> <span class="muted">1,829,991 bytes</span></li>
+<li><a href="../../papers/2026_JevPractice/daf-jev_combined.pdf" download="daf-jev_combined.pdf" type="application/pdf">daf-jev_combined.pdf</a> <span class="muted">742,862 bytes · extracted-text source</span></li></ul></div>
                 <div class="artifact-card"><strong>Extracted Content</strong><p><a class="btn btn-outline" href="https://github.com/docxology/docxology/tree/main/papers/2026_JevPractice/images">Extracted Images (8) — GitHub</a> <span class="muted">+2 more</span><div class="image-thumbs"><a href="https://github.com/docxology/docxology/tree/main/papers/2026_JevPractice/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_JevPractice/images/page10_img1.png" alt="Figure from Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model, page 10" loading="lazy"></a><a href="https://github.com/docxology/docxology/tree/main/papers/2026_JevPractice/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_JevPractice/images/page11_img1.png" alt="Figure from Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model, page 11" loading="lazy"></a><a href="https://github.com/docxology/docxology/tree/main/papers/2026_JevPractice/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_JevPractice/images/page1_img1.png" alt="Figure from Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model, page 1" loading="lazy"></a><a href="https://github.com/docxology/docxology/tree/main/papers/2026_JevPractice/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_JevPractice/images/page2_img1.png" alt="Figure from Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model, page 2" loading="lazy"></a><a href="https://github.com/docxology/docxology/tree/main/papers/2026_JevPractice/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_JevPractice/images/page5_img1.png" alt="Figure from Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model, page 5" loading="lazy"></a><a href="https://github.com/docxology/docxology/tree/main/papers/2026_JevPractice/images" class="thumb-link"><img src="https://raw.githubusercontent.com/docxology/docxology/main/papers/2026_JevPractice/images/page6_img1.png" alt="Figure from Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model, page 6" loading="lazy"></a></div></p></div>
             </div>
         </section>
@@ -111,7 +112,7 @@
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../../publications.html">Unified bibliography</a> · <a href="../../works/">Works index</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/e296b3ae8">build e296b3ae8 2026-10-02</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/7110a6b50">build 7110a6b50 2026-10-07</a></p>
     </footer>
 <script src="/js/search-utils.js?v=site-20261002b"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

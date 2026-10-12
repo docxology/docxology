@@ -161,51 +161,52 @@ def test_actual_slow_drip_body_has_total_request_deadline():
         thread.join()
 
 
-def test_whole_acceptance_deadline_stops_queued_requests_and_retries(deployed):
-    _, manifest_path, _ = deployed
-    manifest_bytes = manifest_path.read_bytes()
+def test_whole_acceptance_deadline_stops_queued_requests_and_retries(deployed, monkeypatch):
+    """Test queue/retry policy with a controlled owning-module clock.
+
+    Real HTTP/hash contracts and slow-drip process deadlines are exercised
+    separately above. Host scheduling must not determine how many requests
+    this orchestration test starts before its 250 ms logical deadline.
+    """
+    _, manifest_path, origin = deployed
     requests = []
 
-    class StalledSite(BaseHTTPRequestHandler):
-        def log_message(self, *_):
-            pass
+    class Clock:
+        now = 0.0
 
-        def do_GET(self):
-            requests.append(self.path.split("?", 1)[0])
-            manifest_request = requests[-1] == "/" + verifier.MANIFEST_PATH
-            body = manifest_bytes if manifest_request else b"x" * 100
-            self.send_response(200)
-            self.send_header("Content-Length", str(len(body)))
-            self.end_headers()
-            try:
-                if manifest_request:
-                    self.wfile.write(body)
-                else:
-                    for byte in body:
-                        self.wfile.write(bytes([byte]))
-                        self.wfile.flush()
-                        time.sleep(0.05)
-            except (BrokenPipeError, ConnectionResetError):
-                pass
+        def monotonic(self):
+            return self.now
 
-    server = ThreadingHTTPServer(("127.0.0.1", 0), StalledSite)
-    thread = threading.Thread(target=server.serve_forever, daemon=True)
-    thread.start()
-    try:
-        started = time.monotonic()
-        receipt = verifier.check_deployment(
-            manifest_path, commit="b" * 40, attempts=6, interval=60,
-            timeout=20, workers=1, max_duration=0.25,
-            origin=f"http://127.0.0.1:{server.server_port}/",
-        )
-        assert time.monotonic() - started < 2
-        assert not receipt["overall_ok"]
-        assert receipt["deadline_exhausted"]
-        assert receipt["attempts"] == 1
-        assert receipt["requests_attempted"] == len(requests) == 2
-        assert any(not result["attempted"] and "deadline" in result["error"].lower()
-                   for result in receipt["results"])
-    finally:
-        server.shutdown()
-        server.server_close()
-        thread.join()
+        def sleep(self, _seconds):
+            raise AssertionError("An exhausted acceptance deadline must not sleep or retry")
+
+    clock = Clock()
+
+    def scripted_request(item, *, head=False, origin, timeout):
+        requests.append(item["path"])
+        if item["path"] == verifier.MANIFEST_PATH:
+            assert timeout == pytest.approx(0.25)
+            clock.now = 0.01
+            return {"path": item["path"], "method": "GET", "ok": True, "attempted": True}
+        assert timeout == pytest.approx(0.24)
+        clock.now = 0.26
+        return {"path": item["path"], "method": "HEAD" if head else "GET",
+                "ok": False, "attempted": True, "error": "Scripted request deadline exhaustion"}
+
+    # Replace the owning module's reference, not global time.monotonic used
+    # by the HTTP fixture, pytest, or executor scheduling.
+    monkeypatch.setattr(verifier, "time", clock)
+    monkeypatch.setattr(verifier, "verify_file", scripted_request)
+    receipt = verifier.check_deployment(
+        manifest_path, commit="b" * 40, attempts=6, interval=60,
+        timeout=20, workers=1, max_duration=0.25, origin=origin,
+    )
+    assert not receipt["overall_ok"]
+    assert receipt["deadline_exhausted"]
+    assert receipt["attempts"] == 1
+    assert receipt["requests_attempted"] == len(requests) == 2
+    assert receipt["duration_ms"] == 260
+    assert requests[0] == verifier.MANIFEST_PATH
+    assert sum(not result["attempted"] for result in receipt["results"]) == receipt["checked"] - 2
+    assert all("deadline" in result["error"].lower()
+               for result in receipt["results"] if not result["attempted"])

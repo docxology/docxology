@@ -75,5 +75,18 @@
     "date": "2026-10-01",
     "basis": "Passage recovered from the document",
     "evidence_source": "full_text.md"
+  },
+  "citation_metadata": {
+    "doi": "10.1146/annurev-neuro-070815-013927",
+    "title": "Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior",
+    "source_url": "https://api.crossref.org/works/10.1146%2Fannurev-neuro-070815-013927",
+    "checked_at": "2026-10-12T21:03:04Z",
+    "resource_type": "journal-article",
+    "journal_title": "Annual Review of Neuroscience",
+    "volume": "39",
+    "issue": "1",
+    "pages": "41-56",
+    "issn": "0147-006X",
+    "publication_date": "2016-07-08"
   }
 }

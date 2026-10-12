@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "antropy: native multidimensional entropy and configurable complexity analysis"
+version: "0.3.1"
+date-released: 2026-10-11
+doi: 10.5281/zenodo.23306200
+url: "https://doi.org/10.5281/zenodo.23306200"
+repository-code: "https://github.com/docxology/antropy"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23306200"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.23306200"
+    description: "Canonical citation DOI resolver"
+  - type: url
+    value: "https://github.com/docxology/antropy/releases/tag/v0.3.1"
+    description: "GitHub release"

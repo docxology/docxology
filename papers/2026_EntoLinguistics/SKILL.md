@@ -1,8 +1,8 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology"
-description: "Scientific language does not merely describe biological phenomena; it actively constitutes the generative models through which researchers parse complex systems. This paper makes three core contributions to understanding—and correcting—the epistemic ..."
-tags: ["entolinguistics"]
+description: "Ento-Linguistics v1.3.1 is a corpus-custody patch to the v1.3.0 complexity edition. A second exact-text PubMed reconciliation links 59 more archived abstracts to their source records (7,599 of 7,609 now identified; the 10 unreconciled strings stay ex..."
+tags: ["entomology", "scientific-terminology", "language-analysis", "discourse-analysis", "ant-biology", "eusociality", "conceptual-frameworks", "active-inference", "terminology-networks", "computational-linguistics"]
 domain: "Entomology"
 citation: "Daniel Ari Friedman, Tucker Cahill Chambers (2026). *Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology*. Zenodo."
 doi: "10.5281/zenodo.19574117"
@@ -14,7 +14,7 @@ doi: "10.5281/zenodo.19574117"
 
 ## Context
 
-This work addresses topics in **Entomology**: EntoLinguistics.
+This work addresses topics in **Entomology**: entomology, scientific terminology, language analysis, discourse analysis.
 
 ## Methods
 
@@ -50,11 +50,11 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.19574117
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-09-24T18:29:53Z
+- Last checked: 2026-10-12T18:48:29Z
 
 ## Prerequisites
 
-- Familiarity with EntoLinguistics
+- Familiarity with entomology, scientific terminology, language analysis
 - Background in Entomology fundamentals
 - Access to source repository: docxology/ento_linguistics
 

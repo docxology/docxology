@@ -31,12 +31,10 @@ def test_real_work_abstract_is_readable_search_prose_without_mutating_source():
     work = next(item for item in works if item["citation_key"] == key)
     original_work, original_enrichment = copy.deepcopy(work), copy.deepcopy(enrichments[key])
     raw = enrichments[key]["abstract"]
-    assert raw.startswith("<p><strong>FEP_Lean")
+    assert isinstance(raw, str) and raw
 
     item = build_search_index.work_item(work, enrichments)
 
-    assert item["summary"].startswith("FEP_Lean v1.1.0 is a source-bound, machine-checked catalogue")
-    assert "155 topics" in item["summary"]
     assert item["summary"] == abstract_display_text(raw)[:220]
     assert abstract_display_text(raw) in item["content"]
     for field in ("summary", "content"):
@@ -44,6 +42,31 @@ def test_real_work_abstract_is_readable_search_prose_without_mutating_source():
     assert work == original_work
     assert enrichments[key] == original_enrichment
     assert all(path.read_bytes() == before for path, before in source_bytes.items())
+
+
+def test_frozen_publication_html_preserves_version_count_and_qualification():
+    work = {
+        "citation_key": "Fixture2026", "title": "Formal catalogue",
+        "type": "Paper", "venue": "Fixture", "domain_name": "Active Inference",
+        "year": 2026,
+    }
+    raw = (
+        "<p><strong>FEP_Lean v1.1.0</strong> is a source-bound, machine-checked "
+        "catalogue of <strong>155 topics</strong>.</p>"
+        "<p>Compilation does not establish empirical validity.</p>"
+    )
+    expected = (
+        "FEP_Lean v1.1.0 is a source-bound, machine-checked catalogue of 155 topics."
+        "\n\nCompilation does not establish empirical validity."
+    )
+    enrichments = {work["citation_key"]: {"abstract": raw}}
+    before = copy.deepcopy(enrichments)
+
+    item = build_search_index.work_item(work, enrichments)
+
+    assert item["summary"] == expected
+    assert expected in item["content"]
+    assert enrichments == before
 
 
 @pytest.mark.parametrize("raw,expected", [

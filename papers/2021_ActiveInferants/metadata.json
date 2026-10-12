@@ -86,5 +86,16 @@
     "date": "2026-10-01",
     "basis": "Passage recovered from the document",
     "evidence_source": "full_text.md"
+  },
+  "citation_metadata": {
+    "doi": "10.3389/fnbeh.2021.647732",
+    "title": "Active Inferants: An Active Inference Framework for Ant Colony Behavior",
+    "source_url": "https://api.crossref.org/works/10.3389%2Ffnbeh.2021.647732",
+    "checked_at": "2026-10-12T21:33:53Z",
+    "resource_type": "journal-article",
+    "journal_title": "Frontiers in Behavioral Neuroscience",
+    "volume": "15",
+    "issn": "1662-5153",
+    "publication_date": "2021-06-24"
   }
 }

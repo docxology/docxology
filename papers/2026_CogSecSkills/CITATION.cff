@@ -21,3 +21,6 @@ identifiers:
   - type: url
     value: "https://github.com/docxology/CogSecSkills/releases/tag/v1.0.0"
     description: "GitHub release"
+  - type: url
+    value: "https://github.com/docxology/CogSecSkills/releases/tag/v1.8.0"
+    description: "GitHub release"

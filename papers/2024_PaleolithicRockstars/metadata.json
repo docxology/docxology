@@ -33,5 +33,16 @@
     "source": "none",
     "date": "2026-10-01",
     "notes": "No abstract or licensed full text was identified in the verified publisher/registry records; the unsupported seed synopsis has been removed."
+  },
+  "citation_metadata": {
+    "doi": "10.1016/j.plrev.2024.04.010",
+    "title": "Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago",
+    "source_url": "https://api.crossref.org/works/10.1016%2Fj.plrev.2024.04.010",
+    "checked_at": "2026-10-12T21:03:03Z",
+    "resource_type": "journal-article",
+    "journal_title": "Physics of Life Reviews",
+    "volume": "50",
+    "pages": "4-6",
+    "issn": "1571-0645"
   }
 }

@@ -8,6 +8,7 @@ import json
 import re
 import urllib.parse
 from pathlib import Path
+from html.parser import HTMLParser
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
@@ -77,7 +78,7 @@ def _name_meta(html: str, name: str) -> str | None:
 
 
 def _works_by_docs_path(repo_root: Path) -> dict[str, dict]:
-    works = json.loads((repo_root / "data" / "works.json").read_text(encoding="utf-8"))["works"]
+    works = json.loads(_read(repo_root / "data" / "works.json"))["works"]
     out: dict[str, dict] = {}
     for work in works:
         path = str(work.get("docs_path") or "").strip().rstrip("/")
@@ -124,6 +125,68 @@ def check_work_pages(repo_root: Path) -> list[str]:
             expected = f"{SITE_ORIGIN}works/{canonical_work_key(path.stem)}.html"
         if canonical != expected:
             errors.append(f"{rel}: canonical {canonical!r} != {expected!r}")
+    return errors
+
+
+class _CitationHead(HTMLParser):
+    """Read real head tags; comments and body lookalikes cannot fill gaps."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.in_head = False
+        self.tags: dict[str, list[str]] = {}
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "head":
+            self.in_head = True
+        if tag != "meta" or not self.in_head:
+            return
+        attributes = dict(attrs)
+        name = (attributes.get("name") or "").lower()
+        if name.startswith("citation_"):
+            self.tags.setdefault(name, []).append(attributes.get("content") or "")
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "head":
+            self.in_head = False
+
+
+def check_work_citations(repo_root: Path) -> list[str]:
+    """Bind crawler-visible citation identity and PDF links to public sources.
+
+    This checks site integration, not Scholar inclusion. The same-directory
+    PDF requirement remains a separately documented hosting constraint.
+    """
+    from docxology_tools.citation_metadata import journal_fields, publication_date
+    from docxology_tools.paper_artifacts import PaperResources, source_paths
+    from build_work_pages import display_name
+
+    errors: list[str] = []
+    works = json.loads(_read(repo_root / "data/works.json"))["works"]
+    visible = source_paths(repo_root)
+    for work in works:
+        rel = f"works/{work['citation_key']}.html"
+        path = repo_root / rel
+        if not path.is_file():
+            errors.append(f"missing citation page: {rel}")
+            continue
+        parser = _CitationHead()
+        parser.feed(_read(path))
+        tags = parser.tags
+        resources = PaperResources.load(repo_root, work.get("docs_path", ""), visible)
+        expected = {
+            "citation_title": [work["title"]],
+            "citation_author": [display_name(name) for name in work.get("authors") or []],
+            "citation_publication_date": [publication_date(work, resources.metadata or {}).replace("-", "/")],
+        }
+        if work.get("doi"):
+            expected["citation_doi"] = [work["doi"]]
+        if resources.primary_pdf:
+            expected["citation_pdf_url"] = [resources.absolute_url(resources.primary_pdf)]
+        expected.update({f"citation_{name}": [value] for name, value in journal_fields(work, resources.metadata or {}).items()})
+        for name in tags.keys() | expected.keys():
+            if tags.get(name, []) != expected.get(name, []):
+                errors.append(f"{rel}: {name} differs from authoritative citation metadata")
     return errors
 
 
@@ -355,6 +418,7 @@ def collect_seo_errors(repo_root: Path | None = None) -> list[str]:
     errors: list[str] = []
     errors.extend(check_paper_pages(root))
     errors.extend(check_work_pages(root))
+    errors.extend(check_work_citations(root))
     errors.extend(check_redirect_stubs(root))
     errors.extend(check_sitemap_policy(root))
     errors.extend(check_social_meta(root))

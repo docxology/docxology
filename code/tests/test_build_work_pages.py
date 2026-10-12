@@ -89,3 +89,66 @@ def test_work_page_uses_shared_breadcrumb_css_markup_and_jsonld():
     assert BREADCRUMB_CSS in rendered
     assert breadcrumb_jsonld_script(trail) in rendered
     assert render_breadcrumb(trail, depth=1) in rendered
+
+
+def test_citation_dates_and_journal_fields_are_source_backed():
+    from docxology_tools.citation_metadata import journal_fields, publication_date
+
+    work = _work()
+    meta = {
+        'doi': work['doi'],
+        'publication_date': '2026-10-12',
+        'citation_metadata': {
+            'doi': work['doi'], 'resource_type': 'journal-article',
+            'publication_date': '2026-09-01', 'journal_title': 'Methods & Evidence',
+            'volume': '12', 'issue': '3', 'pages': '45–52', 'issn': '1234-5678',
+        },
+    }
+    assert publication_date(work, meta) == '2026-09-01'
+    assert journal_fields(work, meta) == {
+        'journal_title': 'Methods & Evidence', 'volume': '12', 'issue': '3',
+        'issn': '1234-5678', 'firstpage': '45', 'lastpage': '52',
+    }
+    meta['citation_metadata']['publication_date'] = '2025-09-01'
+    assert publication_date(work, meta) == '2026'  # Keep the selected citation year.
+    meta['citation_metadata']['doi'] = '10.5281/zenodo.999999'
+    assert journal_fields(work, meta) == {}
+    assert publication_date(work, meta) == '2026-10-12'
+    meta['doi'] = '10.5281/zenodo.999999'
+    assert publication_date(work, meta) == '2026'
+
+
+@pytest.mark.parametrize('value', ['2026-02-30', '2026-13-01', '2026-10', '', None])
+def test_citation_date_does_not_invent_precision(value):
+    from docxology_tools.citation_metadata import publication_date
+
+    work = _work()
+    assert publication_date(work, {'doi': work['doi'], 'publication_date': value}) == '2026'
+
+
+def test_deposit_is_not_invented_as_journal():
+    from docxology_tools.citation_metadata import journal_fields
+
+    work = _work()
+    assert journal_fields(work, {'citation_metadata': {
+        'doi': work['doi'], 'resource_type': 'posted-content', 'journal_title': 'Zenodo',
+    }}) == {}
+
+
+@pytest.mark.parametrize('metadata', [
+    {'citation_metadata': 'invalid'}, {'citation_metadata': None},
+    {'citation_metadata': {'doi': 1}}, {'doi': 1},
+])
+def test_invalid_citation_source_types_fail_explicitly(metadata):
+    from docxology_tools.citation_metadata import publication_date
+
+    with pytest.raises(ValueError, match='citation_metadata|citation DOI'):
+        publication_date(_work(), metadata)
+
+
+def test_journal_metadata_block_and_doi_types_fail_explicitly():
+    from docxology_tools.citation_metadata import journal_fields
+
+    for metadata in ({'citation_metadata': 'invalid'}, {'citation_metadata': {'doi': 1}}):
+        with pytest.raises(ValueError, match='citation_metadata|citation DOI'):
+            journal_fields(_work(), metadata)

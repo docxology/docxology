@@ -12,6 +12,8 @@ import re
 from pathlib import Path
 from typing import Iterator, NamedTuple
 
+from docxology_tools.biblio_table import bibliography_rows_from_lines
+
 DEFAULT_SOFTWARE_PATH = Path(__file__).resolve().parents[2] / "pages" / "SOFTWARE.md"
 
 PAPER_LINK_RE = re.compile(r"\[📄\]\(([^)]+)\)")
@@ -285,3 +287,31 @@ def software_rows_to_dict(row: SoftwareRow) -> dict:
         "paper_path": paper_path(row.description_raw),
         "zenodo_url": zenodo_url(row.description_raw),
     }
+
+
+def software_catalog_dois(repo_root: Path = DEFAULT_SOFTWARE_PATH.parents[1]) -> dict[str, dict[str, str]]:
+    """Map Zenodo DOIs linked from software rows that supplement a catalogued work.
+
+    Keys are casefolded DOIs; values name the row and its paper folder. Only a
+    row whose ``[📄]`` paper folder a bibliography row cites qualifies: Zenodo
+    types many paper repositories' release archives as software, so a software
+    link alone cannot show that a record is not itself a missing paper.
+    """
+    path = repo_root / "pages" / "SOFTWARE.md"
+    if not path.is_file():
+        return {}
+    bibliography = repo_root / "pages" / "BIBLIOGRAPHY.md"
+    if not bibliography.is_file():
+        return {}
+    cited_folders = {
+        row.folder for row in bibliography_rows_from_lines(bibliography.read_text(encoding="utf-8").splitlines())
+        if row.folder
+    }
+    linked: dict[str, dict[str, str]] = {}
+    for row in iter_software_rows(path):
+        folder = Path(paper_path(row.description_raw)).name
+        if not folder or folder not in cited_folders:
+            continue
+        for doi in zenodo_link_dois(row.description_raw):
+            linked.setdefault(doi.casefold(), {"software_row": row.name, "paper_folder": folder})
+    return linked

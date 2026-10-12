@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-06T00:31:11Z",
+  "generated_at": "2026-10-12T18:37:27Z",
   "source": "papers/paper_metadata.json, papers/*/metadata.json, README.md and SKILL.md",
-  "count": 220,
+  "count": 222,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -4163,8 +4163,22 @@
     },
     "Friedman2026EntoLinguisticsLanguageAmbiguity109": {
       "citation_key": "Friedman2026EntoLinguisticsLanguageAmbiguity109",
-      "abstract": "Scientific language does not merely describe biological phenomena; it actively constitutes the generative models through which researchers parse complex systems. This paper makes three core contributions to understanding—and correcting—the epistemic consequences of this constitutive role. First, we introduce a six-domain Ento-Linguistic framework that decomposes the terminological landscape of insect research into analytically tractable themes, isolating domains where anthropomorphic language most severely distorts causal modeling. Second, we develop an open-source computational pipeline that integrates automated term extraction, co-occurrence network construction, and information-theoretic ambiguity scoring with principles from Active Inference and Complex Systems Theory. Third, we propose and validate four evidence-based meta-standards—Clarity, Appropriateness, Consistency, and Evolvability (CACE)—as a formalized protocol for lexical engineering. Analysis of a corpus encompassing 369 entomological publications (48787 tokens; 7105 unique token types; Type–Token Ratio 0.1456) extracts 888 candidate terms (with 261 assigned to specific semantic domains across 6 conceptual clusters linked by 9 weighted relationships). The resulting terminology networks display strong modularity alongside systematic cross-domain bridging—most prominently in the Power and Labor domain, where 43 bridging terms generate extensive semantic bleed-over into adjacent domains. Terms such as “queen” (241 occurrences), “worker” (269), and “caste” (121) implicitly impose hierarchical control topologies onto biological structures that are fundamentally stigmergic and decentralized. Across all 261 domain-assigned terms, 16.9% exhibit context-dependent semantic drift, demonstrating how conceptual constructs like “individuality” span multiple biological scales and consequently blur the formal systemic boundaries (Markov Blankets) required for mathematically rigorous modeling. The accompanying fully reproducible computational pipeline provides the quantitative analytical tools necessary for a more self-aware and epistemically rigorous scientific practice. All code and data are available at https://github.com/docxology/ento_linguistics.",
-      "keywords": [],
+      "abstract": "Ento-Linguistics v1.3.1 is a corpus-custody patch to the v1.3.0 complexity edition. A second exact-text PubMed reconciliation links 59 more archived abstracts to their source records (7,599 of 7,609 now identified; the 10 unreconciled strings stay excluded from headline results), and PMC records titled as corrections, errata, retraction notices or retracted items are excluded from full-text analysis (6,997 of 7,073 stored records analyzed). All analysis layers, both fixed-margin protocols and the vocabulary/threshold diagnostic were regenerated; the paper reports every value from those exports. Six overlapping terminology domains and four source layers retain their descriptive scope; fixed-margin comparisons and heuristic entropy/CACE measures remain distinct from biological interactions, validated meaning or causal reader effects. The 20-minute lecture remains the v1.3.0 GitHub release asset matched to the v1.3.0 paper. Paper figures are CC BY 4.0; software is MIT; source corpus materials retain their providers' terms. Previous version DOIs preserve earlier artifact identities.",
+      "keywords": [
+        "entomology",
+        "scientific terminology",
+        "language analysis",
+        "discourse analysis",
+        "ant biology",
+        "eusociality",
+        "conceptual frameworks",
+        "active inference",
+        "terminology networks",
+        "computational linguistics",
+        "complex systems",
+        "complexity",
+        "representation sensitivity"
+      ],
       "findings": [
         "The corpus (48787 tokens) yields 888 candidate terms, 261 of them assigned to domains, across 6 conceptual clusters linked by 9 weighted relationships.",
         "Terminology networks are strongly modular with cross-domain bridging, most prominently in Power and Labor, which has 43 bridging terms.",
@@ -4181,6 +4195,7 @@
       "concepts": [],
       "sources": {
         "abstract": "papers/paper_metadata.json",
+        "keywords": "papers/paper_metadata.json",
         "methods": "papers/2026_EntoLinguistics/metadata.json",
         "findings": "papers/2026_EntoLinguistics/metadata.json"
       },
@@ -4304,7 +4319,7 @@
     },
     "Friedman2026TowardsLean4Formalization113": {
       "citation_key": "Friedman2026TowardsLean4Formalization113",
-      "abstract": "<p><strong>FEP_Lean v1.1.0</strong> is a source-bound, machine-checked catalogue of 155 topics across 20 reviewed families and five areas: the Free Energy Principle, Active Inference, Bayesian Mechanics, Information Geometry, and non-equilibrium Thermodynamics. Every catalogue row carries a reviewed invariant, explicit assumptions and boundaries, a namespaced Lean 4 theorem body, and deterministic manuscript metadata.</p><p>The release is pinned to Lean 4.33.1 and Mathlib 4.33.1 (locked Mathlib revision <code>0df444a360eaa60ab8c11dca51a86af692955474</code>). Its native receipt verifies 155/155 topic closures with zero errors, warnings, or <code>sorry</code>. The schema-4 formalism audit covers all 823 required formal-resource declarations, including 699 evidence declarations, and reports no <code>sorryAx</code> or untrusted project axioms. The canonical Python acceptance run collected 1,203 tests: 1,080 passed, 123 skipped, zero failed or errored, with 89.81% line coverage (8,808/9,807 statements). The schema-4 Chrome 151 browser receipt replays six source-bound screenshots covering 155 topics, 20 families, 133 relations, 48 satisfied capabilities, and 15 typed numerical witnesses.</p><p>These checks establish the exact shipped formal statements and reproducible software evidence; they do not prove the Free Energy Principle as a physical theory. Provider-backed Hermes commentary is optional and unavailable for this release cut, and no historical provider report is promoted to current full-mode evidence.</p><p>Source and release: <a href=\"https://github.com/ActiveInferenceInstitute/fep_lean\">github.com/ActiveInferenceInstitute/fep_lean</a> and <a href=\"https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.1.0\">GitHub release v1.1.0</a>. The exact deterministic 232-member evidence bundle has SHA-256 <code>0009447598ecd3bbf68548eab360704a2539480379791eb0128186fa230884ea</code> and binds release commit <code>d7b6f8b15ea9dc451b191e3674a1fd72b5e586b4</code>.</p>",
+      "abstract": "<p><strong>FEP_Lean / FEP Formal v1.6.0</strong> is a reproducible catalogue of 168 canonical Lean topic bodies in 22 reviewed families across the Free Energy Principle, Active Inference, Bayesian Mechanics, Information Geometry and Thermodynamics. Each topic retains its carrier, exact qualified statement, assumptions, non-vacuity boundary, semantic disposition and evidence requirements. Lean and Mathlib are pinned to 4.34.1.</p>\n<p>This version adds a greatly extended Supplement A, modular installed-package mathematical methods, source-grounded Lean statement and natural-language analysis, and reproducible publication figures and an offline explorer. It compares 22 FEP family context unions with twelve selected OpenAI mathematics result units in 30 explicitly authored binary coordinates. The deterministic MDS projection reports its spectrum, distance distortion, stress and axis ambiguity. The upstream corpus is pinned at adc7f1241b42e322a6451854ab7e4b4c146bf78a; its statements are reference comparisons, with no imported proof authority or runtime dependency.</p>\n<p>Compilation establishes the exact selected Lean bodies, not the Free Energy Principle as a physical theory. Semantic maturity is separate from compilation. Numerical and embedding visualizations are explanatory evidence. Frozen H3 primary execution, full seven-stage capture, Q7 generated-runner execution, provider runs and future empirical work retain their separate acceptance requirements.</p>\n<p>The release includes the manuscript PDF, offline companion, Python wheel and source distribution, exact tagged repository source and SHA-256 checksums. Source: <a href=\"https://github.com/ActiveInferenceInstitute/fep_formal\">ActiveInferenceInstitute/fep_formal</a>. Release: <a href=\"https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.6.0\">v1.6.0</a>. This manuscript continues scholarly concept DOI 10.5281/zenodo.19699233; GitHub software archives are maintained separately under concept DOI 10.5281/zenodo.23196891.</p>",
       "keywords": [
         "free energy principle",
         "active inference",
@@ -4317,7 +4332,10 @@
         "formal verification",
         "theorem proving",
         "measure theory",
-        "reproducible research"
+        "reproducible research",
+        "mathematical positioning",
+        "theorem statement analysis",
+        "semantic visualization"
       ],
       "findings": [
         "On the pinned Lean 4 / Mathlib4 v4.29.0 stack, the shipped catalog compiles 50/50 sorry-free.",
@@ -6285,13 +6303,15 @@
     },
     "Friedman2026CogSecSkillsMultiharnessAgenticSkills174": {
       "citation_key": "Friedman2026CogSecSkillsMultiharnessAgenticSkills174",
-      "abstract": "CogSecSkills is a defensive, harness-neutral agent-interface library that turns the human doctrine of cognitive security and analytic tradecraft into dependable, inspectable, agent-usable skills, distributed as an open repository from github.com/docxology/CogSecSkills; the motivation is an information environment in which mis-, dis-, and malinformation are analytically distinct but operationally entangled, false content can diffuse rapidly at platform scale, and credible source evaluation increasingly demands explicit expert practice rather than page-bound reading alone, so that agents asked to weigh competing hypotheses, trace provenance, or critically review a claim need a repeatable procedure and a stable tool-use contract rather than improvisation. The live generated catalogue reports one hundred implemented skills across seven taxonomy groups — Structured Analytic Techniques, Cognitive Security, Critical Review and Assurance, OSINT and Source Integrity, Counterintelligence and Deception Detection, Information Environment and Influence Analysis, and Research and Synthesis Methods — and the library is organized as a Plan, Build, and Teach system in which a registry declares the catalogue, a definitions layer owns the substance and quality controls of each skill, a skills tree exposes the harness-facing build, and a vendored educational upstream named AGEINT explains why each technique exists and how to use it responsibly. The central design choice is to make the reusable skill contract smaller than any one agent interface yet stricter than a prompt collection: each skill is owned by a single canonical definition that declares triggers, inputs, outputs, per-skill reference metadata, group-aware quality controls, and a closed vocabulary of neutral tool verbs before any harness-specific adapter is considered, and that definition is rendered deterministically into a harness-neutral specification, a human-readable skill description, an executable workflow, and one adapter per configured harness whose default members are Claude, Codex, and Hermes, so that portability becomes a property the test suite proves rather than a hope, and installation is concrete rather than interpretive — clone the public repository, install or run the Python package, run validation, point the agent harness at a chosen skill, execute its workflow, and bind runtime tools through the named harness adapter, regenerating adapters from a configuration file for any non-default harness. The quality discipline is the core of the contribution: an automated audit checks that every skill's defensive boundaries, misuse redirects, evidence requirements, confidence rubrics, privacy and legal constraints, uncertainty handling, failure modes, and negative controls are not merely present but specific to that skill and not reused across the corpus, while an evidence ladder adds curated safe-use and unsafe-redirect scenarios with expected defensive response-shape contracts, reviewed expected answers, and one source-owned worked example per skill, and a generated quality dashboard, supplemental catalogue, metadata matrix, data exports, and a family of deterministic figures — taxonomy counts, the hundred-skill atlas, tool-verb coverage, AGEINT topic crosswalks, the Plan-Build-Teach flow, reference density, harness coverage, and a cover-page installation route — are all produced directly from the live registry and skill specifications so that every visual stays synchronized with the source tree. The evidence boundary is deliberately and explicitly repository-local and reproducible within the checked-out project state, following reproducible-computing, open-data stewardship, and software-citation norms for explicit workflows, version specificity, and citable artifacts; every claim is backed by source files, canonical definitions, generated supplements and figures, the generated dashboard, and project-local verification commands together with a focused test suite and a manuscript renderer, and the work positions CogSecSkills as a validated interface between reasoning, tool use, and defensive output discipline rather than as a claim that any particular model runtime behaves correctly in the field, so its figures, supplements, scenarios, worked examples, and dashboard should be read as synchronized views of the current library state and never as independent measurements of operational performance.\n\n---\nAssociated artifacts\nGitHub release: v1.0.0 (https://github.com/docxology/CogSecSkills/releases/tag/v1.0.0)\nDOI: https://doi.org/10.5281/zenodo.20804585\nZenodo: https://zenodo.org/records/20804585\nPDF SHA-256: 1a99a2e474b07d21593094b7a3b4fd923197904056189a53b206126506b1040d",
+      "abstract": "A defensive, educational, harness-neutral library of 100 agentic tool-use skills for Cognitive Security and analytic tradecraft (Structured Analytic Techniques, source verification, deception detection, critical review), with configured structural adapters for Claude Code, Codex, and Hermes, with a registry, an AGEINT educational upstream, and machine-checkable conformance.",
       "keywords": [
         "cognitive security",
-        "agent skills",
-        "analytic tradecraft",
         "structured analytic techniques",
-        "multiharness"
+        "agentic AI",
+        "intelligence analysis",
+        "OSINT",
+        "counterintelligence",
+        "multiharness skills"
       ],
       "findings": [
         "The generated catalogue reports one hundred implemented skills across seven taxonomy groups, from Structured Analytic Techniques to Research and Synthesis Methods.",
@@ -7944,14 +7964,17 @@
     },
     "Friedman2026SkillarumConditionallyReproducibleWebsite216": {
       "citation_key": "Friedman2026SkillarumConditionallyReproducibleWebsite216",
-      "abstract": "<p>Skillarum turns selected public website pages into portable <code>SKILL.md</code> documents for agent harnesses such as Codex, Claude Code, and Hermes. Work is separated into five inspectable stages: acquire, prepare, process, parse, and render.</p><p>The crawler restricts acquisition to configured HTTP(S) origins, honours robots.txt, validates redirects, and records provenance for every page. Source text is delimited as untrusted data for LLM generation; generated code is never executed.</p><p>The deterministic backend is offline and source-extractive; optional OpenAI and Ollama backends provide provider generation with typed fallback traces. Rendered skills carry provenance manifests, and an evidence-gated research package aggregates run observations into descriptive statistics, figures, and a scholarly manuscript.</p><p>This release pairs the software source snapshot with the companion manuscript PDF.</p>",
+      "abstract": "Source code for Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation. Skillarum turns selected public website pages into portable SKILL.md documents for agent harnesses such as Codex, Claude Code, and Hermes, in five inspectable stages (acquire, prepare, process, parse, render) with provenance manifests and an evidence-gated research package. Release 0.3.0 added index-derived profiles (one skill per page listed on a site's own index; 528 Math 4 Wisdom Research pages), block-preserving extraction, authored target descriptions, and math4wisdom-cube, a versioned investigation skill with separate source, mathematics, interpretation, and test ledgers, audited by three independent AI investigators whose verbatim reports are included. Release 0.3.1 is a correction release: math4wisdom-cube 0.3.0 withdraws an investigator claim that 0.2.0 adopted without recomputation (1+3+3+1 is not the generic grading pattern) and adds a check for the corrected statement; the changelog's account of investigator independence and two documentation statements are corrected.",
       "keywords": [
         "website extraction",
         "agent skills",
         "provenance",
         "reproducibility",
         "prompt injection",
-        "static compilation"
+        "static compilation",
+        "index-derived profiles",
+        "investigation skills",
+        "Math 4 Wisdom"
       ],
       "findings": [
         "Across 7 completed observations from 2 source profiles, the package-valid rate was 100.0%, with 0 fallback observations and 5 truncated pages.",
@@ -8098,8 +8121,15 @@
     },
     "Friedman2026JevPracticeComposablePython219": {
       "citation_key": "Friedman2026JevPracticeComposablePython219",
-      "abstract": "<p>Jev is TypeSafe's flagship <em>System One</em> decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with calibrated probabilities that software can branch on directly. This work presents <code>daf-jev</code>, an open, modular, composable Python toolkit for the Jev API, together with a live-API characterization of the model. The package layers ergonomic question builders, a decision-composition library (confidence gates, tiered routing, composite scoring), a concurrent corpus evaluator, a calibration module, a CLI, an agent skill, and a Model Context Protocol (MCP) server over a thin typed client. Live benchmarks show that batching questions into one call is faster and cheaper than sequential calls (up to ~18x speedup and ~4x fewer tokens), that decision pipelines complete within the model's millisecond envelope, and that reported confidence is self-consistent across repeated evaluations. All numbers in the accompanying manuscript are generated from benchmark artifacts; the full provenance chain (hashed documentation snapshot, figure registry, validation receipts) is machine-checked.</p>",
-      "keywords": [],
+      "abstract": "<p>daf-jev 0.7.2 provides typed native decision clients, provider-neutral backends, pure composition, exact discrete graphical inference, independently labeled dataset preparation, frozen benchmark protocols, decimal cost accounting, and reproducible manuscript evidence. This release adds an explicitly bounded native OpenRouter execution contract for TypeSafe Jev, a separately defined Perplexity Decisions contract, and prospective interleaved native-model comparison protocols. The selected native hosted evidence contains 12 successful capability calls, including complete 77-way BANKING77 and 151-way CLINC option vocabularies, with reported billing of USD 0.000556920. These capability checks establish endpoint and task support; they do not establish dataset accuracy or calibrated probability meaning. Larger native hosted studies are ongoing and remain outside this release's completed research claims. Historical unknown billing and partial local results remain explicitly identified. Two native Mac Python profiles passed all 2,436 unit cases with combined coverage above 92%; package and manuscript reproduction were independently reviewed. The seven release assets contain the source, wheel, sdist, 30-page manuscript, selected evidence archive, release manifest, and checksums. Historical synthetic security-test canaries are retained as fixtures; real credentials, private journals, model weights, and raw corpora are excluded. Source build, artifact, and main commit identities are recorded separately in the release manifest.</p>",
+      "keywords": [
+        "decision-models",
+        "benchmarking",
+        "typed-interfaces",
+        "reproducibility",
+        "bayesian-inference",
+        "selective-prediction"
+      ],
       "findings": [
         "Batching questions into one call gave wall-time speedups of 3.98, 8.77, and 18.55 across the configured batch widths.",
         "At the widest batch width the sequential strategy used 4.22 times the tokens of the batched call, so batching was both faster and cheaper.",
@@ -8119,6 +8149,7 @@
       ],
       "sources": {
         "abstract": "papers/paper_metadata.json",
+        "keywords": "papers/paper_metadata.json",
         "methods": "papers/2026_JevPractice/metadata.json",
         "findings": "papers/2026_JevPractice/metadata.json",
         "concepts": "papers/2026_JevPractice/SKILL.md"
@@ -8336,6 +8367,64 @@
         "abstract": "papers/paper_metadata.json",
         "keywords": "papers/paper_metadata.json",
         "concepts": "papers/2026_CoordinatingField/SKILL.md"
+      },
+      "source": "papers/paper_metadata.json",
+      "abstract_provenance": {},
+      "summary_provenance": {}
+    },
+    "Friedman2026ActiveInferenceSyntheticOverview225": {
+      "citation_key": "Friedman2026ActiveInferenceSyntheticOverview225",
+      "abstract": "This tutorial connects Active Inference and synthetic intelligences to explicitly specified informational and dynamical models. Finite categorical examples make Bayesian conditioning, variational free energy, expected free energy, policy planning, and observation-contingent commitments executable. A decision-value example separates information gain in nats from improved expected utility and observation cost. Gaussian examples distinguish deterministic relaxing paths from stationary ensemble probability current, and marginal dependence from conditional independence. A two-level model illustrates prediction and joint conditioning without assuming a neural implementation. The standalone Python package supplies reproducible figures, independent analytical checks, and counterexamples; a separate Lean layer imports selected real-valued results from a pinned revision of the broader FEP_Formal library. Generalized Notation Notation and other Active Inference Institute resources provide further routes for model specification and learning. The paper distinguishes computational correctness, theorem hypotheses, thermodynamic units, and scientific interpretation. These controlled demonstrations explain particular models; they neither establish general intelligence nor infer life from circulation.",
+      "keywords": [
+        "active inference",
+        "free energy principle",
+        "Bayesian mechanics",
+        "non-equilibrium steady state",
+        "variational inference",
+        "self-organization",
+        "synthetic intelligence"
+      ],
+      "findings": [],
+      "methods": [],
+      "concepts": [
+        "active inference",
+        "free energy principle",
+        "Bayesian mechanics",
+        "non-equilibrium steady state",
+        "variational inference",
+        "self-organization",
+        "synthetic intelligence"
+      ],
+      "sources": {
+        "abstract": "papers/paper_metadata.json",
+        "keywords": "papers/paper_metadata.json",
+        "concepts": "papers/2026_ActiveInferenceSynthetic/SKILL.md"
+      },
+      "source": "papers/paper_metadata.json",
+      "abstract_provenance": {},
+      "summary_provenance": {}
+    },
+    "Friedman2026AntropyNativeMultidimensionalEntropy226": {
+      "citation_key": "Friedman2026AntropyNativeMultidimensionalEntropy226",
+      "abstract": "<p>antropy v0.3.1 provides typed, configurable entropy and complexity methods for native multidimensional data, including high-dimensional sample entropy (HDSE), related local-template estimators, probability and dependence measures, ordinal measures, FFT/SVD entropy, resource planning and whole-observation inference. This software archive includes reproducible synthetic experiments, prospective power and null-calibration studies, tests, documentation, configuration plans, provenance and the methods manuscript rendered through the pinned docxology/template pipeline. Synthetic demonstrations do not establish biological sample sizes or reproduce the original HDSE paper&rsquo;s empirical results. Version 0.3.1 adds an authenticated root-level copy of the rendered manuscript; the underlying scientific study snapshots retain their original producer metadata. Repository: https://github.com/docxology/antropy.</p>",
+      "keywords": [
+        "entropy",
+        "HDSE",
+        "complexity",
+        "reproducibility"
+      ],
+      "findings": [],
+      "methods": [],
+      "concepts": [
+        "entropy",
+        "HDSE",
+        "complexity",
+        "reproducibility"
+      ],
+      "sources": {
+        "abstract": "papers/paper_metadata.json",
+        "keywords": "papers/paper_metadata.json",
+        "concepts": "papers/2026_Antropy/SKILL.md"
       },
       "source": "papers/paper_metadata.json",
       "abstract_provenance": {},

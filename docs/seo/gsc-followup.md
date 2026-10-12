@@ -158,3 +158,8 @@ uv run python3 code/orchestrators/validate_repo.py      # includes seo_invariant
 ```
 
 See also [canonical-policy.md](canonical-policy.md) and [code/src/seo_invariants.py](../../code/src/seo_invariants.py).
+
+Google Scholar has separate article/PDF and metadata requirements. See
+[scholar-inclusion.md](scholar-inclusion.md) for the citation gate, reviewed
+journal fields, and the unresolved PDF directory constraint. Search Console
+submission and IndexNow are not Scholar inclusion evidence.

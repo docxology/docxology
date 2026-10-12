@@ -72,5 +72,16 @@
     "source": "papers/paper_metadata.json",
     "date": "2026-10-01",
     "basis": "Retained source-grounded summary"
+  },
+  "citation_metadata": {
+    "doi": "10.3389/fgene.2015.00261",
+    "title": "Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history",
+    "source_url": "https://api.crossref.org/works/10.3389%2Ffgene.2015.00261",
+    "checked_at": "2026-10-12T21:03:04Z",
+    "resource_type": "journal-article",
+    "journal_title": "Frontiers in Genetics",
+    "volume": "6",
+    "issn": "1664-8021",
+    "publication_date": "2015-08-07"
   }
 }
