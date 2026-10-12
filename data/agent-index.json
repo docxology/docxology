@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.5",
-  "generated_at": "2026-10-12T21:06:00+00:00",
+  "schema_version": "1.6",
+  "generated_at": "2026-10-12T22:38:01+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -289,12 +289,12 @@
     },
     "software": {
       "path": "/data/software.json",
-      "count": 163,
+      "count": 164,
       "schema": "SoftwareRepository"
     },
     "repositories": {
       "path": "/data/github-repositories.json",
-      "count": 278,
+      "count": 279,
       "schema": "Repository"
     },
     "artworks": {
@@ -367,6 +367,11 @@
       "count": null,
       "schema": "ResumeData"
     },
+    "scholar_readiness": {
+      "path": "/data/scholar-readiness.json",
+      "count": 222,
+      "schema": "ScholarReadiness"
+    },
     "work_enrichment": {
       "path": "/data/work-enrichment.json",
       "count": 222,
@@ -374,7 +379,7 @@
     },
     "catalog": {
       "path": "/data/catalog.json",
-      "count": 32,
+      "count": 33,
       "schema": "DataCatalog"
     },
     "reconciliation": {
@@ -389,7 +394,7 @@
     },
     "generated_manifest": {
       "path": "/data/generated-manifest.json",
-      "count": 57,
+      "count": 58,
       "schema": "GeneratedManifest"
     }
   },
@@ -910,6 +915,26 @@
         "variants": "object; named CV variant section selections"
       }
     },
+    "ScholarReadiness": {
+      "type": "object",
+      "description": "Offline Scholar prerequisites; never an indexing or inclusion attestation.",
+      "required": [
+        "schema_version",
+        "evidence_kind",
+        "works_sha256",
+        "network_checked",
+        "indexing_verified",
+        "summary",
+        "works"
+      ],
+      "fields": {
+        "schema_version": "1.0",
+        "network_checked": "false",
+        "indexing_verified": "false",
+        "summary": "local blockers only",
+        "works": "per-work source hashes, citation tags, selected PDF size/placement, and unverified requirements"
+      }
+    },
     "WorkEnrichment": {
       "type": "object",
       "description": "Abstracts and keywords extracted from paper folders, keyed to Work citation identifiers.",
@@ -994,7 +1019,7 @@
       }
     }
   },
-  "schema_registry_version": "1.5",
+  "schema_registry_version": "1.6",
   "schema_examples": {
     "Work": [
       {
@@ -1169,7 +1194,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-10-12T21:06:00+00:00",
+        "checked_at": "2026-10-12T22:38:01+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1198,6 +1223,74 @@
       },
       "source": "Direct authenticated observation of https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en in a signed-in Chrome session",
       "method": "Direct authenticated observation of the canonical profile on 2026-10-05 in the site owner's signed-in Chrome session (operator handoff of 2026-10-05). All-time: 824 citations, h-index 14, i10-index 17; Since-2021: 595 / 14 / 15. No anonymous or search-engine cached result was used."
+    },
+    "ScholarReadiness": {
+      "schema_version": "1.0",
+      "evidence_kind": "offline Scholar prerequisite audit",
+      "inclusion_guidance": "https://scholar.google.com/intl/en/scholar/inclusion.html",
+      "pdf_byte_limit": 5000000,
+      "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
+      "works_sha256": "493379a837944d6423008f63ac0b57e978225e80b61bf36b1c23db5e28fb99e0",
+      "network_checked": false,
+      "indexing_verified": false,
+      "summary": {
+        "works": 222,
+        "local_status": {
+          "blocked": 222
+        },
+        "blockers": {
+          "missing_citation_author": 10,
+          "no_selected_local_pdf": 25,
+          "pdf_directory_differs_from_abstract": 197,
+          "pdf_exceeds_byte_limit": 41
+        }
+      },
+      "works": [
+        {
+          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
+          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "type": "Paper",
+          "abstract_url": "https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative001.html",
+          "page_sha256": "38b4ebf5b6db54a77dd103347c18e06c278f8daed3f39b69f2591840fe469cbf",
+          "citation_tags": {
+            "citation_title": [
+              "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
+            ],
+            "citation_publication_date": [
+              "2026/06/26"
+            ],
+            "citation_author": [
+              "Daniel Ari Friedman"
+            ],
+            "citation_doi": [
+              "10.5281/zenodo.16903351"
+            ],
+            "citation_pdf_url": [
+              "https://danielarifriedman.com/papers/2026_ReproducibleResearch/template_daf_v1_03202026.pdf"
+            ]
+          },
+          "primary_pdf": {
+            "path": "papers/2026_ReproducibleResearch/template_daf_v1_03202026.pdf",
+            "url": "https://danielarifriedman.com/papers/2026_ReproducibleResearch/template_daf_v1_03202026.pdf",
+            "selection_basis": "extracted-text source",
+            "bytes": 1153790,
+            "sha256": "e1e885b952d814a86e3d178c6e3bce82c78faf5fbd5e4d514b3fbd3e533d7fef",
+            "within_byte_limit": true,
+            "same_directory_as_abstract": false
+          },
+          "selection_issue": "",
+          "local_status": "blocked",
+          "blockers": [
+            "pdf_directory_differs_from_abstract"
+          ],
+          "unverified_requirements": [
+            "searchable_pdf",
+            "scholarly_content",
+            "complete_author_written_abstract_or_full_text",
+            "actual_scholar_indexing"
+          ]
+        }
+      ]
     },
     "SearchResult": [
       {
@@ -1282,25 +1375,25 @@
         "full_text_papers": 201,
         "generated_exports": {
           "data_publications_ld_main_entity": 222,
-          "data_software_json": 163,
-          "data_software_ld_main_entity": 163,
+          "data_software_json": 164,
+          "data_software_ld_main_entity": 164,
           "data_works_json": 222
         },
         "github_inventory": {
           "ActiveInferenceInstitute": 45,
           "archived": 5,
-          "curated": 163,
-          "docxology": 233,
+          "curated": 164,
+          "docxology": 234,
           "fork_ActiveInferenceInstitute": 2,
           "fork_docxology": 102,
           "forks": 104,
           "primary_ActiveInferenceInstitute": 43,
-          "primary_docxology": 131,
-          "primary_total": 174,
+          "primary_docxology": 132,
+          "primary_total": 175,
           "private": 0,
-          "public": 278,
-          "recently_updated": 218,
-          "total": 278,
+          "public": 279,
+          "recently_updated": 219,
+          "total": 279,
           "uncataloged": 115
         },
         "paired_publication_decisions": {
@@ -1326,7 +1419,7 @@
           "Crossref ORCID DOI records": 15,
           "Europe PMC exact author records": 10,
           "GitHub user ActiveInferenceInstitute": 45,
-          "GitHub user docxology": 233,
+          "GitHub user docxology": 234,
           "ORCID work groups": 20,
           "PubMed exact author records": 8,
           "Zenodo ORCID-linked records": 161,
@@ -1334,8 +1427,8 @@
         },
         "software": {
           "active_inference_institute": 41,
-          "curated_total": 163,
-          "docxology_owned": 122
+          "curated_total": 164,
+          "docxology_owned": 123
         },
         "types": {
           "Books": 5,
@@ -1347,7 +1440,7 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-10-12T21:06:00+00:00",
+      "generated_at": "2026-10-12T22:38:01+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
@@ -1371,11 +1464,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 905387966,
+        "source_bytes": 905880660,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5949,
-        "artifact_bytes": 906439031
+        "artifact_file_count": 5959,
+        "artifact_bytes": 906933412
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5849,26 +5942,27 @@
   "dataset_hashes": {
     "works": "493379a837944d6423008f63ac0b57e978225e80b61bf36b1c23db5e28fb99e0",
     "work_identifiers": "e643270f18f3798c4670ca7b0ae6e93d90be2cd3f8ec8acc5ffb0d117d1fc103",
-    "software": "70fcd7ebaef7a2b37e040184741e1294db396d3d44a0f4982cb9bc82f29a055d",
-    "repositories": "860ecdb3d3fb3213b6fbb513fe1645836a8f78f255255ebec0d1d4598854b256",
+    "software": "cb8810dc1dc749f0c71d492e2beaf0a93a1d1df1242407cf7aaac65ba3033236",
+    "repositories": "7e17123bee5c1ef62844b91ac7b545f3fd70b48fe484c31c41f3fdcf84f544f1",
     "artworks_index": "29270719124f00fb4d9c2729262c33318c82e9dbb114ec8b0f777436bb270769",
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "d322202c51f61b151f7739933dcedc11a9d9efbe83c3c81a05bd87f811231339",
     "videos_index": "00cbbae94055540634edca93e02f98ff62b4abccc127c0099d9edecfcc3d26fe",
-    "search": "834b3c569575838a7f33df773e70b25c235e238eed9c67e033ed87db2ad41bab",
-    "claims": "50b71766a338b381c3ec76f6ad5a17bdc0fe515da4d5aabcd24649fef0bdce63",
+    "search": "bcaedff8d444abed30f53c31b475ca432839d7efc8412326ad5b26bc1253a6f8",
+    "claims": "fcd7a157c6446f6fcc881a98ef53d0d6f1dce535e542e4af92a21954e01c7139",
     "scholar_verification_receipt": "eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759",
     "coverage_exceptions": "cd5f27ddc26015d9323d0383370b82291befdfe8964312fe1e581ef8effb3c38",
-    "repository_classification": "7e02fc8d8a4888832ba50af884019619811a5614b8c79eae859cc7424810625e",
-    "people": "8012f0d523826a14c70764bcd7158e13c59362f32e1f3d4bc150724efc183409",
-    "organizations": "2fa137011482ca13cbe17819dfafabd31ec08e5bda6f71681021109d69a7c7cf",
-    "resume": "b75e0c12e0a7363dee246391de85253f1f70ff7ccd52be6bcde1e899906210e5",
+    "repository_classification": "fbd8cea27ecbf33f3070e329595b95a084add08093557ff1e6c0fe56c6493fa8",
+    "people": "c72804113ec45bd16d39e023d3ea74e1ae4067d165c8c74ae4d7b99d2c696d9c",
+    "organizations": "f4d7eb4782e61de913ef5226a9baa982c5863d5708eac7833d62a9a312ad64ad",
+    "resume": "e8664af072772b779802811b1ad9eae42f506135e39cf5bf6c34b8994f8c2f0e",
     "work_enrichment": "efcab877656a2cf4028a1c09f8e9e8914c8a65b0675aeb1aaf0c2d963d813543",
-    "catalog": "488e978297dbc09bf93006384b15ec1d8698044ceef167b05b379bec7acd3127",
-    "reconciliation": "37871dd5ffc404b73dc6ae3f027d3531b77e92413bdcfba96bc64580678d8c4f",
+    "scholar_readiness": "315a73a8cd1454cd9b7b2cd240f7ec9bb80e56a80ddf06c2d5403918c59b4685",
+    "catalog": "00fd0a01811c19ae3f0373885f9febf556c0691c0fd49b1289bb9e9406cf35d5",
+    "reconciliation": "0404727677daf98fa5d6b378cf319f4a2fac1fe5e0107e92ea32e4e178f59689",
     "reproducibility": "7a65af07cf53e49eac82b3c39e8654a3ec462a23597754cb596365dbbce191b7",
-    "generated_manifest": "0c85617418f44fe11127bb9fe4ee758dc409ca08f5b699fd9d1ea3d71847358a",
-    "current_counts": "c26d20865db2b8bce1962c11d5cd685e7f3bc53112c1fb85906b574bb0e1b974"
+    "generated_manifest": "1662b5757653c25abddcc1193a290deac307ea75acbed2d56fe0e92c71964c4f",
+    "current_counts": "d50f3e73733b6c89a82d175fed988410ab356b1fd77111bd16ae256572423117"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -5913,25 +6007,25 @@
     "full_text_papers": 201,
     "generated_exports": {
       "data_publications_ld_main_entity": 222,
-      "data_software_json": 163,
-      "data_software_ld_main_entity": 163,
+      "data_software_json": 164,
+      "data_software_ld_main_entity": 164,
       "data_works_json": 222
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 45,
       "archived": 5,
-      "curated": 163,
-      "docxology": 233,
+      "curated": 164,
+      "docxology": 234,
       "fork_ActiveInferenceInstitute": 2,
       "fork_docxology": 102,
       "forks": 104,
       "primary_ActiveInferenceInstitute": 43,
-      "primary_docxology": 131,
-      "primary_total": 174,
+      "primary_docxology": 132,
+      "primary_total": 175,
       "private": 0,
-      "public": 278,
-      "recently_updated": 218,
-      "total": 278,
+      "public": 279,
+      "recently_updated": 219,
+      "total": 279,
       "uncataloged": 115
     },
     "paired_publication_decisions": {
@@ -5957,7 +6051,7 @@
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
       "GitHub user ActiveInferenceInstitute": 45,
-      "GitHub user docxology": 233,
+      "GitHub user docxology": 234,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
       "Zenodo ORCID-linked records": 161,
@@ -5965,8 +6059,8 @@
     },
     "software": {
       "active_inference_institute": 41,
-      "curated_total": 163,
-      "docxology_owned": 122
+      "curated_total": 164,
+      "docxology_owned": 123
     },
     "types": {
       "Books": 5,
