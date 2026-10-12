@@ -9,6 +9,13 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   and canonical pages; GNN stays under its existing concept, and older
   CogSecSkills, FEP, Ento-Linguistics, and antropy archives retain history
   without duplicate bibliography rows.
+- **Deployment deadline regression:** the queue/retry deadline test now uses
+  a controlled clock rather than depending on subsecond host scheduling.
+  Real HTTP hash, HEAD, and slow-drip process-deadline tests remain in place;
+  production deadlines and limits are unchanged.
+- **Citation source follow-up:** recovered the ten rate-limited Crossref
+  records in a bounded sequential pass, completing DOI/title-matched citation
+  enrichment of the Crossref-backed paper folders.
 - **Citation discovery:** work pages now retain valid source-backed date
   precision and reviewed journal citation fields. The SEO gate detects
   citation identity, ordered-author, and primary-PDF drift. Scholar's PDF

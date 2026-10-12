@@ -108,5 +108,16 @@
     "retrieved_on": "2026-10-01",
     "license": "CC BY 4.0"
   },
-  "pdf_sha256": "7325c9a11c8cd665622ec8143afb64b606cd967607e7a7cc8359411fd2e773f8"
+  "pdf_sha256": "7325c9a11c8cd665622ec8143afb64b606cd967607e7a7cc8359411fd2e773f8",
+  "citation_metadata": {
+    "doi": "10.1016/j.isci.2018.09.001",
+    "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
+    "source_url": "https://api.crossref.org/works/10.1016%2Fj.isci.2018.09.001",
+    "checked_at": "2026-10-12T21:33:56Z",
+    "resource_type": "journal-article",
+    "journal_title": "iScience",
+    "volume": "8",
+    "pages": "283-294",
+    "issn": "2589-0042"
+  }
 }

@@ -111,5 +111,16 @@
     "date": "2026-10-01",
     "basis": "Passage recovered from the document",
     "evidence_source": "full_text.md"
+  },
+  "citation_metadata": {
+    "doi": "10.1016/j.neubiorev.2023.105500",
+    "title": "Federated inference and belief sharing",
+    "source_url": "https://api.crossref.org/works/10.1016%2Fj.neubiorev.2023.105500",
+    "checked_at": "2026-10-12T21:33:52Z",
+    "resource_type": "journal-article",
+    "journal_title": "Neuroscience & Biobehavioral Reviews",
+    "volume": "156",
+    "pages": "105500",
+    "issn": "0149-7634"
   }
 }

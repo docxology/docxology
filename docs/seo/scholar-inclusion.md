@@ -35,9 +35,10 @@ compress or rewrite source PDFs merely to claim inclusion.
 
 The 2026-10-12 source pass populated citation metadata for 22 DOI/title-matched
 Crossref records, including 19 journal articles. Ten further requests returned
-HTTP 429; those records retain their prior metadata. Refresh those missing
-fields in a later bounded source pass, then regenerate and validate. These
-counts describe that dated pass, not a permanent catalog total.
+HTTP 429. A subsequent bounded sequential pass recovered and DOI/title-matched
+all ten records, completing enrichment of the 32 Crossref-backed paper folders
+(including 29 journal articles). These counts describe the dated source passes,
+not a permanent catalog total.
 
 ## Verification and follow-up
 

@@ -181,7 +181,7 @@ criteria, and dependencies. Re-review this file before each public release.
 - Dependencies: `seo_invariants.py`, `gsc_followup_preflight.py`, signed-in Search Console review
 - Scholar follow-up: preserve permanent URLs and the artifact ceiling while
   planning a hash-bound PDF placement strategy for the same-directory
-  requirement; refresh the ten Crossref records rate-limited on 2026-10-12.
+  requirement.
   See [scholar-inclusion.md](docs/seo/scholar-inclusion.md). Valid citation tags
   do not close PDF eligibility or actual Scholar indexing.
 - Access: the owner's signed-in Search Console property was available on
