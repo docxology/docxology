@@ -673,8 +673,10 @@ def write_manifest(*, allow_dirty_prepayload_source_snapshot: bool = False) -> d
     return payload
 
 
-def check_manifest() -> None:
-    require_clean_postdeploy_payload_inputs()
+def check_manifest(*, allow_dirty_prepayload_source_snapshot: bool = False) -> None:
+    require_clean_postdeploy_payload_inputs(
+        allow_dirty_prepayload_source_snapshot=allow_dirty_prepayload_source_snapshot
+    )
     if not ARTIFACT_MANIFEST.exists():
         raise SystemExit(f"Missing Pages artifact manifest: {ARTIFACT_MANIFEST.relative_to(REPO_ROOT)}")
     manifest_path = source_path(ARTIFACT_MANIFEST.relative_to(REPO_ROOT))
@@ -800,19 +802,25 @@ def main() -> None:
         action="store_true",
         help=(
             "Allow only a current, dirty public-source snapshot whose own receipt records "
-            "source_worktree_clean=false; reserved for pre-commit payload regeneration"
+            "source_worktree_clean=false; reserved for pre-commit payload regeneration or no-write validation"
         ),
     )
     parser.add_argument("--check-manifest", action="store_true", help="Fail if the checked-in Pages artifact manifest is stale")
     args = parser.parse_args()
-    if args.allow_dirty_prepayload_evidence and not args.write_manifest:
-        raise SystemExit("--allow-dirty-prepayload-evidence requires --write-manifest")
+    if args.allow_dirty_prepayload_evidence and (
+        args.check_size or not (args.write_manifest or args.check_manifest or args.check_size_only)
+    ):
+        raise SystemExit("--allow-dirty-prepayload-evidence requires manifest regeneration or no-write checks; assembly remains strict")
     if args.write_manifest:
         write_manifest(
             allow_dirty_prepayload_source_snapshot=args.allow_dirty_prepayload_evidence
         )
     if args.check_manifest:
-        check_manifest()
+        check_manifest(
+            allow_dirty_prepayload_source_snapshot=args.allow_dirty_prepayload_evidence
+        )
+        if args.allow_dirty_prepayload_evidence and not args.write_manifest and not args.check_size_only:
+            return
     if args.check_size_only:
         copied, size = projected_size(
             allow_dirty_prepayload_source_snapshot=args.allow_dirty_prepayload_evidence

@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Software",
-    "description": "122 original repositories and 41 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
+    "description": "123 original repositories and 41 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -22,7 +22,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-08-18T16:48:46Z",
-            "dateModified": "2026-10-12T18:24:22Z",
+            "dateModified": "2026-10-12T22:28:42Z",
             "keywords": "agents-md, ai-agents, claude-code, computational-research, cursor, github-template, latex, multi-project, ollama, pandoc, pdf-generation, project-template, provenance, pytest, python, reproducible-research, research-template, steganography, uv, zenodo",
             "sameAs": "https://doi.org/10.5281/zenodo.20584820"
         },
@@ -71,7 +71,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-05-16T17:45:28Z",
-            "dateModified": "2026-10-12T01:36:03Z",
+            "dateModified": "2026-10-12T21:39:42Z",
             "keywords": "agents, ai-agents, automation, claude, code-analysis, coding-agent, developer-tools, llm, mcp, mcp-server, model-context-protocol, multi-agent, orchestration, personal-ai, python, rag, security, static-analysis, uv, zero-mock",
             "sameAs": "https://doi.org/10.5281/zenodo.21750800"
         },
@@ -1943,6 +1943,22 @@
         },
         {
             "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/daf-okn#software",
+            "name": "daf-okn",
+            "description": "Python package and CLI for Open Knowledge Network registry discovery, vault-to-graph export, graph analysis and visualization, and local RDF contribution packaging; packaging does not upload to the registry, and live endpoint coverage remains limited",
+            "codeRepository": "https://github.com/docxology/daf-okn",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
+            "dateCreated": "2026-09-26T00:34:45Z",
+            "dateModified": "2026-10-12T20:56:31Z",
+            "keywords": "active-inference, knowledge-graph, open-knowledge-network, rdf, skos"
+        },
+        {
+            "@type": "SoftwareSourceCode",
             "@id": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal#software",
             "name": "ActiveInferenceJournal",
             "description": "Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output",
@@ -2015,7 +2031,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2023-04-02T19:45:34Z",
-            "dateModified": "2026-10-08T17:14:27Z",
+            "dateModified": "2026-10-12T21:16:15Z",
             "keywords": "active, active-inference, active-inference-notation, inference",
             "sameAs": "https://doi.org/10.5281/zenodo.19600217"
         },
@@ -2032,7 +2048,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-02-17T17:46:31Z",
-            "dateModified": "2026-10-12T18:44:05Z",
+            "dateModified": "2026-10-12T21:05:38Z",
             "keywords": "active-inference, expected-free-energy, free-energy-principle, generative-model, pomdp, python"
         },
         {
@@ -2125,7 +2141,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2025-05-13T14:17:56Z",
-            "dateModified": "2026-10-09T03:16:32Z",
+            "dateModified": "2026-10-12T21:16:13Z",
             "keywords": "active-inference, agent-workflows, bayesian-inference, domain-modeling, geospatial, h3, monorepo, python, reproducible-research, spatial-analysis, uv"
         },
         {
@@ -2261,7 +2277,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-04-14T13:33:35Z",
-            "dateModified": "2026-10-11T21:42:48Z",
+            "dateModified": "2026-10-12T20:02:25Z",
             "keywords": "active-inference, bayesian-mechanics, formal-verification, free-energy-principle, information-geometry, lean4, theorem-proving",
             "sameAs": "https://doi.org/10.5281/zenodo.19699233"
         },

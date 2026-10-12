@@ -1,11 +1,11 @@
 {
   "schema_version": "1.4",
-  "generated_at": "2026-10-12T18:44:39Z",
+  "generated_at": "2026-10-12T22:38:01Z",
   "source": "data/github-repositories.json",
   "acknowledged_exclusions_source": "data/repository-exclusions.json",
   "policy": "Complete GitHub inventory remains distinct from the curated software catalog; unknown primary repositories stay reviewable and are never auto-promoted. Repositories listed in data/repository-exclusions.json are deliberate not-catalog decisions (profile/website/test/mirror/duplicate or public forks) and are marked acknowledged only when their full_name and immutable github_id/github_node_id match the reviewed repository. Each row reports how its decision was reached in reviewed_by: principal means the principal reviewed that repository individually; standing_policy means an already-recorded principal decision was applied to a fork nobody reviewed one by one, and policy_source names that decision.",
   "summary": {
-    "total_inventory": 278,
+    "total_inventory": 279,
     "uncatalogued": 115,
     "forks": 103,
     "acknowledged_forks": 103,

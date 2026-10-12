@@ -32,7 +32,8 @@ COMMON_INPUTS = (
 
 def _seed_page_inputs(tmp_path, step):
     for relative in (
-        *COMMON_INPUTS, "data/publishing-status.json", "bibliography.bib",
+        *COMMON_INPUTS, "data/publishing-status.json", "data/work-authors.json", "bibliography.bib",
+        "code/src/author_entities.py",
         "code/src/metadata_templates.py", f"code/orchestrators/{step.script}",
     ):
         path = tmp_path / relative
@@ -62,7 +63,7 @@ def test_abstract_display_boundary_is_an_explicit_page_generation_input(identifi
     assert "code/src/abstract_text.py" in step.inputs
 
 
-@pytest.mark.parametrize("changed_path", ["data/publishing-status.json", "bibliography.bib"])
+@pytest.mark.parametrize("changed_path", ["data/publishing-status.json", "bibliography.bib", "data/work-authors.json", "code/src/author_entities.py"])
 def test_work_platform_and_citation_changes_invalidate_page_generation(tmp_path, changed_path):
     test_paper_resource_changes_invalidate_page_generation(tmp_path, "work-pages", changed_path)
 

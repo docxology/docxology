@@ -84,6 +84,8 @@ ARTIFACTS = [
         "sources": [
             "pages/BIBLIOGRAPHY.md",
             "data/work-identifiers.json",
+            "data/work-authors.json",
+            "code/src/author_entities.py",
             "data/current-counts.json",
             "papers/*/README.md",
             "papers/*/AGENTS.md",
@@ -388,6 +390,9 @@ ARTIFACTS = [
         "sources": [
             "data/works.json",
             "data/publishing-status.json",
+            "data/work-authors.json",
+            "code/src/author_entities.py",
+            "code/src/citation_metadata.py",
             "bibliography.bib",
             "papers/paper_metadata.json",
             "papers/*/metadata.json",
@@ -407,6 +412,12 @@ ARTIFACTS = [
             "code/src/build_stamp.py",
         ],
         "command": "python3 code/orchestrators/build_work_pages.py",
+    },
+    {
+        "name": "Scholar prerequisite audit",
+        "outputs": ["data/scholar-readiness.json", "reports/scholar_readiness.md"],
+        "sources": ["data/works.json", "works/*.html", "papers/*/metadata.json", "papers/*/full_text.md", "papers/*/*.[pP][dD][fF]", "code/src/scholar_readiness.py", "code/src/citation_metadata.py", "code/src/paper_artifacts.py"],
+        "command": "uv run python3 code/orchestrators/build_scholar_readiness.py",
     },
     {
         "name": "Work authors",
@@ -655,6 +666,7 @@ ARTIFACTS = [
 UTILITIES = [
     ("regenerate_all.py", "Dependency-ordered write-mode rebuild of every locally-derived artifact; `--validate` chains validate_repo.py", "driver"),
     ("validate_repo.py", "Authoritative generated-layer gate: runs every generator in `--check` mode plus repo invariants", "gate"),
+    ("review_citation_metadata.py", "Bounded Crossref DOI/title-matched citation proposals; explicit report output, no source application", "audit"),
     ("validate_manuscript.py", "Read-only manuscript source/configuration gate; validates labels, citations and local references without rendering or assessing publication readiness", "gate"),
     ("build_generated_manifest.py", "Writes GENERATED.md + data/generated-manifest.json from the ARTIFACTS/UTILITIES lists in this file", "meta"),
     ("audit_publication_skills.py", "Validates papers/*/SKILL.md against data/works.json docs_path references; runs in validate_repo.py", "audit"),

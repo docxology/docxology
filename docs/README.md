@@ -49,3 +49,5 @@ generated-layer rebuild ordering, canonical/reports). This README is the human m
 - Keep public security/transparency artifacts (`/canary.txt`, `/.well-known/security.txt`)
   documented under [`security/`](security/).
 - Keep `TODO.md` limited to unfinished work. Do not copy completed maintenance-log entries into it.
+
+- [Scholar citation review and prerequisite audit](seo/scholar-inclusion.md): bounded source proposals and hash-bound local PDF findings, separate from actual indexing.

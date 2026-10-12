@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from datetime import date
+from html.parser import HTMLParser
 
 
 def _doi(record: dict) -> str:
@@ -67,3 +68,26 @@ def journal_fields(work: dict, metadata: dict) -> dict[str, str]:
         if separator and last:
             fields["lastpage"] = last
     return fields
+
+
+class CitationHead(HTMLParser):
+    """Read real head tags; comments and body lookalikes cannot fill gaps."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.in_head = False
+        self.tags: dict[str, list[str]] = {}
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "head":
+            self.in_head = True
+        if tag != "meta" or not self.in_head:
+            return
+        attributes = dict(attrs)
+        name = (attributes.get("name") or "").lower()
+        if name.startswith("citation_"):
+            self.tags.setdefault(name, []).append(attributes.get("content") or "")
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "head":
+            self.in_head = False

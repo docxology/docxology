@@ -4,6 +4,26 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-10-12
 
+- **Author entity types:** work and publication JSON-LD now use verified
+  DOI-matching registry person/organization records. A name without a comma
+  no longer establishes an organization; unknown literal names retain no
+  guessed type. Citation names and order stay unchanged.
+- **Source-refresh landing:** added an explicit narrow pre-commit evidence
+  mode so reviewed source snapshots can pass no-write artifact checks before
+  their payload lands. Default CI, post-landing, and release guards stay strict.
+- **Repeatable citation intake:** added a bounded Crossref proposal tool with
+  exact DOI/title matching, explicit errors, source custody checks, and no
+  automatic adoption. Semantically unchanged records preserve their original
+  review timestamps.
+- **Scholar prerequisite audit:** added a deterministic per-work JSON/report
+  covering real head tags, selected PDF hashes, size, and placement. The
+  generation pipeline checks it for drift; catalog and agent schema 1.6 expose
+  it. Content suitability, searchable text, and actual indexing remain separate
+  reviews, with permanent URLs and artifact limits preserved.
+- **Public repository intake:** reviewed the newly public `daf-okn` graph
+  toolkit and added it to the software catalog. Refreshed public inventory and
+  freshness evidence; live OKN endpoint verification remains qualified.
+
 - **Publication curation:** recorded the disposition of all 30 ambiguous
   release pairs. The 21 template manuscripts retain separate citation DOIs
   and canonical pages; GNN stays under its existing concept, and older

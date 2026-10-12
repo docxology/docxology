@@ -275,7 +275,11 @@ def main() -> int:
                         help="ordered local passes (default: 2; 1 is diagnostic)")
     parser.add_argument("--list", action="store_true", dest="list_only",
                         help="print the ordered plan and exit without running anything")
+    parser.add_argument("--allow-dirty-prepayload-evidence", action="store_true",
+                        help="with --validate, permit only current HEAD-bound dirty source snapshots in the no-write Pages check")
     args = parser.parse_args()
+    if args.allow_dirty_prepayload_evidence and not args.validate:
+        parser.error("--allow-dirty-prepayload-evidence requires --validate")
     validate_generation_plan()
 
     if args.list_only:
@@ -295,8 +299,11 @@ def main() -> int:
             )
             if args.validate:
                 print("\n=== validate_repo.py ".ljust(72, "="))
+                command = [sys.executable, "code/orchestrators/validate_repo.py"]
+                if args.allow_dirty_prepayload_evidence:
+                    command.append("--allow-dirty-prepayload-evidence")
                 subprocess.run(
-                    [sys.executable, "code/orchestrators/validate_repo.py"],
+                    command,
                     cwd=REPO_ROOT, check=True, pass_fds=(lock_descriptor,),
                 )
     except RegenerationLockError as exc:

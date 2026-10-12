@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-10-12T21:06:00+00:00`
+Generated: `2026-10-12T22:38:01+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -60,38 +60,38 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Software
 
-- docxology_owned: `122`
+- docxology_owned: `123`
 - active_inference_institute: `41`
-- curated_total: `163`
+- curated_total: `164`
 
 ### Generated Exports
 
 - data_works_json: `222`
-- data_software_json: `163`
+- data_software_json: `164`
 - data_publications_ld_main_entity: `222`
-- data_software_ld_main_entity: `163`
+- data_software_ld_main_entity: `164`
 
 ### GitHub Inventory
 
-- total: `278`
-- docxology: `233`
+- total: `279`
+- docxology: `234`
 - ActiveInferenceInstitute: `45`
-- curated: `163`
+- curated: `164`
 - uncataloged: `115`
 - forks: `104`
 - archived: `5`
-- public: `278`
+- public: `279`
 - private: `0`
-- recently_updated: `218`
-- primary_total: `174`
-- primary_docxology: `131`
+- recently_updated: `219`
+- primary_total: `175`
+- primary_docxology: `132`
 - primary_ActiveInferenceInstitute: `43`
 - fork_docxology: `102`
 - fork_ActiveInferenceInstitute: `2`
 
 ### Public Source Snapshot
 
-- GitHub user docxology: `233`
+- GitHub user docxology: `234`
 - GitHub user ActiveInferenceInstitute: `45`
 - ORCID work groups: `20`
 - PubMed exact author records: `8`

@@ -80,3 +80,11 @@ def test_network_manual_and_destructive_operations_are_explicitly_excluded():
     assert categories["batch_enrich_metadata.py"] == "source-authoring/manual-review"
     assert categories["improve_metadata_quality.py"] == "source-authoring/manual-review"
     assert categories["record_scholar_observation.py"] == "source-authoring/manual-review"
+
+
+def test_scholar_audit_hashes_normalized_pages_before_catalog_consumption():
+    order = [step.identifier for step in LOCAL_GENERATION_STEPS]
+    assert order.index("work-pages") < order.index("scholar-readiness")
+    assert order.index("seo-security") < order.index("scholar-readiness")
+    assert order.index("agent-navigation") < order.index("scholar-readiness")
+    assert order.index("scholar-readiness") < order.index("catalog")

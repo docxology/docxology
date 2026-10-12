@@ -87,7 +87,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#software",
       "name": "Software Catalog",
-      "description": "163 catalogued software repositories across docxology and AII contributions.",
+      "description": "164 catalogued software repositories across docxology and AII contributions.",
       "url": "https://danielarifriedman.com/data/software.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -471,6 +471,29 @@
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/generated-manifest.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#scholar-readiness",
+      "name": "Scholar Prerequisite Audit",
+      "description": "Offline per-work citation tags, hash-bound PDF placement and byte-size findings; content suitability and actual indexing remain unverified.",
+      "url": "https://danielarifriedman.com/data/scholar-readiness.json",
+      "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/scholar-readiness.json",
         "encodingFormat": "application/json"
       }
     },

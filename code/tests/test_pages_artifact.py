@@ -585,3 +585,59 @@ def test_dangling_report_reference_guard_skips_gitignored(tmp_path: Path, monkey
     )
     monkeypatch.setattr(bpa, "REPO_ROOT", repo)
     assert bpa.dangling_report_references(output) == ["reports/asset_size_2026-09-10.json"]
+
+
+@pytest.mark.parametrize("kind", ["current", "deployed", "misbound", "malformed", "invalid-snapshot", "other-evidence"])
+def test_no_write_prepayload_checks_keep_revision_and_evidence_boundary(tmp_path, monkeypatch, kind):
+    _git(tmp_path, "init", "-q")
+    _git(tmp_path, "config", "user.email", "test@example.invalid")
+    _git(tmp_path, "config", "user.name", "Pages fixture")
+    name = "public_source_snapshot_2026-08-25.json"
+    if kind == "other-evidence":
+        name = "external_links_2026-08-25.json"
+    report = tmp_path / "reports" / name
+    report.parent.mkdir()
+    report.write_text("{}\n")
+    manifest = tmp_path / "data/pages-artifact-manifest.json"
+    manifest.parent.mkdir()
+    manifest.write_text("{}\n")
+    _git(tmp_path, "add", ".")
+    _git(tmp_path, "commit", "-qm", "baseline")
+    head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=tmp_path, check=True, capture_output=True, text=True).stdout.strip()
+    payload = {"source_commit": head if kind != "misbound" else "0" * 40, "source_worktree_clean": kind == "deployed"}
+    report.write_text("not JSON" if kind == "malformed" else json.dumps([] if kind == "invalid-snapshot" else payload))
+    manifest.write_text(json.dumps({"source_commit_at_generation": head}))
+    monkeypatch.setattr(bpa, "REPO_ROOT", tmp_path)
+    monkeypatch.setattr(bpa, "ARTIFACT_MANIFEST", manifest)
+    monkeypatch.setattr(bpa, "GROWTH_REPORT", tmp_path / "reports/missing-growth.json")
+    original_source_path = bpa.source_path
+    monkeypatch.setattr(bpa, "source_path", lambda path: original_source_path(path, repo_root=tmp_path))
+    original_guard = bpa.require_clean_postdeploy_payload_inputs
+    monkeypatch.setattr(bpa, "require_clean_postdeploy_payload_inputs", lambda **kw: original_guard(tmp_path, **kw))
+    monkeypatch.setattr(bpa, "_manifest_payload", lambda existing, **kw: existing)
+    monkeypatch.setattr(bpa, "_relative_paths", lambda: [report.relative_to(tmp_path)])
+    before = {path: path.read_bytes() for path in (report, manifest)}
+    for check in (bpa.check_manifest, bpa.projected_size):
+        with pytest.raises(SystemExit, match="dirty post-deploy"):
+            check()
+        if kind == "current":
+            check(allow_dirty_prepayload_source_snapshot=True)
+        else:
+            with pytest.raises(SystemExit, match="dirty post-deploy"):
+                check(allow_dirty_prepayload_source_snapshot=True)
+    assert {path: path.read_bytes() for path in before} == before
+
+
+def test_explicit_manifest_only_prepayload_cli_never_assembles(monkeypatch):
+    calls = []
+    monkeypatch.setattr(sys, "argv", ["build_pages_artifact.py", "--check-manifest", "--allow-dirty-prepayload-evidence"])
+    monkeypatch.setattr(bpa, "check_manifest", lambda **kw: calls.append(kw))
+    monkeypatch.setattr(bpa, "assemble", lambda *_: pytest.fail("no-write check assembled output"))
+    bpa.main()
+    assert calls == [{"allow_dirty_prepayload_source_snapshot": True}]
+
+
+def test_prepayload_cli_cannot_relax_assembly(monkeypatch):
+    monkeypatch.setattr(sys, "argv", ["build_pages_artifact.py", "--check-size", "--allow-dirty-prepayload-evidence"])
+    with pytest.raises(SystemExit, match="assembly remains strict"):
+        bpa.main()

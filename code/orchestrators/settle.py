@@ -130,7 +130,7 @@ def _release_step() -> tuple[str, tuple[str, ...]]:
 
 
 def battery_for_tier(
-    tier: str, dirty: Iterable[str] | None = None
+    tier: str, dirty: Iterable[str] | None = None, *, allow_dirty_prepayload_evidence: bool = False
 ) -> tuple[tuple[str, tuple[str, ...]], ...]:
     """Return the ordered battery for *tier*; release extends full.
 
@@ -143,6 +143,14 @@ def battery_for_tier(
     fails closed: the Pages deploy re-checks the binder manifest, which every
     payload commit stales, so a payload change must ride the full tier.
     """
+    if allow_dirty_prepayload_evidence:
+        if tier != "full" or dirty is None or not any(not is_control_path(Path(path)) for path in dirty):
+            raise ValueError("dirty prepayload evidence mode requires a full payload landing")
+        return tuple(
+            (label, command + ("--allow-dirty-prepayload-evidence",))
+            if (label, command) == _VALIDATE_STANDARD_STEP else (label, command)
+            for label, command in _FULL_STEPS
+        )
     if tier == "routine":
         if dirty is None:
             raise ValueError("battery_for_tier('routine') requires the dirty-path set")
@@ -275,9 +283,9 @@ def run_steps(steps: Iterable[tuple[str, tuple[str, ...]]]) -> bool:
     return True
 
 
-def run_battery(tier: str, dirty: Iterable[str]) -> bool:
+def run_battery(tier: str, dirty: Iterable[str], allow_dirty_prepayload_evidence: bool = False) -> bool:
     """Run the tier battery in order; stop at the first failure."""
-    if not run_steps(battery_for_tier(tier, dirty)):
+    if not run_steps(battery_for_tier(tier, dirty, allow_dirty_prepayload_evidence=allow_dirty_prepayload_evidence)):
         return False
     higher = sorted(
         (name for name in TIER_ORDER if TIER_ORDER[name] > TIER_ORDER[tier]),
@@ -622,7 +630,10 @@ def print_plan(
     args: argparse.Namespace, classification: Classification, tier: str, dirty: Iterable[str]
 ) -> None:
     """Print the settle plan without executing anything."""
-    steps = battery_for_tier(tier, dirty)
+    steps = battery_for_tier(
+        tier, dirty,
+        allow_dirty_prepayload_evidence=bool(classification.payload_paths) and not args.skip_commit and tier == "full",
+    )
     if not args.skip_commit and (classification.payload_paths or classification.control_paths):
         print("preflight: replay existing public-source review with its recorded inputs")
     print(f"battery ({tier}, {len(steps)} checks, stop on first failure):")
@@ -695,7 +706,7 @@ def main() -> None:
         if not _same_head(head_before) or _path_state(current_payload) != payload_before:
             print("settle refused: payload changed during review preflight; review it and run again")
             raise SystemExit(1)
-    if not run_battery(tier, paths):
+    if not run_battery(tier, paths, bool(payload) and not args.skip_commit and tier == "full"):
         raise SystemExit(1)
     payload_after = [path for path in dirty_paths() if not is_control_path(Path(path))]
     if not _same_head(head_before) or _path_state(payload_after) != payload_before:

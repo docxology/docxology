@@ -8,7 +8,6 @@ import json
 import re
 import urllib.parse
 from pathlib import Path
-from html.parser import HTMLParser
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
@@ -128,28 +127,6 @@ def check_work_pages(repo_root: Path) -> list[str]:
     return errors
 
 
-class _CitationHead(HTMLParser):
-    """Read real head tags; comments and body lookalikes cannot fill gaps."""
-
-    def __init__(self) -> None:
-        super().__init__(convert_charrefs=True)
-        self.in_head = False
-        self.tags: dict[str, list[str]] = {}
-
-    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        if tag == "head":
-            self.in_head = True
-        if tag != "meta" or not self.in_head:
-            return
-        attributes = dict(attrs)
-        name = (attributes.get("name") or "").lower()
-        if name.startswith("citation_"):
-            self.tags.setdefault(name, []).append(attributes.get("content") or "")
-
-    def handle_endtag(self, tag: str) -> None:
-        if tag == "head":
-            self.in_head = False
-
 
 def check_work_citations(repo_root: Path) -> list[str]:
     """Bind crawler-visible citation identity and PDF links to public sources.
@@ -157,7 +134,7 @@ def check_work_citations(repo_root: Path) -> list[str]:
     This checks site integration, not Scholar inclusion. The same-directory
     PDF requirement remains a separately documented hosting constraint.
     """
-    from docxology_tools.citation_metadata import journal_fields, publication_date
+    from docxology_tools.citation_metadata import CitationHead, journal_fields, publication_date
     from docxology_tools.paper_artifacts import PaperResources, source_paths
     from build_work_pages import display_name
 
@@ -170,7 +147,7 @@ def check_work_citations(repo_root: Path) -> list[str]:
         if not path.is_file():
             errors.append(f"missing citation page: {rel}")
             continue
-        parser = _CitationHead()
+        parser = CitationHead()
         parser.feed(_read(path))
         tags = parser.tags
         resources = PaperResources.load(repo_root, work.get("docs_path", ""), visible)

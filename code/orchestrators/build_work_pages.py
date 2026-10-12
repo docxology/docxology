@@ -46,6 +46,7 @@ from docxology_tools.report_paths import generated_timestamp  # noqa: E402
 from docxology_tools.abstract_text import abstract_display_text  # noqa: E402
 from docxology_tools.paper_artifacts import PaperResources, source_file, source_paths  # noqa: E402
 from docxology_tools.citation_metadata import journal_fields, publication_date  # noqa: E402
+from docxology_tools.author_entities import author_entity, load_author_records, verified_author_types  # noqa: E402
 
 
 def h(value: object) -> str:
@@ -82,8 +83,10 @@ def load_works() -> list[dict]:
     with open(REPO_ROOT / "data" / "works.json", encoding="utf-8") as f:
         works = json.load(f)["works"]
     pub = load_publishing_status()
+    author_records = load_author_records(REPO_ROOT)
     for work in works:
         work["publishing"] = pub.get(work.get("docs_path", ""), {})
+        work["_author_types"] = verified_author_types(work, author_records)
     return works
 
 
@@ -101,24 +104,12 @@ PRINCIPAL_LD = {
 
 
 def author_ld(work: dict) -> dict | list[dict] | None:
-    """schema.org author(s) for a work.
-
-    The principal keeps his full identity node (@id + ORCID/Wikidata sameAs);
-    co-authors from the bibliography's Authors column are emitted as plain
-    Person entries, and literal names without a comma as Organization.
-    """
+    """Emit ordered authors using reviewed entity types and principal identity."""
     names = work.get("authors") or []
     if not names:
         return None
-    entities: list[dict] = []
-    for name in names:
-        family, _, given = name.partition(",")
-        if family.strip() == "Friedman" and given.strip().startswith("Daniel"):
-            entities.append(PRINCIPAL_LD)
-        elif "," not in name:
-            entities.append({"@type": "Organization", "name": name})
-        else:
-            entities.append({"@type": "Person", "name": f"{given.strip()} {family.strip()}".strip()})
+    types = work.get("_author_types", {})
+    entities = [author_entity(name, PRINCIPAL_LD, types.get(name)) for name in names]
     return entities[0] if len(entities) == 1 else entities
 
 

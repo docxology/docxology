@@ -214,3 +214,16 @@ def test_fast_step_names_are_the_routine_floor() -> None:
     assert set(_names("routine", ())[:3]) == _STEP_NAMES
 
 
+
+
+def test_only_full_payload_battery_can_request_prepayload_mode():
+    strict = settle.battery_for_tier("full", ["README.md"])
+    prepayload = settle.battery_for_tier("full", ["README.md"], allow_dirty_prepayload_evidence=True)
+    for original, candidate in zip(strict, prepayload, strict=True):
+        if original == settle._VALIDATE_STANDARD_STEP:
+            assert candidate == (original[0], original[1] + ("--allow-dirty-prepayload-evidence",))
+        else:
+            assert candidate == original
+    for tier, paths in (("routine", []), ("fast", ["README.md"]), ("release", ["README.md"]), ("full", [])):
+        with pytest.raises(ValueError, match="full payload landing"):
+            settle.battery_for_tier(tier, paths, allow_dirty_prepayload_evidence=True)

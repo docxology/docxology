@@ -50,11 +50,11 @@
       "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
       "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
       "previous_sha256": "8b1ae2e6680df8e38da8080142b4ec97afbccbda2897e18c0a4ab88dae7fb577",
-      "current_sha256": "d5b544f12ac6966f9465d25d79a0168a95e8de8727e563c5b7aef7e41d73d9e7",
+      "current_sha256": "409aec8677cc003fd91d9f9fbd43fd115abe89538cd8e9b47e6a67325649bd57",
       "decision": "acknowledged",
       "decided_by": "Codex",
-      "decided_at": "2026-10-12T18:51:42Z",
-      "rationale": "GitHub REST evidence changes repository activity/star telemetry only; retain canonical repository identity and curated scientific claims.",
+      "decided_at": "2026-10-12T22:37:22Z",
+      "rationale": "GitHub dominant-language metadata changed from Python to HTML and activity advanced. Anonymous language-byte evidence reports HTML 64,478,426 and Python 14,090,089; this does not replace the curated Python tooling description or existing publication identity.",
       "curated_targets": []
     },
     {
@@ -72,22 +72,22 @@
       "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/cognitive",
       "label": "GitHub repo ActiveInferenceInstitute/cognitive",
       "previous_sha256": "aebfcadc01cdef5ee85202a48a2194200cf54f97c2128ebd3b2d8fa54fc1cf89",
-      "current_sha256": "a39f1ab3dc09a18736caddb95f323a70ad828afbb4963854d7b15cd6c8d6b8c1",
+      "current_sha256": "ec785057c140d6b6f3acf543f6d7e62c6e9be9e77f3b72bacbc42bbb8194d6a3",
       "decision": "acknowledged",
       "decided_by": "Codex",
-      "decided_at": "2026-10-12T18:51:42Z",
-      "rationale": "GitHub REST evidence changes repository activity/star telemetry only; retain canonical repository identity and curated scientific claims.",
+      "decided_at": "2026-10-12T22:37:22Z",
+      "rationale": "GitHub activity timestamp advanced; canonical repository identity and curated claims remain unchanged.",
       "curated_targets": []
     },
     {
       "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/fep_lean",
       "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
       "previous_sha256": "95ae23cf783c37e707063828d2953616641e338259c45ae8e9ff9efbe730e93a",
-      "current_sha256": "967c6f005fe1a2169e89b50ce5af73539f86dab6975ebbef662bafab09f2a031",
+      "current_sha256": "b5f46b30b46f6e70f228bda033c8db9b29639f2612d38282995ccc2127239566",
       "decision": "acknowledged",
       "decided_by": "Codex",
-      "decided_at": "2026-10-12T18:51:42Z",
-      "rationale": "GitHub REST evidence changes repository activity/star telemetry only; retain canonical repository identity and curated scientific claims.",
+      "decided_at": "2026-10-12T22:37:22Z",
+      "rationale": "GitHub activity/star telemetry advanced; retain existing curated software and publication identity.",
       "curated_targets": []
     },
     {
@@ -115,12 +115,16 @@
       "id": "public-source-observation:GitHub user docxology",
       "label": "GitHub user docxology",
       "previous_sha256": "2615d33c36da8b3a3c33e202cf988baa0fc3cec99a6f985af49c4c16d5c6fa67",
-      "current_sha256": "dfd6473d0a0398e0fb54e3186bda65c0223ec8b9d9ac529df32288519a0b8aa1",
-      "decision": "acknowledged",
+      "current_sha256": "dc6000c813cf9363fd12c8e0379fc84960950835f0d9f00adabb575875880a32",
+      "decision": "applied",
       "decided_by": "Codex",
-      "decided_at": "2026-10-12T18:51:42Z",
-      "rationale": "GitHub REST public-repository count increased; the refreshed inventory identifies antropy and reason as the two new primary repositories. Both have a separate source-backed catalog review.",
-      "curated_targets": []
+      "decided_at": "2026-10-12T22:37:22Z",
+      "rationale": "Public GitHub repository total is 234, up from 231 in the 2026-10-07 comparison baseline and 233 in the earlier 2026-10-12 observation. Paginated anonymous evidence identifies daf-okn as the additional public non-fork repository since the earlier same-day inventory; it is reviewed as software only, with no observed release or archival DOI. Existing antropy/reason intake remains preserved.",
+      "curated_targets": [
+        "pages/SOFTWARE.md",
+        "reports/repository_catalog_review_2026-10-12.json",
+        "data/github-repositories.json"
+      ]
     },
     {
       "id": "public-source-observation:Zenodo ORCID-linked records",
