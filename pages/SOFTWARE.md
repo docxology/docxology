@@ -230,8 +230,8 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Education | 7 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook`, `AGEINT`, `OmniLatticeTextbook` |
 | Other | 6 | `cascadia`, `fuller-obsidian`, `service`, `flick`, `Digi-PPPiP`, `math4wisdom-superhuman-docs-archive` |
 | Research Practice | 9 | `line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register`, `blue_line`, `green_line`, `silver_line` |
-| **docxology subtotal** | **120** | |
-| **Grand Total** | **161** | |
+| **docxology subtotal** | **122** | |
+| **Grand Total** | **163** | |
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; GitHub reports the AII account as an **Organization** (observed 2026-10-06). See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 
 ---
