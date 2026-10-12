@@ -1,48 +1,19 @@
 {
-  "generated_at": "2026-10-12T19:01:34Z",
+  "generated_at": "2026-10-12T22:57:52Z",
   "source": "reports/external_links_2026-10-12.json",
-  "checked_urls": 876,
-  "ok": 721,
+  "checked_urls": 878,
+  "ok": 723,
   "warnings": 155,
   "categories": {
     "bot-protected-or-rate-limited": 150,
     "connection-failure": 1,
-    "ok": 721,
+    "ok": 723,
     "timeout": 3,
     "upstream-transient": 1
   },
   "note": "Warnings classify observed network behavior; bot-protected and rate-limited sources are not automatically stale.",
   "warnings_by_category": {
     "bot-protected-or-rate-limited": [
-      {
-        "url": "https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "discovery.html",
-          "domain-active-inference.html",
-          "domain-active-inference.html",
-          "domain-aii-ecosystem.html",
-          "domain-aii-ecosystem.html",
-          "domain-art-synergetics.html",
-          "domain-art-synergetics.html",
-          "domain-biomedicine.html",
-          "domain-biomedicine.html",
-          "domain-cognitive-security.html",
-          "domain-cognitive-security.html",
-          "domain-computational.html",
-          "domain-computational.html",
-          "domain-entomology.html",
-          "domain-entomology.html",
-          "domain-presentations-media.html",
-          "domain-presentations-media.html",
-          "pages/DISCOVERY.md",
-          "pages/LINKS.md",
-          "pages/PROFILE.md"
-        ],
-        "error": ""
-      },
       {
         "url": "https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind",
         "status": 403,
@@ -240,6 +211,24 @@
           "publications.html",
           "publications.html",
           "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20420556",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-computational.html",
+          "domain-computational.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
         ],
         "error": ""
       },
@@ -2208,20 +2197,19 @@
         "sources": [
           "pages/LINKS.md"
         ],
-        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 508 ms: Couldn't connect to server"
+        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 164 ms: Couldn't connect to server"
       }
     ],
     "timeout": [
       {
-        "url": "https://grantome.com/grant/NSF/DBI-2010290",
+        "url": "https://troncale.sched.com/",
         "status": 0,
         "ok": false,
         "category": "timeout",
         "sources": [
-          "pages/EVIDENCE.md",
-          "pages/EVIDENCE.md"
+          "domain-presentations-media.html"
         ],
-        "error": "curl: (28) Connection timed out after 10008 milliseconds"
+        "error": "curl: (28) Operation timed out after 10005 milliseconds with 0 bytes received"
       },
       {
         "url": "https://www.christies.com/en/lot/lot-6337619",
@@ -2236,7 +2224,7 @@
           "pages/EVIDENCE.md",
           "pages/LINKS.md"
         ],
-        "error": "curl: (28) Operation timed out after 10009 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10006 milliseconds with 0 bytes received"
       },
       {
         "url": "https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd",
@@ -2247,7 +2235,7 @@
           "pages/EVIDENCE.md",
           "pages/EVIDENCE.md"
         ],
-        "error": "curl: (28) Operation timed out after 10008 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10006 milliseconds with 0 bytes received"
       }
     ],
     "upstream-transient": [
