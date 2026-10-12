@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-01T16:30:22Z",
+  "generated_at": "2026-10-12T18:36:00Z",
   "generator": "code/orchestrators/fetch_work_authors.py",
   "policy": {
     "sources": [
@@ -5434,6 +5434,41 @@
         {
           "family": "Safron",
           "given": "Adam"
+        }
+      ]
+    },
+    "Friedman2026ActiveInferenceSyntheticOverview225": {
+      "num": 225,
+      "doi": "10.5281/zenodo.23321280",
+      "title": "Active Inference -- A Synthetic Overview",
+      "registration_agency": "DataCite",
+      "resolved_title": "Active Inference -- A Synthetic Overview",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Alexandra Mikhailova",
+          "given": ""
+        }
+      ]
+    },
+    "Friedman2026AntropyNativeMultidimensionalEntropy226": {
+      "num": 226,
+      "doi": "10.5281/zenodo.23306200",
+      "title": "antropy: native multidimensional entropy and configurable complexity analysis",
+      "registration_agency": "DataCite",
+      "resolved_title": "antropy: native multidimensional entropy and configurable complexity analysis",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari"
         }
       ]
     }

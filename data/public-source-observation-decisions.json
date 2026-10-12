@@ -16,12 +16,12 @@
     {
       "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferAnts",
       "label": "GitHub repo ActiveInferenceInstitute/ActiveInferAnts",
-      "previous_sha256": "c8b014c071348c97434a4610819e7e698be8cee730233a14b3440c5460a4ebba",
-      "current_sha256": "68db2f8c8b0a59dea2c18b8cdffdd396bbe516cd8632b0175bc456e60595fb83",
+      "previous_sha256": "68db2f8c8b0a59dea2c18b8cdffdd396bbe516cd8632b0175bc456e60595fb83",
+      "current_sha256": "351a2922a4cf08a4406b922dcadeb7d586fbb2664b815b6f9fde9f8311522d64",
       "decision": "acknowledged",
-      "decided_by": "user",
-      "decided_at": "2026-10-06T16:25:51Z",
-      "rationale": "Changed full_name, html_url, updated_at (activity telemetry or an upstream rename); no curated claim or catalog change is required. Reviewed for issue #12 against the last reviewed baseline (public_source_snapshot_2026-08-26); approved under the principal's 'proceed with all' on 2026-10-06.",
+      "decided_by": "Codex",
+      "decided_at": "2026-10-12T18:51:42Z",
+      "rationale": "GitHub REST evidence changes repository activity/star telemetry only; retain canonical repository identity and curated scientific claims.",
       "curated_targets": []
     },
     {
@@ -38,23 +38,23 @@
     {
       "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/CEREBRUM",
       "label": "GitHub repo ActiveInferenceInstitute/CEREBRUM",
-      "previous_sha256": "38638413942915dfbd6ae6521d7db78269cc5ea984e97ec42e7409c78c5d4a13",
-      "current_sha256": "eb0499466c79fd2541a5c35ab279c72fd63b28d2b13008bac538a8d8fc7eb801",
+      "previous_sha256": "eb0499466c79fd2541a5c35ab279c72fd63b28d2b13008bac538a8d8fc7eb801",
+      "current_sha256": "e2b20aca402ae9174bd522a01b523d52feced3063237d0158fddcb04954d5a29",
       "decision": "acknowledged",
-      "decided_by": "user",
-      "decided_at": "2026-10-06T16:25:51Z",
-      "rationale": "Changed updated_at (activity telemetry or an upstream rename); no curated claim or catalog change is required. Reviewed for issue #12 against the last reviewed baseline (public_source_snapshot_2026-08-26); approved under the principal's 'proceed with all' on 2026-10-06.",
+      "decided_by": "Codex",
+      "decided_at": "2026-10-12T18:51:42Z",
+      "rationale": "GitHub REST evidence changes repository activity/star telemetry only; retain canonical repository identity and curated scientific claims.",
       "curated_targets": []
     },
     {
       "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
       "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
-      "previous_sha256": "6c1680bd428aee861aab74ef536a9a67087e02622964dee796710684f7550e4c",
-      "current_sha256": "8b1ae2e6680df8e38da8080142b4ec97afbccbda2897e18c0a4ab88dae7fb577",
+      "previous_sha256": "8b1ae2e6680df8e38da8080142b4ec97afbccbda2897e18c0a4ab88dae7fb577",
+      "current_sha256": "d5b544f12ac6966f9465d25d79a0168a95e8de8727e563c5b7aef7e41d73d9e7",
       "decision": "acknowledged",
-      "decided_by": "user",
-      "decided_at": "2026-10-07T16:29:46Z",
-      "rationale": "Changed stargazers_count, updated_at (activity telemetry or an upstream rename); no curated claim or catalog change is required. Reviewed for issue #44 against the last reviewed baseline (public_source_snapshot_2026-10-06); approved by the principal on 2026-10-07 (reviewed refresh to close #44).",
+      "decided_by": "Codex",
+      "decided_at": "2026-10-12T18:51:42Z",
+      "rationale": "GitHub REST evidence changes repository activity/star telemetry only; retain canonical repository identity and curated scientific claims.",
       "curated_targets": []
     },
     {
@@ -71,23 +71,23 @@
     {
       "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/cognitive",
       "label": "GitHub repo ActiveInferenceInstitute/cognitive",
-      "previous_sha256": "62084e2ff9d7f660c41ac7b4e8e1c4cb2ecd6746b1839828b15bb63af29ba6bd",
-      "current_sha256": "aebfcadc01cdef5ee85202a48a2194200cf54f97c2128ebd3b2d8fa54fc1cf89",
+      "previous_sha256": "aebfcadc01cdef5ee85202a48a2194200cf54f97c2128ebd3b2d8fa54fc1cf89",
+      "current_sha256": "a39f1ab3dc09a18736caddb95f323a70ad828afbb4963854d7b15cd6c8d6b8c1",
       "decision": "acknowledged",
-      "decided_by": "user",
-      "decided_at": "2026-10-06T16:25:51Z",
-      "rationale": "Changed stargazers_count, updated_at (activity telemetry or an upstream rename); no curated claim or catalog change is required. Reviewed for issue #12 against the last reviewed baseline (public_source_snapshot_2026-08-26); approved under the principal's 'proceed with all' on 2026-10-06.",
+      "decided_by": "Codex",
+      "decided_at": "2026-10-12T18:51:42Z",
+      "rationale": "GitHub REST evidence changes repository activity/star telemetry only; retain canonical repository identity and curated scientific claims.",
       "curated_targets": []
     },
     {
       "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/fep_lean",
       "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
-      "previous_sha256": "d656ab54e117b43fc3ecddddcb9962b2763518d83f3576b8dd5ebf201302b51f",
-      "current_sha256": "95ae23cf783c37e707063828d2953616641e338259c45ae8e9ff9efbe730e93a",
+      "previous_sha256": "95ae23cf783c37e707063828d2953616641e338259c45ae8e9ff9efbe730e93a",
+      "current_sha256": "967c6f005fe1a2169e89b50ce5af73539f86dab6975ebbef662bafab09f2a031",
       "decision": "acknowledged",
-      "decided_by": "user",
-      "decided_at": "2026-10-07T16:29:46Z",
-      "rationale": "Changed stargazers_count, updated_at (activity telemetry or an upstream rename); no curated claim or catalog change is required. Reviewed for issue #44 against the last reviewed baseline (public_source_snapshot_2026-10-06); approved by the principal on 2026-10-07 (reviewed refresh to close #44).",
+      "decided_by": "Codex",
+      "decided_at": "2026-10-12T18:51:42Z",
+      "rationale": "GitHub REST evidence changes repository activity/star telemetry only; retain canonical repository identity and curated scientific claims.",
       "curated_targets": []
     },
     {
@@ -114,54 +114,35 @@
     {
       "id": "public-source-observation:GitHub user docxology",
       "label": "GitHub user docxology",
-      "previous_sha256": "449e96147193fc0896a17bbebecef6be89bc31411141df5577d0d00a1b7e3432",
-      "current_sha256": "2615d33c36da8b3a3c33e202cf988baa0fc3cec99a6f985af49c4c16d5c6fa67",
-      "decision": "applied",
-      "decided_by": "user",
-      "decided_at": "2026-10-07T16:29:46Z",
-      "rationale": "GitHub public_repos 230 -> 231: the new repository is the docxology/cadence fork (created 2026-10-06), already in the GitHub inventory under the standing fork policy (b6688d5a); counts, claim, and discovery rows regenerated from this snapshot. Reviewed for issue #44 against the last reviewed baseline (public_source_snapshot_2026-10-06); approved by the principal on 2026-10-07 (reviewed refresh to close #44).",
-      "curated_targets": [
-        "data/current-counts.json",
-        "reports/current_counts.md",
-        "data/claims.json",
-        "data/resume.json",
-        "pages/EVIDENCE.md",
-        "evidence.html",
-        "discovery.html",
-        "pages/DISCOVERY.md"
-      ]
+      "previous_sha256": "2615d33c36da8b3a3c33e202cf988baa0fc3cec99a6f985af49c4c16d5c6fa67",
+      "current_sha256": "dfd6473d0a0398e0fb54e3186bda65c0223ec8b9d9ac529df32288519a0b8aa1",
+      "decision": "acknowledged",
+      "decided_by": "Codex",
+      "decided_at": "2026-10-12T18:51:42Z",
+      "rationale": "GitHub REST public-repository count increased; the refreshed inventory identifies antropy and reason as the two new primary repositories. Both have a separate source-backed catalog review.",
+      "curated_targets": []
     },
     {
       "id": "public-source-observation:Zenodo ORCID-linked records",
       "label": "Zenodo ORCID-linked records",
-      "previous_sha256": "f500a8c7ecd652fccd460712d8d2a5141d675dc2baf9aad60623a069502fcfdd",
-      "current_sha256": "8d8a35ad598b6bbe005fb6077ce4917d70d1d0045beb02bfbf636c9a484f904d",
-      "decision": "applied",
-      "decided_by": "user",
-      "decided_at": "2026-10-07T16:29:46Z",
-      "rationale": "Record total 159 -> 160 regenerated into counts and discovery. The one new concept is fep_formal v1.5.0 (10.5281/zenodo.23196891), the GitHub-release software archive of the already catalogued ActiveInferenceInstitute/fep_formal repository (supplement to work #113); it is linked from that software catalog row by its concept DOI, with no bibliography row (software-only record policy). The first result is now the newest deposit, 10.5281/zenodo.23215452 (Ento-Linguistics v1.2.1, superseding v1.1.1 10.5281/zenodo.23193499 named on #44), a new version of catalogued work #109 (concept 10.5281/zenodo.19574117), not a new bibliography candidate; GNN v4.0.0 (10.5281/zenodo.23214709) is likewise a version of catalogued work #168. Reviewed for issue #44 against the last reviewed baseline (public_source_snapshot_2026-10-06); approved by the principal on 2026-10-07 (reviewed refresh to close #44).",
-      "curated_targets": [
-        "data/current-counts.json",
-        "reports/current_counts.md",
-        "discovery.html",
-        "pages/DISCOVERY.md"
-      ]
+      "previous_sha256": "8d8a35ad598b6bbe005fb6077ce4917d70d1d0045beb02bfbf636c9a484f904d",
+      "current_sha256": "d55b57b557c63a360219cdf01b00703081f90bd50d35d259428f7c657080eced",
+      "decision": "acknowledged",
+      "decided_by": "Codex",
+      "decided_at": "2026-10-12T18:51:42Z",
+      "rationale": "Paginated Zenodo evidence and the uncatalogued-records check identify the new synthetic-overview and antropy records. They are now cited by concept DOI with version-specific archives; query totals remain distinct from bibliography totals.",
+      "curated_targets": []
     },
     {
       "id": "public-source-observation:Zenodo exact-name creator records",
       "label": "Zenodo exact-name creator records",
-      "previous_sha256": "de9884bb383d1a9fdd70bf589f0cf43536217a0380b83a73d9b0f6ab9bfafb18",
-      "current_sha256": "1d20b4abbb5839f1262aecc4bdfa2792247151ab8ed42191090869cd97ae8637",
-      "decision": "applied",
-      "decided_by": "user",
-      "decided_at": "2026-10-07T16:29:46Z",
-      "rationale": "Record total 71 -> 72 regenerated into counts and discovery; the one new concept is the fep_formal v1.5.0 software archive (10.5281/zenodo.23196891), linked from its software catalog row by concept DOI. The first result is now the newest deposit, 10.5281/zenodo.23215452 (Ento-Linguistics v1.2.1), a new version of catalogued work #109, not a new bibliography candidate. Reviewed for issue #44 against the last reviewed baseline (public_source_snapshot_2026-10-06); approved by the principal on 2026-10-07 (reviewed refresh to close #44).",
-      "curated_targets": [
-        "data/current-counts.json",
-        "reports/current_counts.md",
-        "discovery.html",
-        "pages/DISCOVERY.md"
-      ]
+      "previous_sha256": "1d20b4abbb5839f1262aecc4bdfa2792247151ab8ed42191090869cd97ae8637",
+      "current_sha256": "c19b366fe5e18d0cf471ff84c74161880df8de37217978b979374ea07f9a4d9a",
+      "decision": "acknowledged",
+      "decided_by": "Codex",
+      "decided_at": "2026-10-12T18:51:42Z",
+      "rationale": "Paginated Zenodo evidence and the uncatalogued-records check identify the new synthetic-overview and antropy records. They are now cited by concept DOI with version-specific archives; query totals remain distinct from bibliography totals.",
+      "curated_targets": []
     },
     {
       "id": "public-source-observation:Zenodo record 18686966",

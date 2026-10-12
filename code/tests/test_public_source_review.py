@@ -1165,3 +1165,41 @@ def test_cli_exact_source_revision_mode_is_separately_checkable(tmp_path: Path):
         [*args, "--check"], cwd=REPO_ROOT, text=True, capture_output=True
     )
     assert checked.returncode == 0, checked.stderr
+
+
+def test_software_catalogued_pair_review_rechecks_current_sources(tmp_path: Path):
+    paths = _inputs(tmp_path)
+    pages = tmp_path / "pages"
+    pages.mkdir()
+    (pages / "BIBLIOGRAPHY.md").write_text("| 1 | 2026 | 🧠 | Paper | Existing | Zenodo | 10.5281/zenodo.100 | [📄](../papers/2026_Existing/) |\n")
+    software = pages / "SOFTWARE.md"
+    software.write_text("## 🧬 Repositories Owned by docxology\n| [demo](https://github.com/docxology/demo) | [Zenodo](https://doi.org/10.5281/zenodo.500) · [📄](../papers/2026_Existing/) | Python | 0 | 2026 |\n")
+    action = {"action_type": "software_catalogued", "title": "Demo software archive", "zenodo_record_url": "https://zenodo.org/records/500", "doi": "10.5281/zenodo.500", "folder": "2026_Existing", "github_repo": "docxology/demo", "release_tag": "v1", "github_release_url": "https://github.com/docxology/demo/releases/tag/v1"}
+    paired = json.loads(paths["paired_publications_path"].read_text())
+    paired["actions"] = [action]
+    pair = {key: action[key] for key in ("doi", "github_repo", "github_release_url", "zenodo_record_url")}
+    pair["record"] = {"doi": action["doi"], "title": action["title"], "resource_type": {"id": "software"}}
+    pair["release"] = {"tag": action["release_tag"]}
+    paired["pairs"] = [pair]
+    def status():
+        _write_json(paths["paired_publications_path"], paired)
+        report = build_review_report(repo_root=tmp_path, report_date="2026-08-25", source_commit="a" * 40, **paths)
+        return next(item["status"] for item in report["items"] if item["id"].startswith("paired-publication:"))
+    assert status() == "applied"
+    for malformed in ({"type": "publication"}, "software", ["software"], 1):
+        pair["record"]["resource_type"] = malformed
+        assert status() == "deferred"
+    pair["record"]["resource_type"] = {"type": "software"}
+    for field in ("title", "github_repo", "github_release_url", "release_tag", "zenodo_record_url"):
+        original = action[field]
+        action[field] = original + "-changed"
+        assert status() == "deferred"
+        del action[field]
+        assert status() == "deferred"
+        action[field] = original
+    assert status() == "applied"
+    paired["pairs"] = None
+    assert status() == "deferred"
+    paired["pairs"] = [pair]
+    software.write_text(software.read_text().replace("2026_Existing", "2026_Uncited"))
+    assert status() == "deferred"

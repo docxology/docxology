@@ -942,3 +942,43 @@ def test_load_cached_scan_payload_refuses_payload_without_records(tmp_path: Path
     )
     with pytest.raises(SystemExit, match="github_releases"):
         load_cached_scan_payload(path)
+
+
+@pytest.mark.parametrize("resource_type", [{"type": "software"}, {"id": "software"}])
+def test_catalogued_software_supplement_is_not_applied_as_new_work(tmp_path: Path, resource_type):
+    _write_minimal_repo(tmp_path)
+    pair = replace(_pair(), record=replace(_pair().record, resource_type=resource_type))
+    bibliography = tmp_path / "pages/BIBLIOGRAPHY.md"
+    bibliography.write_text(bibliography.read_text() + "| 1 | 2026 | 🧠 | Paper | Existing paper | Zenodo | 10.5281/zenodo.100 | [📄](../papers/2026_Existing/) |\n")
+    software = tmp_path / "pages/SOFTWARE.md"
+    software.write_text(software.read_text().replace("Reproducible computational research project", f"Software · [Zenodo](https://doi.org/{pair.doi}) · [📄](../papers/2026_Existing/)"))
+    cache = classification_cache_from_payload({"classification_cache": classification_cache_payload([], repo_root=tmp_path)})
+    actions = build_sync_actions([pair], repo_root=tmp_path, cache=cache)
+    assert actions[0].action_type == "software_catalogued"
+    assert actions[0].folder == "2026_Existing"
+    assert ordered_apply_pairs(actions, [pair]) == []
+    # New versions share the linked concept DOI and remain supplements.
+    newer = replace(pair, record=replace(pair.record, record_id="20990002", version="2.0"))
+    assert build_sync_actions([newer], repo_root=tmp_path)[0].action_type == "software_catalogued"
+    # A paper cannot disappear because its DOI is also linked by a software row.
+    publication = replace(pair, record=replace(pair.record, resource_type={"type": "publication"}))
+    assert build_sync_actions([publication], repo_root=tmp_path)[0].action_type == "create_new"
+    # Re-read current catalog links even when the decision cache remains valid.
+    software.write_text(software.read_text().replace("../papers/2026_Existing/", "../papers/2026_Uncited/"))
+    assert build_sync_actions([pair], repo_root=tmp_path, cache=cache)[0].action_type == "create_new"
+
+
+@pytest.mark.parametrize("description", [
+    "[Zenodo](https://doi.org/10.5281/zenodo.20990001)",
+    "[Zenodo](https://doi.org/10.5281/zenodo.999) · [📄](../papers/2026_Existing/)",
+    "[Zenodo](https://doi.org/10.5281/zenodo.20990001) · [📄](../papers/2026_Uncited/)",
+])
+def test_software_methods_pdf_without_catalogued_supplement_stays_new(tmp_path: Path, description):
+    _write_minimal_repo(tmp_path)
+    pair = replace(_pair(), record=replace(_pair().record, resource_type={"type": "software"}))
+    bibliography = tmp_path / "pages/BIBLIOGRAPHY.md"
+    bibliography.write_text(bibliography.read_text() + "| 1 | 2026 | 🧠 | Paper | Existing paper | Zenodo | 10.5281/zenodo.100 | [📄](../papers/2026_Existing/) |\n")
+    software = tmp_path / "pages/SOFTWARE.md"
+    software.write_text(software.read_text().replace("Reproducible computational research project", description))
+    assert pair.record.files[0]["key"].endswith(".pdf")
+    assert build_sync_actions([pair], repo_root=tmp_path)[0].action_type == "create_new"

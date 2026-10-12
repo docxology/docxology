@@ -2,6 +2,27 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-10-12
+
+- **Publication intake:** added the Zenodo records for *Active Inference -- A
+  Synthetic Overview* and *antropy: native multidimensional entropy and
+  configurable complexity analysis*, retaining concept citation DOIs and
+  version-specific archive metadata. Refreshed strong existing-work release
+  pairs for CogSecSkills, FEP formalization, Skillarum, daf-jev, and
+  Ento-Linguistics without duplicating their published work identities.
+- **Supplemental archive classification:** paired-publication intake now
+  shares the uncatalogued-records check's software-catalog lookup. A linked
+  software archive supplementing an already cited paper remains catalogued;
+  software-typed methods manuscripts without that linkage still enter normal
+  publication intake. The source-review queue verifies the exact software
+  pair and current linkage before accepting this classification.
+- **Curated repository review:** added antropy and reason after reviewing their public README and source layout at recorded commit revisions. The reason entry retains its draft-review status.
+- **Receipt lookup:** selecting the newest tracked report now stops at the first matching receipt, avoiding repeated Git checks of older history without caching index state.
+- **Dated evidence:** refreshed the public-source snapshot, paginated source
+  inventory, GitHub repository inventory, and publication scan. Inaccessible
+  profile sources and ambiguous publication pairs retain explicit review
+  status; Scholar metrics retain their existing authenticated snapshot.
+
 ## 2026-10-07
 
 - **Workflow-only commits keep the release anchor:** a commit that changes only

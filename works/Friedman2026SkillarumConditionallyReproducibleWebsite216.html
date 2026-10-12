@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation — Daniel Ari Friedman</title>
-    <meta name="description" content="Skillarum turns selected public website pages into portable SKILL.md documents for agent harnesses such as Codex, Claude Code, and Hermes. Work is…">
+    <meta name="description" content="Source code for Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation. Skillarum turns selected public website pages into portable…">
     <meta name="robots" content="index, follow">
     <meta name="citation_title" content="Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation">
     <meta name="citation_publication_date" content="2026">
@@ -34,7 +34,7 @@
     <script src="/js/nav-toggle.js?v=nav-20261002"></script>
     <meta property="og:type" content="article">
     <meta property="og:title" content="Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation">
-    <meta property="og:description" content="Skillarum turns selected public website pages into portable SKILL.md documents for agent harnesses such as Codex, Claude Code, and Hermes. Work is…">
+    <meta property="og:description" content="Source code for Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation. Skillarum turns selected public website pages into portable…">
     <meta property="og:url" content="https://danielarifriedman.com/works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
@@ -42,7 +42,7 @@
     <meta property="og:image:alt" content="Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation — Daniel Ari Friedman">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation">
-    <meta name="twitter:description" content="Skillarum turns selected public website pages into portable SKILL.md documents for agent harnesses such as Codex, Claude Code, and Hermes. Work is…">
+    <meta name="twitter:description" content="Source code for Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation. Skillarum turns selected public website pages into portable…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation — Daniel Ari Friedman">
     <link rel="stylesheet" href="../style.css?v=site-20261002b">
@@ -95,6 +95,14 @@
         {
             "@type": "DefinedTerm",
             "name": "static compilation"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "index-derived profiles"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "investigation skills"
         }
     ],
     "genre": "Paper",
@@ -132,14 +140,17 @@
         "@type": "Organization",
         "name": "Zenodo"
     },
-    "abstract": "Skillarum turns selected public website pages into portable SKILL.md documents for agent harnesses such as Codex, Claude Code, and Hermes. Work is separated into five inspectable stages: acquire, prepare, process, parse, and render.\n\nThe crawler restricts acquisition to configured HTTP(S) origins, honours robots.txt, validates redirects, and records provenance for every page. Source text is delimited as untrusted data for LLM generation; generated code is never executed.\n\nThe deterministic backend is offline and source-extractive; optional OpenAI and Ollama backends provide provider generation with typed fallback traces. Rendered skills carry provenance manifests, and an evidence-gated research package aggregates run observations into descriptive statistics, figures, and a scholarly manuscript.\n\nThis release pairs the software source snapshot with the companion manuscript PDF.",
+    "abstract": "Source code for Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation. Skillarum turns selected public website pages into portable SKILL.md documents for agent harnesses such as Codex, Claude Code, and Hermes, in five inspectable stages (acquire, prepare, process, parse, render) with provenance manifests and an evidence-gated research package. Release 0.3.0 added index-derived profiles (one skill per page listed on a site's own index; 528 Math 4 Wisdom Research pages), block-preserving extraction, authored target descriptions, and math4wisdom-cube, a versioned investigation skill with separate source, mathematics, interpretation, and test ledgers, audited by three independent AI investigators whose verbatim reports are included. Release 0.3.1 is a correction release: math4wisdom-cube 0.3.0 withdraws an investigator claim that 0.2.0 adopted without recomputation (1+3+3+1 is not the generic grading pattern) and adds a check for the corrected statement; the changelog's account of investigator independence and two documentation statements are corrected.",
     "keywords": [
         "website extraction",
         "agent skills",
         "provenance",
         "reproducibility",
         "prompt injection",
-        "static compilation"
+        "static compilation",
+        "index-derived profiles",
+        "investigation skills",
+        "Math 4 Wisdom"
     ],
     "description": "Across 7 completed observations from 2 source profiles, the package-valid rate was 100.0%, with 0 fallback observations and 5 truncated pages. The author stresses these rates are conditional on run completion and descriptive, not an end-to-end success probability or population estimate. Source coverage was 37 of 37 page mappings, with a 95% model reference interval of 90.5% to 100.0%. Human-review agreement is pending: the report contains no rater identifiers or shared cases, so no inter-rater statistic is reported. The paper states it does not establish improved semantic quality, lower latency, complete coverage or downstream safety; these remain hypotheses. Five-stage pipeline: acquisition",
     "citation": "Friedman, Daniel Ari. 2026. Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation. Zenodo. DOI: 10.5281/zenodo.22663906. URL: https://doi.org/10.5281/zenodo.22663906.",
@@ -246,7 +257,7 @@
 
         <section class="section">
             <div class="section-header"><h2>Overview</h2><div class="section-divider"></div></div>
-            <div class="work-detail"><p>Skillarum turns selected public website pages into portable SKILL.md documents for agent harnesses such as Codex, Claude Code, and Hermes. Work is separated into five inspectable stages: acquire, prepare, process, parse, and render.</p><p>The crawler restricts acquisition to configured HTTP(S) origins, honours robots.txt, validates redirects, and records provenance for every page. Source text is delimited as untrusted data for LLM generation; generated code is never executed.</p><p>The deterministic backend is offline and source-extractive; optional OpenAI and Ollama backends provide provider generation with typed fallback traces. Rendered skills carry provenance manifests, and an evidence-gated research package aggregates run observations into descriptive statistics, figures, and a scholarly manuscript.</p><p>This release pairs the software source snapshot with the companion manuscript PDF.</p><div class="keyword-row" aria-label="Keywords"><span>website extraction</span><span>agent skills</span><span>provenance</span><span>reproducibility</span><span>prompt injection</span><span>static compilation</span></div><p class="summary-sources abstract-source">Overview source: <a href="../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
+            <div class="work-detail"><p>Source code for Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation. Skillarum turns selected public website pages into portable SKILL.md documents for agent harnesses such as Codex, Claude Code, and Hermes, in five inspectable stages (acquire, prepare, process, parse, render) with provenance manifests and an evidence-gated research package. Release 0.3.0 added index-derived profiles (one skill per page listed on a site&#x27;s own index; 528 Math 4 Wisdom Research pages), block-preserving extraction, authored target descriptions, and math4wisdom-cube, a versioned investigation skill with separate source, mathematics, interpretation, and test ledgers, audited by three independent AI investigators whose verbatim reports are included. Release 0.3.1 is a correction release: math4wisdom-cube 0.3.0 withdraws an investigator claim that 0.2.0 adopted without recomputation (1+3+3+1 is not the generic grading pattern) and adds a check for the corrected statement; the changelog&#x27;s account of investigator independence and two documentation statements are corrected.</p><div class="keyword-row" aria-label="Keywords"><span>website extraction</span><span>agent skills</span><span>provenance</span><span>reproducibility</span><span>prompt injection</span><span>static compilation</span><span>index-derived profiles</span><span>investigation skills</span><span>Math 4 Wisdom</span></div><p class="summary-sources abstract-source">Overview source: <a href="../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Methods and contributions</h2><p>Read the source for the full argument, qualifications, and evidence.</p><div class="section-divider"></div></div>
@@ -274,14 +285,14 @@
 
         <section class="section">
             <div class="section-header"><h2>Related in <a href="../domain-computational.html">Computational</a></h2><p>Other catalogued works in the same domain.</p><div class="section-divider"></div></div>
-            <ul class="related-list"><li><a href="Friedman2026SilverLineMemorySuccession223.html">The Silver Line: A Memory-and-Succession Instrument</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026GreenLineCapacityUnder220.html">Green Line: a capacity-under-development instrument</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026JevPracticeComposablePython219.html">Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026AgenticSecurityOperatingSystems218.html">Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026FractiSkillsOnePortableAgent217.html">FractiSkills: One Portable Agent Skill per Page</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026DocxplusIntelligentDocumentContainer212.html">docxplus — the Intelligent Document Container</a><span class="muted"> · 2026</span></li></ul>
+            <ul class="related-list"><li><a href="Friedman2026AntropyNativeMultidimensionalEntropy226.html">antropy: native multidimensional entropy and configurable complexity analysis</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026SilverLineMemorySuccession223.html">The Silver Line: A Memory-and-Succession Instrument</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026GreenLineCapacityUnder220.html">Green Line: a capacity-under-development instrument</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026JevPracticeComposablePython219.html">Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026AgenticSecurityOperatingSystems218.html">Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security</a><span class="muted"> · 2026</span></li><li><a href="Friedman2026FractiSkillsOnePortableAgent217.html">FractiSkills: One Portable Agent Skill per Page</a><span class="muted"> · 2026</span></li></ul>
             <p><a class="related-hub-link" href="../domain-computational.html">View all Computational works, software &amp; media →</a></p>
         </section>
     </main>
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite &amp; Verify</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/e296b3ae8">build e296b3ae8 2026-10-02</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/7110a6b50">build 7110a6b50 2026-10-07</a></p>
     </footer>
 <script src="/js/search-utils.js?v=site-20261002b"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

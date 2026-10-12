@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
  
- *120 original repositories · 41 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+ *122 original repositories · 41 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
  
  *[All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -64,7 +64,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [ntqr_llm](https://github.com/docxology/ntqr_llm) | Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes · [📄](../papers/2026_RecoveringLLMPersona/) · [Zenodo](https://doi.org/10.5281/zenodo.20498699) | Python | 0 | 2026-06 |
 | [itrace](https://github.com/docxology/itrace) | Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports · [📄](../papers/2026_ITrace/) · [Citation DOI](https://doi.org/10.5281/zenodo.20614908) | Python | 0 | 2026-06 |
 | [coasys](https://github.com/docxology/coasys) | Integration workspace aggregating and exercising the coasys (AD4M) agent-centric social-layer repositories | Python | 0 | 2026-06 |
-| [CogSecSkills](https://github.com/docxology/CogSecSkills) | Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes · [📄](../papers/2026_CogSecSkills/) · [Zenodo](https://doi.org/10.5281/zenodo.20804585) | Python | 0 | 2026-06 |
+| [CogSecSkills](https://github.com/docxology/CogSecSkills) | Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes · [📄](../papers/2026_CogSecSkills/) · [Earlier archive](https://doi.org/10.5281/zenodo.20804585) · [Citation DOI](https://doi.org/10.5281/zenodo.21513316) | Python | 0 | 2026-06 |
 | [template_madlib](https://github.com/docxology/template_madlib) | Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing · [📄](../papers/2026_TemplateMadlib/) · [Citation DOI](https://doi.org/10.5281/zenodo.20786638) | Python | 0 | 2026-06 |
 | [active_torchference](https://github.com/docxology/active_torchference) | PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization | Python | 0 | 2025-10 |
 | [ant-pheromone](https://github.com/docxology/ant-pheromone) | Computational simulation of ant pheromone trail dynamics and stigmergic communication | Python | 0 | 2022-09 |
@@ -159,6 +159,9 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [daf-jev](https://github.com/docxology/daf-jev) | Modular, composable Python client and decision toolkit for the TypeSafe Jev (System One) API — typed question primitives (noul/choice/score), concurrent batch evaluation, composition patterns, calibration statistics, CLI, and MCP server · [Zenodo](https://doi.org/10.5281/zenodo.22816187) · [📄](../papers/2026_JevPractice/) | Python | 2 | 2026-09 |
 
 | [OmniLatticeTextbook](https://github.com/docxology/OmniLatticeTextbook) | Modular textbook project with computational models, deterministic figure generation, and manuscript validation; no publication DOI assigned at the source review | HTML | 0 | 2026-09 |
+
+| [antropy](https://github.com/docxology/antropy) | Configurable entropy and complexity methods for native multidimensional data, including HDSE, whole-observation inference, and reproducible synthetic studies; empirical replication and biological sample-size claims remain outside the demonstrated scope · [📄](../papers/2026_Antropy/) · [Zenodo](https://doi.org/10.5281/zenodo.23306200) | Python | 0 | 2026-10 |
+| [reason](https://github.com/docxology/reason) | Draft scientific review of Foundations of Reason 8.0 and Engineering of Reason 3.5, with a source-linked issue register and Python quotation, page-citation, numerical, and PDF-custody checks; open for author response | Python | 0 | 2026-10 |
 
 ---
 

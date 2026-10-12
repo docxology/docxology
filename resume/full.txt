@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-10-07T16:41:31Z
+Generated: 2026-10-12T18:49:04Z
 
-Current public metrics: 220 curated works; 161 catalogued software repositories (120 owned + 41 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 231 docxology + 45 AII public repositories (172 primary, 104 forks).
+Current public metrics: 222 curated works; 163 catalogued software repositories (122 owned + 41 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 233 docxology + 45 AII public repositories (174 primary, 104 forks).
 
 SUMMARY
 -------
@@ -162,7 +162,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (220)
+WORKS AND PUBLICATIONS (222)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -384,8 +384,10 @@ WORKS AND PUBLICATIONS (220)
 [222] 2026 | Paper | The Violet Line: A Consent Ledger of Affected Parties | Zenodo | 10.5281/zenodo.22833487
 [223] 2026 | Paper | The Silver Line: A Memory-and-Succession Instrument | Zenodo | 10.5281/zenodo.22833485
 [224] 2026 | Paper | Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference | Zenodo | 10.5281/zenodo.23066903
+[225] 2026 | Paper | Active Inference -- A Synthetic Overview | Zenodo | 10.5281/zenodo.23321280
+[226] 2026 | Paper | antropy: native multidimensional entropy and configurable complexity analysis | Zenodo | 10.5281/zenodo.23306200
 
-SOFTWARE (161)
+SOFTWARE (163)
 --------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
@@ -415,7 +417,7 @@ docxology/template_newspaper | Python | https://github.com/docxology/template_ne
 docxology/ntqr_llm | Python | https://github.com/docxology/ntqr_llm | Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes · · Zenodo | paper: papers/2026_RecoveringLLMPersona/ | zenodo: https://doi.org/10.5281/zenodo.20498699
 docxology/itrace | Python | https://github.com/docxology/itrace | Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports · · Citation DOI | paper: papers/2026_ITrace/ | zenodo: https://doi.org/10.5281/zenodo.20614908
 docxology/coasys | Python | https://github.com/docxology/coasys | Integration workspace aggregating and exercising the coasys (AD4M) agent-centric social-layer repositories
-docxology/CogSecSkills | Python | https://github.com/docxology/CogSecSkills | Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes · · Zenodo | paper: papers/2026_CogSecSkills/ | zenodo: https://doi.org/10.5281/zenodo.20804585
+docxology/CogSecSkills | Python | https://github.com/docxology/CogSecSkills | Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes · · Zenodo · Zenodo | paper: papers/2026_CogSecSkills/ | zenodo: https://doi.org/10.5281/zenodo.20804585
 docxology/template_madlib | Python | https://github.com/docxology/template_madlib | Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing · · Citation DOI | paper: papers/2026_TemplateMadlib/ | zenodo: https://doi.org/10.5281/zenodo.20786638
 docxology/active_torchference | Python | https://github.com/docxology/active_torchference | PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization
 docxology/ant-pheromone | Python | https://github.com/docxology/ant-pheromone | Computational simulation of ant pheromone trail dynamics and stigmergic communication
@@ -507,6 +509,8 @@ docxology/Skillarum | Python | https://github.com/docxology/Skillarum | Turns se
 docxology/nockchain-migration | Python | https://github.com/docxology/nockchain-migration | Operator-gated wizard and tooling for migrating Nockchain wallets from legacy v0 notes to v1 P2PKH addresses (one-off functional tool, no paper)
 docxology/daf-jev | Python | https://github.com/docxology/daf-jev | Modular, composable Python client and decision toolkit for the TypeSafe Jev (System One) API — typed question primitives (noul/choice/score), concurrent batch evaluation, composition patterns, calibration statistics, CLI, and MCP server · Zenodo | paper: papers/2026_JevPractice/ | zenodo: https://doi.org/10.5281/zenodo.22816187
 docxology/OmniLatticeTextbook | HTML | https://github.com/docxology/OmniLatticeTextbook | Modular textbook project with computational models, deterministic figure generation, and manuscript validation; no publication DOI assigned at the source review
+docxology/antropy | Python | https://github.com/docxology/antropy | Configurable entropy and complexity methods for native multidimensional data, including HDSE, whole-observation inference, and reproducible synthetic studies; empirical replication and biological sample-size claims remain outside the demonstrated scope · · Zenodo | paper: papers/2026_Antropy/ | zenodo: https://doi.org/10.5281/zenodo.23306200
+docxology/reason | Python | https://github.com/docxology/reason | Draft scientific review of Foundations of Reason 8.0 and Engineering of Reason 3.5, with a source-linked issue register and Python quotation, page-citation, numerical, and PDF-custody checks; open for author response
 ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output
 ActiveInferenceInstitute/ActiveBlockference | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveBlockference | Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework
 ActiveInferenceInstitute/Active_InferAnts | Python | https://github.com/ActiveInferenceInstitute/Active_InferAnts | Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference

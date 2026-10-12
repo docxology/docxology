@@ -1,11 +1,11 @@
 {
   "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
-  "version": "1.1.0",
+  "version": "1.6.0",
   "doi": "10.5281/zenodo.19699233",
   "doi_url": "https://doi.org/10.5281/zenodo.19699233",
   "zenodo_record": "https://zenodo.org/records/19699233",
-  "record_id": "22072956",
-  "publication_date": "2026-08-23",
+  "record_id": "23220027",
+  "publication_date": "2026-10-07",
   "resource_type": {
     "title": "Publication",
     "type": "publication"
@@ -17,7 +17,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "<p><strong>FEP_Lean v1.1.0</strong> is a source-bound, machine-checked catalogue of 155 topics across 20 reviewed families and five areas: the Free Energy Principle, Active Inference, Bayesian Mechanics, Information Geometry, and non-equilibrium Thermodynamics. Every catalogue row carries a reviewed invariant, explicit assumptions and boundaries, a namespaced Lean 4 theorem body, and deterministic manuscript metadata.</p><p>The release is pinned to Lean 4.33.1 and Mathlib 4.33.1 (locked Mathlib revision <code>0df444a360eaa60ab8c11dca51a86af692955474</code>). Its native receipt verifies 155/155 topic closures with zero errors, warnings, or <code>sorry</code>. The schema-4 formalism audit covers all 823 required formal-resource declarations, including 699 evidence declarations, and reports no <code>sorryAx</code> or untrusted project axioms. The canonical Python acceptance run collected 1,203 tests: 1,080 passed, 123 skipped, zero failed or errored, with 89.81% line coverage (8,808/9,807 statements). The schema-4 Chrome 151 browser receipt replays six source-bound screenshots covering 155 topics, 20 families, 133 relations, 48 satisfied capabilities, and 15 typed numerical witnesses.</p><p>These checks establish the exact shipped formal statements and reproducible software evidence; they do not prove the Free Energy Principle as a physical theory. Provider-backed Hermes commentary is optional and unavailable for this release cut, and no historical provider report is promoted to current full-mode evidence.</p><p>Source and release: <a href=\"https://github.com/ActiveInferenceInstitute/fep_lean\">github.com/ActiveInferenceInstitute/fep_lean</a> and <a href=\"https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.1.0\">GitHub release v1.1.0</a>. The exact deterministic 232-member evidence bundle has SHA-256 <code>0009447598ecd3bbf68548eab360704a2539480379791eb0128186fa230884ea</code> and binds release commit <code>d7b6f8b15ea9dc451b191e3674a1fd72b5e586b4</code>.</p>",
+  "description": "<p><strong>FEP_Lean / FEP Formal v1.6.0</strong> is a reproducible catalogue of 168 canonical Lean topic bodies in 22 reviewed families across the Free Energy Principle, Active Inference, Bayesian Mechanics, Information Geometry and Thermodynamics. Each topic retains its carrier, exact qualified statement, assumptions, non-vacuity boundary, semantic disposition and evidence requirements. Lean and Mathlib are pinned to 4.34.1.</p>\n<p>This version adds a greatly extended Supplement A, modular installed-package mathematical methods, source-grounded Lean statement and natural-language analysis, and reproducible publication figures and an offline explorer. It compares 22 FEP family context unions with twelve selected OpenAI mathematics result units in 30 explicitly authored binary coordinates. The deterministic MDS projection reports its spectrum, distance distortion, stress and axis ambiguity. The upstream corpus is pinned at adc7f1241b42e322a6451854ab7e4b4c146bf78a; its statements are reference comparisons, with no imported proof authority or runtime dependency.</p>\n<p>Compilation establishes the exact selected Lean bodies, not the Free Energy Principle as a physical theory. Semantic maturity is separate from compilation. Numerical and embedding visualizations are explanatory evidence. Frozen H3 primary execution, full seven-stage capture, Q7 generated-runner execution, provider runs and future empirical work retain their separate acceptance requirements.</p>\n<p>The release includes the manuscript PDF, offline companion, Python wheel and source distribution, exact tagged repository source and SHA-256 checksums. Source: <a href=\"https://github.com/ActiveInferenceInstitute/fep_formal\">ActiveInferenceInstitute/fep_formal</a>. Release: <a href=\"https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.6.0\">v1.6.0</a>. This manuscript continues scholarly concept DOI 10.5281/zenodo.19699233; GitHub software archives are maintained separately under concept DOI 10.5281/zenodo.23196891.</p>",
   "keywords": [
     "free energy principle",
     "active inference",
@@ -30,56 +30,53 @@
     "formal verification",
     "theorem proving",
     "measure theory",
-    "reproducible research"
+    "reproducible research",
+    "mathematical positioning",
+    "theorem statement analysis",
+    "semantic visualization"
   ],
   "files": [
     {
-      "name": "fep_lean-1.1.0-py3-none-any.whl.sha256",
-      "size_bytes": 98,
-      "checksum": "md5:fea71c4a27d3be100485ae1747947844",
-      "download_url": "https://zenodo.org/api/records/22072956/files/fep_lean-1.1.0-py3-none-any.whl.sha256/content"
+      "name": "fep_lean-1.6.0.tar.gz",
+      "size_bytes": 1595856,
+      "checksum": "md5:41688d12570b722f45445f305cad65cc",
+      "download_url": "https://zenodo.org/api/records/23220027/files/fep_lean-1.6.0.tar.gz/content"
     },
     {
-      "name": "fep-lean-1.1.0-155-evidence-bundle.tar.gz",
-      "size_bytes": 6095784,
-      "checksum": "md5:123bc7b0efd9dff644539a18427ab63d",
-      "download_url": "https://zenodo.org/api/records/22072956/files/fep-lean-1.1.0-155-evidence-bundle.tar.gz/content"
+      "name": "fep_lean-v1.6.0.pdf",
+      "size_bytes": 7493268,
+      "checksum": "md5:cc33c43f89364994b44cca8068731c30",
+      "download_url": "https://zenodo.org/api/records/23220027/files/fep_lean-v1.6.0.pdf/content"
     },
     {
-      "name": "fep_lean-1.1.0.tar.gz.sha256",
-      "size_bytes": 88,
-      "checksum": "md5:f7c8bc8934f61e5aa8e2dbeb671ef515",
-      "download_url": "https://zenodo.org/api/records/22072956/files/fep_lean-1.1.0.tar.gz.sha256/content"
+      "name": "fep_lean-1.6.0-py3-none-any.whl",
+      "size_bytes": 1216136,
+      "checksum": "md5:387ac35c429878ea16798d0968cd48fd",
+      "download_url": "https://zenodo.org/api/records/23220027/files/fep_lean-1.6.0-py3-none-any.whl/content"
     },
     {
-      "name": "fep_lean-1.1.0-py3-none-any.whl",
-      "size_bytes": 578523,
-      "checksum": "md5:335900bade1e218717f105c34aa52677",
-      "download_url": "https://zenodo.org/api/records/22072956/files/fep_lean-1.1.0-py3-none-any.whl/content"
+      "name": "fep_lean-v1.6.0-source.zip",
+      "size_bytes": 26998652,
+      "checksum": "md5:08ba4f626b0ca204baf1beef3421c646",
+      "download_url": "https://zenodo.org/api/records/23220027/files/fep_lean-v1.6.0-source.zip/content"
     },
     {
-      "name": "fep-lean-1.1.0-155-evidence-bundle.tar.gz.sha256",
-      "size_bytes": 108,
-      "checksum": "md5:1c357cb69efda2297d40840ae652fa76",
-      "download_url": "https://zenodo.org/api/records/22072956/files/fep-lean-1.1.0-155-evidence-bundle.tar.gz.sha256/content"
+      "name": "fep_lean-v1.6.0-offline-companion.zip",
+      "size_bytes": 8045359,
+      "checksum": "md5:6162003e2f23d4db63f6bf54124750c5",
+      "download_url": "https://zenodo.org/api/records/23220027/files/fep_lean-v1.6.0-offline-companion.zip/content"
     },
     {
-      "name": "fep-lean-manuscript-1.1.0.pdf",
-      "size_bytes": 2005312,
-      "checksum": "md5:3774dffc095672be8884997d5e6d390b",
-      "download_url": "https://zenodo.org/api/records/22072956/files/fep-lean-manuscript-1.1.0.pdf/content"
+      "name": "validation-manifest.json",
+      "size_bytes": 4932,
+      "checksum": "md5:f1c85783751023a14c84fce4210c0caa",
+      "download_url": "https://zenodo.org/api/records/23220027/files/validation-manifest.json/content"
     },
     {
-      "name": "fep-lean-manuscript-1.1.0.pdf.sha256",
-      "size_bytes": 96,
-      "checksum": "md5:79d9dbbffb132c833eabdb5938ef0d16",
-      "download_url": "https://zenodo.org/api/records/22072956/files/fep-lean-manuscript-1.1.0.pdf.sha256/content"
-    },
-    {
-      "name": "fep_lean-1.1.0.tar.gz",
-      "size_bytes": 692987,
-      "checksum": "md5:66bb9fa51937956c93a3a4553df5c171",
-      "download_url": "https://zenodo.org/api/records/22072956/files/fep_lean-1.1.0.tar.gz/content"
+      "name": "SHA256SUMS",
+      "size_bytes": 560,
+      "checksum": "md5:02f980ca798c45a67e5f4cc4d04b00a0",
+      "download_url": "https://zenodo.org/api/records/23220027/files/SHA256SUMS/content"
     }
   ],
   "related_resources": [
@@ -89,15 +86,17 @@
     }
   ],
   "github_repo": "ActiveInferenceInstitute/fep_formal",
-  "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.1.0",
-  "release_tag": "v1.1.0",
-  "release_name": "FEP_Lean v1.1.0 — 155-topic Lean 4 formalization catalogue",
+  "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.6.0",
+  "release_tag": "v1.6.0",
+  "release_name": "FEP Formal v1.6.0 — Mathematical methods and Supplement A",
   "pdf_sha256": "",
   "pairing_confidence": "strong",
   "pairing_evidence": [
-    "github_release_mentions_doi"
+    "github_release_mentions_doi",
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked"
   ],
-  "checked_at": "2026-09-24T18:29:54Z",
+  "checked_at": "2026-10-12T18:48:29Z",
   "domain": "Active Inference",
   "type": "Paper",
   "methods": [

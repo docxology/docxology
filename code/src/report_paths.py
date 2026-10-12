@@ -227,12 +227,9 @@ def latest_source_report(
     source renderers must only reference reports available from a clean
     checkout of the candidate revision.
     """
-    matches = [
-        path for path in _sorted_path_list(list(report_dir.glob(pattern)))
-        if is_git_tracked(path, repo_root=repo_root)
-    ]
-    if matches:
-        return matches[0]
+    for path in _sorted_path_list(list(report_dir.glob(pattern))):
+        if is_git_tracked(path, repo_root=repo_root):
+            return path
     if not required:
         return None
     raise FileNotFoundError(f"No tracked reports match: {report_dir / pattern}")

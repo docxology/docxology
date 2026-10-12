@@ -54,6 +54,8 @@ from docxology_tools.publication_pairing import (  # noqa: E402
     slug_topic,
 )
 
+from docxology_tools.publication_pairing import is_software_record  # noqa: E402
+from docxology_tools.software_table import software_catalog_dois  # noqa: E402
 from docxology_tools.biblio_table import bibliography_rows_from_lines  # noqa: E402
 from docxology_tools.generated_outputs import read_generated_output_text  # noqa: E402
 from docxology_tools.work_identifiers import next_catalog_num, write_catalog_with_identifiers  # noqa: E402
@@ -508,6 +510,7 @@ def build_sync_actions(
     persisted classification cache.
     """
     doi_to_folder = existing_doi_map(repo_root)
+    software_dois = software_catalog_dois(repo_root)
     release_title_to_folder: dict[tuple[str, str], str] = {}
     repo_title_to_folder: dict[tuple[str, str], str] = {}
     title_maps_loaded = False
@@ -595,6 +598,14 @@ def build_sync_actions(
         elif repo_title_folder:
             action_type = "update_existing"
             reason = "same title and GitHub repository already exist; update Zenodo version metadata"
+        elif is_software_record(pair.record) and pair.doi.casefold() in software_dois:
+            action_type = "software_catalogued"
+            catalog = software_dois[pair.doi.casefold()]
+            folder = catalog["paper_folder"]
+            reason = (
+                f"Software archive is linked from the {catalog['software_row']} catalog row "
+                f"as a supplement to {folder}; do not create a duplicate bibliography row"
+            )
         elif not infer_type(pair.record) or not infer_domain(pair):
             action_type = "needs_review"
             reason = "new pair is strong, but type or domain cannot be inferred safely"
@@ -1131,6 +1142,7 @@ def write_report(
             "zenodo_records": len(records),
             "pairs": len(pairs),
             "strong_pairs": sum(1 for pair in pairs if pair.confidence == "strong"),
+            "software_catalogued": sum(1 for action in actions if action.action_type == "software_catalogued"),
             "already_reviewed": sum(1 for action in actions if action.action_type == "already_reviewed"),
             "needs_review": sum(1 for action in actions if action.action_type == "needs_review"),
             "create_new": sum(1 for action in actions if action.action_type == "create_new"),
@@ -1180,7 +1192,7 @@ def check_report(repo_root: Path = REPO_ROOT) -> None:
     counts = payload.get("counts")
     if not isinstance(counts, dict):
         raise SystemExit("Paired publication report counts must be an object")
-    for action_type in ("create_new", "update_existing", "needs_review", "already_reviewed"):
+    for action_type in ("create_new", "update_existing", "needs_review", "already_reviewed", "software_catalogued"):
         actual = sum(1 for action in actions if isinstance(action, dict) and action.get("action_type") == action_type)
         expected = counts.get(action_type, 0)
         if expected != actual:
@@ -1422,7 +1434,8 @@ def main(argv: list[str] | None = None) -> int:
             f"{sum(1 for action in actions if action.action_type == 'create_new')} new, "
             f"{sum(1 for action in actions if action.action_type == 'update_existing')} updates, "
             f"{sum(1 for action in actions if action.action_type == 'needs_review')} needs review, "
-            f"{sum(1 for action in actions if action.action_type == 'already_reviewed')} already reviewed"
+            f"{sum(1 for action in actions if action.action_type == 'already_reviewed')} already reviewed, "
+            f"{sum(1 for action in actions if action.action_type == 'software_catalogued')} software catalogued"
     )
     return 0
 

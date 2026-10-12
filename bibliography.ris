@@ -3065,3 +3065,28 @@ KW  - AII Ecosystem
 KW  - Paper
 N1  - Catalog row 224; docs: papers/2026_CoordinatingField/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+AU  - Alexandra Mikhailova
+PY  - 2026
+TI  - Active Inference -- A Synthetic Overview
+T2  - Zenodo
+DO  - 10.5281/zenodo.23321280
+UR  - https://doi.org/10.5281/zenodo.23321280
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 225; docs: papers/2026_ActiveInferenceSynthetic/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - antropy: native multidimensional entropy and configurable complexity analysis
+T2  - Zenodo
+DO  - 10.5281/zenodo.23306200
+UR  - https://doi.org/10.5281/zenodo.23306200
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 226; docs: papers/2026_Antropy/
+ER  -

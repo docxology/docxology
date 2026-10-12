@@ -7230,5 +7230,58 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.23066903",
     "URL": "https://doi.org/10.5281/zenodo.23066903"
+  },
+  {
+    "id": "Friedman2026ActiveInferenceSyntheticOverview225",
+    "type": "article-journal",
+    "title": "Active Inference -- A Synthetic Overview",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      },
+      {
+        "literal": "Alexandra Mikhailova"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 225; docs: papers/2026_ActiveInferenceSynthetic/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.23321280",
+    "URL": "https://doi.org/10.5281/zenodo.23321280"
+  },
+  {
+    "id": "Friedman2026AntropyNativeMultidimensionalEntropy226",
+    "type": "article-journal",
+    "title": "antropy: native multidimensional entropy and configurable complexity analysis",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 226; docs: papers/2026_Antropy/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.23306200",
+    "URL": "https://doi.org/10.5281/zenodo.23306200"
   }
 ]

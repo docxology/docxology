@@ -10,7 +10,11 @@
 
 ## Abstract
 
-> Scientific language does not merely describe biological phenomena; it actively constitutes the generative models through which researchers parse complex systems. This paper makes three core contributions to understanding—and correcting—the epistemic consequences of this constitutive role. First, we introduce a six-domain Ento-Linguistic framework that decomposes the terminological landscape of insect research into analytically tractable themes, isolating domains where anthropomorphic language most severely distorts causal modeling. Second, we develop an open-source computational pipeline that integrates automated term extraction, co-occurrence network construction, and information-theoretic ambiguity scoring with principles from Active Inference and Complex Systems Theory. Third, we propose and validate four evidence-based meta-standards—Clarity, Appropriateness, Consistency, and Evolvability (CACE)—as a formalized protocol for lexical engineering. Analysis of a corpus encompassing 369 entomological publications (48787 tokens; 7105 unique token types; Type–Token Ratio 0.1456) extracts 888 candidate terms (with 261 assigned to specific semantic domains across 6 conceptual clusters linked by 9 weighted relationships). The resulting terminology networks display strong modularity alongside systematic cross-domain bridging—most prominently in the Power and Labor domain, where 43 bridging terms generate extensive semantic bleed-over into adjacent domains. Terms such as “queen” (241 occurrences), “worker” (269), and “caste” (121) implicitly impose hierarchical control topologies onto biological structures that are fundamentally stigmergic and decentralized. Across all 261 domain-assigned terms, 16.9% exhibit context-dependent semantic drift, demonstrating how conceptual constructs like “individuality” span multiple biological scales and consequently blur the formal systemic boundaries (Markov Blankets) required for mathematically rigorous modeling. The accompanying fully reproducible computational pipeline provides the quantitative analytical tools necessary for a more self-aware and epistemically rigorous scientific practice. All code and data are available at https://github.com/docxology/ento_linguistics.
+> Ento-Linguistics v1.3.1 is a corpus-custody patch to the v1.3.0 complexity edition. A second exact-text PubMed reconciliation links 59 more archived abstracts to their source records (7,599 of 7,609 now identified; the 10 unreconciled strings stay excluded from headline results), and PMC records titled as corrections, errata, retraction notices or retracted items are excluded from full-text analysis (6,997 of 7,073 stored records analyzed). All analysis layers, both fixed-margin protocols and the vocabulary/threshold diagnostic were regenerated; the paper reports every value from those exports. Six overlapping terminology domains and four source layers retain their descriptive scope; fixed-margin comparisons and heuristic entropy/CACE measures remain distinct from biological interactions, validated meaning or causal reader effects. The 20-minute lecture remains the v1.3.0 GitHub release asset matched to the v1.3.0 paper. Paper figures are CC BY 4.0; software is MIT; source corpus materials retain their providers' terms. Previous version DOIs preserve earlier artifact identities.
+
+## Keywords
+
+`entomology` · `scientific terminology` · `language analysis` · `discourse analysis` · `ant biology` · `eusociality` · `conceptual frameworks` · `active inference` · `terminology networks` · `computational linguistics` · `complex systems` · `complexity`
 
 ## Methods
 
@@ -32,11 +36,11 @@ _Methods and findings are summarized from the full text; each item is backed by 
 ## Artifacts
 
 - GitHub repository: [docxology/ento_linguistics](https://github.com/docxology/ento_linguistics)
-- GitHub release: [v1.1.1](https://github.com/docxology/ento_linguistics/releases/tag/v1.1.1)
+- GitHub release: [v1.3.1](https://github.com/docxology/ento_linguistics/releases/tag/v1.3.1)
 - DOI: [10.5281/zenodo.19574117](https://doi.org/10.5281/zenodo.19574117)
 - Zenodo record: [https://zenodo.org/records/19574117](https://zenodo.org/records/19574117)
 - PDF: [Ento_Linguistics_DAF_TCC_v1_04-15-2026.pdf](Ento_Linguistics_DAF_TCC_v1_04-15-2026.pdf)
-- PDF download: [Ento_Linguistics_v1.1.1_2026-09-22.pdf](https://zenodo.org/api/records/22902510/files/Ento_Linguistics_v1.1.1_2026-09-22.pdf/content)
+- PDF: [Ento_Linguistics_manuscript.pdf](Ento_Linguistics_manuscript.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/19574117)
 
 ## Citation

@@ -49,8 +49,8 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 from docxology_tools.report_paths import dated_report_path, generated_timestamp, latest_report, report_date_string  # noqa: E402
 
-from docxology_tools.publication_pairing import ZenodoRecord  # noqa: E402
-from docxology_tools.software_table import iter_software_rows, paper_path, zenodo_link_dois  # noqa: E402
+from docxology_tools.publication_pairing import ZenodoRecord, is_software_record  # noqa: E402
+from docxology_tools.software_table import software_catalog_dois  # noqa: E402
 from sync_paired_publications import (  # noqa: E402
     fetch_zenodo_records,
     parse_bibliography_rows,
@@ -112,34 +112,6 @@ def version_doi(record: ZenodoRecord) -> str:
 def bibliography_doi_set(repo_root: Path = REPO_ROOT) -> set[str]:
     """Every DOI cited in the bibliography, regardless of whether the row has a papers/ folder."""
     return {row["doi"] for row in parse_bibliography_rows(repo_root) if row["doi"]}
-
-
-def software_catalog_dois(repo_root: Path = REPO_ROOT) -> dict[str, dict[str, str]]:
-    """Map Zenodo DOIs linked from software rows that supplement a catalogued work.
-
-    Keys are casefolded DOIs; values name the row and its paper folder. Only a
-    row whose ``[📄]`` paper folder a bibliography row cites qualifies: Zenodo
-    types many paper repositories' release archives as software, so a software
-    link alone cannot show that a record is not itself a missing paper.
-    """
-    path = repo_root / "pages" / "SOFTWARE.md"
-    if not path.is_file():
-        return {}
-    cited_folders = {row["folder"] for row in parse_bibliography_rows(repo_root) if row["folder"]}
-    linked: dict[str, dict[str, str]] = {}
-    for row in iter_software_rows(path):
-        folder = Path(paper_path(row.description_raw)).name
-        if not folder or folder not in cited_folders:
-            continue
-        for doi in zenodo_link_dois(row.description_raw):
-            linked.setdefault(doi.casefold(), {"software_row": row.name, "paper_folder": folder})
-    return linked
-
-
-def is_software_record(record: ZenodoRecord) -> bool:
-    """Whether Zenodo types the record as software (legacy ``type`` or RDM ``id``)."""
-    kind = record.resource_type.get("type") or record.resource_type.get("id") or ""
-    return str(kind).casefold() == "software"
 
 
 def _in_bibliography(record: ZenodoRecord, catalogued_dois: set[str]) -> bool:

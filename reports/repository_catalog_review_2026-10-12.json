@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-12T18:42:51Z",
+  "reviews": [
+    {
+      "repository": "docxology/antropy",
+      "source_commit": "a1804f3e6813567f773d0bcf6a72718bb4b11396",
+      "source_url": "https://github.com/docxology/antropy/blob/a1804f3e6813567f773d0bcf6a72718bb4b11396/README.md",
+      "source_sha256": "bc486319d8453c890e5b75a24064ddd272fa2b38a075e17253ceebbda88ff798",
+      "decision": "catalogue",
+      "reviewed_by": "Codex",
+      "rationale": "Standalone entropy and complexity methods with an archived methods manuscript; retain synthetic-study limits.",
+      "validation_scope": "Public README, repository metadata, and source layout reviewed; repository runtime verification not performed."
+    },
+    {
+      "repository": "docxology/reason",
+      "source_commit": "2b1efeef56f3966aca7c6cdeeea861ce41782b02",
+      "source_url": "https://github.com/docxology/reason/blob/2b1efeef56f3966aca7c6cdeeea861ce41782b02/README.md",
+      "source_sha256": "5b195db521d65cdc6f6927debe0d3439bcce42293ed6ddbc562463baaaab624f",
+      "decision": "catalogue",
+      "reviewed_by": "Codex",
+      "rationale": "Public draft scientific review and reproducible checking scripts; retain draft/open-for-response status and do not attribute the reviewed volumes to the reviewer.",
+      "validation_scope": "Public README, repository metadata, and source layout reviewed; repository runtime verification not performed."
+    }
+  ]
+}
