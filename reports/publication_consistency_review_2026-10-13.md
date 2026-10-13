@@ -28,11 +28,11 @@ editorial limitations stay explicit in each upstream review.
 
 | Item | Current decision | Remaining boundary |
 | --- | --- | --- |
-| 1. Cognitive Integrity | Integrated 1,475 / 5 / 15 and legacy 950 / 4 / 12 are distinct protocols; strict source gates corrected | Computational CI comparison repair pending; no field-performance claim |
-| 2. Gradient convergence | Contractive step-size range and termination-qualified accuracy replace uniform/monotonic claims; canonical correction merged | Mirror sync and new-format publication acceptance pending |
+| 1. Cognitive Integrity | Integrated 1,475 / 5 / 15 and legacy 950 / 4 / 12 are distinct protocols; strict source gates corrected and merged | Fixed historical hashes and same-environment determinism; no cross-platform identity or field-performance claim |
+| 2. Gradient convergence | Contractive step-size range and termination-qualified accuracy replace uniform/monotonic claims; canonical and source mirror corrections merged | Standalone/native and new-format publication acceptance remain separate |
 | 3. Markdown Decision Process | Model, participant and statistical claims explicitly unverified; correction merged | Original checkpoint and study provenance needed |
 | 4. ActiveACO | Historical node/sample configurations documented on docxology fork main | Table-specific original run denominator unresolved; haailabs upstream unchanged |
-| 5. Template comparison | Inventory categories differ from native capability counts; canonical correction merged | Mirror sync; a snapshot is not an exhaustive market claim |
+| 5. Template comparison | Inventory categories differ from native capability counts; canonical and source mirror corrections merged | A snapshot is not an exhaustive market claim |
 | 6. Methods dimensions | Current and historical source enum has eight dimensions | Archived six/seven wording does not justify changing current source |
 | 7. Dopamine foraging | Published 113/160 assignments conflict; no originating GitHub repo identified | Original analysis or author/publisher reconciliation needed |
 | 8. FEP formal | Current 168-topic maturity and semantic-scope contracts reviewed on main | Compilation is not full scientific/native acceptance |
@@ -41,3 +41,8 @@ editorial limitations stay explicit in each upstream review.
 
 The paired JSON records repository, PR and commit identities. Corrected source
 does not silently replace archival PDFs, deposits or measured data.
+
+All available originating-repository source corrections/reviews are on verified
+main. The paired JSON records canonical and mirror commits, export hashes and
+preserved destination-only files. The dopamine item remains an external
+source-reconciliation question; its missing repository was not substituted.

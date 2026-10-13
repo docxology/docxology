@@ -116,22 +116,29 @@
     {
       "id": 1,
       "repository": "docxology/cognitive_integrity",
-      "status": "correction_under_hosted_verification",
+      "status": "merged",
       "decision": "Distinguish integrated 1,475 samples / 5 families / 15 subcategories from legacy 950 samples / 4 families / 12 subcategories; retain protocol-specific measured denominators.",
       "pull_request": "https://github.com/docxology/cognitive_integrity/pull/1",
-      "candidate_commit": "d443141b36f18e4b361a046068d8a7c26b77a526",
-      "verification_boundary": "Scientific claim and series gates pass locally and hosted. Computational CI remains blocked on cross-platform PNG comparison; original failure retained pending renderer diagnostics."
+      "candidate_commit": "616ef21ae7455caa9f0742d11a2f47a4c208b15a",
+      "verification_boundary": "Local full suites, strict claims, series checks and hosted PR checks pass. Fixed provenance protects 88 source/input hashes and 26 historical artifact hashes; exact same-environment determinism is retained. No cross-platform pixel identity or field-performance claim.",
+      "main_commit": "4c131bedab5d2a69e2a2feab948d0bdff248982b"
     },
     {
       "id": 2,
       "repository": "docxology/template_code_project",
       "canonical_source": "docxology/template",
-      "status": "canonical_merged_mirror_pending",
+      "status": "merged_source_mirror",
       "decision": "Qualify convergence and accuracy by termination status; replace monotonicity/uniform-convergence claims with unit-Hessian contraction conditions.",
       "canonical_candidate_commit": "a97b5bc3201e0ccc6c02e73771600ce6bc705bb3",
-      "verification_boundary": "Canonical source/review is on verified main; standalone source mirror synchronization is pending. Historical output bytes are preserved. Private fresh HTML renders exceed the tracked output budget and require separate projection review; a sampled PDF page needs layout correction.",
+      "verification_boundary": "Canonical and standalone source mirrors are on verified main, with zero removals and historical outputs preserved. Source parity is distinct from standalone installation/native acceptance. Fresh private HTML exceeds the tracked-output budget; Code has a sampled PDF path overflow. New-format publication remains separate.",
       "canonical_main_commit": "d160eb9c90eec18e365117c3ccaef731c47d8604",
-      "canonical_pull_request": "https://github.com/docxology/template/pull/138"
+      "canonical_pull_request": "https://github.com/docxology/template/pull/138",
+      "main_commit": "259125a197bce25e7d4fd8be7a466afa36678949",
+      "source_export_sha256": "7a0d3b08abe7912c00b673b01b6faac1c7b504e4e315e950aae32d0a317458ea",
+      "preserved_destination_only_files": 125,
+      "source_export_parity": true,
+      "export_kind": "source",
+      "source_review_url": "https://github.com/docxology/template/blob/d160eb9c90eec18e365117c3ccaef731c47d8604/projects/templates/template_code_project/docs/publication_consistency_review.md"
     },
     {
       "id": 3,
@@ -153,23 +160,35 @@
       "id": 5,
       "repository": "docxology/template_template",
       "canonical_source": "docxology/template",
-      "status": "canonical_merged_mirror_pending",
+      "status": "merged_source_mirror",
       "decision": "Differentiate the comparison inventory from native template capabilities; avoid exhaustive current-market claims from a versioned matrix.",
       "canonical_candidate_commit": "a97b5bc3201e0ccc6c02e73771600ce6bc705bb3",
-      "verification_boundary": "Canonical source/review is on verified main; standalone source mirror synchronization is pending. Historical output bytes are preserved. Private fresh HTML renders exceed the tracked output budget and require separate projection review; a sampled PDF page needs layout correction.",
+      "verification_boundary": "Canonical and standalone source mirrors are on verified main, with zero removals and historical outputs preserved. Source parity is distinct from standalone installation/native acceptance. Fresh private HTML exceeds the tracked-output budget; Code has a sampled PDF path overflow. New-format publication remains separate.",
       "canonical_main_commit": "d160eb9c90eec18e365117c3ccaef731c47d8604",
-      "canonical_pull_request": "https://github.com/docxology/template/pull/138"
+      "canonical_pull_request": "https://github.com/docxology/template/pull/138",
+      "main_commit": "af9c5dfb94caf46518cc42424ec0cad34b875074",
+      "source_export_sha256": "0c56c2f861c3e5754abb272bb106c6e04e1d456077b2c7ac963da18c16a9ab32",
+      "preserved_destination_only_files": 122,
+      "source_export_parity": true,
+      "export_kind": "source",
+      "source_review_url": "https://github.com/docxology/template/blob/d160eb9c90eec18e365117c3ccaef731c47d8604/projects/templates/template_template/docs/publication_consistency_review.md"
     },
     {
       "id": 6,
       "repository": "docxology/template_methods_paper",
       "canonical_source": "docxology/template",
-      "status": "canonical_merged_mirror_pending",
+      "status": "merged_source_mirror",
       "decision": "Current Dimension enum and abstract/methods/setup consistently identify eight dimensions, including separate molar and mass concentration. Archived six/seven wording belongs to earlier source epoch.",
       "canonical_candidate_commit": "a97b5bc3201e0ccc6c02e73771600ce6bc705bb3",
-      "verification_boundary": "Canonical source/review is on verified main; standalone source mirror synchronization is pending. Historical output bytes are preserved. Private fresh HTML renders exceed the tracked output budget and require separate projection review; a sampled PDF page needs layout correction.",
+      "verification_boundary": "The eight-dimension source review and exact source mirror are on verified main, with zero removals and historical outputs preserved. No new Methods formats were rendered; standalone installation/native and archival publication acceptance remain separate.",
       "canonical_main_commit": "d160eb9c90eec18e365117c3ccaef731c47d8604",
-      "canonical_pull_request": "https://github.com/docxology/template/pull/138"
+      "canonical_pull_request": "https://github.com/docxology/template/pull/138",
+      "main_commit": "205af95f3983061f8ada5c675ba72c8d50b5618d",
+      "source_export_sha256": "ffcb26faccfe59bcd341f01fd8ff7602b3ff3694a55da088655bbb6016e0a871",
+      "preserved_destination_only_files": 82,
+      "source_export_parity": true,
+      "export_kind": "source",
+      "source_review_url": "https://github.com/docxology/template/blob/d160eb9c90eec18e365117c3ccaef731c47d8604/projects/templates/template_methods_paper/docs/publication_consistency_review.md"
     },
     {
       "id": 7,
