@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-13T16:15:30Z",
-  "source_commit_at_generation": "aa57a353a13f0eea0d534adabc13d1a7702d0dc5",
+  "generated_at": "2026-10-13T16:23:23Z",
+  "source_commit_at_generation": "15fff93db581e04067377721de953a3739cb773d",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 905887943,
+    "source_bytes": 905887321,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 5960,
-    "artifact_bytes": 906940862
+    "artifact_bytes": 906940240
   },
   "included_files": [
     {
@@ -75,8 +75,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 132564,
-      "sha256": "ab4fcbebe4cc1aa6687c19a8fddb5ffb75ce8005db2e80c2ff6533872c20b0cf"
+      "bytes": 132896,
+      "sha256": "e029f0c92673aa4758108367d53232fc81e963a1759fbbb88b0d76be5f9f73d9"
     },
     {
       "path": "CITATION.cff",
@@ -105,8 +105,8 @@
     },
     {
       "path": "TODO.md",
-      "bytes": 19290,
-      "sha256": "e508a18e21ceab47bce14e64c15f5594f03a40269c0ea8524b5f1b103bbfa6fd"
+      "bytes": 17932,
+      "sha256": "f851e59f9292be20a0580fdf1945f8967b646009cd0ecd69d4492c4b6b169dfc"
     },
     {
       "path": "a3f7c1b8d4e9426b8f2c5a7d9e3f1b6c.txt",
@@ -22961,7 +22961,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 416636,
-      "sha256": "68f840efc086e16226ab985b55558235ad747a34cd84149391b95f94bcee447a"
+      "sha256": "f951f6b2df0493d463b3916d9ce2d24b80a7e5e1cfa045477f936cae58a25d13"
     },
     {
       "path": "software.html",
@@ -22985,8 +22985,8 @@
     },
     {
       "path": "updates.html",
-      "bytes": 200144,
-      "sha256": "3824311dd975ffaf67bdedd80a4612f5621c6c35aa68a06abb747c7205084d01"
+      "bytes": 200548,
+      "sha256": "3992819e7d00a8d7908f95c81dadf98b654b98e8c2f0faa8d56af0f85f7aa9bf"
     },
     {
       "path": "uv.lock",
