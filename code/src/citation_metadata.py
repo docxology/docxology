@@ -76,18 +76,49 @@ class CitationHead(HTMLParser):
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
         self.in_head = False
+        self.head_finished = False
+        self.template_depth = 0
         self.tags: dict[str, list[str]] = {}
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        if tag == "head":
+        if tag == "template":
+            self.template_depth += 1
+            return
+        if self.template_depth:
+            return
+        if tag == "body":
+            self.in_head = False
+            self.head_finished = True
+        if tag == "head" and not self.head_finished:
             self.in_head = True
         if tag != "meta" or not self.in_head:
             return
-        attributes = dict(attrs)
+        # HTML keeps the first value of a duplicated attribute. A later
+        # lookalike must not replace the value a browser actually sees.
+        attributes = {}
+        for name, value in attrs:
+            attributes.setdefault(name, value)
         name = (attributes.get("name") or "").lower()
         if name.startswith("citation_"):
             self.tags.setdefault(name, []).append(attributes.get("content") or "")
 
     def handle_endtag(self, tag: str) -> None:
+        if tag == "template" and self.template_depth:
+            self.template_depth -= 1
+            return
+        if self.template_depth:
+            return
         if tag == "head":
             self.in_head = False
+            self.head_finished = True
+
+    def handle_startendtag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        # HTML ignores the slash on nonvoid elements. Rather than pretend
+        # malformed template/script/style markup has closed, stop collecting
+        # evidence; this lightweight parser does not perform HTML5 repair.
+        if tag not in {"area", "base", "br", "col", "embed", "hr", "img", "input",
+                       "link", "meta", "param", "source", "track", "wbr"}:
+            self.in_head = False
+            self.head_finished = True
+            return
+        self.handle_starttag(tag, attrs)

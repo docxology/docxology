@@ -67,6 +67,36 @@ def test_ambiguous_pdf_is_never_guessed(tmp_path):
     assert "no_selected_local_pdf" in row["blockers"]
 
 
+def test_whitespace_only_citation_fields_are_missing(tmp_path):
+    fixture(tmp_path)
+    page = tmp_path / "works/Example.html"
+    page.write_text(page.read_text().replace('content="A. Author"', 'content=" &#9; "'))
+    assert "missing_citation_author" in build_report(tmp_path)["works"][0]["blockers"]
+
+
+@pytest.mark.parametrize("field", ["citation_title", "citation_publication_date", "citation_doi", "citation_pdf_url"])
+def test_duplicate_singleton_metadata_is_blocked(tmp_path, field):
+    fixture(tmp_path)
+    page = tmp_path / "works/Example.html"
+    extra = f'<meta name="{field}" content="Duplicate">'
+    if field == "citation_doi":
+        extra *= 2
+    page.write_text(page.read_text().replace('</head>', extra + '</head>'))
+    assert f"duplicate_{field}" in build_report(tmp_path)["works"][0]["blockers"]
+
+
+def test_catalogued_doi_requires_nonempty_doi_tag(tmp_path):
+    fixture(tmp_path)
+    dataset = tmp_path / "data/works.json"
+    works = json.loads(dataset.read_text())
+    works["works"][0]["doi"] = "10.1234/example"
+    dataset.write_text(json.dumps(works))
+    assert "missing_citation_doi" in build_report(tmp_path)["works"][0]["blockers"]
+    page = tmp_path / "works/Example.html"
+    page.write_text(page.read_text().replace('</head>', '<meta name="citation_doi" content="10.1234/example"></head>'))
+    assert "missing_citation_doi" not in build_report(tmp_path)["works"][0]["blockers"]
+
+
 def test_source_change_changes_evidence(tmp_path):
     folder = fixture(tmp_path)
     first = build_report(tmp_path)
