@@ -2,6 +2,21 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-10-13
+
+- **Backlog cleanup:** removed completed intake, metadata, artwork, and
+  performance-repair history from active task descriptions. Remaining work
+  now has minor/medium/major effort guidance and explicit access dependencies;
+  recurring maintenance stays visible, and the preserved Scholar PDF placement
+  gap is marked deferred.
+
+- **Citation evidence boundaries:** the shared head parser ignores inert
+  templates and body lookalikes, closes permanently at head/body boundaries,
+  and preserves browser-visible first attribute values. The Scholar audit
+  flags blank required fields, missing catalogued DOI tags, and duplicate
+  singleton metadata while retaining ordered multi-author tags. These checks
+  do not establish Scholar indexing or resolve the preserved PDF placement gap.
+
 ## 2026-10-12
 
 - **Author entity types:** work and publication JSON-LD now use verified

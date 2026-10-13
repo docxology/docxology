@@ -65,6 +65,11 @@ selected public PDF hashes, size, and directory placement. The audit uses a
 conservative decimal 5,000,000-byte interpretation of Google's 5 MB ceiling.
 It preserves source PDFs and permanent URLs. Missing local PDFs are observations
 about this archive, not claims that no external full text exists.
+Citation evidence excludes template contents and later body head lookalikes;
+blank required fields, missing catalogued DOI tags, and duplicate singleton
+tags remain local blockers. Repeated ordered author tags are valid. This
+lightweight parser is not a complete HTML5 tree builder; the exact source
+identity gate and browser QA remain separate checks.
 
 Searchable PDF text, scholarly suitability, complete author-written abstracts
 or full text, and actual Scholar indexing remain explicitly unverified. The

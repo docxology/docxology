@@ -30,8 +30,13 @@ def assess_work(root: Path, work: dict, visible: frozenset[str]) -> dict:
     tags = parser.tags
     blockers = []
     for field in ("citation_title", "citation_author", "citation_publication_date"):
-        if not tags.get(field) or not all(tags[field]):
+        if not tags.get(field) or not all(value.strip() for value in tags[field]):
             blockers.append(f"missing_{field}")
+    if work.get("doi") and not all(value.strip() for value in tags.get("citation_doi", [""])):
+        blockers.append("missing_citation_doi")
+    for field in ("citation_title", "citation_publication_date", "citation_doi", "citation_pdf_url"):
+        if len(tags.get(field, [])) > 1:
+            blockers.append(f"duplicate_{field}")
     pdf = resources.primary_pdf
     pdf_info = None
     if pdf is None:

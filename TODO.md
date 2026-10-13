@@ -8,8 +8,22 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-10-12; implementation progress and remaining evidence/access
-  dependencies recorded separately from completed history.
+- Last reviewed: 2026-10-13; only unfinished work and recurring checks remain.
+  Completed implementation and source-review history lives in CHANGELOG.md and
+  the linked dated reports. Effort estimates below are separate from priority.
+
+## Remaining work by effort
+
+| Effort | Unfinished work | Main dependency |
+| --- | --- | --- |
+| Minor | Search Console cleanup and selected URL inspections; optional public CurioDAO description; retry unavailable source queries | Signed-in owner access, public source availability |
+| Medium | Named visual review and revision-bound release attestation; fresh authenticated Scholar observation; failed YouTube refresh diagnosis; retained Lighthouse blocking-time review; Pages growth/retention review | Reviewer/access, valid source responses, measured candidate evidence |
+| Major | Three licensed full-text acquisitions, two depositor authorship reconciliations, and originating-paper corrections; manuscript rendering/backend, license, output inspection and editorial review; managed-profile security scan and finding disposition | Rights holders, depositors/authors, editorial decisions, required scan runtime |
+
+The Scholar same-directory PDF gap is **documented and deferred** under the
+approved permanent-URL and artifact-limit policy. A broader migration is not an
+active implementation task. Actual Scholar indexing remains unverified.
+Recurring checks below are operating obligations, not unfinished feature work.
 
 ## P0 — Release and integrity
 
@@ -51,29 +65,23 @@ criteria, and dependencies. Re-review this file before each public release.
   primary-repository promotion requires an individual source-backed decision.
   Review the current classification queue rather than relying on historical
   queue counts.
-- Status (2026-10-06): the queue is empty. Catalog rows use each repository's
-  current GitHub name, so an upstream rename needs a matching row update.
+- Open work: none in the reviewed queue; retain this as a refresh-triggered
+  classification check, not a pending catalog addition.
 
 ### DOC-006 — Refresh external evidence and coverage exceptions
 
 - Priority: P1
 - Owner: RESEARCHER
 - Trigger: monthly, before a claim-sensitive release, or when the weekly `freshness.yml` run opens or comments on the "Public-source freshness drift detected" issue (the reviewed baseline `reports/public_source_snapshot_2026-10-07.json` resolved #44; a later drift opens a new issue, which is closed by hand once a reviewed refresh is the committed baseline)
-- Status (2026-10-12): refreshed the public-source snapshot, inventory, and
-  warning-free GitHub–Zenodo pairing scan. Strong publication intake added
-  the synthetic overview and antropy methods archive and refreshed existing
-  release metadata. The supplemental `fep_formal` software archive remains
-  linked to its existing paper. Ambiguous publication pairs remain visible in [the current source review](reports/public_source_review_2026-10-12.md).
-  ResearchGate, SciProfiles, and PhilPeople returned 403; a live Flickr refresh
-  needs an API key. Scholar retains its existing authenticated snapshot.
-  YouTube refreshes failed canonical metadata checks, so both channel caches
-  were preserved. The `antropy` and `reason` catalog entries have source-backed
-  reviews in [the repository review](reports/repository_catalog_review_2026-10-12.json).
-  The subsequent freshness issue #47 identified `daf-okn`; its pinned public
-  source review supports a software-only addition with limited live endpoint
-  verification. The snapshot and inventory now include that observation.
-  The synthetic overview’s referenced GitHub repository returns 404 to an
-  anonymous read; its public Zenodo PDF and source archive remain available.
+- Open work: retry unavailable Zenodo identity queries; review ResearchGate,
+  SciProfiles, and PhilPeople when their access restrictions permit; diagnose
+  failed YouTube canonical-metadata refreshes before replacing either cache.
+  Refresh Scholar only after a direct authenticated observation. A live Flickr
+  refresh needs its approved API-key workflow.
+- Latest read-only check (2026-10-13): no new GitHub releases found; Zenodo
+  queries timed out, so Zenodo freshness is unverified. Completed intake and
+  pair decisions are recorded in [the source review](reports/public_source_review_2026-10-12.md)
+  and [the repository review](reports/repository_catalog_review_2026-10-12.json).
 - Deliverable: refresh ORCID, Crossref, Zenodo, PubMed, Europe PMC, GitHub, Scholar, organizational, teaching, art, and software evidence; review `data/coverage-exceptions.json`
 - Acceptance: only verified metadata is applied, access dates and caveats remain visible, and current coverage is linked from agent and human discovery surfaces
 - Dependencies: public-source APIs, primary profile pages, coverage report
@@ -86,9 +94,8 @@ criteria, and dependencies. Re-review this file before each public release.
 - Deliverable: record an applied, deferred, or rejected decision for every affected AII officer, board, advisory-board, and textbook-cohort claim before updating curated profile surfaces
 - Acceptance: the dated evidence report and claim ledger identify the reviewed source, decision, owner, and rationale; approved edits regenerate dependent HTML, JSON, resume, and discovery outputs
 - Dependencies: official AII governance/program pages, `reports/public_source_review_*.json`, `pages/EVIDENCE.md`, `data/claims.json`
-- Status (2026-10-06): every AII governance and program claim carries a reviewed
-  decision; the advisory-board count and Textbook Group cohort claims were
-  re-read against the official pages, found unchanged, and re-dated.
+- Open work: none from the reviewed migration; repeat only when official
+  wording changes. Prior decisions remain in the claim ledger and dated review.
 
 ### DOC-016 — Finish paper-archive curation and registry judgment calls
 
@@ -97,12 +104,6 @@ criteria, and dependencies. Re-review this file before each public release.
 - Trigger: next bibliography pass, or any per-paper review
 - Deliverable: resolve the remaining source-access, registry, and originating-
   publication discrepancies with recorded evidence and explicit decisions
-- Status (2026-10-01): completed curation and keep/change decisions are in
-  [the accuracy report](reports/bibliography_accuracy_2026-10-01.md).
-  Current archive coverage follows [the generated snapshot](reports/current_counts.md).
-  Permanent keys now come from `data/work-identifiers.json`; metadata corrections
-  no longer require changing the public URL.
-  Remaining:
 - Acquire licensed full text for **#63** `2023_ToComment`,
   `2024_PaleolithicRockstars`, and `2026_FocusedAttentionMeditation`, then
   extract and summarize from those sources. Direct publisher/registry checks
@@ -113,9 +114,8 @@ criteria, and dependencies. Re-review this file before each public release.
   list), and **#29** Aligning AIO to SUMO (a registered concept-record creator
   does not appear on the title-page author list). Keep the registered creators
   pending depositor reconciliation; neither observation establishes a safe
-  authorship change. Full-title corrections for #12, #26, and #74 and the
-  publication-year correction for #159 were applied without changing URLs;
-  see [the metadata decisions](reports/bibliography_metadata_review_2026-10-02.json).
+  authorship change. Prior decisions remain in
+  [the metadata review](reports/bibliography_metadata_review_2026-10-02.json).
 - Content inconsistencies that the grounded summaries surfaced inside the
   papers themselves (for the author): CognitiveIntegrityFramework Part 2
   corpus size (950 vs 1,475), ConvergenceAnalysisGradient Discussion vs Table
@@ -163,16 +163,10 @@ criteria, and dependencies. Re-review this file before each public release.
   improve pages below the aspirational performance 85, accessibility 95, and
   SEO 95 scores. Keep existing floors and measured results visible; passing
   the ratchet does not establish that every aspirational target was met.
-- Measurement parity: CI scored `art.html` 75 and `publications.html` 82 on
-  `a08e455d` while production measured 99–100 for both. The rendered-test and
-  Lighthouse fixture now serves gzip like GitHub Pages, and the gallery and
-  publication-table startups yield instead of running one long task; local
-  medians on the gzip fixture are 99–100 for both pages with zero blocking time
-  ([the 2026-10-06 report](reports/lighthouse_gap_2026-10-06.md)). The CI
-  `lighthouse-8d4c7c17…` artifact confirms it: performance 95 (`art.html`) and
-  99 (`publications.html`), and 95–100 on every ratchet page; the floors and
-  targets in `code/tests/test_lighthouse_budgets.py` are unchanged. `art.html`
-  still shows about 240 ms of blocking time on the CI runner.
+- Remaining measured follow-up: `art.html` showed about 240 ms of blocking
+  time on the retained CI candidate. Re-measure a current candidate before
+  changing startup behavior. Prior fixture/parity repairs are documented in
+  [the performance report](reports/lighthouse_gap_2026-10-06.md).
 
 ### DOC-010 — Security and SEO follow-up
 
@@ -182,14 +176,12 @@ criteria, and dependencies. Re-review this file before each public release.
 - Deliverable: validate meta-policy limitations, CSP/URL/iframe/rel invariants, canonical and sitemap families, then record Search Console follow-up
 - Acceptance: no inline handlers/scripts or unsafe schemes; approved YouTube origin only; every public family has canonical, metadata, schema, and sitemap policy coverage
 - Dependencies: `seo_invariants.py`, `gsc_followup_preflight.py`, signed-in Search Console review
-- Scholar follow-up: preserve permanent URLs and the artifact ceiling while
-  planning a hash-bound PDF placement strategy for the same-directory
-  requirement.
-  The [generated prerequisite audit](reports/scholar_readiness.md) now binds
-  per-work PDF sizes and placement to source hashes; the bounded citation
-  review tool makes future enrichment repeatable.
-  See [scholar-inclusion.md](docs/seo/scholar-inclusion.md). Valid citation tags
-  do not close PDF eligibility or actual Scholar indexing.
+- Deferred Scholar gap: keep permanent URLs and the artifact ceiling. The
+  same-directory PDF requirement is unresolved under that policy; no archive
+  duplication or URL migration is authorized by this backlog item. Metadata
+  checks and the [prerequisite audit](reports/scholar_readiness.md) are implemented.
+  Content/PDF eligibility and actual indexing still require separate review;
+  see [scholar-inclusion.md](docs/seo/scholar-inclusion.md).
 - Access: the owner's signed-in Search Console property was available on
   2026-10-05; observations are in
   [the dated report](reports/gsc_observations_2026-10-05.md) and the procedure
@@ -223,33 +215,20 @@ criteria, and dependencies. Re-review this file before each public release.
 - Acceptance: current reports remain hosted/indexed; historical reports remain in GitHub or release archives; no evidence is deleted silently
 - Dependencies: Pages growth report, release-integrity manifest
 
-### ART-001 — Flickr-side metadata enrichment for artwork pages
+### ART-001 — Optional public CurioDAO description
 
 - Priority: P1
 - Owner: DAF (on Flickr) / WEB DEVELOPER (site-side re-sync)
-- Trigger: after tagging/describing works on Flickr; re-run
-  `sync_flickr_artworks.py` then the `artwork-pages` step
-- Deliverable: Flickr records enriched so no artwork page is thin and every
-  collection membership is tag-driven; site re-synced and rebuilt
-- Acceptance: 0 thin (noindex) artwork pages hold; every record that is
-  untagged in `data/artworks.json` gains Flickr tags (check with
-  `sync_flickr_artworks.py --coverage-local`); *Solstice (Turning Point)*
-  (55349041831), the untagged record with the shortest description, is tagged
-  and joins a themed collection
-- Dependencies: Flickr account edits (out of repo scope); a non-commercial
-  `FLICKR_API_KEY` (shell variable and repository secret);
-  `code/orchestrators/sync_flickr_artworks.py`; `pages/ART_COLLECTIONS.md`
-- Status (2026-10-06): re-synced with the key held in the `FLICKR_API_KEY`
-  repository secret. Every public artwork now has tags and a description, and
-  the export matches Flickr's public total; a test keeps both complete. The
-  export is public-only, so the signed-in owner view, which also counts
-  non-public photos, stays larger. *Solstice (Turning Point)* now belongs to
-  the Lettering & Verse collection.
-- Curio copy (DAF decision, 2026-10-07): public information only. Non-public
-  Flickr photos stay out of scope, with no handle list and no authenticated
-  read. *26 Too* keeps its current text, because no public source ties it to
-  Card 26. The one remaining step is optional: DAF may paste a sourced
-  *CurioDAO* description on Flickr, followed by a re-sync.
+- Trigger: DAF chooses to add a sourced public description on Flickr
+- Deliverable: add that description, then use the approved Flickr refresh and
+  artwork-page generation workflow
+- Acceptance: exported public description matches the source and dependent
+  pages regenerate; non-public photos remain excluded
+- Dependencies: owner-side Flickr edit, approved API-key workflow,
+  `sync_flickr_artworks.py`, artwork-page generation
+- Scope: optional. Public tagging, description coverage, and Solstice collection
+  placement are complete and no longer pending here. *26 Too* retains its
+  current text because no public source ties it to Card 26.
 
 ## P2 — Operating model
 
@@ -267,14 +246,13 @@ criteria, and dependencies. Re-review this file before each public release.
 - Priority: P2
 - Owner: RESEARCHER / MAINTAINER
 - Trigger: before any claim that the repository-methods draft is rendered, reviewed, or publication-ready
-- Deliverable: choose and pin a rendering backend with declared outputs; render the draft and inspect its figures and cross-references; validate `docs/manuscript/references.bib` with a real BibTeX parser; obtain editorial review
-- Acceptance: a declared render command produces output whose figures and references have been inspected, a bibliography syntax check passes outside the structural gate, and a named editorial reviewer's decision is recorded; until then `validate_manuscript.py` is reported only as structural source validation
+- Deliverable: choose and pin a rendering backend with declared outputs; resolve manuscript licensing; render the draft and inspect its figures and cross-references; obtain editorial review
+- Acceptance: a declared render command produces output whose figures and references have been inspected, changed bibliography entries pass a real-parser syntax check outside the structural gate, and a named editorial reviewer's decision is recorded; until then `validate_manuscript.py` is reported only as structural source validation
 - Dependencies: `docs/manuscript/config.yaml`, `code/orchestrators/validate_manuscript.py`, [MANUSCRIPT_STATUS.md](docs/manuscript/MANUSCRIPT_STATUS.md)
-- Status (2026-10-05): `references.bib` (one `@misc` entry) parses under pybtex
-  strict mode and bibtexparser 1.4.3, run from a throwaway environment so no
-  dependency was added; repeat the check whenever entries change. The
-  rendering-backend choice, rendered-output inspection, and editorial review
-  remain open.
+- Open work: rendering-backend choice, declared outputs, licensing,
+  rendered-output inspection, and editorial review. The existing bibliography
+  already passed real-parser checks; repeat those checks when entries change.
+
 
 ### SEC-002 — Re-run the managed-profile deep security scan
 
