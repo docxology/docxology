@@ -429,14 +429,14 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-10-12.json",
+      "path": "/reports/accessibility_static_2026-10-13.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-10-12.json",
+      "path": "/reports/asset_size_2026-10-13.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1464,11 +1464,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 905880660,
+        "source_bytes": 905887943,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5959,
-        "artifact_bytes": 906933412
+        "artifact_file_count": 5960,
+        "artifact_bytes": 906940862
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5948,7 +5948,7 @@
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "d322202c51f61b151f7739933dcedc11a9d9efbe83c3c81a05bd87f811231339",
     "videos_index": "00cbbae94055540634edca93e02f98ff62b4abccc127c0099d9edecfcc3d26fe",
-    "search": "bcaedff8d444abed30f53c31b475ca432839d7efc8412326ad5b26bc1253a6f8",
+    "search": "6bc4b6c3f319dca8fd7bcc6580612a4e21e19a06bb077ccd343a09a074cde425",
     "claims": "fcd7a157c6446f6fcc881a98ef53d0d6f1dce535e542e4af92a21954e01c7139",
     "scholar_verification_receipt": "eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759",
     "coverage_exceptions": "cd5f27ddc26015d9323d0383370b82291befdfe8964312fe1e581ef8effb3c38",
@@ -5958,10 +5958,10 @@
     "resume": "e8664af072772b779802811b1ad9eae42f506135e39cf5bf6c34b8994f8c2f0e",
     "work_enrichment": "efcab877656a2cf4028a1c09f8e9e8914c8a65b0675aeb1aaf0c2d963d813543",
     "scholar_readiness": "315a73a8cd1454cd9b7b2cd240f7ec9bb80e56a80ddf06c2d5403918c59b4685",
-    "catalog": "00fd0a01811c19ae3f0373885f9febf556c0691c0fd49b1289bb9e9406cf35d5",
+    "catalog": "a519635cfa22d56d239c16deec43cb0c3e63324bff230db57f6a52f3f864301e",
     "reconciliation": "0404727677daf98fa5d6b378cf319f4a2fac1fe5e0107e92ea32e4e178f59689",
     "reproducibility": "7a65af07cf53e49eac82b3c39e8654a3ec462a23597754cb596365dbbce191b7",
-    "generated_manifest": "1662b5757653c25abddcc1193a290deac307ea75acbed2d56fe0e92c71964c4f",
+    "generated_manifest": "9789dd33a8f103317cea12ac734d426ffa203874fd86f3859b2a2855a48e0e71",
     "current_counts": "d50f3e73733b6c89a82d175fed988410ab356b1fd77111bd16ae256572423117"
   },
   "source_provenance": {
