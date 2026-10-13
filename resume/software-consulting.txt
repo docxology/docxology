@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-10-12T21:06:01Z
+Generated: 2026-10-12T22:38:01Z
 
-Current public metrics: 222 curated works; 163 catalogued software repositories (122 owned + 41 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 233 docxology + 45 AII public repositories (174 primary, 104 forks).
+Current public metrics: 222 curated works; 164 catalogued software repositories (123 owned + 41 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 234 docxology + 45 AII public repositories (175 primary, 104 forks).
 
 SUMMARY
 -------
@@ -271,7 +271,7 @@ WORKS AND PUBLICATIONS (214)
 [225] 2026 | Paper | Active Inference -- A Synthetic Overview | Zenodo | 10.5281/zenodo.23321280
 [226] 2026 | Paper | antropy: native multidimensional entropy and configurable complexity analysis | Zenodo | 10.5281/zenodo.23306200
 
-SOFTWARE (163)
+SOFTWARE (164)
 --------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
@@ -395,6 +395,7 @@ docxology/daf-jev | Python | https://github.com/docxology/daf-jev | Modular, com
 docxology/OmniLatticeTextbook | HTML | https://github.com/docxology/OmniLatticeTextbook | Modular textbook project with computational models, deterministic figure generation, and manuscript validation; no publication DOI assigned at the source review
 docxology/antropy | Python | https://github.com/docxology/antropy | Configurable entropy and complexity methods for native multidimensional data, including HDSE, whole-observation inference, and reproducible synthetic studies; empirical replication and biological sample-size claims remain outside the demonstrated scope · · Zenodo | paper: papers/2026_Antropy/ | zenodo: https://doi.org/10.5281/zenodo.23306200
 docxology/reason | Python | https://github.com/docxology/reason | Draft scientific review of Foundations of Reason 8.0 and Engineering of Reason 3.5, with a source-linked issue register and Python quotation, page-citation, numerical, and PDF-custody checks; open for author response
+docxology/daf-okn | Python | https://github.com/docxology/daf-okn | Python package and CLI for Open Knowledge Network registry discovery, vault-to-graph export, graph analysis and visualization, and local RDF contribution packaging; packaging does not upload to the registry, and live endpoint coverage remains limited
 ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output
 ActiveInferenceInstitute/ActiveBlockference | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveBlockference | Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework
 ActiveInferenceInstitute/Active_InferAnts | Python | https://github.com/ActiveInferenceInstitute/Active_InferAnts | Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference

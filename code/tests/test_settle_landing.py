@@ -478,3 +478,33 @@ def test_payload_change_during_battery_never_lands_or_pushes(repo: Path, monkeyp
         settle.main()
     assert git(repo, "rev-parse", "HEAD") == before
     assert (repo / "README.md").read_text() == "concurrent change\n"
+
+
+@pytest.mark.parametrize("skip_commit", [False, True])
+def test_main_prepayload_mode_is_only_for_actual_payload_commit(repo, monkeypatch, skip_commit):
+    write(repo, "README.md", "new payload\n")
+    args = argparse.Namespace(tier="full", dry_run=False, commit_message=None,
+                              skip_commit=skip_commit, push=False, pr=None)
+    monkeypatch.setattr(settle, "parse_args", lambda: args)
+    monkeypatch.setattr(settle, "refresh_review", lambda: True)
+    seen = []
+    def stop_at_battery(tier, paths, allow_dirty):
+        seen.append(allow_dirty)
+        return False
+    monkeypatch.setattr(settle, "run_battery", stop_at_battery)
+    with pytest.raises(SystemExit):
+        settle.main()
+    assert seen == [not skip_commit]
+
+
+@pytest.mark.parametrize("skip_commit", [False, True])
+def test_dry_run_prints_actual_prepayload_validator_mode(repo, monkeypatch, capsys, skip_commit):
+    write(repo, "README.md", "new payload\n")
+    args = argparse.Namespace(tier="full", dry_run=True, commit_message=None,
+                              skip_commit=skip_commit, push=False, pr=None)
+    monkeypatch.setattr(settle, "parse_args", lambda: args)
+    monkeypatch.setattr(settle, "run_battery", lambda *_: pytest.fail("dry-run executed battery"))
+    settle.main()
+    output = capsys.readouterr().out
+    validator_line = next(line for line in output.splitlines() if "validate_repo (standard):" in line)
+    assert ("--allow-dirty-prepayload-evidence" in validator_line) is (not skip_commit)

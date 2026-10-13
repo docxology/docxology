@@ -89,7 +89,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # curated table and template. This first pass may legally read
     # one-step-behind state (current-counts, paper-folder flags); the final
     # instance below declares those inputs so one pass reaches the fixed point.
-    GenerationStep("sync-publications", "sync_publications_html.py", ("--apply",), ("--check",), "Publication HTML and JSON-LD", ("pages/BIBLIOGRAPHY.md", "data/work-identifiers.json", "code/src/work_identifiers.py", "code/templates/publications.html.tmpl", "code/orchestrators/export_bibliography.py", "code/orchestrators/build_work_pages.py")),
+    GenerationStep("sync-publications", "sync_publications_html.py", ("--apply",), ("--check",), "Publication HTML and JSON-LD", ("pages/BIBLIOGRAPHY.md", "data/work-identifiers.json", "data/work-authors.json", "code/src/work_identifiers.py", "code/src/author_entities.py", "code/templates/publications.html.tmpl", "code/orchestrators/export_bibliography.py", "code/orchestrators/build_work_pages.py")),
     GenerationStep("sync-software", "sync_software_html.py", ("--apply",), ("--check",), "Software HTML and JSON-LD", ("pages/SOFTWARE.md", "code/templates/software.html.tmpl", "data/github-repositories.json")),
     GenerationStep("github-inventory-pages", "render_github_inventory.py", (), ("--check",), "Cached GitHub inventory HTML pages", ("data/github-repositories.json", "code/orchestrators/build_github_inventory.py")),
     # DERIVED (always-run): reads data/software.json — a projection agent-data
@@ -132,11 +132,11 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("export-bibliography-final", "export_bibliography.py", (), ("--check",), "Bibliography exports after paper documents", ("pages/BIBLIOGRAPHY.md", "data/work-identifiers.json", "papers/*/README.md", "papers/*/AGENTS.md", "papers/*/SKILL.md", "papers/*/full_text.md", "papers/*/images/*")),
     # Final pass adds the paper-documents outputs and current-counts so the
     # fixed point (folder flags + "as of" month) is reached in one pass.
-    GenerationStep("sync-publications-final", "sync_publications_html.py", ("--apply",), ("--check",), "Publication HTML and JSON-LD after paper documents", ("pages/BIBLIOGRAPHY.md", "data/work-identifiers.json", "code/templates/publications.html.tmpl", "data/current-counts.json", "papers/*/README.md", "papers/*/AGENTS.md", "papers/*/SKILL.md", "papers/*/full_text.md", "papers/*/images/*", "code/orchestrators/export_bibliography.py", "code/orchestrators/build_work_pages.py")),
+    GenerationStep("sync-publications-final", "sync_publications_html.py", ("--apply",), ("--check",), "Publication HTML and JSON-LD after paper documents", ("pages/BIBLIOGRAPHY.md", "data/work-identifiers.json", "data/work-authors.json", "code/src/author_entities.py", "code/templates/publications.html.tmpl", "data/current-counts.json", "papers/*/README.md", "papers/*/AGENTS.md", "papers/*/SKILL.md", "papers/*/full_text.md", "papers/*/images/*", "code/orchestrators/export_bibliography.py", "code/orchestrators/build_work_pages.py")),
     GenerationStep(
         "work-pages", "build_work_pages.py", (), ("--check",), "Per-work landing pages",
         (
-            "data/works.json", "data/publishing-status.json", "bibliography.bib",
+            "data/works.json", "data/work-authors.json", "data/publishing-status.json", "bibliography.bib",
             "papers/paper_metadata.json", "papers/*/metadata.json",
             "papers/*/README.md", "papers/*/AGENTS.md", "papers/*/SKILL.md",
             "papers/*/CITATION.cff", "papers/*/full_text.md",
@@ -192,6 +192,8 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # DERIVED (always-run): idempotent in-place Agent Map nav patch whose
     # scan scope equals its write scope (every public root HTML page).
     GenerationStep("agent-navigation", "ensure_agent_navigation.py", (), ("--check",), "Visible Agent Map navigation"),
+    # Hash final work HTML only after all shared head/navigation normalizers.
+    GenerationStep("scholar-readiness", "build_scholar_readiness.py", (), ("--check",), "Offline Scholar prerequisite audit", ("data/works.json", "works/*.html", "papers/*/metadata.json", "papers/*/full_text.md", "papers/*/*.[pP][dD][fF]", ".gitignore")),
     GenerationStep("reconciliation", "build_reconciliation_report.py", (), ("--check",), "Reconciliation report", ("data/works.json", "data/software.json", "data/claims.json", "reports/public_source_snapshot_*.json")),
     GenerationStep("asset-audit-first", "audit_assets.py", (), ("--check",), "Asset-size report", ASSET_AUDIT_INPUTS, ASSET_AUDIT_INPUTS_EXCLUDE),
     GenerationStep("accessibility-first", "accessibility_audit.py", (), ("--check",), "Static accessibility report", ("**/*.html", "code/orchestrators/deploy_seo_security.py")),
@@ -205,7 +207,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # is git-tracked-filtered while fingerprints are content-only, a receipt
     # committed after the last catalog run needs the post-commit pointer
     # re-render or --force (publication-sync.md, discovery-pointer bullet).
-    GenerationStep("catalog", "build_catalog.py", (), ("--check",), "Public data catalog", ("data/works.json", "data/software.json", "data/videos.json", "papers/*/full_text.md", "papers/*/images/*", "reports/public_source_inventory_*.json", "reports/public_source_snapshot_*.json", "reports/external_links_[0-9]*.json", "reports/external_links_triage_*.json", "reports/asset_size_*.json", "reports/live_site_verification_*.json", "reports/browser-smoke/*/manifest.json", "reports/browser-qa/*/manifest.json")),
+    GenerationStep("catalog", "build_catalog.py", (), ("--check",), "Public data catalog", ("data/works.json", "data/software.json", "data/videos.json", "data/scholar-readiness.json", "papers/*/full_text.md", "papers/*/images/*", "reports/public_source_inventory_*.json", "reports/public_source_snapshot_*.json", "reports/external_links_[0-9]*.json", "reports/external_links_triage_*.json", "reports/asset_size_*.json", "reports/live_site_verification_*.json", "reports/browser-smoke/*/manifest.json", "reports/browser-qa/*/manifest.json")),
     GenerationStep("asset-audit-final", "audit_assets.py", (), ("--check",), "Final asset-size report after catalog", ASSET_AUDIT_INPUTS, ASSET_AUDIT_INPUTS_EXCLUDE),
     GenerationStep("accessibility-final", "accessibility_audit.py", (), ("--check",), "Final accessibility report after catalog", ("**/*.html", "code/orchestrators/deploy_seo_security.py")),
     # DERIVED (always-run): in-place patcher (same class as
@@ -248,6 +250,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
 
 
 EXCLUDED_OPERATIONS: tuple[ExcludedOperation, ...] = (
+    ExcludedOperation("review_citation_metadata.py", "network/manual-review", "Bounded Crossref citation proposals require review; the tool never applies source changes."),
     ExcludedOperation("verify_deployed_artifact.py", "network/post-deploy", "SHA-bound technical acceptance of deployed routes and PDF artifacts; distinct from the human-reviewed full release attestation."),
     ExcludedOperation("add_zenodo_only.py", "network/source-authoring/binary-intake/manual-review", "Zenodo intake can create bibliography rows, paper folders, and downloaded binaries."),
     ExcludedOperation("audit_private_reconciliation.py", "manual-review", "Private/public comparison writes a dated decision receipt and must remain an explicit reconciliation action."),

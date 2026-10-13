@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
  
- *122 original repositories · 41 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+ *123 original repositories · 41 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
  
  *[All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -162,6 +162,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 | [antropy](https://github.com/docxology/antropy) | Configurable entropy and complexity methods for native multidimensional data, including HDSE, whole-observation inference, and reproducible synthetic studies; empirical replication and biological sample-size claims remain outside the demonstrated scope · [📄](../papers/2026_Antropy/) · [Zenodo](https://doi.org/10.5281/zenodo.23306200) | Python | 0 | 2026-10 |
 | [reason](https://github.com/docxology/reason) | Draft scientific review of Foundations of Reason 8.0 and Engineering of Reason 3.5, with a source-linked issue register and Python quotation, page-citation, numerical, and PDF-custody checks; open for author response | Python | 0 | 2026-10 |
+| [daf-okn](https://github.com/docxology/daf-okn) | Python package and CLI for Open Knowledge Network registry discovery, vault-to-graph export, graph analysis and visualization, and local RDF contribution packaging; packaging does not upload to the registry, and live endpoint coverage remains limited | Python | 0 | 2026-10 |
 
 ---
 
@@ -230,8 +231,8 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Education | 7 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook`, `AGEINT`, `OmniLatticeTextbook` |
 | Other | 6 | `cascadia`, `fuller-obsidian`, `service`, `flick`, `Digi-PPPiP`, `math4wisdom-superhuman-docs-archive` |
 | Research Practice | 9 | `line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register`, `blue_line`, `green_line`, `silver_line` |
-| **docxology subtotal** | **122** | |
-| **Grand Total** | **163** | |
+| **docxology subtotal** | **123** | |
+| **Grand Total** | **164** | |
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; GitHub reports the AII account as an **Organization** (observed 2026-10-06). See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 
 ---

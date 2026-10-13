@@ -262,3 +262,11 @@ def test_paper_cff_validation_rejects_stale_doi_roles_and_accepts_rendered_outpu
         cff.render_outputs(tmp_path / "papers")[cff_path], encoding="utf-8"
     )
     vr.validate_paper_citation_cff(tmp_path)
+
+
+def test_release_cli_refuses_prepayload_override(monkeypatch):
+    monkeypatch.setattr(sys, "argv", ["validate_repo.py", "--release", "--allow-dirty-prepayload-evidence"])
+    with pytest.raises(SystemExit):
+        vr.parse_args()
+    monkeypatch.setattr(sys, "argv", ["validate_repo.py"])
+    assert vr.parse_args().allow_dirty_prepayload_evidence is False

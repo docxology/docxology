@@ -1,6 +1,6 @@
 # Public-Source Reconciliation Report
 
-Generated: 2026-10-12T18:44:33.373924+00:00
+Generated: 2026-10-12T22:35:12.852395+00:00
 
 Snapshot: [`reports/public_source_snapshot_2026-10-12.json`](public_source_snapshot_2026-10-12.json)
 
@@ -12,7 +12,7 @@ This report compares curated local counts against public authority/source indexe
 | Curated bibliography vs PubMed exact author records | 222 | 8 | subset | PubMed only covers biomedical/indexed literature and is a strict subset of the curated bibliography. |
 | Curated bibliography vs Crossref ORCID DOI records | 222 | 15 | subset | Crossref captures DOI records attached to the ORCID; Zenodo, books, courses, and non-DOI works may be absent or represented elsewhere. |
 | Curated bibliography vs Zenodo ORCID-linked records | 222 | 161 | overlapping sets | Zenodo includes versioned records and software archives; the local bibliography normalizes selected works into one curated table. |
-| Catalogued docxology software vs GitHub public repository count | 122 | 233 | curated subset | SOFTWARE.md intentionally catalogs selected owned repositories; GitHub counts all public repositories including forks and uncatalogued experiments. |
+| Catalogued docxology software vs GitHub public repository count | 123 | 234 | curated subset | SOFTWARE.md intentionally catalogs selected owned repositories; GitHub counts all public repositories including forks and uncatalogued experiments. |
 | Catalogued AII contributions vs AII GitHub public repository count | 41 | 45 | curated subset | SOFTWARE.md lists AII repositories with docxology contributions, not every public AII repository. |
 
 ## Maintenance Use

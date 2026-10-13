@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T18:44:33.373924+00:00",
+  "generated_at": "2026-10-12T22:35:12.852395+00:00",
   "snapshot": "reports/public_source_snapshot_2026-10-12.json",
   "claims_count": 15,
   "comparisons": [
@@ -33,8 +33,8 @@
     },
     {
       "name": "Catalogued docxology software vs GitHub public repository count",
-      "local_value": 122,
-      "public_value": 233,
+      "local_value": 123,
+      "public_value": 234,
       "relationship": "curated subset",
       "interpretation": "SOFTWARE.md intentionally catalogs selected owned repositories; GitHub counts all public repositories including forks and uncatalogued experiments."
     },

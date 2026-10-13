@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "reviewed_at": "2026-10-12T18:42:51Z",
+  "reviewed_at": "2026-10-12T22:35:00Z",
   "reviews": [
     {
       "repository": "docxology/antropy",
@@ -21,6 +21,16 @@
       "reviewed_by": "Codex",
       "rationale": "Public draft scientific review and reproducible checking scripts; retain draft/open-for-response status and do not attribute the reviewed volumes to the reviewer.",
       "validation_scope": "Public README, repository metadata, and source layout reviewed; repository runtime verification not performed."
+    },
+    {
+      "repository": "docxology/daf-okn",
+      "source_commit": "aa211bfc8c386cb207b67f7990c21d81111afbd6",
+      "source_url": "https://github.com/docxology/daf-okn/blob/aa211bfc8c386cb207b67f7990c21d81111afbd6/README.md",
+      "source_sha256": "0c93b734f99a047f29a96429cb53b8d1b9dd368afc179e132001179aefdac0fa",
+      "decision": "catalogue",
+      "reviewed_by": "Codex",
+      "rationale": "Public standalone Python graph tooling for Open Knowledge Network discovery and local contribution preparation; retain limited live-endpoint verification and no automatic registry upload. No public GitHub release or archival DOI was observed; catalogue as software without a bibliography row.",
+      "validation_scope": "Commit-pinned public README, anonymous repository metadata and releases API reviewed; repository runtime tests and live OKN endpoints not exercised."
     }
   ]
 }

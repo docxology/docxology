@@ -13,7 +13,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 def test_agent_index_is_current_and_has_stable_routes():
     path = REPO_ROOT / "data" / "agent-index.json"
     payload = json.loads(path.read_text(encoding="utf-8"))
-    assert payload["schema_version"] == "1.5"
+    assert payload["schema_version"] == "1.6"
     # Every datasets entry must reference a schema that exists in the registry
     # (guards the VisualArtwork/VideoObject dangling-reference regression).
     schema_names = set(payload["schemas"])
@@ -36,6 +36,9 @@ def test_agent_index_is_current_and_has_stable_routes():
         payload["schemas"]
     )
     assert payload["datasets"]["artworks_index"]["schema"] == "ArtworkIndex"
+    assert payload["datasets"]["scholar_readiness"]["schema"] == "ScholarReadiness"
+    assert payload["dataset_hashes"]["scholar_readiness"]
+    assert payload["schemas"]["ScholarReadiness"]["fields"]["indexing_verified"] == "false"
     assert payload["datasets"]["scholar_verification_receipt"]["schema"] == "ScholarVerificationReceipt"
     assert payload["schema_examples"]["ScholarVerificationReceipt"]["direct"] is True
     assert payload["schema_examples"]["ArtworkIndex"]

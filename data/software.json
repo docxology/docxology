@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-12T21:06:00Z",
+  "generated_at": "2026-10-12T22:38:01Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 163,
+  "count": 164,
   "repositories": [
     {
       "name": "template",
@@ -1462,6 +1462,18 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Draft scientific review of Foundations of Reason 8.0 and Engineering of Reason 3.5, with a source-linked issue register and Python quotation, page-citation, numerical, and PDF-custody checks; open for author response",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-10",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "daf-okn",
+      "url": "https://github.com/docxology/daf-okn",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Python package and CLI for Open Knowledge Network registry discovery, vault-to-graph export, graph analysis and visualization, and local RDF contribution packaging; packaging does not upload to the registry, and live endpoint coverage remains limited",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-10",

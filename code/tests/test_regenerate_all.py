@@ -99,3 +99,29 @@ def test_regeneration_failure_stops_before_another_pass(tmp_path):
 def test_regeneration_pass_bound_is_enforced(passes):
     with pytest.raises(ValueError, match="between 1 and 4"):
         regenerate_all.run_regeneration_passes(passes=passes, steps=())
+
+
+@pytest.mark.parametrize("allow", [False, True])
+def test_regeneration_forwards_prepayload_mode_only_to_explicit_validator(monkeypatch, allow):
+    from contextlib import nullcontext
+    argv = ["regenerate_all.py", "--validate"]
+    if allow:
+        argv.append("--allow-dirty-prepayload-evidence")
+    monkeypatch.setattr(sys, "argv", argv)
+    monkeypatch.setattr(regenerate_all, "validate_generation_plan", lambda: None)
+    monkeypatch.setattr(regenerate_all, "_regeneration_lock", lambda root: nullcontext(17))
+    writer_options = []
+    monkeypatch.setattr(regenerate_all, "_run_regeneration_passes_locked", lambda **kwargs: (writer_options.append(kwargs) or (0, 0)))
+    commands = []
+    monkeypatch.setattr(regenerate_all.subprocess, "run", lambda command, **kwargs: commands.append(command))
+    assert regenerate_all.main() == 0
+    assert "allow_dirty_prepayload_evidence" not in writer_options[0]
+    expected = [sys.executable, "code/orchestrators/validate_repo.py"]
+    assert commands == [expected + (["--allow-dirty-prepayload-evidence"] if allow else [])]
+
+
+def test_regeneration_prepayload_override_requires_validation(monkeypatch):
+    monkeypatch.setattr(sys, "argv", ["regenerate_all.py", "--allow-dirty-prepayload-evidence"])
+    monkeypatch.setattr(regenerate_all, "validate_generation_plan", lambda: pytest.fail("invalid mode ran pipeline"))
+    with pytest.raises(SystemExit):
+        regenerate_all.main()

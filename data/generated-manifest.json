@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T18:56:37Z",
+  "generated_at": "2026-10-12T23:07:59Z",
   "artifacts": [
     {
       "name": "Paper folder doc regeneration",
@@ -41,6 +41,8 @@
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "data/work-identifiers.json",
+        "data/work-authors.json",
+        "code/src/author_entities.py",
         "data/current-counts.json",
         "papers/*/README.md",
         "papers/*/AGENTS.md",
@@ -465,6 +467,9 @@
       "sources": [
         "data/works.json",
         "data/publishing-status.json",
+        "data/work-authors.json",
+        "code/src/author_entities.py",
+        "code/src/citation_metadata.py",
         "bibliography.bib",
         "papers/paper_metadata.json",
         "papers/*/metadata.json",
@@ -484,6 +489,24 @@
         "code/src/build_stamp.py"
       ],
       "command": "python3 code/orchestrators/build_work_pages.py"
+    },
+    {
+      "name": "Scholar prerequisite audit",
+      "outputs": [
+        "data/scholar-readiness.json",
+        "reports/scholar_readiness.md"
+      ],
+      "sources": [
+        "data/works.json",
+        "works/*.html",
+        "papers/*/metadata.json",
+        "papers/*/full_text.md",
+        "papers/*/*.[pP][dD][fF]",
+        "code/src/scholar_readiness.py",
+        "code/src/citation_metadata.py",
+        "code/src/paper_artifacts.py"
+      ],
+      "command": "uv run python3 code/orchestrators/build_scholar_readiness.py"
     },
     {
       "name": "Work authors",

@@ -69,6 +69,9 @@ criteria, and dependencies. Re-review this file before each public release.
   YouTube refreshes failed canonical metadata checks, so both channel caches
   were preserved. The `antropy` and `reason` catalog entries have source-backed
   reviews in [the repository review](reports/repository_catalog_review_2026-10-12.json).
+  The subsequent freshness issue #47 identified `daf-okn`; its pinned public
+  source review supports a software-only addition with limited live endpoint
+  verification. The snapshot and inventory now include that observation.
   The synthetic overview’s referenced GitHub repository returns 404 to an
   anonymous read; its public Zenodo PDF and source archive remain available.
 - Deliverable: refresh ORCID, Crossref, Zenodo, PubMed, Europe PMC, GitHub, Scholar, organizational, teaching, art, and software evidence; review `data/coverage-exceptions.json`
@@ -182,6 +185,9 @@ criteria, and dependencies. Re-review this file before each public release.
 - Scholar follow-up: preserve permanent URLs and the artifact ceiling while
   planning a hash-bound PDF placement strategy for the same-directory
   requirement.
+  The [generated prerequisite audit](reports/scholar_readiness.md) now binds
+  per-work PDF sizes and placement to source hashes; the bounded citation
+  review tool makes future enrichment repeatable.
   See [scholar-inclusion.md](docs/seo/scholar-inclusion.md). Valid citation tags
   do not close PDF eligibility or actual Scholar indexing.
 - Access: the owner's signed-in Search Console property was available on

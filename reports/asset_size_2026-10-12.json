@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-12T21:48:15Z",
+  "generated_at": "2026-10-12T23:04:12Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
-  "asset_count": 112,
+  "asset_count": 113,
   "budget_exceptions": {
     "publications.html": {
       "budget_bytes": 600000,
@@ -10,7 +10,7 @@
     }
   },
   "warnings": 0,
-  "total_bytes": 16924109,
+  "total_bytes": 17315872,
   "largest": [
     {
       "path": "data/videos.json",
@@ -60,7 +60,16 @@
     {
       "path": "data/publications-ld.json",
       "kind": "json-data",
-      "bytes": 452778,
+      "bytes": 452730,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "data/scholar-readiness.json",
+      "kind": "json-data",
+      "bytes": 381089,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -69,7 +78,7 @@
     {
       "path": "resume/resume.pdf",
       "kind": "resume-export",
-      "bytes": 375992,
+      "bytes": 376595,
       "baseline_budget_bytes": 5000000,
       "budget_bytes": 5000000,
       "budget_exception": null,
@@ -78,7 +87,7 @@
     {
       "path": "publications.html",
       "kind": "html",
-      "bytes": 351229,
+      "bytes": 351181,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 600000,
       "budget_exception": {
@@ -91,7 +100,7 @@
     {
       "path": "data/resume.json",
       "kind": "json-data",
-      "bytes": 337754,
+      "bytes": 338315,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -100,7 +109,7 @@
     {
       "path": "data/github-repositories.json",
       "kind": "json-data",
-      "bytes": 325123,
+      "bytes": 326184,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -127,7 +136,7 @@
     {
       "path": "repositories.html",
       "kind": "html",
-      "bytes": 232982,
+      "bytes": 233792,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,
@@ -136,7 +145,7 @@
     {
       "path": "software.html",
       "kind": "html",
-      "bytes": 227609,
+      "bytes": 229048,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,
@@ -145,7 +154,7 @@
     {
       "path": "updates.html",
       "kind": "html",
-      "bytes": 197508,
+      "bytes": 198945,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,
@@ -182,15 +191,6 @@
       "path": "data/work-authors.json",
       "kind": "json-data",
       "bytes": 166938,
-      "baseline_budget_bytes": 4000000,
-      "budget_bytes": 4000000,
-      "budget_exception": null,
-      "ok": true
-    },
-    {
-      "path": "data/software-ld.json",
-      "kind": "json-data",
-      "bytes": 144548,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,

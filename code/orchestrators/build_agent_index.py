@@ -35,6 +35,7 @@ DATASET_PATHS = {
     "organizations": "data/organizations.json",
     "resume": "data/resume.json",
     "work_enrichment": "data/work-enrichment.json",
+    "scholar_readiness": "data/scholar-readiness.json",
     "catalog": "data/catalog.json",
     "reconciliation": "data/reconciliation.json",
     "reproducibility": "data/reproducibility.json",
@@ -394,6 +395,12 @@ SCHEMAS = {
             "variants": "object; named CV variant section selections",
         },
     },
+    "ScholarReadiness": {
+        "type": "object",
+        "description": "Offline Scholar prerequisites; never an indexing or inclusion attestation.",
+        "required": ["schema_version", "evidence_kind", "works_sha256", "network_checked", "indexing_verified", "summary", "works"],
+        "fields": {"schema_version": "1.0", "network_checked": "false", "indexing_verified": "false", "summary": "local blockers only", "works": "per-work source hashes, citation tags, selected PDF size/placement, and unverified requirements"},
+    },
     "WorkEnrichment": {
         "type": "object",
         "description": "Abstracts and keywords extracted from paper folders, keyed to Work citation identifiers.",
@@ -479,6 +486,7 @@ def payload() -> dict:
     people = load_json("data/people.json")
     organizations = load_json("data/organizations.json")
     work_enrichment = load_json("data/work-enrichment.json")
+    scholar_readiness = load_json("data/scholar-readiness.json")
     catalog = load_json("data/catalog.json")
     reconciliation = load_json("data/reconciliation.json")
     reproducibility = load_json("data/reproducibility.json")
@@ -489,7 +497,7 @@ def payload() -> dict:
     dataset_hashes = {key: sha256(REPO_ROOT / path) for key, path in DATASET_PATHS.items() if (REPO_ROOT / path).is_file()}
     dataset_hashes["current_counts"] = sha256(COUNTS)
     return {
-        "schema_version": "1.5",
+        "schema_version": "1.6",
         "generated_at": current.get("generated_at"),
         "canonical_origin": "https://danielarifriedman.com/",
         "canonical_sources": {
@@ -569,6 +577,7 @@ def payload() -> dict:
             "people": {"path": "/data/people.json", "count": len(people.get("people", [])), "schema": "Person"},
             "organizations": {"path": "/data/organizations.json", "count": len(organizations.get("organizations", [])), "schema": "Organization"},
             "resume": {"path": "/data/resume.json", "count": None, "schema": "ResumeData"},
+            "scholar_readiness": {"path": "/data/scholar-readiness.json", "count": scholar_readiness.get("summary", {}).get("works"), "schema": "ScholarReadiness"},
             "work_enrichment": {"path": "/data/work-enrichment.json", "count": work_enrichment.get("count"), "schema": "WorkEnrichment"},
             "catalog": {"path": "/data/catalog.json", "count": len(catalog.get("dataset", [])), "schema": "DataCatalog"},
             "reconciliation": {"path": "/data/reconciliation.json", "count": len(reconciliation.get("comparisons", [])), "schema": "ReconciliationReport"},
@@ -585,7 +594,7 @@ def payload() -> dict:
             {"id": "live-site", "path": latest_report("live_site_verification_*.json", "reports/live_site_verification_2026-05-15.json"), "format": "application/json", "schema": "GeneratedReport", "freshness_field": "generated_at"},
         ],
         "schemas": SCHEMAS,
-        "schema_registry_version": "1.5",
+        "schema_registry_version": "1.6",
         "schema_examples": {
             "Work": works.get("works", [])[:1],
             "WorkIdentifierRegistry": {
@@ -601,6 +610,7 @@ def payload() -> dict:
             "Repository": repositories.get("repositories", [])[:1],
             "ClaimWithEvidence": claims.get("claims", [])[:1],
             "ScholarVerificationReceipt": scholar_receipt,
+            "ScholarReadiness": {**{key: value for key, value in scholar_readiness.items() if key != "works"}, "works": scholar_readiness.get("works", [])[:1]},
             "SearchResult": search.get("items", [])[:1],
             "CoverageException": coverage.get("exceptions", [])[:1],
             "RepositoryClassification": classification.get("repositories", [])[:1],

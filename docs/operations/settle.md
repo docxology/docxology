@@ -115,6 +115,22 @@ Which tier to reach for:
    python3 code/orchestrators/settle.py --tier release --skip-commit --push --pr "Title"
    ```
 
+## Pre-commit source snapshots
+
+A source refresh may update a tracked dated public-source snapshot before its
+payload lands. The full payload-landing battery uses
+`validate_repo.py --allow-dirty-prepayload-evidence` for this phase only. The
+Pages no-write check permits exactly the existing narrow exception: a dated
+public-source snapshot whose `source_commit` is current HEAD and whose recorded
+worktree was dirty. A clean deployed-SHA snapshot, a wrong commit, malformed
+receipt, or other mutable release evidence still fails.
+
+For an explicit pre-commit regeneration check, use
+`regenerate_all.py --validate --allow-dirty-prepayload-evidence`. Default
+validation, CI, skip-commit pushes, post-landing confirmation, and release
+validation remain strict; the exception is forbidden with `--release`. This
+mode writes no evidence assertions and does not make a candidate release-ready.
+
 ## Commit chain
 
 After the battery passes (and unless `--dry-run` or `--skip-commit`), the

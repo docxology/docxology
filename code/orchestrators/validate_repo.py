@@ -110,12 +110,15 @@ def run_resume_check() -> None:
     )
 
 
-def generation_check_command(step) -> list[str]:
+def generation_check_command(step, *, allow_dirty_prepayload_evidence: bool = False) -> list[str]:
     """The no-write command for one generation step."""
     if step.script == "build_resume.py":
         # ReportLab is pinned for byte-identical PDFs; see run_resume_check.
         return ["uv", "run", "python3", "code/orchestrators/build_resume.py", "--check"]
-    return [sys.executable, f"code/orchestrators/{step.script}", *step.check_args]
+    command = [sys.executable, f"code/orchestrators/{step.script}", *step.check_args]
+    if allow_dirty_prepayload_evidence and step.script == "build_pages_artifact.py":
+        command.append("--allow-dirty-prepayload-evidence")
+    return command
 
 
 def check_worker_count() -> int:
@@ -145,19 +148,19 @@ def first_check_failure(results: list[tuple[object, int, str]]) -> tuple[object,
     return None
 
 
-def run_local_generation_checks() -> None:
+def run_local_generation_checks(*, allow_dirty_prepayload_evidence: bool = False) -> None:
     """Run the mechanically paired no-write checks for every local writer."""
     validate_generation_plan()
     workers = check_worker_count()
     steps = list(LOCAL_GENERATION_STEPS)
     if workers == 1:
         for step in steps:
-            run(generation_check_command(step))
+            run(generation_check_command(step, allow_dirty_prepayload_evidence=allow_dirty_prepayload_evidence))
         return
 
     def _run(step) -> tuple[object, int, str]:
         completed = subprocess.run(
-            generation_check_command(step),
+            generation_check_command(step, allow_dirty_prepayload_evidence=allow_dirty_prepayload_evidence),
             cwd=REPO_ROOT,
             capture_output=True,
             text=True,
@@ -442,7 +445,14 @@ def parse_args() -> argparse.Namespace:
         default=30,
         help="Maximum evidence/attestation age for --release (default: 30).",
     )
-    return parser.parse_args()
+    parser.add_argument(
+        "--allow-dirty-prepayload-evidence", action="store_true",
+        help="Allow only current HEAD-bound dirty public-source snapshots in no-write Pages checks before payload landing; forbidden with --release.",
+    )
+    args = parser.parse_args()
+    if args.release and args.allow_dirty_prepayload_evidence:
+        parser.error("--allow-dirty-prepayload-evidence is forbidden with --release")
+    return args
 
 
 def _strict_reports_enabled(cli_value: bool) -> bool:
@@ -549,10 +559,13 @@ def validate_release_evidence(args: argparse.Namespace) -> None:
     print("Release evidence validation completed (fresh reports and deployed-SHA attestation verified)")
 
 
-def run_standard_validation(*, strict_reports: bool) -> None:
+def run_standard_validation(*, strict_reports: bool, allow_dirty_prepayload_evidence: bool = False) -> None:
     """Validate the committed source layer and its deterministic cache inputs."""
     run([sys.executable, "code/orchestrators/validate_manuscript.py"])
-    run_local_generation_checks()
+    if allow_dirty_prepayload_evidence:
+        run_local_generation_checks(allow_dirty_prepayload_evidence=True)
+    else:
+        run_local_generation_checks()
     run([sys.executable, "code/orchestrators/build_github_inventory.py", "--check"])
     run([sys.executable, "code/orchestrators/sync_paired_publications.py", "--check"])
     run([sys.executable, "code/orchestrators/audit_publication_skills.py", "--check"])
@@ -655,7 +668,10 @@ def main() -> None:
         run(live_site_check_args(release=True))
         validate_release_evidence(args)
     else:
-        run_standard_validation(strict_reports=strict_reports)
+        if args.allow_dirty_prepayload_evidence:
+            run_standard_validation(strict_reports=strict_reports, allow_dirty_prepayload_evidence=True)
+        else:
+            run_standard_validation(strict_reports=strict_reports)
     print("Repository validation completed")
 
 

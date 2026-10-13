@@ -4,7 +4,9 @@ Each publication retains its bibliography DOI and permanent `works/{citation_key
 URL. Distinct template manuscripts retain separate identities even when they
 share a tooling release. Generated work pages expose title, ordered authors,
 citation DOI, date, and the selected primary PDF in HTML citation tags, with
-matching work identity in JSON-LD. They are linked from the static publication
+matching work identity in JSON-LD. Person/organization author types come from
+verified DOI-matching registration records; a comma-free display name alone
+does not establish an organization. Unverified literal names remain untyped. They are linked from the static publication
 browse interface and included according to the sitemap policy.
 
 `build_work_pages.py` reads reviewed `citation_metadata` from paper metadata
@@ -40,10 +42,44 @@ all ten records, completing enrichment of the 32 Crossref-backed paper folders
 (including 29 journal articles). These counts describe the dated source passes,
 not a permanent catalog total.
 
+## Repeatable review and local audit
+
+`uv run python3 code/orchestrators/review_citation_metadata.py --output /private/tmp/citation-review.json`
+fetches bounded, sequential Crossref proposals without applying metadata. Use
+`--citation-key <permanent-key>` repeatedly to narrow a pass. DOI and normalized
+title must both match; malformed records, title/DOI mismatches, and HTTP errors
+remain explicit non-adoptable results. No source identity or Scholar metrics are
+written. Review each proposed field against its linked registration record before
+adopting `citation_metadata` in the eligible paper's `metadata.json`, then regenerate.
+Unchanged semantic metadata preserves its earlier adoption timestamp. A fresh
+request timestamp in the proposal is distinct from that reviewed adoption date.
+Report destinations inside the repository must be under `reports/`; symlinks and
+hardlinks are rejected. External destinations need an existing real parent
+(`/private/tmp` on macOS).
+
+`uv run python3 code/orchestrators/build_scholar_readiness.py` builds the
+[per-work audit](../../reports/scholar_readiness.md) and
+[JSON dataset](../../data/scholar-readiness.json). The ordered generation plan
+and standard validation run its exact `--check` mode. It records real head tags,
+selected public PDF hashes, size, and directory placement. The audit uses a
+conservative decimal 5,000,000-byte interpretation of Google's 5 MB ceiling.
+It preserves source PDFs and permanent URLs. Missing local PDFs are observations
+about this archive, not claims that no external full text exists.
+
+Searchable PDF text, scholarly suitability, complete author-written abstracts
+or full text, and actual Scholar indexing remain explicitly unverified. The
+catalog includes software, courses, books, and other material; a local blocker
+count is not an estimate of how many scholarly articles Google should index.
+The dataset is discoverable through the website data catalog and agent schema
+registry. It does not replace authenticated Search Console or Scholar review.
+
 ## Verification and follow-up
 
 Run `uv run python3 code/orchestrators/regenerate_all.py --validate` and the
-repository tests after citation-source changes. Run
+repository tests after citation-source changes. If a tracked public-source
+snapshot was refreshed before payload landing, use the explicit narrow
+`--allow-dirty-prepayload-evidence` mode described in
+[settle.md](../operations/settle.md); ordinary clean and release checks stay strict. Run
 `uv run python3 code/orchestrators/gsc_followup_preflight.py --check` for local
 SEO and live hub readiness. A preflight success does not verify that unpublished
 PR content is live, that Google indexed a URL, or that Scholar merged versions.

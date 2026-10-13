@@ -34,6 +34,7 @@ from export_bibliography import row_to_work, source_paths  # noqa: E402
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 from docxology_tools.site_facts import generated_date, generated_month_year  # noqa: E402
 from docxology_tools.work_identifiers import load_registry  # noqa: E402
+from docxology_tools.author_entities import author_entity as source_author_entity, load_author_records, verified_author_types  # noqa: E402
 
 PUBLICATIONS_HTML = REPO_ROOT / "publications.html"
 PUBLICATIONS_LD_JSON = REPO_ROOT / "data" / "publications-ld.json"
@@ -90,22 +91,16 @@ def is_principal(display_name: str) -> bool:
     return family.strip() == "Friedman" and given.strip().startswith("Daniel")
 
 
-def author_entity(display_name: str) -> dict:
-    """One schema.org author from a "Family, Given" (or literal) display name."""
-    if is_principal(display_name):
-        return PRINCIPAL
-    if "," not in display_name:
-        return {"@type": "Organization", "name": display_name}
-    family, _, given = display_name.partition(",")
-    return {"@type": "Person", "name": f"{given.strip()} {family.strip()}".strip()}
+def author_entity(display_name: str, source_type: str | None = None) -> dict:
+    """One ordered author with reviewed type or explicit unknown identity."""
+    return source_author_entity(display_name, PRINCIPAL, source_type)
 
 
-def _author_block(authors: list[str] | None = None) -> list[dict]:
-    # Co-authors come from the bibliography's Authors column; where none were
-    # confirmed, the principal alone is asserted, as before.
+def _author_block(authors: list[str] | None = None, author_types: dict | None = None) -> list[dict]:
     if not authors:
         return [PRINCIPAL]
-    return [author_entity(name) for name in authors]
+    types = author_types or {}
+    return [author_entity(name, types.get(name)) for name in authors]
 
 
 def source_works_by_num(rows: list[BiblioRow]) -> dict[int, dict]:
@@ -127,14 +122,14 @@ def source_works_by_num(rows: list[BiblioRow]) -> dict[int, dict]:
     return by_num
 
 
-def main_entity_object(row: BiblioRow, same_as: str, work: dict | None = None) -> dict:
+def main_entity_object(row: BiblioRow, same_as: str, work: dict | None = None, author_types: dict | None = None) -> dict:
     pub_name = row.venue if row.venue else "Unknown"
     obj: dict = {
         "@type": schema_type_for_row(row.typ),
         "name": row.title,
         "headline": row.title,
         "datePublished": row.year,
-        "author": _author_block(row.authors),
+        "author": _author_block(row.authors, author_types),
         "publisher": {"@type": "Organization", "name": pub_name},
         "keywords": row.domain,
     }
@@ -192,7 +187,8 @@ def load_source_template() -> str:
 def build_collection_page(rows: list[BiblioRow], works_by_num: dict[int, dict] | None = None) -> dict:
     count = len(rows)
     works_by_num = works_by_num if works_by_num is not None else source_works_by_num(rows)
-    me = [main_entity_object(r, canonical_link_url(r.link_cell, r.venue), works_by_num.get(r.num)) for r in rows]
+    author_records = load_author_records(REPO_ROOT)
+    me = [main_entity_object(r, canonical_link_url(r.link_cell, r.venue), works_by_num.get(r.num), verified_author_types(works_by_num.get(r.num) or {}, author_records)) for r in rows]
     return {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
