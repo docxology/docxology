@@ -4,6 +4,12 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-10-13
 
+- **Backlog cleanup:** removed completed intake, metadata, artwork, and
+  performance-repair history from active task descriptions. Remaining work
+  now has minor/medium/major effort guidance and explicit access dependencies;
+  recurring maintenance stays visible, and the preserved Scholar PDF placement
+  gap is marked deferred.
+
 - **Citation evidence boundaries:** the shared head parser ignores inert
   templates and body lookalikes, closes permanently at head/body boundaries,
   and preserves browser-visible first attribute values. The Scholar audit
