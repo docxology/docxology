@@ -2,13 +2,13 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `ef3befe793c08df09ba2c6a52fa81a35fe2e7694`
+Source commit: `fba3039fc4db13252f43f3d1c8298a18251ed843`
 
 ## Disposition summary
 
 | Status | Items |
 |---|---:|
-| Applied | 198 |
+| Applied | 200 |
 | Deferred | 1 |
 | Rejected | 0 |
 
@@ -17,14 +17,14 @@ Source commit: `ef3befe793c08df09ba2c6a52fa81a35fe2e7694`
 | `ambiguous_doi_change` | 64 | 0 | 0 |
 | `biographical_claim_change` | 10 | 0 | 0 |
 | `public_source_observation` | 8 | 0 | 0 |
-| `repository_classification` | 115 | 0 | 0 |
+| `repository_classification` | 117 | 0 | 0 |
 | `scholar_metric_change` | 1 | 0 | 0 |
 | `zenodo_candidate` | 0 | 1 | 0 |
 
 ## Evidence inputs
 
 - `biographical_claim_decisions`: `data/biographical-claim-decisions.json` (`903cc0eb20dc926e887267998f5f686b69df88dacbccf99845e19e5f8073be3d`)
-- `claims_ledger`: `data/claims.json` (`fcd7a157c6446f6fcc881a98ef53d0d6f1dce535e542e4af92a21954e01c7139`)
+- `claims_ledger`: `data/claims.json` (`8ac0edda18bd66fad926c49c0b5a744987707872650d39f7f71a805d493c2401`)
 - `doi_role_review`: `reports/doi_role_reconciliation_2026-08-25.json` (`8813014df946b8fd6b1777de95d16e57300fba56b32f3da59819bf8c5d8a01a6`)
 - `paired_publication_decisions`: `data/paired-publication-decisions.json` (`e8a855347eca329fc66b1ac479d47009a8ea2b90e45af3619faa5484f801867a`)
 - `paired_publications`: `reports/paired_publications_2026-10-12.json` (`7815903f1978789ecfffae1c1bd6d8c52d01d881cb6968d442bfdd76a95d36ba`)
@@ -32,7 +32,7 @@ Source commit: `ef3befe793c08df09ba2c6a52fa81a35fe2e7694`
 - `public_source_inventory`: `reports/public_source_inventory_2026-10-12.json` (`af25b00028508d114cfd3635f2376fb06b58c400bfe8fa9b78d22ef686d50ee8`)
 - `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`c8982f5743a1955d3afa25d93f39e5e8eeacda72036c0065df48bc74ee2b93b5`)
 - `public_source_snapshot`: `reports/public_source_snapshot_2026-10-12.json` (`53f3f5125f57bafabacffc713a1ef42ed19385e17650fdcb6655eeebf74c6af0`)
-- `repository_classification`: `data/repository-classification.json` (`fbd8cea27ecbf33f3070e329595b95a084add08093557ff1e6c0fe56c6493fa8`)
+- `repository_classification`: `data/repository-classification.json` (`2d6e4ec2fab823a626fba060fbc18298da59f98cf2a99e532ae383f4cf930623`)
 - `scholar_snapshot`: `data/scholar-snapshot.json` (`cd143d9d0e4a33a75cb32da5a4b63281c1b1fd09916a231731701b4ff842eb81`)
 - `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759`)
 
@@ -130,6 +130,7 @@ Source commit: `ef3befe793c08df09ba2c6a52fa81a35fe2e7694`
 - **`repository_classification` — repository:ActiveInferenceInstitute/pymdp**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/AI-ConductorBlindSpot**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/ATLAS**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
+- **`repository_classification` — repository:docxology/ActiveACO**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/ActiveInference.jl**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/Active_Inference_for_Fun**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/AgentLaboratory**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
@@ -217,6 +218,7 @@ Source commit: `ef3befe793c08df09ba2c6a52fa81a35fe2e7694`
 - **`repository_classification` — repository:docxology/observer-patch-holography**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/oh-my-hermes**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/oh-my-pi**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
+- **`repository_classification` — repository:docxology/okn-registry**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/osc-geo-h3grid-srv**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/osc-geo-h3loader-cli**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/paws-on-mcp**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.

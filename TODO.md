@@ -18,7 +18,7 @@ criteria, and dependencies. Re-review this file before each public release.
 | --- | --- | --- |
 | Minor | Search Console cleanup and selected URL inspections; optional public CurioDAO description; retry unavailable source queries | Signed-in owner access, public source availability |
 | Medium | Named visual review and revision-bound release attestation; fresh authenticated Scholar observation; current-candidate Lighthouse review; Pages growth/retention consumer migration; Scholar pilot eligibility/projection review | Reviewer/access, measured candidate evidence, reviewed source/projection contract |
-| Major | Three licensed full-text acquisitions, two depositor authorship reconciliations, and originating-paper corrections; manuscript format inspection and editorial review; managed-profile security scan and finding disposition | Rights holders, depositors/authors, editorial decisions, required scan runtime |
+| Major | Deferred licensed full-text acquisition and originating-paper corrections; manuscript format inspection and editorial review; managed-profile security scan and finding disposition | Rights holders, depositors/authors, editorial decisions, required scan runtime |
 
 The Scholar same-directory PDF gap now has a [budget-safe pilot proposal](reports/scholar_pdf_placement_proposal_2026-10-13.md)
 preserving permanent URLs and the artifact limit. No files have been migrated;
@@ -107,28 +107,28 @@ Recurring checks below are operating obligations, not unfinished feature work.
 - Trigger: next bibliography pass, or any per-paper review
 - Deliverable: resolve the remaining source-access, registry, and originating-
   publication discrepancies with recorded evidence and explicit decisions
-- Acquire licensed full text for **#63** `2023_ToComment`,
+- Full-text acquisition is deferred. Retain the explicit source gaps for **#63** `2023_ToComment`,
   `2024_PaleolithicRockstars`, and `2026_FocusedAttentionMeditation`, then
   extract and summarize from those sources. Direct publisher/registry checks
   found no accessible licensed full text. Unsupported seed content has been
   cleared; the meditation chapter retains a labeled publisher synopsis.
-- Remaining registry/document author discrepancies: **#33** Digital Twins
-  (registry creator Cordes versus the document's organization/representative
-  list), and **#29** Aligning AIO to SUMO (a registered concept-record creator
-  does not appear on the title-page author list). Keep the registered creators
-  pending depositor reconciliation; neither observation establishes a safe
-  authorship change. Prior decisions remain in
-  [the metadata review](reports/bibliography_metadata_review_2026-10-02.json).
-- Content inconsistencies that the grounded summaries surfaced inside the
-  papers themselves (for the author): CognitiveIntegrityFramework Part 2
-  corpus size (950 vs 1,475), ConvergenceAnalysisGradient Discussion vs Table
-  1, MarkdownDecisionProcess GPT-2 Medium vs Small, PopulationSearch graph
-  counts, TemplateApproachReproducible "fourteen" vs "eleven", and
-  DomainLanguageSpecifying six vs seven dimensions; DopamineForaging's
-  reversed 113/160 transcript group assignments; FEPLean's aspirational vs
-  runtime claims; Symergetics' 953 vs 757 tests; and MappingWilliamBlake's
-  156 vs 162 works. Resolve in the originating publications, then update
-  the archived versions and summaries with source evidence.
+- Authorship questions for **#29** SUMO and **#33** Digital Twins are resolved:
+  retain Scott Ryan Maybell in the registered SUMO creators and R.J. Cordes
+  as Digital Twins first author. The representative list is not inferred to
+  be a byline. Current source-backed decisions are recorded in
+  [the consistency review](reports/publication_consistency_review_2026-10-13.json);
+  the earlier review remains historical evidence.
+- Current-source review and corrections for all ten publication questions
+  are recorded in [the consistency review](reports/publication_consistency_review_2026-10-13.json).
+  Remaining evidence questions: MarkdownDecisionProcess checkpoint,
+  participant and statistical provenance; PopulationSearch's table-specific
+  graph/run denominator; DopamineForaging's reversed 113/160 transcript
+  assignments; and MappingWilliamBlake's historical 156/162 run membership.
+  Current compiler/test/source corrections do not establish broader scientific
+  validity or revise archived PDFs. Any corrected archival publication needs
+  a separately reviewed revision, followed by source-backed archive and summary
+  updates. Native, installed and final-release acceptance remain governed by
+  their originating repositories.
 - Acceptance: each item has a recorded keep/change decision;
   `test_bibliography_authority.py` stays green
 - Dependencies: `papers/*/full_text.md`, `data/work-authors.json`,

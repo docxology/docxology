@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-10-12T22:38:01+00:00`
+Generated: `2026-10-13T22:25:43+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -73,20 +73,20 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### GitHub Inventory
 
-- total: `279`
-- docxology: `234`
+- total: `281`
+- docxology: `236`
 - ActiveInferenceInstitute: `45`
 - curated: `164`
-- uncataloged: `115`
-- forks: `104`
+- uncataloged: `117`
+- forks: `106`
 - archived: `5`
-- public: `279`
+- public: `281`
 - private: `0`
-- recently_updated: `219`
+- recently_updated: `221`
 - primary_total: `175`
 - primary_docxology: `132`
 - primary_ActiveInferenceInstitute: `43`
-- fork_docxology: `102`
+- fork_docxology: `104`
 - fork_ActiveInferenceInstitute: `2`
 
 ### Public Source Snapshot

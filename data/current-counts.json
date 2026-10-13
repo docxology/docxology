@@ -26,18 +26,18 @@
       "ActiveInferenceInstitute": 45,
       "archived": 5,
       "curated": 164,
-      "docxology": 234,
+      "docxology": 236,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 102,
-      "forks": 104,
+      "fork_docxology": 104,
+      "forks": 106,
       "primary_ActiveInferenceInstitute": 43,
       "primary_docxology": 132,
       "primary_total": 175,
       "private": 0,
-      "public": 279,
-      "recently_updated": 219,
-      "total": 279,
-      "uncataloged": 115
+      "public": 281,
+      "recently_updated": 221,
+      "total": 281,
+      "uncataloged": 117
     },
     "paired_publication_decisions": {
       "decision": "accept",
@@ -83,7 +83,7 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-10-12T22:38:01+00:00",
+  "generated_at": "2026-10-13T22:25:43+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

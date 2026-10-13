@@ -4,6 +4,12 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-10-13
 
+- **Publication consistency:** retained verified SUMO and Digital Twins
+  authorship, kept three full-text gaps deferred, and recorded current-source
+  decisions for ten publication questions with originating repository and
+  commit evidence. Historical experiment, native-execution and archival
+  publication boundaries remain explicit in the dated review.
+
 - **Verified manuscript toolchain:** aligned crossref with the released 0.3.26
   build for Pandoc 3.12.1, required an exact build-version token, and added
   regressions for mismatched and prefix-collision versions. The real offline

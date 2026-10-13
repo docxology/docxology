@@ -1063,6 +1063,26 @@
       "note": "Public fork created 2026-10-06 with no catalog role; excluded by the standing fork policy, not by an individual review.",
       "github_id": 1407667303,
       "github_node_id": "R_kgDOU-dMZw"
+    },
+    {
+      "full_name": "docxology/ActiveACO",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-13",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork retained in the complete inventory; standing policy excludes it from original-software promotion.",
+      "github_id": 1418065202,
+      "github_node_id": "R_kgDOVIX1Mg"
+    },
+    {
+      "full_name": "docxology/okn-registry",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-13",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork retained in the complete inventory; standing policy excludes it from original-software promotion.",
+      "github_id": 1416284345,
+      "github_node_id": "R_kgDOVGrIuQ"
     }
   ]
 }

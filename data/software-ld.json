@@ -22,7 +22,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-08-18T16:48:46Z",
-            "dateModified": "2026-10-12T22:28:42Z",
+            "dateModified": "2026-10-13T21:52:40Z",
             "keywords": "agents-md, ai-agents, claude-code, computational-research, cursor, github-template, latex, multi-project, ollama, pandoc, pdf-generation, project-template, provenance, pytest, python, reproducible-research, research-template, steganography, uv, zenodo",
             "sameAs": "https://doi.org/10.5281/zenodo.20584820"
         },
@@ -71,7 +71,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-05-16T17:45:28Z",
-            "dateModified": "2026-10-12T21:39:42Z",
+            "dateModified": "2026-10-13T02:23:02Z",
             "keywords": "agents, ai-agents, automation, claude, code-analysis, coding-agent, developer-tools, llm, mcp, mcp-server, model-context-protocol, multi-agent, orchestration, personal-ai, python, rag, security, static-analysis, uv, zero-mock",
             "sameAs": "https://doi.org/10.5281/zenodo.21750800"
         },
@@ -822,7 +822,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2025-04-24T21:53:54Z",
-            "dateModified": "2026-09-01T21:03:45Z",
+            "dateModified": "2026-10-13T22:07:54Z",
             "keywords": "document-analysis, markdown, markov-decision-process, networkx, pandoc, pomdp, python, reinforcement-learning"
         },
         {
@@ -947,7 +947,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-09-09T15:07:52Z",
-            "dateModified": "2026-09-05T22:59:40Z",
+            "dateModified": "2026-10-13T22:15:29Z",
             "keywords": "buckminster-fuller, exact-arithmetic, geometry, mathematics, polyhedra, python, quadray, symbolic-computation, synergetics"
         },
         {
@@ -1110,7 +1110,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-09-15T17:49:35Z",
-            "dateModified": "2026-09-07T07:09:27Z",
+            "dateModified": "2026-10-13T22:07:55Z",
             "keywords": "archives, corpus, digital-humanities, literature, python, sqlite, text-analysis, visualization, william-blake",
             "sameAs": "https://doi.org/10.5281/zenodo.21047573"
         },
@@ -1831,7 +1831,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-01-27T23:23:02Z",
-            "dateModified": "2026-09-30T22:44:14Z"
+            "dateModified": "2026-10-13T22:22:15Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -2031,7 +2031,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2023-04-02T19:45:34Z",
-            "dateModified": "2026-10-12T21:16:15Z",
+            "dateModified": "2026-10-13T13:23:41Z",
             "keywords": "active, active-inference, active-inference-notation, inference",
             "sameAs": "https://doi.org/10.5281/zenodo.19600217"
         },
@@ -2048,7 +2048,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-02-17T17:46:31Z",
-            "dateModified": "2026-10-12T21:05:38Z",
+            "dateModified": "2026-10-13T18:17:00Z",
             "keywords": "active-inference, expected-free-energy, free-energy-principle, generative-model, pomdp, python"
         },
         {
@@ -2141,7 +2141,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2025-05-13T14:17:56Z",
-            "dateModified": "2026-10-12T21:16:13Z",
+            "dateModified": "2026-10-13T02:18:23Z",
             "keywords": "active-inference, agent-workflows, bayesian-inference, domain-modeling, geospatial, h3, monorepo, python, reproducible-research, spatial-analysis, uv"
         },
         {
@@ -2277,7 +2277,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-04-14T13:33:35Z",
-            "dateModified": "2026-10-12T20:02:25Z",
+            "dateModified": "2026-10-13T22:07:55Z",
             "keywords": "active-inference, bayesian-mechanics, formal-verification, free-energy-principle, information-geometry, lean4, theorem-proving",
             "sameAs": "https://doi.org/10.5281/zenodo.19699233"
         },
