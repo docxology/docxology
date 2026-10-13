@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T22:38:01Z",
+  "generated_at": "2026-10-13T22:25:44Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -74,13 +74,13 @@
       "caveat": "The public-source snapshot records this account's type as Organization; the repository count is read from /users/ActiveInferenceInstitute, which serves Organization accounts as well as Users. Local software catalog tracks 41 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-10-12T22:36:39Z",
+      "generated_at": "2026-10-13T22:24:59Z",
       "source": "GitHub REST API /users/{owner}/repos",
-      "total": 279,
-      "public": 279,
+      "total": 281,
+      "public": 281,
       "primary_total": 175,
-      "forks": 104,
-      "docxology": 234,
+      "forks": 106,
+      "docxology": 236,
       "ActiveInferenceInstitute": 45
     }
   },
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "24a1d0f1fe7169f6d24a7fb261659db48accac379be597afb40aec31aca08078",
+      "sha256": "89f25913b5c7059f813eb320d1f30ea19dade55fca01deccd5fb2d70514d5a55",
       "files": [
         {
           "path": "resume/source.json",
@@ -103,7 +103,7 @@
         {
           "path": "data/software.json",
           "bytes": 82162,
-          "sha256": "cb8810dc1dc749f0c71d492e2beaf0a93a1d1df1242407cf7aaac65ba3033236"
+          "sha256": "508595ae69ca29db59697b0986cd55c0ea74e4dffef78a24dddbba7a9e83f680"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 13114,
-          "sha256": "fcd7a157c6446f6fcc881a98ef53d0d6f1dce535e542e4af92a21954e01c7139"
+          "sha256": "8ac0edda18bd66fad926c49c0b5a744987707872650d39f7f71a805d493c2401"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 326184,
-          "sha256": "7e17123bee5c1ef62844b91ac7b545f3fd70b48fe484c31c41f3fdcf84f544f1"
+          "bytes": 327882,
+          "sha256": "64a43feaf8e84e51a678455e8a67d0997b9e8a2219793599d32034f40e83f151"
         }
       ]
     },
@@ -9835,7 +9835,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-10-12T22:38:01+00:00",
+      "checked_at": "2026-10-13T22:25:43+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9850,7 +9850,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-10-12T22:38:01+00:00",
+      "checked_at": "2026-10-13T22:25:43+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

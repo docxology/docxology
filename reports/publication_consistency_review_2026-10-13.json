@@ -1,0 +1,235 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-10-13",
+  "scope": "Authorship resolution and upstream publication consistency review; archival release bytes preserved.",
+  "authorship_decisions": [
+    {
+      "work_key": "Friedman2024AligningActiveInferenceOntology029",
+      "num": 29,
+      "doi": "10.5281/zenodo.11459322",
+      "registered_authors": [
+        {
+          "family": "Douglass",
+          "given": "David S.",
+          "orcid": "0000-0001-7894-8019"
+        },
+        {
+          "family": "Pease",
+          "given": "Adam",
+          "orcid": "0000-0001-9772-1266"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        },
+        {
+          "family": "Balbuena",
+          "given": "Jessica Angeli",
+          "orcid": "0000-0003-2741-4476"
+        },
+        {
+          "family": "Chokhalingam",
+          "given": "Rhea",
+          "orcid": "0009-0007-2061-3022"
+        },
+        {
+          "family": "Hurtado",
+          "given": "Ana Magdalena",
+          "orcid": "0000-0003-4064-1876"
+        },
+        {
+          "family": "Iennaco",
+          "given": "Maria Luiza",
+          "orcid": "0000-0002-5407-4852"
+        },
+        {
+          "family": "Knight",
+          "given": "V. Bleu",
+          "orcid": "0000-0002-9894-1989"
+        },
+        {
+          "family": "Maybell",
+          "given": "Scott Ryan",
+          "orcid": "0000-0003-1612-5505"
+        },
+        {
+          "family": "Rahmjoo",
+          "given": "Ali",
+          "orcid": "0000-0002-3244-7419"
+        },
+        {
+          "family": "Sayeg",
+          "given": "Paulo Duare Andrade",
+          "orcid": "0009-0006-0658-7684"
+        },
+        {
+          "family": "Smékal",
+          "given": "Jakub",
+          "orcid": "0000-0003-4989-4968"
+        },
+        {
+          "family": "Tickles",
+          "given": "Dean",
+          "orcid": "0000-0003-2213-0773"
+        },
+        {
+          "family": "Vyatkin",
+          "given": "Alex",
+          "orcid": "0000-0003-1306-4620"
+        }
+      ],
+      "decision": "retain_registered_authors",
+      "resolved_question": "Scott Ryan Maybell is an author; title-page omission does not justify removing the registered creator."
+    },
+    {
+      "work_key": "Friedman2024CommentsNationalDigitalTwins033",
+      "num": 33,
+      "doi": "10.5281/zenodo.13273681",
+      "registered_authors": [
+        {
+          "family": "Cordes",
+          "given": "RJ"
+        }
+      ],
+      "decision": "retain_registered_authors",
+      "resolved_question": "R.J. Cordes remains first author. The contributing-organizations/representatives list is not promoted to a byline without additional role evidence."
+    }
+  ],
+  "sumo_version_record": {
+    "url": "https://zenodo.org/records/11463326",
+    "datacite_url": "https://api.datacite.org/dois/10.5281/zenodo.11463326",
+    "response_sha256": "143613243ca3cd71ab8d7ac398a6ad46801e4d5943afe6e786b8b1f5b67ffa44",
+    "title": "Aligning Active Inference Ontology to SUMO",
+    "scott_maybell_present": true
+  },
+  "full_text_acquisition": {
+    "status": "deferred",
+    "folders": [
+      "2023_ToComment",
+      "2024_PaleolithicRockstars",
+      "2026_FocusedAttentionMeditation"
+    ],
+    "gaps_preserved": true
+  },
+  "publication_items": [
+    {
+      "id": 1,
+      "repository": "docxology/cognitive_integrity",
+      "status": "correction_under_hosted_verification",
+      "decision": "Distinguish integrated 1,475 samples / 5 families / 15 subcategories from legacy 950 samples / 4 families / 12 subcategories; retain protocol-specific measured denominators.",
+      "pull_request": "https://github.com/docxology/cognitive_integrity/pull/1",
+      "candidate_commit": "d443141b36f18e4b361a046068d8a7c26b77a526",
+      "verification_boundary": "Scientific claim and series gates pass locally and hosted. Computational CI remains blocked on cross-platform PNG comparison; original failure retained pending renderer diagnostics."
+    },
+    {
+      "id": 2,
+      "repository": "docxology/template_code_project",
+      "canonical_source": "docxology/template",
+      "status": "correction_under_verification",
+      "decision": "Qualify convergence and accuracy by termination status; replace monotonicity/uniform-convergence claims with unit-Hessian contraction conditions.",
+      "canonical_candidate_commit": "a97b5bc3201e0ccc6c02e73771600ce6bc705bb3",
+      "verification_boundary": "Current-source correction/review verified locally; canonical and mirror main publication pending. Historical output bytes are preserved; private fresh HTML renders exceeded the tracked output budget and require separate projection review."
+    },
+    {
+      "id": 3,
+      "repository": "docxology/markdown_decision_process",
+      "status": "merged",
+      "pull_request": "https://github.com/docxology/markdown_decision_process/pull/1",
+      "main_commit": "ec902bb5661b3741b2b802ab37ee4469d8369318",
+      "decision": "Model/checkpoint identity and reported experimental/study/statistical claims remain unverified pending provenance."
+    },
+    {
+      "id": 4,
+      "repository": "haailabs/ActiveACO",
+      "review_repository": "docxology/ActiveACO",
+      "status": "review_published",
+      "main_commit": "bdfc5ad5962bf0873e49cd7adcbdcff65d1a5b1e",
+      "decision": "Source history has different node/sample configurations; no table-specific run receipt establishes historical Table 1 denominator. Review is on authorized fork main; upstream is separately controlled."
+    },
+    {
+      "id": 5,
+      "repository": "docxology/template_template",
+      "canonical_source": "docxology/template",
+      "status": "correction_under_verification",
+      "decision": "Differentiate the comparison inventory from native template capabilities; avoid exhaustive current-market claims from a versioned matrix.",
+      "canonical_candidate_commit": "a97b5bc3201e0ccc6c02e73771600ce6bc705bb3",
+      "verification_boundary": "Current-source correction/review verified locally; canonical and mirror main publication pending. Historical output bytes are preserved; private fresh HTML renders exceeded the tracked output budget and require separate projection review."
+    },
+    {
+      "id": 6,
+      "repository": "docxology/template_methods_paper",
+      "canonical_source": "docxology/template",
+      "status": "current_source_consistent",
+      "decision": "Current Dimension enum and abstract/methods/setup consistently identify eight dimensions, including separate molar and mass concentration. Archived six/seven wording belongs to earlier source epoch.",
+      "canonical_candidate_commit": "a97b5bc3201e0ccc6c02e73771600ce6bc705bb3",
+      "verification_boundary": "Current-source correction/review verified locally; canonical and mirror main publication pending. Historical output bytes are preserved; private fresh HTML renders exceeded the tracked output budget and require separate projection review."
+    },
+    {
+      "id": 7,
+      "repository": null,
+      "status": "external_source_reconciliation_needed",
+      "decision": "Published Results and GO-enrichment paragraphs reverse 113/160 assignments. No originating GitHub repository is identified in the publication; SRA BioProject PRJNA277638 is raw-read access, not a correction authority. Preserve disputed assignments as unresolved."
+    },
+    {
+      "id": 8,
+      "repository": "ActiveInferenceInstitute/fep_formal",
+      "status": "merged_review",
+      "pull_request": "https://github.com/ActiveInferenceInstitute/fep_formal/pull/172",
+      "main_commit": "09b4b335de5914eac6a31df28af4329559f4e222",
+      "decision": "Current 168-topic sources distinguish canonical body compilation, semantic theorem-proxy disposition and broader scientific scope; no new native/full execution claim."
+    },
+    {
+      "id": 9,
+      "repository": "docxology/symergetics",
+      "status": "merged",
+      "pull_request": "https://github.com/docxology/symergetics/pull/1",
+      "decision": "Separate source definitions, collected cases, execution and coverage; bind inventory to source digest and reject excessive draw/export canvases before allocation.",
+      "main_commit": "f3588457fdb948c615d852483396aa6b2e129f53"
+    },
+    {
+      "id": 10,
+      "repository": "docxology/blake",
+      "status": "merged",
+      "pull_request": "https://github.com/docxology/blake/pull/1",
+      "main_commit": "445140f3dd3f4d22f9e2f2139ee52cf1e91ee3d3",
+      "decision": "Restrict diagnostics to saved-run membership with strict boolean modality and explicit missing/filtered/excluded IDs. Historical 156/162 attribution still requires original run artifacts."
+    }
+  ],
+  "boundaries": [
+    "This review does not replace historical publisher or repository release assets.",
+    "Compiler maturity and synthetic benchmark results do not establish broader scientific validity."
+  ],
+  "dopamine_primary_review": {
+    "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6205345/fullTextXML",
+    "source_sha256": "bf42aed00c75c62bf73daaf8d45d0365a145da41574d26e41724c8d5de498516",
+    "supplement_scope": [
+      "Document S1: Transparent Methods / Table S1",
+      "Data S1: pharmacology raw data related to Figure 3"
+    ],
+    "boundary": "Those supplement labels do not establish the disputed transcriptomic group assignment."
+  },
+  "github_inventory_review": {
+    "source": "GitHub REST API /users/{owner}/repos",
+    "observed_at": "2026-10-13T22:24:59Z",
+    "snapshot_sha256": "64a43feaf8e84e51a678455e8a67d0997b9e8a2219793599d32034f40e83f151",
+    "new_repositories": [
+      {
+        "full_name": "docxology/ActiveACO",
+        "github_id": 1418065202,
+        "github_node_id": "R_kgDOVIX1Mg",
+        "fork": true,
+        "decision": "standing_policy_fork_exclusion"
+      },
+      {
+        "full_name": "docxology/okn-registry",
+        "github_id": 1416284345,
+        "github_node_id": "R_kgDOVGrIuQ",
+        "fork": true,
+        "decision": "standing_policy_fork_exclusion"
+      }
+    ],
+    "removed_repositories": [],
+    "boundary": "Complete public inventory includes forks; the existing principal fork-exclusion policy does not promote them into the original-software catalog."
+  }
+}
