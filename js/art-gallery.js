@@ -118,7 +118,7 @@
       galleryLoaded = true;
       filtered = [...DATA];
       applyFilter();
-      // Sorting pays the one-time locale-collation setup; render in its own task.
+      // Keep sorting and rendering in separate startup tasks.
       await yieldToMain();
       renderGrid();
       if (document.getElementById('searchInput').value.trim()) await searchDescriptions();
@@ -334,6 +334,20 @@
   }
 
   // ── FILTER + SORT ──
+  const FIXED_ARTWORK_DATE = /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/;
+
+  function compareArtworkDates(first, second) {
+    const a = String(first || '');
+    const b = String(second || '');
+    // Flickr's fixed-width timestamps sort chronologically as ASCII. Avoid
+    // initializing locale collation on startup for this common format; retain
+    // the existing comparison for the other date shapes accepted by the index.
+    if ((!a || FIXED_ARTWORK_DATE.test(a)) && (!b || FIXED_ARTWORK_DATE.test(b))) {
+      return a < b ? -1 : a > b ? 1 : 0;
+    }
+    return a.localeCompare(b);
+  }
+
   function applyFilter() {
     visibleLimit = PAGE_SIZE;
     const q = document.getElementById('searchInput').value.trim().toLowerCase();
@@ -345,8 +359,8 @@
         (a.tags || []).some(t => String(t).toLowerCase().includes(q));
     });
     filtered.sort((a, b) => {
-      if (sort === 'newest') return String(b.date || '').localeCompare(String(a.date || ''));
-      if (sort === 'oldest') return String(a.date || '').localeCompare(String(b.date || ''));
+      if (sort === 'newest') return compareArtworkDates(b.date, a.date);
+      if (sort === 'oldest') return compareArtworkDates(a.date, b.date);
       if (sort === 'title') return String(a.title || '').localeCompare(String(b.title || ''));
       if (sort === 'views') return parseInt(b.views || 0) - parseInt(a.views || 0);
       return 0;

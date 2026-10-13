@@ -1,11 +1,14 @@
 """
 YouTube channel metadata fetcher using yt-dlp.
-Fetches video metadata across /videos, /streams, and /shorts tabs.
+Fetches published video metadata across /videos, /streams, and /shorts tabs.
+Explicit upcoming entries are outside the published catalog; missing dates on
+published items remain failures except for bounded exact short hydration.
 """
 from __future__ import annotations
 
 import json
 import logging
+import re
 import subprocess
 import tempfile
 from dataclasses import dataclass
@@ -22,6 +25,9 @@ TABS = [
     ("streams", "approximate"),
     ("shorts",  "approximate"),
 ]
+
+MAX_SHORT_DATE_HYDRATIONS = 20
+METADATA_TIMEOUT_SECONDS = 30
 
 FAST_TABS = [
     ("videos", "approximate"),
@@ -60,6 +66,7 @@ class TabFetchResult:
     mode: str
     videos: tuple[dict[str, Any], ...]
     failure: TabFetchFailure | None = None
+    absent: bool = False
 
     @property
     def complete(self) -> bool:
@@ -72,6 +79,7 @@ class TabFetchResult:
             "complete": self.complete,
             "video_count": len(self.videos),
             "failure": self.failure.as_dict() if self.failure else None,
+            "absent": self.absent,
         }
 
 
@@ -109,6 +117,10 @@ class ChannelFetchResult:
         }
 
 
+class OptionalTabAbsentError(RuntimeError):
+    """yt-dlp explicitly confirmed an absent optional YouTube shorts tab."""
+
+
 class IncompleteChannelFetchError(RuntimeError):
     """Raised when a legacy video-list caller requests an incomplete channel."""
 
@@ -133,8 +145,18 @@ def run_yt_dlp(
 
     mode='full'        → --dump-json --no-download (exact upload_date, slower)
     mode='approximate' → --flat-playlist + approximate_date extractor arg (fast)
+    mode='metadata'    → exact public video metadata, no media download, 30s cap
     """
-    if mode == "approximate":
+    if mode == "metadata":
+        if not re.fullmatch(r"https://www\.youtube\.com/watch\?v=[A-Za-z0-9_-]{11}", url):
+            raise ValueError("metadata hydration requires a canonical public YouTube video URL")
+        cmd = [
+            "yt-dlp", "--dump-json", "--no-download", "--no-playlist",
+            "--ignore-no-formats-error", "--retries", "0", "--extractor-retries", "0",
+            "--socket-timeout", "10", url,
+        ]
+        timeout = min(timeout, METADATA_TIMEOUT_SECONDS)
+    elif mode == "approximate":
         cmd = [
             "yt-dlp",
             "--flat-playlist",
@@ -151,11 +173,21 @@ def run_yt_dlp(
             "--no-download",
             url,
         ]
+    cmd[1:1] = ["--ignore-config", "--no-cache-dir"]
     logger.info("Running: %s", " ".join(cmd))
     result = executor(cmd, timeout)
     # yt-dlp may emit useful JSONL before reporting an unavailable item with
     # exit status 1.  That output is incomplete, so it must surface as a tab
     # failure rather than silently becoming a partial cache refresh.
+    if (
+        result.returncode == 1 and not result.stdout.strip()
+        and url.startswith("https://www.youtube.com/") and url.endswith("/shorts")
+        and re.fullmatch(
+            r"ERROR: \[youtube:tab\] [A-Za-z0-9_@-]+: This channel does not have a shorts tab\s*",
+            result.stderr,
+        )
+    ):
+        raise OptionalTabAbsentError("This channel does not have a shorts tab")
     if result.returncode != 0:
         raise RuntimeError(f"yt-dlp exited {result.returncode}: {result.stderr[:500]}")
     return result.stdout.splitlines()
@@ -239,7 +271,26 @@ def fetch_tab(
     raw_records = parse_jsonl(lines)
     videos: list[dict] = []
     invalid_records: list[int] = []
+    undated_shorts = [raw for raw in raw_records if raw.get("live_status") != "is_upcoming" and not raw.get("upload_date")]
+    if tab == "shorts" and mode == "approximate" and len(undated_shorts) > MAX_SHORT_DATE_HYDRATIONS:
+        raise ValueError(f"shorts: exact-date hydration limit {MAX_SHORT_DATE_HYDRATIONS} exceeded; preserve cache and review explicitly")
+    upcoming = 0
     for index, raw in enumerate(raw_records, start=1):
+        if raw.get("live_status") == "is_upcoming":
+            upcoming += 1
+            continue
+        if tab == "shorts" and mode == "approximate" and not raw.get("upload_date"):
+            video_id = raw.get("id")
+            if not isinstance(video_id, str) or not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id):
+                raise ValueError("shorts: undated record lacks a canonical video ID")
+            # Flat shorts omit publication dates; retrieve just metadata from
+            # the canonical public video rather than inventing a date.
+            exact = parse_jsonl(runner(f"https://www.youtube.com/watch?v={video_id}", "metadata"))
+            if len(exact) != 1 or exact[0].get("id") != video_id:
+                raise ValueError("shorts: exact-date hydration identity mismatch")
+            raw = exact[0]
+            if raw.get("live_status") == "is_upcoming":
+                raise ValueError("shorts: source publication state changed during hydration")
         rec = normalize_video(raw, channel_id)
         if rec is None:
             invalid_records.append(index)
@@ -252,6 +303,8 @@ def fetch_tab(
             f"{tab}: {len(invalid_records)} yt-dlp record(s) failed canonical video validation "
             f"(records {preview}{suffix})"
         )
+    if upcoming:
+        logger.info("  %s: excluded %d explicitly upcoming items from published catalog", tab, upcoming)
     logger.info("  %s: %d videos", tab, len(videos))
     return videos
 
@@ -276,6 +329,14 @@ def fetch_channel_result(
     for tab, mode in selected_tabs:
         try:
             videos = fetch_tab(channel_url, tab, channel_id, mode, runner=runner)
+        except OptionalTabAbsentError as e:
+            if tab == "shorts":
+                tab_results.append(TabFetchResult(tab=tab, mode=mode, videos=(), absent=True))
+                logger.info("  shorts: explicitly absent optional tab")
+                continue
+            logger.warning("Failed to fetch %s/%s: %s", channel_url, tab, e)
+            tab_results.append(TabFetchResult(tab=tab, mode=mode, videos=(), failure=TabFetchFailure(tab, mode, type(e).__name__, str(e))))
+            continue
         except Exception as e:
             logger.warning("Failed to fetch %s/%s: %s", channel_url, tab, e)
             tab_results.append(

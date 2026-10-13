@@ -17,12 +17,13 @@ criteria, and dependencies. Re-review this file before each public release.
 | Effort | Unfinished work | Main dependency |
 | --- | --- | --- |
 | Minor | Search Console cleanup and selected URL inspections; optional public CurioDAO description; retry unavailable source queries | Signed-in owner access, public source availability |
-| Medium | Named visual review and revision-bound release attestation; fresh authenticated Scholar observation; failed YouTube refresh diagnosis; retained Lighthouse blocking-time review; Pages growth/retention review | Reviewer/access, valid source responses, measured candidate evidence |
-| Major | Three licensed full-text acquisitions, two depositor authorship reconciliations, and originating-paper corrections; manuscript rendering/backend, license, output inspection and editorial review; managed-profile security scan and finding disposition | Rights holders, depositors/authors, editorial decisions, required scan runtime |
+| Medium | Named visual review and revision-bound release attestation; fresh authenticated Scholar observation; current-candidate Lighthouse review; Pages growth/retention consumer migration; Scholar pilot eligibility/projection review | Reviewer/access, measured candidate evidence, reviewed source/projection contract |
+| Major | Three licensed full-text acquisitions, two depositor authorship reconciliations, and originating-paper corrections; manuscript format inspection and editorial review; managed-profile security scan and finding disposition | Rights holders, depositors/authors, editorial decisions, required scan runtime |
 
-The Scholar same-directory PDF gap is **documented and deferred** under the
-approved permanent-URL and artifact-limit policy. A broader migration is not an
-active implementation task. Actual Scholar indexing remains unverified.
+The Scholar same-directory PDF gap now has a [budget-safe pilot proposal](reports/scholar_pdf_placement_proposal_2026-10-13.md)
+preserving permanent URLs and the artifact limit. No files have been migrated;
+eligibility review and a validated projection contract precede implementation.
+Actual Scholar indexing remains unverified.
 Recurring checks below are operating obligations, not unfinished feature work.
 
 ## P0 — Release and integrity
@@ -73,13 +74,15 @@ Recurring checks below are operating obligations, not unfinished feature work.
 - Priority: P1
 - Owner: RESEARCHER
 - Trigger: monthly, before a claim-sensitive release, or when the weekly `freshness.yml` run opens or comments on the "Public-source freshness drift detected" issue (the reviewed baseline `reports/public_source_snapshot_2026-10-07.json` resolved #44; a later drift opens a new issue, which is closed by hand once a reviewed refresh is the committed baseline)
-- Open work: retry unavailable Zenodo identity queries; review ResearchGate,
-  SciProfiles, and PhilPeople when their access restrictions permit; diagnose
-  failed YouTube canonical-metadata refreshes before replacing either cache.
+- Open work: review ResearchGate, SciProfiles, and PhilPeople when their access
+  restrictions permit; repeat source refreshes on their declared triggers.
   Refresh Scholar only after a direct authenticated observation. A live Flickr
   refresh needs its approved API-key workflow.
-- Latest read-only check (2026-10-13): no new GitHub releases found; Zenodo
-  queries timed out, so Zenodo freshness is unverified. Completed intake and
+- Latest check (2026-10-13): no new GitHub releases found; bounded newest-five
+  Zenodo identity queries recovered without a new recent-record delta (not a
+  full-history reconciliation). Both YouTube caches now have a complete reviewed
+  refresh, with exact new dates in [the source receipt](reports/youtube_refresh_review_2026-10-13.json).
+  Completed intake and
   pair decisions are recorded in [the source review](reports/public_source_review_2026-10-12.md)
   and [the repository review](reports/repository_catalog_review_2026-10-12.json).
 - Deliverable: refresh ORCID, Crossref, Zenodo, PubMed, Europe PMC, GitHub, Scholar, organizational, teaching, art, and software evidence; review `data/coverage-exceptions.json`
@@ -176,9 +179,9 @@ Recurring checks below are operating obligations, not unfinished feature work.
 - Deliverable: validate meta-policy limitations, CSP/URL/iframe/rel invariants, canonical and sitemap families, then record Search Console follow-up
 - Acceptance: no inline handlers/scripts or unsafe schemes; approved YouTube origin only; every public family has canonical, metadata, schema, and sitemap policy coverage
 - Dependencies: `seo_invariants.py`, `gsc_followup_preflight.py`, signed-in Search Console review
-- Deferred Scholar gap: keep permanent URLs and the artifact ceiling. The
-  same-directory PDF requirement is unresolved under that policy; no archive
-  duplication or URL migration is authorized by this backlog item. Metadata
+- Scholar planning: keep permanent URLs and the artifact ceiling. Review the
+  [measured pilot proposal](reports/scholar_pdf_placement_proposal_2026-10-13.md)
+  before any same-directory web projection; no copies have been applied. Metadata
   checks and the [prerequisite audit](reports/scholar_readiness.md) are implemented.
   Content/PDF eligibility and actual indexing still require separate review;
   see [scholar-inclusion.md](docs/seo/scholar-inclusion.md).
@@ -246,12 +249,13 @@ Recurring checks below are operating obligations, not unfinished feature work.
 - Priority: P2
 - Owner: RESEARCHER / MAINTAINER
 - Trigger: before any claim that the repository-methods draft is rendered, reviewed, or publication-ready
-- Deliverable: choose and pin a rendering backend with declared outputs; resolve manuscript licensing; render the draft and inspect its figures and cross-references; obtain editorial review
+- Deliverable: inspect the requested rendered formats and their cross-references; obtain editorial and human visual review before publication
 - Acceptance: a declared render command produces output whose figures and references have been inspected, changed bibliography entries pass a real-parser syntax check outside the structural gate, and a named editorial reviewer's decision is recorded; until then `validate_manuscript.py` is reported only as structural source validation
 - Dependencies: `docs/manuscript/config.yaml`, `code/orchestrators/validate_manuscript.py`, [MANUSCRIPT_STATUS.md](docs/manuscript/MANUSCRIPT_STATUS.md)
-- Open work: rendering-backend choice, declared outputs, licensing,
-  rendered-output inspection, and editorial review. The existing bibliography
-  already passed real-parser checks; repeat those checks when entries change.
+- Open work: complete format inspection and named editorial/human approval.
+  The pinned render command, real-parser checks, and CC BY 4.0 manuscript license
+  are declared in [the manuscript guide](docs/manuscript/README.md); repeat
+  verification whenever sources or rendering tools change.
 
 
 ### SEC-002 — Re-run the managed-profile deep security scan

@@ -1,0 +1,1056 @@
+{
+  "complete": true,
+  "all_new_dates_exact": true,
+  "requested_new_ids": 58,
+  "validated": 58,
+  "requests": 58,
+  "elapsed_seconds": 158.62,
+  "failure": null,
+  "refined_dates": [
+    {
+      "channel": "personal",
+      "id": "Wkn_NwzKGLs",
+      "from": "20260714",
+      "to": "20260712"
+    },
+    {
+      "channel": "personal",
+      "id": "CHSfk7AkWkk",
+      "from": "20260814",
+      "to": "20260803"
+    },
+    {
+      "channel": "personal",
+      "id": "_NLBFXnXLKo",
+      "from": "20260814",
+      "to": "20260728"
+    },
+    {
+      "channel": "institute",
+      "id": "AwYVTQDHkt8",
+      "from": "20260714",
+      "to": "20260623"
+    },
+    {
+      "channel": "institute",
+      "id": "FnYCaCkah4U",
+      "from": "20260714",
+      "to": "20260710"
+    },
+    {
+      "channel": "institute",
+      "id": "FtGnkRJwk6U",
+      "from": "20260714",
+      "to": "20260703"
+    },
+    {
+      "channel": "institute",
+      "id": "MjeQeWeyYhE",
+      "from": "20260714",
+      "to": "20260630"
+    },
+    {
+      "channel": "institute",
+      "id": "V46B4Xy1PeQ",
+      "from": "20260714",
+      "to": "20260707"
+    },
+    {
+      "channel": "institute",
+      "id": "j9RaN7bkEFs",
+      "from": "20260714",
+      "to": "20260625"
+    },
+    {
+      "channel": "institute",
+      "id": "lMROkmtaUWo",
+      "from": "20260714",
+      "to": "20260626"
+    },
+    {
+      "channel": "institute",
+      "id": "nmu_ZVvv_-A",
+      "from": "20260714",
+      "to": "20260629"
+    },
+    {
+      "channel": "institute",
+      "id": "t2TgSuYH-K8",
+      "from": "20260714",
+      "to": "20260703"
+    },
+    {
+      "channel": "institute",
+      "id": "0ooXvnoxWto",
+      "from": "20260814",
+      "to": "20260717"
+    },
+    {
+      "channel": "institute",
+      "id": "1B8L0Fq8NYY",
+      "from": "20260814",
+      "to": "20260811"
+    },
+    {
+      "channel": "institute",
+      "id": "6XjeJMWqCx0",
+      "from": "20260814",
+      "to": "20260804"
+    },
+    {
+      "channel": "institute",
+      "id": "BvCPqNNUfNU",
+      "from": "20260814",
+      "to": "20260807"
+    },
+    {
+      "channel": "institute",
+      "id": "CBMDGH5JQzQ",
+      "from": "20260814",
+      "to": "20260728"
+    },
+    {
+      "channel": "institute",
+      "id": "IOuJgpK9M_A",
+      "from": "20260814",
+      "to": "20260730"
+    },
+    {
+      "channel": "institute",
+      "id": "PDI5oqODc2s",
+      "from": "20260814",
+      "to": "20260724"
+    },
+    {
+      "channel": "institute",
+      "id": "SBCl8DeaJYU",
+      "from": "20260814",
+      "to": "20260714"
+    },
+    {
+      "channel": "institute",
+      "id": "U9Z0TIeq1Fc",
+      "from": "20260814",
+      "to": "20260730"
+    },
+    {
+      "channel": "institute",
+      "id": "WdurCCUQ708",
+      "from": "20260814",
+      "to": "20260731"
+    },
+    {
+      "channel": "institute",
+      "id": "mXCOz4OOpho",
+      "from": "20260814",
+      "to": "20260728"
+    },
+    {
+      "channel": "institute",
+      "id": "vV6F0dyB45s",
+      "from": "20260814",
+      "to": "20260721"
+    },
+    {
+      "channel": "institute",
+      "id": "vjtYYbO9jCY",
+      "from": "20260814",
+      "to": "20260715"
+    },
+    {
+      "channel": "institute",
+      "id": "40oviQkOjbc",
+      "from": "20260914",
+      "to": "20260904"
+    },
+    {
+      "channel": "institute",
+      "id": "GdnjIgX0ZN8",
+      "from": "20260914",
+      "to": "20260908"
+    },
+    {
+      "channel": "institute",
+      "id": "RaT71q68sOc",
+      "from": "20260914",
+      "to": "20260814"
+    },
+    {
+      "channel": "institute",
+      "id": "WaH-PjeLs9I",
+      "from": "20260914",
+      "to": "20260821"
+    },
+    {
+      "channel": "institute",
+      "id": "jDXo1J9kIwY",
+      "from": "20260914",
+      "to": "20260825"
+    },
+    {
+      "channel": "institute",
+      "id": "jnOck__J8vk",
+      "from": "20260914",
+      "to": "20260828"
+    },
+    {
+      "channel": "institute",
+      "id": "oOd1XOpuNw8",
+      "from": "20260914",
+      "to": "20260818"
+    },
+    {
+      "channel": "institute",
+      "id": "sXyUfpGHXNI",
+      "from": "20260914",
+      "to": "20260901"
+    },
+    {
+      "channel": "institute",
+      "id": "teVT0s-rFbo",
+      "from": "20260914",
+      "to": "20260911"
+    },
+    {
+      "channel": "institute",
+      "id": "MJ30RKyTyMw",
+      "from": "20260923",
+      "to": "20260915"
+    },
+    {
+      "channel": "institute",
+      "id": "i5iMnVG17QU",
+      "from": "20260923",
+      "to": "20260918"
+    },
+    {
+      "channel": "institute",
+      "id": "qqW975To1rk",
+      "from": "20260923",
+      "to": "20260922"
+    },
+    {
+      "channel": "institute",
+      "id": "DVJKXtCx2Wo",
+      "from": "20260930",
+      "to": "20260925"
+    },
+    {
+      "channel": "institute",
+      "id": "GQYh03SoJ88",
+      "from": "20260930",
+      "to": "20260922"
+    },
+    {
+      "channel": "institute",
+      "id": "xnS3NFee7JY",
+      "from": "20261001",
+      "to": "20260930"
+    },
+    {
+      "channel": "institute",
+      "id": "WrixYErQot0",
+      "from": "20261002",
+      "to": "20261001"
+    },
+    {
+      "channel": "institute",
+      "id": "9cK0D8BnhOM",
+      "from": "20261003",
+      "to": "20261002"
+    },
+    {
+      "channel": "institute",
+      "id": "4zc0Eh23LmI",
+      "from": "20261008",
+      "to": "20261006"
+    },
+    {
+      "channel": "institute",
+      "id": "w4ecs7Tjvy0",
+      "from": "20261011",
+      "to": "20261009"
+    }
+  ],
+  "validated_sources": [
+    {
+      "channel": "personal",
+      "id": "lU5ArasOYLU",
+      "previous_upload_date": "20240115",
+      "exact_upload_date": "20240115",
+      "year": 2024,
+      "month": 1,
+      "day": 15,
+      "source_url": "https://www.youtube.com/watch?v=lU5ArasOYLU",
+      "source_channel_id": "UC_Yx_kyzXBdp1zT8bYFmbhQ",
+      "source_uploader_id": "@danielarifriedman",
+      "source_json_sha256": "f941465903e0db9664555e2e0a193a376936e120f8bcc454ea53da84da49a0ce"
+    },
+    {
+      "channel": "personal",
+      "id": "kLvJiKdtiN8",
+      "previous_upload_date": "20240923",
+      "exact_upload_date": "20240923",
+      "year": 2024,
+      "month": 9,
+      "day": 23,
+      "source_url": "https://www.youtube.com/watch?v=kLvJiKdtiN8",
+      "source_channel_id": "UC_Yx_kyzXBdp1zT8bYFmbhQ",
+      "source_uploader_id": "@danielarifriedman",
+      "source_json_sha256": "47fe64320d93cf92d0c8da1790c937a4e7e264f8e5da069ad0e7bd294cd73b64"
+    },
+    {
+      "channel": "personal",
+      "id": "iK-cIiXchdc",
+      "previous_upload_date": "20250323",
+      "exact_upload_date": "20250323",
+      "year": 2025,
+      "month": 3,
+      "day": 23,
+      "source_url": "https://www.youtube.com/watch?v=iK-cIiXchdc",
+      "source_channel_id": "UC_Yx_kyzXBdp1zT8bYFmbhQ",
+      "source_uploader_id": "@danielarifriedman",
+      "source_json_sha256": "d1df886760c8de942051eeeb7cb2b5137748440a2a353660fb09d5d9260ca0d4"
+    },
+    {
+      "channel": "personal",
+      "id": "klt6FlAo4qs",
+      "previous_upload_date": "20250323",
+      "exact_upload_date": "20250323",
+      "year": 2025,
+      "month": 3,
+      "day": 23,
+      "source_url": "https://www.youtube.com/watch?v=klt6FlAo4qs",
+      "source_channel_id": "UC_Yx_kyzXBdp1zT8bYFmbhQ",
+      "source_uploader_id": "@danielarifriedman",
+      "source_json_sha256": "ae13ab4405b2c25365c5ba890de6bfbf4562ff9acc485318e27b830721fa1c5e"
+    },
+    {
+      "channel": "personal",
+      "id": "AJnyTc9F0hA",
+      "previous_upload_date": "20250603",
+      "exact_upload_date": "20250603",
+      "year": 2025,
+      "month": 6,
+      "day": 3,
+      "source_url": "https://www.youtube.com/watch?v=AJnyTc9F0hA",
+      "source_channel_id": "UC_Yx_kyzXBdp1zT8bYFmbhQ",
+      "source_uploader_id": "@danielarifriedman",
+      "source_json_sha256": "5206580620ed718cdec3193e8f2c456e107cc1b4a50b07dcfa0dd710683e2a6e"
+    },
+    {
+      "channel": "personal",
+      "id": "uhVGDzW5tx8",
+      "previous_upload_date": "20250929",
+      "exact_upload_date": "20250929",
+      "year": 2025,
+      "month": 9,
+      "day": 29,
+      "source_url": "https://www.youtube.com/watch?v=uhVGDzW5tx8",
+      "source_channel_id": "UC_Yx_kyzXBdp1zT8bYFmbhQ",
+      "source_uploader_id": "@danielarifriedman",
+      "source_json_sha256": "69e9321a57581af2ecc157bc3c221569673d964d15d5f97e75cb538eb5994356"
+    },
+    {
+      "channel": "personal",
+      "id": "yCZ4mE0XPKs",
+      "previous_upload_date": "20250929",
+      "exact_upload_date": "20250929",
+      "year": 2025,
+      "month": 9,
+      "day": 29,
+      "source_url": "https://www.youtube.com/watch?v=yCZ4mE0XPKs",
+      "source_channel_id": "UC_Yx_kyzXBdp1zT8bYFmbhQ",
+      "source_uploader_id": "@danielarifriedman",
+      "source_json_sha256": "c5eee06d2d54bc09578713838451eec6216967e47517cc2784dde774f6a9f38e"
+    },
+    {
+      "channel": "personal",
+      "id": "aJunT6roKEI",
+      "previous_upload_date": "20251208",
+      "exact_upload_date": "20251208",
+      "year": 2025,
+      "month": 12,
+      "day": 8,
+      "source_url": "https://www.youtube.com/watch?v=aJunT6roKEI",
+      "source_channel_id": "UC_Yx_kyzXBdp1zT8bYFmbhQ",
+      "source_uploader_id": "@danielarifriedman",
+      "source_json_sha256": "1dbd00c3e3922361d54965adfe8b8c4bdeadab275779b11b55e16a9e8640254c"
+    },
+    {
+      "channel": "personal",
+      "id": "al-foyMLkJ0",
+      "previous_upload_date": "20251229",
+      "exact_upload_date": "20251229",
+      "year": 2025,
+      "month": 12,
+      "day": 29,
+      "source_url": "https://www.youtube.com/watch?v=al-foyMLkJ0",
+      "source_channel_id": "UC_Yx_kyzXBdp1zT8bYFmbhQ",
+      "source_uploader_id": "@danielarifriedman",
+      "source_json_sha256": "9151766f992d57305139419de5a4b873297242af2fd73d7fded1a7e5de538760"
+    },
+    {
+      "channel": "personal",
+      "id": "lab3gyadvnM",
+      "previous_upload_date": "20260124",
+      "exact_upload_date": "20260124",
+      "year": 2026,
+      "month": 1,
+      "day": 24,
+      "source_url": "https://www.youtube.com/watch?v=lab3gyadvnM",
+      "source_channel_id": "UC_Yx_kyzXBdp1zT8bYFmbhQ",
+      "source_uploader_id": "@danielarifriedman",
+      "source_json_sha256": "9a7af106a0b23e3c3082690dd6f8eda6331be286e9c55ae89ea309f9c0647a3c"
+    },
+    {
+      "channel": "personal",
+      "id": "Dd7xNmm3Kw8",
+      "previous_upload_date": "20260320",
+      "exact_upload_date": "20260320",
+      "year": 2026,
+      "month": 3,
+      "day": 20,
+      "source_url": "https://www.youtube.com/watch?v=Dd7xNmm3Kw8",
+      "source_channel_id": "UC_Yx_kyzXBdp1zT8bYFmbhQ",
+      "source_uploader_id": "@danielarifriedman",
+      "source_json_sha256": "0d8bbf1b13c8e59c9db69a34e80211307bb4454a0a7b959dca6922a471e2a229"
+    },
+    {
+      "channel": "personal",
+      "id": "kxqkyuMlb84",
+      "previous_upload_date": "20260325",
+      "exact_upload_date": "20260325",
+      "year": 2026,
+      "month": 3,
+      "day": 25,
+      "source_url": "https://www.youtube.com/watch?v=kxqkyuMlb84",
+      "source_channel_id": "UC_Yx_kyzXBdp1zT8bYFmbhQ",
+      "source_uploader_id": "@danielarifriedman",
+      "source_json_sha256": "a6f0c4598d2004f1de250a4c73e7032bebcfd6da84a20f9f859d797620a01905"
+    },
+    {
+      "channel": "personal",
+      "id": "Wkn_NwzKGLs",
+      "previous_upload_date": "20260714",
+      "exact_upload_date": "20260712",
+      "year": 2026,
+      "month": 7,
+      "day": 12,
+      "source_url": "https://www.youtube.com/watch?v=Wkn_NwzKGLs",
+      "source_channel_id": "UC_Yx_kyzXBdp1zT8bYFmbhQ",
+      "source_uploader_id": "@danielarifriedman",
+      "source_json_sha256": "89b929a08a6a8f948eed8446a1a7fae6429aadebd02762dd3e26d8c97a49f1d1"
+    },
+    {
+      "channel": "personal",
+      "id": "CHSfk7AkWkk",
+      "previous_upload_date": "20260814",
+      "exact_upload_date": "20260803",
+      "year": 2026,
+      "month": 8,
+      "day": 3,
+      "source_url": "https://www.youtube.com/watch?v=CHSfk7AkWkk",
+      "source_channel_id": "UC_Yx_kyzXBdp1zT8bYFmbhQ",
+      "source_uploader_id": "@danielarifriedman",
+      "source_json_sha256": "03c0487c58339970263bf8d041a38378fe24d99691f59a9eeabd8e659eda79cf"
+    },
+    {
+      "channel": "personal",
+      "id": "_NLBFXnXLKo",
+      "previous_upload_date": "20260814",
+      "exact_upload_date": "20260728",
+      "year": 2026,
+      "month": 7,
+      "day": 28,
+      "source_url": "https://www.youtube.com/watch?v=_NLBFXnXLKo",
+      "source_channel_id": "UC_Yx_kyzXBdp1zT8bYFmbhQ",
+      "source_uploader_id": "@danielarifriedman",
+      "source_json_sha256": "6fbead49fb11a74778b6339aa13ffa804557c6a2fdc32ea0804ac9b523b4bd3c"
+    },
+    {
+      "channel": "institute",
+      "id": "AwYVTQDHkt8",
+      "previous_upload_date": "20260714",
+      "exact_upload_date": "20260623",
+      "year": 2026,
+      "month": 6,
+      "day": 23,
+      "source_url": "https://www.youtube.com/watch?v=AwYVTQDHkt8",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "8b16142639b28d43d4ee78bf4c82b071e351d4aa359b76f3f8a9b05c6c592d56"
+    },
+    {
+      "channel": "institute",
+      "id": "FnYCaCkah4U",
+      "previous_upload_date": "20260714",
+      "exact_upload_date": "20260710",
+      "year": 2026,
+      "month": 7,
+      "day": 10,
+      "source_url": "https://www.youtube.com/watch?v=FnYCaCkah4U",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "f61868171dc0a4d6d9afef1c66627dc5f67ea3550234ae4a21b3a04112b8a732"
+    },
+    {
+      "channel": "institute",
+      "id": "FtGnkRJwk6U",
+      "previous_upload_date": "20260714",
+      "exact_upload_date": "20260703",
+      "year": 2026,
+      "month": 7,
+      "day": 3,
+      "source_url": "https://www.youtube.com/watch?v=FtGnkRJwk6U",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "11645ecdc0c06cc3bb163a50b25b23e1d3d79a8d38f094876e2a4f2436bf1c5f"
+    },
+    {
+      "channel": "institute",
+      "id": "MjeQeWeyYhE",
+      "previous_upload_date": "20260714",
+      "exact_upload_date": "20260630",
+      "year": 2026,
+      "month": 6,
+      "day": 30,
+      "source_url": "https://www.youtube.com/watch?v=MjeQeWeyYhE",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "8ade9181de43d1515a714283ea453e1f5f6eaa4e1e03559fc9361cbdacfa65c9"
+    },
+    {
+      "channel": "institute",
+      "id": "V46B4Xy1PeQ",
+      "previous_upload_date": "20260714",
+      "exact_upload_date": "20260707",
+      "year": 2026,
+      "month": 7,
+      "day": 7,
+      "source_url": "https://www.youtube.com/watch?v=V46B4Xy1PeQ",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "e3837e1376f205d072f2a0e5dae415b727e8be7a5d2caae8a50d8bace0b5def5"
+    },
+    {
+      "channel": "institute",
+      "id": "j9RaN7bkEFs",
+      "previous_upload_date": "20260714",
+      "exact_upload_date": "20260625",
+      "year": 2026,
+      "month": 6,
+      "day": 25,
+      "source_url": "https://www.youtube.com/watch?v=j9RaN7bkEFs",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "aba3f7fb0c21ff15add1a27ae47dbb0ea0e641ee2f2e8d1dae1cbe3d2bc455a4"
+    },
+    {
+      "channel": "institute",
+      "id": "lMROkmtaUWo",
+      "previous_upload_date": "20260714",
+      "exact_upload_date": "20260626",
+      "year": 2026,
+      "month": 6,
+      "day": 26,
+      "source_url": "https://www.youtube.com/watch?v=lMROkmtaUWo",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "53c9520c98e851284c4807dda2b30f6d2bca3209e06f5d82c8d349052391912c"
+    },
+    {
+      "channel": "institute",
+      "id": "nmu_ZVvv_-A",
+      "previous_upload_date": "20260714",
+      "exact_upload_date": "20260629",
+      "year": 2026,
+      "month": 6,
+      "day": 29,
+      "source_url": "https://www.youtube.com/watch?v=nmu_ZVvv_-A",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "b621e9526ba6b35a0338768d9f233cf53fdb1bafe6a8ee37b1cf439caf7e82ca"
+    },
+    {
+      "channel": "institute",
+      "id": "t2TgSuYH-K8",
+      "previous_upload_date": "20260714",
+      "exact_upload_date": "20260703",
+      "year": 2026,
+      "month": 7,
+      "day": 3,
+      "source_url": "https://www.youtube.com/watch?v=t2TgSuYH-K8",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "45dac401c6717c5315aa2d98c66c747a179eb842161bef7ce4cba7d2b6db1d2a"
+    },
+    {
+      "channel": "institute",
+      "id": "0ooXvnoxWto",
+      "previous_upload_date": "20260814",
+      "exact_upload_date": "20260717",
+      "year": 2026,
+      "month": 7,
+      "day": 17,
+      "source_url": "https://www.youtube.com/watch?v=0ooXvnoxWto",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "bc6fc1fee066de6ff357e7a8d966fd0a40823a3bda2a44e87142af9a7ac81380"
+    },
+    {
+      "channel": "institute",
+      "id": "1B8L0Fq8NYY",
+      "previous_upload_date": "20260814",
+      "exact_upload_date": "20260811",
+      "year": 2026,
+      "month": 8,
+      "day": 11,
+      "source_url": "https://www.youtube.com/watch?v=1B8L0Fq8NYY",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "091e1761e89c9fe8388ba83027a768c762bbb5127ef3d353e83f001adb2770c0"
+    },
+    {
+      "channel": "institute",
+      "id": "6XjeJMWqCx0",
+      "previous_upload_date": "20260814",
+      "exact_upload_date": "20260804",
+      "year": 2026,
+      "month": 8,
+      "day": 4,
+      "source_url": "https://www.youtube.com/watch?v=6XjeJMWqCx0",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "f422a7b3e7e40ccdcb02a256090adb1726f9a9a26b956db961b6b8edf465d619"
+    },
+    {
+      "channel": "institute",
+      "id": "BvCPqNNUfNU",
+      "previous_upload_date": "20260814",
+      "exact_upload_date": "20260807",
+      "year": 2026,
+      "month": 8,
+      "day": 7,
+      "source_url": "https://www.youtube.com/watch?v=BvCPqNNUfNU",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "058f5cb85a1fdbf311f1e4d92d84e3f235b975cede1d41dd2332dedaf395c441"
+    },
+    {
+      "channel": "institute",
+      "id": "CBMDGH5JQzQ",
+      "previous_upload_date": "20260814",
+      "exact_upload_date": "20260728",
+      "year": 2026,
+      "month": 7,
+      "day": 28,
+      "source_url": "https://www.youtube.com/watch?v=CBMDGH5JQzQ",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "bcea9a62f5eb67f4dd97065527320a7a58b8eeee7af111dbeb2622e83e544d30"
+    },
+    {
+      "channel": "institute",
+      "id": "IOuJgpK9M_A",
+      "previous_upload_date": "20260814",
+      "exact_upload_date": "20260730",
+      "year": 2026,
+      "month": 7,
+      "day": 30,
+      "source_url": "https://www.youtube.com/watch?v=IOuJgpK9M_A",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "29196c897d2671b93b0905c2f4d6b7fff81e52fc6dfc58129e70ee85c2c4353b"
+    },
+    {
+      "channel": "institute",
+      "id": "PDI5oqODc2s",
+      "previous_upload_date": "20260814",
+      "exact_upload_date": "20260724",
+      "year": 2026,
+      "month": 7,
+      "day": 24,
+      "source_url": "https://www.youtube.com/watch?v=PDI5oqODc2s",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "f6c2bbb4be9284b6a85c0a28519d470e4f869588e96043dfa198153f47016d03"
+    },
+    {
+      "channel": "institute",
+      "id": "SBCl8DeaJYU",
+      "previous_upload_date": "20260814",
+      "exact_upload_date": "20260714",
+      "year": 2026,
+      "month": 7,
+      "day": 14,
+      "source_url": "https://www.youtube.com/watch?v=SBCl8DeaJYU",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "e604da038bc61be88955c4e84ff009aecc26152748130dbcc439be8969acb71f"
+    },
+    {
+      "channel": "institute",
+      "id": "U9Z0TIeq1Fc",
+      "previous_upload_date": "20260814",
+      "exact_upload_date": "20260730",
+      "year": 2026,
+      "month": 7,
+      "day": 30,
+      "source_url": "https://www.youtube.com/watch?v=U9Z0TIeq1Fc",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "0cd9c4f00482f26f223c2cb11eb9a71d89c3cfde3da6798b6511fb9f6f911be9"
+    },
+    {
+      "channel": "institute",
+      "id": "WdurCCUQ708",
+      "previous_upload_date": "20260814",
+      "exact_upload_date": "20260731",
+      "year": 2026,
+      "month": 7,
+      "day": 31,
+      "source_url": "https://www.youtube.com/watch?v=WdurCCUQ708",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "714fd64d7ca3781ac9f17db1d4e4635a9283700845cfddd8f93dfabdaac16f59"
+    },
+    {
+      "channel": "institute",
+      "id": "mXCOz4OOpho",
+      "previous_upload_date": "20260814",
+      "exact_upload_date": "20260728",
+      "year": 2026,
+      "month": 7,
+      "day": 28,
+      "source_url": "https://www.youtube.com/watch?v=mXCOz4OOpho",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "5e9dc2290e3ac50cb69862855e84384d48527e38de603c63c7dfe4695ebcfbb4"
+    },
+    {
+      "channel": "institute",
+      "id": "vV6F0dyB45s",
+      "previous_upload_date": "20260814",
+      "exact_upload_date": "20260721",
+      "year": 2026,
+      "month": 7,
+      "day": 21,
+      "source_url": "https://www.youtube.com/watch?v=vV6F0dyB45s",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "fa88aec2c800e41e5757c2f34bb932445f85645e81adb537e236f710c950b1ab"
+    },
+    {
+      "channel": "institute",
+      "id": "vjtYYbO9jCY",
+      "previous_upload_date": "20260814",
+      "exact_upload_date": "20260715",
+      "year": 2026,
+      "month": 7,
+      "day": 15,
+      "source_url": "https://www.youtube.com/watch?v=vjtYYbO9jCY",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "ffba78ac8ccaefb307fb8b9eea08cf738ae1c6c57efb24170b07d3eefeb4b943"
+    },
+    {
+      "channel": "institute",
+      "id": "40oviQkOjbc",
+      "previous_upload_date": "20260914",
+      "exact_upload_date": "20260904",
+      "year": 2026,
+      "month": 9,
+      "day": 4,
+      "source_url": "https://www.youtube.com/watch?v=40oviQkOjbc",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "217e38e5d773806d0f69975d279f33716bbc7ab5b77ad777cc51ba061b092f29"
+    },
+    {
+      "channel": "institute",
+      "id": "GdnjIgX0ZN8",
+      "previous_upload_date": "20260914",
+      "exact_upload_date": "20260908",
+      "year": 2026,
+      "month": 9,
+      "day": 8,
+      "source_url": "https://www.youtube.com/watch?v=GdnjIgX0ZN8",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "94a52cfefc37311910c4862f8f920c6d64b2aa4c49937eba45fab27e12469a78"
+    },
+    {
+      "channel": "institute",
+      "id": "RaT71q68sOc",
+      "previous_upload_date": "20260914",
+      "exact_upload_date": "20260814",
+      "year": 2026,
+      "month": 8,
+      "day": 14,
+      "source_url": "https://www.youtube.com/watch?v=RaT71q68sOc",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "2918f430fe995096ad82a217585343065c6aeae26aae56eb143d589a045149e5"
+    },
+    {
+      "channel": "institute",
+      "id": "WaH-PjeLs9I",
+      "previous_upload_date": "20260914",
+      "exact_upload_date": "20260821",
+      "year": 2026,
+      "month": 8,
+      "day": 21,
+      "source_url": "https://www.youtube.com/watch?v=WaH-PjeLs9I",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "685e50fed1edf36d51f4020b350a2d7122db45ac2d699330b308feb5660da219"
+    },
+    {
+      "channel": "institute",
+      "id": "jDXo1J9kIwY",
+      "previous_upload_date": "20260914",
+      "exact_upload_date": "20260825",
+      "year": 2026,
+      "month": 8,
+      "day": 25,
+      "source_url": "https://www.youtube.com/watch?v=jDXo1J9kIwY",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "bf3d43c8adae69200457b6cf070dc8329e705a2c07c16a166910a31d5a1a8a51"
+    },
+    {
+      "channel": "institute",
+      "id": "jnOck__J8vk",
+      "previous_upload_date": "20260914",
+      "exact_upload_date": "20260828",
+      "year": 2026,
+      "month": 8,
+      "day": 28,
+      "source_url": "https://www.youtube.com/watch?v=jnOck__J8vk",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "7aaf2e21b1d4bad4f4f7ef5a3ac2e2f4cf286da9012c44259b91e865120f39a5"
+    },
+    {
+      "channel": "institute",
+      "id": "oOd1XOpuNw8",
+      "previous_upload_date": "20260914",
+      "exact_upload_date": "20260818",
+      "year": 2026,
+      "month": 8,
+      "day": 18,
+      "source_url": "https://www.youtube.com/watch?v=oOd1XOpuNw8",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "e9040ae7a527dee2fd6f2ab12a97046ad9c6ed9ea6a1cef814068fff525dfec2"
+    },
+    {
+      "channel": "institute",
+      "id": "sXyUfpGHXNI",
+      "previous_upload_date": "20260914",
+      "exact_upload_date": "20260901",
+      "year": 2026,
+      "month": 9,
+      "day": 1,
+      "source_url": "https://www.youtube.com/watch?v=sXyUfpGHXNI",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "876acb7c9913aa1fc19ae5a6687628286997272c8012e81d03a76ca3c25ea462"
+    },
+    {
+      "channel": "institute",
+      "id": "teVT0s-rFbo",
+      "previous_upload_date": "20260914",
+      "exact_upload_date": "20260911",
+      "year": 2026,
+      "month": 9,
+      "day": 11,
+      "source_url": "https://www.youtube.com/watch?v=teVT0s-rFbo",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "d5ddbc8eb01410a78f43b9efcc2aa6a519f84f70672fdb2f2c746c05558aefba"
+    },
+    {
+      "channel": "institute",
+      "id": "MJ30RKyTyMw",
+      "previous_upload_date": "20260923",
+      "exact_upload_date": "20260915",
+      "year": 2026,
+      "month": 9,
+      "day": 15,
+      "source_url": "https://www.youtube.com/watch?v=MJ30RKyTyMw",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "cfb6e0dbc89bd2e289a6f87e260a89f9bd37283418f180240be1b164e76f563e"
+    },
+    {
+      "channel": "institute",
+      "id": "i5iMnVG17QU",
+      "previous_upload_date": "20260923",
+      "exact_upload_date": "20260918",
+      "year": 2026,
+      "month": 9,
+      "day": 18,
+      "source_url": "https://www.youtube.com/watch?v=i5iMnVG17QU",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "69e33a872bf289e76a9c5eb08adff96e15758f963068767d73822f8598bcbd87"
+    },
+    {
+      "channel": "institute",
+      "id": "qqW975To1rk",
+      "previous_upload_date": "20260923",
+      "exact_upload_date": "20260922",
+      "year": 2026,
+      "month": 9,
+      "day": 22,
+      "source_url": "https://www.youtube.com/watch?v=qqW975To1rk",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "7f459aff6180cabe005be56e57f93d0423db791efd89b88b71f1a839d5ead68a"
+    },
+    {
+      "channel": "institute",
+      "id": "DVJKXtCx2Wo",
+      "previous_upload_date": "20260930",
+      "exact_upload_date": "20260925",
+      "year": 2026,
+      "month": 9,
+      "day": 25,
+      "source_url": "https://www.youtube.com/watch?v=DVJKXtCx2Wo",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "c98f61da506a9bd50c3db181247b1a35166fa1192196a92c1de2916607cb906f"
+    },
+    {
+      "channel": "institute",
+      "id": "GQYh03SoJ88",
+      "previous_upload_date": "20260930",
+      "exact_upload_date": "20260922",
+      "year": 2026,
+      "month": 9,
+      "day": 22,
+      "source_url": "https://www.youtube.com/watch?v=GQYh03SoJ88",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "87e4bb950be9f4f2156df7e1f4bf10865c81602a9562d785c90a5436d6f7b1d8"
+    },
+    {
+      "channel": "institute",
+      "id": "xnS3NFee7JY",
+      "previous_upload_date": "20261001",
+      "exact_upload_date": "20260930",
+      "year": 2026,
+      "month": 9,
+      "day": 30,
+      "source_url": "https://www.youtube.com/watch?v=xnS3NFee7JY",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "d0a1b379be92103456667ac57d84c3f8a7fee258ae70b3a4cbaf6e666a2da587"
+    },
+    {
+      "channel": "institute",
+      "id": "WrixYErQot0",
+      "previous_upload_date": "20261002",
+      "exact_upload_date": "20261001",
+      "year": 2026,
+      "month": 10,
+      "day": 1,
+      "source_url": "https://www.youtube.com/watch?v=WrixYErQot0",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "469c4cdb52cc66da08c41ffad9a68f0adec0b096e6c24c40d3e1af090813bc04"
+    },
+    {
+      "channel": "institute",
+      "id": "9cK0D8BnhOM",
+      "previous_upload_date": "20261003",
+      "exact_upload_date": "20261002",
+      "year": 2026,
+      "month": 10,
+      "day": 2,
+      "source_url": "https://www.youtube.com/watch?v=9cK0D8BnhOM",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "75c7447e4dc955e87496bcdc9af6cb5d27a4975b5d51ce350805aea0b22fa0b0"
+    },
+    {
+      "channel": "institute",
+      "id": "onxrJkX5xrY",
+      "previous_upload_date": "20261003",
+      "exact_upload_date": "20261003",
+      "year": 2026,
+      "month": 10,
+      "day": 3,
+      "source_url": "https://www.youtube.com/watch?v=onxrJkX5xrY",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "44b2c46174cedc16ceaee2bacae42444c39db37a3d723b05d25f7cc13622d29a"
+    },
+    {
+      "channel": "institute",
+      "id": "4zc0Eh23LmI",
+      "previous_upload_date": "20261008",
+      "exact_upload_date": "20261006",
+      "year": 2026,
+      "month": 10,
+      "day": 6,
+      "source_url": "https://www.youtube.com/watch?v=4zc0Eh23LmI",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "7429a0eb65253f4404fe371eebd473c14d65f27245fd7f687e66b10488439fb7"
+    },
+    {
+      "channel": "institute",
+      "id": "w4ecs7Tjvy0",
+      "previous_upload_date": "20261011",
+      "exact_upload_date": "20261009",
+      "year": 2026,
+      "month": 10,
+      "day": 9,
+      "source_url": "https://www.youtube.com/watch?v=w4ecs7Tjvy0",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "0650b3b81db2c7b6f8c1f577dd532c40238f78b450bc8f9c3a225066fdbda5c5"
+    },
+    {
+      "channel": "institute",
+      "id": "ULPPTRUvmg4",
+      "previous_upload_date": "20261013",
+      "exact_upload_date": "20261013",
+      "year": 2026,
+      "month": 10,
+      "day": 13,
+      "source_url": "https://www.youtube.com/watch?v=ULPPTRUvmg4",
+      "source_channel_id": "UCbPq2w41ZaJSWtpCq4BE6Dg",
+      "source_uploader_id": "@ActiveInference",
+      "source_json_sha256": "b74e4543538f0d15c65457fedf8a023f3bd19902efb6c05cff515999b0c6831e"
+    }
+  ],
+  "original_caches_unchanged": true,
+  "scratch_export_sha256": {
+    "personal": "0aa5231d9ac5211a7c3cc57284b48b5aa870f49b852780893a4663ed14108a98",
+    "institute": "13ee6de30e746e1de934d4c3b193b53a542f5e5c9eb1faeee33fc434bbfd4b23"
+  },
+  "limits": {
+    "max_requests": 60,
+    "total_seconds": 180,
+    "per_request_seconds": 30,
+    "retries": 0
+  },
+  "precision_policy": "All newly added dates exact only if complete; prior cached dates preserved without asserting their precision.",
+  "initial_review_receipt_sha256": "9bae76ce3492a4ee414e3eb7a761e4c21cd72df4242d1c0746c15ddb5ec41833",
+  "schema_version": "1.0",
+  "as_of": "2026-10-13",
+  "decision": "adopted after exact new-date and channel-identity review",
+  "public_cache_paths": {
+    "personal": "code/data/youtube_personal.json",
+    "institute": "code/data/youtube_institute.json"
+  },
+  "zenodo_followup": {
+    "method": "bounded newest-five public ORCID and exact-name queries",
+    "new_recent_records_found": false,
+    "full_history_reconciled": false
+  }
+}

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-13T16:10:11Z",
+  "generated_at": "2026-10-13T16:56:15Z",
   "scope": "All public HTML page families; complements, but does not replace, browser-based accessibility testing.",
-  "page_count": 2542,
-  "passing": 2542,
+  "page_count": 2600,
+  "passing": 2600,
   "results": [
     {
       "path": "404.html",
@@ -30305,6 +30305,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-0ooXvnoxWto.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-0pKxmZg5qXA.html",
       "ok": true,
       "checks": {
@@ -30531,6 +30556,31 @@
     },
     {
       "path": "videos/institute-15n6WN9jGrY.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-1B8L0Fq8NYY.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -31355,6 +31405,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-40oviQkOjbc.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-4IL6KtlCn_o.html",
       "ok": true,
       "checks": {
@@ -31606,6 +31681,31 @@
     },
     {
       "path": "videos/institute-4ufIGiX0BWw.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-4zc0Eh23LmI.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -31981,6 +32081,31 @@
     },
     {
       "path": "videos/institute-6WP7mY13lzc.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-6XjeJMWqCx0.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -32930,6 +33055,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-9cK0D8BnhOM.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-9v22c92LWHQ.html",
       "ok": true,
       "checks": {
@@ -33056,6 +33206,31 @@
     },
     {
       "path": "videos/institute-AUXWQzpr2x8.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-AwYVTQDHkt8.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -33280,6 +33455,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-BvCPqNNUfNU.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-C1NxyfMDP4U.html",
       "ok": true,
       "checks": {
@@ -33356,6 +33556,31 @@
     },
     {
       "path": "videos/institute-C9BBt5DmZuU.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-CBMDGH5JQzQ.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -33631,6 +33856,31 @@
     },
     {
       "path": "videos/institute-DQhPABvJBFk.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-DVJKXtCx2Wo.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -34205,6 +34455,56 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-FnYCaCkah4U.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-FtGnkRJwk6U.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-Fx7xWUU1MlI.html",
       "ok": true,
       "checks": {
@@ -34430,6 +34730,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-GQYh03SoJ88.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-GR07coJNPUE.html",
       "ok": true,
       "checks": {
@@ -34556,6 +34881,31 @@
     },
     {
       "path": "videos/institute-Ga8EZMGO460.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-GdnjIgX0ZN8.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -35156,6 +35506,31 @@
     },
     {
       "path": "videos/institute-INRaCBikpso.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-IOuJgpK9M_A.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -36030,6 +36405,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-MJ30RKyTyMw.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-MJXyGtYuK1U.html",
       "ok": true,
       "checks": {
@@ -36181,6 +36581,31 @@
     },
     {
       "path": "videos/institute-Me3BitlU6Vs.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-MjeQeWeyYhE.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -36880,6 +37305,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-PDI5oqODc2s.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-PHfgUApaWgk.html",
       "ok": true,
       "checks": {
@@ -37555,6 +38005,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-RaT71q68sOc.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-RoMCBXy-7E0.html",
       "ok": true,
       "checks": {
@@ -37731,6 +38206,31 @@
     },
     {
       "path": "videos/institute-SAc1F1AWRAs.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-SBCl8DeaJYU.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -38355,6 +38855,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-U9Z0TIeq1Fc.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-UAtfOc3Q4_0.html",
       "ok": true,
       "checks": {
@@ -38431,6 +38956,31 @@
     },
     {
       "path": "videos/institute-UDm0lriAIJw.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-ULPPTRUvmg4.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -38581,6 +39131,31 @@
     },
     {
       "path": "videos/institute-V0l9fOJgbtc.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-V46B4Xy1PeQ.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -38930,7 +39505,57 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-WaH-PjeLs9I.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-Wbl_xK_-ldM.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-WdurCCUQ708.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -39006,6 +39631,31 @@
     },
     {
       "path": "videos/institute-Wp7OebX_k70.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-WrixYErQot0.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -42805,6 +43455,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-i5iMnVG17QU.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-iHgxmn0ockg.html",
       "ok": true,
       "checks": {
@@ -43105,6 +43780,56 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-j9RaN7bkEFs.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-jDXo1J9kIwY.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-jFqT_ZR0Z8w.html",
       "ok": true,
       "checks": {
@@ -43281,6 +44006,31 @@
     },
     {
       "path": "videos/institute-jm70DuWHUI0.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-jnOck__J8vk.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -43705,6 +44455,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-lMROkmtaUWo.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-lMsOOXaM2-E.html",
       "ok": true,
       "checks": {
@@ -43881,6 +44656,31 @@
     },
     {
       "path": "videos/institute-mNw1JOM71Os.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-mXCOz4OOpho.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -44280,6 +45080,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-nmu_ZVvv_-A.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-nsi6IAmt4Zc.html",
       "ok": true,
       "checks": {
@@ -44455,6 +45280,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-oOd1XOpuNw8.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-odkks5F9ZMM.html",
       "ok": true,
       "checks": {
@@ -44531,6 +45381,31 @@
     },
     {
       "path": "videos/institute-olybbchPgEY.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-onxrJkX5xrY.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -45131,6 +46006,31 @@
     },
     {
       "path": "videos/institute-qf4S9bK5VKQ.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-qqW975To1rk.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -45805,6 +46705,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-sXyUfpGHXNI.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-sjdjRJMRVfw.html",
       "ok": true,
       "checks": {
@@ -45980,6 +46905,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-t2TgSuYH-K8.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-tGd-mgSdbio.html",
       "ok": true,
       "checks": {
@@ -46081,6 +47031,31 @@
     },
     {
       "path": "videos/institute-tbHZC6D39C4.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-teVT0s-rFbo.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -46605,6 +47580,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-vV6F0dyB45s.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-vacR2gYgOxk.html",
       "ok": true,
       "checks": {
@@ -46755,6 +47755,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/institute-vjtYYbO9jCY.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/institute-vkZ_vnN0--Y.html",
       "ok": true,
       "checks": {
@@ -46781,6 +47806,31 @@
     },
     {
       "path": "videos/institute-vwppypTticY.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-w4ecs7Tjvy0.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -47156,6 +48206,31 @@
     },
     {
       "path": "videos/institute-xlrZ00NQNHo.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/institute-xnS3NFee7JY.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -49355,6 +50430,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/personal-AJnyTc9F0hA.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/personal-AOH-cDdzJjU.html",
       "ok": true,
       "checks": {
@@ -49680,6 +50780,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/personal-CHSfk7AkWkk.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/personal-CNO_jLvdn9U.html",
       "ok": true,
       "checks": {
@@ -49781,6 +50906,31 @@
     },
     {
       "path": "videos/personal-DZLQWmOEUWw.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/personal-Dd7xNmm3Kw8.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -52705,6 +53855,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/personal-Wkn_NwzKGLs.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/personal-WokWG2XTFOc.html",
       "ok": true,
       "checks": {
@@ -53430,6 +54605,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/personal-_NLBFXnXLKo.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/personal-_QWjoNhjStE.html",
       "ok": true,
       "checks": {
@@ -53655,6 +54855,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/personal-aJunT6roKEI.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/personal-abkEo8a5Ktk.html",
       "ok": true,
       "checks": {
@@ -53706,6 +54931,31 @@
     },
     {
       "path": "videos/personal-akaJWxaSe48.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/personal-al-foyMLkJ0.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -54780,6 +56030,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/personal-iK-cIiXchdc.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/personal-iKNJBy_eUBA.html",
       "ok": true,
       "checks": {
@@ -55005,6 +56280,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/personal-kLvJiKdtiN8.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/personal-kOpI60YJ7ns.html",
       "ok": true,
       "checks": {
@@ -55180,6 +56480,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/personal-klt6FlAo4qs.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/personal-kroKEyy2pRQ.html",
       "ok": true,
       "checks": {
@@ -55231,6 +56556,31 @@
     },
     {
       "path": "videos/personal-kxKgdvFHOLM.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/personal-kxqkyuMlb84.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -55330,7 +56680,57 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/personal-lU5ArasOYLU.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/personal-lVWlMTcC3x8.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/personal-lab3gyadvnM.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -57080,6 +58480,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "videos/personal-uhVGDzW5tx8.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "videos/personal-vX1CEvukhp0.html",
       "ok": true,
       "checks": {
@@ -57656,6 +59081,31 @@
     },
     {
       "path": "videos/personal-y9X1yixP1L8.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "videos/personal-yCZ4mE0XPKs.html",
       "ok": true,
       "checks": {
         "lang": true,

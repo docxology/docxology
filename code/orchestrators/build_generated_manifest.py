@@ -48,6 +48,18 @@ LATEST_EXTERNAL_LINK_REPORT = _latest_report("external_links_[0-9]*.json", "repo
 
 ARTIFACTS = [
     {
+        "name": "Scholar PDF placement proposal (review only)",
+        "outputs": ["reports/scholar_pdf_placement_proposal_2026-10-13.json", "reports/scholar_pdf_placement_proposal_2026-10-13.md"],
+        "sources": ["data/scholar-readiness.json (hash-bound observed input)", "data/pages-artifact-manifest.json (hash-bound observed input)"],
+        "command": "manual budget/source review; proposal is not an applied projection or ordinary regeneration output",
+    },
+    {
+        "name": "Reviewed YouTube exact-date refresh receipt",
+        "outputs": ["reports/youtube_refresh_review_2026-10-13.json"],
+        "sources": ["code/data/youtube_personal.json", "code/data/youtube_institute.json", "public YouTube metadata responses"],
+        "command": "manual bounded source review after fetch_youtube_data.py; exact new-date hydration and source identity checks required before adoption",
+    },
+    {
         "name": "Paper folder doc regeneration",
         "outputs": [
             "papers/generated-documents.json",
@@ -668,6 +680,7 @@ UTILITIES = [
     ("validate_repo.py", "Authoritative generated-layer gate: runs every generator in `--check` mode plus repo invariants", "gate"),
     ("review_citation_metadata.py", "Bounded Crossref DOI/title-matched citation proposals; explicit report output, no source application", "audit"),
     ("validate_manuscript.py", "Read-only manuscript source/configuration gate; validates labels, citations and local references without rendering or assessing publication readiness", "gate"),
+    ("render_manuscript.py", "Explicit pinned offline draft render to a new external review directory (HTML/PDF/EPUB/PPTX and hash-bound receipt); excluded from ordinary regeneration, human/editorial review remain separate", "manual-render"),
     ("build_generated_manifest.py", "Writes GENERATED.md + data/generated-manifest.json from the ARTIFACTS/UTILITIES lists in this file", "meta"),
     ("audit_publication_skills.py", "Validates papers/*/SKILL.md against data/works.json docs_path references; runs in validate_repo.py", "audit"),
     ("build_reconciliation_report.py", "Builds the public-source reconciliation report from local indexes and the freshness snapshot", "audit"),

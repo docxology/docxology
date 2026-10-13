@@ -1,0 +1,731 @@
+{
+  "schema_version": "1.0",
+  "status": "proposal_not_applied",
+  "as_of": "2026-10-13",
+  "measured_source_commit": "6eaa02173ea8c6bfa46d510784235934f1cde7be",
+  "input_sha256": {
+    "data/scholar-readiness.json": "315a73a8cd1454cd9b7b2cd240f7ec9bb80e56a80ddf06c2d5403918c59b4685",
+    "data/pages-artifact-manifest.json": "f913bf1858be7706484e193064f5d06b15e5bdeaf2e532ae118f6b48e3352ec9"
+  },
+  "policy": {
+    "permanent_work_urls_preserved": true,
+    "archived_pdf_urls_preserved": true,
+    "source_pdf_bytes_preserved": true,
+    "artifact_ceiling_bytes": 933232640,
+    "growth_target_bytes": 891289600,
+    "pilot_copy_budget_bytes": 20971520,
+    "metadata_reserve_bytes": 1048576
+  },
+  "measurements": {
+    "base_artifact_bytes": 906940240,
+    "candidate_pdf_count": 156,
+    "all_candidate_copy_bytes": 220081137,
+    "pilot_pdf_count": 69,
+    "pilot_copy_bytes": 20812929,
+    "projected_pilot_with_reserve_bytes": 928801745,
+    "below_artifact_ceiling": true,
+    "base_above_growth_target": true
+  },
+  "selection_method": "Unique source SHA256; required citation tag presence and PDF <=5,000,000 bytes; smallest first within20MiB. This is a budget illustration, not scholarly-eligibility approval.",
+  "required_before_apply": [
+    "per-PDF scholarly suitability/searchable text/complete author-written abstract review",
+    "projection/source hash validation and consumer contract",
+    "exact citation URL and artifact assembly tests",
+    "fresh byte measurement with unchanged ceiling",
+    "human-reviewed staged selection"
+  ],
+  "indexing_verified": false,
+  "files_copied": false,
+  "proposed_pdfs": [
+    {
+      "source_path": "papers/2023_ModernNostrIndex/Index_Card_7_5_2023.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2023_ModernNostrIndex/Index_Card_7_5_2023.pdf",
+      "sha256": "f594cc233ccb734140b5e8254bf7e58b2fac9cc1c8084de8ff44696965f29cb8",
+      "bytes": 42755,
+      "citation_keys": [
+        "Friedman2023ModernNostrIndexCard138"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/f594cc233ccb734140b5e8254bf7e58b2fac9cc1c8084de8ff44696965f29cb8.pdf"
+    },
+    {
+      "source_path": "papers/2023_NSFReporting/2023_NSFReporting.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2023_NSFReporting/2023_NSFReporting.pdf",
+      "sha256": "d07827171142ea21a4803d7f68f9a505a52d819029b670a38f315763ffef513c",
+      "bytes": 52432,
+      "citation_keys": [
+        "Friedman2023EnhancedNSFPostdoctoralReporting054"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/d07827171142ea21a4803d7f68f9a505a52d819029b670a38f315763ffef513c.pdf"
+    },
+    {
+      "source_path": "papers/2023_AccountActiveInference/2023_AccountActiveInference.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2023_AccountActiveInference/2023_AccountActiveInference.pdf",
+      "sha256": "620b1e34d2404e91f4b99a876739b67a65d810f52c0e56a6dea6e0e9ce4e3873",
+      "bytes": 55132,
+      "citation_keys": [
+        "Friedman2023AccountActiveInferenceModeling050"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/620b1e34d2404e91f4b99a876739b67a65d810f52c0e56a6dea6e0e9ce4e3873.pdf"
+    },
+    {
+      "source_path": "papers/2025_OnTime/2025_OnTime.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2025_OnTime/2025_OnTime.pdf",
+      "sha256": "ded768cd46c4e6e1e788e5ee40f0b1615af9896442b8392ccd99b519fe361b80",
+      "bytes": 56934,
+      "citation_keys": [
+        "Friedman2025Time017"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/ded768cd46c4e6e1e788e5ee40f0b1615af9896442b8392ccd99b519fe361b80.pdf"
+    },
+    {
+      "source_path": "papers/2026_Triplicate/Friedman_2026_Triplicate_6c693dbd.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_Triplicate/Friedman_2026_Triplicate_6c693dbd.pdf",
+      "sha256": "6c693dbd80a4234d30d99f6a890191ff47faf197a0636753fa9785588c550a77",
+      "bytes": 58491,
+      "citation_keys": [
+        "Friedman2026TriplicateDataDrivenLarge153"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/6c693dbd80a4234d30d99f6a890191ff47faf197a0636753fa9785588c550a77.pdf"
+    },
+    {
+      "source_path": "papers/2026_RedactedReportTemplate/Friedman_2026_Redacted_103642b6.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_RedactedReportTemplate/Friedman_2026_Redacted_103642b6.pdf",
+      "sha256": "103642b6654465141d8b205b98d096c941606fba6331ffa4bf35924600b7aa59",
+      "bytes": 58890,
+      "citation_keys": [
+        "Friedman2026RedactedReportTemplateDisclosure189"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/103642b6654465141d8b205b98d096c941606fba6331ffa4bf35924600b7aa59.pdf"
+    },
+    {
+      "source_path": "papers/2026_TemplatePitchDeck/Friedman_2026_Templatepitchdeck_66941950.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_TemplatePitchDeck/Friedman_2026_Templatepitchdeck_66941950.pdf",
+      "sha256": "66941950e2307d1e9717c0045f3db3196d7d2542c3f5ffceced00438f653c55b",
+      "bytes": 60923,
+      "citation_keys": [
+        "Friedman2026TemplatePitchDeckReproducible186"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/66941950e2307d1e9717c0045f3db3196d7d2542c3f5ffceced00438f653c55b.pdf"
+    },
+    {
+      "source_path": "papers/2023_NaturalAIBased/12-11-2023_Natural_AI_Letter_v1.1.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2023_NaturalAIBased/12-11-2023_Natural_AI_Letter_v1.1.pdf",
+      "sha256": "51c686c3e37255b5f41bb99d280be5d758ace631d96e04094dfd80726e4ab7e0",
+      "bytes": 67349,
+      "citation_keys": [
+        "Friedman2023NaturalAIBasedScience135"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/51c686c3e37255b5f41bb99d280be5d758ace631d96e04094dfd80726e4ab7e0.pdf"
+    },
+    {
+      "source_path": "papers/2026_MillenniumAudit/Friedman_2026_MillenniumAudit.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_MillenniumAudit/Friedman_2026_MillenniumAudit.pdf",
+      "sha256": "c8125890cba1be893b86e2ec27212e5c0952a4edf212414a38bedb1a76836151",
+      "bytes": 69262,
+      "citation_keys": [
+        "Friedman2026ForensicAuditMillenniumLeanClay215"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/c8125890cba1be893b86e2ec27212e5c0952a4edf212414a38bedb1a76836151.pdf"
+    },
+    {
+      "source_path": "papers/2023_TranscriptActiveInference/GuestStream_049-1_transcript.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2023_TranscriptActiveInference/GuestStream_049-1_transcript.pdf",
+      "sha256": "f0c1a23132e02ae1f211d7cda786cd81991c3d740357ac43e6ac3d000d55bcc8",
+      "bytes": 69428,
+      "citation_keys": [
+        "Friedman2023TranscriptActiveInferenceGuestStream137"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/f0c1a23132e02ae1f211d7cda786cd81991c3d740357ac43e6ac3d000d55bcc8.pdf"
+    },
+    {
+      "source_path": "papers/2022_HypercertEcosystems/2022_HypercertEcosystems.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2022_HypercertEcosystems/2022_HypercertEcosystems.pdf",
+      "sha256": "a7b260f7bd1abf25be3e61451d0f578eceae7e2274f36ae5a0af227409a73d1a",
+      "bytes": 76972,
+      "citation_keys": [
+        "Friedman2022SystemsModelingCognitiveAudits072"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/a7b260f7bd1abf25be3e61451d0f578eceae7e2274f36ae5a0af227409a73d1a.pdf"
+    },
+    {
+      "source_path": "papers/2026_BlueLine/blue_line_combined.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_BlueLine/blue_line_combined.pdf",
+      "sha256": "74d8a03fa5507675f34120e0b26eb9b04802b60f252d4888c4b5894e8576159c",
+      "bytes": 82677,
+      "citation_keys": [
+        "Friedman2026BlueLineStewardshipInstrument221"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/74d8a03fa5507675f34120e0b26eb9b04802b60f252d4888c4b5894e8576159c.pdf"
+    },
+    {
+      "source_path": "papers/2026_SilverLine/silver_line_combined.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_SilverLine/silver_line_combined.pdf",
+      "sha256": "8abeec4716a67d9bd7e8b73ef6c5535238c5f3a7775831f2bd6da913899086d2",
+      "bytes": 83420,
+      "citation_keys": [
+        "Friedman2026SilverLineMemorySuccession223"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/8abeec4716a67d9bd7e8b73ef6c5535238c5f3a7775831f2bd6da913899086d2.pdf"
+    },
+    {
+      "source_path": "papers/2026_VioletLine/violet_line_combined.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_VioletLine/violet_line_combined.pdf",
+      "sha256": "413041c34ff94ab33a9904f2fe38549bbf91e4715cd271cba30d528c87dcb811",
+      "bytes": 93857,
+      "citation_keys": [
+        "Friedman2026VioletLineConsentLedger222"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/413041c34ff94ab33a9904f2fe38549bbf91e4715cd271cba30d528c87dcb811.pdf"
+    },
+    {
+      "source_path": "papers/2024_InfiniteImaginarium/2024_InfiniteImaginarium.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2024_InfiniteImaginarium/2024_InfiniteImaginarium.pdf",
+      "sha256": "59588cd7f5a27ec54f2505adaec42b617d5752e44fc8425d4e1b222eb720cca2",
+      "bytes": 97657,
+      "citation_keys": [
+        "Friedman2024WayFindingInfiniteImaginarium042"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/59588cd7f5a27ec54f2505adaec42b617d5752e44fc8425d4e1b222eb720cca2.pdf"
+    },
+    {
+      "source_path": "papers/2023_VideoEntomology/2023_VideoEntomology.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2023_VideoEntomology/2023_VideoEntomology.pdf",
+      "sha256": "83963352cb7c86248f7777985e0b87091e0dab5145ba0e9ccd0894b0fc8bc28e",
+      "bytes": 98577,
+      "citation_keys": [
+        "Friedman2023ExperimentalEntomologyAgeVideo055"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/83963352cb7c86248f7777985e0b87091e0dab5145ba0e9ccd0894b0fc8bc28e.pdf"
+    },
+    {
+      "source_path": "papers/2024_PushPull/PushPull_v1_DAF_2-14-2024.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2024_PushPull/PushPull_v1_DAF_2-14-2024.pdf",
+      "sha256": "bdf12414078e0cd405cea7050532884487526a72e70c8948742f0ea470683694",
+      "bytes": 101914,
+      "citation_keys": [
+        "Friedman2024PushPullPrimingSequence134"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/bdf12414078e0cd405cea7050532884487526a72e70c8948742f0ea470683694.pdf"
+    },
+    {
+      "source_path": "papers/2026_GreenLine/green_line_combined.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_GreenLine/green_line_combined.pdf",
+      "sha256": "ceea7feeb7da2f09163c7cbd349dfc67d7cf23f8bfac5f3b659b3446d578e66b",
+      "bytes": 102039,
+      "citation_keys": [
+        "Friedman2026GreenLineCapacityUnder220"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/ceea7feeb7da2f09163c7cbd349dfc67d7cf23f8bfac5f3b659b3446d578e66b.pdf"
+    },
+    {
+      "source_path": "papers/2022_ActiveDiffusion/2022_ActiveDiffusion.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2022_ActiveDiffusion/2022_ActiveDiffusion.pdf",
+      "sha256": "ea6e3752c7a2b9e8061d51ee0e40e8a4a84a672fb7b882f3462fc32714291227",
+      "bytes": 104247,
+      "citation_keys": [
+        "Friedman2022CatechismTowardsActiveDiffusion067"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/ea6e3752c7a2b9e8061d51ee0e40e8a4a84a672fb7b882f3462fc32714291227.pdf"
+    },
+    {
+      "source_path": "papers/2025_AccessibilityActiveInference/2025_AccessibilityActiveInference.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2025_AccessibilityActiveInference/2025_AccessibilityActiveInference.pdf",
+      "sha256": "3a084753c5a08ff35c16b789d12185a92ddec690ed58d4ac4749914aaac811ba",
+      "bytes": 127944,
+      "citation_keys": [
+        "Friedman2025IncreasingAccessibilityApplicabilityActive013"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/3a084753c5a08ff35c16b789d12185a92ddec690ed58d4ac4749914aaac811ba.pdf"
+    },
+    {
+      "source_path": "papers/2026_DomainLanguageSpecifying/Friedman_2026_Domain_ecd8519f.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_DomainLanguageSpecifying/Friedman_2026_Domain_ecd8519f.pdf",
+      "sha256": "ecd8519fc2a9a674bd8a4cf89f96122af76529c913e32bf880a7c842da08771a",
+      "bytes": 144305,
+      "citation_keys": [
+        "Friedman2026DomainLanguageSpecifyingControlled182"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/ecd8519fc2a9a674bd8a4cf89f96122af76529c913e32bf880a7c842da08771a.pdf"
+    },
+    {
+      "source_path": "papers/2025_MDKV/2025_MDKV.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2025_MDKV/2025_MDKV.pdf",
+      "sha256": "13226aeff8f756e975c0e08eebd022550521aec16b75de7a089c0ae9d357f26e",
+      "bytes": 147448,
+      "citation_keys": [
+        "Friedman2025MDKVMultitrackMarkdownContainer014"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/13226aeff8f756e975c0e08eebd022550521aec16b75de7a089c0ae9d357f26e.pdf"
+    },
+    {
+      "source_path": "papers/2021_CollaborativeWritingCatechism/C3PO.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2021_CollaborativeWritingCatechism/C3PO.pdf",
+      "sha256": "250dbe1b6085a9c81dda2518ee32601cd40744ccaa4e2cf4578ba6065aec4290",
+      "bytes": 152916,
+      "citation_keys": [
+        "Friedman2021CollaborativeWritingCatechismBased147"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/250dbe1b6085a9c81dda2518ee32601cd40744ccaa4e2cf4578ba6065aec4290.pdf"
+    },
+    {
+      "source_path": "papers/2026_ExploratoryDataAnalysis/Friedman_2026_Exploratory_0b10852b.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_ExploratoryDataAnalysis/Friedman_2026_Exploratory_0b10852b.pdf",
+      "sha256": "0b10852bda89361cd71063867b55d9aed942881476867813facd549a961b0c1d",
+      "bytes": 158570,
+      "citation_keys": [
+        "Friedman2026ExploratoryDataAnalysisReproducible181"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/0b10852bda89361cd71063867b55d9aed942881476867813facd549a961b0c1d.pdf"
+    },
+    {
+      "source_path": "papers/2019_DennettExplained/2019_DennettExplained.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2019_DennettExplained/2019_DennettExplained.pdf",
+      "sha256": "cec8ded8b5a52373c121b503bb528512abe94287a7a33b9b36a9d479fa09c243",
+      "bytes": 167225,
+      "citation_keys": [
+        "Friedman2019DennettExplainedInterviewDaniel092"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/cec8ded8b5a52373c121b503bb528512abe94287a7a33b9b36a9d479fa09c243.pdf"
+    },
+    {
+      "source_path": "papers/2015_CryptoJews/2015_CryptoJews.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2015_CryptoJews/2015_CryptoJews.pdf",
+      "sha256": "ac331d58900a384293036bd97732ea55ac6cdf409ff03124e46798052fe93bb8",
+      "bytes": 167379,
+      "citation_keys": [
+        "Friedman2015CommentaryPortugueseCryptoJews106"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/ac331d58900a384293036bd97732ea55ac6cdf409ff03124e46798052fe93bb8.pdf"
+    },
+    {
+      "source_path": "papers/2017_TwoLineages/2017_TwoLineages.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2017_TwoLineages/2017_TwoLineages.pdf",
+      "sha256": "64b8e07dff9f65a450011b536248c67237192d7ca4d5f5257436ac74da2048d2",
+      "bytes": 167586,
+      "citation_keys": [
+        "Friedman2017TwoLineagesThatNeed102"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/64b8e07dff9f65a450011b536248c67237192d7ca4d5f5257436ac74da2048d2.pdf"
+    },
+    {
+      "source_path": "papers/2020_EmergentTeams/2020_EmergentTeams.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2020_EmergentTeams/2020_EmergentTeams.pdf",
+      "sha256": "9a72f5e1e26ae14a989f7fc2bd54e04622255fd90a3c60c96ee35a3f1608022a",
+      "bytes": 186028,
+      "citation_keys": [
+        "Friedman2020EmergentTeamsComplexThreats085"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/9a72f5e1e26ae14a989f7fc2bd54e04622255fd90a3c60c96ee35a3f1608022a.pdf"
+    },
+    {
+      "source_path": "papers/2026_DataDescriptorTemplate/Friedman_2026_Data_a542f49d.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_DataDescriptorTemplate/Friedman_2026_Data_a542f49d.pdf",
+      "sha256": "a542f49d6a82b8481159c02a8f35f7bd19d8dab241dd0a9fb1392dbd9bee8dd3",
+      "bytes": 194590,
+      "citation_keys": [
+        "Friedman2026DataDescriptorTemplateSchema192"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/a542f49d6a82b8481159c02a8f35f7bd19d8dab241dd0a9fb1392dbd9bee8dd3.pdf"
+    },
+    {
+      "source_path": "papers/2025_AgentAndNiche/2025_AgentAndNiche.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2025_AgentAndNiche/2025_AgentAndNiche.pdf",
+      "sha256": "89d8d1251696fedeb6db0f31bdeb30cdfcc0f8406d798f89475005794a8566e3",
+      "bytes": 196024,
+      "citation_keys": [
+        "Friedman2025SynthesisAgentNiche021"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/89d8d1251696fedeb6db0f31bdeb30cdfcc0f8406d798f89475005794a8566e3.pdf"
+    },
+    {
+      "source_path": "papers/2022_MirrorTest/2022_MirrorTest.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2022_MirrorTest/2022_MirrorTest.pdf",
+      "sha256": "bcf3ca0a8de076af83fcc2bdaefd1e800ef5a8794e4102d4964ffb138f1e764e",
+      "bytes": 206849,
+      "citation_keys": [
+        "Friedman2022PredictiveProcessingInterpretationMirror070"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/bcf3ca0a8de076af83fcc2bdaefd1e800ef5a8794e4102d4964ffb138f1e764e.pdf"
+    },
+    {
+      "source_path": "papers/2023_CognitiveSovereignty/2023_CognitiveSovereignty.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2023_CognitiveSovereignty/2023_CognitiveSovereignty.pdf",
+      "sha256": "5a58895b9e17e66253f24accaef85bdb6129a75e8569d8e3569bd846c9d959c9",
+      "bytes": 220677,
+      "citation_keys": [
+        "Friedman2023CognitiveSovereigntyActiveInference051"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/5a58895b9e17e66253f24accaef85bdb6129a75e8569d8e3569bd846c9d959c9.pdf"
+    },
+    {
+      "source_path": "papers/2026_SelfImprovementAgent/Friedman_2026_Selfimprovement_6e6d19d0.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_SelfImprovementAgent/Friedman_2026_Selfimprovement_6e6d19d0.pdf",
+      "sha256": "6e6d19d04182628bb825471cf8094b5c32d2c491d2c646652ec7e2439ba80773",
+      "bytes": 223019,
+      "citation_keys": [
+        "Friedman2026SelfImprovementAgentHarness127"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/6e6d19d04182628bb825471cf8094b5c32d2c491d2c646652ec7e2439ba80773.pdf"
+    },
+    {
+      "source_path": "papers/2015_EhrlichialInfection/2015_EhrlichialInfection.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2015_EhrlichialInfection/2015_EhrlichialInfection.pdf",
+      "sha256": "f7ffe30b4793696883a99cd6d6f0f1a9736122d5e4eca44e568938f0ba1be6af",
+      "bytes": 224816,
+      "citation_keys": [
+        "Friedman2015CouldEhrlichialInfectionCause107"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/f7ffe30b4793696883a99cd6d6f0f1a9736122d5e4eca44e568938f0ba1be6af.pdf"
+    },
+    {
+      "source_path": "papers/2026_EditorialQualityAt/Friedman_2026_Editorial_b59313ea.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_EditorialQualityAt/Friedman_2026_Editorial_b59313ea.pdf",
+      "sha256": "b59313ea73cb3c639ef2c5acf76f64e9f68b99ab5db7ca951482d5c709c6346b",
+      "bytes": 270739,
+      "citation_keys": [
+        "Friedman2026EditorialQualityAtScale122"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/b59313ea73cb3c639ef2c5acf76f64e9f68b99ab5db7ca951482d5c709c6346b.pdf"
+    },
+    {
+      "source_path": "papers/2026_DeterministicTestbedSelf/Friedman_2026_Deterministic_972bc4e0.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_DeterministicTestbedSelf/Friedman_2026_Deterministic_972bc4e0.pdf",
+      "sha256": "972bc4e0a82c97a88442ffc4370a17dd3323de96f27f91294dcb19dab3934a29",
+      "bytes": 272080,
+      "citation_keys": [
+        "Friedman2026DeterministicTestbedSelfOrganizing151"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/972bc4e0a82c97a88442ffc4370a17dd3323de96f27f91294dcb19dab3934a29.pdf"
+    },
+    {
+      "source_path": "papers/2023_SlidesIris/Slides for Iris April 17 2023.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2023_SlidesIris/Slides%20for%20Iris%20April%2017%202023.pdf",
+      "sha256": "30859a04ec4eaf42f50f846182c1575a7e8a97c022a2ee5fae4b995e3f09c1de",
+      "bytes": 280048,
+      "citation_keys": [
+        "Friedman2023SlidesIris139"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/30859a04ec4eaf42f50f846182c1575a7e8a97c022a2ee5fae4b995e3f09c1de.pdf"
+    },
+    {
+      "source_path": "papers/2024_SensemakingFederation/2024_SensemakingFederation.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2024_SensemakingFederation/2024_SensemakingFederation.pdf",
+      "sha256": "cae977e7cfc488e456f07e1ce2896a77d7cf660f8add9bda05fef6fb1b0a3f5b",
+      "bytes": 281717,
+      "citation_keys": [
+        "Friedman2024SensemakingFederationExploringFrontiers039"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/cae977e7cfc488e456f07e1ce2896a77d7cf660f8add9bda05fef6fb1b0a3f5b.pdf"
+    },
+    {
+      "source_path": "papers/2026_RegisteredReportTemplate/Friedman_2026_Registered_61a9addb.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_RegisteredReportTemplate/Friedman_2026_Registered_61a9addb.pdf",
+      "sha256": "61a9addb1b23d83637271bd0000584ebe920c944a3f54f95743e27a55c38b180",
+      "bytes": 289933,
+      "citation_keys": [
+        "Friedman2026RegisteredReportTemplatePreregistration188"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/61a9addb1b23d83637271bd0000584ebe920c944a3f54f95743e27a55c38b180.pdf"
+    },
+    {
+      "source_path": "papers/2022_FreeWillSapolsky/2022_FreeWillSapolsky.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2022_FreeWillSapolsky/2022_FreeWillSapolsky.pdf",
+      "sha256": "7b219fb5330fe5ba1b9e2f7ac608a05b8b21e8c477279068e1c8cf1d4cb99397",
+      "bytes": 296824,
+      "citation_keys": [
+        "Friedman2022FreeWillOrLack069"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/7b219fb5330fe5ba1b9e2f7ac608a05b8b21e8c477279068e1c8cf1d4cb99397.pdf"
+    },
+    {
+      "source_path": "papers/2023_GuidedTourMinds/2023_GuidedTourMinds.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2023_GuidedTourMinds/2023_GuidedTourMinds.pdf",
+      "sha256": "7825ddc4725355712f174edc5355bd2ebd6798445c1f9aca7cb83c507245d658",
+      "bytes": 301601,
+      "citation_keys": [
+        "Friedman2023GuidedTourThroughSpaces045"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/7825ddc4725355712f174edc5355bd2ebd6798445c1f9aca7cb83c507245d658.pdf"
+    },
+    {
+      "source_path": "papers/2017_MutAnts/2017_MutAnts.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2017_MutAnts/2017_MutAnts.pdf",
+      "sha256": "0be437dbc8c39523521b097a2cb4394eaa1674cbcbfb61e502c8b792f6cb3140",
+      "bytes": 304596,
+      "citation_keys": [
+        "Friedman2017MutAntsAreHere101"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/0be437dbc8c39523521b097a2cb4394eaa1674cbcbfb61e502c8b792f6cb3140.pdf"
+    },
+    {
+      "source_path": "papers/2019_PhDDissertation/2019_PhDDissertation.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2019_PhDDissertation/2019_PhDDissertation.pdf",
+      "sha256": "818c97e99de871899eaeefe9e7955b3bba670c39064cb358a0f9843b34d55395",
+      "bytes": 316589,
+      "citation_keys": [
+        "Friedman2019PhDBehavioralPhysiologicalTranscriptomic093"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/818c97e99de871899eaeefe9e7955b3bba670c39064cb358a0f9843b34d55395.pdf"
+    },
+    {
+      "source_path": "papers/2024_SharedProtentions/2024_SharedProtentions.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2024_SharedProtentions/2024_SharedProtentions.pdf",
+      "sha256": "0b40c6a4bc0d1dd0d2a9a4597b557132b01187327389c05c5455df713905f7d3",
+      "bytes": 325880,
+      "citation_keys": [
+        "Friedman2024SharedProtentionsMultiAgent040"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/0b40c6a4bc0d1dd0d2a9a4597b557132b01187327389c05c5455df713905f7d3.pdf"
+    },
+    {
+      "source_path": "papers/2020_NeuroscienceDecision/2020_NeuroscienceDecision.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2020_NeuroscienceDecision/2020_NeuroscienceDecision.pdf",
+      "sha256": "7e72865430aabe2e7a02948d70c327d9ced934ecd4f680f02f695f55c500552b",
+      "bytes": 327343,
+      "citation_keys": [
+        "Friedman2020NeuroscienceDecisionMakingInterview091"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/7e72865430aabe2e7a02948d70c327d9ced934ecd4f680f02f695f55c500552b.pdf"
+    },
+    {
+      "source_path": "papers/2024_OntologySUMO/2024_OntologySUMO.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2024_OntologySUMO/2024_OntologySUMO.pdf",
+      "sha256": "39418ecdc12ea345964b0f0a58c75c451431a65e5d26cb79249cab4f5b8488fb",
+      "bytes": 337848,
+      "citation_keys": [
+        "Friedman2024AligningActiveInferenceOntology029"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/39418ecdc12ea345964b0f0a58c75c451431a65e5d26cb79249cab4f5b8488fb.pdf"
+    },
+    {
+      "source_path": "papers/2023_GenerativeResearchTeams/2023_GenerativeResearchTeams.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2023_GenerativeResearchTeams/2023_GenerativeResearchTeams.pdf",
+      "sha256": "a28cd9f0aaaa4e6e850e0b18dd3a6975c73eecf9c7aa4e53457d580de954566f",
+      "bytes": 376476,
+      "citation_keys": [
+        "Friedman2023GenerativeResearchTeamsActive057"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/a28cd9f0aaaa4e6e850e0b18dd3a6975c73eecf9c7aa4e53457d580de954566f.pdf"
+    },
+    {
+      "source_path": "papers/2020_InfiniteGamesInfinite/InfiniteGamesInfiniteTeams_DAF_RJC_7_8_2020.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2020_InfiniteGamesInfinite/InfiniteGamesInfiniteTeams_DAF_RJC_7_8_2020.pdf",
+      "sha256": "8cba7a6c42f63bd6b7075ad283d1d4c809fe1e69f75dad9e14d6d006f39f5094",
+      "bytes": 381535,
+      "citation_keys": [
+        "Friedman2020InfiniteGamesInfiniteTeams149"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/8cba7a6c42f63bd6b7075ad283d1d4c809fe1e69f75dad9e14d6d006f39f5094.pdf"
+    },
+    {
+      "source_path": "papers/2025_5thSymposium/2025_5thSymposium.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2025_5thSymposium/2025_5thSymposium.pdf",
+      "sha256": "97508b918f1ba7e24398fbe054044d594d7932b83671806e13594d18f9e2392d",
+      "bytes": 414282,
+      "citation_keys": [
+        "Friedman20255thAppliedActiveInference008"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/97508b918f1ba7e24398fbe054044d594d7932b83671806e13594d18f9e2392d.pdf"
+    },
+    {
+      "source_path": "papers/2024_PopulationSearch/2024_PopulationSearch.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2024_PopulationSearch/2024_PopulationSearch.pdf",
+      "sha256": "1651dbe4d2e716dfe224e973ebfc563245fd1a0405e518ea08e2f0f837053beb",
+      "bytes": 487730,
+      "citation_keys": [
+        "Friedman2024EnhancingPopulationBasedSearch034"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/1651dbe4d2e716dfe224e973ebfc563245fd1a0405e518ea08e2f0f837053beb.pdf"
+    },
+    {
+      "source_path": "papers/2026_AutopoieticProjectGeneration/Friedman_2026_Autopoietic_84145371.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_AutopoieticProjectGeneration/Friedman_2026_Autopoietic_84145371.pdf",
+      "sha256": "84145371f10c7ee97a75c53d78917d247fd6bd987d2c1764ee437b6fbdef8f51",
+      "bytes": 497314,
+      "citation_keys": [
+        "Friedman2026AutopoieticProjectGeneration185"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/84145371f10c7ee97a75c53d78917d247fd6bd987d2c1764ee437b6fbdef8f51.pdf"
+    },
+    {
+      "source_path": "papers/2022_StigmergicAnnotation/2022_StigmergicAnnotation.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2022_StigmergicAnnotation/2022_StigmergicAnnotation.pdf",
+      "sha256": "ae0e06216a791ad4ae1a63096aaa8573378d4eaa03c60a943495defbcc3c4c4a",
+      "bytes": 502155,
+      "citation_keys": [
+        "Friedman2022FromUsersSenseMakers068"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/ae0e06216a791ad4ae1a63096aaa8573378d4eaa03c60a943495defbcc3c4c4a.pdf"
+    },
+    {
+      "source_path": "papers/2023_OpenScienceSensemaking/2023_OpenScienceSensemaking.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2023_OpenScienceSensemaking/2023_OpenScienceSensemaking.pdf",
+      "sha256": "7ca6089e73d436096936d524d272cea92dfbeced7da57d51d1c183c198f0ae6c",
+      "bytes": 506648,
+      "citation_keys": [
+        "Friedman2023OpenAccessScienceNeeds059"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/7ca6089e73d436096936d524d272cea92dfbeced7da57d51d1c183c198f0ae6c.pdf"
+    },
+    {
+      "source_path": "papers/2016_ForagingGene/2016_ForagingGene.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2016_ForagingGene/2016_ForagingGene.pdf",
+      "sha256": "80b790681900c4f9d71b95057711e574664f17dfb9024a315bd28d4ab22530f6",
+      "bytes": 536684,
+      "citation_keys": [
+        "Friedman2016ContextDependentExpressionForaging104"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/80b790681900c4f9d71b95057711e574664f17dfb9024a315bd28d4ab22530f6.pdf"
+    },
+    {
+      "source_path": "papers/2015_HoneyBeeEvolution/2015_HoneyBeeEvolution.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2015_HoneyBeeEvolution/2015_HoneyBeeEvolution.pdf",
+      "sha256": "ffd7dd56931b8c6e552785c541b1b0056d32f1c3df71a693f088360e2fe9e73c",
+      "bytes": 537373,
+      "citation_keys": [
+        "Friedman2015LargeScaleCodingSequence108"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/ffd7dd56931b8c6e552785c541b1b0056d32f1c3df71a693f088360e2fe9e73c.pdf"
+    },
+    {
+      "source_path": "papers/2026_IllegalStatesMostly/Friedman_2026_Illegal_5bda439c.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_IllegalStatesMostly/Friedman_2026_Illegal_5bda439c.pdf",
+      "sha256": "5bda439c4af4d84b9d6d89513fb35d2ad391d2484fc16bf9f1338eab02161efb",
+      "bytes": 551781,
+      "citation_keys": [
+        "Friedman2026IllegalStatesMostlyUnrepresentable191"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/5bda439c4af4d84b9d6d89513fb35d2ad391d2484fc16bf9f1338eab02161efb.pdf"
+    },
+    {
+      "source_path": "papers/2023_AIAccountability/2023_AIAccountability.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2023_AIAccountability/2023_AIAccountability.pdf",
+      "sha256": "2bec4bb342039cd62073fe43aefba065f24372811886aab343131a1befc98cca",
+      "bytes": 554792,
+      "citation_keys": [
+        "Friedman2023CommentsAIAccountabilityPolicy052"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/2bec4bb342039cd62073fe43aefba065f24372811886aab343131a1befc98cca.pdf"
+    },
+    {
+      "source_path": "papers/2025_BeaconsPreEmulation/beacons.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2025_BeaconsPreEmulation/beacons.pdf",
+      "sha256": "97f62b5cd1735b51f732f13be48745d64c8074506ef0baf4e148ee7c80e12bbb",
+      "bytes": 561920,
+      "citation_keys": [
+        "Friedman2025BeaconsPreEmulationSocial132"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/97f62b5cd1735b51f732f13be48745d64c8074506ef0baf4e148ee7c80e12bbb.pdf"
+    },
+    {
+      "source_path": "papers/2023_DistributedScience/2023_DistributedScience.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2023_DistributedScience/2023_DistributedScience.pdf",
+      "sha256": "6dd7ecd92a52d4a6aa4a3a4c5ee69db67779fb0b5824378eb5451cccf569dfa4",
+      "bytes": 591848,
+      "citation_keys": [
+        "Friedman2023DistributedScienceScientificProcess053"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/6dd7ecd92a52d4a6aa4a3a4c5ee69db67779fb0b5824378eb5451cccf569dfa4.pdf"
+    },
+    {
+      "source_path": "papers/2024_DigitalTwins/2024_DigitalTwins.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2024_DigitalTwins/2024_DigitalTwins.pdf",
+      "sha256": "1d20eca4da8c340221009f3859b181e1b1e706175890a96b9fc44ee21e2bfca1",
+      "bytes": 595764,
+      "citation_keys": [
+        "Friedman2024CommentsNationalDigitalTwins033"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/1d20eca4da8c340221009f3859b181e1b1e706175890a96b9fc44ee21e2bfca1.pdf"
+    },
+    {
+      "source_path": "papers/2016_AntGenetics/2016_AntGenetics.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2016_AntGenetics/2016_AntGenetics.pdf",
+      "sha256": "114585ba7db6d58d0e3d9c4167423afcd59080b0f57ecc9e0b7a5013e96b89f9",
+      "bytes": 618023,
+      "citation_keys": [
+        "Friedman2016AntGeneticsReproductivePhysiology103"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/114585ba7db6d58d0e3d9c4167423afcd59080b0f57ecc9e0b7a5013e96b89f9.pdf"
+    },
+    {
+      "source_path": "papers/2025_AntStack/2025_AntStack.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2025_AntStack/2025_AntStack.pdf",
+      "sha256": "38800ad47dd62df73403ccda52f6f285c06f968f34caa515ffe0f08bef25cc62",
+      "bytes": 622582,
+      "citation_keys": [
+        "Friedman2025AntStack025"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/38800ad47dd62df73403ccda52f6f285c06f968f34caa515ffe0f08bef25cc62.pdf"
+    },
+    {
+      "source_path": "papers/2025_Graphspeak/graph.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2025_Graphspeak/graph.pdf",
+      "sha256": "04aff67b3a817ab045e98a7a6c84c4a5aa03ca22cf0180207e9db314b5d9a79e",
+      "bytes": 635951,
+      "citation_keys": [
+        "Friedman2025GraphspeakLanguageHandshake130"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/04aff67b3a817ab045e98a7a6c84c4a5aa03ca22cf0180207e9db314b5d9a79e.pdf"
+    },
+    {
+      "source_path": "papers/2025_CognitiveArtScience/2025_CognitiveArtScience.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2025_CognitiveArtScience/2025_CognitiveArtScience.pdf",
+      "sha256": "23299c6ba04e3e0c0c562edf836808d0b01b2f4d2c77d3e500e0e71e480e8cff",
+      "bytes": 658289,
+      "citation_keys": [
+        "Friedman2025CognitiveArtScienceToward016"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/23299c6ba04e3e0c0c562edf836808d0b01b2f4d2c77d3e500e0e71e480e8cff.pdf"
+    },
+    {
+      "source_path": "papers/2024_FarmWorks/2024_FarmWorks.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2024_FarmWorks/2024_FarmWorks.pdf",
+      "sha256": "1700075a5c4c1bd4005b776022eb6f015c111ffc6d2563e5f18287303d6e677e",
+      "bytes": 670467,
+      "citation_keys": [
+        "Friedman2024FarmWorksDecentralizedAIAgents035"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/1700075a5c4c1bd4005b776022eb6f015c111ffc6d2563e5f18287303d6e677e.pdf"
+    },
+    {
+      "source_path": "papers/2026_WitnessRegister/witness_register_combined.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_WitnessRegister/witness_register_combined.pdf",
+      "sha256": "b50b8d1106003ce027caabb79fccadce650167795287ea75539c029cad958088",
+      "bytes": 674133,
+      "citation_keys": [
+        "Friedman2026WitnessRegisterCoRegistration200"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/b50b8d1106003ce027caabb79fccadce650167795287ea75539c029cad958088.pdf"
+    },
+    {
+      "source_path": "papers/2023_HoneyBeeGeneExpression/2023_HoneyBeeGeneExpression.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2023_HoneyBeeGeneExpression/2023_HoneyBeeGeneExpression.pdf",
+      "sha256": "a069b024185701c43da2f3e3c07ac882d313cab4dcb7afaa2849086c2be2f671",
+      "bytes": 693355,
+      "citation_keys": [
+        "Friedman2023SnapshotPipelineTissueSpecific047"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/a069b024185701c43da2f3e3c07ac882d313cab4dcb7afaa2849086c2be2f671.pdf"
+    },
+    {
+      "source_path": "papers/2026_Bimetalism/Blake_Bimetalism_DAF_v1_04032026.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2026_Bimetalism/Blake_Bimetalism_DAF_v1_04032026.pdf",
+      "sha256": "3b6e15c2f66e9729d6fbda7819ebd3d07c8527585afdc9f460e406cc5305338f",
+      "bytes": 708881,
+      "citation_keys": [
+        "Friedman2026GoldenCompassLunarFlux004"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/3b6e15c2f66e9729d6fbda7819ebd3d07c8527585afdc9f460e406cc5305338f.pdf"
+    },
+    {
+      "source_path": "papers/2020_DistributedPhysiology/2020_DistributedPhysiology.pdf",
+      "source_url": "https://danielarifriedman.com/papers/2020_DistributedPhysiology/2020_DistributedPhysiology.pdf",
+      "sha256": "197a60b6c2f792873d9b7722855122c4883f4e57a98694acc95fa4d82315896b",
+      "bytes": 711416,
+      "citation_keys": [
+        "Friedman2020DistributedPhysiologyMolecularBasis084"
+      ],
+      "proposed_url": "https://danielarifriedman.com/works/197a60b6c2f792873d9b7722855122c4883f4e57a98694acc95fa4d82315896b.pdf"
+    }
+  ]
+}

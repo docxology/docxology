@@ -4,6 +4,22 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-10-13
 
+- **Manuscript rendering:** declared pinned Pandoc/crossref/Typst draft renders
+  for HTML, PDF, EPUB, and PowerPoint with input/tool/output hashes, isolated
+  renderer data, and failure-safe external review directories. Manuscript text
+  and original figures use CC BY 4.0; archived and third-party rights remain
+  separate. Human and editorial approval are still pending.
+- **YouTube intake:** bounded exact short-date hydration, explicit upcoming
+  exclusion, and exact absent-shorts handling restore complete public metadata
+  refreshes without weakening identity/date/error checks.
+- **Gallery startup:** fixed-width Flickr timestamps use equivalent lexical
+  sorting; other date shapes and title collation retain their existing rules.
+  The change avoids cold locale initialization; Lighthouse improvement still
+  requires a fresh candidate measurement.
+- **Scholar PDF planning:** added a hash-bound, measured content-addressed
+  pilot proposal preserving inbound links and source PDFs. No PDFs or citation
+  URLs were migrated; eligibility and actual indexing remain separate reviews.
+
 - **Backlog cleanup:** removed completed intake, metadata, artwork, and
   performance-repair history from active task descriptions. Remaining work
   now has minor/medium/major effort guidance and explicit access dependencies;

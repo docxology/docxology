@@ -1,26 +1,41 @@
 # Manuscript status — docxology
 
-As of 2026-10-05, this is a source-backed repository-methods draft describing the public research/software/citation index and its static website. It is separate from the research publications archived under [papers/](../../papers/).
+As of 2026-10-13, this is a source-backed repository-methods draft describing
+the public research/software/citation index and its static website. It is
+separate from the research publications archived under [papers/](../../papers/).
 
-## Established source scope
+## Established source and rendering scope
 
-- Sections explain source authority, stable identity, thin command entry points, shared policy, ordered generation, progressive browser discovery, and candidate-bound release evidence.
-- Implementation statements link public repository sources and runbooks. Current catalog totals and historical pass counts remain in their generated or dated evidence surfaces.
-- `config.yaml` binds `manuscript_dir` to `docs/manuscript` and the bibliography path to this repository.
-- The bibliography identifies the repository from `CITATION.cff`; it adds no new manuscript DOI or external study.
-- A read-only local validator checks source/configuration structure, citation-key resolution, labels, tokens, and local references.
+- Numbered sections describe source authority, stable identity, shared policy,
+  ordered generation, progressive discovery, and revision-bound evidence.
+- Implementation claims link repository sources and runbooks. Volatile catalog
+  totals remain in generated or dated evidence surfaces.
+- The bibliography identifies the repository from `CITATION.cff`; no new
+  manuscript DOI or external study is assigned.
+- `validate_manuscript.py` remains a read-only structural source gate.
+- `render_manuscript.py` declares pinned Pandoc/crossref/Typst tools and manual
+  HTML/PDF/EPUB/PowerPoint outputs with a source/tool/output hash receipt. It
+  uses a real bibliography parser, resolves cross-references, and preserves
+  prior review directories on failure. See [the command and scope](README.md).
+- Manuscript text and original manuscript figures use CC BY 4.0. Archived and
+  third-party material retain their own rights.
 
 ## Separate, unfinished evidence
 
-There is no declared manuscript rendering command, rendered PDF/HTML receipt, new experimental or comparative result, independent scientific review, or publication-readiness attestation. Complete BibTeX grammar, manuscript licensing, editorial review, and later quantitative results need separate verification. Desired render formats in configuration do not establish that rendering ran.
+Human visual and editorial approval, scientific validity, comparative results,
+and publication readiness remain unverified. A successful render or automated
+artifact check establishes neither approval nor publication readiness. Rendered
+outputs stay in explicit external review directories until reviewed publication
+is deliberately requested; they are not added to the research bibliography.
+Inspect PDF pages, HTML links, and the EPUB/PowerPoint presentation layouts.
 
 ## Verification
 
-Run from the repository root:
-
 ```bash
-uv run python3 code/orchestrators/validate_manuscript.py
 uv run python3 code/orchestrators/validate_manuscript.py --json
+uv run python3 code/orchestrators/render_manuscript.py --output-dir /private/tmp/docxology-manuscript-review --json
 ```
 
-These commands inspect current sources without writing an artifact. Report their success as structural source validation. Repository-wide checks and publication evidence remain governed by [development.md](../operations/development.md) and [release-integrity.md](../operations/release-integrity.md).
+Report structural validation and actual rendering separately. Repository-wide
+checks remain governed by [development.md](../operations/development.md) and
+[release-integrity.md](../operations/release-integrity.md).

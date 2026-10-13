@@ -51,4 +51,25 @@ uv run python3 code/orchestrators/validate_manuscript.py --json
 
 The read-only validator checks root-relative configuration, section labels, citation-key resolution, unresolved tokens, cross-references, and local references, including reference-style links/images. It checks bounded BibTeX entry delimiters and key inventory, rejecting unclosed entries, stray text, duplicate keys, and unresolved citations. It rejects duplicate YAML keys and non-boolean gate/render settings. It does not validate complete BibTeX field grammar, citation style, TeX rendering, external sources, or publication readiness. `--root PATH` supports disposable repository fixtures; JSON goes to stdout without creating a receipt.
 
-The declared formats in `config.yaml` are requested rendering targets. This repository does not currently declare a manuscript rendering command. A future rendering integration must specify its pinned runtime, output location, cross-reference support, figure handling, and inspected artifact before a rendered-publication claim is added.
+The declared renderer uses Pandoc 3.12.1, pandoc-crossref 0.3.25 (built against that
+Pandoc version), and Typst 0.15.1. It produces HTML, PDF, EPUB3, and PowerPoint
+slides into a new external review directory:
+
+```bash
+uv run python3 code/orchestrators/render_manuscript.py --output-dir /private/tmp/docxology-manuscript-review --json
+```
+
+The parent must exist and have no symlink ancestors. Existing review directories
+are never overwritten. Source structure and the pinned runtime must pass first;
+Pandoc's bibliography reader and crossref/citeproc resolve references. Outputs
+are staged and checked before publication to the review directory. The receipt
+binds source/tool/output hashes and keeps human/editorial approval explicit.
+This command is manual and excluded from ordinary site regeneration; missing
+render tools do not silently claim a rendered draft. Raw renderer markup,
+remote/local figures, and Mermaid require a separately declared integration
+before they are accepted. The prospective LaTeX preamble is not executed.
+
+Manuscript text and original manuscript figures are licensed CC BY 4.0.
+This declaration does not relicense archived papers, third-party artwork,
+repository software, or linked material. Scientific and editorial review remain
+separate from rendering. Inspect each requested format before external release.

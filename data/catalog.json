@@ -133,7 +133,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#videos",
       "name": "YouTube Video Metadata",
-      "description": "1127 personal-channel and Active Inference Institute videos with local page URLs, topics, related works, and transcript cache status.",
+      "description": "1185 personal-channel and Active Inference Institute videos with local page URLs, topics, related works, and transcript cache status.",
       "url": "https://danielarifriedman.com/data/videos.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -156,7 +156,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#videos-index",
       "name": "Video Timeline Index",
-      "description": "Compact 1127-video projection used by the interactive timeline; detail metadata remains in data/videos.json.",
+      "description": "Compact 1185-video projection used by the interactive timeline; detail metadata remains in data/videos.json.",
       "url": "https://danielarifriedman.com/data/videos-index.json",
       "encodingFormat": "application/json",
       "creator": {
