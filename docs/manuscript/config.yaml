@@ -41,7 +41,7 @@ manuscript_dir: "docs/manuscript"
 render:
   toolchain:
     pandoc: "3.12.1"
-    pandoc-crossref: "0.3.25"
+    pandoc-crossref: "0.3.26"
     typst: "0.15.1"
   formats:
     pdf: true

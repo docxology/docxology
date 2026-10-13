@@ -4,6 +4,13 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-10-13
 
+- **Verified manuscript toolchain:** aligned crossref with the released 0.3.26
+  build for Pandoc 3.12.1, required an exact build-version token, and added
+  regressions for mismatched and prefix-collision versions. The real offline
+  four-format integration now runs only with `DOCXOLOGY_TEST_RENDER=1`;
+  all four formats rendered successfully with the pinned tools. Human visual,
+  editorial, and publication-readiness decisions remain pending.
+
 - **Manuscript rendering:** declared pinned Pandoc/crossref/Typst draft renders
   for HTML, PDF, EPUB, and PowerPoint with input/tool/output hashes, isolated
   renderer data, and failure-safe external review directories. Manuscript text

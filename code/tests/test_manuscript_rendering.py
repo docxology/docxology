@@ -2,7 +2,7 @@
 from pathlib import Path
 import hashlib
 import json
-import shutil
+import os
 import sys
 
 import pytest
@@ -125,7 +125,7 @@ def test_failure_during_render_never_publishes_misbound_outputs(tmp_path, monkey
     assert not list(tmp_path.glob('.docxology-render-*'))
 
 
-@pytest.mark.skipif(not all(shutil.which(name) for name in rendering.TOOLS), reason="optional pinned manuscript toolchain unavailable")
+@pytest.mark.skipif(os.environ.get("DOCXOLOGY_TEST_RENDER") != "1", reason="set DOCXOLOGY_TEST_RENDER=1 for the pinned offline render integration")
 def test_real_four_format_render_and_receipt(tmp_path):
     root = Path(__file__).resolve().parents[2]
     receipt = rendering.render_manuscript(root, tmp_path / "review")
@@ -136,3 +136,24 @@ def test_real_four_format_render_and_receipt(tmp_path):
     assert receipt["editorial_review"] == "pending"
     assert not receipt["publication_readiness_assessed"]
     assert str(tmp_path) not in str(receipt)
+
+
+def test_exact_toolchain_and_crossref_build_are_required(monkeypatch, tmp_path):
+    binary = tmp_path / "renderer"
+    binary.write_bytes(b"synthetic renderer")
+    monkeypatch.setattr(rendering.shutil, "which", lambda name: str(binary))
+    banners = {"pandoc": "pandoc 3.12.1", "pandoc-crossref": "pandoc-crossref v0.3.26 built with Pandoc v3.12.1,", "typst": "typst 0.15.1 (test)"}
+    calls = iter(banners.values())
+    monkeypatch.setattr(rendering, "run", lambda *args, **kwargs: next(calls))
+    result = rendering.toolchain(tmp_path)
+    assert {name: data["version"] for name, data in result.items()} == rendering.TOOLS
+    assert all(data["binary_sha256"] == hashlib.sha256(binary.read_bytes()).hexdigest() for data in result.values())
+    for pandoc_version in ("3.10.1", "3.12.10"):
+        banners["pandoc-crossref"] = f"pandoc-crossref v0.3.26 built with Pandoc v{pandoc_version},"
+        calls = iter(banners.values())
+        with pytest.raises(ValueError, match="pinned Pandoc build"):
+            rendering.toolchain(tmp_path)
+    banners["pandoc-crossref"] = "pandoc-crossref v0.3.260 built with Pandoc v3.12.1,"
+    calls = iter(banners.values())
+    with pytest.raises(ValueError, match="version mismatch"):
+        rendering.toolchain(tmp_path)
