@@ -1,6 +1,30 @@
 {
-  "generated_at": "2026-10-13T16:13:28Z",
+  "generated_at": "2026-10-13T16:56:37Z",
   "artifacts": [
+    {
+      "name": "Scholar PDF placement proposal (review only)",
+      "outputs": [
+        "reports/scholar_pdf_placement_proposal_2026-10-13.json",
+        "reports/scholar_pdf_placement_proposal_2026-10-13.md"
+      ],
+      "sources": [
+        "data/scholar-readiness.json (hash-bound observed input)",
+        "data/pages-artifact-manifest.json (hash-bound observed input)"
+      ],
+      "command": "manual budget/source review; proposal is not an applied projection or ordinary regeneration output"
+    },
+    {
+      "name": "Reviewed YouTube exact-date refresh receipt",
+      "outputs": [
+        "reports/youtube_refresh_review_2026-10-13.json"
+      ],
+      "sources": [
+        "code/data/youtube_personal.json",
+        "code/data/youtube_institute.json",
+        "public YouTube metadata responses"
+      ],
+      "command": "manual bounded source review after fetch_youtube_data.py; exact new-date hydration and source identity checks required before adoption"
+    },
     {
       "name": "Paper folder doc regeneration",
       "outputs": [
