@@ -17,6 +17,10 @@ separate from the research publications archived under [papers/](../../papers/).
   HTML/PDF/EPUB/PowerPoint outputs with a source/tool/output hash receipt. It
   uses a real bibliography parser, resolves cross-references, and preserves
   prior review directories on failure. See [the command and scope](README.md).
+- The explicit offline integration ran successfully on 2026-10-13 with Pandoc
+  3.12.1, pandoc-crossref 0.3.26, and Typst 0.15.1. It produced all four declared
+  formats, parsed the bibliography, and checked output hashes/package integrity.
+  This is automated render evidence; format layout approval remains pending.
 - Manuscript text and original manuscript figures use CC BY 4.0. Archived and
   third-party material retain their own rights.
 

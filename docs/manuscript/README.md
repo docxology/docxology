@@ -51,7 +51,7 @@ uv run python3 code/orchestrators/validate_manuscript.py --json
 
 The read-only validator checks root-relative configuration, section labels, citation-key resolution, unresolved tokens, cross-references, and local references, including reference-style links/images. It checks bounded BibTeX entry delimiters and key inventory, rejecting unclosed entries, stray text, duplicate keys, and unresolved citations. It rejects duplicate YAML keys and non-boolean gate/render settings. It does not validate complete BibTeX field grammar, citation style, TeX rendering, external sources, or publication readiness. `--root PATH` supports disposable repository fixtures; JSON goes to stdout without creating a receipt.
 
-The declared renderer uses Pandoc 3.12.1, pandoc-crossref 0.3.25 (built against that
+The declared renderer uses Pandoc 3.12.1, pandoc-crossref 0.3.26 (built against that
 Pandoc version), and Typst 0.15.1. It produces HTML, PDF, EPUB3, and PowerPoint
 slides into a new external review directory:
 
@@ -73,3 +73,13 @@ Manuscript text and original manuscript figures are licensed CC BY 4.0.
 This declaration does not relicense archived papers, third-party artwork,
 repository software, or linked material. Scientific and editorial review remain
 separate from rendering. Inspect each requested format before external release.
+
+The real four-format integration test is explicit:
+
+```bash
+DOCXOLOGY_TEST_RENDER=1 uv run python3 -m pytest code/tests/test_manuscript_rendering.py -q
+```
+
+Ordinary test runs skip that integration even when renderer binaries happen to
+be installed. The opt-in run requires the exact declared versions and fails on
+missing or mismatched tools; unit tests always exercise the version boundary.

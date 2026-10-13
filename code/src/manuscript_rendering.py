@@ -17,7 +17,7 @@ import yaml
 from docxology_tools.generated_outputs import read_generated_output_text
 from docxology_tools.manuscript_validation import MANUSCRIPT_PATH, UniqueKeyLoader, validate_manuscript
 
-TOOLS = {"pandoc": "3.12.1", "pandoc-crossref": "0.3.25", "typst": "0.15.1"}
+TOOLS = {"pandoc": "3.12.1", "pandoc-crossref": "0.3.26", "typst": "0.15.1"}
 OUTPUTS = {"html": "docxology-methods.html", "pdf": "docxology-methods.pdf",
            "epub": "docxology-methods.epub", "slides": "docxology-methods.pptx"}
 TIMEOUT = 90
@@ -50,7 +50,9 @@ def toolchain(root: Path) -> dict:
         banner = lines[0]
         if not re.search(r"\bv?" + re.escape(version) + r"(?:\s|$)", banner):
             raise ValueError(f"Renderer version mismatch: {name} requires {version}")
-        if name == "pandoc-crossref" and f"Pandoc v{TOOLS['pandoc']}" not in banner:
+        if name == "pandoc-crossref" and not re.search(
+            r"\bPandoc v" + re.escape(TOOLS["pandoc"]) + r"(?:\s|,|$)", banner
+        ):
             raise ValueError("pandoc-crossref must match the pinned Pandoc build")
         result[name] = {"version": version, "binary_sha256": digest(Path(executable).resolve())}
     return result
