@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-10-12T22:38:01Z",
+      "generated_at": "2026-10-13T22:25:44Z",
       "path": "data/claims.json",
-      "sha256": "fcd7a157c6446f6fcc881a98ef53d0d6f1dce535e542e4af92a21954e01c7139",
+      "sha256": "8ac0edda18bd66fad926c49c0b5a744987707872650d39f7f71a805d493c2401",
       "source_commit": null
     },
     "doi_role_review": {
@@ -57,9 +57,9 @@
       "source_commit": "2118e2603c458414afb3a1254616c21cef74bf11"
     },
     "repository_classification": {
-      "generated_at": "2026-10-12T22:38:01Z",
+      "generated_at": "2026-10-13T22:30:37Z",
       "path": "data/repository-classification.json",
-      "sha256": "fbd8cea27ecbf33f3070e329595b95a084add08093557ff1e6c0fe56c6493fa8",
+      "sha256": "2d6e4ec2fab823a626fba060fbc18298da59f98cf2a99e532ae383f4cf930623",
       "source_commit": null
     },
     "scholar_snapshot": {
@@ -1788,6 +1788,25 @@
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
+        "full_name": "docxology/ActiveACO",
+        "html_url": "https://github.com/docxology/ActiveACO",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/ActiveACO",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
         "full_name": "docxology/ActiveInference.jl",
         "html_url": "https://github.com/docxology/ActiveInference.jl",
         "review_status": "acknowledged"
@@ -3441,6 +3460,25 @@
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
+        "full_name": "docxology/okn-registry",
+        "html_url": "https://github.com/docxology/okn-registry",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/okn-registry",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
         "full_name": "docxology/osc-geo-h3grid-srv",
         "html_url": "https://github.com/docxology/osc-geo-h3grid-srv",
         "review_status": "acknowledged"
@@ -3901,12 +3939,12 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "ef3befe793c08df09ba2c6a52fa81a35fe2e7694",
-  "source_tree_sha": "8900771e4c7d7a04b81fd267a70c2d485f361988",
+  "source_commit": "b204fed2c081ffb019c434761c9e4d08f97b7d09",
+  "source_tree_sha": "4647955ab36f0b0ee090622c1ccc3c33b7b5a84f",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
-    "applied": 198,
+    "applied": 200,
     "categories": {
       "ambiguous_doi_change": {
         "applied": 64,
@@ -3924,7 +3962,7 @@
         "rejected": 0
       },
       "repository_classification": {
-        "applied": 115,
+        "applied": 117,
         "deferred": 0,
         "rejected": 0
       },
@@ -3940,7 +3978,7 @@
       }
     },
     "deferred": 1,
-    "items": 199,
+    "items": 201,
     "rejected": 0,
     "review_required": true
   }
