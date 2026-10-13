@@ -126,10 +126,12 @@
       "id": 2,
       "repository": "docxology/template_code_project",
       "canonical_source": "docxology/template",
-      "status": "correction_under_verification",
+      "status": "canonical_merged_mirror_pending",
       "decision": "Qualify convergence and accuracy by termination status; replace monotonicity/uniform-convergence claims with unit-Hessian contraction conditions.",
       "canonical_candidate_commit": "a97b5bc3201e0ccc6c02e73771600ce6bc705bb3",
-      "verification_boundary": "Current-source correction/review verified locally; canonical and mirror main publication pending. Historical output bytes are preserved; private fresh HTML renders exceeded the tracked output budget and require separate projection review."
+      "verification_boundary": "Canonical source/review is on verified main; standalone source mirror synchronization is pending. Historical output bytes are preserved. Private fresh HTML renders exceed the tracked output budget and require separate projection review; a sampled PDF page needs layout correction.",
+      "canonical_main_commit": "d160eb9c90eec18e365117c3ccaef731c47d8604",
+      "canonical_pull_request": "https://github.com/docxology/template/pull/138"
     },
     {
       "id": 3,
@@ -151,19 +153,23 @@
       "id": 5,
       "repository": "docxology/template_template",
       "canonical_source": "docxology/template",
-      "status": "correction_under_verification",
+      "status": "canonical_merged_mirror_pending",
       "decision": "Differentiate the comparison inventory from native template capabilities; avoid exhaustive current-market claims from a versioned matrix.",
       "canonical_candidate_commit": "a97b5bc3201e0ccc6c02e73771600ce6bc705bb3",
-      "verification_boundary": "Current-source correction/review verified locally; canonical and mirror main publication pending. Historical output bytes are preserved; private fresh HTML renders exceeded the tracked output budget and require separate projection review."
+      "verification_boundary": "Canonical source/review is on verified main; standalone source mirror synchronization is pending. Historical output bytes are preserved. Private fresh HTML renders exceed the tracked output budget and require separate projection review; a sampled PDF page needs layout correction.",
+      "canonical_main_commit": "d160eb9c90eec18e365117c3ccaef731c47d8604",
+      "canonical_pull_request": "https://github.com/docxology/template/pull/138"
     },
     {
       "id": 6,
       "repository": "docxology/template_methods_paper",
       "canonical_source": "docxology/template",
-      "status": "current_source_consistent",
+      "status": "canonical_merged_mirror_pending",
       "decision": "Current Dimension enum and abstract/methods/setup consistently identify eight dimensions, including separate molar and mass concentration. Archived six/seven wording belongs to earlier source epoch.",
       "canonical_candidate_commit": "a97b5bc3201e0ccc6c02e73771600ce6bc705bb3",
-      "verification_boundary": "Current-source correction/review verified locally; canonical and mirror main publication pending. Historical output bytes are preserved; private fresh HTML renders exceeded the tracked output budget and require separate projection review."
+      "verification_boundary": "Canonical source/review is on verified main; standalone source mirror synchronization is pending. Historical output bytes are preserved. Private fresh HTML renders exceed the tracked output budget and require separate projection review; a sampled PDF page needs layout correction.",
+      "canonical_main_commit": "d160eb9c90eec18e365117c3ccaef731c47d8604",
+      "canonical_pull_request": "https://github.com/docxology/template/pull/138"
     },
     {
       "id": 7,

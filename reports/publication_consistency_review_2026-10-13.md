@@ -23,3 +23,21 @@ wording. Blake's demonstrated cache-membership defect is corrected, but the
 historical six-record discrepancy is not attributed without its original run.
 Remaining model, participant, statistical, native-execution, rendering and
 editorial limitations stay explicit in each upstream review.
+
+## Ten publication questions
+
+| Item | Current decision | Remaining boundary |
+| --- | --- | --- |
+| 1. Cognitive Integrity | Integrated 1,475 / 5 / 15 and legacy 950 / 4 / 12 are distinct protocols; strict source gates corrected | Computational CI comparison repair pending; no field-performance claim |
+| 2. Gradient convergence | Contractive step-size range and termination-qualified accuracy replace uniform/monotonic claims; canonical correction merged | Mirror sync and new-format publication acceptance pending |
+| 3. Markdown Decision Process | Model, participant and statistical claims explicitly unverified; correction merged | Original checkpoint and study provenance needed |
+| 4. ActiveACO | Historical node/sample configurations documented on docxology fork main | Table-specific original run denominator unresolved; haailabs upstream unchanged |
+| 5. Template comparison | Inventory categories differ from native capability counts; canonical correction merged | Mirror sync; a snapshot is not an exhaustive market claim |
+| 6. Methods dimensions | Current and historical source enum has eight dimensions | Archived six/seven wording does not justify changing current source |
+| 7. Dopamine foraging | Published 113/160 assignments conflict; no originating GitHub repo identified | Original analysis or author/publisher reconciliation needed |
+| 8. FEP formal | Current 168-topic maturity and semantic-scope contracts reviewed on main | Compilation is not full scientific/native acceptance |
+| 9. Symergetics | Source definitions, collected cases, execution and coverage separated; corrected main verified | Historical publications remain separate |
+| 10. Blake | Saved-run membership and strict boolean modality corrected on main | Historical 156/162 attribution needs the original run |
+
+The paired JSON records repository, PR and commit identities. Corrected source
+does not silently replace archival PDFs, deposits or measured data.
