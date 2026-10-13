@@ -29,6 +29,12 @@ into `works/` or claim this gap is resolved. A future proposal must preserve
 inbound links, bind projected files to source hashes, and pass the unchanged
 artifact budget before changing placement.
 
+A [dated budget-safe pilot proposal](../../reports/scholar_pdf_placement_proposal_2026-10-13.md)
+now evaluates content-addressed, byte-identical web copies while preserving
+every inbound work and archive URL. It is not applied: per-document content
+review, a declared projection contract, fresh artifact measurements, and
+deployed old/new URL checks remain prerequisites.
+
 The guidance also requires searchable PDFs no larger than 5 MB, scholarly
 content, and freely visible full text or complete author-written abstracts.
 Those requirements are separate from valid HTML metadata. A generated summary,

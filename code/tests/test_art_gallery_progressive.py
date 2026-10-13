@@ -66,6 +66,57 @@ def test_gallery_bounds_startup_and_keeps_every_record_reachable(gallery_server)
         browser.close()
 
 
+@pytest.mark.parametrize('dates', [
+    ['2026-02-28 23:59:59', '2026-02-28 23:59:59', '2000-02-29 01:00:00', '', None],
+    ['2026-02-28T23:59:59Z', '2026-02-28', '2000-02-29 01:00:00', '', None],
+], ids=['fixed-timestamps', 'other-accepted-dates'])
+def test_date_sort_preserves_order_and_reserves_collation_for_other_shapes(gallery_server, dates):
+    from playwright.sync_api import sync_playwright
+
+    records = json.loads((REPO_ROOT / 'data/artworks-index.json').read_text())['artworks'][:len(dates)]
+    for record, date, title in zip(records, dates, ['Zebra', 'Élan', 'Alpha', 'alpha', '中文']):
+        record['date'] = date
+        record['title'] = title
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        context = browser.new_context(service_workers='block')
+        context.route('https://**/*', lambda route: route.fulfill(status=200, content_type='image/png', body=PIXEL_PNG))
+        page = context.new_page()
+        errors = _watch_console_errors(page)
+        page.add_init_script('''(() => {
+            window.originalArtworkCollation = String.prototype.localeCompare;
+            window.artworkCollationCalls = [];
+            String.prototype.localeCompare = function (other, ...options) {
+                window.artworkCollationCalls.push([String(this), String(other)]);
+                return window.originalArtworkCollation.call(this, other, ...options);
+            };
+        })();''')
+        page.route('**/data/artworks-index.json', lambda route: route.fulfill(json={'artworks': records}))
+        page.goto(gallery_server + '/art.html')
+        page.wait_for_function('(count) => document.querySelectorAll("#grid [data-index]").length === count', arg=len(records))
+        for sort in ['newest', 'oldest']:
+            page.locator('#sortSelect').select_option(sort)
+            expected = page.evaluate('''({records, sort}) => [...records].sort((a, b) => {
+                const first = String((sort === 'newest' ? b.date : a.date) || '');
+                const second = String((sort === 'newest' ? a.date : b.date) || '');
+                return window.originalArtworkCollation.call(first, second);
+            }).map(record => record.id)''', {'records': records, 'sort': sort})
+            assert page.locator('#grid .art-card').evaluate_all('(cards) => cards.map(card => card.dataset.artworkId)') == expected
+        date_collations = page.evaluate('() => window.artworkCollationCalls.length')
+        if 'T' in dates[0]:
+            assert date_collations > 0
+        else:
+            assert date_collations == 0
+        page.locator('#sortSelect').select_option('title')
+        expected = page.evaluate('''(records) => [...records].sort((a, b) =>
+            window.originalArtworkCollation.call(a.title, b.title)).map(record => record.id)''', records)
+        assert page.locator('#grid .art-card').evaluate_all('(cards) => cards.map(card => card.dataset.artworkId)') == expected
+        assert page.evaluate('() => window.artworkCollationCalls.length') > date_collations
+        assert errors == []
+        context.close()
+        browser.close()
+
+
 def test_late_details_cannot_replace_new_selection_or_closed_viewer(gallery_server):
     from playwright.sync_api import sync_playwright
 

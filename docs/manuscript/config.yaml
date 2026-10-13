@@ -4,8 +4,8 @@
 paper:
   title: "docxology: Research, Software, and Citation Index"
   subtitle: "Source authority, progressive discovery, and commit-bound release evidence"
-  version: "0.2.0-draft"
-  date: "2026-10-05"
+  version: "0.3.0-draft"
+  date: "2026-10-13"
 
 authors:
   - name: "Daniel Ari Friedman"
@@ -33,12 +33,16 @@ keywords:
   - "evidence catalog"
 
 metadata:
-  license: "TBD"
+  license: "CC-BY-4.0"
   language: "en"
 
 manuscript_dir: "docs/manuscript"
 
 render:
+  toolchain:
+    pandoc: "3.12.1"
+    pandoc-crossref: "0.3.25"
+    typst: "0.15.1"
   formats:
     pdf: true
     html: true

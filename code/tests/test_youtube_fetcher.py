@@ -288,5 +288,118 @@ class TestSaveLoadJson(unittest.TestCase):
             self.assertTrue(path.exists())
 
 
+
+
+
+class TestPublicRefreshBoundaries(unittest.TestCase):
+    def test_explicit_upcoming_items_are_not_published_videos(self):
+        runner = _JsonlRunner([
+            {"id": "upcoming", "title": "Scheduled", "live_status": "is_upcoming"},
+            {"id": "past", "title": "Archived", "live_status": "was_live", "upload_date": "20261001"},
+        ])
+        videos = yf.fetch_tab("https://www.youtube.com/@example", "streams", "institute", "approximate", runner)
+        self.assertEqual([video["id"] for video in videos], ["past"])
+
+    def test_undated_published_or_live_stream_still_fails(self):
+        for state in ("was_live", "is_live", "not_live", None):
+            with self.subTest(state=state):
+                runner = _JsonlRunner([{"id": "example", "title": "Missing date", "live_status": state}])
+                with self.assertRaisesRegex(ValueError, "canonical video validation"):
+                    yf.fetch_tab("https://www.youtube.com/@example", "streams", "institute", "approximate", runner)
+
+    def test_missing_optional_shorts_is_structured_complete_empty(self):
+        class Runner:
+            def __call__(self, url, mode):
+                if url.endswith("/shorts"):
+                    raise yf.OptionalTabAbsentError("explicit missing tab")
+                return []
+        result = yf.fetch_channel_result("https://www.youtube.com/@example", "institute", runner=Runner())
+        self.assertTrue(result.complete)
+        self.assertTrue(result.tabs[-1].absent)
+        self.assertTrue(result.as_dict()["tabs"][-1]["absent"])
+
+    def test_optional_absence_cannot_excuse_missing_required_tab(self):
+        class Runner:
+            def __call__(self, url, mode):
+                raise yf.OptionalTabAbsentError("explicit missing tab")
+        result = yf.fetch_channel_result("https://www.youtube.com/@example", "institute", tabs=[("videos", "approximate")], runner=Runner())
+        self.assertFalse(result.complete)
+
+    def test_absence_requires_exact_error_and_zero_stdout(self):
+        error = "ERROR: [youtube:tab] @activeinference: This channel does not have a shorts tab\n"
+        executor = _RecordingExecutor(returncode=1, stderr=error)
+        with self.assertRaises(yf.OptionalTabAbsentError):
+            yf.run_yt_dlp("https://www.youtube.com/@activeinference/shorts", executor=executor)
+        for url, stdout, stderr in (
+            ("https://www.youtube.com/@activeinference/videos", "", error),
+            ("https://www.youtube.com/@activeinference/shorts", '{"id":"partial"}', error),
+            ("https://www.youtube.com/@activeinference/shorts", "", error + "ERROR: another failure\n"),
+            ("https://www.youtube.com/@activeinference/shorts", "", "ERROR: forbidden\n"),
+        ):
+            with self.subTest(url=url, stderr=stderr):
+                with self.assertRaises(RuntimeError) as failure:
+                    yf.run_yt_dlp(url, executor=_RecordingExecutor(returncode=1, stdout=stdout, stderr=stderr))
+                self.assertNotIsInstance(failure.exception, yf.OptionalTabAbsentError)
+
+    def test_undated_short_uses_exact_fixed_origin_metadata(self):
+        runner = _JsonlRunner(
+            [{"id": "kxqkyuMlb84", "title": "Flat title", "url": "https://evil.example/private"}],
+            [{"id": "kxqkyuMlb84", "title": "Exact title", "upload_date": "20260325"}],
+        )
+        videos = yf.fetch_tab("https://www.youtube.com/@example", "shorts", "personal", "approximate", runner)
+        self.assertEqual(videos[0]["upload_date"], "20260325")
+        self.assertEqual(runner.calls[1], ("https://www.youtube.com/watch?v=kxqkyuMlb84", "metadata"))
+
+    def test_hydration_is_bounded_before_any_item_request(self):
+        runner = _JsonlRunner([{"id": "kxqkyuMlb84"} for _ in range(yf.MAX_SHORT_DATE_HYDRATIONS + 1)])
+        with self.assertRaisesRegex(ValueError, "hydration limit"):
+            yf.fetch_tab("https://www.youtube.com/@example", "shorts", "personal", "approximate", runner)
+        self.assertEqual(len(runner.calls), 1)
+
+    def test_exact_hydration_requires_identity_date_and_publication_state(self):
+        for exact in (
+            [{"id": "other-id-xx", "upload_date": "20260325"}],
+            [{"id": "kxqkyuMlb84", "upload_date": "20260230"}],
+            [{"id": "kxqkyuMlb84"}],
+            [{"id": "kxqkyuMlb84", "upload_date": "20260325", "live_status": "is_upcoming"}],
+            [],
+        ):
+            with self.subTest(exact=exact):
+                runner = _JsonlRunner([{"id": "kxqkyuMlb84"}], exact)
+                with self.assertRaises(ValueError):
+                    yf.fetch_tab("https://www.youtube.com/@example", "shorts", "personal", "approximate", runner)
+
+    def test_malformed_nonempty_date_is_never_hydrated_or_guessed(self):
+        runner = _JsonlRunner([{"id": "kxqkyuMlb84", "upload_date": "bad date"}])
+        with self.assertRaisesRegex(ValueError, "canonical video validation"):
+            yf.fetch_tab("https://www.youtube.com/@example", "shorts", "personal", "approximate", runner)
+        self.assertEqual(len(runner.calls), 1)
+
+    def test_hydration_command_is_public_only_and_has_firm_deadline(self):
+        executor = _RecordingExecutor(stdout='{"id":"kxqkyuMlb84"}\n')
+        yf.run_yt_dlp("https://www.youtube.com/watch?v=kxqkyuMlb84", "metadata", executor=executor)
+        self.assertEqual(executor.timeouts, [yf.METADATA_TIMEOUT_SECONDS])
+        self.assertIn("--ignore-config", executor.commands[0])
+        self.assertIn("--no-cache-dir", executor.commands[0])
+        self.assertIn("--no-playlist", executor.commands[0])
+        self.assertNotIn("--cookies-from-browser", executor.commands[0])
+        with self.assertRaisesRegex(ValueError, "canonical public"):
+            yf.run_yt_dlp("https://evil.example/private", "metadata", executor=executor)
+
+    def test_hydration_failure_preserves_existing_cache(self):
+        import fetch_youtube_data as orchestrator
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / "youtube_personal.json"
+            original = {"meta": {"video_count": 1}, "videos": [{"id": "existing", "upload_date": "20200101"}]}
+            path.write_text(json.dumps(original))
+            before = path.read_bytes()
+            runner = _JsonlRunner([{"id": "kxqkyuMlb84"}], [{"id": "wrong-video", "upload_date": "20260325"}])
+            def fetcher(url, channel, tabs):
+                return yf.fetch_channel_result(url, channel, tabs=[("shorts", "approximate")], runner=runner)
+            result = orchestrator.refresh_channel("personal", "https://www.youtube.com/@example", path, fast=True, fetcher=fetcher)
+            self.assertFalse(result.saved)
+            self.assertEqual(path.read_bytes(), before)
+
+
 if __name__ == "__main__":
     unittest.main()

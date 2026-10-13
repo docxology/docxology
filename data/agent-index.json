@@ -309,12 +309,12 @@
     },
     "videos": {
       "path": "/data/videos.json",
-      "count": 1127,
+      "count": 1185,
       "schema": "VideoObject"
     },
     "videos_index": {
       "path": "/data/videos-index.json",
-      "count": 1127,
+      "count": 1185,
       "schema": "VideoIndex"
     },
     "search": {
@@ -394,7 +394,7 @@
     },
     "generated_manifest": {
       "path": "/data/generated-manifest.json",
-      "count": 58,
+      "count": 60,
       "schema": "GeneratedManifest"
     }
   },
@@ -1097,28 +1097,28 @@
     ],
     "VideoIndex": {
       "schema_version": "VideoIndex.v1",
-      "generated_at": "2026-10-12T18:37:58Z",
+      "generated_at": "2026-10-13T16:55:56Z",
       "source": "data/videos.json",
-      "count": 1127,
+      "count": 1185,
       "counts": {
-        "total": 1127,
-        "personal": 405,
-        "institute": 722,
+        "total": 1185,
+        "personal": 420,
+        "institute": 765,
         "with_transcripts": 4
       },
       "channels": {
         "personal": {
           "channel_id": "personal",
           "channel_url": "https://www.youtube.com/@danielarifriedman",
-          "fetched_at": "2026-06-20T05:01:37.205539+00:00",
-          "video_count": 405,
+          "fetched_at": "2026-10-13T16:44:15.964026+00:00",
+          "video_count": 420,
           "schema_version": "1.0"
         },
         "institute": {
           "channel_id": "institute",
           "channel_url": "https://www.youtube.com/@activeinference",
-          "fetched_at": "2026-06-20T05:01:37.256048+00:00",
-          "video_count": 722,
+          "fetched_at": "2026-10-13T16:44:27.769538+00:00",
+          "video_count": 765,
           "schema_version": "1.0"
         }
       },
@@ -1135,12 +1135,12 @@
       "videos": [
         {
           "id": "kxKgdvFHOLM",
-          "title": "Red Harvester Ants entering and exiting a laboratory nest",
+          "title": "Red Harvester Ants Entering and Exiting a Laboratory Nest",
           "channel": "personal",
           "upload_date": "20150517",
           "year": 2015,
-          "duration": 97.0,
-          "view_count": 8
+          "duration": 97,
+          "view_count": 9
         }
       ]
     },
@@ -1464,11 +1464,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 905887321,
+        "source_bytes": 907217594,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5960,
-        "artifact_bytes": 906940240
+        "artifact_file_count": 6024,
+        "artifact_bytes": 908281376
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5946,9 +5946,9 @@
     "repositories": "7e17123bee5c1ef62844b91ac7b545f3fd70b48fe484c31c41f3fdcf84f544f1",
     "artworks_index": "29270719124f00fb4d9c2729262c33318c82e9dbb114ec8b0f777436bb270769",
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
-    "videos": "d322202c51f61b151f7739933dcedc11a9d9efbe83c3c81a05bd87f811231339",
-    "videos_index": "00cbbae94055540634edca93e02f98ff62b4abccc127c0099d9edecfcc3d26fe",
-    "search": "6bc4b6c3f319dca8fd7bcc6580612a4e21e19a06bb077ccd343a09a074cde425",
+    "videos": "a9c2aff72504bbae962bf1d03d30be89d59ed94d99137284bc455646d9374dc4",
+    "videos_index": "2b94691e60ba12b70aedf5089e6feeee9b62d8d3615a3bf4fe600d1ab457c46f",
+    "search": "75b36eebf9a82c4b59b47ed50bbfeef9fe30ee1a44476701c1d049fe04e87a1f",
     "claims": "fcd7a157c6446f6fcc881a98ef53d0d6f1dce535e542e4af92a21954e01c7139",
     "scholar_verification_receipt": "eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759",
     "coverage_exceptions": "cd5f27ddc26015d9323d0383370b82291befdfe8964312fe1e581ef8effb3c38",
@@ -5958,10 +5958,10 @@
     "resume": "e8664af072772b779802811b1ad9eae42f506135e39cf5bf6c34b8994f8c2f0e",
     "work_enrichment": "efcab877656a2cf4028a1c09f8e9e8914c8a65b0675aeb1aaf0c2d963d813543",
     "scholar_readiness": "315a73a8cd1454cd9b7b2cd240f7ec9bb80e56a80ddf06c2d5403918c59b4685",
-    "catalog": "a519635cfa22d56d239c16deec43cb0c3e63324bff230db57f6a52f3f864301e",
+    "catalog": "dc419ba5ae8132e75a9c81cf7f7e32c99535385e230815c206d77e350a922d99",
     "reconciliation": "0404727677daf98fa5d6b378cf319f4a2fac1fe5e0107e92ea32e4e178f59689",
     "reproducibility": "7a65af07cf53e49eac82b3c39e8654a3ec462a23597754cb596365dbbce191b7",
-    "generated_manifest": "9789dd33a8f103317cea12ac734d426ffa203874fd86f3859b2a2855a48e0e71",
+    "generated_manifest": "333f2f7ef108373476a535f60329e5d7f434bc9dc3ec7378b36f12e897c4adec",
     "current_counts": "d50f3e73733b6c89a82d175fed988410ab356b1fd77111bd16ae256572423117"
   },
   "source_provenance": {

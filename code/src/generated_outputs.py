@@ -391,6 +391,7 @@ def read_generated_output_text(
     *,
     encoding: str = "utf-8",
     errors: str | None = None,
+    newline: str | None = None,
 ) -> str | None:
     """Read a generated output safely, returning ``None`` only when missing."""
     candidate = safe_generated_output_path(repo_root, target)
@@ -407,7 +408,7 @@ def read_generated_output_text(
                 ) from exc
             try:
                 _ensure_unlinked_regular_file_descriptor(fd, candidate)
-                with os.fdopen(fd, "r", encoding=encoding, errors=errors) as handle:
+                with os.fdopen(fd, "r", encoding=encoding, errors=errors, newline=newline) as handle:
                     fd = -1
                     return handle.read()
             finally:

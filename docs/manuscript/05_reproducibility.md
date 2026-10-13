@@ -27,4 +27,4 @@ Record the tested commit, exact command, runtime, exit status, and receipt scope
 
 ## Manuscript reproducibility
 
-`validate_manuscript.py` is read-only and can inspect a disposable fixture with `--root PATH`. Its JSON states that rendering and publication-readiness assessment were not performed. The current draft has no token producer or figure-rendering pipeline. A future renderer must have a declared reproducible command and inspected outputs before the draft can claim successful rendering.
+`validate_manuscript.py` is read-only and can inspect a disposable fixture with `--root PATH`. Its JSON states that rendering and publication-readiness assessment were not performed. The pinned manual renderer and its command are documented in [the manuscript guide](README.md). Its receipt binds source, tool, and output hashes; it does not grant human or editorial approval. No token producer or figure-rendering pipeline is declared.

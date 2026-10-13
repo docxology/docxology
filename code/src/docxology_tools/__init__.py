@@ -70,6 +70,7 @@ __path__ = [str(_SRC_DIR)]
 MODULES: tuple[str, ...] = (
     "abstract_text",
     "author_entities",
+    "manuscript_rendering",
     "artifact_budget",
     "biblio_table",
     "bibliography_links",

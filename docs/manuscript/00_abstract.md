@@ -4,4 +4,4 @@ docxology maintains a public research, software, and citation index through cura
 
 The system assigns stable work identities, declares ordered generation and no-write checks in shared code, progressively loads browser catalogs, and publishes a bounded GitHub Pages artifact while retaining the complete repository archive. Its evidence model distinguishes source observations, byte identity, runtime checks, and human visual review. Each supports a different claim; generated inventories and structural checks alone cannot establish scientific validity or publication readiness.
 
-The draft links the implementing files and maintenance commands. It contains no new experimental measurements, comparative benchmarks, or scientific conclusions about the indexed publications. Manuscript rendering and editorial review remain separate steps.
+The draft links the implementing files and maintenance commands. It contains no new experimental measurements, comparative benchmarks, or scientific conclusions about the indexed publications. Structural validation, actual rendering, and editorial review establish separate evidence.

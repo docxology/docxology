@@ -64,7 +64,7 @@
       <description>Video — Active Inference Institute</description>
     </item>
     <item>
-      <title>What Ant Colonies Teach Us About Building Better AI</title>
+      <title>The Ant Stack: Modeling an Ant from Physics to Cognition</title>
       <link>https://danielarifriedman.com/videos/personal-xLOYUDe1LPo.html</link>
       <guid isPermaLink="true">https://danielarifriedman.com/videos/personal-xLOYUDe1LPo.html</guid>
       <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
@@ -90,6 +90,13 @@
       <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-Y3-FMoaEZYE.html</guid>
       <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
       <description>Video — Active Inference Institute</description>
+    </item>
+    <item>
+      <title>Ants on a Lantern</title>
+      <link>https://danielarifriedman.com/videos/personal-AJnyTc9F0hA.html</link>
+      <guid isPermaLink="true">https://danielarifriedman.com/videos/personal-AJnyTc9F0hA.html</guid>
+      <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
+      <description>Video — Personal Channel</description>
     </item>
     <item>
       <title>Active InferAnt Stream 013.1 ~ NoOrg is a Real Org</title>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-EIOIMEo8vOY.html</guid>
       <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
       <description>Video — Active Inference Institute</description>
-    </item>
-    <item>
-      <title>CodeStream #002.1 ~ Synthetic Intelligence for Pre-Meta-Science (The Infinite GrAnt Imaginarium)</title>
-      <link>https://danielarifriedman.com/videos/personal-MgyYGCaZMaE.html</link>
-      <guid isPermaLink="true">https://danielarifriedman.com/videos/personal-MgyYGCaZMaE.html</guid>
-      <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
-      <description>Video — Personal Channel</description>
     </item>
   </channel>
 </rss>
