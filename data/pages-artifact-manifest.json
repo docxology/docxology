@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-17T17:22:55Z",
-  "source_commit_at_generation": "5766f56ad24bf7a0bd033ddf1bbcf54bb8af7b57",
+  "generated_at": "2026-10-17T17:52:23Z",
+  "source_commit_at_generation": "d36abb069f21b9809999e4351feb10719772bb45",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 927840450,
+    "source_bytes": 927847604,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 6051,
-    "artifact_bytes": 928909150
+    "artifact_file_count": 6052,
+    "artifact_bytes": 928916480
   },
   "included_files": [
     {
@@ -11756,7 +11756,7 @@
     {
       "path": "data/scholar-readiness.json",
       "bytes": 382920,
-      "sha256": "e8ee1c09b0fd0c005f3448195703d6f53fbbf34708dad9f138b93f41ee9e2c00"
+      "sha256": "d345e983a2374ccb7ea3bd3664a93d0c2ff605f26a6f2255b4237f0eb1160e0f"
     },
     {
       "path": "data/scholar-snapshot.json",
@@ -11840,8 +11840,8 @@
     },
     {
       "path": "data/work-enrichment.json",
-      "bytes": 802922,
-      "sha256": "9eddb0b3cb39a8538cc3c9941a35f4999fe8525f4e4abae9a057ae2afecdc0d6"
+      "bytes": 803165,
+      "sha256": "e1729899bd0c784afacca047e80f524824ffa4101dc9c825004ebc88865dd486"
     },
     {
       "path": "data/work-identifiers.json",
@@ -20615,13 +20615,13 @@
     },
     {
       "path": "papers/2026_ITrace/README.md",
-      "bytes": 3820,
-      "sha256": "29b05cc0e183318657a070222c681c9cfd57c8453b2d3a1cb210aa686308d51f"
+      "bytes": 4064,
+      "sha256": "0e6b226622941aa417ae6e4d205119f9aff93e61a142296fcbadcff86384cb0d"
     },
     {
       "path": "papers/2026_ITrace/SKILL.md",
       "bytes": 2998,
-      "sha256": "80aa982d520433092d8ca8f1dab2f89148bf9b7ca25c18daffb4240bccfce9a5"
+      "sha256": "cfe5180f64e3dfdb0dae248ccfd29de2c50917e9427244599e0b1d607a3833de"
     },
     {
       "path": "papers/2026_ITrace/full_text.md",
@@ -20630,18 +20630,23 @@
     },
     {
       "path": "papers/2026_ITrace/images/AGENTS.md",
-      "bytes": 536,
-      "sha256": "e7f508cd9824d1d6dfd7b179f1c829931054279c368738a2432cff12ff02b5b0"
+      "bytes": 591,
+      "sha256": "8ae77d2c7a9efc42f24cc4a27886d18c1a4271d0a2f48ea29da87682c448c47d"
+    },
+    {
+      "path": "papers/2026_ITrace/images/PROVENANCE.json",
+      "bytes": 2154,
+      "sha256": "102f1776849c7c101d54e1badcb6d148d80d8e3b2620a144cfbfe6f3d3d329fa"
     },
     {
       "path": "papers/2026_ITrace/images/README.md",
-      "bytes": 101,
-      "sha256": "864c860c40630f6bf6fb7d30cf60aa5f52abfd2ca707d2af9a2a8ba3cb5e54b1"
+      "bytes": 486,
+      "sha256": "a3dbefab08bb9953baef22e7400ce34aa59133158184ee96ea03e50ef8e5dc53"
     },
     {
       "path": "papers/2026_ITrace/index.html",
-      "bytes": 13207,
-      "sha256": "797739afc51110a0a374204927a109cadbbd87046e5b999519188545250074ec"
+      "bytes": 13558,
+      "sha256": "ae504f8044baffe3997dda1c27b615876d5301a7697656711301d19c835aa7c6"
     },
     {
       "path": "papers/2026_ITrace/itrace-0.4.1-manuscript.pdf",
@@ -20655,8 +20660,8 @@
     },
     {
       "path": "papers/2026_ITrace/metadata.json",
-      "bytes": 7847,
-      "sha256": "379c82d811b50a70fe5ab74f85239aa4eb9954f640b8d1c5d826b908a39c7346"
+      "bytes": 9621,
+      "sha256": "6b5154fb66690451c26348a7cf08c9446de85ca61fdba11c71946214f7fdb4c2"
     },
     {
       "path": "papers/2026_ITrace/provenance.json",
@@ -22485,8 +22490,8 @@
     },
     {
       "path": "papers/paper_metadata.json",
-      "bytes": 568744,
-      "sha256": "f821c26ae2a1f18c631f43df3cdb115b09fbbb79dadf70fdf3d25bf48bb4810d"
+      "bytes": 569230,
+      "sha256": "68f026ef48521f5d8d9a9854fef1a934139390eab6777129da3d5a27e60925f0"
     },
     {
       "path": "projections.html",
@@ -22910,8 +22915,8 @@
     },
     {
       "path": "reports/publication_refresh_review_2026-10-16.json",
-      "bytes": 4137,
-      "sha256": "bfc1bee538d58bf5de4b7534944a45a5ad1025af1d9195dfb05bbec3e9a82745"
+      "bytes": 4519,
+      "sha256": "9daa3492d2750b778c036da6b541979fe24150f3653e0916ea45aa73b9dc2a50"
     },
     {
       "path": "reports/publishing_status_megaindex.md",
@@ -23081,27 +23086,27 @@
     {
       "path": "search-index-bootstrap.json",
       "bytes": 13936,
-      "sha256": "f5d0c608999049df21038e6fba46bf4a80c1b3cc8ca4f27da13043ef90e3c5be"
+      "sha256": "715a6e69a61a1714e6da04c19ee3b55cdc46a5908b43a42f2777821fa7127df6"
     },
     {
       "path": "search-index-content-video.json",
       "bytes": 1018457,
-      "sha256": "810acc61866d285248f5ddaf6fc6b8ce15d4c1198f647a57e7128dd6921b301c"
+      "sha256": "9426e383165f64a662e750802bdd280a6519ee7d720492536031753ea7de564a"
     },
     {
       "path": "search-index-content-work.json",
-      "bytes": 834312,
-      "sha256": "63305f030cef55ab9b3e7ff2c6a74e6ab58b92f9025ecb19e6162084502c555c"
+      "bytes": 834555,
+      "sha256": "b32436e8cc4ecfb2ca7b9ac7547d80520516a114ed7f52df855fdc263bd41e32"
     },
     {
       "path": "search-index-core.json",
       "bytes": 1819757,
-      "sha256": "477f47855036e4dd57d90dcb92ce548c1cc8ec39eb78f3463ce94cbf3416192c"
+      "sha256": "b29b33eb6a09de1866c486963e86f4c2512f6398eebe29218d22992493c9a688"
     },
     {
       "path": "search-index.json",
-      "bytes": 2988923,
-      "sha256": "bf2b4b0ff566f9a7a824465227139ec475b9683efaa3f9720c5f22dae68dcb79"
+      "bytes": 2989166,
+      "sha256": "d176f34a7c733379451215e975ecea9d4fc95cc61ba29d54652e5c8006f4fb20"
     },
     {
       "path": "search.html",
@@ -30015,8 +30020,8 @@
     },
     {
       "path": "works/Friedman2026ITraceVerificationFirstWebcam165.html",
-      "bytes": 24471,
-      "sha256": "b459bd65266b7b2728f26c03ffdc7fabb9cefce253e017d5a4d78f859a16fb9f"
+      "bytes": 25065,
+      "sha256": "dc6bfabd74279b9e5ae1a9c81c0a810b8a439d12875e61e87eaaee2a654f08c6"
     },
     {
       "path": "works/Friedman2026IllegalStatesMostlyUnrepresentable191.html",
