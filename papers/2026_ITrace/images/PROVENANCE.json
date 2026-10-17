@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "source_pdf": "../itrace-0.4.1-manuscript.pdf",
+  "source_pdf_sha256": "690a05ff451995470eb1d29a387adbe0141f4cb036df100471599085c82ee941",
+  "baseline_extraction_commit": "df9a8f6866ac5863b96b7807d1310d20c615b0a5",
+  "baseline_extraction_git_path": "papers/2026_ITrace/full_text.md",
+  "scope": "Retained image bytes and the baseline extraction identify the older v0.4.1 manuscript. These are archival thumbnails, not figures extracted from the corrected 2026-10-16 manuscript. No image bytes were changed.",
+  "images": [
+    {
+      "filename": "page10_img1.png",
+      "sha256": "d11e22e2ef5da319e86b906860c574afea018ca05468df6efd3dd25ce39e0a0d"
+    },
+    {
+      "filename": "page11_img1.png",
+      "sha256": "79612235f53db06b477bac9c739e25af31f57d4cec2bfc16a1cbdb2099b3a934"
+    },
+    {
+      "filename": "page12_img1.png",
+      "sha256": "4c87f261f9618feb77043c5bcca1fd15749e2d9def386a3f2d437e491eb414eb"
+    },
+    {
+      "filename": "page12_img2.png",
+      "sha256": "99eefe5d20ba04e989afe07552ae9b4dfc21cd7f1fde1fd00757c3c6cceb1522"
+    },
+    {
+      "filename": "page13_img1.png",
+      "sha256": "2c2217fcde0d97c736a1b54bcbc1782033cf3b49fdbb36a04f2abfd0bc07f1e6"
+    },
+    {
+      "filename": "page15_img1.png",
+      "sha256": "c10ad1bed7c1cb113f655a5c5cd6722ae37bb8f16164be7a91bbd4d4ee47b866"
+    },
+    {
+      "filename": "page16_img1.png",
+      "sha256": "a67edc242edaf86acb980ff39e4cf0be0d27c77799942ffc4825a1d59edcc136"
+    },
+    {
+      "filename": "page18_img1.png",
+      "sha256": "6cd6ecbb7b756448c3ec06f95ee831affa10df4b6a68a8bf2e8350f484dce8e2"
+    },
+    {
+      "filename": "page18_img2.png",
+      "sha256": "a83d9fba6cfb795fa4c3c234f81cbe0743f96158b5805d19556e5950d2055218"
+    },
+    {
+      "filename": "page1_img1.png",
+      "sha256": "15880d7fc01e9f55e3521af07045c28e054e90d1d33c8a94e00e0b7937be38f9"
+    },
+    {
+      "filename": "page20_img1.png",
+      "sha256": "ba9cd11d35eb68646f0eaab0afc3ef0ae44b3a0daa6afba4eb70061572788a67"
+    },
+    {
+      "filename": "page21_img1.png",
+      "sha256": "e76ad8de7bfc62911fc55fbc084ff5b65d0c660e8d28722a477aaa6854620bcc"
+    }
+  ]
+}

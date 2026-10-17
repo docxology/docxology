@@ -71,5 +71,12 @@
     "new_releases": 0,
     "new_records": 0,
     "scope": "Bounded latest-five releases for changed repositories and newest-ten records per identity query; supplements the earlier full-history scan."
+  },
+  "archived_figure_provenance": {
+    "folder": "papers/2026_ITrace",
+    "manifest": "papers/2026_ITrace/images/PROVENANCE.json",
+    "source_pdf": "itrace-0.4.1-manuscript.pdf",
+    "image_count": 12,
+    "decision": "Preserve original bytes/URLs and label the retained gallery as archival; corrected manuscript figures remain in its verified PDF and pinned source archive."
   }
 }

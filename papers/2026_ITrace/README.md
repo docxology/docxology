@@ -10,6 +10,8 @@
 
 ## Abstract
 
+> Archive note: The extracted image thumbnails are retained from itrace-0.4.1-manuscript.pdf and are not figures from the corrected 2026-10-16 manuscript. Use itrace-manuscript-2026-10-16.pdf or its pinned source archive for current figures.
+>
 > # iTrace manuscript revision, 2026-10-16 This deposit archives the corrected 30-page manuscript from reviewed commit `310be17ace8ae61621afe01329356427a3e6c861`. Exact source and figure artifacts are at https://github.com/docxology/itrace/tree/310be17ace8ae61621afe01329356427a3e6c861. It is a manuscript revision after the immutable v0.5.0 release, not a new package release. The package version in that source remains 0.5.0. The previous release remains at https://doi.org/10.5281/zenodo.23403300. References in the manuscript to that DOI identify the archived baseline. Changes correct overlap scoring, resampling and fit uncertainty, fitted-null diagnostics, uncertainty figures, scholarship, and scientific interpretation. The manuscript distinguishes synthetic verification from real-device validation. No new participant or reference-device data are claimed. Verification: 737 tests passed, 2 skipped, 91.05% combined statement-and-branch coverage; 44 final artifact tests passed, independent review approved the exact source commit, and all ten hosted CI jobs passed. The included figure manifest inventories 41 artifacts in the linked source tree. `provenance.json` binds this PDF to the Git commit; `SHA256SUMS` inventories every payload.
 
 ## Keywords
