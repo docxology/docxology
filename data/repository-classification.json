@@ -1,20 +1,20 @@
 {
   "schema_version": "1.4",
-  "generated_at": "2026-10-13T22:30:37Z",
+  "generated_at": "2026-10-17T00:13:17Z",
   "source": "data/github-repositories.json",
   "acknowledged_exclusions_source": "data/repository-exclusions.json",
   "policy": "Complete GitHub inventory remains distinct from the curated software catalog; unknown primary repositories stay reviewable and are never auto-promoted. Repositories listed in data/repository-exclusions.json are deliberate not-catalog decisions (profile/website/test/mirror/duplicate or public forks) and are marked acknowledged only when their full_name and immutable github_id/github_node_id match the reviewed repository. Each row reports how its decision was reached in reviewed_by: principal means the principal reviewed that repository individually; standing_policy means an already-recorded principal decision was applied to a fork nobody reviewed one by one, and policy_source names that decision.",
   "summary": {
-    "total_inventory": 281,
-    "uncatalogued": 117,
-    "forks": 105,
-    "acknowledged_forks": 105,
+    "total_inventory": 284,
+    "uncatalogued": 118,
+    "forks": 106,
+    "acknowledged_forks": 106,
     "primary_requires_review": 0,
     "acknowledged_excluded": 12,
     "archived": 4,
     "missing_description": 13,
     "short_description": 18,
-    "substantive_description": 86
+    "substantive_description": 87
   },
   "repositories": [
     {
@@ -1667,6 +1667,30 @@
       "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated"
     },
     {
+      "full_name": "docxology/Lenticulum.jl",
+      "github_id": 1420850101,
+      "github_node_id": "R_kgDOVLBztQ",
+      "name": "Lenticulum.jl",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/Lenticulum.jl",
+      "fork": true,
+      "archived": false,
+      "private": false,
+      "description": "An Implicit Learning Library on factor graphs",
+      "description_quality": "substantive",
+      "language": "",
+      "topics": [],
+      "recently_updated": true,
+      "relevance": "unknown",
+      "catalog_role": "acknowledged_not_curated",
+      "exclusion_reason": "fork_not_curated",
+      "review_status": "acknowledged",
+      "acknowledged_reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-16",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated"
+    },
+    {
       "full_name": "docxology/links",
       "github_id": 963451287,
       "github_node_id": "R_kgDOOW0Zlw",
@@ -2012,7 +2036,7 @@
       "private": false,
       "description": "",
       "description_quality": "missing",
-      "language": "",
+      "language": "Python",
       "topics": [],
       "recently_updated": true,
       "relevance": "unknown",

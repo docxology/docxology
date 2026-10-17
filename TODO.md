@@ -8,7 +8,7 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-10-13; only unfinished work and recurring checks remain.
+- Last reviewed: 2026-10-16; only unfinished work and recurring checks remain.
   Completed implementation and source-review history lives in CHANGELOG.md and
   the linked dated reports. Effort estimates below are separate from priority.
 
@@ -78,13 +78,12 @@ Recurring checks below are operating obligations, not unfinished feature work.
   restrictions permit; repeat source refreshes on their declared triggers.
   Refresh Scholar only after a direct authenticated observation. A live Flickr
   refresh needs its approved API-key workflow.
-- Latest check (2026-10-13): no new GitHub releases found; bounded newest-five
-  Zenodo identity queries recovered without a new recent-record delta (not a
-  full-history reconciliation). Both YouTube caches now have a complete reviewed
-  refresh, with exact new dates in [the source receipt](reports/youtube_refresh_review_2026-10-13.json).
-  Completed intake and
-  pair decisions are recorded in [the source review](reports/public_source_review_2026-10-12.md)
-  and [the repository review](reports/repository_catalog_review_2026-10-12.json).
+- Latest check (2026-10-16): refreshed the live snapshot, paginated source
+  inventory, complete GitHub inventory and full GitHub/Zenodo pairing scan.
+  Publication and software decisions, archive boundaries and access limitations
+  are recorded in [the refresh review](reports/publication_refresh_review_2026-10-16.json).
+  The current [source review](reports/public_source_review_2026-10-16.md) keeps
+  ambiguous historical release pairs and inaccessible profiles explicit.
 - Deliverable: refresh ORCID, Crossref, Zenodo, PubMed, Europe PMC, GitHub, Scholar, organizational, teaching, art, and software evidence; review `data/coverage-exceptions.json`
 - Acceptance: only verified metadata is applied, access dates and caveats remain visible, and current coverage is linked from agent and human discovery surfaces
 - Dependencies: public-source APIs, primary profile pages, coverage report

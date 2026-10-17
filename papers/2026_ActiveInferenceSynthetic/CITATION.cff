@@ -2,10 +2,11 @@ cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
 title: "Active Inference -- A Synthetic Overview"
-version: "0.5.0"
-date-released: 2026-10-12
+version: "0.6.1"
+date-released: 2026-10-15
 doi: 10.5281/zenodo.23321280
 url: "https://doi.org/10.5281/zenodo.23321280"
+repository-code: "https://github.com/docxology/ActiveInferenceSynthetic"
 authors:
   - family-names: "Friedman"
     given-names: "Daniel Ari"
@@ -18,3 +19,6 @@ identifiers:
   - type: url
     value: "https://doi.org/10.5281/zenodo.23321280"
     description: "Canonical citation DOI resolver"
+  - type: url
+    value: "https://github.com/docxology/ActiveInferenceSynthetic/releases/tag/synthetic-public-v0.6.1"
+    description: "GitHub release"

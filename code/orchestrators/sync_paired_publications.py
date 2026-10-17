@@ -46,6 +46,7 @@ from docxology_tools.publication_pairing import (  # noqa: E402
     infer_domain,
     infer_type,
     metadata_payload,
+    creator_names,
     render_agents,
     render_citation,
     render_readme,
@@ -875,7 +876,7 @@ def ensure_bibliography_row(pair: PublicationPair, folder: str, updated: list[st
                 cells[5] = "*Zenodo*"
                 cells[6] = f"[{pair.doi}](https://doi.org/{pair.doi})"
                 cells[7] = f"[📁](../papers/{folder}/)"
-                line = "| " + " | ".join(cells[:8]) + " |"
+                line = "| " + " | ".join(cells) + " |"
                 replaced = True
         out_lines.append(line)
     if replaced:
@@ -894,6 +895,11 @@ def ensure_bibliography_row(pair: PublicationPair, folder: str, updated: list[st
         f"| {next_num} | {year} | {domain} | {typ} | {pair.record.title} | *Zenodo* | "
         f"[{pair.doi}](https://doi.org/{pair.doi}) | [📁](../papers/{folder}/) |"
     )
+    if any(line.startswith("| # | Year |") and "| Authors |" in line
+           for line in text.splitlines()):
+        authors = "; ".join(str(creator.get("name") or "").strip()
+                            for creator in pair.record.creators if creator.get("name"))
+        row = row.rstrip() + f" {authors} |"
     lines = text.splitlines()
     insert_at = len(lines)
     in_table = False
@@ -968,7 +974,7 @@ def update_paper_metadata_index(pair: PublicationPair, folder: str, updated: lis
         "topic": topic,
         "name": pair.record.title,
         "description": pair.record.description,
-        "authors": "Daniel Ari Friedman",
+        "authors": creator_names(pair.record),
         "abstract": pair.record.description,
         "keywords": pair.record.keywords,
         "doi": pair.doi,

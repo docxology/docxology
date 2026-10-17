@@ -394,3 +394,35 @@ def test_infer_domain_matches_whole_word_entomology_term():
     )
 
     assert infer_domain(pair) == "🐜"
+
+
+def test_paired_templates_preserve_complete_creator_list_and_orcids():
+    import yaml
+    from docxology_tools.publication_pairing import render_citation
+
+    release = GitHubRelease.from_api("docxology", "example", {
+        "tag_name": "v1", "html_url": "https://github.com/docxology/example/releases/tag/v1"})
+    record = ZenodoRecord.from_api({"id": 1, "doi": "10.5281/zenodo.1", "metadata": {
+        "title": "Joint work", "publication_date": "2026-10-16",
+        "creators": [{"name": "Friedman, Daniel Ari", "orcid": "0000-0001-6232-9096"},
+                     {"name": "Example Coauthor", "orcid": "https://orcid.org/0000-0002-1825-0097"}]}})
+    pair = PublicationPair(release=release, record=record, confidence="strong", evidence=())
+    readme = render_readme(pair, "2026_Joint")
+    assert "**Daniel Ari Friedman, Example Coauthor**" in readme
+    assert "> Friedman, D. A.; Example Coauthor (2026)." in readme
+    authors = yaml.safe_load(render_citation(pair))["authors"]
+    assert len(authors) == 2
+    assert authors[0]["family-names"] == "Friedman"
+    assert authors[1]["name"] == "Example Coauthor"
+    assert authors[1]["orcid"] == "https://orcid.org/0000-0002-1825-0097"
+
+
+def test_paired_templates_do_not_invent_creator_when_metadata_is_missing():
+    import yaml
+    from docxology_tools.publication_pairing import render_citation
+
+    release = GitHubRelease.from_api("docxology", "example", {"tag_name": "v1"})
+    record = ZenodoRecord.from_api({"id": 1, "doi": "10.5281/zenodo.1", "metadata": {"title": "Unknown"}})
+    pair = PublicationPair(release=release, record=record, confidence="strong", evidence=())
+    assert "Creator metadata unavailable" in render_readme(pair, "2026_Unknown")
+    assert yaml.safe_load(render_citation(pair))["authors"] == []

@@ -1,21 +1,41 @@
-# AGENTS.md - Active Inference -- A Synthetic Overview
+<!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
+
+# AGENTS.md — Active Inference -- A Synthetic Overview
 
 **Paper**: Active Inference -- A Synthetic Overview (2026)
-**DOI**: [10.5281/zenodo.23321280](https://doi.org/10.5281/zenodo.23321280)
-**Zenodo record**: https://zenodo.org/records/23321280
+**Domain**: Active Inference
+**Authors**: Daniel Ari Friedman, Alexandra Mikhailova
 
 ---
 
 ## Agent Roles
 
-### Citation Agent
-- Use the Zenodo DOI as the canonical citation.
-- Preserve full authorship: Daniel Ari Friedman, Alexandra Mikhailova.
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for ActiveInferenceSynthetic
+- Updates related_papers links when new connections are identified
 
-### Integration Agent
-- Keep README, CITATION.cff, metadata.json, paper_metadata.json, and BIBLIOGRAPHY.md synchronized.
+### 🔬 RESEARCHER
+- Extracts methods: See paper
+- Identifies findings: See paper
+- Maps contributions to Active Inference literature
+
+### 🎓 EDUCATOR
+- Creates learning pathways for Active Inference concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
+
+### 🔗 INTEGRATOR
+- Connects Active Inference -- A Synthetic Overview to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
+
+---
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/23321280
-- **Source**: Zenodo-only record (no paired GitHub release)
+| Source | Agent | Action | Status |
+|--------|-------|--------|--------|
+| Metadata | ARCHIVIST | Cataloged metadata | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
+| Metadata | EDUCATOR | Generated documentation | ✅ |

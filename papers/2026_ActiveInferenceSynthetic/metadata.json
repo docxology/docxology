@@ -1,11 +1,11 @@
 {
   "title": "Active Inference -- A Synthetic Overview",
-  "version": "0.5.0",
+  "version": "0.6.1",
   "doi": "10.5281/zenodo.23321280",
   "doi_url": "https://doi.org/10.5281/zenodo.23321280",
   "zenodo_record": "https://zenodo.org/records/23321280",
-  "record_id": "23321281",
-  "publication_date": "2026-10-12",
+  "record_id": "23396307",
+  "publication_date": "2026-10-15",
   "resource_type": {
     "title": "Journal article",
     "type": "publication",
@@ -22,7 +22,7 @@
       "affiliation": "Active Inference Institute"
     }
   ],
-  "description": "This tutorial connects Active Inference and synthetic intelligences to explicitly specified informational and dynamical models. Finite categorical examples make Bayesian conditioning, variational free energy, expected free energy, policy planning, and observation-contingent commitments executable. A decision-value example separates information gain in nats from improved expected utility and observation cost. Gaussian examples distinguish deterministic relaxing paths from stationary ensemble probability current, and marginal dependence from conditional independence. A two-level model illustrates prediction and joint conditioning without assuming a neural implementation. The standalone Python package supplies reproducible figures, independent analytical checks, and counterexamples; a separate Lean layer imports selected real-valued results from a pinned revision of the broader FEP_Formal library. Generalized Notation Notation and other Active Inference Institute resources provide further routes for model specification and learning. The paper distinguishes computational correctness, theorem hypotheses, thermodynamic units, and scientific interpretation. These controlled demonstrations explain particular models; they neither establish general intelligence nor infer life from circulation.",
+  "description": "Public distribution 0.6.1 of Active Inference -- A Synthetic Overview. This successor archives the revised 28-page paper, complete twenty-minute Daniel lecture, linked slides, English captions, current repository source archive, frozen lecture replay inputs and verification metadata. Scientific package/manuscript version remains 0.5.0; the paper and lecture preserve the verified edition_v15 teaching-release bytes. Documentation is updated throughout the public repository. No numerical model, scientific result or Lean proposition is changed. The source ZIP is bound to the exact commit in RELEASE_IDENTITY.json; the replay ZIP retains the original media inputs and runtime. GitHub release: https://github.com/docxology/ActiveInferenceSynthetic/releases/tag/synthetic-public-v0.6.1 . Earlier edition: https://zenodo.org/records/23321281 . Computational, formal, media and physical-interpretation scopes remain distinct.",
   "keywords": [
     "active inference",
     "free energy principle",
@@ -34,47 +34,91 @@
   ],
   "files": [
     {
-      "name": "ActiveInferenceSynthetic_v0.5.0.pdf",
-      "size_bytes": 3356707,
-      "checksum": "md5:5eaf1df7ff9fab64020f8f94a405086c",
-      "download_url": "https://zenodo.org/api/records/23321281/files/ActiveInferenceSynthetic_v0.5.0.pdf/content"
+      "name": "ActiveInferenceSynthetic_Slides.pdf",
+      "size_bytes": 4521666,
+      "checksum": "md5:901b52f1ec135438e031c1ca5eb79b1b",
+      "download_url": "https://zenodo.org/api/records/23396307/files/ActiveInferenceSynthetic_Slides.pdf/content"
     },
     {
-      "name": "ActiveInferenceSynthetic_source_v0.5.0.zip",
-      "size_bytes": 3277405,
-      "checksum": "md5:01d28f6bae2199b43e791b3f860196d4",
-      "download_url": "https://zenodo.org/api/records/23321281/files/ActiveInferenceSynthetic_source_v0.5.0.zip/content"
+      "name": "ActiveInferenceSynthetic_20min.mp4",
+      "size_bytes": 45117113,
+      "checksum": "md5:657589a37c69f364e6a875c179ece067",
+      "download_url": "https://zenodo.org/api/records/23396307/files/ActiveInferenceSynthetic_20min.mp4/content"
+    },
+    {
+      "name": "captions.vtt",
+      "size_bytes": 29682,
+      "checksum": "md5:ef4e567265d2e89c3f76c5f097b26423",
+      "download_url": "https://zenodo.org/api/records/23396307/files/captions.vtt/content"
+    },
+    {
+      "name": "RELEASE_IDENTITY.json",
+      "size_bytes": 1430,
+      "checksum": "md5:68c96799caab5008224a930923a253ee",
+      "download_url": "https://zenodo.org/api/records/23396307/files/RELEASE_IDENTITY.json/content"
+    },
+    {
+      "name": "VERIFICATION.json",
+      "size_bytes": 1888,
+      "checksum": "md5:ca368a6a0ab447f58e71a018c3270fa7",
+      "download_url": "https://zenodo.org/api/records/23396307/files/VERIFICATION.json/content"
+    },
+    {
+      "name": "captions.srt",
+      "size_bytes": 30942,
+      "checksum": "md5:1feb65f36f7bdd6a35a5e2c1aab10364",
+      "download_url": "https://zenodo.org/api/records/23396307/files/captions.srt/content"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size_bytes": 939,
+      "checksum": "md5:3609e1adf0e5405a1774f4f6e02c9287",
+      "download_url": "https://zenodo.org/api/records/23396307/files/SHA256SUMS.txt/content"
+    },
+    {
+      "name": "ActiveInferenceSynthetic_Reproducibility.zip",
+      "size_bytes": 104776384,
+      "checksum": "md5:ba61ee6ad3cb4a13d9ab9f8fcd783e54",
+      "download_url": "https://zenodo.org/api/records/23396307/files/ActiveInferenceSynthetic_Reproducibility.zip/content"
+    },
+    {
+      "name": "publication.json",
+      "size_bytes": 1995,
+      "checksum": "md5:3a3833face3e5eb00825b90281fba6bd",
+      "download_url": "https://zenodo.org/api/records/23396307/files/publication.json/content"
+    },
+    {
+      "name": "ActiveInferenceSynthetic_Revised.pdf",
+      "size_bytes": 3776345,
+      "checksum": "md5:df6920714f81c168b95f060a59f9b928",
+      "download_url": "https://zenodo.org/api/records/23396307/files/ActiveInferenceSynthetic_Revised.pdf/content"
+    },
+    {
+      "name": "ActiveInferenceSynthetic_Source_v0.6.1.zip",
+      "size_bytes": 50948317,
+      "checksum": "md5:fa1c23925146ce35e8532486d299f330",
+      "download_url": "https://zenodo.org/api/records/23396307/files/ActiveInferenceSynthetic_Source_v0.6.1.zip/content"
     }
   ],
   "related_resources": [
     {
-      "identifier": "https://github.com/docxology/ActiveInferenceSynthetic",
-      "relation": "references",
-      "resource_type": "software",
-      "scheme": "url"
-    },
-    {
-      "identifier": "10.5281/zenodo.23220027",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.5281/zenodo.7803328",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.5281/zenodo.23196891",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.5281/zenodo.7803313",
-      "relation": "references",
-      "scheme": "doi"
+      "type": "repository",
+      "url": "https://github.com/docxology/ActiveInferenceSynthetic"
     }
   ],
-  "github_repo": "",
+  "github_repo": "docxology/ActiveInferenceSynthetic",
   "source": "zenodo-only",
-  "checked_at": "2026-10-12T18:31:36Z"
+  "checked_at": "2026-10-16T21:46:26Z",
+  "github_release_url": "https://github.com/docxology/ActiveInferenceSynthetic/releases/tag/synthetic-public-v0.6.1",
+  "release_tag": "synthetic-public-v0.6.1",
+  "release_name": "Active Inference Synthetic — public paper, lecture and complete source",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked",
+    "title_overlap"
+  ],
+  "primary_pdf": "ActiveInferenceSynthetic_Revised.pdf",
+  "scientific_package_version": "0.5.0"
 }

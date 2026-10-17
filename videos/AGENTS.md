@@ -1,12 +1,12 @@
-# AGENTS.md — `docxology/videos/`
+# AGENTS.md — `videos/`
 
-Added by the 2026-08-29 ongoing-docs fleet pass.
+Tracked public per-video HTML pages and the generated video index. Follow the
+root repository instructions and source/iframe policies.
 
-## What this is
-
-Generated per-video HTML pages (`institute--<id>.html` / `institute-<id>.html` by
-YouTube id) plus `index.html` for the video index of the docxology site.
-
-## Invariants
-
-- Local-only; never commit. Generated — regenerate, don't edit.
+- Refresh approved YouTube metadata through `fetch_youtube_data.py`, then run
+  `build_video_pages.py` through the ordered `regenerate_all.py` pipeline.
+- Preserve public video IDs and existing inbound URLs; do not hand-edit HTML.
+- Keep publication dates, upcoming-item exclusions, and incomplete fetches
+  explicit. A failed refresh must preserve the prior cache.
+- Review and commit authorized generated changes on a work branch, following
+  the repository's validation and payload/control-tail publication sequence.

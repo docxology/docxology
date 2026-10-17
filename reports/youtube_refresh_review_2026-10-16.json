@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-17T00:13:03Z",
+  "reviewed_by": "Codex",
+  "scope": "Complete fast tab fetches with prior publication-date fields preserved; newly discovered video identity and exact metadata checked separately. Known duration retained when flat listings omit it. No media downloaded.",
+  "initial_full_attempts": [
+    {
+      "channel": "personal",
+      "complete": true,
+      "scratch_saved": true,
+      "failed_tabs": []
+    },
+    {
+      "channel": "institute",
+      "complete": false,
+      "scratch_saved": false,
+      "failed_tabs": [
+        "videos"
+      ]
+    }
+  ],
+  "reviewed_refreshes": [
+    {
+      "channel_id": "personal",
+      "channel_url": "https://www.youtube.com/@danielarifriedman",
+      "output_path": "code/data/youtube_personal.json",
+      "mode": "fast",
+      "elapsed_seconds": 65.309,
+      "complete": true,
+      "saved": true,
+      "written_video_count": 420,
+      "fetch": {
+        "channel_id": "personal",
+        "channel_url": "https://www.youtube.com/@danielarifriedman",
+        "complete": true,
+        "video_count": 420,
+        "tabs": [
+          {
+            "tab": "videos",
+            "mode": "approximate",
+            "complete": true,
+            "video_count": 155,
+            "failure": null,
+            "absent": false
+          },
+          {
+            "tab": "streams",
+            "mode": "approximate",
+            "complete": true,
+            "video_count": 253,
+            "failure": null,
+            "absent": false
+          },
+          {
+            "tab": "shorts",
+            "mode": "approximate",
+            "complete": true,
+            "video_count": 12,
+            "failure": null,
+            "absent": false
+          }
+        ],
+        "failures": []
+      },
+      "failure": null,
+      "added_ids": [],
+      "previous_count": 420,
+      "reviewed_count": 420,
+      "new_video_dates_verified": true,
+      "prior_date_fields_preserved": true,
+      "policy": "Complete fast tab fetch; retain existing exact date fields and known duration when flat metadata omits it. Verify new video IDs and exact public metadata individually.",
+      "source_before_sha256": "0aa5231d9ac5211a7c3cc57284b48b5aa870f49b852780893a4663ed14108a98",
+      "source_after_sha256": "13551a97e44f1fb993f0090ad0e0666e6102ce217e772de970c1bb7717a1b8f5"
+    },
+    {
+      "channel_id": "institute",
+      "channel_url": "https://www.youtube.com/@activeinference",
+      "output_path": "code/data/youtube_institute.json",
+      "mode": "fast",
+      "elapsed_seconds": 38.738,
+      "complete": true,
+      "saved": true,
+      "written_video_count": 766,
+      "fetch": {
+        "channel_id": "institute",
+        "channel_url": "https://www.youtube.com/@activeinference",
+        "complete": true,
+        "video_count": 766,
+        "tabs": [
+          {
+            "tab": "videos",
+            "mode": "approximate",
+            "complete": true,
+            "video_count": 300,
+            "failure": null,
+            "absent": false
+          },
+          {
+            "tab": "streams",
+            "mode": "approximate",
+            "complete": true,
+            "video_count": 466,
+            "failure": null,
+            "absent": false
+          },
+          {
+            "tab": "shorts",
+            "mode": "approximate",
+            "complete": true,
+            "video_count": 0,
+            "failure": null,
+            "absent": true
+          }
+        ],
+        "failures": []
+      },
+      "failure": null,
+      "added_ids": [
+        "d2BFJx7dWTQ"
+      ],
+      "previous_count": 765,
+      "reviewed_count": 766,
+      "new_video_dates_verified": true,
+      "prior_date_fields_preserved": true,
+      "policy": "Complete fast tab fetch; retain existing exact date fields and known duration when flat metadata omits it. Verify new video IDs and exact public metadata individually.",
+      "source_before_sha256": "13ee6de30e746e1de934d4c3b193b53a542f5e5c9eb1faeee33fc434bbfd4b23",
+      "source_after_sha256": "850e388f50635c6100b95b2ddc3bfa5a7fb9b66cfbcece6f1d48161303a7fd80"
+    }
+  ]
+}

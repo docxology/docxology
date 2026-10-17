@@ -1,0 +1,1960 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-17T09:22:16Z",
+  "reviewed_by": "Codex",
+  "source_path": "data/github-repositories.json",
+  "source_sha256": "8ab48da22e3e784b9d3446b14e06476440dc2d68b3f7653e758c325c9882ecc1",
+  "source_generated_at": "2026-10-17T08:23:33Z",
+  "scope": "Stars use the public inventory observation; Updated reports the most recent GitHub push month where available. Curated descriptions, languages, publication identities and links retain their source ownership. Tables use stable descending star-count order.",
+  "matched_catalog_rows": 166,
+  "updates": [
+    {
+      "repository": "docxology/template",
+      "github_id": 1040231275,
+      "before": {
+        "stars": "17",
+        "updated_month": "2026-06"
+      },
+      "after": {
+        "stars": 20,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-17T03:18:11Z"
+    },
+    {
+      "repository": "docxology/QuadCraft",
+      "github_id": 951364942,
+      "before": {
+        "stars": "9",
+        "updated_month": "2026-05"
+      },
+      "after": {
+        "stars": 7,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-06T18:41:40Z"
+    },
+    {
+      "repository": "docxology/MetaInformAnt",
+      "github_id": 445898947,
+      "before": {
+        "stars": "6",
+        "updated_month": "2026-05"
+      },
+      "after": {
+        "stars": 8,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-14T20:21:08Z"
+    },
+    {
+      "repository": "docxology/codomyrmex",
+      "github_id": 984900169,
+      "before": {
+        "stars": "6",
+        "updated_month": "2026-05"
+      },
+      "after": {
+        "stars": 11,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-17T02:49:42Z"
+    },
+    {
+      "repository": "docxology/timeline_generator",
+      "github_id": 1171791242,
+      "before": {
+        "stars": "4",
+        "updated_month": "2026-04"
+      },
+      "after": {
+        "stars": 4,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:29:21Z"
+    },
+    {
+      "repository": "docxology/cognitive-engine",
+      "github_id": 945691957,
+      "before": {
+        "stars": "3",
+        "updated_month": "2026-03"
+      },
+      "after": {
+        "stars": 3,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:28:03Z"
+    },
+    {
+      "repository": "docxology/FORMINDEX",
+      "github_id": 869508969,
+      "before": {
+        "stars": "3",
+        "updated_month": "2024-10"
+      },
+      "after": {
+        "stars": 2,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:29:27Z"
+    },
+    {
+      "repository": "docxology/ActiveInferAnts",
+      "github_id": 774629867,
+      "before": {
+        "stars": "3",
+        "updated_month": "2026-04"
+      },
+      "after": {
+        "stars": 3,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:26:38Z"
+    },
+    {
+      "repository": "docxology/crescent-city",
+      "github_id": 1153154125,
+      "before": {
+        "stars": "2",
+        "updated_month": "2026-02"
+      },
+      "after": {
+        "stars": 2,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-06T19:02:10Z"
+    },
+    {
+      "repository": "docxology/ivm-xyz",
+      "github_id": 771622362,
+      "before": {
+        "stars": "2",
+        "updated_month": "2025-11"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-06T22:11:39Z"
+    },
+    {
+      "repository": "docxology/Markov_Blanket_Detection",
+      "github_id": 948172709,
+      "before": {
+        "stars": "2",
+        "updated_month": "2025-06"
+      },
+      "after": {
+        "stars": 3,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-01T20:56:14Z"
+    },
+    {
+      "repository": "docxology/QuadMath",
+      "github_id": 1035681430,
+      "before": {
+        "stars": "2",
+        "updated_month": "2026-02"
+      },
+      "after": {
+        "stars": 2,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-17T00:24:34Z"
+    },
+    {
+      "repository": "docxology/literature",
+      "github_id": 1115339763,
+      "before": {
+        "stars": "2",
+        "updated_month": "2026-05"
+      },
+      "after": {
+        "stars": 3,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-07T05:59:26Z"
+    },
+    {
+      "repository": "docxology/active_inference",
+      "github_id": 1084367506,
+      "before": {
+        "stars": "1",
+        "updated_month": "2025-11"
+      },
+      "after": {
+        "stars": 2,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-01T20:55:50Z"
+    },
+    {
+      "repository": "docxology/AgenticMesh",
+      "github_id": 924421962,
+      "before": {
+        "stars": "1",
+        "updated_month": "2025-02"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:26:41Z"
+    },
+    {
+      "repository": "docxology/curriculum",
+      "github_id": 1113375630,
+      "before": {
+        "stars": "1",
+        "updated_month": "2026-01"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-07T05:03:28Z"
+    },
+    {
+      "repository": "docxology/lean_niche",
+      "github_id": 1042919735,
+      "before": {
+        "stars": "1",
+        "updated_month": "2025-08"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-06T20:28:01Z"
+    },
+    {
+      "repository": "docxology/obsidian-construction-from-text",
+      "github_id": 948177272,
+      "before": {
+        "stars": "1",
+        "updated_month": "2025-03"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:28:33Z"
+    },
+    {
+      "repository": "docxology/qr_live_protocol",
+      "github_id": 1003169863,
+      "before": {
+        "stars": "1",
+        "updated_month": "2025-10"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-01T20:57:02Z"
+    },
+    {
+      "repository": "docxology/AGEINT",
+      "github_id": 1248660317,
+      "before": {
+        "stars": "1",
+        "updated_month": "2026-06"
+      },
+      "after": {
+        "stars": 2,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-26T12:02:48Z"
+    },
+    {
+      "repository": "docxology/template_autoscientists",
+      "github_id": 1258756068,
+      "before": {
+        "stars": "1",
+        "updated_month": "2026-06"
+      },
+      "after": {
+        "stars": 2,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-06T20:07:21Z"
+    },
+    {
+      "repository": "docxology/ultralink-docx",
+      "github_id": 942346696,
+      "before": {
+        "stars": "1",
+        "updated_month": "2025-03"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-07T10:10:20Z"
+    },
+    {
+      "repository": "docxology/steganographer",
+      "github_id": 1174669623,
+      "before": {
+        "stars": "1",
+        "updated_month": "2026-04"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-30T22:46:28Z"
+    },
+    {
+      "repository": "docxology/template_newspaper",
+      "github_id": 1258756177,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-06"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-19T22:02:29Z"
+    },
+    {
+      "repository": "docxology/ntqr_llm",
+      "github_id": 1256490320,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-06"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-07T07:45:08Z"
+    },
+    {
+      "repository": "docxology/itrace",
+      "github_id": 1256522086,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-06"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-16T14:13:19Z"
+    },
+    {
+      "repository": "docxology/coasys",
+      "github_id": 1267606829,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-06"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:27:58Z"
+    },
+    {
+      "repository": "docxology/CogSecSkills",
+      "github_id": 1273843058,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-06"
+      },
+      "after": {
+        "stars": 7,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-16T21:04:05Z"
+    },
+    {
+      "repository": "docxology/template_madlib",
+      "github_id": 1276188330,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-06"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-19T22:02:23Z"
+    },
+    {
+      "repository": "docxology/active_torchference",
+      "github_id": 1069456304,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025-10"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-31T20:56:27Z"
+    },
+    {
+      "repository": "docxology/ant-pheromone",
+      "github_id": 439394242,
+      "before": {
+        "stars": "0",
+        "updated_month": "2022-09"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:29:30Z"
+    },
+    {
+      "repository": "docxology/ant_stack",
+      "github_id": 1067472786,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025-09"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-07T02:16:51Z"
+    },
+    {
+      "repository": "docxology/cohereants",
+      "github_id": 1040834427,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-05"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-06T19:11:51Z"
+    },
+    {
+      "repository": "docxology/ento_linguistics",
+      "github_id": 1210713281,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-04"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-11T21:45:23Z"
+    },
+    {
+      "repository": "docxology/cognitive_case_diagrams",
+      "github_id": 1182503075,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-04"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-06T13:19:29Z"
+    },
+    {
+      "repository": "docxology/biol-1",
+      "github_id": 1145579311,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-03"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-30T18:25:50Z"
+    },
+    {
+      "repository": "docxology/biol-8",
+      "github_id": 1126832328,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-03"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:30:12Z"
+    },
+    {
+      "repository": "docxology/biology_textbook",
+      "github_id": 1246135013,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-05"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-06T21:55:48Z"
+    },
+    {
+      "repository": "docxology/cascadia",
+      "github_id": 1044988600,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025-08"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-30T18:44:30Z"
+    },
+    {
+      "repository": "docxology/course",
+      "github_id": 1067062761,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025-12"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:30:19Z"
+    },
+    {
+      "repository": "docxology/enactive_inference_model",
+      "github_id": 1157353063,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-02"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-04"
+      },
+      "pushed_at": "2026-04-10T17:09:24Z"
+    },
+    {
+      "repository": "docxology/EvoJump",
+      "github_id": 1066493331,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025-10"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-08T21:31:16Z"
+    },
+    {
+      "repository": "docxology/flick",
+      "github_id": 957649143,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025-03"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:29:01Z"
+    },
+    {
+      "repository": "docxology/godel_ivm",
+      "github_id": 1075544150,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025-10"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:29:56Z"
+    },
+    {
+      "repository": "docxology/goference",
+      "github_id": 1061864348,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025-09"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:26:55Z"
+    },
+    {
+      "repository": "docxology/hhs-opendata",
+      "github_id": 1158109509,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-02"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-30T19:49:31Z"
+    },
+    {
+      "repository": "docxology/grateful_data",
+      "github_id": 1255587373,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-06"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-07T06:11:20Z"
+    },
+    {
+      "repository": "docxology/infra-calc",
+      "github_id": 978956779,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025-05"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-31T20:55:30Z"
+    },
+    {
+      "repository": "docxology/markdown_decision_process",
+      "github_id": 972314203,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025-10"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-13T22:07:54Z"
+    },
+    {
+      "repository": "docxology/mdkv",
+      "github_id": 1035222552,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025-08"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-01T21:03:57Z"
+    },
+    {
+      "repository": "docxology/p3if",
+      "github_id": 950269103,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-01"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-07T07:54:27Z"
+    },
+    {
+      "repository": "docxology/service",
+      "github_id": 987856182,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025-05"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:29:16Z"
+    },
+    {
+      "repository": "docxology/snake",
+      "github_id": 1091292371,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025-11"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-07T06:45:38Z"
+    },
+    {
+      "repository": "docxology/SynthOBS",
+      "github_id": 1265735915,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-17T00:24:39Z"
+    },
+    {
+      "repository": "docxology/template_textbook",
+      "github_id": 1258602451,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-06"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-19T22:03:14Z"
+    },
+    {
+      "repository": "docxology/blake_jiang",
+      "github_id": 1237018816,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-05"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-30T02:51:13Z"
+    },
+    {
+      "repository": "docxology/symergetics",
+      "github_id": 1053524519,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025-09"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-13T22:15:29Z"
+    },
+    {
+      "repository": "docxology/transformer",
+      "github_id": 1069456372,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025-10"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-06T22:59:47Z"
+    },
+    {
+      "repository": "docxology/cognitive",
+      "github_id": 928577731,
+      "before": {
+        "stars": "14\\*",
+        "updated_month": "2026-05"
+      },
+      "after": {
+        "stars": 16,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-06T21:37:22Z"
+    },
+    {
+      "repository": "docxology/EntoLaw",
+      "github_id": 1287402613,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-28T16:37:05Z"
+    },
+    {
+      "repository": "docxology/DuckRabbit",
+      "github_id": 1304362624,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-30T19:21:47Z"
+    },
+    {
+      "repository": "docxology/entofile",
+      "github_id": 1266418170,
+      "before": {
+        "stars": "1",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-16T21:37:14Z"
+    },
+    {
+      "repository": "docxology/realizing_emptiness",
+      "github_id": 1268502272,
+      "before": {
+        "stars": "1",
+        "updated_month": "2026-10"
+      },
+      "after": {
+        "stars": 2,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-15T02:33:51Z"
+    },
+    {
+      "repository": "docxology/ntqr_allotment",
+      "github_id": 1285511167,
+      "before": {
+        "stars": "1",
+        "updated_month": "2026-06"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-22T01:54:36Z"
+    },
+    {
+      "repository": "docxology/alphacogant",
+      "github_id": 1280835565,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-06"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-17T03:22:35Z"
+    },
+    {
+      "repository": "docxology/democreate",
+      "github_id": 1260772193,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-07T05:03:34Z"
+    },
+    {
+      "repository": "docxology/blake",
+      "github_id": 1057422867,
+      "before": {
+        "stars": "1",
+        "updated_month": "2026-06"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-13T22:07:55Z"
+    },
+    {
+      "repository": "docxology/dotscope",
+      "github_id": 1210823158,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-04"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:27:30Z"
+    },
+    {
+      "repository": "docxology/active-inference-pocket-lab",
+      "github_id": 1187509919,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-04"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-09T19:28:53Z"
+    },
+    {
+      "repository": "docxology/sunspot",
+      "github_id": 1222682217,
+      "before": {
+        "stars": "1",
+        "updated_month": "2026-04"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-31T05:37:06Z"
+    },
+    {
+      "repository": "docxology/template_active_inference",
+      "github_id": 1251602669,
+      "before": {
+        "stars": "1",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 2,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-17T00:24:44Z"
+    },
+    {
+      "repository": "docxology/template-pitch-deck",
+      "github_id": 1295374784,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:30:30Z"
+    },
+    {
+      "repository": "docxology/template_autopoiesis",
+      "github_id": 1291561056,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-06T20:05:14Z"
+    },
+    {
+      "repository": "docxology/template_autoresearch_project",
+      "github_id": 1251602629,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-19T22:01:21Z"
+    },
+    {
+      "repository": "docxology/template_code_project",
+      "github_id": 1251551110,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-13T23:03:52Z"
+    },
+    {
+      "repository": "docxology/template_data_descriptor",
+      "github_id": 1296830790,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-07T07:01:22Z"
+    },
+    {
+      "repository": "docxology/template_eda_notebook",
+      "github_id": 1285531790,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-19T22:01:45Z"
+    },
+    {
+      "repository": "docxology/template_formal",
+      "github_id": 1296830825,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-17T00:24:47Z"
+    },
+    {
+      "repository": "docxology/template_gold_refinement",
+      "github_id": 1281377814,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-07T08:20:11Z"
+    },
+    {
+      "repository": "docxology/template_literature_meta_analysis",
+      "github_id": 1281377901,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-07T08:53:03Z"
+    },
+    {
+      "repository": "docxology/template_methods_paper",
+      "github_id": 1285538459,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-13T23:20:53Z"
+    },
+    {
+      "repository": "docxology/template_pools_rules_tools",
+      "github_id": 1296830863,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:30:46Z"
+    },
+    {
+      "repository": "docxology/template_prose_project",
+      "github_id": 1251602592,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-19T22:02:44Z"
+    },
+    {
+      "repository": "docxology/template_redacted_report",
+      "github_id": 1296830898,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-19T22:02:48Z"
+    },
+    {
+      "repository": "docxology/template_registered_report",
+      "github_id": 1296830921,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:30:49Z"
+    },
+    {
+      "repository": "docxology/template_search_project",
+      "github_id": 1267391828,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-19T22:02:55Z"
+    },
+    {
+      "repository": "docxology/template_sia",
+      "github_id": 1269507301,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-06T20:26:43Z"
+    },
+    {
+      "repository": "docxology/template_storybook",
+      "github_id": 1288557812,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-19T22:03:02Z"
+    },
+    {
+      "repository": "docxology/template_template",
+      "github_id": 1251731936,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-13T23:17:28Z"
+    },
+    {
+      "repository": "docxology/template_bioinformatics_project",
+      "github_id": 1182015479,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-03"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-31T05:06:27Z"
+    },
+    {
+      "repository": "docxology/bond",
+      "github_id": 1327141169,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-08"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-06T21:27:59Z"
+    },
+    {
+      "repository": "docxology/line_set",
+      "github_id": 1314913744,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-24T21:12:14Z"
+    },
+    {
+      "repository": "docxology/black_line",
+      "github_id": 1314913607,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-22T01:53:15Z"
+    },
+    {
+      "repository": "docxology/white_line",
+      "github_id": 1314913691,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-05T04:12:29Z"
+    },
+    {
+      "repository": "docxology/golden_line",
+      "github_id": 1314913652,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-22T01:52:18Z"
+    },
+    {
+      "repository": "docxology/red_line",
+      "github_id": 1314913561,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-22T15:52:23Z"
+    },
+    {
+      "repository": "docxology/witness_register",
+      "github_id": 1319816498,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-08"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-18T16:15:18Z"
+    },
+    {
+      "repository": "docxology/Digi-PPPiP",
+      "github_id": 1247814879,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-08"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-29T19:28:53Z"
+    },
+    {
+      "repository": "docxology/BeeStack",
+      "github_id": 1237878802,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-05"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-30T22:09:29Z"
+    },
+    {
+      "repository": "docxology/template_advanced_literature_review",
+      "github_id": 1310144532,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-19T22:01:13Z"
+    },
+    {
+      "repository": "docxology/crescent-city-intel",
+      "github_id": 1309374337,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-07"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-02T18:03:06Z"
+    },
+    {
+      "repository": "docxology/thalia",
+      "github_id": 1286520767,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-08"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-30T19:20:23Z"
+    },
+    {
+      "repository": "docxology/docxplus",
+      "github_id": 1333392069,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-08"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-30T19:45:43Z"
+    },
+    {
+      "repository": "docxology/millennium_audit",
+      "github_id": 1355098724,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-09"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-06T19:36:22Z"
+    },
+    {
+      "repository": "docxology/cognitive_integrity",
+      "github_id": 1143728491,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-08"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-13T23:24:32Z"
+    },
+    {
+      "repository": "docxology/dicklesworthstone_meta_operator",
+      "github_id": 1356152932,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-09"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-14T19:25:45Z"
+    },
+    {
+      "repository": "docxology/Skillarum",
+      "github_id": 1362038107,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026-09"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-12T15:54:10Z"
+    },
+    {
+      "repository": "docxology/daf-jev",
+      "github_id": 1374786946,
+      "before": {
+        "stars": "2",
+        "updated_month": "2026-09"
+      },
+      "after": {
+        "stars": 7,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-16T18:46:00Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/ActiveInferenceJournal",
+      "github_id": 562916661,
+      "before": {
+        "stars": "42",
+        "updated_month": "2024"
+      },
+      "after": {
+        "stars": 44,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-25T03:30:39Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/ActiveBlockference",
+      "github_id": 460953286,
+      "before": {
+        "stars": "32",
+        "updated_month": "2023"
+      },
+      "after": {
+        "stars": 32,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-09T20:40:28Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Active_InferAnts",
+      "github_id": 782172228,
+      "before": {
+        "stars": "28",
+        "updated_month": "2024"
+      },
+      "after": {
+        "stars": 30,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-22T19:14:55Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/fundamentals",
+      "github_id": 1186502930,
+      "before": {
+        "stars": "26",
+        "updated_month": "2026"
+      },
+      "after": {
+        "stars": 35,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-03T00:38:22Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+      "github_id": 622673569,
+      "before": {
+        "stars": "24",
+        "updated_month": "2024"
+      },
+      "after": {
+        "stars": 33,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-17T02:23:21Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/cognitive",
+      "github_id": 934362023,
+      "before": {
+        "stars": "18",
+        "updated_month": "2025"
+      },
+      "after": {
+        "stars": 22,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-13T23:27:07Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Active_Inference_Ontology",
+      "github_id": 343477486,
+      "before": {
+        "stars": "13",
+        "updated_month": "2023"
+      },
+      "after": {
+        "stars": 16,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-01T03:14:15Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/CEREBRUM",
+      "github_id": 962267666,
+      "before": {
+        "stars": "12",
+        "updated_month": "2025"
+      },
+      "after": {
+        "stars": 14,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-01T03:09:48Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Journal_Utilities",
+      "github_id": 562914273,
+      "before": {
+        "stars": "11",
+        "updated_month": "2026"
+      },
+      "after": {
+        "stars": 10,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-30T18:39:47Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Symposium",
+      "github_id": 883910219,
+      "before": {
+        "stars": "11",
+        "updated_month": "2024"
+      },
+      "after": {
+        "stars": 13,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-03T00:09:13Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/ActiveInferenceCategoryTheory",
+      "github_id": 639962850,
+      "before": {
+        "stars": "10",
+        "updated_month": "2024"
+      },
+      "after": {
+        "stars": 9,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-02T23:55:50Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/GEO_INFER",
+      "github_id": 982865943,
+      "before": {
+        "stars": "9",
+        "updated_month": "2024"
+      },
+      "after": {
+        "stars": 18,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-17T05:36:07Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/AEOS",
+      "github_id": 464689438,
+      "before": {
+        "stars": "8",
+        "updated_month": "2022"
+      },
+      "after": {
+        "stars": 8,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-19T01:48:58Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/courses",
+      "github_id": 1153031275,
+      "before": {
+        "stars": "8",
+        "updated_month": "2024"
+      },
+      "after": {
+        "stars": 12,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-26T20:16:03Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Research-Discovery-Engine",
+      "github_id": 948595787,
+      "before": {
+        "stars": "6",
+        "updated_month": "2024"
+      },
+      "after": {
+        "stars": 6,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-22T19:14:48Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Parr_et_al_2022_ActInf_Textbook",
+      "github_id": 486987976,
+      "before": {
+        "stars": "6",
+        "updated_month": "2023"
+      },
+      "after": {
+        "stars": 7,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-02T23:40:44Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Biofirm",
+      "github_id": 881414123,
+      "before": {
+        "stars": "5",
+        "updated_month": "2024"
+      },
+      "after": {
+        "stars": 4,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-01T12:49:22Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Start",
+      "github_id": 903921695,
+      "before": {
+        "stars": "5",
+        "updated_month": "2024"
+      },
+      "after": {
+        "stars": 6,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-22T19:14:51Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/act_inf_metaanalysis",
+      "github_id": 1204226043,
+      "before": {
+        "stars": "5",
+        "updated_month": "2026"
+      },
+      "after": {
+        "stars": 6,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-03T00:33:48Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Knowledge-Engineering",
+      "github_id": 457362490,
+      "before": {
+        "stars": "4",
+        "updated_month": "2022"
+      },
+      "after": {
+        "stars": 6,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-03T00:12:40Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/fep_formal",
+      "github_id": 1210503162,
+      "before": {
+        "stars": "3",
+        "updated_month": "2026"
+      },
+      "after": {
+        "stars": 5,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-17T01:43:17Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/ActInf_RxInfer",
+      "github_id": 758042641,
+      "before": {
+        "stars": "2",
+        "updated_month": "2024"
+      },
+      "after": {
+        "stars": 2,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-03T00:10:32Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/pymcp",
+      "github_id": 982213757,
+      "before": {
+        "stars": "2",
+        "updated_month": "2025"
+      },
+      "after": {
+        "stars": 3,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-02T23:53:14Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/policy_entanglement",
+      "github_id": 1251738367,
+      "before": {
+        "stars": "2",
+        "updated_month": "2026"
+      },
+      "after": {
+        "stars": 3,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-17T01:58:10Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/GEN24",
+      "github_id": 844686337,
+      "before": {
+        "stars": "1",
+        "updated_month": "2024"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-02T23:59:29Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/NoOrg",
+      "github_id": 970712065,
+      "before": {
+        "stars": "1",
+        "updated_month": "2024"
+      },
+      "after": {
+        "stars": 1,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-02T23:47:32Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/ActiveInferenceImplementations",
+      "github_id": 563844753,
+      "before": {
+        "stars": "0",
+        "updated_month": "2022"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-03T00:05:23Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/ATLAS",
+      "github_id": 845734639,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-03T00:52:01Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/COGANT",
+      "github_id": 1270308046,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026"
+      },
+      "after": {
+        "stars": 2,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-16T00:13:58Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/on_policy_distillation",
+      "github_id": 1273321413,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026"
+      },
+      "after": {
+        "stars": 3,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-17T00:23:58Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Bots",
+      "github_id": 583991583,
+      "before": {
+        "stars": "0",
+        "updated_month": "2022"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2022-12"
+      },
+      "pushed_at": "2022-12-31T19:59:14Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Garden-of-Iris",
+      "github_id": 628355911,
+      "before": {
+        "stars": "0",
+        "updated_month": "2023"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-03T00:44:40Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/gen25",
+      "github_id": 948595644,
+      "before": {
+        "stars": "0",
+        "updated_month": "2025"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-02T23:45:57Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/ISSS",
+      "github_id": 776085498,
+      "before": {
+        "stars": "0",
+        "updated_month": "2024"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-02T23:45:05Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/active_fractal_rabbit",
+      "github_id": 1298742934,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-07"
+      },
+      "pushed_at": "2026-07-13T03:59:12Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Active_Fedference",
+      "github_id": 1329108882,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-20T16:52:46Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Active_Skillference",
+      "github_id": 1329128138,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026"
+      },
+      "after": {
+        "stars": 2,
+        "updated_month": "2026-08"
+      },
+      "pushed_at": "2026-08-10T15:51:16Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/active_inference_power",
+      "github_id": 1316699637,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-07"
+      },
+      "pushed_at": "2026-07-30T05:12:17Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Active_Inference_Un0",
+      "github_id": 1304317678,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-07"
+      },
+      "pushed_at": "2026-07-17T19:13:53Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Working_Groups",
+      "github_id": 1388140643,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-09"
+      },
+      "pushed_at": "2026-09-30T21:15:44Z"
+    },
+    {
+      "repository": "ActiveInferenceInstitute/active_inference_language_model",
+      "github_id": 1391521066,
+      "before": {
+        "stars": "0",
+        "updated_month": "2026"
+      },
+      "after": {
+        "stars": 0,
+        "updated_month": "2026-10"
+      },
+      "pushed_at": "2026-10-16T22:02:51Z"
+    }
+  ],
+  "late_observation": {
+    "generated_at": "2026-10-17T08:23:33Z",
+    "changed_rows": [
+      "docxology/SynthOBS",
+      "docxology/template_active_inference",
+      "docxology/alphacogant",
+      "docxology/template_formal",
+      "ActiveInferenceInstitute/policy_entanglement",
+      "ActiveInferenceInstitute/on_policy_distillation"
+    ]
+  }
+}

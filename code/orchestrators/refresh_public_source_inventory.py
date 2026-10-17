@@ -372,7 +372,11 @@ def main() -> None:
     payload = build_report(cache_reports=args.cache_reports, force=args.force)
     out.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     failures = [section["label"] for section in payload["sections"] if not section.get("ok")]
-    print(f"wrote {out.relative_to(REPO_ROOT)} with {len(payload['sections'])} sections")
+    try:
+        shown = out.relative_to(REPO_ROOT)
+    except ValueError:
+        shown = out
+    print(f"wrote {shown} with {len(payload['sections'])} sections")
     if failures:
         print("warnings:", ", ".join(failures))
 

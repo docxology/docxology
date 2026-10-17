@@ -11,6 +11,12 @@ helpers, and write the generated artifacts checked into the repo root.
 - Gate before declaring work done: `uv run python3 code/orchestrators/validate_repo.py`
 - Tests: `uv run python3 -m pytest code/tests -q`
 
+## Python runtime
+
+The repository pins Python 3.12 in `.python-version` to match CI. Run
+`uv sync --locked` before using the build commands; uv selects the declared
+runtime rather than the newest interpreter installed on the host.
+
 ## Import contract (DOC-014)
 
 [`code/src/docxology_tools/`](src/docxology_tools/) is the canonical import

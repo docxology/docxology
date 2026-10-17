@@ -764,6 +764,41 @@ def metadata_payload(pair: PublicationPair) -> dict[str, Any]:
     return payload
 
 
+def creator_names(record: ZenodoRecord, *, citation: bool = False) -> str:
+    names = []
+    for creator in record.creators:
+        name = str(creator.get("name") or "").strip()
+        if not name:
+            continue
+        family, separator, given = name.partition(",")
+        if separator and given.strip():
+            if citation:
+                initials = " ".join(part[0] + "." for part in given.split() if part)
+                name = f"{family.strip()}, {initials}"
+            else:
+                name = f"{given.strip()} {family.strip()}"
+        names.append(name)
+    return ("; " if citation else ", ").join(names)
+
+
+def creator_cff_lines(record: ZenodoRecord) -> str:
+    lines = []
+    for creator in record.creators:
+        name = str(creator.get("name") or "").strip()
+        if not name:
+            continue
+        family, separator, given = name.partition(",")
+        if separator and given.strip():
+            lines.append(f'  - family-names: "{yaml_double_quoted(family.strip())}"')
+            lines.append(f'    given-names: "{yaml_double_quoted(given.strip())}"')
+        else:
+            lines.append(f'  - name: "{yaml_double_quoted(name)}"')
+        orcid = str(creator.get("orcid") or "").strip().removeprefix("https://orcid.org/")
+        if re.fullmatch(r"\d{4}-\d{4}-\d{4}-\d{3}[\dX]", orcid):
+            lines.append(f'    orcid: "https://orcid.org/{orcid}"')
+    return "authors:\n" + "\n".join(lines) if lines else "authors: []"
+
+
 def render_readme(pair: PublicationPair, folder: str) -> str:
     record = pair.record
     keywords = " · ".join(record.keywords) if record.keywords else "paired GitHub and Zenodo publication"
@@ -777,7 +812,7 @@ def render_readme(pair: PublicationPair, folder: str) -> str:
         pdf_lines.append("- Zenodo PDF: not downloaded")
     return f"""# {record.title}
 
-**Daniel Ari Friedman** ({(record.publication_date or '')[:4] or 'n.d.'}) · *Zenodo*
+**{creator_names(record) or "Creator metadata unavailable"}** ({(record.publication_date or '')[:4] or 'n.d.'}) · *Zenodo*
 
 [![DOI](https://zenodo.org/badge/DOI/{record.doi}.svg)](https://doi.org/{record.doi})
 
@@ -808,7 +843,7 @@ def render_readme(pair: PublicationPair, folder: str) -> str:
 
 ## Citation
 
-> Friedman, D. A. ({(record.publication_date or '')[:4] or 'n.d.'}). *{record.title}*. Zenodo. DOI: {record.doi}. URL: https://doi.org/{record.doi}.
+> {creator_names(record, citation=True) or "Creator metadata unavailable"} ({(record.publication_date or '')[:4] or 'n.d.'}). *{record.title}*. Zenodo. DOI: {record.doi}. URL: https://doi.org/{record.doi}.
 
 ## Related
 
@@ -894,10 +929,7 @@ date-released: {pair.record.publication_date or year}
 doi: {pair.doi}
 url: "https://doi.org/{pair.doi}"
 repository-code: "https://github.com/{pair.github_repo}"
-authors:
-  - family-names: Friedman
-    given-names: Daniel Ari
-    orcid: "https://orcid.org/{ORCID}"
+{creator_cff_lines(pair.record)}
 identifiers:
   - type: doi
     value: {pair.doi}

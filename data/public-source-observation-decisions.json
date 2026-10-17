@@ -47,17 +47,6 @@
       "curated_targets": []
     },
     {
-      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
-      "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
-      "previous_sha256": "8b1ae2e6680df8e38da8080142b4ec97afbccbda2897e18c0a4ab88dae7fb577",
-      "current_sha256": "409aec8677cc003fd91d9f9fbd43fd115abe89538cd8e9b47e6a67325649bd57",
-      "decision": "acknowledged",
-      "decided_by": "Codex",
-      "decided_at": "2026-10-12T22:37:22Z",
-      "rationale": "GitHub dominant-language metadata changed from Python to HTML and activity advanced. Anonymous language-byte evidence reports HTML 64,478,426 and Python 14,090,089; this does not replace the curated Python tooling description or existing publication identity.",
-      "curated_targets": []
-    },
-    {
       "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/Journal-Utilities",
       "label": "GitHub repo ActiveInferenceInstitute/Journal-Utilities",
       "previous_sha256": "59ce10310939eb701652a52a9c20dd5d1b0011bc447b954b3294d4a27bb4c101",
@@ -66,28 +55,6 @@
       "decided_by": "user",
       "decided_at": "2026-10-06T16:25:51Z",
       "rationale": "Changed full_name, html_url, updated_at (activity telemetry or an upstream rename); no curated claim or catalog change is required. Reviewed for issue #12 against the last reviewed baseline (public_source_snapshot_2026-08-26); approved under the principal's 'proceed with all' on 2026-10-06.",
-      "curated_targets": []
-    },
-    {
-      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/cognitive",
-      "label": "GitHub repo ActiveInferenceInstitute/cognitive",
-      "previous_sha256": "aebfcadc01cdef5ee85202a48a2194200cf54f97c2128ebd3b2d8fa54fc1cf89",
-      "current_sha256": "ec785057c140d6b6f3acf543f6d7e62c6e9be9e77f3b72bacbc42bbb8194d6a3",
-      "decision": "acknowledged",
-      "decided_by": "Codex",
-      "decided_at": "2026-10-12T22:37:22Z",
-      "rationale": "GitHub activity timestamp advanced; canonical repository identity and curated claims remain unchanged.",
-      "curated_targets": []
-    },
-    {
-      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/fep_lean",
-      "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
-      "previous_sha256": "95ae23cf783c37e707063828d2953616641e338259c45ae8e9ff9efbe730e93a",
-      "current_sha256": "b5f46b30b46f6e70f228bda033c8db9b29639f2612d38282995ccc2127239566",
-      "decision": "acknowledged",
-      "decided_by": "Codex",
-      "decided_at": "2026-10-12T22:37:22Z",
-      "rationale": "GitHub activity/star telemetry advanced; retain existing curated software and publication identity.",
       "curated_targets": []
     },
     {
@@ -112,43 +79,6 @@
       ]
     },
     {
-      "id": "public-source-observation:GitHub user docxology",
-      "label": "GitHub user docxology",
-      "previous_sha256": "2615d33c36da8b3a3c33e202cf988baa0fc3cec99a6f985af49c4c16d5c6fa67",
-      "current_sha256": "dc6000c813cf9363fd12c8e0379fc84960950835f0d9f00adabb575875880a32",
-      "decision": "applied",
-      "decided_by": "Codex",
-      "decided_at": "2026-10-12T22:37:22Z",
-      "rationale": "Public GitHub repository total is 234, up from 231 in the 2026-10-07 comparison baseline and 233 in the earlier 2026-10-12 observation. Paginated anonymous evidence identifies daf-okn as the additional public non-fork repository since the earlier same-day inventory; it is reviewed as software only, with no observed release or archival DOI. Existing antropy/reason intake remains preserved.",
-      "curated_targets": [
-        "pages/SOFTWARE.md",
-        "reports/repository_catalog_review_2026-10-12.json",
-        "data/github-repositories.json"
-      ]
-    },
-    {
-      "id": "public-source-observation:Zenodo ORCID-linked records",
-      "label": "Zenodo ORCID-linked records",
-      "previous_sha256": "8d8a35ad598b6bbe005fb6077ce4917d70d1d0045beb02bfbf636c9a484f904d",
-      "current_sha256": "d55b57b557c63a360219cdf01b00703081f90bd50d35d259428f7c657080eced",
-      "decision": "acknowledged",
-      "decided_by": "Codex",
-      "decided_at": "2026-10-12T18:51:42Z",
-      "rationale": "Paginated Zenodo evidence and the uncatalogued-records check identify the new synthetic-overview and antropy records. They are now cited by concept DOI with version-specific archives; query totals remain distinct from bibliography totals.",
-      "curated_targets": []
-    },
-    {
-      "id": "public-source-observation:Zenodo exact-name creator records",
-      "label": "Zenodo exact-name creator records",
-      "previous_sha256": "1d20b4abbb5839f1262aecc4bdfa2792247151ab8ed42191090869cd97ae8637",
-      "current_sha256": "c19b366fe5e18d0cf471ff84c74161880df8de37217978b979374ea07f9a4d9a",
-      "decision": "acknowledged",
-      "decided_by": "Codex",
-      "decided_at": "2026-10-12T18:51:42Z",
-      "rationale": "Paginated Zenodo evidence and the uncatalogued-records check identify the new synthetic-overview and antropy records. They are now cited by concept DOI with version-specific archives; query totals remain distinct from bibliography totals.",
-      "curated_targets": []
-    },
-    {
       "id": "public-source-observation:Zenodo record 18686966",
       "label": "Zenodo record 18686966",
       "previous_sha256": "bda6cc68c9bf53dcfff8be08ef2547712efa949382ffbbc14be767ef154437c7",
@@ -169,6 +99,82 @@
       "decided_at": "2026-10-06T16:25:51Z",
       "rationale": "Creators upstream dropped ['The GeneralizedNotationNotation Community Contributors'] and the title follows the repository rename; no bibliography row cites this DOI and the software catalog row lists no creators; no curated change is required. Reviewed for issue #12 against the last reviewed baseline (public_source_snapshot_2026-08-26); approved under the principal's 'proceed with all' on 2026-10-06.",
       "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "previous_sha256": "409aec8677cc003fd91d9f9fbd43fd115abe89538cd8e9b47e6a67325649bd57",
+      "current_sha256": "4ba75ef54b5a219980ca7780a261c188ed1cab533dcca673ad84d637855fa50d",
+      "decision": "acknowledged",
+      "decided_by": "Codex",
+      "decided_at": "2026-10-16T21:45:35Z",
+      "rationale": "GitHub dominant-language metadata returned to Python; this is repository telemetry and does not revise the scientific work.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/cognitive",
+      "label": "GitHub repo ActiveInferenceInstitute/cognitive",
+      "previous_sha256": "ec785057c140d6b6f3acf543f6d7e62c6e9be9e77f3b72bacbc42bbb8194d6a3",
+      "current_sha256": "e6784afa19f630b38ad94dc06da2eac2af029fbfa73ebf5140ae035a5195535d",
+      "decision": "acknowledged",
+      "decided_by": "Codex",
+      "decided_at": "2026-10-16T21:45:35Z",
+      "rationale": "Repository activity changed; retain canonical identity and curated scientific claims.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/fep_lean",
+      "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
+      "previous_sha256": "b5f46b30b46f6e70f228bda033c8db9b29639f2612d38282995ccc2127239566",
+      "current_sha256": "4dfb01505954bb6e1b53c9fe8c7b94d187f25350d8dc80b0804e3a32d17dd94e",
+      "decision": "acknowledged",
+      "decided_by": "Codex",
+      "decided_at": "2026-10-16T21:45:35Z",
+      "rationale": "Repository activity changed; retain canonical identity and curated scientific claims.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub user docxology",
+      "label": "GitHub user docxology",
+      "previous_sha256": "dc6000c813cf9363fd12c8e0379fc84960950835f0d9f00adabb575875880a32",
+      "current_sha256": "6ee7f644681a4a35460851296694b214afd22bc8b81cd1bb3157fd7103a7625e",
+      "decision": "acknowledged",
+      "decided_by": "Codex",
+      "decided_at": "2026-10-16T21:45:35Z",
+      "rationale": "Live profile reports 239 public repositories and the paginated inventory agrees. Refresh dated discovery and inventory-derived public claims.",
+      "curated_targets": [
+        "pages/DISCOVERY.md",
+        "discovery.html",
+        "data/github-repositories.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:Zenodo ORCID-linked records",
+      "label": "Zenodo ORCID-linked records",
+      "previous_sha256": "d55b57b557c63a360219cdf01b00703081f90bd50d35d259428f7c657080eced",
+      "current_sha256": "f99be675c238193294f4c23dfe8d451b8258e698bda67ff5dd410df3bcfd5efe",
+      "decision": "acknowledged",
+      "decided_by": "Codex",
+      "decided_at": "2026-10-16T21:45:35Z",
+      "rationale": "Paginated identity queries include new iTrace and meta-pragmatic records. Review publication versions separately, retain canonical citation DOIs, and refresh dated discovery totals.",
+      "curated_targets": [
+        "pages/DISCOVERY.md",
+        "discovery.html"
+      ]
+    },
+    {
+      "id": "public-source-observation:Zenodo exact-name creator records",
+      "label": "Zenodo exact-name creator records",
+      "previous_sha256": "c19b366fe5e18d0cf471ff84c74161880df8de37217978b979374ea07f9a4d9a",
+      "current_sha256": "8de32b75e48eb01bf0bd3fbbb5241768fb7bd755f11c9122119e032591beae2d",
+      "decision": "acknowledged",
+      "decided_by": "Codex",
+      "decided_at": "2026-10-16T21:45:35Z",
+      "rationale": "Paginated identity queries include new iTrace and meta-pragmatic records. Review publication versions separately, retain canonical citation DOIs, and refresh dated discovery totals.",
+      "curated_targets": [
+        "pages/DISCOVERY.md",
+        "discovery.html"
+      ]
     }
   ]
 }

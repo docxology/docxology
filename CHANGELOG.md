@@ -2,6 +2,36 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-10-16
+
+- **GitHub and Zenodo refresh:** reviewed a full release/record scan and the
+  paginated public-source inventory. Added the meta-pragmatic active-inference
+  preprint, refreshed Synthetic Overview's teaching archive and iTrace's
+  corrected manuscript, and linked supplemental iTrace and Realizing Emptiness
+  software archives without duplicating work identities. Citation concepts,
+  manuscript versions, package versions and scientific limitations stay distinct.
+- **Curated software:** added the two newly public active-inference projects,
+  refreshed opentir and Realizing Emptiness release descriptions, and classified
+  the new Lenticulum.jl fork under the existing fork policy. Rebuilt discovery,
+  bibliography, software, counts, search and CV projections from reviewed sources.
+- **Video discovery:** refreshed both public YouTube caches and added one
+  newly discovered institute GuestStream, preserving prior publication dates
+  and verifying the new video metadata separately.
+- **YouTube date precision:** mixed-tab refreshes preserve established dates
+  for approximate-only listings while allowing corrections from full metadata.
+  A regression covers exact corrections, duplicates and removed records.
+- **Paired-intake authorship:** new author-aware bibliography rows and the
+  shared paper index retain every registry creator. Updating an existing row
+  preserves its curated byline instead of truncating it. Raw README/CFF
+  templates retain ordered creators and source ORCIDs.
+- **Catalog telemetry:** refreshed current star counts and latest-push months
+  from the complete public inventory and restored stable star-count ordering;
+  the dated metadata review records each source-backed change.
+- **Portable maintenance:** pin Python 3.12 to match CI and avoid accidental
+  unsupported native dependency builds on newer host interpreters. Inventory
+  refreshes now finish successfully with an external `--output` path and still
+  report source-access warnings; a regression test covers that boundary.
+
 ## 2026-10-13
 
 - **Publication consistency:** retained verified SUMO and Digital Twins

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-12T18:37:27Z",
+  "generated_at": "2026-10-17T00:13:47Z",
   "source": "papers/paper_metadata.json, papers/*/metadata.json, README.md and SKILL.md",
-  "count": 222,
+  "count": 223,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -5923,7 +5923,7 @@
     },
     "Friedman2026ITraceVerificationFirstWebcam165": {
       "citation_key": "Friedman2026ITraceVerificationFirstWebcam165",
-      "abstract": "iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics. Version 0.4.1 is a diagnostic v1 release: the pure NumPy/SciPy core is algorithmically verified against synthetic and closed-loop oracles, the optional webcam shell exports derived records, and the empirical ledger covers a single-participant, single-device, five-session diagnostic pilot. This release does not claim reference-device accuracy, cross-device generality, population generality, or webcam-accuracy validation.",
+      "abstract": "# iTrace manuscript revision, 2026-10-16 This deposit archives the corrected 30-page manuscript from reviewed commit `310be17ace8ae61621afe01329356427a3e6c861`. Exact source and figure artifacts are at https://github.com/docxology/itrace/tree/310be17ace8ae61621afe01329356427a3e6c861. It is a manuscript revision after the immutable v0.5.0 release, not a new package release. The package version in that source remains 0.5.0. The previous release remains at https://doi.org/10.5281/zenodo.23403300. References in the manuscript to that DOI identify the archived baseline. Changes correct overlap scoring, resampling and fit uncertainty, fitted-null diagnostics, uncertainty figures, scholarship, and scientific interpretation. The manuscript distinguishes synthetic verification from real-device validation. No new participant or reference-device data are claimed. Verification: 737 tests passed, 2 skipped, 91.05% combined statement-and-branch coverage; 44 final artifact tests passed, independent review approved the exact source commit, and all ten hosted CI jobs passed. The included figure manifest inventories 41 artifacts in the linked source tree. `provenance.json` binds this PDF to the Git commit; `SHA256SUMS` inventories every payload.",
       "keywords": [
         "eye-tracking",
         "webcam",
@@ -5934,18 +5934,16 @@
         "diagnostic-pilot"
       ],
       "findings": [
-        "On synthetic traces the I-VT detector recovered a 10 deg saccade's amplitude within 5% and peak velocity within 10%.",
-        "On the synthetic 3-D closed loop, gaze was recovered with 0.16 deg RMS residual (max 0.23 deg) for gaze within ±15 deg; the author states this is internal consistency, not device validation.",
-        "In the idealised noise sweep, saccade detection was most fragile (F1 < 0.8 at sigma about 0.0014), while gaze crossed the 2 deg bound near sigma 0.005.",
-        "The pupil noise robustness is reported only as a conditional illustration because it follows from the assumed pupil noise model.",
-        "The headline limitation is an unclosed device validation gap: correctness rests on constructed ground truth, not reference measurements of real eyes."
+        "In the specified synthetic landmark-noise sweep, gaze remains below 2 deg RMS to sigma approximately 0.0048, about 3 pixels at 640-pixel width.",
+        "One-to-one overlap-based saccade recovery falls below F1 = 0.8 near sigma 0.0014, about 0.92 pixels, in that synthetic sweep.",
+        "The overlap result measures event recovery and does not establish timing accuracy.",
+        "Pupil noise-sweep robustness is conditional on the assumed pupil-noise injection model.",
+        "These results verify specified algorithms and internal geometry; they do not validate webcams as eye trackers."
       ],
       "methods": [
-        "Hardware-decoupled pure NumPy/SciPy analysis core with optional capture shell — Gaze geometry, I-VT/I-DT, Engbert-Kliegl microsaccade, main-sequence and pupil algorithms run headlessly, separate from an optional webcam/MediaPipe shell.",
-        "Verification against synthetic traces with ground truth held out by construction — Every detector is tested on generated signals whose events are known, e.g. a 250 Hz fixation-saccade-fixation trace and an embedded 0.5 deg microsaccade.",
-        "3-D eyeball forward model closed loop through a pinhole camera — Known gaze is projected to landmarks and back through the estimator on an animated 120 Hz scene to check geometric internal consistency.",
-        "Seeded Monte-Carlo landmark-noise sweep (sigma 0-0.016, 25 trials/level) — Independent landmark noise is injected into the synthetic scene to rank fragility of gaze, saccade and pupil recovery, with bootstrap confidence intervals.",
-        "N=1 single-participant, single-device webcam pilot sessions — One local webcam workflow recorded fixed-gaze, reading and target trials as derived records to give order-of-magnitude session diagnostics."
+        "Hardware-decoupled analysis core — The optional capture shell emits typed records consumed by a headless scientific-analysis core.",
+        "Constructed-ground-truth verification — Headless tests exercise the algorithms on synthetic signals whose truth is supplied by construction.",
+        "Explicit caller-supplied benchmark truth — Benchmark outputs report their truth boundary and distinguish comparator agreement from reference measurement."
       ],
       "concepts": [],
       "sources": {
@@ -5958,7 +5956,7 @@
       "abstract_provenance": {},
       "summary_provenance": {
         "source": "full_text.md",
-        "date": "2026-10-01",
+        "date": "2026-10-16",
         "work_kind": "software/methods"
       }
     },
@@ -8374,7 +8372,7 @@
     },
     "Friedman2026ActiveInferenceSyntheticOverview225": {
       "citation_key": "Friedman2026ActiveInferenceSyntheticOverview225",
-      "abstract": "This tutorial connects Active Inference and synthetic intelligences to explicitly specified informational and dynamical models. Finite categorical examples make Bayesian conditioning, variational free energy, expected free energy, policy planning, and observation-contingent commitments executable. A decision-value example separates information gain in nats from improved expected utility and observation cost. Gaussian examples distinguish deterministic relaxing paths from stationary ensemble probability current, and marginal dependence from conditional independence. A two-level model illustrates prediction and joint conditioning without assuming a neural implementation. The standalone Python package supplies reproducible figures, independent analytical checks, and counterexamples; a separate Lean layer imports selected real-valued results from a pinned revision of the broader FEP_Formal library. Generalized Notation Notation and other Active Inference Institute resources provide further routes for model specification and learning. The paper distinguishes computational correctness, theorem hypotheses, thermodynamic units, and scientific interpretation. These controlled demonstrations explain particular models; they neither establish general intelligence nor infer life from circulation.",
+      "abstract": "Public distribution 0.6.1 of Active Inference -- A Synthetic Overview. This successor archives the revised 28-page paper, complete twenty-minute Daniel lecture, linked slides, English captions, current repository source archive, frozen lecture replay inputs and verification metadata. Scientific package/manuscript version remains 0.5.0; the paper and lecture preserve the verified edition_v15 teaching-release bytes. Documentation is updated throughout the public repository. No numerical model, scientific result or Lean proposition is changed. The source ZIP is bound to the exact commit in RELEASE_IDENTITY.json; the replay ZIP retains the original media inputs and runtime. GitHub release: https://github.com/docxology/ActiveInferenceSynthetic/releases/tag/synthetic-public-v0.6.1 . Earlier edition: https://zenodo.org/records/23321281 . Computational, formal, media and physical-interpretation scopes remain distinct.",
       "keywords": [
         "active inference",
         "free energy principle",
@@ -8386,19 +8384,10 @@
       ],
       "findings": [],
       "methods": [],
-      "concepts": [
-        "active inference",
-        "free energy principle",
-        "Bayesian mechanics",
-        "non-equilibrium steady state",
-        "variational inference",
-        "self-organization",
-        "synthetic intelligence"
-      ],
+      "concepts": [],
       "sources": {
         "abstract": "papers/paper_metadata.json",
-        "keywords": "papers/paper_metadata.json",
-        "concepts": "papers/2026_ActiveInferenceSynthetic/SKILL.md"
+        "keywords": "papers/paper_metadata.json"
       },
       "source": "papers/paper_metadata.json",
       "abstract_provenance": {},
@@ -8429,6 +8418,43 @@
       "source": "papers/paper_metadata.json",
       "abstract_provenance": {},
       "summary_provenance": {}
+    },
+    "Friedman2026ActiveInferenceAsMeta227": {
+      "citation_key": "Friedman2026ActiveInferenceAsMeta227",
+      "abstract": "Active inference makes beliefs and policies conditional on a generative model, leaving open how its categories, evidence and purposes become warranted. We develop active inference as a meta-pragmatic framework for making these conditions of inquiry themselves available to inquiry. Four overlapping roles organize the proposal: inferring states and evaluating actions, contextualizing evidence, monitoring uncertainty and resources, and evaluating or revising model commitments. These roles distinguish responsibilities within inquiry rather than successive stages or separate cognitive faculties. In dialogue with American Pragmatism, situated cognition and Bayesian model criticism, the framework treats knowledge as answerable to consequences while keeping predictive success, explanatory understanding and the justification of ends distinct. Mathematical coherence cannot establish the adequacy of a representation, and optimization under declared preferences cannot justify those preferences. Public criticism consequently concerns both the grounds of a decision and whose experience can challenge the purposes it serves.\n\nThe proposal is made concrete through executable Generalized Notation Notation (GNN) specifications imported with the upstream reference parser and evaluated by an exact categorical runtime. Complementary synthetic studies examine source reliability, misleading metadata, confidence-triggered evidence acquisition, likelihoods fitted on separate labeled training data, and action selection by expected free energy. Paired comparisons across independent simulation replicates retain predictive scores, observation costs and uncertainty. Reliable metadata and further sensing improve classification in the specified sensor task, while misleading metadata and a separately specified world reveal how exact inference can remain confidently mistaken. The contribution is an inspectable discipline of specification, evaluation and accountable revision, supported by model diagrams, retained evidence and technical supplements. The demonstrations establish conditional computational consequences; they neither automate the justification of ends nor validate the framework's broader biological or social interpretation. Sources, model specifications and retained evidence accompany the manuscript at https://github.com/docxology/active_inference_meta_pragmatic.",
+      "keywords": [
+        "active inference",
+        "meta-pragmatism",
+        "American Pragmatism",
+        "GNN",
+        "model criticism",
+        "reproducible research"
+      ],
+      "findings": [
+        "Reliable metadata and further sensing improve classification within the specified synthetic sensor task.",
+        "Misleading metadata and world-model mismatch can leave exact inference confidently mistaken.",
+        "Mathematical coherence and optimization under preferences do not establish representation adequacy or justify those preferences.",
+        "The demonstrations establish conditional computational consequences and do not validate broader biological or social interpretations."
+      ],
+      "methods": [
+        "Executable GNN specifications and exact categorical inference — Imported model specifications are evaluated by an exact categorical runtime.",
+        "Separate training and synthetic evaluation — Likelihood fitting uses labeled training data separate from evaluation in the specified sensor task.",
+        "Paired simulation comparisons — Independent simulation replicates retain predictive scores, observation costs and uncertainty."
+      ],
+      "concepts": [],
+      "sources": {
+        "abstract": "papers/paper_metadata.json",
+        "keywords": "papers/paper_metadata.json",
+        "methods": "papers/2026_ActiveInferenceAs/metadata.json",
+        "findings": "papers/2026_ActiveInferenceAs/metadata.json"
+      },
+      "source": "papers/paper_metadata.json",
+      "abstract_provenance": {},
+      "summary_provenance": {
+        "source": "full_text.md",
+        "date": "2026-10-16",
+        "work_kind": "preprint/software-methods"
+      }
     }
   }
 }

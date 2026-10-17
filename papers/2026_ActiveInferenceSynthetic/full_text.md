@@ -1,6 +1,6 @@
 # Full Text: Active Inference -- A Synthetic Overview
 
-> Extracted from `ActiveInferenceSynthetic_v0.5.0.pdf`
+> Extracted from `ActiveInferenceSynthetic_Revised.pdf`
 
 ---
 
@@ -13,10 +13,11 @@ Daniel Ari Friedman
 Active Inference Institute
 daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
-and Alexandra Mikhailova
+Alexandra Mikhailova
 Active Inference Institute
 alexandra@activeinference.institute
-DOI: 10.5281/zenodo.23321281
+ORCID: not-provided
+DOI: Revised manuscript; archived edition: 10.5281/zenodo.23321281
 2026-10-12
 
 ## Page 2
@@ -26,25 +27,32 @@ Contents
 2 Introduction and Extended Abstract 3
 3 Perception as Inference 5
 4 Methods and Reproducibility 6
-5 W orked Regimes: Equilibrium and Non-Equilibrium 8
-6 Action: V ariational vs Expected F ree Energy 10
-7 The Markov Blanket 11
-7.1 A matched native Gaussian example . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
-8 The Steady State, Quantified 13
-9 F ormal Reference and V erification 15
-9.1 Selected results and hypotheses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
-9.2 Numerical and formal evidence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
-9.3 Qualified blanket and planning adapters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
-10 Planning: Policies as Action Sequences 16
-10.1 An explicit upstream carrier bridge . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
-11 A Closed-Loop Synthetic Agent 17
-12 When Information Improves a Decision 18
-13 A T wo-Level Generative Hierarchy 20
-14 Discussion: Informational and Thermodynamic Interpretation 21
-14.1 Equilibrium and stationary circulation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
-14.2 Statistical boundaries and synthetic agents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
-14.3 Reading and reusing the Institute repositories . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
-15 A Reader’s Route Beyond Synthetic 22
+5 Equilibrium, Relaxation and Non-Equilibrium Steady States 8
+5.1 A common density does not imply a common process . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+5.2 Relaxation, circulation and entropy production . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+5.3 From stationary physics to inference . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+6 W orked Regimes: Equilibrium and Non-Equilibrium 10
+7 Action: V ariational vs Expected F ree Energy 12
+8 The Markov Blanket 13
+8.1 A matched native Gaussian example . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+9 The Steady State, Quantified 15
+10 F ormal Reference and V erification 17
+10.1 Selected results and hypotheses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+10.2 Numerical and formal evidence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+10.3 Qualified blanket and planning adapters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+11 Thermodynamic Proof Imports and GNN Specifications 18
+11.1 What is actually imported from FEP_Formal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+11.2 A concrete GNN representation of both settings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+12 Planning: Policies as Action Sequences 19
+12.1 An explicit upstream carrier bridge . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+13 A Closed-Loop Synthetic Agent 20
+14 When Information Improves a Decision 21
+15 A T wo-Level Generative Hierarchy 23
+16 Discussion: Informational and Thermodynamic Interpretation 24
+16.1 Equilibrium and stationary circulation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+16.2 Statistical boundaries and synthetic agents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+16.3 Reading and reusing the Institute repositories . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+17 A Reader’s Route Beyond Synthetic 26
 
 ## Page 3
 
@@ -99,13 +107,13 @@ minimize free energy — produces relaxation in one regime and persistent statio
 rest of this overview unpacks that picture in the spirit of show, not tell : each section adds one runnable, minimal
 demonstration rather than another layer of formalism. sec. 3 makes the inference concrete — that minimizing
 variational free energy over a generative model is Bayesian updating, and that free energy is a tight upper bound
-on surprise. sec. 5 makes the mechanics concrete — integrating the flow above into worked equilibrium and non-
-equilibrium trajectories and quantifying the persistent current that separates these two model regimes. sec. 6
+on surprise. sec. 6 makes the mechanics concrete — integrating the flow above into worked equilibrium and non-
+equilibrium trajectories and quantifying the persistent current that separates these two model regimes. sec. 7
 turns to action — evaluating expected free energy over policies, whose pragmatic and epistemic terms produce
-the explore/exploit balance from one rule. sec. 7 exhibits conditional screening in a specified Gaussian model;
-a representational interpretation requires further hypotheses. sec. 8 quantifies the far-from-equilibrium regime
-outright — the analytic probability current and the entropy-production rate that is zero exactly at detailed balance
-and positive out of it. Finally sec. 9 closes the loop on rigour: the load-bearing theorems — Gibbs’ inequality, the
+the explore/exploit balance from one rule. sec. 8 exhibits conditional screening in a specified Gaussian model; a
+representational interpretation requires further hypotheses. sec. 9 quantifies the non-equilibrium regime outright
+— the analytic probability current and the entropy-production rate that is zero exactly at detailed balance and
+positive out of it. Finally sec. 10 closes the loop on rigour: the load-bearing theorems — Gibbs’ inequality, the
 free-energy bound, the conservative solenoidal current, the sign of entropy production — are machine-checked in
 Lean 4 , proved from the kernel’s axioms with no sorry: the real-valued exposition imports the FepSketches library
 maintained in fep_formal.
@@ -113,15 +121,12 @@ maintained in fep_formal.
 
 ## Page 5
 
-Figure 1: One landscape, two regimes. Both panels place the system on the same Gaussian free-energy bowl
-(grey contours; the black dot marks the mode, where free energy is least). (a) Equilibrium: the flow is pure gradient
-descent on free energy, 𝑓 = −∇𝐹 (blue arrows). Detailed balance holds, so trajectories fall to the mode and come to
-rest with no net probability current. (b) F ar-from-equilibrium (NESS): an antisymmetric solenoidal operator
-𝑄 adds a conservative current, 𝑓 = (𝑄 − Γ)∇𝐹 (orange streamlines), that flows along the level sets of 𝐹. Free
-energy is still minimized, but probability mass circulates without end — a non-equilibrium diagnostic in this model.
-The Free Energy Principle is the descent term; Bayesian mechanics adds the circulation. Internal states 𝜇 infer
-external states 𝜂 across a Markov blanket (sensory 𝑠, active 𝑎). Figure rendered deterministically by scripts/gene
-rate_overview_figure.py over the tested flow in src/free_energy_flow.py.
+Figure 1: One landscape, two drift regimes. Grey contours show the same Gaussian dimensionless potential;
+the black dot is its mode. (a) Zero drive gives radial deterministic relaxation. (b) An antisymmetric operator
+adds tangential motion to the same dissipative drift, producing a relaxing spiral. With matched diffusion, these
+drifts correspond to equilibrium and a non-equilibrium steady state, respectively; stationary current is computed
+separately in sec. 9. The diagram does not establish a universal identification of FEP with gradient descent, or a
+belief interpretation from a statistical partition alone. Rendered from the tested numerical flow.
 4
 
 ## Page 6
@@ -210,12 +215,90 @@ The independent formal layer builds with lake build from formal/ and pins FEP_Fo
 publication renderer belongs to the template repository. Python execution, Lean checking, rendered-document in-
 spection and publication-file integrity are separate verification steps. The accompanying source archive supplies the
 authored numerical, test, formal and manuscript files; it excludes local environments, credentials and intermediate
-runtime state. The resource guide identifies further mathematical and educational materials sec. 15.
+runtime state. The resource guide identifies further mathematical and educational materials sec. 17.
 7
 
 ## Page 9
 
-5 Worked Regimes: Equilibrium and Non-Equilibrium
+5 Equilibrium, Relaxation and Non-Equilibrium Steady States
+Three questions organize the dynamical examples: what distribution is stationary , which probability cur-
+rents persist, and what changes under time reversal? They distinguish a snapshot of a density, a deter-
+ministic drift path, and a stochastic process. Equilibrium is a property of the process under specified reversal and
+boundary conditions, not merely a minimum in a plot. This treatment follows stationary Bayesian mechanics and
+stochastic thermodynamics [ Da Costa et al. , 2021, Seifert, 2012, Da Costa and Pavliotis , 2023].
+5.1 A common density does not imply a common process
+Write Φ(𝑥) = − ln 𝜌∗(𝑥) + constant for the dimensionless stationary potential. This notation separates a function
+of physical/model coordinates from the variational functional 𝐹 [𝑞] of a recognition distribution. The code uses
+free_energy for this Gaussian potential; that name does not establish an identity between the two mathematical
+objects. For constant positive-definite diffusion 𝐷, the Fokker–Planck equation and current are
+𝜕𝑡𝜌𝑡 = −∇⋅ 𝑗 𝑡, 𝑗 𝑡 = 𝑏𝜌 𝑡 − 𝐷∇𝜌𝑡. (2)
+Stationarity requires ∇⋅ 𝑗 ∗ = 0, not 𝑗∗ = 0. In this paper’s overdamped, even-coordinate model, with no boundary
+flux, detailed balance means that stationary forward and reversed transitions agree; its current vanishes. A NESS
+instead maintains a nonzero divergence-free current. A nonstationary distribution relaxing toward either regime is
+a transient, even when its drift has time-independent coeﬀicients.
+Object
+Equilibrium stationary
+process
+Non-equilibrium
+stationary process Relaxation transient
+Density Time independent Time independent Changes with time
+Stationary current Zero in this
+even-coordinate setting
+Nonzero, divergence free Current need not be
+divergence free
+Detailed balance Holds Fails for the stated
+reversal
+A stationary criterion
+cannot be inferred from a
+transient snapshot
+A noise-free path May relax to a fixed point May also relax to that
+fixed point
+Describes drift only
+For 𝑃 = Π𝐼 , Γ = 𝛾𝐼 and the antisymmetric 𝑄, the two OU regimes share 𝜌∗ ∝ exp(−𝑥T𝑃 𝑥/2)because 𝐷 = Γ
+and 𝛾, Π > 0. Their currents differ by 𝑗∗ = 𝑄𝑃 𝑥𝜌∗. Rotating the drift does not change this isotropic density. It
+changes temporal statistics and forward/reverse path probabilities. The cover graphical abstract therefore compares
+currents over the same contours , rather than using a different density as a visual proxy for non-equilibrium.
+5.2 Relaxation, circulation and entropy production
+Along the deterministic drift, antisymmetry gives ̇Φ = −∇ΦTΓ∇Φ ≤ 0. With stochastic forcing, individual paths
+fluctuate and need not decrease Φ monotonically. At stationarity, fluctuations balance dissipation in the density
+while the solenoidal current may remain. Constant 𝑄, Γ make this decomposition particularly transparent; state-
+dependent coeﬀicients require additional derivative terms and regularity conditions [ Da Costa and Pavliotis , 2023].
+For the stated even-coordinate reversal, path irreversibility and the elliptic stationary current expression agree:
+𝜎 = lim
+𝑇 →∞
+1
+𝑇 𝐷KL(ℙ[0,𝑇 ]‖ℙR
+[0,𝑇 ]) = ∫ 𝑗T
+∗ 𝐷−1𝑗∗
+𝜌∗
+𝑑𝑥. (3)
+Here ℙR is the stationary time-reversed path law aligned to forward coordinates. The OU result is 𝜎 = 2𝜔 2Π/𝛾.
+Positive diffusion makes the inverse well defined. Momentum coordinates, magnetic-field reversal, degenerate dif-
+fusion or a different reverse protocol require a separate analysis; a circulating Hamiltonian phase-space current is
+not automatically dissipative. This qualification prevents the word “solenoidal” from being mistaken for a universal
+thermodynamic diagnosis [ Da Costa and Pavliotis , 2023, Seifert, 2012].
+8
+
+## Page 10
+
+Nonzero 𝜔 establishes non-equilibrium in this model, but does not by itself establish far from equilibrium. The ratio
+|𝜔|/𝛾 compares rotational and dissipative strengths; 𝜎 depends additionally on precision and the model time unit.
+Neither is an empirical measure of a living system’s metabolic cost without a physical calibration. Near-equilibrium
+linear response and a strongly driven regime belong to a continuum of parameter choices, not two different kinds
+of Gaussian density.
+5.3 From stationary physics to inference
+Bayesian mechanics relates suitably partitioned stochastic systems to belief parameterizations under explicit as-
+sumptions [ Ramstead et al. , 2023, Da Costa et al. , 2021]. A stationary density alone supplies neither a generative
+model nor an agent’s action set. Synthetic therefore adds finite inference, policy selection and feedback as separate
+demonstrations. A blanket’s conditional independence, an inference algorithm’s VFE descent and an OU process’s
+stationary current answer different questions. Establishing their relationship requires a specified parameter map,
+sensing and control channels, and hypotheses that survive the transfer; it cannot be inferred from similar looking
+gradients [ Friston, 2010, Friston et al. , 2023].
+9
+
+## Page 11
+
+6 Worked Regimes: Equilibrium and Non-Equilibrium
 The overview figure (fig. 1) contrasts two flows — one that comes to rest, one that circulates — as arrow fields.
 A flow field says where a system would go next; it does not, on its own, show where a system ends up . This
 section integrates the flow into actual trajectories, so the equilibrium ↔non-equilibrium distinction becomes a
@@ -229,35 +312,35 @@ equilibrium the flow reduces to the linear system ̇ 𝑥 = −𝛾 Π 𝑥(with
 path matches the closed form 𝑥(𝑡) = 𝑥0 𝑒−𝛾 Π 𝑡 — i.e. 𝑥0𝑒−𝛾𝑡 at unit precision — to better than 10−6.
 fig. 3 shows the two fates. In panel (a), the equilibrium trajectory ( 𝑄 = 0 ) falls straight down the free-energy
 gradient to the mode and stops. Free energy decreases monotonically along the path, the radius collapses to under
-1% of its starting value, and the net angle swept about the mode is zero to numerical precision — detailed balance,
-no current. This is a rock settling, a battery draining, a belief that has finished inferring.
+1% of its starting value, and the net angle swept about the mode is zero to numerical precision. Detailed balance
+and zero stationary current concern the corresponding matched-noise diffusion, not this single noise-free path.
 Panel (b) is the NESS (𝑄 ≠ 0). The dissipative term still pulls the system down 𝐹 — free energy again decreases
 monotonically, so the system is still minimizing surprise — yet the solenoidal term drives it around the level sets
 of 𝐹 at the same time. The result is a spiral that sweeps many full turns before relaxing inward.
 How much it winds is worth stating carefully. The total net rotation — the figure’s ≈ −4.58 turns over the
-demonstration window 𝑇 = 12 — is not an intrinsic property of the NESS; it grows with 𝑇 and would diverge as
-𝑇 → ∞ . The intrinsic, initial-condition-free quantity is the rotation rate . For this isotropic-Gaussian flow the
-angular velocity is analytically constant, ̇𝜃 = −𝜔 Π radians per unit time (with Π the precision), so the rate is
-≈ −0.38 turns per unit time ( −𝜔 Π/(2𝜋)at 𝜔 = 2.4, Π = 1) for any starting point off the mode — and it is exactly
-0 at equilibrium for every window. That zero-versus-nonzero rate is the honest, quantitative witness that detailed
-balance is broken. The tests pin it directly: net rotation equals −𝜔 Π 𝑇 across several starting points to a tenth of
-a percent.
+demonstration window 𝑇 = 12 — is not an intrinsic property of the NESS; it grows with 𝑇 and would diverge
+as 𝑇 → ∞ . The intrinsic, initial-condition-free quantity is the rotation rate . For this isotropic-Gaussian flow
+the angular velocity is analytically constant, ̇𝜃 = −𝜔 Π radians per unit time (with Π the precision), so the rate
+is ≈ −0.38 turns per unit time ( −𝜔 Π/(2𝜋) at 𝜔 = 2.4 , Π = 1 ) for any starting point off the mode — and it is
+exactly 0 at equilibrium for every window. That zero-versus-nonzero rate diagnoses the antisymmetric drive in this
+isotropic model; stationary current establishes the detailed-balance consequence. The tests pin the rate directly:
+net rotation equals −𝜔 Π 𝑇 across several starting points to a tenth of a percent.
 One more distinction keeps the claim precise. Taken on its own, the deterministic trajectory here relaxes — it
 spirals into the mode and would sit there. A genuine non-equilibrium steady state is a property of the stochastic
 system: a stationary density 𝜌 ∝ 𝑒 −𝐹 carrying a divergence-free probability current 𝑗 = 𝑄∇𝐹 𝜌 that never dies.
 What the figure shows is that system’s deterministic drift , and the spiral is the mechanistic origin of that current,
 not a measurement of it. So the honest reading of “NESS” here is precise: the nonzero winding witnesses the
 solenoidal 𝑄 ≠ 0 that breaks detailed balance and thereby renders the corresponding stochastic stationary state a
-non-equilibrium one. Reverse the sign of 𝑄 and the circulation reverses with it, as the tests confirm. (sec. 8 supplies
+non-equilibrium one. Reverse the sign of 𝑄 and the circulation reverses with it, as the tests confirm. (sec. 9 supplies
 the measurement this section withholds — the actual probability current and its entropy-production rate.)
 Read the two panels against the paper’s teaching aim. Descent is common to both: the free-energy landscape
 decreases along each deterministic trajectory. Nonzero solenoidal drive additionally produces rotation. Persistent
 stationary probability current belongs to the corresponding stochastic model and is quantified in the next steady-
 state section. These are distinct demonstrations of relaxation and non-equilibrium circulation; they do not establish
 life, intelligence, or perpetual motion of an individual deterministic trajectory.
-8
+10
 
-## Page 10
+## Page 12
 
 Figure 3: W orked trajectories over one landscape. Both panels integrate the Bayesian-mechanics flow 𝑓 =
 (𝑄 − Γ)∇𝐹 from the same starting point (coloured dot) over the same Gaussian free-energy bowl (grey contours;
@@ -265,14 +348,14 @@ black dot marks the mode). (a) Equilibrium (𝑄 = 0 ): pure descent falls radia
 energy monotonically decreasing, rotation rate ≈ 0 turns/time. (b) NESS (𝑄 ≠ 0 ): the same descent plus a
 solenoidal term spirals inward at a constant rate ≈ −0.38 turns/time ( ≈ −4.58 turns over the window 𝑇 = 12 )
 while free energy still decreases monotonically. The nonzero rotation rate witnesses the broken detailed balance in
-the corresponding stochastic model; sec. 8 computes its stationary probability current. Rendered deterministically
+the corresponding stochastic model; sec. 9 computes its stationary probability current. Rendered deterministically
 by scripts/generate_trajectory_figure.py over the tested cores in src/trajectories.py and src/free_energy_flow
 .py.
-9
+11
 
-## Page 11
+## Page 13
 
-6 Action: Variational vs Expected Free Energy
+7 Action: Variational vs Expected Free Energy
 sec. 3 showed perception: minimizing variational free energy 𝐹 over beliefs about what is happening now. But a
 thing that only perceived would be a spectator. Active Inference closes the loop by minimizing the same currency in
 the other direction — over actions, scored by the free energy they are expected to produce. That forward-looking
@@ -287,7 +370,7 @@ to make large (so it minimizes their negatives):
 pragmatic value
 − 𝔼 𝑞(𝑜∣𝑎)[KL[ 𝑞(𝑠 ∣ 𝑜, 𝑎) ‖ 𝑞(𝑠) ]]⏟ ⏟ ⏟ ⏟ ⏟ ⏟ ⏟ ⏟ ⏟ ⏟ ⏟ ⏟ ⏟
 epistemic value
-. (2)
+. (4)
 Pragmatic value is expected utility: how well an action’s likely outcomes match what the agent prefers. Epis-
 temic value is expected information gain — how much the action’s outcomes would sharpen the belief about the
 hidden state, which is exactly the mutual information 𝐼(𝑠; 𝑜 ∣ 𝑎) and is always non-negative. One is the drive to get
@@ -306,9 +389,9 @@ decided by the preferences alone.
 This is the whole architecture in miniature. Perception ( 𝐹) and action ( 𝐺) are one imperative — minimize free
 energy — read in two tenses. Inference makes beliefs fit the world; action makes the world fit beliefs and preferences,
 gathering information where it is uncertain and reward where it is confident.
-10
+12
 
-## Page 12
+## Page 14
 
 Figure 4: One rule yields explore and exploit. An agent uncertain between two contexts ( 𝑞(𝑠) = (0.50, 0.50))
 chooses between an informative “cue” (epistemic value +0.37, preference-neutral) and a rewarding but uninformative
@@ -318,7 +401,7 @@ its pragmatic/epistemic split. (a) Flat preferences: the epistemic term dominate
 𝐺 = 0.43 ). A single rule; the balance of 𝐺’s two terms — not a hand-coded switch — is what turns over between
 the panels. Rendered deterministically by scripts/generate_efe_figure.py over the tested core in src/expected_fr
 ee_energy.py.
-7 The Markov Blanket
+8 The Markov Blanket
 Everything so far assumed a clean split between a system and its world — a belief 𝑞(𝑠) about hidden states,
 sensations 𝑜 that are not those states, actions that reach out. That split is not a modeling convenience; it is a
 structural claim, and it has a name: the Markov blanket . This section shows what the blanket actually asserts,
@@ -327,7 +410,7 @@ Partition the variables of a system-plus-environment into four roles: external s
 𝜇 (the system’s own states, which parameterize its beliefs), and the blanket that lies between them — sensory
 states 𝑠 (world → system) and active states 𝑎 (system → world). The blanket’s defining property is a conditional
 independence:
-𝑝(𝜂, 𝜇 ∣ 𝑠, 𝑎) = 𝑝(𝜂 ∣ 𝑠, 𝑎) 𝑝(𝜇 ∣ 𝑠, 𝑎). (3)
+𝑝(𝜂, 𝜇 ∣ 𝑠, 𝑎) = 𝑝(𝜂 ∣ 𝑠, 𝑎) 𝑝(𝜇 ∣ 𝑠, 𝑎). (5)
 In this example the endpoints are marginally dependent, but their coupling is screened by the blanket. Given sensory
 and active coordinates, knowing the external coordinate supplies no additional information about the internal
 coordinate under the stated Gaussian law. A causal interpretation would need a dynamical or interventional model.
@@ -340,11 +423,11 @@ the remaining variables — so the zero at (𝜂, 𝜇) says 𝜂 ⟂ 𝜇 ∣ {
 partial correlation between internal and external states to zero (the tests confirm it vanishes to 10−10 via the Schur
 complement), even though conditioning on only part of the blanket does not — both the sensory and active states
 are needed to close the channel.
-11
+13
 
-## Page 13
+## Page 15
 
-7.1 A matched native Gaussian example
+8.1 A matched native Gaussian example
 A second fixture matches the pinned upstream canonical four-axis Gaussian carrier. Its ordered variables are
 external, sensory, active, and internal. The exact precision and covariance arrays live in src/demos.py; tests verify
 their rational inverse relation. External and internal marginal covariance is 0.0417, while conditioning on sensory
@@ -367,48 +450,50 @@ and the partial correlation given the blanket is 0. (c) The matched upstream can
 conditioned endpoint covariance despite nonzero marginal coupling. The sensory and active states screen the
 internal states from the external world. Rendered deterministically by scripts/generate_markov_blanket_figure.p
 y over the tested core in src/markov_blanket.py.
-12
+14
 
-## Page 14
+## Page 16
 
-8 The Steady State, Quantified
-sec. 5 was deliberately careful about one thing. The deterministic spiral it drew is the drift of a non-equilibrium
-steady state, not the state itself — a single trajectory relaxes to the mode and stops, while a genuine steady state is
-a property of a whole stochastic ensemble, with a current that never dies. This closing section supplies that missing
-object, still analytically and with no randomness, in src/steady_state.py. It is where “far from equilibrium” stops
-being a picture and becomes two numbers: a probability current and an entropy-production rate .
+9 The Steady State, Quantified
+sec. 6 was deliberately careful about one thing. The deterministic spiral it drew is the drift of a non-equilibrium
+steady state, not the state itself — a single trajectory relaxes to the mode and stops, while a genuine steady state
+is a property of a whole stochastic ensemble, with a current that never dies. This closing section supplies that
+missing object, still analytically and with no randomness, in src/steady_state.py. It is where non-equilibrium is
+characterized by two model quantities: a probability current and an entropy-production rate .
 Give the Bayesian-mechanics flow a matched noise term — the Ornstein–Uhlenbeck diffusion 𝑑𝑥 = −𝑀 𝑥 𝑑𝑡 +√
 2𝐷 𝑑𝑊 with drift 𝑀 = (Γ − 𝑄)𝑃 and, by the fluctuation–dissipation relation, diffusion 𝐷 = Γ . Three exact
 results follow, each checked against a closed form in the tests.
 First, the ensemble settles into a stationary density . Its covariance solves the Lyapunov equation 𝑀 Σ + Σ𝑀T =
-2𝐷, and with 𝐷 = Γ the solution is exactly Σ = 𝑃 −1 — the system’s own belief covariance. The distribution the
-noisy system lives in is precisely 𝜌 ∝ 𝑒 −𝐹 : free-energy minimization and the steady state are the same fixed point.
+2𝐷, and with 𝐷 = Γ the solution is exactly Σ = 𝑃 −1, the stationary ensemble covariance. The density is 𝜌 ∝ 𝑒 −Φ,
+where Φ is the Gaussian potential called free_energy by the code. A stationary ensemble has nonzero variance; it
+is not the point reached by a deterministic path or automatically an agent’s recognition distribution.
 Second, that density carries a probability current 𝑗(𝑥) = 𝑏(𝑥)𝜌 − 𝐷∇𝜌 = (𝑄𝑃 𝑥) 𝜌(𝑥). When 𝑄 = 0 the current
 is zero everywhere (detailed balance — the density just sits), and when 𝑄 ≠ 0 it is a divergence-free field that
 circulates around the mode without end. This is the sustained current the deterministic trajectory could only
 gesture at; here it is an explicit vector field, orthogonal to ∇𝐹 (the tests confirm both ∇⋅ 𝑗 = 0 and 𝑗 ⟂ ∇𝐹 to
 machine precision).
-Third, the current has a price. The entropy-production rate 𝜎 = tr(𝐷−1𝑄𝑃 Σ 𝑃 T𝑄T) measures the system’s
+Third, the current has a price. The entropy-production rate 𝜎 = tr(𝐷−1𝑄𝑃 Σ 𝑃T𝑄T) measures the system’s
 irreversibility, and for the isotropic model it is exactly 𝜎 = 2 𝜔 2 Π/𝛾 (with Π the precision). It is strictly positive
-out of equilibrium and exactly zero if and only if 𝜔 = 0 . Entropy production is the thermodynamic cost of
-staying far from equilibrium — of keeping the current running — and it is the sharpest available statement of the
-difference between the two regimes: not the shape of a path, but a non-negative number that vanishes precisely at
-detailed balance. (Two conventions, stated plainly: the choice 𝐷 = Γ is the fluctuation– dissipation relation with
-𝑘B𝑇 ≡ 1 absorbed, so 𝜎 is a pure rate — the dimensional entropy-production rate is 𝑘B𝜎 and the dissipated power
-is 𝑘B𝑇 𝜎; and crucially the nonequilibrium character is certified by the current and 𝜎, not by the density — the
-Gaussian 𝜌 on its own looks equilibrium-like, so it is the circulation, not the shape of the steady state, that marks
-the regime as nonequilibrium.)
-fig. 6 shows both panels over the same stationary density. At equilibrium (a) the current field is identically zero and
-𝜎 = 0 : nothing circulates and nothing is dissipated. In the NESS (b) the current curls steadily around the mode and
-𝜎 > 0 : the same density, now maintained by a perpetual, entropy-producing flow. Read against the whole overview,
-this is the final turn of the one thesis — and the point at which the mathematics reconnects to the motivation.
-A system that minimizes free energy need not merely come to rest at its expected states; a nonequilibrium steady
-state holds those states while circulating through them, at a strictly positive entropy cost. The model makes the
-sustained current and its irreversible cost precise and measurable under the stated diffusion assumptions. This
-motivates connections to living and synthetic systems without proving biological adequacy or intelligence.
-13
+out of equilibrium and exactly zero if and only if 𝜔 = 0. Under even-coordinate time reversal this rate measures
+path irreversibility; with an isothermal physical model and local thermodynamic assumptions it can represent the
+cost of maintaining the current. It distinguishes the difference between the two regimes: not the shape of a path,
+but a non-negative number that vanishes precisely at detailed balance. (Two conventions, stated plainly: the choice
+𝐷 = Γ is the fluctuation– dissipation relation with 𝑘B𝑇 ≡ 1 absorbed, so 𝜎 is a pure rate — the dimensional
+entropy-production rate is 𝑘B𝜎 and the dissipated power is 𝑘B𝑇 𝜎; and crucially the nonequilibrium character is
+certified by the current and 𝜎, not by the density — the Gaussian 𝜌 on its own looks equilibrium-like, so it is the
+circulation, not the shape of the steady state, that marks the regime as nonequilibrium.)
+fig. 6 shows both panels over the same stationary density. At equilibrium (a) the current field is identically zero
+and 𝜎 = 0 : there is no net stationary circulation or entropy production, although stochastic fluctuations and energy
+exchange remain. In the NESS (b) the current curls steadily around the mode and 𝜎 > 0 : the same density, now
+maintained by a perpetual, entropy-producing flow. Read against the whole overview, this is the final turn of the
+one thesis — and the point at which the mathematics reconnects to the motivation. A system that minimizes
+free energy need not merely come to rest at its expected states; a nonequilibrium steady state holds those states
+while circulating through them, at a strictly positive entropy cost. The model makes the sustained current and
+its irreversible cost precise and measurable under the stated diffusion assumptions. This motivates connections to
+living and synthetic systems without proving biological adequacy or intelligence.
+15
 
-## Page 15
+## Page 17
 
 Figure 6: Probability current and entropy production. Both panels place the same stationary Gaussian
 density (grey contours) under the Bayesian-mechanics diffusion. (a) Equilibrium (𝑄 = 0 ): the steady-state
@@ -417,15 +502,15 @@ probability current is zero everywhere and the entropy-production rate is 𝜎 =
 production rate 𝜎 = 2𝜔 2Π/𝛾 > 0 (here 𝜎 ≈ 11.5 nats/time). The current vanishes at the mode (where 𝑄𝑃 𝑥 = 0)
 and in the tails (where 𝜌 → 0), peaking on an annulus between. Rendered deterministically by scripts/generate_s
 teady_state_figure.py over the tested core in src/steady_state.py.
-14
+16
 
-## Page 16
+## Page 18
 
-9 Formal Reference and Verification
+10 Formal Reference and Verification
 This paper supplies worked models and exposition. Its formal layer selects real-valued results from the Institute’s
 fep_formal repository [Friedman, 2026a,b]. Lake imports its FepSketches Lean modules from the pinned revision
 in formal/lakefile.lean. Generic proofs remain upstream; Synthetic’s Python cores do not import fep_lean.
-9.1 Selected results and hypotheses
+10.1 Selected results and hypotheses
 ActiveInferenceFormal.Geometry selects the flow and steady-state results; ActiveInferenceFormal.Information
 selects finite information, VFE, and EFE results. Their ℝ_ theorem names correspond to the following claims:
 • ℝ_solenoidal_orthogonal and ℝ_flow_work_eq_dissipation: the antisymmetric flow is orthogonal to the gra-
@@ -443,7 +528,7 @@ tity, finite-policy minimum, and information-gain sign for the stated upstream m
 The source signatures, rather than these summaries, own the full hypotheses. The upstream methods and formal-
 kernel guides describe the carriers, assumptions, and reviewed scope. The repository’s docs/positioning.md provides
 their section-level navigation map.
-9.2 Numerical and formal evidence
+10.2 Numerical and formal evidence
 A Lean theorem checks its exact proposition under its hypotheses. A numerical test checks implementation behavior
 against its references and tolerances. Neither replaces the other. In particular, the Python KL helper rejects zero
 reference mass on positive belief support, while upstream finite KL has a real-valued totalization with different
@@ -452,11 +537,11 @@ Witnesses.lean retains concrete controls: a permitted zero-work case, positive w
 dissipation hypothesis is violated, and the upstream disjoint-support totalized-KL boundary. Audit.lean prints the
 axiom footprint of every selected result and witness. The Python verification suite invokes the real build, checks
 the complete audit for sorryAx, and asks Lean to reject an explicit false real inequality.
-9.3 Qualified blanket and planning adapters
+10.3 Qualified blanket and planning adapters
 GaussianBlanket.lean matches an additional canonical four-axis precision to the upstream native Gaussian carrier.
 It reuses positive definiteness, marginal endpoint covariance, conditional product rows, and endpoint conditional
 independence at every center. A supplied coupled endpoint perturbation has native non-independence. This covers
-the matched canonical example in sec. 7, not the separate original precision fixture or arbitrary Gaussian models.
+the matched canonical example in sec. 8, not the separate original precision fixture or arbitrary Gaussian models.
 Planning.lean uses Boolean observation histories as the outcome carrier. Its normalized terminal-history preference
 adds the explicit constant ln 2 to the terminal-preference/history-information score. It proves predictive and pos-
 terior mass identities, a fair-coin terminal/cumulative mismatch, and a repeated-revealing-observation boundary.
@@ -467,11 +552,65 @@ Together these adapters make the paper’s transfer boundaries constructive: sta
 and test a condition that should break the conclusion. The closed-loop agent and hierarchical model remain
 independently tested numerical demonstrations. The paper does not establish empirical intelligence or universal
 formal coverage from these examples.
-15
+17
 
-## Page 17
+## Page 19
 
-10 Planning: Policies as Action Sequences
+11 Thermodynamic Proof Imports and GNN Specifications
+11.1 What is actually imported from FEP_Formal
+The immutable FepSketches dependency remains revision 99276926 of ActiveInferenceInstitute/fep_formal. Geom-
+etry.lean imports ness_flow: solenoidal orthogonality, the dissipative work identity, a pointwise zero-drive equiva-
+lence away from a zero gradient, and the isotropic entropy-rate algebra. These are real-valued propositions. They
+do not constitute a proof of an SDE’s invariant measure, a general detailed-balance theorem or a measured physical
+heat rate [ Friedman, 2026a,b].
+This revision also imports FepSketches.path_thermodynamics in Thermodynamics.lean. Its carrier is a pair of nor-
+malized finite path laws with an involutive reversal and a reverse law aligned to forward coordinates. Synthetic
+re-exports nonnegative path KL and, with strictly positive forward and reverse support, the integral fluctuation
+identity
+Σ(𝜏 ) = ln 𝑃 (𝜏 )
+𝑃R(𝜏 ), 𝔼 𝑃 [exp(−Σ)] = 1. (6)
+This identity follows from normalization and the supported likelihood ratio. Interpreting Σ as physical entropy
+production additionally requires the correct physical reverse protocol and local thermodynamic assumptions [ Seifert,
+2012]. The finite theorem is not asserted to be the continuum OU rate theorem: the path carrier, measure, support
+and time limit differ. Lean’s totalized real logarithm at zero is not an infinite entropy production; the full-support
+hypotheses must remain visible. Upstream documentation and the paper’s positioning guide distinguish these
+contracts.
+11.2 A concrete GNN representation of both settings
+Two versioned model inputs now accompany the paper: data/gnn/ou_regimes.md describes the matched-density
+continuous process, and data/gnn/finite_agent.md describes the finite cue/bet observation channels [ Smékal and
+Friedman, 2023, Friedman, 2026c]. The continuous file declares dimension, precision, dissipation, the zero/driven
+alternatives, diffusion, density, current, time convention and equations. Q_ou denotes the antisymmetric drive; it
+must not be confused with the process-noise covariance called Q by some continuous-model interfaces. The finite
+file declares outcome-by-state likelihoods, prior, normalized preferences and their logarithmic conversion. It keeps
+the state static and does not introduce an adaptive payout.
+GNN declaration Synthetic carrier Required interpretation
+x[2], P_ou, Gamma_ou, Q_ou, D_ou IsotropicOU and stationary-current
+functions
+Continuous even coordinates;
+𝐷 = Γ ; 𝛾, Π > 0 for diffusion
+A_cue, A_bet, D Action likelihood arrays and belief Outcome rows, state columns;
+normalized columns and prior
+C_probs, C_log Preference law and expected
+log-preference
+Positive normalized preference law;
+natural logs in nats
+Equations, Time Authored semantic specification Syntax does not implement an SDE
+solver or an EFE backend
+The optional scripts/validate_gnn_specifications.py invokes the upstream Markdown GNN parser, verifies exact
+demo parameters and selected dimensions, records parser source hashes and revision, and rejects altered dissipation
+or state dimension as real negative controls. The parser provenance is separate from the older cited GNN software
+snapshot. Run it in an environment with the GNN parser available, passing --gnn-root explicitly. The normal
+Synthetic Python package remains independent of that optional environment.
+Parsing a specification, evaluating its declared equations, executing a target backend and establishing a theorem
+correspondence are four separate checks. This bridge establishes the first and its parameter/dimension correspon-
+dence to the tested examples. It does not claim that a generic GNN backend executes the OU diffusion or shares
+Synthetic’s policy-scoring convention. A future execution bridge must compare matrices, time discretization, state
+parity, support, reversal and outputs before inheriting any conclusion.
+18
+
+## Page 20
+
+12 Planning: Policies as Action Sequences
 The one-step EFE example can be extended to a finite sequence of actions on a static hidden state. The local
 algorithm enumerates every observation branch, updates beliefs along that branch, and scores a declared terminal-
 preference objective. It does not optimize a general feedback policy. With 𝜋 = (𝑎1, … , 𝑎𝑇 ), its branch law is
@@ -479,18 +618,18 @@ preference objective. It does not optimize a general feedback policy. With 𝜋 
 𝑥
 𝑞(𝑥) ∏
 𝑡
-𝑝(𝑜𝑡 ∣ 𝑥, 𝑎𝑡). (4)
+𝑝(𝑜𝑡 ∣ 𝑥, 𝑎𝑡). (7)
 The score implemented in src/policy_planning.py is
-𝐺terminal(𝜋) = −𝔼[ln 𝐶(𝑜𝑇 )] − 𝐼(𝑥; 𝑜1∶𝑇 ∣ 𝜋). (5)
-The score in eq. 5 uses the predictive history in eq. 4. Terminal pragmatic value is collected only at the last step.
+𝐺terminal(𝜋) = −𝔼[ln 𝐶(𝑜𝑇 )] − 𝐼(𝑥; 𝑜1∶𝑇 ∣ 𝜋). (8)
+The score in eq. 8 uses the predictive history in eq. 7. Terminal pragmatic value is collected only at the last step.
 Epistemic value is the expected sequential posterior KL gain, checked independently against mutual information
 of the complete observation history. The two-step result selects cue-then-bet at 0.07, compared with 0.43 for
 bet-then-bet. Its information contribution is 0.37.
 The bet channel here is state-independent. Observing the cue does not improve that fixed bet’s reward distribution.
 Cue-then-bet wins through the objective’s information term while retaining the preferred terminal outcome law.
-Genuine observation-adaptive commitment is demonstrated separately in sec. 11. Reading this open-loop score as
+Genuine observation-adaptive commitment is demonstrated separately in sec. 13. Reading this open-loop score as
 an instrumental advantage or a closed-loop control theorem would exceed what the example computes.
-10.1 An explicit upstream carrier bridge
+12.1 An explicit upstream carrier bridge
 For Boolean observations, define one history outcome (𝑜1, 𝑜2) with product likelihood and normalized preference
 𝐶𝐻(𝑜1, 𝑜2) = 𝐶(𝑜 2)/2. Upstream one-step EFE on that finite history carrier equals the local terminal/history
 objective plus the constant ln 2. The computed normalization offset is 0.6931, and the cue-then-bet history-channel
@@ -502,14 +641,14 @@ terminal preference cost ln 2 but cumulative preference cost 2ln 2. A repeated p
 static state only once: history mutual information is ln 2, not twice that value. The native controls preserve these
 distinctions. The Lean identity is about its explicit normalized carrier; it does not certify the floating-point branch
 implementation or general policy-tree optimization.
-16
+19
 
-## Page 18
+## Page 21
 
 Figure 7: Finite sequence scoring. The four two-step sequences share a static hidden state. Cue-then-bet
 minimizes the declared terminal-preference minus history-information objective. The bet remains state-independent;
 the advantage is information scoring, not an observation-conditioned improvement in its payout.
-11 A Closed-Loop Synthetic Agent
+13 A Closed-Loop Synthetic Agent
 The previous examples separate inference and policy scoring. Here one finite agent connects them: predict obser-
 vations, select an action by one-step EFE, receive a cue, update its belief by Bayes’ rule, and choose a subsequent
 commitment. The hidden context is left or right and remains fixed during the episode. The outcome alphabet
@@ -529,18 +668,18 @@ This is a deliberately small synthetic agent, with a supplied observation whose 
 environment model. The episode includes inference and an observation-sensitive next action. It does not learn
 its likelihood, discover its preferences, solve an arbitrary partially observed control problem, or establish empirical
 intelligence. EFE and policy support still depend on the stated model [ Parr et al. , 2022].
-17
+20
 
-## Page 19
+## Page 22
 
 Figure 8: Observation changes the next decision. Informative cue-left and cue-right produce different posterior
 beliefs and opposite commitments. Replacing the cue with a state-independent coin leaves the prior unchanged and
 fails to produce an observation-sensitive commitment. Every panel comes from the same exact finite inference and
 action-selection core.
-12 When Information Improves a Decision
+14 When Information Improves a Decision
 Information gain and instrumental value answer different questions. Mutual information measures expected belief
 change in nats. Instrumental value asks whether an observation improves a subsequent choice under a specified
-utility. The open-loop bet in sec. 10 does not use hidden context. The closed-loop agent in sec. 11 does. We
+utility. The open-loop bet in sec. 12 does not use hidden context. The closed-loop agent in sec. 13 does. We
 can isolate this difference with exact finite Bayesian decision analysis, without asserting that utility is EFE or
 thermodynamic free energy.
 Let the static hidden state have prior 𝑞(𝑥), the cue channel be 𝐴(𝑜 ∣ 𝑥), and the available commitments have finite
@@ -556,14 +695,14 @@ max
 𝑎
 ∑
 𝑥
-𝑞(𝑥)𝐴(𝑜 ∣ 𝑥)𝑢(𝑎, 𝑥). (6)
+𝑞(𝑥)𝐴(𝑜 ∣ 𝑥)𝑢(𝑎, 𝑥). (9)
 The joint-mass expression avoids defining a posterior on an impossible outcome. On reachable outcomes it equals
 expected optimal posterior utility. The policy that ignores the observation and always selects a prior-optimal action
 is among the admissible feedback policies. Therefore 𝑉obs ≥ 𝑉 0: for each outcome the maximum is at least the
 value of that constant action, and summing over outcomes recovers 𝑉0 by channel normalization. This elementary
 finite argument is an exposition here, not a newly imported Lean theorem.
 For a fixed acquisition cost 𝑐 in the same utility units, define
-VOI = 𝑉 obs − 𝑉0, VOInet = 𝑉 obs − 𝑉0 − 𝑐. (7)
+VOI = 𝑉 obs − 𝑉0, VOInet = 𝑉 obs − 𝑉0 − 𝑐. (10)
 The gross value is nonnegative under these assumptions; the net value can be negative. An optional acquisition is
 worthwhile under this utility objective only when its net value is positive. Unlike EFE’s explicit epistemic reward,
 this calculation rewards information solely through its later consequences. Utility units, log-preference scores, and
@@ -574,9 +713,9 @@ incorrect commitment receives zero. Exact enumeration gives baseline utility 0.5
 gross value 0.4000. With cost 0.1500, net value is 0.2500. The same cue carries 0.3681 nats of information when
 the utility matrix is replaced by state-independent outcomes, yet its gross instrumental value then vanishes. An
 independent cue gives both zero information and zero gross value.
-18
+21
 
-## Page 20
+## Page 23
 
 Figure 9: Decision value and information have distinct units. The left panel sweeps known cue accuracy for
 an observation-contingent commitment, its acquisition cost, and a state-independent utility counterexample. The
@@ -591,14 +730,14 @@ models. This is a controlled bridge from learning to acting, not a claim of gene
 Enumeration covers the complete finite policy space, but the Python arithmetic is floating point. Tests use in-
 dependently calculated references and explicit tolerances; nonfinite inputs and unrepresentable utility results are
 rejected.
-19
+22
 
-## Page 21
+## Page 24
 
-13 A Two-Level Generative Hierarchy
+15 A Two-Level Generative Hierarchy
 A hierarchy gives the model another hidden level without changing the logic of conditioning. Let context 𝑐 generate
 state 𝑥, which generates observation 𝑜. The factorization is
-𝑝(𝑐, 𝑥, 𝑜) = 𝑝(𝑐) 𝑝(𝑥 ∣ 𝑐) 𝑝(𝑜 ∣ 𝑥). (8)
+𝑝(𝑐, 𝑥, 𝑜) = 𝑝(𝑐) 𝑝(𝑥 ∣ 𝑐) 𝑝(𝑜 ∣ 𝑥). (11)
 Top-down prediction marginalizes the context law through the state channel. Bottom-up inference conditions the
 joint on the observed outcome, then marginalizes the posterior to each hidden level. This preserves the joint rather
 than updating the levels independently. The exact categorical core is src/hierarchical_model.py; matrix columns
@@ -617,17 +756,17 @@ observations update that higher level through the shared generative structure [ 
 Figure 10: Prediction downward, inference upward. The context law induces a state prediction and an
 observation prediction. Conditioning on one observation updates both context and state using the same posterior
 joint, without discarding their dependence.
-20
+23
 
-## Page 22
+## Page 25
 
-14 Discussion: Informational and Thermodynamic Interpretation
+16 Discussion: Informational and Thermodynamic Interpretation
 The demonstrations connect several mathematical settings without identifying their free energies merely by name.
 Variational free energy is a functional of a recognition distribution and a generative model; with natural logarithms
 it is measured in nats. Expected free energy scores predicted outcomes and states under a policy, with pragmatic
 and epistemic terms in the same informational units. Thermodynamic free energy is an energy quantity, measured
 in joules. A relation between these objects requires a stated physical model and scaling.
-14.1 Equilibrium and stationary circulation
+16.1 Equilibrium and stationary circulation
 The OU example fixes a Gaussian stationary density and a matched-noise fluctuation-dissipation convention. Zero
 solenoidal drive gives detailed balance. Nonzero drive gives a divergence-free stationary probability current and
 positive entropy production for positive precision and dissipation. The deterministic drift trajectory still relaxes;
@@ -639,7 +778,7 @@ interpretation using the corresponding local thermodynamic assumptions, an infor
 𝜎 can be scaled to 𝑘B𝜎 and dissipated power to 𝑘B𝑇 𝜎. The code does not estimate temperature, friction, physical
 work, or metabolic expenditure from data. The conversion is conditional on a physical interpretation, not an
 empirical result of the numerical figure.
-14.2 Statistical boundaries and synthetic agents
+16.2 Statistical boundaries and synthetic agents
 A Gaussian precision zero is a conditional-independence statement under the Gaussian law. It does not by itself
 specify causal channels, action effects, model learning, or agency. The finite closed-loop example supplies a separate
 explicit perception-action carrier, while the hierarchy supplies a separate multi-level inference carrier. A shared
@@ -653,27 +792,33 @@ The intended next use is reproducible exploration: change a channel, a preferenc
 parameter; rerun the tests and figures; and inspect which conclusion survives. For deeper mathematics, the pinned
 fep_formal methods and formal-kernel documentation provide the declarations, support conventions, and scope
 reviews used by this paper’s exposition.
-14.3 Reading and reusing the Institute repositories
+16.3 Reading and reusing the Institute repositories
 Synthetic supplies the worked teaching models and paper. The Institute’s fep_formal provides the pinned mathemat-
-ical reference used in sec. 9 [Friedman, 2026a,b]. Its FepSketches Lean interface is the actual formal dependency;
+ical reference used in sec. 10 [Friedman, 2026a,b]. Its FepSketches Lean interface is the actual formal dependency;
 fep_lean and fep-lean are upstream Python and command-line interfaces for readers who want to inspect the
 broader catalogue.
 Generalized Notation Notation (GNN) is a complementary language and toolchain for specifying generative models
 [Smékal and Friedman , 2023, Friedman, 2026c]. It is relevant when moving these explicit priors, likelihoods, prefer-
 ences, and state variables into a shareable model specification. The software citation identifies the reviewed GNN
-source snapshot . Synthetic currently constructs its arrays directly; it neither imports gnn nor parses or executes a
-GNN specification. An extension would need an explicit mapping of dimensions, channel orientation, observations,
-preferences, and control assumptions, followed by numerical equivalence and boundary tests. A GNN representation
-would not itself certify an upstream Lean theorem or a thermodynamic interpretation.
+source snapshot . Synthetic constructs its runtime arrays directly. The optional specification bridge now parses two
+authored GNN files with the upstream parser and checks their parameters and dimensions against those arrays and
+the OU model (sec. 11). It does not execute a GNN simulation backend. Execution would require further mapping
+of channel orientation, observations, preferences, time stepping and control assumptions, with output equivalence
+and boundary tests. A GNN representation does not itself certify an upstream Lean theorem or a thermodynamic
+interpretation.
 The numerical distribution installs as active_inference_synthetic; checkout scripts retain their local src imports.
 Readers can reproduce the finite models independently of either upstream Python package. The repository’s
+24
+
+## Page 26
+
 positioning guide separates mathematical reuse, model specification, and template-based manuscript rendering,
 with revision-bound links and citation metadata for each upstream project.
-21
+25
 
-## Page 23
+## Page 27
 
-15 A Reader’s Route Beyond Synthetic
+17 A Reader’s Route Beyond Synthetic
 Reproduce a worked model first, then choose the resource that answers the next question. Mathematical proof,
 shared vocabulary, model specification, software implementation, and educational discussion are different forms
 of support. Links below are navigation resources; they do not add runtime dependencies or extend the formal
@@ -726,9 +871,9 @@ direct links, runnable examples, and the limits of each execution surface.
 The ontology and transcript archive have their own software/dataset citation records [ Active Inference Institute ,
 2023, Active Inference Institute ]. Their citation metadata is independent of the mathematical and scholarly sources
 used for the worked models.
-22
+26
 
-## Page 24
+## Page 28
 
 References
 Active Inference Institute. ActiveInferenceJournal. Video-library transcript and metadata dataset. URL https:
@@ -737,6 +882,9 @@ Active Inference Institute. ActiveInferenceJournal. Video-library transcript and
 Active Inference Institute. Active inference ontology. Controlled vocabulary repository, 2023. URL https://github
 .com/ActiveInferenceInstitute/Active_Inference_Ontology . Release DOI: https://doi.org/10.5281/zenodo.797
 2289. Citation metadata from CITATION.cff, version v5, released 2023-05-25; accessed 2026-10-11.
+Lancelot Da Costa and Grigorios A. Pavliotis. The entropy production of stationary diffusions. Journal of Physics
+A: Mathematical and Theoretical; author manuscript arXiv:2212.05125v3, 2023. URL https://arxiv.org/html/2
+212.05125v3.
 Lancelot Da Costa, Karl Friston, Conor Heins, and Grigorios A. Pavliotis. Bayesian mechanics for stationary
 processes. Proceedings of the Royal Society A , 477(2256):20210518, 2021. doi: 10.1098/rspa.2021.0518.
 Daniel Ari Friedman. fep_formal: Towards Lean 4 formalization of the Free Energy Principle. Active Inference
@@ -761,9 +909,11 @@ and Behavior . MIT Press, Cambridge, MA, USA, 2022. ISBN 978-0-262-04535-3. doi:
 Maxwell J. D. Ramstead, Dalton A. R. Sakthivadivel, Conor Heins, Magnus Koudahl, Beren Millidge, Lancelot
 Da Costa, Brennan Klein, and Karl J. Friston. On bayesian mechanics: a physics of and by beliefs. Interface
 Focus, 13(3):20220029, 2023. doi: 10.1098/rsfs.2022.0029.
+Udo Seifert. Stochastic thermodynamics, fluctuation theorems and molecular machines. Reports on Progress in
+Physics, 75:126001, 2012. doi: 10.1088/0034-4885/75/12/126001. URL https://arxiv.org/abs/1205.4176.
 Jakub Smékal and Daniel Ari Friedman. Generalized notation notation for Active Inference models. Scholarly
 paper, Active Inference Journal, 2023. URL https://zenodo.org/records/7803328.
-23
+27
 
 
 ---

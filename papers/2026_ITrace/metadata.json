@@ -1,11 +1,11 @@
 {
   "title": "iTrace: verification-first webcam eye-movement analysis",
-  "version": "0.4.1",
+  "version": "manuscript-2026-10-16-310be17",
   "doi": "10.5281/zenodo.20614908",
   "doi_url": "https://doi.org/10.5281/zenodo.20614908",
-  "zenodo_record": "https://zenodo.org/records/20614909",
-  "record_id": "20614909",
-  "publication_date": "2026-06-09",
+  "zenodo_record": "https://zenodo.org/records/20614908",
+  "record_id": "23419306",
+  "publication_date": "2026-10-16",
   "resource_type": {
     "title": "Software",
     "type": "software"
@@ -17,7 +17,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics. Version 0.4.1 is a diagnostic v1 release: the pure NumPy/SciPy core is algorithmically verified against synthetic and closed-loop oracles, the optional webcam shell exports derived records, and the empirical ledger covers a single-participant, single-device, five-session diagnostic pilot. This release does not claim reference-device accuracy, cross-device generality, population generality, or webcam-accuracy validation.",
+  "description": "# iTrace manuscript revision, 2026-10-16 This deposit archives the corrected 30-page manuscript from reviewed commit `310be17ace8ae61621afe01329356427a3e6c861`. Exact source and figure artifacts are at https://github.com/docxology/itrace/tree/310be17ace8ae61621afe01329356427a3e6c861. It is a manuscript revision after the immutable v0.5.0 release, not a new package release. The package version in that source remains 0.5.0. The previous release remains at https://doi.org/10.5281/zenodo.23403300. References in the manuscript to that DOI identify the archived baseline. Changes correct overlap scoring, resampling and fit uncertainty, fitted-null diagnostics, uncertainty figures, scholarship, and scientific interpretation. The manuscript distinguishes synthetic verification from real-device validation. No new participant or reference-device data are claimed. Verification: 737 tests passed, 2 skipped, 91.05% combined statement-and-branch coverage; 44 final artifact tests passed, independent review approved the exact source commit, and all ten hosted CI jobs passed. The included figure manifest inventories 41 artifacts in the linked source tree. `provenance.json` binds this PDF to the Git commit; `SHA256SUMS` inventories every payload.",
   "keywords": [
     "eye-tracking",
     "webcam",
@@ -29,70 +29,67 @@
   ],
   "files": [
     {
-      "name": "itrace-0.4.1-manuscript.pdf",
-      "size_bytes": 5324090,
-      "checksum": "md5:6a77ca92ab62517feef8f7bd6b6b7735",
-      "download_url": "https://zenodo.org/api/records/20614909/files/itrace-0.4.1-manuscript.pdf/content"
+      "name": "scholarship-review.md",
+      "size_bytes": 31153,
+      "checksum": "md5:f8a30dfac64f6677f7f5359b10b84ebc",
+      "download_url": "https://zenodo.org/api/records/23419306/files/scholarship-review.md/content"
     },
     {
-      "name": "itrace-v0.4.1.zip",
-      "size_bytes": 36271446,
-      "checksum": "md5:23294b9521d7346d5038441c91a8735d",
-      "download_url": "https://zenodo.org/api/records/20614909/files/itrace-v0.4.1.zip/content"
-    }
-  ],
-  "related_resources": [
+      "name": "README.md",
+      "size_bytes": 1251,
+      "checksum": "md5:5a04226bc70c4ad4398f34a7fe0b4255",
+      "download_url": "https://zenodo.org/api/records/23419306/files/README.md/content"
+    },
     {
-      "type": "repository",
-      "url": "https://github.com/docxology/itrace"
+      "name": "LICENSE",
+      "size_bytes": 1076,
+      "checksum": "md5:c39a98bef02b2aa8bf46150269091678",
+      "download_url": "https://zenodo.org/api/records/23419306/files/LICENSE/content"
+    },
+    {
+      "name": "figure-manifest.json",
+      "size_bytes": 18665,
+      "checksum": "md5:c61eb0f74dd42b257e3aae8aabf87ae3",
+      "download_url": "https://zenodo.org/api/records/23419306/files/figure-manifest.json/content"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size_bytes": 598,
+      "checksum": "md5:38fd9c8d0354c1217434b1ed03814473",
+      "download_url": "https://zenodo.org/api/records/23419306/files/SHA256SUMS/content"
+    },
+    {
+      "name": "itrace-manuscript-2026-10-16.pdf",
+      "size_bytes": 5732341,
+      "checksum": "md5:b994e7cd34254f762b92b5dbc33b2225",
+      "download_url": "https://zenodo.org/api/records/23419306/files/itrace-manuscript-2026-10-16.pdf/content"
+    },
+    {
+      "name": "provenance.json",
+      "size_bytes": 1635,
+      "checksum": "md5:8d9e00c3cc526f72c82d490a5c07ed3e",
+      "download_url": "https://zenodo.org/api/records/23419306/files/provenance.json/content"
+    },
+    {
+      "name": "verification-metrics.json",
+      "size_bytes": 1687,
+      "checksum": "md5:749fedd1f0bc424194695cb62d96f874",
+      "download_url": "https://zenodo.org/api/records/23419306/files/verification-metrics.json/content"
     }
   ],
+  "related_resources": [],
   "github_repo": "docxology/itrace",
-  "github_release_url": "https://github.com/docxology/itrace/releases/tag/v0.4.1",
-  "release_tag": "v0.4.1",
-  "release_name": "iTrace v0.4.1",
+  "github_release_url": "https://github.com/docxology/itrace/releases/tag/v0.5.0",
+  "release_tag": "v0.5.0",
+  "release_name": "iTrace v0.5.0 (package baseline; corrected manuscript archived separately)",
   "pdf_sha256": "",
-  "pairing_confidence": "needs_review",
+  "pairing_confidence": "manually_reviewed",
   "pairing_evidence": [
-    "github_repo_self_linked"
+    "corrected_manuscript_record_links_exact_source_commit"
   ],
-  "checked_at": "2026-06-09T18:22:02Z",
+  "checked_at": "2026-10-16T21:46:48Z",
   "domain": "Computational",
   "type": "Paper",
-  "methods": [
-    {
-      "name": "Hardware-decoupled pure NumPy/SciPy analysis core with optional capture shell",
-      "description": "Gaze geometry, I-VT/I-DT, Engbert-Kliegl microsaccade, main-sequence and pupil algorithms run headlessly, separate from an optional webcam/MediaPipe shell.",
-      "evidence": "The core never imports a hardware dependency, so its algorithms are exercised headlessly against constructed ground truth rather than camera availability."
-    },
-    {
-      "name": "Verification against synthetic traces with ground truth held out by construction",
-      "description": "Every detector is tested on generated signals whose events are known, e.g. a 250 Hz fixation-saccade-fixation trace and an embedded 0.5 deg microsaccade.",
-      "evidence": "Every trace in this section is synthetic: a generator builds the signal and returns the parameters used to build it, so the recovered numbers are checked against truth held out by construction."
-    },
-    {
-      "name": "3-D eyeball forward model closed loop through a pinhole camera",
-      "description": "Known gaze is projected to landmarks and back through the estimator on an animated 120 Hz scene to check geometric internal consistency.",
-      "evidence": "Running the full loop — 3-D eyeball →perspective projection →landmark extraction →estimation →recovery — on the default animated scene"
-    },
-    {
-      "name": "Seeded Monte-Carlo landmark-noise sweep (sigma 0-0.016, 25 trials/level)",
-      "description": "Independent landmark noise is injected into the synthetic scene to rank fragility of gaze, saccade and pupil recovery, with bootstrap confidence intervals.",
-      "evidence": "Sweeping the landmark-noise standard deviation 𝜎from 0 to 0.016 (normalised image units), 25 seeded trials per level, gives a clear and differentiated degradation of the three signals"
-    },
-    {
-      "name": "N=1 single-participant, single-device webcam pilot sessions",
-      "description": "One local webcam workflow recorded fixed-gaze, reading and target trials as derived records to give order-of-magnitude session diagnostics.",
-      "evidence": "The live empirical workflow is included here as an N=1, order-of-magnitude case study, not as a participant study or device validation claim."
-    }
-  ],
-  "key_findings": [
-    "On synthetic traces the I-VT detector recovered a 10 deg saccade's amplitude within 5% and peak velocity within 10%.",
-    "On the synthetic 3-D closed loop, gaze was recovered with 0.16 deg RMS residual (max 0.23 deg) for gaze within ±15 deg; the author states this is internal consistency, not device validation.",
-    "In the idealised noise sweep, saccade detection was most fragile (F1 < 0.8 at sigma about 0.0014), while gaze crossed the 2 deg bound near sigma 0.005.",
-    "The pupil noise robustness is reported only as a conditional illustration because it follows from the assumed pupil noise model.",
-    "The headline limitation is an unclosed device validation gap: correctness rests on constructed ground truth, not reference measurements of real eyes."
-  ],
   "related_papers": [
     "2023_NSFReporting",
     "2023_NaturalAIBased",
@@ -101,21 +98,52 @@
   "related_software": [
     "docxology/itrace"
   ],
-  "artifact_doi": "10.5281/zenodo.20614909",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20614909",
+  "artifact_doi": "10.5281/zenodo.23419306",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.23419306",
+  "source": "zenodo-only",
+  "primary_pdf": "itrace-manuscript-2026-10-16.pdf",
+  "package_version": "0.5.0",
+  "source_commit": "310be17ace8ae61621afe01329356427a3e6c861",
+  "methods": [
+    {
+      "name": "Hardware-decoupled analysis core",
+      "description": "The optional capture shell emits typed records consumed by a headless scientific-analysis core.",
+      "evidence": "the shell may import the core, the core may never import the shell."
+    },
+    {
+      "name": "Constructed-ground-truth verification",
+      "description": "Headless tests exercise the algorithms on synthetic signals whose truth is supplied by construction.",
+      "evidence": "its algorithms are exercised headlessly against constructed ground truth rather than camera availability."
+    },
+    {
+      "name": "Explicit caller-supplied benchmark truth",
+      "description": "Benchmark outputs report their truth boundary and distinguish comparator agreement from reference measurement.",
+      "evidence": "every payload records the truth boundary instead of implying that detector agreement is a reference measurement."
+    }
+  ],
+  "key_findings": [
+    "In the specified synthetic landmark-noise sweep, gaze remains below 2 deg RMS to sigma approximately 0.0048, about 3 pixels at 640-pixel width.",
+    "One-to-one overlap-based saccade recovery falls below F1 = 0.8 near sigma 0.0014, about 0.92 pixels, in that synthetic sweep.",
+    "The overlap result measures event recovery and does not establish timing accuracy.",
+    "Pupil noise-sweep robustness is conditional on the assumed pupil-noise injection model.",
+    "These results verify specified algorithms and internal geometry; they do not validate webcams as eye trackers."
+  ],
   "key_findings_evidence": [
-    "On synthetic traces, the I-VT detector recovers a 10 deg saccade’s amplitude to within 5% and peak velocity to within 10%",
-    "recovers gaze with an RMS residual of 0.16∘against the 3-D truth (maximum 0.23∘) for gaze within ±15∘, and recovers the three scripted saccades exactly",
-    "Gaze RMS error rises monotonically and approximately linearly with 𝜎, crossing the 2∘usability bound at 𝜎≈0.005. Saccade detection is the most fragile emergent signal: F1 falls below 0.8 already at 𝜎≈0.0014",
-    "It is reported as a conditional illustration, not a finding; the genuine emergent result is the gaze-vs-saccade ordering.",
-    "The headline limitation is the unclosed device validation gap: iTrace’s correctness claims rest on constructed ground truth and an internal-consistency loop, never on agreement with a reference measurement of real eyes."
+    "gaze remains below a 2 deg RMS bound to sigma approximately 0.0048 (about 3 px at 640 px width)",
+    "one-to-one overlap-based saccade recovery falls below F1 = 0.8 near sigma 0.0014 (about 0.92 px).",
+    "This is event recovery, not a timing-accuracy measurement.",
+    "The pupil channel is reported conditionally because its noise-sweep robustness follows from the modelling assumption used to inject pupil noise.",
+    "Its contribution is not a claim that webcams are validated eye trackers;"
   ],
   "summary_provenance": {
     "source": "full_text.md",
-    "date": "2026-10-01",
+    "date": "2026-10-16",
     "work_kind": "software/methods",
-    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Title differs: bibliography lists 'iTrace: verification-first webcam eye-movement analysis', while the PDF (v0.4.1 manuscript) is titled 'iTrace: an algorithmically verified open-source core for webcam gaze, saccade, and pupil analysis' — same work. All accuracy results are synthetic; pilot is N=1 diagnostic only.",
-    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
+    "method": "Current manuscript abstract and architecture pages inspected; every method/finding quote verified against the refreshed extraction after whitespace/ligature normalization.",
+    "notes": "Canonical bibliography title retained under the same concept DOI; the archive appends corrected manuscript and the PDF retains its manuscript title. Corrected manuscript after package v0.5.0. Synthetic event recovery, timing accuracy, pupil-noise assumptions and real-device validation retain separate evidence boundaries.",
+    "reviewed": "Codex source review; no independent scientific replication claimed.",
+    "source_pdf": "itrace-manuscript-2026-10-16.pdf",
+    "source_pdf_sha256": "419ca0113ee3816864c5ac8b6441886f471215962359a4601b804bc650c9688e",
+    "extraction_sha256": "97ce9f1ec5437d79eb258793710d3da8a3ff217471cab425d5d876ce5968f7ec"
   }
 }

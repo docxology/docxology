@@ -1,0 +1,146 @@
+{
+  "title": "Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision",
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.23397452",
+  "doi_url": "https://doi.org/10.5281/zenodo.23397452",
+  "zenodo_record": "https://zenodo.org/records/23397452",
+  "record_id": "23397453",
+  "publication_date": "2026-10-15",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute; FractiAI",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Active inference makes beliefs and policies conditional on a generative model, leaving open how its categories, evidence and purposes become warranted. We develop active inference as a meta-pragmatic framework for making these conditions of inquiry themselves available to inquiry. Four overlapping roles organize the proposal: inferring states and evaluating actions, contextualizing evidence, monitoring uncertainty and resources, and evaluating or revising model commitments. These roles distinguish responsibilities within inquiry rather than successive stages or separate cognitive faculties. In dialogue with American Pragmatism, situated cognition and Bayesian model criticism, the framework treats knowledge as answerable to consequences while keeping predictive success, explanatory understanding and the justification of ends distinct. Mathematical coherence cannot establish the adequacy of a representation, and optimization under declared preferences cannot justify those preferences. Public criticism consequently concerns both the grounds of a decision and whose experience can challenge the purposes it serves.\n\nThe proposal is made concrete through executable Generalized Notation Notation (GNN) specifications imported with the upstream reference parser and evaluated by an exact categorical runtime. Complementary synthetic studies examine source reliability, misleading metadata, confidence-triggered evidence acquisition, likelihoods fitted on separate labeled training data, and action selection by expected free energy. Paired comparisons across independent simulation replicates retain predictive scores, observation costs and uncertainty. Reliable metadata and further sensing improve classification in the specified sensor task, while misleading metadata and a separately specified world reveal how exact inference can remain confidently mistaken. The contribution is an inspectable discipline of specification, evaluation and accountable revision, supported by model diagrams, retained evidence and technical supplements. The demonstrations establish conditional computational consequences; they neither automate the justification of ends nor validate the framework's broader biological or social interpretation. Sources, model specifications and retained evidence accompany the manuscript at https://github.com/docxology/active_inference_meta_pragmatic.",
+  "keywords": [
+    "active inference",
+    "meta-pragmatism",
+    "American Pragmatism",
+    "GNN",
+    "model criticism",
+    "reproducible research"
+  ],
+  "files": [
+    {
+      "name": "SHA256SUMS.txt",
+      "size_bytes": 857,
+      "checksum": "md5:3c9dd2ca4afe7ff782267c3248670ca4",
+      "download_url": "https://zenodo.org/api/records/23397453/files/SHA256SUMS.txt/content"
+    },
+    {
+      "name": "release_manifest.json",
+      "size_bytes": 2112,
+      "checksum": "md5:0966f71191e96d64420e5d7c6e758707",
+      "download_url": "https://zenodo.org/api/records/23397453/files/release_manifest.json/content"
+    },
+    {
+      "name": "active_inference_meta_pragmatic-1.0.0-web.zip",
+      "size_bytes": 9843341,
+      "checksum": "md5:6235cec737130aa486ddddafcd924fe4",
+      "download_url": "https://zenodo.org/api/records/23397453/files/active_inference_meta_pragmatic-1.0.0-web.zip/content"
+    },
+    {
+      "name": "RELEASE_NOTES.md",
+      "size_bytes": 2582,
+      "checksum": "md5:8e3b4ad7611a802f6a3ddb2d9e7dbce8",
+      "download_url": "https://zenodo.org/api/records/23397453/files/RELEASE_NOTES.md/content"
+    },
+    {
+      "name": "active_inference_meta_pragmatic-1.0.0.pdf",
+      "size_bytes": 5015269,
+      "checksum": "md5:0937d04c48f9e2b18879d6bad98962a7",
+      "download_url": "https://zenodo.org/api/records/23397453/files/active_inference_meta_pragmatic-1.0.0.pdf/content"
+    },
+    {
+      "name": "active_inference_meta_pragmatic-1.0.0-py3-none-any.whl",
+      "size_bytes": 130578,
+      "checksum": "md5:af7ae84a628b8c0f3a6705ee1d3f1721",
+      "download_url": "https://zenodo.org/api/records/23397453/files/active_inference_meta_pragmatic-1.0.0-py3-none-any.whl/content"
+    },
+    {
+      "name": "active_inference_meta_pragmatic-1.0.0-history.bundle",
+      "size_bytes": 16626445,
+      "checksum": "md5:fae1e875d8182ea4c8471b336de28477",
+      "download_url": "https://zenodo.org/api/records/23397453/files/active_inference_meta_pragmatic-1.0.0-history.bundle/content"
+    },
+    {
+      "name": "active_inference_meta_pragmatic-1.0.0-source.zip",
+      "size_bytes": 24999027,
+      "checksum": "md5:4eb6171b159b3d6a9bcde4985806336a",
+      "download_url": "https://zenodo.org/api/records/23397453/files/active_inference_meta_pragmatic-1.0.0-source.zip/content"
+    },
+    {
+      "name": "active_inference_meta_pragmatic-1.0.0.tar.gz",
+      "size_bytes": 2607590,
+      "checksum": "md5:60256544151503a2ab14d911e2d284c0",
+      "download_url": "https://zenodo.org/api/records/23397453/files/active_inference_meta_pragmatic-1.0.0.tar.gz/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/active_inference_meta_pragmatic"
+    }
+  ],
+  "github_repo": "docxology/active_inference_meta_pragmatic",
+  "github_release_url": "https://github.com/docxology/active_inference_meta_pragmatic/releases/tag/v1.0.0",
+  "release_tag": "v1.0.0",
+  "release_name": "Active Inference as a Meta-Pragmatic Framework v1.0.0",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked",
+    "title_overlap"
+  ],
+  "checked_at": "2026-10-16T21:46:37Z",
+  "domain": "Active Inference",
+  "primary_pdf": "active_inference_meta_pragmatic-1.0.0.pdf",
+  "methods": [
+    {
+      "name": "Executable GNN specifications and exact categorical inference",
+      "description": "Imported model specifications are evaluated by an exact categorical runtime.",
+      "evidence": "reference parser and evaluated by an exact categorical runtime."
+    },
+    {
+      "name": "Separate training and synthetic evaluation",
+      "description": "Likelihood fitting uses labeled training data separate from evaluation in the specified sensor task.",
+      "evidence": "likelihoods fitted on separate labeled training data"
+    },
+    {
+      "name": "Paired simulation comparisons",
+      "description": "Independent simulation replicates retain predictive scores, observation costs and uncertainty.",
+      "evidence": "Paired comparisons across independent simulation replicates retain predictive scores, observation costs and uncertainty."
+    }
+  ],
+  "key_findings": [
+    "Reliable metadata and further sensing improve classification within the specified synthetic sensor task.",
+    "Misleading metadata and world-model mismatch can leave exact inference confidently mistaken.",
+    "Mathematical coherence and optimization under preferences do not establish representation adequacy or justify those preferences.",
+    "The demonstrations establish conditional computational consequences and do not validate broader biological or social interpretations."
+  ],
+  "key_findings_evidence": [
+    "Reliable metadata and further sensing improve classification in the specified sensor task,",
+    "exact inference can remain confidently mistaken.",
+    "Mathematical coherence cannot establish the adequacy of a representation, and optimization under declared preferences cannot justify those preferences.",
+    "nor validate the framework’s broader biological or social interpretation."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-16",
+    "work_kind": "preprint/software-methods",
+    "method": "Abstract inspected and every method/finding quote checked against the current PDF extraction with whitespace/ligature normalization.",
+    "notes": "Synthetic task findings remain conditional; conceptual claims are not empirical validation of broader biological or social interpretations.",
+    "reviewed": "Codex source review; source-repository runtime tests and independent scientific replication not performed.",
+    "source_pdf": "active_inference_meta_pragmatic-1.0.0.pdf",
+    "source_pdf_sha256": "36495911a7b249d52145d8feaec5d82b846b5d3016c66a43a951c16a5ab2a9a7",
+    "extraction_sha256": "f88cf7402fecf313686e0736b6f1b5b907a21e55feacb75c9bf3a0a5589b9111"
+  }
+}

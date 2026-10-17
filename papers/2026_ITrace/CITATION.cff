@@ -2,14 +2,13 @@ cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
 title: "iTrace: verification-first webcam eye-movement analysis"
-version: "0.4.1"
-date-released: 2026-06-09
+version: "manuscript-2026-10-16-310be17"
+date-released: 2026-10-16
 doi: 10.5281/zenodo.20614908
 url: "https://doi.org/10.5281/zenodo.20614908"
-repository-code: "https://github.com/docxology/itrace"
 authors:
-  - family-names: Friedman
-    given-names: Daniel Ari
+  - family-names: "Friedman"
+    given-names: "Daniel Ari"
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
@@ -19,11 +18,11 @@ identifiers:
     value: "https://doi.org/10.5281/zenodo.20614908"
     description: "Canonical citation DOI resolver"
   - type: doi
-    value: "10.5281/zenodo.20614909"
+    value: "10.5281/zenodo.23419306"
     description: "Version/download DOI (Zenodo artifact)"
   - type: url
-    value: "https://doi.org/10.5281/zenodo.20614909"
+    value: "https://doi.org/10.5281/zenodo.23419306"
     description: "Version/download DOI resolver (Zenodo artifact)"
   - type: url
-    value: "https://zenodo.org/records/20614909"
+    value: "https://zenodo.org/records/23419306"
     description: "Version/download landing page (Zenodo artifact)"

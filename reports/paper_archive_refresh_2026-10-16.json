@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-17T00:13:10Z",
+  "reviewed_by": "Codex",
+  "archives": [
+    {
+      "folder": "2026_ITrace",
+      "record_url": "https://zenodo.org/records/23419306",
+      "pdf_path": "papers/2026_ITrace/itrace-manuscript-2026-10-16.pdf",
+      "sha256": "419ca0113ee3816864c5ac8b6441886f471215962359a4601b804bc650c9688e",
+      "registry_checksum": "md5:b994e7cd34254f762b92b5dbc33b2225",
+      "registry_checksum_matches": true,
+      "pages": 30,
+      "extraction_path": "papers/2026_ITrace/full_text.md",
+      "extraction_sha256": "97ce9f1ec5437d79eb258793710d3da8a3ff217471cab425d5d876ce5968f7ec",
+      "scope": "Registry checksum and PDF page/text extraction checked; source PDF bytes unchanged. No independent scientific replication or complete visual/editorial approval claimed."
+    },
+    {
+      "folder": "2026_ActiveInferenceSynthetic",
+      "record_url": "https://zenodo.org/records/23396307",
+      "pdf_path": "papers/2026_ActiveInferenceSynthetic/ActiveInferenceSynthetic_Revised.pdf",
+      "sha256": "0247f4aa292915941b599a6dc479d1ff8d294f501a4c7e3f5a0781be3ffec7d2",
+      "registry_checksum": "md5:df6920714f81c168b95f060a59f9b928",
+      "registry_checksum_matches": true,
+      "pages": 28,
+      "extraction_path": "papers/2026_ActiveInferenceSynthetic/full_text.md",
+      "extraction_sha256": "2c9ba1e21bbf9c1e85d2d2b99292cd2713853ef737103b69dafb4daedf191a16",
+      "scope": "Registry checksum and PDF page/text extraction checked; source PDF bytes unchanged. No independent scientific replication or complete visual/editorial approval claimed."
+    },
+    {
+      "folder": "2026_ActiveInferenceAs",
+      "record_url": "https://zenodo.org/records/23397453",
+      "pdf_path": "papers/2026_ActiveInferenceAs/active_inference_meta_pragmatic-1.0.0.pdf",
+      "sha256": "36495911a7b249d52145d8feaec5d82b846b5d3016c66a43a951c16a5ab2a9a7",
+      "registry_checksum": "md5:0937d04c48f9e2b18879d6bad98962a7",
+      "registry_checksum_matches": true,
+      "pages": 40,
+      "extraction_path": "papers/2026_ActiveInferenceAs/full_text.md",
+      "extraction_sha256": "f88cf7402fecf313686e0736b6f1b5b907a21e55feacb75c9bf3a0a5589b9111",
+      "scope": "Registry checksum and PDF page/text extraction checked; source PDF bytes unchanged. No independent scientific replication or complete visual/editorial approval claimed."
+    }
+  ]
+}

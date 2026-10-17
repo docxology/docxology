@@ -1,31 +1,31 @@
 {
   "schema_version": "VideoIndex.v1",
-  "generated_at": "2026-10-13T16:55:56Z",
+  "generated_at": "2026-10-17T00:14:08Z",
   "source": "data/videos.json",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
   ],
-  "count": 1185,
+  "count": 1186,
   "counts": {
-    "total": 1185,
+    "total": 1186,
     "personal": 420,
-    "institute": 765,
+    "institute": 766,
     "with_transcripts": 4
   },
   "channels": {
     "personal": {
       "channel_id": "personal",
       "channel_url": "https://www.youtube.com/@danielarifriedman",
-      "fetched_at": "2026-10-13T16:44:15.964026+00:00",
+      "fetched_at": "2026-10-16T23:03:19.183766+00:00",
       "video_count": 420,
       "schema_version": "1.0"
     },
     "institute": {
       "channel_id": "institute",
       "channel_url": "https://www.youtube.com/@activeinference",
-      "fetched_at": "2026-10-13T16:44:27.769538+00:00",
-      "video_count": 765,
+      "fetched_at": "2026-10-16T23:02:57.608163+00:00",
+      "video_count": 766,
       "schema_version": "1.0"
     }
   },
@@ -56,7 +56,7 @@
       "upload_date": "20181002",
       "year": 2018,
       "duration": 97,
-      "view_count": 320
+      "view_count": 323
     },
     {
       "id": "5wR6rcuiK1o",
@@ -389,7 +389,7 @@
       "upload_date": "20200421",
       "year": 2020,
       "duration": 5501,
-      "view_count": 512
+      "view_count": 515
     },
     {
       "id": "2qNpfEHORPQ",
@@ -461,7 +461,7 @@
       "upload_date": "20200421",
       "year": 2020,
       "duration": 4349,
-      "view_count": 52
+      "view_count": 53
     },
     {
       "id": "7dBJYLT1ivk",
@@ -1586,7 +1586,7 @@
       "upload_date": "20210421",
       "year": 2021,
       "duration": 5376,
-      "view_count": 409
+      "view_count": 410
     },
     {
       "id": "1VTviUyntt8",
@@ -1739,7 +1739,7 @@
       "upload_date": "20210421",
       "year": 2021,
       "duration": 5039,
-      "view_count": 289
+      "view_count": 291
     },
     {
       "id": "8dPps0qLrp4",
@@ -1802,7 +1802,7 @@
       "upload_date": "20210421",
       "year": 2021,
       "duration": 7161,
-      "view_count": 6900
+      "view_count": 7000
     },
     {
       "id": "HJ4Zry7EEjs",
@@ -1838,7 +1838,7 @@
       "upload_date": "20210421",
       "year": 2021,
       "duration": 4361,
-      "view_count": 743
+      "view_count": 757
     },
     {
       "id": "HuhOc9udMcQ",
@@ -1955,7 +1955,7 @@
       "upload_date": "20210421",
       "year": 2021,
       "duration": 8841,
-      "view_count": 677
+      "view_count": 678
     },
     {
       "id": "QTeF55NZz9s",
@@ -2063,7 +2063,7 @@
       "upload_date": "20210421",
       "year": 2021,
       "duration": 6496,
-      "view_count": 356
+      "view_count": 357
     },
     {
       "id": "Y6qx6C1tmjs",
@@ -2342,7 +2342,7 @@
       "upload_date": "20210421",
       "year": 2021,
       "duration": 5096,
-      "view_count": 560
+      "view_count": 561
     },
     {
       "id": "qEkW4YsN5PY",
@@ -2423,7 +2423,7 @@
       "upload_date": "20210421",
       "year": 2021,
       "duration": 9656,
-      "view_count": 957
+      "view_count": 959
     },
     {
       "id": "vnoUITfVbYI",
@@ -2531,7 +2531,7 @@
       "upload_date": "20210621",
       "year": 2021,
       "duration": 3195,
-      "view_count": 764
+      "view_count": 765
     },
     {
       "id": "hW9IiOujS1E",
@@ -2828,7 +2828,7 @@
       "upload_date": "20220421",
       "year": 2022,
       "duration": 6730,
-      "view_count": 123
+      "view_count": 124
     },
     {
       "id": "Ga8EZMGO460",
@@ -3269,7 +3269,7 @@
       "upload_date": "20220421",
       "year": 2022,
       "duration": 6337,
-      "view_count": 273
+      "view_count": 275
     },
     {
       "id": "eX5jt3HP27c",
@@ -3296,7 +3296,7 @@
       "upload_date": "20220421",
       "year": 2022,
       "duration": 5067,
-      "view_count": 205
+      "view_count": 206
     },
     {
       "id": "gog7xpSu9NQ",
@@ -3386,7 +3386,7 @@
       "upload_date": "20220421",
       "year": 2022,
       "duration": 5753,
-      "view_count": 112
+      "view_count": 113
     },
     {
       "id": "lwVIUz7O0jg",
@@ -3413,7 +3413,7 @@
       "upload_date": "20220421",
       "year": 2022,
       "duration": 6530,
-      "view_count": 120
+      "view_count": 121
     },
     {
       "id": "mjL3cGYEMNg",
@@ -3512,7 +3512,7 @@
       "upload_date": "20220421",
       "year": 2022,
       "duration": 6011,
-      "view_count": 709
+      "view_count": 710
     },
     {
       "id": "v0oJvbVuAF0",
@@ -4115,7 +4115,7 @@
       "upload_date": "20230421",
       "year": 2023,
       "duration": 2996,
-      "view_count": 460
+      "view_count": 461
     },
     {
       "id": "4o-LmkycAC0",
@@ -4133,7 +4133,7 @@
       "upload_date": "20230421",
       "year": 2023,
       "duration": 5469,
-      "view_count": 357
+      "view_count": 359
     },
     {
       "id": "5IGzzm28qec",
@@ -4169,7 +4169,7 @@
       "upload_date": "20230421",
       "year": 2023,
       "duration": 6893,
-      "view_count": 826
+      "view_count": 828
     },
     {
       "id": "BPzwSTalH5E",
@@ -4349,7 +4349,7 @@
       "upload_date": "20230421",
       "year": 2023,
       "duration": 4797,
-      "view_count": 87
+      "view_count": 88
     },
     {
       "id": "QUBmgn7K_4E",
@@ -4358,7 +4358,7 @@
       "upload_date": "20230421",
       "year": 2023,
       "duration": 5250,
-      "view_count": 779
+      "view_count": 780
     },
     {
       "id": "RO3XVXqvAII",
@@ -4403,7 +4403,7 @@
       "upload_date": "20230421",
       "year": 2023,
       "duration": 6557,
-      "view_count": 658
+      "view_count": 660
     },
     {
       "id": "WEfc9X437yY",
@@ -4430,7 +4430,7 @@
       "upload_date": "20230421",
       "year": 2023,
       "duration": 7044,
-      "view_count": 226
+      "view_count": 227
     },
     {
       "id": "XYMPAAynUu8",
@@ -4475,7 +4475,7 @@
       "upload_date": "20230421",
       "year": 2023,
       "duration": 6784,
-      "view_count": 857
+      "view_count": 863
     },
     {
       "id": "c0_Vf5_qiWk",
@@ -4592,7 +4592,7 @@
       "upload_date": "20230421",
       "year": 2023,
       "duration": 6933,
-      "view_count": 280
+      "view_count": 281
     },
     {
       "id": "iHgxmn0ockg",
@@ -4619,7 +4619,7 @@
       "upload_date": "20230421",
       "year": 2023,
       "duration": 6978,
-      "view_count": 419
+      "view_count": 420
     },
     {
       "id": "jXEJO_5g0ho",
@@ -4682,7 +4682,7 @@
       "upload_date": "20230421",
       "year": 2023,
       "duration": 6872,
-      "view_count": 202
+      "view_count": 203
     },
     {
       "id": "skcKoCcAQJI",
@@ -4691,7 +4691,7 @@
       "upload_date": "20230421",
       "year": 2023,
       "duration": 5897,
-      "view_count": 361
+      "view_count": 362
     },
     {
       "id": "skf3sOM-7WI",
@@ -4727,7 +4727,7 @@
       "upload_date": "20230421",
       "year": 2023,
       "duration": 3627,
-      "view_count": 381
+      "view_count": 383
     },
     {
       "id": "uTDQ_UWkL5g",
@@ -4817,7 +4817,7 @@
       "upload_date": "20230421",
       "year": 2023,
       "duration": 5961,
-      "view_count": 445
+      "view_count": 446
     },
     {
       "id": "zm2d9o5n0PU",
@@ -4844,7 +4844,7 @@
       "upload_date": "20230508",
       "year": 2023,
       "duration": 136,
-      "view_count": 2800
+      "view_count": 2900
     },
     {
       "id": "cxJuA012HvM",
@@ -4880,7 +4880,7 @@
       "upload_date": "20230525",
       "year": 2023,
       "duration": 1098,
-      "view_count": 239
+      "view_count": 241
     },
     {
       "id": "spYhr_SdqOw",
@@ -4907,7 +4907,7 @@
       "upload_date": "20230608",
       "year": 2023,
       "duration": 560,
-      "view_count": 320
+      "view_count": 321
     },
     {
       "id": "IpstHOA0o3I",
@@ -4979,7 +4979,7 @@
       "upload_date": "20230815",
       "year": 2023,
       "duration": 4171,
-      "view_count": 22
+      "view_count": 23
     },
     {
       "id": "0zUYswqn8aI",
@@ -5285,7 +5285,7 @@
       "upload_date": "20231126",
       "year": 2023,
       "duration": 3419,
-      "view_count": 166
+      "view_count": 167
     },
     {
       "id": "Gz0yDB6VOSI",
@@ -5339,7 +5339,7 @@
       "upload_date": "20231126",
       "year": 2023,
       "duration": 3133,
-      "view_count": 23
+      "view_count": 24
     },
     {
       "id": "gEL56jY7CY0",
@@ -5438,7 +5438,7 @@
       "upload_date": "20231221",
       "year": 2023,
       "duration": 5630,
-      "view_count": 911
+      "view_count": 912
     },
     {
       "id": "mEP-E9Q92Es",
@@ -5573,7 +5573,7 @@
       "upload_date": "20240208",
       "year": 2024,
       "duration": 5415,
-      "view_count": 976
+      "view_count": 977
     },
     {
       "id": "ENcq_nyTpSU",
@@ -5618,7 +5618,7 @@
       "upload_date": "20240229",
       "year": 2024,
       "duration": 5284,
-      "view_count": 663
+      "view_count": 664
     },
     {
       "id": "T5nG_5UZ_yk",
@@ -5636,7 +5636,7 @@
       "upload_date": "20240307",
       "year": 2024,
       "duration": 6553,
-      "view_count": 760
+      "view_count": 762
     },
     {
       "id": "v6ddfMkuSpo",
@@ -5933,7 +5933,7 @@
       "upload_date": "20240421",
       "year": 2024,
       "duration": 7650,
-      "view_count": 400
+      "view_count": 401
     },
     {
       "id": "1uIRljnLtc4",
@@ -5942,7 +5942,7 @@
       "upload_date": "20240421",
       "year": 2024,
       "duration": 4917,
-      "view_count": 379
+      "view_count": 380
     },
     {
       "id": "2IxxzY2ZDHA",
@@ -6122,7 +6122,7 @@
       "upload_date": "20240421",
       "year": 2024,
       "duration": 5205,
-      "view_count": 479
+      "view_count": 480
     },
     {
       "id": "FymR0rKdLZo",
@@ -6131,7 +6131,7 @@
       "upload_date": "20240421",
       "year": 2024,
       "duration": 5980,
-      "view_count": 481
+      "view_count": 482
     },
     {
       "id": "GfImcptiLsY",
@@ -6140,7 +6140,7 @@
       "upload_date": "20240421",
       "year": 2024,
       "duration": 6118,
-      "view_count": 701
+      "view_count": 702
     },
     {
       "id": "HAujw2_ClCM",
@@ -6158,7 +6158,7 @@
       "upload_date": "20240421",
       "year": 2024,
       "duration": 6034,
-      "view_count": 432
+      "view_count": 434
     },
     {
       "id": "HThdpvQzA4o",
@@ -6320,7 +6320,7 @@
       "upload_date": "20240421",
       "year": 2024,
       "duration": 3946,
-      "view_count": 556
+      "view_count": 557
     },
     {
       "id": "RYwycyuaxoU",
@@ -6347,7 +6347,7 @@
       "upload_date": "20240421",
       "year": 2024,
       "duration": 4954,
-      "view_count": 351
+      "view_count": 352
     },
     {
       "id": "S-tFHIqtbSI",
@@ -6401,7 +6401,7 @@
       "upload_date": "20240421",
       "year": 2024,
       "duration": 3828,
-      "view_count": 736
+      "view_count": 737
     },
     {
       "id": "TubYmyvsynA",
@@ -6518,7 +6518,7 @@
       "upload_date": "20240421",
       "year": 2024,
       "duration": 5044,
-      "view_count": 748
+      "view_count": 749
     },
     {
       "id": "bhLPZaLmi2k",
@@ -6626,7 +6626,7 @@
       "upload_date": "20240421",
       "year": 2024,
       "duration": 4393,
-      "view_count": 934
+      "view_count": 936
     },
     {
       "id": "jI3wnTbpkNo",
@@ -6644,7 +6644,7 @@
       "upload_date": "20240421",
       "year": 2024,
       "duration": 4035,
-      "view_count": 700
+      "view_count": 701
     },
     {
       "id": "k55mAFCIQ60",
@@ -6698,7 +6698,7 @@
       "upload_date": "20240421",
       "year": 2024,
       "duration": 5256,
-      "view_count": 395
+      "view_count": 397
     },
     {
       "id": "pJit1ONOYcM",
@@ -6779,7 +6779,7 @@
       "upload_date": "20240421",
       "year": 2024,
       "duration": 4651,
-      "view_count": 981
+      "view_count": 982
     },
     {
       "id": "u6taX0npOY8",
@@ -6851,7 +6851,7 @@
       "upload_date": "20240425",
       "year": 2024,
       "duration": 8166,
-      "view_count": 8200
+      "view_count": 8300
     },
     {
       "id": "B64lXpQAOus",
@@ -6896,7 +6896,7 @@
       "upload_date": "20240715",
       "year": 2024,
       "duration": 180,
-      "view_count": 317
+      "view_count": 318
     },
     {
       "id": "Axo11q2bdhM",
@@ -7958,7 +7958,7 @@
       "upload_date": "20241122",
       "year": 2024,
       "duration": 2013,
-      "view_count": 133
+      "view_count": 134
     },
     {
       "id": "0A36OXIDLhQ",
@@ -7967,7 +7967,7 @@
       "upload_date": "20241122",
       "year": 2024,
       "duration": 1407,
-      "view_count": 213
+      "view_count": 214
     },
     {
       "id": "1ZJBJGzOn0g",
@@ -7994,7 +7994,7 @@
       "upload_date": "20241122",
       "year": 2024,
       "duration": 1698,
-      "view_count": 160
+      "view_count": 161
     },
     {
       "id": "9v22c92LWHQ",
@@ -8003,7 +8003,7 @@
       "upload_date": "20241122",
       "year": 2024,
       "duration": 3046,
-      "view_count": 95
+      "view_count": 96
     },
     {
       "id": "C1Uqxg7mDCo",
@@ -8066,7 +8066,7 @@
       "upload_date": "20241122",
       "year": 2024,
       "duration": 3473,
-      "view_count": 357
+      "view_count": 358
     },
     {
       "id": "MRTULbP1ZKs",
@@ -8075,7 +8075,7 @@
       "upload_date": "20241122",
       "year": 2024,
       "duration": 3514,
-      "view_count": 222
+      "view_count": 223
     },
     {
       "id": "OCCIDeeKOMA",
@@ -8093,7 +8093,7 @@
       "upload_date": "20241122",
       "year": 2024,
       "duration": 3499,
-      "view_count": 1000
+      "view_count": 1100
     },
     {
       "id": "TsQQX3ZdEmA",
@@ -8138,7 +8138,7 @@
       "upload_date": "20241122",
       "year": 2024,
       "duration": 1523,
-      "view_count": 264
+      "view_count": 265
     },
     {
       "id": "fbz2VUi-MOo",
@@ -8165,7 +8165,7 @@
       "upload_date": "20241122",
       "year": 2024,
       "duration": 3246,
-      "view_count": 274
+      "view_count": 276
     },
     {
       "id": "jnavry7c11A",
@@ -8201,7 +8201,7 @@
       "upload_date": "20241122",
       "year": 2024,
       "duration": 5420,
-      "view_count": 624
+      "view_count": 625
     },
     {
       "id": "ynekj8F4zeY",
@@ -8264,7 +8264,7 @@
       "upload_date": "20250110",
       "year": 2025,
       "duration": 131,
-      "view_count": 174
+      "view_count": 175
     },
     {
       "id": "CbFvY7KqiNM",
@@ -8300,7 +8300,7 @@
       "upload_date": "20250323",
       "year": 2025,
       "duration": 93,
-      "view_count": 454
+      "view_count": 456
     },
     {
       "id": "klt6FlAo4qs",
@@ -8345,7 +8345,7 @@
       "upload_date": "20250421",
       "year": 2025,
       "duration": 5319,
-      "view_count": 367
+      "view_count": 368
     },
     {
       "id": "1Xu8jYKWsGM",
@@ -8462,7 +8462,7 @@
       "upload_date": "20250421",
       "year": 2025,
       "duration": 5012,
-      "view_count": 469
+      "view_count": 470
     },
     {
       "id": "E3vyVxMZanA",
@@ -8525,7 +8525,7 @@
       "upload_date": "20250421",
       "year": 2025,
       "duration": 5393,
-      "view_count": 511
+      "view_count": 512
     },
     {
       "id": "IvY4acL8YeA",
@@ -8534,7 +8534,7 @@
       "upload_date": "20250421",
       "year": 2025,
       "duration": 4959,
-      "view_count": 620
+      "view_count": 623
     },
     {
       "id": "MUaKYWKs0kk",
@@ -8552,7 +8552,7 @@
       "upload_date": "20250421",
       "year": 2025,
       "duration": 4544,
-      "view_count": 360
+      "view_count": 363
     },
     {
       "id": "MgyYGCaZMaE",
@@ -8588,7 +8588,7 @@
       "upload_date": "20250421",
       "year": 2025,
       "duration": 7101,
-      "view_count": 748
+      "view_count": 749
     },
     {
       "id": "Q-_YCWfO0b0",
@@ -8633,7 +8633,7 @@
       "upload_date": "20250421",
       "year": 2025,
       "duration": 5036,
-      "view_count": 706
+      "view_count": 711
     },
     {
       "id": "UD-VfVJ41WA",
@@ -8669,7 +8669,7 @@
       "upload_date": "20250421",
       "year": 2025,
       "duration": 4932,
-      "view_count": 254
+      "view_count": 253
     },
     {
       "id": "Y76dco2nAkQ",
@@ -8687,7 +8687,7 @@
       "upload_date": "20250421",
       "year": 2025,
       "duration": 4203,
-      "view_count": 550
+      "view_count": 551
     },
     {
       "id": "ZVvaSpzg-Wg",
@@ -8723,7 +8723,7 @@
       "upload_date": "20250421",
       "year": 2025,
       "duration": 6371,
-      "view_count": 996
+      "view_count": 997
     },
     {
       "id": "aEe8y9Ebs10",
@@ -8741,7 +8741,7 @@
       "upload_date": "20250421",
       "year": 2025,
       "duration": 6205,
-      "view_count": 872
+      "view_count": 873
     },
     {
       "id": "bK3lIWs23RE",
@@ -8777,7 +8777,7 @@
       "upload_date": "20250421",
       "year": 2025,
       "duration": 4615,
-      "view_count": 111
+      "view_count": 112
     },
     {
       "id": "eMhQP15vsmU",
@@ -8849,7 +8849,7 @@
       "upload_date": "20250421",
       "year": 2025,
       "duration": 3497,
-      "view_count": 145
+      "view_count": 147
     },
     {
       "id": "h_tO7gZH2Ks",
@@ -8885,7 +8885,7 @@
       "upload_date": "20250421",
       "year": 2025,
       "duration": 3829,
-      "view_count": 262
+      "view_count": 263
     },
     {
       "id": "kGRczFpO8zQ",
@@ -9029,7 +9029,7 @@
       "upload_date": "20250421",
       "year": 2025,
       "duration": 5228,
-      "view_count": 429
+      "view_count": 430
     },
     {
       "id": "wDYI7pOGamI",
@@ -9092,7 +9092,7 @@
       "upload_date": "20250424",
       "year": 2025,
       "duration": 3421,
-      "view_count": 61
+      "view_count": 62
     },
     {
       "id": "3zdTINcxZC0",
@@ -9164,7 +9164,7 @@
       "upload_date": "20250424",
       "year": 2025,
       "duration": 2115,
-      "view_count": 193
+      "view_count": 194
     },
     {
       "id": "YyKoz1yeEPQ",
@@ -9272,7 +9272,7 @@
       "upload_date": "20250521",
       "year": 2025,
       "duration": 5184,
-      "view_count": 440
+      "view_count": 442
     },
     {
       "id": "TKksAVCOUCU",
@@ -9299,7 +9299,7 @@
       "upload_date": "20250521",
       "year": 2025,
       "duration": 4008,
-      "view_count": 244
+      "view_count": 246
     },
     {
       "id": "nT11dSbr6QE",
@@ -9335,7 +9335,7 @@
       "upload_date": "20250521",
       "year": 2025,
       "duration": 4450,
-      "view_count": 565
+      "view_count": 567
     },
     {
       "id": "AJnyTc9F0hA",
@@ -9353,7 +9353,7 @@
       "upload_date": "20250618",
       "year": 2025,
       "duration": 131,
-      "view_count": 68
+      "view_count": 69
     },
     {
       "id": "-so3A195ge0",
@@ -9371,7 +9371,7 @@
       "upload_date": "20250621",
       "year": 2025,
       "duration": 3244,
-      "view_count": 272
+      "view_count": 277
     },
     {
       "id": "MDB7vKD0kUI",
@@ -9452,7 +9452,7 @@
       "upload_date": "20250621",
       "year": 2025,
       "duration": 1473,
-      "view_count": 30
+      "view_count": 31
     },
     {
       "id": "-cKpXSZLvMQ",
@@ -9488,7 +9488,7 @@
       "upload_date": "20250721",
       "year": 2025,
       "duration": 5288,
-      "view_count": 597
+      "view_count": 600
     },
     {
       "id": "vgSYGS9l8nI",
@@ -9578,7 +9578,7 @@
       "upload_date": "20250921",
       "year": 2025,
       "duration": 4259,
-      "view_count": 210
+      "view_count": 212
     },
     {
       "id": "O4JkF40yvqU",
@@ -9596,7 +9596,7 @@
       "upload_date": "20250921",
       "year": 2025,
       "duration": 6808,
-      "view_count": 334
+      "view_count": 336
     },
     {
       "id": "vwppypTticY",
@@ -9605,7 +9605,7 @@
       "upload_date": "20250921",
       "year": 2025,
       "duration": 3991,
-      "view_count": 366
+      "view_count": 367
     },
     {
       "id": "3JxYg6yTpls",
@@ -9686,7 +9686,7 @@
       "upload_date": "20251021",
       "year": 2025,
       "duration": 6210,
-      "view_count": 416
+      "view_count": 417
     },
     {
       "id": "PPKFlARc7gY",
@@ -9902,7 +9902,7 @@
       "upload_date": "20260209",
       "year": 2026,
       "duration": 165,
-      "view_count": 312
+      "view_count": 313
     },
     {
       "id": "8-wpEkwG8ck",
@@ -9911,7 +9911,7 @@
       "upload_date": "20260218",
       "year": 2026,
       "duration": 147,
-      "view_count": 143
+      "view_count": 144
     },
     {
       "id": "jFqT_ZR0Z8w",
@@ -9920,7 +9920,7 @@
       "upload_date": "20260218",
       "year": 2026,
       "duration": 304,
-      "view_count": 107
+      "view_count": 108
     },
     {
       "id": "CFqMSSJ1X5g",
@@ -9947,7 +9947,7 @@
       "upload_date": "20260221",
       "year": 2026,
       "duration": 3518,
-      "view_count": 335
+      "view_count": 337
     },
     {
       "id": "I7IrYbVmZqI",
@@ -9974,7 +9974,7 @@
       "upload_date": "20260320",
       "year": 2026,
       "duration": 128,
-      "view_count": 85
+      "view_count": 86
     },
     {
       "id": "2NB7hTsp_F0",
@@ -9983,7 +9983,7 @@
       "upload_date": "20260321",
       "year": 2026,
       "duration": 4432,
-      "view_count": 445
+      "view_count": 446
     },
     {
       "id": "dTcuDE6nUpg",
@@ -9992,7 +9992,7 @@
       "upload_date": "20260321",
       "year": 2026,
       "duration": 5331,
-      "view_count": 644
+      "view_count": 645
     },
     {
       "id": "ngmfy3q8TBs",
@@ -10037,7 +10037,7 @@
       "upload_date": "20260325",
       "year": 2026,
       "duration": 41,
-      "view_count": 236
+      "view_count": 237
     },
     {
       "id": "_HkuQ0HhikQ",
@@ -10046,7 +10046,7 @@
       "upload_date": "20260331",
       "year": 2026,
       "duration": 1579,
-      "view_count": 173
+      "view_count": 176
     },
     {
       "id": "yFaRYAvix_Q",
@@ -10055,7 +10055,7 @@
       "upload_date": "20260331",
       "year": 2026,
       "duration": 4736,
-      "view_count": 383
+      "view_count": 388
     },
     {
       "id": "dBAx-VDVcPQ",
@@ -10064,7 +10064,7 @@
       "upload_date": "20260410",
       "year": 2026,
       "duration": 5100,
-      "view_count": 303
+      "view_count": 304
     },
     {
       "id": "7UbCTp7BAUQ",
@@ -10073,7 +10073,7 @@
       "upload_date": "20260520",
       "year": 2026,
       "duration": 2978,
-      "view_count": 780
+      "view_count": 785
     },
     {
       "id": "7XrONg4dBrI",
@@ -10082,7 +10082,7 @@
       "upload_date": "20260520",
       "year": 2026,
       "duration": 3312,
-      "view_count": 283
+      "view_count": 288
     },
     {
       "id": "K9X0WsKx-mQ",
@@ -10091,7 +10091,7 @@
       "upload_date": "20260520",
       "year": 2026,
       "duration": 3613,
-      "view_count": 309
+      "view_count": 310
     },
     {
       "id": "ZRtkCaC9GPQ",
@@ -10100,7 +10100,7 @@
       "upload_date": "20260520",
       "year": 2026,
       "duration": 3222,
-      "view_count": 140
+      "view_count": 141
     },
     {
       "id": "b1TeT_3VpjU",
@@ -10118,7 +10118,7 @@
       "upload_date": "20260520",
       "year": 2026,
       "duration": 3640,
-      "view_count": 287
+      "view_count": 288
     },
     {
       "id": "eZX2_UARjaY",
@@ -10127,7 +10127,7 @@
       "upload_date": "20260520",
       "year": 2026,
       "duration": 3627,
-      "view_count": 378
+      "view_count": 380
     },
     {
       "id": "fc-GmNt3sNg",
@@ -10136,7 +10136,7 @@
       "upload_date": "20260520",
       "year": 2026,
       "duration": 3294,
-      "view_count": 373
+      "view_count": 374
     },
     {
       "id": "j3zcAdQkZd4",
@@ -10145,7 +10145,7 @@
       "upload_date": "20260520",
       "year": 2026,
       "duration": 4067,
-      "view_count": 195
+      "view_count": 202
     },
     {
       "id": "qwjwbiJ1LLw",
@@ -10163,7 +10163,7 @@
       "upload_date": "20260520",
       "year": 2026,
       "duration": 3640,
-      "view_count": 155
+      "view_count": 156
     },
     {
       "id": "GMqkygROLO4",
@@ -10172,7 +10172,7 @@
       "upload_date": "20260523",
       "year": 2026,
       "duration": 3186,
-      "view_count": 151
+      "view_count": 152
     },
     {
       "id": "C9BBt5DmZuU",
@@ -10181,7 +10181,7 @@
       "upload_date": "20260530",
       "year": 2026,
       "duration": 3304,
-      "view_count": 160
+      "view_count": 163
     },
     {
       "id": "HCASYc6sUhk",
@@ -10307,7 +10307,7 @@
       "upload_date": "20260625",
       "year": 2026,
       "duration": 3699,
-      "view_count": 279
+      "view_count": 292
     },
     {
       "id": "lMROkmtaUWo",
@@ -10316,7 +10316,7 @@
       "upload_date": "20260626",
       "year": 2026,
       "duration": 3710,
-      "view_count": 111
+      "view_count": 112
     },
     {
       "id": "nmu_ZVvv_-A",
@@ -10334,7 +10334,7 @@
       "upload_date": "20260630",
       "year": 2026,
       "duration": 4512,
-      "view_count": 173
+      "view_count": 174
     },
     {
       "id": "FtGnkRJwk6U",
@@ -10343,7 +10343,7 @@
       "upload_date": "20260703",
       "year": 2026,
       "duration": 4153,
-      "view_count": 170
+      "view_count": 171
     },
     {
       "id": "t2TgSuYH-K8",
@@ -10370,7 +10370,7 @@
       "upload_date": "20260710",
       "year": 2026,
       "duration": 3635,
-      "view_count": 167
+      "view_count": 168
     },
     {
       "id": "Wkn_NwzKGLs",
@@ -10388,7 +10388,7 @@
       "upload_date": "20260714",
       "year": 2026,
       "duration": 3366,
-      "view_count": 59
+      "view_count": 61
     },
     {
       "id": "vjtYYbO9jCY",
@@ -10415,7 +10415,7 @@
       "upload_date": "20260721",
       "year": 2026,
       "duration": 3629,
-      "view_count": 96
+      "view_count": 99
     },
     {
       "id": "PDI5oqODc2s",
@@ -10433,7 +10433,7 @@
       "upload_date": "20260728",
       "year": 2026,
       "duration": 3732,
-      "view_count": 49
+      "view_count": 53
     },
     {
       "id": "_NLBFXnXLKo",
@@ -10460,7 +10460,7 @@
       "upload_date": "20260730",
       "year": 2026,
       "duration": 6444,
-      "view_count": 235
+      "view_count": 239
     },
     {
       "id": "U9Z0TIeq1Fc",
@@ -10469,7 +10469,7 @@
       "upload_date": "20260730",
       "year": 2026,
       "duration": 5790,
-      "view_count": 105
+      "view_count": 107
     },
     {
       "id": "WdurCCUQ708",
@@ -10478,7 +10478,7 @@
       "upload_date": "20260731",
       "year": 2026,
       "duration": 4986,
-      "view_count": 174
+      "view_count": 178
     },
     {
       "id": "CHSfk7AkWkk",
@@ -10496,7 +10496,7 @@
       "upload_date": "20260804",
       "year": 2026,
       "duration": 3441,
-      "view_count": 130
+      "view_count": 131
     },
     {
       "id": "BvCPqNNUfNU",
@@ -10505,7 +10505,7 @@
       "upload_date": "20260807",
       "year": 2026,
       "duration": 3678,
-      "view_count": 128
+      "view_count": 129
     },
     {
       "id": "1B8L0Fq8NYY",
@@ -10514,7 +10514,7 @@
       "upload_date": "20260811",
       "year": 2026,
       "duration": 3272,
-      "view_count": 113
+      "view_count": 116
     },
     {
       "id": "RaT71q68sOc",
@@ -10523,7 +10523,7 @@
       "upload_date": "20260814",
       "year": 2026,
       "duration": 4585,
-      "view_count": 131
+      "view_count": 133
     },
     {
       "id": "oOd1XOpuNw8",
@@ -10532,7 +10532,7 @@
       "upload_date": "20260818",
       "year": 2026,
       "duration": 3773,
-      "view_count": 93
+      "view_count": 97
     },
     {
       "id": "WaH-PjeLs9I",
@@ -10541,7 +10541,7 @@
       "upload_date": "20260821",
       "year": 2026,
       "duration": 4640,
-      "view_count": 154
+      "view_count": 159
     },
     {
       "id": "jDXo1J9kIwY",
@@ -10550,7 +10550,7 @@
       "upload_date": "20260825",
       "year": 2026,
       "duration": 4399,
-      "view_count": 129
+      "view_count": 130
     },
     {
       "id": "jnOck__J8vk",
@@ -10559,7 +10559,7 @@
       "upload_date": "20260828",
       "year": 2026,
       "duration": 3614,
-      "view_count": 312
+      "view_count": 314
     },
     {
       "id": "sXyUfpGHXNI",
@@ -10568,7 +10568,7 @@
       "upload_date": "20260901",
       "year": 2026,
       "duration": 4299,
-      "view_count": 188
+      "view_count": 191
     },
     {
       "id": "40oviQkOjbc",
@@ -10595,7 +10595,7 @@
       "upload_date": "20260911",
       "year": 2026,
       "duration": 3549,
-      "view_count": 188
+      "view_count": 189
     },
     {
       "id": "MJ30RKyTyMw",
@@ -10604,7 +10604,7 @@
       "upload_date": "20260915",
       "year": 2026,
       "duration": 3679,
-      "view_count": 188
+      "view_count": 189
     },
     {
       "id": "i5iMnVG17QU",
@@ -10613,7 +10613,7 @@
       "upload_date": "20260918",
       "year": 2026,
       "duration": 3725,
-      "view_count": 308
+      "view_count": 309
     },
     {
       "id": "GQYh03SoJ88",
@@ -10631,7 +10631,7 @@
       "upload_date": "20260922",
       "year": 2026,
       "duration": 5871,
-      "view_count": 1400
+      "view_count": 1500
     },
     {
       "id": "DVJKXtCx2Wo",
@@ -10649,7 +10649,7 @@
       "upload_date": "20260930",
       "year": 2026,
       "duration": 4414,
-      "view_count": 192
+      "view_count": 193
     },
     {
       "id": "WrixYErQot0",
@@ -10658,7 +10658,7 @@
       "upload_date": "20261001",
       "year": 2026,
       "duration": 1261,
-      "view_count": 277
+      "view_count": 279
     },
     {
       "id": "9cK0D8BnhOM",
@@ -10667,7 +10667,7 @@
       "upload_date": "20261002",
       "year": 2026,
       "duration": 4070,
-      "view_count": 171
+      "view_count": 174
     },
     {
       "id": "onxrJkX5xrY",
@@ -10676,7 +10676,16 @@
       "upload_date": "20261003",
       "year": 2026,
       "duration": 3526,
-      "view_count": 569
+      "view_count": 575
+    },
+    {
+      "id": "d2BFJx7dWTQ",
+      "title": "ActInf GuestStream 132.1: Root Frequency Theory: A Multiscale Framework for Measuring Coherence...",
+      "channel": "institute",
+      "upload_date": "20261005",
+      "year": 2026,
+      "duration": 1905,
+      "view_count": 97
     },
     {
       "id": "4zc0Eh23LmI",
@@ -10685,7 +10694,7 @@
       "upload_date": "20261006",
       "year": 2026,
       "duration": 3850,
-      "view_count": 506
+      "view_count": 512
     },
     {
       "id": "w4ecs7Tjvy0",
@@ -10694,7 +10703,7 @@
       "upload_date": "20261009",
       "year": 2026,
       "duration": 3777,
-      "view_count": 194
+      "view_count": 200
     },
     {
       "id": "ULPPTRUvmg4",
@@ -10703,7 +10712,7 @@
       "upload_date": "20261013",
       "year": 2026,
       "duration": 901,
-      "view_count": 170
+      "view_count": 294
     }
   ]
 }

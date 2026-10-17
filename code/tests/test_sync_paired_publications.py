@@ -1008,3 +1008,27 @@ def test_observation_refresh_retains_exact_apply_receipt_without_new_approval(tm
     kwargs['actions'] = []
     write_report(report, **kwargs)
     assert json.loads(report.read_text())['applied'] == []  # No receipt transferred to another action.
+
+
+def test_paired_intake_keeps_all_creators_and_existing_curated_byline(tmp_path):
+    _write_minimal_repo(tmp_path)
+    bibliography = tmp_path / "pages/BIBLIOGRAPHY.md"
+    bibliography.write_text(bibliography.read_text().replace("| Docs |", "| Docs | Authors |"))
+    pair = _pair()
+    pair = replace(pair, record=replace(pair.record, creators=[
+        {"name": "Friedman, Daniel Ari"}, {"name": "Mikhailova, Alexandra"}]))
+    folder = "2026_NewComputationalProject"
+    sync_paired_publications.ensure_bibliography_row(pair, folder, [], tmp_path)
+    sync_paired_publications.update_paper_metadata_index(pair, folder, [], tmp_path)
+    rows = [line for line in bibliography.read_text().splitlines() if line.startswith("| 1 |")]
+    assert len(rows) == 1
+    assert rows[0].endswith("| Friedman, Daniel Ari; Mikhailova, Alexandra |")
+    metadata = json.loads((tmp_path / "papers/paper_metadata.json").read_text())
+    assert metadata[folder]["authors"] == "Daniel Ari Friedman, Alexandra Mikhailova"
+    bibliography.write_text(bibliography.read_text().replace(
+        "Friedman, Daniel Ari; Mikhailova, Alexandra |", "Existing curated byline |"))
+    revised = replace(pair, record=replace(pair.record, doi="10.5281/zenodo.20990002"))
+    sync_paired_publications.ensure_bibliography_row(revised, folder, [], tmp_path)
+    row = next(line for line in bibliography.read_text().splitlines() if line.startswith("| 1 |"))
+    assert row.endswith("| Existing curated byline |")
+    assert "20990002" in row

@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-16T22:25:43Z",
+  "reviewed_by": "Codex",
+  "scope": "Registry checksums, archived PDF hashes, and declared GitHub source identities checked. Upstream runtime/test/coverage assertions in unchanged archived sidecars are not independently reproduced by this profile-index review.",
+  "archives": [
+    {
+      "folder": "2026_ITrace",
+      "record_url": "https://zenodo.org/records/23419306",
+      "pdf_path": "papers/2026_ITrace/itrace-manuscript-2026-10-16.pdf",
+      "pdf_sha256": "419ca0113ee3816864c5ac8b6441886f471215962359a4601b804bc650c9688e",
+      "declared_pdf_sha256_matches": true,
+      "source_repository": "docxology/itrace",
+      "source_revision": "310be17ace8ae61621afe01329356427a3e6c861",
+      "source_commit": "310be17ace8ae61621afe01329356427a3e6c861",
+      "declared_source_commit_matches_github": true,
+      "archived_sidecars": [
+        {
+          "path": "papers/2026_ITrace/provenance.json",
+          "registry_url": "https://zenodo.org/api/records/23419306/files/provenance.json/content",
+          "registry_checksum": "md5:8d9e00c3cc526f72c82d490a5c07ed3e",
+          "sha256": "32323bee5995ad8dcdae919e0dff8838eb90a251ef90fc9da6bd6649fee4560d",
+          "registry_checksum_matches": true
+        }
+      ]
+    },
+    {
+      "folder": "2026_ActiveInferenceSynthetic",
+      "record_url": "https://zenodo.org/records/23396307",
+      "pdf_path": "papers/2026_ActiveInferenceSynthetic/ActiveInferenceSynthetic_Revised.pdf",
+      "pdf_sha256": "0247f4aa292915941b599a6dc479d1ff8d294f501a4c7e3f5a0781be3ffec7d2",
+      "declared_pdf_sha256_matches": true,
+      "source_repository": "docxology/ActiveInferenceSynthetic",
+      "source_revision": "synthetic-public-v0.6.1",
+      "source_commit": "65b57d8a579834003f02ada0ff13f902e6cc6aa4",
+      "declared_source_commit_matches_github": true,
+      "archived_sidecars": [
+        {
+          "path": "papers/2026_ActiveInferenceSynthetic/publication.json",
+          "registry_url": "https://zenodo.org/api/records/23396307/files/publication.json/content",
+          "registry_checksum": "md5:3a3833face3e5eb00825b90281fba6bd",
+          "sha256": "d8a981b5be08fbbe04e91e9c0f2fe4bd95f668c5f5a81a00211719a39254e0df",
+          "registry_checksum_matches": true
+        },
+        {
+          "path": "papers/2026_ActiveInferenceSynthetic/RELEASE_IDENTITY.json",
+          "registry_url": "https://zenodo.org/api/records/23396307/files/RELEASE_IDENTITY.json/content",
+          "registry_checksum": "md5:68c96799caab5008224a930923a253ee",
+          "sha256": "4b6004423e0de13419f730917d39c7167900153053aa8d017074c0c2852c8835",
+          "registry_checksum_matches": true
+        }
+      ]
+    },
+    {
+      "folder": "2026_ActiveInferenceAs",
+      "record_url": "https://zenodo.org/records/23397453",
+      "pdf_path": "papers/2026_ActiveInferenceAs/active_inference_meta_pragmatic-1.0.0.pdf",
+      "pdf_sha256": "36495911a7b249d52145d8feaec5d82b846b5d3016c66a43a951c16a5ab2a9a7",
+      "declared_pdf_sha256_matches": true,
+      "source_repository": "docxology/active_inference_meta_pragmatic",
+      "source_revision": "v1.0.0",
+      "source_commit": "eadfa2f030ea068df7ebdddc341829f20b85c713",
+      "declared_source_commit_matches_github": true,
+      "archived_sidecars": [
+        {
+          "path": "papers/2026_ActiveInferenceAs/release_manifest.json",
+          "registry_url": "https://zenodo.org/api/records/23397453/files/release_manifest.json/content",
+          "registry_checksum": "md5:0966f71191e96d64420e5d7c6e758707",
+          "sha256": "b258ebbf32f191ed6a66607812054377e20f3dfd2d946bc2266f661ceac6dc3b",
+          "registry_checksum_matches": true
+        }
+      ]
+    }
+  ]
+}

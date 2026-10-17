@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iTrace: verification-first webcam eye-movement analysis — Daniel Ari Friedman</title>
-    <meta name="description" content="iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics. Version 0.4.1 is a diagnostic v1 release: the…">
+    <meta name="description" content="# iTrace manuscript revision, 2026-10-16 This deposit archives the corrected 30-page manuscript from reviewed commit…">
     <meta name="robots" content="index, follow">
     <meta name="citation_title" content="iTrace: verification-first webcam eye-movement analysis">
-    <meta name="citation_publication_date" content="2026/06/09">
+    <meta name="citation_publication_date" content="2026/10/16">
     <meta name="citation_author" content="Daniel Ari Friedman">
     <meta name="citation_doi" content="10.5281/zenodo.20614908">
-    <meta name="citation_pdf_url" content="https://danielarifriedman.com/papers/2026_ITrace/itrace-0.4.1-manuscript.pdf">
+    <meta name="citation_pdf_url" content="https://danielarifriedman.com/papers/2026_ITrace/itrace-manuscript-2026-10-16.pdf">
     <link rel="canonical" href="https://danielarifriedman.com/works/Friedman2026ITraceVerificationFirstWebcam165.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
@@ -34,7 +34,7 @@
     <script src="/js/nav-toggle.js?v=nav-20261002"></script>
     <meta property="og:type" content="article">
     <meta property="og:title" content="iTrace: verification-first webcam eye-movement analysis">
-    <meta property="og:description" content="iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics. Version 0.4.1 is a diagnostic v1 release: the…">
+    <meta property="og:description" content="# iTrace manuscript revision, 2026-10-16 This deposit archives the corrected 30-page manuscript from reviewed commit…">
     <meta property="og:url" content="https://danielarifriedman.com/works/Friedman2026ITraceVerificationFirstWebcam165.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
@@ -42,7 +42,7 @@
     <meta property="og:image:alt" content="iTrace: verification-first webcam eye-movement analysis — Daniel Ari Friedman">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="iTrace: verification-first webcam eye-movement analysis">
-    <meta name="twitter:description" content="iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics. Version 0.4.1 is a diagnostic v1 release: the…">
+    <meta name="twitter:description" content="# iTrace manuscript revision, 2026-10-16 This deposit archives the corrected 30-page manuscript from reviewed commit…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="iTrace: verification-first webcam eye-movement analysis — Daniel Ari Friedman">
     <link rel="stylesheet" href="../style.css?v=site-20261002b">
@@ -57,7 +57,7 @@
     "@id": "https://danielarifriedman.com/works/Friedman2026ITraceVerificationFirstWebcam165.html#work",
     "name": "iTrace: verification-first webcam eye-movement analysis",
     "headline": "iTrace: verification-first webcam eye-movement analysis",
-    "datePublished": "2026-06-09",
+    "datePublished": "2026-10-16",
     "url": "https://danielarifriedman.com/works/Friedman2026ITraceVerificationFirstWebcam165.html",
     "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026ITraceVerificationFirstWebcam165.html",
     "isPartOf": {
@@ -138,7 +138,7 @@
         "@type": "Organization",
         "name": "Zenodo"
     },
-    "abstract": "iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics. Version 0.4.1 is a diagnostic v1 release: the pure NumPy/SciPy core is algorithmically verified against synthetic and closed-loop oracles, the optional webcam shell exports derived records, and the empirical ledger covers a single-participant, single-device, five-session diagnostic pilot. This release does not claim reference-device accuracy, cross-device generality, population generality, or webcam-accuracy validation.",
+    "abstract": "# iTrace manuscript revision, 2026-10-16 This deposit archives the corrected 30-page manuscript from reviewed commit `310be17ace8ae61621afe01329356427a3e6c861`. Exact source and figure artifacts are at https://github.com/docxology/itrace/tree/310be17ace8ae61621afe01329356427a3e6c861. It is a manuscript revision after the immutable v0.5.0 release, not a new package release. The package version in that source remains 0.5.0. The previous release remains at https://doi.org/10.5281/zenodo.23403300. References in the manuscript to that DOI identify the archived baseline. Changes correct overlap scoring, resampling and fit uncertainty, fitted-null diagnostics, uncertainty figures, scholarship, and scientific interpretation. The manuscript distinguishes synthetic verification from real-device validation. No new participant or reference-device data are claimed. Verification: 737 tests passed, 2 skipped, 91.05% combined statement-and-branch coverage; 44 final artifact tests passed, independent review approved the exact source commit, and all ten hosted CI jobs passed. The included figure manifest inventories 41 artifacts in the linked source tree. `provenance.json` binds this PDF to the Git commit; `SHA256SUMS` inventories every payload.",
     "keywords": [
         "eye-tracking",
         "webcam",
@@ -148,7 +148,7 @@
         "open-source",
         "diagnostic-pilot"
     ],
-    "description": "On synthetic traces the I-VT detector recovered a 10 deg saccade's amplitude within 5% and peak velocity within 10%. On the synthetic 3-D closed loop, gaze was recovered with 0.16 deg RMS residual (max 0.23 deg) for gaze within ±15 deg; the author states this is internal consistency, not device validation. In the idealised noise sweep, saccade detection was most fragile (F1 \u003c 0.8 at sigma about 0.0014), while gaze crossed the 2 deg bound near sigma 0.005. The pupil noise robustness is reported only as a conditional illustration because it follows from the assumed pupil noise model. The headline limitation is an unclosed device validation gap: correctness rests on constructed ground truth, no",
+    "description": "In the specified synthetic landmark-noise sweep, gaze remains below 2 deg RMS to sigma approximately 0.0048, about 3 pixels at 640-pixel width. One-to-one overlap-based saccade recovery falls below F1 = 0.8 near sigma 0.0014, about 0.92 pixels, in that synthetic sweep. The overlap result measures event recovery and does not establish timing accuracy. Pupil noise-sweep robustness is conditional on the assumed pupil-noise injection model. These results verify specified algorithms and internal geometry; they do not validate webcams as eye trackers. Hardware-decoupled analysis core — The optional capture shell emits typed records consumed by a headless scientific-analysis core. Constructed-groun",
     "citation": "Friedman, Daniel Ari. 2026. iTrace: verification-first webcam eye-movement analysis. Zenodo. DOI: 10.5281/zenodo.20614908. URL: https://doi.org/10.5281/zenodo.20614908.",
     "hasPart": {
         "@type": "CreativeWork",
@@ -159,16 +159,25 @@
         {
             "@type": "MediaObject",
             "encodingFormat": "application/pdf",
-            "contentUrl": "https://danielarifriedman.com/papers/2026_ITrace/itrace-0.4.1-manuscript.pdf",
-            "url": "https://danielarifriedman.com/papers/2026_ITrace/itrace-0.4.1-manuscript.pdf",
-            "name": "itrace-0.4.1-manuscript.pdf",
-            "contentSize": "5324090 bytes"
+            "contentUrl": "https://danielarifriedman.com/papers/2026_ITrace/itrace-manuscript-2026-10-16.pdf",
+            "url": "https://danielarifriedman.com/papers/2026_ITrace/itrace-manuscript-2026-10-16.pdf",
+            "name": "itrace-manuscript-2026-10-16.pdf",
+            "contentSize": "5732341 bytes"
         },
         {
             "@type": "TextObject",
             "encodingFormat": "text/markdown",
             "url": "https://danielarifriedman.com/papers/2026_ITrace/full_text.md",
             "name": "Full text (extracted)"
+        }
+    ],
+    "associatedMedia": [
+        {
+            "@type": "MediaObject",
+            "encodingFormat": "application/pdf",
+            "name": "itrace-0.4.1-manuscript.pdf",
+            "contentUrl": "https://danielarifriedman.com/papers/2026_ITrace/itrace-0.4.1-manuscript.pdf",
+            "contentSize": "5324090 bytes"
         }
     ]
 }
@@ -244,7 +253,7 @@
         <h1>iTrace: verification-first webcam eye-movement analysis</h1>
         <p class="byline">Daniel Ari Friedman</p>
         <p class="sub">Zenodo</p>
-<div class="work-actions" role="group" aria-label="Read and download this work"><a class="btn btn-gold" href="../papers/2026_ITrace/itrace-0.4.1-manuscript.pdf" download="itrace-0.4.1-manuscript.pdf" type="application/pdf">Download PDF</a>
+<div class="work-actions" role="group" aria-label="Read and download this work"><a class="btn btn-gold" href="../papers/2026_ITrace/itrace-manuscript-2026-10-16.pdf" download="itrace-manuscript-2026-10-16.pdf" type="application/pdf">Download PDF</a>
 <a class="btn btn-outline" href="https://doi.org/10.5281/zenodo.20614908">Publication source</a>
 <a class="btn btn-outline" href="https://github.com/docxology/docxology/tree/main/papers/2026_ITrace">Paper folder on GitHub</a>
 <a class="btn btn-outline" href="../papers/2026_ITrace/full_text.md">Read extracted text</a></div>
@@ -253,15 +262,15 @@
 
         <section class="section">
             <div class="section-header"><h2>Overview</h2><div class="section-divider"></div></div>
-            <div class="work-detail"><p>iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics. Version 0.4.1 is a diagnostic v1 release: the pure NumPy/SciPy core is algorithmically verified against synthetic and closed-loop oracles, the optional webcam shell exports derived records, and the empirical ledger covers a single-participant, single-device, five-session diagnostic pilot. This release does not claim reference-device accuracy, cross-device generality, population generality, or webcam-accuracy validation.</p><div class="keyword-row" aria-label="Keywords"><span>eye-tracking</span><span>webcam</span><span>gaze</span><span>saccades</span><span>pupillometry</span><span>open-source</span><span>diagnostic-pilot</span></div><p class="summary-sources abstract-source">Overview source: <a href="../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
+            <div class="work-detail"><p># iTrace manuscript revision, 2026-10-16 This deposit archives the corrected 30-page manuscript from reviewed commit `310be17ace8ae61621afe01329356427a3e6c861`. Exact source and figure artifacts are at https://github.com/docxology/itrace/tree/310be17ace8ae61621afe01329356427a3e6c861. It is a manuscript revision after the immutable v0.5.0 release, not a new package release. The package version in that source remains 0.5.0. The previous release remains at https://doi.org/10.5281/zenodo.23403300. References in the manuscript to that DOI identify the archived baseline. Changes correct overlap scoring, resampling and fit uncertainty, fitted-null diagnostics, uncertainty figures, scholarship, and scientific interpretation. The manuscript distinguishes synthetic verification from real-device validation. No new participant or reference-device data are claimed. Verification: 737 tests passed, 2 skipped, 91.05% combined statement-and-branch coverage; 44 final artifact tests passed, independent review approved the exact source commit, and all ten hosted CI jobs passed. The included figure manifest inventories 41 artifacts in the linked source tree. `provenance.json` binds this PDF to the Git commit; `SHA256SUMS` inventories every payload.</p><div class="keyword-row" aria-label="Keywords"><span>eye-tracking</span><span>webcam</span><span>gaze</span><span>saccades</span><span>pupillometry</span><span>open-source</span><span>diagnostic-pilot</span></div><p class="summary-sources abstract-source">Overview source: <a href="../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Methods and contributions</h2><p>Read the source for the full argument, qualifications, and evidence.</p><div class="section-divider"></div></div>
-            <div class="work-summary-grid"><div class="work-detail"><h3>Findings and contributions</h3><ul><li>On synthetic traces the I-VT detector recovered a 10 deg saccade&#x27;s amplitude within 5% and peak velocity within 10%.</li><li>On the synthetic 3-D closed loop, gaze was recovered with 0.16 deg RMS residual (max 0.23 deg) for gaze within ±15 deg; the author states this is internal consistency, not device validation.</li><li>In the idealised noise sweep, saccade detection was most fragile (F1 &lt; 0.8 at sigma about 0.0014), while gaze crossed the 2 deg bound near sigma 0.005.</li><li>The pupil noise robustness is reported only as a conditional illustration because it follows from the assumed pupil noise model.</li><li>The headline limitation is an unclosed device validation gap: correctness rests on constructed ground truth, not reference measurements of real eyes.</li></ul></div><div class="work-detail"><h3>Methods</h3><ul><li>Hardware-decoupled pure NumPy/SciPy analysis core with optional capture shell — Gaze geometry, I-VT/I-DT, Engbert-Kliegl microsaccade, main-sequence and pupil algorithms run headlessly, separate from an optional webcam/MediaPipe shell.</li><li>Verification against synthetic traces with ground truth held out by construction — Every detector is tested on generated signals whose events are known, e.g. a 250 Hz fixation-saccade-fixation trace and an embedded 0.5 deg microsaccade.</li><li>3-D eyeball forward model closed loop through a pinhole camera — Known gaze is projected to landmarks and back through the estimator on an animated 120 Hz scene to check geometric internal consistency.</li><li>Seeded Monte-Carlo landmark-noise sweep (sigma 0-0.016, 25 trials/level) — Independent landmark noise is injected into the synthetic scene to rank fragility of gaze, saccade and pupil recovery, with bootstrap confidence intervals.</li><li>N=1 single-participant, single-device webcam pilot sessions — One local webcam workflow recorded fixed-gaze, reading and target trials as derived records to give order-of-magnitude session diagnostics.</li></ul></div></div><p class="summary-sources">Summary sources: <a href="../papers/2026_ITrace/metadata.json">Paper metadata and evidence</a> · <a href="../papers/2026_ITrace/full_text.md">Extracted source text</a>.</p>
+            <div class="work-summary-grid"><div class="work-detail"><h3>Findings and contributions</h3><ul><li>In the specified synthetic landmark-noise sweep, gaze remains below 2 deg RMS to sigma approximately 0.0048, about 3 pixels at 640-pixel width.</li><li>One-to-one overlap-based saccade recovery falls below F1 = 0.8 near sigma 0.0014, about 0.92 pixels, in that synthetic sweep.</li><li>The overlap result measures event recovery and does not establish timing accuracy.</li><li>Pupil noise-sweep robustness is conditional on the assumed pupil-noise injection model.</li><li>These results verify specified algorithms and internal geometry; they do not validate webcams as eye trackers.</li></ul></div><div class="work-detail"><h3>Methods</h3><ul><li>Hardware-decoupled analysis core — The optional capture shell emits typed records consumed by a headless scientific-analysis core.</li><li>Constructed-ground-truth verification — Headless tests exercise the algorithms on synthetic signals whose truth is supplied by construction.</li><li>Explicit caller-supplied benchmark truth — Benchmark outputs report their truth boundary and distinguish comparator agreement from reference measurement.</li></ul></div></div><p class="summary-sources">Summary sources: <a href="../papers/2026_ITrace/metadata.json">Paper metadata and evidence</a> · <a href="../papers/2026_ITrace/full_text.md">Extracted source text</a>.</p>
         </section>
 <section class="section" id="downloads" aria-labelledby="downloads-title">
             <div class="section-header"><h2 id="downloads-title">PDF downloads</h2><p>Archived files available directly from this site.</p><div class="section-divider"></div></div>
-            <div class="work-detail"><ul class="download-list"><li><a href="../papers/2026_ITrace/itrace-0.4.1-manuscript.pdf" download="itrace-0.4.1-manuscript.pdf" type="application/pdf">itrace-0.4.1-manuscript.pdf</a><span class="muted"> PDF · 5.08 MiB · extracted-text source</span></li></ul></div>
+            <div class="work-detail"><ul class="download-list"><li><a href="../papers/2026_ITrace/itrace-0.4.1-manuscript.pdf" download="itrace-0.4.1-manuscript.pdf" type="application/pdf">itrace-0.4.1-manuscript.pdf</a><span class="muted"> PDF · 5.08 MiB</span></li><li><a href="../papers/2026_ITrace/itrace-manuscript-2026-10-16.pdf" download="itrace-manuscript-2026-10-16.pdf" type="application/pdf">itrace-manuscript-2026-10-16.pdf</a><span class="muted"> PDF · 5.47 MiB · declared primary</span></li></ul><p class="muted">These files may be different versions or companion documents. The archive does not identify a latest edition.</p></div>
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Citation</h2><p>Citation metadata follows the unified bibliography.</p><div class="section-divider"></div></div>
@@ -289,7 +298,7 @@
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite &amp; Verify</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/23ed2fe0b">build 23ed2fe0b 2026-10-12</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/fba3039fc">build fba3039fc 2026-10-13</a></p>
     </footer>
 <script src="/js/search-utils.js?v=site-20261002b"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

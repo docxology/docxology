@@ -10,8 +10,8 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 
 
-from fetch_youtube_data import merge_videos, refresh_channel  # noqa: E402
 from docxology_tools import youtube_fetcher as yf  # noqa: E402
+from fetch_youtube_data import merge_videos, refresh_channel  # noqa: E402
 
 
 class _StaticFetcher:
@@ -196,3 +196,32 @@ def test_complete_but_empty_exact_refresh_preserves_existing_cache(tmp_path: Pat
     assert result.failure.stage == "validate_refresh"
     assert result.failure.error_type == "EmptyRefresh"
     assert output_path.read_text(encoding="utf-8") == original
+
+
+def test_full_refresh_preserves_approximate_dates_but_allows_exact_corrections(tmp_path):
+    output = tmp_path / "channel.json"
+    cached = [_video("stream"), _video("exact"), _video("removed")]
+    output.write_text(json.dumps({"videos": cached}))
+    approximate = [{**_video("stream"), "upload_date": "20261016", "year": 2026,
+                    "month": 10, "day": 16}, _video("new")]
+    exact = {**_video("exact"), "upload_date": "20260102", "year": 2026,
+             "month": 1, "day": 2}
+    # A flat duplicate must not override dates supplied by full metadata.
+    flat_duplicate = {**_video("exact"), "upload_date": "20230101", "year": 2023}
+    fetch = yf.ChannelFetchResult(
+        channel_url="https://example.test/@channel", channel_id="personal",
+        videos=tuple([*approximate, flat_duplicate]),
+        tabs=(yf.TabFetchResult(tab="videos", mode="full", videos=(exact,)),
+              yf.TabFetchResult(tab="streams", mode="approximate",
+                                videos=tuple([*approximate, flat_duplicate]))),
+    )
+    result = refresh_channel("personal", fetch.channel_url, output,
+                             fetcher=_StaticFetcher(fetch))
+    assert result.complete and result.saved
+    written = {video["id"]: video for video in json.loads(output.read_text())["videos"]}
+    assert written["stream"]["upload_date"] == "20240101"
+    assert written["stream"]["year"] == 2024
+    assert written["exact"]["upload_date"] == "20260102"
+    assert written["exact"]["year"] == 2026
+    assert written["new"]["upload_date"] == "20240101"
+    assert "removed" not in written

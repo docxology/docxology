@@ -1,0 +1,40 @@
+{
+  "version": "manuscript-2026-10-16-310be17",
+  "commit": "310be17ace8ae61621afe01329356427a3e6c861",
+  "pdf_sha256": "419ca0113ee3816864c5ac8b6441886f471215962359a4601b804bc650c9688e",
+  "pdf_pages": 30,
+  "baseline_release": "0.5.0",
+  "baseline_doi": "10.5281/zenodo.23403300",
+  "concept_doi": "10.5281/zenodo.20614908",
+  "github_commit": "https://github.com/docxology/itrace/commit/310be17ace8ae61621afe01329356427a3e6c861",
+  "hosted_ci": "https://github.com/docxology/itrace/actions/runs/38834808643",
+  "hosted_ci_conclusion": "success",
+  "publication_kind": "corrected manuscript; exact source is linked by Git commit; no new package release",
+  "files": {
+    "LICENSE": {
+      "bytes": 1076,
+      "sha256": "72f87c6cb562ffc6f870dc124d86b45ee0df5460e83fe8443d8e2ae65777e978",
+      "md5": "c39a98bef02b2aa8bf46150269091678"
+    },
+    "figure-manifest.json": {
+      "bytes": 18665,
+      "sha256": "5aa78eb5443c2f9d88f4cf51c558d505901a2e04a5a1fa38e0a2d460fea5c56a",
+      "md5": "c61eb0f74dd42b257e3aae8aabf87ae3"
+    },
+    "itrace-manuscript-2026-10-16.pdf": {
+      "bytes": 5732341,
+      "sha256": "419ca0113ee3816864c5ac8b6441886f471215962359a4601b804bc650c9688e",
+      "md5": "b994e7cd34254f762b92b5dbc33b2225"
+    },
+    "scholarship-review.md": {
+      "bytes": 31153,
+      "sha256": "33b1c8caa5d97be1708ab5ac5b9b185226de62dd6dc18e4de3b8fae8927fda5b",
+      "md5": "f8a30dfac64f6677f7f5359b10b84ebc"
+    },
+    "verification-metrics.json": {
+      "bytes": 1687,
+      "sha256": "60c690385c32ed176716a82b48838a5ce1f8d06a27c51aff3dfe0e69602eba78",
+      "md5": "749fedd1f0bc424194695cb62d96f874"
+    }
+  }
+}

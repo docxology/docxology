@@ -10,9 +10,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 > **Navigation**: [🏠 Home](../README.md) | [📚 Bibliography](BIBLIOGRAPHY.md) | [💻 Software](SOFTWARE.md) | [🔗 Links](LINKS.md) | [🧭 Discovery](DISCOVERY.md) | [👤 Profile](PROFILE.md) | [🤝 Collaborators](COLLABORATORS.md) | [🎥 Media](MEDIA.md) | [📺 Videos](VIDEOS.md) | [📦 Resources](RESOURCES.md) | [📖 Wikipedia](WIKIPEDIA.md)
 
 
-**Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
+**Publications and Research Outputs in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**222 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**223 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-824_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical · 🔍 Other
 
-**201** Papers · **8** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series · **1** Report
+**202** Papers · **8** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series · **1** Report
 
-> **222** works in the table below **·** **205** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **223** works in the table below **·** **206** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -260,6 +260,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 224 | 2026 | 🌍 | Paper | Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference | *Zenodo* | [10.5281/zenodo.23066903](https://doi.org/10.5281/zenodo.23066903) | [📁](../papers/2026_CoordinatingField/) | Ober, Edward; Maren, Alianna; Friston, Karl J.; Hurtado, Ana Magdalena; Pashea, Andrew; Friedman, Daniel; Sabine, Alexander; Safron, Adam |
 | 225 | 2026 | 🧠 | Paper | Active Inference -- A Synthetic Overview | *Zenodo* | [10.5281/zenodo.23321280](https://doi.org/10.5281/zenodo.23321280) | [📁](../papers/2026_ActiveInferenceSynthetic/) | Friedman, Daniel Ari; Alexandra Mikhailova |
 | 226 | 2026 | 💻 | Paper | antropy: native multidimensional entropy and configurable complexity analysis | *Zenodo* | [10.5281/zenodo.23306200](https://doi.org/10.5281/zenodo.23306200) | [📁](../papers/2026_Antropy/) | Friedman, Daniel Ari |
+| 227 | 2026 | 🧠 | Paper | Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision | *Zenodo* | [10.5281/zenodo.23397452](https://doi.org/10.5281/zenodo.23397452) | [📁](../papers/2026_ActiveInferenceAs/) | Friedman, Daniel Ari |
 ---
 
 ## Domain Index

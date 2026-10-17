@@ -57,7 +57,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 
 Free Energy Principle, generative models, belief sharing, formalization, and educational infrastructure.
 
-- Works: 47
+- Works: 48
 - Selected repositories: 11
 - Collaborator context: Karl Friston, Thomas Parr, Maxwell J. D. Ramstead, Conor Heins, Tim Verbelen
 
@@ -122,7 +122,7 @@ Narrative ecosystems, information commons, digital rhetoric, and multiagent secu
 **Selected repositories**
 
 - [p3if](https://github.com/docxology/p3if) — Properties, Processes, and Perspectives Inter-Framework (P3IF) — multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security
-- [opentir](https://github.com/docxology/opentir) — Comprehensive toolkit analyzing 250+ Palantir open-source repositories (6.2M+ lines of code) — automated discovery, multi-language analysis, dependency mapping, statistical profiling, and professional visualizations
+- [opentir](https://github.com/docxology/opentir) — Repository analysis and offline documentation toolkit; v1.1.0 repairs packaging, configuration and reproducible generation. Release verification used local Git/HTTP fixtures; live organization-wide discovery was not rerun
 - [cognitive-engine](https://github.com/docxology/cognitive-engine) — Hybrid neuro-symbolic AI combining fractal symbolic representations with probabilistic neural models for enhanced reasoning; includes Unipixel fractal building blocks and PEFF ethical reasoning
 - [ATLAS](https://github.com/ActiveInferenceInstitute/ATLAS) — Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces
 

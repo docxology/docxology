@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Hardware-decoupled pure NumPy/SciPy analysis core with optional capture shell, Verification against synthetic traces with ground truth held out by construction, 3-D eyeball forward model closed loop through a pinhole camera
-- Identifies findings: On synthetic traces the I-VT detector recovered a 10 deg saccade's amplitude within 5% and peak velocity within 10%., On the synthetic 3-D closed loop, gaze was recovered with 0.16 deg RMS residual (max 0.23 deg) for gaze within ±15 deg; the author states this is internal consistency, not device validation., In the idealised noise sweep, saccade detection was most fragile (F1 < 0.8 at sigma about 0.0014), while gaze crossed the 2 deg bound near sigma 0.005.
+- Extracts methods: Hardware-decoupled analysis core, Constructed-ground-truth verification, Explicit caller-supplied benchmark truth
+- Identifies findings: In the specified synthetic landmark-noise sweep, gaze remains below 2 deg RMS to sigma approximately 0.0048, about 3 pixels at 640-pixel width., One-to-one overlap-based saccade recovery falls below F1 = 0.8 near sigma 0.0014, about 0.92 pixels, in that synthetic sweep., The overlap result measures event recovery and does not establish timing accuracy.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 222 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 223 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -9240,6 +9240,40 @@
             },
             "sameAs": "https://doi.org/10.5281/zenodo.23306200",
             "citation": "Friedman, Daniel Ari. 2026. antropy: native multidimensional entropy and configurable complexity analysis. Zenodo. DOI: 10.5281/zenodo.23306200. URL: https://doi.org/10.5281/zenodo.23306200."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision",
+            "headline": "Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🧠",
+            "@id": "https://danielarifriedman.com/works/Friedman2026ActiveInferenceAsMeta227.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026ActiveInferenceAsMeta227.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026ActiveInferenceAsMeta227.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.23397452",
+                "url": "https://doi.org/10.5281/zenodo.23397452"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.23397452",
+            "citation": "Friedman, Daniel Ari. 2026. Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision. Zenodo. DOI: 10.5281/zenodo.23397452. URL: https://doi.org/10.5281/zenodo.23397452."
         }
     ]
 }

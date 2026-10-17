@@ -1083,6 +1083,16 @@
       "note": "Public fork retained in the complete inventory; standing policy excludes it from original-software promotion.",
       "github_id": 1416284345,
       "github_node_id": "R_kgDOVGrIuQ"
+    },
+    {
+      "full_name": "docxology/Lenticulum.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-16",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork; retained in the complete inventory without an original-software promotion.",
+      "github_id": 1420850101,
+      "github_node_id": "R_kgDOVLBztQ"
     }
   ]
 }

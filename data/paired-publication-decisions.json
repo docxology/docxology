@@ -12700,6 +12700,1998 @@
           "source_report": "reports/paired_publications_2026-10-12.json"
         }
       ]
+    },
+    {
+      "id": "review-2026-10-16-dc2c9221b763",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20418904",
+      "title": "Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary",
+      "candidate_github_repo": "ActiveInferenceInstitute/policy_entanglement",
+      "folder": "2026_PolicyEntanglementActive",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20418904",
+          "github_repo": "ActiveInferenceInstitute/policy_entanglement",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20418904",
+          "release_tag": "v1.0.0",
+          "record_title": "Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-d0a1d9bd04f5",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21815704",
+      "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+      "candidate_github_repo": "docxology/Digi-PPPiP",
+      "folder": "2026_DigiPPPiP",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21815704",
+          "github_repo": "docxology/Digi-PPPiP",
+          "github_release_url": "https://github.com/docxology/Digi-PPPiP/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/21815704",
+          "release_tag": "v1.0.0",
+          "record_title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-7ab9369a6fec",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.22712650",
+      "title": "FractiSkills: One Portable Agent Skill per Page",
+      "candidate_github_repo": "docxology/FractiSkills",
+      "folder": "2026_FractiSkills",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.22712650",
+          "github_repo": "docxology/FractiSkills",
+          "github_release_url": "https://github.com/docxology/FractiSkills/releases/tag/v0.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/22712650",
+          "release_tag": "v0.1.0",
+          "record_title": "FractiSkills: One Portable Agent Skill per Page",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-0292b2179d13",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20976824",
+      "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+      "candidate_github_repo": "docxology/alphacogant",
+      "folder": "2026_AlphaCOGANT",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20976824",
+          "github_repo": "docxology/alphacogant",
+          "github_release_url": "https://github.com/docxology/alphacogant/releases/tag/v1.0.1",
+          "zenodo_record_url": "https://zenodo.org/records/20976824",
+          "release_tag": "v1.0.1",
+          "record_title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-89ea7375968e",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20976824",
+      "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+      "candidate_github_repo": "docxology/alphacogant",
+      "folder": "2026_AlphaCOGANT",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20976824",
+          "github_repo": "docxology/alphacogant",
+          "github_release_url": "https://github.com/docxology/alphacogant/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20976824",
+          "release_tag": "v1.0.0",
+          "record_title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-182368f75f9a",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21316510",
+      "title": "Prior Cognitive Art",
+      "candidate_github_repo": "docxology/prior_cognitive_art",
+      "folder": "2026_PriorCognitiveArt",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21316510",
+          "github_repo": "docxology/prior_cognitive_art",
+          "github_release_url": "https://github.com/docxology/prior_cognitive_art/releases/tag/v0.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/21316510",
+          "release_tag": "v0.1.0",
+          "record_title": "Prior Cognitive Art",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-d9df019c4939",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20417016",
+      "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "candidate_github_repo": "docxology/template_autoresearch_project",
+      "folder": "2026_BoundedAutoResearchTiny",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20417016",
+          "github_repo": "docxology/template_autoresearch_project",
+          "github_release_url": "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.2",
+          "zenodo_record_url": "https://zenodo.org/records/20417016",
+          "release_tag": "v0.3.2",
+          "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-b4e821cc15eb",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21086292",
+      "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+      "candidate_github_repo": "docxology/template_eda_notebook",
+      "folder": "2026_ExploratoryDataAnalysis",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21086292",
+          "github_repo": "docxology/template_eda_notebook",
+          "github_release_url": "https://github.com/docxology/template_eda_notebook/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/21086292",
+          "release_tag": "v1.0.0",
+          "record_title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-ebb8a6c96d0d",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20931964",
+      "title": "A Living Meta-Analysis of the Modafinil Literature",
+      "candidate_github_repo": "docxology/template_literature_meta_analysis",
+      "folder": "2026_LivingMetaAnalysis",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20931964",
+          "github_repo": "docxology/template_literature_meta_analysis",
+          "github_release_url": "https://github.com/docxology/template_literature_meta_analysis/releases/tag/v0.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/20931964",
+          "release_tag": "v0.1.0",
+          "record_title": "A Living Meta-Analysis of the Modafinil Literature",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-eeecc54d5a71",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21086548",
+      "title": "A Domain Language for Specifying Controlled Methods",
+      "candidate_github_repo": "docxology/template_methods_paper",
+      "folder": "2026_DomainLanguageSpecifying",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21086548",
+          "github_repo": "docxology/template_methods_paper",
+          "github_release_url": "https://github.com/docxology/template_methods_paper/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/21086548",
+          "release_tag": "v1.0.0",
+          "record_title": "A Domain Language for Specifying Controlled Methods",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-bee4c50eb051",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20533675",
+      "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+      "candidate_github_repo": "docxology/template_newspaper",
+      "folder": "2026_Triplicate",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20533675",
+          "github_repo": "docxology/template_newspaper",
+          "github_release_url": "https://github.com/docxology/template_newspaper/releases/tag/v1.0.2",
+          "zenodo_record_url": "https://zenodo.org/records/20533675",
+          "release_tag": "v1.0.2",
+          "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-87156817b818",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20417104",
+      "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+      "candidate_github_repo": "docxology/template_prose_project",
+      "folder": "2026_EditorialQualityAt",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20417104",
+          "github_repo": "docxology/template_prose_project",
+          "github_release_url": "https://github.com/docxology/template_prose_project/releases/tag/v0.4.2",
+          "zenodo_record_url": "https://zenodo.org/records/20417104",
+          "release_tag": "v0.4.2",
+          "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-79d76cf3bcb7",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20453879",
+      "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+      "candidate_github_repo": "docxology/template_sia",
+      "folder": "2026_SelfImprovementAgent",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20453879",
+          "github_repo": "docxology/template_sia",
+          "github_release_url": "https://github.com/docxology/template_sia/releases/tag/v0.1.2",
+          "zenodo_record_url": "https://zenodo.org/records/20453879",
+          "release_tag": "v0.1.2",
+          "record_title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-64c0369d917a",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21176000",
+      "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+      "candidate_github_repo": "docxology/template_storybook",
+      "folder": "2026_ShapeBetween",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21176000",
+          "github_repo": "docxology/template_storybook",
+          "github_release_url": "https://github.com/docxology/template_storybook/releases/tag/v0.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/21176000",
+          "release_tag": "v0.1.0",
+          "record_title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-c98b19b97a90",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20533125",
+      "title": "The Template Textbook",
+      "candidate_github_repo": "docxology/template_textbook",
+      "folder": "2026_TemplateTextbook",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20533125",
+          "github_repo": "docxology/template_textbook",
+          "github_release_url": "https://github.com/docxology/template_textbook/releases/tag/v0.1.2",
+          "zenodo_record_url": "https://zenodo.org/records/20533125",
+          "release_tag": "v0.1.2",
+          "record_title": "The Template Textbook",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-1411afa29e2e",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20533125",
+      "title": "The Template Textbook",
+      "candidate_github_repo": "docxology/template_textbook",
+      "folder": "2026_TemplateTextbook",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20533125",
+          "github_repo": "docxology/template_textbook",
+          "github_release_url": "https://github.com/docxology/template_textbook/releases/tag/v0.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/20533125",
+          "release_tag": "v0.1.0",
+          "record_title": "The Template Textbook",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-742d72ad1241",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20420556",
+      "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
+      "candidate_github_repo": "docxology/BeeStack",
+      "folder": "2026_BeeStack",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20420556",
+          "github_repo": "docxology/BeeStack",
+          "github_release_url": "https://github.com/docxology/BeeStack/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20420556",
+          "release_tag": "v1.0.0",
+          "record_title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-cc63c5ce8bdd",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20450880",
+      "title": "When do bugs see (infra)red?",
+      "candidate_github_repo": "docxology/cohereants",
+      "folder": "2026_WhenDoBugs",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20450880",
+          "github_repo": "docxology/cohereants",
+          "github_release_url": "https://github.com/docxology/cohereants/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20450880",
+          "release_tag": "v1.0.0",
+          "record_title": "When do bugs see (infra)red?",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-b87601a35368",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20482025",
+      "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
+      "candidate_github_repo": "docxology/grateful_data",
+      "folder": "2026_MusicNeverStopped",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20482025",
+          "github_repo": "docxology/grateful_data",
+          "github_release_url": "https://github.com/docxology/grateful_data/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20482025",
+          "release_tag": "v1.0.0",
+          "record_title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-5db730692bca",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20498699",
+      "title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
+      "candidate_github_repo": "docxology/ntqr_llm",
+      "folder": "2026_RecoveringLLMPersona",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20498699",
+          "github_repo": "docxology/ntqr_llm",
+          "github_release_url": "https://github.com/docxology/ntqr_llm/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20498699",
+          "release_tag": "v1.0.0",
+          "record_title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-65f647f60399",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20693216",
+      "title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
+      "candidate_github_repo": "docxology/democreate",
+      "folder": "2026_DemoCreate",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20693216",
+          "github_repo": "docxology/democreate",
+          "github_release_url": "https://github.com/docxology/democreate/releases/tag/v0.6.2",
+          "zenodo_record_url": "https://zenodo.org/records/20693216",
+          "release_tag": "v0.6.2",
+          "record_title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-60dd4cc2eafb",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20396328",
+      "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
+      "candidate_github_repo": "docxology/entofile",
+      "folder": "2026_ENTO",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20396328",
+          "github_repo": "docxology/entofile",
+          "github_release_url": "https://github.com/docxology/entofile/releases/tag/v0.4",
+          "zenodo_record_url": "https://zenodo.org/records/20396328",
+          "release_tag": "v0.4",
+          "record_title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-8b6311a2e1fc",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20705350",
+      "title": "COGANT: Deterministic Codebase-to-GNN Translation",
+      "candidate_github_repo": "ActiveInferenceInstitute/COGANT",
+      "folder": "2026_COGANT",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20705350",
+          "github_repo": "ActiveInferenceInstitute/COGANT",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/COGANT/releases/tag/v0.6.0",
+          "zenodo_record_url": "https://zenodo.org/records/20705350",
+          "release_tag": "v0.6.0",
+          "record_title": "COGANT: Deterministic Codebase-to-GNN Translation",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-42c2de71e6ba",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20732274",
+      "title": "AGEINT: Agentic Intelligence",
+      "candidate_github_repo": "docxology/AGEINT",
+      "folder": "2026_AGEINT",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20732274",
+          "github_repo": "docxology/AGEINT",
+          "github_release_url": "https://github.com/docxology/AGEINT/releases/tag/v0.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/20732274",
+          "release_tag": "v0.1.0",
+          "record_title": "AGEINT: Agentic Intelligence",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-6af6a0395b74",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20747834",
+      "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+      "candidate_github_repo": "ActiveInferenceInstitute/on_policy_distillation",
+      "folder": "2026_PolicyDistillationAs",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20747834",
+          "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2",
+          "zenodo_record_url": "https://zenodo.org/records/20747834",
+          "release_tag": "v1.0.2",
+          "record_title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-9a21ce5dd334",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20747834",
+      "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+      "candidate_github_repo": "ActiveInferenceInstitute/on_policy_distillation",
+      "folder": "2026_PolicyDistillationAs",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20747834",
+          "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.1",
+          "zenodo_record_url": "https://zenodo.org/records/20747834",
+          "release_tag": "v1.0.1",
+          "record_title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-06b866812388",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20747834",
+      "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+      "candidate_github_repo": "ActiveInferenceInstitute/on_policy_distillation",
+      "folder": "2026_PolicyDistillationAs",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20747834",
+          "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20747834",
+          "release_tag": "v1.0.0",
+          "record_title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-57d1731f8803",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20834846",
+      "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+      "candidate_github_repo": "docxology/realizing_emptiness",
+      "folder": "2026_RealizingEmptiness",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20834846",
+          "github_repo": "docxology/realizing_emptiness",
+          "github_release_url": "https://github.com/docxology/realizing_emptiness/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20834846",
+          "release_tag": "v1.0.0",
+          "record_title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-3ad26fe5b3f9",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21083779",
+      "title": "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation",
+      "candidate_github_repo": "docxology/ntqr_allotment",
+      "folder": "2026_SortitionUpstreamNTQR",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21083779",
+          "github_repo": "docxology/ntqr_allotment",
+          "github_release_url": "https://github.com/docxology/ntqr_allotment/releases/tag/v0.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/21083779",
+          "release_tag": "v0.1.0",
+          "record_title": "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-384655077a9b",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20417021",
+      "title": "Active Inference Multi-Track Exemplar",
+      "candidate_github_repo": "docxology/template_active_inference",
+      "folder": "2026_ActiveInferenceMulti",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20417021",
+          "github_repo": "docxology/template_active_inference",
+          "github_release_url": "https://github.com/docxology/template_active_inference/releases/tag/v0.3.2",
+          "zenodo_record_url": "https://zenodo.org/records/20417021",
+          "release_tag": "v0.3.2",
+          "record_title": "Active Inference Multi-Track Exemplar",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-c43efa5d8908",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20533669",
+      "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+      "candidate_github_repo": "docxology/template_autoscientists",
+      "folder": "2026_DeterministicTestbedSelf",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20533669",
+          "github_repo": "docxology/template_autoscientists",
+          "github_release_url": "https://github.com/docxology/template_autoscientists/releases/tag/v1.0.2",
+          "zenodo_record_url": "https://zenodo.org/records/20533669",
+          "release_tag": "v1.0.2",
+          "record_title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-e71cdd887ffa",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20417136",
+      "title": "Convergence Analysis of Gradient Descent Optimization",
+      "candidate_github_repo": "docxology/template_code_project",
+      "folder": "2026_ConvergenceAnalysisGradient",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20417136",
+          "github_repo": "docxology/template_code_project",
+          "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.5.2",
+          "zenodo_record_url": "https://zenodo.org/records/20417136",
+          "release_tag": "v2.5.2",
+          "record_title": "Convergence Analysis of Gradient Descent Optimization",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-9bbf174e0aad",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20786638",
+      "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+      "candidate_github_repo": "docxology/template_madlib",
+      "folder": "2026_TemplateMadlib",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20786638",
+          "github_repo": "docxology/template_madlib",
+          "github_release_url": "https://github.com/docxology/template_madlib/releases/tag/v0.1.1",
+          "zenodo_record_url": "https://zenodo.org/records/20786638",
+          "release_tag": "v0.1.1",
+          "record_title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-faf5706e5538",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20786638",
+      "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+      "candidate_github_repo": "docxology/template_madlib",
+      "folder": "2026_TemplateMadlib",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20786638",
+          "github_repo": "docxology/template_madlib",
+          "github_release_url": "https://github.com/docxology/template_madlib/releases/tag/v0.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/20786638",
+          "release_tag": "v0.1.0",
+          "record_title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-9ff77ec9da6c",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20419007",
+      "title": "A template/ approach to Reproducible Generative Research",
+      "candidate_github_repo": "docxology/template_template",
+      "folder": "2026_TemplateApproachReproducible",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20419007",
+          "github_repo": "docxology/template_template",
+          "github_release_url": "https://github.com/docxology/template_template/releases/tag/v1.0.9",
+          "zenodo_record_url": "https://zenodo.org/records/20419007",
+          "release_tag": "v1.0.9",
+          "record_title": "A template/ approach to Reproducible Generative Research",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-696c60e17f73",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21047573",
+      "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+      "candidate_github_repo": "docxology/blake",
+      "folder": "2026_MappingWilliamBlake",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21047573",
+          "github_repo": "docxology/blake",
+          "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/21047573",
+          "release_tag": "v0.1.0",
+          "record_title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-8be97dd75069",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21137276",
+      "title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
+      "candidate_github_repo": "docxology/EntoLaw",
+      "folder": "2026_EntomologicalLaw",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21137276",
+          "github_repo": "docxology/EntoLaw",
+          "github_release_url": "https://github.com/docxology/EntoLaw/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/21137276",
+          "release_tag": "v1.0.0",
+          "record_title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-cfa6e4c809a7",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21227869",
+      "title": "Autopoietic Project Generation",
+      "candidate_github_repo": "docxology/template",
+      "folder": "2026_AutopoieticProjectGeneration",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21227869",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v1.0.1",
+          "zenodo_record_url": "https://zenodo.org/records/21227869",
+          "release_tag": "v1.0.1",
+          "record_title": "Autopoietic Project Generation",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-b9716b2ad7e9",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21227869",
+      "title": "Autopoietic Project Generation",
+      "candidate_github_repo": "docxology/template_autopoiesis",
+      "folder": "2026_AutopoieticProjectGeneration",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21227869",
+          "github_repo": "docxology/template_autopoiesis",
+          "github_release_url": "https://github.com/docxology/template_autopoiesis/releases/tag/v1.0.1",
+          "zenodo_record_url": "https://zenodo.org/records/21227869",
+          "release_tag": "v1.0.1",
+          "record_title": "Autopoietic Project Generation",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-a759522fe3e3",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21281509",
+      "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+      "candidate_github_repo": "docxology/template-pitch-deck",
+      "folder": "2026_TemplatePitchDeck",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21281509",
+          "github_repo": "docxology/template-pitch-deck",
+          "github_release_url": "https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.2",
+          "zenodo_record_url": "https://zenodo.org/records/21281509",
+          "release_tag": "v1.0.2",
+          "record_title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-79bc38227830",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21281509",
+      "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+      "candidate_github_repo": "docxology/template-pitch-deck",
+      "folder": "2026_TemplatePitchDeck",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21281509",
+          "github_repo": "docxology/template-pitch-deck",
+          "github_release_url": "https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/21281509",
+          "release_tag": "v1.0.0",
+          "record_title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-302cc53b32cf",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21330636",
+      "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
+      "candidate_github_repo": "ActiveInferenceInstitute/active_fractal_rabbit",
+      "folder": "2026_ActiveFractalRabbit",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21330636",
+          "github_repo": "ActiveInferenceInstitute/active_fractal_rabbit",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit/releases/tag/v0.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/21330636",
+          "release_tag": "v0.2.0",
+          "record_title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-386d5b95eaa1",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21419693",
+      "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+      "candidate_github_repo": "docxology/DuckRabbit",
+      "folder": "2026_DuckRabbit",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21419693",
+          "github_repo": "docxology/DuckRabbit",
+          "github_release_url": "https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0",
+          "zenodo_record_url": "https://zenodo.org/records/21419693",
+          "release_tag": "v0.5.0",
+          "record_title": "DuckRabbit: Typed Multimodal Illusion Generator",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-d248d5ec4cf3",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21695160",
+      "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+      "candidate_github_repo": "ActiveInferenceInstitute/active_inference_power",
+      "folder": "2026_ActiveInferencePower",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21695160",
+          "github_repo": "ActiveInferenceInstitute/active_inference_power",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/active_inference_power/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/21695160",
+          "release_tag": "v1.0.0",
+          "record_title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-d3c6fc4b032a",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21750800",
+      "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+      "candidate_github_repo": "docxology/codomyrmex",
+      "folder": "2026_Codomyrmex",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_repo": "docxology/codomyrmex",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.3.0-paper",
+          "zenodo_record_url": "https://zenodo.org/records/21750800",
+          "release_tag": "v1.3.0-paper",
+          "record_title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-ef16ed13070c",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21843592",
+      "title": "PROJECT BOND — The Special-Agent Operations Compendium",
+      "candidate_github_repo": "docxology/bond",
+      "folder": "2026_PROJECTBONDSpecial",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21843592",
+          "github_repo": "docxology/bond",
+          "github_release_url": "https://github.com/docxology/bond/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/21843592",
+          "release_tag": "v1.0.0",
+          "record_title": "PROJECT BOND — The Special-Agent Operations Compendium",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-c917fd6bc920",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21983948",
+      "title": "docxplus — the Intelligent Document Container",
+      "candidate_github_repo": "docxology/docxplus",
+      "folder": "2026_DocxplusIntelligentDocument",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21983948",
+          "github_repo": "docxology/docxplus",
+          "github_release_url": "https://github.com/docxology/docxplus/releases/tag/v1.0.1",
+          "zenodo_record_url": "https://zenodo.org/records/21983948",
+          "release_tag": "v1.0.1",
+          "record_title": "docxplus — the Intelligent Document Container",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-d9dee99cf857",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.19695259",
+      "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+      "candidate_github_repo": "docxology/cognitive_case_diagrams",
+      "folder": "2026_CognitiveCaseDiagrams",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.19695259",
+          "github_repo": "docxology/cognitive_case_diagrams",
+          "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0",
+          "zenodo_record_url": "https://zenodo.org/records/19695259",
+          "release_tag": "v2.4.0",
+          "record_title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-5cdc9c8b18a3",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21513316",
+      "title": "CogSecSkills: Multiharness Agentic Skills for Cognitive Security",
+      "candidate_github_repo": "docxology/CogSecSkills",
+      "folder": "2026_CogSecSkills",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21513316",
+          "github_repo": "docxology/CogSecSkills",
+          "github_release_url": "https://github.com/docxology/CogSecSkills/releases/tag/v1.8.0",
+          "zenodo_record_url": "https://zenodo.org/records/21513316",
+          "release_tag": "v1.8.0",
+          "record_title": "CogSecSkills: Multiharness Agentic Skills for Cognitive Security",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-5e37c12da105",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.19699233",
+      "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+      "candidate_github_repo": "ActiveInferenceInstitute/fep_formal",
+      "folder": "2026_FEPLean",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.19699233",
+          "github_repo": "ActiveInferenceInstitute/fep_formal",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.6.0",
+          "zenodo_record_url": "https://zenodo.org/records/19699233",
+          "release_tag": "v1.6.0",
+          "record_title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-9b27dd9e5126",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.19699233",
+      "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+      "candidate_github_repo": "ActiveInferenceInstitute/fep_formal",
+      "folder": "2026_FEPLean",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.19699233",
+          "github_repo": "ActiveInferenceInstitute/fep_formal",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.5.0",
+          "zenodo_record_url": "https://zenodo.org/records/19699233",
+          "release_tag": "v1.5.0",
+          "record_title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-62b2d21447e4",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.19699233",
+      "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+      "candidate_github_repo": "ActiveInferenceInstitute/fep_formal",
+      "folder": "2026_FEPLean",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.19699233",
+          "github_repo": "ActiveInferenceInstitute/fep_formal",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/19699233",
+          "release_tag": "v1.1.0",
+          "record_title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-464f42a7c417",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.22663906",
+      "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+      "candidate_github_repo": "docxology/Skillarum",
+      "folder": "2026_Skillarum",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.22663906",
+          "github_repo": "docxology/Skillarum",
+          "github_release_url": "https://github.com/docxology/Skillarum/releases/tag/v0.3.1",
+          "zenodo_record_url": "https://zenodo.org/records/22663906",
+          "release_tag": "v0.3.1",
+          "record_title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-385edca013d0",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.22663906",
+      "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+      "candidate_github_repo": "docxology/Skillarum",
+      "folder": "2026_Skillarum",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.22663906",
+          "github_repo": "docxology/Skillarum",
+          "github_release_url": "https://github.com/docxology/Skillarum/releases/tag/v0.3.0",
+          "zenodo_record_url": "https://zenodo.org/records/22663906",
+          "release_tag": "v0.3.0",
+          "record_title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-7bbd03b1aebe",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.22663906",
+      "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+      "candidate_github_repo": "docxology/Skillarum",
+      "folder": "2026_Skillarum",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.22663906",
+          "github_repo": "docxology/Skillarum",
+          "github_release_url": "https://github.com/docxology/Skillarum/releases/tag/v0.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/22663906",
+          "release_tag": "v0.2.0",
+          "record_title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-9a26c9e9a64b",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.22816187",
+      "title": "daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation",
+      "candidate_github_repo": "docxology/daf-jev",
+      "folder": "2026_JevPractice",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.22816187",
+          "github_repo": "docxology/daf-jev",
+          "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.7.0",
+          "zenodo_record_url": "https://zenodo.org/records/22816187",
+          "release_tag": "v0.7.0",
+          "record_title": "daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-346d00cebd16",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.22816187",
+      "title": "daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation",
+      "candidate_github_repo": "docxology/daf-jev",
+      "folder": "2026_JevPractice",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.22816187",
+          "github_repo": "docxology/daf-jev",
+          "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.6.0",
+          "zenodo_record_url": "https://zenodo.org/records/22816187",
+          "release_tag": "v0.6.0",
+          "record_title": "daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-91dbf623d312",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.22816187",
+      "title": "daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation",
+      "candidate_github_repo": "docxology/daf-jev",
+      "folder": "2026_JevPractice",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.22816187",
+          "github_repo": "docxology/daf-jev",
+          "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.5.0",
+          "zenodo_record_url": "https://zenodo.org/records/22816187",
+          "release_tag": "v0.5.0",
+          "record_title": "daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-080e9525d2a3",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.22816187",
+      "title": "daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation",
+      "candidate_github_repo": "docxology/daf-jev",
+      "folder": "2026_JevPractice",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.22816187",
+          "github_repo": "docxology/daf-jev",
+          "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.4.1",
+          "zenodo_record_url": "https://zenodo.org/records/22816187",
+          "release_tag": "v0.4.1",
+          "record_title": "daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-6a69f8c0a305",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.22816187",
+      "title": "daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation",
+      "candidate_github_repo": "docxology/daf-jev",
+      "folder": "2026_JevPractice",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.22816187",
+          "github_repo": "docxology/daf-jev",
+          "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.4.0",
+          "zenodo_record_url": "https://zenodo.org/records/22816187",
+          "release_tag": "v0.4.0",
+          "record_title": "daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-0d7f99e7645f",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.19574117",
+      "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
+      "candidate_github_repo": "docxology/ento_linguistics",
+      "folder": "2026_EntoLinguistics",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.19574117",
+          "github_repo": "docxology/ento_linguistics",
+          "github_release_url": "https://github.com/docxology/ento_linguistics/releases/tag/v1.3.1",
+          "zenodo_record_url": "https://zenodo.org/records/19574117",
+          "release_tag": "v1.3.1",
+          "record_title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-9afd205134a2",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.19574117",
+      "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
+      "candidate_github_repo": "docxology/ento_linguistics",
+      "folder": "2026_EntoLinguistics",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.19574117",
+          "github_repo": "docxology/ento_linguistics",
+          "github_release_url": "https://github.com/docxology/ento_linguistics/releases/tag/v1.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/19574117",
+          "release_tag": "v1.2.0",
+          "record_title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-36aad37236db",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.19574117",
+      "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
+      "candidate_github_repo": "docxology/ento_linguistics",
+      "folder": "2026_EntoLinguistics",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.19574117",
+          "github_repo": "docxology/ento_linguistics",
+          "github_release_url": "https://github.com/docxology/ento_linguistics/releases/tag/v1.1.1",
+          "zenodo_record_url": "https://zenodo.org/records/19574117",
+          "release_tag": "v1.1.1",
+          "record_title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-be4f5a938520",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.23306200",
+      "title": "antropy: native multidimensional entropy and configurable complexity analysis",
+      "candidate_github_repo": "docxology/antropy",
+      "folder": "2026_Antropy",
+      "representation": "version-history-only",
+      "note": "The full-history scan rediscovered this pre-2026-10-12 release under an existing bibliography work. Its Zenodo record was already in the reviewed baseline. Retain it as version history; the refreshed sources contain no new archival record for this work, and no rollback or new work is warranted.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23306200",
+          "github_repo": "docxology/antropy",
+          "github_release_url": "https://github.com/docxology/antropy/releases/tag/v0.3.1",
+          "zenodo_record_url": "https://zenodo.org/records/23306200",
+          "release_tag": "v0.3.1",
+          "record_title": "antropy: native multidimensional entropy and configurable complexity analysis",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-81304532bd05",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20614908",
+      "title": "iTrace: verification-first webcam eye-movement analysis (corrected manuscript)",
+      "candidate_github_repo": "docxology/itrace",
+      "folder": "2026_ITrace",
+      "representation": "version-history-only",
+      "note": "The corrected manuscript explicitly postdates immutable package v0.5.0 and links source commit 310be17ace8ae61621afe01329356427a3e6c861. Its separately reviewed manuscript revision is represented by the existing work; this release pair must not collapse the manuscript version into the package version.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20614908",
+          "github_repo": "docxology/itrace",
+          "github_release_url": "https://github.com/docxology/itrace/releases/tag/v0.5.0",
+          "zenodo_record_url": "https://zenodo.org/records/20614908",
+          "release_tag": "v0.5.0",
+          "record_title": "iTrace: verification-first webcam eye-movement analysis (corrected manuscript)",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-1f39c5406f74",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20834846",
+      "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+      "candidate_github_repo": "docxology/realizing_emptiness",
+      "folder": "2026_RealizingEmptiness",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20834846",
+          "github_repo": "docxology/realizing_emptiness",
+          "github_release_url": "https://github.com/docxology/realizing_emptiness/releases/tag/v3.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20834846",
+          "release_tag": "v3.0.0",
+          "record_title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-6a7bcf0be14d",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20834846",
+      "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+      "candidate_github_repo": "docxology/realizing_emptiness",
+      "folder": "2026_RealizingEmptiness",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20834846",
+          "github_repo": "docxology/realizing_emptiness",
+          "github_release_url": "https://github.com/docxology/realizing_emptiness/releases/tag/v2.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20834846",
+          "release_tag": "v2.0.0",
+          "record_title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-8a3d12eb3ab5",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20834846",
+      "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+      "candidate_github_repo": "docxology/realizing_emptiness",
+      "folder": "2026_RealizingEmptiness",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20834846",
+          "github_repo": "docxology/realizing_emptiness",
+          "github_release_url": "https://github.com/docxology/realizing_emptiness/releases/tag/v1.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/20834846",
+          "release_tag": "v1.2.0",
+          "record_title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-f9f20395ab0a",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20834846",
+      "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+      "candidate_github_repo": "docxology/realizing_emptiness",
+      "folder": "2026_RealizingEmptiness",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20834846",
+          "github_repo": "docxology/realizing_emptiness",
+          "github_release_url": "https://github.com/docxology/realizing_emptiness/releases/tag/v1.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/20834846",
+          "release_tag": "v1.1.0",
+          "record_title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-f7461c5fc960",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.19699233",
+      "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+      "candidate_github_repo": "ActiveInferenceInstitute/fep_formal",
+      "folder": "2026_FEPLean",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.19699233",
+          "github_repo": "ActiveInferenceInstitute/fep_formal",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/19699233",
+          "release_tag": "v1.2.0",
+          "record_title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-294f2855f3ab",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.23196891",
+      "title": "fep_formal: Towards Lean 4 Formalization of the Free Energy Principle",
+      "candidate_github_repo": "ActiveInferenceInstitute/fep_formal",
+      "folder": "2026_FEPLean",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23196891",
+          "github_repo": "ActiveInferenceInstitute/fep_formal",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/23196891",
+          "release_tag": "v1.2.0",
+          "record_title": "fep_formal: Towards Lean 4 Formalization of the Free Energy Principle",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-01c0da80fb54",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.23196891",
+      "title": "fep_formal: Towards Lean 4 Formalization of the Free Energy Principle",
+      "candidate_github_repo": "ActiveInferenceInstitute/fep_formal",
+      "folder": "2026_FEPLean",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23196891",
+          "github_repo": "ActiveInferenceInstitute/fep_formal",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/23196891",
+          "release_tag": "v1.1.0",
+          "record_title": "fep_formal: Towards Lean 4 Formalization of the Free Energy Principle",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-2b532998e264",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.23196891",
+      "title": "fep_formal: Towards Lean 4 Formalization of the Free Energy Principle",
+      "candidate_github_repo": "ActiveInferenceInstitute/fep_formal",
+      "folder": "2026_FEPLean",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23196891",
+          "github_repo": "ActiveInferenceInstitute/fep_formal",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/23196891",
+          "release_tag": "v1.0.0",
+          "record_title": "fep_formal: Towards Lean 4 Formalization of the Free Energy Principle",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-ad9c9d07939b",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.19574117",
+      "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
+      "candidate_github_repo": "docxology/ento_linguistics",
+      "folder": "2026_EntoLinguistics",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.19574117",
+          "github_repo": "docxology/ento_linguistics",
+          "github_release_url": "https://github.com/docxology/ento_linguistics/releases/tag/v1.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/19574117",
+          "release_tag": "v1.1.0",
+          "record_title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-750fe8c64248",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.23321280",
+      "title": "Active Inference -- A Synthetic Overview",
+      "candidate_github_repo": "docxology/ActiveInferenceSynthetic",
+      "folder": "2026_ActiveInferenceSynthetic",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23321280",
+          "github_repo": "docxology/ActiveInferenceSynthetic",
+          "github_release_url": "https://github.com/docxology/ActiveInferenceSynthetic/releases/tag/synthetic-teaching-v0.6.0",
+          "zenodo_record_url": "https://zenodo.org/records/23321280",
+          "release_tag": "synthetic-teaching-v0.6.0",
+          "record_title": "Active Inference -- A Synthetic Overview",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-5cfb6c445950",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.23404028",
+      "title": "iTrace: verification-first webcam eye-movement analysis",
+      "candidate_github_repo": "docxology/itrace",
+      "folder": "2026_ITrace",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23404028",
+          "github_repo": "docxology/itrace",
+          "github_release_url": "https://github.com/docxology/itrace/releases/tag/v0.5.0",
+          "zenodo_record_url": "https://zenodo.org/records/23404028",
+          "release_tag": "v0.5.0",
+          "record_title": "iTrace: verification-first webcam eye-movement analysis",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-1276a47f7471",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.23404028",
+      "title": "iTrace: verification-first webcam eye-movement analysis",
+      "candidate_github_repo": "docxology/itrace",
+      "folder": "2026_ITrace",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23404028",
+          "github_repo": "docxology/itrace",
+          "github_release_url": "https://github.com/docxology/itrace/releases/tag/v0.4.1",
+          "zenodo_record_url": "https://zenodo.org/records/23404028",
+          "release_tag": "v0.4.1",
+          "record_title": "iTrace: verification-first webcam eye-movement analysis",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-ff5dedabe864",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.23380253",
+      "title": "Realizing Emptiness",
+      "candidate_github_repo": "docxology/realizing_emptiness",
+      "folder": "2026_RealizingEmptiness",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23380253",
+          "github_repo": "docxology/realizing_emptiness",
+          "github_release_url": "https://github.com/docxology/realizing_emptiness/releases/tag/v3.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/23380253",
+          "release_tag": "v3.0.0",
+          "record_title": "Realizing Emptiness",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-a4bad1cbd64f",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.23380253",
+      "title": "Realizing Emptiness",
+      "candidate_github_repo": "docxology/realizing_emptiness",
+      "folder": "2026_RealizingEmptiness",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23380253",
+          "github_repo": "docxology/realizing_emptiness",
+          "github_release_url": "https://github.com/docxology/realizing_emptiness/releases/tag/v2.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/23380253",
+          "release_tag": "v2.0.0",
+          "record_title": "Realizing Emptiness",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-6ee5c804bb5b",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.23380253",
+      "title": "Realizing Emptiness",
+      "candidate_github_repo": "docxology/realizing_emptiness",
+      "folder": "2026_RealizingEmptiness",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23380253",
+          "github_repo": "docxology/realizing_emptiness",
+          "github_release_url": "https://github.com/docxology/realizing_emptiness/releases/tag/v1.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/23380253",
+          "release_tag": "v1.2.0",
+          "record_title": "Realizing Emptiness",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-2026f80578b4",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.23380253",
+      "title": "Realizing Emptiness",
+      "candidate_github_repo": "docxology/realizing_emptiness",
+      "folder": "2026_RealizingEmptiness",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23380253",
+          "github_repo": "docxology/realizing_emptiness",
+          "github_release_url": "https://github.com/docxology/realizing_emptiness/releases/tag/v1.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/23380253",
+          "release_tag": "v1.1.0",
+          "record_title": "Realizing Emptiness",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-fbd236de77aa",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.23380253",
+      "title": "Realizing Emptiness",
+      "candidate_github_repo": "docxology/realizing_emptiness",
+      "folder": "2026_RealizingEmptiness",
+      "representation": "version-history-only",
+      "note": "The record and release belong to an already represented repository/work. Retain this candidate as version context only; do not create a duplicate work, roll back current metadata, or assert that an older release contains the current manuscript bytes.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23380253",
+          "github_repo": "docxology/realizing_emptiness",
+          "github_release_url": "https://github.com/docxology/realizing_emptiness/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/23380253",
+          "release_tag": "v1.0.0",
+          "record_title": "Realizing Emptiness",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-16-fb514c46f9a6",
+      "decision": "superseded",
+      "decided_at": "2026-10-17T00:13:06Z",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.20614908",
+      "title": "iTrace: verification-first webcam eye-movement analysis (corrected manuscript)",
+      "candidate_github_repo": "docxology/itrace",
+      "folder": "2026_ITrace",
+      "representation": "version-history-only",
+      "note": "The corrected manuscript explicitly postdates immutable package v0.5.0 and links source commit 310be17ace8ae61621afe01329356427a3e6c861. Its separately reviewed manuscript revision is represented by the existing work; this release pair must not collapse the manuscript version into the package version.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20614908",
+          "github_repo": "docxology/itrace",
+          "github_release_url": "https://github.com/docxology/itrace/releases/tag/v0.4.1",
+          "zenodo_record_url": "https://zenodo.org/records/20614908",
+          "release_tag": "v0.4.1",
+          "record_title": "iTrace: verification-first webcam eye-movement analysis (corrected manuscript)",
+          "source_report": "reports/paired_publications_2026-10-16.json"
+        }
+      ]
     }
   ]
 }

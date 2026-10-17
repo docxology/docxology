@@ -202,6 +202,28 @@ def refresh_channel(
             ),
         )
 
+    if not fast:
+        date_keys = ("upload_date", "year", "month", "day")
+        exact_dates = {
+            video["id"]: {key: video[key] for key in date_keys if video.get(key)}
+            for tab in fetch.tabs if tab.mode == "full"
+            for video in tab.videos
+        }
+        approximate_ids = {
+            video["id"]
+            for tab in fetch.tabs if tab.mode == "approximate"
+            for video in tab.videos
+        }
+        cached_dates = {
+            video["id"]: {key: video[key] for key in date_keys if video.get(key)}
+            for video in existing_videos if isinstance(video, dict) and video.get("id")
+        }
+        videos = [
+            {**video, **exact_dates.get(video["id"],
+                cached_dates.get(video["id"], {}) if video["id"] in approximate_ids else {})}
+            for video in videos
+        ]
+
     try:
         saver(videos, channel_url, channel_id, output_path)
     except Exception as exc:  # pragma: no cover - filesystem boundary

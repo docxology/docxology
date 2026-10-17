@@ -1,0 +1,58 @@
+{
+  "version": "1.0.0",
+  "tag": "v1.0.0",
+  "commit": "eadfa2f030ea068df7ebdddc341829f20b85c713",
+  "reviewed_checkpoint": "58b28717afcb37080a47571294650f01281cd9bc",
+  "doi": "10.5281/zenodo.23397453",
+  "repository": "https://github.com/docxology/active_inference_meta_pragmatic",
+  "template_revision": "192c8bda16c08d06ae2fee4eac71d56901d3ad22",
+  "gnn_revision": "46459949944e3217f8a6a804d4ff8c52829ef275",
+  "validation": {
+    "tests_per_python": 629,
+    "python_versions": [
+      "3.11",
+      "3.12",
+      "3.13"
+    ],
+    "combined_statement_branch_coverage_percent": 94.53,
+    "pdf_pages": 40,
+    "references": 53,
+    "numbered_figures": 12,
+    "cover_images": 1,
+    "mathematical_expressions": 155,
+    "source_digests": 164,
+    "output_digests": 392,
+    "staged_blobs_verified": 556,
+    "anonymous_remote_verification": "Recorded after publication in repository documentation; not inferred here"
+  },
+  "assets": {
+    "RELEASE_NOTES.md": {
+      "sha256": "467d1d9c374024bc46f986ba8f4725236c7b3b3ea623c5bc8354dbb57547aa01",
+      "bytes": 2582
+    },
+    "active_inference_meta_pragmatic-1.0.0-history.bundle": {
+      "sha256": "07d051917431feebc9eae1297433f06a3ae1e3e420f4d1dd99f2e34e991af9cb",
+      "bytes": 16626445
+    },
+    "active_inference_meta_pragmatic-1.0.0-py3-none-any.whl": {
+      "sha256": "c0390fb4071fea6d348af3c841f03c951bb5af9c6f58f68251208027fc3b145d",
+      "bytes": 130578
+    },
+    "active_inference_meta_pragmatic-1.0.0-source.zip": {
+      "sha256": "007e7f52f98d2908ff181df67a416bb10ad37d6b5fe44683f394cf46e54f3b8a",
+      "bytes": 24999027
+    },
+    "active_inference_meta_pragmatic-1.0.0-web.zip": {
+      "sha256": "4b61b23293e28745e4576b78df6fa693af35aa8584282d9d7a51a1acfdce7457",
+      "bytes": 9843341
+    },
+    "active_inference_meta_pragmatic-1.0.0.pdf": {
+      "sha256": "36495911a7b249d52145d8feaec5d82b846b5d3016c66a43a951c16a5ab2a9a7",
+      "bytes": 5015269
+    },
+    "active_inference_meta_pragmatic-1.0.0.tar.gz": {
+      "sha256": "118860b94777e951e2538589804a498d8a0af511ba5fa52592c5b0e74b567d6e",
+      "bytes": 2607590
+    }
+  }
+}

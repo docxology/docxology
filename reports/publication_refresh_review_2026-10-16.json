@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-17T00:13:03Z",
+  "reviewed_by": "Codex",
+  "sources": [
+    "reports/paired_publications_2026-10-16.json",
+    "reports/public_source_snapshot_2026-10-16.json",
+    "reports/public_source_inventory_2026-10-16.json"
+  ],
+  "decisions": [
+    {
+      "work": "Active Inference as a Meta-Pragmatic Framework",
+      "decision": "add",
+      "citation_doi": "10.5281/zenodo.23397452",
+      "artifact_doi": "10.5281/zenodo.23397453",
+      "reason": "New preprint and matching GitHub v1.0.0; bounded synthetic evidence, not biological/social validation."
+    },
+    {
+      "work": "Active Inference -- A Synthetic Overview",
+      "decision": "update_existing",
+      "citation_doi": "10.5281/zenodo.23321280",
+      "artifact_doi": "10.5281/zenodo.23396307",
+      "reason": "Distribution 0.6.1 adds the archived teaching package; scientific package remains 0.5.0. Preserve both authors and use the revised manuscript, not companion slides, as primary PDF."
+    },
+    {
+      "work": "iTrace",
+      "decision": "update_existing",
+      "citation_doi": "10.5281/zenodo.20614908",
+      "artifact_doi": "10.5281/zenodo.23419306",
+      "source_commit": "310be17ace8ae61621afe01329356427a3e6c861",
+      "reason": "Corrected manuscript postdates immutable package v0.5.0; keep manuscript and package versions distinct. Refreshed methods and findings quote the corrected abstract/architecture and are checked against the new extraction. No new participant or reference-device data are claimed."
+    },
+    {
+      "work": "iTrace software archive",
+      "decision": "software_supplement",
+      "citation_doi": "10.5281/zenodo.23404028",
+      "artifact_doi": "10.5281/zenodo.23404029",
+      "reason": "GitHub v0.5.0 source archive supplements the existing iTrace work; do not add a duplicate bibliography row."
+    },
+    {
+      "work": "Realizing Emptiness",
+      "decision": "software_supplement",
+      "citation_doi": "10.5281/zenodo.23380253",
+      "artifact_doi": "10.5281/zenodo.23383319",
+      "reason": "Software v3.0.0 supplements the existing paper under 10.5281/zenodo.20834846. Keep the earlier paper archive explicit; software validation does not revise the archived paper or establish clinical/neural/physical quantum claims."
+    },
+    {
+      "work": "opentir",
+      "decision": "software_update",
+      "source_url": "https://github.com/docxology/opentir/releases/tag/v1.1.0",
+      "reason": "Refresh the curated description from the release notes; no matching archival DOI observed. Preserve local-fixture versus live-discovery validation boundaries."
+    },
+    {
+      "work": "YouTube channel catalogs",
+      "decision": "refresh_reviewed_caches",
+      "source": "reports/youtube_refresh_review_2026-10-16.json",
+      "reason": "Complete fast fetches retain 420 personal videos and add one newly discovered published institute video for 766 institute records. Prior date fields remain intact; the new video has separately verified metadata."
+    }
+  ],
+  "limitations": [
+    "ResearchGate, SciProfiles and PhilPeople remain inaccessible in the current paginated inventory.",
+    "Scholar metrics retain their prior direct authenticated observation; no new authenticated observation was made.",
+    "Ambiguous historical release pairs remain explicit review items unless their exact identity has a durable decision.",
+    "No new Zenodo deposits, tags or GitHub releases are published by this index refresh.",
+    "Human visual release attestation remains pending under DOC-002.",
+    "Flickr retains its prior reviewed export because the approved API key is unavailable in this environment. YouTube was refreshed with prior dates retained and new-video metadata verified separately."
+  ],
+  "latest_bounded_recheck": {
+    "checked_at": "2026-10-17T08:23:59.568582+00:00",
+    "report": "reports/publication_freshness_recheck_2026-10-17.json",
+    "new_releases": 0,
+    "new_records": 0,
+    "scope": "Bounded latest-five releases for changed repositories and newest-ten records per identity query; supplements the earlier full-history scan."
+  }
+}

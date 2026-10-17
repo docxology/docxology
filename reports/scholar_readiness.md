@@ -6,14 +6,14 @@ Searchability, scholarly content, complete author-written abstracts/full text, a
 Source: [Google Scholar inclusion guidance](https://scholar.google.com/intl/en/scholar/inclusion.html).
 See [the placement policy](../docs/seo/scholar-inclusion.md) and [machine-readable results](../data/scholar-readiness.json).
 
-Audited works: 222. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
+Audited works: 223. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 
 | Local blocker | Works |
 | --- | ---: |
 | missing_citation_author | 10 |
 | no_selected_local_pdf | 25 |
-| pdf_directory_differs_from_abstract | 197 |
-| pdf_exceeds_byte_limit | 41 |
+| pdf_directory_differs_from_abstract | 198 |
+| pdf_exceeds_byte_limit | 42 |
 
 ## Work-level findings
 
@@ -180,7 +180,7 @@ Audited works: 222. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum](../works/Friedman2024CommentsSubmittedByBlockScience162.html) | — | no_selected_local_pdf |
 | [Osteopathy and the Variable Variability of Health](../works/Friedman2017OsteopathyVariableVariabilityHealth163.html) | — | missing_citation_author, no_selected_local_pdf |
 | [Cells, Mechanobiology, and Osteopathy](../works/Friedman2016CellsMechanobiologyOsteopathy164.html) | — | missing_citation_author, no_selected_local_pdf |
-| [iTrace: verification-first webcam eye-movement analysis](../works/Friedman2026ITraceVerificationFirstWebcam165.html) | 5324090 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
+| [iTrace: verification-first webcam eye-movement analysis](../works/Friedman2026ITraceVerificationFirstWebcam165.html) | 5732341 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [DemoCreate: Declarative Audio-Visual Demo Generation for Software](../works/Friedman2026DemoCreateDeclarativeAudioVisual166.html) | 1246461 | pdf_directory_differs_from_abstract |
 | [ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data](../works/Friedman2026ENTOENcryptedTypedOmnitrack167.html) | 3481755 | pdf_directory_differs_from_abstract |
 | [GeneralizedNotationNotation (GNN)](../works/Friedman2026GeneralizedNotationNotationGNN168.html) | 1431074 | pdf_directory_differs_from_abstract |
@@ -239,5 +239,6 @@ Audited works: 222. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [The Violet Line: A Consent Ledger of Affected Parties](../works/Friedman2026VioletLineConsentLedger222.html) | 93857 | pdf_directory_differs_from_abstract |
 | [The Silver Line: A Memory-and-Succession Instrument](../works/Friedman2026SilverLineMemorySuccession223.html) | 83420 | pdf_directory_differs_from_abstract |
 | [Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference](../works/Friedman2026CoordinatingFieldCaseEcosystem224.html) | 1071578 | pdf_directory_differs_from_abstract |
-| [Active Inference -- A Synthetic Overview](../works/Friedman2026ActiveInferenceSyntheticOverview225.html) | 3356707 | pdf_directory_differs_from_abstract |
+| [Active Inference -- A Synthetic Overview](../works/Friedman2026ActiveInferenceSyntheticOverview225.html) | 3776345 | pdf_directory_differs_from_abstract |
 | [antropy: native multidimensional entropy and configurable complexity analysis](../works/Friedman2026AntropyNativeMultidimensionalEntropy226.html) | 1817938 | pdf_directory_differs_from_abstract |
+| [Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision](../works/Friedman2026ActiveInferenceAsMeta227.html) | 5015269 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |

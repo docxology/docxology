@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-16T21:45:35Z",
+  "reviews": [
+    {
+      "repository": "docxology/active_inference_meta_pragmatic",
+      "source_commit": "d692cedcb5dbbd8846c9a98c204677372ea39ce7",
+      "source_url": "https://github.com/docxology/active_inference_meta_pragmatic/blob/d692cedcb5dbbd8846c9a98c204677372ea39ce7/README.md",
+      "source_sha256": "edc8f54b099c80ce4305ace45ed153094093f90499e08f00ebab8b26cf646c12",
+      "decision": "catalogue",
+      "reviewed_by": "Codex",
+      "validation_scope": "Commit-pinned public README, repository metadata and release/archive metadata reviewed; source repository runtime tests not performed.",
+      "rationale": "Original research software with an archived methods manuscript; preserve the synthetic-study limits."
+    },
+    {
+      "repository": "docxology/ActiveInferenceSynthetic",
+      "source_commit": "814de63af6231288dcd4c05d01da75179670b811",
+      "source_url": "https://github.com/docxology/ActiveInferenceSynthetic/blob/814de63af6231288dcd4c05d01da75179670b811/.github/README.md",
+      "source_sha256": "368586daadfedc0b5a80a16049063b712f9f623c66e652d3f95e4d3e7de39eea",
+      "decision": "catalogue",
+      "reviewed_by": "Codex",
+      "validation_scope": "Commit-pinned public README, repository metadata and release/archive metadata reviewed; source repository runtime tests not performed.",
+      "rationale": "Public teaching implementation paired with an existing bibliography work; preserve all authors and distinguish distribution version from scientific package version."
+    }
+  ]
+}
