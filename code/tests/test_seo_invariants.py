@@ -129,7 +129,7 @@ def test_social_meta_flaggs_missing_twitter_card(tmp_path):
 def test_work_descriptions_flag_gt160_chars(tmp_path):
     (tmp_path / "works").mkdir()
     (tmp_path / "works" / "a.html").write_text(
-        '<meta name="description" content="' + "x" * 200 + '">',
+        '<head><meta name="description" content="' + "x" * 200 + '"></head>',
         encoding="utf-8",
     )
     errors = check_work_descriptions(tmp_path)
@@ -201,6 +201,68 @@ def test_page_cache_serves_repeat_reads_but_not_a_rewritten_file(tmp_path):
     replacement.write_text("third body!", encoding="utf-8")
     replacement.replace(page)
     assert seo_invariants._read(page) == "third body!"
+
+
+def test_seo_metadata_reads_real_head_independent_of_attribute_format():
+    page = '''<html><head>
+      <!-- <link rel="canonical" href="https://wrong.example/"> -->
+      <template><meta name="robots" content="noindex"></template>
+      <LINK HREF='https://danielarifriedman.com/?a=1&amp;b=2' REL='canonical'>
+      <META CONTENT='index, follow' NAME='ROBOTS'>
+      <meta content='Methods &amp; Evidence' name='description'>
+      <meta content='Methods &amp; Evidence' property='og:title'>
+      </head><body><meta name="robots" content="noindex">
+      <link rel="canonical" href="https://wrong.example/"></body></html>'''
+    assert seo_invariants._canonical(page) == 'https://danielarifriedman.com/?a=1&b=2'
+    assert seo_invariants._meta_robots(page) == 'index, follow'
+    assert seo_invariants._meta_description(page) == 'Methods & Evidence'
+    assert seo_invariants._property_meta(page, 'og:title') == 'Methods & Evidence'
+
+
+def test_seo_metadata_rejects_duplicate_elements_and_ignores_inert_spoofs():
+    assert seo_invariants._canonical('''<head>
+      <link rel="canonical" href="https://danielarifriedman.com/">
+      <link rel="canonical" href="https://other.example/">
+      </head>''') is None
+    assert seo_invariants._meta_robots('''<head>
+      <meta name="robots" content="index, follow">
+      <meta name="robots" content="noindex">
+      </head>''') is None
+    assert seo_invariants._canonical('''<head>
+      <script>const example = '<link rel="canonical" href="https://fake.example/">';</script>
+      </head><body><head><link rel="canonical" href="https://fake.example/"></head>''') is None
+    assert seo_invariants._meta_description('''<head><meta name="description"
+      content="first" content="second"></head>''') == "first"
+
+
+def test_description_entities_are_decoded_exactly_once(tmp_path):
+    works = tmp_path / 'works'
+    works.mkdir()
+    # A visible literal entity is five characters; decoding twice hides a
+    # description which actually exceeds the rendered-character limit.
+    (works / 'Example.html').write_text(
+        '<head><meta name="description" content="' + 'x' * 156 + '&amp;amp;"></head>'
+    )
+    assert check_work_descriptions(tmp_path)
+
+
+def test_canonical_gate_covers_all_public_families_and_ignores_dependency_html(tmp_path):
+    video = tmp_path / 'videos/one.html'
+    video.parent.mkdir()
+    video.write_text('''<head>
+      <link rel="canonical" href="https://danielarifriedman.com/videos/one.html">
+      <link rel="canonical" href="https://danielarifriedman.com/videos/two.html">
+      </head>''')
+    dependency = tmp_path / '.venv/diagnostic.html'
+    dependency.parent.mkdir()
+    dependency.write_text('<html>not a public page</html>')
+    assert seo_invariants.check_head_canonicals(tmp_path) == [
+        'videos/one.html: expected exactly one nonempty head canonical'
+    ]
+    video.write_text('''<head><link rel="canonical" href="https://www.danielarifriedman.com/videos/one.html?q=1">
+      <meta name="robots" content="index"><meta name="robots" content="noindex"></head>''')
+    errors = seo_invariants.check_head_canonicals(tmp_path)
+    assert len(errors) == 2 and 'apex HTTPS' in errors[0] and 'duplicate head robots' in errors[1]
 
 
 def test_one_seo_pass_reads_each_page_once_across_the_eight_checks(monkeypatch):

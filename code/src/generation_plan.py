@@ -13,6 +13,7 @@ import hashlib
 import json
 import os
 import re
+import subprocess
 import tempfile
 from dataclasses import dataclass
 from pathlib import Path
@@ -38,6 +39,9 @@ class GenerationStep:
     description: str
     inputs: tuple[str, ...] = ()
     inputs_exclude: tuple[str, ...] = ()
+    # Source-report discovery reads Git index membership as well as file bytes.
+    # This dependency is separate from content and from the current commit SHA.
+    index_inputs: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -111,7 +115,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # Paper-folder presence (iterdir over papers/) is intentionally undeclared:
     # a new folder always arrives with bibliography/metadata edits, which this
     # input set already covers.
-    GenerationStep("agent-data", "export_agent_data.py", (), ("--check",), "Agent data exports", ("pages/SOFTWARE.md", "pages/BIBLIOGRAPHY.md", "data/works.json", "data/scholar-snapshot.json", "data/current-counts.json", "reports/public_source_snapshot_*.json")),
+    GenerationStep("agent-data", "export_agent_data.py", (), ("--check",), "Agent data exports", ("pages/SOFTWARE.md", "pages/BIBLIOGRAPHY.md", "data/works.json", "data/scholar-snapshot.json", "data/current-counts.json", "reports/public_source_snapshot_*.json"), index_inputs=("reports/**",)),
     GenerationStep("resume", "build_resume.py", ("--all",), ("--check",), "Resume/CV exports", ("resume/source.json", "data/works.json", "data/software.json", "data/scholar-snapshot.json", "data/claims.json", "data/github-repositories.json")),
     # DERIVED (always-run): reads data/work-enrichment.json, which work-pages
     # rewrites later in the same pass (documented fixed-point two-pass
@@ -187,14 +191,14 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("seo-security", "deploy_seo_security.py", (), ("--check",), "Shared public head/security normalization"),
     GenerationStep("exports-page", "build_exports_page.py", (), ("--check",), "Exports hub", ("data/works.json", "data/current-counts.json")),
     GenerationStep("updates-page", "build_updates_page.py", (), ("--check",), "Updates page", ("CHANGELOG.md", "pages/THINKING_LOG.md")),
-    GenerationStep("evidence-page", "build_evidence_page.py", (), ("--check",), "Evidence page", ("data/claims.json", "data/current-counts.json", "reports/public_source_snapshot_*.json", "reports/public_source_inventory_*.json")),
+    GenerationStep("evidence-page", "build_evidence_page.py", (), ("--check",), "Evidence page", ("data/claims.json", "data/current-counts.json", "reports/public_source_snapshot_*.json", "reports/public_source_inventory_*.json"), index_inputs=("reports/**",)),
     GenerationStep("reproducibility", "build_reproducibility_ledger.py", (), ("--check",), "Reproducibility ledger", ("data/works.json", "data/software.json")),
     # DERIVED (always-run): idempotent in-place Agent Map nav patch whose
     # scan scope equals its write scope (every public root HTML page).
     GenerationStep("agent-navigation", "ensure_agent_navigation.py", (), ("--check",), "Visible Agent Map navigation"),
     # Hash final work HTML only after all shared head/navigation normalizers.
     GenerationStep("scholar-readiness", "build_scholar_readiness.py", (), ("--check",), "Offline Scholar prerequisite audit", ("data/works.json", "works/*.html", "papers/*/metadata.json", "papers/*/full_text.md", "papers/*/*.[pP][dD][fF]", ".gitignore")),
-    GenerationStep("reconciliation", "build_reconciliation_report.py", (), ("--check",), "Reconciliation report", ("data/works.json", "data/software.json", "data/claims.json", "reports/public_source_snapshot_*.json")),
+    GenerationStep("reconciliation", "build_reconciliation_report.py", (), ("--check",), "Reconciliation report", ("data/works.json", "data/software.json", "data/claims.json", "reports/public_source_snapshot_*.json"), index_inputs=("reports/**",)),
     GenerationStep("asset-audit-first", "audit_assets.py", (), ("--check",), "Asset-size report", ASSET_AUDIT_INPUTS, ASSET_AUDIT_INPUTS_EXCLUDE),
     GenerationStep("accessibility-first", "accessibility_audit.py", (), ("--check",), "Static accessibility report", ("**/*.html", "code/orchestrators/deploy_seo_security.py")),
     # Renders the DataCatalog payload from dataset counts, the per-paper
@@ -204,10 +208,9 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # GENERATED.md, the four tail manifests, and the dated asset_size /
     # pages_artifact_growth / public_source_review receipts). The report
     # families are declared for path resolution; because pointer resolution
-    # is git-tracked-filtered while fingerprints are content-only, a receipt
-    # committed after the last catalog run needs the post-commit pointer
-    # re-render or --force (publication-sync.md, discovery-pointer bullet).
-    GenerationStep("catalog", "build_catalog.py", (), ("--check",), "Public data catalog", ("data/works.json", "data/software.json", "data/videos.json", "data/scholar-readiness.json", "papers/*/full_text.md", "papers/*/images/*", "reports/public_source_inventory_*.json", "reports/public_source_snapshot_*.json", "reports/external_links_[0-9]*.json", "reports/external_links_triage_*.json", "reports/asset_size_*.json", "reports/live_site_verification_*.json", "reports/browser-smoke/*/manifest.json", "reports/browser-qa/*/manifest.json")),
+    # also depends on Git index membership; index_inputs invalidates a cached
+    # render when an existing on-disk receipt is staged or untracked.
+    GenerationStep("catalog", "build_catalog.py", (), ("--check",), "Public data catalog", ("data/works.json", "data/software.json", "data/videos.json", "data/scholar-readiness.json", "papers/*/full_text.md", "papers/*/images/*", "reports/public_source_inventory_*.json", "reports/public_source_snapshot_*.json", "reports/external_links_[0-9]*.json", "reports/external_links_triage_*.json", "reports/asset_size_*.json", "reports/live_site_verification_*.json", "reports/browser-smoke/*/manifest.json", "reports/browser-qa/*/manifest.json"), index_inputs=("reports/**",)),
     GenerationStep("asset-audit-final", "audit_assets.py", (), ("--check",), "Final asset-size report after catalog", ASSET_AUDIT_INPUTS, ASSET_AUDIT_INPUTS_EXCLUDE),
     GenerationStep("accessibility-final", "accessibility_audit.py", (), ("--check",), "Final accessibility report after catalog", ("**/*.html", "code/orchestrators/deploy_seo_security.py")),
     # DERIVED (always-run): in-place patcher (same class as
@@ -219,10 +222,9 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("github-readme", "build_github_readme.py", (), ("--check",), "GitHub-rendered README mirror", ("README.md",)),
     # Renders the site index from the dataset exports, per-paper extraction
     # presence/counts, and latest-report URL resolution. Outputs
-    GenerationStep("search-index", "build_search_index.py", (), ("--check",), "Site search index", ("data/works.json", "data/work-enrichment.json", "data/artworks.json", "data/software.json", "data/github-repositories.json", "data/videos.json", "data/people.json", "data/organizations.json", "data/claims.json", "data/resume.json", "papers/*/full_text.md", "papers/*/images/*", "reports/reconciliation_*.md", "reports/public_source_inventory_*.json", "reports/accessibility_static_*.json", "reports/external_links_[0-9]*.json", "reports/external_links_triage_*.md", "reports/asset_size_*.json", "reports/live_site_verification_*.json", "reports/visual-qa/*/manifest.json", "reports/browser-smoke/*/manifest.json")),
+    GenerationStep("search-index", "build_search_index.py", (), ("--check",), "Site search index", ("data/works.json", "data/work-enrichment.json", "data/artworks.json", "data/software.json", "data/github-repositories.json", "data/videos.json", "data/people.json", "data/organizations.json", "data/claims.json", "data/resume.json", "papers/*/full_text.md", "papers/*/images/*", "reports/reconciliation_*.md", "reports/public_source_inventory_*.json", "reports/accessibility_static_*.json", "reports/external_links_[0-9]*.json", "reports/external_links_triage_*.md", "reports/asset_size_*.json", "reports/live_site_verification_*.json", "reports/visual-qa/*/manifest.json", "reports/browser-smoke/*/manifest.json"), index_inputs=("reports/**",)),
     # PAYLOAD: release_controls.is_control_path is False for all of them.
-    # Pointer families carry the same git-trackedness boundary noted on the
-    # catalog step.
+    # Pointer families carry the same index-membership dependency as catalog.
     GenerationStep("feed", "generate_feed.py", (), ("--check",), "RSS feed", ("data/works.json", "data/site-updates.json")),
     GenerationStep("domain-feeds", "build_domain_feeds.py", (), ("--check",), "Per-domain RSS feeds", ("data/works.json", "data/videos.json", "code/orchestrators/build_domain_pages.py")),
     # DERIVED (always-run): <lastmod> derives from git commit dates, which no
@@ -239,7 +241,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # DERIVED (always-run): renders GENERATED.md + data/generated-manifest.json
     # from the in-script ARTIFACTS/UTILITIES tables; consumes no repo files.
     GenerationStep("generated-manifest-first", "build_generated_manifest.py", (), ("--check",), "Generated artifact matrix before agent index"),
-    GenerationStep("agent-index", "build_agent_index.py", (), ("--check",), "Agent route manifest", ("data/work-identifiers.json", "data/current-counts.json", "data/artworks.json", "data/artworks-index.json", "data/videos.json", "data/videos-index.json", "data/works.json", "data/software.json", "data/github-repositories.json", "data/claims.json", "data/scholar-verification-receipt.json", "search-index.json", "data/coverage-exceptions.json", "data/repository-classification.json", "data/people.json", "data/organizations.json", "data/work-enrichment.json", "data/catalog.json", "data/reconciliation.json", "data/reproducibility.json", "data/generated-manifest.json", "data/pages-artifact-manifest.json", "reports/live_site_verification_*.json")),
+    GenerationStep("agent-index", "build_agent_index.py", (), ("--check",), "Agent route manifest", ("data/work-identifiers.json", "data/current-counts.json", "data/artworks.json", "data/artworks-index.json", "data/videos.json", "data/videos-index.json", "data/works.json", "data/software.json", "data/github-repositories.json", "data/claims.json", "data/scholar-verification-receipt.json", "search-index.json", "data/coverage-exceptions.json", "data/repository-classification.json", "data/people.json", "data/organizations.json", "data/work-enrichment.json", "data/catalog.json", "data/reconciliation.json", "data/reproducibility.json", "data/generated-manifest.json", "data/pages-artifact-manifest.json", "reports/live_site_verification_*.json"), index_inputs=("reports/**",)),
     # DERIVED (always-run): the envelope binds git deployment state (source
     # commit, worktree-vs-deployed diff) and generator-script hashes that no
     # content fingerprint captures; skipping could mint a stale-looking
@@ -516,7 +518,25 @@ def step_input_fingerprint(
     repo_root: Path = REPO_ROOT,
 ) -> str | None:
     """Hash the same complete source contract for recording and skipping."""
-    return input_fingerprint(repo_root, effective_step_inputs(step), step.inputs_exclude)
+    content = input_fingerprint(repo_root, effective_step_inputs(step), step.inputs_exclude)
+    if content is None or not step.index_inputs:
+        return content
+    try:
+        result = subprocess.run(
+            ["git", "ls-files", "--cached", "-z", "--", *step.index_inputs],
+            cwd=repo_root, capture_output=True, check=False, timeout=15,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return None
+    if result.returncode:
+        return None
+    # Membership only: staging a content edit or changing an unrelated index
+    # entry must not invalidate a consumer whose resolved report set is stable.
+    paths = sorted(set(result.stdout.split(b"\0")) - {b""})
+    digest = hashlib.sha256(content.encode("ascii") + b"\0git-index\0")
+    for path in paths:
+        digest.update(path + b"\0")
+    return digest.hexdigest()
 
 
 def record_step_state(

@@ -33,6 +33,14 @@ breakdowns) in hand-authored docs. Link to `reports/current_counts.md` /
 `data/current-counts.json` instead. `code/src/count_consistency.py` +
 `build_current_counts.py --check` guard drift and run inside `validate_repo.py`.
 
+## Maintenance inspection
+
+Use `uv run python3 code/orchestrators/agent.py status --json` and
+`uv run python3 code/orchestrators/agent.py plan --json` before selecting
+writers. `plan --step <id> --json` selects one canonical step. These offline
+previews do not execute, validate, or publish; see
+[`agent-interface.md`](docs/operations/agent-interface.md).
+
 ## Commands
 
 Python tooling is `uv`-only (never bare `pip`). Everything runs from the repo root.

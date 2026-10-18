@@ -93,20 +93,29 @@ def test_the_locked_uv_environment_stays_the_only_documented_exception():
     those as violations would make the guard fire on its own documentation.
     """
     production = (REPO_ROOT / "code" / "orchestrators", REPO_ROOT / "code" / "src")
-    uv_invocations: list[str] = []
+    uv_invocations: list[tuple[str, str]] = []
     for path in _python_sources():
         if path.parent not in production:
             continue
         tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+        parents = {child: parent for parent in ast.walk(tree) for child in ast.iter_child_nodes(parent)}
         for node in ast.walk(tree):
             if not isinstance(node, (ast.List, ast.Tuple)):
                 continue
             elements = _string_elements(node)
             if elements[:3] == ["uv", "run", "python3"]:
-                uv_invocations.append(str(path.relative_to(REPO_ROOT)))
+                owner = node
+                while owner in parents and not isinstance(owner, (ast.FunctionDef, ast.AsyncFunctionDef)):
+                    owner = parents[owner]
+                uv_invocations.append((str(path.relative_to(REPO_ROOT)), getattr(owner, "name", "<module>")))
+    # Bind the exact functions rather than exempting an entire file. The
+    # agent's plan is declarative argv data; test_agent_interface independently
+    # rejects any subprocess execution while that preview is requested.
     assert sorted(set(uv_invocations)) == [
-        "code/orchestrators/regenerate_all.py",
-        "code/orchestrators/validate_repo.py",
+        ("code/orchestrators/agent.py", "plan_payload"),
+        ("code/orchestrators/regenerate_all.py", "_run"),
+        ("code/orchestrators/validate_repo.py", "generation_check_command"),
+        ("code/orchestrators/validate_repo.py", "run_resume_check"),
     ]
 
 

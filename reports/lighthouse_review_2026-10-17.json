@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "evidence_kind": "Review of retained exact-candidate hosted Lighthouse diagnostics",
+  "candidate_commit": "4b2af321efeb3055219317ac56c0115dc5234e11",
+  "workflow_run": "https://github.com/docxology/docxology/actions/runs/39055809664",
+  "artifact_name": "lighthouse-4b2af321efeb3055219317ac56c0115dc5234e11",
+  "tool_version": "13.4.1",
+  "scope": "Eight configured lane pages; one observed run per page, shared CI runner, fixture compression parity checked by the hosted gate.",
+  "pages": [
+    {
+      "artifact_path": "404.html/run-01.json",
+      "sha256": "9cfae856aedc8bcb5424f121beb097a173be8bec1319c698b5b4935c32496de1",
+      "scores": {
+        "performance": 100,
+        "accessibility": 96,
+        "seo": 100
+      },
+      "total_blocking_time_ms": 0
+    },
+    {
+      "artifact_path": "art.html/run-01.json",
+      "sha256": "0a59ae2d2b593884744b9e0c9a518708347894215df498cc416278e2b2644e7f",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "total_blocking_time_ms": 125.12479999999994
+    },
+    {
+      "artifact_path": "index.html/run-01.json",
+      "sha256": "9a78b52580e2af31e056e79bb9a6e279323c537f11b6b5d47b9efa2a92d1b6d8",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "total_blocking_time_ms": 25.994550000000118
+    },
+    {
+      "artifact_path": "publications.html/run-01.json",
+      "sha256": "d3b8d5542c9d2801ba80be15b11a0346d4fe1ad4d201f5bc9424efa12af4dcc6",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "total_blocking_time_ms": 64.47919999999999
+    },
+    {
+      "artifact_path": "search.html/run-01.json",
+      "sha256": "f82cb9ebe114c4661ef59d7697f7db7ca4577855cc8dba461c86edaa307bebd4",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "total_blocking_time_ms": 0
+    },
+    {
+      "artifact_path": "videos--institute--39CESDAfLM.html/run-01.json",
+      "sha256": "668d1d185b294f14d80314e1f877a8f669b096a617464be78fa4c1c13c12526c",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "total_blocking_time_ms": 0
+    },
+    {
+      "artifact_path": "videos.html/run-01.json",
+      "sha256": "83b5bd5d1d05b4ad705c1310f41f2aad2c8d46e46efe1f5bcd1bca0d1085d7f4",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "total_blocking_time_ms": 109
+    },
+    {
+      "artifact_path": "works--Friedman2015CommentaryPortugueseCryptoJews106.html/run-01.json",
+      "sha256": "f9d54f0ffe9f8eede039b42da24079edd81f76d7204099cf155ebb43dc479b4d",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "total_blocking_time_ms": 0
+    }
+  ],
+  "decisions": [
+    {
+      "subject": "art startup",
+      "decision": "retain current implementation",
+      "reason": "Current candidate reports performance 99 and 130 ms total blocking time. The earlier 240 ms observation does not justify an unmeasured rewrite."
+    },
+    {
+      "subject": "404 footer targets",
+      "decision": "enlarge and measure targets",
+      "reason": "Target-size audit identifies the 15px-high build-stamp link and adjacent OpenSearch link. Fix the generated page and verify desktop/mobile bounds and axe."
+    }
+  ],
+  "limits": [
+    "Scores are observations for this candidate and environment, not universal guarantees.",
+    "The report does not certify the later candidate or replace human visual release review.",
+    "No performance or accessibility floor was weakened."
+  ]
+}

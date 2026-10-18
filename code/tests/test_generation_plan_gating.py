@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import re
 import sys
+import subprocess
 from pathlib import Path
 
 # docxology_tools owns the canonical bootstrap; this locate makes the package importable.
@@ -96,7 +97,11 @@ def test_seed_pattern_supports_case_insensitive_pdf_glob(tmp_path: Path) -> None
 
 
 def _seed_inputs(repo_root: Path, step: GenerationStep) -> list[Path]:
-    return [_seed_pattern(repo_root, pattern) for pattern in effective_step_inputs(step)]
+    paths = [_seed_pattern(repo_root, pattern) for pattern in effective_step_inputs(step)]
+    if step.index_inputs:
+        subprocess.run(["git", "init", "-q", str(repo_root)], check=True)
+        subprocess.run(["git", "add", "--", "."], cwd=repo_root, check=True)
+    return paths
 
 
 def _run(step: GenerationStep, repo_root: Path, calls: list[str]) -> tuple[int, int]:

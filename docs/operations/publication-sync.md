@@ -346,20 +346,17 @@ validation:
 - Discovery-pointer re-render when the intake created new dated reports:
   `latest_source_report()` resolves only **git-tracked** receipts
   (clean-checkout determinism — a committed page must never reference a
-  receipt a clean checkout lacks), and the write-mode skip fingerprints are
-  content-only, so they cannot see a receipt become tracked. The pointer
-  steps are in the plan (`sync_site_facts.py`, `build_search_index.py`,
-  `build_catalog.py`), but after the payload commit a plain plan run would
-  skip them (same input content, newly tracked receipt), leaving
-  `discovery.html`, `pages/DISCOVERY.md`, `llms.txt`, and the search index
-  bound to the *previous* report. Two flows: (a) `git add` the new receipts
+  receipt a clean checkout lacks). Cached source-report consumers declare
+  `index_inputs`, so staging or untracking a receipt invalidates the cache
+  without a byte change. The pointer steps are in the plan
+  (`sync_site_facts.py`, `build_search_index.py`, `build_catalog.py`); a normal
+  driver run now re-renders them when tracked membership changes. Two flows: (a) `git add` the new receipts
   *before* running the driver (staged counts as tracked) — the plan's
   pointer steps then consume them in the same lap and receipt + pointers
   land in one commit; this collapses the intended two-step acceptance
   cadence (evidence lands, then a reviewed source update consumes it), so
   weigh it per lap; or (b) after the payload commit, re-run
-  `sync_site_facts.py` and `build_search_index.py` directly (direct
-  invocation bypasses skip state) or `regenerate_all.py --force`, and land
+  `regenerate_all.py` normally (`--force` is an optional diagnostic), and land
   the pointer updates as a second payload commit before the binder tail.
 
 And a `data/` intake still auto-raises the settle tier to `full`

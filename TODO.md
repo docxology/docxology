@@ -8,7 +8,7 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-10-16; only unfinished work and recurring checks remain.
+- Last reviewed: 2026-10-17; only unfinished work and recurring checks remain.
   Completed implementation and source-review history lives in CHANGELOG.md and
   the linked dated reports. Effort estimates below are separate from priority.
 
@@ -165,9 +165,12 @@ Recurring checks below are operating obligations, not unfinished feature work.
   improve pages below the aspirational performance 85, accessibility 95, and
   SEO 95 scores. Keep existing floors and measured results visible; passing
   the ratchet does not establish that every aspirational target was met.
-- Remaining measured follow-up: `art.html` showed about 240 ms of blocking
-  time on the retained CI candidate. Re-measure a current candidate before
-  changing startup behavior. Prior fixture/parity repairs are documented in
+- Latest candidate review: commit `4b2af321e` reports performance 99 and
+  130 ms blocking time for `art.html`; all eight sampled pages meet the
+  aspirational category targets. The [exact-candidate review](reports/lighthouse_review_2026-10-17.json)
+  retains source hashes, environment limits, and the measured 404 target-size
+  follow-up. Re-measure after future growth; these observations do not establish
+  universal scores. Prior fixture/parity repairs remain historical evidence in
   [the performance report](reports/lighthouse_gap_2026-10-06.md).
 
 ### DOC-010 — Security and SEO follow-up

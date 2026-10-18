@@ -2,6 +2,14 @@
 
 This repository is the public research, software, citation, evidence, and website index for Daniel Ari Friedman.
 
+## Inspect maintenance commands
+
+`uv run python3 code/orchestrators/agent.py status --json` observes local
+prerequisites; `plan --json` previews the authoritative ordered write/check
+commands and manual/network exclusions. Neither executes those commands nor
+certifies validation or deployment. Use `plan --step <id> --json` to inspect one
+step. See the [interface contract](docs/operations/agent-interface.md).
+
 ## First Reads
 
 1. Start with [`llms.txt`](llms.txt) for canonical pages, machine-readable files, and source-of-truth rules.
@@ -61,8 +69,10 @@ the plan without executing anything with `uv run python3 code/orchestrators/sett
 
 Landing rule worth knowing before your first lap: a commit that creates new
 dated reports (snapshots, pairing receipts, reconciliation reports) flips the
-`latest_source_report()` tracked-file resolution, so `sync_site_facts.py` and
-`build_search_index.py` need one re-render pass after the payload commit —
+`latest_source_report()` index-tracked resolution. Staging those receipts
+before rendering lets the ordinary plan consume them immediately; report-aware
+cache entries now include index membership. If adoption happens in a later
+commit, run the ordinary plan again before its binder tail —
 see the do-not-skip list in
 [`docs/operations/publication-sync.md`](docs/operations/publication-sync.md).
 

@@ -43,3 +43,33 @@ def test_duplicate_attributes_keep_browser_visible_first_value():
     parser.feed('<head><meta name="description" name="citation_title" content="Fake">')
     parser.feed('<meta name="citation_title" content="Real" content="Fake"></head>')
     assert parser.tags == {"citation_title": ["Real"]}
+
+
+@pytest.mark.parametrize("tag", ["title", "style", "script", "noscript", "noframes"])
+def test_head_text_elements_do_not_supply_metadata(tag):
+    from docxology_tools.citation_metadata import MetadataHead
+
+    parser = MetadataHead()
+    parser.feed(f'<head><{tag}><script></head><body><meta name="citation_author" content="Fake">'
+                '<link rel="canonical" href="https://fake.example/">'
+                '<meta name="robots" content="noindex">'
+                f'</script></{tag}><meta name="citation_author" content="Real">'
+                '<link href="https://danielarifriedman.com/" rel="canonical">'
+                '<meta content="index, follow" name="robots"></head>')
+    # For the script case the literal inner </script> terminates the actual
+    # script, so the following invalid closing tag is ignored by the browser.
+    assert parser.tags == {"citation_author": ["Real"]}
+    assert parser.canonicals == ["https://danielarifriedman.com/"]
+    assert parser.names["robots"] == ["index, follow"]
+
+
+@pytest.mark.parametrize("body_start", ["<div>", "<textarea>", "plain body text"])
+def test_implicit_body_closes_metadata_collection(body_start):
+    from docxology_tools.citation_metadata import MetadataHead
+
+    parser = MetadataHead()
+    parser.feed('<head><meta name="citation_title" content="Real">' + body_start
+                + '<meta name="citation_author" content="Fake">'
+                + '<link rel="canonical" href="https://fake.example/">')
+    assert parser.tags == {"citation_title": ["Real"]}
+    assert parser.canonicals == []

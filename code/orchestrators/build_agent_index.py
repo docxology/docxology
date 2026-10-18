@@ -660,7 +660,7 @@ def payload() -> dict:
             "Canonical work URLs use citation_key values and preserve retired numeric gaps.",
             "Paper-folder pages are documentation mirrors; canonical indexable work pages live under /works/.",
             "External facts and metrics are evidence-dated; retain caveats when primary verification is incomplete.",
-            "Pages omits duplicated paper-extracted image binaries only; use the manifest fallback templates for GitHub retrieval.",
+            "Pages omits extracted paper-image binaries, declared QA screenshot binaries, and superseded unreferenced reports; use the artifact manifest and GitHub fallback templates for archival retrieval.",
             "Coverage exceptions and repository classifications are review queues, not automatic certification or rejection.",
         ],
     }

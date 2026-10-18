@@ -2,6 +2,26 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-10-17
+
+- **Agent inspection:** added an offline JSON entry point for checkout/runtime
+  observations and ordered command previews, derived from the existing generation
+  plan. Unknown operations and writer flags fail explicitly; inspection grants
+  no validation, network-freshness, deployment, or human-review status.
+- **Reliable regeneration:** source-report consumers now fingerprint Git index
+  membership as well as bytes. Staging or untracking an unchanged receipt
+  re-renders its consumers; failed Git observations disable cache skipping.
+- **Crawler metadata:** SEO checks parse real head elements, reject duplicate
+  canonicals and head robots directives, and enforce apex HTTPS canonicals
+  across published page families. Existing citation and permanent URL identities
+  remain authoritative.
+- **404 accessibility:** enlarged footer link targets after the retained
+  candidate's Lighthouse report identified crowding. Desktop/mobile browser
+  checks measure the actual targets and accessibility behavior.
+- **Measured performance:** recorded exact-candidate Lighthouse scores and
+  source-report hashes; current sample scores supersede the older art-startup
+  follow-up without changing performance floors or claiming universal scores.
+
 ## 2026-10-16
 
 - **GitHub and Zenodo refresh:** reviewed a full release/record scan and the

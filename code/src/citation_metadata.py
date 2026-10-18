@@ -73,11 +73,21 @@ def journal_fields(work: dict, metadata: dict) -> dict[str, str]:
 class CitationHead(HTMLParser):
     """Read real head tags; comments and body lookalikes cannot fill gaps."""
 
+    # Use HTMLParser's existing raw-text tokenizer for head text elements.
+    # Title is RCDATA in HTML; entity decoding cannot create active tags, and
+    # we never collect title text. Treating its contents as raw text therefore
+    # preserves the relevant boundary, including embedded script/comment text.
+    CDATA_CONTENT_ELEMENTS = ("script", "style", "title", "noscript", "noframes")
+    HEAD_ELEMENTS = frozenset({"html", "head", "base", "basefont", "bgsound",
+                               "link", "meta", "title", "noscript", "noframes",
+                               "style", "script", "template"})
+
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
         self.in_head = False
         self.head_finished = False
         self.template_depth = 0
+        self.head_text_element: str | None = None
         self.tags: dict[str, list[str]] = {}
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
@@ -91,6 +101,11 @@ class CitationHead(HTMLParser):
             self.head_finished = True
         if tag == "head" and not self.head_finished:
             self.in_head = True
+        if self.in_head and tag not in self.HEAD_ELEMENTS:
+            self.in_head = False
+            self.head_finished = True
+        if self.in_head and tag in self.CDATA_CONTENT_ELEMENTS:
+            self.head_text_element = tag
         if tag != "meta" or not self.in_head:
             return
         # HTML keeps the first value of a duplicated attribute. A later
@@ -102,7 +117,19 @@ class CitationHead(HTMLParser):
         if name.startswith("citation_"):
             self.tags.setdefault(name, []).append(attributes.get("content") or "")
 
+    def handle_data(self, data: str) -> None:
+        # Non-whitespace outside head text/template content implicitly starts
+        # the body in HTML. A later literal </head> must not reopen evidence.
+        if (self.in_head and not self.template_depth and not self.head_text_element
+                and data.strip(" \t\n\r\f")):
+            self.in_head = False
+            self.head_finished = True
+
     def handle_endtag(self, tag: str) -> None:
+        if self.head_text_element:
+            if tag == self.head_text_element:
+                self.head_text_element = None
+            return
         if tag == "template" and self.template_depth:
             self.template_depth -= 1
             return
@@ -122,3 +149,32 @@ class CitationHead(HTMLParser):
             self.head_finished = True
             return
         self.handle_starttag(tag, attrs)
+
+
+class MetadataHead(CitationHead):
+    """Read real crawler-facing head metadata using the citation boundaries.
+
+    Keep duplicate elements visible for validators. Attribute order, quoting,
+    case, and entity encoding do not change the extracted metadata.
+    """
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.names: dict[str, list[str]] = {}
+        self.properties: dict[str, list[str]] = {}
+        self.canonicals: list[str] = []
+
+    def handle_starttag(self, tag, attrs):
+        super().handle_starttag(tag, attrs)
+        if not self.in_head or self.template_depth or self.head_text_element:
+            return
+        attributes = {}
+        for key, value in attrs:
+            attributes.setdefault(key, value)
+        if tag == "meta":
+            for attribute, target in (("name", self.names), ("property", self.properties)):
+                key = (attributes.get(attribute) or "").casefold()
+                if key:
+                    target.setdefault(key, []).append(attributes.get("content") or "")
+        elif tag == "link" and "canonical" in (attributes.get("rel") or "").casefold().split():
+            self.canonicals.append(attributes.get("href") or "")

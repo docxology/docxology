@@ -6,7 +6,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 
 | Path | Role |
 | --- | --- |
-| `src/docxology_tools/` | Canonical import bootstrap: owns the one `sys.path` setup for `code/src` + `code/orchestrators` and re-exports every `src/*.py` flat module as `docxology_tools.<module>` — orchestrators and tests import through it |
+| `src/docxology_tools/` | Canonical import bootstrap: owns the one `sys.path` setup for `code/src` + `code/orchestrators` and provides a lazy namespace window over flat modules as `docxology_tools.<module>` — orchestrators and tests import through it |
 | `src/youtube_fetcher.py` | `yt-dlp` wrapper: strict JSONL parsing, canonical record validation, explicit per-tab completion/failure results, atomic JSON writes |
 | `src/count_consistency.py` | Parse BIBLIOGRAPHY / papers index counts; detect drift in llms.txt, README, publications title, `data/works.json`, `data/publications-ld.json` |
 | `src/domain_inference.py` | Canonical whole-word domain inference (emoji ↔ name maps, `infer_domain_emoji` / `infer_domain_name`) |
@@ -63,14 +63,23 @@ while reusable policy belongs in shared modules. See
 ordered passes, and cache/failure boundaries. The read-only manuscript command
 delegates its source checks to [`src/manuscript_validation.py`](src/manuscript_validation.py).
 
+## Agent inspection
+
+`orchestrators/agent.py status --json` reports local observations without
+certifying validation; `plan --json` emits ordered writer/check argv from the
+canonical plan. See [the interface guide](../docs/operations/agent-interface.md).
+Do not introduce another registry or run writers from this inspection surface.
+
 ## Imports and the package bootstrap
 
 All legacy flat modules in `src/` are imported through the `docxology_tools`
 package: `from docxology_tools.report_paths import latest_report`. The
 package's `__init__.py` is the single canonical bootstrap — it owns the one
 `sys.path` setup (putting `code/src` and `code/orchestrators` on the path) and
-registers every flat module as `docxology_tools.<module>`. No other module may
-mutate `sys.path`.
+exposes flat modules lazily as `docxology_tools.<module>` and aliases the
+flat/dotted names when each module loads. Importing the package does not import
+the whole library tree. Beyond the entry-point locate below, keep path setup
+in this bootstrap.
 
 Entry points carry only a three-line locate that makes the package itself
 importable (the package does everything else):

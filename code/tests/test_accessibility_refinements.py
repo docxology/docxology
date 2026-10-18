@@ -231,3 +231,17 @@ def test_video_no_javascript_keeps_static_index(accessibility_server, browser_pa
         page.get_by_role("heading", level=1).wait_for(state="visible")
     finally:
         context.close()
+
+
+@pytest.mark.parametrize("width", [320, 412, 1280])
+def test_404_footer_targets_are_large_enough(accessibility_server, browser_page, width):
+    page = browser_page
+    page.set_viewport_size({"width": width, "height": 900})
+    page.goto(f"{accessibility_server}/404.html", wait_until="load")
+    targets = page.locator("footer a").evaluate_all("""links => links.map(link => ({
+        text: link.textContent, height: link.getBoundingClientRect().height,
+        width: link.getBoundingClientRect().width,
+    }))""")
+    assert targets and all(target["height"] >= 24 and target["width"] >= 24 for target in targets), targets
+    assert not relevant_axe_violations(page, accessibility_server)
+    assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth")

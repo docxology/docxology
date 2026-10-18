@@ -5,6 +5,14 @@
 
 ---
 
+## Maintenance entry point
+
+Use `uv run python3 code/orchestrators/agent.py status --json` for local
+inspection and `plan --json` for the generation contract. The
+[interface guide](docs/operations/agent-interface.md) documents versioned JSON,
+exit codes, and the distinction between inspection, execution, and release
+evidence. Existing source ownership and landing rules apply.
+
 ## Agent Roles
 
 ### 📖 ARCHIVIST
@@ -131,7 +139,7 @@ docxology/
 │   └── releases/      ← Archived point-in-time release snapshots
 ├── code/              ← All repository source code and executable orchestrators (see code/AGENTS.md)
 │   ├── orchestrators/ ← Runnable orchestrators (regenerate_docs.py, sync_publications_html.py, sync_software_html.py, export_*, build_*)
-│   ├── src/           ← Shared libraries/parsers (biblio_table.py 8-column BIBLIOGRAPHY parser, software_table.py, count_consistency.py)
+│   ├── src/           ← Shared libraries/parsers (biblio_table.py required-column and optional Authors parser, software_table.py, count_consistency.py)
 │   └── tests/         ← Test suites and validation tests
 └── papers/            ← Per-paper folders (`YYYY_Topic`) for bibliography rows with in-tree documentation
     ├── README.md      ← Papers directory index

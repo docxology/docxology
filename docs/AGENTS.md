@@ -11,7 +11,7 @@ See root [AGENTS.md](../AGENTS.md) for site/SEO, teaching-line alignment (`index
 - [pages/BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) is the unified works table; the **Docs** column links to a folder under [papers/](../papers/) only when one exists.
 - [papers/](../papers/) has per-work folders (README / AGENTS / SKILL) for rows with in-tree documentation; rows without a folder (e.g. some YouTube series or Udemy courses) have no duplicate in-tree index row beyond BIBLIOGRAPHY.
 - After table **adds or reorders**, run [`code/orchestrators/sync_publications_html.py`](../code/orchestrators/sync_publications_html.py) with `--apply` so [publications.html](../publications.html) head meta and [`data/publications-ld.json`](../data/publications-ld.json) **mainEntity** stay in table order and length; run [`export_bibliography.py`](../code/orchestrators/export_bibliography.py) for `data/works.json`.
-- [`code/src/biblio_table.py`](../code/src/biblio_table.py) is the shared eight-column parser used by `sync_publications_html` and [`code/orchestrators/regenerate_docs.py`](../code/orchestrators/regenerate_docs.py).
+- [`code/src/biblio_table.py`](../code/src/biblio_table.py) parses the eight required columns and optional ninth Authors column used by `sync_publications_html` and [`code/orchestrators/regenerate_docs.py`](../code/orchestrators/regenerate_docs.py).
 
 ## Generated discovery layer
 

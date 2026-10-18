@@ -55,6 +55,22 @@ console error on every page without protecting anything, so it is deliberately o
 [security-posture.md](../security/security-posture.md) for the history and the
 header-capable-host remediation path).
 
+## Metadata validation
+
+The SEO gate parses actual head elements with the same head/template boundaries
+as citation metadata. Attribute order, quoting, case, and escaped entities do
+not affect identity. Comments, inert templates, script text, and later body
+lookalikes and title/raw-text content cannot satisfy head requirements.
+Non-head elements or body text close collection conservatively; this focused
+parser is not a general HTML5 DOM repair implementation. Duplicate canonical elements and
+head robots directives fail validation across public HTML families; canonical
+URLs use the apex HTTPS origin without query strings or fragments. Verification
+files and local dependency/build trees retain the normal scan exclusions.
+
+These checks protect the published contract; they do not establish search
+indexing or ranking. [Google's JavaScript SEO guidance](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics)
+describes the separate crawling, rendering, and indexing stages.
+
 ## Maintenance Checklist
 
 - After adding a public page, update or regenerate `sitemap.xml`.

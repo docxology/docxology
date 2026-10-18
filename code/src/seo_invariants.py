@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import functools
-import html as _html_mod
 import json
 import re
 import urllib.parse
@@ -15,14 +14,11 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 # stub list and the SEO invariants through this one module.
 from redirect_stubs import REDIRECT_STUBS, collect_redirect_errors  # noqa: E402,F401
 from site_nav import canonical_work_key  # noqa: E402
+from citation_metadata import MetadataHead  # noqa: E402
 
 SITE_ORIGIN = "https://danielarifriedman.com/"
 
-_META_ROBOTS = re.compile(r'<meta\s+name="robots"\s+content="([^"]+)"', re.I)
-_LINK_CANONICAL = re.compile(r'<link\s+rel="canonical"\s+href="([^"]+)"', re.I)
 _SITEMAP_LOC = re.compile(r"<loc>(https://danielarifriedman\.com/[^<]*)</loc>")
-_META_PROPERTY = re.compile(r'<meta\s+property="([^"]+)"\s+content="([^"]*)"', re.I)
-_META_NAME = re.compile(r'<meta\s+name="([^"]+)"\s+content="([^"]*)"', re.I)
 
 
 # One SEO pass runs eight checks over heavily overlapping page sets: a works
@@ -37,6 +33,7 @@ _TEXT_CACHE: dict[tuple[str, int, int, int], str] = {}
 def clear_page_cache() -> None:
     """Drop the process-local page-text cache (used by the read-count tests)."""
     _TEXT_CACHE.clear()
+    _head.cache_clear()
 
 
 def _read(path: Path) -> str:
@@ -52,28 +49,33 @@ def _read(path: Path) -> str:
     return text
 
 
+@functools.lru_cache(maxsize=512)
+def _head(html: str) -> MetadataHead:
+    parser = MetadataHead()
+    parser.feed(html)
+    parser.close()
+    return parser
+
+
+def _single(values: list[str]) -> str | None:
+    return values[0].strip() if len(values) == 1 and values[0].strip() else None
+
+
 def _meta_robots(html: str) -> str | None:
-    match = _META_ROBOTS.search(html)
-    return match.group(1).strip().lower() if match else None
+    value = _single(_head(html).names.get("robots", []))
+    return value.casefold() if value else None
 
 
 def _canonical(html: str) -> str | None:
-    match = _LINK_CANONICAL.search(html)
-    return match.group(1).strip() if match else None
+    return _single(_head(html).canonicals)
 
 
 def _property_meta(html: str, prop: str) -> str | None:
-    for key, value in _META_PROPERTY.findall(html):
-        if key.lower() == prop.lower():
-            return value
-    return None
+    return _single(_head(html).properties.get(prop.casefold(), []))
 
 
 def _name_meta(html: str, name: str) -> str | None:
-    for key, value in _META_NAME.findall(html):
-        if key.lower() == name.lower():
-            return value
-    return None
+    return _single(_head(html).names.get(name.casefold(), []))
 
 
 def _works_by_docs_path(repo_root: Path) -> dict[str, dict]:
@@ -192,8 +194,7 @@ def check_sitemap_policy(repo_root: Path) -> list[str]:
 
 
 def _meta_description(html: str) -> str | None:
-    match = re.search(r'<meta\s+name="description"\s+content="([^"]*)"', html, re.I)
-    return match.group(1) if match else None
+    return _name_meta(html, "description")
 
 
 def check_social_meta(repo_root: Path) -> list[str]:
@@ -206,14 +207,14 @@ def check_social_meta(repo_root: Path) -> list[str]:
         robots = _meta_robots(html)
         if robots and robots.startswith("noindex"):
             continue
-        if 'property="og:image"' not in html:
+        if not _head(html).properties.get("og:image"):
             continue
         rel = str(path.relative_to(repo_root))
-        if 'name="twitter:card"' not in html:
+        if not _name_meta(html, "twitter:card"):
             errors.append(f"{rel}: og:image present but missing twitter:card")
-        if 'property="og:image:alt"' not in html:
+        if not _property_meta(html, "og:image:alt"):
             errors.append(f"{rel}: og:image present but missing og:image:alt")
-        if 'name="twitter:image:alt"' not in html:
+        if not _name_meta(html, "twitter:image:alt"):
             errors.append(f"{rel}: og:image present but missing twitter:image:alt")
         if path.parent == repo_root:
             og_title = _property_meta(html, "og:title")
@@ -240,7 +241,7 @@ def check_work_descriptions(repo_root: Path) -> list[str]:
         if desc is None:
             errors.append(f"works/{path.name}: missing meta description")
             continue
-        rendered = _html_mod.unescape(desc)
+        rendered = desc  # MetadataHead already decodes HTML entities once.
         if len(rendered) > 160:
             errors.append(f"works/{path.name}: meta description {len(rendered)} rendered chars (>160)")
     return errors
@@ -390,6 +391,33 @@ def check_public_html_security(repo_root: Path) -> list[str]:
     return errors
 
 
+def check_head_canonicals(repo_root: Path) -> list[str]:
+    """Reject missing/ambiguous canonicals across every published HTML family."""
+    from deploy_seo_security import EXCLUDED_HTML_PATH_PARTS, SKIP_PAGES
+
+    errors = []
+    for path in sorted(repo_root.rglob("*.html")):
+        if EXCLUDED_HTML_PATH_PARTS.intersection(path.parts) or path.name in SKIP_PAGES:
+            continue
+        head = _head(_read(path))
+        rel = path.relative_to(repo_root).as_posix()
+        canonical = _single(head.canonicals)
+        if canonical is None:
+            errors.append(f"{rel}: expected exactly one nonempty head canonical")
+            continue
+        try:
+            url = urllib.parse.urlsplit(canonical)
+        except ValueError:
+            errors.append(f"{rel}: invalid canonical URL")
+            continue
+        if (url.scheme != "https" or url.netloc != "danielarifriedman.com"
+                or url.query or url.fragment):
+            errors.append(f"{rel}: canonical must use the apex HTTPS origin without query or fragment")
+        if len(head.names.get("robots", [])) > 1:
+            errors.append(f"{rel}: duplicate head robots directives")
+    return errors
+
+
 def collect_seo_errors(repo_root: Path | None = None) -> list[str]:
     root = repo_root or REPO_ROOT
     errors: list[str] = []
@@ -402,4 +430,5 @@ def collect_seo_errors(repo_root: Path | None = None) -> list[str]:
     errors.extend(check_work_descriptions(root))
     errors.extend(check_public_html_security(root))
     errors.extend(check_canonical_integrity(root))
+    errors.extend(check_head_canonicals(root))
     return errors

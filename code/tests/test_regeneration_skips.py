@@ -12,6 +12,7 @@ import os
 import shutil
 import subprocess
 import sys
+from dataclasses import replace
 from pathlib import Path
 
 import pytest
@@ -308,6 +309,59 @@ def test_fingerprint_ignores_mtime_only_touches(tmp_path: Path) -> None:
     os.utime(tmp_path / "data" / "works.json", (0, 0))
     fp2 = input_fingerprint(tmp_path, ("data/works.json",))
     assert fp1 == fp2
+
+
+def test_report_staging_invalidates_cached_consumer_without_changing_bytes(tmp_path):
+    """The writer really resolves a different report after git add/reset."""
+    subprocess.run(["git", "init", "-q", str(tmp_path)], check=True)
+    reports = tmp_path / "reports"
+    reports.mkdir()
+    older = reports / "snapshot_2026-10-16.json"
+    newer = reports / "snapshot_2026-10-17.json"
+    older.write_text("{}\n")
+    newer.write_text("{}\n")
+    subprocess.run(["git", "add", str(older)], cwd=tmp_path, check=True)
+    from docxology_tools.report_paths import latest_source_report
+
+    step = replace(_write_step("reports/snapshot_*.json"), index_inputs=("reports/**",))
+    selected = []
+
+    def render(_script, _args):
+        selected.append(latest_source_report(
+            "snapshot_*.json", report_dir=reports, repo_root=tmp_path,
+        ).name)
+
+    assert regenerate_all.run_regeneration(
+        steps=(step,), runner=render, repo_root=tmp_path, emit=lambda _: None,
+    ) == (1, 0)
+    assert regenerate_all.run_regeneration(
+        steps=(step,), runner=render, repo_root=tmp_path, emit=lambda _: None,
+    ) == (0, 1)
+    subprocess.run(["git", "add", str(newer)], cwd=tmp_path, check=True)
+    assert regenerate_all.run_regeneration(
+        steps=(step,), runner=render, repo_root=tmp_path, emit=lambda _: None,
+    ) == (1, 0)
+    # Removing an index entry also changes resolution, with both files intact.
+    subprocess.run(["git", "rm", "--cached", str(newer)], cwd=tmp_path, check=True,
+                   capture_output=True)
+    assert regenerate_all.run_regeneration(
+        steps=(step,), runner=render, repo_root=tmp_path, emit=lambda _: None,
+    ) == (1, 0)
+    assert selected == [older.name, newer.name, older.name]
+    assert newer.read_text() == "{}\n"
+
+
+def test_index_sensitive_cache_is_unavailable_without_git(tmp_path):
+    step = replace(_write_step("data/works.json"), index_inputs=("reports/**",))
+    assert step_input_fingerprint(step, tmp_path) is None
+
+
+def test_unrelated_staging_does_not_invalidate_report_membership(tmp_path):
+    subprocess.run(["git", "init", "-q", str(tmp_path)], check=True)
+    step = replace(_write_step("data/works.json"), index_inputs=("reports/**",))
+    before = step_input_fingerprint(step, tmp_path)
+    subprocess.run(["git", "add", "data/works.json"], cwd=tmp_path, check=True)
+    assert before is not None and step_input_fingerprint(step, tmp_path) == before
 
 
 def test_input_gated_step_with_unchanged_inputs_skips_in_subprocess(

@@ -92,6 +92,7 @@ def render() -> str:
         .destinations{{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center}}
         .destinations a{{border:1px solid var(--border);border-radius:999px;padding:.4rem .9rem;color:var(--silver-bright);text-decoration:none;font-size:.85rem}}
         .destinations a:hover{{border-color:var(--gold,#d4a857);color:var(--gold,#d4a857)}}
+        footer a{{display:inline-flex;align-items:center;min-height:24px}}
         .result-list{{display:grid;gap:.8rem;margin-top:1.5rem;text-align:left}}
         @media print{{.search-panel,.destinations{{display:none}}}}
         @media (prefers-reduced-motion: reduce){{*{{animation:none!important;transition:none!important}}}}

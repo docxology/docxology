@@ -53,6 +53,11 @@ def _seed_sources(repo: Path, step: GenerationStep) -> None:
         path = repo / relative
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text("# original fixture source\n", encoding="utf-8")
+    if step.index_inputs:
+        # Report consumers depend on index membership as well as bytes.
+        # Seed that real dependency instead of a non-Git stand-in.
+        subprocess.run(["git", "init", "-q", str(repo)], check=True)
+        subprocess.run(["git", "add", "--", "."], cwd=repo, check=True)
 
 
 def _run(step: GenerationStep, repo: Path, calls: list[str]) -> tuple[int, int]:

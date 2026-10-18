@@ -57,7 +57,14 @@ their work synchronous or manage their own child-process lifetime.
 Steps with declared inputs may skip when their input bytes, writer, and shared
 Python implementation match the previous successful run. Declared imported
 orchestrator helpers also participate. Steps without inputs always run.
-Modification times alone do not invalidate the cache.
+Modification times alone do not invalidate the cache. Steps that resolve
+tracked report pointers also declare `index_inputs`: the fingerprint includes
+the matching Git index path membership. Staging an existing receipt or removing
+it from the index invalidates those consumers even when all file bytes remain
+unchanged. Ordinary content edits remain covered by the content fingerprint;
+unrelated non-report staging does not affect report membership. If the Git
+reader fails or times out, the step runs instead of trusting stale cache state.
+This models staged availability, not approval to adopt an observation.
 
 The private bookkeeping file is `reports/regeneration-state.json`, which is
 ignored by Git and excluded from the public artifact. Unsupported schema
