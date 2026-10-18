@@ -4,6 +4,19 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-10-17
 
+- **Python 3.15 backend:** qualified the current runtime and locked dependencies,
+  aligned CI with `.python-version`, and derived release runtime/version metadata
+  from `pyproject.toml` to prevent duplicated contract drift.
+- **Measured backend performance:** reduced repeated HTML parsing and paper-name
+  sorting, bounded and version-checked page retention, and removed redundant
+  pre-writer fingerprinting while preserving fresh post-writer checks. Paired
+  prototype SEO/fingerprint timings and their limitations are recorded in the
+  [profiling guide](docs/operations/backend-profiling.md).
+- **Repeatable diagnostics:** added fixed read-only timing/tracing workloads with
+  versioned JSON, bounded workers, source/runtime/result bindings, and new external
+  output files. Changed inputs or Git index membership invalidate observations;
+  diagnostics confer no validation or release status.
+
 - **Agent inspection:** added an offline JSON entry point for checkout/runtime
   observations and ordered command previews, derived from the existing generation
   plan. Unknown operations and writer flags fail explicitly; inspection grants

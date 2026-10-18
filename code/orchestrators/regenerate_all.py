@@ -84,8 +84,7 @@ from docxology_tools.generation_plan import (  # noqa: E402
     load_regeneration_state,
     record_step_state,
     save_regeneration_state,
-    step_input_fingerprint,
-    step_skip_reason,
+    step_input_state,
     validate_generation_plan,
 )
 
@@ -191,12 +190,11 @@ def _run_regeneration_locked(
     persisted_state = state.copy()
     ran = skipped = 0
     for step in steps:
-        reason = None if force else step_skip_reason(step, state, repo_root)
-        if reason is not None:
+        before, reason = step_input_state(step, state, repo_root)
+        if not force and reason is not None:
             emit(f"skip {step.identifier}: {reason}")
             skipped += 1
             continue
-        before = step_input_fingerprint(step, repo_root)
         # Invalidate an older successful entry before touching outputs. A
         # forced writer can fail or be interrupted with unchanged inputs;
         # leaving that old entry would let the next run skip partial output.

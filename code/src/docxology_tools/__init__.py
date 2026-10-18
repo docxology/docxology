@@ -68,6 +68,7 @@ __path__ = [str(_SRC_DIR)]
 
 #: Legacy flat modules (``code/src/*.py``) reachable through this package.
 MODULES: tuple[str, ...] = (
+    "backend_profiling",
     "abstract_text",
     "author_entities",
     "manuscript_rendering",

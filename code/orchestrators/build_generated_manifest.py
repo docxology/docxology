@@ -676,6 +676,7 @@ ARTIFACTS = [
 # discoverable from the authoritative matrix. MD-only: data/generated-manifest.json
 # keeps its frozen {generated_at, artifacts} schema for downstream consumers.
 UTILITIES = [
+    ("profile_backend.py", "Bounded Python 3.15 timing/tracing for fixed read-only backend workloads with source/runtime/result bindings; external JSON diagnostics only", "inspection"),
     ("agent.py", "Offline read-only maintenance inspection: versioned JSON status and ordered write/check previews derived from the canonical generation plan; never executes writers or network intake", "inspection"),
     ("regenerate_all.py", "Dependency-ordered write-mode rebuild of every locally-derived artifact; `--validate` chains validate_repo.py", "driver"),
     ("validate_repo.py", "Authoritative generated-layer gate: runs every generator in `--check` mode plus repo invariants", "gate"),

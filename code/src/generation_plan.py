@@ -252,6 +252,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
 
 
 EXCLUDED_OPERATIONS: tuple[ExcludedOperation, ...] = (
+    ExcludedOperation("profile_backend.py", "diagnostic/read-only", "Bounded Python 3.15 timing and tracing diagnostics write only new external JSON reports; they never certify release state."),
     ExcludedOperation("review_citation_metadata.py", "network/manual-review", "Bounded Crossref citation proposals require review; the tool never applies source changes."),
     ExcludedOperation("verify_deployed_artifact.py", "network/post-deploy", "SHA-bound technical acceptance of deployed routes and PDF artifacts; distinct from the human-reviewed full release attestation."),
     ExcludedOperation("add_zenodo_only.py", "network/source-authoring/binary-intake/manual-review", "Zenodo intake can create bibliography rows, paper folders, and downloaded binaries."),
@@ -473,17 +474,16 @@ def input_fingerprint(
     }
     digest = hashlib.sha256()
     for pattern in patterns:
-        matches = [
-            path
-            for path in sorted(repo_root.glob(pattern))
-            if path.is_file()
-            and path.relative_to(repo_root).as_posix() not in excluded
-            and not _FINGERPRINT_EXCLUDED_PARTS.intersection(path.parts)
-        ]
+        matches = []
+        for path in sorted(repo_root.glob(pattern)):
+            if not path.is_file() or _FINGERPRINT_EXCLUDED_PARTS.intersection(path.parts):
+                continue
+            relative = path.relative_to(repo_root).as_posix()
+            if relative not in excluded:
+                matches.append((path, relative))
         if not matches:
             return None
-        for path in matches:
-            rel = path.relative_to(repo_root).as_posix()
+        for path, rel in matches:
             try:
                 digest.update(f"{rel}\0{path.stat().st_size}\0".encode())
                 with path.open("rb") as handle:
@@ -505,12 +505,20 @@ def step_skip_reason(
     Steps without declared inputs never skip; a fingerprint of ``None`` always
     runs the step.
     """
-    if not step.inputs:
-        return None
-    fingerprint = step_input_fingerprint(step, repo_root)
-    if fingerprint is None or state.get(step.identifier) != fingerprint:
-        return None
-    return f"declared inputs unchanged since {REGENERATION_STATE_RELATIVE_PATH}"
+    return step_input_state(step, state, repo_root)[1]
+
+
+def step_input_state(
+    step: GenerationStep,
+    state: dict[str, str],
+    repo_root: Path = REPO_ROOT,
+) -> tuple[str | None, str | None]:
+    """Observe inputs once for both the skip decision and pre-writer binding."""
+    fingerprint = step_input_fingerprint(step, repo_root) if step.inputs else None
+    reason = None
+    if fingerprint is not None and state.get(step.identifier) == fingerprint:
+        reason = f"declared inputs unchanged since {REGENERATION_STATE_RELATIVE_PATH}"
+    return fingerprint, reason
 
 
 def step_input_fingerprint(

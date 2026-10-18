@@ -11,18 +11,41 @@ import re
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path, PurePosixPath
+from types import MappingProxyType
 from urllib.parse import quote
 
 SITE_URL = "https://danielarifriedman.com/"
 GITHUB_TREE = "https://github.com/docxology/docxology/tree/main/"
 
 
-def source_paths(repo_root: Path) -> frozenset[str]:
+class SourcePaths(frozenset[str]):
+    """One Git visibility snapshot, indexed once by canonical paper folder.
+
+    Only names are indexed. Each artifact's current file/link checks still run
+    when loading resources, and a new Git snapshot gets a new index.
+    """
+
+    def __new__(cls, paths):
+        instance = super().__new__(cls, paths)
+        grouped = {}
+        for name in sorted(instance):
+            parts = name.split("/", 2)
+            if len(parts) == 3 and parts[0] == "papers":
+                grouped.setdefault("/".join(parts[:2]), []).append(name)
+        instance._paper_paths = MappingProxyType({k: tuple(v) for k, v in grouped.items()})
+        return instance
+
+    def paper_paths(self, folder: str) -> tuple[str, ...]:
+        return self._paper_paths.get(folder, ())
+
+
+def source_paths(repo_root: Path) -> SourcePaths:
     result = subprocess.run(
         ["git", "ls-files", "-co", "--exclude-standard", "-z"],
-        cwd=repo_root, check=True, capture_output=True,
+        cwd=repo_root, check=True, capture_output=True, timeout=15,
+        stdin=subprocess.DEVNULL,
     )
-    return frozenset(result.stdout.decode("utf-8").split("\0")) - {""}
+    return SourcePaths(name for name in result.stdout.decode("utf-8").split("\0") if name)
 
 
 def encoded_path(path: str) -> str:
@@ -78,7 +101,8 @@ class PaperResources:
             return cls(root)
         visible = source_paths(root) if visible_paths is None else visible_paths
         files = []
-        for name in sorted(visible):
+        candidates = visible.paper_paths(clean) if isinstance(visible, SourcePaths) else sorted(visible)
+        for name in candidates:
             if not name.startswith(clean + "/"):
                 continue
             rel = PurePosixPath(name)

@@ -47,7 +47,7 @@ Python tooling is `uv`-only (never bare `pip`). Everything runs from the repo ro
 
 ```bash
 # Environment (the .venv interpreter path goes stale if the repo is moved — recreate it):
-uv sync --python 3.12
+uv sync --python 3.15
 
 # Tests (CI gate):
 uv run python3 -m pytest code/tests -q

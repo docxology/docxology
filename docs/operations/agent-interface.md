@@ -49,3 +49,7 @@ Never stop another transfer or delete a lock to obtain admission.
 Post-deploy technical acceptance and human release review remain separate. Keep
 candidate-SHA diagnostics outside source artifacts when they are not being
 adopted as reviewed evidence; a receipt-only push still needs its binder rebind.
+
+## Backend performance
+
+Use the [Python 3.15 profiling guide](backend-profiling.md) for fixed read-only timing/tracing workloads, external JSON diagnostics and comparison boundaries.

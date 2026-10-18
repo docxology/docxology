@@ -11,7 +11,7 @@ disabled.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from html import escape
+from html import escape, unescape
 from html.parser import HTMLParser
 import os
 from pathlib import Path
@@ -107,6 +107,12 @@ def has_meta_refresh(text: str) -> bool:
     exception, so the caller gets ``False`` and exact-output validation will
     still flag a declared stub as stale.
     """
+    # A negative lexical screen avoids tokenizing ordinary large documents.
+    # Decode character references too: refr&#101;sh is a real refresh value.
+    # Positive candidates still go through the exact semantic parser below,
+    # so comments, scripts and malformed attributes retain their behavior.
+    if "refresh" not in text.lower() and "refresh" not in unescape(text).lower():
+        return False
     probe = _RedirectProbe()
     try:
         probe.feed(text)

@@ -13,7 +13,7 @@ helpers, and write the generated artifacts checked into the repo root.
 
 ## Python runtime
 
-The repository pins Python 3.12 in `.python-version` to match CI. Run
+The repository pins Python 3.15 in `.python-version` to match CI. Run
 `uv sync --locked` before using the build commands; uv selects the declared
 runtime rather than the newest interpreter installed on the host.
 
@@ -50,7 +50,7 @@ across flat modules — `load_json` exists in both `youtube_fetcher` and
 
 | Module | Purpose |
 | --- | --- |
-| `biblio_table.py` | Shared iteration over the 8-column unified bibliography table in `pages/BIBLIOGRAPHY.md` |
+| `biblio_table.py` | Shared iteration over the required bibliography columns and optional Authors column in `pages/BIBLIOGRAPHY.md` |
 | `count_consistency.py` | Cross-checks volatile counts across agent-facing surfaces |
 | `domain_inference.py` | Canonical whole-word domain inference shared by pairing, Zenodo-only add, metadata enrich, and doc regen |
 | `paper_metadata_schema.py` | Dataclass schema for paper `metadata.json` validation |
@@ -114,3 +114,7 @@ deploy conclusion.
   `build_generated_manifest.py`).
 - Every orchestrator carries a module docstring stating outputs and sources;
   `code/tests/` is the pytest suite gating CI.
+
+## Backend performance
+
+Use the [Python 3.15 profiling guide](../docs/operations/backend-profiling.md) for fixed read-only timing/tracing workloads, external JSON diagnostics and comparison boundaries.

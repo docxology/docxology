@@ -109,3 +109,7 @@ uv run python3 -m pytest code/tests/test_regenerate_all.py \
   code/tests/test_generation_cache_sources.py code/tests/test_generation_plan.py \
   code/tests/test_generation_plan_order.py code/tests/test_generation_plan_gating.py -q
 ```
+
+## Backend performance
+
+Use the [Python 3.15 profiling guide](backend-profiling.md) for fixed read-only timing/tracing workloads, external JSON diagnostics and comparison boundaries.

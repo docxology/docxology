@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import functools
+from collections import OrderedDict
 import json
 import re
 import urllib.parse
@@ -24,10 +25,12 @@ _SITEMAP_LOC = re.compile(r"<loc>(https://danielarifriedman\.com/[^<]*)</loc>")
 # One SEO pass runs eight checks over heavily overlapping page sets: a works
 # page is read by four of them, and the two whole-repo checks walk every HTML
 # file (``check_canonical_integrity`` twice on its own). Reading each revision
-# of a file once turns ~5 full passes over the site into one. The key carries
-# the inode, size, and nanosecond mtime, so any rewrite — in place or through
-# the atomic replace used by the generators — misses the cache and is re-read.
-_TEXT_CACHE: dict[tuple[str, int, int, int], str] = {}
+# of a file once turns ~5 full passes over the site into one. Each path retains one version, bounded by LRU eviction.
+# Device, inode, size and nanosecond mtime/ctime invalidate rewrites, including
+# atomic replacement and same-size edits with restored mtime. Recheck after
+# each fresh read so a concurrently changing page cannot enter the cache.
+_PAGE_CACHE_LIMIT = 4096
+_TEXT_CACHE: OrderedDict[str, tuple[tuple[int, ...], str]] = OrderedDict()
 
 
 def clear_page_cache() -> None:
@@ -41,20 +44,26 @@ def _read(path: Path) -> str:
         info = path.stat()
     except OSError:
         return path.read_text(encoding="utf-8", errors="replace")
-    key = (str(path), info.st_ino, info.st_size, info.st_mtime_ns)
-    text = _TEXT_CACHE.get(key)
-    if text is None:
-        text = path.read_text(encoding="utf-8", errors="replace")
-        _TEXT_CACHE[key] = text
+    key = str(path)
+    version = (info.st_dev, info.st_ino, info.st_size, info.st_mtime_ns, info.st_ctime_ns)
+    cached = _TEXT_CACHE.get(key)
+    if cached is not None and cached[0] == version:
+        _TEXT_CACHE.move_to_end(key)
+        return cached[1]
+    text = path.read_text(encoding="utf-8", errors="replace")
+    after = path.stat()
+    if version != (after.st_dev, after.st_ino, after.st_size, after.st_mtime_ns, after.st_ctime_ns):
+        raise OSError(f"page changed while reading: {path}")
+    _TEXT_CACHE[key] = (version, text)
+    _TEXT_CACHE.move_to_end(key)
+    while len(_TEXT_CACHE) > _PAGE_CACHE_LIMIT:
+        _TEXT_CACHE.popitem(last=False)
     return text
 
 
-@functools.lru_cache(maxsize=512)
+@functools.lru_cache(maxsize=_PAGE_CACHE_LIMIT)
 def _head(html: str) -> MetadataHead:
-    parser = MetadataHead()
-    parser.feed(html)
-    parser.close()
-    return parser
+    return MetadataHead.parse(html)
 
 
 def _single(values: list[str]) -> str | None:
@@ -149,8 +158,7 @@ def check_work_citations(repo_root: Path) -> list[str]:
         if not path.is_file():
             errors.append(f"missing citation page: {rel}")
             continue
-        parser = CitationHead()
-        parser.feed(_read(path))
+        parser = CitationHead.parse(_read(path))
         tags = parser.tags
         resources = PaperResources.load(repo_root, work.get("docs_path", ""), visible)
         expected = {

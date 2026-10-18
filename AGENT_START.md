@@ -103,3 +103,7 @@ uv run --group lint ruff check code
 These are the core checks CI runs. CI also enforces the artifact budget and a separate mandatory browser job; the ordinary local suite can skip optional browser tools. For interactive changes, follow [`docs/operations/site-runtime.md`](docs/operations/site-runtime.md) and run the browser suite with `DOCXOLOGY_REQUIRE_BROWSER_QA=1` so missing browser capabilities fail. The lint rule set is configured in
 `pyproject.toml` under `[tool.ruff.lint]`, not on the command line, so a local
 run and CI enforce exactly the same rules.
+
+## Backend performance
+
+Use the [Python 3.15 profiling guide](docs/operations/backend-profiling.md) for fixed read-only timing/tracing workloads, external JSON diagnostics and comparison boundaries.

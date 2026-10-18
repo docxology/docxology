@@ -8,6 +8,7 @@ import hashlib
 import json
 import subprocess
 import sys
+import tomllib
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
@@ -44,6 +45,9 @@ SOURCE_FILES = (
     "data/pages-artifact-manifest.json",
 )
 GENERATOR_FILES = (
+    "pyproject.toml",
+    ".python-version",
+    "uv.lock",
     "code/orchestrators/regenerate_all.py",
     "code/orchestrators/build_pages_artifact.py",
     "code/orchestrators/build_agent_index.py",
@@ -148,6 +152,7 @@ def validated_pages_source_commit(pages: dict) -> str:
 
 
 def build_payload() -> dict:
+    project = tomllib.loads((REPO_ROOT / "pyproject.toml").read_text(encoding="utf-8"))["project"]
     current = json.loads((REPO_ROOT / "data/current-counts.json").read_text(encoding="utf-8"))
     pages = json.loads((REPO_ROOT / "data/pages-artifact-manifest.json").read_text(encoding="utf-8"))
     source_hashes = {path: sha256(REPO_ROOT / path) for path in SOURCE_FILES if (REPO_ROOT / path).is_file()}
@@ -171,12 +176,10 @@ def build_payload() -> dict:
         "canonical_origin": "https://danielarifriedman.com/",
         "generator": {
             "pipeline": "code/orchestrators/regenerate_all.py",
-            # Record the project contract, not the runner's patch/minor
-            # version. CI uses Python 3.12 while the maintainer workstation
-            # may use 3.13; the integrity envelope must be cross-runtime
-            # reproducible while still documenting the supported floor.
-            "python": ">=3.12 (pyproject.toml)",
-            "project_version": "0.1.0",
+            # Derive the contract from its authority; runner versions must
+            # not make otherwise identical release envelopes diverge.
+            "python": f"{project['requires-python']} (pyproject.toml)",
+            "project_version": project["version"],
             "orchestrator_sha256": generator_hashes,
         },
         "source_sha256": source_hashes,

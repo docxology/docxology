@@ -90,6 +90,22 @@ class CitationHead(HTMLParser):
         self.head_text_element: str | None = None
         self.tags: dict[str, list[str]] = {}
 
+    @classmethod
+    def parse(cls, text: str):
+        """Parse a complete document, stopping after the real head boundary.
+
+        Feed bounded chunks through HTMLParser's tokenizer rather than cutting
+        at a textual </head>, which can occur inside comments or raw text.
+        Normal incremental ``feed`` remains available to existing callers.
+        """
+        parser = cls()
+        for offset in range(0, len(text), 1024):
+            parser.feed(text[offset:offset + 1024])
+            if parser.head_finished:
+                break
+        parser.close()
+        return parser
+
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         if tag == "template":
             self.template_depth += 1
