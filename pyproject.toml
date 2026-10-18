@@ -18,7 +18,7 @@ dependencies = [
 
 [project.optional-dependencies]
 pdf-extraction = [
-    "pymupdf>=1.24.0",
+    "pymupdf>=1.24.3",
 ]
 browser-qa = [
     "playwright>=1.52.0",

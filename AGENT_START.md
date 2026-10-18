@@ -59,8 +59,6 @@ step. See the [interface contract](docs/operations/agent-interface.md).
 | Synchronize paper CITATION.cff | [`papers/`](papers/), [`code/orchestrators/generate_citation_cff.py`](code/orchestrators/generate_citation_cff.py) | `uv run python3 code/orchestrators/generate_citation_cff.py --apply`, then `--check`; curated citation identity owns DOI roles and registry-verified title/authors, while other fields are preserved |
 | Validate the repository manuscript | [`docs/manuscript/README.md`](docs/manuscript/README.md), [`MANUSCRIPT_STATUS.md`](docs/manuscript/MANUSCRIPT_STATUS.md) | `uv run python3 code/orchestrators/validate_manuscript.py`; `--json` records structural findings, not rendering or publication readiness |
 | Deploy SEO + security tags | [`*.html`](.), [`code/orchestrators/deploy_seo_security.py`](code/orchestrators/deploy_seo_security.py) | `uv run python3 code/orchestrators/deploy_seo_security.py` (idempotent — only adds missing CSP, rel-me, hreflang) |
-| Migrate inline handlers | [`*.html`](.), [`code/orchestrators/migrate_inline_handlers.py`](code/orchestrators/migrate_inline_handlers.py) | `uv run python3 code/orchestrators/migrate_inline_handlers.py` |
-| Optimize font loading | [`*.html`](.), [`code/orchestrators/optimize_font_loading.py`](code/orchestrators/optimize_font_loading.py) | `uv run python3 code/orchestrators/optimize_font_loading.py` |
 
 Settle a finished change in one command — see
 [`docs/operations/settle.md`](docs/operations/settle.md): it classifies dirty paths, runs the tiered

@@ -25,7 +25,6 @@ from docxology_tools.release_controls import (  # noqa: E402
 from docxology_tools.report_paths import (  # noqa: E402
     dated_report_dir,
     dated_report_path,
-    default_latest_file,
     generated_timestamp,
     latest_source_report,
     latest_source_subdir_file,
@@ -182,15 +181,6 @@ def test_stable_generated_at_reuses_timestamp_only_for_equal_json_body(tmp_path:
 
     assert stable_generated_at(path, {"generated_at": "2026-07-18T00:00:00Z", "count": 3}) == "2026-07-17T00:00:00Z"
     assert stable_generated_at(path, {"generated_at": "2026-07-18T00:00:00Z", "count": 4}) is None
-
-
-def test_default_latest_file_returns_first_existing(tmp_path: Path):
-    missing = tmp_path / "missing.json"
-    present = tmp_path / "present.json"
-    present.write_text("{}", encoding="utf-8")
-
-    assert default_latest_file(missing, present) == present
-    assert default_latest_file(missing) is None
 
 
 def test_source_worktree_state_only_exempts_declared_release_evidence(tmp_path: Path):

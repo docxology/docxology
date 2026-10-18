@@ -171,7 +171,7 @@ YouTube iframe policy.
 - **Social meta:** every indexable page with `og:image` must also carry `twitter:card`,
   `og:image:alt`, and `twitter:image:alt`. Generated pages get these from
   `code/src/site_nav.py::social_meta_tags()` or each generator's inline head template;
-  hand-maintained pages get them from `ensure_social_meta.py` (idempotent).
+  hand-maintained pages declare them in their source; `seo_invariants.py` checks the required social metadata.
 - Work-page meta descriptions are ≤160 rendered chars, word-boundary clipped
   (`site_nav.clip_description`).
 

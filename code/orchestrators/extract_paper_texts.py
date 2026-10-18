@@ -4,7 +4,7 @@
 For each paper folder under papers/ that contains at least one PDF:
   - Extract full text to full_text.md
   - Extract embedded images to images/ subfolder
-  - Use PyMuPDF (fitz) for text + image extraction
+  - Use PyMuPDF (pymupdf) for text + image extraction
   - Fall back to pdftotext for text if PyMuPDF fails
   - OCR with tesseract for scanned/image-only PDFs
 
@@ -20,7 +20,7 @@ import subprocess
 import shutil
 from pathlib import Path
 
-fitz = None
+pymupdf = None
 pypdf = None
 HAVE_PYMUPDF = False
 HAVE_PYPDF = False
@@ -29,16 +29,16 @@ _BACKENDS_LOADED = False
 
 def load_pdf_backends() -> None:
     """Load optional PDF modules only after the CLI has parsed its arguments."""
-    global HAVE_PYMUPDF, HAVE_PYPDF, _BACKENDS_LOADED, fitz, pypdf
+    global HAVE_PYMUPDF, HAVE_PYPDF, _BACKENDS_LOADED, pymupdf, pypdf
     if _BACKENDS_LOADED:
         return
     _BACKENDS_LOADED = True
     try:
-        import fitz as pymupdf  # PyMuPDF
+        import pymupdf as pymupdf_module  # PyMuPDF
     except ImportError:
         pass
     else:
-        fitz = pymupdf
+        pymupdf = pymupdf_module
         HAVE_PYMUPDF = True
     try:
         import pypdf as pypdf_module
@@ -57,7 +57,7 @@ def is_scanned_pdf(pdf_path):
     """Check if a PDF is likely scanned (image-only) by checking text coverage on first few pages."""
     load_pdf_backends()
     if HAVE_PYMUPDF:
-        doc = fitz.open(str(pdf_path))
+        doc = pymupdf.open(str(pdf_path))
         text_chars = 0
         for i in range(min(5, len(doc))):
             text_chars += len(doc[i].get_text().strip())
@@ -76,7 +76,7 @@ def extract_text_pymupdf(pdf_path):
     load_pdf_backends()
     if not HAVE_PYMUPDF:
         return []
-    doc = fitz.open(str(pdf_path))
+    doc = pymupdf.open(str(pdf_path))
     pages = []
     for i, page in enumerate(doc):
         text = page.get_text("text")
@@ -155,7 +155,7 @@ def extract_images(pdf_path, output_dir):
     load_pdf_backends()
     if not HAVE_PYMUPDF:
         return []
-    doc = fitz.open(str(pdf_path))
+    doc = pymupdf.open(str(pdf_path))
     extracted = []
 
     for page_num in range(len(doc)):

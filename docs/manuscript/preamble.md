@@ -1,16 +1,14 @@
-# LaTeX Preamble
+# Native PDF preamble
 
-This file records prospective project-local LaTeX additions for a future rendering integration. The local manuscript validator does not execute this block, and no current repository command declares it as a rendering input. Verify compatibility with the selected renderer before using it.
+This reviewed, hash-bound input is staged for docxology/template's combined PDF
+renderer. Body sections cannot inject raw renderer markup. Package and theorem
+declarations below keep the native template's content support explicit.
 
 ```latex
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{geometry}
 \usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{array}
-\usepackage{hyperref}
-\usepackage[capitalise,noabbrev]{cleveref}
-\usepackage{natbib}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\small,breaklines=true,columns=fullflexible}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
 ```

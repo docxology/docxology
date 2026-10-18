@@ -250,18 +250,6 @@ class TestFetchChannel(unittest.TestCase):
         self.assertTrue(any("streams" in u for u in urls_called))
         self.assertTrue(any("shorts" in u for u in urls_called))
 
-    def test_legacy_fetch_channel_returns_only_videos(self):
-        video = {"id": "x", "title": "T", "upload_date": "20230101", "duration": 60, "view_count": 0}
-        runner = _JsonlRunner([video], [], [])
-        videos = yf.fetch_channel("https://example.com/@ch", "personal", runner=runner)
-        self.assertEqual([item["id"] for item in videos], ["x"])
-
-    def test_legacy_fetch_channel_rejects_incomplete_results(self):
-        runner = _JsonlRunner([], RuntimeError("streams failed"), [])
-        with self.assertRaises(yf.IncompleteChannelFetchError) as caught:
-            yf.fetch_channel("https://example.com/@ch", "personal", runner=runner)
-        self.assertEqual(caught.exception.result.failures[0].tab, "streams")
-
 
 class TestSaveLoadJson(unittest.TestCase):
     def test_round_trip(self):

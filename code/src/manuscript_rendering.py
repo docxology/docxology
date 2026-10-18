@@ -14,10 +14,11 @@ import zipfile
 
 import yaml
 
+from docxology_tools.manuscript_template import COVER, TEMPLATE, cover_pdf, native_pdf
 from docxology_tools.generated_outputs import read_generated_output_text
 from docxology_tools.manuscript_validation import MANUSCRIPT_PATH, UniqueKeyLoader, validate_manuscript
 
-TOOLS = {"pandoc": "3.12.1", "pandoc-crossref": "0.3.26", "typst": "0.15.1"}
+TOOLS = {"pandoc": "3.12.1", "pandoc-crossref": "0.3.26", "xelatex": "3.141592653-2.6-0.999998", "bibtex": "0.99e"}
 OUTPUTS = {"html": "docxology-methods.html", "pdf": "docxology-methods.pdf",
            "epub": "docxology-methods.epub", "slides": "docxology-methods.pptx"}
 TIMEOUT = 90
@@ -131,7 +132,7 @@ def validate_artifacts(directory: Path, formats: list[str]) -> dict:
     return artifacts
 
 
-def render_manuscript(root: Path, output: Path) -> dict:
+def render_manuscript(root: Path, output: Path, *, template_root: Path | None = None, template_python: Path | None = None) -> dict:
     root = root.absolute()
     output = new_review_directory(root, output)
     validation = validate_manuscript(root)
@@ -152,6 +153,19 @@ def render_manuscript(root: Path, output: Path) -> dict:
     formats = validation["configured_render_formats"]
     if not formats or any(name not in OUTPUTS for name in formats):
         raise ValueError("Configured formats are not supported by the declared renderer")
+    template_receipt = None
+    if "pdf" in formats:
+        if template_root is None or template_python is None:
+            raise ValueError("PDF requires explicit --template-root and --template-python")
+        if config["render"].get("template") != TEMPLATE or config["paper"].get("cover") != COVER:
+            raise ValueError("PDF requires the pinned template and declared cover producer")
+        for relative in ("docs/manuscript/preamble.md", "code/src/manuscript_template.py"):
+            path = root / relative
+            inputs.append(path)
+            frozen[path] = read_generated_output_text(root, path, newline="")
+            if frozen[path] is None:
+                raise ValueError("Declared native rendering source is missing")
+            source_hashes[relative] = hashlib.sha256(frozen[path].encode("utf-8")).hexdigest()
     tools = toolchain(root)
     commit = run(["git", "rev-parse", "HEAD"], root=root).strip()
     if not re.fullmatch(r"[0-9a-f]{40}", commit):
@@ -189,19 +203,56 @@ def render_manuscript(root: Path, output: Path) -> dict:
         for format_name in formats:
             arguments = [*common, "--output", str(scratch / OUTPUTS[format_name])]
             if format_name == "pdf":
-                arguments += ["--to=typst", "--pdf-engine=typst", "--pdf-engine-opt=--ignore-system-fonts",
-                              "--pdf-engine-opt=--creation-timestamp=0", "-V", "fontsize=10pt"]
+                project = scratch / "native-project"
+                folder = project / "docs/manuscript"
+                folder.mkdir(parents=True)
+                figures = project / "docs/output/figures"
+                figures.mkdir(parents=True)
+                cover_pdf(figures / "docxology-cover.pdf", version=config["paper"]["version"], commit=commit, license_name=config["metadata"]["license"])
+                staged = {key: config[key] for key in ("paper", "authors", "publication", "metadata", "keywords") if key in config}
+                staged = json.loads(json.dumps(staged))
+                staged["paper"]["cover"] = {"image": "../output/figures/docxology-cover.pdf", "alt": COVER["alt"]}
+                staged["rendering"] = {"section_breaks": False, "cover_height_fraction": 0.42}
+                staged["metadata"].update(fontsize="10pt", geometry="margin=0.85in")
+                staged["publication"]["publisher"] = "Daniel Ari Friedman"
+                staged["publication"]["suggested_citation"] = "Friedman, D. A. (2026). docxology: Research, Software, and Citation Index. Repository-methods draft; editorial review pending."
+                (folder / "config.yaml").write_text(yaml.safe_dump(staged, sort_keys=False), encoding="utf-8")
+                (folder / "references.bib").write_text(frozen[inputs[1]], encoding="utf-8")
+                (folder / "preamble.md").write_text(frozen[root / "docs/manuscript/preamble.md"], encoding="utf-8")
+                # The AST has already rejected raw markup/images and bound local
+                # evidence links to the exact repository revision.
+                body = run([*pandoc, "--from=json", "--to=markdown", "--wrap=none"], root=root, data=data)
+                (folder / "00_body.md").write_text(body, encoding="utf-8")
+                worker = project / "native-worker.py"
+                worker.write_text(frozen[root / "code/src/manuscript_template.py"], encoding="utf-8")
+                staged_hashes = {path.relative_to(project).as_posix(): digest(path)
+                    for path in sorted((project / "docs").rglob("*")) if path.is_file()}
+                worker_hash = digest(worker)
+                template_receipt = native_pdf(template_root, template_python, project, worker)
+                after_hashes = {path.relative_to(project).as_posix(): digest(path)
+                    for path in sorted((project / "docs").rglob("*")) if path.is_file()}
+                if after_hashes != staged_hashes or digest(worker) != worker_hash:
+                    raise ValueError("Staged rendering sources changed; no review outputs were published")
+                template_receipt["staged_source_sha256"] = staged_hashes
+                shutil.copyfile(project / "output/pdf/docxology-methods_combined.pdf", scratch / OUTPUTS["pdf"])
+                shutil.copyfile(figures / "docxology-cover.pdf", scratch / "docxology-cover.pdf")
+                shutil.copyfile(project / "native-render.log", scratch / "native-render.log")
+                shutil.rmtree(project)
+                continue
             else:
                 arguments += ["--to=" + {"html": "html5", "epub": "epub3", "slides": "pptx"}[format_name]]
                 if format_name == "slides":
                     arguments += ["--slide-level=2"]
             run(arguments, root=root, data=data)
         artifacts = validate_artifacts(scratch, formats)
+        if template_receipt is not None:
+            artifacts["docxology-cover.pdf"] = {"format": "cover", "bytes": (scratch / "docxology-cover.pdf").stat().st_size,
+                "sha256": digest(scratch / "docxology-cover.pdf"), "alt": COVER["alt"]}
         if any(digest(path) != source_hashes[path.relative_to(root).as_posix()] for path in inputs):
             raise ValueError("Rendering sources changed; no review outputs were published")
         receipt = {"schema_version": "1.0", "evidence_kind": "offline manuscript draft render",
                    "source_sha256": source_hashes,
-                   "source_link_commit": commit, "toolchain": tools, "artifacts": artifacts,
+                   "source_link_commit": commit, "toolchain": tools, "template": template_receipt, "artifacts": artifacts,
                    "bibliography_parser": "Pandoc biblatex reader", "bibliography_entries": len(bibliography),
                    "license": config["metadata"]["license"], "editorial_review": "pending",
                    "human_visual_review": "pending", "scientific_validity_assessed": False,

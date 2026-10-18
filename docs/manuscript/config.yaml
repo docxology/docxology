@@ -1,56 +1,56 @@
-# Repository-system manuscript configuration for docxology.
-# Render formats express intended outputs; local validation does not render them.
-
 paper:
-  title: "docxology: Research, Software, and Citation Index"
-  subtitle: "Source authority, progressive discovery, and commit-bound release evidence"
-  version: "0.3.0-draft"
-  date: "2026-10-13"
-
+  title: 'docxology: Research, Software, and Citation Index'
+  subtitle: Source authority, progressive discovery, and commit-bound release evidence
+  version: 0.4.0-draft
+  date: '2026-10-18'
+  cover:
+    producer: repository-source-flow-v1
+    alt: Reviewed sources pass through shared identity and parsing policy into generated
+      views and commit-bound release evidence. New observations require review before
+      becoming curated claims.
 authors:
-  - name: "Daniel Ari Friedman"
-    orcid: "0000-0001-6232-9096"
-    email: "daniel@activeinference.institute"
-    affiliation: "Active Inference Institute"
-    corresponding: true
-
+- name: Daniel Ari Friedman
+  orcid: 0000-0001-6232-9096
+  email: daniel@activeinference.institute
+  affiliation: Active Inference Institute
+  corresponding: true
 publication:
-  doi: ""
-  version_doi: ""
-  version_record: ""
-  github_repository: "docxology/docxology"
-  year: "2026"
+  doi: ''
+  version_doi: ''
+  version_record: ''
+  github_repository: docxology/docxology
+  year: '2026'
   transmission_bookends:
     enabled: false
     max_prior_releases: 5
     show_steganography: false
-
 keywords:
-  - "research index"
-  - "software catalog"
-  - "bibliography"
-  - "profile repository"
-  - "evidence catalog"
-
+- research index
+- software catalog
+- bibliography
+- profile repository
+- evidence catalog
 metadata:
-  license: "CC-BY-4.0"
-  language: "en"
-
-manuscript_dir: "docs/manuscript"
-
+  license: CC-BY-4.0
+  language: en
+manuscript_dir: docs/manuscript
 render:
   toolchain:
-    pandoc: "3.12.1"
-    pandoc-crossref: "0.3.26"
-    typst: "0.15.1"
+    pandoc: 3.12.1
+    pandoc-crossref: 0.3.26
+    xelatex: 3.141592653-2.6-0.999998
+    bibtex: 0.99e
   formats:
     pdf: true
     html: true
     slides: true
     docx: false
     epub: true
-
+  template:
+    repository: docxology/template
+    revision: 3462d19761cc87d09a0b780ef978fa9efc142723
+    version: 4.0.2
 bibliography:
-  references_path: "docs/manuscript/references.bib"
+  references_path: docs/manuscript/references.bib
   fail_on_missing: true
   fail_on_unused: false

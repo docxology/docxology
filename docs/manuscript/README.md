@@ -51,35 +51,51 @@ uv run python3 code/orchestrators/validate_manuscript.py --json
 
 The read-only validator checks root-relative configuration, section labels, citation-key resolution, unresolved tokens, cross-references, and local references, including reference-style links/images. It checks bounded BibTeX entry delimiters and key inventory, rejecting unclosed entries, stray text, duplicate keys, and unresolved citations. It rejects duplicate YAML keys and non-boolean gate/render settings. It does not validate complete BibTeX field grammar, citation style, TeX rendering, external sources, or publication readiness. `--root PATH` supports disposable repository fixtures; JSON goes to stdout without creating a receipt.
 
-The declared renderer uses Pandoc 3.12.1, pandoc-crossref 0.3.26 (built against that
-Pandoc version), and Typst 0.15.1. It produces HTML, PDF, EPUB3, and PowerPoint
-slides into a new external review directory:
+The PDF uses the native `PDFRenderer.render_combined` API from the committed
+docxology/template revision pinned in `config.yaml`. Pandoc 3.12.1 and
+pandoc-crossref 0.3.26 (built against that Pandoc) serve all formats; the native
+PDF additionally requires XeTeX 3.141592653-2.6-0.999998 and BibTeX 0.99e.
+Provide a local template Git repository containing that commit and a qualified
+Python interpreter with its dependencies. The command exports committed source
+and does not import or modify the template working tree or install packages.
 
 ```bash
-uv run python3 code/orchestrators/render_manuscript.py --output-dir /private/tmp/docxology-manuscript-review --json
+uv run python3 code/orchestrators/render_manuscript.py \
+  --template-root /path/to/template \
+  --template-python /path/to/template-environment/bin/python \
+  --output-dir /path/to/new-review --json
 ```
 
-The parent must exist and have no symlink ancestors. Existing review directories
-are never overwritten. Source structure and the pinned runtime must pass first;
-Pandoc's bibliography reader and crossref/citeproc resolve references. Outputs
-are staged and checked before publication to the review directory. The receipt
-binds source/tool/output hashes and keeps human/editorial approval explicit.
-This command is manual and excluded from ordinary site regeneration; missing
-render tools do not silently claim a rendered draft. Raw renderer markup,
-remote/local figures, and Mermaid require a separately declared integration
-before they are accepted. The prospective LaTeX preamble is not executed.
+The external parent must exist without symlink ancestors; existing review
+directories are never overwritten. The renderer validates structure, freezes
+source bytes, rejects raw body markup and undeclared images, binds repository
+links to HEAD, and parses the bibliography with Pandoc. A declared deterministic
+vector producer writes the native cover under staged `docs/output/figures/`.
+The cover illustrates source authority, shared policy, generated views, and
+release evidence without asserting quantitative results. The reviewed
+`preamble.md` is an executed, hash-bound PDF input.
 
-Manuscript text and original manuscript figures are licensed CC BY 4.0.
-This declaration does not relicense archived papers, third-party artwork,
-repository software, or linked material. Scientific and editorial review remain
-separate from rendering. Inspect each requested format before external release.
+The native worker runs with isolated Python imports, an environment allowlist,
+and a bounded process group lifetime. Trusted template code and TeX still
+execute; these controls are not a network or OS sandbox. Required tools and
+unresolved bibliography/reference diagnostics fail closed. The receipt binds
+template source/dependency metadata, the actual external runtime, staged
+transformations, source/tool/cover/output hashes, and pending human/editorial
+review. Other body figures and Mermaid still require an explicit integration.
 
-The real four-format integration test is explicit:
+HTML, EPUB3, and PowerPoint retain the Pandoc/citeproc renderer. All four formats
+are manual review artifacts, excluded from normal site regeneration. Manuscript
+text and original figures use CC BY 4.0; archived papers, software, artwork, and
+linked third-party material retain their own rights.
+
+Run the real integration explicitly with the same template inputs:
 
 ```bash
-DOCXOLOGY_TEST_RENDER=1 uv run python3 -m pytest code/tests/test_manuscript_rendering.py -q
+DOCXOLOGY_TEST_RENDER=1 DOCXOLOGY_TEMPLATE_ROOT=/path/to/template \
+DOCXOLOGY_TEMPLATE_PYTHON=/path/to/template-environment/bin/python \
+  uv run python3 -m pytest code/tests/test_manuscript_rendering.py -q
 ```
 
-Ordinary test runs skip that integration even when renderer binaries happen to
-be installed. The opt-in run requires the exact declared versions and fails on
-missing or mismatched tools; unit tests always exercise the version boundary.
+Ordinary tests skip the native integration. Successful rendering and assistant
+layout inspection do not establish scientific validity, human approval, or
+publication readiness. Inspect each requested format before external release.

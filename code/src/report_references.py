@@ -21,8 +21,35 @@ from __future__ import annotations
 import re
 import subprocess
 from pathlib import Path
+from urllib.parse import urlsplit
 
 REPORT_PATH_PATTERN = re.compile(r"reports/[A-Za-z0-9._/-]+")
+# These links explicitly resolve historical evidence in the repository archive,
+# rather than requesting an object from the current Pages projection. Keep the
+# exception repository- and commit-specific; local/relative, same-origin, and
+# unpinned links continue to protect their report bytes.
+_URL_TOKEN = re.compile(r"(?<![A-Za-z0-9_=:/?&%.-])(?:https?:)?//[^\s\"'<>()[\]]+")
+_PINNED_ARCHIVE_PATH = re.compile(r"/docxology/docxology/(?:blob|tree)/[0-9a-f]{40}/reports/[A-Za-z0-9._/-]+")
+
+
+def local_report_paths(text: str) -> set[str]:
+    """Exclude direct immutable archive URLs, preserving every other token.
+
+    Parse complete URL spans so a nested GitHub URL in another host's query
+    cannot disable local citation protection for the retention service.
+    """
+    def archive_span(match: re.Match[str]) -> str:
+        token = match.group(0)
+        try:
+            parsed = urlsplit(token)
+        except ValueError:
+            return token
+        if (parsed.scheme == "https" and parsed.netloc == "github.com"
+                and _PINNED_ARCHIVE_PATH.fullmatch(parsed.path)):
+            return " "
+        return token
+    return {match.group(0) for match in REPORT_PATH_PATTERN.finditer(_URL_TOKEN.sub(archive_span, text))}
+
 
 _GIT_GREP_EXCLUDES = (
     ":(exclude)reports/*",
@@ -71,17 +98,18 @@ def prefix_is_referenced(repo_root: Path, rel_prefix: str) -> bool:
 def _git_grep_report_references(repo_root: Path) -> set[str]:
     try:
         result = subprocess.run(
-            ["git", "grep", "-ohE", REPORT_PATH_PATTERN.pattern, "--", ".", *_GIT_GREP_EXCLUDES],
+            ["git", "grep", "-hE", REPORT_PATH_PATTERN.pattern, "--", ".", *_GIT_GREP_EXCLUDES],
             cwd=repo_root,
             capture_output=True,
             text=True,
             check=False,
+            timeout=30,
         )
-    except FileNotFoundError:
-        return set()  # git unavailable: still honor working-tree references
+    except (OSError, subprocess.TimeoutExpired):
+        return set()  # Still honor the independent working-tree reference scan.
     if result.returncode not in (0, 1):
         return set()
-    return {token for token in result.stdout.splitlines() if token}
+    return local_report_paths(result.stdout)
 
 
 def _unignored_working_tree_files(root: Path) -> list[Path] | None:
@@ -132,5 +160,5 @@ def _working_tree_report_references(repo_root: Path) -> set[str]:
             text = path.read_text(encoding="utf-8", errors="ignore")
         except OSError:
             continue
-        references.update(match.group(0) for match in REPORT_PATH_PATTERN.finditer(text))
+        references.update(local_report_paths(text))
     return references

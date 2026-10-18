@@ -329,7 +329,7 @@ def test_unlisted_hand_authored_document_is_never_overwritten(tmp_path: Path):
     readme_path = folder / "README.md"
     readme_path.write_text(hand_authored, encoding="utf-8")
 
-    assert rd.main(["--apply", "--force"], paths=paths) == 0
+    assert rd.main(["--apply"], paths=paths) == 0
     assert readme_path.read_text(encoding="utf-8") == hand_authored
     manifest = json.loads((papers / rd.MANIFEST_FILENAME).read_text(encoding="utf-8"))
     managed_paths = {entry["path"] for entry in manifest["documents"]}
@@ -418,3 +418,9 @@ def test_bibliography_doi_is_rendered_as_canonical_while_artifact_is_labeled(tmp
     assert f'artifact_doi: "{ARTIFACT_DOI}"' in skill
     assert f"- Canonical DOI: {CANONICAL_DOI}" in skill
     assert f"- Artifact DOI: {ARTIFACT_DOI}" in skill
+
+
+def test_removed_force_flag_fails_before_writes():
+    with pytest.raises(SystemExit) as caught:
+        rd.build_argument_parser().parse_args(["--apply", "--force"])
+    assert caught.value.code == 2

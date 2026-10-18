@@ -161,6 +161,16 @@ def dirty_postdeploy_payload_paths(
     not let a source-manifest write record those temporary bytes; generate the
     control tail from a clean worktree instead.
     """
+    try:
+        indexed = subprocess.run(
+            ["git", "ls-files", "-z"], cwd=repo_root, capture_output=True,
+            check=False, timeout=30,
+        )
+    except (OSError, subprocess.TimeoutExpired) as exc:
+        raise SystemExit("unable to inspect indexed Pages inputs") from exc
+    if indexed.returncode != 0:
+        raise SystemExit("unable to inspect indexed Pages inputs")
+    input_paths = {Path(raw) for raw in indexed.stdout.decode().split("\0") if raw}
     result = subprocess.run(
         ["git", "diff", "--name-only", "-z", "HEAD", "--"],
         cwd=repo_root,
@@ -173,7 +183,10 @@ def dirty_postdeploy_payload_paths(
         (
             path
             for path in (Path(raw) for raw in result.stdout.decode().split("\0") if raw)
-            if is_published_path(path)
+            # Staged removals have no input bytes in the index-based projection.
+            # Unstaged deletions and every remaining tracked receipt still block.
+            if path in input_paths
+            and is_published_path(path)
             and is_ephemeral_release_evidence_path(path.as_posix())
             and not is_control_path(path)
             and not (

@@ -8,7 +8,7 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-10-17; only unfinished work and recurring checks remain.
+- Last reviewed: 2026-10-18; only unfinished work and recurring checks remain.
   Completed implementation and source-review history lives in CHANGELOG.md and
   the linked dated reports. Effort estimates below are separate from priority.
 
@@ -165,7 +165,7 @@ Recurring checks below are operating obligations, not unfinished feature work.
   improve pages below the aspirational performance 85, accessibility 95, and
   SEO 95 scores. Keep existing floors and measured results visible; passing
   the ratchet does not establish that every aspirational target was met.
-- Latest candidate review: commit `4b2af321e` reports performance 99 and
+- Retained candidate review: commit `4b2af321e` reports performance 99 and
   130 ms blocking time for `art.html`; all eight sampled pages meet the
   aspirational category targets. The [exact-candidate review](reports/lighthouse_review_2026-10-17.json)
   retains source hashes, environment limits, and the measured 404 target-size
@@ -254,7 +254,10 @@ Recurring checks below are operating obligations, not unfinished feature work.
 - Deliverable: inspect the requested rendered formats and their cross-references; obtain editorial and human visual review before publication
 - Acceptance: a declared render command produces output whose figures and references have been inspected, changed bibliography entries pass a real-parser syntax check outside the structural gate, and a named editorial reviewer's decision is recorded; until then `validate_manuscript.py` is reported only as structural source validation
 - Dependencies: `docs/manuscript/config.yaml`, `code/orchestrators/validate_manuscript.py`, [MANUSCRIPT_STATUS.md](docs/manuscript/MANUSCRIPT_STATUS.md)
-- Open work: complete format inspection and named editorial/human approval.
+- Open work: complete presentation-format inspection and named editorial/human approval.
+  Native-template PDF rendering, bibliography checks, and an informative vector
+  cover are implemented. Assistant inspection covered all eight PDF pages;
+  automated and assistant checks remain separate from human approval.
   The pinned render command, real-parser checks, and CC BY 4.0 manuscript license
   are declared in [the manuscript guide](docs/manuscript/README.md); repeat
   verification whenever sources or rendering tools change.

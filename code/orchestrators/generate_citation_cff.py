@@ -504,11 +504,6 @@ def parse_args() -> argparse.Namespace:
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--check", action="store_true", help="fail if any CFF DOI-role fields are stale")
     mode.add_argument("--apply", action="store_true", help="write every stale CFF DOI-role rendering")
-    mode.add_argument(
-        "--force",
-        action="store_true",
-        help="legacy alias for --apply; retained for existing maintenance callers",
-    )
     return parser.parse_args()
 
 
@@ -523,7 +518,7 @@ def main() -> None:
                 raise SystemExit(f"Stale CITATION.cff DOI-role outputs:\n{shown}")
             print(f"Checked {len(outputs)} CFF DOI-role outputs")
             return
-        if args.apply or args.force:
+        if args.apply:
             write_output_texts({path: outputs[path] for path in stale}, repo_root=REPO_ROOT)
             print(f"Applied {len(stale)} CFF DOI-role updates")
             return

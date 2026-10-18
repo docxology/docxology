@@ -122,7 +122,10 @@ payload lands. The full payload-landing battery uses
 `validate_repo.py --allow-dirty-prepayload-evidence` for this phase only. The
 Pages no-write check permits exactly the existing narrow exception: a dated
 public-source snapshot whose `source_commit` is current HEAD and whose recorded
-worktree was dirty. A clean deployed-SHA snapshot, a wrong commit, malformed
+worktree was dirty. Reviewed evidence removals must be staged before preflight so the Git-index-based
+Pages projection has no retired input bytes. Unstaged deletions and modified
+tracked receipts still block; retention authorization remains separate in the
+reviewed retention manifest. A clean deployed-SHA snapshot, a wrong commit, malformed
 receipt, or other mutable release evidence still fails.
 
 For an explicit pre-commit regeneration check, use

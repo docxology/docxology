@@ -117,18 +117,6 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/sync_publications_html.py --apply",
     },
     {
-        "name": "Metadata enrichment",
-        "outputs": ["papers/*/metadata.json"],
-        "sources": ["papers/paper_metadata.json", "pages/BIBLIOGRAPHY.md"],
-        "command": "uv run python3 code/orchestrators/batch_enrich_metadata.py --apply",
-    },
-    {
-        "name": "Metadata quality improvement",
-        "outputs": ["papers/*/metadata.json"],
-        "sources": ["papers/*/metadata.json"],
-        "command": "uv run python3 code/orchestrators/improve_metadata_quality.py --apply",
-    },
-    {
         "name": "Bibliography exports",
         "outputs": ["bibliography.bib", "bibliography.csl.json", "bibliography.ris", "data/works.json"],
         "sources": [
@@ -692,7 +680,6 @@ UTILITIES = [
     ("gsc_followup_preflight.py", "Prints the pre-GSC-followup checklist (sitemap and robots checks, retired-sitemap probe, indexable priority URLs, exclusion-review steps); see docs/seo/gsc-followup.md", "audit"),
     ("indexnow_urls.py", "Emits the IndexNow URL list from the sitemap index-priority policy", "seo"),
     ("submit_indexnow.py", "Submits index-priority URLs to IndexNow endpoints (Bing, Yandex, Naver)", "seo"),
-    ("ensure_social_meta.py", "Idempotently adds Twitter Card + og:image:alt tags to the hand-maintained pages", "maintenance"),
     ("prune_old_reports.py", "Prunes superseded dated QA screenshot sets only with a reviewed provenance-preserving retention manifest", "maintenance"),
     ("record_scholar_observation.py", "Records an operator-attested direct authenticated Google Scholar observation: rewrites data/scholar-snapshot.json (superseding history) and its SHA-256-bound data/scholar-verification-receipt.json, then validates the pair; run sync_scholar_metrics.py afterward", "maintenance"),
     ("reconcile_paper_dois.py", "Builds an approval-bound canonical DOI versus artifact DOI reconciliation receipt; bibliography DOI is canonical", "maintenance"),
@@ -703,8 +690,6 @@ UTILITIES = [
     ("generate_citation_cff.py", "Synchronizes bibliography title/authors and canonical/artifact DOI roles in per-paper CFF files while preserving non-DOI identifiers", "maintenance"),
     ("render_github_inventory.py", "Renders the primary and fork GitHub inventory pages deterministically from the reviewed cached JSON inventory", "generation"),
     ("deploy_seo_security.py", "Deploys/refreshes the CSP and rel=\"me\" head tags across indexable pages; idempotent and re-run on every rebuild (not a one-shot)", "maintenance"),
-    ("migrate_inline_handlers.py", "One-shot migration: inline event handlers to data-* + addEventListener for CSP (completed; kept for provenance)", "one-shot"),
-    ("optimize_font_loading.py", "One-shot migration: legacy Google Fonts links to self-hosted loading (completed; kept for provenance)", "one-shot"),
 ]
 
 

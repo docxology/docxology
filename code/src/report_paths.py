@@ -7,7 +7,6 @@ import json
 import os
 import subprocess
 from pathlib import Path
-from typing import Optional
 
 from release_controls import is_control_path, source_tree_sha
 from release_evidence import is_ephemeral_release_evidence_path
@@ -328,14 +327,3 @@ def repo_path(path_like: str | Path) -> Path:
 def rel(path: Path) -> str:
     """Return a POSIX repository-relative path."""
     return path.relative_to(REPO_ROOT).as_posix()
-
-
-def default_latest_file(*paths: Path) -> Optional[Path]:
-    """Return the first existing path from the given list.
-
-    Useful for backward-compatible checks against multiple legacy report names.
-    """
-    for path in paths:
-        if path.exists():
-            return path
-    return None

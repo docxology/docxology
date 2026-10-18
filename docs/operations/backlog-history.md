@@ -12,13 +12,13 @@ affected orchestrators' `--check` gates pass):
 
 Review-pass fixes:
 - `code/orchestrators/submit_indexnow.py` — catch `URLError` (exit 1, no traceback).
-- `code/orchestrators/ensure_social_meta.py` — HTML-escape injected og/twitter values.
+- the retired social metadata migration — HTML-escape injected og/twitter values.
 - `code/orchestrators/build_evidence_page.py` — guard empty `claim["sources"]`.
 - `code/orchestrators/build_catalog.py` — remove fabricated stale fallback counts
   (works/software are required inputs).
 - `code/orchestrators/generate_feed.py` — guard non-numeric `year` in the sort key.
 - `code/orchestrators/build_paper_pages.py` — fail loudly on per-work render errors.
-- `code/orchestrators/migrate_inline_handlers.py` — correct the `data-nav-toggle` docstring.
+- the retired inline-handler migration — correct the `data-nav-toggle` docstring.
 - `code/orchestrators/generate_citation_cff.py` — YAML-escape title/version/names;
   grant the DAF ORCID only to Daniel Friedman.
 - `code/src/youtube_fetcher.py` — reject impossible `upload_date` values.
@@ -69,7 +69,7 @@ Live-verification repair pass (PRs #16/#17) plus a CI-robustness PR:
   stamps are git's auto-lengthened short form (`8ecdaa07`, 8 chars), so
   `8ecdaa07 != 8ecdaa0` retried through the whole grace window; (b) the
   expectation target itself was unsatisfiable — page stamps are deliberately
-  reused across non-rendering commits (`build_stamp.reuse_or_current`), so
+  reused across non-rendering commits (the former stamp-reuse helper), so
   "stamp == main HEAD" can stay stale for weeks on a fresh deploy. Fixed with
   prefix stamp semantics plus an artifact-stamp expectation (the committed
   `index.html`), and — once the freshness step passed for the first time — a

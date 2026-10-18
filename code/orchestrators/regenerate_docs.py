@@ -1420,11 +1420,6 @@ def build_argument_parser() -> argparse.ArgumentParser:
         type=Path,
         help=f"generated-document ownership manifest (default: papers/{MANIFEST_FILENAME})",
     )
-    parser.add_argument(
-        "--force",
-        action="store_true",
-        help="deprecated compatibility flag; it never overrides explicit document ownership",
-    )
     return parser
 
 
@@ -1440,8 +1435,6 @@ def main(
         parser.error("--adopt-existing requires --apply")
 
     configure_logging()
-    if args.force:
-        log.warning("--force is deprecated and does not override the generated-document ownership manifest")
 
     try:
         metadata = load_metadata(paths=paths)

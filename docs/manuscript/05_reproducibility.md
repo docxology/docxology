@@ -27,4 +27,13 @@ Record the tested commit, exact command, runtime, exit status, and receipt scope
 
 ## Manuscript reproducibility
 
-`validate_manuscript.py` is read-only and can inspect a disposable fixture with `--root PATH`. Its JSON states that rendering and publication-readiness assessment were not performed. The pinned manual renderer and its command are documented in [the manuscript guide](README.md). Its receipt binds source, tool, and output hashes; it does not grant human or editorial approval. No token producer or figure-rendering pipeline is declared.
+`validate_manuscript.py` is read-only and can inspect a disposable fixture with `--root PATH`. Its JSON states that rendering and publication-readiness assessment were not performed. The pinned manual renderer and its command are documented in [the manuscript guide](README.md). Its receipt binds source, tool, and output hashes; it does not grant human or editorial approval. No generated-value token producer is declared. The native cover has an explicit vector producer whose source and output are bound in the render receipt.
+
+## Manuscript rendering inputs
+
+The [rendering guide](README.md) declares the native template revision and tools,
+an explicit external dependency interpreter, staged transformations, and a
+deterministic vector cover. The receipt binds these inputs and output hashes.
+The template checkout may contain unrelated work: only the pinned committed
+export is executed. Native PDF rendering is an explicit review operation and
+does not run as part of site regeneration.

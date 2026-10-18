@@ -118,15 +118,6 @@ def reuse_on_disk_stamp(candidate: str, on_disk: str | None) -> str:
     return STAMP_HTML_RE.sub(lambda _match: disk_anchor, candidate, count=1)
 
 
-def reuse_or_current(existing_html: str | None = None) -> str:
-    """Return a current footer; stamp reuse requires a complete rendered page.
-
-    Retained for compatibility. Call ``reuse_on_disk_stamp(candidate, existing)``
-    after rendering instead, so changed content cannot inherit old provenance.
-    """
-    return footer_build_stamp_html()
-
-
 def build_stamp_text(repo_root: Path | str | None = None) -> str:
     """The stamp label: ``build <short-sha> <YYYY-MM-DD>``."""
     sha, stamp_date = build_stamp_info(repo_root)

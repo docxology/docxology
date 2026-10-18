@@ -19,3 +19,18 @@ Local structural, generated-output, and browser checks have distinct scopes. The
 ## Manuscript construction method
 
 Implementation statements link a source owner or runbook. Volatile catalog totals remain in the [generated count snapshot](../../reports/current_counts.md). The draft contains no unresolved generated-value tokens or new quantitative results. Future measurements require identified inputs, a repeatable method, dated receipts, and an interpretation boundary before they enter manuscript prose.
+
+## Agent inspection and bounded diagnostics
+
+The [agent interface](../operations/agent-interface.md) exposes versioned JSON
+status and an ordered generation plan derived from the same registry as the
+writers. Inspection does not grant validation or release status. The
+[backend profiler](../operations/backend-profiling.md) provides fixed, read-only
+timing and tracing workloads under the qualified Python runtime. It binds source
+bytes, runtime, results, and index membership; changed inputs invalidate an
+observation. Timing comparisons require matched workload and tracing conditions.
+
+Generation cache inputs include the interpreter pin, project metadata, and lock
+file as well as declared sources. This allows dependency-only changes to trigger
+rebuilding. A cache hit is an execution decision and carries no independent
+claim of scientific correctness or deployed freshness.

@@ -103,12 +103,12 @@
     {
       "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
       "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
-      "previous_sha256": "409aec8677cc003fd91d9f9fbd43fd115abe89538cd8e9b47e6a67325649bd57",
-      "current_sha256": "4ba75ef54b5a219980ca7780a261c188ed1cab533dcca673ad84d637855fa50d",
+      "previous_sha256": "4ba75ef54b5a219980ca7780a261c188ed1cab533dcca673ad84d637855fa50d",
+      "current_sha256": "f3d822ab108d6ae8fe4bd97ee9d475b99c109d5a9830e327e54f0dff83aadbc8",
       "decision": "acknowledged",
       "decided_by": "Codex",
-      "decided_at": "2026-10-16T21:45:35Z",
-      "rationale": "GitHub dominant-language metadata returned to Python; this is repository telemetry and does not revise the scientific work.",
+      "decided_at": "2026-10-18T19:17:37Z",
+      "rationale": "Fresh GitHub REST comparison changes updated_at only. Repository identity, URL, primary language, and stars are unchanged; no curated scientific or catalog claim changes are required.",
       "curated_targets": []
     },
     {
@@ -125,12 +125,12 @@
     {
       "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/fep_lean",
       "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
-      "previous_sha256": "b5f46b30b46f6e70f228bda033c8db9b29639f2612d38282995ccc2127239566",
-      "current_sha256": "4dfb01505954bb6e1b53c9fe8c7b94d187f25350d8dc80b0804e3a32d17dd94e",
+      "previous_sha256": "4dfb01505954bb6e1b53c9fe8c7b94d187f25350d8dc80b0804e3a32d17dd94e",
+      "current_sha256": "9680c73771939fd2efa596c13c2eb3f11375a16cab451cfcf21acee9aa78c4f1",
       "decision": "acknowledged",
       "decided_by": "Codex",
-      "decided_at": "2026-10-16T21:45:35Z",
-      "rationale": "Repository activity changed; retain canonical identity and curated scientific claims.",
+      "decided_at": "2026-10-18T19:17:37Z",
+      "rationale": "Fresh GitHub REST comparison changes updated_at only. Repository identity, URL, primary language, and stars are unchanged; no curated scientific or catalog claim changes are required.",
       "curated_targets": []
     },
     {

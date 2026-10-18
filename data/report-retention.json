@@ -4,7 +4,7 @@
     "purpose": "Provenance-preserving retention plan for superseded dated report artifacts.",
     "before_removal": "Every removed path needs a reviewed entry with its original generation time, content hash, and durable replacement location.",
     "default": "retain",
-    "pages_projection": "Current browser and visual QA manifests remain on Pages; visual-QA screenshot binaries remain committed in GitHub with manifest paths and SHA-256 digests, but are excluded from the bounded Pages artifact rather than pruned."
+    "pages_projection": "Current referenced QA evidence remains available. Superseded, unreferenced screenshot trees may be removed from the checkout only with reviewed entries; committed history preserves their original bytes. Pages projection retention is evaluated separately."
   },
   "entries": [
     {
@@ -86,6 +86,126 @@
       "replacement_location": "git:2fea5484abb639f8a0b6d85c1973265271e0683d",
       "decision": "remove-from-checkout",
       "reviewed_by": "omp Main agent + principal (2026-09-16 budget review: superseded by 2.6.0 canonical version; git history + Zenodo record 22653315 retain it)"
+    },
+    {
+      "path": "reports/visual-qa/2026-09-16",
+      "generated_at": "2026-09-16T16:14:09Z",
+      "provenance_sha256": "e41354fad2d5cda6639c6c56b24aa5dc5bab0ee0808ecdfb360b297415c2d13d",
+      "replacement_location": "https://github.com/docxology/docxology/tree/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/visual-qa/2026-09-16",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Codex automated retention review (2026-10-18)",
+      "inventory_sha256": "1f437c3ddb51ed661618435218f14117be2727e1d7ba5bd89d50b7a2453635e0",
+      "bytes": 55028983
+    },
+    {
+      "path": "reports/visual-qa/2026-09-18",
+      "generated_at": "2026-09-18T03:32:15Z",
+      "provenance_sha256": "d2857876765fc528b81b0369fe726d38dbaa5102a48b748b8d5933ec664a3497",
+      "replacement_location": "https://github.com/docxology/docxology/tree/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/visual-qa/2026-09-18",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Codex automated retention review (2026-10-18)",
+      "inventory_sha256": "74337c272ef234a6009f6651dc6551f8d5aeea16601cdfb762a2c8e19079b9d2",
+      "bytes": 56066988
+    },
+    {
+      "path": "reports/visual-qa/2026-09-29",
+      "generated_at": "2026-09-29T14:47:12Z",
+      "provenance_sha256": "90a1fc102a4516d1990583816f0225206be2896d828fb01927d8fcd115b2e3c3",
+      "replacement_location": "https://github.com/docxology/docxology/tree/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/visual-qa/2026-09-29",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Codex automated retention review (2026-10-18)",
+      "inventory_sha256": "79c3d54df19e4fe12aca159771db2c2fcf3362b58f48b407f29c54c4cb67d665",
+      "bytes": 57984570
+    },
+    {
+      "path": "reports/visual-qa/2026-09-30",
+      "generated_at": "2026-09-30T04:48:31Z",
+      "provenance_sha256": "acdfd563ed606374390b3553f5333afdfcb16e3c0d07e9044e8d19551d4b8b10",
+      "replacement_location": "https://github.com/docxology/docxology/tree/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/visual-qa/2026-09-30",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Codex automated retention review (2026-10-18)",
+      "inventory_sha256": "0cade38d740f08ab2bfb2afe9c1cd8829a298077af7d72098b5438ab15a2c340",
+      "bytes": 57057034
+    },
+    {
+      "path": "reports/visual-qa/2026-10-02",
+      "generated_at": "2026-10-02T22:07:03Z",
+      "provenance_sha256": "4743a553aaeec1f8bd1a7abe5d29e10ebff8131cd7bc1b51847f3480588816a6",
+      "replacement_location": "https://github.com/docxology/docxology/tree/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/visual-qa/2026-10-02",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Codex automated retention review (2026-10-18)",
+      "inventory_sha256": "268e9df40b98863e83f831f2b9e829cca0fdda7bec56b14ba140b45c0ffc76fc",
+      "bytes": 58657019
+    },
+    {
+      "path": "reports/visual-qa/2026-10-03",
+      "generated_at": "2026-10-03T01:09:46Z",
+      "provenance_sha256": "2e6ac4c070ed950efb0f8fdf5c877ed6d6179d190cb04f071d0d556be8b731cb",
+      "replacement_location": "https://github.com/docxology/docxology/tree/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/visual-qa/2026-10-03",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Codex automated retention review (2026-10-18)",
+      "inventory_sha256": "87cd41cdeba15b7482ee76db4e1cada617fa96b9dee95a6cd87ae6b0de9c47dd",
+      "bytes": 49169250
+    },
+    {
+      "path": "reports/browser-smoke/2026-09-16",
+      "generated_at": "2026-09-16T16:14:29Z",
+      "provenance_sha256": "f9ec4d235d276fab067ba6e0aa0bf14d4f978d307fa5151fc643a815e6731bc9",
+      "replacement_location": "https://github.com/docxology/docxology/tree/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/browser-smoke/2026-09-16",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Codex automated retention review (2026-10-18)",
+      "inventory_sha256": "7016009fb716db6e2418c8d03a6a603149dbb67c9cc2cfbf48ab1015e1d1e0d9",
+      "bytes": 1485700
+    },
+    {
+      "path": "reports/browser-smoke/2026-09-18",
+      "generated_at": "2026-09-18T03:31:24Z",
+      "provenance_sha256": "2267019ad24d44a9cbb5f2cf5b85226e4c28963e48e35be6c312e55c12671d46",
+      "replacement_location": "https://github.com/docxology/docxology/tree/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/browser-smoke/2026-09-18",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Codex automated retention review (2026-10-18)",
+      "inventory_sha256": "748c8f9551d1a3ca222f48d198dbdac9d01c1713e82bbe2296dbc9665a3ca58a",
+      "bytes": 1300100
+    },
+    {
+      "path": "reports/browser-smoke/2026-09-29",
+      "generated_at": "2026-09-29T04:06:22Z",
+      "provenance_sha256": "ad6c9d2465bf194efe53dda35bd67c958f80841f90bdb8cc0d4609e3a84f9105",
+      "replacement_location": "https://github.com/docxology/docxology/tree/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/browser-smoke/2026-09-29",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Codex automated retention review (2026-10-18)",
+      "inventory_sha256": "bc09a5d0d18fee88007bccd06dcfb5975ab8dfa0cbe75c8c7b73b0d5bacef24c",
+      "bytes": 1305745
+    },
+    {
+      "path": "reports/browser-smoke/2026-09-30",
+      "generated_at": "2026-09-30T04:44:43Z",
+      "provenance_sha256": "c235772d7d189dd9c45503e5ec801ac782ddd335a82fc55405831a08205fa225",
+      "replacement_location": "https://github.com/docxology/docxology/tree/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/browser-smoke/2026-09-30",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Codex automated retention review (2026-10-18)",
+      "inventory_sha256": "75077870dd836262bd8763f456f6882a130b0573d3caef05c89c0623b3a6556f",
+      "bytes": 1304232
+    },
+    {
+      "path": "reports/browser-smoke/2026-10-02",
+      "generated_at": "2026-10-02T22:12:05Z",
+      "provenance_sha256": "0bad3ccd813296cc57e73e8a6208464aa2a2c8696436dafa891e493811168767",
+      "replacement_location": "https://github.com/docxology/docxology/tree/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/browser-smoke/2026-10-02",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Codex automated retention review (2026-10-18)",
+      "inventory_sha256": "0763e92f2c02aa0517529f57888a08fb004335d35ff5f5b0180371e9105ff978",
+      "bytes": 1313474
+    },
+    {
+      "path": "reports/browser-smoke/2026-10-03",
+      "generated_at": "2026-10-03T01:09:10Z",
+      "provenance_sha256": "317b94cde0dbf94b2dd39a978f7e171795e1c08c6b64281e66afecd6f086c6aa",
+      "replacement_location": "https://github.com/docxology/docxology/tree/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/browser-smoke/2026-10-03",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Codex automated retention review (2026-10-18)",
+      "inventory_sha256": "dc3dd84fd7698af02587e4b1e70df47c5395eb480928ba35b4dab1c0390e041a",
+      "bytes": 1405401
     }
   ]
 }

@@ -4,8 +4,7 @@
 `visual_qa.py` and `browser_smoke.py` each write a fresh dated subdirectory of full-page
 screenshots every run (`reports/visual-qa/YYYY-MM-DD/`, `reports/browser-smoke/YYYY-MM-DD/`),
 and `validate_repo.py` only ever reads the LATEST set via `latest_subdir_file(...)`. The
-older sets are pure history — at ~29 MB per visual-qa set they dominate the repo's tracked
-size (88 MB of 100 MB at last count). Git history still retains anything pruned here, so
+unreferenced older sets are historical evidence. Git history retains anything pruned here, so
 this only trims the checked-out tree and bounds future growth. Before an apply run, every
 removal must also carry a reviewed provenance record in `data/report-retention.json`.
 
@@ -22,7 +21,7 @@ still references it.
 Usage:
     uv run python3 code/orchestrators/prune_old_reports.py            # dry-run (default)
     uv run python3 code/orchestrators/prune_old_reports.py --apply --retention-manifest data/report-retention.json
-    uv run python3 code/orchestrators/prune_old_reports.py --apply --keep 2  # retain 2 latest
+    uv run python3 code/orchestrators/prune_old_reports.py --apply --keep 2 --retention-manifest data/report-retention.json  # retain 2 latest
 """
 
 from __future__ import annotations

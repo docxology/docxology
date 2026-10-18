@@ -496,3 +496,14 @@ curl -L -I https://danielarifriedman.com/papers/<folder>/
 curl -L -I https://danielarifriedman.com/papers/<folder>/README.md
 curl -L -I https://danielarifriedman.com/papers/<folder>/<paper>.pdf
 ```
+
+
+## Historical pairing evidence and bounded hosting
+
+Historical decision records may cite a source report through an exact-commit
+GitHub blob URL after its committed object has been verified. The original
+reports remain in repository history and the current checkout. This preserves
+the evidence used for a past decision without requiring each superseded scan
+body in the Pages projection. The shared citation scan excludes only exact
+immutable links to this repository's report archive; local, same-origin, and
+unpinned references still protect report files. Current scans remain published.

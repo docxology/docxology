@@ -1,13 +1,12 @@
 """Registry of generic, non-paper-specific metadata text.
 
-Two manual enrichers (``batch_enrich_metadata.py`` and
-``improve_metadata_quality.py``) and an older ``regenerate_docs.py`` fallback
+Retired metadata writers and an older ``regenerate_docs.py`` fallback
 filled empty ``methods`` / ``key_findings`` fields with *domain templates* —
 every entomology folder received "Field observation and behavioral assays",
 every computational folder "Deterministic software pipeline design", and so on.
-``code/src/generation_plan.py`` already excludes those enrichers from the
-rebuild because they "can introduce inferred methods/findings"; this module is
-the render-side half of that policy. Generated paper documents use it to tell a
+Those source writers have been removed. This detector remains necessary to
+recognize historical filler in retained metadata; it does not authorize new
+inferred methods or findings. Generated paper documents use it to tell a
 recorded, paper-specific method or finding apart from template filler, and
 show only the former.
 """
@@ -21,7 +20,7 @@ from typing import Any, Iterable
 # Union of every template list the enrichers and the legacy fallback emitted.
 TEMPLATE_METHOD_NAMES: frozenset[str] = frozenset(
     {
-        # batch_enrich_metadata.DOMAIN_METHODS
+        # Historical bulk-writer method seeds
         "Deterministic software pipeline design",
         "Reproducible workflow orchestration",
         "Data-driven analysis and visualization",
@@ -58,7 +57,7 @@ TEMPLATE_METHOD_NAMES: frozenset[str] = frozenset(
         "Theoretical analysis and synthesis",
         "Empirical data collection",
         "Cross-disciplinary integration",
-        # improve_metadata_quality.generate_methods domain fallback
+        # Historical targeted-writer domain fallback
         "Bayesian modeling and inference",
         "Narrative analysis",
         "Visual and symbolic analysis",
@@ -74,7 +73,7 @@ TEMPLATE_METHOD_NAMES: frozenset[str] = frozenset(
         "Theoretical synthesis",
         "Analysis",
         "Modeling",
-        # legacy regenerate_docs.extract_methods_from_metadata fallback
+        # Historical paper-document method fallback
         "Field observation",
         "Behavioral assays",
         "Generative modeling",

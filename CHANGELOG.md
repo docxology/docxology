@@ -2,6 +2,21 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-10-18
+
+- **Native manuscript PDF:** switched the repository-methods PDF to the pinned
+  docxology/template combined renderer, with an informative vector cover and
+  source/template/runtime/tool/output bindings. Kept explicit external review
+  destinations and pending human/editorial approval.
+- **Maintained interfaces:** removed unused compatibility helpers, retired
+  metadata writers, completed HTML migrations, and obsolete force aliases.
+  Updated caller documentation and moved PDF extraction to `pymupdf` imports.
+- **Report retention:** removed superseded, unreferenced QA screenshot trees
+  using reviewed provenance records. Current captures and permanent publication
+  identities remain intact; original capture bytes remain in Git history.
+- **Documentation accuracy:** updated manuscript methods and corrected stale
+  workstation authentication/path claims in the standalone webhook guide.
+
 ## 2026-10-17
 
 - **Python 3.15 backend:** qualified the current runtime and locked dependencies,

@@ -1,4 +1,4 @@
-"""docxology_tools — canonical import surface for the legacy flat modules.
+"""docxology_tools — canonical import surface for the shared source modules.
 
 ``code/src/*.py`` (report_paths, site_nav, publication_pairing, ...) are plain
 top-level modules. Historically every orchestrator and test inserted
@@ -54,7 +54,7 @@ from pathlib import Path
 _SRC_DIR = Path(__file__).resolve().parents[1]
 _ORCH_DIR = _SRC_DIR.parent / "orchestrators"
 
-# The one canonical bootstrap: code/src so the legacy flat modules resolve,
+# The one canonical bootstrap: code/src so the shared source modules resolve,
 # code/orchestrators so the src->orchestrator cross-imports (seo_invariants)
 # and the flat orchestrator imports used by tests keep working wherever the
 # package is imported from.
@@ -66,12 +66,13 @@ for _dir in (_SRC_DIR, _ORCH_DIR):
 # Namespace window: docxology_tools.<flat_module> resolves against code/src.
 __path__ = [str(_SRC_DIR)]
 
-#: Legacy flat modules (``code/src/*.py``) reachable through this package.
+#: Shared source modules (``code/src/*.py``) reachable through this package.
 MODULES: tuple[str, ...] = (
     "backend_profiling",
     "abstract_text",
     "author_entities",
     "manuscript_rendering",
+    "manuscript_template",
     "artifact_budget",
     "biblio_table",
     "bibliography_links",
@@ -144,7 +145,7 @@ class _ReuseModuleLoader(importlib.abc.Loader):
 
 
 class _CrossFormAliasFinder:
-    """meta_path hook: flat and dotted imports of a legacy module share one
+    """meta_path hook: flat and dotted imports of a shared module share one
     module object (see the module docstring for why).
 
     Submodule imports outside ``MODULES`` are untouched and keep flowing

@@ -50,7 +50,7 @@ lint = [
 requires-dist = [
     { name = "pillow", specifier = ">=13.0.0" },
     { name = "playwright", marker = "extra == 'browser-qa'", specifier = ">=1.52.0" },
-    { name = "pymupdf", marker = "extra == 'pdf-extraction'", specifier = ">=1.24.0" },
+    { name = "pymupdf", marker = "extra == 'pdf-extraction'", specifier = ">=1.24.3" },
     { name = "pypdf", specifier = ">=5.0" },
     { name = "pytest", specifier = ">=8.0" },
     { name = "pytest-xdist", specifier = ">=3.6" },

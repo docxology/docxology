@@ -14,7 +14,7 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-10-17T09:22:28Z
+Generated: 2026-10-18T19:15:47Z
 
 Current public metrics: 223 curated works; 166 catalogued software repositories (125 owned + 41 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 239 docxology + 45 AII public repositories (177 primary, 107 forks).
 

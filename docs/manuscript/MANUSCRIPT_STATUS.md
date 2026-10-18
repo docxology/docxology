@@ -1,45 +1,30 @@
 # Manuscript status — docxology
 
-As of 2026-10-13, this is a source-backed repository-methods draft describing
-the public research/software/citation index and its static website. It is
-separate from the research publications archived under [papers/](../../papers/).
+As of 2026-10-18, this is a source-backed repository-methods draft describing
+the public research/software/citation index and its static website. Archived
+research publications remain separate under [papers/](../../papers/).
 
-## Established source and rendering scope
+Numbered sections describe source authority, stable identities, shared policy,
+ordered generation, progressive discovery, agent inspection, and revision-bound
+evidence. Implementation claims link repository sources and runbooks; volatile
+totals belong in generated or dated evidence. The bibliography identifies the
+repository from `CITATION.cff`; no manuscript DOI or comparative study is assigned.
 
-- Numbered sections describe source authority, stable identity, shared policy,
-  ordered generation, progressive discovery, and revision-bound evidence.
-- Implementation claims link repository sources and runbooks. Volatile catalog
-  totals remain in generated or dated evidence surfaces.
-- The bibliography identifies the repository from `CITATION.cff`; no new
-  manuscript DOI or external study is assigned.
-- `validate_manuscript.py` remains a read-only structural source gate.
-- `render_manuscript.py` declares pinned Pandoc/crossref/Typst tools and manual
-  HTML/PDF/EPUB/PowerPoint outputs with a source/tool/output hash receipt. It
-  uses a real bibliography parser, resolves cross-references, and preserves
-  prior review directories on failure. See [the command and scope](README.md).
-- The explicit offline integration ran successfully on 2026-10-13 with Pandoc
-  3.12.1, pandoc-crossref 0.3.26, and Typst 0.15.1. It produced all four declared
-  formats, parsed the bibliography, and checked output hashes/package integrity.
-  This is automated render evidence; format layout approval remains pending.
-- Manuscript text and original manuscript figures use CC BY 4.0. Archived and
-  third-party material retain their own rights.
+`validate_manuscript.py` is the structural source gate. The explicit renderer
+uses the committed docxology/template 4.0.2 combined-PDF API, Pandoc, crossref,
+XeLaTeX, and BibTeX. It produces an informative vector cover from a declared
+producer. HTML, EPUB, and PowerPoint use the existing Pandoc/citeproc pipeline.
+The [render command](README.md) writes a new external review directory and binds
+source, tool, template export, external Python runtime, cover, and output hashes.
+Prior review directories are preserved on failure. Template code and the reviewed
+LaTeX preamble execute as trusted inputs; process isolation is not an OS sandbox.
 
-## Separate, unfinished evidence
-
-Human visual and editorial approval, scientific validity, comparative results,
-and publication readiness remain unverified. A successful render or automated
-artifact check establishes neither approval nor publication readiness. Rendered
-outputs stay in explicit external review directories until reviewed publication
-is deliberately requested; they are not added to the research bibliography.
-Inspect PDF pages, HTML links, and the EPUB/PowerPoint presentation layouts.
-
-## Verification
-
-```bash
-uv run python3 code/orchestrators/validate_manuscript.py --json
-uv run python3 code/orchestrators/render_manuscript.py --output-dir /private/tmp/docxology-manuscript-review --json
-```
-
-Report structural validation and actual rendering separately. Repository-wide
-checks remain governed by [development.md](../operations/development.md) and
-[release-integrity.md](../operations/release-integrity.md).
+Manuscript text and original figures use CC BY 4.0. Archived publications and
+third-party material retain their own rights. Automated rendering, package/text
+checks, and assistant page inspection remain separate from named human visual
+approval, editorial review, scientific validity, and publication readiness.
+The native four-format integration passed on 2026-10-18; assistant inspection
+covered every page of the eight-page PDF and corrected cramped tables. No text
+blocks escaped page bounds. This records draft layout inspection only.
+Named human and editorial approvals remain pending. Outputs are review drafts and are not new
+research bibliography entries or Zenodo deposits.

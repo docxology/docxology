@@ -66,6 +66,10 @@ across flat modules — `load_json` exists in both `youtube_fetcher` and
 | `site_nav.py` | Shared site navigation HTML (incl. Agent Map) for generated pages |
 | `sitemap_policy.py` | Index-priority URL policy for `sitemap.xml` + IndexNow (source of truth for the URL set) |
 | `software_table.py` | Shared iteration over `pages/SOFTWARE.md` repository tables |
+| `backend_profiling.py` | Fixed read-only timing/tracing workloads and source/runtime bindings |
+| `manuscript_validation.py` | Structural manuscript source and configuration checks |
+| `manuscript_rendering.py` | Explicit four-format draft rendering and hash-bound receipts |
+| `manuscript_template.py` | Pinned native template export, isolated PDF worker, and deterministic informative cover |
 | `youtube_fetcher.py` | YouTube channel metadata fetcher using yt-dlp |
 
 ## `code/orchestrators/` — runnable scripts
@@ -75,34 +79,36 @@ Grouped by role; per-script outputs, sources, and rebuild commands live in
 
 | Role | Scripts |
 | --- | --- |
+| **Agent inspection / diagnostics** | `agent.py` (versioned status and command plan), `profile_backend.py` (fixed read-only Python 3.15 workloads) |
+| **Manuscript review** | `validate_manuscript.py`, `render_manuscript.py` (native template PDF plus HTML/EPUB/PowerPoint) |
 | **Driver / gate** | `regenerate_all.py` (ordered rebuild), `validate_repo.py` (runs every `--check` + invariants), `build_generated_manifest.py` (writes `GENERATED.md` itself) |
-| **Bibliography & works** | `export_bibliography.py`, `sync_publications_html.py`, `build_work_pages.py`, `build_paper_pages.py`, `batch_enrich_metadata.py`, `improve_metadata_quality.py`, `regenerate_docs.py`, `generate_citation_cff.py`, `extract_paper_texts.py` |
+| **Bibliography & works** | `export_bibliography.py`, `sync_publications_html.py`, `build_work_pages.py`, `build_paper_pages.py`, `regenerate_docs.py`, `generate_citation_cff.py`, `extract_paper_texts.py` |
 | **Software & repos** | `sync_software_html.py`, `build_github_inventory.py`, `classify_repositories.py` |
-| **Site pages** | `build_domain_pages.py`, `generate_pillar_pages.py`, `build_video_pages.py`, `build_catalog.py`, `build_exports_page.py`, `build_updates_page.py`, `build_evidence_page.py`, `build_search_index.py`, `sync_site_facts.py`, `ensure_agent_navigation.py`, `ensure_social_meta.py` |
+| **Site pages** | `build_domain_pages.py`, `generate_pillar_pages.py`, `build_video_pages.py`, `build_catalog.py`, `build_exports_page.py`, `build_updates_page.py`, `build_evidence_page.py`, `build_search_index.py`, `sync_site_facts.py`, `ensure_agent_navigation.py` |
 | **Media & art** | `fetch_youtube_data.py`, `fetch_video_transcripts.py`, `build_artwork_index.py`, `generate_og_images.py` |
 | **Resume** | `build_resume.py` |
 | **Counts & integrity** | `build_current_counts.py`, `build_coverage_exceptions.py`, `build_agent_index.py`, `build_pages_artifact.py`, `build_release_integrity.py`, `build_reconciliation_report.py`, `audit_publication_skills.py` |
 | **Publication sync (network)** | `refresh_public_sources.py`, `refresh_public_source_inventory.py`, `sync_paired_publications.py`, `record_scholar_observation.py`, `sync_scholar_metrics.py`, `add_zenodo_only.py`, `check_zenodo_uncatalogued.py` |
 | **SEO & indexing** | `build_sitemap.py`, `generate_feed.py`, `indexnow_urls.py`, `submit_indexnow.py`, `gsc_followup_preflight.py` |
 | **QA & audits** | `audit_assets.py`, `accessibility_audit.py`, `check_external_links.py`, `build_external_link_triage.py`, `browser_smoke.py`, `browser_qa.py`, `visual_qa.py`, `verify_live_site.py` |
-| **Maintenance / one-shot** | `prune_old_reports.py`, `deploy_seo_security.py`, `migrate_inline_handlers.py`, `optimize_font_loading.py` |
+| **Maintenance** | `prune_old_reports.py`, `deploy_seo_security.py` |
 
 ## Deploy topology
 
 The live site (`https://danielarifriedman.com/`) is served by GitHub Pages from
 the **public** `docxology/docxology` repository (`pages.yml`, branch `main`).
-The working checkout's default remote is `docxology-private`. Deploying means
-pushing the same `main` history to **both** remotes:
+Verify that `origin` resolves to the intended public repository before
+publication. Land reviewed work through the [settle driver](../docs/operations/settle.md)
+on a work branch, then use an ordinary fast-forward push to `origin`'s `main`.
+Observe the exact pushed commit's validation and `pages.yml` run:
 
 ```bash
-git push docxology-private main
-git push https://github.com/docxology/docxology.git main:main
+git remote -v
+gh run list --repo docxology/docxology --workflow pages.yml
 ```
 
-The private repo's own `pages.yml` run always fails (Pages is not enabled
-there) — that failure is noise, not a deploy signal. Watch
-`gh run list --repo docxology/docxology --workflow pages.yml` for the real
-deploy conclusion.
+A successful push does not establish deployment; verify the Pages source SHA,
+live routes, and expected deployed objects separately.
 
 ## Conventions
 

@@ -121,15 +121,6 @@ class OptionalTabAbsentError(RuntimeError):
     """yt-dlp explicitly confirmed an absent optional YouTube shorts tab."""
 
 
-class IncompleteChannelFetchError(RuntimeError):
-    """Raised when a legacy video-list caller requests an incomplete channel."""
-
-    def __init__(self, result: ChannelFetchResult):
-        self.result = result
-        failed_tabs = ", ".join(failure.tab for failure in result.failures) or "unknown"
-        super().__init__(f"Incomplete YouTube channel fetch; failed tabs: {failed_tabs}")
-
-
 def _run_subprocess(cmd: list[str], timeout: int) -> subprocess.CompletedProcess:
     """Execute yt-dlp through the real subprocess boundary."""
     return subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, check=False)
@@ -368,24 +359,6 @@ def fetch_channel_result(
     )
     logger.info("Total unique: %d (complete=%s)", len(all_videos), result.complete)
     return result
-
-
-def fetch_channel(
-    channel_url: str,
-    channel_id: str,
-    tabs: list[tuple[str, str]] | None = None,
-    runner: VideoRunner = run_yt_dlp,
-) -> list[dict]:
-    """Return channel videos for legacy callers when every tab succeeds.
-
-    Cache-writing callers must use :func:`fetch_channel_result` and reject
-    incomplete results.  This compatibility helper retains the historical
-    list-returning interface while failing closed for incomplete channels.
-    """
-    result = fetch_channel_result(channel_url, channel_id, tabs=tabs, runner=runner)
-    if not result.complete:
-        raise IncompleteChannelFetchError(result)
-    return list(result.videos)
 
 
 def save_json(videos: list[dict], channel_url: str, channel_id: str, output_path: Path) -> None:

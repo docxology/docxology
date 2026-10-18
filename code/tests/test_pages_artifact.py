@@ -15,6 +15,8 @@ _DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
 if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 
+import docxology_tools  # noqa: E402,F401
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 import build_pages_artifact as bpa  # noqa: E402
@@ -641,3 +643,83 @@ def test_prepayload_cli_cannot_relax_assembly(monkeypatch):
     monkeypatch.setattr(sys, "argv", ["build_pages_artifact.py", "--check-size", "--allow-dirty-prepayload-evidence"])
     with pytest.raises(SystemExit, match="assembly remains strict"):
         bpa.main()
+
+
+
+def test_staged_report_retirement_is_not_a_mutable_projection_input(tmp_path):
+    _git(tmp_path, "init", "-q")
+    _git(tmp_path, "config", "user.email", "test@example.invalid")
+    _git(tmp_path, "config", "user.name", "Pages fixture")
+    older = Path("reports/browser-smoke/2026-08-25/manifest.json")
+    current = Path("reports/browser-smoke/2026-08-26/manifest.json")
+    for relative in (older, current):
+        path = tmp_path / relative
+        path.parent.mkdir(parents=True)
+        path.write_text("committed")
+    _git(tmp_path, "add", "reports")
+    _git(tmp_path, "commit", "-qm", "capture baseline")
+    (tmp_path / older).unlink()
+    assert bpa.dirty_postdeploy_payload_paths(tmp_path) == [older]
+    _git(tmp_path, "add", "--", str(older))
+    assert bpa.dirty_postdeploy_payload_paths(tmp_path) == []
+    (tmp_path / current).write_text("fresh mutable evidence")
+    assert bpa.dirty_postdeploy_payload_paths(tmp_path) == [current]
+    with pytest.raises(SystemExit, match="dirty post-deploy"):
+        bpa.require_clean_postdeploy_payload_inputs(tmp_path, allow_dirty_prepayload_source_snapshot=True)
+
+
+
+@pytest.mark.parametrize("failure", ["exit", "launch", "timeout"])
+def test_pages_index_reader_failure_blocks_manifest(tmp_path, monkeypatch, failure):
+    def fail(*args, **kwargs):
+        assert kwargs["cwd"] == tmp_path and kwargs["timeout"] == 30
+        if failure == "launch":
+            raise OSError("git unavailable")
+        if failure == "timeout":
+            raise subprocess.TimeoutExpired("git", 30)
+        return subprocess.CompletedProcess(args, 128, stdout=b"")
+    monkeypatch.setattr(bpa.subprocess, "run", fail)
+    with pytest.raises(SystemExit, match="indexed Pages inputs"):
+        bpa.require_clean_postdeploy_payload_inputs(tmp_path)
+
+
+def test_staged_new_and_renamed_evidence_remain_blocked(tmp_path):
+    _git(tmp_path, "init", "-q")
+    _git(tmp_path, "config", "user.email", "test@example.invalid")
+    _git(tmp_path, "config", "user.name", "Pages fixture")
+    older = Path("reports/browser-smoke/2026-08-25/manifest.json")
+    newer = Path("reports/browser-smoke/2026-08-26/manifest.json")
+    path = tmp_path / older
+    path.parent.mkdir(parents=True)
+    path.write_text("committed")
+    _git(tmp_path, "add", "reports")
+    _git(tmp_path, "commit", "-qm", "capture baseline")
+    (tmp_path / newer).parent.mkdir(parents=True)
+    _git(tmp_path, "mv", str(older), str(newer))
+    assert bpa.dirty_postdeploy_payload_paths(tmp_path) == [newer]
+    added = Path("reports/external_links_2026-08-26.json")
+    (tmp_path / added).write_text("fresh evidence")
+    _git(tmp_path, "add", "--", str(added))
+    assert bpa.dirty_postdeploy_payload_paths(tmp_path) == sorted([newer, added])
+
+
+
+def test_only_exact_pinned_archive_urls_stop_protecting_local_projection_bytes(tmp_path):
+    target = "reports/paired_publications_2026-08-25.json"
+    pinned = "https://github.com/docxology/docxology/blob/" + "a" * 40 + "/" + target
+    assert report_references.local_report_paths(pinned) == set()
+    assert report_references.local_report_paths(pinned.replace("/blob/", "/tree/")) == set()
+    assert report_references.local_report_paths(pinned + " and " + target) == {target}
+    for prefix in ("https://example.org/redirect?next=", "https://danielarifriedman.com/redirect?next=", "/redirect?next=", "//example.org/redirect?next="):
+        assert report_references.local_report_paths(prefix + pinned) == {target}
+    for url in ("https://danielarifriedman.com/" + target, pinned.replace("a" * 40, "main"),
+                pinned.replace("a" * 40, "a" * 39), pinned.replace("github.com", "github.com.example.invalid"), pinned.replace("/docxology/docxology/", "/someone/another/"), pinned.replace("a" * 40, "a" * 41)):
+        assert report_references.local_report_paths(url) == {target}
+    _git(tmp_path, "init", "-q")
+    source = tmp_path / "source.md"
+    source.write_text(pinned)
+    assert target not in report_references.referenced_report_paths(tmp_path)
+    _git(tmp_path, "add", "source.md")
+    assert target not in report_references.referenced_report_paths(tmp_path)
+    source.write_text(pinned + " Local citation: " + target)
+    assert target in report_references.referenced_report_paths(tmp_path)

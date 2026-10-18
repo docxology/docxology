@@ -45,8 +45,6 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `orchestrators/extract_paper_texts.py` | Extract full text and embedded images from paper PDFs; optional PyMuPDF provides image extraction, while base `pypdf`/system `pdftotext` remain text fallbacks |
 | `orchestrators/generate_citation_cff.py` | Reconcile paper CITATION.cff (CFF 1.2.0): titles/authors from `pages/BIBLIOGRAPHY.md`, canonical/artifact DOI roles from `metadata.json`, and other hand-maintained fields preserved |
 | `orchestrators/deploy_seo_security.py` | Idempotent deployment of CSP, rel-me, and hreflang tags to indexable HTML pages |
-| `orchestrators/migrate_inline_handlers.py` | Migrate inline `onclick`/`onchange`/`onsubmit` handlers to `data-*` attributes for CSP compliance |
-| `orchestrators/optimize_font_loading.py` | Migrate legacy Google Fonts links to CSP-safe `media="print" data-media-swap="all"`; current runtime uses same-origin/system fallbacks |
 | `data/youtube_personal.json` | Cached export (personal channel) |
 | `data/youtube_institute.json` | Cached export (institute channel) |
 | `tests/test_youtube_fetcher.py` | Unit tests for fetcher parsing and normalization |
@@ -112,7 +110,6 @@ Rules:
 - `normalize_video(raw: dict, channel_id: str) -> dict | None` — canonical video dict or `None` if no `upload_date`.
 - `fetch_tab(channel_url: str, tab: str, channel_id: str, mode: str) -> list[dict]` — one tab (`videos` / `streams` / `shorts`); malformed or noncanonical records fail the tab.
 - `fetch_channel_result(channel_url: str, channel_id: str) -> ChannelFetchResult` — all tabs, deduped and sorted with explicit completion/failure detail; cache writers must require `complete`.
-- `fetch_channel(channel_url: str, channel_id: str) -> list[dict]` — legacy all-tabs helper that raises on any incomplete channel.
 - `save_json(videos: list[dict], channel_url: str, channel_id: str, output_path: Path) -> None` — write envelope with `meta` + `videos`.
 - `load_json(path: Path) -> dict | None` — read existing export.
 

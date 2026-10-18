@@ -11,11 +11,6 @@ pointed at this deployment**, not at the GitHub Pages domain. No DNS
 change to danielarifriedman.com is required — this is a fully separate
 site under the same Netlify account.
 
-(An earlier version of this scaffold targeted Cloudflare Workers, which
-would have required moving the domain's DNS to Cloudflare. Replaced with
-this Netlify version per direction to keep danielarifriedman.com on
-GitHub Pages untouched.)
-
 ## What it does
 
 `netlify/functions/stripe-webhook.js` verifies the `Stripe-Signature`
@@ -33,11 +28,14 @@ not just read from `event.body` directly.
 
 ## Deploy
 
-Netlify CLI is already authenticated on this machine as
-`danielarifriedman@gmail.com`.
+Run these commands from the repository root. Verify the intended Netlify account
+and linked site before deployment; local authentication and live endpoint state
+are not established by this repository.
 
 ```bash
-cd projects/ongoing/docxology/netlify-stripe-webhook
+cd netlify-stripe-webhook
+netlify login
+netlify status
 netlify init   # first time only — creates/links the site
 netlify env:set STRIPE_WEBHOOK_SECRET "whsec_..."   # paste the real value — never commit it
 netlify deploy --prod
