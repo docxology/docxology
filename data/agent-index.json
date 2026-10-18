@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-10-17T00:13:19+00:00",
+  "generated_at": "2026-10-18T19:15:46+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -394,7 +394,7 @@
     },
     "generated_manifest": {
       "path": "/data/generated-manifest.json",
-      "count": 60,
+      "count": 58,
       "schema": "GeneratedManifest"
     }
   },
@@ -408,21 +408,21 @@
     },
     {
       "id": "public-source-snapshot",
-      "path": "/reports/public_source_snapshot_2026-10-16.json",
+      "path": "/reports/public_source_snapshot_2026-10-18.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "public-source-inventory",
-      "path": "/reports/public_source_inventory_2026-10-16.json",
+      "path": "/reports/public_source_inventory_2026-10-18.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "paired-publications",
-      "path": "/reports/paired_publications_2026-10-16.json",
+      "path": "/reports/paired_publications_2026-10-18.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1194,7 +1194,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-10-17T00:13:19+00:00",
+        "checked_at": "2026-10-18T19:15:46+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1405,7 +1405,7 @@
         "paired_publications": {
           "already_reviewed": 527,
           "create_new": 0,
-          "github_releases": 290,
+          "github_releases": 291,
           "needs_review": 0,
           "pairs": 530,
           "software_catalogued": 1,
@@ -1440,14 +1440,14 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-10-17T00:13:19+00:00",
+      "generated_at": "2026-10-18T19:15:46+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
         "paired_publication_decisions": "data/paired-publication-decisions.json",
-        "paired_publications": "reports/paired_publications_2026-10-16.json",
+        "paired_publications": "reports/paired_publications_2026-10-18.json",
         "paper_folders": "papers/README.md",
-        "public_source_snapshot": "reports/public_source_snapshot_2026-10-16.json",
+        "public_source_snapshot": "reports/public_source_snapshot_2026-10-18.json",
         "software_catalog": "pages/SOFTWARE.md",
         "software_export": "data/software.json",
         "works_export": "data/works.json"
@@ -1464,11 +1464,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 927869069,
+        "source_bytes": 906736143,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6061,
-        "artifact_bytes": 928939482
+        "artifact_file_count": 6048,
+        "artifact_bytes": 907804131
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5965,27 +5965,27 @@
   "dataset_hashes": {
     "works": "a4f30286ec9da316cfda5bd7a92a06fb27d180b55c27338d50cc5a5a34965505",
     "work_identifiers": "50bf6ad1ba0af743728838ea00b9acc521ef55f15354e0a93a2e1a215cbb97ba",
-    "software": "9f37fac7bf91fe8a5503474657a384d520b98d84172f82b3fed944502aa6f217",
-    "repositories": "8ab48da22e3e784b9d3446b14e06476440dc2d68b3f7653e758c325c9882ecc1",
+    "software": "124ee6d5e734e624e384b36bb0d61e592d4d7fa9c3d1a7e1c7918b1f0bc44d2e",
+    "repositories": "6a2db1ce763b3dfb854247465cdda0e4dfefc50b62d919df940cf0e81f344548",
     "artworks_index": "29270719124f00fb4d9c2729262c33318c82e9dbb114ec8b0f777436bb270769",
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "119beec7cb74b58d20b986bce5ceb80bcfa18921612963de6a36ffed5b74f9bb",
     "videos_index": "30d313e045793f89ceb58b0a3315f2ab04a7f429dd766e130b5b5a6bf6d1f578",
-    "search": "f94255eb8f201992066a773d9a8e47d95f24918d720c0bbfbdc1cdefca9662fb",
-    "claims": "d9363e93acdc97fefedea47be78e66d65779d705933dcbff69974862129f8048",
+    "search": "4a97b754be1584e80a22d88531bb1c249310ff0d6498589a9cfcb566003855f7",
+    "claims": "3e5d997b17cd7651e2faab0b722604523524107fd4407fa77d372868e7928487",
     "scholar_verification_receipt": "eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759",
     "coverage_exceptions": "cd5f27ddc26015d9323d0383370b82291befdfe8964312fe1e581ef8effb3c38",
-    "repository_classification": "7fd38300539f997af81fa9e1b072c430304fe6555595ef1bd7e5e96753dc811d",
-    "people": "74c6088111ea591d8407a2e5c7c92dfa2d1881801879f6a271b6aa190fad9f41",
-    "organizations": "d6217d7efefe2f8bc505e8a2fe44285fd0a4ef128bdef85ea282e7cf3afb8d24",
-    "resume": "8c1d904930fd374773f899367a07c5de8b7e79e6edb51e0f075f927570e2930e",
+    "repository_classification": "4411420d6f0dfa7aa40b7b8adf3fb007082baf4686a08c23ea5566038483c298",
+    "people": "42f9c264cb54982f1f1a444370b9495ac1622f9f297ceabed28a257371a66402",
+    "organizations": "def5312b106474f15bf3cd623d3cbe00484d6475241d701d0da74f600e06c3fa",
+    "resume": "cfbad4434a2e7fbc2b81c3d553258686b86c35d26b2f36b621309ac48a22904e",
     "work_enrichment": "e1729899bd0c784afacca047e80f524824ffa4101dc9c825004ebc88865dd486",
     "scholar_readiness": "d345e983a2374ccb7ea3bd3664a93d0c2ff605f26a6f2255b4237f0eb1160e0f",
-    "catalog": "32e42f7aa2cb487f43535c8a2200da45beb0b902e70a50e60b70594bb8f52481",
-    "reconciliation": "84e7b736a0c44d30779ed4f8cc09f6b3d1ca33b79d410a6ec75b36996b6e068a",
+    "catalog": "829a5006a9855ba458a9fbd30bb0e6e77459bcab4ffea8d745e7b73b9d45059b",
+    "reconciliation": "2e73d7005e6e0506735992f6de185211e3f6754ee19ed194fa25aca1d4e1ec5a",
     "reproducibility": "6558029118834d59bc0831d8e1edc3d9ec7a2c16d6706383cf97d203b4be7591",
-    "generated_manifest": "4b5d937c0b31d8cc6d4f2cf4495db7d7a3298879b1400713d94901998576c1e5",
-    "current_counts": "a315993c72e56539399eac40c8e2ec80ce5dc3c81bbadf95eda22546c4aeff09"
+    "generated_manifest": "884b1fcda9391215a178b46d087b75638dcc7f7bad69f09b6faaf4e851bd5f9a",
+    "current_counts": "dd16c6443396cff85bb91b0656fe0841f534ab130dc814a238bf19f7fdb59b23"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -6060,7 +6060,7 @@
     "paired_publications": {
       "already_reviewed": 527,
       "create_new": 0,
-      "github_releases": 290,
+      "github_releases": 291,
       "needs_review": 0,
       "pairs": 530,
       "software_catalogued": 1,
