@@ -206,6 +206,17 @@
       "reviewed_by": "Codex automated retention review (2026-10-18)",
       "inventory_sha256": "dc3dd84fd7698af02587e4b1e70df47c5395eb480928ba35b4dab1c0390e041a",
       "bytes": 1405401
+    },
+    {
+      "path": "reports/2026-09-16",
+      "generated_at": "2026-09-16T06:15:52Z",
+      "provenance_sha256": "354fd02b01defb54d8c8a26647178069165c68cd89bf8401d58e78b68a839cf8",
+      "replacement_location": "https://github.com/docxology/docxology/tree/5d7f574d4c76ab77b45a638ad739fa73393a4ab9/reports/2026-09-16",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Codex automated retention review (2026-10-18)",
+      "bytes": 57114910,
+      "file_count": 37,
+      "reason": "Superseded root-level screenshot copy; current visual-QA family remains retained. Manifest itself names the visual-qa namespace; preserve the original bytes at the exact archive path."
     }
   ]
 }

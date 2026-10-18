@@ -19,9 +19,14 @@ live links.
 from __future__ import annotations
 
 import re
+import stat
 import subprocess
 from pathlib import Path
 from urllib.parse import urlsplit
+
+class ReferenceScanError(RuntimeError):
+    """A destructive caller cannot establish complete reference protection."""
+
 
 REPORT_PATH_PATTERN = re.compile(r"reports/[A-Za-z0-9._/-]+")
 # These links explicitly resolve historical evidence in the repository archive,
@@ -61,7 +66,7 @@ _GIT_GREP_EXCLUDES = (
     ":(exclude)data/report-retention.json",
 )
 
-_WORKING_TREE_SUFFIXES = {".html", ".json", ".md", ".xml"}
+_WORKING_TREE_SUFFIXES = {".html", ".json", ".md", ".xml", ".txt"}
 _WORKING_TREE_SKIP_DIRS = {"reports", "code", ".git", ".github", "__pycache__", "_site"}
 _WORKING_TREE_SKIP_FILES = {
     "data/pages-artifact-manifest.json",
@@ -70,32 +75,20 @@ _WORKING_TREE_SKIP_FILES = {
 }
 
 
-def referenced_report_paths(repo_root: Path) -> set[str]:
+def referenced_report_paths(repo_root: Path, *, strict: bool = False) -> set[str]:
     """Return ``reports/`` path tokens cited from projected surfaces.
 
     ``git grep`` covers tracked citing files; a working-tree scan catches
     untracked files git grep would miss. ``papers/`` is intentionally in
     scope: paper ``metadata.json`` files are projected provenance surfaces.
+    ``strict=True`` refuses incomplete reader observations for destructive callers.
     """
-    references = _git_grep_report_references(repo_root)
-    references.update(_working_tree_report_references(repo_root))
+    references = _git_grep_report_references(repo_root, strict=strict)
+    references.update(_working_tree_report_references(repo_root, strict=strict))
     return references
 
 
-def prefix_is_referenced(repo_root: Path, rel_prefix: str) -> bool:
-    """Return whether any referenced token equals or extends ``rel_prefix``.
-
-    A token extends the prefix when the citation names the prefix itself or a
-    path beneath it, matching the prefix-containment semantics the dated-subdir
-    pruner has always used.
-    """
-    return any(
-        reference == rel_prefix or reference.startswith(rel_prefix)
-        for reference in referenced_report_paths(repo_root)
-    )
-
-
-def _git_grep_report_references(repo_root: Path) -> set[str]:
+def _git_grep_report_references(repo_root: Path, *, strict: bool = False) -> set[str]:
     try:
         result = subprocess.run(
             ["git", "grep", "-hE", REPORT_PATH_PATTERN.pattern, "--", ".", *_GIT_GREP_EXCLUDES],
@@ -105,14 +98,18 @@ def _git_grep_report_references(repo_root: Path) -> set[str]:
             check=False,
             timeout=30,
         )
-    except (OSError, subprocess.TimeoutExpired):
+    except (OSError, subprocess.TimeoutExpired) as exc:
+        if strict:
+            raise ReferenceScanError("Git reference scan failed or timed out") from exc
         return set()  # Still honor the independent working-tree reference scan.
     if result.returncode not in (0, 1):
+        if strict:
+            raise ReferenceScanError("Git reference scan failed")
         return set()
     return local_report_paths(result.stdout)
 
 
-def _unignored_working_tree_files(root: Path) -> list[Path] | None:
+def _unignored_working_tree_files(root: Path, *, strict: bool = False) -> list[Path] | None:
     """Tracked plus untracked files that git does not ignore, or None without git.
 
     Ignored files (local tool caches, editor state, anything in ``.gitignore`` or
@@ -125,15 +122,20 @@ def _unignored_working_tree_files(root: Path) -> list[Path] | None:
             cwd=root,
             capture_output=True,
             check=False,
+            timeout=30,
         )
-    except FileNotFoundError:
+    except (OSError, subprocess.TimeoutExpired) as exc:
+        if strict:
+            raise ReferenceScanError("Git file inventory failed or timed out") from exc
         return None
     if result.returncode != 0:
+        if strict:
+            raise ReferenceScanError("Git file inventory failed")
         return None
     return [root / raw for raw in result.stdout.decode("utf-8", "surrogateescape").split("\0") if raw]
 
 
-def _working_tree_report_references(repo_root: Path) -> set[str]:
+def _working_tree_report_references(repo_root: Path, *, strict: bool = False) -> set[str]:
     """Return report tokens found in working-tree text files (tracked or not).
 
     Skips the same trees and inventory manifests as the tracked scan: those
@@ -142,10 +144,8 @@ def _working_tree_report_references(repo_root: Path) -> set[str]:
     """
     references: set[str] = set()
     root = repo_root.resolve()
-    candidates = _unignored_working_tree_files(root)
+    candidates = _unignored_working_tree_files(root, strict=strict)
     for path in candidates if candidates is not None else root.rglob("*"):
-        if not path.is_file():
-            continue
         try:
             relative = path.relative_to(root)
         except ValueError:
@@ -156,9 +156,22 @@ def _working_tree_report_references(repo_root: Path) -> set[str]:
             continue
         if path.suffix.lower() not in _WORKING_TREE_SUFFIXES:
             continue
+        if strict and any(p.is_symlink() for p in (path, *path.parents)):
+            raise ReferenceScanError(f"Linked reference source: {relative.as_posix()}")
+        if strict:
+            try:
+                mode = path.lstat().st_mode
+            except OSError as exc:
+                raise ReferenceScanError(f"Unavailable reference source: {relative.as_posix()}") from exc
+            if not stat.S_ISREG(mode):
+                raise ReferenceScanError(f"Non-regular reference source: {relative.as_posix()}")
+        elif not path.is_file():
+            continue
         try:
             text = path.read_text(encoding="utf-8", errors="ignore")
-        except OSError:
+        except OSError as exc:
+            if strict:
+                raise ReferenceScanError(f"Unreadable reference source: {relative.as_posix()}") from exc
             continue
         references.update(local_report_paths(text))
     return references

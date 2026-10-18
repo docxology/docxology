@@ -45,19 +45,36 @@ Before running `prune_old_reports.py --apply`, add one entry per candidate to
 }
 ```
 
-The pruning tool rejects an incomplete record before deleting anything. Keep
+The pruning tool rejects incomplete or duplicate records before deleting anything.
+Apply also verifies the manifest hash and generation time, then compares every
+current file and byte with the exact Git tree at the recorded commit. Missing
+objects, extra/untracked files, changed bytes or executable modes, staged-only
+changes, symlinks, and special filesystem entries stop deletion.
+Use `git:<full-40-character-commit>` or the exact immutable
+`https://github.com/docxology/docxology/tree/<commit>/<report-path>` archive URL;
+remote archive accessibility must still be reviewed separately. Keep
 the retention manifest itself in the release commit so later reviewers can
 reconstruct why an artifact left the working tree.
 
 ## Operating sequence
 
-1. Run the pruner without `--apply` and inspect its candidates.
+1. Run the pruner without `--apply` and inspect its candidates. For a misplaced
+   root-level screenshot copy, explicitly add `--legacy-root-set YYYY-MM-DD`
+   to both preview and apply. It must predate the newest visual-QA set and
+   contain only its manifest and PNG captures. It is never selected automatically.
 2. Capture the source manifest/hash and create reviewed entries.
 3. Confirm every `replacement_location` is durable and accessible to the
    intended audience.
 4. Run the pruner with `--apply --retention-manifest data/report-retention.json`.
 5. Regenerate manifests, validate links, and record the removal in the release
    change log.
+
+Reference protection uses one shared scan per invocation with directory-boundary
+matching. Destructive callers require complete Git and working-tree reader
+observations; an unavailable reader or unreadable public source stops pruning.
+It includes tracked and untracked public content; ignored local caches
+do not define the published projection. Archive verification is repeated just
+before each deletion; the repository lease must cover the entire operation.
 
 No network snapshot, evidence ledger, publication-pairing report, or source
 material is eligible for automatic pruning.

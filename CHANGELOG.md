@@ -4,6 +4,11 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-10-18
 
+- **Verified archive cleanup:** retired an additional superseded root-level QA
+  capture copy. Retention now verifies exact Git archive bytes before deletion,
+  rejects ambiguous provenance and local additions, and scans live references
+  once per invocation. Root-level capture cleanup requires explicit selection.
+
 - **Native manuscript PDF:** switched the repository-methods PDF to the pinned
   docxology/template combined renderer, with an informative vector cover and
   source/template/runtime/tool/output bindings. Kept explicit external review

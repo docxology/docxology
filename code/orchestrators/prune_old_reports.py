@@ -5,12 +5,14 @@
 screenshots every run (`reports/visual-qa/YYYY-MM-DD/`, `reports/browser-smoke/YYYY-MM-DD/`),
 and `validate_repo.py` only ever reads the LATEST set via `latest_subdir_file(...)`. The
 unreferenced older sets are historical evidence. Git history retains anything pruned here, so
-this only trims the checked-out tree and bounds future growth. Before an apply run, every
+this only trims the checked-out tree and bounds future growth. Apply verifies
+that the complete current file set and bytes exist at the recorded immutable commit. Before an apply run, every
 removal must also carry a reviewed provenance record in `data/report-retention.json`.
 
 Scope is deliberately narrow:
   * Only the dated SCREENSHOT subdirectories are pruned. Each old `manifest.json` only
     references its own PNGs, so removing a whole dated subdir leaves no dangling link.
+  * Root-level reports/YYYY-MM-DD copies require explicit --legacy-root-set selection.
   * Dated JSON reports (paired_publications_*, public_source_*, asset_size_*, ...) are NOT
     pruned: they are cited as provenance from paper `metadata.json`, GENERATED.md, and the
     claims/evidence ledger, so deleting them would orphan those references.
@@ -27,10 +29,14 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import shutil
+import stat
 import sys
+import subprocess
+from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
@@ -58,35 +64,87 @@ def _dated_subdirs(parent: Path) -> list[Path]:
                   key=lambda p: p.name)
 
 
-def _working_tree_references(repo_root: Path, rel_prefix: str) -> bool:
-    """True if a working-tree content file mentions ``rel_prefix``.
+def _legacy_root_set(value: str) -> Path:
+    """Only explicitly named, superseded root-level screenshot copies qualify."""
+    try:
+        if date.fromisoformat(value).isoformat() != value:
+            raise ValueError(value)
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError("expected an ISO date YYYY-MM-DD") from exc
+    current = _dated_subdirs(REPORTS_DIR / "visual-qa")
+    path = REPORTS_DIR / value
+    if not current or value >= current[-1].name:
+        raise argparse.ArgumentTypeError("root set must predate the newest visual-QA set")
+    if path.is_symlink() or not path.is_dir() or not (path / "manifest.json").is_file():
+        raise argparse.ArgumentTypeError("root set must be a regular directory with manifest.json")
+    if any(not (stat.S_ISREG(p.lstat().st_mode) or stat.S_ISDIR(p.lstat().st_mode))
+           or (p.is_file() and p.name != "manifest.json" and p.suffix != ".png")
+           for p in path.rglob("*")):
+        raise argparse.ArgumentTypeError("root set must contain only manifest.json and PNG captures")
+    return path
 
-    Delegates to the shared citation scan in ``code/src/report_references.py``;
-    the dated-subdir prefix framing stays here so callers keep their shape. The
-    scan skips reports/, code/, _site/, and the generated inventory manifests —
-    those enumerate paths without serving them as live links.
+
+def _archive_errors(repo_root: Path, rel: str, entry: dict) -> list[str]:
+    """Prove the exact current file set and bytes exist at the recorded commit.
+
+    This is a local Git object check; it does not infer remote archive access.
+    Untracked files, changed bytes, symlinks and invalid provenance stop deletion.
     """
-    return report_references.prefix_is_referenced(repo_root, rel_prefix)
-
-
-def _referenced_externally(rel_prefix: str) -> bool:
-    """True if a published content/data file references this dated subdir.
-
-    Excludes reports/ (a set's own manifest cites its own PNGs) and code/ (generators
-    carry stale fallback-default literals like ``"/reports/visual-qa/2026-05-13/..."``
-    that are only used when no dated subdir exists — they are not live links in any
-    served artifact). Also excludes the build INVENTORY manifests
-    (data/pages-artifact-manifest.json, data/generated-manifest.json), which enumerate
-    every tracked file by path but do not *link* to them — treating that inventory as a
-    reference would pin every dated set forever and neuter this tool. We only care about
-    orphaning genuine links in served content (HTML pages, llms.txt, feeds, sitemaps).
-
-    The scan itself lives in ``code/src/report_references.py`` and is shared with
-    ``build_pages_artifact``'s superseded-report cited-by protection; the working-tree
-    fallback is included so untracked files that mention the dated subdir still block
-    prune.
-    """
-    return report_references.prefix_is_referenced(REPO_ROOT, rel_prefix)
+    path = repo_root / rel
+    if any(p.is_symlink() for p in (path, *path.parents)):
+        return [f"symlink in archive candidate path: {rel}"]
+    members = sorted(path.rglob("*"))
+    if any(not (stat.S_ISREG(p.lstat().st_mode) or stat.S_ISDIR(p.lstat().st_mode)) for p in members):
+        return [f"non-regular filesystem entry in archive candidate: {rel}"]
+    files = [p for p in members if p.is_file()]
+    manifest = path / "manifest.json"
+    try:
+        raw = manifest.read_bytes()
+        if hashlib.sha256(raw).hexdigest() != entry["provenance_sha256"]:
+            return [f"manifest hash differs from retention record: {rel}"]
+        if json.loads(raw)["generated_at"] != entry["generated_at"]:
+            return [f"generation time differs from retention record: {rel}"]
+        location = entry["replacement_location"]
+        match = re.fullmatch(r"git:([0-9a-f]{40})", location)
+        if not match:
+            match = re.fullmatch(
+                r"https://github\.com/docxology/docxology/tree/([0-9a-f]{40})/" + re.escape(rel), location)
+        if not match:
+            return [f"archive must identify an immutable repository commit: {rel}"]
+        result = subprocess.run(
+            ["git", "ls-tree", "-r", "--full-tree", "-z", match[1], "--", rel],
+            cwd=repo_root, capture_output=True, check=True, timeout=30,
+        )
+        index = subprocess.run(
+            ["git", "diff", "--cached", "--no-ext-diff", "--quiet", match[1], "--", rel],
+            cwd=repo_root, capture_output=True, check=False, timeout=30,
+        )
+        if index.returncode != 0:
+            return [f"Git index differs from archive or is unavailable: {rel}"]
+        archived = {}
+        modes = {}
+        for record in result.stdout.split(b"\0"):
+            if not record:
+                continue
+            header, name = record.split(b"\t", 1)
+            mode, kind, oid = header.split()
+            if mode not in (b"100644", b"100755") or kind != b"blob":
+                return [f"non-regular object in archive: {rel}"]
+            archived[name.decode("utf-8")] = oid.decode("ascii")
+            modes[name.decode("utf-8")] = mode
+        actual = {}
+        for file in files:
+            data = file.read_bytes()
+            actual[file.relative_to(repo_root).as_posix()] = hashlib.sha1(
+                b"blob " + str(len(data)).encode("ascii") + b"\0" + data).hexdigest()
+        if any(modes.get(p.relative_to(repo_root).as_posix()) !=
+               (b"100755" if p.stat().st_mode & stat.S_IXUSR else b"100644") for p in files):
+            return [f"current file modes differ from archive: {rel}"]
+        if not actual or actual != archived:
+            return [f"current file set or bytes differ from archive: {rel}"]
+    except (OSError, ValueError, TypeError, KeyError, subprocess.SubprocessError) as exc:
+        return [f"cannot verify archive for {rel}: {type(exc).__name__}"]
+    return []
 
 
 def _retention_entries(path: Path) -> dict[str, dict]:
@@ -106,6 +164,8 @@ def _retention_entries(path: Path) -> dict[str, dict]:
     for entry in entries:
         if not isinstance(entry, dict) or not isinstance(entry.get("path"), str):
             raise SystemExit(f"Report-retention manifest has an invalid entry: {path}")
+        if entry["path"] in result:
+            raise SystemExit(f"Duplicate report-retention entry: {entry['path']}")
         result[entry["path"]] = entry
     return result
 
@@ -137,19 +197,29 @@ def main() -> int:
         default=DEFAULT_RETENTION_MANIFEST,
         help="Reviewed provenance records required for --apply.",
     )
+    parser.add_argument(
+        "--legacy-root-set", type=_legacy_root_set, action="append", default=[], metavar="YYYY-MM-DD",
+        help="Explicitly review a superseded reports/YYYY-MM-DD screenshot copy (repeatable).",
+    )
     args = parser.parse_args()
 
     if args.keep < 1:
         parser.error("--keep must be >= 1")
 
     candidates: list[tuple[Path, str, int]] = []
+    try:
+        references = report_references.referenced_report_paths(REPO_ROOT, strict=True)
+    except report_references.ReferenceScanError as exc:
+        raise SystemExit(f"Refusing incomplete reference scan: {exc}") from exc
+    def referenced(rel: str) -> bool:
+        return any(token == rel or token.startswith(rel + "/") for token in references)
     for name in SCREENSHOT_PARENTS:
         parent = REPORTS_DIR / name
         subdirs = _dated_subdirs(parent)
         superseded = subdirs[:-args.keep] if len(subdirs) > args.keep else []
         for sub in superseded:
             rel = f"reports/{name}/{sub.name}"
-            if _referenced_externally(rel):
+            if referenced(rel):
                 print(f"keep (still referenced): {rel}")
                 continue
             size = _dir_size_bytes(sub)
@@ -158,11 +228,22 @@ def main() -> int:
         if kept:
             print(f"{name}: keeping {', '.join(p.name for p in kept)}")
 
+    for sub in sorted(set(args.legacy_root_set)):
+        rel = sub.relative_to(REPO_ROOT).as_posix()
+        if referenced(rel):
+            print(f"keep (still referenced): {rel}")
+        else:
+            candidates.append((sub, rel, _dir_size_bytes(sub)))
+
     if args.apply:
         retention_path = args.retention_manifest
         if not retention_path.is_absolute():
             retention_path = REPO_ROOT / retention_path
-        errors = _retention_errors([rel for _sub, rel, _size in candidates], _retention_entries(retention_path))
+        entries = _retention_entries(retention_path)
+        errors = _retention_errors([rel for _sub, rel, _size in candidates], entries)
+        if not errors:
+            for _sub, rel, _size in candidates:
+                errors.extend(_archive_errors(REPO_ROOT, rel, entries[rel]))
         if errors:
             raise SystemExit(
                 "Refusing to prune reports without durable provenance:\n"
@@ -173,6 +254,9 @@ def main() -> int:
     removed = len(candidates)
     for sub, rel, size in candidates:
         if args.apply:
+            errors = _archive_errors(REPO_ROOT, rel, entries[rel])
+            if errors:
+                raise SystemExit("Refusing changed archive candidate: " + "; ".join(errors))
             shutil.rmtree(sub)
             print(f"removed {rel} ({size / 1_000_000:.1f} MB)")
         else:

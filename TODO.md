@@ -78,11 +78,11 @@ Recurring checks below are operating obligations, not unfinished feature work.
   restrictions permit; repeat source refreshes on their declared triggers.
   Refresh Scholar only after a direct authenticated observation. A live Flickr
   refresh needs its approved API-key workflow.
-- Latest check (2026-10-16): refreshed the live snapshot, paginated source
+- Latest check (2026-10-18): refreshed the live snapshot, paginated source
   inventory, complete GitHub inventory and full GitHub/Zenodo pairing scan.
   Publication and software decisions, archive boundaries and access limitations
   are recorded in [the refresh review](reports/publication_refresh_review_2026-10-16.json).
-  The current [source review](reports/public_source_review_2026-10-16.md) keeps
+  The current [source review](reports/public_source_review_2026-10-18.md) keeps
   ambiguous historical release pairs and inaccessible profiles explicit.
 - Deliverable: refresh ORCID, Crossref, Zenodo, PubMed, Europe PMC, GitHub, Scholar, organizational, teaching, art, and software evidence; review `data/coverage-exceptions.json`
 - Acceptance: only verified metadata is applied, access dates and caveats remain visible, and current coverage is linked from agent and human discovery surfaces
