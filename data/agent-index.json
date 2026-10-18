@@ -429,14 +429,14 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-10-17.json",
+      "path": "/reports/accessibility_static_2026-10-18.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-10-17.json",
+      "path": "/reports/asset_size_2026-10-18.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1464,11 +1464,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 927847604,
+        "source_bytes": 927886508,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6052,
-        "artifact_bytes": 928916480
+        "artifact_file_count": 6056,
+        "artifact_bytes": 928956060
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5971,7 +5971,7 @@
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "119beec7cb74b58d20b986bce5ceb80bcfa18921612963de6a36ffed5b74f9bb",
     "videos_index": "30d313e045793f89ceb58b0a3315f2ab04a7f429dd766e130b5b5a6bf6d1f578",
-    "search": "d176f34a7c733379451215e975ecea9d4fc95cc61ba29d54652e5c8006f4fb20",
+    "search": "f94255eb8f201992066a773d9a8e47d95f24918d720c0bbfbdc1cdefca9662fb",
     "claims": "d9363e93acdc97fefedea47be78e66d65779d705933dcbff69974862129f8048",
     "scholar_verification_receipt": "eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759",
     "coverage_exceptions": "cd5f27ddc26015d9323d0383370b82291befdfe8964312fe1e581ef8effb3c38",
@@ -5981,10 +5981,10 @@
     "resume": "8c1d904930fd374773f899367a07c5de8b7e79e6edb51e0f075f927570e2930e",
     "work_enrichment": "e1729899bd0c784afacca047e80f524824ffa4101dc9c825004ebc88865dd486",
     "scholar_readiness": "d345e983a2374ccb7ea3bd3664a93d0c2ff605f26a6f2255b4237f0eb1160e0f",
-    "catalog": "1fb5fd88302a861bf6b4b36456763e0d6a80108f72f79f1a5441c3d3ab90ac83",
+    "catalog": "32e42f7aa2cb487f43535c8a2200da45beb0b902e70a50e60b70594bb8f52481",
     "reconciliation": "84e7b736a0c44d30779ed4f8cc09f6b3d1ca33b79d410a6ec75b36996b6e068a",
     "reproducibility": "6558029118834d59bc0831d8e1edc3d9ec7a2c16d6706383cf97d203b4be7591",
-    "generated_manifest": "5d1a9c9f4f7d654426c3867926d4a1d378915b20ee986eb4adc01951b2a02bfb",
+    "generated_manifest": "da2dc8f8dd5d05dfbb2d4f017633f4796e3ca528499d551f6bc665f1c7b35dbc",
     "current_counts": "a315993c72e56539399eac40c8e2ec80ce5dc3c81bbadf95eda22546c4aeff09"
   },
   "source_provenance": {
@@ -6120,7 +6120,7 @@
     "Canonical work URLs use citation_key values and preserve retired numeric gaps.",
     "Paper-folder pages are documentation mirrors; canonical indexable work pages live under /works/.",
     "External facts and metrics are evidence-dated; retain caveats when primary verification is incomplete.",
-    "Pages omits duplicated paper-extracted image binaries only; use the manifest fallback templates for GitHub retrieval.",
+    "Pages omits extracted paper-image binaries, declared QA screenshot binaries, and superseded unreferenced reports; use the artifact manifest and GitHub fallback templates for archival retrieval.",
     "Coverage exceptions and repository classifications are review queues, not automatic certification or rejection."
   ]
 }
