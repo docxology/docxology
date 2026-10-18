@@ -5,6 +5,9 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
+import yaml
+import tomllib
+
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
@@ -113,3 +116,43 @@ def test_pages_workflow_name_matches_every_follower_trigger():
         assert [t.strip().strip("\"'") for t in triggers.split(",")] == [name], follower
     verifier = (REPO_ROOT / "code/orchestrators/verify_live_site.py").read_text(encoding="utf-8")
     assert verifier.count(f'"{name}"') == 2
+
+
+def test_every_python_workflow_job_uses_the_declared_runtime():
+    """A runner default must not silently bypass the repository Python pin."""
+    checked = 0
+    for path in (REPO_ROOT / ".github/workflows").glob("*.yml"):
+        workflow = yaml.safe_load(path.read_text(encoding="utf-8"))
+        for name, job in workflow.get("jobs", {}).items():
+            steps = job.get("steps", [])
+            python_steps = [i for i, step in enumerate(steps)
+                            if re.search(r"\bpython[0-9]*\b", step.get("run", ""))]
+            if not python_steps:
+                continue
+            setup = [(i, step) for i, step in enumerate(steps)
+                     if step.get("uses", "").startswith("actions/setup-python@")]
+            assert len(setup) == 1, f"{path.name}:{name} must select the repository runtime"
+            index, step = setup[0]
+            assert index < min(python_steps), f"{path.name}:{name} runs Python before setup"
+            assert step.get("with", {}).get("python-version-file") == ".python-version"
+            assert "python-version" not in step.get("with", {})
+            checked += 1
+    assert checked, "no Python workflow jobs were inspected"
+
+
+def test_uv_workflow_jobs_require_locked_binary_dependencies():
+    """Missing native wheels must fail before an incidental source build."""
+    project = tomllib.loads((REPO_ROOT / "pyproject.toml").read_text(encoding="utf-8"))
+    required_wheels = set(project["tool"]["uv"]["no-build-package"])
+    assert {"pillow", "greenlet", "pymupdf"} <= required_wheels
+    checked = 0
+    for path in (REPO_ROOT / ".github/workflows").glob("*.yml"):
+        workflow = yaml.safe_load(path.read_text(encoding="utf-8"))
+        for name, job in workflow.get("jobs", {}).items():
+            if not any(re.search(r"\buv (run|sync)\b", step.get("run", ""))
+                       for step in job.get("steps", [])):
+                continue
+            environment = {**workflow.get("env", {}), **job.get("env", {})}
+            assert str(environment.get("UV_LOCKED")) == "1", f"{path.name}:{name} must enforce its lock"
+            checked += 1
+    assert checked, "no uv workflow jobs were inspected"

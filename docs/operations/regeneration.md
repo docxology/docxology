@@ -55,7 +55,10 @@ their work synchronous or manage their own child-process lifetime.
 ## Cache contract
 
 Steps with declared inputs may skip when their input bytes, writer, and shared
-Python implementation match the previous successful run. Declared imported
+Python implementation match the previous successful run. The authoritative
+`.python-version`, `pyproject.toml`, and `uv.lock` also participate, so interpreter
+and dependency changes rebuild cached outputs. A missing manifest disables
+skipping; installed environment directories remain excluded. Declared imported
 orchestrator helpers also participate. Steps without inputs always run.
 Modification times alone do not invalidate the cache. Steps that resolve
 tracked report pointers also declare `index_inputs`: the fingerprint includes

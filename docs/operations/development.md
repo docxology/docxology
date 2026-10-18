@@ -81,7 +81,7 @@ changing behavior; a CLI override does not justify relaxing a repository gate.
 
 | Concern | Authority | How to change or inspect it |
 | --- | --- | --- |
-| Python/dependency/lint runtime | [`.python-version`](../../.python-version), [`pyproject.toml`](../../pyproject.toml), [`uv.lock`](../../uv.lock) | `uv sync --python 3.15`; optional `browser-qa` and `pdf-extraction` extras; lint group for Ruff |
+| Python/dependency/lint runtime | [`.python-version`](../../.python-version), [`pyproject.toml`](../../pyproject.toml), [`uv.lock`](../../uv.lock) | `uv >= 0.13.1`, `uv sync --locked --python 3.15`; Pillow 13 wheels; optional `browser-qa` and `pdf-extraction` extras; lint group for Ruff |
 | Ordered local generation and checks | [`generation_plan.py`](../../code/src/generation_plan.py) | `uv run python3 code/orchestrators/regenerate_all.py --list`; inspect its `--help` for diagnostic passes and cache controls |
 | Sitemap promotion and canonical routes | [`sitemap_policy.py`](../../code/src/sitemap_policy.py), [`CNAME`](../../CNAME) | Edit policy/source, regenerate, and run SEO invariants; retain apex and permanent work URLs |
 | Shared navigation, head assets, and cache tags | [`site_nav.py`](../../code/src/site_nav.py), [`code/templates/`](../../code/templates/) | Change source tags and hand-authored consumers together, then rebuild and check rendered pages |

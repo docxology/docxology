@@ -24,6 +24,9 @@ import regenerate_all  # noqa: E402
 def fixture_step(tmp_path):
     for relative, content in (
         ("data/source.txt", "before\n"),
+        (".python-version", "3.15\n"),
+        ("pyproject.toml", "[project]\nrequires-python = \">=3.15\"\n"),
+        ("uv.lock", "version = 1\n"),
         ("code/src/fixture.py", "# shared fixture\n"),
         ("code/orchestrators/root_contract_fixture.py", "# writer fixture\n"),
     ):

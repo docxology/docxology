@@ -8,6 +8,10 @@ on:
 permissions:
   contents: read
 
+# The committed dependency graph is a CI prerequisite.
+env:
+  UV_LOCKED: "1"
+
 concurrency:
   group: github-pages
   cancel-in-progress: false
@@ -33,7 +37,7 @@ jobs:
           python-version-file: .python-version
 
       - name: Install uv
-        run: python -m pip install uv==0.11.6
+        run: python -m pip install uv==0.13.1
 
       - name: Validate generated docs and structured data
         run: uv run python3 code/orchestrators/validate_repo.py
@@ -77,7 +81,7 @@ jobs:
           python-version-file: .python-version
 
       - name: Install uv
-        run: python -m pip install uv==0.11.6
+        run: python -m pip install uv==0.13.1
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6

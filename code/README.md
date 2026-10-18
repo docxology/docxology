@@ -14,7 +14,10 @@ helpers, and write the generated artifacts checked into the repo root.
 ## Python runtime
 
 The repository pins Python 3.15 in `.python-version` to match CI. Run
-`uv sync --locked` before using the build commands; uv selects the declared
+`uv sync --locked` with uv 0.13.1 or later before using build commands. Pillow 13
+provides supported Python 3.15 wheels; native-library wheel policy and the
+committed lock are enforced.
+uv selects the declared
 runtime rather than the newest interpreter installed on the host.
 
 ## Import contract (DOC-014)

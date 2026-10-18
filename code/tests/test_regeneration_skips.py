@@ -44,7 +44,8 @@ def _seed_inputs(tmp_path: Path) -> None:
     (tmp_path / "data").mkdir()
     (tmp_path / "data" / "works.json").write_text("{}\n", encoding="utf-8")
     (tmp_path / "data" / "work-enrichment.json").write_text("{}\n", encoding="utf-8")
-    for relative in ("code/orchestrators/fixture.py", "code/src/site_nav.py"):
+    for relative in ("code/orchestrators/fixture.py", "code/src/site_nav.py",
+                     ".python-version", "pyproject.toml", "uv.lock"):
         path = tmp_path / relative
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text("# fixture source\n", encoding="utf-8")

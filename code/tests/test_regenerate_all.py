@@ -50,6 +50,7 @@ def test_default_two_passes_refresh_an_early_consumer_after_a_late_producer(tmp_
     projection.write_text("old\n")
     for relative in (
         "code/orchestrators/consumer.py", "code/orchestrators/producer.py", "code/src/site_nav.py",
+        ".python-version", "pyproject.toml", "uv.lock",
     ):
         path = tmp_path / relative
         path.parent.mkdir(parents=True, exist_ok=True)

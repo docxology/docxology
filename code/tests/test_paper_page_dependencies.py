@@ -19,7 +19,8 @@ from docxology_tools.generation_plan import (  # noqa: E402
 
 
 COMMON_INPUTS = (
-    ".gitignore", "data/works.json", "papers/paper_metadata.json",
+    ".gitignore", ".python-version", "pyproject.toml", "uv.lock",
+    "data/works.json", "papers/paper_metadata.json",
     "papers/Example/metadata.json", "papers/Example/README.md",
     "papers/Example/AGENTS.md", "papers/Example/SKILL.md",
     "papers/Example/CITATION.cff", "papers/Example/full_text.md",

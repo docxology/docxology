@@ -157,7 +157,8 @@ def test_page_changed_during_read_is_not_cached(tmp_path, monkeypatch):
 
 def test_regeneration_cache_miss_observes_input_before_and_after_writer_only(tmp_path, monkeypatch):
     (tmp_path / 'source.txt').write_text('input')
-    for relative in ('code/orchestrators/writer.py', 'code/src/shared.py'):
+    for relative in ('code/orchestrators/writer.py', 'code/src/shared.py',
+                     '.python-version', 'pyproject.toml', 'uv.lock'):
         path = tmp_path / relative
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text('# fixture source')

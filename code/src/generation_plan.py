@@ -383,12 +383,16 @@ _FINGERPRINT_EXCLUDED_PARTS = frozenset(
 # cannot invalidate the cache. Orchestrator-to-orchestrator imports remain
 # explicit in each step's inputs instead of hashing unrelated network tools.
 SHARED_IMPLEMENTATION_INPUTS: tuple[str, ...] = ("code/src/**/*.py",)
+# Dependency-only or interpreter-pin changes can alter rendered bytes even
+# when every source file is unchanged. Bind authoritative manifests, not
+# machine-specific installed environment contents.
+RUNTIME_INPUTS: tuple[str, ...] = (".python-version", "pyproject.toml", "uv.lock")
 
 
 def effective_step_inputs(step: GenerationStep) -> tuple[str, ...]:
     """Return the complete cache inputs, preserving always-run steps.
 
-    A missing writer or shared source tree makes the fingerprint unavailable,
+    A missing writer, shared source tree, or runtime manifest makes the fingerprint unavailable,
     just like any other missing input. De-duplicate explicit writer paths
     already declared by resource-sensitive steps.
     """
@@ -396,6 +400,7 @@ def effective_step_inputs(step: GenerationStep) -> tuple[str, ...]:
         return ()
     return tuple(dict.fromkeys((
         *step.inputs, f"code/orchestrators/{step.script}", *SHARED_IMPLEMENTATION_INPUTS,
+        *RUNTIME_INPUTS,
     )))
 
 

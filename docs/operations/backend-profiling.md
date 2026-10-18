@@ -1,6 +1,6 @@
 # Backend performance diagnostics
 
-Use Python 3.15 through the locked uv environment. The command measures two
+Use Python 3.15 and uv 0.13.1 or later through the locked environment. The command measures two
 fixed, read-only workloads: the complete local SEO invariant audit (`seo`) and
 all declared cached-step source fingerprints (`fingerprints`). Workload choices
 come from one registry in `code/src/backend_profiling.py`; fingerprint steps come
@@ -60,8 +60,10 @@ The initial paired prototype comparison used Python 3.15.0 and the same locked
 dependencies and unchanged input tree at commit
 `b5e42ebe7cfe8ed637db723003e32f51daa00cfc`. Baseline and candidate implementations
 were loaded against that same tree, with three serial samples per workload.
-The Ruff/runtime configuration migration and the profiling CLI were validated
-separately from these timing samples.
+The Ruff/runtime configuration migration, profiling CLI, and subsequent Pillow
+13 wheel qualification and runtime-manifest cache binding were validated
+separately from these timing samples; the
+paired prototype samples used locked Pillow 12.2.
 
 | Workload | Baseline seconds | Optimized seconds | Median change |
 | --- | --- | --- | --- |
@@ -86,3 +88,16 @@ relative names once. Regeneration shares its pre-writer fingerprint with the
 skip decision and still hashes independently after a successful writer; cache
 misses therefore avoid a redundant full pre-writer hash. No per-file digest
 memoization or release validation shortcut was added.
+
+## Portable environment qualification
+
+Pillow 13 is the supported Python 3.15 floor (see its
+[release notes](https://pillow.readthedocs.io/en/stable/releasenotes/13.0.0.html)).
+Pillow, greenlet and PyMuPDF require prebuilt wheels under the project uv
+configuration, qualified on macOS arm64 and Linux x86-64. PyYAML currently has no
+CPython 3.15 wheel; its source installation remains allowed. The repository uses
+`safe_load`/`SafeLoader` and qualifies the pure-Python parser under Python 3.15. CI sets `UV_LOCKED=1`, so lock
+drift fails before validation. Missing required native wheels fail before an
+incidental source build. The project requires uv 0.13.1 or later; CI bootstraps
+the qualified 0.13.1 version. Python-running workflow jobs select `.python-version`
+before execution, including the stdlib-only IndexNow job.

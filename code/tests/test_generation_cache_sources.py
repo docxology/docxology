@@ -75,14 +75,15 @@ def test_every_cached_writer_reruns_after_own_or_shared_source_change(tmp_path, 
     assert _run(step, tmp_path, calls) == (0, 1)
 
     # Data and templates stay fixed throughout: the driver must notice code.
-    for relative in (f"code/orchestrators/{step.script}", "code/src/site_nav.py"):
+    for relative in (f"code/orchestrators/{step.script}", "code/src/site_nav.py",
+                     ".python-version", "pyproject.toml", "uv.lock"):
         source = tmp_path / relative
         os.utime(source, (0, 0))
         assert _run(step, tmp_path, calls) == (0, 1)
         source.write_text(source.read_text() + "# changed implementation\n", encoding="utf-8")
         assert _run(step, tmp_path, calls) == (1, 0)
         assert _run(step, tmp_path, calls) == (0, 1)
-    assert calls == [step.script] * 3
+    assert calls == [step.script] * 6
 
 
 @pytest.mark.parametrize("identifier,script", IMPORTED_RENDERERS)
@@ -100,7 +101,8 @@ def test_imported_orchestrator_changes_rerun_the_actual_plan_stage(tmp_path, ide
     assert calls == [step.script, step.script]
 
 
-@pytest.mark.parametrize("removed", ["code/orchestrators/build_updates_page.py", "code/src"])
+@pytest.mark.parametrize("removed", ["code/orchestrators/build_updates_page.py", "code/src",
+                                     ".python-version", "pyproject.toml", "uv.lock"])
 def test_missing_implementation_source_fails_closed(tmp_path, removed):
     step = next(step for step in LOCAL_GENERATION_STEPS if step.identifier == "updates-page")
     _seed_sources(tmp_path, step)
@@ -128,6 +130,8 @@ def test_real_updates_renderer_rebuilds_from_changed_source_in_subprocess(tmp_pa
         target = tmp_path / "code/orchestrators" / name
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(REPO_ROOT / "code/orchestrators" / name, target)
+    for name in (".python-version", "pyproject.toml", "uv.lock"):
+        shutil.copyfile(REPO_ROOT / name, tmp_path / name)
     (tmp_path / "CHANGELOG.md").write_text("## 2026-10-02\n- Public fixture update.\n")
     (tmp_path / "pages").mkdir()
     (tmp_path / "pages/THINKING_LOG.md").write_text(

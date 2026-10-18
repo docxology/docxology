@@ -6,10 +6,15 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 - **Python 3.15 backend:** qualified the current runtime and locked dependencies,
   aligned CI with `.python-version`, and derived release runtime/version metadata
-  from `pyproject.toml` to prevent duplicated contract drift.
+  from `pyproject.toml` to prevent duplicated contract drift. Pillow 13 provides
+  supported native wheels; CI enforces the lock, and required native libraries
+  refuse source-build fallbacks.
+  Every Python workflow, including IndexNow, selects the same runtime pin.
 - **Measured backend performance:** reduced repeated HTML parsing and paper-name
   sorting, bounded and version-checked page retention, and removed redundant
-  pre-writer fingerprinting while preserving fresh post-writer checks. Paired
+  pre-writer fingerprinting while preserving fresh post-writer checks. Cached
+  writers also bind the interpreter pin, project metadata, and dependency lock
+  so dependency-only changes trigger rebuilding. Paired
   prototype SEO/fingerprint timings and their limitations are recorded in the
   [profiling guide](docs/operations/backend-profiling.md).
 - **Repeatable diagnostics:** added fixed read-only timing/tracing workloads with
