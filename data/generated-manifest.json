@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T00:05:38Z",
+  "generated_at": "2026-10-18T01:35:23Z",
   "artifacts": [
     {
       "name": "Scholar PDF placement proposal (review only)",
@@ -169,8 +169,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-10-17.json",
-        "reports/source_coverage_2026-10-17.md"
+        "reports/source_coverage_2026-10-18.json",
+        "reports/source_coverage_2026-10-18.md"
       ],
       "sources": [
         "data/works.json",
