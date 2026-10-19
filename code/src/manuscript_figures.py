@@ -260,7 +260,11 @@ def _draw(name: str) -> bytes:
                 "Revision-bound attestation when complete",
             ],
         )
-        arrow(829, 280, 829, 250)
+        # Route the control tail into automated acceptance before human review.
+        c.setStrokeColor(HexColor(teal))
+        c.setLineWidth(2.5)
+        c.lines([(829, 280, 829, 260), (829, 260, 255, 260)])
+        arrow(255, 260, 255, 242)
         arrow(489, 170, 511, 170)
         text(
             28,
