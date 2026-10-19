@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-19",
+  "scope": "Corrected active source manuscripts and implementation/reporting contracts; historical publications retain their original bytes and DOIs.",
+  "corrections": [
+    {
+      "folder": "2025_MarkdownDecisionProcess",
+      "reviewed_at": "2026-10-19",
+      "repository": "docxology/markdown_decision_process",
+      "commit": "7c21c57c34ac78998a94d6a1379803e380ff8505",
+      "document": "paper/EVALUATION_EVIDENCE.md",
+      "summary": "The corrected active manuscript withdraws unsupported numerical, model-comparison and participant-study claims. Its evaluation is prospective. Historical checkpoints, datasets and study observations have not been recovered.",
+      "previous_source_commit": "ec902bb5661b3741b2b802ab37ee4469d8369318",
+      "validation": {
+        "tests_passed": 240,
+        "tests_skipped": 7,
+        "scope": "Full implementation suite with benchmark calibration disabled; benchmark functions execute once. A later supplement-only revision also passed both assembly checks."
+      }
+    },
+    {
+      "folder": "2024_PopulationSearch",
+      "reviewed_at": "2026-10-19",
+      "repository": "docxology/ActiveACO",
+      "commit": "af126fd2752a0b6417c033defd44425567322d5e",
+      "document": "PAPER_REVISION.md",
+      "summary": "The corrected source fixes graph symmetry, diagonal weights and tour accounting and supplies a new seeded paired-run protocol with raw execution evidence. The historical table-specific graph denominator remains unestablished; the new run does not reconstruct that table.",
+      "previous_source_commit": "bdfc5ad5962bf0873e49cd7adcbdcff65d1a5b1e",
+      "validation": {
+        "tests_passed": 7,
+        "scope": "Paired-run repeatability, actual graph membership, resource bounds and tour/graph invariants. Two clean-source CLI runs produced identical result bytes; six identified graphs and eighteen method observations are retained in the source repository."
+      }
+    },
+    {
+      "folder": "2026_MappingWilliamBlake",
+      "reviewed_at": "2026-10-19",
+      "repository": "docxology/blake",
+      "commit": "0e06527a4be239678c746d25e410d467cbad5c18",
+      "document": "docs/publication-consistency-review.md",
+      "summary": "The corrected manuscript derives saved-text and embedding counts from identified membership and reports missing, filtered and excluded works. Publication generation now rejects inconsistent coverage or implicit modality flags. The original historical run membership is unavailable; no replacement corpus count is asserted.",
+      "previous_source_commit": "445140f3dd3f4d22f9e2f2139ee52cf1e91ee3d3",
+      "validation": {
+        "tests_passed": 36,
+        "scope": "Offline synthetic-corpus manuscript projection plus denominator membership checks. Fixture results are not publication evidence or a rerun of the historical corpus."
+      }
+    }
+  ],
+  "evidence_boundary": "Passing code and fixture checks do not establish empirical validity, recover historical observations, or approve a new journal, arXiv or Zenodo edition.",
+  "out_of_scope": [
+    "DopamineForaging scientific content and publication archive"
+  ]
+}

@@ -37,6 +37,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 from docxology_tools import release_controls  # noqa: E402
 from docxology_tools.release_evidence import is_ephemeral_release_evidence_path  # noqa: E402
 from docxology_tools import report_references  # noqa: E402
+from docxology_tools.archive_projection import verified_archives  # noqa: E402
 
 # Re-export the shared policy for existing callers and focused contract tests.
 CONTROL_FILES = release_controls.CONTROL_FILES
@@ -359,10 +360,11 @@ def _superseded_report_paths() -> set[Path]:
     )
 
 
-def _relative_paths() -> list[Path]:
+def _relative_paths(*, archive_paths: set[Path] | None = None) -> list[Path]:
     superseded = _superseded_report_paths()
+    office = {Path(name) for name in verified_archives(REPO_ROOT)} if archive_paths is None else archive_paths
     return sorted(
-        (path for path in tracked_paths() if is_published_path(path) and path not in superseded),
+        (path for path in tracked_paths() if is_published_path(path) and path not in superseded and path not in office),
         key=lambda path: path.as_posix(),
     )
 
@@ -398,14 +400,15 @@ def source_path(relative: Path, *, repo_root: Path = REPO_ROOT) -> Path:
     return source
 
 
-def _omitted_paths() -> list[Path]:
+def _omitted_paths(*, archive_paths: set[Path] | None = None) -> list[Path]:
     """Return every tracked path omitted from the projection, all classes."""
     superseded = _superseded_report_paths()
+    office = {Path(name) for name in verified_archives(REPO_ROOT)} if archive_paths is None else archive_paths
     return sorted(
         (
             path
             for path in tracked_paths()
-            if path in superseded
+            if path in superseded or path in office
             or (
                 not is_published_path(path)
                 and (is_paper_extracted_image(path) or is_visual_qa_screenshot(path))
@@ -484,6 +487,7 @@ MANIFEST_COMPARISON_FIELDS = (
     "omitted_paper_images",
     "omitted_visual_qa_screenshots",
     "omitted_superseded_reports",
+    "omitted_source_documents",
     "growth_report",
 )
 
@@ -536,7 +540,10 @@ def _growth_report_for_manifest(
 
 def _manifest_payload(existing: dict | None = None, *, include_pending_growth: bool = True) -> dict:
     manifest_rel = ARTIFACT_MANIFEST.relative_to(REPO_ROOT)
-    relative_paths = _relative_paths()
+    # One complete proof per manifest operation; no cache survives the call.
+    archives = verified_archives(REPO_ROOT)
+    office = {Path(name) for name in archives}
+    relative_paths = _relative_paths(archive_paths=office)
     sources = {path: source_path(path) for path in relative_paths}
     included = [path for path in relative_paths if path != manifest_rel and not is_control_path(path)]
     # Write path: include today's growth report even before it exists so the
@@ -554,7 +561,7 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
         (path for path in expected_control_paths if path != manifest_rel and is_control_path(path)),
         key=lambda path: path.as_posix(),
     )
-    omitted = _omitted_paths()
+    omitted = _omitted_paths(archive_paths=office)
     source_bytes = sum(sources[path].stat().st_size for path in included)
     omitted_sources = {path: source_path(path) for path in omitted}
     paper_images = [path for path in omitted if is_paper_extracted_image(path)]
@@ -585,7 +592,8 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
         "policy": {
             "repository_role": "complete archival source",
             "pages_role": "bounded navigable web projection",
-            "omitted_assets": "duplicated extracted paper-image binaries, dated visual-QA screenshot binaries, and superseded dated reports (same-family files strictly older than the newest, except reports cited by published surfaces)",
+            "supporting_document_policy": "Only reviewed Office source documents with exact committed byte proofs and no current local references use pinned GitHub archives. PDFs and work URLs remain hosted.",
+            "omitted_assets": "reviewed supporting Office source documents, duplicated extracted paper-image binaries, dated visual-QA screenshot binaries, and superseded dated reports (same-family files strictly older than the newest, except reports cited by published surfaces)",
             "omitted_assets_fallback": "Use the GitHub tree/raw templates with the source commit and repository-relative path.",
             "superseded_report_policy": "Superseded dated reports (older-than-newest per report family) remain in the committed repository and are omitted from the Pages projection; any report referenced from a published page or data file is never omitted.",
             "visual_qa_screenshot_policy": "Visual-QA manifests remain in Pages with repository-relative paths and SHA-256 digests; screenshot binaries remain in the committed repository rather than the deploy artifact.",
@@ -613,6 +621,7 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
             # permanently stale until a second pass.
             if (REPO_ROOT / path).is_file() or path == growth_rel
         ],
+        "omitted_source_documents": {"count": len(archives), "archives": list(archives.values())},
         "omitted_paper_images": _omitted_summary(paper_images, omitted_sources),
         "omitted_visual_qa_screenshots": _omitted_summary(visual_qa_screenshots, omitted_sources),
         "omitted_superseded_reports": _omitted_summary(superseded_reports, omitted_sources),

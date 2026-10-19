@@ -2,6 +2,24 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-10-19
+
+- **Publication source corrections:** linked immutable corrected source for
+  MarkdownDecisionProcess, PopulationSearch and MappingWilliamBlake from their
+  work pages and paper guides. Preserved historical publication files, DOIs and
+  extracted quotations, with prominent notices identifying empirical limits.
+  Scientific validation and historical run recovery remain separate.
+
+- **Pages size:** routed a supporting transcript Office document through an
+  explicit pinned archive link while retaining its original repository bytes
+  and hosted PDF. The projection verifies archive byte identity and refuses
+  omissions with surviving local references.
+
+- **Manuscript visual explanations:** added declared offline vector diagrams for
+  architecture, progressive loading, evidence boundaries, and release verification.
+  The native template PDF and companion formats bind generated assets to source
+  and runtime receipts; diagrams describe contracts rather than new results.
+
 ## 2026-10-18
 
 - **Verified archive cleanup:** retired an additional superseded root-level QA

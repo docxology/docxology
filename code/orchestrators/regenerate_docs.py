@@ -36,6 +36,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
 
 from docxology_tools.biblio_table import iter_bibliography_rows  # noqa: E402
+from docxology_tools.publication_revisions import revision_notice_markdown  # noqa: E402
 from docxology_tools.abstract_text import abstract_display_text  # noqa: E402
 from docxology_tools.domain_inference import DOMAIN_TO_EMOJI, infer_domain_name  # noqa: E402
 from docxology_tools.metadata_templates import (  # noqa: E402
@@ -767,6 +768,7 @@ FOLDER_METADATA_FIELDS = (
     "methods",
     "key_findings",
     "summary_provenance",
+    "source_revision_review",
     "related_papers",
     "related_software",
     "domain",
@@ -960,6 +962,7 @@ def generate_readme(
     lines.extend([
         '---',
         '',
+        *filter(None, (revision_notice_markdown(meta),)),
         '## Abstract',
         '',
         '\n'.join('> ' + escape(line, quote=False) if line else '>' for line in abstract.splitlines()),
@@ -1171,6 +1174,7 @@ def generate_skill(folder: str, meta: dict, all_folders: list[str] | None = None
         '',
         f'**{authors}** ({year}) · {domain}',
         '',
+        *filter(None, (revision_notice_markdown(meta),)),
         '## Context',
         '',
         f'This work addresses topics in **{domain}**: {", ".join(keywords[:4]) if keywords else topic}.',

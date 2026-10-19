@@ -12,6 +12,8 @@ The [search runtime](../../js/search-page.js) starts an unfiltered visit with a 
 
 The [gallery runtime](../../js/art-gallery.js) filters a complete compact catalog while rendering a finite batch of cards. Detail data loads for descriptions and lightbox views; native artwork-page links remain usable. The [publication runtime](../../js/publications.js) loads the work catalog and requests abstract/keyword enrichment for nonempty searches. Sorting and filtering act on the matching catalog before row batching. [Runtime guidance](../operations/site-runtime.md) records these contracts and their browser tests.
 
+![Progressive discovery loads compact entry data first, then retrieves detail for the active query or interaction. Native links and server-rendered content preserve a fallback path.](../output/figures/progressive-discovery.png){#fig:progressive_discovery}
+
 ## Evidence and release method
 
 Local structural, generated-output, and browser checks have distinct scopes. The [release runbook](../operations/settle.md) separates reviewed payload commits from generated control binders. [Deployment verification](../operations/live-verification.md) binds fresh route checks to an expected source commit and a specific successful Pages run. [Release integrity](../operations/release-integrity.md) records the further requirements for human visual review and full release attestation.

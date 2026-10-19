@@ -250,7 +250,7 @@
             <div class="work-summary-grid"><div class="work-detail"><h3>Findings and contributions</h3><ul><li>Tamper detection succeeded on all 2400 benchmark rows (rate 1.0).</li><li>Mean pack throughput was 78.9296 MiB/s on the medium-track condition at observability level 3 (n = 150, CV 15.3%); the paper makes no superiority claim.</li><li>Ciphertext expansion on fixture tracks was an exact, zero-variance 1.7113.</li><li>Length is not hidden exactly: non-sealed levels disclose byte_length in the manifest, and sealed export still reveals the PADMÉ bucket.</li><li>Concludes that a flat ZIP container can carry typed multimodal tracks, authenticated encryption, graded observability and proof export without becoming a repository or hosted service.</li></ul></div><div class="work-detail"><h3>Methods</h3><ul><li>Flat ZIP layout: manifest.json, one encrypted member per track, optional proof — Defines the container as a ZIP archive with a typed manifest, per-track .ento members and an optional hash-chain proof file.</li><li>Per-track AES-256-GCM envelopes with HKDF-derived keys — Each track is sealed with authenticated encryption under a fixed nonce||tag||ciphertext header, specified in a Kaitai Struct file.</li><li>Four graded observability levels for export-time manifest redaction — Observability levels 0–3 control which manifest metadata a recipient sees, without re-encrypting the track payloads.</li><li>Associated-data binding and PADMÉ length padding in the default profile — The 0.4.0 default binds associated data and pads ciphertext members to PADMÉ buckets to coarsen the length channel.</li><li>Scripted benchmark: 150 repetitions over observability levels on fixture tracks — Benchmarks on committed EEG, VCF and spectrogram fixtures plus a synthetic throughput track measure throughput, latency, expansion and tamper detection.</li></ul></div></div><p class="summary-sources">Summary sources: <a href="../papers/2026_ENTO/metadata.json">Paper metadata and evidence</a> · <a href="../papers/2026_ENTO/full_text.md">Extracted source text</a>.</p>
         </section>
 <section class="section" id="downloads" aria-labelledby="downloads-title">
-            <div class="section-header"><h2 id="downloads-title">PDF downloads</h2><p>Archived files available directly from this site.</p><div class="section-divider"></div></div>
+            <div class="section-header"><h2 id="downloads-title">Document downloads</h2><p>PDFs are hosted here; supporting sources may use pinned archives.</p><div class="section-divider"></div></div>
             <div class="work-detail"><ul class="download-list"><li><a href="../papers/2026_ENTO/entofile-0.4.pdf" download="entofile-0.4.pdf" type="application/pdf">entofile-0.4.pdf</a><span class="muted"> PDF · 3.32 MiB · extracted-text source</span></li></ul></div>
         </section>
         <section class="section section-alt">
@@ -279,7 +279,7 @@
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite &amp; Verify</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/23ed2fe0b">build 23ed2fe0b 2026-10-12</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/c2ee90da4">build c2ee90da4 2026-10-18</a></p>
     </footer>
 <script src="/js/search-utils.js?v=site-20261002b"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

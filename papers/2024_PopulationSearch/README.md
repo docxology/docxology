@@ -8,6 +8,15 @@
 
 ---
 
+## Corrected source review
+
+The corrected source fixes graph symmetry, diagonal weights and tour accounting and supplies a new seeded paired-run protocol with raw execution evidence. The historical table-specific graph denominator remains unestablished; the new run does not reconstruct that table.
+
+The abstract, findings and downloadable publication describe the historical archive. Consult the corrected source before reusing its empirical claims. This review does not issue a new publication or DOI.
+
+[Read the pinned source correction](https://github.com/docxology/ActiveACO/blob/af126fd2752a0b6417c033defd44425567322d5e/PAPER_REVISION.md) (reviewed 2026-10-19).
+
+
 ## Abstract
 
 > We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation. Demonstrated with Ant Colony Optimization (ACO) on the Travelling Salesman Problem (TSP), experimental results indicate Active Inference yields improved solutions with marginal increase in computational cost, with performance patterns relating to graph topology.

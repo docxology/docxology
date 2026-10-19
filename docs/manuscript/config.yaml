@@ -1,8 +1,8 @@
 paper:
   title: 'docxology: Research, Software, and Citation Index'
   subtitle: Source authority, progressive discovery, and commit-bound release evidence
-  version: 0.4.0-draft
-  date: '2026-10-18'
+  version: 0.5.0-draft
+  date: '2026-10-19'
   cover:
     producer: repository-source-flow-v1
     alt: Reviewed sources pass through shared identity and parsing policy into generated
@@ -50,6 +50,13 @@ render:
     repository: docxology/template
     revision: 3462d19761cc87d09a0b780ef978fa9efc142723
     version: 4.0.2
+  figures:
+    producer: repository-method-diagrams-v1
+    ids:
+    - system-context
+    - progressive-discovery
+    - evidence-boundaries
+    - release-path
 bibliography:
   references_path: docs/manuscript/references.bib
   fail_on_missing: true

@@ -23,7 +23,7 @@ Use Pandoc citation syntax only, for example `[@real_key]`. Every key must exist
 
 ## Figures
 
-If a figure producer is introduced, document its command and write inspectable outputs under `../output/figures/`. Reference a real file with a label such as:
+The declared offline diagram producer writes inspectable outputs under `../output/figures/` in the external rendering project. Additional producers require a documented, reviewed integration. Reference a real file with a label such as:
 
 ```markdown
 ![Caption text.](../output/figures/example.png){#fig:example width=80%}

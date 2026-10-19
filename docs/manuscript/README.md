@@ -81,7 +81,7 @@ execute; these controls are not a network or OS sandbox. Required tools and
 unresolved bibliography/reference diagnostics fail closed. The receipt binds
 template source/dependency metadata, the actual external runtime, staged
 transformations, source/tool/cover/output hashes, and pending human/editorial
-review. Other body figures and Mermaid still require an explicit integration.
+review. The declared body-diagram registry is integrated; arbitrary images and Mermaid require a separate reviewed producer.
 
 HTML, EPUB3, and PowerPoint retain the Pandoc/citeproc renderer. All four formats
 are manual review artifacts, excluded from normal site regeneration. Manuscript
@@ -99,3 +99,18 @@ DOCXOLOGY_TEMPLATE_PYTHON=/path/to/template-environment/bin/python \
 Ordinary tests skip the native integration. Successful rendering and assistant
 layout inspection do not establish scientific validity, human approval, or
 publication readiness. Inspect each requested format before external release.
+
+
+## Body diagrams
+
+The declared `repository-method-diagrams-v1` producer renders four explanatory
+diagrams: architecture, progressive loading, evidence boundaries, and the release
+path. The registry in `code/src/manuscript_figures.py` is the sole authority for
+their virtual `../output/figures/*.png` source targets. Structural validation
+recognizes only that exact registry/configuration; it does not claim asset creation.
+Explicit rendering creates vector PDFs and offline PNG companions outside the
+checkout. The native PDF uses vectors; HTML, EPUB and slides use PNG companions.
+The receipt binds producer code, runtime versions and every asset hash. Unknown,
+remote or arbitrary image inputs remain unsupported. Install the `pdf-extraction`
+extra for the PNG rasterizer. These diagrams explain implementation contracts and
+are not measurements or scientific results.

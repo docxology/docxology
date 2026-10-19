@@ -15,6 +15,8 @@ import yaml
 
 from docxology_tools.generated_outputs import read_generated_output_text
 
+from docxology_tools.manuscript_figures import FIGURES, PRODUCER, SOURCE_TARGETS
+
 MANUSCRIPT_PATH = Path("docs/manuscript")
 SECTION_PATTERN = re.compile(r"^(?:[0-9]{2}|S[0-9]{2})_[a-z0-9_]+\.md$")
 LABEL_PATTERN = re.compile(r"\{#((?:sec|fig|tbl):[A-Za-z0-9_-]+)\}")
@@ -226,6 +228,9 @@ def validate_manuscript(root: Path) -> dict:
     errors: list[str] = []
     config_text = _source_text(root, MANUSCRIPT_PATH / "config.yaml", errors)
     config, formats = _configuration(config_text, root, errors) if config_text is not None else ({}, [])
+    render_config = config.get("render")
+    figures = render_config.get("figures") if isinstance(render_config, dict) else None
+    declared_targets = SOURCE_TARGETS if figures == {"producer": PRODUCER, "ids": list(FIGURES)} else frozenset()
     references = _source_text(root, MANUSCRIPT_PATH / "references.bib", errors)
     citation_keys = []
     if references is not None:
@@ -314,6 +319,8 @@ def validate_manuscript(root: Path) -> dict:
             try:
                 if not destination.resolve().is_relative_to(root.resolve()):
                     errors.append(f"{relative}: local link escapes repository")
+                elif image and target in declared_targets:
+                    continue  # Declared virtual asset, produced only by explicit offline rendering.
                 elif not destination.exists():
                     errors.append(f"{relative}: missing local {'figure' if image else 'link'} {parsed.path}")
                 elif image and (not destination.is_file() or destination.is_symlink()):
@@ -334,6 +341,7 @@ def validate_manuscript(root: Path) -> dict:
         "citation_count": len(citation_keys),
         "configured_render_formats": formats,
         "source_valid": not errors,
+        "declared_figure_targets": sorted(declared_targets),
         "render_performed": False,
         "bibliography_syntax_validated": False,
         "publication_readiness_assessed": False,

@@ -77,5 +77,12 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Internal inconsistency in the source: Section 4.1 says 100 graphs each of 50/100/250/500 nodes, while the Table 1 caption says 50 graphs per node size and includes a 25-node column.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "source_revision_review": {
+    "reviewed_at": "2026-10-19",
+    "repository": "docxology/ActiveACO",
+    "commit": "af126fd2752a0b6417c033defd44425567322d5e",
+    "document": "PAPER_REVISION.md",
+    "summary": "The corrected source fixes graph symmetry, diagonal weights and tour accounting and supplies a new seeded paired-run protocol with raw execution evidence. The historical table-specific graph denominator remains unestablished; the new run does not reconstruct that table."
   }
 }

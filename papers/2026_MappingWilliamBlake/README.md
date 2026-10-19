@@ -8,6 +8,15 @@
 
 ---
 
+## Corrected source review
+
+The corrected manuscript derives saved-text and embedding counts from identified membership and reports missing, filtered and excluded works. Publication generation now rejects inconsistent coverage or implicit modality flags. The original historical run membership is unavailable; no replacement corpus count is asserted.
+
+The abstract, findings and downloadable publication describe the historical archive. Consult the corrected source before reusing its empirical claims. This review does not issue a new publication or DOI.
+
+[Read the pinned source correction](https://github.com/docxology/blake/blob/0e06527a4be239678c746d25e410d467cbad5c18/docs/publication-consistency-review.md) (reviewed 2026-10-19).
+
+
 ## Abstract
 
 > A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source code and project-authored aggregate analytics from provider-supplied source materials. This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the open-source software release bundle. The MIT license covers project code and project-authored outputs only; provider-supplied Blake Archive TEI, transcriptions, images, and fallback source texts are excluded and remain under their source-provider terms.

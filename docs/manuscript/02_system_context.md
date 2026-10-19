@@ -6,6 +6,8 @@ The public repository is the source archive for the site at `danielarifriedman.c
 
 The [unified bibliography](../../pages/BIBLIOGRAPHY.md) is the curated works authority. The [software catalog](../../pages/SOFTWARE.md) selects reviewed software entries, while the [cached GitHub inventory](../../data/github-repositories.json) records a broader public inventory. An inventory observation can prompt review without automatically becoming a curated publication or endorsement.
 
+![Authored sources pass through shared contracts into public views. The repository retains original evidence; Pages serves a bounded projection with explicit archival fallbacks.](../output/figures/system-context.png){#fig:system_context}
+
 ## Identity and source custody
 
 [Work identity reservations](../../data/work-identifiers.json) preserve permanent citation keys and work-page URLs as titles or years change. [Canonical policy](../seo/canonical-policy.md) connects generated `works/` landing pages with paper-folder routes and redirects. A work page may offer source-PDF and GitHub-folder links when the corresponding archive objects exist; a missing source remains an availability limitation.

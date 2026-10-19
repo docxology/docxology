@@ -8,6 +8,15 @@
 
 ---
 
+## Corrected source review
+
+The corrected active manuscript withdraws unsupported numerical, model-comparison and participant-study claims. Its evaluation is prospective. Historical checkpoints, datasets and study observations have not been recovered.
+
+The abstract, findings and downloadable publication describe the historical archive. Consult the corrected source before reusing its empirical claims. This review does not issue a new publication or DOI.
+
+[Read the pinned source correction](https://github.com/docxology/markdown_decision_process/blob/7c21c57c34ac78998a94d6a1379803e380ff8505/paper/EVALUATION_EVIDENCE.md) (reviewed 2026-10-19).
+
+
 ## Abstract
 
 > The Markdown Decision Process (MDP) framework treats Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, and optimization through probabilistic modeling. Drawing from Markov Decision Process and POMDP theory, the framework operates at Marr's three levels: computational, algorithmic, and implementational. Key innovations include MarkChain for document generation, PolicyOptimizer for reinforcement learning optimization, and BeliefUpdater for probabilisti

@@ -189,3 +189,43 @@ def test_cli_is_read_only_and_json_exit_status_reflects_errors(manuscript):
     result = subprocess.run([sys.executable, str(script), "--root", str(manuscript), "--json"], text=True, capture_output=True, check=False)
     assert result.returncode == 1
     assert json.loads(result.stdout)["source_valid"] is False
+
+
+@pytest.mark.parametrize("mutation", [None, "unknown_image", "ordinary_link", "outside_section", "wrong_producer"])
+def test_repository_link_gate_accepts_only_validated_virtual_manuscript_images(manuscript, monkeypatch, mutation):
+    import validate_repo as vr
+    from docxology_tools.manuscript_figures import FIGURES, PRODUCER
+    folder = manuscript / "docs/manuscript"
+    config_path = folder / "config.yaml"
+    config = yaml.safe_load(config_path.read_text())
+    config["render"]["figures"] = {"producer": PRODUCER, "ids": list(FIGURES)}
+    if mutation == "wrong_producer":
+        config["render"]["figures"]["producer"] = "unreviewed-producer"
+    config_path.write_text(yaml.safe_dump(config))
+    target = "../output/figures/system-context.png"
+    if mutation == "unknown_image":
+        target = "../output/figures/unknown.png"
+    image = f"![System context]({target}){{#fig:systemcontext}}\n"
+    if mutation == "ordinary_link":
+        image = image[1:]
+    section = folder / ("README.md" if mutation == "outside_section" else "00_abstract.md")
+    with section.open("a") as stream:
+        stream.write("\n" + image)
+    (manuscript / "llms.txt").write_text("")
+    monkeypatch.setattr(vr, "REPO_ROOT", manuscript)
+    if mutation is None:
+        vr.validate_local_links()
+    else:
+        with pytest.raises(SystemExit, match="Invalid manuscript source|Missing local links"):
+            vr.validate_local_links()
+
+
+@pytest.mark.parametrize("render", [None, True, []])
+def test_malformed_render_mapping_does_not_grant_virtual_targets(manuscript, render):
+    path = manuscript / "docs/manuscript/config.yaml"
+    config = yaml.safe_load(path.read_text())
+    config["render"] = render
+    path.write_text(yaml.safe_dump(config))
+    result = validate_manuscript(manuscript)
+    assert not result["source_valid"]
+    assert result["declared_figure_targets"] == []

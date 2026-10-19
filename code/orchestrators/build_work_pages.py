@@ -43,6 +43,7 @@ from docxology_tools.site_nav import (  # noqa: E402
 )
 
 from docxology_tools.report_paths import generated_timestamp  # noqa: E402
+from docxology_tools.publication_revisions import revision_notice_html  # noqa: E402
 from docxology_tools.abstract_text import abstract_display_text  # noqa: E402
 from docxology_tools.paper_artifacts import PaperResources, source_file, source_paths  # noqa: E402
 from docxology_tools.citation_metadata import journal_fields, publication_date  # noqa: E402
@@ -437,6 +438,7 @@ def enrichment_for(
 
     return {
         "citation_key": work["citation_key"],
+        "source_revision_review": metadata.get("source_revision_review"),
         "abstract": abstract,
         "keywords": keywords,
         "findings": findings,
@@ -829,12 +831,14 @@ def pdf_downloads_html(resources: PaperResources) -> str:
             f'<li><a href="{h(resources.url(pdf))}" download="{h(pdf.name)}" type="application/pdf">'
             f'{h(pdf.name)}</a><span class="muted"> PDF · {size:.2f} MiB{h(basis)}</span></li>'
         )
+    for item in resources.archive_documents:
+        rows.append(f'<li><a href="{h(item["url"])}">Original {h(Path(item["path"]).suffix[1:].upper())} source (pinned GitHub archive)</a></li>')
     note = resources.selection_issue
     if len(resources.pdfs) > 1:
         note = (note + " " if note else "") + "These files may be different versions or companion documents. The archive does not identify a latest edition."
     note_html = f'<p class="muted">{h(note)}</p>' if note else ""
     return f'''<section class="section" id="downloads" aria-labelledby="downloads-title">
-            <div class="section-header"><h2 id="downloads-title">PDF downloads</h2><p>Archived files available directly from this site.</p><div class="section-divider"></div></div>
+            <div class="section-header"><h2 id="downloads-title">Document downloads</h2><p>PDFs are hosted here; supporting sources may use pinned archives.</p><div class="section-divider"></div></div>
             <div class="work-detail"><ul class="download-list">{"".join(rows)}</ul>{note_html}</div>
         </section>'''
 
@@ -884,7 +888,7 @@ def render_work_page(work: dict) -> str:
     findings = enrich.get("findings", [])
     methods = enrich.get("methods", [])
     concepts = enrich.get("concepts", [])
-    detail_sections = ""
+    detail_sections = revision_notice_html(enrich)
     if abstract or keywords:
         abstract_html = (
             "".join("<p>" + h(paragraph).replace("\n", "<br>") + "</p>" for paragraph in abstract.split("\n\n"))

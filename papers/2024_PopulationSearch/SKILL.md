@@ -12,6 +12,15 @@ doi: "10.48550/arXiv.2408.09548"
 
 **Nassim Dehouche, Daniel Friedman** (2024) · Active Inference
 
+## Corrected source review
+
+The corrected source fixes graph symmetry, diagonal weights and tour accounting and supplies a new seeded paired-run protocol with raw execution evidence. The historical table-specific graph denominator remains unestablished; the new run does not reconstruct that table.
+
+The abstract, findings and downloadable publication describe the historical archive. Consult the corrected source before reusing its empirical claims. This review does not issue a new publication or DOI.
+
+[Read the pinned source correction](https://github.com/docxology/ActiveACO/blob/af126fd2752a0b6417c033defd44425567322d5e/PAPER_REVISION.md) (reviewed 2026-10-19).
+
+
 ## Context
 
 This work addresses topics in **Active Inference**: population search, Active Inference, Ant Colony Optimization, TSP.

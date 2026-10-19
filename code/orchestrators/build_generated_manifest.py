@@ -405,7 +405,8 @@ ARTIFACTS = [
             "papers/*/images/*",
             ".gitignore",
             "code/orchestrators/build_work_pages.py",
-            "code/src/paper_artifacts.py",
+            "code/src/paper_artifacts.py", "code/src/publication_revisions.py",
+            "code/src/archive_projection.py", "data/pages-archive-documents.json",
             "code/src/metadata_templates.py",
             "code/src/site_nav.py",
             "code/src/abstract_text.py",
@@ -416,7 +417,7 @@ ARTIFACTS = [
     {
         "name": "Scholar prerequisite audit",
         "outputs": ["data/scholar-readiness.json", "reports/scholar_readiness.md"],
-        "sources": ["data/works.json", "works/*.html", "papers/*/metadata.json", "papers/*/full_text.md", "papers/*/*.[pP][dD][fF]", "code/src/scholar_readiness.py", "code/src/citation_metadata.py", "code/src/paper_artifacts.py"],
+        "sources": ["data/works.json", "works/*.html", "papers/*/metadata.json", "papers/*/full_text.md", "papers/*/*.[pP][dD][fF]", "code/src/scholar_readiness.py", "code/src/citation_metadata.py", "code/src/paper_artifacts.py", "code/src/publication_revisions.py"],
         "command": "uv run python3 code/orchestrators/build_scholar_readiness.py",
     },
     {
@@ -467,7 +468,8 @@ ARTIFACTS = [
             "papers/*/images/*",
             ".gitignore",
             "code/orchestrators/build_paper_pages.py",
-            "code/src/paper_artifacts.py",
+            "code/src/paper_artifacts.py", "code/src/publication_revisions.py",
+            "code/src/archive_projection.py", "data/pages-archive-documents.json",
             "code/orchestrators/build_work_pages.py",
             "code/src/metadata_templates.py",
             "code/src/site_nav.py",

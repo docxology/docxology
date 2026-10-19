@@ -109,5 +109,12 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Computational humanities pipeline paper; counts are descriptive outputs of one saved run.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "source_revision_review": {
+    "reviewed_at": "2026-10-19",
+    "repository": "docxology/blake",
+    "commit": "0e06527a4be239678c746d25e410d467cbad5c18",
+    "document": "docs/publication-consistency-review.md",
+    "summary": "The corrected manuscript derives saved-text and embedding counts from identified membership and reports missing, filtered and excluded works. Publication generation now rejects inconsistent coverage or implicit modality flags. The original historical run membership is unavailable; no replacement corpus count is asserted."
   }
 }

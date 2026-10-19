@@ -35,6 +35,7 @@ from docxology_tools.site_nav import (  # noqa: E402
 )
 
 from docxology_tools.paper_artifacts import PaperResources, source_paths  # noqa: E402
+from docxology_tools.publication_revisions import revision_notice_html  # noqa: E402
 from docxology_tools.abstract_text import abstract_display_text  # noqa: E402
 from build_work_pages import abstract_source_html, enrichment_map  # noqa: E402
 
@@ -103,6 +104,8 @@ def pdf_rows(folder: Path, resources: PaperResources | None = None) -> str:
             f'<li><a href="{h(resources.url(path, prefix="../../"))}" download="{h(path.name)}" type="application/pdf">'
             f'{h(path.name)}</a> <span class="muted">{path.stat().st_size:,} bytes{h(label)}</span></li>'
         )
+    for item in resources.archive_documents:
+        rows.append(f'<li><a href="{h(item["url"])}">Original Office source (pinned GitHub archive)</a></li>')
     return "\n".join(rows)
 
 
@@ -222,7 +225,7 @@ def render_page(work: dict) -> str:
         <p class="sub">Documentation folder for catalog row {h(work['num'])} · <a href="../../works/{h(work['citation_key'])}.html">Canonical work page</a></p>
         <div class="work-actions" role="group" aria-label="Paper source files"><a class="btn btn-outline" href="{h(resources.github_url)}">Paper folder on GitHub</a></div>
     </header>
-    <main id="main" class="main">
+    <main id="main" class="main">{revision_notice_html(work.get("_enrichment", {}))}
         <section class="section">
             <div class="artifact-grid">
                 <div class="artifact-card"><strong>Primary Work Page</strong><a href="../../works/{h(work['citation_key'])}.html">{h(work['citation_key'])}</a></div>
@@ -238,7 +241,7 @@ def render_page(work: dict) -> str:
             <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation and PDFs served directly from this folder.</p><div class="section-divider"></div></div>
             <div class="artifact-grid">
                 <div class="artifact-card"><strong>Documentation</strong><p>{required_links(folder, resources)}</p></div>
-                <div class="artifact-card"><strong>PDF Files</strong><ul>{pdf_rows(folder, resources)}</ul></div>
+                <div class="artifact-card"><strong>Document Files</strong><ul>{pdf_rows(folder, resources)}</ul></div>
                 <div class="artifact-card"><strong>Extracted Content</strong><p>{image_gallery_link(folder, work['title'], resources) or '<span class="muted">No extracted figures are archived.</span>'}</p></div>
             </div>
         </section>

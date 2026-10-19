@@ -26,6 +26,8 @@ COMMON_INPUTS = (
     "papers/Example/CITATION.cff", "papers/Example/full_text.md",
     "papers/Example/manuscript.PDF", "papers/Example/images/page1.png",
     "code/src/paper_artifacts.py", "code/src/site_nav.py",
+    "code/src/archive_projection.py", "data/pages-archive-documents.json",
+    "code/src/publication_revisions.py",
     "code/orchestrators/build_work_pages.py", "code/src/metadata_templates.py",
     "code/src/abstract_text.py",
 )

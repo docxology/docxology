@@ -140,7 +140,7 @@ def test_failure_during_render_never_publishes_misbound_outputs(tmp_path, monkey
 def test_real_four_format_render_and_receipt(tmp_path):
     root = Path(__file__).resolve().parents[2]
     receipt = rendering.render_manuscript(root, tmp_path / "review", template_root=Path(os.environ["DOCXOLOGY_TEMPLATE_ROOT"]), template_python=Path(os.environ["DOCXOLOGY_TEMPLATE_PYTHON"]))
-    assert {item["format"] for item in receipt["artifacts"].values()} == {"html", "pdf", "epub", "slides", "cover"}
+    assert {item["format"] for item in receipt["artifacts"].values()} == {"html", "pdf", "epub", "slides", "cover", "figure"}
     assert receipt["bibliography_entries"] == 1
     assert receipt["license"] == "CC-BY-4.0"
     assert receipt["human_visual_review"] == "pending"
@@ -259,3 +259,14 @@ def test_unknown_cover_producer_fails_before_template_execution(tmp_path, monkey
     with pytest.raises(ValueError, match="declared cover producer"):
         rendering.render_manuscript(root, tmp_path / "unknown-cover", template_root=tmp_path, template_python=tmp_path / "python")
     assert not (tmp_path / "unknown-cover").exists()
+
+
+def test_only_declared_diagram_targets_reach_rendered_images(tmp_path):
+    from docxology_tools.manuscript_figures import SOURCE_TARGETS
+    target=next(iter(SOURCE_TARGETS))
+    node={"t":"Image","c":[["fig:diagram",[],[]],[{"t":"Str","c":"Diagram"}],[target,""]]}
+    mapped=rendering.rebase_links(node,tmp_path,"a"*40,{target:"figures/diagram.png"})
+    assert mapped["c"][-1][0]=="figures/diagram.png"
+    node["c"][-1][0]="https://example.org/remote.png"
+    with pytest.raises(ValueError,match="explicit offline"):
+        rendering.rebase_links(node,tmp_path,"a"*40,{target:"figures/diagram.png"})

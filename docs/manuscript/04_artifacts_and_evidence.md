@@ -19,11 +19,13 @@
 - [Manuscript validator](../../code/orchestrators/validate_manuscript.py) supports source/configuration consistency and reference resolution. It does not establish complete BibTeX grammar, rendering, scientific validity, or editorial approval.
 
 
+![Evidence classes answer different questions. Byte identity, generation agreement, browser behavior, deployed contracts, and named review each retain their own scope.](../output/figures/evidence-boundaries.png){#fig:evidence_boundaries}
+
 ## Current evidence status
 
 This draft binds architecture statements to repository sources and gives commands that can be rerun against a chosen candidate. It does not repeat historical test totals or deployment results as current measurements. Dated evidence belongs in the corresponding report and release records; a later reader must inspect the candidate and scope of each receipt.
 
-The architecture diagram in [development.md](../operations/development.md) is a documentation aid. The native PDF cover illustrates the source-to-evidence flow. It is an explanatory diagram, not an experimental result. Explicit rendering produces external review artifacts with hash-bound receipts.
+The architecture diagram in [development.md](../operations/development.md) is a documentation aid. The native PDF cover and body diagrams explain architecture, loading decisions, evidence boundaries, and release verification. They describe source-backed contracts rather than experimental results. Explicit rendering produces external review artifacts with hash-bound receipts.
 
 ## Claim discipline
 

@@ -185,3 +185,11 @@ class PaperResources:
     @property
     def docs_url(self) -> str:
         return "../" + encoded_path(self.docs_path.rstrip("/")) + "/" if self.folder else ""
+
+
+    @property
+    def archive_documents(self) -> tuple[dict, ...]:
+        """Reviewed supporting source downloads, separate from hosted PDFs."""
+        from docxology_tools.archive_projection import declared_archives
+        return tuple(item for name,item in declared_archives(self.repo_root).items()
+                     if str(Path(name).parent)+"/"==self.docs_path)

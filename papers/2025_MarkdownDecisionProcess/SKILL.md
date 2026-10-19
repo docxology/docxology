@@ -12,6 +12,15 @@ doi: "10.5281/zenodo.17244386"
 
 **Daniel Friedman** (2025) · Computational
 
+## Corrected source review
+
+The corrected active manuscript withdraws unsupported numerical, model-comparison and participant-study claims. Its evaluation is prospective. Historical checkpoints, datasets and study observations have not been recovered.
+
+The abstract, findings and downloadable publication describe the historical archive. Consult the corrected source before reusing its empirical claims. This review does not issue a new publication or DOI.
+
+[Read the pinned source correction](https://github.com/docxology/markdown_decision_process/blob/7c21c57c34ac78998a94d6a1379803e380ff8505/paper/EVALUATION_EVIDENCE.md) (reviewed 2026-10-19).
+
+
 ## Context
 
 This work addresses topics in **Computational**: Markdown Decision Process, document analysis, Markov chains, reinforcement learning.

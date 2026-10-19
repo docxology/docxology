@@ -92,5 +92,12 @@
     "source": "papers/paper_metadata.json",
     "date": "2026-10-01",
     "basis": "Retained source-grounded summary"
+  },
+  "source_revision_review": {
+    "reviewed_at": "2026-10-19",
+    "repository": "docxology/markdown_decision_process",
+    "commit": "7c21c57c34ac78998a94d6a1379803e380ff8505",
+    "document": "paper/EVALUATION_EVIDENCE.md",
+    "summary": "The corrected active manuscript withdraws unsupported numerical, model-comparison and participant-study claims. Its evaluation is prospective. Historical checkpoints, datasets and study observations have not been recovered."
   }
 }

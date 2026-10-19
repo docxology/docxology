@@ -14,6 +14,7 @@ import zipfile
 
 import yaml
 
+from docxology_tools.manuscript_figures import FIGURES, PRODUCER, SOURCE_TARGETS, render_figures
 from docxology_tools.manuscript_template import COVER, TEMPLATE, cover_pdf, native_pdf
 from docxology_tools.generated_outputs import read_generated_output_text
 from docxology_tools.manuscript_validation import MANUSCRIPT_PATH, UniqueKeyLoader, validate_manuscript
@@ -72,13 +73,13 @@ def new_review_directory(root: Path, output: Path) -> Path:
     return output
 
 
-def rebase_links(node, root: Path, commit: str):
+def rebase_links(node, root: Path, commit: str, figure_targets: dict | None = None):
     """Bind source links to one public revision; keep figures local/offline."""
     if isinstance(node, list):
-        return [rebase_links(value, root, commit) for value in node]
+        return [rebase_links(value, root, commit, figure_targets) for value in node]
     if not isinstance(node, dict):
         return node
-    node = {key: rebase_links(value, root, commit) for key, value in node.items()}
+    node = {key: rebase_links(value, root, commit, figure_targets) for key, value in node.items()}
     if node.get("t") in {"RawBlock", "RawInline"}:
         raise ValueError("Raw renderer markup requires an explicit rendering integration")
     if node.get("t") == "CodeBlock" and "mermaid" in node["c"][0][1]:
@@ -88,9 +89,10 @@ def rebase_links(node, root: Path, commit: str):
     target = node["c"][-1][0]
     parsed = urlsplit(target)
     if node["t"] == "Image":
-        # Figure rendering needs a separate declared producer/inspection.
-        # Current sources have no figures; never fetch remote images silently.
-        raise ValueError("Manuscript figures require an explicit offline rendering integration")
+        if figure_targets is None or target not in figure_targets:
+            raise ValueError("Manuscript figures require an explicit offline rendering integration")
+        node["c"][-1][0] = figure_targets[target]
+        return node
     if parsed.scheme or parsed.netloc or not parsed.path:
         return node
     path = (root / MANUSCRIPT_PATH / unquote(parsed.path)).resolve()
@@ -166,6 +168,16 @@ def render_manuscript(root: Path, output: Path, *, template_root: Path | None = 
             if frozen[path] is None:
                 raise ValueError("Declared native rendering source is missing")
             source_hashes[relative] = hashlib.sha256(frozen[path].encode("utf-8")).hexdigest()
+    figure_config = config["render"].get("figures")
+    if figure_config is not None and figure_config != {"producer": PRODUCER, "ids": list(FIGURES)}:
+        raise ValueError("Unknown manuscript figure producer or registry")
+    if figure_config:
+        path = root / "code/src/manuscript_figures.py"
+        inputs.append(path)
+        frozen[path] = read_generated_output_text(root, path, newline="")
+        if frozen[path] is None:
+            raise ValueError("Declared figure producer source is missing")
+        source_hashes[path.relative_to(root).as_posix()] = hashlib.sha256(frozen[path].encode()).hexdigest()
     tools = toolchain(root)
     commit = run(["git", "rev-parse", "HEAD"], root=root).strip()
     if not re.fullmatch(r"[0-9a-f]{40}", commit):
@@ -188,7 +200,9 @@ def render_manuscript(root: Path, output: Path, *, template_root: Path | None = 
         if len(bibliography) != validation["citation_count"]:
             raise ValueError("Parsed bibliography count differs from structural inventory")
         document = json.loads(run([*pandoc, "--from=markdown", "--to=json"], root=root, data="\n\n".join(sections)))
-        document = rebase_links(document, root, commit)
+        figure_receipt = render_figures(scratch / "figures") if figure_config else None
+        targets = {target: f"figures/{name}.png" for target, name in SOURCE_TARGETS.items()} if figure_config else None
+        document = rebase_links(document, root, commit, targets)
         document["blocks"].insert(0, {"t": "Para", "c": [{"t": "Str", "c":
             f"Review draft {config['paper']['version']}. Manuscript text and original figures: {config['metadata']['license']}. Human and editorial reviews pending."}]})
         metadata = document["meta"]
@@ -199,7 +213,7 @@ def render_manuscript(root: Path, output: Path, *, template_root: Path | None = 
         metadata["author"] = {"t": "MetaList", "c": [{"t": "MetaString", "c": author["name"]} for author in config["authors"]]}
         data = json.dumps(document, ensure_ascii=False)
         common = [*pandoc, "--from=json", "--standalone", "--number-sections", "--filter=pandoc-crossref",
-                  "--citeproc", "--bibliography", str(references), "--fail-if-warnings"]
+                  "--citeproc", "--bibliography", str(references), "--resource-path", str(scratch), "--fail-if-warnings"]
         for format_name in formats:
             arguments = [*common, "--output", str(scratch / OUTPUTS[format_name])]
             if format_name == "pdf":
@@ -208,6 +222,12 @@ def render_manuscript(root: Path, output: Path, *, template_root: Path | None = 
                 folder.mkdir(parents=True)
                 figures = project / "docs/output/figures"
                 figures.mkdir(parents=True)
+                if figure_config:
+                    compiled_figures = project / "output/figures"
+                    compiled_figures.mkdir(parents=True)
+                    for asset in (scratch / "figures").iterdir():
+                        shutil.copyfile(asset, figures / asset.name)
+                        shutil.copyfile(asset, compiled_figures / asset.name)
                 cover_pdf(figures / "docxology-cover.pdf", version=config["paper"]["version"], commit=commit, license_name=config["metadata"]["license"])
                 staged = {key: config[key] for key in ("paper", "authors", "publication", "metadata", "keywords") if key in config}
                 staged = json.loads(json.dumps(staged))
@@ -221,16 +241,20 @@ def render_manuscript(root: Path, output: Path, *, template_root: Path | None = 
                 (folder / "preamble.md").write_text(frozen[root / "docs/manuscript/preamble.md"], encoding="utf-8")
                 # The AST has already rejected raw markup/images and bound local
                 # evidence links to the exact repository revision.
-                body = run([*pandoc, "--from=json", "--to=markdown", "--wrap=none"], root=root, data=data)
+                native_document = json.loads(data)
+                if figure_config:
+                    native_targets = {f"figures/{name}.png": f"../output/figures/{name}.pdf" for name in FIGURES}
+                    native_document = rebase_links(native_document, root, commit, native_targets)
+                body = run([*pandoc, "--from=json", "--to=markdown", "--wrap=none"], root=root, data=json.dumps(native_document))
                 (folder / "00_body.md").write_text(body, encoding="utf-8")
                 worker = project / "native-worker.py"
                 worker.write_text(frozen[root / "code/src/manuscript_template.py"], encoding="utf-8")
                 staged_hashes = {path.relative_to(project).as_posix(): digest(path)
-                    for path in sorted((project / "docs").rglob("*")) if path.is_file()}
+                    for path in sorted([*(project / "docs").rglob("*"), *(project / "output/figures").rglob("*")]) if path.is_file()}
                 worker_hash = digest(worker)
                 template_receipt = native_pdf(template_root, template_python, project, worker)
                 after_hashes = {path.relative_to(project).as_posix(): digest(path)
-                    for path in sorted((project / "docs").rglob("*")) if path.is_file()}
+                    for path in sorted([*(project / "docs").rglob("*"), *(project / "output/figures").rglob("*")]) if path.is_file()}
                 if after_hashes != staged_hashes or digest(worker) != worker_hash:
                     raise ValueError("Staged rendering sources changed; no review outputs were published")
                 template_receipt["staged_source_sha256"] = staged_hashes
@@ -245,6 +269,11 @@ def render_manuscript(root: Path, output: Path, *, template_root: Path | None = 
                     arguments += ["--slide-level=2"]
             run(arguments, root=root, data=data)
         artifacts = validate_artifacts(scratch, formats)
+        if figure_config:
+            for name, alt in FIGURES.items():
+                for suffix in ("pdf", "png"):
+                    asset = scratch / "figures" / f"{name}.{suffix}"
+                    artifacts[f"figures/{asset.name}"] = {"format":"figure", "figure_id":name, "bytes":asset.stat().st_size, "sha256":digest(asset), "alt":alt}
         if template_receipt is not None:
             artifacts["docxology-cover.pdf"] = {"format": "cover", "bytes": (scratch / "docxology-cover.pdf").stat().st_size,
                 "sha256": digest(scratch / "docxology-cover.pdf"), "alt": COVER["alt"]}
@@ -253,7 +282,7 @@ def render_manuscript(root: Path, output: Path, *, template_root: Path | None = 
         receipt = {"schema_version": "1.0", "evidence_kind": "offline manuscript draft render",
                    "source_sha256": source_hashes,
                    "source_link_commit": commit, "toolchain": tools, "template": template_receipt, "artifacts": artifacts,
-                   "bibliography_parser": "Pandoc biblatex reader", "bibliography_entries": len(bibliography),
+                   "figures": figure_receipt, "bibliography_parser": "Pandoc biblatex reader", "bibliography_entries": len(bibliography),
                    "license": config["metadata"]["license"], "editorial_review": "pending",
                    "human_visual_review": "pending", "scientific_validity_assessed": False,
                    "publication_readiness_assessed": False, "network_fetches_requested": False}

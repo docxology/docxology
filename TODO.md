@@ -16,7 +16,7 @@ criteria, and dependencies. Re-review this file before each public release.
 
 | Effort | Unfinished work | Main dependency |
 | --- | --- | --- |
-| Minor | Search Console cleanup and selected URL inspections; optional public CurioDAO description; retry unavailable source queries | Signed-in owner access, public source availability |
+| Minor | Search Console cleanup and selected URL inspections; retry unavailable source queries | Signed-in owner access, public source availability |
 | Medium | Named visual review and revision-bound release attestation; fresh authenticated Scholar observation; current-candidate Lighthouse review; Pages growth/retention consumer migration; Scholar pilot eligibility/projection review | Reviewer/access, measured candidate evidence, reviewed source/projection contract |
 | Major | Deferred licensed full-text acquisition and originating-paper corrections; manuscript format inspection and editorial review; managed-profile security scan and finding disposition | Rights holders, depositors/authors, editorial decisions, required scan runtime |
 
@@ -109,7 +109,8 @@ Recurring checks below are operating obligations, not unfinished feature work.
 - Full-text acquisition is deferred. Retain the explicit source gaps for **#63** `2023_ToComment`,
   `2024_PaleolithicRockstars`, and `2026_FocusedAttentionMeditation`, then
   extract and summarize from those sources. Direct publisher/registry checks
-  found no accessible licensed full text. Unsupported seed content has been
+  found no accessible licensed full text. Distribution copies remain unavailable;
+  do not infer redistribution permission. Unsupported seed content has been
   cleared; the meditation chapter retains a labeled publisher synopsis.
 - Authorship questions for **#29** SUMO and **#33** Digital Twins are resolved:
   retain Scott Ryan Maybell in the registered SUMO creators and R.J. Cordes
@@ -119,10 +120,14 @@ Recurring checks below are operating obligations, not unfinished feature work.
   the earlier review remains historical evidence.
 - Current-source review and corrections for all ten publication questions
   are recorded in [the consistency review](reports/publication_consistency_review_2026-10-13.json).
-  Remaining evidence questions: MarkdownDecisionProcess checkpoint,
+  [The corrected-source review](reports/publication_source_corrections_2026-10-19.json)
+  records the active manuscript revisions, implementation fixes and validation
+  limits. Current work and paper pages label the preserved historical summaries
+  and link to immutable corrected source. Remaining evidence work concerns
+  MarkdownDecisionProcess checkpoint,
   participant and statistical provenance; PopulationSearch's table-specific
-  graph/run denominator; DopamineForaging's reversed 113/160 transcript
-  assignments; and MappingWilliamBlake's historical 156/162 run membership.
+  graph/run denominator; and MappingWilliamBlake's historical run membership.
+  DopamineForaging is outside this revision scope; its published archive remains unchanged.
   Current compiler/test/source corrections do not establish broader scientific
   validity or revise archived PDFs. Any corrected archival publication needs
   a separately reviewed revision, followed by source-backed archive and summary
@@ -219,21 +224,6 @@ Recurring checks below are operating obligations, not unfinished feature work.
 - Deliverable: apply current/archival/deletion retention tiers with provenance-preserving manifest entries
 - Acceptance: current reports remain hosted/indexed; historical reports remain in GitHub or release archives; no evidence is deleted silently
 - Dependencies: Pages growth report, release-integrity manifest
-
-### ART-001 — Optional public CurioDAO description
-
-- Priority: P1
-- Owner: DAF (on Flickr) / WEB DEVELOPER (site-side re-sync)
-- Trigger: DAF chooses to add a sourced public description on Flickr
-- Deliverable: add that description, then use the approved Flickr refresh and
-  artwork-page generation workflow
-- Acceptance: exported public description matches the source and dependent
-  pages regenerate; non-public photos remain excluded
-- Dependencies: owner-side Flickr edit, approved API-key workflow,
-  `sync_flickr_artworks.py`, artwork-page generation
-- Scope: optional. Public tagging, description coverage, and Solstice collection
-  placement are complete and no longer pending here. *26 Too* retains its
-  current text because no public source ties it to Card 26.
 
 ## P2 — Operating model
 

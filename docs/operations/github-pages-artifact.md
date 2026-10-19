@@ -82,8 +82,12 @@ not deletion or report pruning.
 
 The legacy dated capture layout is matched only for real calendar dates and
 direct child image files; arbitrary report images and nested directories do
-not inherit the omission rule. All paper PDFs, full text, and the archival
-transcript DOCX remain hosted. No source evidence is deleted by this policy.
+not inherit the omission rule. All paper PDFs and full text remain hosted. Reviewed supporting Office
+documents may instead use pinned GitHub source downloads, declared in
+`data/pages-archive-documents.json`. The transcript has both a hosted PDF and
+a visible link to its original Office source archive. Archive routing requires
+exact source/committed-object byte agreement and rejects any surviving local
+download reference; it never deletes repository source bytes. No source evidence is deleted by this policy.
 
 After deployment, the Pages workflow runs `verify_deployed_artifact.py` and
 retains `deployment-acceptance-<full SHA>` as an Actions artifact for 90 days.

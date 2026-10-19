@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "entries": [
+    {
+      "path": "papers/2022_Transcript/ActInf_GuestStream.docx",
+      "commit": "795e29d0e357f15db261523cd0f5253991064f11",
+      "bytes": 29079868,
+      "sha256": "e259e80791bf996256d82cd40d08dd5e5a4701fc5269757748d64c3d37f76aec",
+      "reason": "Supporting transcript Office source; original Git and Zenodo archives remain available, with a hosted PDF and explicit pinned source link. No current local download references.",
+      "reviewed_by": "Codex automated projection review (2026-10-19)"
+    }
+  ]
+}

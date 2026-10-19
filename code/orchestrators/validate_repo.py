@@ -347,14 +347,29 @@ def strip_fenced_code_blocks(text: str) -> str:
     return re.sub(r"(?ms)^(```|~~~)[^\n]*\n.*?^\1[ \t]*$", "", text)
 
 
-def iter_local_links(text: str) -> list[str]:
+def iter_local_links(text: str, *, generated_images: frozenset[str] = frozenset()) -> list[str]:
     text = strip_fenced_code_blocks(text)
+    if generated_images:
+        from docxology_tools.manuscript_validation import LINK_PATTERN
+        text = LINK_PATTERN.sub(
+            lambda match: "" if match[1] == "!" and match[2].strip("<>") in generated_images else match[0],
+            text,
+        )
     md_link = re.compile(r"\[[^\]]+\]\((<[^>]+>|[^)]+)\)")
     html_link = re.compile(r"\b(?:href|src)=['\"]([^'\"]+)['\"]")
     return md_link.findall(text) + html_link.findall(text)
 
 
 def validate_local_links() -> None:
+    manuscript_sections: set[Path] = set()
+    generated_images: frozenset[str] = frozenset()
+    if (REPO_ROOT / "docs/manuscript/config.yaml").exists():
+        from docxology_tools.manuscript_validation import MANUSCRIPT_PATH, validate_manuscript
+        manuscript = validate_manuscript(REPO_ROOT)
+        if not manuscript["source_valid"]:
+            raise SystemExit("Invalid manuscript source:\n" + "\n".join(manuscript["errors"]))
+        manuscript_sections = {REPO_ROOT / MANUSCRIPT_PATH / name for name in manuscript["sections"]}
+        generated_images = frozenset(manuscript["declared_figure_targets"])
     files = list(REPO_ROOT.rglob("*.md")) + list(REPO_ROOT.rglob("*.html")) + [REPO_ROOT / "llms.txt"]
     missing: list[str] = []
     for path in files:
@@ -365,7 +380,7 @@ def validate_local_links() -> None:
         if path.name == "full_text.md":
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")
-        for raw in iter_local_links(text):
+        for raw in iter_local_links(text, generated_images=generated_images if path in manuscript_sections else frozenset()):
             link = raw.strip()
             if link.startswith("<") and link.endswith(">"):
                 link = link[1:-1]

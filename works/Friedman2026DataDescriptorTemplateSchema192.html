@@ -243,7 +243,7 @@
             <div class="work-summary-grid"><div class="work-detail"><h3>Findings and contributions</h3><ul><li>The clean fixture descriptor produces zero validation findings, while the deliberately perturbed demo produces several errors and warnings.</li><li>For the shipped fixture, both files verify: declared and actual row counts agree and each recomputed checksum matches, leaving the readiness score unpenalised.</li><li>The paper reports that its zero-mock test suite exceeds the 90% project coverage gate.</li><li>The work explicitly makes no scientific claim about the synthetic data; claims are limited to how to describe and release a dataset.</li></ul></div><div class="work-detail"><h3>Methods</h3><ul><li>Synthetic demo dataset: two CSV fixtures plus JSON descriptor — Ships two small deterministic synthetic CSV files (measurements, subjects) described by a machine-readable descriptor with checksums and row counts.</li><li>Six-field data dictionary with typed constraints — Declares six fields with types, nullability, units, regex patterns, closed enumerations and numeric bounds for the measurement table.</li><li>Order-independent sha256 schema fingerprint — descriptor_fingerprint() hashes (name, type, nullable) triples so reordering fields does not change the schema fingerprint.</li><li>Validation gate with readiness score and perturbed negative control — validate_descriptor() emits severity-tagged findings folded into a readiness score; a deliberately broken copy tests that the gate reacts.</li><li>Byte-level descriptor-to-file verification — verify_descriptor_files() recomputes sha256 and row counts of present files and reports verified, mismatch, or absent status.</li></ul></div></div><p class="summary-sources">Summary sources: <a href="../papers/2026_DataDescriptorTemplate/metadata.json">Paper metadata and evidence</a> · <a href="../papers/2026_DataDescriptorTemplate/full_text.md">Extracted source text</a>.</p>
         </section>
 <section class="section" id="downloads" aria-labelledby="downloads-title">
-            <div class="section-header"><h2 id="downloads-title">PDF downloads</h2><p>Archived files available directly from this site.</p><div class="section-divider"></div></div>
+            <div class="section-header"><h2 id="downloads-title">Document downloads</h2><p>PDFs are hosted here; supporting sources may use pinned archives.</p><div class="section-divider"></div></div>
             <div class="work-detail"><ul class="download-list"><li><a href="../papers/2026_DataDescriptorTemplate/Friedman_2026_Data_a542f49d.pdf" download="Friedman_2026_Data_a542f49d.pdf" type="application/pdf">Friedman_2026_Data_a542f49d.pdf</a><span class="muted"> PDF · 0.19 MiB · extracted-text source</span></li></ul></div>
         </section>
         <section class="section section-alt">
@@ -270,7 +270,7 @@
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite &amp; Verify</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/23ed2fe0b">build 23ed2fe0b 2026-10-12</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/c2ee90da4">build c2ee90da4 2026-10-18</a></p>
     </footer>
 <script src="/js/search-utils.js?v=site-20261002b"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

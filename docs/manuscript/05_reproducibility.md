@@ -25,15 +25,17 @@ For interactive changes, install the `browser-qa` extra and Chromium, then set `
 
 Record the tested commit, exact command, runtime, exit status, and receipt scope. Preserve earlier failed observations when a focused correction or recheck is needed. Keep local tests, hosted CI, deployed byte/route checks, and human review distinguishable. Publication verification must compare the final local commit with the remote and bind deployed checks to that candidate.
 
+![The release path binds a reviewed payload, converged control metadata, automated acceptance, and separate human review to a candidate revision.](../output/figures/release-path.png){#fig:release_path}
+
 ## Manuscript reproducibility
 
-`validate_manuscript.py` is read-only and can inspect a disposable fixture with `--root PATH`. Its JSON states that rendering and publication-readiness assessment were not performed. The pinned manual renderer and its command are documented in [the manuscript guide](README.md). Its receipt binds source, tool, and output hashes; it does not grant human or editorial approval. No generated-value token producer is declared. The native cover has an explicit vector producer whose source and output are bound in the render receipt.
+`validate_manuscript.py` is read-only and can inspect a disposable fixture with `--root PATH`. Its JSON states that rendering and publication-readiness assessment were not performed. The pinned manual renderer and its command are documented in [the manuscript guide](README.md). Its receipt binds source, tool, and output hashes; it does not grant human or editorial approval. No generated-value token producer is declared. The cover and body diagrams have explicit offline producers whose source, runtime, and generated assets are bound in the render receipt.
 
 ## Manuscript rendering inputs
 
 The [rendering guide](README.md) declares the native template revision and tools,
 an explicit external dependency interpreter, staged transformations, and a
-deterministic vector cover. The receipt binds these inputs and output hashes.
+deterministic vector cover and registered body diagrams. The receipt binds these inputs and output hashes.
 The template checkout may contain unrelated work: only the pinned committed
 export is executed. Native PDF rendering is an explicit review operation and
 does not run as part of site regeneration.
