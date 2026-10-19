@@ -429,14 +429,14 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-10-18.json",
+      "path": "/reports/accessibility_static_2026-10-19.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-10-18.json",
+      "path": "/reports/asset_size_2026-10-19.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1251,7 +1251,7 @@
           "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
           "type": "Paper",
           "abstract_url": "https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative001.html",
-          "page_sha256": "38b4ebf5b6db54a77dd103347c18e06c278f8daed3f39b69f2591840fe469cbf",
+          "page_sha256": "3e69c25001b219353a07fe47e1d9246accffdd2d470c045577d3b13137f3f5a2",
           "citation_tags": {
             "citation_title": [
               "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
@@ -1464,11 +1464,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 906747208,
+        "source_bytes": 877737194,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6046,
-        "artifact_bytes": 907815177
+        "artifact_file_count": 6052,
+        "artifact_bytes": 878807180
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5971,7 +5971,7 @@
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "119beec7cb74b58d20b986bce5ceb80bcfa18921612963de6a36ffed5b74f9bb",
     "videos_index": "30d313e045793f89ceb58b0a3315f2ab04a7f429dd766e130b5b5a6bf6d1f578",
-    "search": "4a97b754be1584e80a22d88531bb1c249310ff0d6498589a9cfcb566003855f7",
+    "search": "60a3c9f722a1aec770bef14ebca76bd92d5ff1c2b4d481afb10a0b7cb0cd36d0",
     "claims": "3e5d997b17cd7651e2faab0b722604523524107fd4407fa77d372868e7928487",
     "scholar_verification_receipt": "eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759",
     "coverage_exceptions": "cd5f27ddc26015d9323d0383370b82291befdfe8964312fe1e581ef8effb3c38",
@@ -5979,12 +5979,12 @@
     "people": "42f9c264cb54982f1f1a444370b9495ac1622f9f297ceabed28a257371a66402",
     "organizations": "def5312b106474f15bf3cd623d3cbe00484d6475241d701d0da74f600e06c3fa",
     "resume": "cfbad4434a2e7fbc2b81c3d553258686b86c35d26b2f36b621309ac48a22904e",
-    "work_enrichment": "e1729899bd0c784afacca047e80f524824ffa4101dc9c825004ebc88865dd486",
-    "scholar_readiness": "d345e983a2374ccb7ea3bd3664a93d0c2ff605f26a6f2255b4237f0eb1160e0f",
-    "catalog": "829a5006a9855ba458a9fbd30bb0e6e77459bcab4ffea8d745e7b73b9d45059b",
+    "work_enrichment": "37eb29ad1c8f30c6a3c37804d3846430f154783c86b713f13ec0550fb1217407",
+    "scholar_readiness": "bb3009cbef81e09b4fd5c9e99c83ade9ee27ed227ec5a584eb7545d42b039f4c",
+    "catalog": "c12ff786b3a1a044b3a6985e7db6a83b06493ac4e4d9d37dc20a47d67747422b",
     "reconciliation": "2e73d7005e6e0506735992f6de185211e3f6754ee19ed194fa25aca1d4e1ec5a",
     "reproducibility": "6558029118834d59bc0831d8e1edc3d9ec7a2c16d6706383cf97d203b4be7591",
-    "generated_manifest": "884b1fcda9391215a178b46d087b75638dcc7f7bad69f09b6faaf4e851bd5f9a",
+    "generated_manifest": "229bcc989459a6be305bc5fe48da885a458f972477d4315ec0f6a5b81d2e8fba",
     "current_counts": "dd16c6443396cff85bb91b0656fe0841f534ab130dc814a238bf19f7fdb59b23"
   },
   "source_provenance": {

@@ -17527,8 +17527,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "c2ee90da4c1860250018c36f4c33c66946f1ce34",
-  "source_tree_sha": "3dd0a52deed2b2c695fb8e45913a50dfe64351c5",
+  "source_commit": "6f6654e0b29b2b1306ce25ea9f9eb65339aa6688",
+  "source_tree_sha": "2540c317f5aee02fd04a2607a4a29d603c159bed",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {

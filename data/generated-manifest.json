@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T19:22:25Z",
+  "generated_at": "2026-10-19T16:04:34Z",
   "artifacts": [
     {
       "name": "Scholar PDF placement proposal (review only)",
@@ -148,8 +148,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-10-18.json",
-        "reports/source_coverage_2026-10-18.md"
+        "reports/source_coverage_2026-10-19.json",
+        "reports/source_coverage_2026-10-19.md"
       ],
       "sources": [
         "data/works.json",
@@ -284,7 +284,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-10-18.json"
+        "reports/pages_artifact_growth_2026-10-19.json"
       ],
       "sources": [
         "tracked repository files",
@@ -486,6 +486,9 @@
         ".gitignore",
         "code/orchestrators/build_work_pages.py",
         "code/src/paper_artifacts.py",
+        "code/src/publication_revisions.py",
+        "code/src/archive_projection.py",
+        "data/pages-archive-documents.json",
         "code/src/metadata_templates.py",
         "code/src/site_nav.py",
         "code/src/abstract_text.py",
@@ -507,7 +510,8 @@
         "papers/*/*.[pP][dD][fF]",
         "code/src/scholar_readiness.py",
         "code/src/citation_metadata.py",
-        "code/src/paper_artifacts.py"
+        "code/src/paper_artifacts.py",
+        "code/src/publication_revisions.py"
       ],
       "command": "uv run python3 code/orchestrators/build_scholar_readiness.py"
     },
@@ -573,6 +577,9 @@
         ".gitignore",
         "code/orchestrators/build_paper_pages.py",
         "code/src/paper_artifacts.py",
+        "code/src/publication_revisions.py",
+        "code/src/archive_projection.py",
+        "data/pages-archive-documents.json",
         "code/orchestrators/build_work_pages.py",
         "code/src/metadata_templates.py",
         "code/src/site_nav.py",
@@ -747,7 +754,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-10-18.json"
+        "reports/asset_size_2026-10-19.json"
       ],
       "sources": [
         "root HTML pages",
@@ -761,7 +768,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-10-18.json"
+        "reports/accessibility_static_2026-10-19.json"
       ],
       "sources": [
         "root HTML pages",
