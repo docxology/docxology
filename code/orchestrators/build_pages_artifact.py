@@ -12,7 +12,9 @@ receipt of its family, and whole dated screenshot sets under
 ``reports/visual-qa/``, ``reports/browser-smoke/``, and ``reports/browser-qa/``
 older than that parent's newest date, stay committed in Git but leave the
 Pages projection; a report cited from a published page or data file is never
-omitted. This keeps the published site below GitHub's 1 GiB Pages limit
+omitted. Reviewed supporting Office sources also remain in Git and use pinned
+archive links after exact byte and local-reference checks. Assembly and size
+projection use the same selected paths. This keeps the site below GitHub's 1 GiB Pages limit
 without removing source data from the repository.
 """
 
@@ -37,7 +39,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 from docxology_tools import release_controls  # noqa: E402
 from docxology_tools.release_evidence import is_ephemeral_release_evidence_path  # noqa: E402
 from docxology_tools import report_references  # noqa: E402
-from docxology_tools.archive_projection import verified_archives  # noqa: E402
+from docxology_tools.archive_projection import declared_archives, verified_archives  # noqa: E402
 
 # Re-export the shared policy for existing callers and focused contract tests.
 CONTROL_FILES = release_controls.CONTROL_FILES
@@ -715,25 +717,17 @@ def check_manifest(*, allow_dirty_prepayload_source_snapshot: bool = False) -> N
 
 def assemble(output: Path) -> tuple[int, int, list[str]]:
     require_clean_postdeploy_payload_inputs()
+    # Prove archive custody before replacing an existing build. The same path
+    # selection owns preview, manifest and actual copied output.
+    office = {Path(name) for name in verified_archives(REPO_ROOT)}
+    selected = _relative_paths(archive_paths=office)
+    omitted = [path.as_posix() for path in _omitted_paths(archive_paths=office)]
     if output.exists():
         shutil.rmtree(output)
     output.mkdir(parents=True)
     copied = 0
     bytes_copied = 0
-    omitted: list[str] = []
-    superseded = _superseded_report_paths()
-    for relative in tracked_paths():
-        if not is_published_path(relative):
-            if (
-                len(relative.parts) >= 3
-                and relative.parts[0] == "papers"
-                and "images" in relative.parts
-            ) or is_visual_qa_screenshot(relative):
-                omitted.append(str(relative))
-            continue
-        if relative in superseded:
-            omitted.append(str(relative))
-            continue
+    for relative in selected:
         source = source_path(relative)
         destination = output / relative
         destination.parent.mkdir(parents=True, exist_ok=True)
@@ -871,11 +865,14 @@ def main() -> None:
     print(f"assembled {copied} tracked files ({size / 1024 / 1024:.1f} MiB) at {output}")
     paper_images = sum(1 for path in omitted if is_paper_extracted_image(Path(path)))
     visual_qa_screenshots = sum(1 for path in omitted if is_visual_qa_screenshot(Path(path)))
-    superseded_reports = len(omitted) - paper_images - visual_qa_screenshots
+    office_paths = declared_archives(REPO_ROOT)
+    source_documents = sum(path in office_paths for path in omitted)
+    superseded_reports = len(omitted) - paper_images - visual_qa_screenshots - source_documents
     print(
         f"omitted {len(omitted)} source-only assets "
         f"({paper_images} paper images, {visual_qa_screenshots} visual-QA screenshots, "
-        f"{superseded_reports} superseded dated reports); source copies remain in GitHub"
+        f"{source_documents} supporting Office sources, {superseded_reports} superseded dated reports); "
+        "source copies remain in GitHub"
     )
     if args.check_size and size > MAX_ARTIFACT_BYTES:
             raise SystemExit(
