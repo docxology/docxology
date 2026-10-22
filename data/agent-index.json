@@ -429,14 +429,14 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-10-19.json",
+      "path": "/reports/accessibility_static_2026-10-22.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-10-19.json",
+      "path": "/reports/asset_size_2026-10-22.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -485,7 +485,8 @@
         "domain_name": "string; human-readable domain",
         "type": "string; Paper, Book, Course, Presentation, Playbook, Series, or Report",
         "title": "string",
-        "authors": "array of strings; curated author names in \"Last, First\" order",
+        "authors": "array of strings; ordered contributor names in \"Last, First\" form; contributor_role specifies editors",
+        "contributor_role": "optional string; editor for a document-verified edited volume, author by default",
         "venue": "string",
         "url": "string; canonical external identifier or landing page",
         "doi": "string or empty",
@@ -1097,7 +1098,7 @@
     ],
     "VideoIndex": {
       "schema_version": "VideoIndex.v1",
-      "generated_at": "2026-10-17T00:14:08Z",
+      "generated_at": "2026-10-22T01:13:10Z",
       "source": "data/videos.json",
       "count": 1186,
       "counts": {
@@ -1230,7 +1231,7 @@
       "inclusion_guidance": "https://scholar.google.com/intl/en/scholar/inclusion.html",
       "pdf_byte_limit": 5000000,
       "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
-      "works_sha256": "a4f30286ec9da316cfda5bd7a92a06fb27d180b55c27338d50cc5a5a34965505",
+      "works_sha256": "9327110db9f9dddd638e50fd0248d1f2ed7046d4ae37111093374fcf7bb77689",
       "network_checked": false,
       "indexing_verified": false,
       "summary": {
@@ -1239,7 +1240,7 @@
           "blocked": 223
         },
         "blockers": {
-          "missing_citation_author": 10,
+          "missing_citation_author": 11,
           "no_selected_local_pdf": 25,
           "pdf_directory_differs_from_abstract": 198,
           "pdf_exceeds_byte_limit": 42
@@ -1251,7 +1252,7 @@
           "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
           "type": "Paper",
           "abstract_url": "https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative001.html",
-          "page_sha256": "3e69c25001b219353a07fe47e1d9246accffdd2d470c045577d3b13137f3f5a2",
+          "page_sha256": "f8030f9bc70cb68897e879f57659a1bf740be31729e0525a017afcf6eb101e6f",
           "citation_tags": {
             "citation_title": [
               "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
@@ -1464,11 +1465,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 877740496,
+        "source_bytes": 880469193,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6052,
-        "artifact_bytes": 878810483
+        "artifact_file_count": 6058,
+        "artifact_bytes": 881540240
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1480,7 +1481,7 @@
       "note": "See /data/release-integrity.json for the current envelope."
     },
     "ReproducibilityLedger": {
-      "generated_at": "2026-10-17T00:14:35Z",
+      "generated_at": "2026-10-22T01:14:00Z",
       "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
       "sources": [
         "data/works.json",
@@ -1655,7 +1656,7 @@
         {
           "num": 15,
           "citation_key": "Friedman2025MarkdownDecisionProcessFramework015",
-          "title": "Markdown Decision Process: A Framework for Probabilistic Document Analysis",
+          "title": "Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization",
           "year": 2025,
           "domain_name": "Computational",
           "type": "Paper",
@@ -1697,7 +1698,7 @@
         {
           "num": 62,
           "citation_key": "Friedman2023P3IFPropertiesProcessesPerspectives062",
-          "title": "The P3IF: Properties, Processes, and Perspectives Inter-Framework",
+          "title": "The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security",
           "year": 2023,
           "domain_name": "Cognitive Security",
           "type": "Paper",
@@ -1844,7 +1845,7 @@
         {
           "num": 119,
           "citation_key": "Friedman2026PolicyEntanglementActiveInference119",
-          "title": "Policy Entanglement in Active Inference",
+          "title": "Policy Entanglement in Active Inference: A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary",
           "year": 2026,
           "domain_name": "Computational",
           "type": "Paper",
@@ -2138,7 +2139,7 @@
         {
           "num": 165,
           "citation_key": "Friedman2026ITraceVerificationFirstWebcam165",
-          "title": "iTrace: verification-first webcam eye-movement analysis",
+          "title": "iTrace: verification-first webcam eye-movement analysis (corrected manuscript)",
           "year": 2026,
           "domain_name": "Computational",
           "type": "Paper",
@@ -2390,7 +2391,7 @@
         {
           "num": 180,
           "citation_key": "Friedman2026SortitionUpstreamNTQR180",
-          "title": "Sortition Upstream of NTQR",
+          "title": "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation",
           "year": 2026,
           "domain_name": "Computational",
           "type": "Paper",
@@ -2958,7 +2959,7 @@
         {
           "num": 219,
           "citation_key": "Friedman2026JevPracticeComposablePython219",
-          "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
+          "title": "daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation",
           "year": 2026,
           "domain_name": "Computational",
           "type": "Paper",
@@ -3181,7 +3182,7 @@
         {
           "num": 8,
           "citation_key": "Friedman20255thAppliedActiveInference008",
-          "title": "5th Applied Active Inference Symposium — Abstract Book",
+          "title": "Abstract book for: 5th Applied Active Inference Symposium",
           "year": 2025,
           "domain_name": "Media & Teaching",
           "type": "Presentation",
@@ -3200,7 +3201,7 @@
         {
           "num": 9,
           "citation_key": "Friedman2025AdaptiveBasicIncomeAuBI009",
-          "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference",
+          "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems",
           "year": 2025,
           "domain_name": "Computational",
           "type": "Paper",
@@ -3238,7 +3239,7 @@
         {
           "num": 13,
           "citation_key": "Friedman2025IncreasingAccessibilityApplicabilityActive013",
-          "title": "Increasing the Accessibility and Applicability of Active Inference",
+          "title": "Increasing the Accessibility and Applicability of Active Inference: Generative Playbooks and Open-Source Summer School Curriculum Development",
           "year": 2025,
           "domain_name": "Active Inference",
           "type": "Paper",
@@ -3333,7 +3334,7 @@
         {
           "num": 20,
           "citation_key": "Friedman2025SymergeticsSymbolicSynergeticsRational020",
-          "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic",
+          "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting",
           "year": 2025,
           "domain_name": "Art & Synergetics",
           "type": "Paper",
@@ -3390,7 +3391,7 @@
         {
           "num": 24,
           "citation_key": "Friedman2025ActiveInferenceInstituteActive024",
-          "title": "The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)",
+          "title": "The Active Inference Institute & Active Inference Ecosystem",
           "year": 2025,
           "domain_name": "AII Ecosystem",
           "type": "Paper",
@@ -3449,7 +3450,7 @@
         {
           "num": 33,
           "citation_key": "Friedman2024CommentsNationalDigitalTwins033",
-          "title": "Comments on National Digital Twins R&D Strategic Plan",
+          "title": "Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379",
           "year": 2024,
           "domain_name": "Cognitive Security",
           "type": "Paper",
@@ -3506,7 +3507,7 @@
         {
           "num": 38,
           "citation_key": "Friedman2024MathArtStream8William038",
-          "title": "MathArt Stream #8: William Blake and Active Inference",
+          "title": "MathArt Stream #8 ~ William Blake and Active Inference",
           "year": 2024,
           "domain_name": "Media & Teaching",
           "type": "Presentation",
@@ -3525,7 +3526,7 @@
         {
           "num": 39,
           "citation_key": "Friedman2024SensemakingFederationExploringFrontiers039",
-          "title": "Sensemaking Federation: Exploring the Frontiers of Digital Innovation",
+          "title": "Transcript of: \"Sensemaking Federation: Exploring the Frontiers of Digital Innovation\"",
           "year": 2024,
           "domain_name": "Media & Teaching",
           "type": "Presentation",
@@ -3544,7 +3545,7 @@
         {
           "num": 41,
           "citation_key": "Friedman2024ActiveInferenceInstituteActive041",
-          "title": "The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)",
+          "title": "The Active Inference Institute & Active Inference Ecosystem",
           "year": 2024,
           "domain_name": "AII Ecosystem",
           "type": "Paper",
@@ -3563,7 +3564,7 @@
         {
           "num": 42,
           "citation_key": "Friedman2024WayFindingInfiniteImaginarium042",
-          "title": "Way Finding in the Infinite Imaginarium",
+          "title": "Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes",
           "year": 2024,
           "domain_name": "Art & Synergetics",
           "type": "Paper",
@@ -3582,7 +3583,7 @@
         {
           "num": 47,
           "citation_key": "Friedman2023SnapshotPipelineTissueSpecific047",
-          "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees",
+          "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)",
           "year": 2023,
           "domain_name": "Entomology",
           "type": "Paper",
@@ -3639,7 +3640,7 @@
         {
           "num": 52,
           "citation_key": "Friedman2023CommentsAIAccountabilityPolicy052",
-          "title": "Comments on AI Accountability Policy to NTIA",
+          "title": "Comments on AI Accountability Policy Submitted to NTIA Docket 2023-0005-0001 by IRSIRI, AII, PFH, and COGSEC",
           "year": 2023,
           "domain_name": "Cognitive Security",
           "type": "Paper",
@@ -3734,7 +3735,7 @@
         {
           "num": 60,
           "citation_key": "Friedman2023PostdocReview20202023060",
-          "title": "Postdoc review (2020–2023)",
+          "title": "Postdoc review (2020-2023) ~ September 25, 2023",
           "year": 2023,
           "domain_name": "Media & Teaching",
           "type": "Presentation",
@@ -3753,7 +3754,7 @@
         {
           "num": 61,
           "citation_key": "Friedman2023ActiveInferenceInstituteActive061",
-          "title": "The Active Inference Institute and Active Inference Ecosystem (v1)",
+          "title": "The Active Inference Institute and Active Inference Ecosystem",
           "year": 2023,
           "domain_name": "AII Ecosystem",
           "type": "Paper",
@@ -3772,7 +3773,7 @@
         {
           "num": 65,
           "citation_key": "Friedman2023WilliamBlakeBuckminsterFuller065",
-          "title": "William Blake & Buckminster Fuller: Lives in Juxtaposition",
+          "title": "William Blake & Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity)",
           "year": 2023,
           "domain_name": "Art & Synergetics",
           "type": "Paper",
@@ -3791,7 +3792,7 @@
         {
           "num": 66,
           "citation_key": "Friedman2022ActiveInferenceOntologyDecentralized066",
-          "title": "An Active Inference Ontology for Decentralized Science",
+          "title": "An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons",
           "year": 2022,
           "domain_name": "Active Inference",
           "type": "Paper",
@@ -3810,7 +3811,7 @@
         {
           "num": 67,
           "citation_key": "Friedman2022CatechismTowardsActiveDiffusion067",
-          "title": "Catechism for Towards Active Diffusion",
+          "title": "Catechism for: \"Towards Active Diffusion: A Tale of Multiple (den)Cities\"",
           "year": 2022,
           "domain_name": "AII Ecosystem",
           "type": "Paper",
@@ -3829,7 +3830,7 @@
         {
           "num": 69,
           "citation_key": "Friedman2022FreeWillOrLack069",
-          "title": "On free will or the lack thereof (interview with Robert Sapolsky)",
+          "title": "On free will or the lack thereof",
           "year": 2022,
           "domain_name": "Genetics & Biomedical",
           "type": "Paper",
@@ -3848,7 +3849,7 @@
         {
           "num": 70,
           "citation_key": "Friedman2022PredictiveProcessingInterpretationMirror070",
-          "title": "Predictive Processing Interpretation of the Mirror Test",
+          "title": "Predictive Processing Interpretation of the Mirror Test and Implications of a Reflection Prediction for Human Cognition",
           "year": 2022,
           "domain_name": "Art & Synergetics",
           "type": "Paper",
@@ -4535,7 +4536,7 @@
         {
           "num": 168,
           "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
-          "title": "GeneralizedNotationNotation (GNN)",
+          "title": "Generalized_Notation_Notation (GNN)",
           "year": 2026,
           "domain_name": "Active Inference",
           "type": "Paper",
@@ -4841,7 +4842,7 @@
         {
           "num": 23,
           "citation_key": "Friedman2025TemporalDepthCoherentSelf023",
-          "title": "Temporal Depth in a Coherent Self and in Depersonalization",
+          "title": "Temporal depth in a coherent self and in depersonalization: theoretical model",
           "year": 2025,
           "domain_name": "Active Inference",
           "type": "Paper",
@@ -4879,7 +4880,7 @@
         {
           "num": 31,
           "citation_key": "Friedman2024BridgingGapsImageMeme031",
-          "title": "Bridging gaps in image meme research: A multidisciplinary paradigm",
+          "title": "Bridging gaps in image meme research: A multidisciplinary paradigm for scaling up qualitative analyses",
           "year": 2024,
           "domain_name": "Cognitive Security",
           "type": "Paper",
@@ -4974,7 +4975,7 @@
         {
           "num": 45,
           "citation_key": "Friedman2023GuidedTourThroughSpaces045",
-          "title": "A guided tour through the spaces of particular \"minds\"",
+          "title": "A guided tour through the spaces of particular “minds”: A Comment on “Path integrals, particular kinds, and strange things”",
           "year": 2023,
           "domain_name": "Active Inference",
           "type": "Paper",
@@ -4993,7 +4994,7 @@
         {
           "num": 46,
           "citation_key": "Friedman2023SinglePheromoneModelAccounts046",
-          "title": "A single-pheromone model accounts for empirical patterns of ant colony foraging",
+          "title": "A single-pheromone model accounts for empirical patterns of ant colony foraging previously modeled using two pheromones",
           "year": 2023,
           "domain_name": "Entomology",
           "type": "Paper",
@@ -5031,7 +5032,7 @@
         {
           "num": 53,
           "citation_key": "Friedman2023DistributedScienceScientificProcess053",
-          "title": "Distributed Science — The Scientific Process as Multi-Scale Active Inference",
+          "title": "Distributed Science - The Scientific Process as Multi-Scale Active Inference",
           "year": 2023,
           "domain_name": "Active Inference",
           "type": "Paper",
@@ -5069,7 +5070,7 @@
         {
           "num": 59,
           "citation_key": "Friedman2023OpenAccessScienceNeeds059",
-          "title": "Open Access science needs Open Science Sensemaking (OSSm)",
+          "title": "Open Access science needs Open Science Sensemaking (OSSm): open infrastructure for sharing scientific sensemaking data",
           "year": 2023,
           "domain_name": "Cognitive Security",
           "type": "Paper",
@@ -5145,7 +5146,7 @@
         {
           "num": 88,
           "citation_key": "Friedman2020MeasurementNaturalVariationNeurotransmitter088",
-          "title": "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains",
+          "title": "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies",
           "year": 2020,
           "domain_name": "Entomology",
           "type": "Paper",
@@ -5164,7 +5165,7 @@
         {
           "num": 91,
           "citation_key": "Friedman2020NeuroscienceDecisionMakingInterview091",
-          "title": "The neuroscience of decision making (interview with Timothy Hanks)",
+          "title": "The Neuroscience of Decision Making. An interview of Timothy Hanks by Alexandra Mikhailova and Daniel A. Friedman.",
           "year": 2020,
           "domain_name": "Genetics & Biomedical",
           "type": "Paper",
@@ -5183,7 +5184,7 @@
         {
           "num": 92,
           "citation_key": "Friedman2019DennettExplainedInterviewDaniel092",
-          "title": "Dennett Explained (interview with Daniel Dennett)",
+          "title": "Dennett Explained. An interview with Daniel Dennett.",
           "year": 2019,
           "domain_name": "Genetics & Biomedical",
           "type": "Paper",
@@ -5259,7 +5260,7 @@
         {
           "num": 98,
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
-          "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
+          "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness. An interview with Karl Friston.",
           "year": 2018,
           "domain_name": "Active Inference",
           "type": "Paper",
@@ -5278,7 +5279,7 @@
         {
           "num": 99,
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
-          "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
+          "title": "Partner Pen Play in Parallel (PPPiP): A New PPPiParadigm for Relationship Improvement",
           "year": 2018,
           "domain_name": "Art & Synergetics",
           "type": "Paper",
@@ -5373,7 +5374,7 @@
         {
           "num": 104,
           "citation_key": "Friedman2016ContextDependentExpressionForaging104",
-          "title": "Context-dependent expression of the foraging gene in field colonies of ants",
+          "title": "Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task",
           "year": 2016,
           "domain_name": "Entomology",
           "type": "Paper",
@@ -5487,7 +5488,7 @@
         {
           "num": 43,
           "citation_key": "Friedman2024WhyPaleolithicRockstarsWere043",
-          "title": "Why Paleolithic Rockstars were both enigmatic and sporadic",
+          "title": "Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago",
           "year": 2024,
           "domain_name": "Genetics & Biomedical",
           "type": "Paper",
@@ -5601,7 +5602,7 @@
         {
           "num": 93,
           "citation_key": "Friedman2019PhDBehavioralPhysiologicalTranscriptomic093",
-          "title": "PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus",
+          "title": "Behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus)",
           "year": 2019,
           "domain_name": "Entomology",
           "type": "Paper",
@@ -5639,7 +5640,7 @@
         {
           "num": 64,
           "citation_key": "Friedman2023TranscriptChrisFieldsPhysics064",
-          "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course",
+          "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course in 2023",
           "year": 2023,
           "domain_name": "Media & Teaching",
           "type": "Course",
@@ -5696,7 +5697,7 @@
         {
           "num": 162,
           "citation_key": "Friedman2024CommentsSubmittedByBlockScience162",
-          "title": "Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum",
+          "title": "Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379",
           "year": 2024,
           "domain_name": "Cognitive Security",
           "type": "Paper",
@@ -5963,28 +5964,28 @@
     }
   },
   "dataset_hashes": {
-    "works": "a4f30286ec9da316cfda5bd7a92a06fb27d180b55c27338d50cc5a5a34965505",
+    "works": "9327110db9f9dddd638e50fd0248d1f2ed7046d4ae37111093374fcf7bb77689",
     "work_identifiers": "50bf6ad1ba0af743728838ea00b9acc521ef55f15354e0a93a2e1a215cbb97ba",
-    "software": "124ee6d5e734e624e384b36bb0d61e592d4d7fa9c3d1a7e1c7918b1f0bc44d2e",
+    "software": "9e02ef6059e42236809c426c9cad5846d94edcb1b4f45f189bc90cd7a2f6a7a1",
     "repositories": "6a2db1ce763b3dfb854247465cdda0e4dfefc50b62d919df940cf0e81f344548",
     "artworks_index": "29270719124f00fb4d9c2729262c33318c82e9dbb114ec8b0f777436bb270769",
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
-    "videos": "119beec7cb74b58d20b986bce5ceb80bcfa18921612963de6a36ffed5b74f9bb",
-    "videos_index": "30d313e045793f89ceb58b0a3315f2ab04a7f429dd766e130b5b5a6bf6d1f578",
-    "search": "60a3c9f722a1aec770bef14ebca76bd92d5ff1c2b4d481afb10a0b7cb0cd36d0",
-    "claims": "3e5d997b17cd7651e2faab0b722604523524107fd4407fa77d372868e7928487",
+    "videos": "3996db47051556edb4d8f6022096dac54eef9e3830ff6e1245bf347cafbfc5ef",
+    "videos_index": "d25166f71845fc2968446b43b646024b8f1a2b3928b2d76dcaea537320e7dd39",
+    "search": "68e7b5cb35bedf6524c2eb2967fb4f61ae4a82084d8a1e5a85f6eb23e9bbfb25",
+    "claims": "2ef720a56019529242e7c716d6cb2067562cdf3f4d50da1afe346b5023432fc9",
     "scholar_verification_receipt": "eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759",
-    "coverage_exceptions": "cd5f27ddc26015d9323d0383370b82291befdfe8964312fe1e581ef8effb3c38",
+    "coverage_exceptions": "fde430d11f93e8f2db7c5e2cd935a66778de9bdde2fbbd0009832b0d1890135d",
     "repository_classification": "4411420d6f0dfa7aa40b7b8adf3fb007082baf4686a08c23ea5566038483c298",
-    "people": "42f9c264cb54982f1f1a444370b9495ac1622f9f297ceabed28a257371a66402",
-    "organizations": "def5312b106474f15bf3cd623d3cbe00484d6475241d701d0da74f600e06c3fa",
-    "resume": "cfbad4434a2e7fbc2b81c3d553258686b86c35d26b2f36b621309ac48a22904e",
+    "people": "ff37e6660e2c6b8ddf3f295ee3b693ae0265a965f367edd2823300893793e482",
+    "organizations": "e598ed7719ffece650638c9b3230cecc209a672d674e4ff580228a64dae5d80d",
+    "resume": "71ebab9117fb700e6df53026ceb1d811302ad623f8fb34417d7fd5f63826a821",
     "work_enrichment": "37eb29ad1c8f30c6a3c37804d3846430f154783c86b713f13ec0550fb1217407",
-    "scholar_readiness": "bb3009cbef81e09b4fd5c9e99c83ade9ee27ed227ec5a584eb7545d42b039f4c",
-    "catalog": "c12ff786b3a1a044b3a6985e7db6a83b06493ac4e4d9d37dc20a47d67747422b",
+    "scholar_readiness": "6692ecbcfb32d2e2d1044afd25666b8d43f68504741bb1759d96ba772bf0770b",
+    "catalog": "a68284f4559163b24e4e4e5f928f0b8d5b5ad9814cb6d49b2e348bfe4f9dcaf7",
     "reconciliation": "2e73d7005e6e0506735992f6de185211e3f6754ee19ed194fa25aca1d4e1ec5a",
-    "reproducibility": "6558029118834d59bc0831d8e1edc3d9ec7a2c16d6706383cf97d203b4be7591",
-    "generated_manifest": "229bcc989459a6be305bc5fe48da885a458f972477d4315ec0f6a5b81d2e8fba",
+    "reproducibility": "4cb4c53298c089b8f43d6eadf5fd9c41fa71b2b1c41692433d1d2fc484bc34af",
+    "generated_manifest": "039740d98427f20bd239f21e94752817fe6fdbafb3ca54db7e8e568c033bd0b9",
     "current_counts": "dd16c6443396cff85bb91b0656fe0841f534ab130dc814a238bf19f7fdb59b23"
   },
   "source_provenance": {

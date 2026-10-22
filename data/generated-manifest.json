@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T16:04:34Z",
+  "generated_at": "2026-10-22T03:02:12Z",
   "artifacts": [
     {
       "name": "Scholar PDF placement proposal (review only)",
@@ -36,6 +36,9 @@
       "sources": [
         "papers/paper_metadata.json",
         "pages/BIBLIOGRAPHY.md",
+        "data/work-authors.json",
+        "data/work-identifiers.json",
+        "code/src/author_entities.py",
         "papers/*/metadata.json",
         "papers/generated-documents.json",
         "code/src/abstract_text.py",
@@ -46,11 +49,14 @@
     {
       "name": "Paper CFF citation identity synchronization",
       "outputs": [
-        "papers/*/CITATION.cff (bibliography title/authors, canonical DOI/URL, and explicit artifact identifiers)"
+        "papers/*/CITATION.cff (bibliography title/authors and DOI roles; editor-only books use BibTeX, CSL, and RIS instead)"
       ],
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "papers/*/metadata.json (doi and optional artifact_doi)",
+        "data/work-authors.json",
+        "data/work-identifiers.json",
+        "code/src/author_entities.py",
         "papers/*/CITATION.cff (other hand-maintained fields and non-DOI identifiers)",
         "code/orchestrators/generate_citation_cff.py"
       ],
@@ -96,6 +102,7 @@
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "data/work-identifiers.json",
+        "data/work-authors.json",
         "papers/*/README.md",
         "papers/*/AGENTS.md",
         "papers/*/SKILL.md",
@@ -148,8 +155,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-10-19.json",
-        "reports/source_coverage_2026-10-19.md"
+        "reports/source_coverage_2026-10-22.json",
+        "reports/source_coverage_2026-10-22.md"
       ],
       "sources": [
         "data/works.json",
@@ -209,6 +216,8 @@
       ],
       "sources": [
         "data/works.json",
+        "code/src/pillar_content.py",
+        "code/src/content_citations.py",
         "code/orchestrators/generate_pillar_pages.py"
       ],
       "command": "python3 code/orchestrators/generate_pillar_pages.py"
@@ -284,7 +293,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-10-19.json"
+        "reports/pages_artifact_growth_2026-10-22.json"
       ],
       "sources": [
         "tracked repository files",
@@ -693,7 +702,7 @@
     {
       "name": "External link report",
       "outputs": [
-        "reports/external_links_2026-10-17.json"
+        "reports/external_links_2026-10-22.json"
       ],
       "sources": [
         "all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"
@@ -743,18 +752,18 @@
     {
       "name": "External link triage",
       "outputs": [
-        "reports/external_links_triage_2026-10-17.json",
-        "reports/external_links_triage_2026-10-17.md"
+        "reports/external_links_triage_2026-10-22.json",
+        "reports/external_links_triage_2026-10-22.md"
       ],
       "sources": [
-        "reports/external_links_2026-10-17.json"
+        "reports/external_links_2026-10-22.json"
       ],
       "command": "python3 code/orchestrators/build_external_link_triage.py"
     },
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-10-19.json"
+        "reports/asset_size_2026-10-22.json"
       ],
       "sources": [
         "root HTML pages",
@@ -768,7 +777,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-10-19.json"
+        "reports/accessibility_static_2026-10-22.json"
       ],
       "sources": [
         "root HTML pages",
