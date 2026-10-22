@@ -15,6 +15,7 @@ the published record.
 
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -66,6 +67,8 @@ def test_paper_citation_cff_matches_bibliography_title_and_authors():
 
 
 def test_paper_readme_byline_and_heading_follow_bibliography():
+    identifiers = json.loads((REPO_ROOT / "data/work-identifiers.json").read_text(encoding="utf-8"))["identifiers"]
+    contributors = json.loads((REPO_ROOT / "data/work-authors.json").read_text(encoding="utf-8"))["works"]
     drift = []
     for row in _rows_with_authors():
         path = REPO_ROOT / "papers" / row.folder / "README.md"
@@ -75,6 +78,11 @@ def test_paper_readme_byline_and_heading_follow_bibliography():
         byline = re.search(r"^\*\*(.+?)\*\* \(\d{4}\)", text, re.MULTILINE)
         heading = re.search(r"^# \S+ (.+)$", text, re.MULTILINE)
         expected_authors = ", ".join(regenerate_docs.display_author_name(a) for a in row.authors)
+        key = identifiers[str(row.num)]["citation_key"]
+        record = contributors[key]
+        if record.get("contributor_role") == "editor":
+            assert record["status"] == "document_verified"
+            expected_authors += " (eds.)"
         if not byline or byline.group(1) != expected_authors:
             drift.append(f"{row.folder}: byline")
         if not heading or heading.group(1) != regenerate_docs.clean_markdown_text(row.title):
