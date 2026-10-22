@@ -545,6 +545,7 @@ def test_dangling_report_reference_guard(tmp_path: Path, monkeypatch: pytest.Mon
     # shipped 404 and must fail the build.
     repo = tmp_path / "repo"
     (repo / "reports").mkdir(parents=True)
+    _git(repo, "init", "-q")
     (repo / "reports" / "asset_size_2026-09-10.json").write_text("{}", encoding="utf-8")
     (output / "pages" / "dangling.html").write_text(
         '<a href="reports/asset_size_2026-09-10.json">superseded</a>', encoding="utf-8"
@@ -614,8 +615,6 @@ def test_no_write_prepayload_checks_keep_revision_and_evidence_boundary(tmp_path
     monkeypatch.setattr(bpa, "GROWTH_REPORT", tmp_path / "reports/missing-growth.json")
     original_source_path = bpa.source_path
     monkeypatch.setattr(bpa, "source_path", lambda path: original_source_path(path, repo_root=tmp_path))
-    original_guard = bpa.require_clean_postdeploy_payload_inputs
-    monkeypatch.setattr(bpa, "require_clean_postdeploy_payload_inputs", lambda **kw: original_guard(tmp_path, **kw))
     monkeypatch.setattr(bpa, "_manifest_payload", lambda existing, **kw: existing)
     monkeypatch.setattr(bpa, "_relative_paths", lambda: [report.relative_to(tmp_path)])
     before = {path: path.read_bytes() for path in (report, manifest)}
@@ -723,3 +722,214 @@ def test_only_exact_pinned_archive_urls_stop_protecting_local_projection_bytes(t
     assert target not in report_references.referenced_report_paths(tmp_path)
     source.write_text(pinned + " Local citation: " + target)
     assert target in report_references.referenced_report_paths(tmp_path)
+
+
+@pytest.fixture
+def candidate_link_bundle(tmp_path):
+    from check_external_links import collect_urls, scan_files
+    from build_external_link_triage import outputs
+
+    _git(tmp_path, "init", "-q")
+    _git(tmp_path, "config", "user.email", "test@example.invalid")
+    _git(tmp_path, "config", "user.name", "Pages fixture")
+    (tmp_path / "README.md").write_text("https://example.org/baseline\n")
+    report = tmp_path / "reports/external_links_2026-08-25.json"
+    report.parent.mkdir()
+    report.write_text("{}\n")
+    for suffix in ("json", "md"):
+        (report.parent / f"external_links_triage_2026-08-25.{suffix}").write_text("baseline\n")
+    _git(tmp_path, "add", ".")
+    _git(tmp_path, "commit", "-qm", "baseline")
+    head = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=tmp_path, text=True).strip()
+    # This is the real intake trigger: a new source URL absent from the old scan.
+    (tmp_path / "README.md").write_text("https://example.org/baseline\nhttps://example.org/new-work\n")
+    sources = collect_urls(tmp_path)
+    payload = {
+        "generated_at": "2026-08-25T12:00:00Z", "source_commit": head,
+        "source_worktree_clean": False, "scope": scan_files(tmp_path),
+        "total_unique_urls": len(sources), "checked_urls": len(sources), "unchecked_urls": 0,
+        "ok": len(sources), "warnings": 0,
+        "results": [{"url": url, "sources": values, "ok": True, "status": 200, "method": "HEAD", "error": ""} for url, values in sorted(sources.items())],
+    }
+    report.write_text(json.dumps(payload) + "\n")
+    for target, content in outputs(report, repo_root=tmp_path).items():
+        target.write_text(content)
+    return tmp_path, report, payload
+
+
+def test_complete_candidate_link_bundle_is_opt_in_and_no_write(candidate_link_bundle, monkeypatch):
+    root, report, _payload = candidate_link_bundle
+    paths = [report, *sorted(report.parent.glob("external_links_triage_*"))]
+    before = {path: path.read_bytes() for path in paths}
+    assert bpa.dirty_postdeploy_payload_paths(root) == sorted(path.relative_to(root) for path in paths)
+    assert bpa.dirty_postdeploy_payload_paths(root, allow_dirty_prepayload_source_snapshot=True) == []
+    monkeypatch.setattr(bpa, "REPO_ROOT", root)
+    monkeypatch.setattr(bpa, "ARTIFACT_MANIFEST", root / "data/absent.json")
+    monkeypatch.setattr(bpa, "_relative_paths", lambda: [path.relative_to(root) for path in paths])
+    original_source_path = bpa.source_path
+    monkeypatch.setattr(bpa, "source_path", lambda path, **kw: original_source_path(path, repo_root=kw.get("repo_root", root)))
+    with pytest.raises(SystemExit, match="dirty post-deploy"):
+        bpa.projected_size()
+    count, size = bpa.projected_size(allow_dirty_prepayload_source_snapshot=True)
+    assert count == len(paths) and size == sum(len(content) for content in before.values())
+    assert {path: path.read_bytes() for path in paths} == before
+
+
+@pytest.mark.parametrize("case", [
+    "wrong-head", "clean", "missing-primary", "malformed", "not-object", "incomplete",
+    "stale-sources", "stale-scope", "unchecked", "missing-triage-json", "missing-triage-md",
+    "forged-triage-json", "forged-triage-md", "wrong-date", "bad-timestamp", "naive-timestamp",
+    "duplicate-url", "unexpected-url", "new-source-url", "untracked-primary", "untracked-triage",
+])
+def test_candidate_link_bundle_rejects_stale_or_forged_inputs(candidate_link_bundle, case):
+    root, report, payload = candidate_link_bundle
+    if case == "wrong-head":
+        payload["source_commit"] = "0" * 40
+    elif case == "clean":
+        payload["source_worktree_clean"] = True
+    elif case == "incomplete":
+        payload["results"].pop()
+    elif case == "stale-sources":
+        payload["results"][0]["sources"] = []
+    elif case == "stale-scope":
+        payload["scope"] = []
+    elif case == "unchecked":
+        payload["unchecked_urls"] = 1
+    elif case == "wrong-date":
+        payload["generated_at"] = "2026-08-24T12:00:00Z"
+    elif case == "bad-timestamp":
+        payload["generated_at"] = "2026-08-25Tinvalid"
+    elif case == "naive-timestamp":
+        payload["generated_at"] = "2026-08-25T12:00:00"
+    elif case == "duplicate-url":
+        payload["results"].append(dict(payload["results"][0]))
+    elif case == "unexpected-url":
+        payload["results"][0]["url"] = "https://example.org/unexpected"
+    report.write_text(json.dumps(payload) + "\n")
+    if case == "untracked-primary":
+        _git(root, "rm", "--cached", "--", str(report.relative_to(root)))
+    elif case == "untracked-triage":
+        _git(root, "rm", "--cached", "--", "reports/external_links_triage_2026-08-25.md")
+    elif case == "missing-primary":
+        report.unlink()
+    elif case == "malformed":
+        report.write_text("not JSON")
+    elif case == "not-object":
+        report.write_text("[]")
+    elif case.startswith(("missing-triage-", "forged-triage-")):
+        suffix = case.rsplit("-", 1)[1]
+        target = report.parent / f"external_links_triage_2026-08-25.{suffix}"
+        if case.startswith("missing"):
+            target.unlink()
+        else:
+            target.write_text("forged\n")
+    elif case == "new-source-url":
+        with (root / "README.md").open("a") as output:
+            output.write("https://example.org/unscanned\n")
+    assert not bpa.is_current_dirty_prepayload_link_snapshot(report.relative_to(root), root)
+    assert bpa.dirty_postdeploy_payload_paths(root, allow_dirty_prepayload_source_snapshot=True)
+
+
+def test_candidate_link_bundle_does_not_relax_unrelated_or_invalid_paths(candidate_link_bundle):
+    root, report, _payload = candidate_link_bundle
+    for path in [Path("reports/live_site_verification_2026-08-25.json"),
+                 Path("reports/external_links_2026-08-25.md"),
+                 Path("reports/external_links_2026-02-30.json"),
+                 Path("nested/reports/external_links_2026-08-25.json")]:
+        assert not bpa.is_current_dirty_prepayload_link_snapshot(path, root)
+    _git(root, "add", ".")
+    _git(root, "commit", "-qm", "land source evidence")
+    assert not bpa.is_current_dirty_prepayload_link_snapshot(report.relative_to(root), root)
+
+
+@pytest.fixture
+def root_bound_pages(tmp_path, monkeypatch):
+    import importlib.util
+
+    current = tmp_path / "current"
+    foreign = tmp_path / "foreign"
+    current.mkdir()
+    script = foreign / "code/orchestrators/build_pages_artifact.py"
+    script.parent.mkdir(parents=True)
+    script.write_bytes(Path(bpa.__file__).read_bytes())
+    foreign_report = foreign / "reports/external_links_2031-02-03.json"
+    foreign_report.parent.mkdir()
+    foreign_report.write_text("foreign baseline\n")
+    (current / "index.html").write_text("<main>Current public fixture</main>\n")
+    for repo in (current, foreign):
+        _git(repo, "init", "-q")
+        _git(repo, "config", "user.name", "Fixture")
+        _git(repo, "config", "user.email", "fixture@example.invalid")
+        _git(repo, "config", "commit.gpgsign", "false")
+        _git(repo, "add", ".")
+        _git(repo, "commit", "-qm", "fixture baseline")
+    # Import a real module in the foreign root, then select the current root.
+    # Its guard keeps the foreign default: only explicit production arguments
+    # can cross this boundary, without replacing or delegating the guard.
+    spec = importlib.util.spec_from_file_location("root_boundary_pages_fixture", script)
+    module = importlib.util.module_from_spec(spec)
+    monkeypatch.setitem(sys.modules, spec.name, module)
+    monkeypatch.setattr(sys, "path", list(sys.path))
+    spec.loader.exec_module(module)
+    module.REPO_ROOT = current
+    module.ARTIFACT_MANIFEST = current / "data/pages-artifact-manifest.json"
+    module.GROWTH_REPORT = current / "reports/pages_artifact_growth_2031-02-03.json"
+    original_source_path = module.source_path
+    module.source_path = lambda path: original_source_path(path, repo_root=current)
+    # Exercise real public rendering to prepare a stable, committed manifest.
+    # The foreign root is still clean during this setup.
+    module.write_manifest()
+    module.write_manifest()
+    _git(current, "add", ".")
+    _git(current, "commit", "-qm", "fixture control tail")
+    foreign_report.write_text("changed foreign evidence\n")
+    assert module.dirty_postdeploy_payload_paths(current) == []
+    assert module.dirty_postdeploy_payload_paths(foreign) == [foreign_report.relative_to(foreign)]
+    return module, current, foreign_report
+
+
+@pytest.mark.parametrize("operation", ["write", "check", "assemble", "size"])
+def test_pages_operations_bind_current_root_with_real_public_outcomes(root_bound_pages, tmp_path, operation):
+    module, current, foreign_report = root_bound_pages
+    expected = {"index.html", "data/pages-artifact-manifest.json", "reports/pages_artifact_growth_2031-02-03.json"}
+    before = {name: (current / name).read_bytes() for name in expected}
+    foreign_before = foreign_report.read_bytes()
+    if operation == "write":
+        payload = module.write_manifest()
+        assert payload == json.loads(module.ARTIFACT_MANIFEST.read_text())
+        assert {row["path"] for row in payload["included_files"]} == {"index.html"}
+        assert payload["source_commit_at_generation"] == module._source_commit()
+        assert module.GROWTH_REPORT.is_file()
+    elif operation == "check":
+        assert module.check_manifest() is None
+    elif operation == "size":
+        assert module.projected_size() == (len(expected), sum(map(len, before.values())))
+    else:
+        output = tmp_path / "assembled"
+        copied, size, omitted = module.assemble(output)
+        actual = {path.relative_to(output).as_posix(): path.read_bytes() for path in output.rglob("*") if path.is_file()}
+        assert actual == before
+        assert (copied, size, omitted) == (len(expected), sum(map(len, before.values())), [])
+    assert {name: (current / name).read_bytes() for name in expected} == before
+    assert foreign_report.read_bytes() == foreign_before
+
+
+@pytest.mark.parametrize("operation", ["write", "check", "assemble", "size"])
+def test_pages_current_root_still_blocks_dirty_evidence_before_any_write(root_bound_pages, tmp_path, operation):
+    module, current, foreign_report = root_bound_pages
+    report = current / "reports/external_links_2031-02-04.json"
+    report.write_text("current evidence baseline\n")
+    _git(current, "add", "reports/external_links_2031-02-04.json")
+    _git(current, "commit", "-qm", "current evidence baseline")
+    report.write_text("changed current evidence\n")
+    output = tmp_path / "assembled"
+    output.mkdir()
+    sentinel = output / "preserve.txt"
+    sentinel.write_text("prior artifact\n")
+    paths = (report, module.ARTIFACT_MANIFEST, module.GROWTH_REPORT, sentinel, foreign_report)
+    before = {path: path.read_bytes() for path in paths}
+    calls = {"write": module.write_manifest, "check": module.check_manifest,
+             "assemble": lambda: module.assemble(output), "size": module.projected_size}
+    with pytest.raises(SystemExit, match="reports/external_links_2031-02-04.json"):
+        calls[operation]()
+    assert {path: path.read_bytes() for path in before} == before

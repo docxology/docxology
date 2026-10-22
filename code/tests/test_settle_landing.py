@@ -61,6 +61,19 @@ def repo(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
 def test_disposable_repo_overrides_enabled_ambient_monitor_without_mutating_global_config(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch,
 ) -> None:
+    # This control deliberately exercises an enabled synthetic global monitor.
+    # Remove only command-scope monitor overrides; retain other inherited Git
+    # selectors so the task profile cannot mask the fixture's local override.
+    count = int(os.environ.get("GIT_CONFIG_COUNT", "0"))
+    retained = [
+        (os.environ[f"GIT_CONFIG_KEY_{i}"], os.environ[f"GIT_CONFIG_VALUE_{i}"])
+        for i in range(count)
+        if os.environ[f"GIT_CONFIG_KEY_{i}"].lower() != "core.fsmonitor"
+    ]
+    for i, (key, value) in enumerate(retained):
+        monkeypatch.setenv(f"GIT_CONFIG_KEY_{i}", key)
+        monkeypatch.setenv(f"GIT_CONFIG_VALUE_{i}", value)
+    monkeypatch.setenv("GIT_CONFIG_COUNT", str(len(retained)))
     global_config = tmp_path / "ambient.gitconfig"
     original = "[core]\nfsmonitor = true\nuntrackedCache = true\n"
     global_config.write_text(original)
@@ -508,3 +521,32 @@ def test_dry_run_prints_actual_prepayload_validator_mode(repo, monkeypatch, caps
     output = capsys.readouterr().out
     validator_line = next(line for line in output.splitlines() if "validate_repo (standard):" in line)
     assert ("--allow-dirty-prepayload-evidence" in validator_line) is (not skip_commit)
+
+
+@pytest.mark.parametrize("exit_code", [0, 1])
+def test_step_transcript_retains_complete_output_and_stops_on_failure(tmp_path, monkeypatch, capsys, exit_code):
+    stdout = "early stdout marker\n" + "".join(f"stdout line {i}\n" for i in range(60)) + "pytest case count marker\n"
+    stderr = "early stderr marker\n" + "".join(f"stderr line {i}\n" for i in range(60)) + "stderr without newline"
+    marker = tmp_path / "executed-steps.txt"
+    first = (
+        "import sys; from pathlib import Path; "
+        f"Path({str(marker)!r}).write_text('first\\n'); "
+        f"sys.stdout.write({stdout!r}); sys.stderr.write({stderr!r}); "
+        f"raise SystemExit({exit_code})"
+    )
+    second = (
+        "from pathlib import Path; "
+        f"p=Path({str(marker)!r}); p.write_text(p.read_text()+'second\\n'); "
+        "print('second step output')"
+    )
+    monkeypatch.setattr(settle, "REPO_ROOT", tmp_path)
+    steps = (("first", (sys.executable, "-c", first)), ("second", (sys.executable, "-c", second)))
+    assert settle.run_steps(steps) is (exit_code == 0)
+    transcript = capsys.readouterr().out
+    assert stdout in transcript
+    assert stderr in transcript
+    assert "(tail)" not in transcript
+    calls = marker.read_text().splitlines()
+    expected_calls = ["first", "second"] if exit_code == 0 else ["first"]
+    assert calls == expected_calls
+    assert ("second step output" in transcript) is (exit_code == 0)

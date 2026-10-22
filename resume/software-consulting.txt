@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-10-22T02:54:08Z
+Generated: 2026-10-22T15:28:50Z
 
-Current public metrics: 223 curated works; 166 catalogued software repositories (125 owned + 41 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 239 docxology + 45 AII public repositories (177 primary, 107 forks).
+Current public metrics: 224 curated works; 166 catalogued software repositories (125 owned + 41 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 239 docxology + 45 AII public repositories (177 primary, 107 forks).
 
 SUMMARY
 -------
@@ -54,7 +54,7 @@ EXPERIENCE
 AWARDS AND FELLOWSHIPS
 ----------------------
 
-WORKS AND PUBLICATIONS (215)
+WORKS AND PUBLICATIONS (216)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [003] 2026 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | Zenodo | 10.5281/zenodo.18807970
@@ -271,6 +271,7 @@ WORKS AND PUBLICATIONS (215)
 [225] 2026 | Paper | Active Inference -- A Synthetic Overview | Zenodo | 10.5281/zenodo.23321280
 [226] 2026 | Paper | antropy: native multidimensional entropy and configurable complexity analysis | Zenodo | 10.5281/zenodo.23306200
 [227] 2026 | Paper | Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision | Zenodo | 10.5281/zenodo.23397452
+[228] 2026 | Paper | Active Assembly Theory and Practice | Zenodo | 10.5281/zenodo.23484107
 
 SOFTWARE (166)
 --------------

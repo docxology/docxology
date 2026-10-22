@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T02:54:08Z",
+  "generated_at": "2026-10-22T15:28:50Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,7 +34,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 223,
+    "works": 224,
     "software_catalogued": 166,
     "owned_software_catalogued": 125,
     "aii_software_catalogued": 41,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "09e1e0f27dbd692ea45f7d9cbc30ce44a81365eef42b8351a28ac5a927c2ca4c",
+      "sha256": "ba26f7a4c3f6c5b9683fa1dc4368b8066ed7a12282802f2b0c4f9dfb87b4e708",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 183618,
-          "sha256": "9327110db9f9dddd638e50fd0248d1f2ed7046d4ae37111093374fcf7bb77689"
+          "bytes": 184356,
+          "sha256": "32212d11564b45b2a6987cfd5287006822845c60752d07df99fab4012c03b20b"
         },
         {
           "path": "data/software.json",
           "bytes": 83535,
-          "sha256": "9e02ef6059e42236809c426c9cad5846d94edcb1b4f45f189bc90cd7a2f6a7a1"
+          "sha256": "10e281bae17c2d2bdc56e98a45607ec74d6be5c07963894e6e94cc3fca9aee90"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 13095,
-          "sha256": "2ef720a56019529242e7c716d6cb2067562cdf3f4d50da1afe346b5023432fc9"
+          "sha256": "322983adeb1c68dfc1ed1d18274bbe1ab585df26d14508d4b7a79fbf4053bb89"
         },
         {
           "path": "data/github-repositories.json",
@@ -7885,6 +7885,29 @@
       "authors": [
         "Friedman, Daniel Ari"
       ]
+    },
+    {
+      "num": 228,
+      "citation_key": "Friedman2026ActiveAssemblyTheoryPractice228",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Active Assembly Theory and Practice",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.23484107",
+      "doi": "10.5281/zenodo.23484107",
+      "docs_path": "papers/2026_ActiveAssemblyTheory/",
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_ActiveAssemblyTheory/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     }
   ],
   "software": [
@@ -9884,14 +9907,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 223 works.",
+      "claim": "The curated bibliography contains 224 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-10-18T19:15:46+00:00",
+      "checked_at": "2026-10-22T15:28:49+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9899,13 +9922,13 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 206 per-paper documentation folders.",
+      "claim": "The repository contains 207 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-10-18T19:15:46+00:00",
+      "checked_at": "2026-10-22T15:28:49+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

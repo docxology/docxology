@@ -3106,3 +3106,15 @@ KW  - Active Inference
 KW  - Paper
 N1  - Catalog row 227; docs: papers/2026_ActiveInferenceAs/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Active Assembly Theory and Practice
+T2  - Zenodo
+DO  - 10.5281/zenodo.23484107
+UR  - https://doi.org/10.5281/zenodo.23484107
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 228; docs: papers/2026_ActiveAssemblyTheory/
+ER  -

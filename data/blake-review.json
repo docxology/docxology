@@ -1,0 +1,141 @@
+{
+  "schema_version": "BlakePassageReview.v1",
+  "metadata_source": "reports/publication_discovery_2026-10-22.json",
+  "method": "Passage-level classification of public extracted text; hashes bind classification to the inspected edition. Not a full-reading or independent citation validation ledger.",
+  "reviews": {
+    "2021_NarrativeEcosystems": {
+      "relation": "quotation",
+      "note": "Epigraph attributed to William Blake, Jerusalem 11.",
+      "full_text_sha256": "9aa72b6e014a68ec782d1ca767b04707066c8deeb51fecaa91324d06ea528d91"
+    },
+    "2021_Transcript": {
+      "relation": "other_person",
+      "note": "Reference is A. Blake and A. Yuille, Active Vision, not William Blake.",
+      "full_text_sha256": "b4e45748e750960ad41d13665349081be289db8ad0f9ff5d5161ed461448d76a"
+    },
+    "2023_BlakeFuller": {
+      "relation": "title",
+      "note": "William Blake is an explicit subject in the publication title and text.",
+      "full_text_sha256": "9f6eba1d9091cc1ddd631b8ecce2d5a65a1ca2e0613e0cd48380acefa10f24cc",
+      "edition_note": "The extracted deck prints version DOI 10.5281/zenodo.7514368; the catalog metadata and current primary record identify version 2, DOI 10.5281/zenodo.7519132. Printed DOI is preserved as historical source text."
+    },
+    "2023_PostdocReview": {
+      "relation": "catalog_mention",
+      "note": "Bibliographic slide lists Lives in Juxtaposition and version record 7519132.",
+      "full_text_sha256": "84e3ea7daa20630f0bf13d981185434f31bbce1763d686cb68035c6f5be0b3e6"
+    },
+    "2024_AII_v2": {
+      "relation": "program_mention",
+      "note": "Program overview mentions Blake among discussion topics.",
+      "full_text_sha256": "1b7e6130112e3507157eb47ea92d0e5fb303f8281f58fd999f54d118681258df"
+    },
+    "2024_MathArtBlake": {
+      "relation": "title",
+      "note": "William Blake is an explicit subject in the publication title and text.",
+      "full_text_sha256": "b0a2dbbafa3527a28f10897a10ef7c8d7e381a9534dadb70128fae0a00e71fa4"
+    },
+    "2024_QuantumDreams": {
+      "relation": "discussion",
+      "note": "Visual phenomenology passage invokes Blake’s seeing through the eye.",
+      "full_text_sha256": "b49ba88790575935e180aedbd55e33e58aa7888e68f0b1f6bd552ec63a768c64"
+    },
+    "2025_AII_v3": {
+      "relation": "program_mention",
+      "note": "Program overview mentions Blake; a contributor profile includes a Blake quotation.",
+      "full_text_sha256": "4f52e1933e754d7d02aabd404d5d77bd022b9ec122a176cd7a2dd36d07dfe802"
+    },
+    "2025_AgentAndNiche": {
+      "relation": "core_subject",
+      "note": "Subtitle and passages explicitly juxtapose Blake with ecological psychology; source labels the dialogue speculative.",
+      "full_text_sha256": "c28ce459482e23b2f6996bad0db85d2025d16dee1bbae6db6c8325ea5a0f80b0",
+      "edition_note": "Local extraction cover prints DOI 10.5281/zenodo.17235138 and date 2025-09-30. Catalog metadata and primary record 17243488 identify v2 dated 2025-10-01. These observations are kept separate; the cover alone cannot establish artifact identity."
+    },
+    "2025_CognitiveArtScience": {
+      "relation": "quotation",
+      "note": "Three passages attribute quotations to William Blake (reasoning, ratio, and contraries).",
+      "full_text_sha256": "9fb81ad750ab9e14e69cf76a4e7af901dfe537ef6b8f5c9580a620838f615e67"
+    },
+    "2025_OnTime": {
+      "relation": "discussion",
+      "note": "Perspective-swap passage invokes Albion, Innocence and Experience.",
+      "full_text_sha256": "1f4cff950922b0c52b4a31f75a3e2e47885a8a42b65fe05b169334538b4c69a0"
+    },
+    "2025_QuadMath": {
+      "relation": "citation",
+      "note": "Section 5.7 discusses fourfold vision and points to MathArt Stream #8 and Lives in Juxtaposition.",
+      "full_text_sha256": "a045f4872bdcf6ec33b35ce381962db164bc11a08d73c844eba7b5d6c8ee455b",
+      "evidence_lines": [
+        2072,
+        2076,
+        2079,
+        2081
+      ]
+    },
+    "2026_ActiveInferenceAs": {
+      "relation": "citation",
+      "note": "Section 3.15 and references cite Before Pragmatism and Synthesis of Agent and Niche as conceptual context.",
+      "full_text_sha256": "f88cf7402fecf313686e0736b6f1b5b907a21e55feacb75c9bf3a0a5589b9111"
+    },
+    "2026_BeforePragmatism": {
+      "relation": "title",
+      "note": "William Blake is an explicit subject in the publication title and text.",
+      "full_text_sha256": "92e839d15ea38656a2c3d8c1af7ef53db6709ca71dcd9a8bfa60a5a3cfa1be3c",
+      "edition_note": "The March 12, 2026 extracted cover prints DOI 10.5281/zenodo.18807971; primary version record 18984939 is dated March 12, 2026 (record page labels v2, API version is unset). Printed DOI does not determine the archived version identity."
+    },
+    "2026_Bimetalism": {
+      "relation": "title",
+      "note": "William Blake is an explicit subject in the publication title and text.",
+      "full_text_sha256": "c9e1f8842e7e0111d93be8cb7ed6759d709ba632c243f4d11f3889825767b697"
+    },
+    "2026_BiologyTextbook": {
+      "relation": "quotation",
+      "note": "Opening epigraph attributes a quotation about nature and imagination to William Blake.",
+      "full_text_sha256": "11b8ab982329572869cab89aa1bc97253a28ad0194c11357e5cba3ef4286b208"
+    },
+    "2026_BlakeJiang": {
+      "relation": "title",
+      "note": "William Blake is an explicit subject in the publication title and text.",
+      "full_text_sha256": "6293528eb77c417b2cea593b58c73fdbf05b6605564e76c2ae0af9b793db2372"
+    },
+    "2026_CognitiveCaseDiagrams": {
+      "relation": "other_person",
+      "note": "Reference is Barry J. Blake on grammatical relations, not William Blake.",
+      "full_text_sha256": "a198b77ca7241de1b83a7a463a604570c2ac185df7e16afbe545333ef9c3c97d"
+    },
+    "2026_CognitiveIntegrity": {
+      "relation": "quotation",
+      "note": "Opening epigraph attributes Mental Fight to William Blake.",
+      "full_text_sha256": "c51561373f09f05d46bbb90849adc420a4afdadec383ede73fd353a2fe282ace"
+    },
+    "2026_CrescentCity": {
+      "relation": "other_person",
+      "note": "References cite Eric S. Blake and colleagues on storms and coastal hazards, not William Blake.",
+      "full_text_sha256": "13762facd34876b909288e038bd0ca9fe50dbde5ca692e6106655ab0006bdad7"
+    },
+    "2026_DoorsOfPerception": {
+      "relation": "title",
+      "note": "William Blake is an explicit subject in the publication title and text.",
+      "full_text_sha256": "1ec6269f06b59ccb01684d39e5d44cbfb245de79005a374f86aa24ad7e369e38"
+    },
+    "2026_EntomologicalLaw": {
+      "relation": "citation",
+      "note": "Closing discussion quotes One law for the lion and ox; reference lists The Marriage of Heaven and Hell (1790).",
+      "full_text_sha256": "0928c6442be67b5e5fd9b30c691c88b00d819c7b24c7b88a3f506ef062078242"
+    },
+    "2026_FourfoldVision": {
+      "relation": "title",
+      "note": "William Blake is an explicit subject in the publication title and text.",
+      "full_text_sha256": "2d67f1238d76be9acab28d686721190c05693535d934b242f996f2d89163ab01"
+    },
+    "2026_MappingWilliamBlake": {
+      "relation": "title",
+      "note": "William Blake is an explicit subject in the publication title and text.",
+      "full_text_sha256": "63e2b39398e938bebfa72cde08a5f0470f57b2cd435526daea4389f3acb68d47"
+    },
+    "2026_PriorCognitiveArt": {
+      "relation": "no_match",
+      "note": "No whole-word Blake match in this extracted version; the title alone does not establish a Blake citation.",
+      "full_text_sha256": "26bddcd18c000d462c20c53f86a5523d6f91f72c666f8d0ba7a237915fcc14ea"
+    }
+  }
+}

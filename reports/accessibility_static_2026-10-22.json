@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-22T00:50:09Z",
+  "generated_at": "2026-10-22T15:30:03Z",
   "scope": "All public HTML page families; complements, but does not replace, browser-based accessibility testing.",
-  "page_count": 2603,
-  "passing": 2603,
+  "page_count": 2605,
+  "passing": 2605,
   "results": [
     {
       "path": "404.html",
@@ -27306,6 +27306,31 @@
     },
     {
       "path": "papers/2026_ActInfMetaAnalysis/index.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "papers/2026_ActiveAssemblyTheory/index.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -62781,6 +62806,31 @@
     },
     {
       "path": "works/Friedman2026AGEINTAgenticIntelligence170.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "works/Friedman2026ActiveAssemblyTheoryPractice228.html",
       "ok": true,
       "checks": {
         "lang": true,

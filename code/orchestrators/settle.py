@@ -271,15 +271,15 @@ def run_steps(steps: Iterable[tuple[str, tuple[str, ...]]]) -> bool:
         result = subprocess.run(
             list(cmd), cwd=REPO_ROOT, capture_output=True, text=True, check=False
         )
-        if result.returncode == 0:
-            print("OK")
-            continue
-        print("FAIL")
-        if result.stdout.strip():
-            print("--- stdout (tail) ---\n" + _tail(result.stdout))
-        if result.stderr.strip():
-            print("--- stderr (tail) ---\n" + _tail(result.stderr))
-        return False
+        print("OK" if result.returncode == 0 else "FAIL")
+        # The outer runner retains this transcript; truncation loses failure
+        # sites, while successful pytest output carries the actual case count.
+        if result.stdout:
+            print("--- stdout ---\n" + result.stdout, end="" if result.stdout.endswith("\n") else "\n")
+        if result.stderr:
+            print("--- stderr ---\n" + result.stderr, end="" if result.stderr.endswith("\n") else "\n")
+        if result.returncode != 0:
+            return False
     return True
 
 

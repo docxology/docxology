@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T01:13:10Z",
+  "generated_at": "2026-10-22T15:29:31Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -8475,11 +8475,11 @@
           "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
         },
         {
-          "title": "Black Line: Strong Work in Public",
-          "citation_key": "Friedman2026BlackLineStrongWork205",
+          "title": "Active Assembly Theory and Practice",
+          "citation_key": "Friedman2026ActiveAssemblyTheoryPractice228",
           "year": 2026,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2026BlackLineStrongWork205.html"
+          "domain": "Computational",
+          "url": "/works/Friedman2026ActiveAssemblyTheoryPractice228.html"
         }
       ]
     },
@@ -40402,6 +40402,13 @@
       ],
       "related_works": [
         {
+          "title": "Active Assembly Theory and Practice",
+          "citation_key": "Friedman2026ActiveAssemblyTheoryPractice228",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026ActiveAssemblyTheoryPractice228.html"
+        },
+        {
           "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
           "citation_key": "Friedman2026ActiveFractalRabbitSyntheticBenchmark195",
           "year": 2026,
@@ -40421,13 +40428,6 @@
           "year": 2026,
           "domain": "Active Inference",
           "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
-        },
-        {
-          "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
-          "citation_key": "Friedman2026PolicyDistillationAsActive171",
-          "year": 2026,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2026PolicyDistillationAsActive171.html"
         }
       ]
     },
@@ -40783,6 +40783,13 @@
       ],
       "related_works": [
         {
+          "title": "Active Assembly Theory and Practice",
+          "citation_key": "Friedman2026ActiveAssemblyTheoryPractice228",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026ActiveAssemblyTheoryPractice228.html"
+        },
+        {
           "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
           "citation_key": "Friedman2026ActiveFractalRabbitSyntheticBenchmark195",
           "year": 2026,
@@ -40802,13 +40809,6 @@
           "year": 2026,
           "domain": "Active Inference",
           "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
-        },
-        {
-          "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
-          "citation_key": "Friedman2026PolicyDistillationAsActive171",
-          "year": 2026,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2026PolicyDistillationAsActive171.html"
         }
       ]
     },
@@ -71153,18 +71153,18 @@
           "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
         },
         {
+          "title": "Active Assembly Theory and Practice",
+          "citation_key": "Friedman2026ActiveAssemblyTheoryPractice228",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026ActiveAssemblyTheoryPractice228.html"
+        },
+        {
           "title": "Partner Pen Play in Parallel (PPPiP): A New PPPiParadigm for Relationship Improvement",
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
           "year": 2018,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2018PartnerPenPlayParallel099.html"
-        },
-        {
-          "title": "Reimagining Maps",
-          "citation_key": "Friedman2020ReimaginingMaps148",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020ReimaginingMaps148.html"
         }
       ]
     },
@@ -83908,11 +83908,11 @@
           "url": "/works/Friedman2025ActiveInferenceInstituteActive024.html"
         },
         {
-          "title": "Active Inference Multi-Track Exemplar",
-          "citation_key": "Friedman2026ActiveInferenceMultiTrack124",
+          "title": "Active Assembly Theory and Practice",
+          "citation_key": "Friedman2026ActiveAssemblyTheoryPractice228",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026ActiveInferenceMultiTrack124.html"
+          "url": "/works/Friedman2026ActiveAssemblyTheoryPractice228.html"
         }
       ]
     },
@@ -88422,6 +88422,13 @@
       ],
       "related_works": [
         {
+          "title": "Active Assembly Theory and Practice",
+          "citation_key": "Friedman2026ActiveAssemblyTheoryPractice228",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026ActiveAssemblyTheoryPractice228.html"
+        },
+        {
           "title": "An Account of Active Inference Modeling",
           "citation_key": "Friedman2023AccountActiveInferenceModeling050",
           "year": 2023,
@@ -88441,13 +88448,6 @@
           "year": 2023,
           "domain": "Active Inference",
           "url": "/works/Friedman2023GenerativeResearchTeamsActive057.html"
-        },
-        {
-          "title": "A template/ approach to Reproducible Generative Research",
-          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative123",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative123.html"
         }
       ]
     },
@@ -94546,11 +94546,11 @@
           "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
         },
         {
-          "title": "Active Inference Multi-Track Exemplar",
-          "citation_key": "Friedman2026ActiveInferenceMultiTrack124",
+          "title": "Active Assembly Theory and Practice",
+          "citation_key": "Friedman2026ActiveAssemblyTheoryPractice228",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026ActiveInferenceMultiTrack124.html"
+          "url": "/works/Friedman2026ActiveAssemblyTheoryPractice228.html"
         }
       ]
     }

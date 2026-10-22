@@ -67,3 +67,7 @@ The `pages/` directory contains all centralized, non-paper-specific documentatio
 *Part of [docxology/docxology](https://github.com/docxology/docxology) — the structured reference for Daniel Ari Friedman's public work*
 
 </div>
+
+## William Blake pathway
+
+[BLAKE.md](BLAKE.md) indexes core treatments, related passages, DOI versions and extraction limits using existing bibliography identities.

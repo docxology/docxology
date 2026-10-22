@@ -1,19 +1,48 @@
 {
-  "generated_at": "2026-10-22T01:40:03Z",
+  "generated_at": "2026-10-22T16:05:00Z",
   "source": "reports/external_links_2026-10-22.json",
-  "checked_urls": 891,
-  "ok": 720,
-  "warnings": 171,
+  "checked_urls": 892,
+  "ok": 734,
+  "warnings": 158,
   "categories": {
-    "bot-protected-or-rate-limited": 165,
+    "bot-protected-or-rate-limited": 153,
     "connection-failure": 1,
-    "ok": 720,
-    "timeout": 4,
+    "ok": 734,
+    "timeout": 3,
     "upstream-transient": 1
   },
   "note": "Warnings classify observed network behavior; bot-protected and rate-limited sources are not automatically stale.",
   "warnings_by_category": {
     "bot-protected-or-rate-limited": [
+      {
+        "url": "https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "discovery.html",
+          "domain-active-inference.html",
+          "domain-active-inference.html",
+          "domain-aii-ecosystem.html",
+          "domain-aii-ecosystem.html",
+          "domain-art-synergetics.html",
+          "domain-art-synergetics.html",
+          "domain-biomedicine.html",
+          "domain-biomedicine.html",
+          "domain-cognitive-security.html",
+          "domain-cognitive-security.html",
+          "domain-computational.html",
+          "domain-computational.html",
+          "domain-entomology.html",
+          "domain-entomology.html",
+          "domain-presentations-media.html",
+          "domain-presentations-media.html",
+          "pages/DISCOVERY.md",
+          "pages/LINKS.md",
+          "pages/PROFILE.md"
+        ],
+        "error": ""
+      },
       {
         "url": "https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind",
         "status": 403,
@@ -217,45 +246,6 @@
           "publications.html",
           "publications.html",
           "publications.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://doi.org/10.5281/zenodo.20418904",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "domain-computational.html",
-          "domain-computational.html",
-          "pages/BIBLIOGRAPHY.md",
-          "pages/DOMAINS.md",
-          "pages/SOFTWARE.md",
-          "publications.html",
-          "publications.html",
-          "publications.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://doi.org/10.5281/zenodo.20420556",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "computational-entomology.html",
-          "computational-entomology.html",
-          "domain-computational.html",
-          "domain-computational.html",
-          "pages/BIBLIOGRAPHY.md",
-          "pages/SOFTWARE.md",
-          "publications.html",
-          "publications.html",
-          "publications.html",
-          "software.html",
-          "software.html"
         ],
         "error": ""
       },
@@ -1562,6 +1552,19 @@
         "error": ""
       },
       {
+        "url": "https://doi.org/10.5281/zenodo.23484107",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
         "url": "https://doi.org/10.5281/zenodo.3986084",
         "status": 429,
         "ok": false,
@@ -2136,135 +2139,6 @@
         "error": ""
       },
       {
-        "url": "https://github.com/docxology/transformer#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/triton",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "repositories-forks.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/ultralink-docx",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/ultralink-docx#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/vibeship-spawner-skills",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "repositories-forks.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/white_line",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/white_line#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/witness_register",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/witness_register#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/yt-transcriber",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "repositories-forks.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology?tab=repositories",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/DISCOVERY.md"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/infer-actively/pymdp",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "active-inference.html"
-        ],
-        "error": ""
-      },
-      {
         "url": "https://medium.com/@curiocards/daniel-friedman-decentralized-beauty-nft-art-and-ants-7dc664b72534",
         "status": 403,
         "ok": false,
@@ -2410,21 +2284,10 @@
         "sources": [
           "pages/LINKS.md"
         ],
-        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 183 ms: Couldn't connect to server"
+        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 166 ms: Couldn't connect to server"
       }
     ],
     "timeout": [
-      {
-        "url": "https://grantome.com/grant/NSF/DBI-2010290",
-        "status": 0,
-        "ok": false,
-        "category": "timeout",
-        "sources": [
-          "pages/EVIDENCE.md",
-          "pages/EVIDENCE.md"
-        ],
-        "error": "curl: (28) Connection timed out after 8003 milliseconds"
-      },
       {
         "url": "https://troncale.sched.com/",
         "status": 0,
@@ -2433,7 +2296,7 @@
         "sources": [
           "domain-presentations-media.html"
         ],
-        "error": "curl: (28) Operation timed out after 8006 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 5011 milliseconds with 0 bytes received"
       },
       {
         "url": "https://www.christies.com/en/lot/lot-6337619",
@@ -2448,7 +2311,7 @@
           "pages/EVIDENCE.md",
           "pages/LINKS.md"
         ],
-        "error": "curl: (28) Operation timed out after 8006 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 5004 milliseconds with 0 bytes received"
       },
       {
         "url": "https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd",
@@ -2459,7 +2322,7 @@
           "pages/EVIDENCE.md",
           "pages/EVIDENCE.md"
         ],
-        "error": "curl: (28) Operation timed out after 8006 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 5003 milliseconds with 0 bytes received"
       }
     ],
     "upstream-transient": [

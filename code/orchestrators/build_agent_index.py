@@ -18,6 +18,7 @@ COUNTS = REPO_ROOT / "data" / "current-counts.json"
 from docxology_tools.report_paths import latest_source_report  # noqa: E402
 
 DATASET_PATHS = {
+    "blake_index": "data/blake-index.json",
     "works": "data/works.json",
     "work_identifiers": "data/work-identifiers.json",
     "software": "data/software.json",
@@ -74,6 +75,18 @@ def latest_report(pattern: str, _fallback: str) -> str:
 
 
 SCHEMAS = {
+    "BlakeIndex": {
+        "type": "object",
+        "description": "A topical projection of Work identities with whole-word search coverage, reviewed passage relations, DOI roles and edition caveats. Does not attest full reading or citation-source validation.",
+        "required": ["schema_version", "sources", "counts", "works", "exclusions", "needs_review"],
+        "fields": {
+            "schema_version": "BlakeIndex.v1",
+            "works": "array of existing citation_key identities; title_match and core_subject are independent of relation; includes citation_doi, version_doi, record_url, API version, primary_metadata_matched, edition_note, full_text_path, full_text_sha256 and matching_lines (1-based)",
+            "exclusions": "reviewed other-person matches and explicit no-match candidates",
+            "needs_review": "unclassified citation keys; a nonempty list fails --check",
+            "citation_sources_independently_checked": "false; registry metadata checks do not verify sources cited within a work",
+        },
+    },
     "WorkIdentifierRegistry": {
         "type": "object",
         "description": "Reviewed permanent work IDs and citation keys; active rows and retired reservations are never renumbered or recomputed from metadata.",
@@ -560,6 +573,7 @@ def payload() -> dict:
             {"id": "agent-index", "path": "/data/agent-index.json", "format": "application/json", "kind": "route-manifest"},
         ],
         "datasets": {
+            "blake_index": {"path": "/data/blake-index.json", "count": load_json("data/blake-index.json").get("count"), "schema": "BlakeIndex"},
             "works": {"path": "/data/works.json", "count": counts.get("bibliography_works"), "schema": "Work"},
             "work_identifiers": {"path": "/data/work-identifiers.json", "count": len(work_identifiers.get("identifiers", {})), "schema": "WorkIdentifierRegistry"},
             "software": {"path": "/data/software.json", "count": counts.get("software", {}).get("curated_total"), "schema": "SoftwareRepository"},

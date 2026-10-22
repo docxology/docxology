@@ -125,10 +125,11 @@ def collect_urls_from_text(text: str) -> list[str]:
     return urls
 
 
-def collect_urls() -> dict[str, list[str]]:
+def collect_urls(repo_root: Path | None = None) -> dict[str, list[str]]:
+    repo_root = REPO_ROOT if repo_root is None else repo_root
     found: dict[str, list[str]] = {}
-    for rel in scan_files():
-        path = REPO_ROOT / rel
+    for rel in scan_files(repo_root):
+        path = repo_root / rel
         if not path.exists():
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")

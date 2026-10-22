@@ -44,8 +44,9 @@ def category(row: dict) -> str:
     return "review"
 
 
-def build() -> tuple[dict, str]:
-    source = source_report()
+def build(source: Path | None = None, *, repo_root: Path | None = None) -> tuple[dict, str]:
+    repo_root = REPO_ROOT if repo_root is None else repo_root
+    source = source_report() if source is None else source
     payload = json.loads(source.read_text(encoding="utf-8"))
     rows = []
     counts: Counter[str] = Counter()
@@ -66,7 +67,7 @@ def build() -> tuple[dict, str]:
             by_category[cat].append(enriched)
     triage = {
         "generated_at": payload.get("generated_at", source_date(source)),
-        "source": str(source.relative_to(REPO_ROOT)),
+        "source": str(source.relative_to(repo_root)),
         "checked_urls": payload["checked_urls"],
         "ok": counts["ok"],
         "warnings": payload["checked_urls"] - counts["ok"],
@@ -79,7 +80,7 @@ def build() -> tuple[dict, str]:
         "",
         "Scoped network-link triage for public-facing repository hubs.",
         "",
-        f"- Source report: `{source.relative_to(REPO_ROOT)}`",
+        f"- Source report: `{source.relative_to(repo_root)}`",
         f"- Checked URLs: {triage['checked_urls']}",
         f"- OK: {triage['ok']}",
         f"- Warnings: {triage['warnings']}",
@@ -108,12 +109,13 @@ def build() -> tuple[dict, str]:
     return triage, "\n".join(lines).rstrip() + "\n"
 
 
-def outputs() -> dict[Path, str]:
-    payload, markdown = build()
-    date = source_date(REPO_ROOT / payload["source"])
+def outputs(source: Path | None = None, *, repo_root: Path | None = None) -> dict[Path, str]:
+    repo_root = REPO_ROOT if repo_root is None else repo_root
+    payload, markdown = build(source, repo_root=repo_root)
+    date = source_date(repo_root / payload["source"])
     return {
-        REPO_ROOT / "reports" / f"external_links_triage_{date}.json": json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
-        REPO_ROOT / "reports" / f"external_links_triage_{date}.md": markdown,
+        repo_root / "reports" / f"external_links_triage_{date}.json": json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
+        repo_root / "reports" / f"external_links_triage_{date}.md": markdown,
     }
 
 

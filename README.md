@@ -39,6 +39,8 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 - 📺 **Educator** — 500+ Active Inference livestreams, 200+ personal streams, [AII Textbook Group](https://activeinference.org/) (nine completed 2022-textbook cohorts plus a live first 2026 Fundamentals cohort; [Parr, Pezzulo & Friston, 2022](https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind) · [Namjoshi, 2026](https://mitpress.mit.edu/9780262050951/fundamentals-of-active-inference/)), College of the Redwoods ([BIOL-1](https://github.com/docxology/biol-1) at Pelican Bay, Spring and Fall 2026; [BIOL-8](https://github.com/docxology/biol-8) Human Biology, Spring 2026), [Udemy courses](https://www.udemy.com/course/communication-for-remote-teams/), conference workshops
 - 🌐 **Community Builder** — Co-founder of [Complexity Weekend](https://www.complexityadventures.com/) (2019-2024); co-organized Stanford Complexity Group
 
+> **William Blake pathway**: [Core works, broader citations and quotations, version DOIs, and text evidence](pages/BLAKE.md). [Complete bibliography](pages/BIBLIOGRAPHY.md) · [Machine-readable Blake index](data/blake-index.json).
+
 > **Current generated totals**: see [`reports/current_counts.md`](reports/current_counts.md) for bibliography, paper-folder, software, GitHub inventory, public-source snapshot, and paired-publication counts with generation metadata and rebuild commands. Scholar metrics are sourced from [`data/scholar-snapshot.json`](data/scholar-snapshot.json) and propagated into the resume and claim exports.
 
 ---

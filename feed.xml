@@ -6,7 +6,7 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2026 00:51:42 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 15:30:22 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
@@ -27,6 +27,13 @@
       <guid isPermaLink="false">site-update-2026-05-13-works</guid>
       <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
+    </item>
+    <item>
+      <title>Active Assembly Theory and Practice</title>
+      <link>https://danielarifriedman.com/works/Friedman2026ActiveAssemblyTheoryPractice228.html</link>
+      <guid isPermaLink="false">work-Friedman2026ActiveAssemblyTheoryPractice228</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision</title>
@@ -195,13 +202,6 @@
       <guid isPermaLink="false">work-Friedman2026GoldenLineTowardWhat204</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>Personal Red Lines for Development</title>
-      <link>https://danielarifriedman.com/works/Friedman2026PersonalRedLinesDevelopment203.html</link>
-      <guid isPermaLink="false">work-Friedman2026PersonalRedLinesDevelopment203</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Cognitive Security · 2026</description>
     </item>
   </channel>
 </rss>

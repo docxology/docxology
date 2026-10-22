@@ -115,24 +115,29 @@ Which tier to reach for:
    python3 code/orchestrators/settle.py --tier release --skip-commit --push --pr "Title"
    ```
 
-## Pre-commit source snapshots
+## Pre-commit source evidence
 
-A source refresh may update a tracked dated public-source snapshot before its
-payload lands. The full payload-landing battery uses
-`validate_repo.py --allow-dirty-prepayload-evidence` for this phase only. The
-Pages no-write check permits exactly the existing narrow exception: a dated
-public-source snapshot whose `source_commit` is current HEAD and whose recorded
-worktree was dirty. Reviewed evidence removals must be staged before preflight so the Git-index-based
-Pages projection has no retired input bytes. Unstaged deletions and modified
-tracked receipts still block; retention authorization remains separate in the
-reviewed retention manifest. A clean deployed-SHA snapshot, a wrong commit, malformed
-receipt, or other mutable release evidence still fails.
+A source refresh may update a tracked dated report before its payload lands.
+The full payload-landing battery uses
+`validate_repo.py --allow-dirty-prepayload-evidence` for this phase only.
+The Pages no-write check permits a dated public-source snapshot bound to
+current HEAD whose recorded worktree was dirty. It also permits a dated
+external-link scan with the same binding only when it covers the complete
+current URL/source contract and both same-date triage files exactly match
+the existing triage renderer. This lets an intake validate its new outbound
+URLs before the source payload and evidence land together.
+
+Missing, malformed, stale, misbound, clean/deployed, incomplete or altered
+triage evidence remains blocked. Reviewed evidence removals must be staged
+before preflight so the Git-index-based Pages projection has no retired input
+bytes. Unstaged deletions still block; retention authorization remains separate
+in the reviewed retention manifest. The exception does not apply to other
+mutable release evidence, ordinary assembly, strict postlanding validation,
+CI or release attestation. It makes no deployment or release-readiness claim.
 
 For an explicit pre-commit regeneration check, use
 `regenerate_all.py --validate --allow-dirty-prepayload-evidence`. Default
-validation, CI, skip-commit pushes, post-landing confirmation, and release
-validation remain strict; the exception is forbidden with `--release`. This
-mode writes no evidence assertions and does not make a candidate release-ready.
+validation and postlanding checks retain the strict committed-source contract.
 
 ## Commit chain
 

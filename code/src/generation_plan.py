@@ -102,6 +102,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # away, so gating here would mask the software.json refresh behind an
     # unchanged-inputs skip.
     GenerationStep("current-counts", "build_current_counts.py", (), ("--check",), "Volatile count report"),
+    GenerationStep("blake-index", "build_blake_index.py", (), ("--check",), "Source-bound Blake publication pathway", ("data/works.json", "data/blake-review.json", "papers/*/full_text.md", "papers/*/metadata.json", "reports/publication_discovery_*.json")),
     GenerationStep("coverage-exceptions", "build_coverage_exceptions.py", (), ("--check",), "Source coverage queue", ("data/works.json",)),
     # DERIVED (always-run): classifies from data/software.json, which
     # agent-data rewrites later in the same pass (same cross-pass cycle as
@@ -241,7 +242,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # DERIVED (always-run): renders GENERATED.md + data/generated-manifest.json
     # from the in-script ARTIFACTS/UTILITIES tables; consumes no repo files.
     GenerationStep("generated-manifest-first", "build_generated_manifest.py", (), ("--check",), "Generated artifact matrix before agent index"),
-    GenerationStep("agent-index", "build_agent_index.py", (), ("--check",), "Agent route manifest", ("data/work-identifiers.json", "data/current-counts.json", "data/artworks.json", "data/artworks-index.json", "data/videos.json", "data/videos-index.json", "data/works.json", "data/software.json", "data/github-repositories.json", "data/claims.json", "data/scholar-verification-receipt.json", "search-index.json", "data/coverage-exceptions.json", "data/repository-classification.json", "data/people.json", "data/organizations.json", "data/work-enrichment.json", "data/catalog.json", "data/reconciliation.json", "data/reproducibility.json", "data/generated-manifest.json", "data/pages-artifact-manifest.json", "reports/live_site_verification_*.json"), index_inputs=("reports/**",)),
+    GenerationStep("agent-index", "build_agent_index.py", (), ("--check",), "Agent route manifest", ("data/blake-index.json", "data/work-identifiers.json", "data/current-counts.json", "data/artworks.json", "data/artworks-index.json", "data/videos.json", "data/videos-index.json", "data/works.json", "data/software.json", "data/github-repositories.json", "data/claims.json", "data/scholar-verification-receipt.json", "search-index.json", "data/coverage-exceptions.json", "data/repository-classification.json", "data/people.json", "data/organizations.json", "data/work-enrichment.json", "data/catalog.json", "data/reconciliation.json", "data/reproducibility.json", "data/generated-manifest.json", "data/pages-artifact-manifest.json", "reports/live_site_verification_*.json"), index_inputs=("reports/**",)),
     # DERIVED (always-run): the envelope binds git deployment state (source
     # commit, worktree-vs-deployed diff) and generator-script hashes that no
     # content fingerprint captures; skipping could mint a stale-looking

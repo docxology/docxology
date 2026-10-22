@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-10-18T19:15:46+00:00`
+Generated: `2026-10-22T15:28:49+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -30,18 +30,18 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ## Counts
 
-- Bibliography works: `223`
-- Paper-folder docs: `206`
-- Full-text extractions: `202`
+- Bibliography works: `224`
+- Paper-folder docs: `207`
+- Full-text extractions: `203`
 - Papers with image galleries: `145`
 - Total extracted images: `8959`
-- Bibliography docs links: `206`
+- Bibliography docs links: `207`
 
 ### Types
 
 - Books: `5`
 - Courses: `3`
-- Papers: `202`
+- Papers: `203`
 - Playbooks: `2`
 - Presentations: `8`
 - Report: `1`
@@ -53,7 +53,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - Active Inference: `48`
 - Cognitive Security: `37`
 - Art & Synergetics: `16`
-- Computational: `64`
+- Computational: `65`
 - AII Ecosystem: `7`
 - Presentations & Media: `14`
 - Genetics & Biomedical: `13`
@@ -66,9 +66,9 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Generated Exports
 
-- data_works_json: `223`
+- data_works_json: `224`
 - data_software_json: `166`
-- data_publications_ld_main_entity: `223`
+- data_publications_ld_main_entity: `224`
 - data_software_ld_main_entity: `166`
 
 ### GitHub Inventory

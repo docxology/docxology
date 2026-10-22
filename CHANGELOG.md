@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-22 — Blake pathway and public publication coverage
+
+- Added a reproducible Blake pathway over existing bibliography identities, with primary/version DOI links, hash-bound passage locations, namesake exclusions, negative-search coverage, and explicit reading/citation-validation limits.
+- Preserved printed DOI discrepancies for Lives in Juxtaposition, Before Pragmatism, and Synthesis of Agent and Niche separately from registry version metadata.
+- Reconciled public Zenodo, ORCID and Crossref discovery; indexed the public Active Assembly Theory and Practice deposit through the existing publication intake tool.
+
+
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
 ## 2026-10-21

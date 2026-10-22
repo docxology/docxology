@@ -6,14 +6,14 @@ Searchability, scholarly content, complete author-written abstracts/full text, a
 Source: [Google Scholar inclusion guidance](https://scholar.google.com/intl/en/scholar/inclusion.html).
 See [the placement policy](../docs/seo/scholar-inclusion.md) and [machine-readable results](../data/scholar-readiness.json).
 
-Audited works: 223. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
+Audited works: 224. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 
 | Local blocker | Works |
 | --- | ---: |
 | missing_citation_author | 11 |
 | no_selected_local_pdf | 25 |
-| pdf_directory_differs_from_abstract | 198 |
-| pdf_exceeds_byte_limit | 42 |
+| pdf_directory_differs_from_abstract | 199 |
+| pdf_exceeds_byte_limit | 43 |
 
 ## Work-level findings
 
@@ -242,3 +242,4 @@ Audited works: 223. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [Active Inference -- A Synthetic Overview](../works/Friedman2026ActiveInferenceSyntheticOverview225.html) | 3776345 | pdf_directory_differs_from_abstract |
 | [antropy: native multidimensional entropy and configurable complexity analysis](../works/Friedman2026AntropyNativeMultidimensionalEntropy226.html) | 1817938 | pdf_directory_differs_from_abstract |
 | [Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision](../works/Friedman2026ActiveInferenceAsMeta227.html) | 5015269 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
+| [Active Assembly Theory and Practice](../works/Friedman2026ActiveAssemblyTheoryPractice228.html) | 18929532 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |

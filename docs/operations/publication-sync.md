@@ -342,7 +342,11 @@ validation:
 - Sitemap re-commit **after** landing (its `<lastmod>` derives from git
   commit dates) — see [Acceptance Checks](#acceptance-checks).
 - Receipt + rebind co-commit — a dated receipt committed without its binder
-  rebind re-stales the binders.
+  rebind re-stales the binders. A new outbound publication URL requires a full
+  current external-link scan and its exact paired triage before landing. Use
+  the explicit prepayload source-evidence mode described in
+  [settle.md](settle.md#pre-commit-source-evidence); strict assembly and
+  postlanding checks remain unchanged.
 - Discovery-pointer re-render when the intake created new dated reports:
   `latest_source_report()` resolves only **git-tracked** receipts
   (clean-checkout determinism — a committed page must never reference a

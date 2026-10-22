@@ -5492,6 +5492,22 @@
       "title_similarity": 1.0,
       "status": "verified",
       "authors": [{"family": "Friedman", "given": "Daniel Ari", "orcid": "0000-0001-6232-9096"}]
+    },
+    "Friedman2026ActiveAssemblyTheoryPractice228": {
+      "num": 228,
+      "doi": "10.5281/zenodo.23484107",
+      "title": "Active Assembly Theory and Practice",
+      "registration_agency": "DataCite",
+      "resolved_title": "Active Assembly Theory and Practice",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
     }
   }
 }

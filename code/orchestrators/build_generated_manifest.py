@@ -48,6 +48,12 @@ LATEST_EXTERNAL_LINK_REPORT = _latest_report("external_links_[0-9]*.json", "repo
 
 ARTIFACTS = [
     {
+        "name": "Blake publication pathway",
+        "outputs": ["pages/BLAKE.md", "data/blake-index.json"],
+        "sources": ["data/works.json", "data/blake-review.json", "papers/*/full_text.md", "papers/*/metadata.json", "reports/publication_discovery_2026-10-22.json"],
+        "command": "uv run python code/orchestrators/build_blake_index.py",
+    },
+    {
         "name": "Scholar PDF placement proposal (review only)",
         "outputs": ["reports/scholar_pdf_placement_proposal_2026-10-13.json", "reports/scholar_pdf_placement_proposal_2026-10-13.md"],
         "sources": ["data/scholar-readiness.json (hash-bound observed input)", "data/pages-artifact-manifest.json (hash-bound observed input)"],

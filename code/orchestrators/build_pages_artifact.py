@@ -151,6 +151,56 @@ def is_current_dirty_prepayload_source_snapshot(path: Path, repo_root: Path) -> 
     )
 
 
+def is_current_dirty_prepayload_link_snapshot(path: Path, repo_root: Path) -> bool:
+    """Recognize a complete candidate-source link report and its exact triage.
+
+    Adding an outbound URL requires a fresh cached scan before payload landing.
+    These candidate inputs are distinct from deployed-revision evidence. Only
+    the explicit prepayload mode may consume them while they remain dirty.
+    """
+    match = re.fullmatch(
+        r"reports/external_links(?:_triage)?_(\d{4}-\d{2}-\d{2})\.(json|md)",
+        path.as_posix(),
+    )
+    if match is None:
+        return False
+    stamp = match.group(1)
+    primary = Path(f"reports/external_links_{stamp}.json")
+    if path.suffix == ".md" and path == primary.with_suffix(".md"):
+        return False
+    try:
+        date.fromisoformat(stamp)
+        from check_external_links import cached_report_errors, collect_urls, scan_files
+        from build_external_link_triage import outputs as triage_outputs
+
+        payload = json.loads(source_path(primary, repo_root=repo_root).read_text(encoding="utf-8"))
+        if (
+            not isinstance(payload, dict)
+            or payload.get("source_worktree_clean") is not False
+            or payload.get("source_commit") != _head_commit(repo_root)
+            or not str(payload.get("generated_at", "")).startswith(stamp + "T")
+            or cached_report_errors(payload, url_sources=collect_urls(repo_root), scope=scan_files(repo_root))
+        ):
+            return False
+        generated = datetime.fromisoformat(payload["generated_at"])
+        if generated.tzinfo is None or generated.astimezone(timezone.utc).date().isoformat() != stamp:
+            return False
+        expected_triage = triage_outputs(repo_root / primary, repo_root=repo_root)
+        bundle = {primary, *(target.relative_to(repo_root) for target in expected_triage)}
+        indexed = subprocess.run(
+            ["git", "ls-files", "-z", "--", *(p.as_posix() for p in sorted(bundle))],
+            cwd=repo_root, capture_output=True, check=False, timeout=3,
+        )
+        if indexed.returncode or {Path(p) for p in indexed.stdout.decode().split("\0") if p} != bundle:
+            return False
+        return all(
+            source_path(target.relative_to(repo_root), repo_root=repo_root).read_text(encoding="utf-8") == content
+            for target, content in expected_triage.items()
+        )
+    except (OSError, ValueError, KeyError, TypeError, AttributeError, subprocess.TimeoutExpired, SystemExit):
+        return False
+
+
 def dirty_postdeploy_payload_paths(
     repo_root: Path = REPO_ROOT,
     *,
@@ -194,7 +244,10 @@ def dirty_postdeploy_payload_paths(
             and not is_control_path(path)
             and not (
                 allow_dirty_prepayload_source_snapshot
-                and is_current_dirty_prepayload_source_snapshot(path, repo_root)
+                and (
+                    is_current_dirty_prepayload_source_snapshot(path, repo_root)
+                    or is_current_dirty_prepayload_link_snapshot(path, repo_root)
+                )
             )
         ),
         key=lambda path: path.as_posix(),
@@ -676,6 +729,7 @@ def _growth_report_payload(payload: dict) -> dict:
 
 def write_manifest(*, allow_dirty_prepayload_source_snapshot: bool = False) -> dict:
     require_clean_postdeploy_payload_inputs(
+        REPO_ROOT,
         allow_dirty_prepayload_source_snapshot=allow_dirty_prepayload_source_snapshot
     )
     existing = None
@@ -699,6 +753,7 @@ def write_manifest(*, allow_dirty_prepayload_source_snapshot: bool = False) -> d
 
 def check_manifest(*, allow_dirty_prepayload_source_snapshot: bool = False) -> None:
     require_clean_postdeploy_payload_inputs(
+        REPO_ROOT,
         allow_dirty_prepayload_source_snapshot=allow_dirty_prepayload_source_snapshot
     )
     if not ARTIFACT_MANIFEST.exists():
@@ -716,7 +771,7 @@ def check_manifest(*, allow_dirty_prepayload_source_snapshot: bool = False) -> N
 
 
 def assemble(output: Path) -> tuple[int, int, list[str]]:
-    require_clean_postdeploy_payload_inputs()
+    require_clean_postdeploy_payload_inputs(REPO_ROOT)
     # Prove archive custody before replacing an existing build. The same path
     # selection owns preview, manifest and actual copied output.
     office = {Path(name) for name in verified_archives(REPO_ROOT)}
@@ -740,6 +795,7 @@ def assemble(output: Path) -> tuple[int, int, list[str]]:
 def projected_size(*, allow_dirty_prepayload_source_snapshot: bool = False) -> tuple[int, int]:
     """Return (included file count, included bytes) without copying files."""
     require_clean_postdeploy_payload_inputs(
+        REPO_ROOT,
         allow_dirty_prepayload_source_snapshot=allow_dirty_prepayload_source_snapshot
     )
     paths = _relative_paths()
@@ -817,8 +873,8 @@ def main() -> None:
         "--allow-dirty-prepayload-evidence",
         action="store_true",
         help=(
-            "Allow only a current, dirty public-source snapshot whose own receipt records "
-            "source_worktree_clean=false; reserved for pre-commit payload regeneration or no-write validation"
+            "Allow current HEAD-bound dirty source snapshots or complete link-scan/triage bundles; "
+            "reserved for pre-commit payload regeneration or no-write validation"
         ),
     )
     parser.add_argument("--check-manifest", action="store_true", help="Fail if the checked-in Pages artifact manifest is stale")

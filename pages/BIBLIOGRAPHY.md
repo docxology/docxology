@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Publications and Research Outputs in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**223 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**224 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-824_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -26,13 +26,15 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 ---
 
+> **William Blake**: [Topical pathway with version records, broader text matches, and source-edition caveats](BLAKE.md). This is a projection of the catalog below; title matching alone does not establish citation coverage.
+
 ### Domain Legend
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical · 🔍 Other
 
-**202** Papers · **8** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series · **1** Report
+**203** Papers · **8** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series · **1** Report
 
-> **223** works in the table below **·** **206** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **224** works in the table below **·** **207** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -265,6 +267,7 @@ The contributor column lists authors unless otherwise specified: the contributor
 | 225 | 2026 | 🧠 | Paper | Active Inference -- A Synthetic Overview | *Zenodo* | [10.5281/zenodo.23321280](https://doi.org/10.5281/zenodo.23321280) | [📁](../papers/2026_ActiveInferenceSynthetic/) | Friedman, Daniel Ari; Alexandra Mikhailova |
 | 226 | 2026 | 💻 | Paper | antropy: native multidimensional entropy and configurable complexity analysis | *Zenodo* | [10.5281/zenodo.23306200](https://doi.org/10.5281/zenodo.23306200) | [📁](../papers/2026_Antropy/) | Friedman, Daniel Ari |
 | 227 | 2026 | 🧠 | Paper | Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision | *Zenodo* | [10.5281/zenodo.23397452](https://doi.org/10.5281/zenodo.23397452) | [📁](../papers/2026_ActiveInferenceAs/) | Friedman, Daniel Ari |
+| 228 | 2026 | 💻 | Paper | Active Assembly Theory and Practice | *Zenodo* | [10.5281/zenodo.23484107](https://doi.org/10.5281/zenodo.23484107) | [📁](../papers/2026_ActiveAssemblyTheory/) | Friedman, Daniel Ari |
 ---
 
 ## Domain Index

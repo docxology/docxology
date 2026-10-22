@@ -7,7 +7,7 @@
 > Wikidata: https://www.wikidata.org/wiki/Q138781444
 > This repository is the public research and software index for Daniel Ari Friedman. It collects a curated bibliography, paper folders with README/AGENTS/SKILL documentation, software catalogs, collaborator maps, media references, public identifiers, and website metadata.
 
-Each paper folder under `papers/` may contain `full_text.md` (full page-level text extraction from the PDF or ODT/DOCX/PPTX source) and an `images/` subdirectory (extracted figures and images). Current totals are generated in `data/current-counts.json`; the latest snapshot records 206 paper folders, 202 full-text extractions, 145 image galleries, and 8,959 extracted images. Use `full_text.md` for full-text search, reading, and citation within agent workflows.
+Each paper folder under `papers/` may contain `full_text.md` (full page-level text extraction from the PDF or ODT/DOCX/PPTX source) and an `images/` subdirectory (extracted figures and images). Current totals are generated in `data/current-counts.json`; the latest snapshot records 207 paper folders, 203 full-text extractions, 145 image galleries, and 8,959 extracted images. Use `full_text.md` for full-text search, reading, and citation within agent workflows.
 
 ## Use These Pages First
 
@@ -128,3 +128,8 @@ Current volatile totals are generated in reports/current_counts.md and data/curr
 ## Optional
 
 Use CITATION.cff for machine-readable citation metadata. Preferred title: "docxology: Daniel Ari Friedman public research and software index".
+
+## William Blake publication pathway
+
+- [Blake pathway](https://github.com/docxology/docxology/blob/main/pages/BLAKE.md): core works, broader quotations/citations, DOI roles, edition caveats and extraction coverage.
+- [Blake JSON](https://danielarifriedman.com/data/blake-index.json): existing citation keys, hash-bound passage classifications, matching line numbers and explicit verification limits; schema in the agent index.

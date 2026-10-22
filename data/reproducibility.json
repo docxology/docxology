@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T01:14:00Z",
+  "generated_at": "2026-10-22T15:29:55Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -61,17 +61,17 @@
     }
   ],
   "max_score": 6,
-  "work_count": 223,
+  "work_count": 224,
   "signal_totals": {
-    "persistent_id": 208,
-    "public_archive": 166,
-    "open_full_text": 202,
-    "source_documents": 206,
+    "persistent_id": 209,
+    "public_archive": 167,
+    "open_full_text": 203,
+    "source_documents": 207,
     "executable_code": 76,
-    "agent_readable": 206
+    "agent_readable": 207
   },
   "band_counts": {
-    "independently reproducible": 164,
+    "independently reproducible": 165,
     "independently checkable": 42,
     "citable only": 8,
     "unverified": 9
@@ -82,10 +82,10 @@
     "2": 4,
     "3": 9,
     "4": 33,
-    "5": 91,
+    "5": 92,
     "6": 73
   },
-  "mean_score": 4.771,
+  "mean_score": 4.772,
   "works": [
     {
       "num": 5,
@@ -3356,6 +3356,25 @@
       "repositories": [
         "Working_Groups"
       ]
+    },
+    {
+      "num": 228,
+      "citation_key": "Friedman2026ActiveAssemblyTheoryPractice228",
+      "title": "Active Assembly Theory and Practice",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
     },
     {
       "num": 23,

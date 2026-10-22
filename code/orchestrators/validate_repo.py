@@ -462,7 +462,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--allow-dirty-prepayload-evidence", action="store_true",
-        help="Allow only current HEAD-bound dirty public-source snapshots in no-write Pages checks before payload landing; forbidden with --release.",
+        help="Allow current HEAD-bound dirty source snapshots or complete link-scan/triage bundles in no-write Pages checks before payload landing; forbidden with --release.",
     )
     args = parser.parse_args()
     if args.release and args.allow_dirty_prepayload_evidence:
