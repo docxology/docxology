@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-22T03:18:16Z",
-  "source_commit_at_generation": "86c8e2cc9d624d54f8181994a883b8e68376d8fb",
+  "generated_at": "2026-10-22T23:45:25Z",
+  "source_commit_at_generation": "44bd31aae3dbf5c0e15bb906606f778d396af8e0",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 880469675,
+    "source_bytes": 900418684,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 6058,
-    "artifact_bytes": 881540722
+    "artifact_file_count": 6073,
+    "artifact_bytes": 901492377
   },
   "included_files": [
     {
@@ -81,8 +81,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 142261,
-      "sha256": "334270b6d07476b1921fd38e8b2feac5184632d362cafabdd33a8dc1e64650f6"
+      "bytes": 142890,
+      "sha256": "a3fc6b3f8e869be63785903b069a53f351034566ed99e96224424be8316cc6ec"
     },
     {
       "path": "CITATION.cff",
@@ -101,8 +101,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 34823,
-      "sha256": "81ffe480db391a9454300114f9429aee86ef5079073acd4eff79357a917c92e0"
+      "bytes": 35055,
+      "sha256": "2224f367f6e67c11bb221d5d72273da0904e81cd3e7b0ec61cff7b42fd3924dc"
     },
     {
       "path": "SKILL.md",
@@ -10056,18 +10056,18 @@
     },
     {
       "path": "bibliography.bib",
-      "bytes": 100168,
-      "sha256": "cf553d16f39cf2c5b6f3eb63b42f5e22f67016f23b75f12074d156c81e207f22"
+      "bytes": 100539,
+      "sha256": "6fb2644859056ab1f6b1b4c4f8c5ac5b2392c662cd8947e6d75839732f95a2c7"
     },
     {
       "path": "bibliography.csl.json",
-      "bytes": 179198,
-      "sha256": "a1aa235213ee988c28f6c5955ec6ad979179e7f6ca5afc7982aed859dfb82eca"
+      "bytes": 179818,
+      "sha256": "222d2aa5431c398f0c00377efbf42d0450a602ea138126029af03b0f4d1bb169"
     },
     {
       "path": "bibliography.ris",
-      "bytes": 81246,
-      "sha256": "7a25c80f3de5d9842ae945359fc9444becd71ddd9f2f2c4de3ba0d3affb859f1"
+      "bytes": 81528,
+      "sha256": "d7afe00cc2cbfd164707a67bd09946f76caf96d860a404bd348c3271f608aa96"
     },
     {
       "path": "blog/AGENTS.md",
@@ -10107,7 +10107,7 @@
     {
       "path": "catalog.html",
       "bytes": 51784,
-      "sha256": "ac727d90e079b5c476aac72917a2925e9446e40348f3497d152f3e2ec60b480d"
+      "sha256": "a9ca31e9e0eb04044c4916d643c6adc8af2a79fb36d8edcb04ac5b7446fa3902"
     },
     {
       "path": "cite-verify.html",
@@ -10241,8 +10241,8 @@
     },
     {
       "path": "code/orchestrators/build_agent_index.py",
-      "bytes": 42723,
-      "sha256": "e7b020ebcd8e1b13980d631d25dd93ea7df0358d511b8768baf1ba5187745e2d"
+      "bytes": 43961,
+      "sha256": "b6eaf30b1f93eb5739f2969fe49cf44f2cc611d6966d6a279e945178dd8b29d2"
     },
     {
       "path": "code/orchestrators/build_artwork_index.py",
@@ -10253,6 +10253,11 @@
       "path": "code/orchestrators/build_artwork_pages.py",
       "bytes": 25946,
       "sha256": "2e87b5bdde7d56376d6d836f2d140290c8788670f40857b23f00bed73abdbb1b"
+    },
+    {
+      "path": "code/orchestrators/build_blake_index.py",
+      "bytes": 11524,
+      "sha256": "f4650bacffc57ffdc06efa00990a070981f42e0fd119083bb4efd6b4f6a2bfbd"
     },
     {
       "path": "code/orchestrators/build_catalog.py",
@@ -10291,13 +10296,13 @@
     },
     {
       "path": "code/orchestrators/build_external_link_triage.py",
-      "bytes": 5213,
-      "sha256": "bcfd42bcce84bb05d313aecc17fc80b1d4bef86e1747daeacab8d150cbb61244"
+      "bytes": 5514,
+      "sha256": "eb85b8f6482c566853e587dd044f63db409f7ae20a5ac5408185f069b1f770ed"
     },
     {
       "path": "code/orchestrators/build_generated_manifest.py",
-      "bytes": 37394,
-      "sha256": "26e79408118d1afd856c63812fa0bdec452de1bb12bf5c26fb0dd6bc35a46352"
+      "bytes": 37758,
+      "sha256": "da951579916de1caeacadfd6c7d266f825c52f4de25ae074cfbc5dd4522fdc7d"
     },
     {
       "path": "code/orchestrators/build_github_inventory.py",
@@ -10311,8 +10316,8 @@
     },
     {
       "path": "code/orchestrators/build_pages_artifact.py",
-      "bytes": 41201,
-      "sha256": "733c6d8fe95b9716dedcbe9744492edfa09fa20a81fdf308d61c206efeb6752a"
+      "bytes": 43888,
+      "sha256": "c0b20582c4b83a62ef1a57f168eda1e0779095fe7a4fbdcabecc5985be8846a4"
     },
     {
       "path": "code/orchestrators/build_paper_pages.py",
@@ -10381,8 +10386,8 @@
     },
     {
       "path": "code/orchestrators/check_external_links.py",
-      "bytes": 12658,
-      "sha256": "5cd6bc89893496a58963922974d8b30d97b5c1eda865a84668c89bcafe5fb8b5"
+      "bytes": 12758,
+      "sha256": "bf7614f3fa247e0fefc7e5e7cf39ed4046b4a4157fd5fd9d892d6f2af1838823"
     },
     {
       "path": "code/orchestrators/check_zenodo_uncatalogued.py",
@@ -10526,8 +10531,8 @@
     },
     {
       "path": "code/orchestrators/settle.py",
-      "bytes": 32497,
-      "sha256": "f45fcb8cd2f6cdd173c9c5785d85270225e159a4f4fd812eabd101ae33badd7c"
+      "bytes": 32704,
+      "sha256": "8e02ceb86ac989192b85478bf556b8fe5b7560a5716828597d71379ef1a927c1"
     },
     {
       "path": "code/orchestrators/submit_indexnow.py",
@@ -10576,8 +10581,8 @@
     },
     {
       "path": "code/orchestrators/validate_repo.py",
-      "bytes": 28654,
-      "sha256": "642aa8e6553d3097c6544838eaee90c59410233ae70e4a225eda22b84bfe854f"
+      "bytes": 28679,
+      "sha256": "9ef5893706e0fef2fff4ad750f7e5a3562e31c68dbd2626b87e12dc4306d1aee"
     },
     {
       "path": "code/orchestrators/verify_deployed_artifact.py",
@@ -10711,8 +10716,8 @@
     },
     {
       "path": "code/src/generation_plan.py",
-      "bytes": 38573,
-      "sha256": "9b283cb85f2a69640f6d48cd21c9ad5a38932628de58eef70b539b55f561b763"
+      "bytes": 38855,
+      "sha256": "ded01cd3cd3689c90536fbb7e9eaa8043856c58f3b22a30014557720262048f7"
     },
     {
       "path": "code/src/manuscript_figures.py",
@@ -10871,8 +10876,8 @@
     },
     {
       "path": "code/templates/publications.html.tmpl",
-      "bytes": 19841,
-      "sha256": "b6bca1d6075e210f25e6ce8b84ea587c34271f41ed3071233a5895980e1c20d3"
+      "bytes": 20050,
+      "sha256": "ffa7f79904539b74585fa833ff63c11dc7bc807bf031d85f827ba28eb673c039"
     },
     {
       "path": "code/templates/software.html.tmpl",
@@ -11003,6 +11008,11 @@
       "path": "code/tests/test_bibliography_authority.py",
       "bytes": 14837,
       "sha256": "a345c2a4f46e1983828f9ac91890f009976f0714a7df92ebc77798ee39a53301"
+    },
+    {
+      "path": "code/tests/test_blake_index.py",
+      "bytes": 4647,
+      "sha256": "cdc618e2b37bd23e8befcf3dc30cacab199b56bd675c0ebf756dba9aec3ba2f8"
     },
     {
       "path": "code/tests/test_build_github_inventory.py",
@@ -11276,8 +11286,8 @@
     },
     {
       "path": "code/tests/test_pages_artifact.py",
-      "bytes": 34748,
-      "sha256": "15196400eabad05ae237ac3051690ef6f12ea8ba5c592c3cda92d54356444a01"
+      "bytes": 45779,
+      "sha256": "a2916becf59648a246e161d84521aee025aca7dd00ad35a955354c9deb0295c3"
     },
     {
       "path": "code/tests/test_pages_workflow.py",
@@ -11521,8 +11531,8 @@
     },
     {
       "path": "code/tests/test_settle_landing.py",
-      "bytes": 23112,
-      "sha256": "bf30f606e1954f92b88bd6388911b665cbb137099cce065c17f463e3da1e7e36"
+      "bytes": 25263,
+      "sha256": "d99e0090fc0fa5537afa911e6107d0c2f3fa8768b5d995f77c5222f5d5fe7316"
     },
     {
       "path": "code/tests/test_settle_routine_tier.py",
@@ -11720,14 +11730,24 @@
       "sha256": "903cc0eb20dc926e887267998f5f686b69df88dacbccf99845e19e5f8073be3d"
     },
     {
+      "path": "data/blake-index.json",
+      "bytes": 52861,
+      "sha256": "ac21021e6987989d9d1cb3d718130dd2bc0d5e61d0c82970eef8dcf9570765a9"
+    },
+    {
+      "path": "data/blake-review.json",
+      "bytes": 7582,
+      "sha256": "484c91c6cbf29654ece3810de6fdc892ade82e3c70a619ad5acfd26a336b69c2"
+    },
+    {
       "path": "data/catalog.json",
       "bytes": 32628,
-      "sha256": "a68284f4559163b24e4e4e5f928f0b8d5b5ad9814cb6d49b2e348bfe4f9dcaf7"
+      "sha256": "14893cd46ad3510f4593cf6fb0966394a9e3df71a2200167c6cea0cbcd92e1e0"
     },
     {
       "path": "data/claims.json",
       "bytes": 13095,
-      "sha256": "2ef720a56019529242e7c716d6cb2067562cdf3f4d50da1afe346b5023432fc9"
+      "sha256": "322983adeb1c68dfc1ed1d18274bbe1ab585df26d14508d4b7a79fbf4053bb89"
     },
     {
       "path": "data/coverage-exceptions.json",
@@ -11737,7 +11757,7 @@
     {
       "path": "data/current-counts.json",
       "bytes": 5176,
-      "sha256": "dd16c6443396cff85bb91b0656fe0841f534ab130dc814a238bf19f7fdb59b23"
+      "sha256": "3481b2e526cf25182ad95fab35f3dafa086b6a719d80803175c536231113887d"
     },
     {
       "path": "data/github-repositories.json",
@@ -11752,12 +11772,12 @@
     {
       "path": "data/og-image-counts.json",
       "bytes": 49,
-      "sha256": "50ab9dd3e403218b3498a876aaf10177271193d96045341f13af1b5526853605"
+      "sha256": "ec357a9436102717be99c9019550abc954be52c06ed029675428488139b18420"
     },
     {
       "path": "data/organizations.json",
       "bytes": 1518,
-      "sha256": "e598ed7719ffece650638c9b3230cecc209a672d674e4ff580228a64dae5d80d"
+      "sha256": "f878c3f45a43fa804728a260e8f6faad28d6e85dac4017f44e8ffcd9ddec9a22"
     },
     {
       "path": "data/pages-archive-documents.json",
@@ -11772,7 +11792,7 @@
     {
       "path": "data/people.json",
       "bytes": 1237,
-      "sha256": "ff37e6660e2c6b8ddf3f295ee3b693ae0265a965f367edd2823300893793e482"
+      "sha256": "b4edc43fa4f047b4b69a1618d6f843cd314be12dfd652c906cc38b46a22c1847"
     },
     {
       "path": "data/public-source-observation-decisions.json",
@@ -11781,8 +11801,8 @@
     },
     {
       "path": "data/publications-ld.json",
-      "bytes": 460980,
-      "sha256": "21f046010e6631409b3c5998203dd469e46f14fdb957a18e49ed5c3876e27889"
+      "bytes": 462660,
+      "sha256": "f1ed9239849611e7acbf95ff2ac0496b274becede111ebd19100bfe32cec9e73"
     },
     {
       "path": "data/publishing-status.json",
@@ -11792,7 +11812,7 @@
     {
       "path": "data/reconciliation.json",
       "bytes": 2163,
-      "sha256": "2e73d7005e6e0506735992f6de185211e3f6754ee19ed194fa25aca1d4e1ec5a"
+      "sha256": "b003712b14bc622e191e0b6ef26e8b1b813ac8ae1cd6e0af1242f9942bf99001"
     },
     {
       "path": "data/report-retention.json",
@@ -11811,18 +11831,18 @@
     },
     {
       "path": "data/reproducibility.json",
-      "bytes": 135539,
-      "sha256": "4cb4c53298c089b8f43d6eadf5fd9c41fa71b2b1c41692433d1d2fc484bc34af"
+      "bytes": 136083,
+      "sha256": "0bbbe5caa1abbac0e871b1275d8416a8497b7f6e9c011fffb6f4a5c2f4053b9e"
     },
     {
       "path": "data/resume.json",
-      "bytes": 342826,
-      "sha256": "71ebab9117fb700e6df53026ceb1d811302ad623f8fb34417d7fd5f63826a821"
+      "bytes": 343564,
+      "sha256": "e088fdfee5cc40f65c893a79d4353ed4c20ef7b504fa93c30000c9357e5f8edc"
     },
     {
       "path": "data/scholar-readiness.json",
-      "bytes": 387202,
-      "sha256": "6692ecbcfb32d2e2d1044afd25666b8d43f68504741bb1759d96ba772bf0770b"
+      "bytes": 388926,
+      "sha256": "0d35d3ed3c6b12748c66502226fc493000c323db312b34227a6d574a222b7f6e"
     },
     {
       "path": "data/scholar-snapshot.json",
@@ -11847,7 +11867,7 @@
     {
       "path": "data/software.json",
       "bytes": 83535,
-      "sha256": "9e02ef6059e42236809c426c9cad5846d94edcb1b4f45f189bc90cd7a2f6a7a1"
+      "sha256": "10e281bae17c2d2bdc56e98a45607ec74d6be5c07963894e6e94cc3fca9aee90"
     },
     {
       "path": "data/verification-log.json",
@@ -11892,37 +11912,37 @@
     {
       "path": "data/videos-index.json",
       "bytes": 303684,
-      "sha256": "d25166f71845fc2968446b43b646024b8f1a2b3928b2d76dcaea537320e7dd39"
+      "sha256": "e69b9ca29ec4c666df32d14e4e0a2771a40e151fb5c53d2f4b00660f51b55161"
     },
     {
       "path": "data/videos.json",
-      "bytes": 3636399,
-      "sha256": "3996db47051556edb4d8f6022096dac54eef9e3830ff6e1245bf347cafbfc5ef"
+      "bytes": 3636351,
+      "sha256": "c1fb7a1993071b38f08a7df3d029f94e4535e14abcb77eab8776a1e49b9a7543"
     },
     {
       "path": "data/work-authors.json",
-      "bytes": 168206,
-      "sha256": "cdc1dd6eb16819b117638c52052fbae2f69fbff6d9f3687d579aab50cede1da6"
+      "bytes": 168694,
+      "sha256": "64f68760c009c027894c8f25dc44298337b4a99f32771dfaadc66bce0d1f237f"
     },
     {
       "path": "data/work-enrichment.json",
-      "bytes": 813134,
-      "sha256": "37eb29ad1c8f30c6a3c37804d3846430f154783c86b713f13ec0550fb1217407"
+      "bytes": 816997,
+      "sha256": "42530d9d2520aa565ebe11fbd74d15b5216fc8875fb51e04370acc2c3ec36e2f"
     },
     {
       "path": "data/work-identifiers.json",
-      "bytes": 26529,
-      "sha256": "50bf6ad1ba0af743728838ea00b9acc521ef55f15354e0a93a2e1a215cbb97ba"
+      "bytes": 26643,
+      "sha256": "729f08952871a1a72cd08e0a13e848e1b388dce45948b3c8b9075bd6f39e5633"
     },
     {
       "path": "data/works.json",
-      "bytes": 183618,
-      "sha256": "9327110db9f9dddd638e50fd0248d1f2ed7046d4ae37111093374fcf7bb77689"
+      "bytes": 184356,
+      "sha256": "32212d11564b45b2a6987cfd5287006822845c60752d07df99fab4012c03b20b"
     },
     {
       "path": "discovery.html",
       "bytes": 33521,
-      "sha256": "0cb2dd8d62ff5888ae8305354baa2f5ce1a293363a81d870410364c60b5dcc6d"
+      "sha256": "7718d820b6f655679400a9dae9db649fa5720b0be38ab837f8879aa70b310852"
     },
     {
       "path": "docs/AGENTS.md",
@@ -12161,8 +12181,8 @@
     },
     {
       "path": "docs/operations/publication-sync.md",
-      "bytes": 32385,
-      "sha256": "82fb4decf46d1d0f649b313660442838f8a2ed777ed84ba0e0f1f61a9d31d5ab"
+      "bytes": 32681,
+      "sha256": "a574020b1bf7ba0637bd79e896ec2e3517b17cc74dc0923cd3b969245a67c8e1"
     },
     {
       "path": "docs/operations/regeneration.md",
@@ -12186,8 +12206,8 @@
     },
     {
       "path": "docs/operations/settle.md",
-      "bytes": 16693,
-      "sha256": "6fd65aa0a81cc2209a84119f7313c177a917be6bb410693d0d9a89d4b23a3928"
+      "bytes": 16930,
+      "sha256": "7a34603ed08879e03f723ef315d7f113a9f9064a99cfd77765bab5e74d5e889e"
     },
     {
       "path": "docs/operations/site-runtime.md",
@@ -12252,57 +12272,57 @@
     {
       "path": "domain-active-inference.html",
       "bytes": 38431,
-      "sha256": "aa963bbc11fb316af653812d3cfe26344c2c4d4bda2ff1d15acec9cf5f507865"
+      "sha256": "cce3c70bcee8cedf922d130a328cf1f8cf11560a60fdb713ce92380749dfd0cf"
     },
     {
       "path": "domain-aii-ecosystem.html",
       "bytes": 27462,
-      "sha256": "000996814a29eadcdf9cf0b7357ed7d6b20a4263e8026e0bb9528611df2ff3c9"
+      "sha256": "ada11c0a9e7dbb9746d3b5b84854e415db4ce0dd0f1ac82df3de644a6125e019"
     },
     {
       "path": "domain-art-synergetics.html",
       "bytes": 34123,
-      "sha256": "9c9292b691331ee8c41d714a4f5f4b818e57e47713557d34f97a78e9136b9bd4"
+      "sha256": "806d0602800614435c380416d33380496c4d83fc9a4d8cecc3748b9a54383419"
     },
     {
       "path": "domain-biomedicine.html",
       "bytes": 32721,
-      "sha256": "ea1a57b68c60f8b5f32cd986480a8607f9f3d3f5142357db4ec846c9c654c8a1"
+      "sha256": "e2b2341a2337543bf5f9837a244c13eaf2ff1b79c74f1d417569dd89cba7d794"
     },
     {
       "path": "domain-cognitive-security.html",
       "bytes": 33271,
-      "sha256": "76e3ccf947d4250c626a6a553e048c59f2cd492a12544cc9342f834e6026836a"
+      "sha256": "4fb77512e571417fd1711555b0ad619ec2d4360eb88f11b98e90670d8806cfd9"
     },
     {
       "path": "domain-computational.html",
       "bytes": 36250,
-      "sha256": "3b3dff0be5603d65fecd481594c99fad2e410d71e2b019c379600ef9e5615291"
+      "sha256": "9e3197898df47dab657d2a4102bc7f417a0be43a0f4482892c38937654d1f3e2"
     },
     {
       "path": "domain-entomology.html",
       "bytes": 35087,
-      "sha256": "cc93c8a9c2a86f5efabbf4752b61f55c97793359d9275d7710e40433fd831d43"
+      "sha256": "fe65fc04420790624618c4f117852305f61688634cc8860a5613907a47039d7d"
     },
     {
       "path": "domain-presentations-media.html",
       "bytes": 29911,
-      "sha256": "20fdd9dfa72370d4cf5237e3c471e473ffd9024d959726c2dc17bbee49548ee0"
+      "sha256": "5e1d0e77fb1a37404020b67ecf1d625a92336d797678bcdbda9ce8c8c83c6b8a"
     },
     {
       "path": "domains.html",
       "bytes": 15232,
-      "sha256": "cf7fbb5e0abe3bbfa20a6a6467ba84453e473d170447ff8984d5d28d059bdd1f"
+      "sha256": "6cf9754bfe56fcd7a07b96127d32c61adbec9b8a0d392bab7f51d9a91c519fcd"
     },
     {
       "path": "evidence.html",
       "bytes": 21727,
-      "sha256": "ef01ae6f8cf305b2409571e7614eaab67914d064d37807ab93caac6ab9012d3b"
+      "sha256": "264dfdb0316dcd479b18d8711b2c1d93ef9a4836344e3e70dfc86f5eacdbedce"
     },
     {
       "path": "exports.html",
       "bytes": 15140,
-      "sha256": "9e9a7e72de32bebff8225c162346f87bfc42abd2b7a210ee2b48eeffe2e61f43"
+      "sha256": "7c4ea78462cfd19e31dcd62a15807b9d0824329d7993e851d555b63fbd7a1c74"
     },
     {
       "path": "favicon-16.png",
@@ -12321,8 +12341,8 @@
     },
     {
       "path": "feed.xml",
-      "bytes": 13003,
-      "sha256": "557576b70f5704030e8918e20eb174910b546cfc1bd67692958912acff02df18"
+      "bytes": 13001,
+      "sha256": "02c81487560761d5316e6d8478417746c4df913fa17f29b75e0c7515688b702e"
     },
     {
       "path": "feeds/AGENTS.md",
@@ -12361,8 +12381,8 @@
     },
     {
       "path": "feeds/domain-computational.xml",
-      "bytes": 12434,
-      "sha256": "5cea8dd94219ab4baa184686a3b80da5c29c45532491b7b5fbdc28c45b88d244"
+      "bytes": 12410,
+      "sha256": "1d0ed5072a4134b291b0a4b07602e6dee4c314572498fc06296aac81dff9082e"
     },
     {
       "path": "feeds/domain-entomology.xml",
@@ -12387,7 +12407,7 @@
     {
       "path": "index.html",
       "bytes": 45424,
-      "sha256": "79090c593c2c1d0c48fa466f35eb88d1b483d0415f0df7f9ed26e1dcdf86b32c"
+      "sha256": "f9b1c5a5e5103aaa308c319550f5a3e162af1c093b97d41a357a40703297dbf4"
     },
     {
       "path": "insect-cognition.html",
@@ -12476,8 +12496,8 @@
     },
     {
       "path": "llms.txt",
-      "bytes": 12092,
-      "sha256": "6de2c4b96cf4e0546ffe186c2b0323fc17b10f2419301e4dd6fe95f4bb4891a8"
+      "bytes": 12521,
+      "sha256": "bd8cb2f737cdf26e160263a5e6d48f51fb2048cf04660b86785332584ad4a337"
     },
     {
       "path": "manifest.json",
@@ -12591,8 +12611,8 @@
     },
     {
       "path": "og-publications.jpg",
-      "bytes": 100997,
-      "sha256": "f1c375068564cba0bbcbdd094150dccff94c27a466ba4c871d64c06863a252c1"
+      "bytes": 100890,
+      "sha256": "bd1438b78d424d9c7b94cd65a7bebd72d63f5a1f5d992425415a5533a3703e5b"
     },
     {
       "path": "og-software.jpg",
@@ -12616,8 +12636,13 @@
     },
     {
       "path": "pages/BIBLIOGRAPHY.md",
-      "bytes": 75665,
-      "sha256": "ccef6ac3ae5b8746ff94901b53f234a6ae5985b2e7dc6e4d1cbf196f7f617b58"
+      "bytes": 76107,
+      "sha256": "ac3effbe18a5179d6f38297ec0ad2c743ac0ec2a94ab49261d5eb15585c8d522"
+    },
+    {
+      "path": "pages/BLAKE.md",
+      "bytes": 11488,
+      "sha256": "2d4326e8f1203ab3a3ec4ab1aa84105dcbddac040909986b44c5b53a191b17db"
     },
     {
       "path": "pages/CITE_VERIFY.md",
@@ -12637,12 +12662,12 @@
     {
       "path": "pages/DOMAINS.md",
       "bytes": 25472,
-      "sha256": "166de12511466ae91f4ede3b66e57133caf5623f213c0d50197cc703713bae34"
+      "sha256": "e8f8c19b8f45c88068db8751282fa1a0bdcc4e3a77294d86a57e7d2d44307d6c"
     },
     {
       "path": "pages/EVIDENCE.md",
       "bytes": 10586,
-      "sha256": "f8df2c2f3d7d76e69d32a749710025b88b60b0b6b22a63b30d4e6c2b725b633b"
+      "sha256": "d7d43d7a7da1fc3f1479ffb0b7c6bdda5d9194b2fc9b96971dce0cc458189674"
     },
     {
       "path": "pages/LINKS.md",
@@ -12661,13 +12686,13 @@
     },
     {
       "path": "pages/README.md",
-      "bytes": 4967,
-      "sha256": "a9ae58b123c94a1c02fe72ab553a642d5680fb2c4486676d659bbe3a3bfddc8e"
+      "bytes": 5133,
+      "sha256": "85802a0d360c2e4b111f15058c06617f828273591cbb4ac1f59ce1e99a01ee93"
     },
     {
       "path": "pages/REPRODUCIBILITY.md",
       "bytes": 5438,
-      "sha256": "e1f646585ed0626d6771469641018d9e1307524b05dfd70f41dfe1947ad121b5"
+      "sha256": "7ca08cb58b90d6e81efc14d2992b6f7d4c287174c87e375ffe8b97ddc9be298c"
     },
     {
       "path": "pages/RESOURCES.md",
@@ -18300,6 +18325,46 @@
       "sha256": "cae2f430cf8108405f11f92d33db7d43704abba082c22c5b65f2751b0edc6b36"
     },
     {
+      "path": "papers/2026_ActiveAssemblyTheory/AGENTS.md",
+      "bytes": 633,
+      "sha256": "c950b56ed3de00c8c782098f3e97449ce783d66c47000d41efa6d1f0159444f4"
+    },
+    {
+      "path": "papers/2026_ActiveAssemblyTheory/CITATION.cff",
+      "bytes": 971,
+      "sha256": "74671ef83e92e1376384f2f31524a9a703746d4b1bba2fe61086ce1c9bd71bc4"
+    },
+    {
+      "path": "papers/2026_ActiveAssemblyTheory/README.md",
+      "bytes": 3906,
+      "sha256": "738b52cfc13610f01ca4e46f87e3babacb78b2c109e32ec619b5d229e50a69c2"
+    },
+    {
+      "path": "papers/2026_ActiveAssemblyTheory/SKILL.md",
+      "bytes": 2449,
+      "sha256": "d6236a45293f5369d498919952106c573e2c1e5ce37450ce10c3d85398b669b1"
+    },
+    {
+      "path": "papers/2026_ActiveAssemblyTheory/active_assembly_theory_and_practice_combined.pdf",
+      "bytes": 18929532,
+      "sha256": "b561d54eb82b309ab32e3ef13e6ad1e5aec99eeb11b6ce033b64d88be6ccf99c"
+    },
+    {
+      "path": "papers/2026_ActiveAssemblyTheory/full_text.md",
+      "bytes": 226836,
+      "sha256": "f767340e6e70fa19a757d8d492816cd70d0a183b7d4ffb726b195634a492fb8b"
+    },
+    {
+      "path": "papers/2026_ActiveAssemblyTheory/index.html",
+      "bytes": 12697,
+      "sha256": "2fc6f4758ac99bccd7b40c4c557d01aa33c0f48ffb28e9a1d268c5ab9c11a6a1"
+    },
+    {
+      "path": "papers/2026_ActiveAssemblyTheory/metadata.json",
+      "bytes": 5677,
+      "sha256": "9d2eaa1384da3b4185358d8925b7397087f8371515575347390e1e85adcf6f82"
+    },
+    {
       "path": "papers/2026_ActiveFractalRabbit/AGENTS.md",
       "bytes": 2097,
       "sha256": "b05a2c2ff31e61be80643e91bae7848d32731af3e430b2590ed9215769ada638"
@@ -22536,8 +22601,8 @@
     },
     {
       "path": "papers/README.md",
-      "bytes": 20116,
-      "sha256": "2bae48b144d8cd2602aadc26383e69651f5ab5eb9e006866d8adb07400004a7e"
+      "bytes": 20218,
+      "sha256": "5ebb8601a10a72e59bad3232949c39c280befd94850f4ec47c18334d0085d408"
     },
     {
       "path": "papers/generated-documents.json",
@@ -22546,8 +22611,8 @@
     },
     {
       "path": "papers/paper_metadata.json",
-      "bytes": 569230,
-      "sha256": "68f026ef48521f5d8d9a9854fef1a934139390eab6777129da3d5a27e60925f0"
+      "bytes": 575540,
+      "sha256": "294e318541142dce6884f05816630df9daaae9e123d4798a77ee7d847e3b7558"
     },
     {
       "path": "projections.html",
@@ -22556,8 +22621,8 @@
     },
     {
       "path": "publications.html",
-      "bytes": 359671,
-      "sha256": "db0239c2b9acf3d21c98da4a044558e3acca094e23d52a2af8b23ae117f3c3ad"
+      "bytes": 360995,
+      "sha256": "3946d695c6f2b97256b4fd67943326f5f0f5102167c3db9333121466a673a440"
     },
     {
       "path": "pyproject.toml",
@@ -22581,8 +22646,8 @@
     },
     {
       "path": "reports/accessibility_static_2026-10-22.json",
-      "bytes": 1757791,
-      "sha256": "1a107a310c6e08c9e6cb78c0058a27a4e49ae955333882b27bdf95a3e31e2d86"
+      "bytes": 1759162,
+      "sha256": "b8fde7ce7cf24ebc2d9a8c6ed8394a56917569c8a94b8d427bcd1cb3a1b232ef"
     },
     {
       "path": "reports/ambiguous_pairs_triage_2026-06-26.md",
@@ -22712,7 +22777,7 @@
     {
       "path": "reports/current_counts.md",
       "bytes": 4997,
-      "sha256": "9cbbbeb0f8aa76e49bd8d77d47e9e0d0edd6c29bd3ee1d083d9f1eb45abef6b9"
+      "sha256": "42daa7b6d41b616bf8cafc90ec601cdff5baed8d516b5ad731d5a32efdd3f8a2"
     },
     {
       "path": "reports/deployment-attestations/0febd8e0871d8a88174a40aae867e5681cf670ba.json",
@@ -22756,18 +22821,18 @@
     },
     {
       "path": "reports/external_links_2026-10-22.json",
-      "bytes": 464404,
-      "sha256": "3105e9bcd2a892a3ef937210068d1342acbdcc3253189c2381ecb2f16b1e11e0"
+      "bytes": 417239,
+      "sha256": "b85473826d7fd1f0e24a44aeb5c2ec63eeb8e6b1e80e3e144d72b662159f75a7"
     },
     {
       "path": "reports/external_links_triage_2026-10-22.json",
-      "bytes": 68322,
-      "sha256": "37733786b851ad552c1ea554a3bd43a0d9bf4f783cc25b69e1d18337b489452b"
+      "bytes": 64835,
+      "sha256": "f49ae73e1136d203a83e434ee256d9443927fb955644e00199010ee9cac9beee"
     },
     {
       "path": "reports/external_links_triage_2026-10-22.md",
-      "bytes": 10748,
-      "sha256": "d6742cc0d37ee87b7bc2bbf44d08aeabf25f77af6c27f64d36baefec39866293"
+      "bytes": 10677,
+      "sha256": "99a7f578fd79b32f10cdb9bb248acca67ddf7b4a4a2a89ef6e003ee2e986a0f8"
     },
     {
       "path": "reports/github_catalog_metadata_review_2026-10-16.json",
@@ -22935,6 +23000,11 @@
       "sha256": "ed389025f5c9e2988a0a47273915772ee09b14564a16e289af313087538ea7bb"
     },
     {
+      "path": "reports/publication_discovery_2026-10-22.json",
+      "bytes": 652364,
+      "sha256": "170479f132a08aa6115d29c4cd97d12f2fb90c0a5b7b5f42e45b9411e51c42d5"
+    },
+    {
       "path": "reports/publication_freshness_recheck_2026-10-17.json",
       "bytes": 16921,
       "sha256": "6b78a519056b78be3e4a5b5c10b52b94ee5846ab5821c1ad1af6856a8a6aa9b0"
@@ -22957,7 +23027,7 @@
     {
       "path": "reports/reconciliation_2026-10-18.md",
       "bytes": 2032,
-      "sha256": "62599b3ed9adb7b4b18bab208c6ae2c0984718cffe0940ec6ca51c2f733ea600"
+      "sha256": "6167a12014c89d5e0e7656e1516ae7cdd193970ceb7d10f38309722571876db3"
     },
     {
       "path": "reports/repository_catalog_review_2026-10-16.json",
@@ -22976,8 +23046,8 @@
     },
     {
       "path": "reports/scholar_readiness.md",
-      "bytes": 44055,
-      "sha256": "bd113723364f724b40770939d3dd6567d6cb463fed7b83f09cce0f531ad9439b"
+      "bytes": 44229,
+      "sha256": "62e17d9520849e4e51eeed8ae6eed06921a0b9e2c35b3bb0f458a5b54bc86bb4"
     },
     {
       "path": "reports/seo-discoverability-audit-2026-06-10.md",
@@ -23035,9 +23105,9 @@
       "sha256": "30677a7641684558aa6678a6b17c3917c200b5cff14ca83ef684d2ac08c3da26"
     },
     {
-      "path": "reports/zenodo_uncatalogued_2026-10-18.json",
-      "bytes": 2054,
-      "sha256": "6851d211c70a46d9d82f1ad642bcb33dbaa603395fef716806b2bf027806514a"
+      "path": "reports/zenodo_uncatalogued_2026-10-22.json",
+      "bytes": 2070,
+      "sha256": "dc71a9a5203760da5fcd967c5209219ffa9e06bd05f6369d30cab6ea4240d4ee"
     },
     {
       "path": "repositories-forks.html",
@@ -23052,7 +23122,7 @@
     {
       "path": "reproducibility.html",
       "bytes": 17548,
-      "sha256": "bea3c44932fc9a8f5838e4027ac0b50f496e2019d72d78f92c0214b379f3b55b"
+      "sha256": "7739478e2b85eb73c9ce23c89a237dfbf8fd0ec4c38f43d5568d098b8abcd9bb"
     },
     {
       "path": "research.html",
@@ -23071,28 +23141,28 @@
     },
     {
       "path": "resume/academic.txt",
-      "bytes": 70692,
-      "sha256": "2bb9df1c437578cc3786412a12bc236587577a8ae1dd264e46a57285b1ab4328"
+      "bytes": 70784,
+      "sha256": "3e20bf1b4789739ad08053a33ef09bec4dab5b9d72616216c29e87c5d6ce32fc"
     },
     {
       "path": "resume/full.txt",
-      "bytes": 101240,
-      "sha256": "dbab4adfa3e333d5bd2ef2ca051712650ea9bca9a7b2dd944bf26407811d757e"
+      "bytes": 101332,
+      "sha256": "aa0beb4d57519aa44bf95e9b561127e0c761709a0a4735d1c051374614760b0b"
     },
     {
       "path": "resume/resume.html",
-      "bytes": 169568,
-      "sha256": "4a9490b284566e520cac1fb0a8565d34d02c49ffd2f3e91630fe3b56088512e1"
+      "bytes": 169784,
+      "sha256": "cdd2ca9f6600ddf13bdb5acebad870e015b52f04731397aa10c922bcf61b5ded"
     },
     {
       "path": "resume/resume.pdf",
-      "bytes": 382181,
-      "sha256": "0cbcb346d5498e208918125f6c460e2c1f4d1a1bc946c9063b833317a2502f49"
+      "bytes": 382490,
+      "sha256": "dddf76ef169d9778f9a52e2f2abebc65e4cd63effb673ce3c397bbd850e3b4a4"
     },
     {
       "path": "resume/software-consulting.txt",
-      "bytes": 77766,
-      "sha256": "cdd36ca92c0e56f0762124768fd2a0993157fa2174ebd1da8edd69baae6d4426"
+      "bytes": 77858,
+      "sha256": "4e421d6cba5444acf879534bb2c4649812aa2133b859cba2f3659aac2d5ab9ae"
     },
     {
       "path": "resume/source.json",
@@ -23102,12 +23172,12 @@
     {
       "path": "resume/teaching-service.txt",
       "bytes": 27070,
-      "sha256": "d417adfe0b4b3fac04854973fb4b04f1505b1b96dc5b07ceeb56749bdce51114"
+      "sha256": "69376cde6a3196ba55316aefd0270aa70f9eb5228aaaa13baf26935b5156c5c2"
     },
     {
       "path": "resume/verify.html",
       "bytes": 11661,
-      "sha256": "04fa464fec413a0b3d563efc9570844f8cdbbee3b28391202e6d14bb74075c26"
+      "sha256": "4628393f05e2d313fc8a01302c9267670833af4715a80322cdea22df9048129a"
     },
     {
       "path": "robots.txt",
@@ -23117,27 +23187,27 @@
     {
       "path": "search-index-bootstrap.json",
       "bytes": 13936,
-      "sha256": "f3d36a6c47cc0036ce09fe6e0269eea074ce541c016138df705770f3458c519c"
+      "sha256": "f0d151093a61f7685f546170a8899af0dae9f72f961d98eb3e7972c9151b3017"
     },
     {
       "path": "search-index-content-video.json",
-      "bytes": 1056234,
-      "sha256": "c9fada2693de5e640265d35ea2e75fec8e905ccecd0d7baf7d34e8e83b2b6e3b"
+      "bytes": 1056158,
+      "sha256": "9c27cd39bad084345c3c9cb5df04d9ca2f03cce0035d83a4172e9b233ef06b82"
     },
     {
       "path": "search-index-content-work.json",
-      "bytes": 838746,
-      "sha256": "d81cc4abaad014c0972575a01f766ef4e8c2938ddb7dab431b9103c7a3ab4369"
+      "bytes": 842686,
+      "sha256": "829db5db130d6e7b4d2f51fb3d6e30922d2d662c0d47ed61c0cb63ba4ec51517"
     },
     {
       "path": "search-index-core.json",
-      "bytes": 1821793,
-      "sha256": "cd68c0d671d50c5c01868345ae25a29849175d19bc8eff7c3ff68a18fe8fb1d8"
+      "bytes": 1822522,
+      "sha256": "911dbd35eeb5ff0f0e0a378a57f1877cae1c6a7b1cc9c61bec51c8e08ec7dc35"
     },
     {
       "path": "search-index.json",
-      "bytes": 3031122,
-      "sha256": "68e7b5cb35bedf6524c2eb2967fb4f61ae4a82084d8a1e5a85f6eb23e9bbfb25"
+      "bytes": 3034986,
+      "sha256": "c3dff222f477278936e4b119c59fb0c64b483a473c72289c087d1689527d6735"
     },
     {
       "path": "search.html",
@@ -23151,8 +23221,8 @@
     },
     {
       "path": "sitemap.xml",
-      "bytes": 427015,
-      "sha256": "f11495e1850d19b8979ba6f94ece58343c94cc1b6365297368eb429aaa39d8c7"
+      "bytes": 427209,
+      "sha256": "36bb3007174f1f8c585dfe9367852eecdc7265c6ce09dd262100e261b4245e93"
     },
     {
       "path": "software.html",
@@ -23162,7 +23232,7 @@
     {
       "path": "start-here.html",
       "bytes": 17473,
-      "sha256": "21b577156bffc37a5e16cdf8a73724b51283163da83e4b09cf2ab31a14423d8c"
+      "sha256": "f428889c8a7f4e8c9a43113c0c941ee689dcd3c6f8346443773e2f46975df119"
     },
     {
       "path": "style.css",
@@ -23176,8 +23246,8 @@
     },
     {
       "path": "updates.html",
-      "bytes": 214289,
-      "sha256": "b02c59c8e4183812f9e54ab3ca80c0329d3c01b50b32f69331711dcd9d731019"
+      "bytes": 215816,
+      "sha256": "805a681d25cbbbcd4d92d6e856d36e7775599b184a3b3fbd58494887fd12dd01"
     },
     {
       "path": "uv.lock",
@@ -24991,8 +25061,8 @@
     },
     {
       "path": "videos/institute-TsQQX3ZdEmA.html",
-      "bytes": 13610,
-      "sha256": "77af0585cbc574395b994a729ede7f0b8721b47d2fa79eee127ca1ed774db84d"
+      "bytes": 13637,
+      "sha256": "20f68f9449c95219352dc0c9d0570e47a9858d6f74ff6cbbb55fdd03051e2045"
     },
     {
       "path": "videos/institute-TubYmyvsynA.html",
@@ -25046,8 +25116,8 @@
     },
     {
       "path": "videos/institute-ULPPTRUvmg4.html",
-      "bytes": 14322,
-      "sha256": "125481a8710cf516350eb21da8b15b9b81db2322f8f4671a733bd3d0ccd38f1d"
+      "bytes": 14323,
+      "sha256": "439b0c1fc227d8c3bddbbcb6b77371a27f05cf64003560195c56ad5ec33825e7"
     },
     {
       "path": "videos/institute-UQGvfgp0bq4.html",
@@ -25286,8 +25356,8 @@
     },
     {
       "path": "videos/institute-YvnvWzHTQu8.html",
-      "bytes": 14289,
-      "sha256": "eab847e689c39a4e2428abf7400c327dadc486ac65a257a8523d8805737d1a5f"
+      "bytes": 14258,
+      "sha256": "58a6523eecf72b45aceb1c500180be3d916b42b47210352463ea829aa8eb3664"
     },
     {
       "path": "videos/institute-YxrIbWTjSp4.html",
@@ -26441,8 +26511,8 @@
     },
     {
       "path": "videos/institute-qUJK1IDxKzg.html",
-      "bytes": 13548,
-      "sha256": "28c3a0abf76a019dc81b5418370e1377dd9efbd7f77975d87a7516ffe2a9af50"
+      "bytes": 13549,
+      "sha256": "a5f756bfaccf1e4045b97ee7f8919172de820a4c49735d301f2d61c49f2c0761"
     },
     {
       "path": "videos/institute-qYImZ0Gk298.html",
@@ -26611,8 +26681,8 @@
     },
     {
       "path": "videos/institute-skf3sOM-7WI.html",
-      "bytes": 14047,
-      "sha256": "3c9d5aea890c6bbe8e1fefcb2bb5c507b8a866cceba8b228dcadb60441e20138"
+      "bytes": 14010,
+      "sha256": "dc0b2f969670991ff59013faa5addcec90b005a76d6c48f534c8ced3a103dcfc"
     },
     {
       "path": "videos/institute-snOZwtTgX3Q.html",
@@ -26716,8 +26786,8 @@
     },
     {
       "path": "videos/institute-uX8iSoDR83g.html",
-      "bytes": 13717,
-      "sha256": "7582dcb948ac873f11cb439645225585afc0a3b591c0d5c2ac0ac3ca601bb2e3"
+      "bytes": 13680,
+      "sha256": "f8b62d155e5b83cc8ab707b8ffd573a0db06789ca39b8e1fb7eb5c3ef3d75d05"
     },
     {
       "path": "videos/institute-uePR4DQv0yI.html",
@@ -28426,8 +28496,8 @@
     },
     {
       "path": "videos/personal-h7e_F9fLJqE.html",
-      "bytes": 13315,
-      "sha256": "4e93a2a7ec887df121b99b9dcf4e9871d5189b0965b2ac8d8e40044caaccfb53"
+      "bytes": 13321,
+      "sha256": "76450a5689bea8f5d19e1b2701ee27186b5d4aa65a44138d773c6d1485dbe6a7"
     },
     {
       "path": "videos/personal-hQC9IcTExaI.html",
@@ -29491,8 +29561,8 @@
     },
     {
       "path": "works/Friedman2023EnhancedNSFPostdoctoralReporting054.html",
-      "bytes": 22335,
-      "sha256": "1640e443c55eb1f7968b9c8161f30dfede1334fbd29fb7086a931a62ab4763d5"
+      "bytes": 22323,
+      "sha256": "d2e7fa139aa019edc8cbd9eca0b788b084de5024202d31e2b86613467a8b4e29"
     },
     {
       "path": "works/Friedman2023ExperimentalEntomologyAgeVideo055.html",
@@ -29521,8 +29591,8 @@
     },
     {
       "path": "works/Friedman2023NaturalAIBasedScience135.html",
-      "bytes": 26835,
-      "sha256": "7d63a84c24a618247121c1088aa1b85f96d291dd936329da268dfc161dcddda1"
+      "bytes": 26823,
+      "sha256": "2262c65f78a3caeadaf72aa5fc85c368e7d3de3f4abdd9f15621de97763ba3c4"
     },
     {
       "path": "works/Friedman2023OpenAccessScienceNeeds059.html",
@@ -29676,8 +29746,8 @@
     },
     {
       "path": "works/Friedman2025AdaptiveBasicIncomeAuBI009.html",
-      "bytes": 25335,
-      "sha256": "a538309da7363396279ea3d8fcb805a29c1d3419d6cc39eddd9c91fadae47543"
+      "bytes": 25323,
+      "sha256": "d5053daf048ffe14d7c762ccbe16ae92e67ad760b4a74196c6488444e74a6838"
     },
     {
       "path": "works/Friedman2025AntStack025.html",
@@ -29686,8 +29756,8 @@
     },
     {
       "path": "works/Friedman2025BeaconsPreEmulationSocial132.html",
-      "bytes": 21562,
-      "sha256": "afcfe9eacfc292a65375342482ca2ba1859627f55db9a62032706c662b9c888c"
+      "bytes": 21550,
+      "sha256": "c9761698831b4d15f37bdc5f1519b3074dc05132043376d969aa525f831fdf24"
     },
     {
       "path": "works/Friedman2025BevCycPositPrimitiveDrivers131.html",
@@ -29716,8 +29786,8 @@
     },
     {
       "path": "works/Friedman2025ConCatEnateEmulation129.html",
-      "bytes": 22514,
-      "sha256": "582618257a3bcfe9a5c6de64d22edf983d42641e8ebebf074ea08f7b214d68dc"
+      "bytes": 22502,
+      "sha256": "119021cc39be3bbd902d048d9b702ccc02f6bc9d6389ebbad6dd3d4d408fb638"
     },
     {
       "path": "works/Friedman2025ConCatEnatePilot133.html",
@@ -29726,8 +29796,8 @@
     },
     {
       "path": "works/Friedman2025DiscoveryEngineAIDriven026.html",
-      "bytes": 28045,
-      "sha256": "4a4cebd859df84457bd9b9edd9831d03c28050b7b15914e7d8947e81e3b5afeb"
+      "bytes": 28033,
+      "sha256": "3e990fcc88e42c8640b6d8a262746c89ee9df097b8d6de5338bd0f44d92cd624"
     },
     {
       "path": "works/Friedman2025EvoJumpStochasticModelingEvolutionary012.html",
@@ -29746,13 +29816,13 @@
     },
     {
       "path": "works/Friedman2025MDKVMultitrackMarkdownContainer014.html",
-      "bytes": 25055,
-      "sha256": "cdc4825379eb4fbda0ba4f5396dbbd8900b6886632e95890e231cd9004c147a5"
+      "bytes": 25043,
+      "sha256": "d7ce99bc5047508bc03692dbbd19856e00de842940c24889a4faa0ebcbe75539"
     },
     {
       "path": "works/Friedman2025MarkdownDecisionProcessFramework015.html",
-      "bytes": 24620,
-      "sha256": "90e8d39b00142610997466ba2dbbbdee888cb07afa4bebae2874cc76ffcbb304"
+      "bytes": 24608,
+      "sha256": "98ae4acb15eff7503b9c583d169609c0e33fdc61f0cff5d2403d0e9c59ff4d04"
     },
     {
       "path": "works/Friedman2025QuadMathAnalyticalReview4D018.html",
@@ -29761,8 +29831,8 @@
     },
     {
       "path": "works/Friedman2025ResNeiSolutionDesignDocument019.html",
-      "bytes": 26433,
-      "sha256": "9278efb8c55584c89c4c5cb64351367d40f44d420c64d97a9e68d07081d95bef"
+      "bytes": 26421,
+      "sha256": "ac0ef485c837155d3df9afd19bfeccb22b8f676bf9a0f1521853e7b18ccae784"
     },
     {
       "path": "works/Friedman2025SymergeticsSymbolicSynergeticsRational020.html",
@@ -29801,8 +29871,13 @@
     },
     {
       "path": "works/Friedman2026AGEINTAgenticIntelligence170.html",
-      "bytes": 40491,
-      "sha256": "7616d1e5cd37819126f2d23f1fbf221818b5ae39c77794c57354527101ea3780"
+      "bytes": 40479,
+      "sha256": "20e26b06c3593130185ff30955661aef38d88eb262e7656e95ab17c59cafc398"
+    },
+    {
+      "path": "works/Friedman2026ActiveAssemblyTheoryPractice228.html",
+      "bytes": 24788,
+      "sha256": "b0614bca92de1a543f807763b48dc26e523fc7e118f675b6979653a51f28f93f"
     },
     {
       "path": "works/Friedman2026ActiveFractalRabbitSyntheticBenchmark195.html",
@@ -29821,8 +29896,8 @@
     },
     {
       "path": "works/Friedman2026ActiveInferenceMultiTrack124.html",
-      "bytes": 26034,
-      "sha256": "8d8a1eed09c08ee48c345115d1183c5ae6c1ca625fd9d621abac0ea4b9c7dde0"
+      "bytes": 26022,
+      "sha256": "b183e6aa90822621da7c19fae8c080eaf3c07b2df373e40a197bf410fd164549"
     },
     {
       "path": "works/Friedman2026ActiveInferencePowerSuite199.html",
@@ -29841,18 +29916,18 @@
     },
     {
       "path": "works/Friedman2026AgenticSecurityOperatingSystems218.html",
-      "bytes": 31636,
-      "sha256": "a3178f495f585ed4ba6eb74d40938929bc0ab3c964ae0b4e08f4a16ec1c9e615"
+      "bytes": 31586,
+      "sha256": "8e21e6188a0128853c5798fde6669c973f2e21a5968cdbb405b21b57a88d499a"
     },
     {
       "path": "works/Friedman2026AlphaCOGANTRecursiveCorporateSelf178.html",
-      "bytes": 29214,
-      "sha256": "da30cd0ab5aca07c0b542ad376e6a85e573e0b5b00b3ddb56d25a8a84e28cab3"
+      "bytes": 29202,
+      "sha256": "ff7f607bd04359aa52ab623b90f97be87517bdb87df9040ed2965e781f006487"
     },
     {
       "path": "works/Friedman2026AntropyNativeMultidimensionalEntropy226.html",
-      "bytes": 20536,
-      "sha256": "934f665eb67f7680197bd8b2f511acf0031c25ff0ef46b49878b2562a4d8dd21"
+      "bytes": 20486,
+      "sha256": "d5fa1187ae50a8f4584d0d2a747cabc39a95d78a4960306a23048752e7661aa0"
     },
     {
       "path": "works/Friedman2026ArchitectureFalseGodsWilliam115.html",
@@ -29861,13 +29936,13 @@
     },
     {
       "path": "works/Friedman2026AutopoieticProjectGeneration185.html",
-      "bytes": 26620,
-      "sha256": "17ca1cb96188c12a912d3c1c0dadd81634cbf112398aa49dc66c0a6dfd9558e4"
+      "bytes": 26608,
+      "sha256": "fe91409a71238f7695c9b39bb470d8ba452cab7f91f8fc7370b59e48bb54e540"
     },
     {
       "path": "works/Friedman2026BeeStackEvidenceTypedScaffold125.html",
-      "bytes": 25119,
-      "sha256": "8696d46a5ae909e285f672372a7618b9175d873378c12cfe5a31f251d433db2c"
+      "bytes": 25107,
+      "sha256": "33da2a874839c6cc59523b8a2d1f670c67590403b86b42bbc05de62fb31c30d0"
     },
     {
       "path": "works/Friedman2026BeforePragmatismHadName003.html",
@@ -29886,13 +29961,13 @@
     },
     {
       "path": "works/Friedman2026BoundedAutoResearchTinyReproducible120.html",
-      "bytes": 27433,
-      "sha256": "c46cf9e3a82d7d0a49bd76d964e31bd149e36cee8d9e3d3d8bfb21306164c6f2"
+      "bytes": 27421,
+      "sha256": "55a82cd0bf03f4af3a8b16cd5a3b8af0a9cd529ea111cc3b9f00c73a502df578"
     },
     {
       "path": "works/Friedman2026COGANTDeterministicCodebaseGNN169.html",
-      "bytes": 23995,
-      "sha256": "fd735c2bd524f45d2cc404b0e2d1e00664432a8539b46ebabbf480f35727cabd"
+      "bytes": 23983,
+      "sha256": "9aecdd911aab25f287a5735a534e6897fe4eef74cebdc8bcd844a78907183f02"
     },
     {
       "path": "works/Friedman2026CaliforniaPublicRecordsTechnical173.html",
@@ -29901,8 +29976,8 @@
     },
     {
       "path": "works/Friedman2026CodomyrmexArtificialEcologyAgentic206.html",
-      "bytes": 28107,
-      "sha256": "070c3e01495c5f130fd8feece44da5f045421c3cbff827369cd9c9eea1740d0e"
+      "bytes": 28095,
+      "sha256": "97c4da63604f8d92abf7b320b9af09742740fce50a822522b027223edb79dc4f"
     },
     {
       "path": "works/Friedman2026CogSecSkillsMultiharnessAgenticSkills174.html",
@@ -29931,8 +30006,8 @@
     },
     {
       "path": "works/Friedman2026ConvergenceAnalysisGradientDescent121.html",
-      "bytes": 29246,
-      "sha256": "f59b30cee220a860db1f9f8bdfa5652541eb0950b899a51e2b9a5eb2ec834ec9"
+      "bytes": 29234,
+      "sha256": "678aefc875fd8b9bfa65279752a1572a8296055ccb2805d9de95ee41df08613d"
     },
     {
       "path": "works/Friedman2026CoordinatingFieldCaseEcosystem224.html",
@@ -29946,18 +30021,18 @@
     },
     {
       "path": "works/Friedman2026DataDescriptorTemplateSchema192.html",
-      "bytes": 23501,
-      "sha256": "29d0aaf1443f072866d516ecd6465658b8ded8ef9eabbf1f3c67dd25a171a17f"
+      "bytes": 23489,
+      "sha256": "ee852d4cd0ca894d1eaba32062424d1d1504624252bf34f060c1568fac82ad87"
     },
     {
       "path": "works/Friedman2026DemoCreateDeclarativeAudioVisual166.html",
-      "bytes": 24772,
-      "sha256": "c466ac0ca8a64cb0f38d8cff6d1d970714481e9fbdf3f45eb711a1b6c55a6a7a"
+      "bytes": 24760,
+      "sha256": "031bde08c2131f317ba2587d2e0f09f731247d940143c6bbeafc7ca3d9242307"
     },
     {
       "path": "works/Friedman2026DeterministicTestbedSelfOrganizing151.html",
-      "bytes": 28818,
-      "sha256": "0ab6a522be922d45e803071bec1059cc84f4d8c4799ae9dea184112a4bf66a6d"
+      "bytes": 28806,
+      "sha256": "5011562ff26d1201142aa275f7a9c80adadf861a17e2ba9114ff15fbf1a0438e"
     },
     {
       "path": "works/Friedman2026DigiPPPiPDigitalPartnerPen209.html",
@@ -29966,13 +30041,13 @@
     },
     {
       "path": "works/Friedman2026DocxplusIntelligentDocumentContainer212.html",
-      "bytes": 22158,
-      "sha256": "9d53d2446a715af0d0484ee7c0b12c1a992d4831356cd561737a369318f87640"
+      "bytes": 22146,
+      "sha256": "406270ad9bc3683ad7fa8c6ff9230dd7ac3f1adb38fd48ed62477b5d7cb8187d"
     },
     {
       "path": "works/Friedman2026DomainLanguageSpecifyingControlled182.html",
-      "bytes": 28439,
-      "sha256": "1a7cd8f09bd58a2cf373a01ecfe02ea839633e1f12a25f2ea923ee314c852310"
+      "bytes": 28427,
+      "sha256": "275a4bcb658673479d51b8f71ed0f1ab35709594499d8502c75153d017a99a65"
     },
     {
       "path": "works/Friedman2026DoorsPerceptionAreThreshold007.html",
@@ -29981,8 +30056,8 @@
     },
     {
       "path": "works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html",
-      "bytes": 27524,
-      "sha256": "5cd1026aac9a7cb162d0ddde7280f65ff0ea3998b447367adf3a9c5cd90151bd"
+      "bytes": 27512,
+      "sha256": "d7516ae0b3e6c306fd82ce6471b67eb9957e6ad9a602759ce621ab366301944e"
     },
     {
       "path": "works/Friedman2026DynamicAttentionalAgentsFocused111.html",
@@ -29991,13 +30066,13 @@
     },
     {
       "path": "works/Friedman2026ENTOENcryptedTypedOmnitrack167.html",
-      "bytes": 23980,
-      "sha256": "7eb6174720424ba33f8bbcfcd85b6a3e058782b3875391180fbea616901e5990"
+      "bytes": 23968,
+      "sha256": "f25ea62d5aedecf7bfbeb145913bb2062e808cd2567a49161937e5225f0bf429"
     },
     {
       "path": "works/Friedman2026EditorialQualityAtScale122.html",
-      "bytes": 28237,
-      "sha256": "f9ae0f971d07fd4e01f80f7e8346558bdf3e55f5459dcafb74eb0af3a093215e"
+      "bytes": 28225,
+      "sha256": "eef5726bedd24039ed91d19dffadbf12ad1dc8d10f4a9a3c87a58cbf72b3427d"
     },
     {
       "path": "works/Friedman2026EntoLinguisticsLanguageAmbiguity109.html",
@@ -30006,13 +30081,13 @@
     },
     {
       "path": "works/Friedman2026EntomologicalLawFieldMap183.html",
-      "bytes": 26714,
-      "sha256": "e8607f3896446d135e7a7470c975b93b84029aadf457f4b2ac53c3252a0aa8b5"
+      "bytes": 26702,
+      "sha256": "f9f115a075db19039c4b2018b7874124f4ce62171fc92df06ef94e84b120db63"
     },
     {
       "path": "works/Friedman2026ExploratoryDataAnalysisReproducible181.html",
-      "bytes": 25831,
-      "sha256": "4bf0c3ae78dc3423c9380ee987a58ba4ba6cc8e6e522fd8ec4ccf19fa23e95b0"
+      "bytes": 25819,
+      "sha256": "80617b01f949bb44372df1c78f64443a4f83f8db914d61b83317a89b69b70622"
     },
     {
       "path": "works/Friedman2026ForensicAuditMillenniumLeanClay215.html",
@@ -30026,8 +30101,8 @@
     },
     {
       "path": "works/Friedman2026FractiSkillsOnePortableAgent217.html",
-      "bytes": 26209,
-      "sha256": "586e13fe12e455964007ca2f75e1f565920d782a3485ae37880bea5e89208af4"
+      "bytes": 26159,
+      "sha256": "08268cd8e0f005432388c045e132c9c09d0e0bcc59bfc3a846f4d354f479c5f4"
     },
     {
       "path": "works/Friedman2026GeneralizedNotationNotationGNN168.html",
@@ -30041,18 +30116,18 @@
     },
     {
       "path": "works/Friedman2026GoldenLineTowardWhat204.html",
-      "bytes": 22128,
-      "sha256": "0eda42296d9c1373a7ed1a6bdc77ea5e98f37bb7b751af19d4a0251ed861375d"
+      "bytes": 22116,
+      "sha256": "2c9a3e27559b53b8304d97ad70cd5ee5e718b347b02f7ad40006627cd0f71857"
     },
     {
       "path": "works/Friedman2026GreenLineCapacityUnder220.html",
-      "bytes": 22462,
-      "sha256": "9947877690011e8873618da1ca1e673f39e47c21917eb8df01c81b66d0940718"
+      "bytes": 22412,
+      "sha256": "1d9580f1bcf93785f9232205521bd80b676db9aa925bbc25126fda76c49add0d"
     },
     {
       "path": "works/Friedman2026ITraceVerificationFirstWebcam165.html",
-      "bytes": 25394,
-      "sha256": "1c18bc62ae6f1b449a3bb315446bdc19fde1739765ec2238361dc213cf234e41"
+      "bytes": 25382,
+      "sha256": "fa06d46b9d5d6b72275ae5d62298439bb9b064030a4de69a0805f7450bf0f07b"
     },
     {
       "path": "works/Friedman2026IllegalStatesMostlyUnrepresentable191.html",
@@ -30061,18 +30136,18 @@
     },
     {
       "path": "works/Friedman2026IntroductionBiologyGenerativeApproach117.html",
-      "bytes": 24717,
-      "sha256": "4d07466c11d6d02c08ddd81b3c9cee5d91b95afd59977ff38beff64d4cb01e0d"
+      "bytes": 24705,
+      "sha256": "dd107ceebdc28def184d344f41acb6b272457e9a3697cb0b319a748d0b318195"
     },
     {
       "path": "works/Friedman2026JevPracticeComposablePython219.html",
-      "bytes": 25673,
-      "sha256": "330c95cb17d079afa417cddf44fa221b36cdab9d5551b74fda73a37b2a91cc52"
+      "bytes": 25623,
+      "sha256": "8237cd8f56a7f33f75eb65078822ba6a7794a43a5f14be1d10da2bd9b8d01cc1"
     },
     {
       "path": "works/Friedman2026LineSetHoldingInstruments201.html",
-      "bytes": 22292,
-      "sha256": "daa7eb5f9210df016580cf31d0332c0551df7108a8ab68e4732619884dd4b495"
+      "bytes": 22280,
+      "sha256": "55c578776af276e2b930f6b70b2fde16bd90c5043ed47c811eae3f05f307d12a"
     },
     {
       "path": "works/Friedman2026LivingMetaAnalysisArchitecture110.html",
@@ -30081,23 +30156,23 @@
     },
     {
       "path": "works/Friedman2026LivingMetaAnalysisModafinil176.html",
-      "bytes": 28823,
-      "sha256": "1359bb3f4afea81594feb286f3ff2527b1e127e05f79a884d11f7eee423af4f7"
+      "bytes": 28811,
+      "sha256": "3c4e37907845c3b14acd3143b5a9252e0c7b1689cf3e23d1b3fee9e9356448fd"
     },
     {
       "path": "works/Friedman2026MappingWilliamBlakeS179.html",
-      "bytes": 24626,
-      "sha256": "77e36d0b3db8ec4c482f34ac26cbc84198d2fadcc2f8f116674c5a906198a15d"
+      "bytes": 24614,
+      "sha256": "a129467906c329ef2ec5bc06602849afa8ff6cbda794b1cec3f53a7392b619bb"
     },
     {
       "path": "works/Friedman2026MusicNeverStoppedGrateful150.html",
-      "bytes": 29559,
-      "sha256": "16a2823b557c6f4ba6ed3007a9fbf456cf7cab0e1ee0605d6e839010ab112ba7"
+      "bytes": 29547,
+      "sha256": "d2b0e74ca923bf251bbc80c91972995c2d968e1cc1319fd04c74c547c6e1ffd3"
     },
     {
       "path": "works/Friedman2026PROJECTBONDSpecialAgent208.html",
-      "bytes": 25577,
-      "sha256": "8100ecbc8862e1837cac5dd8b09e97b2635ac7154ed5e9ccb851640a92053271"
+      "bytes": 25565,
+      "sha256": "f21cd9a2050b9f59336e4c8b889eea1b05795b0572a699f566468fcfb1affc77"
     },
     {
       "path": "works/Friedman2026PersonalRedLinesDevelopment203.html",
@@ -30116,8 +30191,8 @@
     },
     {
       "path": "works/Friedman2026PolicyEntanglementActiveInference119.html",
-      "bytes": 33894,
-      "sha256": "19db02c4e6a1199e36cd0f6e5771c346251b35d5b6756a8c6417731ec1947b2e"
+      "bytes": 33882,
+      "sha256": "36266b9c933a124f486fd2c60b6d421c850917e65a0e48e0abbd42200b87da8b"
     },
     {
       "path": "works/Friedman2026PoolsRulesToolsTemplate190.html",
@@ -30131,33 +30206,33 @@
     },
     {
       "path": "works/Friedman2026RealizingEmptinessOperationalSurrogates175.html",
-      "bytes": 29372,
-      "sha256": "e10614834095b7627b9fa656cbcbffa8dd973f129b28d2eb27249f0a4f5a13df"
+      "bytes": 29360,
+      "sha256": "8c39c3f71db9f3a2e8c8d77eace40b4410cfbd0f423d4921b2f6c749840c1993"
     },
     {
       "path": "works/Friedman2026RecoveringLLMPersonaAccuracies152.html",
-      "bytes": 28900,
-      "sha256": "4bb4ed6d653d8763b7feb6271a214daaaebab7a783359b9509a891271cffafea"
+      "bytes": 28888,
+      "sha256": "53e745584e7b19d05d4dcd2c3f5aa0677f711ed0c4157dea67abc33fbc4fc814"
     },
     {
       "path": "works/Friedman2026RedactedReportTemplateDisclosure189.html",
-      "bytes": 24627,
-      "sha256": "0ea66967cb12baf245bb0a00bae4e0e475a9f86561ec4c93be03ec6afe10b51e"
+      "bytes": 24615,
+      "sha256": "d937defaa64658fd91a905f5595c8394454d741a6ca9f3fadb8971f896f7a018"
     },
     {
       "path": "works/Friedman2026RefinementGoldMetallurgicalAnalogy177.html",
-      "bytes": 25818,
-      "sha256": "1e62ed0c80aff9b55cd845fdf79e0040aa76ef6e4e1ba2515e68d443f79deb8a"
+      "bytes": 25806,
+      "sha256": "71e3258a3794381cc29fc4891c5c5f73460a39d584f2eefb98ecab6f4ab4f12c"
     },
     {
       "path": "works/Friedman2026RegisteredReportTemplatePreregistration188.html",
-      "bytes": 24316,
-      "sha256": "b98c25654a1cd14f071392af7d24489f6734998f065241377c92e1f5765d10d1"
+      "bytes": 24304,
+      "sha256": "a8e36948b58d82105d3289c1fd35238e7549ee988439f18aecf5b95bc5afcbb6"
     },
     {
       "path": "works/Friedman2026ReproducibleLiteratureSynthesisInfrastructure187.html",
-      "bytes": 28852,
-      "sha256": "92c3879ee468da1799fe707a0abdb04693a8995770c0b10ba58ae71c4fb6bd61"
+      "bytes": 28840,
+      "sha256": "efa647d50ea5d1bf2c53a8e32f582ab7bd96e3f3a058d3adac661389fe6eabcb"
     },
     {
       "path": "works/Friedman2026RobustBeliefSharingFederated210.html",
@@ -30166,63 +30241,63 @@
     },
     {
       "path": "works/Friedman2026SelfImprovementAgentHarness127.html",
-      "bytes": 25227,
-      "sha256": "80e750a3d725771b909740562e5ced15f030952a6902a8573bb7f9b9886c0caa"
+      "bytes": 25215,
+      "sha256": "2a353dd1a350509e963d1b4f8eff6642dda710138217cc8e596bfd643d3f45f6"
     },
     {
       "path": "works/Friedman2026ShapeBetweenFullPage184.html",
-      "bytes": 23419,
-      "sha256": "7fd8e7e7d53a3ff4931c678a898c74c440d885e293674132e3c0055c3bc89843"
+      "bytes": 23407,
+      "sha256": "a71011991dba971f7870c843225afa9b539bf70e51b90cf9ee8427906e9316c6"
     },
     {
       "path": "works/Friedman2026SilverLineMemorySuccession223.html",
-      "bytes": 22211,
-      "sha256": "168f643fd889d6aee98b0d0021a2e3536e1d51b6022a8d31eaae5c5bb8755f5e"
+      "bytes": 22161,
+      "sha256": "3f1db9f38bc3193c8261537407b0bb608885d4f5668a879887f1acc235a7cba3"
     },
     {
       "path": "works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html",
-      "bytes": 24761,
-      "sha256": "ec7e8e4d1a35f245ecd1c8e2130523f42483b3e66acbe4a054760880322df165"
+      "bytes": 24749,
+      "sha256": "64a25b0f8222e13817df6f064914ac44574ead253c4cde85abdad1d09bb3874e"
     },
     {
       "path": "works/Friedman2026SortitionUpstreamNTQR180.html",
-      "bytes": 28911,
-      "sha256": "23d9cc417235357b2fa30e00e694c8c03e147ca29f7c6bae87b529ec030aedaa"
+      "bytes": 28899,
+      "sha256": "10a87ea04a114570ca839ba696a97c50bb681589e7b6a68db43e34ad0d5dbc54"
     },
     {
       "path": "works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html",
-      "bytes": 23095,
-      "sha256": "02a72612249e8dc5e8f79069ba4aa5b14bacfba65465b733d857344de8787367"
+      "bytes": 23083,
+      "sha256": "b0e0ac03cb674488a7ba4ffd92fa8d8ba9e8908cc187eb9cdb7762cc1a24e084"
     },
     {
       "path": "works/Friedman2026THALIATypedHarnessAnalytical207.html",
-      "bytes": 22090,
-      "sha256": "9a543036e57e870323d30ca48101423bb8abc4f3f09e908c3cba46e1b028eb91"
+      "bytes": 22078,
+      "sha256": "9dfbd5d5d458d95192467be71ccc5623b432974b99670468b649b68ab972e94e"
     },
     {
       "path": "works/Friedman2026TemplateApproachReproducibleGenerative001.html",
-      "bytes": 23808,
-      "sha256": "f8030f9bc70cb68897e879f57659a1bf740be31729e0525a017afcf6eb101e6f"
+      "bytes": 23796,
+      "sha256": "d99907ba88a836101332bde7f5b04196bd6b22c9eff0d74b3a38bae133db261c"
     },
     {
       "path": "works/Friedman2026TemplateApproachReproducibleGenerative123.html",
-      "bytes": 33746,
-      "sha256": "883ad89f8f5dcff9d2b8bca393b9333e6fe0dec35864caaa919c6db5004ae9a3"
+      "bytes": 33734,
+      "sha256": "2e3d9431902c5ffdea67d981a23736c04a4ee1e37cbfc24a3511b345e222d74c"
     },
     {
       "path": "works/Friedman2026TemplateMadlibDeterministicToken172.html",
-      "bytes": 26217,
-      "sha256": "a69b82b0c7c6f3e2d0f4b764c3428cb6736de3cdfbd4b547237270afa7876afa"
+      "bytes": 26205,
+      "sha256": "e08874fa2a9b5279c8dc69aac87fbe4346a715dffdf06f2686e2385c949b6200"
     },
     {
       "path": "works/Friedman2026TemplatePitchDeckReproducible186.html",
-      "bytes": 27958,
-      "sha256": "39a0816eb1abc55d6d29cf76d203fd721f977fecaa49b7abd636907a9a5b4080"
+      "bytes": 27946,
+      "sha256": "578d32df508732a33e615a983f3d81c1f972c1f6367ff1ba41e91789e5ed536a"
     },
     {
       "path": "works/Friedman2026TemplateTextbook154.html",
-      "bytes": 22975,
-      "sha256": "9c18bab99a713c23f1c855e25820793ee9248884ffdd548d50005fcde3755f3b"
+      "bytes": 22963,
+      "sha256": "14082e3335f67d860998b60315761395563c5f4f44d93a996b09b25b440496f5"
     },
     {
       "path": "works/Friedman2026TowardsLean4Formalization113.html",
@@ -30231,8 +30306,8 @@
     },
     {
       "path": "works/Friedman2026TriplicateDataDrivenLarge153.html",
-      "bytes": 26122,
-      "sha256": "1105a311f40b9f4fd68a9700ab8428426347a6fa2b6c0be649dcb7eb65cc6b75"
+      "bytes": 26110,
+      "sha256": "ef0f8a5fdbb8d4b5496574d02d94e7f24974cd115d651e3de57449bb471b1ca2"
     },
     {
       "path": "works/Friedman2026VioletLineConsentLedger222.html",
@@ -30241,18 +30316,18 @@
     },
     {
       "path": "works/Friedman2026WhenDoBugsSee126.html",
-      "bytes": 28443,
-      "sha256": "2b6e55cc16be0e900c85794f9978fb05cf92b712dd7048ec4c015d557f1ca5b7"
+      "bytes": 28431,
+      "sha256": "ad9bd93d8fe4129ab01ae0fb32d0c29c197cada5827e2c0318f53b73ed7dc593"
     },
     {
       "path": "works/Friedman2026WhiteLineTypedLedger202.html",
-      "bytes": 22524,
-      "sha256": "db2267995b09ba14d9f4540ff38929c21e409de7b2f074c5dcfa4daa858135ac"
+      "bytes": 22512,
+      "sha256": "656a4c5cf032fcbd365b2000d56a0e2568a3682bc6c8f54933147a1f823303d5"
     },
     {
       "path": "works/Friedman2026WitnessRegisterCoRegistration200.html",
-      "bytes": 23158,
-      "sha256": "eac1ccefc78f0e96b0f1ef572ea0c2073df4b1e4b2b9d3fe4c9fefed96b4b677"
+      "bytes": 23146,
+      "sha256": "c867caba0ff27d7addf9b745531cac6ff84ecb99631dd8b83bb5d79a0be9fe74"
     },
     {
       "path": "works/README.md",
@@ -30261,8 +30336,8 @@
     },
     {
       "path": "works/index.html",
-      "bytes": 152103,
-      "sha256": "bb3a184cb7cfa0d2fb3acf56dae6e34525c2f673d833ada56244acd41cb3dd5a"
+      "bytes": 152663,
+      "sha256": "c3cbe8064354311012cc0872ada217c607de0ccf5bcdb6d4c33bfc582d718faa"
     }
   ],
   "control_files": [
@@ -30374,8 +30449,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 652,
-    "bytes": 172001315,
+    "count": 653,
+    "bytes": 172003369,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",

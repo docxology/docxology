@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-10-18T19:15:46+00:00",
+  "generated_at": "2026-10-22T15:28:49+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -277,14 +277,19 @@
     }
   ],
   "datasets": {
+    "blake_index": {
+      "path": "/data/blake-index.json",
+      "count": 21,
+      "schema": "BlakeIndex"
+    },
     "works": {
       "path": "/data/works.json",
-      "count": 223,
+      "count": 224,
       "schema": "Work"
     },
     "work_identifiers": {
       "path": "/data/work-identifiers.json",
-      "count": 227,
+      "count": 228,
       "schema": "WorkIdentifierRegistry"
     },
     "software": {
@@ -369,12 +374,12 @@
     },
     "scholar_readiness": {
       "path": "/data/scholar-readiness.json",
-      "count": 223,
+      "count": 224,
       "schema": "ScholarReadiness"
     },
     "work_enrichment": {
       "path": "/data/work-enrichment.json",
-      "count": 223,
+      "count": 224,
       "schema": "WorkEnrichment"
     },
     "catalog": {
@@ -389,12 +394,12 @@
     },
     "reproducibility": {
       "path": "/data/reproducibility.json",
-      "count": 223,
+      "count": 224,
       "schema": "ReproducibilityLedger"
     },
     "generated_manifest": {
       "path": "/data/generated-manifest.json",
-      "count": 58,
+      "count": 59,
       "schema": "GeneratedManifest"
     }
   },
@@ -450,6 +455,25 @@
     }
   ],
   "schemas": {
+    "BlakeIndex": {
+      "type": "object",
+      "description": "A topical projection of Work identities with whole-word search coverage, reviewed passage relations, DOI roles and edition caveats. Does not attest full reading or citation-source validation.",
+      "required": [
+        "schema_version",
+        "sources",
+        "counts",
+        "works",
+        "exclusions",
+        "needs_review"
+      ],
+      "fields": {
+        "schema_version": "BlakeIndex.v1",
+        "works": "array of existing citation_key identities; title_match and core_subject are independent of relation; includes citation_doi, version_doi, record_url, API version, primary_metadata_matched, edition_note, full_text_path, full_text_sha256 and matching_lines (1-based)",
+        "exclusions": "reviewed other-person matches and explicit no-match candidates",
+        "needs_review": "unclassified citation keys; a nonempty list fails --check",
+        "citation_sources_independently_checked": "false; registry metadata checks do not verify sources cited within a work"
+      }
+    },
     "WorkIdentifierRegistry": {
       "type": "object",
       "description": "Reviewed permanent work IDs and citation keys; active rows and retired reservations are never renumbered or recomputed from metadata.",
@@ -1098,7 +1122,7 @@
     ],
     "VideoIndex": {
       "schema_version": "VideoIndex.v1",
-      "generated_at": "2026-10-22T01:13:10Z",
+      "generated_at": "2026-10-22T15:29:31Z",
       "source": "data/videos.json",
       "count": 1186,
       "counts": {
@@ -1188,14 +1212,14 @@
     "ClaimWithEvidence": [
       {
         "id": "curated-work-count",
-        "claim": "The curated bibliography contains 223 works.",
+        "claim": "The curated bibliography contains 224 works.",
         "status": "curated-local",
         "sources": [
           "pages/BIBLIOGRAPHY.md",
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-10-18T19:15:46+00:00",
+        "checked_at": "2026-10-22T15:28:49+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1231,19 +1255,19 @@
       "inclusion_guidance": "https://scholar.google.com/intl/en/scholar/inclusion.html",
       "pdf_byte_limit": 5000000,
       "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
-      "works_sha256": "9327110db9f9dddd638e50fd0248d1f2ed7046d4ae37111093374fcf7bb77689",
+      "works_sha256": "32212d11564b45b2a6987cfd5287006822845c60752d07df99fab4012c03b20b",
       "network_checked": false,
       "indexing_verified": false,
       "summary": {
-        "works": 223,
+        "works": 224,
         "local_status": {
-          "blocked": 223
+          "blocked": 224
         },
         "blockers": {
           "missing_citation_author": 11,
           "no_selected_local_pdf": 25,
-          "pdf_directory_differs_from_abstract": 198,
-          "pdf_exceeds_byte_limit": 42
+          "pdf_directory_differs_from_abstract": 199,
+          "pdf_exceeds_byte_limit": 43
         }
       },
       "works": [
@@ -1252,7 +1276,7 @@
           "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
           "type": "Paper",
           "abstract_url": "https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative001.html",
-          "page_sha256": "f8030f9bc70cb68897e879f57659a1bf740be31729e0525a017afcf6eb101e6f",
+          "page_sha256": "d99907ba88a836101332bde7f5b04196bd6b22c9eff0d74b3a38bae133db261c",
           "citation_tags": {
             "citation_title": [
               "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
@@ -1360,25 +1384,25 @@
       "check_command": "uv run python3 code/orchestrators/build_current_counts.py --check",
       "command": "uv run python3 code/orchestrators/build_current_counts.py",
       "counts": {
-        "bibliography_docs_links": 206,
-        "bibliography_works": 223,
+        "bibliography_docs_links": 207,
+        "bibliography_works": 224,
         "domains": {
           "AII Ecosystem": 7,
           "Active Inference": 48,
           "Art & Synergetics": 16,
           "Cognitive Security": 37,
-          "Computational": 64,
+          "Computational": 65,
           "Entomology": 23,
           "Genetics & Biomedical": 13,
           "Presentations & Media": 14
         },
         "extracted_images": 8959,
-        "full_text_papers": 202,
+        "full_text_papers": 203,
         "generated_exports": {
-          "data_publications_ld_main_entity": 223,
+          "data_publications_ld_main_entity": 224,
           "data_software_json": 166,
           "data_software_ld_main_entity": 166,
-          "data_works_json": 223
+          "data_works_json": 224
         },
         "github_inventory": {
           "ActiveInferenceInstitute": 45,
@@ -1414,7 +1438,7 @@
           "update_existing": 2,
           "zenodo_records": 168
         },
-        "paper_folder_docs": 206,
+        "paper_folder_docs": 207,
         "papers_with_images": 145,
         "public_source_snapshot": {
           "Crossref ORCID DOI records": 15,
@@ -1434,14 +1458,14 @@
         "types": {
           "Books": 5,
           "Courses": 3,
-          "Papers": 202,
+          "Papers": 203,
           "Playbooks": 2,
           "Presentations": 8,
           "Report": 1,
           "Series": 2
         }
       },
-      "generated_at": "2026-10-18T19:15:46+00:00",
+      "generated_at": "2026-10-22T15:28:49+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
@@ -1465,11 +1489,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 880469675,
+        "source_bytes": 900418684,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6058,
-        "artifact_bytes": 881540722
+        "artifact_file_count": 6073,
+        "artifact_bytes": 901492377
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1481,7 +1505,7 @@
       "note": "See /data/release-integrity.json for the current envelope."
     },
     "ReproducibilityLedger": {
-      "generated_at": "2026-10-22T01:14:00Z",
+      "generated_at": "2026-10-22T15:29:55Z",
       "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
       "sources": [
         "data/works.json",
@@ -1543,17 +1567,17 @@
         }
       ],
       "max_score": 6,
-      "work_count": 223,
+      "work_count": 224,
       "signal_totals": {
-        "persistent_id": 208,
-        "public_archive": 166,
-        "open_full_text": 202,
-        "source_documents": 206,
+        "persistent_id": 209,
+        "public_archive": 167,
+        "open_full_text": 203,
+        "source_documents": 207,
         "executable_code": 76,
-        "agent_readable": 206
+        "agent_readable": 207
       },
       "band_counts": {
-        "independently reproducible": 164,
+        "independently reproducible": 165,
         "independently checkable": 42,
         "citable only": 8,
         "unverified": 9
@@ -1564,10 +1588,10 @@
         "2": 4,
         "3": 9,
         "4": 33,
-        "5": 91,
+        "5": 92,
         "6": 73
       },
-      "mean_score": 4.771,
+      "mean_score": 4.772,
       "works": [
         {
           "num": 5,
@@ -4840,6 +4864,25 @@
           ]
         },
         {
+          "num": 228,
+          "citation_key": "Friedman2026ActiveAssemblyTheoryPractice228",
+          "title": "Active Assembly Theory and Practice",
+          "year": 2026,
+          "domain_name": "Computational",
+          "type": "Paper",
+          "score": 5,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": false,
+            "agent_readable": true
+          },
+          "repositories": []
+        },
+        {
           "num": 23,
           "citation_key": "Friedman2025TemporalDepthCoherentSelf023",
           "title": "Temporal depth in a coherent self and in depersonalization: theoretical model",
@@ -5964,29 +6007,30 @@
     }
   },
   "dataset_hashes": {
-    "works": "9327110db9f9dddd638e50fd0248d1f2ed7046d4ae37111093374fcf7bb77689",
-    "work_identifiers": "50bf6ad1ba0af743728838ea00b9acc521ef55f15354e0a93a2e1a215cbb97ba",
-    "software": "9e02ef6059e42236809c426c9cad5846d94edcb1b4f45f189bc90cd7a2f6a7a1",
+    "blake_index": "ac21021e6987989d9d1cb3d718130dd2bc0d5e61d0c82970eef8dcf9570765a9",
+    "works": "32212d11564b45b2a6987cfd5287006822845c60752d07df99fab4012c03b20b",
+    "work_identifiers": "729f08952871a1a72cd08e0a13e848e1b388dce45948b3c8b9075bd6f39e5633",
+    "software": "10e281bae17c2d2bdc56e98a45607ec74d6be5c07963894e6e94cc3fca9aee90",
     "repositories": "6a2db1ce763b3dfb854247465cdda0e4dfefc50b62d919df940cf0e81f344548",
     "artworks_index": "29270719124f00fb4d9c2729262c33318c82e9dbb114ec8b0f777436bb270769",
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
-    "videos": "3996db47051556edb4d8f6022096dac54eef9e3830ff6e1245bf347cafbfc5ef",
-    "videos_index": "d25166f71845fc2968446b43b646024b8f1a2b3928b2d76dcaea537320e7dd39",
-    "search": "68e7b5cb35bedf6524c2eb2967fb4f61ae4a82084d8a1e5a85f6eb23e9bbfb25",
-    "claims": "2ef720a56019529242e7c716d6cb2067562cdf3f4d50da1afe346b5023432fc9",
+    "videos": "c1fb7a1993071b38f08a7df3d029f94e4535e14abcb77eab8776a1e49b9a7543",
+    "videos_index": "e69b9ca29ec4c666df32d14e4e0a2771a40e151fb5c53d2f4b00660f51b55161",
+    "search": "c3dff222f477278936e4b119c59fb0c64b483a473c72289c087d1689527d6735",
+    "claims": "322983adeb1c68dfc1ed1d18274bbe1ab585df26d14508d4b7a79fbf4053bb89",
     "scholar_verification_receipt": "eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759",
     "coverage_exceptions": "fde430d11f93e8f2db7c5e2cd935a66778de9bdde2fbbd0009832b0d1890135d",
     "repository_classification": "4411420d6f0dfa7aa40b7b8adf3fb007082baf4686a08c23ea5566038483c298",
-    "people": "ff37e6660e2c6b8ddf3f295ee3b693ae0265a965f367edd2823300893793e482",
-    "organizations": "e598ed7719ffece650638c9b3230cecc209a672d674e4ff580228a64dae5d80d",
-    "resume": "71ebab9117fb700e6df53026ceb1d811302ad623f8fb34417d7fd5f63826a821",
-    "work_enrichment": "37eb29ad1c8f30c6a3c37804d3846430f154783c86b713f13ec0550fb1217407",
-    "scholar_readiness": "6692ecbcfb32d2e2d1044afd25666b8d43f68504741bb1759d96ba772bf0770b",
-    "catalog": "a68284f4559163b24e4e4e5f928f0b8d5b5ad9814cb6d49b2e348bfe4f9dcaf7",
-    "reconciliation": "2e73d7005e6e0506735992f6de185211e3f6754ee19ed194fa25aca1d4e1ec5a",
-    "reproducibility": "4cb4c53298c089b8f43d6eadf5fd9c41fa71b2b1c41692433d1d2fc484bc34af",
-    "generated_manifest": "039740d98427f20bd239f21e94752817fe6fdbafb3ca54db7e8e568c033bd0b9",
-    "current_counts": "dd16c6443396cff85bb91b0656fe0841f534ab130dc814a238bf19f7fdb59b23"
+    "people": "b4edc43fa4f047b4b69a1618d6f843cd314be12dfd652c906cc38b46a22c1847",
+    "organizations": "f878c3f45a43fa804728a260e8f6faad28d6e85dac4017f44e8ffcd9ddec9a22",
+    "resume": "e088fdfee5cc40f65c893a79d4353ed4c20ef7b504fa93c30000c9357e5f8edc",
+    "work_enrichment": "42530d9d2520aa565ebe11fbd74d15b5216fc8875fb51e04370acc2c3ec36e2f",
+    "scholar_readiness": "0d35d3ed3c6b12748c66502226fc493000c323db312b34227a6d574a222b7f6e",
+    "catalog": "14893cd46ad3510f4593cf6fb0966394a9e3df71a2200167c6cea0cbcd92e1e0",
+    "reconciliation": "b003712b14bc622e191e0b6ef26e8b1b813ac8ae1cd6e0af1242f9942bf99001",
+    "reproducibility": "0bbbe5caa1abbac0e871b1275d8416a8497b7f6e9c011fffb6f4a5c2f4053b9e",
+    "generated_manifest": "c6018d2e4dd63ae795fc3214d76088a25ec19cfb6f49b3418fc33bad3c0dec28",
+    "current_counts": "3481b2e526cf25182ad95fab35f3dafa086b6a719d80803175c536231113887d"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -6015,25 +6059,25 @@
     "pages_status": "built"
   },
   "counts": {
-    "bibliography_docs_links": 206,
-    "bibliography_works": 223,
+    "bibliography_docs_links": 207,
+    "bibliography_works": 224,
     "domains": {
       "AII Ecosystem": 7,
       "Active Inference": 48,
       "Art & Synergetics": 16,
       "Cognitive Security": 37,
-      "Computational": 64,
+      "Computational": 65,
       "Entomology": 23,
       "Genetics & Biomedical": 13,
       "Presentations & Media": 14
     },
     "extracted_images": 8959,
-    "full_text_papers": 202,
+    "full_text_papers": 203,
     "generated_exports": {
-      "data_publications_ld_main_entity": 223,
+      "data_publications_ld_main_entity": 224,
       "data_software_json": 166,
       "data_software_ld_main_entity": 166,
-      "data_works_json": 223
+      "data_works_json": 224
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 45,
@@ -6069,7 +6113,7 @@
       "update_existing": 2,
       "zenodo_records": 168
     },
-    "paper_folder_docs": 206,
+    "paper_folder_docs": 207,
     "papers_with_images": 145,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
@@ -6089,7 +6133,7 @@
     "types": {
       "Books": 5,
       "Courses": 3,
-      "Papers": 202,
+      "Papers": 203,
       "Playbooks": 2,
       "Presentations": 8,
       "Report": 1,

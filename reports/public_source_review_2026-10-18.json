@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-10-22T00:48:35Z",
+      "generated_at": "2026-10-22T15:28:50Z",
       "path": "data/claims.json",
-      "sha256": "2ef720a56019529242e7c716d6cb2067562cdf3f4d50da1afe346b5023432fc9",
+      "sha256": "322983adeb1c68dfc1ed1d18274bbe1ab585df26d14508d4b7a79fbf4053bb89",
       "source_commit": null
     },
     "doi_role_review": {
@@ -17527,8 +17527,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "86c8e2cc9d624d54f8181994a883b8e68376d8fb",
-  "source_tree_sha": "86be4f8bfa85ba93de4ea102fd2db3cc908b114f",
+  "source_commit": "44bd31aae3dbf5c0e15bb906606f778d396af8e0",
+  "source_tree_sha": "afc89eea838e7b089376a857b2e1397afb79d637",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
