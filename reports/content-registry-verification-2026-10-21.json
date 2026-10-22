@@ -18,7 +18,7 @@
     }
   ],
   "capture_error_resolution": "The first capture lacked an agency-registry entry for work 227. Direct DOI agency lookup and DataCite retrieval resolved that entry; initial failed-capture evidence is retained.",
-  "final_bibliography_sha256": "495e100eb8ab99720611a21a6c8c9a33a59a8fcdacd114351ed9c1c2640c991a",
+  "final_bibliography_sha256": "ccef6ac3ae5b8746ff94901b53f234a6ae5985b2e7dc6e4d1cbf196f7f617b58",
   "final_title_differences": [],
   "checked": 208,
   "unresolved_capture_errors": [],

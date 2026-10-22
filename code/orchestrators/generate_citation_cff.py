@@ -364,10 +364,19 @@ def bibliography_citations(bibliography_path: Path = BIBLIOGRAPHY) -> dict[str, 
     """Return ``{folder: {"title", "authors"}}`` for rows with verified authors."""
     if not bibliography_path.is_file():
         return {}
+    from docxology_tools.author_entities import bibliography_contributor_role, load_author_records
+    from docxology_tools.work_identifiers import load_registry
+
+    root = bibliography_path.parent.parent
+    records = load_author_records(root)
+    identifiers = load_registry(root / "data/work-identifiers.json", repo_root=root) if records else None
     citations: dict[str, dict[str, Any]] = {}
     for row in iter_bibliography_rows(bibliography_path):
         if row.folder and row.authors:
             citations[row.folder] = {"title": row.title.strip(), "authors": list(row.authors)}
+            role = bibliography_contributor_role(row.num, row.title, list(row.authors), records, identifiers)
+            if role == "editor":
+                citations[row.folder]["contributor_role"] = role
     return citations
 
 
@@ -477,6 +486,15 @@ def render_outputs(papers_dir: Path = PAPERS_DIR, bibliography_path: Path = BIBL
     for paper_dir in sorted(path for path in papers_dir.iterdir() if path.is_dir()):
         metadata_path = paper_dir / "metadata.json"
         if not metadata_path.is_file():
+            continue
+        citation = citations.get(paper_dir.name, {})
+        if citation.get("contributor_role") == "editor":
+            legacy = paper_dir / "CITATION.cff"
+            if legacy.exists() or legacy.is_symlink():
+                raise ValueError(
+                    f"{paper_dir.name}: CFF 1.2 cannot represent this editor-only book; "
+                    "retire its legacy CFF and use the editor-aware BibTeX, CSL, or RIS exports"
+                )
             continue
         try:
             metadata = json.loads(metadata_path.read_text(encoding="utf-8"))

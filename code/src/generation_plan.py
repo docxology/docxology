@@ -125,7 +125,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # DERIVED (always-run): renders entirely from in-script curated templates;
     # consumes no repository files.
     GenerationStep("pillar-pages", "generate_pillar_pages.py", (), ("--check",), "Shared-rendered pillar pages", ("data/works.json", "code/src/pillar_content.py", "code/src/content_citations.py")),
-    GenerationStep("paper-documents", "regenerate_docs.py", ("--apply",), ("--check",), "Manifest-owned paper documentation", ("pages/BIBLIOGRAPHY.md", "papers/paper_metadata.json", "papers/*/metadata.json", "papers/generated-documents.json", "code/src/abstract_text.py")),
+    GenerationStep("paper-documents", "regenerate_docs.py", ("--apply",), ("--check",), "Manifest-owned paper documentation", ("pages/BIBLIOGRAPHY.md", "data/work-authors.json", "data/work-identifiers.json", "papers/paper_metadata.json", "papers/*/metadata.json", "papers/generated-documents.json", "code/src/abstract_text.py")),
     # DERIVED (always-run): in-place patcher — rewrites each CITATION.cff's
     # DOI roles while preserving hand-maintained non-DOI fields read from the
     # same file it writes.

@@ -79,3 +79,21 @@ def reviewed_contributor_role(work: dict, records: dict) -> str:
                 or not record.get("evidence", "").startswith("EDITED BY ")):
             raise ValueError(f"Editor role lacks matching document evidence for {work['citation_key']}")
     return role
+
+
+def bibliography_contributor_role(
+    num: int, title: str, authors: list[str], records: dict, identifiers: dict | None
+) -> str:
+    """Bind roles through permanent identities rather than mutable record numbers."""
+    if not records:
+        return "author"
+    if identifiers is None:
+        raise ValueError("Contributor roles require permanent work identifiers")
+    from docxology_tools.work_identifiers import key_for_num
+
+    key = key_for_num(num, identifiers)
+    if not isinstance(records.get(key, {}), dict):
+        raise ValueError(f"Invalid contributor record for {key}")
+    return reviewed_contributor_role(
+        {"citation_key": key, "num": num, "title": title, "authors": authors}, records
+    )

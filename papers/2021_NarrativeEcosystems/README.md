@@ -2,7 +2,7 @@
 
 # 🛡️ Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier
 
-**Richard J. Cordes, Daniel A. Friedman** (2021) · *COGSEC.org*
+**Richard J. Cordes, Daniel A. Friedman (eds.)** (2021) · *COGSEC.org*
 
 ---
 
@@ -38,7 +38,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Richard J. Cordes, Daniel A. Friedman (2021). *Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier*. COGSEC.org.
+> Richard J. Cordes, Daniel A. Friedman (eds.) (2021). *Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier*. COGSEC.org.
 
 ## Related
 

@@ -4910,7 +4910,7 @@
             ],
             "publisher": {
                 "@type": "Organization",
-                "name": "Active Inference Journal"
+                "name": "Zenodo"
             },
             "keywords": "🧠",
             "@id": "https://danielarifriedman.com/works/Friedman2026LivingMetaAnalysisArchitecture110.html#work",
@@ -4923,7 +4923,7 @@
                 "url": "https://doi.org/10.5281/zenodo.19461933"
             },
             "sameAs": "https://doi.org/10.5281/zenodo.19461933",
-            "citation": "Friedman, Daniel Ari; Dietz, Joel. 2026. A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring. Active Inference Journal. DOI: 10.5281/zenodo.19461933. URL: https://doi.org/10.5281/zenodo.19461933."
+            "citation": "Friedman, Daniel Ari; Dietz, Joel. 2026. A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring. Zenodo. DOI: 10.5281/zenodo.19461933. URL: https://doi.org/10.5281/zenodo.19461933."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4952,7 +4952,7 @@
             ],
             "publisher": {
                 "@type": "Organization",
-                "name": "CSCIS vol 2857, Springer"
+                "name": "Communications in Computer and Information Science (CCIS), Springer"
             },
             "keywords": "🧠",
             "@id": "https://danielarifriedman.com/works/Friedman2026DynamicAttentionalAgentsFocused111.html#work",
@@ -4965,7 +4965,7 @@
                 "url": "https://doi.org/10.1007/978-3-032-16955-6_11"
             },
             "sameAs": "https://doi.org/10.1007/978-3-032-16955-6_11",
-            "citation": "Kavi, Prakash Chandra; Friedman, Daniel Ari; Patow, Gustavo. 2026. Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences. CSCIS vol 2857, Springer. DOI: 10.1007/978-3-032-16955-6_11. URL: https://doi.org/10.1007/978-3-032-16955-6_11."
+            "citation": "Kavi, Prakash Chandra; Friedman, Daniel Ari; Patow, Gustavo. 2026. Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences. Communications in Computer and Information Science (CCIS), Springer. DOI: 10.1007/978-3-032-16955-6_11. URL: https://doi.org/10.1007/978-3-032-16955-6_11."
         },
         {
             "@type": "ScholarlyArticle",

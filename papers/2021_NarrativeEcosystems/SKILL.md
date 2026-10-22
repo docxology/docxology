@@ -4,12 +4,12 @@ name: "Narrative Information Ecosystems: Conflict and Trust on the Endless Front
 description: "COGSEC's 2021 edited volume collects research outputs of the Narrative Information Management initiative, spanning information management across disciplines, digital rhetorical ecosystem analysis of image memes, knowledge management field synthesis, ..."
 tags: ["narrative-information-ecosystems", "cognitive-security", "sensemaking", "narrative-information-management", "digital-rhetoric", "knowledge-management", "active-inference", "conflict-modeling"]
 domain: "Cognitive Security"
-citation: "Richard J. Cordes, Daniel A. Friedman (2021). *Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier*. COGSEC.org."
+citation: "Richard J. Cordes, Daniel A. Friedman (eds.) (2021). *Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier*. COGSEC.org."
 ---
 
 # Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier
 
-**Richard J. Cordes, Daniel A. Friedman** (2021) · Cognitive Security
+**Richard J. Cordes, Daniel A. Friedman (eds.)** (2021) · Cognitive Security
 
 ## Context
 

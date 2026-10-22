@@ -70,6 +70,9 @@ ARTIFACTS = [
         "sources": [
             "papers/paper_metadata.json",
             "pages/BIBLIOGRAPHY.md",
+            "data/work-authors.json",
+            "data/work-identifiers.json",
+            "code/src/author_entities.py",
             "papers/*/metadata.json",
             "papers/generated-documents.json",
             "code/src/abstract_text.py",
@@ -80,11 +83,14 @@ ARTIFACTS = [
     {
         "name": "Paper CFF citation identity synchronization",
         "outputs": [
-            "papers/*/CITATION.cff (bibliography title/authors, canonical DOI/URL, and explicit artifact identifiers)",
+            "papers/*/CITATION.cff (bibliography title/authors and DOI roles; editor-only books use BibTeX, CSL, and RIS instead)",
         ],
         "sources": [
             "pages/BIBLIOGRAPHY.md",
             "papers/*/metadata.json (doi and optional artifact_doi)",
+            "data/work-authors.json",
+            "data/work-identifiers.json",
+            "code/src/author_entities.py",
             "papers/*/CITATION.cff (other hand-maintained fields and non-DOI identifiers)",
             "code/orchestrators/generate_citation_cff.py",
         ],

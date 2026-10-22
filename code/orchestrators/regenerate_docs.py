@@ -545,10 +545,15 @@ def parse_bibliography(
     *, paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS
 ) -> dict[str, dict[str, Any]]:
     """Parse BIBLIOGRAPHY.md table into a dict keyed by folder name (rows with a Docs link)."""
+    from docxology_tools.author_entities import bibliography_contributor_role, load_author_records
+    from docxology_tools.work_identifiers import load_registry
+
     bib = {}
     if not paths.bibliography_path.exists():
         log.warning("BIBLIOGRAPHY.md not found")
         return bib
+    records = load_author_records(paths.papers_dir.parent)
+    identifiers = load_registry(paths.papers_dir.parent / "data/work-identifiers.json", repo_root=paths.papers_dir.parent) if records else None
     for row in iter_bibliography_rows(paths.bibliography_path):
         folder = row.folder
         if not folder:
@@ -567,6 +572,7 @@ def parse_bibliography(
             # Registry-verified "Family, Given" names (fetch_work_authors.py).
             # The bibliography owns authorship; folder metadata is a fallback.
             "authors": list(row.authors),
+            "contributor_role": bibliography_contributor_role(row.num, row.title, list(row.authors), records, identifiers),
         }
     log.info(f"Parsed {len(bib)} entries from BIBLIOGRAPHY.md")
     return bib
@@ -713,9 +719,8 @@ def work_title(folder: str, meta: dict, bib_entry: dict | None = None) -> str:
 def work_authors(meta: dict, bib_entry: dict | None = None) -> str:
     """Return the display author list: bibliography first, folder metadata as fallback."""
     names = [display_author_name(name) for name in (bib_entry or {}).get('authors') or [] if str(name).strip()]
-    if names:
-        return ', '.join(names)
-    return clean_markdown_text(meta.get('authors', 'Daniel Ari Friedman'))
+    display = ', '.join(names) if names else clean_markdown_text(meta.get('authors', 'Daniel Ari Friedman'))
+    return display + ' (eds.)' if (bib_entry or {}).get('contributor_role') == 'editor' else display
 
 
 def work_venue(bib_entry: dict | None = None) -> str:
@@ -1061,7 +1066,7 @@ def generate_agents(folder: str, meta: dict, bib_entry: dict | None = None) -> s
         '',
         f'**Paper**: {title} ({year})',
         f'**Domain**: {domain}',
-        f'**Authors**: {authors}',
+        f'**{"Editors" if (bib_entry or {}).get("contributor_role") == "editor" else "Authors"}**: {authors}',
         '',
         '---',
         '',

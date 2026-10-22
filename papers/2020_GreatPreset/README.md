@@ -2,7 +2,7 @@
 
 # 🛡️ The Great Preset: Remote Teams and Operational Art
 
-**Daniel A. Friedman, Richard J. Cordes** (2020) · *COGSEC.org*
+**Daniel A. Friedman, Richard J. Cordes (eds.)** (2020) · *COGSEC.org*
 
 ---
 
@@ -39,7 +39,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel A. Friedman, Richard J. Cordes (2020). *The Great Preset: Remote Teams and Operational Art*. COGSEC.org.
+> Daniel A. Friedman, Richard J. Cordes (eds.) (2020). *The Great Preset: Remote Teams and Operational Art*. COGSEC.org.
 
 ## Related
 

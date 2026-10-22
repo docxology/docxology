@@ -4,7 +4,7 @@
 
 **Paper**: Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier (2021)
 **Domain**: Cognitive Security
-**Authors**: Richard J. Cordes, Daniel A. Friedman
+**Editors**: Richard J. Cordes, Daniel A. Friedman (eds.)
 
 ---
 

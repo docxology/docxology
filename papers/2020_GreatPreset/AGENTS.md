@@ -4,7 +4,7 @@
 
 **Paper**: The Great Preset: Remote Teams and Operational Art (2020)
 **Domain**: Cognitive Security
-**Authors**: Daniel A. Friedman, Richard J. Cordes
+**Editors**: Daniel A. Friedman, Richard J. Cordes (eds.)
 
 ---
 

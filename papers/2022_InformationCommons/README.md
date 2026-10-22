@@ -2,7 +2,7 @@
 
 # 🛡️ Structuring the Information Commons: Open Standards and Cognitive Security
 
-**Scott David, R.J. Cordes, Daniel A. Friedman** (2022) · *COGSEC.org*
+**Scott David, R.J. Cordes, Daniel A. Friedman (eds.)** (2022) · *COGSEC.org*
 
 ---
 
@@ -38,7 +38,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Scott David, R.J. Cordes, Daniel A. Friedman (2022). *Structuring the Information Commons: Open Standards and Cognitive Security*. COGSEC.org.
+> Scott David, R.J. Cordes, Daniel A. Friedman (eds.) (2022). *Structuring the Information Commons: Open Standards and Cognitive Security*. COGSEC.org.
 
 ## Related
 

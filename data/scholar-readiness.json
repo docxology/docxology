@@ -4,7 +4,7 @@
   "inclusion_guidance": "https://scholar.google.com/intl/en/scholar/inclusion.html",
   "pdf_byte_limit": 5000000,
   "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
-  "works_sha256": "10b07b67c0006ab35c60beceac74116d2ceb50a34a760ef81e7b3230ec772b29",
+  "works_sha256": "9327110db9f9dddd638e50fd0248d1f2ed7046d4ae37111093374fcf7bb77689",
   "network_checked": false,
   "indexing_verified": false,
   "summary": {
@@ -5372,7 +5372,7 @@
       "title": "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026LivingMetaAnalysisArchitecture110.html",
-      "page_sha256": "de69b5b641f49338f9b301789a52d9ca405e619c58fa0a5d77f701f39834cd31",
+      "page_sha256": "6b85202c8e41f1a6d56dc407435f81a94b41eddad6ed63267005664e640ed463",
       "citation_tags": {
         "citation_title": [
           "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring"
@@ -5417,7 +5417,7 @@
       "title": "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026DynamicAttentionalAgentsFocused111.html",
-      "page_sha256": "ae47962fdfb6465bd69d61837d8eddd249458a31b2282e4d590dad006bdcbab9",
+      "page_sha256": "2aaacd794f8e09896281edb2a36931cae5c0bf9c203b0c170208dde82a938894",
       "citation_tags": {
         "citation_title": [
           "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences"

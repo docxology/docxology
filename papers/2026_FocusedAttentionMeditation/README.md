@@ -2,7 +2,7 @@
 
 # 🧠 Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences
 
-**Prakash Chandra Kavi, Daniel Ari Friedman, Gustavo Patow** (2026) · *CSCIS vol 2857, Springer*
+**Prakash Chandra Kavi, Daniel Ari Friedman, Gustavo Patow** (2026) · *Communications in Computer and Information Science (CCIS), Springer*
 
 [![DOI](https://img.shields.io/badge/DOI-10.1007%2F978-3-032-16955-6_11-blue)](https://doi.org/10.1007/978-3-032-16955-6_11)
 
@@ -31,7 +31,7 @@ _No paper-specific findings have been summarized yet; see the abstract and the f
 
 ## Citation
 
-> Prakash Chandra Kavi, Daniel Ari Friedman, Gustavo Patow (2026). *Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences*. CSCIS vol 2857, Springer. DOI: 10.1007/978-3-032-16955-6_11. URL: https://doi.org/10.1007/978-3-032-16955-6_11.
+> Prakash Chandra Kavi, Daniel Ari Friedman, Gustavo Patow (2026). *Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences*. Communications in Computer and Information Science (CCIS), Springer. DOI: 10.1007/978-3-032-16955-6_11. URL: https://doi.org/10.1007/978-3-032-16955-6_11.
 
 ## Related
 

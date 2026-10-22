@@ -11,7 +11,7 @@ _DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
 if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 
-from docxology_tools.author_entities import reviewed_contributor_role  # noqa: E402
+from docxology_tools.author_entities import bibliography_contributor_role, reviewed_contributor_role  # noqa: E402
 from docxology_tools.content_audit import ContentPage, audit_content  # noqa: E402
 from docxology_tools.content_citations import ContentCitations  # noqa: E402
 from docxology_tools.biblio_table import BiblioRow  # noqa: E402
@@ -135,6 +135,17 @@ def test_editors_require_bound_evidence_and_export_correct_roles():
                   evidence="EDITED BY First, Second, and Third")
     records = {value["citation_key"]: record}
     assert reviewed_contributor_role(value, records) == "editor"
+    identifiers = {"identifiers": {str(value["num"]): {"citation_key": value["citation_key"], "status": "active"}}}
+    assert bibliography_contributor_role(value["num"], value["title"], value["authors"], records, identifiers) == "editor"
+    with pytest.raises(ValueError, match="matching document evidence"):
+        bibliography_contributor_role(value["num"], "Unrelated title", value["authors"], records, identifiers)
+    with pytest.raises(ValueError, match="matching document evidence"):
+        bibliography_contributor_role(value["num"], value["title"], value["authors"], {value["citation_key"]: {**record, "num": 999}}, identifiers)
+    with pytest.raises(ValueError, match="Invalid contributor record"):
+        bibliography_contributor_role(value["num"], value["title"], value["authors"], {value["citation_key"]: None}, identifiers)
+    with pytest.raises(ValueError, match="permanent work identifiers"):
+        bibliography_contributor_role(value["num"], value["title"], value["authors"], records, None)
+    assert bibliography_contributor_role(value["num"], value["title"], value["authors"], {}, None) == "author"
     for field, invalid in (("num", 2), ("title", "Another book"), ("status", "unverified"), ("authors", []), ("evidence", "AUTHORED BY First")):
         with pytest.raises(ValueError, match="matching document evidence"):
             reviewed_contributor_role(value, {value["citation_key"]: {**record, field: invalid}})
@@ -154,6 +165,60 @@ def test_editors_require_bound_evidence_and_export_correct_roles():
     collection = sync_publications_html.main_entity_object(row, row.link_cell, value)
     assert "editor" in collection
     assert "author" not in collection
+
+
+def test_reviewed_editor_roles_reach_all_paper_document_citations():
+    import regenerate_docs as docs
+
+    entries = docs.parse_bibliography()
+    root = Path(__file__).resolve().parents[2]
+    works = json.loads((root / "data/works.json").read_text())["works"]
+    edited = [item for item in works if item.get("contributor_role") == "editor"]
+    assert edited
+    for item in edited:
+        folder = Path(item["docs_path"]).name
+        entry = entries[folder]
+        metadata = {"authors": "Incorrect metadata fallback", "description": "Catalog source."}
+        readme = docs.generate_readme(folder, metadata, entry)
+        agents = docs.generate_agents(folder, metadata, entry)
+        skill = docs.generate_skill(folder, metadata, bib_entry=entry)
+        assert f'(eds.) ({item["year"]})' in readme
+        assert "**Editors**:" in agents and "**Authors**:" not in agents
+        assert f'(eds.) ({item["year"]})' in skill
+        assert all("Incorrect metadata fallback" not in text for text in (readme, agents, skill))
+
+
+def test_domain_feed_preserves_editor_and_author_distinction():
+    import build_domain_feeds as feeds
+
+    root = Path(__file__).resolve().parents[2]
+    works = json.loads((root / "data/works.json").read_text())["works"]
+    edited = next(item for item in works if item.get("contributor_role") == "editor")
+    authored = next(item for item in works if item.get("domain") == edited["domain"]
+                    and item.get("authors") and item.get("contributor_role") != "editor")
+    previous = (feeds.VIDEOS, feeds._EMOJI_SLUGS, feeds._VIDEO_SLUGS)
+    try:
+        feeds.init_taxonomy(works, [])
+        slug = feeds._EMOJI_SLUGS[edited["domain"]]
+        assert feeds.domain_items(slug, [edited])[0]["description"].endswith(" (eds.)")
+        assert not feeds.domain_items(slug, [authored])[0]["description"].endswith(" (eds.)")
+    finally:
+        feeds.VIDEOS, feeds._EMOJI_SLUGS, feeds._VIDEO_SLUGS = previous
+
+
+def test_editor_only_cff_cannot_silently_reappear(tmp_path):
+    import generate_citation_cff as cff
+
+    root = Path(__file__).resolve().parents[2]
+    paper = tmp_path / "papers" / "2022_InformationCommons"
+    paper.mkdir(parents=True)
+    (paper / "metadata.json").write_text(json.dumps({"title": "Edited volume"}))
+    legacy = paper / "CITATION.cff"
+    legacy.write_text('type: book\ndate-released: 2022\nauthors:\n  - name: "Editor presented as author"\n')
+    with pytest.raises(ValueError, match="CFF 1.2 cannot represent this editor-only book"):
+        cff.render_outputs(tmp_path / "papers", root / "pages/BIBLIOGRAPHY.md")
+    legacy.unlink()
+    assert cff.render_outputs(tmp_path / "papers", root / "pages/BIBLIOGRAPHY.md") == {}
 
 
 def test_all_guide_inline_citations_and_references_close_over_catalog():

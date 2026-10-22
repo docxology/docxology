@@ -4,7 +4,7 @@ name: "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical 
 description: "We develop a three-level hierarchical framework to model the attentional dynamics of focused attention (FA) meditation, laying a foundation for advanced active inference (AIF) implementations. Grounded in the Free Energy Principle and Neuronal Packet..."
 tags: ["active-inference", "focused-attention-meditation", "thoughtseeds", "free-energy-principle", "hierarchical-modeling", "precision-weighting", "contemplative-neuroscience", "expert-novice", "predictive-processing", "computational-psychiatry"]
 domain: "Active Inference"
-citation: "Prakash Chandra Kavi, Daniel Ari Friedman, Gustavo Patow (2026). *Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences*. CSCIS vol 2857, Springer."
+citation: "Prakash Chandra Kavi, Daniel Ari Friedman, Gustavo Patow (2026). *Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences*. Communications in Computer and Information Science (CCIS), Springer."
 doi: "10.1007/978-3-032-16955-6_11"
 ---
 

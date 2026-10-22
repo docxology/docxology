@@ -4,7 +4,7 @@
 
 **Paper**: Structuring the Information Commons: Open Standards and Cognitive Security (2022)
 **Domain**: Cognitive Security
-**Authors**: Scott David, R.J. Cordes, Daniel A. Friedman
+**Editors**: Scott David, R.J. Cordes, Daniel A. Friedman (eds.)
 
 ---
 

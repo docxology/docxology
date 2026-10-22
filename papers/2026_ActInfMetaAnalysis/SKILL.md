@@ -4,7 +4,7 @@ name: "A Living Meta-Analysis Architecture for Active Inference: Assertion Extra
 description: "No prior automated system tracks hypothesis-level evidence across the full Active Inference and Free Energy Principle (FEP) literature. Manual synthesis cannot keep pace with a field that has grown at a compound annual rate of 20.36% across 2005–2026..."
 tags: ["active-inference", "meta-analysis", "nanopublications", "assertion-extraction", "citation-weighted-scoring", "literature-review", "free-energy-principle", "computational-bibliography", "open-science"]
 domain: "Active Inference"
-citation: "Daniel Ari Friedman, Joel Dietz (2026). *A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring*. Active Inference Journal."
+citation: "Daniel Ari Friedman, Joel Dietz (2026). *A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring*. Zenodo."
 doi: "10.5281/zenodo.19461933"
 ---
 

@@ -14,7 +14,7 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-10-22T01:22:34Z
+Generated: 2026-10-22T02:54:08Z
 
 Current public metrics: 223 curated works; 166 catalogued software repositories (125 owned + 41 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 239 docxology + 45 AII public repositories (177 primary, 107 forks).
 
@@ -156,8 +156,8 @@ WORKS AND PUBLICATIONS (85)
 [103] 2016 | Paper | Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior | Annual Review of Neuroscience | 10.1146/annurev-neuro-070815-013927
 [104] 2016 | Paper | Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task | Proceedings of the Royal Society B | 10.1098/rspb.2016.0841
 [109] 2026 | Paper | Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology | Zenodo | 10.5281/zenodo.19574117
-[110] 2026 | Paper | A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring | Active Inference Journal | 10.5281/zenodo.19461933
-[111] 2026 | Paper | Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences | CSCIS vol 2857, Springer | 10.1007/978-3-032-16955-6_11
+[110] 2026 | Paper | A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring | Zenodo | 10.5281/zenodo.19461933
+[111] 2026 | Paper | Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences | Communications in Computer and Information Science (CCIS), Springer | 10.1007/978-3-032-16955-6_11
 [112] 2026 | Paper | Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case | Zenodo | 10.5281/zenodo.19695259
 [113] 2026 | Paper | Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics | Zenodo | 10.5281/zenodo.19699233
 [128] 2025 | Presentation | Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024 | Zenodo | 10.5281/zenodo.14861595

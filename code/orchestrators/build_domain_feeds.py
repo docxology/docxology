@@ -101,6 +101,9 @@ def domain_items(slug: str, works: list[dict]) -> list[dict]:
         if _EMOJI_SLUGS.get(work.get("domain")) != slug:
             continue
         year = int(work.get("year") or 0)
+        contributors = ", ".join(work.get("authors") or [])
+        if contributors and work.get("contributor_role") == "editor":
+            contributors += " (eds.)"
         items.append(
             {
                 "sort_date": f"{year:04d}-01-01",
@@ -109,7 +112,7 @@ def domain_items(slug: str, works: list[dict]) -> list[dict]:
                 "guid": work.get("url") or f"work-{work.get('num')}",
                 "pub_date": f"{year:04d}-01-01T00:00:00+00:00",
                 "description": f"{work.get('type', 'Work')} \u2014 {work.get('venue', 'Zenodo')}"
-                + (f" \u2014 {', '.join(work.get('authors') or [])}" if work.get("authors") else ""),
+                + (f" \u2014 {contributors}" if contributors else ""),
             }
         )
     for video in VIDEOS:

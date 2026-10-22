@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T01:22:34Z",
+  "generated_at": "2026-10-22T02:54:08Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "9e899c413ca0b48e27b2c9d578a3b5b7f116fbbf70394c5348867076a43476ee",
+      "sha256": "09e1e0f27dbd692ea45f7d9cbc30ce44a81365eef42b8351a28ac5a927c2ca4c",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,8 +97,8 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 183593,
-          "sha256": "10b07b67c0006ab35c60beceac74116d2ceb50a34a760ef81e7b3230ec772b29"
+          "bytes": 183618,
+          "sha256": "9327110db9f9dddd638e50fd0248d1f2ed7046d4ae37111093374fcf7bb77689"
         },
         {
           "path": "data/software.json",
@@ -5113,7 +5113,7 @@
       "domain_name": "Active Inference",
       "type": "Paper",
       "title": "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring",
-      "venue": "Active Inference Journal",
+      "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.19461933",
       "doi": "10.5281/zenodo.19461933",
       "docs_path": "papers/2026_ActInfMetaAnalysis/",
@@ -5137,7 +5137,7 @@
       "domain_name": "Active Inference",
       "type": "Paper",
       "title": "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences",
-      "venue": "CSCIS vol 2857, Springer",
+      "venue": "Communications in Computer and Information Science (CCIS), Springer",
       "url": "https://doi.org/10.1007/978-3-032-16955-6_11",
       "doi": "10.1007/978-3-032-16955-6_11",
       "docs_path": "papers/2026_FocusedAttentionMeditation/",
