@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Distributed Science — The Scientific Process as Multi-Scale Active Inference"
+name: "Distributed Science - The Scientific Process as Multi-Scale Active Inference"
 description: "The scientific process plays out in a multi-scale system comprising subsystems, each with their own properties and dynamics. For the practice of science to generate useful world models—and lead to the development of enabling technologies—practicing s..."
 tags: ["distributed-science", "multi-scale-active-inference", "scientific-process", "free-energy-principle", "meta-science", "collective-intelligence", "cultural-evolution", "distributed-cognition"]
 domain: "Active Inference"
-citation: "Francesco Balzan, John Campbell, Karl Friston, Maxwell James Ramstead, Daniel Friedman, Axel Constant (2023). *Distributed Science — The Scientific Process as Multi-Scale Active Inference*. OSF."
+citation: "Francesco Balzan, John Campbell, Karl Friston, Maxwell James Ramstead, Daniel Friedman, Axel Constant (2023). *Distributed Science - The Scientific Process as Multi-Scale Active Inference*. OSF."
 doi: "10.31219/osf.io/dnw5k"
 ---
 
-# Distributed Science — The Scientific Process as Multi-Scale Active Inference
+# Distributed Science - The Scientific Process as Multi-Scale Active Inference
 
 **Francesco Balzan, John Campbell, Karl Friston, Maxwell James Ramstead, Daniel Friedman, Axel Constant** (2023) · Active Inference
 

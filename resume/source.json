@@ -102,7 +102,7 @@
         "Stanley and Jacqueline Schilling Award for Service, 2014.",
         "Completed the Population Biology Graduate Group one-year base PhD curriculum, 2013.",
         "Co-founder of The Aggie Transcript, an undergraduate biology journal, 2014.",
-        "Victoria Finnerty Award for Research in Drosophila, 2013.",
+        "Victoria Finnerty Undergraduate Travel Award, 2014.",
         "Elected member of Phi Beta Kappa, UC Davis Chapter, 2014.",
         "Co-organizer of the Chess Club at UC Davis, 2012-2014.",
         "Research Scholars Program in Insect Biology, 2011-2014.",
@@ -397,7 +397,7 @@
       "links": [
         {
           "label": "Johnson Lab",
-          "url": "https://johnsonlab.ucdavis.edu/"
+          "url": "https://johnsonlabucdavis.wordpress.com/"
         },
         {
           "label": "UC Davis",
@@ -670,13 +670,13 @@
     },
     {
       "id": "victoria-finnerty",
-      "year": 2013,
-      "name": "Victoria Finnerty Award for Research in Drosophila",
+      "year": 2014,
+      "name": "Victoria Finnerty Undergraduate Travel Award",
       "details": "UC Davis.",
       "links": [
         {
-          "label": "UC Davis Genetics",
-          "url": "https://genetics.ucdavis.edu/"
+          "label": "Genetics Society of America recipient list",
+          "url": "https://genetics-gsa.org/awards/victoria-finnerty-undergraduate-travel-awards/"
         }
       ],
       "variants": [
@@ -1809,7 +1809,7 @@
       "links": [
         {
           "label": "Los Tuxtlas Biological Station",
-          "url": "https://www.ibiologia.unam.mx/eblt/"
+          "url": "https://www.ib.unam.mx/ib/unidades-investigacion/estacion-los-tuxtlas/"
         }
       ],
       "variants": [
@@ -2206,7 +2206,7 @@
       "links": [
         {
           "label": "Stanford Scope",
-          "url": "https://scopeblog.stanford.edu/2016/07/06/art-of-neuroscience-competition-highlights-beauty-of-the-brain/"
+          "url": "https://neuroscience.stanford.edu/news/finalists-announced-2016-art-neuroscience-competition"
         }
       ],
       "variants": [

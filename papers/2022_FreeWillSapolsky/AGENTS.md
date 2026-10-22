@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — On free will or the lack thereof (interview with Robert Sapolsky)
+# AGENTS.md — On free will or the lack thereof
 
-**Paper**: On free will or the lack thereof (interview with Robert Sapolsky) (2022)
+**Paper**: On free will or the lack thereof (2022)
 **Domain**: Genetics & Biomedical
 **Authors**: Robert Sapolsky, Alexandra Mikhailova, Daniel Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects On free will or the lack thereof (interview with Robert Sapolsky) to related works in the bibliography
+- Connects On free will or the lack thereof to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

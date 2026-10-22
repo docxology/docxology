@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🌍 The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)
+# 🌍 The Active Inference Institute & Active Inference Ecosystem
 
 **Active Inference Institute, Alex Vyatkin, Alexandra Mikhailova, Andrea Hiott, Andrew Pashea, Ben Elers, Bert Berkers, Bleu Knight, Chris Fields, Dan Whittet, Daniel Friedman, Déan Ticklẽs, Fraser Paterson, Gareth Stubbs, Holly Grimm, Jakub Smekal, Jeremy Cooper, John Boik, Libor Burian, Mahault Albarracin, Maria Luiza Iennaco, Matthew Brown, Mick Thacker, Peter Gilli, Rafael Kaufmann, RJ Cordes, Ryan Henry, Sandeep Ramesh, Scott David, Sebastian Alvarado, Zach Baker** (2024) · *Zenodo*
 
@@ -41,7 +41,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Active Inference Institute, Alex Vyatkin, Alexandra Mikhailova, Andrea Hiott, Andrew Pashea, Ben Elers, Bert Berkers, Bleu Knight, Chris Fields, Dan Whittet, Daniel Friedman, Déan Ticklẽs, Fraser Paterson, Gareth Stubbs, Holly Grimm, Jakub Smekal, Jeremy Cooper, John Boik, Libor Burian, Mahault Albarracin, Maria Luiza Iennaco, Matthew Brown, Mick Thacker, Peter Gilli, Rafael Kaufmann, RJ Cordes, Ryan Henry, Sandeep Ramesh, Scott David, Sebastian Alvarado, Zach Baker (2024). *The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)*. Zenodo. DOI: 10.5281/zenodo.14108992. URL: https://doi.org/10.5281/zenodo.14108992.
+> Active Inference Institute, Alex Vyatkin, Alexandra Mikhailova, Andrea Hiott, Andrew Pashea, Ben Elers, Bert Berkers, Bleu Knight, Chris Fields, Dan Whittet, Daniel Friedman, Déan Ticklẽs, Fraser Paterson, Gareth Stubbs, Holly Grimm, Jakub Smekal, Jeremy Cooper, John Boik, Libor Burian, Mahault Albarracin, Maria Luiza Iennaco, Matthew Brown, Mick Thacker, Peter Gilli, Rafael Kaufmann, RJ Cordes, Ryan Henry, Sandeep Ramesh, Scott David, Sebastian Alvarado, Zach Baker (2024). *The Active Inference Institute & Active Inference Ecosystem*. Zenodo. DOI: 10.5281/zenodo.14108992. URL: https://doi.org/10.5281/zenodo.14108992.
 
 ## Related
 

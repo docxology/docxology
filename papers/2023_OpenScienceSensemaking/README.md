@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ Open Access science needs Open Science Sensemaking (OSSm)
+# 🛡️ Open Access science needs Open Science Sensemaking (OSSm): open infrastructure for sharing scientific sensemaking data
 
 **Ronen Tamari, Daniel Friedman** (2023) · *MetaArXiv*
 
@@ -40,7 +40,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Ronen Tamari, Daniel Friedman (2023). *Open Access science needs Open Science Sensemaking (OSSm)*. MetaArXiv. DOI: 10.31222/osf.io/9nb3u. URL: https://doi.org/10.31222/osf.io/9nb3u.
+> Ronen Tamari, Daniel Friedman (2023). *Open Access science needs Open Science Sensemaking (OSSm): open infrastructure for sharing scientific sensemaking data*. MetaArXiv. DOI: 10.31222/osf.io/9nb3u. URL: https://doi.org/10.31222/osf.io/9nb3u.
 
 ## Related
 

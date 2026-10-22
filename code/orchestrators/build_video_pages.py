@@ -48,6 +48,7 @@ from docxology_tools.site_nav import (  # noqa: E402
     render_breadcrumb,
     render_nav,
     social_meta_tags,
+    canonical_work_key,
 )
 
 from docxology_tools.report_paths import generated_timestamp  # noqa: E402
@@ -378,7 +379,7 @@ def related_works(video: dict, works: list[dict], enrichments: dict[str, dict]) 
             "citation_key": work["citation_key"],
             "year": work["year"],
             "domain": work["domain_name"],
-            "url": f"/works/{work['citation_key']}.html",
+            "url": f"/works/{canonical_work_key(work['citation_key'])}.html",
         }
         for _score, work in scored[:4]
     ]

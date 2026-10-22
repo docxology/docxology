@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — An Active Inference Ontology for Decentralized Science
+# AGENTS.md — An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons
 
-**Paper**: An Active Inference Ontology for Decentralized Science (2022)
+**Paper**: An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons (2022)
 **Domain**: Active Inference
 **Authors**: Daniel Friedman, Shaun Applegate-Swanson, Jessica Angeli Balbuena, Arhan Choudhury, RJ Cordes, Shady El Damaty, Avel Guénin—Carlut, V. Bleu Knight, Ivan Metelkin, Siddhant Shrivastava, Amit Kumar Singh, Jakub Smékal, Tuttle. Caleb, Alexander Vyatkin
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects An Active Inference Ontology for Decentralized Science to related works in the bibliography
+- Connects An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

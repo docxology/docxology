@@ -122,6 +122,7 @@ ARTIFACTS = [
         "sources": [
             "pages/BIBLIOGRAPHY.md",
             "data/work-identifiers.json",
+            "data/work-authors.json",
             "papers/*/README.md",
             "papers/*/AGENTS.md",
             "papers/*/SKILL.md",
@@ -200,7 +201,7 @@ ARTIFACTS = [
             "active-inference.html",
             "neurosymbolic-ai.html",
         ],
-        "sources": ["data/works.json", "code/orchestrators/generate_pillar_pages.py"],
+        "sources": ["data/works.json", "code/src/pillar_content.py", "code/src/content_citations.py", "code/orchestrators/generate_pillar_pages.py"],
         "command": "python3 code/orchestrators/generate_pillar_pages.py",
     },
     {
@@ -666,6 +667,7 @@ ARTIFACTS = [
 # discoverable from the authoritative matrix. MD-only: data/generated-manifest.json
 # keeps its frozen {generated_at, artifacts} schema for downstream consumers.
 UTILITIES = [
+    ("audit_content_citations.py", "Checks published HTML targets/fragments, catalog-derived citations and explicit joint authorship; optional source-bound inventories and live external probes", "audit"),
     ("profile_backend.py", "Bounded Python 3.15 timing/tracing for fixed read-only backend workloads with source/runtime/result bindings; external JSON diagnostics only", "inspection"),
     ("agent.py", "Offline read-only maintenance inspection: versioned JSON status and ordered write/check previews derived from the canonical generation plan; never executes writers or network intake", "inspection"),
     ("regenerate_all.py", "Dependency-ordered write-mode rebuild of every locally-derived artifact; `--validate` chains validate_repo.py", "driver"),

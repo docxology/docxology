@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees
+# 🐜 A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)
 
 **Daniel Ari Friedman, Chao Tong, Timothy A. Linksvayer, Matthias Freund, Nicole Weronika Keough, Brian Johnson** (2023) · *Zenodo*
 
@@ -45,7 +45,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Ari Friedman, Chao Tong, Timothy A. Linksvayer, Matthias Freund, Nicole Weronika Keough, Brian Johnson (2023). *A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees*. Zenodo. DOI: 10.5281/zenodo.10400744. URL: https://doi.org/10.5281/zenodo.10400744.
+> Daniel Ari Friedman, Chao Tong, Timothy A. Linksvayer, Matthias Freund, Nicole Weronika Keough, Brian Johnson (2023). *A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)*. Zenodo. DOI: 10.5281/zenodo.10400744. URL: https://doi.org/10.5281/zenodo.10400744.
 
 ## Related
 

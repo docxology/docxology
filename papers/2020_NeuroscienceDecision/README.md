@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧬 The neuroscience of decision making (interview with Timothy Hanks)
+# 🧬 The Neuroscience of Decision Making. An interview of Timothy Hanks by Alexandra Mikhailova and Daniel A. Friedman.
 
 **Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman** (2020) · *ALIUS Bulletin*
 
@@ -39,7 +39,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman (2020). *The neuroscience of decision making (interview with Timothy Hanks)*. ALIUS Bulletin. DOI: 10.34700/8pg4-0h12. URL: https://doi.org/10.34700/8pg4-0h12.
+> Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman (2020). *The Neuroscience of Decision Making. An interview of Timothy Hanks by Alexandra Mikhailova and Daniel A. Friedman.*. ALIUS Bulletin. DOI: 10.34700/8pg4-0h12. URL: https://doi.org/10.34700/8pg4-0h12.
 
 ## Related
 

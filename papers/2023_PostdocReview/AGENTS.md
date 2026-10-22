@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Postdoc review (2020–2023)
+# AGENTS.md — Postdoc review (2020-2023) ~ September 25, 2023
 
-**Paper**: Postdoc review (2020–2023) (2023)
+**Paper**: Postdoc review (2020-2023) ~ September 25, 2023 (2023)
 **Domain**: Presentations & Media
 **Authors**: Daniel Ari Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Postdoc review (2020–2023) to related works in the bibliography
+- Connects Postdoc review (2020-2023) ~ September 25, 2023 to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

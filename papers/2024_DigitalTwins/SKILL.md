@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Comments on National Digital Twins R&D Strategic Plan"
+name: "Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379"
 description: "Digital Twins are useful enough to be dangerous. US Government Agency interest in funding and facilitating research, development, engineering, and implementation of Digital Twins (alongside factors related to their safe implementation) is therefore b..."
 tags: ["digital-twins", "active-inference", "generative-models", "predictive-processing", "cyber-physical-systems", "simulation"]
 domain: "Cognitive Security"
-citation: "RJ Cordes (2024). *Comments on National Digital Twins R&D Strategic Plan*. Zenodo."
+citation: "RJ Cordes (2024). *Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379*. Zenodo."
 doi: "10.5281/zenodo.13273681"
 ---
 
-# Comments on National Digital Twins R&D Strategic Plan
+# Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379
 
 **RJ Cordes** (2024) · Cognitive Security
 

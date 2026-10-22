@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)
+# 🧠 Of woodlice and men: A Bayesian account of cognition, life and consciousness. An interview with Karl Friston.
 
 **Karl Friston, Martin Fortier, Daniel Friedman** (2018) · *ALIUS Bulletin*
 
@@ -40,7 +40,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Karl Friston, Martin Fortier, Daniel Friedman (2018). *Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)*. ALIUS Bulletin. DOI: 10.34700/h460-nz89. URL: https://doi.org/10.34700/h460-nz89.
+> Karl Friston, Martin Fortier, Daniel Friedman (2018). *Of woodlice and men: A Bayesian account of cognition, life and consciousness. An interview with Karl Friston.*. ALIUS Bulletin. DOI: 10.34700/h460-nz89. URL: https://doi.org/10.34700/h460-nz89.
 
 ## Related
 

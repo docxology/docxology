@@ -1,15 +1,15 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "GeneralizedNotationNotation (GNN)"
+name: "Generalized_Notation_Notation (GNN)"
 description: "Active Inference offers a unifying account of perception, learning, and action under the free energy principle, yet the generative models at its core are still communicated ad hoc: scattered across prose descriptions, bespoke notebooks, and framework..."
 tags: ["active-inference", "generative-models", "cognitive-modeling", "notation-system", "reproducibility", "computational-neuroscience", "bayesian-inference", "standards", "gnn", "python"]
 domain: "Active Inference"
-citation: "Daniel Ari Friedman (2026). *GeneralizedNotationNotation (GNN)*. Zenodo."
+citation: "Daniel Ari Friedman (2026). *Generalized_Notation_Notation (GNN)*. Zenodo."
 doi: "10.5281/zenodo.7803313"
 artifact_doi: "10.5281/zenodo.22985529"
 ---
 
-# GeneralizedNotationNotation (GNN)
+# Generalized_Notation_Notation (GNN)
 
 **Daniel Ari Friedman** (2026) · Active Inference
 

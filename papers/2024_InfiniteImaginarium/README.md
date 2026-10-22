@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 Way Finding in the Infinite Imaginarium
+# 🎨 Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes
 
 **Daniel Ari Friedman** (2024) · *Zenodo*
 
@@ -41,7 +41,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Ari Friedman (2024). *Way Finding in the Infinite Imaginarium*. Zenodo. DOI: 10.5281/zenodo.10601081. URL: https://doi.org/10.5281/zenodo.10601081.
+> Daniel Ari Friedman (2024). *Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes*. Zenodo. DOI: 10.5281/zenodo.10601081. URL: https://doi.org/10.5281/zenodo.10601081.
 
 ## Related
 

@@ -2,6 +2,18 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-10-21
+
+- Corrected source attribution and claim scope across the five topic guides,
+  including the Friston–Fortier–Friedman interview, Ingram et al.'s foraging-gene
+  article, and Saund and Friedman's pheromone model. Inline citations and full
+  references now derive from the reviewed catalog.
+- Restored complete publication titles, distinguished edited-volume contributors
+  in citation exports, reconciled the current daf-jev title, and connected the
+  Digital Twins concept/version records through a shared canonical work URL.
+- Added a public-HTML audit for local targets, fragments, work links, and
+  catalog-bound citation labels, with an optional live external-link inventory.
+
 ## 2026-10-19
 
 - **Publication source corrections:** linked immutable corrected source for

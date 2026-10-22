@@ -22,7 +22,7 @@ keywords: "Daniel Ari Friedman, active inference, COLLABORATORS"
 
 **Domains**: Active Inference, Free Energy Principle, Consciousness
 
-Karl Friston is the originator of the free energy principle and Active Inference framework. He serves on the [AII Scientific Advisory Board](https://activeinference.institute/structure/scientific-advisory-board/) (2025–). Friedman and Friston's collaboration began with "Of woodlice and men" (2018, *ALIUS Bulletin*, 88 citations) and has continued through co-authored papers on variational synthesis, evolutionary dynamics (2023), federated inference (2024, 45 citations), and multi-agent Active Inference.
+Karl Friston is the originator of the free energy principle and Active Inference framework. He serves on the [AII Scientific Advisory Board](https://activeinference.institute/structure/scientific-advisory-board/) (2025–). Friedman and Friston's collaboration began with "Of woodlice and men" (2018, *ALIUS Bulletin*) and has continued through co-authored papers on variational synthesis, evolutionary dynamics (2023), federated inference (2024), and multi-agent Active Inference.
 
 **Joint publications**: [WoodliceAndMen](../papers/2018_WoodliceAndMen/) · [VariationalSynthesis](../papers/2023_VariationalSynthesis/) · [FederatedInference](../papers/2024_FederatedInference/)
 
@@ -34,7 +34,9 @@ Karl Friston is the originator of the free energy principle and Active Inference
 
 Deborah Gordon was Friedman's PhD advisor at Stanford (2014–2019). Their collaboration produced foundational work on the behavioral, physiological, and transcriptomic bases of collective behavior in harvester ants (*Pogonomyrmex barbatus*), with publications in *Cell*, *iScience*, *Scientific Reports*, and the *Annual Review of Neuroscience*.
 
-**Joint publications**: [PhDDissertation](../papers/2019_PhDDissertation/) · [DopamineForaging](../papers/2018_DopamineForaging/) · [AntGenetics](../papers/2016_AntGenetics/) · [ForagingGene](../papers/2016_ForagingGene/) · [ForagerHydration](../papers/2019_ForagerHydration/)
+**Joint publications**: [DopamineForaging](../papers/2018_DopamineForaging/) · [AntGenetics](../papers/2016_AntGenetics/) · [ForagingGene](../papers/2016_ForagingGene/) · [ForagerHydration](../papers/2019_ForagerHydration/)
+
+**Advised dissertation**: [PhDDissertation](../papers/2019_PhDDissertation/) — authored by Friedman.
 
 ---
 
@@ -44,7 +46,7 @@ Deborah Gordon was Friedman's PhD advisor at Stanford (2014–2019). Their colla
 
 Brian Johnson co-mentored Friedman's NSF Postdoctoral Fellowship at UC Davis (2020–2023), focusing on distributed physiology and evolutionary genomics in eusocial insects.
 
-**Joint publications**: [DistributedPhysiology](../papers/2020_DistributedPhysiology/) · [GeneExpressionForagers](../papers/2020_GeneExpressionForagers/) · [NeurotransmitterVariation](../papers/2020_NeurotransmitterVariation/) · [HoneyBeeGeneExpression](../papers/2023_HoneyBeeGeneExpression/)
+**Joint publications**: [DistributedPhysiology](../papers/2020_DistributedPhysiology/) · [HoneyBeeGeneExpression](../papers/2023_HoneyBeeGeneExpression/)
 
 ---
 
@@ -52,9 +54,9 @@ Brian Johnson co-mentored Friedman's NSF Postdoctoral Fellowship at UC Davis (20
 
 **Domains**: Evolutionary Genomics, Social Evolution
 
-Tim Linksvayer co-mentored Friedman's postdoctoral work on evolutionary genomics in social insects, contributing to publications on gene expression, social complexity, and distributed physiology.
+Tim Linksvayer co-mentored Friedman's postdoctoral work on evolutionary genomics in social insects and co-authored the distributed physiology review.
 
-**Joint publications**: [BlattodeaDiversity](../papers/2024_BlattodeaDiversity/) · [DistributedPhysiology](../papers/2020_DistributedPhysiology/)
+**Joint publications**: [DistributedPhysiology](../papers/2020_DistributedPhysiology/)
 
 ---
 
@@ -98,11 +100,11 @@ Fields serves on the [AII Scientific Advisory Board](https://activeinference.ins
 
 ### Riddhi Pitliya
 
-**Domains**: Thoughtseeds Framework, Meditative States, Active Inference
+**Domains**: Multi-Agent Active Inference, Shared Protentions
 
-Pitliya and Friedman developed the Thoughtseeds framework — a hierarchical and agentic model for investigating thought dynamics in meditative states using Active Inference.
+Pitliya and Friedman co-authored work on shared protentions in multi-agent Active Inference, connecting anticipatory structure, shared goals, and coordination.
 
-**Joint publications**: [Thoughtseeds](../papers/2025_Thoughtseeds/) · [SharedProtentions](../papers/2024_SharedProtentions/)
+**Joint publications**: [SharedProtentions](../papers/2024_SharedProtentions/)
 
 ---
 
@@ -142,7 +144,7 @@ Søvik and Friedman explored whether ant colonies can serve as test cases for sc
 
 Cordes is the founder of COGSEC.org (Cognitive Security and Education Forum, 2018), with Friedman as honorary co-founder (2019). Together they developed cognitive security frameworks including ATLAS (question-oriented pattern languages for knowledge management), COGSEC volumes IRT-20 (2020), NIM-21 (2021), CAT-22 (2022), and the Knowledge Management Archipelago. Cordes and Friedman also developed multidisciplinary approaches to studying image memes and digital rhetoric at scale.
 
-**Joint publications**: [Facilitator's Catechism](../papers/2020_FacilitatorsCatechism/) · [ImageMemeResearch](../papers/2024_ImageMemeResearch/) · [DigitalRhetorical](../papers/2021_DigitalRhetorical/) · [P3IF](../papers/2023_P3IF/) · [CognitiveIntegrity](../papers/2026_CognitiveIntegrity/)
+**Joint publications**: [Facilitator's Catechism](../papers/2020_FacilitatorsCatechism/) · [ImageMemeResearch](../papers/2024_ImageMemeResearch/) · [DigitalRhetorical](../papers/2021_DigitalRhetorical/) · [P3IF](../papers/2023_P3IF/)
 
 ---
 
@@ -152,7 +154,7 @@ Cordes is the founder of COGSEC.org (Cognitive Security and Education Forum, 201
 
 Heins is a researcher at the VERSES AI Research Lab working on computational implementations of Active Inference. He and Friedman have collaborated on recent Active Inference papers involving scalable implementations and belief-based architectures.
 
-**Joint publications**: Recent co-authored Active Inference papers (2024)
+**Joint publications**: [FederatedInference](../papers/2024_FederatedInference/) (2024)
 
 ---
 
@@ -162,11 +164,11 @@ Heins is a researcher at the VERSES AI Research Lab working on computational imp
 
 Verbelen is a researcher at the VERSES AI Research Lab focusing on Active Inference implementations and distributed intelligence. He has co-authored papers with Friedman on federated inference and scalable Active Inference architectures.
 
-**Joint publications**: Recent co-authored Active Inference papers (2024)
+**Joint publications**: [FederatedInference](../papers/2024_FederatedInference/) (2024)
 
 ---
 
-### Mariana Mascarenhas
+### Mridula Mascarenhas
 
 **Domains**: Information Science, Digital Media
 
@@ -199,7 +201,7 @@ Friedman has conducted in-depth published interviews with leading researchers:
 | VERSES AI Research Lab | Collaborations with Conor Heins and Tim Verbelen on Active Inference implementations |
 | Active Inference Institute | Co-founder, President, Treasurer; 501(c)(3) non-profit (2021–present) |
 | COGSEC.org | Honorary co-founder |
-| ALIUS Research Group | Contributor — published interviews in *ALIUS Bulletin* (Dennett, Sapolsky, Hanks; co-authored with Friston) |
+| ALIUS Research Group | Contributor — published interviews in *ALIUS Bulletin* with Dennett, Sapolsky, Hanks, and Friston; interview credits are listed on each work page |
 | Santa Fe Institute | Participant in events and workshops |
 | Wonderfest | Speaker — Bay Area science education and public outreach |
 | KuppingerCole | Speaker at European Identity & Cloud Conference 2024 |

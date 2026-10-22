@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains
+# 🐜 Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies
 
 **Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton** (2020) · *Analytical & Bioanalytical Chemistry*
 
@@ -41,7 +41,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton (2020). *Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains*. Analytical & Bioanalytical Chemistry. DOI: 10.1007/s00216-019-02355-3. URL: https://doi.org/10.1007/s00216-019-02355-3.
+> Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton (2020). *Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies*. Analytical & Bioanalytical Chemistry. DOI: 10.1007/s00216-019-02355-3. URL: https://doi.org/10.1007/s00216-019-02355-3.
 
 ## Related
 

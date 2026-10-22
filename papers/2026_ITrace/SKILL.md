@@ -1,15 +1,15 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "iTrace: verification-first webcam eye-movement analysis"
+name: "iTrace: verification-first webcam eye-movement analysis (corrected manuscript)"
 description: "Archive note: The extracted image thumbnails are retained from itrace-0.4.1-manuscript.pdf and are not figures from the corrected 2026-10-16 manuscript. Use itrace-manuscript-2026-10-16.pdf or its pinned source archive for current figures. # iTrace m..."
 tags: ["eye-tracking", "webcam", "gaze", "saccades", "pupillometry", "open-source", "diagnostic-pilot"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *iTrace: verification-first webcam eye-movement analysis*. Zenodo."
+citation: "Daniel Ari Friedman (2026). *iTrace: verification-first webcam eye-movement analysis (corrected manuscript)*. Zenodo."
 doi: "10.5281/zenodo.20614908"
 artifact_doi: "10.5281/zenodo.23419306"
 ---
 
-# iTrace: verification-first webcam eye-movement analysis
+# iTrace: verification-first webcam eye-movement analysis (corrected manuscript)
 
 **Daniel Ari Friedman** (2026) · Computational
 

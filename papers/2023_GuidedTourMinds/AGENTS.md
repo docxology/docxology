@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — A guided tour through the spaces of particular "minds"
+# AGENTS.md — A guided tour through the spaces of particular “minds”: A Comment on “Path integrals, particular kinds, and strange things”
 
-**Paper**: A guided tour through the spaces of particular "minds" (2023)
+**Paper**: A guided tour through the spaces of particular “minds”: A Comment on “Path integrals, particular kinds, and strange things” (2023)
 **Domain**: Active Inference
 **Authors**: Ali Rahmjoo, Daniel Ari Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects A guided tour through the spaces of particular "minds" to related works in the bibliography
+- Connects A guided tour through the spaces of particular “minds”: A Comment on “Path integrals, particular kinds, and strange things” to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference
+# AGENTS.md — Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems
 
-**Paper**: Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference (2025)
+**Paper**: Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems (2025)
 **Domain**: Computational
 **Authors**: Die Schwarze Katze, Andrew Djuwidja, Daniel Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference to related works in the bibliography
+- Connects Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

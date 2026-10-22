@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Dennett Explained (interview with Daniel Dennett)
+# AGENTS.md — Dennett Explained. An interview with Daniel Dennett.
 
-**Paper**: Dennett Explained (interview with Daniel Dennett) (2019)
+**Paper**: Dennett Explained. An interview with Daniel Dennett. (2019)
 **Domain**: Genetics & Biomedical
 **Authors**: Daniel Dennett, Brendan Fleig-Goldstein, Daniel Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Dennett Explained (interview with Daniel Dennett) to related works in the bibliography
+- Connects Dennett Explained. An interview with Daniel Dennett. to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

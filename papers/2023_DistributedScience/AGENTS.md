@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Distributed Science — The Scientific Process as Multi-Scale Active Inference
+# AGENTS.md — Distributed Science - The Scientific Process as Multi-Scale Active Inference
 
-**Paper**: Distributed Science — The Scientific Process as Multi-Scale Active Inference (2023)
+**Paper**: Distributed Science - The Scientific Process as Multi-Scale Active Inference (2023)
 **Domain**: Active Inference
 **Authors**: Francesco Balzan, John Campbell, Karl Friston, Maxwell James Ramstead, Daniel Friedman, Axel Constant
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Distributed Science — The Scientific Process as Multi-Scale Active Inference to related works in the bibliography
+- Connects Distributed Science - The Scientific Process as Multi-Scale Active Inference to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

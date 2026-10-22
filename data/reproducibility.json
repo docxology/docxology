@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T00:14:35Z",
+  "generated_at": "2026-10-22T01:14:00Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -174,7 +174,7 @@
     {
       "num": 15,
       "citation_key": "Friedman2025MarkdownDecisionProcessFramework015",
-      "title": "Markdown Decision Process: A Framework for Probabilistic Document Analysis",
+      "title": "Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization",
       "year": 2025,
       "domain_name": "Computational",
       "type": "Paper",
@@ -216,7 +216,7 @@
     {
       "num": 62,
       "citation_key": "Friedman2023P3IFPropertiesProcessesPerspectives062",
-      "title": "The P3IF: Properties, Processes, and Perspectives Inter-Framework",
+      "title": "The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security",
       "year": 2023,
       "domain_name": "Cognitive Security",
       "type": "Paper",
@@ -363,7 +363,7 @@
     {
       "num": 119,
       "citation_key": "Friedman2026PolicyEntanglementActiveInference119",
-      "title": "Policy Entanglement in Active Inference",
+      "title": "Policy Entanglement in Active Inference: A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary",
       "year": 2026,
       "domain_name": "Computational",
       "type": "Paper",
@@ -657,7 +657,7 @@
     {
       "num": 165,
       "citation_key": "Friedman2026ITraceVerificationFirstWebcam165",
-      "title": "iTrace: verification-first webcam eye-movement analysis",
+      "title": "iTrace: verification-first webcam eye-movement analysis (corrected manuscript)",
       "year": 2026,
       "domain_name": "Computational",
       "type": "Paper",
@@ -909,7 +909,7 @@
     {
       "num": 180,
       "citation_key": "Friedman2026SortitionUpstreamNTQR180",
-      "title": "Sortition Upstream of NTQR",
+      "title": "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation",
       "year": 2026,
       "domain_name": "Computational",
       "type": "Paper",
@@ -1477,7 +1477,7 @@
     {
       "num": 219,
       "citation_key": "Friedman2026JevPracticeComposablePython219",
-      "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
+      "title": "daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation",
       "year": 2026,
       "domain_name": "Computational",
       "type": "Paper",
@@ -1700,7 +1700,7 @@
     {
       "num": 8,
       "citation_key": "Friedman20255thAppliedActiveInference008",
-      "title": "5th Applied Active Inference Symposium — Abstract Book",
+      "title": "Abstract book for: 5th Applied Active Inference Symposium",
       "year": 2025,
       "domain_name": "Media & Teaching",
       "type": "Presentation",
@@ -1719,7 +1719,7 @@
     {
       "num": 9,
       "citation_key": "Friedman2025AdaptiveBasicIncomeAuBI009",
-      "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference",
+      "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems",
       "year": 2025,
       "domain_name": "Computational",
       "type": "Paper",
@@ -1757,7 +1757,7 @@
     {
       "num": 13,
       "citation_key": "Friedman2025IncreasingAccessibilityApplicabilityActive013",
-      "title": "Increasing the Accessibility and Applicability of Active Inference",
+      "title": "Increasing the Accessibility and Applicability of Active Inference: Generative Playbooks and Open-Source Summer School Curriculum Development",
       "year": 2025,
       "domain_name": "Active Inference",
       "type": "Paper",
@@ -1852,7 +1852,7 @@
     {
       "num": 20,
       "citation_key": "Friedman2025SymergeticsSymbolicSynergeticsRational020",
-      "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic",
+      "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting",
       "year": 2025,
       "domain_name": "Art & Synergetics",
       "type": "Paper",
@@ -1909,7 +1909,7 @@
     {
       "num": 24,
       "citation_key": "Friedman2025ActiveInferenceInstituteActive024",
-      "title": "The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)",
+      "title": "The Active Inference Institute & Active Inference Ecosystem",
       "year": 2025,
       "domain_name": "AII Ecosystem",
       "type": "Paper",
@@ -1968,7 +1968,7 @@
     {
       "num": 33,
       "citation_key": "Friedman2024CommentsNationalDigitalTwins033",
-      "title": "Comments on National Digital Twins R&D Strategic Plan",
+      "title": "Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379",
       "year": 2024,
       "domain_name": "Cognitive Security",
       "type": "Paper",
@@ -2025,7 +2025,7 @@
     {
       "num": 38,
       "citation_key": "Friedman2024MathArtStream8William038",
-      "title": "MathArt Stream #8: William Blake and Active Inference",
+      "title": "MathArt Stream #8 ~ William Blake and Active Inference",
       "year": 2024,
       "domain_name": "Media & Teaching",
       "type": "Presentation",
@@ -2044,7 +2044,7 @@
     {
       "num": 39,
       "citation_key": "Friedman2024SensemakingFederationExploringFrontiers039",
-      "title": "Sensemaking Federation: Exploring the Frontiers of Digital Innovation",
+      "title": "Transcript of: \"Sensemaking Federation: Exploring the Frontiers of Digital Innovation\"",
       "year": 2024,
       "domain_name": "Media & Teaching",
       "type": "Presentation",
@@ -2063,7 +2063,7 @@
     {
       "num": 41,
       "citation_key": "Friedman2024ActiveInferenceInstituteActive041",
-      "title": "The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)",
+      "title": "The Active Inference Institute & Active Inference Ecosystem",
       "year": 2024,
       "domain_name": "AII Ecosystem",
       "type": "Paper",
@@ -2082,7 +2082,7 @@
     {
       "num": 42,
       "citation_key": "Friedman2024WayFindingInfiniteImaginarium042",
-      "title": "Way Finding in the Infinite Imaginarium",
+      "title": "Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes",
       "year": 2024,
       "domain_name": "Art & Synergetics",
       "type": "Paper",
@@ -2101,7 +2101,7 @@
     {
       "num": 47,
       "citation_key": "Friedman2023SnapshotPipelineTissueSpecific047",
-      "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees",
+      "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)",
       "year": 2023,
       "domain_name": "Entomology",
       "type": "Paper",
@@ -2158,7 +2158,7 @@
     {
       "num": 52,
       "citation_key": "Friedman2023CommentsAIAccountabilityPolicy052",
-      "title": "Comments on AI Accountability Policy to NTIA",
+      "title": "Comments on AI Accountability Policy Submitted to NTIA Docket 2023-0005-0001 by IRSIRI, AII, PFH, and COGSEC",
       "year": 2023,
       "domain_name": "Cognitive Security",
       "type": "Paper",
@@ -2253,7 +2253,7 @@
     {
       "num": 60,
       "citation_key": "Friedman2023PostdocReview20202023060",
-      "title": "Postdoc review (2020–2023)",
+      "title": "Postdoc review (2020-2023) ~ September 25, 2023",
       "year": 2023,
       "domain_name": "Media & Teaching",
       "type": "Presentation",
@@ -2272,7 +2272,7 @@
     {
       "num": 61,
       "citation_key": "Friedman2023ActiveInferenceInstituteActive061",
-      "title": "The Active Inference Institute and Active Inference Ecosystem (v1)",
+      "title": "The Active Inference Institute and Active Inference Ecosystem",
       "year": 2023,
       "domain_name": "AII Ecosystem",
       "type": "Paper",
@@ -2291,7 +2291,7 @@
     {
       "num": 65,
       "citation_key": "Friedman2023WilliamBlakeBuckminsterFuller065",
-      "title": "William Blake & Buckminster Fuller: Lives in Juxtaposition",
+      "title": "William Blake & Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity)",
       "year": 2023,
       "domain_name": "Art & Synergetics",
       "type": "Paper",
@@ -2310,7 +2310,7 @@
     {
       "num": 66,
       "citation_key": "Friedman2022ActiveInferenceOntologyDecentralized066",
-      "title": "An Active Inference Ontology for Decentralized Science",
+      "title": "An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons",
       "year": 2022,
       "domain_name": "Active Inference",
       "type": "Paper",
@@ -2329,7 +2329,7 @@
     {
       "num": 67,
       "citation_key": "Friedman2022CatechismTowardsActiveDiffusion067",
-      "title": "Catechism for Towards Active Diffusion",
+      "title": "Catechism for: \"Towards Active Diffusion: A Tale of Multiple (den)Cities\"",
       "year": 2022,
       "domain_name": "AII Ecosystem",
       "type": "Paper",
@@ -2348,7 +2348,7 @@
     {
       "num": 69,
       "citation_key": "Friedman2022FreeWillOrLack069",
-      "title": "On free will or the lack thereof (interview with Robert Sapolsky)",
+      "title": "On free will or the lack thereof",
       "year": 2022,
       "domain_name": "Genetics & Biomedical",
       "type": "Paper",
@@ -2367,7 +2367,7 @@
     {
       "num": 70,
       "citation_key": "Friedman2022PredictiveProcessingInterpretationMirror070",
-      "title": "Predictive Processing Interpretation of the Mirror Test",
+      "title": "Predictive Processing Interpretation of the Mirror Test and Implications of a Reflection Prediction for Human Cognition",
       "year": 2022,
       "domain_name": "Art & Synergetics",
       "type": "Paper",
@@ -3054,7 +3054,7 @@
     {
       "num": 168,
       "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
-      "title": "GeneralizedNotationNotation (GNN)",
+      "title": "Generalized_Notation_Notation (GNN)",
       "year": 2026,
       "domain_name": "Active Inference",
       "type": "Paper",
@@ -3360,7 +3360,7 @@
     {
       "num": 23,
       "citation_key": "Friedman2025TemporalDepthCoherentSelf023",
-      "title": "Temporal Depth in a Coherent Self and in Depersonalization",
+      "title": "Temporal depth in a coherent self and in depersonalization: theoretical model",
       "year": 2025,
       "domain_name": "Active Inference",
       "type": "Paper",
@@ -3398,7 +3398,7 @@
     {
       "num": 31,
       "citation_key": "Friedman2024BridgingGapsImageMeme031",
-      "title": "Bridging gaps in image meme research: A multidisciplinary paradigm",
+      "title": "Bridging gaps in image meme research: A multidisciplinary paradigm for scaling up qualitative analyses",
       "year": 2024,
       "domain_name": "Cognitive Security",
       "type": "Paper",
@@ -3493,7 +3493,7 @@
     {
       "num": 45,
       "citation_key": "Friedman2023GuidedTourThroughSpaces045",
-      "title": "A guided tour through the spaces of particular \"minds\"",
+      "title": "A guided tour through the spaces of particular “minds”: A Comment on “Path integrals, particular kinds, and strange things”",
       "year": 2023,
       "domain_name": "Active Inference",
       "type": "Paper",
@@ -3512,7 +3512,7 @@
     {
       "num": 46,
       "citation_key": "Friedman2023SinglePheromoneModelAccounts046",
-      "title": "A single-pheromone model accounts for empirical patterns of ant colony foraging",
+      "title": "A single-pheromone model accounts for empirical patterns of ant colony foraging previously modeled using two pheromones",
       "year": 2023,
       "domain_name": "Entomology",
       "type": "Paper",
@@ -3550,7 +3550,7 @@
     {
       "num": 53,
       "citation_key": "Friedman2023DistributedScienceScientificProcess053",
-      "title": "Distributed Science — The Scientific Process as Multi-Scale Active Inference",
+      "title": "Distributed Science - The Scientific Process as Multi-Scale Active Inference",
       "year": 2023,
       "domain_name": "Active Inference",
       "type": "Paper",
@@ -3588,7 +3588,7 @@
     {
       "num": 59,
       "citation_key": "Friedman2023OpenAccessScienceNeeds059",
-      "title": "Open Access science needs Open Science Sensemaking (OSSm)",
+      "title": "Open Access science needs Open Science Sensemaking (OSSm): open infrastructure for sharing scientific sensemaking data",
       "year": 2023,
       "domain_name": "Cognitive Security",
       "type": "Paper",
@@ -3664,7 +3664,7 @@
     {
       "num": 88,
       "citation_key": "Friedman2020MeasurementNaturalVariationNeurotransmitter088",
-      "title": "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains",
+      "title": "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies",
       "year": 2020,
       "domain_name": "Entomology",
       "type": "Paper",
@@ -3683,7 +3683,7 @@
     {
       "num": 91,
       "citation_key": "Friedman2020NeuroscienceDecisionMakingInterview091",
-      "title": "The neuroscience of decision making (interview with Timothy Hanks)",
+      "title": "The Neuroscience of Decision Making. An interview of Timothy Hanks by Alexandra Mikhailova and Daniel A. Friedman.",
       "year": 2020,
       "domain_name": "Genetics & Biomedical",
       "type": "Paper",
@@ -3702,7 +3702,7 @@
     {
       "num": 92,
       "citation_key": "Friedman2019DennettExplainedInterviewDaniel092",
-      "title": "Dennett Explained (interview with Daniel Dennett)",
+      "title": "Dennett Explained. An interview with Daniel Dennett.",
       "year": 2019,
       "domain_name": "Genetics & Biomedical",
       "type": "Paper",
@@ -3778,7 +3778,7 @@
     {
       "num": 98,
       "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
-      "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
+      "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness. An interview with Karl Friston.",
       "year": 2018,
       "domain_name": "Active Inference",
       "type": "Paper",
@@ -3797,7 +3797,7 @@
     {
       "num": 99,
       "citation_key": "Friedman2018PartnerPenPlayParallel099",
-      "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
+      "title": "Partner Pen Play in Parallel (PPPiP): A New PPPiParadigm for Relationship Improvement",
       "year": 2018,
       "domain_name": "Art & Synergetics",
       "type": "Paper",
@@ -3892,7 +3892,7 @@
     {
       "num": 104,
       "citation_key": "Friedman2016ContextDependentExpressionForaging104",
-      "title": "Context-dependent expression of the foraging gene in field colonies of ants",
+      "title": "Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task",
       "year": 2016,
       "domain_name": "Entomology",
       "type": "Paper",
@@ -4006,7 +4006,7 @@
     {
       "num": 43,
       "citation_key": "Friedman2024WhyPaleolithicRockstarsWere043",
-      "title": "Why Paleolithic Rockstars were both enigmatic and sporadic",
+      "title": "Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago",
       "year": 2024,
       "domain_name": "Genetics & Biomedical",
       "type": "Paper",
@@ -4120,7 +4120,7 @@
     {
       "num": 93,
       "citation_key": "Friedman2019PhDBehavioralPhysiologicalTranscriptomic093",
-      "title": "PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus",
+      "title": "Behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus)",
       "year": 2019,
       "domain_name": "Entomology",
       "type": "Paper",
@@ -4158,7 +4158,7 @@
     {
       "num": 64,
       "citation_key": "Friedman2023TranscriptChrisFieldsPhysics064",
-      "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course",
+      "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course in 2023",
       "year": 2023,
       "domain_name": "Media & Teaching",
       "type": "Course",
@@ -4215,7 +4215,7 @@
     {
       "num": 162,
       "citation_key": "Friedman2024CommentsSubmittedByBlockScience162",
-      "title": "Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum",
+      "title": "Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379",
       "year": 2024,
       "domain_name": "Cognitive Security",
       "type": "Paper",

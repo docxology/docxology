@@ -163,7 +163,7 @@ def check_work_citations(repo_root: Path) -> list[str]:
         resources = PaperResources.load(repo_root, work.get("docs_path", ""), visible)
         expected = {
             "citation_title": [work["title"]],
-            "citation_author": [display_name(name) for name in work.get("authors") or []],
+            f'citation_{work.get("contributor_role", "author")}': [display_name(name) for name in work.get("authors") or []],
             "citation_publication_date": [publication_date(work, resources.metadata or {}).replace("-", "/")],
         }
         if work.get("doi"):

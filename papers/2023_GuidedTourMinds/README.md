@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 A guided tour through the spaces of particular "minds"
+# 🧠 A guided tour through the spaces of particular “minds”: A Comment on “Path integrals, particular kinds, and strange things”
 
 **Ali Rahmjoo, Daniel Ari Friedman** (2023) · *Physics of Life Reviews*
 
@@ -38,7 +38,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Ali Rahmjoo, Daniel Ari Friedman (2023). *A guided tour through the spaces of particular "minds"*. Physics of Life Reviews. DOI: 10.1016/j.plrev.2023.11.001. URL: https://doi.org/10.1016/j.plrev.2023.11.001.
+> Ali Rahmjoo, Daniel Ari Friedman (2023). *A guided tour through the spaces of particular “minds”: A Comment on “Path integrals, particular kinds, and strange things”*. Physics of Life Reviews. DOI: 10.1016/j.plrev.2023.11.001. URL: https://doi.org/10.1016/j.plrev.2023.11.001.
 
 ## Related
 

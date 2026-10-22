@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)"
+name: "The Active Inference Institute & Active Inference Ecosystem"
 description: "This document surveys the current state of The Active Inference Institute and The Active Inference Ecosystem , in the context of our current and future directions. As embodied agents, we aim to update our decisions, goals and predictions as an instit..."
 tags: ["active-inference-institute", "organizational-update", "open-science", "community"]
 domain: "AII Ecosystem"
-citation: "Active Inference Institute, Alex Vyatkin, Alexandra Mikhailova, Andrea Hiott, Andrew Pashea, Ben Elers, Bert Berkers, Bleu Knight, Chris Fields, Dan Whittet, Daniel Friedman, Déan Ticklẽs, Fraser Paterson, Gareth Stubbs, Holly Grimm, Jakub Smekal, Jeremy Cooper, John Boik, Libor Burian, Mahault Albarracin, Maria Luiza Iennaco, Matthew Brown, Mick Thacker, Peter Gilli, Rafael Kaufmann, RJ Cordes, Ryan Henry, Sandeep Ramesh, Scott David, Sebastian Alvarado, Zach Baker (2024). *The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)*. Zenodo."
+citation: "Active Inference Institute, Alex Vyatkin, Alexandra Mikhailova, Andrea Hiott, Andrew Pashea, Ben Elers, Bert Berkers, Bleu Knight, Chris Fields, Dan Whittet, Daniel Friedman, Déan Ticklẽs, Fraser Paterson, Gareth Stubbs, Holly Grimm, Jakub Smekal, Jeremy Cooper, John Boik, Libor Burian, Mahault Albarracin, Maria Luiza Iennaco, Matthew Brown, Mick Thacker, Peter Gilli, Rafael Kaufmann, RJ Cordes, Ryan Henry, Sandeep Ramesh, Scott David, Sebastian Alvarado, Zach Baker (2024). *The Active Inference Institute & Active Inference Ecosystem*. Zenodo."
 doi: "10.5281/zenodo.14108992"
 ---
 
-# The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)
+# The Active Inference Institute & Active Inference Ecosystem
 
 **Active Inference Institute, Alex Vyatkin, Alexandra Mikhailova, Andrea Hiott, Andrew Pashea, Ben Elers, Bert Berkers, Bleu Knight, Chris Fields, Dan Whittet, Daniel Friedman, Déan Ticklẽs, Fraser Paterson, Gareth Stubbs, Holly Grimm, Jakub Smekal, Jeremy Cooper, John Boik, Libor Burian, Mahault Albarracin, Maria Luiza Iennaco, Matthew Brown, Mick Thacker, Peter Gilli, Rafael Kaufmann, RJ Cordes, Ryan Henry, Sandeep Ramesh, Scott David, Sebastian Alvarado, Zach Baker** (2024) · AII Ecosystem
 

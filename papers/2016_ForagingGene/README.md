@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 Context-dependent expression of the foraging gene in field colonies of ants
+# 🐜 Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task
 
 **Krista K. Ingram, Deborah M. Gordon, Daniel A. Friedman, Michael Greene, John Kahler, Swetha Peteru** (2016) · *Proceedings of the Royal Society B*
 
@@ -42,7 +42,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Krista K. Ingram, Deborah M. Gordon, Daniel A. Friedman, Michael Greene, John Kahler, Swetha Peteru (2016). *Context-dependent expression of the foraging gene in field colonies of ants*. Proceedings of the Royal Society B. DOI: 10.1098/rspb.2016.0841. URL: https://doi.org/10.1098/rspb.2016.0841.
+> Krista K. Ingram, Deborah M. Gordon, Daniel A. Friedman, Michael Greene, John Kahler, Swetha Peteru (2016). *Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task*. Proceedings of the Royal Society B. DOI: 10.1098/rspb.2016.0841. URL: https://doi.org/10.1098/rspb.2016.0841.
 
 ## Related
 

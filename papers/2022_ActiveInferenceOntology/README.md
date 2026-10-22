@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 An Active Inference Ontology for Decentralized Science
+# 🧠 An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons
 
 **Daniel Friedman, Shaun Applegate-Swanson, Jessica Angeli Balbuena, Arhan Choudhury, RJ Cordes, Shady El Damaty, Avel Guénin—Carlut, V. Bleu Knight, Ivan Metelkin, Siddhant Shrivastava, Amit Kumar Singh, Jakub Smékal, Tuttle. Caleb, Alexander Vyatkin** (2022) · *Zenodo*
 
@@ -44,7 +44,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Friedman, Shaun Applegate-Swanson, Jessica Angeli Balbuena, Arhan Choudhury, RJ Cordes, Shady El Damaty, Avel Guénin—Carlut, V. Bleu Knight, Ivan Metelkin, Siddhant Shrivastava, Amit Kumar Singh, Jakub Smékal, Tuttle. Caleb, Alexander Vyatkin (2022). *An Active Inference Ontology for Decentralized Science*. Zenodo. DOI: 10.5281/zenodo.6320574. URL: https://doi.org/10.5281/zenodo.6320574.
+> Daniel Friedman, Shaun Applegate-Swanson, Jessica Angeli Balbuena, Arhan Choudhury, RJ Cordes, Shady El Damaty, Avel Guénin—Carlut, V. Bleu Knight, Ivan Metelkin, Siddhant Shrivastava, Amit Kumar Singh, Jakub Smékal, Tuttle. Caleb, Alexander Vyatkin (2022). *An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons*. Zenodo. DOI: 10.5281/zenodo.6320574. URL: https://doi.org/10.5281/zenodo.6320574.
 
 ## Related
 

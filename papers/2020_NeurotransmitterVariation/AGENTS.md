@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains
+# AGENTS.md — Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies
 
-**Paper**: Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains (2020)
+**Paper**: Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies (2020)
 **Domain**: Entomology
 **Authors**: Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains to related works in the bibliography
+- Connects Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

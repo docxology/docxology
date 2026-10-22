@@ -4,7 +4,7 @@ name: "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theo
 description: "FEP_Lean / FEP Formal v1.6.0 is a reproducible catalogue of 168 canonical Lean topic bodies in 22 reviewed families across the Free Energy Principle, Active Inference, Bayesian Mechanics, Information Geometry and Thermodynamics. Each topic retains it..."
 tags: ["free-energy-principle", "active-inference", "bayesian-mechanics", "information-geometry", "non-equilibrium-thermodynamics", "lean-4", "mathlib", "interactive-theorem-proving", "formal-verification", "theorem-proving"]
 domain: "Active Inference"
-citation: "Daniel Ari Friedman (2026). *Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics*. Active Inference Journal."
+citation: "Daniel Ari Friedman (2026). *Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics*. Zenodo."
 doi: "10.5281/zenodo.19699233"
 artifact_doi: "10.5281/zenodo.22072956"
 ---

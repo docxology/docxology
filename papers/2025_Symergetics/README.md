@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 Symergetics: Symbolic Synergetics for Rational Arithmetic
+# 🎨 Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting
 
 **Daniel Friedman** (2025) · *Zenodo*
 
@@ -44,7 +44,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Friedman (2025). *Symergetics: Symbolic Synergetics for Rational Arithmetic*. Zenodo. DOI: 10.5281/zenodo.17114389. URL: https://doi.org/10.5281/zenodo.17114389.
+> Daniel Friedman (2025). *Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting*. Zenodo. DOI: 10.5281/zenodo.17114389. URL: https://doi.org/10.5281/zenodo.17114389.
 
 ## Related
 

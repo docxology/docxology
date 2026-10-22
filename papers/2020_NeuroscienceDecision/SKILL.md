@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "The neuroscience of decision making (interview with Timothy Hanks)"
+name: "The Neuroscience of Decision Making. An interview of Timothy Hanks by Alexandra Mikhailova and Daniel A. Friedman."
 description: "In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career. Hanks explores how ideas from computational neuroscience have helped him set his own research agenda and navigate e..."
 tags: ["decision-making", "computational-neuroscience", "bayesian-brain", "free-will", "mental-health", "attention", "neural-circuits"]
 domain: "Genetics & Biomedical"
-citation: "Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman (2020). *The neuroscience of decision making (interview with Timothy Hanks)*. ALIUS Bulletin."
+citation: "Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman (2020). *The Neuroscience of Decision Making. An interview of Timothy Hanks by Alexandra Mikhailova and Daniel A. Friedman.*. ALIUS Bulletin."
 doi: "10.34700/8pg4-0h12"
 ---
 
-# The neuroscience of decision making (interview with Timothy Hanks)
+# The Neuroscience of Decision Making. An interview of Timothy Hanks by Alexandra Mikhailova and Daniel A. Friedman.
 
 **Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman** (2020) · Genetics & Biomedical
 

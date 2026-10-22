@@ -125,8 +125,9 @@ def display_name(name: str) -> str:
 def byline_html(work: dict) -> str:
     names = work.get("authors") or []
     if not names:
-        return ""
-    return f'        <p class="byline">{h(", ".join(display_name(n) for n in names))}</p>'
+        return '<p class="byline">No individual contributor list is recorded. Consult the source before citing this catalog entry.</p>'
+    role = "Edited by " if work.get("contributor_role") == "editor" else ""
+    return f'        <p class="byline">{role}{h(", ".join(display_name(n) for n in names))}</p>'
 
 
 def _github_repo(identifiers: dict) -> str:
@@ -606,8 +607,10 @@ def citation_text(work: dict) -> str:
     url = work.get("url") or f"https://danielarifriedman.com/works/{work['citation_key']}.html"
     doi = f" DOI: {work['doi']}." if work.get("doi") else ""
     authors = "; ".join(work.get("authors") or [])
-    byline = f"{authors}. " if authors else ""
-    return f"{byline}{work['year']}. {work['title']}.{venue}{doi} URL: {url}."
+    role = " (eds.)" if work.get("contributor_role") == "editor" else ""
+    byline = f'{(authors + role).rstrip(".")}. ' if authors else ""
+    title_stop = "" if work["title"].endswith((".", "?", "!")) else "."
+    return f"{byline}{work['year']}. {work['title']}{title_stop}{venue}{doi} URL: {url}."
 
 
 def breadcrumb_trail(work: dict) -> list[tuple[str, str]]:
@@ -674,7 +677,7 @@ def json_ld(work: dict) -> str:
         "image": "https://danielarifriedman.com/og-publications.jpg",
     }
     if author := author_ld(work):
-        data["author"] = author
+        data[work.get("contributor_role", "author")] = author
     if work.get("doi"):
         data["identifier"] = [
             {"@type": "PropertyValue", "propertyID": "DOI", "value": work["doi"], "url": f"https://doi.org/{work['doi']}"},
@@ -766,7 +769,8 @@ def page_head(work: dict) -> str:
     resources = resources_for(work)
     citation_meta = [f'<meta name="citation_title" content="{h(work["title"])}">',
                      f'<meta name="citation_publication_date" content="{h(publication_date(work, resources.metadata or {}).replace("-", "/"))}">']
-    citation_meta.extend(f'<meta name="citation_author" content="{h(display_name(name))}">' for name in work.get("authors") or [])
+    role = work.get("contributor_role", "author")
+    citation_meta.extend(f'<meta name="citation_{role}" content="{h(display_name(name))}">' for name in work.get("authors") or [])
     citation_meta.extend(f'<meta name="citation_{name}" content="{h(value)}">' for name, value in journal_fields(work, resources.metadata or {}).items())
     if work.get("doi"):
         citation_meta.append(f'<meta name="citation_doi" content="{h(work["doi"])}">')
@@ -966,7 +970,7 @@ def render_index(works: list[dict]) -> str:
     rows = "\n".join(
         f"""                <article class="work-row">
                     <div class="year">{h(w['year'])}</div>
-                    <div><a href="{h(w['citation_key'])}.html">{h(w['title'])}</a><div class="venue">{h(w['domain_name'])} · {h(w['venue'])}</div></div>
+                    <div><a href="{h(canonical_work_key(w['citation_key']))}.html">{h(w['title'])}</a><div class="venue">{h(w['domain_name'])} · {h(w['venue'])}</div></div>
                     <a href="{h(w.get('url') or '../publications.html')}">Source</a>
                 </article>"""
         for w in sorted(works, key=lambda x: (int(x["year"]), -int(x["num"])), reverse=True)
@@ -976,7 +980,7 @@ def render_index(works: list[dict]) -> str:
             {
                 "@type": "ListItem",
                 "position": index + 1,
-                "url": f"https://danielarifriedman.com/works/{w['citation_key']}.html",
+                "url": f"https://danielarifriedman.com/works/{canonical_work_key(w['citation_key'])}.html",
                 "name": w["title"],
             }
             for index, w in enumerate(sorted(works, key=lambda x: (int(x["year"]), -int(x["num"])), reverse=True))

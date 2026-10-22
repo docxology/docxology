@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧬 On free will or the lack thereof (interview with Robert Sapolsky)
+# 🧬 On free will or the lack thereof
 
 **Robert Sapolsky, Alexandra Mikhailova, Daniel Friedman** (2022) · *ALIUS Bulletin*
 
@@ -41,7 +41,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Robert Sapolsky, Alexandra Mikhailova, Daniel Friedman (2022). *On free will or the lack thereof (interview with Robert Sapolsky)*. ALIUS Bulletin. DOI: 10.5281/zenodo.7394900. URL: https://doi.org/10.5281/zenodo.7394900.
+> Robert Sapolsky, Alexandra Mikhailova, Daniel Friedman (2022). *On free will or the lack thereof*. ALIUS Bulletin. DOI: 10.5281/zenodo.7394900. URL: https://doi.org/10.5281/zenodo.7394900.
 
 ## Related
 

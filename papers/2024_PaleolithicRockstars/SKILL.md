@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Why Paleolithic Rockstars were both enigmatic and sporadic"
+name: "Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago"
 description: "No abstract is recorded for this work yet; see the DOI or bibliography link."
 tags: ["paleolithicrockstars"]
 domain: "Genetics & Biomedical"
-citation: "Dean Tickles, Daniel Ari Friedman (2024). *Why Paleolithic Rockstars were both enigmatic and sporadic*. Physics of Life Reviews."
+citation: "Dean Tickles, Daniel Ari Friedman (2024). *Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago*. Physics of Life Reviews."
 doi: "10.1016/j.plrev.2024.04.010"
 ---
 
-# Why Paleolithic Rockstars were both enigmatic and sporadic
+# Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago
 
 **Dean Tickles, Daniel Ari Friedman** (2024) · Genetics & Biomedical
 

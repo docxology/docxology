@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Increasing the Accessibility and Applicability of Active Inference
+# AGENTS.md — Increasing the Accessibility and Applicability of Active Inference: Generative Playbooks and Open-Source Summer School Curriculum Development
 
-**Paper**: Increasing the Accessibility and Applicability of Active Inference (2025)
+**Paper**: Increasing the Accessibility and Applicability of Active Inference: Generative Playbooks and Open-Source Summer School Curriculum Development (2025)
 **Domain**: Active Inference
 **Authors**: Alexandra Mikhailova, Daniel Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Increasing the Accessibility and Applicability of Active Inference to related works in the bibliography
+- Connects Increasing the Accessibility and Applicability of Active Inference: Generative Playbooks and Open-Source Summer School Curriculum Development to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

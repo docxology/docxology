@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "Policy Entanglement in Active Inference"
+title: "Policy Entanglement in Active Inference: A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary"
 version: "1.0"
 date-released: 2026
 doi: 10.5281/zenodo.20418904

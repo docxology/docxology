@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Symergetics: Symbolic Synergetics for Rational Arithmetic
+# AGENTS.md — Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting
 
-**Paper**: Symergetics: Symbolic Synergetics for Rational Arithmetic (2025)
+**Paper**: Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting (2025)
 **Domain**: Art & Synergetics
 **Authors**: Daniel Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Symergetics: Symbolic Synergetics for Rational Arithmetic to related works in the bibliography
+- Connects Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

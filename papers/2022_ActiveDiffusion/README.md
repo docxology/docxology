@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🌍 Catechism for Towards Active Diffusion
+# 🌍 Catechism for: "Towards Active Diffusion: A Tale of Multiple (den)Cities"
 
 **Jakub Smékal, Daniel Friedman** (2022) · *Zenodo*
 
@@ -40,7 +40,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Jakub Smékal, Daniel Friedman (2022). *Catechism for Towards Active Diffusion*. Zenodo. DOI: 10.5281/zenodo.7443847. URL: https://doi.org/10.5281/zenodo.7443847.
+> Jakub Smékal, Daniel Friedman (2022). *Catechism for: "Towards Active Diffusion: A Tale of Multiple (den)Cities"*. Zenodo. DOI: 10.5281/zenodo.7443847. URL: https://doi.org/10.5281/zenodo.7443847.
 
 ## Related
 

@@ -213,11 +213,11 @@ def bib_escape(value: str) -> str:
     return value.replace("\\", "\\\\").replace("{", "\\{").replace("}", "\\}")
 
 
-def bibtex_entry(work: Work) -> str:
+def bibtex_entry(work: Work, *, contributor_role: str = "author") -> str:
     entry_type = TYPE_TO_BIBTEX.get(work.type, "misc")
     fields = [
         ("title", work.title),
-        ("author", " and ".join(author_names(work))),
+        (contributor_role, " and ".join(author_names(work))),
         ("year", str(work.year)),
     ]
     if entry_type in {"article", "incollection"} and work.venue:
@@ -238,13 +238,13 @@ def bibtex_entry(work: Work) -> str:
     return f"@{entry_type}{{{work.citation_key},\n{body}\n}}"
 
 
-def csl_item(work: Work) -> dict:
+def csl_item(work: Work, *, contributor_role: str = "author") -> dict:
     authors = author_names(work)
     item = {
         "id": work.citation_key,
         "type": TYPE_TO_CSL.get(work.type, "article-journal"),
         "title": work.title,
-        **({"author": [split_author(name) for name in authors]} if authors else {}),
+        **({contributor_role: [split_author(name) for name in authors]} if authors else {}),
         "issued": {"date-parts": [[work.year]]},
         "genre": work.type,
         "keyword": f"{work.domain_name}; {work.type}",
@@ -260,10 +260,10 @@ def csl_item(work: Work) -> dict:
     return item
 
 
-def ris_record(work: Work) -> str:
+def ris_record(work: Work, *, contributor_role: str = "author") -> str:
     lines = [f"TY  - {TYPE_TO_RIS.get(work.type, 'GEN')}"]
     # RIS repeats AU for each author, in order.
-    lines.extend(f"AU  - {name}" for name in author_names(work))
+    lines.extend(f'{"ED" if contributor_role == "editor" else "AU"}  - {name}' for name in author_names(work))
     lines.extend([f"PY  - {work.year}", f"TI  - {work.title}"])
     if work.venue:
         lines.append(f"T2  - {work.venue}")
@@ -292,19 +292,23 @@ def existing_generated_at(path: Path) -> str | None:
 
 
 def render_outputs(works: list[Work], generated_at: str | None = None) -> dict[Path, str]:
+    from docxology_tools.author_entities import load_author_records, reviewed_contributor_role
+
+    records = load_author_records(REPO_ROOT)
+    roles = {work.citation_key: reviewed_contributor_role(asdict(work), records) for work in works}
     data_dir = REPO_ROOT / "data"
     works_json = {
         "generated_at": generated_at or generated_timestamp(),
         "source": "pages/BIBLIOGRAPHY.md",
         "schema_ref": "/data/agent-index.json#schemas/Work",
         "count": len(works),
-        "works": [asdict(w) for w in works],
+        "works": [{**asdict(w), **({"contributor_role": "editor"} if roles[w.citation_key] == "editor" else {})} for w in works],
     }
     return {
-        REPO_ROOT / "bibliography.bib": "\n\n".join(bibtex_entry(w) for w in works) + "\n",
-        REPO_ROOT / "bibliography.ris": "\n\n".join(ris_record(w) for w in works) + "\n",
+        REPO_ROOT / "bibliography.bib": "\n\n".join(bibtex_entry(w, contributor_role=roles[w.citation_key]) for w in works) + "\n",
+        REPO_ROOT / "bibliography.ris": "\n\n".join(ris_record(w, contributor_role=roles[w.citation_key]) for w in works) + "\n",
         REPO_ROOT / "bibliography.csl.json": json.dumps(
-            [csl_item(w) for w in works], indent=2, ensure_ascii=False
+            [csl_item(w, contributor_role=roles[w.citation_key]) for w in works], indent=2, ensure_ascii=False
         )
         + "\n",
         data_dir / "works.json": json.dumps(works_json, indent=2, ensure_ascii=False) + "\n",

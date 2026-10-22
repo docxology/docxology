@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement
+# 🎨 Partner Pen Play in Parallel (PPPiP): A New PPPiParadigm for Relationship Improvement
 
 **Alexandra Mikhailova, Daniel A. Friedman** (2018) · *Arts*
 
@@ -41,7 +41,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Alexandra Mikhailova, Daniel A. Friedman (2018). *Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement*. Arts. DOI: 10.3390/arts7030039. URL: https://doi.org/10.3390/arts7030039.
+> Alexandra Mikhailova, Daniel A. Friedman (2018). *Partner Pen Play in Parallel (PPPiP): A New PPPiParadigm for Relationship Improvement*. Arts. DOI: 10.3390/arts7030039. URL: https://doi.org/10.3390/arts7030039.
 
 ## Related
 

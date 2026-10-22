@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Symergetics: Symbolic Synergetics for Rational Arithmetic"
+name: "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting"
 description: "Floating-point arithmetic introduces systematic approximation errors that obscure fundamental mathematical relationships in geometric calculations, producing results like 2.999999999999999 instead of the exact integer 3. These compounding and confoun..."
 tags: ["symergetics", "synergetics", "buckminster-fuller", "rational-arithmetic", "quadray-coordinates", "ivm-lattice", "symbolic-computation", "computational-geometry"]
 domain: "Art & Synergetics"
-citation: "Daniel Friedman (2025). *Symergetics: Symbolic Synergetics for Rational Arithmetic*. Zenodo."
+citation: "Daniel Friedman (2025). *Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting*. Zenodo."
 doi: "10.5281/zenodo.17114389"
 ---
 
-# Symergetics: Symbolic Synergetics for Rational Arithmetic
+# Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting
 
 **Daniel Friedman** (2025) · Art & Synergetics
 

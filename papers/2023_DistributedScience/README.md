@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 Distributed Science — The Scientific Process as Multi-Scale Active Inference
+# 🧠 Distributed Science - The Scientific Process as Multi-Scale Active Inference
 
 **Francesco Balzan, John Campbell, Karl Friston, Maxwell James Ramstead, Daniel Friedman, Axel Constant** (2023) · *OSF*
 
@@ -41,7 +41,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Francesco Balzan, John Campbell, Karl Friston, Maxwell James Ramstead, Daniel Friedman, Axel Constant (2023). *Distributed Science — The Scientific Process as Multi-Scale Active Inference*. OSF. DOI: 10.31219/osf.io/dnw5k. URL: https://doi.org/10.31219/osf.io/dnw5k.
+> Francesco Balzan, John Campbell, Karl Friston, Maxwell James Ramstead, Daniel Friedman, Axel Constant (2023). *Distributed Science - The Scientific Process as Multi-Scale Active Inference*. OSF. DOI: 10.31219/osf.io/dnw5k. URL: https://doi.org/10.31219/osf.io/dnw5k.
 
 ## Related
 

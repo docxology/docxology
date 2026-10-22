@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 A single-pheromone model accounts for empirical patterns of ant colony foraging
+# 🐜 A single-pheromone model accounts for empirical patterns of ant colony foraging previously modeled using two pheromones
 
 **Eric Saund, Daniel Ari Friedman** (2023) · *Cognitive Systems Research*
 
@@ -42,7 +42,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Eric Saund, Daniel Ari Friedman (2023). *A single-pheromone model accounts for empirical patterns of ant colony foraging*. Cognitive Systems Research. DOI: 10.1016/j.cogsys.2023.02.005. URL: https://doi.org/10.1016/j.cogsys.2023.02.005.
+> Eric Saund, Daniel Ari Friedman (2023). *A single-pheromone model accounts for empirical patterns of ant colony foraging previously modeled using two pheromones*. Cognitive Systems Research. DOI: 10.1016/j.cogsys.2023.02.005. URL: https://doi.org/10.1016/j.cogsys.2023.02.005.
 
 ## Related
 

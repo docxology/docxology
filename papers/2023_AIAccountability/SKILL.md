@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Comments on AI Accountability Policy to NTIA"
+name: "Comments on AI Accountability Policy Submitted to NTIA Docket 2023-0005-0001 by IRSIRI, AII, PFH, and COGSEC"
 description: "As a result of recent advances in Large Language Models (LLMs), Artificial Intelligence (AI) has become a focus of popular discussion. Risks associated with AI have been considered for as long as such technologies have been imagined, and have been co..."
 tags: ["ai-accountability", "ntia", "policy-comment", "cognitive-security", "p3if", "information-risk", "ai-governance", "synthetic-intelligence"]
 domain: "Cognitive Security"
-citation: "Scott David, Jumana Abu-Ghazaleh, Daniel Friedman, RJ Cordes (2023). *Comments on AI Accountability Policy to NTIA*. NTIA."
+citation: "Scott David, Jumana Abu-Ghazaleh, Daniel Friedman, RJ Cordes (2023). *Comments on AI Accountability Policy Submitted to NTIA Docket 2023-0005-0001 by IRSIRI, AII, PFH, and COGSEC*. NTIA."
 doi: "10.5281/zenodo.8025956"
 ---
 
-# Comments on AI Accountability Policy to NTIA
+# Comments on AI Accountability Policy Submitted to NTIA Docket 2023-0005-0001 by IRSIRI, AII, PFH, and COGSEC
 
 **Scott David, Jumana Abu-Ghazaleh, Daniel Friedman, RJ Cordes** (2023) · Cognitive Security
 

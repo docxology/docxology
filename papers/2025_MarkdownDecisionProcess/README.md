@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 💻 Markdown Decision Process: A Framework for Probabilistic Document Analysis
+# 💻 Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization
 
 **Daniel Friedman** (2025) · *Zenodo*
 
@@ -53,7 +53,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Friedman (2025). *Markdown Decision Process: A Framework for Probabilistic Document Analysis*. Zenodo. DOI: 10.5281/zenodo.17244386. URL: https://doi.org/10.5281/zenodo.17244386.
+> Daniel Friedman (2025). *Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization*. Zenodo. DOI: 10.5281/zenodo.17244386. URL: https://doi.org/10.5281/zenodo.17244386.
 
 ## Related
 

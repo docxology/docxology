@@ -62,7 +62,6 @@ DERIVED_STEPS = {
     "sitemap",
     "release-integrity",
     # Renderers with no repository-file inputs (in-script tables/templates).
-    "pillar-pages",
     "redirect-stubs",
     "404-page",
     "pages-artifact",

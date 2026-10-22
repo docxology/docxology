@@ -129,7 +129,7 @@ def main_entity_object(row: BiblioRow, same_as: str, work: dict | None = None, a
         "name": row.title,
         "headline": row.title,
         "datePublished": row.year,
-        "author": _author_block(row.authors, author_types),
+        (work or {}).get("contributor_role", "author"): _author_block(row.authors, author_types),
         "publisher": {"@type": "Organization", "name": pub_name},
         "keywords": row.domain,
     }

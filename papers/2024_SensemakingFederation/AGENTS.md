@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Sensemaking Federation: Exploring the Frontiers of Digital Innovation
+# AGENTS.md — Transcript of: "Sensemaking Federation: Exploring the Frontiers of Digital Innovation"
 
-**Paper**: Sensemaking Federation: Exploring the Frontiers of Digital Innovation (2024)
+**Paper**: Transcript of: "Sensemaking Federation: Exploring the Frontiers of Digital Innovation" (2024)
 **Domain**: Presentations & Media
 **Authors**: Sensemaking Scenius
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Sensemaking Federation: Exploring the Frontiers of Digital Innovation to related works in the bibliography
+- Connects Transcript of: "Sensemaking Federation: Exploring the Frontiers of Digital Innovation" to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

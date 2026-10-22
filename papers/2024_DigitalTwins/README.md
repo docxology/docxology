@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ Comments on National Digital Twins R&D Strategic Plan
+# 🛡️ Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379
 
 **RJ Cordes** (2024) · *Zenodo*
 
@@ -40,7 +40,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> RJ Cordes (2024). *Comments on National Digital Twins R&D Strategic Plan*. Zenodo. DOI: 10.5281/zenodo.13273681. URL: https://doi.org/10.5281/zenodo.13273681.
+> RJ Cordes (2024). *Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379*. Zenodo. DOI: 10.5281/zenodo.13273681. URL: https://doi.org/10.5281/zenodo.13273681.
 
 ## Related
 

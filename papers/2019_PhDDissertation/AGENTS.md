@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus
+# AGENTS.md — Behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus)
 
-**Paper**: PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus (2019)
+**Paper**: Behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus) (2019)
 **Domain**: Entomology
 **Authors**: Daniel Ari Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus to related works in the bibliography
+- Connects Behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus) to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

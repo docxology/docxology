@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Temporal Depth in a Coherent Self and in Depersonalization"
+name: "Temporal depth in a coherent self and in depersonalization: theoretical model"
 description: "This paper develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization. Using Active Inference, we formalize how subjective temporal experience is constructed through hierarchical predictive proc..."
 tags: ["temporal-depth", "depersonalization", "self-coherence", "active-inference", "predictive-processing", "temporal-integration", "clinical-psychology"]
 domain: "Active Inference"
-citation: "Alexey Tolchinsky, Michael Levin, Chris Fields, Lancelot Da Costa, Rachael Murphy, Daniel Friedman, David Pincus (2025). *Temporal Depth in a Coherent Self and in Depersonalization*. Frontiers in Psychology."
+citation: "Alexey Tolchinsky, Michael Levin, Chris Fields, Lancelot Da Costa, Rachael Murphy, Daniel Friedman, David Pincus (2025). *Temporal depth in a coherent self and in depersonalization: theoretical model*. Frontiers in Psychology."
 doi: "10.3389/fpsyg.2025.1585315"
 ---
 
-# Temporal Depth in a Coherent Self and in Depersonalization
+# Temporal depth in a coherent self and in depersonalization: theoretical model
 
 **Alexey Tolchinsky, Michael Levin, Chris Fields, Lancelot Da Costa, Rachael Murphy, Daniel Friedman, David Pincus** (2025) · Active Inference
 

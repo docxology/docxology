@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Postdoc review (2020–2023)"
+name: "Postdoc review (2020-2023) ~ September 25, 2023"
 description: "A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Science, and (f) Philosophy & Arts. The presentation ..."
 tags: ["postdoctoral-review", "research-portfolio", "active-inference", "entomology", "cognitive-security", "meta-science", "philosophy", "biology", "interdisciplinary-research"]
 domain: "Presentations & Media"
-citation: "Daniel Ari Friedman (2023). *Postdoc review (2020–2023)*. Presentation."
+citation: "Daniel Ari Friedman (2023). *Postdoc review (2020-2023) ~ September 25, 2023*. Presentation."
 doi: "10.5281/zenodo.8377987"
 ---
 
-# Postdoc review (2020–2023)
+# Postdoc review (2020-2023) ~ September 25, 2023
 
 **Daniel Ari Friedman** (2023) · Presentations & Media
 

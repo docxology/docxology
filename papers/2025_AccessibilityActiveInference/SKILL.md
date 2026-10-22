@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Increasing the Accessibility and Applicability of Active Inference"
+name: "Increasing the Accessibility and Applicability of Active Inference: Generative Playbooks and Open-Source Summer School Curriculum Development"
 description: "A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Development. The proposal identifies technical, academi..."
 tags: ["accessibility", "active-inference", "pedagogy", "summer-school-curriculum", "generative-playbooks", "open-source-education", "neurotechnology", "neurodiversity", "cognitive-security"]
 domain: "Active Inference"
-citation: "Alexandra Mikhailova, Daniel Friedman (2025). *Increasing the Accessibility and Applicability of Active Inference*. Zenodo."
+citation: "Alexandra Mikhailova, Daniel Friedman (2025). *Increasing the Accessibility and Applicability of Active Inference: Generative Playbooks and Open-Source Summer School Curriculum Development*. Zenodo."
 doi: "10.5281/zenodo.15061666"
 ---
 
-# Increasing the Accessibility and Applicability of Active Inference
+# Increasing the Accessibility and Applicability of Active Inference: Generative Playbooks and Open-Source Summer School Curriculum Development
 
 **Alexandra Mikhailova, Daniel Friedman** (2025) · Active Inference
 

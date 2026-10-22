@@ -78,7 +78,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 - 2026 — [Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences](https://doi.org/10.1007/978-3-032-16955-6_11)
 - 2026 — [Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case](https://doi.org/10.5281/zenodo.19695259)
 - 2026 — [Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics](https://doi.org/10.5281/zenodo.19699233)
-- 2026 — [GeneralizedNotationNotation (GNN)](https://doi.org/10.5281/zenodo.7803313)
+- 2026 — [Generalized_Notation_Notation (GNN)](https://doi.org/10.5281/zenodo.7803313)
 - 2026 — [On-Policy Distillation as Active Inference in Finite Variational Models](https://doi.org/10.5281/zenodo.20747834)
 
 **Selected repositories**
@@ -184,7 +184,7 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 
 - 2026 — [A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication](https://doi.org/10.5281/zenodo.16903351)
 - 2026 — [Introduction to Biology: A Generative Approach](https://doi.org/10.5281/zenodo.20286477)
-- 2026 — [Policy Entanglement in Active Inference](https://doi.org/10.5281/zenodo.20418904)
+- 2026 — [Policy Entanglement in Active Inference: A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary](https://doi.org/10.5281/zenodo.20418904)
 - 2026 — [Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task](https://doi.org/10.5281/zenodo.20417016)
 - 2026 — [Convergence Analysis of Gradient Descent Optimization](https://doi.org/10.5281/zenodo.20417136)
 - 2026 — [Editorial Quality at Scale: A Reproducible Prose-Review Pipeline](https://doi.org/10.5281/zenodo.20417104)
@@ -221,10 +221,10 @@ Honey bee evolution, gene expression variation, nuclear structure, population ge
 
 - 2025 — [BevCyc - posit on primitive drivers of creatures](https://doi.org/10.5281/zenodo.14737075)
 - 2025 — [Con-cat-enate: pilot overview](https://doi.org/10.5281/zenodo.14737042)
-- 2024 — [Why Paleolithic Rockstars were both enigmatic and sporadic](https://doi.org/10.1016/j.plrev.2024.04.010)
+- 2024 — [Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago](https://doi.org/10.1016/j.plrev.2024.04.010)
 - 2023 — [To comment or not to comment, that is the question!](https://doi.org/10.1016/j.plrev.2023.06.002)
-- 2022 — [On free will or the lack thereof (interview with Robert Sapolsky)](https://doi.org/10.5281/zenodo.7394900)
-- 2020 — [The neuroscience of decision making (interview with Timothy Hanks)](https://doi.org/10.34700/8pg4-0h12)
+- 2022 — [On free will or the lack thereof](https://doi.org/10.5281/zenodo.7394900)
+- 2020 — [The Neuroscience of Decision Making. An interview of Timothy Hanks by Alexandra Mikhailova and Daniel A. Friedman.](https://doi.org/10.34700/8pg4-0h12)
 
 **Selected repositories**
 
@@ -254,11 +254,11 @@ Active Inference Institute programs, infrastructure, textbook cohorts, and organ
 **Selected works**
 
 - 2026 — [Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference](https://doi.org/10.5281/zenodo.23066903)
-- 2025 — [The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)](https://doi.org/10.5281/zenodo.17982447)
+- 2025 — [The Active Inference Institute & Active Inference Ecosystem](https://doi.org/10.5281/zenodo.17982447)
 - 2024 — [Aligning Active Inference Ontology to SUMO](https://doi.org/10.5281/zenodo.11459322)
-- 2024 — [The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)](https://doi.org/10.5281/zenodo.14108992)
-- 2023 — [The Active Inference Institute and Active Inference Ecosystem (v1)](https://doi.org/10.5281/zenodo.8266280)
-- 2022 — [Catechism for Towards Active Diffusion](https://doi.org/10.5281/zenodo.7443847)
+- 2024 — [The Active Inference Institute & Active Inference Ecosystem](https://doi.org/10.5281/zenodo.14108992)
+- 2023 — [The Active Inference Institute and Active Inference Ecosystem](https://doi.org/10.5281/zenodo.8266280)
+- 2022 — [Catechism for: "Towards Active Diffusion: A Tale of Multiple (den)Cities"](https://doi.org/10.5281/zenodo.7443847)
 
 **Selected repositories**
 
@@ -289,10 +289,10 @@ Talks, courses, presentations, and media artifacts connected to the research and
 
 - 2026 — [Active Inference Journal — 500+ videos on Active Inference with transcripts](https://video.activeinference.institute/)
 - 2026 — [Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions](https://www.youtube.com/@danielarifriedman/playlists)
-- 2025 — [5th Applied Active Inference Symposium — Abstract Book](https://doi.org/10.5281/zenodo.17555266)
+- 2025 — [Abstract book for: 5th Applied Active Inference Symposium](https://doi.org/10.5281/zenodo.17555266)
 - 2025 — [Systems Processes, Active Inference, and Beyond](https://doi.org/10.5281/zenodo.17138223)
-- 2024 — [MathArt Stream #8: William Blake and Active Inference](https://doi.org/10.5281/zenodo.13711301)
-- 2024 — [Sensemaking Federation: Exploring the Frontiers of Digital Innovation](https://doi.org/10.5281/zenodo.14574046)
+- 2024 — [MathArt Stream #8 ~ William Blake and Active Inference](https://doi.org/10.5281/zenodo.13711301)
+- 2024 — [Transcript of: "Sensemaking Federation: Exploring the Frontiers of Digital Innovation"](https://doi.org/10.5281/zenodo.14574046)
 
 **Selected repositories**
 

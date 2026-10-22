@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "MathArt Stream #8: William Blake and Active Inference"
+name: "MathArt Stream #8 ~ William Blake and Active Inference"
 description: "This Stream: 0. What might Blake have to do with any of this? 1. A view on Blake’s view on Art 2. A view on Blake’s view on Math 3. A view on Blake’s view on Active Inference"
 tags: ["william-blake", "mathematics", "art", "prophetic-vision", "geometric-structures", "active-inference"]
 domain: "Presentations & Media"
-citation: "Daniel Ari Friedman (2024). *MathArt Stream #8: William Blake and Active Inference*. Presentation."
+citation: "Daniel Ari Friedman (2024). *MathArt Stream #8 ~ William Blake and Active Inference*. Presentation."
 doi: "10.5281/zenodo.13711301"
 ---
 
-# MathArt Stream #8: William Blake and Active Inference
+# MathArt Stream #8 ~ William Blake and Active Inference
 
 **Daniel Ari Friedman** (2024) · Presentations & Media
 

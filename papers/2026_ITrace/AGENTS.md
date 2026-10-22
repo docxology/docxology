@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — iTrace: verification-first webcam eye-movement analysis
+# AGENTS.md — iTrace: verification-first webcam eye-movement analysis (corrected manuscript)
 
-**Paper**: iTrace: verification-first webcam eye-movement analysis (2026)
+**Paper**: iTrace: verification-first webcam eye-movement analysis (corrected manuscript) (2026)
 **Domain**: Computational
 **Authors**: Daniel Ari Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects iTrace: verification-first webcam eye-movement analysis to related works in the bibliography
+- Connects iTrace: verification-first webcam eye-movement analysis (corrected manuscript) to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

@@ -1,0 +1,32 @@
+{
+  "Friedman2021InnovatorSDigitalPlaybook078": {
+    "num": 78,
+    "title": "Innovator's Digital Playbook",
+    "source_url": "https://www.innovatorsdigitalplaybook.com/",
+    "final_url": "https://www.innovatorsdigitalplaybook.com/",
+    "observed_at": "2026-10-22T00:54:04.380340+00:00",
+    "response_sha256": "bc5f0dd0d0ab9fae410e29a3a38f1b55c8fe31c975a5f4c8126cb7683100d8a3",
+    "evidence": [
+      "Monica H. Kang",
+      "RJ Cordes",
+      "Daniel Friedman"
+    ],
+    "authors": [
+      {"family": "Kang", "given": "Monica H."},
+      {"family": "Cordes", "given": "RJ"},
+      {"family": "Friedman", "given": "Daniel"}
+    ],
+    "observation_method": "Direct HTTP 200, author names extracted from the live official HTML; raw bytes archived by response SHA-256 outside the public repository"
+  },
+  "Friedman2016LessonsFromColony155": {
+    "num": 155,
+    "title": "Lessons from the colony",
+    "source_url": "https://www.sciencemagazinedigital.org/sciencemagazine/20_may_2016?pg=24",
+    "observed_at": "2026-10-21",
+    "observation_timezone": "America/Los_Angeles",
+    "evidence": ["Lessons from the colony", "Daniel Ari Friedman"],
+    "authors": [{"family": "Friedman", "given": "Daniel Ari"}],
+    "observation_method": "Direct web-reader observation of the publisher digital issue, page 888, title and byline; raw HTTP HTML is an application shell and does not expose these strings",
+    "raw_source_bytes_retained": false
+  }
+}

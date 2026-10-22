@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Context-dependent expression of the foraging gene in field colonies of ants"
+name: "Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task"
 description: "Task allocation among social insect workers is an ideal framework for studying the molecular mechanisms underlying behavioural plasticity because workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pion..."
 tags: ["foraging-gene", "pogonomyrmex-barbatus", "harvester-ants", "gene-expression", "circadian-rhythms", "task-allocation", "division-of-labor", "field-study", "behavioral-ecology"]
 domain: "Entomology"
-citation: "Krista K. Ingram, Deborah M. Gordon, Daniel A. Friedman, Michael Greene, John Kahler, Swetha Peteru (2016). *Context-dependent expression of the foraging gene in field colonies of ants*. Proceedings of the Royal Society B."
+citation: "Krista K. Ingram, Deborah M. Gordon, Daniel A. Friedman, Michael Greene, John Kahler, Swetha Peteru (2016). *Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task*. Proceedings of the Royal Society B."
 doi: "10.1098/rspb.2016.0841"
 ---
 
-# Context-dependent expression of the foraging gene in field colonies of ants
+# Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task
 
 **Krista K. Ingram, Deborah M. Gordon, Daniel A. Friedman, Michael Greene, John Kahler, Swetha Peteru** (2016) · Entomology
 

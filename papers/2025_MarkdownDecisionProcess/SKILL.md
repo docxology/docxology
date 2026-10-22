@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Markdown Decision Process: A Framework for Probabilistic Document Analysis"
+name: "Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization"
 description: "The Markdown Decision Process (MDP) framework treats Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, and optimization through probabilistic modeling. Drawing from Markov Decision Process and POMDP theor..."
 tags: ["markdown-decision-process", "document-analysis", "markov-chains", "reinforcement-learning", "pomdp", "probabilistic-modeling", "document-generation"]
 domain: "Computational"
-citation: "Daniel Friedman (2025). *Markdown Decision Process: A Framework for Probabilistic Document Analysis*. Zenodo."
+citation: "Daniel Friedman (2025). *Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization*. Zenodo."
 doi: "10.5281/zenodo.17244386"
 ---
 
-# Markdown Decision Process: A Framework for Probabilistic Document Analysis
+# Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization
 
 **Daniel Friedman** (2025) · Computational
 

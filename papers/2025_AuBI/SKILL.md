@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference"
+name: "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems"
 description: "Universal Basic Income (UBI) is defined as a transformative economic policy designed to provide all citizens with a regular, unconditional sum of money, regardless of their circumstances. Here we argue that the overlay of several modern technologies ..."
 tags: ["aubi", "adaptive-basic-income", "universal-basic-income", "decentralized-infrastructure", "active-inference-modules", "data-sovereignty", "adaptive-economic-agents"]
 domain: "Computational"
-citation: "Die Schwarze Katze, Andrew Djuwidja, Daniel Friedman (2025). *Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference*. Zenodo."
+citation: "Die Schwarze Katze, Andrew Djuwidja, Daniel Friedman (2025). *Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems*. Zenodo."
 doi: "10.5281/zenodo.17228945"
 ---
 
-# Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference
+# Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems
 
 **Die Schwarze Katze, Andrew Djuwidja, Daniel Friedman** (2025) · Computational
 

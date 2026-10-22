@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ Bridging gaps in image meme research: A multidisciplinary paradigm
+# 🛡️ Bridging gaps in image meme research: A multidisciplinary paradigm for scaling up qualitative analyses
 
 **Mridula Mascarenhas, Daniel Ari Friedman, Richard J Cordes** (2024) · *JASIST*
 
@@ -41,7 +41,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Mridula Mascarenhas, Daniel Ari Friedman, Richard J Cordes (2024). *Bridging gaps in image meme research: A multidisciplinary paradigm*. JASIST. DOI: 10.1002/asi.24900. URL: https://doi.org/10.1002/asi.24900.
+> Mridula Mascarenhas, Daniel Ari Friedman, Richard J Cordes (2024). *Bridging gaps in image meme research: A multidisciplinary paradigm for scaling up qualitative analyses*. JASIST. DOI: 10.1002/asi.24900. URL: https://doi.org/10.1002/asi.24900.
 
 ## Related
 

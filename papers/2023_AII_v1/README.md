@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🌍 The Active Inference Institute and Active Inference Ecosystem (v1)
+# 🌍 The Active Inference Institute and Active Inference Ecosystem
 
 **Active Inference Institute, Ander Aguirre, John Boik, Libor Burian, Matthew Brown, RJ Cordes, Scott David, David S Douglass, Pablo Fernandez-Maquieira, Daniel A Friedman, Holly Grimm, Avel Guénin–Carlut, Maria Luiza Iennaco, V Bleu Knight, Alexandra Mikhailova, Ali Rahmjoo, Adeel Razi, Jakub Smékal, Ronen Tamari, Dean Tickles, Alex Vyatkin** (2023) · *Zenodo*
 
@@ -44,7 +44,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Active Inference Institute, Ander Aguirre, John Boik, Libor Burian, Matthew Brown, RJ Cordes, Scott David, David S Douglass, Pablo Fernandez-Maquieira, Daniel A Friedman, Holly Grimm, Avel Guénin–Carlut, Maria Luiza Iennaco, V Bleu Knight, Alexandra Mikhailova, Ali Rahmjoo, Adeel Razi, Jakub Smékal, Ronen Tamari, Dean Tickles, Alex Vyatkin (2023). *The Active Inference Institute and Active Inference Ecosystem (v1)*. Zenodo. DOI: 10.5281/zenodo.8266280. URL: https://doi.org/10.5281/zenodo.8266280.
+> Active Inference Institute, Ander Aguirre, John Boik, Libor Burian, Matthew Brown, RJ Cordes, Scott David, David S Douglass, Pablo Fernandez-Maquieira, Daniel A Friedman, Holly Grimm, Avel Guénin–Carlut, Maria Luiza Iennaco, V Bleu Knight, Alexandra Mikhailova, Ali Rahmjoo, Adeel Razi, Jakub Smékal, Ronen Tamari, Dean Tickles, Alex Vyatkin (2023). *The Active Inference Institute and Active Inference Ecosystem*. Zenodo. DOI: 10.5281/zenodo.8266280. URL: https://doi.org/10.5281/zenodo.8266280.
 
 ## Related
 

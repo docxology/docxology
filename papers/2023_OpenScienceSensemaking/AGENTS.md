@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Open Access science needs Open Science Sensemaking (OSSm)
+# AGENTS.md — Open Access science needs Open Science Sensemaking (OSSm): open infrastructure for sharing scientific sensemaking data
 
-**Paper**: Open Access science needs Open Science Sensemaking (OSSm) (2023)
+**Paper**: Open Access science needs Open Science Sensemaking (OSSm): open infrastructure for sharing scientific sensemaking data (2023)
 **Domain**: Cognitive Security
 **Authors**: Ronen Tamari, Daniel Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Open Access science needs Open Science Sensemaking (OSSm) to related works in the bibliography
+- Connects Open Access science needs Open Science Sensemaking (OSSm): open infrastructure for sharing scientific sensemaking data to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

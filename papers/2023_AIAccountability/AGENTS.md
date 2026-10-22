@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Comments on AI Accountability Policy to NTIA
+# AGENTS.md — Comments on AI Accountability Policy Submitted to NTIA Docket 2023-0005-0001 by IRSIRI, AII, PFH, and COGSEC
 
-**Paper**: Comments on AI Accountability Policy to NTIA (2023)
+**Paper**: Comments on AI Accountability Policy Submitted to NTIA Docket 2023-0005-0001 by IRSIRI, AII, PFH, and COGSEC (2023)
 **Domain**: Cognitive Security
 **Authors**: Scott David, Jumana Abu-Ghazaleh, Daniel Friedman, RJ Cordes
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Comments on AI Accountability Policy to NTIA to related works in the bibliography
+- Connects Comments on AI Accountability Policy Submitted to NTIA Docket 2023-0005-0001 by IRSIRI, AII, PFH, and COGSEC to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

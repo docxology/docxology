@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Dennett Explained (interview with Daniel Dennett)"
+name: "Dennett Explained. An interview with Daniel Dennett."
 description: "In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens. Dennett argues that philosophers have the ability to criticize and contribut..."
 tags: ["consciousness", "philosophy-of-mind", "daniel-dennett", "cognitive-science", "psychedelics", "predictive-processing", "altered-states"]
 domain: "Genetics & Biomedical"
-citation: "Daniel Dennett, Brendan Fleig-Goldstein, Daniel Friedman (2019). *Dennett Explained (interview with Daniel Dennett)*. ALIUS Bulletin."
+citation: "Daniel Dennett, Brendan Fleig-Goldstein, Daniel Friedman (2019). *Dennett Explained. An interview with Daniel Dennett.*. ALIUS Bulletin."
 doi: "10.34700/7gkw-zh08"
 ---
 
-# Dennett Explained (interview with Daniel Dennett)
+# Dennett Explained. An interview with Daniel Dennett.
 
 **Daniel Dennett, Brendan Fleig-Goldstein, Daniel Friedman** (2019) · Genetics & Biomedical
 

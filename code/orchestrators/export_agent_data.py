@@ -340,7 +340,7 @@ def _claims() -> list[dict]:
             "id": "paper-folder-count",
             "claim": f"The repository contains {folder_count} per-paper documentation folders.",
             "status": "curated-local",
-            "sources": ["papers/", "papers/README.md", "papers/paper_metadata.json"],
+            "sources": ["papers/README.md", "papers/paper_metadata.json"],
             "checked_at": counts_ts or "2026-06-16T03:36:11+00:00",
             "confidence": "high",
             "verification_method": "Folder inventory and paper metadata count.",

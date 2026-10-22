@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Catechism for Towards Active Diffusion
+# AGENTS.md — Catechism for: "Towards Active Diffusion: A Tale of Multiple (den)Cities"
 
-**Paper**: Catechism for Towards Active Diffusion (2022)
+**Paper**: Catechism for: "Towards Active Diffusion: A Tale of Multiple (den)Cities" (2022)
 **Domain**: AII Ecosystem
 **Authors**: Jakub Smékal, Daniel Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Catechism for Towards Active Diffusion to related works in the bibliography
+- Connects Catechism for: "Towards Active Diffusion: A Tale of Multiple (den)Cities" to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

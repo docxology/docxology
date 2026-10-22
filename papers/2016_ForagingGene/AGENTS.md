@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Context-dependent expression of the foraging gene in field colonies of ants
+# AGENTS.md — Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task
 
-**Paper**: Context-dependent expression of the foraging gene in field colonies of ants (2016)
+**Paper**: Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task (2016)
 **Domain**: Entomology
 **Authors**: Krista K. Ingram, Deborah M. Gordon, Daniel A. Friedman, Michael Greene, John Kahler, Swetha Peteru
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Context-dependent expression of the foraging gene in field colonies of ants to related works in the bibliography
+- Connects Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

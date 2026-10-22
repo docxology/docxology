@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ The P3IF: Properties, Processes, and Perspectives Inter-Framework
+# 🛡️ The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security
 
 **Thomas M. Wilkinson, RJ Cordes, Scott David, Daniel Ari Friedman** (2023) · *Zenodo*
 
@@ -43,7 +43,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Thomas M. Wilkinson, RJ Cordes, Scott David, Daniel Ari Friedman (2023). *The P3IF: Properties, Processes, and Perspectives Inter-Framework*. Zenodo. DOI: 10.5281/zenodo.10034511. URL: https://doi.org/10.5281/zenodo.10034511.
+> Thomas M. Wilkinson, RJ Cordes, Scott David, Daniel Ari Friedman (2023). *The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security*. Zenodo. DOI: 10.5281/zenodo.10034511. URL: https://doi.org/10.5281/zenodo.10034511.
 
 ## Related
 

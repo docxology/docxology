@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎥 Sensemaking Federation: Exploring the Frontiers of Digital Innovation
+# 🎥 Transcript of: "Sensemaking Federation: Exploring the Frontiers of Digital Innovation"
 
 **Sensemaking Scenius** (2024) · *Presentation*
 
@@ -41,7 +41,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Sensemaking Scenius (2024). *Sensemaking Federation: Exploring the Frontiers of Digital Innovation*. Presentation. DOI: 10.5281/zenodo.14574046. URL: https://doi.org/10.5281/zenodo.14574046.
+> Sensemaking Scenius (2024). *Transcript of: "Sensemaking Federation: Exploring the Frontiers of Digital Innovation"*. Presentation. DOI: 10.5281/zenodo.14574046. URL: https://doi.org/10.5281/zenodo.14574046.
 
 ## Related
 

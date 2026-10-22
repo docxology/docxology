@@ -6,7 +6,7 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Oct 2026 00:15:10 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 00:51:42 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
@@ -85,7 +85,7 @@
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
-      <title>Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model</title>
+      <title>daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation</title>
       <link>https://danielarifriedman.com/works/Friedman2026JevPracticeComposablePython219.html</link>
       <guid isPermaLink="false">work-Friedman2026JevPracticeComposablePython219</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>

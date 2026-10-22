@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T19:15:47Z",
+  "generated_at": "2026-10-22T01:22:34Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -88,22 +88,22 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "3f8b66953eb9baf466bad3c12f2c7e86f838853d6421e407a1c266426d92ad97",
+      "sha256": "9e899c413ca0b48e27b2c9d578a3b5b7f116fbbf70394c5348867076a43476ee",
       "files": [
         {
           "path": "resume/source.json",
-          "bytes": 58871,
-          "sha256": "209c5b0b1df978813d6ad7c08e2b7c0e2cbc1f7445a4cbdf2c422165983b2f6a"
+          "bytes": 58964,
+          "sha256": "69cbd668ee8f0b859f525eef8216955dbf0eb87490ac51e01493996c81f2202a"
         },
         {
           "path": "data/works.json",
-          "bytes": 181352,
-          "sha256": "a4f30286ec9da316cfda5bd7a92a06fb27d180b55c27338d50cc5a5a34965505"
+          "bytes": 183593,
+          "sha256": "10b07b67c0006ab35c60beceac74116d2ceb50a34a760ef81e7b3230ec772b29"
         },
         {
           "path": "data/software.json",
           "bytes": 83535,
-          "sha256": "124ee6d5e734e624e384b36bb0d61e592d4d7fa9c3d1a7e1c7918b1f0bc44d2e"
+          "sha256": "9e02ef6059e42236809c426c9cad5846d94edcb1b4f45f189bc90cd7a2f6a7a1"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -112,8 +112,8 @@
         },
         {
           "path": "data/claims.json",
-          "bytes": 13114,
-          "sha256": "3e5d997b17cd7651e2faab0b722604523524107fd4407fa77d372868e7928487"
+          "bytes": 13095,
+          "sha256": "2ef720a56019529242e7c716d6cb2067562cdf3f4d50da1afe346b5023432fc9"
         },
         {
           "path": "data/github-repositories.json",
@@ -199,7 +199,7 @@
         "Stanley and Jacqueline Schilling Award for Service, 2014.",
         "Completed the Population Biology Graduate Group one-year base PhD curriculum, 2013.",
         "Co-founder of The Aggie Transcript, an undergraduate biology journal, 2014.",
-        "Victoria Finnerty Award for Research in Drosophila, 2013.",
+        "Victoria Finnerty Undergraduate Travel Award, 2014.",
         "Elected member of Phi Beta Kappa, UC Davis Chapter, 2014.",
         "Co-organizer of the Chess Club at UC Davis, 2012-2014.",
         "Research Scholars Program in Insect Biology, 2011-2014.",
@@ -494,7 +494,7 @@
       "links": [
         {
           "label": "Johnson Lab",
-          "url": "https://johnsonlab.ucdavis.edu/"
+          "url": "https://johnsonlabucdavis.wordpress.com/"
         },
         {
           "label": "UC Davis",
@@ -767,13 +767,13 @@
     },
     {
       "id": "victoria-finnerty",
-      "year": 2013,
-      "name": "Victoria Finnerty Award for Research in Drosophila",
+      "year": 2014,
+      "name": "Victoria Finnerty Undergraduate Travel Award",
       "details": "UC Davis.",
       "links": [
         {
-          "label": "UC Davis Genetics",
-          "url": "https://genetics.ucdavis.edu/"
+          "label": "Genetics Society of America recipient list",
+          "url": "https://genetics-gsa.org/awards/victoria-finnerty-undergraduate-travel-awards/"
         }
       ],
       "variants": [
@@ -1906,7 +1906,7 @@
       "links": [
         {
           "label": "Los Tuxtlas Biological Station",
-          "url": "https://www.ibiologia.unam.mx/eblt/"
+          "url": "https://www.ib.unam.mx/ib/unidades-investigacion/estacion-los-tuxtlas/"
         }
       ],
       "variants": [
@@ -2303,7 +2303,7 @@
       "links": [
         {
           "label": "Stanford Scope",
-          "url": "https://scopeblog.stanford.edu/2016/07/06/art-of-neuroscience-competition-highlights-beauty-of-the-brain/"
+          "url": "https://neuroscience.stanford.edu/news/finalists-announced-2016-art-neuroscience-competition"
         }
       ],
       "variants": [
@@ -2476,7 +2476,7 @@
       "domain": "🎥",
       "domain_name": "Media & Teaching",
       "type": "Presentation",
-      "title": "5th Applied Active Inference Symposium — Abstract Book",
+      "title": "Abstract book for: 5th Applied Active Inference Symposium",
       "venue": "Presentation",
       "url": "https://doi.org/10.5281/zenodo.17555266",
       "doi": "10.5281/zenodo.17555266",
@@ -2538,7 +2538,7 @@
       "domain": "💻",
       "domain_name": "Computational",
       "type": "Paper",
-      "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference",
+      "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.17228945",
       "doi": "10.5281/zenodo.17228945",
@@ -2632,7 +2632,7 @@
       "domain": "🧠",
       "domain_name": "Active Inference",
       "type": "Paper",
-      "title": "Increasing the Accessibility and Applicability of Active Inference",
+      "title": "Increasing the Accessibility and Applicability of Active Inference: Generative Playbooks and Open-Source Summer School Curriculum Development",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.15061666",
       "doi": "10.5281/zenodo.15061666",
@@ -2679,7 +2679,7 @@
       "domain": "💻",
       "domain_name": "Computational",
       "type": "Paper",
-      "title": "Markdown Decision Process: A Framework for Probabilistic Document Analysis",
+      "title": "Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.17244386",
       "doi": "10.5281/zenodo.17244386",
@@ -2798,7 +2798,7 @@
       "domain": "🎨",
       "domain_name": "Art & Synergetics",
       "type": "Paper",
-      "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic",
+      "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.17114389",
       "doi": "10.5281/zenodo.17114389",
@@ -2867,7 +2867,7 @@
       "domain": "🧠",
       "domain_name": "Active Inference",
       "type": "Paper",
-      "title": "Temporal Depth in a Coherent Self and in Depersonalization",
+      "title": "Temporal depth in a coherent self and in depersonalization: theoretical model",
       "venue": "Frontiers in Psychology",
       "url": "https://doi.org/10.3389/fpsyg.2025.1585315",
       "doi": "10.3389/fpsyg.2025.1585315",
@@ -2896,7 +2896,7 @@
       "domain": "🌍",
       "domain_name": "AII Ecosystem",
       "type": "Paper",
-      "title": "The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)",
+      "title": "The Active Inference Institute & Active Inference Ecosystem",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.17982447",
       "doi": "10.5281/zenodo.17982447",
@@ -3087,7 +3087,7 @@
       "domain": "🛡️",
       "domain_name": "Cognitive Security",
       "type": "Paper",
-      "title": "Bridging gaps in image meme research: A multidisciplinary paradigm",
+      "title": "Bridging gaps in image meme research: A multidisciplinary paradigm for scaling up qualitative analyses",
       "venue": "JASIST",
       "url": "https://doi.org/10.1002/asi.24900",
       "doi": "10.1002/asi.24900",
@@ -3139,7 +3139,7 @@
       "domain": "🛡️",
       "domain_name": "Cognitive Security",
       "type": "Paper",
-      "title": "Comments on National Digital Twins R&D Strategic Plan",
+      "title": "Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.13273681",
       "doi": "10.5281/zenodo.13273681",
@@ -3274,7 +3274,7 @@
       "domain": "🎥",
       "domain_name": "Media & Teaching",
       "type": "Presentation",
-      "title": "MathArt Stream #8: William Blake and Active Inference",
+      "title": "MathArt Stream #8 ~ William Blake and Active Inference",
       "venue": "Presentation",
       "url": "https://doi.org/10.5281/zenodo.13711301",
       "doi": "10.5281/zenodo.13711301",
@@ -3297,7 +3297,7 @@
       "domain": "🎥",
       "domain_name": "Media & Teaching",
       "type": "Presentation",
-      "title": "Sensemaking Federation: Exploring the Frontiers of Digital Innovation",
+      "title": "Transcript of: \"Sensemaking Federation: Exploring the Frontiers of Digital Innovation\"",
       "venue": "Presentation",
       "url": "https://doi.org/10.5281/zenodo.14574046",
       "doi": "10.5281/zenodo.14574046",
@@ -3348,7 +3348,7 @@
       "domain": "🌍",
       "domain_name": "AII Ecosystem",
       "type": "Paper",
-      "title": "The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)",
+      "title": "The Active Inference Institute & Active Inference Ecosystem",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.14108992",
       "doi": "10.5281/zenodo.14108992",
@@ -3401,7 +3401,7 @@
       "domain": "🎨",
       "domain_name": "Art & Synergetics",
       "type": "Paper",
-      "title": "Way Finding in the Infinite Imaginarium",
+      "title": "Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.10601081",
       "doi": "10.5281/zenodo.10601081",
@@ -3424,7 +3424,7 @@
       "domain": "🧬",
       "domain_name": "Genetics & Biomedical",
       "type": "Paper",
-      "title": "Why Paleolithic Rockstars were both enigmatic and sporadic",
+      "title": "Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago",
       "venue": "Physics of Life Reviews",
       "url": "https://doi.org/10.1016/j.plrev.2024.04.010",
       "doi": "10.1016/j.plrev.2024.04.010",
@@ -3472,7 +3472,7 @@
       "domain": "🧠",
       "domain_name": "Active Inference",
       "type": "Paper",
-      "title": "A guided tour through the spaces of particular \"minds\"",
+      "title": "A guided tour through the spaces of particular “minds”: A Comment on “Path integrals, particular kinds, and strange things”",
       "venue": "Physics of Life Reviews",
       "url": "https://doi.org/10.1016/j.plrev.2023.11.001",
       "doi": "10.1016/j.plrev.2023.11.001",
@@ -3496,7 +3496,7 @@
       "domain": "🐜",
       "domain_name": "Entomology",
       "type": "Paper",
-      "title": "A single-pheromone model accounts for empirical patterns of ant colony foraging",
+      "title": "A single-pheromone model accounts for empirical patterns of ant colony foraging previously modeled using two pheromones",
       "venue": "Cognitive Systems Research",
       "url": "https://doi.org/10.1016/j.cogsys.2023.02.005",
       "doi": "10.1016/j.cogsys.2023.02.005",
@@ -3520,7 +3520,7 @@
       "domain": "🐜",
       "domain_name": "Entomology",
       "type": "Paper",
-      "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees",
+      "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.10400744",
       "doi": "10.5281/zenodo.10400744",
@@ -3623,7 +3623,7 @@
       "domain": "🛡️",
       "domain_name": "Cognitive Security",
       "type": "Paper",
-      "title": "Comments on AI Accountability Policy to NTIA",
+      "title": "Comments on AI Accountability Policy Submitted to NTIA Docket 2023-0005-0001 by IRSIRI, AII, PFH, and COGSEC",
       "venue": "NTIA",
       "url": "https://doi.org/10.5281/zenodo.8025956",
       "doi": "10.5281/zenodo.8025956",
@@ -3649,7 +3649,7 @@
       "domain": "🧠",
       "domain_name": "Active Inference",
       "type": "Paper",
-      "title": "Distributed Science — The Scientific Process as Multi-Scale Active Inference",
+      "title": "Distributed Science - The Scientific Process as Multi-Scale Active Inference",
       "venue": "OSF",
       "url": "https://doi.org/10.31219/osf.io/dnw5k",
       "doi": "10.31219/osf.io/dnw5k",
@@ -3796,7 +3796,7 @@
       "domain": "🛡️",
       "domain_name": "Cognitive Security",
       "type": "Paper",
-      "title": "Open Access science needs Open Science Sensemaking (OSSm)",
+      "title": "Open Access science needs Open Science Sensemaking (OSSm): open infrastructure for sharing scientific sensemaking data",
       "venue": "MetaArXiv",
       "url": "https://doi.org/10.31222/osf.io/9nb3u",
       "doi": "10.31222/osf.io/9nb3u",
@@ -3820,7 +3820,7 @@
       "domain": "🎥",
       "domain_name": "Media & Teaching",
       "type": "Presentation",
-      "title": "Postdoc review (2020–2023)",
+      "title": "Postdoc review (2020-2023) ~ September 25, 2023",
       "venue": "Presentation",
       "url": "https://doi.org/10.5281/zenodo.8377987",
       "doi": "10.5281/zenodo.8377987",
@@ -3843,7 +3843,7 @@
       "domain": "🌍",
       "domain_name": "AII Ecosystem",
       "type": "Paper",
-      "title": "The Active Inference Institute and Active Inference Ecosystem (v1)",
+      "title": "The Active Inference Institute and Active Inference Ecosystem",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.8266280",
       "doi": "10.5281/zenodo.8266280",
@@ -3886,7 +3886,7 @@
       "domain": "🛡️",
       "domain_name": "Cognitive Security",
       "type": "Paper",
-      "title": "The P3IF: Properties, Processes, and Perspectives Inter-Framework",
+      "title": "The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.10034511",
       "doi": "10.5281/zenodo.10034511",
@@ -3936,7 +3936,7 @@
       "domain": "🎥",
       "domain_name": "Media & Teaching",
       "type": "Course",
-      "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course",
+      "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course in 2023",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.10447642",
       "doi": "10.5281/zenodo.10447642",
@@ -3974,7 +3974,7 @@
       "domain": "🎨",
       "domain_name": "Art & Synergetics",
       "type": "Paper",
-      "title": "William Blake & Buckminster Fuller: Lives in Juxtaposition",
+      "title": "William Blake & Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity)",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.7514367",
       "doi": "10.5281/zenodo.7514367",
@@ -3997,7 +3997,7 @@
       "domain": "🧠",
       "domain_name": "Active Inference",
       "type": "Paper",
-      "title": "An Active Inference Ontology for Decentralized Science",
+      "title": "An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.6320574",
       "doi": "10.5281/zenodo.6320574",
@@ -4033,7 +4033,7 @@
       "domain": "🌍",
       "domain_name": "AII Ecosystem",
       "type": "Paper",
-      "title": "Catechism for Towards Active Diffusion",
+      "title": "Catechism for: \"Towards Active Diffusion: A Tale of Multiple (den)Cities\"",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.7443847",
       "doi": "10.5281/zenodo.7443847",
@@ -4084,7 +4084,7 @@
       "domain": "🧬",
       "domain_name": "Genetics & Biomedical",
       "type": "Paper",
-      "title": "On free will or the lack thereof (interview with Robert Sapolsky)",
+      "title": "On free will or the lack thereof",
       "venue": "ALIUS Bulletin",
       "url": "https://doi.org/10.5281/zenodo.7394900",
       "doi": "10.5281/zenodo.7394900",
@@ -4109,7 +4109,7 @@
       "domain": "🎨",
       "domain_name": "Art & Synergetics",
       "type": "Paper",
-      "title": "Predictive Processing Interpretation of the Mirror Test",
+      "title": "Predictive Processing Interpretation of the Mirror Test and Implications of a Reflection Prediction for Human Cognition",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.7377255",
       "doi": "10.5281/zenodo.7377255",
@@ -4149,7 +4149,8 @@
         "David, Scott",
         "Cordes, R.J.",
         "Friedman, Daniel A."
-      ]
+      ],
+      "contributor_role": "editor"
     },
     {
       "num": 72,
@@ -4311,7 +4312,7 @@
       "type": "Playbook",
       "title": "Innovator's Digital Playbook",
       "venue": "Web",
-      "url": "https://innovatorsdigitalplaybook.com/",
+      "url": "https://www.innovatorsdigitalplaybook.com/",
       "doi": "",
       "docs_path": "",
       "has_paper_folder": false,
@@ -4321,7 +4322,11 @@
       "has_agents_md": false,
       "has_readme": false,
       "full_text_url": "",
-      "authors": []
+      "authors": [
+        "Kang, Monica H.",
+        "Cordes, RJ",
+        "Friedman, Daniel"
+      ]
     },
     {
       "num": 79,
@@ -4345,7 +4350,8 @@
       "authors": [
         "Cordes, Richard J.",
         "Friedman, Daniel A."
-      ]
+      ],
+      "contributor_role": "editor"
     },
     {
       "num": 80,
@@ -4549,7 +4555,7 @@
       "domain": "🐜",
       "domain_name": "Entomology",
       "type": "Paper",
-      "title": "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains",
+      "title": "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies",
       "venue": "Analytical & Bioanalytical Chemistry",
       "url": "https://doi.org/10.1007/s00216-019-02355-3",
       "doi": "10.1007/s00216-019-02355-3",
@@ -4590,7 +4596,8 @@
       "authors": [
         "Friedman, Daniel A.",
         "Cordes, Richard J."
-      ]
+      ],
+      "contributor_role": "editor"
     },
     {
       "num": 90,
@@ -4624,7 +4631,7 @@
       "domain": "🧬",
       "domain_name": "Genetics & Biomedical",
       "type": "Paper",
-      "title": "The neuroscience of decision making (interview with Timothy Hanks)",
+      "title": "The Neuroscience of Decision Making. An interview of Timothy Hanks by Alexandra Mikhailova and Daniel A. Friedman.",
       "venue": "ALIUS Bulletin",
       "url": "https://doi.org/10.34700/8pg4-0h12",
       "doi": "10.34700/8pg4-0h12",
@@ -4649,7 +4656,7 @@
       "domain": "🧬",
       "domain_name": "Genetics & Biomedical",
       "type": "Paper",
-      "title": "Dennett Explained (interview with Daniel Dennett)",
+      "title": "Dennett Explained. An interview with Daniel Dennett.",
       "venue": "ALIUS Bulletin",
       "url": "https://doi.org/10.34700/7gkw-zh08",
       "doi": "10.34700/7gkw-zh08",
@@ -4674,7 +4681,7 @@
       "domain": "🐜",
       "domain_name": "Entomology",
       "type": "Paper",
-      "title": "PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus",
+      "title": "Behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus)",
       "venue": "Stanford University",
       "url": "https://purl.stanford.edu/pb813wm1484",
       "doi": "",
@@ -4799,7 +4806,7 @@
       "domain": "🧠",
       "domain_name": "Active Inference",
       "type": "Paper",
-      "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
+      "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness. An interview with Karl Friston.",
       "venue": "ALIUS Bulletin",
       "url": "https://doi.org/10.34700/h460-nz89",
       "doi": "10.34700/h460-nz89",
@@ -4824,7 +4831,7 @@
       "domain": "🎨",
       "domain_name": "Art & Synergetics",
       "type": "Paper",
-      "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
+      "title": "Partner Pen Play in Parallel (PPPiP): A New PPPiParadigm for Relationship Improvement",
       "venue": "Arts",
       "url": "https://doi.org/10.3390/arts7030039",
       "doi": "10.3390/arts7030039",
@@ -4950,7 +4957,7 @@
       "domain": "🐜",
       "domain_name": "Entomology",
       "type": "Paper",
-      "title": "Context-dependent expression of the foraging gene in field colonies of ants",
+      "title": "Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task",
       "venue": "Proceedings of the Royal Society B",
       "url": "https://doi.org/10.1098/rspb.2016.0841",
       "doi": "10.1098/rspb.2016.0841",
@@ -5155,7 +5162,7 @@
       "domain_name": "Active Inference",
       "type": "Paper",
       "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
-      "venue": "Active Inference Journal",
+      "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.19695259",
       "doi": "10.5281/zenodo.19695259",
       "docs_path": "papers/2026_CognitiveCaseDiagrams/",
@@ -5178,7 +5185,7 @@
       "domain_name": "Active Inference",
       "type": "Paper",
       "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
-      "venue": "Active Inference Journal",
+      "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.19699233",
       "doi": "10.5281/zenodo.19699233",
       "docs_path": "papers/2026_FEPLean/",
@@ -5293,7 +5300,7 @@
       "domain": "💻",
       "domain_name": "Computational",
       "type": "Paper",
-      "title": "Policy Entanglement in Active Inference",
+      "title": "Policy Entanglement in Active Inference: A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.20418904",
       "doi": "10.5281/zenodo.20418904",
@@ -6195,7 +6202,7 @@
       "type": "Paper",
       "title": "Lessons from the colony",
       "venue": "Science",
-      "url": "https://www.science.org/doi/10.1126/science.352.6288.886",
+      "url": "https://www.sciencemagazinedigital.org/sciencemagazine/20_may_2016?pg=24",
       "doi": "",
       "docs_path": "",
       "has_paper_folder": false,
@@ -6205,7 +6212,9 @@
       "has_agents_md": false,
       "has_readme": false,
       "full_text_url": "",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 156,
@@ -6381,7 +6390,7 @@
       "domain": "🛡️",
       "domain_name": "Cognitive Security",
       "type": "Paper",
-      "title": "Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum",
+      "title": "Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.13273682",
       "doi": "10.5281/zenodo.13273682",
@@ -6446,7 +6455,7 @@
       "domain": "💻",
       "domain_name": "Computational",
       "type": "Paper",
-      "title": "iTrace: verification-first webcam eye-movement analysis",
+      "title": "iTrace: verification-first webcam eye-movement analysis (corrected manuscript)",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.20614908",
       "doi": "10.5281/zenodo.20614908",
@@ -6515,7 +6524,7 @@
       "domain": "🧠",
       "domain_name": "Active Inference",
       "type": "Paper",
-      "title": "GeneralizedNotationNotation (GNN)",
+      "title": "Generalized_Notation_Notation (GNN)",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.7803313",
       "doi": "10.5281/zenodo.7803313",
@@ -6792,7 +6801,7 @@
       "domain": "💻",
       "domain_name": "Computational",
       "type": "Paper",
-      "title": "Sortition Upstream of NTQR",
+      "title": "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.21083779",
       "doi": "10.5281/zenodo.21083779",
@@ -7669,7 +7678,7 @@
       "domain": "💻",
       "domain_name": "Computational",
       "type": "Paper",
-      "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
+      "title": "daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.22816187",
       "doi": "10.5281/zenodo.22816187",
@@ -9893,7 +9902,6 @@
       "claim": "The repository contains 206 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
-        "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],

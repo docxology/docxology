@@ -65,3 +65,17 @@ def author_entity(display_name: str, principal: dict, source_type: str | None = 
     if source_type == "Person" or separator:
         entity["@type"] = "Person"
     return entity
+
+
+def reviewed_contributor_role(work: dict, records: dict) -> str:
+    record = records.get(work["citation_key"], {})
+    role = record.get("contributor_role", "author")
+    if role not in {"author", "editor"}:
+        raise ValueError(f"Unsupported contributor role for {work['citation_key']}: {role}")
+    if role == "editor":
+        names = [f'{a["family"]}, {a["given"]}' for a in record.get("authors", [])]
+        if (record.get("status") != "document_verified" or record.get("num") != work["num"]
+                or record.get("title") != work["title"] or names != work.get("authors")
+                or not record.get("evidence", "").startswith("EDITED BY ")):
+            raise ValueError(f"Editor role lacks matching document evidence for {work['citation_key']}")
+    return role

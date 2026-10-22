@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — The P3IF: Properties, Processes, and Perspectives Inter-Framework
+# AGENTS.md — The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security
 
-**Paper**: The P3IF: Properties, Processes, and Perspectives Inter-Framework (2023)
+**Paper**: The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security (2023)
 **Domain**: Cognitive Security
 **Authors**: Thomas M. Wilkinson, RJ Cordes, Scott David, Daniel Ari Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects The P3IF: Properties, Processes, and Perspectives Inter-Framework to related works in the bibliography
+- Connects The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

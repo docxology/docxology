@@ -577,6 +577,7 @@ def validate_release_evidence(args: argparse.Namespace) -> None:
 def run_standard_validation(*, strict_reports: bool, allow_dirty_prepayload_evidence: bool = False) -> None:
     """Validate the committed source layer and its deterministic cache inputs."""
     run([sys.executable, "code/orchestrators/validate_manuscript.py"])
+    run([sys.executable, "code/orchestrators/audit_content_citations.py"])
     if allow_dirty_prepayload_evidence:
         run_local_generation_checks(allow_dirty_prepayload_evidence=True)
     else:

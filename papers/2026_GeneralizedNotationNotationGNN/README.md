@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 GeneralizedNotationNotation (GNN)
+# 🧠 Generalized_Notation_Notation (GNN)
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
@@ -44,7 +44,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *GeneralizedNotationNotation (GNN)*. Zenodo. DOI: 10.5281/zenodo.7803313. URL: https://doi.org/10.5281/zenodo.7803313.
+> Daniel Ari Friedman (2026). *Generalized_Notation_Notation (GNN)*. Zenodo. DOI: 10.5281/zenodo.7803313. URL: https://doi.org/10.5281/zenodo.7803313.
 
 ## Related
 

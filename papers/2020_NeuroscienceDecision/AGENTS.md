@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — The neuroscience of decision making (interview with Timothy Hanks)
+# AGENTS.md — The Neuroscience of Decision Making. An interview of Timothy Hanks by Alexandra Mikhailova and Daniel A. Friedman.
 
-**Paper**: The neuroscience of decision making (interview with Timothy Hanks) (2020)
+**Paper**: The Neuroscience of Decision Making. An interview of Timothy Hanks by Alexandra Mikhailova and Daniel A. Friedman. (2020)
 **Domain**: Genetics & Biomedical
 **Authors**: Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects The neuroscience of decision making (interview with Timothy Hanks) to related works in the bibliography
+- Connects The Neuroscience of Decision Making. An interview of Timothy Hanks by Alexandra Mikhailova and Daniel A. Friedman. to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

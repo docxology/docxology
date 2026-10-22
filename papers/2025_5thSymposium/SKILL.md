@@ -1,15 +1,15 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "5th Applied Active Inference Symposium — Abstract Book"
+name: "Abstract book for: 5th Applied Active Inference Symposium"
 description: "This is the abstract for the Abstract Book for the 5th Applied Active Inference Symposium (Nov 12-14, 2025). The Active Inference Institute (AII) is an open-science institute dedicated to improving the accessibility, rigor, and applicability of the A..."
 tags: ["active-inference-symposium", "conference-proceedings", "international-symposium", "research-presentations"]
 domain: "Presentations & Media"
-citation: "Active Inference Institute, Adam Safron, Alex Kiefer, Alexander Sabine, Andrea Hiott, Andrew Pashea, Bradly Alicea, Chris Fields, Denise Holt, Harshil Shah, Satyaki Maitra, Hongju Pae, Ian Tennant, Jean-François Cloutier, Jim Freda, Joel Dietz, John Boik, Karl Friston, Maria Luiza Iennaco, Matthew Brown, Michael Garfield, Nicolás Hinrichs, Octopus, PabloFM, Peter Thestrup Waade, Robert Worden, Sam A Senchal, Samuel Montañez, Sanjeev Namjoshi, Siddhant Shrivastava, Sonia de Jager, Steph Macurdy, Steven Weiniger, Susan Hasty, Viet Dung Nguyen, William Gebhardt, Michael Lennon, Dave Newell, Patrick Huembeli, Maxwell Ramstead (2025). *5th Applied Active Inference Symposium — Abstract Book*. Presentation."
+citation: "Active Inference Institute, Adam Safron, Alex Kiefer, Alexander Sabine, Andrea Hiott, Andrew Pashea, Bradly Alicea, Chris Fields, Denise Holt, Harshil Shah, Satyaki Maitra, Hongju Pae, Ian Tennant, Jean-François Cloutier, Jim Freda, Joel Dietz, John Boik, Karl Friston, Maria Luiza Iennaco, Matthew Brown, Michael Garfield, Nicolás Hinrichs, Octopus, PabloFM, Peter Thestrup Waade, Robert Worden, Sam A Senchal, Samuel Montañez, Sanjeev Namjoshi, Siddhant Shrivastava, Sonia de Jager, Steph Macurdy, Steven Weiniger, Susan Hasty, Viet Dung Nguyen, William Gebhardt, Michael Lennon, Dave Newell, Patrick Huembeli, Maxwell Ramstead (2025). *Abstract book for: 5th Applied Active Inference Symposium*. Presentation."
 doi: "10.5281/zenodo.17555266"
 artifact_doi: "10.5281/zenodo.17575211"
 ---
 
-# 5th Applied Active Inference Symposium — Abstract Book
+# Abstract book for: 5th Applied Active Inference Symposium
 
 **Active Inference Institute, Adam Safron, Alex Kiefer, Alexander Sabine, Andrea Hiott, Andrew Pashea, Bradly Alicea, Chris Fields, Denise Holt, Harshil Shah, Satyaki Maitra, Hongju Pae, Ian Tennant, Jean-François Cloutier, Jim Freda, Joel Dietz, John Boik, Karl Friston, Maria Luiza Iennaco, Matthew Brown, Michael Garfield, Nicolás Hinrichs, Octopus, PabloFM, Peter Thestrup Waade, Robert Worden, Sam A Senchal, Samuel Montañez, Sanjeev Namjoshi, Siddhant Shrivastava, Sonia de Jager, Steph Macurdy, Steven Weiniger, Susan Hasty, Viet Dung Nguyen, William Gebhardt, Michael Lennon, Dave Newell, Patrick Huembeli, Maxwell Ramstead** (2025) · Presentations & Media
 

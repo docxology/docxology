@@ -1,15 +1,15 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees"
+name: "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)"
 description: "The honey bee ( Apis mellifera ) is a pivotal species in both ecological and research contexts, serving as a model organism for studying complex social behavior and physiological processes. A critical aspect of understanding these complexities is the..."
 tags: ["honey-bees", "apis-mellifera", "tissue-specific-gene-expression", "meta-analysis", "rna-seq", "bioinformatics"]
 domain: "Entomology"
-citation: "Daniel Ari Friedman, Chao Tong, Timothy A. Linksvayer, Matthias Freund, Nicole Weronika Keough, Brian Johnson (2023). *A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees*. Zenodo."
+citation: "Daniel Ari Friedman, Chao Tong, Timothy A. Linksvayer, Matthias Freund, Nicole Weronika Keough, Brian Johnson (2023). *A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)*. Zenodo."
 doi: "10.5281/zenodo.10400744"
 artifact_doi: "10.5281/zenodo.10400745"
 ---
 
-# A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees
+# A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)
 
 **Daniel Ari Friedman, Chao Tong, Timothy A. Linksvayer, Matthias Freund, Nicole Weronika Keough, Brian Johnson** (2023) · Entomology
 

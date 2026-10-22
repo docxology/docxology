@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 Predictive Processing Interpretation of the Mirror Test
+# 🎨 Predictive Processing Interpretation of the Mirror Test and Implications of a Reflection Prediction for Human Cognition
 
 **Sean O'Connor, Daniel Ari Friedman** (2022) · *Zenodo*
 
@@ -42,7 +42,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Sean O'Connor, Daniel Ari Friedman (2022). *Predictive Processing Interpretation of the Mirror Test*. Zenodo. DOI: 10.5281/zenodo.7377255. URL: https://doi.org/10.5281/zenodo.7377255.
+> Sean O'Connor, Daniel Ari Friedman (2022). *Predictive Processing Interpretation of the Mirror Test and Implications of a Reflection Prediction for Human Cognition*. Zenodo. DOI: 10.5281/zenodo.7377255. URL: https://doi.org/10.5281/zenodo.7377255.
 
 ## Related
 

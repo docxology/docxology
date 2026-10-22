@@ -88,7 +88,7 @@ ASSET_AUDIT_INPUTS_EXCLUDE: tuple[str, ...] = (
 
 LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # Bibliography table -> citation exports + works.json (pure renderer).
-    GenerationStep("export-bibliography", "export_bibliography.py", (), ("--check",), "Bibliography exports and works projection", ("pages/BIBLIOGRAPHY.md", "data/work-identifiers.json", "code/src/work_identifiers.py")),
+    GenerationStep("export-bibliography", "export_bibliography.py", (), ("--check",), "Bibliography exports and works projection", ("pages/BIBLIOGRAPHY.md", "data/work-identifiers.json", "data/work-authors.json", "code/src/work_identifiers.py")),
     # Full re-render of publications.html + publications-ld.json from the
     # curated table and template. This first pass may legally read
     # one-step-behind state (current-counts, paper-folder flags); the final
@@ -124,7 +124,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("domain-pages", "build_domain_pages.py", (), ("--check",), "Domain landing pages"),
     # DERIVED (always-run): renders entirely from in-script curated templates;
     # consumes no repository files.
-    GenerationStep("pillar-pages", "generate_pillar_pages.py", (), ("--check",), "Shared-rendered pillar pages"),
+    GenerationStep("pillar-pages", "generate_pillar_pages.py", (), ("--check",), "Shared-rendered pillar pages", ("data/works.json", "code/src/pillar_content.py", "code/src/content_citations.py")),
     GenerationStep("paper-documents", "regenerate_docs.py", ("--apply",), ("--check",), "Manifest-owned paper documentation", ("pages/BIBLIOGRAPHY.md", "papers/paper_metadata.json", "papers/*/metadata.json", "papers/generated-documents.json", "code/src/abstract_text.py")),
     # DERIVED (always-run): in-place patcher — rewrites each CITATION.cff's
     # DOI roles while preserving hand-maintained non-DOI fields read from the
@@ -252,6 +252,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
 
 
 EXCLUDED_OPERATIONS: tuple[ExcludedOperation, ...] = (
+    ExcludedOperation("audit_content_citations.py", "audit/network", "Read-only public content checks; optional reports and live external-link probes are deliberate audit operations."),
     ExcludedOperation("profile_backend.py", "diagnostic/read-only", "Bounded Python 3.15 timing and tracing diagnostics write only new external JSON reports; they never certify release state."),
     ExcludedOperation("review_citation_metadata.py", "network/manual-review", "Bounded Crossref citation proposals require review; the tool never applies source changes."),
     ExcludedOperation("verify_deployed_artifact.py", "network/post-deploy", "SHA-bound technical acceptance of deployed routes and PDF artifacts; distinct from the human-reviewed full release attestation."),

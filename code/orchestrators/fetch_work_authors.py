@@ -71,7 +71,7 @@ USER_AGENT = f"docxology-bibliography/1.0 (https://danielarifriedman.com/; mailt
 # rather than demanding equality.
 TITLE_SIMILARITY_FLOOR = 0.80
 REQUEST_PAUSE_SECONDS = 0.2
-APPLIED_STATUSES = frozenset({"verified", "document_verified"})
+APPLIED_STATUSES = frozenset({"verified", "document_verified", "website_verified"})
 TIMEOUT_SECONDS = 30
 
 
@@ -398,6 +398,26 @@ def document_evidence_errors(payload: dict) -> list[str]:
     human review that establishes whether the quote supports the author list.
     """
     errors = []
+    website_entries = [(key, entry) for key, entry in payload["works"].items()
+                       if entry.get("status") == "website_verified"]
+    if website_entries:
+        by_key = {citation_key(row): row for row in iter_bibliography_rows(BIBLIOGRAPHY)}
+        for key, entry in website_entries:
+            row = by_key.get(key)
+            source_name = str(entry.get("source") or "")
+            source = (REPO_ROOT / source_name).resolve()
+            if not source.is_relative_to((REPO_ROOT / "reports").resolve()):
+                errors.append(f"{key}: website evidence must remain in reports/")
+                continue
+            record = json.loads(source.read_text(encoding="utf-8")).get(key, {}) if source.is_file() else {}
+            if (row is None or row.num != entry.get("num") or row.num != record.get("num")
+                    or row.title != entry.get("title") or row.title != record.get("title")
+                    or entry.get("doi") or doi_from_url(canonical_link_url(row.link_cell, row.venue))
+                    or record.get("source_url") != canonical_link_url(row.link_cell, row.venue)
+                    or not record.get("evidence") or entry.get("evidence") != record.get("evidence")
+                    or not entry.get("authors") or entry.get("authors") != record.get("authors")
+                    or not record.get("observed_at")):
+                errors.append(f"{key}: website author evidence does not match the bibliography/source receipt")
     entries = [(key, entry) for key, entry in payload["works"].items()
                if entry.get("status") == "document_verified"]
     if not entries:
@@ -502,7 +522,7 @@ def main() -> int:
         if (work.get("doi") or "").strip():
             continue
         kept = previous.get(work["citation_key"])
-        if kept and kept.get("status") == "document_verified":
+        if kept and kept.get("status") in {"document_verified", "website_verified"}:
             # Hand-reviewed authorship from the work's own document survives a
             # registry refresh; --check re-verifies its evidence quote.
             resolved[work["citation_key"]] = kept

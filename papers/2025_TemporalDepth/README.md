@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 Temporal Depth in a Coherent Self and in Depersonalization
+# 🧠 Temporal depth in a coherent self and in depersonalization: theoretical model
 
 **Alexey Tolchinsky, Michael Levin, Chris Fields, Lancelot Da Costa, Rachael Murphy, Daniel Friedman, David Pincus** (2025) · *Frontiers in Psychology*
 
@@ -41,7 +41,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Alexey Tolchinsky, Michael Levin, Chris Fields, Lancelot Da Costa, Rachael Murphy, Daniel Friedman, David Pincus (2025). *Temporal Depth in a Coherent Self and in Depersonalization*. Frontiers in Psychology. DOI: 10.3389/fpsyg.2025.1585315. URL: https://doi.org/10.3389/fpsyg.2025.1585315.
+> Alexey Tolchinsky, Michael Levin, Chris Fields, Lancelot Da Costa, Rachael Murphy, Daniel Friedman, David Pincus (2025). *Temporal depth in a coherent self and in depersonalization: theoretical model*. Frontiers in Psychology. DOI: 10.3389/fpsyg.2025.1585315. URL: https://doi.org/10.3389/fpsyg.2025.1585315.
 
 ## Related
 

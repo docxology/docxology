@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Way Finding in the Infinite Imaginarium
+# AGENTS.md — Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes
 
-**Paper**: Way Finding in the Infinite Imaginarium (2024)
+**Paper**: Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes (2024)
 **Domain**: Art & Synergetics
 **Authors**: Daniel Ari Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Way Finding in the Infinite Imaginarium to related works in the bibliography
+- Connects Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

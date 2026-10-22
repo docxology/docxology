@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees"
+title: "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)"
 version: "v1.0"
 date-released: 2023-12-18
 doi: 10.5281/zenodo.10400744

@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Predictive Processing Interpretation of the Mirror Test
+# AGENTS.md — Predictive Processing Interpretation of the Mirror Test and Implications of a Reflection Prediction for Human Cognition
 
-**Paper**: Predictive Processing Interpretation of the Mirror Test (2022)
+**Paper**: Predictive Processing Interpretation of the Mirror Test and Implications of a Reflection Prediction for Human Cognition (2022)
 **Domain**: Art & Synergetics
 **Authors**: Sean O'Connor, Daniel Ari Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Predictive Processing Interpretation of the Mirror Test to related works in the bibliography
+- Connects Predictive Processing Interpretation of the Mirror Test and Implications of a Reflection Prediction for Human Cognition to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

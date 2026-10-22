@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧬 Dennett Explained (interview with Daniel Dennett)
+# 🧬 Dennett Explained. An interview with Daniel Dennett.
 
 **Daniel Dennett, Brendan Fleig-Goldstein, Daniel Friedman** (2019) · *ALIUS Bulletin*
 
@@ -38,7 +38,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Dennett, Brendan Fleig-Goldstein, Daniel Friedman (2019). *Dennett Explained (interview with Daniel Dennett)*. ALIUS Bulletin. DOI: 10.34700/7gkw-zh08. URL: https://doi.org/10.34700/7gkw-zh08.
+> Daniel Dennett, Brendan Fleig-Goldstein, Daniel Friedman (2019). *Dennett Explained. An interview with Daniel Dennett.*. ALIUS Bulletin. DOI: 10.34700/7gkw-zh08. URL: https://doi.org/10.34700/7gkw-zh08.
 
 ## Related
 

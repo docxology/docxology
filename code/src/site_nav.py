@@ -87,9 +87,9 @@ CITE_EXPORT_SCRIPT_TAG = '<script src="/js/cite-export.js?v=work-access-20261001
 # Zenodo deposit/version) point their rel=canonical at the primary entry so search
 # engines consolidate ranking signals instead of splitting them across duplicates.
 #   key (duplicate citation_key) -> value (canonical/primary citation_key)
-#   Currently empty — the CEREBRUM "v1.4" duplicate this once consolidated was
-#   removed outright. Add entries here if a future deposit duplicates a work.
-WORK_CANONICAL_OVERRIDES: dict[str, str] = {}
+WORK_CANONICAL_OVERRIDES: dict[str, str] = {
+    "Friedman2024CommentsSubmittedByBlockScience162": "Friedman2024CommentsNationalDigitalTwins033",
+}
 
 
 def canonical_work_key(citation_key: str) -> str:

@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Sortition Upstream of NTQR"
+name: "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation"
 description: "How should you choose the judges, jurors, or reviewers who form a panel — and does that upstream choice change how well you can evaluate them without an answer key? A panel can be selected many ways — by competence, by a representative lottery (sorti..."
 tags: ["sortition", "ntqr", "unlabeled-evaluation", "expert-panels", "peer-review", "error-independence", "statistical-power", "panel-formation", "synthetic-evaluation", "llm-reviewers"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *Sortition Upstream of NTQR*. Zenodo."
+citation: "Daniel Ari Friedman (2026). *Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation*. Zenodo."
 doi: "10.5281/zenodo.21083779"
 ---
 
-# Sortition Upstream of NTQR
+# Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation
 
 **Daniel Ari Friedman** (2026) · Computational
 

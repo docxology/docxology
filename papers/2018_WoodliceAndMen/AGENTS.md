@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)
+# AGENTS.md — Of woodlice and men: A Bayesian account of cognition, life and consciousness. An interview with Karl Friston.
 
-**Paper**: Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) (2018)
+**Paper**: Of woodlice and men: A Bayesian account of cognition, life and consciousness. An interview with Karl Friston. (2018)
 **Domain**: Active Inference
 **Authors**: Karl Friston, Martin Fortier, Daniel Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) to related works in the bibliography
+- Connects Of woodlice and men: A Bayesian account of cognition, life and consciousness. An interview with Karl Friston. to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

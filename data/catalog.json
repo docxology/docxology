@@ -11,7 +11,7 @@
     "name": "Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-10-19",
+  "dateModified": "2026-10-22",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
@@ -433,8 +433,8 @@
       "@id": "https://danielarifriedman.com/catalog.html#full-text-corpus",
       "name": "Full-Text Extraction Corpus",
       "description": "202 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 145 images/ subdirectories with 8,959 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
-      "url": "https://danielarifriedman.com/papers/",
-      "encodingFormat": "application/json",
+      "url": "https://danielarifriedman.com/papers/README.md",
+      "encodingFormat": "text/markdown",
       "creator": {
         "@type": "Person",
         "@id": "https://danielarifriedman.com/#person",
@@ -447,8 +447,8 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/papers/",
-        "encodingFormat": "application/json"
+        "contentUrl": "https://danielarifriedman.com/papers/README.md",
+        "encodingFormat": "text/markdown"
       }
     },
     {
@@ -640,7 +640,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#external-links",
       "name": "External Link Report",
       "description": "Scoped network freshness report for site-critical outbound links.",
-      "url": "https://danielarifriedman.com/reports/external_links_2026-10-17.json",
+      "url": "https://danielarifriedman.com/reports/external_links_2026-10-22.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -654,7 +654,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-10-17.json",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-10-22.json",
         "encodingFormat": "application/json"
       }
     },
@@ -663,7 +663,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#external-link-triage",
       "name": "External Link Triage",
       "description": "Categorized link warnings: bot-protected, transient, timeout, stale, and review.",
-      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-10-17.json",
+      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-10-22.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -677,7 +677,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-10-17.json",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-10-22.json",
         "encodingFormat": "application/json"
       }
     },
@@ -686,7 +686,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-10-19.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-10-22.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -700,7 +700,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-10-19.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-10-22.json",
         "encodingFormat": "application/json"
       }
     },

@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ Comments on AI Accountability Policy to NTIA
+# 🛡️ Comments on AI Accountability Policy Submitted to NTIA Docket 2023-0005-0001 by IRSIRI, AII, PFH, and COGSEC
 
 **Scott David, Jumana Abu-Ghazaleh, Daniel Friedman, RJ Cordes** (2023) · *NTIA*
 
@@ -41,7 +41,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Scott David, Jumana Abu-Ghazaleh, Daniel Friedman, RJ Cordes (2023). *Comments on AI Accountability Policy to NTIA*. NTIA. DOI: 10.5281/zenodo.8025956. URL: https://doi.org/10.5281/zenodo.8025956.
+> Scott David, Jumana Abu-Ghazaleh, Daniel Friedman, RJ Cordes (2023). *Comments on AI Accountability Policy Submitted to NTIA Docket 2023-0005-0001 by IRSIRI, AII, PFH, and COGSEC*. NTIA. DOI: 10.5281/zenodo.8025956. URL: https://doi.org/10.5281/zenodo.8025956.
 
 ## Related
 

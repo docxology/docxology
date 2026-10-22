@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains"
+name: "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies"
 description: "Colonies of the red harvester ant, Pogonomyrmex barbatus, regulate foraging activity based on food availability and local conditions. Colony variation in foraging behavior is thought to be linked to biogenic amine signaling and metabolism. Measuremen..."
 tags: ["neurotransmitters", "dopamine", "serotonin", "octopamine", "tyramine", "pogonomyrmex-barbatus", "ce-fscv", "biogenic-amines", "colony-variation"]
 domain: "Entomology"
-citation: "Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton (2020). *Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains*. Analytical & Bioanalytical Chemistry."
+citation: "Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton (2020). *Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies*. Analytical & Bioanalytical Chemistry."
 doi: "10.1007/s00216-019-02355-3"
 ---
 
-# Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains
+# Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies
 
 **Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton** (2020) · Entomology
 

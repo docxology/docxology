@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Why Paleolithic Rockstars were both enigmatic and sporadic
+# AGENTS.md — Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago
 
-**Paper**: Why Paleolithic Rockstars were both enigmatic and sporadic (2024)
+**Paper**: Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago (2024)
 **Domain**: Genetics & Biomedical
 **Authors**: Dean Tickles, Daniel Ari Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Why Paleolithic Rockstars were both enigmatic and sporadic to related works in the bibliography
+- Connects Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

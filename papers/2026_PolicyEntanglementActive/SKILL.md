@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Policy Entanglement in Active Inference"
+name: "Policy Entanglement in Active Inference: A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary"
 description: "Active inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning horizons. Standard discrete active-inference implementati..."
 tags: ["active-inference", "free-energy-principle", "policy-inference", "mean-field", "total-correlation", "information-geometry", "schmidt-rank", "tensor-networks", "sophisticated-inference", "lean-theorem-proving"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *Policy Entanglement in Active Inference*. Zenodo."
+citation: "Daniel Ari Friedman (2026). *Policy Entanglement in Active Inference: A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary*. Zenodo."
 doi: "10.5281/zenodo.20418904"
 ---
 
-# Policy Entanglement in Active Inference
+# Policy Entanglement in Active Inference: A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary
 
 **Daniel Ari Friedman** (2026) · Computational
 

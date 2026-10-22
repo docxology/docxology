@@ -2,7 +2,7 @@
 
 # 🧠 Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case
 
-**Daniel Ari Friedman** (2026) · *Active Inference Journal*
+**Daniel Ari Friedman** (2026) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19695259-blue)](https://doi.org/10.5281/zenodo.19695259)
 
@@ -44,7 +44,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case*. Active Inference Journal. DOI: 10.5281/zenodo.19695259. URL: https://doi.org/10.5281/zenodo.19695259.
+> Daniel Ari Friedman (2026). *Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case*. Zenodo. DOI: 10.5281/zenodo.19695259. URL: https://doi.org/10.5281/zenodo.19695259.
 
 ## Related
 

@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 Increasing the Accessibility and Applicability of Active Inference
+# 🧠 Increasing the Accessibility and Applicability of Active Inference: Generative Playbooks and Open-Source Summer School Curriculum Development
 
 **Alexandra Mikhailova, Daniel Friedman** (2025) · *Zenodo*
 
@@ -42,7 +42,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Alexandra Mikhailova, Daniel Friedman (2025). *Increasing the Accessibility and Applicability of Active Inference*. Zenodo. DOI: 10.5281/zenodo.15061666. URL: https://doi.org/10.5281/zenodo.15061666.
+> Alexandra Mikhailova, Daniel Friedman (2025). *Increasing the Accessibility and Applicability of Active Inference: Generative Playbooks and Open-Source Summer School Curriculum Development*. Zenodo. DOI: 10.5281/zenodo.15061666. URL: https://doi.org/10.5281/zenodo.15061666.
 
 ## Related
 

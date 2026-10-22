@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 💻 Policy Entanglement in Active Inference
+# 💻 Policy Entanglement in Active Inference: A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
@@ -45,7 +45,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Policy Entanglement in Active Inference*. Zenodo. DOI: 10.5281/zenodo.20418904. URL: https://doi.org/10.5281/zenodo.20418904.
+> Daniel Ari Friedman (2026). *Policy Entanglement in Active Inference: A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary*. Zenodo. DOI: 10.5281/zenodo.20418904. URL: https://doi.org/10.5281/zenodo.20418904.
 
 ## Related
 

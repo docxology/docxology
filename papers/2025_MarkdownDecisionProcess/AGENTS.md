@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Markdown Decision Process: A Framework for Probabilistic Document Analysis
+# AGENTS.md — Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization
 
-**Paper**: Markdown Decision Process: A Framework for Probabilistic Document Analysis (2025)
+**Paper**: Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization (2025)
 **Domain**: Computational
 **Authors**: Daniel Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Markdown Decision Process: A Framework for Probabilistic Document Analysis to related works in the bibliography
+- Connects Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

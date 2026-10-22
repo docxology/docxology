@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees
+# AGENTS.md — A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)
 
-**Paper**: A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (2023)
+**Paper**: A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera) (2023)
 **Domain**: Entomology
 **Authors**: Daniel Ari Friedman, Chao Tong, Timothy A. Linksvayer, Matthias Freund, Nicole Weronika Keough, Brian Johnson
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees to related works in the bibliography
+- Connects A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera) to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

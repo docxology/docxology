@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎥 Postdoc review (2020–2023)
+# 🎥 Postdoc review (2020-2023) ~ September 25, 2023
 
 **Daniel Ari Friedman** (2023) · *Presentation*
 
@@ -41,7 +41,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Ari Friedman (2023). *Postdoc review (2020–2023)*. Presentation. DOI: 10.5281/zenodo.8377987. URL: https://doi.org/10.5281/zenodo.8377987.
+> Daniel Ari Friedman (2023). *Postdoc review (2020-2023) ~ September 25, 2023*. Presentation. DOI: 10.5281/zenodo.8377987. URL: https://doi.org/10.5281/zenodo.8377987.
 
 ## Related
 

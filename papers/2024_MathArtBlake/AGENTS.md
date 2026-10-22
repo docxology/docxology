@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — MathArt Stream #8: William Blake and Active Inference
+# AGENTS.md — MathArt Stream #8 ~ William Blake and Active Inference
 
-**Paper**: MathArt Stream #8: William Blake and Active Inference (2024)
+**Paper**: MathArt Stream #8 ~ William Blake and Active Inference (2024)
 **Domain**: Presentations & Media
 **Authors**: Daniel Ari Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects MathArt Stream #8: William Blake and Active Inference to related works in the bibliography
+- Connects MathArt Stream #8 ~ William Blake and Active Inference to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

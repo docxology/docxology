@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement
+# AGENTS.md — Partner Pen Play in Parallel (PPPiP): A New PPPiParadigm for Relationship Improvement
 
-**Paper**: Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement (2018)
+**Paper**: Partner Pen Play in Parallel (PPPiP): A New PPPiParadigm for Relationship Improvement (2018)
 **Domain**: Art & Synergetics
 **Authors**: Alexandra Mikhailova, Daniel A. Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement to related works in the bibliography
+- Connects Partner Pen Play in Parallel (PPPiP): A New PPPiParadigm for Relationship Improvement to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

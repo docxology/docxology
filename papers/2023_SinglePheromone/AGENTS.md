@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — A single-pheromone model accounts for empirical patterns of ant colony foraging
+# AGENTS.md — A single-pheromone model accounts for empirical patterns of ant colony foraging previously modeled using two pheromones
 
-**Paper**: A single-pheromone model accounts for empirical patterns of ant colony foraging (2023)
+**Paper**: A single-pheromone model accounts for empirical patterns of ant colony foraging previously modeled using two pheromones (2023)
 **Domain**: Entomology
 **Authors**: Eric Saund, Daniel Ari Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects A single-pheromone model accounts for empirical patterns of ant colony foraging to related works in the bibliography
+- Connects A single-pheromone model accounts for empirical patterns of ant colony foraging previously modeled using two pheromones to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

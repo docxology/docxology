@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Bridging gaps in image meme research: A multidisciplinary paradigm
+# AGENTS.md — Bridging gaps in image meme research: A multidisciplinary paradigm for scaling up qualitative analyses
 
-**Paper**: Bridging gaps in image meme research: A multidisciplinary paradigm (2024)
+**Paper**: Bridging gaps in image meme research: A multidisciplinary paradigm for scaling up qualitative analyses (2024)
 **Domain**: Cognitive Security
 **Authors**: Mridula Mascarenhas, Daniel Ari Friedman, Richard J Cordes
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Bridging gaps in image meme research: A multidisciplinary paradigm to related works in the bibliography
+- Connects Bridging gaps in image meme research: A multidisciplinary paradigm for scaling up qualitative analyses to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — GeneralizedNotationNotation (GNN)
+# AGENTS.md — Generalized_Notation_Notation (GNN)
 
-**Paper**: GeneralizedNotationNotation (GNN) (2026)
+**Paper**: Generalized_Notation_Notation (GNN) (2026)
 **Domain**: Active Inference
 **Authors**: Daniel Ari Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects GeneralizedNotationNotation (GNN) to related works in the bibliography
+- Connects Generalized_Notation_Notation (GNN) to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

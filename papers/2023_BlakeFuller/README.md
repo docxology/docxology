@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 William Blake & Buckminster Fuller: Lives in Juxtaposition
+# 🎨 William Blake & Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity)
 
 **Daniel Ari Friedman** (2023) · *Zenodo*
 
@@ -40,7 +40,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Ari Friedman (2023). *William Blake & Buckminster Fuller: Lives in Juxtaposition*. Zenodo. DOI: 10.5281/zenodo.7514367. URL: https://doi.org/10.5281/zenodo.7514367.
+> Daniel Ari Friedman (2023). *William Blake & Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity)*. Zenodo. DOI: 10.5281/zenodo.7514367. URL: https://doi.org/10.5281/zenodo.7514367.
 
 ## Related
 

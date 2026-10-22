@@ -2253,6 +2253,7 @@
       ],
       "source": "papers/2022_InformationCommons/full_text.md",
       "evidence": "EDITED BY Scott David, R.J. Cordes, and Daniel A. Friedman",
+      "contributor_role": "editor",
       "verified_on": "2026-10-01",
       "note": "No DOI, so no registry record; authorship read from the work's own archived document (title page / edited-by line / running header)."
     },
@@ -2413,7 +2414,11 @@
       "num": 78,
       "doi": null,
       "title": "Innovator's Digital Playbook",
-      "status": "no_doi"
+      "status": "website_verified",
+      "authors": [{"family": "Kang", "given": "Monica H."}, {"family": "Cordes", "given": "RJ"}, {"family": "Friedman", "given": "Daniel"}],
+      "source": "reports/content-citation-primary-evidence-2026-10-21.json",
+      "evidence": ["Monica H. Kang", "RJ Cordes", "Daniel Friedman"],
+      "verified_on": "2026-10-21"
     },
     "Friedman2021NarrativeInformationEcosystemsConflict079": {
       "num": 79,
@@ -2432,6 +2437,7 @@
       ],
       "source": "papers/2021_NarrativeEcosystems/full_text.md",
       "evidence": "EDITED BY Richard J. Cordes & Daniel A. Friedman",
+      "contributor_role": "editor",
       "verified_on": "2026-10-01",
       "note": "No DOI, so no registry record; authorship read from the work's own archived document (title page / edited-by line / running header)."
     },
@@ -2655,6 +2661,7 @@
       ],
       "source": "papers/2020_GreatPreset/full_text.md",
       "evidence": "EDITED BY Daniel A. Friedman & Richard J. Cordes",
+      "contributor_role": "editor",
       "verified_on": "2026-10-01",
       "note": "No DOI, so no registry record; authorship read from the work's own archived document (title page / edited-by line / running header)."
     },
@@ -4205,7 +4212,11 @@
       "num": 155,
       "doi": null,
       "title": "Lessons from the colony",
-      "status": "no_doi"
+      "status": "website_verified",
+      "authors": [{"family": "Friedman", "given": "Daniel Ari"}],
+      "source": "reports/content-citation-primary-evidence-2026-10-21.json",
+      "evidence": ["Lessons from the colony", "Daniel Ari Friedman"],
+      "verified_on": "2026-10-21"
     },
     "Friedman2016FullSpeedAheadCity156": {
       "num": 156,
@@ -5471,6 +5482,16 @@
           "given": "Daniel Ari"
         }
       ]
+    },
+    "Friedman2026ActiveInferenceAsMeta227": {
+      "num": 227,
+      "doi": "10.5281/zenodo.23397452",
+      "title": "Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision",
+      "registration_agency": "DataCite",
+      "resolved_title": "Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [{"family": "Friedman", "given": "Daniel Ari", "orcid": "0000-0001-6232-9096"}]
     }
   }
 }

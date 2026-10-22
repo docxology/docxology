@@ -1,13 +1,13 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus"
+name: "Behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus)"
 description: "Social insect colony behavior arises within a specific ecological context from patterns of interactions of nestmates with each other. The neurophysiological basis of behavior in the social insects has primarily been studied in the context of behavior..."
 tags: ["phd-dissertation", "pogonomyrmex-barbatus", "collective-behavior", "transcriptomics", "behavioral-ecology", "foraging-gene", "dopamine", "colony-variation", "stanford-university"]
 domain: "Entomology"
-citation: "Daniel Ari Friedman (2019). *PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus*. Stanford University."
+citation: "Daniel Ari Friedman (2019). *Behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus)*. Stanford University."
 ---
 
-# PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus
+# Behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus)
 
 **Daniel Ari Friedman** (2019) · Entomology
 

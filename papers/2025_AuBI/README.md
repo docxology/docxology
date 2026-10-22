@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 💻 Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference
+# 💻 Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems
 
 **Die Schwarze Katze, Andrew Djuwidja, Daniel Friedman** (2025) · *Zenodo*
 
@@ -43,7 +43,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Die Schwarze Katze, Andrew Djuwidja, Daniel Friedman (2025). *Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference*. Zenodo. DOI: 10.5281/zenodo.17228945. URL: https://doi.org/10.5281/zenodo.17228945.
+> Die Schwarze Katze, Andrew Djuwidja, Daniel Friedman (2025). *Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems*. Zenodo. DOI: 10.5281/zenodo.17228945. URL: https://doi.org/10.5281/zenodo.17228945.
 
 ## Related
 

@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 💻 Sortition Upstream of NTQR
+# 💻 Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
@@ -82,7 +82,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Sortition Upstream of NTQR*. Zenodo. DOI: 10.5281/zenodo.21083779. URL: https://doi.org/10.5281/zenodo.21083779.
+> Daniel Ari Friedman (2026). *Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation*. Zenodo. DOI: 10.5281/zenodo.21083779. URL: https://doi.org/10.5281/zenodo.21083779.
 
 ## Related
 

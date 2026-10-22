@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-12T18:44:40Z",
+  "generated_at": "2026-10-22T01:12:14Z",
   "source": "data/works.json",
   "summary": {
     "no_paper_folder": 17,
@@ -41,7 +41,7 @@
     {
       "num": 8,
       "citation_key": "Friedman20255thAppliedActiveInference008",
-      "title": "5th Applied Active Inference Symposium — Abstract Book",
+      "title": "Abstract book for: 5th Applied Active Inference Symposium",
       "type": "Presentation",
       "reasons": [
         "non_paper_record"
@@ -74,7 +74,7 @@
     {
       "num": 38,
       "citation_key": "Friedman2024MathArtStream8William038",
-      "title": "MathArt Stream #8: William Blake and Active Inference",
+      "title": "MathArt Stream #8 ~ William Blake and Active Inference",
       "type": "Presentation",
       "reasons": [
         "non_paper_record"
@@ -85,7 +85,7 @@
     {
       "num": 39,
       "citation_key": "Friedman2024SensemakingFederationExploringFrontiers039",
-      "title": "Sensemaking Federation: Exploring the Frontiers of Digital Innovation",
+      "title": "Transcript of: \"Sensemaking Federation: Exploring the Frontiers of Digital Innovation\"",
       "type": "Presentation",
       "reasons": [
         "non_paper_record"
@@ -96,7 +96,7 @@
     {
       "num": 43,
       "citation_key": "Friedman2024WhyPaleolithicRockstarsWere043",
-      "title": "Why Paleolithic Rockstars were both enigmatic and sporadic",
+      "title": "Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago",
       "type": "Paper",
       "reasons": [
         "no_full_text"
@@ -129,7 +129,7 @@
     {
       "num": 60,
       "citation_key": "Friedman2023PostdocReview20202023060",
-      "title": "Postdoc review (2020–2023)",
+      "title": "Postdoc review (2020-2023) ~ September 25, 2023",
       "type": "Presentation",
       "reasons": [
         "non_paper_record"
@@ -151,7 +151,7 @@
     {
       "num": 64,
       "citation_key": "Friedman2023TranscriptChrisFieldsPhysics064",
-      "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course",
+      "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course in 2023",
       "type": "Course",
       "reasons": [
         "no_paper_folder",
@@ -255,7 +255,7 @@
     {
       "num": 93,
       "citation_key": "Friedman2019PhDBehavioralPhysiologicalTranscriptomic093",
-      "title": "PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus",
+      "title": "Behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus)",
       "type": "Paper",
       "reasons": [
         "no_doi"
@@ -407,7 +407,7 @@
     {
       "num": 162,
       "citation_key": "Friedman2024CommentsSubmittedByBlockScience162",
-      "title": "Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum",
+      "title": "Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379",
       "type": "Paper",
       "reasons": [
         "no_paper_folder",

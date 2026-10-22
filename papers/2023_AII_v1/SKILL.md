@@ -1,15 +1,15 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "The Active Inference Institute and Active Inference Ecosystem (v1)"
+name: "The Active Inference Institute and Active Inference Ecosystem"
 description: "This document briefly surveys the current state of the Active Inference Institute and Active Inference Ecosystem, and outlines our future directions. It will be versioned as a living representation (both cyclic and updating) of ecosystems both genera..."
 tags: ["active-inference-institute", "open-science", "research-organization", "free-energy-principle", "community-building"]
 domain: "AII Ecosystem"
-citation: "Active Inference Institute, Ander Aguirre, John Boik, Libor Burian, Matthew Brown, RJ Cordes, Scott David, David S Douglass, Pablo Fernandez-Maquieira, Daniel A Friedman, Holly Grimm, Avel Guénin–Carlut, Maria Luiza Iennaco, V Bleu Knight, Alexandra Mikhailova, Ali Rahmjoo, Adeel Razi, Jakub Smékal, Ronen Tamari, Dean Tickles, Alex Vyatkin (2023). *The Active Inference Institute and Active Inference Ecosystem (v1)*. Zenodo."
+citation: "Active Inference Institute, Ander Aguirre, John Boik, Libor Burian, Matthew Brown, RJ Cordes, Scott David, David S Douglass, Pablo Fernandez-Maquieira, Daniel A Friedman, Holly Grimm, Avel Guénin–Carlut, Maria Luiza Iennaco, V Bleu Knight, Alexandra Mikhailova, Ali Rahmjoo, Adeel Razi, Jakub Smékal, Ronen Tamari, Dean Tickles, Alex Vyatkin (2023). *The Active Inference Institute and Active Inference Ecosystem*. Zenodo."
 doi: "10.5281/zenodo.8266280"
 artifact_doi: "10.5281/zenodo.8266281"
 ---
 
-# The Active Inference Institute and Active Inference Ecosystem (v1)
+# The Active Inference Institute and Active Inference Ecosystem
 
 **Active Inference Institute, Ander Aguirre, John Boik, Libor Burian, Matthew Brown, RJ Cordes, Scott David, David S Douglass, Pablo Fernandez-Maquieira, Daniel A Friedman, Holly Grimm, Avel Guénin–Carlut, Maria Luiza Iennaco, V Bleu Knight, Alexandra Mikhailova, Ali Rahmjoo, Adeel Razi, Jakub Smékal, Ronen Tamari, Dean Tickles, Alex Vyatkin** (2023) · AII Ecosystem
 

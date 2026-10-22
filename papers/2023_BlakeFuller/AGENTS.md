@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — William Blake & Buckminster Fuller: Lives in Juxtaposition
+# AGENTS.md — William Blake & Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity)
 
-**Paper**: William Blake & Buckminster Fuller: Lives in Juxtaposition (2023)
+**Paper**: William Blake & Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity) (2023)
 **Domain**: Art & Synergetics
 **Authors**: Daniel Ari Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects William Blake & Buckminster Fuller: Lives in Juxtaposition to related works in the bibliography
+- Connects William Blake & Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity) to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

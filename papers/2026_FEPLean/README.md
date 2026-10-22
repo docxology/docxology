@@ -2,7 +2,7 @@
 
 # 🧠 Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics
 
-**Daniel Ari Friedman** (2026) · *Active Inference Journal*
+**Daniel Ari Friedman** (2026) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19699233-blue)](https://doi.org/10.5281/zenodo.19699233)
 
@@ -54,7 +54,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics*. Active Inference Journal. DOI: 10.5281/zenodo.19699233. URL: https://doi.org/10.5281/zenodo.19699233.
+> Daniel Ari Friedman (2026). *Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics*. Zenodo. DOI: 10.5281/zenodo.19699233. URL: https://doi.org/10.5281/zenodo.19699233.
 
 ## Related
 
