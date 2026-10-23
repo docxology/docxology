@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-23T17:57:37Z",
-  "source_commit_at_generation": "72ca0688968ae4b95e4a310c81b79554fd0a0e3e",
+  "generated_at": "2026-10-23T18:06:52Z",
+  "source_commit_at_generation": "9c96a56700e07cf1f247168ec05e77b829670dd1",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -31,21 +31,21 @@
     "data/current-counts.json": "87dac247aa398bfe74e27a79dbf849e3769555f1fa4798be3b8e6565110fbe7a",
     "data/coverage-exceptions.json": "16ce9c455abf9ba7868369f24e6bacbf508fa07a0109d28f8b97ba82b0b8ecae",
     "data/repository-classification.json": "0c66c09c69e424113868eebd2153ddb84d09ccc5d6202042d3d0f9eea349abd9",
-    "data/agent-index.json": "8d52d6151d6d9839f751a6aaaa02965f651b83c661a69c5b00a23624125c803b",
+    "data/agent-index.json": "0008c0b8af5b70f02e74137aa7b1067614db61e60390427af082955bededd86f",
     "data/generated-manifest.json": "c0a89ee33e7e02b47bffc4874e9da69b8eea3ce5fa2aef02eb482a7bac38bf50",
-    "data/pages-artifact-manifest.json": "dafbfb3ccdb591c5226146471c6894ab3b4f865c0c0aad1d0f0c5b11152eba4e"
+    "data/pages-artifact-manifest.json": "ac1704422487e3661a3cadfe6ab2a0545de4eb2d4a56cb0bf42bed3aa64bc47e"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "72ca0688968ae4b95e4a310c81b79554fd0a0e3e",
+    "source_commit_at_generation": "9c96a56700e07cf1f247168ec05e77b829670dd1",
     "artifact_file_count": 6095,
-    "artifact_bytes": 918179347,
+    "artifact_bytes": 918179873,
     "omitted_paper_image_count": 8959,
     "omitted_superseded_report_count": 665
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "72ca0688968ae4b95e4a310c81b79554fd0a0e3e",
+    "candidate_source_commit": "9c96a56700e07cf1f247168ec05e77b829670dd1",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
