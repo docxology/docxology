@@ -109,6 +109,18 @@ uv run python3 -m pytest code/tests -q
 uv run --group lint ruff check code
 ```
 
+When test temporary directories sit below an enclosing Git repository, keep
+the configured external `TMPDIR` as the Git discovery boundary for fixtures:
+
+```bash
+export GIT_CEILING_DIRECTORIES="${TMPDIR%/}${GIT_CEILING_DIRECTORIES:+:${GIT_CEILING_DIRECTORIES}}"
+```
+
+This prevents fixtures intended to have no repository from inheriting the
+parent repository. Repositories explicitly initialized inside a fixture remain
+discoverable. Keep the external-volume `TMPDIR` and cache bindings from the
+root operating instructions.
+
 Regeneration writes checked-in artifacts; `--list` previews the plan without
 running it. Publication requires the clean payload/control-tail sequence in
 [`settle.md`](settle.md); editing documentation alone does not exempt downstream
