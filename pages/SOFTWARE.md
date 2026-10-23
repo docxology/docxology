@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
  
- *125 original repositories · 41 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+ *127 original repositories · 41 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
  
  *[All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -138,15 +138,15 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [template_template](https://github.com/docxology/template_template) | Template meta-research exemplar: self-documenting reproducible research repo · [Zenodo](https://doi.org/10.5281/zenodo.20419007) · [📄](../papers/2026_TemplateApproachReproducible/) | TeX | 0 | 2026-10 |
 | [template_bioinformatics_project](https://github.com/docxology/template_bioinformatics_project) | template_bioinformatics_project — Active Inference / research exemplar repository | Python | 0 | 2026-08 |
 | [bond](https://github.com/docxology/bond) | Top-level wrapper manuscript and reproducible 33-package special-agent operations compendium, with generated chapters, unified bibliography, deterministic regeneration, and tested release artifacts · [📄](../papers/2026_PROJECTBONDSpecial/) · [Zenodo](https://doi.org/10.5281/zenodo.21843592) | Markdown/Python | 0 | 2026-09 |
-| [line_set](https://github.com/docxology/line_set) | A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice · [📄](../papers/2026_LineSet/) · [Citation DOI](https://doi.org/10.5281/zenodo.21754243) · [Zenodo artifact v0.1.0](https://doi.org/10.5281/zenodo.21754244) | Python | 0 | 2026-09 |
-| [black_line](https://github.com/docxology/black_line) | A positive operating discipline for concise, inspectable, revisable work · [📄](../papers/2026_BlackLine/) · [Zenodo](https://doi.org/10.5281/zenodo.21754235) | Python | 0 | 2026-09 |
-| [white_line](https://github.com/docxology/white_line) | A typed ledger for the edge of a claim: absence, restraint, and the unknowable · [📄](../papers/2026_WhiteLine/) · [Zenodo](https://doi.org/10.5281/zenodo.21754241) | Python | 0 | 2026-09 |
-| [golden_line](https://github.com/docxology/golden_line) | An aspirational thread and long-horizon direction for personal work · [📄](../papers/2026_GoldenLine/) · [Zenodo](https://doi.org/10.5281/zenodo.21754237) | Python | 0 | 2026-09 |
+| [line_set](https://github.com/docxology/line_set) | A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice; repository v0.5.0 · [📄](../papers/2026_LineSet/) · [Citation DOI](https://doi.org/10.5281/zenodo.21754243) · [Zenodo artifact v0.1.0](https://doi.org/10.5281/zenodo.21754244) | Python | 0 | 2026-10 |
+| [black_line](https://github.com/docxology/black_line) | A positive operating discipline for concise, inspectable, revisable work; repository v0.5.0 · [📄](../papers/2026_BlackLine/) · [Zenodo](https://doi.org/10.5281/zenodo.21754235) | Python | 0 | 2026-10 |
+| [white_line](https://github.com/docxology/white_line) | A typed ledger for the edge of a claim: absence, restraint, and the unknowable; repository v0.8.0 · [📄](../papers/2026_WhiteLine/) · [Zenodo](https://doi.org/10.5281/zenodo.21754241) | Python | 0 | 2026-10 |
+| [golden_line](https://github.com/docxology/golden_line) | An aspirational thread and long-horizon direction for personal work; repository v0.5.0 · [📄](../papers/2026_GoldenLine/) · [Zenodo](https://doi.org/10.5281/zenodo.21754237) | Python | 0 | 2026-10 |
 | [red_line](https://github.com/docxology/red_line) | A personal security boundary and explicit No document for dual-use development · [📄](../papers/2026_PersonalRedLines/) · [Zenodo](https://doi.org/10.5281/zenodo.21754239) | Python | 0 | 2026-09 |
-| [witness_register](https://github.com/docxology/witness_register) | Co-registration without aggregation — the Witness Register holding instrument · [📄](../papers/2026_WitnessRegister/) · [Zenodo](https://doi.org/10.5281/zenodo.21754245) | Python | 0 | 2026-09 |
-| [blue_line](https://github.com/docxology/blue_line) | A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work · [📄](../papers/2026_BlueLine/) · [Zenodo](https://doi.org/10.5281/zenodo.22833489) | Python | 0 | 2026-09 |
-| [green_line](https://github.com/docxology/green_line) | A capacity-under-development instrument: the green line of the docxology line set · [📄](../papers/2026_GreenLine/) · [Zenodo](https://doi.org/10.5281/zenodo.22833491) | Python | 0 | 2026-09 |
-| [silver_line](https://github.com/docxology/silver_line) | A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse · [📄](../papers/2026_SilverLine/) · [Citation DOI](https://doi.org/10.5281/zenodo.22833485) · [Zenodo artifact v0.1.0](https://doi.org/10.5281/zenodo.22833486) | Python | 0 | 2026-09 |
+| [witness_register](https://github.com/docxology/witness_register) | Co-registration without aggregation — the Witness Register holding instrument; repository v0.2.0 · [📄](../papers/2026_WitnessRegister/) · [Zenodo](https://doi.org/10.5281/zenodo.21754245) | Python | 0 | 2026-10 |
+| [blue_line](https://github.com/docxology/blue_line) | A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work; repository v0.2.0 · [📄](../papers/2026_BlueLine/) · [Zenodo](https://doi.org/10.5281/zenodo.22833489) | Python | 0 | 2026-10 |
+| [green_line](https://github.com/docxology/green_line) | A capacity-under-development instrument: the green line of the docxology line set; repository v0.2.0 · [📄](../papers/2026_GreenLine/) · [Zenodo](https://doi.org/10.5281/zenodo.22833491) | Python | 0 | 2026-10 |
+| [silver_line](https://github.com/docxology/silver_line) | A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse; repository v0.2.0 · [📄](../papers/2026_SilverLine/) · [Citation DOI](https://doi.org/10.5281/zenodo.22833485) · [Zenodo artifact v0.1.0](https://doi.org/10.5281/zenodo.22833486) | Python | 0 | 2026-10 |
 | [template_advanced_literature_review](https://github.com/docxology/template_advanced_literature_review) | Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, and deterministic synthesis | Python | 0 | 2026-08 |
 | [crescent-city-intel](https://github.com/docxology/crescent-city-intel) | Comprehensive local intelligence platform for Crescent City, CA — municipal code, real-time alerts, RAG chat, and analytics | TypeScript | 0 | 2026-10 |
 | [math4wisdom-superhuman-docs-archive](https://github.com/docxology/math4wisdom-superhuman-docs-archive) | Structured, read-only Math4Wisdom Superhuman Docs archive | TypeScript | 0 | 2026-08 |
@@ -165,6 +165,8 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [daf-okn](https://github.com/docxology/daf-okn) | Python package and CLI for Open Knowledge Network registry discovery, vault-to-graph export, graph analysis and visualization, and local RDF contribution packaging; packaging does not upload to the registry, and live endpoint coverage remains limited | Python | 0 | 2026-10 |
 | [active_inference_meta_pragmatic](https://github.com/docxology/active_inference_meta_pragmatic) | Meta-pragmatic active inference with executable GNN models, exact categorical inference and bounded synthetic sensor/action studies · [📄](../papers/2026_ActiveInferenceAs/) · [Citation DOI](https://doi.org/10.5281/zenodo.23397452) | Python | 0 | 2026-10 |
 | [ActiveInferenceSynthetic](https://github.com/docxology/ActiveInferenceSynthetic) | Executable teaching paper with numerical demonstrations, selected Lean proofs and a twenty-minute lecture; public distribution 0.6.1 retains scientific package 0.5.0 · [📄](../papers/2026_ActiveInferenceSynthetic/) · [Citation DOI](https://doi.org/10.5281/zenodo.23321280) | Python | 0 | 2026-10 |
+| [active_assembly_theory_and_practice](https://github.com/docxology/active_assembly_theory_and_practice) | Assembly-to-inference research with authored fixtures, executable generative models, and bounded source-contract validation · [📄](../papers/2026_ActiveAssemblyTheory/) · [Citation DOI](https://doi.org/10.5281/zenodo.23484107) | Python | 0 | 2026-10 |
+| [thanks_for_nothing](https://github.com/docxology/thanks_for_nothing) | Finite-model research on gratitude, absence and model revisability; synthetic results retain explicit human and clinical validation limits · [📄](../papers/2026_ThanksNothing/) · [Citation DOI](https://doi.org/10.5281/zenodo.23402516) | Python | 0 | 2026-10 |
 
 ---
 
@@ -178,7 +180,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 |---|---|---|:---:|---|
 | [ActiveInferenceJournal](https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal) | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output | HTML | 44 | 2026-09 |
 | [fundamentals](https://github.com/ActiveInferenceInstitute/fundamentals) | Unofficial repo for materials and code related to "Fundamentals of Active Inference" (Namjoshi 2026). | Python | 35 | 2026-08 |
-| [Generalized_Notation_Notation](https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation) | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · [Zenodo software](https://doi.org/10.5281/zenodo.19600217) | Python | 33 | 2026-10 |
+| [Generalized_Notation_Notation](https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation) | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · [Citation DOI](https://doi.org/10.5281/zenodo.7803313) · [Current software v4.3.0](https://zenodo.org/records/23551166) · [📄](../papers/2026_GeneralizedNotationNotationGNN/) · [Earlier software archive](https://doi.org/10.5281/zenodo.19600217) | Python | 33 | 2026-10 |
 | [ActiveBlockference](https://github.com/ActiveInferenceInstitute/ActiveBlockference) | Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework | Jupyter | 32 | 2026-08 |
 | [Active_InferAnts](https://github.com/ActiveInferenceInstitute/Active_InferAnts) | Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference | Python | 30 | 2026-09 |
 | [cognitive](https://github.com/ActiveInferenceInstitute/cognitive) | Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization | Python | 22 | 2026-10 |
@@ -233,8 +235,9 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Education | 7 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook`, `AGEINT`, `OmniLatticeTextbook` |
 | Other | 6 | `cascadia`, `fuller-obsidian`, `service`, `flick`, `Digi-PPPiP`, `math4wisdom-superhuman-docs-archive` |
 | Research Practice | 9 | `line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register`, `blue_line`, `green_line`, `silver_line` |
-| **docxology subtotal** | **125** | |
-| **Grand Total** | **166** | |
+| Computational Research | 2 | `thanks_for_nothing`, `active_assembly_theory_and_practice` |
+| **docxology subtotal** | **127** | |
+| **Grand Total** | **168** | |
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; GitHub reports the AII account as an **Organization** (observed 2026-10-06). See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 
 ---

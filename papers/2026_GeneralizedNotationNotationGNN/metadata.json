@@ -143,5 +143,15 @@
     ],
     "current_concept_verification": "Direct DataCite resolution of the canonical concept DOI on 2026-10-01 also names Friedman alone; the current author list follows that record and the v3.6.0 manuscript."
   },
-  "pdf_sha256": "acb7749c561b26562064421ca2f7fbca68c8b0e8a955082e5d5a3e28b50bd784"
+  "pdf_sha256": "acb7749c561b26562064421ca2f7fbca68c8b0e8a955082e5d5a3e28b50bd784",
+  "latest_software_release": {
+    "version": "v4.3.0",
+    "publication_date": "2026-10-22",
+    "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v4.3.0",
+    "zenodo_record_url": "https://zenodo.org/records/23551166",
+    "artifact_doi": "10.5281/zenodo.23551166",
+    "citation_doi": "10.5281/zenodo.7803313",
+    "source_report": "reports/paired_publications_2026-10-23.json",
+    "scope": "Current software pointer only; the archived v3.6.0 manuscript, extraction, summaries, and provenance remain that earlier source snapshot."
+  }
 }

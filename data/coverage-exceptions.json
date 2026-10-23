@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-22T01:12:14Z",
+  "generated_at": "2026-10-23T16:58:20Z",
   "source": "data/works.json",
   "summary": {
     "no_paper_folder": 17,
     "no_full_text": 21,
-    "no_doi": 15,
+    "no_doi": 16,
     "no_canonical_url": 2,
     "non_paper_record": 21
   },
@@ -462,6 +462,17 @@
       "type": "Paper",
       "reasons": [
         "no_full_text"
+      ],
+      "review_status": "needs_review",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 230,
+      "citation_key": "Friedman2026ObserversWhoReadTheir230",
+      "title": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+      "type": "Paper",
+      "reasons": [
+        "no_doi"
       ],
       "review_status": "needs_review",
       "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."

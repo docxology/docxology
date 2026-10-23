@@ -1,0 +1,91 @@
+{
+  "title": "Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness",
+  "version": "0.11.0",
+  "doi": "10.5281/zenodo.23402516",
+  "doi_url": "https://doi.org/10.5281/zenodo.23402516",
+  "zenodo_record": "https://zenodo.org/records/23402516",
+  "record_id": "23402517",
+  "publication_date": "2026-10-22",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "<p>Gratitude can concern a benefit received, a harm that did not occur,\nor the conditions that make one's own assumptions examinable. We develop\nthe proposal that appreciating these conditions can orient practice\ntoward realizing emptiness: examining how distinctions arise,\nrelinquishing their assumed intrinsic necessity, and retaining their\nconditional usefulness. The argument distinguishes an observed absence,\na missing observation, counterfactual valuation and non-reification, and\nplaces their differences in dialogue with explicitly situated\nphilosophical and scriptural sources. We reconstruct Fisher, Sandved\nSmith and Hohwy's gratitude and gaze notebooks, then separate faithful\nreconstruction from corrected experiments and new mechanisms.\nGNN-declared paired recall experiments use 5120 independent agent-world\nunits, matched environmental exposure and replay dose, normalized\nlikelihoods, and independent predictive assessment. Pinned Realizing\nEmptiness interfaces supply structural admission and finite mathematical\ncomparators. An enacted inquiry model separates appreciation, costly\nactivity, access to alternatives and evidence-responsive retention or\nrevision; explicit learning-to-gaze and joint scene/encoding experiments\nexamine transfer and identifiability. Exact count enumeration,\nmathematical nulls, paired controls and joint bootstrap inference make\nthe resulting software claims independently checkable.</p>\n<p>Selective positive recall reduces the declared optimism summary,\nwhile its predictive consequences depend on the world mixture and the\nspecified transfer bridge. Counterfactual absence valuation preserves\ninference by construction. Accessible inquiry can revise a contradicted\nrestriction and retain a useful one; activity without access instead\nincurs costs while preserving rigid forecasts. Exact analysis exposes\nrare adverse selections absent from seeded realizations. The original\ngaze code reproduces the pre-intervention occupancy but contains no\nimplemented after intervention. Our active-scene extension finds a\ncontext-dependent access advantage without an additional\ninquiry-specific predictive advantage. Joint scene/encoding inquiry\ndistinguishes learning an encoding from combining it with scene\nevidence: observationally equivalent labels remain unidentifiable, and\nexcluded hypotheses cannot be recovered. Known-answer fixtures also\nretain skew-related undercoverage and unavailable rare-event estimates\nrather than treating replication size as a remedy for every inferential\nfailure. The contribution is a reproducible account of enabling\noperations and their limits, together with a falsifiable human research\nprogram that separates inquiry value from patience, anticipated good\nnews and instrumental information demand. Synthetic model results\nestablish neither human gratitude nor contemplative realization or\nclinical benefit. Code, declared models and reproducibility materials\nare available at <a href=\"https://github.com/docxology/thanks_for_nothing\">github.com/docxology/thanks_for_nothing</a>.</p>",
+  "keywords": [
+    "gratitude",
+    "emptiness",
+    "active inference",
+    "model revisability",
+    "generalized notation notation",
+    "reproducible research"
+  ],
+  "files": [
+    {
+      "name": "validation.json",
+      "size_bytes": 5936,
+      "checksum": "md5:a297f0fa1db3cc7bcae7ee8bdf17e0e2",
+      "download_url": "https://zenodo.org/api/records/23402517/files/validation.json/content"
+    },
+    {
+      "name": "thanks_for_nothing-0.11.0-py3-none-any.whl",
+      "size_bytes": 14377654,
+      "checksum": "md5:b7c971ae510d5d56d9810048fb763902",
+      "download_url": "https://zenodo.org/api/records/23402517/files/thanks_for_nothing-0.11.0-py3-none-any.whl/content"
+    },
+    {
+      "name": "thanks-for-nothing-v0.11.0-manuscript.pdf",
+      "size_bytes": 19287664,
+      "checksum": "md5:daaa7c39334bee4268efe63837013638",
+      "download_url": "https://zenodo.org/api/records/23402517/files/thanks-for-nothing-v0.11.0-manuscript.pdf/content"
+    },
+    {
+      "name": "thanks-for-nothing-v0.11.0-code.zip",
+      "size_bytes": 153974823,
+      "checksum": "md5:624d8fe4337afe7bf693b7b74fe90b6c",
+      "download_url": "https://zenodo.org/api/records/23402517/files/thanks-for-nothing-v0.11.0-code.zip/content"
+    },
+    {
+      "name": "manifest.json",
+      "size_bytes": 1498,
+      "checksum": "md5:aced2ba12dd5ded2f1586e2c05321fdf",
+      "download_url": "https://zenodo.org/api/records/23402517/files/manifest.json/content"
+    },
+    {
+      "name": "thanks_for_nothing-0.11.0.tar.gz",
+      "size_bytes": 45292885,
+      "checksum": "md5:6158bae5186c8413d43eaf97ea025c51",
+      "download_url": "https://zenodo.org/api/records/23402517/files/thanks_for_nothing-0.11.0.tar.gz/content"
+    },
+    {
+      "name": "zenodo-metadata.json",
+      "size_bytes": 4543,
+      "checksum": "md5:ff518472134dcf0f2d81deb28b7a4ca2",
+      "download_url": "https://zenodo.org/api/records/23402517/files/zenodo-metadata.json/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/thanks_for_nothing"
+    }
+  ],
+  "github_repo": "docxology/thanks_for_nothing",
+  "github_release_url": "https://github.com/docxology/thanks_for_nothing/releases/tag/v0.11.0",
+  "release_tag": "v0.11.0",
+  "release_name": "Thanks for Nothing v0.11.0",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked"
+  ],
+  "checked_at": "2026-10-23T16:49:33Z"
+}

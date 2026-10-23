@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-10-22T15:28:49+00:00`
+Generated: `2026-10-23T17:48:00+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -25,23 +25,23 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
 - public_source_snapshot: `reports/public_source_snapshot_2026-10-18.json`
-- paired_publications: `reports/paired_publications_2026-10-18.json`
+- paired_publications: `reports/paired_publications_2026-10-23.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
 ## Counts
 
-- Bibliography works: `224`
-- Paper-folder docs: `207`
-- Full-text extractions: `203`
+- Bibliography works: `226`
+- Paper-folder docs: `209`
+- Full-text extractions: `205`
 - Papers with image galleries: `145`
 - Total extracted images: `8959`
-- Bibliography docs links: `207`
+- Bibliography docs links: `209`
 
 ### Types
 
 - Books: `5`
 - Courses: `3`
-- Papers: `203`
+- Papers: `205`
 - Playbooks: `2`
 - Presentations: `8`
 - Report: `1`
@@ -53,38 +53,38 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - Active Inference: `48`
 - Cognitive Security: `37`
 - Art & Synergetics: `16`
-- Computational: `65`
+- Computational: `67`
 - AII Ecosystem: `7`
 - Presentations & Media: `14`
 - Genetics & Biomedical: `13`
 
 ### Software
 
-- docxology_owned: `125`
+- docxology_owned: `127`
 - active_inference_institute: `41`
-- curated_total: `166`
+- curated_total: `168`
 
 ### Generated Exports
 
-- data_works_json: `224`
-- data_software_json: `166`
-- data_publications_ld_main_entity: `224`
-- data_software_ld_main_entity: `166`
+- data_works_json: `226`
+- data_software_json: `168`
+- data_publications_ld_main_entity: `226`
+- data_software_ld_main_entity: `168`
 
 ### GitHub Inventory
 
-- total: `284`
-- docxology: `239`
+- total: `286`
+- docxology: `241`
 - ActiveInferenceInstitute: `45`
-- curated: `166`
+- curated: `168`
 - uncataloged: `118`
 - forks: `107`
 - archived: `5`
-- public: `284`
+- public: `286`
 - private: `0`
-- recently_updated: `224`
-- primary_total: `177`
-- primary_docxology: `134`
+- recently_updated: `225`
+- primary_total: `179`
+- primary_docxology: `136`
 - primary_ActiveInferenceInstitute: `43`
 - fork_docxology: `105`
 - fork_ActiveInferenceInstitute: `2`
@@ -102,22 +102,22 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Paired Publications
 
-- github_releases: `291`
-- zenodo_records: `168`
-- pairs: `530`
-- strong_pairs: `70`
-- software_catalogued: `1`
-- already_reviewed: `527`
+- github_releases: `14`
+- zenodo_records: `170`
+- pairs: `17`
+- strong_pairs: `1`
+- software_catalogued: `0`
+- already_reviewed: `17`
 - needs_review: `0`
 - create_new: `0`
-- update_existing: `2`
+- update_existing: `0`
 
 ### Paired Publication Decisions
 
-- decision: `accept`
-- groups: `88`
-- raw_candidates: `524`
-- note: `Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated. R79 records the Cognitive Diagrams v2.5.0 release (2026-09-10 scan) as version-history-only under the already-cited concept DOI 10.5281/zenodo.19695259. R80 records the six GitHub release pairs (v0.3.0-v1) under the canonical curated EvoJump concept 10.5281/zenodo.22664675 as software-catalog (SOFTWARE.md already lists EvoJump; the citable paper remains bibliography row #12, concept 10.5281/zenodo.17229924), and R81 records the GitHub-Zenodo automated integration archive concept 10.5281/zenodo.22664645 (docxology/EvoJump-v0.5.2.zip, zip-only) as a superseded duplicate deposit. R82-R83 (2026-09-17 scan) record the fep_lean v1.2.0 and GeneralizedNotationNotation v3.4.0 releases as version-history-only under their already-cited citation DOIs (10.5281/zenodo.19699233 row #113 and 10.5281/zenodo.7803313 row #168), both pairs lacking github_release_mentions_doi cross-link evidence, so neither creates a duplicate bibliography row.`
+- decision: `mixed`
+- groups: `214`
+- raw_candidates: `654`
+- note: `Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated. R79 records the Cognitive Diagrams v2.5.0 release (2026-09-10 scan) as version-history-only under the already-cited concept DOI 10.5281/zenodo.19695259. R80 records the six GitHub release pairs (v0.3.0-v1) under the canonical curated EvoJump concept 10.5281/zenodo.22664675 as software-catalog (SOFTWARE.md already lists EvoJump; the citable paper remains bibliography row #12, concept 10.5281/zenodo.17229924), and R81 records the GitHub-Zenodo automated integration archive concept 10.5281/zenodo.22664645 (docxology/EvoJump-v0.5.2.zip, zip-only) as a superseded duplicate deposit. R82-R83 (2026-09-17 scan) record the fep_lean v1.2.0 and GeneralizedNotationNotation v3.4.0 releases as version-history-only under their already-cited citation DOIs (10.5281/zenodo.19699233 row #113 and 10.5281/zenodo.7803313 row #168), both pairs lacking github_release_mentions_doi cross-link evidence, so neither creates a duplicate bibliography row. The 2026-10-23 completion records 11 rejected cross-project archive matches, three acknowledged/superseded version-history relations, and three accepted current/existing work relations. Every outcome retains its individual actor, timestamp and rationale.`
 
 ## Validation
 

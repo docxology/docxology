@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-23 — Publication and repository refresh
+
+- Indexed the co-authored preprint *Observers Who Read Their Universe into Existence*, with the supplied r2052 PDF and its hash, complete PDF author list, extracted text, and explicit source/physical-validation limits.
+- Added the public *Thanks for Nothing* publication through the GitHub/Zenodo intake and refreshed the complete repository inventory; linked the already-indexed Active Assembly work to its public software repository.
+- Resolved all 17 release/archive candidates with explicit identity and version-history decisions; refreshed eight line-project software release pointers while preserving archived manuscripts. Recorded blocked public-source checks separately from successful observations.
+
 ## 2026-10-22 — Blake pathway and public publication coverage
 
 - Added a reproducible Blake pathway over existing bibliography identities, with primary/version DOI links, hash-bound passage locations, namesake exclusions, negative-search coverage, and explicit reading/citation-validation limits.

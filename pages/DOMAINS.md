@@ -89,7 +89,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 - [AgenticMesh](https://github.com/docxology/AgenticMesh) — Active Inference & Agentic Mesh — modular Python infrastructure for building agentic systems using free-energy-minimizing Active Inference principles
 - [ActiveInferAnts](https://github.com/docxology/ActiveInferAnts) — Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy
 - [Active_InferAnts](https://github.com/ActiveInferenceInstitute/Active_InferAnts) — Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
-- [Generalized_Notation_Notation](https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation) — GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software
+- [Generalized_Notation_Notation](https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation) — GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Citation DOI · Current software v4.3.0 ·  · Earlier software archive
 - [fep_formal](https://github.com/ActiveInferenceInstitute/fep_formal) — Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI · Zenodo software archive
 
 ## 🛡️ [Cognitive Security](../domain-cognitive-security.html)
@@ -167,7 +167,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 65
+- Works: 67
 - Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 

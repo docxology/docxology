@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T15:28:50Z",
+  "generated_at": "2026-10-23T17:48:01Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,9 +34,9 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 224,
-    "software_catalogued": 166,
-    "owned_software_catalogued": 125,
+    "works": 226,
+    "software_catalogued": 168,
+    "owned_software_catalogued": 127,
     "aii_software_catalogued": 41,
     "google_scholar": {
       "citations": 824,
@@ -74,13 +74,13 @@
       "caveat": "The public-source snapshot records this account's type as Organization; the repository count is read from /users/ActiveInferenceInstitute, which serves Organization accounts as well as Users. Local software catalog tracks 41 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-10-18T19:09:22Z",
+      "generated_at": "2026-10-23T16:47:41Z",
       "source": "GitHub REST API /users/{owner}/repos",
-      "total": 284,
-      "public": 284,
-      "primary_total": 177,
+      "total": 286,
+      "public": 286,
+      "primary_total": 179,
       "forks": 107,
-      "docxology": 239,
+      "docxology": 241,
       "ActiveInferenceInstitute": 45
     }
   },
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "ba26f7a4c3f6c5b9683fa1dc4368b8066ed7a12282802f2b0c4f9dfb87b4e708",
+      "sha256": "805ab77b81c5166ff82adeb88670c1e1994c9ec0610555b9f7564359ebb203ae",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 184356,
-          "sha256": "32212d11564b45b2a6987cfd5287006822845c60752d07df99fab4012c03b20b"
+          "bytes": 186291,
+          "sha256": "6f2287cffb5c0ddfcd892ea66ffb7b01565b4b50e59dce7d4f276c06d5163602"
         },
         {
           "path": "data/software.json",
-          "bytes": 83535,
-          "sha256": "10e281bae17c2d2bdc56e98a45607ec74d6be5c07963894e6e94cc3fca9aee90"
+          "bytes": 84923,
+          "sha256": "fbc8faf3c17807943a4d5b9affade1bcdc42db106b8608ecf61d1a834d38be8a"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 13095,
-          "sha256": "322983adeb1c68dfc1ed1d18274bbe1ab585df26d14508d4b7a79fbf4053bb89"
+          "sha256": "e44a525dff63651196ece8438ff26037a228d4d8841fb0002af51242a8ccb824"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 330854,
-          "sha256": "6a2db1ce763b3dfb854247465cdda0e4dfefc50b62d919df940cf0e81f344548"
+          "bytes": 332452,
+          "sha256": "9abfed8dbcce285140e385133c6b912489772ab736f1414261232c9925c333eb"
         }
       ]
     },
@@ -7908,6 +7908,65 @@
       "authors": [
         "Friedman, Daniel Ari"
       ]
+    },
+    {
+      "num": 229,
+      "citation_key": "Friedman2026ThanksNothingGratitudeModel229",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.23402516",
+      "doi": "10.5281/zenodo.23402516",
+      "docs_path": "papers/2026_ThanksNothing/",
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_ThanksNothing/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 230,
+      "citation_key": "Friedman2026ObserversWhoReadTheir230",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+      "venue": "PhilPapers (preprint)",
+      "url": "https://philpapers.org/rec/MUEFOC",
+      "doi": "",
+      "docs_path": "papers/2026_ObserversReadUniverse/",
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_ObserversReadUniverse/full_text.md",
+      "authors": [
+        "Mueller, Bernhard",
+        "Poneder, Mario",
+        "Osika, Alexander",
+        "Xue, Kai",
+        "Cassie, Ben",
+        "Nguyen, Peter",
+        "Kim, Jinwook",
+        "Matscheko, David",
+        "Friedman, Daniel Ari",
+        "Hill, Jonathan",
+        "Glynn, William T.",
+        "Visser, Maarten Antonie",
+        "Anirudha, Kale Arnav",
+        "de La Fournière, Brieuc"
+      ]
     }
   ],
   "software": [
@@ -9116,10 +9175,10 @@
       "url": "https://github.com/docxology/line_set",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice · · Citation DOI · Zenodo artifact v0.1.0",
+      "description": "A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice; repository v0.5.0 · · Citation DOI · Zenodo artifact v0.1.0",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-10",
       "paper_path": "papers/2026_LineSet/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21754243"
     },
@@ -9128,10 +9187,10 @@
       "url": "https://github.com/docxology/black_line",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "A positive operating discipline for concise, inspectable, revisable work · · Zenodo",
+      "description": "A positive operating discipline for concise, inspectable, revisable work; repository v0.5.0 · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-10",
       "paper_path": "papers/2026_BlackLine/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21754235"
     },
@@ -9140,10 +9199,10 @@
       "url": "https://github.com/docxology/white_line",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "A typed ledger for the edge of a claim: absence, restraint, and the unknowable · · Zenodo",
+      "description": "A typed ledger for the edge of a claim: absence, restraint, and the unknowable; repository v0.8.0 · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-10",
       "paper_path": "papers/2026_WhiteLine/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21754241"
     },
@@ -9152,10 +9211,10 @@
       "url": "https://github.com/docxology/golden_line",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "An aspirational thread and long-horizon direction for personal work · · Zenodo",
+      "description": "An aspirational thread and long-horizon direction for personal work; repository v0.5.0 · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-10",
       "paper_path": "papers/2026_GoldenLine/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21754237"
     },
@@ -9176,10 +9235,10 @@
       "url": "https://github.com/docxology/witness_register",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Co-registration without aggregation — the Witness Register holding instrument · · Zenodo",
+      "description": "Co-registration without aggregation — the Witness Register holding instrument; repository v0.2.0 · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-10",
       "paper_path": "papers/2026_WitnessRegister/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21754245"
     },
@@ -9188,10 +9247,10 @@
       "url": "https://github.com/docxology/blue_line",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work · · Zenodo",
+      "description": "A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work; repository v0.2.0 · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-10",
       "paper_path": "papers/2026_BlueLine/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.22833489"
     },
@@ -9200,10 +9259,10 @@
       "url": "https://github.com/docxology/green_line",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "A capacity-under-development instrument: the green line of the docxology line set · · Zenodo",
+      "description": "A capacity-under-development instrument: the green line of the docxology line set; repository v0.2.0 · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-10",
       "paper_path": "papers/2026_GreenLine/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.22833491"
     },
@@ -9212,10 +9271,10 @@
       "url": "https://github.com/docxology/silver_line",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse · · Citation DOI · Zenodo artifact v0.1.0",
+      "description": "A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse; repository v0.2.0 · · Citation DOI · Zenodo artifact v0.1.0",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-10",
       "paper_path": "papers/2026_SilverLine/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.22833485"
     },
@@ -9412,6 +9471,30 @@
       "zenodo_url": "https://doi.org/10.5281/zenodo.23321280"
     },
     {
+      "name": "active_assembly_theory_and_practice",
+      "url": "https://github.com/docxology/active_assembly_theory_and_practice",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Assembly-to-inference research with authored fixtures, executable generative models, and bounded source-contract validation · · Citation DOI",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-10",
+      "paper_path": "papers/2026_ActiveAssemblyTheory/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.23484107"
+    },
+    {
+      "name": "thanks_for_nothing",
+      "url": "https://github.com/docxology/thanks_for_nothing",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Finite-model research on gratitude, absence and model revisability; synthetic results retain explicit human and clinical validation limits · · Citation DOI",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-10",
+      "paper_path": "papers/2026_ThanksNothing/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.23402516"
+    },
+    {
       "name": "ActiveInferenceJournal",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
       "owner": "ActiveInferenceInstitute",
@@ -9440,12 +9523,12 @@
       "url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software",
+      "description": "GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Citation DOI · Current software v4.3.0 · · Earlier software archive",
       "language": "Python",
       "stars": 33,
       "updated_or_year": "2026-10",
-      "paper_path": "",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.19600217"
+      "paper_path": "papers/2026_GeneralizedNotationNotationGNN/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.7803313"
     },
     {
       "name": "ActiveBlockference",
@@ -9907,14 +9990,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 224 works.",
+      "claim": "The curated bibliography contains 226 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-10-22T15:28:49+00:00",
+      "checked_at": "2026-10-23T17:48:00+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9922,13 +10005,13 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 207 per-paper documentation folders.",
+      "claim": "The repository contains 209 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-10-22T15:28:49+00:00",
+      "checked_at": "2026-10-23T17:48:00+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

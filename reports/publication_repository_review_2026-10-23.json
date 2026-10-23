@@ -1,0 +1,562 @@
+{
+  "date": "2026-10-23",
+  "scope": "Public catalog maintenance; no independent scientific, software-execution or release-readiness audit.",
+  "inventory_before": {
+    "total": 284,
+    "docxology": 239,
+    "ActiveInferenceInstitute": 45,
+    "curated": 166,
+    "uncataloged": 118,
+    "forks": 107,
+    "archived": 5,
+    "public": 284,
+    "private": 0,
+    "recently_updated": 224,
+    "primary_total": 177,
+    "primary_docxology": 134,
+    "primary_ActiveInferenceInstitute": 43,
+    "fork_docxology": 105,
+    "fork_ActiveInferenceInstitute": 2
+  },
+  "inventory_after": {
+    "total": 286,
+    "docxology": 241,
+    "ActiveInferenceInstitute": 45,
+    "curated": 168,
+    "uncataloged": 118,
+    "forks": 107,
+    "archived": 5,
+    "public": 286,
+    "private": 0,
+    "recently_updated": 225,
+    "primary_total": 179,
+    "primary_docxology": 136,
+    "primary_ActiveInferenceInstitute": 43,
+    "fork_docxology": 105,
+    "fork_ActiveInferenceInstitute": 2
+  },
+  "new_repositories": [
+    {
+      "github_id": 1268502060,
+      "github_node_id": "R_kgDOS5vOLA",
+      "name": "active_assembly_theory_and_practice",
+      "full_name": "docxology/active_assembly_theory_and_practice",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/active_assembly_theory_and_practice",
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "visibility": "public",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "is_template": false,
+      "topics": [],
+      "license": "MIT",
+      "default_branch": "main",
+      "created_at": "2026-06-13T15:57:18Z",
+      "updated_at": "2026-10-19T21:21:15Z",
+      "pushed_at": "2026-10-19T21:09:43Z",
+      "curated": false,
+      "recently_updated": true
+    },
+    {
+      "github_id": 1430278989,
+      "github_node_id": "R_kgDOVUBTTQ",
+      "name": "thanks_for_nothing",
+      "full_name": "docxology/thanks_for_nothing",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/thanks_for_nothing",
+      "description": "Reproducible finite-model research on gratitude, absence and model revisability. Manuscript and code: doi.org/10.5281/zenodo.23402517",
+      "homepage": "",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "visibility": "public",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "is_template": false,
+      "topics": [],
+      "license": "MIT",
+      "default_branch": "main",
+      "created_at": "2026-10-22T21:11:49Z",
+      "updated_at": "2026-10-22T21:12:58Z",
+      "pushed_at": "2026-10-22T21:12:49Z",
+      "curated": false,
+      "recently_updated": true
+    }
+  ],
+  "updated_repository_pushes": [
+    {
+      "repository": "ActiveInferenceInstitute/GEO_INFER",
+      "previous_pushed_at": "2026-10-18T04:08:45Z",
+      "pushed_at": "2026-10-20T00:26:17Z",
+      "fork": false
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+      "previous_pushed_at": "2026-10-18T19:08:21Z",
+      "pushed_at": "2026-10-22T02:09:12Z",
+      "fork": false
+    },
+    {
+      "repository": "ActiveInferenceInstitute/aii-org",
+      "previous_pushed_at": "2026-08-20T19:43:44Z",
+      "pushed_at": "2026-10-21T20:39:00Z",
+      "fork": false
+    },
+    {
+      "repository": "ActiveInferenceInstitute/cognitive",
+      "previous_pushed_at": "2026-10-18T12:47:40Z",
+      "pushed_at": "2026-10-20T21:15:01Z",
+      "fork": false
+    },
+    {
+      "repository": "ActiveInferenceInstitute/fep_formal",
+      "previous_pushed_at": "2026-10-18T17:35:07Z",
+      "pushed_at": "2026-10-23T06:01:19Z",
+      "fork": false
+    },
+    {
+      "repository": "ActiveInferenceInstitute/institute_website",
+      "previous_pushed_at": "2026-10-18T15:52:40Z",
+      "pushed_at": "2026-10-21T23:24:28Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/ActiveACO",
+      "previous_pushed_at": "2026-10-13T21:59:53Z",
+      "pushed_at": "2026-10-19T16:01:26Z",
+      "fork": true
+    },
+    {
+      "repository": "docxology/DuckRabbit",
+      "previous_pushed_at": "2026-09-30T19:21:47Z",
+      "pushed_at": "2026-10-19T15:44:24Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/FluSight-forecast-hub",
+      "previous_pushed_at": "2026-10-14T15:01:25Z",
+      "pushed_at": "2026-10-21T19:32:14Z",
+      "fork": true
+    },
+    {
+      "repository": "docxology/biol-1",
+      "previous_pushed_at": "2026-09-30T18:25:50Z",
+      "pushed_at": "2026-10-21T22:15:28Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/black_line",
+      "previous_pushed_at": "2026-09-22T01:53:15Z",
+      "pushed_at": "2026-10-21T21:25:03Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/blake",
+      "previous_pushed_at": "2026-10-13T22:07:55Z",
+      "pushed_at": "2026-10-23T05:16:28Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/blue_line",
+      "previous_pushed_at": "2026-09-18T16:14:58Z",
+      "pushed_at": "2026-10-21T20:58:14Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/codomyrmex",
+      "previous_pushed_at": "2026-10-18T18:47:18Z",
+      "pushed_at": "2026-10-23T02:51:35Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/covid19-forecast-hub",
+      "previous_pushed_at": "2026-10-14T20:01:53Z",
+      "pushed_at": "2026-10-21T19:30:54Z",
+      "fork": true
+    },
+    {
+      "repository": "docxology/daf-jev",
+      "previous_pushed_at": "2026-10-18T01:10:49Z",
+      "pushed_at": "2026-10-22T00:51:01Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/daf-okn",
+      "previous_pushed_at": "2026-10-18T12:48:06Z",
+      "pushed_at": "2026-10-22T00:51:52Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/dicklesworthstone_meta_operator",
+      "previous_pushed_at": "2026-10-14T19:25:45Z",
+      "pushed_at": "2026-10-22T00:49:26Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/docxology",
+      "previous_pushed_at": "2026-10-18T02:33:25Z",
+      "pushed_at": "2026-10-22T23:56:45Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/entofile",
+      "previous_pushed_at": "2026-10-18T18:01:31Z",
+      "pushed_at": "2026-10-23T10:13:59Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/golden_line",
+      "previous_pushed_at": "2026-09-22T01:52:18Z",
+      "pushed_at": "2026-10-21T21:35:12Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/green_line",
+      "previous_pushed_at": "2026-09-18T16:15:00Z",
+      "pushed_at": "2026-10-21T21:02:16Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/itrace",
+      "previous_pushed_at": "2026-10-16T14:13:19Z",
+      "pushed_at": "2026-10-22T17:41:36Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/line_set",
+      "previous_pushed_at": "2026-09-24T21:12:14Z",
+      "pushed_at": "2026-10-22T08:58:05Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/markdown_decision_process",
+      "previous_pushed_at": "2026-10-13T22:07:54Z",
+      "pushed_at": "2026-10-19T16:44:04Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/red_line",
+      "previous_pushed_at": "2026-09-22T15:52:23Z",
+      "pushed_at": "2026-10-22T16:42:02Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/rsv-forecast-hub",
+      "previous_pushed_at": "2026-10-14T20:05:09Z",
+      "pushed_at": "2026-10-21T19:31:42Z",
+      "fork": true
+    },
+    {
+      "repository": "docxology/silver_line",
+      "previous_pushed_at": "2026-09-18T16:14:50Z",
+      "pushed_at": "2026-10-21T21:14:18Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/template",
+      "previous_pushed_at": "2026-10-18T12:04:19Z",
+      "pushed_at": "2026-10-23T15:53:01Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/white_line",
+      "previous_pushed_at": "2026-09-05T04:12:29Z",
+      "pushed_at": "2026-10-21T21:27:51Z",
+      "fork": false
+    },
+    {
+      "repository": "docxology/witness_register",
+      "previous_pushed_at": "2026-09-18T16:15:18Z",
+      "pushed_at": "2026-10-22T04:47:37Z",
+      "fork": false
+    }
+  ],
+  "removed_repositories": [],
+  "added_publications": [
+    {
+      "folder": "2026_ThanksNothing",
+      "citation_doi": "10.5281/zenodo.23402516",
+      "artifact_doi": "10.5281/zenodo.23402517",
+      "version": "0.11.0"
+    },
+    {
+      "folder": "2026_ObserversReadUniverse",
+      "record_url": "https://philpapers.org/rec/MUEFOC",
+      "version": "r2052",
+      "pdf_sha256": "e23da212840627f16e10ac05f7538eab10556702ceda8a404f8c32359e89b737",
+      "authors": 14,
+      "author_discrepancy": "The supplied record listing omits David Matscheko; r2052 includes him between Jinwook Kim and Daniel Ari Friedman."
+    }
+  ],
+  "gnn_release": {
+    "version": "v4.3.0",
+    "publication_date": "2026-10-22",
+    "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v4.3.0",
+    "zenodo_record_url": "https://zenodo.org/records/23551166",
+    "artifact_doi": "10.5281/zenodo.23551166",
+    "citation_doi": "10.5281/zenodo.7803313",
+    "source_report": "reports/paired_publications_2026-10-23.json",
+    "scope": "Current software pointer only; the archived v3.6.0 manuscript, extraction, summaries, and provenance remain that earlier source snapshot."
+  },
+  "scan_coverage": {
+    "github_release_since": "2026-10-18",
+    "github_releases": 14,
+    "zenodo_records": 170,
+    "strong_new_pairs": 1,
+    "ambiguous_pairs_retained": 0,
+    "zenodo_uncatalogued": 0,
+    "reviewed_pairs": 17
+  },
+  "limitations": [
+    "PhilPapers record fetch returned HTTP 403 and browser security challenge; PDF metadata used.",
+    "ResearchGate, SciProfiles and PhilPeople inventory sections returned HTTP 403.",
+    "Repository push timestamps identify activity; implementations and scientific claims were not audited.",
+    "Pair decisions concern bibliographic/archive identity and version history; no independent scientific or implementation acceptance is asserted."
+  ],
+  "inputs": {
+    "reports/public_source_inventory_2026-10-23.json": "bdabf0003f0162fa28e9a3a6e44d5dfa4917ca8e06636b78e2db7b85c973b820",
+    "reports/paired_publications_2026-10-23.json": "cdd139d4fed28440faf83b52cdc65128a1195fc102558ab14332903914f4b89c",
+    "reports/zenodo_uncatalogued_2026-10-23.json": "00580843e79f0d291ff196e013b822259b41d955ebe17190d487d2197543943f",
+    "data/github-repositories.json": "9abfed8dbcce285140e385133c6b912489772ab736f1414261232c9925c333eb",
+    "reports/external_links_2026-10-23.json": "06955234eec6f7fbf4275aa4f1c9bbc6b4f04c0a429ad08b9a26eecd0ce27cdf",
+    "reports/external_links_triage_2026-10-23.json": "86628058f2029fed6bb6bac5cbd01bf0aef82d23e157f34c5fae346bac524af0",
+    "reports/publication_intake_2026-10-23.json": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
+    "data/paired-publication-decisions.json": "bd8fdaeaed61f736c26bec767cc9e94463d4034340abe489d4fe6d251840e376"
+  },
+  "external_links": {
+    "checked_urls": 899,
+    "ok": 739,
+    "warnings": 160,
+    "categories": {
+      "bot-protected-or-rate-limited": 155,
+      "connection-failure": 1,
+      "ok": 739,
+      "timeout": 3,
+      "upstream-transient": 1
+    }
+  },
+  "pair_dispositions": [
+    {
+      "repository": "docxology/thanks_for_nothing",
+      "release_tag": "v0.11.0",
+      "record_id": "23402517",
+      "decision": "accept",
+      "representation": "bibliography-folder",
+      "rationale": "The Zenodo record directly names GitHub v0.11.0 and its source snapshot; the release directly cites version DOI 10.5281/zenodo.23402517. The title and creator match the newly catalogued work. Canonical citation DOI remains concept 10.5281/zenodo.23402516."
+    },
+    {
+      "repository": "docxology/black_line",
+      "release_tag": "v0.5.0",
+      "record_id": "21754240",
+      "decision": "reject",
+      "representation": "cross-project-reference-only",
+      "rationale": "The Zenodo record identifies docxology/red_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release."
+    },
+    {
+      "repository": "docxology/black_line",
+      "release_tag": "v0.5.0",
+      "record_id": "21754242",
+      "decision": "reject",
+      "representation": "cross-project-reference-only",
+      "rationale": "The Zenodo record identifies docxology/white_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release."
+    },
+    {
+      "repository": "docxology/golden_line",
+      "release_tag": "v0.5.0",
+      "record_id": "21754240",
+      "decision": "reject",
+      "representation": "cross-project-reference-only",
+      "rationale": "The Zenodo record identifies docxology/red_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release."
+    },
+    {
+      "repository": "docxology/golden_line",
+      "release_tag": "v0.5.0",
+      "record_id": "21754242",
+      "decision": "reject",
+      "representation": "cross-project-reference-only",
+      "rationale": "The Zenodo record identifies docxology/white_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release."
+    },
+    {
+      "repository": "docxology/line_set",
+      "release_tag": "v0.5.0",
+      "record_id": "21754240",
+      "decision": "reject",
+      "representation": "cross-project-reference-only",
+      "rationale": "The Zenodo record identifies docxology/red_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release."
+    },
+    {
+      "repository": "docxology/line_set",
+      "release_tag": "v0.4.0",
+      "record_id": "21754240",
+      "decision": "reject",
+      "representation": "cross-project-reference-only",
+      "rationale": "The Zenodo record identifies docxology/red_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release."
+    },
+    {
+      "repository": "docxology/line_set",
+      "release_tag": "v0.5.0",
+      "record_id": "21754242",
+      "decision": "reject",
+      "representation": "cross-project-reference-only",
+      "rationale": "The Zenodo record identifies docxology/white_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release."
+    },
+    {
+      "repository": "docxology/line_set",
+      "release_tag": "v0.4.0",
+      "record_id": "21754242",
+      "decision": "reject",
+      "representation": "cross-project-reference-only",
+      "rationale": "The Zenodo record identifies docxology/white_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release."
+    },
+    {
+      "repository": "docxology/white_line",
+      "release_tag": "v0.8.0",
+      "record_id": "21754240",
+      "decision": "reject",
+      "representation": "cross-project-reference-only",
+      "rationale": "The Zenodo record identifies docxology/red_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release."
+    },
+    {
+      "repository": "docxology/white_line",
+      "release_tag": "v0.8.0",
+      "record_id": "21754242",
+      "decision": "acknowledged",
+      "representation": "version-history-only",
+      "rationale": "White Line v0.8.0 explicitly states that it is a repository release and asserts no new Zenodo version DOI. The matching repository is represented by the existing White Line work; the v0.7.0 archive remains historical and is not relabeled as v0.8.0."
+    },
+    {
+      "repository": "docxology/witness_register",
+      "release_tag": "v0.2.0",
+      "record_id": "21754240",
+      "decision": "reject",
+      "representation": "cross-project-reference-only",
+      "rationale": "The Zenodo record identifies docxology/red_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release."
+    },
+    {
+      "repository": "docxology/witness_register",
+      "release_tag": "v0.2.0",
+      "record_id": "21754242",
+      "decision": "reject",
+      "representation": "cross-project-reference-only",
+      "rationale": "The Zenodo record identifies docxology/white_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release."
+    },
+    {
+      "repository": "docxology/active_assembly_theory_and_practice",
+      "release_tag": "v0.1.0",
+      "record_id": "23484108",
+      "decision": "accept",
+      "representation": "bibliography-folder",
+      "rationale": "The release explicitly cites version DOI 10.5281/zenodo.23484108, whose metadata identifies this repository and version 0.1.0. Existing bibliography work 228 uses concept DOI 10.5281/zenodo.23484107; add the public software link while retaining this identity."
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+      "release_tag": "v4.3.0",
+      "record_id": "23551166",
+      "decision": "accept",
+      "representation": "existing-work-current-software",
+      "rationale": "Exact repository and v4.3.0 tag are recorded in the Zenodo related identifier, with matching record version and title. Current software is linked from the existing concept DOI; the separately extracted v3.6.0 manuscript and its summaries remain that historical snapshot."
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+      "release_tag": "v4.2.1",
+      "record_id": "23551166",
+      "decision": "superseded",
+      "representation": "version-history-only",
+      "rationale": "This older GitHub release belongs to the already catalogued GNN concept. The fetched latest archive is v4.3.0, so it is not asserted to contain this older tag. Preserve release history without creating a duplicate work or replacing source-specific manuscript evidence."
+    },
+    {
+      "repository": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+      "release_tag": "v4.2.0",
+      "record_id": "23551166",
+      "decision": "superseded",
+      "representation": "version-history-only",
+      "rationale": "This older GitHub release belongs to the already catalogued GNN concept. The fetched latest archive is v4.3.0, so it is not asserted to contain this older tag. Preserve release history without creating a duplicate work or replacing source-specific manuscript evidence."
+    }
+  ],
+  "repository_release_pointers": [
+    {
+      "repository": "docxology/black_line",
+      "version": "v0.5.0",
+      "publication_date": "2026-10-21",
+      "github_release_url": "https://github.com/docxology/black_line/releases/tag/v0.5.0",
+      "source_report": "reports/publication_intake_2026-10-23.json",
+      "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
+      "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
+    },
+    {
+      "repository": "docxology/blue_line",
+      "version": "v0.2.0",
+      "publication_date": "2026-10-21",
+      "github_release_url": "https://github.com/docxology/blue_line/releases/tag/v0.2.0",
+      "source_report": "reports/publication_intake_2026-10-23.json",
+      "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
+      "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
+    },
+    {
+      "repository": "docxology/golden_line",
+      "version": "v0.5.0",
+      "publication_date": "2026-10-21",
+      "github_release_url": "https://github.com/docxology/golden_line/releases/tag/v0.5.0",
+      "source_report": "reports/publication_intake_2026-10-23.json",
+      "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
+      "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
+    },
+    {
+      "repository": "docxology/green_line",
+      "version": "v0.2.0",
+      "publication_date": "2026-10-21",
+      "github_release_url": "https://github.com/docxology/green_line/releases/tag/v0.2.0",
+      "source_report": "reports/publication_intake_2026-10-23.json",
+      "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
+      "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
+    },
+    {
+      "repository": "docxology/line_set",
+      "version": "v0.5.0",
+      "publication_date": "2026-10-22",
+      "github_release_url": "https://github.com/docxology/line_set/releases/tag/v0.5.0",
+      "source_report": "reports/publication_intake_2026-10-23.json",
+      "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
+      "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
+    },
+    {
+      "repository": "docxology/silver_line",
+      "version": "v0.2.0",
+      "publication_date": "2026-10-21",
+      "github_release_url": "https://github.com/docxology/silver_line/releases/tag/v0.2.0",
+      "source_report": "reports/publication_intake_2026-10-23.json",
+      "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
+      "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
+    },
+    {
+      "repository": "docxology/white_line",
+      "version": "v0.8.0",
+      "publication_date": "2026-10-21",
+      "github_release_url": "https://github.com/docxology/white_line/releases/tag/v0.8.0",
+      "source_report": "reports/publication_intake_2026-10-23.json",
+      "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
+      "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
+    },
+    {
+      "repository": "docxology/witness_register",
+      "version": "v0.2.0",
+      "publication_date": "2026-10-22",
+      "github_release_url": "https://github.com/docxology/witness_register/releases/tag/v0.2.0",
+      "source_report": "reports/publication_intake_2026-10-23.json",
+      "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
+      "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
+    }
+  ]
+}

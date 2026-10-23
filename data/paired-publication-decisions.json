@@ -3,10 +3,10 @@
   "source_report": "https://github.com/docxology/docxology/blob/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/paired_publications_2026-09-24.json",
   "source_review_queue": "reports/paired_publications_review_queue_2026-06-04.md",
   "decision_summary": {
-    "decision": "accept",
-    "groups": 88,
-    "raw_candidates": 524,
-    "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated. R79 records the Cognitive Diagrams v2.5.0 release (2026-09-10 scan) as version-history-only under the already-cited concept DOI 10.5281/zenodo.19695259. R80 records the six GitHub release pairs (v0.3.0-v1) under the canonical curated EvoJump concept 10.5281/zenodo.22664675 as software-catalog (SOFTWARE.md already lists EvoJump; the citable paper remains bibliography row #12, concept 10.5281/zenodo.17229924), and R81 records the GitHub-Zenodo automated integration archive concept 10.5281/zenodo.22664645 (docxology/EvoJump-v0.5.2.zip, zip-only) as a superseded duplicate deposit. R82-R83 (2026-09-17 scan) record the fep_lean v1.2.0 and GeneralizedNotationNotation v3.4.0 releases as version-history-only under their already-cited citation DOIs (10.5281/zenodo.19699233 row #113 and 10.5281/zenodo.7803313 row #168), both pairs lacking github_release_mentions_doi cross-link evidence, so neither creates a duplicate bibliography row."
+    "decision": "mixed",
+    "groups": 214,
+    "raw_candidates": 654,
+    "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated. R79 records the Cognitive Diagrams v2.5.0 release (2026-09-10 scan) as version-history-only under the already-cited concept DOI 10.5281/zenodo.19695259. R80 records the six GitHub release pairs (v0.3.0-v1) under the canonical curated EvoJump concept 10.5281/zenodo.22664675 as software-catalog (SOFTWARE.md already lists EvoJump; the citable paper remains bibliography row #12, concept 10.5281/zenodo.17229924), and R81 records the GitHub-Zenodo automated integration archive concept 10.5281/zenodo.22664645 (docxology/EvoJump-v0.5.2.zip, zip-only) as a superseded duplicate deposit. R82-R83 (2026-09-17 scan) record the fep_lean v1.2.0 and GeneralizedNotationNotation v3.4.0 releases as version-history-only under their already-cited citation DOIs (10.5281/zenodo.19699233 row #113 and 10.5281/zenodo.7803313 row #168), both pairs lacking github_release_mentions_doi cross-link evidence, so neither creates a duplicate bibliography row. The 2026-10-23 completion records 11 rejected cross-project archive matches, three acknowledged/superseded version-history relations, and three accepted current/existing work relations. Every outcome retains its individual actor, timestamp and rationale."
   },
   "groups": [
     {
@@ -14692,6 +14692,449 @@
           "source_report": "https://github.com/docxology/docxology/blob/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/paired_publications_2026-10-16.json"
         }
       ]
+    },
+    {
+      "id": "review-2026-10-23-37ea543e98045a46",
+      "decision": "accept",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.23402516",
+      "title": "Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness",
+      "candidate_github_repo": "docxology/thanks_for_nothing",
+      "folder": "2026_ThanksNothing",
+      "representation": "bibliography-folder",
+      "note": "The Zenodo record directly names GitHub v0.11.0 and its source snapshot; the release directly cites version DOI 10.5281/zenodo.23402517. The title and creator match the newly catalogued work. Canonical citation DOI remains concept 10.5281/zenodo.23402516.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23402516",
+          "github_repo": "docxology/thanks_for_nothing",
+          "github_release_url": "https://github.com/docxology/thanks_for_nothing/releases/tag/v0.11.0",
+          "zenodo_record_url": "https://zenodo.org/records/23402516",
+          "release_tag": "v0.11.0",
+          "record_title": "Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness",
+          "zenodo_version_record_id": "23402517",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-23-bf442e469f86ab5b",
+      "decision": "reject",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21754239",
+      "title": "Personal Red Lines for Development",
+      "candidate_github_repo": "docxology/black_line",
+      "folder": "2026_PersonalRedLines",
+      "representation": "cross-project-reference-only",
+      "note": "The Zenodo record identifies docxology/red_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21754239",
+          "github_repo": "docxology/black_line",
+          "github_release_url": "https://github.com/docxology/black_line/releases/tag/v0.5.0",
+          "zenodo_record_url": "https://zenodo.org/records/21754239",
+          "release_tag": "v0.5.0",
+          "record_title": "Personal Red Lines for Development",
+          "zenodo_version_record_id": "21754240",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-23-ada383b6150911c1",
+      "decision": "reject",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21754241",
+      "title": "White Line: A Typed Ledger for the Edge of the Claim",
+      "candidate_github_repo": "docxology/black_line",
+      "folder": "2026_WhiteLine",
+      "representation": "cross-project-reference-only",
+      "note": "The Zenodo record identifies docxology/white_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21754241",
+          "github_repo": "docxology/black_line",
+          "github_release_url": "https://github.com/docxology/black_line/releases/tag/v0.5.0",
+          "zenodo_record_url": "https://zenodo.org/records/21754241",
+          "release_tag": "v0.5.0",
+          "record_title": "White Line: A Typed Ledger for the Edge of the Claim",
+          "zenodo_version_record_id": "21754242",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-23-7aea0674a574d663",
+      "decision": "reject",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21754239",
+      "title": "Personal Red Lines for Development",
+      "candidate_github_repo": "docxology/golden_line",
+      "folder": "2026_PersonalRedLines",
+      "representation": "cross-project-reference-only",
+      "note": "The Zenodo record identifies docxology/red_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21754239",
+          "github_repo": "docxology/golden_line",
+          "github_release_url": "https://github.com/docxology/golden_line/releases/tag/v0.5.0",
+          "zenodo_record_url": "https://zenodo.org/records/21754239",
+          "release_tag": "v0.5.0",
+          "record_title": "Personal Red Lines for Development",
+          "zenodo_version_record_id": "21754240",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-23-70402f92b78e643b",
+      "decision": "reject",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21754241",
+      "title": "White Line: A Typed Ledger for the Edge of the Claim",
+      "candidate_github_repo": "docxology/golden_line",
+      "folder": "2026_WhiteLine",
+      "representation": "cross-project-reference-only",
+      "note": "The Zenodo record identifies docxology/white_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21754241",
+          "github_repo": "docxology/golden_line",
+          "github_release_url": "https://github.com/docxology/golden_line/releases/tag/v0.5.0",
+          "zenodo_record_url": "https://zenodo.org/records/21754241",
+          "release_tag": "v0.5.0",
+          "record_title": "White Line: A Typed Ledger for the Edge of the Claim",
+          "zenodo_version_record_id": "21754242",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-23-cedb55cd895a705e",
+      "decision": "reject",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21754239",
+      "title": "Personal Red Lines for Development",
+      "candidate_github_repo": "docxology/line_set",
+      "folder": "2026_PersonalRedLines",
+      "representation": "cross-project-reference-only",
+      "note": "The Zenodo record identifies docxology/red_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21754239",
+          "github_repo": "docxology/line_set",
+          "github_release_url": "https://github.com/docxology/line_set/releases/tag/v0.5.0",
+          "zenodo_record_url": "https://zenodo.org/records/21754239",
+          "release_tag": "v0.5.0",
+          "record_title": "Personal Red Lines for Development",
+          "zenodo_version_record_id": "21754240",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-23-e8a7445d8807ba5d",
+      "decision": "reject",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21754239",
+      "title": "Personal Red Lines for Development",
+      "candidate_github_repo": "docxology/line_set",
+      "folder": "2026_PersonalRedLines",
+      "representation": "cross-project-reference-only",
+      "note": "The Zenodo record identifies docxology/red_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21754239",
+          "github_repo": "docxology/line_set",
+          "github_release_url": "https://github.com/docxology/line_set/releases/tag/v0.4.0",
+          "zenodo_record_url": "https://zenodo.org/records/21754239",
+          "release_tag": "v0.4.0",
+          "record_title": "Personal Red Lines for Development",
+          "zenodo_version_record_id": "21754240",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-23-4a86e371f4c94870",
+      "decision": "reject",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21754241",
+      "title": "White Line: A Typed Ledger for the Edge of the Claim",
+      "candidate_github_repo": "docxology/line_set",
+      "folder": "2026_WhiteLine",
+      "representation": "cross-project-reference-only",
+      "note": "The Zenodo record identifies docxology/white_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21754241",
+          "github_repo": "docxology/line_set",
+          "github_release_url": "https://github.com/docxology/line_set/releases/tag/v0.5.0",
+          "zenodo_record_url": "https://zenodo.org/records/21754241",
+          "release_tag": "v0.5.0",
+          "record_title": "White Line: A Typed Ledger for the Edge of the Claim",
+          "zenodo_version_record_id": "21754242",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-23-06df8c54e724f4af",
+      "decision": "reject",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21754241",
+      "title": "White Line: A Typed Ledger for the Edge of the Claim",
+      "candidate_github_repo": "docxology/line_set",
+      "folder": "2026_WhiteLine",
+      "representation": "cross-project-reference-only",
+      "note": "The Zenodo record identifies docxology/white_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21754241",
+          "github_repo": "docxology/line_set",
+          "github_release_url": "https://github.com/docxology/line_set/releases/tag/v0.4.0",
+          "zenodo_record_url": "https://zenodo.org/records/21754241",
+          "release_tag": "v0.4.0",
+          "record_title": "White Line: A Typed Ledger for the Edge of the Claim",
+          "zenodo_version_record_id": "21754242",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-23-58118c810596b381",
+      "decision": "reject",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21754239",
+      "title": "Personal Red Lines for Development",
+      "candidate_github_repo": "docxology/white_line",
+      "folder": "2026_PersonalRedLines",
+      "representation": "cross-project-reference-only",
+      "note": "The Zenodo record identifies docxology/red_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21754239",
+          "github_repo": "docxology/white_line",
+          "github_release_url": "https://github.com/docxology/white_line/releases/tag/v0.8.0",
+          "zenodo_record_url": "https://zenodo.org/records/21754239",
+          "release_tag": "v0.8.0",
+          "record_title": "Personal Red Lines for Development",
+          "zenodo_version_record_id": "21754240",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-23-9c8a14891090fa15",
+      "decision": "acknowledged",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21754241",
+      "title": "White Line: A Typed Ledger for the Edge of the Claim",
+      "candidate_github_repo": "docxology/white_line",
+      "folder": "2026_WhiteLine",
+      "representation": "version-history-only",
+      "note": "White Line v0.8.0 explicitly states that it is a repository release and asserts no new Zenodo version DOI. The matching repository is represented by the existing White Line work; the v0.7.0 archive remains historical and is not relabeled as v0.8.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21754241",
+          "github_repo": "docxology/white_line",
+          "github_release_url": "https://github.com/docxology/white_line/releases/tag/v0.8.0",
+          "zenodo_record_url": "https://zenodo.org/records/21754241",
+          "release_tag": "v0.8.0",
+          "record_title": "White Line: A Typed Ledger for the Edge of the Claim",
+          "zenodo_version_record_id": "21754242",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-23-591684780af5f7f6",
+      "decision": "reject",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21754239",
+      "title": "Personal Red Lines for Development",
+      "candidate_github_repo": "docxology/witness_register",
+      "folder": "2026_PersonalRedLines",
+      "representation": "cross-project-reference-only",
+      "note": "The Zenodo record identifies docxology/red_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21754239",
+          "github_repo": "docxology/witness_register",
+          "github_release_url": "https://github.com/docxology/witness_register/releases/tag/v0.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/21754239",
+          "release_tag": "v0.2.0",
+          "record_title": "Personal Red Lines for Development",
+          "zenodo_version_record_id": "21754240",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-23-6e4f59d160562f07",
+      "decision": "reject",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.21754241",
+      "title": "White Line: A Typed Ledger for the Edge of the Claim",
+      "candidate_github_repo": "docxology/witness_register",
+      "folder": "2026_WhiteLine",
+      "representation": "cross-project-reference-only",
+      "note": "The Zenodo record identifies docxology/white_line as isSupplementTo; this candidate repository is only isPartOf/references context. Its release is not an archive version of this work. Preserve the existing citation and do not attach this DOI to the candidate release.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21754241",
+          "github_repo": "docxology/witness_register",
+          "github_release_url": "https://github.com/docxology/witness_register/releases/tag/v0.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/21754241",
+          "release_tag": "v0.2.0",
+          "record_title": "White Line: A Typed Ledger for the Edge of the Claim",
+          "zenodo_version_record_id": "21754242",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-23-aeeba38ba8435ba9",
+      "decision": "accept",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.23484107",
+      "title": "Active Assembly Theory and Practice",
+      "candidate_github_repo": "docxology/active_assembly_theory_and_practice",
+      "folder": "2026_ActiveAssemblyTheory",
+      "representation": "bibliography-folder",
+      "note": "The release explicitly cites version DOI 10.5281/zenodo.23484108, whose metadata identifies this repository and version 0.1.0. Existing bibliography work 228 uses concept DOI 10.5281/zenodo.23484107; add the public software link while retaining this identity.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23484107",
+          "github_repo": "docxology/active_assembly_theory_and_practice",
+          "github_release_url": "https://github.com/docxology/active_assembly_theory_and_practice/releases/tag/v0.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/23484107",
+          "release_tag": "v0.1.0",
+          "record_title": "Active Assembly Theory and Practice",
+          "zenodo_version_record_id": "23484108",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-23-2154879773f4def9",
+      "decision": "accept",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.7803313",
+      "title": "Generalized_Notation_Notation (GNN)",
+      "candidate_github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+      "folder": "2026_GeneralizedNotationNotationGNN",
+      "representation": "existing-work-current-software",
+      "note": "Exact repository and v4.3.0 tag are recorded in the Zenodo related identifier, with matching record version and title. Current software is linked from the existing concept DOI; the separately extracted v3.6.0 manuscript and its summaries remain that historical snapshot.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v4.3.0",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "release_tag": "v4.3.0",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_version_record_id": "23551166",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-23-ed722780ac251224",
+      "decision": "superseded",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.7803313",
+      "title": "Generalized_Notation_Notation (GNN)",
+      "candidate_github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+      "folder": "2026_GeneralizedNotationNotationGNN",
+      "representation": "version-history-only",
+      "note": "This older GitHub release belongs to the already catalogued GNN concept. The fetched latest archive is v4.3.0, so it is not asserted to contain this older tag. Preserve release history without creating a duplicate work or replacing source-specific manuscript evidence.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v4.2.1",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "release_tag": "v4.2.1",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_version_record_id": "23551166",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-10-23-e3011f9660f7afd1",
+      "decision": "superseded",
+      "decided_at": "2026-10-23T17:44:30+00:00",
+      "decided_by": "Codex",
+      "doi": "10.5281/zenodo.7803313",
+      "title": "Generalized_Notation_Notation (GNN)",
+      "candidate_github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+      "folder": "2026_GeneralizedNotationNotationGNN",
+      "representation": "version-history-only",
+      "note": "This older GitHub release belongs to the already catalogued GNN concept. The fetched latest archive is v4.3.0, so it is not asserted to contain this older tag. Preserve release history without creating a duplicate work or replacing source-specific manuscript evidence.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v4.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "release_tag": "v4.2.0",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_version_record_id": "23551166",
+          "source_report": "reports/publication_intake_2026-10-23.json",
+          "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
+        }
+      ]
     }
-  ]
+  ],
+  "updated_at": "2026-10-23T17:47:59+00:00"
 }

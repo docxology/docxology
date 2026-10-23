@@ -3693,5 +3693,68 @@
       "reproducible research"
     ],
     "doi": "10.5281/zenodo.23484107"
+  },
+  "2026_ThanksNothing": {
+    "year": "2026",
+    "topic": "ThanksNothing",
+    "name": "Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness",
+    "description": "<p>Gratitude can concern a benefit received, a harm that did not occur,\nor the conditions that make one's own assumptions examinable. We develop\nthe proposal that appreciating these conditions can orient practice\ntoward realizing emptiness: examining how distinctions arise,\nrelinquishing their assumed intrinsic necessity, and retaining their\nconditional usefulness. The argument distinguishes an observed absence,\na missing observation, counterfactual valuation and non-reification, and\nplaces their differences in dialogue with explicitly situated\nphilosophical and scriptural sources. We reconstruct Fisher, Sandved\nSmith and Hohwy's gratitude and gaze notebooks, then separate faithful\nreconstruction from corrected experiments and new mechanisms.\nGNN-declared paired recall experiments use 5120 independent agent-world\nunits, matched environmental exposure and replay dose, normalized\nlikelihoods, and independent predictive assessment. Pinned Realizing\nEmptiness interfaces supply structural admission and finite mathematical\ncomparators. An enacted inquiry model separates appreciation, costly\nactivity, access to alternatives and evidence-responsive retention or\nrevision; explicit learning-to-gaze and joint scene/encoding experiments\nexamine transfer and identifiability. Exact count enumeration,\nmathematical nulls, paired controls and joint bootstrap inference make\nthe resulting software claims independently checkable.</p>\n<p>Selective positive recall reduces the declared optimism summary,\nwhile its predictive consequences depend on the world mixture and the\nspecified transfer bridge. Counterfactual absence valuation preserves\ninference by construction. Accessible inquiry can revise a contradicted\nrestriction and retain a useful one; activity without access instead\nincurs costs while preserving rigid forecasts. Exact analysis exposes\nrare adverse selections absent from seeded realizations. The original\ngaze code reproduces the pre-intervention occupancy but contains no\nimplemented after intervention. Our active-scene extension finds a\ncontext-dependent access advantage without an additional\ninquiry-specific predictive advantage. Joint scene/encoding inquiry\ndistinguishes learning an encoding from combining it with scene\nevidence: observationally equivalent labels remain unidentifiable, and\nexcluded hypotheses cannot be recovered. Known-answer fixtures also\nretain skew-related undercoverage and unavailable rare-event estimates\nrather than treating replication size as a remedy for every inferential\nfailure. The contribution is a reproducible account of enabling\noperations and their limits, together with a falsifiable human research\nprogram that separates inquiry value from patience, anticipated good\nnews and instrumental information demand. Synthetic model results\nestablish neither human gratitude nor contemplative realization or\nclinical benefit. Code, declared models and reproducibility materials\nare available at <a href=\"https://github.com/docxology/thanks_for_nothing\">github.com/docxology/thanks_for_nothing</a>.</p>",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "<p>Gratitude can concern a benefit received, a harm that did not occur,\nor the conditions that make one's own assumptions examinable. We develop\nthe proposal that appreciating these conditions can orient practice\ntoward realizing emptiness: examining how distinctions arise,\nrelinquishing their assumed intrinsic necessity, and retaining their\nconditional usefulness. The argument distinguishes an observed absence,\na missing observation, counterfactual valuation and non-reification, and\nplaces their differences in dialogue with explicitly situated\nphilosophical and scriptural sources. We reconstruct Fisher, Sandved\nSmith and Hohwy's gratitude and gaze notebooks, then separate faithful\nreconstruction from corrected experiments and new mechanisms.\nGNN-declared paired recall experiments use 5120 independent agent-world\nunits, matched environmental exposure and replay dose, normalized\nlikelihoods, and independent predictive assessment. Pinned Realizing\nEmptiness interfaces supply structural admission and finite mathematical\ncomparators. An enacted inquiry model separates appreciation, costly\nactivity, access to alternatives and evidence-responsive retention or\nrevision; explicit learning-to-gaze and joint scene/encoding experiments\nexamine transfer and identifiability. Exact count enumeration,\nmathematical nulls, paired controls and joint bootstrap inference make\nthe resulting software claims independently checkable.</p>\n<p>Selective positive recall reduces the declared optimism summary,\nwhile its predictive consequences depend on the world mixture and the\nspecified transfer bridge. Counterfactual absence valuation preserves\ninference by construction. Accessible inquiry can revise a contradicted\nrestriction and retain a useful one; activity without access instead\nincurs costs while preserving rigid forecasts. Exact analysis exposes\nrare adverse selections absent from seeded realizations. The original\ngaze code reproduces the pre-intervention occupancy but contains no\nimplemented after intervention. Our active-scene extension finds a\ncontext-dependent access advantage without an additional\ninquiry-specific predictive advantage. Joint scene/encoding inquiry\ndistinguishes learning an encoding from combining it with scene\nevidence: observationally equivalent labels remain unidentifiable, and\nexcluded hypotheses cannot be recovered. Known-answer fixtures also\nretain skew-related undercoverage and unavailable rare-event estimates\nrather than treating replication size as a remedy for every inferential\nfailure. The contribution is a reproducible account of enabling\noperations and their limits, together with a falsifiable human research\nprogram that separates inquiry value from patience, anticipated good\nnews and instrumental information demand. Synthetic model results\nestablish neither human gratitude nor contemplative realization or\nclinical benefit. Code, declared models and reproducibility materials\nare available at <a href=\"https://github.com/docxology/thanks_for_nothing\">github.com/docxology/thanks_for_nothing</a>.</p>",
+    "keywords": [
+      "gratitude",
+      "emptiness",
+      "active inference",
+      "model revisability",
+      "generalized notation notation",
+      "reproducible research"
+    ],
+    "doi": "10.5281/zenodo.23402516",
+    "github_release_url": "https://github.com/docxology/thanks_for_nothing/releases/tag/v0.11.0"
+  },
+  "2026_ObserversReadUniverse": {
+    "year": "2026",
+    "topic": "ObserversReadUniverse",
+    "name": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+    "description": "Co-authored r2052 preprint on finite observer consensus and an executable observer; conditional constructions with explicit physical-realization limits.",
+    "tags": [
+      "foundations-of-physics",
+      "observer-patch-holography",
+      "finite-consensus",
+      "executable-observer",
+      "quantum-records"
+    ],
+    "authors": "Bernhard Mueller, Mario Poneder, Alexander Osika, Kai Xue, Ben Cassie, Peter Nguyen, Jinwook Kim, David Matscheko, Daniel Ari Friedman, Jonathan Hill, William T. Glynn, Maarten Antonie Visser, Kale Arnav Anirudha, Brieuc de La Fournière",
+    "abstract": "Observer Patch Holography (OPH) proposes that physics is what bounded observers can establish together: finite patches compare records on shared boundaries, repair disagreements, and treat as objective whatever survives every comparison. The universe, on this view, is a timeless self-referential structure whose observers recover its specification from their records and realize it, so that it reads itself into existence. Nothing lies outside to impose premises, so the recovered specification owes no a-priori justification; it has to run and reproduce what observers measure. That specification is a candidate, an executable observer: a twelve-port carrier, a native repair law, retained records and record-controlled feedback, joined in one interacting quantum process of electric flux, charged matter and a scalar field whose feedback response is certified nonzero in the infinite-occupation limit. Observers whose regions overlap on one carrier share a single complete law of fields, local event clocks and feedback, and on a refining spherical screen one repair history defines a common continuum operator for Gaussian fields, their decay and finite-speed waves. On a declared radial product over that screen, every finite menu of observer readouts admits, to any tolerance, one smooth static (1 + 3)-dimensional Lorentzian effective field theory. Finite theorems turn the specification’s readouts into familiar structure: schedule-independent public records, the Born rule and Tsirelson bound on completed records, a carrier whose slow response is exactly three-dimensional, the Standard Model gauge Lie algebra with an anomaly-free generation, a source-derived (1 + 3) causal precursor with proper-time ratios from record counts, and the Einstein equation from a realized null balance. We state the acceptance criteria of the construction, which premises it discharges, which it takes as declared inputs, and the frozen tests that can reject its branches.",
+    "keywords": [
+      "foundations of physics",
+      "Observer Patch Holography",
+      "observer consensus",
+      "executable observer",
+      "self-reference",
+      "quantum records",
+      "gauge structure",
+      "Einstein field equation"
+    ],
+    "domain": "Computational",
+    "methods": [
+      {
+        "name": "Finite observer patches and protected-record repair",
+        "description": "The manuscript constructs local patches that compare shared-boundary records and accept repairs preserving protected data (pp. 1-2)."
+      },
+      {
+        "name": "Executable observer specification",
+        "description": "The authors join a twelve-port carrier, native repair, retained records and record-controlled feedback in a candidate quantum process (p. 1)."
+      }
+    ],
+    "key_findings": [
+      "The authors define objective facts operationally through records that survive authorized observer comparisons; this is a proposed foundation rather than an empirical confirmation (pp. 1-2).",
+      "The abstract reports conditional finite constructions for quantum records, gauge structure and effective spacetime, with declared inputs and rejection criteria (p. 1).",
+      "The manuscript explicitly states that its finite constructions do not establish physical realization or select a unique universe (p. 2)."
+    ],
+    "related_papers": [
+      "2026_ActiveInferenceSynthetic",
+      "2024_QuantumDreams"
+    ]
   }
 }

@@ -6,7 +6,7 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2026 15:30:22 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 16:59:43 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
@@ -27,6 +27,20 @@
       <guid isPermaLink="false">site-update-2026-05-13-works</guid>
       <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
+    </item>
+    <item>
+      <title>Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics</title>
+      <link>https://danielarifriedman.com/works/Friedman2026ObserversWhoReadTheir230.html</link>
+      <guid isPermaLink="false">work-Friedman2026ObserversWhoReadTheir230</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · PhilPapers (preprint) · Computational · 2026</description>
+    </item>
+    <item>
+      <title>Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness</title>
+      <link>https://danielarifriedman.com/works/Friedman2026ThanksNothingGratitudeModel229.html</link>
+      <guid isPermaLink="false">work-Friedman2026ThanksNothingGratitudeModel229</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Active Assembly Theory and Practice</title>
@@ -186,20 +200,6 @@
       <title>Codomyrmex: An Artificial Ecology for Agentic Software Development</title>
       <link>https://danielarifriedman.com/works/Friedman2026CodomyrmexArtificialEcologyAgentic206.html</link>
       <guid isPermaLink="false">work-Friedman2026CodomyrmexArtificialEcologyAgentic206</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>Black Line: Strong Work in Public</title>
-      <link>https://danielarifriedman.com/works/Friedman2026BlackLineStrongWork205.html</link>
-      <guid isPermaLink="false">work-Friedman2026BlackLineStrongWork205</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Cognitive Security · 2026</description>
-    </item>
-    <item>
-      <title>Golden Line: Toward What Matters</title>
-      <link>https://danielarifriedman.com/works/Friedman2026GoldenLineTowardWhat204.html</link>
-      <guid isPermaLink="false">work-Friedman2026GoldenLineTowardWhat204</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>

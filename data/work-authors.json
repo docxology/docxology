@@ -2415,9 +2415,26 @@
       "doi": null,
       "title": "Innovator's Digital Playbook",
       "status": "website_verified",
-      "authors": [{"family": "Kang", "given": "Monica H."}, {"family": "Cordes", "given": "RJ"}, {"family": "Friedman", "given": "Daniel"}],
+      "authors": [
+        {
+          "family": "Kang",
+          "given": "Monica H."
+        },
+        {
+          "family": "Cordes",
+          "given": "RJ"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel"
+        }
+      ],
       "source": "reports/content-citation-primary-evidence-2026-10-21.json",
-      "evidence": ["Monica H. Kang", "RJ Cordes", "Daniel Friedman"],
+      "evidence": [
+        "Monica H. Kang",
+        "RJ Cordes",
+        "Daniel Friedman"
+      ],
       "verified_on": "2026-10-21"
     },
     "Friedman2021NarrativeInformationEcosystemsConflict079": {
@@ -4213,9 +4230,17 @@
       "doi": null,
       "title": "Lessons from the colony",
       "status": "website_verified",
-      "authors": [{"family": "Friedman", "given": "Daniel Ari"}],
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari"
+        }
+      ],
       "source": "reports/content-citation-primary-evidence-2026-10-21.json",
-      "evidence": ["Lessons from the colony", "Daniel Ari Friedman"],
+      "evidence": [
+        "Lessons from the colony",
+        "Daniel Ari Friedman"
+      ],
       "verified_on": "2026-10-21"
     },
     "Friedman2016FullSpeedAheadCity156": {
@@ -5491,7 +5516,13 @@
       "resolved_title": "Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision",
       "title_similarity": 1.0,
       "status": "verified",
-      "authors": [{"family": "Friedman", "given": "Daniel Ari", "orcid": "0000-0001-6232-9096"}]
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
     },
     "Friedman2026ActiveAssemblyTheoryPractice228": {
       "num": 228,
@@ -5506,6 +5537,89 @@
           "family": "Friedman",
           "given": "Daniel Ari",
           "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026ThanksNothingGratitudeModel229": {
+      "num": 229,
+      "doi": "10.5281/zenodo.23402516",
+      "title": "Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness",
+      "registration_agency": "DataCite",
+      "resolved_title": "Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026ObserversWhoReadTheir230": {
+      "num": 230,
+      "doi": null,
+      "title": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+      "status": "document_verified",
+      "source": "papers/2026_ObserversReadUniverse/full_text.md",
+      "evidence": "Bernhard Mueller 1,2,* Mario Poneder Alexander Osika 3 Kai Xue\nBen Cassie Peter Nguyen Jinwook Kim 4 David Matscheko\nDaniel Ari Friedman 5,6 Jonathan Hill William T. Glynn Maarten Antonie Visser\nKale Arnav Anirudha Brieuc de La Fournière",
+      "source_pdf_sha256": "e23da212840627f16e10ac05f7538eab10556702ceda8a404f8c32359e89b737",
+      "authors": [
+        {
+          "family": "Mueller",
+          "given": "Bernhard"
+        },
+        {
+          "family": "Poneder",
+          "given": "Mario"
+        },
+        {
+          "family": "Osika",
+          "given": "Alexander"
+        },
+        {
+          "family": "Xue",
+          "given": "Kai"
+        },
+        {
+          "family": "Cassie",
+          "given": "Ben"
+        },
+        {
+          "family": "Nguyen",
+          "given": "Peter"
+        },
+        {
+          "family": "Kim",
+          "given": "Jinwook"
+        },
+        {
+          "family": "Matscheko",
+          "given": "David"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari"
+        },
+        {
+          "family": "Hill",
+          "given": "Jonathan"
+        },
+        {
+          "family": "Glynn",
+          "given": "William T."
+        },
+        {
+          "family": "Visser",
+          "given": "Maarten Antonie"
+        },
+        {
+          "family": "Anirudha",
+          "given": "Kale Arnav"
+        },
+        {
+          "family": "de La Fournière",
+          "given": "Brieuc"
         }
       ]
     }

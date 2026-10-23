@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-22T15:28:48Z",
+  "generated_at": "2026-10-23T16:58:18Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
-  "count": 224,
+  "count": 226,
   "works": [
     {
       "num": 1,
@@ -5599,6 +5599,65 @@
       "full_text_url": "/papers/2026_ActiveAssemblyTheory/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 229,
+      "citation_key": "Friedman2026ThanksNothingGratitudeModel229",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.23402516",
+      "doi": "10.5281/zenodo.23402516",
+      "docs_path": "papers/2026_ThanksNothing/",
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_ThanksNothing/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 230,
+      "citation_key": "Friedman2026ObserversWhoReadTheir230",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+      "venue": "PhilPapers (preprint)",
+      "url": "https://philpapers.org/rec/MUEFOC",
+      "doi": "",
+      "docs_path": "papers/2026_ObserversReadUniverse/",
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_ObserversReadUniverse/full_text.md",
+      "authors": [
+        "Mueller, Bernhard",
+        "Poneder, Mario",
+        "Osika, Alexander",
+        "Xue, Kai",
+        "Cassie, Ben",
+        "Nguyen, Peter",
+        "Kim, Jinwook",
+        "Matscheko, David",
+        "Friedman, Daniel Ari",
+        "Hill, Jonathan",
+        "Glynn, William T.",
+        "Visser, Maarten Antonie",
+        "Anirudha, Kale Arnav",
+        "de La Fournière, Brieuc"
       ]
     }
   ]

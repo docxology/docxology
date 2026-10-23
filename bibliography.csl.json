@@ -7353,5 +7353,106 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.23484107",
     "URL": "https://doi.org/10.5281/zenodo.23484107"
+  },
+  {
+    "id": "Friedman2026ThanksNothingGratitudeModel229",
+    "type": "article-journal",
+    "title": "Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 229; docs: papers/2026_ThanksNothing/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.23402516",
+    "URL": "https://doi.org/10.5281/zenodo.23402516"
+  },
+  {
+    "id": "Friedman2026ObserversWhoReadTheir230",
+    "type": "article-journal",
+    "title": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+    "author": [
+      {
+        "family": "Mueller",
+        "given": "Bernhard"
+      },
+      {
+        "family": "Poneder",
+        "given": "Mario"
+      },
+      {
+        "family": "Osika",
+        "given": "Alexander"
+      },
+      {
+        "family": "Xue",
+        "given": "Kai"
+      },
+      {
+        "family": "Cassie",
+        "given": "Ben"
+      },
+      {
+        "family": "Nguyen",
+        "given": "Peter"
+      },
+      {
+        "family": "Kim",
+        "given": "Jinwook"
+      },
+      {
+        "family": "Matscheko",
+        "given": "David"
+      },
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      },
+      {
+        "family": "Hill",
+        "given": "Jonathan"
+      },
+      {
+        "family": "Glynn",
+        "given": "William T."
+      },
+      {
+        "family": "Visser",
+        "given": "Maarten Antonie"
+      },
+      {
+        "family": "Anirudha",
+        "given": "Kale Arnav"
+      },
+      {
+        "family": "de La Fournière",
+        "given": "Brieuc"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 230; docs: papers/2026_ObserversReadUniverse/",
+    "container-title": "PhilPapers (preprint)",
+    "publisher": "PhilPapers (preprint)",
+    "URL": "https://philpapers.org/rec/MUEFOC"
   }
 ]

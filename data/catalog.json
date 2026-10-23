@@ -11,14 +11,14 @@
     "name": "Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-10-22",
+  "dateModified": "2026-10-23",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#works",
       "name": "Curated Works Bibliography",
-      "description": "224 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
+      "description": "226 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
       "url": "https://danielarifriedman.com/data/works.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -87,7 +87,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#software",
       "name": "Software Catalog",
-      "description": "166 catalogued software repositories across docxology and AII contributions.",
+      "description": "168 catalogued software repositories across docxology and AII contributions.",
       "url": "https://danielarifriedman.com/data/software.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -432,7 +432,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#full-text-corpus",
       "name": "Full-Text Extraction Corpus",
-      "description": "203 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 145 images/ subdirectories with 8,959 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
+      "description": "205 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 145 images/ subdirectories with 8,959 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
       "url": "https://danielarifriedman.com/papers/README.md",
       "encodingFormat": "text/markdown",
       "creator": {
@@ -525,7 +525,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-inventory",
       "name": "Public Source Inventory",
       "description": "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages.",
-      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-10-18.json",
+      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-10-23.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -539,7 +539,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-10-18.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-10-23.json",
         "encodingFormat": "application/json"
       }
     },
@@ -640,7 +640,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#external-links",
       "name": "External Link Report",
       "description": "Scoped network freshness report for site-critical outbound links.",
-      "url": "https://danielarifriedman.com/reports/external_links_2026-10-22.json",
+      "url": "https://danielarifriedman.com/reports/external_links_2026-10-23.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -654,7 +654,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-10-22.json",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-10-23.json",
         "encodingFormat": "application/json"
       }
     },
@@ -663,7 +663,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#external-link-triage",
       "name": "External Link Triage",
       "description": "Categorized link warnings: bot-protected, transient, timeout, stale, and review.",
-      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-10-22.json",
+      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-10-23.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -677,7 +677,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-10-22.json",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-10-23.json",
         "encodingFormat": "application/json"
       }
     },
@@ -686,7 +686,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-10-22.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-10-23.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -700,7 +700,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-10-22.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-10-23.json",
         "encodingFormat": "application/json"
       }
     },

@@ -3118,3 +3118,39 @@ KW  - Computational
 KW  - Paper
 N1  - Catalog row 228; docs: papers/2026_ActiveAssemblyTheory/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness
+T2  - Zenodo
+DO  - 10.5281/zenodo.23402516
+UR  - https://doi.org/10.5281/zenodo.23402516
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 229; docs: papers/2026_ThanksNothing/
+ER  -
+
+TY  - JOUR
+AU  - Mueller, Bernhard
+AU  - Poneder, Mario
+AU  - Osika, Alexander
+AU  - Xue, Kai
+AU  - Cassie, Ben
+AU  - Nguyen, Peter
+AU  - Kim, Jinwook
+AU  - Matscheko, David
+AU  - Friedman, Daniel Ari
+AU  - Hill, Jonathan
+AU  - Glynn, William T.
+AU  - Visser, Maarten Antonie
+AU  - Anirudha, Kale Arnav
+AU  - de La Fournière, Brieuc
+PY  - 2026
+TI  - Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics
+T2  - PhilPapers (preprint)
+UR  - https://philpapers.org/rec/MUEFOC
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 230; docs: papers/2026_ObserversReadUniverse/
+ER  -

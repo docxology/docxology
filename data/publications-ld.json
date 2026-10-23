@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 224 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 226 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -9316,6 +9316,120 @@
             },
             "sameAs": "https://doi.org/10.5281/zenodo.23484107",
             "citation": "Friedman, Daniel Ari. 2026. Active Assembly Theory and Practice. Zenodo. DOI: 10.5281/zenodo.23484107. URL: https://doi.org/10.5281/zenodo.23484107."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness",
+            "headline": "Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026ThanksNothingGratitudeModel229.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026ThanksNothingGratitudeModel229.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026ThanksNothingGratitudeModel229.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.23402516",
+                "url": "https://doi.org/10.5281/zenodo.23402516"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.23402516",
+            "citation": "Friedman, Daniel Ari. 2026. Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness. Zenodo. DOI: 10.5281/zenodo.23402516. URL: https://doi.org/10.5281/zenodo.23402516."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+            "headline": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "name": "Bernhard Mueller",
+                    "@type": "Person"
+                },
+                {
+                    "name": "Mario Poneder",
+                    "@type": "Person"
+                },
+                {
+                    "name": "Alexander Osika",
+                    "@type": "Person"
+                },
+                {
+                    "name": "Kai Xue",
+                    "@type": "Person"
+                },
+                {
+                    "name": "Ben Cassie",
+                    "@type": "Person"
+                },
+                {
+                    "name": "Peter Nguyen",
+                    "@type": "Person"
+                },
+                {
+                    "name": "Jinwook Kim",
+                    "@type": "Person"
+                },
+                {
+                    "name": "David Matscheko",
+                    "@type": "Person"
+                },
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
+                },
+                {
+                    "name": "Jonathan Hill",
+                    "@type": "Person"
+                },
+                {
+                    "name": "William T. Glynn",
+                    "@type": "Person"
+                },
+                {
+                    "name": "Maarten Antonie Visser",
+                    "@type": "Person"
+                },
+                {
+                    "name": "Kale Arnav Anirudha",
+                    "@type": "Person"
+                },
+                {
+                    "name": "Brieuc de La Fournière",
+                    "@type": "Person"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "PhilPapers (preprint)"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026ObserversWhoReadTheir230.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026ObserversWhoReadTheir230.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026ObserversWhoReadTheir230.html",
+            "sameAs": "https://philpapers.org/rec/MUEFOC",
+            "citation": "Mueller, Bernhard; Poneder, Mario; Osika, Alexander; Xue, Kai; Cassie, Ben; Nguyen, Peter; Kim, Jinwook; Matscheko, David; Friedman, Daniel Ari; Hill, Jonathan; Glynn, William T.; Visser, Maarten Antonie; Anirudha, Kale Arnav; de La Fournière, Brieuc. 2026. Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics. PhilPapers (preprint). URL: https://philpapers.org/rec/MUEFOC."
         }
     ]
 }

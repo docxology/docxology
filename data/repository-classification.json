@@ -1,11 +1,11 @@
 {
   "schema_version": "1.4",
-  "generated_at": "2026-10-18T19:15:46Z",
+  "generated_at": "2026-10-23T16:58:20Z",
   "source": "data/github-repositories.json",
   "acknowledged_exclusions_source": "data/repository-exclusions.json",
   "policy": "Complete GitHub inventory remains distinct from the curated software catalog; unknown primary repositories stay reviewable and are never auto-promoted. Repositories listed in data/repository-exclusions.json are deliberate not-catalog decisions (profile/website/test/mirror/duplicate or public forks) and are marked acknowledged only when their full_name and immutable github_id/github_node_id match the reviewed repository. Each row reports how its decision was reached in reviewed_by: principal means the principal reviewed that repository individually; standing_policy means an already-recorded principal decision was applied to a fork nobody reviewed one by one, and policy_source names that decision.",
   "summary": {
-    "total_inventory": 284,
+    "total_inventory": 286,
     "uncatalogued": 118,
     "forks": 106,
     "acknowledged_forks": 106,
@@ -723,7 +723,7 @@
       "fork": false,
       "archived": false,
       "private": false,
-      "description": "GitHub profile and research portfolio for Daniel Ari Friedman (Active Inference Institute) — indexes 100+ software projects, publications with DOIs, and 500+ livestream transcripts across active inference, entomology, cognitive security, and computational biology in Python, Rust, and Lean.",
+      "description": "Public research and software index for Daniel Ari Friedman, with publications, code, videos, teaching resources, and citation metadata across active inference, entomology, cognitive security, and art.",
       "description_quality": "substantive",
       "language": "HTML",
       "topics": [
@@ -2728,7 +2728,7 @@
       "description_quality": "substantive",
       "language": "JavaScript",
       "topics": [],
-      "recently_updated": true,
+      "recently_updated": false,
       "relevance": "unknown",
       "catalog_role": "acknowledged_not_curated",
       "exclusion_reason": "fork_not_curated",

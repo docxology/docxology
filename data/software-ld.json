@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Software",
-    "description": "125 original repositories and 41 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
+    "description": "127 original repositories and 41 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -22,7 +22,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-08-18T16:48:46Z",
-            "dateModified": "2026-10-18T12:04:19Z",
+            "dateModified": "2026-10-23T15:53:01Z",
             "keywords": "agents-md, ai-agents, claude-code, computational-research, cursor, github-template, latex, multi-project, ollama, pandoc, pdf-generation, project-template, provenance, pytest, python, reproducible-research, research-template, steganography, uv, zenodo",
             "sameAs": "https://doi.org/10.5281/zenodo.20584820"
         },
@@ -55,7 +55,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-05-16T17:45:28Z",
-            "dateModified": "2026-10-18T18:47:18Z",
+            "dateModified": "2026-10-23T02:51:35Z",
             "keywords": "agents, ai-agents, automation, claude, code-analysis, coding-agent, developer-tools, llm, mcp, mcp-server, model-context-protocol, multi-agent, orchestration, personal-ai, python, rag, security, static-analysis, uv, zero-mock",
             "sameAs": "https://doi.org/10.5281/zenodo.21750800"
         },
@@ -434,7 +434,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-01T21:23:23Z",
-            "dateModified": "2026-10-16T14:13:19Z",
+            "dateModified": "2026-10-22T17:41:36Z",
             "keywords": "eye-tracking, gaze-estimation, mediapipe, microsaccades, neuroscience, numpy, psychophysics, pupillometry, python, saccades, streamlit, webcam",
             "sameAs": "https://doi.org/10.5281/zenodo.20614908"
         },
@@ -687,7 +687,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2026-01-30T00:33:49Z",
-            "dateModified": "2026-09-30T18:25:50Z",
+            "dateModified": "2026-10-21T22:15:28Z",
             "keywords": "biology, community-college, course-materials, education, general-biology, labs, open-education, slides, teaching"
         },
         {
@@ -870,7 +870,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2025-04-24T21:53:54Z",
-            "dateModified": "2026-10-13T22:07:54Z",
+            "dateModified": "2026-10-19T16:44:04Z",
             "keywords": "document-analysis, markdown, markov-decision-process, networkx, pandoc, pomdp, python, reinforcement-learning"
         },
         {
@@ -995,7 +995,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-09-17T17:13:42Z",
-            "dateModified": "2026-10-18T01:10:49Z",
+            "dateModified": "2026-10-22T00:51:01Z",
             "sameAs": "https://doi.org/10.5281/zenodo.22816187"
         },
         {
@@ -1044,7 +1044,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-11T15:44:33Z",
-            "dateModified": "2026-10-18T18:01:31Z",
+            "dateModified": "2026-10-23T10:13:59Z",
             "keywords": "aes-gcm, archive, cryptography, data-standards, file-format, provenance, python, reproducible-research, research-data, zenodo",
             "sameAs": "https://doi.org/10.5281/zenodo.20396328"
         },
@@ -1077,7 +1077,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-09-15T17:49:35Z",
-            "dateModified": "2026-10-13T22:07:55Z",
+            "dateModified": "2026-10-23T05:16:28Z",
             "keywords": "archives, corpus, digital-humanities, literature, python, sqlite, text-analysis, visualization, william-blake",
             "sameAs": "https://doi.org/10.5281/zenodo.21047573"
         },
@@ -1267,7 +1267,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-07-17T20:22:15Z",
-            "dateModified": "2026-09-30T19:21:47Z",
+            "dateModified": "2026-10-19T15:44:24Z",
             "keywords": "numpy, optical-illusions, perception, pillow, psychoacoustics, psychophysics, python, reproducible-research, stimuli, vision-science",
             "sameAs": "https://doi.org/10.5281/zenodo.21419693"
         },
@@ -1602,7 +1602,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/line_set#software",
             "name": "line_set",
-            "description": "A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice ·  · Citation DOI · Zenodo artifact v0.1.0",
+            "description": "A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice; repository v0.5.0 ·  · Citation DOI · Zenodo artifact v0.1.0",
             "codeRepository": "https://github.com/docxology/line_set",
             "author": {
                 "@type": "Person",
@@ -1610,7 +1610,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-07-28T11:45:46Z",
-            "dateModified": "2026-09-24T21:12:14Z",
+            "dateModified": "2026-10-22T08:58:05Z",
             "keywords": "audit, cli, governance, python, registry, research-integrity, validation",
             "sameAs": "https://doi.org/10.5281/zenodo.21754243"
         },
@@ -1618,7 +1618,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/black_line#software",
             "name": "black_line",
-            "description": "A positive operating discipline for concise, inspectable, revisable work ·  · Zenodo",
+            "description": "A positive operating discipline for concise, inspectable, revisable work; repository v0.5.0 ·  · Zenodo",
             "codeRepository": "https://github.com/docxology/black_line",
             "author": {
                 "@type": "Person",
@@ -1626,7 +1626,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-07-28T11:45:37Z",
-            "dateModified": "2026-09-22T01:53:15Z",
+            "dateModified": "2026-10-21T21:25:03Z",
             "keywords": "audit, best-practices, evaluation, governance, ledger, python, research-integrity",
             "sameAs": "https://doi.org/10.5281/zenodo.21754235"
         },
@@ -1634,7 +1634,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/white_line#software",
             "name": "white_line",
-            "description": "A typed ledger for the edge of a claim: absence, restraint, and the unknowable ·  · Zenodo",
+            "description": "A typed ledger for the edge of a claim: absence, restraint, and the unknowable; repository v0.8.0 ·  · Zenodo",
             "codeRepository": "https://github.com/docxology/white_line",
             "author": {
                 "@type": "Person",
@@ -1642,7 +1642,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-07-28T11:45:42Z",
-            "dateModified": "2026-09-05T04:12:29Z",
+            "dateModified": "2026-10-21T21:27:51Z",
             "keywords": "audit, epistemics, governance, ledger, python, research-integrity, uncertainty",
             "sameAs": "https://doi.org/10.5281/zenodo.21754241"
         },
@@ -1650,7 +1650,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/golden_line#software",
             "name": "golden_line",
-            "description": "An aspirational thread and long-horizon direction for personal work ·  · Zenodo",
+            "description": "An aspirational thread and long-horizon direction for personal work; repository v0.5.0 ·  · Zenodo",
             "codeRepository": "https://github.com/docxology/golden_line",
             "author": {
                 "@type": "Person",
@@ -1658,7 +1658,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-07-28T11:45:40Z",
-            "dateModified": "2026-09-22T01:52:18Z",
+            "dateModified": "2026-10-21T21:35:12Z",
             "keywords": "aspirations, audit, governance, ledger, python, research-integrity, values",
             "sameAs": "https://doi.org/10.5281/zenodo.21754237"
         },
@@ -1674,7 +1674,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-07-28T11:45:34Z",
-            "dateModified": "2026-09-22T15:52:23Z",
+            "dateModified": "2026-10-22T16:42:02Z",
             "keywords": "ai-safety, dual-use, ethics, governance, python, research-integrity, responsible-ai, warrant-canary",
             "sameAs": "https://doi.org/10.5281/zenodo.21754239"
         },
@@ -1682,7 +1682,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/witness_register#software",
             "name": "witness_register",
-            "description": "Co-registration without aggregation — the Witness Register holding instrument ·  · Zenodo",
+            "description": "Co-registration without aggregation — the Witness Register holding instrument; repository v0.2.0 ·  · Zenodo",
             "codeRepository": "https://github.com/docxology/witness_register",
             "author": {
                 "@type": "Person",
@@ -1690,7 +1690,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-08-02T04:26:38Z",
-            "dateModified": "2026-09-18T16:15:18Z",
+            "dateModified": "2026-10-22T04:47:37Z",
             "keywords": "accountability, append-only, audit, cli, governance, provenance, python, research-integrity",
             "sameAs": "https://doi.org/10.5281/zenodo.21754245"
         },
@@ -1698,7 +1698,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/blue_line#software",
             "name": "blue_line",
-            "description": "A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work ·  · Zenodo",
+            "description": "A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work; repository v0.2.0 ·  · Zenodo",
             "codeRepository": "https://github.com/docxology/blue_line",
             "author": {
                 "@type": "Person",
@@ -1706,14 +1706,14 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-09-05T19:06:02Z",
-            "dateModified": "2026-09-18T16:14:58Z",
+            "dateModified": "2026-10-21T20:58:14Z",
             "sameAs": "https://doi.org/10.5281/zenodo.22833489"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/green_line#software",
             "name": "green_line",
-            "description": "A capacity-under-development instrument: the green line of the docxology line set ·  · Zenodo",
+            "description": "A capacity-under-development instrument: the green line of the docxology line set; repository v0.2.0 ·  · Zenodo",
             "codeRepository": "https://github.com/docxology/green_line",
             "author": {
                 "@type": "Person",
@@ -1721,14 +1721,14 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-09-05T19:07:53Z",
-            "dateModified": "2026-09-18T16:15:00Z",
+            "dateModified": "2026-10-21T21:02:16Z",
             "sameAs": "https://doi.org/10.5281/zenodo.22833491"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/silver_line#software",
             "name": "silver_line",
-            "description": "A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse ·  · Citation DOI · Zenodo artifact v0.1.0",
+            "description": "A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse; repository v0.2.0 ·  · Citation DOI · Zenodo artifact v0.1.0",
             "codeRepository": "https://github.com/docxology/silver_line",
             "author": {
                 "@type": "Person",
@@ -1737,7 +1737,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-09-05T19:02:53Z",
-            "dateModified": "2026-09-18T16:14:50Z",
+            "dateModified": "2026-10-21T21:14:18Z",
             "sameAs": "https://doi.org/10.5281/zenodo.22833485"
         },
         {
@@ -1863,7 +1863,7 @@
             "programmingLanguage": "HTML",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-09-03T15:48:34Z",
-            "dateModified": "2026-10-14T19:25:45Z",
+            "dateModified": "2026-10-22T00:49:26Z",
             "keywords": "automation, dashboard, devops, git, github-api, orchestration, repository-management, upstream-sync"
         },
         {
@@ -1955,7 +1955,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-09-26T00:34:45Z",
-            "dateModified": "2026-10-18T12:48:06Z",
+            "dateModified": "2026-10-22T00:51:52Z",
             "keywords": "active-inference, knowledge-graph, open-knowledge-network, rdf, skos"
         },
         {
@@ -1993,6 +1993,38 @@
         },
         {
             "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/active_assembly_theory_and_practice#software",
+            "name": "active_assembly_theory_and_practice",
+            "description": "Assembly-to-inference research with authored fixtures, executable generative models, and bounded source-contract validation ·  · Citation DOI",
+            "codeRepository": "https://github.com/docxology/active_assembly_theory_and_practice",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
+            "dateCreated": "2026-06-13T15:57:18Z",
+            "dateModified": "2026-10-19T21:09:43Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.23484107"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/thanks_for_nothing#software",
+            "name": "thanks_for_nothing",
+            "description": "Finite-model research on gratitude, absence and model revisability; synthetic results retain explicit human and clinical validation limits ·  · Citation DOI",
+            "codeRepository": "https://github.com/docxology/thanks_for_nothing",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
+            "dateCreated": "2026-10-22T21:11:49Z",
+            "dateModified": "2026-10-22T21:12:49Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.23402516"
+        },
+        {
+            "@type": "SoftwareSourceCode",
             "@id": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal#software",
             "name": "ActiveInferenceJournal",
             "description": "Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output",
@@ -2026,7 +2058,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation#software",
             "name": "Generalized_Notation_Notation",
-            "description": "GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software",
+            "description": "GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Citation DOI · Current software v4.3.0 ·  · Earlier software archive",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation",
             "author": {
                 "@type": "Person",
@@ -2034,9 +2066,9 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2023-04-02T19:45:34Z",
-            "dateModified": "2026-10-18T19:08:21Z",
+            "dateModified": "2026-10-22T02:09:12Z",
             "keywords": "active, active-inference, active-inference-notation, inference",
-            "sameAs": "https://doi.org/10.5281/zenodo.19600217"
+            "sameAs": "https://doi.org/10.5281/zenodo.7803313"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -2082,7 +2114,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-02-17T17:46:31Z",
-            "dateModified": "2026-10-18T12:47:40Z",
+            "dateModified": "2026-10-20T21:15:01Z",
             "keywords": "active-inference, expected-free-energy, free-energy-principle, generative-model, pomdp, python"
         },
         {
@@ -2097,7 +2129,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2025-05-13T14:17:56Z",
-            "dateModified": "2026-10-18T04:08:45Z",
+            "dateModified": "2026-10-20T00:26:17Z",
             "keywords": "active-inference, agent-workflows, bayesian-inference, domain-modeling, geospatial, h3, monorepo, python, reproducible-research, spatial-analysis, uv"
         },
         {
@@ -2295,7 +2327,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-04-14T13:33:35Z",
-            "dateModified": "2026-10-18T17:35:07Z",
+            "dateModified": "2026-10-23T06:01:19Z",
             "keywords": "active-inference, bayesian-mechanics, formal-verification, free-energy-principle, information-geometry, lean4, theorem-proving",
             "sameAs": "https://doi.org/10.5281/zenodo.19699233"
         },

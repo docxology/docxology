@@ -4,19 +4,19 @@
   "inclusion_guidance": "https://scholar.google.com/intl/en/scholar/inclusion.html",
   "pdf_byte_limit": 5000000,
   "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
-  "works_sha256": "32212d11564b45b2a6987cfd5287006822845c60752d07df99fab4012c03b20b",
+  "works_sha256": "6f2287cffb5c0ddfcd892ea66ffb7b01565b4b50e59dce7d4f276c06d5163602",
   "network_checked": false,
   "indexing_verified": false,
   "summary": {
-    "works": 224,
+    "works": 226,
     "local_status": {
-      "blocked": 224
+      "blocked": 226
     },
     "blockers": {
       "missing_citation_author": 11,
       "no_selected_local_pdf": 25,
-      "pdf_directory_differs_from_abstract": 199,
-      "pdf_exceeds_byte_limit": 43
+      "pdf_directory_differs_from_abstract": 201,
+      "pdf_exceeds_byte_limit": 44
     }
   },
   "works": [
@@ -25,7 +25,7 @@
       "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative001.html",
-      "page_sha256": "d99907ba88a836101332bde7f5b04196bd6b22c9eff0d74b3a38bae133db261c",
+      "page_sha256": "9ba3cda41ddd7225f9c19c7d4943037fb3efbb7738242fdb8cd3fdd821798017",
       "citation_tags": {
         "citation_title": [
           "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
@@ -384,7 +384,7 @@
       "title": "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025AdaptiveBasicIncomeAuBI009.html",
-      "page_sha256": "d5053daf048ffe14d7c762ccbe16ae92e67ad760b4a74196c6488444e74a6838",
+      "page_sha256": "486242153c5e92a4f9eb5fdcc5c30b7e39d1cf8309636d6fd531c570b4fd9445",
       "citation_tags": {
         "citation_title": [
           "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems"
@@ -609,7 +609,7 @@
       "title": "MDKV: A Multitrack Markdown Container for Structured, Portable Documents",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025MDKVMultitrackMarkdownContainer014.html",
-      "page_sha256": "d7ce99bc5047508bc03692dbbd19856e00de842940c24889a4faa0ebcbe75539",
+      "page_sha256": "8dd55ed2d1263bb12a897499e277e8c3a1a0999789e974e70ae1d8f0faf9588f",
       "citation_tags": {
         "citation_title": [
           "MDKV: A Multitrack Markdown Container for Structured, Portable Documents"
@@ -653,7 +653,7 @@
       "title": "Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025MarkdownDecisionProcessFramework015.html",
-      "page_sha256": "98ae4acb15eff7503b9c583d169609c0e33fdc61f0cff5d2403d0e9c59ff4d04",
+      "page_sha256": "5e2d83e893c6d584ad704657cdcbc25384a41704aefa8d0d80a82d6b8c475a98",
       "citation_tags": {
         "citation_title": [
           "Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization"
@@ -830,7 +830,7 @@
       "title": "ResNei: Solution Design Document",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025ResNeiSolutionDesignDocument019.html",
-      "page_sha256": "ac0ef485c837155d3df9afd19bfeccb22b8f676bf9a0f1521853e7b18ccae784",
+      "page_sha256": "a23d0ec3e34f7a9bec3eba56fc19511959af8891f01c7d537371af8a32fcb12e",
       "citation_tags": {
         "citation_title": [
           "ResNei: Solution Design Document"
@@ -1189,7 +1189,7 @@
       "title": "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025DiscoveryEngineAIDriven026.html",
-      "page_sha256": "3e990fcc88e42c8640b6d8a262746c89ee9df097b8d6de5338bd0f44d92cd624",
+      "page_sha256": "9989acae2bd6067e4195ee7ea53a08caffe61c7a70d99299c839c0737290ab92",
       "citation_tags": {
         "citation_title": [
           "The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes"
@@ -2558,7 +2558,7 @@
       "title": "Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2023EnhancedNSFPostdoctoralReporting054.html",
-      "page_sha256": "d2e7fa139aa019edc8cbd9eca0b788b084de5024202d31e2b86613467a8b4e29",
+      "page_sha256": "f4aee2ccf40303ce25a7a108fc01ec83807f5ab998b74654f735daa2a1619eb3",
       "citation_tags": {
         "citation_title": [
           "Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing"
@@ -5675,7 +5675,7 @@
       "title": "Introduction to Biology: A Generative Approach",
       "type": "Book",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026IntroductionBiologyGenerativeApproach117.html",
-      "page_sha256": "dd107ceebdc28def184d344f41acb6b272457e9a3697cb0b319a748d0b318195",
+      "page_sha256": "1d6e60491638709cb17231518884927210c3258f762196a02beb98d1e219c17f",
       "citation_tags": {
         "citation_title": [
           "Introduction to Biology: A Generative Approach"
@@ -5720,7 +5720,7 @@
       "title": "Policy Entanglement in Active Inference: A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026PolicyEntanglementActiveInference119.html",
-      "page_sha256": "36266b9c933a124f486fd2c60b6d421c850917e65a0e48e0abbd42200b87da8b",
+      "page_sha256": "aa8a7f900b03fc642d80ccd2bef1d07b6be61b6b1ffc2ed10dc455cb0b49f5cf",
       "citation_tags": {
         "citation_title": [
           "Policy Entanglement in Active Inference: A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary"
@@ -5765,7 +5765,7 @@
       "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026BoundedAutoResearchTinyReproducible120.html",
-      "page_sha256": "55a82cd0bf03f4af3a8b16cd5a3b8af0a9cd529ea111cc3b9f00c73a502df578",
+      "page_sha256": "72c8e50e57068800eacdde70614aac4914e1908e8106b7d1c8162ca1f62a9cbb",
       "citation_tags": {
         "citation_title": [
           "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task"
@@ -5809,7 +5809,7 @@
       "title": "Convergence Analysis of Gradient Descent Optimization",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ConvergenceAnalysisGradientDescent121.html",
-      "page_sha256": "678aefc875fd8b9bfa65279752a1572a8296055ccb2805d9de95ee41df08613d",
+      "page_sha256": "731e133fece574b4beb60b1417cd509e8ed075934258a1659f331cea59240941",
       "citation_tags": {
         "citation_title": [
           "Convergence Analysis of Gradient Descent Optimization"
@@ -5853,7 +5853,7 @@
       "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026EditorialQualityAtScale122.html",
-      "page_sha256": "eef5726bedd24039ed91d19dffadbf12ad1dc8d10f4a9a3c87a58cbf72b3427d",
+      "page_sha256": "c49d814b189dd48b1b9922bdce045288a88e7271acc43ed2f13cbce4b5c1a692",
       "citation_tags": {
         "citation_title": [
           "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline"
@@ -5897,7 +5897,7 @@
       "title": "A template/ approach to Reproducible Generative Research",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative123.html",
-      "page_sha256": "2e3d9431902c5ffdea67d981a23736c04a4ee1e37cbfc24a3511b345e222d74c",
+      "page_sha256": "2a105489a4f6175f124efff0f36715bb94057e926e54ba92367000ab04697186",
       "citation_tags": {
         "citation_title": [
           "A template/ approach to Reproducible Generative Research"
@@ -5941,7 +5941,7 @@
       "title": "Active Inference Multi-Track Exemplar",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ActiveInferenceMultiTrack124.html",
-      "page_sha256": "b183e6aa90822621da7c19fae8c080eaf3c07b2df373e40a197bf410fd164549",
+      "page_sha256": "3d087dac24253064e5b56149732bce196c53b6f7d9487bf456ece4f7709f46d5",
       "citation_tags": {
         "citation_title": [
           "Active Inference Multi-Track Exemplar"
@@ -5985,7 +5985,7 @@
       "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026BeeStackEvidenceTypedScaffold125.html",
-      "page_sha256": "33da2a874839c6cc59523b8a2d1f670c67590403b86b42bbc05de62fb31c30d0",
+      "page_sha256": "a81bf2df335e62cf6276f45b8946e660e390c2d9af7f8f77c1cdc2670c9a4006",
       "citation_tags": {
         "citation_title": [
           "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation"
@@ -6031,7 +6031,7 @@
       "title": "When do bugs see (infra)red?",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026WhenDoBugsSee126.html",
-      "page_sha256": "ad9bd93d8fe4129ab01ae0fb32d0c29c197cada5827e2c0318f53b73ed7dc593",
+      "page_sha256": "94a214fc5c2f870e3d580cdf3945a0229324b9ff21f87bbf54d9a30972f1ad33",
       "citation_tags": {
         "citation_title": [
           "When do bugs see (infra)red?"
@@ -6077,7 +6077,7 @@
       "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026SelfImprovementAgentHarness127.html",
-      "page_sha256": "2a353dd1a350509e963d1b4f8eff6642dda710138217cc8e596bfd643d3f45f6",
+      "page_sha256": "e289dc90afb967186c2dc35d14e505d2abf9e3b8e7addc80f1e20d2b4e004c34",
       "citation_tags": {
         "citation_title": [
           "Self-Improvement Agent Harness: A Deterministic SIA Exemplar"
@@ -6156,7 +6156,7 @@
       "title": "Con-cat-enate: emulation of Cat Hippocampus",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025ConCatEnateEmulation129.html",
-      "page_sha256": "119021cc39be3bbd902d048d9b702ccc02f6bc9d6389ebbad6dd3d4d408fb638",
+      "page_sha256": "102dd859c449b30751b487b778858aa14595d70d2048dcc7d1c80099567f0f21",
       "citation_tags": {
         "citation_title": [
           "Con-cat-enate: emulation of Cat Hippocampus"
@@ -6291,7 +6291,7 @@
       "title": "Beacons - pre emulation of social cortex",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025BeaconsPreEmulationSocial132.html",
-      "page_sha256": "c9761698831b4d15f37bdc5f1519b3074dc05132043376d969aa525f831fdf24",
+      "page_sha256": "7448046e375d447596f6d49d3f04ddb6fce9f445c1871a456b9ec9508e4de135",
       "citation_tags": {
         "citation_title": [
           "Beacons - pre emulation of social cortex"
@@ -6425,7 +6425,7 @@
       "title": "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2023NaturalAIBasedScience135.html",
-      "page_sha256": "2262c65f78a3caeadaf72aa5fc85c368e7d3de3f4abdd9f15621de97763ba3c4",
+      "page_sha256": "e89171b0d21f853f3a61f022363f7798b1d9456ec2f3b6b0c275f93212a7e1bc",
       "citation_tags": {
         "citation_title": [
           "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance"
@@ -7105,7 +7105,7 @@
       "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026MusicNeverStoppedGrateful150.html",
-      "page_sha256": "d2b0e74ca923bf251bbc80c91972995c2d968e1cc1319fd04c74c547c6e1ffd3",
+      "page_sha256": "b2feb17e561dd89ef28fd208de0d5fccd5db1dc4412d343541cf93ed7c90b3f0",
       "citation_tags": {
         "citation_title": [
           "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation"
@@ -7149,7 +7149,7 @@
       "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026DeterministicTestbedSelfOrganizing151.html",
-      "page_sha256": "5011562ff26d1201142aa275f7a9c80adadf861a17e2ba9114ff15fbf1a0438e",
+      "page_sha256": "1365dcaca9652934f4f3df998dd774544e872ae0eb4b5826faab730ee256207f",
       "citation_tags": {
         "citation_title": [
           "A Deterministic Testbed for Self-Organizing Agent-Team Coordination"
@@ -7193,7 +7193,7 @@
       "title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026RecoveringLLMPersonaAccuracies152.html",
-      "page_sha256": "53e745584e7b19d05d4dcd2c3f5aa0677f711ed0c4157dea67abc33fbc4fc814",
+      "page_sha256": "f4ab350d0a22ce8681145db69192788022daf51097d2ec495321e85275343c46",
       "citation_tags": {
         "citation_title": [
           "Recovering LLM-Persona Accuracies from Unlabeled Votes"
@@ -7237,7 +7237,7 @@
       "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026TriplicateDataDrivenLarge153.html",
-      "page_sha256": "ef0f8a5fdbb8d4b5496574d02d94e7f24974cd115d651e3de57449bb471b1ca2",
+      "page_sha256": "2dfa8bf8585f8a18073628e39aef9a74c4fe1836f704cb5e6b77d86f2eecd0ff",
       "citation_tags": {
         "citation_title": [
           "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine"
@@ -7281,7 +7281,7 @@
       "title": "The Template Textbook",
       "type": "Book",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026TemplateTextbook154.html",
-      "page_sha256": "14082e3335f67d860998b60315761395563c5f4f44d93a996b09b25b440496f5",
+      "page_sha256": "1d0b281ab261da5275528e34a7c74c82921858cb297f763bfb6ec3e2e05ede43",
       "citation_tags": {
         "citation_title": [
           "The Template Textbook"
@@ -7668,7 +7668,7 @@
       "title": "iTrace: verification-first webcam eye-movement analysis (corrected manuscript)",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ITraceVerificationFirstWebcam165.html",
-      "page_sha256": "fa06d46b9d5d6b72275ae5d62298439bb9b064030a4de69a0805f7450bf0f07b",
+      "page_sha256": "1aebef4363974441c6b9b7996c3a866b4afc4802ee330b3c1c97599888ea9817",
       "citation_tags": {
         "citation_title": [
           "iTrace: verification-first webcam eye-movement analysis (corrected manuscript)"
@@ -7713,7 +7713,7 @@
       "title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026DemoCreateDeclarativeAudioVisual166.html",
-      "page_sha256": "031bde08c2131f317ba2587d2e0f09f731247d940143c6bbeafc7ca3d9242307",
+      "page_sha256": "9e018cdd2e2bd7d01287302cac5ce286b0baa03ee4471bb0cbd4abddd5e60e07",
       "citation_tags": {
         "citation_title": [
           "DemoCreate: Declarative Audio-Visual Demo Generation for Software"
@@ -7757,7 +7757,7 @@
       "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ENTOENcryptedTypedOmnitrack167.html",
-      "page_sha256": "f25ea62d5aedecf7bfbeb145913bb2062e808cd2567a49161937e5225f0bf429",
+      "page_sha256": "690b5372b076cae95bbb5587f338a2783175d3774e0ee4a47267a2b5ea7c0196",
       "citation_tags": {
         "citation_title": [
           "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data"
@@ -7845,7 +7845,7 @@
       "title": "COGANT: Deterministic Codebase-to-GNN Translation",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026COGANTDeterministicCodebaseGNN169.html",
-      "page_sha256": "9aecdd911aab25f287a5735a534e6897fe4eef74cebdc8bcd844a78907183f02",
+      "page_sha256": "5f4bdeefa2bab356d82c37649b3de99e26a0a0430695968a5fd1fc4e074a2a49",
       "citation_tags": {
         "citation_title": [
           "COGANT: Deterministic Codebase-to-GNN Translation"
@@ -7889,7 +7889,7 @@
       "title": "AGEINT: Agentic Intelligence",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026AGEINTAgenticIntelligence170.html",
-      "page_sha256": "20e26b06c3593130185ff30955661aef38d88eb262e7656e95ab17c59cafc398",
+      "page_sha256": "c2138730fbf353ef8b07c9bdca2b49021fb8b34ad9ef2fd7d110fd0f762263c6",
       "citation_tags": {
         "citation_title": [
           "AGEINT: Agentic Intelligence"
@@ -7979,7 +7979,7 @@
       "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026TemplateMadlibDeterministicToken172.html",
-      "page_sha256": "e08874fa2a9b5279c8dc69aac87fbe4346a715dffdf06f2686e2385c949b6200",
+      "page_sha256": "d264a05f305c319a67712f9d762226ff0e20ccd97dd2c44fe8c89088cb1303e3",
       "citation_tags": {
         "citation_title": [
           "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts"
@@ -8111,7 +8111,7 @@
       "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html",
-      "page_sha256": "8c39c3f71db9f3a2e8c8d77eace40b4410cfbd0f423d4921b2f6c749840c1993",
+      "page_sha256": "91e034bfab80536e7e3e4bf57f1c5ec205ba7038f91d1cd02e82d985c0ca8142",
       "citation_tags": {
         "citation_title": [
           "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction"
@@ -8156,7 +8156,7 @@
       "title": "A Living Meta-Analysis of the Modafinil Literature",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026LivingMetaAnalysisModafinil176.html",
-      "page_sha256": "3c4e37907845c3b14acd3143b5a9252e0c7b1689cf3e23d1b3fee9e9356448fd",
+      "page_sha256": "e266293c4a53be540b660c94a28214386aeaad75428eba00a733fd58ca4fd182",
       "citation_tags": {
         "citation_title": [
           "A Living Meta-Analysis of the Modafinil Literature"
@@ -8201,7 +8201,7 @@
       "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026RefinementGoldMetallurgicalAnalogy177.html",
-      "page_sha256": "71e3258a3794381cc29fc4891c5c5f73460a39d584f2eefb98ecab6f4ab4f12c",
+      "page_sha256": "908b2967c4e6dfc30e118a2cb7721bdc18e95ca3fbec2b73a6d2c6f2ebf9fc10",
       "citation_tags": {
         "citation_title": [
           "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition"
@@ -8245,7 +8245,7 @@
       "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026AlphaCOGANTRecursiveCorporateSelf178.html",
-      "page_sha256": "ff7f607bd04359aa52ab623b90f97be87517bdb87df9040ed2965e781f006487",
+      "page_sha256": "307f2b2cefae0f7af19a1fe9aa01040ab37864526e77fbcecfa91a770661a07e",
       "citation_tags": {
         "citation_title": [
           "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference"
@@ -8290,7 +8290,7 @@
       "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026MappingWilliamBlakeS179.html",
-      "page_sha256": "a129467906c329ef2ec5bc06602849afa8ff6cbda794b1cec3f53a7392b619bb",
+      "page_sha256": "d8129c929cf5119eb9e50ab760e4e67de69fbf97d712fdf879484d5ffec0f86d",
       "citation_tags": {
         "citation_title": [
           "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls"
@@ -8335,7 +8335,7 @@
       "title": "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026SortitionUpstreamNTQR180.html",
-      "page_sha256": "10a87ea04a114570ca839ba696a97c50bb681589e7b6a68db43e34ad0d5dbc54",
+      "page_sha256": "fe6976605abe4b53ee80aa80964bffaebf3dff752300ab135a258a1fae883733",
       "citation_tags": {
         "citation_title": [
           "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation"
@@ -8379,7 +8379,7 @@
       "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ExploratoryDataAnalysisReproducible181.html",
-      "page_sha256": "80617b01f949bb44372df1c78f64443a4f83f8db914d61b83317a89b69b70622",
+      "page_sha256": "dac8fa7be932beac96ff0fac12e5cfc149a407ba71688f7782bc7484e93d40fc",
       "citation_tags": {
         "citation_title": [
           "Exploratory Data Analysis: A Reproducible Notebook Template"
@@ -8423,7 +8423,7 @@
       "title": "A Domain Language for Specifying Controlled Methods",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026DomainLanguageSpecifyingControlled182.html",
-      "page_sha256": "275a4bcb658673479d51b8f71ed0f1ab35709594499d8502c75153d017a99a65",
+      "page_sha256": "f551405ac23d61ec27a239eeb0677886c1f3b76dccc1a92b35698f38f3298119",
       "citation_tags": {
         "citation_title": [
           "A Domain Language for Specifying Controlled Methods"
@@ -8467,7 +8467,7 @@
       "title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026EntomologicalLawFieldMap183.html",
-      "page_sha256": "f9f115a075db19039c4b2018b7874124f4ce62171fc92df06ef94e84b120db63",
+      "page_sha256": "a55a91bb7306b17d8c5eb8bd0d489cb9aaa18ab16f573bd00b9dbe1dcb248db5",
       "citation_tags": {
         "citation_title": [
           "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon"
@@ -8511,7 +8511,7 @@
       "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ShapeBetweenFullPage184.html",
-      "page_sha256": "a71011991dba971f7870c843225afa9b539bf70e51b90cf9ee8427906e9316c6",
+      "page_sha256": "5fb2f71700f8c2c15e73f1fd631d6f63ca49c5231bb4514cda9c4e8a4fb1ee83",
       "citation_tags": {
         "citation_title": [
           "The Shape Between: A Full-Page Illustrated Storybook Template"
@@ -8555,7 +8555,7 @@
       "title": "Autopoietic Project Generation",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026AutopoieticProjectGeneration185.html",
-      "page_sha256": "fe91409a71238f7695c9b39bb470d8ba452cab7f91f8fc7370b59e48bb54e540",
+      "page_sha256": "383747a3ae264df0becc3f4dea5eefeecb6e9ac01ca4913d6ef896d84ba7a25a",
       "citation_tags": {
         "citation_title": [
           "Autopoietic Project Generation"
@@ -8599,7 +8599,7 @@
       "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026TemplatePitchDeckReproducible186.html",
-      "page_sha256": "578d32df508732a33e615a983f3d81c1f972c1f6367ff1ba41e91789e5ed536a",
+      "page_sha256": "5b41574ea83db744b825f3019b8a271cb09c87c33d3133e97e42d0684549c286",
       "citation_tags": {
         "citation_title": [
           "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation"
@@ -8643,7 +8643,7 @@
       "title": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ReproducibleLiteratureSynthesisInfrastructure187.html",
-      "page_sha256": "efa647d50ea5d1bf2c53a8e32f582ab7bd96e3f3a058d3adac661389fe6eabcb",
+      "page_sha256": "b16f6bfad3d8e3e0b60f30e2e55995eeb4d5b16916f77d77547f8adea3239909",
       "citation_tags": {
         "citation_title": [
           "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference"
@@ -8687,7 +8687,7 @@
       "title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026RegisteredReportTemplatePreregistration188.html",
-      "page_sha256": "a8e36948b58d82105d3289c1fd35238e7549ee988439f18aecf5b95bc5afcbb6",
+      "page_sha256": "c5ca31a29c5f796b730a3a28b45dc2d8b4b239f2fc977bcd4ae745c38ca83c04",
       "citation_tags": {
         "citation_title": [
           "Registered Report Template: Preregistration, Deviations, and Claim Boundaries"
@@ -8731,7 +8731,7 @@
       "title": "Redacted Report Template: Disclosure Control and Release Audit",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026RedactedReportTemplateDisclosure189.html",
-      "page_sha256": "d937defaa64658fd91a905f5595c8394454d741a6ca9f3fadb8971f896f7a018",
+      "page_sha256": "8f94a93160868297ccb68723571896b5ef6f825c5f9c3142d9dcac03369cbf4d",
       "citation_tags": {
         "citation_title": [
           "Redacted Report Template: Disclosure Control and Release Audit"
@@ -8863,7 +8863,7 @@
       "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026DataDescriptorTemplateSchema192.html",
-      "page_sha256": "ee852d4cd0ca894d1eaba32062424d1d1504624252bf34f060c1568fac82ad87",
+      "page_sha256": "49b04df03184d259027128e189002db07f0815a23d09a47a172728028994bedd",
       "citation_tags": {
         "citation_title": [
           "Data Descriptor Template: Schema, Provenance, and Release Readiness"
@@ -9041,7 +9041,7 @@
       "title": "DuckRabbit: Typed Multimodal Illusion Generator",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html",
-      "page_sha256": "d7516ae0b3e6c306fd82ce6471b67eb9957e6ad9a602759ce621ab366301944e",
+      "page_sha256": "fc04ac60f538a61ed96a748769c4deb3f115487d3a1055d8d61ffb8c496bc2f8",
       "citation_tags": {
         "citation_title": [
           "DuckRabbit: Typed Multimodal Illusion Generator"
@@ -9085,7 +9085,7 @@
       "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html",
-      "page_sha256": "b0e0ac03cb674488a7ba4ffd92fa8d8ba9e8908cc187eb9cdb7762cc1a24e084",
+      "page_sha256": "69d1914a0dcea94433a000e573a3257cb2b448222533509107cc299c73a8947d",
       "citation_tags": {
         "citation_title": [
           "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer"
@@ -9174,7 +9174,7 @@
       "title": "The Witness Register: Co-Registration Without Aggregation",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026WitnessRegisterCoRegistration200.html",
-      "page_sha256": "c867caba0ff27d7addf9b745531cac6ff84ecb99631dd8b83bb5d79a0be9fe74",
+      "page_sha256": "0b6332e0cbab275df5b861c7b415bcef90c5baede28d3ebbd9ebf7e9d0dbe96b",
       "citation_tags": {
         "citation_title": [
           "The Witness Register: Co-Registration Without Aggregation"
@@ -9218,7 +9218,7 @@
       "title": "The Line Set: Holding Instruments Apart",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026LineSetHoldingInstruments201.html",
-      "page_sha256": "55c578776af276e2b930f6b70b2fde16bd90c5043ed47c811eae3f05f307d12a",
+      "page_sha256": "6042f11381956e2b77955adb47289e2815757a8584484b1749652c788cd0e3bf",
       "citation_tags": {
         "citation_title": [
           "The Line Set: Holding Instruments Apart"
@@ -9263,7 +9263,7 @@
       "title": "White Line: A Typed Ledger for the Edge of the Claim",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026WhiteLineTypedLedger202.html",
-      "page_sha256": "656a4c5cf032fcbd365b2000d56a0e2568a3682bc6c8f54933147a1f823303d5",
+      "page_sha256": "2a515d34d90f9c9897bd09a357da59f957e1435f08a844aaea91ec171fa7e993",
       "citation_tags": {
         "citation_title": [
           "White Line: A Typed Ledger for the Edge of the Claim"
@@ -9352,7 +9352,7 @@
       "title": "Golden Line: Toward What Matters",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026GoldenLineTowardWhat204.html",
-      "page_sha256": "2c9a3e27559b53b8304d97ad70cd5ee5e718b347b02f7ad40006627cd0f71857",
+      "page_sha256": "eb9f5ec6c329e856947886656ddf77aaa5062495da812522e67a838a7fa3ba7f",
       "citation_tags": {
         "citation_title": [
           "Golden Line: Toward What Matters"
@@ -9441,7 +9441,7 @@
       "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026CodomyrmexArtificialEcologyAgentic206.html",
-      "page_sha256": "97c4da63604f8d92abf7b320b9af09742740fce50a822522b027223edb79dc4f",
+      "page_sha256": "57de830aadc183881b77d5794bdd35b7f36eeea6d3468fa652f327428b18b650",
       "citation_tags": {
         "citation_title": [
           "Codomyrmex: An Artificial Ecology for Agentic Software Development"
@@ -9486,7 +9486,7 @@
       "title": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026THALIATypedHarnessAnalytical207.html",
-      "page_sha256": "9dfbd5d5d458d95192467be71ccc5623b432974b99670468b649b68ab972e94e",
+      "page_sha256": "0b2a56e6aa7f212b76483500b57154efb815da6de9015a1707063a57e4aa73dd",
       "citation_tags": {
         "citation_title": [
           "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture"
@@ -9531,7 +9531,7 @@
       "title": "PROJECT BOND — The Special-Agent Operations Compendium",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026PROJECTBONDSpecialAgent208.html",
-      "page_sha256": "f21cd9a2050b9f59336e4c8b889eea1b05795b0572a699f566468fcfb1affc77",
+      "page_sha256": "8158f7e5b99bce634aa1169f188f4be703b10cbb6ec4a5182c3a509cfea8f7a8",
       "citation_tags": {
         "citation_title": [
           "PROJECT BOND — The Special-Agent Operations Compendium"
@@ -9714,7 +9714,7 @@
       "title": "docxplus — the Intelligent Document Container",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026DocxplusIntelligentDocumentContainer212.html",
-      "page_sha256": "406270ad9bc3683ad7fa8c6ff9230dd7ac3f1adb38fd48ed62477b5d7cb8187d",
+      "page_sha256": "7f069023be9d87e9015e67dde14da1fb1cf941c4ea52c78daeaf43bf60404d12",
       "citation_tags": {
         "citation_title": [
           "docxplus — the Intelligent Document Container"
@@ -9890,7 +9890,7 @@
       "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html",
-      "page_sha256": "64a25b0f8222e13817df6f064914ac44574ead253c4cde85abdad1d09bb3874e",
+      "page_sha256": "2ba2af7c6399085c71837fd961ed3bf356411f5b290f400a49de305fefd12a7b",
       "citation_tags": {
         "citation_title": [
           "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation"
@@ -9934,7 +9934,7 @@
       "title": "FractiSkills: One Portable Agent Skill per Page",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026FractiSkillsOnePortableAgent217.html",
-      "page_sha256": "08268cd8e0f005432388c045e132c9c09d0e0bcc59bfc3a846f4d354f479c5f4",
+      "page_sha256": "2118667924fd4ad0ea38a032904aa7f1c2521128970e02b69710250bec74bedc",
       "citation_tags": {
         "citation_title": [
           "FractiSkills: One Portable Agent Skill per Page"
@@ -9978,7 +9978,7 @@
       "title": "Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026AgenticSecurityOperatingSystems218.html",
-      "page_sha256": "8e21e6188a0128853c5798fde6669c973f2e21a5968cdbb405b21b57a88d499a",
+      "page_sha256": "04139a8ae0c693590f4dcba7655f407b7132459979e3ef4158c0cf6919bb52f5",
       "citation_tags": {
         "citation_title": [
           "Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security"
@@ -10022,7 +10022,7 @@
       "title": "daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026JevPracticeComposablePython219.html",
-      "page_sha256": "8237cd8f56a7f33f75eb65078822ba6a7794a43a5f14be1d10da2bd9b8d01cc1",
+      "page_sha256": "c67ae085a1970d5ee34bbc164abbcada2609c5a11a7ed17ac525ff1aae88c6f3",
       "citation_tags": {
         "citation_title": [
           "daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation"
@@ -10066,7 +10066,7 @@
       "title": "Green Line: a capacity-under-development instrument",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026GreenLineCapacityUnder220.html",
-      "page_sha256": "1d9580f1bcf93785f9232205521bd80b676db9aa925bbc25126fda76c49add0d",
+      "page_sha256": "289addad5b23d0254f23d43d9f7593aa5f60abf9d4568deb6dee19bf25106726",
       "citation_tags": {
         "citation_title": [
           "Green Line: a capacity-under-development instrument"
@@ -10198,7 +10198,7 @@
       "title": "The Silver Line: A Memory-and-Succession Instrument",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026SilverLineMemorySuccession223.html",
-      "page_sha256": "3f1db9f38bc3193c8261537407b0bb608885d4f5668a879887f1acc235a7cba3",
+      "page_sha256": "a071b0441dbebec90cfdd5445e5da27c037068aae4d234a3d907ed7ec09952d8",
       "citation_tags": {
         "citation_title": [
           "The Silver Line: A Memory-and-Succession Instrument"
@@ -10338,7 +10338,7 @@
       "title": "antropy: native multidimensional entropy and configurable complexity analysis",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026AntropyNativeMultidimensionalEntropy226.html",
-      "page_sha256": "d5fa1187ae50a8f4584d0d2a747cabc39a95d78a4960306a23048752e7661aa0",
+      "page_sha256": "2fc3059c2866e8eb8a329d2b27fed077df94435118d9466d059e30367d28067c",
       "citation_tags": {
         "citation_title": [
           "antropy: native multidimensional entropy and configurable complexity analysis"
@@ -10427,7 +10427,7 @@
       "title": "Active Assembly Theory and Practice",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ActiveAssemblyTheoryPractice228.html",
-      "page_sha256": "b0614bca92de1a543f807763b48dc26e523fc7e118f675b6979653a51f28f93f",
+      "page_sha256": "2b6dfc78f813182b2072fb4fe7ead7d5496363146d41bb250f86ec51733b699b",
       "citation_tags": {
         "citation_title": [
           "Active Assembly Theory and Practice"
@@ -10459,6 +10459,105 @@
       "blockers": [
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
+      ],
+      "unverified_requirements": [
+        "searchable_pdf",
+        "scholarly_content",
+        "complete_author_written_abstract_or_full_text",
+        "actual_scholar_indexing"
+      ]
+    },
+    {
+      "citation_key": "Friedman2026ThanksNothingGratitudeModel229",
+      "title": "Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness",
+      "type": "Paper",
+      "abstract_url": "https://danielarifriedman.com/works/Friedman2026ThanksNothingGratitudeModel229.html",
+      "page_sha256": "8507df2f71dca664e182d12107abcc25a3b1d47e5aad749c06a8f4566c714119",
+      "citation_tags": {
+        "citation_title": [
+          "Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness"
+        ],
+        "citation_publication_date": [
+          "2026/10/22"
+        ],
+        "citation_author": [
+          "Daniel Ari Friedman"
+        ],
+        "citation_doi": [
+          "10.5281/zenodo.23402516"
+        ],
+        "citation_pdf_url": [
+          "https://danielarifriedman.com/papers/2026_ThanksNothing/thanks-for-nothing-v0.11.0-manuscript.pdf"
+        ]
+      },
+      "primary_pdf": {
+        "path": "papers/2026_ThanksNothing/thanks-for-nothing-v0.11.0-manuscript.pdf",
+        "url": "https://danielarifriedman.com/papers/2026_ThanksNothing/thanks-for-nothing-v0.11.0-manuscript.pdf",
+        "selection_basis": "extracted-text source",
+        "bytes": 19287664,
+        "sha256": "f0b749cae68cce7ce0917aca4243097dba81ef6f6972e57140de96b207a075a2",
+        "within_byte_limit": false,
+        "same_directory_as_abstract": false
+      },
+      "selection_issue": "",
+      "local_status": "blocked",
+      "blockers": [
+        "pdf_directory_differs_from_abstract",
+        "pdf_exceeds_byte_limit"
+      ],
+      "unverified_requirements": [
+        "searchable_pdf",
+        "scholarly_content",
+        "complete_author_written_abstract_or_full_text",
+        "actual_scholar_indexing"
+      ]
+    },
+    {
+      "citation_key": "Friedman2026ObserversWhoReadTheir230",
+      "title": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+      "type": "Paper",
+      "abstract_url": "https://danielarifriedman.com/works/Friedman2026ObserversWhoReadTheir230.html",
+      "page_sha256": "54902dfd522ef5f6dd6fc5d7c25ae0b1867f7fd8fde41f3736d1cd55460ab90d",
+      "citation_tags": {
+        "citation_title": [
+          "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics"
+        ],
+        "citation_publication_date": [
+          "2026"
+        ],
+        "citation_author": [
+          "Bernhard Mueller",
+          "Mario Poneder",
+          "Alexander Osika",
+          "Kai Xue",
+          "Ben Cassie",
+          "Peter Nguyen",
+          "Jinwook Kim",
+          "David Matscheko",
+          "Daniel Ari Friedman",
+          "Jonathan Hill",
+          "William T. Glynn",
+          "Maarten Antonie Visser",
+          "Kale Arnav Anirudha",
+          "Brieuc de La Fournière"
+        ],
+        "citation_pdf_url": [
+          "https://danielarifriedman.com/papers/2026_ObserversReadUniverse/ObserversReadUniverse_r2052.pdf"
+        ]
+      },
+      "primary_pdf": {
+        "path": "papers/2026_ObserversReadUniverse/ObserversReadUniverse_r2052.pdf",
+        "url": "https://danielarifriedman.com/papers/2026_ObserversReadUniverse/ObserversReadUniverse_r2052.pdf",
+        "selection_basis": "declared primary",
+        "bytes": 345225,
+        "sha256": "e23da212840627f16e10ac05f7538eab10556702ceda8a404f8c32359e89b737",
+        "within_byte_limit": true,
+        "same_directory_as_abstract": false
+      },
+      "selection_issue": "",
+      "local_status": "blocked",
+      "blockers": [
+        "pdf_directory_differs_from_abstract"
       ],
       "unverified_requirements": [
         "searchable_pdf",
