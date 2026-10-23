@@ -29,6 +29,16 @@ lint = [
     "ruff==0.17.1",
 ]
 
+[tool.pytest.ini_options]
+testpaths = ["code/tests"]
+addopts = "--strict-markers --strict-config -ra"
+junit_family = "xunit1"  # Preserve Lighthouse's per-page record_property diagnostics.
+markers = [
+    "browser: real Chromium interaction or measurement; requires the browser-qa extra and installed Chromium",
+    "lighthouse: real performance measurements; run serially apart from interaction workers",
+    "manuscript_render: pinned native multi-format rendering; requires explicit template inputs and the documented toolchain",
+]
+
 [tool.ruff]
 # Site data, the built Pages projection, and the virtualenv are not sources.
 extend-exclude = [".venv", "_site", "reports"]

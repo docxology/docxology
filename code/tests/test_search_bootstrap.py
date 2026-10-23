@@ -10,13 +10,14 @@ from pathlib import Path
 import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
-from rendered_site_fixture import REPO_ROOT, serve_site, skip_without_playwright, stop_server  # noqa: E402
+from rendered_site_fixture import REPO_ROOT, serve_site, stop_server  # noqa: E402
+
+pytestmark = pytest.mark.browser
 
 
-@pytest.fixture
-def bootstrap_site(tmp_path):
-    skip_without_playwright()
-    site = tmp_path / "site"
+@pytest.fixture(scope="module")
+def bootstrap_site(tmp_path_factory):
+    site = tmp_path_factory.mktemp("search-bootstrap") / "site"
     site.mkdir()
     shutil.copytree(REPO_ROOT / "js", site / "js")
     shutil.copy2(REPO_ROOT / "style.css", site / "style.css")

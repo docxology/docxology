@@ -24,7 +24,7 @@ def test_pages_deploy_waits_for_the_authoritative_validation_job():
     assert "uv run python3 code/orchestrators/validate_repo.py" in validate_job
     # -n auto parallelises across cores; --dist loadfile keeps every test in a
     # file on one worker, so module-level caches and fixtures behave as written.
-    assert "uv run python3 -m pytest code/tests -q -n auto --dist loadfile" in validate_job
+    assert 'uv run python3 -m pytest code/tests -q -m "not browser and not manuscript_render" -n auto --dist loadfile' in validate_job
     # The lint gate is configured in pyproject.toml ([tool.ruff.lint]) rather
     # than pinned to one rule on the command line, so CI and a local
     # `ruff check code` enforce exactly the same set.
@@ -70,13 +70,13 @@ def test_publication_and_validation_share_required_browser_acceptance():
     assert "ref: ${{ github.event.pull_request.head.sha || github.sha }}" in validation
     assert "ref: ${{ github.event.pull_request.head.sha || github.sha }}" in reusable
     assert "workflow_call:" in reusable
-    assert "DOCXOLOGY_REQUIRE_BROWSER_QA: \"1\"" in reusable
     assert "uv sync --extra browser-qa" in reusable
     assert "playwright install --with-deps chromium" in reusable
     assert "lighthouse@13.4.1" in reusable
-    for test_file in ("test_lighthouse_budgets.py", "test_service_worker.py",
-                      "test_rendered_frontend.py", "test_rendered_progressive_enhancement.py"):
-        assert test_file in reusable
+    assert '-m "browser and not lighthouse" -n 2 --dist loadfile' in reusable
+    assert 'pytest code/tests -q -m lighthouse' in reusable
+    assert 'test_rendered_frontend.py' not in reusable
+    assert '-m "not browser and not manuscript_render"' in validation
 
 
 def test_live_verification_binds_triggering_candidate_and_retains_failed_receipt():

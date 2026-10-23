@@ -18,7 +18,9 @@ from urllib.parse import urlsplit
 import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
-from rendered_site_fixture import REPO_ROOT, skip_without_playwright, stop_server, unavailable_browser_capability  # noqa: E402
+from rendered_site_fixture import REPO_ROOT, stop_server, unavailable_browser_capability  # noqa: E402
+
+pytestmark = pytest.mark.browser
 
 WORKER_SOURCE = (REPO_ROOT / "sw.js").read_text(encoding="utf-8")
 SHELL_ASSETS = re.findall(r"'([^']+)'", re.search(r"const STATIC_ASSETS = \[(.*?)\];", WORKER_SOURCE, re.S).group(1))
@@ -115,7 +117,6 @@ def update_worker(page):
 
 
 def test_worker_offline_fallback_error_poisoning_and_bounded_cache(worker_server):
-    skip_without_playwright()
     from playwright.sync_api import sync_playwright
 
     base, routes, requested = worker_server
@@ -179,7 +180,6 @@ def test_worker_offline_fallback_error_poisoning_and_bounded_cache(worker_server
 
 
 def test_worker_updates_returning_visitors_and_preserves_prior_install_on_failure(worker_server):
-    skip_without_playwright()
     from playwright.sync_api import sync_playwright
 
     base, routes, _ = worker_server
@@ -248,7 +248,6 @@ def test_worker_updates_returning_visitors_and_preserves_prior_install_on_failur
 
 
 def test_worker_deadline_covers_delayed_headers_and_slow_body(worker_server):
-    skip_without_playwright()
     from playwright.sync_api import sync_playwright
 
     base, routes, _ = worker_server

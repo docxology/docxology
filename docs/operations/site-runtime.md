@@ -161,16 +161,9 @@ Run the focused acceptance checks with the optional browser runtime installed:
 ```bash
 uv sync --extra browser-qa
 uv run playwright install chromium
-uv run --extra browser-qa python3 -m pytest \
-  code/tests/test_service_worker.py \
-  code/tests/test_rendered_frontend.py \
-  code/tests/test_rendered_progressive_enhancement.py \
-  code/tests/test_home_landing.py \
-  code/tests/test_homepage_performance.py \
-  code/tests/test_search_bootstrap.py \
-  code/tests/test_art_gallery_progressive.py \
-  code/tests/test_publications_startup.py \
-  code/tests/test_accessibility_refinements.py -q
+uv run --extra browser-qa python3 -m pytest code/tests -q -m "browser and not lighthouse" -n 2 --dist loadfile
+# Install lighthouse@13.4.1 on PATH before this separate, serial measurement.
+uv run --extra browser-qa python3 -m pytest code/tests -q -m lighthouse
 uv run --extra browser-qa python3 code/orchestrators/browser_qa.py
 uv run --extra browser-qa python3 code/orchestrators/browser_qa.py --check
 ```
@@ -187,11 +180,14 @@ catalog ID across zoom levels, dense same-day groups, actual target geometry,
 contrast, dialog focus, mobile year jumps, UTC date boundaries, forced colors,
 reduced motion, and static index access.
 
-The hosted browser job sets `DOCXOLOGY_REQUIRE_BROWSER_QA=1`; missing Chromium,
-Playwright, loopback capability, or Lighthouse fails that mandatory job. Local
-optional-tool absence produces an explicit skip. A present tool that fails, or
-a Lighthouse report missing a required finite score, fails in both contexts.
-The npx fallback uses the hosted Lighthouse version, **13.4.1**.
+Every selected browser test requires Chromium, Playwright, and loopback
+capability locally and in CI. Missing prerequisites fail; choose the explicit
+core marker expression in [development.md](development.md) for a smaller run.
+Chromium launch is checked once per worker, while tests keep isolated contexts.
+Lighthouse requires the installed exact version **13.4.1**; tests never invoke
+a package downloader. A failed tool or report missing a required finite score
+fails the run. CI discovers browser tests by marker rather than a filename list
+and runs Lighthouse after the interaction workers have finished.
 
 Rendered tests and the Lighthouse ratchet serve the site copy gzip-compressed,
 like GitHub Pages (`serve_site(..., compress=False)` gives the identity
@@ -206,6 +202,11 @@ CI establishes the enforced floors, not achievement of all aspirational scores.
 `DOCXOLOGY_LIGHTHOUSE_REPORT_DIR` retains each JSON run; JUnit properties record
 the per-page scores and aggregation. Keep these diagnostics with the hosted QA
 artifacts, and use measured results before ratcheting budgets.
+
+The score gate disables Lighthouse's optional full-page screenshot artifact.
+Every lane page and category audit still runs with the same thresholds and
+variance policy; this avoids rasterizing long catalogs for an unused diagnostic.
+Screenshot and human visual-review evidence remain separate checks.
 
 Local tests do not establish live deployment acceptance. Follow
 [`live-verification.md`](live-verification.md) and

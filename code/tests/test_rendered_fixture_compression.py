@@ -4,8 +4,8 @@ Lighthouse and the rendered browser suite measure the fixture, so a copy served
 without compression scores far below the production site (art 84 vs 99-100,
 publications 76-85 vs 100). These tests drive the real request handler through
 a fake connection: no socket, browser or Playwright is needed, so they run in
-every environment. The loopback tests go through ``serve_site`` and skip
-through the shared capability helper when binding is not permitted.
+every environment. The loopback tests go through ``serve_site`` and fail
+with the missing capability when binding is not permitted.
 """
 from __future__ import annotations
 
@@ -433,7 +433,7 @@ def test_gzip_parity_reports_a_missing_asset_instead_of_raising_http_error(site)
 
 
 def test_gzip_parity_over_a_real_socket_passes_and_fails_with_messages(site):
-    base_url, httpd = fixture.serve_site(site)  # skips when loopback bind is denied
+    base_url, httpd = fixture.serve_site(site)
     try:
         gate.assert_gzip_parity(base_url)
         (site / "js" / "interactive.js").unlink()
@@ -450,7 +450,7 @@ def test_gzip_parity_over_a_real_socket_passes_and_fails_with_messages(site):
 
 
 def test_serve_site_negotiates_gzip_over_a_real_socket(site):
-    base_url, httpd = fixture.serve_site(site)  # skips when loopback bind is denied
+    base_url, httpd = fixture.serve_site(site)
     try:
         raw = (site / "style.css").read_bytes()
         request = urllib.request.Request(f"{base_url}/style.css", headers=GZIP)

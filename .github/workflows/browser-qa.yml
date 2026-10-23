@@ -37,29 +37,16 @@ jobs:
       - name: Install lighthouse
         run: npm install -g lighthouse@13.4.1
 
-      - name: Rendered browser QA (nav, art grid, dropdown, axe, lighthouse)
+      # Markers are collected from the tests; new browser tests cannot be
+      # omitted by a stale hand-maintained list of filenames.
+      - name: Rendered browser interactions
+        run: uv run --extra browser-qa python3 -m pytest code/tests -q -m "browser and not lighthouse" -n 2 --dist loadfile
+
+      # Keep measurement away from interaction workers to avoid CPU contention.
+      - name: Lighthouse performance measurements
         env:
-          DOCXOLOGY_REQUIRE_BROWSER_QA: "1"
           DOCXOLOGY_LIGHTHOUSE_REPORT_DIR: /tmp/lighthouse-reports
-        run: |
-          uv run python3 -m pytest \
-            code/tests/test_rendered_nav.py \
-            code/tests/test_rendered_art_grid.py \
-            code/tests/test_nav_more_dropdown.py \
-            code/tests/test_axe_smoke.py \
-            code/tests/test_rendered_work_pages.py \
-            code/tests/test_rendered_frontend.py \
-            code/tests/test_rendered_progressive_enhancement.py \
-            code/tests/test_home_landing.py \
-            code/tests/test_homepage_performance.py \
-            code/tests/test_accessibility_refinements.py \
-            code/tests/test_art_gallery_progressive.py \
-            code/tests/test_search_bootstrap.py \
-            code/tests/test_publications_startup.py \
-            code/tests/test_early_navigation.py \
-            code/tests/test_service_worker.py \
-            code/tests/test_lighthouse_budgets.py \
-            -q
+        run: uv run --extra browser-qa python3 -m pytest code/tests -q -m lighthouse
 
       - name: Retain Lighthouse diagnostics
         if: always()

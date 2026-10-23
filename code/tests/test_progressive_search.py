@@ -14,7 +14,7 @@ JS = Path(__file__).resolve().parents[2] / "js" / "search-utils.js"
 def run_loader(scenario: str) -> None:
     node = shutil.which("node")
     if node is None:
-        pytest.skip("node interpreter not available")
+        pytest.fail("Selected JavaScript contract requires the node interpreter on PATH")
     program = r"""
 const assert = require('node:assert/strict');
 const vm = require('node:vm');

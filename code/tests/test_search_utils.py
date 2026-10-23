@@ -20,7 +20,7 @@ JS = Path(__file__).resolve().parents[2] / "js" / "search-utils.js"
 def _node_path() -> str:
     node = shutil.which("node")
     if node is None:
-        pytest.skip("node interpreter not available")
+        pytest.fail("Selected JavaScript contract requires the node interpreter on PATH")
     return node
 
 

@@ -3,10 +3,14 @@ from __future__ import annotations
 
 import shutil
 import sys
+
+import pytest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
-from rendered_site_fixture import AXE_JS, REPO_ROOT, serve_site, skip_without_playwright, stop_server  # noqa: E402
+from rendered_site_fixture import AXE_JS, REPO_ROOT, serve_site, stop_server  # noqa: E402
+
+pytestmark = pytest.mark.browser
 
 WORK_PAGE = "works/Friedman2026FourfoldVisionWilliamBlake196.html"
 PAPER_PAGE = "papers/2026_FourfoldVision/index.html"
@@ -14,7 +18,6 @@ PDF = "papers/2026_FourfoldVision/blake_fourfold_synergetics_combined.pdf"
 
 
 def test_rendered_work_download_copy_and_accessible_mobile_layout(tmp_path):
-    skip_without_playwright()
     from playwright.sync_api import sync_playwright
 
     site = tmp_path / "site"

@@ -8,8 +8,8 @@ verbatim, and execute it with bash inside a tmp_path that mirrors the repository
 layout the script expects (`reports/...`), with `GITHUB_OUTPUT` pointed at a temp
 file exactly as the Actions runner does.
 
-Skipped, not failed, when bash or the coreutils/jq the script shells out to are
-unavailable (the CI runner and a developer macOS box both have them).
+Selected tests require bash and the coreutils/jq the real script shells out to.
+Missing tools fail with their names, rather than producing incomplete success.
 """
 
 from __future__ import annotations
@@ -32,10 +32,10 @@ WORKFLOW = REPO_ROOT / ".github" / "workflows" / "freshness.yml"
 # for a reason unrelated to the logic under test.
 REQUIRED_TOOLS = ("bash", "jq", "cmp", "diff", "sort", "tail", "printf")
 _MISSING_TOOLS = [tool for tool in REQUIRED_TOOLS if shutil.which(tool) is None]
-pytestmark = pytest.mark.skipif(
-    bool(_MISSING_TOOLS),
-    reason=f"freshness compare step needs {', '.join(REQUIRED_TOOLS)}; not on PATH: {', '.join(_MISSING_TOOLS)}",
-)
+@pytest.fixture(scope="module", autouse=True)
+def required_shell_tools():
+    assert not _MISSING_TOOLS, f"freshness compare step needs {', '.join(REQUIRED_TOOLS)}; not on PATH: {', '.join(_MISSING_TOOLS)}"
+
 
 LATEST_FACTS = "reports/public_source_snapshot_latest.facts.json"
 

@@ -88,7 +88,7 @@ changing behavior; a CLI override does not justify relaxing a repository gate.
 | Browser caching and transfer bounds | [`sw.js`](../../sw.js) | Version shell changes; preserve timeout/size/error contracts and exercise real browser cases |
 | Ordinary CI artifact budget | [`artifact_budget.py`](../../code/src/artifact_budget.py) | The declared budget is separate from the artifact builder's warning/hard ceilings; inspect the [artifact policy](github-pages-artifact.md) |
 | Report dating, discovery, and retention | [`report_paths.py`](../../code/src/report_paths.py), [retention runbook](report-retention.md) | Keep dated evidence distinct from evergreen docs; pruning is a separate reviewed operation |
-| Browser requirements | `DOCXOLOGY_REQUIRE_BROWSER_QA`, declared in [runtime guidance](site-runtime.md) | Set to `1` for required acceptance; missing tooling then fails rather than skipping |
+| Test selection and prerequisites | Registered markers in [`pyproject.toml`](../../pyproject.toml), runner policy in [`conftest.py`](../../code/tests/conftest.py) | Selected tests must execute; use `-m` for an explicit smaller suite; browser prerequisites are checked once per worker |
 | Lighthouse raw diagnostics | `DOCXOLOGY_LIGHTHOUSE_REPORT_DIR`, [Lighthouse tests](../../code/tests/test_lighthouse_budgets.py) | Point at a private temporary output directory; preserve scores and enforced floors separately from aspirational targets |
 | Candidate deployment binding | [`verify_live_site.py`](../../code/orchestrators/verify_live_site.py) | `--expected-commit` and `--deployment-run-id` bind fresh checks to a clean exact candidate; `--output` keeps the receipt outside source artifacts |
 | Repository manuscript | [`config.yaml`](../manuscript/config.yaml), [`SYNTAX.md`](../manuscript/SYNTAX.md) | Paths bind to this repository; local validation checks structure, citations, references, and figure files |
@@ -105,21 +105,43 @@ declared projections, inspect the diff, then validate the generated layer:
 
 ```bash
 uv run python3 code/orchestrators/regenerate_all.py --validate
-uv run python3 -m pytest code/tests -q
+uv run python3 -m pytest code/tests -q -m "not browser and not manuscript_render" -n auto --dist loadfile
 uv run --group lint ruff check code
 ```
 
-When test temporary directories sit below an enclosing Git repository, keep
-the configured external `TMPDIR` as the Git discovery boundary for fixtures:
+The command above explicitly selects the core suite. Deselected browser and
+native-render tests are outside that command's evidence. Default pytest
+selection includes **every test** and requires all declared runtimes. Skips
+during collection, fixture setup, or execution fail the run, including reports
+from parallel workers. Unknown markers and invalid pytest configuration fail.
+
+Install the full environment and provide the pinned template inputs from the
+[manuscript rendering guide](../manuscript/README.md). Install Lighthouse
+13.4.1 on `PATH` as a separate setup step; tests never download it. For a full
+run with parallel independent tests and uncontended performance measurements:
 
 ```bash
-export GIT_CEILING_DIRECTORIES="${TMPDIR%/}${GIT_CEILING_DIRECTORIES:+:${GIT_CEILING_DIRECTORIES}}"
+uv sync --locked --all-extras --group lint
+uv run --no-sync playwright install chromium
+# Set DOCXOLOGY_TEMPLATE_ROOT and DOCXOLOGY_TEMPLATE_PYTHON as documented.
+uv run --no-sync python3 -m pytest code/tests -q -m "not lighthouse" -n 4 --dist loadfile
+uv run --no-sync python3 -m pytest code/tests -q -m lighthouse
 ```
 
-This prevents fixtures intended to have no repository from inheriting the
-parent repository. Repositories explicitly initialized inside a fixture remain
-discoverable. Keep the external-volume `TMPDIR` and cache bindings from the
-root operating instructions.
+These two marker selections are disjoint and cover the complete collection.
+Alternatively, `uv run --all-extras python3 -m pytest code/tests -q` selects
+everything serially. Browser tests retain fresh contexts and mutable site
+copies. CI runs the core suite in parallel, browser interactions on two workers,
+then Lighthouse serially. The native manuscript integration has explicit
+external toolchain inputs and is exercised in the full local command; the
+ordinary hosted site jobs explicitly deselect it.
+
+The session fixture automatically bounds Git discovery at each worker's
+temporary root. Non-repository fixtures cannot inherit the SSD manager repo;
+repositories initialized inside a fixture remain discoverable. Keep external
+`TMPDIR`, `UV_CACHE_DIR`, and `PLAYWRIGHT_BROWSERS_PATH` bindings on GitVault.
+After installing the full environment, `UV_NO_SYNC=1` preserves its extras
+through a `settle.py --tier full` run; its pytest step selects everything.
 
 Regeneration writes checked-in artifacts; `--list` previews the plan without
 running it. Publication requires the clean payload/control-tail sequence in

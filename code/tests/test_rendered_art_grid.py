@@ -3,11 +3,15 @@
 from __future__ import annotations
 
 import sys
+
+import pytest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 
 from rendered_site_fixture import serve_copy, stop_server  # noqa: E402
+
+pytestmark = pytest.mark.browser
 
 CHECK_JS = """
 () => {
@@ -34,10 +38,7 @@ CHECK_JS = """
 
 
 def test_rendered_art_grid_hydrated(tmp_path: Path) -> None:
-    from rendered_site_fixture import skip_without_playwright
-
-    skip_without_playwright()
-    from playwright.sync_api import sync_playwright  # noqa: E402  (after skip guard)
+    from playwright.sync_api import sync_playwright
     base_url, httpd = serve_copy(tmp_path)
     try:
         with sync_playwright() as p:

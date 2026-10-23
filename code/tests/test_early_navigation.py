@@ -10,14 +10,15 @@ from urllib.parse import urlsplit
 import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
-from rendered_site_fixture import REPO_ROOT, serve_site, skip_without_playwright, stop_server  # noqa: E402
+from rendered_site_fixture import REPO_ROOT, serve_site, stop_server  # noqa: E402
+
+pytestmark = pytest.mark.browser
 
 
-@pytest.fixture
-def navigation_site(tmp_path):
+@pytest.fixture(scope="module")
+def navigation_site(tmp_path_factory):
     """Serve real generated lane bytes with their actual local dependencies."""
-    skip_without_playwright()
-    site = tmp_path / "site"
+    site = tmp_path_factory.mktemp("early-navigation") / "site"
     site.mkdir()
     for name in ("index.html", "publications.html", "style.css", "favicon.ico", "manifest.json"):
         shutil.copy2(REPO_ROOT / name, site / name)

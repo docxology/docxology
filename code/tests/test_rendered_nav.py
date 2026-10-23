@@ -1,19 +1,23 @@
 """Rendered nav reachability: no nav link extends past the viewport.
 
 Serves a COPY of the built site (never the live checkout) and probes nav
-anchors at 900/1024/1152/1280/1440/1920. Skips cleanly when playwright or
-chromium is unavailable locally; CI installs them.
+anchors at 900/1024/1152/1280/1440/1920. Selected tests require Playwright
+and launchable Chromium locally and in CI.
 """
 
 from __future__ import annotations
 
 import sys
+
+import pytest
 from pathlib import Path
 
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 
-from rendered_site_fixture import LANE_PAGES, NAV_VIEWPORTS, serve_copy, skip_without_playwright, stop_server  # noqa: E402
+from rendered_site_fixture import LANE_PAGES, NAV_VIEWPORTS, serve_copy, stop_server  # noqa: E402
+
+pytestmark = pytest.mark.browser
 
 PROBE_JS = """
 () => {
@@ -37,7 +41,6 @@ PROBE_JS = """
 
 
 def test_rendered_nav_no_horizontal_overflow(tmp_path: Path) -> None:
-    skip_without_playwright()
     from playwright.sync_api import sync_playwright
 
     base_url, httpd = serve_copy(tmp_path)

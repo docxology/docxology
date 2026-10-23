@@ -9,15 +9,18 @@ from __future__ import annotations
 import json
 import shutil
 import sys
+
+import pytest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 
-from rendered_site_fixture import AXE_JS, LANE_PAGES, serve_copy, skip_without_playwright, stop_server  # noqa: E402
+from rendered_site_fixture import AXE_JS, LANE_PAGES, serve_copy, stop_server  # noqa: E402
+
+pytestmark = pytest.mark.browser
 
 
 def test_axe_zero_serious_critical(tmp_path: Path) -> None:
-    skip_without_playwright()
     from playwright.sync_api import sync_playwright
 
     assert AXE_JS.exists(), "vendored axe.min.js missing"

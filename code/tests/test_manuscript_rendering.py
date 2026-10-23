@@ -136,9 +136,12 @@ def test_failure_during_render_never_publishes_misbound_outputs(tmp_path, monkey
     assert not list(tmp_path.glob('.docxology-render-*'))
 
 
-@pytest.mark.skipif(os.environ.get("DOCXOLOGY_TEST_RENDER") != "1", reason="set DOCXOLOGY_TEST_RENDER=1 for the pinned offline render integration")
+@pytest.mark.manuscript_render
 def test_real_four_format_render_and_receipt(tmp_path):
     root = Path(__file__).resolve().parents[2]
+    for name in ("DOCXOLOGY_TEMPLATE_ROOT", "DOCXOLOGY_TEMPLATE_PYTHON"):
+        if not os.environ.get(name):
+            pytest.fail(f"{name} is required for selected manuscript_render tests; see docs/manuscript/README.md")
     receipt = rendering.render_manuscript(root, tmp_path / "review", template_root=Path(os.environ["DOCXOLOGY_TEMPLATE_ROOT"]), template_python=Path(os.environ["DOCXOLOGY_TEMPLATE_PYTHON"]))
     assert {item["format"] for item in receipt["artifacts"].values()} == {"html", "pdf", "epub", "slides", "cover", "figure"}
     assert receipt["bibliography_entries"] == 1

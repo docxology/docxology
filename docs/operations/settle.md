@@ -29,17 +29,23 @@ run stops at the first failure.
 | `full` | fast battery + `pytest code/tests -q` + `validate_repo.py` (standard, no `--release`) | minutes — standard validation runs the full local generation-check battery |
 | `release` | full battery + `validate_repo.py --release --strict-reports` | minutes (adds release-evidence checks; see below) |
 
-The full tier is the CI-equivalent one: it runs the same four checks as the
+The full tier runs the four check families used by the
 `validate` job of [`.github/workflows/validate.yml`](../../.github/workflows/validate.yml)
 — `validate_repo.py`, `pytest code/tests -q`, `ruff check code`, and the
 `code/src/artifact_budget.py` budget gate (settle orders the cheap floor
-first; CI lists `validate_repo` first, but the set is identical). The validate
+first; CI lists `validate_repo` first). Its default pytest selection now includes
+all tests: core, browser, Lighthouse, and native manuscript rendering. Install
+the full environment, expose pinned Lighthouse on `PATH`, and provide the
+external template inputs from [development.md](development.md) before running
+it. Set `UV_NO_SYNC=1` after setup to retain the installed extras through every
+step. Missing prerequisites and skipped selected tests fail the run. The validate
 job's separate generator-drift review step (`build_video_pages.py --check`,
 ~5.7s, plus `build_work_pages.py --check`) is belt-and-suspenders:
 `validate_repo.py` already runs both checks internally via its generation-plan
-no-write battery, so settle's full tier covers them; the rendered-browser
-`browser-tests` CI job is a separate job settle does not mirror. A green settle
-`full` therefore predicts a green `validate` job up to drift-sensitive changes.
+no-write battery, so settle's full tier covers them. Hosted site CI explicitly
+partitions core tests and required browser tests; its site jobs deselect the
+external native-render integration. Local full-suite evidence and hosted CI
+remain separate observations with different runtime and performance conditions.
 
 `routine` is the deliberate lighter contract for **control-only landings and
 clean-tree checks** ("is everything consistent right now?"): the fast floor

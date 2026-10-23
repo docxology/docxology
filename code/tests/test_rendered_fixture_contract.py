@@ -17,22 +17,22 @@ def test_missing_actual_chromium_executable_is_not_available(monkeypatch, tmp_pa
     @contextmanager
     def fake_playwright():
         yield SimpleNamespace(chromium=SimpleNamespace(executable_path=str(tmp_path / "missing-chromium")))
-    monkeypatch.setitem(sys.modules, "playwright.sync_api", SimpleNamespace(sync_playwright=fake_playwright))
+    monkeypatch.setitem(sys.modules, "playwright.sync_api", SimpleNamespace(sync_playwright=fake_playwright, Error=RuntimeError))
     monkeypatch.delenv("GITHUB_JOB", raising=False)
     monkeypatch.setenv("DOCXOLOGY_REQUIRE_BROWSER_QA", "1" if required else "0")
-    expected = pytest.fail.Exception if required else pytest.skip.Exception
+    expected = pytest.fail.Exception
     with pytest.raises(expected, match="chromium.*missing"):
-        fixture.skip_without_playwright()
+        fixture.require_playwright()
 
 
 @pytest.mark.parametrize("required", [False, True])
-def test_missing_playwright_is_explicit_skip_or_required_failure(monkeypatch, required):
+def test_missing_playwright_always_fails_selected_tests(monkeypatch, required):
     monkeypatch.setitem(sys.modules, "playwright.sync_api", None)
     monkeypatch.delenv("GITHUB_JOB", raising=False)
     monkeypatch.setenv("DOCXOLOGY_REQUIRE_BROWSER_QA", "1" if required else "0")
-    expected = pytest.fail.Exception if required else pytest.skip.Exception
+    expected = pytest.fail.Exception
     with pytest.raises(expected, match="playwright unavailable"):
-        fixture.skip_without_playwright()
+        fixture.require_playwright()
 
 
 def test_hosted_browser_job_is_mandatory_without_extra_flag(monkeypatch):

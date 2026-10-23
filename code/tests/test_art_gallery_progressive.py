@@ -17,12 +17,13 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
-from rendered_site_fixture import REPO_ROOT, serve_copy, skip_without_playwright, stop_server  # noqa: E402
+from rendered_site_fixture import REPO_ROOT, serve_copy, stop_server  # noqa: E402
+
+pytestmark = pytest.mark.browser
 
 
 @pytest.fixture(scope='module')
 def gallery_server(tmp_path_factory):
-    skip_without_playwright()
     base, server = serve_copy(tmp_path_factory.mktemp('progressive-gallery'))
     try:
         yield base

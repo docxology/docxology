@@ -11,12 +11,13 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 
-from rendered_site_fixture import AXE_JS, REPO_ROOT, serve_copy, skip_without_playwright, stop_server  # noqa: E402
+from rendered_site_fixture import AXE_JS, REPO_ROOT, serve_copy, stop_server  # noqa: E402
+
+pytestmark = pytest.mark.browser
 
 
 @pytest.fixture(scope="module")
 def accessibility_server(tmp_path_factory):
-    skip_without_playwright()
     base_url, server = serve_copy(tmp_path_factory.mktemp("accessibility"))
     shutil.copy2(AXE_JS, Path(server._directory) / "axe.min.js")
     try:

@@ -19,7 +19,7 @@ uv run python3 -m pytest code/tests -q
 
 Regeneration writes checked-in outputs. Standard validation includes cached evidence and freshness gates, so a failing gate must be diagnosed rather than treated as permission to rewrite its evidence. Source refreshes and clean payload/control-binder landing are documented in [evidence-refresh.md](../operations/evidence-refresh.md) and [settle.md](../operations/settle.md).
 
-For interactive changes, install the `browser-qa` extra and Chromium, then set `DOCXOLOGY_REQUIRE_BROWSER_QA=1` for required acceptance as documented in [site-runtime.md](../operations/site-runtime.md). Missing optional tooling in an ordinary local test run can produce skips; those skips do not establish browser behavior.
+For interactive changes, install the `browser-qa` extra and Chromium and select the browser marker as documented in [site-runtime.md](../operations/site-runtime.md). Selected tests require their declared tooling locally and in CI; a skipped selected test fails the run. Explicitly deselected tests remain outside that run's evidence. The complete collection also requires the pinned native rendering inputs in the [rendering guide](README.md).
 
 ## Candidate and evidence recording
 

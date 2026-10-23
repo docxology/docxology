@@ -24,7 +24,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 
-from rendered_site_fixture import LANE_PAGES, browser_qa_required, serve_copy, stop_server  # noqa: E402
+from rendered_site_fixture import LANE_PAGES, serve_copy, stop_server  # noqa: E402
 
 # Aspirational budgets (enforced once the integrator's fixes land):
 # performance>=85, accessibility>=95, seo>=95.
@@ -54,31 +54,30 @@ BASELINE = {
 
 
 def lighthouse_available() -> bool:
-    """True when lighthouse can run (PATH binary or npx-provisioned)."""
-    if shutil.which("lighthouse"):
-        return True
-    if not shutil.which("npx"):
+    """Probe the installed pinned binary without downloading during tests."""
+    executable = shutil.which("lighthouse")
+    if executable is None:
         return False
     try:
-        probe = subprocess.run(
-            ["npx", "--yes", f"lighthouse@{LIGHTHOUSE_VERSION}", "--version"],
-            capture_output=True,
-            text=True,
-            timeout=120,
-        )
+        result = subprocess.run([executable, "--version"], capture_output=True, text=True, timeout=10)
     except (OSError, subprocess.TimeoutExpired):
         return False
-    return probe.returncode == 0 and probe.stdout.strip().count(".") == 2
+    return result.returncode == 0 and result.stdout.strip() == LIGHTHOUSE_VERSION
 
 
 def run_lighthouse(base_url: str, path: str, tmp_path: Path) -> dict:
     """Run and retain one report; a tool/report failure is never a green skip."""
-    command = [shutil.which("lighthouse")] if shutil.which("lighthouse") else ["npx", "--yes", f"lighthouse@{LIGHTHOUSE_VERSION}"]
+    executable = shutil.which("lighthouse")
+    assert executable, f"Install lighthouse@{LIGHTHOUSE_VERSION} on PATH before measuring"
+    command = [executable]
     try:
         result = subprocess.run(
             command + [
                 f"{base_url}/{path}", "--output=json", "--quiet",
                 "--only-categories=performance,accessibility,seo",
+                # This artifact does not contribute to the category audits.
+                # Avoid rasterizing long catalog pages solely for diagnostics.
+                "--disable-full-page-screenshot",
                 "--chrome-flags=--headless=new --no-sandbox",
             ],
             capture_output=True, text=True, timeout=180,
@@ -174,20 +173,11 @@ def assert_gzip_parity(base_url: str, *, assets=PARITY_ASSETS, transport=None) -
     )
 
 
+@pytest.mark.browser
+@pytest.mark.lighthouse
 def test_lighthouse_budgets(tmp_path: Path, record_property) -> None:
     if not lighthouse_available():
-        if browser_qa_required():
-            pytest.fail("Lighthouse is required by the browser QA job but unavailable")
-        pytest.skip("lighthouse not installed (SKIP: tooling absent)")
-    from rendered_site_fixture import skip_without_playwright
-
-    try:
-        skip_without_playwright()
-    except pytest.skip.Exception as exc:
-        if browser_qa_required():
-            pytest.fail(f"Playwright is required by the browser QA job: {exc}")
-        raise
-    from playwright.sync_api import sync_playwright  # noqa: F401 - ensure chromium present
+        pytest.fail(f"Lighthouse {LIGHTHOUSE_VERSION} is required on PATH but unavailable or the wrong version")
 
     base_url, httpd = serve_copy(tmp_path)
     failures: list[str] = []

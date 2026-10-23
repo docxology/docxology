@@ -39,6 +39,7 @@ def test_complete_report_preserves_zero_scores():
     SimpleNamespace(returncode=0, stdout='{"runtimeError":{"code":"NO_FCP"}}', stderr=""),
 ])
 def test_lighthouse_runtime_and_report_failures_fail(tmp_path, monkeypatch, result):
+    monkeypatch.setattr(gate.shutil, "which", lambda name: "/installed/lighthouse")
     monkeypatch.setattr(gate.subprocess, "run", lambda *args, **kwargs: result)
     with pytest.raises(AssertionError):
         gate.run_lighthouse("http://127.0.0.1", "index.html", tmp_path)
@@ -47,6 +48,7 @@ def test_lighthouse_runtime_and_report_failures_fail(tmp_path, monkeypatch, resu
 def test_lighthouse_deadline_failure_fails(tmp_path, monkeypatch):
     def timeout(*args, **kwargs):
         raise subprocess.TimeoutExpired("lighthouse", 180)
+    monkeypatch.setattr(gate.shutil, "which", lambda name: "/installed/lighthouse")
     monkeypatch.setattr(gate.subprocess, "run", timeout)
     with pytest.raises(AssertionError, match="could not complete"):
         gate.run_lighthouse("http://127.0.0.1", "index.html", tmp_path)
@@ -59,14 +61,25 @@ def test_mandatory_browser_job_requires_lighthouse(tmp_path, monkeypatch):
         gate.test_lighthouse_budgets(tmp_path, lambda *args: None)
 
 
-def test_npx_probe_and_run_use_the_hosted_pinned_version(tmp_path, monkeypatch):
-    commands = []
-    monkeypatch.setattr(gate.shutil, "which", lambda name: "/fake/npx" if name == "npx" else None)
-    def run(command, **kwargs):
-        commands.append(command)
-        stdout = gate.LIGHTHOUSE_VERSION if "--version" in command else '{"categories":{}}'
-        return SimpleNamespace(returncode=0, stdout=stdout, stderr="")
-    monkeypatch.setattr(gate.subprocess, "run", run)
-    assert gate.lighthouse_available()
-    gate.run_lighthouse("http://127.0.0.1", "index.html", tmp_path)
-    assert all(command[:3] == ["npx", "--yes", "lighthouse@13.4.1"] for command in commands)
+@pytest.mark.parametrize("version, expected", [("13.4.1", True), ("13.4.0", False), ("14.0.0", False)])
+def test_installed_lighthouse_requires_exact_version(tmp_path, monkeypatch, version, expected):
+    executable = tmp_path / "lighthouse"
+    executable.write_text("#!/bin/sh\nprintf '%s\\n' '" + version + "'\n")
+    executable.chmod(0o755)
+    monkeypatch.setenv("PATH", str(tmp_path))
+    assert gate.lighthouse_available() is expected
+
+
+def test_absent_lighthouse_never_invokes_a_package_downloader(tmp_path, monkeypatch):
+    sentinel = tmp_path / "download-attempted"
+    executable = tmp_path / "npx"
+    executable.write_text('#!/bin/sh\n: > "$DOWNLOAD_SENTINEL"\nexit 1\n')
+    executable.chmod(0o755)
+    monkeypatch.setenv("PATH", str(tmp_path))
+    probe = tmp_path / "sentinel-probe"
+    monkeypatch.setenv("DOWNLOAD_SENTINEL", str(probe))
+    assert subprocess.run([str(executable)], check=False).returncode == 1
+    assert probe.is_file(), "The downloader sentinel must detect a real invocation"
+    monkeypatch.setenv("DOWNLOAD_SENTINEL", str(sentinel))
+    assert not gate.lighthouse_available()
+    assert not sentinel.exists()

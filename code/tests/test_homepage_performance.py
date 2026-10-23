@@ -8,12 +8,13 @@ from pathlib import Path
 import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
-from rendered_site_fixture import serve_copy, skip_without_playwright, stop_server  # noqa: E402
+from rendered_site_fixture import serve_copy, stop_server  # noqa: E402
+
+pytestmark = pytest.mark.browser
 
 
 @pytest.mark.parametrize("path", ["index.html", "publications.html"])
 def test_content_pages_avoid_eager_decorative_image_requests(tmp_path, path):
-    skip_without_playwright()
     from playwright.sync_api import sync_playwright
 
     base, server = serve_copy(tmp_path)
@@ -42,7 +43,6 @@ def test_content_pages_avoid_eager_decorative_image_requests(tmp_path, path):
 
 
 def test_optional_hero_canvas_is_static_under_reduced_motion_and_reacts_to_preference_changes(tmp_path):
-    skip_without_playwright()
     from playwright.sync_api import sync_playwright
 
     # The current homepage does not mount this optional effect. Exercise its

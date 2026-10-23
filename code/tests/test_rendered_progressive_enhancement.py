@@ -10,11 +10,12 @@ from urllib.parse import urlsplit
 import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
-from rendered_site_fixture import REPO_ROOT, ROOT_RUNTIME_FILES, serve_copy, skip_without_playwright, stop_server  # noqa: E402
+from rendered_site_fixture import REPO_ROOT, ROOT_RUNTIME_FILES, serve_copy, stop_server  # noqa: E402
+
+pytestmark = pytest.mark.browser
 
 
 def test_mobile_routes_remain_reachable_without_javascript_and_shortcuts_restore_focus(tmp_path):
-    skip_without_playwright()
     from playwright.sync_api import sync_playwright
 
     base, server = serve_copy(tmp_path)
@@ -56,7 +57,6 @@ def test_mobile_routes_remain_reachable_without_javascript_and_shortcuts_restore
 
 def test_actual_generated_search_exports_render_a_deferred_text_match(tmp_path):
     """Exercise the real search page/exports, beyond small synthetic fixtures."""
-    skip_without_playwright()
     from playwright.sync_api import sync_playwright
 
     core = json.loads((REPO_ROOT / "search-index-core.json").read_text(encoding="utf-8"))
@@ -126,7 +126,6 @@ def test_actual_generated_search_exports_render_a_deferred_text_match(tmp_path):
 @pytest.mark.parametrize("width", [320, 412])
 def test_search_reserves_loading_space_and_keeps_sparse_results_usable(tmp_path, width):
     """Late preview layout stays stable; delayed query core still settles honestly."""
-    skip_without_playwright()
     from playwright.sync_api import sync_playwright
 
     core = json.loads((REPO_ROOT / "search-index-core.json").read_text(encoding="utf-8"))

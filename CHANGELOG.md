@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-23 — Complete test selection and runtime isolation
+
+- Made skipped selected tests fail locally and in CI, with regression controls for collection, fixture, body, and parallel-worker skips.
+- Replaced browser filename lists with registered markers; parallelized interaction checks while keeping Lighthouse measurements serial and requiring its installed pinned version.
+- Shared immutable browser fixture servers, preserved fresh contexts and mutable-fixture isolation, and made temporary Git discovery boundaries automatic.
+- Included the native manuscript integration in default full selection and documented its explicit external toolchain inputs separately from the hosted site suites.
+
 ## 2026-10-23 — Publication and repository refresh
 
 - Indexed the co-authored preprint *Observers Who Read Their Universe into Existence*, with the supplied r2052 PDF and its hash, complete PDF author list, extracted text, and explicit source/physical-validation limits.

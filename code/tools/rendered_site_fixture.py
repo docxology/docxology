@@ -1,9 +1,9 @@
 """Shared helpers for rendered-site pytest tests.
 
 Serves a COPY of the built site (never the live checkout) over a local
-ephemeral port using http.server in a daemon thread. Browser tests pytest.skip
-cleanly when playwright, the chromium binary, or permission to bind a loopback
-socket is unavailable locally; CI has all three (validate.yml browser-tests job).
+ephemeral port using http.server in a daemon thread. Selected browser tests
+require Playwright, launchable Chromium, and a loopback socket. Missing
+prerequisites fail; marker selection makes smaller runs explicit.
 
 The copy is served gzip-compressed, like GitHub Pages: text types are
 compressed at level 5 (the zlib level whose output matches the Pages sizes for
@@ -26,6 +26,7 @@ import threading
 import urllib.parse
 from http import HTTPStatus
 from pathlib import Path
+from typing import Never
 
 import pytest
 
@@ -77,34 +78,24 @@ GZIP_LEVEL = 5
 _QVALUE = re.compile(r"(?:0(?:\.\d{0,3})?|1(?:\.0{0,3})?)")
 
 
-def browser_qa_required() -> bool:
-    return os.environ.get("DOCXOLOGY_REQUIRE_BROWSER_QA", "").lower() in {"1", "true"} or os.environ.get("GITHUB_JOB") == "browser-tests"
+def unavailable_browser_capability(reason: str) -> Never:
+    """A selected browser test must execute in both local and hosted runs."""
+    pytest.fail(f"Required browser QA capability unavailable: {reason}")
 
 
-def unavailable_browser_capability(reason: str) -> None:
-    """Missing local optional capabilities skip; mandatory hosted gates fail."""
-    if browser_qa_required():
-        pytest.fail(f"Required browser QA capability unavailable: {reason}")
-    pytest.skip(reason)
-
-
-def skip_without_playwright() -> None:
-    """Require an installed executable, failing closed in the hosted browser job."""
+def require_playwright() -> None:
+    """Prove the declared browser executable works through an API round trip."""
     try:
-        from playwright.sync_api import sync_playwright  # noqa: F401
-    except Exception as exc:  # pragma: no cover - local env without playwright
-        unavailable_browser_capability(f"playwright unavailable: {exc}")
+        from playwright.sync_api import Error, sync_playwright
+    except ImportError as exc:
+        unavailable_browser_capability(f"playwright unavailable: {exc}; run uv sync --extra browser-qa")
     try:
-        from playwright.sync_api import sync_playwright
-
-        with sync_playwright() as p:
-            if not p.chromium.executable_path or not Path(p.chromium.executable_path).is_file():
-                raise RuntimeError("chromium executable missing")
-            # Complete an actual API round trip before shutting down Playwright;
-            # path access alone does not prove the browser can launch.
-            browser = p.chromium.launch(headless=True)
+        with sync_playwright() as playwright:
+            if not Path(playwright.chromium.executable_path).is_file():
+                unavailable_browser_capability("chromium executable missing; run uv run --extra browser-qa playwright install chromium")
+            browser = playwright.chromium.launch(headless=True)
             browser.close()
-    except Exception as exc:  # pragma: no cover - chromium not installed
+    except (Error, OSError) as exc:
         unavailable_browser_capability(f"chromium unavailable: {exc}")
 
 
@@ -282,7 +273,7 @@ def stop_server(httpd: object) -> None:
 
 def page_and_server(tmp_path: Path):
     """Yield (page, base_url, httpd) for one playwright chromium page."""
-    skip_without_playwright()
+    require_playwright()
     from playwright.sync_api import sync_playwright
 
     base_url, httpd = serve_copy(tmp_path)

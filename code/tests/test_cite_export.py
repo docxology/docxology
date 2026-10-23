@@ -169,7 +169,7 @@ def test_citation_button_uses_the_batch_entry_without_another_read(monkeypatch, 
 def _copy_with_javascript(payload: str, *, secure_clipboard: bool) -> dict:
     node = shutil.which("node")
     if node is None:
-        pytest.skip("node interpreter not available")
+        pytest.fail("Selected JavaScript contract requires the node interpreter on PATH")
     # Execute the shipped click handler. The raw textContent below models the
     # inert script element; neither the DOM nor this harness decodes entities.
     program = r"""

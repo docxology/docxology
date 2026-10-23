@@ -637,8 +637,6 @@ def test_successor_observation_applies_to_the_live_pair(tmp_path: Path):
     live_receipt = (REPO_ROOT / "data" / "scholar-verification-receipt.json").read_bytes()
     live = json.loads(live_snapshot)
     successor = date.fromisoformat(live["as_of"]) + timedelta(days=1)
-    if successor > datetime.now(timezone.utc).date() + timedelta(days=1):
-        pytest.skip("the live snapshot is already as recent as the recorder allows")
     checkout = _checkout(tmp_path, snapshot_bytes=live_snapshot, receipt_bytes=live_receipt)
     assert validate_scholar_snapshot_receipt(tmp_path) == []
 
@@ -656,6 +654,11 @@ def test_successor_observation_applies_to_the_live_pair(tmp_path: Path):
         )
     )
 
+    if successor > datetime.now(timezone.utc).date() + timedelta(days=1):
+        assert result.returncode == 1, result.stderr
+        assert "in the future" in result.stderr
+        assert checkout.state() == (live_snapshot, live_receipt)
+        return
     assert result.returncode == 0, result.stderr
     updated = json.loads(checkout.snapshot.read_text(encoding="utf-8"))
     assert list(updated) == list(live)
@@ -666,8 +669,8 @@ def test_successor_observation_applies_to_the_live_pair(tmp_path: Path):
     assert checkout.sync_check().returncode == 0
 
 
-@pytest.mark.skipif(os.geteuid() == 0, reason="root ignores directory permissions")
 def test_an_unwritable_data_directory_is_refused_and_leaves_both_files_alone(tmp_path: Path):
+    assert os.geteuid() != 0, "Run permission-boundary tests as an unprivileged user; root bypasses chmod"
     checkout = _checkout(tmp_path)
     before = checkout.state()
     data_dir = checkout.snapshot.parent

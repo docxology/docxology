@@ -11,7 +11,9 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 
-from rendered_site_fixture import REPO_ROOT, serve_copy, skip_without_playwright, stop_server  # noqa: E402
+from rendered_site_fixture import REPO_ROOT, serve_copy, stop_server  # noqa: E402
+
+pytestmark = pytest.mark.browser
 
 
 CARD_HASHES = {
@@ -23,7 +25,6 @@ CARD_HASHES = {
 
 @pytest.fixture(scope="module")
 def homepage_server(tmp_path_factory):
-    skip_without_playwright()
     base_url, server = serve_copy(tmp_path_factory.mktemp("homepage"))
     try:
         yield base_url

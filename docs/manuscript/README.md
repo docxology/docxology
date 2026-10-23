@@ -91,12 +91,15 @@ linked third-party material retain their own rights.
 Run the real integration explicitly with the same template inputs:
 
 ```bash
-DOCXOLOGY_TEST_RENDER=1 DOCXOLOGY_TEMPLATE_ROOT=/path/to/template \
+DOCXOLOGY_TEMPLATE_ROOT=/path/to/template \
 DOCXOLOGY_TEMPLATE_PYTHON=/path/to/template-environment/bin/python \
-  uv run python3 -m pytest code/tests/test_manuscript_rendering.py -q
+  uv run --all-extras python3 -m pytest code/tests -q -m manuscript_render
 ```
 
-Ordinary tests skip the native integration. Successful rendering and assistant
+The default complete pytest collection includes this integration and fails if
+its explicit inputs are missing. The core and browser site CI commands
+explicitly deselect `manuscript_render`; they do not certify native rendering.
+Successful rendering and assistant
 layout inspection do not establish scientific validity, human approval, or
 publication readiness. Inspect each requested format before external release.
 
