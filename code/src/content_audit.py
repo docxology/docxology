@@ -5,7 +5,7 @@ import json
 import re
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import unquote, urljoin, urlsplit
+from urllib.parse import parse_qsl, unquote, urljoin, urlsplit
 
 from docxology_tools.content_citations import ContentCitations
 
@@ -72,6 +72,39 @@ def public_html_paths(root: Path) -> list[Path]:
     )
 
 
+def _valid_collection_share(fragment: str, known_keys: dict[str, dict]) -> bool:
+    """Recognize the bounded reading-list URL state, never arbitrary fragments.
+
+    Titles and raw fragments use the browser's UTF-16 length convention.
+    Published selections must resolve every key; a visitor's recoverable stale
+    list remains a separate browser-storage concern.
+    """
+    def browser_length(value: str) -> int:
+        return len(value.encode("utf-16-le", errors="surrogatepass")) // 2
+
+    if browser_length(fragment) + 1 > 100000:
+        return False
+    try:
+        pairs = parse_qsl(fragment, keep_blank_values=True, strict_parsing=True, max_num_fields=3)
+    except ValueError:
+        return False
+    if len(pairs) != 3 or {key for key, _ in pairs} != {"v", "title", "works"}:
+        return False
+    state = dict(pairs)
+    title = state["title"]
+    # ECMAScript trim includes U+FEFF and excludes Python-only whitespace such
+    # as U+0085. Keep this boundary equal to collections.js, not str.strip().
+    blank_title = re.fullmatch(r"[\u0009-\u000d\u0020\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]*", title)
+    if state["v"] != "1" or blank_title is not None or browser_length(title) > 100 or re.search(r"[\x00-\x1f]", title):
+        return False
+    keys = state["works"].split(",") if state["works"] else []
+    return (
+        len(keys) <= 500
+        and len(set(keys)) == len(keys)
+        and all(re.fullmatch(r"[A-Za-z][A-Za-z0-9_-]{0,180}", key) and key in known_keys for key in keys)
+    )
+
+
 def audit_content(root: Path, paths: list[Path], works: list[dict], *, published_paths: set[Path] | None = None) -> dict:
     catalog = ContentCitations(works)
     parsed = {path: ContentPage(path.read_text(encoding="utf-8")) for path in paths}
@@ -133,7 +166,11 @@ def audit_content(root: Path, paths: list[Path], works: list[dict], *, published
                     else:
                         parsed_target_ids = target_page.ids
                     checked_fragments += 1
-                    if fragment not in parsed_target_ids:
+                    collection_state = (
+                        target == root.resolve() / "collections.html"
+                        and _valid_collection_share(url.fragment, catalog.works)
+                    )
+                    if fragment not in parsed_target_ids and not collection_state:
                         errors.append(f'{location}: missing fragment {link["href"]}')
             key = target.stem if target.parent == root / "works" else None
             if key and key != "index":

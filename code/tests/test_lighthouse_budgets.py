@@ -1,4 +1,4 @@
-"""Lighthouse budget ratchet on the 8 lane pages.
+"""Lighthouse budget ratchet on established lanes and research exploration pages.
 
 Aspirational budgets: performance>=85, accessibility>=95, seo>=95. The current
 build (2026-08-29, local run) misses them on several pages, and the fixes span
@@ -29,6 +29,7 @@ from rendered_site_fixture import LANE_PAGES, serve_copy, stop_server  # noqa: E
 # Aspirational budgets (enforced once the integrator's fixes land):
 # performance>=85, accessibility>=95, seo>=95.
 BUDGETS = {"performance": 85, "accessibility": 95, "seo": 95}
+EXPLORATION_PAGES = ("collections.html", "trails.html", "research-map.html", "lab.html")
 
 # Recorded baselines (local lighthouse 13.4.1, 2026-08-29, headless chromium
 # against a served copy). Pages not listed scored >= all aspirational budgets.
@@ -183,11 +184,11 @@ def test_lighthouse_budgets(tmp_path: Path, record_property) -> None:
     failures: list[str] = []
     try:
         assert_gzip_parity(base_url)
-        for path in LANE_PAGES:
-            floor_for = lambda category: min(  # noqa: E731 - per-page predicate
-                BUDGETS[category],
-                BASELINE.get(path, {}).get(category, HARD_FLOOR.get(category, BUDGETS[category])),
-            )
+        for path in (*LANE_PAGES, *EXPLORATION_PAGES):
+            def floor_for(category):
+                if path in EXPLORATION_PAGES:
+                    return BUDGETS[category]
+                return min(BUDGETS[category], BASELINE.get(path, {}).get(category, HARD_FLOOR.get(category, BUDGETS[category])))
             scores = category_scores(run_lighthouse(base_url, path, tmp_path))
             if any(score < floor_for(category) for category, score in scores.items()):
                 # Below floor on the first run: re-run twice and gate the

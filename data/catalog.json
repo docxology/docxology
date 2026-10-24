@@ -11,7 +11,7 @@
     "name": "Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-24",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
@@ -430,6 +430,75 @@
     },
     {
       "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#collection-catalog",
+      "name": "Reading List Citation Catalog",
+      "description": "Per-work citations for browser-local ordered lists; BibTeX, RIS and CSL JSON preserve the bibliography's recorded roles and metadata.",
+      "url": "https://danielarifriedman.com/data/collection-catalog.json",
+      "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/collection-catalog.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#research-map",
+      "name": "Research Metadata Graph",
+      "description": "Recorded work, domain, byline and associated-software connections; not a citation network or an identity registry.",
+      "url": "https://danielarifriedman.com/data/research-map.json",
+      "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/research-map.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#research-trails",
+      "name": "Curated Research Trails",
+      "description": "Validated ordered learning resources, prerequisites and editorial first-pass time estimates.",
+      "url": "https://danielarifriedman.com/data/research-trails.json",
+      "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/research-trails.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#full-text-corpus",
       "name": "Full-Text Extraction Corpus",
       "description": "205 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 145 images/ subdirectories with 8,959 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
@@ -640,7 +709,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#external-links",
       "name": "External Link Report",
       "description": "Scoped network freshness report for site-critical outbound links.",
-      "url": "https://danielarifriedman.com/reports/external_links_2026-10-23.json",
+      "url": "https://danielarifriedman.com/reports/external_links_2026-10-24.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -654,7 +723,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-10-23.json",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-10-24.json",
         "encodingFormat": "application/json"
       }
     },
@@ -663,7 +732,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#external-link-triage",
       "name": "External Link Triage",
       "description": "Categorized link warnings: bot-protected, transient, timeout, stale, and review.",
-      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-10-23.json",
+      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-10-24.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -677,7 +746,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-10-23.json",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-10-24.json",
         "encodingFormat": "application/json"
       }
     },
@@ -686,7 +755,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-10-23.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-10-24.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -700,7 +769,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-10-23.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-10-24.json",
         "encodingFormat": "application/json"
       }
     },

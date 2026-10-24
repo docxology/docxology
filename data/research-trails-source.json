@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "trails": [
+    {
+      "id": "active-inference-foundations",
+      "title": "From probability to Active Inference",
+      "summary": "Start with a small update rule, then distinguish that teaching example from broader accounts of cognition and Bayesian mechanics.",
+      "prerequisites": "Basic fractions; familiarity with conditional probability helps with the final paper.",
+      "steps": [
+        {"kind": "demo", "ref": "bayes", "minutes": 10, "goal": "Change a prior and likelihoods. Explain why an observation changes the posterior and identify impossible evidence."},
+        {"kind": "work", "ref": "Friedman2018WoodliceMenBayesianAccount098", "minutes": 25, "goal": "Read the interview for conceptual context. Separate discussion of the Free Energy Principle from experimental evidence."},
+        {"kind": "video", "ref": "/videos/institute-7UbCTp7BAUQ.html", "minutes": 30, "goal": "Sample the Fundamentals onboarding discussion and note unfamiliar terms to revisit in the monograph."},
+        {"kind": "work", "ref": "Friedman2022WorkedExampleBayesianMechanics143", "minutes": 40, "goal": "Inspect the worked example's assumptions and equations; identify the extra structure beyond the binary update."}
+      ]
+    },
+    {
+      "id": "ants-and-collectives",
+      "title": "Ants, reinforcement and collective behavior",
+      "summary": "Compare an abstract reinforcement process with empirical measurements and specific models of ant behavior.",
+      "prerequisites": "Introductory biology and probability; no programming required for the first three steps.",
+      "steps": [
+        {"kind": "demo", "ref": "urn", "minutes": 10, "goal": "Repeat a seed, vary reinforcement, and explain which biological mechanisms the urn leaves out."},
+        {"kind": "work", "ref": "Friedman2020GeneExpressionVariationBrains086", "minutes": 30, "goal": "Identify the measured variables and distinguish reported associations from causal mechanisms."},
+        {"kind": "work", "ref": "Friedman2023SinglePheromoneModelAccounts046", "minutes": 35, "goal": "Compare a specific pheromone model's assumptions and outputs with the abstract urn."},
+        {"kind": "video", "ref": "/videos/institute-SNbfAkOokAI.html", "minutes": 25, "goal": "Sample the Active Inferants discussion and list the modeling choices that need their own empirical validation."},
+        {"kind": "software", "ref": "https://github.com/docxology/MetaInformAnt", "minutes": 20, "goal": "Inspect the repository's data workflow and evidence boundaries before considering a local run."}
+      ]
+    },
+    {
+      "id": "cognitive-security",
+      "title": "Information commons and cognitive security",
+      "summary": "Move from narrative ecosystems to standards and operational agent skills, keeping conceptual and implementation claims distinct.",
+      "prerequisites": "Interest in information systems, governance or security; basic repository navigation for the final step.",
+      "steps": [
+        {"kind": "work", "ref": "Friedman2021NarrativeInformationEcosystemsConflict079", "minutes": 30, "goal": "Identify the framework's units of analysis and its account of conflict and trust."},
+        {"kind": "work", "ref": "Friedman2022StructuringInformationCommonsOpen071", "minutes": 30, "goal": "Compare the role of open standards with the preceding narrative perspective."},
+        {"kind": "work", "ref": "Friedman2023P3IFPropertiesProcessesPerspectives062", "minutes": 35, "goal": "Follow the distinctions among properties, processes and perspectives in the proposed framework."},
+        {"kind": "work", "ref": "Friedman2026CogSecSkillsMultiharnessAgenticSkills174", "minutes": 25, "goal": "Inspect the skill architecture and follow its associated software link; distinguish packaged guidance from demonstrated security outcomes."}
+      ]
+    },
+    {
+      "id": "reproducible-research",
+      "title": "From research teams to reproducible artifacts",
+      "summary": "Connect research organization with an executable document pipeline and inspect the source before running it.",
+      "prerequisites": "Comfort reading a repository README; Python and shell experience for any later local execution.",
+      "steps": [
+        {"kind": "work", "ref": "Friedman2023GenerativeResearchTeamsActive057", "minutes": 25, "goal": "Read the proposed team composition and distinguish an organizational model from measured team outcomes."},
+        {"kind": "work", "ref": "Friedman2026TemplateApproachReproducibleGenerative001", "minutes": 35, "goal": "Trace configuration, computation and publication boundaries through the described architecture."},
+        {"kind": "software", "ref": "https://github.com/docxology/template", "minutes": 30, "goal": "Inspect installation requirements, example inputs and validation commands before choosing a bounded reproduction."}
+      ]
+    }
+  ]
+}

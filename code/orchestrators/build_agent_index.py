@@ -36,6 +36,9 @@ DATASET_PATHS = {
     "organizations": "data/organizations.json",
     "resume": "data/resume.json",
     "work_enrichment": "data/work-enrichment.json",
+    "collection_catalog": "data/collection-catalog.json",
+    "research_map": "data/research-map.json",
+    "research_trails": "data/research-trails.json",
     "scholar_readiness": "data/scholar-readiness.json",
     "catalog": "data/catalog.json",
     "reconciliation": "data/reconciliation.json",
@@ -75,6 +78,21 @@ def latest_report(pattern: str, _fallback: str) -> str:
 
 
 SCHEMAS = {
+    "CollectionCatalog": {
+        "description": "Version 1 envelope with a works array of citation records for local reading lists.",
+        "required": ["key", "title", "authors", "year", "url", "bib", "ris", "csl"],
+        "fields": {"key": "Permanent citation key", "bib": "Authoritative bibliography entry", "ris": "RIS with reviewed contributor role", "csl": "CSL JSON citation object"},
+    },
+    "ResearchMap": {
+        "description": "Version 1 envelope with nodes and edges; exact normalized byline names are not disambiguated identities.",
+        "required": ["schema_version", "nodes", "edges"],
+        "fields": {"nodes": "id, kind, label, url; kinds work, person, domain or software", "edges": "source, target, relation and provenance; no inferred citation or causal edges"},
+    },
+    "ResearchTrails": {
+        "description": "Version 1 envelope with curated trails and source-validated work/video/software/demo steps.",
+        "required": ["schema_version", "trails"],
+        "fields": {"trails": "id, title, summary, prerequisites, steps", "minutes": "Editorial first-pass estimate, not a measured completion time"},
+    },
     "BlakeIndex": {
         "type": "object",
         "description": "A topical projection of Work identities with whole-word search coverage, reviewed passage relations, DOI roles and edition caveats. Does not attest full reading or citation-source validation.",
@@ -530,6 +548,10 @@ def payload() -> dict:
         "routes": [
             {"id": "home", "path": "/", "format": "text/html", "kind": "profile"},
             {"id": "publications", "path": "/publications.html", "format": "text/html", "kind": "collection"},
+            {"id": "collections", "path": "/collections.html", "format": "text/html", "kind": "collection"},
+            {"id": "trails", "path": "/trails.html", "format": "text/html", "kind": "collection"},
+            {"id": "research-map", "path": "/research-map.html", "format": "text/html", "kind": "collection"},
+            {"id": "lab", "path": "/lab.html", "format": "text/html", "kind": "page"},
             {"id": "works", "path": "/works/", "format": "text/html", "kind": "collection"},
             {"id": "domains", "path": "/domains.html", "format": "text/html", "kind": "taxonomy"},
             {"id": "software", "path": "/software.html", "format": "text/html", "kind": "collection"},
@@ -573,6 +595,9 @@ def payload() -> dict:
             {"id": "agent-index", "path": "/data/agent-index.json", "format": "application/json", "kind": "route-manifest"},
         ],
         "datasets": {
+            "collection_catalog": {"path": "/data/collection-catalog.json", "count": len(load_json("data/collection-catalog.json").get("works", [])), "schema": "CollectionCatalog"},
+            "research_map": {"path": "/data/research-map.json", "count": len(load_json("data/research-map.json").get("nodes", [])), "schema": "ResearchMap"},
+            "research_trails": {"path": "/data/research-trails.json", "count": len(load_json("data/research-trails.json").get("trails", [])), "schema": "ResearchTrails"},
             "blake_index": {"path": "/data/blake-index.json", "count": load_json("data/blake-index.json").get("count"), "schema": "BlakeIndex"},
             "works": {"path": "/data/works.json", "count": counts.get("bibliography_works"), "schema": "Work"},
             "work_identifiers": {"path": "/data/work-identifiers.json", "count": len(work_identifiers.get("identifiers", {})), "schema": "WorkIdentifierRegistry"},
@@ -611,6 +636,9 @@ def payload() -> dict:
         "schemas": SCHEMAS,
         "schema_registry_version": "1.6",
         "schema_examples": {
+            "CollectionCatalog": load_json("data/collection-catalog.json").get("works", [])[:1],
+            "ResearchMap": {"schema_version": 1, "nodes": load_json("data/research-map.json").get("nodes", [])[:2], "edges": [], "note": "Truncated shape example; use the dataset for connected graph records."},
+            "ResearchTrails": {"schema_version": 1, "trails": load_json("data/research-trails.json").get("trails", [])[:1]},
             "Work": works.get("works", [])[:1],
             "WorkIdentifierRegistry": {
                 "schema_version": work_identifiers.get("schema_version"),

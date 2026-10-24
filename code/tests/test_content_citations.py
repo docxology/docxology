@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import json
+import subprocess
 import sys
 from dataclasses import replace
 from pathlib import Path
+from urllib.parse import urlencode
 
 import pytest
 
@@ -12,7 +14,7 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 
 from docxology_tools.author_entities import bibliography_contributor_role, reviewed_contributor_role  # noqa: E402
-from docxology_tools.content_audit import ContentPage, audit_content  # noqa: E402
+from docxology_tools.content_audit import ContentPage, _valid_collection_share, audit_content  # noqa: E402
 from docxology_tools.content_citations import ContentCitations  # noqa: E402
 from docxology_tools.biblio_table import BiblioRow  # noqa: E402
 from export_bibliography import bibtex_entry, csl_item, ris_record, row_to_work  # noqa: E402
@@ -110,6 +112,77 @@ def test_audit_rejects_existing_files_omitted_from_pages_projection(tmp_path):
     paths = fixture_page(tmp_path, '<a href="works/StableKey.html">work</a>')
     report = audit_content(tmp_path, paths, [work()], published_paths={Path("index.html")})
     assert any("absent from the Pages projection" in error for error in report["errors"])
+
+
+@pytest.mark.parametrize("keys", ["", "StableKey"])
+def test_collection_share_state_is_validated_as_application_state(tmp_path, keys):
+    fragment = urlencode({"v": "1", "title": "Methods & evidence", "works": keys})
+    paths = fixture_page(tmp_path, f'<a href="/collections.html#{fragment}">Preview</a>')
+    target = tmp_path / "collections.html"
+    target.write_text('<main id="editor"></main>')
+    report = audit_content(tmp_path, paths + [target], [work()])
+    assert report["errors"] == []
+    assert report["fragments_checked"] == 1
+
+
+@pytest.mark.parametrize("fragment", [
+    "editor-missing", "v=2&title=Test&works=StableKey", "v=1&works=StableKey",
+    "v=1&title=&works=StableKey", "v=1&title=%20&works=StableKey",
+    "v=1&title=Test%0A&works=StableKey", "v=1&title=Test&works=Absent",
+    "v=1&title=%EF%BB%BF&works=StableKey", "v=1&title=%EF%BB%BF+&works=StableKey",
+    "v=1&title=Test&works=StableKey,StableKey", "v=1&title=Test&works=../StableKey",
+    "v=1&title=Test&works=StableKey&v=1", "v=1&title=Test&works=StableKey&extra=1",
+    "v=1&title=" + "a" * 101 + "&works=StableKey",
+    urlencode({"v": "1", "title": "😀" * 51, "works": "StableKey"}),
+    "v=1&title=Test&works=" + ",".join(f"Key{i}" for i in range(501)),
+    "v=1&title=" + "a" * 100000 + "&works=StableKey",
+])
+def test_collection_state_cannot_bypass_broken_fragment_checks(tmp_path, fragment):
+    paths = fixture_page(tmp_path, f'<a href="/collections.html#{fragment}">Invalid</a>')
+    (tmp_path / "collections.html").write_text('<main id="editor"></main>')
+    report = audit_content(tmp_path, paths, [work()])
+    assert len(report["errors"]) == 1
+    assert "missing fragment" in report["errors"][0]
+
+
+def test_collection_state_does_not_exempt_other_routes_or_unpublished_targets(tmp_path):
+    fragment = urlencode({"v": "1", "title": "Test", "works": "StableKey"})
+    paths = fixture_page(tmp_path, f'<a href="works/StableKey.html#{fragment}">Wrong route</a>')
+    assert "missing fragment" in audit_content(tmp_path, paths, [work()])["errors"][0]
+    paths[0].write_text(f'<main><a href="/collections.html#{fragment}">Not published</a></main>')
+    (tmp_path / "collections.html").write_text('<main id="editor"></main>')
+    errors = audit_content(tmp_path, paths, [work()], published_paths={Path("index.html")})["errors"]
+    assert len(errors) == 1 and "absent from the Pages projection" in errors[0]
+
+
+def test_published_collection_state_bounds_known_keys_and_browser_title_length():
+    known = {f"Key{i}": {} for i in range(501)}
+    state = {"v": "1", "title": "😀" * 50, "works": ",".join(list(known)[:500])}
+    assert _valid_collection_share(urlencode(state), known)
+    assert not _valid_collection_share(urlencode({**state, "title": "😀" * 51}), known)
+    assert not _valid_collection_share(urlencode({**state, "works": ",".join(known)}), known)
+    assert not _valid_collection_share(urlencode(state), {})
+
+
+def test_collection_blank_title_semantics_match_actual_javascript_parser():
+    source = Path(__file__).resolve().parents[2] / "js/collections.js"
+    script = r"""
+const {parseShare} = require(process.argv[1]);
+const titles = Array.from({length: 65536}, (_, n) => String.fromCharCode(n))
+    .filter(c => c.trim() === '');
+titles.push('\uFEFF \uFEFF', '\u0085', '\u001c', 'Methods', 'Methods\uFEFF');
+console.log(JSON.stringify(titles.map(title => {
+    const fragment = new URLSearchParams({v: '1', title, works: 'StableKey'}).toString();
+    try { parseShare('#' + fragment); return {title, fragment, accepted: true}; }
+    catch { return {title, fragment, accepted: false}; }
+})));
+"""
+    result = subprocess.run(["node", "-e", script, str(source)], capture_output=True, text=True, check=True)
+    probes = json.loads(result.stdout)
+    assert any(probe["title"] == "\ufeff" for probe in probes)
+    assert any(probe["accepted"] for probe in probes)
+    for probe in probes:
+        assert _valid_collection_share(probe["fragment"], {"StableKey": {}}) == probe["accepted"], repr(probe["title"])
 
 
 def test_false_joint_authorship_is_detected_in_html_and_markdown(tmp_path):

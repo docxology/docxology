@@ -628,12 +628,11 @@ def related_works_html(work: dict) -> str:
         return ""
     items = "".join(
         f'<li><a href="{h(r["citation_key"])}.html">{h(r["title"])}</a>'
-        f'<span class="muted"> · {h(r["year"])}</span></li>'
+        f'<span class="muted"> · {h(r["year"])}</span><p>{h(" · ".join(r.get("reasons", ["Same catalog domain"])))}</p></li>'
         for r in related
     )
     domain_href = domain_page_href(work.get("domain", ""), depth=1)
     domain_name = h(work["domain_name"])
-    header_domain = f'<a href="{domain_href}">{domain_name}</a>' if domain_href else domain_name
     hub_link = (
         f'<p><a class="related-hub-link" href="{domain_href}">View all {domain_name} works, software &amp; media →</a></p>'
         if domain_href
@@ -641,7 +640,7 @@ def related_works_html(work: dict) -> str:
     )
     return f"""
         <section class="section">
-            <div class="section-header"><h2>Related in {header_domain}</h2><p>Other catalogued works in the same domain.</p><div class="section-divider"></div></div>
+            <div class="section-header"><h2>Related works</h2><p>Ranked by recorded methods, topics, contributors and associated software, with contributor roles and domain-only matches labelled. Metadata overlap is not a citation or a scientific equivalence.</p><div class="section-divider"></div></div>
             <ul class="related-list">{items}</ul>
             {hub_link}
         </section>"""
@@ -927,7 +926,7 @@ def render_work_page(work: dict) -> str:
             <div class="section-header"><h2>Methods and contributions</h2><p>Read the source for the full argument, qualifications, and evidence.</p><div class="section-divider"></div></div>
             <div class="work-summary-grid">{"".join(cards)}</div>{provenance}
         </section>'''
-    citation_buttons = bibtex_button_html(work) + '\n<a class="btn btn-outline" href="../bibliography.bib" download>Download bibliography</a>'
+    citation_buttons = bibtex_button_html(work) + '\n<a class="btn btn-outline" href="../bibliography.bib" download>Download bibliography</a>' + f'\n<a class="btn btn-outline" href="../collections.html?add={h(work["citation_key"])}">Add to reading list</a>' + f'\n<a class="btn btn-outline" href="../research-map.html?node=work%3A{h(work["citation_key"])}">Explore connections</a>'
     return (
         page_head(work)
         + f'''
@@ -1065,13 +1064,12 @@ def render_outputs(generated_at: str | None = None) -> dict[Path, str]:
     works = [{**work, "_resources": PaperResources.load(REPO_ROOT, work.get("docs_path", ""), visible), "_bibtex": citations.get(work["citation_key"], "")} for work in load_works()]
     enrichments = enrichment_map(works, visible_paths=visible)
     works = [{**work, "enrichment": enrichments.get(work["citation_key"], {})} for work in works]
-    by_domain: dict[str, list[dict]] = {}
+    from docxology_tools.research_connections import related_catalog
+
+    repositories = {w["citation_key"]: source_repository_url(w.get("docs_path", ""), w["_resources"]) for w in works}
+    relationships = related_catalog(works, enrichments, repositories)
     for w in works:
-        by_domain.setdefault(w["domain"], []).append(w)
-    for w in works:
-        siblings = [s for s in by_domain.get(w["domain"], []) if s["citation_key"] != w["citation_key"]]
-        siblings.sort(key=lambda x: (int(x["year"]), int(x["num"])), reverse=True)
-        w["related"] = siblings[:6]
+        w["related"] = relationships[w["citation_key"]]
     outputs = {WORKS_DIR / "index.html": mark_generated_page(render_index(works))}
     html_outputs: list[Path] = [WORKS_DIR / "index.html"]
     # citation_key is the permanent public URL primitive (works/{key}.html). It must be

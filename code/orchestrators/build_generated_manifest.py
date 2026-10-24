@@ -48,6 +48,12 @@ LATEST_EXTERNAL_LINK_REPORT = _latest_report("external_links_[0-9]*.json", "repo
 
 ARTIFACTS = [
     {
+        "name": "Research exploration tools",
+        "outputs": ["collections.html", "trails.html", "research-map.html", "lab.html", "data/collection-catalog.json", "data/research-map.json", "data/research-trails.json"],
+        "sources": ["data/works.json", "data/videos.json", "data/software.json", "data/research-trails-source.json", "bibliography.bib", "papers/*/metadata.json", "code/src/research_connections.py", "code/src/site_nav.py"],
+        "command": "uv run python3 code/orchestrators/build_research_tools.py",
+    },
+    {
         "name": "Blake publication pathway",
         "outputs": ["pages/BLAKE.md", "data/blake-index.json"],
         "sources": ["data/works.json", "data/blake-review.json", "papers/*/full_text.md", "papers/*/metadata.json", "reports/publication_discovery_2026-10-22.json"],

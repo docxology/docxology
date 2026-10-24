@@ -47,6 +47,8 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ---
 
+> **Research desk**: [Build and export a reading list](https://danielarifriedman.com/collections.html), [follow a curated trail](https://danielarifriedman.com/trails.html), [explore research connections](https://danielarifriedman.com/research-map.html), or [try a probability demonstration](https://danielarifriedman.com/lab.html). Publication filters are shareable as URLs.
+
 ## 📁 Repository Map
 
 > **Current catalog totals** are generated in [`reports/current_counts.md`](../reports/current_counts.md). Canonical source tables are [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md), [`pages/SOFTWARE.md`](../pages/SOFTWARE.md), [`papers/README.md`](../papers/README.md), and [`data/github-repositories.json`](../data/github-repositories.json).

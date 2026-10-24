@@ -377,6 +377,10 @@ def nav_manifest(depth: int = 0) -> tuple[list[tuple[str, str, str, str]], list[
     ]
     secondary = [
         ("start-here", f"{prefix}start-here.html", "Start Here", ""),
+        ("collections", f"{prefix}collections.html", "Reading lists", ""),
+        ("trails", f"{prefix}trails.html", "Research trails", ""),
+        ("research-map", f"{prefix}research-map.html", "Research map", ""),
+        ("lab", f"{prefix}lab.html", "Probability lab", ""),
         ("about", f"{home}#about", "About", ""),
         ("research", f"{home}#research", "Research", ""),
         ("media", f"{prefix}media.html", "Media", ""),

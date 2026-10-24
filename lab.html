@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability laboratory</title>
+    <meta name="description" content="Experiment with Bayesian updating and reinforcement using reproducible teaching models.">
+    <meta name="author" content="Daniel Ari Friedman">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://danielarifriedman.com/lab.html">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
+    <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
+    <link rel="me" href="https://github.com/docxology">
+    <link rel="me" href="https://linkedin.com/in/danielarifriedman">
+    <link rel="me" href="https://youtube.com/@danielarifriedman">
+    <link rel="me" href="https://www.wikidata.org/wiki/Q138781444">
+    <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
+    <link rel="me" href="https://www.flickr.com/photos/daniel_friedman/" title="Flickr">
+    <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
+    <script src="/js/nav-toggle.js?v=nav-20261002"></script>
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Probability laboratory">
+    <meta property="og:description" content="Experiment with Bayesian updating and reinforcement using reproducible teaching models.">
+    <meta property="og:url" content="https://danielarifriedman.com/lab.html">
+    <meta property="og:image" content="https://danielarifriedman.com/og-index.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Probability laboratory">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Probability laboratory">
+    <meta name="twitter:description" content="Experiment with Bayesian updating and reinforcement using reproducible teaching models.">
+    <meta name="twitter:image" content="https://danielarifriedman.com/og-index.jpg">
+    <meta name="twitter:image:alt" content="Probability laboratory">
+    <link rel="stylesheet" href="style.css?v=site-20261002b">
+    <meta name="theme-color" content="#0c0c0e">
+    <style>
+.breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
+
+    </style>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "name": "Probability laboratory",
+            "url": "https://danielarifriedman.com/lab.html"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://danielarifriedman.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Probability laboratory",
+                    "item": "https://danielarifriedman.com/lab.html"
+                }
+            ]
+        }
+    ]
+}
+    </script>
+<link rel="stylesheet" href="/css/research-tools.css?v=1">
+</head>
+<body class="research-tools-page" data-research-tool="lab">
+<a class="skip-link" href="#main">Skip to content</a>
+    <nav aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="works/">Works</a></li>
+            <li><a href="domains.html">Domains</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="art.html" class="nav-art-link">Art</a></li>
+            <li>
+                <details class="nav-more">
+                    <summary>More</summary>
+                    <ul class="nav-more-panel">
+                    <li><a href="start-here.html">Start Here</a></li>
+                    <li><a href="collections.html">Reading lists</a></li>
+                    <li><a href="trails.html">Research trails</a></li>
+                    <li><a href="research-map.html">Research map</a></li>
+                    <li><a href="lab.html" class="active" aria-current="page">Probability lab</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#research">Research</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="projections.html">Projections</a></li>
+                    <li><a href="collaborators.html">Collaborators</a></li>
+                    <li><a href="resume/resume.html">CV</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="catalog.html">Data Catalog</a></li>
+                    <li><a href="evidence.html">Evidence</a></li>
+                    <li><a href="reproducibility.html">Reproducibility</a></li>
+                    <li><a href="cite-verify.html">Cite</a></li>
+                    <li><a href="discovery.html">Discovery</a></li>
+                    <li><a href="data/agent-index.json">Agent Map</a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
+    </nav>
+<main id="main">
+<header class="page-hero"><p class="tool-kicker">RESEARCH DESK</p><h1>Probability laboratory</h1><p class="sub">Experiment with Bayesian updating and reinforcement using reproducible teaching models.</p><p class="tool-links"><a href="/collections.html">Reading lists</a> · <a href="/trails.html">Research trails</a> · <a href="/research-map.html">Research map</a> · <a href="/lab.html" aria-current="page">Probability laboratory</a></p></header>
+<div class="research-desk"><p>Two small, fully specified teaching models. Change assumptions, inspect the numbers, and export every step. They do not reproduce or validate the linked research. <a href="/js/probability-lab.js" download>Download the model implementations (JavaScript)</a>.</p>
+<section id="bayes" class="tool-panel"><p class="tool-kicker">01 / BELIEF UPDATING</p><h2>A binary Bayesian update</h2><p>H is a hypothesis and E is an observation. The two hypotheses H and not-H are exhaustive. Repeated observations are assumed conditionally independent given the hypothesis, with fixed likelihoods.</p><p><code>P(H|E) = P(H) P(E|H) / [P(H) P(E|H) + (1 − P(H)) P(E|not-H)]</code></p><p>Worked example: a prior of 0.20 and likelihoods 0.80 and 0.20 give a posterior of 0.50 after E. A subsequent not-E returns it to 0.20.</p>
+<div class="tool-grid"><label for="bayes-prior">Prior P(H), percent<input id="bayes-prior" type="range" min="0" max="100" value="20"><output for="bayes-prior" id="bayes-prior-value">20</output></label><label for="bayes-yes">Likelihood P(E|H), percent<input id="bayes-yes" type="range" min="0" max="100" value="80"><output for="bayes-yes" id="bayes-yes-value">80</output></label><label for="bayes-no">Likelihood P(E|not-H), percent<input id="bayes-no" type="range" min="0" max="100" value="20"><output for="bayes-no" id="bayes-no-value">20</output></label></div>
+<div class="tool-toolbar"><button type="button" id="bayes-positive">Observe E</button><button type="button" id="bayes-negative">Observe not-E</button><button type="button" id="bayes-reset">Reset observations</button><button type="button" id="bayes-export">Download Bayesian CSV</button></div><p id="bayes-result" role="status">Enable JavaScript to update the worked example.</p><svg id="bayes-chart" viewBox="0 0 800 280" role="img" aria-label="Posterior probability by observation; exact values appear in the table"></svg><details><summary>Numerical history</summary><table><caption>Binary update history</caption><thead><tr><th scope="col">Step</th><th scope="col">Observation</th><th scope="col">P(H)</th></tr></thead><tbody id="bayes-history"></tbody></table></details><p>Changing any assumption resets the observations. Impossible evidence is reported without changing the state. At most 100 observations per run.</p><p><a href="https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/pages/lecture-notes/">MIT probability course: conditional probability and inference</a> · <a href="/active-inference.html">Related Active Inference reading</a></p></section>
+<section id="urn" class="tool-panel"><p class="tool-kicker">02 / REINFORCEMENT</p><h2>A reinforced urn</h2><p>Draw one token with probability proportional to its color's current count. Replace it and add r extra tokens of that color. With r = 0 the composition stays fixed. Every run uses the displayed 32-bit seed; identical inputs reproduce identical draws.</p>
+<div class="tool-grid"><label for="urn-amber">Initial amber tokens<input id="urn-amber" type="number" min="1" max="20" value="1"></label><label for="urn-blue">Initial blue tokens<input id="urn-blue" type="number" min="1" max="20" value="1"></label><label for="urn-reinforcement">Extra tokens r<input id="urn-reinforcement" type="number" min="0" max="5" value="1"></label><label for="urn-draws">Draws<input id="urn-draws" type="number" min="1" max="200" value="100"></label><label for="urn-seed">Seed (0–4294967295)<input id="urn-seed" type="number" min="0" max="4294967295" value="42"></label></div><div class="tool-toolbar"><button type="button" id="urn-run">Run urn</button><button type="button" id="urn-export">Download urn CSV</button></div><p id="urn-result" role="status">With one token of each color, the first draw has amber probability 0.50.</p><svg id="urn-chart" viewBox="0 0 800 280" role="img" aria-label="Amber fraction of the urn after each draw; exact values appear in the table"></svg><details><summary>Every draw and token count</summary><table><caption>Reinforced urn history</caption><thead><tr><th scope="col">Draw</th><th scope="col">Color</th><th scope="col">Amber</th><th scope="col">Blue</th><th scope="col">Amber fraction</th></tr></thead><tbody id="urn-history"></tbody></table></details><p>This stochastic urn illustrates reinforcement. It has no spatial interactions, physiology, pheromone dynamics or fitted biological parameters and is not an ant-colony model.</p><p><a href="https://djalil.chafai.net/blog/2015/11/30/back-to-basics-polya-urns/">Mathematical definition and analysis by Djalil Chafaï</a> · <a href="/computational-entomology.html">Related models and biological evidence</a></p></section>
+<noscript><p>The definitions and worked examples above remain readable without JavaScript. Interactive controls require JavaScript.</p></noscript></div>
+</main><footer><p><a href="/publications.html">Bibliography</a> · <a href="/exports.html">Citation exports</a> · <a href="/evidence.html">Evidence and source limits</a></p><p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/c50f520ad">build c50f520ad 2026-10-23</a></p></footer>
+<script src="/js/search-utils.js?v=site-20261002b"></script>
+<script src="/js/tts-controls.js?v=20260813" defer></script>
+<script src="/js/interactive.js?v=site-20261002b" defer></script>
+<script src="/js/menu-esc.js?v=20260813" defer></script>
+<script src="/js/probability-lab.js?v=1" defer></script>
+</body></html>

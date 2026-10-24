@@ -72,6 +72,11 @@ ASSET_AUDIT_INPUTS: tuple[str, ...] = (
     "sw.js",
     "manifest.json",
     "style.css",
+    "css/research-tools.css",
+    "js/collections.js",
+    "js/research-map.js",
+    "js/probability-lab.js",
+    "js/publications.js",
     "assets/hero-art/*.webp",
 )
 
@@ -151,6 +156,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
         ),
     ),
     GenerationStep("video-pages", "build_video_pages.py", (), ("--check",), "Video landing pages and exports", ("data/works.json", "data/work-enrichment.json", "data/video-transcripts/*.txt", "code/data/youtube_*.json")),
+    GenerationStep("research-tools", "build_research_tools.py", (), ("--check",), "Reading lists, curated trails, metadata map and probability laboratory", ("data/works.json", "data/videos.json", "data/software.json", "data/research-trails-source.json", "bibliography.bib", "papers/*/metadata.json", "code/orchestrators/build_work_pages.py", "code/orchestrators/export_bibliography.py")),
     # Artwork pages consume the (freshness-updated) Flickr export and the
     # curated ART_COLLECTIONS.md table; they run before the SEO/security
     # normalizer and the accessibility/asset audits so the emitted pages are
@@ -211,7 +217,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # families are declared for path resolution; because pointer resolution
     # also depends on Git index membership; index_inputs invalidates a cached
     # render when an existing on-disk receipt is staged or untracked.
-    GenerationStep("catalog", "build_catalog.py", (), ("--check",), "Public data catalog", ("data/works.json", "data/software.json", "data/videos.json", "data/scholar-readiness.json", "papers/*/full_text.md", "papers/*/images/*", "reports/public_source_inventory_*.json", "reports/public_source_snapshot_*.json", "reports/external_links_[0-9]*.json", "reports/external_links_triage_*.json", "reports/asset_size_*.json", "reports/live_site_verification_*.json", "reports/browser-smoke/*/manifest.json", "reports/browser-qa/*/manifest.json"), index_inputs=("reports/**",)),
+    GenerationStep("catalog", "build_catalog.py", (), ("--check",), "Public data catalog", ("data/collection-catalog.json", "data/research-map.json", "data/research-trails.json", "data/works.json", "data/software.json", "data/videos.json", "data/scholar-readiness.json", "papers/*/full_text.md", "papers/*/images/*", "reports/public_source_inventory_*.json", "reports/public_source_snapshot_*.json", "reports/external_links_[0-9]*.json", "reports/external_links_triage_*.json", "reports/asset_size_*.json", "reports/live_site_verification_*.json", "reports/browser-smoke/*/manifest.json", "reports/browser-qa/*/manifest.json"), index_inputs=("reports/**",)),
     GenerationStep("asset-audit-final", "audit_assets.py", (), ("--check",), "Final asset-size report after catalog", ASSET_AUDIT_INPUTS, ASSET_AUDIT_INPUTS_EXCLUDE),
     GenerationStep("accessibility-final", "accessibility_audit.py", (), ("--check",), "Final accessibility report after catalog", ("**/*.html", "code/orchestrators/deploy_seo_security.py")),
     # DERIVED (always-run): in-place patcher (same class as
@@ -242,7 +248,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # DERIVED (always-run): renders GENERATED.md + data/generated-manifest.json
     # from the in-script ARTIFACTS/UTILITIES tables; consumes no repo files.
     GenerationStep("generated-manifest-first", "build_generated_manifest.py", (), ("--check",), "Generated artifact matrix before agent index"),
-    GenerationStep("agent-index", "build_agent_index.py", (), ("--check",), "Agent route manifest", ("data/blake-index.json", "data/work-identifiers.json", "data/current-counts.json", "data/artworks.json", "data/artworks-index.json", "data/videos.json", "data/videos-index.json", "data/works.json", "data/software.json", "data/github-repositories.json", "data/claims.json", "data/scholar-verification-receipt.json", "search-index.json", "data/coverage-exceptions.json", "data/repository-classification.json", "data/people.json", "data/organizations.json", "data/work-enrichment.json", "data/catalog.json", "data/reconciliation.json", "data/reproducibility.json", "data/generated-manifest.json", "data/pages-artifact-manifest.json", "reports/live_site_verification_*.json"), index_inputs=("reports/**",)),
+    GenerationStep("agent-index", "build_agent_index.py", (), ("--check",), "Agent route manifest", ("data/collection-catalog.json", "data/research-map.json", "data/research-trails.json", "data/blake-index.json", "data/work-identifiers.json", "data/current-counts.json", "data/artworks.json", "data/artworks-index.json", "data/videos.json", "data/videos-index.json", "data/works.json", "data/software.json", "data/github-repositories.json", "data/claims.json", "data/scholar-verification-receipt.json", "search-index.json", "data/coverage-exceptions.json", "data/repository-classification.json", "data/people.json", "data/organizations.json", "data/work-enrichment.json", "data/catalog.json", "data/reconciliation.json", "data/reproducibility.json", "data/generated-manifest.json", "data/pages-artifact-manifest.json", "reports/live_site_verification_*.json"), index_inputs=("reports/**",)),
     # DERIVED (always-run): the envelope binds git deployment state (source
     # commit, worktree-vs-deployed diff) and generator-script hashes that no
     # content fingerprint captures; skipping could mint a stale-looking

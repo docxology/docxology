@@ -37,6 +37,7 @@ const DOMAIN_LABELS = {
     '🎥': 'MED',
     '🧬': 'BIO',
     '🎨': 'ART',
+    '🔍': 'OTH',
 };
 
 let currentTypeFilter = 'all';
@@ -52,6 +53,56 @@ let currentSort = { col: 'num', dir: 1 };
 // and sorting always operate over the full catalog and reset to page 1.
 const PAGE_SIZE = 50;
 let currentLimit = PAGE_SIZE;
+let publicationURLMode = 'replace';
+
+function publicationControlState() {
+    const byId = id => document.getElementById(id);
+    byId('year-filter').value = currentYearFilter;
+    byId('venue-filter').value = currentVenueFilter;
+    document.querySelectorAll('[data-type-filter]').forEach(b => b.classList.toggle('active', b.dataset.typeFilter === currentTypeFilter));
+    document.querySelectorAll('[data-domain-filter]').forEach(b => b.classList.toggle('active', b.dataset.domainFilter === currentDomainFilter || b.dataset.domainFilter === currentDomainFilter.replace(/\uFE0F/g, '')));
+}
+
+function validatePublicationURLFilters() {
+    let invalid = false;
+    if (currentTypeFilter !== 'all' && !PUBS.some(p => p.type === currentTypeFilter)) { currentTypeFilter = 'all'; invalid = true; }
+    if (currentYearFilter !== 'all' && !PUBS.some(p => String(p.year) === currentYearFilter)) { currentYearFilter = 'all'; invalid = true; }
+    if (currentVenueFilter !== 'all' && !PUBS.some(p => p.venue === currentVenueFilter)) { currentVenueFilter = 'all'; invalid = true; }
+    publicationControlState();
+    if (invalid) document.getElementById('pub-url-status')?.replaceChildren(document.createTextNode('Unavailable URL filters were cleared; the remaining controls still apply.'));
+}
+
+function restorePublicationURL() {
+    const params = new URLSearchParams(location.search);
+    let invalid = false;
+    for (const key of ['q', 'type', 'domain', 'year', 'venue', 'doi', 'docs', 'sort', 'dir']) if (params.getAll(key).length > 1) invalid = true;
+    document.getElementById('pub-search').value = (params.get('q') || '').slice(0, 500);
+    currentTypeFilter = params.get('type') || 'all';
+    currentDomainFilter = params.get('domain') || 'all';
+    if (currentDomainFilter !== 'all' && !Object.prototype.hasOwnProperty.call(DOMAIN_LABELS, currentDomainFilter)) { currentDomainFilter = 'all'; invalid = true; }
+    currentYearFilter = params.get('year') || 'all'; currentVenueFilter = params.get('venue') || 'all';
+    for (const key of ['doi', 'docs']) { document.getElementById(key + '-filter').checked = params.get(key) === '1'; if (params.has(key) && params.get(key) !== '1') invalid = true; }
+    const column = params.get('sort') || 'num';
+    const allowed = ['num', 'year', 'domain', 'type', 'title', 'venue', 'doi'];
+    currentSort = {col: allowed.includes(column) ? column : 'num', dir: params.get('dir') === 'desc' ? -1 : 1};
+    if (!allowed.includes(column) || params.has('dir') && !['asc', 'desc'].includes(params.get('dir')) || (params.get('q') || '').length > 500) invalid = true;
+    currentLimit = PAGE_SIZE; publicationURLMode = 'replace';
+    document.getElementById('pub-url-status')?.replaceChildren(document.createTextNode(invalid ? 'Invalid URL filter values were normalized. Check the visible controls before sharing.' : ''));
+    if (catalogLoaded) validatePublicationURLFilters();
+    ensureEnrichment(); renderTable();
+}
+
+function writePublicationURL() {
+    const url = new URL(location.href);
+    for (const key of ['q', 'type', 'domain', 'year', 'venue', 'doi', 'docs', 'sort', 'dir']) url.searchParams.delete(key);
+    const values = {q: document.getElementById('pub-search').value.slice(0, 500), type: currentTypeFilter, domain: currentDomainFilter, year: currentYearFilter, venue: currentVenueFilter, sort: currentSort.col};
+    for (const [key, value] of Object.entries(values)) if (value && value !== 'all' && !(key === 'sort' && value === 'num')) url.searchParams.set(key, value);
+    if (currentSort.dir === -1) url.searchParams.set('dir', 'desc');
+    for (const key of ['doi', 'docs']) if (document.getElementById(key + '-filter').checked) url.searchParams.set(key, '1');
+    if (url.href !== location.href) history[publicationURLMode === 'replace' ? 'replaceState' : 'pushState'](null, '', url);
+    publicationURLMode = 'push';
+    const share = document.getElementById('pub-share-url'); if (share) share.value = url.href;
+}
 
 function workToPub(work) {
     const url = work.url || '';
@@ -238,6 +289,7 @@ function renderTable() {
                     ? ` <a href="${esc(p.fullTextUrl)}" title="Full text extraction">FT</a>`
                     : '';
                 const img = p.hasImages ? ' <span class="badge-img" title="Has extracted images">🖼</span>' : '';
+                const collect = p.citationKey ? ` <a href="/collections.html?add=${encodeURIComponent(p.citationKey)}" aria-label="Add to reading list: ${title}">Save</a>` : '';
                 return (
                     '<tr>' +
                     `<td class="td-num">${p.num}</td>` +
@@ -246,7 +298,7 @@ function renderTable() {
                     `<td class="td-type"><span class="type-badge ${typeClass(p.type)}">${esc(p.type)}</span></td>` +
                     `<td class="td-title">${titleCell}</td>` +
                     `<td class="td-venue">${esc(p.venue)}</td>` +
-                    `<td class="td-doi">${primary}${docs}${ft}${img}</td>` +
+                    `<td class="td-doi">${primary}${docs}${ft}${img}${collect}</td>` +
                     '</tr>'
                 );
             })
@@ -264,6 +316,14 @@ function renderTable() {
     if (table) table.setAttribute('aria-busy', String(Boolean(q && enrichmentState === 'loading')));
     renderSearchStatus(q);
     updateSortUI();
+    writePublicationURL();
+    const collect = document.getElementById('collect-results');
+    if (collect) {
+        const query = new URLSearchParams({v: '1', title: 'Publication selection', works: data.map(p => p.citationKey).join(',')});
+        collect.href = '/collections.html#' + query.toString();
+        collect.hidden = !data.length;
+        collect.textContent = `Collect all ${data.length} matching works`;
+    }
 }
 
 function renderSearchStatus(query) {
@@ -331,7 +391,8 @@ function ensureLoadMoreButton(tbody) {
     return btn;
 }
 
-function filterPubs() {
+function filterPubs(event) {
+    publicationURLMode = event?.type === 'input' ? 'replace' : 'push';
     currentLimit = PAGE_SIZE;
     ensureEnrichment();
     renderTable();
@@ -373,6 +434,7 @@ function setVenueFilter(v) {
 }
 
 function resetFilters() {
+    currentSort = {col: 'num', dir: 1};
     currentLimit = PAGE_SIZE;
     document.getElementById('pub-search').value = '';
     currentTypeFilter = 'all';
@@ -427,6 +489,7 @@ async function initPublications(works, enrichmentByKey) {
     // The first locale collation (venue sort) pays an indivisible ICU setup;
     // give it a task of its own rather than adding it to the table render.
     populateFilterSelects();
+    validatePublicationURLFilters();
     await yieldToMain();
     // Publish the catalog last so early filter clicks and typing stay inert
     // until the table, counts and load-more button commit in one synchronous step.
@@ -495,10 +558,18 @@ if ('serviceWorker' in navigator) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    restorePublicationURL();
     loadPublications();
     // CSP (script-src 'self') forbids inline oninput handlers — wire here instead.
     var pubSearch = document.getElementById('pub-search');
     if (pubSearch) pubSearch.addEventListener('input', filterPubs);
+    document.getElementById('pub-share')?.addEventListener('click', () => {
+        writePublicationURL();
+        const label = document.getElementById('pub-share-label');
+        if (label) label.hidden = false;
+        const input = document.getElementById('pub-share-url'); input?.focus(); input?.select();
+    });
+    window.addEventListener('popstate', restorePublicationURL);
 });
 
 window.filterPubs = filterPubs;

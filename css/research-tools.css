@@ -1,0 +1,54 @@
+/* Research desk primitives extend the existing editorial design tokens. */
+.research-tools-page { --art-a:none; --art-b:none; --art-c:none; --art-d:none; --art-e:none; }
+.research-tools-page .page-hero::after { display: none; }
+.research-desk { max-width: 1120px; padding: 0 2rem 3rem; margin: 0 auto; }
+.research-desk > p { max-width: 76ch; margin-bottom: 1.5rem; }
+.tool-app { min-width: 0; padding: 0; margin: 0; border: 0; }
+.tool-app > legend { font-weight: bold; }
+.tool-kicker { font-size: .875rem; letter-spacing: .12em; color: var(--text-secondary); }
+.tool-links { margin-top: 1.5rem; }
+.tool-panel { background: var(--bg-secondary); border: 1px solid var(--paper-line); border-radius: var(--radius); padding: 2rem; margin: 2rem 0; }
+.tool-panel p, .tool-panel h2, .tool-panel h3 { margin-bottom: 1rem; }
+.tool-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.5rem; }
+.tool-toolbar { display: flex; flex-wrap: wrap; align-items: end; gap: .5rem; margin: 1rem 0; }
+.research-desk label { display: flex; flex-direction: column; gap: .5rem; margin-bottom: 1rem; min-width: 0; max-width: 100%; }
+.tool-toolbar label { flex: 1 1 220px; margin-bottom: 0; }
+.research-desk input, .research-desk select, .research-desk button { font: inherit; color: var(--text-primary); background: var(--bg-primary); border: 1px solid var(--paper-line); border-radius: var(--radius); min-height: 44px; padding: .5rem; min-width: 0; max-width: 100%; }
+.research-desk input, .research-desk select { width: 100%; }
+.research-desk input[type=range] { padding: 0; }
+.research-desk button { cursor: pointer; white-space: normal; text-align: left; }
+.research-desk button:hover { background: var(--paper-soft); }
+.research-desk button:disabled { opacity: .55; cursor: default; }
+.research-desk [hidden] { display: none !important; }
+.research-desk :is(a,button,input,select,summary):focus-visible { outline: 2px solid var(--red-pure); outline-offset: 3px; }
+.research-desk :is(h2,h3,p,li,a,code) { overflow-wrap: anywhere; }
+.research-desk h2 { font-family: Georgia,serif; }
+.research-desk :is(ol,ul) { padding-left: 1.5rem; }
+.reading-order > li, .trail-steps > li, .connection-list > li { padding: 1rem 0; border-bottom: 1px solid var(--paper-line); }
+.reading-order > li::marker, .trail-steps > li::marker { color: var(--text-secondary); font-weight: bold; }
+.connection-list { list-style: none; padding: 0 !important; }
+.connection-focus { font-weight: bold !important; }
+.connection-list p { font-size: .875rem; color: var(--text-secondary); margin: .5rem 0; }
+.research-desk details { margin: 1rem 0; }
+.research-desk summary { cursor: pointer; padding: .5rem 0; min-height: 44px; }
+.research-desk table { width: 100%; border-collapse: collapse; font-size: .875rem; }
+.research-desk :is(th,td) { padding: .5rem; border-bottom: 1px solid var(--paper-line); text-align: left; overflow-wrap: anywhere; }
+.research-desk svg { width: 100%; height: auto; background: var(--bg-secondary); margin: 1rem 0; }
+.research-desk svg text { fill: var(--text-primary); font-size: 18px; }
+.graph-edge, .plot-axis { stroke: var(--text-muted); stroke-width: 1; fill: none; }
+.graph-node { fill: var(--silver); stroke: var(--bg-primary); stroke-width: 3; }
+.graph-node.work, .probability-line { stroke: var(--red-pure); }
+.graph-node.work { fill: var(--red-pure); }
+.graph-node.software { fill: var(--text-secondary); }
+.research-desk svg a:focus .graph-node { stroke: var(--gold-bright); stroke-width: 5; }
+.probability-line { fill: none; stroke-width: 3; }
+@media(max-width:700px) {
+  .research-desk { padding: 0 1rem 2rem; }
+  .tool-panel { padding: 1rem; }
+  .tool-grid { grid-template-columns: minmax(0,1fr); }
+}
+@media(forced-colors:active) {
+  .graph-edge, .plot-axis, .probability-line { stroke: CanvasText; }
+  .graph-node, .graph-node.work, .graph-node.software { fill: ButtonText; stroke: Canvas; }
+  .research-desk svg text { fill: CanvasText; }
+}

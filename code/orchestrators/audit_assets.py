@@ -27,6 +27,11 @@ PATTERNS = [
     ("site-runtime", "sw.js", 50_000),
     ("site-runtime", "manifest.json", 50_000),
     ("site-runtime", "style.css", 250_000),
+    ("research-runtime", "css/research-tools.css", 50_000),
+    ("research-runtime", "js/collections.js", 50_000),
+    ("research-runtime", "js/research-map.js", 50_000),
+    ("research-runtime", "js/probability-lab.js", 50_000),
+    ("research-runtime", "js/publications.js", 50_000),
     ("hero-art", "assets/hero-art/*.webp", 320_000),
 ]
 

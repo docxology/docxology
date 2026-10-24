@@ -184,7 +184,7 @@
         <form class="filter-row" role="search" aria-label="Filter publications" data-no-submit>
             <div class="search-wrap">
                 <span class="search-icon" aria-hidden="true">Search</span>
-                <input type="search" id="pub-search" placeholder="Search title, venue, type, DOI, domain (e.g. entomology, active inference)…" aria-label="Search publications" autocomplete="off" enterkeyhint="search" spellcheck="false">
+                <input type="search" id="pub-search" maxlength="500" placeholder="Search title, venue, type, DOI, domain (e.g. entomology, active inference)…" aria-label="Search publications" autocomplete="off" enterkeyhint="search" spellcheck="false">
             </div>
             <div class="filter-btns" role="group" aria-label="Filter by type">
                 <button type="button" class="filter-btn active" aria-pressed="true" data-type-filter="all" id="filter-all">All types</button>
@@ -203,6 +203,9 @@
                 <button type="button" class="filter-btn" data-reset-filters>Reset</button>
             </div>
             <span class="result-count" id="result-count" aria-live="polite">Loading catalog…</span>
+            <p id="pub-url-status" role="status"></p>
+            <div class="filter-row"><button type="button" class="filter-btn" id="pub-share">Show share link</button> <a id="collect-results" href="collections.html">Build a reading list</a> · <a href="trails.html">Follow a research trail</a></div>
+            <label for="pub-share-url" id="pub-share-label" hidden>Share these publication filters <input id="pub-share-url" type="url" readonly style="width:100%"></label>
         </form>
 
         <div class="domain-legend" role="group" aria-label="Filter by domain">
@@ -215,6 +218,7 @@
             <button type="button" class="domain-pill" aria-pressed="false" data-domain-filter="🌍">AII Ecosystem</button>
             <button type="button" class="domain-pill" aria-pressed="false" data-domain-filter="🎥">Media</button>
             <button type="button" class="domain-pill" aria-pressed="false" data-domain-filter="🧬">Genetics</button>
+            <button type="button" class="domain-pill" aria-pressed="false" data-domain-filter="🔍">Other</button>
         </div>
 
         <div class="pub-table-wrap">
@@ -262,7 +266,7 @@
     </footer>
 
     <script src="js/search-utils.js?v=site-20261002b"></script>
-    <script src="js/publications.js?v=publications-20261006" defer></script>
+    <script src="js/publications.js?v=research-tools-20261023" defer></script>
     <script src="/js/tts-controls.js?v=20260813" defer></script>
     <script src="/js/interactive.js?v=site-20261002b" defer></script>
     <script src="/js/menu-esc.js?v=20260813" defer></script>

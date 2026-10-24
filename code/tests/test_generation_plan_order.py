@@ -64,6 +64,7 @@ OUTPUTS: dict[str, tuple[str, ...]] = {
     "citation-cff": ("papers/*/CITATION.cff",),
     "work-pages": ("works/*.html", "data/work-enrichment.json"),
     "video-pages": ("videos/*.html", "data/videos.json", "data/videos-index.json", "data/video-pages-manifest.json"),
+    "research-tools": ("collections.html", "trails.html", "research-map.html", "lab.html", "data/collection-catalog.json", "data/research-map.json", "data/research-trails.json"),
     "artwork-pages": ("artworks/*.html", "art-collections/*.html", "data/artwork-pages-manifest.json"),
     "art-gallery-sync": ("art.html",),
     "paper-pages": ("papers/*/index.html",),

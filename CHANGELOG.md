@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-23 — Research exploration tools
+
+- Added browser-local named reading lists with ordering, sharing previews, JSON backups, and selected BibTeX, RIS, CSL JSON and Markdown exports.
+- Made publication filters and sorting shareable, restored browser history, and allowed the complete filtered set to open as a collection.
+- Ranked related works by explained metadata overlap instead of recency alone, preserving labelled domain fallbacks and duplicate-work boundaries.
+- Added curated research trails, a provenance-labelled interactive metadata map, and reproducible Bayesian-update and reinforced-urn teaching demonstrations with CSV exports.
+- Integrated the new routes and datasets into the generation plan, source manifest, agent discovery and data catalog; kept scientific interpretation limits explicit.
+
 ## 2026-10-23 — Complete test selection and runtime isolation
 
 - Made skipped selected tests fail locally and in CI, with regression controls for collection, fixture, body, and parallel-worker skips.
