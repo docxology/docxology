@@ -1,8 +1,8 @@
 paper:
   title: 'docxology: Research, Software, and Citation Index'
   subtitle: Source authority, progressive discovery, and commit-bound release evidence
-  version: 0.5.0-draft
-  date: '2026-10-19'
+  version: 0.6.0-draft
+  date: '2026-10-23'
   cover:
     producer: repository-source-flow-v1
     alt: Reviewed sources pass through shared identity and parsing policy into generated
@@ -30,6 +30,8 @@ keywords:
 - bibliography
 - profile repository
 - evidence catalog
+- interactive research discovery
+- citation export
 metadata:
   license: CC-BY-4.0
   language: en

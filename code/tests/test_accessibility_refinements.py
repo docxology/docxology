@@ -26,22 +26,42 @@ def accessibility_server(tmp_path_factory):
         stop_server(server)
 
 
-@pytest.fixture
-def browser_page():
+@pytest.fixture(scope="module")
+def accessibility_browser(browser_runtime):
+    """Reuse the browser process only after its prerequisite probe completes."""
     from playwright.sync_api import sync_playwright
 
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
-        context = browser.new_context(viewport={"width": 1280, "height": 900}, service_workers="block", timezone_id="America/Los_Angeles")
-        page = context.new_page()
-        # This gate exercises the served application. Remote thumbnail/font
-        # availability is separately checked by live/external-link acceptance.
-        page.route("**/*", lambda route: route.continue_() if route.request.url.startswith("http://127.0.0.1:") else route.abort())
         try:
-            yield page
+            yield browser
         finally:
-            context.close()
             browser.close()
+
+
+@pytest.fixture
+def browser_page(accessibility_browser):
+    """Keep cookies, storage, pages and service-worker state isolated per test."""
+    context = accessibility_browser.new_context(viewport={"width": 1280, "height": 900}, service_workers="block", timezone_id="America/Los_Angeles")
+    page = context.new_page()
+    # Remote availability belongs to separate live/external-link acceptance.
+    page.route("**/*", lambda route: route.continue_() if route.request.url.startswith("http://127.0.0.1:") else route.abort())
+    try:
+        yield page
+    finally:
+        context.close()
+
+
+@pytest.mark.parametrize("iteration", [0, 1])
+def test_reused_browser_keeps_context_state_isolated(accessibility_server, browser_page, iteration):
+    page = browser_page
+    assert len(page.context.browser.contexts) == 1
+    assert len(page.context.pages) == 1
+    page.goto(accessibility_server + "/index.html")
+    assert page.evaluate("() => localStorage.getItem('fixture-isolation')") is None
+    assert page.context.cookies() == []
+    page.evaluate("(value) => localStorage.setItem('fixture-isolation', String(value))", iteration)
+    page.context.add_cookies([{"name": "fixture-isolation", "value": str(iteration), "url": accessibility_server}])
 
 
 def load_videos(page, base_url: str, query: str = "") -> None:

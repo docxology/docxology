@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-23 — Package, acceptance and manuscript refinements
+
+- Completed the shared module registry so canonical and legacy imports preserve module and class identity, with real subprocess and exception-catching regressions.
+- Added research-desk pages, datasets and runtimes to routine deployment hash acceptance, including stale-live-asset negative controls.
+- Reused the accessibility suite's browser process within its module while retaining a fresh context for every case; documented admitted-runtime environment binding.
+- Updated the repository-methods draft to describe visitor selections, citation roles, explained discovery, teaching-model replay, package boundaries and targeted deployment evidence.
+- Corrected presentation clipping and hidden figure/reference content with bounded pagination after citation resolution; retained the original failed renders and added content-preservation regressions.
+
 ## 2026-10-23 — Research exploration tools
 
 - Added browser-local named reading lists with ordering, sharing previews, JSON backups, and selected BibTeX, RIS, CSL JSON and Markdown exports.

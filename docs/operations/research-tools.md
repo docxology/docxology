@@ -45,7 +45,7 @@ including works beyond the visible fifty-row batch.
 Reading lists use `localStorage` key `docxology.reading-lists.v1`: version 1,
 an active list ID, and ordered named lists. Limits are twenty lists, five hundred
 unique keys per list, and 1 MB per backup. Storage failures preserve a session
-draft with a visible warning. Unreadable original bytes have a separate recovery
+draft with a visible warning. Retrieved but unparseable stored text has a separate recovery
 download; ordinary backups still export the usable draft. Cross-tab changes stop
 writes instead of overwriting another tab. List deletion provides undo.
 
@@ -90,3 +90,9 @@ Automated browser checks and screenshots are separate from human visual review.
 The four exploration pages also run in the Lighthouse suite at performance 85,
 accessibility 95 and SEO 95 floors. Established lane floors remain unchanged.
 The asset audit bounds each exploration script and its stylesheet at 50 KB.
+
+Technical post-deployment acceptance requires the research-desk pages, their
+three datasets, the collection/map/model scripts, the publications runtime and
+the shared research stylesheet. Each required manifest entry must exist and its
+hosted bytes must match. These targeted checks supplement browser behavior
+tests; they do not attest every file in the Pages artifact or grant human review.

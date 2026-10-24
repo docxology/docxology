@@ -7,6 +7,130 @@ import sys
 
 import pytest
 
+@pytest.mark.manuscript_render
+def test_slide_link_targets_survive_real_pptx(tmp_path):
+    import subprocess
+    import zipfile
+    import xml.etree.ElementTree as ET
+    source = "## Target {#target}\n\n::: {#inner}\nPayload\n:::\n\n[Jump target](#target) and [Jump inner](#inner)\n"
+    document = json.loads(subprocess.run(["pandoc", "--from=markdown", "--to=json"],
+                                        input=source, text=True, capture_output=True, check=True).stdout)
+    output = tmp_path / "links.pptx"
+    subprocess.run(["pandoc", "--from=json", "--to=pptx", "--slide-level=2", "--fail-if-warnings", "--output", str(output)],
+                   input=json.dumps(rendering.paginate_slides(document)), text=True, capture_output=True, check=True)
+    links = []
+    with zipfile.ZipFile(output) as package:
+        for name in package.namelist():
+            if name.startswith("ppt/slides/slide") and name.endswith(".xml"):
+                tree = ET.fromstring(package.read(name))
+                relations_name = "ppt/slides/_rels/" + Path(name).name + ".rels"
+                relations = {item.attrib["Id"]: item.attrib for item in ET.fromstring(package.read(relations_name))}
+                for link in tree.iter("{http://schemas.openxmlformats.org/drawingml/2006/main}hlinkClick"):
+                    target = relations[link.attrib["{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id"]]
+                    assert target["Type"].endswith("/slide")
+                    links.append(target["Target"])
+    assert len(links) == 2
+    assert len(set(links)) == 1
+
+
+def test_slide_link_targets_keep_nested_container_aliases():
+    text = {"t": "Para", "c": [{"t": "Str", "c": "Payload"}]}
+    nested = {"t": "Div", "c": [["outer", [], []], [{"t": "Div", "c": [["inner", [], []], [text]]}]]}
+    jumps = {"t": "Para", "c": [{"t": "Link", "c": [["", [], []], [{"t": "Str", "c": name}], ["#" + name, ""]]}
+                                      for name in ("target", "outer", "inner")]}
+    header = {"t": "Header", "c": [2, ["target", [], []], [{"t": "Str", "c": "Target"}]]}
+    document = {"meta": {}, "blocks": [header, nested, jumps]}
+    output = rendering.paginate_slides(document)
+    assert output["blocks"][0]["c"][1][0] == "target"
+    assert [inline["c"][-1][0] for inline in output["blocks"][-1]["c"]] == ["#target"] * 3
+    assert jumps["c"][1]["c"][-1][0] == "#outer"
+
+def test_slide_pagination_preserves_long_prose_and_links():
+    link = {"t": "Link", "c": [["", [], []], [{"t": "Str", "c": "source"}], ["https://example.org/evidence", ""]]}
+    inlines = [{"t": "Str", "c": "retained"}, {"t": "Space"}] * 140 + [link]
+    document = {"meta": {}, "blocks": [{"t": "Header", "c": [2, ["methods", [], []], [{"t": "Str", "c": "Methods"}]]},
+                                     {"t": "Para", "c": inlines}]}
+    output = rendering.paginate_slides(document)
+    paragraphs = [block for block in output["blocks"] if block["t"] == "Para"]
+    assert len(paragraphs) >= 3
+    assert [inline for block in paragraphs for inline in block["c"]] == inlines
+    assert all(rendering._slide_text_size(block) <= rendering.SLIDE_TEXT_LIMIT for block in paragraphs)
+    headers = [block for block in output["blocks"] if block["t"] == "Header"]
+    assert headers[0]["c"][1][0] == "methods"
+    assert all(header["c"][1][0] == "" for header in headers[1:])
+    assert document["blocks"][1]["c"] == inlines
+
+
+@pytest.mark.parametrize("kind", ["BulletList", "OrderedList"])
+def test_slide_pagination_keeps_list_order_and_numbering(kind):
+    items = [[{"t": "Para", "c": [{"t": "Str", "c": f"item-{index}"}]}] for index in range(12)]
+    content = items if kind == "BulletList" else [[4, {"t": "Decimal"}, {"t": "Period"}], items]
+    output = rendering.paginate_slides({"meta": {}, "blocks": [{"t": kind, "c": content}]})
+    lists = [block for block in output["blocks"] if block["t"] == kind]
+    actual = [block["c"][0] if kind == "BulletList" else block["c"][1][0] for block in lists]
+    assert actual == items
+    if kind == "OrderedList":
+        assert [block["c"][0][0] for block in lists] == list(range(4, 16))
+
+
+def test_slide_pagination_separates_figure_caption():
+    image = {"t": "Image", "c": [["", [], []], [{"t": "Str", "c": "description"}], ["figure.png", ""]]}
+    caption = {"t": "Plain", "c": [{"t": "Str", "c": "Full caption retained"}]}
+    figure = {"t": "Figure", "c": [["fig:example", [], []], [None, [caption]], [{"t": "Plain", "c": [image]}]]}
+    output = rendering.paginate_slides({"meta": {}, "blocks": [figure]})
+    assert output["blocks"][0]["c"][1][0] == "fig:example"
+    rendered_image = output["blocks"][1]["c"][0]
+    assert rendered_image["c"][1] == [{"t": "Str", "c": "Figure diagram"}]
+    assert image["c"][1] == [{"t": "Str", "c": "description"}]
+    assert output["blocks"][3] == caption
+
+
+@pytest.mark.manuscript_render
+def test_slide_pagination_splits_real_pandoc_table(tmp_path):
+    import subprocess
+    source = "| Term | Meaning |\n| --- | --- |\n" + "\n".join(f"| Key {i} | Definition {i} |" for i in range(11))
+    document = json.loads(subprocess.run(["pandoc", "--from=markdown", "--to=json"], input=source, text=True, capture_output=True, check=True).stdout)
+    original = document["blocks"][0]
+    output = rendering.paginate_slides(document)
+    tables = [block for block in output["blocks"] if block["t"] == "Table"]
+    assert len(tables) == 4
+    assert [row for table in tables for row in table["c"][4][0][3]] == original["c"][4][0][3]
+    assert all(table["c"][3] == original["c"][3] for table in tables)
+    assert all(len(table["c"][4][0][3]) <= 3 for table in tables)
+    oversized = json.loads(json.dumps(document))
+    oversized["blocks"][0]["c"][4][0][3][0][1][0][4] = [{"t": "Plain", "c": [{"t": "Str", "c": "x" * 451}]}]
+    with pytest.raises(ValueError, match="row exceeds"):
+        rendering.paginate_slides(oversized)
+    original["c"][4][0][3][0][1][0][2] = 2
+    with pytest.raises(ValueError, match="spanning"):
+        rendering.paginate_slides(document)
+
+
+@pytest.mark.parametrize("block,message", [
+    ({"t": "Para", "c": [{"t": "Str", "c": "x" * 451}]}, "indivisible"),
+    ({"t": "CodeBlock", "c": [["", [], []], "x" * 81]}, "code block"),
+    ({"t": "BlockQuote", "c": []}, "Unsupported"),
+    ({"t": "Header", "c": [2, ["", [], []], [{"t": "Str", "c": "x" * 81}]]}, "heading"),
+    ({"t": "Figure", "c": [["", [], []], [None, []], []]}, "single registered"),
+])
+def test_slide_pagination_refuses_unbounded_or_unsupported_content(block, message):
+    with pytest.raises(ValueError, match=message):
+        rendering.paginate_slides({"meta": {}, "blocks": [block]})
+
+
+def test_slide_pagination_emits_reference_content_and_target():
+    paragraph = {"t": "Para", "c": [{"t": "Str", "c": "Full bibliographic entry"}]}
+    nested = {"t": "Div", "c": [["refs", [], []], [{"t": "Div", "c": [["ref-source", [], []], [paragraph]]}]]}
+    output = rendering.paginate_slides({"meta": {}, "blocks": [nested]})
+    assert output["blocks"][0]["c"][1][0] == "ref-source"
+    assert output["blocks"][1] == paragraph
+
+
+def test_slide_pagination_retains_empty_headings():
+    headers = [{"t": "Header", "c": [2, [name, [], []], [{"t": "Str", "c": name}]]}
+               for name in ("First", "Last")]
+    assert rendering.paginate_slides({"meta": {}, "blocks": headers})["blocks"] == headers
+
 _DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
 if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
@@ -150,6 +274,16 @@ def test_real_four_format_render_and_receipt(tmp_path):
     assert receipt["editorial_review"] == "pending"
     assert not receipt["publication_readiness_assessed"]
     assert str(tmp_path) not in str(receipt)
+    assert receipt["slide_layout"] == {"producer": rendering.SLIDE_LAYOUT, "text_budget": rendering.SLIDE_TEXT_LIMIT}
+    import zipfile
+    import xml.etree.ElementTree as ET
+    with zipfile.ZipFile(tmp_path / "review" / rendering.OUTPUTS["slides"]) as package:
+        media = [name for name in package.namelist() if name.startswith("ppt/media/")]
+        assert len(media) == len(rendering.FIGURES)
+        runs = [node.text or "" for name in package.namelist()
+                if name.startswith("ppt/slides/slide") and name.endswith(".xml")
+                for node in ET.fromstring(package.read(name)).iter("{http://schemas.openxmlformats.org/drawingml/2006/main}t")]
+    assert "docxology: daniel ari friedman public research and software index" in " ".join(runs).casefold()
 
 
 def test_exact_toolchain_and_crossref_build_are_required(monkeypatch, tmp_path):

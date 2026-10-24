@@ -1,6 +1,6 @@
 # Manuscript status — docxology
 
-As of 2026-10-19, this is a source-backed repository-methods draft describing
+Source version 0.6.0-draft, dated 2026-10-23, is a source-backed repository-methods draft describing
 the public research/software/citation index and its static website. Archived
 research publications remain separate under [papers/](../../papers/).
 
@@ -23,7 +23,14 @@ Manuscript text and original figures use CC BY 4.0. Archived publications and
 third-party material retain their own rights. Automated rendering, package/text
 checks, and assistant page inspection remain separate from named human visual
 approval, editorial review, scientific validity, and publication readiness.
-The native four-format integration passed on 2026-10-18; assistant inspection
+The current revision adds browser-local selections, explained research discovery,
+teaching-model replay, package identity and critical deployment coverage.
+The [dated assistant format inspection](../../reports/manuscript_format_review_2026-10-23.md)
+records frozen draft hashes, complete capture coverage, corrections and retained
+failed attempts. A later source candidate requires its own render receipt;
+named human and editorial approvals remain pending.
+
+Historical evidence: the native four-format integration passed on 2026-10-18; assistant inspection
 covered every page of the earlier eight-page PDF. The revised ten-page prototype adds architecture, loading, evidence, and release diagrams; final candidate verification remains separate. No text
 blocks escaped page bounds. This records draft layout inspection only.
 Named human and editorial approvals remain pending. Outputs are review drafts and are not new

@@ -6,7 +6,7 @@ A scholarly profile can combine papers, software, teaching, art, video, and publ
 
 ## Repository-system contribution
 
-The repository connects authored source, machine-readable discovery exports, stable work pages, and deployment controls. The implementation uses shared parsers and policies, runnable command entry points, a declared generation plan, and proportionate checks. Browser catalogs build on native HTML links and fetch larger data when an interaction needs it.
+The repository connects authored source, machine-readable discovery exports, stable work pages, and deployment controls. The implementation uses shared parsers and policies, runnable command entry points, a declared generation plan, and proportionate checks. Browser catalogs build on native HTML links and fetch larger data when an interaction needs it. The research desk lets readers arrange existing works, follow editorial study paths, inspect recorded connections, and replay small mathematical examples without changing the bibliography.
 
 This draft explains those mechanisms using local source references. It is an account of the implemented design with verification boundaries; it does not report a comparison with other scholarly-profile systems.
 

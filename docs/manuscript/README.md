@@ -84,8 +84,20 @@ transformations, source/tool/cover/output hashes, and pending human/editorial
 review. The declared body-diagram registry is integrated; arbitrary images and Mermaid require a separate reviewed producer.
 
 HTML, EPUB3, and PowerPoint retain the Pandoc/citeproc renderer. All four formats
-are manual review artifacts, excluded from normal site regeneration. Manuscript
-text and original figures use CC BY 4.0; archived papers, software, artwork, and
+are manual review artifacts, excluded from normal site regeneration. PowerPoint
+is an unabridged paginated review deck: cross-references and citations resolve
+before a presentation-only layout separates bounded text, figures, captions and
+simple table segments. Short figure labels fit beside the images; full captions
+follow on separate slides. Container anchors retain the subsection target and
+remap equivalent internal links to its slide, so bibliography entries and images
+reach the PPTX writer. Tables
+support at most three columns, unspanned cells and no body headers or footers;
+oversized indivisible text, code or unsupported blocks fail explicitly. The
+text budget is a conservative input bound; inspect actual layout in each
+requested presentation viewer. Native integration also checks all registered
+figure embeds and the rendered bibliography entry.
+
+Manuscript text and original figures use CC BY 4.0; archived papers, software, artwork, and
 linked third-party material retain their own rights.
 
 Run the real integration explicitly with the same template inputs:

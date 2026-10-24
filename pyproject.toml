@@ -53,6 +53,9 @@ extend-exclude = [".venv", "_site", "reports"]
 select = ["E4", "E7", "E9", "F", "W605"]
 
 [tool.uv]
+# This checkout-local application keeps source modules and repository data
+# together; it is not an installable wheel or an implicit build target.
+package = false
 # Match the qualified CI frontend; older tools must fail before syncing.
 required-version = ">=0.13.1"
 # These native libraries require a wheel for the selected interpreter/platform.

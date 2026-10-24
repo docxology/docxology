@@ -21,6 +21,18 @@ Regeneration writes checked-in outputs. Standard validation includes cached evid
 
 For interactive changes, install the `browser-qa` extra and Chromium and select the browser marker as documented in [site-runtime.md](../operations/site-runtime.md). Selected tests require their declared tooling locally and in CI; a skipped selected test fails the run. Explicitly deselected tests remain outside that run's evidence. The complete collection also requires the pinned native rendering inputs in the [rendering guide](README.md).
 
+## Package and browser isolation
+
+The [checkout-local package guide](../../code/src/README.md) defines the canonical import surface and compatibility boundary. Real subprocess tests cover both import orders and cross-form exception catching, including a minimal checkout. Registry coverage checks prevent a new shared module from silently escaping that contract.
+
+The [accessibility fixture](../../code/tests/test_accessibility_refinements.py) reuses a browser process within its module while creating a fresh context for every test. Storage, cookies, pages and service-worker state remain isolated. The runtime capability probe completes before the persistent synchronous browser driver starts. Performance measurements remain a separate serial test selection.
+
+A surrounding admission wrapper can select its own Python environment. Bind the child command to this checkout's environment and verify both interpreter prefixes before source work, as described in the [development guide](../operations/development.md). Installed tools, a successful import and a qualified runtime remain different observations.
+
+## Replay inputs
+
+Record the citation-catalog version and source bytes alongside an exported reading selection when exact later replay matters. Shared keys can become unavailable after a catalog change, and browser storage can be cleared. Mathematical replay records assumptions, initial conditions, seed, implementation bytes and the exported trace. Reproducing a trace does not independently validate the model's scientific interpretation.
+
 ## Candidate and evidence recording
 
 Record the tested commit, exact command, runtime, exit status, and receipt scope. Preserve earlier failed observations when a focused correction or recheck is needed. Keep local tests, hosted CI, deployed byte/route checks, and human review distinguishable. Publication verification must compare the final local commit with the remote and bind deployed checks to that candidate.

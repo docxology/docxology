@@ -100,6 +100,27 @@ changes, communications, or publication decisions.
 
 ## Verification and evidence
 
+### Environment binding through an admission wrapper
+
+An enclosing workspace tool may run its own `uv` environment. Its
+`UV_PROJECT_ENVIRONMENT` value can be inherited by the admitted child, even when
+that child's working directory is this repository. Set the binding inside the
+child command, after admission, so the declared project extras remain available:
+
+```bash
+env UV_PROJECT_ENVIRONMENT="$PWD/.venv" VIRTUAL_ENV="$PWD/.venv" \
+  uv run --no-sync python3 code/orchestrators/agent.py status --json
+```
+
+Run this from the repository root after qualified environment setup. Inspect
+`sys.prefix` and `sys.base_prefix` in the same admitted runtime before source
+work; both must resolve on GitVault in a managed GitVault workspace. Keep its
+cache and temporary-directory bindings external. A wrapper's manager
+environment is not evidence that this project's browser or rendering extras
+are installed.
+
+### Verification sequence
+
 Run commands from the repository root. After a source change, rebuild its
 declared projections, inspect the diff, then validate the generated layer:
 

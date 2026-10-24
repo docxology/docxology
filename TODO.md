@@ -244,10 +244,10 @@ Recurring checks below are operating obligations, not unfinished feature work.
 - Deliverable: inspect the requested rendered formats and their cross-references; obtain editorial and human visual review before publication
 - Acceptance: a declared render command produces output whose figures and references have been inspected, changed bibliography entries pass a real-parser syntax check outside the structural gate, and a named editorial reviewer's decision is recorded; until then `validate_manuscript.py` is reported only as structural source validation
 - Dependencies: `docs/manuscript/config.yaml`, `code/orchestrators/validate_manuscript.py`, [MANUSCRIPT_STATUS.md](docs/manuscript/MANUSCRIPT_STATUS.md)
-- Open work: complete presentation-format inspection and named editorial/human approval.
-  Native-template PDF rendering, bibliography checks, and an informative vector
-  cover are implemented. Assistant inspection covered all eight PDF pages;
-  automated and assistant checks remain separate from human approval.
+- Open work: obtain named editorial/human approval and repeat requested format
+  checks after source changes. The [dated assistant format inspection](reports/manuscript_format_review_2026-10-23.md)
+  records the inspected draft, rendering corrections and retained failures;
+  automated and assistant checks remain separate from named human approval.
   The pinned render command, real-parser checks, and CC BY 4.0 manuscript license
   are declared in [the manuscript guide](docs/manuscript/README.md); repeat
   verification whenever sources or rendering tools change.

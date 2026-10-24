@@ -5,6 +5,7 @@ from functools import partial
 import hashlib
 from http.server import BaseHTTPRequestHandler, SimpleHTTPRequestHandler, ThreadingHTTPServer
 import json
+import shlex
 from pathlib import Path
 import sys
 import subprocess
@@ -18,6 +19,14 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 import docxology_tools  # noqa: E402,F401
 import verify_deployed_artifact as verifier  # noqa: E402
+
+
+RESEARCH_DESK_TARGETS = (
+    "collections.html", "trails.html", "research-map.html", "lab.html",
+    "css/research-tools.css", "js/collections.js", "js/research-map.js",
+    "js/probability-lab.js", "data/collection-catalog.json",
+    "data/research-map.json", "data/research-trails.json",
+)
 
 
 @pytest.fixture
@@ -57,6 +66,25 @@ def test_actual_deployment_hashes_and_pdf_head_pass(deployed):
     assert receipt["passing"] == receipt["checked"]
 
 
+def test_generated_research_outputs_and_budgeted_runtimes_enter_acceptance(deployed):
+    import audit_assets
+    import build_generated_manifest
+
+    _, manifest_path, _ = deployed
+    artifact = next(item for item in build_generated_manifest.ARTIFACTS
+                    if "code/orchestrators/build_research_tools.py" in shlex.split(item["command"]))
+    expected = set(artifact["outputs"]) | {
+        pattern for category, pattern, _ in audit_assets.PATTERNS if category == "research-runtime"
+    }
+    manifest = json.loads(manifest_path.read_text())
+    known = {item["path"] for item in manifest["included_files"]}
+    manifest["included_files"].extend(
+        {"path": path, "bytes": 1, "sha256": "a" * 64} for path in expected - known
+    )
+    planned, _, _ = verifier.acceptance_plan(manifest)
+    assert expected <= {item["path"] for item in planned}
+
+
 def test_changed_live_work_is_a_failure(deployed):
     root, manifest_path, origin = deployed
     (root / "works/example.html").write_text("stale content")
@@ -64,6 +92,22 @@ def test_changed_live_work_is_a_failure(deployed):
     assert not receipt["overall_ok"]
     failed = [row["path"] for row in receipt["results"] if not row["ok"]]
     assert failed == ["works/example.html"]
+
+
+@pytest.mark.parametrize("target", RESEARCH_DESK_TARGETS)
+def test_changed_research_desk_asset_fails_live_acceptance(deployed, target):
+    root, manifest_path, origin = deployed
+    manifest = json.loads(manifest_path.read_text())
+    body = b"original research desk asset"
+    manifest["included_files"] = [item for item in manifest["included_files"] if item["path"] != target]
+    manifest["included_files"].append({"path": target, "bytes": len(body), "sha256": hashlib.sha256(body).hexdigest()})
+    manifest_path.write_text(json.dumps(manifest))
+    path = root / target
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(b"stale deployed asset")
+    receipt = verifier.check_deployment(manifest_path, commit="b" * 40, attempts=1, origin=origin)
+    assert receipt["overall_ok"] is False
+    assert [row["path"] for row in receipt["results"] if not row["ok"]] == [target]
 
 
 def test_missing_pdf_is_a_failure(deployed):

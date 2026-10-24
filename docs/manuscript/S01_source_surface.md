@@ -29,6 +29,14 @@ This supplement maps statements to the source owners that should be inspected wh
 
 - **Native manuscript PDF.** Source: [renderer](../../code/src/manuscript_rendering.py), [template adapter](../../code/src/manuscript_template.py). Verification: [rendering guide](README.md), opt-in real integration and page inspection.
 
+- **Package identity and dependency boundary.** Source: [package bootstrap](../../code/src/docxology_tools/__init__.py), [project metadata](../../pyproject.toml). Verification: [namespace tests](../../code/tests/test_package_namespace.py), [package guide](../../code/src/README.md).
+
+- **Reader selections and citation exports.** Source: [generator](../../code/orchestrators/build_research_tools.py), [collection runtime](../../js/collections.js), [state-aware auditor](../../code/src/content_audit.py). Verification: [core model/export tests](../../code/tests/test_research_tools.py), [browser workflows](../../code/tests/test_research_tools_browser.py).
+
+- **Explained discovery and teaching.** Source: [relationship policy](../../code/src/research_connections.py), [trail source](../../data/research-trails-source.json), [map runtime](../../js/research-map.js), [model implementation](../../js/probability-lab.js). Verification: [research-tools guide](../operations/research-tools.md), numerical oracles and real browser acceptance.
+
+- **Critical deployment coverage.** Source: [artifact verifier](../../code/orchestrators/verify_deployed_artifact.py). Verification: [real HTTP regressions](../../code/tests/test_deployed_artifact.py), including stale research-desk assets.
+
 ## Expansion checklist
 
 - Identify authored source and generated projections separately.

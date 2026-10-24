@@ -25,6 +25,157 @@ OUTPUTS = {"html": "docxology-methods.html", "pdf": "docxology-methods.pdf",
 TIMEOUT = 90
 MAX_OUTPUT_BYTES = 20 * 1024 * 1024
 
+SLIDE_TEXT_LIMIT = 450
+SLIDE_LAYOUT = "bounded-block-pagination-v2"
+
+
+def _slide_text_size(node) -> int:
+    """Conservative visible-text budget; link targets and attributes are not text."""
+    if isinstance(node, list):
+        return sum(_slide_text_size(value) for value in node)
+    if not isinstance(node, dict):
+        return 0
+    kind, content = node.get("t"), node.get("c")
+    if kind == "Str":
+        return len(content)
+    if kind in {"Space", "SoftBreak"}:
+        return 1
+    if kind == "LineBreak":
+        return 70
+    if kind in {"Code", "Math"}:
+        return len(content[-1])
+    if kind in {"Link", "Image"}:
+        return _slide_text_size(content[1])
+    return _slide_text_size(content)
+
+
+def _slide_units(block):
+    """Yield bounded, separate display units without discarding authored content."""
+    kind, content = block["t"], block.get("c")
+    if kind in {"Para", "Plain"}:
+        chunk, size = [], 0
+        for inline in content:
+            cost = _slide_text_size(inline)
+            if cost > SLIDE_TEXT_LIMIT:
+                raise ValueError("Slide contains an indivisible inline exceeding its text budget")
+            if chunk and size + cost > SLIDE_TEXT_LIMIT:
+                yield {"t": kind, "c": chunk}
+                chunk, size = [], 0
+            chunk.append(inline)
+            size += cost
+        if chunk:
+            yield {"t": kind, "c": chunk}
+    elif kind in {"BulletList", "OrderedList"}:
+        items = content if kind == "BulletList" else content[1]
+        for index, item in enumerate(items):
+            for child in item:
+                for unit in _slide_units(child):
+                    if kind == "BulletList":
+                        yield {"t": kind, "c": [[unit]]}
+                    else:
+                        attributes = [content[0][0] + index, *content[0][1:]]
+                        yield {"t": kind, "c": [attributes, [[unit]]]}
+    elif kind == "Figure":
+        attributes, caption, body = content
+        if len(body) != 1 or body[0]["t"] not in {"Plain", "Para"} or len(body[0]["c"]) != 1 or body[0]["c"][0]["t"] != "Image":
+            raise ValueError("Slides require a single registered image per figure")
+        # PPTX also renders a standalone image's alt text as its caption.
+        # Keep that label short and descriptive; the complete figure caption
+        # follows on its own slide.
+        original = body[0]["c"][0]
+        label = Path(original["c"][-1][0]).stem.replace("-", " ").capitalize() + " diagram"
+        image = {"t": "Image", "c": [original["c"][0], [{"t": "Str", "c": label}], original["c"][-1]]}
+        yield {"t": "Div", "c": [attributes, [{"t": "Para", "c": [image]}]]}
+        for child in caption[1]:
+            yield from _slide_units(child)
+    elif kind == "Table":
+        attributes, caption, columns, head, bodies, foot = content
+        if (len(columns) > 3 or len(bodies) != 1 or bodies[0][2] or foot[1]
+                or any(cell[2:4] != [1, 1] for row in head[1] + bodies[0][3] for cell in row[1])):
+            raise ValueError("Slide table requires simple rows without spanning cells or footers")
+        for child in caption[1]:
+            yield from _slide_units(child)
+        rows = bodies[0][3]
+        groups, group, size = [], [], _slide_text_size(head)
+        for row in rows:
+            cost = _slide_text_size(row)
+            if cost + _slide_text_size(head) > SLIDE_TEXT_LIMIT:
+                raise ValueError("Slide table row exceeds its text budget")
+            if group and (len(group) == 3 or size + cost > SLIDE_TEXT_LIMIT):
+                groups.append(group)
+                group, size = [], _slide_text_size(head)
+            group.append(row)
+            size += cost
+        if group or not groups:
+            groups.append(group)
+        for index, group in enumerate(groups):
+            attr = attributes if index == 0 else ["", attributes[1], attributes[2]]
+            body = [bodies[0][0], bodies[0][1], [], group]
+            yield {"t": kind, "c": [attr, [None, []], columns, head, [body], foot]}
+    elif kind == "Div":
+        for index, unit in enumerate(unit for child in content[1] for unit in _slide_units(child)):
+            attributes = content[0] if index == 0 else ["", content[0][1], content[0][2]]
+            yield {"t": kind, "c": [attributes, [unit]]}
+    elif kind == "CodeBlock":
+        if len(content[1]) > SLIDE_TEXT_LIMIT or any(len(line) > 80 for line in content[1].splitlines()):
+            raise ValueError("Slide code block exceeds its text or line budget")
+        yield block
+    else:
+        raise ValueError(f"Unsupported slide display block: {kind}")
+
+
+def paginate_slides(document: dict) -> dict:
+    """Paginate the already cross-referenced/cited AST for presentation only."""
+    output = dict(document, blocks=[])
+    title, attributes, count = [{"t": "Str", "c": "Review draft"}], ["", [], []], 0
+    pending_header = None
+    aliases = {}
+    for block in document["blocks"]:
+        if block["t"] == "Header":
+            if pending_header is not None:
+                output["blocks"].append(pending_header)
+            level, attributes, title = block["c"]
+            if _slide_text_size(title) > 80:
+                raise ValueError("Slide heading exceeds its text budget")
+            count = 0
+            pending_header = {"t": "Header", "c": [2, attributes, title]} if level > 1 else None
+            if level == 1:
+                output["blocks"].append(block)
+                attributes = ["", [], []]
+            continue
+        for unit in _slide_units(block):
+            pending_header = None
+            anchors = []
+            # The PPTX writer drops generic Div containers. Transfer the
+            # deepest semantic anchor to the slide and emit its display block.
+            while unit["t"] == "Div":
+                if unit["c"][0][0]:
+                    anchors.append(unit["c"][0][0])
+                unit = unit["c"][1][0]
+            count += 1
+            heading = title if count == 1 else [*title, {"t": "Space"}, {"t": "Str", "c": f"({count})"}]
+            attr = attributes if count == 1 else ["", [], []]
+            if not attr[0] and anchors:
+                attr = [anchors[-1], [], []]
+            for anchor in anchors:
+                if anchor != attr[0]:
+                    aliases[anchor] = attr[0]
+            output["blocks"].extend([{"t": "Header", "c": [2, attr, heading]}, unit])
+    if pending_header is not None:
+        output["blocks"].append(pending_header)
+    def remap(node):
+        if isinstance(node, list):
+            return [remap(value) for value in node]
+        if not isinstance(node, dict):
+            return node
+        node = {key: remap(value) for key, value in node.items()}
+        if node.get("t") == "Link":
+            target = node["c"][-1][0]
+            if target.startswith("#") and unquote(target[1:]) in aliases:
+                node["c"][-1][0] = "#" + aliases[unquote(target[1:])]
+        return node
+    return remap(output)
+
 
 def digest(path: Path) -> str:
     with path.open("rb") as stream:
@@ -266,7 +417,13 @@ def render_manuscript(root: Path, output: Path, *, template_root: Path | None = 
             else:
                 arguments += ["--to=" + {"html": "html5", "epub": "epub3", "slides": "pptx"}[format_name]]
                 if format_name == "slides":
-                    arguments += ["--slide-level=2"]
+                    resolved = json.loads(run([*common, "--to=json"], root=root, data=data))
+                    slides = paginate_slides(resolved)
+                    arguments = [*pandoc, "--from=json", "--standalone", "--to=pptx", "--slide-level=2",
+                                 "--resource-path", str(scratch), "--fail-if-warnings",
+                                 "--output", str(scratch / OUTPUTS[format_name])]
+                    run(arguments, root=root, data=json.dumps(slides, ensure_ascii=False))
+                    continue
             run(arguments, root=root, data=data)
         artifacts = validate_artifacts(scratch, formats)
         if figure_config:
@@ -282,6 +439,7 @@ def render_manuscript(root: Path, output: Path, *, template_root: Path | None = 
         receipt = {"schema_version": "1.0", "evidence_kind": "offline manuscript draft render",
                    "source_sha256": source_hashes,
                    "source_link_commit": commit, "toolchain": tools, "template": template_receipt, "artifacts": artifacts,
+                   "slide_layout": {"producer": SLIDE_LAYOUT, "text_budget": SLIDE_TEXT_LIMIT} if "slides" in formats else None,
                    "figures": figure_receipt, "bibliography_parser": "Pandoc biblatex reader", "bibliography_entries": len(bibliography),
                    "license": config["metadata"]["license"], "editorial_review": "pending",
                    "human_visual_review": "pending", "scientific_validity_assessed": False,
