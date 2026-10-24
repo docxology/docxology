@@ -29,6 +29,30 @@
       "kind": "collection"
     },
     {
+      "id": "collections",
+      "path": "/collections.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "trails",
+      "path": "/trails.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "research-map",
+      "path": "/research-map.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "lab",
+      "path": "/lab.html",
+      "format": "text/html",
+      "kind": "page"
+    },
+    {
       "id": "works",
       "path": "/works/",
       "format": "text/html",
@@ -277,6 +301,21 @@
     }
   ],
   "datasets": {
+    "collection_catalog": {
+      "path": "/data/collection-catalog.json",
+      "count": 226,
+      "schema": "CollectionCatalog"
+    },
+    "research_map": {
+      "path": "/data/research-map.json",
+      "count": 584,
+      "schema": "ResearchMap"
+    },
+    "research_trails": {
+      "path": "/data/research-trails.json",
+      "count": 4,
+      "schema": "ResearchTrails"
+    },
     "blake_index": {
       "path": "/data/blake-index.json",
       "count": 21,
@@ -384,7 +423,7 @@
     },
     "catalog": {
       "path": "/data/catalog.json",
-      "count": 33,
+      "count": 36,
       "schema": "DataCatalog"
     },
     "reconciliation": {
@@ -399,7 +438,7 @@
     },
     "generated_manifest": {
       "path": "/data/generated-manifest.json",
-      "count": 59,
+      "count": 60,
       "schema": "GeneratedManifest"
     }
   },
@@ -434,14 +473,14 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-10-23.json",
+      "path": "/reports/accessibility_static_2026-10-24.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-10-23.json",
+      "path": "/reports/asset_size_2026-10-24.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -455,6 +494,48 @@
     }
   ],
   "schemas": {
+    "CollectionCatalog": {
+      "description": "Version 1 envelope with a works array of citation records for local reading lists.",
+      "required": [
+        "key",
+        "title",
+        "authors",
+        "year",
+        "url",
+        "bib",
+        "ris",
+        "csl"
+      ],
+      "fields": {
+        "key": "Permanent citation key",
+        "bib": "Authoritative bibliography entry",
+        "ris": "RIS with reviewed contributor role",
+        "csl": "CSL JSON citation object"
+      }
+    },
+    "ResearchMap": {
+      "description": "Version 1 envelope with nodes and edges; exact normalized byline names are not disambiguated identities.",
+      "required": [
+        "schema_version",
+        "nodes",
+        "edges"
+      ],
+      "fields": {
+        "nodes": "id, kind, label, url; kinds work, person, domain or software",
+        "edges": "source, target, relation and provenance; no inferred citation or causal edges"
+      }
+    },
+    "ResearchTrails": {
+      "description": "Version 1 envelope with curated trails and source-validated work/video/software/demo steps.",
+      "required": [
+        "schema_version",
+        "trails"
+      ],
+      "fields": {
+        "trails": "id, title, summary, prerequisites, steps",
+        "minutes": "Editorial first-pass estimate, not a measured completion time"
+      }
+    },
     "BlakeIndex": {
       "type": "object",
       "description": "A topical projection of Work identities with whole-word search coverage, reviewed passage relations, DOI roles and edition caveats. Does not attest full reading or citation-source validation.",
@@ -1046,6 +1127,108 @@
   },
   "schema_registry_version": "1.6",
   "schema_examples": {
+    "CollectionCatalog": [
+      {
+        "key": "Friedman2026TemplateApproachReproducibleGenerative001",
+        "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+        "authors": [
+          "Friedman, Daniel Ari"
+        ],
+        "year": 2026,
+        "url": "/works/Friedman2026TemplateApproachReproducibleGenerative001.html",
+        "bib": "@article{Friedman2026TemplateApproachReproducibleGenerative001,\n  title = {A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.16903351},\n  url = {https://doi.org/10.5281/zenodo.16903351},\n  keywords = {Computational; Paper},\n  note = {Catalog row 1; docs: papers/2026_ReproducibleResearch/}\n}",
+        "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication\nT2  - Zenodo\nDO  - 10.5281/zenodo.16903351\nUR  - https://doi.org/10.5281/zenodo.16903351\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 1; docs: papers/2026_ReproducibleResearch/\nER  -",
+        "csl": {
+          "id": "Friedman2026TemplateApproachReproducibleGenerative001",
+          "type": "article-journal",
+          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "author": [
+            {
+              "family": "Friedman",
+              "given": "Daniel Ari"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2026
+              ]
+            ]
+          },
+          "genre": "Paper",
+          "keyword": "Computational; Paper",
+          "note": "Catalog row 1; docs: papers/2026_ReproducibleResearch/",
+          "container-title": "Zenodo",
+          "publisher": "Zenodo",
+          "DOI": "10.5281/zenodo.16903351",
+          "URL": "https://doi.org/10.5281/zenodo.16903351"
+        }
+      }
+    ],
+    "ResearchMap": {
+      "schema_version": 1,
+      "nodes": [
+        {
+          "id": "domain:active inference",
+          "kind": "domain",
+          "label": "Active Inference",
+          "url": "/publications.html?domain=🧠"
+        },
+        {
+          "id": "domain:aii ecosystem",
+          "kind": "domain",
+          "label": "AII Ecosystem",
+          "url": "/publications.html?domain=🌍"
+        }
+      ],
+      "edges": [],
+      "note": "Truncated shape example; use the dataset for connected graph records."
+    },
+    "ResearchTrails": {
+      "schema_version": 1,
+      "trails": [
+        {
+          "id": "active-inference-foundations",
+          "title": "From probability to Active Inference",
+          "summary": "Start with a small update rule, then distinguish that teaching example from broader accounts of cognition and Bayesian mechanics.",
+          "prerequisites": "Basic fractions; familiarity with conditional probability helps with the final paper.",
+          "steps": [
+            {
+              "kind": "demo",
+              "ref": "bayes",
+              "minutes": 10,
+              "goal": "Change a prior and likelihoods. Explain why an observation changes the posterior and identify impossible evidence.",
+              "title": "Binary Bayesian update",
+              "url": "/lab.html#bayes"
+            },
+            {
+              "kind": "work",
+              "ref": "Friedman2018WoodliceMenBayesianAccount098",
+              "minutes": 25,
+              "goal": "Read the interview for conceptual context. Separate discussion of the Free Energy Principle from experimental evidence.",
+              "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness. An interview with Karl Friston.",
+              "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
+            },
+            {
+              "kind": "video",
+              "ref": "/videos/institute-7UbCTp7BAUQ.html",
+              "minutes": 30,
+              "goal": "Sample the Fundamentals onboarding discussion and note unfamiliar terms to revisit in the monograph.",
+              "title": "Fundamentals of Active Inference (Onboarding & Introduction, Session 1) April 21, 2026",
+              "url": "/videos/institute-7UbCTp7BAUQ.html"
+            },
+            {
+              "kind": "work",
+              "ref": "Friedman2022WorkedExampleBayesianMechanics143",
+              "minutes": 40,
+              "goal": "Inspect the worked example's assumptions and equations; identify the extra structure beyond the binary update.",
+              "title": "A Worked Example of the Bayesian Mechanics of Classical Objects",
+              "url": "/works/Friedman2022WorkedExampleBayesianMechanics143.html"
+            }
+          ]
+        }
+      ]
+    },
     "Work": [
       {
         "num": 1,
@@ -1276,7 +1459,7 @@
           "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
           "type": "Paper",
           "abstract_url": "https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative001.html",
-          "page_sha256": "9ba3cda41ddd7225f9c19c7d4943037fb3efbb7738242fdb8cd3fdd821798017",
+          "page_sha256": "e785c771f803b7eeaa27448bb41a272a0d3a8e42a7f3d2bece420f33eae9c6c9",
           "citation_tags": {
             "citation_title": [
               "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
@@ -1489,11 +1672,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 917113957,
+        "source_bytes": 919181421,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6097,
-        "artifact_bytes": 918191882
+        "artifact_file_count": 6115,
+        "artifact_bytes": 920262248
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -6060,7 +6243,7 @@
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "3c72e378459c43004d1bc93fa81644411b82b557dfc1420387348049e7227156",
     "videos_index": "61b0365c3a46127192d80c29759fec0765edf37db9d4f75ed52d1b94d55b88bd",
-    "search": "f1b26af3c16bc01bc4beaabcc37b3afeb1f445e004982219914e8da4d8513bd9",
+    "search": "7ad686337138b704beddc43f0461b6c6ef9c2a05c8c68050ba4801bf175f8fac",
     "claims": "e44a525dff63651196ece8438ff26037a228d4d8841fb0002af51242a8ccb824",
     "scholar_verification_receipt": "eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759",
     "coverage_exceptions": "16ce9c455abf9ba7868369f24e6bacbf508fa07a0109d28f8b97ba82b0b8ecae",
@@ -6069,11 +6252,14 @@
     "organizations": "a7a60ac96b9d49a53c1c5f58bd9dd97261d8350d5669dc11d4c2b4724be14e7e",
     "resume": "a10489abe1ca480e63d50539f5807bec5caa9270ce7fbda9d68eeb2dc18834c9",
     "work_enrichment": "cd49a7b336b54f0e33a510415308a3c3210a302f10bce67dd887acc68ed897d6",
-    "scholar_readiness": "eabedecc7cd199761dbba04e2eb18c427cf011d641c11a4e251625c0d1a6af96",
-    "catalog": "58d7bf9024c6fe31a52011c83c46d64d40bbe060c9ace6689e2a4baf3b5f3d07",
+    "collection_catalog": "b559e7227f9c54037ffaad7e2f0a4fcdc2a02781d951b5a6be90f40124e43aa1",
+    "research_map": "08278ef61b0615631f07e371bd028243ad12c65c3c1b397766b8e2c55fc05f83",
+    "research_trails": "2e6a76a3974b495906a1764725835ffa3ef47065a304c812f7756fb17166d34e",
+    "scholar_readiness": "09be544ef31f6cb387d8bb32aa5e9367a09cbf27d01f0c5ee4700f296d601649",
+    "catalog": "537b1cda308ecd51aef0c534f57032fe11c27dfe1ce339655d8340f94be15643",
     "reconciliation": "ad919e5df64ebade8d2a85c4bc921461276b53d4e4de6e07ffb03ea59e005105",
     "reproducibility": "79fca6837f45ddfb7185c417c3ab9861d19c669c66c195142334492f8fe1840e",
-    "generated_manifest": "c0a89ee33e7e02b47bffc4874e9da69b8eea3ce5fa2aef02eb482a7bac38bf50",
+    "generated_manifest": "48af73a732ad73f248f2c9553d01e5d59da67cb87f68fbbe21186e02cdba1ede",
     "current_counts": "87dac247aa398bfe74e27a79dbf849e3769555f1fa4798be3b8e6565110fbe7a"
   },
   "source_provenance": {

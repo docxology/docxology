@@ -1,6 +1,29 @@
 {
-  "generated_at": "2026-10-23T17:10:56Z",
+  "generated_at": "2026-10-24T01:18:53Z",
   "artifacts": [
+    {
+      "name": "Research exploration tools",
+      "outputs": [
+        "collections.html",
+        "trails.html",
+        "research-map.html",
+        "lab.html",
+        "data/collection-catalog.json",
+        "data/research-map.json",
+        "data/research-trails.json"
+      ],
+      "sources": [
+        "data/works.json",
+        "data/videos.json",
+        "data/software.json",
+        "data/research-trails-source.json",
+        "bibliography.bib",
+        "papers/*/metadata.json",
+        "code/src/research_connections.py",
+        "code/src/site_nav.py"
+      ],
+      "command": "uv run python3 code/orchestrators/build_research_tools.py"
+    },
     {
       "name": "Blake publication pathway",
       "outputs": [
@@ -170,8 +193,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-10-23.json",
-        "reports/source_coverage_2026-10-23.md"
+        "reports/source_coverage_2026-10-24.json",
+        "reports/source_coverage_2026-10-24.md"
       ],
       "sources": [
         "data/works.json",
@@ -308,7 +331,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-10-23.json"
+        "reports/pages_artifact_growth_2026-10-24.json"
       ],
       "sources": [
         "tracked repository files",
@@ -717,7 +740,7 @@
     {
       "name": "External link report",
       "outputs": [
-        "reports/external_links_2026-10-23.json"
+        "reports/external_links_2026-10-24.json"
       ],
       "sources": [
         "all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"
@@ -767,18 +790,18 @@
     {
       "name": "External link triage",
       "outputs": [
-        "reports/external_links_triage_2026-10-23.json",
-        "reports/external_links_triage_2026-10-23.md"
+        "reports/external_links_triage_2026-10-24.json",
+        "reports/external_links_triage_2026-10-24.md"
       ],
       "sources": [
-        "reports/external_links_2026-10-23.json"
+        "reports/external_links_2026-10-24.json"
       ],
       "command": "python3 code/orchestrators/build_external_link_triage.py"
     },
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-10-23.json"
+        "reports/asset_size_2026-10-24.json"
       ],
       "sources": [
         "root HTML pages",
@@ -792,7 +815,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-10-23.json"
+        "reports/accessibility_static_2026-10-24.json"
       ],
       "sources": [
         "root HTML pages",

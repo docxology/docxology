@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-23T19:41:23Z",
+  "generated_at": "2026-10-23T23:15:18Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
-  "asset_count": 116,
+  "asset_count": 129,
   "budget_exceptions": {
     "publications.html": {
       "budget_bytes": 600000,
@@ -10,7 +10,7 @@
     }
   },
   "warnings": 0,
-  "total_bytes": 17974726,
+  "total_bytes": 18930037,
   "largest": [
     {
       "path": "data/videos.json",
@@ -43,6 +43,15 @@
       "path": "data/paired-publication-decisions.json",
       "kind": "json-data",
       "bytes": 747403,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "data/collection-catalog.json",
+      "kind": "json-data",
+      "bytes": 493783,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -87,7 +96,7 @@
     {
       "path": "publications.html",
       "kind": "html",
-      "bytes": 364245,
+      "bytes": 364855,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 600000,
       "budget_exception": {
@@ -116,6 +125,15 @@
       "ok": true
     },
     {
+      "path": "data/research-map.json",
+      "kind": "json-data",
+      "bytes": 320514,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
       "path": "data/videos-index.json",
       "kind": "json-data",
       "bytes": 303684,
@@ -136,7 +154,7 @@
     {
       "path": "repositories.html",
       "kind": "html",
-      "bytes": 236359,
+      "bytes": 236646,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,
@@ -145,7 +163,7 @@
     {
       "path": "software.html",
       "kind": "html",
-      "bytes": 235785,
+      "bytes": 236072,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,
@@ -154,7 +172,7 @@
     {
       "path": "updates.html",
       "kind": "html",
-      "bytes": 218989,
+      "bytes": 220632,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,
@@ -175,24 +193,6 @@
       "bytes": 182108,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
-      "budget_exception": null,
-      "ok": true
-    },
-    {
-      "path": "data/work-authors.json",
-      "kind": "json-data",
-      "bytes": 171414,
-      "baseline_budget_bytes": 4000000,
-      "budget_bytes": 4000000,
-      "budget_exception": null,
-      "ok": true
-    },
-    {
-      "path": "assets/hero-art/army-ants.webp",
-      "kind": "hero-art",
-      "bytes": 168864,
-      "baseline_budget_bytes": 320000,
-      "budget_bytes": 320000,
       "budget_exception": null,
       "ok": true
     }
