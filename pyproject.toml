@@ -57,7 +57,7 @@ select = ["E4", "E7", "E9", "F", "W605"]
 # together; it is not an installable wheel or an implicit build target.
 package = false
 # Match the qualified CI frontend; older tools must fail before syncing.
-required-version = ">=0.13.1"
+required-version = ">=0.13.5"
 # These native libraries require a wheel for the selected interpreter/platform.
 # PyYAML retains its pure-Python source installation path.
 no-build-package = ["pillow", "greenlet", "pymupdf"]

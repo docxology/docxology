@@ -1,6 +1,6 @@
 # Backend performance diagnostics
 
-Use Python 3.15 and uv 0.13.1 or later through the locked environment. The command measures two
+Use Python 3.15 and uv 0.13.5 or later through the locked environment. The command measures two
 fixed, read-only workloads: the complete local SEO invariant audit (`seo`) and
 all declared cached-step source fingerprints (`fingerprints`). Workload choices
 come from one registry in `code/src/backend_profiling.py`; fingerprint steps come
@@ -98,6 +98,6 @@ configuration, qualified on macOS arm64 and Linux x86-64. PyYAML currently has n
 CPython 3.15 wheel; its source installation remains allowed. The repository uses
 `safe_load`/`SafeLoader` and qualifies the pure-Python parser under Python 3.15. CI sets `UV_LOCKED=1`, so lock
 drift fails before validation. Missing required native wheels fail before an
-incidental source build. The project requires uv 0.13.1 or later; CI bootstraps
-the qualified 0.13.1 version. Python-running workflow jobs select `.python-version`
+incidental source build. The project requires uv 0.13.5 or later; CI bootstraps
+the qualified 0.13.5 version. Python-running workflow jobs select `.python-version`
 before execution, including the stdlib-only IndexNow job.
