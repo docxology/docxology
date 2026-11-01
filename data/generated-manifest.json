@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T01:10:51Z",
+  "generated_at": "2026-11-01T21:55:49Z",
   "artifacts": [
     {
       "name": "Research exploration tools",
@@ -271,7 +271,10 @@
         "meditations.html",
         "nft.html",
         "reports.html",
-        "research.html"
+        "research.html",
+        "works/Friedman2025CEREBRUMCaseEnabledReasoning118.html",
+        "works/Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174.html",
+        "works/Friedman2026LiteratureReviewArchitectureActive110.html"
       ],
       "sources": [
         "code/src/redirect_stubs.py",

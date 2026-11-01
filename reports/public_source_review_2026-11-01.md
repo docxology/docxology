@@ -2,21 +2,21 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `9c342e4b3a460df7fbb26c8c676a982f2f549939`
+Source commit: `2ab9223e55d282dd34b8b22f4d05e64b327de12c`
 
 ## Disposition summary
 
 | Status | Items |
 |---|---:|
-| Applied | 421 |
-| Deferred | 9 |
+| Applied | 430 |
+| Deferred | 0 |
 | Rejected | 328 |
 
 | Category | Applied | Deferred | Rejected |
 |---|---:|---:|---:|
 | `ambiguous_doi_change` | 64 | 0 | 0 |
 | `biographical_claim_change` | 10 | 0 | 0 |
-| `public_source_observation` | 0 | 9 | 0 |
+| `public_source_observation` | 9 | 0 | 0 |
 | `repository_classification` | 119 | 0 | 0 |
 | `scholar_metric_change` | 1 | 0 | 0 |
 | `zenodo_candidate` | 227 | 0 | 328 |
@@ -24,29 +24,21 @@ Source commit: `9c342e4b3a460df7fbb26c8c676a982f2f549939`
 ## Evidence inputs
 
 - `biographical_claim_decisions`: `data/biographical-claim-decisions.json` (`903cc0eb20dc926e887267998f5f686b69df88dacbccf99845e19e5f8073be3d`)
-- `claims_ledger`: `data/claims.json` (`7aa21f681de2345fe71d6645965fcbf08043f96302720bde8b06ed3c880021d7`)
+- `claims_ledger`: `data/claims.json` (`a38b31e75b4952f2dfe62aa3df7686421afb9c0b4a09be1abb11b49f21b1a30c`)
 - `doi_role_review`: `reports/doi_role_reconciliation_2026-08-25.json` (`8813014df946b8fd6b1777de95d16e57300fba56b32f3da59819bf8c5d8a01a6`)
 - `paired_publication_decisions`: `data/paired-publication-decisions.json` (`2e669450198b675a9642856bd204548d524d0507b9844a2c97dde7affe83f55b`)
 - `paired_publications`: `reports/paired_publications_2026-11-01.json` (`efa1fd97c4c5467a01fd30a0c92288f46f2b69c244f6457faee86569cade6f6c`)
 - `previous_public_source_snapshot`: `reports/public_source_snapshot_2026-10-18.json` (`8807ee5c67707819180c83c371ac9c2ee6f4ec9a136fc2d8f0603d1fc97fd849`)
 - `public_source_inventory`: `reports/public_source_inventory_2026-10-23.json` (`bdabf0003f0162fa28e9a3a6e44d5dfa4917ca8e06636b78e2db7b85c973b820`)
-- `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`ec81600feb3ce3d89c8f370f5805beb753b69507a0d8b2bc15db23178e8b392f`)
+- `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`c34a5118b0e04189584596c989d278dab8f71b83262987f2e69138dcd9ebacd6`)
 - `public_source_snapshot`: `reports/public_source_snapshot_2026-10-31.json` (`7df5c8e6b03c2a9231302d2d1528ad45fb21a7ca7c3c408d1f56f058c87fde4e`)
 - `repository_classification`: `data/repository-classification.json` (`9af19b0c2621b0ac1f8d4ad6e93fd71e6fe31c7c3f4597bb12bce9cbc442339c`)
-- `scholar_snapshot`: `data/scholar-snapshot.json` (`cd143d9d0e4a33a75cb32da5a4b63281c1b1fd09916a231731701b4ff842eb81`)
-- `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759`)
+- `scholar_snapshot`: `data/scholar-snapshot.json` (`2e2aab3529828a978757d3d08ecc57c9c7303ee9883c77ef765a646155a1cca9`)
+- `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`889e829f258bfaaca0c17d3cc2eec68ac114152e41e32a31f75b6bb925f9b16d`)
 
 ## Deferred review
 
-- **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferAnts**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
-- **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
-- **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
-- **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/cognitive**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
-- **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/fep_lean**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
-- **`public_source_observation` — public-source-observation:GitHub user ActiveInferenceInstitute**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
-- **`public_source_observation` — public-source-observation:GitHub user docxology**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
-- **`public_source_observation` — public-source-observation:Zenodo ORCID-linked records**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
-- **`public_source_observation` — public-source-observation:Zenodo exact-name creator records**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
+None.
 
 ## Applied decisions
 
@@ -124,6 +116,15 @@ Source commit: `9c342e4b3a460df7fbb26c8c676a982f2f549939`
 - **`biographical_claim_change` — biographical-claim:nsf-postdoc-affiliation**: A durable review decision matches the exact claim and cited-source evidence.
 - **`biographical_claim_change` — biographical-claim:orcid-canonical-identifier**: A durable review decision matches the exact claim and cited-source evidence.
 - **`biographical_claim_change` — biographical-claim:stanford-phd**: A durable review decision matches the exact claim and cited-source evidence.
+- **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferAnts**: A durable review decision matches the exact before/after public-source observation.
+- **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal**: A durable review decision matches the exact before/after public-source observation.
+- **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation**: A durable review decision matches the exact before/after public-source observation.
+- **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/cognitive**: A durable review decision matches the exact before/after public-source observation.
+- **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/fep_lean**: A durable review decision matches the exact before/after public-source observation.
+- **`public_source_observation` — public-source-observation:GitHub user ActiveInferenceInstitute**: A durable review decision matches the exact before/after public-source observation.
+- **`public_source_observation` — public-source-observation:GitHub user docxology**: A durable review decision matches the exact before/after public-source observation.
+- **`public_source_observation` — public-source-observation:Zenodo ORCID-linked records**: A durable review decision matches the exact before/after public-source observation.
+- **`public_source_observation` — public-source-observation:Zenodo exact-name creator records**: A durable review decision matches the exact before/after public-source observation.
 - **`repository_classification` — repository:ActiveInferenceInstitute/aii-org**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:ActiveInferenceInstitute/ants**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:ActiveInferenceInstitute/institute_website**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.

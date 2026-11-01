@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-11-01T01:19:25Z",
+      "generated_at": "2026-11-01T21:46:47Z",
       "path": "data/claims.json",
-      "sha256": "7aa21f681de2345fe71d6645965fcbf08043f96302720bde8b06ed3c880021d7",
+      "sha256": "a38b31e75b4952f2dfe62aa3df7686421afb9c0b4a09be1abb11b49f21b1a30c",
       "source_commit": null
     },
     "doi_role_review": {
@@ -47,7 +47,7 @@
     "public_source_observation_decisions": {
       "generated_at": null,
       "path": "data/public-source-observation-decisions.json",
-      "sha256": "ec81600feb3ce3d89c8f370f5805beb753b69507a0d8b2bc15db23178e8b392f",
+      "sha256": "c34a5118b0e04189584596c989d278dab8f71b83262987f2e69138dcd9ebacd6",
       "source_commit": null
     },
     "public_source_snapshot": {
@@ -65,13 +65,13 @@
     "scholar_snapshot": {
       "generated_at": null,
       "path": "data/scholar-snapshot.json",
-      "sha256": "cd143d9d0e4a33a75cb32da5a4b63281c1b1fd09916a231731701b4ff842eb81",
+      "sha256": "2e2aab3529828a978757d3d08ecc57c9c7303ee9883c77ef765a646155a1cca9",
       "source_commit": null
     },
     "scholar_verification_receipt": {
       "generated_at": null,
       "path": "data/scholar-verification-receipt.json",
-      "sha256": "eb391909ecc06c2ade1fc2f312cc6870320c33a6f81634c120f608af3ad3d759",
+      "sha256": "889e829f258bfaaca0c17d3cc2eec68ac114152e41e32a31f75b6bb925f9b16d",
       "source_commit": null
     }
   },
@@ -1427,18 +1427,18 @@
           "updated_at": "2026-10-08T22:10:44Z"
         },
         "previous_sha256": "351a2922a4cf08a4406b922dcadeb7d586fbb2664b815b6f9fde9f8311522d64",
-        "review_decision": "",
-        "review_rationale": ""
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed the recorded stargazers_count, updated_at changes. Canonical repository name, URL, and primary language are unchanged; the fresh primary API observation agrees on identity. These are activity/star observations and require no scientific or catalog-identity change. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json."
       },
       "category": "public_source_observation",
       "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferAnts",
-      "reason": "A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
       "sources": [
         "data/public-source-observation-decisions.json",
         "reports/public_source_snapshot_2026-10-18.json",
         "reports/public_source_snapshot_2026-10-31.json"
       ],
-      "status": "deferred"
+      "status": "applied"
     },
     {
       "candidate": {
@@ -1460,18 +1460,18 @@
           "updated_at": "2026-10-02T04:21:43Z"
         },
         "previous_sha256": "6d0348a93d5db51583ac06717ac59994bc07c86fb8d9513403cf1a203f3d1283",
-        "review_decision": "",
-        "review_rationale": ""
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed the recorded stargazers_count, updated_at changes. Canonical repository name, URL, and primary language are unchanged; the fresh primary API observation agrees on identity. These are activity/star observations and require no scientific or catalog-identity change. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json."
       },
       "category": "public_source_observation",
       "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal",
-      "reason": "A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
       "sources": [
         "data/public-source-observation-decisions.json",
         "reports/public_source_snapshot_2026-10-18.json",
         "reports/public_source_snapshot_2026-10-31.json"
       ],
-      "status": "deferred"
+      "status": "applied"
     },
     {
       "candidate": {
@@ -1493,18 +1493,18 @@
           "updated_at": "2026-10-18T19:08:26Z"
         },
         "previous_sha256": "f3d822ab108d6ae8fe4bd97ee9d475b99c109d5a9830e327e54f0dff83aadbc8",
-        "review_decision": "",
-        "review_rationale": ""
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed the recorded stargazers_count, updated_at changes. Canonical repository name, URL, and primary language are unchanged; the fresh primary API observation agrees on identity. These are activity/star observations and require no scientific or catalog-identity change. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json."
       },
       "category": "public_source_observation",
       "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
-      "reason": "A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
       "sources": [
         "data/public-source-observation-decisions.json",
         "reports/public_source_snapshot_2026-10-18.json",
         "reports/public_source_snapshot_2026-10-31.json"
       ],
-      "status": "deferred"
+      "status": "applied"
     },
     {
       "candidate": {
@@ -1526,18 +1526,18 @@
           "updated_at": "2026-10-13T23:27:13Z"
         },
         "previous_sha256": "e6784afa19f630b38ad94dc06da2eac2af029fbfa73ebf5140ae035a5195535d",
-        "review_decision": "",
-        "review_rationale": ""
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed the recorded stargazers_count, updated_at changes. Canonical repository name, URL, and primary language are unchanged; the fresh primary API observation agrees on identity. These are activity/star observations and require no scientific or catalog-identity change. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json."
       },
       "category": "public_source_observation",
       "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/cognitive",
-      "reason": "A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
       "sources": [
         "data/public-source-observation-decisions.json",
         "reports/public_source_snapshot_2026-10-18.json",
         "reports/public_source_snapshot_2026-10-31.json"
       ],
-      "status": "deferred"
+      "status": "applied"
     },
     {
       "candidate": {
@@ -1559,22 +1559,26 @@
           "updated_at": "2026-10-18T17:35:10Z"
         },
         "previous_sha256": "9680c73771939fd2efa596c13c2eb3f11375a16cab451cfcf21acee9aa78c4f1",
-        "review_decision": "",
-        "review_rationale": ""
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed the recorded stargazers_count, updated_at changes. Canonical repository name, URL, and primary language are unchanged; the fresh primary API observation agrees on identity. These are activity/star observations and require no scientific or catalog-identity change. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json."
       },
       "category": "public_source_observation",
       "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/fep_lean",
-      "reason": "A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
       "sources": [
         "data/public-source-observation-decisions.json",
         "reports/public_source_snapshot_2026-10-18.json",
         "reports/public_source_snapshot_2026-10-31.json"
       ],
-      "status": "deferred"
+      "status": "applied"
     },
     {
       "candidate": {
-        "curated_targets": [],
+        "curated_targets": [
+          "data/github-repositories.json",
+          "data/current-counts.json",
+          "reports/current_counts.md"
+        ],
         "current": {
           "html_url": "https://github.com/ActiveInferenceInstitute",
           "login": "ActiveInferenceInstitute",
@@ -1592,22 +1596,26 @@
           "updated_at": "2026-09-22T19:05:32Z"
         },
         "previous_sha256": "5cd80697510d0909b1d8555b986695809c8aa42cfdb61a5b164bd70d55661bd7",
-        "review_decision": "",
-        "review_rationale": ""
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed public repository count 45 to 46; the complete cached inventory contains exactly 46 records for ActiveInferenceInstitute, and the fresh API check agrees. Account identity and type are unchanged. Existing inventory-derived projections already reflect this refresh; no additional biographical interpretation is made. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json."
       },
       "category": "public_source_observation",
       "id": "public-source-observation:GitHub user ActiveInferenceInstitute",
-      "reason": "A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
       "sources": [
         "data/public-source-observation-decisions.json",
         "reports/public_source_snapshot_2026-10-18.json",
         "reports/public_source_snapshot_2026-10-31.json"
       ],
-      "status": "deferred"
+      "status": "applied"
     },
     {
       "candidate": {
-        "curated_targets": [],
+        "curated_targets": [
+          "data/github-repositories.json",
+          "data/current-counts.json",
+          "reports/current_counts.md"
+        ],
         "current": {
           "html_url": "https://github.com/docxology",
           "login": "docxology",
@@ -1625,22 +1633,26 @@
           "updated_at": "2026-10-05T21:44:09Z"
         },
         "previous_sha256": "6ee7f644681a4a35460851296694b214afd22bc8b81cd1bb3157fd7103a7625e",
-        "review_decision": "",
-        "review_rationale": ""
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed public repository count 239 to 245; the complete cached inventory contains exactly 245 records for docxology, and the fresh API check agrees. Account identity and type are unchanged. Existing inventory-derived projections already reflect this refresh; no additional biographical interpretation is made. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json."
       },
       "category": "public_source_observation",
       "id": "public-source-observation:GitHub user docxology",
-      "reason": "A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
       "sources": [
         "data/public-source-observation-decisions.json",
         "reports/public_source_snapshot_2026-10-18.json",
         "reports/public_source_snapshot_2026-10-31.json"
       ],
-      "status": "deferred"
+      "status": "applied"
     },
     {
       "candidate": {
-        "curated_targets": [],
+        "curated_targets": [
+          "pages/BIBLIOGRAPHY.md",
+          "papers/2026_ActiveInferenceLanguage/metadata.json",
+          "data/paired-publication-decisions.json"
+        ],
         "current": {
           "first_doi": "10.5281/zenodo.22409419",
           "first_title": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
@@ -1654,22 +1666,26 @@
           "total": 164
         },
         "previous_sha256": "f99be675c238193294f4c23dfe8d451b8258e698bda67ff5dd410df3bcfd5efe",
-        "review_decision": "",
-        "review_rationale": ""
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed the changed discovery total and latest-record fields against the retained snapshots and fresh primary API check. The latest record is the already catalogued AILM v1.0.0 artifact (record 22409419), cited by its canonical concept DOI 10.5281/zenodo.22409418. ORCID-linked and exact-name query sets overlap and are not bibliography totals. Existing publication-pair decisions remain authoritative; no duplicate row or scientific claim is introduced. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json."
       },
       "category": "public_source_observation",
       "id": "public-source-observation:Zenodo ORCID-linked records",
-      "reason": "A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
       "sources": [
         "data/public-source-observation-decisions.json",
         "reports/public_source_snapshot_2026-10-18.json",
         "reports/public_source_snapshot_2026-10-31.json"
       ],
-      "status": "deferred"
+      "status": "applied"
     },
     {
       "candidate": {
-        "curated_targets": [],
+        "curated_targets": [
+          "pages/BIBLIOGRAPHY.md",
+          "papers/2026_ActiveInferenceLanguage/metadata.json",
+          "data/paired-publication-decisions.json"
+        ],
         "current": {
           "first_doi": "10.5281/zenodo.22409419",
           "first_title": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
@@ -1683,18 +1699,18 @@
           "total": 76
         },
         "previous_sha256": "8de32b75e48eb01bf0bd3fbbb5241768fb7bd755f11c9122119e032591beae2d",
-        "review_decision": "",
-        "review_rationale": ""
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed the changed discovery total and latest-record fields against the retained snapshots and fresh primary API check. The latest record is the already catalogued AILM v1.0.0 artifact (record 22409419), cited by its canonical concept DOI 10.5281/zenodo.22409418. ORCID-linked and exact-name query sets overlap and are not bibliography totals. Existing publication-pair decisions remain authoritative; no duplicate row or scientific claim is introduced. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json."
       },
       "category": "public_source_observation",
       "id": "public-source-observation:Zenodo exact-name creator records",
-      "reason": "A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
       "sources": [
         "data/public-source-observation-decisions.json",
         "reports/public_source_snapshot_2026-10-18.json",
         "reports/public_source_snapshot_2026-10-31.json"
       ],
-      "status": "deferred"
+      "status": "applied"
     },
     {
       "candidate": {
@@ -3960,18 +3976,18 @@
     {
       "candidate": {
         "current": {
-          "citations": 824,
+          "citations": 835,
           "h_index": 14,
-          "i10_index": 17
+          "i10_index": 16
         },
         "observed": {
-          "citations": 824,
+          "citations": 835,
           "h_index": 14,
-          "i10_index": 17
+          "i10_index": 16
         },
         "profile_id": "DXjPFtYAAAAJ",
         "receipt_valid": true,
-        "receipt_verified_at": "2026-10-05T22:43:15Z"
+        "receipt_verified_at": "2026-11-01T21:36:17Z"
       },
       "category": "scholar_metric_change",
       "id": "scholar-metrics",
@@ -18419,12 +18435,12 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "9c342e4b3a460df7fbb26c8c676a982f2f549939",
-  "source_tree_sha": "93318f567cffc6391a7de634839825d68a919615",
+  "source_commit": "2ab9223e55d282dd34b8b22f4d05e64b327de12c",
+  "source_tree_sha": "8adba4bb1d102b135d53a1285ebd0ba7540764d7",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
-    "applied": 421,
+    "applied": 430,
     "categories": {
       "ambiguous_doi_change": {
         "applied": 64,
@@ -18437,8 +18453,8 @@
         "rejected": 0
       },
       "public_source_observation": {
-        "applied": 0,
-        "deferred": 9,
+        "applied": 9,
+        "deferred": 0,
         "rejected": 0
       },
       "repository_classification": {
@@ -18457,9 +18473,9 @@
         "rejected": 328
       }
     },
-    "deferred": 9,
+    "deferred": 0,
     "items": 758,
     "rejected": 328,
-    "review_required": true
+    "review_required": false
   }
 }
