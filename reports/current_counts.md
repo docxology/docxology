@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-10-31T23:38:45+00:00`
+Generated: `2026-11-01T01:15:43+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -25,7 +25,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
 - public_source_snapshot: `reports/public_source_snapshot_2026-10-31.json`
-- paired_publications: `reports/paired_publications_2026-10-31.json`
+- paired_publications: `reports/paired_publications_2026-11-01.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
 ## Counts
@@ -60,16 +60,16 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Software
 
-- docxology_owned: `127`
-- active_inference_institute: `41`
-- curated_total: `168`
+- docxology_owned: `130`
+- active_inference_institute: `42`
+- curated_total: `172`
 
 ### Generated Exports
 
 - data_works_json: `228`
-- data_software_json: `168`
+- data_software_json: `172`
 - data_publications_ld_main_entity: `228`
-- data_software_ld_main_entity: `168`
+- data_software_ld_main_entity: `172`
 
 ### GitHub Inventory
 
@@ -107,10 +107,10 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - pairs: `555`
 - strong_pairs: `73`
 - software_catalogued: `1`
-- already_reviewed: `544`
-- needs_review: `5`
-- create_new: `2`
-- update_existing: `3`
+- already_reviewed: `549`
+- needs_review: `0`
+- create_new: `0`
+- update_existing: `5`
 
 ### Paired Publication Decisions
 

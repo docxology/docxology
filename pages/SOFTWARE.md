@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
  
- *127 original repositories · 41 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+ *130 original repositories · 42 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
  
  *[All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -149,6 +149,9 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [silver_line](https://github.com/docxology/silver_line) | A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse; repository v0.2.0 · [📄](../papers/2026_SilverLine/) · [Citation DOI](https://doi.org/10.5281/zenodo.22833485) · [Zenodo artifact v0.1.0](https://doi.org/10.5281/zenodo.22833486) | Python | 0 | 2026-10 |
 | [template_advanced_literature_review](https://github.com/docxology/template_advanced_literature_review) | Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, and deterministic synthesis | Python | 0 | 2026-08 |
 | [crescent-city-intel](https://github.com/docxology/crescent-city-intel) | Comprehensive local intelligence platform for Crescent City, CA — municipal code, real-time alerts, RAG chat, and analytics | TypeScript | 0 | 2026-10 |
+| [region-intel](https://github.com/docxology/region-intel) | Shared regional civic intelligence methods — verified acquisition, alert adapters, search, RAG, analytics, and publication/manuscript tooling | TypeScript | 0 | 2026-10 |
+| [davis-ca-intel](https://github.com/docxology/davis-ca-intel) | Davis and Yolo County civic intelligence — thin regional orchestration powered by region-intel | TeX | 0 | 2026-11 |
+| [rikishi](https://github.com/docxology/rikishi) | SUMO ontology operator, reasoning workbench, source-bound FEP connections, and reproducible manuscript | Python | 0 | 2026-10 |
 | [math4wisdom-superhuman-docs-archive](https://github.com/docxology/math4wisdom-superhuman-docs-archive) | Structured, read-only Math4Wisdom Superhuman Docs archive | TypeScript | 0 | 2026-08 |
 | [docxplus](https://github.com/docxology/docxplus) | docxplus — the Intelligent Document Container: format, tools, and formal specification · [📄](../papers/2026_DocxplusIntelligentDocument/) · [Zenodo](https://doi.org/10.5281/zenodo.21983948) | Python | 0 | 2026-09 |
 | [agentic_os_security](https://github.com/docxology/agentic_os_security) | Agentic Security and Operating Systems — deep review and prospectus of OpSec, Cognitive Security, and Agentic Cyber Security (paper source) · [📄](../papers/2026_AgenticSecurityOperating/) · [Zenodo](https://doi.org/10.5281/zenodo.22754351) | TeX | 0 | 2026-09 |
@@ -197,7 +200,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [Start](https://github.com/ActiveInferenceInstitute/Start) | Institute onboarding hub — getting-started guides, contributor pathways, project index, and orientation materials for new participants | Python | 6 | 2026-09 |
 | [act_inf_metaanalysis](https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis) | A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus. | TeX | 6 | 2026-08 |
 | [Knowledge-Engineering](https://github.com/ActiveInferenceInstitute/Knowledge-Engineering) | Knowledge engineering tools and workflows — ontology alignment, concept mapping, and structured knowledge-base construction for Active Inference | Jupyter | 6 | 2026-08 |
-| [fep_formal](https://github.com/ActiveInferenceInstitute/fep_formal) | Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline · [📄](../papers/2026_FEPLean/) · [Zenodo artifact v1.1.0](https://doi.org/10.5281/zenodo.22072956) · [Citation DOI](https://doi.org/10.5281/zenodo.19699233) · [Zenodo software archive](https://doi.org/10.5281/zenodo.23196891) | Python | 5 | 2026-10 |
+| [fep_formal](https://github.com/ActiveInferenceInstitute/fep_formal) | Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline · [📄](../papers/2026_FEPLean/) · [Zenodo artifact v2.1.0](https://zenodo.org/records/23607007) · [Citation DOI](https://doi.org/10.5281/zenodo.19699233) · [Zenodo software archive](https://doi.org/10.5281/zenodo.23196891) | Python | 5 | 2026-10 |
 | [Biofirm](https://github.com/ActiveInferenceInstitute/Biofirm) | Bioregional Active Inference for organizational stewardship — applying free energy minimization to ecological and community governance systems | Python | 4 | 2026-09 |
 | [pymcp](https://github.com/ActiveInferenceInstitute/pymcp) | PyMCP — Model Context Protocol bridge for PyMDP, enabling Active Inference agents to interoperate with MCP-compatible AI tooling | Python | 3 | 2026-08 |
 | [policy_entanglement](https://github.com/ActiveInferenceInstitute/policy_entanglement) | Policy Entanglement in Active Inference v1.0.0 · [Zenodo](https://doi.org/10.5281/zenodo.20418904) · [📄](../papers/2026_PolicyEntanglementActive/) | Python | 3 | 2026-10 |
@@ -219,6 +222,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [Active_Inference_Un0](https://github.com/ActiveInferenceInstitute/Active_Inference_Un0) | Public repository with no description, language, or committed contents at the 2026-08-26 review | — | 0 | 2026-07 |
 | [Working_Groups](https://github.com/ActiveInferenceInstitute/Working_Groups) | Active Inference Institute Working Groups: draft Charter, Operating Procedures, and the position paper Coordinating the Field · [Zenodo version v1.0.0](https://doi.org/10.5281/zenodo.23066904) · [Citation DOI](https://doi.org/10.5281/zenodo.23066903) · [📄](../papers/2026_CoordinatingField/) | — | 0 | 2026-09 |
 | [active_inference_language_model](https://github.com/ActiveInferenceInstitute/active_inference_language_model) | Active Inference Language Model — public repository with no committed contents at the 2026-10-06 review · [Zenodo](https://doi.org/10.5281/zenodo.22409418) · [📄](../papers/2026_ActiveInferenceLanguage/) | — | 0 | 2026-10 |
+| [active_inference_battleship](https://github.com/ActiveInferenceInstitute/active_inference_battleship) | GNN-based active inference for Battleship — playable dashboard, interpretable decisions, reproducible manuscript, and animated lecture · [Citation DOI](https://doi.org/10.5281/zenodo.23670187) · [📄](../papers/2026_GNNBasedActive/) | TypeScript | 0 | 2026-10 |
 
 ---
 
@@ -230,14 +234,14 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Entomology & Biology | 9 | `ento_linguistics`, `MetaInformAnt`, `ant_stack`, `ant-pheromone`, `cohereants`, `FORMINDEX`, `biol-1`, `biol-8`, `biology_textbook` |
 | Synergetics & Geometry | 6 | `QuadCraft`, `QuadMath`, `ivm-xyz`, `godel_ivm`, `symergetics`, `blake_jiang` |
 | Cognitive Security | 5 | `p3if`, `opentir`, `CogSecSkills`, `cognitive_integrity`, `agentic_os_security` |
-| Developer Tools | 27 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `template_madlib`, `ntqr_llm`, `itrace`, `coasys`, `steganographer`, `SynthOBS`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake`, `thalia`, `bond`, `template_advanced_literature_review`, `BeeStack`, `docxplus`, `FractiSkills`, `dicklesworthstone_meta_operator`, `Skillarum`, `nockchain-migration`, `daf-jev` |
-| Data & Policy | 5 | `hhs-opendata`, `crescent-city`, `grateful_data`, `crescent-city-intel`, `multi-time` |
+| Developer Tools | 28 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `template_madlib`, `ntqr_llm`, `itrace`, `coasys`, `steganographer`, `SynthOBS`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake`, `thalia`, `bond`, `template_advanced_literature_review`, `BeeStack`, `docxplus`, `FractiSkills`, `dicklesworthstone_meta_operator`, `Skillarum`, `nockchain-migration`, `daf-jev`, `rikishi` |
+| Data & Policy | 7 | `hhs-opendata`, `crescent-city`, `grateful_data`, `crescent-city-intel`, `multi-time`, `region-intel`, `davis-ca-intel` |
 | Education | 7 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook`, `AGEINT`, `OmniLatticeTextbook` |
 | Other | 6 | `cascadia`, `fuller-obsidian`, `service`, `flick`, `Digi-PPPiP`, `math4wisdom-superhuman-docs-archive` |
 | Research Practice | 9 | `line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register`, `blue_line`, `green_line`, `silver_line` |
 | Computational Research | 2 | `thanks_for_nothing`, `active_assembly_theory_and_practice` |
-| **docxology subtotal** | **127** | |
-| **Grand Total** | **168** | |
+| **docxology subtotal** | **130** | |
+| **Grand Total** | **172** | |
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; GitHub reports the AII account as an **Organization** (observed 2026-10-06). See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 
 ---

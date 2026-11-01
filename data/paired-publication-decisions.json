@@ -15134,7 +15134,137 @@
           "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f"
         }
       ]
+    },
+    {
+      "id": "review-2026-11-01-081fa6b7919031e4",
+      "decision": "accept",
+      "decided_at": "2026-11-01T00:00:00+00:00",
+      "decided_by": "Droid (owner-authorized session)",
+      "doi": "10.5281/zenodo.21388456",
+      "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+      "candidate_github_repo": "docxology/blake",
+      "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.2.0",
+      "zenodo_record_url": "https://zenodo.org/records/21388456",
+      "release_tag": "v0.2.0",
+      "folder": "2026_FourfoldVision",
+      "representation": "version-history-only",
+      "rationale": "Fourfold Vision is already indexed as bibliography row #196 (papers/2026_FourfoldVision, citation DOI 10.5281/zenodo.21388456) whose primary version record 21388457 reports v0.3.0. The docxology/blake v0.2.0 release carries no DOI/release cross-link evidence, so no automatic update applies; the release is version history under the existing citation DOI, not a duplicate work.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21388456",
+          "github_repo": "docxology/blake",
+          "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/21388456",
+          "record_title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+          "release_tag": "v0.2.0"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-11-01-3aa7e55c405cbeff",
+      "decision": "accept",
+      "decided_at": "2026-11-01T00:00:00+00:00",
+      "decided_by": "Droid (owner-authorized session)",
+      "doi": "10.5281/zenodo.7803313",
+      "title": "Generalized_Notation_Notation (GNN)",
+      "candidate_github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+      "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v5.0.1",
+      "zenodo_record_url": "https://zenodo.org/records/7803313",
+      "release_tag": "v5.0.1",
+      "folder": "2026_GeneralizedNotationNotationGNN",
+      "representation": "version-history-only",
+      "rationale": "GNN is already catalogued as bibliography row #168 (papers/2026_GeneralizedNotationNotationGNN, DOI 10.5281/zenodo.7803313), and the separate GNN software DOI 10.5281/zenodo.19600217 is already recorded in the pages/SOFTWARE.md AII row. The v5.0.1 release is version history under the existing citation DOI; no duplicate bibliography row and no automatic update without cross-link evidence.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v5.0.1",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "release_tag": "v5.0.1"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-11-01-823741f764915a51",
+      "decision": "accept",
+      "decided_at": "2026-11-01T00:00:00+00:00",
+      "decided_by": "Droid (owner-authorized session)",
+      "doi": "10.5281/zenodo.23196891",
+      "title": "fep_formal: Towards Lean 4 Formalization of the Free Energy Principle",
+      "candidate_github_repo": "ActiveInferenceInstitute/fep_formal",
+      "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v2.1.0",
+      "zenodo_record_url": "https://zenodo.org/records/23196891",
+      "release_tag": "v2.1.0",
+      "folder": "2026_FepFormal",
+      "representation": "version-history-only",
+      "rationale": "The FEP formalization work is represented by the docxology/FEPLean row (citation DOI 10.5281/zenodo.19699233, version artifact updated to v2.1.0 on 2026-10-31). The ActiveInferenceInstitute/fep_formal record 23196891 with tag v2.1.0 is a parallel owner deposit/version history of the same release line, consistent with the standing review-2026-10-16 decisions for this record; it does not create a distinct work.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23196891",
+          "github_repo": "ActiveInferenceInstitute/fep_formal",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v2.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/23196891",
+          "record_title": "fep_formal: Towards Lean 4 Formalization of the Free Energy Principle",
+          "release_tag": "v2.1.0"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-11-01-e3455c1b0d7e39f5",
+      "decision": "accept",
+      "decided_at": "2026-11-01T00:00:00+00:00",
+      "decided_by": "Droid (owner-authorized session)",
+      "doi": "10.5281/zenodo.23670187",
+      "title": "GNN-based active inference for Battleship",
+      "candidate_github_repo": "ActiveInferenceInstitute/active_inference_battleship",
+      "github_release_url": "https://github.com/ActiveInferenceInstitute/active_inference_battleship/releases/tag/v0.4.0",
+      "zenodo_record_url": "https://zenodo.org/records/23670187",
+      "release_tag": "v0.4.0",
+      "folder": "2026_GNNBasedActive",
+      "representation": "version-history-only",
+      "rationale": "The strong v0.5.0 pair was applied on 2026-10-31 as bibliography row #232 (papers/2026_GNNBasedActive). The v0.4.0 release is an earlier version of the same DOI/release family; it is version history, not a duplicate row.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23670187",
+          "github_repo": "ActiveInferenceInstitute/active_inference_battleship",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/active_inference_battleship/releases/tag/v0.4.0",
+          "zenodo_record_url": "https://zenodo.org/records/23670187",
+          "record_title": "GNN-based active inference for Battleship",
+          "release_tag": "v0.4.0"
+        }
+      ]
+    },
+    {
+      "id": "review-2026-11-01-98856ee73469f7b1",
+      "decision": "accept",
+      "decided_at": "2026-11-01T00:00:00+00:00",
+      "decided_by": "Droid (owner-authorized session)",
+      "doi": "10.5281/zenodo.21047573",
+      "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+      "candidate_github_repo": "docxology/blake",
+      "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.2.0",
+      "zenodo_record_url": "https://zenodo.org/records/21047573",
+      "release_tag": "v0.2.0",
+      "folder": "2026_MappingWilliamBlake",
+      "representation": "version-history-only",
+      "rationale": "Mapping William Blake's Works is already indexed as bibliography row #179 (papers/2026_MappingWilliamBlake, citation DOI 10.5281/zenodo.21047573), and review-2026-10-16-696c60e17f73 already records this record as version-history-only. The docxology/blake v0.2.0 release lacks DOI/release cross-link evidence, so no automatic update applies.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21047573",
+          "github_repo": "docxology/blake",
+          "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/21047573",
+          "record_title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+          "release_tag": "v0.2.0"
+        }
+      ]
     }
   ],
-  "updated_at": "2026-10-23T17:47:59+00:00"
+  "updated_at": "2026-11-01T00:00:00+00:00"
 }

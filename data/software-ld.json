@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Software",
-    "description": "127 original repositories and 41 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
+    "description": "130 original repositories and 42 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -1772,6 +1772,49 @@
         },
         {
             "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/region-intel#software",
+            "name": "region-intel",
+            "description": "Shared regional civic intelligence methods — verified acquisition, alert adapters, search, RAG, analytics, and publication/manuscript tooling",
+            "codeRepository": "https://github.com/docxology/region-intel",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TypeScript",
+            "dateCreated": "2026-10-30T21:57:19Z",
+            "dateModified": "2026-10-31T22:39:03Z"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/davis-ca-intel#software",
+            "name": "davis-ca-intel",
+            "description": "Davis and Yolo County civic intelligence — thin regional orchestration powered by region-intel",
+            "codeRepository": "https://github.com/docxology/davis-ca-intel",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TeX",
+            "dateCreated": "2026-10-30T21:54:41Z",
+            "dateModified": "2026-10-31T22:35:50Z"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/rikishi#software",
+            "name": "rikishi",
+            "description": "SUMO ontology operator, reasoning workbench, source-bound FEP connections, and reproducible manuscript",
+            "codeRepository": "https://github.com/docxology/rikishi",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
+            "dateCreated": "2026-10-20T00:57:09Z",
+            "dateModified": "2026-10-31T07:31:35Z"
+        },
+        {
+            "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/math4wisdom-superhuman-docs-archive#software",
             "name": "math4wisdom-superhuman-docs-archive",
             "description": "Structured, read-only Math4Wisdom Superhuman Docs archive",
@@ -2319,7 +2362,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/ActiveInferenceInstitute/fep_formal#software",
             "name": "fep_formal",
-            "description": "Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI · Zenodo software archive",
+            "description": "Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline ·  · Zenodo artifact v2.1.0 · Citation DOI · Zenodo software archive",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/fep_formal",
             "author": {
                 "@type": "Person",
@@ -2658,6 +2701,22 @@
             "dateCreated": "2026-09-28T00:12:03Z",
             "dateModified": "2026-10-31T00:05:50Z",
             "sameAs": "https://doi.org/10.5281/zenodo.22409418"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/ActiveInferenceInstitute/active_inference_battleship#software",
+            "name": "active_inference_battleship",
+            "description": "GNN-based active inference for Battleship — playable dashboard, interpretable decisions, reproducible manuscript, and animated lecture · Citation DOI",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/active_inference_battleship",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TypeScript",
+            "license": "https://spdx.org/licenses/MIT.html",
+            "dateCreated": "2026-10-23T15:55:50Z",
+            "dateModified": "2026-10-26T21:33:06Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.23670187"
         }
     ]
 }

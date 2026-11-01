@@ -66,8 +66,13 @@ Recurring checks below are operating obligations, not unfinished feature work.
   primary-repository promotion requires an individual source-backed decision.
   Review the current classification queue rather than relying on historical
   queue counts.
-- Open work: none in the reviewed queue; retain this as a refresh-triggered
-  classification check, not a pending catalog addition.
+- Open work: none. The 2026-10-31 refresh queued four new primary repositories
+  (`rikishi`, `region-intel`, `davis-ca-intel`, and AII
+  `active_inference_battleship`) and the fork `specification`; all were
+  individually reviewed on 2026-11-01 and the four primaries were promoted
+  into `pages/SOFTWARE.md` with source-backed descriptions, while the fork was
+  acknowledged under the standing fork policy. Retain this as a
+  refresh-triggered classification check.
 
 ### DOC-006 — Refresh external evidence and coverage exceptions
 

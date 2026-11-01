@@ -52,7 +52,7 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.19699233
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-10-31T23:30:44Z
+- Last checked: 2026-11-01T01:04:10Z
 - Artifact DOI: 10.5281/zenodo.22072956
 
 ## Prerequisites
