@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T01:18:53Z",
+  "generated_at": "2026-11-01T00:09:06Z",
   "artifacts": [
     {
       "name": "Research exploration tools",
@@ -27,6 +27,7 @@
     {
       "name": "Blake publication pathway",
       "outputs": [
+        "blake-pathway.html",
         "pages/BLAKE.md",
         "data/blake-index.json"
       ],
@@ -193,8 +194,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-10-24.json",
-        "reports/source_coverage_2026-10-24.md"
+        "reports/source_coverage_2026-10-31.json",
+        "reports/source_coverage_2026-10-31.md"
       ],
       "sources": [
         "data/works.json",
@@ -331,7 +332,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-10-24.json"
+        "reports/pages_artifact_growth_2026-11-01.json"
       ],
       "sources": [
         "tracked repository files",
@@ -441,7 +442,7 @@
     {
       "name": "Paired publication sync report",
       "outputs": [
-        "reports/paired_publications_2026-10-23.json"
+        "reports/paired_publications_2026-10-31.json"
       ],
       "sources": [
         "GitHub Releases API",
@@ -459,7 +460,7 @@
         "reports/paired_publications_review_queue_2026-06-04.md"
       ],
       "sources": [
-        "reports/paired_publications_2026-10-23.json",
+        "reports/paired_publications_2026-10-31.json",
         "manual review decision"
       ],
       "command": "manual review; update data/paired-publication-decisions.json"
@@ -740,7 +741,7 @@
     {
       "name": "External link report",
       "outputs": [
-        "reports/external_links_2026-10-24.json"
+        "reports/external_links_2026-10-31.json"
       ],
       "sources": [
         "all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"
@@ -750,7 +751,7 @@
     {
       "name": "Public source snapshot",
       "outputs": [
-        "reports/public_source_snapshot_2026-10-18.json"
+        "reports/public_source_snapshot_2026-10-31.json"
       ],
       "sources": [
         "GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs"
@@ -770,8 +771,8 @@
     {
       "name": "Public-source review record",
       "outputs": [
-        "reports/public_source_review_2026-10-23.json",
-        "reports/public_source_review_2026-10-23.md"
+        "reports/public_source_review_2026-11-01.json",
+        "reports/public_source_review_2026-11-01.md"
       ],
       "sources": [
         "reports/public_source_snapshot_*.json",
@@ -790,18 +791,18 @@
     {
       "name": "External link triage",
       "outputs": [
-        "reports/external_links_triage_2026-10-24.json",
-        "reports/external_links_triage_2026-10-24.md"
+        "reports/external_links_triage_2026-10-31.json",
+        "reports/external_links_triage_2026-10-31.md"
       ],
       "sources": [
-        "reports/external_links_2026-10-24.json"
+        "reports/external_links_2026-10-31.json"
       ],
       "command": "python3 code/orchestrators/build_external_link_triage.py"
     },
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-10-24.json"
+        "reports/asset_size_2026-10-31.json"
       ],
       "sources": [
         "root HTML pages",
@@ -815,7 +816,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-10-24.json"
+        "reports/accessibility_static_2026-10-31.json"
       ],
       "sources": [
         "root HTML pages",
