@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-01T00:50:11Z",
-  "source_commit_at_generation": "b24c162e4e6635a5b7bb67516e1b2fcc6354a488",
+  "generated_at": "2026-11-01T01:41:39Z",
+  "source_commit_at_generation": "d53508de6e8eef3e0f7027c2d7c6a65ae37ca8e3",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -26,26 +26,26 @@
   "source_sha256": {
     "pages/BIBLIOGRAPHY.md": "5de2a380d9a5ab7231d3c5f4fb1c76cb7496d691ccb915da61386fdddf028a54",
     "data/work-identifiers.json": "122e88b0fee02cfd02a205288a21d6fe5738bc1748d1c5597a8f4a545e493e60",
-    "pages/SOFTWARE.md": "db6de06f2c91429685c272eb45288fb8733fded6602aec6b0c59c14bddb9cac0",
+    "pages/SOFTWARE.md": "c7007672daf7e696a90f6332a0fd4c42e9ce8a7190f33ded724c6e1a1d6a628e",
     "resume/source.json": "69cbd668ee8f0b859f525eef8216955dbf0eb87490ac51e01493996c81f2202a",
-    "data/current-counts.json": "6fc0ae02904bc9ec8677371d948f3e4680b3a8b8cc46bc60140e927afeaf4c7e",
+    "data/current-counts.json": "6c173adf6fedc399607f5f2f3a0bf45c22f2a0facdc58300b98a8406357842cc",
     "data/coverage-exceptions.json": "90379749c88843657df06e96096f7a6adc962b6ce5de159c7e41a7a715f73673",
-    "data/repository-classification.json": "d13ce4a64baaeedf9e62b416765f73fd9abdb2ba1e5b26cf59e7579bd8e434ee",
-    "data/agent-index.json": "366624643ccb81e4f5a466d49e359bbe0dc8bdecc1a738f0981215f013fe6198",
-    "data/generated-manifest.json": "dd89106d5e35ef563e6d489923a1be29d1176d27ce714297bb7a2ac088cbd51c",
-    "data/pages-artifact-manifest.json": "a2253ff5687a366bdf4ee9381e712e8ed2c4bb125f1d7e8e28c8b6ee05adf286"
+    "data/repository-classification.json": "9af19b0c2621b0ac1f8d4ad6e93fd71e6fe31c7c3f4597bb12bce9cbc442339c",
+    "data/agent-index.json": "cf4575b4a1b333b984c8870222fec7260f290f365fccad3f9d66bcbe7da23208",
+    "data/generated-manifest.json": "4da5cdcf37b725dbcfb53a7ac0f5e8cb58085e6050e7afc730d35c72552894b4",
+    "data/pages-artifact-manifest.json": "29bee17ef7aec21d3ed703af3b0fa3135f4b6869fb913d97bd89066c59e3304d"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "b24c162e4e6635a5b7bb67516e1b2fcc6354a488",
+    "source_commit_at_generation": "d53508de6e8eef3e0f7027c2d7c6a65ae37ca8e3",
     "artifact_file_count": 6137,
-    "artifact_bytes": 955722755,
+    "artifact_bytes": 955749085,
     "omitted_paper_image_count": 8959,
-    "omitted_superseded_report_count": 688
+    "omitted_superseded_report_count": 696
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "b24c162e4e6635a5b7bb67516e1b2fcc6354a488",
+    "candidate_source_commit": "d53508de6e8eef3e0f7027c2d7c6a65ae37ca8e3",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
@@ -70,8 +70,8 @@
     "full_text_papers": 205,
     "generated_exports": {
       "data_publications_ld_main_entity": 228,
-      "data_software_json": 168,
-      "data_software_ld_main_entity": 168,
+      "data_software_json": 172,
+      "data_software_ld_main_entity": 172,
       "data_works_json": 228
     },
     "github_inventory": {
@@ -98,14 +98,14 @@
       "raw_candidates": 654
     },
     "paired_publications": {
-      "already_reviewed": 544,
-      "create_new": 2,
+      "already_reviewed": 549,
+      "create_new": 0,
       "github_releases": 318,
-      "needs_review": 5,
+      "needs_review": 0,
       "pairs": 555,
       "software_catalogued": 1,
       "strong_pairs": 73,
-      "update_existing": 3,
+      "update_existing": 5,
       "zenodo_records": 173
     },
     "paper_folder_docs": 211,
@@ -121,9 +121,9 @@
       "Zenodo exact-name creator records": 80
     },
     "software": {
-      "active_inference_institute": 41,
-      "curated_total": 168,
-      "docxology_owned": 127
+      "active_inference_institute": 42,
+      "curated_total": 172,
+      "docxology_owned": 130
     },
     "types": {
       "Books": 5,
