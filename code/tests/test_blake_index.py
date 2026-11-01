@@ -96,6 +96,27 @@ def test_rendered_prose_uses_current_counts_and_source_line_links(corpus):
     assert "nine core" not in markdown
 
 
+def test_rendered_html_page_binds_hosted_surfaces_and_escapes_titles(corpus):
+    path = corpus / "data/blake-review.json"
+    data = json.loads(path.read_text())
+    data["reviews"]["2026_Case"]["relation"] = "quotation"
+    path.write_text(json.dumps(data))
+    payload = index.build_payload(corpus)
+    page = index.render_html(payload)
+    assert 'href="https://danielarifriedman.com/blake-pathway.html"' in page
+    assert 'rel="canonical" href="https://danielarifriedman.com/blake-pathway.html"' in page
+    assert "/works/Work1.html" in page
+    assert "https://doi.org/10.5281/zenodo.101" in page
+    assert "full_text.md?plain=1#L1" in page
+    # Titles and notes must be HTML-escaped, not interpolated raw.
+    assert "William Blake study" in page
+    hostile = dict(payload["works"][0])
+    hostile["title"] = "<script>alert(1)</script>"
+    hostile_page = index.render_html({**payload, "works": [hostile]})
+    assert "<script>alert(1)</script>" not in hostile_page
+    assert "&lt;script&gt;alert(1)&lt;/script&gt;" in hostile_page
+
+
 def test_evidence_line_must_identify_an_actual_text_match(corpus):
     path = corpus / "data/blake-review.json"
     data = json.loads(path.read_text())

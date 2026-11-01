@@ -1803,6 +1803,18 @@
       "url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit"
     },
     {
+      "id": "software:https://github.com/activeinferenceinstitute/active_inference_battleship",
+      "kind": "software",
+      "label": "ActiveInferenceInstitute/active_inference_battleship",
+      "url": "https://github.com/ActiveInferenceInstitute/active_inference_battleship"
+    },
+    {
+      "id": "software:https://github.com/activeinferenceinstitute/active_inference_language_model",
+      "kind": "software",
+      "label": "ActiveInferenceInstitute/active_inference_language_model",
+      "url": "https://github.com/ActiveInferenceInstitute/active_inference_language_model"
+    },
+    {
       "id": "software:https://github.com/activeinferenceinstitute/active_inference_power",
       "kind": "software",
       "label": "ActiveInferenceInstitute/active_inference_power",
@@ -3110,6 +3122,13 @@
       "year": 2026
     },
     {
+      "id": "work:Friedman2026ActiveInferenceLanguageModel231",
+      "kind": "work",
+      "label": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+      "url": "/works/Friedman2026ActiveInferenceLanguageModel231.html",
+      "year": 2026
+    },
+    {
       "id": "work:Friedman2026ActiveInferenceMultiTrack124",
       "kind": "work",
       "label": "Active Inference Multi-Track Exemplar",
@@ -3401,6 +3420,13 @@
       "kind": "work",
       "label": "FractiSkills: One Portable Agent Skill per Page",
       "url": "/works/Friedman2026FractiSkillsOnePortableAgent217.html",
+      "year": 2026
+    },
+    {
+      "id": "work:Friedman2026GNNBasedActiveInference232",
+      "kind": "work",
+      "label": "GNN-based active inference for Battleship",
+      "url": "/works/Friedman2026GNNBasedActiveInference232.html",
       "year": 2026
     },
     {
@@ -9577,6 +9603,42 @@
       "target": "person:de la fournière, brieuc",
       "relation": "Recorded author",
       "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman2026ActiveInferenceLanguageModel231",
+      "target": "domain:computational",
+      "relation": "Catalog domain",
+      "provenance": "pages/BIBLIOGRAPHY.md"
+    },
+    {
+      "source": "work:Friedman2026ActiveInferenceLanguageModel231",
+      "target": "person:friedman, daniel ari",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman2026ActiveInferenceLanguageModel231",
+      "target": "software:https://github.com/activeinferenceinstitute/active_inference_language_model",
+      "relation": "Associated software",
+      "provenance": "papers/2026_ActiveInferenceLanguage/metadata.json"
+    },
+    {
+      "source": "work:Friedman2026GNNBasedActiveInference232",
+      "target": "domain:computational",
+      "relation": "Catalog domain",
+      "provenance": "pages/BIBLIOGRAPHY.md"
+    },
+    {
+      "source": "work:Friedman2026GNNBasedActiveInference232",
+      "target": "person:friedman, daniel ari",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman2026GNNBasedActiveInference232",
+      "target": "software:https://github.com/activeinferenceinstitute/active_inference_battleship",
+      "relation": "Associated software",
+      "provenance": "papers/2026_GNNBasedActive/metadata.json"
     }
   ]
 }

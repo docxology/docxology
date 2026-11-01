@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T16:55:46Z",
+  "generated_at": "2026-10-31T23:33:48Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -40416,18 +40416,18 @@
           "url": "/works/Friedman2026ActiveFractalRabbitSyntheticBenchmark195.html"
         },
         {
+          "title": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+          "citation_key": "Friedman2026ActiveInferenceLanguageModel231",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026ActiveInferenceLanguageModel231.html"
+        },
+        {
           "title": "Active Inference Multi-Track Exemplar",
           "citation_key": "Friedman2026ActiveInferenceMultiTrack124",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026ActiveInferenceMultiTrack124.html"
-        },
-        {
-          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
-          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
-          "year": 2026,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
         }
       ]
     },
@@ -40797,18 +40797,18 @@
           "url": "/works/Friedman2026ActiveFractalRabbitSyntheticBenchmark195.html"
         },
         {
+          "title": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+          "citation_key": "Friedman2026ActiveInferenceLanguageModel231",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026ActiveInferenceLanguageModel231.html"
+        },
+        {
           "title": "Active Inference Multi-Track Exemplar",
           "citation_key": "Friedman2026ActiveInferenceMultiTrack124",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026ActiveInferenceMultiTrack124.html"
-        },
-        {
-          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
-          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
-          "year": 2026,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
         }
       ]
     },
@@ -81750,11 +81750,11 @@
           "url": "/works/Friedman2025ComputationalComplexityEnergeticsAnt011.html"
         },
         {
-          "title": "Active Inference Multi-Track Exemplar",
-          "citation_key": "Friedman2026ActiveInferenceMultiTrack124",
+          "title": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+          "citation_key": "Friedman2026ActiveInferenceLanguageModel231",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026ActiveInferenceMultiTrack124.html"
+          "url": "/works/Friedman2026ActiveInferenceLanguageModel231.html"
         }
       ]
     },
@@ -82851,11 +82851,11 @@
           "url": "/works/Friedman2025ComputationalComplexityEnergeticsAnt011.html"
         },
         {
-          "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
-          "citation_key": "Friedman2026AlphaCOGANTRecursiveCorporateSelf178",
+          "title": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+          "citation_key": "Friedman2026ActiveInferenceLanguageModel231",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026AlphaCOGANTRecursiveCorporateSelf178.html"
+          "url": "/works/Friedman2026ActiveInferenceLanguageModel231.html"
         }
       ]
     },
@@ -87174,11 +87174,11 @@
           "url": "/works/Friedman2025BiofirmDevelopmentFirstPrinciples128.html"
         },
         {
-          "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
-          "citation_key": "Friedman2026CognitiveDiagramsReviewingCategorical112",
+          "title": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+          "citation_key": "Friedman2026ActiveInferenceLanguageModel231",
           "year": 2026,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2026CognitiveDiagramsReviewingCategorical112.html"
+          "domain": "Computational",
+          "url": "/works/Friedman2026ActiveInferenceLanguageModel231.html"
         }
       ]
     },

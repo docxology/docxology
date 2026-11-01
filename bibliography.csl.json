@@ -7454,5 +7454,55 @@
     "container-title": "PhilPapers (preprint)",
     "publisher": "PhilPapers (preprint)",
     "URL": "https://philpapers.org/rec/MUEFOC"
+  },
+  {
+    "id": "Friedman2026ActiveInferenceLanguageModel231",
+    "type": "article-journal",
+    "title": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 231; docs: papers/2026_ActiveInferenceLanguage/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.22409418",
+    "URL": "https://doi.org/10.5281/zenodo.22409418"
+  },
+  {
+    "id": "Friedman2026GNNBasedActiveInference232",
+    "type": "article-journal",
+    "title": "GNN-based active inference for Battleship",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 232; docs: papers/2026_GNNBasedActive/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.23670187",
+    "URL": "https://doi.org/10.5281/zenodo.23670187"
   }
 ]

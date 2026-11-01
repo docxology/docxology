@@ -218,7 +218,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [active_inference_power](https://github.com/ActiveInferenceInstitute/active_inference_power) | Conditional statistical power under controlled generative settings for Active Inference · [📄](../papers/2026_ActiveInferencePower/) · [Zenodo](https://doi.org/10.5281/zenodo.21695160) | Python | 0 | 2026-07 |
 | [Active_Inference_Un0](https://github.com/ActiveInferenceInstitute/Active_Inference_Un0) | Public repository with no description, language, or committed contents at the 2026-08-26 review | — | 0 | 2026-07 |
 | [Working_Groups](https://github.com/ActiveInferenceInstitute/Working_Groups) | Active Inference Institute Working Groups: draft Charter, Operating Procedures, and the position paper Coordinating the Field · [Zenodo version v1.0.0](https://doi.org/10.5281/zenodo.23066904) · [Citation DOI](https://doi.org/10.5281/zenodo.23066903) · [📄](../papers/2026_CoordinatingField/) | — | 0 | 2026-09 |
-| [active_inference_language_model](https://github.com/ActiveInferenceInstitute/active_inference_language_model) | Active Inference Language Model — public repository with no committed contents at the 2026-10-06 review | — | 0 | 2026-10 |
+| [active_inference_language_model](https://github.com/ActiveInferenceInstitute/active_inference_language_model) | Active Inference Language Model — public repository with no committed contents at the 2026-10-06 review · [Zenodo](https://doi.org/10.5281/zenodo.22409418) · [📄](../papers/2026_ActiveInferenceLanguage/) | — | 0 | 2026-10 |
 
 ---
 

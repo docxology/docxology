@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T17:48:01Z",
+  "generated_at": "2026-10-31T23:38:45Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,7 +34,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 226,
+    "works": 228,
     "software_catalogued": 168,
     "owned_software_catalogued": 127,
     "aii_software_catalogued": 41,
@@ -47,13 +47,13 @@
     },
     "docxology_public_repositories_claim": {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 239 public repositories.",
+      "claim": "The docxology GitHub profile has 245 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-10-18.json"
+        "reports/public_source_snapshot_2026-10-31.json"
       ],
-      "checked_at": "2026-10-18T19:08:54.769819+00:00",
+      "checked_at": "2026-10-31T22:54:44.243374+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -61,34 +61,34 @@
     },
     "aii_public_repositories_claim": {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (an Organization) has 45 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account (an Organization) has 46 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-10-18.json"
+        "reports/public_source_snapshot_2026-10-31.json"
       ],
-      "checked_at": "2026-10-18T19:08:54.769819+00:00",
+      "checked_at": "2026-10-31T22:54:44.243374+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "The public-source snapshot records this account's type as Organization; the repository count is read from /users/ActiveInferenceInstitute, which serves Organization accounts as well as Users. Local software catalog tracks 41 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-10-23T16:47:41Z",
+      "generated_at": "2026-10-31T22:54:44Z",
       "source": "GitHub REST API /users/{owner}/repos",
-      "total": 286,
-      "public": 286,
-      "primary_total": 179,
-      "forks": 107,
-      "docxology": 241,
-      "ActiveInferenceInstitute": 45
+      "total": 291,
+      "public": 291,
+      "primary_total": 183,
+      "forks": 108,
+      "docxology": 245,
+      "ActiveInferenceInstitute": 46
     }
   },
   "integrity": {
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "805ab77b81c5166ff82adeb88670c1e1994c9ec0610555b9f7564359ebb203ae",
+      "sha256": "d1f382749cd8527ed749c598fb17c1f0bfed30987d937187bc6db8fe803b4a7a",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 186291,
-          "sha256": "6f2287cffb5c0ddfcd892ea66ffb7b01565b4b50e59dce7d4f276c06d5163602"
+          "bytes": 187738,
+          "sha256": "d2ec70298d9d1816b600c644b0f402b03c1966f3a72e43f0e331dfa5249ed21c"
         },
         {
           "path": "data/software.json",
-          "bytes": 84923,
-          "sha256": "fbc8faf3c17807943a4d5b9affade1bcdc42db106b8608ecf61d1a834d38be8a"
+          "bytes": 85008,
+          "sha256": "ef7dacc0e7dc3a86cdeea2ed95051bfb67c88683c9adfe9808514f7b61b75821"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 13095,
-          "sha256": "e44a525dff63651196ece8438ff26037a228d4d8841fb0002af51242a8ccb824"
+          "sha256": "a67e33a4406a77a5a6ede7e31f4807af2451ca3e86f0f029ad5d74a7bf018b7d"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 332452,
-          "sha256": "9abfed8dbcce285140e385133c6b912489772ab736f1414261232c9925c333eb"
+          "bytes": 337381,
+          "sha256": "377e0042e177babee69c53569b1aebeee099ecc891ba7d4b2850ca23cbc4e74c"
         }
       ]
     },
@@ -7967,6 +7967,52 @@
         "Anirudha, Kale Arnav",
         "de La Fournière, Brieuc"
       ]
+    },
+    {
+      "num": 231,
+      "citation_key": "Friedman2026ActiveInferenceLanguageModel231",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.22409418",
+      "doi": "10.5281/zenodo.22409418",
+      "docs_path": "papers/2026_ActiveInferenceLanguage/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 232,
+      "citation_key": "Friedman2026GNNBasedActiveInference232",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "GNN-based active inference for Battleship",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.23670187",
+      "doi": "10.5281/zenodo.23670187",
+      "docs_path": "papers/2026_GNNBasedActive/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     }
   ],
   "software": [
@@ -9979,25 +10025,25 @@
       "url": "https://github.com/ActiveInferenceInstitute/active_inference_language_model",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Active Inference Language Model — public repository with no committed contents at the 2026-10-06 review",
+      "description": "Active Inference Language Model — public repository with no committed contents at the 2026-10-06 review · Zenodo",
       "language": "",
       "stars": 0,
       "updated_or_year": "2026-10",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_ActiveInferenceLanguage/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22409418"
     }
   ],
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 226 works.",
+      "claim": "The curated bibliography contains 228 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-10-23T17:48:00+00:00",
+      "checked_at": "2026-10-31T23:38:45+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -10005,13 +10051,13 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 209 per-paper documentation folders.",
+      "claim": "The repository contains 211 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-10-23T17:48:00+00:00",
+      "checked_at": "2026-10-31T23:38:45+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -10019,13 +10065,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 239 public repositories.",
+      "claim": "The docxology GitHub profile has 245 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-10-18.json"
+        "reports/public_source_snapshot_2026-10-31.json"
       ],
-      "checked_at": "2026-10-18T19:08:54.769819+00:00",
+      "checked_at": "2026-10-31T22:54:44.243374+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -10033,13 +10079,13 @@
     },
     {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (an Organization) has 45 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account (an Organization) has 46 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-10-18.json"
+        "reports/public_source_snapshot_2026-10-31.json"
       ],
-      "checked_at": "2026-10-18T19:08:54.769819+00:00",
+      "checked_at": "2026-10-31T22:54:44.243374+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",

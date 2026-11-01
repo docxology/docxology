@@ -15,6 +15,7 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 
 
 from docxology_tools.artifact_budget import (  # noqa: E402
+    BUDGET_MIB,
     ArtifactBudgetError,
     artifact_mib_from_report,
     enforce_budget,
@@ -52,7 +53,7 @@ def test_enforce_budget_passes_under_budget(tmp_path: Path, capsys: pytest.Captu
 
 
 def test_enforce_budget_fails_over_budget(tmp_path: Path) -> None:
-    _write_report(tmp_path, 901.5)
+    _write_report(tmp_path, BUDGET_MIB + 1.5)
     with pytest.raises(ArtifactBudgetError, match="ARTIFACT BUDGET EXCEEDED"):
         enforce_budget(tmp_path)
 

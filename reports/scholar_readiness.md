@@ -6,14 +6,14 @@ Searchability, scholarly content, complete author-written abstracts/full text, a
 Source: [Google Scholar inclusion guidance](https://scholar.google.com/intl/en/scholar/inclusion.html).
 See [the placement policy](../docs/seo/scholar-inclusion.md) and [machine-readable results](../data/scholar-readiness.json).
 
-Audited works: 226. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
+Audited works: 228. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 
 | Local blocker | Works |
 | --- | ---: |
 | missing_citation_author | 11 |
 | no_selected_local_pdf | 25 |
-| pdf_directory_differs_from_abstract | 201 |
-| pdf_exceeds_byte_limit | 44 |
+| pdf_directory_differs_from_abstract | 203 |
+| pdf_exceeds_byte_limit | 45 |
 
 ## Work-level findings
 
@@ -245,3 +245,5 @@ Audited works: 226. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [Active Assembly Theory and Practice](../works/Friedman2026ActiveAssemblyTheoryPractice228.html) | 18929532 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness](../works/Friedman2026ThanksNothingGratitudeModel229.html) | 19287664 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics](../works/Friedman2026ObserversWhoReadTheir230.html) | 345225 | pdf_directory_differs_from_abstract |
+| [Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method](../works/Friedman2026ActiveInferenceLanguageModel231.html) | 12557861 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
+| [GNN-based active inference for Battleship](../works/Friedman2026GNNBasedActiveInference232.html) | 3928683 | pdf_directory_differs_from_abstract |

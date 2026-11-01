@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-10-23T17:48:01Z
+Generated: 2026-10-31T23:38:45Z
 
-Current public metrics: 226 curated works; 168 catalogued software repositories (127 owned + 41 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 241 docxology + 45 AII public repositories (179 primary, 107 forks).
+Current public metrics: 228 curated works; 168 catalogued software repositories (127 owned + 41 AII); 824 Google Scholar citations, h-index 14, i10-index 17 as of 2026-10-05; GitHub inventory 245 docxology + 46 AII public repositories (183 primary, 108 forks).
 
 SUMMARY
 -------
@@ -164,7 +164,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (226)
+WORKS AND PUBLICATIONS (228)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -392,6 +392,8 @@ WORKS AND PUBLICATIONS (226)
 [228] 2026 | Paper | Active Assembly Theory and Practice | Zenodo | 10.5281/zenodo.23484107
 [229] 2026 | Paper | Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness | Zenodo | 10.5281/zenodo.23402516
 [230] 2026 | Paper | Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics | PhilPapers (preprint) | https://philpapers.org/rec/MUEFOC
+[231] 2026 | Paper | Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method | Zenodo | 10.5281/zenodo.22409418
+[232] 2026 | Paper | GNN-based active inference for Battleship | Zenodo | 10.5281/zenodo.23670187
 
 SOFTWARE (168)
 --------------
@@ -562,7 +564,7 @@ ActiveInferenceInstitute/Active_Fedference | Python | https://github.com/ActiveI
 ActiveInferenceInstitute/active_inference_power | Python | https://github.com/ActiveInferenceInstitute/active_inference_power | Conditional statistical power under controlled generative settings for Active Inference · · Zenodo | paper: papers/2026_ActiveInferencePower/ | zenodo: https://doi.org/10.5281/zenodo.21695160
 ActiveInferenceInstitute/Active_Inference_Un0 | unspecified | https://github.com/ActiveInferenceInstitute/Active_Inference_Un0 | Public repository with no description, language, or committed contents at the 2026-08-26 review
 ActiveInferenceInstitute/Working_Groups | unspecified | https://github.com/ActiveInferenceInstitute/Working_Groups | Active Inference Institute Working Groups: draft Charter, Operating Procedures, and the position paper Coordinating the Field · Zenodo version v1.0.0 · Citation DOI | paper: papers/2026_CoordinatingField/ | zenodo: https://doi.org/10.5281/zenodo.23066903
-ActiveInferenceInstitute/active_inference_language_model | unspecified | https://github.com/ActiveInferenceInstitute/active_inference_language_model | Active Inference Language Model — public repository with no committed contents at the 2026-10-06 review
+ActiveInferenceInstitute/active_inference_language_model | unspecified | https://github.com/ActiveInferenceInstitute/active_inference_language_model | Active Inference Language Model — public repository with no committed contents at the 2026-10-06 review · Zenodo | paper: papers/2026_ActiveInferenceLanguage/ | zenodo: https://doi.org/10.5281/zenodo.22409418
 
 CONFERENCES, POSTERS, SEMINARS, WORKSHOPS
 -----------------------------------------

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T17:48:01Z",
+  "generated_at": "2026-10-31T23:38:45Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
   "count": 168,
@@ -2013,12 +2013,12 @@
       "url": "https://github.com/ActiveInferenceInstitute/active_inference_language_model",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Active Inference Language Model — public repository with no committed contents at the 2026-10-06 review",
+      "description": "Active Inference Language Model — public repository with no committed contents at the 2026-10-06 review · Zenodo",
       "language": "",
       "stars": 0,
       "updated_or_year": "2026-10",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_ActiveInferenceLanguage/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22409418"
     }
   ]
 }

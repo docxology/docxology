@@ -1,0 +1,175 @@
+{
+  "title": "GNN-based active inference for Battleship",
+  "version": "0.5.0",
+  "doi": "10.5281/zenodo.23670187",
+  "doi_url": "https://doi.org/10.5281/zenodo.23670187",
+  "zenodo_record": "https://zenodo.org/records/23670187",
+  "record_id": "23676081",
+  "publication_date": "2026-10-26",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "An inspectable Generalized Notation Notation (GNN)-specified active inference Battleship implementation, manuscript, and reproducibility materials. Finite-catalog Bayesian inference and one-shot objectives; no unrestricted optimality or empirical efficacy claim. Version 0.5.0 is the organization and visual-explanation edition: transferred GitHub repository, updated DOI-bearing manuscript, enhanced dashboard explanations, and a captioned 20-minute lecture with slides and transcript. Scientific traces and statistical design are unchanged. Synthetic local Aiden narration; original script and artwork are CC BY 4.0.",
+  "keywords": [
+    "active inference",
+    "Battleship",
+    "Generalized Notation Notation",
+    "Bayesian inference",
+    "active sensing",
+    "reproducible software"
+  ],
+  "files": [
+    {
+      "name": "Active_Inference_Battleship_captions.en.vtt",
+      "size_bytes": 32729,
+      "checksum": "md5:7a7006708cb55b4238888a88ba271908",
+      "download_url": "https://zenodo.org/api/records/23676081/files/Active_Inference_Battleship_captions.en.vtt/content"
+    },
+    {
+      "name": "active-inference-battleship-source-v0.5.0.zip",
+      "size_bytes": 8570887,
+      "checksum": "md5:cc96979194b4a4bfca9e2af3d532ba27",
+      "download_url": "https://zenodo.org/api/records/23676081/files/active-inference-battleship-source-v0.5.0.zip/content"
+    },
+    {
+      "name": "active_inference_battleship.docx",
+      "size_bytes": 2563664,
+      "checksum": "md5:82012a449d79a4ba9c8ca6f4a7ceb646",
+      "download_url": "https://zenodo.org/api/records/23676081/files/active_inference_battleship.docx/content"
+    },
+    {
+      "name": "Active_Inference_Battleship_audio.mp3",
+      "size_bytes": 11073404,
+      "checksum": "md5:451ee1a4eb50775c29575e475179dcc5",
+      "download_url": "https://zenodo.org/api/records/23676081/files/Active_Inference_Battleship_audio.mp3/content"
+    },
+    {
+      "name": "LECTURE_README.md",
+      "size_bytes": 5617,
+      "checksum": "md5:3f6cb4a0dce75ab23bee5f66d1c886be",
+      "download_url": "https://zenodo.org/api/records/23676081/files/LECTURE_README.md/content"
+    },
+    {
+      "name": "Active_Inference_Battleship.mp4",
+      "size_bytes": 36821006,
+      "checksum": "md5:62c5b5ad7ca6e2dff78766f62d67ebb7",
+      "download_url": "https://zenodo.org/api/records/23676081/files/Active_Inference_Battleship.mp4/content"
+    },
+    {
+      "name": "LECTURE_VALIDATION.json",
+      "size_bytes": 58156,
+      "checksum": "md5:64aa9cb7decb9d329f57de3a8d5010ad",
+      "download_url": "https://zenodo.org/api/records/23676081/files/LECTURE_VALIDATION.json/content"
+    },
+    {
+      "name": "active-inference-battleship-paper-reader-v0.5.0.zip",
+      "size_bytes": 13116403,
+      "checksum": "md5:5ff173d59cfa8db556146b04b32e7809",
+      "download_url": "https://zenodo.org/api/records/23676081/files/active-inference-battleship-paper-reader-v0.5.0.zip/content"
+    },
+    {
+      "name": "Active_Inference_Battleship_slides.pdf",
+      "size_bytes": 3928683,
+      "checksum": "md5:2a716deb956a749efca2bd27d111a1a0",
+      "download_url": "https://zenodo.org/api/records/23676081/files/Active_Inference_Battleship_slides.pdf/content"
+    },
+    {
+      "name": "active-inference-battleship-lecture-source-v0.5.0.zip",
+      "size_bytes": 102275240,
+      "checksum": "md5:623170a98813d6a1e677e42e0d49537e",
+      "download_url": "https://zenodo.org/api/records/23676081/files/active-inference-battleship-lecture-source-v0.5.0.zip/content"
+    },
+    {
+      "name": "CITATION.cff",
+      "size_bytes": 831,
+      "checksum": "md5:5ad99beb32a32024fc97fe34d185b22e",
+      "download_url": "https://zenodo.org/api/records/23676081/files/CITATION.cff/content"
+    },
+    {
+      "name": "active-inference-battleship-0.5.0.tgz",
+      "size_bytes": 52075,
+      "checksum": "md5:582d2f4fadb5b57a4732a80270e97b95",
+      "download_url": "https://zenodo.org/api/records/23676081/files/active-inference-battleship-0.5.0.tgz/content"
+    },
+    {
+      "name": "active-inference-battleship-dashboard-v0.5.0.zip",
+      "size_bytes": 13827616,
+      "checksum": "md5:3d0984fd80ab730354d3620a14b0e24f",
+      "download_url": "https://zenodo.org/api/records/23676081/files/active-inference-battleship-dashboard-v0.5.0.zip/content"
+    },
+    {
+      "name": "active_inference_battleship_combined.pdf",
+      "size_bytes": 2810589,
+      "checksum": "md5:126a8df6f6e562bb7a514c319c06ae64",
+      "download_url": "https://zenodo.org/api/records/23676081/files/active_inference_battleship_combined.pdf/content"
+    },
+    {
+      "name": "active-inference-battleship-lecture-reader-v0.5.0.zip",
+      "size_bytes": 37338243,
+      "checksum": "md5:8504478162b5553d0c061898daa8c3ed",
+      "download_url": "https://zenodo.org/api/records/23676081/files/active-inference-battleship-lecture-reader-v0.5.0.zip/content"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size_bytes": 2104,
+      "checksum": "md5:a347eac4be17baf0cfcc615265ebeaf7",
+      "download_url": "https://zenodo.org/api/records/23676081/files/SHA256SUMS/content"
+    },
+    {
+      "name": "Active_Inference_Battleship_source_ledger.md",
+      "size_bytes": 33452,
+      "checksum": "md5:4fca2f4bd6c46772aa79aa084da6ed28",
+      "download_url": "https://zenodo.org/api/records/23676081/files/Active_Inference_Battleship_source_ledger.md/content"
+    },
+    {
+      "name": "Active_Inference_Battleship_speaker_notes.md",
+      "size_bytes": 26131,
+      "checksum": "md5:c5323694bf80c995edb3843d95b2694d",
+      "download_url": "https://zenodo.org/api/records/23676081/files/Active_Inference_Battleship_speaker_notes.md/content"
+    },
+    {
+      "name": "Active_Inference_Battleship_transcript.txt",
+      "size_bytes": 22528,
+      "checksum": "md5:6f2eb34caec564c14741a3cc7fc5b524",
+      "download_url": "https://zenodo.org/api/records/23676081/files/Active_Inference_Battleship_transcript.txt/content"
+    },
+    {
+      "name": "RELEASE_VALIDATION.json",
+      "size_bytes": 2107,
+      "checksum": "md5:01352cc2ba3faecc000f6db35c9a8fbf",
+      "download_url": "https://zenodo.org/api/records/23676081/files/RELEASE_VALIDATION.json/content"
+    },
+    {
+      "name": "active-inference-battleship-verification-v0.5.0.zip",
+      "size_bytes": 169874,
+      "checksum": "md5:cf78f7fc1cda050e019491bb62ace754",
+      "download_url": "https://zenodo.org/api/records/23676081/files/active-inference-battleship-verification-v0.5.0.zip/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/ActiveInferenceInstitute/active_inference_battleship"
+    }
+  ],
+  "github_repo": "ActiveInferenceInstitute/active_inference_battleship",
+  "github_release_url": "https://github.com/ActiveInferenceInstitute/active_inference_battleship/releases/tag/v0.5.0",
+  "release_tag": "v0.5.0",
+  "release_name": "Active Inference Battleship v0.5.0 — organization edition",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked"
+  ],
+  "checked_at": "2026-10-31T23:31:24Z"
+}

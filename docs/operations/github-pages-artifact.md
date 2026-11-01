@@ -29,11 +29,16 @@ only images actually hosted by the site (the artwork gallery and its supported
 remote image sources), so no published sitemap entry points at an omitted
 Pages asset.
 
-The artifact builder emits a review warning at 890 MiB; ordinary CI enforces
-that 890 MiB budget. The projection growth target is at most 850 MiB, preserving
+The artifact builder emits a review warning at 930 MiB; ordinary CI enforces
+that 930 MiB budget. The projection growth target is at most 890 MiB, preserving
 40 MiB of ordinary-CI headroom. The builder separately fails at the
-900 MiB release hard ceiling, and records GitHub's 1 GiB platform limit as a
-separate physical constraint. The current full server-rendered
+950 MiB release hard ceiling, and records GitHub's 1 GiB platform limit as a
+separate physical constraint. (Raised from the 850/890/900 MiB tiers on
+2026-10-31 after the versioned publication intake pushed the measured
+projection to 911.45 MiB; the owner chose to keep all paper PDFs hosted and
+widen the tiers rather than route current-version artifacts to GitHub
+downloads. The measured artifact must still stay below the ceiling before
+every deploy.) The current full server-rendered
 `publications.html` is allowed a 600 KB page-budget exception because it
 retains crawlable bibliography rows and inline collection JSON-LD; the asset
 audit records the exception and its reason. Run the artifact check locally with:

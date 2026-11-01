@@ -55,7 +55,7 @@ ARTIFACTS = [
     },
     {
         "name": "Blake publication pathway",
-        "outputs": ["pages/BLAKE.md", "data/blake-index.json"],
+        "outputs": ["blake-pathway.html", "pages/BLAKE.md", "data/blake-index.json"],
         "sources": ["data/works.json", "data/blake-review.json", "papers/*/full_text.md", "papers/*/metadata.json", "reports/publication_discovery_2026-10-22.json"],
         "command": "uv run python code/orchestrators/build_blake_index.py",
     },
