@@ -13,8 +13,15 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-from docxology_tools.site_facts import SiteFactsError, counts, generated_date, generated_month_year, public_source_checked_date  # noqa: E402
+from docxology_tools.site_facts import (  # noqa: E402
+    SiteFactsError,
+    counts,
+    generated_date,
+    generated_month_year,
+    public_source_checked_date,
+)
 from docxology_tools.report_paths import latest_source_report, latest_source_subdir_file  # noqa: E402
+
 TARGETS = [
     REPO_ROOT / "index.html",
     REPO_ROOT / "publications.html",
@@ -52,8 +59,10 @@ def latest_report(prefix: str, suffix: str) -> str | None:
 
 def dataset_count(filename: str, key: str) -> int:
     try:
-        payload = json.loads((REPO_ROOT / "data" / filename).read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
+        payload = json.loads(
+            (REPO_ROOT / "data" / filename).read_text(encoding="utf-8")
+        )
+    except OSError, json.JSONDecodeError:
         return 0
     value = payload.get(key)
     return int(value) if isinstance(value, int) else 0
@@ -81,30 +90,77 @@ def render(path: Path) -> str:
         text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
 
     if path.name == "index.html":
-        text = re.sub(r'<meta name="revised" content="[^"]+">', f'<meta name="revised" content="{date}">', text)
-        text = re.sub(r'<meta name="date" content="[^"]+">', f'<meta name="date" content="{date}">', text)
-        text = re.sub(r'("dateModified":\s*")[^"]+(")', rf"\g<1>{date}\g<2>", text, count=1)
-        text = re.sub(r"Paper Documentation \(\d+ folders, \d+ with full text, [\d,]+ extracted images\)", f"Paper Documentation ({folders} folders, {full_text} with full text, {images:,} extracted images)", text)
-        text = re.sub(r"Highlights from the catalog across \d+ research domains", "Highlights from the catalog across 8 research domains", text)
+        text = re.sub(
+            r'<meta name="revised" content="[^"]+">',
+            f'<meta name="revised" content="{date}">',
+            text,
+        )
+        text = re.sub(
+            r'<meta name="date" content="[^"]+">',
+            f'<meta name="date" content="{date}">',
+            text,
+        )
+        text = re.sub(
+            r'("dateModified":\s*")[^"]+(")', rf"\g<1>{date}\g<2>", text, count=1
+        )
+        text = re.sub(
+            r"Paper Documentation \(\d+ folders, \d+ with full text, [\d,]+ extracted images\)",
+            f"Paper Documentation ({folders} folders, {full_text} with full text, {images:,} extracted images)",
+            text,
+        )
+        text = re.sub(
+            r"Highlights from the catalog across \d+ research domains",
+            "Highlights from the catalog across 8 research domains",
+            text,
+        )
     elif path.name == "publications.html":
-        text = re.sub(r"<p class=\"sub\">\d+ works spanning", f"<p class=\"sub\">{works} works spanning", text, count=1)
-        text = re.sub(rf"as of {MONTH_YEAR_PATTERN}", f"as of {month}", text, count=1, flags=re.IGNORECASE)
-        text = re.sub(r"<meta name=\"revised\" content=\"[^\"]+\">", f'<meta name="revised" content="{date}">', text)
+        text = re.sub(
+            r"<p class=\"sub\">\d+ works spanning",
+            f'<p class="sub">{works} works spanning',
+            text,
+            count=1,
+        )
+        text = re.sub(
+            rf"as of {MONTH_YEAR_PATTERN}",
+            f"as of {month}",
+            text,
+            count=1,
+            flags=re.IGNORECASE,
+        )
+        text = re.sub(
+            r"<meta name=\"revised\" content=\"[^\"]+\">",
+            f'<meta name="revised" content="{date}">',
+            text,
+        )
     elif path.name == "discovery.html":
         checked = public_source_checked_date()
-        text = re.sub(r'("dateModified":\s*")[^"]+(")', rf"\g<1>{date}\g<2>", text, count=1)
-        text = re.sub(r'<meta name="revised" content="[^"]+">', f'<meta name="revised" content="{date}">', text)
-        text = re.sub(r"checked on \d{4}-\d{2}-\d{2}", f"checked on {checked}", text)
-        text = re.sub(r"Returned \d+ exact-name records", f"Returned {public_facts.get('Zenodo exact-name creator records', 0)} exact-name records", text)
-        text = re.sub(r"Returned \d+ records, including versioned deposits", f"Returned {public_facts.get('Zenodo ORCID-linked records', 0)} records, including versioned deposits", text)
         text = re.sub(
-            r'(<tr><td>GitHub API — docxology</td>.*?<td>Returned )\d+( public repositories on )\d{4}-\d{2}-\d{2}',
+            r'("dateModified":\s*")[^"]+(")', rf"\g<1>{date}\g<2>", text, count=1
+        )
+        text = re.sub(
+            r'<meta name="revised" content="[^"]+">',
+            f'<meta name="revised" content="{date}">',
+            text,
+        )
+        text = re.sub(r"checked on \d{4}-\d{2}-\d{2}", f"checked on {checked}", text)
+        text = re.sub(
+            r"Returned \d+ exact-name records",
+            f"Returned {public_facts.get('Zenodo exact-name creator records', 0)} exact-name records",
+            text,
+        )
+        text = re.sub(
+            r"Returned \d+ records, including versioned deposits",
+            f"Returned {public_facts.get('Zenodo ORCID-linked records', 0)} records, including versioned deposits",
+            text,
+        )
+        text = re.sub(
+            r"(<tr><td>GitHub API — docxology</td>.*?<td>Returned )\d+( public repositories on )\d{4}-\d{2}-\d{2}",
             rf"\g<1>{public_facts.get('GitHub user docxology', github.get('docxology', 0))}\g<2>{checked}",
             text,
             flags=re.S,
         )
         text = re.sub(
-            r'(<tr><td>GitHub API — AII</td>.*?<td>Returned )\d+( public repositories on )\d{4}-\d{2}-\d{2}',
+            r"(<tr><td>GitHub API — AII</td>.*?<td>Returned )\d+( public repositories on )\d{4}-\d{2}-\d{2}",
             rf"\g<1>{public_facts.get('GitHub user ActiveInferenceInstitute', github.get('ActiveInferenceInstitute', 0))}\g<2>{checked}",
             text,
             flags=re.S,
@@ -114,7 +170,10 @@ def render(path: Path) -> str:
             rf"\g<1>{public_facts.get('Zenodo exact-name creator records', 0)}/{public_facts.get('Zenodo ORCID-linked records', 0)}\g<2>",
             text,
         )
-        for prefix, suffix in (("public_source_snapshot", "json"), ("public_source_inventory", "json")):
+        for prefix, suffix in (
+            ("public_source_snapshot", "json"),
+            ("public_source_inventory", "json"),
+        ):
             name = latest_report(prefix, suffix)
             if name:
                 text = re.sub(rf"{prefix}_\d{{4}}-\d{{2}}-\d{{2}}\.json", name, text)
@@ -123,12 +182,35 @@ def render(path: Path) -> str:
         # Keep the Scholar snapshot's own provenance date intact. The other
         # source rows are refreshed from the latest public-source report below.
         text = re.sub(r"checked on \d{4}-\d{2}-\d{2}", f"checked on {checked}", text)
-        text = re.sub(r"Zenodo returned \d+ exact-name records on \d{4}-\d{2}-\d{2}", f"Zenodo returned {public_facts.get('Zenodo exact-name creator records', 0)} exact-name records on {checked}", text)
-        text = re.sub(r"ORCID-linked query returned \d+ records on \d{4}-\d{2}-\d{2}", f"ORCID-linked query returned {public_facts.get('Zenodo ORCID-linked records', 0)} records on {checked}", text)
-        text = re.sub(r"NCBI E-utilities returned \d+ records for the exact author query on \d{4}-\d{2}-\d{2}", f"NCBI E-utilities returned {public_facts.get('PubMed exact author records', 0)} records for the exact author query on {checked}", text)
-        text = re.sub(r"Europe PMC returned \d+ exact-author results, including preprints, on \d{4}-\d{2}-\d{2}", f"Europe PMC returned {public_facts.get('Europe PMC exact author records', 0)} exact-author results, including preprints, on {checked}", text)
-        text = re.sub(r"Crossref returned \d+ DOI records attached to the ORCID on \d{4}-\d{2}-\d{2}", f"Crossref returned {public_facts.get('Crossref ORCID DOI records', 0)} DOI records attached to the ORCID on {checked}", text)
-        for prefix, suffix in (("public_source_snapshot", "json"), ("public_source_inventory", "json")):
+        text = re.sub(
+            r"Zenodo returned \d+ exact-name records on \d{4}-\d{2}-\d{2}",
+            f"Zenodo returned {public_facts.get('Zenodo exact-name creator records', 0)} exact-name records on {checked}",
+            text,
+        )
+        text = re.sub(
+            r"ORCID-linked query returned \d+ records on \d{4}-\d{2}-\d{2}",
+            f"ORCID-linked query returned {public_facts.get('Zenodo ORCID-linked records', 0)} records on {checked}",
+            text,
+        )
+        text = re.sub(
+            r"NCBI E-utilities returned \d+ records for the exact author query on \d{4}-\d{2}-\d{2}",
+            f"NCBI E-utilities returned {public_facts.get('PubMed exact author records', 0)} records for the exact author query on {checked}",
+            text,
+        )
+        text = re.sub(
+            r"Europe PMC returned \d+ exact-author results, including preprints, on \d{4}-\d{2}-\d{2}",
+            f"Europe PMC returned {public_facts.get('Europe PMC exact author records', 0)} exact-author results, including preprints, on {checked}",
+            text,
+        )
+        text = re.sub(
+            r"Crossref returned \d+ DOI records attached to the ORCID on \d{4}-\d{2}-\d{2}",
+            f"Crossref returned {public_facts.get('Crossref ORCID DOI records', 0)} DOI records attached to the ORCID on {checked}",
+            text,
+        )
+        for prefix, suffix in (
+            ("public_source_snapshot", "json"),
+            ("public_source_inventory", "json"),
+        ):
             name = latest_report(prefix, suffix)
             if name:
                 text = re.sub(rf"{prefix}_\d{{4}}-\d{{2}}-\d{{2}}\.json", name, text)
@@ -143,7 +225,9 @@ def render(path: Path) -> str:
         # visible heading must agree with the generated artwork export.
         count = f"{artworks:,}"
         text = re.sub(r"\b[\d,]+(?=\s+ink-on-paper drawings)", count, text, flags=re.I)
-        text = re.sub(r"\b[\d,]+(?=\s+pen(?:-|\s+)and ink drawings)", count, text, flags=re.I)
+        text = re.sub(
+            r"\b[\d,]+(?=\s+pen(?:-|\s+)and ink drawings)", count, text, flags=re.I
+        )
         text = re.sub(r"\b[\d,]+(?=\s+Pen Drawings)", count, text)
         text = re.sub(r"\b[\d,]+(?=\s+artworks\b)", count, text, flags=re.I)
         text = re.sub(r'("numberOfItems"\s*:\s*)\d+', rf"\g<1>{artworks}", text)
@@ -154,9 +238,20 @@ def render(path: Path) -> str:
     else:
         text = re.sub(r"Last updated: \d{4}-\d{2}-\d{2}", f"Last updated: {date}", text)
         text = re.sub(r"as of \d{4}-\d{2}-\d{2}", f"as of {date}", text)
-        text = re.sub(r"\b\d+ exact-name records", f"{public_facts.get('Zenodo exact-name creator records', 0)} exact-name records", text)
-        text = re.sub(r"\b\d+ versioned records", f"{public_facts.get('Zenodo ORCID-linked records', 0)} versioned records", text)
-        for prefix, suffix in (("public_source_snapshot", "json"), ("public_source_inventory", "json")):
+        text = re.sub(
+            r"\b\d+ exact-name records",
+            f"{public_facts.get('Zenodo exact-name creator records', 0)} exact-name records",
+            text,
+        )
+        text = re.sub(
+            r"\b\d+ versioned records",
+            f"{public_facts.get('Zenodo ORCID-linked records', 0)} versioned records",
+            text,
+        )
+        for prefix, suffix in (
+            ("public_source_snapshot", "json"),
+            ("public_source_inventory", "json"),
+        ):
             name = latest_report(prefix, suffix)
             if name:
                 text = re.sub(rf"{prefix}_\d{{4}}-\d{{2}}-\d{{2}}\.json", name, text)
@@ -179,7 +274,9 @@ def render(path: Path) -> str:
         ):
             name = latest_report(prefix, suffix)
             if name:
-                text = re.sub(rf"{prefix}_\d{{4}}-\d{{2}}-\d{{2}}\.{suffix}", name, text)
+                text = re.sub(
+                    rf"{prefix}_\d{{4}}-\d{{2}}-\d{{2}}\.{suffix}", name, text
+                )
         # The two QA screenshot manifests live in per-date SUBDIRECTORIES
         # (reports/<prefix>/YYYY-MM-DD/manifest.json), not flat suffixed files,
         # so they need their own rewrite. prune_old_reports.py keeps only the
@@ -199,7 +296,9 @@ def render(path: Path) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if public facts are stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if public facts are stale"
+    )
     args = parser.parse_args()
     # Do this before examining or writing targets.  A wall-clock fallback would
     # make an invalid/missing revision source appear freshly synchronized;
@@ -223,7 +322,11 @@ def main() -> None:
                 path.write_text(updated, encoding="utf-8")
     if stale and args.check:
         raise SystemExit("stale site facts: " + ", ".join(stale))
-    print(("checked" if args.check else "synced") + " site facts for " + ", ".join(stale or ["all targets"]))
+    print(
+        ("checked" if args.check else "synced")
+        + " site facts for "
+        + ", ".join(stale or ["all targets"])
+    )
 
 
 if __name__ == "__main__":

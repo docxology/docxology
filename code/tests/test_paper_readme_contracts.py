@@ -14,6 +14,7 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
 from docxology_tools.biblio_table import iter_bibliography_rows  # noqa: E402
+
 DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Za-z0-9]+")
 MARKDOWN_LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 
@@ -34,14 +35,18 @@ def bibliography_dois() -> dict[str, str]:
     return result
 
 
-def doi_for_readme(path: Path, metadata: dict[str, dict], canonical: dict[str, str]) -> str:
+def doi_for_readme(
+    path: Path, metadata: dict[str, dict], canonical: dict[str, str]
+) -> str:
     folder = path.parent.name
     if folder in canonical:
         return canonical[folder]
     doi = str(metadata.get(folder, {}).get("doi") or "")
     if doi:
         match = DOI_RE.search(doi)
-        return match.group(0).rstrip(".,;:)]}`'\"") if match else doi.rstrip(".,;:)]}`'\"")
+        return (
+            match.group(0).rstrip(".,;:)]}`'\"") if match else doi.rstrip(".,;:)]}`'\"")
+        )
     match = DOI_RE.search(path.read_text())
     return match.group(0).rstrip(".,;:)]}`'\"") if match else ""
 
@@ -56,11 +61,22 @@ def test_all_paper_readme_doi_citations_include_explicit_doi_and_url():
             continue
         text = path.read_text()
         resolver = f"https://doi.org/{doi}"
-        citation = text.split("## Citation", 1)[1].split("## ", 1)[0] if "## Citation" in text else ""
+        citation = (
+            text.split("## Citation", 1)[1].split("## ", 1)[0]
+            if "## Citation" in text
+            else ""
+        )
         if "[![DOI]" not in text or resolver not in text:
             failures.append(f"{path.relative_to(REPO_ROOT)} missing DOI badge/resolver")
-        if doi not in citation or resolver not in citation or "DOI:" not in citation or "URL:" not in citation:
-            failures.append(f"{path.relative_to(REPO_ROOT)} missing DOI/URL in citation")
+        if (
+            doi not in citation
+            or resolver not in citation
+            or "DOI:" not in citation
+            or "URL:" not in citation
+        ):
+            failures.append(
+                f"{path.relative_to(REPO_ROOT)} missing DOI/URL in citation"
+            )
     assert not failures, "\n".join(failures)
 
 

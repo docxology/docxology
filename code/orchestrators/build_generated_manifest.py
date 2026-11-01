@@ -13,7 +13,13 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-from docxology_tools.report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel, stable_generated_at  # noqa: E402
+from docxology_tools.report_paths import (  # noqa: E402
+    generated_timestamp,
+    latest_source_report,
+    latest_source_subdir_file,
+    rel,
+    stable_generated_at,
+)
 
 JSON_OUT = REPO_ROOT / "data" / "generated-manifest.json"
 MD_OUT = REPO_ROOT / "GENERATED.md"
@@ -44,31 +50,66 @@ def _latest_subdir_pngs(prefix: str, fallback: str) -> str:
     return rel(latest.parent / "*.png")
 
 
-LATEST_EXTERNAL_LINK_REPORT = _latest_report("external_links_[0-9]*.json", "reports/external_links_2026-05-13.json")
+LATEST_EXTERNAL_LINK_REPORT = _latest_report(
+    "external_links_[0-9]*.json", "reports/external_links_2026-05-13.json"
+)
 
 ARTIFACTS = [
     {
         "name": "Research exploration tools",
-        "outputs": ["collections.html", "trails.html", "research-map.html", "lab.html", "data/collection-catalog.json", "data/research-map.json", "data/research-trails.json"],
-        "sources": ["data/works.json", "data/videos.json", "data/software.json", "data/research-trails-source.json", "bibliography.bib", "papers/*/metadata.json", "code/src/research_connections.py", "code/src/site_nav.py"],
+        "outputs": [
+            "collections.html",
+            "trails.html",
+            "research-map.html",
+            "lab.html",
+            "data/collection-catalog.json",
+            "data/research-map.json",
+            "data/research-trails.json",
+        ],
+        "sources": [
+            "data/works.json",
+            "data/videos.json",
+            "data/software.json",
+            "data/research-trails-source.json",
+            "bibliography.bib",
+            "papers/*/metadata.json",
+            "code/src/research_connections.py",
+            "code/src/site_nav.py",
+        ],
         "command": "uv run python3 code/orchestrators/build_research_tools.py",
     },
     {
         "name": "Blake publication pathway",
         "outputs": ["blake-pathway.html", "pages/BLAKE.md", "data/blake-index.json"],
-        "sources": ["data/works.json", "data/blake-review.json", "papers/*/full_text.md", "papers/*/metadata.json", "reports/publication_discovery_2026-10-22.json"],
+        "sources": [
+            "data/works.json",
+            "data/blake-review.json",
+            "papers/*/full_text.md",
+            "papers/*/metadata.json",
+            "reports/publication_discovery_2026-10-22.json",
+        ],
         "command": "uv run python code/orchestrators/build_blake_index.py",
     },
     {
         "name": "Scholar PDF placement proposal (review only)",
-        "outputs": ["reports/scholar_pdf_placement_proposal_2026-10-13.json", "reports/scholar_pdf_placement_proposal_2026-10-13.md"],
-        "sources": ["data/scholar-readiness.json (hash-bound observed input)", "data/pages-artifact-manifest.json (hash-bound observed input)"],
+        "outputs": [
+            "reports/scholar_pdf_placement_proposal_2026-10-13.json",
+            "reports/scholar_pdf_placement_proposal_2026-10-13.md",
+        ],
+        "sources": [
+            "data/scholar-readiness.json (hash-bound observed input)",
+            "data/pages-artifact-manifest.json (hash-bound observed input)",
+        ],
         "command": "manual budget/source review; proposal is not an applied projection or ordinary regeneration output",
     },
     {
         "name": "Reviewed YouTube exact-date refresh receipt",
         "outputs": ["reports/youtube_refresh_review_2026-10-13.json"],
-        "sources": ["code/data/youtube_personal.json", "code/data/youtube_institute.json", "public YouTube metadata responses"],
+        "sources": [
+            "code/data/youtube_personal.json",
+            "code/data/youtube_institute.json",
+            "public YouTube metadata responses",
+        ],
         "command": "manual bounded source review after fetch_youtube_data.py; exact new-date hydration and source identity checks required before adoption",
     },
     {
@@ -136,7 +177,12 @@ ARTIFACTS = [
     },
     {
         "name": "Bibliography exports",
-        "outputs": ["bibliography.bib", "bibliography.csl.json", "bibliography.ris", "data/works.json"],
+        "outputs": [
+            "bibliography.bib",
+            "bibliography.csl.json",
+            "bibliography.ris",
+            "data/works.json",
+        ],
         "sources": [
             "pages/BIBLIOGRAPHY.md",
             "data/work-identifiers.json",
@@ -188,26 +234,55 @@ ARTIFACTS = [
     },
     {
         "name": "Source coverage exceptions",
-        "outputs": ["data/coverage-exceptions.json", _latest_report("source_coverage_*.json", "reports/source_coverage_2026-07-17.json"), _latest_report("source_coverage_*.md", "reports/source_coverage_2026-07-17.md")],
-        "sources": ["data/works.json", "code/orchestrators/build_coverage_exceptions.py"],
+        "outputs": [
+            "data/coverage-exceptions.json",
+            _latest_report(
+                "source_coverage_*.json", "reports/source_coverage_2026-07-17.json"
+            ),
+            _latest_report(
+                "source_coverage_*.md", "reports/source_coverage_2026-07-17.md"
+            ),
+        ],
+        "sources": [
+            "data/works.json",
+            "code/orchestrators/build_coverage_exceptions.py",
+        ],
         "command": "python3 code/orchestrators/build_coverage_exceptions.py",
     },
     {
         "name": "Repository classification queue",
         "outputs": ["data/repository-classification.json"],
-        "sources": ["data/github-repositories.json", "data/software.json", "data/repository-exclusions.json", "code/orchestrators/classify_repositories.py"],
+        "sources": [
+            "data/github-repositories.json",
+            "data/software.json",
+            "data/repository-exclusions.json",
+            "code/orchestrators/classify_repositories.py",
+        ],
         "command": "python3 code/orchestrators/classify_repositories.py",
     },
     {
         "name": "Volatile site facts",
-        "outputs": ["index.html", "publications.html", "discovery.html", "pages/DISCOVERY.md", "llms.txt"],
-        "sources": ["data/current-counts.json", "reports/public_source_snapshot_*.json", "code/orchestrators/sync_site_facts.py"],
+        "outputs": [
+            "index.html",
+            "publications.html",
+            "discovery.html",
+            "pages/DISCOVERY.md",
+            "llms.txt",
+        ],
+        "sources": [
+            "data/current-counts.json",
+            "reports/public_source_snapshot_*.json",
+            "code/orchestrators/sync_site_facts.py",
+        ],
         "command": "python3 code/orchestrators/sync_site_facts.py",
     },
     {
         "name": "Open Graph preview images",
         "outputs": ["og-*.jpg", "data/og-image-counts.json"],
-        "sources": ["data/current-counts.json", "code/orchestrators/generate_og_images.py"],
+        "sources": [
+            "data/current-counts.json",
+            "code/orchestrators/generate_og_images.py",
+        ],
         "command": "python3 code/orchestrators/generate_og_images.py",
     },
     {
@@ -219,7 +294,12 @@ ARTIFACTS = [
             "active-inference.html",
             "neurosymbolic-ai.html",
         ],
-        "sources": ["data/works.json", "code/src/pillar_content.py", "code/src/content_citations.py", "code/orchestrators/generate_pillar_pages.py"],
+        "sources": [
+            "data/works.json",
+            "code/src/pillar_content.py",
+            "code/src/content_citations.py",
+            "code/orchestrators/generate_pillar_pages.py",
+        ],
         "command": "python3 code/orchestrators/generate_pillar_pages.py",
     },
     {
@@ -233,13 +313,24 @@ ARTIFACTS = [
             "nft.html",
             "reports.html",
             "research.html",
+            "works/Friedman2025CEREBRUMCaseEnabledReasoning118.html",
+            "works/Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174.html",
+            "works/Friedman2026LiteratureReviewArchitectureActive110.html",
         ],
-        "sources": ["code/src/redirect_stubs.py", "code/orchestrators/generate_redirect_stubs.py"],
+        "sources": [
+            "code/src/redirect_stubs.py",
+            "code/orchestrators/generate_redirect_stubs.py",
+        ],
         "command": "python3 code/orchestrators/generate_redirect_stubs.py --apply",
     },
     {
         "name": "Agent data exports",
-        "outputs": ["data/software.json", "data/people.json", "data/organizations.json", "data/claims.json"],
+        "outputs": [
+            "data/software.json",
+            "data/people.json",
+            "data/organizations.json",
+            "data/claims.json",
+        ],
         "sources": [
             "pages/SOFTWARE.md",
             "code/src/software_table.py",
@@ -270,19 +361,39 @@ ARTIFACTS = [
     {
         "name": "Visible agent navigation",
         "outputs": ["root public HTML navigation"],
-        "sources": ["code/src/site_nav.py", "code/orchestrators/ensure_agent_navigation.py"],
+        "sources": [
+            "code/src/site_nav.py",
+            "code/orchestrators/ensure_agent_navigation.py",
+        ],
         "command": "python3 code/orchestrators/ensure_agent_navigation.py",
     },
     {
         "name": "GitHub Pages artifact",
-        "outputs": ["bounded _site/ deployment projection", "data/pages-artifact-manifest.json", _latest_report("pages_artifact_growth_*.json", "reports/pages_artifact_growth_2026-07-17.json")],
-        "sources": ["tracked repository files", "code/src/release_controls.py", "code/orchestrators/build_pages_artifact.py", "docs/operations/github-pages-artifact.md"],
+        "outputs": [
+            "bounded _site/ deployment projection",
+            "data/pages-artifact-manifest.json",
+            _latest_report(
+                "pages_artifact_growth_*.json",
+                "reports/pages_artifact_growth_2026-07-17.json",
+            ),
+        ],
+        "sources": [
+            "tracked repository files",
+            "code/src/release_controls.py",
+            "code/orchestrators/build_pages_artifact.py",
+            "docs/operations/github-pages-artifact.md",
+        ],
         "command": "python3 code/orchestrators/build_pages_artifact.py --write-manifest --output /tmp/docxology-pages --check-size --check-manifest",
     },
     {
         "name": "Release integrity envelope",
         "outputs": ["data/release-integrity.json"],
-        "sources": ["data/current-counts.json", "data/agent-index.json", "data/pages-artifact-manifest.json", "code/orchestrators/build_release_integrity.py"],
+        "sources": [
+            "data/current-counts.json",
+            "data/agent-index.json",
+            "data/pages-artifact-manifest.json",
+            "code/orchestrators/build_release_integrity.py",
+        ],
         "command": "python3 code/orchestrators/build_release_integrity.py",
     },
     {
@@ -340,7 +451,11 @@ ARTIFACTS = [
     {
         "name": "Full GitHub repository inventory",
         "outputs": ["data/github-repositories.json"],
-        "sources": ["GitHub REST API", "data/software.json", "code/orchestrators/build_github_inventory.py"],
+        "sources": [
+            "GitHub REST API",
+            "data/software.json",
+            "code/orchestrators/build_github_inventory.py",
+        ],
         "command": "python3 code/orchestrators/build_github_inventory.py",
     },
     {
@@ -357,7 +472,12 @@ ARTIFACTS = [
     },
     {
         "name": "Paired publication sync report",
-        "outputs": [_latest_report("paired_publications_*.json", "reports/paired_publications_2026-05-27.json")],
+        "outputs": [
+            _latest_report(
+                "paired_publications_*.json",
+                "reports/paired_publications_2026-05-27.json",
+            )
+        ],
         "sources": [
             "GitHub Releases API",
             "Zenodo Records API",
@@ -369,9 +489,18 @@ ARTIFACTS = [
     },
     {
         "name": "Paired publication review decisions",
-        "outputs": ["data/paired-publication-decisions.json", _latest_report("paired_publications_review_queue_*.md", "reports/paired_publications_review_queue_2026-06-04.md")],
+        "outputs": [
+            "data/paired-publication-decisions.json",
+            _latest_report(
+                "paired_publications_review_queue_*.md",
+                "reports/paired_publications_review_queue_2026-06-04.md",
+            ),
+        ],
         "sources": [
-            _latest_report("paired_publications_*.json", "reports/paired_publications_2026-06-04.json"),
+            _latest_report(
+                "paired_publications_*.json",
+                "reports/paired_publications_2026-06-04.json",
+            ),
             "manual review decision",
         ],
         "command": "manual review; update data/paired-publication-decisions.json",
@@ -394,13 +523,24 @@ ARTIFACTS = [
     {
         "name": "Domain pages",
         "outputs": ["domains.html", "domain-*.html", "pages/DOMAINS.md"],
-        "sources": ["data/works.json", "data/software.json", "code/orchestrators/build_domain_pages.py"],
+        "sources": [
+            "data/works.json",
+            "data/software.json",
+            "code/orchestrators/build_domain_pages.py",
+        ],
         "command": "python3 code/orchestrators/build_domain_pages.py",
     },
     {
         "name": "Domain feeds",
         "outputs": ["feeds/domain-*.xml"],
-        "sources": ["data/works.json", "data/videos.json", "code/orchestrators/build_domain_pages.py", "code/orchestrators/build_domain_feeds.py", "code/src/site_nav.py", "code/src/build_stamp.py"],
+        "sources": [
+            "data/works.json",
+            "data/videos.json",
+            "code/orchestrators/build_domain_pages.py",
+            "code/orchestrators/build_domain_feeds.py",
+            "code/src/site_nav.py",
+            "code/src/build_stamp.py",
+        ],
         "command": "python3 code/orchestrators/build_domain_feeds.py",
     },
     {
@@ -424,8 +564,10 @@ ARTIFACTS = [
             "papers/*/images/*",
             ".gitignore",
             "code/orchestrators/build_work_pages.py",
-            "code/src/paper_artifacts.py", "code/src/publication_revisions.py",
-            "code/src/archive_projection.py", "data/pages-archive-documents.json",
+            "code/src/paper_artifacts.py",
+            "code/src/publication_revisions.py",
+            "code/src/archive_projection.py",
+            "data/pages-archive-documents.json",
             "code/src/metadata_templates.py",
             "code/src/site_nav.py",
             "code/src/abstract_text.py",
@@ -436,13 +578,27 @@ ARTIFACTS = [
     {
         "name": "Scholar prerequisite audit",
         "outputs": ["data/scholar-readiness.json", "reports/scholar_readiness.md"],
-        "sources": ["data/works.json", "works/*.html", "papers/*/metadata.json", "papers/*/full_text.md", "papers/*/*.[pP][dD][fF]", "code/src/scholar_readiness.py", "code/src/citation_metadata.py", "code/src/paper_artifacts.py", "code/src/publication_revisions.py"],
+        "sources": [
+            "data/works.json",
+            "works/*.html",
+            "papers/*/metadata.json",
+            "papers/*/full_text.md",
+            "papers/*/*.[pP][dD][fF]",
+            "code/src/scholar_readiness.py",
+            "code/src/citation_metadata.py",
+            "code/src/paper_artifacts.py",
+            "code/src/publication_revisions.py",
+        ],
         "command": "uv run python3 code/orchestrators/build_scholar_readiness.py",
     },
     {
         "name": "Work authors",
         "outputs": ["data/work-authors.json"],
-        "sources": ["pages/BIBLIOGRAPHY.md", "DOI registration agencies (Crossref/DataCite)", "code/orchestrators/fetch_work_authors.py"],
+        "sources": [
+            "pages/BIBLIOGRAPHY.md",
+            "DOI registration agencies (Crossref/DataCite)",
+            "code/orchestrators/fetch_work_authors.py",
+        ],
         "command": "python3 code/orchestrators/fetch_work_authors.py --apply",
     },
     {
@@ -468,7 +624,10 @@ ARTIFACTS = [
     {
         "name": "Video transcript cache",
         "outputs": ["data/video-transcripts/*.txt"],
-        "sources": ["YouTube captions", "code/orchestrators/fetch_video_transcripts.py"],
+        "sources": [
+            "YouTube captions",
+            "code/orchestrators/fetch_video_transcripts.py",
+        ],
         "command": "python3 code/orchestrators/fetch_video_transcripts.py --channel all",
     },
     {
@@ -487,8 +646,10 @@ ARTIFACTS = [
             "papers/*/images/*",
             ".gitignore",
             "code/orchestrators/build_paper_pages.py",
-            "code/src/paper_artifacts.py", "code/src/publication_revisions.py",
-            "code/src/archive_projection.py", "data/pages-archive-documents.json",
+            "code/src/paper_artifacts.py",
+            "code/src/publication_revisions.py",
+            "code/src/archive_projection.py",
+            "data/pages-archive-documents.json",
             "code/orchestrators/build_work_pages.py",
             "code/src/metadata_templates.py",
             "code/src/site_nav.py",
@@ -500,25 +661,56 @@ ARTIFACTS = [
     {
         "name": "Evidence pages",
         "outputs": ["evidence.html", "pages/EVIDENCE.md"],
-        "sources": ["data/claims.json", "data/current-counts.json", "reports/public_source_snapshot_*.json", "reports/public_source_inventory_*.json", "code/orchestrators/build_evidence_page.py", "code/src/site_nav.py", "code/src/build_stamp.py"],
+        "sources": [
+            "data/claims.json",
+            "data/current-counts.json",
+            "reports/public_source_snapshot_*.json",
+            "reports/public_source_inventory_*.json",
+            "code/orchestrators/build_evidence_page.py",
+            "code/src/site_nav.py",
+            "code/src/build_stamp.py",
+        ],
         "command": "python3 code/orchestrators/build_evidence_page.py",
     },
     {
         "name": "Reproducibility ledger",
-        "outputs": ["reproducibility.html", "pages/REPRODUCIBILITY.md", "data/reproducibility.json"],
-        "sources": ["data/works.json", "data/software.json", "code/orchestrators/build_reproducibility_ledger.py", "code/src/site_nav.py", "code/src/build_stamp.py"],
+        "outputs": [
+            "reproducibility.html",
+            "pages/REPRODUCIBILITY.md",
+            "data/reproducibility.json",
+        ],
+        "sources": [
+            "data/works.json",
+            "data/software.json",
+            "code/orchestrators/build_reproducibility_ledger.py",
+            "code/src/site_nav.py",
+            "code/src/build_stamp.py",
+        ],
         "command": "python3 code/orchestrators/build_reproducibility_ledger.py",
     },
     {
         "name": "Search index",
-        "outputs": ["search-index.json", "search-index-core.json", "search-index-content-work.json", "search-index-content-video.json", "search-index-bootstrap.json"],
+        "outputs": [
+            "search-index.json",
+            "search-index-core.json",
+            "search-index-content-work.json",
+            "search-index-content-video.json",
+            "search-index-bootstrap.json",
+        ],
         "sources": [
-            "data/*.json", "papers/*/full_text.md", "papers/*/images/*",
-            "reports/reconciliation_*.md", "reports/public_source_inventory_*.json",
-            "reports/accessibility_static_*.json", "reports/external_links_[0-9]*.json",
-            "reports/external_links_triage_*.md", "reports/asset_size_*.json",
-            "reports/live_site_verification_*.json", "reports/visual-qa/*/manifest.json",
-            "reports/browser-smoke/*/manifest.json", "code/orchestrators/build_search_index.py",
+            "data/*.json",
+            "papers/*/full_text.md",
+            "papers/*/images/*",
+            "reports/reconciliation_*.md",
+            "reports/public_source_inventory_*.json",
+            "reports/accessibility_static_*.json",
+            "reports/external_links_[0-9]*.json",
+            "reports/external_links_triage_*.md",
+            "reports/asset_size_*.json",
+            "reports/live_site_verification_*.json",
+            "reports/visual-qa/*/manifest.json",
+            "reports/browser-smoke/*/manifest.json",
+            "code/orchestrators/build_search_index.py",
             "code/src/abstract_text.py",
         ],
         "command": "python3 code/orchestrators/build_search_index.py",
@@ -526,44 +718,85 @@ ARTIFACTS = [
     {
         "name": "Data catalog",
         "outputs": ["catalog.html", "data/catalog.json"],
-        "sources": ["code/orchestrators/build_catalog.py", "data/*.json", "code/src/site_nav.py", "code/src/build_stamp.py"],
+        "sources": [
+            "code/orchestrators/build_catalog.py",
+            "data/*.json",
+            "code/src/site_nav.py",
+            "code/src/build_stamp.py",
+        ],
         "command": "python3 code/orchestrators/build_catalog.py",
     },
     {
         "name": "Exports hub",
         "outputs": ["exports.html"],
-        "sources": ["code/orchestrators/build_exports_page.py", "data/works.json", "data/current-counts.json", "code/src/site_nav.py", "code/src/build_stamp.py"],
+        "sources": [
+            "code/orchestrators/build_exports_page.py",
+            "data/works.json",
+            "data/current-counts.json",
+            "code/src/site_nav.py",
+            "code/src/build_stamp.py",
+        ],
         "command": "python3 code/orchestrators/build_exports_page.py",
     },
     {
         "name": "Updates page",
         "outputs": ["updates.html"],
-        "sources": ["CHANGELOG.md", "pages/THINKING_LOG.md", "code/orchestrators/build_updates_page.py", "code/src/site_nav.py", "code/src/build_stamp.py"],
+        "sources": [
+            "CHANGELOG.md",
+            "pages/THINKING_LOG.md",
+            "code/orchestrators/build_updates_page.py",
+            "code/src/site_nav.py",
+            "code/src/build_stamp.py",
+        ],
         "command": "python3 code/orchestrators/build_updates_page.py",
     },
     {
         "name": "External link report",
-        "outputs": [_latest_report("external_links_[0-9]*.json", "reports/external_links_2026-05-13.json")],
-        "sources": ["all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"],
+        "outputs": [
+            _latest_report(
+                "external_links_[0-9]*.json", "reports/external_links_2026-05-13.json"
+            )
+        ],
+        "sources": [
+            "all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"
+        ],
         "command": "python3 code/orchestrators/check_external_links.py",
     },
     {
         "name": "Public source snapshot",
-        "outputs": [_latest_report("public_source_snapshot_*.json", "reports/public_source_snapshot_2026-05-15.json")],
+        "outputs": [
+            _latest_report(
+                "public_source_snapshot_*.json",
+                "reports/public_source_snapshot_2026-05-15.json",
+            )
+        ],
         "sources": ["GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs"],
         "command": "python3 code/orchestrators/refresh_public_sources.py",
     },
     {
         "name": "Public source inventory",
-        "outputs": [_latest_report("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json")],
-        "sources": ["ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages"],
+        "outputs": [
+            _latest_report(
+                "public_source_inventory_*.json",
+                "reports/public_source_inventory_2026-05-15.json",
+            )
+        ],
+        "sources": [
+            "ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages"
+        ],
         "command": "python3 code/orchestrators/refresh_public_source_inventory.py",
     },
     {
         "name": "Public-source review record",
         "outputs": [
-            _latest_report("public_source_review_*.json", "reports/public_source_review_2026-05-15.json"),
-            _latest_report("public_source_review_*.md", "reports/public_source_review_2026-05-15.md"),
+            _latest_report(
+                "public_source_review_*.json",
+                "reports/public_source_review_2026-05-15.json",
+            ),
+            _latest_report(
+                "public_source_review_*.md",
+                "reports/public_source_review_2026-05-15.md",
+            ),
         ],
         "sources": [
             "reports/public_source_snapshot_*.json",
@@ -582,42 +815,79 @@ ARTIFACTS = [
     {
         "name": "External link triage",
         "outputs": [
-            _latest_report("external_links_triage_*.json", "reports/external_links_triage_2026-05-13.json"),
-            _latest_report("external_links_triage_*.md", "reports/external_links_triage_2026-05-13.md"),
+            _latest_report(
+                "external_links_triage_*.json",
+                "reports/external_links_triage_2026-05-13.json",
+            ),
+            _latest_report(
+                "external_links_triage_*.md",
+                "reports/external_links_triage_2026-05-13.md",
+            ),
         ],
         "sources": [LATEST_EXTERNAL_LINK_REPORT],
         "command": "python3 code/orchestrators/build_external_link_triage.py",
     },
     {
         "name": "Asset size audit",
-        "outputs": [_latest_report("asset_size_*.json", "reports/asset_size_2026-05-13.json")],
+        "outputs": [
+            _latest_report("asset_size_*.json", "reports/asset_size_2026-05-13.json")
+        ],
         "sources": ["root HTML pages", "og-*.jpg", "data/*.json", "style.css", "sw.js"],
         "command": "python3 code/orchestrators/audit_assets.py",
     },
     {
         "name": "Static accessibility report",
-        "outputs": [_latest_report("accessibility_static_*.json", "reports/accessibility_static_2026-05-13.json")],
-        "sources": ["root HTML pages", "style.css", "code/orchestrators/accessibility_audit.py", "code/orchestrators/deploy_seo_security.py", "code/src/site_nav.py"],
+        "outputs": [
+            _latest_report(
+                "accessibility_static_*.json",
+                "reports/accessibility_static_2026-05-13.json",
+            )
+        ],
+        "sources": [
+            "root HTML pages",
+            "style.css",
+            "code/orchestrators/accessibility_audit.py",
+            "code/orchestrators/deploy_seo_security.py",
+            "code/src/site_nav.py",
+        ],
         "command": "python3 code/orchestrators/accessibility_audit.py",
     },
     {
         "name": "Browser smoke checks",
         "outputs": [
-            _latest_subdir_pngs("browser-smoke", "reports/browser-smoke/2026-05-13/*.png"),
-            _latest_subdir_manifest("browser-smoke", "reports/browser-smoke/2026-05-13/manifest.json"),
+            _latest_subdir_pngs(
+                "browser-smoke", "reports/browser-smoke/2026-05-13/*.png"
+            ),
+            _latest_subdir_manifest(
+                "browser-smoke", "reports/browser-smoke/2026-05-13/manifest.json"
+            ),
         ],
         "sources": ["root HTML pages", "works/index.html", "search-index.json"],
         "command": "python3 code/orchestrators/browser_smoke.py",
     },
     {
         "name": "Progressive browser QA",
-        "outputs": [_latest_subdir_manifest("browser-qa", "reports/browser-qa/2026-07-18/manifest.json")],
-        "sources": ["root HTML pages", "js/*.js", "style.css", "code/orchestrators/browser_qa.py"],
+        "outputs": [
+            _latest_subdir_manifest(
+                "browser-qa", "reports/browser-qa/2026-07-18/manifest.json"
+            )
+        ],
+        "sources": [
+            "root HTML pages",
+            "js/*.js",
+            "style.css",
+            "code/orchestrators/browser_qa.py",
+        ],
         "command": "uv run --extra browser-qa python3 code/orchestrators/browser_qa.py",
     },
     {
         "name": "Live site verification",
-        "outputs": [_latest_report("live_site_verification_*.json", "reports/live_site_verification_2026-05-13.json")],
+        "outputs": [
+            _latest_report(
+                "live_site_verification_*.json",
+                "reports/live_site_verification_2026-05-13.json",
+            )
+        ],
         "sources": ["https://danielarifriedman.com/", "GitHub Pages API"],
         "command": "python3 code/orchestrators/verify_live_site.py",
     },
@@ -630,7 +900,11 @@ ARTIFACTS = [
     {
         "name": "Sitemap",
         "outputs": ["sitemap.xml"],
-        "sources": ["works/*.html", "code/src/sitemap_policy.py", "code/orchestrators/build_sitemap.py"],
+        "sources": [
+            "works/*.html",
+            "code/src/sitemap_policy.py",
+            "code/orchestrators/build_sitemap.py",
+        ],
         "command": "python3 code/orchestrators/build_sitemap.py",
     },
     {
@@ -672,7 +946,9 @@ ARTIFACTS = [
         "name": "Visual QA",
         "outputs": [
             _latest_subdir_pngs("visual-qa", "reports/visual-qa/2026-05-13/*.png"),
-            _latest_subdir_manifest("visual-qa", "reports/visual-qa/2026-05-13/manifest.json"),
+            _latest_subdir_manifest(
+                "visual-qa", "reports/visual-qa/2026-05-13/manifest.json"
+            ),
         ],
         "sources": ["root HTML pages", "style.css"],
         "command": "python3 code/orchestrators/visual_qa.py",
@@ -685,39 +961,154 @@ ARTIFACTS = [
 # discoverable from the authoritative matrix. MD-only: data/generated-manifest.json
 # keeps its frozen {generated_at, artifacts} schema for downstream consumers.
 UTILITIES = [
-    ("audit_content_citations.py", "Checks published HTML targets/fragments, catalog-derived citations and explicit joint authorship; optional source-bound inventories and live external probes", "audit"),
-    ("profile_backend.py", "Bounded Python 3.15 timing/tracing for fixed read-only backend workloads with source/runtime/result bindings; external JSON diagnostics only", "inspection"),
-    ("agent.py", "Offline read-only maintenance inspection: versioned JSON status and ordered write/check previews derived from the canonical generation plan; never executes writers or network intake", "inspection"),
-    ("regenerate_all.py", "Dependency-ordered write-mode rebuild of every locally-derived artifact; `--validate` chains validate_repo.py", "driver"),
-    ("validate_repo.py", "Authoritative generated-layer gate: runs every generator in `--check` mode plus repo invariants", "gate"),
-    ("review_citation_metadata.py", "Bounded Crossref DOI/title-matched citation proposals; explicit report output, no source application", "audit"),
-    ("validate_manuscript.py", "Read-only manuscript source/configuration gate; validates labels, citations and local references without rendering or assessing publication readiness", "gate"),
-    ("render_manuscript.py", "Explicit pinned offline draft render to a new external review directory (HTML/PDF/EPUB/PPTX and hash-bound receipt); excluded from ordinary regeneration, human/editorial review remain separate", "manual-render"),
-    ("build_generated_manifest.py", "Writes GENERATED.md + data/generated-manifest.json from the ARTIFACTS/UTILITIES lists in this file", "meta"),
-    ("audit_publication_skills.py", "Validates papers/*/SKILL.md against data/works.json docs_path references; runs in validate_repo.py", "audit"),
-    ("build_reconciliation_report.py", "Builds the public-source reconciliation report from local indexes and the freshness snapshot", "audit"),
-    ("build_public_source_review.py", "Builds dated applied/deferred/rejected review evidence from refresh snapshots without changing curated claims, metrics, classifications, or bibliography data", "review"),
-    ("audit_private_reconciliation.py", "Classifies public-main versus private-only changes without merging history and records source ports, derived regeneration, and binary deferrals", "audit"),
-    ("check_zenodo_uncatalogued.py", "Diffs live Zenodo records under the profile ORCID against the curated bibliography and catalogued software supplements", "audit"),
-    ("gsc_followup_preflight.py", "Prints the pre-GSC-followup checklist (sitemap and robots checks, retired-sitemap probe, indexable priority URLs, exclusion-review steps); see docs/seo/gsc-followup.md", "audit"),
-    ("indexnow_urls.py", "Emits the IndexNow URL list from the sitemap index-priority policy", "seo"),
-    ("submit_indexnow.py", "Submits index-priority URLs to IndexNow endpoints (Bing, Yandex, Naver)", "seo"),
-    ("prune_old_reports.py", "Prunes superseded dated QA screenshot sets only with a reviewed provenance-preserving retention manifest", "maintenance"),
-    ("record_scholar_observation.py", "Records an operator-attested direct authenticated Google Scholar observation: rewrites data/scholar-snapshot.json (superseding history) and its SHA-256-bound data/scholar-verification-receipt.json, then validates the pair; run sync_scholar_metrics.py afterward", "maintenance"),
-    ("reconcile_paper_dois.py", "Builds an approval-bound canonical DOI versus artifact DOI reconciliation receipt; bibliography DOI is canonical", "maintenance"),
-    ("attest_release.py", "Creates or checks a content-addressed post-deploy deployment-SHA attestation; never deploys", "release"),
-    ("generate_redirect_stubs.py", "Renders or checks all centrally declared redirect stubs without inline JavaScript", "maintenance"),
-    ("extract_paper_texts.py", "Extracts full text and images from paper PDFs into the papers/ tree", "maintenance"),
-    ("fetch_youtube_data.py", "Fetches YouTube channel metadata for both channels into code/data/youtube_*.json (network)", "fetch"),
-    ("generate_citation_cff.py", "Synchronizes bibliography title/authors and canonical/artifact DOI roles in per-paper CFF files while preserving non-DOI identifiers", "maintenance"),
-    ("render_github_inventory.py", "Renders the primary and fork GitHub inventory pages deterministically from the reviewed cached JSON inventory", "generation"),
-    ("deploy_seo_security.py", "Deploys/refreshes the CSP and rel=\"me\" head tags across indexable pages; idempotent and re-run on every rebuild (not a one-shot)", "maintenance"),
+    (
+        "audit_content_citations.py",
+        "Checks published HTML targets/fragments, catalog-derived citations and explicit joint authorship; optional source-bound inventories and live external probes",
+        "audit",
+    ),
+    (
+        "profile_backend.py",
+        "Bounded Python 3.15 timing/tracing for fixed read-only backend workloads with source/runtime/result bindings; external JSON diagnostics only",
+        "inspection",
+    ),
+    (
+        "agent.py",
+        "Offline read-only maintenance inspection: versioned JSON status and ordered write/check previews derived from the canonical generation plan; never executes writers or network intake",
+        "inspection",
+    ),
+    (
+        "regenerate_all.py",
+        "Dependency-ordered write-mode rebuild of every locally-derived artifact; `--validate` chains validate_repo.py",
+        "driver",
+    ),
+    (
+        "validate_repo.py",
+        "Authoritative generated-layer gate: runs every generator in `--check` mode plus repo invariants",
+        "gate",
+    ),
+    (
+        "review_citation_metadata.py",
+        "Bounded Crossref DOI/title-matched citation proposals; explicit report output, no source application",
+        "audit",
+    ),
+    (
+        "validate_manuscript.py",
+        "Read-only manuscript source/configuration gate; validates labels, citations and local references without rendering or assessing publication readiness",
+        "gate",
+    ),
+    (
+        "render_manuscript.py",
+        "Explicit pinned offline draft render to a new external review directory (HTML/PDF/EPUB/PPTX and hash-bound receipt); excluded from ordinary regeneration, human/editorial review remain separate",
+        "manual-render",
+    ),
+    (
+        "build_generated_manifest.py",
+        "Writes GENERATED.md + data/generated-manifest.json from the ARTIFACTS/UTILITIES lists in this file",
+        "meta",
+    ),
+    (
+        "audit_publication_skills.py",
+        "Validates papers/*/SKILL.md against data/works.json docs_path references; runs in validate_repo.py",
+        "audit",
+    ),
+    (
+        "build_reconciliation_report.py",
+        "Builds the public-source reconciliation report from local indexes and the freshness snapshot",
+        "audit",
+    ),
+    (
+        "build_public_source_review.py",
+        "Builds dated applied/deferred/rejected review evidence from refresh snapshots without changing curated claims, metrics, classifications, or bibliography data",
+        "review",
+    ),
+    (
+        "audit_private_reconciliation.py",
+        "Classifies public-main versus private-only changes without merging history and records source ports, derived regeneration, and binary deferrals",
+        "audit",
+    ),
+    (
+        "check_zenodo_uncatalogued.py",
+        "Diffs live Zenodo records under the profile ORCID against the curated bibliography and catalogued software supplements",
+        "audit",
+    ),
+    (
+        "gsc_followup_preflight.py",
+        "Prints the pre-GSC-followup checklist (sitemap and robots checks, retired-sitemap probe, indexable priority URLs, exclusion-review steps); see docs/seo/gsc-followup.md",
+        "audit",
+    ),
+    (
+        "indexnow_urls.py",
+        "Emits the IndexNow URL list from the sitemap index-priority policy",
+        "seo",
+    ),
+    (
+        "submit_indexnow.py",
+        "Submits index-priority URLs to IndexNow endpoints (Bing, Yandex, Naver)",
+        "seo",
+    ),
+    (
+        "prune_old_reports.py",
+        "Prunes superseded dated QA screenshot sets only with a reviewed provenance-preserving retention manifest",
+        "maintenance",
+    ),
+    (
+        "record_scholar_observation.py",
+        "Records an operator-attested direct authenticated Google Scholar observation: rewrites data/scholar-snapshot.json (superseding history) and its SHA-256-bound data/scholar-verification-receipt.json, then validates the pair; run sync_scholar_metrics.py afterward",
+        "maintenance",
+    ),
+    (
+        "reconcile_paper_dois.py",
+        "Builds an approval-bound canonical DOI versus artifact DOI reconciliation receipt; bibliography DOI is canonical",
+        "maintenance",
+    ),
+    (
+        "attest_release.py",
+        "Creates or checks a content-addressed post-deploy deployment-SHA attestation; never deploys",
+        "release",
+    ),
+    (
+        "generate_redirect_stubs.py",
+        "Renders or checks all centrally declared redirect stubs without inline JavaScript",
+        "maintenance",
+    ),
+    (
+        "extract_paper_texts.py",
+        "Extracts full text and images from paper PDFs into the papers/ tree",
+        "maintenance",
+    ),
+    (
+        "fetch_youtube_data.py",
+        "Fetches YouTube channel metadata for both channels into code/data/youtube_*.json (network)",
+        "fetch",
+    ),
+    (
+        "generate_citation_cff.py",
+        "Synchronizes bibliography title/authors and canonical/artifact DOI roles in per-paper CFF files while preserving non-DOI identifiers",
+        "maintenance",
+    ),
+    (
+        "render_github_inventory.py",
+        "Renders the primary and fork GitHub inventory pages deterministically from the reviewed cached JSON inventory",
+        "generation",
+    ),
+    (
+        "deploy_seo_security.py",
+        'Deploys/refreshes the CSP and rel="me" head tags across indexable pages; idempotent and re-run on every rebuild (not a one-shot)',
+        "maintenance",
+    ),
 ]
 
 
 def render_json(generated_at: str | None = None) -> str:
     generated_at = generated_at or generated_timestamp()
-    return json.dumps({"generated_at": generated_at, "artifacts": ARTIFACTS}, indent=2, ensure_ascii=False) + "\n"
+    return (
+        json.dumps(
+            {"generated_at": generated_at, "artifacts": ARTIFACTS},
+            indent=2,
+            ensure_ascii=False,
+        )
+        + "\n"
+    )
 
 
 def render_md() -> str:
@@ -732,7 +1123,9 @@ def render_md() -> str:
     for item in ARTIFACTS:
         outputs = "<br>".join(f"`{value}`" for value in item["outputs"])
         sources = "<br>".join(f"`{value}`" for value in item["sources"])
-        lines.append(f"| {item['name']} | {outputs} | {sources} | `{item['command']}` |")
+        lines.append(
+            f"| {item['name']} | {outputs} | {sources} | `{item['command']}` |"
+        )
     lines.extend(
         [
             "",
@@ -765,7 +1158,11 @@ def outputs(generated_at: str | None = None) -> dict[Path, str]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if generated manifest files are stale")
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Fail if generated manifest files are stale",
+    )
     args = parser.parse_args()
     stale = []
     candidate = json.loads(render_json())

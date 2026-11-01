@@ -26,18 +26,20 @@ CSP_META_TAG = (
     "script-src 'self'; "
     "style-src 'self' 'unsafe-inline'; "
     "font-src 'self'; "
-    'img-src \'self\' data: https:; '
+    "img-src 'self' data: https:; "
     "connect-src 'self'; "
     "frame-src https://www.youtube-nocookie.com; "
     "base-uri 'self'; "
-    'form-action \'self\';">'
+    "form-action 'self';\">"
 )
 
 # Directives a <meta>-delivered CSP must never carry, because the spec requires
 # user agents to ignore them there. Enforced by code/tests/test_seo_invariants.py.
 META_INVALID_CSP_DIRECTIVES = ("frame-ancestors", "report-uri", "sandbox")
 
-REFERRER_POLICY_META = '<meta name="referrer" content="strict-origin-when-cross-origin">'
+REFERRER_POLICY_META = (
+    '<meta name="referrer" content="strict-origin-when-cross-origin">'
+)
 
 # rel="me" social verification links (same set as index.html head).
 REL_ME_LINKS = (
@@ -81,7 +83,9 @@ INTERACTIVE_SCRIPTS = (
 
 # Copy-BibTeX wiring (js/cite-export.js). Loaded only on generated work pages
 # (build_work_pages.py); external file keeps the site CSP (script-src 'self').
-CITE_EXPORT_SCRIPT_TAG = '<script src="/js/cite-export.js?v=work-access-20261001" defer></script>'
+CITE_EXPORT_SCRIPT_TAG = (
+    '<script src="/js/cite-export.js?v=work-access-20261001" defer></script>'
+)
 
 # Work pages that are duplicates of another catalogued work (same paper, different
 # Zenodo deposit/version) point their rel=canonical at the primary entry so search
@@ -141,8 +145,8 @@ def clip_description(text: str, limit: int = 155) -> str:
     if trailing_url:
         # A clipped URL or adjacent ellipsis becomes a different external
         # address for readers and link scanners. Keep only complete URLs.
-        if text[len(cut):len(cut) + 1] != " " or len(cut) + 2 > limit:
-            cut = cut[:trailing_url.start()].rstrip()
+        if text[len(cut) : len(cut) + 1] != " " or len(cut) + 2 > limit:
+            cut = cut[: trailing_url.start()].rstrip()
         else:
             return cut + " …"
     return cut + "…"
@@ -254,12 +258,14 @@ def ensure_agent_map_link(markup: str, *, href: str = "data/agent-index.json") -
     """
     anchor = f'<a href="{html.escape(href, quote=True)}">Agent Map</a>'
     if 'role="menubar"' in markup or "role='menubar'" in markup:
-        anchor = f'<a href="{html.escape(href, quote=True)}" role="menuitem">Agent Map</a>'
+        anchor = (
+            f'<a href="{html.escape(href, quote=True)}" role="menuitem">Agent Map</a>'
+        )
 
     container = re.compile(
         r'(?P<open><div\b[^>]*class=["\'][^"\']*\b(?:nav-links|nav-right)\b[^"\']*["\'][^>]*>)'
-        r'(?P<body>.*?)'
-        r'(?P<close></div>)',
+        r"(?P<body>.*?)"
+        r"(?P<close></div>)",
         re.I | re.S,
     )
     match = container.search(markup)
@@ -291,7 +297,13 @@ def ensure_agent_map_link(markup: str, *, href: str = "data/agent-index.json") -
                 normalized,
                 flags=re.I,
             )
-        return markup[: match.start("body")] + normalized + "\n" + open_line_indent + markup[match.end("body") :]
+        return (
+            markup[: match.start("body")]
+            + normalized
+            + "\n"
+            + open_line_indent
+            + markup[match.end("body") :]
+        )
 
     trimmed = body.rstrip()
     trailing = body[len(trimmed) :]
@@ -328,14 +340,21 @@ def breadcrumb_list_jsonld(trail: list[tuple[str, str]]) -> dict:
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-            {"@type": "ListItem", "position": i + 1, "name": label, "item": SITE_ORIGIN + rel}
+            {
+                "@type": "ListItem",
+                "position": i + 1,
+                "name": label,
+                "item": SITE_ORIGIN + rel,
+            }
             for i, (label, rel) in enumerate(trail)
         ],
     }
 
 
 def breadcrumb_jsonld_script(trail: list[tuple[str, str]]) -> str:
-    payload = json.dumps(breadcrumb_list_jsonld(trail), indent=4, ensure_ascii=False).replace("<", "\\u003c")
+    payload = json.dumps(
+        breadcrumb_list_jsonld(trail), indent=4, ensure_ascii=False
+    ).replace("<", "\\u003c")
     return f'    <script type="application/ld+json">\n{payload}\n    </script>'
 
 
@@ -348,11 +367,13 @@ def render_breadcrumb(trail: list[tuple[str, str]], *, depth: int = 0) -> str:
             out.append(f'<li aria-current="page">{html.escape(label)}</li>')
         else:
             href = f"{prefix}{rel}" if rel else f"{prefix}index.html"
-            out.append(f'<li><a href="{html.escape(href, quote=True)}">{html.escape(label)}</a></li>')
+            out.append(
+                f'<li><a href="{html.escape(href, quote=True)}">{html.escape(label)}</a></li>'
+            )
     return (
         '    <nav class="breadcrumb" aria-label="Breadcrumb">\n'
-        f'        <ol>{"".join(out)}</ol>\n'
-        '    </nav>'
+        f"        <ol>{''.join(out)}</ol>\n"
+        "    </nav>"
     )
 
 
@@ -363,7 +384,10 @@ def render_breadcrumb(trail: list[tuple[str, str]], *, depth: int = 0) -> str:
 # destinations stay reachable through the visible "More" disclosure. Replaces
 # the divergent per-page navs that preceded this manifest.
 
-def nav_manifest(depth: int = 0) -> tuple[list[tuple[str, str, str, str]], list[tuple[str, str, str, str]]]:
+
+def nav_manifest(
+    depth: int = 0,
+) -> tuple[list[tuple[str, str, str, str]], list[tuple[str, str, str, str]]]:
     """Return (primary, secondary) nav link tuples (key, href, label, extra_class)."""
     prefix = "../" * depth
     home = f"{prefix}index.html"
@@ -398,7 +422,9 @@ def nav_manifest(depth: int = 0) -> tuple[list[tuple[str, str, str, str]], list[
     return primary, secondary
 
 
-def _nav_anchor(key: str, href: str, label: str, extra: str, *, active: str = "") -> str:
+def _nav_anchor(
+    key: str, href: str, label: str, extra: str, *, active: str = ""
+) -> str:
     classes = [c for c in (extra, "active" if key == active else "") if c]
     attrs = f' class="{" ".join(classes)}"' if classes else ""
     current = ' aria-current="page"' if key == active else ""
@@ -410,17 +436,22 @@ def _render_nav_shell(*, active: str = "", depth: int = 0) -> str:
     prefix = "../" * depth
     home = f"{prefix}index.html"
     primary, secondary = nav_manifest(depth)
-    items = "\n".join(f"            <li>{_nav_anchor(*item, active=active)}</li>" for item in primary)
-    more_items = "\n".join(f"                    <li>{_nav_anchor(*item, active=active)}</li>" for item in secondary)
+    items = "\n".join(
+        f"            <li>{_nav_anchor(*item, active=active)}</li>" for item in primary
+    )
+    more_items = "\n".join(
+        f"                    <li>{_nav_anchor(*item, active=active)}</li>"
+        for item in secondary
+    )
     return (
         f'    <nav aria-label="Main navigation">\n'
         f'        <a href="{home}" class="nav-logo">Daniel Ari Friedman</a>\n'
         f'        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">\u2630</button>\n'
         f'        <ul class="nav-links" id="nav-menu">\n'
         f"{items}\n"
-        f'            <li>\n'
+        f"            <li>\n"
         f'                <details class="nav-more">\n'
-        f'                    <summary>More</summary>\n'
+        f"                    <summary>More</summary>\n"
         f'                    <ul class="nav-more-panel">\n'
         f"{more_items}\n"
         f"                    </ul>\n"

@@ -34,9 +34,19 @@ class UniqueKeyLoader(yaml.SafeLoader):
         for key_node, value_node in node.value:
             key = self.construct_object(key_node, deep=deep)
             if not isinstance(key, str):
-                raise yaml.constructor.ConstructorError(None, None, "configuration keys must be strings", key_node.start_mark)
+                raise yaml.constructor.ConstructorError(
+                    None,
+                    None,
+                    "configuration keys must be strings",
+                    key_node.start_mark,
+                )
             if key in mapping:
-                raise yaml.constructor.ConstructorError(None, None, f"duplicate configuration key: {key}", key_node.start_mark)
+                raise yaml.constructor.ConstructorError(
+                    None,
+                    None,
+                    f"duplicate configuration key: {key}",
+                    key_node.start_mark,
+                )
             mapping[key] = self.construct_object(value_node, deep=deep)
         return mapping
 
@@ -50,7 +60,10 @@ def prose_without_fences(text: str) -> str:
         if fence is None and marker:
             fence = marker.group(1)
         elif fence is not None:
-            if re.fullmatch(r"\s{0,3}" + re.escape(fence[0]) + "{" + str(len(fence)) + r",}\s*", line):
+            if re.fullmatch(
+                r"\s{0,3}" + re.escape(fence[0]) + "{" + str(len(fence)) + r",}\s*",
+                line,
+            ):
                 fence = None
         else:
             lines.append(line)
@@ -63,7 +76,9 @@ def _source_text(root: Path, relative: Path, errors: list[str]) -> str | None:
     try:
         text = read_generated_output_text(root, root / relative)
     except (OSError, ValueError, UnicodeError) as exc:
-        errors.append(f"{relative.as_posix()}: cannot read a regular repository source ({type(exc).__name__})")
+        errors.append(
+            f"{relative.as_posix()}: cannot read a regular repository source ({type(exc).__name__})"
+        )
         return None
     if text is None:
         errors.append(f"{relative.as_posix()}: missing source")
@@ -79,7 +94,7 @@ def _local_path(value: object, root: Path) -> Path | None:
     try:
         if (root / path).resolve().is_relative_to(root.resolve()):
             return path
-    except (OSError, ValueError):
+    except OSError, ValueError:
         return None
     return None
 
@@ -103,28 +118,52 @@ def _configuration(text: str, root: Path, errors: list[str]) -> tuple[dict, list
     elif isinstance(paper, dict) and not paper["title"].strip():
         errors.append(f"{label}: paper.title must be a non-empty string")
     publication = config.get("publication")
-    if isinstance(publication, dict) and publication.get("github_repository") != "docxology/docxology":
-        errors.append(f"{label}: publication.github_repository must identify docxology/docxology")
+    if (
+        isinstance(publication, dict)
+        and publication.get("github_repository") != "docxology/docxology"
+    ):
+        errors.append(
+            f"{label}: publication.github_repository must identify docxology/docxology"
+        )
     authors = config.get("authors")
-    if not isinstance(authors, list) or not authors or any(
-        not isinstance(author, dict) or not isinstance(author.get("name"), str) or not author["name"].strip()
-        for author in authors
+    if (
+        not isinstance(authors, list)
+        or not authors
+        or any(
+            not isinstance(author, dict)
+            or not isinstance(author.get("name"), str)
+            or not author["name"].strip()
+            for author in authors
+        )
     ):
         errors.append(f"{label}: authors must contain named author mappings")
     if _local_path(config.get("manuscript_dir"), root) != MANUSCRIPT_PATH:
-        errors.append(f"{label}: manuscript_dir must be docs/manuscript, relative to the repository root")
+        errors.append(
+            f"{label}: manuscript_dir must be docs/manuscript, relative to the repository root"
+        )
     bibliography = config.get("bibliography")
     if isinstance(bibliography, dict):
-        if _local_path(bibliography.get("references_path"), root) != MANUSCRIPT_PATH / "references.bib":
-            errors.append(f"{label}: bibliography.references_path must name docs/manuscript/references.bib")
+        if (
+            _local_path(bibliography.get("references_path"), root)
+            != MANUSCRIPT_PATH / "references.bib"
+        ):
+            errors.append(
+                f"{label}: bibliography.references_path must name docs/manuscript/references.bib"
+            )
         for key in ("fail_on_missing", "fail_on_unused"):
             if type(bibliography.get(key)) is not bool:
                 errors.append(f"{label}: bibliography.{key} must be a YAML boolean")
         if bibliography.get("fail_on_missing") is not True:
-            errors.append(f"{label}: unresolved manuscript citations must fail validation")
+            errors.append(
+                f"{label}: unresolved manuscript citations must fail validation"
+            )
     render = config.get("render")
     formats = render.get("formats") if isinstance(render, dict) else None
-    if not isinstance(formats, dict) or not formats or any(type(enabled) is not bool for enabled in formats.values()):
+    if (
+        not isinstance(formats, dict)
+        or not formats
+        or any(type(enabled) is not bool for enabled in formats.values())
+    ):
         errors.append(f"{label}: render.formats must contain YAML boolean values")
         return config, []
     unsupported = sorted(set(formats) - {"pdf", "html", "slides", "docx", "epub"})
@@ -188,11 +227,13 @@ def bibliography_keys(text: str, errors: list[str]) -> list[str]:
         if end is None:
             errors.append(f"{label}: unclosed or unbalanced bibliography entry")
             break
-        body = text[start + 1:end]
+        body = text[start + 1 : end]
         if kind.lower() not in {"comment", "preamble", "string"}:
             key = re.match(r"\s*([^,\s{}()]+)\s*,", body)
             if key is None:
-                errors.append(f"{label}: citation entry must start with a key and comma")
+                errors.append(
+                    f"{label}: citation entry must start with a key and comma"
+                )
             else:
                 keys.append(key.group(1))
         cursor = end + 1
@@ -202,16 +243,24 @@ def bibliography_keys(text: str, errors: list[str]) -> list[str]:
 def prose_links(prose: str, relative: Path, errors: list[str]) -> list[tuple[str, str]]:
     """Resolve inline, explicit reference, and shortcut image destinations."""
     links = LINK_PATTERN.findall(prose)
+
     def normalize(value: str) -> str:
         return " ".join(value.split()).casefold()
+
     definitions = {
         normalize(label): target
-        for label, target in re.findall(r"(?m)^\s{0,3}\[([^\]\n]+)\]:\s*(<[^>]+>|[^\s]+)(?:\s+.*)?$", prose)
+        for label, target in re.findall(
+            r"(?m)^\s{0,3}\[([^\]\n]+)\]:\s*(<[^>]+>|[^\s]+)(?:\s+.*)?$", prose
+        )
     }
-    for image, text, reference in re.findall(r"(!?)\[([^\]\n]*)\]\[([^\]\n]*)\]", prose):
+    for image, text, reference in re.findall(
+        r"(!?)\[([^\]\n]*)\]\[([^\]\n]*)\]", prose
+    ):
         key = normalize(reference or text)
         if key not in definitions:
-            errors.append(f"{relative}: unresolved reference-style {'figure' if image else 'link'}")
+            errors.append(
+                f"{relative}: unresolved reference-style {'figure' if image else 'link'}"
+            )
         else:
             links.append((image, definitions[key]))
     for reference in re.findall(r"!\[([^\]\n]*)\](?![\[(])", prose):
@@ -227,22 +276,41 @@ def validate_manuscript(root: Path) -> dict:
     """Return deterministic repository-relative diagnostics without writing files."""
     errors: list[str] = []
     config_text = _source_text(root, MANUSCRIPT_PATH / "config.yaml", errors)
-    config, formats = _configuration(config_text, root, errors) if config_text is not None else ({}, [])
+    config, formats = (
+        _configuration(config_text, root, errors)
+        if config_text is not None
+        else ({}, [])
+    )
     render_config = config.get("render")
     figures = render_config.get("figures") if isinstance(render_config, dict) else None
-    declared_targets = SOURCE_TARGETS if figures == {"producer": PRODUCER, "ids": list(FIGURES)} else frozenset()
+    declared_targets = (
+        SOURCE_TARGETS
+        if figures == {"producer": PRODUCER, "ids": list(FIGURES)}
+        else frozenset()
+    )
     references = _source_text(root, MANUSCRIPT_PATH / "references.bib", errors)
     citation_keys = []
     if references is not None:
         citation_keys = bibliography_keys(references, errors)
         if len(citation_keys) != len(set(citation_keys)):
             errors.append("docs/manuscript/references.bib: duplicate citation keys")
+
     def section_order(path: Path) -> tuple[int, str]:
-        group = 1 if path.name.startswith("S") else 2 if path.name[:2] in {"98", "99"} else 0
+        group = (
+            1
+            if path.name.startswith("S")
+            else 2
+            if path.name[:2] in {"98", "99"}
+            else 0
+        )
         return group, path.name
 
     sections = sorted(
-        (path for path in (root / MANUSCRIPT_PATH).glob("*.md") if SECTION_PATTERN.fullmatch(path.name)),
+        (
+            path
+            for path in (root / MANUSCRIPT_PATH).glob("*.md")
+            if SECTION_PATTERN.fullmatch(path.name)
+        ),
         key=section_order,
     )
     prefixes = [path.name.split("_", 1)[0] for path in sections]
@@ -266,8 +334,14 @@ def validate_manuscript(root: Path) -> dict:
             continue
         headings = re.findall(r"(?m)^# (.+)$", prose)
         first_line = next((line for line in prose.splitlines() if line.strip()), "")
-        if len(headings) != 1 or not first_line.startswith("# ") or not re.search(r"\{#sec:[A-Za-z0-9_-]+\}$", first_line):
-            errors.append(f"{relative}: section must start with exactly one H1 carrying a sec label")
+        if (
+            len(headings) != 1
+            or not first_line.startswith("# ")
+            or not re.search(r"\{#sec:[A-Za-z0-9_-]+\}$", first_line)
+        ):
+            errors.append(
+                f"{relative}: section must start with exactly one H1 carrying a sec label"
+            )
         for label in LABEL_PATTERN.findall(prose):
             if label in labels:
                 errors.append(f"{relative}: duplicate label {label}")
@@ -299,12 +373,18 @@ def validate_manuscript(root: Path) -> dict:
                     errors.append(f"{relative}: unsupported link scheme")
                 elif parsed.scheme in {"https", "http"}:
                     try:
-                        valid = bool(parsed.hostname) and parsed.username is None and parsed.password is None
+                        valid = (
+                            bool(parsed.hostname)
+                            and parsed.username is None
+                            and parsed.password is None
+                        )
                         parsed.port  # Validate the optional numeric port/range.
                     except ValueError:
                         valid = False
                     if not valid:
-                        errors.append(f"{relative}: malformed or credential-bearing external URL")
+                        errors.append(
+                            f"{relative}: malformed or credential-bearing external URL"
+                        )
                 continue
             if parsed.netloc:
                 errors.append(f"{relative}: protocol-relative links are unsupported")
@@ -322,15 +402,20 @@ def validate_manuscript(root: Path) -> dict:
                 elif image and target in declared_targets:
                     continue  # Declared virtual asset, produced only by explicit offline rendering.
                 elif not destination.exists():
-                    errors.append(f"{relative}: missing local {'figure' if image else 'link'} {parsed.path}")
+                    errors.append(
+                        f"{relative}: missing local {'figure' if image else 'link'} {parsed.path}"
+                    )
                 elif image and (not destination.is_file() or destination.is_symlink()):
                     errors.append(f"{relative}: figure target must be a regular file")
-            except (OSError, ValueError):
+            except OSError, ValueError:
                 errors.append(f"{relative}: invalid local reference")
     for path, label in cross_references:
         if label not in labels:
             errors.append(f"{path}: unresolved cross-reference {label}")
-    if isinstance(config.get("bibliography"), dict) and config["bibliography"].get("fail_on_unused") is True:
+    if (
+        isinstance(config.get("bibliography"), dict)
+        and config["bibliography"].get("fail_on_unused") is True
+    ):
         for key in sorted(set(citation_keys) - used_keys):
             errors.append(f"docs/manuscript/references.bib: unused citation {key}")
     return {

@@ -251,9 +251,7 @@ _LABELS = [label for label, _, _ in _CASES]
 
 
 @pytest.mark.parametrize(("paths", "expected"), _TABLE, ids=_LABELS)
-def test_classify_paths_table(
-    paths: tuple[str, ...], expected: Classification
-) -> None:
+def test_classify_paths_table(paths: tuple[str, ...], expected: Classification) -> None:
     result = classify_paths(paths)
     assert result == expected
     assert "release" not in result.tiers

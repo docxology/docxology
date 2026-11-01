@@ -46,10 +46,18 @@ LANE_PAGES = (
 )
 
 NAV_VIEWPORTS = (900, 1024, 1152, 1280, 1440, 1920)
-ROOT_RUNTIME_FILES = frozenset({
-    "style.css", "favicon.ico", "robots.txt", "sitemap.xml",
-    "manifest.json", "sw.js", "opensearch.xml", "feed.xml",
-})
+ROOT_RUNTIME_FILES = frozenset(
+    {
+        "style.css",
+        "favicon.ico",
+        "robots.txt",
+        "sitemap.xml",
+        "manifest.json",
+        "sw.js",
+        "opensearch.xml",
+        "feed.xml",
+    }
+)
 PWA_ICON_FILES = ("art/favicon-192.png", "art/favicon-512.png")
 
 # GitHub Pages compresses text responses of any size, plus SVG and ICO
@@ -58,20 +66,22 @@ PWA_ICON_FILES = ("art/favicon-192.png", "art/favicon-512.png")
 # (3.12+) or application/javascript (older mimetypes tables) and ``.ico`` to
 # image/x-icon or image/vnd.microsoft.icon (platform mime tables differ), so
 # both spellings of each are listed.
-GZIP_CONTENT_TYPES = frozenset({
-    "text/html",
-    "text/css",
-    "text/plain",
-    "text/xml",
-    "text/javascript",
-    "application/javascript",
-    "application/json",
-    "application/manifest+json",
-    "application/xml",
-    "image/svg+xml",
-    "image/x-icon",
-    "image/vnd.microsoft.icon",
-})
+GZIP_CONTENT_TYPES = frozenset(
+    {
+        "text/html",
+        "text/css",
+        "text/plain",
+        "text/xml",
+        "text/javascript",
+        "application/javascript",
+        "application/json",
+        "application/manifest+json",
+        "application/xml",
+        "image/svg+xml",
+        "image/x-icon",
+        "image/vnd.microsoft.icon",
+    }
+)
 # zlib level 5 matches the GitHub Pages gzip sizes for the published files
 # (identical for most, within 1% for the rest).
 GZIP_LEVEL = 5
@@ -88,11 +98,15 @@ def require_playwright() -> None:
     try:
         from playwright.sync_api import Error, sync_playwright
     except ImportError as exc:
-        unavailable_browser_capability(f"playwright unavailable: {exc}; run uv sync --extra browser-qa")
+        unavailable_browser_capability(
+            f"playwright unavailable: {exc}; run uv sync --extra browser-qa"
+        )
     try:
         with sync_playwright() as playwright:
             if not Path(playwright.chromium.executable_path).is_file():
-                unavailable_browser_capability("chromium executable missing; run uv run --extra browser-qa playwright install chromium")
+                unavailable_browser_capability(
+                    "chromium executable missing; run uv run --extra browser-qa playwright install chromium"
+                )
             browser = playwright.chromium.launch(headless=True)
             browser.close()
     except (Error, OSError) as exc:
@@ -110,9 +124,19 @@ def copy_site(tmp_path: Path) -> Path:
     for item in sorted(REPO_ROOT.iterdir()):
         if item.suffix == ".html":
             shutil.copy2(item, site / item.name)
-        elif item.is_file() and (item.name in ROOT_RUNTIME_FILES or item.match("search-index*.json")):
+        elif item.is_file() and (
+            item.name in ROOT_RUNTIME_FILES or item.match("search-index*.json")
+        ):
             shutil.copy2(item, site / item.name)
-        elif item.is_dir() and item.name in {"css", "js", "data", "works", "videos", "artworks", "assets"}:
+        elif item.is_dir() and item.name in {
+            "css",
+            "js",
+            "data",
+            "works",
+            "videos",
+            "artworks",
+            "assets",
+        }:
             shutil.copytree(item, site / item.name)
     for relative in PWA_ICON_FILES:
         target = site / relative
@@ -182,7 +206,10 @@ class FixtureHandler(http.server.SimpleHTTPRequestHandler):
         """Return (file path, Content-Type) when this request is served gzipped."""
         if not self.compress or not accepts_gzip(self.headers.get("Accept-Encoding")):
             return None
-        if any(name in self.headers for name in ("If-Modified-Since", "If-None-Match", "Range")):
+        if any(
+            name in self.headers
+            for name in ("If-Modified-Since", "If-None-Match", "Range")
+        ):
             return None
         path = self.translate_path(self.path)
         if os.path.isdir(path):
@@ -255,7 +282,9 @@ def serve_site(site_dir: Path, *, compress: bool = True) -> tuple[str, object]:
         # capability, exactly like a missing chromium binary — not a site
         # defect. Only EACCES/EPERM is treated this way: an address already in
         # use, a missing directory, or any other OSError still fails the test.
-        unavailable_browser_capability(f"local HTTP server not permitted in this environment: {exc}")
+        unavailable_browser_capability(
+            f"local HTTP server not permitted in this environment: {exc}"
+        )
     thread = threading.Thread(target=httpd.serve_forever, daemon=True)
     thread.start()
     return f"http://127.0.0.1:{httpd.server_address[1]}", httpd
@@ -281,7 +310,9 @@ def page_and_server(tmp_path: Path):
     browser = pw.chromium.launch(headless=True)
     # Ordinary interaction QA inspects direct responses; worker lifecycle is
     # explicitly enabled only in its dedicated real-browser acceptance tests.
-    context = browser.new_context(viewport={"width": 1280, "height": 900}, service_workers="block")
+    context = browser.new_context(
+        viewport={"width": 1280, "height": 900}, service_workers="block"
+    )
     page = context.new_page()
     try:
         yield page, base_url, httpd

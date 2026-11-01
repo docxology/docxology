@@ -24,9 +24,7 @@ for _dir in (_DOCXOLOGY_SRC, _ORCH_DIR):
 import build_public_source_review as psr  # noqa: E402
 
 
-def _git(
-    repo: Path, *args: str, extra_env: dict[str, str] | None = None
-) -> str:
+def _git(repo: Path, *args: str, extra_env: dict[str, str] | None = None) -> str:
     env = os.environ.copy()
     env.update(
         {

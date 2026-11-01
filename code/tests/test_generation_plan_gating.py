@@ -33,7 +33,9 @@ from docxology_tools.generation_plan import (  # noqa: E402
 )
 from docxology_tools.release_controls import is_control_path  # noqa: E402
 
-STEPS: dict[str, GenerationStep] = {step.identifier: step for step in LOCAL_GENERATION_STEPS}
+STEPS: dict[str, GenerationStep] = {
+    step.identifier: step for step in LOCAL_GENERATION_STEPS
+}
 
 # Steps classified DERIVED in the plan: always-run, no declared inputs, each
 # with a one-line reason in the plan comment. Keep this set in sync — a new
@@ -96,7 +98,9 @@ def test_seed_pattern_supports_case_insensitive_pdf_glob(tmp_path: Path) -> None
 
 
 def _seed_inputs(repo_root: Path, step: GenerationStep) -> list[Path]:
-    paths = [_seed_pattern(repo_root, pattern) for pattern in effective_step_inputs(step)]
+    paths = [
+        _seed_pattern(repo_root, pattern) for pattern in effective_step_inputs(step)
+    ]
     if step.index_inputs:
         subprocess.run(["git", "init", "-q", str(repo_root)], check=True)
         subprocess.run(["git", "add", "--", "."], cwd=repo_root, check=True)
@@ -177,7 +181,9 @@ def test_every_declared_input_pattern_is_real_and_skip_eligible(tmp_path: Path) 
 
 
 def test_derived_steps_are_exactly_the_documented_always_run_set() -> None:
-    ungated = sorted(step.identifier for step in LOCAL_GENERATION_STEPS if not step.inputs)
+    ungated = sorted(
+        step.identifier for step in LOCAL_GENERATION_STEPS if not step.inputs
+    )
     assert ungated == sorted(DERIVED_STEPS)
 
 
@@ -207,9 +213,14 @@ def test_catalog_and_search_index_are_input_gated_plan_steps() -> None:
     catalog = STEPS["catalog"]
     search_index = STEPS["search-index"]
     assert catalog.identifier == "catalog" and catalog.script == "build_catalog.py"
-    assert search_index.identifier == "search-index" and search_index.script == "build_search_index.py"
+    assert (
+        search_index.identifier == "search-index"
+        and search_index.script == "build_search_index.py"
+    )
     assert catalog.inputs, "catalog must declare source inputs to be skippable"
-    assert search_index.inputs, "search-index must declare source inputs to be skippable"
+    assert search_index.inputs, (
+        "search-index must declare source inputs to be skippable"
+    )
     # Catalog consumes the dataset exports (works/software/videos) and the
     # search index the works export, so a data intake refreshes both without
     # a manual invocation.

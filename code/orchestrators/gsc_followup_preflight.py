@@ -27,7 +27,11 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-from docxology_tools.sitemap_policy import RETIRED_SITEMAP_PATHS, SITE_ORIGIN, gsc_priority_urls  # noqa: E402
+from docxology_tools.sitemap_policy import (  # noqa: E402
+    RETIRED_SITEMAP_PATHS,
+    SITE_ORIGIN,
+    gsc_priority_urls,
+)
 from build_sitemap import sitemap_locs  # noqa: E402
 
 from docxology_tools.report_paths import dated_report_path, generated_timestamp  # noqa: E402
@@ -125,7 +129,9 @@ _HTML_COMMENT = re.compile(r"<!--.*?(?:-->|\Z)", re.S)
 # A <meta> start tag whose quoted attribute values may themselves contain ">".
 _META_TAG = re.compile(r"""<meta\b(?:[^>"']|"[^"]*"|'[^']*')*>""", re.I)
 # One attribute: name, then a double-quoted, single-quoted, or unquoted value.
-_META_ATTR = re.compile(r"""([^\s"'<>/=]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'<>=`]+))""")
+_META_ATTR = re.compile(
+    r"""([^\s"'<>/=]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'<>=`]+))"""
+)
 # Meta names whose directives reach Google web search.
 _ROBOTS_META_NAMES = frozenset({"robots", "googlebot"})
 # "none" is shorthand for "noindex, nofollow".
@@ -145,7 +151,9 @@ def sitemap_file_problems(root: Path) -> list[str]:
     extras = sorted(
         entry.name
         for entry in root.iterdir()
-        if entry.is_file() and fnmatch.fnmatch(entry.name.lower(), "*sitemap*.xml") and entry.name != "sitemap.xml"
+        if entry.is_file()
+        and fnmatch.fnmatch(entry.name.lower(), "*sitemap*.xml")
+        and entry.name != "sitemap.xml"
     )
     if extras:
         problems.append("extra root sitemap file(s): " + ", ".join(extras))
@@ -156,7 +164,9 @@ def sitemap_file_problems(root: Path) -> list[str]:
     declared = _ROBOTS_SITEMAP_LINE.findall(robots_path.read_text(encoding="utf-8"))
     canonical = SITE_ORIGIN + "sitemap.xml"
     if len(declared) != 1:
-        problems.append(f"robots.txt has {len(declared)} Sitemap: lines (expected exactly 1)")
+        problems.append(
+            f"robots.txt has {len(declared)} Sitemap: lines (expected exactly 1)"
+        )
     stray = [url for url in declared if url != canonical]
     if stray:
         problems.append("robots.txt Sitemap: not canonical: " + ", ".join(stray))
@@ -191,13 +201,19 @@ def has_noindex_robots_meta(html: str) -> bool:
             attrs.setdefault(name.lower(), value)  # the first duplicate attribute wins
         if attrs.get("name", "").strip().lower() not in _ROBOTS_META_NAMES:
             continue
-        directives = {token for token in re.split(r"[\s,;]+", attrs.get("content", "").lower()) if token}
+        directives = {
+            token
+            for token in re.split(r"[\s,;]+", attrs.get("content", "").lower())
+            if token
+        }
         if directives & _NOINDEX_DIRECTIVES:
             return True
     return False
 
 
-def priority_url_problems(root: Path, urls: list[str], sitemap_urls: set[str]) -> list[str]:
+def priority_url_problems(
+    root: Path, urls: list[str], sitemap_urls: set[str]
+) -> list[str]:
     """Priority URLs that are not sitemap members, have no local file, or are ``noindex``."""
     problems: list[str] = []
     for url in urls:
@@ -210,7 +226,9 @@ def priority_url_problems(root: Path, urls: list[str], sitemap_urls: set[str]) -
         page = root / rel
         if not page.is_file():
             problems.append(f"{url}: {rel} not found")
-        elif has_noindex_robots_meta(page.read_text(encoding="utf-8", errors="replace")):
+        elif has_noindex_robots_meta(
+            page.read_text(encoding="utf-8", errors="replace")
+        ):
             problems.append(f"{url}: {rel} is noindex")
     return problems
 
@@ -224,7 +242,11 @@ def retired_sitemap_row(path: str, hit: dict | None) -> dict:
     """
     hit = hit or {}
     status = hit.get("status")
-    detail = f"HTTP {status} (expected 404 or 410)" if status is not None else f"no HTTP status ({hit.get('error', 'no response')})"
+    detail = (
+        f"HTTP {status} (expected 404 or 410)"
+        if status is not None
+        else f"no HTTP status ({hit.get('error', 'no response')})"
+    )
     return {
         "check": f"retired_sitemap_{path}",
         "ok": status in (404, 410),
@@ -252,7 +274,9 @@ def local_checks(repo_root: Path) -> list[dict]:
         {
             "check": "sitemap_excludes_papers",
             "ok": not papers_in_sitemap,
-            "detail": "no /papers/ in sitemap" if not papers_in_sitemap else f"found {len(papers_in_sitemap)}",
+            "detail": "no /papers/ in sitemap"
+            if not papers_in_sitemap
+            else f"found {len(papers_in_sitemap)}",
         }
     )
     seo_errors = collect_seo_errors(repo_root)
@@ -283,7 +307,9 @@ def local_checks(repo_root: Path) -> list[dict]:
             ),
         }
     )
-    priority_problems = priority_url_problems(repo_root, gsc_priority_urls(), set(policy_locs))
+    priority_problems = priority_url_problems(
+        repo_root, gsc_priority_urls(), set(policy_locs)
+    )
     results.append(
         {
             "check": "priority_urls_indexable",
@@ -332,7 +358,9 @@ def live_checks() -> list[dict]:
         }
     )
     for retired in RETIRED_SITEMAP_PATHS:
-        results.append(retired_sitemap_row(retired, fetch_status(SITE_ORIGIN + retired)))
+        results.append(
+            retired_sitemap_row(retired, fetch_status(SITE_ORIGIN + retired))
+        )
     return results
 
 
@@ -396,9 +424,15 @@ def print_summary(report: dict) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--skip-live", action="store_true", help="Local SEO checks only (no HTTP)")
-    parser.add_argument("--json", action="store_true", help="Write JSON report to reports/")
-    parser.add_argument("--check", action="store_true", help="Exit 1 if preflight fails")
+    parser.add_argument(
+        "--skip-live", action="store_true", help="Local SEO checks only (no HTTP)"
+    )
+    parser.add_argument(
+        "--json", action="store_true", help="Write JSON report to reports/"
+    )
+    parser.add_argument(
+        "--check", action="store_true", help="Exit 1 if preflight fails"
+    )
     args = parser.parse_args()
 
     report = build_report(REPO_ROOT, skip_live=args.skip_live)

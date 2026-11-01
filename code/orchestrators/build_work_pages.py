@@ -47,7 +47,11 @@ from docxology_tools.publication_revisions import revision_notice_html  # noqa: 
 from docxology_tools.abstract_text import abstract_display_text  # noqa: E402
 from docxology_tools.paper_artifacts import PaperResources, source_file, source_paths  # noqa: E402
 from docxology_tools.citation_metadata import journal_fields, publication_date  # noqa: E402
-from docxology_tools.author_entities import author_entity, load_author_records, verified_author_types  # noqa: E402
+from docxology_tools.author_entities import (  # noqa: E402
+    author_entity,
+    load_author_records,
+    verified_author_types,
+)
 
 
 def h(value: object) -> str:
@@ -115,7 +119,7 @@ def author_ld(work: dict) -> dict | list[dict] | None:
 
 
 def display_name(name: str) -> str:
-    """"Family, Given" as a reader-facing "Given Family"; literals unchanged."""
+    '"Family, Given" as a reader-facing "Given Family"; literals unchanged.'
     if "," not in name:
         return name
     family, _, given = name.partition(",")
@@ -202,7 +206,7 @@ def platform_availability_card(work: dict) -> str:
         if status_label in present:
             link = platform_link(status_label, work)
             label = f'<a href="{h(link)}">{h(display)}</a>' if link else h(display)
-            rows.append(f'<li>✅ {label}</li>')
+            rows.append(f"<li>✅ {label}</li>")
         else:
             rows.append(f'<li class="muted">⬜ {h(display)}</li>')
     return (
@@ -242,7 +246,12 @@ def section_paragraph(markdown: str, heading: str, max_chars: int = 900) -> str:
     lines = []
     for line in raw.splitlines():
         line = line.strip()
-        if not line or line.startswith("|") or line.startswith("- ") or line.startswith("* "):
+        if (
+            not line
+            or line.startswith("|")
+            or line.startswith("- ")
+            or line.startswith("* ")
+        ):
             continue
         lines.append(line)
     text = strip_md(" ".join(lines))
@@ -282,7 +291,10 @@ def keyword_list(markdown: str, limit: int = 12) -> list[str]:
 
 
 def enrichment_for(
-    work: dict, *, resources: PaperResources | None = None, curated: dict | None = None,
+    work: dict,
+    *,
+    resources: PaperResources | None = None,
+    curated: dict | None = None,
     visible_paths: frozenset[str] | None = None,
 ) -> dict:
     """Read complete curated content, retaining a source for each displayed field.
@@ -302,10 +314,16 @@ def enrichment_for(
 
     resources = resources or work.get("_resources")
     if resources is None:
-        resources = PaperResources.load(REPO_ROOT, work.get("docs_path") or "", visible_paths)
+        resources = PaperResources.load(
+            REPO_ROOT, work.get("docs_path") or "", visible_paths
+        )
     if curated is None:
-        master_path = source_file(REPO_ROOT, "papers/paper_metadata.json", visible_paths)
-        curated = json.loads(master_path.read_text(encoding="utf-8")) if master_path else {}
+        master_path = source_file(
+            REPO_ROOT, "papers/paper_metadata.json", visible_paths
+        )
+        curated = (
+            json.loads(master_path.read_text(encoding="utf-8")) if master_path else {}
+        )
     if not isinstance(curated, dict):
         raise ValueError("Consolidated paper metadata must be an object")
     folder = resources.folder.name if resources.folder else ""
@@ -316,19 +334,31 @@ def enrichment_for(
     sources: dict[str, str] = {}
     master_source = "papers/paper_metadata.json"
     metadata_source = f"{resources.docs_path}metadata.json" if folder else ""
-    readme_text = resources.readme.read_text(encoding="utf-8", errors="replace") if resources.readme else ""
-    skill_text = resources.skill.read_text(encoding="utf-8", errors="replace") if resources.skill else ""
+    readme_text = (
+        resources.readme.read_text(encoding="utf-8", errors="replace")
+        if resources.readme
+        else ""
+    )
+    skill_text = (
+        resources.skill.read_text(encoding="utf-8", errors="replace")
+        if resources.skill
+        else ""
+    )
     documents = [
         (readme_text, f"{resources.docs_path}README.md"),
         (skill_text, f"{resources.docs_path}SKILL.md"),
     ]
 
     def missing_notice(value: str) -> bool:
-        return bool(re.match(
-            r"^(?:No abstract (?:is recorded|is available|available)|"
-            r"Detailed local abstract is not available|"
-            r"(?:Abstract|Summary) (?:is )?not available)\b", value, re.I,
-        ))
+        return bool(
+            re.match(
+                r"^(?:No abstract (?:is recorded|is available|available)|"
+                r"Detailed local abstract is not available|"
+                r"(?:Abstract|Summary) (?:is )?not available)\b",
+                value,
+                re.I,
+            )
+        )
 
     def provenance(value: object) -> dict:
         if not isinstance(value, dict):
@@ -336,7 +366,11 @@ def enrichment_for(
         result = {}
         for field in ("source", "date", "work_kind", "kind"):
             text = value.get(field)
-            if isinstance(text, str) and text and not text.startswith(("/", "file:", "~/")):
+            if (
+                isinstance(text, str)
+                and text
+                and not text.startswith(("/", "file:", "~/"))
+            ):
                 result[field] = text
         url = value.get("url")
         if isinstance(url, str):
@@ -344,7 +378,12 @@ def enrichment_for(
                 parsed = urlsplit(url)
             except ValueError:
                 return result
-            if parsed.scheme == "https" and parsed.hostname and not parsed.username and not parsed.password:
+            if (
+                parsed.scheme == "https"
+                and parsed.hostname
+                and not parsed.username
+                and not parsed.password
+            ):
                 result["url"] = url
         return result
 
@@ -380,10 +419,17 @@ def enrichment_for(
             if candidate:
                 keywords, keyword_source = candidate, origin
                 break
-    keywords = list(dict.fromkeys(
-        word.strip() for word in keywords
-        if isinstance(word, str) and word.strip()
-    )) if isinstance(keywords, list) else []
+    keywords = (
+        list(
+            dict.fromkeys(
+                word.strip()
+                for word in keywords
+                if isinstance(word, str) and word.strip()
+            )
+        )
+        if isinstance(keywords, list)
+        else []
+    )
     if keywords:
         sources["keywords"] = keyword_source
 
@@ -398,7 +444,11 @@ def enrichment_for(
         method_source = ""
         for text, origin in documents:
             candidates = bullet_section(text, "Methods", limit=10000)
-            candidates = [item for item in candidates if not is_template_method({"name": item.split(" — ", 1)[0]})]
+            candidates = [
+                item
+                for item in candidates
+                if not is_template_method({"name": item.split(" — ", 1)[0]})
+            ]
             if candidates:
                 methods, method_source = candidates, origin
                 break
@@ -411,12 +461,16 @@ def enrichment_for(
     )
     findings = []
     if "key_findings" in metadata:
-        findings = specific_findings(metadata.get("key_findings"), *([] if grounded else [abstract]))
+        findings = specific_findings(
+            metadata.get("key_findings"), *([] if grounded else [abstract])
+        )
         finding_source = metadata_source
     else:
         finding_source = ""
         for text, origin in documents:
-            candidate = specific_findings(bullet_section(text, "Key Findings", limit=10000), abstract)
+            candidate = specific_findings(
+                bullet_section(text, "Key Findings", limit=10000), abstract
+            )
             if candidate:
                 findings, finding_source = candidate, origin
                 break
@@ -425,12 +479,18 @@ def enrichment_for(
 
     concepts = []
     if "key_concepts" in metadata or "concepts" in metadata:
-        concepts = [str(item).strip() for item in metadata.get("key_concepts", metadata.get("concepts")) or [] if str(item).strip()]
+        concepts = [
+            str(item).strip()
+            for item in metadata.get("key_concepts", metadata.get("concepts")) or []
+            if str(item).strip()
+        ]
         concept_source = metadata_source
     else:
         concept_source = ""
         for text, origin in documents:
-            candidate = bullet_section(text, "Key Concepts", limit=10000) or bullet_section(text, "Key Contributions", limit=10000)
+            candidate = bullet_section(
+                text, "Key Concepts", limit=10000
+            ) or bullet_section(text, "Key Contributions", limit=10000)
             if candidate:
                 concepts, concept_source = candidate, origin
                 break
@@ -446,14 +506,27 @@ def enrichment_for(
         "methods": methods,
         "concepts": concepts,
         "sources": sources,
-        "source": next((sources[field] for field in ("abstract", "findings", "methods", "concepts", "keywords") if field in sources), ""),
-        "abstract_provenance": provenance(metadata.get("abstract_provenance")) if abstract else {},
-        "summary_provenance": provenance(metadata.get("summary_provenance")) if methods or findings else {},
+        "source": next(
+            (
+                sources[field]
+                for field in ("abstract", "findings", "methods", "concepts", "keywords")
+                if field in sources
+            ),
+            "",
+        ),
+        "abstract_provenance": provenance(metadata.get("abstract_provenance"))
+        if abstract
+        else {},
+        "summary_provenance": provenance(metadata.get("summary_provenance"))
+        if methods or findings
+        else {},
     }
 
 
 def enrichment_map(
-    works: list[dict], *, visible_paths: frozenset[str] | None = None,
+    works: list[dict],
+    *,
+    visible_paths: frozenset[str] | None = None,
 ) -> dict[str, dict]:
     """Load the curated collection and Git-visible source inventory once per batch."""
     visible = source_paths(REPO_ROOT) if visible_paths is None else visible_paths
@@ -462,7 +535,8 @@ def enrichment_map(
     return {
         work["citation_key"]: enrichment_for(
             work,
-            resources=work.get("_resources") or PaperResources.load(REPO_ROOT, work.get("docs_path") or "", visible),
+            resources=work.get("_resources")
+            or PaperResources.load(REPO_ROOT, work.get("docs_path") or "", visible),
             curated=curated,
             visible_paths=visible,
         )
@@ -488,9 +562,18 @@ def abstract_source_html(enrichment: dict, prefix: str = "../") -> str:
         provenance = {}
     labels = {
         "papers/paper_metadata.json": ("Curated paper metadata", ""),
-        "abridged publisher synopsis": ("Abridged publisher synopsis", "link.springer.com"),
-        "published Summary in NLM JATS full text": ("Published Summary (NLM full text)", "pmc-oa-opendata.s3.amazonaws.com"),
-        "Rendered manuscript Abstract in exact Zenodo v3.6.0 archive": ("Archived manuscript abstract", ""),
+        "abridged publisher synopsis": (
+            "Abridged publisher synopsis",
+            "link.springer.com",
+        ),
+        "published Summary in NLM JATS full text": (
+            "Published Summary (NLM full text)",
+            "pmc-oa-opendata.s3.amazonaws.com",
+        ),
+        "Rendered manuscript Abstract in exact Zenodo v3.6.0 archive": (
+            "Archived manuscript abstract",
+            "",
+        ),
     }
     label, allowed_host = labels.get(provenance.get("source"), ("", ""))
     target = ""
@@ -501,9 +584,13 @@ def abstract_source_html(enrichment: dict, prefix: str = "../") -> str:
         except ValueError:
             parsed = None
         if (
-            parsed and parsed.scheme == "https" and parsed.netloc == allowed_host
-            and not parsed.username and not parsed.password
-            and not parsed.query and not parsed.fragment
+            parsed
+            and parsed.scheme == "https"
+            and parsed.netloc == allowed_host
+            and not parsed.username
+            and not parsed.password
+            and not parsed.query
+            and not parsed.fragment
         ):
             target = url
     sources = enrichment.get("sources") or {}
@@ -512,13 +599,19 @@ def abstract_source_html(enrichment: dict, prefix: str = "../") -> str:
         if origin == "papers/paper_metadata.json":
             label = label or "Curated paper metadata"
             target = target or prefix + encoded_path(origin)
-        elif re.fullmatch(r"papers/\d{4}_[^/\\\x00-\x1f]+/(?:README\.md|SKILL\.md|metadata\.json)", origin):
+        elif re.fullmatch(
+            r"papers/\d{4}_[^/\\\x00-\x1f]+/(?:README\.md|SKILL\.md|metadata\.json)",
+            origin,
+        ):
             name = origin.rsplit("/", 1)[-1]
-            label = label or {
-                "README.md": "Paper overview (README)",
-                "SKILL.md": "Paper documentation (SKILL)",
-                "metadata.json": "Paper metadata",
-            }[name]
+            label = (
+                label
+                or {
+                    "README.md": "Paper overview (README)",
+                    "SKILL.md": "Paper documentation (SKILL)",
+                    "metadata.json": "Paper metadata",
+                }[name]
+            )
             target = target or prefix + encoded_path(origin)
     if not label:
         return ""
@@ -527,7 +620,9 @@ def abstract_source_html(enrichment: dict, prefix: str = "../") -> str:
 
 
 def resources_for(work: dict) -> PaperResources:
-    return work.get("_resources") or PaperResources.load(REPO_ROOT, work.get("docs_path", ""))
+    return work.get("_resources") or PaperResources.load(
+        REPO_ROOT, work.get("docs_path", "")
+    )
 
 
 def local_docs_link(path: str) -> str:
@@ -544,21 +639,35 @@ def image_gallery_link_work(docs_path: str) -> str:
     return resources.github_url + "/images" if resources.images else ""
 
 
-def source_repository_url(docs_path: str, resources: PaperResources | None = None) -> str:
+def source_repository_url(
+    docs_path: str, resources: PaperResources | None = None
+) -> str:
     """Associated software repository, distinct from this archive's paper folder."""
     from urllib.parse import urlsplit
 
     resources = resources or PaperResources.load(REPO_ROOT, docs_path)
     meta = resources.metadata or {}
     candidates = [meta.get("github_repo", "")]
-    candidates.extend(item.get("url", "") for item in meta.get("related_resources", []) if item.get("type") == "repository")
+    candidates.extend(
+        item.get("url", "")
+        for item in meta.get("related_resources", [])
+        if item.get("type") == "repository"
+    )
     for url in candidates:
         if re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", str(url)):
             url = "https://github.com/" + str(url)
         parsed = urlsplit(str(url))
-        if parsed.scheme == "https" and parsed.netloc == "github.com" and not parsed.query and not parsed.fragment:
+        if (
+            parsed.scheme == "https"
+            and parsed.netloc == "github.com"
+            and not parsed.query
+            and not parsed.fragment
+        ):
             parts = parsed.path.strip("/").split("/")
-            if len(parts) == 2 and all(re.fullmatch(r"[A-Za-z0-9_.-]+", part) and part not in {".", ".."} for part in parts):
+            if len(parts) == 2 and all(
+                re.fullmatch(r"[A-Za-z0-9_.-]+", part) and part not in {".", ".."}
+                for part in parts
+            ):
                 return "https://github.com/" + "/".join(parts)
     return ""
 
@@ -604,13 +713,18 @@ def bibtex_button_html(work: dict) -> str:
 
 def citation_text(work: dict) -> str:
     venue = f" {work['venue']}." if work.get("venue") else ""
-    url = work.get("url") or f"https://danielarifriedman.com/works/{work['citation_key']}.html"
+    url = (
+        work.get("url")
+        or f"https://danielarifriedman.com/works/{work['citation_key']}.html"
+    )
     doi = f" DOI: {work['doi']}." if work.get("doi") else ""
     authors = "; ".join(work.get("authors") or [])
     role = " (eds.)" if work.get("contributor_role") == "editor" else ""
-    byline = f'{(authors + role).rstrip(".")}. ' if authors else ""
+    byline = f"{(authors + role).rstrip('.')}. " if authors else ""
     title_stop = "" if work["title"].endswith((".", "?", "!")) else "."
-    return f"{byline}{work['year']}. {work['title']}{title_stop}{venue}{doi} URL: {url}."
+    return (
+        f"{byline}{work['year']}. {work['title']}{title_stop}{venue}{doi} URL: {url}."
+    )
 
 
 def breadcrumb_trail(work: dict) -> list[tuple[str, str]]:
@@ -647,7 +761,12 @@ def related_works_html(work: dict) -> str:
 
 
 def json_ld(work: dict) -> str:
-    typ = "ScholarlyArticle" if work["type"] in {"Paper", "Book Chapter", "Poster", "Thesis", "Report", "Preprint", "Review"} else "CreativeWork"
+    typ = (
+        "ScholarlyArticle"
+        if work["type"]
+        in {"Paper", "Book Chapter", "Poster", "Thesis", "Report", "Preprint", "Review"}
+        else "CreativeWork"
+    )
     enrich = work.get("enrichment", {})
     same_as = [work["url"]] if work.get("url") else []
     if work.get("doi"):
@@ -679,20 +798,38 @@ def json_ld(work: dict) -> str:
         data[work.get("contributor_role", "author")] = author
     if work.get("doi"):
         data["identifier"] = [
-            {"@type": "PropertyValue", "propertyID": "DOI", "value": work["doi"], "url": f"https://doi.org/{work['doi']}"},
-            {"@type": "PropertyValue", "propertyID": "Citation key", "value": work["citation_key"]},
+            {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": work["doi"],
+                "url": f"https://doi.org/{work['doi']}",
+            },
+            {
+                "@type": "PropertyValue",
+                "propertyID": "Citation key",
+                "value": work["citation_key"],
+            },
         ]
     else:
-        data["identifier"] = {"@type": "PropertyValue", "propertyID": "Citation key", "value": work["citation_key"]}
+        data["identifier"] = {
+            "@type": "PropertyValue",
+            "propertyID": "Citation key",
+            "value": work["citation_key"],
+        }
     if work.get("venue"):
         data["publisher"] = {"@type": "Organization", "name": work["venue"]}
     if enrich.get("abstract"):
         data["abstract"] = abstract_display_text(enrich["abstract"])
     if enrich.get("keywords"):
         data["keywords"] = enrich["keywords"]
-        data["about"].extend({"@type": "DefinedTerm", "name": keyword} for keyword in enrich["keywords"][:8])
+        data["about"].extend(
+            {"@type": "DefinedTerm", "name": keyword}
+            for keyword in enrich["keywords"][:8]
+        )
     if enrich.get("findings") or enrich.get("methods"):
-        data["description"] = " ".join([*(enrich.get("findings") or []), *(enrich.get("methods") or [])])[:700]
+        data["description"] = " ".join(
+            [*(enrich.get("findings") or []), *(enrich.get("methods") or [])]
+        )[:700]
     cite_str = citation_text(work)
     if cite_str:
         data["citation"] = cite_str
@@ -703,29 +840,52 @@ def json_ld(work: dict) -> str:
     resources = resources_for(work)
     if resources.github_url:
         data["hasPart"] = {
-            "@type": "CreativeWork", "name": "Paper documentation and source files",
+            "@type": "CreativeWork",
+            "name": "Paper documentation and source files",
             "url": resources.github_url,
         }
     encodings = [
-        {"@type": "MediaObject", "encodingFormat": "application/pdf",
-         "contentUrl": resources.absolute_url(pdf), "url": resources.absolute_url(pdf),
-         "name": pdf.name, "contentSize": f"{pdf.stat().st_size} bytes"}
+        {
+            "@type": "MediaObject",
+            "encodingFormat": "application/pdf",
+            "contentUrl": resources.absolute_url(pdf),
+            "url": resources.absolute_url(pdf),
+            "name": pdf.name,
+            "contentSize": f"{pdf.stat().st_size} bytes",
+        }
         for pdf in ([resources.primary_pdf] if resources.primary_pdf else [])
     ]
     attachments = [
-        {"@type": "MediaObject", "encodingFormat": "application/pdf", "name": pdf.name,
-         "contentUrl": resources.absolute_url(pdf), "contentSize": f"{pdf.stat().st_size} bytes"}
-        for pdf in resources.pdfs if pdf != resources.primary_pdf
+        {
+            "@type": "MediaObject",
+            "encodingFormat": "application/pdf",
+            "name": pdf.name,
+            "contentUrl": resources.absolute_url(pdf),
+            "contentSize": f"{pdf.stat().st_size} bytes",
+        }
+        for pdf in resources.pdfs
+        if pdf != resources.primary_pdf
     ]
     if resources.full_text:
         text_encoding = {
-            "@type": "TextObject", "encodingFormat": "text/markdown",
-            "url": resources.absolute_url(resources.full_text), "name": "Full text (extracted)",
+            "@type": "TextObject",
+            "encodingFormat": "text/markdown",
+            "url": resources.absolute_url(resources.full_text),
+            "name": "Full text (extracted)",
         }
-        if resources.primary_pdf and resources.extraction_source and resources.extraction_source != resources.primary_pdf.name:
-            attachments.append({**text_encoding, "@type": "MediaObject",
-                                "contentUrl": text_encoding["url"],
-                                "name": f"Extracted text from {resources.extraction_source}"})
+        if (
+            resources.primary_pdf
+            and resources.extraction_source
+            and resources.extraction_source != resources.primary_pdf.name
+        ):
+            attachments.append(
+                {
+                    **text_encoding,
+                    "@type": "MediaObject",
+                    "contentUrl": text_encoding["url"],
+                    "name": f"Extracted text from {resources.extraction_source}",
+                }
+            )
         else:
             encodings.append(text_encoding)
     if encodings:
@@ -761,20 +921,32 @@ def page_head(work: dict) -> str:
         f"{work['title']} — {str(work['type']).lower()} in {work['domain_name']} "
         f"({work['year']}). Part of the unified bibliography."
     )
-    description = abstract_display_text(work.get("enrichment", {}).get("abstract")) or fallback
+    description = (
+        abstract_display_text(work.get("enrichment", {}).get("abstract")) or fallback
+    )
     description = clip_description(description)
     canon_url = f"https://danielarifriedman.com/works/{canonical_work_key(work['citation_key'])}.html"
     page_title = work_page_title(work)
     resources = resources_for(work)
-    citation_meta = [f'<meta name="citation_title" content="{h(work["title"])}">',
-                     f'<meta name="citation_publication_date" content="{h(publication_date(work, resources.metadata or {}).replace("-", "/"))}">']
+    citation_meta = [
+        f'<meta name="citation_title" content="{h(work["title"])}">',
+        f'<meta name="citation_publication_date" content="{h(publication_date(work, resources.metadata or {}).replace("-", "/"))}">',
+    ]
     role = work.get("contributor_role", "author")
-    citation_meta.extend(f'<meta name="citation_{role}" content="{h(display_name(name))}">' for name in work.get("authors") or [])
-    citation_meta.extend(f'<meta name="citation_{name}" content="{h(value)}">' for name, value in journal_fields(work, resources.metadata or {}).items())
+    citation_meta.extend(
+        f'<meta name="citation_{role}" content="{h(display_name(name))}">'
+        for name in work.get("authors") or []
+    )
+    citation_meta.extend(
+        f'<meta name="citation_{name}" content="{h(value)}">'
+        for name, value in journal_fields(work, resources.metadata or {}).items()
+    )
     if work.get("doi"):
         citation_meta.append(f'<meta name="citation_doi" content="{h(work["doi"])}">')
     if resources.primary_pdf:
-        citation_meta.append(f'<meta name="citation_pdf_url" content="{h(resources.absolute_url(resources.primary_pdf))}">')
+        citation_meta.append(
+            f'<meta name="citation_pdf_url" content="{h(resources.absolute_url(resources.primary_pdf))}">'
+        )
     citation_meta_html = "\n    ".join(citation_meta)
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -795,18 +967,18 @@ def page_head(work: dict) -> str:
     <link rel="alternate" type="application/vnd.citationstyles.csl+json" href="/bibliography.csl.json" title="CSL JSON bibliography">
 {HEAD_EXTRAS}
     <meta property="og:type" content="article">
-    <meta property="og:title" content="{h(work['title'])}">
+    <meta property="og:title" content="{h(work["title"])}">
     <meta property="og:description" content="{h(description)}">
     <meta property="og:url" content="{h(canon_url)}">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="{h(work['title'])} — Daniel Ari Friedman">
+    <meta property="og:image:alt" content="{h(work["title"])} — Daniel Ari Friedman">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{h(work['title'])}">
+    <meta name="twitter:title" content="{h(work["title"])}">
     <meta name="twitter:description" content="{h(description)}">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
-    <meta name="twitter:image:alt" content="{h(work['title'])} — Daniel Ari Friedman">
+    <meta name="twitter:image:alt" content="{h(work["title"])} — Daniel Ari Friedman">
     <link rel="stylesheet" href="../style.css?v=site-20261002b">
     <meta name="theme-color" content="#0c0c0e">
     <style>
@@ -835,15 +1007,20 @@ def pdf_downloads_html(resources: PaperResources) -> str:
             f'{h(pdf.name)}</a><span class="muted"> PDF · {size:.2f} MiB{h(basis)}</span></li>'
         )
     for item in resources.archive_documents:
-        rows.append(f'<li><a href="{h(item["url"])}">Original {h(Path(item["path"]).suffix[1:].upper())} source (pinned GitHub archive)</a></li>')
+        rows.append(
+            f'<li><a href="{h(item["url"])}">Original {h(Path(item["path"]).suffix[1:].upper())} source (pinned GitHub archive)</a></li>'
+        )
     note = resources.selection_issue
     if len(resources.pdfs) > 1:
-        note = (note + " " if note else "") + "These files may be different versions or companion documents. The archive does not identify a latest edition."
+        note = (
+            (note + " " if note else "")
+            + "These files may be different versions or companion documents. The archive does not identify a latest edition."
+        )
     note_html = f'<p class="muted">{h(note)}</p>' if note else ""
-    return f'''<section class="section" id="downloads" aria-labelledby="downloads-title">
+    return f"""<section class="section" id="downloads" aria-labelledby="downloads-title">
             <div class="section-header"><h2 id="downloads-title">Document downloads</h2><p>PDFs are hosted here; supporting sources may use pinned archives.</p><div class="section-divider"></div></div>
             <div class="work-detail"><ul class="download-list">{"".join(rows)}</ul>{note_html}</div>
-        </section>'''
+        </section>"""
 
 
 def render_work_page(work: dict) -> str:
@@ -855,27 +1032,55 @@ def render_work_page(work: dict) -> str:
     actions = []
     if resources.primary_pdf:
         pdf = resources.primary_pdf
-        actions.append(f'<a class="btn btn-gold" href="{h(resources.url(pdf))}" download="{h(pdf.name)}" type="application/pdf">Download PDF</a>')
+        actions.append(
+            f'<a class="btn btn-gold" href="{h(resources.url(pdf))}" download="{h(pdf.name)}" type="application/pdf">Download PDF</a>'
+        )
     elif resources.pdfs:
         actions.append('<a class="btn btn-gold" href="#downloads">PDF downloads</a>')
     if primary:
-        actions.append(f'<a class="btn btn-outline" href="{h(primary)}">Publication source</a>')
+        actions.append(
+            f'<a class="btn btn-outline" href="{h(primary)}">Publication source</a>'
+        )
     if resources.github_url:
-        actions.append(f'<a class="btn btn-outline" href="{h(resources.github_url)}">Paper folder on GitHub</a>')
+        actions.append(
+            f'<a class="btn btn-outline" href="{h(resources.github_url)}">Paper folder on GitHub</a>'
+        )
     if resources.full_text:
-        actions.append(f'<a class="btn btn-outline" href="{h(resources.url(resources.full_text))}">Read extracted text</a>')
-    actions_html = '<div class="work-actions" role="group" aria-label="Read and download this work">' + "\n".join(actions) + '</div>' if actions else ""
+        actions.append(
+            f'<a class="btn btn-outline" href="{h(resources.url(resources.full_text))}">Read extracted text</a>'
+        )
+    actions_html = (
+        '<div class="work-actions" role="group" aria-label="Read and download this work">'
+        + "\n".join(actions)
+        + "</div>"
+        if actions
+        else ""
+    )
 
     extras = []
     if resources.docs_url:
-        extras.append(f'<a class="btn btn-outline" href="{h(resources.docs_url)}">Paper documentation</a>')
+        extras.append(
+            f'<a class="btn btn-outline" href="{h(resources.docs_url)}">Paper documentation</a>'
+        )
     if resources.images:
-        extras.append(f'<a class="btn btn-outline" href="{h(resources.github_url + "/images")}">Figures on GitHub</a>')
+        extras.append(
+            f'<a class="btn btn-outline" href="{h(resources.github_url + "/images")}">Figures on GitHub</a>'
+        )
     source_repo = source_repository_url(work.get("docs_path", ""), resources)
     if source_repo:
-        extras.append(f'<a class="btn btn-outline" href="{h(source_repo)}">Associated software repository</a>')
-    extras_html = '<div class="work-actions" role="group" aria-label="Documentation and related resources">' + "\n".join(extras) + '</div>' if extras else ""
-    doi_value = f'<a href="{h(doi_link)}">{h(work["doi"])}</a>' if doi_link else "Not listed"
+        extras.append(
+            f'<a class="btn btn-outline" href="{h(source_repo)}">Associated software repository</a>'
+        )
+    extras_html = (
+        '<div class="work-actions" role="group" aria-label="Documentation and related resources">'
+        + "\n".join(extras)
+        + "</div>"
+        if extras
+        else ""
+    )
+    doi_value = (
+        f'<a href="{h(doi_link)}">{h(work["doi"])}</a>' if doi_link else "Not listed"
+    )
     meta_cards = [
         f'<div class="meta-card"><strong>Catalog row</strong><a href="../publications.html">{h(work["num"])}</a></div>',
         f'<div class="meta-card"><strong>Citation key</strong>{h(work["citation_key"])}</div>',
@@ -894,48 +1099,83 @@ def render_work_page(work: dict) -> str:
     detail_sections = revision_notice_html(enrich)
     if abstract or keywords:
         abstract_html = (
-            "".join("<p>" + h(paragraph).replace("\n", "<br>") + "</p>" for paragraph in abstract.split("\n\n"))
-            if abstract else "<p>An abstract is not available in this archive.</p>"
+            "".join(
+                "<p>" + h(paragraph).replace("\n", "<br>") + "</p>"
+                for paragraph in abstract.split("\n\n")
+            )
+            if abstract
+            else "<p>An abstract is not available in this archive.</p>"
         )
         keyword_spans = "".join(f"<span>{h(k)}</span>" for k in keywords)
-        keyword_row = f'<div class="keyword-row" aria-label="Keywords">{keyword_spans}</div>' if keywords else ""
-        detail_sections += f'''
+        keyword_row = (
+            f'<div class="keyword-row" aria-label="Keywords">{keyword_spans}</div>'
+            if keywords
+            else ""
+        )
+        detail_sections += f"""
         <section class="section">
             <div class="section-header"><h2>Overview</h2><div class="section-divider"></div></div>
             <div class="work-detail">{abstract_html}{keyword_row}{abstract_source_html(enrich)}</div>
-        </section>'''
+        </section>"""
     cards = []
-    for heading, items in (("Findings and contributions", findings), ("Methods", methods), ("Key concepts", concepts)):
+    for heading, items in (
+        ("Findings and contributions", findings),
+        ("Methods", methods),
+        ("Key concepts", concepts),
+    ):
         if items:
             rows = "".join(f"<li>{h(item)}</li>" for item in items)
-            cards.append(f'<div class="work-detail"><h3>{heading}</h3><ul>{rows}</ul></div>')
+            cards.append(
+                f'<div class="work-detail"><h3>{heading}</h3><ul>{rows}</ul></div>'
+            )
     if cards:
         sources = enrich.get("sources", {})
         source_links = []
-        for source in dict.fromkeys(sources.get(field, "") for field in ("findings", "methods", "concepts")):
+        for source in dict.fromkeys(
+            sources.get(field, "") for field in ("findings", "methods", "concepts")
+        ):
             if source:
                 path = REPO_ROOT / source
                 if path in resources.files:
-                    label = {"metadata.json": "Paper metadata and evidence", "README.md": "Paper documentation", "SKILL.md": "Learning guide"}.get(path.name, "Summary source")
-                    source_links.append(f'<a href="{h(resources.url(path))}">{label}</a>')
+                    label = {
+                        "metadata.json": "Paper metadata and evidence",
+                        "README.md": "Paper documentation",
+                        "SKILL.md": "Learning guide",
+                    }.get(path.name, "Summary source")
+                    source_links.append(
+                        f'<a href="{h(resources.url(path))}">{label}</a>'
+                    )
         if resources.full_text:
-            source_links.append(f'<a href="{h(resources.url(resources.full_text))}">Extracted source text</a>')
-        provenance = '<p class="summary-sources">Summary sources: ' + ' · '.join(source_links) + '.</p>' if source_links else ""
-        detail_sections += f'''
+            source_links.append(
+                f'<a href="{h(resources.url(resources.full_text))}">Extracted source text</a>'
+            )
+        provenance = (
+            '<p class="summary-sources">Summary sources: '
+            + " · ".join(source_links)
+            + ".</p>"
+            if source_links
+            else ""
+        )
+        detail_sections += f"""
         <section class="section section-alt">
             <div class="section-header"><h2>Methods and contributions</h2><p>Read the source for the full argument, qualifications, and evidence.</p><div class="section-divider"></div></div>
             <div class="work-summary-grid">{"".join(cards)}</div>{provenance}
-        </section>'''
-    citation_buttons = bibtex_button_html(work) + '\n<a class="btn btn-outline" href="../bibliography.bib" download>Download bibliography</a>' + f'\n<a class="btn btn-outline" href="../collections.html?add={h(work["citation_key"])}">Add to reading list</a>' + f'\n<a class="btn btn-outline" href="../research-map.html?node=work%3A{h(work["citation_key"])}">Explore connections</a>'
+        </section>"""
+    citation_buttons = (
+        bibtex_button_html(work)
+        + '\n<a class="btn btn-outline" href="../bibliography.bib" download>Download bibliography</a>'
+        + f'\n<a class="btn btn-outline" href="../collections.html?add={h(work["citation_key"])}">Add to reading list</a>'
+        + f'\n<a class="btn btn-outline" href="../research-map.html?node=work%3A{h(work["citation_key"])}">Explore connections</a>'
+    )
     return (
         page_head(work)
-        + f'''
+        + f"""
 {render_breadcrumb(breadcrumb_trail(work), depth=1)}
     <header class="work-hero">
-        <p class="eyebrow">{h(work['domain_name'])} · {h(work['type'])} · {h(work['year'])}</p>
-        <h1>{h(work['title'])}</h1>
+        <p class="eyebrow">{h(work["domain_name"])} · {h(work["type"])} · {h(work["year"])}</p>
+        <h1>{h(work["title"])}</h1>
 {byline_html(work)}
-        <p class="sub">{h(work.get('venue') or 'Curated bibliography entry')}</p>
+        <p class="sub">{h(work.get("venue") or "Curated bibliography entry")}</p>
 {actions_html}
     </header>
     <main id="main" class="main">
@@ -957,22 +1197,36 @@ def render_work_page(work: dict) -> str:
         <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite &amp; Verify</a></p>
         {footer_stamp}
     </footer>
-''' + INTERACTIVE_SCRIPTS + "\n" + CITE_EXPORT_SCRIPT_TAG + "\n" + MENU_ESC_SCRIPT + '''</body>
+"""
+        + INTERACTIVE_SCRIPTS
+        + "\n"
+        + CITE_EXPORT_SCRIPT_TAG
+        + "\n"
+        + MENU_ESC_SCRIPT
+        + """</body>
 </html>
-'''
+"""
     )
 
 
 def render_index(works: list[dict]) -> str:
-    years = sorted({int(str(w.get("year", "")).strip()[:4]) for w in works if str(w.get("year", "")).strip()[:4].isdigit()})
+    years = sorted(
+        {
+            int(str(w.get("year", "")).strip()[:4])
+            for w in works
+            if str(w.get("year", "")).strip()[:4].isdigit()
+        }
+    )
     min_year, max_year = (years[0], years[-1]) if years else ("", "")
     rows = "\n".join(
         f"""                <article class="work-row">
-                    <div class="year">{h(w['year'])}</div>
-                    <div><a href="{h(canonical_work_key(w['citation_key']))}.html">{h(w['title'])}</a><div class="venue">{h(w['domain_name'])} · {h(w['venue'])}</div></div>
-                    <a href="{h(w.get('url') or '../publications.html')}">Source</a>
+                    <div class="year">{h(w["year"])}</div>
+                    <div><a href="{h(canonical_work_key(w["citation_key"]))}.html">{h(w["title"])}</a><div class="venue">{h(w["domain_name"])} · {h(w["venue"])}</div></div>
+                    <a href="{h(w.get("url") or "../publications.html")}">Source</a>
                 </article>"""
-        for w in sorted(works, key=lambda x: (int(x["year"]), -int(x["num"])), reverse=True)
+        for w in sorted(
+            works, key=lambda x: (int(x["year"]), -int(x["num"])), reverse=True
+        )
     )
     item_list_elements = json.dumps(
         [
@@ -982,11 +1236,16 @@ def render_index(works: list[dict]) -> str:
                 "url": f"https://danielarifriedman.com/works/{canonical_work_key(w['citation_key'])}.html",
                 "name": w["title"],
             }
-            for index, w in enumerate(sorted(works, key=lambda x: (int(x["year"]), -int(x["num"])), reverse=True))
+            for index, w in enumerate(
+                sorted(
+                    works, key=lambda x: (int(x["year"]), -int(x["num"])), reverse=True
+                )
+            )
         ],
         ensure_ascii=False,
     ).replace("<", "\\u003c")
-    return f"""<!DOCTYPE html>
+    return (
+        f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -1043,9 +1302,14 @@ def render_index(works: list[dict]) -> str:
     <main id="main" class="main"><section class="section"><div class="work-list">
 {rows}
     </div></section></main>
-""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
+"""
+        + INTERACTIVE_SCRIPTS
+        + "\n"
+        + MENU_ESC_SCRIPT
+        + """</body>
 </html>
 """
+    )
 
 
 def existing_generated_at(path: Path) -> str | None:
@@ -1061,12 +1325,29 @@ def existing_generated_at(path: Path) -> str | None:
 def render_outputs(generated_at: str | None = None) -> dict[Path, str]:
     visible = source_paths(REPO_ROOT)
     citations = load_bibtex_entries()
-    works = [{**work, "_resources": PaperResources.load(REPO_ROOT, work.get("docs_path", ""), visible), "_bibtex": citations.get(work["citation_key"], "")} for work in load_works()]
+    works = [
+        {
+            **work,
+            "_resources": PaperResources.load(
+                REPO_ROOT, work.get("docs_path", ""), visible
+            ),
+            "_bibtex": citations.get(work["citation_key"], ""),
+        }
+        for work in load_works()
+    ]
     enrichments = enrichment_map(works, visible_paths=visible)
-    works = [{**work, "enrichment": enrichments.get(work["citation_key"], {})} for work in works]
+    works = [
+        {**work, "enrichment": enrichments.get(work["citation_key"], {})}
+        for work in works
+    ]
     from docxology_tools.research_connections import related_catalog
 
-    repositories = {w["citation_key"]: source_repository_url(w.get("docs_path", ""), w["_resources"]) for w in works}
+    repositories = {
+        w["citation_key"]: source_repository_url(
+            w.get("docs_path", ""), w["_resources"]
+        )
+        for w in works
+    }
     relationships = related_catalog(works, enrichments, repositories)
     for w in works:
         w["related"] = relationships[w["citation_key"]]
@@ -1094,16 +1375,19 @@ def render_outputs(generated_at: str | None = None) -> dict[Path, str]:
         disk = read_generated_output_text(REPO_ROOT, page_path)
         if disk is not None:
             outputs[page_path] = reuse_on_disk_stamp(outputs[page_path], disk)
-    outputs[ENRICHMENT_OUT] = json.dumps(
-        {
-            "generated_at": generated_at or generated_timestamp(),
-            "source": "papers/paper_metadata.json, papers/*/metadata.json, README.md and SKILL.md",
-            "count": len(enrichments),
-            "works": enrichments,
-        },
-        indent=2,
-        ensure_ascii=False,
-    ) + "\n"
+    outputs[ENRICHMENT_OUT] = (
+        json.dumps(
+            {
+                "generated_at": generated_at or generated_timestamp(),
+                "source": "papers/paper_metadata.json, papers/*/metadata.json, README.md and SKILL.md",
+                "count": len(enrichments),
+                "works": enrichments,
+            },
+            indent=2,
+            ensure_ascii=False,
+        )
+        + "\n"
+    )
     return outputs
 
 
@@ -1118,12 +1402,17 @@ def mark_generated_page(content: str) -> str:
 def is_owned_generated_page(path: Path, *, repo_root: Path = REPO_ROOT) -> bool:
     """Return whether a work page explicitly authorizes renderer pruning."""
     content = read_generated_output_text(repo_root, path, errors="replace")
-    return bool(content and content.startswith("<!DOCTYPE html>\n" + GENERATED_PAGE_MARKER + "\n"))
+    return bool(
+        content
+        and content.startswith("<!DOCTYPE html>\n" + GENERATED_PAGE_MARKER + "\n")
+    )
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if generated files are stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if generated files are stale"
+    )
     parser.add_argument(
         "--prune-owned",
         action="store_true",
@@ -1141,7 +1430,14 @@ def main() -> None:
             json.loads(candidate_outputs[ENRICHMENT_OUT]),
         )
     outputs = render_outputs(generated_at)
-    stale = [str(path.relative_to(REPO_ROOT)) for path in stale_output_paths(outputs, repo_root=REPO_ROOT)] if args.check else []
+    stale = (
+        [
+            str(path.relative_to(REPO_ROOT))
+            for path in stale_output_paths(outputs, repo_root=REPO_ROOT)
+        ]
+        if args.check
+        else []
+    )
     if not args.check:
         write_output_texts(outputs, repo_root=REPO_ROOT)
     if args.check:
@@ -1150,14 +1446,11 @@ def main() -> None:
             for path in outputs
             if path.parent == WORKS_DIR
         }
-        extra = (
-            {
-                path
-                for path in generated_output_files(REPO_ROOT, WORKS_DIR, "*.html")
-                if is_owned_generated_page(path, repo_root=REPO_ROOT)
-            }
-            - expected
-        )
+        extra = {
+            path
+            for path in generated_output_files(REPO_ROOT, WORKS_DIR, "*.html")
+            if is_owned_generated_page(path, repo_root=REPO_ROOT)
+        } - expected
         stale.extend(str(p.relative_to(REPO_ROOT)) for p in sorted(extra))
     elif args.prune_owned:
         expected = {
@@ -1168,7 +1461,8 @@ def main() -> None:
         owned_orphans = [
             path
             for path in generated_output_files(REPO_ROOT, WORKS_DIR, "*.html")
-            if path not in expected and is_owned_generated_page(path, repo_root=REPO_ROOT)
+            if path not in expected
+            and is_owned_generated_page(path, repo_root=REPO_ROOT)
         ]
         for path in owned_orphans:
             remove_generated_output(REPO_ROOT, path)

@@ -20,7 +20,14 @@ OUT = REPO_ROOT / "updates.html"
 
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 from docxology_tools.build_stamp import footer_build_stamp_html  # noqa: E402
-from docxology_tools.site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+from docxology_tools.site_nav import (  # noqa: E402
+    BREADCRUMB_CSS,
+    HEAD_EXTRAS,
+    INTERACTIVE_SCRIPTS,
+    MENU_ESC_SCRIPT,
+    breadcrumb_jsonld_script,
+    render_breadcrumb,
+)
 
 _BREADCRUMB = [("Home", ""), ("Updates", "updates.html")]
 
@@ -145,22 +152,20 @@ def render() -> str:
     if thinking:
         cards = "\n".join(
             f"""                <article class="update-card">
-                    <h2>{h(entry['date'])}</h2>
-                    <ul><li>{inline_md(entry['item'])}</li></ul>
+                    <h2>{h(entry["date"])}</h2>
+                    <ul><li>{inline_md(entry["item"])}</li></ul>
                 </article>"""
             for entry in thinking
         )
         mind_band = (
             '<section class="section" aria-labelledby="on-my-mind-heading">'
             '<h2 class="section-title" id="on-my-mind-heading">On my mind</h2>'
-            '<div class="updates-list">\n'
-            + cards
-            + "\n    </div></section>\n    "
+            '<div class="updates-list">\n' + cards + "\n    </div></section>\n    "
         )
     body = "\n".join(
         f"""            <article class="update-card">
-                <h2>{h(section['date'])}</h2>
-                <ul>{''.join(f'<li>{inline_md(item)}</li>' for item in section['items'])}</ul>
+                <h2>{h(section["date"])}</h2>
+                <ul>{"".join(f"<li>{inline_md(item)}</li>" for item in section["items"])}</ul>
             </article>"""
         for section in sections
     )
@@ -220,7 +225,9 @@ def render() -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if updates.html is stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if updates.html is stale"
+    )
     args = parser.parse_args()
     content = render()
     rendered_outputs = {OUT: content}

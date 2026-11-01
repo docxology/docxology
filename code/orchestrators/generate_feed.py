@@ -34,7 +34,7 @@ def load_site_updates(repo_root: Path = REPO_ROOT) -> list[dict]:
         return []
     try:
         payload = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
+    except OSError, json.JSONDecodeError:
         return []
     if not isinstance(payload, list):
         return []
@@ -50,28 +50,32 @@ def _parse_pub_date(value: object, fallback: datetime) -> datetime:
         if parsed.tzinfo is None:
             parsed = parsed.replace(tzinfo=timezone.utc)
         return parsed
-    except (TypeError, ValueError, IndexError):
+    except TypeError, ValueError, IndexError:
         pass
     try:
         if len(text) == 10 and text[4] == "-" and text[7] == "-":
-            return datetime(int(text[:4]), int(text[5:7]), int(text[8:10]), tzinfo=timezone.utc)
+            return datetime(
+                int(text[:4]), int(text[5:7]), int(text[8:10]), tzinfo=timezone.utc
+            )
         dt = datetime.fromisoformat(text.replace("Z", "+00:00"))
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=timezone.utc)
         return dt
-    except (TypeError, ValueError):
+    except TypeError, ValueError:
         return fallback
 
 
 def existing_build_date() -> datetime | None:
     if not OUT.exists():
         return None
-    match = re.search(r"<lastBuildDate>([^<]+)</lastBuildDate>", OUT.read_text(encoding="utf-8"))
+    match = re.search(
+        r"<lastBuildDate>([^<]+)</lastBuildDate>", OUT.read_text(encoding="utf-8")
+    )
     if not match:
         return None
     try:
         return parsedate_to_datetime(match.group(1))
-    except (TypeError, ValueError):
+    except TypeError, ValueError:
         return None
 
 
@@ -91,7 +95,7 @@ def _year_key(value: object) -> int:
     try:
         text = str(value)
         return int(text) if text.isdigit() else 0
-    except (TypeError, ValueError):
+    except TypeError, ValueError:
         return 0
 
 
@@ -123,7 +127,7 @@ def render(build_date: datetime | None = None, *, repo_root: Path = REPO_ROOT) -
         # Use actual publication year as the pubDate (Jan 1 of that year)
         try:
             work_date = datetime(int(work["year"]), 1, 1, tzinfo=timezone.utc)
-        except (ValueError, TypeError):
+        except ValueError, TypeError:
             work_date = build_date
         entries.append(
             item(
@@ -151,7 +155,9 @@ def render(build_date: datetime | None = None, *, repo_root: Path = REPO_ROOT) -
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if feed.xml is stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if feed.xml is stale"
+    )
     args = parser.parse_args()
     existing_date = existing_build_date()
     if args.check:

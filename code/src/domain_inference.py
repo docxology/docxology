@@ -22,12 +22,17 @@ EMOJI_TO_DOMAIN: dict[str, str] = {
     "🎥": "Presentations & Media",
 }
 
-DOMAIN_TO_EMOJI: dict[str, str] = {name: emoji for emoji, name in EMOJI_TO_DOMAIN.items()}
+DOMAIN_TO_EMOJI: dict[str, str] = {
+    name: emoji for emoji, name in EMOJI_TO_DOMAIN.items()
+}
 
 _ART_ALIAS = "Art"
 
 _KEYWORD_RULES: list[tuple[str, tuple[str, ...]]] = [
-    ("💻", ("textbook", "reproducible", "computational", "software", "code", "pipeline")),
+    (
+        "💻",
+        ("textbook", "reproducible", "computational", "software", "code", "pipeline"),
+    ),
     ("🧠", ("active inference", "free energy", "bayesian", "markov blanket")),
     ("🛡️", ("cognitive security", "cogsec", "narrative", "trust", "integrity")),
     ("🐜", ("ant", "bee", "insect", "ento", "foraging")),

@@ -194,7 +194,9 @@ def test_sync_scholar_metrics_check_rejects_unbound_since_2021_metrics(tmp_path:
     assert "since_2021 metrics do not match" in result.stdout
 
 
-def test_sync_scholar_metrics_check_reports_an_undecodable_receipt_without_a_traceback(tmp_path: Path):
+def test_sync_scholar_metrics_check_reports_an_undecodable_receipt_without_a_traceback(
+    tmp_path: Path,
+):
     script, _snapshot = _sync_fixture(tmp_path)
     receipt = tmp_path / "data" / "scholar-verification-receipt.json"
     receipt.write_bytes(b"\xff\xfe\x00garbage")

@@ -40,23 +40,30 @@ def test_early_navigation_is_in_head_before_body_and_idempotent():
 
 def test_early_navigation_normalizes_deferred_body_and_duplicate_owners():
     deferred = '<script src="../js/nav-toggle.js?v=old" defer></script>'
-    source = f"<html><head>{deferred}</head><body>{NAV}{NAV_TOGGLE_SCRIPT_TAG}</body></html>"
+    source = (
+        f"<html><head>{deferred}</head><body>{NAV}{NAV_TOGGLE_SCRIPT_TAG}</body></html>"
+    )
     normalized = add_early_navigation_if_needed(source)
     assert normalized.count("nav-toggle.js") == 1
     assert NAV_TOGGLE_SCRIPT_TAG in normalized.split("</head>")[0]
     assert add_early_navigation_if_needed(normalized) == normalized
 
 
-@pytest.mark.parametrize("navigation", [
-    '<nav class="breadcrumb"><a href="/">Home</a></nav>',
-    '<nav><div class="nav-links"><a href="/">Home</a></div></nav>',
-    '<nav class><button class>Menu</button><ul class></ul></nav>',
-    '<nav><button class="menu-btn">Menu</button></nav><nav><ul class="nav-links"></ul></nav>',
-    '<!-- ' + NAV + ' -->',
-    '<script type="text/plain">' + NAV + '</script>',
-])
+@pytest.mark.parametrize(
+    "navigation",
+    [
+        '<nav class="breadcrumb"><a href="/">Home</a></nav>',
+        '<nav><div class="nav-links"><a href="/">Home</a></div></nav>',
+        "<nav class><button class>Menu</button><ul class></ul></nav>",
+        '<nav><button class="menu-btn">Menu</button></nav><nav><ul class="nav-links"></ul></nav>',
+        "<!-- " + NAV + " -->",
+        '<script type="text/plain">' + NAV + "</script>",
+    ],
+)
 def test_pages_without_real_toggle_controls_do_not_load_navigation_asset(navigation):
-    source = f"<html><head>{NAV_TOGGLE_SCRIPT_TAG}</head><body>{navigation}</body></html>"
+    source = (
+        f"<html><head>{NAV_TOGGLE_SCRIPT_TAG}</head><body>{navigation}</body></html>"
+    )
     normalized = add_early_navigation_if_needed(source)
     assert "nav-toggle.js" not in normalized
     assert add_early_navigation_if_needed(normalized) == normalized
@@ -74,7 +81,9 @@ def test_navigation_normalization_check_preserves_actual_file_bytes(tmp_path):
 
 
 def test_dependency_html_is_not_a_site_normalization_target():
-    assert not is_indexable_html_path(Path(".venv/lib/python3.12/site-packages/playwright/report.html"))
+    assert not is_indexable_html_path(
+        Path(".venv/lib/python3.12/site-packages/playwright/report.html")
+    )
     assert not is_indexable_html_path(Path("code/templates/example.html"))
     assert is_indexable_html_path(Path("works/example.html"))
 
@@ -133,7 +142,9 @@ def test_process_file_write_uses_safe_generated_output_boundary(tmp_path: Path):
 
 
 @pytest.mark.parametrize("write", [False, True], ids=["check", "write"])
-@pytest.mark.parametrize("unsafe_kind", ["final-symlink", "ancestor-symlink", "hard-link"])
+@pytest.mark.parametrize(
+    "unsafe_kind", ["final-symlink", "ancestor-symlink", "hard-link"]
+)
 def test_process_file_rejects_unsafe_output_paths_without_touching_external_content(
     tmp_path: Path,
     write: bool,

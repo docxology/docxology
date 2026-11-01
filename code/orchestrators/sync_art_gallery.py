@@ -60,9 +60,11 @@ def tile_html(record: dict) -> str:
     """One SSR tile exactly as the hydration layer expects to reuse it."""
     title = plain_text(record.get("title", "")) or "Untitled artwork"
     date = str(record.get("date", ""))[:10]
-    thumb = record.get("sizes", {}).get("Medium 640") or str(record.get("thumb", "")).replace("_m.jpg", "_z.jpg")
+    thumb = record.get("sizes", {}).get("Medium 640") or str(
+        record.get("thumb", "")
+    ).replace("_m.jpg", "_z.jpg")
     try:
-        views = f"{int(str(record.get('views', '0'))) :,} views"
+        views = f"{int(str(record.get('views', '0'))):,} views"
     except ValueError:
         views = ""
     return (
@@ -91,7 +93,9 @@ def patched_html(html: str, records: list[dict]) -> tuple[str, bool]:
     """Replace the marker-delimited block; return (html, changed)."""
     start = BLOCK_START.search(html)
     if not start:
-        raise SystemExit("art.html: SSR gallery marker not found — block ownership is unclear, refusing to patch")
+        raise SystemExit(
+            "art.html: SSR gallery marker not found — block ownership is unclear, refusing to patch"
+        )
     close = GRID_CLOSE.search(html, start.end())
     if not close:
         raise SystemExit("art.html: grid closing </div> not found after the SSR marker")
@@ -101,13 +105,17 @@ def patched_html(html: str, records: list[dict]) -> tuple[str, bool]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if the SSR gallery block is stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if the SSR gallery block is stale"
+    )
     args = parser.parse_args()
     original = TARGET.read_text(encoding="utf-8")
     updated, changed = patched_html(original, load_records())
     if args.check:
         if changed:
-            raise SystemExit("art.html SSR gallery block is stale (run sync_art_gallery.py)")
+            raise SystemExit(
+                "art.html SSR gallery block is stale (run sync_art_gallery.py)"
+            )
         print("checked art.html SSR gallery block")
         return
     if changed:

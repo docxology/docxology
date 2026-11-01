@@ -32,7 +32,11 @@ def test_actual_plan_command_matches_declarations_without_writing_cache():
     before = cache.read_bytes() if cache.exists() else None
     result = subprocess.run(
         [sys.executable, "code/orchestrators/regenerate_all.py", "--list"],
-        cwd=REPO_ROOT, capture_output=True, text=True, check=True, timeout=15,
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        check=True,
+        timeout=15,
     )
     scripts = re.findall(r"(?m)^\s*\d+\.\s+([a-z0-9_]+\.py)\b", result.stdout)
     assert scripts == [step.script for step in LOCAL_GENERATION_STEPS]
@@ -41,4 +45,6 @@ def test_actual_plan_command_matches_declarations_without_writing_cache():
 
 def test_destructive_pruning_stays_out_of_the_live_plan():
     """A rebuild that deletes report artifacts is not idempotent."""
-    assert "prune_old_reports.py" not in {step.script for step in LOCAL_GENERATION_STEPS}
+    assert "prune_old_reports.py" not in {
+        step.script for step in LOCAL_GENERATION_STEPS
+    }

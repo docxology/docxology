@@ -20,28 +20,66 @@ def corpus(tmp_path):
     works = []
     reviews = {}
     records = []
-    for number, (folder, title, text, relation) in enumerate([
-        ("2026_Vision", "William Blake study", "William Blake\n", "title"),
-        ("2026_Case", "Case study", "Barry J. Blake\n", "other_person"),
-        ("2026_Priors", "Prior art", "An account of priors\n", "no_match"),
-    ], 1):
+    for number, (folder, title, text, relation) in enumerate(
+        [
+            ("2026_Vision", "William Blake study", "William Blake\n", "title"),
+            ("2026_Case", "Case study", "Barry J. Blake\n", "other_person"),
+            ("2026_Priors", "Prior art", "An account of priors\n", "no_match"),
+        ],
+        1,
+    ):
         path = tmp_path / "papers" / folder
         path.mkdir(parents=True)
         (path / "full_text.md").write_text(text)
         (path / "metadata.json").write_text(json.dumps({"record_id": str(number)}))
-        works.append({"citation_key": f"Work{number}", "docs_path": f"papers/{folder}/", "title": title, "year": 2026, "doi": f"10.5281/zenodo.{number + 100}", "url": f"https://doi.org/10.5281/zenodo.{number + 100}"})
-        reviews[folder] = {"relation": relation, "note": relation, "full_text_sha256": hashlib.sha256(text.encode()).hexdigest()}
-        records.append({"record_id": str(number), "doi": f"10.5281/zenodo.{number + 100}", "title": title, "version": "v1"})
+        works.append(
+            {
+                "citation_key": f"Work{number}",
+                "docs_path": f"papers/{folder}/",
+                "title": title,
+                "year": 2026,
+                "doi": f"10.5281/zenodo.{number + 100}",
+                "url": f"https://doi.org/10.5281/zenodo.{number + 100}",
+            }
+        )
+        reviews[folder] = {
+            "relation": relation,
+            "note": relation,
+            "full_text_sha256": hashlib.sha256(text.encode()).hexdigest(),
+        }
+        records.append(
+            {
+                "record_id": str(number),
+                "doi": f"10.5281/zenodo.{number + 100}",
+                "title": title,
+                "version": "v1",
+            }
+        )
     (tmp_path / "data/works.json").write_text(json.dumps({"works": works}))
-    (tmp_path / "data/blake-review.json").write_text(json.dumps({"metadata_source": "reports/discovery.json", "reviews": reviews}))
-    (tmp_path / "reports/discovery.json").write_text(json.dumps({"generated_at": "2026-10-22T00:00:00Z", "warnings": [], "zenodo_records": records}))
+    (tmp_path / "data/blake-review.json").write_text(
+        json.dumps({"metadata_source": "reports/discovery.json", "reviews": reviews})
+    )
+    (tmp_path / "reports/discovery.json").write_text(
+        json.dumps(
+            {
+                "generated_at": "2026-10-22T00:00:00Z",
+                "warnings": [],
+                "zenodo_records": records,
+            }
+        )
+    )
     return tmp_path
 
 
-def test_excludes_namesakes_and_reports_negative_search_without_claiming_citation_validation(corpus):
+def test_excludes_namesakes_and_reports_negative_search_without_claiming_citation_validation(
+    corpus,
+):
     payload = index.build_payload(corpus)
     assert [x["citation_key"] for x in payload["works"]] == ["Work1"]
-    assert {x["relation"] for x in payload["exclusions"]} == {"other_person", "no_match"}
+    assert {x["relation"] for x in payload["exclusions"]} == {
+        "other_person",
+        "no_match",
+    }
     row = payload["works"][0]
     assert row["citation_doi"] == "10.5281/zenodo.101"
     assert row["version_doi"] == "10.5281/zenodo.1"
@@ -51,7 +89,9 @@ def test_excludes_namesakes_and_reports_negative_search_without_claiming_citatio
 
 
 def test_changed_text_invalidates_passage_review(corpus):
-    (corpus / "papers/2026_Vision/full_text.md").write_text("A changed William Blake passage\n")
+    (corpus / "papers/2026_Vision/full_text.md").write_text(
+        "A changed William Blake passage\n"
+    )
     with pytest.raises(ValueError, match="Stale passage review"):
         index.build_payload(corpus)
 
@@ -104,7 +144,10 @@ def test_rendered_html_page_binds_hosted_surfaces_and_escapes_titles(corpus):
     payload = index.build_payload(corpus)
     page = index.render_html(payload)
     assert 'href="https://danielarifriedman.com/blake-pathway.html"' in page
-    assert 'rel="canonical" href="https://danielarifriedman.com/blake-pathway.html"' in page
+    assert (
+        'rel="canonical" href="https://danielarifriedman.com/blake-pathway.html"'
+        in page
+    )
     assert "/works/Work1.html" in page
     assert "https://doi.org/10.5281/zenodo.101" in page
     assert "full_text.md?plain=1#L1" in page

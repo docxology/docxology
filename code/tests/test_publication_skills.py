@@ -42,15 +42,19 @@ def test_publication_skill_audit_reports_contract_errors(tmp_path):
         encoding="utf-8",
     )
     (tmp_path / "papers" / "2026_Orphan" / "SKILL.md").write_text(
-        "---\nname: Orphan\ndescription: Orphan\ntags: [\"orphan\"]\n---\n\n## Instructions\n",
+        '---\nname: Orphan\ndescription: Orphan\ntags: ["orphan"]\n---\n\n## Instructions\n',
         encoding="utf-8",
     )
 
     errors = collect_skill_errors(tmp_path)
 
-    assert "papers/2026_Missing/SKILL.md missing for data/works.json docs_path" in errors
-    assert "papers/2026_Orphan/SKILL.md is not referenced by data/works.json docs_path" in errors
+    assert (
+        "papers/2026_Missing/SKILL.md missing for data/works.json docs_path" in errors
+    )
+    assert (
+        "papers/2026_Orphan/SKILL.md is not referenced by data/works.json docs_path"
+        in errors
+    )
     assert any("legacy GitHub Pages host" in error for error in errors)
     assert any("tags must be a JSON list" in error for error in errors)
     assert any("missing ## Instructions section" in error for error in errors)
-

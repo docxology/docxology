@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 
 import pytest
+
 # docxology_tools owns the canonical bootstrap; this locate makes the package importable.
 _DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
 if str(_DOCXOLOGY_SRC) not in sys.path:
@@ -18,21 +19,42 @@ import regenerate_all  # noqa: E402
 
 def test_integrity_tail_resolves_generated_manifest_before_agent_index():
     names = [name for name, _args in regenerate_all.CHAIN]
-    generated_manifest_indices = [i for i, name in enumerate(names) if name == "build_generated_manifest.py"]
+    generated_manifest_indices = [
+        i for i, name in enumerate(names) if name == "build_generated_manifest.py"
+    ]
 
     assert names.count("build_agent_index.py") == 1
     assert len(generated_manifest_indices) == 2
     # build_image_sitemap.py removed (NEW-2, 2026-08-28): artwork index remains.
     assert "build_image_sitemap.py" not in names
     docs_index = names.index("regenerate_docs.py")
-    assert docs_index < names.index("export_bibliography.py", docs_index + 1) < names.index("sync_publications_html.py", docs_index + 1) < names.index("build_work_pages.py")
-    assert names.index("generate_redirect_stubs.py") < names.index("deploy_seo_security.py")
+    assert (
+        docs_index
+        < names.index("export_bibliography.py", docs_index + 1)
+        < names.index("sync_publications_html.py", docs_index + 1)
+        < names.index("build_work_pages.py")
+    )
+    assert names.index("generate_redirect_stubs.py") < names.index(
+        "deploy_seo_security.py"
+    )
     assert names.index("build_pages_artifact.py") < names.index("build_agent_index.py")
-    assert names.index("build_pages_artifact.py") < generated_manifest_indices[0] < names.index("build_agent_index.py")
-    assert names.index("build_agent_index.py") < names.index("build_release_integrity.py") < generated_manifest_indices[1]
+    assert (
+        names.index("build_pages_artifact.py")
+        < generated_manifest_indices[0]
+        < names.index("build_agent_index.py")
+    )
+    assert (
+        names.index("build_agent_index.py")
+        < names.index("build_release_integrity.py")
+        < generated_manifest_indices[1]
+    )
     assert names[-1] == "build_generated_manifest.py"
-    site_facts_indices = [i for i, name in enumerate(names) if name == "sync_site_facts.py"]
-    accessibility_indices = [i for i, name in enumerate(names) if name == "accessibility_audit.py"]
+    site_facts_indices = [
+        i for i, name in enumerate(names) if name == "sync_site_facts.py"
+    ]
+    accessibility_indices = [
+        i for i, name in enumerate(names) if name == "accessibility_audit.py"
+    ]
     assert len(site_facts_indices) >= 2
     assert site_facts_indices[-1] > accessibility_indices[-1]
 
@@ -49,17 +71,33 @@ def test_default_two_passes_refresh_an_early_consumer_after_a_late_producer(tmp_
     source.write_text("new\n")
     projection.write_text("old\n")
     for relative in (
-        "code/orchestrators/consumer.py", "code/orchestrators/producer.py", "code/src/site_nav.py",
-        ".python-version", "pyproject.toml", "uv.lock",
+        "code/orchestrators/consumer.py",
+        "code/orchestrators/producer.py",
+        "code/src/site_nav.py",
+        ".python-version",
+        "pyproject.toml",
+        "uv.lock",
     ):
         path = tmp_path / relative
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text("# fixture source\n")
     steps = (
-        GenerationStep("consumer", "consumer.py", (), ("--check",), "early consumer",
-                       ("data/projection.json",)),
-        GenerationStep("producer", "producer.py", (), ("--check",), "late producer",
-                       ("data/source.json",)),
+        GenerationStep(
+            "consumer",
+            "consumer.py",
+            (),
+            ("--check",),
+            "early consumer",
+            ("data/projection.json",),
+        ),
+        GenerationStep(
+            "producer",
+            "producer.py",
+            (),
+            ("--check",),
+            "late producer",
+            ("data/source.json",),
+        ),
     )
 
     def runner(script, _args):
@@ -69,13 +107,19 @@ def test_default_two_passes_refresh_an_early_consumer_after_a_late_producer(tmp_
             projection.write_text(source.read_text())
 
     ran, skipped = regenerate_all.run_regeneration_passes(
-        steps=steps, repo_root=tmp_path, runner=runner, emit=lambda _message: None,
+        steps=steps,
+        repo_root=tmp_path,
+        runner=runner,
+        emit=lambda _message: None,
     )
 
     assert consumer.read_text() == "new\n"
     assert (ran, skipped) == (3, 1)
     assert regenerate_all.run_regeneration_passes(
-        steps=steps, repo_root=tmp_path, runner=runner, emit=lambda _message: None,
+        steps=steps,
+        repo_root=tmp_path,
+        runner=runner,
+        emit=lambda _message: None,
     ) == (0, 4)
 
 
@@ -91,7 +135,10 @@ def test_regeneration_failure_stops_before_another_pass(tmp_path):
 
     with pytest.raises(RuntimeError, match="writer failed"):
         regenerate_all.run_regeneration_passes(
-            steps=steps, repo_root=tmp_path, runner=runner, emit=lambda _message: None,
+            steps=steps,
+            repo_root=tmp_path,
+            runner=runner,
+            emit=lambda _message: None,
         )
     assert calls == ["fixture.py"]
 
@@ -103,26 +150,47 @@ def test_regeneration_pass_bound_is_enforced(passes):
 
 
 @pytest.mark.parametrize("allow", [False, True])
-def test_regeneration_forwards_prepayload_mode_only_to_explicit_validator(monkeypatch, allow):
+def test_regeneration_forwards_prepayload_mode_only_to_explicit_validator(
+    monkeypatch, allow
+):
     from contextlib import nullcontext
+
     argv = ["regenerate_all.py", "--validate"]
     if allow:
         argv.append("--allow-dirty-prepayload-evidence")
     monkeypatch.setattr(sys, "argv", argv)
     monkeypatch.setattr(regenerate_all, "validate_generation_plan", lambda: None)
-    monkeypatch.setattr(regenerate_all, "_regeneration_lock", lambda root: nullcontext(17))
+    monkeypatch.setattr(
+        regenerate_all, "_regeneration_lock", lambda root: nullcontext(17)
+    )
     writer_options = []
-    monkeypatch.setattr(regenerate_all, "_run_regeneration_passes_locked", lambda **kwargs: (writer_options.append(kwargs) or (0, 0)))
+    monkeypatch.setattr(
+        regenerate_all,
+        "_run_regeneration_passes_locked",
+        lambda **kwargs: writer_options.append(kwargs) or (0, 0),
+    )
     commands = []
-    monkeypatch.setattr(regenerate_all.subprocess, "run", lambda command, **kwargs: commands.append(command))
+    monkeypatch.setattr(
+        regenerate_all.subprocess,
+        "run",
+        lambda command, **kwargs: commands.append(command),
+    )
     assert regenerate_all.main() == 0
     assert "allow_dirty_prepayload_evidence" not in writer_options[0]
     expected = [sys.executable, "code/orchestrators/validate_repo.py"]
-    assert commands == [expected + (["--allow-dirty-prepayload-evidence"] if allow else [])]
+    assert commands == [
+        expected + (["--allow-dirty-prepayload-evidence"] if allow else [])
+    ]
 
 
 def test_regeneration_prepayload_override_requires_validation(monkeypatch):
-    monkeypatch.setattr(sys, "argv", ["regenerate_all.py", "--allow-dirty-prepayload-evidence"])
-    monkeypatch.setattr(regenerate_all, "validate_generation_plan", lambda: pytest.fail("invalid mode ran pipeline"))
+    monkeypatch.setattr(
+        sys, "argv", ["regenerate_all.py", "--allow-dirty-prepayload-evidence"]
+    )
+    monkeypatch.setattr(
+        regenerate_all,
+        "validate_generation_plan",
+        lambda: pytest.fail("invalid mode ran pipeline"),
+    )
     with pytest.raises(SystemExit):
         regenerate_all.main()

@@ -137,7 +137,9 @@ def domain_items(slug: str, works: list[dict]) -> list[dict]:
     return items[:MAX_ITEMS]
 
 
-def render_feed(slug: str, title: str, description: str, items: list[dict], last_build: datetime) -> str:
+def render_feed(
+    slug: str, title: str, description: str, items: list[dict], last_build: datetime
+) -> str:
     hub = f"{SITE_ORIGIN}domain-{slug}.html"
     self_url = f"{SITE_ORIGIN}{FEEDS_DIR}/domain-{slug}.xml"
     lines = [
@@ -178,7 +180,7 @@ def existing_last_build(path: Path) -> datetime | None:
         return None
     try:
         return parsedate_to_datetime(match.group(1))
-    except (TypeError, ValueError):
+    except TypeError, ValueError:
         return None
 
 
@@ -210,7 +212,9 @@ def render_all(
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Generate per-domain RSS feeds.")
-    parser.add_argument("--check", action="store_true", help="Fail if on-disk feeds are stale.")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if on-disk feeds are stale."
+    )
     parser.add_argument("--repo-root", type=Path, default=REPO_ROOT)
     args = parser.parse_args(argv)
     repo_root = args.repo_root.resolve()

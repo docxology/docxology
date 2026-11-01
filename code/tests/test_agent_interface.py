@@ -13,7 +13,9 @@ import agent  # noqa: E402
 from docxology_tools.generation_plan import LOCAL_GENERATION_STEPS, EXCLUDED_OPERATIONS  # noqa: E402
 
 
-def test_json_plan_is_the_authoritative_order_and_does_not_execute_commands(capsys, monkeypatch):
+def test_json_plan_is_the_authoritative_order_and_does_not_execute_commands(
+    capsys, monkeypatch
+):
     def forbidden(*args, **kwargs):
         raise AssertionError("plan must not launch a command")
 
@@ -21,11 +23,21 @@ def test_json_plan_is_the_authoritative_order_and_does_not_execute_commands(caps
     assert agent.main(["plan", "--json"]) == 0
     payload = json.loads(capsys.readouterr().out)
     assert payload["execution"] == "preview_only"
-    assert [row["id"] for row in payload["steps"]] == [step.identifier for step in LOCAL_GENERATION_STEPS]
+    assert [row["id"] for row in payload["steps"]] == [
+        step.identifier for step in LOCAL_GENERATION_STEPS
+    ]
     for row, step in zip(payload["steps"], LOCAL_GENERATION_STEPS):
-        assert row["write_argv"][3:] == [f"code/orchestrators/{step.script}", *step.write_args]
-        assert row["check_argv"][3:] == [f"code/orchestrators/{step.script}", *step.check_args]
-    assert [row["script"] for row in payload["excluded_operations"]] == [entry.script for entry in EXCLUDED_OPERATIONS]
+        assert row["write_argv"][3:] == [
+            f"code/orchestrators/{step.script}",
+            *step.write_args,
+        ]
+        assert row["check_argv"][3:] == [
+            f"code/orchestrators/{step.script}",
+            *step.check_args,
+        ]
+    assert [row["script"] for row in payload["excluded_operations"]] == [
+        entry.script for entry in EXCLUDED_OPERATIONS
+    ]
 
 
 def test_selected_step_and_invalid_requests_have_json_contract(capsys):
@@ -33,17 +45,35 @@ def test_selected_step_and_invalid_requests_have_json_contract(capsys):
     payload = json.loads(capsys.readouterr().out)
     assert [step["id"] for step in payload["steps"]] == ["catalog"]
     assert payload["steps"][0]["git_index_inputs"] == ["reports/**"]
-    for argv in (["plan", "--step", "unknown", "--json"], ["push", "--json"],
-                 ["plan", "--apply", "--json"]):
+    for argv in (
+        ["plan", "--step", "unknown", "--json"],
+        ["push", "--json"],
+        ["plan", "--apply", "--json"],
+    ):
         assert agent.main(argv) == 2
         payload = json.loads(capsys.readouterr().out)
         assert payload["ok"] is False and payload["errors"]
 
 
-def test_status_does_not_certify_clean_checkout_and_observes_detached_dirty_state(tmp_path, capsys, monkeypatch):
+def test_status_does_not_certify_clean_checkout_and_observes_detached_dirty_state(
+    tmp_path, capsys, monkeypatch
+):
     subprocess.run(["git", "init", "-q", str(tmp_path)], check=True)
-    subprocess.run(["git", "-c", "user.name=Fixture", "-c", "user.email=fixture@example.com",
-                    "commit", "--allow-empty", "-qm", "fixture"], cwd=tmp_path, check=True)
+    subprocess.run(
+        [
+            "git",
+            "-c",
+            "user.name=Fixture",
+            "-c",
+            "user.email=fixture@example.com",
+            "commit",
+            "--allow-empty",
+            "-qm",
+            "fixture",
+        ],
+        cwd=tmp_path,
+        check=True,
+    )
     subprocess.run(["git", "checkout", "--detach", "-q"], cwd=tmp_path, check=True)
     monkeypatch.setattr(agent, "coverage_errors", lambda **kwargs: [])
     assert agent.main(["status", "--json"], repo_root=tmp_path) == 0

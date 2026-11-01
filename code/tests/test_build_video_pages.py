@@ -64,7 +64,26 @@ def test_compact_video_index_excludes_detail_only_metadata():
         "count": 1,
         "counts": {"total": 1, "personal": 1, "institute": 0, "with_transcripts": 0},
         "channels": {"personal": {"fetched_at": "2026-07-17T00:00:00Z"}},
-        "videos": [{
+        "videos": [
+            {
+                "id": "abc123",
+                "title": "Example",
+                "channel": "personal",
+                "upload_date": "20260717",
+                "year": 2026,
+                "duration": 42,
+                "view_count": 7,
+                "topics": [{"label": "Research"}],
+                "related_works": [{"citation_key": "Example2026"}],
+                "transcript_excerpt": "detail text",
+            }
+        ],
+    }
+    index = build_video_pages.compact_index(payload)
+    assert index["schema_version"] == "VideoIndex.v1"
+    assert index["detail_source"] == "data/videos.json"
+    assert index["videos"] == [
+        {
             "id": "abc123",
             "title": "Example",
             "channel": "personal",
@@ -72,23 +91,8 @@ def test_compact_video_index_excludes_detail_only_metadata():
             "year": 2026,
             "duration": 42,
             "view_count": 7,
-            "topics": [{"label": "Research"}],
-            "related_works": [{"citation_key": "Example2026"}],
-            "transcript_excerpt": "detail text",
-        }],
-    }
-    index = build_video_pages.compact_index(payload)
-    assert index["schema_version"] == "VideoIndex.v1"
-    assert index["detail_source"] == "data/videos.json"
-    assert index["videos"] == [{
-        "id": "abc123",
-        "title": "Example",
-        "channel": "personal",
-        "upload_date": "20260717",
-        "year": 2026,
-        "duration": 42,
-        "view_count": 7,
-    }]
+        }
+    ]
 
 
 def test_timeline_runtime_uses_compact_index_not_raw_channel_exports():
@@ -98,7 +102,9 @@ def test_timeline_runtime_uses_compact_index_not_raw_channel_exports():
     assert "code/data/youtube_institute.json" not in runtime
 
 
-def test_orphan_check_tracks_generator_owned_pages_but_leaves_manual_video_pages_unowned(tmp_path: Path):
+def test_orphan_check_tracks_generator_owned_pages_but_leaves_manual_video_pages_unowned(
+    tmp_path: Path,
+):
     video_dir = tmp_path / "videos"
     data_dir = tmp_path / "data"
     video_dir.mkdir()
@@ -110,11 +116,15 @@ def test_orphan_check_tracks_generator_owned_pages_but_leaves_manual_video_pages
     # remains generator-derived and therefore must be reported rather than
     # deleted during a write run.
     manifest_path.write_text(
-        build_video_pages.render_video_page_manifest(expected | {"videos/institute-retired.html"}),
+        build_video_pages.render_video_page_manifest(
+            expected | {"videos/institute-retired.html"}
+        ),
         encoding="utf-8",
     )
     for relative in expected:
-        (tmp_path / relative).write_text(build_video_pages.VIDEO_PAGE_MARKER, encoding="utf-8")
+        (tmp_path / relative).write_text(
+            build_video_pages.VIDEO_PAGE_MARKER, encoding="utf-8"
+        )
     retired = video_dir / "institute-retired.html"
     retired.write_text("review before removal", encoding="utf-8")
     marker_orphan = video_dir / "personal-marked-orphan.html"
@@ -152,7 +162,9 @@ def test_check_mode_reports_an_orphan_without_rewriting_any_video_page(tmp_path:
     manifest_path = data_dir / "video-pages-manifest.json"
     rendered = {
         tmp_path / "videos" / "index.html": build_video_pages.VIDEO_PAGE_MARKER,
-        tmp_path / "videos" / "personal-abc123.html": build_video_pages.VIDEO_PAGE_MARKER,
+        tmp_path
+        / "videos"
+        / "personal-abc123.html": build_video_pages.VIDEO_PAGE_MARKER,
         manifest_path: build_video_pages.render_video_page_manifest(expected_pages),
     }
     for path, content in rendered.items():
@@ -205,7 +217,10 @@ def test_render_video_page_uses_local_page_and_youtube_embed():
         }
     ]
     html = build_video_pages.render_video_page(video, transcript="transcript body")
-    assert 'rel="canonical" href="https://danielarifriedman.com/videos/institute-abc123.html"' in html
+    assert (
+        'rel="canonical" href="https://danielarifriedman.com/videos/institute-abc123.html"'
+        in html
+    )
     assert "https://www.youtube-nocookie.com/embed/abc123" in html
     assert "Generalized Notation Notation" in html
     assert '"@type": "VideoObject"' in html
@@ -222,9 +237,13 @@ def test_interactive_page_integrity_flags_missing_stylesheet(tmp_path: Path):
         "<body></body></html>",
         encoding="utf-8",
     )
-    errors = build_video_pages.check_interactive_page_integrity({bad: bad.read_text(encoding="utf-8")}, repo_root=tmp_path)
-    assert errors == ("bad.html: loads interactive JS without linking style.css "
-                      "(TTS panel / shortcuts overlay would render unstyled)",)
+    errors = build_video_pages.check_interactive_page_integrity(
+        {bad: bad.read_text(encoding="utf-8")}, repo_root=tmp_path
+    )
+    assert errors == (
+        "bad.html: loads interactive JS without linking style.css "
+        "(TTS panel / shortcuts overlay would render unstyled)",
+    )
 
     good = tmp_path / "good.html"
     good.write_text(
@@ -233,16 +252,22 @@ def test_interactive_page_integrity_flags_missing_stylesheet(tmp_path: Path):
         "<body></body></html>",
         encoding="utf-8",
     )
-    assert build_video_pages.check_interactive_page_integrity(
-        {good: good.read_text(encoding="utf-8")}, repo_root=tmp_path
-    ) == ()
+    assert (
+        build_video_pages.check_interactive_page_integrity(
+            {good: good.read_text(encoding="utf-8")}, repo_root=tmp_path
+        )
+        == ()
+    )
 
     # Pages without interactive JS are out of scope entirely.
     plain = tmp_path / "plain.html"
     plain.write_text("<html><head></head><body>static</body></html>", encoding="utf-8")
-    assert build_video_pages.check_interactive_page_integrity(
-        {plain: plain.read_text(encoding="utf-8")}, repo_root=tmp_path
-    ) == ()
+    assert (
+        build_video_pages.check_interactive_page_integrity(
+            {plain: plain.read_text(encoding="utf-8")}, repo_root=tmp_path
+        )
+        == ()
+    )
 
 
 def test_check_mode_rejects_root_page_missing_stylesheet(tmp_path: Path):
@@ -253,7 +278,9 @@ def test_check_mode_rejects_root_page_missing_stylesheet(tmp_path: Path):
     manifest_path = tmp_path / "data" / "video-pages-manifest.json"
     rendered = {
         tmp_path / "videos" / "index.html": build_video_pages.VIDEO_PAGE_MARKER,
-        manifest_path: build_video_pages.render_video_page_manifest({"videos/index.html"}),
+        manifest_path: build_video_pages.render_video_page_manifest(
+            {"videos/index.html"}
+        ),
     }
     for path, content in rendered.items():
         path.parent.mkdir(parents=True, exist_ok=True)

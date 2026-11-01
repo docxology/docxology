@@ -85,15 +85,20 @@ def _write_minimal_repo(root: Path) -> None:
     )
     (root / "papers" / "paper_metadata.json").write_text("{}\n", encoding="utf-8")
     (root / "data/work-identifiers.json").write_text(
-        '{"schema_version": "WorkIdentifierRegistry.v1", "identifiers": {}}\n', encoding="utf-8"
+        '{"schema_version": "WorkIdentifierRegistry.v1", "identifiers": {}}\n',
+        encoding="utf-8",
     )
-    (root / "papers" / "README.md").write_text("# Papers\n\n## Papers (0)\n", encoding="utf-8")
+    (root / "papers" / "README.md").write_text(
+        "# Papers\n\n## Papers (0)\n", encoding="utf-8"
+    )
     (root / "papers" / "AGENTS.md").write_text(
         "# Papers\n\nREADME.md present | 0/0 folders\n", encoding="utf-8"
     )
 
 
-def _write_review_decision(root: Path, pair: PublicationPair, *, folder: str = "2026_NewComputationalProject") -> None:
+def _write_review_decision(
+    root: Path, pair: PublicationPair, *, folder: str = "2026_NewComputationalProject"
+) -> None:
     payload = {
         "generated_at": "2026-06-18T00:00:00Z",
         "source_report": "reports/paired_publications_2026-06-18.json",
@@ -179,7 +184,9 @@ def _pair() -> PublicationPair:
                 "key": "new_computational_project.pdf",
                 "size": 1234,
                 "checksum": "md5:abc",
-                "links": {"self": "https://zenodo.org/api/records/20990001/files/new_computational_project.pdf/content"},
+                "links": {
+                    "self": "https://zenodo.org/api/records/20990001/files/new_computational_project.pdf/content"
+                },
             }
         ],
         html_url="https://zenodo.org/records/20990001",
@@ -188,7 +195,10 @@ def _pair() -> PublicationPair:
         release=release,
         record=record,
         confidence="strong",
-        evidence=("github_release_mentions_doi", "zenodo_related_identifier_mentions_release"),
+        evidence=(
+            "github_release_mentions_doi",
+            "zenodo_related_identifier_mentions_release",
+        ),
     )
 
 
@@ -234,9 +244,10 @@ def test_applied_strong_update_report_binds_exact_action_and_metadata(tmp_path: 
         "papers/2026_NewComputationalProject/metadata.json"
     )
     assert receipt["provenance"]["approval"]["decision"] == "approved"
-    assert receipt["provenance"]["approval"]["action_sha256"] == receipt[
-        "provenance"
-    ]["action_sha256"]
+    assert (
+        receipt["provenance"]["approval"]["action_sha256"]
+        == receipt["provenance"]["action_sha256"]
+    )
     check_report(repo_root=tmp_path)
 
     receipt["provenance"]["approval"]["action_sha256"] = "0" * 64
@@ -247,7 +258,9 @@ def test_applied_strong_update_report_binds_exact_action_and_metadata(tmp_path: 
         check_report(repo_root=tmp_path)
 
 
-def test_ordered_apply_pairs_leaves_latest_release_as_final_metadata_writer(tmp_path: Path):
+def test_ordered_apply_pairs_leaves_latest_release_as_final_metadata_writer(
+    tmp_path: Path,
+):
     _write_minimal_repo(tmp_path)
     base = _pair()
     apply_publication_pair(base, repo_root=tmp_path, download_files=False)
@@ -310,7 +323,12 @@ def test_reviewed_decision_accepts_string_raw_candidates(tmp_path: Path):
     pair = _pair()
     payload = {
         "generated_at": "2026-08-10T00:00:00Z",
-        "decision_summary": {"decision": "rejected", "groups": 1, "raw_candidates": 1, "note": "test"},
+        "decision_summary": {
+            "decision": "rejected",
+            "groups": 1,
+            "raw_candidates": 1,
+            "note": "test",
+        },
         "groups": [
             {
                 "id": "R25",
@@ -367,9 +385,7 @@ def test_malformed_and_conflicting_pair_decisions_cannot_clear_sync_candidates(
     decisions_path = tmp_path / "data" / "paired-publication-decisions.json"
     malformed = json.loads(decisions_path.read_text(encoding="utf-8"))
     del malformed["groups"][0]["decided_by"]
-    decisions_path.write_text(
-        json.dumps(malformed, indent=2) + "\n", encoding="utf-8"
-    )
+    decisions_path.write_text(json.dumps(malformed, indent=2) + "\n", encoding="utf-8")
 
     # Missing human provenance leaves the candidate live; it cannot silently
     # become already reviewed merely because its raw candidate is present.
@@ -388,9 +404,7 @@ def test_malformed_and_conflicting_pair_decisions_cannot_clear_sync_candidates(
         }
     )
     duplicate["groups"].append(duplicate_group)
-    decisions_path.write_text(
-        json.dumps(duplicate, indent=2) + "\n", encoding="utf-8"
-    )
+    decisions_path.write_text(json.dumps(duplicate, indent=2) + "\n", encoding="utf-8")
     with pytest.raises(ValueError, match="duplicate paired-publication decisions"):
         build_sync_actions([pair], repo_root=tmp_path)
 
@@ -451,15 +465,23 @@ def test_authenticated_pair_decision_supersession_is_exact_and_auditable(
     record = next(iter(decisions.values()))
     assert record["decision"] == "rejected"
     assert record["group_id"] == "R02"
-    assert build_sync_actions([pair], repo_root=tmp_path)[0].action_type == "already_reviewed"
+    assert (
+        build_sync_actions([pair], repo_root=tmp_path)[0].action_type
+        == "already_reviewed"
+    )
 
 
 def test_display_report_path_handles_external_reports(tmp_path: Path):
     repo_root = tmp_path / "repo"
     repo_root.mkdir()
 
-    assert display_report_path(repo_root / "reports" / "paired.json", repo_root=repo_root) == "reports/paired.json"
-    assert display_report_path(tmp_path / "outside.json", repo_root=repo_root) == str(tmp_path / "outside.json")
+    assert (
+        display_report_path(repo_root / "reports" / "paired.json", repo_root=repo_root)
+        == "reports/paired.json"
+    )
+    assert display_report_path(tmp_path / "outside.json", repo_root=repo_root) == str(
+        tmp_path / "outside.json"
+    )
 
 
 def _write_report(root: Path, payload: dict) -> None:
@@ -467,7 +489,9 @@ def _write_report(root: Path, payload: dict) -> None:
     report.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
 
 
-def _minimal_report_payload(*, warnings: list[str] | None = None, actions: list[dict] | None = None) -> dict:
+def _minimal_report_payload(
+    *, warnings: list[str] | None = None, actions: list[dict] | None = None
+) -> dict:
     actions = actions or []
     return {
         "source": "GitHub Releases API + Zenodo Records API",
@@ -476,9 +500,17 @@ def _minimal_report_payload(*, warnings: list[str] | None = None, actions: list[
             "zenodo_records": 1,
             "pairs": len(actions),
             "strong_pairs": 0,
-            "needs_review": sum(1 for action in actions if action.get("action_type") == "needs_review"),
-            "create_new": sum(1 for action in actions if action.get("action_type") == "create_new"),
-            "update_existing": sum(1 for action in actions if action.get("action_type") == "update_existing"),
+            "needs_review": sum(
+                1 for action in actions if action.get("action_type") == "needs_review"
+            ),
+            "create_new": sum(
+                1 for action in actions if action.get("action_type") == "create_new"
+            ),
+            "update_existing": sum(
+                1
+                for action in actions
+                if action.get("action_type") == "update_existing"
+            ),
         },
         "warnings": warnings or [],
         "actions": actions,
@@ -488,7 +520,12 @@ def _minimal_report_payload(*, warnings: list[str] | None = None, actions: list[
 
 def test_check_report_rejects_api_warnings(tmp_path: Path):
     _write_minimal_repo(tmp_path)
-    _write_report(tmp_path, _minimal_report_payload(warnings=["github:docxology/example: rate limit exceeded"]))
+    _write_report(
+        tmp_path,
+        _minimal_report_payload(
+            warnings=["github:docxology/example: rate limit exceeded"]
+        ),
+    )
 
     with pytest.raises(SystemExit, match="API warnings"):
         check_report(repo_root=tmp_path)
@@ -530,7 +567,15 @@ def test_check_report_accepts_applied_create_new_existing_doi(tmp_path: Path):
                 }
             ]
         )
-        | {"applied": [{"doi": pair.doi, "folder": "2026_NewComputationalProject", "created": True}]},
+        | {
+            "applied": [
+                {
+                    "doi": pair.doi,
+                    "folder": "2026_NewComputationalProject",
+                    "created": True,
+                }
+            ]
+        },
     )
 
     check_report(repo_root=tmp_path)
@@ -553,14 +598,20 @@ def test_apply_creates_new_publication_and_is_idempotent(tmp_path: Path):
     assert (folder / "metadata.json").is_file()
     metadata = json.loads((folder / "metadata.json").read_text(encoding="utf-8"))
     assert metadata["doi"] == "10.5281/zenodo.20990001"
-    assert metadata["github_release_url"] == "https://github.com/docxology/new_repo/releases/tag/v1.0.0"
+    assert (
+        metadata["github_release_url"]
+        == "https://github.com/docxology/new_repo/releases/tag/v1.0.0"
+    )
 
     bibliography = (tmp_path / "pages" / "BIBLIOGRAPHY.md").read_text(encoding="utf-8")
     assert bibliography.count("New Computational Project: Reproducible Research") == 1
     assert "[📁](../papers/2026_NewComputationalProject/)" in bibliography
-    registry = json.loads((tmp_path / "data/work-identifiers.json").read_text(encoding="utf-8"))
+    registry = json.loads(
+        (tmp_path / "data/work-identifiers.json").read_text(encoding="utf-8")
+    )
     assert registry["identifiers"]["1"] == {
-        "citation_key": "Friedman2026NewComputationalProjectReproducible001", "status": "active"
+        "citation_key": "Friedman2026NewComputationalProjectReproducible001",
+        "status": "active",
     }
 
     software = (tmp_path / "pages" / "SOFTWARE.md").read_text(encoding="utf-8")
@@ -570,6 +621,7 @@ def test_apply_creates_new_publication_and_is_idempotent(tmp_path: Path):
 
 def test_paired_intake_rejects_unsafe_key_before_bibliography_write(tmp_path):
     from docxology_tools.work_identifiers import WorkIdentifierError
+
     _write_minimal_repo(tmp_path)
     pair = _pair()
     pair = replace(pair, record=replace(pair.record, title="A" * 220))
@@ -577,7 +629,9 @@ def test_paired_intake_rejects_unsafe_key_before_bibliography_write(tmp_path):
     registry = tmp_path / "data/work-identifiers.json"
     before = (bibliography.read_bytes(), registry.read_bytes())
     with pytest.raises(WorkIdentifierError, match="unsafe citation key"):
-        sync_paired_publications.ensure_bibliography_row(pair, "2026_Example", [], tmp_path)
+        sync_paired_publications.ensure_bibliography_row(
+            pair, "2026_Example", [], tmp_path
+        )
     assert (bibliography.read_bytes(), registry.read_bytes()) == before
 
 
@@ -701,7 +755,9 @@ def test_refresh_bibliography_counts_updates_indexed_paper_folders():
     assert "**1** indexed paper folders" not in refreshed
 
 
-def _variant_pair(pair: PublicationPair, *, doi: str, record_id: str, tag: str) -> PublicationPair:
+def _variant_pair(
+    pair: PublicationPair, *, doi: str, record_id: str, tag: str
+) -> PublicationPair:
     release = replace(
         pair.release,
         tag=tag,
@@ -747,18 +803,29 @@ def test_classification_cache_reproduces_full_scan_classification(tmp_path: Path
     _write_minimal_repo(tmp_path)
     reviewed = _pair()
     _write_review_decision(tmp_path, reviewed)
-    fresh = _variant_pair(reviewed, doi="10.5281/zenodo.20990002", record_id="20990002", tag="v2.0.0")
+    fresh = _variant_pair(
+        reviewed, doi="10.5281/zenodo.20990002", record_id="20990002", tag="v2.0.0"
+    )
     pairs = [reviewed, fresh]
     full = build_sync_actions(pairs, repo_root=tmp_path)
     entries: list = []
     build_sync_actions(pairs, repo_root=tmp_path, already_reviewed_entries=entries)
     cache = classification_cache_from_payload(
-        {"classification_cache": classification_cache_payload(entries, repo_root=tmp_path)}
+        {
+            "classification_cache": classification_cache_payload(
+                entries, repo_root=tmp_path
+            )
+        }
     )
     assert cache is not None
     cached = build_sync_actions(pairs, repo_root=tmp_path, cache=cache)
-    assert [action.to_dict() for action in cached] == [action.to_dict() for action in full]
-    assert [action.action_type for action in cached] == ["already_reviewed", "create_new"]
+    assert [action.to_dict() for action in cached] == [
+        action.to_dict() for action in full
+    ]
+    assert [action.action_type for action in cached] == [
+        "already_reviewed",
+        "create_new",
+    ]
 
 
 def test_classification_cache_hit_skips_decision_log_and_title_scans(tmp_path: Path):
@@ -768,23 +835,35 @@ def test_classification_cache_hit_skips_decision_log_and_title_scans(tmp_path: P
     entries: list = []
     build_sync_actions([pair], repo_root=tmp_path, already_reviewed_entries=entries)
     cache = classification_cache_from_payload(
-        {"classification_cache": classification_cache_payload(entries, repo_root=tmp_path)}
+        {
+            "classification_cache": classification_cache_payload(
+                entries, repo_root=tmp_path
+            )
+        }
     )
 
     def _explode(root):  # pragma: no cover - must never run on a full cache hit
         raise AssertionError("cached inputs must not be re-derived on a cache hit")
 
     with (
-        mock.patch.object(sync_paired_publications, "reviewed_pair_decisions", _explode),
-        mock.patch.object(sync_paired_publications, "existing_release_title_map", _explode),
-        mock.patch.object(sync_paired_publications, "existing_repo_title_map", _explode),
+        mock.patch.object(
+            sync_paired_publications, "reviewed_pair_decisions", _explode
+        ),
+        mock.patch.object(
+            sync_paired_publications, "existing_release_title_map", _explode
+        ),
+        mock.patch.object(
+            sync_paired_publications, "existing_repo_title_map", _explode
+        ),
     ):
         actions = build_sync_actions([pair], repo_root=tmp_path, cache=cache)
     assert actions[0].action_type == "already_reviewed"
     assert actions[0].folder == "2026_NewComputationalProject"
 
 
-def test_classification_cache_falls_back_to_full_scan_when_decisions_drift(tmp_path: Path):
+def test_classification_cache_falls_back_to_full_scan_when_decisions_drift(
+    tmp_path: Path,
+):
     _write_minimal_repo(tmp_path)
     pair = _pair()
     _write_review_decision(tmp_path, pair)
@@ -792,7 +871,9 @@ def test_classification_cache_falls_back_to_full_scan_when_decisions_drift(tmp_p
     build_sync_actions([pair], repo_root=tmp_path, already_reviewed_entries=entries)
     cache_block = classification_cache_payload(entries, repo_root=tmp_path)
     # The durable decision is withdrawn after the report was written.
-    (tmp_path / "data" / "paired-publication-decisions.json").write_text('{"groups": []}\n', encoding="utf-8")
+    (tmp_path / "data" / "paired-publication-decisions.json").write_text(
+        '{"groups": []}\n', encoding="utf-8"
+    )
     cache = classification_cache_from_payload({"classification_cache": cache_block})
     actions = build_sync_actions([pair], repo_root=tmp_path, cache=cache)
     assert [action.to_dict() for action in actions] == [
@@ -801,7 +882,9 @@ def test_classification_cache_falls_back_to_full_scan_when_decisions_drift(tmp_p
     assert actions[0].action_type == "create_new"
 
 
-def test_classification_cache_falls_back_to_full_scan_when_bibliography_drifts(tmp_path: Path):
+def test_classification_cache_falls_back_to_full_scan_when_bibliography_drifts(
+    tmp_path: Path,
+):
     _write_minimal_repo(tmp_path)
     pair = _pair()
     _write_review_decision(tmp_path, pair)
@@ -809,7 +892,9 @@ def test_classification_cache_falls_back_to_full_scan_when_bibliography_drifts(t
     build_sync_actions([pair], repo_root=tmp_path, already_reviewed_entries=entries)
     cache_block = classification_cache_payload(entries, repo_root=tmp_path)
     bibliography = tmp_path / "pages" / "BIBLIOGRAPHY.md"
-    bibliography.write_text(bibliography.read_text(encoding="utf-8") + "drift\n", encoding="utf-8")
+    bibliography.write_text(
+        bibliography.read_text(encoding="utf-8") + "drift\n", encoding="utf-8"
+    )
     cache = classification_cache_from_payload({"classification_cache": cache_block})
     calls = {"count": 0}
     real = sync_paired_publications.reviewed_pair_decisions
@@ -818,9 +903,13 @@ def test_classification_cache_falls_back_to_full_scan_when_bibliography_drifts(t
         calls["count"] += 1
         return real(root)
 
-    with mock.patch.object(sync_paired_publications, "reviewed_pair_decisions", counting):
+    with mock.patch.object(
+        sync_paired_publications, "reviewed_pair_decisions", counting
+    ):
         actions = build_sync_actions([pair], repo_root=tmp_path, cache=cache)
-    assert calls["count"] >= 1  # drift forced the full classification, not the cached one
+    assert (
+        calls["count"] >= 1
+    )  # drift forced the full classification, not the cached one
     assert [action.to_dict() for action in actions] == [
         action.to_dict() for action in build_sync_actions([pair], repo_root=tmp_path)
     ]
@@ -829,27 +918,42 @@ def test_classification_cache_falls_back_to_full_scan_when_bibliography_drifts(t
 def test_check_report_fails_on_malformed_classification_cache(tmp_path: Path):
     _write_minimal_repo(tmp_path)
     payload = _minimal_report_payload()
-    payload["classification_cache"] = {"inputs": {"bibliography_sha256": "short"}, "already_reviewed": "nope"}
+    payload["classification_cache"] = {
+        "inputs": {"bibliography_sha256": "short"},
+        "already_reviewed": "nope",
+    }
     _write_report(tmp_path, payload)
     with pytest.raises(SystemExit, match="malformed classification_cache"):
         check_report(repo_root=tmp_path)
 
 
-def test_check_report_warns_on_classification_cache_input_drift(tmp_path: Path, capsys: pytest.CaptureFixture[str]):
+def test_check_report_warns_on_classification_cache_input_drift(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+):
     _write_minimal_repo(tmp_path)
     payload = _minimal_report_payload()
-    payload["classification_cache"] = classification_cache_payload([], repo_root=tmp_path)
+    payload["classification_cache"] = classification_cache_payload(
+        [], repo_root=tmp_path
+    )
     bibliography = tmp_path / "pages" / "BIBLIOGRAPHY.md"
-    bibliography.write_text(bibliography.read_text(encoding="utf-8") + "drift\n", encoding="utf-8")
+    bibliography.write_text(
+        bibliography.read_text(encoding="utf-8") + "drift\n", encoding="utf-8"
+    )
     _write_report(tmp_path, payload)
-    check_report(repo_root=tmp_path)  # a dated report stays valid; drift is surfaced, not fatal
+    check_report(
+        repo_root=tmp_path
+    )  # a dated report stays valid; drift is surfaced, not fatal
     assert "classification_cache inputs have drifted" in capsys.readouterr().err
 
 
-def test_check_report_accepts_current_classification_cache(tmp_path: Path, capsys: pytest.CaptureFixture[str]):
+def test_check_report_accepts_current_classification_cache(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+):
     _write_minimal_repo(tmp_path)
     payload = _minimal_report_payload()
-    payload["classification_cache"] = classification_cache_payload([], repo_root=tmp_path)
+    payload["classification_cache"] = classification_cache_payload(
+        [], repo_root=tmp_path
+    )
     _write_report(tmp_path, payload)
     check_report(repo_root=tmp_path)
     assert "drifted" not in capsys.readouterr().err
@@ -859,7 +963,9 @@ def test_report_payload_roundtrips_releases_records_and_cache(tmp_path: Path):
     _write_minimal_repo(tmp_path)
     pair = _pair()
     entries: list = []
-    actions = build_sync_actions([pair], repo_root=tmp_path, already_reviewed_entries=entries)
+    actions = build_sync_actions(
+        [pair], repo_root=tmp_path, already_reviewed_entries=entries
+    )
     report = tmp_path / "reports" / "paired_publications_2026-06-07.json"
     write_report(
         report,
@@ -894,13 +1000,21 @@ def test_load_cached_scan_payload_matches_fresh_classification(tmp_path: Path):
     )
     releases, records = load_cached_scan_payload(report)
     assert (releases, records) == ([pair.release], [pair.record])
-    rebuilt = build_sync_actions(find_publication_pairs(releases, records), repo_root=tmp_path)
+    rebuilt = build_sync_actions(
+        find_publication_pairs(releases, records), repo_root=tmp_path
+    )
     assert [action.to_dict() for action in rebuilt] == [
         action.to_dict() for action in build_sync_actions([pair], repo_root=tmp_path)
     ]
 
 
-def _pairing_payload(releases: list[GitHubRelease], records: list[ZenodoRecord], *, generated_at: str | None = None, warnings: list[str] | None = None) -> dict:
+def _pairing_payload(
+    releases: list[GitHubRelease],
+    records: list[ZenodoRecord],
+    *,
+    generated_at: str | None = None,
+    warnings: list[str] | None = None,
+) -> dict:
     return {
         "source": "GitHub Releases API + Zenodo Records API",
         "generated_at": generated_at or generated_timestamp(),
@@ -914,7 +1028,11 @@ def test_load_cached_scan_payload_refuses_stale_report_unless_forced(tmp_path: P
     pair = _pair()
     path = tmp_path / "paired_publications_stale.json"
     path.write_text(
-        json.dumps(_pairing_payload([pair.release], [pair.record], generated_at="2020-01-01T00:00:00Z")),
+        json.dumps(
+            _pairing_payload(
+                [pair.release], [pair.record], generated_at="2020-01-01T00:00:00Z"
+            )
+        ),
         encoding="utf-8",
     )
     with pytest.raises(SystemExit, match="not same-day"):
@@ -927,7 +1045,11 @@ def test_load_cached_scan_payload_refuses_warned_scan_even_when_forced(tmp_path:
     pair = _pair()
     path = tmp_path / "paired_publications_warned.json"
     path.write_text(
-        json.dumps(_pairing_payload([pair.release], [pair.record], warnings=["github: rate limited"])),
+        json.dumps(
+            _pairing_payload(
+                [pair.release], [pair.record], warnings=["github: rate limited"]
+            )
+        ),
         encoding="utf-8",
     )
     with pytest.raises(SystemExit, match="API warning"):
@@ -937,7 +1059,13 @@ def test_load_cached_scan_payload_refuses_warned_scan_even_when_forced(tmp_path:
 def test_load_cached_scan_payload_refuses_payload_without_records(tmp_path: Path):
     path = tmp_path / "paired_publications_legacy.json"
     path.write_text(
-        json.dumps({"source": "GitHub Releases API + Zenodo Records API", "generated_at": generated_timestamp(), "warnings": []}),
+        json.dumps(
+            {
+                "source": "GitHub Releases API + Zenodo Records API",
+                "generated_at": generated_timestamp(),
+                "warnings": [],
+            }
+        ),
         encoding="utf-8",
     )
     with pytest.raises(SystemExit, match="github_releases"):
@@ -945,90 +1073,168 @@ def test_load_cached_scan_payload_refuses_payload_without_records(tmp_path: Path
 
 
 @pytest.mark.parametrize("resource_type", [{"type": "software"}, {"id": "software"}])
-def test_catalogued_software_supplement_is_not_applied_as_new_work(tmp_path: Path, resource_type):
+def test_catalogued_software_supplement_is_not_applied_as_new_work(
+    tmp_path: Path, resource_type
+):
     _write_minimal_repo(tmp_path)
     pair = replace(_pair(), record=replace(_pair().record, resource_type=resource_type))
     bibliography = tmp_path / "pages/BIBLIOGRAPHY.md"
-    bibliography.write_text(bibliography.read_text() + "| 1 | 2026 | 🧠 | Paper | Existing paper | Zenodo | 10.5281/zenodo.100 | [📄](../papers/2026_Existing/) |\n")
+    bibliography.write_text(
+        bibliography.read_text()
+        + "| 1 | 2026 | 🧠 | Paper | Existing paper | Zenodo | 10.5281/zenodo.100 | [📄](../papers/2026_Existing/) |\n"
+    )
     software = tmp_path / "pages/SOFTWARE.md"
-    software.write_text(software.read_text().replace("Reproducible computational research project", f"Software · [Zenodo](https://doi.org/{pair.doi}) · [📄](../papers/2026_Existing/)"))
-    cache = classification_cache_from_payload({"classification_cache": classification_cache_payload([], repo_root=tmp_path)})
+    software.write_text(
+        software.read_text().replace(
+            "Reproducible computational research project",
+            f"Software · [Zenodo](https://doi.org/{pair.doi}) · [📄](../papers/2026_Existing/)",
+        )
+    )
+    cache = classification_cache_from_payload(
+        {"classification_cache": classification_cache_payload([], repo_root=tmp_path)}
+    )
     actions = build_sync_actions([pair], repo_root=tmp_path, cache=cache)
     assert actions[0].action_type == "software_catalogued"
     assert actions[0].folder == "2026_Existing"
     assert ordered_apply_pairs(actions, [pair]) == []
     # New versions share the linked concept DOI and remain supplements.
-    newer = replace(pair, record=replace(pair.record, record_id="20990002", version="2.0"))
-    assert build_sync_actions([newer], repo_root=tmp_path)[0].action_type == "software_catalogued"
+    newer = replace(
+        pair, record=replace(pair.record, record_id="20990002", version="2.0")
+    )
+    assert (
+        build_sync_actions([newer], repo_root=tmp_path)[0].action_type
+        == "software_catalogued"
+    )
     # A paper cannot disappear because its DOI is also linked by a software row.
-    publication = replace(pair, record=replace(pair.record, resource_type={"type": "publication"}))
-    assert build_sync_actions([publication], repo_root=tmp_path)[0].action_type == "create_new"
+    publication = replace(
+        pair, record=replace(pair.record, resource_type={"type": "publication"})
+    )
+    assert (
+        build_sync_actions([publication], repo_root=tmp_path)[0].action_type
+        == "create_new"
+    )
     # Re-read current catalog links even when the decision cache remains valid.
-    software.write_text(software.read_text().replace("../papers/2026_Existing/", "../papers/2026_Uncited/"))
-    assert build_sync_actions([pair], repo_root=tmp_path, cache=cache)[0].action_type == "create_new"
+    software.write_text(
+        software.read_text().replace(
+            "../papers/2026_Existing/", "../papers/2026_Uncited/"
+        )
+    )
+    assert (
+        build_sync_actions([pair], repo_root=tmp_path, cache=cache)[0].action_type
+        == "create_new"
+    )
 
 
-@pytest.mark.parametrize("description", [
-    "[Zenodo](https://doi.org/10.5281/zenodo.20990001)",
-    "[Zenodo](https://doi.org/10.5281/zenodo.999) · [📄](../papers/2026_Existing/)",
-    "[Zenodo](https://doi.org/10.5281/zenodo.20990001) · [📄](../papers/2026_Uncited/)",
-])
-def test_software_methods_pdf_without_catalogued_supplement_stays_new(tmp_path: Path, description):
+@pytest.mark.parametrize(
+    "description",
+    [
+        "[Zenodo](https://doi.org/10.5281/zenodo.20990001)",
+        "[Zenodo](https://doi.org/10.5281/zenodo.999) · [📄](../papers/2026_Existing/)",
+        "[Zenodo](https://doi.org/10.5281/zenodo.20990001) · [📄](../papers/2026_Uncited/)",
+    ],
+)
+def test_software_methods_pdf_without_catalogued_supplement_stays_new(
+    tmp_path: Path, description
+):
     _write_minimal_repo(tmp_path)
-    pair = replace(_pair(), record=replace(_pair().record, resource_type={"type": "software"}))
+    pair = replace(
+        _pair(), record=replace(_pair().record, resource_type={"type": "software"})
+    )
     bibliography = tmp_path / "pages/BIBLIOGRAPHY.md"
-    bibliography.write_text(bibliography.read_text() + "| 1 | 2026 | 🧠 | Paper | Existing paper | Zenodo | 10.5281/zenodo.100 | [📄](../papers/2026_Existing/) |\n")
+    bibliography.write_text(
+        bibliography.read_text()
+        + "| 1 | 2026 | 🧠 | Paper | Existing paper | Zenodo | 10.5281/zenodo.100 | [📄](../papers/2026_Existing/) |\n"
+    )
     software = tmp_path / "pages/SOFTWARE.md"
-    software.write_text(software.read_text().replace("Reproducible computational research project", description))
+    software.write_text(
+        software.read_text().replace(
+            "Reproducible computational research project", description
+        )
+    )
     assert pair.record.files[0]["key"].endswith(".pdf")
     assert build_sync_actions([pair], repo_root=tmp_path)[0].action_type == "create_new"
 
 
-def test_observation_refresh_retains_exact_apply_receipt_without_new_approval(tmp_path, monkeypatch):
+def test_observation_refresh_retains_exact_apply_receipt_without_new_approval(
+    tmp_path, monkeypatch
+):
     import sync_paired_publications as sync
 
     _write_minimal_repo(tmp_path)
     pair = _pair()
     apply_publication_pair(pair, repo_root=tmp_path, download_files=False)
     action = build_sync_actions([pair], repo_root=tmp_path)[0]
-    applied = apply_publication_pair(pair, repo_root=tmp_path, download_files=False, folder=action.folder)
+    applied = apply_publication_pair(
+        pair, repo_root=tmp_path, download_files=False, folder=action.folder
+    )
     attested = attest_applied_publication(applied, action, repo_root=tmp_path)
-    report = tmp_path / 'reports/paired_publications_2026-10-12.json'
-    kwargs = dict(owners=['docxology'], releases=[pair.release], records=[pair.record],
-                  pairs=[pair], actions=[action], warnings=[])
-    monkeypatch.setattr(sync, 'generated_timestamp', lambda: '2026-10-12T10:00:00Z')
+    report = tmp_path / "reports/paired_publications_2026-10-12.json"
+    kwargs = dict(
+        owners=["docxology"],
+        releases=[pair.release],
+        records=[pair.record],
+        pairs=[pair],
+        actions=[action],
+        warnings=[],
+    )
+    monkeypatch.setattr(sync, "generated_timestamp", lambda: "2026-10-12T10:00:00Z")
     write_report(report, **kwargs, applied=[attested])
-    old = json.loads(report.read_text())['applied']
-    monkeypatch.setattr(sync, 'generated_timestamp', lambda: '2026-10-12T11:00:00Z')
+    old = json.loads(report.read_text())["applied"]
+    monkeypatch.setattr(sync, "generated_timestamp", lambda: "2026-10-12T11:00:00Z")
     write_report(report, **kwargs)
     refreshed = json.loads(report.read_text())
-    assert refreshed['generated_at'] == '2026-10-12T11:00:00Z'
-    assert refreshed['applied'] == old  # Original hashes, approval, and apply time survive.
+    assert refreshed["generated_at"] == "2026-10-12T11:00:00Z"
+    assert (
+        refreshed["applied"] == old
+    )  # Original hashes, approval, and apply time survive.
     check_report(repo_root=tmp_path)
-    kwargs['actions'] = []
+    kwargs["actions"] = []
     write_report(report, **kwargs)
-    assert json.loads(report.read_text())['applied'] == []  # No receipt transferred to another action.
+    assert (
+        json.loads(report.read_text())["applied"] == []
+    )  # No receipt transferred to another action.
 
 
 def test_paired_intake_keeps_all_creators_and_existing_curated_byline(tmp_path):
     _write_minimal_repo(tmp_path)
     bibliography = tmp_path / "pages/BIBLIOGRAPHY.md"
-    bibliography.write_text(bibliography.read_text().replace("| Docs |", "| Docs | Authors |"))
+    bibliography.write_text(
+        bibliography.read_text().replace("| Docs |", "| Docs | Authors |")
+    )
     pair = _pair()
-    pair = replace(pair, record=replace(pair.record, creators=[
-        {"name": "Friedman, Daniel Ari"}, {"name": "Mikhailova, Alexandra"}]))
+    pair = replace(
+        pair,
+        record=replace(
+            pair.record,
+            creators=[
+                {"name": "Friedman, Daniel Ari"},
+                {"name": "Mikhailova, Alexandra"},
+            ],
+        ),
+    )
     folder = "2026_NewComputationalProject"
     sync_paired_publications.ensure_bibliography_row(pair, folder, [], tmp_path)
     sync_paired_publications.update_paper_metadata_index(pair, folder, [], tmp_path)
-    rows = [line for line in bibliography.read_text().splitlines() if line.startswith("| 1 |")]
+    rows = [
+        line
+        for line in bibliography.read_text().splitlines()
+        if line.startswith("| 1 |")
+    ]
     assert len(rows) == 1
     assert rows[0].endswith("| Friedman, Daniel Ari; Mikhailova, Alexandra |")
     metadata = json.loads((tmp_path / "papers/paper_metadata.json").read_text())
     assert metadata[folder]["authors"] == "Daniel Ari Friedman, Alexandra Mikhailova"
-    bibliography.write_text(bibliography.read_text().replace(
-        "Friedman, Daniel Ari; Mikhailova, Alexandra |", "Existing curated byline |"))
+    bibliography.write_text(
+        bibliography.read_text().replace(
+            "Friedman, Daniel Ari; Mikhailova, Alexandra |", "Existing curated byline |"
+        )
+    )
     revised = replace(pair, record=replace(pair.record, doi="10.5281/zenodo.20990002"))
     sync_paired_publications.ensure_bibliography_row(revised, folder, [], tmp_path)
-    row = next(line for line in bibliography.read_text().splitlines() if line.startswith("| 1 |"))
+    row = next(
+        line
+        for line in bibliography.read_text().splitlines()
+        if line.startswith("| 1 |")
+    )
     assert row.endswith("| Existing curated byline |")
     assert "20990002" in row

@@ -60,9 +60,16 @@ def test_generates_one_feed_per_domain(tmp_path):
     assert result.returncode == 0, result.stderr
     feeds = _feed_paths(root)
     assert {f.stem.removeprefix("domain-") for f in feeds} == EXPECTED_SLUGS
-    for slug in ("active-inference", "entomology", "cognitive-security",
-                 "art-synergetics", "computational", "biomedicine",
-                 "aii-ecosystem", "presentations-media"):
+    for slug in (
+        "active-inference",
+        "entomology",
+        "cognitive-security",
+        "art-synergetics",
+        "computational",
+        "biomedicine",
+        "aii-ecosystem",
+        "presentations-media",
+    ):
         assert (root / "feeds" / f"domain-{slug}.xml").is_file()
 
 
@@ -75,12 +82,17 @@ def test_feeds_are_valid_rss_2_with_required_elements(tmp_path):
         channel = tree.getroot().find("channel")
         assert channel is not None
         assert channel.findtext("title")
-        assert channel.findtext("link") == f"https://danielarifriedman.com/domain-{feed.stem.removeprefix('domain-')}.html"
+        assert (
+            channel.findtext("link")
+            == f"https://danielarifriedman.com/domain-{feed.stem.removeprefix('domain-')}.html"
+        )
         assert channel.findtext("description")
         for item in channel.findall("item"):
             assert item.findtext("title")
             link = item.findtext("link", "")
-            assert link.startswith(("https://danielarifriedman.com", "https://doi.org/", "http://doi.org/")) or link.startswith("https://")
+            assert link.startswith(
+                ("https://danielarifriedman.com", "https://doi.org/", "http://doi.org/")
+            ) or link.startswith("https://")
             assert item.findtext("guid")
             assert item.findtext("pubDate")
             assert item.findtext("description") is not None
@@ -97,20 +109,30 @@ def test_at_most_30_items_per_feed_and_items_match_domain_data(tmp_path):
         assert len(items) <= 30
         slug = feed.stem.removeprefix("domain-")
         expected_total = sum(
-            1 for w in works if build_domain_feeds._EMOJI_SLUGS.get(w.get("domain")) == slug
-        ) + sum(1 for v in videos if slug in build_domain_feeds._VIDEO_SLUGS.get(v.get("id"), set()))
+            1
+            for w in works
+            if build_domain_feeds._EMOJI_SLUGS.get(w.get("domain")) == slug
+        ) + sum(
+            1
+            for v in videos
+            if slug in build_domain_feeds._VIDEO_SLUGS.get(v.get("id"), set())
+        )
         assert len(items) == min(30, expected_total)
 
 
 def test_deterministic_byte_identical_output_across_runs(tmp_path):
     root = _mini_repo(tmp_path)
     assert _run(root).returncode == 0
-    first = {f.name: hashlib.sha256(f.read_bytes()).hexdigest() for f in _feed_paths(root)}
+    first = {
+        f.name: hashlib.sha256(f.read_bytes()).hexdigest() for f in _feed_paths(root)
+    }
     # Full regeneration from a clean directory must reproduce the same bytes.
     for f in _feed_paths(root):
         f.unlink()
     assert _run(root).returncode == 0
-    second = {f.name: hashlib.sha256(f.read_bytes()).hexdigest() for f in _feed_paths(root)}
+    second = {
+        f.name: hashlib.sha256(f.read_bytes()).hexdigest() for f in _feed_paths(root)
+    }
     assert first == second
 
 
@@ -121,6 +143,7 @@ def test_no_wall_clock_in_output(tmp_path):
         text = feed.read_text()
         # pubDates must derive from dataset years/dates, never today's clock.
         from email.utils import parsedate_to_datetime
+
         for line in text.splitlines():
             if "<pubDate>" in line:
                 stamp = line.split("<pubDate>")[1].split("</pubDate>")[0]
@@ -149,13 +172,17 @@ def test_check_mode_passes_when_current(tmp_path):
 def test_feeds_absent_from_sitemap_policy():
     """NEW-3 precedent: non-HTML XML assets are not sitemap entries."""
     for config in DOMAINS:
-        assert f"feeds/domain-{config.slug}.xml" not in [p for p, _, _ in INDEX_PRIORITY_STATIC]
+        assert f"feeds/domain-{config.slug}.xml" not in [
+            p for p, _, _ in INDEX_PRIORITY_STATIC
+        ]
 
 
 def test_domain_taxonomy_covers_every_work():
     works = build_domain_feeds.load_works(REPO_ROOT)
     build_domain_feeds.init_taxonomy(works, build_domain_feeds.load_videos(REPO_ROOT))
-    mapped = {w["num"] for w in works if w.get("domain") in build_domain_feeds._EMOJI_SLUGS}
+    mapped = {
+        w["num"] for w in works if w.get("domain") in build_domain_feeds._EMOJI_SLUGS
+    }
     assert len(mapped) == len(works), "every work must map to a domain feed"
 
 

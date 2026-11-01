@@ -71,8 +71,18 @@ def _changed_body() -> dict:
 # --- JSON adopters: the wrapper reuses the on-disk generated_at ---
 
 GLOBAL_PATH_ADOPTERS = [
-    pytest.param(current_counts, "JSON_PATH", "preserve_timestamp_when_unchanged", id="current_counts"),
-    pytest.param(coverage_exceptions, "OUT", "preserve_timestamp_when_unchanged", id="coverage_exceptions"),
+    pytest.param(
+        current_counts,
+        "JSON_PATH",
+        "preserve_timestamp_when_unchanged",
+        id="current_counts",
+    ),
+    pytest.param(
+        coverage_exceptions,
+        "OUT",
+        "preserve_timestamp_when_unchanged",
+        id="coverage_exceptions",
+    ),
 ]
 
 PARAM_PATH_ADOPTERS = [
@@ -88,7 +98,8 @@ def test_json_unchanged_body_is_byte_identical_across_two_runs(
     out = tmp_path / "payload.json"
     monkeypatch.setattr(module, attr, out)
     out.write_text(
-        json.dumps({"generated_at": OLD_TS, **_body()}, indent=2, ensure_ascii=False) + "\n",
+        json.dumps({"generated_at": OLD_TS, **_body()}, indent=2, ensure_ascii=False)
+        + "\n",
         encoding="utf-8",
     )
     seam = getattr(module, seam_name)
@@ -96,7 +107,9 @@ def test_json_unchanged_body_is_byte_identical_across_two_runs(
     first = seam({"generated_at": FRESH_TS, **_body()})
     second = seam({"generated_at": FRESH_TS, **_body()})
 
-    assert first["generated_at"] == OLD_TS, "unchanged body must reuse the existing timestamp"
+    assert first["generated_at"] == OLD_TS, (
+        "unchanged body must reuse the existing timestamp"
+    )
     assert json.dumps(first, indent=2, ensure_ascii=False) == json.dumps(
         second, indent=2, ensure_ascii=False
     ), "two runs over an unchanged body must be byte-identical"
@@ -109,14 +122,17 @@ def test_json_unchanged_body_is_byte_identical_across_two_runs_param(
     out = tmp_path / "payload.json"
     seam = getattr(module, seam_name)
     out.write_text(
-        json.dumps({"generated_at": OLD_TS, **_body()}, indent=2, ensure_ascii=False) + "\n",
+        json.dumps({"generated_at": OLD_TS, **_body()}, indent=2, ensure_ascii=False)
+        + "\n",
         encoding="utf-8",
     )
 
     first = seam({"generated_at": FRESH_TS, **_body()}, json_out=out)
     second = seam({"generated_at": FRESH_TS, **_body()}, json_out=out)
 
-    assert first["generated_at"] == OLD_TS, "unchanged body must reuse the existing timestamp"
+    assert first["generated_at"] == OLD_TS, (
+        "unchanged body must reuse the existing timestamp"
+    )
     assert json.dumps(first, indent=2, ensure_ascii=False) == json.dumps(
         second, indent=2, ensure_ascii=False
     ), "two runs over an unchanged body must be byte-identical"
@@ -129,13 +145,16 @@ def test_json_changed_body_takes_fresh_timestamp(
     out = tmp_path / "payload.json"
     monkeypatch.setattr(module, attr, out)
     out.write_text(
-        json.dumps({"generated_at": OLD_TS, **_body()}, indent=2, ensure_ascii=False) + "\n",
+        json.dumps({"generated_at": OLD_TS, **_body()}, indent=2, ensure_ascii=False)
+        + "\n",
         encoding="utf-8",
     )
 
     changed = getattr(module, seam_name)({"generated_at": FRESH_TS, **_changed_body()})
 
-    assert changed["generated_at"] == FRESH_TS, "a changed body must not inherit the stale timestamp"
+    assert changed["generated_at"] == FRESH_TS, (
+        "a changed body must not inherit the stale timestamp"
+    )
 
 
 @pytest.mark.parametrize(("module", "seam_name"), PARAM_PATH_ADOPTERS)
@@ -147,13 +166,20 @@ def test_json_changed_body_takes_fresh_timestamp_param(
         {"generated_at": FRESH_TS, **_changed_body()}, json_out=out
     )
 
-    assert changed["generated_at"] == FRESH_TS, "a changed body must not inherit the stale timestamp"
+    assert changed["generated_at"] == FRESH_TS, (
+        "a changed body must not inherit the stale timestamp"
+    )
 
 
 @pytest.mark.parametrize(("module", "attr", "seam_name"), GLOBAL_PATH_ADOPTERS)
 @pytest.mark.parametrize("corrupt", [False, True], ids=["missing", "corrupt"])
 def test_json_missing_or_corrupt_existing_takes_fresh_timestamp(
-    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, module, attr: str, seam_name: str, corrupt: bool
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    module,
+    attr: str,
+    seam_name: str,
+    corrupt: bool,
 ) -> None:
     out = tmp_path / "payload.json"
     monkeypatch.setattr(module, attr, out)
@@ -176,7 +202,9 @@ def test_json_missing_or_corrupt_existing_takes_fresh_timestamp_param(
     if corrupt:
         out.write_text("{not json", encoding="utf-8")
 
-    payload = getattr(module, seam_name)({"generated_at": FRESH_TS, **_body()}, json_out=out)
+    payload = getattr(module, seam_name)(
+        {"generated_at": FRESH_TS, **_body()}, json_out=out
+    )
 
     assert payload["generated_at"] == FRESH_TS, (
         "a missing or unreadable existing file must yield a fresh timestamp"

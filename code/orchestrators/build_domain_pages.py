@@ -52,7 +52,15 @@ DOMAINS = [
         short_title="Entomology",
         description="Ant colony behavior, physiology, transcriptomics, and computational models of collective cognition.",
         domains=("🐜",),
-        repo_names=("MetaInformAnt", "ActiveInferAnts", "Active_InferAnts", "ant_stack", "ant-pheromone", "ento_linguistics", "FORMINDEX"),
+        repo_names=(
+            "MetaInformAnt",
+            "ActiveInferAnts",
+            "Active_InferAnts",
+            "ant_stack",
+            "ant-pheromone",
+            "ento_linguistics",
+            "FORMINDEX",
+        ),
         learning_path=(
             "Read the foundational pillar guide on <a href='computational-entomology.html'>Computational Entomology</a> for simulation models and neurogenomic algorithms.",
             "Explore <a href='insect-cognition.html'>Insect Cognition &amp; Collective Intelligence</a> for distributed cognition and stigmergic coordination.",
@@ -94,7 +102,13 @@ DOMAINS = [
             "Explore theorem proving in Lean 4 via <a href='works/Friedman2026TowardsLean4Formalization113.html'>Towards Lean 4 Formalization of Active Inference</a> and the <a href='https://github.com/ActiveInferenceInstitute/fep_lean'>fep_lean</a> repository.",
             "Engage with multi-agent orchestration and case-based reasoning in <a href='https://github.com/ActiveInferenceInstitute/CEREBRUM'>CEREBRUM</a> and <a href='https://github.com/docxology/active_torchference'>active_torchference</a>.",
         ),
-        collaborators=("Karl Friston", "Thomas Parr", "Maxwell J. D. Ramstead", "Conor Heins", "Tim Verbelen"),
+        collaborators=(
+            "Karl Friston",
+            "Thomas Parr",
+            "Maxwell J. D. Ramstead",
+            "Conor Heins",
+            "Tim Verbelen",
+        ),
     ),
     DomainConfig(
         slug="cognitive-security",
@@ -122,7 +136,14 @@ DOMAINS = [
         short_title="Art & Synergetics",
         description="William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates, and synergetics.",
         domains=("🎨",),
-        repo_names=("QuadCraft", "QuadMath", "ivm-xyz", "godel_ivm", "symergetics", "fuller-obsidian"),
+        repo_names=(
+            "QuadCraft",
+            "QuadMath",
+            "ivm-xyz",
+            "godel_ivm",
+            "symergetics",
+            "fuller-obsidian",
+        ),
         learning_path=(
             "Browse the curated visual archive on the <a href='art.html'>Visual Art Gallery</a> (940+ catalogued pen-and-ink drawings).",
             "Browse the themed drawing collections: <a href='art-collections/sacred-geometry-kabbalistic-triangles.html'>Sacred Geometry &amp; Kabbalistic Triangles</a> and <a href='art-collections/americana-seals.html'>Americana &amp; Seals</a>, each with one page per artwork.",
@@ -133,7 +154,11 @@ DOMAINS = [
             "Interact with 3D synergetics environments through <a href='https://github.com/docxology/QuadCraft'>QuadCraft</a> and <a href='https://github.com/docxology/ivm-xyz'>ivm-xyz</a>.",
             "Explore digital knowledge graphs of synergetics with <a href='https://github.com/docxology/fuller-obsidian'>fuller-obsidian</a>.",
         ),
-        collaborators=("Buckminster Fuller source tradition", "William Blake source tradition", "Curio Cards artists"),
+        collaborators=(
+            "Buckminster Fuller source tradition",
+            "William Blake source tradition",
+            "Curio Cards artists",
+        ),
     ),
     DomainConfig(
         slug="computational",
@@ -161,7 +186,10 @@ DOMAINS = [
             "Explore modular AI-agent development environments with <a href='https://github.com/docxology/codomyrmex'>codomyrmex</a> and <a href='https://github.com/docxology/template'>template</a>.",
             "Query canonical knowledge graph endpoints via the <a href='discovery.html'>Discovery Map</a> and <a href='catalog.html'>Data Catalog</a>.",
         ),
-        collaborators=("Active Inference Institute contributors", "Open-source repository contributors"),
+        collaborators=(
+            "Active Inference Institute contributors",
+            "Open-source repository contributors",
+        ),
     ),
     DomainConfig(
         slug="biomedicine",
@@ -197,7 +225,10 @@ DOMAINS = [
             "Engage with formal mathematical specifications on the <a href='https://github.com/ActiveInferenceInstitute/fep_lean'>fep_lean repository</a>.",
             "Review verified non-profit records via the <a href='https://projects.propublica.org/nonprofits/organizations/882985125'>ProPublica Nonprofit Explorer (EIN 88-2985125)</a>.",
         ),
-        collaborators=("Active Inference Institute educators and contributors", "Institute program participants"),
+        collaborators=(
+            "Active Inference Institute educators and contributors",
+            "Institute program participants",
+        ),
     ),
     DomainConfig(
         slug="presentations-media",
@@ -215,7 +246,10 @@ DOMAINS = [
             "Review transcript processing software pipelines in the <a href='https://doi.org/10.5281/zenodo.18686966'>Journal-Utilities Software Release (Zenodo 18686966)</a>.",
             "Explore public video channels on <a href='https://youtube.com/@activeinference'>Active Inference YouTube</a> and <a href='https://youtube.com/@danielarifriedman'>Personal YouTube Channel</a>.",
         ),
-        collaborators=("Active Inference Institute educators", "Course and media collaborators"),
+        collaborators=(
+            "Active Inference Institute educators",
+            "Course and media collaborators",
+        ),
     ),
 ]
 
@@ -330,7 +364,8 @@ def page_head(
 
 def page_footer() -> str:
     footer_stamp = footer_build_stamp_html()
-    return f"""    <footer role="contentinfo">
+    return (
+        f"""    <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="https://activeinference.institute/">Active Inference Institute</a> · <a href="https://danielarifriedman.com/">danielarifriedman.com</a></p>
         <div class="footer-links">
@@ -344,9 +379,14 @@ def page_footer() -> str:
         <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed {generated_month_year()}</p>
         {footer_stamp}
     </footer>
-""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
+"""
+        + INTERACTIVE_SCRIPTS
+        + "\n"
+        + MENU_ESC_SCRIPT
+        + """</body>
 </html>
 """
+    )
 
 
 def work_link(work: dict) -> str:
@@ -363,7 +403,9 @@ def select_repositories(repos: list[dict], names: tuple[str, ...]) -> list[dict]
     order = {name.lower(): idx for idx, name in enumerate(names)}
     wanted = set(order)
     selected = [repo for repo in repos if repo["name"].lower() in wanted]
-    return sorted(selected, key=lambda repo: (order.get(repo["name"].lower(), 999), repo["owner"]))
+    return sorted(
+        selected, key=lambda repo: (order.get(repo["name"].lower(), 999), repo["owner"])
+    )
 
 
 def render_domain_page(
@@ -380,10 +422,14 @@ def render_domain_page(
     def _year_key(w: dict) -> int:
         try:
             return int(w["year"]) if str(w["year"]).isdigit() else 9999
-        except (TypeError, ValueError, KeyError):
+        except TypeError, ValueError, KeyError:
             return 9999
 
-    selected = sorted(domain_works, key=lambda w: (_year_key(w), -int(w.get("num", 0) or 0)), reverse=True)[:12]
+    selected = sorted(
+        domain_works,
+        key=lambda w: (_year_key(w), -int(w.get("num", 0) or 0)),
+        reverse=True,
+    )[:12]
     domain_repos = select_repositories(repos, config.repo_names)
 
     # Count extraction stats for this domain
@@ -406,24 +452,34 @@ def render_domain_page(
 
         meta_links = []
         if w.get("doi"):
-            meta_links.append(f'<a href="https://doi.org/{h(w["doi"])}">DOI: {h(w["doi"])}</a>')
+            meta_links.append(
+                f'<a href="https://doi.org/{h(w["doi"])}">DOI: {h(w["doi"])}</a>'
+            )
         if w.get("has_paper_folder") and w.get("docs_path"):
-            meta_links.append(f'<a href="{h(w["docs_path"].rstrip("/"))}/">Paper Folder</a>')
+            meta_links.append(
+                f'<a href="{h(w["docs_path"].rstrip("/"))}/">Paper Folder</a>'
+            )
         if w.get("citation_key"):
-            meta_links.append(f'<a href="works/{h(w["citation_key"])}.html">Full Work Page &amp; Citation</a>')
+            meta_links.append(
+                f'<a href="works/{h(w["citation_key"])}.html">Full Work Page &amp; Citation</a>'
+            )
 
-        meta_links_html = f'<div class="work-meta-links">{" · ".join(meta_links)}</div>' if meta_links else ""
+        meta_links_html = (
+            f'<div class="work-meta-links">{" · ".join(meta_links)}</div>'
+            if meta_links
+            else ""
+        )
 
         works_rows.append(
             f"""                <article class="work-row">
-                    <div class="year">{h(w['year'])}</div>
+                    <div class="year">{h(w["year"])}</div>
                     <div>
-                        <a href="{h(work_link(w))}"><strong>{h(w['title'])}</strong></a>
-                        <div class="venue">{h(w['venue'])} · {h(w['type'])}</div>
+                        <a href="{h(work_link(w))}"><strong>{h(w["title"])}</strong></a>
+                        <div class="venue">{h(w["venue"])} · {h(w["type"])}</div>
 {desc_html}
                         {meta_links_html}
                     </div>
-                    <a href="{h(w['url'])}" aria-label="Primary link for {h(w['title'])}" class="btn btn-sm btn-outline">Primary Link</a>
+                    <a href="{h(w["url"])}" aria-label="Primary link for {h(w["title"])}" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>"""
         )
 
@@ -433,16 +489,18 @@ def render_domain_page(
     for r in domain_repos:
         repo_links = [f'<a href="{h(r["url"])}">GitHub Repo</a>']
         if r.get("paper_path"):
-            repo_links.append(f'<a href="{h(r["paper_path"].rstrip("/"))}/">Companion Paper</a>')
+            repo_links.append(
+                f'<a href="{h(r["paper_path"].rstrip("/"))}/">Companion Paper</a>'
+            )
         if r.get("zenodo_url"):
             repo_links.append(f'<a href="{h(r["zenodo_url"])}">Zenodo Release</a>')
         repo_links_html = f'<div class="repo-meta-links">{" · ".join(repo_links)}</div>'
 
         repos_rows.append(
             f"""                <article class="mini-card">
-                    <h3><a href="{h(r['url'])}">{h(r['name'])}</a></h3>
-                    <p>{h(r['description'])}</p>
-                    <p class="text-muted">{h(r['language'] or 'Unspecified')} · ⭐ {h(r['stars'])} · Updated {h(r.get('updated_or_year', ''))}</p>
+                    <h3><a href="{h(r["url"])}">{h(r["name"])}</a></h3>
+                    <p>{h(r["description"])}</p>
+                    <p class="text-muted">{h(r["language"] or "Unspecified")} · ⭐ {h(r["stars"])} · Updated {h(r.get("updated_or_year", ""))}</p>
                     {repo_links_html}
                 </article>"""
         )
@@ -454,7 +512,11 @@ def render_domain_page(
     collaborators_html = ", ".join(h(c) for c in config.collaborators)
     title = config.title
     canonical = f"domain-{config.slug}.html"
-    breadcrumb = [("Home", ""), ("Domains", "domains.html"), (config.short_title, canonical)]
+    breadcrumb = [
+        ("Home", ""),
+        ("Domains", "domains.html"),
+        (config.short_title, canonical),
+    ]
     collection_ld = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
@@ -577,16 +639,18 @@ def render_domains_index(works: list[dict], repos: list[dict]) -> str:
             "domains.html",
             "og-domains.jpg",
             breadcrumb=[("Home", ""), ("Domains", "domains.html")],
-            extra_jsonld=[{
-                "@context": "https://schema.org",
-                "@type": "CollectionPage",
-                "@id": "https://danielarifriedman.com/domains.html#page",
-                "name": "Research Domains — Daniel Ari Friedman",
-                "description": "Domain landing pages for Daniel Ari Friedman's research, software, collaborators, and learning pathways.",
-                "url": "https://danielarifriedman.com/domains.html",
-                "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
-                "dateModified": generated_date(),
-            }],
+            extra_jsonld=[
+                {
+                    "@context": "https://schema.org",
+                    "@type": "CollectionPage",
+                    "@id": "https://danielarifriedman.com/domains.html#page",
+                    "name": "Research Domains — Daniel Ari Friedman",
+                    "description": "Domain landing pages for Daniel Ari Friedman's research, software, collaborators, and learning pathways.",
+                    "url": "https://danielarifriedman.com/domains.html",
+                    "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
+                    "dateModified": generated_date(),
+                }
+            ],
         )
         + f"""
     <header class="domain-hero">
@@ -628,7 +692,7 @@ def render_domains_md(works: list[dict], repos: list[dict]) -> str:
         'description: "Research domain map linking works, software, collaborators, and learning paths."',
         'keywords: "Daniel Ari Friedman, research domains, Active Inference, entomology, cognitive security"',
         "---",
-        "<div align=\"center\">",
+        '<div align="center">',
         "",
         "# Research Domains",
         "",
@@ -663,7 +727,9 @@ def render_domains_md(works: list[dict], repos: list[dict]) -> str:
             md_item = strip_html_tags(item)
             lines.append(f"- {md_item}")
         lines.extend(["", "**Selected works**", ""])
-        for w in sorted(domain_works, key=lambda x: (int(x["year"]), -int(x["num"])), reverse=True)[:6]:
+        for w in sorted(
+            domain_works, key=lambda x: (int(x["year"]), -int(x["num"])), reverse=True
+        )[:6]:
             lines.append(f"- {w['year']} — [{w['title']}]({w['url']})")
         lines.extend(["", "**Selected repositories**", ""])
         for r in domain_repos[:8]:
@@ -678,18 +744,25 @@ def render_outputs() -> dict[Path, str]:
     enrichments = load_json("data/work-enrichment.json").get("works", {})
     outputs = {REPO_ROOT / "domains.html": render_domains_index(works, repos)}
     for config in DOMAINS:
-        outputs[REPO_ROOT / f"domain-{config.slug}.html"] = render_domain_page(config, works, repos, enrichments)
+        outputs[REPO_ROOT / f"domain-{config.slug}.html"] = render_domain_page(
+            config, works, repos, enrichments
+        )
     outputs[REPO_ROOT / "pages" / "DOMAINS.md"] = render_domains_md(works, repos)
     return outputs
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if generated pages are stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if generated pages are stale"
+    )
     args = parser.parse_args()
     outputs = render_outputs()
     stale = (
-        [str(path.relative_to(REPO_ROOT)) for path in stale_output_paths(outputs, repo_root=REPO_ROOT)]
+        [
+            str(path.relative_to(REPO_ROOT))
+            for path in stale_output_paths(outputs, repo_root=REPO_ROOT)
+        ]
         if args.check
         else []
     )

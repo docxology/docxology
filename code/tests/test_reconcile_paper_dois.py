@@ -19,9 +19,19 @@ import reconcile_paper_dois as reconcile  # noqa: E402
 def test_proposed_actions_preserve_prior_version_as_artifact(tmp_path):
     metadata = tmp_path / "papers/2026_Example/metadata.json"
     metadata.parent.mkdir(parents=True)
-    metadata.write_text(json.dumps({"doi": "10.1234/example-v2", "doi_url": "https://doi.org/10.1234/example-v2"}), encoding="utf-8")
+    metadata.write_text(
+        json.dumps(
+            {
+                "doi": "10.1234/example-v2",
+                "doi_url": "https://doi.org/10.1234/example-v2",
+            }
+        ),
+        encoding="utf-8",
+    )
     actions = reconcile.proposed_actions(
-        {"2026_Example": "10.1234/example-v1"}, {"2026_Example": metadata}, repo_root=tmp_path
+        {"2026_Example": "10.1234/example-v1"},
+        {"2026_Example": metadata},
+        repo_root=tmp_path,
     )
     assert actions == [
         {
@@ -38,15 +48,22 @@ def test_proposed_actions_preserve_prior_version_as_artifact(tmp_path):
 def test_proposal_rejects_ambiguous_existing_artifact(tmp_path):
     metadata = tmp_path / "papers/2026_Example/metadata.json"
     metadata.parent.mkdir(parents=True)
-    metadata.write_text(json.dumps({"doi": "10.1234/example-v2", "artifact_doi": "10.1234/other"}), encoding="utf-8")
+    metadata.write_text(
+        json.dumps({"doi": "10.1234/example-v2", "artifact_doi": "10.1234/other"}),
+        encoding="utf-8",
+    )
     try:
         reconcile.proposed_actions(
-            {"2026_Example": "10.1234/example-v1"}, {"2026_Example": metadata}, repo_root=tmp_path
+            {"2026_Example": "10.1234/example-v1"},
+            {"2026_Example": metadata},
+            repo_root=tmp_path,
         )
     except ValueError as exc:
         assert "requires manual DOI-role review" in str(exc)
     else:  # pragma: no cover - assertion branch
-        raise AssertionError("ambiguous artifact DOI must block automatic reconciliation")
+        raise AssertionError(
+            "ambiguous artifact DOI must block automatic reconciliation"
+        )
 
 
 def test_proposal_rejects_nonempty_malformed_doi_roles(tmp_path):
@@ -56,12 +73,16 @@ def test_proposal_rejects_nonempty_malformed_doi_roles(tmp_path):
         metadata.write_text(json.dumps({field: "not a DOI"}), encoding="utf-8")
         try:
             reconcile.proposed_actions(
-                {"2026_Example": "10.1234/example-v1"}, {"2026_Example": metadata}, repo_root=tmp_path
+                {"2026_Example": "10.1234/example-v1"},
+                {"2026_Example": metadata},
+                repo_root=tmp_path,
             )
         except ValueError as exc:
             assert f"{field} is nonempty but malformed" in str(exc)
         else:  # pragma: no cover - assertion branch
-            raise AssertionError(f"malformed {field} must block automatic reconciliation")
+            raise AssertionError(
+                f"malformed {field} must block automatic reconciliation"
+            )
 
 
 def test_apply_requires_a_separate_attributed_approval_record(tmp_path):
@@ -99,4 +120,7 @@ def test_apply_requires_a_separate_attributed_approval_record(tmp_path):
     }
     approval_path.write_text(json.dumps(approval), encoding="utf-8")
 
-    assert reconcile.validate_review_approval(approval_path, proposal_path, approved) == approval
+    assert (
+        reconcile.validate_review_approval(approval_path, proposal_path, approved)
+        == approval
+    )

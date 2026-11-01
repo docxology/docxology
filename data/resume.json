@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T01:19:25Z",
+  "generated_at": "2026-11-01T21:46:48Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -39,10 +39,10 @@
     "owned_software_catalogued": 130,
     "aii_software_catalogued": 42,
     "google_scholar": {
-      "citations": 824,
+      "citations": 835,
       "h_index": 14,
-      "i10_index": 17,
-      "as_of": "2026-10-05",
+      "i10_index": 16,
+      "as_of": "2026-11-01",
       "profile_url": "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en"
     },
     "docxology_public_repositories_claim": {
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "d3bcc7ebdbf00c3d558e35963cf06f613f115ece35b6d5dabf81901b223854b6",
+      "sha256": "4337c3b2142b7b17007403632e59853a3899e46ceadd514cffe0d29603f8e4fb",
       "files": [
         {
           "path": "resume/source.json",
@@ -103,17 +103,17 @@
         {
           "path": "data/software.json",
           "bytes": 86927,
-          "sha256": "283a1300b77450479515aec4242202c2b63d89ef88704272565389f2a40304a5"
+          "sha256": "762e46bf551958319b8e4865323e2c134c0737d2f0ac6dd6349fe45b571df898"
         },
         {
           "path": "data/scholar-snapshot.json",
-          "bytes": 2869,
-          "sha256": "cd143d9d0e4a33a75cb32da5a4b63281c1b1fd09916a231731701b4ff842eb81"
+          "bytes": 2928,
+          "sha256": "2e2aab3529828a978757d3d08ecc57c9c7303ee9883c77ef765a646155a1cca9"
         },
         {
           "path": "data/claims.json",
-          "bytes": 13095,
-          "sha256": "7aa21f681de2345fe71d6645965fcbf08043f96302720bde8b06ed3c880021d7"
+          "bytes": 12971,
+          "sha256": "a38b31e75b4952f2dfe62aa3df7686421afb9c0b4a09be1abb11b49f21b1a30c"
         },
         {
           "path": "data/github-repositories.json",
@@ -10176,16 +10176,16 @@
     },
     {
       "id": "google-scholar-citations",
-      "claim": "Google Scholar metrics are recorded as a dated snapshot: 824 citations, h-index 14, i10-index 17 (as of 2026-10-05).",
+      "claim": "Google Scholar metrics are recorded as a dated snapshot: 835 citations, h-index 14, i10-index 16 (as of 2026-11-01).",
       "status": "dated-snapshot",
       "sources": [
         "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en",
         "data/scholar-snapshot.json",
         "pages/VERIFICATION_LOG.md"
       ],
-      "checked_at": "2026-10-05",
+      "checked_at": "2026-11-01",
       "confidence": "high",
-      "verification_method": "Direct authenticated observation of the canonical profile on 2026-10-05 in the site owner's signed-in Chrome session (operator handoff of 2026-10-05). All-time: 824 citations, h-index 14, i10-index 17; Since-2021: 595 / 14 / 15. No anonymous or search-engine cached result was used.",
+      "verification_method": "Direct authenticated owner-profile observation in the T3 shared browser; account avatar and owner edit controls visible; network navigation returned HTTP 200.",
       "maintenance_owner": "ARCHIVIST",
       "caveat": "Single source of truth: data/scholar-snapshot.json. Update only from a direct (non-cached) Scholar fetch, recording the new value, as_of date, and method there; regenerate surfaces via code/orchestrators/sync_scholar_metrics.py. Never publish a citation number above the most recent direct-fetch value."
     },

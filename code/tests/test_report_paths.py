@@ -72,7 +72,9 @@ def test_latest_report_raises_when_required_and_missing(fake_reports: Path):
 
 
 def test_latest_report_returns_none_when_not_required(fake_reports: Path):
-    assert latest_report("nothing_*.json", required=False, report_dir=fake_reports) is None
+    assert (
+        latest_report("nothing_*.json", required=False, report_dir=fake_reports) is None
+    )
 
 
 def _git(repo: Path, *args: str) -> None:
@@ -95,9 +97,10 @@ def test_latest_source_report_ignores_untracked_postdeploy_receipt(tmp_path: Pat
     _git(tmp_path, "commit", "-qm", "source receipt")
     (reports / "snapshot_2026-08-26.json").write_text("{}", encoding="utf-8")
 
-    assert latest_source_report(
-        "snapshot_*.json", report_dir=reports, repo_root=tmp_path
-    ) == committed
+    assert (
+        latest_source_report("snapshot_*.json", report_dir=reports, repo_root=tmp_path)
+        == committed
+    )
 
 
 def test_latest_source_subdir_file_ignores_untracked_postdeploy_receipt(tmp_path: Path):
@@ -112,9 +115,12 @@ def test_latest_source_subdir_file_ignores_untracked_postdeploy_receipt(tmp_path
     fresh.parent.mkdir(parents=True)
     fresh.write_text("{}", encoding="utf-8")
 
-    assert latest_source_subdir_file(
-        "browser", "manifest.json", report_dir=reports, repo_root=tmp_path
-    ) == committed
+    assert (
+        latest_source_subdir_file(
+            "browser", "manifest.json", report_dir=reports, repo_root=tmp_path
+        )
+        == committed
+    )
 
 
 def test_dated_report_path_normalizes_suffix(fake_reports: Path):
@@ -158,11 +164,15 @@ def test_latest_subdir_file_skips_directories_missing_the_file(fake_reports: Pat
 
 def test_latest_subdir_file_raises_when_required_and_missing(fake_reports: Path):
     with pytest.raises(FileNotFoundError):
-        latest_subdir_file("nonexistent-prefix", "manifest.json", report_dir=fake_reports)
+        latest_subdir_file(
+            "nonexistent-prefix", "manifest.json", report_dir=fake_reports
+        )
 
 
 def test_repo_path_resolves_relative_against_repo_root():
-    assert repo_path("data/works.json") == report_paths.REPO_ROOT / "data" / "works.json"
+    assert (
+        repo_path("data/works.json") == report_paths.REPO_ROOT / "data" / "works.json"
+    )
 
 
 def test_repo_path_passes_through_absolute_paths(tmp_path: Path):
@@ -177,10 +187,18 @@ def test_rel_returns_posix_repo_relative_path():
 
 def test_stable_generated_at_reuses_timestamp_only_for_equal_json_body(tmp_path: Path):
     path = tmp_path / "snapshot.json"
-    path.write_text('{"generated_at":"2026-07-17T00:00:00Z","count":3}\n', encoding="utf-8")
+    path.write_text(
+        '{"generated_at":"2026-07-17T00:00:00Z","count":3}\n', encoding="utf-8"
+    )
 
-    assert stable_generated_at(path, {"generated_at": "2026-07-18T00:00:00Z", "count": 3}) == "2026-07-17T00:00:00Z"
-    assert stable_generated_at(path, {"generated_at": "2026-07-18T00:00:00Z", "count": 4}) is None
+    assert (
+        stable_generated_at(path, {"generated_at": "2026-07-18T00:00:00Z", "count": 3})
+        == "2026-07-17T00:00:00Z"
+    )
+    assert (
+        stable_generated_at(path, {"generated_at": "2026-07-18T00:00:00Z", "count": 4})
+        is None
+    )
 
 
 def test_source_worktree_state_only_exempts_declared_release_evidence(tmp_path: Path):
@@ -196,7 +214,9 @@ def test_source_worktree_state_only_exempts_declared_release_evidence(tmp_path: 
     subprocess.run(["git", "commit", "-qm", "fixture"], cwd=tmp_path, check=True)
     reports = tmp_path / "reports"
     reports.mkdir()
-    (reports / "public_source_snapshot_2026-08-25.json").write_text("{}", encoding="utf-8")
+    (reports / "public_source_snapshot_2026-08-25.json").write_text(
+        "{}", encoding="utf-8"
+    )
 
     assert source_worktree_state(tmp_path)["source_worktree_clean"] is True
 
@@ -218,14 +238,24 @@ def test_payload_commit_and_tree_skip_only_a_committed_control_tail(tmp_path: Pa
     subprocess.run(["git", "add", "source.txt"], cwd=tmp_path, check=True)
     subprocess.run(["git", "commit", "-qm", "payload"], cwd=tmp_path, check=True)
     payload = subprocess.run(
-        ["git", "rev-parse", "HEAD"], cwd=tmp_path, check=True, capture_output=True, text=True
+        ["git", "rev-parse", "HEAD"],
+        cwd=tmp_path,
+        check=True,
+        capture_output=True,
+        text=True,
     ).stdout.strip()
     reports = tmp_path / "reports"
     reports.mkdir()
-    (reports / "public_source_review_2026-08-25.json").write_text("{}\n", encoding="utf-8")
-    (reports / "public_source_review_2026-08-25.md").write_text("# review\n", encoding="utf-8")
+    (reports / "public_source_review_2026-08-25.json").write_text(
+        "{}\n", encoding="utf-8"
+    )
+    (reports / "public_source_review_2026-08-25.md").write_text(
+        "# review\n", encoding="utf-8"
+    )
     subprocess.run(["git", "add", "reports"], cwd=tmp_path, check=True)
-    subprocess.run(["git", "commit", "-qm", "review controls"], cwd=tmp_path, check=True)
+    subprocess.run(
+        ["git", "commit", "-qm", "review controls"], cwd=tmp_path, check=True
+    )
 
     expected_tree = subprocess.run(
         ["git", "rev-parse", f"{payload}^{{tree}}"],
@@ -238,12 +268,16 @@ def test_payload_commit_and_tree_skip_only_a_committed_control_tail(tmp_path: Pa
     assert source_tree_sha(tmp_path, payload) == expected_tree
 
     (reports / "hand-authored-note.md").write_text("payload\n", encoding="utf-8")
-    subprocess.run(["git", "add", "reports/hand-authored-note.md"], cwd=tmp_path, check=True)
+    subprocess.run(
+        ["git", "add", "reports/hand-authored-note.md"], cwd=tmp_path, check=True
+    )
     subprocess.run(["git", "commit", "-qm", "content report"], cwd=tmp_path, check=True)
     assert source_payload_commit(tmp_path) != payload
 
 
-def test_control_tail_provenance_ignores_only_declared_generated_controls(tmp_path: Path):
+def test_control_tail_provenance_ignores_only_declared_generated_controls(
+    tmp_path: Path,
+):
     for args in (
         ["git", "init", "-q"],
         ["git", "config", "user.email", "test@example.invalid"],
@@ -254,12 +288,18 @@ def test_control_tail_provenance_ignores_only_declared_generated_controls(tmp_pa
     subprocess.run(["git", "add", "source.txt"], cwd=tmp_path, check=True)
     subprocess.run(["git", "commit", "-qm", "payload"], cwd=tmp_path, check=True)
     payload = subprocess.run(
-        ["git", "rev-parse", "HEAD"], cwd=tmp_path, check=True, capture_output=True, text=True
+        ["git", "rev-parse", "HEAD"],
+        cwd=tmp_path,
+        check=True,
+        capture_output=True,
+        text=True,
     ).stdout.strip()
     expected_tree = source_tree_sha(tmp_path, payload)
 
     (tmp_path / "data").mkdir()
-    (tmp_path / "data" / "pages-artifact-manifest.json").write_text("{}\n", encoding="utf-8")
+    (tmp_path / "data" / "pages-artifact-manifest.json").write_text(
+        "{}\n", encoding="utf-8"
+    )
     reports = tmp_path / "reports"
     reports.mkdir()
     (reports / "asset_size_2026-08-25.json").write_text("{}\n", encoding="utf-8")
@@ -309,7 +349,11 @@ def test_latest_payload_commit_descends_merge_tree_identical_parent():
 def test_latest_payload_commit_stops_on_true_content_merge():
     parents = {"merge": ["base", "feature"]}
     trees = {"merge": "mixedtree", "base": "basetree", "feature": "featuretree"}
-    changed = {"merge": ["CHANGELOG.md"], "base": ["README.md"], "feature": ["CHANGELOG.md"]}
+    changed = {
+        "merge": ["CHANGELOG.md"],
+        "base": ["README.md"],
+        "feature": ["CHANGELOG.md"],
+    }
     resolved = latest_payload_commit(
         "merge",
         lambda c: parents[c][0] if parents[c] else None,
@@ -330,11 +374,17 @@ def test_merge_ref_provenance_resolves_branch_payload_commit(tmp_path: Path):
         subprocess.run(args, cwd=tmp_path, check=True)
     reports = tmp_path / "reports"
     reports.mkdir()
-    (reports / "public_source_review_2026-08-25.json").write_text("{}\n", encoding="utf-8")
+    (reports / "public_source_review_2026-08-25.json").write_text(
+        "{}\n", encoding="utf-8"
+    )
     subprocess.run(["git", "add", "reports"], cwd=tmp_path, check=True)
     subprocess.run(["git", "commit", "-qm", "base controls"], cwd=tmp_path, check=True)
     base = subprocess.run(
-        ["git", "rev-parse", "HEAD"], cwd=tmp_path, check=True, capture_output=True, text=True
+        ["git", "rev-parse", "HEAD"],
+        cwd=tmp_path,
+        check=True,
+        capture_output=True,
+        text=True,
     ).stdout.strip()
 
     subprocess.run(["git", "checkout", "-qb", "feature"], cwd=tmp_path, check=True)
@@ -342,11 +392,19 @@ def test_merge_ref_provenance_resolves_branch_payload_commit(tmp_path: Path):
     subprocess.run(["git", "add", "CHANGELOG.md"], cwd=tmp_path, check=True)
     subprocess.run(["git", "commit", "-qm", "payload"], cwd=tmp_path, check=True)
     branch_payload = subprocess.run(
-        ["git", "rev-parse", "HEAD"], cwd=tmp_path, check=True, capture_output=True, text=True
+        ["git", "rev-parse", "HEAD"],
+        cwd=tmp_path,
+        check=True,
+        capture_output=True,
+        text=True,
     ).stdout.strip()
-    (reports / "public_source_review_2026-09-07.json").write_text("{}\n", encoding="utf-8")
+    (reports / "public_source_review_2026-09-07.json").write_text(
+        "{}\n", encoding="utf-8"
+    )
     subprocess.run(["git", "add", "reports"], cwd=tmp_path, check=True)
-    subprocess.run(["git", "commit", "-qm", "branch controls"], cwd=tmp_path, check=True)
+    subprocess.run(
+        ["git", "commit", "-qm", "branch controls"], cwd=tmp_path, check=True
+    )
 
     subprocess.run(["git", "checkout", "-q", "main"], cwd=tmp_path, check=True)
     subprocess.run(
@@ -359,7 +417,9 @@ def test_merge_ref_provenance_resolves_branch_payload_commit(tmp_path: Path):
     assert base != branch_payload
 
 
-def test_latest_source_report_stops_at_newest_tracked_receipt_without_caching(tmp_path: Path, monkeypatch):
+def test_latest_source_report_stops_at_newest_tracked_receipt_without_caching(
+    tmp_path: Path, monkeypatch
+):
     _init_repo(tmp_path)
     reports = tmp_path / "reports"
     reports.mkdir()
@@ -372,13 +432,21 @@ def test_latest_source_report_stops_at_newest_tracked_receipt_without_caching(tm
     newest.write_text("{}")
     calls = []
     original = report_paths.is_git_tracked
+
     def observe(path, *, repo_root):
         calls.append(path)
         return original(path, repo_root=repo_root)
+
     monkeypatch.setattr(report_paths, "is_git_tracked", observe)
-    assert latest_source_report("snapshot_*.json", report_dir=reports, repo_root=tmp_path) == middle
+    assert (
+        latest_source_report("snapshot_*.json", report_dir=reports, repo_root=tmp_path)
+        == middle
+    )
     assert calls == [newest, middle]
     _git(tmp_path, "add", str(newest.relative_to(tmp_path)))
     calls.clear()
-    assert latest_source_report("snapshot_*.json", report_dir=reports, repo_root=tmp_path) == newest
+    assert (
+        latest_source_report("snapshot_*.json", report_dir=reports, repo_root=tmp_path)
+        == newest
+    )
     assert calls == [newest]

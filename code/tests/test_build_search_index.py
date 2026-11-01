@@ -29,7 +29,10 @@ def test_real_work_abstract_is_readable_search_prose_without_mutating_source():
     enrichments = json.loads(source_bytes[source_paths[1]])["works"]
     key = "Friedman2026TowardsLean4Formalization113"
     work = next(item for item in works if item["citation_key"] == key)
-    original_work, original_enrichment = copy.deepcopy(work), copy.deepcopy(enrichments[key])
+    original_work, original_enrichment = (
+        copy.deepcopy(work),
+        copy.deepcopy(enrichments[key]),
+    )
     raw = enrichments[key]["abstract"]
     assert isinstance(raw, str) and raw
 
@@ -46,8 +49,11 @@ def test_real_work_abstract_is_readable_search_prose_without_mutating_source():
 
 def test_frozen_publication_html_preserves_version_count_and_qualification():
     work = {
-        "citation_key": "Fixture2026", "title": "Formal catalogue",
-        "type": "Paper", "venue": "Fixture", "domain_name": "Active Inference",
+        "citation_key": "Fixture2026",
+        "title": "Formal catalogue",
+        "type": "Paper",
+        "venue": "Fixture",
+        "domain_name": "Active Inference",
         "year": 2026,
     }
     raw = (
@@ -69,20 +75,27 @@ def test_frozen_publication_html_preserves_version_count_and_qualification():
     assert enrichments == before
 
 
-@pytest.mark.parametrize("raw,expected", [
-    (
-        "A < B and C > D. Use type <T> &amp; literal &lt;code&gt; notation.",
-        "A < B and C > D. Use type <T> & literal <code> notation.",
-    ),
-    (
-        "<p><strong>Comparison</strong>: A &lt; B and type <T>.</p><p>Final qualification.</p>",
-        "Comparison: A < B and type <T>.\n\nFinal qualification.",
-    ),
-])
+@pytest.mark.parametrize(
+    "raw,expected",
+    [
+        (
+            "A < B and C > D. Use type <T> &amp; literal &lt;code&gt; notation.",
+            "A < B and C > D. Use type <T> & literal <code> notation.",
+        ),
+        (
+            "<p><strong>Comparison</strong>: A &lt; B and type <T>.</p><p>Final qualification.</p>",
+            "Comparison: A < B and type <T>.\n\nFinal qualification.",
+        ),
+    ],
+)
 def test_work_search_prose_preserves_literal_math_and_source(raw, expected):
     work = {
-        "citation_key": "Example2026", "title": "Public math fixture", "type": "Paper",
-        "venue": "Fixture", "domain_name": "Mathematics", "year": 2026,
+        "citation_key": "Example2026",
+        "title": "Public math fixture",
+        "type": "Paper",
+        "venue": "Fixture",
+        "domain_name": "Mathematics",
+        "year": 2026,
     }
     enrichments = {work["citation_key"]: {"abstract": raw}}
     original = copy.deepcopy(enrichments)
@@ -95,7 +108,9 @@ def test_work_search_prose_preserves_literal_math_and_source(raw, expected):
 
 
 @pytest.fixture
-def isolated_outputs(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> dict[str, Path]:
+def isolated_outputs(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> dict[str, Path]:
     """Redirect every index surface into tmp_path and make the clock countable."""
 
     paths = {
@@ -114,12 +129,8 @@ def isolated_outputs(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> dict[st
         lambda item_type: paths[str(item_type)],
     )
 
-    stamps = iter(
-        f"2026-09-07T00:00:{second:02d}Z" for second in range(60)
-    )
-    monkeypatch.setattr(
-        build_search_index, "generated_timestamp", lambda: next(stamps)
-    )
+    stamps = iter(f"2026-09-07T00:00:{second:02d}Z" for second in range(60))
+    monkeypatch.setattr(build_search_index, "generated_timestamp", lambda: next(stamps))
     return paths
 
 
@@ -178,12 +189,29 @@ def test_progressive_split_preserves_every_full_text_field(monkeypatch):
         "count": 4,
         "items": [
             {"id": "work:1", "type": "work", "title": "Paper", "content": "work text"},
-            {"id": "video:1", "type": "video", "title": "Talk", "content": "transcript"},
-            {"id": "page:1", "type": "page", "title": "Page", "content": "body-only phrase"},
-            {"id": "software:1", "type": "software", "title": "Code", "content": "repository details"},
+            {
+                "id": "video:1",
+                "type": "video",
+                "title": "Talk",
+                "content": "transcript",
+            },
+            {
+                "id": "page:1",
+                "type": "page",
+                "title": "Page",
+                "content": "body-only phrase",
+            },
+            {
+                "id": "software:1",
+                "type": "software",
+                "title": "Code",
+                "content": "repository details",
+            },
         ],
     }
-    monkeypatch.setattr(build_search_index, "render", lambda stamp=None: json.dumps(source))
+    monkeypatch.setattr(
+        build_search_index, "render", lambda stamp=None: json.dumps(source)
+    )
     outputs = build_search_index.render_split(source["generated_at"])
     core = json.loads(outputs[build_search_index.CORE_OUT])["items"]
     assert "content" not in core[0]
@@ -193,20 +221,42 @@ def test_progressive_split_preserves_every_full_text_field(monkeypatch):
     content_by_id = {
         item["id"]: item["content"]
         for item_type in ("work", "video")
-        for item in json.loads(outputs[build_search_index.content_segment_path(item_type)])["items"]
+        for item in json.loads(
+            outputs[build_search_index.content_segment_path(item_type)]
+        )["items"]
     }
-    restored = [dict(item, content=content_by_id[item["id"]]) if item["id"] in content_by_id else item for item in core]
+    restored = [
+        dict(item, content=content_by_id[item["id"]])
+        if item["id"] in content_by_id
+        else item
+        for item in core
+    ]
     assert restored == source["items"]
 
 
 def test_bootstrap_preserves_first_browse_page_and_complete_type_counts(monkeypatch):
     items = [
-        {"id": f"work:{i}", "type": "work", "title": f"Paper {i}", "content": f"text {i}", "extra": i}
+        {
+            "id": f"work:{i}",
+            "type": "work",
+            "title": f"Paper {i}",
+            "content": f"text {i}",
+            "extra": i,
+        }
         for i in range(45)
-    ] + [{"id": "page:1", "type": "page", "title": "Page", "content": "page-only phrase"}]
-    source = {"generated_at": "2026-10-02T00:00:00Z", "source_files": [], "count": len(items), "items": items}
+    ] + [
+        {"id": "page:1", "type": "page", "title": "Page", "content": "page-only phrase"}
+    ]
+    source = {
+        "generated_at": "2026-10-02T00:00:00Z",
+        "source_files": [],
+        "count": len(items),
+        "items": items,
+    }
     original = copy.deepcopy(source)
-    monkeypatch.setattr(build_search_index, "render", lambda stamp=None: json.dumps(source))
+    monkeypatch.setattr(
+        build_search_index, "render", lambda stamp=None: json.dumps(source)
+    )
 
     outputs = build_search_index.render_split(source["generated_at"])
     core = json.loads(outputs[build_search_index.CORE_OUT])

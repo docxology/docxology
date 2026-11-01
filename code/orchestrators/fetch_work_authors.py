@@ -63,7 +63,9 @@ OUTPUT = REPO_ROOT / "data" / "work-authors.json"
 BIBLIOGRAPHY = REPO_ROOT / "pages" / "BIBLIOGRAPHY.md"
 
 CONTACT = "danielarifriedman@gmail.com"
-USER_AGENT = f"docxology-bibliography/1.0 (https://danielarifriedman.com/; mailto:{CONTACT})"
+USER_AGENT = (
+    f"docxology-bibliography/1.0 (https://danielarifriedman.com/; mailto:{CONTACT})"
+)
 
 # A resolved record must look like the catalogued work before its authors are
 # trusted. Titles legitimately differ in punctuation, casing, subtitle handling
@@ -143,7 +145,9 @@ def title_similarity(catalogued: str, resolved: str) -> float:
     catalogued_tokens = _significant_tokens(left)
     if not catalogued_tokens:
         return ratio
-    covered = len(catalogued_tokens & _significant_tokens(right)) / len(catalogued_tokens)
+    covered = len(catalogued_tokens & _significant_tokens(right)) / len(
+        catalogued_tokens
+    )
     return max(ratio, covered)
 
 
@@ -234,7 +238,10 @@ def fetch_datacite(doi: str) -> dict | None:
             record["orcid"] = orcid
         authors.append(record)
     titles = attributes.get("titles") or []
-    return {"title": (titles[0] or {}).get("title", "") if titles else "", "authors": authors}
+    return {
+        "title": (titles[0] or {}).get("title", "") if titles else "",
+        "authors": authors,
+    }
 
 
 def resolve(doi: str, catalogued_title: str) -> dict:
@@ -290,7 +297,9 @@ def normalise_person(author: dict) -> tuple[str, str]:
     given = (author.get("given") or "").strip()
     if not given:
         orcid = str(author.get("orcid") or "").strip().rstrip("/").split("/")[-1]
-        family, given = AUDITED_DISPLAY_NAME_ALIASES.get((family, orcid), (family, given))
+        family, given = AUDITED_DISPLAY_NAME_ALIASES.get(
+            (family, orcid), (family, given)
+        )
     return OWNER_NAME_CORRECTIONS.get((family, given), (family, given))
 
 
@@ -331,7 +340,10 @@ def format_authors(authors: list[dict]) -> str:
 def apply_to_bibliography() -> int:
     """Write the Authors column into pages/BIBLIOGRAPHY.md from verified data."""
     if not OUTPUT.is_file():
-        print(f"missing {OUTPUT.relative_to(REPO_ROOT)}; run without --apply first", file=sys.stderr)
+        print(
+            f"missing {OUTPUT.relative_to(REPO_ROOT)}; run without --apply first",
+            file=sys.stderr,
+        )
         return 1
     payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
     evidence_errors = document_evidence_errors(payload)
@@ -378,15 +390,24 @@ def apply_to_bibliography() -> int:
         lines[index] = "|" + "|".join(cells) + "|\n"
 
     BIBLIOGRAPHY.write_text("".join(lines), encoding="utf-8")
-    print(f"wrote Authors column for {written} works into {BIBLIOGRAPHY.relative_to(REPO_ROOT)}")
+    print(
+        f"wrote Authors column for {written} works into {BIBLIOGRAPHY.relative_to(REPO_ROOT)}"
+    )
     unresolved = len(payload["works"]) - written
     if unresolved:
-        print(f"  {unresolved} works left as '—' (no DOI, unresolved DOI, or no authors published)")
+        print(
+            f"  {unresolved} works left as '—' (no DOI, unresolved DOI, or no authors published)"
+        )
     return 0
 
 
 def _norm_evidence(text: str) -> str:
-    for ligature, plain in (("\ufb00", "ff"), ("\ufb01", "fi"), ("\ufb02", "fl"), ("\u00ad", "")):
+    for ligature, plain in (
+        ("\ufb00", "ff"),
+        ("\ufb01", "fi"),
+        ("\ufb02", "fl"),
+        ("\u00ad", ""),
+    ):
         text = text.replace(ligature, plain)
     return " ".join(text.split())
 
@@ -398,10 +419,15 @@ def document_evidence_errors(payload: dict) -> list[str]:
     human review that establishes whether the quote supports the author list.
     """
     errors = []
-    website_entries = [(key, entry) for key, entry in payload["works"].items()
-                       if entry.get("status") == "website_verified"]
+    website_entries = [
+        (key, entry)
+        for key, entry in payload["works"].items()
+        if entry.get("status") == "website_verified"
+    ]
     if website_entries:
-        by_key = {citation_key(row): row for row in iter_bibliography_rows(BIBLIOGRAPHY)}
+        by_key = {
+            citation_key(row): row for row in iter_bibliography_rows(BIBLIOGRAPHY)
+        }
         for key, entry in website_entries:
             row = by_key.get(key)
             source_name = str(entry.get("source") or "")
@@ -409,31 +435,58 @@ def document_evidence_errors(payload: dict) -> list[str]:
             if not source.is_relative_to((REPO_ROOT / "reports").resolve()):
                 errors.append(f"{key}: website evidence must remain in reports/")
                 continue
-            record = json.loads(source.read_text(encoding="utf-8")).get(key, {}) if source.is_file() else {}
-            if (row is None or row.num != entry.get("num") or row.num != record.get("num")
-                    or row.title != entry.get("title") or row.title != record.get("title")
-                    or entry.get("doi") or doi_from_url(canonical_link_url(row.link_cell, row.venue))
-                    or record.get("source_url") != canonical_link_url(row.link_cell, row.venue)
-                    or not record.get("evidence") or entry.get("evidence") != record.get("evidence")
-                    or not entry.get("authors") or entry.get("authors") != record.get("authors")
-                    or not record.get("observed_at")):
-                errors.append(f"{key}: website author evidence does not match the bibliography/source receipt")
-    entries = [(key, entry) for key, entry in payload["works"].items()
-               if entry.get("status") == "document_verified"]
+            record = (
+                json.loads(source.read_text(encoding="utf-8")).get(key, {})
+                if source.is_file()
+                else {}
+            )
+            if (
+                row is None
+                or row.num != entry.get("num")
+                or row.num != record.get("num")
+                or row.title != entry.get("title")
+                or row.title != record.get("title")
+                or entry.get("doi")
+                or doi_from_url(canonical_link_url(row.link_cell, row.venue))
+                or record.get("source_url")
+                != canonical_link_url(row.link_cell, row.venue)
+                or not record.get("evidence")
+                or entry.get("evidence") != record.get("evidence")
+                or not entry.get("authors")
+                or entry.get("authors") != record.get("authors")
+                or not record.get("observed_at")
+            ):
+                errors.append(
+                    f"{key}: website author evidence does not match the bibliography/source receipt"
+                )
+    entries = [
+        (key, entry)
+        for key, entry in payload["works"].items()
+        if entry.get("status") == "document_verified"
+    ]
     if not entries:
         return errors
     try:
-        registry = load_registry(REPO_ROOT / "data/work-identifiers.json", repo_root=REPO_ROOT)
-        by_key = {citation_key(row, registry=registry): row for row in iter_bibliography_rows(BIBLIOGRAPHY)}
+        registry = load_registry(
+            REPO_ROOT / "data/work-identifiers.json", repo_root=REPO_ROOT
+        )
+        by_key = {
+            citation_key(row, registry=registry): row
+            for row in iter_bibliography_rows(BIBLIOGRAPHY)
+        }
     except (OSError, ValueError) as exc:
         return [f"document_verified validation needs a readable bibliography: {exc}"]
     root = REPO_ROOT.resolve()
     for key, entry in entries:
         row = by_key.get(key)
         if row is None or entry.get("num") != row.num or not row.folder:
-            errors.append(f"{key}: must match a bibliography work with a paper folder and the same num")
+            errors.append(
+                f"{key}: must match a bibliography work with a paper folder and the same num"
+            )
             continue
-        if entry.get("doi") or doi_from_url(canonical_link_url(row.link_cell, row.venue)):
+        if entry.get("doi") or doi_from_url(
+            canonical_link_url(row.link_cell, row.venue)
+        ):
             errors.append(f"{key}: document_verified is only for works without a DOI")
             continue
         folder = root / "papers" / row.folder
@@ -443,18 +496,24 @@ def document_evidence_errors(payload: dict) -> list[str]:
         try:
             resolved_folder = folder.resolve(strict=True)
             resolved_source = source.resolve(strict=True)
-            contained = (not Path(source_name).is_absolute()
-                         and resolved_folder == folder
-                         and resolved_source.is_relative_to(resolved_folder))
-        except (OSError, RuntimeError):
+            contained = (
+                not Path(source_name).is_absolute()
+                and resolved_folder == folder
+                and resolved_source.is_relative_to(resolved_folder)
+            )
+        except OSError, RuntimeError:
             contained = False
         if not contained:
             errors.append(f"{key}: source must remain inside papers/{row.folder}/")
             continue
         if not entry.get("authors") or not evidence or not resolved_source.is_file():
-            errors.append(f"{key}: needs authors, evidence, and an existing source file")
+            errors.append(
+                f"{key}: needs authors, evidence, and an existing source file"
+            )
             continue
-        if evidence not in _norm_evidence(resolved_source.read_text(encoding="utf-8", errors="replace")):
+        if evidence not in _norm_evidence(
+            resolved_source.read_text(encoding="utf-8", errors="replace")
+        ):
             errors.append(f"{key}: evidence quote not found in {entry.get('source')}")
     return errors
 
@@ -471,22 +530,33 @@ def audit(payload: dict) -> int:
     evidence_errors = document_evidence_errors(payload)
     for error in evidence_errors:
         print(f"document evidence: {error}")
-    mismatches = [k for k, e in payload["works"].items() if e["status"] == "title_mismatch"]
+    mismatches = [
+        k for k, e in payload["works"].items() if e["status"] == "title_mismatch"
+    ]
     if mismatches:
         print("\ntitle mismatches needing a human DOI reconciliation:")
         for key in mismatches:
             entry = payload["works"][key]
-            print(f"  {key}\n    doi={entry.get('doi')} similarity={entry.get('title_similarity')}")
+            print(
+                f"  {key}\n    doi={entry.get('doi')} similarity={entry.get('title_similarity')}"
+            )
             print(f"    resolved: {entry.get('resolved_title', '')[:100]}")
     return 1 if mismatches or evidence_errors else 0
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     parser.add_argument("--only", help="resolve a single DOI (diagnostics)")
-    parser.add_argument("--check", action="store_true", help="audit the existing file; no network")
-    parser.add_argument("--apply", action="store_true",
-                        help="write the Authors column into pages/BIBLIOGRAPHY.md; no network")
+    parser.add_argument(
+        "--check", action="store_true", help="audit the existing file; no network"
+    )
+    parser.add_argument(
+        "--apply",
+        action="store_true",
+        help="write the Authors column into pages/BIBLIOGRAPHY.md; no network",
+    )
     args = parser.parse_args()
 
     if args.apply:
@@ -504,7 +574,11 @@ def main() -> int:
         if not target:
             print(f"no catalogued work with doi {args.only}", file=sys.stderr)
             return 1
-        print(json.dumps(resolve(args.only, target[0]["title"]), indent=2, ensure_ascii=False))
+        print(
+            json.dumps(
+                resolve(args.only, target[0]["title"]), indent=2, ensure_ascii=False
+            )
+        )
         return 0
 
     resolved: dict[str, dict] = {}
@@ -517,7 +591,11 @@ def main() -> int:
         print(f"[{index:3}/{len(with_doi)}] {record['status']:20} {doi}")
         time.sleep(REQUEST_PAUSE_SECONDS)
 
-    previous = json.loads(OUTPUT.read_text(encoding="utf-8"))["works"] if OUTPUT.is_file() else {}
+    previous = (
+        json.loads(OUTPUT.read_text(encoding="utf-8"))["works"]
+        if OUTPUT.is_file()
+        else {}
+    )
     for work in works:
         if (work.get("doi") or "").strip():
             continue
@@ -538,17 +616,25 @@ def main() -> int:
 
     payload = {
         "schema_version": "1.0",
-        "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+        "generated_at": datetime.now(timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z"),
         "generator": "code/orchestrators/fetch_work_authors.py",
         "policy": {
-            "sources": ["https://api.crossref.org/works/{doi}", "https://api.datacite.org/dois/{doi}"],
+            "sources": [
+                "https://api.crossref.org/works/{doi}",
+                "https://api.datacite.org/dois/{doi}",
+            ],
             "agency_lookup": "https://doi.org/doiRA/{doi}",
             "title_similarity_floor": TITLE_SIMILARITY_FLOOR,
             "note": "Authors are adopted only from a record whose title matches the catalogued title; never inferred.",
         },
         "works": dict(sorted(resolved.items(), key=lambda item: item[1]["num"])),
     }
-    OUTPUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    OUTPUT.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
     print(f"\nwrote {OUTPUT.relative_to(REPO_ROOT)}")
     return audit(payload)
 

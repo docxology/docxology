@@ -144,9 +144,13 @@ def test_content_lineage_rejects_a_capture_commit_that_is_not_an_ancestor(tmp_pa
     }
     # The landing commit is a descendant of the capture commit, so a receipt
     # recorded at the landing commit claiming the capture commit is forgery.
-    assert not _bind(repo, REPORT_PATH, expected=capture, source=landing, **lineage_kwargs)
+    assert not _bind(
+        repo, REPORT_PATH, expected=capture, source=landing, **lineage_kwargs
+    )
     # An unverifiable commit provides no lineage proof either.
-    assert not _bind(repo, REPORT_PATH, expected=landing, source="f" * 40, **lineage_kwargs)
+    assert not _bind(
+        repo, REPORT_PATH, expected=landing, source="f" * 40, **lineage_kwargs
+    )
 
 
 def test_content_lineage_rejects_drifted_receipt_bytes(tmp_path):
@@ -205,7 +209,9 @@ def test_strict_binding_mode_ignores_content_lineage_entirely(tmp_path):
     )
 
 
-def _write_external_links_report(repo: Path, *, source_commit: str, source_tree_sha: str) -> Path:
+def _write_external_links_report(
+    repo: Path, *, source_commit: str, source_tree_sha: str
+) -> Path:
     urls = sorted(expected_external_urls())
     path = repo / REPORT_PATH
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -229,18 +235,26 @@ def _write_external_links_report(repo: Path, *, source_commit: str, source_tree_
     return path
 
 
-def test_collect_release_evidence_default_is_strict_and_lineage_mode_clears_it(tmp_path):
+def test_collect_release_evidence_default_is_strict_and_lineage_mode_clears_it(
+    tmp_path,
+):
     repo, capture, landing = _fixture_repo(tmp_path)
     capture_tree = _git(repo, "rev-parse", f"{capture}^{{tree}}").strip()
-    _write_external_links_report(repo, source_commit=capture, source_tree_sha=capture_tree)
+    _write_external_links_report(
+        repo, source_commit=capture, source_tree_sha=capture_tree
+    )
 
-    default_errors = collect_release_evidence(repo, landing, max_age_days=30, now=SAME_DAY)[1]
+    default_errors = collect_release_evidence(
+        repo, landing, max_age_days=30, now=SAME_DAY
+    )[1]
     assert any(
-        f"external-link report source_commit {capture} != release commit {landing}" in error
+        f"external-link report source_commit {capture} != release commit {landing}"
+        in error
         for error in default_errors
     )
     assert any(
-        "external-link report source_tree_sha does not match the release commit" in error
+        "external-link report source_tree_sha does not match the release commit"
+        in error
         for error in default_errors
     )
 
@@ -251,8 +265,12 @@ def test_collect_release_evidence_default_is_strict_and_lineage_mode_clears_it(t
         now=SAME_DAY,
         binding_mode=BINDING_MODE_CONTENT_LINEAGE,
     )[1]
-    assert not any("external-link report source_commit" in error for error in lineage_errors)
-    assert not any("external-link report source_tree_sha" in error for error in lineage_errors)
+    assert not any(
+        "external-link report source_commit" in error for error in lineage_errors
+    )
+    assert not any(
+        "external-link report source_tree_sha" in error for error in lineage_errors
+    )
     # Other required families are still missing in this single-report fixture.
     assert any("missing browser smoke" in error for error in lineage_errors)
 
@@ -260,7 +278,9 @@ def test_collect_release_evidence_default_is_strict_and_lineage_mode_clears_it(t
 def test_attestation_layer_accepts_lineage_binding_and_fails_closed_on_drift(tmp_path):
     repo, capture, landing = _fixture_repo(tmp_path)
     capture_tree = _git(repo, "rev-parse", f"{capture}^{{tree}}").strip()
-    report = _write_external_links_report(repo, source_commit=capture, source_tree_sha=capture_tree)
+    report = _write_external_links_report(
+        repo, source_commit=capture, source_tree_sha=capture_tree
+    )
     attestation = deployment_attestation_path(repo, landing)
     attestation.parent.mkdir(parents=True, exist_ok=True)
     attestation.write_text(
@@ -292,14 +312,19 @@ def test_attestation_layer_accepts_lineage_binding_and_fails_closed_on_drift(tmp
 
     # The strict default (the validate_repo --release signature) still rejects
     # the intact ancestor-bound attestation.
-    strict_errors = validate_attestation(repo, attestation, landing, max_age_days=30, now=SAME_DAY)
+    strict_errors = validate_attestation(
+        repo, attestation, landing, max_age_days=30, now=SAME_DAY
+    )
     assert any("not bound to release commit" in error for error in strict_errors)
 
     # Content-lineage accepts the same intact attestation; other families are
     # still missing from this single-entry fixture.
     lineage_errors = validate_attestation(repo, attestation, landing, **lineage_kwargs)
     assert not any("not bound to release commit" in error for error in lineage_errors)
-    assert any("deployment attestation lacks browser smoke" in error for error in lineage_errors)
+    assert any(
+        "deployment attestation lacks browser smoke" in error
+        for error in lineage_errors
+    )
 
     # Byte drift after attestation voids the content-identity condition.
     original = report.read_bytes()
@@ -366,7 +391,11 @@ def test_review_provenance_may_name_only_the_content_bound_snapshot(tmp_path):
     # The provenance may not name a commit the accepted snapshot does not carry.
     forged = [
         EvidenceReceipt(
-            "public-source snapshot", SNAPSHOT_PATH, GENERATED, "9" * 40, snapshot_digest
+            "public-source snapshot",
+            SNAPSHOT_PATH,
+            GENERATED,
+            "9" * 40,
+            snapshot_digest,
         ),
         receipts[1],
     ]

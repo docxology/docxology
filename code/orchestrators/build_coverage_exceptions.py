@@ -18,8 +18,16 @@ from docxology_tools.report_paths import latest_source_report, stable_generated_
 
 WORKS = REPO_ROOT / "data" / "works.json"
 OUT = REPO_ROOT / "data" / "coverage-exceptions.json"
-REPORT_JSON = REPO_ROOT / "reports" / f"source_coverage_{datetime.now(timezone.utc).date().isoformat()}.json"
-REPORT_MD = REPO_ROOT / "reports" / f"source_coverage_{datetime.now(timezone.utc).date().isoformat()}.md"
+REPORT_JSON = (
+    REPO_ROOT
+    / "reports"
+    / f"source_coverage_{datetime.now(timezone.utc).date().isoformat()}.json"
+)
+REPORT_MD = (
+    REPO_ROOT
+    / "reports"
+    / f"source_coverage_{datetime.now(timezone.utc).date().isoformat()}.md"
+)
 
 
 # Explicit reviewed overrides: citation_keys recognized as legitimate historical gaps
@@ -51,7 +59,9 @@ def build_payload() -> dict:
             reasons.append("non_paper_record")
         if reasons:
             key = work.get("citation_key")
-            is_legit = ("non_paper_record" in reasons) or (key in REVIEWED_LEGITIMATE_GAPS)
+            is_legit = ("non_paper_record" in reasons) or (
+                key in REVIEWED_LEGITIMATE_GAPS
+            )
             exceptions.append(
                 {
                     "num": work.get("num"),
@@ -63,12 +73,22 @@ def build_payload() -> dict:
                     "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid.",
                 }
             )
-    summary = {reason: sum(reason in row["reasons"] for row in exceptions) for reason in (
-        "no_paper_folder", "no_full_text", "no_doi", "no_canonical_url", "non_paper_record"
-    )}
+    summary = {
+        reason: sum(reason in row["reasons"] for row in exceptions)
+        for reason in (
+            "no_paper_folder",
+            "no_full_text",
+            "no_doi",
+            "no_canonical_url",
+            "non_paper_record",
+        )
+    }
     return {
         "schema_version": "1.0",
-        "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+        "generated_at": datetime.now(timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z"),
         "source": "data/works.json",
         "summary": summary,
         "exceptions": exceptions,
@@ -87,9 +107,19 @@ def render_report(payload: dict) -> str:
         "",
     ]
     lines.extend(f"- {key}: `{value}`" for key, value in payload["summary"].items())
-    lines.extend(["", "## Exceptions", "", "| Work | Type | Reasons | Review status |", "| --- | --- | --- | --- |"])
+    lines.extend(
+        [
+            "",
+            "## Exceptions",
+            "",
+            "| Work | Type | Reasons | Review status |",
+            "| --- | --- | --- | --- |",
+        ]
+    )
     for row in payload["exceptions"]:
-        lines.append(f"| {row['citation_key']} | {row['type']} | {', '.join(row['reasons'])} | {row['review_status']} |")
+        lines.append(
+            f"| {row['citation_key']} | {row['type']} | {', '.join(row['reasons'])} | {row['review_status']} |"
+        )
     lines.append("")
     return "\n".join(lines)
 
@@ -110,7 +140,11 @@ def preserve_timestamp_when_unchanged(payload: dict) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if the generated coverage outputs are stale")
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Fail if the generated coverage outputs are stale",
+    )
     args = parser.parse_args()
     payload = build_payload()
     payload = preserve_timestamp_when_unchanged(payload)
@@ -138,7 +172,9 @@ def main() -> None:
     OUT.write_text(json_text, encoding="utf-8")
     REPORT_JSON.write_text(json_text, encoding="utf-8")
     REPORT_MD.write_text(markdown, encoding="utf-8")
-    print(f"wrote {OUT.relative_to(REPO_ROOT)}, {REPORT_JSON.relative_to(REPO_ROOT)}, and {REPORT_MD.relative_to(REPO_ROOT)}")
+    print(
+        f"wrote {OUT.relative_to(REPO_ROOT)}, {REPORT_JSON.relative_to(REPO_ROOT)}, and {REPORT_MD.relative_to(REPO_ROOT)}"
+    )
 
 
 if __name__ == "__main__":

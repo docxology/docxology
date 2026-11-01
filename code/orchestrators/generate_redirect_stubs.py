@@ -17,7 +17,11 @@ from docxology_tools.generated_outputs import (  # noqa: E402
     safe_generated_output_path,
     write_generated_output_text,
 )
-from docxology_tools.redirect_stubs import collect_redirect_errors, declared_stubs, render_stub  # noqa: E402
+from docxology_tools.redirect_stubs import (  # noqa: E402
+    collect_redirect_errors,
+    declared_stubs,
+    render_stub,
+)
 
 
 def apply(*, repo_root: Path = REPO_ROOT) -> None:
@@ -43,15 +47,24 @@ def check() -> None:
     """Fail closed on any missing, undeclared, or non-deterministic redirect."""
     errors = collect_redirect_errors(REPO_ROOT)
     if errors:
-        raise SystemExit("Redirect stub validation failed:\n" + "\n".join(f"  - {error}" for error in errors))
+        raise SystemExit(
+            "Redirect stub validation failed:\n"
+            + "\n".join(f"  - {error}" for error in errors)
+        )
     print(f"checked {len(declared_stubs())} redirect stubs")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     mode = parser.add_mutually_exclusive_group(required=True)
-    mode.add_argument("--apply", action="store_true", help="Write centrally rendered redirect stubs")
-    mode.add_argument("--check", action="store_true", help="Fail if any redirect stub is stale or undeclared")
+    mode.add_argument(
+        "--apply", action="store_true", help="Write centrally rendered redirect stubs"
+    )
+    mode.add_argument(
+        "--check",
+        action="store_true",
+        help="Fail if any redirect stub is stale or undeclared",
+    )
     args = parser.parse_args()
     if args.apply:
         apply()

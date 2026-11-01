@@ -22,7 +22,9 @@ def latest_growth_report(repo_root: Path) -> Path:
     """Return the newest dated pages_artifact_growth report, or raise."""
     candidates = sorted(glob.glob(str(repo_root / REPORT_GLOB)))
     if not candidates:
-        raise ArtifactBudgetError(f"no artifact growth reports found matching {REPORT_GLOB}")
+        raise ArtifactBudgetError(
+            f"no artifact growth reports found matching {REPORT_GLOB}"
+        )
     return Path(candidates[-1])
 
 
@@ -31,13 +33,19 @@ def artifact_mib_from_report(path: Path) -> float:
     payload = json.loads(path.read_text(encoding="utf-8"))
     mib = payload.get("artifact_mib")
     if isinstance(mib, bool) or not isinstance(mib, (int, float)):
-        raise ArtifactBudgetError(f"{path}: 'artifact_mib' must be a finite nonnegative number")
+        raise ArtifactBudgetError(
+            f"{path}: 'artifact_mib' must be a finite nonnegative number"
+        )
     try:
         measured = float(mib)
     except OverflowError as exc:
-        raise ArtifactBudgetError(f"{path}: 'artifact_mib' is outside the supported range") from exc
+        raise ArtifactBudgetError(
+            f"{path}: 'artifact_mib' is outside the supported range"
+        ) from exc
     if not math.isfinite(measured) or measured < 0:
-        raise ArtifactBudgetError(f"{path}: 'artifact_mib' must be a finite nonnegative number")
+        raise ArtifactBudgetError(
+            f"{path}: 'artifact_mib' must be a finite nonnegative number"
+        )
     return measured
 
 

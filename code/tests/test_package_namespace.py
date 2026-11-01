@@ -15,8 +15,12 @@ sys.path.append(str(SRC))
 import docxology_tools  # noqa: E402
 
 NEW_MODULES = (
-    "art_collections", "artwork_pages", "content_audit", "content_citations",
-    "pillar_content", "research_connections",
+    "art_collections",
+    "artwork_pages",
+    "content_audit",
+    "content_citations",
+    "pillar_content",
+    "research_connections",
 )
 
 
@@ -42,8 +46,11 @@ assert getattr(package, name) is flat
 if name == 'content_audit':
     assert isinstance(flat.ContentPage('<main></main>'), dotted.ContentPage)
 """
-    subprocess.run([sys.executable, "-c", script, module_name, first], check=True,
-                   env={**os.environ, "PYTHONPATH": str(SRC)})
+    subprocess.run(
+        [sys.executable, "-c", script, module_name, first],
+        check=True,
+        env={**os.environ, "PYTHONPATH": str(SRC)},
+    )
 
 
 def test_package_import_remains_lazy_and_needs_no_optional_library():
@@ -52,8 +59,11 @@ import sys, docxology_tools
 assert not (set(docxology_tools.MODULES) & sys.modules.keys())
 assert not ({'PIL', 'reportlab', 'playwright'} & sys.modules.keys())
 """
-    subprocess.run([sys.executable, "-c", script], check=True,
-                   env={**os.environ, "PYTHONPATH": str(SRC)})
+    subprocess.run(
+        [sys.executable, "-c", script],
+        check=True,
+        env={**os.environ, "PYTHONPATH": str(SRC)},
+    )
 
 
 @pytest.mark.parametrize("first", ["flat", "dotted"])
@@ -79,5 +89,9 @@ else:
     raise AssertionError('cross-form exception was not caught')
 assert flat is dotted
 """
-    subprocess.run([sys.executable, "-c", script, first], cwd=tmp_path, check=True,
-                   env={**os.environ, "PYTHONPATH": str(tmp_path)})
+    subprocess.run(
+        [sys.executable, "-c", script, first],
+        cwd=tmp_path,
+        check=True,
+        env={**os.environ, "PYTHONPATH": str(tmp_path)},
+    )

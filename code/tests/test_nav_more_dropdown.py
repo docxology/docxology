@@ -16,22 +16,33 @@ pytestmark = pytest.mark.browser
 
 def test_nav_more_closes_on_outside_click_and_escape(tmp_path: Path) -> None:
     from playwright.sync_api import sync_playwright
+
     base_url, httpd = serve_copy(tmp_path)
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
-            page = browser.new_context(viewport={"width": 1280, "height": 900}).new_page()
+            page = browser.new_context(
+                viewport={"width": 1280, "height": 900}
+            ).new_page()
             for path in ("index.html", "publications.html"):
                 page.goto(f"{base_url}/{path}", wait_until="load")
                 more = page.locator("details.nav-more")
-                assert more.count() == 1, f"{path}: expected the More disclosure to exercise"
+                assert more.count() == 1, (
+                    f"{path}: expected the More disclosure to exercise"
+                )
                 more.first.click()
-                assert more.first.get_attribute("open") is not None, f"{path}: dropdown did not open"
+                assert more.first.get_attribute("open") is not None, (
+                    f"{path}: dropdown did not open"
+                )
                 page.mouse.click(10, 500)
-                assert more.first.get_attribute("open") is None, f"{path}: outside click did not close dropdown"
+                assert more.first.get_attribute("open") is None, (
+                    f"{path}: outside click did not close dropdown"
+                )
                 more.first.click()
                 page.keyboard.press("Escape")
-                assert more.first.get_attribute("open") is None, f"{path}: Escape did not close dropdown"
+                assert more.first.get_attribute("open") is None, (
+                    f"{path}: Escape did not close dropdown"
+                )
             browser.close()
     finally:
         stop_server(httpd)

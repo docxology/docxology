@@ -37,7 +37,11 @@ from docxology_tools.site_nav import (  # noqa: E402
 REPO_INVENTORY_SCRIPT = '<script src="/js/repo-inventory.js?v=20260813" defer></script>'
 
 _PRIMARY_BREADCRUMB = [("Home", ""), ("Repositories", "repositories.html")]
-_FORKS_BREADCRUMB = [("Home", ""), ("Repositories", "repositories.html"), ("Forks", "repositories-forks.html")]
+_FORKS_BREADCRUMB = [
+    ("Home", ""),
+    ("Repositories", "repositories.html"),
+    ("Forks", "repositories-forks.html"),
+]
 
 
 def _webpage_ld(path: str, name: str, description: str) -> dict[str, Any]:
@@ -58,6 +62,8 @@ def _head_extra(breadcrumb: list[tuple[str, str]], webpage_ld: dict[str, Any]) -
         f'    <script type="application/ld+json">\n{json.dumps(webpage_ld, indent=4, ensure_ascii=False)}\n    </script>\n'
         f"{breadcrumb_jsonld_script(breadcrumb)}\n"
     )
+
+
 OWNERS = ("docxology", "ActiveInferenceInstitute")
 USER_AGENT = "docxology-github-inventory/1.0 (+https://danielarifriedman.com/)"
 BASELINE_PATH = REPO_ROOT / "data" / "github-repositories-baseline.json"
@@ -112,13 +118,17 @@ def curated_keys() -> set[str]:
     return keys
 
 
-def normalize_repo(repo: dict[str, Any], curated: set[str], generated_at: str) -> dict[str, Any]:
+def normalize_repo(
+    repo: dict[str, Any], curated: set[str], generated_at: str
+) -> dict[str, Any]:
     owner = repo.get("owner", {}).get("login", "")
     name = repo.get("name", "")
     key = f"{owner.lower()}/{name.lower()}"
     pushed_at = repo.get("pushed_at") or ""
     updated_at = repo.get("updated_at") or ""
-    recent_since = dt.datetime.fromisoformat(generated_at.replace("Z", "+00:00")) - dt.timedelta(days=90)
+    recent_since = dt.datetime.fromisoformat(
+        generated_at.replace("Z", "+00:00")
+    ) - dt.timedelta(days=90)
     try:
         updated_dt = dt.datetime.fromisoformat(updated_at.replace("Z", "+00:00"))
         recently_updated = updated_dt >= recent_since
@@ -165,7 +175,9 @@ def count_repositories(repositories: list[dict[str, Any]]) -> dict[str, int]:
     return {
         "total": len(repositories),
         "docxology": sum(1 for repo in repositories if repo["owner"] == "docxology"),
-        "ActiveInferenceInstitute": sum(1 for repo in repositories if repo["owner"] == "ActiveInferenceInstitute"),
+        "ActiveInferenceInstitute": sum(
+            1 for repo in repositories if repo["owner"] == "ActiveInferenceInstitute"
+        ),
         "curated": sum(1 for repo in repositories if repo["curated"]),
         "uncataloged": sum(1 for repo in repositories if not repo["curated"]),
         "forks": sum(1 for repo in repositories if repo["fork"]),
@@ -177,7 +189,12 @@ def count_repositories(repositories: list[dict[str, Any]]) -> dict[str, int]:
 
 
 def build_payload() -> dict[str, Any]:
-    generated_at = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    generated_at = (
+        dt.datetime.now(dt.timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z")
+    )
     curated = curated_keys()
     profiles = {}
     repositories = []
@@ -190,21 +207,31 @@ def build_payload() -> dict[str, Any]:
             warnings.append(
                 f"{owner} profile public_repos={profile['public_repos']} but fetched {len(repos)} repositories"
             )
-        repositories.extend(normalize_repo(repo, curated, generated_at) for repo in repos)
+        repositories.extend(
+            normalize_repo(repo, curated, generated_at) for repo in repos
+        )
     repositories.sort(key=lambda repo: (repo["owner"].lower(), repo["name"].lower()))
     primary_repositories = [repo for repo in repositories if not repo["fork"]]
     fork_repositories = [repo for repo in repositories if repo["fork"]]
     counts = count_repositories(repositories)
     counts["primary_total"] = len(primary_repositories)
-    counts["primary_docxology"] = sum(1 for repo in primary_repositories if repo["owner"] == "docxology")
-    counts["primary_ActiveInferenceInstitute"] = sum(
-        1 for repo in primary_repositories if repo["owner"] == "ActiveInferenceInstitute"
+    counts["primary_docxology"] = sum(
+        1 for repo in primary_repositories if repo["owner"] == "docxology"
     )
-    counts["fork_docxology"] = sum(1 for repo in fork_repositories if repo["owner"] == "docxology")
+    counts["primary_ActiveInferenceInstitute"] = sum(
+        1
+        for repo in primary_repositories
+        if repo["owner"] == "ActiveInferenceInstitute"
+    )
+    counts["fork_docxology"] = sum(
+        1 for repo in fork_repositories if repo["owner"] == "docxology"
+    )
     counts["fork_ActiveInferenceInstitute"] = sum(
         1 for repo in fork_repositories if repo["owner"] == "ActiveInferenceInstitute"
     )
-    languages = sorted({repo["language"].strip().lower() for repo in repositories if repo["language"]})
+    languages = sorted(
+        {repo["language"].strip().lower() for repo in repositories if repo["language"]}
+    )
     return {
         "generated_at": generated_at,
         "source": "GitHub REST API /users/{owner}/repos",
@@ -254,19 +281,21 @@ def render_rows(repositories: list[dict[str, Any]]) -> str:
             ]
         ).lower()
         rows.append(
-            f"""                    <tr data-owner="{h(repo['owner'])}" data-curated="{str(repo['curated']).lower()}" data-fork="{str(repo['fork']).lower()}" data-archived="{str(repo['archived']).lower()}" data-recent="{str(repo['recently_updated']).lower()}" data-visibility="{h('private' if repo['private'] else 'public')}" data-language="{h((repo['language'] or '').lower())}" data-search="{h(searchable)}">
-                        <td><a href="{h(repo['html_url'])}">{h(repo['full_name'])}</a><span>{h(description)}</span></td>
-                        <td>{h(repo['language'] or '—')}</td>
-                        <td>{h(repo['stars'])}</td>
-                        <td>{h(repo['forks'])}</td>
-                        <td>{h(repo['updated_at'][:10])}</td>
+            f"""                    <tr data-owner="{h(repo["owner"])}" data-curated="{str(repo["curated"]).lower()}" data-fork="{str(repo["fork"]).lower()}" data-archived="{str(repo["archived"]).lower()}" data-recent="{str(repo["recently_updated"]).lower()}" data-visibility="{h("private" if repo["private"] else "public")}" data-language="{h((repo["language"] or "").lower())}" data-search="{h(searchable)}">
+                        <td><a href="{h(repo["html_url"])}">{h(repo["full_name"])}</a><span>{h(description)}</span></td>
+                        <td>{h(repo["language"] or "—")}</td>
+                        <td>{h(repo["stars"])}</td>
+                        <td>{h(repo["forks"])}</td>
+                        <td>{h(repo["updated_at"][:10])}</td>
                         <td>{h(flag_text)}</td>
                     </tr>"""
         )
     return "\n".join(rows)
 
 
-def render_html(payload: dict[str, Any], *, forks: bool = False, existing_html: str | None = None) -> str:
+def render_html(
+    payload: dict[str, Any], *, forks: bool = False, existing_html: str | None = None
+) -> str:
     footer_stamp = footer_build_stamp_html()
     all_counts = payload["counts"]
     repositories = [repo for repo in payload["repositories"] if repo["fork"] is forks]
@@ -285,7 +314,11 @@ def render_html(payload: dict[str, Any], *, forks: bool = False, existing_html: 
         if forks
         else f"Search {counts['total']} primary public GitHub repositories from docxology and AII, excluding forks."
     )
-    h1 = "Forked GitHub Repository Archive" if forks else "Primary GitHub Repository Inventory"
+    h1 = (
+        "Forked GitHub Repository Archive"
+        if forks
+        else "Primary GitHub Repository Inventory"
+    )
     sub = (
         "Forked repositories are separated from the primary software inventory so upstream-origin mirrors do not crowd the project list."
         if forks
@@ -301,7 +334,9 @@ def render_html(payload: dict[str, Any], *, forks: bool = False, existing_html: 
         if forks
         else '<a class="inventory-route-card" href="repositories-forks.html"><strong>Fork archive</strong><span>Forked repositories are indexed separately for provenance and upstream tracking.</span></a>'
     )
-    coverage_label = "Fork Repository Coverage" if forks else "Primary Repository Coverage"
+    coverage_label = (
+        "Fork Repository Coverage" if forks else "Primary Repository Coverage"
+    )
     coverage_blurb = (
         "Generated from the GitHub REST API; forks are intentionally split away from the primary repository list."
         if forks
@@ -312,7 +347,9 @@ def render_html(payload: dict[str, Any], *, forks: bool = False, existing_html: 
         if forks
         else f'<div><strong>{all_counts["forks"]}</strong><a href="repositories-forks.html">Forks archived separately</a></div>'
     )
-    search_heading = "Search and Filter Forks" if forks else "Search and Filter Primary Repositories"
+    search_heading = (
+        "Search and Filter Forks" if forks else "Search and Filter Primary Repositories"
+    )
     search_blurb = (
         "Filter forked repositories by owner, curation status, language, recency, and text across names, topics, and descriptions."
         if forks
@@ -321,10 +358,16 @@ def render_html(payload: dict[str, Any], *, forks: bool = False, existing_html: 
     webpage_ld = _webpage_ld(path, page_title, page_description)
     warning = ""
     if payload["warnings"]:
-        warning = f"<p class=\"note\">Warnings: {h('; '.join(payload['warnings']))}</p>"
+        warning = f'<p class="note">Warnings: {h("; ".join(payload["warnings"]))}</p>'
     language_options = "\n".join(
         f'                <option value="{h(language)}">{h(language)}</option>'
-        for language in sorted({repo["language"].strip().lower() for repo in repositories if repo["language"]})
+        for language in sorted(
+            {
+                repo["language"].strip().lower()
+                for repo in repositories
+                if repo["language"]
+            }
+        )
     )
     rendered = f"""<!DOCTYPE html>
 <html lang="en">
@@ -419,15 +462,15 @@ def render_html(payload: dict[str, Any], *, forks: bool = False, existing_html: 
                 <div class="section-divider"></div>
             </div>
             <div class="inventory-counts">
-                <div><strong>{counts['total']}</strong>{'Fork repos' if forks else 'Primary repos'}</div>
-                <div><strong>{counts['docxology']}</strong>docxology</div>
-                <div><strong>{counts['ActiveInferenceInstitute']}</strong>AII</div>
-                <div><strong>{counts['curated']}</strong>Curated in software catalog</div>
-                <div><strong>{counts['public']}</strong>Public visibility</div>
-                <div><strong>{counts['private']}</strong>Private visibility</div>
+                <div><strong>{counts["total"]}</strong>{"Fork repos" if forks else "Primary repos"}</div>
+                <div><strong>{counts["docxology"]}</strong>docxology</div>
+                <div><strong>{counts["ActiveInferenceInstitute"]}</strong>AII</div>
+                <div><strong>{counts["curated"]}</strong>Curated in software catalog</div>
+                <div><strong>{counts["public"]}</strong>Public visibility</div>
+                <div><strong>{counts["private"]}</strong>Private visibility</div>
                 {related_count_card}
-                <div><strong>{counts['archived']}</strong>Archived</div>
-                <div><strong>{counts['recently_updated']}</strong>Updated in 90 days</div>
+                <div><strong>{counts["archived"]}</strong>Archived</div>
+                <div><strong>{counts["recently_updated"]}</strong>Updated in 90 days</div>
             </div>
             {warning}
         </section>
@@ -462,7 +505,7 @@ def render_html(payload: dict[str, Any], *, forks: bool = False, existing_html: 
                     </tbody>
                 </table>
             </div>
-            <p class="note">Generated at {h(payload['generated_at'])}. Curated flags are derived from <a href="software.html">software.html</a> / <a href="pages/SOFTWARE.md">pages/SOFTWARE.md</a>.</p>
+            <p class="note">Generated at {h(payload["generated_at"])}. Curated flags are derived from <a href="software.html">software.html</a> / <a href="pages/SOFTWARE.md">pages/SOFTWARE.md</a>.</p>
         </section>
     </main>
     <footer role="contentinfo">
@@ -480,7 +523,9 @@ def render_html(payload: dict[str, Any], *, forks: bool = False, existing_html: 
 
 def write_outputs(payload: dict[str, Any]) -> None:
     JSON_OUT.parent.mkdir(parents=True, exist_ok=True)
-    JSON_OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    JSON_OUT.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
     write_cached_html_outputs(payload)
 
 
@@ -491,10 +536,20 @@ def write_cached_html_outputs(
     forks_html_out: Path = FORKS_HTML_OUT,
 ) -> None:
     """Render deterministic inventory pages from an already-refreshed cache."""
-    existing_primary = primary_html_out.read_text(encoding="utf-8") if primary_html_out.exists() else None
-    existing_forks = forks_html_out.read_text(encoding="utf-8") if forks_html_out.exists() else None
-    primary_html_out.write_text(render_html(payload, existing_html=existing_primary), encoding="utf-8")
-    forks_html_out.write_text(render_html(payload, forks=True, existing_html=existing_forks), encoding="utf-8")
+    existing_primary = (
+        primary_html_out.read_text(encoding="utf-8")
+        if primary_html_out.exists()
+        else None
+    )
+    existing_forks = (
+        forks_html_out.read_text(encoding="utf-8") if forks_html_out.exists() else None
+    )
+    primary_html_out.write_text(
+        render_html(payload, existing_html=existing_primary), encoding="utf-8"
+    )
+    forks_html_out.write_text(
+        render_html(payload, forks=True, existing_html=existing_forks), encoding="utf-8"
+    )
 
 
 def load_cached_payload(json_out: Path = JSON_OUT) -> dict[str, Any]:
@@ -505,7 +560,9 @@ def load_cached_payload(json_out: Path = JSON_OUT) -> dict[str, Any]:
         payload = json.loads(json_out.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         raise SystemExit(f"Invalid GitHub inventory JSON cache: {exc}") from exc
-    if not isinstance(payload, dict) or not isinstance(payload.get("repositories"), list):
+    if not isinstance(payload, dict) or not isinstance(
+        payload.get("repositories"), list
+    ):
         raise SystemExit("GitHub inventory JSON cache must contain a repositories list")
     return payload
 
@@ -542,7 +599,11 @@ def check_outputs(
     forks_html_out: Path = FORKS_HTML_OUT,
     baseline_path: Path = BASELINE_PATH,
 ) -> None:
-    if not json_out.exists() or not primary_html_out.exists() or not forks_html_out.exists():
+    if (
+        not json_out.exists()
+        or not primary_html_out.exists()
+        or not forks_html_out.exists()
+    ):
         raise SystemExit("Missing GitHub inventory outputs")
     payload = load_cached_payload(json_out)
     if not payload.get("repositories"):
@@ -558,17 +619,30 @@ def check_outputs(
             + ", ".join(missing_identity)
         )
     counts = payload.get("counts", {})
-    if counts.get("docxology", 0) <= 0 or counts.get("ActiveInferenceInstitute", 0) <= 0:
+    if (
+        counts.get("docxology", 0) <= 0
+        or counts.get("ActiveInferenceInstitute", 0) <= 0
+    ):
         raise SystemExit("GitHub inventory is missing one of the required owners")
     if baseline_path.exists():
         baseline = json.loads(baseline_path.read_text(encoding="utf-8"))
         base_counts = baseline.get("counts", {})
-        for key in ["total", "docxology", "ActiveInferenceInstitute", "forks", "archived"]:
+        for key in [
+            "total",
+            "docxology",
+            "ActiveInferenceInstitute",
+            "forks",
+            "archived",
+        ]:
             delta = counts.get(key, 0) - base_counts.get(key, 0)
             if delta:
-                print(f"warning: github inventory count delta for {key}: {base_counts.get(key, 0)} -> {counts.get(key, 0)} ({delta:+})")
+                print(
+                    f"warning: github inventory count delta for {key}: {base_counts.get(key, 0)} -> {counts.get(key, 0)} ({delta:+})"
+                )
     all_counts = payload.get("counts", {})
-    primary_repos = [repo for repo in payload.get("repositories", []) if not repo.get("fork")]
+    primary_repos = [
+        repo for repo in payload.get("repositories", []) if not repo.get("fork")
+    ]
     fork_repos = [repo for repo in payload.get("repositories", []) if repo.get("fork")]
     primary_counts = count_repositories(primary_repos)
     fork_counts = count_repositories(fork_repos)
@@ -586,34 +660,60 @@ def check_outputs(
             "repositories-forks.html is stale relative to data/github-repositories.json; "
             "run render_github_inventory.py to rebuild deterministic pages"
         )
-    if "Primary GitHub Repository Inventory" not in html_text or "github-repositories.json" not in html_text:
+    if (
+        "Primary GitHub Repository Inventory" not in html_text
+        or "github-repositories.json" not in html_text
+    ):
         raise SystemExit("repositories.html missing expected inventory markers")
-    if "Forked GitHub Repository Archive" not in forks_html or "github-repositories.json" not in forks_html:
+    if (
+        "Forked GitHub Repository Archive" not in forks_html
+        or "github-repositories.json" not in forks_html
+    ):
         raise SystemExit("repositories-forks.html missing expected inventory markers")
     if 'data-fork="true"' in html_text:
         raise SystemExit("repositories.html contains fork rows")
     if fork_counts["total"] > 0 and 'data-fork="true"' not in forks_html:
         raise SystemExit("repositories-forks.html is missing fork rows")
-    for key in ["total", "docxology", "ActiveInferenceInstitute", "curated", "archived"]:
+    for key in [
+        "total",
+        "docxology",
+        "ActiveInferenceInstitute",
+        "curated",
+        "archived",
+    ]:
         if f"<strong>{primary_counts.get(key)}</strong>" not in html_text:
-            raise SystemExit(f"repositories.html rendered primary count is stale for {key}")
+            raise SystemExit(
+                f"repositories.html rendered primary count is stale for {key}"
+            )
         if f"<strong>{fork_counts.get(key)}</strong>" not in forks_html:
-            raise SystemExit(f"repositories-forks.html rendered fork count is stale for {key}")
+            raise SystemExit(
+                f"repositories-forks.html rendered fork count is stale for {key}"
+            )
     if f"<strong>{all_counts.get('forks')}</strong>" not in html_text:
         raise SystemExit("repositories.html missing fork archive count")
     if f"<strong>{all_counts.get('primary_total')}</strong>" not in forks_html:
         raise SystemExit("repositories-forks.html missing primary inventory count")
-    if "js/repo-inventory.js" not in html_text or "js/repo-inventory.js" not in forks_html:
+    if (
+        "js/repo-inventory.js" not in html_text
+        or "js/repo-inventory.js" not in forks_html
+    ):
         raise SystemExit("inventory HTML missing external repo-inventory.js (CSP)")
-    if "<script>\n        const rows = Array.from" in html_text or "<script>\n        const rows = Array.from" in forks_html:
-        raise SystemExit("inventory HTML still embeds inline filter script (blocked by CSP)")
+    if (
+        "<script>\n        const rows = Array.from" in html_text
+        or "<script>\n        const rows = Array.from" in forks_html
+    ):
+        raise SystemExit(
+            "inventory HTML still embeds inline filter script (blocked by CSP)"
+        )
     print("checked GitHub repository inventory")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     mode = parser.add_mutually_exclusive_group()
-    mode.add_argument("--check", action="store_true", help="Validate cached inventory outputs")
+    mode.add_argument(
+        "--check", action="store_true", help="Validate cached inventory outputs"
+    )
     mode.add_argument(
         "--render-cached",
         action="store_true",

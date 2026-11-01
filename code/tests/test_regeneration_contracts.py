@@ -25,7 +25,7 @@ def fixture_step(tmp_path):
     for relative, content in (
         ("data/source.txt", "before\n"),
         (".python-version", "3.15\n"),
-        ("pyproject.toml", "[project]\nrequires-python = \">=3.15\"\n"),
+        ("pyproject.toml", '[project]\nrequires-python = ">=3.15"\n'),
         ("uv.lock", "version = 1\n"),
         ("code/src/fixture.py", "# shared fixture\n"),
         ("code/orchestrators/root_contract_fixture.py", "# writer fixture\n"),
@@ -34,8 +34,12 @@ def fixture_step(tmp_path):
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(content, encoding="utf-8")
     return generation_plan.GenerationStep(
-        "fixture", "root_contract_fixture.py", (), ("--check",),
-        "Disposable writer", ("data/source.txt",),
+        "fixture",
+        "root_contract_fixture.py",
+        (),
+        ("--check",),
+        "Disposable writer",
+        ("data/source.txt",),
     )
 
 
@@ -49,17 +53,23 @@ def test_default_runner_and_cache_use_the_same_injected_root(tmp_path, fixture_s
         encoding="utf-8",
     )
     assert regenerate_all.run_regeneration(
-        repo_root=tmp_path, steps=(fixture_step,), emit=lambda _message: None,
+        repo_root=tmp_path,
+        steps=(fixture_step,),
+        emit=lambda _message: None,
     ) == (1, 0)
     assert (tmp_path / "output.txt").read_text() == "before\n"
     assert (tmp_path / "observed-root.txt").read_text() == str(tmp_path)
     assert generation_plan.load_regeneration_state(tmp_path)["fixture"]
     assert regenerate_all.run_regeneration(
-        repo_root=tmp_path, steps=(fixture_step,), emit=lambda _message: None,
+        repo_root=tmp_path,
+        steps=(fixture_step,),
+        emit=lambda _message: None,
     ) == (0, 1)
 
 
-def test_real_writer_input_change_cannot_cache_old_output_as_fresh(tmp_path, fixture_step):
+def test_real_writer_input_change_cannot_cache_old_output_as_fresh(
+    tmp_path, fixture_step
+):
     writer = tmp_path / "code/orchestrators/root_contract_fixture.py"
     writer.write_text(
         "from pathlib import Path\n"
@@ -71,7 +81,9 @@ def test_real_writer_input_change_cannot_cache_old_output_as_fresh(tmp_path, fix
     )
     messages = []
     assert regenerate_all.run_regeneration(
-        repo_root=tmp_path, steps=(fixture_step,), emit=messages.append,
+        repo_root=tmp_path,
+        steps=(fixture_step,),
+        emit=messages.append,
     ) == (1, 0)
     assert (tmp_path / "output.txt").read_text() == "before\n"
     assert "fixture" not in generation_plan.load_regeneration_state(tmp_path)
@@ -79,16 +91,21 @@ def test_real_writer_input_change_cannot_cache_old_output_as_fresh(tmp_path, fix
         "cache invalidated fixture: declared inputs changed during writer",
     ]
     assert regenerate_all.run_regeneration(
-        repo_root=tmp_path, steps=(fixture_step,), emit=messages.append,
+        repo_root=tmp_path,
+        steps=(fixture_step,),
+        emit=messages.append,
     ) == (1, 0)
     assert (tmp_path / "output.txt").read_text() == "after\n"
     assert regenerate_all.run_regeneration(
-        repo_root=tmp_path, steps=(fixture_step,), emit=messages.append,
+        repo_root=tmp_path,
+        steps=(fixture_step,),
+        emit=messages.append,
     ) == (0, 1)
 
 
 def test_failed_forced_writer_cannot_leave_partial_output_eligible_to_skip(
-    tmp_path, fixture_step,
+    tmp_path,
+    fixture_step,
 ):
     writer = tmp_path / "code/orchestrators/root_contract_fixture.py"
     writer.write_text(
@@ -100,7 +117,9 @@ def test_failed_forced_writer_cannot_leave_partial_output_eligible_to_skip(
         "Path('output.txt').write_text(Path('data/source.txt').read_text())\n",
         encoding="utf-8",
     )
-    options = dict(repo_root=tmp_path, steps=(fixture_step,), emit=lambda _message: None)
+    options = dict(
+        repo_root=tmp_path, steps=(fixture_step,), emit=lambda _message: None
+    )
     assert regenerate_all.run_regeneration(**options) == (1, 0)
     assert "fixture" in generation_plan.load_regeneration_state(tmp_path)
     (tmp_path / "fail-next").touch()
@@ -116,7 +135,9 @@ def test_failed_forced_writer_cannot_leave_partial_output_eligible_to_skip(
 
 @pytest.mark.parametrize("change", ["delete", "create"])
 def test_missing_inputs_at_either_writer_boundary_invalidate_cache(
-    tmp_path, fixture_step, change,
+    tmp_path,
+    fixture_step,
+    change,
 ):
     source = tmp_path / "data/source.txt"
     initial = generation_plan.step_input_fingerprint(fixture_step, tmp_path)
@@ -131,22 +152,28 @@ def test_missing_inputs_at_either_writer_boundary_invalidate_cache(
             source.write_text("after\n")
 
     assert regenerate_all.run_regeneration(
-        repo_root=tmp_path, steps=(fixture_step,), force=True, runner=runner,
+        repo_root=tmp_path,
+        steps=(fixture_step,),
+        force=True,
+        runner=runner,
         emit=lambda _message: None,
     ) == (1, 0)
     assert "fixture" not in generation_plan.load_regeneration_state(tmp_path)
 
 
-@pytest.mark.parametrize("payload", [
-    {"steps": {}},
-    {"schema_version": 2, "steps": {}},
-    {"schema_version": True, "steps": {}},
-    {"schema_version": 1.0, "steps": {}},
-    {"schema_version": 1, "steps": {"fixture": 123}},
-    {"schema_version": 1, "steps": {"fixture": None}},
-    {"schema_version": 1, "steps": {"fixture": "not-a-fingerprint"}},
-    {"schema_version": 1, "steps": {"": "a" * 64}},
-])
+@pytest.mark.parametrize(
+    "payload",
+    [
+        {"steps": {}},
+        {"schema_version": 2, "steps": {}},
+        {"schema_version": True, "steps": {}},
+        {"schema_version": 1.0, "steps": {}},
+        {"schema_version": 1, "steps": {"fixture": 123}},
+        {"schema_version": 1, "steps": {"fixture": None}},
+        {"schema_version": 1, "steps": {"fixture": "not-a-fingerprint"}},
+        {"schema_version": 1, "steps": {"": "a" * 64}},
+    ],
+)
 def test_unknown_or_malformed_cache_is_cold_state(tmp_path, payload):
     path = generation_plan.regeneration_state_path(tmp_path)
     path.parent.mkdir()
@@ -160,7 +187,9 @@ def test_valid_cache_round_trip_is_deterministic(tmp_path):
     path = generation_plan.regeneration_state_path(tmp_path)
     before = path.read_bytes()
     assert generation_plan.load_regeneration_state(tmp_path) == state
-    generation_plan.save_regeneration_state(dict(reversed(list(state.items()))), tmp_path)
+    generation_plan.save_regeneration_state(
+        dict(reversed(list(state.items()))), tmp_path
+    )
     assert path.read_bytes() == before
     assert list(path.parent.glob(".regeneration-state-*.tmp")) == []
 
@@ -180,7 +209,9 @@ def test_failed_atomic_cache_replace_preserves_previous_receipt(tmp_path, monkey
     assert list(path.parent.glob(".regeneration-state-*.tmp")) == []
 
 
-def test_input_vanishing_between_discovery_and_stat_is_not_cached(tmp_path, monkeypatch):
+def test_input_vanishing_between_discovery_and_stat_is_not_cached(
+    tmp_path, monkeypatch
+):
     source = tmp_path / "source.txt"
     source.write_text("fixture\n")
     original_stat = Path.stat
@@ -216,7 +247,8 @@ def process_driver(tmp_path, fixture_step):
     """Independent interpreters run the production driver in a disposable tree."""
     repository = Path(__file__).resolve().parents[2]
     for relative in (
-        "code/orchestrators/regenerate_all.py", "code/src/generation_plan.py",
+        "code/orchestrators/regenerate_all.py",
+        "code/src/generation_plan.py",
         "code/src/docxology_tools/__init__.py",
     ):
         destination = tmp_path / relative
@@ -278,29 +310,42 @@ def _process_environment(mode):
 def _wait_for_signal(path, process):
     deadline = time.monotonic() + 8
     while not path.exists():
-        assert process.poll() is None, "fixture driver exited before reaching its write boundary"
-        assert time.monotonic() < deadline, "fixture driver did not reach its bounded write boundary"
+        assert process.poll() is None, (
+            "fixture driver exited before reaching its write boundary"
+        )
+        assert time.monotonic() < deadline, (
+            "fixture driver did not reach its bounded write boundary"
+        )
         time.sleep(0.01)
 
 
 @pytest.mark.parametrize("mode", ["success", "failure"])
 @pytest.mark.parametrize("passes", [False, True])
 def test_independent_overlapping_run_rejected_before_writer_and_cache(
-    tmp_path, process_driver, mode, passes,
+    tmp_path,
+    process_driver,
+    mode,
+    passes,
 ):
     first = subprocess.Popen(
-        _process_command(process_driver, passes=passes), cwd=tmp_path,
-        env=_process_environment(mode), stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE, text=True,
+        _process_command(process_driver, passes=passes),
+        cwd=tmp_path,
+        env=_process_environment(mode),
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
     )
     try:
         _wait_for_signal(tmp_path / f"writer-started-{mode}", first)
         cache = generation_plan.regeneration_state_path(tmp_path)
         before = cache.read_bytes() if cache.exists() else None
         contender = subprocess.run(
-            _process_command(process_driver), cwd=tmp_path,
-            env=_process_environment("contender"), capture_output=True,
-            text=True, timeout=5,
+            _process_command(process_driver),
+            cwd=tmp_path,
+            env=_process_environment("contender"),
+            capture_output=True,
+            text=True,
+            timeout=5,
         )
         assert contender.returncode == 75
         assert "another regeneration is active" in contender.stderr
@@ -312,12 +357,17 @@ def test_independent_overlapping_run_rejected_before_writer_and_cache(
         (tmp_path / "release-writer").touch()
         stdout, stderr = first.communicate(timeout=8)
         assert first.returncode == (0 if mode == "success" else 1), (stdout, stderr)
-        assert ("fixture" in generation_plan.load_regeneration_state(tmp_path)) == (mode == "success")
+        assert ("fixture" in generation_plan.load_regeneration_state(tmp_path)) == (
+            mode == "success"
+        )
 
         recovery = subprocess.run(
-            _process_command(process_driver), cwd=tmp_path,
-            env=_process_environment("recovery"), capture_output=True,
-            text=True, timeout=5,
+            _process_command(process_driver),
+            cwd=tmp_path,
+            env=_process_environment("recovery"),
+            capture_output=True,
+            text=True,
+            timeout=5,
         )
         assert recovery.returncode == 0, recovery.stderr
         assert (tmp_path / "output.txt").read_text() == "before\n"
@@ -333,17 +383,23 @@ def test_independent_overlapping_run_rejected_before_writer_and_cache(
 
 def test_independent_run_is_rejected_between_passes(tmp_path, process_driver):
     first = subprocess.Popen(
-        _process_command(process_driver, passes=True), cwd=tmp_path,
-        env=_process_environment("between-passes"), stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE, text=True,
+        _process_command(process_driver, passes=True),
+        cwd=tmp_path,
+        env=_process_environment("between-passes"),
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
     )
     try:
         _wait_for_signal(tmp_path / "between-passes", first)
         assert "fixture" in generation_plan.load_regeneration_state(tmp_path)
         contender = subprocess.run(
-            _process_command(process_driver), cwd=tmp_path,
-            env=_process_environment("contender"), capture_output=True,
-            text=True, timeout=5,
+            _process_command(process_driver),
+            cwd=tmp_path,
+            env=_process_environment("contender"),
+            capture_output=True,
+            text=True,
+            timeout=5,
         )
         assert contender.returncode == 75
         assert "another regeneration is active" in contender.stderr
@@ -361,8 +417,10 @@ def test_independent_run_is_rejected_between_passes(tmp_path, process_driver):
 
 def test_writer_keeps_lock_if_driver_is_terminated(tmp_path, process_driver):
     first = subprocess.Popen(
-        _process_command(process_driver), cwd=tmp_path,
-        env=_process_environment("success"), stdout=subprocess.DEVNULL,
+        _process_command(process_driver),
+        cwd=tmp_path,
+        env=_process_environment("success"),
+        stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
     )
     try:
@@ -370,9 +428,12 @@ def test_writer_keeps_lock_if_driver_is_terminated(tmp_path, process_driver):
         first.kill()
         first.wait(timeout=5)
         contender = subprocess.run(
-            _process_command(process_driver), cwd=tmp_path,
-            env=_process_environment("contender"), capture_output=True,
-            text=True, timeout=5,
+            _process_command(process_driver),
+            cwd=tmp_path,
+            env=_process_environment("contender"),
+            capture_output=True,
+            text=True,
+            timeout=5,
         )
         assert contender.returncode == 75
         assert not (tmp_path / "writer-started-contender").exists()
@@ -384,12 +445,17 @@ def test_writer_keeps_lock_if_driver_is_terminated(tmp_path, process_driver):
                 with regenerate_all._regeneration_lock(tmp_path):
                     break
             except regenerate_all.RegenerationLockError:
-                assert time.monotonic() < deadline, "orphan writer did not release its lock"
+                assert time.monotonic() < deadline, (
+                    "orphan writer did not release its lock"
+                )
                 time.sleep(0.01)
         recovery = subprocess.run(
-            _process_command(process_driver), cwd=tmp_path,
-            env=_process_environment("recovery"), capture_output=True,
-            text=True, timeout=5,
+            _process_command(process_driver),
+            cwd=tmp_path,
+            env=_process_environment("recovery"),
+            capture_output=True,
+            text=True,
+            timeout=5,
         )
         assert recovery.returncode == 0, recovery.stderr
         assert "(1, 0)" in recovery.stdout
@@ -422,20 +488,28 @@ def test_cli_validation_keeps_same_lock(tmp_path, process_driver):
         encoding="utf-8",
     )
     first = subprocess.Popen(
-        [sys.executable, str(process_driver), "--validate"], cwd=tmp_path,
-        env=_process_environment("validation"), stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE, text=True,
+        [sys.executable, str(process_driver), "--validate"],
+        cwd=tmp_path,
+        env=_process_environment("validation"),
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
     )
     try:
         _wait_for_signal(tmp_path / "validation-started", first)
         assert "fixture" in generation_plan.load_regeneration_state(tmp_path)
         contender = subprocess.run(
-            [sys.executable, str(process_driver)], cwd=tmp_path,
-            env=_process_environment("contender"), capture_output=True,
-            text=True, timeout=5,
+            [sys.executable, str(process_driver)],
+            cwd=tmp_path,
+            env=_process_environment("contender"),
+            capture_output=True,
+            text=True,
+            timeout=5,
         )
         assert contender.returncode == 1
-        assert "regeneration refused: another regeneration is active" in contender.stderr
+        assert (
+            "regeneration refused: another regeneration is active" in contender.stderr
+        )
         assert not (tmp_path / "writer-started-contender").exists()
         (tmp_path / "release-validation").touch()
         stdout, stderr = first.communicate(timeout=8)
@@ -449,15 +523,23 @@ def test_cli_validation_keeps_same_lock(tmp_path, process_driver):
 
 def test_unsupported_lock_platform_fails_before_cache_or_writer(tmp_path, monkeypatch):
     monkeypatch.setattr(regenerate_all, "fcntl", None)
-    with pytest.raises(regenerate_all.RegenerationLockError, match="requires POSIX flock"):
+    with pytest.raises(
+        regenerate_all.RegenerationLockError, match="requires POSIX flock"
+    ):
         regenerate_all.run_regeneration(repo_root=tmp_path, steps=())
     assert not (tmp_path / ".docxology").exists()
     assert not generation_plan.regeneration_state_path(tmp_path).exists()
 
 
-@pytest.mark.parametrize("unsafe", [
-    "directory-symlink", "file-symlink", "file-hardlink", "file-fifo",
-])
+@pytest.mark.parametrize(
+    "unsafe",
+    [
+        "directory-symlink",
+        "file-symlink",
+        "file-hardlink",
+        "file-fifo",
+    ],
+)
 def test_lock_refuses_unsafe_file_aliases(tmp_path, unsafe):
     private = tmp_path / ".docxology"
     external = tmp_path / "unrelated"
@@ -483,7 +565,10 @@ def test_lock_refuses_unsafe_file_aliases(tmp_path, unsafe):
 def test_regeneration_lock_is_ignored_by_git():
     repository = Path(__file__).resolve().parents[2]
     result = subprocess.run(
-        ["git", "check-ignore", ".docxology/regeneration.lock"], cwd=repository,
-        capture_output=True, text=True, timeout=5,
+        ["git", "check-ignore", ".docxology/regeneration.lock"],
+        cwd=repository,
+        capture_output=True,
+        text=True,
+        timeout=5,
     )
     assert result.returncode == 0

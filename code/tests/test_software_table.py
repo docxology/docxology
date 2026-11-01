@@ -74,7 +74,9 @@ def test_zenodo_url_prefers_explicit_citation_doi_over_preceding_artifact_link()
 
 
 def test_description_html_escapes_future_catalog_markup():
-    rendered = description_html('Safe <script>alert(1)</script> [Docs](javascript:alert(2))')
+    rendered = description_html(
+        "Safe <script>alert(1)</script> [Docs](javascript:alert(2))"
+    )
     assert "<script>" not in rendered
     assert "&lt;script&gt;" in rendered
     assert "javascript:" not in rendered

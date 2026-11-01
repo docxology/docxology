@@ -84,7 +84,9 @@ def doi_role_values(meta: dict[str, Any], paper_dir: Path) -> tuple[str, str]:
             f"{paper_dir.name}: version_doi is unsupported; use artifact_doi for a version/download DOI"
         )
     canonical = normalize_doi(meta.get("doi"), field="doi", paper_dir=paper_dir)
-    artifact = normalize_doi(meta.get("artifact_doi"), field="artifact_doi", paper_dir=paper_dir)
+    artifact = normalize_doi(
+        meta.get("artifact_doi"), field="artifact_doi", paper_dir=paper_dir
+    )
     if artifact and not canonical:
         raise ValueError(
             f"{paper_dir.name}: artifact_doi requires a canonical doi citation identity"
@@ -108,7 +110,10 @@ def parse_author(name: str) -> dict[str, str]:
     name = name.strip()
     if "," in name:
         parts = [part.strip() for part in name.split(",", 1)]
-        return {"family-names": parts[0], "given-names": parts[1] if len(parts) > 1 else ""}
+        return {
+            "family-names": parts[0],
+            "given-names": parts[1] if len(parts) > 1 else "",
+        }
     parts = name.rsplit(None, 1)
     if len(parts) == 2:
         return {"family-names": parts[1], "given-names": parts[0]}
@@ -129,10 +134,14 @@ def doi_role_identifier_entries(canonical: str, artifact: str) -> list[str]:
     if canonical:
         entries.extend(_identifier_entry("doi", canonical, "Canonical citation DOI"))
         entries.extend(
-            _identifier_entry("url", doi_resolver(canonical), "Canonical citation DOI resolver")
+            _identifier_entry(
+                "url", doi_resolver(canonical), "Canonical citation DOI resolver"
+            )
         )
     if artifact and artifact.casefold() != canonical.casefold():
-        entries.extend(_identifier_entry("doi", artifact, "Version/download DOI (Zenodo artifact)"))
+        entries.extend(
+            _identifier_entry("doi", artifact, "Version/download DOI (Zenodo artifact)")
+        )
         entries.extend(
             _identifier_entry(
                 "url",
@@ -144,7 +153,9 @@ def doi_role_identifier_entries(canonical: str, artifact: str) -> list[str]:
         if artifact_record:
             entries.extend(
                 _identifier_entry(
-                    "url", artifact_record, "Version/download landing page (Zenodo artifact)"
+                    "url",
+                    artifact_record,
+                    "Version/download landing page (Zenodo artifact)",
                 )
             )
     return entries
@@ -162,12 +173,16 @@ def _repository_code(meta: dict[str, Any]) -> str:
 
 
 def _release_date(meta: dict[str, Any], paper_dir: Path) -> str:
-    publication_date = str(meta.get("publication_date") or meta.get("year") or "").strip()
+    publication_date = str(
+        meta.get("publication_date") or meta.get("year") or ""
+    ).strip()
     if publication_date:
         return publication_date
     if paper_dir.name[:4].isdigit():
         return paper_dir.name[:4]
-    raise ValueError(f"{paper_dir.name}: metadata needs publication_date or year for CITATION.cff")
+    raise ValueError(
+        f"{paper_dir.name}: metadata needs publication_date or year for CITATION.cff"
+    )
 
 
 def _cff_type(meta: dict[str, Any]) -> str:
@@ -221,7 +236,9 @@ def generate_cff(meta: dict[str, Any], paper_dir: Path) -> str | None:
     identifiers = doi_role_identifier_entries(canonical, artifact)
     github_release_url = str(meta.get("github_release_url") or "").strip()
     if github_release_url:
-        identifiers.extend(_identifier_entry("url", github_release_url, "GitHub release"))
+        identifiers.extend(
+            _identifier_entry("url", github_release_url, "GitHub release")
+        )
     if identifiers:
         lines.append("identifiers:")
         lines.extend(line.rstrip("\n") for line in identifiers)
@@ -236,7 +253,14 @@ def _top_level_value(text: str, key: str) -> str:
 def _identifier_entries(text: str) -> tuple[list[str], list[str], list[str]]:
     """Split a CFF around its identifier list while preserving non-managed entries."""
     lines = text.splitlines(keepends=True)
-    start = next((index for index, line in enumerate(lines) if line.rstrip("\n") == "identifiers:"), None)
+    start = next(
+        (
+            index
+            for index, line in enumerate(lines)
+            if line.rstrip("\n") == "identifiers:"
+        ),
+        None,
+    )
     if start is None:
         return lines, [], []
     end = len(lines)
@@ -282,14 +306,21 @@ def _is_managed_doi_identifier(entry: str) -> bool:
     identifier_type, value, _description = _identifier_fields(entry)
     normalized_type = identifier_type.casefold()
     normalized_value = value.casefold()
-    return normalized_type == "doi" or "doi.org/" in normalized_value or "zenodo.org/records/" in normalized_value
+    return (
+        normalized_type == "doi"
+        or "doi.org/" in normalized_value
+        or "zenodo.org/records/" in normalized_value
+    )
 
 
 def _artifact_identifier_is_explicit(text: str, artifact: str) -> bool:
     _before, entries, _after = _identifier_entries(text)
     for entry in entries:
         identifier_type, value, description = _identifier_fields(entry)
-        if identifier_type.casefold() == "doi" and value.casefold() == artifact.casefold():
+        if (
+            identifier_type.casefold() == "doi"
+            and value.casefold() == artifact.casefold()
+        ):
             return bool(ARTIFACT_LABEL_RE.search(description))
     return False
 
@@ -308,29 +339,54 @@ def cff_doi_role_errors(text: str, meta: dict[str, Any], paper_dir: Path) -> lis
             errors.append(f"top-level url must resolve canonical DOI {canonical}")
     elif top_doi:
         errors.append("CFF declares a top-level doi but metadata has no canonical doi")
-    if artifact and artifact.casefold() != canonical.casefold() and not _artifact_identifier_is_explicit(text, artifact):
-        errors.append(f"artifact DOI {artifact} must be an explicitly labelled secondary identifier")
+    if (
+        artifact
+        and artifact.casefold() != canonical.casefold()
+        and not _artifact_identifier_is_explicit(text, artifact)
+    ):
+        errors.append(
+            f"artifact DOI {artifact} must be an explicitly labelled secondary identifier"
+        )
     _before, entries, _after = _identifier_entries(text)
-    managed = sorted(_identifier_fields(entry) for entry in entries if _is_managed_doi_identifier(entry))
-    expected = sorted(_identifier_fields(entry) for entry in _identifier_entries(
-        "identifiers:\n" + "".join(doi_role_identifier_entries(canonical, artifact))
-    )[1])
+    managed = sorted(
+        _identifier_fields(entry)
+        for entry in entries
+        if _is_managed_doi_identifier(entry)
+    )
+    expected = sorted(
+        _identifier_fields(entry)
+        for entry in _identifier_entries(
+            "identifiers:\n" + "".join(doi_role_identifier_entries(canonical, artifact))
+        )[1]
+    )
     if managed != expected:
-        errors.append("managed DOI identifiers must match the canonical and current artifact DOI roles")
+        errors.append(
+            "managed DOI identifiers must match the canonical and current artifact DOI roles"
+        )
     return errors
 
 
 def _replace_top_level_doi_fields(text: str, canonical: str) -> str:
     """Replace CFF primary DOI fields without disturbing other top-level metadata."""
-    lines = [line for line in text.splitlines(keepends=True) if not TOP_LEVEL_FIELD_RE.match(line)]
+    lines = [
+        line
+        for line in text.splitlines(keepends=True)
+        if not TOP_LEVEL_FIELD_RE.match(line)
+    ]
     if not canonical:
         return "".join(lines)
     insert_after = next(
-        (index for index, line in enumerate(lines) if line.startswith("date-released:")),
+        (
+            index
+            for index, line in enumerate(lines)
+            if line.startswith("date-released:")
+        ),
         None,
     )
     if insert_after is None:
-        raise ValueError("CITATION.cff is missing date-released; cannot place canonical DOI fields")
+        raise ValueError(
+            "CITATION.cff is missing date-released; cannot place canonical DOI fields"
+        )
     lines[insert_after + 1 : insert_after + 1] = [
         f"doi: {canonical}\n",
         f'url: "{doi_resolver(canonical)}"\n',
@@ -340,7 +396,9 @@ def _replace_top_level_doi_fields(text: str, canonical: str) -> str:
 
 def _replace_doi_identifier_entries(text: str, canonical: str, artifact: str) -> str:
     before, existing_entries, after = _identifier_entries(text)
-    retained = [entry for entry in existing_entries if not _is_managed_doi_identifier(entry)]
+    retained = [
+        entry for entry in existing_entries if not _is_managed_doi_identifier(entry)
+    ]
     managed = doi_role_identifier_entries(canonical, artifact)
     if not managed and not retained:
         return "".join(before + after)
@@ -360,21 +418,35 @@ def reconcile_cff_doi_roles(text: str, meta: dict[str, Any], paper_dir: Path) ->
     )
 
 
-def bibliography_citations(bibliography_path: Path = BIBLIOGRAPHY) -> dict[str, dict[str, Any]]:
+def bibliography_citations(
+    bibliography_path: Path = BIBLIOGRAPHY,
+) -> dict[str, dict[str, Any]]:
     """Return ``{folder: {"title", "authors"}}`` for rows with verified authors."""
     if not bibliography_path.is_file():
         return {}
-    from docxology_tools.author_entities import bibliography_contributor_role, load_author_records
+    from docxology_tools.author_entities import (
+        bibliography_contributor_role,
+        load_author_records,
+    )
     from docxology_tools.work_identifiers import load_registry
 
     root = bibliography_path.parent.parent
     records = load_author_records(root)
-    identifiers = load_registry(root / "data/work-identifiers.json", repo_root=root) if records else None
+    identifiers = (
+        load_registry(root / "data/work-identifiers.json", repo_root=root)
+        if records
+        else None
+    )
     citations: dict[str, dict[str, Any]] = {}
     for row in iter_bibliography_rows(bibliography_path):
         if row.folder and row.authors:
-            citations[row.folder] = {"title": row.title.strip(), "authors": list(row.authors)}
-            role = bibliography_contributor_role(row.num, row.title, list(row.authors), records, identifiers)
+            citations[row.folder] = {
+                "title": row.title.strip(),
+                "authors": list(row.authors),
+            }
+            role = bibliography_contributor_role(
+                row.num, row.title, list(row.authors), records, identifiers
+            )
             if role == "editor":
                 citations[row.folder]["contributor_role"] = role
     return citations
@@ -435,11 +507,15 @@ def _cff_citation_identity(text: str) -> tuple[str, list[tuple[str, str]]] | Non
     return (title, authors) if title or authors else None
 
 
-def _bibliography_identity(citation: dict[str, Any]) -> tuple[str, list[tuple[str, str]]]:
+def _bibliography_identity(
+    citation: dict[str, Any],
+) -> tuple[str, list[tuple[str, str]]]:
     authors = []
     for name in citation["authors"]:
         family, separator, given = name.partition(",")
-        authors.append((family.strip(), given.strip()) if separator else (name.strip(), ""))
+        authors.append(
+            (family.strip(), given.strip()) if separator else (name.strip(), "")
+        )
     return citation["title"], authors
 
 
@@ -469,17 +545,23 @@ def reconcile_cff_bibliography(text: str, citation: dict[str, Any] | None) -> st
             out.extend(render_cff_authors(citation["authors"]))
             saw_authors = True
             index += 1
-            while index < len(lines) and (not lines[index].strip() or lines[index].startswith((" ", "\t"))):
+            while index < len(lines) and (
+                not lines[index].strip() or lines[index].startswith((" ", "\t"))
+            ):
                 index += 1
             continue
         out.append(line)
         index += 1
     if not saw_title or not saw_authors:
-        raise ValueError("CITATION.cff lacks a top-level title or authors block to reconcile")
+        raise ValueError(
+            "CITATION.cff lacks a top-level title or authors block to reconcile"
+        )
     return "".join(out)
 
 
-def render_outputs(papers_dir: Path = PAPERS_DIR, bibliography_path: Path = BIBLIOGRAPHY) -> dict[Path, str]:
+def render_outputs(
+    papers_dir: Path = PAPERS_DIR, bibliography_path: Path = BIBLIOGRAPHY
+) -> dict[Path, str]:
     """Render every CFF output: DOI roles from metadata, title/authors from the bibliography."""
     citations = bibliography_citations(bibliography_path)
     outputs: dict[Path, str] = {}
@@ -501,7 +583,9 @@ def render_outputs(papers_dir: Path = PAPERS_DIR, bibliography_path: Path = BIBL
         except json.JSONDecodeError as exc:
             raise ValueError(f"{paper_dir.name}: invalid metadata.json: {exc}") from exc
         if not isinstance(metadata, dict):
-            raise ValueError(f"{paper_dir.name}: metadata.json must contain a JSON object")
+            raise ValueError(
+                f"{paper_dir.name}: metadata.json must contain a JSON object"
+            )
         cff_path = paper_dir / "CITATION.cff"
         if cff_path.is_file():
             existing = cff_path.read_text(encoding="utf-8")
@@ -511,17 +595,25 @@ def render_outputs(papers_dir: Path = PAPERS_DIR, bibliography_path: Path = BIBL
             if rendered is None:
                 continue
         try:
-            outputs[cff_path] = reconcile_cff_bibliography(rendered, citations.get(paper_dir.name))
+            outputs[cff_path] = reconcile_cff_bibliography(
+                rendered, citations.get(paper_dir.name)
+            )
         except ValueError as exc:
             raise ValueError(f"{paper_dir.name}: {exc}") from exc
     return outputs
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     mode = parser.add_mutually_exclusive_group()
-    mode.add_argument("--check", action="store_true", help="fail if any CFF DOI-role fields are stale")
-    mode.add_argument("--apply", action="store_true", help="write every stale CFF DOI-role rendering")
+    mode.add_argument(
+        "--check", action="store_true", help="fail if any CFF DOI-role fields are stale"
+    )
+    mode.add_argument(
+        "--apply", action="store_true", help="write every stale CFF DOI-role rendering"
+    )
     return parser.parse_args()
 
 
@@ -532,17 +624,25 @@ def main() -> None:
         stale = stale_output_paths(outputs, repo_root=REPO_ROOT)
         if args.check:
             if stale:
-                shown = "\n".join(f"  - {path.relative_to(REPO_ROOT)}" for path in stale)
+                shown = "\n".join(
+                    f"  - {path.relative_to(REPO_ROOT)}" for path in stale
+                )
                 raise SystemExit(f"Stale CITATION.cff DOI-role outputs:\n{shown}")
             print(f"Checked {len(outputs)} CFF DOI-role outputs")
             return
         if args.apply:
-            write_output_texts({path: outputs[path] for path in stale}, repo_root=REPO_ROOT)
+            write_output_texts(
+                {path: outputs[path] for path in stale}, repo_root=REPO_ROOT
+            )
             print(f"Applied {len(stale)} CFF DOI-role updates")
             return
-        missing = {path: content for path, content in outputs.items() if not path.exists()}
+        missing = {
+            path: content for path, content in outputs.items() if not path.exists()
+        }
         write_output_texts(missing, repo_root=REPO_ROOT)
-        print(f"Generated {len(missing)} missing CFF files; use --apply to synchronize existing DOI roles")
+        print(
+            f"Generated {len(missing)} missing CFF files; use --apply to synchronize existing DOI roles"
+        )
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         raise SystemExit(f"CFF generation failed: {exc}") from exc
 

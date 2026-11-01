@@ -47,7 +47,12 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-from docxology_tools.report_paths import dated_report_path, generated_timestamp, latest_report, report_date_string  # noqa: E402
+from docxology_tools.report_paths import (  # noqa: E402
+    dated_report_path,
+    generated_timestamp,
+    latest_report,
+    report_date_string,
+)
 
 from docxology_tools.publication_pairing import ZenodoRecord, is_software_record  # noqa: E402
 from docxology_tools.software_table import software_catalog_dois  # noqa: E402
@@ -100,7 +105,7 @@ VERSION_SPECIFIC_CITATION_EXCEPTIONS = {
             "references were deliberately pointed at version record "
             "15168382 in commit d086e7a3 (2026-08-22)."
         ),
-    }
+    },
 }
 
 
@@ -142,7 +147,9 @@ def uncatalogued_records(
     """Records cited nowhere: not in the bibliography and not a software-catalogued archive."""
     software_ids = {
         record.record_id
-        for record in software_catalogued_records(records, catalogued_dois, software_dois or {})
+        for record in software_catalogued_records(
+            records, catalogued_dois, software_dois or {}
+        )
     }
     return [
         record
@@ -254,7 +261,9 @@ def build_report(
         warnings = []
     catalogued = bibliography_doi_set(repo_root)
     software_dois = software_catalog_dois(repo_root)
-    software_catalogued = software_catalogued_records(records, catalogued, software_dois)
+    software_catalogued = software_catalogued_records(
+        records, catalogued, software_dois
+    )
     missing = uncatalogued_records(records, catalogued, software_dois)
     version_only = non_canonical_doi_records(records, catalogued)
     approved_exceptions, exception_drift = approved_version_specific_doi_exceptions(
@@ -334,14 +343,18 @@ def check_report(report_path: Path | None = None) -> list[str]:
     """Return a list of human-readable problems for the latest report, empty if clean."""
     path = report_path or latest_report("zenodo_uncatalogued_*.json", required=False)
     if path is None:
-        return ["no zenodo_uncatalogued report found -- run this script without --check first"]
+        return [
+            "no zenodo_uncatalogued report found -- run this script without --check first"
+        ]
     payload = json.loads(path.read_text(encoding="utf-8"))
     problems = []
     if payload.get("warnings"):
         problems.append(f"API warnings present: {payload['warnings']}")
     count = payload.get("uncatalogued_count", 0)
     if count:
-        titles = ", ".join(item["title"] for item in payload.get("uncatalogued", [])[:5])
+        titles = ", ".join(
+            item["title"] for item in payload.get("uncatalogued", [])[:5]
+        )
         problems.append(f"{count} Zenodo record(s) not in the bibliography: {titles}")
     non_canonical_count = payload.get("non_canonical_doi_count", 0)
     if non_canonical_count:
@@ -351,9 +364,7 @@ def check_report(report_path: Path | None = None) -> list[str]:
         problems.append(
             f"{non_canonical_count} Zenodo record(s) use a version DOI without an approved exception: {titles}"
         )
-    exception_drift_count = payload.get(
-        "version_specific_doi_exception_drift_count", 0
-    )
+    exception_drift_count = payload.get("version_specific_doi_exception_drift_count", 0)
     if exception_drift_count:
         record_ids = ", ".join(
             item["record_id"]
@@ -375,9 +386,13 @@ def load_cached_records(path: Path, *, force: bool = False) -> list[ZenodoRecord
     try:
         payload = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError) as exc:
-        raise SystemExit(f"Cannot read cached Zenodo records from {path}: {exc}") from exc
+        raise SystemExit(
+            f"Cannot read cached Zenodo records from {path}: {exc}"
+        ) from exc
     if payload.get("source") != "GitHub Releases API + Zenodo Records API":
-        raise SystemExit(f"Cannot reuse cached records from {path}: unexpected report source")
+        raise SystemExit(
+            f"Cannot reuse cached records from {path}: unexpected report source"
+        )
     warnings = payload.get("warnings")
     if warnings:
         raise SystemExit(
@@ -393,7 +408,9 @@ def load_cached_records(path: Path, *, force: bool = False) -> list[ZenodoRecord
     try:
         return zenodo_records_from_payload(payload)
     except ValueError as exc:
-        raise SystemExit(f"Cannot reuse cached Zenodo records from {path}: {exc}") from exc
+        raise SystemExit(
+            f"Cannot reuse cached Zenodo records from {path}: {exc}"
+        ) from exc
 
 
 def main() -> int:
@@ -449,18 +466,30 @@ def main() -> int:
     approved_exception_count = report["approved_version_specific_doi_exception_count"]
     exception_drift_count = report["version_specific_doi_exception_drift_count"]
     if count:
-        print(f"wrote {out.relative_to(REPO_ROOT)}: {count} record(s) not yet in the bibliography")
+        print(
+            f"wrote {out.relative_to(REPO_ROOT)}: {count} record(s) not yet in the bibliography"
+        )
         for item in report["uncatalogued"]:
             print(f"  {item['record_id']}  {item['doi']}  {item['title']}")
-        print("Add real publications with: uv run python3 code/orchestrators/add_zenodo_only.py <record_id>")
+        print(
+            "Add real publications with: uv run python3 code/orchestrators/add_zenodo_only.py <record_id>"
+        )
     else:
-        print(f"wrote {out.relative_to(REPO_ROOT)}: 0 uncatalogued records (bibliography is caught up)")
+        print(
+            f"wrote {out.relative_to(REPO_ROOT)}: 0 uncatalogued records (bibliography is caught up)"
+        )
     for item in report["software_catalogued"]:
-        print(f"  software-catalogued: {item['record_id']}  {item['concept_doi']}  via the {item['software_row']} row (supplements {item['paper_folder']})  {item['title']}")
+        print(
+            f"  software-catalogued: {item['record_id']}  {item['concept_doi']}  via the {item['software_row']} row (supplements {item['paper_folder']})  {item['title']}"
+        )
     if non_canonical_count:
-        print(f"{non_canonical_count} record(s) cited only by version DOI, not the canonical concept DOI:")
+        print(
+            f"{non_canonical_count} record(s) cited only by version DOI, not the canonical concept DOI:"
+        )
         for item in report["non_canonical_doi"]:
-            print(f"  {item['record_id']}  bibliography has {item['version_doi_in_bibliography']}, concept is {item['concept_doi']}  {item['title']}")
+            print(
+                f"  {item['record_id']}  bibliography has {item['version_doi_in_bibliography']}, concept is {item['concept_doi']}  {item['title']}"
+            )
     if approved_exception_count:
         print(f"{approved_exception_count} approved version-specific DOI exception(s):")
         for item in report["approved_version_specific_doi_exceptions"]:
@@ -469,7 +498,9 @@ def main() -> int:
                 f"concept is {item['concept_doi']}  {item['title']}"
             )
     if exception_drift_count:
-        print(f"{exception_drift_count} approved version-specific DOI exception(s) drifted:")
+        print(
+            f"{exception_drift_count} approved version-specific DOI exception(s) drifted:"
+        )
         for item in report["version_specific_doi_exception_drift"]:
             print(f"  {item['record_id']}  {', '.join(item['mismatches'])}")
     return 0

@@ -52,14 +52,85 @@ class RedirectStub:
 
 
 REDIRECT_STUBS: tuple[RedirectStub, ...] = (
-    RedirectStub("about.html", "About Daniel Ari Friedman", f"{SITE_ORIGIN}#about", SITE_ORIGIN, "About — Daniel Ari Friedman"),
-    RedirectStub("agent-verify.html", "Agent Verify — Daniel Ari Friedman", f"{SITE_ORIGIN}cite-verify.html", f"{SITE_ORIGIN}cite-verify.html", "Cite & Verify — Daniel Ari Friedman"),
-    RedirectStub("blog/index.html", "Writing — Daniel Ari Friedman", f"{SITE_ORIGIN}#media", SITE_ORIGIN, "Media & Writing — Daniel Ari Friedman"),
-    RedirectStub("blog/winged-snowflake-2021/index.html", "Winged Snowflake — Daniel Ari Friedman", f"{SITE_ORIGIN}art.html", f"{SITE_ORIGIN}art.html", "Art — Daniel Ari Friedman"),
-    RedirectStub("meditations.html", "Meditations — Daniel Ari Friedman", f"{SITE_ORIGIN}#media", SITE_ORIGIN, "Media — Daniel Ari Friedman"),
-    RedirectStub("nft.html", "NFT Art — Daniel Ari Friedman", f"{SITE_ORIGIN}art.html", f"{SITE_ORIGIN}art.html", "Art — Daniel Ari Friedman"),
-    RedirectStub("reports.html", "Reports — Daniel Ari Friedman", f"{SITE_ORIGIN}evidence.html", f"{SITE_ORIGIN}evidence.html", "Evidence Ledger — Daniel Ari Friedman"),
-    RedirectStub("research.html", "Research — Daniel Ari Friedman", f"{SITE_ORIGIN}#research", SITE_ORIGIN, "Research — Daniel Ari Friedman"),
+    RedirectStub(
+        "about.html",
+        "About Daniel Ari Friedman",
+        f"{SITE_ORIGIN}#about",
+        SITE_ORIGIN,
+        "About — Daniel Ari Friedman",
+    ),
+    RedirectStub(
+        "agent-verify.html",
+        "Agent Verify — Daniel Ari Friedman",
+        f"{SITE_ORIGIN}cite-verify.html",
+        f"{SITE_ORIGIN}cite-verify.html",
+        "Cite & Verify — Daniel Ari Friedman",
+    ),
+    RedirectStub(
+        "blog/index.html",
+        "Writing — Daniel Ari Friedman",
+        f"{SITE_ORIGIN}#media",
+        SITE_ORIGIN,
+        "Media & Writing — Daniel Ari Friedman",
+    ),
+    RedirectStub(
+        "blog/winged-snowflake-2021/index.html",
+        "Winged Snowflake — Daniel Ari Friedman",
+        f"{SITE_ORIGIN}art.html",
+        f"{SITE_ORIGIN}art.html",
+        "Art — Daniel Ari Friedman",
+    ),
+    RedirectStub(
+        "meditations.html",
+        "Meditations — Daniel Ari Friedman",
+        f"{SITE_ORIGIN}#media",
+        SITE_ORIGIN,
+        "Media — Daniel Ari Friedman",
+    ),
+    RedirectStub(
+        "nft.html",
+        "NFT Art — Daniel Ari Friedman",
+        f"{SITE_ORIGIN}art.html",
+        f"{SITE_ORIGIN}art.html",
+        "Art — Daniel Ari Friedman",
+    ),
+    RedirectStub(
+        "reports.html",
+        "Reports — Daniel Ari Friedman",
+        f"{SITE_ORIGIN}evidence.html",
+        f"{SITE_ORIGIN}evidence.html",
+        "Evidence Ledger — Daniel Ari Friedman",
+    ),
+    RedirectStub(
+        "research.html",
+        "Research — Daniel Ari Friedman",
+        f"{SITE_ORIGIN}#research",
+        SITE_ORIGIN,
+        "Research — Daniel Ari Friedman",
+    ),
+    # Published work URLs observed as live 404s in Search Console follow-up.
+    # The retired CEREBRUM identifier stays retired; it leads to primary #10.
+    RedirectStub(
+        "works/Friedman2025CEREBRUMCaseEnabledReasoning118.html",
+        "CEREBRUM — previous work URL",
+        f"{SITE_ORIGIN}works/Friedman2025CEREBRUMCaseEnabledReasoning010.html",
+        f"{SITE_ORIGIN}works/Friedman2025CEREBRUMCaseEnabledReasoning010.html",
+        "CEREBRUM",
+    ),
+    RedirectStub(
+        "works/Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174.html",
+        "CogSecSkills — previous work URL",
+        f"{SITE_ORIGIN}works/Friedman2026CogSecSkillsMultiharnessAgenticSkills174.html",
+        f"{SITE_ORIGIN}works/Friedman2026CogSecSkillsMultiharnessAgenticSkills174.html",
+        "CogSecSkills",
+    ),
+    RedirectStub(
+        "works/Friedman2026LiteratureReviewArchitectureActive110.html",
+        "Living Meta-Analysis — previous work URL",
+        f"{SITE_ORIGIN}works/Friedman2026LivingMetaAnalysisArchitecture110.html",
+        f"{SITE_ORIGIN}works/Friedman2026LivingMetaAnalysisArchitecture110.html",
+        "A Living Meta-Analysis Architecture for Active Inference",
+    ),
 )
 
 
@@ -88,9 +159,7 @@ class _RedirectProbe(HTMLParser):
         if tag.lower() != "meta":
             return
         attributes = {
-            name.lower(): value
-            for name, value in attrs
-            if name and value is not None
+            name.lower(): value for name, value in attrs if name and value is not None
         }
         if (
             attributes.get("http-equiv", "").strip().lower() == "refresh"
@@ -117,7 +186,7 @@ def has_meta_refresh(text: str) -> bool:
     try:
         probe.feed(text)
         probe.close()
-    except (ValueError, AssertionError):
+    except ValueError, AssertionError:
         return False
     return probe.has_meta_refresh
 

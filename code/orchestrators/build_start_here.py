@@ -59,8 +59,15 @@ def _is_local(href: str) -> bool:
     return not (href.startswith(("http://", "https://", "//", "mailto:", "/")))
 
 
-_ASSET_PREFIXES = ("style.css", "js/", "favicon", "manifest.json", "feed.xml",
-                   "opensearch.xml", "search-index.json")
+_ASSET_PREFIXES = (
+    "style.css",
+    "js/",
+    "favicon",
+    "manifest.json",
+    "feed.xml",
+    "opensearch.xml",
+    "search-index.json",
+)
 
 
 def _link_hrefs(markup: str) -> list[str]:
@@ -76,7 +83,10 @@ def check_links(markup: str) -> list[str]:
         target = href.split("#", 1)[0].split("?", 1)[0]
         if not target:
             continue  # pure in-page anchor
-        if target.startswith(_ASSET_PREFIXES) and (REPO_ROOT / target.split("?")[0]).exists():
+        if (
+            target.startswith(_ASSET_PREFIXES)
+            and (REPO_ROOT / target.split("?")[0]).exists()
+        ):
             continue  # static asset (may carry a cache-busting query string)
         if not (REPO_ROOT / target.split("?")[0]).exists():
             errors.append(f"broken link: {href}")
@@ -89,7 +99,9 @@ def check_titles(markup: str) -> list[str]:
     for raw in _H2_RE.findall(markup):
         title = _TAG_RE.sub("", raw).strip()
         if len(title) > MAX_TITLE_CHARS:
-            errors.append(f"title over {MAX_TITLE_CHARS} chars: {title!r} ({len(title)})")
+            errors.append(
+                f"title over {MAX_TITLE_CHARS} chars: {title!r} ({len(title)})"
+            )
     return errors
 
 
@@ -107,12 +119,16 @@ def load_public_counts() -> dict:
 # The whole number token is captured (digits with optional ",ddd" thousands
 # groups, not preceded by a word character, comma or period) so a stale larger
 # number such as "1,943" or "9943" can never satisfy a check for "943".
-_ART_COUNT_RE = re.compile(r"(?<![\w,.])(?P<count>\d+(?:,\d{3})*) catalogued pen-and-ink drawings")
+_ART_COUNT_RE = re.compile(
+    r"(?<![\w,.])(?P<count>\d+(?:,\d{3})*) catalogued pen-and-ink drawings"
+)
 
 
 # Full-text and extracted-image counts in the paper-folder bullet, anchored like
 # _ART_COUNT_RE so a stale number can never satisfy the check by suffix.
-_FULL_TEXT_RE = re.compile(r"(?<![\w,.])(?P<count>\d+(?:,\d{3})*) with full-text extraction")
+_FULL_TEXT_RE = re.compile(
+    r"(?<![\w,.])(?P<count>\d+(?:,\d{3})*) with full-text extraction"
+)
 _IMAGES_RE = re.compile(r"(?<![\w,.])(?P<count>\d+(?:,\d{3})*) extracted images")
 _EXTRACTION_COUNTS = (
     (_FULL_TEXT_RE, "full_text_papers", "with full-text extraction"),
@@ -141,7 +157,9 @@ def check_extraction_counts(markup: str, counts: dict) -> list[str]:
         if not found:
             errors.append(f"start-here.html has no '{phrase}' count")
         elif any(number != f"{value:,}" for number in found):
-            errors.append(f"stale '{phrase}' count in start-here.html (current-counts says {value:,})")
+            errors.append(
+                f"stale '{phrase}' count in start-here.html (current-counts says {value:,})"
+            )
     return errors
 
 
@@ -151,7 +169,9 @@ def load_artwork_count(path: Path | None = None) -> int:
         payload = json.load(f)
     count = payload.get("count") if isinstance(payload, dict) else None
     if type(count) is not int or count < 0:
-        raise ValueError(f"artworks export has no non-negative integer count: {count!r}")
+        raise ValueError(
+            f"artworks export has no non-negative integer count: {count!r}"
+        )
     return count
 
 
@@ -207,12 +227,18 @@ def check_counts(markup: str) -> list[str]:
     works = counts.get("bibliography_works")
     folders = counts.get("paper_folder_docs")
     if not isinstance(works, int) or not isinstance(folders, int):
-        return ["current-counts.json missing integer bibliography_works/paper_folder_docs"]
+        return [
+            "current-counts.json missing integer bibliography_works/paper_folder_docs"
+        ]
     errors = []
     if not re.search(rf"a unified bibliography of {works} works", markup):
-        errors.append(f"stale works count in start-here.html (current-counts says {works})")
+        errors.append(
+            f"stale works count in start-here.html (current-counts says {works})"
+        )
     if not re.search(rf"\b{folders} folders under <code>papers/</code>", markup):
-        errors.append(f"stale paper-folder count in start-here.html (current-counts says {folders})")
+        errors.append(
+            f"stale paper-folder count in start-here.html (current-counts says {folders})"
+        )
     errors.extend(check_extraction_counts(markup, counts))
     try:
         errors.extend(check_art_count(markup, load_artwork_count()))
@@ -225,7 +251,12 @@ def check() -> list[str]:
     if not PAGE.exists():
         return [f"missing page: {PAGE.name}"]
     markup = PAGE.read_text(encoding="utf-8")
-    return check_counts(markup) + check_paths(markup) + check_links(markup) + check_titles(markup)
+    return (
+        check_counts(markup)
+        + check_paths(markup)
+        + check_links(markup)
+        + check_titles(markup)
+    )
 
 
 def enrich() -> None:
@@ -270,8 +301,14 @@ def sync_counts() -> bool:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="validate the page (default)")
-    parser.add_argument("--enrich", action="store_true", help="re-render nav + stamp counts + stamp dateModified")
+    parser.add_argument(
+        "--check", action="store_true", help="validate the page (default)"
+    )
+    parser.add_argument(
+        "--enrich",
+        action="store_true",
+        help="re-render nav + stamp counts + stamp dateModified",
+    )
     parser.add_argument(
         "--sync-counts",
         action="store_true",
@@ -281,7 +318,9 @@ def main() -> None:
 
     if args.sync_counts:
         changed = sync_counts()
-        print(f"{PAGE.name}: counts {'stamped from' if changed else 'already match'} {CURRENT_COUNTS.name} and {ARTWORKS.name}")
+        print(
+            f"{PAGE.name}: counts {'stamped from' if changed else 'already match'} {CURRENT_COUNTS.name} and {ARTWORKS.name}"
+        )
         errors = check()
         if errors:
             print("\n".join(errors), file=sys.stderr)
@@ -301,7 +340,9 @@ def main() -> None:
     if errors:
         print("\n".join(errors), file=sys.stderr)
         raise SystemExit(1)
-    print(f"start-here.html: {len(REQUIRED_PATH_IDS)} paths, all links resolve, titles <= {MAX_TITLE_CHARS} chars")
+    print(
+        f"start-here.html: {len(REQUIRED_PATH_IDS)} paths, all links resolve, titles <= {MAX_TITLE_CHARS} chars"
+    )
 
 
 if __name__ == "__main__":

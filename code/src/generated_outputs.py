@@ -55,7 +55,9 @@ def _reject_link(entry: os.stat_result | None, path: Path, *, label: str) -> Non
         )
 
 
-def _trusted_root_and_parts(repo_root: Path, target: Path, *, directory: bool) -> tuple[Path, Path, tuple[str, ...]]:
+def _trusted_root_and_parts(
+    repo_root: Path, target: Path, *, directory: bool
+) -> tuple[Path, Path, tuple[str, ...]]:
     """Validate lexical containment and all existing components under a root.
 
     ``Path.resolve`` must not be used for this boundary: it follows precisely
@@ -67,10 +69,14 @@ def _trusted_root_and_parts(repo_root: Path, target: Path, *, directory: bool) -
     candidate = _lexical_absolute(target)
     root_entry = _path_entry(root, label="generated-output root")
     if root_entry is None:
-        raise UnsafeGeneratedOutputPathError(f"generated-output root is missing: {root}")
+        raise UnsafeGeneratedOutputPathError(
+            f"generated-output root is missing: {root}"
+        )
     _reject_link(root_entry, root, label="root")
     if not stat.S_ISDIR(root_entry.st_mode):
-        raise UnsafeGeneratedOutputPathError(f"generated-output root is not a directory: {root}")
+        raise UnsafeGeneratedOutputPathError(
+            f"generated-output root is not a directory: {root}"
+        )
     try:
         relative = candidate.relative_to(root)
     except ValueError as exc:
@@ -116,7 +122,9 @@ def safe_generated_output_path(repo_root: Path, target: Path) -> Path:
     A missing final target is valid: check mode represents it as drift and
     write mode creates it through :func:`write_generated_output_text`.
     """
-    _root, candidate, _parts = _trusted_root_and_parts(repo_root, target, directory=False)
+    _root, candidate, _parts = _trusted_root_and_parts(
+        repo_root, target, directory=False
+    )
     return candidate
 
 
@@ -126,7 +134,9 @@ def generated_output_directory_exists(repo_root: Path, directory: Path) -> bool:
     Missing directories are ordinary drift in a no-write check.  Existing
     directories must be real directories beneath the trusted root.
     """
-    _root, candidate, _parts = _trusted_root_and_parts(repo_root, directory, directory=True)
+    _root, candidate, _parts = _trusted_root_and_parts(
+        repo_root, directory, directory=True
+    )
     return _path_entry(candidate, label="generated-output directory") is not None
 
 
@@ -150,7 +160,9 @@ def _open_flags(*, directory: bool = False) -> int:
         raise UnsafeGeneratedOutputPathError(
             "platform lacks O_NOFOLLOW/O_DIRECTORY; refusing generated-output I/O"
         ) from exc
-    if os.open not in os.supports_dir_fd:  # pragma: no cover - only unsupported platforms
+    if (
+        os.open not in os.supports_dir_fd
+    ):  # pragma: no cover - only unsupported platforms
         raise UnsafeGeneratedOutputPathError(
             "platform lacks directory-descriptor support; refusing generated-output I/O"
         )
@@ -192,14 +204,18 @@ def _open_child_directory(parent_fd: int, component: str, *, create: bool) -> in
 
 
 @contextmanager
-def _parent_directory_fd(repo_root: Path, target: Path, *, create: bool) -> Iterator[tuple[int, str]]:
+def _parent_directory_fd(
+    repo_root: Path, target: Path, *, create: bool
+) -> Iterator[tuple[int, str]]:
     """Yield a no-follow directory descriptor for *target*'s parent.
 
     The upfront lexical/lstat validation gives clear errors; descriptor
     traversal repeats the important boundary at use time and prevents an
     ancestor-link race from redirecting an operation.
     """
-    root, _candidate, parts = _trusted_root_and_parts(repo_root, target, directory=False)
+    root, _candidate, parts = _trusted_root_and_parts(
+        repo_root, target, directory=False
+    )
     fd = _open_directory(root)
     try:
         for component in parts[:-1]:
@@ -223,7 +239,9 @@ def _ensure_unlinked_regular_file_descriptor(fd: int, target: Path) -> None:
         )
 
 
-def _replacement_target_mode(parent_fd: int, name: str, target: Path) -> tuple[int, bool]:
+def _replacement_target_mode(
+    parent_fd: int, name: str, target: Path
+) -> tuple[int, bool]:
     """Return the replacement mode after rechecking the live final entry.
 
     A replacement never mutates the old inode.  This live check still rejects
@@ -342,6 +360,7 @@ def _replace_staged_output(
     process could otherwise add a hard-link alias to the old target.  Atomic
     replacement must leave that alias on the old inode rather than mutate it.
     """
+
     def verify_staged_output() -> None:
         try:
             staged = os.stat(staged_name, dir_fd=parent_fd, follow_symlinks=False)
@@ -375,7 +394,10 @@ def _replace_staged_output(
             src_dir_fd=parent_fd,
             dst_dir_fd=parent_fd,
         )
-    except (NotImplementedError, TypeError) as exc:  # pragma: no cover - unsupported platforms
+    except (
+        NotImplementedError,
+        TypeError,
+    ) as exc:  # pragma: no cover - unsupported platforms
         raise UnsafeGeneratedOutputPathError(
             "platform lacks descriptor-relative atomic replacement; refusing generated-output write"
         ) from exc
@@ -396,7 +418,10 @@ def read_generated_output_text(
     """Read a generated output safely, returning ``None`` only when missing."""
     candidate = safe_generated_output_path(repo_root, target)
     try:
-        with _parent_directory_fd(repo_root, candidate, create=False) as (parent_fd, name):
+        with _parent_directory_fd(repo_root, candidate, create=False) as (
+            parent_fd,
+            name,
+        ):
             flags = os.O_RDONLY | _nofollow_flag() | getattr(os, "O_NONBLOCK", 0)
             try:
                 fd = os.open(name, flags, dir_fd=parent_fd)
@@ -408,7 +433,9 @@ def read_generated_output_text(
                 ) from exc
             try:
                 _ensure_unlinked_regular_file_descriptor(fd, candidate)
-                with os.fdopen(fd, "r", encoding=encoding, errors=errors, newline=newline) as handle:
+                with os.fdopen(
+                    fd, "r", encoding=encoding, errors=errors, newline=newline
+                ) as handle:
                     fd = -1
                     return handle.read()
             finally:
@@ -502,7 +529,9 @@ def remove_generated_output(repo_root: Path, target: Path) -> None:
             ) from exc
 
 
-def generated_output_files(repo_root: Path, directory: Path, pattern: str) -> tuple[Path, ...]:
+def generated_output_files(
+    repo_root: Path, directory: Path, pattern: str
+) -> tuple[Path, ...]:
     """List real generated-output candidates, rejecting links before callers read.
 
     This intentionally does not claim ownership: callers remain responsible
@@ -538,8 +567,12 @@ def stable_generated_output_timestamp(
         return None
     if not isinstance(existing, dict):
         return None
-    current_body = {key: value for key, value in payload.items() if key != "generated_at"}
-    existing_body = {key: value for key, value in existing.items() if key != "generated_at"}
+    current_body = {
+        key: value for key, value in payload.items() if key != "generated_at"
+    }
+    existing_body = {
+        key: value for key, value in existing.items() if key != "generated_at"
+    }
     timestamp = existing.get("generated_at")
     return str(timestamp) if current_body == existing_body and timestamp else None
 
@@ -590,7 +623,10 @@ def stale_output_paths(
     for path in expected:
         safe_generated_output_path(repo_root, path)
     drift = output_drift(
-        {path: _with_reused_stamp(path, content, repo_root) for path, content in expected.items()},
+        {
+            path: _with_reused_stamp(path, content, repo_root)
+            for path, content in expected.items()
+        },
         read_output_texts(expected, repo_root=repo_root),
     )
     return drift
@@ -598,7 +634,10 @@ def stale_output_paths(
 
 def _with_reused_stamp(path: Path, content: str, repo_root: Path) -> str:
     """Return content with the on-disk stamp substituted when content matches modulo stamp."""
-    from docxology_tools.build_stamp import reuse_on_disk_stamp  # local: avoid import cycle
+    from docxology_tools.build_stamp import (
+        reuse_on_disk_stamp,
+    )  # local: avoid import cycle
+
     disk = read_generated_output_text(repo_root, path)
     return reuse_on_disk_stamp(content, disk)
 

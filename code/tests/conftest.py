@@ -1,4 +1,5 @@
 """Explicit selection, real prerequisites, and isolated disposable checkouts."""
+
 from __future__ import annotations
 
 import os
@@ -24,7 +25,11 @@ class SelectedTestsMustRun:
         # Workers must finish their protocol normally; the controller owns
         # acceptance after it receives every selected test's report.
         if self.incomplete and not hasattr(session.config, "workerinput"):
-            if exitstatus in {pytest.ExitCode.OK, pytest.ExitCode.TESTS_FAILED, pytest.ExitCode.NO_TESTS_COLLECTED}:
+            if exitstatus in {
+                pytest.ExitCode.OK,
+                pytest.ExitCode.TESTS_FAILED,
+                pytest.ExitCode.NO_TESTS_COLLECTED,
+            }:
                 session.exitstatus = pytest.ExitCode.TESTS_FAILED
 
     def pytest_terminal_summary(self, terminalreporter) -> None:
@@ -32,7 +37,9 @@ class SelectedTestsMustRun:
             terminalreporter.write_sep("=", "Selected tests did not execute", red=True)
             for nodeid in sorted(self.incomplete):
                 terminalreporter.write_line(nodeid, red=True)
-            terminalreporter.write_line("Install the declared prerequisites or explicitly select a smaller suite with -m.")
+            terminalreporter.write_line(
+                "Install the declared prerequisites or explicitly select a smaller suite with -m."
+            )
 
 
 def pytest_configure(config: pytest.Config) -> None:
@@ -45,7 +52,10 @@ def isolated_git_discovery(tmp_path_factory: pytest.TempPathFactory):
     boundary = str(tmp_path_factory.getbasetemp())
     existing = os.environ.get("GIT_CEILING_DIRECTORIES", "")
     with pytest.MonkeyPatch.context() as environment:
-        environment.setenv("GIT_CEILING_DIRECTORIES", boundary + (os.pathsep + existing if existing else ""))
+        environment.setenv(
+            "GIT_CEILING_DIRECTORIES",
+            boundary + (os.pathsep + existing if existing else ""),
+        )
         yield
 
 

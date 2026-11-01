@@ -77,9 +77,7 @@ def validate_acknowledged_exclusions(payload: object) -> dict[str, dict]:
     if not isinstance(payload, dict):
         raise ValueError("repository exclusions must be a JSON object")
     if payload.get("schema_version") != EXCLUSIONS_SCHEMA_VERSION:
-        raise ValueError(
-            "repository exclusions have an unexpected schema_version"
-        )
+        raise ValueError("repository exclusions have an unexpected schema_version")
     reasons = payload.get("reasons")
     if not isinstance(reasons, dict) or not reasons:
         raise ValueError("repository exclusions must declare a non-empty reasons map")
@@ -98,9 +96,7 @@ def validate_acknowledged_exclusions(payload: object) -> dict[str, dict]:
     acknowledged: dict[str, dict] = {}
     for ordinal, exclusion in enumerate(exclusions, start=1):
         if not isinstance(exclusion, dict):
-            raise ValueError(
-                f"repository exclusion {ordinal} must be an object"
-            )
+            raise ValueError(f"repository exclusion {ordinal} must be an object")
         full_name = exclusion.get("full_name")
         reason = exclusion.get("reason")
         note = exclusion.get("note")
@@ -109,9 +105,7 @@ def validate_acknowledged_exclusions(payload: object) -> dict[str, dict]:
             or not full_name.strip()
             or "/" not in full_name
         ):
-            raise ValueError(
-                f"repository exclusion {ordinal} has an invalid full_name"
-            )
+            raise ValueError(f"repository exclusion {ordinal} has an invalid full_name")
         if full_name in acknowledged:
             raise ValueError(f"duplicate repository exclusion: {full_name}")
         if not isinstance(reason, str) or reason not in reasons:
@@ -123,9 +117,7 @@ def validate_acknowledged_exclusions(payload: object) -> dict[str, dict]:
         reviewed_by = exclusion.get("reviewed_by")
         reviewed_at = exclusion.get("reviewed_at")
         if not isinstance(reviewed_by, str) or not reviewed_by.strip():
-            raise ValueError(
-                f"repository exclusion {full_name} is missing reviewed_by"
-            )
+            raise ValueError(f"repository exclusion {full_name} is missing reviewed_by")
         if not _is_iso_date(reviewed_at):
             raise ValueError(
                 f"repository exclusion {full_name} has an invalid reviewed_at date"
@@ -243,13 +235,29 @@ def build_payload() -> dict:
             github_node_id=github_node_id,
         )
         if ack and fork:
-            catalog_role, exclusion_reason, review_status = "acknowledged_not_curated", "fork_not_curated", "acknowledged"
+            catalog_role, exclusion_reason, review_status = (
+                "acknowledged_not_curated",
+                "fork_not_curated",
+                "acknowledged",
+            )
         elif fork:
-            catalog_role, exclusion_reason, review_status = "not_curated", "fork_not_curated", "defer"
+            catalog_role, exclusion_reason, review_status = (
+                "not_curated",
+                "fork_not_curated",
+                "defer",
+            )
         elif ack:
-            catalog_role, exclusion_reason, review_status = "acknowledged_not_curated", "acknowledged_not_catalogued", "acknowledged"
+            catalog_role, exclusion_reason, review_status = (
+                "acknowledged_not_curated",
+                "acknowledged_not_catalogued",
+                "acknowledged",
+            )
         else:
-            catalog_role, exclusion_reason, review_status = "not_curated", "primary_repo_requires_manual_review", "defer"
+            catalog_role, exclusion_reason, review_status = (
+                "not_curated",
+                "primary_repo_requires_manual_review",
+                "defer",
+            )
         row = {
             "full_name": full_name,
             "github_id": github_id,
@@ -281,7 +289,10 @@ def build_payload() -> dict:
         rows.append(row)
     return {
         "schema_version": "1.4",
-        "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+        "generated_at": datetime.now(timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z"),
         "source": "data/github-repositories.json",
         "acknowledged_exclusions_source": "data/repository-exclusions.json",
         "policy": "Complete GitHub inventory remains distinct from the curated software catalog; unknown primary repositories stay reviewable and are never auto-promoted. Repositories listed in data/repository-exclusions.json are deliberate not-catalog decisions (profile/website/test/mirror/duplicate or public forks) and are marked acknowledged only when their full_name and immutable github_id/github_node_id match the reviewed repository. Each row reports how its decision was reached in reviewed_by: principal means the principal reviewed that repository individually; standing_policy means an already-recorded principal decision was applied to a fork nobody reviewed one by one, and policy_source names that decision.",
@@ -289,13 +300,26 @@ def build_payload() -> dict:
             "total_inventory": len(source.get("repositories", [])),
             "uncatalogued": len(rows),
             "forks": sum(row["fork"] for row in rows),
-            "acknowledged_forks": sum(row["fork"] and row["review_status"] == "acknowledged" for row in rows),
-            "primary_requires_review": sum(row["exclusion_reason"] == "primary_repo_requires_manual_review" for row in rows),
-            "acknowledged_excluded": sum(row["exclusion_reason"] == "acknowledged_not_catalogued" for row in rows),
+            "acknowledged_forks": sum(
+                row["fork"] and row["review_status"] == "acknowledged" for row in rows
+            ),
+            "primary_requires_review": sum(
+                row["exclusion_reason"] == "primary_repo_requires_manual_review"
+                for row in rows
+            ),
+            "acknowledged_excluded": sum(
+                row["exclusion_reason"] == "acknowledged_not_catalogued" for row in rows
+            ),
             "archived": sum(row["archived"] for row in rows),
-            "missing_description": sum(row["description_quality"] == "missing" for row in rows),
-            "short_description": sum(row["description_quality"] == "short" for row in rows),
-            "substantive_description": sum(row["description_quality"] == "substantive" for row in rows),
+            "missing_description": sum(
+                row["description_quality"] == "missing" for row in rows
+            ),
+            "short_description": sum(
+                row["description_quality"] == "short" for row in rows
+            ),
+            "substantive_description": sum(
+                row["description_quality"] == "substantive" for row in rows
+            ),
         },
         "repositories": rows,
     }
@@ -307,10 +331,14 @@ def preserve_timestamp_when_unchanged(payload: dict) -> dict:
         return payload
     try:
         existing = json.loads(OUT.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
+    except OSError, json.JSONDecodeError:
         return payload
-    current_body = {key: value for key, value in payload.items() if key != "generated_at"}
-    existing_body = {key: value for key, value in existing.items() if key != "generated_at"}
+    current_body = {
+        key: value for key, value in payload.items() if key != "generated_at"
+    }
+    existing_body = {
+        key: value for key, value in existing.items() if key != "generated_at"
+    }
     if current_body == existing_body and existing.get("generated_at"):
         payload["generated_at"] = existing["generated_at"]
     return payload
@@ -318,14 +346,18 @@ def preserve_timestamp_when_unchanged(payload: dict) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if the classification queue is stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if the classification queue is stale"
+    )
     args = parser.parse_args()
     payload = build_payload()
     payload = preserve_timestamp_when_unchanged(payload)
     rendered = json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
     if args.check:
         if not OUT.exists() or OUT.read_text(encoding="utf-8") != rendered:
-            raise SystemExit(f"stale repository classification: {OUT.relative_to(REPO_ROOT)}")
+            raise SystemExit(
+                f"stale repository classification: {OUT.relative_to(REPO_ROOT)}"
+            )
         print(f"checked {OUT.relative_to(REPO_ROOT)}")
         return
     OUT.write_text(rendered, encoding="utf-8")

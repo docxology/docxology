@@ -138,7 +138,10 @@ def _review_payload(root: Path, commit: str, snapshot_path: Path) -> dict:
         "generated_at": "2026-08-25T00:00:00Z",
         "source_commit": commit,
         **PROVENANCE,
-        "refresh_context": {"pairing_refresh_status": "auto", "pairing_refresh_note": ""},
+        "refresh_context": {
+            "pairing_refresh_status": "auto",
+            "pairing_refresh_note": "",
+        },
         "inputs": {
             "public_source_snapshot": {
                 "path": snapshot_path.relative_to(root).as_posix(),
@@ -168,12 +171,20 @@ def _write_complete_evidence(
     root: Path, *, commit: str = COMMIT, include_scholar_receipt: bool = True
 ) -> None:
     _write_scholar_source(root, include_receipt=include_scholar_receipt)
-    snapshot = _path_for(root, next(item for item in RELEASE_EVIDENCE if item.name == "public-source snapshot"))
+    snapshot = _path_for(
+        root,
+        next(
+            item for item in RELEASE_EVIDENCE if item.name == "public-source snapshot"
+        ),
+    )
     _write_json(
         snapshot,
         {
             **_common(commit),
-            "checks": [{"label": label, "ok": True} for label in sorted(expected_public_source_labels())],
+            "checks": [
+                {"label": label, "ok": True}
+                for label in sorted(expected_public_source_labels())
+            ],
         },
     )
 
@@ -197,21 +208,59 @@ def _write_complete_evidence(
         elif requirement.name == "browser smoke":
             checks = []
             for name in sorted(expected_browser_smoke_names()):
-                screenshot, digest = _screenshot(path.parent / f"{name}.png", name, root)
-                checks.append({"name": name, "ok": True, "screenshot": screenshot, "screenshot_sha256": digest})
-            payload = {**_common(commit), "count": len(checks), "passing": len(checks), "checks": checks}
+                screenshot, digest = _screenshot(
+                    path.parent / f"{name}.png", name, root
+                )
+                checks.append(
+                    {
+                        "name": name,
+                        "ok": True,
+                        "screenshot": screenshot,
+                        "screenshot_sha256": digest,
+                    }
+                )
+            payload = {
+                **_common(commit),
+                "count": len(checks),
+                "passing": len(checks),
+                "checks": checks,
+            }
         elif requirement.name == "browser QA":
-            checks = [{"name": name, "ok": True} for name in sorted(expected_browser_qa_names())]
-            payload = {**_common(commit), "count": len(checks), "passing": len(checks), "checks": checks}
+            checks = [
+                {"name": name, "ok": True}
+                for name in sorted(expected_browser_qa_names())
+            ]
+            payload = {
+                **_common(commit),
+                "count": len(checks),
+                "passing": len(checks),
+                "checks": checks,
+            }
         elif requirement.name == "visual QA":
             screenshots = []
-            for index, (page, viewport, size) in enumerate(sorted(expected_visual_targets())):
-                screenshot, digest = _screenshot(path.parent / f"shot-{index}.png", f"{page}|{viewport}|{size}", root)
-                screenshots.append({"page": page, "viewport": viewport, "size": size, "file": screenshot, "sha256": digest})
+            for index, (page, viewport, size) in enumerate(
+                sorted(expected_visual_targets())
+            ):
+                screenshot, digest = _screenshot(
+                    path.parent / f"shot-{index}.png", f"{page}|{viewport}|{size}", root
+                )
+                screenshots.append(
+                    {
+                        "page": page,
+                        "viewport": viewport,
+                        "size": size,
+                        "file": screenshot,
+                        "sha256": digest,
+                    }
+                )
             payload = {
                 **_common(commit),
                 "screenshots": screenshots,
-                "review": {"status": "reviewed", "reviewed_by": "Release reviewer", "reviewed_at": "2026-08-25T11:30:00Z"},
+                "review": {
+                    "status": "reviewed",
+                    "reviewed_by": "Release reviewer",
+                    "reviewed_at": "2026-08-25T11:30:00Z",
+                },
             }
         else:
             payload = {
@@ -219,19 +268,29 @@ def _write_complete_evidence(
                 "overall_ok": True,
                 "github_pages": {"status": "built"},
                 "deployment": {"head_sha": commit},
-                "results": [{"path": route, "ok": True} for route in sorted(expected_live_paths())],
+                "results": [
+                    {"path": route, "ok": True}
+                    for route in sorted(expected_live_paths())
+                ],
             }
         _write_json(path, payload)
 
 
 def test_collect_release_evidence_accepts_complete_successful_exact_revision(tmp_path):
     _write_complete_evidence(tmp_path)
-    receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
     assert errors == []
-    assert {receipt.name for receipt in receipts} == {requirement.name for requirement in RELEASE_EVIDENCE}
+    assert {receipt.name for receipt in receipts} == {
+        requirement.name for requirement in RELEASE_EVIDENCE
+    }
     # A deferred public refresh is not a curated metric change.  The valid
     # source-bound baseline receipt therefore permits release evidence.
-    review = _path_for(tmp_path, next(item for item in RELEASE_EVIDENCE if item.name == "public-source review"))
+    review = _path_for(
+        tmp_path,
+        next(item for item in RELEASE_EVIDENCE if item.name == "public-source review"),
+    )
     scholar_item = next(
         item
         for item in json.loads(review.read_text(encoding="utf-8"))["items"]
@@ -272,9 +331,14 @@ def test_collect_release_evidence_rejects_missing_required_review_category(tmp_p
 def test_collect_release_evidence_rejects_missing_scholar_source_receipt(tmp_path):
     _write_complete_evidence(tmp_path, include_scholar_receipt=False)
 
-    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    _receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
 
-    assert any("missing direct authenticated Scholar verification receipt" in error for error in errors)
+    assert any(
+        "missing direct authenticated Scholar verification receipt" in error
+        for error in errors
+    )
 
 
 def test_collect_release_evidence_rejects_tampered_scholar_snapshot(tmp_path):
@@ -284,7 +348,9 @@ def test_collect_release_evidence_rejects_tampered_scholar_snapshot(tmp_path):
     payload["citations"] = 11
     _write_json(snapshot, payload)
 
-    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    _receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
 
     assert any("snapshot_sha256 does not match" in error for error in errors)
     assert any("metrics do not match" in error for error in errors)
@@ -297,7 +363,9 @@ def test_collect_release_evidence_rejects_tampered_scholar_receipt_binding(tmp_p
     payload["snapshot_sha256"] = "0" * 64
     _write_json(receipt, payload)
 
-    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    _receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
 
     assert any("snapshot_sha256 does not match" in error for error in errors)
 
@@ -309,99 +377,148 @@ def test_collect_release_evidence_rejects_non_direct_scholar_source_receipt(tmp_
     payload["direct"] = False
     _write_json(receipt, payload)
 
-    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    _receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
 
     assert any("direct=true and authenticated=true" in error for error in errors)
 
 
-def test_collect_release_evidence_rejects_stale_wrong_revision_and_failed_report(tmp_path):
+def test_collect_release_evidence_rejects_stale_wrong_revision_and_failed_report(
+    tmp_path,
+):
     _write_complete_evidence(tmp_path, commit="b" * 40)
     stale = _path_for(tmp_path, RELEASE_EVIDENCE[0])
     payload = json.loads(stale.read_text(encoding="utf-8"))
     payload["generated_at"] = "2026-06-01T00:00:00Z"
     _write_json(stale, payload)
-    smoke = _path_for(tmp_path, next(item for item in RELEASE_EVIDENCE if item.name == "browser smoke"))
+    smoke = _path_for(
+        tmp_path,
+        next(item for item in RELEASE_EVIDENCE if item.name == "browser smoke"),
+    )
     smoke_payload = json.loads(smoke.read_text(encoding="utf-8"))
     smoke_payload["checks"][0]["ok"] = False
     _write_json(smoke, smoke_payload)
 
-    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    _receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
     assert any("stale public-source snapshot" in error for error in errors)
     assert any("source_commit" in error for error in errors)
     assert any("browser smoke failed semantic validation" in error for error in errors)
 
 
-def test_collect_release_evidence_rejects_confirmed_link_404_but_not_bot_protection(tmp_path):
+def test_collect_release_evidence_rejects_confirmed_link_404_but_not_bot_protection(
+    tmp_path,
+):
     _write_complete_evidence(tmp_path)
-    links = _path_for(tmp_path, next(item for item in RELEASE_EVIDENCE if item.name == "external-link report"))
+    links = _path_for(
+        tmp_path,
+        next(item for item in RELEASE_EVIDENCE if item.name == "external-link report"),
+    )
     payload = json.loads(links.read_text(encoding="utf-8"))
     payload["results"][0].update({"ok": False, "status": 403})
     payload["ok"] -= 1
     payload["warnings"] += 1
     _write_json(links, payload)
 
-    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    _receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
     assert errors == []
 
     payload["results"][0]["status"] = 404
     _write_json(links, payload)
-    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    _receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
     assert any("confirmed 404s requiring replacement" in error for error in errors)
 
 
-def test_collect_release_evidence_rejects_a_control_tail_review_for_deployed_sha(tmp_path):
+def test_collect_release_evidence_rejects_a_control_tail_review_for_deployed_sha(
+    tmp_path,
+):
     """The normal review anchor cannot stand in for post-deploy exact evidence."""
     _write_complete_evidence(tmp_path)
-    review = _path_for(tmp_path, next(item for item in RELEASE_EVIDENCE if item.name == "public-source review"))
+    review = _path_for(
+        tmp_path,
+        next(item for item in RELEASE_EVIDENCE if item.name == "public-source review"),
+    )
     payload = json.loads(review.read_text(encoding="utf-8"))
     payload["source_commit"] = "b" * 40
     _write_json(review, payload)
 
-    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    _receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
     assert any(
-        "public-source review source_commit " + "b" * 40 + " != release commit " + COMMIT in error
+        "public-source review source_commit "
+        + "b" * 40
+        + " != release commit "
+        + COMMIT
+        in error
         for error in errors
     )
 
 
-def test_collect_release_evidence_rejects_external_screenshot_symlink_and_unreviewed_visuals(tmp_path):
+def test_collect_release_evidence_rejects_external_screenshot_symlink_and_unreviewed_visuals(
+    tmp_path,
+):
     _write_complete_evidence(tmp_path)
     outside = tmp_path / "outside.png"
     outside.write_bytes(b"not evidence")
-    smoke = _path_for(tmp_path, next(item for item in RELEASE_EVIDENCE if item.name == "browser smoke"))
+    smoke = _path_for(
+        tmp_path,
+        next(item for item in RELEASE_EVIDENCE if item.name == "browser smoke"),
+    )
     smoke_payload = json.loads(smoke.read_text(encoding="utf-8"))
     linked = smoke.parent / "linked.png"
     linked.symlink_to(outside)
     smoke_payload["checks"][0]["screenshot"] = linked.relative_to(tmp_path).as_posix()
     smoke_payload["checks"][0]["screenshot_sha256"] = _sha256(outside)
     _write_json(smoke, smoke_payload)
-    visual = _path_for(tmp_path, next(item for item in RELEASE_EVIDENCE if item.name == "visual QA"))
+    visual = _path_for(
+        tmp_path, next(item for item in RELEASE_EVIDENCE if item.name == "visual QA")
+    )
     visual_payload = json.loads(visual.read_text(encoding="utf-8"))
     visual_payload["review"]["status"] = "pending"
     _write_json(visual, visual_payload)
 
-    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    _receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
     assert any("symlinked release evidence" in error for error in errors)
-    assert any("visual QA has not recorded an explicit review" in error for error in errors)
+    assert any(
+        "visual QA has not recorded an explicit review" in error for error in errors
+    )
 
 
 def test_collect_release_evidence_rejects_visual_review_that_predates_capture(tmp_path):
     _write_complete_evidence(tmp_path)
-    visual = _path_for(tmp_path, next(item for item in RELEASE_EVIDENCE if item.name == "visual QA"))
+    visual = _path_for(
+        tmp_path, next(item for item in RELEASE_EVIDENCE if item.name == "visual QA")
+    )
     payload = json.loads(visual.read_text(encoding="utf-8"))
     payload["review"]["reviewed_at"] = "2026-08-25T10:59:59Z"
     _write_json(visual, payload)
 
-    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    _receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
 
-    assert any("visual QA review predates its captured manifest" in error for error in errors)
+    assert any(
+        "visual QA review predates its captured manifest" in error for error in errors
+    )
 
 
 def test_collect_release_evidence_rejects_hard_linked_screenshot(tmp_path):
     _write_complete_evidence(tmp_path)
     outside = tmp_path / "outside.png"
     outside.write_bytes(b"not evidence")
-    smoke = _path_for(tmp_path, next(item for item in RELEASE_EVIDENCE if item.name == "browser smoke"))
+    smoke = _path_for(
+        tmp_path,
+        next(item for item in RELEASE_EVIDENCE if item.name == "browser smoke"),
+    )
     smoke_payload = json.loads(smoke.read_text(encoding="utf-8"))
     linked = smoke.parent / "linked.png"
     linked.hardlink_to(outside)
@@ -409,81 +526,143 @@ def test_collect_release_evidence_rejects_hard_linked_screenshot(tmp_path):
     smoke_payload["checks"][0]["screenshot_sha256"] = _sha256(outside)
     _write_json(smoke, smoke_payload)
 
-    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    _receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
     assert any("hard-linked release evidence" in error for error in errors)
 
 
 def test_collect_release_evidence_rejects_partial_coverage_and_dirty_capture(tmp_path):
     _write_complete_evidence(tmp_path)
-    snapshot = _path_for(tmp_path, next(item for item in RELEASE_EVIDENCE if item.name == "public-source snapshot"))
+    snapshot = _path_for(
+        tmp_path,
+        next(
+            item for item in RELEASE_EVIDENCE if item.name == "public-source snapshot"
+        ),
+    )
     payload = json.loads(snapshot.read_text(encoding="utf-8"))
     payload["checks"].pop()
     payload["source_worktree_clean"] = False
     _write_json(snapshot, payload)
 
-    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    _receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
     assert any("clean source worktree" in error for error in errors)
     assert any("coverage does not match" in error for error in errors)
 
 
 def test_attestation_requires_canonical_path_and_detects_report_mutation(tmp_path):
     _write_complete_evidence(tmp_path)
-    receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
     assert errors == []
     attestation = deployment_attestation_path(tmp_path, COMMIT)
-    _write_json(attestation, render_attestation(COMMIT, receipts, attested_at="2026-08-25T11:30:00Z"))
-    assert validate_attestation(tmp_path, attestation, COMMIT, max_age_days=30, now=NOW) == []
-    assert validate_attestation(tmp_path, tmp_path / "attestation.json", COMMIT, max_age_days=30, now=NOW) == [
-        "deployment attestation must use the canonical path reports/deployment-attestations/" + COMMIT + ".json for its deployment SHA"
+    _write_json(
+        attestation,
+        render_attestation(COMMIT, receipts, attested_at="2026-08-25T11:30:00Z"),
+    )
+    assert (
+        validate_attestation(tmp_path, attestation, COMMIT, max_age_days=30, now=NOW)
+        == []
+    )
+    assert validate_attestation(
+        tmp_path, tmp_path / "attestation.json", COMMIT, max_age_days=30, now=NOW
+    ) == [
+        "deployment attestation must use the canonical path reports/deployment-attestations/"
+        + COMMIT
+        + ".json for its deployment SHA"
     ]
 
-    changed = _path_for(tmp_path, next(item for item in RELEASE_EVIDENCE if item.name == "external-link report"))
+    changed = _path_for(
+        tmp_path,
+        next(item for item in RELEASE_EVIDENCE if item.name == "external-link report"),
+    )
     changed.write_text(changed.read_text(encoding="utf-8") + "\n", encoding="utf-8")
-    errors = validate_attestation(tmp_path, attestation, COMMIT, max_age_days=30, now=NOW)
+    errors = validate_attestation(
+        tmp_path, attestation, COMMIT, max_age_days=30, now=NOW
+    )
     assert any("changed after attestation" in error for error in errors)
 
 
 def test_attestation_rejects_a_timestamp_beyond_future_tolerance(tmp_path):
     _write_complete_evidence(tmp_path)
-    receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
     assert errors == []
     attestation = deployment_attestation_path(tmp_path, COMMIT)
-    _write_json(attestation, render_attestation(COMMIT, receipts, attested_at="2026-08-25T12:05:01Z"))
+    _write_json(
+        attestation,
+        render_attestation(COMMIT, receipts, attested_at="2026-08-25T12:05:01Z"),
+    )
 
-    errors = validate_attestation(tmp_path, attestation, COMMIT, max_age_days=30, now=NOW)
+    errors = validate_attestation(
+        tmp_path, attestation, COMMIT, max_age_days=30, now=NOW
+    )
 
     assert "deployment attestation is dated in the future" in errors
 
 
 def test_attestation_rejects_evidence_created_after_the_attestation(tmp_path):
     _write_complete_evidence(tmp_path)
-    receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
     assert errors == []
     attestation = deployment_attestation_path(tmp_path, COMMIT)
-    _write_json(attestation, render_attestation(COMMIT, receipts, attested_at="2026-08-25T10:59:59Z"))
+    _write_json(
+        attestation,
+        render_attestation(COMMIT, receipts, attested_at="2026-08-25T10:59:59Z"),
+    )
 
-    errors = validate_attestation(tmp_path, attestation, COMMIT, max_age_days=30, now=NOW)
+    errors = validate_attestation(
+        tmp_path, attestation, COMMIT, max_age_days=30, now=NOW
+    )
 
     assert "deployment attestation predates external-link report evidence" in errors
 
 
 def test_only_post_commit_release_receipts_are_worktree_exempt():
-    assert is_ephemeral_release_evidence_path("reports/browser-smoke/2026-08-25/home.png")
-    assert is_ephemeral_release_evidence_path("reports/public_source_review_2026-08-25.md")
-    assert is_ephemeral_release_evidence_path("reports/external_links_triage_2026-08-25.json")
-    assert is_ephemeral_release_evidence_path("reports/external_links_triage_2026-08-25.md")
-    assert is_ephemeral_release_evidence_path("reports/deployment-attestations/" + "a" * 40 + ".json")
-    assert not is_ephemeral_release_evidence_path("reports/browser-smoke/notdate/source.py")
+    assert is_ephemeral_release_evidence_path(
+        "reports/browser-smoke/2026-08-25/home.png"
+    )
+    assert is_ephemeral_release_evidence_path(
+        "reports/public_source_review_2026-08-25.md"
+    )
+    assert is_ephemeral_release_evidence_path(
+        "reports/external_links_triage_2026-08-25.json"
+    )
+    assert is_ephemeral_release_evidence_path(
+        "reports/external_links_triage_2026-08-25.md"
+    )
+    assert is_ephemeral_release_evidence_path(
+        "reports/deployment-attestations/" + "a" * 40 + ".json"
+    )
+    assert not is_ephemeral_release_evidence_path(
+        "reports/browser-smoke/notdate/source.py"
+    )
     assert not is_ephemeral_release_evidence_path("reports/browser-qa/evil/source.py")
-    assert not is_ephemeral_release_evidence_path("reports/external_links_triage_not-a-date.json")
-    assert not is_ephemeral_release_evidence_path("reports/external_links_triage_2026-08-25.txt")
-    assert not is_ephemeral_release_evidence_path("reports\\browser-smoke\\2026-08-25\\home.png")
+    assert not is_ephemeral_release_evidence_path(
+        "reports/external_links_triage_not-a-date.json"
+    )
+    assert not is_ephemeral_release_evidence_path(
+        "reports/external_links_triage_2026-08-25.txt"
+    )
+    assert not is_ephemeral_release_evidence_path(
+        "reports\\browser-smoke\\2026-08-25\\home.png"
+    )
     assert not is_ephemeral_release_evidence_path("data/claims.json")
 
 
 def test_attested_requirement_paths_are_root_anchored():
-    requirement = next(item for item in RELEASE_EVIDENCE if item.name == "external-link report")
-    assert matches_requirement_path("reports/external_links_2026-08-25.json", requirement)
+    requirement = next(
+        item for item in RELEASE_EVIDENCE if item.name == "external-link report"
+    )
+    assert matches_requirement_path(
+        "reports/external_links_2026-08-25.json", requirement
+    )
     assert not matches_requirement_path(
         "untrusted/reports/external_links_2026-08-25.json", requirement
     )
@@ -495,8 +674,8 @@ def test_release_evidence_paths_require_valid_dates_for_every_requirement(tmp_pa
         root = tmp_path / str(ordinal)
         _write_complete_evidence(root)
         valid = _path_for(root, requirement)
-        malformed_relative = valid.relative_to(root).as_posix().replace(
-            "2026-08-25", "not-a-date"
+        malformed_relative = (
+            valid.relative_to(root).as_posix().replace("2026-08-25", "not-a-date")
         )
         malformed = root / malformed_relative
         malformed.parent.mkdir(parents=True, exist_ok=True)
@@ -514,23 +693,31 @@ def test_attestation_rejects_malformed_dated_paths_for_every_requirement(tmp_pat
     for ordinal, requirement in enumerate(RELEASE_EVIDENCE):
         root = tmp_path / str(ordinal)
         _write_complete_evidence(root)
-        receipts, errors = collect_release_evidence(root, COMMIT, max_age_days=30, now=NOW)
+        receipts, errors = collect_release_evidence(
+            root, COMMIT, max_age_days=30, now=NOW
+        )
         assert errors == []
         attestation = deployment_attestation_path(root, COMMIT)
-        payload = render_attestation(COMMIT, receipts, attested_at="2026-08-25T11:30:00Z")
+        payload = render_attestation(
+            COMMIT, receipts, attested_at="2026-08-25T11:30:00Z"
+        )
         valid = _path_for(root, requirement)
-        malformed_relative = valid.relative_to(root).as_posix().replace(
-            "2026-08-25", "not-a-date"
+        malformed_relative = (
+            valid.relative_to(root).as_posix().replace("2026-08-25", "not-a-date")
         )
         malformed = root / malformed_relative
         malformed.parent.mkdir(parents=True, exist_ok=True)
         malformed.write_bytes(valid.read_bytes())
-        entry = next(item for item in payload["evidence"] if item["name"] == requirement.name)
+        entry = next(
+            item for item in payload["evidence"] if item["name"] == requirement.name
+        )
         entry["path"] = malformed_relative
         entry["sha256"] = _sha256(malformed)
         _write_json(attestation, payload)
 
-        errors = validate_attestation(root, attestation, COMMIT, max_age_days=30, now=NOW)
+        errors = validate_attestation(
+            root, attestation, COMMIT, max_age_days=30, now=NOW
+        )
         assert (
             f"deployment attestation path does not match {requirement.name}: {malformed_relative}"
             in errors

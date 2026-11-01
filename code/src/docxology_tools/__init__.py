@@ -165,7 +165,7 @@ class _CrossFormAliasFinder:
         if fullname in MODULES:
             partner = _PACKAGE_PREFIX + fullname
         elif fullname.startswith(_PACKAGE_PREFIX):
-            flat = fullname[len(_PACKAGE_PREFIX):]
+            flat = fullname[len(_PACKAGE_PREFIX) :]
             if "." in flat or flat not in MODULES:
                 return None
             partner = flat
@@ -185,9 +185,7 @@ class _CrossFormAliasFinder:
         return spec
 
 
-if not any(
-    isinstance(_finder, _CrossFormAliasFinder) for _finder in sys.meta_path
-):
+if not any(isinstance(_finder, _CrossFormAliasFinder) for _finder in sys.meta_path):
     sys.meta_path.insert(0, _CrossFormAliasFinder())
 
 

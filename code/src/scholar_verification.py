@@ -54,7 +54,9 @@ def _load_object(path: Path, *, label: str) -> tuple[dict[str, Any] | None, str 
     return value, None
 
 
-def _metrics(payload: dict[str, Any], *, label: str) -> tuple[dict[str, int] | None, list[str]]:
+def _metrics(
+    payload: dict[str, Any], *, label: str
+) -> tuple[dict[str, int] | None, list[str]]:
     values: dict[str, int] = {}
     errors: list[str] = []
     for field in SCHOLAR_METRIC_FIELDS:
@@ -66,7 +68,9 @@ def _metrics(payload: dict[str, Any], *, label: str) -> tuple[dict[str, int] | N
     return (values if not errors else None), errors
 
 
-def _receipt_metrics(payload: dict[str, Any]) -> tuple[dict[str, int] | None, list[str]]:
+def _receipt_metrics(
+    payload: dict[str, Any],
+) -> tuple[dict[str, int] | None, list[str]]:
     metrics = payload.get("metrics")
     if not isinstance(metrics, dict):
         return None, ["Scholar verification receipt is missing a metrics object"]
@@ -138,24 +142,42 @@ def validate_bound_scholar_receipt(
     if receipt.get("receipt_type") != "google_scholar_direct_authenticated":
         errors.append("Scholar verification receipt has invalid receipt_type")
     if receipt.get("profile_id") != profile_id:
-        errors.append("Scholar verification receipt profile_id does not match the canonical snapshot")
+        errors.append(
+            "Scholar verification receipt profile_id does not match the canonical snapshot"
+        )
     if receipt.get("direct") is not True or receipt.get("authenticated") is not True:
-        errors.append("Scholar verification receipt must explicitly state direct=true and authenticated=true")
+        errors.append(
+            "Scholar verification receipt must explicitly state direct=true and authenticated=true"
+        )
     if not _valid_timestamp(receipt.get("verified_at")):
-        errors.append("Scholar verification receipt must include a timezone-qualified verified_at")
+        errors.append(
+            "Scholar verification receipt must include a timezone-qualified verified_at"
+        )
     if receipt.get("snapshot_path") != SCHOLAR_SNAPSHOT_RELATIVE_PATH.as_posix():
-        errors.append("Scholar verification receipt snapshot_path does not name the canonical snapshot")
+        errors.append(
+            "Scholar verification receipt snapshot_path does not name the canonical snapshot"
+        )
     if receipt.get("snapshot_sha256") != snapshot_sha256:
-        errors.append("Scholar verification receipt snapshot_sha256 does not match data/scholar-snapshot.json")
+        errors.append(
+            "Scholar verification receipt snapshot_sha256 does not match data/scholar-snapshot.json"
+        )
     if receipt.get("snapshot_as_of") != as_of:
-        errors.append("Scholar verification receipt snapshot_as_of does not match the canonical snapshot")
+        errors.append(
+            "Scholar verification receipt snapshot_as_of does not match the canonical snapshot"
+        )
     for field in ("source", "method"):
         if not isinstance(receipt.get(field), str) or not receipt[field].strip():
             errors.append(f"Scholar verification receipt is missing {field}")
     receipt_metrics, receipt_errors = _receipt_metrics(receipt)
     errors.extend(receipt_errors)
-    if snapshot_metrics is not None and receipt_metrics is not None and receipt_metrics != snapshot_metrics:
-        errors.append("Scholar verification receipt metrics do not match the canonical snapshot")
+    if (
+        snapshot_metrics is not None
+        and receipt_metrics is not None
+        and receipt_metrics != snapshot_metrics
+    ):
+        errors.append(
+            "Scholar verification receipt metrics do not match the canonical snapshot"
+        )
     receipt_metrics_payload = receipt.get("metrics")
     receipt_since_2021, receipt_since_2021_errors = _optional_since_2021_metrics(
         receipt_metrics_payload if isinstance(receipt_metrics_payload, dict) else {},
@@ -189,10 +211,16 @@ def validate_scholar_snapshot_receipt(repo_root: Path) -> list[str]:
         snapshot_sha256 = sha256_bytes(snapshot_path.read_bytes())
     except OSError as exc:
         return [f"unable to hash Scholar snapshot {snapshot_path.as_posix()}: {exc}"]
-    receipt, receipt_error = _load_object(receipt_path, label="Scholar verification receipt")
+    receipt, receipt_error = _load_object(
+        receipt_path, label="Scholar verification receipt"
+    )
     if receipt_error:
-        return validate_bound_scholar_receipt(snapshot, None, snapshot_sha256=snapshot_sha256) + [receipt_error]
-    return validate_bound_scholar_receipt(snapshot, receipt, snapshot_sha256=snapshot_sha256)
+        return validate_bound_scholar_receipt(
+            snapshot, None, snapshot_sha256=snapshot_sha256
+        ) + [receipt_error]
+    return validate_bound_scholar_receipt(
+        snapshot, receipt, snapshot_sha256=snapshot_sha256
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -244,7 +272,9 @@ def parse_verified_at(value: str) -> datetime:
     try:
         parsed = datetime.fromisoformat(text)
     except ValueError as exc:
-        raise ValueError(f"verified_at is not an ISO-8601 timestamp: {value!r}") from exc
+        raise ValueError(
+            f"verified_at is not an ISO-8601 timestamp: {value!r}"
+        ) from exc
     if parsed.tzinfo is None or parsed.utcoffset() is None:
         raise ValueError(
             f"verified_at must be timezone-qualified (for example 2026-01-02T03:04:05Z), got {value!r}"
@@ -252,7 +282,9 @@ def parse_verified_at(value: str) -> datetime:
     try:
         return parsed.astimezone(timezone.utc).replace(microsecond=0)
     except OverflowError as exc:
-        raise ValueError(f"verified_at is outside the representable range: {value!r}") from exc
+        raise ValueError(
+            f"verified_at is outside the representable range: {value!r}"
+        ) from exc
 
 
 def format_verified_at(moment: datetime) -> str:
@@ -289,7 +321,9 @@ def observation_timing_errors(
             f"as_of {as_of.isoformat()} must be strictly later than the recorded as_of {current_as_of.isoformat()}"
         )
     if as_of > moment.date() + timedelta(days=1):
-        errors.append(f"as_of {as_of.isoformat()} is in the future (today is {moment.date().isoformat()} UTC)")
+        errors.append(
+            f"as_of {as_of.isoformat()} is in the future (today is {moment.date().isoformat()} UTC)"
+        )
     if verified_at > moment + VERIFIED_AT_FUTURE_SKEW:
         errors.append(f"verified_at {format_verified_at(verified_at)} is in the future")
     verified_date = verified_at.astimezone(timezone.utc).date()
@@ -323,9 +357,12 @@ def reusable_receipt_verified_at(
         return None
     try:
         receipt = json.loads(receipt_bytes.decode("utf-8"))
-    except (UnicodeDecodeError, json.JSONDecodeError):
+    except UnicodeDecodeError, json.JSONDecodeError:
         return None
-    if not isinstance(receipt, dict) or receipt.get("snapshot_as_of") != as_of.isoformat():
+    if (
+        not isinstance(receipt, dict)
+        or receipt.get("snapshot_as_of") != as_of.isoformat()
+    ):
         return None
     stamp = receipt.get("verified_at")
     if not isinstance(stamp, str):
@@ -350,9 +387,13 @@ def validate_observation(observation: dict[str, Any]) -> list[str]:
     errors.extend(metric_errors)
     since_2021 = observation.get(SCHOLAR_SINCE_2021_KEY)
     if not isinstance(since_2021, dict):
-        errors.append(f"Scholar observation field {SCHOLAR_SINCE_2021_KEY!r} must be an object")
+        errors.append(
+            f"Scholar observation field {SCHOLAR_SINCE_2021_KEY!r} must be an object"
+        )
     else:
-        _, since_errors = _metrics(since_2021, label=f"Scholar observation {SCHOLAR_SINCE_2021_KEY}")
+        _, since_errors = _metrics(
+            since_2021, label=f"Scholar observation {SCHOLAR_SINCE_2021_KEY}"
+        )
         errors.extend(since_errors)
     errors.extend(_observation_consistency_errors(observation))
     return errors
@@ -397,13 +438,19 @@ def _observation_consistency_errors(observation: dict[str, Any]) -> list[str]:
     return errors
 
 
-def observation_matches_snapshot(snapshot: dict[str, Any], observation: dict[str, Any]) -> bool:
+def observation_matches_snapshot(
+    snapshot: dict[str, Any], observation: dict[str, Any]
+) -> bool:
     """Return True when the snapshot already records exactly this observation."""
     if snapshot.get("as_of") != observation.get("as_of"):
         return False
-    if any(snapshot.get(field) != observation.get(field) for field in SCHOLAR_METRIC_FIELDS):
+    if any(
+        snapshot.get(field) != observation.get(field) for field in SCHOLAR_METRIC_FIELDS
+    ):
         return False
-    return snapshot.get(SCHOLAR_SINCE_2021_KEY) == observation.get(SCHOLAR_SINCE_2021_KEY)
+    return snapshot.get(SCHOLAR_SINCE_2021_KEY) == observation.get(
+        SCHOLAR_SINCE_2021_KEY
+    )
 
 
 def default_observation_method(observation: dict[str, Any]) -> str:
@@ -432,7 +479,9 @@ def default_observation_source(snapshot: dict[str, Any]) -> str:
     """
     profile_url = snapshot.get("profile_url")
     if not isinstance(profile_url, str) or not profile_url.strip():
-        raise ValueError("Scholar snapshot is missing profile_url; supply an explicit source")
+        raise ValueError(
+            "Scholar snapshot is missing profile_url; supply an explicit source"
+        )
     return f"Direct authenticated observation of {profile_url.strip()}"
 
 
@@ -463,7 +512,9 @@ def superseded_note(note: str, new_as_of: str) -> str:
     return f"{note.rstrip().rstrip('.').rstrip()}{marker}"
 
 
-def supersede_history(history: Any, snapshot: dict[str, Any], new_as_of: str) -> list[dict[str, Any]]:
+def supersede_history(
+    history: Any, snapshot: dict[str, Any], new_as_of: str
+) -> list[dict[str, Any]]:
     """Return a copy of ``history`` whose last entry is marked superseded.
 
     The last entry must mirror the live snapshot (as_of and the three
@@ -471,8 +522,14 @@ def supersede_history(history: Any, snapshot: dict[str, Any], new_as_of: str) ->
     new observation on top of it would bury that drift, so this raises
     ``ValueError`` instead.
     """
-    if not isinstance(history, list) or not history or not isinstance(history[-1], dict):
-        raise ValueError("Scholar snapshot history is missing or empty; cannot supersede the current entry")
+    if (
+        not isinstance(history, list)
+        or not history
+        or not isinstance(history[-1], dict)
+    ):
+        raise ValueError(
+            "Scholar snapshot history is missing or empty; cannot supersede the current entry"
+        )
     last = history[-1]
     for field in ("as_of", *SCHOLAR_METRIC_FIELDS):
         if last.get(field) != snapshot.get(field):
@@ -538,7 +595,10 @@ def build_observation_snapshot(
         updated,
         "i10_index",
         SCHOLAR_SINCE_2021_KEY,
-        {field: observation[SCHOLAR_SINCE_2021_KEY][field] for field in SCHOLAR_METRIC_FIELDS},
+        {
+            field: observation[SCHOLAR_SINCE_2021_KEY][field]
+            for field in SCHOLAR_METRIC_FIELDS
+        },
     )
     updated["as_of"] = new_as_of
     updated["method"] = method
@@ -560,10 +620,14 @@ def build_observation_receipt(
     here deliberately: callers must have obtained an explicit operator
     attestation, because nothing in this module can observe authentication.
     """
-    metrics: dict[str, Any] = {field: snapshot[field] for field in SCHOLAR_METRIC_FIELDS}
+    metrics: dict[str, Any] = {
+        field: snapshot[field] for field in SCHOLAR_METRIC_FIELDS
+    }
     since_2021 = snapshot.get(SCHOLAR_SINCE_2021_KEY)
     if isinstance(since_2021, dict):
-        metrics[SCHOLAR_SINCE_2021_KEY] = {field: since_2021[field] for field in SCHOLAR_METRIC_FIELDS}
+        metrics[SCHOLAR_SINCE_2021_KEY] = {
+            field: since_2021[field] for field in SCHOLAR_METRIC_FIELDS
+        }
     return {
         "schema_version": RECEIPT_SCHEMA_VERSION,
         "receipt_type": "google_scholar_direct_authenticated",
@@ -626,9 +690,13 @@ def build_observation_artifacts(
     new_snapshot = build_observation_snapshot(
         snapshot,
         observation,
-        method=method if method is not None else default_observation_method(observation),
+        method=method
+        if method is not None
+        else default_observation_method(observation),
         history_note=history_note,
     )
     snapshot_bytes = canonical_json_bytes(new_snapshot)
-    receipt_bytes = build_receipt_bytes(snapshot_bytes, verified_at=verified_at, source=source)
+    receipt_bytes = build_receipt_bytes(
+        snapshot_bytes, verified_at=verified_at, source=source
+    )
     return snapshot_bytes, receipt_bytes

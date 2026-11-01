@@ -78,9 +78,23 @@ class CitationHead(HTMLParser):
     # we never collect title text. Treating its contents as raw text therefore
     # preserves the relevant boundary, including embedded script/comment text.
     CDATA_CONTENT_ELEMENTS = ("script", "style", "title", "noscript", "noframes")
-    HEAD_ELEMENTS = frozenset({"html", "head", "base", "basefont", "bgsound",
-                               "link", "meta", "title", "noscript", "noframes",
-                               "style", "script", "template"})
+    HEAD_ELEMENTS = frozenset(
+        {
+            "html",
+            "head",
+            "base",
+            "basefont",
+            "bgsound",
+            "link",
+            "meta",
+            "title",
+            "noscript",
+            "noframes",
+            "style",
+            "script",
+            "template",
+        }
+    )
 
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
@@ -100,7 +114,7 @@ class CitationHead(HTMLParser):
         """
         parser = cls()
         for offset in range(0, len(text), 1024):
-            parser.feed(text[offset:offset + 1024])
+            parser.feed(text[offset : offset + 1024])
             if parser.head_finished:
                 break
         parser.close()
@@ -136,8 +150,12 @@ class CitationHead(HTMLParser):
     def handle_data(self, data: str) -> None:
         # Non-whitespace outside head text/template content implicitly starts
         # the body in HTML. A later literal </head> must not reopen evidence.
-        if (self.in_head and not self.template_depth and not self.head_text_element
-                and data.strip(" \t\n\r\f")):
+        if (
+            self.in_head
+            and not self.template_depth
+            and not self.head_text_element
+            and data.strip(" \t\n\r\f")
+        ):
             self.in_head = False
             self.head_finished = True
 
@@ -159,8 +177,22 @@ class CitationHead(HTMLParser):
         # HTML ignores the slash on nonvoid elements. Rather than pretend
         # malformed template/script/style markup has closed, stop collecting
         # evidence; this lightweight parser does not perform HTML5 repair.
-        if tag not in {"area", "base", "br", "col", "embed", "hr", "img", "input",
-                       "link", "meta", "param", "source", "track", "wbr"}:
+        if tag not in {
+            "area",
+            "base",
+            "br",
+            "col",
+            "embed",
+            "hr",
+            "img",
+            "input",
+            "link",
+            "meta",
+            "param",
+            "source",
+            "track",
+            "wbr",
+        }:
             self.in_head = False
             self.head_finished = True
             return
@@ -188,9 +220,15 @@ class MetadataHead(CitationHead):
         for key, value in attrs:
             attributes.setdefault(key, value)
         if tag == "meta":
-            for attribute, target in (("name", self.names), ("property", self.properties)):
+            for attribute, target in (
+                ("name", self.names),
+                ("property", self.properties),
+            ):
                 key = (attributes.get(attribute) or "").casefold()
                 if key:
                     target.setdefault(key, []).append(attributes.get("content") or "")
-        elif tag == "link" and "canonical" in (attributes.get("rel") or "").casefold().split():
+        elif (
+            tag == "link"
+            and "canonical" in (attributes.get("rel") or "").casefold().split()
+        ):
             self.canonicals.append(attributes.get("href") or "")

@@ -78,7 +78,11 @@ def overview(folder: Path) -> str:
     text = readme.read_text(encoding="utf-8", errors="ignore")
     raw = section(text, "Abstract") or section(text, "Overview")
     if not raw:
-        lines = [line.strip() for line in text.splitlines() if line.strip() and not line.startswith("#")]
+        lines = [
+            line.strip()
+            for line in text.splitlines()
+            if line.strip() and not line.startswith("#")
+        ]
         raw = " ".join(lines[:4])
     cleaned = strip_md(raw)
     return cleaned[:900].rstrip()
@@ -94,7 +98,9 @@ def unique_doc_works(works: list[dict]) -> list[dict]:
 
 
 def pdf_rows(folder: Path, resources: PaperResources | None = None) -> str:
-    resources = resources or PaperResources.load(REPO_ROOT, folder.relative_to(REPO_ROOT).as_posix())
+    resources = resources or PaperResources.load(
+        REPO_ROOT, folder.relative_to(REPO_ROOT).as_posix()
+    )
     if not resources.pdfs:
         return '<li class="muted">No PDF file is archived in this folder.</li>'
     rows = []
@@ -105,13 +111,19 @@ def pdf_rows(folder: Path, resources: PaperResources | None = None) -> str:
             f'{h(path.name)}</a> <span class="muted">{path.stat().st_size:,} bytes{h(label)}</span></li>'
         )
     for item in resources.archive_documents:
-        rows.append(f'<li><a href="{h(item["url"])}">Original Office source (pinned GitHub archive)</a></li>')
+        rows.append(
+            f'<li><a href="{h(item["url"])}">Original Office source (pinned GitHub archive)</a></li>'
+        )
     return "\n".join(rows)
 
 
-def image_gallery_link(folder: Path, work_title: str = "", resources: PaperResources | None = None) -> str:
+def image_gallery_link(
+    folder: Path, work_title: str = "", resources: PaperResources | None = None
+) -> str:
     """Return GitHub-backed image previews for the repository-only binaries."""
-    resources = resources or PaperResources.load(REPO_ROOT, folder.relative_to(REPO_ROOT).as_posix())
+    resources = resources or PaperResources.load(
+        REPO_ROOT, folder.relative_to(REPO_ROOT).as_posix()
+    )
     img_files = resources.images
     if not img_files:
         return ""
@@ -124,25 +136,34 @@ def image_gallery_link(folder: Path, work_title: str = "", resources: PaperResou
     thumb_html = '<div class="image-thumbs">'
     for img in thumbs:
         # Extract page number from filename like "page10_img1.png" or "slide1_img1.png"
-        page_match = __import__('re').search(r'(page|slide)(\d+)', img.name)
+        page_match = __import__("re").search(r"(page|slide)(\d+)", img.name)
         if page_match:
             alt_text = f"Figure from {folder_title}, {page_match.group(1)} {page_match.group(2)}"
         else:
             alt_text = f"Figure from {folder_title} ({img.stem})"
-        raw_url = "https://raw.githubusercontent.com/docxology/docxology/main/" + \
-            "/".join(quote(part) for part in (*folder.relative_to(REPO_ROOT).parts, "images", img.name))
-        tree_url = "https://github.com/docxology/docxology/tree/main/" + \
-            "/".join(quote(part) for part in (*folder.relative_to(REPO_ROOT).parts, "images"))
+        raw_url = (
+            "https://raw.githubusercontent.com/docxology/docxology/main/"
+            + "/".join(
+                quote(part)
+                for part in (*folder.relative_to(REPO_ROOT).parts, "images", img.name)
+            )
+        )
+        tree_url = "https://github.com/docxology/docxology/tree/main/" + "/".join(
+            quote(part) for part in (*folder.relative_to(REPO_ROOT).parts, "images")
+        )
         thumb_html += f'<a href="{h(tree_url)}" class="thumb-link"><img src="{h(raw_url)}" alt="{h(alt_text)}" loading="lazy"></a>'
     thumb_html += "</div>"
     more = f' <span class="muted">+{count - 6} more</span>' if count > 6 else ""
-    tree_url = "https://github.com/docxology/docxology/tree/main/" + \
-        "/".join(quote(part) for part in (*folder.relative_to(REPO_ROOT).parts, "images"))
+    tree_url = "https://github.com/docxology/docxology/tree/main/" + "/".join(
+        quote(part) for part in (*folder.relative_to(REPO_ROOT).parts, "images")
+    )
     return f'<a class="btn btn-outline" href="{h(tree_url)}">Extracted Images ({count}) — GitHub</a>{more}{thumb_html}'
 
 
 def required_links(folder: Path, resources: PaperResources | None = None) -> str:
-    resources = resources or PaperResources.load(REPO_ROOT, folder.relative_to(REPO_ROOT).as_posix())
+    resources = resources or PaperResources.load(
+        REPO_ROOT, folder.relative_to(REPO_ROOT).as_posix()
+    )
     labels = [
         ("README.md", "README"),
         ("AGENTS.md", "AGENTS"),
@@ -178,20 +199,29 @@ def render_page(work: dict) -> str:
     folder = resources.folder
     if folder is None:
         raise ValueError(f"No public source folder: {docs_path}")
-    summary = abstract_display_text(work.get("_enrichment", {}).get("abstract")) or "An abstract is not available in this archive."
-    summary_html = "".join("<p>" + h(paragraph).replace("\n", "<br>") + "</p>" for paragraph in summary.split("\n\n"))
+    summary = (
+        abstract_display_text(work.get("_enrichment", {}).get("abstract"))
+        or "An abstract is not available in this archive."
+    )
+    summary_html = "".join(
+        "<p>" + h(paragraph).replace("\n", "<br>") + "</p>"
+        for paragraph in summary.split("\n\n")
+    )
     doi_url = f"https://doi.org/{work['doi']}" if work.get("doi") else ""
     canonical = works_canonical(work)
     domain_href = domain_page_href(work.get("domain", ""), depth=2)
     domain_label = (
-        f'<a href="{domain_href}">{h(work["domain_name"])}</a>' if domain_href else h(work["domain_name"])
+        f'<a href="{domain_href}">{h(work["domain_name"])}</a>'
+        if domain_href
+        else h(work["domain_name"])
     )
-    return f"""<!DOCTYPE html>
+    return (
+        f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{h(work['title'])} Documentation — Daniel Ari Friedman</title>
+    <title>{h(work["title"])} Documentation — Daniel Ari Friedman</title>
     <meta name="description" content="{h(clip_description(summary))}">
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="{h(canonical)}">
@@ -202,15 +232,15 @@ def render_page(work: dict) -> str:
     <link rel="stylesheet" href="../../style.css?v=site-20261002b">
 {HEAD_EXTRAS}
     <meta property="og:type" content="article">
-    <meta property="og:title" content="{h(work['title'])} Documentation">
+    <meta property="og:title" content="{h(work["title"])} Documentation">
     <meta property="og:description" content="{h(clip_description(summary))}">
     <meta property="og:url" content="{h(canonical)}">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{h(work['title'])} Documentation">
+    <meta name="twitter:title" content="{h(work["title"])} Documentation">
     <meta name="twitter:description" content="{h(clip_description(summary))}">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
-    <meta name="twitter:image:alt" content="{h(work['title'])}">
+    <meta name="twitter:image:alt" content="{h(work["title"])}">
     <style>
         {BREADCRUMB_CSS}
     </style>
@@ -220,15 +250,15 @@ def render_page(work: dict) -> str:
 {render_nav(active="works", depth=2)}
 {render_breadcrumb(breadcrumb_trail(work), depth=2)}
     <header class="paper-hero">
-        <p class="eyebrow">{domain_label} · {h(work['type'])} · {h(work['year'])}</p>
-        <h1>{h(work['title'])}</h1>
-        <p class="sub">Documentation folder for catalog row {h(work['num'])} · <a href="../../works/{h(work['citation_key'])}.html">Canonical work page</a></p>
+        <p class="eyebrow">{domain_label} · {h(work["type"])} · {h(work["year"])}</p>
+        <h1>{h(work["title"])}</h1>
+        <p class="sub">Documentation folder for catalog row {h(work["num"])} · <a href="../../works/{h(work["citation_key"])}.html">Canonical work page</a></p>
         <div class="work-actions" role="group" aria-label="Paper source files"><a class="btn btn-outline" href="{h(resources.github_url)}">Paper folder on GitHub</a></div>
     </header>
     <main id="main" class="main">{revision_notice_html(work.get("_enrichment", {}))}
         <section class="section">
             <div class="artifact-grid">
-                <div class="artifact-card"><strong>Primary Work Page</strong><a href="../../works/{h(work['citation_key'])}.html">{h(work['citation_key'])}</a></div>
+                <div class="artifact-card"><strong>Primary Work Page</strong><a href="../../works/{h(work["citation_key"])}.html">{h(work["citation_key"])}</a></div>
                 <div class="artifact-card"><strong>DOI / Source</strong>{f'<a href="{h(doi_url)}">{h(work["doi"])}</a>' if doi_url else f'<a href="{h(work.get("url") or "../../publications.html")}">Primary source</a>'}</div>
                 <div class="artifact-card"><strong>Folder</strong><span>{h(docs_path)}/</span></div>
             </div>
@@ -242,7 +272,7 @@ def render_page(work: dict) -> str:
             <div class="artifact-grid">
                 <div class="artifact-card"><strong>Documentation</strong><p>{required_links(folder, resources)}</p></div>
                 <div class="artifact-card"><strong>Document Files</strong><ul>{pdf_rows(folder, resources)}</ul></div>
-                <div class="artifact-card"><strong>Extracted Content</strong><p>{image_gallery_link(folder, work['title'], resources) or '<span class="muted">No extracted figures are archived.</span>'}</p></div>
+                <div class="artifact-card"><strong>Extracted Content</strong><p>{image_gallery_link(folder, work["title"], resources) or '<span class="muted">No extracted figures are archived.</span>'}</p></div>
             </div>
         </section>
     </main>
@@ -251,16 +281,27 @@ def render_page(work: dict) -> str:
         <p>Daniel Ari Friedman, PhD · <a href="../../publications.html">Unified bibliography</a> · <a href="../../works/">Works index</a></p>
         {footer_stamp}
     </footer>
-""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
+"""
+        + INTERACTIVE_SCRIPTS
+        + "\n"
+        + MENU_ESC_SCRIPT
+        + """</body>
 </html>
 """
+    )
 
 
 def render_outputs() -> dict[Path, str]:
     outputs: dict[Path, str] = {}
     failures: list[str] = []
     visible = source_paths(REPO_ROOT)
-    works = [{**work, "_resources": PaperResources.load(REPO_ROOT, work["docs_path"], visible)} for work in unique_doc_works(load_works())]
+    works = [
+        {
+            **work,
+            "_resources": PaperResources.load(REPO_ROOT, work["docs_path"], visible),
+        }
+        for work in unique_doc_works(load_works())
+    ]
     enrichments = enrichment_map(works, visible_paths=visible)
     for work in works:
         work["_enrichment"] = enrichments[work["citation_key"]]
@@ -310,19 +351,27 @@ def reconcile_outputs(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if generated paper-folder pages are stale")
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Fail if generated paper-folder pages are stale",
+    )
     args = parser.parse_args()
     errors = validate_inputs()
     if errors:
         raise SystemExit("Invalid paper folders:\n" + "\n".join(errors[:120]))
     outputs = render_outputs()
-    stale = [str(path.relative_to(REPO_ROOT)) for path in reconcile_outputs(outputs, check=args.check)]
+    stale = [
+        str(path.relative_to(REPO_ROOT))
+        for path in reconcile_outputs(outputs, check=args.check)
+    ]
     if args.check:
         expected = set(outputs)
         extra = {
             path
             for path in generated_output_files(REPO_ROOT, PAPERS_DIR, "index.html")
-            if path.parent.parent == PAPERS_DIR and re.match(r"\d{4}_", path.parent.name)
+            if path.parent.parent == PAPERS_DIR
+            and re.match(r"\d{4}_", path.parent.name)
         } - expected
         stale.extend(str(path.relative_to(REPO_ROOT)) for path in sorted(extra))
     if stale:

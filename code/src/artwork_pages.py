@@ -16,7 +16,9 @@ import unicodedata
 SITE_ORIGIN = "https://danielarifriedman.com/"
 ARTWORKS_DIR = "artworks"
 COLLECTIONS_DIR = "art-collections"
-ARTWORK_PAGE_MARKER = "<!-- docxology:generated-artwork-page; ownership=artwork-pages-manifest -->"
+ARTWORK_PAGE_MARKER = (
+    "<!-- docxology:generated-artwork-page; ownership=artwork-pages-manifest -->"
+)
 ARTWORK_PAGES_MANIFEST_VERSION = "ArtworkPages.v1"
 ARTWORKS_INDEX_PATH = f"{ARTWORKS_DIR}/index.html"
 
@@ -66,7 +68,10 @@ def plain_text(markup: str) -> str:
 
 def is_thin(record: dict) -> bool:
     """No tags and a too-short plain description -> generated but noindex."""
-    return not record.get("tags") and len(plain_text(record.get("desc", ""))) < THIN_DESCRIPTION_CHARS
+    return (
+        not record.get("tags")
+        and len(plain_text(record.get("desc", ""))) < THIN_DESCRIPTION_CHARS
+    )
 
 
 def created_date(record: dict) -> str:
@@ -100,7 +105,10 @@ def image_alt_text(record: dict) -> str:
 def page_title(record: dict) -> str:
     """Title + medium suffix clipped to the 65-char SERP budget on word boundaries."""
     title = " ".join(plain_text(record.get("title", "")).split()) or "Untitled artwork"
-    if len(html.escape(title, quote=True)) + len(html.escape(TITLE_SUFFIX, quote=True)) <= TITLE_MAX_LEN:
+    if (
+        len(html.escape(title, quote=True)) + len(html.escape(TITLE_SUFFIX, quote=True))
+        <= TITLE_MAX_LEN
+    ):
         return f"{title}{TITLE_SUFFIX}"
     if len(html.escape(title, quote=True)) <= TITLE_MAX_LEN:
         return title
@@ -142,8 +150,4 @@ def artwork_page_paths(payload: dict) -> list[str]:
 def sitemap_paths(payload: dict) -> list[str]:
     """Artwork page paths promoted to the sitemap (thin noindex pages excluded)."""
     records = payload.get("artworks", [])
-    return [
-        page_rel_path(record)
-        for record in records
-        if not is_thin(record)
-    ]
+    return [page_rel_path(record) for record in records if not is_thin(record)]

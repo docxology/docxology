@@ -41,10 +41,16 @@ def test_every_relative_target_resolves_from_the_github_directory():
         path = target.split("#", 1)[0].split("?", 1)[0]
         if not path:
             continue
-        candidate = (MIRROR.parent / path) if not path.startswith("/") else (REPO_ROOT / path.lstrip("/"))
+        candidate = (
+            (MIRROR.parent / path)
+            if not path.startswith("/")
+            else (REPO_ROOT / path.lstrip("/"))
+        )
         if not candidate.exists():
             unresolved.append(target)
-    assert unresolved == [], f"unresolvable targets in the rendered README: {unresolved[:8]}"
+    assert unresolved == [], (
+        f"unresolvable targets in the rendered README: {unresolved[:8]}"
+    )
 
 
 def test_absolute_and_anchor_targets_are_left_alone():
@@ -61,7 +67,10 @@ def test_absolute_and_anchor_targets_are_left_alone():
 def test_repo_relative_targets_are_relocated_to_the_repository_root():
     assert mirror.relocate_target("publications.html") == "../publications.html"
     assert mirror.relocate_target("papers/") == "../papers/"
-    assert mirror.relocate_target(".well-known/security.txt") == "../.well-known/security.txt"
+    assert (
+        mirror.relocate_target(".well-known/security.txt")
+        == "../.well-known/security.txt"
+    )
 
 
 def test_render_carries_a_do_not_edit_marker():

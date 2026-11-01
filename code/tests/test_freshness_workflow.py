@@ -32,9 +32,13 @@ WORKFLOW = REPO_ROOT / ".github" / "workflows" / "freshness.yml"
 # for a reason unrelated to the logic under test.
 REQUIRED_TOOLS = ("bash", "jq", "cmp", "diff", "sort", "tail", "printf")
 _MISSING_TOOLS = [tool for tool in REQUIRED_TOOLS if shutil.which(tool) is None]
+
+
 @pytest.fixture(scope="module", autouse=True)
 def required_shell_tools():
-    assert not _MISSING_TOOLS, f"freshness compare step needs {', '.join(REQUIRED_TOOLS)}; not on PATH: {', '.join(_MISSING_TOOLS)}"
+    assert not _MISSING_TOOLS, (
+        f"freshness compare step needs {', '.join(REQUIRED_TOOLS)}; not on PATH: {', '.join(_MISSING_TOOLS)}"
+    )
 
 
 LATEST_FACTS = "reports/public_source_snapshot_latest.facts.json"
@@ -50,7 +54,9 @@ def _steps() -> list[dict]:
 
 def _step_by_id(step_id: str) -> dict:
     matches = [step for step in _steps() if step.get("id") == step_id]
-    assert len(matches) == 1, f"expected exactly one step with id {step_id!r} in {WORKFLOW.name}"
+    assert len(matches) == 1, (
+        f"expected exactly one step with id {step_id!r} in {WORKFLOW.name}"
+    )
     return matches[0]
 
 
@@ -60,7 +66,9 @@ def compare_script() -> str:
     assert isinstance(script, str) and script.strip()
     # The runner expands ${{ ... }} before bash sees the script; this harness does not,
     # so an expression would run as literal text and silently test something else.
-    assert "${{" not in script, "compare step uses a workflow expression; extend this harness to substitute it"
+    assert "${{" not in script, (
+        "compare step uses a workflow expression; extend this harness to substitute it"
+    )
     return script
 
 
@@ -115,13 +123,18 @@ class CompareResult:
 
 def _write_json(path: Path, payload: object, *, sort_keys: bool = False) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, indent=2, sort_keys=sort_keys, ensure_ascii=False) + "\n", encoding="utf-8")
+    path.write_text(
+        json.dumps(payload, indent=2, sort_keys=sort_keys, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
 
 
 def write_baseline(root: Path, facts: dict, date: str = "2026-09-30") -> Path:
     """A dated, checked-in snapshot: facts wrapped in the full report envelope."""
     path = root / "reports" / f"public_source_snapshot_{date}.json"
-    _write_json(path, {"generated_at": f"{date}T04:00:00+00:00", "facts": facts, "checks": []})
+    _write_json(
+        path, {"generated_at": f"{date}T04:00:00+00:00", "facts": facts, "checks": []}
+    )
     return path
 
 
@@ -155,10 +168,14 @@ def write_latest_unsorted(root: Path, facts: dict) -> Path:
     path = root / LATEST_FACTS
     _write_json(path, _reverse_key_order(facts))
     written = json.loads(path.read_text(encoding="utf-8"))
-    assert list(written) != sorted(written), "top-level keys must be unsorted for this helper to mean anything"
-    assert any(list(inner) != sorted(inner) for inner in written.values() if isinstance(inner, dict)), (
-        "nested keys must be unsorted too"
+    assert list(written) != sorted(written), (
+        "top-level keys must be unsorted for this helper to mean anything"
     )
+    assert any(
+        list(inner) != sorted(inner)
+        for inner in written.values()
+        if isinstance(inner, dict)
+    ), "nested keys must be unsorted too"
     return path
 
 
@@ -177,7 +194,9 @@ def run_compare(root: Path, *, tmp_out: Path | None = None) -> CompareResult:
         timeout=60,
         check=False,
     )
-    lines = [line for line in github_output.read_text(encoding="utf-8").splitlines() if line]
+    lines = [
+        line for line in github_output.read_text(encoding="utf-8").splitlines() if line
+    ]
     outputs = dict(line.split("=", 1) for line in lines)
     return CompareResult(proc.returncode, outputs, lines, proc.stdout, proc.stderr)
 
@@ -206,7 +225,11 @@ def _variant(mutate) -> dict:
 
 def test_compare_step_is_wired_to_the_files_the_refresh_step_writes():
     """The refresh step's --facts-output and the compare step's input path must be the same file."""
-    refresh = next(step for step in _steps() if step.get("name") == "Refresh public-source snapshot")
+    refresh = next(
+        step
+        for step in _steps()
+        if step.get("name") == "Refresh public-source snapshot"
+    )
     assert f"--facts-output {LATEST_FACTS}" in refresh["run"]
     assert LATEST_FACTS in compare_script()
 
@@ -226,7 +249,9 @@ def test_identical_facts_report_unchanged(root):
     result = compare(root, BASE_FACTS, BASE_FACTS)
     assert result.returncode == 0, result.stderr
     assert result.outputs["changed"] == "false"
-    assert result.outputs["baseline"] == "reports/public_source_snapshot_2026-09-30.json"
+    assert (
+        result.outputs["baseline"] == "reports/public_source_snapshot_2026-09-30.json"
+    )
     assert result.stdout.strip() == "", "no diff is printed when nothing moved"
 
 
@@ -235,9 +260,13 @@ def test_telemetry_only_changes_report_unchanged(root):
 
     def churn(facts: dict) -> None:
         facts["GitHub user docxology"]["updated_at"] = "2026-10-06T09:30:00Z"
-        facts["GitHub user ActiveInferenceInstitute"]["updated_at"] = "2026-10-05T18:00:00Z"
+        facts["GitHub user ActiveInferenceInstitute"]["updated_at"] = (
+            "2026-10-05T18:00:00Z"
+        )
         facts["GitHub repo ActiveInferenceInstitute/fep_lean"]["stargazers_count"] = 9
-        facts["GitHub repo ActiveInferenceInstitute/fep_lean"]["updated_at"] = "2026-10-06T00:00:00Z"
+        facts["GitHub repo ActiveInferenceInstitute/fep_lean"]["updated_at"] = (
+            "2026-10-06T00:00:00Z"
+        )
 
     result = compare(root, BASE_FACTS, _variant(churn))
     assert result.returncode == 0, result.stderr
@@ -260,7 +289,11 @@ def test_key_order_differences_are_not_drift(root):
 
 def test_normalized_files_drop_only_the_telemetry_keys(root):
     compare(root, BASE_FACTS, BASE_FACTS)
-    normalized = json.loads((root / "reports" / "public_source_snapshot_latest.facts.norm.json").read_text("utf-8"))
+    normalized = json.loads(
+        (root / "reports" / "public_source_snapshot_latest.facts.norm.json").read_text(
+            "utf-8"
+        )
+    )
     user = normalized["GitHub user docxology"]
     assert "updated_at" not in user and "stargazers_count" not in user
     assert user["public_repos"] == 231 and user["type"] == "User"
@@ -272,31 +305,53 @@ def test_normalized_files_drop_only_the_telemetry_keys(root):
 
 
 def _assert_drift(result: CompareResult, *needles: str) -> None:
-    assert result.returncode == 0, f"the step must not fail when drift is found:\n{result.stderr}"
+    assert result.returncode == 0, (
+        f"the step must not fail when drift is found:\n{result.stderr}"
+    )
     assert result.outputs["changed"] == "true"
-    assert result.outputs["baseline"] == "reports/public_source_snapshot_2026-09-30.json"
-    assert result.stdout.startswith("--- reports/public_source_snapshot_baseline.facts.norm.json"), result.stdout
+    assert (
+        result.outputs["baseline"] == "reports/public_source_snapshot_2026-09-30.json"
+    )
+    assert result.stdout.startswith(
+        "--- reports/public_source_snapshot_baseline.facts.norm.json"
+    ), result.stdout
     for needle in needles:
-        assert needle in result.stdout, f"{needle!r} missing from the logged diff:\n{result.stdout}"
+        assert needle in result.stdout, (
+            f"{needle!r} missing from the logged diff:\n{result.stdout}"
+        )
 
 
 def test_public_repo_count_change_reports_drift(root):
-    result = compare(root, BASE_FACTS, _variant(
-        lambda f: f["GitHub user ActiveInferenceInstitute"].__setitem__("public_repos", 46)
-    ))
+    result = compare(
+        root,
+        BASE_FACTS,
+        _variant(
+            lambda f: f["GitHub user ActiveInferenceInstitute"].__setitem__(
+                "public_repos", 46
+            )
+        ),
+    )
     _assert_drift(result, '-    "public_repos": 45', '+    "public_repos": 46')
 
 
 def test_zenodo_first_doi_change_reports_drift(root):
-    result = compare(root, BASE_FACTS, _variant(
-        lambda f: f["Zenodo exact-name creator records"].__setitem__("first_doi", "10.5281/zenodo.1000002")
-    ))
+    result = compare(
+        root,
+        BASE_FACTS,
+        _variant(
+            lambda f: f["Zenodo exact-name creator records"].__setitem__(
+                "first_doi", "10.5281/zenodo.1000002"
+            )
+        ),
+    )
     _assert_drift(result, "10.5281/zenodo.1000001", "10.5281/zenodo.1000002")
 
 
 def test_missing_label_reports_drift(root):
     """A check that failed to fetch drops its label from facts; that must read as drift, not as 'no change'."""
-    result = compare(root, BASE_FACTS, _variant(lambda f: f.pop("Zenodo record 18686966")))
+    result = compare(
+        root, BASE_FACTS, _variant(lambda f: f.pop("Zenodo record 18686966"))
+    )
     _assert_drift(result, "Zenodo record 18686966")
 
 
@@ -308,15 +363,23 @@ def test_added_type_key_reports_drift(root):
 
 
 def test_account_type_change_reports_drift(root):
-    result = compare(root, BASE_FACTS, _variant(
-        lambda f: f["GitHub user ActiveInferenceInstitute"].__setitem__("type", "User")
-    ))
+    result = compare(
+        root,
+        BASE_FACTS,
+        _variant(
+            lambda f: f["GitHub user ActiveInferenceInstitute"].__setitem__(
+                "type", "User"
+            )
+        ),
+    )
     _assert_drift(result, '-    "type": "Organization"', '+    "type": "User"')
 
 
 def test_unsorted_latest_facts_still_report_a_real_change(root):
     """Sorting the unsorted latest side must not hide a genuine fact change."""
-    changed = _variant(lambda f: f["GitHub user docxology"].__setitem__("public_repos", 232))
+    changed = _variant(
+        lambda f: f["GitHub user docxology"].__setitem__("public_repos", 232)
+    )
     write_baseline(root, BASE_FACTS)
     write_latest_unsorted(root, changed)
     result = run_compare(root)
@@ -324,7 +387,11 @@ def test_unsorted_latest_facts_still_report_a_real_change(root):
 
 
 def test_new_label_reports_drift(root):
-    result = compare(root, BASE_FACTS, _variant(lambda f: f.__setitem__("Zenodo record 99999999", {"title": "New"})))
+    result = compare(
+        root,
+        BASE_FACTS,
+        _variant(lambda f: f.__setitem__("Zenodo record 99999999", {"title": "New"})),
+    )
     _assert_drift(result, "Zenodo record 99999999")
 
 
@@ -346,39 +413,60 @@ def test_telemetry_noise_does_not_mask_a_real_change(root):
 
 def test_baseline_is_the_newest_dated_snapshot_and_never_the_latest_file(root):
     """The glob matches only YYYY-MM-DD snapshots, so the freshly written *_latest.json cannot be its own baseline."""
-    newer = _variant(lambda f: f["GitHub user docxology"].__setitem__("public_repos", 240))
+    newer = _variant(
+        lambda f: f["GitHub user docxology"].__setitem__("public_repos", 240)
+    )
     write_baseline(root, BASE_FACTS, "2026-09-17")
     write_baseline(root, newer, "2026-09-30")
     # A decoy named like the refresh output: were it picked, the comparison below would read as unchanged.
-    _write_json(root / "reports" / "public_source_snapshot_latest.json", {"facts": newer, "checks": []})
+    _write_json(
+        root / "reports" / "public_source_snapshot_latest.json",
+        {"facts": newer, "checks": []},
+    )
     write_latest(root, newer)
     result = run_compare(root)
     assert result.returncode == 0, result.stderr
-    assert result.outputs["baseline"] == "reports/public_source_snapshot_2026-09-30.json"
+    assert (
+        result.outputs["baseline"] == "reports/public_source_snapshot_2026-09-30.json"
+    )
     assert result.outputs["changed"] == "false"
 
 
 def test_a_latest_file_alone_cannot_hide_drift(root):
     """Only the dated baseline differs from the new facts; the equal *_latest.json decoy must be ignored."""
-    changed = _variant(lambda f: f["GitHub user docxology"].__setitem__("public_repos", 240))
+    changed = _variant(
+        lambda f: f["GitHub user docxology"].__setitem__("public_repos", 240)
+    )
     write_baseline(root, BASE_FACTS, "2026-09-30")
-    _write_json(root / "reports" / "public_source_snapshot_latest.json", {"facts": changed, "checks": []})
+    _write_json(
+        root / "reports" / "public_source_snapshot_latest.json",
+        {"facts": changed, "checks": []},
+    )
     write_latest(root, changed)
     result = run_compare(root)
     assert result.returncode == 0, result.stderr
     assert result.outputs["changed"] == "true"
-    assert result.outputs["baseline"] == "reports/public_source_snapshot_2026-09-30.json"
+    assert (
+        result.outputs["baseline"] == "reports/public_source_snapshot_2026-09-30.json"
+    )
 
 
 def test_other_report_files_are_not_mistaken_for_baselines(root):
     """Inventory reports and non-snapshot files sharing the directory do not match the baseline glob."""
     write_baseline(root, BASE_FACTS, "2026-09-30")
-    _write_json(root / "reports" / "public_source_inventory_2026-10-05.json", {"facts": {"x": 1}})
-    _write_json(root / "reports" / "public_source_snapshot_2026-10-05.facts.json", {"x": 1})
+    _write_json(
+        root / "reports" / "public_source_inventory_2026-10-05.json",
+        {"facts": {"x": 1}},
+    )
+    _write_json(
+        root / "reports" / "public_source_snapshot_2026-10-05.facts.json", {"x": 1}
+    )
     write_latest(root, BASE_FACTS)
     result = run_compare(root)
     assert result.returncode == 0, result.stderr
-    assert result.outputs["baseline"] == "reports/public_source_snapshot_2026-09-30.json"
+    assert (
+        result.outputs["baseline"] == "reports/public_source_snapshot_2026-09-30.json"
+    )
     assert result.outputs["changed"] == "false"
 
 

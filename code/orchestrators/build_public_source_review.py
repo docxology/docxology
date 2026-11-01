@@ -148,7 +148,7 @@ def _prior_snapshot_from_existing_report(report_path: Path | None) -> Path | Non
         return None
     try:
         payload = json.loads(report_path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
+    except OSError, json.JSONDecodeError:
         return None
     inputs = payload.get("inputs") if isinstance(payload, dict) else None
     provenance = (
@@ -170,7 +170,7 @@ def _prior_snapshot_from_existing_report(report_path: Path | None) -> Path | Non
                 return None
         else:
             resolved.relative_to(REPO_ROOT.resolve())
-    except (OSError, ValueError):
+    except OSError, ValueError:
         return None
     return candidate if candidate.is_file() else None
 
@@ -230,8 +230,6 @@ def _resolve_inputs(
         else REPO_ROOT / "data/scholar-verification-receipt.json",
         "previous_snapshot_path": previous,
     }
-
-
 
 
 def _review_source_commit(
@@ -364,7 +362,7 @@ def main(argv: list[str] | None = None) -> int:
             report_date = json.loads(report_path.read_text(encoding="utf-8")).get(
                 "date"
             )
-        except (OSError, ValueError):
+        except OSError, ValueError:
             report_date = None
     report_date = report_date or _utc_date()
     pairing_refresh_status = args.pairing_refresh_status
@@ -382,7 +380,7 @@ def main(argv: list[str] | None = None) -> int:
             if isinstance(context, dict):
                 pairing_refresh_status = context.get("pairing_refresh_status")
                 pairing_refresh_note = str(context.get("pairing_refresh_note") or "")
-        except (OSError, ValueError, json.JSONDecodeError):
+        except OSError, ValueError, json.JSONDecodeError:
             pass
     pairing_refresh_status = pairing_refresh_status or "auto"
     review_source_commit = _review_source_commit(args.exact_source_revision)

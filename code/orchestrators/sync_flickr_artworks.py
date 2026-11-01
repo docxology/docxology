@@ -129,12 +129,20 @@ class FlickrSyncError(RuntimeError):
 def redact_url(url: str) -> str:
     """The request URL with its ``api_key`` value masked, for messages and logs."""
     parts = urllib.parse.urlsplit(url)
-    query = [(key, "REDACTED" if key == "api_key" else value) for key, value in urllib.parse.parse_qsl(parts.query, keep_blank_values=True)]
+    query = [
+        (key, "REDACTED" if key == "api_key" else value)
+        for key, value in urllib.parse.parse_qsl(parts.query, keep_blank_values=True)
+    ]
     return urllib.parse.urlunsplit(parts._replace(query=urllib.parse.urlencode(query)))
 
 
 def api_url(method: str, api_key: str, **params: object) -> str:
-    query = {"method": method, "api_key": api_key, "format": "json", "nojsoncallback": "1"}
+    query = {
+        "method": method,
+        "api_key": api_key,
+        "format": "json",
+        "nojsoncallback": "1",
+    }
     query.update(params)
     return f"{FLICKR_REST}?{urllib.parse.urlencode(query)}"
 
@@ -144,7 +152,9 @@ def fetch_json(url: str, *, attempts: int = 3, timeout: float = 30.0) -> dict:
     last_error: Exception | None = None
     for attempt in range(attempts):
         try:
-            request = urllib.request.Request(url, headers={"User-Agent": "docxology-art-sync/1.0"})
+            request = urllib.request.Request(
+                url, headers={"User-Agent": "docxology-art-sync/1.0"}
+            )
             with urllib.request.urlopen(request, timeout=timeout) as response:
                 payload = json.load(response)
         except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:  # noqa: RSE102
@@ -156,7 +166,9 @@ def fetch_json(url: str, *, attempts: int = 3, timeout: float = 30.0) -> dict:
             message = payload.get("message", "unknown Flickr error")
             raise FlickrSyncError(f"Flickr API error {code}: {message}")
         return payload
-    raise FlickrSyncError(f"Flickr fetch failed after {attempts} attempts: {redact_url(url)} ({last_error})")
+    raise FlickrSyncError(
+        f"Flickr fetch failed after {attempts} attempts: {redact_url(url)} ({last_error})"
+    )
 
 
 def fetch_license_map(api_key: str) -> dict[str, dict[str, str]]:
@@ -193,9 +205,11 @@ def fetch_public_photos(api_key: str) -> tuple[list[dict], int]:
             envelope = {}
         try:
             page_total = int(envelope["total"])
-        except (KeyError, TypeError, ValueError):
+        except KeyError, TypeError, ValueError:
             if page == 1:
-                raise FlickrSyncError("Flickr's first photo page states no usable total; refusing an unverifiable listing")
+                raise FlickrSyncError(
+                    "Flickr's first photo page states no usable total; refusing an unverifiable listing"
+                )
             page_total = total
         total = max(total, page_total)
         batch = envelope.get("photo", [])
@@ -204,7 +218,7 @@ def fetch_public_photos(api_key: str) -> tuple[list[dict], int]:
         photos.extend(batch)
         try:
             pages = int(envelope.get("pages", 1))
-        except (TypeError, ValueError):
+        except TypeError, ValueError:
             pages = page
         if page >= pages or not batch:
             break
@@ -221,7 +235,9 @@ def fetch_size_maps(api_key: str, photo_ids: list[str]) -> dict[str, dict[str, s
     """
 
     def one(photo_id: str) -> tuple[str, dict[str, str]]:
-        payload = fetch_json(api_url("flickr.photos.getSizes", api_key, photo_id=photo_id))
+        payload = fetch_json(
+            api_url("flickr.photos.getSizes", api_key, photo_id=photo_id)
+        )
         sizes: dict[str, str] = {}
         for size in payload.get("sizes", {}).get("size", []):
             label = str(size.get("label", "")).strip()
@@ -241,9 +257,11 @@ def epoch_to_datetime(epoch: object) -> str:
     """Unix-epoch string (Flickr ``dateupload``) to UTC 'YYYY-MM-DD HH:MM:SS'."""
     try:
         seconds = int(str(epoch))
-    except (TypeError, ValueError):
+    except TypeError, ValueError:
         return ""
-    return datetime.fromtimestamp(seconds, tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
+    return datetime.fromtimestamp(seconds, tz=timezone.utc).strftime(
+        "%Y-%m-%d %H:%M:%S"
+    )
 
 
 def clean_tags(raw: object) -> list[str]:
@@ -266,7 +284,9 @@ def clean_tags(raw: object) -> list[str]:
     return tags
 
 
-def build_record(photo: dict, sizes: dict[str, str], license_map: dict[str, dict[str, str]]) -> dict:
+def build_record(
+    photo: dict, sizes: dict[str, str], license_map: dict[str, dict[str, str]]
+) -> dict:
     photo_id = str(photo["id"])
     license_code = str(photo.get("license", "0"))
     license_entry = license_map.get(license_code, {})
@@ -291,8 +311,15 @@ def build_record(photo: dict, sizes: dict[str, str], license_map: dict[str, dict
     return {field: record[field] for field in RECORD_FIELDS}
 
 
-def build_payload(photos: list[dict], size_maps: dict[str, dict[str, str]], license_map: dict[str, dict[str, str]]) -> dict:
-    records = [build_record(photo, size_maps.get(str(photo["id"]), {}), license_map) for photo in photos]
+def build_payload(
+    photos: list[dict],
+    size_maps: dict[str, dict[str, str]],
+    license_map: dict[str, dict[str, str]],
+) -> dict:
+    records = [
+        build_record(photo, size_maps.get(str(photo["id"]), {}), license_map)
+        for photo in photos
+    ]
     records.sort(key=lambda record: (record["date_upload"], record["id"]), reverse=True)
     return {
         "generated_at": None,  # filled by write/check below via stable_generated_at
@@ -314,7 +341,9 @@ def render(payload: dict, *, existing_generated_at: str | None) -> str:
     if stamp is None:
         body = dict(payload)
         body["generated_at"] = ""
-        stamp = stable_generated_at(OUTPUT, body) or datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        stamp = stable_generated_at(OUTPUT, body) or datetime.now(
+            timezone.utc
+        ).strftime("%Y-%m-%d")
         # stable_generated_at only reuses a timestamp when the body matches the
         # file; a fresh body gets today's date, matching other generated exports.
     final = dict(payload)
@@ -362,7 +391,11 @@ def drift_body(payload: dict) -> str:
     body.pop("generated_at", None)
     if isinstance(body.get("artworks"), list):
         body["artworks"] = [
-            {key: value for key, value in record.items() if key not in DRIFT_IGNORED_FIELDS}
+            {
+                key: value
+                for key, value in record.items()
+                if key not in DRIFT_IGNORED_FIELDS
+            }
             if isinstance(record, dict)
             else record
             for record in body["artworks"]
@@ -423,7 +456,8 @@ def classify_drift(current: object, live: dict) -> tuple[str, list[str]]:
         changed = sum(
             1
             for photo_id, record in live_records.items()
-            if photo_id in current_records and record.get("views") != current_records[photo_id].get("views")
+            if photo_id in current_records
+            and record.get("views") != current_records[photo_id].get("views")
         )
         return "views-only", [f"views changed on {changed} records"]
     added = _newest_first(set(live_records) - set(current_records), live_records)
@@ -440,7 +474,11 @@ def classify_drift(current: object, live: dict) -> tuple[str, list[str]]:
 
 def _record_label(record: dict, index: int) -> str:
     photo_id = record.get("id")
-    return f"record {photo_id}" if isinstance(photo_id, str) and photo_id else f"artworks[{index}]"
+    return (
+        f"record {photo_id}"
+        if isinstance(photo_id, str) and photo_id
+        else f"artworks[{index}]"
+    )
 
 
 def _record_errors(record: dict, label: str) -> list[str]:
@@ -451,15 +489,28 @@ def _record_errors(record: dict, label: str) -> list[str]:
         missing = [field for field in RECORD_FIELDS if field not in record]
         unexpected = [field for field in keys if field not in RECORD_FIELDS]
         if missing or unexpected:
-            errors.append(f"{label}: fields differ from RECORD_FIELDS (missing {missing}, unexpected {unexpected})")
+            errors.append(
+                f"{label}: fields differ from RECORD_FIELDS (missing {missing}, unexpected {unexpected})"
+            )
         else:
-            errors.append(f"{label}: fields are not in RECORD_FIELDS order {list(keys)}")
+            errors.append(
+                f"{label}: fields are not in RECORD_FIELDS order {list(keys)}"
+            )
 
     photo_id = record.get("id")
     if not isinstance(photo_id, str) or not re.fullmatch(r"[0-9]+", photo_id):
         errors.append(f"{label}: id {photo_id!r} is not a numeric string")
 
-    for field in ("title", "desc", "date", "views", "media", "license", "license_name", "license_url"):
+    for field in (
+        "title",
+        "desc",
+        "date",
+        "views",
+        "media",
+        "license",
+        "license_name",
+        "license_url",
+    ):
         if field in record and not isinstance(record[field], str):
             errors.append(f"{label}: {field} is not a string")
 
@@ -472,13 +523,17 @@ def _record_errors(record: dict, label: str) -> list[str]:
                 errors.append(f"{label}: tag {tag!r} is not a non-empty string")
             elif tag != "".join(tag.split()):
                 errors.append(f"{label}: tag {tag!r} contains whitespace")
-        duplicates = sorted({tag for tag in tags if isinstance(tag, str) and tags.count(tag) > 1})
+        duplicates = sorted(
+            {tag for tag in tags if isinstance(tag, str) and tags.count(tag) > 1}
+        )
         if duplicates:
             errors.append(f"{label}: duplicate tags {duplicates}")
 
     expected_url = f"https://www.flickr.com/photos/{FLICKR_NSID}/{photo_id}"
     if record.get("flickr_url") != expected_url:
-        errors.append(f"{label}: flickr_url {record.get('flickr_url')!r} != {expected_url!r}")
+        errors.append(
+            f"{label}: flickr_url {record.get('flickr_url')!r} != {expected_url!r}"
+        )
 
     thumb = record.get("thumb")
     if not isinstance(thumb, str) or not thumb.startswith("https://"):
@@ -490,15 +545,21 @@ def _record_errors(record: dict, label: str) -> list[str]:
     else:
         for size_label, source in sizes.items():
             if not isinstance(source, str) or not source.startswith("https://"):
-                errors.append(f"{label}: sizes[{size_label!r}] {source!r} is not an https URL")
+                errors.append(
+                    f"{label}: sizes[{size_label!r}] {source!r} is not an https URL"
+                )
 
     date_upload = record.get("date_upload")
     try:
-        if not isinstance(date_upload, str) or not DATE_UPLOAD_RE.fullmatch(date_upload):
+        if not isinstance(date_upload, str) or not DATE_UPLOAD_RE.fullmatch(
+            date_upload
+        ):
             raise ValueError("not a fixed-width ASCII timestamp")
         datetime.strptime(date_upload, DATE_UPLOAD_FORMAT)
     except ValueError:
-        errors.append(f"{label}: date_upload {date_upload!r} is not YYYY-MM-DD HH:MM:SS")
+        errors.append(
+            f"{label}: date_upload {date_upload!r} is not YYYY-MM-DD HH:MM:SS"
+        )
     return errors
 
 
@@ -570,7 +631,9 @@ def _tag_list(record: dict) -> list:
     return tags if isinstance(tags, list) else []
 
 
-def coverage_summary(payload: dict, *, flickr_total: int | None = None, previous: dict | None = None) -> dict:
+def coverage_summary(
+    payload: dict, *, flickr_total: int | None = None, previous: dict | None = None
+) -> dict:
     """Tag/description coverage of an export, optionally versus Flickr and the last export.
 
     Pure and JSON-serializable. ``short_desc`` counts plain-text descriptions
@@ -584,7 +647,11 @@ def coverage_summary(payload: dict, *, flickr_total: int | None = None, previous
     contributes no records rather than raising.
     """
     artworks = payload.get("artworks") if isinstance(payload, dict) else None
-    records = [record for record in artworks if isinstance(record, dict)] if isinstance(artworks, list) else []
+    records = (
+        [record for record in artworks if isinstance(record, dict)]
+        if isinstance(artworks, list)
+        else []
+    )
     tag_counts = [len(_tag_list(record)) for record in records]
     plain = [plain_text(record.get("desc", "")) for record in records]
     summary: dict = {
@@ -592,9 +659,13 @@ def coverage_summary(payload: dict, *, flickr_total: int | None = None, previous
         "flickr_total": flickr_total,
         "total_mismatch": flickr_total is not None and flickr_total != len(records),
         "untagged": sum(1 for record in records if not record.get("tags")),
-        "untagged_ids": [str(record.get("id")) for record in records if not record.get("tags")],
+        "untagged_ids": [
+            str(record.get("id")) for record in records if not record.get("tags")
+        ],
         "empty_desc": sum(1 for text in plain if not text),
-        "empty_desc_ids": [str(record.get("id")) for record, text in zip(records, plain) if not text],
+        "empty_desc_ids": [
+            str(record.get("id")) for record, text in zip(records, plain) if not text
+        ],
         "short_desc": sum(1 for text in plain if len(text) < THIN_DESCRIPTION_CHARS),
         "thin": sum(1 for record in records if is_thin(record)),
         "tags_with_whitespace": sum(
@@ -624,8 +695,12 @@ def coverage_summary(payload: dict, *, flickr_total: int | None = None, previous
         summary["vs_previous"] = {
             "added": _newest_first(set(now) - set(before), now),
             "removed": _newest_first(set(before) - set(now), before),
-            "tags_changed": [i for i in shared if before[i].get("tags") != now[i].get("tags")],
-            "desc_changed": [i for i in shared if before[i].get("desc") != now[i].get("desc")],
+            "tags_changed": [
+                i for i in shared if before[i].get("tags") != now[i].get("tags")
+            ],
+            "desc_changed": [
+                i for i in shared if before[i].get("desc") != now[i].get("desc")
+            ],
         }
     return summary
 
@@ -644,7 +719,11 @@ def _ids_note(ids: list[str]) -> str:
     if not ids:
         return ""
     shown = ", ".join(ids[:REPORT_LIST_LIMIT])
-    more = f" (+{len(ids) - REPORT_LIST_LIMIT} more)" if len(ids) > REPORT_LIST_LIMIT else ""
+    more = (
+        f" (+{len(ids) - REPORT_LIST_LIMIT} more)"
+        if len(ids) > REPORT_LIST_LIMIT
+        else ""
+    )
     return f" [{shown}{more}]"
 
 
@@ -654,7 +733,9 @@ def format_coverage(summary: dict) -> str:
     if total is None:
         total_note = ""
     elif summary["total_mismatch"]:
-        total_note = f" (Flickr public total {total}: MISMATCH of {summary['count'] - total:+d})"
+        total_note = (
+            f" (Flickr public total {total}: MISMATCH of {summary['count'] - total:+d})"
+        )
     else:
         total_note = f" (matches Flickr public total {total})"
     tags = summary["tags_per_record"]
@@ -667,8 +748,10 @@ def format_coverage(summary: dict) -> str:
         f"  thin pages          {summary['thin']} (no tags and a short description)",
         f"  tags w/ whitespace  {summary['tags_with_whitespace']} (must be 0)",
         f"  tags per record     min {tags['min']} / mean {tags['mean']} / max {tags['max']}",
-        "  licenses            " + ", ".join(f"{label}: {n}" for label, n in summary["licenses"].items()),
-        "  media               " + ", ".join(f"{label}: {n}" for label, n in summary["media"].items()),
+        "  licenses            "
+        + ", ".join(f"{label}: {n}" for label, n in summary["licenses"].items()),
+        "  media               "
+        + ", ".join(f"{label}: {n}" for label, n in summary["media"].items()),
     ]
     delta = summary["vs_previous"]
     if delta is not None:
@@ -689,9 +772,15 @@ def format_coverage(summary: dict) -> str:
 
 def _validation_failure(errors: list[str]) -> FlickrSyncError:
     shown = errors[: REPORT_LIST_LIMIT * 2]
-    more = f"\n  ... and {len(errors) - len(shown)} more" if len(errors) > len(shown) else ""
+    more = (
+        f"\n  ... and {len(errors) - len(shown)} more"
+        if len(errors) > len(shown)
+        else ""
+    )
     return FlickrSyncError(
-        f"live export failed validation ({len(errors)} errors); nothing written:\n  " + "\n  ".join(shown) + more
+        f"live export failed validation ({len(errors)} errors); nothing written:\n  "
+        + "\n  ".join(shown)
+        + more
     )
 
 
@@ -722,7 +811,10 @@ def _count_mismatch_gate(count: int, total: int, *, allow: bool) -> None:
     higher fetched count (photos added mid-fetch) stays a warning.
     """
     if count > total:
-        print(f"warning: fetched {count} public photos but Flickr reports total {total}", file=sys.stderr)
+        print(
+            f"warning: fetched {count} public photos but Flickr reports total {total}",
+            file=sys.stderr,
+        )
     elif count < total:
         message = f"fetched {count} public photos but Flickr's public total is {total} ({count - total:+d})"
         if not allow:
@@ -730,7 +822,10 @@ def _count_mismatch_gate(count: int, total: int, *, allow: bool) -> None:
                 f"{message}; the fetch looks truncated, so nothing is written "
                 "(re-run, or pass --allow-count-mismatch to accept this count)"
             )
-        print(f"warning: {message}; continuing because --allow-count-mismatch was passed", file=sys.stderr)
+        print(
+            f"warning: {message}; continuing because --allow-count-mismatch was passed",
+            file=sys.stderr,
+        )
 
 
 def sync(
@@ -770,10 +865,14 @@ def sync(
             )
         if incomplete:
             print(format_coverage(summary), file=sys.stderr)
-            raise FlickrSyncError("export is incomplete (--require-complete): " + "; ".join(incomplete))
+            raise FlickrSyncError(
+                "export is incomplete (--require-complete): " + "; ".join(incomplete)
+            )
         status, details = classify_drift(previous, payload)
         if status == "up-to-date":
-            print(f"checked flickr artwork export (up to date, {payload['count']} artworks)")
+            print(
+                f"checked flickr artwork export (up to date, {payload['count']} artworks)"
+            )
             return 0
         if status == "views-only":
             print(
@@ -785,9 +884,15 @@ def sync(
 
     print(format_coverage(summary))
     if incomplete:
-        raise FlickrSyncError("export is incomplete (--require-complete): " + "; ".join(incomplete) + "; nothing written")
+        raise FlickrSyncError(
+            "export is incomplete (--require-complete): "
+            + "; ".join(incomplete)
+            + "; nothing written"
+        )
     if not write:
-        print(f"dry run: {payload['count']} artworks; not writing {OUTPUT.relative_to(REPO_ROOT)}")
+        print(
+            f"dry run: {payload['count']} artworks; not writing {OUTPUT.relative_to(REPO_ROOT)}"
+        )
         return 0
 
     stamp = None
@@ -807,24 +912,35 @@ def coverage_local(*, require_complete: bool = False) -> int:
     if errors:
         # The coverage summary assumes a structurally sound export, so a broken
         # one reports only the validator's messages.
-        print(f"validate_export: {len(errors)} errors in {OUTPUT.relative_to(REPO_ROOT)}", file=sys.stderr)
+        print(
+            f"validate_export: {len(errors)} errors in {OUTPUT.relative_to(REPO_ROOT)}",
+            file=sys.stderr,
+        )
         for message in errors[: REPORT_LIST_LIMIT * 2]:
             print(f"  {message}", file=sys.stderr)
         if len(errors) > REPORT_LIST_LIMIT * 2:
-            print(f"  ... and {len(errors) - REPORT_LIST_LIMIT * 2} more", file=sys.stderr)
+            print(
+                f"  ... and {len(errors) - REPORT_LIST_LIMIT * 2} more", file=sys.stderr
+            )
         return 1
     print(f"validate_export: ok ({OUTPUT.relative_to(REPO_ROOT)})")
     summary = coverage_summary(payload)
     print(format_coverage(summary))
     incomplete = completeness_problems(summary) if require_complete else []
     if incomplete:
-        raise FlickrSyncError("export is incomplete (--require-complete): " + "; ".join(incomplete))
+        raise FlickrSyncError(
+            "export is incomplete (--require-complete): " + "; ".join(incomplete)
+        )
     return 0
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--dry-run", action="store_true", help="Fetch and summarize without writing")
+    parser = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    parser.add_argument(
+        "--dry-run", action="store_true", help="Fetch and summarize without writing"
+    )
     parser.add_argument(
         "--check-drift",
         action="store_true",
@@ -849,7 +965,9 @@ def main() -> None:
         ),
     )
     args = parser.parse_args()
-    if args.coverage_local and (args.dry_run or args.check_drift or args.allow_count_mismatch):
+    if args.coverage_local and (
+        args.dry_run or args.check_drift or args.allow_count_mismatch
+    ):
         parser.error(
             "--coverage-local is offline and cannot be combined with --dry-run, --check-drift "
             "or --allow-count-mismatch"

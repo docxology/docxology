@@ -32,7 +32,9 @@ class SourcePaths(frozenset[str]):
             parts = name.split("/", 2)
             if len(parts) == 3 and parts[0] == "papers":
                 grouped.setdefault("/".join(parts[:2]), []).append(name)
-        instance._paper_paths = MappingProxyType({k: tuple(v) for k, v in grouped.items()})
+        instance._paper_paths = MappingProxyType(
+            {k: tuple(v) for k, v in grouped.items()}
+        )
         return instance
 
     def paper_paths(self, folder: str) -> tuple[str, ...]:
@@ -42,23 +44,37 @@ class SourcePaths(frozenset[str]):
 def source_paths(repo_root: Path) -> SourcePaths:
     result = subprocess.run(
         ["git", "ls-files", "-co", "--exclude-standard", "-z"],
-        cwd=repo_root, check=True, capture_output=True, timeout=15,
+        cwd=repo_root,
+        check=True,
+        capture_output=True,
+        timeout=15,
         stdin=subprocess.DEVNULL,
     )
-    return SourcePaths(name for name in result.stdout.decode("utf-8").split("\0") if name)
+    return SourcePaths(
+        name for name in result.stdout.decode("utf-8").split("\0") if name
+    )
 
 
 def encoded_path(path: str) -> str:
     return "/".join(quote(part, safe="") for part in PurePosixPath(path).parts)
 
 
-def source_file(repo_root: Path, relative_path: str, visible_paths: frozenset[str] | None = None) -> Path | None:
+def source_file(
+    repo_root: Path, relative_path: str, visible_paths: frozenset[str] | None = None
+) -> Path | None:
     """A regular public source file; authoritative reads must reject symlinks."""
     root = repo_root.resolve()
     rel = PurePosixPath(relative_path)
-    if rel.is_absolute() or not rel.parts or any(part in {".", ".."} for part in rel.parts) or "\\" in relative_path:
+    if (
+        rel.is_absolute()
+        or not rel.parts
+        or any(part in {".", ".."} for part in rel.parts)
+        or "\\" in relative_path
+    ):
         raise ValueError(f"Invalid public source path: {relative_path!r}")
-    if any((root / Path(*rel.parts[:i])).is_symlink() for i in range(1, len(rel.parts) + 1)):
+    if any(
+        (root / Path(*rel.parts[:i])).is_symlink() for i in range(1, len(rel.parts) + 1)
+    ):
         raise ValueError(f"Symlinked public source: {relative_path!r}")
     path = root / Path(*rel.parts)
     if not path.is_file():
@@ -84,7 +100,9 @@ class PaperResources:
 
     @classmethod
     def load(
-        cls, repo_root: Path, docs_path: str,
+        cls,
+        repo_root: Path,
+        docs_path: str,
         visible_paths: frozenset[str] | None = None,
     ) -> PaperResources:
         root = repo_root.resolve()
@@ -101,7 +119,11 @@ class PaperResources:
             return cls(root)
         visible = source_paths(root) if visible_paths is None else visible_paths
         files = []
-        candidates = visible.paper_paths(clean) if isinstance(visible, SourcePaths) else sorted(visible)
+        candidates = (
+            visible.paper_paths(clean)
+            if isinstance(visible, SourcePaths)
+            else sorted(visible)
+        )
         for name in candidates:
             if not name.startswith(clean + "/"):
                 continue
@@ -110,7 +132,10 @@ class PaperResources:
                 continue
             path = root / name
             # Reject every symlink ancestor, including image subdirectories.
-            if any((root / Path(*rel.parts[:i])).is_symlink() for i in range(1, len(rel.parts) + 1)):
+            if any(
+                (root / Path(*rel.parts[:i])).is_symlink()
+                for i in range(1, len(rel.parts) + 1)
+            ):
                 continue
             if path.is_file():
                 if path.stat().st_nlink != 1:
@@ -119,10 +144,18 @@ class PaperResources:
         if not files:
             return cls(root)
         meta_path = folder / "metadata.json"
-        meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path in files else {}
+        meta = (
+            json.loads(meta_path.read_text(encoding="utf-8"))
+            if meta_path in files
+            else {}
+        )
         if not isinstance(meta, dict):
             raise ValueError(f"Paper metadata must be an object: {meta_path}")
-        pdfs = tuple(path for path in files if path.parent == folder and path.suffix.lower() == ".pdf")
+        pdfs = tuple(
+            path
+            for path in files
+            if path.parent == folder and path.suffix.lower() == ".pdf"
+        )
         primary = None
         basis = issue = extracted = ""
         full_text = folder / "full_text.md"
@@ -143,10 +176,23 @@ class PaperResources:
             if primary:
                 basis = "extracted-text source"
             elif pdfs:
-                issue = "The extracted text names a PDF that is unavailable in this folder."
+                issue = (
+                    "The extracted text names a PDF that is unavailable in this folder."
+                )
         elif len(pdfs) == 1:
             primary, basis = pdfs[0], "only archived PDF"
-        return cls(root, clean + "/", folder, meta, tuple(files), pdfs, primary, basis, issue, extracted)
+        return cls(
+            root,
+            clean + "/",
+            folder,
+            meta,
+            tuple(files),
+            pdfs,
+            primary,
+            basis,
+            issue,
+            extracted,
+        )
 
     def file(self, name: str) -> Path | None:
         if self.folder is None:
@@ -168,11 +214,24 @@ class PaperResources:
 
     @property
     def images(self) -> tuple[Path, ...]:
-        return tuple(p for p in self.files if p.parent == self.folder / "images" and p.suffix.lower() in {".png", ".jpg", ".jpeg", ".gif", ".webp"}) if self.folder else ()
+        return (
+            tuple(
+                p
+                for p in self.files
+                if p.parent == self.folder / "images"
+                and p.suffix.lower() in {".png", ".jpg", ".jpeg", ".gif", ".webp"}
+            )
+            if self.folder
+            else ()
+        )
 
     @property
     def github_url(self) -> str:
-        return GITHUB_TREE + encoded_path(self.docs_path.rstrip("/")) if self.folder else ""
+        return (
+            GITHUB_TREE + encoded_path(self.docs_path.rstrip("/"))
+            if self.folder
+            else ""
+        )
 
     def url(self, path: Path, prefix: str = "../") -> str:
         if path not in self.files:
@@ -184,12 +243,19 @@ class PaperResources:
 
     @property
     def docs_url(self) -> str:
-        return "../" + encoded_path(self.docs_path.rstrip("/")) + "/" if self.folder else ""
-
+        return (
+            "../" + encoded_path(self.docs_path.rstrip("/")) + "/"
+            if self.folder
+            else ""
+        )
 
     @property
     def archive_documents(self) -> tuple[dict, ...]:
         """Reviewed supporting source downloads, separate from hosted PDFs."""
         from docxology_tools.archive_projection import declared_archives
-        return tuple(item for name,item in declared_archives(self.repo_root).items()
-                     if str(Path(name).parent)+"/"==self.docs_path)
+
+        return tuple(
+            item
+            for name, item in declared_archives(self.repo_root).items()
+            if str(Path(name).parent) + "/" == self.docs_path
+        )

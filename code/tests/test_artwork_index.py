@@ -16,7 +16,9 @@ import build_artwork_index  # noqa: E402
 
 
 def test_artwork_index_is_compact_and_complete() -> None:
-    source = json.loads((REPO_ROOT / "data" / "artworks.json").read_text(encoding="utf-8"))
+    source = json.loads(
+        (REPO_ROOT / "data" / "artworks.json").read_text(encoding="utf-8")
+    )
     payload = build_artwork_index.build_payload(source)
 
     assert payload["schema"] == "ArtworkIndex.v1"
@@ -24,7 +26,9 @@ def test_artwork_index_is_compact_and_complete() -> None:
     assert payload["fields"] == list(build_artwork_index.INDEX_FIELDS)
     assert "desc" not in payload["fields"]
     assert "sizes" not in payload["fields"]
-    assert all(set(art) == set(build_artwork_index.INDEX_FIELDS) for art in payload["artworks"])
+    assert all(
+        set(art) == set(build_artwork_index.INDEX_FIELDS) for art in payload["artworks"]
+    )
     # Every compact row carries its generator-owned page path so gallery tiles
     # link real artwork pages without JS-side slug duplication.
     assert all(

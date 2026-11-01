@@ -26,7 +26,9 @@ def _metadata() -> dict[str, object]:
     }
 
 
-def test_reconcile_cff_promotes_canonical_doi_and_keeps_artifact_secondary(tmp_path: Path):
+def test_reconcile_cff_promotes_canonical_doi_and_keeps_artifact_secondary(
+    tmp_path: Path,
+):
     paper = tmp_path / "papers" / "2026_Example"
     paper.mkdir(parents=True)
     stale = """cff-version: 1.2.0
@@ -58,7 +60,9 @@ identifiers:
     assert cff.cff_doi_role_errors(reconciled, _metadata(), paper) == []
 
 
-def test_render_outputs_check_mapping_detects_and_repairs_a_stale_cff_without_writing(tmp_path: Path):
+def test_render_outputs_check_mapping_detects_and_repairs_a_stale_cff_without_writing(
+    tmp_path: Path,
+):
     paper = tmp_path / "papers" / "2026_Example"
     paper.mkdir(parents=True)
     metadata_path = paper / "metadata.json"
@@ -66,13 +70,13 @@ def test_render_outputs_check_mapping_detects_and_repairs_a_stale_cff_without_wr
     cff_path = paper / "CITATION.cff"
     cff_path.write_text(
         "cff-version: 1.2.0\n"
-        "title: \"Example work\"\n"
+        'title: "Example work"\n'
         "date-released: 2026-08-26\n"
         "doi: 10.5281/zenodo.101\n"
-        "url: \"https://doi.org/10.5281/zenodo.101\"\n"
+        'url: "https://doi.org/10.5281/zenodo.101"\n'
         "authors:\n"
-        "  - family-names: \"Friedman\"\n"
-        "    given-names: \"Daniel Ari\"\n",
+        '  - family-names: "Friedman"\n'
+        '    given-names: "Daniel Ari"\n',
         encoding="utf-8",
     )
     before = cff_path.read_bytes()
@@ -82,7 +86,10 @@ def test_render_outputs_check_mapping_detects_and_repairs_a_stale_cff_without_wr
     assert cff_path.read_bytes() == before
 
     write_output_texts(outputs, repo_root=tmp_path)
-    assert stale_output_paths(cff.render_outputs(tmp_path / "papers"), repo_root=tmp_path) == ()
+    assert (
+        stale_output_paths(cff.render_outputs(tmp_path / "papers"), repo_root=tmp_path)
+        == ()
+    )
 
 
 def test_legacy_version_doi_metadata_field_fails_closed(tmp_path: Path):
@@ -92,7 +99,9 @@ def test_legacy_version_doi_metadata_field_fails_closed(tmp_path: Path):
     except ValueError as exc:
         assert "version_doi is unsupported" in str(exc)
     else:  # pragma: no cover - assertion branch
-        raise AssertionError("legacy version_doi must not silently bypass artifact DOI handling")
+        raise AssertionError(
+            "legacy version_doi must not silently bypass artifact DOI handling"
+        )
 
 
 def test_artifact_doi_without_canonical_doi_fails_closed(tmp_path: Path):
@@ -109,7 +118,9 @@ def test_artifact_doi_without_canonical_doi_fails_closed(tmp_path: Path):
 def test_removed_artifact_doi_is_detected_and_removed_from_cff(tmp_path: Path):
     paper = tmp_path / "2026_Example"
     metadata = _metadata()
-    metadata["github_release_url"] = "https://github.com/example/example/releases/tag/v1.0.0"
+    metadata["github_release_url"] = (
+        "https://github.com/example/example/releases/tag/v1.0.0"
+    )
     stale = cff.generate_cff(metadata, paper)
     metadata.pop("artifact_doi")
     assert cff.cff_doi_role_errors(stale, metadata, paper)

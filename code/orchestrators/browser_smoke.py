@@ -19,7 +19,13 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-from docxology_tools.report_paths import dated_report_dir, generated_timestamp, latest_subdir_file, source_commit, source_worktree_state  # noqa: E402
+from docxology_tools.report_paths import (  # noqa: E402
+    dated_report_dir,
+    generated_timestamp,
+    latest_subdir_file,
+    source_commit,
+    source_worktree_state,
+)
 
 OUT_DIR = dated_report_dir("browser-smoke")
 MANIFEST = OUT_DIR / "manifest.json"
@@ -68,7 +74,11 @@ def public_diagnostic(output: str, repo_root: Path) -> str:
     """Keep useful capture diagnostics without publishing the workspace path."""
     # Normalize before truncation: a retained suffix must not reveal part of
     # an absolute path whose beginning was discarded by the diagnostic limit.
-    return output.replace(str(repo_root) + os.sep, "").replace(str(repo_root), ".").strip()[-500:]
+    return (
+        output.replace(str(repo_root) + os.sep, "")
+        .replace(str(repo_root), ".")
+        .strip()[-500:]
+    )
 
 
 def run_smoke() -> dict:
@@ -100,14 +110,18 @@ def run_smoke() -> dict:
                 f"{base}/{rel}",
                 str(out),
             ]
-            proc = subprocess.run(cmd, cwd=REPO_ROOT, capture_output=True, text=True, check=False)
+            proc = subprocess.run(
+                cmd, cwd=REPO_ROOT, capture_output=True, text=True, check=False
+            )
             checks.append(
                 {
                     "name": name,
                     "page": rel,
                     "selector": selector,
                     "ok": proc.returncode == 0 and out.exists(),
-                    "screenshot": str(out.relative_to(REPO_ROOT)) if out.exists() else "",
+                    "screenshot": str(out.relative_to(REPO_ROOT))
+                    if out.exists()
+                    else "",
                     "screenshot_sha256": sha256_file(out) if out.exists() else "",
                     "stdout": public_diagnostic(proc.stdout, REPO_ROOT),
                     "stderr": public_diagnostic(proc.stderr, REPO_ROOT),
@@ -138,24 +152,38 @@ def check() -> None:
     if not manifest_path.exists():
         raise SystemExit("Missing browser smoke manifest")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    failures = [item["page"] for item in manifest.get("checks", []) if not item.get("ok")]
-    missing = [item["screenshot"] for item in manifest.get("checks", []) if item.get("screenshot") and not (REPO_ROOT / item["screenshot"]).exists()]
+    failures = [
+        item["page"] for item in manifest.get("checks", []) if not item.get("ok")
+    ]
+    missing = [
+        item["screenshot"]
+        for item in manifest.get("checks", [])
+        if item.get("screenshot") and not (REPO_ROOT / item["screenshot"]).exists()
+    ]
     if failures:
         raise SystemExit("Browser smoke failures: " + ", ".join(failures))
     if missing:
         raise SystemExit("Missing browser smoke screenshots: " + ", ".join(missing))
-    print(f"checked browser smoke report ({manifest['passing']}/{manifest['count']} passing)")
+    print(
+        f"checked browser smoke report ({manifest['passing']}/{manifest['count']} passing)"
+    )
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Verify existing smoke report and screenshots")
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Verify existing smoke report and screenshots",
+    )
     args = parser.parse_args()
     if args.check:
         check()
         return
     manifest = run_smoke()
-    print(f"wrote browser smoke report ({manifest['passing']}/{manifest['count']} passing)")
+    print(
+        f"wrote browser smoke report ({manifest['passing']}/{manifest['count']} passing)"
+    )
 
 
 if __name__ == "__main__":

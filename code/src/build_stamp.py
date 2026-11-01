@@ -112,7 +112,9 @@ def reuse_on_disk_stamp(candidate: str, on_disk: str | None) -> str:
         return candidate
     # Normalize the complete anchor (including href), and nothing else. A
     # stamp-only candidate cannot establish equality of the rendered page.
-    if STAMP_HTML_RE.sub("<build-stamp>", candidate) != STAMP_HTML_RE.sub("<build-stamp>", on_disk):
+    if STAMP_HTML_RE.sub("<build-stamp>", candidate) != STAMP_HTML_RE.sub(
+        "<build-stamp>", on_disk
+    ):
         return candidate
     disk_anchor = disk_match.group(0)
     return STAMP_HTML_RE.sub(lambda _match: disk_anchor, candidate, count=1)

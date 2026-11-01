@@ -38,10 +38,16 @@ def load_key(path: Path) -> str:
 
 
 def key_location(key: str) -> str:
-    return f"{SITE_ORIGIN}{key}.txt" if len(key) == 32 else f"{SITE_ORIGIN}a3f7c1b8d4e9426b8f2c5a7d9e3f1b6c.txt"
+    return (
+        f"{SITE_ORIGIN}{key}.txt"
+        if len(key) == 32
+        else f"{SITE_ORIGIN}a3f7c1b8d4e9426b8f2c5a7d9e3f1b6c.txt"
+    )
 
 
-def submit_bulk(urls: list[str], key: str, dry_run: bool, *, opener=urllib.request.urlopen) -> int:
+def submit_bulk(
+    urls: list[str], key: str, dry_run: bool, *, opener=urllib.request.urlopen
+) -> int:
     """POST ``urls`` to IndexNow.
 
     ``opener`` is injectable for testability (defaults to
@@ -83,9 +89,13 @@ def submit_bulk(urls: list[str], key: str, dry_run: bool, *, opener=urllib.reque
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Submit index-priority URLs to IndexNow.")
+    parser = argparse.ArgumentParser(
+        description="Submit index-priority URLs to IndexNow."
+    )
     parser.add_argument("--key-file", type=Path, default=DEFAULT_KEY_FILE)
-    parser.add_argument("--list-urls", action="store_true", help="Print IndexNow URL list and exit.")
+    parser.add_argument(
+        "--list-urls", action="store_true", help="Print IndexNow URL list and exit."
+    )
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 

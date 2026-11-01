@@ -31,11 +31,18 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 from docxology_tools.domain_inference import infer_domain_emoji_zenodo as infer_domain  # noqa: E402
-from docxology_tools.publication_pairing import slug_topic, yaml_double_quoted, zenodo_record_url_from_doi  # noqa: E402
+from docxology_tools.publication_pairing import (  # noqa: E402
+    slug_topic,
+    yaml_double_quoted,
+    zenodo_record_url_from_doi,
+)
 from sync_paired_publications import refresh_bibliography_counts  # noqa: E402
 from docxology_tools.biblio_table import bibliography_rows_from_lines  # noqa: E402
 from docxology_tools.generated_outputs import read_generated_output_text  # noqa: E402
-from docxology_tools.work_identifiers import next_catalog_num, write_catalog_with_identifiers  # noqa: E402
+from docxology_tools.work_identifiers import (  # noqa: E402
+    next_catalog_num,
+    write_catalog_with_identifiers,
+)
 
 ORCID = "0000-0001-6232-9096"
 UA = "docxology-zenodo-backfill/1.0 (+https://danielarifriedman.com/)"
@@ -43,13 +50,21 @@ BIB = REPO_ROOT / "pages" / "BIBLIOGRAPHY.md"
 PAPERS = REPO_ROOT / "papers"
 PAPER_METADATA = PAPERS / "paper_metadata.json"
 
-TYPE_LABELS = {"publication": "Paper", "presentation": "Presentation", "book": "Book",
-               "lesson": "Course", "other": "Paper", "software": "Paper"}
+TYPE_LABELS = {
+    "publication": "Paper",
+    "presentation": "Presentation",
+    "book": "Book",
+    "lesson": "Course",
+    "other": "Paper",
+    "software": "Paper",
+}
 
 
 def fetch(record_id: str) -> dict:
-    req = urllib.request.Request(f"https://zenodo.org/api/records/{record_id}",
-                                 headers={"User-Agent": UA, "Accept": "application/json"})
+    req = urllib.request.Request(
+        f"https://zenodo.org/api/records/{record_id}",
+        headers={"User-Agent": UA, "Accept": "application/json"},
+    )
     with urllib.request.urlopen(req, timeout=60) as r:
         return json.loads(r.read().decode("utf-8"))
 
@@ -60,8 +75,16 @@ def record_url(rec: dict) -> str:
     from the concept id and would otherwise make the same document cite two
     different Zenodo URLs for one work (see ZenodoRecord.record_url)."""
     meta = rec.get("metadata") or {}
-    doi = rec.get("conceptdoi") or meta.get("conceptdoi") or rec.get("doi") or meta.get("doi") or ""
-    return zenodo_record_url_from_doi(doi) or f"https://zenodo.org/records/{rec.get('id')}"
+    doi = (
+        rec.get("conceptdoi")
+        or meta.get("conceptdoi")
+        or rec.get("doi")
+        or meta.get("doi")
+        or ""
+    )
+    return (
+        zenodo_record_url_from_doi(doi) or f"https://zenodo.org/records/{rec.get('id')}"
+    )
 
 
 def clean(text: str) -> str:
@@ -115,7 +138,13 @@ def canonical_doi(rec: dict, meta: dict) -> str:
     contract (test_paper_readme_contracts.py). The version id is retained
     separately as ``record_id`` in metadata_payload().
     """
-    return rec.get("conceptdoi") or meta.get("conceptdoi") or rec.get("doi") or meta.get("doi") or ""
+    return (
+        rec.get("conceptdoi")
+        or meta.get("conceptdoi")
+        or rec.get("doi")
+        or meta.get("doi")
+        or ""
+    )
 
 
 def render_readme(rec: dict, meta: dict) -> str:
@@ -124,11 +153,17 @@ def render_readme(rec: dict, meta: dict) -> str:
     doi = canonical_doi(rec, meta)
     kws = meta.get("keywords") or []
     kw_line = " · ".join(kws) if kws else "Zenodo publication"
-    pdfs = [f["key"] for f in rec.get("files", []) if str(f.get("key", "")).lower().endswith(".pdf")]
-    files = "\n".join(f"- `{p}` - Zenodo PDF" for p in pdfs) or "- Zenodo PDF: see record"
+    pdfs = [
+        f["key"]
+        for f in rec.get("files", [])
+        if str(f.get("key", "")).lower().endswith(".pdf")
+    ]
+    files = (
+        "\n".join(f"- `{p}` - Zenodo PDF" for p in pdfs) or "- Zenodo PDF: see record"
+    )
     return f"""# {title}
 
-**{authors_inline(meta.get('creators', []))}** ({year}) · *Zenodo*
+**{authors_inline(meta.get("creators", []))}** ({year}) · *Zenodo*
 
 [![DOI](https://zenodo.org/badge/DOI/{doi}.svg)](https://doi.org/{doi})
 
@@ -136,7 +171,7 @@ def render_readme(rec: dict, meta: dict) -> str:
 
 ## Abstract
 
-{clean(meta.get('description')) or 'Publication metadata synchronized from Zenodo.'}
+{clean(meta.get("description")) or "Publication metadata synchronized from Zenodo."}
 
 ## Keywords
 
@@ -147,8 +182,8 @@ def render_readme(rec: dict, meta: dict) -> str:
 | Field | Value |
 |------|-------|
 | **DOI** | [{doi}](https://doi.org/{doi}) |
-| **Published** | {meta.get('publication_date') or 'Unknown'} |
-| **Version** | {meta.get('version') or 'Unknown'} |
+| **Published** | {meta.get("publication_date") or "Unknown"} |
+| **Version** | {meta.get("version") or "Unknown"} |
 | **Zenodo record** | {record_url(rec)} |
 
 ## Files
@@ -157,7 +192,7 @@ def render_readme(rec: dict, meta: dict) -> str:
 
 ## Citation
 
-> {authors_inline(meta.get('creators', []))} ({year}). *{title}*. Zenodo. DOI: {doi}. URL: https://doi.org/{doi}.
+> {authors_inline(meta.get("creators", []))} ({year}). *{title}*. Zenodo. DOI: {doi}. URL: https://doi.org/{doi}.
 
 ## Related
 
@@ -182,7 +217,7 @@ def render_agents(rec: dict, meta: dict) -> str:
 
 ### Citation Agent
 - Use the Zenodo DOI as the canonical citation.
-- Preserve full authorship: {authors_inline(meta.get('creators', []))}.
+- Preserve full authorship: {authors_inline(meta.get("creators", []))}.
 
 ### Integration Agent
 - Keep README, CITATION.cff, metadata.json, paper_metadata.json, and BIBLIOGRAPHY.md synchronized.
@@ -257,7 +292,7 @@ def render_citation(rec: dict, meta: dict) -> str:
 message: "If you use this work, please cite it as below."
 type: article
 title: "{yaml_double_quoted(title)}"{version}
-date-released: {meta.get('publication_date') or year}
+date-released: {meta.get("publication_date") or year}
 doi: {doi}
 url: "https://doi.org/{doi}"
 authors:
@@ -273,10 +308,15 @@ identifiers:
 
 
 def metadata_payload(rec: dict, meta: dict) -> dict:
-    files = [{"name": f.get("key"), "size_bytes": f.get("size"),
-              "checksum": f.get("checksum", ""),
-              "download_url": (f.get("links") or {}).get("self", "")}
-             for f in rec.get("files", [])]
+    files = [
+        {
+            "name": f.get("key"),
+            "size_bytes": f.get("size"),
+            "checksum": f.get("checksum", ""),
+            "download_url": (f.get("links") or {}).get("self", ""),
+        }
+        for f in rec.get("files", [])
+    ]
     doi = canonical_doi(rec, meta)
     return {
         "title": meta.get("title"),
@@ -294,7 +334,10 @@ def metadata_payload(rec: dict, meta: dict) -> dict:
         "related_resources": [],
         "github_repo": "",
         "source": "zenodo-only",
-        "checked_at": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+        "checked_at": dt.datetime.now(dt.timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z"),
     }
 
 
@@ -332,15 +375,23 @@ def download_pdf(rec: dict, folder: Path) -> None:
 
 def next_bib_num() -> int:
     text = read_generated_output_text(REPO_ROOT, BIB) or ""
-    return next_catalog_num(bibliography_rows_from_lines(text.splitlines()), REPO_ROOT / "data/work-identifiers.json", repo_root=REPO_ROOT)
+    return next_catalog_num(
+        bibliography_rows_from_lines(text.splitlines()),
+        REPO_ROOT / "data/work-identifiers.json",
+        repo_root=REPO_ROOT,
+    )
 
 
-def add_bib_row(num: int, year: str, domain: str, typ: str, title: str, doi: str, folder: str) -> None:
+def add_bib_row(
+    num: int, year: str, domain: str, typ: str, title: str, doi: str, folder: str
+) -> None:
     text = read_generated_output_text(REPO_ROOT, BIB) or ""
     if doi in text:
         return
-    row = (f"| {num} | {year} | {domain} | {typ} | {title} | *Zenodo* | "
-           f"[{doi}](https://doi.org/{doi}) | [📁](../papers/{folder}/) |")
+    row = (
+        f"| {num} | {year} | {domain} | {typ} | {title} | *Zenodo* | "
+        f"[{doi}](https://doi.org/{doi}) | [📁](../papers/{folder}/) |"
+    )
     lines = text.splitlines()
     insert_at = len(lines)
     in_table = False
@@ -355,7 +406,9 @@ def add_bib_row(num: int, year: str, domain: str, typ: str, title: str, doi: str
             break
     lines.insert(insert_at, row)
     candidate = refresh_bibliography_counts("\n".join(lines).rstrip() + "\n")
-    write_catalog_with_identifiers(BIB, candidate, repo_root=REPO_ROOT, expected_previous=text)
+    write_catalog_with_identifiers(
+        BIB, candidate, repo_root=REPO_ROOT, expected_previous=text
+    )
 
 
 def add_papers_readme_row(folder: str, year: str, has_pdf: bool) -> None:
@@ -368,7 +421,9 @@ def add_papers_readme_row(folder: str, year: str, has_pdf: bool) -> None:
     topic = folder.split("_", 1)[1]
     row = f"| {num} | [{folder}]({folder}/) | {'✅' if has_pdf else '—'} | {year} | {topic} |"
     lines = text.splitlines()
-    insert_at = next((i for i, line in enumerate(lines) if line.startswith("## Scripts")), len(lines))
+    insert_at = next(
+        (i for i, line in enumerate(lines) if line.startswith("## Scripts")), len(lines)
+    )
     lines.insert(insert_at, row)
     text = "\n".join(lines).rstrip() + "\n"
     count = len([line for line in text.splitlines() if re.match(r"\| \d+ \|", line)])
@@ -377,16 +432,25 @@ def add_papers_readme_row(folder: str, year: str, has_pdf: bool) -> None:
 
 
 def add_paper_metadata(folder: str, meta: dict, doi: str) -> None:
-    data = json.loads(PAPER_METADATA.read_text(encoding="utf-8")) if PAPER_METADATA.exists() else {}
+    data = (
+        json.loads(PAPER_METADATA.read_text(encoding="utf-8"))
+        if PAPER_METADATA.exists()
+        else {}
+    )
     year, topic = folder.split("_", 1)
     data[folder] = {
-        "year": year, "topic": topic, "name": meta.get("title"),
+        "year": year,
+        "topic": topic,
+        "name": meta.get("title"),
         "description": clean(meta.get("description")),
         "authors": authors_inline(meta.get("creators", [])),
         "abstract": clean(meta.get("description")),
-        "keywords": meta.get("keywords") or [], "doi": doi,
+        "keywords": meta.get("keywords") or [],
+        "doi": doi,
     }
-    PAPER_METADATA.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    PAPER_METADATA.write_text(
+        json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
 
 
 def refresh_papers_agents() -> None:
@@ -407,8 +471,14 @@ def refresh_papers_agents() -> None:
         "README.md present | required per folder; current coverage is generated in [`../reports/current_counts.md`](../reports/current_counts.md) ",
         text,
     )
-    text = re.sub(r"AGENTS\.md present \| \d+/\d+", "AGENTS.md present | required per folder", text)
-    text = re.sub(r"SKILL\.md present \| \d+/\d+", "SKILL.md present | required per folder", text)
+    text = re.sub(
+        r"AGENTS\.md present \| \d+/\d+",
+        "AGENTS.md present | required per folder",
+        text,
+    )
+    text = re.sub(
+        r"SKILL\.md present \| \d+/\d+", "SKILL.md present | required per folder", text
+    )
     path.write_text(text, encoding="utf-8")
 
 
@@ -432,7 +502,13 @@ def main(argv: list[str]) -> int:
         title = meta.get("title", "").strip()
         # Canonical DOI = Zenodo concept DOI (docs/operations/publication-sync.md), not the
         # per-version doi -- concept DOI always resolves to the latest version.
-        doi = rec.get("conceptdoi") or meta.get("conceptdoi") or rec.get("doi") or meta.get("doi") or ""
+        doi = (
+            rec.get("conceptdoi")
+            or meta.get("conceptdoi")
+            or rec.get("doi")
+            or meta.get("doi")
+            or ""
+        )
         if doi in BIB.read_text(encoding="utf-8"):
             print(f"skip {rid}: DOI already in bibliography")
             continue
@@ -448,8 +524,14 @@ def main(argv: list[str]) -> int:
         (fpath / "README.md").write_text(render_readme(rec, meta), encoding="utf-8")
         (fpath / "AGENTS.md").write_text(render_agents(rec, meta), encoding="utf-8")
         (fpath / "SKILL.md").write_text(render_skill(rec, meta), encoding="utf-8")
-        (fpath / "CITATION.cff").write_text(render_citation(rec, meta), encoding="utf-8")
-        (fpath / "metadata.json").write_text(json.dumps(metadata_payload(rec, meta), indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        (fpath / "CITATION.cff").write_text(
+            render_citation(rec, meta), encoding="utf-8"
+        )
+        (fpath / "metadata.json").write_text(
+            json.dumps(metadata_payload(rec, meta), indent=2, ensure_ascii=False)
+            + "\n",
+            encoding="utf-8",
+        )
         download_pdf(rec, fpath)
         has_pdf = any(p.suffix == ".pdf" for p in fpath.iterdir())
         num = next_bib_num()
@@ -470,9 +552,12 @@ def main(argv: list[str]) -> int:
         print("\nRegenerating local generated layer (regenerate_all.py)...")
         subprocess.run(
             [sys.executable, "code/orchestrators/regenerate_all.py"],
-            cwd=REPO_ROOT, check=True,
+            cwd=REPO_ROOT,
+            check=True,
         )
-        print("Run `verify_live_site.py` (if counts changed) then `validate_repo.py` before committing.")
+        print(
+            "Run `verify_live_site.py` (if counts changed) then `validate_repo.py` before committing."
+        )
     return 0
 
 

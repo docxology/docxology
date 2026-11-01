@@ -37,7 +37,16 @@ GENERATED_MARKER = (
 # Inline links and images: the target between "](" and the closing ")".
 _INLINE_TARGET = re.compile(r"(?<=\]\()([^)\s]+)(?=[)\s])")
 # Schemes and forms whose resolution does not depend on the file's directory.
-_ABSOLUTE_PREFIXES = ("#", "/", "../", "http://", "https://", "mailto:", "tel:", "data:")
+_ABSOLUTE_PREFIXES = (
+    "#",
+    "/",
+    "../",
+    "http://",
+    "https://",
+    "mailto:",
+    "tel:",
+    "data:",
+)
 
 
 def relocate_target(target: str) -> str:
@@ -51,14 +60,18 @@ def relocate_target(target: str) -> str:
 
 
 def render(source_text: str | None = None) -> str:
-    text = source_text if source_text is not None else SOURCE.read_text(encoding="utf-8")
+    text = (
+        source_text if source_text is not None else SOURCE.read_text(encoding="utf-8")
+    )
     body = _INLINE_TARGET.sub(lambda m: relocate_target(m.group(1)), text)
     return f"{GENERATED_MARKER}\n\n{body}"
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if .github/README.md is stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if .github/README.md is stale"
+    )
     args = parser.parse_args()
     content = render()
     existing = OUT.read_text(encoding="utf-8") if OUT.is_file() else None

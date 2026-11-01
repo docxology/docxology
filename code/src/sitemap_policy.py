@@ -101,6 +101,7 @@ RETIRED_SITEMAP_PATHS: tuple[str, ...] = ("sitemap-images.xml",)
 def gsc_priority_urls() -> list[str]:
     return [absolute_url(path) for path in GSC_PRIORITY_PATHS]
 
+
 # Exact non-HTML paths submitted to IndexNow. The metadata exports were removed
 # from the sitemap (2026-08-27 sitemap hygiene), so they no longer flow through
 # indexnow_urls_from_locs; the resume PDF stays both sitemapped and submitted.
@@ -122,7 +123,11 @@ def indexnow_urls_from_locs(locs: list[str]) -> list[str]:
             out.append(SITE_ORIGIN)
             continue
         path = loc.removeprefix(SITE_ORIGIN)
-        if path.endswith(".html") or path in {"works/", "videos/"} or path.startswith(("works/", "videos/")):
+        if (
+            path.endswith(".html")
+            or path in {"works/", "videos/"}
+            or path.startswith(("works/", "videos/"))
+        ):
             out.append(loc)
         elif path in _INDEXNOW_EXACT:
             out.append(loc)

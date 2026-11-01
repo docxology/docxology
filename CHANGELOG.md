@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026-11-01 — Legacy work URLs, authenticated metrics, and maintenance
+
+- Restored three historical work URLs reported as 404s by Search Console with
+  centrally generated redirects to their current canonical pages. The retired
+  CEREBRUM identifier remains retired; aliases stay out of the sitemap.
+- Recorded a direct authenticated Google Scholar owner-profile observation and
+  its matching snapshot receipt, preserving the observed decreases in i10-index
+  values as well as increases in citation counts.
+- Reviewed all nine deferred public-source observations individually against
+  the retained snapshots, complete inventory, and fresh primary API checks;
+  retained the previous decision evidence and digest-mismatch controls.
+- Applied the pinned Ruff formatter across Python sources and tests; compared
+  all tracked Python syntax trees before and after the formatting pass.
+- Corrected CI artifact-budget step labels to the existing 930 MiB limit and
+  pointed the active freshness backlog at the retained snapshot, pairing,
+  inventory, and source-review inputs.
+- Made the focused sitemap and public-source review test modules initialize
+  the canonical package before importing their orchestrators, so they also
+  collect independently of suite order.
+
 ## 2026-10-31 — Public-source refresh, publication intake, and styled Blake pathway
 
 - Refreshed the full public-source snapshot, the complete GitHub inventory (183 primary + 108 forks; five new repositories queued for classification review), and the complete GitHub/Zenodo pairing scan with an authenticated release sweep.

@@ -44,21 +44,27 @@ def interactive_pages() -> list[tuple[Path, str]]:
     return pairs
 
 
-def test_interactive_pages_link_stylesheet(interactive_pages: list[tuple[Path, str]]) -> None:
+def test_interactive_pages_link_stylesheet(
+    interactive_pages: list[tuple[Path, str]],
+) -> None:
     missing = [
         page.relative_to(REPO_ROOT).as_posix()
         for page, text in interactive_pages
         if "style.css" not in text
     ]
-    print(f"stylesheet invariant: {len(interactive_pages)} interactive pages; "
-          f"{len(missing)} missing style.css")
+    print(
+        f"stylesheet invariant: {len(interactive_pages)} interactive pages; "
+        f"{len(missing)} missing style.css"
+    )
     assert not missing, (
         f"{len(missing)} interactive pages do not reference style.css:\n"
         + "\n".join(missing[:20])
     )
 
 
-def test_interactive_pages_use_relative_stylesheet_paths(interactive_pages: list[tuple[Path, str]]) -> None:
+def test_interactive_pages_use_relative_stylesheet_paths(
+    interactive_pages: list[tuple[Path, str]],
+) -> None:
     # Root-level absolute paths (/style.css) break under subpath serving,
     # which is how the rendered-nav fixture serves copies; every interactive
     # page must resolve style.css relative to its own location.

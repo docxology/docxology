@@ -39,11 +39,14 @@ CHECK_JS = """
 
 def test_rendered_art_grid_hydrated(tmp_path: Path) -> None:
     from playwright.sync_api import sync_playwright
+
     base_url, httpd = serve_copy(tmp_path)
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
-            page = browser.new_context(viewport={"width": 1280, "height": 900}).new_page()
+            page = browser.new_context(
+                viewport={"width": 1280, "height": 900}
+            ).new_page()
             for path in ("art.html", "index.html"):
                 page.goto(f"{base_url}/{path}", wait_until="load")
                 page.wait_for_timeout(1500)  # let JS hydration settle

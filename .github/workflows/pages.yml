@@ -48,7 +48,7 @@ jobs:
       - name: Lint Python sources (ruff default rules + W605)
         run: uv run --group lint ruff check code
 
-      - name: Artifact budget gate (890 MiB)
+      - name: Artifact budget gate (930 MiB)
         run: uv run python3 code/src/artifact_budget.py
 
   browser-tests:

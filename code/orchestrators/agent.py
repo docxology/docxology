@@ -43,7 +43,9 @@ class Parser(argparse.ArgumentParser):
 
 
 def plan_payload(step_id: str | None = None) -> dict:
-    steps = [step for step in LOCAL_GENERATION_STEPS if step_id in (None, step.identifier)]
+    steps = [
+        step for step in LOCAL_GENERATION_STEPS if step_id in (None, step.identifier)
+    ]
     if not steps:
         raise UsageError(f"unknown generation step: {step_id}")
     errors = coverage_errors()
@@ -56,8 +58,20 @@ def plan_payload(step_id: str | None = None) -> dict:
             {
                 "id": step.identifier,
                 "description": step.description,
-                "write_argv": ["uv", "run", "python3", f"code/orchestrators/{step.script}", *step.write_args],
-                "check_argv": ["uv", "run", "python3", f"code/orchestrators/{step.script}", *step.check_args],
+                "write_argv": [
+                    "uv",
+                    "run",
+                    "python3",
+                    f"code/orchestrators/{step.script}",
+                    *step.write_args,
+                ],
+                "check_argv": [
+                    "uv",
+                    "run",
+                    "python3",
+                    f"code/orchestrators/{step.script}",
+                    *step.check_args,
+                ],
                 "cache_inputs": list(effective_step_inputs(step)),
                 "cache_exclusions": list(step.inputs_exclude),
                 "git_index_inputs": list(step.index_inputs),
@@ -67,18 +81,39 @@ def plan_payload(step_id: str | None = None) -> dict:
         ],
         "excluded_operations": [asdict(operation) for operation in EXCLUDED_OPERATIONS],
         "workflow": {
-            "regenerate_argv": ["uv", "run", "python3", "code/orchestrators/regenerate_all.py", "--validate"],
-            "validate_argv": ["uv", "run", "python3", "code/orchestrators/validate_repo.py"],
+            "regenerate_argv": [
+                "uv",
+                "run",
+                "python3",
+                "code/orchestrators/regenerate_all.py",
+                "--validate",
+            ],
+            "validate_argv": [
+                "uv",
+                "run",
+                "python3",
+                "code/orchestrators/validate_repo.py",
+            ],
             "landing_guide": "docs/operations/settle.md",
             "source_intake_guide": "docs/operations/publication-sync.md",
-            "required_gates": ["generated-data", "pytest", "ruff", "artifact-budget", "browser-acceptance"],
+            "required_gates": [
+                "generated-data",
+                "pytest",
+                "ruff",
+                "artifact-budget",
+                "browser-acceptance",
+            ],
         },
     }
 
 
 def _git(root: Path, *args: str) -> subprocess.CompletedProcess:
     return subprocess.run(
-        ["git", *args], cwd=root, capture_output=True, check=False, timeout=15,
+        ["git", *args],
+        cwd=root,
+        capture_output=True,
+        check=False,
+        timeout=15,
         env={**os.environ, "GIT_OPTIONAL_LOCKS": "0"},
     )
 
@@ -95,14 +130,15 @@ def status_payload(root: Path) -> dict:
             git = {
                 "available": True,
                 "head": head.stdout.decode("ascii").strip(),
-                "branch": branch.stdout.decode("utf-8", errors="replace").strip() or None,
+                "branch": branch.stdout.decode("utf-8", errors="replace").strip()
+                or None,
                 "clean": not bool(status.stdout),
                 "commit_requires_work_branch": branch.stdout.strip() == b"main",
                 "remote_verified": False,
             }
         else:
             errors.append("Git checkout state is unavailable")
-    except (OSError, subprocess.TimeoutExpired):
+    except OSError, subprocess.TimeoutExpired:
         errors.append("Git checkout inspection failed or timed out")
     versions = {}
     for package in ("pytest", "ruff", "playwright", "pypdf", "reportlab"):
@@ -116,7 +152,9 @@ def status_payload(root: Path) -> dict:
         "git": git,
         "runtime": {
             "python": ".".join(map(str, sys.version_info[:3])),
-            "python_pin": (root / ".python-version").read_text().strip() if (root / ".python-version").is_file() else None,
+            "python_pin": (root / ".python-version").read_text().strip()
+            if (root / ".python-version").is_file()
+            else None,
             "uv_available": shutil.which("uv") is not None,
             "packages": versions,
             "browser_executable_checked": False,
@@ -132,16 +170,31 @@ def status_payload(root: Path) -> dict:
 def main(argv: list[str] | None = None, *, repo_root: Path = REPO_ROOT) -> int:
     argv = list(sys.argv[1:] if argv is None else argv)
     parser = Parser(description=__doc__)
-    subparsers = parser.add_subparsers(dest="command", required=True, parser_class=Parser)
-    status = subparsers.add_parser("status", help="Inspect local prerequisites; does not run validation")
+    subparsers = parser.add_subparsers(
+        dest="command", required=True, parser_class=Parser
+    )
+    status = subparsers.add_parser(
+        "status", help="Inspect local prerequisites; does not run validation"
+    )
     status.add_argument("--json", action="store_true")
-    plan = subparsers.add_parser("plan", help="Preview authoritative ordered commands and excluded operations")
+    plan = subparsers.add_parser(
+        "plan", help="Preview authoritative ordered commands and excluded operations"
+    )
     plan.add_argument("--json", action="store_true")
     plan.add_argument("--step", help="Select one stable generation-step ID")
     try:
         args = parser.parse_args(argv)
-        payload = plan_payload(args.step) if args.command == "plan" else status_payload(repo_root)
-        payload = {"schema_version": SCHEMA_VERSION, "command": args.command, "ok": True, **payload}
+        payload = (
+            plan_payload(args.step)
+            if args.command == "plan"
+            else status_payload(repo_root)
+        )
+        payload = {
+            "schema_version": SCHEMA_VERSION,
+            "command": args.command,
+            "ok": True,
+            **payload,
+        }
         code = 0 if payload["ok"] else 1
     except UsageError as exc:
         payload = {"schema_version": SCHEMA_VERSION, "ok": False, "errors": [str(exc)]}
@@ -156,7 +209,9 @@ def main(argv: list[str] | None = None, *, repo_root: Path = REPO_ROOT) -> int:
             print(f"{step['id']}: {step['description']}")
             print("  write:", " ".join(step["write_argv"]))
             print("  check:", " ".join(step["check_argv"]))
-        print("Preview only; source intake, generation and publication retain their existing gates.")
+        print(
+            "Preview only; source intake, generation and publication retain their existing gates."
+        )
     else:
         print(json.dumps(payload, indent=2, ensure_ascii=False))
     return code

@@ -1,4 +1,5 @@
 """Source custody and edition selection for public paper downloads."""
+
 from __future__ import annotations
 
 import json
@@ -30,13 +31,15 @@ def resolve(repo):
 
 def test_lone_pdf_and_encoded_url(repo):
     _, folder = repo
-    pdf = folder / 'A paper #1 & β.PDF'
+    pdf = folder / "A paper #1 & β.PDF"
     pdf.write_bytes(b"%PDF-1.7\n")
     resources = resolve(repo)
     assert resources.primary_pdf == pdf
     assert resources.primary_basis == "only archived PDF"
     assert resources.url(pdf).endswith("A%20paper%20%231%20%26%20%CE%B2.PDF")
-    assert resources.absolute_url(pdf).startswith("https://danielarifriedman.com/papers/")
+    assert resources.absolute_url(pdf).startswith(
+        "https://danielarifriedman.com/papers/"
+    )
 
 
 def test_primary_wins_over_larger_supplement_and_extraction(repo):
@@ -44,16 +47,34 @@ def test_primary_wins_over_larger_supplement_and_extraction(repo):
     paper = folder / "paper.pdf"
     paper.write_bytes(b"paper")
     (folder / "supplement.pdf").write_bytes(b"supplement" * 500)
-    (folder / "full_text.md").write_text('> Extracted from `supplement.pdf`\n', encoding="utf-8")
-    (folder / "metadata.json").write_text(json.dumps({"primary_pdf": "paper.pdf"}), encoding="utf-8")
+    (folder / "full_text.md").write_text(
+        "> Extracted from `supplement.pdf`\n", encoding="utf-8"
+    )
+    (folder / "metadata.json").write_text(
+        json.dumps({"primary_pdf": "paper.pdf"}), encoding="utf-8"
+    )
     resources = resolve(repo)
     assert resources.primary_pdf == paper
     assert resources.primary_basis == "declared primary"
     assert resources.extraction_source == "supplement.pdf"
     assert "extracted text comes from supplement.pdf" in resources.selection_issue
-    graph = json.loads(bwp.json_ld(dict(citation_key="Example001", title="Example", year=2026, type="Paper", domain_name="Art", _resources=resources)))
+    graph = json.loads(
+        bwp.json_ld(
+            dict(
+                citation_key="Example001",
+                title="Example",
+                year=2026,
+                type="Paper",
+                domain_name="Art",
+                _resources=resources,
+            )
+        )
+    )
     assert [item["encodingFormat"] for item in graph["encoding"]] == ["application/pdf"]
-    assert any(item["name"] == "Extracted text from supplement.pdf" for item in graph["associatedMedia"])
+    assert any(
+        item["name"] == "Extracted text from supplement.pdf"
+        for item in graph["associatedMedia"]
+    )
 
 
 def test_extraction_source_is_identified_without_claiming_latest(repo):
@@ -61,7 +82,9 @@ def test_extraction_source_is_identified_without_claiming_latest(repo):
     old = folder / "old.pdf"
     old.write_bytes(b"old")
     (folder / "new.pdf").write_bytes(b"new")
-    (folder / "full_text.md").write_text('# Full Text\n\n> Extracted from `old.pdf`\n', encoding="utf-8")
+    (folder / "full_text.md").write_text(
+        "# Full Text\n\n> Extracted from `old.pdf`\n", encoding="utf-8"
+    )
     resources = resolve(repo)
     assert resources.primary_pdf == old
     assert resources.primary_basis == "extracted-text source"
@@ -78,23 +101,31 @@ def test_ambiguous_pdfs_are_not_selected_by_size_or_name(repo):
 def test_missing_extraction_source_does_not_promote_another_document(repo):
     _, folder = repo
     (folder / "supplement.pdf").write_bytes(b"supplement")
-    (folder / "full_text.md").write_text('> Extracted from `missing.pdf`\n', encoding="utf-8")
+    (folder / "full_text.md").write_text(
+        "> Extracted from `missing.pdf`\n", encoding="utf-8"
+    )
     resources = resolve(repo)
     assert resources.primary_pdf is None
     assert resources.selection_issue
 
 
-@pytest.mark.parametrize("primary", ["missing.pdf", "../outside.pdf", "https://example.org/paper.pdf"])
+@pytest.mark.parametrize(
+    "primary", ["missing.pdf", "../outside.pdf", "https://example.org/paper.pdf"]
+)
 def test_invalid_declared_primary_fails_closed(repo, primary):
     _, folder = repo
-    (folder / "metadata.json").write_text(json.dumps({"primary_pdf": primary}), encoding="utf-8")
+    (folder / "metadata.json").write_text(
+        json.dumps({"primary_pdf": primary}), encoding="utf-8"
+    )
     with pytest.raises(ValueError, match="Unavailable primary_pdf"):
         resolve(repo)
 
 
 def test_ignored_and_symlinked_files_are_not_published(repo, tmp_path):
     root, folder = repo
-    (root / ".gitignore").write_text("ignored.pdf\nfull_text.md\nimages/\n", encoding="utf-8")
+    (root / ".gitignore").write_text(
+        "ignored.pdf\nfull_text.md\nimages/\n", encoding="utf-8"
+    )
     (folder / "ignored.pdf").write_bytes(b"ignored")
     (folder / "full_text.md").write_text("private extraction", encoding="utf-8")
     (folder / "images").mkdir()
@@ -110,7 +141,15 @@ def test_ignored_and_symlinked_files_are_not_published(repo, tmp_path):
         resources.url(secret)
 
 
-@pytest.mark.parametrize("path", ["../private", "/papers/2026_Example", "papers/2026_Example/../Other", "papers/2026_Example\\private"])
+@pytest.mark.parametrize(
+    "path",
+    [
+        "../private",
+        "/papers/2026_Example",
+        "papers/2026_Example/../Other",
+        "papers/2026_Example\\private",
+    ],
+)
 def test_escaped_folder_path_is_rejected(repo, path):
     with pytest.raises(ValueError, match="Invalid paper-folder"):
         PaperResources.load(repo[0], path)
@@ -147,21 +186,40 @@ def test_hardlinked_source_is_rejected_before_public_render(repo, tmp_path):
     assert private.read_bytes() == b"private sentinel"
 
 
-def test_work_page_exposes_pdf_and_folder_and_preserves_text_encoding(repo, monkeypatch):
+def test_work_page_exposes_pdf_and_folder_and_preserves_text_encoding(
+    repo, monkeypatch
+):
     root, folder = repo
     (folder / "paper.pdf").write_bytes(b"%PDF-1.7\n")
-    (folder / "full_text.md").write_text('> Extracted from `paper.pdf`\n', encoding="utf-8")
+    (folder / "full_text.md").write_text(
+        "> Extracted from `paper.pdf`\n", encoding="utf-8"
+    )
     resources = resolve(repo)
     monkeypatch.setattr(bwp, "REPO_ROOT", root)
     (root / "bibliography.bib").write_text("", encoding="utf-8")
-    work = dict(citation_key="Example001", num=1, title="Example", year=2026, type="Paper", domain_name="Art", domain="🎨", doi="", url="", authors=[], _resources=resources)
+    work = dict(
+        citation_key="Example001",
+        num=1,
+        title="Example",
+        year=2026,
+        type="Paper",
+        domain_name="Art",
+        domain="🎨",
+        doi="",
+        url="",
+        authors=[],
+        _resources=resources,
+    )
     page = bwp.render_work_page(work)
     assert 'download="paper.pdf"' in page
-    assert 'Paper folder on GitHub' in page
-    assert 'citation_pdf_url' in page
+    assert "Paper folder on GitHub" in page
+    assert "citation_pdf_url" in page
     graph = json.loads(bwp.json_ld(work))
     assert "author" not in graph
-    assert {encoding["encodingFormat"] for encoding in graph["encoding"]} == {"application/pdf", "text/markdown"}
+    assert {encoding["encodingFormat"] for encoding in graph["encoding"]} == {
+        "application/pdf",
+        "text/markdown",
+    }
     assert "by Daniel Ari Friedman" not in page
 
 
@@ -169,19 +227,44 @@ def test_companion_pdfs_do_not_claim_to_encode_the_primary_work(repo):
     _, folder = repo
     (folder / "paper.pdf").write_bytes(b"paper")
     (folder / "example.pdf").write_bytes(b"example")
-    (folder / "metadata.json").write_text(json.dumps({"primary_pdf": "paper.pdf", "github_repo": "docxology/example"}), encoding="utf-8")
+    (folder / "metadata.json").write_text(
+        json.dumps({"primary_pdf": "paper.pdf", "github_repo": "docxology/example"}),
+        encoding="utf-8",
+    )
     resources = resolve(repo)
-    work = dict(citation_key="Example001", title="Example", year=2026, type="Paper", domain_name="Art", doi="", url="", _resources=resources)
+    work = dict(
+        citation_key="Example001",
+        title="Example",
+        year=2026,
+        type="Paper",
+        domain_name="Art",
+        doi="",
+        url="",
+        _resources=resources,
+    )
     graph = json.loads(bwp.json_ld(work))
     assert [item["name"] for item in graph["encoding"]] == ["paper.pdf"]
     assert [item["name"] for item in graph["associatedMedia"]] == ["example.pdf"]
-    assert bwp.source_repository_url(resources.docs_path, resources) == "https://github.com/docxology/example"
+    assert (
+        bwp.source_repository_url(resources.docs_path, resources)
+        == "https://github.com/docxology/example"
+    )
 
 
 def test_work_jsonld_normalizes_inert_abstract_without_mutating_source(repo):
     title = 'A </script><img src=x onerror=alert(1)> & "B"'
     abstract = "An abstract </script> with < and >"
-    work = dict(citation_key="Example001", title=title, year=2026, type="Paper", domain_name="Art", doi="", url="", _resources=resolve(repo), enrichment={"abstract": abstract})
+    work = dict(
+        citation_key="Example001",
+        title=title,
+        year=2026,
+        type="Paper",
+        domain_name="Art",
+        doi="",
+        url="",
+        _resources=resolve(repo),
+        enrichment={"abstract": abstract},
+    )
     payload = bwp.json_ld(work)
     assert "<" not in payload
     graph = json.loads(payload)

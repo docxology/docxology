@@ -48,10 +48,12 @@ def load_pdf_backends() -> None:
         pypdf = pypdf_module
         HAVE_PYPDF = True
 
+
 REPO_ROOT = Path(__file__).resolve().parents[2]  # docxology/
 PAPERS_DIR = REPO_ROOT / "papers"
 TESSERACT = shutil.which("tesseract")
 PDFTOTEXT = shutil.which("pdftotext")
+
 
 def is_scanned_pdf(pdf_path):
     """Check if a PDF is likely scanned (image-only) by checking text coverage on first few pages."""
@@ -71,6 +73,7 @@ def is_scanned_pdf(pdf_path):
         return text_chars < 100
     return False
 
+
 def extract_text_pymupdf(pdf_path):
     """Extract text using PyMuPDF."""
     load_pdf_backends()
@@ -84,6 +87,7 @@ def extract_text_pymupdf(pdf_path):
     doc.close()
     return pages
 
+
 def extract_text_pypdf(pdf_path):
     """Extract text using pypdf."""
     load_pdf_backends()
@@ -96,13 +100,16 @@ def extract_text_pypdf(pdf_path):
         pages.append((i + 1, text))
     return pages
 
+
 def extract_text_pdftotext(pdf_path):
     """Extract text using pdftotext as fallback."""
     if not PDFTOTEXT:
         return []
     result = subprocess.run(
         [PDFTOTEXT, "-layout", str(pdf_path), "-"],
-        capture_output=True, text=True, timeout=60
+        capture_output=True,
+        text=True,
+        timeout=60,
     )
     if result.returncode != 0:
         return []
@@ -111,40 +118,52 @@ def extract_text_pdftotext(pdf_path):
     parts = text.split("\f")
     return [(i + 1, p) for i, p in enumerate(parts) if p.strip()]
 
+
 def ocr_pdf(pdf_path, max_pages=None):
     """OCR a PDF using pdftoppm + tesseract."""
     if not TESSERACT:
         return []
-    
+
     # Convert PDF pages to images and OCR them
     import tempfile
+
     with tempfile.TemporaryDirectory() as tmpdir:
         # Use pdftoppm to convert to images
-        cmd = ["pdftoppm", "-r", "300", "-png", str(pdf_path), os.path.join(tmpdir, "page")]
+        cmd = [
+            "pdftoppm",
+            "-r",
+            "300",
+            "-png",
+            str(pdf_path),
+            os.path.join(tmpdir, "page"),
+        ]
         result = subprocess.run(cmd, capture_output=True, timeout=300)
         if result.returncode != 0:
             return []
-        
+
         # Find all generated images
         images = sorted(Path(tmpdir).glob("page-*.png"))
         if max_pages:
             images = images[:max_pages]
-        
+
         pages = []
         for img_path in images:
             # Extract page number from filename
             stem = img_path.stem
             page_num = int(stem.split("-")[-1])
-            
+
             # OCR with tesseract
             result = subprocess.run(
                 [TESSERACT, str(img_path), "-", "--psm", "3"],
-                capture_output=True, text=True, timeout=60
+                capture_output=True,
+                text=True,
+                timeout=60,
             )
             if result.returncode == 0:
                 pages.append((page_num, result.stdout))
-        
+
         return pages
+
 
 def extract_images(pdf_path, output_dir):
     """Extract embedded images from a PDF using PyMuPDF.
@@ -187,11 +206,15 @@ def extract_images(pdf_path, output_dir):
                     filepath.write_bytes(image_bytes)
                 extracted.append((page_num + 1, filename))
             except Exception as exc:
-                print(f"  WARNING: image extraction failed on page {page_num + 1}, image {img_index + 1} of {pdf_path.name}: {exc}", file=sys.stderr)
+                print(
+                    f"  WARNING: image extraction failed on page {page_num + 1}, image {img_index + 1} of {pdf_path.name}: {exc}",
+                    file=sys.stderr,
+                )
                 continue
 
     doc.close()
     return extracted
+
 
 def format_markdown(pages, title, pdf_name, images=None):
     """Format extracted pages as markdown.
@@ -202,6 +225,7 @@ def format_markdown(pages, title, pdf_name, images=None):
     """
     # Group images by page
     from collections import defaultdict
+
     images_by_page = defaultdict(list)
     if images:
         for page_num, filename in images:
@@ -236,13 +260,14 @@ def format_markdown(pages, title, pdf_name, images=None):
 
     return "\n".join(lines)
 
+
 def process_paper(paper_dir, force=False):
     """Process a single paper folder."""
     # Find PDFs
     pdfs = sorted(paper_dir.glob("*.pdf"))
     if not pdfs:
         return None
-    
+
     # Check if full_text.md already exists
     full_text_path = paper_dir / "full_text.md"
     if full_text_path.exists() and not force:
@@ -269,17 +294,17 @@ def process_paper(paper_dir, force=False):
         main_pdf = candidate
     else:
         main_pdf = max(pdfs, key=lambda p: p.stat().st_size)
-    
+
     # Create images directory
     images_dir = paper_dir / "images"
     images_dir.mkdir(exist_ok=True)
-    
+
     # Extract text
     pages = []
     method = "pymupdf" if HAVE_PYMUPDF else "pypdf"
     try:
         scanned = is_scanned_pdf(main_pdf)
-        
+
         if scanned and TESSERACT:
             # OCR for scanned PDFs
             method = "ocr"
@@ -305,7 +330,7 @@ def process_paper(paper_dir, force=False):
             pages = extract_text_pdftotext(main_pdf)
         else:
             return f"error: {e}"
-    
+
     # Extract images first so we can embed references in the markdown
     images = extract_images(main_pdf, images_dir)
 
@@ -319,9 +344,14 @@ def process_paper(paper_dir, force=False):
 
     return f"ok ({len(pages)} pages, {len(images)} images, {method})"
 
+
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--force", action="store_true", help="re-extract papers that already have full_text.md")
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="re-extract papers that already have full_text.md",
+    )
     parser.add_argument(
         "--only",
         action="append",
@@ -338,7 +368,7 @@ def main(argv=None) -> int:
         )
         return 1
     force = args.force
-    
+
     papers = sorted(d for d in PAPERS_DIR.iterdir() if d.is_dir())
     if args.only:
         wanted = set(args.only)
@@ -348,13 +378,13 @@ def main(argv=None) -> int:
             return 1
         papers = [d for d in papers if d.name in wanted]
     stats = {"ok": 0, "skipped": 0, "no_pdf": 0, "error": 0}
-    
+
     for paper_dir in papers:
         pdfs = list(paper_dir.glob("*.pdf"))
         if not pdfs:
             stats["no_pdf"] += 1
             continue
-        
+
         result = process_paper(paper_dir, force=force)
         if result is None:
             stats["no_pdf"] += 1
@@ -367,10 +397,10 @@ def main(argv=None) -> int:
             print(f"  ERROR: {paper_dir.name}: {result}")
         else:
             stats["ok"] += 1
-        
+
         if result and result != "skipped":
             print(f"  {paper_dir.name}: {result}")
-    
+
     print("\n=== Summary ===")
     print(f"  OK: {stats['ok']}")
     print(f"  Skipped: {stats['skipped']}")
@@ -378,6 +408,7 @@ def main(argv=None) -> int:
     print(f"  Errors: {stats['error']}")
     print(f"  Total: {sum(stats.values())}")
     return 1 if stats["error"] else 0
+
 
 if __name__ == "__main__":
     raise SystemExit(main())

@@ -1,4 +1,5 @@
 """Quality-gate failures must not become empty score sets or green skips."""
+
 from __future__ import annotations
 
 import subprocess
@@ -12,10 +13,14 @@ import test_lighthouse_budgets as gate
 @pytest.fixture(autouse=True)
 def isolated_contract_reports(tmp_path, monkeypatch):
     """Keep mocked tool output out of retained browser measurements."""
-    monkeypatch.setenv("DOCXOLOGY_LIGHTHOUSE_REPORT_DIR", str(tmp_path / "contract-reports"))
+    monkeypatch.setenv(
+        "DOCXOLOGY_LIGHTHOUSE_REPORT_DIR", str(tmp_path / "contract-reports")
+    )
 
 
-@pytest.mark.parametrize("score", [None, "0.9", True, -0.1, 1.1, float("nan"), float("inf")])
+@pytest.mark.parametrize(
+    "score", [None, "0.9", True, -0.1, 1.1, float("nan"), float("inf")]
+)
 def test_invalid_required_category_fails(score):
     payload = {"categories": {name: {"score": 0.9} for name in gate.BUDGETS}}
     payload["categories"]["seo"]["score"] = score
@@ -23,21 +28,30 @@ def test_invalid_required_category_fails(score):
         gate.category_scores(payload)
 
 
-@pytest.mark.parametrize("payload", [{}, {"categories": {}}, {"categories": {"performance": {"score": 1}}}])
+@pytest.mark.parametrize(
+    "payload", [{}, {"categories": {}}, {"categories": {"performance": {"score": 1}}}]
+)
 def test_partial_lighthouse_report_cannot_pass(payload):
     with pytest.raises(AssertionError):
         gate.category_scores(payload)
 
 
 def test_complete_report_preserves_zero_scores():
-    assert gate.category_scores({"categories": {name: {"score": 0} for name in gate.BUDGETS}}) == {name: 0 for name in gate.BUDGETS}
+    assert gate.category_scores(
+        {"categories": {name: {"score": 0} for name in gate.BUDGETS}}
+    ) == {name: 0 for name in gate.BUDGETS}
 
 
-@pytest.mark.parametrize("result", [
-    SimpleNamespace(returncode=1, stdout="", stderr="Chrome crashed"),
-    SimpleNamespace(returncode=0, stdout="not json", stderr=""),
-    SimpleNamespace(returncode=0, stdout='{"runtimeError":{"code":"NO_FCP"}}', stderr=""),
-])
+@pytest.mark.parametrize(
+    "result",
+    [
+        SimpleNamespace(returncode=1, stdout="", stderr="Chrome crashed"),
+        SimpleNamespace(returncode=0, stdout="not json", stderr=""),
+        SimpleNamespace(
+            returncode=0, stdout='{"runtimeError":{"code":"NO_FCP"}}', stderr=""
+        ),
+    ],
+)
 def test_lighthouse_runtime_and_report_failures_fail(tmp_path, monkeypatch, result):
     monkeypatch.setattr(gate.shutil, "which", lambda name: "/installed/lighthouse")
     monkeypatch.setattr(gate.subprocess, "run", lambda *args, **kwargs: result)
@@ -48,6 +62,7 @@ def test_lighthouse_runtime_and_report_failures_fail(tmp_path, monkeypatch, resu
 def test_lighthouse_deadline_failure_fails(tmp_path, monkeypatch):
     def timeout(*args, **kwargs):
         raise subprocess.TimeoutExpired("lighthouse", 180)
+
     monkeypatch.setattr(gate.shutil, "which", lambda name: "/installed/lighthouse")
     monkeypatch.setattr(gate.subprocess, "run", timeout)
     with pytest.raises(AssertionError, match="could not complete"):
@@ -61,8 +76,12 @@ def test_mandatory_browser_job_requires_lighthouse(tmp_path, monkeypatch):
         gate.test_lighthouse_budgets(tmp_path, lambda *args: None)
 
 
-@pytest.mark.parametrize("version, expected", [("13.4.1", True), ("13.4.0", False), ("14.0.0", False)])
-def test_installed_lighthouse_requires_exact_version(tmp_path, monkeypatch, version, expected):
+@pytest.mark.parametrize(
+    "version, expected", [("13.4.1", True), ("13.4.0", False), ("14.0.0", False)]
+)
+def test_installed_lighthouse_requires_exact_version(
+    tmp_path, monkeypatch, version, expected
+):
     executable = tmp_path / "lighthouse"
     executable.write_text("#!/bin/sh\nprintf '%s\\n' '" + version + "'\n")
     executable.chmod(0o755)

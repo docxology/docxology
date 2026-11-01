@@ -25,7 +25,9 @@ GITHUB_RELEASE_RE = re.compile(
     re.I,
 )
 ZENODO_RECORD_RE = re.compile(r"https://zenodo\.org/records/(\d+)", re.I)
-PDF_SHA_RE = re.compile(r"(?:PDF\s+SHA-?256|sha256)\s*[:=]\s*`?([a-f0-9]{16,64})`?", re.I)
+PDF_SHA_RE = re.compile(
+    r"(?:PDF\s+SHA-?256|sha256)\s*[:=]\s*`?([a-f0-9]{16,64})`?", re.I
+)
 
 _DOI_TRAILING = ".,;:)]}`'\""
 _STOP_WORDS = {
@@ -78,8 +80,14 @@ class GitHubRelease:
     assets: list[GitHubAsset | dict[str, Any]]
 
     @classmethod
-    def from_api(cls, owner: str, repo: str, payload: dict[str, Any]) -> "GitHubRelease":
-        assets = [GitHubAsset.from_api(item) for item in payload.get("assets", []) if isinstance(item, dict)]
+    def from_api(
+        cls, owner: str, repo: str, payload: dict[str, Any]
+    ) -> "GitHubRelease":
+        assets = [
+            GitHubAsset.from_api(item)
+            for item in payload.get("assets", [])
+            if isinstance(item, dict)
+        ]
         return cls(
             owner=owner,
             repo=repo,
@@ -87,7 +95,9 @@ class GitHubRelease:
             name=str(payload.get("name") or ""),
             body=str(payload.get("body") or ""),
             html_url=str(payload.get("html_url") or ""),
-            published_at=str(payload.get("published_at") or payload.get("created_at") or ""),
+            published_at=str(
+                payload.get("published_at") or payload.get("created_at") or ""
+            ),
             assets=assets,
         )
 
@@ -98,7 +108,9 @@ class GitHubRelease:
     @property
     def text(self) -> str:
         asset_names = " ".join(asset_name(asset) for asset in self.assets)
-        return " ".join([self.name, self.body, self.html_url, self.tag, asset_names]).strip()
+        return " ".join(
+            [self.name, self.body, self.html_url, self.tag, asset_names]
+        ).strip()
 
     def to_dict(self) -> dict[str, Any]:
         payload = asdict(self)
@@ -126,24 +138,45 @@ class ZenodoRecord:
 
     @classmethod
     def from_api(cls, payload: dict[str, Any]) -> "ZenodoRecord":
-        meta = payload.get("metadata") if isinstance(payload.get("metadata"), dict) else {}
+        meta = (
+            payload.get("metadata") if isinstance(payload.get("metadata"), dict) else {}
+        )
         links = payload.get("links") if isinstance(payload.get("links"), dict) else {}
         record_id = str(payload.get("id") or payload.get("record_id") or "")
         return cls(
             record_id=record_id,
-            doi=str(payload.get("conceptdoi") or meta.get("conceptdoi") or payload.get("doi") or meta.get("doi") or ""),
+            doi=str(
+                payload.get("conceptdoi")
+                or meta.get("conceptdoi")
+                or payload.get("doi")
+                or meta.get("doi")
+                or ""
+            ),
             title=str(meta.get("title") or ""),
             publication_date=str(meta.get("publication_date") or ""),
-            version=str(meta.get("version")) if meta.get("version") is not None else None,
-            resource_type=meta.get("resource_type") if isinstance(meta.get("resource_type"), dict) else {},
-            creators=meta.get("creators") if isinstance(meta.get("creators"), list) else [],
+            version=str(meta.get("version"))
+            if meta.get("version") is not None
+            else None,
+            resource_type=meta.get("resource_type")
+            if isinstance(meta.get("resource_type"), dict)
+            else {},
+            creators=meta.get("creators")
+            if isinstance(meta.get("creators"), list)
+            else [],
             description=str(meta.get("description") or ""),
             keywords=[str(item) for item in (meta.get("keywords") or [])],
             related_identifiers=(
-                meta.get("related_identifiers") if isinstance(meta.get("related_identifiers"), list) else []
+                meta.get("related_identifiers")
+                if isinstance(meta.get("related_identifiers"), list)
+                else []
             ),
-            files=payload.get("files") if isinstance(payload.get("files"), list) else [],
-            html_url=str(links.get("html") or (f"https://zenodo.org/records/{record_id}" if record_id else "")),
+            files=payload.get("files")
+            if isinstance(payload.get("files"), list)
+            else [],
+            html_url=str(
+                links.get("html")
+                or (f"https://zenodo.org/records/{record_id}" if record_id else "")
+            ),
         )
 
     @property
@@ -469,9 +502,10 @@ def _authenticated_supersession(
         return False
     if supersession.get("authenticated") is not True:
         return False
-    if not isinstance(supersession.get("approved_by"), str) or not str(
-        supersession["approved_by"]
-    ).strip():
+    if (
+        not isinstance(supersession.get("approved_by"), str)
+        or not str(supersession["approved_by"]).strip()
+    ):
         return False
     approved_at = _zoned_timestamp(supersession.get("approved_at"))
     if approved_at is None:
@@ -605,7 +639,11 @@ def _identifier_text(record: ZenodoRecord) -> str:
 
 
 def _word_tokens(value: str) -> set[str]:
-    return {token.lower() for token in re.findall(r"[A-Za-z0-9]+", value or "") if token.lower() not in _STOP_WORDS}
+    return {
+        token.lower()
+        for token in re.findall(r"[A-Za-z0-9]+", value or "")
+        if token.lower() not in _STOP_WORDS
+    }
 
 
 def title_overlap(left: str, right: str) -> float:
@@ -616,7 +654,9 @@ def title_overlap(left: str, right: str) -> float:
     return len(left_tokens & right_tokens) / min(len(left_tokens), len(right_tokens))
 
 
-def confidence_for_pair(release: GitHubRelease, record: ZenodoRecord) -> PublicationPair | None:
+def confidence_for_pair(
+    release: GitHubRelease, record: ZenodoRecord
+) -> PublicationPair | None:
     """Classify a GitHub release / Zenodo record pair."""
     if is_ignored_release(release) or is_draft_release(release):
         return None
@@ -706,7 +746,11 @@ def slug_topic(title: str) -> str:
     words = re.findall(r"[A-Za-z0-9]+", head)
     if not words:
         words = re.findall(r"[A-Za-z0-9]+", title)
-    words = [word for word in words if word.lower() not in {"a", "an", "and", "for", "in", "of", "on", "the", "to"}]
+    words = [
+        word
+        for word in words
+        if word.lower() not in {"a", "an", "and", "for", "in", "of", "on", "the", "to"}
+    ]
     words = words[:3] or ["Work"]
     return "".join(word[:1].upper() + word[1:] for word in words)
 
@@ -735,7 +779,9 @@ def metadata_payload(pair: PublicationPair) -> dict[str, Any]:
                     "name": item.get("key") or item.get("filename") or "",
                     "size_bytes": item.get("size"),
                     "checksum": item.get("checksum", ""),
-                    "download_url": (item.get("links") or {}).get("self") if isinstance(item.get("links"), dict) else "",
+                    "download_url": (item.get("links") or {}).get("self")
+                    if isinstance(item.get("links"), dict)
+                    else "",
                 }
             )
     payload = {
@@ -751,7 +797,9 @@ def metadata_payload(pair: PublicationPair) -> dict[str, Any]:
         "description": record.description,
         "keywords": record.keywords,
         "files": files,
-        "related_resources": [{"type": "repository", "url": f"https://github.com/{release.full_name}"}],
+        "related_resources": [
+            {"type": "repository", "url": f"https://github.com/{release.full_name}"}
+        ],
         "github_repo": release.full_name,
         "github_release_url": release.html_url,
         "release_tag": release.tag,
@@ -793,7 +841,9 @@ def creator_cff_lines(record: ZenodoRecord) -> str:
             lines.append(f'    given-names: "{yaml_double_quoted(given.strip())}"')
         else:
             lines.append(f'  - name: "{yaml_double_quoted(name)}"')
-        orcid = str(creator.get("orcid") or "").strip().removeprefix("https://orcid.org/")
+        orcid = (
+            str(creator.get("orcid") or "").strip().removeprefix("https://orcid.org/")
+        )
         if re.fullmatch(r"\d{4}-\d{4}-\d{4}-\d{3}[\dX]", orcid):
             lines.append(f'    orcid: "https://orcid.org/{orcid}"')
     return "authors:\n" + "\n".join(lines) if lines else "authors: []"
@@ -801,8 +851,15 @@ def creator_cff_lines(record: ZenodoRecord) -> str:
 
 def render_readme(pair: PublicationPair, folder: str) -> str:
     record = pair.record
-    keywords = " · ".join(record.keywords) if record.keywords else "paired GitHub and Zenodo publication"
-    description = clean_abstract_text(record.description) or "Publication metadata synchronized from Zenodo and GitHub."
+    keywords = (
+        " · ".join(record.keywords)
+        if record.keywords
+        else "paired GitHub and Zenodo publication"
+    )
+    description = (
+        clean_abstract_text(record.description)
+        or "Publication metadata synchronized from Zenodo and GitHub."
+    )
     pdf_lines = []
     for item in record.files:
         name = str(item.get("key") or item.get("filename") or "")
@@ -812,7 +869,7 @@ def render_readme(pair: PublicationPair, folder: str) -> str:
         pdf_lines.append("- Zenodo PDF: not downloaded")
     return f"""# {record.title}
 
-**{creator_names(record) or "Creator metadata unavailable"}** ({(record.publication_date or '')[:4] or 'n.d.'}) · *Zenodo*
+**{creator_names(record) or "Creator metadata unavailable"}** ({(record.publication_date or "")[:4] or "n.d."}) · *Zenodo*
 
 [![DOI](https://zenodo.org/badge/DOI/{record.doi}.svg)](https://doi.org/{record.doi})
 
@@ -831,8 +888,8 @@ def render_readme(pair: PublicationPair, folder: str) -> str:
 | Field | Value |
 |------|-------|
 | **DOI** | [{record.doi}](https://doi.org/{record.doi}) |
-| **Published** | {record.publication_date or 'Unknown'} |
-| **Version** | {record.version or 'Unknown'} |
+| **Published** | {record.publication_date or "Unknown"} |
+| **Version** | {record.version or "Unknown"} |
 | **Zenodo record** | {record.record_url} |
 | **GitHub release** | {pair.github_release_url} |
 | **Source repository** | https://github.com/{pair.github_repo} |
@@ -843,7 +900,7 @@ def render_readme(pair: PublicationPair, folder: str) -> str:
 
 ## Citation
 
-> {creator_names(record, citation=True) or "Creator metadata unavailable"} ({(record.publication_date or '')[:4] or 'n.d.'}). *{record.title}*. Zenodo. DOI: {record.doi}. URL: https://doi.org/{record.doi}.
+> {creator_names(record, citation=True) or "Creator metadata unavailable"} ({(record.publication_date or "")[:4] or "n.d."}). *{record.title}*. Zenodo. DOI: {record.doi}. URL: https://doi.org/{record.doi}.
 
 ## Related
 
@@ -883,7 +940,10 @@ def render_agents(pair: PublicationPair) -> str:
 
 
 def render_skill(pair: PublicationPair, folder: str) -> str:
-    tags = [tag.lower().replace(" ", "-") for tag in (pair.record.keywords or ["paired-publication"])[:8]]
+    tags = [
+        tag.lower().replace(" ", "-")
+        for tag in (pair.record.keywords or ["paired-publication"])[:8]
+    ]
     title = yaml_double_quoted(pair.record.title)
     return f"""---
 name: "{slug_topic(pair.record.title)}"
@@ -903,7 +963,7 @@ Use this skill when working with the publication **{pair.record.title}** or its 
 
 ## Key Concepts
 
-{chr(10).join(f'- **{keyword}**' for keyword in (pair.record.keywords or ['paired publication']))}
+{chr(10).join(f"- **{keyword}**" for keyword in (pair.record.keywords or ["paired publication"]))}
 
 ## Prerequisites
 

@@ -81,7 +81,9 @@ def test_publication_pairing_reexports_infer_domain():
         files=[],
         html_url="https://zenodo.org/records/1",
     )
-    pair = PublicationPair(release=release, record=record, confidence="strong", evidence=())
+    pair = PublicationPair(
+        release=release, record=record, confidence="strong", evidence=()
+    )
     assert infer_domain(pair) == "🐜"
 
 

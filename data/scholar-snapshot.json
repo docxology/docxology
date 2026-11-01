@@ -4,16 +4,16 @@
   "profile_url": "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en",
   "secondary_profile_id": "Y2bMf3MAAAAJ",
   "secondary_profile_note": "A second Google Scholar profile ID (Y2bMf3MAAAAJ) is linked from the ORCID record. DXjPFtYAAAAJ is the canonical/primary profile used for all public metrics; Y2bMf3MAAAAJ is secondary and should be consolidated or disambiguated to avoid citation-graph fragmentation.",
-  "citations": 824,
+  "citations": 835,
   "h_index": 14,
-  "i10_index": 17,
+  "i10_index": 16,
   "since_2021": {
-    "citations": 595,
+    "citations": 604,
     "h_index": 14,
-    "i10_index": 15
+    "i10_index": 14
   },
-  "as_of": "2026-10-05",
-  "method": "Direct authenticated observation of the canonical profile on 2026-10-05 in the site owner's signed-in Chrome session (operator handoff of 2026-10-05). All-time: 824 citations, h-index 14, i10-index 17; Since-2021: 595 / 14 / 15. No anonymous or search-engine cached result was used.",
+  "as_of": "2026-11-01",
+  "method": "Direct authenticated owner-profile observation in the T3 shared browser; account avatar and owner edit controls visible; network navigation returned HTTP 200.",
   "policy": "This file is the single source of truth for Google Scholar metrics. Update ONLY from a direct (non-cached, non-anonymous-stale) Scholar fetch. On update, record the new value, a new as_of date, and the method here, and append the prior value to history. Public anonymous/cached Scholar views may differ; never publish a citation number above the most recent direct-fetch value recorded here. All hand-maintained surfaces are regenerated from this file via code/orchestrators/sync_scholar_metrics.py, and the agent claims ledger derives from it via code/orchestrators/export_agent_data.py.",
   "history": [
     {
@@ -61,6 +61,13 @@
       "citations": 824,
       "h_index": 14,
       "i10_index": 17,
+      "note": "Direct authenticated observation (superseded 2026-11-01)"
+    },
+    {
+      "as_of": "2026-11-01",
+      "citations": 835,
+      "h_index": 14,
+      "i10_index": 16,
       "note": "Direct authenticated observation — current source of truth."
     }
   ]

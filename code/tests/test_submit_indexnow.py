@@ -67,7 +67,10 @@ def test_submit_bulk_success():
 def test_submit_bulk_returns_one_on_url_error():
     # A URLError (timeout/DNS/connection-refused) must be caught and returned
     # as a clean exit code 1, not surfaced as an uncaught traceback.
-    assert submit_bulk([SITE_ORIGIN], "test-key", dry_run=False, opener=_url_error_opener) == 1
+    assert (
+        submit_bulk([SITE_ORIGIN], "test-key", dry_run=False, opener=_url_error_opener)
+        == 1
+    )
 
 
 def test_submit_bulk_constructs_single_post_with_key_and_urls():

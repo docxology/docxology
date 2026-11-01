@@ -43,16 +43,20 @@ def test_wrapped_bullets_keep_their_continuation_lines() -> None:
 
 
 def test_inline_markdown_renders_bold_without_stray_asterisks() -> None:
-    rendered = inline_md("**Bold title:** see `code` and *emphasis* in [docs](docs/README.md)")
+    rendered = inline_md(
+        "**Bold title:** see `code` and *emphasis* in [docs](docs/README.md)"
+    )
     assert rendered == (
-        '<strong>Bold title:</strong> see <code>code</code> and <em>emphasis</em> '
+        "<strong>Bold title:</strong> see <code>code</code> and <em>emphasis</em> "
         'in <a href="docs/README.md">docs</a>'
     )
     assert "*" not in rendered
 
 
 def test_asterisks_inside_code_spans_do_not_open_emphasis() -> None:
-    rendered = inline_md("**no `papers/*/metadata.json` or `pages/X.md` rewrites were accepted**")
+    rendered = inline_md(
+        "**no `papers/*/metadata.json` or `pages/X.md` rewrites were accepted**"
+    )
     assert rendered == (
         "<strong>no <code>papers/*/metadata.json</code> or <code>pages/X.md</code> "
         "rewrites were accepted</strong>"
@@ -61,7 +65,10 @@ def test_asterisks_inside_code_spans_do_not_open_emphasis() -> None:
 
 def test_plain_markdown_for_structured_data() -> None:
     assert plain_md("**Bold:** `x` and *y* [z](a.md)") == "Bold: x and y z"
-    assert plain_md("**no `papers/*/metadata.json` rewrites**") == "no papers/*/metadata.json rewrites"
+    assert (
+        plain_md("**no `papers/*/metadata.json` rewrites**")
+        == "no papers/*/metadata.json rewrites"
+    )
 
 
 def test_every_real_changelog_bullet_is_complete() -> None:

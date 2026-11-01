@@ -16,7 +16,9 @@ from docxology_tools.site_nav import ensure_agent_map_link  # noqa: E402
 
 
 def is_non_indexable(markup: str) -> bool:
-    match = re.search(r'<meta\s+name=["\']robots["\']\s+content=["\']([^"\']+)', markup, re.I)
+    match = re.search(
+        r'<meta\s+name=["\']robots["\']\s+content=["\']([^"\']+)', markup, re.I
+    )
     return bool(match and "noindex" in match.group(1).lower())
 
 
@@ -34,7 +36,11 @@ def public_root_pages() -> list[Path]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if a public entry page lacks the link")
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Fail if a public entry page lacks the link",
+    )
     args = parser.parse_args()
 
     stale: list[str] = []
@@ -46,8 +52,14 @@ def main() -> None:
             if not args.check:
                 path.write_text(updated, encoding="utf-8")
     if stale and args.check:
-        raise SystemExit("public navigation is missing Agent Map links: " + ", ".join(stale))
-    print(("checked" if args.check else "updated") + " Agent Map navigation for " + ", ".join(stale or ["all public entry pages"]))
+        raise SystemExit(
+            "public navigation is missing Agent Map links: " + ", ".join(stale)
+        )
+    print(
+        ("checked" if args.check else "updated")
+        + " Agent Map navigation for "
+        + ", ".join(stale or ["all public entry pages"])
+    )
 
 
 if __name__ == "__main__":

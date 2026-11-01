@@ -1,4 +1,5 @@
 """Authoritative catalog templates must agree with the shared head normalizer."""
+
 from __future__ import annotations
 
 import sys
@@ -16,11 +17,16 @@ import sync_publications_html as publications  # noqa: E402
 import sync_software_html as software  # noqa: E402
 
 
-@pytest.mark.parametrize("renderer, path", [
-    (publications, publications.PUBLICATIONS_HTML),
-    (software, software.SOFTWARE_HTML),
-])
-def test_catalog_source_render_preserves_early_navigation_through_normalization(renderer, path):
+@pytest.mark.parametrize(
+    "renderer, path",
+    [
+        (publications, publications.PUBLICATIONS_HTML),
+        (software, software.SOFTWARE_HTML),
+    ],
+)
+def test_catalog_source_render_preserves_early_navigation_through_normalization(
+    renderer, path
+):
     rendered = renderer.render_outputs()[path]
     head = rendered.split("</head>", 1)[0]
     assert head.count(NAV_TOGGLE_SCRIPT_TAG) == 1

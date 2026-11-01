@@ -24,7 +24,9 @@ from publication_pairing import (
 )
 
 
-def _software_pair_matches(report: dict[str, Any], fingerprint: tuple[str, ...] | None) -> bool:
+def _software_pair_matches(
+    report: dict[str, Any], fingerprint: tuple[str, ...] | None
+) -> bool:
     """Verify the exact action against a serialized software publication pair."""
     pairs = report.get("pairs")
     if fingerprint is None or not isinstance(pairs, list):
@@ -36,12 +38,18 @@ def _software_pair_matches(report: dict[str, Any], fingerprint: tuple[str, ...] 
         if not isinstance(record, dict) or not isinstance(release, dict):
             continue
         kind = record.get("resource_type")
-        if not isinstance(kind, dict) or str(kind.get("type") or kind.get("id") or "").casefold() != "software":
+        if (
+            not isinstance(kind, dict)
+            or str(kind.get("type") or kind.get("id") or "").casefold() != "software"
+        ):
             continue
         actual = canonical_pair_candidate_fingerprint(
-            doi=pair.get("doi"), github_release_url=pair.get("github_release_url"),
-            zenodo_record_url=pair.get("zenodo_record_url"), github_repo=pair.get("github_repo"),
-            title=record.get("title"), release_tag=release.get("tag"),
+            doi=pair.get("doi"),
+            github_release_url=pair.get("github_release_url"),
+            zenodo_record_url=pair.get("zenodo_record_url"),
+            github_repo=pair.get("github_repo"),
+            title=record.get("title"),
+            release_tag=release.get("tag"),
         )
         if actual == fingerprint and record.get("doi") == pair.get("doi"):
             return True
@@ -183,9 +191,15 @@ def _verified_applied_strong_update(
     folder = action.get("folder")
     doi = action.get("doi")
     if not isinstance(folder, str) or not folder or not isinstance(doi, str) or not doi:
-        return False, "The strong pairing action is missing its exact folder or DOI identity."
+        return (
+            False,
+            "The strong pairing action is missing its exact folder or DOI identity.",
+        )
     if repo_root is None:
-        return False, "The repository root is unavailable for applied metadata verification."
+        return (
+            False,
+            "The repository root is unavailable for applied metadata verification.",
+        )
     expected_action_sha256 = _pair_action_sha256(action)
     expected_metadata_path = f"papers/{folder}/metadata.json"
     applied = report.get("applied")
@@ -201,26 +215,43 @@ def _verified_applied_strong_update(
         and entry.get("folder") == folder
     ]
     if not matching_entries:
-        return False, "No exact applied-action receipt matches this strong pairing update."
+        return (
+            False,
+            "No exact applied-action receipt matches this strong pairing update.",
+        )
     if len(matching_entries) != 1:
-        return False, "Multiple applied-action receipts match one strong pairing update."
+        return (
+            False,
+            "Multiple applied-action receipts match one strong pairing update.",
+        )
     entry = matching_entries[0]
-    if not isinstance(entry.get("created"), bool) or not isinstance(
-        entry.get("updated_files"), list
-    ) or not all(isinstance(path, str) and path for path in entry["updated_files"]):
+    if (
+        not isinstance(entry.get("created"), bool)
+        or not isinstance(entry.get("updated_files"), list)
+        or not all(isinstance(path, str) and path for path in entry["updated_files"])
+    ):
         return False, "The applied-action receipt has invalid result metadata."
 
     provenance = entry.get("provenance")
     if not isinstance(provenance, dict):
         return False, "The applied-action receipt has no provenance object."
     if provenance.get("action_sha256") != expected_action_sha256:
-        return False, "The applied-action receipt action hash does not match the current action."
+        return (
+            False,
+            "The applied-action receipt action hash does not match the current action.",
+        )
     if provenance.get("metadata_path") != expected_metadata_path:
-        return False, "The applied-action receipt metadata path does not match the action folder."
+        return (
+            False,
+            "The applied-action receipt metadata path does not match the action folder.",
+        )
     if not _is_sha256(provenance.get("metadata_sha256")):
         return False, "The applied-action receipt has an invalid metadata hash."
     if not _has_zoned_timestamp(provenance.get("applied_at")):
-        return False, "The applied-action receipt is missing a timezone-qualified apply time."
+        return (
+            False,
+            "The applied-action receipt is missing a timezone-qualified apply time.",
+        )
     approval = provenance.get("approval")
     if (
         not isinstance(approval, dict)
@@ -230,7 +261,10 @@ def _verified_applied_strong_update(
         or not approval["approved_by"].strip()
         or not _has_zoned_timestamp(approval.get("approved_at"))
     ):
-        return False, "The applied-action receipt lacks an exact explicit apply approval."
+        return (
+            False,
+            "The applied-action receipt lacks an exact explicit apply approval.",
+        )
 
     metadata_path = repo_root / expected_metadata_path
     try:
@@ -238,14 +272,24 @@ def _verified_applied_strong_update(
         resolved.relative_to(repo_root.resolve())
         metadata_bytes = metadata_path.read_bytes()
         metadata = json.loads(metadata_bytes)
-    except (OSError, ValueError, json.JSONDecodeError):
-        return False, "The applied-action receipt metadata target is unavailable or invalid."
+    except OSError, ValueError, json.JSONDecodeError:
+        return (
+            False,
+            "The applied-action receipt metadata target is unavailable or invalid.",
+        )
     if hashlib.sha256(metadata_bytes).hexdigest() != provenance["metadata_sha256"]:
-        return False, "The applied-action receipt metadata hash no longer matches the on-disk target."
-    if not isinstance(metadata, dict) or _pair_key(metadata.get("doi"), "")[0] != _pair_key(
-        doi, ""
-    )[0]:
-        return False, "The applied-action receipt target does not retain the action DOI."
+        return (
+            False,
+            "The applied-action receipt metadata hash no longer matches the on-disk target.",
+        )
+    if (
+        not isinstance(metadata, dict)
+        or _pair_key(metadata.get("doi"), "")[0] != _pair_key(doi, "")[0]
+    ):
+        return (
+            False,
+            "The applied-action receipt target does not retain the action DOI.",
+        )
     return True, ""
 
 
@@ -261,11 +305,19 @@ def _exact_applied_strong_update_receipt(
     if action.get("action_type") != "update_existing":
         return None, None, "The pairing action is not an existing-work metadata update."
     if str(action.get("confidence") or "").casefold() != "strong":
-        return None, None, "Only strong paired-publication updates may use an apply receipt."
+        return (
+            None,
+            None,
+            "Only strong paired-publication updates may use an apply receipt.",
+        )
     folder = action.get("folder")
     doi = action.get("doi")
     if not isinstance(folder, str) or not folder or not isinstance(doi, str) or not doi:
-        return None, None, "The strong pairing action is missing its exact folder or DOI identity."
+        return (
+            None,
+            None,
+            "The strong pairing action is missing its exact folder or DOI identity.",
+        )
     applied = report.get("applied")
     if not isinstance(applied, list):
         return None, None, "The pairing report has no applied-action receipt list."
@@ -278,13 +330,23 @@ def _exact_applied_strong_update_receipt(
         and entry.get("folder") == folder
     ]
     if not matching:
-        return None, None, "No exact applied-action receipt matches this strong pairing update."
+        return (
+            None,
+            None,
+            "No exact applied-action receipt matches this strong pairing update.",
+        )
     if len(matching) != 1:
-        return None, None, "Multiple applied-action receipts match one strong pairing update."
+        return (
+            None,
+            None,
+            "Multiple applied-action receipts match one strong pairing update.",
+        )
     entry_index, entry = matching[0]
-    if not isinstance(entry.get("created"), bool) or not isinstance(
-        entry.get("updated_files"), list
-    ) or not all(isinstance(path, str) and path for path in entry["updated_files"]):
+    if (
+        not isinstance(entry.get("created"), bool)
+        or not isinstance(entry.get("updated_files"), list)
+        or not all(isinstance(path, str) and path for path in entry["updated_files"])
+    ):
         return None, None, "The applied-action receipt has invalid result metadata."
     provenance = entry.get("provenance")
     if not isinstance(provenance, dict):
@@ -292,13 +354,25 @@ def _exact_applied_strong_update_receipt(
     action_sha256 = _pair_action_sha256(action)
     expected_metadata_path = f"papers/{folder}/metadata.json"
     if provenance.get("action_sha256") != action_sha256:
-        return None, None, "The applied-action receipt action hash does not match the current action."
+        return (
+            None,
+            None,
+            "The applied-action receipt action hash does not match the current action.",
+        )
     if provenance.get("metadata_path") != expected_metadata_path:
-        return None, None, "The applied-action receipt metadata path does not match the action folder."
+        return (
+            None,
+            None,
+            "The applied-action receipt metadata path does not match the action folder.",
+        )
     if not _is_sha256(provenance.get("metadata_sha256")):
         return None, None, "The applied-action receipt has an invalid metadata hash."
     if not _has_zoned_timestamp(provenance.get("applied_at")):
-        return None, None, "The applied-action receipt is missing a timezone-qualified apply time."
+        return (
+            None,
+            None,
+            "The applied-action receipt is missing a timezone-qualified apply time.",
+        )
     approval = provenance.get("approval")
     if (
         not isinstance(approval, dict)
@@ -308,7 +382,11 @@ def _exact_applied_strong_update_receipt(
         or not approval["approved_by"].strip()
         or not _has_zoned_timestamp(approval.get("approved_at"))
     ):
-        return None, None, "The applied-action receipt lacks an exact explicit apply approval."
+        return (
+            None,
+            None,
+            "The applied-action receipt lacks an exact explicit apply approval.",
+        )
     return entry, entry_index, ""
 
 
@@ -342,7 +420,11 @@ def _verified_superseded_strong_update(
 
     actions = report.get("actions")
     if not isinstance(actions, list):
-        return False, {}, "The pairing report has no action list for supersession verification."
+        return (
+            False,
+            {},
+            "The pairing report has no action list for supersession verification.",
+        )
     folder = action.get("folder")
     doi = str(action.get("doi") or "").casefold()
     release_url = str(action.get("github_release_url") or "")
@@ -375,21 +457,27 @@ def _verified_superseded_strong_update(
             continue
         successor_provenance = successor_entry["provenance"]
         assert isinstance(successor_provenance, dict)  # exact receipt checked above
-        return True, {
-            "state": "historical-superseded",
-            "original_action_sha256": provenance["action_sha256"],
-            "original_metadata_sha256": provenance["metadata_sha256"],
-            "superseded_by": {
-                "doi": str(successor.get("doi") or ""),
-                "folder": str(successor.get("folder") or ""),
-                "github_repo": str(successor.get("github_repo") or ""),
-                "github_release_url": str(successor.get("github_release_url") or ""),
-                "zenodo_record_url": str(successor.get("zenodo_record_url") or ""),
-                "release_tag": str(successor.get("release_tag") or ""),
-                "action_sha256": successor_provenance["action_sha256"],
-                "metadata_sha256": successor_provenance["metadata_sha256"],
+        return (
+            True,
+            {
+                "state": "historical-superseded",
+                "original_action_sha256": provenance["action_sha256"],
+                "original_metadata_sha256": provenance["metadata_sha256"],
+                "superseded_by": {
+                    "doi": str(successor.get("doi") or ""),
+                    "folder": str(successor.get("folder") or ""),
+                    "github_repo": str(successor.get("github_repo") or ""),
+                    "github_release_url": str(
+                        successor.get("github_release_url") or ""
+                    ),
+                    "zenodo_record_url": str(successor.get("zenodo_record_url") or ""),
+                    "release_tag": str(successor.get("release_tag") or ""),
+                    "action_sha256": successor_provenance["action_sha256"],
+                    "metadata_sha256": successor_provenance["metadata_sha256"],
+                },
             },
-        }, ""
+            "",
+        )
     return (
         False,
         {},
@@ -686,14 +774,16 @@ def paired_publication_items(
         elif action_type == "software_catalogued":
             catalog = software_catalog_dois(repo_root).get(doi.casefold())
             valid = bool(
-                catalog and catalog["paper_folder"] == action.get("folder")
+                catalog
+                and catalog["paper_folder"] == action.get("folder")
                 and _software_pair_matches(report, candidate_fingerprint)
             )
             status = "applied" if valid else "deferred"
             category = "zenodo_candidate"
             reason = (
                 "The software archive is already linked by its DOI from a software row supplementing a bibliography-cited paper; no new bibliography entry is required."
-                if valid else "The claimed software-catalog linkage is no longer verifiable; re-review it."
+                if valid
+                else "The claimed software-catalog linkage is no longer verifiable; re-review it."
             )
         elif action_type == "update_existing":
             applied_receipt_valid, applied_receipt_reason = (
@@ -704,10 +794,12 @@ def paired_publication_items(
                 status = "applied"
                 reason = "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt."
             else:
-                historical_supersession_valid, historical_supersession, _supersession_error = (
-                    _verified_superseded_strong_update(
-                        action, report, repo_root=repo_root
-                    )
+                (
+                    historical_supersession_valid,
+                    historical_supersession,
+                    _supersession_error,
+                ) = _verified_superseded_strong_update(
+                    action, report, repo_root=repo_root
                 )
                 if historical_supersession_valid:
                     status = "applied"
@@ -718,7 +810,10 @@ def paired_publication_items(
                     )
                 else:
                     status = "deferred"
-                    reason = "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: " + applied_receipt_reason
+                    reason = (
+                        "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: "
+                        + applied_receipt_reason
+                    )
         elif action_type == "needs_review":
             category = "ambiguous_doi_change"
             if reviewed_status != "deferred":
@@ -823,7 +918,7 @@ def _verified_doi_approval(report: dict[str, Any], *, repo_root: Path | None) ->
         try:
             content = proposal_path.read_bytes()
             proposal = json.loads(content)
-        except (OSError, json.JSONDecodeError):
+        except OSError, json.JSONDecodeError:
             continue
         if hashlib.sha256(content).hexdigest() != proposal_sha or not isinstance(
             proposal, dict
@@ -1274,9 +1369,7 @@ def public_source_observation_items(
     decision_index = _observation_decisions(decisions)
     current_facts = snapshot.get("facts") if isinstance(snapshot, dict) else None
     prior_facts = (
-        previous_snapshot.get("facts")
-        if isinstance(previous_snapshot, dict)
-        else None
+        previous_snapshot.get("facts") if isinstance(previous_snapshot, dict) else None
     )
     if not isinstance(current_facts, dict) or not isinstance(prior_facts, dict):
         return [

@@ -85,8 +85,14 @@ def test_repository_pages_split_primary_and_forks():
     assert '<a href="data/agent-index.json">Agent Map</a>' in primary
     assert 'http-equiv="Content-Security-Policy"' in forks
     assert '<a href="data/agent-index.json">Agent Map</a>' in forks
-    assert "const rows = Array.from(document.querySelectorAll('#inventoryRows tr'))" not in primary
-    assert "const rows = Array.from(document.querySelectorAll('#inventoryRows tr'))" not in forks
+    assert (
+        "const rows = Array.from(document.querySelectorAll('#inventoryRows tr'))"
+        not in primary
+    )
+    assert (
+        "const rows = Array.from(document.querySelectorAll('#inventoryRows tr'))"
+        not in forks
+    )
 
 
 def test_cached_inventory_render_is_idempotent_and_check_fails_on_drift(tmp_path: Path):
@@ -129,7 +135,10 @@ def test_cached_inventory_render_is_idempotent_and_check_fails_on_drift(tmp_path
         forks_html_out=forks,
         baseline_path=baseline,
     )
-    primary.write_text(primary.read_text(encoding="utf-8").replace("Agent Map", "Missing"), encoding="utf-8")
+    primary.write_text(
+        primary.read_text(encoding="utf-8").replace("Agent Map", "Missing"),
+        encoding="utf-8",
+    )
     with pytest.raises(SystemExit, match="repositories.html is stale"):
         bgi.check_outputs(
             json_out=cache,
@@ -166,9 +175,7 @@ def test_normalize_repo_retains_immutable_github_identity():
         "updated_at": "2026-08-25T00:00:00Z",
     }
 
-    normalized = bgi.normalize_repo(
-        raw, set(), "2026-08-26T00:00:00Z"
-    )
+    normalized = bgi.normalize_repo(raw, set(), "2026-08-26T00:00:00Z")
 
     assert normalized["github_id"] == 12345
     assert normalized["github_node_id"] == "R_kgDOExample"

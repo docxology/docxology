@@ -31,7 +31,13 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-from docxology_tools.report_paths import dated_report_dir, generated_timestamp, latest_subdir_file, source_commit, source_worktree_state  # noqa: E402
+from docxology_tools.report_paths import (  # noqa: E402
+    dated_report_dir,
+    generated_timestamp,
+    latest_subdir_file,
+    source_commit,
+    source_worktree_state,
+)
 
 OUT_DIR = dated_report_dir("browser-qa")
 MANIFEST = OUT_DIR / "manifest.json"
@@ -106,7 +112,10 @@ def run_report() -> dict:
             checks[-1]["duration_ms"] = round((time.monotonic() - started) * 1000)
 
         def new_context(browser, **kwargs):
-            options = {"viewport": {"width": 1100, "height": 850}, "service_workers": "block"}
+            options = {
+                "viewport": {"width": 1100, "height": 850},
+                "service_workers": "block",
+            }
             options.update(kwargs)
             return browser.new_context(**options)
 
@@ -127,6 +136,7 @@ def run_report() -> dict:
                     console_errors: list[str] = []
                     console_warnings: list[str] = []
                     page_errors: list[str] = []
+
                     def capture_console(msg) -> None:
                         # No console errors are excused. The one exemption that
                         # used to live here — Chromium's "frame-ancestors is
@@ -135,14 +145,21 @@ def run_report() -> dict:
                         # error, so the gate now catches it if it returns.
                         if msg.type == "error":
                             console_errors.append(msg.text)
+
                     page.on("console", capture_console)
                     page.on("pageerror", lambda exc: page_errors.append(str(exc)))
                     for route, selector in routes.items():
-                        page.goto(base + "/" + route, wait_until="domcontentloaded", timeout=30000)
+                        page.goto(
+                            base + "/" + route,
+                            wait_until="domcontentloaded",
+                            timeout=30000,
+                        )
                         page.wait_for_selector(selector, timeout=30000)
                         page.wait_for_timeout(250)
                     if console_errors or page_errors:
-                        raise AssertionError({"console": console_errors[:10], "page": page_errors[:10]})
+                        raise AssertionError(
+                            {"console": console_errors[:10], "page": page_errors[:10]}
+                        )
                 return {
                     "routes": len(routes),
                     "console_errors": 0,
@@ -153,7 +170,9 @@ def run_report() -> dict:
             record(CHECK_NAMES[0], load_pages)
 
             def mobile_menu() -> dict:
-                with new_context(browser, viewport={"width": 320, "height": 760}) as context:
+                with new_context(
+                    browser, viewport={"width": 320, "height": 760}
+                ) as context:
                     page = context.new_page()
                     page.goto(base + "/index.html", wait_until="domcontentloaded")
                     toggle = page.locator(".menu-btn")
@@ -163,8 +182,15 @@ def run_report() -> dict:
                     page.keyboard.press("Escape")
                     if toggle.get_attribute("aria-expanded") != "false":
                         raise AssertionError("Escape did not close the menu")
-                    if page.evaluate("document.activeElement === document.querySelector('.menu-btn')") is not True:
-                        raise AssertionError("Escape did not restore focus to the menu toggle")
+                    if (
+                        page.evaluate(
+                            "document.activeElement === document.querySelector('.menu-btn')"
+                        )
+                        is not True
+                    ):
+                        raise AssertionError(
+                            "Escape did not restore focus to the menu toggle"
+                        )
                 return {"opened_and_closed": True, "focus_restored": True}
 
             record(CHECK_NAMES[1], mobile_menu)
@@ -175,29 +201,49 @@ def run_report() -> dict:
                     "art.html": "full artwork data export",
                     "videos.html": "static video index",
                 }
-                with new_context(browser, java_script_enabled=False, viewport={"width": 320, "height": 760}) as context:
+                with new_context(
+                    browser,
+                    java_script_enabled=False,
+                    viewport={"width": 320, "height": 760},
+                ) as context:
                     page = context.new_page()
                     for route, marker in routes.items():
                         page.goto(base + "/" + route, wait_until="domcontentloaded")
                         if not page.locator("h1").count():
-                            raise AssertionError(f"{route} has no heading without JavaScript")
+                            raise AssertionError(
+                                f"{route} has no heading without JavaScript"
+                            )
                         if marker not in page.locator("body").inner_text():
-                            raise AssertionError(f"{route} missing fallback marker: {marker}")
+                            raise AssertionError(
+                                f"{route} missing fallback marker: {marker}"
+                            )
                         nav_links = page.locator(".nav-links > li > a")
-                        if not nav_links.count() or any(not link.is_visible() for link in nav_links.all()):
-                            raise AssertionError(f"{route} hides primary navigation without JavaScript")
+                        if not nav_links.count() or any(
+                            not link.is_visible() for link in nav_links.all()
+                        ):
+                            raise AssertionError(
+                                f"{route} hides primary navigation without JavaScript"
+                            )
                         more = page.locator(".nav-more summary").first
                         more.click()
                         if not page.locator(".nav-more-panel a").first.is_visible():
-                            raise AssertionError(f"{route} hides native More disclosure without JavaScript")
-                return {"routes": len(routes), "fallbacks": "visible", "mobile_navigation": "reachable at 320px"}
+                            raise AssertionError(
+                                f"{route} hides native More disclosure without JavaScript"
+                            )
+                return {
+                    "routes": len(routes),
+                    "fallbacks": "visible",
+                    "mobile_navigation": "reachable at 320px",
+                }
 
             record(CHECK_NAMES[2], no_javascript_fallback)
 
             def publications_controls() -> dict:
                 with new_context(browser) as context:
                     page = context.new_page()
-                    page.goto(base + "/publications.html", wait_until="domcontentloaded")
+                    page.goto(
+                        base + "/publications.html", wait_until="domcontentloaded"
+                    )
                     page.wait_for_selector("#pub-tbody tr")
                     # The catalog paginates (PAGE_SIZE rows per view, load-more),
                     # so row counts do not narrow when a filter matches more
@@ -212,9 +258,9 @@ def run_report() -> dict:
                     # wait for the filtered message before reading anything or
                     # a pre-hydration empty tbody would pass the badge check
                     # vacuously.
-                    page.locator("#result-count").filter(has_text="filtered from").wait_for(
-                        timeout=15000
-                    )
+                    page.locator("#result-count").filter(
+                        has_text="filtered from"
+                    ).wait_for(timeout=15000)
                     count_after = page.locator("#result-count").text_content()
                     if "filtered from" not in count_after:
                         raise AssertionError(
@@ -231,11 +277,18 @@ def run_report() -> dict:
                         raise AssertionError(
                             f"paper filter left {non_paper_rows} non-paper rows visible"
                         )
-                    if page.locator("#filter-paper").get_attribute("aria-pressed") != "true":
-                        raise AssertionError("paper filter did not expose pressed state")
+                    if (
+                        page.locator("#filter-paper").get_attribute("aria-pressed")
+                        != "true"
+                    ):
+                        raise AssertionError(
+                            "paper filter did not expose pressed state"
+                        )
                     first_sort = page.locator(".th-sort-btn").first
                     first_sort.click()
-                    sort_state = page.locator("th[data-sortable]").first.get_attribute("aria-sort")
+                    sort_state = page.locator("th[data-sortable]").first.get_attribute(
+                        "aria-sort"
+                    )
                     if sort_state not in {"ascending", "descending"}:
                         raise AssertionError(f"sort state missing: {sort_state}")
                 return {
@@ -261,27 +314,52 @@ def run_report() -> dict:
                     page.keyboard.press("Escape")
                     if page.locator("#lightbox").get_attribute("aria-hidden") != "true":
                         raise AssertionError("Escape did not close the lightbox")
-                    if page.evaluate("document.activeElement.classList.contains('art-card')") is not True:
-                        raise AssertionError("lightbox did not restore focus to the artwork card")
+                    if (
+                        page.evaluate(
+                            "document.activeElement.classList.contains('art-card')"
+                        )
+                        is not True
+                    ):
+                        raise AssertionError(
+                            "lightbox did not restore focus to the artwork card"
+                        )
                 return {"trigger": title, "focus_restored": True}
 
             record(CHECK_NAMES[4], gallery_focus)
 
             def responsive_accessibility() -> dict:
                 routes = ["index.html", "publications.html", "art.html", "videos.html"]
-                with new_context(browser, viewport={"width": 320, "height": 760}) as context:
+                with new_context(
+                    browser, viewport={"width": 320, "height": 760}
+                ) as context:
                     context.set_default_timeout(30000)
                     page = context.new_page()
                     page.emulate_media(reduced_motion="reduce")
                     for route in routes:
                         page.goto(base + "/" + route, wait_until="domcontentloaded")
                         page.wait_for_timeout(250)
-                        if page.evaluate("window.matchMedia('(prefers-reduced-motion: reduce)').matches") is not True:
-                            raise AssertionError("reduced-motion media query not active")
-                        overflow = page.evaluate("document.documentElement.scrollWidth - window.innerWidth")
+                        if (
+                            page.evaluate(
+                                "window.matchMedia('(prefers-reduced-motion: reduce)').matches"
+                            )
+                            is not True
+                        ):
+                            raise AssertionError(
+                                "reduced-motion media query not active"
+                            )
+                        overflow = page.evaluate(
+                            "document.documentElement.scrollWidth - window.innerWidth"
+                        )
                         if overflow > 2:
-                            raise AssertionError(f"{route} overflows viewport by {overflow}px")
-                return {"routes": len(routes), "viewport": "320x760", "reduced_motion": True, "max_overflow_px": 2}
+                            raise AssertionError(
+                                f"{route} overflows viewport by {overflow}px"
+                            )
+                return {
+                    "routes": len(routes),
+                    "viewport": "320x760",
+                    "reduced_motion": True,
+                    "max_overflow_px": 2,
+                }
 
             record(CHECK_NAMES[5], responsive_accessibility)
 
@@ -289,19 +367,31 @@ def run_report() -> dict:
                 with new_context(browser, forced_colors="active") as context:
                     page = context.new_page()
                     page.goto(base + "/index.html", wait_until="domcontentloaded")
-                    forced = page.evaluate("window.matchMedia('(forced-colors: active)').matches")
+                    forced = page.evaluate(
+                        "window.matchMedia('(forced-colors: active)').matches"
+                    )
                     if not forced:
                         raise AssertionError("forced-colors emulation did not activate")
-                    page.goto(base + "/videos/personal-NWrGixOmW6k.html", wait_until="domcontentloaded")
+                    page.goto(
+                        base + "/videos/personal-NWrGixOmW6k.html",
+                        wait_until="domcontentloaded",
+                    )
                     iframe = page.locator("iframe").first
                     src = iframe.get_attribute("src") or ""
                     if not src.startswith("https://www.youtube-nocookie.com/embed/"):
                         raise AssertionError(f"unapproved iframe origin: {src}")
                     if not iframe.get_attribute("title"):
                         raise AssertionError("YouTube iframe has no title")
-                    if iframe.get_attribute("referrerpolicy") != "strict-origin-when-cross-origin":
+                    if (
+                        iframe.get_attribute("referrerpolicy")
+                        != "strict-origin-when-cross-origin"
+                    ):
                         raise AssertionError("YouTube iframe referrer policy drifted")
-                return {"forced_colors": True, "iframe_origin": "www.youtube-nocookie.com", "iframe_title": True}
+                return {
+                    "forced_colors": True,
+                    "iframe_origin": "www.youtube-nocookie.com",
+                    "iframe_title": True,
+                }
 
             record(CHECK_NAMES[6], forced_colors_and_iframes)
 
@@ -315,20 +405,31 @@ def run_report() -> dict:
                     page.wait_for_selector("#shortcuts-overlay[aria-hidden='false']")
                     for key in ("Tab", "Shift+Tab", "Tab"):
                         page.keyboard.press(key)
-                        if not page.evaluate("document.querySelector('#shortcuts-overlay').contains(document.activeElement)"):
+                        if not page.evaluate(
+                            "document.querySelector('#shortcuts-overlay').contains(document.activeElement)"
+                        ):
                             raise AssertionError(f"{key} escaped the shortcuts dialog")
                     page.keyboard.press("Escape")
-                    if page.locator("#shortcuts-overlay").get_attribute("aria-hidden") != "true":
+                    if (
+                        page.locator("#shortcuts-overlay").get_attribute("aria-hidden")
+                        != "true"
+                    ):
                         raise AssertionError("Escape did not close shortcuts")
                     if not opener.evaluate("node => node === document.activeElement"):
                         raise AssertionError("shortcuts did not restore opener focus")
-                return {"tab_trapped": True, "escape_closed": True, "focus_restored": True}
+                return {
+                    "tab_trapped": True,
+                    "escape_closed": True,
+                    "focus_restored": True,
+                }
 
             record(CHECK_NAMES[7], shortcuts_focus)
             browser.close()
 
         if tuple(check.get("name") for check in checks) != CHECK_NAMES:
-            raise RuntimeError("browser QA implementation no longer matches its declared coverage contract")
+            raise RuntimeError(
+                "browser QA implementation no longer matches its declared coverage contract"
+            )
 
         report = {
             "generated_at": generated_timestamp(),
@@ -341,7 +442,9 @@ def run_report() -> dict:
             "checks": checks,
         }
         MANIFEST.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-        print(f"wrote browser QA report ({report['passing']}/{report['count']} passing)")
+        print(
+            f"wrote browser QA report ({report['passing']}/{report['count']} passing)"
+        )
         return report
     finally:
         server.terminate()
@@ -357,8 +460,14 @@ def check() -> None:
         raise SystemExit("Missing browser QA manifest")
     report = json.loads(path.read_text(encoding="utf-8"))
     failures = [item["name"] for item in report.get("checks", []) if not item.get("ok")]
-    if not report.get("checks") or failures or report.get("passing") != report.get("count"):
-        raise SystemExit("Browser QA failures: " + ", ".join(failures or ["incomplete report"]))
+    if (
+        not report.get("checks")
+        or failures
+        or report.get("passing") != report.get("count")
+    ):
+        raise SystemExit(
+            "Browser QA failures: " + ", ".join(failures or ["incomplete report"])
+        )
     print(f"checked browser QA report ({report['passing']}/{report['count']} passing)")
 
 

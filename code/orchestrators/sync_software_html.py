@@ -80,7 +80,9 @@ def load_source_template() -> str:
     if not SOFTWARE_TEMPLATE.is_file():
         raise SystemExit(f"Missing source template {SOFTWARE_TEMPLATE}")
     template = SOFTWARE_TEMPLATE.read_text(encoding="utf-8")
-    invalid = [token for token in SOFTWARE_TEMPLATE_TOKENS if template.count(token) != 1]
+    invalid = [
+        token for token in SOFTWARE_TEMPLATE_TOKENS if template.count(token) != 1
+    ]
     if invalid:
         raise ValueError(
             "Software template must contain exactly one of each placeholder: "
@@ -103,7 +105,9 @@ def load_github_repos_by_url() -> dict[str, dict]:
         return {}
     data = json.loads(GITHUB_REPOSITORIES_JSON.read_text(encoding="utf-8"))
     repos = data.get("repositories", data if isinstance(data, list) else [])
-    return {(r.get("html_url") or "").rstrip("/"): r for r in repos if r.get("html_url")}
+    return {
+        (r.get("html_url") or "").rstrip("/"): r for r in repos if r.get("html_url")
+    }
 
 
 def split_rows(rows: list[SoftwareRow]) -> tuple[list[SoftwareRow], list[SoftwareRow]]:
@@ -112,22 +116,33 @@ def split_rows(rows: list[SoftwareRow]) -> tuple[list[SoftwareRow], list[Softwar
     return docx, aii
 
 
-def validate_rows(rows: list[SoftwareRow]) -> tuple[list[SoftwareRow], list[SoftwareRow]]:
+def validate_rows(
+    rows: list[SoftwareRow],
+) -> tuple[list[SoftwareRow], list[SoftwareRow]]:
     if not rows:
         raise SystemExit("No software rows parsed")
     role_errors = doi_role_label_errors(rows)
     if role_errors:
-        raise SystemExit("Ambiguous software DOI-role labels:\n" + "\n".join(f"  - {error}" for error in role_errors))
+        raise SystemExit(
+            "Ambiguous software DOI-role labels:\n"
+            + "\n".join(f"  - {error}" for error in role_errors)
+        )
     expected_docx, expected_aii = parse_software_catalog_counts()
     docx, aii = split_rows(rows)
     if len(docx) != expected_docx:
-        raise SystemExit(f"Expected {expected_docx} docxology rows from SOFTWARE.md, got {len(docx)}")
+        raise SystemExit(
+            f"Expected {expected_docx} docxology rows from SOFTWARE.md, got {len(docx)}"
+        )
     if len(aii) != expected_aii:
-        raise SystemExit(f"Expected {expected_aii} AII rows from SOFTWARE.md, got {len(aii)}")
+        raise SystemExit(
+            f"Expected {expected_aii} AII rows from SOFTWARE.md, got {len(aii)}"
+        )
     return docx, aii
 
 
-def main_entity_object(row: SoftwareRow, repos_by_url: dict[str, dict] | None = None) -> dict:
+def main_entity_object(
+    row: SoftwareRow, repos_by_url: dict[str, dict] | None = None
+) -> dict:
     obj: dict = {
         "@type": "SoftwareSourceCode",
         "@id": f"{(row.url or '').rstrip('/')}#software",
@@ -213,14 +228,18 @@ def render_docx_footer(docx_count: int) -> str:
 def replace_between_markers(text: str, begin: str, end: str, replacement: str) -> str:
     pattern = re.escape(begin) + r"[\s\S]*?" + re.escape(end)
     if text.count(begin) != 1 or text.count(end) != 1:
-        raise ValueError(f"Expected exactly one marker pair {begin} / {end} in software.html")
+        raise ValueError(
+            f"Expected exactly one marker pair {begin} / {end} in software.html"
+        )
     replaced, replacement_count = re.subn(
         pattern,
         f"{begin}\n{replacement}\n        {end}",
         text,
         count=1,
     )
-    if replacement_count != 1:  # Defensive: marker-count checks above should guarantee this.
+    if (
+        replacement_count != 1
+    ):  # Defensive: marker-count checks above should guarantee this.
         raise ValueError(f"Could not replace markers {begin} / {end} in software.html")
     return replaced
 
@@ -249,7 +268,9 @@ def replace_inline_collection_ld(html_text: str, collection: dict) -> str:
     )
 
 
-def replace_head_meta(html_text: str, docx_count: int, aii_count: int, github_counts: dict[str, int]) -> str:
+def replace_head_meta(
+    html_text: str, docx_count: int, aii_count: int, github_counts: dict[str, int]
+) -> str:
     public_total = github_counts.get("total")
     title = "Daniel Ari Friedman Software | Active Inference Tools"
     public_phrase = (
@@ -269,7 +290,9 @@ def replace_head_meta(html_text: str, docx_count: int, aii_count: int, github_co
             "Explore CEREBRUM, GNN, P3IF, MDKV, and open-source research software by "
             "Daniel Ari Friedman across Active Inference, biology, and security."
         )
-    html_text = re.sub(r"<title>[^<]*</title>", f"<title>{title}</title>", html_text, count=1)
+    html_text = re.sub(
+        r"<title>[^<]*</title>", f"<title>{title}</title>", html_text, count=1
+    )
     html_text = re.sub(
         r'(<meta name="description" content=")[^"]*(")',
         rf"\g<1>{desc}\2",
@@ -320,9 +343,13 @@ def replace_head_meta(html_text: str, docx_count: int, aii_count: int, github_co
     return html_text
 
 
-def _assert_html_summary(html_text: str, docx_count: int, aii_count: int, total_count: int) -> None:
+def _assert_html_summary(
+    html_text: str, docx_count: int, aii_count: int, total_count: int
+) -> None:
     if f"{docx_count} owned repositories" not in html_text:
-        raise SystemExit(f"software.html missing owned repository summary for {docx_count}")
+        raise SystemExit(
+            f"software.html missing owned repository summary for {docx_count}"
+        )
     if f"{aii_count} catalogued" not in html_text:
         raise SystemExit(f"software.html missing AII catalog summary for {aii_count}")
     if f"{docx_count + aii_count} repos" in html_text:
@@ -355,10 +382,17 @@ def render_outputs_from_template(
         html_out, SHARED_NAV_BEGIN, SHARED_NAV_END, render_nav(active="software")
     )
     html_out = replace_head_meta(html_out, len(docx), len(aii), github_counts)
-    html_out = replace_between_markers(html_out, DOCX_GRID_BEGIN, DOCX_GRID_END, render_docx_grid(docx))
-    html_out = replace_between_markers(html_out, AII_GRID_BEGIN, AII_GRID_END, render_aii_grid(aii))
     html_out = replace_between_markers(
-        html_out, DOCX_FOOTER_BEGIN, DOCX_FOOTER_END, render_docx_footer(len(docx)).strip()
+        html_out, DOCX_GRID_BEGIN, DOCX_GRID_END, render_docx_grid(docx)
+    )
+    html_out = replace_between_markers(
+        html_out, AII_GRID_BEGIN, AII_GRID_END, render_aii_grid(aii)
+    )
+    html_out = replace_between_markers(
+        html_out,
+        DOCX_FOOTER_BEGIN,
+        DOCX_FOOTER_END,
+        render_docx_footer(len(docx)).strip(),
     )
 
     _assert_collection_consistency(collection, rows)
@@ -384,8 +418,14 @@ def render_outputs(rows: list[SoftwareRow] | None = None) -> dict[Path, str]:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     mode = parser.add_mutually_exclusive_group()
-    mode.add_argument("--apply", action="store_true", help="Write software.html and software-ld.json")
-    mode.add_argument("--check", action="store_true", help="Fail if source-rendered software outputs are stale")
+    mode.add_argument(
+        "--apply", action="store_true", help="Write software.html and software-ld.json"
+    )
+    mode.add_argument(
+        "--check",
+        action="store_true",
+        help="Fail if source-rendered software outputs are stale",
+    )
     args = parser.parse_args()
 
     rows = load_rows()

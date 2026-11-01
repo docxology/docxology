@@ -45,47 +45,61 @@ def build_payload() -> dict:
     source_snapshot = snapshot_path()
     snapshot = load_json(source_snapshot)
     owned = [r for r in software["repositories"] if r["owner"] == "docxology"]
-    aii = [r for r in software["repositories"] if r["owner"] == "ActiveInferenceInstitute"]
+    aii = [
+        r for r in software["repositories"] if r["owner"] == "ActiveInferenceInstitute"
+    ]
     comparisons = [
         {
             "name": "Curated bibliography vs ORCID work groups",
             "local_value": works["count"],
-            "public_value": snapshot_value(snapshot, "ORCID work groups", "group_count"),
+            "public_value": snapshot_value(
+                snapshot, "ORCID work groups", "group_count"
+            ),
             "relationship": "not expected to match",
             "interpretation": "The local bibliography intentionally includes presentations, courses, books, software-linked works, and local documentation. ORCID groups external works by identifier/version.",
         },
         {
             "name": "Curated bibliography vs PubMed exact author records",
             "local_value": works["count"],
-            "public_value": snapshot_value(snapshot, "PubMed exact author records", "count"),
+            "public_value": snapshot_value(
+                snapshot, "PubMed exact author records", "count"
+            ),
             "relationship": "subset",
             "interpretation": "PubMed only covers biomedical/indexed literature and is a strict subset of the curated bibliography.",
         },
         {
             "name": "Curated bibliography vs Crossref ORCID DOI records",
             "local_value": works["count"],
-            "public_value": snapshot_value(snapshot, "Crossref ORCID DOI records", "total_results"),
+            "public_value": snapshot_value(
+                snapshot, "Crossref ORCID DOI records", "total_results"
+            ),
             "relationship": "subset",
             "interpretation": "Crossref captures DOI records attached to the ORCID; Zenodo, books, courses, and non-DOI works may be absent or represented elsewhere.",
         },
         {
             "name": "Curated bibliography vs Zenodo ORCID-linked records",
             "local_value": works["count"],
-            "public_value": snapshot_value(snapshot, "Zenodo ORCID-linked records", "total"),
+            "public_value": snapshot_value(
+                snapshot, "Zenodo ORCID-linked records", "total"
+            ),
             "relationship": "overlapping sets",
             "interpretation": "Zenodo includes versioned records and software archives; the local bibliography normalizes selected works into one curated table.",
         },
         {
             "name": "Catalogued docxology software vs GitHub public repository count",
             "local_value": len(owned),
-            "public_value": snapshot_value(snapshot, "GitHub user docxology", "public_repos"),
+            "public_value": snapshot_value(
+                snapshot, "GitHub user docxology", "public_repos"
+            ),
             "relationship": "curated subset",
             "interpretation": "SOFTWARE.md intentionally catalogs selected owned repositories; GitHub counts all public repositories including forks and uncatalogued experiments.",
         },
         {
             "name": "Catalogued AII contributions vs AII GitHub public repository count",
             "local_value": len(aii),
-            "public_value": snapshot_value(snapshot, "GitHub user ActiveInferenceInstitute", "public_repos"),
+            "public_value": snapshot_value(
+                snapshot, "GitHub user ActiveInferenceInstitute", "public_repos"
+            ),
             "relationship": "curated subset",
             "interpretation": "SOFTWARE.md lists AII repositories with docxology contributions, not every public AII repository.",
         },
@@ -146,7 +160,11 @@ def render_md(payload: dict) -> str:
 
 def outputs() -> dict[Path, str]:
     payload = stabilize_payload(build_payload())
-    md_out = REPO_ROOT / "reports" / f"reconciliation_{snapshot_date(REPO_ROOT / payload['snapshot'])}.md"
+    md_out = (
+        REPO_ROOT
+        / "reports"
+        / f"reconciliation_{snapshot_date(REPO_ROOT / payload['snapshot'])}.md"
+    )
     return {
         JSON_OUT: json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
         md_out: render_md(payload),
@@ -155,7 +173,9 @@ def outputs() -> dict[Path, str]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if reconciliation outputs are stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if reconciliation outputs are stale"
+    )
     args = parser.parse_args()
     stale = []
     for path, content in outputs().items():

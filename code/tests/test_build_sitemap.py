@@ -11,10 +11,13 @@ _DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
 if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 
-
+import docxology_tools  # noqa: E402,F401 (initializes the orchestrator import path)
 import build_sitemap  # noqa: E402
 from build_sitemap import render, sitemap_locs  # noqa: E402
-from docxology_tools.sitemap_policy import INDEX_PRIORITY_STATIC, indexnow_urls_from_locs  # noqa: E402
+from docxology_tools.sitemap_policy import (  # noqa: E402
+    INDEX_PRIORITY_STATIC,
+    indexnow_urls_from_locs,
+)
 
 
 def test_sitemap_excludes_ops_and_paper_paths():
@@ -31,7 +34,10 @@ def test_sitemap_excludes_ops_and_paper_paths():
 
 def test_sitemap_includes_work_pages():
     locs = re.findall(r"<loc>([^<]+)</loc>", render())
-    assert any(loc.endswith("works/Friedman2026PolicyEntanglementActiveInference119.html") for loc in locs)
+    assert any(
+        loc.endswith("works/Friedman2026PolicyEntanglementActiveInference119.html")
+        for loc in locs
+    )
 
 
 def test_sitemap_includes_video_pages_when_generated(tmp_path: Path):
@@ -61,8 +67,13 @@ def test_sitemap_excludes_non_html_metadata_exports():
     resume PDF legitimately stays."""
     locs = sitemap_locs()
     for suffix in (
-        "llms.txt", "humans.txt", "CITATION.cff", "bibliography.bib",
-        "bibliography.csl.json", "bibliography.ris", "codemeta.json",
+        "llms.txt",
+        "humans.txt",
+        "CITATION.cff",
+        "bibliography.bib",
+        "bibliography.csl.json",
+        "bibliography.ris",
+        "codemeta.json",
     ):
         assert f"https://danielarifriedman.com/{suffix}" not in locs
     assert "https://danielarifriedman.com/resume/resume.pdf" in locs

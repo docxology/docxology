@@ -46,13 +46,17 @@ from docxology_tools.metadata_templates import (  # noqa: E402
 )
 
 log = logging.getLogger(__name__)
-BIBLIOGRAPHY_PATH = Path(os.environ.get("BIB_PATH", PAPERS_DIR.parent / "pages" / "BIBLIOGRAPHY.md"))
+BIBLIOGRAPHY_PATH = Path(
+    os.environ.get("BIB_PATH", PAPERS_DIR.parent / "pages" / "BIBLIOGRAPHY.md")
+)
 DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Z0-9]+", re.I)
 DOI_TRAILING = ".,;:)]}`'\""
 DOCUMENT_FILENAMES = ("README.md", "AGENTS.md", "SKILL.md")
 MANIFEST_FILENAME = "generated-documents.json"
 MANIFEST_VERSION = 1
-GENERATED_DOCUMENT_MARKER = "<!-- docxology:generated-document {filename}; ownership=explicit-manifest -->"
+GENERATED_DOCUMENT_MARKER = (
+    "<!-- docxology:generated-document {filename}; ownership=explicit-manifest -->"
+)
 
 
 @dataclass(frozen=True)
@@ -116,7 +120,9 @@ def _safe_papers_path(
     try:
         relative = candidate.relative_to(papers_root)
     except ValueError as exc:
-        raise ValueError(f"{label} must be contained in {papers_root}: {candidate}") from exc
+        raise ValueError(
+            f"{label} must be contained in {papers_root}: {candidate}"
+        ) from exc
 
     _reject_symlink(papers_root, label="papers root")
     current = papers_root
@@ -132,7 +138,9 @@ def _safe_papers_path(
             resolved_root = papers_root.resolve(strict=True)
             candidate.resolve(strict=False).relative_to(resolved_root)
         except (OSError, ValueError) as exc:
-            raise ValueError(f"{label} escapes the papers directory: {candidate}") from exc
+            raise ValueError(
+                f"{label} escapes the papers directory: {candidate}"
+            ) from exc
 
     if require_directory and not candidate.is_dir():
         raise ValueError(f"{label} must be an existing directory: {candidate}")
@@ -197,8 +205,14 @@ def _require_secure_relative_open() -> None:
     descriptor-relative opens and ``O_NOFOLLOW`` rather than weakening this
     ownership boundary.
     """
-    if not hasattr(os, "O_NOFOLLOW") or not hasattr(os, "O_DIRECTORY") or os.open not in os.supports_dir_fd:
-        raise ValueError("secure no-follow paper-document I/O is unavailable on this platform")
+    if (
+        not hasattr(os, "O_NOFOLLOW")
+        or not hasattr(os, "O_DIRECTORY")
+        or os.open not in os.supports_dir_fd
+    ):
+        raise ValueError(
+            "secure no-follow paper-document I/O is unavailable on this platform"
+        )
 
 
 def _open_papers_parent(
@@ -213,19 +227,25 @@ def _open_papers_parent(
     papers_root = _lexical_absolute(paths.papers_dir)
     relative = candidate.relative_to(papers_root)
     if not relative.parts:
-        raise ValueError(f"{label} must name a file beneath the papers root: {candidate}")
+        raise ValueError(
+            f"{label} must name a file beneath the papers root: {candidate}"
+        )
 
     directory_flags = os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW
     try:
         parent_fd = os.open(papers_root, directory_flags)
     except OSError as exc:
-        raise ValueError(f"unable to securely open papers root for {label}: {exc}") from exc
+        raise ValueError(
+            f"unable to securely open papers root for {label}: {exc}"
+        ) from exc
     try:
         for component in relative.parts[:-1]:
             try:
                 next_fd = os.open(component, directory_flags, dir_fd=parent_fd)
             except OSError as exc:
-                raise ValueError(f"unable to securely open {label} parent {component!r}: {exc}") from exc
+                raise ValueError(
+                    f"unable to securely open {label} parent {component!r}: {exc}"
+                ) from exc
             os.close(parent_fd)
             parent_fd = next_fd
         return parent_fd, relative.parts[-1]
@@ -272,7 +292,9 @@ def _read_papers_text(
     file_descriptor = -1
     try:
         try:
-            file_descriptor = os.open(filename, os.O_RDONLY | os.O_NOFOLLOW, dir_fd=parent_fd)
+            file_descriptor = os.open(
+                filename, os.O_RDONLY | os.O_NOFOLLOW, dir_fd=parent_fd
+            )
         except FileNotFoundError:
             return None
         except OSError as exc:
@@ -316,7 +338,9 @@ def _write_papers_text(
                 dir_fd=parent_fd,
             )
         except OSError as exc:
-            raise ValueError(f"unable to securely open {label} for writing: {exc}") from exc
+            raise ValueError(
+                f"unable to securely open {label} for writing: {exc}"
+            ) from exc
         _verify_regular_file_descriptor(
             file_descriptor,
             label=label,
@@ -381,7 +405,9 @@ def wrap_generated_document(filename: str, content: str) -> str:
     """Add the ownership marker and one canonical final newline to ``content``."""
     if filename == "SKILL.md":
         if not content.startswith("---\n"):
-            raise ValueError("generated SKILL.md content must begin with YAML frontmatter")
+            raise ValueError(
+                "generated SKILL.md content must begin with YAML frontmatter"
+            )
         return f"---\n{generated_document_marker(filename)}\n{content.removeprefix('---\n').rstrip()}\n"
     return f"{generated_document_marker(filename)}\n\n{content.rstrip()}\n"
 
@@ -454,16 +480,22 @@ def load_generated_documents_manifest(
     try:
         raw = json.loads(raw_text)
     except json.JSONDecodeError as exc:
-        raise ValueError(f"invalid generated-document manifest {manifest_path}: {exc}") from exc
+        raise ValueError(
+            f"invalid generated-document manifest {manifest_path}: {exc}"
+        ) from exc
     if not isinstance(raw, dict):
-        raise ValueError(f"generated-document manifest {manifest_path} must be an object")
+        raise ValueError(
+            f"generated-document manifest {manifest_path} must be an object"
+        )
     if raw.get("version") != MANIFEST_VERSION:
         raise ValueError(
             f"generated-document manifest {manifest_path} must declare version {MANIFEST_VERSION}"
         )
     documents = raw.get("documents")
     if not isinstance(documents, list):
-        raise ValueError(f"generated-document manifest {manifest_path} must contain a documents list")
+        raise ValueError(
+            f"generated-document manifest {manifest_path} must contain a documents list"
+        )
 
     entries: dict[str, ManifestEntry] = {}
     for raw_entry in documents:
@@ -482,7 +514,9 @@ def load_generated_documents_manifest(
         else:
             raise ValueError("manifest document entries must be paths or objects")
         if entry.path in entries:
-            raise ValueError(f"duplicate generated-document manifest entry: {entry.path}")
+            raise ValueError(
+                f"duplicate generated-document manifest entry: {entry.path}"
+            )
         entries[entry.path] = entry
     return entries
 
@@ -531,7 +565,9 @@ def load_metadata(
         data = json.loads(metadata_text)
         if not isinstance(data, dict):
             raise ValueError(f"{metadata_path} must contain a metadata object")
-        invalid_folders = [folder for folder, meta in data.items() if not isinstance(meta, dict)]
+        invalid_folders = [
+            folder for folder, meta in data.items() if not isinstance(meta, dict)
+        ]
         if invalid_folders:
             raise ValueError(
                 f"{metadata_path} contains non-object metadata for: {', '.join(sorted(invalid_folders)[:5])}"
@@ -545,7 +581,10 @@ def parse_bibliography(
     *, paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS
 ) -> dict[str, dict[str, Any]]:
     """Parse BIBLIOGRAPHY.md table into a dict keyed by folder name (rows with a Docs link)."""
-    from docxology_tools.author_entities import bibliography_contributor_role, load_author_records
+    from docxology_tools.author_entities import (
+        bibliography_contributor_role,
+        load_author_records,
+    )
     from docxology_tools.work_identifiers import load_registry
 
     bib = {}
@@ -553,7 +592,14 @@ def parse_bibliography(
         log.warning("BIBLIOGRAPHY.md not found")
         return bib
     records = load_author_records(paths.papers_dir.parent)
-    identifiers = load_registry(paths.papers_dir.parent / "data/work-identifiers.json", repo_root=paths.papers_dir.parent) if records else None
+    identifiers = (
+        load_registry(
+            paths.papers_dir.parent / "data/work-identifiers.json",
+            repo_root=paths.papers_dir.parent,
+        )
+        if records
+        else None
+    )
     for row in iter_bibliography_rows(paths.bibliography_path):
         folder = row.folder
         if not folder:
@@ -572,7 +618,9 @@ def parse_bibliography(
             # Registry-verified "Family, Given" names (fetch_work_authors.py).
             # The bibliography owns authorship; folder metadata is a fallback.
             "authors": list(row.authors),
-            "contributor_role": bibliography_contributor_role(row.num, row.title, list(row.authors), records, identifiers),
+            "contributor_role": bibliography_contributor_role(
+                row.num, row.title, list(row.authors), records, identifiers
+            ),
         }
     log.info(f"Parsed {len(bib)} entries from BIBLIOGRAPHY.md")
     return bib
@@ -600,7 +648,9 @@ def canonical_doi(meta: dict[str, Any], bib_entry: dict[str, Any] | None = None)
     or downloadable artifact, but must never become the citation DOI merely by
     being present.
     """
-    bibliography_doi = extract_doi((bib_entry or {}).get("canonical_doi") or (bib_entry or {}).get("link"))
+    bibliography_doi = extract_doi(
+        (bib_entry or {}).get("canonical_doi") or (bib_entry or {}).get("link")
+    )
     return bibliography_doi or extract_doi(meta.get("doi"))
 
 
@@ -631,26 +681,34 @@ def doi_url(doi: str, fallback_url: str | None = None) -> str:
     """Build a resolver URL, accepting a fallback only for the same DOI."""
     if not doi:
         return ""
-    if fallback_url and fallback_url.startswith("http") and doi_matches(extract_doi(fallback_url), doi):
+    if (
+        fallback_url
+        and fallback_url.startswith("http")
+        and doi_matches(extract_doi(fallback_url), doi)
+    ):
         return fallback_url
     return "https://doi.org/" + quote(doi, safe="/:")
 
 
 def doi_badge(doi: str, target_url: str) -> str:
     badge_value = quote(doi, safe="")
-    return f"[![DOI](https://img.shields.io/badge/DOI-{badge_value}-blue)]({target_url})"
+    return (
+        f"[![DOI](https://img.shields.io/badge/DOI-{badge_value}-blue)]({target_url})"
+    )
 
 
 def markdown_target(url: str) -> str:
     if url.startswith(("http://", "https://")):
         parsed = urlsplit(url)
-        return urlunsplit((
-            parsed.scheme,
-            parsed.netloc,
-            quote(parsed.path, safe="/%"),
-            quote(parsed.query, safe="=&%/:?+"),
-            quote(parsed.fragment, safe="=&%/:?+"),
-        ))
+        return urlunsplit(
+            (
+                parsed.scheme,
+                parsed.netloc,
+                quote(parsed.path, safe="/%"),
+                quote(parsed.query, safe="=&%/:?+"),
+                quote(parsed.fragment, safe="=&%/:?+"),
+            )
+        )
     return quote(url, safe="/#%")
 
 
@@ -675,16 +733,16 @@ def extract_methods_from_metadata(meta: dict) -> list[str]:
     never presented as a paper's method; an empty list renders as an explicit
     "not yet summarized" note instead of invented content.
     """
-    return specific_methods(meta.get('methods'))
+    return specific_methods(meta.get("methods"))
 
 
 def method_bullets(meta: dict) -> list[str]:
     """Render paper-specific methods as "**name** — description" bullet bodies."""
     bullets = []
-    for name, description in specific_method_details(meta.get('methods')):
+    for name, description in specific_method_details(meta.get("methods")):
         name = clean_markdown_text(name)
         description = clean_markdown_text(description)
-        bullets.append(f'**{name}** — {description}' if description else name)
+        bullets.append(f"**{name}** — {description}" if description else name)
     return bullets
 
 
@@ -696,8 +754,10 @@ def extract_findings_from_metadata(meta: dict) -> list[str]:
     legitimately restates the abstract's result is kept.
     """
     if grounded_note(meta):
-        return specific_findings(meta.get('key_findings'))
-    return specific_findings(meta.get('key_findings'), meta.get('abstract'), meta.get('description'))
+        return specific_findings(meta.get("key_findings"))
+    return specific_findings(
+        meta.get("key_findings"), meta.get("abstract"), meta.get("description")
+    )
 
 
 def display_author_name(name: str) -> str:
@@ -711,20 +771,32 @@ def display_author_name(name: str) -> str:
 def work_title(folder: str, meta: dict, bib_entry: dict | None = None) -> str:
     """Return the canonical work title: bibliography first, folder metadata as fallback."""
     _, topic = parse_folder_id(folder)
-    if bib_entry and str(bib_entry.get('title') or '').strip():
-        return clean_markdown_text(bib_entry['title'])
-    return clean_markdown_text(meta.get('name') or meta.get('title') or topic)
+    if bib_entry and str(bib_entry.get("title") or "").strip():
+        return clean_markdown_text(bib_entry["title"])
+    return clean_markdown_text(meta.get("name") or meta.get("title") or topic)
 
 
 def work_authors(meta: dict, bib_entry: dict | None = None) -> str:
     """Return the display author list: bibliography first, folder metadata as fallback."""
-    names = [display_author_name(name) for name in (bib_entry or {}).get('authors') or [] if str(name).strip()]
-    display = ', '.join(names) if names else clean_markdown_text(meta.get('authors', 'Daniel Ari Friedman'))
-    return display + ' (eds.)' if (bib_entry or {}).get('contributor_role') == 'editor' else display
+    names = [
+        display_author_name(name)
+        for name in (bib_entry or {}).get("authors") or []
+        if str(name).strip()
+    ]
+    display = (
+        ", ".join(names)
+        if names
+        else clean_markdown_text(meta.get("authors", "Daniel Ari Friedman"))
+    )
+    return (
+        display + " (eds.)"
+        if (bib_entry or {}).get("contributor_role") == "editor"
+        else display
+    )
 
 
 def work_venue(bib_entry: dict | None = None) -> str:
-    return clean_markdown_text((bib_entry or {}).get('venue') or 'Zenodo')
+    return clean_markdown_text((bib_entry or {}).get("venue") or "Zenodo")
 
 
 def yaml_string(value: Any) -> str:
@@ -732,26 +804,28 @@ def yaml_string(value: Any) -> str:
     return json.dumps(str(value), ensure_ascii=False)
 
 
-NO_METHODS_NOTE = 'No paper-specific methods have been summarized yet; see the abstract and the full text.'
-NO_FINDINGS_NOTE = 'No paper-specific findings have been summarized yet; see the abstract and the full text.'
-NO_ABSTRACT_NOTE = 'No abstract is recorded for this work yet; see the DOI or bibliography link.'
+NO_METHODS_NOTE = "No paper-specific methods have been summarized yet; see the abstract and the full text."
+NO_FINDINGS_NOTE = "No paper-specific findings have been summarized yet; see the abstract and the full text."
+NO_ABSTRACT_NOTE = (
+    "No abstract is recorded for this work yet; see the DOI or bibliography link."
+)
 GROUNDED_NOTE = (
-    'Methods and findings are summarized from the full text; each item is backed by a '
-    'verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).'
+    "Methods and findings are summarized from the full text; each item is backed by a "
+    "verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)."
 )
 
 
 def grounded_note(meta: dict) -> str:
     """Return the provenance note for evidence-grounded summaries, else ''."""
-    provenance = meta.get('summary_provenance')
-    if isinstance(provenance, dict) and provenance.get('source') == 'full_text.md':
+    provenance = meta.get("summary_provenance")
+    if isinstance(provenance, dict) and provenance.get("source") == "full_text.md":
         return GROUNDED_NOTE
-    return ''
+    return ""
 
 
 def extract_related_papers(meta: dict, all_folders: list[str]) -> list[str]:
     """Extract related paper folder names from metadata."""
-    related = meta.get('related_papers', [])
+    related = meta.get("related_papers", [])
     # Filter to only valid folders
     return [r for r in related if r in all_folders]
 
@@ -783,9 +857,7 @@ FOLDER_METADATA_FIELDS = (
 )
 
 
-def paper_folders(
-    *, paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS
-) -> list[str]:
+def paper_folders(*, paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS) -> list[str]:
     """Return paper directories in a deterministic order."""
     _reject_symlink(paths.papers_dir, label="papers root")
     if not paths.papers_dir.exists():
@@ -862,7 +934,9 @@ def build_doi_audit(
     for folder in folder_list:
         meta = metadata_by_folder.get(folder, {})
         bib_entry = bibliography.get(folder)
-        bibliography_doi = extract_doi((bib_entry or {}).get("canonical_doi") or (bib_entry or {}).get("link"))
+        bibliography_doi = extract_doi(
+            (bib_entry or {}).get("canonical_doi") or (bib_entry or {}).get("link")
+        )
         metadata_doi = extract_doi(meta.get("doi"))
         folder_artifact_doi = artifact_doi(meta)
         if bibliography_doi:
@@ -884,20 +958,46 @@ def build_doi_audit(
         metadata_doi_url = str(meta.get("doi_url") or "")
         url_doi = extract_doi(metadata_doi_url)
         if metadata_doi and url_doi and not doi_matches(metadata_doi, url_doi):
-            conflicts.append({"code": "canonical_doi_url_mismatch", **context, "doi_url": metadata_doi_url})
+            conflicts.append(
+                {
+                    "code": "canonical_doi_url_mismatch",
+                    **context,
+                    "doi_url": metadata_doi_url,
+                }
+            )
 
         artifact_doi_url = str(meta.get("artifact_doi_url") or "")
         artifact_url_doi = extract_doi(artifact_doi_url)
         if artifact_doi_url and not folder_artifact_doi:
-            conflicts.append({"code": "artifact_doi_url_without_artifact_doi", **context})
-        elif folder_artifact_doi and artifact_url_doi and not doi_matches(folder_artifact_doi, artifact_url_doi):
-            conflicts.append({"code": "artifact_doi_url_mismatch", **context, "artifact_doi_url": artifact_doi_url})
+            conflicts.append(
+                {"code": "artifact_doi_url_without_artifact_doi", **context}
+            )
+        elif (
+            folder_artifact_doi
+            and artifact_url_doi
+            and not doi_matches(folder_artifact_doi, artifact_url_doi)
+        ):
+            conflicts.append(
+                {
+                    "code": "artifact_doi_url_mismatch",
+                    **context,
+                    "artifact_doi_url": artifact_doi_url,
+                }
+            )
 
-        if bibliography_doi and metadata_doi and not doi_matches(bibliography_doi, metadata_doi):
+        if (
+            bibliography_doi
+            and metadata_doi
+            and not doi_matches(bibliography_doi, metadata_doi)
+        ):
             conflicts.append({"code": "canonical_doi_mismatch", **context})
         if bibliography_doi and not metadata_doi and folder_artifact_doi:
             warnings.append({"code": "artifact_doi_not_used_as_canonical", **context})
-        elif metadata_doi and folder_artifact_doi and doi_matches(metadata_doi, folder_artifact_doi):
+        elif (
+            metadata_doi
+            and folder_artifact_doi
+            and doi_matches(metadata_doi, folder_artifact_doi)
+        ):
             warnings.append({"code": "artifact_doi_duplicates_canonical", **context})
 
     conflicts.sort(key=lambda item: (item["folder"], item["code"]))
@@ -935,9 +1035,12 @@ def generate_readme(
     authors = work_authors(meta, bib_entry)
 
     # Get abstract from description or metadata
-    abstract = clean_abstract_text(meta.get('abstract', meta.get('description', ''))) or NO_ABSTRACT_NOTE
+    abstract = (
+        clean_abstract_text(meta.get("abstract", meta.get("description", "")))
+        or NO_ABSTRACT_NOTE
+    )
 
-    keywords = meta.get('keywords', meta.get('tags', []))
+    keywords = meta.get("keywords", meta.get("tags", []))
     domain = resolve_domain(folder, meta, bib_entry)
     venue = work_venue(bib_entry)
 
@@ -945,110 +1048,134 @@ def generate_readme(
     methods = extract_methods_from_metadata(meta)
     findings = extract_findings_from_metadata(meta)
 
-    emoji = DOMAIN_TO_EMOJI.get(domain, '📄')
+    emoji = DOMAIN_TO_EMOJI.get(domain, "📄")
 
-    kw_str = ' · '.join(f'`{k}`' for k in keywords[:12]) if keywords else ''
+    kw_str = " · ".join(f"`{k}`" for k in keywords[:12]) if keywords else ""
 
     lines = [
-        f'# {emoji} {title}',
-        '',
-        f'**{authors}** ({year}) · *{venue}*',
-        '',
+        f"# {emoji} {title}",
+        "",
+        f"**{authors}** ({year}) · *{venue}*",
+        "",
     ]
 
     doi = canonical_doi(meta, bib_entry)
-    doi_target = doi_url(doi, meta.get('doi_url'))
+    doi_target = doi_url(doi, meta.get("doi_url"))
     version_doi = artifact_doi(meta)
-    version_doi_target = doi_url(version_doi, meta.get('artifact_doi_url'))
+    version_doi_target = doi_url(version_doi, meta.get("artifact_doi_url"))
     if doi and doi_target:
         lines.append(doi_badge(doi, doi_target))
-        lines.append('')
+        lines.append("")
 
-    lines.extend([
-        '---',
-        '',
-        *filter(None, (revision_notice_markdown(meta),)),
-        '## Abstract',
-        '',
-        '\n'.join('> ' + escape(line, quote=False) if line else '>' for line in abstract.splitlines()),
-        '',
-    ])
+    lines.extend(
+        [
+            "---",
+            "",
+            *filter(None, (revision_notice_markdown(meta),)),
+            "## Abstract",
+            "",
+            "\n".join(
+                "> " + escape(line, quote=False) if line else ">"
+                for line in abstract.splitlines()
+            ),
+            "",
+        ]
+    )
     if kw_str:
-        lines.extend(['## Keywords', '', kw_str, ''])
-    lines.extend([
-        '## Methods',
-        '',
-    ])
+        lines.extend(["## Keywords", "", kw_str, ""])
+    lines.extend(
+        [
+            "## Methods",
+            "",
+        ]
+    )
 
     for bullet in method_bullets(meta)[:6]:
-        lines.append(f'- {bullet}')
+        lines.append(f"- {bullet}")
     if not methods:
-        lines.append(f'_{NO_METHODS_NOTE}_')
-    lines.append('')
+        lines.append(f"_{NO_METHODS_NOTE}_")
+    lines.append("")
 
-    lines.extend([
-        '## Key Findings',
-        '',
-    ])
+    lines.extend(
+        [
+            "## Key Findings",
+            "",
+        ]
+    )
 
     for finding in findings[:6]:
-        lines.append(f'- {clean_markdown_text(finding)}')
+        lines.append(f"- {clean_markdown_text(finding)}")
     if not findings:
-        lines.append(f'_{NO_FINDINGS_NOTE}_')
-    lines.append('')
+        lines.append(f"_{NO_FINDINGS_NOTE}_")
+    lines.append("")
     if grounded_note(meta) and (methods or findings):
-        lines.extend([f'_{grounded_note(meta)}_', ''])
+        lines.extend([f"_{grounded_note(meta)}_", ""])
 
     # Artifacts section
-    lines.extend([
-        '## Artifacts',
-        '',
-    ])
+    lines.extend(
+        [
+            "## Artifacts",
+            "",
+        ]
+    )
 
     # Check for associated GitHub repo
-    github_repo = meta.get('github_repo')
-    github_release_url = meta.get('github_release_url')
+    github_repo = meta.get("github_repo")
+    github_release_url = meta.get("github_release_url")
     if github_repo:
-        lines.append(f'- GitHub repository: {markdown_link(github_repo, f"https://github.com/{github_repo}")}')
+        lines.append(
+            f"- GitHub repository: {markdown_link(github_repo, f'https://github.com/{github_repo}')}"
+        )
     if github_release_url:
-        release_label = meta.get('release_tag') or meta.get('release_name') or 'Release'
-        lines.append(f'- GitHub release: {markdown_link(release_label, github_release_url)}')
+        release_label = meta.get("release_tag") or meta.get("release_name") or "Release"
+        lines.append(
+            f"- GitHub release: {markdown_link(release_label, github_release_url)}"
+        )
 
     # Check for DOI
     if doi and doi_target:
-        lines.append(f'- DOI: {markdown_link(doi, doi_target)}')
+        lines.append(f"- DOI: {markdown_link(doi, doi_target)}")
     if version_doi and not doi_matches(version_doi, doi) and version_doi_target:
-        lines.append(f'- Artifact DOI: {markdown_link(version_doi, version_doi_target)}')
+        lines.append(
+            f"- Artifact DOI: {markdown_link(version_doi, version_doi_target)}"
+        )
 
-    zenodo_record = meta.get('zenodo_record')
+    zenodo_record = meta.get("zenodo_record")
     if zenodo_record:
-        lines.append(f'- Zenodo record: {markdown_link(zenodo_record, zenodo_record)}')
+        lines.append(f"- Zenodo record: {markdown_link(zenodo_record, zenodo_record)}")
 
-    local_pdfs = sorted((paths.papers_dir / folder).glob('*.pdf'))
+    local_pdfs = sorted((paths.papers_dir / folder).glob("*.pdf"))
     for pdf in local_pdfs[:3]:
-        lines.append(f'- PDF: {markdown_link(pdf.name, pdf.name)}')
+        lines.append(f"- PDF: {markdown_link(pdf.name, pdf.name)}")
 
-    for file_info in meta.get('files', [])[:3]:
-        name = file_info.get('name', '')
-        download_url = file_info.get('download_url', '')
-        if name and download_url and name.lower().endswith('.pdf') and not any(pdf.name == name for pdf in local_pdfs):
-            lines.append(f'- PDF download: {markdown_link(name, download_url)}')
+    for file_info in meta.get("files", [])[:3]:
+        name = file_info.get("name", "")
+        download_url = file_info.get("download_url", "")
+        if (
+            name
+            and download_url
+            and name.lower().endswith(".pdf")
+            and not any(pdf.name == name for pdf in local_pdfs)
+        ):
+            lines.append(f"- PDF download: {markdown_link(name, download_url)}")
 
-    lines.extend([
-        f'- PDF SHA-256: {meta.get("pdf_sha256") or (markdown_link("See Zenodo record", zenodo_record) if zenodo_record else "Not recorded")}',
-        '',
-        '## Citation',
-        '',
-        f'> {authors} ({year}). *{title}*. {venue}.'
-        + (f' DOI: {doi}. URL: {doi_target}.' if doi and doi_target else ''),
-        '',
-        '## Related',
-        '',
-        '- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)',
-        '- [All Papers](../README.md)',
-    ])
+    lines.extend(
+        [
+            f"- PDF SHA-256: {meta.get('pdf_sha256') or (markdown_link('See Zenodo record', zenodo_record) if zenodo_record else 'Not recorded')}",
+            "",
+            "## Citation",
+            "",
+            f"> {authors} ({year}). *{title}*. {venue}."
+            + (f" DOI: {doi}. URL: {doi_target}." if doi and doi_target else ""),
+            "",
+            "## Related",
+            "",
+            "- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)",
+            "- [All Papers](../README.md)",
+        ]
+    )
 
-    return '\n'.join(lines)
+    return "\n".join(lines)
 
 
 def generate_agents(folder: str, meta: dict, bib_entry: dict | None = None) -> str:
@@ -1059,72 +1186,79 @@ def generate_agents(folder: str, meta: dict, bib_entry: dict | None = None) -> s
     domain = resolve_domain(folder, meta, bib_entry)
     methods = extract_methods_from_metadata(meta)
     findings = extract_findings_from_metadata(meta)
-    summarized = '✅' if (methods or findings) else '⏳ not yet summarized'
+    summarized = "✅" if (methods or findings) else "⏳ not yet summarized"
 
     lines = [
-        f'# AGENTS.md — {title}',
-        '',
-        f'**Paper**: {title} ({year})',
-        f'**Domain**: {domain}',
-        f'**{"Editors" if (bib_entry or {}).get("contributor_role") == "editor" else "Authors"}**: {authors}',
-        '',
-        '---',
-        '',
-        '## Agent Roles',
-        '',
-        '### 📖 ARCHIVIST',
-        '- Maintains bibliographic metadata and cross-references',
-        f'- Tracks citation links and DOI consistency for {topic}',
-        '- Updates related_papers links when new connections are identified',
-        '',
-        '### 🔬 RESEARCHER',
-        f'- Extracts methods: {", ".join(methods[:3]) if methods else "See paper"}',
-        f'- Identifies findings: {", ".join(findings[:3]) if findings else "See paper"}',
-        f'- Maps contributions to {domain} literature',
-        '',
-        '### 🎓 EDUCATOR',
-        f'- Creates learning pathways for {domain} concepts',
-        '- Develops SKILL.md with executable instructions',
-        '- Maintains prerequisite knowledge mapping',
-        '',
-        '### 🔗 INTEGRATOR',
-        f'- Connects {title} to related works in the bibliography',
-        '- Maps paper-to-software relationships',
-        '- Updates cross-domain connections',
-        '',
-        '---',
-        '',
-        '## Extraction Log',
-        '',
-        '| Source | Agent | Action | Status |',
-        '|--------|-------|--------|--------|',
-        '| Metadata | ARCHIVIST | Cataloged metadata | ✅ |',
-        f'| Metadata | RESEARCHER | Extracted methods/findings | {summarized} |',
-        '| Metadata | EDUCATOR | Generated documentation | ✅ |',
+        f"# AGENTS.md — {title}",
+        "",
+        f"**Paper**: {title} ({year})",
+        f"**Domain**: {domain}",
+        f"**{'Editors' if (bib_entry or {}).get('contributor_role') == 'editor' else 'Authors'}**: {authors}",
+        "",
+        "---",
+        "",
+        "## Agent Roles",
+        "",
+        "### 📖 ARCHIVIST",
+        "- Maintains bibliographic metadata and cross-references",
+        f"- Tracks citation links and DOI consistency for {topic}",
+        "- Updates related_papers links when new connections are identified",
+        "",
+        "### 🔬 RESEARCHER",
+        f"- Extracts methods: {', '.join(methods[:3]) if methods else 'See paper'}",
+        f"- Identifies findings: {', '.join(findings[:3]) if findings else 'See paper'}",
+        f"- Maps contributions to {domain} literature",
+        "",
+        "### 🎓 EDUCATOR",
+        f"- Creates learning pathways for {domain} concepts",
+        "- Develops SKILL.md with executable instructions",
+        "- Maintains prerequisite knowledge mapping",
+        "",
+        "### 🔗 INTEGRATOR",
+        f"- Connects {title} to related works in the bibliography",
+        "- Maps paper-to-software relationships",
+        "- Updates cross-domain connections",
+        "",
+        "---",
+        "",
+        "## Extraction Log",
+        "",
+        "| Source | Agent | Action | Status |",
+        "|--------|-------|--------|--------|",
+        "| Metadata | ARCHIVIST | Cataloged metadata | ✅ |",
+        f"| Metadata | RESEARCHER | Extracted methods/findings | {summarized} |",
+        "| Metadata | EDUCATOR | Generated documentation | ✅ |",
     ]
 
     # Extended metadata
-    if meta.get('related_papers') or meta.get('related_software'):
-        lines.extend([
-            '',
-            '## Cross-References',
-            '',
-        ])
-        if meta.get('related_papers'):
-            lines.append('### Related Papers')
-            for rp in meta['related_papers'][:8]:
-                lines.append(f'- [{rp}](../{rp}/)')
-            lines.append('')
-        if meta.get('related_software'):
-            lines.append('### Related Software')
-            for rs in meta['related_software'][:4]:
-                lines.append(f'- https://github.com/{rs}')
-            lines.append('')
+    if meta.get("related_papers") or meta.get("related_software"):
+        lines.extend(
+            [
+                "",
+                "## Cross-References",
+                "",
+            ]
+        )
+        if meta.get("related_papers"):
+            lines.append("### Related Papers")
+            for rp in meta["related_papers"][:8]:
+                lines.append(f"- [{rp}](../{rp}/)")
+            lines.append("")
+        if meta.get("related_software"):
+            lines.append("### Related Software")
+            for rs in meta["related_software"][:4]:
+                lines.append(f"- https://github.com/{rs}")
+            lines.append("")
 
-    return '\n'.join(lines)
+    return "\n".join(lines)
 
 
-def generate_skill(folder: str, meta: dict, all_folders: list[str] | None = None, bib_entry: dict | None = None) -> str:
+def generate_skill(
+    folder: str,
+    meta: dict,
+    all_folders: list[str] | None = None,
+    bib_entry: dict | None = None,
+) -> str:
     """Generate SKILL.md content with Claude Code-compatible YAML frontmatter.
 
     Extended version with Methods, Key Findings, Related Works, Datasets, and Validation sections.
@@ -1133,10 +1267,13 @@ def generate_skill(folder: str, meta: dict, all_folders: list[str] | None = None
     title = work_title(folder, meta, bib_entry)
     authors = work_authors(meta, bib_entry)
     venue = work_venue(bib_entry)
-    description = clean_abstract_text(meta.get('abstract', meta.get('description', ''))) or NO_ABSTRACT_NOTE
+    description = (
+        clean_abstract_text(meta.get("abstract", meta.get("description", "")))
+        or NO_ABSTRACT_NOTE
+    )
     domain = resolve_domain(folder, meta, bib_entry)
-    tags = meta.get('tags', meta.get('keywords', [topic.lower()]))
-    keywords = meta.get('keywords', tags)
+    tags = meta.get("tags", meta.get("keywords", [topic.lower()]))
+    keywords = meta.get("keywords", tags)
 
     methods = extract_methods_from_metadata(meta)
     findings = extract_findings_from_metadata(meta)
@@ -1144,136 +1281,155 @@ def generate_skill(folder: str, meta: dict, all_folders: list[str] | None = None
 
     # Format tags
     if isinstance(tags, list) and tags:
-        tags_yaml = json.dumps([t.lower().replace(' ', '-') for t in tags[:10]])
+        tags_yaml = json.dumps([t.lower().replace(" ", "-") for t in tags[:10]])
     else:
         tags_yaml = f'["{topic.lower()}"]'
 
     # Truncate description for frontmatter (must be single-line for YAML)
-    desc_clean = ' '.join(description.split())  # Normalize whitespace
-    desc_short = desc_clean[:250] + '...' if len(desc_clean) > 250 else desc_clean
+    desc_clean = " ".join(description.split())  # Normalize whitespace
+    desc_short = desc_clean[:250] + "..." if len(desc_clean) > 250 else desc_clean
 
     # The bibliography owns the citation DOI; a version/download DOI remains
     # explicitly labeled as an artifact and is never used for citation text.
     doi = canonical_doi(meta, bib_entry)
     version_doi = artifact_doi(meta)
-    citation = f'{authors} ({year}). *{title}*. {venue}.'
+    citation = f"{authors} ({year}). *{title}*. {venue}."
 
     lines = [
-        '---',
-        f'name: {yaml_string(title)}',
-        f'description: {yaml_string(desc_short)}',
-        f'tags: {tags_yaml}',
-        f'domain: {yaml_string(domain)}',
-        f'citation: {yaml_string(citation)}',
+        "---",
+        f"name: {yaml_string(title)}",
+        f"description: {yaml_string(desc_short)}",
+        f"tags: {tags_yaml}",
+        f"domain: {yaml_string(domain)}",
+        f"citation: {yaml_string(citation)}",
     ]
 
     if doi:
-        lines.append(f'doi: {yaml_string(doi)}')
+        lines.append(f"doi: {yaml_string(doi)}")
     if version_doi and not doi_matches(version_doi, doi):
-        lines.append(f'artifact_doi: {yaml_string(version_doi)}')
+        lines.append(f"artifact_doi: {yaml_string(version_doi)}")
 
-    lines.extend([
-        '---',
-        '',
-        f'# {title}',
-        '',
-        f'**{authors}** ({year}) · {domain}',
-        '',
-        *filter(None, (revision_notice_markdown(meta),)),
-        '## Context',
-        '',
-        f'This work addresses topics in **{domain}**: {", ".join(keywords[:4]) if keywords else topic}.',
-        '',
-    ])
+    lines.extend(
+        [
+            "---",
+            "",
+            f"# {title}",
+            "",
+            f"**{authors}** ({year}) · {domain}",
+            "",
+            *filter(None, (revision_notice_markdown(meta),)),
+            "## Context",
+            "",
+            f"This work addresses topics in **{domain}**: {', '.join(keywords[:4]) if keywords else topic}.",
+            "",
+        ]
+    )
 
     # Methods section
-    lines.extend([
-        '## Methods',
-        '',
-        'Primary methods and techniques applied in this work:',
-        '',
-    ])
+    lines.extend(
+        [
+            "## Methods",
+            "",
+            "Primary methods and techniques applied in this work:",
+            "",
+        ]
+    )
     for bullet in method_bullets(meta)[:6]:
-        lines.append(f'- {bullet}')
+        lines.append(f"- {bullet}")
     if not methods:
         lines.append(NO_METHODS_NOTE)
-    lines.append('')
+    lines.append("")
 
     # Key Findings section
-    lines.extend([
-        '## Key Findings',
-        '',
-        'Core contributions and results:',
-        '',
-    ])
+    lines.extend(
+        [
+            "## Key Findings",
+            "",
+            "Core contributions and results:",
+            "",
+        ]
+    )
     for finding in findings[:6]:
-        lines.append(f'- {finding}')
+        lines.append(f"- {finding}")
     if not findings:
         lines.append(NO_FINDINGS_NOTE)
-    lines.append('')
+    lines.append("")
     if grounded_note(meta) and (methods or findings):
-        lines.extend([grounded_note(meta), ''])
+        lines.extend([grounded_note(meta), ""])
 
     # Datasets section
-    dataset_refs = meta.get('dataset_references', [])
+    dataset_refs = meta.get("dataset_references", [])
     if dataset_refs:
-        lines.extend([
-            '## Datasets',
-            '',
-            'Referenced datasets:',
-            '',
-        ])
+        lines.extend(
+            [
+                "## Datasets",
+                "",
+                "Referenced datasets:",
+                "",
+            ]
+        )
         for ds in dataset_refs[:6]:
-            lines.append(f'- {ds}')
-        lines.append('')
+            lines.append(f"- {ds}")
+        lines.append("")
 
     # Related Works section
-    lines.extend([
-        '## Related Works',
-        '',
-    ])
+    lines.extend(
+        [
+            "## Related Works",
+            "",
+        ]
+    )
     for rp in related[:6]:
-        lines.append(f'- [{rp}](../{rp}/)')
+        lines.append(f"- [{rp}](../{rp}/)")
     if not related:
-        lines.append('See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.')
-    lines.append('')
+        lines.append(
+            "See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications."
+        )
+    lines.append("")
 
     # Validation section
-    lines.extend([
-        '## Validation',
-        '',
-        'Verification points for this work:',
-        '',
-        f'- Canonical DOI: {doi if doi else "Not assigned"}',
-        f'- PDF SHA-256: {meta.get("pdf_sha256") or "See zenodo_record"}',
-        f'- Pairing confidence: {meta.get("pairing_confidence") or "unknown"}',
-        f'- Last checked: {meta.get("checked_at") or "unknown"}',
-        '',
-    ])
+    lines.extend(
+        [
+            "## Validation",
+            "",
+            "Verification points for this work:",
+            "",
+            f"- Canonical DOI: {doi if doi else 'Not assigned'}",
+            f"- PDF SHA-256: {meta.get('pdf_sha256') or 'See zenodo_record'}",
+            f"- Pairing confidence: {meta.get('pairing_confidence') or 'unknown'}",
+            f"- Last checked: {meta.get('checked_at') or 'unknown'}",
+            "",
+        ]
+    )
 
     if version_doi and not doi_matches(version_doi, doi):
-        lines.insert(-1, f'- Artifact DOI: {version_doi}')
+        lines.insert(-1, f"- Artifact DOI: {version_doi}")
 
     # Prerequisites
-    lines.extend([
-        '## Prerequisites',
-        '',
-        f'- Familiarity with {", ".join(keywords[:3]) if keywords else topic}',
-        f'- Background in {domain} fundamentals',
-        f'- Access to source repository: {meta.get("github_repo") or "N/A"}',
-        '',
-        '## Instructions',
-        '',
-        'When working with this paper:',
-        '',
-        f'1. Reference the DOI for citation: `{doi}`' if doi else '1. Use the canonical citation above.',
-        '2. Apply methods listed in the Methods section for related analysis.'
-        if methods else '2. Read the methods in the full text before reusing this work.',
-        '3. Validate findings against the original PDF and metadata.',
-        '',
-    ])
+    lines.extend(
+        [
+            "## Prerequisites",
+            "",
+            f"- Familiarity with {', '.join(keywords[:3]) if keywords else topic}",
+            f"- Background in {domain} fundamentals",
+            f"- Access to source repository: {meta.get('github_repo') or 'N/A'}",
+            "",
+            "## Instructions",
+            "",
+            "When working with this paper:",
+            "",
+            f"1. Reference the DOI for citation: `{doi}`"
+            if doi
+            else "1. Use the canonical citation above.",
+            "2. Apply methods listed in the Methods section for related analysis."
+            if methods
+            else "2. Read the methods in the full text before reusing this work.",
+            "3. Validate findings against the original PDF and metadata.",
+            "",
+        ]
+    )
 
-    return '\n'.join(lines)
+    return "\n".join(lines)
 
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
@@ -1327,7 +1483,9 @@ def plan_document_changes(
             key = generated_document_key(folder, filename)
             path = _safe_managed_document_path(folder, filename, paths=paths)
             entry = manifest_entries.get(key)
-            expected = render_document(folder, filename, meta, folders, bib_entry, paths=paths)
+            expected = render_document(
+                folder, filename, meta, folders, bib_entry, paths=paths
+            )
             current = _read_papers_text(
                 path,
                 label=f"managed document {key}",
@@ -1372,7 +1530,9 @@ def plan_document_changes(
         errors.append(f"{key}: manifest entry does not map to a current paper folder")
 
     if adopt_existing and not any(entry.adopt for entry in manifest_entries.values()):
-        errors.append("--adopt-existing requires at least one manifest entry with adopt: true")
+        errors.append(
+            "--adopt-existing requires at least one manifest entry with adopt: true"
+        )
     return changes, errors, skipped
 
 
@@ -1412,8 +1572,16 @@ def build_argument_parser() -> argparse.ArgumentParser:
     """Build the CLI parser without performing filesystem writes."""
     parser = argparse.ArgumentParser(description=__doc__)
     mode = parser.add_mutually_exclusive_group()
-    mode.add_argument("--apply", action="store_true", help="write only owned or newly created documents")
-    mode.add_argument("--check", action="store_true", help="fail when managed documents or DOI roles drift")
+    mode.add_argument(
+        "--apply",
+        action="store_true",
+        help="write only owned or newly created documents",
+    )
+    mode.add_argument(
+        "--check",
+        action="store_true",
+        help="fail when managed documents or DOI roles drift",
+    )
     parser.add_argument(
         "--adopt-existing",
         action="store_true",
@@ -1488,7 +1656,9 @@ def main(
         return 2
 
     if audit["conflicts"]:
-        document_errors.append("canonical DOI audit has conflicts; reconcile source metadata before rendering documents")
+        document_errors.append(
+            "canonical DOI audit has conflicts; reconcile source metadata before rendering documents"
+        )
 
     # Ownership is a source-controlled contract, not merely parsed JSON.  A
     # semantically equivalent but differently serialized manifest can conceal
@@ -1506,7 +1676,9 @@ def main(
             require_unique_link=True,
         )
     except (OSError, ValueError) as exc:
-        log.error("unable to validate generated-document manifest before rendering: %s", exc)
+        log.error(
+            "unable to validate generated-document manifest before rendering: %s", exc
+        )
         return 2
     manifest_is_required = current_manifest is not None or bool(final_entries)
     manifest_is_stale = manifest_is_required and current_manifest != rendered_manifest
@@ -1516,19 +1688,27 @@ def main(
             state = "missing" if change.action == "create" else "stale"
             document_errors.append(f"{change.key}: {state} generated document")
         if manifest_is_stale:
-            document_errors.append(f"{manifest_path}: stale generated-document manifest")
+            document_errors.append(
+                f"{manifest_path}: stale generated-document manifest"
+            )
         for error in document_errors:
             log.error("%s", error)
         if document_errors:
             log.error("paper-document check failed: %s issue(s)", len(document_errors))
             return 1
-        log.info("paper-document check passed: managed documents are current; unmanaged existing documents=%s", skipped)
+        log.info(
+            "paper-document check passed: managed documents are current; unmanaged existing documents=%s",
+            skipped,
+        )
         return 0
 
     if document_errors:
         for error in document_errors:
             log.error("%s", error)
-        log.error("refusing to write paper documents with %s blocking issue(s)", len(document_errors))
+        log.error(
+            "refusing to write paper documents with %s blocking issue(s)",
+            len(document_errors),
+        )
         return 1
 
     created = sum(change.action == "create" for change in changes)
@@ -1562,7 +1742,9 @@ def main(
         ]
         for change, path in validated_changes:
             if path != change.path:
-                raise ValueError(f"managed document path changed while planning: {change.key}")
+                raise ValueError(
+                    f"managed document path changed while planning: {change.key}"
+                )
             _write_papers_text(
                 path,
                 change.content,
@@ -1592,5 +1774,5 @@ def main(
     return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     raise SystemExit(main())

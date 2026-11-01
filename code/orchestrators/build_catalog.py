@@ -22,13 +22,21 @@ from docxology_tools.generated_outputs import (  # noqa: E402
     write_output_texts,
 )
 from docxology_tools.build_stamp import footer_build_stamp_html  # noqa: E402
-from docxology_tools.site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+from docxology_tools.site_nav import (  # noqa: E402
+    BREADCRUMB_CSS,
+    HEAD_EXTRAS,
+    INTERACTIVE_SCRIPTS,
+    MENU_ESC_SCRIPT,
+    breadcrumb_jsonld_script,
+    render_breadcrumb,
+)
 
 _BREADCRUMB = [("Home", ""), ("Data Catalog", "catalog.html")]
 
 
 def _head_extra() -> str:
     return f"    <style>{BREADCRUMB_CSS}</style>\n{breadcrumb_jsonld_script(_BREADCRUMB)}\n"
+
 
 # Self-contained creator node so Google can resolve the Dataset/DataCatalog
 # `creator` field on this page without dereferencing the index-page #person node.
@@ -40,7 +48,12 @@ CREATOR = {
 }
 LICENSE = "https://creativecommons.org/licenses/by/4.0/"
 
-from docxology_tools.report_paths import latest_source_report, latest_source_subdir_file, rel, report_date_string  # noqa: E402
+from docxology_tools.report_paths import (  # noqa: E402
+    latest_source_report,
+    latest_source_subdir_file,
+    rel,
+    report_date_string,
+)
 
 
 def _latest_rel(pattern: str, _fallback: str) -> str:
@@ -72,7 +85,7 @@ def _json_count(path: str, fallback: int, *, required: bool = False) -> int:
     """
     try:
         payload = json.loads((REPO_ROOT / path).read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
+    except OSError, json.JSONDecodeError:
         if required:
             raise SystemExit(f"cannot build catalog: missing/invalid {path}")
         return fallback
@@ -98,7 +111,8 @@ def _extraction_counts() -> tuple[int, int, int]:
         images_dir = paper_dir / "images"
         if images_dir.is_dir():
             img = sum(
-                1 for f in images_dir.iterdir()
+                1
+                for f in images_dir.iterdir()
                 if f.is_file() and f.suffix.lower() in (".png", ".jpg", ".jpeg", ".gif")
             )
             if img:
@@ -113,42 +127,244 @@ def datasets() -> list[tuple[str, str, str, str]]:
     video_count = _json_count("data/videos.json", 0)
     ft_count, pw_img_count, total_img = _extraction_counts()
     return [
-    ("works", "Curated Works Bibliography", "data/works.json", f"{works_count} bibliography rows with citation keys, DOI links, domains, and documentation paths."),
-    ("artworks-index", "Artwork Gallery Index", "data/artworks-index.json", "Compact searchable grid metadata for the gallery; full resolution and media records load on demand."),
-    ("artworks", "Artwork Gallery Data", "data/artworks.json", "Complete artwork metadata export with resolution maps and media URLs used for downloads, agents, and detail views."),
-    ("software", "Software Catalog", "data/software.json", f"{software_count} catalogued software repositories across docxology and AII contributions."),
-    ("github-repositories", "GitHub Repository Inventory", "data/github-repositories.json", "Generated public docxology and Active Inference Institute repository data; the primary HTML page excludes forks and links to a separate fork archive."),
-    ("videos", "YouTube Video Metadata", "data/videos.json", f"{video_count} personal-channel and Active Inference Institute videos with local page URLs, topics, related works, and transcript cache status."),
-    ("videos-index", "Video Timeline Index", "data/videos-index.json", f"Compact {video_count}-video projection used by the interactive timeline; detail metadata remains in data/videos.json."),
-    ("people", "People Index", "data/people.json", "Compact collaborator and identity context for agentic discovery."),
-    ("organizations", "Organizations Index", "data/organizations.json", "Organization context for AII, COGSEC, Stanford, and teaching affiliations."),
-    ("claims", "Evidence Claims", "data/claims.json", "Claim-level evidence ledger with confidence, source links, and caveats."),
-    ("scholar-verification-receipt", "Scholar Verification Receipt", "data/scholar-verification-receipt.json", "Direct-authenticated Scholar verification assertion bound by SHA-256 to the dated canonical metric snapshot; it is provenance for the curated snapshot, not a new live fetch."),
-    ("resume", "Structured Resume and CV", "data/resume.json", "Merged resume/CV data with contact, education, experience, works, software, GitHub inventory metrics, service, media, and art-use records."),
-    ("resume-html", "Accessible HTML CV", "resume/resume.html", "No-JavaScript semantic CV view with keyboard-friendly headings, lists, links, current generated counts, and format alternatives."),
-    ("resume-verify", "Resume Verification Page", "resume/verify.html", "HTML verification surface with source manifest, generated JSON hash, final PDF hash, file sizes, counts, and artifact links."),
-    ("reconciliation", "Public-Source Reconciliation", "data/reconciliation.json", "Curated local counts compared with public-source indexes."),
-    ("current-counts", "Current Counts Snapshot", "data/current-counts.json", "Generated volatile-count snapshot with source paths, generation metadata, and rebuild commands."),
-    ("agent-index", "Agent Route Manifest", "data/agent-index.json", "Stable machine-readable route map, dataset schemas, freshness policy, counts, and query recipes."),
-    ("work-enrichment", "Work Enrichment", "data/work-enrichment.json", "Extracted abstracts, keywords, methods, and findings from per-paper README and SKILL files."),
-    ("collection-catalog", "Reading List Citation Catalog", "data/collection-catalog.json", "Per-work citations for browser-local ordered lists; BibTeX, RIS and CSL JSON preserve the bibliography's recorded roles and metadata."),
-    ("research-map", "Research Metadata Graph", "data/research-map.json", "Recorded work, domain, byline and associated-software connections; not a citation network or an identity registry."),
-    ("research-trails", "Curated Research Trails", "data/research-trails.json", "Validated ordered learning resources, prerequisites and editorial first-pass time estimates."),
-    ("full-text-corpus", "Full-Text Extraction Corpus", "papers/README.md", f"{ft_count} extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus {pw_img_count} images/ subdirectories with {total_img:,} extracted figures and inline image references. Path pattern: papers/{{YYYY_Topic}}/full_text.md and papers/{{YYYY_Topic}}/images/."),
-    ("generated-manifest", "Generated Artifact Manifest", "data/generated-manifest.json", "Source-to-output map and rebuild commands for generated files."),
-    ("scholar-readiness", "Scholar Prerequisite Audit", "data/scholar-readiness.json", "Offline per-work citation tags, hash-bound PDF placement and byte-size findings; content suitability and actual indexing remain unverified."),
-    ("search", "Search Index", "search-index.json", "Site-wide index covering pages, works, software, people, organizations, and claims."),
-    ("public-source-inventory", "Public Source Inventory", _latest_rel("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json"), "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages."),
-    ("public-source-snapshot", "Public Source Snapshot", _latest_rel("public_source_snapshot_*.json", "reports/public_source_snapshot_2026-05-15.json"), "Current public API freshness snapshot with normalized drift-comparison facts."),
-    ("paired-publication-decisions", "Paired Publication Decisions", "data/paired-publication-decisions.json", "Manual review decisions for ambiguous GitHub release + Zenodo record pair candidates."),
-    ("public-source-observation-decisions", "Public-Source Observation Decisions", "data/public-source-observation-decisions.json", "SHA-256-bound review decisions for changed public-source observations; changed evidence returns to review."),
-    ("biographical-claim-decisions", "Biographical Claim Decisions", "data/biographical-claim-decisions.json", "SHA-256-bound review decisions for time-sensitive biographical claims and their cited evidence."),
-    ("external-links", "External Link Report", _latest_rel("external_links_[0-9]*.json", "reports/external_links_2026-05-13.json"), "Scoped network freshness report for site-critical outbound links."),
-    ("external-link-triage", "External Link Triage", _latest_rel("external_links_triage_*.json", "reports/external_links_triage_2026-05-13.json"), "Categorized link warnings: bot-protected, transient, timeout, stale, and review."),
-    ("asset-size", "Asset Size Audit", _latest_rel("asset_size_*.json", "reports/asset_size_2026-05-13.json"), "Size report for public HTML, OG images, data exports, and runtime assets."),
-    ("browser-smoke", "Browser Smoke Manifest", _latest_subdir_rel("browser-smoke", "manifest.json", "reports/browser-smoke/2026-05-13/manifest.json"), "Selector-based Playwright smoke checks for core local pages."),
-    ("browser-qa", "Progressive Browser QA", _latest_subdir_rel("browser-qa", "manifest.json", "reports/browser-qa/2026-07-18/manifest.json"), "Playwright checks for no-JavaScript fallbacks, keyboard interactions, focus restoration, responsive behavior, forced colors, console errors, and YouTube iframe policy."),
-    ("live-site", "Live Site Verification", _latest_rel("live_site_verification_*.json", "reports/live_site_verification_2026-05-13.json"), "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status."),
+        (
+            "works",
+            "Curated Works Bibliography",
+            "data/works.json",
+            f"{works_count} bibliography rows with citation keys, DOI links, domains, and documentation paths.",
+        ),
+        (
+            "artworks-index",
+            "Artwork Gallery Index",
+            "data/artworks-index.json",
+            "Compact searchable grid metadata for the gallery; full resolution and media records load on demand.",
+        ),
+        (
+            "artworks",
+            "Artwork Gallery Data",
+            "data/artworks.json",
+            "Complete artwork metadata export with resolution maps and media URLs used for downloads, agents, and detail views.",
+        ),
+        (
+            "software",
+            "Software Catalog",
+            "data/software.json",
+            f"{software_count} catalogued software repositories across docxology and AII contributions.",
+        ),
+        (
+            "github-repositories",
+            "GitHub Repository Inventory",
+            "data/github-repositories.json",
+            "Generated public docxology and Active Inference Institute repository data; the primary HTML page excludes forks and links to a separate fork archive.",
+        ),
+        (
+            "videos",
+            "YouTube Video Metadata",
+            "data/videos.json",
+            f"{video_count} personal-channel and Active Inference Institute videos with local page URLs, topics, related works, and transcript cache status.",
+        ),
+        (
+            "videos-index",
+            "Video Timeline Index",
+            "data/videos-index.json",
+            f"Compact {video_count}-video projection used by the interactive timeline; detail metadata remains in data/videos.json.",
+        ),
+        (
+            "people",
+            "People Index",
+            "data/people.json",
+            "Compact collaborator and identity context for agentic discovery.",
+        ),
+        (
+            "organizations",
+            "Organizations Index",
+            "data/organizations.json",
+            "Organization context for AII, COGSEC, Stanford, and teaching affiliations.",
+        ),
+        (
+            "claims",
+            "Evidence Claims",
+            "data/claims.json",
+            "Claim-level evidence ledger with confidence, source links, and caveats.",
+        ),
+        (
+            "scholar-verification-receipt",
+            "Scholar Verification Receipt",
+            "data/scholar-verification-receipt.json",
+            "Direct-authenticated Scholar verification assertion bound by SHA-256 to the dated canonical metric snapshot; it is provenance for the curated snapshot, not a new live fetch.",
+        ),
+        (
+            "resume",
+            "Structured Resume and CV",
+            "data/resume.json",
+            "Merged resume/CV data with contact, education, experience, works, software, GitHub inventory metrics, service, media, and art-use records.",
+        ),
+        (
+            "resume-html",
+            "Accessible HTML CV",
+            "resume/resume.html",
+            "No-JavaScript semantic CV view with keyboard-friendly headings, lists, links, current generated counts, and format alternatives.",
+        ),
+        (
+            "resume-verify",
+            "Resume Verification Page",
+            "resume/verify.html",
+            "HTML verification surface with source manifest, generated JSON hash, final PDF hash, file sizes, counts, and artifact links.",
+        ),
+        (
+            "reconciliation",
+            "Public-Source Reconciliation",
+            "data/reconciliation.json",
+            "Curated local counts compared with public-source indexes.",
+        ),
+        (
+            "current-counts",
+            "Current Counts Snapshot",
+            "data/current-counts.json",
+            "Generated volatile-count snapshot with source paths, generation metadata, and rebuild commands.",
+        ),
+        (
+            "agent-index",
+            "Agent Route Manifest",
+            "data/agent-index.json",
+            "Stable machine-readable route map, dataset schemas, freshness policy, counts, and query recipes.",
+        ),
+        (
+            "work-enrichment",
+            "Work Enrichment",
+            "data/work-enrichment.json",
+            "Extracted abstracts, keywords, methods, and findings from per-paper README and SKILL files.",
+        ),
+        (
+            "collection-catalog",
+            "Reading List Citation Catalog",
+            "data/collection-catalog.json",
+            "Per-work citations for browser-local ordered lists; BibTeX, RIS and CSL JSON preserve the bibliography's recorded roles and metadata.",
+        ),
+        (
+            "research-map",
+            "Research Metadata Graph",
+            "data/research-map.json",
+            "Recorded work, domain, byline and associated-software connections; not a citation network or an identity registry.",
+        ),
+        (
+            "research-trails",
+            "Curated Research Trails",
+            "data/research-trails.json",
+            "Validated ordered learning resources, prerequisites and editorial first-pass time estimates.",
+        ),
+        (
+            "full-text-corpus",
+            "Full-Text Extraction Corpus",
+            "papers/README.md",
+            f"{ft_count} extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus {pw_img_count} images/ subdirectories with {total_img:,} extracted figures and inline image references. Path pattern: papers/{{YYYY_Topic}}/full_text.md and papers/{{YYYY_Topic}}/images/.",
+        ),
+        (
+            "generated-manifest",
+            "Generated Artifact Manifest",
+            "data/generated-manifest.json",
+            "Source-to-output map and rebuild commands for generated files.",
+        ),
+        (
+            "scholar-readiness",
+            "Scholar Prerequisite Audit",
+            "data/scholar-readiness.json",
+            "Offline per-work citation tags, hash-bound PDF placement and byte-size findings; content suitability and actual indexing remain unverified.",
+        ),
+        (
+            "search",
+            "Search Index",
+            "search-index.json",
+            "Site-wide index covering pages, works, software, people, organizations, and claims.",
+        ),
+        (
+            "public-source-inventory",
+            "Public Source Inventory",
+            _latest_rel(
+                "public_source_inventory_*.json",
+                "reports/public_source_inventory_2026-05-15.json",
+            ),
+            "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages.",
+        ),
+        (
+            "public-source-snapshot",
+            "Public Source Snapshot",
+            _latest_rel(
+                "public_source_snapshot_*.json",
+                "reports/public_source_snapshot_2026-05-15.json",
+            ),
+            "Current public API freshness snapshot with normalized drift-comparison facts.",
+        ),
+        (
+            "paired-publication-decisions",
+            "Paired Publication Decisions",
+            "data/paired-publication-decisions.json",
+            "Manual review decisions for ambiguous GitHub release + Zenodo record pair candidates.",
+        ),
+        (
+            "public-source-observation-decisions",
+            "Public-Source Observation Decisions",
+            "data/public-source-observation-decisions.json",
+            "SHA-256-bound review decisions for changed public-source observations; changed evidence returns to review.",
+        ),
+        (
+            "biographical-claim-decisions",
+            "Biographical Claim Decisions",
+            "data/biographical-claim-decisions.json",
+            "SHA-256-bound review decisions for time-sensitive biographical claims and their cited evidence.",
+        ),
+        (
+            "external-links",
+            "External Link Report",
+            _latest_rel(
+                "external_links_[0-9]*.json", "reports/external_links_2026-05-13.json"
+            ),
+            "Scoped network freshness report for site-critical outbound links.",
+        ),
+        (
+            "external-link-triage",
+            "External Link Triage",
+            _latest_rel(
+                "external_links_triage_*.json",
+                "reports/external_links_triage_2026-05-13.json",
+            ),
+            "Categorized link warnings: bot-protected, transient, timeout, stale, and review.",
+        ),
+        (
+            "asset-size",
+            "Asset Size Audit",
+            _latest_rel("asset_size_*.json", "reports/asset_size_2026-05-13.json"),
+            "Size report for public HTML, OG images, data exports, and runtime assets.",
+        ),
+        (
+            "browser-smoke",
+            "Browser Smoke Manifest",
+            _latest_subdir_rel(
+                "browser-smoke",
+                "manifest.json",
+                "reports/browser-smoke/2026-05-13/manifest.json",
+            ),
+            "Selector-based Playwright smoke checks for core local pages.",
+        ),
+        (
+            "browser-qa",
+            "Progressive Browser QA",
+            _latest_subdir_rel(
+                "browser-qa",
+                "manifest.json",
+                "reports/browser-qa/2026-07-18/manifest.json",
+            ),
+            "Playwright checks for no-JavaScript fallbacks, keyboard interactions, focus restoration, responsive behavior, forced colors, console errors, and YouTube iframe policy.",
+        ),
+        (
+            "live-site",
+            "Live Site Verification",
+            _latest_rel(
+                "live_site_verification_*.json",
+                "reports/live_site_verification_2026-05-13.json",
+            ),
+            "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.",
+        ),
     ]
 
 
@@ -201,7 +417,9 @@ def catalog_payload(date_modified: str | None = None) -> dict:
                 "encodingFormat": encoding_format(rel),
                 "creator": CREATOR,
                 "license": LICENSE,
-                "includedInDataCatalog": {"@id": "https://danielarifriedman.com/catalog.html#catalog"},
+                "includedInDataCatalog": {
+                    "@id": "https://danielarifriedman.com/catalog.html#catalog"
+                },
                 "distribution": {
                     "@type": "DataDownload",
                     "contentUrl": absolute(rel),
@@ -214,7 +432,9 @@ def catalog_payload(date_modified: str | None = None) -> dict:
 
 
 def render_json(date_modified: str | None = None) -> str:
-    return json.dumps(catalog_payload(date_modified), indent=2, ensure_ascii=False) + "\n"
+    return (
+        json.dumps(catalog_payload(date_modified), indent=2, ensure_ascii=False) + "\n"
+    )
 
 
 def render_html(date_modified: str | None = None) -> str:
@@ -287,7 +507,9 @@ def outputs(date_modified: str | None = None) -> dict[Path, str]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if generated catalog files are stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if generated catalog files are stale"
+    )
     args = parser.parse_args()
     date_modified = existing_date_modified() if args.check else None
     rendered_outputs = outputs(date_modified)

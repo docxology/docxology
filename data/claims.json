@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T01:19:25Z",
+  "generated_at": "2026-11-01T21:46:47Z",
   "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence",
   "claims": [
     {
@@ -96,16 +96,16 @@
     },
     {
       "id": "google-scholar-citations",
-      "claim": "Google Scholar metrics are recorded as a dated snapshot: 824 citations, h-index 14, i10-index 17 (as of 2026-10-05).",
+      "claim": "Google Scholar metrics are recorded as a dated snapshot: 835 citations, h-index 14, i10-index 16 (as of 2026-11-01).",
       "status": "dated-snapshot",
       "sources": [
         "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en",
         "data/scholar-snapshot.json",
         "pages/VERIFICATION_LOG.md"
       ],
-      "checked_at": "2026-10-05",
+      "checked_at": "2026-11-01",
       "confidence": "high",
-      "verification_method": "Direct authenticated observation of the canonical profile on 2026-10-05 in the site owner's signed-in Chrome session (operator handoff of 2026-10-05). All-time: 824 citations, h-index 14, i10-index 17; Since-2021: 595 / 14 / 15. No anonymous or search-engine cached result was used.",
+      "verification_method": "Direct authenticated owner-profile observation in the T3 shared browser; account avatar and owner edit controls visible; network navigation returned HTTP 200.",
       "maintenance_owner": "ARCHIVIST",
       "caveat": "Single source of truth: data/scholar-snapshot.json. Update only from a direct (non-cached) Scholar fetch, recording the new value, as_of date, and method there; regenerate surfaces via code/orchestrators/sync_scholar_metrics.py. Never publish a citation number above the most recent direct-fetch value."
     },

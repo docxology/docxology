@@ -61,16 +61,31 @@ def head_commit() -> str:
 
 
 def timestamp() -> str:
-    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    return (
+        datetime.now(timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z")
+    )
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     mode = parser.add_mutually_exclusive_group(required=True)
-    mode.add_argument("--apply", action="store_true", help="Write a fresh attestation after validating deployed evidence")
-    mode.add_argument("--check", action="store_true", help="Verify an existing deployment attestation")
+    mode.add_argument(
+        "--apply",
+        action="store_true",
+        help="Write a fresh attestation after validating deployed evidence",
+    )
+    mode.add_argument(
+        "--check", action="store_true", help="Verify an existing deployment attestation"
+    )
     parser.add_argument("--commit", help="Deployment SHA to attest (default: HEAD)")
-    parser.add_argument("--output", type=Path, help="Attestation path (default: reports/deployment-attestations/SHA.json)")
+    parser.add_argument(
+        "--output",
+        type=Path,
+        help="Attestation path (default: reports/deployment-attestations/SHA.json)",
+    )
     parser.add_argument("--max-report-age-days", type=int, default=30)
     parser.add_argument(
         "--strict-bindings",
@@ -82,11 +97,15 @@ def main() -> None:
         ),
     )
     args = parser.parse_args()
-    binding_mode = BINDING_MODE_STRICT if args.strict_bindings else BINDING_MODE_CONTENT_LINEAGE
+    binding_mode = (
+        BINDING_MODE_STRICT if args.strict_bindings else BINDING_MODE_CONTENT_LINEAGE
+    )
 
     commit = resolve_commit(args.commit)
     if commit != head_commit():
-        raise SystemExit("A deployment attestation must bind the current HEAD checkout; create a detached/clean candidate checkout for another SHA.")
+        raise SystemExit(
+            "A deployment attestation must bind the current HEAD checkout; create a detached/clean candidate checkout for another SHA."
+        )
     canonical_output = default_output(commit)
     if args.output:
         output = args.output if args.output.is_absolute() else REPO_ROOT / args.output
@@ -105,8 +124,13 @@ def main() -> None:
             binding_mode=binding_mode,
         )
         if errors:
-            raise SystemExit("Release attestation validation failed:\n" + "\n".join(f"  - {error}" for error in errors))
-        print(f"checked deployment attestation {output.relative_to(REPO_ROOT)} for {commit}")
+            raise SystemExit(
+                "Release attestation validation failed:\n"
+                + "\n".join(f"  - {error}" for error in errors)
+            )
+        print(
+            f"checked deployment attestation {output.relative_to(REPO_ROOT)} for {commit}"
+        )
         return
 
     receipts, errors = collect_release_evidence(
@@ -117,10 +141,14 @@ def main() -> None:
     )
     errors.extend(live_deployment_errors(REPO_ROOT, commit))
     if errors:
-        raise SystemExit("Cannot attest release:\n" + "\n".join(f"  - {error}" for error in errors))
+        raise SystemExit(
+            "Cannot attest release:\n" + "\n".join(f"  - {error}" for error in errors)
+        )
     payload = render_attestation(commit, receipts, attested_at=timestamp())
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    output.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
     print(f"wrote deployment attestation {output.relative_to(REPO_ROOT)} for {commit}")
 
 

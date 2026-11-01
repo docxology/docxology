@@ -31,7 +31,9 @@ def _names(tier: str, dirty: tuple[str, ...] | None = None) -> list[str]:
     return [name for name, _ in settle.battery_for_tier(tier, dirty)]
 
 
-def _commands(tier: str, dirty: tuple[str, ...] | None = None) -> dict[str, tuple[str, ...]]:
+def _commands(
+    tier: str, dirty: tuple[str, ...] | None = None
+) -> dict[str, tuple[str, ...]]:
     return dict(settle.battery_for_tier(tier, dirty))
 
 
@@ -52,7 +54,9 @@ def test_tier_order_places_routine_between_fast_and_full() -> None:
 )
 def test_resolve_tier_routine_is_sticky(derived: frozenset[str], label: str) -> None:
     """--tier routine ignores path-derived CONVENIENCE raises when payload-clean."""
-    assert settle.resolve_tier("routine", derived, payload_dirty=False) == "routine", label
+    assert settle.resolve_tier("routine", derived, payload_dirty=False) == "routine", (
+        label
+    )
 
 
 @pytest.mark.parametrize(
@@ -72,9 +76,7 @@ def test_resolve_tier_routine_raises_to_full_on_payload_dirty(
     """Every payload commit moves the anchor the Pages deploy re-validates."""
     from pathlib import Path as _Path
 
-    payload_dirty = any(
-        not settle.is_control_path(_Path(path)) for path in dirty
-    )
+    payload_dirty = any(not settle.is_control_path(_Path(path)) for path in dirty)
     assert payload_dirty, label
     assert settle.resolve_tier("routine", frozenset(), payload_dirty) == "full", label
 
@@ -85,7 +87,9 @@ def test_resolve_tier_routine_stays_routine_for_control_only_dirty() -> None:
     dirty = ("data/agent-index.json", "data/generated-manifest.json")
     payload_dirty = any(not settle.is_control_path(_Path(path)) for path in dirty)
     assert not payload_dirty
-    assert settle.resolve_tier("routine", frozenset({"full"}), payload_dirty) == "routine"
+    assert (
+        settle.resolve_tier("routine", frozenset({"full"}), payload_dirty) == "routine"
+    )
 
 
 def test_resolve_tier_non_routine_tiers_still_auto_raise() -> None:
@@ -107,7 +111,9 @@ def test_routine_battery_is_fast_floor_plus_standard_validation() -> None:
 
 def test_routine_battery_never_includes_the_release_step() -> None:
     for dirty in ((), ("data/agent-index.json",)):
-        assert "validate_repo --release --strict-reports" not in _names("routine", dirty)
+        assert "validate_repo --release --strict-reports" not in _names(
+            "routine", dirty
+        )
 
 
 def test_routine_battery_requires_the_dirty_path_set() -> None:
@@ -132,9 +138,10 @@ def test_full_battery_extends_the_routine_battery_with_pytest() -> None:
         settle._VALIDATE_STANDARD_STEP,
     )
     assert routine == settle._FAST_STEPS + (settle._VALIDATE_STANDARD_STEP,)
-    assert [name for name, _ in full] == [
-        name for name, _ in settle._FAST_STEPS
-    ] + [_PYTEST_NAME, _VALIDATE_NAME]
+    assert [name for name, _ in full] == [name for name, _ in settle._FAST_STEPS] + [
+        _PYTEST_NAME,
+        _VALIDATE_NAME,
+    ]
     assert _PYTEST_NAME not in _names("routine", ())
 
 
@@ -149,7 +156,10 @@ def test_full_battery_extends_the_routine_battery_with_pytest() -> None:
         (("code/tests/test_x.py",), "code/tests/"),
         (("docs/operations/settle.md",), "docs/"),
         (("reports/live_site_verification_2026-09-16.json",), "receipt"),
-        (("data/agent-index.json", "some/unclassified/path.txt"), "control+leftover mix"),
+        (
+            ("data/agent-index.json", "some/unclassified/path.txt"),
+            "control+leftover mix",
+        ),
     ],
 )
 def test_routine_battery_fails_closed_on_payload_dirty(
@@ -165,7 +175,10 @@ def test_routine_battery_fails_closed_on_payload_dirty(
     [
         ((), "clean tree"),
         (("data/agent-index.json",), "control-only"),
-        (("data/generated-manifest.json", "data/release-integrity.json"), "control set"),
+        (
+            ("data/generated-manifest.json", "data/release-integrity.json"),
+            "control set",
+        ),
     ],
 )
 def test_routine_battery_accepts_control_only_and_clean_trees(
@@ -214,16 +227,24 @@ def test_fast_step_names_are_the_routine_floor() -> None:
     assert set(_names("routine", ())[:3]) == _STEP_NAMES
 
 
-
-
 def test_only_full_payload_battery_can_request_prepayload_mode():
     strict = settle.battery_for_tier("full", ["README.md"])
-    prepayload = settle.battery_for_tier("full", ["README.md"], allow_dirty_prepayload_evidence=True)
+    prepayload = settle.battery_for_tier(
+        "full", ["README.md"], allow_dirty_prepayload_evidence=True
+    )
     for original, candidate in zip(strict, prepayload, strict=True):
         if original == settle._VALIDATE_STANDARD_STEP:
-            assert candidate == (original[0], original[1] + ("--allow-dirty-prepayload-evidence",))
+            assert candidate == (
+                original[0],
+                original[1] + ("--allow-dirty-prepayload-evidence",),
+            )
         else:
             assert candidate == original
-    for tier, paths in (("routine", []), ("fast", ["README.md"]), ("release", ["README.md"]), ("full", [])):
+    for tier, paths in (
+        ("routine", []),
+        ("fast", ["README.md"]),
+        ("release", ["README.md"]),
+        ("full", []),
+    ):
         with pytest.raises(ValueError, match="full payload landing"):
             settle.battery_for_tier(tier, paths, allow_dirty_prepayload_evidence=True)

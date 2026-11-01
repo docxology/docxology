@@ -29,9 +29,15 @@ SOURCE_METADATA_PATHS = frozenset(
         "papers/paper_metadata.json",
     }
 )
-PAPER_GENERATED_NAMES = frozenset({"README.md", "AGENTS.md", "SKILL.md", "CITATION.cff", "index.html", "full_text.md"})
-PAPER_BINARY_SUFFIXES = frozenset({".pdf", ".png", ".jpg", ".jpeg", ".gif", ".webp", ".tif", ".tiff", ".svg"})
-GENERIC_BINARY_SUFFIXES = PAPER_BINARY_SUFFIXES | frozenset({".zip", ".gz", ".tar", ".mp4", ".mov", ".mp3", ".wav"})
+PAPER_GENERATED_NAMES = frozenset(
+    {"README.md", "AGENTS.md", "SKILL.md", "CITATION.cff", "index.html", "full_text.md"}
+)
+PAPER_BINARY_SUFFIXES = frozenset(
+    {".pdf", ".png", ".jpg", ".jpeg", ".gif", ".webp", ".tif", ".tiff", ".svg"}
+)
+GENERIC_BINARY_SUFFIXES = PAPER_BINARY_SUFFIXES | frozenset(
+    {".zip", ".gz", ".tar", ".mp4", ".mov", ".mp3", ".wav"}
+)
 DERIVED_EXACT_PATHS = frozenset(
     {
         "GENERATED.md",
@@ -72,7 +78,9 @@ def parse_name_status_z(raw: bytes) -> list[ChangedPath]:
             previous = fields[index].decode("utf-8", "surrogateescape")
             path = fields[index + 1].decode("utf-8", "surrogateescape")
             index += 2
-            changes.append(ChangedPath(status=status, path=path, previous_path=previous))
+            changes.append(
+                ChangedPath(status=status, path=path, previous_path=previous)
+            )
             continue
         if index >= len(fields):
             raise ValueError(f"incomplete {status!r} name-status record")
@@ -100,7 +108,11 @@ def manifest_output_patterns(manifest: Mapping[str, Any]) -> tuple[str, ...]:
             # A few manifest entries annotate a path in parentheses; others
             # are prose descriptions and must not become a false path match.
             candidate = output.split(" (", 1)[0].strip()
-            if "/" not in candidate and not candidate.startswith("*") and "." not in candidate:
+            if (
+                "/" not in candidate
+                and not candidate.startswith("*")
+                and "." not in candidate
+            ):
                 continue
             patterns.add(candidate)
     return tuple(sorted(patterns))
@@ -131,9 +143,15 @@ def classify_path(path: str, manifest_patterns: Iterable[str] = ()) -> str:
     ):
         return "binary_intake"
 
-    if normalized in DERIVED_EXACT_PATHS or _matches_manifest(normalized, manifest_patterns):
+    if normalized in DERIVED_EXACT_PATHS or _matches_manifest(
+        normalized, manifest_patterns
+    ):
         return "derived_output"
-    if normalized.startswith("reports/") or normalized.startswith("works/") or normalized.startswith("videos/"):
+    if (
+        normalized.startswith("reports/")
+        or normalized.startswith("works/")
+        or normalized.startswith("videos/")
+    ):
         return "derived_output"
     if normalized.startswith("data/"):
         return "derived_output"
@@ -167,7 +185,9 @@ def default_decision(classification: str) -> tuple[str, str]:
     try:
         return decisions[classification]
     except KeyError as exc:  # pragma: no cover - defensive API boundary
-        raise ValueError(f"unknown reconciliation classification: {classification}") from exc
+        raise ValueError(
+            f"unknown reconciliation classification: {classification}"
+        ) from exc
 
 
 def extract_doi(value: object) -> str:
@@ -201,9 +221,13 @@ def bibliography_rows(markdown: str) -> dict[str, dict[str, str]]:
     return rows
 
 
-def changed_top_level_fields(public: Mapping[str, Any], private: Mapping[str, Any]) -> list[str]:
+def changed_top_level_fields(
+    public: Mapping[str, Any], private: Mapping[str, Any]
+) -> list[str]:
     """Return sorted JSON fields that differ without serializing their values."""
-    return sorted(key for key in set(public) | set(private) if public.get(key) != private.get(key))
+    return sorted(
+        key for key in set(public) | set(private) if public.get(key) != private.get(key)
+    )
 
 
 def source_backed_metadata_fields(
@@ -227,7 +251,11 @@ def source_backed_metadata_fields(
     public_doi = extract_doi(public_metadata.get("doi"))
     private_doi = extract_doi(private_metadata.get("doi"))
     canonical_doi = extract_doi(canonical.get("doi"))
-    if public_doi.casefold() != private_doi.casefold() and private_doi and private_doi.casefold() == canonical_doi.casefold():
+    if (
+        public_doi.casefold() != private_doi.casefold()
+        and private_doi
+        and private_doi.casefold() == canonical_doi.casefold()
+    ):
         findings.append(
             {
                 "folder": folder,
@@ -243,7 +271,11 @@ def source_backed_metadata_fields(
     public_title = clean_markdown(str(public_metadata.get("title", "")))
     private_title = clean_markdown(str(private_metadata.get("title", "")))
     canonical_title = clean_markdown(canonical.get("title", ""))
-    if public_title != private_title and private_title and private_title == canonical_title:
+    if (
+        public_title != private_title
+        and private_title
+        and private_title == canonical_title
+    ):
         findings.append(
             {
                 "folder": folder,
@@ -276,9 +308,18 @@ def render_markdown(payload: Mapping[str, Any]) -> str:
         "| Classification | Changed paths | Release disposition |",
         "| --- | ---: | --- |",
     ]
-    for classification in ("source_metadata", "derived_output", "binary_intake", "other_source"):
-        item = summary["classifications"].get(classification, {"count": 0, "decision": "defer"})
-        lines.append(f"| {classification.replace('_', ' ')} | {item['count']} | {item['decision']} |")
+    for classification in (
+        "source_metadata",
+        "derived_output",
+        "binary_intake",
+        "other_source",
+    ):
+        item = summary["classifications"].get(
+            classification, {"count": 0, "decision": "defer"}
+        )
+        lines.append(
+            f"| {classification.replace('_', ' ')} | {item['count']} | {item['decision']} |"
+        )
     lines.extend(
         [
             "",

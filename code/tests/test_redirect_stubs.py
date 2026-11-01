@@ -34,26 +34,42 @@ def test_every_discovered_redirect_is_centrally_declared_and_current():
 
 def test_renderer_has_accessible_no_script_fallback():
     rendered = render_stub(
-        RedirectStub("legacy.html", "Legacy", "https://example.test/next", "https://example.test/next", "Next page")
+        RedirectStub(
+            "legacy.html",
+            "Legacy",
+            "https://example.test/next",
+            "https://example.test/next",
+            "Next page",
+        )
     )
     assert '<meta name="robots" content="noindex, follow">' in rendered
-    assert '<meta http-equiv="refresh" content="0; url=https://example.test/next">' in rendered
+    assert (
+        '<meta http-equiv="refresh" content="0; url=https://example.test/next">'
+        in rendered
+    )
     assert '<link rel="canonical" href="https://example.test/next">' in rendered
     assert '<a href="https://example.test/next">Next page</a>' in rendered
     assert "<script" not in rendered
 
 
 def test_validation_flags_a_hand_written_redirect_not_in_source(tmp_path):
-    (tmp_path / "about.html").write_text(render_stub(REDIRECT_STUBS[0]), encoding="utf-8")
+    (tmp_path / "about.html").write_text(
+        render_stub(REDIRECT_STUBS[0]), encoding="utf-8"
+    )
     (tmp_path / "surprise.html").write_text(
-        '<meta http-equiv="refresh" content="0; url=https://example.test/">', encoding="utf-8"
+        '<meta http-equiv="refresh" content="0; url=https://example.test/">',
+        encoding="utf-8",
     )
     errors = collect_redirect_errors(tmp_path)
     assert "undeclared redirect stub: surprise.html" in errors
 
 
-def test_meta_refresh_discovery_is_independent_of_quote_style_and_attribute_order(tmp_path):
-    (tmp_path / "about.html").write_text(render_stub(REDIRECT_STUBS[0]), encoding="utf-8")
+def test_meta_refresh_discovery_is_independent_of_quote_style_and_attribute_order(
+    tmp_path,
+):
+    (tmp_path / "about.html").write_text(
+        render_stub(REDIRECT_STUBS[0]), encoding="utf-8"
+    )
     surprise = tmp_path / "surprise.html"
     surprise.write_text(
         "<meta content='0; url=https://example.test/next' data-legacy='yes' http-equiv='REFRESH'>",
@@ -62,13 +78,22 @@ def test_meta_refresh_discovery_is_independent_of_quote_style_and_attribute_orde
 
     assert has_meta_refresh(surprise.read_text(encoding="utf-8"))
     assert discover_redirect_stubs(tmp_path) == {"about.html", "surprise.html"}
-    assert "undeclared redirect stub: surprise.html" in collect_redirect_errors(tmp_path)
+    assert "undeclared redirect stub: surprise.html" in collect_redirect_errors(
+        tmp_path
+    )
 
 
-def test_redirect_discovery_prunes_venv_and_cache_html_without_reading_them(tmp_path: Path):
-    (tmp_path / "about.html").write_text(render_stub(REDIRECT_STUBS[0]), encoding="utf-8")
+def test_redirect_discovery_prunes_venv_and_cache_html_without_reading_them(
+    tmp_path: Path,
+):
+    (tmp_path / "about.html").write_text(
+        render_stub(REDIRECT_STUBS[0]), encoding="utf-8"
+    )
     outside = tmp_path / "outside.txt"
-    outside.write_text('<meta http-equiv="refresh" content="0; url=https://example.test/">', encoding="utf-8")
+    outside.write_text(
+        '<meta http-equiv="refresh" content="0; url=https://example.test/">',
+        encoding="utf-8",
+    )
     for directory in (".venv", ".pytest_cache", "__pycache__"):
         cache = tmp_path / directory
         cache.mkdir()
@@ -103,7 +128,9 @@ def test_discovery_cache_is_keyed_by_file_identity_not_path(tmp_path):
 
     # Replaced through a new inode (how the generators write): still found.
     replacement = tmp_path / "page.html.new"
-    replacement.write_text("<html><head></head><body>plain again</body></html>", encoding="utf-8")
+    replacement.write_text(
+        "<html><head></head><body>plain again</body></html>", encoding="utf-8"
+    )
     replacement.replace(page)
     assert redirect_stubs.discover_redirect_stubs(tmp_path) == set()
 

@@ -32,24 +32,36 @@ def document_case(tmp_path, monkeypatch):
     )
     output = tmp_path / "data" / "work-authors.json"
     output.parent.mkdir()
-    (output.parent / "work-identifiers.json").write_text(json.dumps({
-        "schema_version": "WorkIdentifierRegistry.v1",
-        "identifiers": {
-            "999": {"citation_key": "Friedman2026ExampleWork999", "status": "active"},
-        },
-    }), encoding="utf-8")
+    (output.parent / "work-identifiers.json").write_text(
+        json.dumps(
+            {
+                "schema_version": "WorkIdentifierRegistry.v1",
+                "identifiers": {
+                    "999": {
+                        "citation_key": "Friedman2026ExampleWork999",
+                        "status": "active",
+                    },
+                },
+            }
+        ),
+        encoding="utf-8",
+    )
     monkeypatch.setattr(authors, "REPO_ROOT", tmp_path)
     monkeypatch.setattr(authors, "BIBLIOGRAPHY", bibliography)
     monkeypatch.setattr(authors, "OUTPUT", output)
-    payload = {"works": {"Friedman2026ExampleWork999": {
-        "num": 999,
-        "doi": None,
-        "title": "Example work",
-        "status": "document_verified",
-        "authors": [{"family": "Example", "given": "Ada"}],
-        "source": "papers/2026_Example/full_text.md",
-        "evidence": "Written by Ada Example",
-    }}}
+    payload = {
+        "works": {
+            "Friedman2026ExampleWork999": {
+                "num": 999,
+                "doi": None,
+                "title": "Example work",
+                "status": "document_verified",
+                "authors": [{"family": "Example", "given": "Ada"}],
+                "source": "papers/2026_Example/full_text.md",
+                "evidence": "Written by Ada Example",
+            }
+        }
+    }
     return source, bibliography, output, payload
 
 
@@ -62,11 +74,16 @@ def test_document_evidence_accepts_the_matching_work(document_case):
     assert authors.document_evidence_errors(payload) == []
 
 
-@pytest.mark.parametrize("source_path", [
-    "papers/2026_Other/full_text.md",
-    "papers/2026_Example/../2026_Other/full_text.md",
-])
-def test_document_evidence_rejects_another_work_with_the_same_quote(document_case, source_path):
+@pytest.mark.parametrize(
+    "source_path",
+    [
+        "papers/2026_Other/full_text.md",
+        "papers/2026_Example/../2026_Other/full_text.md",
+    ],
+)
+def test_document_evidence_rejects_another_work_with_the_same_quote(
+    document_case, source_path
+):
     source, _, _, payload = document_case
     other = source.parent.parent / "2026_Other" / "full_text.md"
     other.parent.mkdir()
@@ -77,7 +94,9 @@ def test_document_evidence_rejects_another_work_with_the_same_quote(document_cas
     ]
 
 
-def test_document_evidence_rejects_a_source_symlink_escaping_its_folder(document_case, tmp_path):
+def test_document_evidence_rejects_a_source_symlink_escaping_its_folder(
+    document_case, tmp_path
+):
     source, _, _, payload = document_case
     other = tmp_path / "external.md"
     other.write_text(source.read_text(encoding="utf-8"), encoding="utf-8")
@@ -92,7 +111,9 @@ def test_document_evidence_rejects_a_paper_folder_symlink(document_case, tmp_pat
     source, _, _, payload = document_case
     other = tmp_path / "external-folder"
     other.mkdir()
-    (other / source.name).write_text(source.read_text(encoding="utf-8"), encoding="utf-8")
+    (other / source.name).write_text(
+        source.read_text(encoding="utf-8"), encoding="utf-8"
+    )
     source.unlink()
     source.parent.rmdir()
     source.parent.symlink_to(other, target_is_directory=True)
@@ -110,13 +131,17 @@ def test_document_evidence_rejects_an_absolute_source_path(document_case):
 
 
 @pytest.mark.parametrize("doi_location", ["entry", "bibliography"])
-def test_document_evidence_requires_both_current_work_and_record_to_be_doi_free(document_case, doi_location):
+def test_document_evidence_requires_both_current_work_and_record_to_be_doi_free(
+    document_case, doi_location
+):
     _, bibliography, _, payload = document_case
     if doi_location == "entry":
         _entry(payload)["doi"] = "10.5281/zenodo.999"
     else:
         bibliography.write_text(
-            bibliography.read_text(encoding="utf-8").replace("| — | [docs]", "| https://doi.org/10.5281/zenodo.999 | [docs]"),
+            bibliography.read_text(encoding="utf-8").replace(
+                "| — | [docs]", "| https://doi.org/10.5281/zenodo.999 | [docs]"
+            ),
             encoding="utf-8",
         )
     assert authors.document_evidence_errors(payload) == [
@@ -134,13 +159,17 @@ def test_document_evidence_cannot_redirect_authors_to_another_row_number(documen
 
 def test_document_evidence_rejects_an_unknown_work_key(document_case):
     _, _, _, payload = document_case
-    payload["works"]["unknown-work"] = payload["works"].pop("Friedman2026ExampleWork999")
+    payload["works"]["unknown-work"] = payload["works"].pop(
+        "Friedman2026ExampleWork999"
+    )
     assert authors.document_evidence_errors(payload) == [
         "unknown-work: must match a bibliography work with a paper folder and the same num"
     ]
 
 
-def test_document_apply_refuses_invalid_evidence_before_any_bibliography_write(document_case, capsys):
+def test_document_apply_refuses_invalid_evidence_before_any_bibliography_write(
+    document_case, capsys
+):
     _, bibliography, output, payload = document_case
     _entry(payload)["evidence"] = "Written by Somebody Else"
     output.write_text(json.dumps(payload), encoding="utf-8")
@@ -162,17 +191,22 @@ def test_document_evidence_fails_closed_without_its_bibliography(document_case):
     bibliography.unlink()
     errors = authors.document_evidence_errors(payload)
     assert len(errors) == 1
-    assert errors[0].startswith("document_verified validation needs a readable bibliography:")
+    assert errors[0].startswith(
+        "document_verified validation needs a readable bibliography:"
+    )
 
 
-@pytest.mark.parametrize(("family", "orcid", "expected"), [
-    ("Andrew Pashea", "0009-0004-4061-6296", "Pashea, Andrew"),
-    ("Daniel A. Friedman", "0000-0001-6232-9096", "Friedman, Daniel A."),
-    ("Daniel Ari Friedman", "0000-0001-6232-9096", "Friedman, Daniel Ari"),
-    ("Evelyn C. Goh", "0000-0001-7182-3950", "Goh, Evelyn C."),
-    ("Siddhant Shrivastava", "0000-0002-9688-4730", "Shrivastava, Siddhant"),
-    ("Tucker Chambers", "0009-0008-3793-7872", "Chambers, Tucker"),
-])
+@pytest.mark.parametrize(
+    ("family", "orcid", "expected"),
+    [
+        ("Andrew Pashea", "0009-0004-4061-6296", "Pashea, Andrew"),
+        ("Daniel A. Friedman", "0000-0001-6232-9096", "Friedman, Daniel A."),
+        ("Daniel Ari Friedman", "0000-0001-6232-9096", "Friedman, Daniel Ari"),
+        ("Evelyn C. Goh", "0000-0001-7182-3950", "Goh, Evelyn C."),
+        ("Siddhant Shrivastava", "0000-0002-9688-4730", "Shrivastava, Siddhant"),
+        ("Tucker Chambers", "0009-0008-3793-7872", "Chambers, Tucker"),
+    ],
+)
 def test_audited_name_aliases_are_bound_to_their_orcid(family, orcid, expected):
     author = {"family": family, "given": "", "orcid": f"https://orcid.org/{orcid}"}
     before = copy.deepcopy(author)

@@ -30,7 +30,9 @@ def test_axe_zero_serious_critical(tmp_path: Path) -> None:
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
-            page = browser.new_context(viewport={"width": 1280, "height": 900}).new_page()
+            page = browser.new_context(
+                viewport={"width": 1280, "height": 900}
+            ).new_page()
             for path in LANE_PAGES:
                 page.goto(f"{base_url}/{path}", wait_until="load")
                 page.wait_for_timeout(300)
@@ -62,7 +64,6 @@ def test_axe_zero_serious_critical(tmp_path: Path) -> None:
             browser.close()
     finally:
         stop_server(httpd)
-
 
 
 # 2026-08-29: all baseline entries removed - the 134/135-node index.html entries

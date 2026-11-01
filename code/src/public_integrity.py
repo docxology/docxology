@@ -37,7 +37,9 @@ CV_PUBLIC_FILES = (
 )
 
 
-def scan_public_files(repo_root: Path, paths: tuple[str, ...] = CV_PUBLIC_FILES) -> list[str]:
+def scan_public_files(
+    repo_root: Path, paths: tuple[str, ...] = CV_PUBLIC_FILES
+) -> list[str]:
     """Return privacy and unsafe-URL violations in public CV surfaces."""
     errors: list[str] = []
     for relative in paths:
@@ -58,7 +60,12 @@ def scan_public_files(repo_root: Path, paths: tuple[str, ...] = CV_PUBLIC_FILES)
     return errors
 
 
-def validate_public_files(repo_root: Path, paths: tuple[str, ...] = CV_PUBLIC_FILES) -> None:
+def validate_public_files(
+    repo_root: Path, paths: tuple[str, ...] = CV_PUBLIC_FILES
+) -> None:
     errors = scan_public_files(repo_root, paths)
     if errors:
-        raise SystemExit("Public integrity violations:\n" + "\n".join(f"  - {error}" for error in errors))
+        raise SystemExit(
+            "Public integrity violations:\n"
+            + "\n".join(f"  - {error}" for error in errors)
+        )

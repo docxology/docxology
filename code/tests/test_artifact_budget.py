@@ -23,10 +23,15 @@ from docxology_tools.artifact_budget import (  # noqa: E402
 )
 
 
-def _write_report(tmp_path: Path, mib: float, name: str = "pages_artifact_growth_2026-08-29.json") -> Path:
+def _write_report(
+    tmp_path: Path, mib: float, name: str = "pages_artifact_growth_2026-08-29.json"
+) -> Path:
     path = tmp_path / "reports" / name
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps({"artifact_mib": mib, "generated_at": "2026-08-29T00:00:00Z"}), encoding="utf-8")
+    path.write_text(
+        json.dumps({"artifact_mib": mib, "generated_at": "2026-08-29T00:00:00Z"}),
+        encoding="utf-8",
+    )
     return path
 
 
@@ -46,7 +51,9 @@ def test_artifact_mib_reads_payload(tmp_path: Path) -> None:
     assert artifact_mib_from_report(path) == pytest.approx(821.66)
 
 
-def test_enforce_budget_passes_under_budget(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> None:
+def test_enforce_budget_passes_under_budget(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+) -> None:
     _write_report(tmp_path, 821.66)
     assert enforce_budget(tmp_path) == pytest.approx(821.66)
     assert "Artifact budget OK" in capsys.readouterr().out
@@ -58,7 +65,20 @@ def test_enforce_budget_fails_over_budget(tmp_path: Path) -> None:
         enforce_budget(tmp_path)
 
 
-@pytest.mark.parametrize("measurement", [True, False, None, "835.2", -1, float("nan"), float("inf"), -float("inf"), 10**1000])
+@pytest.mark.parametrize(
+    "measurement",
+    [
+        True,
+        False,
+        None,
+        "835.2",
+        -1,
+        float("nan"),
+        float("inf"),
+        -float("inf"),
+        10**1000,
+    ],
+)
 def test_invalid_measurements_cannot_pass_budget(tmp_path: Path, measurement) -> None:
     _write_report(tmp_path, measurement)
     with pytest.raises(ArtifactBudgetError, match="artifact_mib"):

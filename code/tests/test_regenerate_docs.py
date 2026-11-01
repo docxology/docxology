@@ -107,12 +107,30 @@ def test_generate_readme_normalizes_markdown_doi_link():
     assert "> Example \u2014 abstract." in readme
     assert "Associated artifacts" not in readme
     assert "<p>" not in readme
-    assert "[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20396328-blue)](https://doi.org/10.5281/zenodo.20396328)" in readme
-    assert "- DOI: [10.5281/zenodo.20396328](https://doi.org/10.5281/zenodo.20396328)" in readme
-    assert "- Artifact DOI: [10.5281/zenodo.20396329](https://doi.org/10.5281/zenodo.20396329)" in readme
-    assert "- GitHub repository: [docxology/entofile](https://github.com/docxology/entofile)" in readme
-    assert "- GitHub release: [v0.4](https://github.com/docxology/entofile/releases/tag/v0.4)" in readme
-    assert "- Zenodo record: [https://zenodo.org/records/20396328](https://zenodo.org/records/20396328)" in readme
+    assert (
+        "[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20396328-blue)](https://doi.org/10.5281/zenodo.20396328)"
+        in readme
+    )
+    assert (
+        "- DOI: [10.5281/zenodo.20396328](https://doi.org/10.5281/zenodo.20396328)"
+        in readme
+    )
+    assert (
+        "- Artifact DOI: [10.5281/zenodo.20396329](https://doi.org/10.5281/zenodo.20396329)"
+        in readme
+    )
+    assert (
+        "- GitHub repository: [docxology/entofile](https://github.com/docxology/entofile)"
+        in readme
+    )
+    assert (
+        "- GitHub release: [v0.4](https://github.com/docxology/entofile/releases/tag/v0.4)"
+        in readme
+    )
+    assert (
+        "- Zenodo record: [https://zenodo.org/records/20396328](https://zenodo.org/records/20396328)"
+        in readme
+    )
     assert (
         "[Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing (1).pdf]"
         "(https://zenodo.org/api/records/10160657/files/"
@@ -126,31 +144,45 @@ def test_generate_readme_normalizes_markdown_doi_link():
     ) in readme
 
 
-def test_generated_documents_are_deterministic_and_check_detects_real_drift(tmp_path: Path):
+def test_generated_documents_are_deterministic_and_check_detects_real_drift(
+    tmp_path: Path,
+):
     papers, folder, paths = _write_paper_fixture(tmp_path)
     legacy_log = papers / "regenerate_docs.log"
 
     assert rd.main(["--apply"], paths=paths) == 0
-    generated = {name: (folder / name).read_text(encoding="utf-8") for name in rd.DOCUMENT_FILENAMES}
+    generated = {
+        name: (folder / name).read_text(encoding="utf-8")
+        for name in rd.DOCUMENT_FILENAMES
+    }
     manifest_path = papers / rd.MANIFEST_FILENAME
     manifest_before = manifest_path.read_text(encoding="utf-8")
     assert not legacy_log.exists()
-    assert all(rd.is_generated_document(name, content) for name, content in generated.items())
+    assert all(
+        rd.is_generated_document(name, content) for name, content in generated.items()
+    )
 
     assert rd.main(["--check"], paths=paths) == 0
-    assert {name: (folder / name).read_text(encoding="utf-8") for name in rd.DOCUMENT_FILENAMES} == generated
+    assert {
+        name: (folder / name).read_text(encoding="utf-8")
+        for name in rd.DOCUMENT_FILENAMES
+    } == generated
     assert manifest_path.read_text(encoding="utf-8") == manifest_before
     assert not legacy_log.exists()
 
     managed_path = folder / "AGENTS.md"
-    managed_path.write_text(generated["AGENTS.md"] + "\n<!-- manual drift -->\n", encoding="utf-8")
+    managed_path.write_text(
+        generated["AGENTS.md"] + "\n<!-- manual drift -->\n", encoding="utf-8"
+    )
     assert rd.main(["--check"], paths=paths) == 1
     assert managed_path.read_text(encoding="utf-8").endswith("<!-- manual drift -->\n")
     assert manifest_path.read_text(encoding="utf-8") == manifest_before
     assert not legacy_log.exists()
 
 
-def test_check_rejects_semantically_valid_but_noncanonical_manifest_bytes(tmp_path: Path):
+def test_check_rejects_semantically_valid_but_noncanonical_manifest_bytes(
+    tmp_path: Path,
+):
     papers, _folder, paths = _write_paper_fixture(tmp_path)
 
     assert rd.main(["--apply"], paths=paths) == 0
@@ -209,7 +241,9 @@ def test_symlinked_paper_folder_is_rejected_before_rendering(tmp_path: Path):
         rd.paper_folders(paths=paths)
     assert rd.main(["--check"], paths=paths) == 2
     assert rd.main(["--apply"], paths=paths) == 2
-    assert not any((external_folder / filename).exists() for filename in rd.DOCUMENT_FILENAMES)
+    assert not any(
+        (external_folder / filename).exists() for filename in rd.DOCUMENT_FILENAMES
+    )
 
 
 def test_symlinked_papers_root_is_rejected_before_metadata_loading(tmp_path: Path):
@@ -255,8 +289,7 @@ def test_symlinked_manifest_owned_target_fails_plan_check_and_apply(tmp_path: Pa
     folders = rd.paper_folders(paths=paths)
     manifest_entries = rd.load_generated_documents_manifest(paths=paths)
     metadata_by_folder = {
-        name: rd.resolved_metadata(name, metadata, paths=paths)
-        for name in folders
+        name: rd.resolved_metadata(name, metadata, paths=paths) for name in folders
     }
     with pytest.raises(ValueError, match="symlinked managed document"):
         rd.plan_document_changes(
@@ -273,7 +306,9 @@ def test_symlinked_manifest_owned_target_fails_plan_check_and_apply(tmp_path: Pa
     assert external_target.read_text(encoding="utf-8") == external_content
 
 
-def test_hard_linked_manifest_owned_target_cannot_overwrite_external_alias(tmp_path: Path):
+def test_hard_linked_manifest_owned_target_cannot_overwrite_external_alias(
+    tmp_path: Path,
+):
     """Link-count validation runs before an apply-mode target is truncated."""
     _papers, folder, paths = _write_paper_fixture(tmp_path)
     assert rd.main(["--apply"], paths=paths) == 0
@@ -325,7 +360,9 @@ def test_hard_linked_manifest_cannot_overwrite_external_alias(tmp_path: Path):
 
 def test_unlisted_hand_authored_document_is_never_overwritten(tmp_path: Path):
     papers, folder, paths = _write_paper_fixture(tmp_path)
-    hand_authored = "# Curated README\n\nThis document is intentionally hand-authored.\n"
+    hand_authored = (
+        "# Curated README\n\nThis document is intentionally hand-authored.\n"
+    )
     readme_path = folder / "README.md"
     readme_path.write_text(hand_authored, encoding="utf-8")
 
@@ -340,7 +377,9 @@ def test_unlisted_hand_authored_document_is_never_overwritten(tmp_path: Path):
     # A marker is not sufficient ownership by itself: a marker without the
     # explicit manifest record is a configuration error, not permission to
     # overwrite a previously hand-authored file.
-    readme_path.write_text(rd.wrap_generated_document("README.md", "# Orphaned marker"), encoding="utf-8")
+    readme_path.write_text(
+        rd.wrap_generated_document("README.md", "# Orphaned marker"), encoding="utf-8"
+    )
     assert rd.main(["--check"], paths=paths) == 1
 
 
@@ -362,9 +401,15 @@ def test_explicit_adoption_requires_manifest_opt_in(tmp_path: Path):
     assert rd.main(["--apply"], paths=paths) == 1
     assert readme_path.read_text(encoding="utf-8") == original
     assert rd.main(["--adopt-existing", "--apply"], paths=paths) == 0
-    assert readme_path.read_text(encoding="utf-8").startswith(rd.generated_document_marker("README.md"))
+    assert readme_path.read_text(encoding="utf-8").startswith(
+        rd.generated_document_marker("README.md")
+    )
     manifest = json.loads((papers / rd.MANIFEST_FILENAME).read_text(encoding="utf-8"))
-    adopted = next(item for item in manifest["documents"] if item["path"] == "2026_Example/README.md")
+    adopted = next(
+        item
+        for item in manifest["documents"]
+        if item["path"] == "2026_Example/README.md"
+    )
     assert adopted == {"path": "2026_Example/README.md"}
 
 
@@ -394,14 +439,18 @@ def test_doi_audit_treats_artifact_doi_as_informational_only(
     ]
 
 
-def test_bibliography_doi_is_rendered_as_canonical_while_artifact_is_labeled(tmp_path: Path):
+def test_bibliography_doi_is_rendered_as_canonical_while_artifact_is_labeled(
+    tmp_path: Path,
+):
     _papers, _folder, paths = _write_paper_fixture(
         tmp_path,
         metadata_doi=CANONICAL_DOI,
         artifact_doi=ARTIFACT_DOI,
     )
     bibliography = rd.parse_bibliography(paths=paths)
-    meta = rd.resolved_metadata("2026_Example", rd.load_metadata(paths=paths), paths=paths)
+    meta = rd.resolved_metadata(
+        "2026_Example", rd.load_metadata(paths=paths), paths=paths
+    )
 
     readme = rd.generate_readme(
         "2026_Example",
@@ -409,7 +458,9 @@ def test_bibliography_doi_is_rendered_as_canonical_while_artifact_is_labeled(tmp
         bibliography["2026_Example"],
         paths=paths,
     )
-    skill = rd.generate_skill("2026_Example", meta, ["2026_Example"], bibliography["2026_Example"])
+    skill = rd.generate_skill(
+        "2026_Example", meta, ["2026_Example"], bibliography["2026_Example"]
+    )
 
     assert f"DOI: {CANONICAL_DOI}." in readme
     assert f"DOI: {ARTIFACT_DOI}." not in readme

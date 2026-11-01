@@ -97,7 +97,10 @@ def is_payload_neutral_path(path: Path) -> bool:
     """
     if path in _PAYLOAD_NEUTRAL_FILES:
         return True
-    return path.parent == Path(".github/workflows") and _WORKFLOW_FILE_NAME.fullmatch(path.name) is not None
+    return (
+        path.parent == Path(".github/workflows")
+        and _WORKFLOW_FILE_NAME.fullmatch(path.name) is not None
+    )
 
 
 def _carries_no_payload(paths: list[Path]) -> bool:
@@ -154,7 +157,11 @@ def latest_payload_commit(
             continue
         if len(parents) > 1 and diff_paths_for is not None:
             match = next(
-                (p for p in parents[1:] if _carries_no_payload(diff_paths_for(p, candidate))),
+                (
+                    p
+                    for p in parents[1:]
+                    if _carries_no_payload(diff_paths_for(p, candidate))
+                ),
                 None,
             )
             if match is not None:
@@ -188,7 +195,16 @@ def _changed_paths(repo_root: Path, commit: str) -> list[Path]:
 def _diff_paths(repo_root: Path, parent: str, commit: str) -> list[Path]:
     """Return the paths that differ between two commits, failing closed."""
     result = subprocess.run(
-        ["git", "diff-tree", "--no-commit-id", "--name-only", "-r", "-z", parent, commit],
+        [
+            "git",
+            "diff-tree",
+            "--no-commit-id",
+            "--name-only",
+            "-r",
+            "-z",
+            parent,
+            commit,
+        ],
         cwd=repo_root,
         check=False,
         capture_output=True,

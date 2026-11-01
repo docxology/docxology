@@ -20,7 +20,9 @@ JS = Path(__file__).resolve().parents[2] / "js" / "search-utils.js"
 def _node_path() -> str:
     node = shutil.which("node")
     if node is None:
-        pytest.fail("Selected JavaScript contract requires the node interpreter on PATH")
+        pytest.fail(
+            "Selected JavaScript contract requires the node interpreter on PATH"
+        )
     return node
 
 
@@ -33,7 +35,9 @@ def _esc(value: str) -> str:
         + json.dumps(value)
         + ")));"
     )
-    out = subprocess.run([node, "-e", program], capture_output=True, text=True, check=True)
+    out = subprocess.run(
+        [node, "-e", program], capture_output=True, text=True, check=True
+    )
     return json.loads(out.stdout)
 
 

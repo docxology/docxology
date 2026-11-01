@@ -24,6 +24,7 @@ from docxology_tools.art_collections import load_collections  # noqa: E402
 from docxology_tools.artwork_pages import page_rel_path, sitemap_paths  # noqa: E402
 
 from docxology_tools.report_paths import report_date_string  # noqa: E402
+from docxology_tools.redirect_stubs import declared_stubs  # noqa: E402
 
 
 def loc(rel: str) -> str:
@@ -33,7 +34,9 @@ def loc(rel: str) -> str:
 def existing_lastmod(output: Path = OUT) -> str | None:
     if not output.exists():
         return None
-    matches = re.findall(r"<lastmod>([^<]+)</lastmod>", output.read_text(encoding="utf-8"))
+    matches = re.findall(
+        r"<lastmod>([^<]+)</lastmod>", output.read_text(encoding="utf-8")
+    )
     return max(matches) if matches else None
 
 
@@ -64,7 +67,7 @@ def _batch_latest_map(repo_root: Path) -> dict[str, str]:
             text=True,
             timeout=300,
         )
-    except (OSError, subprocess.SubprocessError):
+    except OSError, subprocess.SubprocessError:
         _BATCH_LATEST = {}
         return _BATCH_LATEST
     latest: dict[str, str] = {}
@@ -100,7 +103,7 @@ def git_lastmod(rel: str, repo_root: Path = REPO_ROOT) -> str | None:
             text=True,
             timeout=60,
         )
-    except (OSError, subprocess.SubprocessError):
+    except OSError, subprocess.SubprocessError:
         return None
     date = result.stdout.strip()
     return date or None
@@ -118,19 +121,24 @@ def url_entry(
     return f"  <url><loc>{html.escape(loc(rel_path))}</loc><lastmod>{entry_lastmod}</lastmod><changefreq>{changefreq}</changefreq><priority>{priority}</priority></url>"
 
 
-def generated_url_entry(rel_path: str, changefreq: str, priority: str, lastmod: str) -> str:
+def generated_url_entry(
+    rel_path: str, changefreq: str, priority: str, lastmod: str
+) -> str:
     return f"  <url><loc>{html.escape(loc(rel_path))}</loc><lastmod>{lastmod}</lastmod><changefreq>{changefreq}</changefreq><priority>{priority}</priority></url>"
 
 
-def sitemap_locs(lastmod: str | None = None, *, repo_root: Path = REPO_ROOT) -> list[str]:
+def sitemap_locs(
+    lastmod: str | None = None, *, repo_root: Path = REPO_ROOT
+) -> list[str]:
     """Absolute URLs included in sitemap.xml (for IndexNow and tests)."""
     date = lastmod or report_date_string()
     _ = date
+    redirects = declared_stubs()
     locs = [loc(rel_path) for rel_path, _, _ in INDEX_PRIORITY_STATIC]
     works_dir = repo_root / "works"
     if works_dir.exists():
         for path in sorted(works_dir.glob("*.html")):
-            if path.name == "index.html":
+            if path.name == "index.html" or f"works/{path.name}" in redirects:
                 continue
             locs.append(loc(f"works/{path.name}"))
     videos_dir = repo_root / "videos"
@@ -164,11 +172,14 @@ def _artwork_lastmods(payload: dict, fallback: str) -> dict[str, str]:
 
 def render(lastmod: str | None = None, *, repo_root: Path = REPO_ROOT) -> str:
     date = lastmod or report_date_string()
-    entries = [url_entry(*row, date, repo_root=repo_root) for row in INDEX_PRIORITY_STATIC]
+    redirects = declared_stubs()
+    entries = [
+        url_entry(*row, date, repo_root=repo_root) for row in INDEX_PRIORITY_STATIC
+    ]
     works_dir = repo_root / "works"
     if works_dir.exists():
         for path in sorted(works_dir.glob("*.html")):
-            if path.name == "index.html":
+            if path.name == "index.html" or f"works/{path.name}" in redirects:
                 continue
             entries.append(
                 url_entry(
@@ -186,16 +197,32 @@ def render(lastmod: str | None = None, *, repo_root: Path = REPO_ROOT) -> str:
         for path in sorted(videos_dir.glob("*.html")):
             if path.name == "index.html":
                 continue
-            entries.append(url_entry(f"videos/{path.name}", "yearly", "0.35", date, repo_root=repo_root))
+            entries.append(
+                url_entry(
+                    f"videos/{path.name}", "yearly", "0.35", date, repo_root=repo_root
+                )
+            )
     # Artwork pages: data-driven URL set (thin noindex pages excluded), with
     # <lastmod> taken from the Flickr upload date. Curated collection hubs are
     # git-dated like other static entries.
     payload = _artwork_payload(repo_root)
     lastmods = _artwork_lastmods(payload, date)
     for rel_path in sitemap_paths(payload):
-        entries.append(generated_url_entry(rel_path, "monthly", "0.5", lastmods.get(rel_path, date)))
+        entries.append(
+            generated_url_entry(
+                rel_path, "monthly", "0.5", lastmods.get(rel_path, date)
+            )
+        )
     for collection in load_collections():
-        entries.append(url_entry(f"art-collections/{collection.slug}.html", "monthly", "0.6", date, repo_root=repo_root))
+        entries.append(
+            url_entry(
+                f"art-collections/{collection.slug}.html",
+                "monthly",
+                "0.6",
+                date,
+                repo_root=repo_root,
+            )
+        )
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -206,7 +233,9 @@ def render(lastmod: str | None = None, *, repo_root: Path = REPO_ROOT) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if sitemap.xml is stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if sitemap.xml is stale"
+    )
     args = parser.parse_args()
     content = render(existing_lastmod() if args.check else None)
     if args.check:

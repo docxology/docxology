@@ -35,7 +35,8 @@ def _python_sources() -> list[Path]:
     files: list[Path] = []
     for rel in SCANNED_DIRS:
         files.extend(
-            path for path in sorted((REPO_ROOT / rel).glob("*.py"))
+            path
+            for path in sorted((REPO_ROOT / rel).glob("*.py"))
             if path.resolve() != this_file
         )
     return files
@@ -98,16 +99,27 @@ def test_the_locked_uv_environment_stays_the_only_documented_exception():
         if path.parent not in production:
             continue
         tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
-        parents = {child: parent for parent in ast.walk(tree) for child in ast.iter_child_nodes(parent)}
+        parents = {
+            child: parent
+            for parent in ast.walk(tree)
+            for child in ast.iter_child_nodes(parent)
+        }
         for node in ast.walk(tree):
             if not isinstance(node, (ast.List, ast.Tuple)):
                 continue
             elements = _string_elements(node)
             if elements[:3] == ["uv", "run", "python3"]:
                 owner = node
-                while owner in parents and not isinstance(owner, (ast.FunctionDef, ast.AsyncFunctionDef)):
+                while owner in parents and not isinstance(
+                    owner, (ast.FunctionDef, ast.AsyncFunctionDef)
+                ):
                     owner = parents[owner]
-                uv_invocations.append((str(path.relative_to(REPO_ROOT)), getattr(owner, "name", "<module>")))
+                uv_invocations.append(
+                    (
+                        str(path.relative_to(REPO_ROOT)),
+                        getattr(owner, "name", "<module>"),
+                    )
+                )
     # Bind the exact functions rather than exempting an entire file. The
     # agent's plan is declarative argv data; test_agent_interface independently
     # rejects any subprocess execution while that preview is requested.
@@ -123,6 +135,8 @@ def test_the_scan_detects_a_reintroduced_bare_interpreter(tmp_path: Path):
     """The guard fails on a constructed violation, not only on a clean tree."""
     source = "import subprocess\nsubprocess.run(['python3', 'x.py'])\n"
     tree = ast.parse(source)
-    calls = [n for n in ast.walk(tree) if isinstance(n, ast.Call) and _is_subprocess_call(n)]
+    calls = [
+        n for n in ast.walk(tree) if isinstance(n, ast.Call) and _is_subprocess_call(n)
+    ]
     assert calls
     assert _string_elements(calls[0].args[0])[0] == "python3"

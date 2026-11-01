@@ -54,7 +54,9 @@ def test_final_symlink_target_is_rejected_before_check_or_write(tmp_path: Path) 
     _assert_check_and_write_reject(root, target, outside)
 
 
-def test_ancestor_symlink_target_is_rejected_before_check_or_write(tmp_path: Path) -> None:
+def test_ancestor_symlink_target_is_rejected_before_check_or_write(
+    tmp_path: Path,
+) -> None:
     root = tmp_path / "repo"
     root.mkdir()
     outside_dir = tmp_path / "outside"
@@ -66,7 +68,9 @@ def test_ancestor_symlink_target_is_rejected_before_check_or_write(tmp_path: Pat
     _assert_check_and_write_reject(root, root / "data" / "software.html", outside)
 
 
-def test_symlinked_repository_root_is_rejected_before_check_or_write(tmp_path: Path) -> None:
+def test_symlinked_repository_root_is_rejected_before_check_or_write(
+    tmp_path: Path,
+) -> None:
     real_root = tmp_path / "real-repo"
     real_root.mkdir()
     root = tmp_path / "repo"
@@ -89,7 +93,9 @@ def test_hard_link_target_is_rejected_before_check_or_write(tmp_path: Path) -> N
     _assert_check_and_write_reject(root, target, outside)
 
 
-def test_hard_link_added_during_staged_write_fails_without_mutating_alias(tmp_path: Path) -> None:
+def test_hard_link_added_during_staged_write_fails_without_mutating_alias(
+    tmp_path: Path,
+) -> None:
     root = tmp_path / "repo"
     root.mkdir()
     target = root / "catalog.html"
@@ -111,7 +117,9 @@ def test_hard_link_added_during_staged_write_fails_without_mutating_alias(tmp_pa
     assert alias.read_text(encoding="utf-8") == "old generated content\n"
 
 
-def test_atomic_replacement_preserves_alias_added_after_final_target_check(tmp_path: Path) -> None:
+def test_atomic_replacement_preserves_alias_added_after_final_target_check(
+    tmp_path: Path,
+) -> None:
     """A link added in the final TOCTOU window keeps the old inode and bytes."""
     root = tmp_path / "repo"
     root.mkdir()
@@ -145,7 +153,9 @@ def test_outside_root_target_is_rejected_before_check_or_write(tmp_path: Path) -
     _assert_check_and_write_reject(root, outside, outside)
 
 
-def test_safe_generated_output_round_trip_creates_real_parent_directories(tmp_path: Path) -> None:
+def test_safe_generated_output_round_trip_creates_real_parent_directories(
+    tmp_path: Path,
+) -> None:
     root = tmp_path / "repo"
     root.mkdir()
     target = root / "data" / "catalog.json"
@@ -156,7 +166,9 @@ def test_safe_generated_output_round_trip_creates_real_parent_directories(tmp_pa
     assert stale_output_paths({target: '{"ok": true}\n'}, repo_root=root) == ()
 
 
-def test_mapping_write_preflights_every_target_before_changing_any_file(tmp_path: Path) -> None:
+def test_mapping_write_preflights_every_target_before_changing_any_file(
+    tmp_path: Path,
+) -> None:
     root = tmp_path / "repo"
     root.mkdir()
     safe_target = root / "safe.html"
@@ -177,7 +189,9 @@ def test_mapping_write_preflights_every_target_before_changing_any_file(tmp_path
 
 @pytest.mark.parametrize("operation", [stale_output_paths, write_output_texts])
 @pytest.mark.parametrize("alias", ["symlink", "hardlink", "ancestor", "outside"])
-def test_mapping_preflights_every_target_before_any_stamp_read(tmp_path, monkeypatch, operation, alias):
+def test_mapping_preflights_every_target_before_any_stamp_read(
+    tmp_path, monkeypatch, operation, alias
+):
     root = tmp_path / "repo"
     root.mkdir()
     safe_target = root / "safe.html"
@@ -201,10 +215,14 @@ def test_mapping_preflights_every_target_before_any_stamp_read(tmp_path, monkeyp
         reads.append(args)
         pytest.fail("no stamp or observation read may precede complete-map validation")
 
-    monkeypatch.setattr(generated_outputs, "read_generated_output_text", unexpected_read)
+    monkeypatch.setattr(
+        generated_outputs, "read_generated_output_text", unexpected_read
+    )
 
     with pytest.raises(UnsafeGeneratedOutputPathError):
-        operation({safe_target: "new safe bytes\n", unsafe_target: "unsafe\n"}, repo_root=root)
+        operation(
+            {safe_target: "new safe bytes\n", unsafe_target: "unsafe\n"}, repo_root=root
+        )
 
     assert reads == []
     assert safe_target.read_text(encoding="utf-8") == "unchanged safe bytes\n"
@@ -212,7 +230,9 @@ def test_mapping_preflights_every_target_before_any_stamp_read(tmp_path, monkeyp
 
 
 @pytest.mark.parametrize("operation", [stale_output_paths, write_output_texts])
-def test_late_unsafe_stamp_read_fails_before_any_mapping_write(tmp_path, monkeypatch, operation):
+def test_late_unsafe_stamp_read_fails_before_any_mapping_write(
+    tmp_path, monkeypatch, operation
+):
     root = tmp_path / "repo"
     root.mkdir()
     first, later = root / "first.html", root / "later.html"
@@ -228,10 +248,14 @@ def test_late_unsafe_stamp_read_fails_before_any_mapping_write(tmp_path, monkeyp
             later.symlink_to(outside)
         return original_read(repo_root, target, **kwargs)
 
-    monkeypatch.setattr(generated_outputs, "read_generated_output_text", swap_later_target_before_reuse)
+    monkeypatch.setattr(
+        generated_outputs, "read_generated_output_text", swap_later_target_before_reuse
+    )
 
     with pytest.raises(UnsafeGeneratedOutputPathError, match="symlinked"):
-        operation({first: "new first bytes\n", later: "new later bytes\n"}, repo_root=root)
+        operation(
+            {first: "new first bytes\n", later: "new later bytes\n"}, repo_root=root
+        )
 
     assert first.read_text(encoding="utf-8") == "original first bytes\n"
     assert outside.read_text(encoding="utf-8") == "private bytes must not be read\n"
@@ -239,7 +263,9 @@ def test_late_unsafe_stamp_read_fails_before_any_mapping_write(tmp_path, monkeyp
 
 @pytest.mark.parametrize("operation", [stale_output_paths, write_output_texts])
 @pytest.mark.parametrize("alias", ["symlink", "hardlink"])
-def test_stamp_reuse_rejects_final_alias_race_before_reading_content(tmp_path, monkeypatch, operation, alias):
+def test_stamp_reuse_rejects_final_alias_race_before_reading_content(
+    tmp_path, monkeypatch, operation, alias
+):
     root = tmp_path / "repo"
     root.mkdir()
     target = root / "output.html"
@@ -261,7 +287,9 @@ def test_stamp_reuse_rejects_final_alias_race_before_reading_content(tmp_path, m
     def unexpected_content_open(*args, **kwargs):
         pytest.fail("unsafe alias must be rejected before opening a text reader")
 
-    monkeypatch.setattr(generated_outputs, "_parent_directory_fd", swap_before_final_open)
+    monkeypatch.setattr(
+        generated_outputs, "_parent_directory_fd", swap_before_final_open
+    )
     monkeypatch.setattr(generated_outputs.os, "fdopen", unexpected_content_open)
 
     with pytest.raises(UnsafeGeneratedOutputPathError):

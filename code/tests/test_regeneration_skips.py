@@ -44,8 +44,13 @@ def _seed_inputs(tmp_path: Path) -> None:
     (tmp_path / "data").mkdir()
     (tmp_path / "data" / "works.json").write_text("{}\n", encoding="utf-8")
     (tmp_path / "data" / "work-enrichment.json").write_text("{}\n", encoding="utf-8")
-    for relative in ("code/orchestrators/fixture.py", "code/src/site_nav.py",
-                     ".python-version", "pyproject.toml", "uv.lock"):
+    for relative in (
+        "code/orchestrators/fixture.py",
+        "code/src/site_nav.py",
+        ".python-version",
+        "pyproject.toml",
+        "uv.lock",
+    ):
         path = tmp_path / relative
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text("# fixture source\n", encoding="utf-8")
@@ -72,7 +77,10 @@ def test_no_declared_inputs_step_always_runs(tmp_path: Path) -> None:
     state[step.identifier] = "anything"
     assert step_skip_reason(step, state, tmp_path) is None
     ran, _skipped = regenerate_all.run_regeneration(
-        steps=(step,), runner=lambda script, args: None, repo_root=tmp_path, emit=lambda _m: None
+        steps=(step,),
+        runner=lambda script, args: None,
+        repo_root=tmp_path,
+        emit=lambda _m: None,
     )
     assert ran == 1
 
@@ -140,7 +148,9 @@ def test_skip_state_is_fingerprint_not_mtime(tmp_path: Path) -> None:
     )
     # An mtime-only touch (same bytes) must not invalidate the fingerprint.
     os.utime(tmp_path / "data" / "works.json", (0, 0))
-    assert step_skip_reason(step, load_regeneration_state(tmp_path), tmp_path) is not None
+    assert (
+        step_skip_reason(step, load_regeneration_state(tmp_path), tmp_path) is not None
+    )
     ran, skipped = regenerate_all.run_regeneration(
         steps=(step,),
         runner=lambda script, args: calls.append(script),
@@ -172,13 +182,23 @@ def test_fingerprint_is_none_when_pattern_matches_nothing(tmp_path: Path) -> Non
 
 def test_glob_inputs_match_transitively(tmp_path: Path) -> None:
     (tmp_path / "data" / "video-transcripts").mkdir(parents=True)
-    (tmp_path / "data" / "video-transcripts" / "a.txt").write_text("a\n", encoding="utf-8")
+    (tmp_path / "data" / "video-transcripts" / "a.txt").write_text(
+        "a\n", encoding="utf-8"
+    )
     (tmp_path / "code" / "data").mkdir(parents=True)
-    (tmp_path / "code" / "data" / "youtube_channel.json").write_text("{}\n", encoding="utf-8")
+    (tmp_path / "code" / "data" / "youtube_channel.json").write_text(
+        "{}\n", encoding="utf-8"
+    )
 
-    fp1 = input_fingerprint(tmp_path, ("data/video-transcripts/*.txt", "code/data/youtube_*.json"))
-    (tmp_path / "data" / "video-transcripts" / "b.txt").write_text("b\n", encoding="utf-8")
-    fp2 = input_fingerprint(tmp_path, ("data/video-transcripts/*.txt", "code/data/youtube_*.json"))
+    fp1 = input_fingerprint(
+        tmp_path, ("data/video-transcripts/*.txt", "code/data/youtube_*.json")
+    )
+    (tmp_path / "data" / "video-transcripts" / "b.txt").write_text(
+        "b\n", encoding="utf-8"
+    )
+    fp2 = input_fingerprint(
+        tmp_path, ("data/video-transcripts/*.txt", "code/data/youtube_*.json")
+    )
     assert fp1 is not None and fp2 is not None and fp1 != fp2
 
 
@@ -187,7 +207,9 @@ def test_corrupt_state_file_behaves_like_cold_state(tmp_path: Path) -> None:
     calls: list[str] = []
 
     (tmp_path / "reports").mkdir()
-    (tmp_path / REGENERATION_STATE_RELATIVE_PATH).write_text("{broken", encoding="utf-8")
+    (tmp_path / REGENERATION_STATE_RELATIVE_PATH).write_text(
+        "{broken", encoding="utf-8"
+    )
     ran, _skipped = regenerate_all.run_regeneration(
         steps=(step,),
         runner=lambda script, args: calls.append(script),
@@ -247,7 +269,9 @@ def test_excluded_files_do_not_block_the_skip(tmp_path: Path) -> None:
         ("data/*.json",),
         ("data/agent-index.json",),
     )
-    (tmp_path / "data" / "agent-index.json").write_text('{"tail": 1}\n', encoding="utf-8")
+    (tmp_path / "data" / "agent-index.json").write_text(
+        '{"tail": 1}\n', encoding="utf-8"
+    )
     calls: list[str] = []
 
     regenerate_all.run_regeneration(
@@ -259,7 +283,9 @@ def test_excluded_files_do_not_block_the_skip(tmp_path: Path) -> None:
     assert calls == ["fixture.py"]
 
     # Rewriting the excluded control file leaves the fingerprint fresh.
-    (tmp_path / "data" / "agent-index.json").write_text('{"tail": 2}\n', encoding="utf-8")
+    (tmp_path / "data" / "agent-index.json").write_text(
+        '{"tail": 2}\n', encoding="utf-8"
+    )
     ran, skipped = regenerate_all.run_regeneration(
         steps=(step,),
         runner=lambda script, args: calls.append(script),
@@ -328,25 +354,45 @@ def test_report_staging_invalidates_cached_consumer_without_changing_bytes(tmp_p
     selected = []
 
     def render(_script, _args):
-        selected.append(latest_source_report(
-            "snapshot_*.json", report_dir=reports, repo_root=tmp_path,
-        ).name)
+        selected.append(
+            latest_source_report(
+                "snapshot_*.json",
+                report_dir=reports,
+                repo_root=tmp_path,
+            ).name
+        )
 
     assert regenerate_all.run_regeneration(
-        steps=(step,), runner=render, repo_root=tmp_path, emit=lambda _: None,
+        steps=(step,),
+        runner=render,
+        repo_root=tmp_path,
+        emit=lambda _: None,
     ) == (1, 0)
     assert regenerate_all.run_regeneration(
-        steps=(step,), runner=render, repo_root=tmp_path, emit=lambda _: None,
+        steps=(step,),
+        runner=render,
+        repo_root=tmp_path,
+        emit=lambda _: None,
     ) == (0, 1)
     subprocess.run(["git", "add", str(newer)], cwd=tmp_path, check=True)
     assert regenerate_all.run_regeneration(
-        steps=(step,), runner=render, repo_root=tmp_path, emit=lambda _: None,
+        steps=(step,),
+        runner=render,
+        repo_root=tmp_path,
+        emit=lambda _: None,
     ) == (1, 0)
     # Removing an index entry also changes resolution, with both files intact.
-    subprocess.run(["git", "rm", "--cached", str(newer)], cwd=tmp_path, check=True,
-                   capture_output=True)
+    subprocess.run(
+        ["git", "rm", "--cached", str(newer)],
+        cwd=tmp_path,
+        check=True,
+        capture_output=True,
+    )
     assert regenerate_all.run_regeneration(
-        steps=(step,), runner=render, repo_root=tmp_path, emit=lambda _: None,
+        steps=(step,),
+        runner=render,
+        repo_root=tmp_path,
+        emit=lambda _: None,
     ) == (1, 0)
     assert selected == [older.name, newer.name, older.name]
     assert newer.read_text() == "{}\n"
@@ -407,14 +453,24 @@ def test_input_gated_step_with_unchanged_inputs_skips_in_subprocess(
     )
 
     result = subprocess.run(
-        [sys.executable, str(driver)], cwd=tmp_path, capture_output=True, text=True, check=True
+        [sys.executable, str(driver)],
+        cwd=tmp_path,
+        capture_output=True,
+        text=True,
+        check=True,
     )
     assert "RAN=2 SKIPPED=0" in result.stdout
-    state = json.loads((tmp_path / REGENERATION_STATE_RELATIVE_PATH).read_text(encoding="utf-8"))
+    state = json.loads(
+        (tmp_path / REGENERATION_STATE_RELATIVE_PATH).read_text(encoding="utf-8")
+    )
     assert set(state["steps"]) == {"fixture"}
 
     result = subprocess.run(
-        [sys.executable, str(driver)], cwd=tmp_path, capture_output=True, text=True, check=True
+        [sys.executable, str(driver)],
+        cwd=tmp_path,
+        capture_output=True,
+        text=True,
+        check=True,
     )
     assert "RAN=1 SKIPPED=1" in result.stdout
     assert any(line.startswith("skip fixture:") for line in result.stdout.splitlines())

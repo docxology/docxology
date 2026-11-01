@@ -13,7 +13,11 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 # REDIRECT_STUBS is re-exported for gsc_followup_preflight, which reads the
 # stub list and the SEO invariants through this one module.
-from redirect_stubs import REDIRECT_STUBS, collect_redirect_errors  # noqa: E402,F401
+from docxology_tools.redirect_stubs import (  # noqa: E402,F401
+    REDIRECT_STUBS,
+    collect_redirect_errors,
+    declared_stubs,
+)
 from site_nav import canonical_work_key  # noqa: E402
 from citation_metadata import MetadataHead  # noqa: E402
 
@@ -45,14 +49,26 @@ def _read(path: Path) -> str:
     except OSError:
         return path.read_text(encoding="utf-8", errors="replace")
     key = str(path)
-    version = (info.st_dev, info.st_ino, info.st_size, info.st_mtime_ns, info.st_ctime_ns)
+    version = (
+        info.st_dev,
+        info.st_ino,
+        info.st_size,
+        info.st_mtime_ns,
+        info.st_ctime_ns,
+    )
     cached = _TEXT_CACHE.get(key)
     if cached is not None and cached[0] == version:
         _TEXT_CACHE.move_to_end(key)
         return cached[1]
     text = path.read_text(encoding="utf-8", errors="replace")
     after = path.stat()
-    if version != (after.st_dev, after.st_ino, after.st_size, after.st_mtime_ns, after.st_ctime_ns):
+    if version != (
+        after.st_dev,
+        after.st_ino,
+        after.st_size,
+        after.st_mtime_ns,
+        after.st_ctime_ns,
+    ):
         raise OSError(f"page changed while reading: {path}")
     _TEXT_CACHE[key] = (version, text)
     _TEXT_CACHE.move_to_end(key)
@@ -120,9 +136,13 @@ def check_paper_pages(repo_root: Path) -> list[str]:
 
 def check_work_pages(repo_root: Path) -> list[str]:
     errors: list[str] = []
+    redirects = declared_stubs()
     works_dir = repo_root / "works"
     for path in sorted(works_dir.glob("*.html")):
         rel = f"works/{path.name}"
+        if rel in redirects:
+            # Exact redirect content is checked by collect_redirect_errors.
+            continue
         html = _read(path)
         robots = _meta_robots(html)
         if robots != "index, follow":
@@ -138,14 +158,17 @@ def check_work_pages(repo_root: Path) -> list[str]:
     return errors
 
 
-
 def check_work_citations(repo_root: Path) -> list[str]:
     """Bind crawler-visible citation identity and PDF links to public sources.
 
     This checks site integration, not Scholar inclusion. The same-directory
     PDF requirement remains a separately documented hosting constraint.
     """
-    from docxology_tools.citation_metadata import CitationHead, journal_fields, publication_date
+    from docxology_tools.citation_metadata import (
+        CitationHead,
+        journal_fields,
+        publication_date,
+    )
     from docxology_tools.paper_artifacts import PaperResources, source_paths
     from build_work_pages import display_name
 
@@ -163,17 +186,32 @@ def check_work_citations(repo_root: Path) -> list[str]:
         resources = PaperResources.load(repo_root, work.get("docs_path", ""), visible)
         expected = {
             "citation_title": [work["title"]],
-            f'citation_{work.get("contributor_role", "author")}': [display_name(name) for name in work.get("authors") or []],
-            "citation_publication_date": [publication_date(work, resources.metadata or {}).replace("-", "/")],
+            f"citation_{work.get('contributor_role', 'author')}": [
+                display_name(name) for name in work.get("authors") or []
+            ],
+            "citation_publication_date": [
+                publication_date(work, resources.metadata or {}).replace("-", "/")
+            ],
         }
         if work.get("doi"):
             expected["citation_doi"] = [work["doi"]]
         if resources.primary_pdf:
-            expected["citation_pdf_url"] = [resources.absolute_url(resources.primary_pdf)]
-        expected.update({f"citation_{name}": [value] for name, value in journal_fields(work, resources.metadata or {}).items()})
+            expected["citation_pdf_url"] = [
+                resources.absolute_url(resources.primary_pdf)
+            ]
+        expected.update(
+            {
+                f"citation_{name}": [value]
+                for name, value in journal_fields(
+                    work, resources.metadata or {}
+                ).items()
+            }
+        )
         for name in tags.keys() | expected.keys():
             if tags.get(name, []) != expected.get(name, []):
-                errors.append(f"{rel}: {name} differs from authoritative citation metadata")
+                errors.append(
+                    f"{rel}: {name} differs from authoritative citation metadata"
+                )
     return errors
 
 
@@ -187,14 +225,21 @@ def check_sitemap_policy(repo_root: Path) -> list[str]:
     actual = _SITEMAP_LOC.findall(text)
     # Deferred import: breaks the seo_invariants -> orchestrators -> docxology_tools cycle.
     from build_sitemap import sitemap_locs
+
     expected = sitemap_locs()
     if sorted(actual) != sorted(expected):
         missing = sorted(set(expected) - set(actual))
         extra = sorted(set(actual) - set(expected))
         if missing:
-            errors.append(f"sitemap missing policy URLs: {', '.join(missing[:5])}" + (" ..." if len(missing) > 5 else ""))
+            errors.append(
+                f"sitemap missing policy URLs: {', '.join(missing[:5])}"
+                + (" ..." if len(missing) > 5 else "")
+            )
         if extra:
-            errors.append(f"sitemap has non-policy URLs: {', '.join(extra[:5])}" + (" ..." if len(extra) > 5 else ""))
+            errors.append(
+                f"sitemap has non-policy URLs: {', '.join(extra[:5])}"
+                + (" ..." if len(extra) > 5 else "")
+            )
     for loc in actual:
         if "/papers/" in loc:
             errors.append(f"sitemap must not list paper folder: {loc}")
@@ -209,7 +254,9 @@ def check_social_meta(repo_root: Path) -> list[str]:
     """Every indexable page with an og:image must also carry a Twitter Card
     (twitter:card) and og:image:alt, so X/Slack/Discord render rich previews."""
     errors: list[str] = []
-    paths = sorted(repo_root.glob("*.html")) + sorted((repo_root / "works").glob("*.html"))
+    paths = sorted(repo_root.glob("*.html")) + sorted(
+        (repo_root / "works").glob("*.html")
+    )
     for path in paths:
         html = _read(path)
         robots = _meta_robots(html)
@@ -229,9 +276,13 @@ def check_social_meta(repo_root: Path) -> list[str]:
             twitter_title = _name_meta(html, "twitter:title")
             image_alt = _property_meta(html, "og:image:alt")
             if og_title and twitter_title and og_title != twitter_title:
-                errors.append(f"{rel}: twitter:title {twitter_title!r} != og:title {og_title!r}")
+                errors.append(
+                    f"{rel}: twitter:title {twitter_title!r} != og:title {og_title!r}"
+                )
             if og_title and image_alt and og_title != image_alt:
-                errors.append(f"{rel}: og:image:alt {image_alt!r} != og:title {og_title!r}")
+                errors.append(
+                    f"{rel}: og:image:alt {image_alt!r} != og:title {og_title!r}"
+                )
     return errors
 
 
@@ -251,7 +302,9 @@ def check_work_descriptions(repo_root: Path) -> list[str]:
             continue
         rendered = desc  # MetadataHead already decodes HTML entities once.
         if len(rendered) > 160:
-            errors.append(f"works/{path.name}: meta description {len(rendered)} rendered chars (>160)")
+            errors.append(
+                f"works/{path.name}: meta description {len(rendered)} rendered chars (>160)"
+            )
     return errors
 
 
@@ -295,6 +348,7 @@ def check_canonical_integrity(repo_root: Path) -> list[str]:
     pages: list[Path] = []
     # Deferred import: breaks the seo_invariants -> orchestrators -> docxology_tools cycle.
     from deploy_seo_security import EXCLUDED_HTML_PATH_PARTS
+
     for path in sorted(repo_root.rglob("*.html")):
         if EXCLUDED_HTML_PATH_PARTS.intersection(path.parts):
             continue
@@ -312,7 +366,9 @@ def check_canonical_integrity(repo_root: Path) -> list[str]:
         if parsed.netloc and parsed.netloc != "danielarifriedman.com":
             continue
         page_rel = urllib.parse.unquote(
-            urllib.parse.urlsplit(f"https://danielarifriedman.com/{path.relative_to(repo_root)}").path
+            urllib.parse.urlsplit(
+                f"https://danielarifriedman.com/{path.relative_to(repo_root)}"
+            ).path
         ).lstrip("/")
         canonical_target = urllib.parse.unquote(parsed.path).lstrip("/")
         canonical_by_rel[page_rel] = canonical_target
@@ -328,7 +384,9 @@ def check_canonical_integrity(repo_root: Path) -> list[str]:
         rel_self = str(path.relative_to(repo_root))
         for href in href_re.findall(html_text):
             link = href.strip()
-            if link.startswith(("#", "http://", "https://", "mailto:", "tel:", "javascript:", "data:")):
+            if link.startswith(
+                ("#", "http://", "https://", "mailto:", "tel:", "javascript:", "data:")
+            ):
                 if link.startswith("https://danielarifriedman.com/"):
                     link = link.removeprefix("https://danielarifriedman.com/")
                 else:
@@ -344,7 +402,9 @@ def check_canonical_integrity(repo_root: Path) -> list[str]:
             if link.startswith("/"):
                 rel_target = link.lstrip("/")
             else:
-                rel_target = _repo_relative_target(str(path.parent), link, resolved_root)
+                rel_target = _repo_relative_target(
+                    str(path.parent), link, resolved_root
+                )
                 if rel_target is None:
                     continue
             if canonical_points_elsewhere(rel_target):
@@ -360,6 +420,7 @@ def check_public_html_security(repo_root: Path) -> list[str]:
     errors: list[str] = []
     # Deferred import: breaks the seo_invariants -> orchestrators -> docxology_tools cycle.
     from deploy_seo_security import EXCLUDED_HTML_PATH_PARTS
+
     for path in sorted(repo_root.rglob("*.html")):
         # The writer and the invariant checker must agree on what is public
         # HTML. In particular, a local browser/PDF optional dependency must
@@ -379,7 +440,9 @@ def check_public_html_security(repo_root: Path) -> list[str]:
         if 'http-equiv="Content-Security-Policy"' not in text:
             errors.append(f"{rel}: missing CSP meta policy")
         else:
-            match = re.search(r'http-equiv="Content-Security-Policy"\s+content="([^"]+)"', text, re.I)
+            match = re.search(
+                r'http-equiv="Content-Security-Policy"\s+content="([^"]+)"', text, re.I
+            )
             policy = match.group(1) if match else ""
             if "frame-src https://www.youtube-nocookie.com" not in policy:
                 errors.append(f"{rel}: CSP missing YouTube frame-src allowlist")
@@ -387,7 +450,9 @@ def check_public_html_security(repo_root: Path) -> list[str]:
                 errors.append(f"{rel}: CSP retains removed runtime font provider")
         if 'name="referrer"' not in text:
             errors.append(f"{rel}: missing referrer policy")
-        if re.search(r'<script\s+type=["\']application/ld\+json["\'][^>]*\ssrc=', text, re.I):
+        if re.search(
+            r'<script\s+type=["\']application/ld\+json["\'][^>]*\ssrc=', text, re.I
+        ):
             errors.append(f"{rel}: JSON-LD must be inline, not external script src")
         for iframe in re.findall(r"<iframe\b[^>]*>", text, re.I):
             src = re.search(r'\bsrc="([^"]+)"', iframe, re.I)
@@ -418,9 +483,15 @@ def check_head_canonicals(repo_root: Path) -> list[str]:
         except ValueError:
             errors.append(f"{rel}: invalid canonical URL")
             continue
-        if (url.scheme != "https" or url.netloc != "danielarifriedman.com"
-                or url.query or url.fragment):
-            errors.append(f"{rel}: canonical must use the apex HTTPS origin without query or fragment")
+        if (
+            url.scheme != "https"
+            or url.netloc != "danielarifriedman.com"
+            or url.query
+            or url.fragment
+        ):
+            errors.append(
+                f"{rel}: canonical must use the apex HTTPS origin without query or fragment"
+            )
         if len(head.names.get("robots", [])) > 1:
             errors.append(f"{rel}: duplicate head robots directives")
     return errors
