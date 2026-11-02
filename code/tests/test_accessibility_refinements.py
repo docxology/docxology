@@ -334,6 +334,82 @@ def test_video_no_javascript_keeps_static_index(accessibility_server, browser_pa
 
 
 @pytest.mark.parametrize("width", [320, 412, 1280])
+@pytest.mark.parametrize("scheme", ["dark", "light"])
+def test_blake_pathway_tables_reflow_without_clipping(
+    accessibility_server, browser_page, width, scheme
+):
+    page = browser_page
+    page.set_viewport_size({"width": width, "height": 900})
+    page.emulate_media(color_scheme=scheme, reduced_motion="reduce")
+    page.goto(f"{accessibility_server}/blake-pathway.html", wait_until="load")
+    tables = page.locator(".pathway-table")
+    assert tables.count() == 2
+    headers = page.locator(".pathway-table th")
+    assert headers.count() == 7
+    assert all(header.is_visible() for header in headers.all())
+    assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth")
+    regions = page.locator(".pathway-table-wrap")
+    assert regions.count() == 2
+    for region, table in zip(regions.all(), tables.all(), strict=True):
+        assert region.get_attribute("role") == "region"
+        assert region.get_attribute("aria-label")
+        assert region.get_attribute("tabindex") == "0"
+        bounds = region.bounding_box()
+        assert bounds and bounds["x"] >= 0 and bounds["x"] + bounds["width"] <= width
+        overflowing = region.evaluate(
+            "element => element.scrollWidth > element.clientWidth"
+        )
+        if width in (320, 412):
+            assert overflowing
+        if overflowing:
+            region.focus()
+            page.keyboard.press("ArrowRight")
+            page.wait_for_function(
+                "element => element.scrollLeft > 0", arg=region.element_handle()
+            )
+            region.evaluate("element => element.scrollLeft = element.scrollWidth")
+            last_column = table.locator("thead th").last.bounding_box()
+            assert last_column and last_column["x"] >= bounds["x"]
+            assert (
+                last_column["x"] + last_column["width"]
+                <= bounds["x"] + bounds["width"] + 1
+            )
+            region.evaluate("element => element.scrollLeft = 0")
+    doi_links = page.locator(
+        '.pathway-table a[href^="https://doi.org/"], '
+        '.pathway-table a[href^="https://zenodo.org/records/"]'
+    )
+    assert doi_links.count() > 0
+    assert all(
+        link.evaluate("element => element.getClientRects().length === 1")
+        for link in doi_links.all()
+    )
+    header_contrasts = headers.evaluate_all("""nodes => {
+        const rgba = value => value.match(/[\\d.]+/g).map(Number);
+        const blend = (foreground, background) => {
+            const alpha = foreground[3] ?? 1;
+            return foreground.slice(0, 3).map((value, index) =>
+                value * alpha + background[index] * (1 - alpha));
+        };
+        const background = element => element
+            ? blend(rgba(getComputedStyle(element).backgroundColor), background(element.parentElement))
+            : [255, 255, 255];
+        const luminance = rgb => rgb.map(value => {
+            const channel = value / 255;
+            return channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4;
+        }).reduce((sum, value, index) => sum + value * [0.2126, 0.7152, 0.0722][index], 0);
+        return nodes.map(element => {
+            const back = background(element);
+            const foreground = blend(rgba(getComputedStyle(element).color), back);
+            const [low, high] = [luminance(foreground), luminance(back)].sort((a, b) => a - b);
+            return (high + 0.05) / (low + 0.05);
+        });
+    }""")
+    assert all(contrast >= 4.5 for contrast in header_contrasts), header_contrasts
+    assert not relevant_axe_violations(page, accessibility_server)
+
+
+@pytest.mark.parametrize("width", [320, 412, 1280])
 def test_404_footer_targets_are_large_enough(accessibility_server, browser_page, width):
     page = browser_page
     page.set_viewport_size({"width": width, "height": 900})

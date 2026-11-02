@@ -272,8 +272,8 @@ def render_html(payload: dict) -> str:
         core_rows.append(
             "<tr>"
             f'<td><a href="{_esc(row["work_url"])}">{_esc(row["title"])}</a></td>'
-            f'<td><a href="{_esc(row["citation_url"])}">{_esc(row["citation_doi"])}</a></td>'
-            f'<td><a href="{_esc(row["record_url"])}">{_esc(row["version_doi"])}</a></td>'
+            f'<td><a class="pathway-doi" href="{_esc(row["citation_url"])}">{_esc(row["citation_doi"])}</a></td>'
+            f'<td><a class="pathway-doi" href="{_esc(row["record_url"])}">{_esc(row["version_doi"])}</a></td>'
             f"<td>{_esc(row['version'] or 'unspecified')}</td>"
             "</tr>"
         )
@@ -334,11 +334,17 @@ def render_html(payload: dict) -> str:
     <meta name="twitter:image:alt" content="William Blake Publication Pathway — Daniel Ari Friedman">
     <link rel="stylesheet" href="style.css?v=site-20261002b">
     <style>
-        .pathway-table{{width:100%;border-collapse:collapse;font-size:.86rem}}
+        .pathway-table-wrap{{max-width:100%;overflow-x:auto}}
+        .pathway-table-wrap:focus-visible{{outline:2px solid var(--red-bright);outline-offset:2px}}
+        .pathway-table{{width:100%;min-width:44rem;border-collapse:collapse;font-size:.86rem}}
         .pathway-table caption{{caption-side:top;text-align:left;font-weight:600;padding:.4rem 0}}
         .pathway-table th,.pathway-table td{{border:1px solid var(--border);padding:.5rem;text-align:left;vertical-align:top}}
-        .pathway-table th{{background:var(--bg-card)}}
+        .pathway-table th{{background:var(--bg-card);color:var(--text-primary);white-space:normal;overflow-wrap:anywhere}}
         .pathway-table td{{overflow-wrap:anywhere}}
+        .pathway-table td:last-child{{white-space:nowrap}}
+        .pathway-doi{{white-space:nowrap}}
+        .main code{{overflow-wrap:anywhere}}
+        .build-stamp a{{display:inline-flex;align-items:center;min-height:24px}}
     </style>
 {_head_extra(payload)}</head>
 <body>
@@ -364,21 +370,26 @@ def render_html(payload: dict) -> str:
             <p>This pathway references the existing bibliography identities. Citation DOIs identify the curated work; version DOIs and Zenodo record links identify a particular deposited artifact. A concept DOI may resolve to a newer version. An absent version label means the API did not supply one; consult the record page.</p>
             <p>The current scan covers <strong>{counts["catalog_works"]} catalog works</strong> and <strong>{counts["scanned_full_texts"]} local full texts</strong>: <strong>{counts["title_matches"]} Blake-titled works</strong>, <strong>{counts["additional_text_matches"]} additional William Blake text matches</strong>, and <strong>{counts["needs_review"]} unclassified matches</strong>. These are indexing counts, not counts of papers read.</p>
             <h2>Core treatments</h2>
+            <p>On narrow screens, scroll within each table to read every column. Keyboard users can focus a table and use the arrow keys.</p>
+            <div class="pathway-table-wrap" role="region" aria-label="Core treatments table" tabindex="0">
             <table class="pathway-table">
                 <thead><tr><th>Work</th><th>Curated citation DOI</th><th>Version DOI / primary source</th><th>API version</th></tr></thead>
                 <tbody>
 {chr(10).join(core_rows)}
                 </tbody>
             </table>
+            </div>
             <p>Core-subject classification also covers works whose subtitle or content explicitly develops Blake, even when the short catalog title omits his name.</p>
             <h2>Related and peripheral passages</h2>
             <p>The relation describes the located passage, including short quotations, references to another work, and program or catalog mentions. It does not classify the whole paper as Blake scholarship.</p>
+            <div class="pathway-table-wrap" role="region" aria-label="Related passages table" tabindex="0">
             <table class="pathway-table">
                 <thead><tr><th>Work</th><th>Passage relation</th><th>Text evidence</th></tr></thead>
                 <tbody>
 {chr(10).join(related_rows)}
                 </tbody>
             </table>
+            </div>
             <p>The pathway classifies <strong>{counts["core_subjects"]} core treatments</strong> and <strong>{payload["count"] - counts["core_subjects"]} related or peripheral works</strong>. Core classification and title matching are separate fields in the JSON.</p>
             <h2>Deposited versions and printed DOI discrepancies</h2>
             <p>Printed cover or slide identifiers are preserved in the extraction. They can differ from registry version metadata and must not silently replace it.</p>

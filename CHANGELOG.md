@@ -19,6 +19,10 @@
 - Made the focused sitemap and public-source review test modules initialize
   the canonical package before importing their orchestrators, so they also
   collect independently of suite order.
+- Made Blake tables keyboard-scrollable on narrow screens with unbroken DOI
+  links, corrected light-theme header contrast, wrapped the rebuild command,
+  and enlarged the build-link tap target. Added real browser checks for both
+  themes at 320 px, 412 px, and desktop widths, including every column's reachability.
 
 ## 2026-10-31 — Public-source refresh, publication intake, and styled Blake pathway
 

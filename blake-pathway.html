@@ -36,11 +36,17 @@
     <meta name="twitter:image:alt" content="William Blake Publication Pathway — Daniel Ari Friedman">
     <link rel="stylesheet" href="style.css?v=site-20261002b">
     <style>
-        .pathway-table{width:100%;border-collapse:collapse;font-size:.86rem}
+        .pathway-table-wrap{max-width:100%;overflow-x:auto}
+        .pathway-table-wrap:focus-visible{outline:2px solid var(--red-bright);outline-offset:2px}
+        .pathway-table{width:100%;min-width:44rem;border-collapse:collapse;font-size:.86rem}
         .pathway-table caption{caption-side:top;text-align:left;font-weight:600;padding:.4rem 0}
         .pathway-table th,.pathway-table td{border:1px solid var(--border);padding:.5rem;text-align:left;vertical-align:top}
-        .pathway-table th{background:var(--bg-card)}
+        .pathway-table th{background:var(--bg-card);color:var(--text-primary);white-space:normal;overflow-wrap:anywhere}
         .pathway-table td{overflow-wrap:anywhere}
+        .pathway-table td:last-child{white-space:nowrap}
+        .pathway-doi{white-space:nowrap}
+        .main code{overflow-wrap:anywhere}
+        .build-stamp a{display:inline-flex;align-items:center;min-height:24px}
     </style>
     <style>.breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}</style>
     <script type="application/ld+json">
@@ -103,23 +109,27 @@
             <p>This pathway references the existing bibliography identities. Citation DOIs identify the curated work; version DOIs and Zenodo record links identify a particular deposited artifact. A concept DOI may resolve to a newer version. An absent version label means the API did not supply one; consult the record page.</p>
             <p>The current scan covers <strong>228 catalog works</strong> and <strong>205 local full texts</strong>: <strong>8 Blake-titled works</strong>, <strong>13 additional William Blake text matches</strong>, and <strong>0 unclassified matches</strong>. These are indexing counts, not counts of papers read.</p>
             <h2>Core treatments</h2>
+            <p>On narrow screens, scroll within each table to read every column. Keyboard users can focus a table and use the arrow keys.</p>
+            <div class="pathway-table-wrap" role="region" aria-label="Core treatments table" tabindex="0">
             <table class="pathway-table">
                 <thead><tr><th>Work</th><th>Curated citation DOI</th><th>Version DOI / primary source</th><th>API version</th></tr></thead>
                 <tbody>
-<tr><td><a href="/works/Friedman2023WilliamBlakeBuckminsterFuller065.html">William Blake &amp; Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity)</a></td><td><a href="https://doi.org/10.5281/zenodo.7514367">10.5281/zenodo.7514367</a></td><td><a href="https://zenodo.org/records/7519132">10.5281/zenodo.7519132</a></td><td>2</td></tr>
-<tr><td><a href="/works/Friedman2024MathArtStream8William038.html">MathArt Stream #8 ~ William Blake and Active Inference</a></td><td><a href="https://doi.org/10.5281/zenodo.13711301">10.5281/zenodo.13711301</a></td><td><a href="https://zenodo.org/records/13711302">10.5281/zenodo.13711302</a></td><td>unspecified</td></tr>
-<tr><td><a href="/works/Friedman2026BeforePragmatismHadName003.html">Before Pragmatism Had a Name: Blake&#x27;s &quot;America A Prophecy&quot; Anticipates American Anticipatory Epistemology</a></td><td><a href="https://doi.org/10.5281/zenodo.18807970">10.5281/zenodo.18807970</a></td><td><a href="https://zenodo.org/records/18984939">10.5281/zenodo.18984939</a></td><td>unspecified</td></tr>
-<tr><td><a href="/works/Friedman2026FourfoldVisionWilliamBlake196.html">Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing</a></td><td><a href="https://doi.org/10.5281/zenodo.21388456">10.5281/zenodo.21388456</a></td><td><a href="https://zenodo.org/records/21388457">10.5281/zenodo.21388457</a></td><td>0.3.0</td></tr>
-<tr><td><a href="/works/Friedman2026MappingWilliamBlakeS179.html">Mapping William Blake&#x27;s Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls</a></td><td><a href="https://doi.org/10.5281/zenodo.21047573">10.5281/zenodo.21047573</a></td><td><a href="https://zenodo.org/records/21047574">10.5281/zenodo.21047574</a></td><td>unspecified</td></tr>
-<tr><td><a href="/works/Friedman2026ArchitectureFalseGodsWilliam115.html">The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision</a></td><td><a href="https://doi.org/10.5281/zenodo.20144983">10.5281/zenodo.20144983</a></td><td><a href="https://zenodo.org/records/20144984">10.5281/zenodo.20144984</a></td><td>v1</td></tr>
-<tr><td><a href="/works/Friedman2026DoorsPerceptionAreThreshold007.html">The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake&#x27;s Theory of Seeing</a></td><td><a href="https://doi.org/10.5281/zenodo.18600040">10.5281/zenodo.18600040</a></td><td><a href="https://zenodo.org/records/18600041">10.5281/zenodo.18600041</a></td><td>v1</td></tr>
-<tr><td><a href="/works/Friedman2026GoldenCompassLunarFlux004.html">The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value</a></td><td><a href="https://doi.org/10.5281/zenodo.19335195">10.5281/zenodo.19335195</a></td><td><a href="https://zenodo.org/records/19335196">10.5281/zenodo.19335196</a></td><td>v1</td></tr>
-<tr><td><a href="/works/Friedman2025SynthesisAgentNiche021.html">Synthesis of Agent and Niche</a></td><td><a href="https://doi.org/10.5281/zenodo.17235137">10.5281/zenodo.17235137</a></td><td><a href="https://zenodo.org/records/17243488">10.5281/zenodo.17243488</a></td><td>v2</td></tr>
+<tr><td><a href="/works/Friedman2023WilliamBlakeBuckminsterFuller065.html">William Blake &amp; Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity)</a></td><td><a class="pathway-doi" href="https://doi.org/10.5281/zenodo.7514367">10.5281/zenodo.7514367</a></td><td><a class="pathway-doi" href="https://zenodo.org/records/7519132">10.5281/zenodo.7519132</a></td><td>2</td></tr>
+<tr><td><a href="/works/Friedman2024MathArtStream8William038.html">MathArt Stream #8 ~ William Blake and Active Inference</a></td><td><a class="pathway-doi" href="https://doi.org/10.5281/zenodo.13711301">10.5281/zenodo.13711301</a></td><td><a class="pathway-doi" href="https://zenodo.org/records/13711302">10.5281/zenodo.13711302</a></td><td>unspecified</td></tr>
+<tr><td><a href="/works/Friedman2026BeforePragmatismHadName003.html">Before Pragmatism Had a Name: Blake&#x27;s &quot;America A Prophecy&quot; Anticipates American Anticipatory Epistemology</a></td><td><a class="pathway-doi" href="https://doi.org/10.5281/zenodo.18807970">10.5281/zenodo.18807970</a></td><td><a class="pathway-doi" href="https://zenodo.org/records/18984939">10.5281/zenodo.18984939</a></td><td>unspecified</td></tr>
+<tr><td><a href="/works/Friedman2026FourfoldVisionWilliamBlake196.html">Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing</a></td><td><a class="pathway-doi" href="https://doi.org/10.5281/zenodo.21388456">10.5281/zenodo.21388456</a></td><td><a class="pathway-doi" href="https://zenodo.org/records/21388457">10.5281/zenodo.21388457</a></td><td>0.3.0</td></tr>
+<tr><td><a href="/works/Friedman2026MappingWilliamBlakeS179.html">Mapping William Blake&#x27;s Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls</a></td><td><a class="pathway-doi" href="https://doi.org/10.5281/zenodo.21047573">10.5281/zenodo.21047573</a></td><td><a class="pathway-doi" href="https://zenodo.org/records/21047574">10.5281/zenodo.21047574</a></td><td>unspecified</td></tr>
+<tr><td><a href="/works/Friedman2026ArchitectureFalseGodsWilliam115.html">The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision</a></td><td><a class="pathway-doi" href="https://doi.org/10.5281/zenodo.20144983">10.5281/zenodo.20144983</a></td><td><a class="pathway-doi" href="https://zenodo.org/records/20144984">10.5281/zenodo.20144984</a></td><td>v1</td></tr>
+<tr><td><a href="/works/Friedman2026DoorsPerceptionAreThreshold007.html">The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake&#x27;s Theory of Seeing</a></td><td><a class="pathway-doi" href="https://doi.org/10.5281/zenodo.18600040">10.5281/zenodo.18600040</a></td><td><a class="pathway-doi" href="https://zenodo.org/records/18600041">10.5281/zenodo.18600041</a></td><td>v1</td></tr>
+<tr><td><a href="/works/Friedman2026GoldenCompassLunarFlux004.html">The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value</a></td><td><a class="pathway-doi" href="https://doi.org/10.5281/zenodo.19335195">10.5281/zenodo.19335195</a></td><td><a class="pathway-doi" href="https://zenodo.org/records/19335196">10.5281/zenodo.19335196</a></td><td>v1</td></tr>
+<tr><td><a href="/works/Friedman2025SynthesisAgentNiche021.html">Synthesis of Agent and Niche</a></td><td><a class="pathway-doi" href="https://doi.org/10.5281/zenodo.17235137">10.5281/zenodo.17235137</a></td><td><a class="pathway-doi" href="https://zenodo.org/records/17243488">10.5281/zenodo.17243488</a></td><td>v2</td></tr>
                 </tbody>
             </table>
+            </div>
             <p>Core-subject classification also covers works whose subtitle or content explicitly develops Blake, even when the short catalog title omits his name.</p>
             <h2>Related and peripheral passages</h2>
             <p>The relation describes the located passage, including short quotations, references to another work, and program or catalog mentions. It does not classify the whole paper as Blake scholarship.</p>
+            <div class="pathway-table-wrap" role="region" aria-label="Related passages table" tabindex="0">
             <table class="pathway-table">
                 <thead><tr><th>Work</th><th>Passage relation</th><th>Text evidence</th></tr></thead>
                 <tbody>
@@ -137,6 +147,7 @@
 <tr><td><a href="/works/Friedman2026IntroductionBiologyGenerativeApproach117.html">Introduction to Biology: A Generative Approach</a></td><td>Opening epigraph attributes a quotation about nature and imagination to William Blake.</td><td><a href="https://github.com/docxology/docxology/blob/main/papers/2026_BiologyTextbook/full_text.md?plain=1#L37">text, line 37</a></td></tr>
                 </tbody>
             </table>
+            </div>
             <p>The pathway classifies <strong>9 core treatments</strong> and <strong>12 related or peripheral works</strong>. Core classification and title matching are separate fields in the JSON.</p>
             <h2>Deposited versions and printed DOI discrepancies</h2>
             <p>Printed cover or slide identifiers are preserved in the extraction. They can differ from registry version metadata and must not silently replace it.</p>
@@ -167,7 +178,7 @@
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="https://danielarifriedman.com/">danielarifriedman.com</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/051d080f4">build 051d080f4 2026-10-25</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/2ab9223e5">build 2ab9223e5 2026-11-01</a></p>
     </footer>
 <script src="/js/search-utils.js?v=site-20261002b"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
