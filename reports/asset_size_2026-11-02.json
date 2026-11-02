@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T00:35:19Z",
+  "generated_at": "2026-11-02T01:43:21Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 130,
   "budget_exceptions": {
@@ -10,7 +10,7 @@
     }
   },
   "warnings": 0,
-  "total_bytes": 19026981,
+  "total_bytes": 19030092,
   "largest": [
     {
       "path": "data/videos.json",
@@ -87,7 +87,7 @@
     {
       "path": "resume/resume.pdf",
       "kind": "resume-export",
-      "bytes": 388121,
+      "bytes": 388168,
       "baseline_budget_bytes": 5000000,
       "budget_bytes": 5000000,
       "budget_exception": null,
@@ -118,7 +118,7 @@
     {
       "path": "data/github-repositories.json",
       "kind": "json-data",
-      "bytes": 337381,
+      "bytes": 337377,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -163,7 +163,7 @@
     {
       "path": "repositories.html",
       "kind": "html",
-      "bytes": 240023,
+      "bytes": 240091,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,
@@ -172,7 +172,7 @@
     {
       "path": "updates.html",
       "kind": "html",
-      "bytes": 227378,
+      "bytes": 228722,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,

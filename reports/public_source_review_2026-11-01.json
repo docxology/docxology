@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-11-01T21:46:47Z",
+      "generated_at": "2026-11-02T01:42:40Z",
       "path": "data/claims.json",
-      "sha256": "a38b31e75b4952f2dfe62aa3df7686421afb9c0b4a09be1abb11b49f21b1a30c",
+      "sha256": "1c52873b989d8405be0d4fcc6b071256d0a05bb02c952dda38ef9b7eda05253c",
       "source_commit": null
     },
     "doi_role_review": {
@@ -29,7 +29,7 @@
     "paired_publications": {
       "generated_at": "2026-11-01T01:04:10Z",
       "path": "reports/paired_publications_2026-11-01.json",
-      "sha256": "efa1fd97c4c5467a01fd30a0c92288f46f2b69c244f6457faee86569cade6f6c",
+      "sha256": "fb785fa4ad297dc2197aabb0201478351d4b2d57b77fbab5b9cf4271f70262ae",
       "source_commit": null
     },
     "previous_public_source_snapshot": {
@@ -18435,8 +18435,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "2444dac30adbf0c40265cdc368ffe5caf69ac78e",
-  "source_tree_sha": "8fc5d7816d95d95d93ac48ac168df0d62709c40a",
+  "source_commit": "3d9dd5e182613340db7ee1c3d18cd5fc3a7f35e6",
+  "source_tree_sha": "b931e383e99e6342ab8f4289e0bba160cda3d6f3",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {

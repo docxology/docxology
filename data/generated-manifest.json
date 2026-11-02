@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T00:48:38Z",
+  "generated_at": "2026-11-02T02:05:23Z",
   "artifacts": [
     {
       "name": "Research exploration tools",
@@ -194,8 +194,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-11-01.json",
-        "reports/source_coverage_2026-11-01.md"
+        "reports/source_coverage_2026-11-02.json",
+        "reports/source_coverage_2026-11-02.md"
       ],
       "sources": [
         "data/works.json",
@@ -422,8 +422,10 @@
       ],
       "sources": [
         "GitHub REST API",
-        "data/software.json",
-        "code/orchestrators/build_github_inventory.py"
+        "pages/SOFTWARE.md",
+        "code/src/software_table.py",
+        "code/orchestrators/build_github_inventory.py",
+        "code/orchestrators/render_github_inventory.py (local catalog flags and counts only)"
       ],
       "command": "python3 code/orchestrators/build_github_inventory.py"
     },
@@ -435,6 +437,8 @@
       ],
       "sources": [
         "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "code/src/software_table.py",
         "code/orchestrators/build_github_inventory.py",
         "code/orchestrators/render_github_inventory.py",
         "code/src/site_nav.py",
@@ -452,6 +456,7 @@
         "Zenodo Records API",
         "docs/operations/publication-sync.md",
         "code/src/publication_pairing.py",
+        "code/src/public_integrity.py",
         "code/orchestrators/sync_paired_publications.py"
       ],
       "command": "python3 code/orchestrators/sync_paired_publications.py"
