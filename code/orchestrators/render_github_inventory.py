@@ -2,7 +2,9 @@
 """Render cached GitHub inventory pages without a network request.
 
 ``build_github_inventory.py`` is the explicit GitHub API refresh operation.
-This companion is the deterministic derivative step: it renders
+This companion is the deterministic derivative step: it refreshes local
+``curated`` flags and counts from ``pages/SOFTWARE.md``, preserving retained
+GitHub observations and their timestamp, then renders
 ``repositories.html`` and ``repositories-forks.html`` from the already
 reviewed ``data/github-repositories.json`` cache and validates byte-for-byte
 drift in ``--check`` mode.

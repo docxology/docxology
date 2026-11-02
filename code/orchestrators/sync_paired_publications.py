@@ -24,6 +24,7 @@ import re
 import sys
 import urllib.parse
 import urllib.request
+from copy import deepcopy
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -59,6 +60,7 @@ from docxology_tools.publication_pairing import is_software_record  # noqa: E402
 from docxology_tools.software_table import software_catalog_dois  # noqa: E402
 from docxology_tools.biblio_table import bibliography_rows_from_lines  # noqa: E402
 from docxology_tools.generated_outputs import read_generated_output_text  # noqa: E402
+from docxology_tools.public_integrity import LOCAL_PATH_RE, redact_local_paths  # noqa: E402
 from docxology_tools.work_identifiers import (  # noqa: E402
     next_catalog_num,
     write_catalog_with_identifiers,
@@ -236,6 +238,14 @@ def fetch_zenodo_records() -> tuple[list[ZenodoRecord], list[str]]:
 
 def github_release_from_payload(payload: dict[str, Any]) -> GitHubRelease:
     """Rebuild a GitHubRelease from a report payload's serialized release."""
+    redaction = payload.get("body_redaction")
+    if redaction is not None and (
+        not isinstance(redaction, dict)
+        or redaction.get("policy") != "local-filesystem-paths-v1"
+        or not re.fullmatch(r"[0-9a-f]{64}", str(redaction.get("source_sha256", "")))
+        or set(redaction) != {"policy", "source_sha256"}
+    ):
+        raise ValueError("Invalid cached release body redaction provenance")
     try:
         return GitHubRelease(
             owner=str(payload["owner"]),
@@ -245,6 +255,7 @@ def github_release_from_payload(payload: dict[str, Any]) -> GitHubRelease:
             body=str(payload["body"]),
             html_url=str(payload["html_url"]),
             published_at=str(payload["published_at"]),
+            body_redaction=deepcopy(redaction),
             assets=[
                 GitHubAsset.from_api(item)
                 for item in payload.get("assets", [])
@@ -1246,6 +1257,53 @@ def apply_publication_pair(
     )
 
 
+def _report_release_objects(
+    payload: dict[str, Any],
+) -> list[tuple[str, dict[str, Any]]]:
+    releases = [
+        (f"/github_releases/{i}/body", release)
+        for i, release in enumerate(payload.get("github_releases", []))
+    ]
+    releases.extend(
+        (f"/pairs/{i}/release/body", pair["release"])
+        for i, pair in enumerate(payload.get("pairs", []))
+        if isinstance(pair, dict) and isinstance(pair.get("release"), dict)
+    )
+    return releases
+
+
+def redact_report_release_bodies(payload: dict[str, Any]) -> dict[str, Any]:
+    """Project upstream prose safely without changing observation/apply receipts."""
+    projected = deepcopy(payload)
+    for _, release in _report_release_objects(projected):
+        body = release.get("body", "")
+        redacted = redact_local_paths(body)
+        if body != redacted:
+            release["body"] = redacted
+            release["body_redaction"] = {
+                "policy": "local-filesystem-paths-v1",
+                "source_sha256": hashlib.sha256(body.encode("utf-8")).hexdigest(),
+            }
+    return projected
+
+
+def redact_report_local_paths(path: Path) -> bool:
+    """Redact an existing report without fetching, reclassifying, or re-attesting."""
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if (
+        not isinstance(payload, dict)
+        or payload.get("source") != "GitHub Releases API + Zenodo Records API"
+    ):
+        raise ValueError("Unexpected paired publication report source")
+    projected = redact_report_release_bodies(payload)
+    if projected == payload:
+        return False
+    path.write_text(
+        json.dumps(projected, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+    return True
+
+
 def write_report(
     path: Path,
     *,
@@ -1342,6 +1400,7 @@ def write_report(
     }
     if classification_cache is not None:
         payload["classification_cache"] = classification_cache
+    payload = redact_report_release_bodies(payload)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
         json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
@@ -1370,6 +1429,11 @@ def check_report(repo_root: Path = REPO_ROOT) -> None:
         raise SystemExit("Paired publication report has unexpected source")
     if "actions" not in payload or "pairs" not in payload or "counts" not in payload:
         raise SystemExit("Paired publication report missing required keys")
+    for pointer, release in _report_release_objects(payload):
+        if LOCAL_PATH_RE.search(release.get("body", "")):
+            raise SystemExit(
+                f"Paired publication report local filesystem path at {pointer}"
+            )
     warnings = payload.get("warnings")
     if warnings:
         raise SystemExit(f"Paired publication report has API warnings: {len(warnings)}")
@@ -1572,6 +1636,11 @@ def build_parser() -> argparse.ArgumentParser:
         "--check", action="store_true", help="Validate the latest cached report"
     )
     parser.add_argument(
+        "--redact-local-paths",
+        action="store_true",
+        help="Redact captured release-body paths in --report without fetching or changing observation/apply receipts",
+    )
+    parser.add_argument(
         "--cache-reports",
         action="store_true",
         help="Reuse the latest same-day report's GitHub releases and Zenodo records instead of re-fetching",
@@ -1587,6 +1656,19 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
+    if args.redact_local_paths:
+        if not args.report or args.apply or args.check or args.cache_reports:
+            parser.error(
+                "--redact-local-paths requires --report and cannot combine with --apply, --check, or --cache-reports"
+            )
+        path = Path(args.report)
+        if not path.is_absolute():
+            path = REPO_ROOT / path
+        changed = redact_report_local_paths(path)
+        print(
+            f"{'redacted' if changed else 'already safe'} {display_report_path(path)}"
+        )
+        return 0
     if args.check:
         check_report()
         return 0

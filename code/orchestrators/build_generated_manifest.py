@@ -453,8 +453,10 @@ ARTIFACTS = [
         "outputs": ["data/github-repositories.json"],
         "sources": [
             "GitHub REST API",
-            "data/software.json",
+            "pages/SOFTWARE.md",
+            "code/src/software_table.py",
             "code/orchestrators/build_github_inventory.py",
+            "code/orchestrators/render_github_inventory.py (local catalog flags and counts only)",
         ],
         "command": "python3 code/orchestrators/build_github_inventory.py",
     },
@@ -463,6 +465,8 @@ ARTIFACTS = [
         "outputs": ["repositories.html", "repositories-forks.html"],
         "sources": [
             "data/github-repositories.json",
+            "pages/SOFTWARE.md",
+            "code/src/software_table.py",
             "code/orchestrators/build_github_inventory.py",
             "code/orchestrators/render_github_inventory.py",
             "code/src/site_nav.py",
@@ -483,6 +487,7 @@ ARTIFACTS = [
             "Zenodo Records API",
             "docs/operations/publication-sync.md",
             "code/src/publication_pairing.py",
+            "code/src/public_integrity.py",
             "code/orchestrators/sync_paired_publications.py",
         ],
         "command": "python3 code/orchestrators/sync_paired_publications.py",

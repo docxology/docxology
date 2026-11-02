@@ -6,7 +6,7 @@ import re
 from pathlib import Path
 
 LOCAL_PATH_RE = re.compile(
-    r"(?:/Users/[A-Za-z0-9._-]+/|/home/[A-Za-z0-9._-]+/|[A-Za-z]:\\\\Users\\\\[A-Za-z0-9._-]+\\\\)"
+    r"""(?<![\w:/])(?:/(?:Users|home|Volumes)/|[A-Za-z]:[\\/]+Users[\\/]+|~/)[^\s`"'<>()[\]{}]+"""
 )
 SECRET_PATTERNS = (
     re.compile(r"-----BEGIN (?:RSA |OPENSSH |EC |DSA )?PRIVATE KEY-----"),
@@ -35,6 +35,11 @@ CV_PUBLIC_FILES = (
     "resume/resume.html",
     "resume/verify.html",
 )
+
+
+def redact_local_paths(text: str) -> str:
+    """Remove local filesystem paths from public prose while preserving URLs."""
+    return LOCAL_PATH_RE.sub("[local path redacted]", text)
 
 
 def scan_public_files(

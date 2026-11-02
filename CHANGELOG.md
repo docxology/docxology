@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-11-02 — Independent review corrections
+
+- Added the shared CSP policy to centrally generated legacy redirects and a
+  regression that rejects a missing policy.
+- Made cached inventory rendering recompute software-catalog membership and
+  counts, preserving GitHub observations while keeping both filter views aligned.
+- Redacted local filesystem paths from captured release notes in the new
+  pairing reports, retaining source-text hashes, original observation dates,
+  and apply receipts. Added writer, validator, replay, and CLI regressions.
+
 ## 2026-11-01 — Legacy work URLs, authenticated metrics, and maintenance
 
 - Restored three historical work URLs reported as 404s by Search Console with

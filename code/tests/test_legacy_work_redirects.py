@@ -19,6 +19,7 @@ from docxology_tools.redirect_stubs import (  # noqa: E402
     render_stub,
 )
 from docxology_tools.seo_invariants import check_work_pages  # noqa: E402
+from docxology_tools.site_nav import CSP_META_TAG  # noqa: E402
 from build_sitemap import render, sitemap_locs  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -40,6 +41,7 @@ def test_old_work_url_reaches_its_catalogued_identity(legacy: str, num: int):
     target = f"https://danielarifriedman.com/works/{key}.html"
     stub = declared_stubs()[f"works/{legacy}.html"]
     assert stub.target_url == stub.canonical_url == target
+    assert CSP_META_TAG in render_stub(stub)
     assert (REPO_ROOT / "works" / f"{key}.html").is_file()
     if legacy.endswith("118"):
         registry = json.loads((REPO_ROOT / "data/work-identifiers.json").read_text())
@@ -100,4 +102,13 @@ def test_wrong_destination_on_a_known_work_redirect_fails(tmp_path):
         "Wrong",
     )
     (tmp_path / relative).write_text(render_stub(stub))
+    assert f"stale redirect stub: {relative}" in collect_redirect_errors(tmp_path)
+
+
+def test_missing_csp_on_a_known_work_redirect_fails(tmp_path):
+    (tmp_path / "works").mkdir()
+    relative = f"works/{next(iter(LEGACY_WORKS))}.html"
+    text = render_stub(declared_stubs()[relative])
+    assert CSP_META_TAG in text
+    (tmp_path / relative).write_text(text.replace(CSP_META_TAG, ""))
     assert f"stale redirect stub: {relative}" in collect_redirect_errors(tmp_path)

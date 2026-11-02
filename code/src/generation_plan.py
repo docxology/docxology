@@ -147,6 +147,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
         "Cached GitHub inventory HTML pages",
         (
             "data/github-repositories.json",
+            "pages/SOFTWARE.md",
             "code/orchestrators/build_github_inventory.py",
         ),
     ),

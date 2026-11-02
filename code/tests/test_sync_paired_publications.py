@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import hashlib
+import subprocess
 import sys
 from dataclasses import replace
 from pathlib import Path
@@ -983,6 +985,83 @@ def test_report_payload_roundtrips_releases_records_and_cache(tmp_path: Path):
     cache = classification_cache_from_payload(payload)
     assert cache is not None
     assert cache.inputs == classification_inputs(tmp_path)
+
+
+@pytest.mark.parametrize(
+    "local_path",
+    [
+        "/Users/example/private/release",
+        "/home/example/private/release",
+        "/Volumes/Work/release",
+        r"C:\Users\example\release",
+    ],
+)
+def test_public_report_redacts_release_paths_and_rejects_reintroduced_paths(
+    tmp_path, local_path
+):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    body = f"Built at `{local_path}`. Source: https://example.org/Users/example/release"
+    pair = replace(pair, release=replace(pair.release, body=body))
+    report = tmp_path / "reports/paired_publications_2026-06-07.json"
+    write_report(
+        report,
+        owners=["docxology"],
+        releases=[pair.release],
+        records=[pair.record],
+        pairs=[pair],
+        actions=[],
+        warnings=[],
+    )
+    payload = json.loads(report.read_text())
+    for release in (payload["github_releases"][0], payload["pairs"][0]["release"]):
+        assert release["body"] == body.replace(local_path, "[local path redacted]")
+        assert release["body_redaction"] == {
+            "policy": "local-filesystem-paths-v1",
+            "source_sha256": hashlib.sha256(body.encode()).hexdigest(),
+        }
+    assert pair.release.body == body
+    rebuilt = github_releases_from_payload(payload)[0]
+    assert rebuilt.to_dict() == payload["github_releases"][0]
+    check_report(repo_root=tmp_path)
+    payload["pairs"][0]["release"]["body"] += " " + local_path
+    report.write_text(json.dumps(payload), encoding="utf-8")
+    with pytest.raises(SystemExit, match="local filesystem path"):
+        check_report(repo_root=tmp_path)
+
+
+def test_redaction_cli_preserves_observation_and_apply_receipts_and_is_idempotent(
+    tmp_path,
+):
+    payload = _minimal_report_payload()
+    payload["generated_at"] = "2026-01-01T00:00:00Z"
+    payload["github_releases"] = [{"body": "Built at `/Volumes/Work/private/release`."}]
+    payload["applied"] = [
+        {"doi": "10.5281/zenodo.1234567", "provenance": {"action_sha256": "a" * 64}}
+    ]
+    report = tmp_path / "paired.json"
+    report.write_text(json.dumps(payload), encoding="utf-8")
+    command = [
+        sys.executable,
+        str(Path(sync_paired_publications.__file__).resolve()),
+        "--redact-local-paths",
+        "--report",
+        str(report),
+    ]
+    result = subprocess.run(command, check=True, capture_output=True, text=True)
+    assert result.stdout.startswith("redacted ")
+    projected = json.loads(report.read_text())
+    assert projected["generated_at"] == payload["generated_at"]
+    assert projected["applied"] == payload["applied"]
+    assert projected["counts"] == payload["counts"]
+    first = report.read_bytes()
+    result = subprocess.run(command, check=True, capture_output=True, text=True)
+    assert result.stdout.startswith("already safe ")
+    assert report.read_bytes() == first
+    result = subprocess.run(command + ["--apply"], capture_output=True, text=True)
+    assert result.returncode == 2
+    assert "cannot combine" in result.stderr
+    assert report.read_bytes() == first
 
 
 def test_load_cached_scan_payload_matches_fresh_classification(tmp_path: Path):

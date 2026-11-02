@@ -24,6 +24,7 @@ PRIMARY_HTML_OUT = REPO_ROOT / "repositories.html"
 FORKS_HTML_OUT = REPO_ROOT / "repositories-forks.html"
 
 from docxology_tools.build_stamp import footer_build_stamp_html, reuse_on_disk_stamp  # noqa: E402
+from docxology_tools.software_table import iter_software_rows  # noqa: E402
 from docxology_tools.site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
     HEAD_EXTRAS,
@@ -104,18 +105,10 @@ def fetch_repositories(owner: str) -> list[dict[str, Any]]:
     return repos
 
 
-def curated_keys() -> set[str]:
-    path = REPO_ROOT / "data" / "software.json"
-    if not path.exists():
-        return set()
-    payload = json.loads(path.read_text(encoding="utf-8"))
-    keys = set()
-    for repo in payload.get("repositories", []):
-        owner = repo.get("owner", "")
-        name = repo.get("name", "")
-        if owner and name:
-            keys.add(f"{owner.lower()}/{name.lower()}")
-    return keys
+def curated_keys(path: Path = REPO_ROOT / "pages" / "SOFTWARE.md") -> set[str]:
+    if not path.is_file():
+        raise SystemExit("Missing software catalog source")
+    return {f"{row.owner}/{row.name}".lower() for row in iter_software_rows(path)}
 
 
 def normalize_repo(
@@ -584,12 +577,35 @@ def render_cached_inventory_outputs(
     primary_html_out: Path = PRIMARY_HTML_OUT,
     forks_html_out: Path = FORKS_HTML_OUT,
 ) -> None:
-    """Rebuild the two public inventory pages without contacting GitHub."""
+    """Refresh local catalog flags and rebuild pages without contacting GitHub."""
+    payload = load_cached_payload(json_out)
+    projected = project_curated_membership(
+        payload, curated_keys(json_out.parent.parent / "pages" / "SOFTWARE.md")
+    )
+    if projected != payload:
+        json_out.write_text(
+            json.dumps(projected, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+        )
     write_cached_html_outputs(
-        load_cached_payload(json_out),
+        projected,
         primary_html_out=primary_html_out,
         forks_html_out=forks_html_out,
     )
+
+
+def project_curated_membership(
+    payload: dict[str, Any], curated: set[str]
+) -> dict[str, Any]:
+    """Derive catalog membership without changing retained API observations."""
+    repositories = [
+        dict(repo, curated=f"{repo['owner']}/{repo['name']}".lower() in curated)
+        for repo in payload["repositories"]
+    ]
+    return {
+        **payload,
+        "repositories": repositories,
+        "counts": {**payload["counts"], **count_repositories(repositories)},
+    }
 
 
 def check_outputs(
@@ -617,6 +633,12 @@ def check_outputs(
         raise SystemExit(
             "GitHub inventory is missing immutable github_id/github_node_id for: "
             + ", ".join(missing_identity)
+        )
+    if payload != project_curated_membership(
+        payload, curated_keys(json_out.parent.parent / "pages" / "SOFTWARE.md")
+    ):
+        raise SystemExit(
+            "GitHub inventory curated membership is stale; run render_github_inventory.py"
         )
     counts = payload.get("counts", {})
     if (

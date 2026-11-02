@@ -48,6 +48,30 @@ def _repo(name: str, *, fork: bool, owner: str = "docxology") -> dict:
     }
 
 
+def _write_catalog(root: Path, repositories: list[dict]) -> None:
+    path = root / "pages/SOFTWARE.md"
+    path.parent.mkdir(exist_ok=True)
+    lines = []
+    for owner, heading in [
+        ("docxology", "## 🧬 Repositories Owned by docxology"),
+        ("activeinferenceinstitute", "### 🏛️ Active Inference Institute"),
+    ]:
+        lines.extend(
+            [
+                heading,
+                "",
+                "| Repository | Description | Language | Stars | Updated |",
+                "|---|---|---|---|---|",
+            ]
+        )
+        for repo in repositories:
+            if repo["owner"].lower() == owner:
+                lines.append(
+                    f"| [{repo['name']}](https://github.com/{repo['owner']}/{repo['name']}) | Example | Python | 0 | 2026-01 |"
+                )
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def test_repository_pages_split_primary_and_forks():
     repos = [
         _repo("primary", fork=False),
@@ -120,6 +144,7 @@ def test_cached_inventory_render_is_idempotent_and_check_fails_on_drift(tmp_path
     }
     cache = tmp_path / "data" / "github-repositories.json"
     cache.parent.mkdir()
+    _write_catalog(tmp_path, [repo for repo in repos if repo["curated"]])
     cache.write_text(json.dumps(payload), encoding="utf-8")
     primary = tmp_path / "repositories.html"
     forks = tmp_path / "repositories-forks.html"
@@ -179,3 +204,49 @@ def test_normalize_repo_retains_immutable_github_identity():
 
     assert normalized["github_id"] == 12345
     assert normalized["github_node_id"] == "R_kgDOExample"
+
+
+def test_cached_render_refreshes_catalog_membership_and_rejects_stale_flags(tmp_path):
+    repos = [
+        _repo("newly-reviewed", fork=False),
+        _repo("removed", fork=False, owner="ActiveInferenceInstitute"),
+        _repo("uncataloged-fork", fork=True),
+    ]
+    repos[0]["curated"] = False
+    payload = {
+        "generated_at": "2026-01-03T00:00:00Z",
+        "warnings": [],
+        "counts": bgi.count_repositories(repos) | {"primary_total": 2},
+        "repositories": repos,
+    }
+    cache = tmp_path / "data/github-repositories.json"
+    cache.parent.mkdir()
+    cache.write_text(json.dumps(payload), encoding="utf-8")
+    _write_catalog(tmp_path, [{"owner": "DOCXOLOGY", "name": "NEWLY-REVIEWED"}])
+    primary, forks = (
+        tmp_path / "repositories.html",
+        tmp_path / "repositories-forks.html",
+    )
+    kwargs = {"json_out": cache, "primary_html_out": primary, "forks_html_out": forks}
+    bgi.render_cached_inventory_outputs(**kwargs)
+    actual = json.loads(cache.read_text())
+    assert [repo["curated"] for repo in actual["repositories"]] == [True, False, False]
+    assert actual["counts"]["curated"] == 1
+    assert actual["counts"]["uncataloged"] == 2
+    assert actual["generated_at"] == payload["generated_at"]
+    for before, after in zip(repos, actual["repositories"], strict=True):
+        assert {key: value for key, value in before.items() if key != "curated"} == {
+            key: value for key, value in after.items() if key != "curated"
+        }
+    bgi.check_outputs(**kwargs, baseline_path=tmp_path / "absent.json")
+    first = (cache.read_bytes(), primary.read_bytes(), forks.read_bytes())
+    bgi.render_cached_inventory_outputs(**kwargs)
+    assert (cache.read_bytes(), primary.read_bytes(), forks.read_bytes()) == first
+    actual["repositories"][0]["curated"] = False
+    actual["counts"].update(bgi.count_repositories(actual["repositories"]))
+    cache.write_text(json.dumps(actual), encoding="utf-8")
+    bgi.write_cached_html_outputs(
+        actual, primary_html_out=primary, forks_html_out=forks
+    )
+    with pytest.raises(SystemExit, match="curated membership is stale"):
+        bgi.check_outputs(**kwargs, baseline_path=tmp_path / "absent.json")

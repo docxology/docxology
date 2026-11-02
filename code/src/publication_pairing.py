@@ -78,6 +78,7 @@ class GitHubRelease:
     html_url: str
     published_at: str
     assets: list[GitHubAsset | dict[str, Any]]
+    body_redaction: dict[str, str] | None = None
 
     @classmethod
     def from_api(
@@ -116,6 +117,8 @@ class GitHubRelease:
         payload = asdict(self)
         payload["assets"] = [asset_to_dict(asset) for asset in self.assets]
         payload["full_name"] = self.full_name
+        if self.body_redaction is None:
+            payload.pop("body_redaction")
         return payload
 
 

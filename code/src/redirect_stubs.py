@@ -17,6 +17,8 @@ import os
 from pathlib import Path
 import re
 
+from docxology_tools.site_nav import CSP_META_TAG
+
 from generated_outputs import (
     UnsafeGeneratedOutputPathError,
     generated_output_directory_exists,
@@ -201,6 +203,7 @@ def render_stub(stub: RedirectStub) -> str:
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  {CSP_META_TAG}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
   <meta name="description" content="Legacy address for {title}; redirects to the canonical page.">
