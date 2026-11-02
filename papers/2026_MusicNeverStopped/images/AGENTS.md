@@ -1,15 +1,32 @@
-# AGENTS.md — `docxology/papers/2026_MusicNeverStopped/images/`
+# AGENTS.md — `papers/2026_MusicNeverStopped/images/`
 
-Added by the 2026-08-29 ongoing-docs fleet pass. (figure-asset stub).
+Extracted figures for [The Music Never Stopped: A Grateful Data Compendium with a
+Category-Theoretic Interpretation](../README.md) (`2026_MusicNeverStopped`). The paper's
+`../full_text.md` embeds all 36 of them as image links into this folder, so no captions
+survive extraction and the filename is the only stable ordering. The generated work
+pages carry a "Figures on GitHub" button to this folder, and the paper's own
+`../index.html` links it as well.
 
-## What this is
+- The binaries are produced from the paper's archived PDF
+  (`Friedman_2026_Music_2d42bfd0.pdf`) by `code/orchestrators/extract_paper_texts.py`,
+  which writes `pageN_imgM.<ext>` for each embedded image it keeps and skips icon-sized
+  ones. Regenerate from that source when extraction needs repair; never hand-edit,
+  recompress, or swap in a figure from another manuscript version.
 
-Figure assets for the parent paper `2026_MusicNeverStopped` (PNG/SVG/JPG referenced by its
-`full_text.md` and `index.html`). Content-only directory; no docs of its own
-beyond this stub pair.
+- The folder held 36 PNG files on 2026-11-02, the day this guide was written. Their
+  filename page indices run from 14 to 37 across 24 of the PDF's pages, so 12 of the 36
+  share a page with another figure. Treat the directory listing as the current truth:
+  this guide is not a manifest and will not be updated when extraction adds or removes
+  files. The generated `README.md` beside it and this guide are documentation, not
+  figure assets.
 
-## Invariants
+- Extracted paper-image binaries are deliberately omitted from the deployed Pages
+  projection; the site links to them in the repository, and the paper's own PDF remains
+  the authoritative figure source.
 
-- Local-only under `projects/ongoing/` — never commit.
-- Generated with the parent paper package — do not hand-edit assets.
-- Parent paper docs: `../AGENTS.md` (generated) and `../README.md`.
+- There is no test, CI job, or runnable gate for this folder. The repository-wide check
+  is `uv run python3 code/orchestrators/validate_repo.py`; it reports a broken link but
+  does not inspect image content or figure fidelity.
+
+The paper-folder contract is in [`../../README.md`](../../README.md) and
+[`../../AGENTS.md`](../../AGENTS.md).

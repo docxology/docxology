@@ -1,22 +1,16 @@
-# AGENTS.md — `docxology/code/data`
+# AGENTS.md — `code/data/`
 
-## What this is
+JSON inputs consumed by site code rather than published directly: the two YouTube
+datasets (`youtube_institute.json`, `youtube_personal.json`) that
+`code/orchestrators/build_video_pages.py` builds the video surfaces from, with
+`fetch_youtube_data.py` refreshing them.
 
-Data used by site code.
+- These are fetched data, not sources: refresh them through the fetcher so the snapshot
+  stays dated, and keep the caveat when fresh data is unavailable rather than
+  substituting hand-written records.
+- Their tests live in `code/tests/test_fetch_youtube_data.py`,
+  `test_youtube_fetcher.py`, and `test_build_video_pages.py`.
+- Nothing validates the committed JSON itself; an unexpected shape surfaces in the
+  generator that reads it.
 
-## Layout
-
-- data files.
-
-## Invariants & gotchas
-
-- This is the public `docxology/docxology` repository. Follow the root
-  ownership and privacy rules; verify the Git destination before publishing.
-- Carry authorized changes through review and verification on a work branch.
-  Preserve concurrent edits and publish only reviewed public content.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls code/data`
-- Follow the [root repository instructions](../../AGENTS.md) and nearer parent instructions.
+Repository rules: [root guide](../../AGENTS.md).

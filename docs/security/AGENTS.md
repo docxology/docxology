@@ -1,22 +1,13 @@
-# AGENTS.md — `docxology/docs/security`
+# AGENTS.md — `docs/security/`
 
-## What this is
+The written security posture: [`security-posture.md`](security-posture.md) states what
+the site is (static GitHub Pages, no server-side execution except the separate Netlify
+webhook service) and which controls hold it there.
 
-Security documentation for the docxology site.
+- The enforcement lives elsewhere: CSP is delivered by page `<meta>` tags, the SEO and
+  accessibility invariants are checked by `code/src/seo_invariants.py` and the audit
+  orchestrators, and validation is the repository gate. Change the control and update
+  this document, or the document describes a posture nobody maintains.
+- No test reads these documents.
 
-## Layout
-
-- security docs.
-
-## Invariants & gotchas
-
-- This is the public `docxology/docxology` repository. Follow the root
-  ownership and privacy rules; verify the Git destination before publishing.
-- Carry authorized changes through review and verification on a work branch.
-  Preserve concurrent edits and publish only reviewed public content.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls docs/security`
-- Follow the [root repository instructions](../../AGENTS.md) and nearer parent instructions.
+Docs-tree guide: [`../AGENTS.md`](../AGENTS.md).

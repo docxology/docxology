@@ -1,22 +1,12 @@
-# AGENTS.md — `docxology/code/tools/vendor`
+# AGENTS.md — `code/tools/vendor/`
 
-## What this is
+Vendored third-party libraries — currently `axe.min.js` (axe-core), used by the
+repository's accessibility audit.
 
-Vendored third-party libraries.
+- Vendored means copied in deliberately, not managed by a package manager: there is no
+  lockfile entry to update. When upgrading, replace the file and record the version and
+  source where the audit reads it.
+- Do not edit a vendored file to change behaviour; fix the call site or upgrade the
+  library.
 
-## Layout
-
-- vendored code.
-
-## Invariants & gotchas
-
-- This is the public `docxology/docxology` repository. Follow the root
-  ownership and privacy rules; verify the Git destination before publishing.
-- Carry authorized changes through review and verification on a work branch.
-  Preserve concurrent edits and publish only reviewed public content.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls code/tools/vendor`
-- Follow the [root repository instructions](../../../AGENTS.md) and nearer parent instructions.
+Repository rules: [root guide](../../../AGENTS.md).

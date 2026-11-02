@@ -1,22 +1,15 @@
-# AGENTS.md — `docxology/code/tools`
+# AGENTS.md — `code/tools/`
 
-## What this is
+Site tooling that is not an orchestrator: `rendered_site_fixture.py` (builds the
+rendered-site fixture the accessibility audit runs against) and `vendor/` for vendored
+third-party libraries.
 
-Site tooling (incl. `vendor/` third-party libs).
+- Keep the distinction: `code/orchestrators/` holds the runnable pipeline steps listed
+  in `GENERATED.md`, while this folder holds supporting code with no entry in the
+  generated-file matrix.
+- `rendered_site_fixture.py` exists so the audit can run offline; it does not publish
+  anything.
+- Nothing here is covered by its own test module; the audit and validation that use it
+  are the checks.
 
-## Layout
-
-- tools + vendored code.
-
-## Invariants & gotchas
-
-- This is the public `docxology/docxology` repository. Follow the root
-  ownership and privacy rules; verify the Git destination before publishing.
-- Carry authorized changes through review and verification on a work branch.
-  Preserve concurrent edits and publish only reviewed public content.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls code/tools`
-- Follow the [root repository instructions](../../AGENTS.md) and nearer parent instructions.
+Repository rules: [root guide](../../AGENTS.md).
