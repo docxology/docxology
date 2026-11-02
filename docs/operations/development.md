@@ -130,7 +130,13 @@ uv run python3 -m pytest code/tests -q -m "not browser and not manuscript_render
 uv run --group lint ruff check code
 ```
 
-The command above explicitly selects the core suite. Deselected browser and
+When regeneration creates new dated reports, review and stage those specific
+report paths, then repeat regeneration before running `settle.py`. Report
+discovery uses the Git index, so a newly admitted report can change the catalog,
+discovery, search, and manifest outputs. Check for new report files when the
+UTC report date changes during a maintenance session.
+
+The pytest command above explicitly selects the core suite. Deselected browser and
 native-render tests are outside that command's evidence. Default pytest
 selection includes **every test** and requires all declared runtimes. Skips
 during collection, fixture setup, or execution fail the run, including reports

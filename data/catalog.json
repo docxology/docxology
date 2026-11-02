@@ -755,7 +755,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-11-01.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-11-02.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -769,7 +769,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-11-01.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-11-02.json",
         "encodingFormat": "application/json"
       }
     },
