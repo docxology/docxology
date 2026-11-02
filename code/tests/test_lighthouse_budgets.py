@@ -46,6 +46,14 @@ EXPLORATION_PAGES = ("collections.html", "trails.html", "research-map.html", "la
 # index.html performance=52 < 55 on identical content), while a genuine
 # regression stays below the floor on the median.
 HARD_FLOOR = {"performance": 55, "accessibility": 85, "seo": 60}
+# Lane floor. CI run 41485008131 (2026-11-02) measured all twelve pages at
+# 91-100 performance, but the historical hard floor of 55 lets an injected 56
+# pass, so a lane page could regress ~35 points before the gate failed.
+# Enforce >=90 on the eight lane pages; aspirational budgets and
+# exploration-page floors are unchanged. Local runs are noisier than CI
+# (videos.html measured 82 on 2026-10-23 under concurrent load), so a
+# below-floor first run still re-runs to a median of three before failing.
+LANE_FLOOR = {"performance": 90}
 LIGHTHOUSE_VERSION = "13.4.1"
 BASELINE = {
     "index.html": {"accessibility": 92},
@@ -221,12 +229,13 @@ def test_lighthouse_budgets(tmp_path: Path, record_property) -> None:
             def floor_for(category):
                 if path in EXPLORATION_PAGES:
                     return BUDGETS[category]
-                return min(
+                floor = min(
                     BUDGETS[category],
                     BASELINE.get(path, {}).get(
                         category, HARD_FLOOR.get(category, BUDGETS[category])
                     ),
                 )
+                return max(floor, LANE_FLOOR.get(category, 0))
 
             scores = category_scores(run_lighthouse(base_url, path, tmp_path))
             if any(score < floor_for(category) for category, score in scores.items()):
