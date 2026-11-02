@@ -1,18 +1,13 @@
-# AGENTS.md — `docxology/netlify-stripe-webhook`
+# AGENTS.md — `netlify-stripe-webhook/`
 
-## What this is
+The repository's only server-side component: a small Netlify service that receives
+Stripe webhook events. The public site stays static GitHub Pages by design — no
+server-side execution there — so this service exists separately, with its own
+`netlify.toml`, function, and public page.
 
-Netlify-hosted Stripe webhook service accompanying the docxology site (membership payments).
+- Its secrets (the Stripe signing material) live in Netlify's configuration, never in
+  the repository; nothing here should need a credential to be read.
+- Its tests and runbook live with the service or in `docs/operations/`, not here; this
+  guide cannot tell you what is currently deployed.
 
-## Layout
-
-- netlify/functions/, public/, local .netlify/ build state.
-
-## Invariants & gotchas
-
-- Commit only reviewed public content authorized by the user; preserve concurrent edits.
-- Live repo tree: read, don't write (see lane-root AGENTS.md for which trees are dirty).
-
-## Verify
-
-- `ls netlify-stripe-webhook`
+Repository rules: [root guide](../AGENTS.md).

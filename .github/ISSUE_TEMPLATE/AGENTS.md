@@ -1,22 +1,12 @@
-# AGENTS.md — `docxology/.github/ISSUE_TEMPLATE`
+# AGENTS.md — `.github/ISSUE_TEMPLATE/`
 
-## What this is
+The repository's issue forms: broken link, publication correction, software metadata,
+and source verification, plus `config.yml` for the chooser. They are the structured
+public intake for corrections to a bibliography, a catalog entry, or a page.
 
-GitHub issue templates for docxology.
+- A field in a form is a promise that something downstream reads it: check the
+  orchestrator or validation that consumes a field before renaming or removing one.
+- Nothing tests these files. A malformed form is visible only to someone trying to open
+  an issue, and no CI job parses them.
 
-## Layout
-
-- issue template files.
-
-## Invariants & gotchas
-
-- This is the public `docxology/docxology` repository. Follow the root
-  ownership and privacy rules; verify the Git destination before publishing.
-- Carry authorized changes through review and verification on a work branch.
-  Preserve concurrent edits and publish only reviewed public content.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls .github/ISSUE_TEMPLATE`
-- Follow the [root repository instructions](../../AGENTS.md) and nearer parent instructions.
+Repository rules: [root guide](../../AGENTS.md).

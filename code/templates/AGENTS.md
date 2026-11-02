@@ -1,22 +1,15 @@
-# AGENTS.md — `docxology/code/templates`
+# AGENTS.md — `code/templates/`
 
-## What this is
+HTML templates used by the site generators — `publications.html.tmpl` and
+`software.html.tmpl`, rendered by `code/orchestrators/sync_publications_html.py` and
+`sync_software_html.py`.
 
-Templates used by the site generators.
+- A template change is only half a change: run the matching sync orchestrator with
+  `--apply` afterwards so the generated page matches, then
+  `uv run python3 code/orchestrators/validate_repo.py`.
+- The templates carry the site's head conventions (canonical, social meta, CSP); the
+  rules are enforced by `code/src/seo_invariants.py`, not stated here.
+- No test renders a template in isolation: a bad edit shows up in the regenerated page
+  or in validation, not in a template-specific failure.
 
-## Layout
-
-- template files.
-
-## Invariants & gotchas
-
-- This is the public `docxology/docxology` repository. Follow the root
-  ownership and privacy rules; verify the Git destination before publishing.
-- Carry authorized changes through review and verification on a work branch.
-  Preserve concurrent edits and publish only reviewed public content.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls code/templates`
-- Follow the [root repository instructions](../../AGENTS.md) and nearer parent instructions.
+Repository rules: [root guide](../../AGENTS.md).

@@ -1,15 +1,25 @@
-# AGENTS.md — `docxology/papers/2023_VariationalSynthesis/images/`
+# AGENTS.md — `papers/2023_VariationalSynthesis/images/`
 
-Added by the 2026-08-29 ongoing-docs fleet pass. (figure-asset stub).
+Extracted figures for [A variational synthesis of evolutionary and developmental
+dynamics](../README.md) (`2023_VariationalSynthesis`). The paper's `../full_text.md`
+embeds them, and the generated work and paper pages link the folder as "Figures on
+GitHub" when figures exist.
 
-## What this is
+- The binaries are produced from the paper's archived PDF in `../`
+  (`2023_VariationalSynthesis.pdf`) by `code/orchestrators/extract_paper_texts.py`,
+  which writes each file as `pageN_imgM.ext` from the PDF page and image position it
+  came from. Regenerate from that source when extraction needs repair; never hand-edit,
+  recompress, or swap in a figure from another manuscript version.
+- The folder held 7 images (6 PNG and 1 JPEG) on 2026-11-02, named for PDF pages 1
+  through 17. Treat the directory listing as the current truth: this guide is not a
+  manifest and will not be updated when extraction adds or removes files.
+- Extracted paper-image binaries are deliberately omitted from the deployed Pages
+  projection; the site links to them in the repository, and the paper's own PDF remains
+  the authoritative figure source.
+- There is no test, CI job, or runnable gate for this folder. The
+  repository-wide check that would notice a broken link is
+  `uv run python3 code/orchestrators/validate_repo.py`; it does not inspect
+  image content or figure fidelity.
 
-Figure assets for the parent paper `2023_VariationalSynthesis` (PNG/SVG/JPG referenced by its
-`full_text.md` and `index.html`). Content-only directory; no docs of its own
-beyond this stub pair.
-
-## Invariants
-
-- Local-only under `projects/ongoing/` — never commit.
-- Generated with the parent paper package — do not hand-edit assets.
-- Parent paper docs: `../AGENTS.md` (generated) and `../README.md`.
+The paper-folder contract is in [`../../README.md`](../../README.md) and
+[`../../AGENTS.md`](../../AGENTS.md).

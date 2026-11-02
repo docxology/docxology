@@ -1,22 +1,10 @@
-# AGENTS.md — `docxology/netlify-stripe-webhook/netlify`
+# AGENTS.md — `netlify-stripe-webhook/netlify/`
 
-## What this is
+The Netlify side of the webhook service: `functions/` holds the deployed handler(s).
+Configuration for the site is the service's `../netlify.toml`.
 
-Netlify functions folder of the stripe webhook service.
+- Deploys happen from Netlify, not from this repository's CI: a merged change here is
+  not a deployed change until Netlify builds it.
+- Nothing in this folder is exercised by the repository's test gate.
 
-## Layout
-
-- functions config.
-
-## Invariants & gotchas
-
-- This is the public `docxology/docxology` repository. Follow the root
-  ownership and privacy rules; verify the Git destination before publishing.
-- Carry authorized changes through review and verification on a work branch.
-  Preserve concurrent edits and publish only reviewed public content.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls netlify-stripe-webhook/netlify`
-- Follow the [root repository instructions](../../AGENTS.md) and nearer parent instructions.
+Repository rules: [root guide](../../AGENTS.md).

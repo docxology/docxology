@@ -1,22 +1,10 @@
-# AGENTS.md — `docxology/assets/hero-art`
+# AGENTS.md — `assets/hero-art/`
 
-## What this is
+The hero images used by the site's landing surfaces — WebP files, hand-maintained, with
+no generator or build step behind them.
 
-Hero artwork for the site.
+- They are referenced by page markup: a rename is a broken image on a public page, and
+  no test would catch it.
+- Nothing lints or optimises them here; any re-encoding is a deliberate content change.
 
-## Layout
-
-- images.
-
-## Invariants & gotchas
-
-- This is the public `docxology/docxology` repository. Follow the root
-  ownership and privacy rules; verify the Git destination before publishing.
-- Carry authorized changes through review and verification on a work branch.
-  Preserve concurrent edits and publish only reviewed public content.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls assets/hero-art`
-- Follow the [root repository instructions](../../AGENTS.md) and nearer parent instructions.
+Repository rules: [root guide](../../AGENTS.md).

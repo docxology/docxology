@@ -1,9 +1,12 @@
-# AGENTS.md — `docxology/reports/browser-smoke/`
+# AGENTS.md — `reports/browser-smoke/`
 
-## What this is
+The browser smoke-test series: one dated folder per run, currently `2026-10-05/`, whose
+`manifest.json` records 10 of 10 selector-based checks passing (with a screenshot and
+its SHA-256 per check) against commit `a7ef3df9` with a dirty worktree. The suite is
+`code/orchestrators/browser_smoke.py`.
 
-Per-run browser smoke-test outputs (currently `2026-08-26/`). Generated report artifacts; commit only reviewed public evidence under the repository release and retention policies.
-
-## Verify
-
-- `ls reports/browser-smoke` — dated run folders.
+- Selector checks are shallow by design: a passing run says the core elements appeared,
+  not that a page is correct. Nothing re-runs in CI, so the record ages without failing.
+- Refresh by running the suite; it writes a new dated folder instead of updating this
+  one. Do not edit manifests or screenshots by hand.
+- Report policy: [`../AGENTS.md`](../AGENTS.md).

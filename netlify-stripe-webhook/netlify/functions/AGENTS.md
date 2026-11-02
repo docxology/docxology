@@ -1,22 +1,11 @@
-# AGENTS.md — `docxology/netlify-stripe-webhook/netlify/functions`
+# AGENTS.md — `netlify-stripe-webhook/netlify/functions/`
 
-## What this is
+The webhook handler (`stripe-webhook.js`): the code that receives Stripe events for the
+service.
 
-Netlify function handlers for the stripe webhook.
+- Treat it as production code for a service outside the repository's CI: verify signing
+  behaviour and error handling locally before deploying, and never log or commit
+  secrets — the signing material belongs in Netlify's environment configuration.
+- No test in this repository executes this function.
 
-## Layout
-
-- function handlers.
-
-## Invariants & gotchas
-
-- This is the public `docxology/docxology` repository. Follow the root
-  ownership and privacy rules; verify the Git destination before publishing.
-- Carry authorized changes through review and verification on a work branch.
-  Preserve concurrent edits and publish only reviewed public content.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls netlify-stripe-webhook/netlify/functions`
-- Follow the [root repository instructions](../../../AGENTS.md) and nearer parent instructions.
+Repository rules: [root guide](../../../AGENTS.md).

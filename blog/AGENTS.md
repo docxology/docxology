@@ -1,22 +1,15 @@
-# AGENTS.md — `docxology/blog`
+# AGENTS.md — `blog/`
 
-## What this is
+Hand-authored long-form writing: `index.html` for the list plus one folder per post.
+This is the documented exception to the repository's rule that HTML is generated —
+these pages are sources, and editing them directly is correct.
 
-Blog source/markdown for the docxology site.
+- Post folders keep their own `index.html`; the blog index links them. Adding a post
+  means both.
+- Nothing regenerates the blog and nothing tests it: no CI job renders these pages, so
+  a broken link or layout is caught only by reading the page.
+- The site-wide conventions that still apply (apex canonicals, CSP with `script-src
+  'self'`, social meta) are stated in the [root guide](../AGENTS.md) and enforced by
+  `code/src/seo_invariants.py` where it can see them.
 
-## Layout
-
-- posts incl. `winged-snowflake-2021/`.
-
-## Invariants & gotchas
-
-- This is the public `docxology/docxology` repository. Follow the root
-  ownership and privacy rules; verify the Git destination before publishing.
-- Carry authorized changes through review and verification on a work branch.
-  Preserve concurrent edits and publish only reviewed public content.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls blog`
-- Follow the [root repository instructions](../AGENTS.md) and nearer parent instructions.
+Repository rules: [root guide](../AGENTS.md).
