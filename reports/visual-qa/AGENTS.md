@@ -1,6 +1,7 @@
 # AGENTS.md — `reports/visual-qa/`
 
-The visual QA series: one dated folder per run, currently `2026-10-05/`, holding
+The visual QA series: one dated folder per run, most recently `2026-10-05/`
+(observed 2026-11-02), holding
 per-page, per-viewport screenshots (26 of them) with a `manifest.json` that states
 plainly that human review is still required and carries a `review` block recording who
 reviewed it and when.

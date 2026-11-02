@@ -1,6 +1,7 @@
 # AGENTS.md — `reports/browser-smoke/`
 
-The browser smoke-test series: one dated folder per run, currently `2026-10-05/`, whose
+The browser smoke-test series: one dated folder per run, most recently `2026-10-05/`
+(observed 2026-11-02), whose
 `manifest.json` records 10 of 10 selector-based checks passing (with a screenshot and
 its SHA-256 per check) against commit `a7ef3df9` with a dirty worktree. The suite is
 `code/orchestrators/browser_smoke.py`.

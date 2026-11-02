@@ -1,7 +1,7 @@
 # AGENTS.md — `code/artifacts/`
 
-A holding folder for generated artifacts that are not part of the site root; today it
-contains `publications-explorer/` only.
+A holding folder for generated artifacts that are not part of the site root; as of
+2026-11-02 it contains `publications-explorer/` only.
 
 - Generated output lives here when a generator produces something for direct use rather
   than for publication at the site root. Its rebuild command belongs in
