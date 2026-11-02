@@ -473,14 +473,14 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-11-01.json",
+      "path": "/reports/accessibility_static_2026-11-02.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-11-01.json",
+      "path": "/reports/asset_size_2026-11-02.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1672,11 +1672,11 @@
         "release_hard_ceiling_bytes": 996147200,
         "safety_ceiling_bytes": 996147200,
         "warning_bytes": 975175680,
-        "source_bytes": 954878260,
+        "source_bytes": 956652567,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6142,
-        "artifact_bytes": 955964093
+        "artifact_file_count": 6144,
+        "artifact_bytes": 957738687
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -6298,10 +6298,10 @@
     "research_map": "e42e83bc1184f2ffb9ab7adf54d913bf7a57cd05ba4353cd5d5d70a5e27f8d84",
     "research_trails": "2e6a76a3974b495906a1764725835ffa3ef47065a304c812f7756fb17166d34e",
     "scholar_readiness": "42e1697eee51764b4d8b70d3ec9448abc19d5778341efc6c3142cf9858b9d39b",
-    "catalog": "c9304383444edd20b20d2330e2035e3c69677c441eaec4fab7fbe80e7e6162fd",
+    "catalog": "fa6efaf753d1b7f4477751fd06dfcb1421a21968e31a2892dcb6638a2b94490b",
     "reconciliation": "11d886ba28d53f2350e093f5504e75b2bcde59c04f7b622753502a149750ca1c",
     "reproducibility": "d706f76638645be0cd1f07681bdbec070deff9fe9f0e2c097a36d456121bc587",
-    "generated_manifest": "6baaba2f338a5577d508865a4978a0c4c27eca5c24be31fbcdfc70bd214b953e",
+    "generated_manifest": "0bd40e87ad0ae49d2a0b6a7e040544ce8a2e3dfe0631bd4a688596bfe8556edf",
     "current_counts": "6c173adf6fedc399607f5f2f3a0bf45c22f2a0facdc58300b98a8406357842cc"
   },
   "source_provenance": {

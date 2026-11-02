@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-01T23:34:31Z",
-  "source_commit_at_generation": "2ab9223e55d282dd34b8b22f4d05e64b327de12c",
+  "generated_at": "2026-11-02T00:48:53Z",
+  "source_commit_at_generation": "778990ec2dbc4d295a37888f30c8bf7fc42059ee",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 954878260,
+    "source_bytes": 956652567,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 6142,
-    "artifact_bytes": 955964093
+    "artifact_file_count": 6144,
+    "artifact_bytes": 957738687
   },
   "included_files": [
     {
@@ -81,8 +81,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 148912,
-      "sha256": "7b092e4c5d70e1a7704925f9f0bca9b5a425f33457e8309aff53c8e95ee98a4f"
+      "bytes": 149229,
+      "sha256": "2407620fc68be12c31b77bbe4c730a435cc78bb9afa2b55ea8e35aa81a033450"
     },
     {
       "path": "CITATION.cff",
@@ -10076,8 +10076,8 @@
     },
     {
       "path": "blake-pathway.html",
-      "bytes": 20843,
-      "sha256": "b3828011afd9ea659f60bddbf7ab0247b2c845cc85999568b70380fd99cddc53"
+      "bytes": 22060,
+      "sha256": "6cae9e369e779ee92921aaf6e0ff9923c8fbed64f9155b235e29e23f22317ec2"
     },
     {
       "path": "blog/AGENTS.md",
@@ -10117,7 +10117,7 @@
     {
       "path": "catalog.html",
       "bytes": 55884,
-      "sha256": "0a77e12ae9801595c3bb187e76c28cfab05a629cfd6b8b25008f7908b27533f5"
+      "sha256": "fbd6739b8b9f6cae2ccdd0ba87cc0c3a11800a1d64d50e0c22a10375f7af7593"
     },
     {
       "path": "cite-verify.html",
@@ -10266,8 +10266,8 @@
     },
     {
       "path": "code/orchestrators/build_blake_index.py",
-      "bytes": 23863,
-      "sha256": "0e3eed8fa4dcdc272a1e11886cb974740b6ae559f887c2a6e7fe78fdf09ca163"
+      "bytes": 24772,
+      "sha256": "e6b762fc91629d675e3c5b159f228b26b62373caeb87dce247e48994d5ead046"
     },
     {
       "path": "code/orchestrators/build_catalog.py",
@@ -10946,8 +10946,8 @@
     },
     {
       "path": "code/tests/test_accessibility_refinements.py",
-      "bytes": 14448,
-      "sha256": "4fa849321e916f70881348fa17a90ac75517b119f0224d84899d7305ee9e4f36"
+      "bytes": 18111,
+      "sha256": "ccfc0c88a7546ff867a3df3f8fbf79a2b472419d39df6bf84acdf83408970307"
     },
     {
       "path": "code/tests/test_add_zenodo_only.py",
@@ -11802,7 +11802,7 @@
     {
       "path": "data/catalog.json",
       "bytes": 35553,
-      "sha256": "c9304383444edd20b20d2330e2035e3c69677c441eaec4fab7fbe80e7e6162fd"
+      "sha256": "fa6efaf753d1b7f4477751fd06dfcb1421a21968e31a2892dcb6638a2b94490b"
     },
     {
       "path": "data/claims.json",
@@ -22915,6 +22915,11 @@
       "sha256": "ba27ae6077188f4c9edac57be2d7870758d0e45122655b84149050bbbde88569"
     },
     {
+      "path": "reports/accessibility_static_2026-11-02.json",
+      "bytes": 1767879,
+      "sha256": "42a4db366371524d472f12b82597862d1dd68f46ff56100b59e4578ac4cf0962"
+    },
+    {
       "path": "reports/ambiguous_pairs_triage_2026-06-26.md",
       "bytes": 2120,
       "sha256": "7a6e4fb01a8870e64ec2358bfc1fab4749adf2cf38c44262ed12c7a022a6a761"
@@ -23527,7 +23532,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 428742,
-      "sha256": "d363688e1f255c3fcfc99582cb1098cc165e9e149ab06a06325263a29dfd1f87"
+      "sha256": "492c9eb0c3bb13f037e7efcc1960d0c0d0aa3c9fb358efef044cb6049f3857e6"
     },
     {
       "path": "software.html",
@@ -23556,8 +23561,8 @@
     },
     {
       "path": "updates.html",
-      "bytes": 227056,
-      "sha256": "9e11f1fb3199b0ffa58631b98ba1673b0f6df7b47ce3d3de06b87bb887611af9"
+      "bytes": 227378,
+      "sha256": "f0e8265f5e6a410449462f969471196e24f24a0c476ade3154a17d0f86e3bf65"
     },
     {
       "path": "uv.lock",
@@ -30707,11 +30712,15 @@
       "role": "public control metadata"
     },
     {
+      "path": "reports/asset_size_2026-11-02.json",
+      "role": "public control metadata"
+    },
+    {
       "path": "reports/pages_artifact_growth_2026-09-15.json",
       "role": "public control metadata"
     },
     {
-      "path": "reports/pages_artifact_growth_2026-11-01.json",
+      "path": "reports/pages_artifact_growth_2026-11-02.json",
       "role": "public control metadata"
     },
     {
@@ -30794,8 +30803,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 697,
-    "bytes": 195739142,
+    "count": 698,
+    "bytes": 195739701,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",
@@ -30819,5 +30828,5 @@
       "reports/accessibility_static_2026-06-30.json"
     ]
   },
-  "growth_report": "reports/pages_artifact_growth_2026-11-01.json"
+  "growth_report": "reports/pages_artifact_growth_2026-11-02.json"
 }
