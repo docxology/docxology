@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-02T18:27:31Z",
-  "source_commit_at_generation": "387df5d3725b95e6248c574a90223a83c97d8e79",
+  "generated_at": "2026-11-02T21:56:16Z",
+  "source_commit_at_generation": "2bc0a3b6fbd74d88a3f23496cf929012b153de60",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 954909214,
+    "source_bytes": 954909818,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 6142,
-    "artifact_bytes": 955995052
+    "artifact_bytes": 955995656
   },
   "included_files": [
     {
@@ -11286,8 +11286,8 @@
     },
     {
       "path": "code/tests/test_lighthouse_budgets.py",
-      "bytes": 11081,
-      "sha256": "d54adc655174d3a35e89d051102b40b50a4050e0832c879d6fee1997c3f24f49"
+      "bytes": 11685,
+      "sha256": "4ec3ab4d866de451c3e848852a04734a3c3f2cef3645d54fedaa2d2074a688ad"
     },
     {
       "path": "code/tests/test_lighthouse_gate_contract.py",
