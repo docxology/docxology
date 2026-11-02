@@ -51,17 +51,26 @@ def test_pages_deploy_projects_and_verifies_the_exact_candidate():
     Workflow files are payload-neutral (``release_controls.is_payload_neutral_path``),
     so no payload-anchored record names a commit that edits them; the deployed
     projection and its exact-HEAD acceptance must therefore stay pinned here.
-    Action versions are deliberately not pinned, so Dependabot bumps pass.
+    The actions are pinned to the commit they were reviewed at and name the
+    release that commit belongs to, so a moved tag cannot change what a deploy
+    runs; ``.github/dependabot.yml`` is what keeps the pins current.
     """
     workflow = (REPO_ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
     deploy_job = workflow.split("\n  deploy:\n", 1)[1]
     upload = deploy_job.split("- name: Upload Pages artifact", 1)[1].split(
         "- name:", 1
     )[0]
-    assert re.search(r"uses: actions/upload-pages-artifact@v\d+", upload)
+    assert re.search(
+        r"uses: actions/upload-pages-artifact@[0-9a-f]{40} "
+        r"# actions/upload-pages-artifact@v\d",
+        upload,
+    )
     assert "path: _site" in upload
     assert "include-hidden-files: true" in upload
-    assert re.search(r"uses: actions/deploy-pages@v\d+", deploy_job)
+    assert re.search(
+        r"uses: actions/deploy-pages@[0-9a-f]{40} # actions/deploy-pages@v\d",
+        deploy_job,
+    )
     verify = deploy_job.split(
         "- name: Verify deployed artifact against candidate SHA", 1
     )[1].split("- name:", 1)[0]
@@ -71,6 +80,42 @@ def test_pages_deploy_projects_and_verifies_the_exact_candidate():
     assert "if: always()" in receipt
     assert "path: /tmp/deployment-acceptance.json" in receipt
     assert "if-no-files-found: error" in receipt
+
+
+def test_every_third_party_action_is_pinned_to_a_named_commit():
+    """The pinning contract, checked against the workflows rather than stated.
+
+    A tag is mutable, so a tag reference is not a version: the same workflow can
+    run different code tomorrow without a commit here. Every third-party action
+    is therefore pinned to a full commit SHA and names the release that commit
+    belongs to, which is what makes a bump a reviewable diff. Reusable workflows
+    in this repository (``./``) are its own code and carry no pin; a
+    ``docker://`` reference is not a GitHub action.
+    """
+    unpinned: list[str] = []
+    unnamed: list[str] = []
+    for path in sorted((REPO_ROOT / ".github/workflows").glob("*.y*ml")):
+        for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+            match = re.match(r"\s*(?:-\s*)?uses:\s*['\"]?([^'\"\s]+)", line)
+            if match is None:
+                continue
+            ref = match.group(1)
+            if ref.startswith(("./", "docker://")):
+                continue
+            revision = ref.rsplit("@", 1)[-1] if "@" in ref else ""
+            if not re.fullmatch(r"[0-9a-f]{40}", revision):
+                unpinned.append(f"{path.name}:{number}: {ref}")
+            elif not re.search(r"#\s*(?:[\w.-]+/[\w.-]+@)?v?\d+[\w.]*", line):
+                unnamed.append(f"{path.name}:{number}: {ref}")
+
+    assert not unpinned, (
+        "third-party actions are pinned to a commit SHA, not a tag: "
+        + ", ".join(unpinned)
+    )
+    assert not unnamed, (
+        "a pinned action names the release its commit belongs to: "
+        + ", ".join(unnamed)
+    )
 
 
 def test_publication_and_validation_share_required_browser_acceptance():
