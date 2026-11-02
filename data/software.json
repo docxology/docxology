@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-23T17:48:01Z",
+  "generated_at": "2026-11-02T01:42:40Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 168,
+  "count": 172,
   "repositories": [
     {
       "name": "template",
@@ -1337,6 +1337,42 @@
       "zenodo_url": ""
     },
     {
+      "name": "region-intel",
+      "url": "https://github.com/docxology/region-intel",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Shared regional civic intelligence methods — verified acquisition, alert adapters, search, RAG, analytics, and publication/manuscript tooling",
+      "language": "TypeScript",
+      "stars": 0,
+      "updated_or_year": "2026-10",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "davis-ca-intel",
+      "url": "https://github.com/docxology/davis-ca-intel",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Davis and Yolo County civic intelligence — thin regional orchestration powered by region-intel",
+      "language": "TeX",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "rikishi",
+      "url": "https://github.com/docxology/rikishi",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "SUMO ontology operator, reasoning workbench, source-bound FEP connections, and reproducible manuscript",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-10",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
       "name": "math4wisdom-superhuman-docs-archive",
       "url": "https://github.com/docxology/math4wisdom-superhuman-docs-archive",
       "owner": "docxology",
@@ -1761,7 +1797,7 @@
       "url": "https://github.com/ActiveInferenceInstitute/fep_formal",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI · Zenodo software archive",
+      "description": "Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline ·  · Zenodo artifact v2.1.0 · Citation DOI · Zenodo software archive",
       "language": "Python",
       "stars": 5,
       "updated_or_year": "2026-10",
@@ -2013,12 +2049,24 @@
       "url": "https://github.com/ActiveInferenceInstitute/active_inference_language_model",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Active Inference Language Model — public repository with no committed contents at the 2026-10-06 review",
+      "description": "Active Inference Language Model — public repository with no committed contents at the 2026-10-06 review · Zenodo",
       "language": "",
       "stars": 0,
       "updated_or_year": "2026-10",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_ActiveInferenceLanguage/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22409418"
+    },
+    {
+      "name": "active_inference_battleship",
+      "url": "https://github.com/ActiveInferenceInstitute/active_inference_battleship",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "GNN-based active inference for Battleship — playable dashboard, interpretable decisions, reproducible manuscript, and animated lecture · Citation DOI",
+      "language": "TypeScript",
+      "stars": 0,
+      "updated_or_year": "2026-10",
+      "paper_path": "papers/2026_GNNBasedActive/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.23670187"
     }
   ]
 }

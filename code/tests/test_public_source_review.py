@@ -16,13 +16,13 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 REPO_ROOT = Path(__file__).resolve().parents[2]
 ORCH = REPO_ROOT / "code" / "orchestrators" / "build_public_source_review.py"
 
-import build_public_source_review  # noqa: E402
 from docxology_tools.public_source_review import (  # noqa: E402
     build_review_report,
     render_json,
     render_markdown,
     validate_review_report,
 )
+import build_public_source_review  # noqa: E402
 
 
 def _write_json(path: Path, payload: dict) -> Path:
@@ -118,7 +118,7 @@ def _inputs(root: Path) -> dict[str, Path]:
                         }
                     ],
                 }
-            ]
+            ],
         },
     )
     doi_review = _write_json(
@@ -727,7 +727,9 @@ def test_applied_strong_update_requires_exact_provenance_and_approval(
             "provenance": {
                 "action_sha256": action_sha256,
                 "metadata_path": "papers/2026_Candidate/metadata.json",
-                "metadata_sha256": hashlib.sha256(metadata_path.read_bytes()).hexdigest(),
+                "metadata_sha256": hashlib.sha256(
+                    metadata_path.read_bytes()
+                ).hexdigest(),
                 "applied_at": "2026-08-25T12:15:00Z",
                 "approval": {
                     "decision": "approved",
@@ -846,7 +848,9 @@ def test_superseded_strong_receipt_is_historical_only_with_a_later_current_recei
     assert old["status"] == "applied"
     assert old["candidate"]["applied_receipt_valid"] is False
     assert old["candidate"]["historical_supersession_valid"] is True
-    assert old["candidate"]["historical_supersession"]["state"] == "historical-superseded"
+    assert (
+        old["candidate"]["historical_supersession"]["state"] == "historical-superseded"
+    )
     assert (
         old["candidate"]["historical_supersession"]["superseded_by"][
             "github_release_url"
@@ -1171,26 +1175,63 @@ def test_software_catalogued_pair_review_rechecks_current_sources(tmp_path: Path
     paths = _inputs(tmp_path)
     pages = tmp_path / "pages"
     pages.mkdir()
-    (pages / "BIBLIOGRAPHY.md").write_text("| 1 | 2026 | 🧠 | Paper | Existing | Zenodo | 10.5281/zenodo.100 | [📄](../papers/2026_Existing/) |\n")
+    (pages / "BIBLIOGRAPHY.md").write_text(
+        "| 1 | 2026 | 🧠 | Paper | Existing | Zenodo | 10.5281/zenodo.100 | [📄](../papers/2026_Existing/) |\n"
+    )
     software = pages / "SOFTWARE.md"
-    software.write_text("## 🧬 Repositories Owned by docxology\n| [demo](https://github.com/docxology/demo) | [Zenodo](https://doi.org/10.5281/zenodo.500) · [📄](../papers/2026_Existing/) | Python | 0 | 2026 |\n")
-    action = {"action_type": "software_catalogued", "title": "Demo software archive", "zenodo_record_url": "https://zenodo.org/records/500", "doi": "10.5281/zenodo.500", "folder": "2026_Existing", "github_repo": "docxology/demo", "release_tag": "v1", "github_release_url": "https://github.com/docxology/demo/releases/tag/v1"}
+    software.write_text(
+        "## 🧬 Repositories Owned by docxology\n| [demo](https://github.com/docxology/demo) | [Zenodo](https://doi.org/10.5281/zenodo.500) · [📄](../papers/2026_Existing/) | Python | 0 | 2026 |\n"
+    )
+    action = {
+        "action_type": "software_catalogued",
+        "title": "Demo software archive",
+        "zenodo_record_url": "https://zenodo.org/records/500",
+        "doi": "10.5281/zenodo.500",
+        "folder": "2026_Existing",
+        "github_repo": "docxology/demo",
+        "release_tag": "v1",
+        "github_release_url": "https://github.com/docxology/demo/releases/tag/v1",
+    }
     paired = json.loads(paths["paired_publications_path"].read_text())
     paired["actions"] = [action]
-    pair = {key: action[key] for key in ("doi", "github_repo", "github_release_url", "zenodo_record_url")}
-    pair["record"] = {"doi": action["doi"], "title": action["title"], "resource_type": {"id": "software"}}
+    pair = {
+        key: action[key]
+        for key in ("doi", "github_repo", "github_release_url", "zenodo_record_url")
+    }
+    pair["record"] = {
+        "doi": action["doi"],
+        "title": action["title"],
+        "resource_type": {"id": "software"},
+    }
     pair["release"] = {"tag": action["release_tag"]}
     paired["pairs"] = [pair]
+
     def status():
         _write_json(paths["paired_publications_path"], paired)
-        report = build_review_report(repo_root=tmp_path, report_date="2026-08-25", source_commit="a" * 40, **paths)
-        return next(item["status"] for item in report["items"] if item["id"].startswith("paired-publication:"))
+        report = build_review_report(
+            repo_root=tmp_path,
+            report_date="2026-08-25",
+            source_commit="a" * 40,
+            **paths,
+        )
+        return next(
+            item["status"]
+            for item in report["items"]
+            if item["id"].startswith("paired-publication:")
+        )
+
     assert status() == "applied"
     for malformed in ({"type": "publication"}, "software", ["software"], 1):
         pair["record"]["resource_type"] = malformed
         assert status() == "deferred"
     pair["record"]["resource_type"] = {"type": "software"}
-    for field in ("title", "github_repo", "github_release_url", "release_tag", "zenodo_record_url"):
+    for field in (
+        "title",
+        "github_repo",
+        "github_release_url",
+        "release_tag",
+        "zenodo_record_url",
+    ):
         original = action[field]
         action[field] = original + "-changed"
         assert status() == "deferred"

@@ -13,7 +13,11 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-from docxology_tools.report_paths import dated_report_path, generated_timestamp, latest_report  # noqa: E402
+from docxology_tools.report_paths import (  # noqa: E402
+    dated_report_path,
+    generated_timestamp,
+    latest_report,
+)
 
 OUT = dated_report_path("asset_size", "json")
 
@@ -105,7 +109,7 @@ def render_for_write(path: Path) -> str:
     try:
         current = json.loads(content)
         existing = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
+    except OSError, json.JSONDecodeError:
         return content
     current.pop("generated_at", None)
     existing.pop("generated_at", None)
@@ -132,10 +136,14 @@ def render(generated_at: str | None = None) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if the asset-size report is stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if the asset-size report is stale"
+    )
     args = parser.parse_args()
     out = latest_report("asset_size_*.json") if args.check else OUT
-    content = render(existing_generated_at(out)) if args.check else render_for_write(out)
+    content = (
+        render(existing_generated_at(out)) if args.check else render_for_write(out)
+    )
     if args.check:
         if not out.exists():
             raise SystemExit("Stale asset-size report")
@@ -146,12 +154,19 @@ def main() -> None:
             # contract. Compare the structural fields instead; only fail when a
             # file row appears/disappears or a budget verdict changes.
             import json as _json
+
             fresh = _json.loads(content)
             current = _json.loads(on_disk)
+
             def _verdicts(d):
                 return {x["path"]: x.get("ok") for x in d.get("largest", [])}
-            if (_json.dumps(fresh.get("warnings")), _json.dumps(fresh.get("over_budget", fresh.get("warnings")))) != (
-                _json.dumps(current.get("warnings")), _json.dumps(current.get("over_budget", current.get("warnings")))
+
+            if (
+                _json.dumps(fresh.get("warnings")),
+                _json.dumps(fresh.get("over_budget", fresh.get("warnings"))),
+            ) != (
+                _json.dumps(current.get("warnings")),
+                _json.dumps(current.get("over_budget", current.get("warnings"))),
             ) or _verdicts(fresh) != _verdicts(current):
                 raise SystemExit("Stale asset-size report")
             print("asset-size report: size-only drift tolerated")
@@ -159,7 +174,10 @@ def main() -> None:
         OUT.parent.mkdir(parents=True, exist_ok=True)
         OUT.write_text(content, encoding="utf-8")
     payload = json.loads(content)
-    print(("checked" if args.check else "wrote") + f" asset-size report ({payload['warnings']} warnings)")
+    print(
+        ("checked" if args.check else "wrote")
+        + f" asset-size report ({payload['warnings']} warnings)"
+    )
 
 
 if __name__ == "__main__":

@@ -14,7 +14,9 @@ import docxology_tools  # noqa: E402, F401
 import browser_smoke  # noqa: E402
 
 
-def test_smoke_writer_redacts_workspace_before_bounding_diagnostics(tmp_path, monkeypatch):
+def test_smoke_writer_redacts_workspace_before_bounding_diagnostics(
+    tmp_path, monkeypatch
+):
     root = tmp_path / "private-person-records" / "checkout"
     out_dir = root / "reports" / "browser-smoke" / "fixture"
     monkeypatch.setattr(browser_smoke, "REPO_ROOT", root)
@@ -22,7 +24,9 @@ def test_smoke_writer_redacts_workspace_before_bounding_diagnostics(tmp_path, mo
     monkeypatch.setattr(browser_smoke, "MANIFEST", out_dir / "manifest.json")
     monkeypatch.setattr(browser_smoke, "wait_for_server", lambda _url: None)
     monkeypatch.setattr(browser_smoke, "source_commit", lambda: "a" * 40)
-    monkeypatch.setattr(browser_smoke, "source_worktree_state", lambda: {"source_worktree_clean": False})
+    monkeypatch.setattr(
+        browser_smoke, "source_worktree_state", lambda: {"source_worktree_clean": False}
+    )
 
     class Server:
         def terminate(self):
@@ -31,7 +35,9 @@ def test_smoke_writer_redacts_workspace_before_bounding_diagnostics(tmp_path, mo
         def wait(self, timeout):
             return 0
 
-    monkeypatch.setattr(browser_smoke.subprocess, "Popen", lambda *args, **kwargs: Server())
+    monkeypatch.setattr(
+        browser_smoke.subprocess, "Popen", lambda *args, **kwargs: Server()
+    )
 
     def capture(args, **kwargs):
         assert kwargs["cwd"] == root
@@ -52,4 +58,6 @@ def test_smoke_writer_redacts_workspace_before_bounding_diagnostics(tmp_path, mo
         assert f"Waiting for selector {check['selector']}..." in check["stdout"]
         assert f"Capturing screenshot into {check['screenshot']}" in check["stdout"]
         assert check["stderr"] == "x" * 20 + "y" * 480
-        assert check["screenshot_sha256"] == browser_smoke.sha256_file(root / check["screenshot"])
+        assert check["screenshot_sha256"] == browser_smoke.sha256_file(
+            root / check["screenshot"]
+        )

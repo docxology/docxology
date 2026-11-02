@@ -58,7 +58,13 @@ def test_env_overrides_reject_malformed_values(monkeypatch):
 
 def test_generated_pages_carry_the_footer_stamp():
     sampled = 0
-    for rel in ("404.html", "catalog.html", "evidence.html", "exports.html", "updates.html"):
+    for rel in (
+        "404.html",
+        "catalog.html",
+        "evidence.html",
+        "exports.html",
+        "updates.html",
+    ):
         html = (REPO_ROOT / rel).read_text(encoding="utf-8")
         match = FOOTER_STAMP_RE.search(html)
         assert match, f"{rel} missing footer build stamp"
@@ -70,7 +76,11 @@ def test_work_pages_carry_the_footer_stamp():
     works = REPO_ROOT / "works"
     pages = sorted(p for p in works.glob("*.html") if p.name != "index.html")
     assert pages
-    without = [p.name for p in pages[:40] if not FOOTER_STAMP_RE.search(p.read_text(encoding="utf-8"))]
+    without = [
+        p.name
+        for p in pages[:40]
+        if not FOOTER_STAMP_RE.search(p.read_text(encoding="utf-8"))
+    ]
     assert not without, f"work pages missing stamp: {without[:5]}"
 
 

@@ -44,10 +44,14 @@ def _split_list(cell: str) -> list[str]:
 def load_collections(source: Path = SOURCE) -> list[ArtCollection]:
     """Parse the pipe table; raise on structural drift so curation stays loud."""
     lines = [line for line in source.read_text(encoding="utf-8").splitlines()]
-    header_idx = next(i for i, line in enumerate(lines) if line.strip().startswith("| Slug |"))
+    header_idx = next(
+        i for i, line in enumerate(lines) if line.strip().startswith("| Slug |")
+    )
     separator_idx = header_idx + 1
     if not re.match(r"^\s*\|[\s\-|]+\|\s*$", lines[separator_idx]):
-        raise ValueError(f"{source}: malformed table separator after the Slug header row")
+        raise ValueError(
+            f"{source}: malformed table separator after the Slug header row"
+        )
     collections: list[ArtCollection] = []
     slugs: set[str] = set()
     for line in lines[separator_idx + 1 :]:
@@ -55,10 +59,14 @@ def load_collections(source: Path = SOURCE) -> list[ArtCollection]:
             break
         cells = parse_row_cells(line)
         if len(cells) != 5:
-            raise ValueError(f"{source}: expected 5 columns (Slug, Title, Intro, Tags, Title keywords), got {len(cells)}: {line[:80]}")
+            raise ValueError(
+                f"{source}: expected 5 columns (Slug, Title, Intro, Tags, Title keywords), got {len(cells)}: {line[:80]}"
+            )
         slug, title, intro, tags_cell, keywords_cell = cells
         if not slug or not title or not intro:
-            raise ValueError(f"{source}: slug, title, and intro are required: {line[:80]}")
+            raise ValueError(
+                f"{source}: slug, title, and intro are required: {line[:80]}"
+            )
         if slug in slugs:
             raise ValueError(f"{source}: duplicate collection slug {slug!r}")
         slugs.add(slug)
@@ -68,7 +76,9 @@ def load_collections(source: Path = SOURCE) -> list[ArtCollection]:
                 title=title,
                 intro=intro,
                 tags=frozenset(normalize_tag(tag) for tag in _split_list(tags_cell)),
-                keywords=tuple(keyword.lower() for keyword in _split_list(keywords_cell)),
+                keywords=tuple(
+                    keyword.lower() for keyword in _split_list(keywords_cell)
+                ),
             )
         )
     if not collections:
@@ -86,7 +96,9 @@ def _matches(record: dict, collection: ArtCollection) -> bool:
     return bool(tags & collection.tags) or _title_matches(record, collection)
 
 
-def record_collections(record: dict, collections: list[ArtCollection]) -> list[ArtCollection]:
+def record_collections(
+    record: dict, collections: list[ArtCollection]
+) -> list[ArtCollection]:
     """Collections whose tag set or title keywords match the record."""
     return [collection for collection in collections if _matches(record, collection)]
 

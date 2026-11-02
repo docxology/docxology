@@ -142,7 +142,9 @@ _SEED_RECEIPT_JSON = r"""{
   "source": "Direct authenticated browser observation of https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en",
   "method": "Direct Chrome browser observation of the canonical profile on 2026-10-02 in an authenticated Google session (signed-in account control visible). All-time: 823 citations, h-index 14, i10-index 17; Since-2021: 594 / 14 / 15. No anonymous or search-engine cached result was used."
 }"""
-SEED_SNAPSHOT_SHA256 = "d9c4b848ad04238eb731f05748bbb88e473518ffe87a422526cfd9b11651b00d"
+SEED_SNAPSHOT_SHA256 = (
+    "d9c4b848ad04238eb731f05748bbb88e473518ffe87a422526cfd9b11651b00d"
+)
 
 SEED_SNAPSHOT_BYTES = canonical_json_bytes(json.loads(_SEED_SNAPSHOT_JSON))
 SEED_RECEIPT_BYTES = canonical_json_bytes(json.loads(_SEED_RECEIPT_JSON))
@@ -259,7 +261,11 @@ def _expected_snapshot() -> dict:
     """Re-derive the recorded snapshot independently of the recorder's helpers."""
     expected = json.loads(SEED_SNAPSHOT_BYTES.decode("utf-8"))
     expected.update(
-        citations=824, h_index=14, i10_index=17, as_of="2026-10-05", method=EXPECTED_METHOD
+        citations=824,
+        h_index=14,
+        i10_index=17,
+        as_of="2026-10-05",
+        method=EXPECTED_METHOD,
     )
     expected["since_2021"] = {"citations": 595, "h_index": 14, "i10_index": 15}
     expected["history"][-1]["note"] = (
@@ -303,7 +309,14 @@ def test_records_an_observation_and_binds_the_receipt(tmp_path: Path):
     seed = json.loads(SEED_SNAPSHOT_BYTES)
     # Only the observation moved: key order, policy, profile and secondary fields stay curated.
     assert list(snapshot) == list(seed)
-    for untouched in ("metric", "profile_id", "profile_url", "secondary_profile_id", "secondary_profile_note", "policy"):
+    for untouched in (
+        "metric",
+        "profile_id",
+        "profile_url",
+        "secondary_profile_id",
+        "secondary_profile_note",
+        "policy",
+    ):
         assert snapshot[untouched] == seed[untouched]
     assert snapshot["history"][:-2] == seed["history"][:-1]
     assert snapshot["history"][-2]["note"].endswith("(superseded 2026-10-05)")
@@ -322,12 +335,23 @@ def test_records_an_observation_and_binds_the_receipt(tmp_path: Path):
         "since_2021": {"citations": 595, "h_index": 14, "i10_index": 15},
     }
     assert receipt["method"] == snapshot["method"] == EXPECTED_METHOD
-    assert receipt["source"] == "Direct authenticated observation of " + snapshot["profile_url"]
-    assert "browser" not in receipt["source"].lower() and "browser" not in receipt["method"].lower()
-    assert receipt_bytes == (json.dumps(receipt, indent=2, ensure_ascii=False) + "\n").encode("utf-8")
+    assert (
+        receipt["source"]
+        == "Direct authenticated observation of " + snapshot["profile_url"]
+    )
+    assert (
+        "browser" not in receipt["source"].lower()
+        and "browser" not in receipt["method"].lower()
+    )
+    assert receipt_bytes == (
+        json.dumps(receipt, indent=2, ensure_ascii=False) + "\n"
+    ).encode("utf-8")
     assert validate_scholar_snapshot_receipt(tmp_path) == []
     assert checkout.sync_check().returncode == 0
-    assert checkout.data_files() == ["scholar-snapshot.json", "scholar-verification-receipt.json"]
+    assert checkout.data_files() == [
+        "scholar-snapshot.json",
+        "scholar-verification-receipt.json",
+    ]
     for command in (
         "sync_scholar_metrics.py",
         "regenerate_all.py --validate",
@@ -357,27 +381,100 @@ def test_non_utc_verified_at_is_normalised_to_utc(tmp_path: Path):
     result = checkout.run(*_record_args("--verified-at", "2026-10-04T17:30:00-07:00"))
 
     assert result.returncode == 0, result.stderr
-    assert json.loads(checkout.receipt.read_text(encoding="utf-8"))["verified_at"] == "2026-10-05T00:30:00Z"
+    assert (
+        json.loads(checkout.receipt.read_text(encoding="utf-8"))["verified_at"]
+        == "2026-10-05T00:30:00Z"
+    )
 
 
 @pytest.mark.parametrize(
     ("overrides", "extra", "attest", "returncode", "message"),
     [
-        pytest.param({"as_of": "2026-10-02"}, [], True, 1, "strictly later", id="same-day-as-of"),
-        pytest.param({"as_of": "2026-09-01"}, [], True, 1, "strictly later", id="older-as-of"),
-        pytest.param({"as_of": "2999-01-01"}, [], True, 1, "in the future", id="future-as-of"),
-        pytest.param({"as_of": "2026-13-45"}, [], True, 2, "calendar date", id="impossible-date"),
-        pytest.param({"as_of": "20261005"}, [], True, 2, "YYYY-MM-DD", id="compact-date"),
-        pytest.param({}, ["--verified-at", "2026-10-05T10:00:00"], True, 2, "timezone-qualified", id="naive-verified-at"),
-        pytest.param({}, ["--verified-at", "2026-10-05"], True, 2, "timezone-qualified", id="bare-date-verified-at"),
-        pytest.param({}, ["--verified-at", "2999-01-01T00:00:00Z"], True, 1, "in the future", id="future-verified-at"),
-        pytest.param({}, ["--verified-at", "2026-10-01T00:00:00Z"], True, 1, "precedes as_of", id="verified-at-before-as-of"),
-        pytest.param({"citations": -1}, [], True, 2, "non-negative integer", id="negative-metric"),
-        pytest.param({"h_index": "true"}, [], True, 2, "non-negative integer", id="boolean-metric"),
-        pytest.param({"i10_index": "1.5"}, [], True, 2, "non-negative integer", id="fractional-metric"),
-        pytest.param({"since_2021_citations": "+7"}, [], True, 2, "non-negative integer", id="signed-metric"),
-        pytest.param({}, [], False, 2, "--attest-direct-authenticated", id="missing-attestation"),
-        pytest.param({"as_of": LATE_AS_OF}, [], True, 1, "--verified-at", id="defaulted-verified-at-too-late"),
+        pytest.param(
+            {"as_of": "2026-10-02"}, [], True, 1, "strictly later", id="same-day-as-of"
+        ),
+        pytest.param(
+            {"as_of": "2026-09-01"}, [], True, 1, "strictly later", id="older-as-of"
+        ),
+        pytest.param(
+            {"as_of": "2999-01-01"}, [], True, 1, "in the future", id="future-as-of"
+        ),
+        pytest.param(
+            {"as_of": "2026-13-45"}, [], True, 2, "calendar date", id="impossible-date"
+        ),
+        pytest.param(
+            {"as_of": "20261005"}, [], True, 2, "YYYY-MM-DD", id="compact-date"
+        ),
+        pytest.param(
+            {},
+            ["--verified-at", "2026-10-05T10:00:00"],
+            True,
+            2,
+            "timezone-qualified",
+            id="naive-verified-at",
+        ),
+        pytest.param(
+            {},
+            ["--verified-at", "2026-10-05"],
+            True,
+            2,
+            "timezone-qualified",
+            id="bare-date-verified-at",
+        ),
+        pytest.param(
+            {},
+            ["--verified-at", "2999-01-01T00:00:00Z"],
+            True,
+            1,
+            "in the future",
+            id="future-verified-at",
+        ),
+        pytest.param(
+            {},
+            ["--verified-at", "2026-10-01T00:00:00Z"],
+            True,
+            1,
+            "precedes as_of",
+            id="verified-at-before-as-of",
+        ),
+        pytest.param(
+            {"citations": -1}, [], True, 2, "non-negative integer", id="negative-metric"
+        ),
+        pytest.param(
+            {"h_index": "true"},
+            [],
+            True,
+            2,
+            "non-negative integer",
+            id="boolean-metric",
+        ),
+        pytest.param(
+            {"i10_index": "1.5"},
+            [],
+            True,
+            2,
+            "non-negative integer",
+            id="fractional-metric",
+        ),
+        pytest.param(
+            {"since_2021_citations": "+7"},
+            [],
+            True,
+            2,
+            "non-negative integer",
+            id="signed-metric",
+        ),
+        pytest.param(
+            {}, [], False, 2, "--attest-direct-authenticated", id="missing-attestation"
+        ),
+        pytest.param(
+            {"as_of": LATE_AS_OF},
+            [],
+            True,
+            1,
+            "--verified-at",
+            id="defaulted-verified-at-too-late",
+        ),
         pytest.param(
             {
                 "citations": 595,
@@ -393,11 +490,39 @@ def test_non_utc_verified_at_is_normalised_to_utc(tmp_path: Path):
             "transposed",
             id="transposed-columns",
         ),
-        pytest.param({"since_2021_citations": 825}, [], True, 1, "exceeds the all-time citations", id="since-citations-above-all-time"),
-        pytest.param({"since_2021_h_index": 15}, [], True, 1, "exceeds the all-time h_index", id="since-h-above-all-time"),
-        pytest.param({"since_2021_i10_index": 18}, [], True, 1, "exceeds the all-time i10_index", id="since-i10-above-all-time"),
         pytest.param(
-            {"citations": 10, "h_index": 14, "i10_index": 5, "since_2021_citations": 9, "since_2021_h_index": 3, "since_2021_i10_index": 0},
+            {"since_2021_citations": 825},
+            [],
+            True,
+            1,
+            "exceeds the all-time citations",
+            id="since-citations-above-all-time",
+        ),
+        pytest.param(
+            {"since_2021_h_index": 15},
+            [],
+            True,
+            1,
+            "exceeds the all-time h_index",
+            id="since-h-above-all-time",
+        ),
+        pytest.param(
+            {"since_2021_i10_index": 18},
+            [],
+            True,
+            1,
+            "exceeds the all-time i10_index",
+            id="since-i10-above-all-time",
+        ),
+        pytest.param(
+            {
+                "citations": 10,
+                "h_index": 14,
+                "i10_index": 5,
+                "since_2021_citations": 9,
+                "since_2021_h_index": 3,
+                "since_2021_i10_index": 0,
+            },
             [],
             True,
             1,
@@ -405,7 +530,14 @@ def test_non_utc_verified_at_is_normalised_to_utc(tmp_path: Path):
             id="all-time-h-above-citations",
         ),
         pytest.param(
-            {"citations": 10, "h_index": 3, "i10_index": 17, "since_2021_citations": 9, "since_2021_h_index": 3, "since_2021_i10_index": 0},
+            {
+                "citations": 10,
+                "h_index": 3,
+                "i10_index": 17,
+                "since_2021_citations": 9,
+                "since_2021_h_index": 3,
+                "since_2021_i10_index": 0,
+            },
             [],
             True,
             1,
@@ -413,7 +545,11 @@ def test_non_utc_verified_at_is_normalised_to_utc(tmp_path: Path):
             id="all-time-i10-above-citations",
         ),
         pytest.param(
-            {"since_2021_citations": 5, "since_2021_h_index": 6, "since_2021_i10_index": 2},
+            {
+                "since_2021_citations": 5,
+                "since_2021_h_index": 6,
+                "since_2021_i10_index": 2,
+            },
             [],
             True,
             1,
@@ -421,7 +557,11 @@ def test_non_utc_verified_at_is_normalised_to_utc(tmp_path: Path):
             id="since-h-above-since-citations",
         ),
         pytest.param(
-            {"since_2021_citations": 5, "since_2021_h_index": 2, "since_2021_i10_index": 6},
+            {
+                "since_2021_citations": 5,
+                "since_2021_h_index": 2,
+                "since_2021_i10_index": 6,
+            },
             [],
             True,
             1,
@@ -431,7 +571,12 @@ def test_non_utc_verified_at_is_normalised_to_utc(tmp_path: Path):
     ],
 )
 def test_refusals_leave_both_files_byte_identical(
-    tmp_path: Path, overrides: dict, extra: list[str], attest: bool, returncode: int, message: str
+    tmp_path: Path,
+    overrides: dict,
+    extra: list[str],
+    attest: bool,
+    returncode: int,
+    message: str,
 ):
     checkout = _checkout(tmp_path)
     before = checkout.state()
@@ -442,16 +587,25 @@ def test_refusals_leave_both_files_byte_identical(
     assert result.returncode == returncode, result.stderr
     assert message in result.stderr
     assert checkout.state() == before
-    assert checkout.data_files() == ["scholar-snapshot.json", "scholar-verification-receipt.json"]
+    assert checkout.data_files() == [
+        "scholar-snapshot.json",
+        "scholar-verification-receipt.json",
+    ]
 
 
-def test_refuses_when_the_last_history_entry_disagrees_with_the_snapshot(tmp_path: Path):
+def test_refuses_when_the_last_history_entry_disagrees_with_the_snapshot(
+    tmp_path: Path,
+):
     drifted = json.loads(SEED_SNAPSHOT_BYTES)
     drifted["history"][-1]["citations"] = 800
     snapshot_bytes = canonical_json_bytes(drifted)
     receipt = json.loads(SEED_RECEIPT_BYTES)
     receipt["snapshot_sha256"] = _sha256(snapshot_bytes)
-    checkout = _checkout(tmp_path, snapshot_bytes=snapshot_bytes, receipt_bytes=canonical_json_bytes(receipt))
+    checkout = _checkout(
+        tmp_path,
+        snapshot_bytes=snapshot_bytes,
+        receipt_bytes=canonical_json_bytes(receipt),
+    )
     before = checkout.state()
 
     result = checkout.run(*_record_args("--verified-at", VERIFIED_AT))
@@ -467,7 +621,11 @@ def test_refuses_a_snapshot_without_history(tmp_path: Path):
     snapshot_bytes = canonical_json_bytes(bare)
     receipt = json.loads(SEED_RECEIPT_BYTES)
     receipt["snapshot_sha256"] = _sha256(snapshot_bytes)
-    checkout = _checkout(tmp_path, snapshot_bytes=snapshot_bytes, receipt_bytes=canonical_json_bytes(receipt))
+    checkout = _checkout(
+        tmp_path,
+        snapshot_bytes=snapshot_bytes,
+        receipt_bytes=canonical_json_bytes(receipt),
+    )
     before = checkout.state()
 
     result = checkout.run(*_record_args("--verified-at", VERIFIED_AT))
@@ -502,20 +660,28 @@ def test_dry_run_writes_nothing_and_predicts_the_real_sha(tmp_path: Path):
 
     assert dry.returncode == 0, dry.stderr
     assert checkout.state() == before
-    assert checkout.data_files() == ["scholar-snapshot.json", "scholar-verification-receipt.json"]
+    assert checkout.data_files() == [
+        "scholar-snapshot.json",
+        "scholar-verification-receipt.json",
+    ]
     assert "dry run: nothing written" in dry.stdout
     assert "823 -> 824 (+1)" in dry.stdout
     assert "594 -> 595 (+1)" in dry.stdout
     assert "(superseded 2026-10-05)" in dry.stdout
     predicted = next(
-        line.split()[-1] for line in dry.stdout.splitlines() if line.strip().startswith("snapshot_sha256")
+        line.split()[-1]
+        for line in dry.stdout.splitlines()
+        if line.strip().startswith("snapshot_sha256")
     )
 
     real = checkout.run(*_record_args("--verified-at", VERIFIED_AT))
 
     assert real.returncode == 0, real.stderr
     assert _sha256(checkout.snapshot.read_bytes()) == predicted
-    assert json.loads(checkout.receipt.read_text(encoding="utf-8"))["snapshot_sha256"] == predicted
+    assert (
+        json.loads(checkout.receipt.read_text(encoding="utf-8"))["snapshot_sha256"]
+        == predicted
+    )
 
 
 def test_check_tracks_whether_the_exact_observation_is_recorded(tmp_path: Path):
@@ -551,11 +717,16 @@ def test_rerunning_a_recorded_observation_is_a_no_op(tmp_path: Path):
     assert again.returncode == 0, again.stderr
     assert "already recorded" in again.stdout
     assert checkout.state() == recorded
-    assert len(json.loads(recorded[0])["history"]) == len(json.loads(SEED_SNAPSHOT_BYTES)["history"]) + 1
+    assert (
+        len(json.loads(recorded[0])["history"])
+        == len(json.loads(SEED_SNAPSHOT_BYTES)["history"]) + 1
+    )
 
 
 @pytest.mark.parametrize("damage", ["deleted", "wrong-sha", "undecodable"])
-def test_a_lost_or_stale_receipt_is_regenerated_without_touching_the_snapshot(tmp_path: Path, damage: str):
+def test_a_lost_or_stale_receipt_is_regenerated_without_touching_the_snapshot(
+    tmp_path: Path, damage: str
+):
     checkout = _checkout(tmp_path)
     assert checkout.run(*_record_args("--verified-at", VERIFIED_AT)).returncode == 0
     snapshot_bytes = checkout.snapshot.read_bytes()
@@ -588,7 +759,9 @@ def test_receipt_only_recovery_refuses_a_method_that_would_diverge(tmp_path: Pat
     assert checkout.run(*_record_args("--verified-at", VERIFIED_AT)).returncode == 0
     checkout.receipt.unlink()
 
-    result = checkout.run(*_record_args("--verified-at", VERIFIED_AT, "--method", "something else"))
+    result = checkout.run(
+        *_record_args("--verified-at", VERIFIED_AT, "--method", "something else")
+    )
 
     assert result.returncode == 1
     assert "--method" in result.stderr
@@ -627,17 +800,24 @@ def test_operator_supplied_method_source_and_history_note(tmp_path: Path):
     receipt = json.loads(checkout.receipt.read_text(encoding="utf-8"))
     assert snapshot["method"] == receipt["method"] == "Operator-written method."
     assert receipt["source"] == "Operator-written source."
-    assert snapshot["history"][-1]["note"] == f"Operator observation {EM_DASH} current source of truth."
+    assert (
+        snapshot["history"][-1]["note"]
+        == f"Operator observation {EM_DASH} current source of truth."
+    )
     assert validate_scholar_snapshot_receipt(tmp_path) == []
 
 
 def test_successor_observation_applies_to_the_live_pair(tmp_path: Path):
     """Replay the tool over the curated pair so it cannot drift from the live history shape."""
     live_snapshot = (REPO_ROOT / "data" / "scholar-snapshot.json").read_bytes()
-    live_receipt = (REPO_ROOT / "data" / "scholar-verification-receipt.json").read_bytes()
+    live_receipt = (
+        REPO_ROOT / "data" / "scholar-verification-receipt.json"
+    ).read_bytes()
     live = json.loads(live_snapshot)
     successor = date.fromisoformat(live["as_of"]) + timedelta(days=1)
-    checkout = _checkout(tmp_path, snapshot_bytes=live_snapshot, receipt_bytes=live_receipt)
+    checkout = _checkout(
+        tmp_path, snapshot_bytes=live_snapshot, receipt_bytes=live_receipt
+    )
     assert validate_scholar_snapshot_receipt(tmp_path) == []
 
     result = checkout.run(
@@ -663,14 +843,20 @@ def test_successor_observation_applies_to_the_live_pair(tmp_path: Path):
     updated = json.loads(checkout.snapshot.read_text(encoding="utf-8"))
     assert list(updated) == list(live)
     assert len(updated["history"]) == len(live["history"]) + 1
-    assert updated["history"][-2]["note"].endswith(f"(superseded {successor.isoformat()})")
+    assert updated["history"][-2]["note"].endswith(
+        f"(superseded {successor.isoformat()})"
+    )
     assert updated["history"][-1]["as_of"] == successor.isoformat()
     assert validate_scholar_snapshot_receipt(tmp_path) == []
     assert checkout.sync_check().returncode == 0
 
 
-def test_an_unwritable_data_directory_is_refused_and_leaves_both_files_alone(tmp_path: Path):
-    assert os.geteuid() != 0, "Run permission-boundary tests as an unprivileged user; root bypasses chmod"
+def test_an_unwritable_data_directory_is_refused_and_leaves_both_files_alone(
+    tmp_path: Path,
+):
+    assert os.geteuid() != 0, (
+        "Run permission-boundary tests as an unprivileged user; root bypasses chmod"
+    )
     checkout = _checkout(tmp_path)
     before = checkout.state()
     data_dir = checkout.snapshot.parent
@@ -684,10 +870,15 @@ def test_an_unwritable_data_directory_is_refused_and_leaves_both_files_alone(tmp
     assert "write failed" in result.stderr
     assert "CRITICAL" not in result.stderr
     assert checkout.state() == before
-    assert checkout.data_files() == ["scholar-snapshot.json", "scholar-verification-receipt.json"]
+    assert checkout.data_files() == [
+        "scholar-snapshot.json",
+        "scholar-verification-receipt.json",
+    ]
 
 
-def test_atomic_write_replaces_bytes_keeps_the_mode_and_leaves_no_temp_files(tmp_path: Path):
+def test_atomic_write_replaces_bytes_keeps_the_mode_and_leaves_no_temp_files(
+    tmp_path: Path,
+):
     target = tmp_path / "data" / "file.json"
     target.parent.mkdir()
     target.write_bytes(b"old")
@@ -713,10 +904,15 @@ def test_atomic_write_refuses_a_symlink_target(tmp_path: Path):
         recorder._atomic_write(link, b"overwrite")
 
     assert real.read_bytes() == b"keep"
-    assert sorted(path.name for path in tmp_path.iterdir()) == ["link.json", "real.json"]
+    assert sorted(path.name for path in tmp_path.iterdir()) == [
+        "link.json",
+        "real.json",
+    ]
 
 
-def test_restore_returns_original_bytes_and_removes_files_that_did_not_exist(tmp_path: Path):
+def test_restore_returns_original_bytes_and_removes_files_that_did_not_exist(
+    tmp_path: Path,
+):
     changed = tmp_path / "changed.json"
     changed.write_bytes(b"after")
     created = tmp_path / "created.json"
@@ -738,23 +934,37 @@ def test_canonical_json_bytes_keep_order_and_literal_unicode():
 @pytest.mark.parametrize(
     ("note", "expected"),
     [
-        (f"Direct authenticated Chrome browser observation {EM_DASH} current source of truth.", "Direct authenticated Chrome browser observation (superseded 2026-10-05)"),
-        (f"manual sync {EM_DASH} CURRENT source of truth", "manual sync (superseded 2026-10-05)"),
+        (
+            f"Direct authenticated Chrome browser observation {EM_DASH} current source of truth.",
+            "Direct authenticated Chrome browser observation (superseded 2026-10-05)",
+        ),
+        (
+            f"manual sync {EM_DASH} CURRENT source of truth",
+            "manual sync (superseded 2026-10-05)",
+        ),
         ("plain note.", "plain note (superseded 2026-10-05)"),
-        ("already done (superseded 2026-01-01)", "already done (superseded 2026-01-01)"),
+        (
+            "already done (superseded 2026-01-01)",
+            "already done (superseded 2026-01-01)",
+        ),
     ],
 )
-def test_superseded_note_matches_the_established_history_pattern(note: str, expected: str):
+def test_superseded_note_matches_the_established_history_pattern(
+    note: str, expected: str
+):
     assert superseded_note(note, "2026-10-05") == expected
 
 
 def test_current_history_note_never_doubles_the_suffix():
     default = f"Direct authenticated observation {EM_DASH} current source of truth."
     assert current_history_note() == default
-    assert current_history_note("Operator note.") == f"Operator note {EM_DASH} current source of truth."
-    assert current_history_note(f"Operator note {EM_DASH} current source of truth.") == (
-        f"Operator note {EM_DASH} current source of truth."
+    assert (
+        current_history_note("Operator note.")
+        == f"Operator note {EM_DASH} current source of truth."
     )
+    assert current_history_note(
+        f"Operator note {EM_DASH} current source of truth."
+    ) == (f"Operator note {EM_DASH} current source of truth.")
 
 
 def test_supersede_history_refuses_drift_and_leaves_its_input_alone():
@@ -780,7 +990,10 @@ def test_verified_at_parsing_accepts_z_and_offsets_and_refuses_naive_values():
     utc = parse_verified_at("2026-10-05T12:00:00Z")
     assert utc == datetime(2026, 10, 5, 12, 0, tzinfo=timezone.utc)
     assert parse_verified_at("2026-10-05T14:00:00+02:00") == utc
-    assert format_verified_at(parse_verified_at("2026-10-05T05:00:00-07:00")) == "2026-10-05T12:00:00Z"
+    assert (
+        format_verified_at(parse_verified_at("2026-10-05T05:00:00-07:00"))
+        == "2026-10-05T12:00:00Z"
+    )
     for naive in ("2026-10-05T12:00:00", "2026-10-05", "not a time", ""):
         with pytest.raises(ValueError):
             parse_verified_at(naive)
@@ -790,15 +1003,41 @@ def test_observation_timing_errors_bound_both_dates_against_the_supplied_clock()
     now = datetime(2026, 10, 5, 22, 0, tzinfo=timezone.utc)
     ok = datetime(2026, 10, 5, 21, 0, tzinfo=timezone.utc)
 
-    assert observation_timing_errors(date(2026, 10, 5), ok, now, current_as_of=date(2026, 10, 2)) == []
+    assert (
+        observation_timing_errors(
+            date(2026, 10, 5), ok, now, current_as_of=date(2026, 10, 2)
+        )
+        == []
+    )
     # An evening observation west of UTC is already "tomorrow" in UTC.
     assert observation_timing_errors(date(2026, 10, 6), ok, now) == []
     assert observation_timing_errors(date(2026, 10, 7), ok, now) != []
-    assert observation_timing_errors(date(2026, 10, 5), ok, now, current_as_of=date(2026, 10, 5)) != []
-    assert observation_timing_errors(date(2026, 10, 5), now + timedelta(minutes=6), now) != []
-    assert observation_timing_errors(date(2026, 10, 5), now + timedelta(minutes=4), now) == []
-    assert observation_timing_errors(date(2026, 10, 5), datetime(2026, 10, 3, 23, 0, tzinfo=timezone.utc), now) != []
-    assert observation_timing_errors(date(2026, 10, 5), datetime(2026, 10, 4, 0, 0, tzinfo=timezone.utc), now) == []
+    assert (
+        observation_timing_errors(
+            date(2026, 10, 5), ok, now, current_as_of=date(2026, 10, 5)
+        )
+        != []
+    )
+    assert (
+        observation_timing_errors(date(2026, 10, 5), now + timedelta(minutes=6), now)
+        != []
+    )
+    assert (
+        observation_timing_errors(date(2026, 10, 5), now + timedelta(minutes=4), now)
+        == []
+    )
+    assert (
+        observation_timing_errors(
+            date(2026, 10, 5), datetime(2026, 10, 3, 23, 0, tzinfo=timezone.utc), now
+        )
+        != []
+    )
+    assert (
+        observation_timing_errors(
+            date(2026, 10, 5), datetime(2026, 10, 4, 0, 0, tzinfo=timezone.utc), now
+        )
+        == []
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -827,7 +1066,9 @@ def test_read_only_modes_need_no_attestation_and_a_write_still_does(tmp_path: Pa
     assert checkout.run(*_observation_args(), "--check").returncode == 0
 
 
-def test_the_help_text_scopes_the_attestation_and_the_interface_detail_rule(tmp_path: Path):
+def test_the_help_text_scopes_the_attestation_and_the_interface_detail_rule(
+    tmp_path: Path,
+):
     checkout = _checkout(tmp_path)
 
     help_text = " ".join(checkout.run("--help").stdout.split())
@@ -871,7 +1112,12 @@ def _observation(**overrides: int) -> dict:
 def test_validate_observation_accepts_consistent_and_boundary_values():
     assert validate_observation(_observation()) == []
     # Equal values are possible (a profile whose every citation is recent) and so are zeros.
-    assert validate_observation(_observation(since_2021={"citations": 824, "h_index": 14, "i10_index": 17})) == []
+    assert (
+        validate_observation(
+            _observation(since_2021={"citations": 824, "h_index": 14, "i10_index": 17})
+        )
+        == []
+    )
     zero = {"citations": 0, "h_index": 0, "i10_index": 0}
     assert validate_observation(_observation(since_2021=dict(zero), **zero)) == []
 
@@ -880,11 +1126,23 @@ def test_validate_observation_accepts_consistent_and_boundary_values():
     ("observation", "fragments"),
     [
         pytest.param(
-            _observation(citations=595, i10_index=15, since_2021={"citations": 824, "h_index": 14, "i10_index": 17}),
-            ["since_2021 citations (824) exceeds the all-time citations (595)", "since_2021 i10_index (17) exceeds the all-time i10_index (15)", "transposed"],
+            _observation(
+                citations=595,
+                i10_index=15,
+                since_2021={"citations": 824, "h_index": 14, "i10_index": 17},
+            ),
+            [
+                "since_2021 citations (824) exceeds the all-time citations (595)",
+                "since_2021 i10_index (17) exceeds the all-time i10_index (15)",
+                "transposed",
+            ],
             id="transposed-columns",
         ),
-        pytest.param(_observation(h_index=900), ["all-time h_index (900) exceeds all-time citations (824)"], id="all-time-h-above-citations"),
+        pytest.param(
+            _observation(h_index=900),
+            ["all-time h_index (900) exceeds all-time citations (824)"],
+            id="all-time-h-above-citations",
+        ),
         pytest.param(
             _observation(since_2021={"citations": 10, "h_index": 11, "i10_index": 0}),
             ["since_2021 h_index (11) exceeds since_2021 citations (10)"],
@@ -892,7 +1150,9 @@ def test_validate_observation_accepts_consistent_and_boundary_values():
         ),
     ],
 )
-def test_validate_observation_refuses_impossible_combinations(observation: dict, fragments: list[str]):
+def test_validate_observation_refuses_impossible_combinations(
+    observation: dict, fragments: list[str]
+):
     errors = " | ".join(validate_observation(observation))
 
     for fragment in fragments:
@@ -900,7 +1160,11 @@ def test_validate_observation_refuses_impossible_combinations(observation: dict,
 
 
 def test_validate_observation_reports_type_errors_without_raising_on_the_comparison():
-    errors = validate_observation(_observation(citations=True, since_2021={"citations": "9", "h_index": 1, "i10_index": 1}))
+    errors = validate_observation(
+        _observation(
+            citations=True, since_2021={"citations": "9", "h_index": 1, "i10_index": 1}
+        )
+    )
 
     assert errors and all("non-negative integer" in error for error in errors)
 
@@ -924,7 +1188,9 @@ def test_dry_run_and_check_refuse_an_inconsistent_observation_too(tmp_path: Path
 # ---------------------------------------------------------------------------
 
 
-def test_an_undecodable_receipt_is_reported_by_check_and_overwritten_by_a_new_observation(tmp_path: Path):
+def test_an_undecodable_receipt_is_reported_by_check_and_overwritten_by_a_new_observation(
+    tmp_path: Path,
+):
     checkout = _checkout(tmp_path)
     checkout.receipt.write_bytes(UNDECODABLE)
 
@@ -933,7 +1199,10 @@ def test_an_undecodable_receipt_is_reported_by_check_and_overwritten_by_a_new_ob
     assert check.returncode == 1
     assert "Traceback" not in check.stderr
     assert "not recorded" in check.stdout
-    assert "invalid Scholar verification receipt" in check.stdout and "not valid UTF-8" in check.stdout
+    assert (
+        "invalid Scholar verification receipt" in check.stdout
+        and "not valid UTF-8" in check.stdout
+    )
     assert checkout.receipt.read_bytes() == UNDECODABLE
 
     # A genuinely new observation replaces the broken receipt along with the snapshot.
@@ -944,7 +1213,9 @@ def test_an_undecodable_receipt_is_reported_by_check_and_overwritten_by_a_new_ob
     assert validate_scholar_snapshot_receipt(tmp_path) == []
 
 
-def test_check_on_a_recorded_snapshot_with_an_undecodable_receipt_points_at_the_receipt(tmp_path: Path):
+def test_check_on_a_recorded_snapshot_with_an_undecodable_receipt_points_at_the_receipt(
+    tmp_path: Path,
+):
     checkout = _checkout(tmp_path)
     assert checkout.run(*_record_args("--verified-at", VERIFIED_AT)).returncode == 0
     checkout.receipt.write_bytes(UNDECODABLE)
@@ -953,7 +1224,10 @@ def test_check_on_a_recorded_snapshot_with_an_undecodable_receipt_points_at_the_
 
     assert check.returncode == 1
     assert "Traceback" not in check.stderr
-    assert "Scholar verification receipt" in check.stdout and "not valid UTF-8" in check.stdout
+    assert (
+        "Scholar verification receipt" in check.stdout
+        and "not valid UTF-8" in check.stdout
+    )
     assert "Scholar snapshot data" not in check.stdout
 
 
@@ -967,7 +1241,10 @@ def test_an_undecodable_snapshot_is_a_clean_refusal(tmp_path: Path, mode: list[s
 
     assert result.returncode == 1
     assert "Traceback" not in result.stderr
-    assert result.stderr.startswith("refused:") and "scholar-snapshot.json" in result.stderr
+    assert (
+        result.stderr.startswith("refused:")
+        and "scholar-snapshot.json" in result.stderr
+    )
     assert checkout.state() == before
 
 
@@ -976,7 +1253,9 @@ def test_an_undecodable_snapshot_is_a_clean_refusal(tmp_path: Path, mode: list[s
 # ---------------------------------------------------------------------------
 
 
-def test_a_clock_default_far_after_as_of_is_refused_and_an_explicit_value_is_not(tmp_path: Path):
+def test_a_clock_default_far_after_as_of_is_refused_and_an_explicit_value_is_not(
+    tmp_path: Path,
+):
     checkout = _checkout(tmp_path)
     before = checkout.state()
 
@@ -990,15 +1269,22 @@ def test_a_clock_default_far_after_as_of_is_refused_and_an_explicit_value_is_not
     assert dry.returncode == 1 and "pass --verified-at" in dry.stderr
 
     # Stating the instant lifts the bound, even for an instant well after as_of.
-    stated = checkout.run(*_record_args("--verified-at", "2026-10-05T00:30:00Z", as_of=LATE_AS_OF))
+    stated = checkout.run(
+        *_record_args("--verified-at", "2026-10-05T00:30:00Z", as_of=LATE_AS_OF)
+    )
 
     assert stated.returncode == 0, stated.stderr
-    assert json.loads(checkout.receipt.read_text(encoding="utf-8"))["verified_at"] == "2026-10-05T00:30:00Z"
+    assert (
+        json.loads(checkout.receipt.read_text(encoding="utf-8"))["verified_at"]
+        == "2026-10-05T00:30:00Z"
+    )
     assert validate_scholar_snapshot_receipt(tmp_path) == []
 
 
 def _record_late_observation(checkout: Checkout) -> bytes:
-    result = checkout.run(*_record_args("--verified-at", LATE_VERIFIED_AT, as_of=LATE_AS_OF))
+    result = checkout.run(
+        *_record_args("--verified-at", LATE_VERIFIED_AT, as_of=LATE_AS_OF)
+    )
     assert result.returncode == 0, result.stderr
     return checkout.snapshot.read_bytes()
 
@@ -1014,9 +1300,15 @@ def test_receipt_only_recovery_reuses_the_existing_verified_at(tmp_path: Path):
     result = checkout.run(*_record_args(as_of=LATE_AS_OF))
 
     assert result.returncode == 0, result.stderr
-    assert "receipt-only recovery" in result.stdout and "reused from the existing receipt" in result.stdout
+    assert (
+        "receipt-only recovery" in result.stdout
+        and "reused from the existing receipt" in result.stdout
+    )
     assert checkout.snapshot.read_bytes() == snapshot_bytes
-    assert json.loads(checkout.receipt.read_text(encoding="utf-8"))["verified_at"] == LATE_VERIFIED_AT
+    assert (
+        json.loads(checkout.receipt.read_text(encoding="utf-8"))["verified_at"]
+        == LATE_VERIFIED_AT
+    )
     assert validate_scholar_snapshot_receipt(tmp_path) == []
 
 
@@ -1027,11 +1319,16 @@ def test_receipt_only_recovery_prefers_an_explicit_verified_at(tmp_path: Path):
     receipt["snapshot_sha256"] = "0" * 64
     checkout.receipt.write_bytes(canonical_json_bytes(receipt))
 
-    result = checkout.run(*_record_args("--verified-at", "2026-10-03T18:00:00Z", as_of=LATE_AS_OF))
+    result = checkout.run(
+        *_record_args("--verified-at", "2026-10-03T18:00:00Z", as_of=LATE_AS_OF)
+    )
 
     assert result.returncode == 0, result.stderr
     assert "reused" not in result.stdout
-    assert json.loads(checkout.receipt.read_text(encoding="utf-8"))["verified_at"] == "2026-10-03T18:00:00Z"
+    assert (
+        json.loads(checkout.receipt.read_text(encoding="utf-8"))["verified_at"]
+        == "2026-10-03T18:00:00Z"
+    )
 
 
 def _damage_receipt(path: Path, damage: str) -> None:
@@ -1060,9 +1357,19 @@ def _damage_receipt(path: Path, damage: str) -> None:
 
 @pytest.mark.parametrize(
     "damage",
-    ["deleted", "binary", "naive-verified-at", "verified-at-too-early", "verified-at-too-late", "other-observation", "no-verified-at"],
+    [
+        "deleted",
+        "binary",
+        "naive-verified-at",
+        "verified-at-too-early",
+        "verified-at-too-late",
+        "other-observation",
+        "no-verified-at",
+    ],
 )
-def test_recovery_falls_back_to_the_defaulted_rule_when_the_old_stamp_cannot_be_reused(tmp_path: Path, damage: str):
+def test_recovery_falls_back_to_the_defaulted_rule_when_the_old_stamp_cannot_be_reused(
+    tmp_path: Path, damage: str
+):
     checkout = _checkout(tmp_path)
     snapshot_bytes = _record_late_observation(checkout)
     _damage_receipt(checkout.receipt, damage)
@@ -1073,12 +1380,19 @@ def test_recovery_falls_back_to_the_defaulted_rule_when_the_old_stamp_cannot_be_
     assert refused.returncode == 1
     assert "pass --verified-at" in refused.stderr
     assert checkout.snapshot.read_bytes() == snapshot_bytes
-    assert (checkout.receipt.read_bytes() if checkout.receipt.exists() else None) == broken
+    assert (
+        checkout.receipt.read_bytes() if checkout.receipt.exists() else None
+    ) == broken
 
-    stated = checkout.run(*_record_args("--verified-at", LATE_VERIFIED_AT, as_of=LATE_AS_OF))
+    stated = checkout.run(
+        *_record_args("--verified-at", LATE_VERIFIED_AT, as_of=LATE_AS_OF)
+    )
 
     assert stated.returncode == 0, stated.stderr
-    assert json.loads(checkout.receipt.read_text(encoding="utf-8"))["verified_at"] == LATE_VERIFIED_AT
+    assert (
+        json.loads(checkout.receipt.read_text(encoding="utf-8"))["verified_at"]
+        == LATE_VERIFIED_AT
+    )
     assert validate_scholar_snapshot_receipt(tmp_path) == []
 
 
@@ -1088,12 +1402,18 @@ def test_timing_bound_on_a_defaulted_verified_at_is_one_utc_day_after_as_of():
     next_day_end = datetime(2026, 10, 4, 23, 59, 59, tzinfo=timezone.utc)
     two_days = datetime(2026, 10, 5, 0, 0, 0, tzinfo=timezone.utc)
 
-    assert observation_timing_errors(as_of, next_day_end, now, verified_at_defaulted=True) == []
+    assert (
+        observation_timing_errors(as_of, next_day_end, now, verified_at_defaulted=True)
+        == []
+    )
     errors = observation_timing_errors(as_of, two_days, now, verified_at_defaulted=True)
     assert len(errors) == 1 and "--verified-at" in errors[0]
     # A stated instant is not bounded above (the operator vouches for it).
     assert observation_timing_errors(as_of, two_days, now) == []
-    assert observation_timing_errors(as_of, two_days, now, verified_at_defaulted=False) == []
+    assert (
+        observation_timing_errors(as_of, two_days, now, verified_at_defaulted=False)
+        == []
+    )
 
 
 def test_reusable_receipt_verified_at_applies_every_condition():
@@ -1101,13 +1421,19 @@ def test_reusable_receipt_verified_at_applies_every_condition():
     now = datetime(2026, 10, 9, 12, 0, tzinfo=timezone.utc)
 
     def receipt(**fields: object) -> bytes:
-        payload = {"snapshot_as_of": "2026-10-03", "verified_at": "2026-10-03T12:00:00Z", **fields}
+        payload = {
+            "snapshot_as_of": "2026-10-03",
+            "verified_at": "2026-10-03T12:00:00Z",
+            **fields,
+        }
         return json.dumps(payload).encode("utf-8")
 
-    assert reusable_receipt_verified_at(receipt(), as_of, now) == datetime(2026, 10, 3, 12, 0, tzinfo=timezone.utc)
-    assert reusable_receipt_verified_at(receipt(verified_at="2026-10-03T05:00:00-07:00"), as_of, now) == datetime(
+    assert reusable_receipt_verified_at(receipt(), as_of, now) == datetime(
         2026, 10, 3, 12, 0, tzinfo=timezone.utc
     )
+    assert reusable_receipt_verified_at(
+        receipt(verified_at="2026-10-03T05:00:00-07:00"), as_of, now
+    ) == datetime(2026, 10, 3, 12, 0, tzinfo=timezone.utc)
     for unusable in (
         None,
         UNDECODABLE,
@@ -1132,7 +1458,9 @@ def test_reusable_receipt_verified_at_applies_every_condition():
 class ReplaceFailures:
     """Fail ``os.replace`` on chosen calls; every other call is the real thing."""
 
-    def __init__(self, failing: set[int] | None = None, *, from_call: int | None = None):
+    def __init__(
+        self, failing: set[int] | None = None, *, from_call: int | None = None
+    ):
         self.failing = failing or set()
         self.from_call = from_call
         self.armed = True
@@ -1142,12 +1470,17 @@ class ReplaceFailures:
     def __call__(self, source, destination):
         self.calls.append(Path(destination).name)
         number = len(self.calls)
-        if self.armed and (number in self.failing or (self.from_call is not None and number >= self.from_call)):
+        if self.armed and (
+            number in self.failing
+            or (self.from_call is not None and number >= self.from_call)
+        ):
             raise OSError(f"simulated os.replace failure on call {number}")
         return self._real(source, destination)
 
 
-def _in_process_pair(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> tuple[Path, Path]:
+def _in_process_pair(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> tuple[Path, Path]:
     """Seed ``tmp_path/data`` and point the recorder's module-level paths at it."""
     data = tmp_path / "data"
     data.mkdir()
@@ -1165,7 +1498,9 @@ def test_a_failed_receipt_replace_restores_the_snapshot_and_leaves_no_temp_files
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
 ):
     snapshot, receipt = _in_process_pair(tmp_path, monkeypatch)
-    replace = ReplaceFailures({2})  # 1 = snapshot (succeeds), 2 = receipt (fails), 3 = snapshot restore
+    replace = ReplaceFailures(
+        {2}
+    )  # 1 = snapshot (succeeds), 2 = receipt (fails), 3 = snapshot restore
     monkeypatch.setattr(os, "replace", replace)
 
     code = recorder.main(_record_args("--verified-at", VERIFIED_AT))
@@ -1178,7 +1513,9 @@ def test_a_failed_receipt_replace_restores_the_snapshot_and_leaves_no_temp_files
     assert "FAILED" not in captured.err and "CRITICAL" not in captured.err
     assert snapshot.read_bytes() == SEED_SNAPSHOT_BYTES
     assert receipt.read_bytes() == SEED_RECEIPT_BYTES
-    assert sorted(path.name for path in snapshot.parent.iterdir()) == sorted([receipt.name, snapshot.name])
+    assert sorted(path.name for path in snapshot.parent.iterdir()) == sorted(
+        [receipt.name, snapshot.name]
+    )
     monkeypatch.setattr(os, "replace", replace._real)
     assert validate_scholar_snapshot_receipt(tmp_path) == []
 
@@ -1187,7 +1524,9 @@ def test_a_failed_restore_is_reported_as_failed_and_the_same_command_repairs_the
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
 ):
     snapshot, receipt = _in_process_pair(tmp_path, monkeypatch)
-    replace = ReplaceFailures(from_call=2)  # the receipt write fails and so does restoring the snapshot
+    replace = ReplaceFailures(
+        from_call=2
+    )  # the receipt write fails and so does restoring the snapshot
     monkeypatch.setattr(os, "replace", replace)
 
     code = recorder.main(_record_args("--verified-at", VERIFIED_AT))
@@ -1199,12 +1538,17 @@ def test_a_failed_restore_is_reported_as_failed_and_the_same_command_repairs_the
     assert "CRITICAL: could not restore data/scholar-snapshot.json" in captured.err
     assert "Not restored: data/scholar-snapshot.json" in captured.err
     assert "re-run this exact command" in captured.err
-    assert "git restore data/scholar-snapshot.json data/scholar-verification-receipt.json" in captured.err
+    assert (
+        "git restore data/scholar-snapshot.json data/scholar-verification-receipt.json"
+        in captured.err
+    )
     # The snapshot kept the new observation while the receipt is the old one: fail-closed, not silently wrong.
     assert snapshot.read_bytes() != SEED_SNAPSHOT_BYTES
     assert receipt.read_bytes() == SEED_RECEIPT_BYTES
     assert recorder._validate_pair(tmp_path) != []
-    assert sorted(path.name for path in snapshot.parent.iterdir()) == sorted([receipt.name, snapshot.name])
+    assert sorted(path.name for path in snapshot.parent.iterdir()) == sorted(
+        [receipt.name, snapshot.name]
+    )
 
     replace.armed = False
     repaired = recorder.main(_record_args("--verified-at", VERIFIED_AT))
@@ -1225,7 +1569,14 @@ def test_a_failed_first_write_says_nothing_was_replaced(
 
     captured = capsys.readouterr()
     assert code == 1
-    assert "before any file was replaced" in captured.err and "unchanged" in captured.err
+    assert (
+        "before any file was replaced" in captured.err and "unchanged" in captured.err
+    )
     assert "restored" not in captured.err
-    assert (snapshot.read_bytes(), receipt.read_bytes()) == (SEED_SNAPSHOT_BYTES, SEED_RECEIPT_BYTES)
-    assert sorted(path.name for path in snapshot.parent.iterdir()) == sorted([receipt.name, snapshot.name])
+    assert (snapshot.read_bytes(), receipt.read_bytes()) == (
+        SEED_SNAPSHOT_BYTES,
+        SEED_RECEIPT_BYTES,
+    )
+    assert sorted(path.name for path in snapshot.parent.iterdir()) == sorted(
+        [receipt.name, snapshot.name]
+    )

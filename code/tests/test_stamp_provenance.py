@@ -30,9 +30,7 @@ FOOTER_STAMP_RE = re.compile(
 )
 
 
-def _git(
-    repo: Path, *args: str, extra_env: dict[str, str] | None = None
-) -> str:
+def _git(repo: Path, *args: str, extra_env: dict[str, str] | None = None) -> str:
     env = os.environ.copy()
     env.update(
         {
@@ -184,13 +182,24 @@ def test_mapping_writer_refreshes_the_complete_stamp_when_page_body_changes(tmp_
     assert stale_output_paths({target: candidate}, repo_root=tmp_path) == ()
 
 
-@pytest.mark.parametrize("existing,candidate", [
-    (None, _stamped_page("New page", "def5678", "2026-02-03")),
-    ("<main>Same page</main>\n", _stamped_page("Same page", "def5678", "2026-02-03")),
-    (_stamped_page("Same page", "abc1234", "2026-01-02"), "<main>Same page</main>\n"),
-    ("<main>Old page</main>\n", "<main>New page</main>\n"),
-])
-def test_mapping_writer_uses_current_content_for_missing_outputs_or_stamps(tmp_path, existing, candidate):
+@pytest.mark.parametrize(
+    "existing,candidate",
+    [
+        (None, _stamped_page("New page", "def5678", "2026-02-03")),
+        (
+            "<main>Same page</main>\n",
+            _stamped_page("Same page", "def5678", "2026-02-03"),
+        ),
+        (
+            _stamped_page("Same page", "abc1234", "2026-01-02"),
+            "<main>Same page</main>\n",
+        ),
+        ("<main>Old page</main>\n", "<main>New page</main>\n"),
+    ],
+)
+def test_mapping_writer_uses_current_content_for_missing_outputs_or_stamps(
+    tmp_path, existing, candidate
+):
     target = tmp_path / "nested" / "new.html"
     if existing is not None:
         target.parent.mkdir()

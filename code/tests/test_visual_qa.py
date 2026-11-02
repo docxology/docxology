@@ -74,7 +74,9 @@ def test_approve_existing_refuses_a_tampered_pending_screenshot(tmp_path: Path):
     screenshot.write_bytes(b"changed after capture")
 
     with pytest.raises(SystemExit, match="digest mismatch"):
-        vq.approve_existing("Release reviewer", manifest_path=manifest_path, repo_root=tmp_path)
+        vq.approve_existing(
+            "Release reviewer", manifest_path=manifest_path, repo_root=tmp_path
+        )
 
     after = json.loads(manifest_path.read_text(encoding="utf-8"))
     assert after["review"]["status"] == "pending"

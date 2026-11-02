@@ -30,6 +30,14 @@ The safest default is: **scan live sources, inspect the report, apply only stron
 - Run `check_zenodo_uncatalogued.py` after a Zenodo refresh. Its dated report records any approved version-DOI exception with the exact record id, title, concept DOI, and bibliography DOI; a missing or changed approved exception, or any new version-only DOI citation, fails `--check` for explicit review.
 - A Zenodo **software** record that supplements an already catalogued work (typically the GitHub-release archive of that work's repository) is catalogued by linking its concept DOI from the repository's `pages/SOFTWARE.md` row, provided the row's `[📄]` paper folder is cited by a bibliography row. The check lists such records under `software_catalogued` with that folder, and later releases under the same concept need no further entry. Zenodo also types many paper repositories' own archives as software, so any other record, including a software-typed one from a row without a catalogued paper, is still reported as uncatalogued.
 - Public APIs are freshness checks. Curated local rows remain the source of truth after review and application.
+- Public pairing reports redact local filesystem paths from captured release
+  bodies. A `body_redaction` record retains the policy and SHA-256 of the
+  original text; cached replay preserves this provenance. Redaction does not
+  change observation dates, pairing decisions, or apply receipts. Before
+  correcting an existing report, retain its raw bytes in private evidence, then
+  run `uv run python3 code/orchestrators/sync_paired_publications.py --redact-local-paths --report reports/paired_publications_YYYY-MM-DD.json`.
+  This mode performs no network intake or classification. `--check` rejects
+  local paths reintroduced into release bodies.
 
 ## Preconditions
 
@@ -154,6 +162,12 @@ GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/build_github_i
 ```
 
 The generated reports under [`reports/`](../../reports/) are evidence snapshots. They support review but do not replace the curated bibliography.
+After a software-catalog edit, run
+`uv run python3 code/orchestrators/render_github_inventory.py`. This local step
+refreshes the inventory's `curated` flags and counts from the authoritative
+`pages/SOFTWARE.md` and rebuilds both inventory pages
+while preserving GitHub API facts and their observation timestamp. Its check
+rejects stale catalog membership even when JSON and HTML agree with each other.
 The 21-check snapshot in `refresh_public_sources.py` fans out through a
 thread pool (order-identical output — the serial fan-out is now concurrent),
 and `refresh_public_source_inventory.py` accepts `--cache-reports` to reuse a

@@ -58,6 +58,7 @@ def test_build_report_accounting_when_limited():
         "https://a.example/2": ["index.html"],
         "https://a.example/3": ["README.md"],
     }
+
     def local_request(url: str, timeout: int) -> dict:
         assert timeout == 1
         ok = url.endswith("1")
@@ -81,7 +82,9 @@ def test_build_report_accounting_when_limited():
     assert report["checked_urls"] == 2
     assert report["unchecked_urls"] == 1
     assert report["ok"] + report["warnings"] == report["checked_urls"]
-    assert report["checked_urls"] + report["unchecked_urls"] == report["total_unique_urls"]
+    assert (
+        report["checked_urls"] + report["unchecked_urls"] == report["total_unique_urls"]
+    )
     assert report["ok"] + report["warnings"] == 2
 
 

@@ -24,7 +24,13 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-from docxology_tools.report_paths import dated_report_path, generated_timestamp, latest_report, source_commit, source_worktree_state  # noqa: E402
+from docxology_tools.report_paths import (  # noqa: E402
+    dated_report_path,
+    generated_timestamp,
+    latest_report,
+    source_commit,
+    source_worktree_state,
+)
 
 OUT = dated_report_path("external_links", "json")
 
@@ -156,7 +162,9 @@ def curl_probe(url: str, method: str, timeout: int) -> dict:
     if method == "HEAD":
         args.append("--head")
     args.append(url)
-    proc = subprocess.run(args, capture_output=True, text=True, timeout=timeout + 3, check=False)
+    proc = subprocess.run(
+        args, capture_output=True, text=True, timeout=timeout + 3, check=False
+    )
     status_text, _, final_url = proc.stdout.partition("\t")
     status = int(status_text) if status_text.isdigit() else 0
     return {
@@ -203,7 +211,11 @@ def category(row: dict) -> str:
         return "ok"
     if status == 404:
         return "needs-replacement"
-    if status in {401, 402, 403, 429, 999} or host in {"linkedin.com", "www.linkedin.com", "www.researchgate.net"}:
+    if status in {401, 402, 403, 429, 999} or host in {
+        "linkedin.com",
+        "www.linkedin.com",
+        "www.researchgate.net",
+    }:
         return "bot-protected-or-rate-limited"
     if status in {500, 502, 503, 504}:
         return "upstream-transient"
@@ -292,7 +304,9 @@ def cached_report_errors(
     if malformed_rows:
         errors.append("has malformed result rows")
     if duplicate_urls:
-        errors.append("has duplicate URL results: " + ", ".join(sorted(duplicate_urls)[:5]))
+        errors.append(
+            "has duplicate URL results: " + ", ".join(sorted(duplicate_urls)[:5])
+        )
 
     expected_urls = set(expected_sources)
     observed_urls = set(by_url)
@@ -304,11 +318,17 @@ def cached_report_errors(
             details.append("missing " + ", ".join(missing[:3]))
         if unexpected:
             details.append("unexpected " + ", ".join(unexpected[:3]))
-        errors.append("URL coverage does not match the current contract (" + "; ".join(details) + ")")
+        errors.append(
+            "URL coverage does not match the current contract ("
+            + "; ".join(details)
+            + ")"
+        )
 
     for url in sorted(expected_urls & observed_urls):
         if by_url[url].get("sources") != expected_sources[url]:
-            errors.append(f"source mapping does not match the current contract for {url}")
+            errors.append(
+                f"source mapping does not match the current contract for {url}"
+            )
             break
 
     expected_count = len(expected_sources)
@@ -325,10 +345,16 @@ def cached_report_errors(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Validate the cached report exists and is parseable")
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Validate the cached report exists and is parseable",
+    )
     parser.add_argument("--timeout", type=int, default=10)
     parser.add_argument("--workers", type=int, default=8)
-    parser.add_argument("--limit", type=int, default=0, help="Optional maximum URLs to check")
+    parser.add_argument(
+        "--limit", type=int, default=0, help="Optional maximum URLs to check"
+    )
     args = parser.parse_args()
     if args.check:
         out = latest_report("external_links_[0-9]*.json")
@@ -337,12 +363,17 @@ def main() -> None:
         payload = json.loads(out.read_text(encoding="utf-8"))
         errors = cached_report_errors(payload)
         if errors:
-            raise SystemExit("External link report drift:\n" + "\n".join(f"  - {error}" for error in errors))
+            raise SystemExit(
+                "External link report drift:\n"
+                + "\n".join(f"  - {error}" for error in errors)
+            )
         print(f"checked external link report ({payload['checked_urls']} URLs)")
         return
     payload = build_report(args.timeout, args.workers, args.limit or None)
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    OUT.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
     print(f"wrote external link report: {payload['ok']}/{payload['checked_urls']} ok")
 
 

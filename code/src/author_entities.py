@@ -1,4 +1,5 @@
 """Source-backed author entity types without guessing personal name structure."""
+
 from __future__ import annotations
 
 import json
@@ -22,10 +23,18 @@ def verified_author_types(work: dict, records: dict) -> dict[str, str]:
     """Accept explicit types only from verified, exact DOI-bound author records."""
     record = records.get(work.get("citation_key"))
     doi = work.get("doi")
-    if not isinstance(record, dict) or record.get("status") != "verified" or not isinstance(doi, str) or not doi.strip():
+    if (
+        not isinstance(record, dict)
+        or record.get("status") != "verified"
+        or not isinstance(doi, str)
+        or not doi.strip()
+    ):
         return {}
     source_doi = record.get("doi")
-    if not isinstance(source_doi, str) or source_doi.strip().casefold() != doi.strip().casefold():
+    if (
+        not isinstance(source_doi, str)
+        or source_doi.strip().casefold() != doi.strip().casefold()
+    ):
         return {}
     authors = record.get("authors")
     if not isinstance(authors, list):
@@ -42,7 +51,11 @@ def verified_author_types(work: dict, records: dict) -> dict[str, str]:
             if not isinstance(family, str) or not isinstance(given, str):
                 continue
             if family.strip():
-                display = f"{family.strip()}, {given.strip()}" if given.strip() else family.strip()
+                display = (
+                    f"{family.strip()}, {given.strip()}"
+                    if given.strip()
+                    else family.strip()
+                )
             elif given.strip():
                 display = given.strip()
             else:
@@ -50,10 +63,14 @@ def verified_author_types(work: dict, records: dict) -> dict[str, str]:
             typ = "Person"
         types.setdefault(display, set()).add(typ)
     # Conflicting source representations remain unknown, rather than guessing.
-    return {name: next(iter(values)) for name, values in types.items() if len(values) == 1}
+    return {
+        name: next(iter(values)) for name, values in types.items() if len(values) == 1
+    }
 
 
-def author_entity(display_name: str, principal: dict, source_type: str | None = None) -> dict:
+def author_entity(
+    display_name: str, principal: dict, source_type: str | None = None
+) -> dict:
     """Preserve author order/name and the established principal identity node."""
     family, separator, given = display_name.partition(",")
     if family.strip() == "Friedman" and given.strip().startswith("Daniel"):
@@ -71,13 +88,21 @@ def reviewed_contributor_role(work: dict, records: dict) -> str:
     record = records.get(work["citation_key"], {})
     role = record.get("contributor_role", "author")
     if role not in {"author", "editor"}:
-        raise ValueError(f"Unsupported contributor role for {work['citation_key']}: {role}")
+        raise ValueError(
+            f"Unsupported contributor role for {work['citation_key']}: {role}"
+        )
     if role == "editor":
-        names = [f'{a["family"]}, {a["given"]}' for a in record.get("authors", [])]
-        if (record.get("status") != "document_verified" or record.get("num") != work["num"]
-                or record.get("title") != work["title"] or names != work.get("authors")
-                or not record.get("evidence", "").startswith("EDITED BY ")):
-            raise ValueError(f"Editor role lacks matching document evidence for {work['citation_key']}")
+        names = [f"{a['family']}, {a['given']}" for a in record.get("authors", [])]
+        if (
+            record.get("status") != "document_verified"
+            or record.get("num") != work["num"]
+            or record.get("title") != work["title"]
+            or names != work.get("authors")
+            or not record.get("evidence", "").startswith("EDITED BY ")
+        ):
+            raise ValueError(
+                f"Editor role lacks matching document evidence for {work['citation_key']}"
+            )
     return role
 
 

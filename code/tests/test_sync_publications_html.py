@@ -44,7 +44,9 @@ def test_dry_run_cli():
     )
     assert result.returncode == 0
     assert f"OK dry-run: {len(rows)} rows" in result.stdout
-    assert f"publications-ld.json would have {len(rows)} mainEntity items" in result.stdout
+    assert (
+        f"publications-ld.json would have {len(rows)} mainEntity items" in result.stdout
+    )
 
 
 def test_check_cli_reports_exact_source_rendered_status_without_writing():
@@ -99,7 +101,9 @@ def test_generated_publications_surfaces():
         assert entity.get("@type")
 
 
-def _temporary_publication_outputs(tmp_path: Path, rendered: dict[Path, str]) -> dict[Path, str]:
+def _temporary_publication_outputs(
+    tmp_path: Path, rendered: dict[Path, str]
+) -> dict[Path, str]:
     """Map canonical source-rendered text to isolated real output files."""
     return {
         tmp_path / "publications.html": rendered[PUBLICATIONS_HTML],
@@ -135,14 +139,20 @@ def test_render_and_check_detect_stale_doi_static_row_and_json_ld(tmp_path: Path
         doi_match.group(1),
         "https://doi.org/10.0000/stale-static-doi",
     )
-    assert render_outputs_from_template(None, stale_doi)[PUBLICATIONS_HTML] == canonical_html
+    assert (
+        render_outputs_from_template(None, stale_doi)[PUBLICATIONS_HTML]
+        == canonical_html
+    )
 
     stale_row = _replace_in_static_tbody(
         canonical_html,
         '<td class="td-num">1</td>',
         '<td class="td-num">999</td>',
     )
-    assert render_outputs_from_template(None, stale_row)[PUBLICATIONS_HTML] == canonical_html
+    assert (
+        render_outputs_from_template(None, stale_row)[PUBLICATIONS_HTML]
+        == canonical_html
+    )
 
     stale_json_ld = rendered[PUBLICATIONS_LD_JSON].replace(
         '"CollectionPage"', '"StaleCollectionPage"', 1
@@ -159,7 +169,9 @@ def test_render_and_check_detect_stale_doi_static_row_and_json_ld(tmp_path: Path
         try:
             for path, stale in changed.items():
                 path.write_text(stale, encoding="utf-8")
-            assert stale_output_paths(targets, repo_root=tmp_path) == tuple(changed), label
+            assert stale_output_paths(targets, repo_root=tmp_path) == tuple(changed), (
+                label
+            )
         finally:
             for path, content in original.items():
                 path.write_text(content, encoding="utf-8")
@@ -201,7 +213,9 @@ def test_apply_mapping_normalizes_publication_targets(tmp_path: Path):
     targets = _temporary_publication_outputs(tmp_path, render_outputs())
     write_output_texts(targets, repo_root=tmp_path)
     html_target, json_target = tuple(targets)
-    html_target.write_text(targets[html_target] + "\n<!-- stale -->\n", encoding="utf-8")
+    html_target.write_text(
+        targets[html_target] + "\n<!-- stale -->\n", encoding="utf-8"
+    )
     json_target.write_text("{}\n", encoding="utf-8")
 
     assert stale_output_paths(targets, repo_root=tmp_path) == (html_target, json_target)
@@ -222,11 +236,17 @@ def test_render_refuses_a_missing_generated_static_table_body():
 
 
 def test_canonical_link_url_handles_markdown_doi_and_isbn():
-    assert canonical_link_url("[10.5281/zenodo.1](https://doi.org/10.5281/zenodo.1)", "Zenodo") == (
-        "https://doi.org/10.5281/zenodo.1"
+    assert canonical_link_url(
+        "[10.5281/zenodo.1](https://doi.org/10.5281/zenodo.1)", "Zenodo"
+    ) == ("https://doi.org/10.5281/zenodo.1")
+    assert (
+        canonical_link_url("10.5281/zenodo.2", "Zenodo")
+        == "https://doi.org/10.5281/zenodo.2"
     )
-    assert canonical_link_url("10.5281/zenodo.2", "Zenodo") == "https://doi.org/10.5281/zenodo.2"
-    assert canonical_link_url("978-0-12-345678-9", "Publisher") == "https://www.worldcat.org/isbn/978-0-12-345678-9"
+    assert (
+        canonical_link_url("978-0-12-345678-9", "Publisher")
+        == "https://www.worldcat.org/isbn/978-0-12-345678-9"
+    )
     assert canonical_link_url("978-0-12-345678-9", "COGSEC.org") == "https://cogsec.org"
     assert canonical_link_url("—", "Zenodo") == ""
 

@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 226 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 228 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -9430,6 +9430,74 @@
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026ObserversWhoReadTheir230.html",
             "sameAs": "https://philpapers.org/rec/MUEFOC",
             "citation": "Mueller, Bernhard; Poneder, Mario; Osika, Alexander; Xue, Kai; Cassie, Ben; Nguyen, Peter; Kim, Jinwook; Matscheko, David; Friedman, Daniel Ari; Hill, Jonathan; Glynn, William T.; Visser, Maarten Antonie; Anirudha, Kale Arnav; de La Fournière, Brieuc. 2026. Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics. PhilPapers (preprint). URL: https://philpapers.org/rec/MUEFOC."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+            "headline": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026ActiveInferenceLanguageModel231.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026ActiveInferenceLanguageModel231.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026ActiveInferenceLanguageModel231.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.22409418",
+                "url": "https://doi.org/10.5281/zenodo.22409418"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.22409418",
+            "citation": "Friedman, Daniel Ari. 2026. Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method. Zenodo. DOI: 10.5281/zenodo.22409418. URL: https://doi.org/10.5281/zenodo.22409418."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "GNN-based active inference for Battleship",
+            "headline": "GNN-based active inference for Battleship",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026GNNBasedActiveInference232.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026GNNBasedActiveInference232.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026GNNBasedActiveInference232.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.23670187",
+                "url": "https://doi.org/10.5281/zenodo.23670187"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.23670187",
+            "citation": "Friedman, Daniel Ari. 2026. GNN-based active inference for Battleship. Zenodo. DOI: 10.5281/zenodo.23670187. URL: https://doi.org/10.5281/zenodo.23670187."
         }
     ]
 }

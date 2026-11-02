@@ -30,7 +30,9 @@ from docxology_tools.artwork_pages import (  # noqa: E402
 
 
 def _payload() -> dict:
-    return json.loads((REPO_ROOT / "data" / "artworks.json").read_text(encoding="utf-8"))
+    return json.loads(
+        (REPO_ROOT / "data" / "artworks.json").read_text(encoding="utf-8")
+    )
 
 
 def test_checked_in_artworks_export_is_structurally_valid() -> None:
@@ -66,7 +68,9 @@ def test_every_collection_page_exists_and_is_listed() -> None:
     slugs = {collection.slug for collection in collections}
     for slug in slugs:
         assert (REPO_ROOT / "art-collections" / f"{slug}.html").is_file()
-        collection_page = (REPO_ROOT / "art-collections" / f"{slug}.html").read_text(encoding="utf-8")
+        collection_page = (REPO_ROOT / "art-collections" / f"{slug}.html").read_text(
+            encoding="utf-8"
+        )
         assert ARTWORK_PAGE_MARKER in collection_page
     index_html = (REPO_ROOT / "artworks" / "index.html").read_text(encoding="utf-8")
     for slug in slugs:
@@ -80,22 +84,44 @@ def test_page_titles_and_descriptions_within_serp_limits() -> None:
         title_match = re.search(r"<title>(.*?)</title>", page, re.S)
         assert title_match, f"{record['id']}: missing title"
         # Rendered (unescaped) length is what SERPs clip on.
-        assert len(unescape(title_match.group(1))) <= 65, f"{record['id']}: title too long"
-        description_match = re.search(r'<meta name="description" content="(.*?)"', page, re.S)
+        assert len(unescape(title_match.group(1))) <= 65, (
+            f"{record['id']}: title too long"
+        )
+        description_match = re.search(
+            r'<meta name="description" content="(.*?)"', page, re.S
+        )
         assert description_match, f"{record['id']}: missing meta description"
         rendered = unescape(description_match.group(1))
         assert rendered.strip(), f"{record['id']}: empty meta description"
-        assert len(rendered) <= 160, f"{record['id']}: meta description {len(rendered)} chars"
-        assert "…" not in rendered or rendered.endswith("…"), f"{record['id']}: mid-word ellipsis"
+        assert len(rendered) <= 160, (
+            f"{record['id']}: meta description {len(rendered)} chars"
+        )
+        assert "…" not in rendered or rendered.endswith("…"), (
+            f"{record['id']}: mid-word ellipsis"
+        )
 
 
 def test_json_ld_parses_with_required_visualartwork_keys() -> None:
     payload = _payload()
-    required = {"@context", "@type", "@id", "name", "url", "image", "dateCreated", "artform", "artMedium", "creator", "sameAs"}
+    required = {
+        "@context",
+        "@type",
+        "@id",
+        "name",
+        "url",
+        "image",
+        "dateCreated",
+        "artform",
+        "artMedium",
+        "creator",
+        "sameAs",
+    }
     checked = 0
     for record in payload["artworks"][:40]:
         page = (REPO_ROOT / page_rel_path(record)).read_text(encoding="utf-8")
-        blocks = re.findall(r"<script type=\"application/ld\+json\">\n(.*?)\n    </script>", page, re.S)
+        blocks = re.findall(
+            r"<script type=\"application/ld\+json\">\n(.*?)\n    </script>", page, re.S
+        )
         payloads = [json.loads(block) for block in blocks]
         visual = [item for item in payloads if item.get("@type") == "VisualArtwork"]
         assert visual, f"{record['id']}: no VisualArtwork JSON-LD"
@@ -109,7 +135,10 @@ def test_json_ld_parses_with_required_visualartwork_keys() -> None:
         assert data["url"].startswith("https://danielarifriedman.com/artworks/")
         checked += 1
     assert checked == 40
-    breadcrumbs = re.findall(r'"@type":\s*"BreadcrumbList"', (REPO_ROOT / page_rel_path(payload["artworks"][0])).read_text(encoding="utf-8"))
+    breadcrumbs = re.findall(
+        r'"@type":\s*"BreadcrumbList"',
+        (REPO_ROOT / page_rel_path(payload["artworks"][0])).read_text(encoding="utf-8"),
+    )
     assert breadcrumbs, "artwork page missing BreadcrumbList"
 
 
@@ -119,7 +148,9 @@ def test_no_empty_alt_text() -> None:
         page = (REPO_ROOT / page_rel_path(record)).read_text(encoding="utf-8")
         for alt in re.findall(r'<img[^>]*\balt="([^"]*)"', page):
             assert unescape(alt).strip(), f"{record['id']}: empty alt text"
-    for page_path in sorted((REPO_ROOT / "artworks").glob("*.html"))[:0] + [REPO_ROOT / "artworks" / "index.html"]:
+    for page_path in sorted((REPO_ROOT / "artworks").glob("*.html"))[:0] + [
+        REPO_ROOT / "artworks" / "index.html"
+    ]:
         for alt in re.findall(r'alt=""', page_path.read_text(encoding="utf-8")):
             raise AssertionError(f"{page_path.name}: empty alt text")
 
@@ -131,15 +162,22 @@ def test_canonicals_and_robots_policy() -> None:
         page = (REPO_ROOT / page_rel_path(record)).read_text(encoding="utf-8")
         expected = f'<link rel="canonical" href="https://danielarifriedman.com/{page_rel_path(record)}">'
         assert expected in page, f"{record['id']}: canonical mismatch"
-        robots = 'content="noindex, follow"' if is_thin(record) else 'content="index, follow"'
-        assert f'<meta name="robots" {robots}>' in page, f"{record['id']}: wrong robots for thin={is_thin(record)}"
+        robots = (
+            'content="noindex, follow"'
+            if is_thin(record)
+            else 'content="index, follow"'
+        )
+        assert f'<meta name="robots" {robots}>' in page, (
+            f"{record['id']}: wrong robots for thin={is_thin(record)}"
+        )
         if is_thin(record):
             thin_seen += 1
         # Every page carries a visible Flickr backlink.
         assert "View on Flickr" in page, f"{record['id']}: missing Flickr backlink"
-        assert 'rel="license" href="https://creativecommons.org/' in page or "all rights reserved" in page, (
-            f"{record['id']}: missing license notice"
-        )
+        assert (
+            'rel="license" href="https://creativecommons.org/' in page
+            or "all rights reserved" in page
+        ), f"{record['id']}: missing license notice"
     # Report the thin count: DAF enriches these on Flickr; the sync promotes them.
     print(f"thin (noindex) artwork pages: {thin_seen}")
 
@@ -156,17 +194,29 @@ def test_sitemap_excludes_thin_pages_and_matches_policy() -> None:
     import build_sitemap  # noqa: E402
 
     locs = build_sitemap.sitemap_locs()
-    artwork_locs = {loc.removeprefix("https://danielarifriedman.com/") for loc in locs if "/artworks/" in loc}
-    collection_locs = {loc.removeprefix("https://danielarifriedman.com/") for loc in locs if "/art-collections/" in loc}
+    artwork_locs = {
+        loc.removeprefix("https://danielarifriedman.com/")
+        for loc in locs
+        if "/artworks/" in loc
+    }
+    collection_locs = {
+        loc.removeprefix("https://danielarifriedman.com/")
+        for loc in locs
+        if "/art-collections/" in loc
+    }
     assert artwork_locs == promoted | {"artworks/"}
-    assert collection_locs == {f"art-collections/{c.slug}.html" for c in load_collections()}
+    assert collection_locs == {
+        f"art-collections/{c.slug}.html" for c in load_collections()
+    }
 
 
 def test_generation_is_idempotent() -> None:
     first = build_artwork_pages.outputs()
     second = build_artwork_pages.outputs()
     assert first.keys() == second.keys()
-    assert all(first[path] == second[path] for path in first), "rendering is not byte-stable"
+    assert all(first[path] == second[path] for path in first), (
+        "rendering is not byte-stable"
+    )
 
 
 def test_art_html_tiles_are_links_with_fresh_data() -> None:
@@ -176,7 +226,9 @@ def test_art_html_tiles_are_links_with_fresh_data() -> None:
     for record in records:
         expected_href = f'href="{page_rel_path(record)}"'
         assert expected_href in html, f"{record['id']}: SSR tile not linked"
-    assert '<button type="button" class="art-card"' not in html, "stale button tiles remain in art.html"
+    assert '<button type="button" class="art-card"' not in html, (
+        "stale button tiles remain in art.html"
+    )
     for img in re.findall(r"<img[^>]*art-thumb ssr[^>]*>", html):
         assert "_m.jpg" not in img
         assert "onclick" not in img.lower()
@@ -195,7 +247,15 @@ def test_collections_match_records_deterministically() -> None:
     payload = _payload()
     collections = load_collections()
     records = payload["artworks"]
-    assert sum(len(members) for members in (build_artwork_pages_render_members(c, records) for c in collections)) > 0
+    assert (
+        sum(
+            len(members)
+            for members in (
+                build_artwork_pages_render_members(c, records) for c in collections
+            )
+        )
+        > 0
+    )
 
 
 def build_artwork_pages_render_members(collection, records):

@@ -47,7 +47,10 @@ def load_source() -> dict:
 
 def build_payload(source: dict) -> dict:
     artworks = [
-        {field: (page_rel_path(artwork) if field == "page" else artwork.get(field)) for field in INDEX_FIELDS}
+        {
+            field: (page_rel_path(artwork) if field == "page" else artwork.get(field))
+            for field in INDEX_FIELDS
+        }
         for artwork in source["artworks"]
     ]
     return {
@@ -97,7 +100,9 @@ def check() -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="verify the generated projection")
+    parser.add_argument(
+        "--check", action="store_true", help="verify the generated projection"
+    )
     args = parser.parse_args()
     check() if args.check else write()
 

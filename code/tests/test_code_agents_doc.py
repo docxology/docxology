@@ -32,7 +32,9 @@ def test_every_documented_code_path_exists():
     documented = _layout_paths()
     assert documented, "the code/AGENTS.md layout table has no path rows"
     missing = [rel for rel in documented if not (REPO_ROOT / "code" / rel).exists()]
-    assert missing == [], f"code/AGENTS.md documents paths that no longer exist: {missing}"
+    assert missing == [], (
+        f"code/AGENTS.md documents paths that no longer exist: {missing}"
+    )
 
 
 def test_report_paths_importer_count_is_current():
@@ -42,9 +44,12 @@ def test_report_paths_importer_count_is_current():
     importers = [
         path
         for path in sorted((REPO_ROOT / "code" / "orchestrators").glob("*.py"))
-        if re.search(r"^\s*(from docxology_tools\.report_paths import"
-                     r"|import docxology_tools\.report_paths)",
-                     path.read_text(encoding="utf-8"), re.MULTILINE)
+        if re.search(
+            r"^\s*(from docxology_tools\.report_paths import"
+            r"|import docxology_tools\.report_paths)",
+            path.read_text(encoding="utf-8"),
+            re.MULTILINE,
+        )
     ]
     assert int(claim.group(1)) == len(importers), (
         f"code/AGENTS.md says {claim.group(1)} report_paths importers; the tree has "

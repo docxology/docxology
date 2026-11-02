@@ -17,7 +17,14 @@ OUT = REPO_ROOT / "exports.html"
 
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 from docxology_tools.build_stamp import footer_build_stamp_html, reuse_on_disk_stamp  # noqa: E402
-from docxology_tools.site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+from docxology_tools.site_nav import (  # noqa: E402
+    BREADCRUMB_CSS,
+    HEAD_EXTRAS,
+    INTERACTIVE_SCRIPTS,
+    MENU_ESC_SCRIPT,
+    breadcrumb_jsonld_script,
+    render_breadcrumb,
+)
 
 _BREADCRUMB = [("Home", ""), ("Exports", "exports.html")]
 
@@ -27,9 +34,11 @@ def _webpage_ld() -> dict:
     from docxology_tools.report_paths import report_date_string  # noqa: PLC0415
 
     try:
-        counts = json.loads((REPO_ROOT / "data" / "current-counts.json").read_text(encoding="utf-8"))
+        counts = json.loads(
+            (REPO_ROOT / "data" / "current-counts.json").read_text(encoding="utf-8")
+        )
         modified = str(counts.get("generated_at", ""))[:10] or report_date_string()
-    except (OSError, json.JSONDecodeError):
+    except OSError, json.JSONDecodeError:
         modified = report_date_string()
     return {
         "@context": "https://schema.org",
@@ -50,31 +59,147 @@ def _head_extra() -> str:
         f"{breadcrumb_jsonld_script(_BREADCRUMB)}\n"
     )
 
+
 EXPORT_ROW_SPECS: list[tuple[str, str, str, str]] = [
-    ("CITATION.cff", "CITATION.cff", "Repository citation metadata for GitHub and Zenodo harvesters.", "text/x-yaml"),
-    ("bibliography.bib", "BibTeX", "Full bibliography export for LaTeX, Pandoc, and citation managers.", "application/x-bibtex"),
-    ("bibliography.csl.json", "CSL JSON", "citeproc- and Pandoc-compatible structured citations.", "application/json"),
-    ("bibliography.ris", "RIS", "Import format for Zotero, EndNote, and Mendeley.", "application/x-research-info-systems"),
-    ("codemeta.json", "CodeMeta", "Software and source metadata for research software indexers.", "application/json"),
-    ("data/works.json", "Works JSON", "{works_count}-row structured bibliography with DOIs, domains, and doc paths.", "application/json"),
-    ("data/software.json", "Software JSON", "Owned and AII software catalog rows.", "application/json"),
-    ("data/catalog.json", "Catalog JSON", "Schema.org DataCatalog mirror of catalog.html.", "application/json"),
-    ("data/claims.json", "Claims JSON", "Evidence ledger with confidence and source links.", "application/json"),
-    ("data/people.json", "People JSON", "Collaborator and identity index.", "application/json"),
-    ("data/organizations.json", "Organizations JSON", "Institutional affiliation index.", "application/json"),
-    ("data/resume.json", "Resume JSON", "Structured CV data merged from resume/source.json.", "application/json"),
-    ("resume/resume.html", "Accessible HTML CV", "No-JavaScript semantic CV view with PDF, plaintext, JSON, and verification links.", "text/html"),
-    ("data/artworks-index.json", "Artwork Index JSON", "Compact gallery grid and search metadata for pen-and-ink and blockchain art.", "application/json"),
-    ("data/artworks.json", "Artworks JSON", "Complete gallery metadata, resolution maps, and media URLs for pen-and-ink and blockchain art.", "application/json"),
-    ("data/videos-index.json", "Video Timeline Index", "Compact timeline projection; complete video metadata remains available in data/videos.json.", "application/json"),
-    ("data/videos.json", "Video Metadata JSON", "Complete video metadata with topics, related works, page URLs, and transcript cache status.", "application/json"),
-    ("data/github-repositories.json", "GitHub inventory JSON", "Full public repository data; the human-facing inventory separates primary repositories from forks.", "application/json"),
-    ("data/work-enrichment.json", "Work enrichment JSON", "Abstracts and keywords extracted from paper folders.", "application/json"),
-    ("data/generated-manifest.json", "Generated manifest JSON", "Source-to-output rebuild map.", "application/json"),
-    ("data/reconciliation.json", "Reconciliation JSON", "Curated counts vs public-source indexes.", "application/json"),
-    ("search-index.json", "Search index JSON", "Site-wide lexical index for search.html.", "application/json"),
+    (
+        "CITATION.cff",
+        "CITATION.cff",
+        "Repository citation metadata for GitHub and Zenodo harvesters.",
+        "text/x-yaml",
+    ),
+    (
+        "bibliography.bib",
+        "BibTeX",
+        "Full bibliography export for LaTeX, Pandoc, and citation managers.",
+        "application/x-bibtex",
+    ),
+    (
+        "bibliography.csl.json",
+        "CSL JSON",
+        "citeproc- and Pandoc-compatible structured citations.",
+        "application/json",
+    ),
+    (
+        "bibliography.ris",
+        "RIS",
+        "Import format for Zotero, EndNote, and Mendeley.",
+        "application/x-research-info-systems",
+    ),
+    (
+        "codemeta.json",
+        "CodeMeta",
+        "Software and source metadata for research software indexers.",
+        "application/json",
+    ),
+    (
+        "data/works.json",
+        "Works JSON",
+        "{works_count}-row structured bibliography with DOIs, domains, and doc paths.",
+        "application/json",
+    ),
+    (
+        "data/software.json",
+        "Software JSON",
+        "Owned and AII software catalog rows.",
+        "application/json",
+    ),
+    (
+        "data/catalog.json",
+        "Catalog JSON",
+        "Schema.org DataCatalog mirror of catalog.html.",
+        "application/json",
+    ),
+    (
+        "data/claims.json",
+        "Claims JSON",
+        "Evidence ledger with confidence and source links.",
+        "application/json",
+    ),
+    (
+        "data/people.json",
+        "People JSON",
+        "Collaborator and identity index.",
+        "application/json",
+    ),
+    (
+        "data/organizations.json",
+        "Organizations JSON",
+        "Institutional affiliation index.",
+        "application/json",
+    ),
+    (
+        "data/resume.json",
+        "Resume JSON",
+        "Structured CV data merged from resume/source.json.",
+        "application/json",
+    ),
+    (
+        "resume/resume.html",
+        "Accessible HTML CV",
+        "No-JavaScript semantic CV view with PDF, plaintext, JSON, and verification links.",
+        "text/html",
+    ),
+    (
+        "data/artworks-index.json",
+        "Artwork Index JSON",
+        "Compact gallery grid and search metadata for pen-and-ink and blockchain art.",
+        "application/json",
+    ),
+    (
+        "data/artworks.json",
+        "Artworks JSON",
+        "Complete gallery metadata, resolution maps, and media URLs for pen-and-ink and blockchain art.",
+        "application/json",
+    ),
+    (
+        "data/videos-index.json",
+        "Video Timeline Index",
+        "Compact timeline projection; complete video metadata remains available in data/videos.json.",
+        "application/json",
+    ),
+    (
+        "data/videos.json",
+        "Video Metadata JSON",
+        "Complete video metadata with topics, related works, page URLs, and transcript cache status.",
+        "application/json",
+    ),
+    (
+        "data/github-repositories.json",
+        "GitHub inventory JSON",
+        "Full public repository data; the human-facing inventory separates primary repositories from forks.",
+        "application/json",
+    ),
+    (
+        "data/work-enrichment.json",
+        "Work enrichment JSON",
+        "Abstracts and keywords extracted from paper folders.",
+        "application/json",
+    ),
+    (
+        "data/generated-manifest.json",
+        "Generated manifest JSON",
+        "Source-to-output rebuild map.",
+        "application/json",
+    ),
+    (
+        "data/reconciliation.json",
+        "Reconciliation JSON",
+        "Curated counts vs public-source indexes.",
+        "application/json",
+    ),
+    (
+        "search-index.json",
+        "Search index JSON",
+        "Site-wide lexical index for search.html.",
+        "application/json",
+    ),
     ("feed.xml", "RSS feed", "Recent works and site updates.", "application/rss+xml"),
-    ("llms.txt", "LLMs.txt", "Agent-facing source map and crawl inventory.", "text/plain"),
+    (
+        "llms.txt",
+        "LLMs.txt",
+        "Agent-facing source map and crawl inventory.",
+        "text/plain",
+    ),
 ]
 
 
@@ -182,7 +307,9 @@ def render() -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if exports.html is stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if exports.html is stale"
+    )
     args = parser.parse_args()
     # Stamp-reuse (HTML generated_at equivalent): keep the on-disk footer
     # build stamp when it is the only difference, so non-rendering commits

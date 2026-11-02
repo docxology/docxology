@@ -16,7 +16,15 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-from build_resume import RESUME_HTML_URL, VERIFY_URL, _provenance_base, _sha256_bytes, render_pdf, render_resume_html, render_verify_html  # noqa: E402
+from build_resume import (  # noqa: E402
+    RESUME_HTML_URL,
+    VERIFY_URL,
+    _provenance_base,
+    _sha256_bytes,
+    render_pdf,
+    render_resume_html,
+    render_verify_html,
+)
 from docxology_tools.resume_data import (  # noqa: E402
     CODA_GLYPH_RE,
     build_resume_payload,
@@ -31,7 +39,15 @@ from docxology_tools.count_consistency import (  # noqa: E402
 
 
 FIXED_TIME = "2026-05-27T00:00:00Z"
-SOURCE_SECTIONS = ("education", "experience", "awards", "conferences", "media_outreach", "service", "art_uses")
+SOURCE_SECTIONS = (
+    "education",
+    "experience",
+    "awards",
+    "conferences",
+    "media_outreach",
+    "service",
+    "art_uses",
+)
 
 
 def test_resume_source_schema_and_required_sections():
@@ -52,7 +68,10 @@ def test_resume_source_schema_and_required_sections():
     for section in SOURCE_SECTIONS:
         for row in source[section]:
             assert row["links"], f"{section}:{row['id']}"
-            assert all(link["label"] and link["url"].startswith(("http://", "https://")) for link in row["links"])
+            assert all(
+                link["label"] and link["url"].startswith(("http://", "https://"))
+                for link in row["links"]
+            )
 
 
 def test_resume_payload_merges_canonical_works_and_software_counts():
@@ -65,9 +84,18 @@ def test_resume_payload_merges_canonical_works_and_software_counts():
     assert payload["metrics"]["software_catalogued"] == software["total"]
     assert len(payload["works"]) == biblio["works"]
     assert len(payload["software"]) == software["total"]
-    assert payload["metrics"]["google_scholar"]["citations"] == inputs["data/scholar-snapshot.json"]["citations"]
-    assert payload["metrics"]["github_inventory"]["docxology"] == github_counts["docxology"]
-    assert payload["metrics"]["github_inventory"]["ActiveInferenceInstitute"] == github_counts["ActiveInferenceInstitute"]
+    assert (
+        payload["metrics"]["google_scholar"]["citations"]
+        == inputs["data/scholar-snapshot.json"]["citations"]
+    )
+    assert (
+        payload["metrics"]["github_inventory"]["docxology"]
+        == github_counts["docxology"]
+    )
+    assert (
+        payload["metrics"]["github_inventory"]["ActiveInferenceInstitute"]
+        == github_counts["ActiveInferenceInstitute"]
+    )
     assert payload["integrity"]["source_manifest"]["sha256"]
     assert "data/github-repositories.json" in payload["source_files"]
 
@@ -93,7 +121,10 @@ def test_text_outputs_strip_coda_glyphs_and_preserve_doi_lines():
     assert f"SOFTWARE ({software['total']})" in text
     doi_lines = [line for line in text.splitlines() if re.search(r"10\.\d{4,9}/", line)]
     assert doi_lines
-    assert all(line.startswith("[") or "zenodo:" in line or "DOI" not in line for line in doi_lines)
+    assert all(
+        line.startswith("[") or "zenodo:" in line or "DOI" not in line
+        for line in doi_lines
+    )
 
 
 def test_resume_rendering_is_deterministic_for_fixed_timestamp():
@@ -150,14 +181,23 @@ def test_pdf_contains_clickable_link_annotations():
     assert "https://activeinference.institute/structure/officers/" in uris
     assert "https://api.nsf.gov/services/v1/awards/2010290.json" in uris
     assert "https://doi.org/10.5281/zenodo.17138223" in uris
-    assert "https://bathmikec.podbean.com/e/s3e10-the-fep-a-tool-for-understanding-and-modelling-complex-systems/" in uris
+    assert (
+        "https://bathmikec.podbean.com/e/s3e10-the-fep-a-tool-for-understanding-and-modelling-complex-systems/"
+        in uris
+    )
     assert "https://www.youtube.com/watch?v=BJ-PAt3cqf4" in uris
     assert "https://www.youtube.com/watch?v=x_VPw1K55BM" in uris
     assert "https://www.isss.org/home/" in uris
-    assert "https://www.jove.com/methods-collections/567/field-and-laboratory-methods-for-modern-entomology" in uris
+    assert (
+        "https://www.jove.com/methods-collections/567/field-and-laboratory-methods-for-modern-entomology"
+        in uris
+    )
     assert "https://information-professionals.org/" in uris
     assert "https://www.ssbprobe.com/decentraldogma-danielfriedman" in uris
-    assert "https://metaverse.sothebys.com/natively-digital/lots/curio-cards-complete-set-1-30-plus-17b" in uris
+    assert (
+        "https://metaverse.sothebys.com/natively-digital/lots/curio-cards-complete-set-1-30-plus-17b"
+        in uris
+    )
     assert "https://curio.cards/artist/danielfriedman/" in uris
 
 
@@ -177,10 +217,10 @@ def test_semantic_html_cv_is_no_javascript_and_escapes_generated_content():
 
     assert RESUME_HTML_URL in html
     assert '<main id="main" class="cv-shell">' in html
-    assert '<h1>Daniel Ari Friedman, PhD</h1>' in html
+    assert "<h1>Daniel Ari Friedman, PhD</h1>" in html
     assert "Fourfold Vision" in html
     assert "SynthOBS" in html
-    assert 'script src=' not in html
+    assert "script src=" not in html
     assert "data/github-repositories.json" not in html
     assert "Source manifest:" in html
 
@@ -190,7 +230,10 @@ def test_resume_verify_html_records_hashes_and_artifact_links():
     json_bytes = json_dumps(payload).encode("utf-8")
     provenance = _provenance_base(payload, json_bytes)
     pdf = render_pdf(payload, "full", provenance)
-    provenance = {**provenance, "resume_pdf": {"bytes": len(pdf), "sha256": _sha256_bytes(pdf)}}
+    provenance = {
+        **provenance,
+        "resume_pdf": {"bytes": len(pdf), "sha256": _sha256_bytes(pdf)},
+    }
     html = render_verify_html(payload, provenance).decode("utf-8")
 
     assert "Resume Verification" in html
@@ -203,4 +246,4 @@ def test_resume_verify_html_records_hashes_and_artifact_links():
     assert 'scope="col"' in html
     assert "Source manifest matches the payload" in html
     assert "JavaScript-free" in html
-    assert 'script src=' not in html
+    assert "script src=" not in html

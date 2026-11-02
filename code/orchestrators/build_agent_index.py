@@ -81,22 +81,40 @@ SCHEMAS = {
     "CollectionCatalog": {
         "description": "Version 1 envelope with a works array of citation records for local reading lists.",
         "required": ["key", "title", "authors", "year", "url", "bib", "ris", "csl"],
-        "fields": {"key": "Permanent citation key", "bib": "Authoritative bibliography entry", "ris": "RIS with reviewed contributor role", "csl": "CSL JSON citation object"},
+        "fields": {
+            "key": "Permanent citation key",
+            "bib": "Authoritative bibliography entry",
+            "ris": "RIS with reviewed contributor role",
+            "csl": "CSL JSON citation object",
+        },
     },
     "ResearchMap": {
         "description": "Version 1 envelope with nodes and edges; exact normalized byline names are not disambiguated identities.",
         "required": ["schema_version", "nodes", "edges"],
-        "fields": {"nodes": "id, kind, label, url; kinds work, person, domain or software", "edges": "source, target, relation and provenance; no inferred citation or causal edges"},
+        "fields": {
+            "nodes": "id, kind, label, url; kinds work, person, domain or software",
+            "edges": "source, target, relation and provenance; no inferred citation or causal edges",
+        },
     },
     "ResearchTrails": {
         "description": "Version 1 envelope with curated trails and source-validated work/video/software/demo steps.",
         "required": ["schema_version", "trails"],
-        "fields": {"trails": "id, title, summary, prerequisites, steps", "minutes": "Editorial first-pass estimate, not a measured completion time"},
+        "fields": {
+            "trails": "id, title, summary, prerequisites, steps",
+            "minutes": "Editorial first-pass estimate, not a measured completion time",
+        },
     },
     "BlakeIndex": {
         "type": "object",
         "description": "A topical projection of Work identities with whole-word search coverage, reviewed passage relations, DOI roles and edition caveats. Does not attest full reading or citation-source validation.",
-        "required": ["schema_version", "sources", "counts", "works", "exclusions", "needs_review"],
+        "required": [
+            "schema_version",
+            "sources",
+            "counts",
+            "works",
+            "exclusions",
+            "needs_review",
+        ],
         "fields": {
             "schema_version": "BlakeIndex.v1",
             "works": "array of existing citation_key identities; title_match and core_subject are independent of relation; includes citation_doi, version_doi, record_url, API version, primary_metadata_matched, edition_note, full_text_path, full_text_sha256 and matching_lines (1-based)",
@@ -117,7 +135,18 @@ SCHEMAS = {
     "Work": {
         "type": "object",
         "description": "One curated bibliography row; citation_key is the permanent public URL identifier.",
-        "required": ["num", "citation_key", "year", "domain", "domain_name", "type", "title", "url", "doi", "docs_path"],
+        "required": [
+            "num",
+            "citation_key",
+            "year",
+            "domain",
+            "domain_name",
+            "type",
+            "title",
+            "url",
+            "doi",
+            "docs_path",
+        ],
         "fields": {
             "num": "integer; immutable catalog identity, with retired gaps preserved",
             "citation_key": "string; stable URL and BibTeX key",
@@ -126,7 +155,7 @@ SCHEMAS = {
             "domain_name": "string; human-readable domain",
             "type": "string; Paper, Book, Course, Presentation, Playbook, Series, or Report",
             "title": "string",
-            "authors": "array of strings; ordered contributor names in \"Last, First\" form; contributor_role specifies editors",
+            "authors": 'array of strings; ordered contributor names in "Last, First" form; contributor_role specifies editors',
             "contributor_role": "optional string; editor for a document-verified edited volume, author by default",
             "venue": "string",
             "url": "string; canonical external identifier or landing page",
@@ -144,7 +173,16 @@ SCHEMAS = {
     "SoftwareRepository": {
         "type": "object",
         "description": "One curated software catalog row from pages/SOFTWARE.md.",
-        "required": ["name", "url", "owner", "catalog_section", "description", "language", "paper_path", "zenodo_url"],
+        "required": [
+            "name",
+            "url",
+            "owner",
+            "catalog_section",
+            "description",
+            "language",
+            "paper_path",
+            "zenodo_url",
+        ],
         "fields": {
             "name": "string",
             "url": "string; GitHub repository URL",
@@ -175,7 +213,17 @@ SCHEMAS = {
     "VideoIndex": {
         "type": "object",
         "description": "Compact video timeline projection; complete topic, relationship, and transcript metadata lives in VideoObject.",
-        "required": ["schema_version", "generated_at", "source", "count", "counts", "channels", "fields", "detail_source", "videos"],
+        "required": [
+            "schema_version",
+            "generated_at",
+            "source",
+            "count",
+            "counts",
+            "channels",
+            "fields",
+            "detail_source",
+            "videos",
+        ],
         "fields": {
             "schema_version": "VideoIndex.v1",
             "generated_at": "ISO-8601 generation timestamp",
@@ -191,7 +239,17 @@ SCHEMAS = {
     "Repository": {
         "type": "object",
         "description": "One public repository in the complete GitHub inventory, including forks.",
-        "required": ["name", "full_name", "owner", "html_url", "fork", "archived", "private", "curated", "recently_updated"],
+        "required": [
+            "name",
+            "full_name",
+            "owner",
+            "html_url",
+            "fork",
+            "archived",
+            "private",
+            "curated",
+            "recently_updated",
+        ],
         "fields": {
             "full_name": "string; owner/name",
             "html_url": "string",
@@ -209,7 +267,16 @@ SCHEMAS = {
     "ClaimWithEvidence": {
         "type": "object",
         "description": "One claim ledger entry with dated verification and explicit caveat handling.",
-        "required": ["id", "claim", "status", "sources", "checked_at", "confidence", "verification_method", "caveat"],
+        "required": [
+            "id",
+            "claim",
+            "status",
+            "sources",
+            "checked_at",
+            "confidence",
+            "verification_method",
+            "caveat",
+        ],
         "fields": {
             "id": "stable claim identifier",
             "claim": "string",
@@ -225,7 +292,20 @@ SCHEMAS = {
     "ScholarVerificationReceipt": {
         "type": "object",
         "description": "A direct-authenticated verification assertion bound by SHA-256 to the canonical dated Scholar snapshot.",
-        "required": ["schema_version", "receipt_type", "profile_id", "direct", "authenticated", "verified_at", "snapshot_path", "snapshot_sha256", "snapshot_as_of", "metrics", "source", "method"],
+        "required": [
+            "schema_version",
+            "receipt_type",
+            "profile_id",
+            "direct",
+            "authenticated",
+            "verified_at",
+            "snapshot_path",
+            "snapshot_sha256",
+            "snapshot_as_of",
+            "metrics",
+            "source",
+            "method",
+        ],
         "fields": {
             "receipt_type": "google_scholar_direct_authenticated",
             "profile_id": "string; canonical Google Scholar profile identifier",
@@ -281,7 +361,20 @@ SCHEMAS = {
     "RepositoryClassification": {
         "type": "object",
         "description": "Review queue row for a public repository outside the curated software catalog, including description-quality triage.",
-        "required": ["full_name", "name", "owner", "html_url", "fork", "archived", "private", "description", "description_quality", "catalog_role", "exclusion_reason", "review_status"],
+        "required": [
+            "full_name",
+            "name",
+            "owner",
+            "html_url",
+            "fork",
+            "archived",
+            "private",
+            "description",
+            "description_quality",
+            "catalog_role",
+            "exclusion_reason",
+            "review_status",
+        ],
         "fields": {
             "full_name": "string; owner/name",
             "name": "string; repository name",
@@ -308,7 +401,15 @@ SCHEMAS = {
     "PagesArtifactManifest": {
         "type": "object",
         "description": "Bounded GitHub Pages projection file list, byte budget, omitted-image and superseded-report policy, and GitHub fallback templates.",
-        "required": ["schema_version", "source_commit_at_generation", "github_fallback", "budget", "included_files", "omitted_paper_images", "omitted_superseded_reports"],
+        "required": [
+            "schema_version",
+            "source_commit_at_generation",
+            "github_fallback",
+            "budget",
+            "included_files",
+            "omitted_paper_images",
+            "omitted_superseded_reports",
+        ],
         "fields": {
             "source_commit_at_generation": "Git commit used when the artifact was measured",
             "github_fallback": "tree/raw URL templates",
@@ -321,7 +422,14 @@ SCHEMAS = {
     "ReleaseIntegrity": {
         "type": "object",
         "description": "Source-to-release integrity envelope connecting hashes, generators, Pages, deployment, and live verification.",
-        "required": ["schema_version", "source_sha256", "generator", "pages_artifact", "deployment", "privacy"],
+        "required": [
+            "schema_version",
+            "source_sha256",
+            "generator",
+            "pages_artifact",
+            "deployment",
+            "privacy",
+        ],
         "fields": {
             "source_sha256": "map of source/generated input paths to SHA-256",
             "generator": "ordered pipeline and generator hashes",
@@ -334,7 +442,17 @@ SCHEMAS = {
         "type": "object",
         "description": "One complete gallery artwork record (pen-and-ink or blockchain art); the full counterpart to the compact ArtworkIndex projection. Aligns with schema.org VisualArtwork.",
         "schema_org": "https://schema.org/VisualArtwork",
-        "required": ["id", "title", "tags", "date", "views", "media", "thumb", "flickr_url", "sizes"],
+        "required": [
+            "id",
+            "title",
+            "tags",
+            "date",
+            "views",
+            "media",
+            "thumb",
+            "flickr_url",
+            "sizes",
+        ],
         "fields": {
             "id": "string; stable Flickr artwork identifier",
             "title": "string",
@@ -355,7 +473,15 @@ SCHEMAS = {
         "type": "object",
         "description": "One complete video record; the full counterpart to the compact VideoIndex projection. Aligns with schema.org VideoObject.",
         "schema_org": "https://schema.org/VideoObject",
-        "required": ["id", "title", "channel", "upload_date", "youtube_url", "embed_url", "page_url"],
+        "required": [
+            "id",
+            "title",
+            "channel",
+            "upload_date",
+            "youtube_url",
+            "embed_url",
+            "page_url",
+        ],
         "fields": {
             "id": "string; YouTube video identifier",
             "title": "string",
@@ -430,8 +556,22 @@ SCHEMAS = {
     "ScholarReadiness": {
         "type": "object",
         "description": "Offline Scholar prerequisites; never an indexing or inclusion attestation.",
-        "required": ["schema_version", "evidence_kind", "works_sha256", "network_checked", "indexing_verified", "summary", "works"],
-        "fields": {"schema_version": "1.0", "network_checked": "false", "indexing_verified": "false", "summary": "local blockers only", "works": "per-work source hashes, citation tags, selected PDF size/placement, and unverified requirements"},
+        "required": [
+            "schema_version",
+            "evidence_kind",
+            "works_sha256",
+            "network_checked",
+            "indexing_verified",
+            "summary",
+            "works",
+        ],
+        "fields": {
+            "schema_version": "1.0",
+            "network_checked": "false",
+            "indexing_verified": "false",
+            "summary": "local blockers only",
+            "works": "per-work source hashes, citation tags, selected PDF size/placement, and unverified requirements",
+        },
     },
     "WorkEnrichment": {
         "type": "object",
@@ -524,9 +664,16 @@ def payload() -> dict:
     reproducibility = load_json("data/reproducibility.json")
     generated_manifest = load_json("data/generated-manifest.json")
     pages_artifact = load_json("data/pages-artifact-manifest.json")
-    live_report_path = latest_report("live_site_verification_*.json", "reports/live_site_verification_2026-05-15.json")
+    live_report_path = latest_report(
+        "live_site_verification_*.json",
+        "reports/live_site_verification_2026-05-15.json",
+    )
     live_report = load_json(live_report_path.lstrip("/"))
-    dataset_hashes = {key: sha256(REPO_ROOT / path) for key, path in DATASET_PATHS.items() if (REPO_ROOT / path).is_file()}
+    dataset_hashes = {
+        key: sha256(REPO_ROOT / path)
+        for key, path in DATASET_PATHS.items()
+        if (REPO_ROOT / path).is_file()
+    }
     dataset_hashes["current_counts"] = sha256(COUNTS)
     return {
         "schema_version": "1.6",
@@ -547,125 +694,571 @@ def payload() -> dict:
         },
         "routes": [
             {"id": "home", "path": "/", "format": "text/html", "kind": "profile"},
-            {"id": "publications", "path": "/publications.html", "format": "text/html", "kind": "collection"},
-            {"id": "collections", "path": "/collections.html", "format": "text/html", "kind": "collection"},
-            {"id": "trails", "path": "/trails.html", "format": "text/html", "kind": "collection"},
-            {"id": "research-map", "path": "/research-map.html", "format": "text/html", "kind": "collection"},
+            {
+                "id": "publications",
+                "path": "/publications.html",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "collections",
+                "path": "/collections.html",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "trails",
+                "path": "/trails.html",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "research-map",
+                "path": "/research-map.html",
+                "format": "text/html",
+                "kind": "collection",
+            },
             {"id": "lab", "path": "/lab.html", "format": "text/html", "kind": "page"},
-            {"id": "works", "path": "/works/", "format": "text/html", "kind": "collection"},
-            {"id": "domains", "path": "/domains.html", "format": "text/html", "kind": "taxonomy"},
-            {"id": "software", "path": "/software.html", "format": "text/html", "kind": "collection"},
-            {"id": "repositories", "path": "/repositories.html", "format": "text/html", "kind": "collection"},
-            {"id": "art", "path": "/art.html", "format": "text/html", "kind": "collection"},
-            {"id": "videos", "path": "/videos.html", "format": "text/html", "kind": "collection"},
-            {"id": "start-here", "path": "/start-here.html", "format": "text/html", "kind": "profile"},
-            {"id": "media", "path": "/media.html", "format": "text/html", "kind": "collection"},
-            {"id": "collaborators", "path": "/collaborators.html", "format": "text/html", "kind": "collection"},
-            {"id": "repositories-forks", "path": "/repositories-forks.html", "format": "text/html", "kind": "collection"},
-            {"id": "cite-verify", "path": "/cite-verify.html", "format": "text/html", "kind": "verification"},
-            {"id": "reproducibility", "path": "/reproducibility.html", "format": "text/html", "kind": "reproducibility-ledger"},
-            {"id": "resume-verify", "path": "/resume/verify.html", "format": "text/html", "kind": "verification"},
-            {"id": "pillar-active-inference", "path": "/active-inference.html", "format": "text/html", "kind": "explainer"},
-            {"id": "pillar-cognitive-security", "path": "/cognitive-security.html", "format": "text/html", "kind": "explainer"},
-            {"id": "pillar-computational-entomology", "path": "/computational-entomology.html", "format": "text/html", "kind": "explainer"},
-            {"id": "pillar-insect-cognition", "path": "/insect-cognition.html", "format": "text/html", "kind": "explainer"},
-            {"id": "pillar-neurosymbolic-ai", "path": "/neurosymbolic-ai.html", "format": "text/html", "kind": "explainer"},
-            {"id": "domain-entomology", "path": "/domain-entomology.html", "format": "text/html", "kind": "taxonomy"},
-            {"id": "domain-active-inference", "path": "/domain-active-inference.html", "format": "text/html", "kind": "taxonomy"},
-            {"id": "domain-cognitive-security", "path": "/domain-cognitive-security.html", "format": "text/html", "kind": "taxonomy"},
-            {"id": "domain-aii-ecosystem", "path": "/domain-aii-ecosystem.html", "format": "text/html", "kind": "taxonomy"},
-            {"id": "domain-art-synergetics", "path": "/domain-art-synergetics.html", "format": "text/html", "kind": "taxonomy"},
-            {"id": "domain-biomedicine", "path": "/domain-biomedicine.html", "format": "text/html", "kind": "taxonomy"},
-            {"id": "domain-computational", "path": "/domain-computational.html", "format": "text/html", "kind": "taxonomy"},
-            {"id": "domain-presentations-media", "path": "/domain-presentations-media.html", "format": "text/html", "kind": "taxonomy"},
-            {"id": "artworks", "path": "/artworks/", "format": "text/html", "kind": "collection"},
-            {"id": "art-collection-neuroscience-molecular-biology", "path": "/art-collections/neuroscience-molecular-biology.html", "format": "text/html", "kind": "collection"},
-            {"id": "art-collection-sacred-geometry-kabbalistic-triangles", "path": "/art-collections/sacred-geometry-kabbalistic-triangles.html", "format": "text/html", "kind": "collection"},
-            {"id": "art-collection-active-inference", "path": "/art-collections/active-inference.html", "format": "text/html", "kind": "collection"},
-            {"id": "art-collection-americana-seals", "path": "/art-collections/americana-seals.html", "format": "text/html", "kind": "collection"},
-            {"id": "art-collection-collective-behavior-ants", "path": "/art-collections/collective-behavior-ants.html", "format": "text/html", "kind": "collection"},
-            {"id": "projections", "path": "/projections.html", "format": "text/html", "kind": "profile"},
-            {"id": "search", "path": "/search.html", "format": "text/html", "kind": "query", "query": "?q={terms}"},
-            {"id": "discovery", "path": "/discovery.html", "format": "text/html", "kind": "source-map"},
-            {"id": "catalog", "path": "/catalog.html", "format": "text/html", "kind": "data-catalog"},
-            {"id": "exports", "path": "/exports.html", "format": "text/html", "kind": "export-hub"},
-            {"id": "evidence", "path": "/evidence.html", "format": "text/html", "kind": "evidence-ledger"},
-            {"id": "updates", "path": "/updates.html", "format": "text/html", "kind": "changelog"},
-            {"id": "cv", "path": "/resume/resume.html", "format": "text/html", "kind": "accessible-cv"},
-            {"id": "agent-index", "path": "/data/agent-index.json", "format": "application/json", "kind": "route-manifest"},
+            {
+                "id": "works",
+                "path": "/works/",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "domains",
+                "path": "/domains.html",
+                "format": "text/html",
+                "kind": "taxonomy",
+            },
+            {
+                "id": "software",
+                "path": "/software.html",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "repositories",
+                "path": "/repositories.html",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "art",
+                "path": "/art.html",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "videos",
+                "path": "/videos.html",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "start-here",
+                "path": "/start-here.html",
+                "format": "text/html",
+                "kind": "profile",
+            },
+            {
+                "id": "media",
+                "path": "/media.html",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "collaborators",
+                "path": "/collaborators.html",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "repositories-forks",
+                "path": "/repositories-forks.html",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "cite-verify",
+                "path": "/cite-verify.html",
+                "format": "text/html",
+                "kind": "verification",
+            },
+            {
+                "id": "reproducibility",
+                "path": "/reproducibility.html",
+                "format": "text/html",
+                "kind": "reproducibility-ledger",
+            },
+            {
+                "id": "resume-verify",
+                "path": "/resume/verify.html",
+                "format": "text/html",
+                "kind": "verification",
+            },
+            {
+                "id": "pillar-active-inference",
+                "path": "/active-inference.html",
+                "format": "text/html",
+                "kind": "explainer",
+            },
+            {
+                "id": "pillar-cognitive-security",
+                "path": "/cognitive-security.html",
+                "format": "text/html",
+                "kind": "explainer",
+            },
+            {
+                "id": "pillar-computational-entomology",
+                "path": "/computational-entomology.html",
+                "format": "text/html",
+                "kind": "explainer",
+            },
+            {
+                "id": "pillar-insect-cognition",
+                "path": "/insect-cognition.html",
+                "format": "text/html",
+                "kind": "explainer",
+            },
+            {
+                "id": "pillar-neurosymbolic-ai",
+                "path": "/neurosymbolic-ai.html",
+                "format": "text/html",
+                "kind": "explainer",
+            },
+            {
+                "id": "domain-entomology",
+                "path": "/domain-entomology.html",
+                "format": "text/html",
+                "kind": "taxonomy",
+            },
+            {
+                "id": "domain-active-inference",
+                "path": "/domain-active-inference.html",
+                "format": "text/html",
+                "kind": "taxonomy",
+            },
+            {
+                "id": "domain-cognitive-security",
+                "path": "/domain-cognitive-security.html",
+                "format": "text/html",
+                "kind": "taxonomy",
+            },
+            {
+                "id": "domain-aii-ecosystem",
+                "path": "/domain-aii-ecosystem.html",
+                "format": "text/html",
+                "kind": "taxonomy",
+            },
+            {
+                "id": "domain-art-synergetics",
+                "path": "/domain-art-synergetics.html",
+                "format": "text/html",
+                "kind": "taxonomy",
+            },
+            {
+                "id": "domain-biomedicine",
+                "path": "/domain-biomedicine.html",
+                "format": "text/html",
+                "kind": "taxonomy",
+            },
+            {
+                "id": "domain-computational",
+                "path": "/domain-computational.html",
+                "format": "text/html",
+                "kind": "taxonomy",
+            },
+            {
+                "id": "domain-presentations-media",
+                "path": "/domain-presentations-media.html",
+                "format": "text/html",
+                "kind": "taxonomy",
+            },
+            {
+                "id": "artworks",
+                "path": "/artworks/",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "art-collection-neuroscience-molecular-biology",
+                "path": "/art-collections/neuroscience-molecular-biology.html",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "art-collection-sacred-geometry-kabbalistic-triangles",
+                "path": "/art-collections/sacred-geometry-kabbalistic-triangles.html",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "art-collection-active-inference",
+                "path": "/art-collections/active-inference.html",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "art-collection-americana-seals",
+                "path": "/art-collections/americana-seals.html",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "art-collection-collective-behavior-ants",
+                "path": "/art-collections/collective-behavior-ants.html",
+                "format": "text/html",
+                "kind": "collection",
+            },
+            {
+                "id": "projections",
+                "path": "/projections.html",
+                "format": "text/html",
+                "kind": "profile",
+            },
+            {
+                "id": "search",
+                "path": "/search.html",
+                "format": "text/html",
+                "kind": "query",
+                "query": "?q={terms}",
+            },
+            {
+                "id": "discovery",
+                "path": "/discovery.html",
+                "format": "text/html",
+                "kind": "source-map",
+            },
+            {
+                "id": "catalog",
+                "path": "/catalog.html",
+                "format": "text/html",
+                "kind": "data-catalog",
+            },
+            {
+                "id": "exports",
+                "path": "/exports.html",
+                "format": "text/html",
+                "kind": "export-hub",
+            },
+            {
+                "id": "evidence",
+                "path": "/evidence.html",
+                "format": "text/html",
+                "kind": "evidence-ledger",
+            },
+            {
+                "id": "updates",
+                "path": "/updates.html",
+                "format": "text/html",
+                "kind": "changelog",
+            },
+            {
+                "id": "cv",
+                "path": "/resume/resume.html",
+                "format": "text/html",
+                "kind": "accessible-cv",
+            },
+            {
+                "id": "agent-index",
+                "path": "/data/agent-index.json",
+                "format": "application/json",
+                "kind": "route-manifest",
+            },
         ],
         "datasets": {
-            "collection_catalog": {"path": "/data/collection-catalog.json", "count": len(load_json("data/collection-catalog.json").get("works", [])), "schema": "CollectionCatalog"},
-            "research_map": {"path": "/data/research-map.json", "count": len(load_json("data/research-map.json").get("nodes", [])), "schema": "ResearchMap"},
-            "research_trails": {"path": "/data/research-trails.json", "count": len(load_json("data/research-trails.json").get("trails", [])), "schema": "ResearchTrails"},
-            "blake_index": {"path": "/data/blake-index.json", "count": load_json("data/blake-index.json").get("count"), "schema": "BlakeIndex"},
-            "works": {"path": "/data/works.json", "count": counts.get("bibliography_works"), "schema": "Work"},
-            "work_identifiers": {"path": "/data/work-identifiers.json", "count": len(work_identifiers.get("identifiers", {})), "schema": "WorkIdentifierRegistry"},
-            "software": {"path": "/data/software.json", "count": counts.get("software", {}).get("curated_total"), "schema": "SoftwareRepository"},
-            "repositories": {"path": "/data/github-repositories.json", "count": counts.get("github_inventory", {}).get("total"), "schema": "Repository"},
-            "artworks": {"path": "/data/artworks.json", "count": artworks.get("count", len(artworks.get("artworks", []))), "schema": "VisualArtwork"},
-            "artworks_index": {"path": "/data/artworks-index.json", "count": artworks_index.get("count", len(artworks_index.get("artworks", []))), "schema": "ArtworkIndex"},
-            "videos": {"path": "/data/videos.json", "count": videos.get("count", len(videos.get("videos", []))), "schema": "VideoObject"},
-            "videos_index": {"path": "/data/videos-index.json", "count": videos_index.get("count", len(videos_index.get("videos", []))), "schema": "VideoIndex"},
-            "search": {"path": "/search-index.json", "count": None, "schema": "SearchResult"},
-            "claims": {"path": "/data/claims.json", "count": None, "schema": "ClaimWithEvidence"},
-            "scholar_verification_receipt": {"path": "/data/scholar-verification-receipt.json", "count": None, "schema": "ScholarVerificationReceipt"},
-            "coverage_exceptions": {"path": "/data/coverage-exceptions.json", "count": len(coverage.get("exceptions", [])), "schema": "CoverageException"},
-            "repository_classification": {"path": "/data/repository-classification.json", "count": len(classification.get("repositories", [])), "schema": "RepositoryClassification"},
-            "pages_artifact": {"path": "/data/pages-artifact-manifest.json", "count": None, "schema": "PagesArtifactManifest"},
-            "release_integrity": {"path": "/data/release-integrity.json", "count": None, "schema": "ReleaseIntegrity"},
-            "people": {"path": "/data/people.json", "count": len(people.get("people", [])), "schema": "Person"},
-            "organizations": {"path": "/data/organizations.json", "count": len(organizations.get("organizations", [])), "schema": "Organization"},
-            "resume": {"path": "/data/resume.json", "count": None, "schema": "ResumeData"},
-            "scholar_readiness": {"path": "/data/scholar-readiness.json", "count": scholar_readiness.get("summary", {}).get("works"), "schema": "ScholarReadiness"},
-            "work_enrichment": {"path": "/data/work-enrichment.json", "count": work_enrichment.get("count"), "schema": "WorkEnrichment"},
-            "catalog": {"path": "/data/catalog.json", "count": len(catalog.get("dataset", [])), "schema": "DataCatalog"},
-            "reconciliation": {"path": "/data/reconciliation.json", "count": len(reconciliation.get("comparisons", [])), "schema": "ReconciliationReport"},
-            "reproducibility": {"path": "/data/reproducibility.json", "count": reproducibility.get("work_count"), "schema": "ReproducibilityLedger"},
-            "generated_manifest": {"path": "/data/generated-manifest.json", "count": len(generated_manifest.get("artifacts", [])), "schema": "GeneratedManifest"},
+            "collection_catalog": {
+                "path": "/data/collection-catalog.json",
+                "count": len(
+                    load_json("data/collection-catalog.json").get("works", [])
+                ),
+                "schema": "CollectionCatalog",
+            },
+            "research_map": {
+                "path": "/data/research-map.json",
+                "count": len(load_json("data/research-map.json").get("nodes", [])),
+                "schema": "ResearchMap",
+            },
+            "research_trails": {
+                "path": "/data/research-trails.json",
+                "count": len(load_json("data/research-trails.json").get("trails", [])),
+                "schema": "ResearchTrails",
+            },
+            "blake_index": {
+                "path": "/data/blake-index.json",
+                "count": load_json("data/blake-index.json").get("count"),
+                "schema": "BlakeIndex",
+            },
+            "works": {
+                "path": "/data/works.json",
+                "count": counts.get("bibliography_works"),
+                "schema": "Work",
+            },
+            "work_identifiers": {
+                "path": "/data/work-identifiers.json",
+                "count": len(work_identifiers.get("identifiers", {})),
+                "schema": "WorkIdentifierRegistry",
+            },
+            "software": {
+                "path": "/data/software.json",
+                "count": counts.get("software", {}).get("curated_total"),
+                "schema": "SoftwareRepository",
+            },
+            "repositories": {
+                "path": "/data/github-repositories.json",
+                "count": counts.get("github_inventory", {}).get("total"),
+                "schema": "Repository",
+            },
+            "artworks": {
+                "path": "/data/artworks.json",
+                "count": artworks.get("count", len(artworks.get("artworks", []))),
+                "schema": "VisualArtwork",
+            },
+            "artworks_index": {
+                "path": "/data/artworks-index.json",
+                "count": artworks_index.get(
+                    "count", len(artworks_index.get("artworks", []))
+                ),
+                "schema": "ArtworkIndex",
+            },
+            "videos": {
+                "path": "/data/videos.json",
+                "count": videos.get("count", len(videos.get("videos", []))),
+                "schema": "VideoObject",
+            },
+            "videos_index": {
+                "path": "/data/videos-index.json",
+                "count": videos_index.get("count", len(videos_index.get("videos", []))),
+                "schema": "VideoIndex",
+            },
+            "search": {
+                "path": "/search-index.json",
+                "count": None,
+                "schema": "SearchResult",
+            },
+            "claims": {
+                "path": "/data/claims.json",
+                "count": None,
+                "schema": "ClaimWithEvidence",
+            },
+            "scholar_verification_receipt": {
+                "path": "/data/scholar-verification-receipt.json",
+                "count": None,
+                "schema": "ScholarVerificationReceipt",
+            },
+            "coverage_exceptions": {
+                "path": "/data/coverage-exceptions.json",
+                "count": len(coverage.get("exceptions", [])),
+                "schema": "CoverageException",
+            },
+            "repository_classification": {
+                "path": "/data/repository-classification.json",
+                "count": len(classification.get("repositories", [])),
+                "schema": "RepositoryClassification",
+            },
+            "pages_artifact": {
+                "path": "/data/pages-artifact-manifest.json",
+                "count": None,
+                "schema": "PagesArtifactManifest",
+            },
+            "release_integrity": {
+                "path": "/data/release-integrity.json",
+                "count": None,
+                "schema": "ReleaseIntegrity",
+            },
+            "people": {
+                "path": "/data/people.json",
+                "count": len(people.get("people", [])),
+                "schema": "Person",
+            },
+            "organizations": {
+                "path": "/data/organizations.json",
+                "count": len(organizations.get("organizations", [])),
+                "schema": "Organization",
+            },
+            "resume": {
+                "path": "/data/resume.json",
+                "count": None,
+                "schema": "ResumeData",
+            },
+            "scholar_readiness": {
+                "path": "/data/scholar-readiness.json",
+                "count": scholar_readiness.get("summary", {}).get("works"),
+                "schema": "ScholarReadiness",
+            },
+            "work_enrichment": {
+                "path": "/data/work-enrichment.json",
+                "count": work_enrichment.get("count"),
+                "schema": "WorkEnrichment",
+            },
+            "catalog": {
+                "path": "/data/catalog.json",
+                "count": len(catalog.get("dataset", [])),
+                "schema": "DataCatalog",
+            },
+            "reconciliation": {
+                "path": "/data/reconciliation.json",
+                "count": len(reconciliation.get("comparisons", [])),
+                "schema": "ReconciliationReport",
+            },
+            "reproducibility": {
+                "path": "/data/reproducibility.json",
+                "count": reproducibility.get("work_count"),
+                "schema": "ReproducibilityLedger",
+            },
+            "generated_manifest": {
+                "path": "/data/generated-manifest.json",
+                "count": len(generated_manifest.get("artifacts", [])),
+                "schema": "GeneratedManifest",
+            },
         },
         "reports": [
-            {"id": "current-counts", "path": "/data/current-counts.json", "format": "application/json", "schema": "GeneratedReport", "freshness_field": "generated_at"},
-            {"id": "public-source-snapshot", "path": latest_report("public_source_snapshot_*.json", "reports/public_source_snapshot_2026-05-15.json"), "format": "application/json", "schema": "GeneratedReport", "freshness_field": "generated_at"},
-            {"id": "public-source-inventory", "path": latest_report("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json"), "format": "application/json", "schema": "GeneratedReport", "freshness_field": "generated_at"},
-            {"id": "paired-publications", "path": latest_report("paired_publications_*.json", "reports/paired_publications_2026-05-15.json"), "format": "application/json", "schema": "GeneratedReport", "freshness_field": "generated_at"},
-            {"id": "accessibility", "path": latest_report("accessibility_static_*.json", "reports/accessibility_static_2026-05-15.json"), "format": "application/json", "schema": "GeneratedReport", "freshness_field": "generated_at"},
-            {"id": "asset-size", "path": latest_report("asset_size_*.json", "reports/asset_size_2026-05-15.json"), "format": "application/json", "schema": "GeneratedReport", "freshness_field": "generated_at"},
-            {"id": "live-site", "path": latest_report("live_site_verification_*.json", "reports/live_site_verification_2026-05-15.json"), "format": "application/json", "schema": "GeneratedReport", "freshness_field": "generated_at"},
+            {
+                "id": "current-counts",
+                "path": "/data/current-counts.json",
+                "format": "application/json",
+                "schema": "GeneratedReport",
+                "freshness_field": "generated_at",
+            },
+            {
+                "id": "public-source-snapshot",
+                "path": latest_report(
+                    "public_source_snapshot_*.json",
+                    "reports/public_source_snapshot_2026-05-15.json",
+                ),
+                "format": "application/json",
+                "schema": "GeneratedReport",
+                "freshness_field": "generated_at",
+            },
+            {
+                "id": "public-source-inventory",
+                "path": latest_report(
+                    "public_source_inventory_*.json",
+                    "reports/public_source_inventory_2026-05-15.json",
+                ),
+                "format": "application/json",
+                "schema": "GeneratedReport",
+                "freshness_field": "generated_at",
+            },
+            {
+                "id": "paired-publications",
+                "path": latest_report(
+                    "paired_publications_*.json",
+                    "reports/paired_publications_2026-05-15.json",
+                ),
+                "format": "application/json",
+                "schema": "GeneratedReport",
+                "freshness_field": "generated_at",
+            },
+            {
+                "id": "accessibility",
+                "path": latest_report(
+                    "accessibility_static_*.json",
+                    "reports/accessibility_static_2026-05-15.json",
+                ),
+                "format": "application/json",
+                "schema": "GeneratedReport",
+                "freshness_field": "generated_at",
+            },
+            {
+                "id": "asset-size",
+                "path": latest_report(
+                    "asset_size_*.json", "reports/asset_size_2026-05-15.json"
+                ),
+                "format": "application/json",
+                "schema": "GeneratedReport",
+                "freshness_field": "generated_at",
+            },
+            {
+                "id": "live-site",
+                "path": latest_report(
+                    "live_site_verification_*.json",
+                    "reports/live_site_verification_2026-05-15.json",
+                ),
+                "format": "application/json",
+                "schema": "GeneratedReport",
+                "freshness_field": "generated_at",
+            },
         ],
         "schemas": SCHEMAS,
         "schema_registry_version": "1.6",
         "schema_examples": {
-            "CollectionCatalog": load_json("data/collection-catalog.json").get("works", [])[:1],
-            "ResearchMap": {"schema_version": 1, "nodes": load_json("data/research-map.json").get("nodes", [])[:2], "edges": [], "note": "Truncated shape example; use the dataset for connected graph records."},
-            "ResearchTrails": {"schema_version": 1, "trails": load_json("data/research-trails.json").get("trails", [])[:1]},
+            "CollectionCatalog": load_json("data/collection-catalog.json").get(
+                "works", []
+            )[:1],
+            "ResearchMap": {
+                "schema_version": 1,
+                "nodes": load_json("data/research-map.json").get("nodes", [])[:2],
+                "edges": [],
+                "note": "Truncated shape example; use the dataset for connected graph records.",
+            },
+            "ResearchTrails": {
+                "schema_version": 1,
+                "trails": load_json("data/research-trails.json").get("trails", [])[:1],
+            },
             "Work": works.get("works", [])[:1],
             "WorkIdentifierRegistry": {
                 "schema_version": work_identifiers.get("schema_version"),
-                "identifiers": dict(list(work_identifiers.get("identifiers", {}).items())[:1]),
+                "identifiers": dict(
+                    list(work_identifiers.get("identifiers", {}).items())[:1]
+                ),
             },
             "SoftwareRepository": software.get("repositories", [])[:1],
             "ArtworkIndex": artworks_index.get("artworks", [])[:1],
             "VideoIndex": {
-                **{key: videos_index.get(key) for key in ("schema_version", "generated_at", "source", "count", "counts", "channels", "fields", "detail_source")},
+                **{
+                    key: videos_index.get(key)
+                    for key in (
+                        "schema_version",
+                        "generated_at",
+                        "source",
+                        "count",
+                        "counts",
+                        "channels",
+                        "fields",
+                        "detail_source",
+                    )
+                },
                 "videos": videos_index.get("videos", [])[:1],
             },
             "Repository": repositories.get("repositories", [])[:1],
             "ClaimWithEvidence": claims.get("claims", [])[:1],
             "ScholarVerificationReceipt": scholar_receipt,
-            "ScholarReadiness": {**{key: value for key, value in scholar_readiness.items() if key != "works"}, "works": scholar_readiness.get("works", [])[:1]},
+            "ScholarReadiness": {
+                **{
+                    key: value
+                    for key, value in scholar_readiness.items()
+                    if key != "works"
+                },
+                "works": scholar_readiness.get("works", [])[:1],
+            },
             "SearchResult": search.get("items", [])[:1],
             "CoverageException": coverage.get("exceptions", [])[:1],
             "RepositoryClassification": classification.get("repositories", [])[:1],
             "GeneratedReport": current,
-            "PagesArtifactManifest": {"schema_version": pages_artifact.get("schema_version"), "budget": pages_artifact.get("budget"), "github_fallback": pages_artifact.get("github_fallback")},
-            "ReleaseIntegrity": {"schema_version": "1.0", "note": "See /data/release-integrity.json for the current envelope."},
+            "PagesArtifactManifest": {
+                "schema_version": pages_artifact.get("schema_version"),
+                "budget": pages_artifact.get("budget"),
+                "github_fallback": pages_artifact.get("github_fallback"),
+            },
+            "ReleaseIntegrity": {
+                "schema_version": "1.0",
+                "note": "See /data/release-integrity.json for the current envelope.",
+            },
             "ReproducibilityLedger": reproducibility,
         },
         "dataset_hashes": dataset_hashes,
         "source_provenance": {
             "generated_by": "code/orchestrators/build_agent_index.py",
-            "source_of_truth": ["pages/BIBLIOGRAPHY.md", "data/work-identifiers.json", "pages/SOFTWARE.md", "data/current-counts.json", "data/scholar-snapshot.json", "data/scholar-verification-receipt.json"],
+            "source_of_truth": [
+                "pages/BIBLIOGRAPHY.md",
+                "data/work-identifiers.json",
+                "pages/SOFTWARE.md",
+                "data/current-counts.json",
+                "data/scholar-snapshot.json",
+                "data/scholar-verification-receipt.json",
+            ],
             "hash_policy": "SHA-256 values cover hosted JSON datasets and integrity manifests at generation time.",
         },
         "hosted_availability": {
@@ -685,7 +1278,12 @@ def payload() -> dict:
         "counts": counts,
         "freshness": {
             "policy": "Use generated_at and checked_at fields; do not infer freshness from page copy.",
-            "volatile_sources": ["data/current-counts.json", "data/scholar-snapshot.json", "data/scholar-verification-receipt.json", "data/verification-log.json"],
+            "volatile_sources": [
+                "data/current-counts.json",
+                "data/scholar-snapshot.json",
+                "data/scholar-verification-receipt.json",
+                "data/verification-log.json",
+            ],
             "verification": "/cite-verify.html",
         },
         "query_recipes": {
@@ -711,7 +1309,9 @@ def payload() -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if the manifest is stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if the manifest is stale"
+    )
     args = parser.parse_args()
     rendered = json.dumps(payload(), indent=2, ensure_ascii=False) + "\n"
     if args.check:

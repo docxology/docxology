@@ -31,7 +31,11 @@ def test_ignored_paper_images_cannot_change_the_work_projection(tmp_path: Path):
     paper.mkdir(parents=True)
     (tmp_path / ".gitignore").write_text("papers/*/images/\n", encoding="utf-8")
     (paper / "README.md").write_text("# Example\n", encoding="utf-8")
-    subprocess.run(["git", "add", ".gitignore", "papers/2026_Example/README.md"], cwd=tmp_path, check=True)
+    subprocess.run(
+        ["git", "add", ".gitignore", "papers/2026_Example/README.md"],
+        cwd=tmp_path,
+        check=True,
+    )
     subprocess.run(["git", "commit", "-qm", "fixture"], cwd=tmp_path, check=True)
     images = paper / "images"
     images.mkdir()

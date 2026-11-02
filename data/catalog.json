@@ -11,14 +11,14 @@
     "name": "Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-10-24",
+  "dateModified": "2026-11-02",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#works",
       "name": "Curated Works Bibliography",
-      "description": "226 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
+      "description": "228 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
       "url": "https://danielarifriedman.com/data/works.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -87,7 +87,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#software",
       "name": "Software Catalog",
-      "description": "168 catalogued software repositories across docxology and AII contributions.",
+      "description": "172 catalogued software repositories across docxology and AII contributions.",
       "url": "https://danielarifriedman.com/data/software.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -617,7 +617,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-snapshot",
       "name": "Public Source Snapshot",
       "description": "Current public API freshness snapshot with normalized drift-comparison facts.",
-      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-10-18.json",
+      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-10-31.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -631,7 +631,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-10-18.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-10-31.json",
         "encodingFormat": "application/json"
       }
     },
@@ -709,7 +709,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#external-links",
       "name": "External Link Report",
       "description": "Scoped network freshness report for site-critical outbound links.",
-      "url": "https://danielarifriedman.com/reports/external_links_2026-10-24.json",
+      "url": "https://danielarifriedman.com/reports/external_links_2026-11-01.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -723,7 +723,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-10-24.json",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-11-01.json",
         "encodingFormat": "application/json"
       }
     },
@@ -732,7 +732,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#external-link-triage",
       "name": "External Link Triage",
       "description": "Categorized link warnings: bot-protected, transient, timeout, stale, and review.",
-      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-10-24.json",
+      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-11-01.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -746,7 +746,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-10-24.json",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-11-01.json",
         "encodingFormat": "application/json"
       }
     },
@@ -755,7 +755,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-10-24.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-11-02.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -769,7 +769,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-10-24.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-11-02.json",
         "encodingFormat": "application/json"
       }
     },

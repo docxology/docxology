@@ -27,7 +27,10 @@ from docxology_tools.release_evidence import (  # noqa: E402
     scholar_source_receipt_errors,
     validate_attestation,
 )
-from docxology_tools.generation_plan import LOCAL_GENERATION_STEPS, validate_generation_plan  # noqa: E402
+from docxology_tools.generation_plan import (  # noqa: E402
+    LOCAL_GENERATION_STEPS,
+    validate_generation_plan,
+)
 
 
 REQUIRED_JSON_FILES: list[str] = [
@@ -110,7 +113,9 @@ def run_resume_check() -> None:
     )
 
 
-def generation_check_command(step, *, allow_dirty_prepayload_evidence: bool = False) -> list[str]:
+def generation_check_command(
+    step, *, allow_dirty_prepayload_evidence: bool = False
+) -> list[str]:
     """The no-write command for one generation step."""
     if step.script == "build_resume.py":
         # ReportLab is pinned for byte-identical PDFs; see run_resume_check.
@@ -136,7 +141,9 @@ def check_worker_count() -> int:
     return max(1, min(8, (os.cpu_count() or 2)))
 
 
-def first_check_failure(results: list[tuple[object, int, str]]) -> tuple[object, int, str] | None:
+def first_check_failure(
+    results: list[tuple[object, int, str]],
+) -> tuple[object, int, str] | None:
     """The earliest failure in PLAN order, so the message never depends on timing.
 
     Results arrive in completion order under a worker pool; reporting them that
@@ -148,24 +155,37 @@ def first_check_failure(results: list[tuple[object, int, str]]) -> tuple[object,
     return None
 
 
-def run_local_generation_checks(*, allow_dirty_prepayload_evidence: bool = False) -> None:
+def run_local_generation_checks(
+    *, allow_dirty_prepayload_evidence: bool = False
+) -> None:
     """Run the mechanically paired no-write checks for every local writer."""
     validate_generation_plan()
     workers = check_worker_count()
     steps = list(LOCAL_GENERATION_STEPS)
     if workers == 1:
         for step in steps:
-            run(generation_check_command(step, allow_dirty_prepayload_evidence=allow_dirty_prepayload_evidence))
+            run(
+                generation_check_command(
+                    step,
+                    allow_dirty_prepayload_evidence=allow_dirty_prepayload_evidence,
+                )
+            )
         return
 
     def _run(step) -> tuple[object, int, str]:
         completed = subprocess.run(
-            generation_check_command(step, allow_dirty_prepayload_evidence=allow_dirty_prepayload_evidence),
+            generation_check_command(
+                step, allow_dirty_prepayload_evidence=allow_dirty_prepayload_evidence
+            ),
             cwd=REPO_ROOT,
             capture_output=True,
             text=True,
         )
-        return step, completed.returncode, (completed.stdout or "") + (completed.stderr or "")
+        return (
+            step,
+            completed.returncode,
+            (completed.stdout or "") + (completed.stderr or ""),
+        )
 
     with ThreadPoolExecutor(max_workers=workers) as pool:
         results = list(pool.map(_run, steps))
@@ -184,7 +204,11 @@ def run_local_generation_checks(*, allow_dirty_prepayload_evidence: bool = False
 
 def public_source_review_check_args(*, release: bool) -> list[str]:
     """Render the provenance mode required by the validation tier."""
-    command = [sys.executable, "code/orchestrators/build_public_source_review.py", "--check"]
+    command = [
+        sys.executable,
+        "code/orchestrators/build_public_source_review.py",
+        "--check",
+    ]
     if release:
         command.append("--exact-source-revision")
     return command
@@ -244,8 +268,14 @@ def validate_json_files(
     """
     root = repo_root or REPO_ROOT
     report_dir = root / "reports"
-    required_paths = REQUIRED_JSON_FILES if required_json_files is None else required_json_files
-    report_patterns = OPTIONAL_REPORT_PATTERNS if optional_report_patterns is None else optional_report_patterns
+    required_paths = (
+        REQUIRED_JSON_FILES if required_json_files is None else required_json_files
+    )
+    report_patterns = (
+        OPTIONAL_REPORT_PATTERNS
+        if optional_report_patterns is None
+        else optional_report_patterns
+    )
     errors: list[str] = []
     warnings: list[str] = []
 
@@ -279,7 +309,9 @@ def validate_json_files(
         "browser-qa", "manifest.json", required=False, report_dir=report_dir
     )
     if not browser_qa:
-        message = "Optional progressive browser QA manifest missing: browser-qa/manifest.json"
+        message = (
+            "Optional progressive browser QA manifest missing: browser-qa/manifest.json"
+        )
         if strict_reports:
             errors.append(message)
         else:
@@ -293,12 +325,22 @@ def validate_json_files(
             print(f"  - {warning}")
 
     if errors:
-        raise SystemExit("JSON artifact validation failed:\n" + "\n".join(f"  - {e}" for e in errors))
+        raise SystemExit(
+            "JSON artifact validation failed:\n" + "\n".join(f"  - {e}" for e in errors)
+        )
 
 
 def validate_citation_cff() -> None:
     text = (REPO_ROOT / "CITATION.cff").read_text(encoding="utf-8")
-    required = ["cff-version:", "message:", "title:", "authors:", "repository-code:", "url:", "date-released:"]
+    required = [
+        "cff-version:",
+        "message:",
+        "title:",
+        "authors:",
+        "repository-code:",
+        "url:",
+        "date-released:",
+    ]
     missing = [key for key in required if key not in text]
     if missing:
         raise SystemExit("CITATION.cff missing keys: " + ", ".join(missing))
@@ -330,7 +372,9 @@ def validate_xml_files() -> None:
 
 
 def validate_json_ld() -> None:
-    pattern = re.compile(r"<script\s+type=[\"']application/ld\+json[\"']>(.*?)</script>", re.S | re.I)
+    pattern = re.compile(
+        r"<script\s+type=[\"']application/ld\+json[\"']>(.*?)</script>", re.S | re.I
+    )
     count = 0
     for path in sorted(REPO_ROOT.rglob("*.html")):
         if not is_validation_source_path(path):
@@ -347,12 +391,19 @@ def strip_fenced_code_blocks(text: str) -> str:
     return re.sub(r"(?ms)^(```|~~~)[^\n]*\n.*?^\1[ \t]*$", "", text)
 
 
-def iter_local_links(text: str, *, generated_images: frozenset[str] = frozenset()) -> list[str]:
+def iter_local_links(
+    text: str, *, generated_images: frozenset[str] = frozenset()
+) -> list[str]:
     text = strip_fenced_code_blocks(text)
     if generated_images:
         from docxology_tools.manuscript_validation import LINK_PATTERN
+
         text = LINK_PATTERN.sub(
-            lambda match: "" if match[1] == "!" and match[2].strip("<>") in generated_images else match[0],
+            lambda match: (
+                ""
+                if match[1] == "!" and match[2].strip("<>") in generated_images
+                else match[0]
+            ),
             text,
         )
     md_link = re.compile(r"\[[^\]]+\]\((<[^>]+>|[^)]+)\)")
@@ -364,13 +415,25 @@ def validate_local_links() -> None:
     manuscript_sections: set[Path] = set()
     generated_images: frozenset[str] = frozenset()
     if (REPO_ROOT / "docs/manuscript/config.yaml").exists():
-        from docxology_tools.manuscript_validation import MANUSCRIPT_PATH, validate_manuscript
+        from docxology_tools.manuscript_validation import (
+            MANUSCRIPT_PATH,
+            validate_manuscript,
+        )
+
         manuscript = validate_manuscript(REPO_ROOT)
         if not manuscript["source_valid"]:
-            raise SystemExit("Invalid manuscript source:\n" + "\n".join(manuscript["errors"]))
-        manuscript_sections = {REPO_ROOT / MANUSCRIPT_PATH / name for name in manuscript["sections"]}
+            raise SystemExit(
+                "Invalid manuscript source:\n" + "\n".join(manuscript["errors"])
+            )
+        manuscript_sections = {
+            REPO_ROOT / MANUSCRIPT_PATH / name for name in manuscript["sections"]
+        }
         generated_images = frozenset(manuscript["declared_figure_targets"])
-    files = list(REPO_ROOT.rglob("*.md")) + list(REPO_ROOT.rglob("*.html")) + [REPO_ROOT / "llms.txt"]
+    files = (
+        list(REPO_ROOT.rglob("*.md"))
+        + list(REPO_ROOT.rglob("*.html"))
+        + [REPO_ROOT / "llms.txt"]
+    )
     missing: list[str] = []
     for path in files:
         if not is_validation_source_path(path):
@@ -380,24 +443,37 @@ def validate_local_links() -> None:
         if path.name == "full_text.md":
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")
-        for raw in iter_local_links(text, generated_images=generated_images if path in manuscript_sections else frozenset()):
+        for raw in iter_local_links(
+            text,
+            generated_images=generated_images
+            if path in manuscript_sections
+            else frozenset(),
+        ):
             link = raw.strip()
             if link.startswith("<") and link.endswith(">"):
                 link = link[1:-1]
-            if not link or link.startswith(("#", "http://", "https://", "mailto:", "tel:", "javascript:", "data:")):
+            if not link or link.startswith(
+                ("#", "http://", "https://", "mailto:", "tel:", "javascript:", "data:")
+            ):
                 continue
             if "${" in link or "{" in link:
                 continue
             link = urllib.parse.unquote(link.split("#", 1)[0].split("?", 1)[0])
             if not link:
                 continue
-            target = (REPO_ROOT / link.lstrip("/")) if link.startswith("/") else (path.parent / link).resolve()
+            target = (
+                (REPO_ROOT / link.lstrip("/"))
+                if link.startswith("/")
+                else (path.parent / link).resolve()
+            )
             if not target.exists():
                 try:
                     target_display = target.relative_to(REPO_ROOT)
                 except ValueError:
                     target_display = target
-                missing.append(f"{path.relative_to(REPO_ROOT)}: {raw} -> {target_display}")
+                missing.append(
+                    f"{path.relative_to(REPO_ROOT)}: {raw} -> {target_display}"
+                )
     if missing:
         raise SystemExit("Missing local links:\n" + "\n".join(missing[:120]))
 
@@ -407,7 +483,9 @@ def validate_count_consistency() -> None:
 
     errors = collect_count_drift()
     if errors:
-        raise SystemExit("Volatile count drift:\n" + "\n".join(f"  - {e}" for e in errors))
+        raise SystemExit(
+            "Volatile count drift:\n" + "\n".join(f"  - {e}" for e in errors)
+        )
 
 
 def validate_sitemap_targets() -> None:
@@ -425,12 +503,17 @@ def validate_sitemap_targets() -> None:
 
 
 def validate_seo_invariants() -> None:
-    from docxology_tools.seo_invariants import check_canonical_integrity, collect_seo_errors
+    from docxology_tools.seo_invariants import (
+        check_canonical_integrity,
+        collect_seo_errors,
+    )
 
     errors = collect_seo_errors(REPO_ROOT)
     errors.extend(check_canonical_integrity(REPO_ROOT))
     if errors:
-        raise SystemExit("SEO invariant violations:\n" + "\n".join(f"  - {e}" for e in errors[:40]))
+        raise SystemExit(
+            "SEO invariant violations:\n" + "\n".join(f"  - {e}" for e in errors[:40])
+        )
 
 
 def parse_args() -> argparse.Namespace:
@@ -461,7 +544,8 @@ def parse_args() -> argparse.Namespace:
         help="Maximum evidence/attestation age for --release (default: 30).",
     )
     parser.add_argument(
-        "--allow-dirty-prepayload-evidence", action="store_true",
+        "--allow-dirty-prepayload-evidence",
+        action="store_true",
         help="Allow current HEAD-bound dirty source snapshots or complete link-scan/triage bundles in no-write Pages checks before payload landing; forbidden with --release.",
     )
     args = parser.parse_args()
@@ -471,7 +555,12 @@ def parse_args() -> argparse.Namespace:
 
 
 def _strict_reports_enabled(cli_value: bool) -> bool:
-    return cli_value or os.environ.get("DOCXOLOGY_STRICT_REPORTS", "").lower() in {"1", "true", "yes", "on"}
+    return cli_value or os.environ.get("DOCXOLOGY_STRICT_REPORTS", "").lower() in {
+        "1",
+        "true",
+        "yes",
+        "on",
+    }
 
 
 def _resolve_release_commit(value: str | None) -> str:
@@ -554,7 +643,9 @@ def validate_release_evidence(args: argparse.Namespace) -> None:
         raise SystemExit("--max-report-age-days must be non-negative")
     errors = _release_worktree_errors()
     if not args.deployment_attestation:
-        errors.append("--release requires --deployment-attestation from attest_release.py")
+        errors.append(
+            "--release requires --deployment-attestation from attest_release.py"
+        )
     else:
         attestation = args.deployment_attestation
         if not attestation.is_absolute():
@@ -570,11 +661,18 @@ def validate_release_evidence(args: argparse.Namespace) -> None:
             )
         )
     if errors:
-        raise SystemExit("Release evidence validation failed:\n" + "\n".join(f"  - {error}" for error in errors))
-    print("Release evidence validation completed (fresh reports and deployed-SHA attestation verified)")
+        raise SystemExit(
+            "Release evidence validation failed:\n"
+            + "\n".join(f"  - {error}" for error in errors)
+        )
+    print(
+        "Release evidence validation completed (fresh reports and deployed-SHA attestation verified)"
+    )
 
 
-def run_standard_validation(*, strict_reports: bool, allow_dirty_prepayload_evidence: bool = False) -> None:
+def run_standard_validation(
+    *, strict_reports: bool, allow_dirty_prepayload_evidence: bool = False
+) -> None:
     """Validate the committed source layer and its deterministic cache inputs."""
     run([sys.executable, "code/orchestrators/validate_manuscript.py"])
     run([sys.executable, "code/orchestrators/audit_content_citations.py"])
@@ -589,7 +687,13 @@ def run_standard_validation(*, strict_reports: bool, allow_dirty_prepayload_evid
     run([sys.executable, "code/orchestrators/build_external_link_triage.py", "--check"])
     run([sys.executable, "code/orchestrators/browser_smoke.py", "--check"])
     run(live_site_check_args(release=False))
-    run([sys.executable, "code/orchestrators/refresh_public_source_inventory.py", "--check"])
+    run(
+        [
+            sys.executable,
+            "code/orchestrators/refresh_public_source_inventory.py",
+            "--check",
+        ]
+    )
     # The committed source layer uses the control-tail payload anchor.  Exact
     # candidate-HEAD review provenance is checked separately after deployment.
     run(public_source_review_check_args(release=False))
@@ -642,7 +746,14 @@ def run_isolated_candidate_validation(
     with tempfile.TemporaryDirectory(prefix="docxology-release-") as temporary_root:
         candidate_root = Path(temporary_root) / "candidate"
         subprocess.run(
-            ["git", "worktree", "add", "--detach", str(candidate_root), candidate_commit],
+            [
+                "git",
+                "worktree",
+                "add",
+                "--detach",
+                str(candidate_root),
+                candidate_commit,
+            ],
             cwd=repo_root,
             check=True,
         )
@@ -668,10 +779,16 @@ def main() -> None:
         release_commit = _resolve_release_commit(args.release_commit)
         commit_errors = release_commit_errors(release_commit, _head_commit())
         if commit_errors:
-            raise SystemExit("Release evidence validation failed:\n" + "\n".join(f"  - {error}" for error in commit_errors))
+            raise SystemExit(
+                "Release evidence validation failed:\n"
+                + "\n".join(f"  - {error}" for error in commit_errors)
+            )
         worktree_errors = _release_worktree_errors()
         if worktree_errors:
-            raise SystemExit("Release evidence validation failed:\n" + "\n".join(f"  - {error}" for error in worktree_errors))
+            raise SystemExit(
+                "Release evidence validation failed:\n"
+                + "\n".join(f"  - {error}" for error in worktree_errors)
+            )
         # This is the one post-deploy renderer whose exact candidate revision
         # is itself attested.  Keep it in the real checkout so it verifies the
         # fresh JSON *and* Markdown review pair; all normal source generators
@@ -685,7 +802,9 @@ def main() -> None:
         validate_release_evidence(args)
     else:
         if args.allow_dirty_prepayload_evidence:
-            run_standard_validation(strict_reports=strict_reports, allow_dirty_prepayload_evidence=True)
+            run_standard_validation(
+                strict_reports=strict_reports, allow_dirty_prepayload_evidence=True
+            )
         else:
             run_standard_validation(strict_reports=strict_reports)
     print("Repository validation completed")

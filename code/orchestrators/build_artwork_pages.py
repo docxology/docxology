@@ -50,7 +50,12 @@ TAG_LINK_CAP = 8
 RELATED_COUNT = 4
 VISIBLE_DESCRIPTION_CHARS = 700
 
-from docxology_tools.art_collections import ArtCollection, load_collections, members_for, record_collections  # noqa: E402
+from docxology_tools.art_collections import (  # noqa: E402
+    ArtCollection,
+    load_collections,
+    members_for,
+    record_collections,
+)
 from docxology_tools.artwork_pages import (  # noqa: E402
     ARTWORK_PAGE_MARKER,
     ARTWORK_PAGES_MANIFEST_VERSION,
@@ -99,7 +104,7 @@ def load_payload() -> dict:
 
 def view_text(record: dict) -> str:
     try:
-        return f"{int(str(record.get('views', '0'))) :,} views"
+        return f"{int(str(record.get('views', '0'))):,} views"
     except ValueError:
         return ""
 
@@ -136,14 +141,21 @@ def description_paragraphs(record: dict) -> str:
             if remaining > 40:
                 clipped = text[:remaining].rsplit(" ", 1)[0].rstrip(" ,;:.–—-")
                 paragraphs.append(f"<p>{h(clipped)}…</p>")
-            paragraphs.append('<p class="muted">Full description on the Flickr photo page.</p>')
+            paragraphs.append(
+                '<p class="muted">Full description on the Flickr photo page.</p>'
+            )
             break
         paragraphs.append(f"<p>{h(text)}</p>")
         used += len(text)
-    return "\n".join(paragraphs) or '<p class="artwork-desc muted">No description recorded on Flickr yet.</p>'
+    return (
+        "\n".join(paragraphs)
+        or '<p class="artwork-desc muted">No description recorded on Flickr yet.</p>'
+    )
 
 
-def related_artworks(index: int, records: list[dict], *, max_related: int = RELATED_COUNT) -> list[int]:
+def related_artworks(
+    index: int, records: list[dict], *, max_related: int = RELATED_COUNT
+) -> list[int]:
     """Tag-overlap related indices, padded with nearest neighbors for layout stability."""
     self_tags = {tag.lower() for tag in records[index].get("tags", [])}
     scored: list[tuple[int, int, int]] = []
@@ -159,7 +171,11 @@ def related_artworks(index: int, records: list[dict], *, max_related: int = RELA
         step = 1
         while len(picked) < max_related and step < len(records):
             for neighbor in (index - step, index + step):
-                if 0 <= neighbor < len(records) and neighbor != index and neighbor not in picked:
+                if (
+                    0 <= neighbor < len(records)
+                    and neighbor != index
+                    and neighbor not in picked
+                ):
                     picked.append(neighbor)
                     if len(picked) == max_related:
                         break
@@ -171,7 +187,10 @@ def breadcrumb_trail(record: dict) -> list[tuple[str, str]]:
     return [
         ("Home", ""),
         ("Art", "art.html"),
-        (plain_text(record.get("title", "")) or "Untitled artwork", page_rel_path(record)),
+        (
+            plain_text(record.get("title", "")) or "Untitled artwork",
+            page_rel_path(record),
+        ),
     ]
 
 
@@ -224,7 +243,9 @@ def head_block(
     breadcrumb_trail: list[tuple[str, str]] | None = None,
 ) -> str:
     social = social_meta_tags(title, description, og_image, image_alt=image_alt)
-    breadcrumb_script = compact_breadcrumb_script(breadcrumb_trail) if breadcrumb_trail else ""
+    breadcrumb_script = (
+        compact_breadcrumb_script(breadcrumb_trail) if breadcrumb_trail else ""
+    )
     return f"""<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -250,7 +271,9 @@ def head_block(
 </head>"""
 
 
-def render_artwork_page(record: dict, records: list[dict], index: int, collections: list[ArtCollection]) -> str:
+def render_artwork_page(
+    record: dict, records: list[dict], index: int, collections: list[ArtCollection]
+) -> str:
     title = page_title(record)
     description = meta_description(record)
     canonical = page_url(record)
@@ -267,7 +290,8 @@ def render_artwork_page(record: dict, records: list[dict], index: int, collectio
     chips = record_collections(record, collections)
 
     tag_links = "\n".join(
-        f'<a href="../art.html?q={quote(tag)}">{h(tag)}</a>' for tag in record.get("tags", [])[:TAG_LINK_CAP]
+        f'<a href="../art.html?q={quote(tag)}">{h(tag)}</a>'
+        for tag in record.get("tags", [])[:TAG_LINK_CAP]
     )
     chip_links = "\n".join(
         f'<a href="../{COLLECTIONS_DIR_NAME}/{h(collection.slug)}.html">{h(collection.title)}</a>'
@@ -350,7 +374,9 @@ def list_item_html(record: dict) -> str:
     views = view_text(record)
     meta = " · ".join(part for part in (date, views) if part)
     suffix = f' <span class="muted">{h(meta)}</span>' if meta else ""
-    return f'      <li><a href="../{h(page_rel_path(record))}">{h(title)}</a>{suffix}</li>'
+    return (
+        f'      <li><a href="../{h(page_rel_path(record))}">{h(title)}</a>{suffix}</li>'
+    )
 
 
 def clip_title(title: str, max_len: int = 65) -> str:
@@ -425,7 +451,9 @@ def render_artworks_index(payload: dict, collections: list[ArtCollection]) -> st
     )
 
 
-def render_collection_page(collection: ArtCollection, records: list[dict], collections: list[ArtCollection]) -> str:
+def render_collection_page(
+    collection: ArtCollection, records: list[dict], collections: list[ArtCollection]
+) -> str:
     members = members_for(collection, records)
     count = len(members)
     title = clip_title(f"{collection.title} — Art by Daniel Ari Friedman")
@@ -467,7 +495,10 @@ def render_collection_page(collection: ArtCollection, records: list[dict], colle
         for other in collections
         if other.slug != collection.slug
     )
-    items = "\n".join(list_item_html(record) for record in members) or '      <li class="muted">No works match this collection yet.</li>'
+    items = (
+        "\n".join(list_item_html(record) for record in members)
+        or '      <li class="muted">No works match this collection yet.</li>'
+    )
     body = f"""    <header class="page-hero">
         <p class="eyebrow">Art collection · {count} works</p>
         <h1>{h(collection.title)}</h1>
@@ -531,7 +562,11 @@ def render_manifest(paths: set[str]) -> str:
 
 
 def expected_page_paths(rendered_outputs: dict[Path, str]) -> set[str]:
-    return {path.relative_to(REPO_ROOT).as_posix() for path in rendered_outputs if path.suffix == ".html"}
+    return {
+        path.relative_to(REPO_ROOT).as_posix()
+        for path in rendered_outputs
+        if path.suffix == ".html"
+    }
 
 
 def outputs() -> dict[Path, str]:
@@ -540,22 +575,28 @@ def outputs() -> dict[Path, str]:
     collections = load_collections()
     out: dict[Path, str] = {}
     for index, record in enumerate(records):
-        out[REPO_ROOT / page_rel_path(record)] = render_artwork_page(record, records, index, collections)
+        out[REPO_ROOT / page_rel_path(record)] = render_artwork_page(
+            record, records, index, collections
+        )
     out[REPO_ROOT / ARTWORKS_INDEX_PATH] = render_artworks_index(payload, collections)
     for collection in collections:
-        out[REPO_ROOT / COLLECTIONS_DIR_NAME / f"{collection.slug}.html"] = render_collection_page(
-            collection, records, collections
+        out[REPO_ROOT / COLLECTIONS_DIR_NAME / f"{collection.slug}.html"] = (
+            render_collection_page(collection, records, collections)
         )
     out[MANIFEST_OUT] = render_manifest(expected_page_paths(out))
     return out
 
 
-def check_interactive_page_integrity(rendered_outputs: dict[Path, str]) -> tuple[str, ...]:
+def check_interactive_page_integrity(
+    rendered_outputs: dict[Path, str],
+) -> tuple[str, ...]:
     """Every emitted page that loads interactive/tts scripts must link style.css."""
     errors: list[str] = []
     for path, content in rendered_outputs.items():
         if "/js/tts-controls.js" in content and "style.css" not in content:
-            errors.append(f"{path.relative_to(REPO_ROOT).as_posix()}: loads interactive scripts but does not link style.css")
+            errors.append(
+                f"{path.relative_to(REPO_ROOT).as_posix()}: loads interactive scripts but does not link style.css"
+            )
     return tuple(errors)
 
 
@@ -571,7 +612,9 @@ def owned_generated_pages(directory: Path) -> list[Path]:
     return owned
 
 
-def generated_artwork_page_orphans(rendered_outputs: dict[Path, str]) -> tuple[tuple[Path, ...], tuple[str, ...]]:
+def generated_artwork_page_orphans(
+    rendered_outputs: dict[Path, str],
+) -> tuple[tuple[Path, ...], tuple[str, ...]]:
     """Return managed artwork/collection pages no longer produced, never deleting files."""
     current = expected_page_paths(rendered_outputs)
     orphans: list[Path] = []
@@ -605,7 +648,11 @@ def prune_owned(rendered_outputs: dict[Path, str]) -> int:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if any rendered output differs from disk")
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Fail if any rendered output differs from disk",
+    )
     parser.add_argument(
         "--prune-owned",
         action="store_true",
@@ -619,7 +666,9 @@ def main() -> None:
     if args.check:
         stale = stale_outputs(rendered)
         if stale:
-            raise SystemExit(f"stale artwork outputs ({len(stale)}): " + ", ".join(stale[:8]))
+            raise SystemExit(
+                f"stale artwork outputs ({len(stale)}): " + ", ".join(stale[:8])
+            )
         print("checked artwork pages")
         return
     for path, content in sorted(rendered.items()):

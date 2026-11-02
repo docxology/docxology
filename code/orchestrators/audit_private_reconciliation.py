@@ -111,7 +111,9 @@ def worktree_digest(paths: list[Path]) -> str:
     return digest.hexdigest()
 
 
-def audit_payload(baseline_requested: str, private_requested: str, report_date: str) -> dict[str, Any]:
+def audit_payload(
+    baseline_requested: str, private_requested: str, report_date: str
+) -> dict[str, Any]:
     """Build the complete deterministic audit payload from Git object content."""
     baseline = resolve_ref(baseline_requested)
     private_ref = resolve_ref(private_requested)
@@ -144,7 +146,13 @@ def audit_payload(baseline_requested: str, private_requested: str, report_date: 
     findings: list[dict[str, str]] = []
     metadata_reviews: list[dict[str, Any]] = []
     deferred_metadata_fields = 0
-    metadata_paths = [row["path"] for row in path_rows if row["classification"] == "source_metadata" and row["path"].startswith("papers/") and row["path"].endswith("/metadata.json")]
+    metadata_paths = [
+        row["path"]
+        for row in path_rows
+        if row["classification"] == "source_metadata"
+        and row["path"].startswith("papers/")
+        and row["path"].endswith("/metadata.json")
+    ]
     for path in metadata_paths:
         folder = Path(path).parent.name
         public_metadata = git_json(baseline, path)
@@ -159,7 +167,9 @@ def audit_payload(baseline_requested: str, private_requested: str, report_date: 
             )
             continue
         changed_fields = changed_top_level_fields(public_metadata, private_metadata)
-        candidates = source_backed_metadata_fields(folder, public_metadata, private_metadata, private_bibliography)
+        candidates = source_backed_metadata_fields(
+            folder, public_metadata, private_metadata, private_bibliography
+        )
         candidate_fields = {item["field"] for item in candidates}
         for finding in candidates:
             finding["release_status"] = "deferred pending independent public authority"
@@ -184,7 +194,14 @@ def audit_payload(baseline_requested: str, private_requested: str, report_date: 
         private_doi = private_bibliography[folder].get("doi", "")
         if public_doi == private_doi or not private_doi:
             continue
-        existing = next((item for item in findings if item["folder"] == folder and item["field"] == "doi"), None)
+        existing = next(
+            (
+                item
+                for item in findings
+                if item["folder"] == folder and item["field"] == "doi"
+            ),
+            None,
+        )
         if existing:
             continue
         findings.append(
@@ -201,9 +218,17 @@ def audit_payload(baseline_requested: str, private_requested: str, report_date: 
         )
 
     classifications_payload: dict[str, dict[str, Any]] = {}
-    for classification in ("source_metadata", "derived_output", "binary_intake", "other_source"):
+    for classification in (
+        "source_metadata",
+        "derived_output",
+        "binary_intake",
+        "other_source",
+    ):
         decision, _ = default_decision(classification)
-        classifications_payload[classification] = {"count": classifications[classification], "decision": decision}
+        classifications_payload[classification] = {
+            "count": classifications[classification],
+            "decision": decision,
+        }
     worktree_paths = [REPO_ROOT / "pages" / "BIBLIOGRAPHY.md"] + [
         REPO_ROOT / item["path"] for item in metadata_reviews if "path" in item
     ]
@@ -213,7 +238,13 @@ def audit_payload(baseline_requested: str, private_requested: str, report_date: 
         "baseline": {"requested": baseline_requested, "resolved": baseline},
         "private_ref": {"requested": private_requested, "resolved": private_ref},
         "mode": "read_only_comparison",
-        "prohibited_operations": ["merge", "cherry-pick", "checkout", "reset", "source-file write"],
+        "prohibited_operations": [
+            "merge",
+            "cherry-pick",
+            "checkout",
+            "reset",
+            "source-file write",
+        ],
         "worktree_source_sha256": worktree_digest(worktree_paths),
         "summary": {
             "changed_paths": len(path_rows),
@@ -222,15 +253,28 @@ def audit_payload(baseline_requested: str, private_requested: str, report_date: 
             "deferred_metadata_fields": deferred_metadata_fields,
         },
         "changes": path_rows,
-        "private_identity_candidates": sorted(findings, key=lambda item: (item["folder"], item["field"])),
+        "private_identity_candidates": sorted(
+            findings, key=lambda item: (item["folder"], item["field"])
+        ),
         "metadata_reviews": metadata_reviews,
     }
 
 
-def output_paths(report_date: str, json_output: Path | None, markdown_output: Path | None) -> tuple[Path, Path]:
-    json_path = json_output or REPO_ROOT / "reports" / f"private_public_reconciliation_{report_date}.json"
-    markdown_path = markdown_output or REPO_ROOT / "reports" / f"private_public_reconciliation_{report_date}.md"
-    return json_path if json_path.is_absolute() else REPO_ROOT / json_path, markdown_path if markdown_path.is_absolute() else REPO_ROOT / markdown_path
+def output_paths(
+    report_date: str, json_output: Path | None, markdown_output: Path | None
+) -> tuple[Path, Path]:
+    json_path = (
+        json_output
+        or REPO_ROOT / "reports" / f"private_public_reconciliation_{report_date}.json"
+    )
+    markdown_path = (
+        markdown_output
+        or REPO_ROOT / "reports" / f"private_public_reconciliation_{report_date}.md"
+    )
+    return (
+        json_path if json_path.is_absolute() else REPO_ROOT / json_path,
+        markdown_path if markdown_path.is_absolute() else REPO_ROOT / markdown_path,
+    )
 
 
 def write_or_check(path: Path, content: str, check: bool) -> bool:
@@ -252,26 +296,54 @@ def display_path(path: Path) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--baseline", default=DEFAULT_BASELINE, help="Public baseline Git ref (default: %(default)s)")
-    parser.add_argument("--private-ref", default=DEFAULT_PRIVATE_REF, help="Private comparison Git ref (default: %(default)s)")
-    parser.add_argument("--report-date", default=date.today().isoformat(), help="Date embedded in deterministic report names/content")
+    parser.add_argument(
+        "--baseline",
+        default=DEFAULT_BASELINE,
+        help="Public baseline Git ref (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--private-ref",
+        default=DEFAULT_PRIVATE_REF,
+        help="Private comparison Git ref (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--report-date",
+        default=date.today().isoformat(),
+        help="Date embedded in deterministic report names/content",
+    )
     parser.add_argument("--json-output", type=Path, help="JSON report destination")
-    parser.add_argument("--markdown-output", type=Path, help="Markdown report destination")
-    parser.add_argument("--check", action="store_true", help="Fail if expected report outputs differ; never write")
+    parser.add_argument(
+        "--markdown-output", type=Path, help="Markdown report destination"
+    )
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Fail if expected report outputs differ; never write",
+    )
     args = parser.parse_args()
     try:
         payload = audit_payload(args.baseline, args.private_ref, args.report_date)
-        json_path, markdown_path = output_paths(args.report_date, args.json_output, args.markdown_output)
+        json_path, markdown_path = output_paths(
+            args.report_date, args.json_output, args.markdown_output
+        )
         json_content = json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
         markdown_content = render_markdown(payload)
         stale = [
             display_path(path)
-            for path, content in ((json_path, json_content), (markdown_path, markdown_content))
+            for path, content in (
+                (json_path, json_content),
+                (markdown_path, markdown_content),
+            )
             if not write_or_check(path, content, args.check)
         ]
         if stale:
-            raise SystemExit("stale private/public reconciliation report: " + ", ".join(stale))
-        print(("checked" if args.check else "wrote") + f" private/public reconciliation report for {payload['summary']['changed_paths']} paths")
+            raise SystemExit(
+                "stale private/public reconciliation report: " + ", ".join(stale)
+            )
+        print(
+            ("checked" if args.check else "wrote")
+            + f" private/public reconciliation report for {payload['summary']['changed_paths']} paths"
+        )
     except (OSError, ValueError, subprocess.SubprocessError) as exc:
         raise SystemExit(f"private/public reconciliation audit failed: {exc}") from exc
 

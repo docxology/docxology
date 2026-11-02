@@ -37,7 +37,8 @@ def _entry(payload: str) -> str:
 
 def _generated_work_pages() -> list[Path]:
     return sorted(
-        p for p in WORKS_DIR.glob("*.html")
+        p
+        for p in WORKS_DIR.glob("*.html")
         if p.name != "index.html"
         and "<!-- docxology:generated-work-page" in p.read_text(encoding="utf-8")[:400]
     )
@@ -85,12 +86,14 @@ def test_embedded_entries_match_the_canonical_bibliography_exactly():
 
 
 @pytest.fixture
-def citation_fragment(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> tuple[str, str]:
+def citation_fragment(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> tuple[str, str]:
     entry = (
-        '@article{Example001,\n'
+        "@article{Example001,\n"
         '  title = {Art & "Science": β < λ </script><img src=x onerror=alert(1)>},\n'
-        '  note = {Literal &amp; entity and \\LaTeX notation}\n'
-        '}'
+        "  note = {Literal &amp; entity and \\LaTeX notation}\n"
+        "}"
     )
     (tmp_path / "bibliography.bib").write_text(entry + "\n", encoding="utf-8")
     monkeypatch.setattr(build_work_pages, "REPO_ROOT", tmp_path)
@@ -98,7 +101,9 @@ def citation_fragment(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> tuple[
     return entry, fragment
 
 
-def test_citation_payload_round_trip_preserves_text_and_cannot_close_its_script(citation_fragment):
+def test_citation_payload_round_trip_preserves_text_and_cannot_close_its_script(
+    citation_fragment,
+):
     entry, fragment = citation_fragment
     match = BIB_RE.search(fragment)
     assert match is not None
@@ -121,7 +126,9 @@ def test_citation_read_rejects_a_symlinked_bibliography(tmp_path, monkeypatch):
     assert private.read_text(encoding="utf-8") == "sentinel unrelated source"
 
 
-def test_citation_batch_load_reads_once_and_does_not_cache_between_batches(tmp_path, monkeypatch):
+def test_citation_batch_load_reads_once_and_does_not_cache_between_batches(
+    tmp_path, monkeypatch
+):
     first = "@article{First001,\n  title = {First}\n}"
     second = "@article{Second002,\n  title = {Second}\n}"
     source = tmp_path / "bibliography.bib"
@@ -135,7 +142,10 @@ def test_citation_batch_load_reads_once_and_does_not_cache_between_batches(tmp_p
         return read(*args, **kwargs)
 
     monkeypatch.setattr(build_work_pages, "read_generated_output_text", counted_read)
-    assert build_work_pages.load_bibtex_entries() == {"First001": first, "Second002": second}
+    assert build_work_pages.load_bibtex_entries() == {
+        "First001": first,
+        "Second002": second,
+    }
     assert len(calls) == 1
     source.write_text(second + "\n", encoding="utf-8")
     assert build_work_pages.load_bibtex_entries() == {"Second002": second}
@@ -151,13 +161,17 @@ def test_citation_batch_rejects_duplicate_keys(tmp_path, monkeypatch):
         build_work_pages.load_bibtex_entries()
 
 
-@pytest.mark.parametrize("entry", ["", "@article{Example001,\n  title = {Given entry}\n}"])
+@pytest.mark.parametrize(
+    "entry", ["", "@article{Example001,\n  title = {Given entry}\n}"]
+)
 def test_citation_button_uses_the_batch_entry_without_another_read(monkeypatch, entry):
     def unexpected_read(key):
         pytest.fail("the batch entry must avoid an individual bibliography read")
 
     monkeypatch.setattr(build_work_pages, "work_bibtex", unexpected_read)
-    fragment = build_work_pages.bibtex_button_html({"citation_key": "Example001", "_bibtex": entry})
+    fragment = build_work_pages.bibtex_button_html(
+        {"citation_key": "Example001", "_bibtex": entry}
+    )
     if not entry:
         assert fragment == ""
     else:
@@ -169,7 +183,9 @@ def test_citation_button_uses_the_batch_entry_without_another_read(monkeypatch, 
 def _copy_with_javascript(payload: str, *, secure_clipboard: bool) -> dict:
     node = shutil.which("node")
     if node is None:
-        pytest.fail("Selected JavaScript contract requires the node interpreter on PATH")
+        pytest.fail(
+            "Selected JavaScript contract requires the node interpreter on PATH"
+        )
     # Execute the shipped click handler. The raw textContent below models the
     # inert script element; neither the DOM nor this harness decodes entities.
     program = r"""
@@ -201,18 +217,27 @@ setImmediate(() => process.stdout.write(JSON.stringify({copied, label: button.te
 """
     result = subprocess.run(
         [node, "-e", program],
-        input=json.dumps({
-            "payload": payload,
-            "source": (REPO_ROOT / "js" / "cite-export.js").read_text(encoding="utf-8"),
-            "secure_clipboard": secure_clipboard,
-        }),
-        text=True, capture_output=True, check=True, timeout=10,
+        input=json.dumps(
+            {
+                "payload": payload,
+                "source": (REPO_ROOT / "js" / "cite-export.js").read_text(
+                    encoding="utf-8"
+                ),
+                "secure_clipboard": secure_clipboard,
+            }
+        ),
+        text=True,
+        capture_output=True,
+        check=True,
+        timeout=10,
     )
     return json.loads(result.stdout)
 
 
 @pytest.mark.parametrize("secure_clipboard", [True, False])
-def test_citation_click_copies_decoded_entry_exactly(citation_fragment, secure_clipboard):
+def test_citation_click_copies_decoded_entry_exactly(
+    citation_fragment, secure_clipboard
+):
     entry, fragment = citation_fragment
     match = BIB_RE.search(fragment)
     assert match is not None
@@ -223,7 +248,8 @@ def test_citation_click_copies_decoded_entry_exactly(citation_fragment, secure_c
 @pytest.mark.parametrize("payload", ["", "not JSON", '{"title": "wrong shape"}'])
 def test_malformed_citation_payload_is_not_copied(payload):
     assert _copy_with_javascript(payload, secure_clipboard=True) == {
-        "copied": [], "label": "Copy BibTeX",
+        "copied": [],
+        "label": "Copy BibTeX",
     }
 
 

@@ -18,7 +18,9 @@ from docxology_tools import site_facts  # noqa: E402
 import sync_site_facts  # noqa: E402
 
 
-def test_generated_revision_date_is_deterministic_and_supports_all_calendar_months(tmp_path: Path):
+def test_generated_revision_date_is_deterministic_and_supports_all_calendar_months(
+    tmp_path: Path,
+):
     facts = tmp_path / "current-counts.json"
     facts.write_text(
         json.dumps({"generated_at": "2026-12-03T12:34:56+00:00", "counts": {}}),
@@ -34,11 +36,19 @@ def test_generated_revision_date_is_deterministic_and_supports_all_calendar_mont
     [
         ("{not json}", site_facts.generated_date),
         (json.dumps({"counts": {}}), site_facts.generated_date),
-        (json.dumps({"generated_at": "not-a-date", "counts": {}}), site_facts.generated_date),
-        (json.dumps({"generated_at": "2026-08-25T00:00:00Z", "counts": []}), site_facts.counts),
+        (
+            json.dumps({"generated_at": "not-a-date", "counts": {}}),
+            site_facts.generated_date,
+        ),
+        (
+            json.dumps({"generated_at": "2026-08-25T00:00:00Z", "counts": []}),
+            site_facts.counts,
+        ),
     ],
 )
-def test_missing_or_malformed_revision_inputs_fail_closed(tmp_path: Path, payload: str, reader):
+def test_missing_or_malformed_revision_inputs_fail_closed(
+    tmp_path: Path, payload: str, reader
+):
     facts = tmp_path / "current-counts.json"
     facts.write_text(payload, encoding="utf-8")
 
@@ -51,7 +61,9 @@ def test_missing_revision_input_fails_closed(tmp_path: Path):
         site_facts.generated_date(tmp_path / "missing.json")
 
 
-def test_site_fact_renderer_replaces_any_calendar_month_not_a_fixed_allowlist(tmp_path: Path):
+def test_site_fact_renderer_replaces_any_calendar_month_not_a_fixed_allowlist(
+    tmp_path: Path,
+):
     page = tmp_path / "index.html"
     page.write_text(
         "Data refreshed January 2024\nLast updated: December 2023\n",
@@ -65,14 +77,20 @@ def test_site_fact_renderer_replaces_any_calendar_month_not_a_fixed_allowlist(tm
     assert "December 2023" not in rendered
 
 
-def test_public_source_checked_date_comes_from_the_snapshot_report_not_the_build(tmp_path: Path):
+def test_public_source_checked_date_comes_from_the_snapshot_report_not_the_build(
+    tmp_path: Path,
+):
     facts = tmp_path / "current-counts.json"
     facts.write_text(
-        json.dumps({
-            "generated_at": "2026-10-05T22:00:00+00:00",
-            "counts": {},
-            "sources": {"public_source_snapshot": "reports/public_source_snapshot_2026-09-30.json"},
-        }),
+        json.dumps(
+            {
+                "generated_at": "2026-10-05T22:00:00+00:00",
+                "counts": {},
+                "sources": {
+                    "public_source_snapshot": "reports/public_source_snapshot_2026-09-30.json"
+                },
+            }
+        ),
         encoding="utf-8",
     )
     assert site_facts.public_source_checked_date(facts) == "2026-09-30"
@@ -81,7 +99,12 @@ def test_public_source_checked_date_comes_from_the_snapshot_report_not_the_build
 
 @pytest.mark.parametrize(
     "sources",
-    [None, {}, {"public_source_snapshot": "reports/public_source_snapshot_latest.json"}, {"public_source_snapshot": "reports/public_source_snapshot_2026-13-40.json"}],
+    [
+        None,
+        {},
+        {"public_source_snapshot": "reports/public_source_snapshot_latest.json"},
+        {"public_source_snapshot": "reports/public_source_snapshot_2026-13-40.json"},
+    ],
 )
 def test_public_source_checked_date_fails_closed(tmp_path: Path, sources):
     facts = tmp_path / "current-counts.json"

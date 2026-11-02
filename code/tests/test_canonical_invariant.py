@@ -44,7 +44,7 @@ def canonical_dir(canonical_url: str) -> str:
     """Directory part of a canonical URL, site-rooted ('' for the homepage)."""
     for prefix in INTERNAL_PREFIXES:
         if canonical_url.startswith(prefix):
-            rest = canonical_url[len(prefix):]
+            rest = canonical_url[len(prefix) :]
             break
     else:
         return canonical_url  # non-site canonical: compared as-is upstream
@@ -61,8 +61,12 @@ def href_url_and_dir(href: str, page: Path) -> tuple[str, str] | None:
     if href.startswith(("#", "mailto:", "tel:", "http://", "https:", "//")):
         return None
     if href.startswith(INTERNAL_PREFIXES):
-        prefix = BASE + "/" if href.startswith(BASE + "/") else "https://www.danielarifriedman.com/"
-        rest = href[len(prefix):]
+        prefix = (
+            BASE + "/"
+            if href.startswith(BASE + "/")
+            else "https://www.danielarifriedman.com/"
+        )
+        rest = href[len(prefix) :]
     elif href == "/":
         rest = ""
     elif href.startswith("/"):
@@ -142,6 +146,8 @@ def test_canonical_urls_are_wellformed_where_present(pages: list[Path]) -> None:
         canonical = canonical_of(page)
         if canonical is None:
             continue
-        if not canonical.startswith(("https://danielarifriedman.com", "https://www.danielarifriedman.com")):
+        if not canonical.startswith(
+            ("https://danielarifriedman.com", "https://www.danielarifriedman.com")
+        ):
             bad.append(f"{page.relative_to(REPO_ROOT).as_posix()}: {canonical}")
     assert not bad, "non-site canonical URLs:\n" + "\n".join(bad[:20])

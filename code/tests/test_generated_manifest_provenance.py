@@ -20,7 +20,9 @@ import build_generated_manifest  # noqa: E402
 
 
 def _artifact(name: str) -> dict:
-    return next(item for item in build_generated_manifest.ARTIFACTS if item["name"] == name)
+    return next(
+        item for item in build_generated_manifest.ARTIFACTS if item["name"] == name
+    )
 
 
 def test_manifest_declares_count_paper_availability_and_repository_inventory_inputs():
@@ -48,52 +50,84 @@ def test_manifest_declares_count_paper_availability_and_repository_inventory_inp
     assert "data/github-repositories.json" in software["sources"]
     assert "data/github-repositories.json" in routes["sources"]
     assert {"papers/*/full_text.md", "papers/*/images/*"}.issubset(counts["sources"])
-    assert {"data/work-identifiers.json", "code/src/work_identifiers.py"}.issubset(bibliography["sources"])
+    assert {"data/work-identifiers.json", "code/src/work_identifiers.py"}.issubset(
+        bibliography["sources"]
+    )
     assert "data/work-identifiers.json" in publications["sources"]
 
 
 def test_browser_qa_manifest_uses_the_portable_uv_optional_group_command():
     browser_qa = _artifact("Progressive browser QA")
-    assert browser_qa["command"] == "uv run --extra browser-qa python3 code/orchestrators/browser_qa.py"
+    assert (
+        browser_qa["command"]
+        == "uv run --extra browser-qa python3 code/orchestrators/browser_qa.py"
+    )
 
 
 def test_page_manifest_discloses_resource_selection_and_citation_sources():
     common = {
-        "papers/paper_metadata.json", "papers/*/metadata.json",
-        "papers/*/README.md", "papers/*/AGENTS.md", "papers/*/SKILL.md",
-        "papers/*/CITATION.cff", "papers/*/full_text.md",
-        "papers/*/*.[pP][dD][fF]", "papers/*/images/*", ".gitignore",
-        "code/src/paper_artifacts.py", "code/src/metadata_templates.py",
-        "code/orchestrators/build_work_pages.py", "code/src/site_nav.py",
+        "papers/paper_metadata.json",
+        "papers/*/metadata.json",
+        "papers/*/README.md",
+        "papers/*/AGENTS.md",
+        "papers/*/SKILL.md",
+        "papers/*/CITATION.cff",
+        "papers/*/full_text.md",
+        "papers/*/*.[pP][dD][fF]",
+        "papers/*/images/*",
+        ".gitignore",
+        "code/src/paper_artifacts.py",
+        "code/src/metadata_templates.py",
+        "code/orchestrators/build_work_pages.py",
+        "code/src/site_nav.py",
     }
     assert common.issubset(_artifact("Work pages")["sources"])
     assert common.issubset(_artifact("Paper folder pages")["sources"])
-    assert {"data/publishing-status.json", "bibliography.bib"}.issubset(_artifact("Work pages")["sources"])
+    assert {"data/publishing-status.json", "bibliography.bib"}.issubset(
+        _artifact("Work pages")["sources"]
+    )
     assert "data/work-enrichment.json" not in _artifact("Work pages")["sources"]
 
 
-@pytest.mark.parametrize("name", [
-    "Publications HTML sync", "Resume and CV exports", "Software catalog HTML sync",
-    "Cached GitHub repository inventory pages", "Domain feeds", "Work pages", "Video pages",
-    "Paper folder pages", "Evidence pages", "Reproducibility ledger", "Data catalog",
-    "Exports hub", "Updates page", "Static accessibility report",
-    "Artwork landing pages and curated collections",
-])
+@pytest.mark.parametrize(
+    "name",
+    [
+        "Publications HTML sync",
+        "Resume and CV exports",
+        "Software catalog HTML sync",
+        "Cached GitHub repository inventory pages",
+        "Domain feeds",
+        "Work pages",
+        "Video pages",
+        "Paper folder pages",
+        "Evidence pages",
+        "Reproducibility ledger",
+        "Data catalog",
+        "Exports hub",
+        "Updates page",
+        "Static accessibility report",
+        "Artwork landing pages and curated collections",
+    ],
+)
 def test_shared_navigation_sources_are_disclosed_for_affected_artifacts(name):
     assert "code/src/site_nav.py" in _artifact(name)["sources"]
 
 
 def test_manifest_tracks_actual_imported_renderers_and_updates_sources():
     assert {
-        "code/orchestrators/export_bibliography.py", "code/orchestrators/build_work_pages.py",
-        "code/src/build_stamp.py", "code/src/metadata_templates.py",
+        "code/orchestrators/export_bibliography.py",
+        "code/orchestrators/build_work_pages.py",
+        "code/src/build_stamp.py",
+        "code/src/metadata_templates.py",
     }.issubset(_artifact("Publications HTML sync")["sources"])
-    assert "code/orchestrators/build_github_inventory.py" in _artifact(
-        "Cached GitHub repository inventory pages"
-    )["sources"]
-    assert "code/orchestrators/deploy_seo_security.py" in _artifact(
-        "Static accessibility report"
-    )["sources"]
+    assert (
+        "code/orchestrators/build_github_inventory.py"
+        in _artifact("Cached GitHub repository inventory pages")["sources"]
+    )
+    assert (
+        "code/orchestrators/deploy_seo_security.py"
+        in _artifact("Static accessibility report")["sources"]
+    )
     assert "pages/THINKING_LOG.md" in _artifact("Updates page")["sources"]
     assert {"data/works.json", "data/current-counts.json"}.issubset(
         _artifact("Exports hub")["sources"]
@@ -118,22 +152,39 @@ def test_every_declared_generator_script_still_exists():
                 referenced.add(token)
     assert referenced, "no generator scripts are declared in the manifest"
     missing = sorted(rel for rel in referenced if not (REPO_ROOT / rel).is_file())
-    assert missing == [], f"generated manifest names scripts that do not exist: {missing}"
+    assert missing == [], (
+        f"generated manifest names scripts that do not exist: {missing}"
+    )
 
 
-def test_manifest_timestamp_changes_only_when_artifact_matrix_changes(tmp_path, monkeypatch):
+def test_manifest_timestamp_changes_only_when_artifact_matrix_changes(
+    tmp_path, monkeypatch
+):
     out = tmp_path / "manifest.json"
     monkeypatch.setattr(build_generated_manifest, "JSON_OUT", out)
     monkeypatch.setattr(build_generated_manifest, "MD_OUT", tmp_path / "GENERATED.md")
     monkeypatch.setattr(build_generated_manifest, "REPO_ROOT", tmp_path)
     monkeypatch.setattr(build_generated_manifest, "ARTIFACTS", [])
-    out.write_text(json.dumps({"generated_at": "2026-08-13T00:00:00Z", "artifacts": [{"old": True}]}) + "\n", encoding="utf-8")
-    monkeypatch.setattr(build_generated_manifest, "generated_timestamp", lambda: "2026-10-02T00:00:00Z")
+    out.write_text(
+        json.dumps(
+            {"generated_at": "2026-08-13T00:00:00Z", "artifacts": [{"old": True}]}
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(
+        build_generated_manifest, "generated_timestamp", lambda: "2026-10-02T00:00:00Z"
+    )
     monkeypatch.setattr(sys, "argv", ["build_generated_manifest.py"])
     build_generated_manifest.main()
-    assert json.loads(out.read_text(encoding="utf-8"))["generated_at"] == "2026-10-02T00:00:00Z"
+    assert (
+        json.loads(out.read_text(encoding="utf-8"))["generated_at"]
+        == "2026-10-02T00:00:00Z"
+    )
     written = out.read_bytes()
-    monkeypatch.setattr(build_generated_manifest, "generated_timestamp", lambda: "2026-10-03T00:00:00Z")
+    monkeypatch.setattr(
+        build_generated_manifest, "generated_timestamp", lambda: "2026-10-03T00:00:00Z"
+    )
     build_generated_manifest.main()
     assert out.read_bytes() == written
     monkeypatch.setattr(sys, "argv", ["build_generated_manifest.py", "--check"])

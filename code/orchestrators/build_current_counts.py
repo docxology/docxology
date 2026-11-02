@@ -41,7 +41,14 @@ def _public_source_snapshot_counts(payload: dict) -> dict:
     for label, fact in facts.items():
         if not isinstance(fact, dict):
             continue
-        for key in ("public_repos", "group_count", "count", "hit_count", "total_results", "total"):
+        for key in (
+            "public_repos",
+            "group_count",
+            "count",
+            "hit_count",
+            "total_results",
+            "total",
+        ):
             value = fact.get(key)
             if isinstance(value, int):
                 values[label] = value
@@ -61,9 +68,19 @@ def collect_counts() -> dict:
     paired_report = _latest_report("paired_publications_*.json")
     decision_path = REPO_ROOT / "data" / "paired-publication-decisions.json"
 
-    public_source_payload = _json(str(public_source_report.relative_to(REPO_ROOT))) if public_source_report else {}
-    paired_payload = _json(str(paired_report.relative_to(REPO_ROOT))) if paired_report else {}
-    decision_payload = json.loads(decision_path.read_text(encoding="utf-8")) if decision_path.is_file() else {}
+    public_source_payload = (
+        _json(str(public_source_report.relative_to(REPO_ROOT)))
+        if public_source_report
+        else {}
+    )
+    paired_payload = (
+        _json(str(paired_report.relative_to(REPO_ROOT))) if paired_report else {}
+    )
+    decision_payload = (
+        json.loads(decision_path.read_text(encoding="utf-8"))
+        if decision_path.is_file()
+        else {}
+    )
 
     # Full-text and image extraction counts
     papers_dir = REPO_ROOT / "papers"
@@ -79,8 +96,10 @@ def collect_counts() -> dict:
             images_dir = paper_dir / "images"
             if images_dir.is_dir():
                 img_count = sum(
-                    1 for f in images_dir.iterdir()
-                    if f.is_file() and f.suffix.lower() in (".png", ".jpg", ".jpeg", ".gif")
+                    1
+                    for f in images_dir.iterdir()
+                    if f.is_file()
+                    and f.suffix.lower() in (".png", ".jpg", ".jpeg", ".gif")
                 )
                 if img_count:
                     papers_with_images += 1
@@ -97,9 +116,15 @@ def collect_counts() -> dict:
             "works_export": "data/works.json",
             "software_export": "data/software.json",
             "github_inventory": "data/github-repositories.json",
-            "public_source_snapshot": str(public_source_report.relative_to(REPO_ROOT)) if public_source_report else None,
-            "paired_publications": str(paired_report.relative_to(REPO_ROOT)) if paired_report else None,
-            "paired_publication_decisions": str(decision_path.relative_to(REPO_ROOT)) if decision_path.is_file() else None,
+            "public_source_snapshot": str(public_source_report.relative_to(REPO_ROOT))
+            if public_source_report
+            else None,
+            "paired_publications": str(paired_report.relative_to(REPO_ROOT))
+            if paired_report
+            else None,
+            "paired_publication_decisions": str(decision_path.relative_to(REPO_ROOT))
+            if decision_path.is_file()
+            else None,
         },
         "counts": {
             "bibliography_works": len(rows),
@@ -107,11 +132,14 @@ def collect_counts() -> dict:
             "full_text_papers": full_text_count,
             "papers_with_images": papers_with_images,
             "extracted_images": total_extracted_images,
-            "bibliography_docs_links": sum(1 for row in rows if "../papers/" in row["docs"]),
-            "types": {TYPE_LABELS.get(k, k): type_counts[k] for k in sorted(type_counts)},
+            "bibliography_docs_links": sum(
+                1 for row in rows if "../papers/" in row["docs"]
+            ),
+            "types": {
+                TYPE_LABELS.get(k, k): type_counts[k] for k in sorted(type_counts)
+            },
             "domains": {
-                label: domain_counts[symbol]
-                for label, symbol in DOMAIN_COUNTS.items()
+                label: domain_counts[symbol] for label, symbol in DOMAIN_COUNTS.items()
             },
             "software": {
                 "docxology_owned": software_docx,
@@ -121,13 +149,21 @@ def collect_counts() -> dict:
             "generated_exports": {
                 "data_works_json": works_json.get("count"),
                 "data_software_json": software_json.get("count"),
-                "data_publications_ld_main_entity": len(_json("data/publications-ld.json").get("mainEntity", [])),
-                "data_software_ld_main_entity": len(_json("data/software-ld.json").get("mainEntity", [])),
+                "data_publications_ld_main_entity": len(
+                    _json("data/publications-ld.json").get("mainEntity", [])
+                ),
+                "data_software_ld_main_entity": len(
+                    _json("data/software-ld.json").get("mainEntity", [])
+                ),
             },
             "github_inventory": github_json.get("counts", {}),
-            "public_source_snapshot": _public_source_snapshot_counts(public_source_payload),
+            "public_source_snapshot": _public_source_snapshot_counts(
+                public_source_payload
+            ),
             "paired_publications": paired_payload.get("counts", {}),
-            "paired_publication_decisions": decision_payload.get("decision_summary", {}),
+            "paired_publication_decisions": decision_payload.get(
+                "decision_summary", {}
+            ),
         },
         "validation": [
             "uv run python3 code/orchestrators/validate_repo.py",
@@ -232,7 +268,9 @@ def preserve_timestamp_when_unchanged(payload: dict) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="fail if generated outputs are stale")
+    parser.add_argument(
+        "--check", action="store_true", help="fail if generated outputs are stale"
+    )
     args = parser.parse_args()
 
     payload = collect_counts()
@@ -245,7 +283,10 @@ def main() -> None:
         stale = []
         if not JSON_PATH.exists() or JSON_PATH.read_text(encoding="utf-8") != json_text:
             stale.append(str(JSON_PATH.relative_to(REPO_ROOT)))
-        if not REPORT_PATH.exists() or REPORT_PATH.read_text(encoding="utf-8") != markdown:
+        if (
+            not REPORT_PATH.exists()
+            or REPORT_PATH.read_text(encoding="utf-8") != markdown
+        ):
             stale.append(str(REPORT_PATH.relative_to(REPO_ROOT)))
         if stale:
             raise SystemExit("current count report is stale: " + ", ".join(stale))
@@ -254,7 +295,9 @@ def main() -> None:
 
     write_if_changed(JSON_PATH, json_text)
     write_if_changed(REPORT_PATH, markdown)
-    print(f"wrote {REPORT_PATH.relative_to(REPO_ROOT)} and {JSON_PATH.relative_to(REPO_ROOT)}")
+    print(
+        f"wrote {REPORT_PATH.relative_to(REPO_ROOT)} and {JSON_PATH.relative_to(REPO_ROOT)}"
+    )
 
 
 if __name__ == "__main__":

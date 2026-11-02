@@ -42,7 +42,13 @@ def test_api_normalization_for_github_and_zenodo_records():
             "body": "DOI: 10.5281/zenodo.1",
             "html_url": "https://github.com/docxology/example/releases/tag/v1.0.0",
             "published_at": "2026-05-27T00:00:00Z",
-            "assets": [{"name": "paper.pdf", "browser_download_url": "https://example.test/paper.pdf", "size": 12}],
+            "assets": [
+                {
+                    "name": "paper.pdf",
+                    "browser_download_url": "https://example.test/paper.pdf",
+                    "size": 12,
+                }
+            ],
         },
     )
     record = ZenodoRecord.from_api(
@@ -99,7 +105,9 @@ def test_render_readme_cleans_html_and_includes_doi_and_url_in_citation():
         files=[],
         html_url="https://zenodo.org/records/20396328",
     )
-    pair = PublicationPair(release=release, record=record, confidence="strong", evidence=("doi",))
+    pair = PublicationPair(
+        release=release, record=record, confidence="strong", evidence=("doi",)
+    )
 
     readme = render_readme(pair, "2026_Example")
 
@@ -225,7 +233,9 @@ def test_biology_textbook_is_strong_pair_from_shared_doi():
 
 
 def test_template_cross_linked_release_is_strong_pair():
-    release_url = "https://github.com/docxology/template_code_project/releases/tag/v2.2.0"
+    release_url = (
+        "https://github.com/docxology/template_code_project/releases/tag/v2.2.0"
+    )
     release = GitHubRelease(
         owner="docxology",
         repo="template_code_project",
@@ -251,7 +261,11 @@ def test_template_cross_linked_release_is_strong_pair():
         description="Convergence study.",
         keywords=["gradient descent"],
         related_identifiers=[
-            {"identifier": release_url, "relation": "isSupplementTo", "resource_type": "software"}
+            {
+                "identifier": release_url,
+                "relation": "isSupplementTo",
+                "resource_type": "software",
+            }
         ],
         files=[],
         html_url="https://zenodo.org/records/20416565",
@@ -338,12 +352,14 @@ def test_yaml_double_quoted_escapes_inner_quotes_and_backslashes():
     assert '"' not in escaped.replace('\\"', "")  # every quote is escaped
     assert _unescape_yaml_double_quoted(escaped) == title
 
-    backslash_title = "A path C:\\data and a \"quote\""
+    backslash_title = 'A path C:\\data and a "quote"'
     escaped2 = yaml_double_quoted(backslash_title)
     assert _unescape_yaml_double_quoted(escaped2) == backslash_title
 
 
-def _domain_pair(*, title: str, description: str, keywords: list[str]) -> PublicationPair:
+def _domain_pair(
+    *, title: str, description: str, keywords: list[str]
+) -> PublicationPair:
     release = GitHubRelease(
         owner="docxology",
         repo="probe",
@@ -368,7 +384,9 @@ def _domain_pair(*, title: str, description: str, keywords: list[str]) -> Public
         files=[],
         html_url="https://zenodo.org/records/1",
     )
-    return PublicationPair(release=release, record=record, confidence="strong", evidence=())
+    return PublicationPair(
+        release=release, record=record, confidence="strong", evidence=()
+    )
 
 
 def test_infer_domain_does_not_false_positive_on_substrings():
@@ -400,13 +418,34 @@ def test_paired_templates_preserve_complete_creator_list_and_orcids():
     import yaml
     from docxology_tools.publication_pairing import render_citation
 
-    release = GitHubRelease.from_api("docxology", "example", {
-        "tag_name": "v1", "html_url": "https://github.com/docxology/example/releases/tag/v1"})
-    record = ZenodoRecord.from_api({"id": 1, "doi": "10.5281/zenodo.1", "metadata": {
-        "title": "Joint work", "publication_date": "2026-10-16",
-        "creators": [{"name": "Friedman, Daniel Ari", "orcid": "0000-0001-6232-9096"},
-                     {"name": "Example Coauthor", "orcid": "https://orcid.org/0000-0002-1825-0097"}]}})
-    pair = PublicationPair(release=release, record=record, confidence="strong", evidence=())
+    release = GitHubRelease.from_api(
+        "docxology",
+        "example",
+        {
+            "tag_name": "v1",
+            "html_url": "https://github.com/docxology/example/releases/tag/v1",
+        },
+    )
+    record = ZenodoRecord.from_api(
+        {
+            "id": 1,
+            "doi": "10.5281/zenodo.1",
+            "metadata": {
+                "title": "Joint work",
+                "publication_date": "2026-10-16",
+                "creators": [
+                    {"name": "Friedman, Daniel Ari", "orcid": "0000-0001-6232-9096"},
+                    {
+                        "name": "Example Coauthor",
+                        "orcid": "https://orcid.org/0000-0002-1825-0097",
+                    },
+                ],
+            },
+        }
+    )
+    pair = PublicationPair(
+        release=release, record=record, confidence="strong", evidence=()
+    )
     readme = render_readme(pair, "2026_Joint")
     assert "**Daniel Ari Friedman, Example Coauthor**" in readme
     assert "> Friedman, D. A.; Example Coauthor (2026)." in readme
@@ -422,7 +461,11 @@ def test_paired_templates_do_not_invent_creator_when_metadata_is_missing():
     from docxology_tools.publication_pairing import render_citation
 
     release = GitHubRelease.from_api("docxology", "example", {"tag_name": "v1"})
-    record = ZenodoRecord.from_api({"id": 1, "doi": "10.5281/zenodo.1", "metadata": {"title": "Unknown"}})
-    pair = PublicationPair(release=release, record=record, confidence="strong", evidence=())
+    record = ZenodoRecord.from_api(
+        {"id": 1, "doi": "10.5281/zenodo.1", "metadata": {"title": "Unknown"}}
+    )
+    pair = PublicationPair(
+        release=release, record=record, confidence="strong", evidence=()
+    )
     assert "Creator metadata unavailable" in render_readme(pair, "2026_Unknown")
     assert yaml.safe_load(render_citation(pair))["authors"] == []

@@ -73,7 +73,9 @@ def replace_inline_collection_ld(
     begin_count = html_text.count(begin_marker)
     end_count = html_text.count(end_marker)
     if begin_count != end_count or begin_count > 1:
-        raise ValueError(f"Expected zero or one complete {page_label} JSON-LD marker pair")
+        raise ValueError(
+            f"Expected zero or one complete {page_label} JSON-LD marker pair"
+        )
     if begin_count == 1:
         replaced, replacement_count = re.subn(
             re.escape(begin_marker) + r"[\s\S]*?" + re.escape(end_marker),
@@ -81,15 +83,21 @@ def replace_inline_collection_ld(
             html_text,
             count=1,
         )
-        if replacement_count != 1:  # Defensive: marker-count checks above should guarantee this.
+        if (
+            replacement_count != 1
+        ):  # Defensive: marker-count checks above should guarantee this.
             raise ValueError(f"Could not replace {page_label} JSON-LD marker block")
         return replaced
-    stylesheet_match = re.search(r'<link rel="stylesheet" href="style\.css(?:\?[^"]*)?">', html_text)
+    stylesheet_match = re.search(
+        r'<link rel="stylesheet" href="style\.css(?:\?[^"]*)?">', html_text
+    )
     insert_at = stylesheet_match.start() if stylesheet_match else -1
     if insert_at < 0:
         insert_at = html_text.find("</head>")
     if insert_at < 0:
-        raise ValueError(f"Could not locate insertion point for inline JSON-LD in {page_label}.html")
+        raise ValueError(
+            f"Could not locate insertion point for inline JSON-LD in {page_label}.html"
+        )
     return html_text[:insert_at] + marker + "\n    " + html_text[insert_at:]
 
 

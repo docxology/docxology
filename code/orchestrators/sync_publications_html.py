@@ -27,14 +27,25 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-from docxology_tools.biblio_table import DEFAULT_BIB_PATH, BiblioRow, iter_bibliography_rows  # noqa: E402
+from docxology_tools.biblio_table import (  # noqa: E402
+    DEFAULT_BIB_PATH,
+    BiblioRow,
+    iter_bibliography_rows,
+)
 from docxology_tools.bibliography_links import canonical_link_url  # noqa: E402
-from docxology_tools.collection_jsonld import display_paths, replace_inline_collection_ld  # noqa: E402
+from docxology_tools.collection_jsonld import (  # noqa: E402
+    display_paths,
+    replace_inline_collection_ld,
+)
 from export_bibliography import row_to_work, source_paths  # noqa: E402
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 from docxology_tools.site_facts import generated_date, generated_month_year  # noqa: E402
 from docxology_tools.work_identifiers import load_registry  # noqa: E402
-from docxology_tools.author_entities import author_entity as source_author_entity, load_author_records, verified_author_types  # noqa: E402
+from docxology_tools.author_entities import (  # noqa: E402
+    author_entity as source_author_entity,
+    load_author_records,
+    verified_author_types,
+)
 
 PUBLICATIONS_HTML = REPO_ROOT / "publications.html"
 PUBLICATIONS_LD_JSON = REPO_ROOT / "data" / "publications-ld.json"
@@ -96,7 +107,9 @@ def author_entity(display_name: str, source_type: str | None = None) -> dict:
     return source_author_entity(display_name, PRINCIPAL, source_type)
 
 
-def _author_block(authors: list[str] | None = None, author_types: dict | None = None) -> list[dict]:
+def _author_block(
+    authors: list[str] | None = None, author_types: dict | None = None
+) -> list[dict]:
     if not authors:
         return [PRINCIPAL]
     types = author_types or {}
@@ -115,21 +128,37 @@ def source_works_by_num(rows: list[BiblioRow]) -> dict[int, dict]:
     """
     visible_source_paths = source_paths()
     registry = load_registry()
-    works = [asdict(row_to_work(row, visible_source_paths=visible_source_paths, registry=registry)) for row in rows]
+    works = [
+        asdict(
+            row_to_work(
+                row, visible_source_paths=visible_source_paths, registry=registry
+            )
+        )
+        for row in rows
+    ]
     by_num = {work["num"]: work for work in works}
-    if len(by_num) != len(rows):  # validate_rows prevents this; retain a hard guard for callers.
+    if len(by_num) != len(
+        rows
+    ):  # validate_rows prevents this; retain a hard guard for callers.
         raise ValueError("Duplicate bibliography row number in static table projection")
     return by_num
 
 
-def main_entity_object(row: BiblioRow, same_as: str, work: dict | None = None, author_types: dict | None = None) -> dict:
+def main_entity_object(
+    row: BiblioRow,
+    same_as: str,
+    work: dict | None = None,
+    author_types: dict | None = None,
+) -> dict:
     pub_name = row.venue if row.venue else "Unknown"
     obj: dict = {
         "@type": schema_type_for_row(row.typ),
         "name": row.title,
         "headline": row.title,
         "datePublished": row.year,
-        (work or {}).get("contributor_role", "author"): _author_block(row.authors, author_types),
+        (work or {}).get("contributor_role", "author"): _author_block(
+            row.authors, author_types
+        ),
         "publisher": {"@type": "Organization", "name": pub_name},
         "keywords": row.domain,
     }
@@ -149,6 +178,7 @@ def main_entity_object(row: BiblioRow, same_as: str, work: dict | None = None, a
         obj["sameAs"] = same_as
     if work:
         from build_work_pages import citation_text
+
         cite = citation_text(work)
         if cite:
             obj["citation"] = cite
@@ -175,7 +205,9 @@ def load_source_template() -> str:
     if not PUBLICATIONS_TEMPLATE.is_file():
         raise SystemExit(f"Missing source template {PUBLICATIONS_TEMPLATE}")
     template = PUBLICATIONS_TEMPLATE.read_text(encoding="utf-8")
-    missing = [token for token in PUBLICATIONS_TEMPLATE_TOKENS if template.count(token) != 1]
+    missing = [
+        token for token in PUBLICATIONS_TEMPLATE_TOKENS if template.count(token) != 1
+    ]
     if missing:
         raise ValueError(
             "Publication template must contain exactly one of each placeholder: "
@@ -184,11 +216,23 @@ def load_source_template() -> str:
     return template
 
 
-def build_collection_page(rows: list[BiblioRow], works_by_num: dict[int, dict] | None = None) -> dict:
+def build_collection_page(
+    rows: list[BiblioRow], works_by_num: dict[int, dict] | None = None
+) -> dict:
     count = len(rows)
-    works_by_num = works_by_num if works_by_num is not None else source_works_by_num(rows)
+    works_by_num = (
+        works_by_num if works_by_num is not None else source_works_by_num(rows)
+    )
     author_records = load_author_records(REPO_ROOT)
-    me = [main_entity_object(r, canonical_link_url(r.link_cell, r.venue), works_by_num.get(r.num), verified_author_types(works_by_num.get(r.num) or {}, author_records)) for r in rows]
+    me = [
+        main_entity_object(
+            r,
+            canonical_link_url(r.link_cell, r.venue),
+            works_by_num.get(r.num),
+            verified_author_types(works_by_num.get(r.num) or {}, author_records),
+        )
+        for r in rows
+    ]
     return {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
@@ -256,7 +300,7 @@ def replace_head_meta(html: str, count: int) -> str:
     month_year = generated_month_year()
     hero = (
         f'<p class="sub">{count} works spanning Active Inference, computational entomology, '
-        f'cognitive security, art &amp; synergetics, genetics, and open science — as of {month_year}</p>'
+        f"cognitive security, art &amp; synergetics, genetics, and open science — as of {month_year}</p>"
     )
     html, hero_count = re.subn(r'<p class="sub">[^<]*</p>', hero, html, count=1)
     if hero_count != 1:
@@ -270,7 +314,7 @@ def replace_head_meta(html: str, count: int) -> str:
     if revised_count != 1:
         raise ValueError("Publication source template is missing meta[name=revised]")
     html, footer_count = re.subn(
-        r'(Data refreshed )[A-Z][a-z]+ \d{4}',
+        r"(Data refreshed )[A-Z][a-z]+ \d{4}",
         rf"\g<1>{month_year}",
         html,
         count=1,
@@ -295,9 +339,10 @@ def validate_rows(rows: list[BiblioRow]) -> None:
     prev = 0
     for i, r in enumerate(rows, start=1):
         if r.num <= prev:
-            raise SystemExit(f"Row order/num mismatch at index {i}: num {r.num} not greater than previous {prev}")
+            raise SystemExit(
+                f"Row order/num mismatch at index {i}: num {r.num} not greater than previous {prev}"
+            )
         prev = r.num
-
 
 
 DOMAIN_LABELS = {
@@ -341,12 +386,12 @@ def render_static_tbody(works: list[dict]) -> str:
 
         docs_path = p.get("docs_path", "")
         if docs_path and p.get("has_paper_folder"):
-            docs = f' <a href="https://github.com/docxology/docxology/tree/main/{html.escape(docs_path.rstrip("/" ))}" target="_blank" rel="noopener">Docs</a>'
+            docs = f' <a href="https://github.com/docxology/docxology/tree/main/{html.escape(docs_path.rstrip("/"))}" target="_blank" rel="noopener">Docs</a>'
         else:
             docs = ""
 
         if docs_path and p.get("has_full_text"):
-            ft = f' <a href="{html.escape(docs_path.rstrip("/" ))}/full_text.md" title="Full text extraction">FT</a>'
+            ft = f' <a href="{html.escape(docs_path.rstrip("/"))}/full_text.md" title="Full text extraction">FT</a>'
         else:
             ft = ""
 
@@ -385,6 +430,7 @@ def replace_tbody(html_content: str, works: list[dict]) -> str:
         raise ValueError("Missing generated publication table body #pub-tbody")
     return replaced
 
+
 def render_outputs_from_template(
     rows: list[BiblioRow] | None,
     html_template: str,
@@ -412,14 +458,17 @@ def render_outputs_from_template(
         compact=True,
     )
     html_out = replace_head_meta(html_out, len(rows))
-    html_out = replace_tbody(html_out, [works_by_num[row.num] for row in rows[:SSR_FLOOR_ROWS]])
+    html_out = replace_tbody(
+        html_out, [works_by_num[row.num] for row in rows[:SSR_FLOOR_ROWS]]
+    )
 
     if len(collection["mainEntity"]) != len(rows):
         raise SystemExit("mainEntity length mismatch after build")
 
     return {
         PUBLICATIONS_HTML: html_out,
-        PUBLICATIONS_LD_JSON: json.dumps(collection, indent=4, ensure_ascii=False) + "\n",
+        PUBLICATIONS_LD_JSON: json.dumps(collection, indent=4, ensure_ascii=False)
+        + "\n",
     }
 
 
@@ -437,8 +486,16 @@ def render_outputs(rows: list[BiblioRow] | None = None) -> dict[Path, str]:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     mode = parser.add_mutually_exclusive_group()
-    mode.add_argument("--apply", action="store_true", help="Write publications.html and publications-ld.json")
-    mode.add_argument("--check", action="store_true", help="Fail if source-rendered publication outputs are stale")
+    mode.add_argument(
+        "--apply",
+        action="store_true",
+        help="Write publications.html and publications-ld.json",
+    )
+    mode.add_argument(
+        "--check",
+        action="store_true",
+        help="Fail if source-rendered publication outputs are stale",
+    )
     args = parser.parse_args()
 
     rows = load_rows()
@@ -459,7 +516,9 @@ def main() -> None:
                 "Stale source-rendered publication outputs: "
                 f"{display_paths(stale, REPO_ROOT)} (run sync_publications_html.py --apply)"
             )
-        print(f"Checked {len(outputs)} publication outputs from {len(rows)} bibliography rows")
+        print(
+            f"Checked {len(outputs)} publication outputs from {len(rows)} bibliography rows"
+        )
         return
 
     write_output_texts(outputs, repo_root=REPO_ROOT)

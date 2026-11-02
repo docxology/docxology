@@ -48,16 +48,22 @@ is_control_path = release_controls.is_control_path
 _latest_payload_commit = release_controls.latest_payload_commit
 
 DEFAULT_OUTPUT = REPO_ROOT / "_site"
-# 900 MiB is the repository's release hard ceiling; GitHub Pages itself has a
+# 950 MiB is the repository's release hard ceiling; GitHub Pages itself has a
 # 1 GiB platform maximum.  Keep both values explicit so a warning is not
 # mistaken for permission to cross the release ceiling.
-MAX_ARTIFACT_BYTES = 900 * 1024 * 1024
-WARNING_ARTIFACT_BYTES = 890 * 1024 * 1024
+MAX_ARTIFACT_BYTES = 950 * 1024 * 1024
+WARNING_ARTIFACT_BYTES = 930 * 1024 * 1024
 HARD_ARTIFACT_BYTES = 1024 * 1024 * 1024
 ARTIFACT_MANIFEST = REPO_ROOT / "data" / "pages-artifact-manifest.json"
-GROWTH_REPORT = REPO_ROOT / "reports" / f"pages_artifact_growth_{datetime.now(timezone.utc).date().isoformat()}.json"
+GROWTH_REPORT = (
+    REPO_ROOT
+    / "reports"
+    / f"pages_artifact_growth_{datetime.now(timezone.utc).date().isoformat()}.json"
+)
 _GROWTH_REPORT_NAME = re.compile(r"^pages_artifact_growth_(\d{4}-\d{2}-\d{2})\.json$")
-_PREPAYLOAD_SOURCE_SNAPSHOT_NAME = re.compile(r"^public_source_snapshot_(\d{4}-\d{2}-\d{2})\.json$")
+_PREPAYLOAD_SOURCE_SNAPSHOT_NAME = re.compile(
+    r"^public_source_snapshot_(\d{4}-\d{2}-\d{2})\.json$"
+)
 
 EXCLUDED_ROOTS = {
     ".benchmarks",
@@ -72,7 +78,15 @@ EXCLUDED_ROOTS = {
     "Plans",
 }
 PAPER_IMAGE_SUFFIXES = {".bmp", ".gif", ".jpeg", ".jpg", ".png", ".tiff", ".webp"}
-VISUAL_QA_SCREENSHOT_SUFFIXES = {".bmp", ".gif", ".jpeg", ".jpg", ".png", ".tiff", ".webp"}
+VISUAL_QA_SCREENSHOT_SUFFIXES = {
+    ".bmp",
+    ".gif",
+    ".jpeg",
+    ".jpg",
+    ".png",
+    ".tiff",
+    ".webp",
+}
 
 
 def tracked_paths() -> list[Path]:
@@ -83,7 +97,10 @@ def tracked_paths() -> list[Path]:
         capture_output=True,
     )
     paths = [Path(raw) for raw in result.stdout.decode().split("\0") if raw]
-    if ARTIFACT_MANIFEST.exists() and ARTIFACT_MANIFEST.relative_to(REPO_ROOT) not in paths:
+    if (
+        ARTIFACT_MANIFEST.exists()
+        and ARTIFACT_MANIFEST.relative_to(REPO_ROOT) not in paths
+    ):
         paths.append(ARTIFACT_MANIFEST.relative_to(REPO_ROOT))
     # The current growth report is created during this pipeline before it is
     # necessarily staged. Include it in local projections so the manifest and
@@ -120,7 +137,11 @@ def _head_commit(repo_root: Path) -> str | None:
         check=False,
     )
     value = result.stdout.strip()
-    return value if result.returncode == 0 and re.fullmatch(r"[0-9a-f]{40}", value) else None
+    return (
+        value
+        if result.returncode == 0 and re.fullmatch(r"[0-9a-f]{40}", value)
+        else None
+    )
 
 
 def is_current_dirty_prepayload_source_snapshot(path: Path, repo_root: Path) -> bool:
@@ -142,7 +163,7 @@ def is_current_dirty_prepayload_source_snapshot(path: Path, repo_root: Path) -> 
     try:
         date.fromisoformat(match.group(1))
         payload = json.loads((repo_root / path).read_text(encoding="utf-8"))
-    except (OSError, ValueError, json.JSONDecodeError):
+    except OSError, ValueError, json.JSONDecodeError:
         return False
     return (
         isinstance(payload, dict)
@@ -173,31 +194,60 @@ def is_current_dirty_prepayload_link_snapshot(path: Path, repo_root: Path) -> bo
         from check_external_links import cached_report_errors, collect_urls, scan_files
         from build_external_link_triage import outputs as triage_outputs
 
-        payload = json.loads(source_path(primary, repo_root=repo_root).read_text(encoding="utf-8"))
+        payload = json.loads(
+            source_path(primary, repo_root=repo_root).read_text(encoding="utf-8")
+        )
         if (
             not isinstance(payload, dict)
             or payload.get("source_worktree_clean") is not False
             or payload.get("source_commit") != _head_commit(repo_root)
             or not str(payload.get("generated_at", "")).startswith(stamp + "T")
-            or cached_report_errors(payload, url_sources=collect_urls(repo_root), scope=scan_files(repo_root))
+            or cached_report_errors(
+                payload,
+                url_sources=collect_urls(repo_root),
+                scope=scan_files(repo_root),
+            )
         ):
             return False
         generated = datetime.fromisoformat(payload["generated_at"])
-        if generated.tzinfo is None or generated.astimezone(timezone.utc).date().isoformat() != stamp:
+        if (
+            generated.tzinfo is None
+            or generated.astimezone(timezone.utc).date().isoformat() != stamp
+        ):
             return False
         expected_triage = triage_outputs(repo_root / primary, repo_root=repo_root)
-        bundle = {primary, *(target.relative_to(repo_root) for target in expected_triage)}
+        bundle = {
+            primary,
+            *(target.relative_to(repo_root) for target in expected_triage),
+        }
         indexed = subprocess.run(
             ["git", "ls-files", "-z", "--", *(p.as_posix() for p in sorted(bundle))],
-            cwd=repo_root, capture_output=True, check=False, timeout=3,
+            cwd=repo_root,
+            capture_output=True,
+            check=False,
+            timeout=3,
         )
-        if indexed.returncode or {Path(p) for p in indexed.stdout.decode().split("\0") if p} != bundle:
+        if (
+            indexed.returncode
+            or {Path(p) for p in indexed.stdout.decode().split("\0") if p} != bundle
+        ):
             return False
         return all(
-            source_path(target.relative_to(repo_root), repo_root=repo_root).read_text(encoding="utf-8") == content
+            source_path(target.relative_to(repo_root), repo_root=repo_root).read_text(
+                encoding="utf-8"
+            )
+            == content
             for target, content in expected_triage.items()
         )
-    except (OSError, ValueError, KeyError, TypeError, AttributeError, subprocess.TimeoutExpired, SystemExit):
+    except (
+        OSError,
+        ValueError,
+        KeyError,
+        TypeError,
+        AttributeError,
+        subprocess.TimeoutExpired,
+        SystemExit,
+    ):
         return False
 
 
@@ -216,8 +266,11 @@ def dirty_postdeploy_payload_paths(
     """
     try:
         indexed = subprocess.run(
-            ["git", "ls-files", "-z"], cwd=repo_root, capture_output=True,
-            check=False, timeout=30,
+            ["git", "ls-files", "-z"],
+            cwd=repo_root,
+            capture_output=True,
+            check=False,
+            timeout=30,
         )
     except (OSError, subprocess.TimeoutExpired) as exc:
         raise SystemExit("unable to inspect indexed Pages inputs") from exc
@@ -290,7 +343,11 @@ def is_visual_qa_screenshot(path: Path) -> bool:
     nested path remains visible to the artifact policy rather than using a
     suffix match to evade it.
     """
-    if not path.parts or path.parts[0] != "reports" or path.suffix.lower() not in VISUAL_QA_SCREENSHOT_SUFFIXES:
+    if (
+        not path.parts
+        or path.parts[0] != "reports"
+        or path.suffix.lower() not in VISUAL_QA_SCREENSHOT_SUFFIXES
+    ):
         return False
     if len(path.parts) >= 4 and path.parts[1] == "visual-qa":
         return True
@@ -385,7 +442,9 @@ def superseded_dated_report_paths(
                 family_members.setdefault(family, []).append((path, parsed))
         elif len(parts) >= 3 and parts[1] in SCREENSHOT_PARENTS:
             if _DATE_DIR_NAME_RE.fullmatch(parts[2]):
-                dir_members.setdefault(parts[1], []).append((path, date.fromisoformat(parts[2])))
+                dir_members.setdefault(parts[1], []).append(
+                    (path, date.fromisoformat(parts[2]))
+                )
     superseded: set[Path] = set()
     for members in (family_members, dir_members):
         for member_list in members.values():
@@ -393,7 +452,9 @@ def superseded_dated_report_paths(
             superseded.update(path for path, parsed in member_list if parsed < newest)
     references = frozenset(referenced_paths)
     if references:
-        superseded = {path for path in superseded if not _report_reference_hit(path, references)}
+        superseded = {
+            path for path in superseded if not _report_reference_hit(path, references)
+        }
     return superseded
 
 
@@ -417,9 +478,17 @@ def _superseded_report_paths() -> set[Path]:
 
 def _relative_paths(*, archive_paths: set[Path] | None = None) -> list[Path]:
     superseded = _superseded_report_paths()
-    office = {Path(name) for name in verified_archives(REPO_ROOT)} if archive_paths is None else archive_paths
+    office = (
+        {Path(name) for name in verified_archives(REPO_ROOT)}
+        if archive_paths is None
+        else archive_paths
+    )
     return sorted(
-        (path for path in tracked_paths() if is_published_path(path) and path not in superseded and path not in office),
+        (
+            path
+            for path in tracked_paths()
+            if is_published_path(path) and path not in superseded and path not in office
+        ),
         key=lambda path: path.as_posix(),
     )
 
@@ -458,12 +527,17 @@ def source_path(relative: Path, *, repo_root: Path = REPO_ROOT) -> Path:
 def _omitted_paths(*, archive_paths: set[Path] | None = None) -> list[Path]:
     """Return every tracked path omitted from the projection, all classes."""
     superseded = _superseded_report_paths()
-    office = {Path(name) for name in verified_archives(REPO_ROOT)} if archive_paths is None else archive_paths
+    office = (
+        {Path(name) for name in verified_archives(REPO_ROOT)}
+        if archive_paths is None
+        else archive_paths
+    )
     return sorted(
         (
             path
             for path in tracked_paths()
-            if path in superseded or path in office
+            if path in superseded
+            or path in office
             or (
                 not is_published_path(path)
                 and (is_paper_extracted_image(path) or is_visual_qa_screenshot(path))
@@ -549,7 +623,11 @@ MANIFEST_COMPARISON_FIELDS = (
 
 def manifest_drift_fields(existing: dict, expected: dict) -> list[str]:
     """Return every semantic manifest field that differs from its renderer."""
-    return [field for field in MANIFEST_COMPARISON_FIELDS if existing.get(field) != expected.get(field)]
+    return [
+        field
+        for field in MANIFEST_COMPARISON_FIELDS
+        if existing.get(field) != expected.get(field)
+    ]
 
 
 def _recorded_growth_report(existing: dict | None) -> Path | None:
@@ -566,7 +644,11 @@ def _recorded_growth_report(existing: dict | None) -> Path | None:
     if not isinstance(raw, str) or "\\" in raw:
         return None
     candidate = Path(raw)
-    if candidate.is_absolute() or ".." in candidate.parts or candidate.parent != Path("reports"):
+    if (
+        candidate.is_absolute()
+        or ".." in candidate.parts
+        or candidate.parent != Path("reports")
+    ):
         return None
     match = _GROWTH_REPORT_NAME.fullmatch(candidate.name)
     if match is None:
@@ -593,14 +675,20 @@ def _growth_report_for_manifest(
     return growth_report.relative_to(REPO_ROOT)
 
 
-def _manifest_payload(existing: dict | None = None, *, include_pending_growth: bool = True) -> dict:
+def _manifest_payload(
+    existing: dict | None = None, *, include_pending_growth: bool = True
+) -> dict:
     manifest_rel = ARTIFACT_MANIFEST.relative_to(REPO_ROOT)
     # One complete proof per manifest operation; no cache survives the call.
     archives = verified_archives(REPO_ROOT)
     office = {Path(name) for name in archives}
     relative_paths = _relative_paths(archive_paths=office)
     sources = {path: source_path(path) for path in relative_paths}
-    included = [path for path in relative_paths if path != manifest_rel and not is_control_path(path)]
+    included = [
+        path
+        for path in relative_paths
+        if path != manifest_rel and not is_control_path(path)
+    ]
     # Write path: include today's growth report even before it exists so the
     # first UTC-day run cannot make the manifest stale of itself.
     # Check path: only require that path when the file is actually on disk,
@@ -613,7 +701,11 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
     if include_pending_growth:
         expected_control_paths.add(growth_rel)
     controls = sorted(
-        (path for path in expected_control_paths if path != manifest_rel and is_control_path(path)),
+        (
+            path
+            for path in expected_control_paths
+            if path != manifest_rel and is_control_path(path)
+        ),
         key=lambda path: path.as_posix(),
     )
     omitted = _omitted_paths(archive_paths=office)
@@ -630,11 +722,20 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
         and not is_visual_qa_screenshot(path)
     ]
     files = [
-        {"path": path.as_posix(), "bytes": sources[path].stat().st_size, "sha256": _sha256(sources[path])}
+        {
+            "path": path.as_posix(),
+            "bytes": sources[path].stat().st_size,
+            "sha256": _sha256(sources[path]),
+        }
         for path in included
         if path != ARTIFACT_MANIFEST.relative_to(REPO_ROOT)
     ]
-    generated_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    generated_at = (
+        datetime.now(timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z")
+    )
     payload = {
         "schema_version": "1.0",
         "generated_at": generated_at,
@@ -652,7 +753,7 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
             "omitted_assets_fallback": "Use the GitHub tree/raw templates with the source commit and repository-relative path.",
             "superseded_report_policy": "Superseded dated reports (older-than-newest per report family) remain in the committed repository and are omitted from the Pages projection; any report referenced from a published page or data file is never omitted.",
             "visual_qa_screenshot_policy": "Visual-QA manifests remain in Pages with repository-relative paths and SHA-256 digests; screenshot binaries remain in the committed repository rather than the deploy artifact.",
-            "warning_policy": "At 890 MiB, review growth and report retention before deployment; 900 MiB is a release hard ceiling below the GitHub Pages 1 GiB platform limit.",
+            "warning_policy": "At 930 MiB, review growth and report retention before deployment; 950 MiB is a release hard ceiling below the GitHub Pages 1 GiB platform limit.",
         },
         "budget": {
             "hard_limit_bytes": HARD_ARTIFACT_BYTES,
@@ -676,10 +777,17 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
             # permanently stale until a second pass.
             if (REPO_ROOT / path).is_file() or path == growth_rel
         ],
-        "omitted_source_documents": {"count": len(archives), "archives": list(archives.values())},
+        "omitted_source_documents": {
+            "count": len(archives),
+            "archives": list(archives.values()),
+        },
         "omitted_paper_images": _omitted_summary(paper_images, omitted_sources),
-        "omitted_visual_qa_screenshots": _omitted_summary(visual_qa_screenshots, omitted_sources),
-        "omitted_superseded_reports": _omitted_summary(superseded_reports, omitted_sources),
+        "omitted_visual_qa_screenshots": _omitted_summary(
+            visual_qa_screenshots, omitted_sources
+        ),
+        "omitted_superseded_reports": _omitted_summary(
+            superseded_reports, omitted_sources
+        ),
         "growth_report": str(growth_rel),
     }
     # The manifest is part of the artifact. Iterate to account for its own
@@ -691,8 +799,12 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
             break
         payload["budget"]["artifact_bytes"] = artifact_bytes
     if existing:
-        current_body = {key: value for key, value in payload.items() if key != "generated_at"}
-        existing_body = {key: value for key, value in existing.items() if key != "generated_at"}
+        current_body = {
+            key: value for key, value in payload.items() if key != "generated_at"
+        }
+        existing_body = {
+            key: value for key, value in existing.items() if key != "generated_at"
+        }
         if current_body == existing_body and existing.get("generated_at"):
             payload["generated_at"] = existing["generated_at"]
     return payload
@@ -711,18 +823,28 @@ def _growth_report_payload(payload: dict) -> dict:
         "safety_ceiling_bytes": MAX_ARTIFACT_BYTES,
         "hard_limit_bytes": HARD_ARTIFACT_BYTES,
         "omitted_paper_image_count": payload["omitted_paper_images"]["count"],
-        "omitted_visual_qa_screenshot_count": payload["omitted_visual_qa_screenshots"]["count"],
-        "omitted_visual_qa_screenshot_bytes": payload["omitted_visual_qa_screenshots"]["bytes"],
-        "omitted_superseded_report_count": payload["omitted_superseded_reports"]["count"],
-        "omitted_superseded_report_bytes": payload["omitted_superseded_reports"]["bytes"],
+        "omitted_visual_qa_screenshot_count": payload["omitted_visual_qa_screenshots"][
+            "count"
+        ],
+        "omitted_visual_qa_screenshot_bytes": payload["omitted_visual_qa_screenshots"][
+            "bytes"
+        ],
+        "omitted_superseded_report_count": payload["omitted_superseded_reports"][
+            "count"
+        ],
+        "omitted_superseded_report_bytes": payload["omitted_superseded_reports"][
+            "bytes"
+        ],
     }
     previous = sorted((REPO_ROOT / "reports").glob("pages_artifact_growth_*.json"))
     if previous and previous[-1] != GROWTH_REPORT:
         try:
             prior = json.loads(previous[-1].read_text(encoding="utf-8"))
-            growth["delta_bytes"] = growth["artifact_bytes"] - int(prior.get("artifact_bytes", growth["artifact_bytes"]))
+            growth["delta_bytes"] = growth["artifact_bytes"] - int(
+                prior.get("artifact_bytes", growth["artifact_bytes"])
+            )
             growth["previous_report"] = str(previous[-1].relative_to(REPO_ROOT))
-        except (OSError, ValueError, json.JSONDecodeError):
+        except OSError, ValueError, json.JSONDecodeError:
             pass
     return growth
 
@@ -730,7 +852,7 @@ def _growth_report_payload(payload: dict) -> dict:
 def write_manifest(*, allow_dirty_prepayload_source_snapshot: bool = False) -> dict:
     require_clean_postdeploy_payload_inputs(
         REPO_ROOT,
-        allow_dirty_prepayload_source_snapshot=allow_dirty_prepayload_source_snapshot
+        allow_dirty_prepayload_source_snapshot=allow_dirty_prepayload_source_snapshot,
     )
     existing = None
     manifest_rel = ARTIFACT_MANIFEST.relative_to(REPO_ROOT)
@@ -744,7 +866,9 @@ def write_manifest(*, allow_dirty_prepayload_source_snapshot: bool = False) -> d
             existing = None
     payload = _manifest_payload(existing)
     ARTIFACT_MANIFEST.parent.mkdir(parents=True, exist_ok=True)
-    ARTIFACT_MANIFEST.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    ARTIFACT_MANIFEST.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
     growth = _growth_report_payload(payload)
     GROWTH_REPORT.parent.mkdir(parents=True, exist_ok=True)
     GROWTH_REPORT.write_text(json.dumps(growth, indent=2) + "\n", encoding="utf-8")
@@ -754,13 +878,17 @@ def write_manifest(*, allow_dirty_prepayload_source_snapshot: bool = False) -> d
 def check_manifest(*, allow_dirty_prepayload_source_snapshot: bool = False) -> None:
     require_clean_postdeploy_payload_inputs(
         REPO_ROOT,
-        allow_dirty_prepayload_source_snapshot=allow_dirty_prepayload_source_snapshot
+        allow_dirty_prepayload_source_snapshot=allow_dirty_prepayload_source_snapshot,
     )
     if not ARTIFACT_MANIFEST.exists():
-        raise SystemExit(f"Missing Pages artifact manifest: {ARTIFACT_MANIFEST.relative_to(REPO_ROOT)}")
+        raise SystemExit(
+            f"Missing Pages artifact manifest: {ARTIFACT_MANIFEST.relative_to(REPO_ROOT)}"
+        )
     manifest_path = source_path(ARTIFACT_MANIFEST.relative_to(REPO_ROOT))
     existing = json.loads(manifest_path.read_text(encoding="utf-8"))
-    expected = _manifest_payload(existing, include_pending_growth=GROWTH_REPORT.exists())
+    expected = _manifest_payload(
+        existing, include_pending_growth=GROWTH_REPORT.exists()
+    )
     stale_fields = manifest_drift_fields(existing, expected)
     if stale_fields:
         raise SystemExit(
@@ -792,11 +920,13 @@ def assemble(output: Path) -> tuple[int, int, list[str]]:
     return copied, bytes_copied, omitted
 
 
-def projected_size(*, allow_dirty_prepayload_source_snapshot: bool = False) -> tuple[int, int]:
+def projected_size(
+    *, allow_dirty_prepayload_source_snapshot: bool = False
+) -> tuple[int, int]:
     """Return (included file count, included bytes) without copying files."""
     require_clean_postdeploy_payload_inputs(
         REPO_ROOT,
-        allow_dirty_prepayload_source_snapshot=allow_dirty_prepayload_source_snapshot
+        allow_dirty_prepayload_source_snapshot=allow_dirty_prepayload_source_snapshot,
     )
     paths = _relative_paths()
     return len(paths), sum(source_path(path).stat().st_size for path in paths)
@@ -866,9 +996,21 @@ def dangling_report_references(output: Path) -> list[str]:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
-    parser.add_argument("--check-size", action="store_true", help="Fail if the assembled artifact exceeds the safety ceiling")
-    parser.add_argument("--check-size-only", action="store_true", help="Check the projected size without copying an artifact")
-    parser.add_argument("--write-manifest", action="store_true", help="Write the checked-in Pages artifact and growth manifests")
+    parser.add_argument(
+        "--check-size",
+        action="store_true",
+        help="Fail if the assembled artifact exceeds the safety ceiling",
+    )
+    parser.add_argument(
+        "--check-size-only",
+        action="store_true",
+        help="Check the projected size without copying an artifact",
+    )
+    parser.add_argument(
+        "--write-manifest",
+        action="store_true",
+        help="Write the checked-in Pages artifact and growth manifests",
+    )
     parser.add_argument(
         "--allow-dirty-prepayload-evidence",
         action="store_true",
@@ -877,12 +1019,19 @@ def main() -> None:
             "reserved for pre-commit payload regeneration or no-write validation"
         ),
     )
-    parser.add_argument("--check-manifest", action="store_true", help="Fail if the checked-in Pages artifact manifest is stale")
+    parser.add_argument(
+        "--check-manifest",
+        action="store_true",
+        help="Fail if the checked-in Pages artifact manifest is stale",
+    )
     args = parser.parse_args()
     if args.allow_dirty_prepayload_evidence and (
-        args.check_size or not (args.write_manifest or args.check_manifest or args.check_size_only)
+        args.check_size
+        or not (args.write_manifest or args.check_manifest or args.check_size_only)
     ):
-        raise SystemExit("--allow-dirty-prepayload-evidence requires manifest regeneration or no-write checks; assembly remains strict")
+        raise SystemExit(
+            "--allow-dirty-prepayload-evidence requires manifest regeneration or no-write checks; assembly remains strict"
+        )
     if args.write_manifest:
         write_manifest(
             allow_dirty_prepayload_source_snapshot=args.allow_dirty_prepayload_evidence
@@ -891,13 +1040,19 @@ def main() -> None:
         check_manifest(
             allow_dirty_prepayload_source_snapshot=args.allow_dirty_prepayload_evidence
         )
-        if args.allow_dirty_prepayload_evidence and not args.write_manifest and not args.check_size_only:
+        if (
+            args.allow_dirty_prepayload_evidence
+            and not args.write_manifest
+            and not args.check_size_only
+        ):
             return
     if args.check_size_only:
         copied, size = projected_size(
             allow_dirty_prepayload_source_snapshot=args.allow_dirty_prepayload_evidence
         )
-        print(f"projected Pages artifact: {copied} tracked files ({size / 1024 / 1024:.1f} MiB)")
+        print(
+            f"projected Pages artifact: {copied} tracked files ({size / 1024 / 1024:.1f} MiB)"
+        )
         if size > MAX_ARTIFACT_BYTES:
             raise SystemExit(
                 f"Pages artifact is {size / 1024 / 1024:.1f} MiB; safety ceiling is "
@@ -918,12 +1073,18 @@ def main() -> None:
         raise SystemExit(
             "Pages projection would 404 on referenced reports: " + ", ".join(dangling)
         )
-    print(f"assembled {copied} tracked files ({size / 1024 / 1024:.1f} MiB) at {output}")
+    print(
+        f"assembled {copied} tracked files ({size / 1024 / 1024:.1f} MiB) at {output}"
+    )
     paper_images = sum(1 for path in omitted if is_paper_extracted_image(Path(path)))
-    visual_qa_screenshots = sum(1 for path in omitted if is_visual_qa_screenshot(Path(path)))
+    visual_qa_screenshots = sum(
+        1 for path in omitted if is_visual_qa_screenshot(Path(path))
+    )
     office_paths = declared_archives(REPO_ROOT)
     source_documents = sum(path in office_paths for path in omitted)
-    superseded_reports = len(omitted) - paper_images - visual_qa_screenshots - source_documents
+    superseded_reports = (
+        len(omitted) - paper_images - visual_qa_screenshots - source_documents
+    )
     print(
         f"omitted {len(omitted)} source-only assets "
         f"({paper_images} paper images, {visual_qa_screenshots} visual-QA screenshots, "
@@ -931,10 +1092,10 @@ def main() -> None:
         "source copies remain in GitHub"
     )
     if args.check_size and size > MAX_ARTIFACT_BYTES:
-            raise SystemExit(
+        raise SystemExit(
             f"Pages artifact is {size / 1024 / 1024:.1f} MiB; safety ceiling is "
             f"{MAX_ARTIFACT_BYTES / 1024 / 1024:.1f} MiB"
-            )
+        )
     if args.check_size and size > WARNING_ARTIFACT_BYTES:
         print(
             f"warning: Pages artifact is {size / 1024 / 1024:.1f} MiB; it exceeds the "

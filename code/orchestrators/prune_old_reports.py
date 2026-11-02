@@ -60,8 +60,10 @@ def _dir_size_bytes(path: Path) -> int:
 def _dated_subdirs(parent: Path) -> list[Path]:
     if not parent.is_dir():
         return []
-    return sorted((p for p in parent.iterdir() if p.is_dir() and DATE_RE.match(p.name)),
-                  key=lambda p: p.name)
+    return sorted(
+        (p for p in parent.iterdir() if p.is_dir() and DATE_RE.match(p.name)),
+        key=lambda p: p.name,
+    )
 
 
 def _legacy_root_set(value: str) -> Path:
@@ -74,13 +76,21 @@ def _legacy_root_set(value: str) -> Path:
     current = _dated_subdirs(REPORTS_DIR / "visual-qa")
     path = REPORTS_DIR / value
     if not current or value >= current[-1].name:
-        raise argparse.ArgumentTypeError("root set must predate the newest visual-QA set")
+        raise argparse.ArgumentTypeError(
+            "root set must predate the newest visual-QA set"
+        )
     if path.is_symlink() or not path.is_dir() or not (path / "manifest.json").is_file():
-        raise argparse.ArgumentTypeError("root set must be a regular directory with manifest.json")
-    if any(not (stat.S_ISREG(p.lstat().st_mode) or stat.S_ISDIR(p.lstat().st_mode))
-           or (p.is_file() and p.name != "manifest.json" and p.suffix != ".png")
-           for p in path.rglob("*")):
-        raise argparse.ArgumentTypeError("root set must contain only manifest.json and PNG captures")
+        raise argparse.ArgumentTypeError(
+            "root set must be a regular directory with manifest.json"
+        )
+    if any(
+        not (stat.S_ISREG(p.lstat().st_mode) or stat.S_ISDIR(p.lstat().st_mode))
+        or (p.is_file() and p.name != "manifest.json" and p.suffix != ".png")
+        for p in path.rglob("*")
+    ):
+        raise argparse.ArgumentTypeError(
+            "root set must contain only manifest.json and PNG captures"
+        )
     return path
 
 
@@ -94,7 +104,10 @@ def _archive_errors(repo_root: Path, rel: str, entry: dict) -> list[str]:
     if any(p.is_symlink() for p in (path, *path.parents)):
         return [f"symlink in archive candidate path: {rel}"]
     members = sorted(path.rglob("*"))
-    if any(not (stat.S_ISREG(p.lstat().st_mode) or stat.S_ISDIR(p.lstat().st_mode)) for p in members):
+    if any(
+        not (stat.S_ISREG(p.lstat().st_mode) or stat.S_ISDIR(p.lstat().st_mode))
+        for p in members
+    ):
         return [f"non-regular filesystem entry in archive candidate: {rel}"]
     files = [p for p in members if p.is_file()]
     manifest = path / "manifest.json"
@@ -108,16 +121,34 @@ def _archive_errors(repo_root: Path, rel: str, entry: dict) -> list[str]:
         match = re.fullmatch(r"git:([0-9a-f]{40})", location)
         if not match:
             match = re.fullmatch(
-                r"https://github\.com/docxology/docxology/tree/([0-9a-f]{40})/" + re.escape(rel), location)
+                r"https://github\.com/docxology/docxology/tree/([0-9a-f]{40})/"
+                + re.escape(rel),
+                location,
+            )
         if not match:
             return [f"archive must identify an immutable repository commit: {rel}"]
         result = subprocess.run(
             ["git", "ls-tree", "-r", "--full-tree", "-z", match[1], "--", rel],
-            cwd=repo_root, capture_output=True, check=True, timeout=30,
+            cwd=repo_root,
+            capture_output=True,
+            check=True,
+            timeout=30,
         )
         index = subprocess.run(
-            ["git", "diff", "--cached", "--no-ext-diff", "--quiet", match[1], "--", rel],
-            cwd=repo_root, capture_output=True, check=False, timeout=30,
+            [
+                "git",
+                "diff",
+                "--cached",
+                "--no-ext-diff",
+                "--quiet",
+                match[1],
+                "--",
+                rel,
+            ],
+            cwd=repo_root,
+            capture_output=True,
+            check=False,
+            timeout=30,
         )
         if index.returncode != 0:
             return [f"Git index differs from archive or is unavailable: {rel}"]
@@ -136,13 +167,23 @@ def _archive_errors(repo_root: Path, rel: str, entry: dict) -> list[str]:
         for file in files:
             data = file.read_bytes()
             actual[file.relative_to(repo_root).as_posix()] = hashlib.sha1(
-                b"blob " + str(len(data)).encode("ascii") + b"\0" + data).hexdigest()
-        if any(modes.get(p.relative_to(repo_root).as_posix()) !=
-               (b"100755" if p.stat().st_mode & stat.S_IXUSR else b"100644") for p in files):
+                b"blob " + str(len(data)).encode("ascii") + b"\0" + data
+            ).hexdigest()
+        if any(
+            modes.get(p.relative_to(repo_root).as_posix())
+            != (b"100755" if p.stat().st_mode & stat.S_IXUSR else b"100644")
+            for p in files
+        ):
             return [f"current file modes differ from archive: {rel}"]
         if not actual or actual != archived:
             return [f"current file set or bytes differ from archive: {rel}"]
-    except (OSError, ValueError, TypeError, KeyError, subprocess.SubprocessError) as exc:
+    except (
+        OSError,
+        ValueError,
+        TypeError,
+        KeyError,
+        subprocess.SubprocessError,
+    ) as exc:
         return [f"cannot verify archive for {rel}: {type(exc).__name__}"]
     return []
 
@@ -172,25 +213,48 @@ def _retention_entries(path: Path) -> dict[str, dict]:
 
 def _retention_errors(candidates: list[str], entries: dict[str, dict]) -> list[str]:
     """Return missing provenance fields before a destructive apply run."""
-    required = ("generated_at", "provenance_sha256", "replacement_location", "decision", "reviewed_by")
+    required = (
+        "generated_at",
+        "provenance_sha256",
+        "replacement_location",
+        "decision",
+        "reviewed_by",
+    )
     errors: list[str] = []
     for candidate in candidates:
         entry = entries.get(candidate)
         if not entry:
             errors.append(f"no retention record for {candidate}")
             continue
-        missing = [field for field in required if not isinstance(entry.get(field), str) or not entry[field].strip()]
+        missing = [
+            field
+            for field in required
+            if not isinstance(entry.get(field), str) or not entry[field].strip()
+        ]
         if missing:
-            errors.append(f"incomplete retention record for {candidate}: missing {', '.join(missing)}")
+            errors.append(
+                f"incomplete retention record for {candidate}: missing {', '.join(missing)}"
+            )
         elif entry.get("decision") != "remove-from-checkout":
-            errors.append(f"retention decision for {candidate} is not remove-from-checkout")
+            errors.append(
+                f"retention decision for {candidate} is not remove-from-checkout"
+            )
     return errors
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--apply", action="store_true", help="actually delete (default is dry-run)")
-    parser.add_argument("--keep", type=int, default=1, help="number of most-recent sets to retain per parent (default 1)")
+    parser = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    parser.add_argument(
+        "--apply", action="store_true", help="actually delete (default is dry-run)"
+    )
+    parser.add_argument(
+        "--keep",
+        type=int,
+        default=1,
+        help="number of most-recent sets to retain per parent (default 1)",
+    )
     parser.add_argument(
         "--retention-manifest",
         type=Path,
@@ -198,7 +262,11 @@ def main() -> int:
         help="Reviewed provenance records required for --apply.",
     )
     parser.add_argument(
-        "--legacy-root-set", type=_legacy_root_set, action="append", default=[], metavar="YYYY-MM-DD",
+        "--legacy-root-set",
+        type=_legacy_root_set,
+        action="append",
+        default=[],
+        metavar="YYYY-MM-DD",
         help="Explicitly review a superseded reports/YYYY-MM-DD screenshot copy (repeatable).",
     )
     args = parser.parse_args()
@@ -211,12 +279,14 @@ def main() -> int:
         references = report_references.referenced_report_paths(REPO_ROOT, strict=True)
     except report_references.ReferenceScanError as exc:
         raise SystemExit(f"Refusing incomplete reference scan: {exc}") from exc
+
     def referenced(rel: str) -> bool:
         return any(token == rel or token.startswith(rel + "/") for token in references)
+
     for name in SCREENSHOT_PARENTS:
         parent = REPORTS_DIR / name
         subdirs = _dated_subdirs(parent)
-        superseded = subdirs[:-args.keep] if len(subdirs) > args.keep else []
+        superseded = subdirs[: -args.keep] if len(subdirs) > args.keep else []
         for sub in superseded:
             rel = f"reports/{name}/{sub.name}"
             if referenced(rel):
@@ -224,7 +294,7 @@ def main() -> int:
                 continue
             size = _dir_size_bytes(sub)
             candidates.append((sub, rel, size))
-        kept = subdirs[-args.keep:] if subdirs else []
+        kept = subdirs[-args.keep :] if subdirs else []
         if kept:
             print(f"{name}: keeping {', '.join(p.name for p in kept)}")
 
@@ -256,14 +326,18 @@ def main() -> int:
         if args.apply:
             errors = _archive_errors(REPO_ROOT, rel, entries[rel])
             if errors:
-                raise SystemExit("Refusing changed archive candidate: " + "; ".join(errors))
+                raise SystemExit(
+                    "Refusing changed archive candidate: " + "; ".join(errors)
+                )
             shutil.rmtree(sub)
             print(f"removed {rel} ({size / 1_000_000:.1f} MB)")
         else:
             print(f"would remove {rel} ({size / 1_000_000:.1f} MB)")
 
     verb = "freed" if args.apply else "would free"
-    print(f"\n{verb} {freed / 1_000_000:.1f} MB across {removed} superseded screenshot set(s).")
+    print(
+        f"\n{verb} {freed / 1_000_000:.1f} MB across {removed} superseded screenshot set(s)."
+    )
     if not args.apply and removed:
         print("Re-run with --apply to delete, then `git add -A reports/` and commit.")
     return 0

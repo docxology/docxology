@@ -24,6 +24,7 @@ import subprocess
 from pathlib import Path
 from urllib.parse import urlsplit
 
+
 class ReferenceScanError(RuntimeError):
     """A destructive caller cannot establish complete reference protection."""
 
@@ -34,7 +35,9 @@ REPORT_PATH_PATTERN = re.compile(r"reports/[A-Za-z0-9._/-]+")
 # exception repository- and commit-specific; local/relative, same-origin, and
 # unpinned links continue to protect their report bytes.
 _URL_TOKEN = re.compile(r"(?<![A-Za-z0-9_=:/?&%.-])(?:https?:)?//[^\s\"'<>()[\]]+")
-_PINNED_ARCHIVE_PATH = re.compile(r"/docxology/docxology/(?:blob|tree)/[0-9a-f]{40}/reports/[A-Za-z0-9._/-]+")
+_PINNED_ARCHIVE_PATH = re.compile(
+    r"/docxology/docxology/(?:blob|tree)/[0-9a-f]{40}/reports/[A-Za-z0-9._/-]+"
+)
 
 
 def local_report_paths(text: str) -> set[str]:
@@ -43,17 +46,25 @@ def local_report_paths(text: str) -> set[str]:
     Parse complete URL spans so a nested GitHub URL in another host's query
     cannot disable local citation protection for the retention service.
     """
+
     def archive_span(match: re.Match[str]) -> str:
         token = match.group(0)
         try:
             parsed = urlsplit(token)
         except ValueError:
             return token
-        if (parsed.scheme == "https" and parsed.netloc == "github.com"
-                and _PINNED_ARCHIVE_PATH.fullmatch(parsed.path)):
+        if (
+            parsed.scheme == "https"
+            and parsed.netloc == "github.com"
+            and _PINNED_ARCHIVE_PATH.fullmatch(parsed.path)
+        ):
             return " "
         return token
-    return {match.group(0) for match in REPORT_PATH_PATTERN.finditer(_URL_TOKEN.sub(archive_span, text))}
+
+    return {
+        match.group(0)
+        for match in REPORT_PATH_PATTERN.finditer(_URL_TOKEN.sub(archive_span, text))
+    }
 
 
 _GIT_GREP_EXCLUDES = (
@@ -91,7 +102,15 @@ def referenced_report_paths(repo_root: Path, *, strict: bool = False) -> set[str
 def _git_grep_report_references(repo_root: Path, *, strict: bool = False) -> set[str]:
     try:
         result = subprocess.run(
-            ["git", "grep", "-hE", REPORT_PATH_PATTERN.pattern, "--", ".", *_GIT_GREP_EXCLUDES],
+            [
+                "git",
+                "grep",
+                "-hE",
+                REPORT_PATH_PATTERN.pattern,
+                "--",
+                ".",
+                *_GIT_GREP_EXCLUDES,
+            ],
             cwd=repo_root,
             capture_output=True,
             text=True,
@@ -109,7 +128,9 @@ def _git_grep_report_references(repo_root: Path, *, strict: bool = False) -> set
     return local_report_paths(result.stdout)
 
 
-def _unignored_working_tree_files(root: Path, *, strict: bool = False) -> list[Path] | None:
+def _unignored_working_tree_files(
+    root: Path, *, strict: bool = False
+) -> list[Path] | None:
     """Tracked plus untracked files that git does not ignore, or None without git.
 
     Ignored files (local tool caches, editor state, anything in ``.gitignore`` or
@@ -132,10 +153,16 @@ def _unignored_working_tree_files(root: Path, *, strict: bool = False) -> list[P
         if strict:
             raise ReferenceScanError("Git file inventory failed")
         return None
-    return [root / raw for raw in result.stdout.decode("utf-8", "surrogateescape").split("\0") if raw]
+    return [
+        root / raw
+        for raw in result.stdout.decode("utf-8", "surrogateescape").split("\0")
+        if raw
+    ]
 
 
-def _working_tree_report_references(repo_root: Path, *, strict: bool = False) -> set[str]:
+def _working_tree_report_references(
+    repo_root: Path, *, strict: bool = False
+) -> set[str]:
     """Return report tokens found in working-tree text files (tracked or not).
 
     Skips the same trees and inventory manifests as the tracked scan: those
@@ -162,16 +189,22 @@ def _working_tree_report_references(repo_root: Path, *, strict: bool = False) ->
             try:
                 mode = path.lstat().st_mode
             except OSError as exc:
-                raise ReferenceScanError(f"Unavailable reference source: {relative.as_posix()}") from exc
+                raise ReferenceScanError(
+                    f"Unavailable reference source: {relative.as_posix()}"
+                ) from exc
             if not stat.S_ISREG(mode):
-                raise ReferenceScanError(f"Non-regular reference source: {relative.as_posix()}")
+                raise ReferenceScanError(
+                    f"Non-regular reference source: {relative.as_posix()}"
+                )
         elif not path.is_file():
             continue
         try:
             text = path.read_text(encoding="utf-8", errors="ignore")
         except OSError as exc:
             if strict:
-                raise ReferenceScanError(f"Unreadable reference source: {relative.as_posix()}") from exc
+                raise ReferenceScanError(
+                    f"Unreadable reference source: {relative.as_posix()}"
+                ) from exc
             continue
         references.update(local_report_paths(text))
     return references

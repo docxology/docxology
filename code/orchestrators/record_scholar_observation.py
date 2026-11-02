@@ -106,7 +106,9 @@ class Refusal(Exception):
 def _non_negative_int(text: str) -> int:
     """argparse type: ASCII digits only, so booleans, signs and floats are refused."""
     if not re.fullmatch(r"[0-9]+", text):
-        raise argparse.ArgumentTypeError(f"expected a non-negative integer, got {text!r}")
+        raise argparse.ArgumentTypeError(
+            f"expected a non-negative integer, got {text!r}"
+        )
     return int(text)
 
 
@@ -131,13 +133,40 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Record a direct authenticated Google Scholar observation: update the snapshot and write its SHA-256-bound receipt."
     )
-    parser.add_argument("--as-of", required=True, type=_calendar_date, metavar="YYYY-MM-DD", help="calendar date of the observation")
-    parser.add_argument("--citations", required=True, type=_non_negative_int, help="all-time citations")
-    parser.add_argument("--h-index", required=True, type=_non_negative_int, help="all-time h-index")
-    parser.add_argument("--i10-index", required=True, type=_non_negative_int, help="all-time i10-index")
-    parser.add_argument("--since-2021-citations", required=True, type=_non_negative_int, help="since-2021 citations")
-    parser.add_argument("--since-2021-h-index", required=True, type=_non_negative_int, help="since-2021 h-index")
-    parser.add_argument("--since-2021-i10-index", required=True, type=_non_negative_int, help="since-2021 i10-index")
+    parser.add_argument(
+        "--as-of",
+        required=True,
+        type=_calendar_date,
+        metavar="YYYY-MM-DD",
+        help="calendar date of the observation",
+    )
+    parser.add_argument(
+        "--citations", required=True, type=_non_negative_int, help="all-time citations"
+    )
+    parser.add_argument(
+        "--h-index", required=True, type=_non_negative_int, help="all-time h-index"
+    )
+    parser.add_argument(
+        "--i10-index", required=True, type=_non_negative_int, help="all-time i10-index"
+    )
+    parser.add_argument(
+        "--since-2021-citations",
+        required=True,
+        type=_non_negative_int,
+        help="since-2021 citations",
+    )
+    parser.add_argument(
+        "--since-2021-h-index",
+        required=True,
+        type=_non_negative_int,
+        help="since-2021 h-index",
+    )
+    parser.add_argument(
+        "--since-2021-i10-index",
+        required=True,
+        type=_non_negative_int,
+        help="since-2021 i10-index",
+    )
     parser.add_argument(
         "--attest-direct-authenticated",
         action="store_true",
@@ -169,10 +198,21 @@ def build_parser() -> argparse.ArgumentParser:
             "add interface details such as which browser only if you attest them)"
         ),
     )
-    parser.add_argument("--history-note", help="descriptor for the new history entry (the 'current source of truth' suffix is added)")
+    parser.add_argument(
+        "--history-note",
+        help="descriptor for the new history entry (the 'current source of truth' suffix is added)",
+    )
     mode = parser.add_mutually_exclusive_group()
-    mode.add_argument("--dry-run", action="store_true", help="print old -> new values and the predicted snapshot SHA-256; write nothing")
-    mode.add_argument("--check", action="store_true", help="read-only: exit 0 only if the on-disk pair already records exactly this observation")
+    mode.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="print old -> new values and the predicted snapshot SHA-256; write nothing",
+    )
+    mode.add_argument(
+        "--check",
+        action="store_true",
+        help="read-only: exit 0 only if the on-disk pair already records exactly this observation",
+    )
     return parser
 
 
@@ -220,7 +260,9 @@ def _atomic_write(path: Path, data: bytes) -> None:
     if path.is_symlink():
         raise OSError(f"refusing to write through a symlink: {path.as_posix()}")
     path.parent.mkdir(parents=True, exist_ok=True)
-    descriptor, temporary_name = tempfile.mkstemp(dir=path.parent, prefix=f".{path.name}.", suffix=".tmp")
+    descriptor, temporary_name = tempfile.mkstemp(
+        dir=path.parent, prefix=f".{path.name}.", suffix=".tmp"
+    )
     temporary = Path(temporary_name)
     try:
         with os.fdopen(descriptor, "wb") as handle:
@@ -283,16 +325,30 @@ def _describe_changes(old: dict[str, Any], new: dict[str, Any]) -> list[str]:
     lines = [f"  as_of       {old.get('as_of')!r} -> {new.get('as_of')!r}"]
     for field in SCHOLAR_METRIC_FIELDS:
         lines.append(f"  {field:<11} {_delta(old.get(field), new.get(field))}")
-    old_since = old.get(SCHOLAR_SINCE_2021_KEY) if isinstance(old.get(SCHOLAR_SINCE_2021_KEY), dict) else {}
-    new_since = new.get(SCHOLAR_SINCE_2021_KEY) if isinstance(new.get(SCHOLAR_SINCE_2021_KEY), dict) else {}
+    old_since = (
+        old.get(SCHOLAR_SINCE_2021_KEY)
+        if isinstance(old.get(SCHOLAR_SINCE_2021_KEY), dict)
+        else {}
+    )
+    new_since = (
+        new.get(SCHOLAR_SINCE_2021_KEY)
+        if isinstance(new.get(SCHOLAR_SINCE_2021_KEY), dict)
+        else {}
+    )
     for field in SCHOLAR_METRIC_FIELDS:
-        lines.append(f"  since_2021.{field:<9} {_delta(old_since.get(field), new_since.get(field))}")
+        lines.append(
+            f"  since_2021.{field:<9} {_delta(old_since.get(field), new_since.get(field))}"
+        )
     old_history = old.get("history") or []
     new_history = new.get("history") or []
     if len(new_history) >= 2 and old_history:
-        lines.append(f"  history[{len(old_history) - 1}].note  {old_history[-1].get('note')!r}")
+        lines.append(
+            f"  history[{len(old_history) - 1}].note  {old_history[-1].get('note')!r}"
+        )
         lines.append(f"      -> {new_history[-2].get('note')!r}")
-        lines.append(f"  history[+1]  {json.dumps(new_history[-1], ensure_ascii=False)}")
+        lines.append(
+            f"  history[+1]  {json.dumps(new_history[-1], ensure_ascii=False)}"
+        )
     return lines
 
 
@@ -301,14 +357,20 @@ def _warnings(old: dict[str, Any], new: dict[str, Any]) -> list[str]:
     return [
         f"warning: {field} decreased ({old[field]} -> {new[field]}); recording anyway"
         for field in SCHOLAR_METRIC_FIELDS
-        if type(old.get(field)) is int and type(new.get(field)) is int and new[field] < old[field]
+        if type(old.get(field)) is int
+        and type(new.get(field)) is int
+        and new[field] < old[field]
     ]
 
 
-def _check(snapshot: dict[str, Any], observation: dict[str, Any], pair_errors: list[str]) -> int:
+def _check(
+    snapshot: dict[str, Any], observation: dict[str, Any], pair_errors: list[str]
+) -> int:
     recorded = observation_matches_snapshot(snapshot, observation)
     if recorded and not pair_errors:
-        print(f"ok: snapshot and receipt already record the observation as of {observation['as_of']}")
+        print(
+            f"ok: snapshot and receipt already record the observation as of {observation['as_of']}"
+        )
         return 0
     if not recorded:
         print(
@@ -335,7 +397,9 @@ def run(args: argparse.Namespace, now: datetime) -> int:
     if args.check:
         return _check(snapshot, observation, pair_errors)
     if recorded and not pair_errors:
-        print(f"already recorded: snapshot and receipt hold the observation as of {observation['as_of']}; nothing written")
+        print(
+            f"already recorded: snapshot and receipt hold the observation as of {observation['as_of']}; nothing written"
+        )
         return 0
 
     as_of = parse_observation_date(observation["as_of"])
@@ -369,9 +433,13 @@ def run(args: argparse.Namespace, now: datetime) -> int:
             # Crash recovery: the snapshot already holds this observation, so only the
             # receipt is regenerated, bound to the snapshot bytes exactly as they sit on disk.
             if args.method is not None and args.method != snapshot.get("method"):
-                raise Refusal("--method differs from the recorded snapshot method; receipt-only recovery cannot change it")
+                raise Refusal(
+                    "--method differs from the recorded snapshot method; receipt-only recovery cannot change it"
+                )
             snapshot_bytes = snapshot_raw
-            receipt_bytes = build_receipt_bytes(snapshot_bytes, verified_at=verified_text, source=args.source)
+            receipt_bytes = build_receipt_bytes(
+                snapshot_bytes, verified_at=verified_text, source=args.source
+            )
         else:
             snapshot_bytes, receipt_bytes = build_observation_artifacts(
                 snapshot,
@@ -385,14 +453,20 @@ def run(args: argparse.Namespace, now: datetime) -> int:
         raise Refusal(str(exc)) from exc
     candidate_errors = _prevalidate(snapshot_bytes, receipt_bytes)
     if candidate_errors:
-        raise Refusal("candidate pair failed validation: " + "; ".join(candidate_errors))
+        raise Refusal(
+            "candidate pair failed validation: " + "; ".join(candidate_errors)
+        )
 
     new_snapshot = json.loads(snapshot_bytes.decode("utf-8"))
     digest = sha256_bytes(snapshot_bytes)
     heading = "receipt-only recovery" if recorded else "observation"
-    print(f"Scholar {heading} as of {observation['as_of']} (verified_at {verified_text})")
+    print(
+        f"Scholar {heading} as of {observation['as_of']} (verified_at {verified_text})"
+    )
     if recorded:
-        print("  snapshot already holds this observation; only the receipt is regenerated")
+        print(
+            "  snapshot already holds this observation; only the receipt is regenerated"
+        )
         if verified_reused:
             print("  verified_at reused from the existing receipt")
         if args.history_note is not None:
@@ -425,7 +499,10 @@ def run(args: argparse.Namespace, now: datetime) -> int:
             _atomic_write(path, content)
             replaced[path] = originals[path]
         failures = _validate_pair(REPO_ROOT)
-        if SNAPSHOT.read_bytes() != snapshot_bytes or RECEIPT.read_bytes() != receipt_bytes:
+        if (
+            SNAPSHOT.read_bytes() != snapshot_bytes
+            or RECEIPT.read_bytes() != receipt_bytes
+        ):
             failures.append("on-disk bytes differ from the bytes written")
         committed = not failures
     except OSError as exc:
@@ -448,10 +525,16 @@ def run(args: argparse.Namespace, now: datetime) -> int:
                 f"{SCHOLAR_RECEIPT_RELATIVE_PATH.as_posix()}). Confirm with --check."
             )
         if not replaced:
-            raise Refusal(f"recording failed before any file was replaced; both files are unchanged: {reason}")
-        raise Refusal(f"recording failed and every replaced file was restored: {reason}")
+            raise Refusal(
+                f"recording failed before any file was replaced; both files are unchanged: {reason}"
+            )
+        raise Refusal(
+            f"recording failed and every replaced file was restored: {reason}"
+        )
 
-    print(f"wrote {SCHOLAR_SNAPSHOT_RELATIVE_PATH.as_posix()} and {SCHOLAR_RECEIPT_RELATIVE_PATH.as_posix()}")
+    print(
+        f"wrote {SCHOLAR_SNAPSHOT_RELATIVE_PATH.as_posix()} and {SCHOLAR_RECEIPT_RELATIVE_PATH.as_posix()}"
+    )
     print("next steps:")
     for command in NEXT_STEPS:
         print(f"  {command}")

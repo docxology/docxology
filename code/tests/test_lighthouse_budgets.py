@@ -60,8 +60,10 @@ def lighthouse_available() -> bool:
     if executable is None:
         return False
     try:
-        result = subprocess.run([executable, "--version"], capture_output=True, text=True, timeout=10)
-    except (OSError, subprocess.TimeoutExpired):
+        result = subprocess.run(
+            [executable, "--version"], capture_output=True, text=True, timeout=10
+        )
+    except OSError, subprocess.TimeoutExpired:
         return False
     return result.returncode == 0 and result.stdout.strip() == LIGHTHOUSE_VERSION
 
@@ -69,31 +71,48 @@ def lighthouse_available() -> bool:
 def run_lighthouse(base_url: str, path: str, tmp_path: Path) -> dict:
     """Run and retain one report; a tool/report failure is never a green skip."""
     executable = shutil.which("lighthouse")
-    assert executable, f"Install lighthouse@{LIGHTHOUSE_VERSION} on PATH before measuring"
+    assert executable, (
+        f"Install lighthouse@{LIGHTHOUSE_VERSION} on PATH before measuring"
+    )
     command = [executable]
     try:
         result = subprocess.run(
-            command + [
-                f"{base_url}/{path}", "--output=json", "--quiet",
+            command
+            + [
+                f"{base_url}/{path}",
+                "--output=json",
+                "--quiet",
                 "--only-categories=performance,accessibility,seo",
                 # This artifact does not contribute to the category audits.
                 # Avoid rasterizing long catalog pages solely for diagnostics.
                 "--disable-full-page-screenshot",
                 "--chrome-flags=--headless=new --no-sandbox",
             ],
-            capture_output=True, text=True, timeout=180,
+            capture_output=True,
+            text=True,
+            timeout=180,
         )
     except (OSError, subprocess.TimeoutExpired) as exc:
-        raise AssertionError(f"Lighthouse could not complete for {path}: {exc}") from exc
+        raise AssertionError(
+            f"Lighthouse could not complete for {path}: {exc}"
+        ) from exc
     if result.returncode != 0:
-        raise AssertionError(f"Lighthouse failed for {path} (exit {result.returncode}): {result.stderr[-2000:]}")
+        raise AssertionError(
+            f"Lighthouse failed for {path} (exit {result.returncode}): {result.stderr[-2000:]}"
+        )
     try:
         payload = json.loads(result.stdout)
     except json.JSONDecodeError as exc:
-        raise AssertionError(f"Lighthouse returned invalid JSON for {path}: {result.stdout[:200]}") from exc
-    report_dir = Path(os.environ.get("DOCXOLOGY_LIGHTHOUSE_REPORT_DIR", str(tmp_path / "lighthouse"))) / path.replace("/", "--")
+        raise AssertionError(
+            f"Lighthouse returned invalid JSON for {path}: {result.stdout[:200]}"
+        ) from exc
+    report_dir = Path(
+        os.environ.get("DOCXOLOGY_LIGHTHOUSE_REPORT_DIR", str(tmp_path / "lighthouse"))
+    ) / path.replace("/", "--")
     report_dir.mkdir(parents=True, exist_ok=True)
-    report_path = report_dir / f"run-{len(list(report_dir.glob('run-*.json'))) + 1:02d}.json"
+    report_path = (
+        report_dir / f"run-{len(list(report_dir.glob('run-*.json'))) + 1:02d}.json"
+    )
     report_path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     if not isinstance(payload, dict) or payload.get("runtimeError"):
         raise AssertionError(f"Lighthouse runtime error for {path}: {payload!r}"[:2000])
@@ -109,8 +128,15 @@ def category_scores(payload: dict) -> dict[str, int]:
     for category in BUDGETS:
         entry = categories.get(category)
         score = entry.get("score") if isinstance(entry, dict) else None
-        if isinstance(score, bool) or not isinstance(score, (int, float)) or not math.isfinite(score) or not 0 <= score <= 1:
-            raise AssertionError(f"Lighthouse category {category!r} has no valid score: {score!r}")
+        if (
+            isinstance(score, bool)
+            or not isinstance(score, (int, float))
+            or not math.isfinite(score)
+            or not 0 <= score <= 1
+        ):
+            raise AssertionError(
+                f"Lighthouse category {category!r} has no valid score: {score!r}"
+            )
         scores[category] = round(score * 100)
     return scores
 
@@ -165,9 +191,13 @@ def assert_gzip_parity(base_url: str, *, assets=PARITY_ASSETS, transport=None) -
         if (encoding or "").strip().lower() != "gzip":
             problems.append(f"{asset}: Content-Encoding={encoding!r}, expected 'gzip'")
         vary_values = headers.get_all("Vary") or []
-        vary = {token.strip().lower() for value in vary_values for token in value.split(",")}
+        vary = {
+            token.strip().lower() for value in vary_values for token in value.split(",")
+        }
         if "accept-encoding" not in vary:
-            problems.append(f"{asset}: Vary={', '.join(vary_values) or None!r}, expected it to include 'Accept-Encoding'")
+            problems.append(
+                f"{asset}: Vary={', '.join(vary_values) or None!r}, expected it to include 'Accept-Encoding'"
+            )
     assert not problems, (
         "Lighthouse fixture does not match GitHub Pages compression parity "
         f"(scores would not be comparable to production): {'; '.join(problems)}"
@@ -178,17 +208,26 @@ def assert_gzip_parity(base_url: str, *, assets=PARITY_ASSETS, transport=None) -
 @pytest.mark.lighthouse
 def test_lighthouse_budgets(tmp_path: Path, record_property) -> None:
     if not lighthouse_available():
-        pytest.fail(f"Lighthouse {LIGHTHOUSE_VERSION} is required on PATH but unavailable or the wrong version")
+        pytest.fail(
+            f"Lighthouse {LIGHTHOUSE_VERSION} is required on PATH but unavailable or the wrong version"
+        )
 
     base_url, httpd = serve_copy(tmp_path)
     failures: list[str] = []
     try:
         assert_gzip_parity(base_url)
         for path in (*LANE_PAGES, *EXPLORATION_PAGES):
+
             def floor_for(category):
                 if path in EXPLORATION_PAGES:
                     return BUDGETS[category]
-                return min(BUDGETS[category], BASELINE.get(path, {}).get(category, HARD_FLOOR.get(category, BUDGETS[category])))
+                return min(
+                    BUDGETS[category],
+                    BASELINE.get(path, {}).get(
+                        category, HARD_FLOOR.get(category, BUDGETS[category])
+                    ),
+                )
+
             scores = category_scores(run_lighthouse(base_url, path, tmp_path))
             if any(score < floor_for(category) for category, score in scores.items()):
                 # Below floor on the first run: re-run twice and gate the
@@ -197,11 +236,23 @@ def test_lighthouse_budgets(tmp_path: Path, record_property) -> None:
                     category_scores(run_lighthouse(base_url, path, tmp_path))
                     for _ in range(2)
                 ]
-                scores = {category: median([run[category] for run in runs]) for category in BUDGETS}
+                scores = {
+                    category: median([run[category] for run in runs])
+                    for category in BUDGETS
+                }
                 gated = " (median of 3 runs)"
             else:
                 gated = ""
-            record_property(f"lighthouse:{path}", json.dumps({"scores": scores, "aspirational": BUDGETS, "aggregation": gated or "single run"}))
+            record_property(
+                f"lighthouse:{path}",
+                json.dumps(
+                    {
+                        "scores": scores,
+                        "aspirational": BUDGETS,
+                        "aggregation": gated or "single run",
+                    }
+                ),
+            )
             print(f"Lighthouse {path}: {scores}{gated}")
             for category, score in scores.items():
                 floor = floor_for(category)

@@ -89,15 +89,43 @@ class PaperMetadata:
     def from_dict(cls, data: dict[str, Any]) -> "PaperMetadata":
         """Create PaperMetadata from a dictionary, accepting any keys."""
         known_fields = {
-            "title", "version", "doi", "doi_url", "artifact_doi", "artifact_doi_url",
-            "zenodo_record", "record_id",
-            "publication_date", "resource_type", "domain", "type", "creators",
-            "description", "abstract", "keywords", "files", "primary_pdf", "related_resources",
-            "venue", "github_repo", "github_release_url", "release_tag", "release_name",
-            "pdf_sha256", "pairing_confidence", "pairing_evidence", "checked_at",
-            "methods", "key_findings", "related_papers", "related_software",
-            "citation_bibtex", "citation_apa", "license_spdx",
-            "reproducibility_artifacts", "dataset_references",
+            "title",
+            "version",
+            "doi",
+            "doi_url",
+            "artifact_doi",
+            "artifact_doi_url",
+            "zenodo_record",
+            "record_id",
+            "publication_date",
+            "resource_type",
+            "domain",
+            "type",
+            "creators",
+            "description",
+            "abstract",
+            "keywords",
+            "files",
+            "primary_pdf",
+            "related_resources",
+            "venue",
+            "github_repo",
+            "github_release_url",
+            "release_tag",
+            "release_name",
+            "pdf_sha256",
+            "pairing_confidence",
+            "pairing_evidence",
+            "checked_at",
+            "methods",
+            "key_findings",
+            "related_papers",
+            "related_software",
+            "citation_bibtex",
+            "citation_apa",
+            "license_spdx",
+            "reproducibility_artifacts",
+            "dataset_references",
         }
         init_kwargs = {}
         for key in known_fields:
@@ -109,7 +137,9 @@ class PaperMetadata:
         """Serialize to dictionary, omitting None/empty values."""
         result = asdict(self)
         # Remove None values and empty collections
-        result = {k: v for k, v in result.items() if v is not None and v != [] and v != {}}
+        result = {
+            k: v for k, v in result.items() if v is not None and v != [] and v != {}
+        }
         return result
 
     def validate(self) -> list[str]:

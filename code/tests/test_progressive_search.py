@@ -1,4 +1,5 @@
 """Execute the shared client loader across fetch, revision, and data boundaries."""
+
 from __future__ import annotations
 
 import json
@@ -14,7 +15,9 @@ JS = Path(__file__).resolve().parents[2] / "js" / "search-utils.js"
 def run_loader(scenario: str) -> None:
     node = shutil.which("node")
     if node is None:
-        pytest.fail("Selected JavaScript contract requires the node interpreter on PATH")
+        pytest.fail(
+            "Selected JavaScript contract requires the node interpreter on PATH"
+        )
     program = r"""
 const assert = require('node:assert/strict');
 const vm = require('node:vm');
@@ -35,9 +38,17 @@ global.fetch = async (path, options) => {
  return {ok:!failing.has(path), status:failing.has(path)?503:200, json:async()=>structuredClone(payloads[path])};
 };
 """
-    program += "vm.runInThisContext(" + json.dumps(JS.read_text(encoding="utf-8")) + ");\n"
-    program += "(async () => {\n" + scenario + "\n})().catch(error => { console.error(error); process.exitCode=1; });\n"
-    result = subprocess.run([node, "-"], input=program, capture_output=True, text=True, timeout=15)
+    program += (
+        "vm.runInThisContext(" + json.dumps(JS.read_text(encoding="utf-8")) + ");\n"
+    )
+    program += (
+        "(async () => {\n"
+        + scenario
+        + "\n})().catch(error => { console.error(error); process.exitCode=1; });\n"
+    )
+    result = subprocess.run(
+        [node, "-"], input=program, capture_output=True, text=True, timeout=15
+    )
     assert result.returncode == 0, result.stderr
 
 
@@ -153,21 +164,28 @@ assert.equal(calls.filter(path=>path==='/search-index-core.json').length,2);
 """)
 
 
-@pytest.mark.parametrize("mutation", [
-    "segment.generated_at = 'older-revision'",
-    "segment.type = 'video'",
-    "segment.items = []",
-    "segment.items.push(segment.items[0])",
-    "segment.items[0].id = 'work:missing'",
-    "segment.items[0].content = null",
-])
+@pytest.mark.parametrize(
+    "mutation",
+    [
+        "segment.generated_at = 'older-revision'",
+        "segment.type = 'video'",
+        "segment.items = []",
+        "segment.items.push(segment.items[0])",
+        "segment.items[0].id = 'work:missing'",
+        "segment.items[0].content = null",
+    ],
+)
 def test_rejects_mixed_revision_or_incomplete_segment(mutation):
-    run_loader("""
+    run_loader(
+        """
 const segment = payloads['/search-index-content-work.json'];
-""" + mutation + """;
+"""
+        + mutation
+        + """;
 await assert.rejects(DocxologySearch.loadContent(['work']));
 assert.equal(DocxologySearch.getItems()[0].content, undefined);
-""")
+"""
+    )
 
 
 def test_rejects_duplicate_core_entries_and_unsupported_segment_requests():

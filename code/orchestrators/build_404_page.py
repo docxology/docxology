@@ -53,8 +53,7 @@ TOP_DESTINATIONS: tuple[tuple[str, str], ...] = (
 def render() -> str:
     footer_stamp = footer_build_stamp_html()
     links = "".join(
-        f'<a href="/{path}">{label}</a>'
-        for label, path in TOP_DESTINATIONS
+        f'<a href="/{path}">{label}</a>' for label, path in TOP_DESTINATIONS
     )
     head_extras = HEAD_EXTRAS.replace(CSP_META_TAG, CSP_META_TAG).replace(
         REL_ME_LINKS.strip(), REL_ME_LINKS.strip()
@@ -137,7 +136,9 @@ def render() -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if 404.html is stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if 404.html is stale"
+    )
     args = parser.parse_args()
     existing = OUT.read_text(encoding="utf-8") if OUT.exists() else None
     content = reuse_on_disk_stamp(render(), existing)

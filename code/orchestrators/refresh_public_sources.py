@@ -30,7 +30,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 from docxology_tools.report_paths import source_commit, source_worktree_state  # noqa: E402
 
 ORCID = "0000-0001-6232-9096"
-USER_AGENT = "docxology-public-source-refresh/1.0 (https://github.com/docxology/docxology)"
+USER_AGENT = (
+    "docxology-public-source-refresh/1.0 (https://github.com/docxology/docxology)"
+)
 # Connection-level failures worth a bounded retry. ConnectionError covers resets,
 # aborts, refusals and broken pipes (ConnectionResetError, ConnectionAbortedError,
 # http.client.RemoteDisconnected, ...); TimeoutError covers a socket timeout raised
@@ -77,7 +79,10 @@ def expected_check_labels() -> tuple[str, ...]:
         "Zenodo record 19897664",
         "Zenodo record 14108992",
         "Zenodo record 17982447",
-        *(f"GitHub repo ActiveInferenceInstitute/{repo}" for repo in SELECTED_AII_REPOS),
+        *(
+            f"GitHub repo ActiveInferenceInstitute/{repo}"
+            for repo in SELECTED_AII_REPOS
+        ),
     )
 
 
@@ -99,7 +104,9 @@ def _backoff_delay(attempt: int, retry_after: str | None = None) -> float:
     return 2.0 * (attempt + 1)
 
 
-def fetch_json(url: str, *, accept: str = "application/json", timeout: int = 30, retries: int = 2) -> dict[str, Any]:
+def fetch_json(
+    url: str, *, accept: str = "application/json", timeout: int = 30, retries: int = 2
+) -> dict[str, Any]:
     """GET `url` as JSON with a bounded retry budget (`retries` extra attempts).
 
     Retried, with the `_backoff_delay` schedule (2s, 4s, ...; a finite numeric
@@ -130,7 +137,9 @@ def fetch_json(url: str, *, accept: str = "application/json", timeout: int = 30,
             # Listed before TRANSIENT_ERRORS on purpose: a 403/404 is a verdict, not a flaky connection.
             if exc.code not in RETRYABLE_HTTP_STATUS or attempt >= retries:
                 raise
-            retry_after = exc.headers.get("Retry-After") if exc.headers is not None else None
+            retry_after = (
+                exc.headers.get("Retry-After") if exc.headers is not None else None
+            )
             time.sleep(_backoff_delay(attempt, retry_after))
         except TRANSIENT_ERRORS:
             # Proxies and CDNs reset or truncate connections intermittently; a missed
@@ -146,8 +155,15 @@ def safe_fetch(label: str, url: str, extractor) -> dict[str, Any]:
         data = fetch_json(url)
         result = extractor(data)
         return {"label": label, "url": url, "ok": True, "result": result}
-    except Exception as exc:  # pragma: no cover - network failure details are data, not code behavior
-        return {"label": label, "url": url, "ok": False, "error": f"{type(exc).__name__}: {exc}"}
+    except (
+        Exception
+    ) as exc:  # pragma: no cover - network failure details are data, not code behavior
+        return {
+            "label": label,
+            "url": url,
+            "ok": False,
+            "error": f"{type(exc).__name__}: {exc}",
+        }
 
 
 def github_user_facts(data: dict[str, Any]) -> dict[str, Any]:
@@ -236,7 +252,9 @@ def orcid_works() -> dict[str, Any]:
 
 def zenodo_query_url(q: str) -> str:
     """Search URL whose single hit is the newest deposit, so first_title/first_doi are deterministic."""
-    return "https://zenodo.org/api/records?" + urllib.parse.urlencode({"q": q, "size": 1, "sort": "mostrecent"})
+    return "https://zenodo.org/api/records?" + urllib.parse.urlencode(
+        {"q": q, "size": 1, "sort": "mostrecent"}
+    )
 
 
 def zenodo_query(label: str, q: str) -> dict[str, Any]:
@@ -268,10 +286,15 @@ def zenodo_record(record_id: str) -> dict[str, Any]:
             "title": data.get("metadata", {}).get("title"),
             "doi": data.get("doi"),
             "publication_date": data.get("metadata", {}).get("publication_date"),
-            "resource_type": data.get("metadata", {}).get("resource_type", {}).get("title"),
-            "creators": [c.get("name") for c in data.get("metadata", {}).get("creators", [])],
+            "resource_type": data.get("metadata", {})
+            .get("resource_type", {})
+            .get("title"),
+            "creators": [
+                c.get("name") for c in data.get("metadata", {}).get("creators", [])
+            ],
         },
     )
+
 
 def build_report() -> dict[str, Any]:
     today = dt.datetime.now(dt.timezone.utc).date().isoformat()
@@ -282,7 +305,10 @@ def build_report() -> dict[str, Any]:
         lambda: pubmed_exact_author(),
         lambda: europe_pmc_exact_author(),
         lambda: crossref_orcid(),
-        lambda: zenodo_query("Zenodo exact-name creator records", 'metadata.creators.person_or_org.name:"Friedman, Daniel Ari"'),
+        lambda: zenodo_query(
+            "Zenodo exact-name creator records",
+            'metadata.creators.person_or_org.name:"Friedman, Daniel Ari"',
+        ),
         lambda: zenodo_query(
             "Zenodo ORCID-linked records",
             f'metadata.creators.person_or_org.identifiers.identifier:"{ORCID}"',
@@ -292,7 +318,10 @@ def build_report() -> dict[str, Any]:
         lambda: zenodo_record("19897664"),
         lambda: zenodo_record("14108992"),
         lambda: zenodo_record("17982447"),
-        *(lambda repo=repo: github_repo("ActiveInferenceInstitute", repo) for repo in SELECTED_AII_REPOS),
+        *(
+            lambda repo=repo: github_repo("ActiveInferenceInstitute", repo)
+            for repo in SELECTED_AII_REPOS
+        ),
     ]
     with ThreadPoolExecutor(max_workers=8) as pool:
         checks = list(pool.map(lambda fn: fn(), tasks))
@@ -314,22 +343,38 @@ def build_report() -> dict[str, Any]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", help="Optional output path. Defaults to reports/public_source_snapshot_DATE.json")
-    parser.add_argument("--facts-output", help="Optional path for normalized facts used by CI drift comparisons")
+    parser.add_argument(
+        "--output",
+        help="Optional output path. Defaults to reports/public_source_snapshot_DATE.json",
+    )
+    parser.add_argument(
+        "--facts-output",
+        help="Optional path for normalized facts used by CI drift comparisons",
+    )
     args = parser.parse_args()
 
     report = build_report()
-    out = Path(args.output) if args.output else REPO_ROOT / "reports" / f"public_source_snapshot_{report['date']}.json"
+    out = (
+        Path(args.output)
+        if args.output
+        else REPO_ROOT / "reports" / f"public_source_snapshot_{report['date']}.json"
+    )
     if not out.is_absolute():
         out = REPO_ROOT / out
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    out.write_text(
+        json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
     if args.facts_output:
         facts_out = Path(args.facts_output)
         if not facts_out.is_absolute():
             facts_out = REPO_ROOT / facts_out
         facts_out.parent.mkdir(parents=True, exist_ok=True)
-        facts_out.write_text(json.dumps(report["facts"], indent=2, sort_keys=True, ensure_ascii=False) + "\n", encoding="utf-8")
+        facts_out.write_text(
+            json.dumps(report["facts"], indent=2, sort_keys=True, ensure_ascii=False)
+            + "\n",
+            encoding="utf-8",
+        )
     failures = [c["label"] for c in report["checks"] if not c.get("ok")]
     try:
         shown = out.relative_to(REPO_ROOT)

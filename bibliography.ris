@@ -3154,3 +3154,27 @@ KW  - Computational
 KW  - Paper
 N1  - Catalog row 230; docs: papers/2026_ObserversReadUniverse/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method
+T2  - Zenodo
+DO  - 10.5281/zenodo.22409418
+UR  - https://doi.org/10.5281/zenodo.22409418
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 231; docs: papers/2026_ActiveInferenceLanguage/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - GNN-based active inference for Battleship
+T2  - Zenodo
+DO  - 10.5281/zenodo.23670187
+UR  - https://doi.org/10.5281/zenodo.23670187
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 232; docs: papers/2026_GNNBasedActive/
+ER  -

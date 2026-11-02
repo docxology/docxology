@@ -23,7 +23,14 @@ def test_publications_ssr_budget_exception_is_explicit_and_bounded():
 
 
 def test_asset_inventory_records_baseline_and_exception():
-    publications = next(item for item in audit_assets.iter_assets() if item["path"] == "publications.html")
+    publications = next(
+        item
+        for item in audit_assets.iter_assets()
+        if item["path"] == "publications.html"
+    )
     assert publications["baseline_budget_bytes"] == 500_000
     assert publications["budget_bytes"] == 600_000
-    assert publications["budget_exception"] == audit_assets.ASSET_BUDGET_EXCEPTIONS["publications.html"]
+    assert (
+        publications["budget_exception"]
+        == audit_assets.ASSET_BUDGET_EXCEPTIONS["publications.html"]
+    )

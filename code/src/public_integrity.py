@@ -6,7 +6,7 @@ import re
 from pathlib import Path
 
 LOCAL_PATH_RE = re.compile(
-    r"(?:/Users/[A-Za-z0-9._-]+/|/home/[A-Za-z0-9._-]+/|[A-Za-z]:\\\\Users\\\\[A-Za-z0-9._-]+\\\\)"
+    r"""(?<![\w:/])(?:/(?:Users|home|Volumes)/|[A-Za-z]:[\\/]+Users[\\/]+|~/)[^\s`"'<>()[\]{}]+"""
 )
 SECRET_PATTERNS = (
     re.compile(r"-----BEGIN (?:RSA |OPENSSH |EC |DSA )?PRIVATE KEY-----"),
@@ -37,7 +37,14 @@ CV_PUBLIC_FILES = (
 )
 
 
-def scan_public_files(repo_root: Path, paths: tuple[str, ...] = CV_PUBLIC_FILES) -> list[str]:
+def redact_local_paths(text: str) -> str:
+    """Remove local filesystem paths from public prose while preserving URLs."""
+    return LOCAL_PATH_RE.sub("[local path redacted]", text)
+
+
+def scan_public_files(
+    repo_root: Path, paths: tuple[str, ...] = CV_PUBLIC_FILES
+) -> list[str]:
     """Return privacy and unsafe-URL violations in public CV surfaces."""
     errors: list[str] = []
     for relative in paths:
@@ -58,7 +65,12 @@ def scan_public_files(repo_root: Path, paths: tuple[str, ...] = CV_PUBLIC_FILES)
     return errors
 
 
-def validate_public_files(repo_root: Path, paths: tuple[str, ...] = CV_PUBLIC_FILES) -> None:
+def validate_public_files(
+    repo_root: Path, paths: tuple[str, ...] = CV_PUBLIC_FILES
+) -> None:
     errors = scan_public_files(repo_root, paths)
     if errors:
-        raise SystemExit("Public integrity violations:\n" + "\n".join(f"  - {error}" for error in errors))
+        raise SystemExit(
+            "Public integrity violations:\n"
+            + "\n".join(f"  - {error}" for error in errors)
+        )

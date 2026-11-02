@@ -21,7 +21,9 @@ class _StaticFetcher:
         self.result = result
         self.calls: list[tuple[str, str, object]] = []
 
-    def __call__(self, channel_url: str, channel_id: str, *, tabs: object = None) -> yf.ChannelFetchResult:
+    def __call__(
+        self, channel_url: str, channel_id: str, *, tabs: object = None
+    ) -> yf.ChannelFetchResult:
         self.calls.append((channel_url, channel_id, tabs))
         return self.result
 
@@ -51,10 +53,14 @@ def _video(video_id: str = "video") -> dict:
     }
 
 
-def _channel_result(*, complete: bool, videos: tuple[dict, ...]) -> yf.ChannelFetchResult:
+def _channel_result(
+    *, complete: bool, videos: tuple[dict, ...]
+) -> yf.ChannelFetchResult:
     if complete:
         tabs = tuple(
-            yf.TabFetchResult(tab=tab, mode=mode, videos=videos if tab == "videos" else ())
+            yf.TabFetchResult(
+                tab=tab, mode=mode, videos=videos if tab == "videos" else ()
+            )
             for tab, mode in yf.TABS
         )
     else:
@@ -66,7 +72,9 @@ def _channel_result(*, complete: bool, videos: tuple[dict, ...]) -> yf.ChannelFe
         )
         tabs = (
             yf.TabFetchResult(tab="videos", mode="full", videos=videos),
-            yf.TabFetchResult(tab="streams", mode="approximate", videos=(), failure=failure),
+            yf.TabFetchResult(
+                tab="streams", mode="approximate", videos=(), failure=failure
+            ),
             yf.TabFetchResult(tab="shorts", mode="approximate", videos=()),
         )
     return yf.ChannelFetchResult(
@@ -198,25 +206,47 @@ def test_complete_but_empty_exact_refresh_preserves_existing_cache(tmp_path: Pat
     assert output_path.read_text(encoding="utf-8") == original
 
 
-def test_full_refresh_preserves_approximate_dates_but_allows_exact_corrections(tmp_path):
+def test_full_refresh_preserves_approximate_dates_but_allows_exact_corrections(
+    tmp_path,
+):
     output = tmp_path / "channel.json"
     cached = [_video("stream"), _video("exact"), _video("removed")]
     output.write_text(json.dumps({"videos": cached}))
-    approximate = [{**_video("stream"), "upload_date": "20261016", "year": 2026,
-                    "month": 10, "day": 16}, _video("new")]
-    exact = {**_video("exact"), "upload_date": "20260102", "year": 2026,
-             "month": 1, "day": 2}
+    approximate = [
+        {
+            **_video("stream"),
+            "upload_date": "20261016",
+            "year": 2026,
+            "month": 10,
+            "day": 16,
+        },
+        _video("new"),
+    ]
+    exact = {
+        **_video("exact"),
+        "upload_date": "20260102",
+        "year": 2026,
+        "month": 1,
+        "day": 2,
+    }
     # A flat duplicate must not override dates supplied by full metadata.
     flat_duplicate = {**_video("exact"), "upload_date": "20230101", "year": 2023}
     fetch = yf.ChannelFetchResult(
-        channel_url="https://example.test/@channel", channel_id="personal",
+        channel_url="https://example.test/@channel",
+        channel_id="personal",
         videos=tuple([*approximate, flat_duplicate]),
-        tabs=(yf.TabFetchResult(tab="videos", mode="full", videos=(exact,)),
-              yf.TabFetchResult(tab="streams", mode="approximate",
-                                videos=tuple([*approximate, flat_duplicate]))),
+        tabs=(
+            yf.TabFetchResult(tab="videos", mode="full", videos=(exact,)),
+            yf.TabFetchResult(
+                tab="streams",
+                mode="approximate",
+                videos=tuple([*approximate, flat_duplicate]),
+            ),
+        ),
     )
-    result = refresh_channel("personal", fetch.channel_url, output,
-                             fetcher=_StaticFetcher(fetch))
+    result = refresh_channel(
+        "personal", fetch.channel_url, output, fetcher=_StaticFetcher(fetch)
+    )
     assert result.complete and result.saved
     written = {video["id"]: video for video in json.loads(output.read_text())["videos"]}
     assert written["stream"]["upload_date"] == "20240101"

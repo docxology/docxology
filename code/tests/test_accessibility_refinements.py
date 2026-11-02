@@ -42,10 +42,21 @@ def accessibility_browser(browser_runtime):
 @pytest.fixture
 def browser_page(accessibility_browser):
     """Keep cookies, storage, pages and service-worker state isolated per test."""
-    context = accessibility_browser.new_context(viewport={"width": 1280, "height": 900}, service_workers="block", timezone_id="America/Los_Angeles")
+    context = accessibility_browser.new_context(
+        viewport={"width": 1280, "height": 900},
+        service_workers="block",
+        timezone_id="America/Los_Angeles",
+    )
     page = context.new_page()
     # Remote availability belongs to separate live/external-link acceptance.
-    page.route("**/*", lambda route: route.continue_() if route.request.url.startswith("http://127.0.0.1:") else route.abort())
+    page.route(
+        "**/*",
+        lambda route: (
+            route.continue_()
+            if route.request.url.startswith("http://127.0.0.1:")
+            else route.abort()
+        ),
+    )
     try:
         yield page
     finally:
@@ -53,20 +64,34 @@ def browser_page(accessibility_browser):
 
 
 @pytest.mark.parametrize("iteration", [0, 1])
-def test_reused_browser_keeps_context_state_isolated(accessibility_server, browser_page, iteration):
+def test_reused_browser_keeps_context_state_isolated(
+    accessibility_server, browser_page, iteration
+):
     page = browser_page
     assert len(page.context.browser.contexts) == 1
     assert len(page.context.pages) == 1
     page.goto(accessibility_server + "/index.html")
     assert page.evaluate("() => localStorage.getItem('fixture-isolation')") is None
     assert page.context.cookies() == []
-    page.evaluate("(value) => localStorage.setItem('fixture-isolation', String(value))", iteration)
-    page.context.add_cookies([{"name": "fixture-isolation", "value": str(iteration), "url": accessibility_server}])
+    page.evaluate(
+        "(value) => localStorage.setItem('fixture-isolation', String(value))", iteration
+    )
+    page.context.add_cookies(
+        [
+            {
+                "name": "fixture-isolation",
+                "value": str(iteration),
+                "url": accessibility_server,
+            }
+        ]
+    )
 
 
 def load_videos(page, base_url: str, query: str = "") -> None:
     page.goto(f"{base_url}/videos.html{query}", wait_until="load")
-    page.wait_for_function("() => document.querySelector('#loading').style.display === 'none' && document.querySelector('#count-badge').textContent.includes('videos')")
+    page.wait_for_function(
+        "() => document.querySelector('#loading').style.display === 'none' && document.querySelector('#count-badge').textContent.includes('videos')"
+    )
 
 
 def timeline_ids_and_rectangles(page):
@@ -86,9 +111,13 @@ def assert_complete_safe_timeline(page, expected_ids: list[str]) -> None:
         assert card["width"] >= 24 and card["height"] >= 24
         assert card["label"]
     for index, left in enumerate(cards):
-        for right in cards[index + 1:]:
-            overlap_x = min(left["left"] + left["width"], right["left"] + right["width"]) - max(left["left"], right["left"])
-            overlap_y = min(left["top"] + left["height"], right["top"] + right["height"]) - max(left["top"], right["top"])
+        for right in cards[index + 1 :]:
+            overlap_x = min(
+                left["left"] + left["width"], right["left"] + right["width"]
+            ) - max(left["left"], right["left"])
+            overlap_y = min(
+                left["top"] + left["height"], right["top"] + right["height"]
+            ) - max(left["top"], right["top"])
             assert overlap_x <= 0 or overlap_y <= 0, (left, right)
 
 
@@ -101,22 +130,30 @@ def relevant_axe_violations(page, base_url: str):
 
 
 @pytest.mark.parametrize("route", ["index.html", "videos.html"])
-def test_reading_progress_is_in_main_and_reports_scroll(accessibility_server, browser_page, route):
+def test_reading_progress_is_in_main_and_reports_scroll(
+    accessibility_server, browser_page, route
+):
     page = browser_page
     page.goto(f"{accessibility_server}/{route}", wait_until="load")
     progress = page.get_by_role("progressbar", name="Reading progress")
     assert progress.count() == 1
     assert progress.evaluate("bar => Boolean(bar.closest('main, [role=main]'))")
     page.evaluate("window.scrollTo(0, document.documentElement.scrollHeight)")
-    page.wait_for_function("() => document.querySelector('.reading-progress').getAttribute('aria-valuenow') === '100'")
+    page.wait_for_function(
+        "() => document.querySelector('.reading-progress').getAttribute('aria-valuenow') === '100'"
+    )
     page.evaluate("window.scrollTo(0, 0)")
-    page.wait_for_function("() => document.querySelector('.reading-progress').getAttribute('aria-valuenow') === '0'")
+    page.wait_for_function(
+        "() => document.querySelector('.reading-progress').getAttribute('aria-valuenow') === '0'"
+    )
     assert progress.get_attribute("aria-valuemin") == "0"
     assert progress.get_attribute("aria-valuemax") == "100"
 
 
 @pytest.mark.parametrize("zoom", [0, 1, 2])
-def test_real_catalog_is_complete_without_obscured_targets(accessibility_server, browser_page, zoom):
+def test_real_catalog_is_complete_without_obscured_targets(
+    accessibility_server, browser_page, zoom
+):
     page = browser_page
     load_videos(page, accessibility_server, f"?z={zoom}")
     records = json.loads((REPO_ROOT / "data/videos-index.json").read_text())["videos"]
@@ -125,7 +162,9 @@ def test_real_catalog_is_complete_without_obscured_targets(accessibility_server,
     assert relevant_axe_violations(page, accessibility_server) == []
 
 
-def test_cluster_dialog_keeps_native_routes_and_keyboard_focus(accessibility_server, browser_page):
+def test_cluster_dialog_keeps_native_routes_and_keyboard_focus(
+    accessibility_server, browser_page
+):
     page = browser_page
     load_videos(page, accessibility_server)
     cluster = page.locator("button.vid-card").first
@@ -135,11 +174,15 @@ def test_cluster_dialog_keeps_native_routes_and_keyboard_focus(accessibility_ser
     page.keyboard.press("Enter")
     dialog = page.get_by_role("dialog")
     assert dialog.is_visible()
-    assert page.get_by_role("button", name="Close", exact=True).evaluate("button => button === document.activeElement")
+    assert page.get_by_role("button", name="Close", exact=True).evaluate(
+        "button => button === document.activeElement"
+    )
     links = dialog.locator("li a")
     assert links.count() == len(ids)
     channel = cluster.get_attribute("data-channel")
-    assert links.evaluate_all("links => links.map(link => link.getAttribute('href'))") == [f"videos/{channel}-{video_id}.html" for video_id in ids]
+    assert links.evaluate_all(
+        "links => links.map(link => link.getAttribute('href'))"
+    ) == [f"videos/{channel}-{video_id}.html" for video_id in ids]
     assert relevant_axe_violations(page, accessibility_server) == []
     page.keyboard.press("?")
     assert page.locator("#shortcuts-overlay").get_attribute("aria-hidden") == "true"
@@ -154,13 +197,27 @@ def test_cluster_dialog_keeps_native_routes_and_keyboard_focus(accessibility_ser
     page.get_by_role("heading", level=1).wait_for(state="visible")
 
 
-def test_dense_same_day_groups_and_literal_long_titles(accessibility_server, browser_page):
+def test_dense_same_day_groups_and_literal_long_titles(
+    accessibility_server, browser_page
+):
     page = browser_page
     records = []
     for channel in ["personal", "institute"]:
         for index in range(130):
-            records.append({"id": f"{channel}-{index:03}", "title": f"Dense {channel} {index:03} " + "Long title <script>literal</script> " * 25, "channel": channel, "upload_date": "20240331", "year": 2024})
-    payload = {"videos": records, "channels": {"personal": {"fetched_at": "2026-10-02"}}}
+            records.append(
+                {
+                    "id": f"{channel}-{index:03}",
+                    "title": f"Dense {channel} {index:03} "
+                    + "Long title <script>literal</script> " * 25,
+                    "channel": channel,
+                    "upload_date": "20240331",
+                    "year": 2024,
+                }
+            )
+    payload = {
+        "videos": records,
+        "channels": {"personal": {"fetched_at": "2026-10-02"}},
+    }
     page.route("**/data/videos-index.json", lambda route: route.fulfill(json=payload))
     load_videos(page, accessibility_server)
     # Upload dates and padding use UTC: crossing Pacific daylight saving time
@@ -178,12 +235,17 @@ def test_dense_same_day_groups_and_literal_long_titles(accessibility_server, bro
     page.keyboard.press("Escape")
     page.locator("#search").fill("DENSE PERSONAL 129")
     assert_complete_safe_timeline(page, ["personal-129"])
-    assert page.locator("a.vid-card").get_attribute("href") == "videos/personal-personal-129.html"
+    assert (
+        page.locator("a.vid-card").get_attribute("href")
+        == "videos/personal-personal-129.html"
+    )
     assert page.locator("#count-badge strong").inner_text() == "1"
 
 
 @pytest.mark.parametrize("width,scheme", [(320, "dark"), (412, "light")])
-def test_mobile_uses_filtered_list_and_passes_contrast(accessibility_server, browser_page, width, scheme):
+def test_mobile_uses_filtered_list_and_passes_contrast(
+    accessibility_server, browser_page, width, scheme
+):
     page = browser_page
     page.set_viewport_size({"width": width, "height": 900})
     page.emulate_media(color_scheme=scheme, reduced_motion="reduce")
@@ -193,27 +255,38 @@ def test_mobile_uses_filtered_list_and_passes_contrast(accessibility_server, bro
     assert not page.locator(".mobile-channel-title.personal").is_visible()
     assert page.locator(".mobile-channel-title.institute").is_visible()
     assert page.locator('[data-ch="institute"]').get_attribute("aria-pressed") == "true"
-    assert page.evaluate("document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1")
+    assert page.evaluate(
+        "document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1"
+    )
     assert relevant_axe_violations(page, accessibility_server) == []
 
 
 @pytest.mark.parametrize("width", [320, 412])
-def test_mobile_year_jump_respects_visible_channel_and_no_matches(accessibility_server, browser_page, width):
+def test_mobile_year_jump_respects_visible_channel_and_no_matches(
+    accessibility_server, browser_page, width
+):
     page = browser_page
     page.set_viewport_size({"width": width, "height": 900})
     page.emulate_media(reduced_motion="reduce")
     load_videos(page, accessibility_server, "?ch=institute")
     records = json.loads((REPO_ROOT / "data/videos-index.json").read_text())["videos"]
-    institute_years = {record["year"] for record in records if record["channel"] == "institute"}
+    institute_years = {
+        record["year"] for record in records if record["channel"] == "institute"
+    }
     selected_year = min(institute_years)
-    target = page.locator(f'.mobile-channel-section:has(.institute) .mobile-vid-item[data-year="{selected_year}"]').first
+    target = page.locator(
+        f'.mobile-channel-section:has(.institute) .mobile-vid-item[data-year="{selected_year}"]'
+    ).first
     assert target.bounding_box()["y"] > 900
     page.locator("#year-jump").select_option(str(selected_year))
-    page.wait_for_function("""year => {
+    page.wait_for_function(
+        """year => {
         const item = document.querySelector(`.mobile-channel-section:has(.institute) .mobile-vid-item[data-year="${year}"]`);
         const rect = item.getBoundingClientRect();
         return rect.top >= 0 && rect.bottom <= window.innerHeight;
-    }""", arg=selected_year)
+    }""",
+        arg=selected_year,
+    )
     assert page.locator("#year-jump").input_value() == ""
     assert not page.locator("#timeline-wrap").is_visible()
     # A year absent from the selected channel must leave the viewport in
@@ -233,14 +306,20 @@ def test_dialog_in_forced_colors_and_reduced_motion(accessibility_server, browse
     cluster.focus()
     page.keyboard.press("Enter")
     assert page.get_by_role("dialog").is_visible()
-    assert page.get_by_role("button", name="Close", exact=True).evaluate("button => getComputedStyle(button).color !== getComputedStyle(button).backgroundColor")
+    assert page.get_by_role("button", name="Close", exact=True).evaluate(
+        "button => getComputedStyle(button).color !== getComputedStyle(button).backgroundColor"
+    )
     page.keyboard.press("Escape")
     assert cluster.evaluate("button => button === document.activeElement")
 
 
 def test_video_no_javascript_keeps_static_index(accessibility_server, browser_page):
     # A fresh context proves the native fallback without an enhanced-page cache.
-    context = browser_page.context.browser.new_context(java_script_enabled=False, service_workers="block", viewport={"width": 320, "height": 900})
+    context = browser_page.context.browser.new_context(
+        java_script_enabled=False,
+        service_workers="block",
+        viewport={"width": 320, "height": 900},
+    )
     try:
         page = context.new_page()
         page.goto(f"{accessibility_server}/videos.html", wait_until="load")
@@ -255,6 +334,82 @@ def test_video_no_javascript_keeps_static_index(accessibility_server, browser_pa
 
 
 @pytest.mark.parametrize("width", [320, 412, 1280])
+@pytest.mark.parametrize("scheme", ["dark", "light"])
+def test_blake_pathway_tables_reflow_without_clipping(
+    accessibility_server, browser_page, width, scheme
+):
+    page = browser_page
+    page.set_viewport_size({"width": width, "height": 900})
+    page.emulate_media(color_scheme=scheme, reduced_motion="reduce")
+    page.goto(f"{accessibility_server}/blake-pathway.html", wait_until="load")
+    tables = page.locator(".pathway-table")
+    assert tables.count() == 2
+    headers = page.locator(".pathway-table th")
+    assert headers.count() == 7
+    assert all(header.is_visible() for header in headers.all())
+    assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth")
+    regions = page.locator(".pathway-table-wrap")
+    assert regions.count() == 2
+    for region, table in zip(regions.all(), tables.all(), strict=True):
+        assert region.get_attribute("role") == "region"
+        assert region.get_attribute("aria-label")
+        assert region.get_attribute("tabindex") == "0"
+        bounds = region.bounding_box()
+        assert bounds and bounds["x"] >= 0 and bounds["x"] + bounds["width"] <= width
+        overflowing = region.evaluate(
+            "element => element.scrollWidth > element.clientWidth"
+        )
+        if width in (320, 412):
+            assert overflowing
+        if overflowing:
+            region.focus()
+            page.keyboard.press("ArrowRight")
+            page.wait_for_function(
+                "element => element.scrollLeft > 0", arg=region.element_handle()
+            )
+            region.evaluate("element => element.scrollLeft = element.scrollWidth")
+            last_column = table.locator("thead th").last.bounding_box()
+            assert last_column and last_column["x"] >= bounds["x"]
+            assert (
+                last_column["x"] + last_column["width"]
+                <= bounds["x"] + bounds["width"] + 1
+            )
+            region.evaluate("element => element.scrollLeft = 0")
+    doi_links = page.locator(
+        '.pathway-table a[href^="https://doi.org/"], '
+        '.pathway-table a[href^="https://zenodo.org/records/"]'
+    )
+    assert doi_links.count() > 0
+    assert all(
+        link.evaluate("element => element.getClientRects().length === 1")
+        for link in doi_links.all()
+    )
+    header_contrasts = headers.evaluate_all("""nodes => {
+        const rgba = value => value.match(/[\\d.]+/g).map(Number);
+        const blend = (foreground, background) => {
+            const alpha = foreground[3] ?? 1;
+            return foreground.slice(0, 3).map((value, index) =>
+                value * alpha + background[index] * (1 - alpha));
+        };
+        const background = element => element
+            ? blend(rgba(getComputedStyle(element).backgroundColor), background(element.parentElement))
+            : [255, 255, 255];
+        const luminance = rgb => rgb.map(value => {
+            const channel = value / 255;
+            return channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4;
+        }).reduce((sum, value, index) => sum + value * [0.2126, 0.7152, 0.0722][index], 0);
+        return nodes.map(element => {
+            const back = background(element);
+            const foreground = blend(rgba(getComputedStyle(element).color), back);
+            const [low, high] = [luminance(foreground), luminance(back)].sort((a, b) => a - b);
+            return (high + 0.05) / (low + 0.05);
+        });
+    }""")
+    assert all(contrast >= 4.5 for contrast in header_contrasts), header_contrasts
+    assert not relevant_axe_violations(page, accessibility_server)
+
+
+@pytest.mark.parametrize("width", [320, 412, 1280])
 def test_404_footer_targets_are_large_enough(accessibility_server, browser_page, width):
     page = browser_page
     page.set_viewport_size({"width": width, "height": 900})
@@ -263,6 +418,8 @@ def test_404_footer_targets_are_large_enough(accessibility_server, browser_page,
         text: link.textContent, height: link.getBoundingClientRect().height,
         width: link.getBoundingClientRect().width,
     }))""")
-    assert targets and all(target["height"] >= 24 and target["width"] >= 24 for target in targets), targets
+    assert targets and all(
+        target["height"] >= 24 and target["width"] >= 24 for target in targets
+    ), targets
     assert not relevant_axe_violations(page, accessibility_server)
     assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth")

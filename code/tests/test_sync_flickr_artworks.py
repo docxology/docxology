@@ -24,7 +24,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 SYNC_SCRIPT = REPO_ROOT / "code" / "orchestrators" / "sync_flickr_artworks.py"
 
 
-def _photo(pid: str, *, upload: str, taken: str, desc: str = "", tags: str = "") -> dict:
+def _photo(
+    pid: str, *, upload: str, taken: str, desc: str = "", tags: str = ""
+) -> dict:
     return {
         "id": pid,
         "title": "Title &amp; Coda",
@@ -45,15 +47,26 @@ def _sizes_payload(pid: str) -> dict:
     return {
         "sizes": {
             "size": [
-                {"label": "Medium 640", "source": f"https://live.staticflickr.com/65535/{pid}_abc_z.jpg"},
-                {"label": "Large", "source": f"https://live.staticflickr.com/65535/{pid}_abc_b.jpg"},
-                {"label": "insecure", "source": "http://live.staticflickr.com/65535/x.jpg"},
+                {
+                    "label": "Medium 640",
+                    "source": f"https://live.staticflickr.com/65535/{pid}_abc_z.jpg",
+                },
+                {
+                    "label": "Large",
+                    "source": f"https://live.staticflickr.com/65535/{pid}_abc_b.jpg",
+                },
+                {
+                    "label": "insecure",
+                    "source": "http://live.staticflickr.com/65535/x.jpg",
+                },
             ]
         }
     }
 
 
-def _install_stub(monkeypatch, photos: list[dict], *, total: int | None = None) -> list[str]:
+def _install_stub(
+    monkeypatch, photos: list[dict], *, total: int | None = None
+) -> list[str]:
     """Stub the Flickr transport; ``total`` overrides the envelope total (default: len(photos))."""
     calls: list[str] = []
 
@@ -61,9 +74,28 @@ def _install_stub(monkeypatch, photos: list[dict], *, total: int | None = None) 
         calls.append(url)
         if "flickr.people.getPublicPhotos" in url:
             envelope_total = len(photos) if total is None else total
-            return {"stat": "ok", "photos": {"page": 1, "pages": 1, "total": str(envelope_total), "photo": photos}}
+            return {
+                "stat": "ok",
+                "photos": {
+                    "page": 1,
+                    "pages": 1,
+                    "total": str(envelope_total),
+                    "photo": photos,
+                },
+            }
         if "flickr.photos.licenses.getInfo" in url:
-            return {"stat": "ok", "licenses": {"license": [{"id": "14", "name": "CC BY-NC 4.0", "url": "https://creativecommons.org/licenses/by-nc/4.0/"}]}}
+            return {
+                "stat": "ok",
+                "licenses": {
+                    "license": [
+                        {
+                            "id": "14",
+                            "name": "CC BY-NC 4.0",
+                            "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+                        }
+                    ]
+                },
+            }
         if "flickr.photos.getSizes" in url:
             pid = url.split("photo_id=")[1]
             return {"stat": "ok", **_sizes_payload(pid)}
@@ -75,7 +107,12 @@ def _install_stub(monkeypatch, photos: list[dict], *, total: int | None = None) 
 
 def test_build_payload_schema_sort_and_unescape(monkeypatch) -> None:
     photos = [
-        _photo("100", upload="1700000000", taken="2023-09-04 17:12:02", desc="A &amp; B &quot;quoted&quot;"),
+        _photo(
+            "100",
+            upload="1700000000",
+            taken="2023-09-04 17:12:02",
+            desc="A &amp; B &quot;quoted&quot;",
+        ),
         _photo("300", upload="1700000000", taken="2023-09-04 17:12:02"),
         _photo("200", upload="1800000000", taken="2024-01-01 00:00:00", desc="newest"),
     ]
@@ -119,7 +156,11 @@ def test_payload_is_deterministic(monkeypatch) -> None:
         fetched, _total = sync_mod.fetch_public_photos("KEY")
         size_maps = sync_mod.fetch_size_maps("KEY", [str(p["id"]) for p in fetched])
         license_map = sync_mod.fetch_license_map("KEY")
-        runs.append(sync_mod.payload_body(sync_mod.build_payload(fetched, size_maps, license_map)))
+        runs.append(
+            sync_mod.payload_body(
+                sync_mod.build_payload(fetched, size_maps, license_map)
+            )
+        )
     assert runs[0] == runs[1]
     payload = json.loads(runs[0].replace("{", "{", 1))
     assert payload["source"] == sync_mod.SOURCE_LABEL
@@ -130,11 +171,33 @@ def test_check_drift_flags_new_photo(monkeypatch, tmp_path) -> None:
     _install_stub(monkeypatch, photos)
     output = tmp_path / "artworks.json"
     output.write_text(
-        json.dumps({"generated_at": "2026-01-01", "source": sync_mod.SOURCE_LABEL, "count": 1,
-                    "artworks": [{"id": "100", "title": "Old", "desc": "", "tags": [], "date": "",
-                                  "views": "0", "media": "photo", "thumb": "", "flickr_url": "",
-                                  "sizes": {}, "license": "0", "license_name": "", "license_url": "",
-                                  "date_upload": "2023-11-14 22:13:20"}]}, indent=2) + "\n",
+        json.dumps(
+            {
+                "generated_at": "2026-01-01",
+                "source": sync_mod.SOURCE_LABEL,
+                "count": 1,
+                "artworks": [
+                    {
+                        "id": "100",
+                        "title": "Old",
+                        "desc": "",
+                        "tags": [],
+                        "date": "",
+                        "views": "0",
+                        "media": "photo",
+                        "thumb": "",
+                        "flickr_url": "",
+                        "sizes": {},
+                        "license": "0",
+                        "license_name": "",
+                        "license_url": "",
+                        "date_upload": "2023-11-14 22:13:20",
+                    }
+                ],
+            },
+            indent=2,
+        )
+        + "\n",
         encoding="utf-8",
     )
     monkeypatch.setattr(sync_mod, "OUTPUT", output)
@@ -147,13 +210,20 @@ def test_check_drift_flags_new_photo(monkeypatch, tmp_path) -> None:
 
 # --- tag contract, unescape, validation, coverage, drift (pure functions) -------
 
-_LICENSES = {"14": {"name": "CC BY-NC 4.0", "url": "https://creativecommons.org/licenses/by-nc/4.0/"}}
+_LICENSES = {
+    "14": {
+        "name": "CC BY-NC 4.0",
+        "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    }
+}
 
 
 def _payload_for(photos: list[dict]) -> dict:
     """Build a real payload from photo dicts via the pure build_payload path."""
     size_maps = {
-        str(photo["id"]): {"Large": f"https://live.staticflickr.com/65535/{photo['id']}_abc_b.jpg"}
+        str(photo["id"]): {
+            "Large": f"https://live.staticflickr.com/65535/{photo['id']}_abc_b.jpg"
+        }
         for photo in photos
     }
     payload = sync_mod.build_payload(photos, size_maps, _LICENSES)
@@ -164,8 +234,20 @@ def _payload_for(photos: list[dict]) -> dict:
 def _good_payload() -> dict:
     return _payload_for(
         [
-            _photo("200", upload="1800000000", taken="2024-01-01 00:00:00", tags="ink pen", desc="newest"),
-            _photo("100", upload="1700000000", taken="2023-09-04 17:12:02", tags="curiocards möbius", desc="older"),
+            _photo(
+                "200",
+                upload="1800000000",
+                taken="2024-01-01 00:00:00",
+                tags="ink pen",
+                desc="newest",
+            ),
+            _photo(
+                "100",
+                upload="1700000000",
+                taken="2023-09-04 17:12:02",
+                tags="curiocards möbius",
+                desc="older",
+            ),
         ]
     )
 
@@ -181,20 +263,34 @@ def test_multiword_flickr_tags_arrive_as_clean_tokens() -> None:
         tags="curiocards danielarifriedman möbius summersolstice",
     )
     record = sync_mod.build_record(photo, {}, {})
-    assert record["tags"] == ["curiocards", "danielarifriedman", "möbius", "summersolstice"]
+    assert record["tags"] == [
+        "curiocards",
+        "danielarifriedman",
+        "möbius",
+        "summersolstice",
+    ]
     assert not any(any(ch.isspace() for ch in tag) for tag in record["tags"])
     assert "tags_raw" not in record
 
 
 def test_clean_tags_drops_repeated_tokens_but_keeps_order() -> None:
     # Two raw Flickr tags ("curio cards" and "curiocards") clean to one token.
-    assert sync_mod.clean_tags("zeta curiocards alpha curiocards zeta") == ["zeta", "curiocards", "alpha"]
+    assert sync_mod.clean_tags("zeta curiocards alpha curiocards zeta") == [
+        "zeta",
+        "curiocards",
+        "alpha",
+    ]
     assert sync_mod.clean_tags("") == []
     assert sync_mod.clean_tags(None) == []
 
 
 def test_description_is_unescaped_exactly_once() -> None:
-    photo = _photo("1", upload="1700000000", taken="", desc="Tom &amp;amp; Jerry &amp;quot;x&amp;quot; &lt;b&gt;")
+    photo = _photo(
+        "1",
+        upload="1700000000",
+        taken="",
+        desc="Tom &amp;amp; Jerry &amp;quot;x&amp;quot; &lt;b&gt;",
+    )
     record = sync_mod.build_record(photo, {}, {})
     # One decode: &amp;amp; -> &amp; (not &), &amp;quot; -> &quot; (not ").
     assert record["desc"] == "Tom &amp; Jerry &quot;x&quot; <b>"
@@ -242,7 +338,9 @@ def _missing_field(payload: dict) -> None:
 
 def _reordered_fields(payload: dict) -> None:
     record = payload["artworks"][0]
-    payload["artworks"][0] = {field: record[field] for field in reversed(sync_mod.RECORD_FIELDS)}
+    payload["artworks"][0] = {
+        field: record[field] for field in reversed(sync_mod.RECORD_FIELDS)
+    }
 
 
 def _whitespace_tag(payload: dict) -> None:
@@ -258,7 +356,9 @@ def _duplicate_tag(payload: dict) -> None:
 
 
 def _wrong_flickr_url(payload: dict) -> None:
-    payload["artworks"][0]["flickr_url"] = "https://www.flickr.com/photos/someone-else/200"
+    payload["artworks"][0]["flickr_url"] = (
+        "https://www.flickr.com/photos/someone-else/200"
+    )
 
 
 def _http_thumb(payload: dict) -> None:
@@ -266,7 +366,9 @@ def _http_thumb(payload: dict) -> None:
 
 
 def _http_size(payload: dict) -> None:
-    payload["artworks"][0]["sizes"]["Large"] = "http://live.staticflickr.com/65535/200_abc_b.jpg"
+    payload["artworks"][0]["sizes"]["Large"] = (
+        "http://live.staticflickr.com/65535/200_abc_b.jpg"
+    )
 
 
 def _empty_upload(payload: dict) -> None:
@@ -316,7 +418,9 @@ def _coverage_payload() -> dict:
     long_desc = "<p>" + "y" * (sync_mod.THIN_DESCRIPTION_CHARS + 10) + "</p>"
     return _payload_for(
         [
-            _photo("105", upload="1700000005", taken="", tags="ink pen", desc=long_desc),
+            _photo(
+                "105", upload="1700000005", taken="", tags="ink pen", desc=long_desc
+            ),
             _photo("104", upload="1700000004", taken="", tags="", desc=""),
             _photo("103", upload="1700000003", taken="", tags="ink", desc="tiny"),
             _photo("102", upload="1700000002", taken="", tags="", desc=long_desc),
@@ -353,8 +457,12 @@ def test_coverage_summary_flags_whitespace_tags_and_total_mismatch() -> None:
 def test_coverage_summary_delta_against_previous_export() -> None:
     current = _coverage_payload()
     previous = copy.deepcopy(current)
-    previous["artworks"] = [r for r in previous["artworks"] if r["id"] != "102"]  # 102 is new
-    previous["artworks"].append({**previous["artworks"][0], "id": "999"})  # 999 vanished
+    previous["artworks"] = [
+        r for r in previous["artworks"] if r["id"] != "102"
+    ]  # 102 is new
+    previous["artworks"].append(
+        {**previous["artworks"][0], "id": "999"}
+    )  # 999 vanished
     for record in previous["artworks"]:
         if record["id"] == "105":
             record["tags"] = ["ink"]  # tags changed
@@ -371,7 +479,9 @@ def test_coverage_summary_delta_against_previous_export() -> None:
 
 def test_format_coverage_and_completeness_problems() -> None:
     previous = _good_payload()
-    summary = sync_mod.coverage_summary(_coverage_payload(), flickr_total=999, previous=previous)
+    summary = sync_mod.coverage_summary(
+        _coverage_payload(), flickr_total=999, previous=previous
+    )
     text = sync_mod.format_coverage(summary)
     assert "untagged            3 [104, 102, 101]" in text
     assert "empty description   2" in text
@@ -380,7 +490,10 @@ def test_format_coverage_and_completeness_problems() -> None:
     # The compared total is Flickr's public one: no owner-view excuse in the report.
     assert "owner-view" not in text and "non-public" not in text
     assert "vs checked-in" in text
-    assert sync_mod.completeness_problems(summary) == ["3 untagged records", "2 records with an empty description"]
+    assert sync_mod.completeness_problems(summary) == [
+        "3 untagged records",
+        "2 records with an empty description",
+    ]
     complete = sync_mod.coverage_summary(_good_payload())
     assert complete["untagged"] == 0
     assert complete["empty_desc"] == 0
@@ -409,9 +522,14 @@ def test_drift_ignores_views_but_not_content() -> None:
     missing_one = copy.deepcopy(live)
     missing_one["artworks"].pop()
     missing_one["count"] = 1
-    assert sync_mod.classify_drift(missing_one, live)[1] == ["added 1 (newest: ['100'])"]
+    assert sync_mod.classify_drift(missing_one, live)[1] == [
+        "added 1 (newest: ['100'])"
+    ]
     assert sync_mod.classify_drift(live, missing_one)[1] == ["removed 1"]
-    assert sync_mod.classify_drift(None, live) == ("stale", ["data/artworks.json missing"])
+    assert sync_mod.classify_drift(None, live) == (
+        "stale",
+        ["data/artworks.json missing"],
+    )
 
 
 def _point_sync_at(monkeypatch, tmp_path: Path) -> Path:
@@ -422,13 +540,26 @@ def _point_sync_at(monkeypatch, tmp_path: Path) -> Path:
     return output
 
 
-def test_sync_write_prints_coverage_and_writes_a_valid_export(monkeypatch, tmp_path, capsys) -> None:
-    photos = [_photo("200", upload="1800000000", taken="2024-01-01 00:00:00", tags="ink", desc="newest")]
+def test_sync_write_prints_coverage_and_writes_a_valid_export(
+    monkeypatch, tmp_path, capsys
+) -> None:
+    photos = [
+        _photo(
+            "200",
+            upload="1800000000",
+            taken="2024-01-01 00:00:00",
+            tags="ink",
+            desc="newest",
+        )
+    ]
     _install_stub(monkeypatch, photos)
     output = _point_sync_at(monkeypatch, tmp_path)
     assert sync_mod.sync("KEY", write=True, check_drift=False) == 0
     out = capsys.readouterr().out
-    assert "flickr artwork coverage:" in out and "wrote data/artworks.json (1 artworks)" in out
+    assert (
+        "flickr artwork coverage:" in out
+        and "wrote data/artworks.json (1 artworks)" in out
+    )
     written = json.loads(output.read_text(encoding="utf-8"))
     assert sync_mod.validate_export(written) == []
 
@@ -436,13 +567,26 @@ def test_sync_write_prints_coverage_and_writes_a_valid_export(monkeypatch, tmp_p
     before = output.read_text(encoding="utf-8")
     assert sync_mod.sync("KEY", write=False, check_drift=False) == 0
     out = capsys.readouterr().out
-    assert "vs checked-in       +0 added, -0 removed, 0 tags changed, 0 descriptions changed" in out
+    assert (
+        "vs checked-in       +0 added, -0 removed, 0 tags changed, 0 descriptions changed"
+        in out
+    )
     assert "dry run: 1 artworks; not writing data/artworks.json" in out
     assert output.read_text(encoding="utf-8") == before
 
 
-def test_sync_check_drift_treats_views_as_informational(monkeypatch, tmp_path, capsys) -> None:
-    photos = [_photo("200", upload="1800000000", taken="2024-01-01 00:00:00", tags="ink", desc="newest")]
+def test_sync_check_drift_treats_views_as_informational(
+    monkeypatch, tmp_path, capsys
+) -> None:
+    photos = [
+        _photo(
+            "200",
+            upload="1800000000",
+            taken="2024-01-01 00:00:00",
+            tags="ink",
+            desc="newest",
+        )
+    ]
     _install_stub(monkeypatch, photos)
     _point_sync_at(monkeypatch, tmp_path)
     assert sync_mod.sync("KEY", write=True, check_drift=False) == 0
@@ -453,12 +597,24 @@ def test_sync_check_drift_treats_views_as_informational(monkeypatch, tmp_path, c
     assert "informational: views changed on 1 records" in capsys.readouterr().out
 
     photos[0]["tags"] = "ink pen"
-    with pytest.raises(sync_mod.FlickrSyncError, match="stale vs Flickr: record content changed"):
+    with pytest.raises(
+        sync_mod.FlickrSyncError, match="stale vs Flickr: record content changed"
+    ):
         sync_mod.sync("KEY", write=False, check_drift=True)
 
 
-def test_require_complete_refuses_to_write_an_incomplete_export(monkeypatch, tmp_path, capsys) -> None:
-    photos = [_photo("200", upload="1800000000", taken="2024-01-01 00:00:00", tags="", desc="newest")]
+def test_require_complete_refuses_to_write_an_incomplete_export(
+    monkeypatch, tmp_path, capsys
+) -> None:
+    photos = [
+        _photo(
+            "200",
+            upload="1800000000",
+            taken="2024-01-01 00:00:00",
+            tags="",
+            desc="newest",
+        )
+    ]
     _install_stub(monkeypatch, photos)
     output = _point_sync_at(monkeypatch, tmp_path)
     with pytest.raises(sync_mod.FlickrSyncError, match="1 untagged records"):
@@ -474,7 +630,9 @@ def test_require_complete_refuses_to_write_an_incomplete_export(monkeypatch, tmp
 
 
 def test_sync_refuses_to_write_an_invalid_export(monkeypatch, tmp_path) -> None:
-    photos = [_photo("200", upload="1800000000", taken="2024-01-01 00:00:00", tags="ink")]
+    photos = [
+        _photo("200", upload="1800000000", taken="2024-01-01 00:00:00", tags="ink")
+    ]
     photos[0].pop("url_m")  # no thumbnail -> record fails validate_export
     _install_stub(monkeypatch, photos)
     output = _point_sync_at(monkeypatch, tmp_path)
@@ -488,12 +646,26 @@ def test_sync_refuses_to_write_an_invalid_export(monkeypatch, tmp_path) -> None:
 
 def _truncated_photos() -> list[dict]:
     return [
-        _photo("200", upload="1800000000", taken="2024-01-01 00:00:00", tags="ink", desc="newest"),
-        _photo("100", upload="1700000000", taken="2023-09-04 17:12:02", tags="pen", desc="older"),
+        _photo(
+            "200",
+            upload="1800000000",
+            taken="2024-01-01 00:00:00",
+            tags="ink",
+            desc="newest",
+        ),
+        _photo(
+            "100",
+            upload="1700000000",
+            taken="2023-09-04 17:12:02",
+            tags="pen",
+            desc="older",
+        ),
     ]
 
 
-def test_sync_refuses_a_fetch_below_the_public_total(monkeypatch, tmp_path, capsys) -> None:
+def test_sync_refuses_a_fetch_below_the_public_total(
+    monkeypatch, tmp_path, capsys
+) -> None:
     calls = _install_stub(monkeypatch, _truncated_photos(), total=3)
     output = _point_sync_at(monkeypatch, tmp_path)
     for kwargs in (
@@ -512,17 +684,26 @@ def test_sync_refuses_a_fetch_below_the_public_total(monkeypatch, tmp_path, caps
     capsys.readouterr()
 
 
-def test_allow_count_mismatch_writes_with_a_warning(monkeypatch, tmp_path, capsys) -> None:
+def test_allow_count_mismatch_writes_with_a_warning(
+    monkeypatch, tmp_path, capsys
+) -> None:
     _install_stub(monkeypatch, _truncated_photos(), total=3)
     output = _point_sync_at(monkeypatch, tmp_path)
-    assert sync_mod.sync("KEY", write=True, check_drift=False, allow_count_mismatch=True) == 0
+    assert (
+        sync_mod.sync("KEY", write=True, check_drift=False, allow_count_mismatch=True)
+        == 0
+    )
     captured = capsys.readouterr()
     assert "continuing because --allow-count-mismatch was passed" in captured.err
     assert "MISMATCH of -1" in captured.out and "owner-view" not in captured.out
-    assert sync_mod.validate_export(json.loads(output.read_text(encoding="utf-8"))) == []
+    assert (
+        sync_mod.validate_export(json.loads(output.read_text(encoding="utf-8"))) == []
+    )
 
 
-def test_a_higher_fetched_count_is_only_a_warning(monkeypatch, tmp_path, capsys) -> None:
+def test_a_higher_fetched_count_is_only_a_warning(
+    monkeypatch, tmp_path, capsys
+) -> None:
     _install_stub(monkeypatch, _truncated_photos(), total=1)
     output = _point_sync_at(monkeypatch, tmp_path)
     assert sync_mod.sync("KEY", write=True, check_drift=False) == 0
@@ -532,7 +713,9 @@ def test_a_higher_fetched_count_is_only_a_warning(monkeypatch, tmp_path, capsys)
     assert output.exists()
 
 
-def test_main_plumbs_allow_count_mismatch_end_to_end(monkeypatch, tmp_path, capsys) -> None:
+def test_main_plumbs_allow_count_mismatch_end_to_end(
+    monkeypatch, tmp_path, capsys
+) -> None:
     _install_stub(monkeypatch, _truncated_photos(), total=3)
     output = _point_sync_at(monkeypatch, tmp_path)
     monkeypatch.setenv("FLICKR_API_KEY", "KEY")
@@ -544,7 +727,9 @@ def test_main_plumbs_allow_count_mismatch_end_to_end(monkeypatch, tmp_path, caps
     assert "--allow-count-mismatch" in capsys.readouterr().err
     assert not output.exists()
 
-    monkeypatch.setattr(sys, "argv", ["sync_flickr_artworks.py", "--allow-count-mismatch"])
+    monkeypatch.setattr(
+        sys, "argv", ["sync_flickr_artworks.py", "--allow-count-mismatch"]
+    )
     with pytest.raises(SystemExit) as accepted:
         sync_mod.main()
     assert accepted.value.code == 0
@@ -559,7 +744,9 @@ def _write_export(output: Path, content: object) -> None:
     output.write_text(text, encoding="utf-8")
 
 
-def test_coverage_local_reports_validator_errors_for_a_non_object_export(monkeypatch, tmp_path, capsys) -> None:
+def test_coverage_local_reports_validator_errors_for_a_non_object_export(
+    monkeypatch, tmp_path, capsys
+) -> None:
     output = _point_sync_at(monkeypatch, tmp_path)
     _write_export(output, "[]")
     assert sync_mod.coverage_local() == 1
@@ -568,7 +755,9 @@ def test_coverage_local_reports_validator_errors_for_a_non_object_export(monkeyp
     assert "flickr artwork coverage" not in captured.out
 
 
-def test_coverage_local_reports_validator_errors_for_non_list_tags(monkeypatch, tmp_path, capsys) -> None:
+def test_coverage_local_reports_validator_errors_for_non_list_tags(
+    monkeypatch, tmp_path, capsys
+) -> None:
     output = _point_sync_at(monkeypatch, tmp_path)
     payload = _good_payload()
     payload["artworks"][0]["tags"] = 5
@@ -579,31 +768,57 @@ def test_coverage_local_reports_validator_errors_for_non_list_tags(monkeypatch, 
     assert "flickr artwork coverage" not in captured.out
 
 
-def test_coverage_local_reports_validator_errors_for_a_null_artworks_list(monkeypatch, tmp_path, capsys) -> None:
+def test_coverage_local_reports_validator_errors_for_a_null_artworks_list(
+    monkeypatch, tmp_path, capsys
+) -> None:
     output = _point_sync_at(monkeypatch, tmp_path)
     _write_export(output, {"artworks": None})
     assert sync_mod.coverage_local() == 1
     assert "artworks is not a list" in capsys.readouterr().err
 
 
-def test_coverage_local_still_summarizes_a_sound_export(monkeypatch, tmp_path, capsys) -> None:
+def test_coverage_local_still_summarizes_a_sound_export(
+    monkeypatch, tmp_path, capsys
+) -> None:
     output = _point_sync_at(monkeypatch, tmp_path)
     _write_export(output, _good_payload())
     assert sync_mod.coverage_local() == 0
     captured = capsys.readouterr()
-    assert "validate_export: ok" in captured.out and "flickr artwork coverage:" in captured.out
+    assert (
+        "validate_export: ok" in captured.out
+        and "flickr artwork coverage:" in captured.out
+    )
 
 
 def test_helpers_tolerate_malformed_shapes() -> None:
-    for payload in (None, [], "x", 5, {"artworks": None}, {"artworks": "s"}, {"artworks": {"id": "1"}}):
+    for payload in (
+        None,
+        [],
+        "x",
+        5,
+        {"artworks": None},
+        {"artworks": "s"},
+        {"artworks": {"id": "1"}},
+    ):
         assert sync_mod._records_by_id(payload) == {}
     mixed = {"artworks": [1, None, "x", {"no_id": 1}, {"id": 3, "tags": 5}]}
     assert sync_mod._records_by_id(mixed) == {"3": {"id": 3, "tags": 5}}
 
     # coverage_summary: non-list tags / non-list artworks are counted, not raised on.
-    summary = sync_mod.coverage_summary({"artworks": [{"id": "1", "tags": 5, "desc": None}]}, previous=[])
-    assert summary["count"] == 1 and summary["tags_per_record"] == {"min": 0, "mean": 0.0, "max": 0}
-    assert summary["vs_previous"] == {"added": ["1"], "removed": [], "tags_changed": [], "desc_changed": []}
+    summary = sync_mod.coverage_summary(
+        {"artworks": [{"id": "1", "tags": 5, "desc": None}]}, previous=[]
+    )
+    assert summary["count"] == 1 and summary["tags_per_record"] == {
+        "min": 0,
+        "mean": 0.0,
+        "max": 0,
+    }
+    assert summary["vs_previous"] == {
+        "added": ["1"],
+        "removed": [],
+        "tags_changed": [],
+        "desc_changed": [],
+    }
     assert sync_mod.coverage_summary({"artworks": None})["count"] == 0
     assert sync_mod.coverage_summary([])["count"] == 0  # type: ignore[arg-type]
 
@@ -615,10 +830,23 @@ def test_helpers_tolerate_malformed_shapes() -> None:
 
 @pytest.mark.parametrize(
     ("content", "problem"),
-    [("[]", "export is not a JSON object"), ('{"artworks": null}', "artworks is not a list")],
+    [
+        ("[]", "export is not a JSON object"),
+        ('{"artworks": null}', "artworks is not a list"),
+    ],
 )
-def test_sync_survives_a_malformed_checked_in_export(monkeypatch, tmp_path, capsys, content: str, problem: str) -> None:
-    photos = [_photo("200", upload="1800000000", taken="2024-01-01 00:00:00", tags="ink", desc="newest")]
+def test_sync_survives_a_malformed_checked_in_export(
+    monkeypatch, tmp_path, capsys, content: str, problem: str
+) -> None:
+    photos = [
+        _photo(
+            "200",
+            upload="1800000000",
+            taken="2024-01-01 00:00:00",
+            tags="ink",
+            desc="newest",
+        )
+    ]
     _install_stub(monkeypatch, photos)
     output = _point_sync_at(monkeypatch, tmp_path)
 
@@ -626,27 +854,50 @@ def test_sync_survives_a_malformed_checked_in_export(monkeypatch, tmp_path, caps
     assert sync_mod.sync("KEY", write=False, check_drift=False) == 0  # dry run
     captured = capsys.readouterr()
     assert f"is malformed ({problem})" in captured.err
-    assert "flickr artwork coverage:" in captured.out and "vs checked-in" not in captured.out
+    assert (
+        "flickr artwork coverage:" in captured.out
+        and "vs checked-in" not in captured.out
+    )
     assert output.read_text(encoding="utf-8") == content  # dry run left the file alone
 
     # Drift gate: a malformed baseline is drift, with a clear message.
-    with pytest.raises(sync_mod.FlickrSyncError, match=rf"stale vs Flickr: data/artworks.json is malformed \({problem}\)"):
+    with pytest.raises(
+        sync_mod.FlickrSyncError,
+        match=rf"stale vs Flickr: data/artworks.json is malformed \({problem}\)",
+    ):
         sync_mod.sync("KEY", write=False, check_drift=True)
 
     # A resync repairs the file.
     assert sync_mod.sync("KEY", write=True, check_drift=False) == 0
-    assert sync_mod.validate_export(json.loads(output.read_text(encoding="utf-8"))) == []
+    assert (
+        sync_mod.validate_export(json.loads(output.read_text(encoding="utf-8"))) == []
+    )
 
 
-def test_sync_tolerates_junk_records_in_a_well_shaped_checked_in_export(monkeypatch, tmp_path, capsys) -> None:
-    photos = [_photo("200", upload="1800000000", taken="2024-01-01 00:00:00", tags="ink", desc="newest")]
+def test_sync_tolerates_junk_records_in_a_well_shaped_checked_in_export(
+    monkeypatch, tmp_path, capsys
+) -> None:
+    photos = [
+        _photo(
+            "200",
+            upload="1800000000",
+            taken="2024-01-01 00:00:00",
+            tags="ink",
+            desc="newest",
+        )
+    ]
     _install_stub(monkeypatch, photos)
     output = _point_sync_at(monkeypatch, tmp_path)
-    _write_export(output, {"artworks": [1, "x", {"id": 200, "tags": 5}, {"id": "9", "tags": 5}]})
+    _write_export(
+        output, {"artworks": [1, "x", {"id": 200, "tags": 5}, {"id": "9", "tags": 5}]}
+    )
     assert sync_mod.sync("KEY", write=False, check_drift=False) == 0
     captured = capsys.readouterr()
     assert "malformed" not in captured.err
-    assert "vs checked-in       +0 added, -1 removed, 1 tags changed, 1 descriptions changed" in captured.out
+    assert (
+        "vs checked-in       +0 added, -1 removed, 1 tags changed, 1 descriptions changed"
+        in captured.out
+    )
     assert sync_mod.sync("KEY", write=True, check_drift=False) == 0
 
 
@@ -670,7 +921,10 @@ def test_validate_export_requires_fixed_width_ascii_date_upload(bad: str) -> Non
     payload = copy.deepcopy(_good_payload())
     payload["artworks"][0]["date_upload"] = bad
     errors = sync_mod.validate_export(payload)
-    assert any("is not YYYY-MM-DD HH:MM:SS" in message for message in errors), (bad, errors)
+    assert any("is not YYYY-MM-DD HH:MM:SS" in message for message in errors), (
+        bad,
+        errors,
+    )
 
 
 def test_validate_export_accepts_a_canonical_date_upload() -> None:
@@ -693,18 +947,32 @@ def test_newest_first_orders_by_upload_then_id_then_id_alone() -> None:
         "300": {"date_upload": "2024-01-01 00:00:00"},
         "400": {"date_upload": "2024-01-01 00:00:00"},
     }
-    assert sync_mod._newest_first(["100", "200", "300", "400"], records) == ["200", "400", "300", "100"]
+    assert sync_mod._newest_first(["100", "200", "300", "400"], records) == [
+        "200",
+        "400",
+        "300",
+        "100",
+    ]
     # Without records the order is id descending (numeric: longer ids are larger).
     assert sync_mod._newest_first({"9", "10", "100"}, {}) == ["100", "10", "9"]
     # An id whose record lacks a usable date_upload sorts as the oldest.
-    assert sync_mod._newest_first(["1", "2"], {"1": {"date_upload": 5}, "2": {}}) == ["2", "1"]
+    assert sync_mod._newest_first(["1", "2"], {"1": {"date_upload": 5}, "2": {}}) == [
+        "2",
+        "1",
+    ]
 
 
 def test_classify_drift_lists_the_newest_added_ids_first() -> None:
     # id order and upload order agree: 500 is newest.
     live = _payload_for(
         _drift_photos(
-            {"100": "1700000000", "200": "1700000100", "300": "1700000200", "400": "1700000300", "500": "1700000400"}
+            {
+                "100": "1700000000",
+                "200": "1700000100",
+                "300": "1700000200",
+                "400": "1700000300",
+                "500": "1700000400",
+            }
         )
     )
     current = _payload_for(_drift_photos({"100": "1700000000"}))
@@ -714,7 +982,13 @@ def test_classify_drift_lists_the_newest_added_ids_first() -> None:
 
 
 def test_upload_order_beats_id_order_for_added_ids() -> None:
-    uploads = {"100": "1700000000", "200": "1900000000", "300": "1750000000", "400": "1750000000", "500": "1710000000"}
+    uploads = {
+        "100": "1700000000",
+        "200": "1900000000",
+        "300": "1750000000",
+        "400": "1750000000",
+        "500": "1710000000",
+    }
     live = _payload_for(_drift_photos(uploads))
     current = _payload_for(_drift_photos({"100": "1700000000"}))
     status, details = sync_mod.classify_drift(current, live)
@@ -725,7 +999,9 @@ def test_upload_order_beats_id_order_for_added_ids() -> None:
     delta = sync_mod.coverage_summary(live, previous=current)["vs_previous"]
     assert delta["added"] == ["200", "400", "300", "500"]
     # And in the other direction the removed ids come out newest first too.
-    removed = sync_mod.coverage_summary(current, previous=live)["vs_previous"]["removed"]
+    removed = sync_mod.coverage_summary(current, previous=live)["vs_previous"][
+        "removed"
+    ]
     assert removed == ["200", "400", "300", "500"]
 
     text = sync_mod.format_coverage(sync_mod.coverage_summary(live, previous=current))
@@ -739,13 +1015,17 @@ def test_format_coverage_truncates_added_ids_to_the_newest() -> None:
     current = _payload_for(_drift_photos({"1000": "1700000000"}))
     text = sync_mod.format_coverage(sync_mod.coverage_summary(live, previous=current))
     newest = str(1000 + count - 1)
-    line = next(row for row in text.splitlines() if row.strip().startswith("added ids:"))
+    line = next(
+        row for row in text.splitlines() if row.strip().startswith("added ids:")
+    )
     assert f"[{newest}, " in line and "(+" in line
     assert str(1001) not in line  # the oldest added ids are the ones truncated away
 
 
 def _run_script(*args: str, key: str | None = None) -> subprocess.CompletedProcess:
-    env = {name: value for name, value in os.environ.items() if name != "FLICKR_API_KEY"}
+    env = {
+        name: value for name, value in os.environ.items() if name != "FLICKR_API_KEY"
+    }
     if key is not None:
         env["FLICKR_API_KEY"] = key
     return subprocess.run(
@@ -763,13 +1043,24 @@ def test_coverage_local_runs_offline_without_an_api_key() -> None:
     result = _run_script("--coverage-local")
     assert result.returncode == 0, result.stderr
     assert "validate_export: ok" in result.stdout
-    exported = json.loads((REPO_ROOT / "data" / "artworks.json").read_text(encoding="utf-8"))
+    exported = json.loads(
+        (REPO_ROOT / "data" / "artworks.json").read_text(encoding="utf-8")
+    )
     count = re.search(r"^\s+artworks\s+(\d+)", result.stdout, re.M)
     assert count and int(count.group(1)) == exported["count"]
     for field in ("untagged", "empty description", "short description", "thin pages"):
-        assert re.search(rf"^\s+{field}\s+\d+", result.stdout, re.M), (field, result.stdout)
-    assert re.search(r"^\s+tags w/ whitespace\s+0 \(must be 0\)", result.stdout, re.M), result.stdout
-    assert "tags per record" in result.stdout and "licenses" in result.stdout and "media" in result.stdout
+        assert re.search(rf"^\s+{field}\s+\d+", result.stdout, re.M), (
+            field,
+            result.stdout,
+        )
+    assert re.search(
+        r"^\s+tags w/ whitespace\s+0 \(must be 0\)", result.stdout, re.M
+    ), result.stdout
+    assert (
+        "tags per record" in result.stdout
+        and "licenses" in result.stdout
+        and "media" in result.stdout
+    )
 
 
 def test_live_modes_still_require_an_api_key() -> None:
@@ -788,13 +1079,26 @@ def _paged_stub(monkeypatch, envelopes: list[dict | None]) -> None:
     def fake_fetch(url: str, **_kwargs) -> dict:
         page = int(re.search(r"[?&]page=(\d+)", url).group(1))
         envelope = envelopes[page - 1]
-        return {"stat": "ok"} if envelope is None else {"stat": "ok", "photos": envelope}
+        return (
+            {"stat": "ok"} if envelope is None else {"stat": "ok", "photos": envelope}
+        )
 
     monkeypatch.setattr(sync_mod, "fetch_json", fake_fetch)
 
 
 def test_a_first_page_without_a_total_is_refused(monkeypatch) -> None:
-    _paged_stub(monkeypatch, [{"page": 1, "pages": 1, "photo": [_photo("1", upload="1700000000", taken="2023-09-04 17:12:02")]}])
+    _paged_stub(
+        monkeypatch,
+        [
+            {
+                "page": 1,
+                "pages": 1,
+                "photo": [
+                    _photo("1", upload="1700000000", taken="2023-09-04 17:12:02")
+                ],
+            }
+        ],
+    )
     with pytest.raises(sync_mod.FlickrSyncError, match="no usable total"):
         sync_mod.fetch_public_photos("key")
 
@@ -808,8 +1112,18 @@ def test_a_first_page_without_a_total_is_refused(monkeypatch) -> None:
     ],
     ids=["no-total", "unparseable-total", "no-envelope"],
 )
-def test_a_truncated_later_page_cannot_lower_the_total(monkeypatch, second_page) -> None:
-    first = {"page": 1, "pages": 2, "total": "3", "photo": [_photo("1", upload="1700000000", taken="2023-09-04 17:12:02"), _photo("2", upload="1700000000", taken="2023-09-04 17:12:02")]}
+def test_a_truncated_later_page_cannot_lower_the_total(
+    monkeypatch, second_page
+) -> None:
+    first = {
+        "page": 1,
+        "pages": 2,
+        "total": "3",
+        "photo": [
+            _photo("1", upload="1700000000", taken="2023-09-04 17:12:02"),
+            _photo("2", upload="1700000000", taken="2023-09-04 17:12:02"),
+        ],
+    }
     _paged_stub(monkeypatch, [first, second_page])
     photos, total = sync_mod.fetch_public_photos("key")
     assert (len(photos), total) == (2, 3)

@@ -26,8 +26,12 @@ def test_every_docs_path_has_required_folder_docs():
 
 
 def test_render_outputs_cover_all_nonempty_docs_paths():
-    works = json.loads((REPO_ROOT / "data" / "works.json").read_text(encoding="utf-8"))["works"]
-    expected = {str(work["docs_path"]).rstrip("/") for work in works if work.get("docs_path")}
+    works = json.loads((REPO_ROOT / "data" / "works.json").read_text(encoding="utf-8"))[
+        "works"
+    ]
+    expected = {
+        str(work["docs_path"]).rstrip("/") for work in works if work.get("docs_path")
+    }
     outputs = render_outputs()
     actual = {str(path.relative_to(REPO_ROOT).parent) for path in outputs}
 
@@ -35,7 +39,9 @@ def test_render_outputs_cover_all_nonempty_docs_paths():
 
 
 def test_docs_folder_page_links_local_docs_and_canonical():
-    works = json.loads((REPO_ROOT / "data" / "works.json").read_text(encoding="utf-8"))["works"]
+    works = json.loads((REPO_ROOT / "data" / "works.json").read_text(encoding="utf-8"))[
+        "works"
+    ]
     work = next(item for item in works if item.get("docs_path") and item.get("doi"))
     path = REPO_ROOT / work["docs_path"] / "index.html"
     content = render_outputs()[path]
@@ -49,7 +55,9 @@ def test_docs_folder_page_links_local_docs_and_canonical():
     assert "application/ld+json" not in content
 
 
-def test_paper_page_reconcile_rejects_symlinked_output_without_touching_target(tmp_path: Path):
+def test_paper_page_reconcile_rejects_symlinked_output_without_touching_target(
+    tmp_path: Path,
+):
     """A paper-page check/write must never follow an output symlink."""
     repo = tmp_path / "repo"
     paper = repo / "papers" / "2026_Example"

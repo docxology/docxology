@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T16:59:17Z",
+  "generated_at": "2026-11-01T01:06:00Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -61,17 +61,17 @@
     }
   ],
   "max_score": 6,
-  "work_count": 226,
+  "work_count": 228,
   "signal_totals": {
-    "persistent_id": 210,
-    "public_archive": 168,
+    "persistent_id": 212,
+    "public_archive": 170,
     "open_full_text": 205,
-    "source_documents": 209,
-    "executable_code": 79,
-    "agent_readable": 209
+    "source_documents": 211,
+    "executable_code": 81,
+    "agent_readable": 211
   },
   "band_counts": {
-    "independently reproducible": 166,
+    "independently reproducible": 168,
     "independently checkable": 43,
     "citable only": 8,
     "unverified": 9
@@ -82,10 +82,10 @@
     "2": 4,
     "3": 10,
     "4": 33,
-    "5": 90,
+    "5": 92,
     "6": 76
   },
-  "mean_score": 4.779,
+  "mean_score": 4.781,
   "works": [
     {
       "num": 5,
@@ -3399,6 +3399,48 @@
       },
       "repositories": [
         "Working_Groups"
+      ]
+    },
+    {
+      "num": 231,
+      "citation_key": "Friedman2026ActiveInferenceLanguageModel231",
+      "title": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "active_inference_language_model"
+      ]
+    },
+    {
+      "num": 232,
+      "citation_key": "Friedman2026GNNBasedActiveInference232",
+      "title": "GNN-based active inference for Battleship",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "active_inference_battleship"
       ]
     },
     {

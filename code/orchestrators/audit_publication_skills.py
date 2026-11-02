@@ -5,6 +5,7 @@ Cross-checks `papers/*/SKILL.md` against `data/works.json` docs_path references
 (missing or unreferenced folders), bounds description length, and rejects
 legacy-host URLs. `--check` runs inside `validate_repo.py`.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -83,14 +84,18 @@ def collect_skill_errors(repo_root: Path = REPO_ROOT) -> list[str]:
     for missing in sorted(docs - skills):
         errors.append(f"{missing}/SKILL.md missing for data/works.json docs_path")
     for extra in sorted(skills - docs):
-        errors.append(f"{extra}/SKILL.md is not referenced by data/works.json docs_path")
+        errors.append(
+            f"{extra}/SKILL.md is not referenced by data/works.json docs_path"
+        )
 
     for folder in sorted(docs & skills):
         path = repo_root / folder / "SKILL.md"
         text = path.read_text(encoding="utf-8", errors="replace")
         rel = str(path.relative_to(repo_root))
         if LEGACY_HOST in text:
-            errors.append(f"{rel}: legacy GitHub Pages host found; use https://danielarifriedman.com/")
+            errors.append(
+                f"{rel}: legacy GitHub Pages host found; use https://danielarifriedman.com/"
+            )
         fields, frontmatter_error = _frontmatter(text)
         if frontmatter_error:
             errors.append(f"{rel}: {frontmatter_error}")
@@ -100,7 +105,9 @@ def collect_skill_errors(repo_root: Path = REPO_ROOT) -> list[str]:
                 errors.append(f"{rel}: frontmatter missing {key}")
         description = _unquote(fields.get("description", ""))
         if len(description) > MAX_DESCRIPTION_CHARS:
-            errors.append(f"{rel}: description exceeds {MAX_DESCRIPTION_CHARS} characters")
+            errors.append(
+                f"{rel}: description exceeds {MAX_DESCRIPTION_CHARS} characters"
+            )
         if fields.get("tags"):
             tag_error = _validate_tags(fields["tags"])
             if tag_error:
@@ -111,8 +118,12 @@ def collect_skill_errors(repo_root: Path = REPO_ROOT) -> list[str]:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Validate publication SKILL.md files for agent-facing operability.")
-    parser.add_argument("--check", action="store_true", help="Validate publication skills and exit")
+    parser = argparse.ArgumentParser(
+        description="Validate publication SKILL.md files for agent-facing operability."
+    )
+    parser.add_argument(
+        "--check", action="store_true", help="Validate publication skills and exit"
+    )
     parser.parse_args()
     errors = collect_skill_errors()
     if errors:

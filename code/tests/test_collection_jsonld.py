@@ -13,12 +13,19 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 
 
-from docxology_tools.collection_jsonld import display_paths, replace_inline_collection_ld  # noqa: E402
+from docxology_tools.collection_jsonld import (  # noqa: E402
+    display_paths,
+    replace_inline_collection_ld,
+)
 
 
 BEGIN = "<!-- <CATALOG_LD_BEGIN> -->"
 END = "<!-- <CATALOG_LD_END> -->"
-COLLECTION = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Catalog"}
+COLLECTION = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Catalog",
+}
 
 
 def _frame() -> str:
@@ -93,12 +100,17 @@ def test_compact_collection_jsonld_and_relative_stale_paths(tmp_path: Path):
         compact=True,
     )
 
-    assert '<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage"' in rendered
+    assert (
+        '<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage"'
+        in rendered
+    )
     assert display_paths((output,), root) == "data/catalog.json"
 
 
 def test_duplicate_collection_jsonld_markers_fail_closed():
-    with pytest.raises(ValueError, match="zero or one complete catalog JSON-LD marker pair"):
+    with pytest.raises(
+        ValueError, match="zero or one complete catalog JSON-LD marker pair"
+    ):
         replace_inline_collection_ld(
             _frame() + f"{BEGIN}{END}",
             COLLECTION,

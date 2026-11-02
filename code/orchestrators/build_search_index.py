@@ -29,8 +29,21 @@ CONTENT_SEGMENT_TYPES = ("work", "video")
 def content_segment_path(item_type: str) -> Path:
     return REPO_ROOT / f"search-index-content-{item_type}.json"
 
-from docxology_tools.report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel, stable_generated_at  # noqa: E402
-from docxology_tools.artwork_pages import created_date, is_thin, meta_description, page_rel_path, plain_text  # noqa: E402
+
+from docxology_tools.report_paths import (  # noqa: E402
+    generated_timestamp,
+    latest_source_report,
+    latest_source_subdir_file,
+    rel,
+    stable_generated_at,
+)
+from docxology_tools.artwork_pages import (  # noqa: E402
+    created_date,
+    is_thin,
+    meta_description,
+    page_rel_path,
+    plain_text,
+)
 from docxology_tools.abstract_text import abstract_display_text  # noqa: E402
 
 
@@ -54,63 +67,387 @@ def _latest_subdir_url(prefix: str, filename: str, _fallback: str) -> str:
 
 
 def static_pages() -> list[tuple[str, str, str, str, str, list[str]]]:
-    reconciliation = _latest_url("reconciliation_*.md", "/reports/reconciliation_2026-05-15.md")
-    public_source_inventory = _latest_url(
-        "public_source_inventory_*.json", "/reports/public_source_inventory_2026-05-15.json"
+    reconciliation = _latest_url(
+        "reconciliation_*.md", "/reports/reconciliation_2026-05-15.md"
     )
-    accessibility = _latest_url("accessibility_static_*.json", "/reports/accessibility_static_2026-05-13.json")
-    visual_qa = _latest_subdir_url("visual-qa", "manifest.json", "/reports/visual-qa/2026-05-13/manifest.json")
-    external_links = _latest_url("external_links_[0-9]*.json", "/reports/external_links_2026-05-13.json")
+    public_source_inventory = _latest_url(
+        "public_source_inventory_*.json",
+        "/reports/public_source_inventory_2026-05-15.json",
+    )
+    accessibility = _latest_url(
+        "accessibility_static_*.json", "/reports/accessibility_static_2026-05-13.json"
+    )
+    visual_qa = _latest_subdir_url(
+        "visual-qa", "manifest.json", "/reports/visual-qa/2026-05-13/manifest.json"
+    )
+    external_links = _latest_url(
+        "external_links_[0-9]*.json", "/reports/external_links_2026-05-13.json"
+    )
     external_link_triage = _latest_url(
         "external_links_triage_*.md", "/reports/external_links_triage_2026-05-13.md"
     )
     asset_size = _latest_url("asset_size_*.json", "/reports/asset_size_2026-05-13.json")
     browser_smoke = _latest_subdir_url(
-        "browser-smoke", "manifest.json", "/reports/browser-smoke/2026-05-13/manifest.json"
+        "browser-smoke",
+        "manifest.json",
+        "/reports/browser-smoke/2026-05-13/manifest.json",
     )
-    live_site = _latest_url("live_site_verification_*.json", "/reports/live_site_verification_2026-05-13.json")
+    live_site = _latest_url(
+        "live_site_verification_*.json",
+        "/reports/live_site_verification_2026-05-13.json",
+    )
     return [
-    ("home", "page", "Daniel Ari Friedman", "/", "Homepage and professional profile.", ["homepage", "profile"]),
-    ("publications", "page", "Publications", "/publications.html", "Searchable bibliography of Active Inference, biology, cognitive security, art, and computational works.", ["bibliography", "papers", "active inference"]),
-    ("works", "page", "Works Index", "/works/", "Generated per-work bibliography pages.", ["works", "citations"]),
-    ("domains", "page", "Research Domains", "/domains.html", "Domain landing pages and learning paths.", ["domains"]),
-    ("software", "page", "Software", "/software.html", "Owned and AII software repositories.", ["software", "github"]),
-    ("repositories", "page", "Primary GitHub Repositories", "/repositories.html", "Search non-fork public docxology and Active Inference Institute repositories by topic, language, owner, and curation status.", ["software", "github", "inventory", "active inference"]),
-    ("repositories-forks", "page", "Forked GitHub Repositories", "/repositories-forks.html", "Separated archive of forked public docxology and Active Inference Institute repositories.", ["software", "github", "inventory", "forks"]),
-    ("videos", "page", "Videos", "/videos.html", "Timeline of Active Inference talks, research livestreams, courses, interviews, and public video sessions.", ["videos", "active inference", "talks", "youtube"]),
-    ("search", "page", "Search", "/search.html", "Human-facing search over works, software, pages, people, organizations, and claims.", ["search"]),
-    ("catalog", "page", "Data Catalog", "/catalog.html", "Structured DataCatalog for public JSON exports.", ["catalog", "structured data"]),
-    ("exports", "page", "Public Exports", "/exports.html", "HTML index of citation exports and JSON datasets.", ["exports", "citation", "bibtex"]),
-    ("updates", "page", "Updates", "/updates.html", "Human-readable changelog for the public research and discovery index.", ["updates", "changelog"]),
-    ("discovery", "page", "Discovery Map", "/discovery.html", "Canonical identifiers and public source queries.", ["agents"]),
-    ("cognitive-security-pillar", "page", "What Is Cognitive Security?", "/cognitive-security.html", "Foundational guide to cognitive security, threat modeling, narrative ecosystems, and multi-agent defense.", ["cognitive security", "epistemic security", "misinformation", "active inference"]),
-    ("computational-entomology-pillar", "page", "Computational Entomology", "/computational-entomology.html", "Computational models of social insects, algorithmic entomology, ant colony simulation, and transcriptomics.", ["computational entomology", "ants", "collective behavior", "simulation"]),
-    ("insect-cognition-pillar", "page", "Insect Cognition & Collective Intelligence", "/insect-cognition.html", "Explainer on insect cognition, ant colony intelligence without a central brain, stigmergy, and active inference.", ["insect cognition", "ant intelligence", "stigmergy", "superorganism"]),
-    ("active-inference-pillar", "page", "Active Inference & Free Energy Principle Guide", "/active-inference.html", "Comprehensive tutorial and guide to Active Inference, generative models, expected free energy, and belief updating.", ["active inference", "free energy principle", "bayesian mechanics", "generative models"]),
-    ("neurosymbolic-ai-pillar", "page", "Neurosymbolic AI & Active Inference", "/neurosymbolic-ai.html", "Guide to neurosymbolic artificial intelligence, formal knowledge representations, and discrete active inference agents.", ["neurosymbolic ai", "symbolic reasoning", "generative ai", "knowledge graphs"]),
-    ("cite-verify", "page", "Cite & Verify", "/cite-verify.html", "Citation and source-of-truth rules.", ["citation"]),
-    ("evidence", "page", "Evidence Ledger", "/evidence.html", "Claim-level evidence and caveats.", ["claims"]),
-    ("reproducibility", "page", "Reproducibility Ledger", "/reproducibility.html", "Per-work artifact availability across the curated bibliography.", ["reproducibility", "open science", "verification"]),
-    ("resume", "document", "Resume and CV", "/resume/resume.html", "Accessible, no-JavaScript HTML CV with PDF, plaintext, JSON, and verification links.", ["resume", "cv", "accessibility"]),
-    ("resume-verify", "page", "Resume Verification", "/resume/verify.html", "Hashes, source manifest, file sizes, QR target, and artifact links for the generated structured CV.", ["resume", "cv", "verification", "hashes"]),
-    ("collaborators", "page", "Collaborators", "/collaborators.html", "Research collaborator network.", ["people"]),
-    ("media", "page", "Media", "/media.html", "Talks, podcasts, videos, and press.", ["media"]),
-    ("art", "page", "Art", "/art.html", "Visual art and Curio Cards work.", ["art"]),
-    ("changelog", "document", "Changelog", "/CHANGELOG.md", "Public-index and generated-site change history.", ["maintenance"]),
-    ("redirects", "document", "Redirect And Canonical Policy", "/docs/seo/canonical-policy.md", "Canonical URL and redirect-stub rules.", ["canonical", "seo"]),
-    ("reconciliation", "report", "Public-Source Reconciliation Report", reconciliation, "Curated local counts compared with public source indexes.", ["evidence", "reports"]),
-    ("public-source-inventory", "report", "Public Source Inventory", public_source_inventory, "Paginated public-source inventory for source discovery and claim auditing.", ["evidence", "public sources", "reports"]),
-    ("accessibility", "report", "Static Accessibility Report", accessibility, "Static accessibility and metadata audit output.", ["accessibility", "reports"]),
-    ("visual-qa", "report", "Visual QA Manifest", visual_qa, "Desktop and mobile Playwright screenshots for key pages.", ["visual", "qa"]),
-    ("external-links", "report", "External Link Report", external_links, "Cached network check over site-critical external links.", ["links", "reports"]),
-    ("external-link-triage", "report", "External Link Triage", external_link_triage, "Categorized warning report for scoped external links.", ["links", "triage", "reports"]),
-    ("asset-size", "report", "Asset Size Audit", asset_size, "Size report for public HTML, Open Graph images, data exports, and runtime assets.", ["assets", "performance", "reports"]),
-    ("browser-smoke", "report", "Browser Smoke Manifest", browser_smoke, "Selector-based browser smoke checks for core local pages.", ["browser", "qa", "reports"]),
-    ("live-site", "report", "Live Site Verification", live_site, "Deployed-site status, expected markers, and GitHub Pages build state.", ["deploy", "live", "reports"]),
-    ("generated", "document", "Generated Files", "/GENERATED.md", "Generated artifact manifest and rebuild commands.", ["generated", "maintenance"]),
-    ("agent-start", "document", "Agent Start Guide", "/AGENT_START.md", "Task recipes for agents using the repository.", ["agents", "start"]),
-    ("humans", "document", "Humans.txt", "/humans.txt", "Human-maintained contact and site credits.", ["contact", "humans"]),
-    ("release-snapshot", "document", "2026-05 Discovery Layer Release Snapshot", "/docs/releases/2026-05-discovery-layer.md", "Release note and validation gate for the discovery layer.", ["release", "maintenance"]),
+        (
+            "home",
+            "page",
+            "Daniel Ari Friedman",
+            "/",
+            "Homepage and professional profile.",
+            ["homepage", "profile"],
+        ),
+        (
+            "publications",
+            "page",
+            "Publications",
+            "/publications.html",
+            "Searchable bibliography of Active Inference, biology, cognitive security, art, and computational works.",
+            ["bibliography", "papers", "active inference"],
+        ),
+        (
+            "works",
+            "page",
+            "Works Index",
+            "/works/",
+            "Generated per-work bibliography pages.",
+            ["works", "citations"],
+        ),
+        (
+            "domains",
+            "page",
+            "Research Domains",
+            "/domains.html",
+            "Domain landing pages and learning paths.",
+            ["domains"],
+        ),
+        (
+            "software",
+            "page",
+            "Software",
+            "/software.html",
+            "Owned and AII software repositories.",
+            ["software", "github"],
+        ),
+        (
+            "repositories",
+            "page",
+            "Primary GitHub Repositories",
+            "/repositories.html",
+            "Search non-fork public docxology and Active Inference Institute repositories by topic, language, owner, and curation status.",
+            ["software", "github", "inventory", "active inference"],
+        ),
+        (
+            "repositories-forks",
+            "page",
+            "Forked GitHub Repositories",
+            "/repositories-forks.html",
+            "Separated archive of forked public docxology and Active Inference Institute repositories.",
+            ["software", "github", "inventory", "forks"],
+        ),
+        (
+            "videos",
+            "page",
+            "Videos",
+            "/videos.html",
+            "Timeline of Active Inference talks, research livestreams, courses, interviews, and public video sessions.",
+            ["videos", "active inference", "talks", "youtube"],
+        ),
+        (
+            "search",
+            "page",
+            "Search",
+            "/search.html",
+            "Human-facing search over works, software, pages, people, organizations, and claims.",
+            ["search"],
+        ),
+        (
+            "catalog",
+            "page",
+            "Data Catalog",
+            "/catalog.html",
+            "Structured DataCatalog for public JSON exports.",
+            ["catalog", "structured data"],
+        ),
+        (
+            "exports",
+            "page",
+            "Public Exports",
+            "/exports.html",
+            "HTML index of citation exports and JSON datasets.",
+            ["exports", "citation", "bibtex"],
+        ),
+        (
+            "updates",
+            "page",
+            "Updates",
+            "/updates.html",
+            "Human-readable changelog for the public research and discovery index.",
+            ["updates", "changelog"],
+        ),
+        (
+            "discovery",
+            "page",
+            "Discovery Map",
+            "/discovery.html",
+            "Canonical identifiers and public source queries.",
+            ["agents"],
+        ),
+        (
+            "blake-pathway",
+            "page",
+            "William Blake Publication Pathway",
+            "/blake-pathway.html",
+            "Source-bound reading pathway through William Blake treatments, quotations, and citations across the bibliography.",
+            ["blake", "william blake", "art", "synergetics", "pathway"],
+        ),
+        (
+            "cognitive-security-pillar",
+            "page",
+            "What Is Cognitive Security?",
+            "/cognitive-security.html",
+            "Foundational guide to cognitive security, threat modeling, narrative ecosystems, and multi-agent defense.",
+            [
+                "cognitive security",
+                "epistemic security",
+                "misinformation",
+                "active inference",
+            ],
+        ),
+        (
+            "computational-entomology-pillar",
+            "page",
+            "Computational Entomology",
+            "/computational-entomology.html",
+            "Computational models of social insects, algorithmic entomology, ant colony simulation, and transcriptomics.",
+            ["computational entomology", "ants", "collective behavior", "simulation"],
+        ),
+        (
+            "insect-cognition-pillar",
+            "page",
+            "Insect Cognition & Collective Intelligence",
+            "/insect-cognition.html",
+            "Explainer on insect cognition, ant colony intelligence without a central brain, stigmergy, and active inference.",
+            ["insect cognition", "ant intelligence", "stigmergy", "superorganism"],
+        ),
+        (
+            "active-inference-pillar",
+            "page",
+            "Active Inference & Free Energy Principle Guide",
+            "/active-inference.html",
+            "Comprehensive tutorial and guide to Active Inference, generative models, expected free energy, and belief updating.",
+            [
+                "active inference",
+                "free energy principle",
+                "bayesian mechanics",
+                "generative models",
+            ],
+        ),
+        (
+            "neurosymbolic-ai-pillar",
+            "page",
+            "Neurosymbolic AI & Active Inference",
+            "/neurosymbolic-ai.html",
+            "Guide to neurosymbolic artificial intelligence, formal knowledge representations, and discrete active inference agents.",
+            [
+                "neurosymbolic ai",
+                "symbolic reasoning",
+                "generative ai",
+                "knowledge graphs",
+            ],
+        ),
+        (
+            "cite-verify",
+            "page",
+            "Cite & Verify",
+            "/cite-verify.html",
+            "Citation and source-of-truth rules.",
+            ["citation"],
+        ),
+        (
+            "evidence",
+            "page",
+            "Evidence Ledger",
+            "/evidence.html",
+            "Claim-level evidence and caveats.",
+            ["claims"],
+        ),
+        (
+            "reproducibility",
+            "page",
+            "Reproducibility Ledger",
+            "/reproducibility.html",
+            "Per-work artifact availability across the curated bibliography.",
+            ["reproducibility", "open science", "verification"],
+        ),
+        (
+            "resume",
+            "document",
+            "Resume and CV",
+            "/resume/resume.html",
+            "Accessible, no-JavaScript HTML CV with PDF, plaintext, JSON, and verification links.",
+            ["resume", "cv", "accessibility"],
+        ),
+        (
+            "resume-verify",
+            "page",
+            "Resume Verification",
+            "/resume/verify.html",
+            "Hashes, source manifest, file sizes, QR target, and artifact links for the generated structured CV.",
+            ["resume", "cv", "verification", "hashes"],
+        ),
+        (
+            "collaborators",
+            "page",
+            "Collaborators",
+            "/collaborators.html",
+            "Research collaborator network.",
+            ["people"],
+        ),
+        (
+            "media",
+            "page",
+            "Media",
+            "/media.html",
+            "Talks, podcasts, videos, and press.",
+            ["media"],
+        ),
+        (
+            "art",
+            "page",
+            "Art",
+            "/art.html",
+            "Visual art and Curio Cards work.",
+            ["art"],
+        ),
+        (
+            "changelog",
+            "document",
+            "Changelog",
+            "/CHANGELOG.md",
+            "Public-index and generated-site change history.",
+            ["maintenance"],
+        ),
+        (
+            "redirects",
+            "document",
+            "Redirect And Canonical Policy",
+            "/docs/seo/canonical-policy.md",
+            "Canonical URL and redirect-stub rules.",
+            ["canonical", "seo"],
+        ),
+        (
+            "reconciliation",
+            "report",
+            "Public-Source Reconciliation Report",
+            reconciliation,
+            "Curated local counts compared with public source indexes.",
+            ["evidence", "reports"],
+        ),
+        (
+            "public-source-inventory",
+            "report",
+            "Public Source Inventory",
+            public_source_inventory,
+            "Paginated public-source inventory for source discovery and claim auditing.",
+            ["evidence", "public sources", "reports"],
+        ),
+        (
+            "accessibility",
+            "report",
+            "Static Accessibility Report",
+            accessibility,
+            "Static accessibility and metadata audit output.",
+            ["accessibility", "reports"],
+        ),
+        (
+            "visual-qa",
+            "report",
+            "Visual QA Manifest",
+            visual_qa,
+            "Desktop and mobile Playwright screenshots for key pages.",
+            ["visual", "qa"],
+        ),
+        (
+            "external-links",
+            "report",
+            "External Link Report",
+            external_links,
+            "Cached network check over site-critical external links.",
+            ["links", "reports"],
+        ),
+        (
+            "external-link-triage",
+            "report",
+            "External Link Triage",
+            external_link_triage,
+            "Categorized warning report for scoped external links.",
+            ["links", "triage", "reports"],
+        ),
+        (
+            "asset-size",
+            "report",
+            "Asset Size Audit",
+            asset_size,
+            "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
+            ["assets", "performance", "reports"],
+        ),
+        (
+            "browser-smoke",
+            "report",
+            "Browser Smoke Manifest",
+            browser_smoke,
+            "Selector-based browser smoke checks for core local pages.",
+            ["browser", "qa", "reports"],
+        ),
+        (
+            "live-site",
+            "report",
+            "Live Site Verification",
+            live_site,
+            "Deployed-site status, expected markers, and GitHub Pages build state.",
+            ["deploy", "live", "reports"],
+        ),
+        (
+            "generated",
+            "document",
+            "Generated Files",
+            "/GENERATED.md",
+            "Generated artifact manifest and rebuild commands.",
+            ["generated", "maintenance"],
+        ),
+        (
+            "agent-start",
+            "document",
+            "Agent Start Guide",
+            "/AGENT_START.md",
+            "Task recipes for agents using the repository.",
+            ["agents", "start"],
+        ),
+        (
+            "humans",
+            "document",
+            "Humans.txt",
+            "/humans.txt",
+            "Human-maintained contact and site credits.",
+            ["contact", "humans"],
+        ),
+        (
+            "release-snapshot",
+            "document",
+            "2026-05 Discovery Layer Release Snapshot",
+            "/docs/releases/2026-05-discovery-layer.md",
+            "Release note and validation gate for the discovery layer.",
+            ["release", "maintenance"],
+        ),
     ]
 
 
@@ -134,12 +471,17 @@ def work_item(work: dict, enrichments: dict[str, dict]) -> dict:
     abstract = abstract_display_text(enrich.get("abstract", ""))
     docs_path = str(work.get("docs_path") or "").rstrip("/")
     full_text_path = REPO_ROOT / docs_path / "full_text.md" if docs_path else None
-    full_text_url = f"/{docs_path}/full_text.md" if full_text_path and full_text_path.exists() else ""
+    full_text_url = (
+        f"/{docs_path}/full_text.md"
+        if full_text_path and full_text_path.exists()
+        else ""
+    )
     images_dir = REPO_ROOT / docs_path / "images" if docs_path else None
     image_count = 0
     if images_dir and images_dir.is_dir():
         image_count = sum(
-            1 for f in images_dir.iterdir()
+            1
+            for f in images_dir.iterdir()
             if f.is_file() and f.suffix.lower() in (".png", ".jpg", ".jpeg", ".gif")
         )
     result = {
@@ -149,7 +491,9 @@ def work_item(work: dict, enrichments: dict[str, dict]) -> dict:
         "url": f"/works/{work['citation_key']}.html",
         "external_url": work.get("url", ""),
         "full_text_url": full_text_url,
-        "summary": abstract[:220] if abstract else f"{work['type']} · {work['venue']} · {work['domain_name']}",
+        "summary": abstract[:220]
+        if abstract
+        else f"{work['type']} · {work['venue']} · {work['domain_name']}",
         "year": work["year"],
         "domain": work["domain_name"],
         "tags": [work["type"], work["domain_name"], "bibliography", *keywords[:8]],
@@ -160,7 +504,9 @@ def work_item(work: dict, enrichments: dict[str, dict]) -> dict:
                 # Both orders, so "Smékal" and "Jakub Smékal" both match.
                 " ".join(work.get("authors", [])),
                 " ".join(
-                    name.partition(",")[2].strip() + " " + name.partition(",")[0].strip()
+                    name.partition(",")[2].strip()
+                    + " "
+                    + name.partition(",")[0].strip()
                     for name in work.get("authors", [])
                     if "," in name
                 ),
@@ -191,7 +537,9 @@ def software_item(repo: dict) -> dict:
         "summary": repo["description"],
         "domain": repo["catalog_section"],
         "tags": ["software", repo.get("language", ""), repo["owner"]],
-        "content": " ".join([repo["name"], repo["description"], repo.get("language", ""), repo["owner"]]).strip(),
+        "content": " ".join(
+            [repo["name"], repo["description"], repo.get("language", ""), repo["owner"]]
+        ).strip(),
     }
 
 
@@ -212,7 +560,13 @@ def github_repo_item(repo: dict) -> dict:
         "url": repo["html_url"],
         "summary": repo.get("description", "") or f"{repo['owner']} repository",
         "domain": repo["owner"],
-        "tags": ["github", "repository", repo.get("language", ""), repo["owner"], *flags],
+        "tags": [
+            "github",
+            "repository",
+            repo.get("language", ""),
+            repo["owner"],
+            *flags,
+        ],
         "content": " ".join(
             [
                 repo["full_name"],
@@ -253,7 +607,6 @@ def video_item(video: dict) -> dict:
             ]
         ).strip(),
     }
-
 
 
 def artwork_item(record: dict) -> dict:
@@ -312,7 +665,13 @@ def claim_item(claim: dict) -> dict:
         "url": "/evidence.html",
         "summary": f"{claim['status']} · confidence: {claim['confidence']}",
         "tags": ["claim", claim["status"], claim["confidence"]],
-        "content": " ".join([claim["claim"], claim.get("caveat", ""), claim.get("verification_method", "")]),
+        "content": " ".join(
+            [
+                claim["claim"],
+                claim.get("caveat", ""),
+                claim.get("verification_method", ""),
+            ]
+        ),
     }
 
 
@@ -325,8 +684,12 @@ def resume_item(resume: dict) -> dict:
         for part in [
             profile.get("summary", ""),
             " ".join(contact.get("email", [])),
-            " ".join(item.get("workplace", "") for item in resume.get("experience", [])),
-            " ".join(item.get("institution", "") for item in resume.get("education", [])),
+            " ".join(
+                item.get("workplace", "") for item in resume.get("experience", [])
+            ),
+            " ".join(
+                item.get("institution", "") for item in resume.get("education", [])
+            ),
             " ".join(item.get("name", "") for item in resume.get("media_outreach", [])),
             " ".join(item.get("description", "") for item in resume.get("service", [])),
         ]
@@ -341,8 +704,19 @@ def resume_item(resume: dict) -> dict:
             f"Structured CV export: {metrics['works']} works, "
             f"{metrics['software_catalogued']} software rows, {metrics['github_inventory']['public']} public GitHub repositories, education, experience, service, media, and art-use records."
         ),
-        "tags": ["resume", "cv", "profile", "html", "plaintext", "pdf", "accessibility", "verification"],
-        "content": " ".join([profile["name"], profile["headline"], section_text]).strip(),
+        "tags": [
+            "resume",
+            "cv",
+            "profile",
+            "html",
+            "plaintext",
+            "pdf",
+            "accessibility",
+            "verification",
+        ],
+        "content": " ".join(
+            [profile["name"], profile["headline"], section_text]
+        ).strip(),
     }
 
 
@@ -424,10 +798,22 @@ def render(generated_at: str | None = None) -> str:
     items: list[dict] = []
     for page in static_pages():
         id_, typ, title, url, summary, tags = page
-        items.append({"id": f"page:{id_}", "type": typ, "title": title, "url": url, "summary": summary, "tags": tags, "content": " ".join([title, summary, *tags])})
+        items.append(
+            {
+                "id": f"page:{id_}",
+                "type": typ,
+                "title": title,
+                "url": url,
+                "summary": summary,
+                "tags": tags,
+                "content": " ".join([title, summary, *tags]),
+            }
+        )
     items.extend(work_item(work, enrichments) for work in works)
     items.extend(software_item(repo) for repo in software)
-    items.extend(github_repo_item(repo) for repo in github_repositories if not repo.get("fork"))
+    items.extend(
+        github_repo_item(repo) for repo in github_repositories if not repo.get("fork")
+    )
     items.extend(video_item(video) for video in videos)
     items.extend(artwork_item(record) for record in artworks if not is_thin(record))
     items.extend(person_item(person) for person in people)
@@ -456,7 +842,9 @@ def render(generated_at: str | None = None) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if search-index.json is stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if search-index.json is stale"
+    )
     args = parser.parse_args()
     generated_at = existing_generated_at() if args.check else None
     if not args.check:
@@ -476,11 +864,16 @@ def main() -> None:
             if not path.exists() or path.read_text(encoding="utf-8") != expected
         ]
         if stale:
-            raise SystemExit("Stale generated search index surfaces: " + ", ".join(stale))
+            raise SystemExit(
+                "Stale generated search index surfaces: " + ", ".join(stale)
+            )
     else:
         for path, text in outputs.items():
             path.write_text(text, encoding="utf-8")
-    print(("checked" if args.check else "wrote") + f" search-index.json (+{len(outputs) - 1} split surfaces)")
+    print(
+        ("checked" if args.check else "wrote")
+        + f" search-index.json (+{len(outputs) - 1} split surfaces)"
+    )
 
 
 if __name__ == "__main__":

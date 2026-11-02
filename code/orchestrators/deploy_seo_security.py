@@ -103,7 +103,7 @@ def find_insertion_point(html: str) -> int | None:
         return match.start()
 
     # Fallback: before </head>
-    match = re.search(r'\s*</head>', html)
+    match = re.search(r"\s*</head>", html)
     if match:
         return match.start()
 
@@ -112,7 +112,9 @@ def find_insertion_point(html: str) -> int | None:
 
 def add_csp_if_missing(html: str) -> str:
     """Add or normalize the CSP meta tag."""
-    existing = re.compile(r'<meta\s+http-equiv="Content-Security-Policy"\s+content="[^"]*">', re.I)
+    existing = re.compile(
+        r'<meta\s+http-equiv="Content-Security-Policy"\s+content="[^"]*">', re.I
+    )
     if existing.search(html):
         return existing.sub(CSP_META, html, count=1)
     insert_pos = find_insertion_point(html)
@@ -167,7 +169,8 @@ def add_rel_me_if_missing(html: str) -> str:
 HREFLANG_TAG_RE = re.compile(r"\s*<link\b[^>]*\bhreflang=[^>]*>\s*", re.I)
 NAV_TOGGLE_SCRIPT_RE = re.compile(
     r"<script\b[^>]*\bsrc\s*=\s*(['\"])(?:[^'\"]*/)?js/nav-toggle\.js"
-    r"(?:\?[^'\"]*)?\1[^>]*>\s*</script>", re.I,
+    r"(?:\?[^'\"]*)?\1[^>]*>\s*</script>",
+    re.I,
 )
 
 
@@ -210,8 +213,11 @@ def add_early_navigation_if_needed(html: str) -> str:
     if parser.found and closing_head and len(tags) == 1:
         tag = tags[0]
         opening_head = re.search(r"<head\b[^>]*>", html, re.I)
-        if (opening_head and opening_head.end() <= tag.start() < closing_head.start()
-                and tag.group() == NAV_TOGGLE_SCRIPT_TAG):
+        if (
+            opening_head
+            and opening_head.end() <= tag.start() < closing_head.start()
+            and tag.group() == NAV_TOGGLE_SCRIPT_TAG
+        ):
             return html
     html = NAV_TOGGLE_SCRIPT_RE.sub("", html)
     if not parser.found:
@@ -219,7 +225,11 @@ def add_early_navigation_if_needed(html: str) -> str:
     closing_head = re.search(r"</head\s*>", html, re.I)
     if not closing_head:
         return html
-    return html[:closing_head.start()] + f"    {NAV_TOGGLE_SCRIPT_TAG}\n" + html[closing_head.start():]
+    return (
+        html[: closing_head.start()]
+        + f"    {NAV_TOGGLE_SCRIPT_TAG}\n"
+        + html[closing_head.start() :]
+    )
 
 
 def strip_hreflang_tags(html: str) -> str:
@@ -227,7 +237,9 @@ def strip_hreflang_tags(html: str) -> str:
     return HREFLANG_TAG_RE.sub("\n", html)
 
 
-def transform_html(html: str, *, is_redirect: bool = False, is_skipped: bool = False) -> tuple[str, list[str], bool]:
+def transform_html(
+    html: str, *, is_redirect: bool = False, is_skipped: bool = False
+) -> tuple[str, list[str], bool]:
     """Return normalized HTML, changes, and whether the page is intentionally skipped.
 
     Keeping this pure lets ``--check`` prove the same transformation would be
@@ -312,12 +324,14 @@ def main() -> None:
     import argparse
 
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if an indexable page needs a SEO/security normalization")
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Fail if an indexable page needs a SEO/security normalization",
+    )
     args = parser.parse_args()
     html_files = sorted(
-        path
-        for path in REPO_ROOT.rglob("*.html")
-        if is_indexable_html_path(path)
+        path for path in REPO_ROOT.rglob("*.html") if is_indexable_html_path(path)
     )
     redirect_paths = discover_redirect_stubs(REPO_ROOT)
     total_changes = 0

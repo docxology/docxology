@@ -5,6 +5,7 @@ Downloads VTT captions via yt-dlp into a temp dir, normalizes them to plain
 text, and writes one transcript per video id. `--channel` selects
 personal/institute/all.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -107,7 +108,9 @@ def fetch_one(video: dict, *, force: bool, languages: str, timeout: int) -> str:
             if result.returncode not in (0, 1):
                 return f"failed:{result.returncode}"
             return "unavailable"
-        transcript = transcript_from_vtt(vtt.read_text(encoding="utf-8", errors="replace"))
+        transcript = transcript_from_vtt(
+            vtt.read_text(encoding="utf-8", errors="replace")
+        )
         if not transcript:
             return "empty"
         TRANSCRIPT_DIR.mkdir(parents=True, exist_ok=True)
@@ -126,8 +129,12 @@ def selected_videos(channel: str, video_id: str, limit: int | None) -> list[dict
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Fetch YouTube captions into data/video-transcripts/*.txt")
-    parser.add_argument("--channel", choices=["all", "personal", "institute"], default="all")
+    parser = argparse.ArgumentParser(
+        description="Fetch YouTube captions into data/video-transcripts/*.txt"
+    )
+    parser.add_argument(
+        "--channel", choices=["all", "personal", "institute"], default="all"
+    )
     parser.add_argument("--video-id", default="")
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--force", action="store_true")
@@ -138,7 +145,9 @@ def main() -> None:
     counts: dict[str, int] = {}
     videos = selected_videos(args.channel, args.video_id, args.limit or None)
     for index, video in enumerate(videos, 1):
-        status = fetch_one(video, force=args.force, languages=args.sub_langs, timeout=args.timeout)
+        status = fetch_one(
+            video, force=args.force, languages=args.sub_langs, timeout=args.timeout
+        )
         counts[status] = counts.get(status, 0) + 1
         print(f"[{index}/{len(videos)}] {video['id']} {status} {video['title']}")
     print("summary", counts)

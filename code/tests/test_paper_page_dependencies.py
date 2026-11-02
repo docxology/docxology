@@ -19,25 +19,40 @@ from docxology_tools.generation_plan import (  # noqa: E402
 
 
 COMMON_INPUTS = (
-    ".gitignore", ".python-version", "pyproject.toml", "uv.lock",
-    "data/works.json", "papers/paper_metadata.json",
-    "papers/Example/metadata.json", "papers/Example/README.md",
-    "papers/Example/AGENTS.md", "papers/Example/SKILL.md",
-    "papers/Example/CITATION.cff", "papers/Example/full_text.md",
-    "papers/Example/manuscript.PDF", "papers/Example/images/page1.png",
-    "code/src/paper_artifacts.py", "code/src/site_nav.py",
-    "code/src/archive_projection.py", "data/pages-archive-documents.json",
+    ".gitignore",
+    ".python-version",
+    "pyproject.toml",
+    "uv.lock",
+    "data/works.json",
+    "papers/paper_metadata.json",
+    "papers/Example/metadata.json",
+    "papers/Example/README.md",
+    "papers/Example/AGENTS.md",
+    "papers/Example/SKILL.md",
+    "papers/Example/CITATION.cff",
+    "papers/Example/full_text.md",
+    "papers/Example/manuscript.PDF",
+    "papers/Example/images/page1.png",
+    "code/src/paper_artifacts.py",
+    "code/src/site_nav.py",
+    "code/src/archive_projection.py",
+    "data/pages-archive-documents.json",
     "code/src/publication_revisions.py",
-    "code/orchestrators/build_work_pages.py", "code/src/metadata_templates.py",
+    "code/orchestrators/build_work_pages.py",
+    "code/src/metadata_templates.py",
     "code/src/abstract_text.py",
 )
 
 
 def _seed_page_inputs(tmp_path, step):
     for relative in (
-        *COMMON_INPUTS, "data/publishing-status.json", "data/work-authors.json", "bibliography.bib",
+        *COMMON_INPUTS,
+        "data/publishing-status.json",
+        "data/work-authors.json",
+        "bibliography.bib",
         "code/src/author_entities.py",
-        "code/src/metadata_templates.py", f"code/orchestrators/{step.script}",
+        "code/src/metadata_templates.py",
+        f"code/orchestrators/{step.script}",
     ):
         path = tmp_path / relative
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -51,8 +66,12 @@ def _seed_page_inputs(tmp_path, step):
 
 @pytest.mark.parametrize("identifier", ["work-pages", "paper-pages"])
 @pytest.mark.parametrize("changed_path", COMMON_INPUTS)
-def test_paper_resource_changes_invalidate_page_generation(tmp_path, identifier, changed_path):
-    step = next(item for item in LOCAL_GENERATION_STEPS if item.identifier == identifier)
+def test_paper_resource_changes_invalidate_page_generation(
+    tmp_path, identifier, changed_path
+):
+    step = next(
+        item for item in LOCAL_GENERATION_STEPS if item.identifier == identifier
+    )
     state = _seed_page_inputs(tmp_path, step)
 
     (tmp_path / changed_path).write_text("changed\n", encoding="utf-8")
@@ -62,18 +81,34 @@ def test_paper_resource_changes_invalidate_page_generation(tmp_path, identifier,
 
 @pytest.mark.parametrize("identifier", ["work-pages", "paper-pages"])
 def test_abstract_display_boundary_is_an_explicit_page_generation_input(identifier):
-    step = next(item for item in LOCAL_GENERATION_STEPS if item.identifier == identifier)
+    step = next(
+        item for item in LOCAL_GENERATION_STEPS if item.identifier == identifier
+    )
     assert "code/src/abstract_text.py" in step.inputs
 
 
-@pytest.mark.parametrize("changed_path", ["data/publishing-status.json", "bibliography.bib", "data/work-authors.json", "code/src/author_entities.py"])
-def test_work_platform_and_citation_changes_invalidate_page_generation(tmp_path, changed_path):
-    test_paper_resource_changes_invalidate_page_generation(tmp_path, "work-pages", changed_path)
+@pytest.mark.parametrize(
+    "changed_path",
+    [
+        "data/publishing-status.json",
+        "bibliography.bib",
+        "data/work-authors.json",
+        "code/src/author_entities.py",
+    ],
+)
+def test_work_platform_and_citation_changes_invalidate_page_generation(
+    tmp_path, changed_path
+):
+    test_paper_resource_changes_invalidate_page_generation(
+        tmp_path, "work-pages", changed_path
+    )
 
 
 @pytest.mark.parametrize("identifier", ["work-pages", "paper-pages"])
 def test_adding_another_pdf_invalidates_the_cached_selection(tmp_path, identifier):
-    step = next(item for item in LOCAL_GENERATION_STEPS if item.identifier == identifier)
+    step = next(
+        item for item in LOCAL_GENERATION_STEPS if item.identifier == identifier
+    )
     state = _seed_page_inputs(tmp_path, step)
     (tmp_path / "papers/Example/supplement.pdf").write_bytes(b"new PDF")
 

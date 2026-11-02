@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-23T16:58:18Z",
+  "generated_at": "2026-10-31T23:33:03Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
-  "count": 226,
+  "count": 228,
   "works": [
     {
       "num": 1,
@@ -5658,6 +5658,52 @@
         "Visser, Maarten Antonie",
         "Anirudha, Kale Arnav",
         "de La Fournière, Brieuc"
+      ]
+    },
+    {
+      "num": 231,
+      "citation_key": "Friedman2026ActiveInferenceLanguageModel231",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.22409418",
+      "doi": "10.5281/zenodo.22409418",
+      "docs_path": "papers/2026_ActiveInferenceLanguage/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 232,
+      "citation_key": "Friedman2026GNNBasedActiveInference232",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "GNN-based active inference for Battleship",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.23670187",
+      "doi": "10.5281/zenodo.23670187",
+      "docs_path": "papers/2026_GNNBasedActive/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
       ]
     }
   ]

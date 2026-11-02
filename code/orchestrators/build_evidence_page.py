@@ -18,7 +18,14 @@ MD_OUT = REPO_ROOT / "pages" / "EVIDENCE.md"
 
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 from docxology_tools.build_stamp import footer_build_stamp_html, reuse_on_disk_stamp  # noqa: E402
-from docxology_tools.site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+from docxology_tools.site_nav import (  # noqa: E402
+    BREADCRUMB_CSS,
+    HEAD_EXTRAS,
+    INTERACTIVE_SCRIPTS,
+    MENU_ESC_SCRIPT,
+    breadcrumb_jsonld_script,
+    render_breadcrumb,
+)
 
 _BREADCRUMB = [("Home", ""), ("Evidence", "evidence.html")]
 
@@ -26,9 +33,11 @@ _BREADCRUMB = [("Home", ""), ("Evidence", "evidence.html")]
 def _webpage_ld() -> dict:
     """WebPage JSON-LD with a data-derived (not hardcoded) dateModified."""
     try:
-        counts = json.loads((REPO_ROOT / "data" / "current-counts.json").read_text(encoding="utf-8"))
+        counts = json.loads(
+            (REPO_ROOT / "data" / "current-counts.json").read_text(encoding="utf-8")
+        )
         modified = str(counts.get("generated_at", ""))[:10] or report_date_string()
-    except (OSError, json.JSONDecodeError):
+    except OSError, json.JSONDecodeError:
         modified = report_date_string()
     return {
         "@context": "https://schema.org",
@@ -37,9 +46,7 @@ def _webpage_ld() -> dict:
         "name": "Evidence Ledger — Daniel Ari Friedman",
         "url": "https://danielarifriedman.com/evidence.html",
         "dateModified": modified,
-        "isPartOf": {
-            "@id": "https://danielarifriedman.com/#website"
-        },
+        "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
     }
 
 
@@ -49,6 +56,7 @@ def _head_extra() -> str:
         f'    <script type="application/ld+json">\n{json.dumps(_webpage_ld(), indent=4, ensure_ascii=False)}\n    </script>\n'
         f"{breadcrumb_jsonld_script(_BREADCRUMB)}\n"
     )
+
 
 from docxology_tools.report_paths import latest_source_report, rel, report_date_string  # noqa: E402
 
@@ -82,8 +90,14 @@ def latest_report_link(pattern: str, _fallback: str, prefix: str = "") -> str:
 
 def render_html(claims: list[dict]) -> str:
     footer_stamp = footer_build_stamp_html()
-    snapshot = latest_report_link("public_source_snapshot_*.json", "reports/public_source_snapshot_2026-05-15.json")
-    inventory = latest_report_link("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json")
+    snapshot = latest_report_link(
+        "public_source_snapshot_*.json",
+        "reports/public_source_snapshot_2026-05-15.json",
+    )
+    inventory = latest_report_link(
+        "public_source_inventory_*.json",
+        "reports/public_source_inventory_2026-05-15.json",
+    )
     cards = []
     for claim in claims:
         sources = claim.get("sources") or []
@@ -95,13 +109,13 @@ def render_html(claims: list[dict]) -> str:
         )
         cards.append(
             f"""                <article class="claim-card">
-                    <h3>{h(claim['claim'])}</h3>
-                    <p>{h(claim['caveat'])}</p>
+                    <h3>{h(claim["claim"])}</h3>
+                    <p>{h(claim["caveat"])}</p>
                     <dl>
-                        <div><dt>Status</dt><dd>{h(claim['status'])}</dd></div>
-                        <div><dt>Confidence</dt><dd>{h(claim['confidence'].title())}</dd></div>
-                        <div><dt>Checked</dt><dd>{h(claim['checked_at'])}</dd></div>
-                        <div><dt>Owner</dt><dd>{h(claim['maintenance_owner'])}</dd></div>
+                        <div><dt>Status</dt><dd>{h(claim["status"])}</dd></div>
+                        <div><dt>Confidence</dt><dd>{h(claim["confidence"].title())}</dd></div>
+                        <div><dt>Checked</dt><dd>{h(claim["checked_at"])}</dd></div>
+                        <div><dt>Owner</dt><dd>{h(claim["maintenance_owner"])}</dd></div>
                     </dl>
                     {source_html}
                 </article>"""
@@ -190,15 +204,23 @@ def render_html(claims: list[dict]) -> str:
 
 
 def render_md(claims: list[dict]) -> str:
-    snapshot = latest_report_link("public_source_snapshot_*.json", "reports/public_source_snapshot_2026-05-15.json", "../")
-    inventory = latest_report_link("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json", "../")
+    snapshot = latest_report_link(
+        "public_source_snapshot_*.json",
+        "reports/public_source_snapshot_2026-05-15.json",
+        "../",
+    )
+    inventory = latest_report_link(
+        "public_source_inventory_*.json",
+        "reports/public_source_inventory_2026-05-15.json",
+        "../",
+    )
     lines = [
         "---",
         'title: "EVIDENCE - Daniel Ari Friedman"',
         'description: "Claim-level evidence ledger with source links, confidence, caveats, and maintenance ownership."',
         'keywords: "Daniel Ari Friedman, evidence ledger, claims, verification, source freshness"',
         "---",
-        "<div align=\"center\">",
+        '<div align="center">',
         "",
         "# Evidence Ledger",
         "",
@@ -216,7 +238,9 @@ def render_md(claims: list[dict]) -> str:
         "| --- | --- | --- | --- | --- | --- | --- |",
     ]
     for claim in claims:
-        sources = "<br>".join(f"[{src}]({source_link(src, '../')})" for src in claim["sources"])
+        sources = "<br>".join(
+            f"[{src}]({source_link(src, '../')})" for src in claim["sources"]
+        )
         lines.append(
             f"| {claim['claim']} | {claim['status']} | {claim['confidence']} | {claim['checked_at']} | {claim['maintenance_owner']} | {sources} | {claim['caveat']} |"
         )
@@ -247,11 +271,16 @@ def outputs() -> dict[Path, str]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if evidence pages are stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if evidence pages are stale"
+    )
     args = parser.parse_args()
     rendered_outputs = outputs()
     stale = (
-        [str(path.relative_to(REPO_ROOT)) for path in stale_output_paths(rendered_outputs, repo_root=REPO_ROOT)]
+        [
+            str(path.relative_to(REPO_ROOT))
+            for path in stale_output_paths(rendered_outputs, repo_root=REPO_ROOT)
+        ]
         if args.check
         else []
     )

@@ -19,11 +19,29 @@ def test_repository_classification_exposes_description_quality_and_review_contra
     rows = payload["repositories"]
     assert rows
     required = {
-        "full_name", "github_id", "github_node_id", "name", "owner", "html_url", "fork", "archived", "private",
-        "description", "description_quality", "catalog_role", "exclusion_reason", "review_status",
+        "full_name",
+        "github_id",
+        "github_node_id",
+        "name",
+        "owner",
+        "html_url",
+        "fork",
+        "archived",
+        "private",
+        "description",
+        "description_quality",
+        "catalog_role",
+        "exclusion_reason",
+        "review_status",
     }
     assert required <= set(rows[0])
-    assert {row["review_status"] for row in rows} <= {"defer", "acknowledged", "accept", "reject", "supersede"}
+    assert {row["review_status"] for row in rows} <= {
+        "defer",
+        "acknowledged",
+        "accept",
+        "reject",
+        "supersede",
+    }
     # Deliberate exclusions carry an acknowledged status + reason and drop out
     # of the primary review queue (see data/repository-exclusions.json). The
     # review date is asserted as a well-formed date rather than a literal: the
@@ -47,16 +65,26 @@ def test_repository_classification_exposes_description_quality_and_review_contra
                 assert row["acknowledged_reason"] == "fork_not_curated"
             else:
                 assert row["exclusion_reason"] == "acknowledged_not_catalogued"
-    approved_forks = [row for row in rows if row["fork"] and row["review_status"] == "acknowledged"]
+    approved_forks = [
+        row for row in rows if row["fork"] and row["review_status"] == "acknowledged"
+    ]
     assert len(approved_forks) == payload["summary"]["forks"]
     assert payload["summary"]["acknowledged_forks"] == len(approved_forks)
-    assert payload["summary"]["primary_requires_review"] + payload["summary"]["acknowledged_excluded"] + payload["summary"]["forks"] == len(rows)
+    assert payload["summary"]["primary_requires_review"] + payload["summary"][
+        "acknowledged_excluded"
+    ] + payload["summary"]["forks"] == len(rows)
     assert payload["summary"]["uncatalogued"] == len(rows)
-    assert payload["summary"]["missing_description"] + payload["summary"]["short_description"] + payload["summary"]["substantive_description"] == len(rows)
+    assert payload["summary"]["missing_description"] + payload["summary"][
+        "short_description"
+    ] + payload["summary"]["substantive_description"] == len(rows)
 
 
 def test_repository_classification_projection_is_current():
-    actual = json.loads((REPO_ROOT / "data" / "repository-classification.json").read_text(encoding="utf-8"))
+    actual = json.loads(
+        (REPO_ROOT / "data" / "repository-classification.json").read_text(
+            encoding="utf-8"
+        )
+    )
     expected = classify_repositories.build_payload()
     expected["generated_at"] = actual["generated_at"]
     assert actual == expected
@@ -187,7 +215,7 @@ def test_recreated_repository_cannot_inherit_a_path_only_exclusion(
 
 
 def test_standing_policy_may_not_retire_a_repository_without_naming_the_decision():
-    """"The policy covers it" is only an answer when the policy is on the record."""
+    '"The policy covers it" is only an answer when the policy is on the record.'
     payload = {
         "schema_version": "1.4",
         "reasons": {"fork_not_curated": "A public fork remains out of catalog."},
@@ -211,7 +239,9 @@ def test_standing_policy_may_not_retire_a_repository_without_naming_the_decision
         raise AssertionError("an uncited standing-policy exclusion was accepted")
 
     payload["exclusions"][0]["policy_source"] = "principal decision 2026-08-26"
-    assert "example/fork" in classify_repositories.validate_acknowledged_exclusions(payload)
+    assert "example/fork" in classify_repositories.validate_acknowledged_exclusions(
+        payload
+    )
 
 
 def test_standing_policy_cannot_clear_a_primary_repository():
@@ -240,7 +270,9 @@ def test_standing_policy_cannot_clear_a_primary_repository():
         raise AssertionError("a primary repository was retired by standing policy")
 
 
-def test_a_catalogued_repository_never_asks_for_a_decision_again(tmp_path: Path, monkeypatch):
+def test_a_catalogued_repository_never_asks_for_a_decision_again(
+    tmp_path: Path, monkeypatch
+):
     """A promotion must clear the queue row without waiting for a network refresh.
 
     ``curated`` is derived from ``data/software.json`` but was frozen into the
@@ -293,7 +325,9 @@ def test_a_catalogued_repository_never_asks_for_a_decision_again(tmp_path: Path,
         encoding="utf-8",
     )
     exclusions.write_text(
-        json.dumps({"schema_version": "1.4", "reasons": {"website": "x"}, "exclusions": []}),
+        json.dumps(
+            {"schema_version": "1.4", "reasons": {"website": "x"}, "exclusions": []}
+        ),
         encoding="utf-8",
     )
     monkeypatch.setattr(classify_repositories, "IN", inventory)

@@ -38,14 +38,18 @@ def counts(path: Path | None = None) -> dict:
 def generated_date(path: Path | None = None) -> str:
     value = load_facts(path).get("generated_at", "")
     if not isinstance(value, str) or not value.strip():
-        raise SiteFactsError("site-facts input must contain a non-empty 'generated_at' revision timestamp")
+        raise SiteFactsError(
+            "site-facts input must contain a non-empty 'generated_at' revision timestamp"
+        )
     try:
         # ``fromisoformat`` accepts the repository's +00:00 timestamps; map
         # the conventional trailing Z as well so checked-in reports remain
         # portable between Python versions.
         parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
     except ValueError as exc:
-        raise SiteFactsError(f"malformed site-facts generated_at revision: {value!r}") from exc
+        raise SiteFactsError(
+            f"malformed site-facts generated_at revision: {value!r}"
+        ) from exc
     return parsed.date().isoformat()
 
 
@@ -56,14 +60,22 @@ def public_source_checked_date(path: Path | None = None) -> str:
     snapshot's date, not the date the site was regenerated.
     """
     sources = load_facts(path).get("sources")
-    source = sources.get("public_source_snapshot") if isinstance(sources, dict) else None
-    match = re.fullmatch(r"reports/public_source_snapshot_(\d{4}-\d{2}-\d{2})\.json", source or "")
+    source = (
+        sources.get("public_source_snapshot") if isinstance(sources, dict) else None
+    )
+    match = re.fullmatch(
+        r"reports/public_source_snapshot_(\d{4}-\d{2}-\d{2})\.json", source or ""
+    )
     if not match:
-        raise SiteFactsError(f"site-facts input must name a dated public_source_snapshot report, got {source!r}")
+        raise SiteFactsError(
+            f"site-facts input must name a dated public_source_snapshot report, got {source!r}"
+        )
     try:
         return date.fromisoformat(match.group(1)).isoformat()
     except ValueError as exc:
-        raise SiteFactsError(f"malformed public_source_snapshot date: {source!r}") from exc
+        raise SiteFactsError(
+            f"malformed public_source_snapshot date: {source!r}"
+        ) from exc
 
 
 def generated_month_year(path: Path | None = None) -> str:

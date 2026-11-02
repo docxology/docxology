@@ -112,9 +112,9 @@ def test_dark_rules_untouched_prefix_hash() -> None:
     """The reviewed dark-style content remains an exact prefix."""
     text = STYLE.read_text(encoding="utf-8")
     prefix = "\n".join(text.split("\n")[:DARK_PREFIX_LINES]) + "\n"
-    assert (
-        hashlib.sha256(prefix.encode("utf-8")).hexdigest() == DARK_PREFIX_SHA256
-    ), "pre-existing style.css content was modified"
+    assert hashlib.sha256(prefix.encode("utf-8")).hexdigest() == DARK_PREFIX_SHA256, (
+        "pre-existing style.css content was modified"
+    )
 
 
 def test_dark_tokens_verbatim() -> None:
@@ -167,7 +167,9 @@ def test_light_palette_contrast_wcag() -> None:
     c_red = _contrast(red, bg)
 
     assert c_body >= 7.0, f"text-primary on bg-primary {c_body:.2f}:1 < 7:1"
-    assert c_secondary >= 4.5, f"text-secondary on bg-primary {c_secondary:.2f}:1 < 4.5:1"
+    assert c_secondary >= 4.5, (
+        f"text-secondary on bg-primary {c_secondary:.2f}:1 < 4.5:1"
+    )
     assert c_gold >= 3.0, f"gold on bg-primary {c_gold:.2f}:1 < 3:1"
     assert c_nav >= 4.5
     # Link color (a{color:var(--red-pure)}) should also clear 4.5:1.

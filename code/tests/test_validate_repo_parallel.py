@@ -81,7 +81,9 @@ def test_other_steps_run_under_the_current_interpreter():
 def test_prepayload_mode_overrides_only_pages_no_write_check():
     for step in LOCAL_GENERATION_STEPS:
         strict = vr.generation_check_command(step)
-        candidate = vr.generation_check_command(step, allow_dirty_prepayload_evidence=True)
+        candidate = vr.generation_check_command(
+            step, allow_dirty_prepayload_evidence=True
+        )
         if step.script == "build_pages_artifact.py":
             assert candidate == strict + ["--allow-dirty-prepayload-evidence"]
             assert "--check-manifest" in candidate and "--check-size-only" in candidate

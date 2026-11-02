@@ -15,7 +15,9 @@ def test_gallery_js_has_no_m_template_literal():
     # The only permitted _m reference is the promote-away replace() regex.
     for line in js.splitlines():
         if "_m.jpg" in line:
-            assert "replace(/_m" in line, f"raw _m.jpg emitted outside the promote regex: {line.strip()}"
+            assert "replace(/_m" in line, (
+                f"raw _m.jpg emitted outside the promote regex: {line.strip()}"
+            )
 
 
 def test_injected_tiles_request_z_and_ssr_tiles_are_reused():

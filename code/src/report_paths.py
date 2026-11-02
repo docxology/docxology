@@ -30,7 +30,12 @@ def generated_timestamp() -> str:
     """Return an ISO-8601 UTC timestamp for generated JSON payloads."""
     from datetime import datetime, timezone
 
-    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    return (
+        datetime.now(timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z")
+    )
 
 
 def source_commit(repo_root: Path = REPO_ROOT) -> str:
@@ -126,7 +131,9 @@ def _source_worktree_state(
     return {
         "source_worktree_clean": not source_paths,
         "source_worktree_dirty_paths": source_paths,
-        "source_tree_sha": source_tree_sha(repo_root, tree_commit or source_commit(repo_root)),
+        "source_tree_sha": source_tree_sha(
+            repo_root, tree_commit or source_commit(repo_root)
+        ),
     }
 
 
@@ -158,12 +165,16 @@ def stable_generated_at(path: Path, payload: dict) -> str | None:
         return None
     try:
         existing = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
+    except OSError, json.JSONDecodeError:
         return None
     if not isinstance(existing, dict) or not isinstance(payload, dict):
         return None
-    current_body = {key: value for key, value in payload.items() if key != "generated_at"}
-    existing_body = {key: value for key, value in existing.items() if key != "generated_at"}
+    current_body = {
+        key: value for key, value in payload.items() if key != "generated_at"
+    }
+    existing_body = {
+        key: value for key, value in existing.items() if key != "generated_at"
+    }
     timestamp = existing.get("generated_at")
     return str(timestamp) if current_body == existing_body and timestamp else None
 
@@ -267,10 +278,18 @@ def latest_subdir_file(
     """
     nested_root = report_dir / prefix
     if nested_root.is_dir():
-        candidates = sorted([p for p in nested_root.iterdir() if p.is_dir()], key=lambda p: p.name, reverse=True)
+        candidates = sorted(
+            [p for p in nested_root.iterdir() if p.is_dir()],
+            key=lambda p: p.name,
+            reverse=True,
+        )
     else:
         candidates = sorted(
-            [p for p in report_dir.glob(f"{prefix}_*/") if p.is_dir() and p.name.startswith(prefix)],
+            [
+                p
+                for p in report_dir.glob(f"{prefix}_*/")
+                if p.is_dir() and p.name.startswith(prefix)
+            ],
             key=lambda p: p.name,
             reverse=True,
         )
@@ -278,7 +297,9 @@ def latest_subdir_file(
     if not candidates:
         if not required:
             return None
-        raise FileNotFoundError(f"No report directories match: {report_dir / (prefix + '_*')}")
+        raise FileNotFoundError(
+            f"No report directories match: {report_dir / (prefix + '_*')}"
+        )
     return candidates[0] / filename
 
 
@@ -301,7 +322,8 @@ def latest_source_subdir_file(
     else:
         candidates = sorted(
             [
-                path for path in report_dir.glob(f"{prefix}_*/")
+                path
+                for path in report_dir.glob(f"{prefix}_*/")
                 if path.is_dir() and path.name.startswith(prefix)
             ],
             key=lambda path: path.name,
@@ -313,7 +335,9 @@ def latest_source_subdir_file(
             return report
     if not required:
         return None
-    raise FileNotFoundError(f"No tracked report directories match: {report_dir / (prefix + '_*')}")
+    raise FileNotFoundError(
+        f"No tracked report directories match: {report_dir / (prefix + '_*')}"
+    )
 
 
 def repo_path(path_like: str | Path) -> Path:

@@ -17,17 +17,28 @@ import build_release_integrity as bri  # noqa: E402
 
 
 def test_matching_built_deployment_is_not_pending():
-    assert bri.deployment_pending_reasons(
-        "abc123",
-        {"commit": "abc123", "pages_status": "built", "verification_overall_ok": True},
-        deployed_content_differs=False,
-    ) == []
+    assert (
+        bri.deployment_pending_reasons(
+            "abc123",
+            {
+                "commit": "abc123",
+                "pages_status": "built",
+                "verification_overall_ok": True,
+            },
+            deployed_content_differs=False,
+        )
+        == []
+    )
 
 
 def test_mismatched_deployment_is_explicitly_pending():
     reasons = bri.deployment_pending_reasons(
         "current",
-        {"commit": "deployed", "pages_status": "built", "verification_overall_ok": True},
+        {
+            "commit": "deployed",
+            "pages_status": "built",
+            "verification_overall_ok": True,
+        },
         deployed_content_differs=True,
     )
     assert reasons == ["tracked release content differs from the deployed commit"]
@@ -36,7 +47,11 @@ def test_mismatched_deployment_is_explicitly_pending():
 def test_incomplete_live_evidence_is_explicitly_pending():
     reasons = bri.deployment_pending_reasons(
         "current",
-        {"commit": "current", "pages_status": "building", "verification_overall_ok": False},
+        {
+            "commit": "current",
+            "pages_status": "building",
+            "verification_overall_ok": False,
+        },
         deployed_content_differs=False,
     )
     assert reasons == ["Pages status is building", "live verification is not passing"]
@@ -62,17 +77,25 @@ def test_release_envelope_rejects_a_stale_pages_source_commit() -> None:
         raise AssertionError("stale source revision was accepted")
 
 
-def test_changed_integrity_body_gets_fresh_timestamp_then_reaches_fixed_point(tmp_path, monkeypatch):
+def test_changed_integrity_body_gets_fresh_timestamp_then_reaches_fixed_point(
+    tmp_path, monkeypatch
+):
     out = tmp_path / "release-integrity.json"
     old = {"generated_at": "2026-08-13T00:00:00Z", "source_sha256": {"source": "old"}}
     out.write_text(json.dumps(old) + "\n", encoding="utf-8")
-    candidate = {"generated_at": "2026-10-02T00:00:00Z", "source_sha256": {"source": "new"}}
+    candidate = {
+        "generated_at": "2026-10-02T00:00:00Z",
+        "source_sha256": {"source": "new"},
+    }
     monkeypatch.setattr(bri, "OUT", out)
     monkeypatch.setattr(bri, "build_payload", lambda: dict(candidate))
     monkeypatch.setattr(sys, "argv", ["build_release_integrity.py"])
     monkeypatch.setattr(bri, "REPO_ROOT", tmp_path)
     bri.main()
-    assert json.loads(out.read_text(encoding="utf-8"))["generated_at"] == "2026-10-02T00:00:00Z"
+    assert (
+        json.loads(out.read_text(encoding="utf-8"))["generated_at"]
+        == "2026-10-02T00:00:00Z"
+    )
     written = out.read_bytes()
     candidate["generated_at"] = "2026-10-03T00:00:00Z"
     bri.main()

@@ -26,7 +26,9 @@ def test_schema_preserves_distinct_canonical_and_artifact_doi_fields():
     )
 
     assert metadata.artifact_doi == "10.5281/zenodo.101"
-    assert metadata.to_dict()["artifact_doi_url"] == "https://doi.org/10.5281/zenodo.101"
+    assert (
+        metadata.to_dict()["artifact_doi_url"] == "https://doi.org/10.5281/zenodo.101"
+    )
     assert metadata.validate() == []
 
 

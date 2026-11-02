@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-24T07:02:36Z",
-  "source_commit_at_generation": "66014291857ed8ad30b08c5fdec39822df63a181",
+  "generated_at": "2026-11-02T02:16:39Z",
+  "source_commit_at_generation": "3d9dd5e182613340db7ee1c3d18cd5fc3a7f35e6",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -9,43 +9,43 @@
     "python": ">=3.15 (pyproject.toml)",
     "project_version": "0.1.0",
     "orchestrator_sha256": {
-      "pyproject.toml": "6a1dd7a310ef6076adf2a5c41e2098629df0aa388cd8cdc62c643a1435f8a628",
+      "pyproject.toml": "b9843f3555052f844441ee826f89d6d9ab8a4caefc8ca4f0bff9937f1a6d74c7",
       ".python-version": "1253c91eccb2aac1c6ff2ac03fd69c1aaa0b221abd3d1bf5b563c12602452b4e",
-      "uv.lock": "2b5c23b7ec64be4508816fe353327bbce4cffbe66ed3f3cb9a530a67ff8788d6",
-      "code/orchestrators/regenerate_all.py": "96ed18040dd263d0fba81b8ebc778228664841ccf3481422ff36c166bd9f304b",
-      "code/orchestrators/build_pages_artifact.py": "c0b20582c4b83a62ef1a57f168eda1e0779095fe7a4fbdcabecc5985be8846a4",
-      "code/orchestrators/build_agent_index.py": "b3b1507a8c905c4eee13abd82716f56e1dac9de7487c6220b9b4f927f3ccb3d0",
-      "code/orchestrators/build_coverage_exceptions.py": "92a868e31c2ed82eb8d7fc9cbe648aecb81d989a055670bcb3741eaa3a4da888",
-      "code/orchestrators/classify_repositories.py": "1923005202420c1d121d5b237a5af5e0831d2becc3caf36dd1b6f8f0b4fae2b6",
-      "code/orchestrators/audit_assets.py": "1afba627a15b9eda98014e8250d3df4a75fa3e19c92a6caba855ce8ef3d0b890",
-      "code/src/public_integrity.py": "d0066f8e7ec596996b31e2e1ecc9de003e88c1e272c791dffd700de588563d5b",
-      "code/src/release_controls.py": "4defd7ac7bbd4bc12bbeea2a5b9b13e9bd349d9fd4419b98b81fd09f8021506d",
-      "code/src/work_identifiers.py": "d0bf05a1c743da7e87947769ee3526f263c171012e5d4a9234bad56b83dd4a9b"
+      "uv.lock": "a31e8ef189b3c0c92bc72998d580bae76b1889b3ca3f27306000b6306dca55cc",
+      "code/orchestrators/regenerate_all.py": "0c02ffb579e25ae343f7861fde4c2223bf3f22abb0ca9435fe53720b3bd8ec88",
+      "code/orchestrators/build_pages_artifact.py": "53eef14c7862048d78855bf2c7a0c6be1ca0efc4011ee394a43478203b7bb634",
+      "code/orchestrators/build_agent_index.py": "c4f2b2aaa8959a2cecd7a6c02e754249c8105208c44fb66ef248d1b2f24a805a",
+      "code/orchestrators/build_coverage_exceptions.py": "29072d45f5b87ba2a9f029fcf29ef14e023621de574ae01e09672511b7c4744b",
+      "code/orchestrators/classify_repositories.py": "2de92ab1b0a98274e486bf4e86dd3839985fbbb75ca5d45e7991af2ec29f1020",
+      "code/orchestrators/audit_assets.py": "5e63be3639b9f2af31f7bea94a30c27c1393a9220d6ae9f5f23a4d0bb28e3bd5",
+      "code/src/public_integrity.py": "5d7d2e9526f3a68e7d823929cd1df32b5190e6ec73ee6f20dfd947ccc9ea2650",
+      "code/src/release_controls.py": "139210ec8ff1ee4351d3424e133cfe18db0948ef4ec3063d0be51a9a6ea9857e",
+      "code/src/work_identifiers.py": "f27b1771074f0c2af555c12e21779a3df347c701339d6477358f9c301b74e1b3"
     }
   },
   "source_sha256": {
-    "pages/BIBLIOGRAPHY.md": "af56cc1c902d3183f80ba031b7523c49989717ffdc433a79ba45d4908866fe3f",
-    "data/work-identifiers.json": "6b222b0c916b1949d40a745291b00e303a2d30857523cc288236d1638006fbb8",
-    "pages/SOFTWARE.md": "b2fa2a747d26138c64f21208513171e7e86efe4ce5c9512f32bbade392095994",
+    "pages/BIBLIOGRAPHY.md": "bdb618bde68940de0f4b70595efc1ecfdb83fbddf42b2e91dafb7d77bf3449db",
+    "data/work-identifiers.json": "122e88b0fee02cfd02a205288a21d6fe5738bc1748d1c5597a8f4a545e493e60",
+    "pages/SOFTWARE.md": "c7007672daf7e696a90f6332a0fd4c42e9ce8a7190f33ded724c6e1a1d6a628e",
     "resume/source.json": "69cbd668ee8f0b859f525eef8216955dbf0eb87490ac51e01493996c81f2202a",
-    "data/current-counts.json": "87dac247aa398bfe74e27a79dbf849e3769555f1fa4798be3b8e6565110fbe7a",
-    "data/coverage-exceptions.json": "16ce9c455abf9ba7868369f24e6bacbf508fa07a0109d28f8b97ba82b0b8ecae",
-    "data/repository-classification.json": "0c66c09c69e424113868eebd2153ddb84d09ccc5d6202042d3d0f9eea349abd9",
-    "data/agent-index.json": "d2aece3e24f9b6a6c36edf1900164181efb5d798fd3cf0546e95b464a0684341",
-    "data/generated-manifest.json": "48af73a732ad73f248f2c9553d01e5d59da67cb87f68fbbe21186e02cdba1ede",
-    "data/pages-artifact-manifest.json": "c7ecd86b7642ecedd09299669f9426d1e4d6f2fa2ee2beb652f43a17c4438d2c"
+    "data/current-counts.json": "349885a19cae9e06961bf183e4ce699e5f7b47d895fe67623b67c5fa97953449",
+    "data/coverage-exceptions.json": "90379749c88843657df06e96096f7a6adc962b6ce5de159c7e41a7a715f73673",
+    "data/repository-classification.json": "9af19b0c2621b0ac1f8d4ad6e93fd71e6fe31c7c3f4597bb12bce9cbc442339c",
+    "data/agent-index.json": "c53baeb09dffb7bfd2ae4fcad287f35fc1459369804476613576136b8f4553ba",
+    "data/generated-manifest.json": "f6f40718c20c8b1404f41d57c48d659ea4f012b8cd9e05b0462faa8648d04f06",
+    "data/pages-artifact-manifest.json": "ead663ac92371db2656ee1f6905502a502c8ac66bbef80a7b6255979d6bdaa30"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "66014291857ed8ad30b08c5fdec39822df63a181",
-    "artifact_file_count": 6117,
-    "artifact_bytes": 920305414,
+    "source_commit_at_generation": "3d9dd5e182613340db7ee1c3d18cd5fc3a7f35e6",
+    "artifact_file_count": 6142,
+    "artifact_bytes": 955993109,
     "omitted_paper_image_count": 8959,
-    "omitted_superseded_report_count": 673
+    "omitted_superseded_report_count": 702
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "66014291857ed8ad30b08c5fdec39822df63a181",
+    "candidate_source_commit": "3d9dd5e182613340db7ee1c3d18cd5fc3a7f35e6",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
@@ -54,14 +54,14 @@
     "policy": "No local filesystem paths, secret-like tokens, or unsafe URL schemes in public CV/source manifests."
   },
   "counts": {
-    "bibliography_docs_links": 209,
-    "bibliography_works": 226,
+    "bibliography_docs_links": 211,
+    "bibliography_works": 228,
     "domains": {
       "AII Ecosystem": 7,
       "Active Inference": 48,
       "Art & Synergetics": 16,
       "Cognitive Security": 37,
-      "Computational": 67,
+      "Computational": 69,
       "Entomology": 23,
       "Genetics & Biomedical": 13,
       "Presentations & Media": 14
@@ -69,27 +69,27 @@
     "extracted_images": 8959,
     "full_text_papers": 205,
     "generated_exports": {
-      "data_publications_ld_main_entity": 226,
-      "data_software_json": 168,
-      "data_software_ld_main_entity": 168,
-      "data_works_json": 226
+      "data_publications_ld_main_entity": 228,
+      "data_software_json": 172,
+      "data_software_ld_main_entity": 172,
+      "data_works_json": 228
     },
     "github_inventory": {
-      "ActiveInferenceInstitute": 45,
+      "ActiveInferenceInstitute": 46,
       "archived": 5,
-      "curated": 168,
-      "docxology": 241,
+      "curated": 172,
+      "docxology": 245,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 105,
-      "forks": 107,
-      "primary_ActiveInferenceInstitute": 43,
-      "primary_docxology": 136,
-      "primary_total": 179,
+      "fork_docxology": 106,
+      "forks": 108,
+      "primary_ActiveInferenceInstitute": 44,
+      "primary_docxology": 139,
+      "primary_total": 183,
       "private": 0,
-      "public": 286,
-      "recently_updated": 225,
-      "total": 286,
-      "uncataloged": 118
+      "public": 291,
+      "recently_updated": 215,
+      "total": 291,
+      "uncataloged": 119
     },
     "paired_publication_decisions": {
       "decision": "mixed",
@@ -98,37 +98,37 @@
       "raw_candidates": 654
     },
     "paired_publications": {
-      "already_reviewed": 17,
+      "already_reviewed": 549,
       "create_new": 0,
-      "github_releases": 14,
+      "github_releases": 318,
       "needs_review": 0,
-      "pairs": 17,
-      "software_catalogued": 0,
-      "strong_pairs": 1,
-      "update_existing": 0,
-      "zenodo_records": 170
+      "pairs": 555,
+      "software_catalogued": 1,
+      "strong_pairs": 73,
+      "update_existing": 5,
+      "zenodo_records": 173
     },
-    "paper_folder_docs": 209,
+    "paper_folder_docs": 211,
     "papers_with_images": 145,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
-      "GitHub user ActiveInferenceInstitute": 45,
-      "GitHub user docxology": 239,
+      "GitHub user ActiveInferenceInstitute": 46,
+      "GitHub user docxology": 245,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
-      "Zenodo ORCID-linked records": 164,
-      "Zenodo exact-name creator records": 76
+      "Zenodo ORCID-linked records": 169,
+      "Zenodo exact-name creator records": 80
     },
     "software": {
-      "active_inference_institute": 41,
-      "curated_total": 168,
-      "docxology_owned": 127
+      "active_inference_institute": 42,
+      "curated_total": 172,
+      "docxology_owned": 130
     },
     "types": {
       "Books": 5,
       "Courses": 3,
-      "Papers": 205,
+      "Papers": 207,
       "Playbooks": 2,
       "Presentations": 8,
       "Report": 1,

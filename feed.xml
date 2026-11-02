@@ -6,7 +6,7 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2026 16:59:43 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 23:34:43 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
@@ -27,6 +27,20 @@
       <guid isPermaLink="false">site-update-2026-05-13-works</guid>
       <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
+    </item>
+    <item>
+      <title>GNN-based active inference for Battleship</title>
+      <link>https://danielarifriedman.com/works/Friedman2026GNNBasedActiveInference232.html</link>
+      <guid isPermaLink="false">work-Friedman2026GNNBasedActiveInference232</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
+    </item>
+    <item>
+      <title>Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method</title>
+      <link>https://danielarifriedman.com/works/Friedman2026ActiveInferenceLanguageModel231.html</link>
+      <guid isPermaLink="false">work-Friedman2026ActiveInferenceLanguageModel231</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics</title>
@@ -186,20 +200,6 @@
       <title>PROJECT BOND — The Special-Agent Operations Compendium</title>
       <link>https://danielarifriedman.com/works/Friedman2026PROJECTBONDSpecialAgent208.html</link>
       <guid isPermaLink="false">work-Friedman2026PROJECTBONDSpecialAgent208</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>THALIA: Typed Harness with Analytical Lexical-Integrated Architecture</title>
-      <link>https://danielarifriedman.com/works/Friedman2026THALIATypedHarnessAnalytical207.html</link>
-      <guid isPermaLink="false">work-Friedman2026THALIATypedHarnessAnalytical207</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>Codomyrmex: An Artificial Ecology for Agentic Software Development</title>
-      <link>https://danielarifriedman.com/works/Friedman2026CodomyrmexArtificialEcologyAgentic206.html</link>
-      <guid isPermaLink="false">work-Friedman2026CodomyrmexArtificialEcologyAgentic206</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>

@@ -1093,6 +1093,16 @@
       "note": "Public fork; retained in the complete inventory without an original-software promotion.",
       "github_id": 1420850101,
       "github_node_id": "R_kgDOVLBztQ"
+    },
+    {
+      "full_name": "docxology/specification",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-31",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-10-26 (Typed Context Protocol community-group draft); excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1434805739,
+      "github_node_id": "R_kgDOVYVl6w"
     }
   ]
 }

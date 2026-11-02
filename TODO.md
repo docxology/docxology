@@ -8,7 +8,7 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-10-18; only unfinished work and recurring checks remain.
+- Last reviewed: 2026-11-01; only unfinished work and recurring checks remain.
   Completed implementation and source-review history lives in CHANGELOG.md and
   the linked dated reports. Effort estimates below are separate from priority.
 
@@ -17,7 +17,7 @@ criteria, and dependencies. Re-review this file before each public release.
 | Effort | Unfinished work | Main dependency |
 | --- | --- | --- |
 | Minor | Search Console cleanup and selected URL inspections; retry unavailable source queries | Signed-in owner access, public source availability |
-| Medium | Named visual review and revision-bound release attestation; fresh authenticated Scholar observation; current-candidate Lighthouse review; Pages growth/retention consumer migration; Scholar pilot eligibility/projection review | Reviewer/access, measured candidate evidence, reviewed source/projection contract |
+| Medium | Named visual review and revision-bound release attestation; current-candidate Lighthouse review; Pages growth/retention consumer migration; Scholar pilot eligibility/projection review | Reviewer/access, measured candidate evidence, reviewed source/projection contract |
 | Major | Deferred licensed full-text acquisition and originating-paper corrections; manuscript format inspection and editorial review; managed-profile security scan and finding disposition | Rights holders, depositors/authors, editorial decisions, required scan runtime |
 
 The Scholar same-directory PDF gap now has a [budget-safe pilot proposal](reports/scholar_pdf_placement_proposal_2026-10-13.md)
@@ -66,8 +66,13 @@ Recurring checks below are operating obligations, not unfinished feature work.
   primary-repository promotion requires an individual source-backed decision.
   Review the current classification queue rather than relying on historical
   queue counts.
-- Open work: none in the reviewed queue; retain this as a refresh-triggered
-  classification check, not a pending catalog addition.
+- Open work: none. The 2026-10-31 refresh queued four new primary repositories
+  (`rikishi`, `region-intel`, `davis-ca-intel`, and AII
+  `active_inference_battleship`) and the fork `specification`; all were
+  individually reviewed on 2026-11-01 and the four primaries were promoted
+  into `pages/SOFTWARE.md` with source-backed descriptions, while the fork was
+  acknowledged under the standing fork policy. Retain this as a
+  refresh-triggered classification check.
 
 ### DOC-006 — Refresh external evidence and coverage exceptions
 
@@ -78,12 +83,14 @@ Recurring checks below are operating obligations, not unfinished feature work.
   restrictions permit; repeat source refreshes on their declared triggers.
   Refresh Scholar only after a direct authenticated observation. A live Flickr
   refresh needs its approved API-key workflow.
-- Latest check (2026-10-18): refreshed the live snapshot, paginated source
-  inventory, complete GitHub inventory and full GitHub/Zenodo pairing scan.
-  Publication and software decisions, archive boundaries and access limitations
-  are recorded in [the refresh review](reports/publication_refresh_review_2026-10-16.json).
-  The current [source review](reports/public_source_review_2026-10-18.md) keeps
-  ambiguous historical release pairs and inaccessible profiles explicit.
+- Latest reviewed refresh (2026-11-01): the 2026-10-31 public-source snapshot
+  and complete GitHub inventory are paired with the 2026-11-01 GitHub/Zenodo
+  report and individual repository-promotion decisions. The retained paginated
+  source inventory is dated 2026-10-23. The
+  [source review](reports/public_source_review_2026-11-01.md) records the exact
+  inputs and keeps changed observations and access limitations explicit.
+  A fresh direct authenticated Scholar owner-profile observation was recorded
+  on 2026-11-01 through the snapshot/receipt recorder.
 - Deliverable: refresh ORCID, Crossref, Zenodo, PubMed, Europe PMC, GitHub, Scholar, organizational, teaching, art, and software evidence; review `data/coverage-exceptions.json`
 - Acceptance: only verified metadata is applied, access dates and caveats remain visible, and current coverage is linked from agent and human discovery surfaces
 - Dependencies: public-source APIs, primary profile pages, coverage report
@@ -192,18 +199,19 @@ Recurring checks below are operating obligations, not unfinished feature work.
   checks and the [prerequisite audit](reports/scholar_readiness.md) are implemented.
   Content/PDF eligibility and actual indexing still require separate review;
   see [scholar-inclusion.md](docs/seo/scholar-inclusion.md).
-- Access: the owner's signed-in Search Console property was available on
-  2026-10-05; observations are in
-  [the dated report](reports/gsc_observations_2026-10-05.md) and the procedure
-  in [gsc-followup.md](docs/seo/gsc-followup.md). Open Search Console actions:
-  - Remove the retired `sitemap-images.xml` entry from the Sitemaps report. The
-    file and its generator were retired on 2026-08-28 and the URL returns 404 by
-    design; never recreate it to clear the entry.
-  - From 2026-10-06, request indexing for selected indexable work and video
-    detail pages, spread across days for the quota; never the noindex `videos/`
-    index or redirect stubs.
-  - Recheck Page indexing and the inspected URLs around 2026-10-12, then weekly
-    through about 2026-11-02.
+- Latest signed-in Search Console follow-up: 2026-11-01, recorded in
+  [the dated report](reports/gsc_observations_2026-11-01.md). Only the successful
+  current sitemap remains submitted. Open actions:
+  - Verify the three restored legacy work routes after deployment, then monitor
+    Google's recrawl. Do not validate the whole 404 bucket while historical QA
+    manifest custody and retention remain unresolved.
+  - Request indexing for selected indexable canonical work and video detail
+    pages, spread across days for the quota; never the noindex `videos/` index
+    or redirect stubs.
+  - Recheck Page indexing around 2026-11-02, then weekly. The observed All known
+    pages dataset was last updated 2026-10-22 and cannot certify current indexing.
+  - Follow [gsc-followup.md](docs/seo/gsc-followup.md); never recreate or resubmit
+    the retired image sitemap.
 
 ## P1 — Pages and repository growth
 

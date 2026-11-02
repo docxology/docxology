@@ -3,6 +3,7 @@
 Metadata remains untouched. Block boundaries and safe anchor destinations are
 retained in display text; each HTML/Markdown consumer still escapes its output.
 """
+
 from __future__ import annotations
 
 import re
@@ -11,17 +12,58 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit
 
 
-_BLOCKS = frozenset({
-    "p", "div", "section", "article", "blockquote", "pre", "ul", "ol", "li",
-    "h1", "h2", "h3", "h4", "h5", "h6", "table", "thead", "tbody", "tr",
-})
-_INLINE = frozenset({
-    "a", "strong", "em", "b", "i", "u", "code", "span", "sup", "sub",
-    "s", "del", "ins", "small", "mark", "abbr", "cite", "q", "kbd", "samp",
-})
+_BLOCKS = frozenset(
+    {
+        "p",
+        "div",
+        "section",
+        "article",
+        "blockquote",
+        "pre",
+        "ul",
+        "ol",
+        "li",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "table",
+        "thead",
+        "tbody",
+        "tr",
+    }
+)
+_INLINE = frozenset(
+    {
+        "a",
+        "strong",
+        "em",
+        "b",
+        "i",
+        "u",
+        "code",
+        "span",
+        "sup",
+        "sub",
+        "s",
+        "del",
+        "ins",
+        "small",
+        "mark",
+        "abbr",
+        "cite",
+        "q",
+        "kbd",
+        "samp",
+    }
+)
 _HIDDEN = frozenset({"script", "style", "template", "iframe", "object"})
 _TAGS = _BLOCKS | _INLINE | _HIDDEN | {"br", "hr", "td", "th", "html", "body"}
-_HTML_TAG = re.compile(r"</?(?:" + "|".join(sorted(_TAGS)) + r")(?:\s[^<>]*|\s*/?)>", re.I)
+_HTML_TAG = re.compile(
+    r"</?(?:" + "|".join(sorted(_TAGS)) + r")(?:\s[^<>]*|\s*/?)>", re.I
+)
 
 
 def _safe_destination(value: str) -> str:
@@ -59,7 +101,9 @@ class _AbstractParser(HTMLParser):
         elif tag in {"td", "th"}:
             self.parts.append(" ")
         elif tag == "a":
-            destination = next((value or "" for name, value in attrs if name == "href"), "")
+            destination = next(
+                (value or "" for name, value in attrs if name == "href"), ""
+            )
             self.anchors.append((len(self.parts), _safe_destination(destination)))
         elif tag not in _TAGS:
             # Unknown tags may be literal technical notation such as <T>.

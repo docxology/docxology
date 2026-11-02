@@ -32,7 +32,9 @@ from docxology_tools.site_nav import (  # noqa: E402
 def test_breadcrumb_jsonld_preserves_labels_without_allowing_script_termination():
     label = 'Art & "Science" </script><img src=x onerror=alert(1)>'
     rendered = breadcrumb_jsonld_script([(label, "works/example.html")])
-    match = re.fullmatch(r'\s*<script type="application/ld\+json">\s*(.*?)\s*</script>', rendered, re.S)
+    match = re.fullmatch(
+        r'\s*<script type="application/ld\+json">\s*(.*?)\s*</script>', rendered, re.S
+    )
     assert match is not None
     assert "<" not in match.group(1)
     assert rendered.count("</script>") == 1
@@ -85,7 +87,10 @@ def test_social_meta_tags_emits_card_and_alt():
     )
     assert 'name="twitter:card" content="summary_large_image"' in block
     assert 'property="og:image:alt"' in block
-    assert 'name="twitter:image" content="https://danielarifriedman.com/og-image.jpg"' in block
+    assert (
+        'name="twitter:image" content="https://danielarifriedman.com/og-image.jpg"'
+        in block
+    )
     assert 'name="twitter:image:alt" content="Title — Daniel Ari Friedman"' in block
 
 

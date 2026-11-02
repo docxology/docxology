@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 
-
 from submit_indexnow import indexnow_urls  # noqa: E402
 
 

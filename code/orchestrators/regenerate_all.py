@@ -104,22 +104,29 @@ class RegenerationLockError(RuntimeError):
 def _regeneration_lock(repo_root: Path) -> Iterator[int]:
     """Acquire one private, nonblocking POSIX lock without replacing its inode."""
     if fcntl is None or not hasattr(os, "O_NOFOLLOW") or not hasattr(os, "O_DIRECTORY"):
-        raise RegenerationLockError("regeneration requires POSIX flock and safe file opens")
+        raise RegenerationLockError(
+            "regeneration requires POSIX flock and safe file opens"
+        )
     directory = repo_root.resolve() / ".docxology"
     descriptor = directory_descriptor = None
     try:
         try:
             directory.mkdir(mode=0o700, exist_ok=True)
             directory_descriptor = os.open(
-                directory, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW,
+                directory,
+                os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW,
             )
             descriptor = os.open(
-                "regeneration.lock", os.O_RDWR | os.O_CREAT | os.O_NOFOLLOW | os.O_NONBLOCK,
-                0o600, dir_fd=directory_descriptor,
+                "regeneration.lock",
+                os.O_RDWR | os.O_CREAT | os.O_NOFOLLOW | os.O_NONBLOCK,
+                0o600,
+                dir_fd=directory_descriptor,
             )
             metadata = os.fstat(descriptor)
             if not stat.S_ISREG(metadata.st_mode) or metadata.st_nlink != 1:
-                raise RegenerationLockError("regeneration lock must be a regular, unshared file")
+                raise RegenerationLockError(
+                    "regeneration lock must be a regular, unshared file"
+                )
             os.fchmod(descriptor, 0o600)
             try:
                 fcntl.flock(descriptor, fcntl.LOCK_EX | fcntl.LOCK_NB)
@@ -129,7 +136,9 @@ def _regeneration_lock(repo_root: Path) -> Iterator[int]:
                     "wait for it to finish and retry (do not delete the lock file)"
                 ) from exc
         except OSError as exc:
-            raise RegenerationLockError(f"cannot acquire regeneration lock: {exc}") from exc
+            raise RegenerationLockError(
+                f"cannot acquire regeneration lock: {exc}"
+            ) from exc
         yield descriptor
     finally:
         # Closing releases flock on success or failure. Do not explicitly unlock:
@@ -141,17 +150,24 @@ def _regeneration_lock(repo_root: Path) -> Iterator[int]:
 
 
 def _run(
-    script: str, args: list[str], *, repo_root: Path = REPO_ROOT,
+    script: str,
+    args: list[str],
+    *,
+    repo_root: Path = REPO_ROOT,
     lock_descriptor: int | None = None,
 ) -> None:
     # ReportLab is pinned in pyproject.toml for byte-identical PDFs. Use the
     # locked uv environment for the CV generator even when this driver is
     # launched with a different system Python.
-    interpreter = ["uv", "run", "python3"] if script == "build_resume.py" else [sys.executable]
+    interpreter = (
+        ["uv", "run", "python3"] if script == "build_resume.py" else [sys.executable]
+    )
     cmd = [*interpreter, f"code/orchestrators/{script}", *args]
     print(f"\n=== {script} {' '.join(args)} ".rstrip().ljust(72, "="))
     subprocess.run(
-        cmd, cwd=repo_root, check=True,
+        cmd,
+        cwd=repo_root,
+        check=True,
         pass_fds=() if lock_descriptor is None else (lock_descriptor,),
     )
 
@@ -175,14 +191,22 @@ def run_regeneration(
     """
     with _regeneration_lock(repo_root) as lock_descriptor:
         return _run_regeneration_locked(
-            force=force, runner=runner, repo_root=repo_root, emit=emit, steps=steps,
+            force=force,
+            runner=runner,
+            repo_root=repo_root,
+            emit=emit,
+            steps=steps,
             lock_descriptor=lock_descriptor,
         )
 
 
 def _run_regeneration_locked(
-    *, force: bool, runner: Callable[[str, list[str]], None] | None,
-    repo_root: Path, emit: Callable[[str], None], steps: tuple[GenerationStep, ...],
+    *,
+    force: bool,
+    runner: Callable[[str, list[str]], None] | None,
+    repo_root: Path,
+    emit: Callable[[str], None],
+    steps: tuple[GenerationStep, ...],
     lock_descriptor: int,
 ) -> tuple[int, int]:
     """Run a pass under its caller's lock; never acquire recursively."""
@@ -204,7 +228,9 @@ def _run_regeneration_locked(
             save_regeneration_state(persisted_state, repo_root)
         if runner is None:
             _run(
-                step.script, list(step.write_args), repo_root=repo_root,
+                step.script,
+                list(step.write_args),
+                repo_root=repo_root,
                 lock_descriptor=lock_descriptor,
             )
         else:
@@ -212,8 +238,12 @@ def _run_regeneration_locked(
         if step.inputs:
             if before is None:
                 state.pop(step.identifier, None)
-            elif not record_step_state(step, state, repo_root, expected_fingerprint=before):
-                emit(f"cache invalidated {step.identifier}: declared inputs changed during writer")
+            elif not record_step_state(
+                step, state, repo_root, expected_fingerprint=before
+            ):
+                emit(
+                    f"cache invalidated {step.identifier}: declared inputs changed during writer"
+                )
         ran += 1
     if ran:
         save_regeneration_state(state, repo_root)
@@ -239,21 +269,35 @@ def run_regeneration_passes(
         raise ValueError("regeneration passes must be between 1 and 4")
     with _regeneration_lock(repo_root) as lock_descriptor:
         return _run_regeneration_passes_locked(
-            passes=passes, force=force, runner=runner, repo_root=repo_root,
-            emit=emit, steps=steps, lock_descriptor=lock_descriptor,
+            passes=passes,
+            force=force,
+            runner=runner,
+            repo_root=repo_root,
+            emit=emit,
+            steps=steps,
+            lock_descriptor=lock_descriptor,
         )
 
 
 def _run_regeneration_passes_locked(
-    *, passes: int, force: bool, runner: Callable[[str, list[str]], None] | None,
-    repo_root: Path, emit: Callable[[str], None], steps: tuple[GenerationStep, ...],
+    *,
+    passes: int,
+    force: bool,
+    runner: Callable[[str, list[str]], None] | None,
+    repo_root: Path,
+    emit: Callable[[str], None],
+    steps: tuple[GenerationStep, ...],
     lock_descriptor: int,
 ) -> tuple[int, int]:
     ran = skipped = 0
     for number in range(1, passes + 1):
         emit(f"Local regeneration pass {number}/{passes}")
         pass_ran, pass_skipped = _run_regeneration_locked(
-            force=force, runner=runner, repo_root=repo_root, emit=emit, steps=steps,
+            force=force,
+            runner=runner,
+            repo_root=repo_root,
+            emit=emit,
+            steps=steps,
             lock_descriptor=lock_descriptor,
         )
         ran += pass_ran
@@ -265,16 +309,34 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
-    parser.add_argument("--validate", action="store_true",
-                        help="run validate_repo.py after regeneration")
-    parser.add_argument("--force", action="store_true",
-                        help="run every step even when its declared inputs are unchanged")
-    parser.add_argument("--passes", type=int, choices=range(1, 5), default=2,
-                        help="ordered local passes (default: 2; 1 is diagnostic)")
-    parser.add_argument("--list", action="store_true", dest="list_only",
-                        help="print the ordered plan and exit without running anything")
-    parser.add_argument("--allow-dirty-prepayload-evidence", action="store_true",
-                        help="with --validate, permit only current HEAD-bound dirty source snapshots in the no-write Pages check")
+    parser.add_argument(
+        "--validate",
+        action="store_true",
+        help="run validate_repo.py after regeneration",
+    )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="run every step even when its declared inputs are unchanged",
+    )
+    parser.add_argument(
+        "--passes",
+        type=int,
+        choices=range(1, 5),
+        default=2,
+        help="ordered local passes (default: 2; 1 is diagnostic)",
+    )
+    parser.add_argument(
+        "--list",
+        action="store_true",
+        dest="list_only",
+        help="print the ordered plan and exit without running anything",
+    )
+    parser.add_argument(
+        "--allow-dirty-prepayload-evidence",
+        action="store_true",
+        help="with --validate, permit only current HEAD-bound dirty source snapshots in the no-write Pages check",
+    )
     args = parser.parse_args()
     if args.allow_dirty_prepayload_evidence and not args.validate:
         parser.error("--allow-dirty-prepayload-evidence requires --validate")
@@ -291,8 +353,12 @@ def main() -> int:
     try:
         with _regeneration_lock(REPO_ROOT) as lock_descriptor:
             ran, skipped = _run_regeneration_passes_locked(
-                force=args.force, passes=args.passes, repo_root=REPO_ROOT,
-                runner=None, emit=print, steps=LOCAL_GENERATION_STEPS,
+                force=args.force,
+                passes=args.passes,
+                repo_root=REPO_ROOT,
+                runner=None,
+                emit=print,
+                steps=LOCAL_GENERATION_STEPS,
                 lock_descriptor=lock_descriptor,
             )
             if args.validate:
@@ -302,16 +368,22 @@ def main() -> int:
                     command.append("--allow-dirty-prepayload-evidence")
                 subprocess.run(
                     command,
-                    cwd=REPO_ROOT, check=True, pass_fds=(lock_descriptor,),
+                    cwd=REPO_ROOT,
+                    check=True,
+                    pass_fds=(lock_descriptor,),
                 )
     except RegenerationLockError as exc:
         print(f"regeneration refused: {exc}", file=sys.stderr)
         return 1
 
-    print(f"\nRan {ran} local surfaces (skipped {skipped} with unchanged declared inputs).")
-    print("Note: network freshness (GitHub inventory, live-site snapshot, public sources) "
-          "was NOT run — do that deliberately per docs/operations/publication-sync.md. "
-          "Use --force to ignore skip-on-unchanged state and rebuild every surface.")
+    print(
+        f"\nRan {ran} local surfaces (skipped {skipped} with unchanged declared inputs)."
+    )
+    print(
+        "Note: network freshness (GitHub inventory, live-site snapshot, public sources) "
+        "was NOT run — do that deliberately per docs/operations/publication-sync.md. "
+        "Use --force to ignore skip-on-unchanged state and rebuild every surface."
+    )
 
     return 0
 

@@ -43,7 +43,11 @@ BIBLIOGRAPHY = REPO_ROOT / "pages" / "BIBLIOGRAPHY.md"
 
 
 def _rows_with_authors():
-    return [row for row in iter_bibliography_rows(BIBLIOGRAPHY) if row.folder and row.authors]
+    return [
+        row
+        for row in iter_bibliography_rows(BIBLIOGRAPHY)
+        if row.folder and row.authors
+    ]
 
 
 def _family(name: str) -> str:
@@ -60,15 +64,23 @@ def test_paper_citation_cff_matches_bibliography_title_and_authors():
         if not path.is_file():
             continue
         identity = cff._cff_citation_identity(path.read_text(encoding="utf-8"))
-        expected = cff._bibliography_identity({"title": row.title.strip(), "authors": list(row.authors)})
+        expected = cff._bibliography_identity(
+            {"title": row.title.strip(), "authors": list(row.authors)}
+        )
         if identity != expected:
             drift.append(row.folder)
-    assert not drift, f"CITATION.cff title/authors drifted from the bibliography: {drift[:10]}"
+    assert not drift, (
+        f"CITATION.cff title/authors drifted from the bibliography: {drift[:10]}"
+    )
 
 
 def test_paper_readme_byline_and_heading_follow_bibliography():
-    identifiers = json.loads((REPO_ROOT / "data/work-identifiers.json").read_text(encoding="utf-8"))["identifiers"]
-    contributors = json.loads((REPO_ROOT / "data/work-authors.json").read_text(encoding="utf-8"))["works"]
+    identifiers = json.loads(
+        (REPO_ROOT / "data/work-identifiers.json").read_text(encoding="utf-8")
+    )["identifiers"]
+    contributors = json.loads(
+        (REPO_ROOT / "data/work-authors.json").read_text(encoding="utf-8")
+    )["works"]
     drift = []
     for row in _rows_with_authors():
         path = REPO_ROOT / "papers" / row.folder / "README.md"
@@ -77,7 +89,9 @@ def test_paper_readme_byline_and_heading_follow_bibliography():
             continue  # hand-authored README: not owned by the generator
         byline = re.search(r"^\*\*(.+?)\*\* \(\d{4}\)", text, re.MULTILINE)
         heading = re.search(r"^# \S+ (.+)$", text, re.MULTILINE)
-        expected_authors = ", ".join(regenerate_docs.display_author_name(a) for a in row.authors)
+        expected_authors = ", ".join(
+            regenerate_docs.display_author_name(a) for a in row.authors
+        )
         key = identifiers[str(row.num)]["citation_key"]
         record = contributors[key]
         if record.get("contributor_role") == "editor":
@@ -85,7 +99,9 @@ def test_paper_readme_byline_and_heading_follow_bibliography():
             expected_authors += " (eds.)"
         if not byline or byline.group(1) != expected_authors:
             drift.append(f"{row.folder}: byline")
-        if not heading or heading.group(1) != regenerate_docs.clean_markdown_text(row.title):
+        if not heading or heading.group(1) != regenerate_docs.clean_markdown_text(
+            row.title
+        ):
             drift.append(f"{row.folder}: heading")
     assert not drift, f"paper README drifted from the bibliography: {drift[:10]}"
 
@@ -97,10 +113,14 @@ def test_generated_paper_docs_never_present_template_methods():
         if not regenerate_docs.is_generated_document("README.md", text):
             continue
         section = text.split("## Methods", 1)[-1].split("## Key Findings", 1)[0]
-        bullets = [line[2:].strip() for line in section.splitlines() if line.startswith("- ")]
+        bullets = [
+            line[2:].strip() for line in section.splitlines() if line.startswith("- ")
+        ]
         if any(not specific_methods([bullet]) for bullet in bullets):
             offenders.append(path.parent.name)
-    assert not offenders, f"template methods rendered as paper methods: {offenders[:10]}"
+    assert not offenders, (
+        f"template methods rendered as paper methods: {offenders[:10]}"
+    )
 
 
 def test_bibliography_authors_are_inverted_person_names_for_the_owner():
@@ -118,7 +138,10 @@ def test_bibliography_authors_are_inverted_person_names_for_the_owner():
 
 def test_specific_methods_drops_domain_templates_and_keeps_curated_methods():
     methods = [
-        {"name": "Field observation and behavioral assays", "description": "Applied ..."},
+        {
+            "name": "Field observation and behavioral assays",
+            "description": "Applied ...",
+        },
         {"name": "Quantitative PCR of the foraging gene"},
         "Deterministic software pipeline design",
     ]
@@ -141,13 +164,26 @@ def test_specific_findings_drops_placeholders_and_abstract_echoes():
 @pytest.mark.parametrize(
     ("author", "expected"),
     [
-        ({"family": "Daniel Ari Friedman", "given": "", "orcid": "0000-0001-6232-9096"}, "Friedman, Daniel Ari"),
-        ({"family": "Andrew Pashea", "given": "", "orcid": "0009-0004-4061-6296"}, "Pashea, Andrew"),
+        (
+            {
+                "family": "Daniel Ari Friedman",
+                "given": "",
+                "orcid": "0000-0001-6232-9096",
+            },
+            "Friedman, Daniel Ari",
+        ),
+        (
+            {"family": "Andrew Pashea", "given": "", "orcid": "0009-0004-4061-6296"},
+            "Pashea, Andrew",
+        ),
         # No ORCID: the string may be a pseudonym or collective — never split.
         ({"family": "Die Schwarze Katze", "given": ""}, "Die Schwarze Katze"),
         ({"family": "John Clippinger", "given": ""}, "John Clippinger"),
         # Multi-word family names with a given name are left intact.
-        ({"family": "St. Clere Smithe", "given": "Toby", "orcid": "x"}, "St. Clere Smithe, Toby"),
+        (
+            {"family": "St. Clere Smithe", "given": "Toby", "orcid": "x"},
+            "St. Clere Smithe, Toby",
+        ),
         ({"literal": "Active Inference Institute"}, "Active Inference Institute"),
         # Explicit owner-name correction for a mis-split Crossref deposit.
         ({"family": "Ari Friedman", "given": "Daniel"}, "Friedman, Daniel Ari"),
@@ -158,7 +194,9 @@ def test_format_author_undoes_registry_name_packing_only_when_safe(author, expec
 
 
 def test_display_author_name_inverts_family_given():
-    assert regenerate_docs.display_author_name("Ingram, Krista K.") == "Krista K. Ingram"
+    assert (
+        regenerate_docs.display_author_name("Ingram, Krista K.") == "Krista K. Ingram"
+    )
     assert regenerate_docs.display_author_name("John Clippinger") == "John Clippinger"
 
 
@@ -173,7 +211,7 @@ def test_skill_prefers_curated_abstract_including_explicit_none(abstract):
 
 def test_cff_reconcile_is_byte_stable_when_identity_matches():
     text = (
-        'cff-version: 1.2.0\ntitle: Example Title\nauthors:\n'
+        "cff-version: 1.2.0\ntitle: Example Title\nauthors:\n"
         '  - family-names: Friedman\n    given-names: Daniel A.\n    orcid: "x"\nidentifiers:\n  - type: doi\n'
     )
     citation = {"title": "Example Title", "authors": ["Friedman, Daniel A."]}
@@ -183,9 +221,12 @@ def test_cff_reconcile_is_byte_stable_when_identity_matches():
 def test_cff_reconcile_replaces_wrong_title_and_authors():
     text = (
         'cff-version: 1.2.0\ntitle: "ForagingGene"\nauthors:\n'
-        '  - family-names: Pilko\n    given-names: Anna\nidentifiers:\n  - type: doi\n'
+        "  - family-names: Pilko\n    given-names: Anna\nidentifiers:\n  - type: doi\n"
     )
-    citation = {"title": "Context-dependent expression", "authors": ["Ingram, Krista K.", "Friedman, Daniel A.", "Collective"]}
+    citation = {
+        "title": "Context-dependent expression",
+        "authors": ["Ingram, Krista K.", "Friedman, Daniel A.", "Collective"],
+    }
     out = cff.reconcile_cff_bibliography(text, citation)
     assert 'title: "Context-dependent expression"' in out
     assert "Pilko" not in out
@@ -198,7 +239,9 @@ def test_cff_reconcile_replaces_wrong_title_and_authors():
 
 def test_start_here_sync_counts_is_idempotent(tmp_path, monkeypatch):
     page = tmp_path / "start-here.html"
-    page.write_text((REPO_ROOT / "start-here.html").read_text(encoding="utf-8"), encoding="utf-8")
+    page.write_text(
+        (REPO_ROOT / "start-here.html").read_text(encoding="utf-8"), encoding="utf-8"
+    )
     monkeypatch.setattr(build_start_here, "PAGE", page)
     build_start_here.sync_counts()
     first = page.read_text(encoding="utf-8")
@@ -211,7 +254,14 @@ def test_start_here_sync_counts_is_idempotent(tmp_path, monkeypatch):
 
 
 def _norm_text(text: str) -> str:
-    for ligature, plain in (("ﬀ", "ff"), ("ﬁ", "fi"), ("ﬂ", "fl"), ("ﬃ", "ffi"), ("ﬄ", "ffl"), ("­", "")):
+    for ligature, plain in (
+        ("ﬀ", "ff"),
+        ("ﬁ", "fi"),
+        ("ﬂ", "fl"),
+        ("ﬃ", "ffi"),
+        ("ﬄ", "ffl"),
+        ("­", ""),
+    ):
         text = text.replace(ligature, plain)
     return " ".join(text.split())
 
@@ -225,22 +275,33 @@ def test_grounded_summary_evidence_occurs_verbatim_in_full_text():
     for path in sorted((REPO_ROOT / "papers").glob("*/metadata.json")):
         meta = json.loads(path.read_text(encoding="utf-8"))
         provenance = meta.get("summary_provenance")
-        if not isinstance(provenance, dict) or provenance.get("source") != "full_text.md":
+        if (
+            not isinstance(provenance, dict)
+            or provenance.get("source") != "full_text.md"
+        ):
             continue
         full_text = path.parent / "full_text.md"
-        assert full_text.is_file(), f"{path.parent.name}: grounded summary without full_text.md"
+        assert full_text.is_file(), (
+            f"{path.parent.name}: grounded summary without full_text.md"
+        )
         text = _norm_text(full_text.read_text(encoding="utf-8", errors="replace"))
         findings = meta.get("key_findings") or []
         evidence = meta.get("key_findings_evidence") or []
         if len(findings) != len(evidence):
-            failures.append(f"{path.parent.name}: key_findings/evidence length mismatch")
-        quotes = [m.get("evidence", "") for m in meta.get("methods") or []] + list(evidence)
+            failures.append(
+                f"{path.parent.name}: key_findings/evidence length mismatch"
+            )
+        quotes = [m.get("evidence", "") for m in meta.get("methods") or []] + list(
+            evidence
+        )
         for quote in quotes:
             checked += 1
             if not quote or _norm_text(quote) not in text:
                 failures.append(f"{path.parent.name}: {quote[:60]!r}")
     assert checked > 1000, "expected the grounded-summary corpus to be present"
-    assert not failures, f"grounded summary evidence missing from full text: {failures[:10]}"
+    assert not failures, (
+        f"grounded summary evidence missing from full text: {failures[:10]}"
+    )
 
 
 def test_no_two_paper_folders_share_a_source_document():
@@ -250,21 +311,30 @@ def test_no_two_paper_folders_share_a_source_document():
     seen: dict[str, str] = {}
     duplicates = []
     for path in sorted((REPO_ROOT / "papers").glob("*/*")):
-        if path.suffix.lower() not in {".pdf", ".pptx", ".docx", ".odt"} or not path.is_file():
+        if (
+            path.suffix.lower() not in {".pdf", ".pptx", ".docx", ".odt"}
+            or not path.is_file()
+        ):
             continue
         digest = hashlib.sha256(path.read_bytes()).hexdigest()
         owner = seen.setdefault(digest, path.parent.name)
         if owner != path.parent.name:
             duplicates.append(f"{owner} == {path.parent.name}/{path.name}")
-    assert not duplicates, f"identical source documents in different paper folders: {duplicates}"
+    assert not duplicates, (
+        f"identical source documents in different paper folders: {duplicates}"
+    )
 
 
 def test_document_verified_authors_quote_their_source():
     import json
 
-    payload = json.loads((REPO_ROOT / "data" / "work-authors.json").read_text(encoding="utf-8"))
+    payload = json.loads(
+        (REPO_ROOT / "data" / "work-authors.json").read_text(encoding="utf-8")
+    )
     assert fetch_work_authors.document_evidence_errors(payload) == []
-    assert any(e.get("status") == "document_verified" for e in payload["works"].values())
+    assert any(
+        e.get("status") == "document_verified" for e in payload["works"].values()
+    )
 
 
 def test_document_verified_rejects_a_missing_quote(tmp_path, monkeypatch):
@@ -276,19 +346,40 @@ def test_document_verified_rejects_a_missing_quote(tmp_path, monkeypatch):
     bibliography = tmp_path / "BIBLIOGRAPHY.md"
     bibliography.write_text(
         "| 999 | 2026 | 💻 | Paper | Example work | Archive | — | "
-        "[docs](../papers/2026_Example/) | — |\n", encoding="utf-8",
+        "[docs](../papers/2026_Example/) | — |\n",
+        encoding="utf-8",
     )
     monkeypatch.setattr(fetch_work_authors, "REPO_ROOT", tmp_path)
     monkeypatch.setattr(fetch_work_authors, "BIBLIOGRAPHY", bibliography)
     registry = tmp_path / "data/work-identifiers.json"
     registry.parent.mkdir()
-    registry.write_text(json.dumps({"schema_version": "WorkIdentifierRegistry.v1", "identifiers": {
-        "999": {"citation_key": "Friedman2026ExampleWork999", "status": "active"},
-    }}) + "\n", encoding="utf-8")
-    payload = {"works": {"Friedman2026ExampleWork999": {
-        "num": 999, "status": "document_verified", "doi": None, "authors": [{"family": "A"}],
-        "source": "papers/2026_Example/full_text.md", "evidence": "EDITED BY Daniel",
-    }}}
+    registry.write_text(
+        json.dumps(
+            {
+                "schema_version": "WorkIdentifierRegistry.v1",
+                "identifiers": {
+                    "999": {
+                        "citation_key": "Friedman2026ExampleWork999",
+                        "status": "active",
+                    },
+                },
+            }
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    payload = {
+        "works": {
+            "Friedman2026ExampleWork999": {
+                "num": 999,
+                "status": "document_verified",
+                "doi": None,
+                "authors": [{"family": "A"}],
+                "source": "papers/2026_Example/full_text.md",
+                "evidence": "EDITED BY Daniel",
+            }
+        }
+    }
     assert fetch_work_authors.document_evidence_errors(payload) == [
         "Friedman2026ExampleWork999: evidence quote not found in papers/2026_Example/full_text.md"
     ]
@@ -309,5 +400,10 @@ def test_extractor_reports_a_missing_primary_pdf(tmp_path):
     folder = tmp_path / "2026_Example"
     folder.mkdir()
     (folder / "deck.pdf").write_bytes(b"%PDF-1.4\n")
-    (folder / "metadata.json").write_text(json.dumps({"primary_pdf": "manuscript.pdf"}), encoding="utf-8")
-    assert extract_paper_texts.process_paper(folder, force=True) == "error: primary_pdf 'manuscript.pdf' not found"
+    (folder / "metadata.json").write_text(
+        json.dumps({"primary_pdf": "manuscript.pdf"}), encoding="utf-8"
+    )
+    assert (
+        extract_paper_texts.process_paper(folder, force=True)
+        == "error: primary_pdf 'manuscript.pdf' not found"
+    )

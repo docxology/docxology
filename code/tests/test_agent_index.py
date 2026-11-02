@@ -19,27 +19,48 @@ def test_agent_index_is_current_and_has_stable_routes():
     schema_names = set(payload["schemas"])
     for name, entry in payload["datasets"].items():
         schema = entry.get("schema")
-        assert schema in schema_names, f"dataset {name} references undefined schema {schema}"
+        assert schema in schema_names, (
+            f"dataset {name} references undefined schema {schema}"
+        )
     routes = {route["id"]: route for route in payload["routes"]}
     assert routes["publications"]["path"] == "/publications.html"
     assert routes["repositories"]["path"] == "/repositories.html"
     assert routes["agent-index"]["format"] == "application/json"
-    assert payload["datasets"]["works"]["count"] == json.loads((REPO_ROOT / "data/works.json").read_text())["count"]
-    assert payload["datasets"]["repositories"]["count"] == json.loads(
-        (REPO_ROOT / "data/github-repositories.json").read_text()
-    )["counts"]["total"]
-    assert payload["datasets"]["videos_index"]["schema"] == "VideoIndex"
-    assert payload["datasets"]["videos_index"]["count"] == json.loads(
-        (REPO_ROOT / "data/videos-index.json").read_text()
-    )["count"]
-    assert set(("Work", "SoftwareRepository", "Repository", "ClaimWithEvidence", "SearchResult", "GeneratedReport")) <= set(
-        payload["schemas"]
+    assert (
+        payload["datasets"]["works"]["count"]
+        == json.loads((REPO_ROOT / "data/works.json").read_text())["count"]
     )
+    assert (
+        payload["datasets"]["repositories"]["count"]
+        == json.loads((REPO_ROOT / "data/github-repositories.json").read_text())[
+            "counts"
+        ]["total"]
+    )
+    assert payload["datasets"]["videos_index"]["schema"] == "VideoIndex"
+    assert (
+        payload["datasets"]["videos_index"]["count"]
+        == json.loads((REPO_ROOT / "data/videos-index.json").read_text())["count"]
+    )
+    assert set(
+        (
+            "Work",
+            "SoftwareRepository",
+            "Repository",
+            "ClaimWithEvidence",
+            "SearchResult",
+            "GeneratedReport",
+        )
+    ) <= set(payload["schemas"])
     assert payload["datasets"]["artworks_index"]["schema"] == "ArtworkIndex"
     assert payload["datasets"]["scholar_readiness"]["schema"] == "ScholarReadiness"
     assert payload["dataset_hashes"]["scholar_readiness"]
-    assert payload["schemas"]["ScholarReadiness"]["fields"]["indexing_verified"] == "false"
-    assert payload["datasets"]["scholar_verification_receipt"]["schema"] == "ScholarVerificationReceipt"
+    assert (
+        payload["schemas"]["ScholarReadiness"]["fields"]["indexing_verified"] == "false"
+    )
+    assert (
+        payload["datasets"]["scholar_verification_receipt"]["schema"]
+        == "ScholarVerificationReceipt"
+    )
     assert payload["schema_examples"]["ScholarVerificationReceipt"]["direct"] is True
     assert payload["schema_examples"]["ArtworkIndex"]
     assert payload["schema_examples"]["VideoIndex"]["schema_version"] == "VideoIndex.v1"
@@ -47,7 +68,10 @@ def test_agent_index_is_current_and_has_stable_routes():
     assert payload["schemas"]["Work"]["fields"]["citation_key"]
     assert payload["schema_examples"]["Work"]
     assert payload["dataset_hashes"]["works"]
-    assert payload["hosted_availability"]["artifact_manifest"] == "/data/pages-artifact-manifest.json"
+    assert (
+        payload["hosted_availability"]["artifact_manifest"]
+        == "/data/pages-artifact-manifest.json"
+    )
     assert payload["source_provenance"]["generated_by"].endswith("build_agent_index.py")
     assert payload["reports"]
     assert payload["freshness"]["verification"] == "/cite-verify.html"

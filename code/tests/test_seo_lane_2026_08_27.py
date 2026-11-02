@@ -30,6 +30,7 @@ import pytest  # noqa: E402
 
 # --- title_policy --------------------------------------------------------------
 
+
 def test_clip_title_word_boundary_under_hard_limit():
     long_title = "Neurosymbolic AI & Active Inference: Bridging Symbolic Reasoning and Generative Agents"
     clipped = clip_title(long_title)
@@ -44,7 +45,9 @@ def test_clip_title_leaves_short_titles_untouched():
 
 
 def test_clip_title_is_idempotent():
-    once = clip_title("A very long title that definitely exceeds the sixty five character hard limit for sure")
+    once = clip_title(
+        "A very long title that definitely exceeds the sixty five character hard limit for sure"
+    )
     twice = clip_title(once)
     assert once == twice
 
@@ -60,6 +63,7 @@ def test_assert_title_within_limit_accepts_soft_range():
 
 
 # --- canonical integrity -------------------------------------------------------
+
 
 def test_canonical_integrity_flags_link_to_away_canonical_page(tmp_path):
     (tmp_path / "index.html").write_text(
@@ -121,12 +125,15 @@ def test_canonical_integrity_ignores_external_links(tmp_path):
 
 # --- 404 page generator --------------------------------------------------------
 
+
 def test_build_404_page_check_mode_passes_on_fresh_render():
     # The checked-in 404.html must match the renderer modulo the footer build
     # stamp (commit SHA at generation time) - mirrors generated_outputs semantics.
     import sys as _sys
+
     _sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
     from docxology_tools.build_stamp import reuse_on_disk_stamp
+
     content = build_404_page.render()
     on_disk = (REPO_ROOT / "404.html").read_text(encoding="utf-8")
     assert on_disk == reuse_on_disk_stamp(content, on_disk)
@@ -139,5 +146,5 @@ def test_build_404_page_shell_and_recovery_features():
     assert "noindex" not in content  # HTTP 404 status already blocks indexing
     assert 'class="destinations"' in content
     # Exactly the top-8 destinations
-    assert content.count("<a href=\"/") >= 8
+    assert content.count('<a href="/') >= 8
     assert build_404_page.OUT == REPO_ROOT / "404.html"

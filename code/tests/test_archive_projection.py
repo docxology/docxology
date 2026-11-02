@@ -144,19 +144,30 @@ def test_encoded_references_on_public_surfaces_protect_source(
         verified_archives(root)
 
 
-def test_manifest_reuses_one_complete_proof_but_rechecks_each_operation(archive, monkeypatch):
+def test_manifest_reuses_one_complete_proof_but_rechecks_each_operation(
+    archive, monkeypatch
+):
     import build_pages_artifact as bpa
+
     root, name, _file, _entry, _registry = archive
     monkeypatch.setattr(bpa, "REPO_ROOT", root)
-    monkeypatch.setattr(bpa, "ARTIFACT_MANIFEST", root / "data/pages-artifact-manifest.json")
-    monkeypatch.setattr(bpa, "GROWTH_REPORT", root / "reports/pages_artifact_growth_2026-10-19.json")
+    monkeypatch.setattr(
+        bpa, "ARTIFACT_MANIFEST", root / "data/pages-artifact-manifest.json"
+    )
+    monkeypatch.setattr(
+        bpa, "GROWTH_REPORT", root / "reports/pages_artifact_growth_2026-10-19.json"
+    )
     safe_source = bpa.source_path
-    monkeypatch.setattr(bpa, "source_path", lambda relative: safe_source(relative, repo_root=root))
+    monkeypatch.setattr(
+        bpa, "source_path", lambda relative: safe_source(relative, repo_root=root)
+    )
     calls = []
     original = bpa.verified_archives
+
     def verify(base):
         calls.append(base)
         return original(base)
+
     monkeypatch.setattr(bpa, "verified_archives", verify)
     first = bpa._manifest_payload()
     assert calls == [root]
@@ -174,40 +185,78 @@ def assembly_archive(archive, monkeypatch):
 
     root, name, _file, _entry, _registry = archive
     monkeypatch.setattr(bpa, "REPO_ROOT", root)
-    monkeypatch.setattr(bpa, "ARTIFACT_MANIFEST", root / "data/pages-artifact-manifest.json")
-    monkeypatch.setattr(bpa, "GROWTH_REPORT", root / "reports/pages_artifact_growth_2026-10-19.json")
+    monkeypatch.setattr(
+        bpa, "ARTIFACT_MANIFEST", root / "data/pages-artifact-manifest.json"
+    )
+    monkeypatch.setattr(
+        bpa, "GROWTH_REPORT", root / "reports/pages_artifact_growth_2026-10-19.json"
+    )
     safe_source = bpa.source_path
-    monkeypatch.setattr(bpa, "source_path", lambda relative: safe_source(relative, repo_root=root))
+    monkeypatch.setattr(
+        bpa, "source_path", lambda relative: safe_source(relative, repo_root=root)
+    )
     bpa._referenced_report_paths.cache_clear()
-    (root / "index.html").write_text(f'<a href="{declared_archives(root)[name]["url"]}">Archive</a>')
+    (root / "index.html").write_text(
+        f'<a href="{declared_archives(root)[name]["url"]}">Archive</a>'
+    )
     (root / "papers/2022_Transcript/source.pdf").write_bytes(b"%PDF-retained-fixture")
     (root / "papers/2022_Transcript/unreviewed.docx").write_bytes(b"unreviewed-kept")
     subprocess.run(["git", "add", "."], cwd=root, check=True)
-    subprocess.run(["git", "-c", "user.name=Fixture", "-c", "user.email=fixture@example.org",
-                    "-c", "commit.gpgsign=false", "commit", "-qm", "projection inputs"], cwd=root, check=True)
+    subprocess.run(
+        [
+            "git",
+            "-c",
+            "user.name=Fixture",
+            "-c",
+            "user.email=fixture@example.org",
+            "-c",
+            "commit.gpgsign=false",
+            "commit",
+            "-qm",
+            "projection inputs",
+        ],
+        cwd=root,
+        check=True,
+    )
     yield bpa, root, name
     bpa._referenced_report_paths.cache_clear()
 
 
-def test_assembled_files_and_bytes_match_projection_with_reviewed_office_source(assembly_archive, tmp_path):
+def test_assembled_files_and_bytes_match_projection_with_reviewed_office_source(
+    assembly_archive, tmp_path
+):
     bpa, root, name = assembly_archive
     output = tmp_path / "assembled"
     expected_paths = {path.as_posix() for path in bpa._relative_paths()}
     expected_size = bpa.projected_size()
     manifest = bpa._manifest_payload(include_pending_growth=False)
-    expected_manifest_paths = {item["path"] for item in manifest["included_files"] + manifest["control_files"]}
+    expected_manifest_paths = {
+        item["path"] for item in manifest["included_files"] + manifest["control_files"]
+    }
     copied, size, omitted = bpa.assemble(output)
-    actual = {path.relative_to(output).as_posix() for path in output.rglob("*") if path.is_file()}
+    actual = {
+        path.relative_to(output).as_posix()
+        for path in output.rglob("*")
+        if path.is_file()
+    }
     assert actual == expected_paths == expected_manifest_paths
     assert (copied, size) == expected_size
-    assert size == sum(path.stat().st_size for path in output.rglob("*") if path.is_file())
+    assert size == sum(
+        path.stat().st_size for path in output.rglob("*") if path.is_file()
+    )
     assert name in omitted and not (output / name).exists()
     assert (root / name).read_bytes() == b"archived-office-source"
-    assert (output / "papers/2022_Transcript/source.pdf").read_bytes() == b"%PDF-retained-fixture"
-    assert (output / "papers/2022_Transcript/unreviewed.docx").read_bytes() == b"unreviewed-kept"
+    assert (
+        output / "papers/2022_Transcript/source.pdf"
+    ).read_bytes() == b"%PDF-retained-fixture"
+    assert (
+        output / "papers/2022_Transcript/unreviewed.docx"
+    ).read_bytes() == b"unreviewed-kept"
 
 
-def test_assembly_rechecks_archive_proof_before_replacing_existing_output(assembly_archive, tmp_path):
+def test_assembly_rechecks_archive_proof_before_replacing_existing_output(
+    assembly_archive, tmp_path
+):
     bpa, root, name = assembly_archive
     output = tmp_path / "assembled"
     output.mkdir()

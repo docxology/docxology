@@ -66,7 +66,11 @@ def render_page(
     serp_title = clip_title(title)
     canonical_url = f"https://danielarifriedman.com/{filename}"
     faq_items = [
-        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}
+        {
+            "@type": "Question",
+            "name": q,
+            "acceptedAnswer": {"@type": "Answer", "text": a},
+        }
         for q, a in faqs
     ]
     jsonld = {
@@ -97,9 +101,24 @@ def render_page(
                 "@type": "BreadcrumbList",
                 "@id": f"{canonical_url}#breadcrumb",
                 "itemListElement": [
-                    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://danielarifriedman.com/"},
-                    {"@type": "ListItem", "position": 2, "name": "Domains", "item": "https://danielarifriedman.com/domains.html"},
-                    {"@type": "ListItem", "position": 3, "name": domain_name, "item": canonical_url},
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://danielarifriedman.com/",
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Domains",
+                        "item": "https://danielarifriedman.com/domains.html",
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": domain_name,
+                        "item": canonical_url,
+                    },
                 ],
             },
         ],
@@ -112,18 +131,22 @@ def render_page(
 
     faq_html = []
     for q, a in faqs:
-        faq_html.append(f'            <div class="faq-item"><h3>{q}</h3><p>{a}</p></div>')
+        faq_html.append(
+            f'            <div class="faq-item"><h3>{q}</h3><p>{a}</p></div>'
+        )
     faq_str = "\n".join(faq_html)
 
-    return render_pillar_head(
-        title=title,
-        serp_title=serp_title,
-        description=description,
-        canonical_path=filename,
-        og_image=og_image,
-        style=STYLE_BLOCK,
-        jsonld=jsonld,
-    ) + f"""<body>
+    return (
+        render_pillar_head(
+            title=title,
+            serp_title=serp_title,
+            description=description,
+            canonical_path=filename,
+            og_image=og_image,
+            style=STYLE_BLOCK,
+            jsonld=jsonld,
+        )
+        + f"""<body>
     <a href="#main" class="skip-link">Skip to main content</a>
 {render_nav_domain(active="domains")}
 {render_breadcrumb([("Home", ""), ("Domains", "domains.html"), (domain_name, filename)])}
@@ -169,6 +192,7 @@ def render_page(
 </body>
 </html>
 """
+    )
 
 
 def render_outputs(*, output_root: Path = REPO_ROOT) -> dict[Path, str]:
@@ -177,13 +201,21 @@ def render_outputs(*, output_root: Path = REPO_ROOT) -> dict[Path, str]:
 
     from docxology_tools.pillar_content import guides
 
-    works = json.loads((REPO_ROOT / "data/works.json").read_text(encoding="utf-8"))["works"]
-    return {output_root / guide["filename"]: render_page(**guide) for guide in guides(works)}
+    works = json.loads((REPO_ROOT / "data/works.json").read_text(encoding="utf-8"))[
+        "works"
+    ]
+    return {
+        output_root / guide["filename"]: render_page(**guide) for guide in guides(works)
+    }
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if any shared-rendered pillar page is stale")
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Fail if any shared-rendered pillar page is stale",
+    )
     args = parser.parse_args()
     outputs = render_outputs()
     stale = stale_output_paths(outputs, repo_root=REPO_ROOT)

@@ -38,13 +38,17 @@ class EvidenceRequirement:
 
 
 RELEASE_EVIDENCE: tuple[EvidenceRequirement, ...] = (
-    EvidenceRequirement("public-source snapshot", "reports/public_source_snapshot_*.json"),
+    EvidenceRequirement(
+        "public-source snapshot", "reports/public_source_snapshot_*.json"
+    ),
     EvidenceRequirement("public-source review", "reports/public_source_review_*.json"),
     EvidenceRequirement("external-link report", "reports/external_links_[0-9]*.json"),
     EvidenceRequirement("browser smoke", "reports/browser-smoke/*/manifest.json"),
     EvidenceRequirement("browser QA", "reports/browser-qa/*/manifest.json"),
     EvidenceRequirement("visual QA", "reports/visual-qa/*/manifest.json"),
-    EvidenceRequirement("live-site verification", "reports/live_site_verification_*.json"),
+    EvidenceRequirement(
+        "live-site verification", "reports/live_site_verification_*.json"
+    ),
 )
 
 # A glob is useful for discovering dated receipts, but it is deliberately not
@@ -142,6 +146,7 @@ def _orchestrator_module(name: str):
     # The docxology_tools bootstrap owns code/orchestrators on sys.path.
     return importlib.import_module(name)
 
+
 def expected_public_source_labels() -> set[str]:
     module = _orchestrator_module("refresh_public_sources")
     return set(module.expected_check_labels())
@@ -221,7 +226,9 @@ def _latest_path(repo_root: Path, requirement: EvidenceRequirement) -> Path | No
         (
             path
             for path in repo_root.glob(requirement.pattern)
-            if matches_requirement_path(path.relative_to(repo_root).as_posix(), requirement)
+            if matches_requirement_path(
+                path.relative_to(repo_root).as_posix(), requirement
+            )
         ),
         key=lambda path: path.as_posix(),
         reverse=True,
@@ -265,17 +272,26 @@ def _safe_repo_file(repo_root: Path, path: Path) -> tuple[Path | None, str | Non
     for component in relative.parts:
         current = current / component
         if current.is_symlink():
-            return None, f"symlinked release evidence is not permitted: {path.relative_to(repo_root)}"
+            return (
+                None,
+                f"symlinked release evidence is not permitted: {path.relative_to(repo_root)}",
+            )
     if not path.is_file():
         return None, f"missing regular file: {path.relative_to(repo_root)}"
     if path.lstat().st_nlink != 1:
-        return None, f"hard-linked release evidence is not permitted: {path.relative_to(repo_root)}"
+        return (
+            None,
+            f"hard-linked release evidence is not permitted: {path.relative_to(repo_root)}",
+        )
     try:
         resolved_root = repo_root.resolve(strict=True)
         resolved_path = path.resolve(strict=True)
         resolved_path.relative_to(resolved_root)
     except (OSError, ValueError) as exc:
-        return None, f"unresolvable repository evidence path {path.relative_to(repo_root)}: {exc}"
+        return (
+            None,
+            f"unresolvable repository evidence path {path.relative_to(repo_root)}: {exc}",
+        )
     return resolved_path, None
 
 
@@ -322,7 +338,9 @@ def _check_rows(
                 pieces.append("missing " + ", ".join(missing[:5]))
             if unexpected:
                 pieces.append("unexpected " + ", ".join(unexpected[:5]))
-            return [f"{report_name} coverage does not match the current contract ({'; '.join(pieces)})"]
+            return [
+                f"{report_name} coverage does not match the current contract ({'; '.join(pieces)})"
+            ]
     if require_screenshots:
         missing: list[str] = []
         for item in checks:
@@ -330,7 +348,9 @@ def _check_rows(
                 missing.append("unnamed")
                 continue
             screenshot = item.get("screenshot")
-            artifact, error = _report_artifact_path(repo_root, manifest_path, screenshot)
+            artifact, error = _report_artifact_path(
+                repo_root, manifest_path, screenshot
+            )
             if error:
                 missing.append(error)
                 continue
@@ -368,12 +388,14 @@ def _report_artifact_path(
     try:
         resolved_parent = manifest_path.parent.resolve(strict=True)
         resolved.relative_to(resolved_parent)
-    except (OSError, ValueError):
+    except OSError, ValueError:
         return None, f"screenshot is outside its report directory: {raw_path}"
     return resolved, None
 
 
-def _visual_review_errors(payload: dict[str, Any], repo_root: Path, manifest_path: Path) -> list[str]:
+def _visual_review_errors(
+    payload: dict[str, Any], repo_root: Path, manifest_path: Path
+) -> list[str]:
     """Require an explicit human review record in addition to screenshots."""
     screenshots = payload.get("screenshots")
     if not isinstance(screenshots, list) or not screenshots:
@@ -395,14 +417,20 @@ def _visual_review_errors(payload: dict[str, Any], repo_root: Path, manifest_pat
             page = screenshot.get("page")
             viewport = screenshot.get("viewport")
             size = screenshot.get("size")
-            if all(isinstance(value, str) and value for value in (page, viewport, size)):
+            if all(
+                isinstance(value, str) and value for value in (page, viewport, size)
+            ):
                 observed_targets.append((page, viewport, size))
             else:
-                missing.append(str(file_name) + " (missing page/viewport/size coverage fields)")
+                missing.append(
+                    str(file_name) + " (missing page/viewport/size coverage fields)"
+                )
     if missing:
         return [f"visual QA has missing screenshots: {', '.join(missing[:5])}"]
     expected_targets = expected_visual_targets()
-    if set(observed_targets) != expected_targets or len(observed_targets) != len(set(observed_targets)):
+    if set(observed_targets) != expected_targets or len(observed_targets) != len(
+        set(observed_targets)
+    ):
         missing_targets = sorted(expected_targets - set(observed_targets))
         unexpected_targets = sorted(set(observed_targets) - expected_targets)
         details = []
@@ -412,7 +440,11 @@ def _visual_review_errors(payload: dict[str, Any], repo_root: Path, manifest_pat
             details.append("unexpected " + repr(unexpected_targets[:3]))
         if len(observed_targets) != len(set(observed_targets)):
             details.append("duplicate targets")
-        return ["visual QA coverage does not match the current contract (" + "; ".join(details) + ")"]
+        return [
+            "visual QA coverage does not match the current contract ("
+            + "; ".join(details)
+            + ")"
+        ]
     review = payload.get("review")
     if not isinstance(review, dict) or review.get("status") != "reviewed":
         return ["visual QA has not recorded an explicit review"]
@@ -451,13 +483,19 @@ def _report_result_errors(
             return ["public-source snapshot repeats a check label"]
         expected_labels = expected_public_source_labels()
         if set(labels) != expected_labels:
-            return ["public-source snapshot coverage does not match the current contract"]
+            return [
+                "public-source snapshot coverage does not match the current contract"
+            ]
         failures = [
             str(item.get("label") or item.get("url") or index)
             for index, item in enumerate(checks, start=1)
             if not isinstance(item, dict) or item.get("ok") is not True
         ]
-        return [f"public-source snapshot has failing checks: {', '.join(failures[:5])}"] if failures else []
+        return (
+            [f"public-source snapshot has failing checks: {', '.join(failures[:5])}"]
+            if failures
+            else []
+        )
 
     if requirement.name == "public-source review":
         from public_source_review import validate_review_report
@@ -466,9 +504,13 @@ def _report_result_errors(
         if not payload.get("items"):
             errors.append("public-source review has no disposition items")
         inputs = payload.get("inputs")
-        snapshot = inputs.get("public_source_snapshot") if isinstance(inputs, dict) else None
+        snapshot = (
+            inputs.get("public_source_snapshot") if isinstance(inputs, dict) else None
+        )
         if not isinstance(snapshot, dict):
-            errors.append("public-source review lacks public-source snapshot provenance")
+            errors.append(
+                "public-source review lacks public-source snapshot provenance"
+            )
         return errors
 
     if requirement.name == "external-link report":
@@ -487,16 +529,26 @@ def _report_result_errors(
             if not isinstance(item, dict) or not isinstance(item.get("ok"), bool)
         ]
         if malformed:
-            return [f"external-link report has malformed results: {', '.join(malformed[:5])}"]
+            return [
+                f"external-link report has malformed results: {', '.join(malformed[:5])}"
+            ]
         expected_urls = expected_external_urls()
         observed_urls = [item.get("url") for item in results if isinstance(item, dict)]
         if not all(isinstance(url, str) and url for url in observed_urls):
             return ["external-link report has a result without a URL"]
-        if len(observed_urls) != len(set(observed_urls)) or set(observed_urls) != expected_urls:
-            return ["external-link report coverage does not match the current URL contract"]
+        if (
+            len(observed_urls) != len(set(observed_urls))
+            or set(observed_urls) != expected_urls
+        ):
+            return [
+                "external-link report coverage does not match the current URL contract"
+            ]
         observed_ok = sum(1 for item in results if item["ok"])
         observed_warnings = len(results) - observed_ok
-        if payload.get("ok") != observed_ok or payload.get("warnings") != observed_warnings:
+        if (
+            payload.get("ok") != observed_ok
+            or payload.get("warnings") != observed_warnings
+        ):
             return ["external-link report summary does not match results"]
         confirmed_404s = [
             str(item.get("url"))
@@ -537,11 +589,17 @@ def _report_result_errors(
         if not isinstance(results, list) or not results:
             return ["live-site verification has no results"]
         paths = [item.get("path") for item in results if isinstance(item, dict)]
-        if len(paths) != len(results) or not all(isinstance(path, str) and path for path in paths):
+        if len(paths) != len(results) or not all(
+            isinstance(path, str) and path for path in paths
+        ):
             return ["live-site verification has a result without a path"]
         if len(paths) != len(set(paths)) or set(paths) != expected_live_paths():
-            return ["live-site verification coverage does not match the current route contract"]
-        if any(item.get("ok") is not True for item in results if isinstance(item, dict)):
+            return [
+                "live-site verification coverage does not match the current route contract"
+            ]
+        if any(
+            item.get("ok") is not True for item in results if isinstance(item, dict)
+        ):
             return ["live-site verification has a failing route"]
         return []
     return [f"unsupported release evidence requirement: {requirement.name}"]
@@ -568,7 +626,9 @@ def _validate_report(
         payload = _json_object(path)
         generated = _parse_timestamp(payload.get("generated_at"))
     except (OSError, ValueError, json.JSONDecodeError) as exc:
-        return None, [f"invalid {requirement.name} {path.relative_to(repo_root)}: {exc}"]
+        return None, [
+            f"invalid {requirement.name} {path.relative_to(repo_root)}: {exc}"
+        ]
     errors: list[str] = []
     relative = path.relative_to(repo_root).as_posix()
     content_binding = (
@@ -584,7 +644,9 @@ def _validate_report(
             f"stale {requirement.name}: {relative} is {age_days:.1f} days old "
             f"(maximum {max_age_days})"
         )
-    source_commit = str(payload.get("source_commit") or payload.get("source_commit_at_generation") or "").strip()
+    source_commit = str(
+        payload.get("source_commit") or payload.get("source_commit_at_generation") or ""
+    ).strip()
     digest = sha256_file(path)
     if not source_commit:
         errors.append(f"{requirement.name} lacks source_commit: {relative}")
@@ -607,7 +669,9 @@ def _validate_report(
             f"{relative}"
         )
     if payload.get("source_worktree_clean") is not True:
-        errors.append(f"{requirement.name} was not captured from a clean source worktree: {relative}")
+        errors.append(
+            f"{requirement.name} was not captured from a clean source worktree: {relative}"
+        )
     tree = _git_tree_for_commit(repo_root, expected_commit)
     if (
         content_binding
@@ -623,8 +687,12 @@ def _validate_report(
         ):
             tree = capture_tree
     if tree is not None and payload.get("source_tree_sha") != tree:
-        errors.append(f"{requirement.name} source_tree_sha does not match the release commit: {relative}")
-    for error in _report_result_errors(requirement, payload, repo_root=repo_root, report_path=path):
+        errors.append(
+            f"{requirement.name} source_tree_sha does not match the release commit: {relative}"
+        )
+    for error in _report_result_errors(
+        requirement, payload, repo_root=repo_root, report_path=path
+    ):
         errors.append(f"{requirement.name} failed semantic validation: {error}")
     return (
         EvidenceReceipt(
@@ -718,7 +786,11 @@ def receipt_binds_expected_commit(
         return False
     if not is_ephemeral_release_evidence_path(path):
         return False
-    if recorded_sha256 is None or current_sha256 is None or recorded_sha256 != current_sha256:
+    if (
+        recorded_sha256 is None
+        or current_sha256 is None
+        or recorded_sha256 != current_sha256
+    ):
         return False
     if not _same_calendar_day(generated_at, context):
         return False
@@ -807,14 +879,20 @@ def _review_snapshot_binding_errors(
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         return [f"invalid public-source review provenance: {exc}"]
     inputs = review_payload.get("inputs")
-    provenance = inputs.get("public_source_snapshot") if isinstance(inputs, dict) else None
+    provenance = (
+        inputs.get("public_source_snapshot") if isinstance(inputs, dict) else None
+    )
     if not isinstance(provenance, dict):
         return ["public-source review lacks public-source snapshot provenance"]
     errors: list[str] = []
     if provenance.get("path") != snapshot_receipt.path:
-        errors.append("public-source review does not reference the attested public-source snapshot")
+        errors.append(
+            "public-source review does not reference the attested public-source snapshot"
+        )
     if provenance.get("sha256") != snapshot_receipt.sha256:
-        errors.append("public-source review public-source snapshot hash does not match the attested snapshot")
+        errors.append(
+            "public-source review public-source snapshot hash does not match the attested snapshot"
+        )
     if provenance.get("source_commit") != expected_commit and not (
         binding_mode == BINDING_MODE_CONTENT_LINEAGE
         and provenance.get("source_commit") == snapshot_receipt.source_commit
@@ -822,7 +900,9 @@ def _review_snapshot_binding_errors(
         # Under content-lineage the review must name exactly the snapshot
         # receipt accepted for this release; the path and hash equality checks
         # above already pin the review to those snapshot bytes.
-        errors.append("public-source review public-source snapshot provenance is not bound to the release commit")
+        errors.append(
+            "public-source review public-source snapshot provenance is not bound to the release commit"
+        )
     return errors
 
 
@@ -830,7 +910,9 @@ def live_deployment_errors(
     repo_root: Path, expected_commit: str, *, path: Path | None = None
 ) -> list[str]:
     """Check the live-site receipt specifically proves deployment of the SHA."""
-    requirement = next(item for item in RELEASE_EVIDENCE if item.name == "live-site verification")
+    requirement = next(
+        item for item in RELEASE_EVIDENCE if item.name == "live-site verification"
+    )
     path = path or _latest_path(repo_root, requirement)
     if path is None:
         return ["missing live-site verification report"]
@@ -841,13 +923,23 @@ def live_deployment_errors(
     errors: list[str] = []
     if payload.get("overall_ok") is not True:
         errors.append("live-site verification is not passing")
-    pages = payload.get("github_pages") if isinstance(payload.get("github_pages"), dict) else {}
+    pages = (
+        payload.get("github_pages")
+        if isinstance(payload.get("github_pages"), dict)
+        else {}
+    )
     if pages.get("status") != "built":
         errors.append(f"GitHub Pages status is {pages.get('status') or 'unknown'}")
-    deployment = payload.get("deployment") if isinstance(payload.get("deployment"), dict) else {}
-    deployed_sha = str(deployment.get("head_sha") or deployment.get("commit") or "").strip()
+    deployment = (
+        payload.get("deployment") if isinstance(payload.get("deployment"), dict) else {}
+    )
+    deployed_sha = str(
+        deployment.get("head_sha") or deployment.get("commit") or ""
+    ).strip()
     if deployed_sha != expected_commit:
-        errors.append(f"live deployment SHA {deployed_sha or 'missing'} != release commit {expected_commit}")
+        errors.append(
+            f"live deployment SHA {deployed_sha or 'missing'} != release commit {expected_commit}"
+        )
     return errors
 
 
@@ -954,7 +1046,9 @@ def validate_attestation(
     known_names = {requirement.name for requirement in RELEASE_EVIDENCE}
     unknown = sorted(set(by_name) - known_names)
     if unknown:
-        errors.append("deployment attestation has unknown evidence: " + ", ".join(unknown))
+        errors.append(
+            "deployment attestation has unknown evidence: " + ", ".join(unknown)
+        )
     reference = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
     # Content-lineage freshness anchors to the attestation itself: a relaxed
     # receipt must be captured on the same UTC calendar day it was attested.
@@ -967,14 +1061,24 @@ def validate_attestation(
             continue
         relative = entry.get("path")
         if not isinstance(relative, str) or not relative:
-            errors.append(f"deployment attestation has invalid path for {requirement.name}")
+            errors.append(
+                f"deployment attestation has invalid path for {requirement.name}"
+            )
             continue
         if "\\" in relative:
-            errors.append(f"deployment attestation path has invalid separators for {requirement.name}")
+            errors.append(
+                f"deployment attestation path has invalid separators for {requirement.name}"
+            )
             continue
         candidate = Path(relative)
-        if candidate.is_absolute() or ".." in candidate.parts or relative.startswith("./"):
-            errors.append(f"deployment attestation path escapes repository for {requirement.name}")
+        if (
+            candidate.is_absolute()
+            or ".." in candidate.parts
+            or relative.startswith("./")
+        ):
+            errors.append(
+                f"deployment attestation path escapes repository for {requirement.name}"
+            )
             continue
         report_path = repo_root / candidate
         safe_report, safe_error = _safe_repo_file(repo_root, report_path)
@@ -984,11 +1088,15 @@ def validate_attestation(
         assert safe_report is not None
         report_path = safe_report
         if not matches_requirement_path(relative, requirement):
-            errors.append(f"deployment attestation path does not match {requirement.name}: {relative}")
+            errors.append(
+                f"deployment attestation path does not match {requirement.name}: {relative}"
+            )
             continue
         file_sha = sha256_file(report_path)
         recorded_sha = entry.get("sha256")
-        if entry.get("source_commit") != expected_commit and not receipt_binds_expected_commit(
+        if entry.get(
+            "source_commit"
+        ) != expected_commit and not receipt_binds_expected_commit(
             repo_root,
             relative,
             expected_commit=expected_commit,
@@ -999,9 +1107,13 @@ def validate_attestation(
             recorded_sha256=recorded_sha if isinstance(recorded_sha, str) else None,
             current_sha256=file_sha,
         ):
-            errors.append(f"attested {requirement.name} is not bound to release commit {expected_commit}")
+            errors.append(
+                f"attested {requirement.name} is not bound to release commit {expected_commit}"
+            )
         if recorded_sha != file_sha:
-            errors.append(f"attested {requirement.name} changed after attestation: {relative}")
+            errors.append(
+                f"attested {requirement.name} changed after attestation: {relative}"
+            )
         receipt, report_errors = _validate_report(
             requirement,
             report_path,
@@ -1016,9 +1128,13 @@ def validate_attestation(
         if receipt is None:
             continue
         if entry.get("generated_at") != receipt.generated_at:
-            errors.append(f"attested {requirement.name} generated_at does not match the report")
+            errors.append(
+                f"attested {requirement.name} generated_at does not match the report"
+            )
         if entry.get("source_commit") != receipt.source_commit:
-            errors.append(f"attested {requirement.name} source_commit does not match the report")
+            errors.append(
+                f"attested {requirement.name} source_commit does not match the report"
+            )
         if attested_at is not None:
             try:
                 generated_at = _parse_timestamp(receipt.generated_at)
@@ -1038,7 +1154,14 @@ def validate_attestation(
         )
     )
     errors.extend(scholar_source_receipt_errors(repo_root))
-    live_receipt = next((item for item in attested_receipts if item.name == "live-site verification"), None)
+    live_receipt = next(
+        (item for item in attested_receipts if item.name == "live-site verification"),
+        None,
+    )
     if live_receipt is not None:
-        errors.extend(live_deployment_errors(repo_root, expected_commit, path=repo_root / live_receipt.path))
+        errors.extend(
+            live_deployment_errors(
+                repo_root, expected_commit, path=repo_root / live_receipt.path
+            )
+        )
     return errors

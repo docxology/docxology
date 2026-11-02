@@ -44,13 +44,17 @@ def test_checked_in_surfaces_share_one_generated_at():
 
 def test_a_changed_body_still_stamps_every_surface_identically(monkeypatch):
     """The regression itself: a body change makes the reuse path return None."""
-    clock = iter(["2026-01-01T00:00:00Z", "2026-01-01T00:00:03Z", "2026-01-01T00:00:06Z"])
+    clock = iter(
+        ["2026-01-01T00:00:00Z", "2026-01-01T00:00:03Z", "2026-01-01T00:00:06Z"]
+    )
     monkeypatch.setattr(bsi, "generated_timestamp", lambda: next(clock))
     # Force the "body changed" branch, which is the one that used to leak a None.
     monkeypatch.setattr(bsi, "stable_generated_at", lambda path, payload: None)
 
     candidate = json.loads(bsi.render())
-    generated_at = bsi.stable_generated_at(bsi.OUT, candidate) or candidate["generated_at"]
+    generated_at = (
+        bsi.stable_generated_at(bsi.OUT, candidate) or candidate["generated_at"]
+    )
     outputs = {bsi.OUT: bsi.render(generated_at)}
     outputs.update(bsi.render_split(generated_at))
 

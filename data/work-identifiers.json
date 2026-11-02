@@ -925,6 +925,14 @@
     "230": {
       "citation_key": "Friedman2026ObserversWhoReadTheir230",
       "status": "active"
+    },
+    "231": {
+      "citation_key": "Friedman2026ActiveInferenceLanguageModel231",
+      "status": "active"
+    },
+    "232": {
+      "citation_key": "Friedman2026GNNBasedActiveInference232",
+      "status": "active"
     }
   }
 }

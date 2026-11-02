@@ -19,7 +19,9 @@ DEFAULT_SOFTWARE_PATH = Path(__file__).resolve().parents[2] / "pages" / "SOFTWAR
 PAPER_LINK_RE = re.compile(r"\[📄\]\(([^)]+)\)")
 DOI_INLINE_RE = re.compile(r"(10\.\d{4,}/[^\s\])]+)")
 MARKDOWN_LINK_RE = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
-DOI_RESOLVER_RE = re.compile(r"^https?://(?:dx\.)?doi\.org/(10\.\d{4,9}/[^\s)]+)$", re.I)
+DOI_RESOLVER_RE = re.compile(
+    r"^https?://(?:dx\.)?doi\.org/(10\.\d{4,9}/[^\s)]+)$", re.I
+)
 ZENODO_RECORD_URL_RE = re.compile(
     r"^https?://(?:www\.)?zenodo\.org/records/(\d+)(?:[/?#].*)?$", re.I
 )
@@ -161,11 +163,15 @@ def _doi_role_label_errors_for_row(row: SoftwareRow, repo_root: Path) -> list[st
         if doi.casefold() == canonical.casefold()
     ]
     for label, _url, doi in zenodo_links:
-        if doi.casefold() == canonical.casefold() and not CANONICAL_DOI_LABEL_RE.search(label):
+        if doi.casefold() == canonical.casefold() and not CANONICAL_DOI_LABEL_RE.search(
+            label
+        ):
             errors.append(
                 f"{row.name}: canonical DOI link {canonical} must be labelled citation or canonical"
             )
-        if doi.casefold() == artifact.casefold() and not ARTIFACT_DOI_LABEL_RE.search(label):
+        if doi.casefold() == artifact.casefold() and not ARTIFACT_DOI_LABEL_RE.search(
+            label
+        ):
             errors.append(
                 f"{row.name}: artifact DOI link {artifact} must be labelled artifact, version, or download"
             )
@@ -215,7 +221,9 @@ def description_html(description_raw: str) -> str:
     for match in link_re.finditer(text):
         chunks.append(html.escape(text[cursor : match.start()]))
         label, href = match.group(1), match.group(2).strip()
-        if label == "📄" and (href.startswith("../papers/") or href.startswith("papers/")):
+        if label == "📄" and (
+            href.startswith("../papers/") or href.startswith("papers/")
+        ):
             href = _rewrite_paper_href(href)
             label = "paper"
         elif not href.startswith("https://"):
@@ -261,7 +269,9 @@ def iter_software_rows(software_path: Path | None = None) -> Iterator[SoftwareRo
                 stars = int(re.sub(r"[^0-9]", "", cells[3]) or "0")
             except ValueError:
                 stars = 0
-            owner = "docxology" if section == "docxology" else "ActiveInferenceInstitute"
+            owner = (
+                "docxology" if section == "docxology" else "ActiveInferenceInstitute"
+            )
             yield SoftwareRow(
                 name=name,
                 url=url,
@@ -289,7 +299,9 @@ def software_rows_to_dict(row: SoftwareRow) -> dict:
     }
 
 
-def software_catalog_dois(repo_root: Path = DEFAULT_SOFTWARE_PATH.parents[1]) -> dict[str, dict[str, str]]:
+def software_catalog_dois(
+    repo_root: Path = DEFAULT_SOFTWARE_PATH.parents[1],
+) -> dict[str, dict[str, str]]:
     """Map Zenodo DOIs linked from software rows that supplement a catalogued work.
 
     Keys are casefolded DOIs; values name the row and its paper folder. Only a
@@ -304,7 +316,10 @@ def software_catalog_dois(repo_root: Path = DEFAULT_SOFTWARE_PATH.parents[1]) ->
     if not bibliography.is_file():
         return {}
     cited_folders = {
-        row.folder for row in bibliography_rows_from_lines(bibliography.read_text(encoding="utf-8").splitlines())
+        row.folder
+        for row in bibliography_rows_from_lines(
+            bibliography.read_text(encoding="utf-8").splitlines()
+        )
         if row.folder
     }
     linked: dict[str, dict[str, str]] = {}
@@ -313,5 +328,7 @@ def software_catalog_dois(repo_root: Path = DEFAULT_SOFTWARE_PATH.parents[1]) ->
         if not folder or folder not in cited_folders:
             continue
         for doi in zenodo_link_dois(row.description_raw):
-            linked.setdefault(doi.casefold(), {"software_row": row.name, "paper_folder": folder})
+            linked.setdefault(
+                doi.casefold(), {"software_row": row.name, "paper_folder": folder}
+            )
     return linked

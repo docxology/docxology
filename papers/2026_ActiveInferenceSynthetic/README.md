@@ -31,8 +31,8 @@ _No paper-specific findings have been summarized yet; see the abstract and the f
 - DOI: [10.5281/zenodo.23321280](https://doi.org/10.5281/zenodo.23321280)
 - Zenodo record: [https://zenodo.org/records/23321280](https://zenodo.org/records/23321280)
 - PDF: [ActiveInferenceSynthetic_Revised.pdf](ActiveInferenceSynthetic_Revised.pdf)
+- PDF: [ActiveInferenceSynthetic_Slides.pdf](ActiveInferenceSynthetic_Slides.pdf)
 - PDF: [ActiveInferenceSynthetic_v0.5.0.pdf](ActiveInferenceSynthetic_v0.5.0.pdf)
-- PDF download: [ActiveInferenceSynthetic_Slides.pdf](https://zenodo.org/api/records/23396307/files/ActiveInferenceSynthetic_Slides.pdf/content)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/23321280)
 
 ## Citation

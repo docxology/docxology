@@ -30,7 +30,10 @@ from docxology_tools.bibliography_links import canonical_link_url  # noqa: E402
 
 from docxology_tools.report_paths import generated_timestamp, stable_generated_at  # noqa: E402
 from docxology_tools.work_identifiers import (  # noqa: E402
-    key_for_num, load_registry, register_new_rows, validate_catalog,
+    key_for_num,
+    load_registry,
+    register_new_rows,
+    validate_catalog,
 )
 
 
@@ -148,7 +151,10 @@ def source_paths(repo_root: Path = REPO_ROOT) -> frozenset[str]:
 
 
 def row_to_work(
-    row: BiblioRow, *, visible_source_paths: frozenset[str], registry: dict | None = None
+    row: BiblioRow,
+    *,
+    visible_source_paths: frozenset[str],
+    registry: dict | None = None,
 ) -> Work:
     url = canonical_link_url(row.link_cell, row.venue)
     domain = row.domain.strip()
@@ -168,7 +174,9 @@ def row_to_work(
         if f"{paper_root}/full_text.md" in visible_source_paths:
             has_ft = True
             full_text_url = f"/{docs.rstrip('/')}/full_text.md"
-        has_img = any(path.startswith(f"{paper_root}/images/") for path in visible_source_paths)
+        has_img = any(
+            path.startswith(f"{paper_root}/images/") for path in visible_source_paths
+        )
         has_skill = f"{paper_root}/SKILL.md" in visible_source_paths
         has_agents = f"{paper_root}/AGENTS.md" in visible_source_paths
         has_readme = f"{paper_root}/README.md" in visible_source_paths
@@ -177,7 +185,9 @@ def row_to_work(
         citation_key=citation_key(row, registry=registry),
         year=int(row.year) if row.year.isdigit() else row.year,
         domain=domain,
-        domain_name=DOMAIN_NAMES.get(domain, DOMAIN_NAMES.get(domain.rstrip("\ufe0f"), "Other")),
+        domain_name=DOMAIN_NAMES.get(
+            domain, DOMAIN_NAMES.get(domain.rstrip("\ufe0f"), "Other")
+        ),
         type=row.typ,
         title=clean_text(row.title),
         venue=clean_text(row.venue),
@@ -221,7 +231,9 @@ def bibtex_entry(work: Work, *, contributor_role: str = "author") -> str:
         ("year", str(work.year)),
     ]
     if entry_type in {"article", "incollection"} and work.venue:
-        fields.append(("journal" if entry_type == "article" else "booktitle", work.venue))
+        fields.append(
+            ("journal" if entry_type == "article" else "booktitle", work.venue)
+        )
     elif work.venue:
         fields.append(("howpublished", work.venue))
     if work.doi:
@@ -231,7 +243,10 @@ def bibtex_entry(work: Work, *, contributor_role: str = "author") -> str:
     fields.extend(
         [
             ("keywords", f"{work.domain_name}; {work.type}"),
-            ("note", f"Catalog row {work.num}; docs: {work.docs_path or 'not available'}"),
+            (
+                "note",
+                f"Catalog row {work.num}; docs: {work.docs_path or 'not available'}",
+            ),
         ]
     )
     body = ",\n".join(f"  {k} = {{{bib_escape(v)}}}" for k, v in fields if v)
@@ -244,7 +259,11 @@ def csl_item(work: Work, *, contributor_role: str = "author") -> dict:
         "id": work.citation_key,
         "type": TYPE_TO_CSL.get(work.type, "article-journal"),
         "title": work.title,
-        **({contributor_role: [split_author(name) for name in authors]} if authors else {}),
+        **(
+            {contributor_role: [split_author(name) for name in authors]}
+            if authors
+            else {}
+        ),
         "issued": {"date-parts": [[work.year]]},
         "genre": work.type,
         "keyword": f"{work.domain_name}; {work.type}",
@@ -263,7 +282,10 @@ def csl_item(work: Work, *, contributor_role: str = "author") -> dict:
 def ris_record(work: Work, *, contributor_role: str = "author") -> str:
     lines = [f"TY  - {TYPE_TO_RIS.get(work.type, 'GEN')}"]
     # RIS repeats AU for each author, in order.
-    lines.extend(f'{"ED" if contributor_role == "editor" else "AU"}  - {name}' for name in author_names(work))
+    lines.extend(
+        f"{'ED' if contributor_role == 'editor' else 'AU'}  - {name}"
+        for name in author_names(work)
+    )
     lines.extend([f"PY  - {work.year}", f"TI  - {work.title}"])
     if work.venue:
         lines.append(f"T2  - {work.venue}")
@@ -291,35 +313,65 @@ def existing_generated_at(path: Path) -> str | None:
         return None
 
 
-def render_outputs(works: list[Work], generated_at: str | None = None) -> dict[Path, str]:
-    from docxology_tools.author_entities import load_author_records, reviewed_contributor_role
+def render_outputs(
+    works: list[Work], generated_at: str | None = None
+) -> dict[Path, str]:
+    from docxology_tools.author_entities import (
+        load_author_records,
+        reviewed_contributor_role,
+    )
 
     records = load_author_records(REPO_ROOT)
-    roles = {work.citation_key: reviewed_contributor_role(asdict(work), records) for work in works}
+    roles = {
+        work.citation_key: reviewed_contributor_role(asdict(work), records)
+        for work in works
+    }
     data_dir = REPO_ROOT / "data"
     works_json = {
         "generated_at": generated_at or generated_timestamp(),
         "source": "pages/BIBLIOGRAPHY.md",
         "schema_ref": "/data/agent-index.json#schemas/Work",
         "count": len(works),
-        "works": [{**asdict(w), **({"contributor_role": "editor"} if roles[w.citation_key] == "editor" else {})} for w in works],
+        "works": [
+            {
+                **asdict(w),
+                **(
+                    {"contributor_role": "editor"}
+                    if roles[w.citation_key] == "editor"
+                    else {}
+                ),
+            }
+            for w in works
+        ],
     }
     return {
-        REPO_ROOT / "bibliography.bib": "\n\n".join(bibtex_entry(w, contributor_role=roles[w.citation_key]) for w in works) + "\n",
-        REPO_ROOT / "bibliography.ris": "\n\n".join(ris_record(w, contributor_role=roles[w.citation_key]) for w in works) + "\n",
-        REPO_ROOT / "bibliography.csl.json": json.dumps(
-            [csl_item(w, contributor_role=roles[w.citation_key]) for w in works], indent=2, ensure_ascii=False
+        REPO_ROOT / "bibliography.bib": "\n\n".join(
+            bibtex_entry(w, contributor_role=roles[w.citation_key]) for w in works
         )
         + "\n",
-        data_dir / "works.json": json.dumps(works_json, indent=2, ensure_ascii=False) + "\n",
+        REPO_ROOT / "bibliography.ris": "\n\n".join(
+            ris_record(w, contributor_role=roles[w.citation_key]) for w in works
+        )
+        + "\n",
+        REPO_ROOT / "bibliography.csl.json": json.dumps(
+            [csl_item(w, contributor_role=roles[w.citation_key]) for w in works],
+            indent=2,
+            ensure_ascii=False,
+        )
+        + "\n",
+        data_dir / "works.json": json.dumps(works_json, indent=2, ensure_ascii=False)
+        + "\n",
     }
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if generated files are stale")
     parser.add_argument(
-        "--register-new-identifiers", action="store_true",
+        "--check", action="store_true", help="Fail if generated files are stale"
+    )
+    parser.add_argument(
+        "--register-new-identifiers",
+        action="store_true",
         help="Explicitly allocate permanent keys for reviewed new bibliography rows before exporting",
     )
     args = parser.parse_args()
@@ -333,7 +385,10 @@ def main() -> None:
         print(f"registered {len(allocated)} new permanent work identifiers")
     registry = load_registry()
     validate_catalog(rows, registry)
-    works = [row_to_work(r, visible_source_paths=visible_source_paths, registry=registry) for r in rows]
+    works = [
+        row_to_work(r, visible_source_paths=visible_source_paths, registry=registry)
+        for r in rows
+    ]
     works_path = REPO_ROOT / "data" / "works.json"
     generated_at = existing_generated_at(works_path) if args.check else None
     if not args.check:

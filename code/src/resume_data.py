@@ -49,7 +49,9 @@ def source_manifest(repo_root: Path = REPO_ROOT) -> dict[str, Any]:
         content = path.read_bytes()
         digest = hashlib.sha256(content).hexdigest()
         files.append({"path": rel_path, "bytes": len(content), "sha256": digest})
-    manifest_bytes = json.dumps(files, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    manifest_bytes = json.dumps(files, sort_keys=True, separators=(",", ":")).encode(
+        "utf-8"
+    )
     digest = hashlib.sha256(manifest_bytes).hexdigest()
     return {"bytes": len(manifest_bytes), "sha256": digest, "files": files}
 
@@ -87,10 +89,18 @@ def _require_unique_ids(source: dict[str, Any], section: str) -> None:
 def _validate_dates(section: str, item: dict[str, Any]) -> None:
     if "start_year" in item and not isinstance(item["start_year"], int):
         raise ResumeDataError(f"{section}:{item.get('id')} start_year must be int")
-    if "end_year" in item and item["end_year"] is not None and not isinstance(item["end_year"], int):
-        raise ResumeDataError(f"{section}:{item.get('id')} end_year must be int or null")
+    if (
+        "end_year" in item
+        and item["end_year"] is not None
+        and not isinstance(item["end_year"], int)
+    ):
+        raise ResumeDataError(
+            f"{section}:{item.get('id')} end_year must be int or null"
+        )
     if item.get("status") == "ongoing" and item.get("end_year") is not None:
-        raise ResumeDataError(f"{section}:{item.get('id')} ongoing records must have end_year null")
+        raise ResumeDataError(
+            f"{section}:{item.get('id')} ongoing records must have end_year null"
+        )
 
 
 def _validate_variants(section: str, item: dict[str, Any]) -> None:
@@ -99,13 +109,17 @@ def _validate_variants(section: str, item: dict[str, Any]) -> None:
         raise ResumeDataError(f"{section}:{item.get('id')} must include full variant")
     invalid = sorted(set(variants) - set(VARIANTS))
     if invalid:
-        raise ResumeDataError(f"{section}:{item.get('id')} invalid variants: {', '.join(invalid)}")
+        raise ResumeDataError(
+            f"{section}:{item.get('id')} invalid variants: {', '.join(invalid)}"
+        )
 
 
 def _validate_links(section: str, item: dict[str, Any]) -> None:
     links = item.get("links")
     if not isinstance(links, list) or not links:
-        raise ResumeDataError(f"{section}:{item.get('id')} must include at least one source link")
+        raise ResumeDataError(
+            f"{section}:{item.get('id')} must include at least one source link"
+        )
     for link in links:
         if not isinstance(link, dict):
             raise ResumeDataError(f"{section}:{item.get('id')} links must be objects")
@@ -129,9 +143,20 @@ def validate_source(source: dict[str, Any]) -> None:
     ]
     missing = [section for section in required_sections if section not in source]
     if missing:
-        raise ResumeDataError("resume/source.json missing sections: " + ", ".join(missing))
+        raise ResumeDataError(
+            "resume/source.json missing sections: " + ", ".join(missing)
+        )
     contact = source["contact"]
-    for key in ["email", "github", "linkedin", "orcid", "google_scholar", "keybase", "ens", "art_portfolio"]:
+    for key in [
+        "email",
+        "github",
+        "linkedin",
+        "orcid",
+        "google_scholar",
+        "keybase",
+        "ens",
+        "art_portfolio",
+    ]:
         if key not in contact or not contact[key]:
             raise ResumeDataError(f"contact missing required field: {key}")
     if len(source["education"]) < 4:
@@ -141,12 +166,22 @@ def validate_source(source: dict[str, Any]) -> None:
     if len(source["conferences"]) < 13:
         raise ResumeDataError("conferences must include imported conference records")
     if len(source["media_outreach"]) < 20:
-        raise ResumeDataError("media_outreach must include imported media/outreach records")
+        raise ResumeDataError(
+            "media_outreach must include imported media/outreach records"
+        )
     if len(source["service"]) < 20:
         raise ResumeDataError("service must include imported service records")
     if len(source["art_uses"]) < 10:
         raise ResumeDataError("art_uses must include imported art-use records")
-    for section in ["education", "experience", "awards", "conferences", "media_outreach", "service", "art_uses"]:
+    for section in [
+        "education",
+        "experience",
+        "awards",
+        "conferences",
+        "media_outreach",
+        "service",
+        "art_uses",
+    ]:
         _require_unique_ids(source, section)
         for item in source[section]:
             _validate_dates(section, item)
@@ -181,9 +216,13 @@ def _metrics(
     return {
         "works": works["count"],
         "software_catalogued": software["count"],
-        "owned_software_catalogued": sum(1 for row in software["repositories"] if row.get("owner") == "docxology"),
+        "owned_software_catalogued": sum(
+            1 for row in software["repositories"] if row.get("owner") == "docxology"
+        ),
         "aii_software_catalogued": sum(
-            1 for row in software["repositories"] if row.get("owner") == "ActiveInferenceInstitute"
+            1
+            for row in software["repositories"]
+            if row.get("owner") == "ActiveInferenceInstitute"
         ),
         "google_scholar": {
             "citations": scholar["citations"],
@@ -202,12 +241,16 @@ def _metrics(
             "primary_total": github_counts.get("primary_total", 0),
             "forks": github_counts.get("forks", 0),
             "docxology": github_counts.get("docxology", 0),
-            "ActiveInferenceInstitute": github_counts.get("ActiveInferenceInstitute", 0),
+            "ActiveInferenceInstitute": github_counts.get(
+                "ActiveInferenceInstitute", 0
+            ),
         },
     }
 
 
-def build_resume_payload(generated_at: str, repo_root: Path = REPO_ROOT) -> dict[str, Any]:
+def build_resume_payload(
+    generated_at: str, repo_root: Path = REPO_ROOT
+) -> dict[str, Any]:
     inputs = load_resume_inputs(repo_root)
     source = inputs["resume/source.json"]
     works = inputs["data/works.json"]
@@ -262,30 +305,40 @@ def filtered_works(works: list[dict[str, Any]], variant: str) -> list[dict[str, 
         return [
             work
             for work in works
-            if work.get("domain_name") in {"Computational", "Active Inference", "Cognitive Security"}
+            if work.get("domain_name")
+            in {"Computational", "Active Inference", "Cognitive Security"}
             or work.get("type") in {"Paper", "Book", "Presentation"}
         ]
     if variant == "teaching-service":
         return [
             work
             for work in works
-            if work.get("domain_name") in {"Media & Teaching", "Active Inference", "Entomology"}
+            if work.get("domain_name")
+            in {"Media & Teaching", "Active Inference", "Entomology"}
             or work.get("type") in {"Course", "Series", "Playbook"}
         ]
     raise ResumeDataError(f"unknown variant: {variant}")
 
 
-def filtered_software(software: list[dict[str, Any]], variant: str) -> list[dict[str, Any]]:
+def filtered_software(
+    software: list[dict[str, Any]], variant: str
+) -> list[dict[str, Any]]:
     if variant in ("full", "software-consulting"):
         return software
     if variant == "academic":
-        return [row for row in software if row.get("paper_path") or row.get("zenodo_url")]
+        return [
+            row for row in software if row.get("paper_path") or row.get("zenodo_url")
+        ]
     if variant == "teaching-service":
         needles = ("biology", "course", "education", "journal", "textbook", "video")
         return [
             row
             for row in software
-            if any(needle in " ".join([row.get("name", ""), row.get("description", "")]).lower() for needle in needles)
+            if any(
+                needle
+                in " ".join([row.get("name", ""), row.get("description", "")]).lower()
+                for needle in needles
+            )
         ]
     raise ResumeDataError(f"unknown variant: {variant}")
 
@@ -310,18 +363,26 @@ def _line(label: str, value: Any) -> str:
     return f"{label}: {value}"
 
 
-def _append_wrapped(lines: list[str], text: str, *, indent: str = "  ", width: int = 100) -> None:
+def _append_wrapped(
+    lines: list[str], text: str, *, indent: str = "  ", width: int = 100
+) -> None:
     if DOI_WRAP_RE.search(text):
         lines.append(indent + text)
         return
-    lines.extend(textwrap.wrap(text, width=width, initial_indent=indent, subsequent_indent=indent))
+    lines.extend(
+        textwrap.wrap(
+            text, width=width, initial_indent=indent, subsequent_indent=indent
+        )
+    )
 
 
 def _section(lines: list[str], title: str) -> None:
     lines.extend(["", title.upper(), "-" * len(title)])
 
 
-def _render_record(lines: list[str], heading: str, details: list[str] | None = None) -> None:
+def _render_record(
+    lines: list[str], heading: str, details: list[str] | None = None
+) -> None:
     lines.append(heading)
     for detail in details or []:
         _append_wrapped(lines, f"- {detail}", indent="  ")
@@ -334,7 +395,9 @@ def _links_text(item: dict[str, Any]) -> str:
     return "Sources: " + "; ".join(f"{link['label']}: {link['url']}" for link in links)
 
 
-def _details_with_links(item: dict[str, Any], details: list[str] | None = None) -> list[str]:
+def _details_with_links(
+    item: dict[str, Any], details: list[str] | None = None
+) -> list[str]:
     rendered = list(details or [])
     links = _links_text(item)
     if links:
@@ -397,14 +460,20 @@ def render_text(payload: dict[str, Any], variant: str) -> str:
 
     _section(lines, "Awards and Fellowships")
     for item in filter_items(payload["awards"], variant):
-        _render_record(lines, f"{item['year']} | {item['name']}", _details_with_links(item, [item["details"]]))
+        _render_record(
+            lines,
+            f"{item['year']} | {item['name']}",
+            _details_with_links(item, [item["details"]]),
+        )
 
     works = filtered_works(payload["works"], variant)
     _section(lines, f"Works and Publications ({len(works)})")
     for work in works:
         link = work.get("doi") or work.get("url") or ""
         link_text = f" | {link}" if link else ""
-        lines.append(f"[{work['num']:03d}] {work['year']} | {work['type']} | {work['title']} | {work['venue']}{link_text}")
+        lines.append(
+            f"[{work['num']:03d}] {work['year']} | {work['type']} | {work['title']} | {work['venue']}{link_text}"
+        )
 
     software = filtered_software(payload["software"], variant)
     _section(lines, f"Software ({len(software)})")
@@ -412,15 +481,21 @@ def render_text(payload: dict[str, Any], variant: str) -> str:
         desc = row.get("description", "")
         paper = f" | paper: {row['paper_path']}" if row.get("paper_path") else ""
         zenodo = f" | zenodo: {row['zenodo_url']}" if row.get("zenodo_url") else ""
-        lines.append(f"{row['owner']}/{row['name']} | {row.get('language') or 'unspecified'} | {row['url']} | {desc}{paper}{zenodo}")
+        lines.append(
+            f"{row['owner']}/{row['name']} | {row.get('language') or 'unspecified'} | {row['url']} | {desc}{paper}{zenodo}"
+        )
 
     _section(lines, "Conferences, Posters, Seminars, Workshops")
     for item in filter_items(payload["conferences"], variant):
-        detail = " ".join(part for part in [item.get("details", ""), item.get("date", "")] if part)
+        detail = " ".join(
+            part for part in [item.get("details", ""), item.get("date", "")] if part
+        )
         links = _links_text(item)
         suffix = f" | {detail}" if detail else ""
         source_suffix = f" | {links}" if links else ""
-        lines.append(f"{item['year']} | {item['type']} | {item['event']} | {item['title']}{suffix}{source_suffix}")
+        lines.append(
+            f"{item['year']} | {item['type']} | {item['event']} | {item['title']}{suffix}{source_suffix}"
+        )
 
     _section(lines, "Science Engagement, Outreach, Quotes, Articles")
     for item in filter_items(payload["media_outreach"], variant):
@@ -428,13 +503,17 @@ def render_text(payload: dict[str, Any], variant: str) -> str:
         detail = f" | {item['details']}" if item.get("details") else ""
         links = _links_text(item)
         source_links = f" | {links}" if links else ""
-        lines.append(f"{item['year']} | {item['type']} | {item['name']}{source}{detail}{source_links}")
+        lines.append(
+            f"{item['year']} | {item['type']} | {item['name']}{source}{detail}{source_links}"
+        )
 
     _section(lines, "Professional Participation, Engagement, and Service")
     for item in filter_items(payload["service"], variant):
         links = _links_text(item)
         source_suffix = f" | {links}" if links else ""
-        lines.append(f"{date_range(item)} | {item['group']} | {item['type']} | {item['description']}{source_suffix}")
+        lines.append(
+            f"{date_range(item)} | {item['group']} | {item['type']} | {item['description']}{source_suffix}"
+        )
 
     if variant == "full":
         _section(lines, "Art Portfolio and Uses")
@@ -442,7 +521,9 @@ def render_text(payload: dict[str, Any], variant: str) -> str:
             year = item["year"] if item["year"] is not None else "All"
             links = _links_text(item)
             source_suffix = f" | {links}" if links else ""
-            lines.append(f"{year} | {item['name']} | {item['description']}{source_suffix}")
+            lines.append(
+                f"{year} | {item['name']} | {item['description']}{source_suffix}"
+            )
 
     text = "\n".join(lines).rstrip() + "\n"
     if CODA_GLYPH_RE.search(text):

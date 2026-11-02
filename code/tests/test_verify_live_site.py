@@ -39,7 +39,9 @@ def _write_current_counts(path: Path) -> dict:
     return payload
 
 
-def _write_report(path: Path, payload: dict, *, overall_ok: bool = True, expected_counts: dict) -> None:
+def _write_report(
+    path: Path, payload: dict, *, overall_ok: bool = True, expected_counts: dict
+) -> None:
     report_payload = {
         "generated_at": "2026-06-16T03:36:11Z",
         "expected_counts": expected_counts,
@@ -65,12 +67,18 @@ def test_load_dynamic_checks_uses_current_counts(tmp_path):
 
     pubs = next(check for check in checks if check["path"] == "publications.html")
     software = next(check for check in checks if check["path"] == "software.html")
-    software_export = next(check for check in checks if check["path"] == "data/software-ld.json")
+    software_export = next(
+        check for check in checks if check["path"] == "data/software-ld.json"
+    )
 
     assert any("168 Research Works" in marker for marker in pubs["markers"])
     assert any("58 owned" in marker for marker in software["markers"])
     assert any("33 catalogued" in marker for marker in software["markers"])
-    assert any(f"{payload['counts']['github_inventory']['public']} public repositories" in marker for marker in software["markers"])
+    assert any(
+        f"{payload['counts']['github_inventory']['public']} public repositories"
+        in marker
+        for marker in software["markers"]
+    )
     assert pubs["jsonld_types"] == ["CollectionPage"]
     assert software["jsonld_types"] == ["CollectionPage"]
     assert '"@type"' not in json.dumps(pubs["markers"])
@@ -82,6 +90,8 @@ def test_cache_busted_url_preserves_path_and_adds_unique_query():
     assert url.startswith("https://example.test/data/works.json?")
     assert "v=1" in url
     assert "__verify=" in url
+
+
 def test_json_contract_survives_large_index_fetch(monkeypatch):
     """search-index.json outgrew the old 2 MB read cap in verify_live_site.fetch,
     which truncated the fetch and failed valid_json on the live route. The cap
@@ -92,7 +102,9 @@ def test_json_contract_survives_large_index_fetch(monkeypatch):
     # capped at 2 MB would truncate mid-JSON and fail to parse.
     filler = "x" * 512
     items = [{"title": filler} for _ in range((old_cap + 500_000) // 532)]
-    payload = json.dumps({"generated_at": "x", "count": len(items), "items": items}).encode()
+    payload = json.dumps(
+        {"generated_at": "x", "count": len(items), "items": items}
+    ).encode()
     assert len(payload) > old_cap
 
     class FakeResponse:
@@ -115,7 +127,11 @@ def test_json_contract_survives_large_index_fetch(monkeypatch):
     result = vl.fetch("https://example.test/search-index.json", timeout=10)
     assert result["bytes"] == len(payload)
     checks, observed = vl.parse_json_contract("search-index.json", result["text"], {})
-    assert checks == {"valid_json": True, "items_present": True, "count_matches_items": True}
+    assert checks == {
+        "valid_json": True,
+        "items_present": True,
+        "count_matches_items": True,
+    }
 
 
 def test_jsonld_types_in_html_parses_graph_and_list_types():
@@ -130,7 +146,12 @@ def test_jsonld_types_in_html_parses_graph_and_list_types():
     <script type="application/ld+json">this is not json</script>
     <script>console.log("not ld+json")</script>
     """
-    assert vl.jsonld_types_in_html(html) == {"CollectionPage", "WebPage", "Person", "BreadcrumbList"}
+    assert vl.jsonld_types_in_html(html) == {
+        "CollectionPage",
+        "WebPage",
+        "Person",
+        "BreadcrumbList",
+    }
 
 
 def test_jsonld_types_in_html_empty_and_no_blocks():
@@ -205,7 +226,9 @@ def test_pages_built_is_not_deployment_pending():
         (["_site/index.html", "README.md"], True),
     ],
 )
-def test_local_source_dirty_uses_the_release_evidence_allowlist(tmp_path, untracked_paths, expected):
+def test_local_source_dirty_uses_the_release_evidence_allowlist(
+    tmp_path, untracked_paths, expected
+):
     initialized = subprocess.run(
         ["git", "init", "--quiet"],
         cwd=tmp_path,
@@ -238,7 +261,9 @@ def test_verify_live_site_check_command_validates_fingerprint(tmp_path, capsys):
     counts_path = tmp_path / "data" / "current-counts.json"
     _write_current_counts(counts_path)
     report_path = tmp_path / "reports" / "live_site_verification_2026-06-16.json"
-    _write_report(report_path, {}, expected_counts=vl.load_current_counts_fingerprint(counts_path))
+    _write_report(
+        report_path, {}, expected_counts=vl.load_current_counts_fingerprint(counts_path)
+    )
 
     vl.main(["--check"], current_counts_json=counts_path, report_dir=report_path.parent)
     output = capsys.readouterr().out
@@ -254,8 +279,15 @@ def test_verify_live_site_check_allows_marker_only_deploy_lag(tmp_path, capsys):
         {
             "deployment_sha_mismatch": True,
             "deployment_pending_paths": ["index.html"],
-            "results": [{"path": "index.html", "status": 200, "ok": False,
-                         "markers": {"new candidate marker": False}, "deployment_pending": True}],
+            "results": [
+                {
+                    "path": "index.html",
+                    "status": 200,
+                    "ok": False,
+                    "markers": {"new candidate marker": False},
+                    "deployment_pending": True,
+                }
+            ],
         },
         overall_ok=False,
         expected_counts=vl.load_current_counts_fingerprint(counts_path),
@@ -272,16 +304,25 @@ def test_verify_live_site_check_fails_on_http_error(tmp_path):
     report_path = tmp_path / "reports" / "live_site_verification_2026-06-16.json"
     _write_report(
         report_path,
-        {"results": [{"status": 200}, {"status": 500, "url": "https://example.test/bad"}]},
+        {
+            "results": [
+                {"status": 200},
+                {"status": 500, "url": "https://example.test/bad"},
+            ]
+        },
         overall_ok=False,
         expected_counts=vl.load_current_counts_fingerprint(counts_path),
     )
 
     with pytest.raises(SystemExit, match="hard failures"):
-        vl.main(["--check"], current_counts_json=counts_path, report_dir=report_path.parent)
+        vl.main(
+            ["--check"], current_counts_json=counts_path, report_dir=report_path.parent
+        )
 
 
-def test_verify_live_site_check_allows_local_404_during_built_pages_deploy(tmp_path, capsys):
+def test_verify_live_site_check_allows_local_404_during_built_pages_deploy(
+    tmp_path, capsys
+):
     counts_path = tmp_path / "data" / "current-counts.json"
     _write_current_counts(counts_path)
     report_path = tmp_path / "reports" / "live_site_verification_2026-06-16.json"
@@ -319,10 +360,14 @@ def test_verify_live_site_check_fails_when_fingerprint_drifted(tmp_path):
     _write_report(report_path, {"expected_counts": drifted}, expected_counts=drifted)
 
     with pytest.raises(SystemExit):
-        vl.main(["--check"], current_counts_json=counts_path, report_dir=report_path.parent)
+        vl.main(
+            ["--check"], current_counts_json=counts_path, report_dir=report_path.parent
+        )
 
 
-def test_verify_live_site_check_allows_stale_fingerprint_for_offline_candidate(tmp_path, capsys):
+def test_verify_live_site_check_allows_stale_fingerprint_for_offline_candidate(
+    tmp_path, capsys
+):
     counts_path = tmp_path / "data" / "current-counts.json"
     _write_current_counts(counts_path)
     report_path = tmp_path / "reports" / "live_site_verification_2026-06-16.json"
@@ -346,31 +391,54 @@ def test_transport_and_server_failures_never_become_propagation(status):
         "source_dirty": True,
         "deployment_sha_mismatch": True,
         "github_pages": {"ok": True, "status": "built"},
-        "results": [{"path": "index.html", "status": status, "ok": False,
-                     "deployment_pending": True}],
+        "results": [
+            {
+                "path": "index.html",
+                "status": status,
+                "ok": False,
+                "deployment_pending": True,
+            }
+        ],
     }
     assert vl.hard_failures(payload)[0]["path"] == "index.html"
 
 
-@pytest.mark.parametrize("row", [
-    {"status": 0, "ok": False, "error": "network timeout"},
-    {"status": 200, "ok": False, "markers": {"expected heading": False}},
-    {"status": 200, "jsonld_types": {"CollectionPage": False}},
-])
+@pytest.mark.parametrize(
+    "row",
+    [
+        {"status": 0, "ok": False, "error": "network timeout"},
+        {"status": 200, "ok": False, "markers": {"expected heading": False}},
+        {"status": 200, "jsonld_types": {"CollectionPage": False}},
+    ],
+)
 def test_cached_unclassified_failure_is_rejected(tmp_path, row):
     counts = tmp_path / "data/current-counts.json"
     _write_current_counts(counts)
     report = tmp_path / "reports/live_site_verification_2026-06-16.json"
-    _write_report(report, {"results": [{"path": "index.html", **row}]}, overall_ok=False,
-                  expected_counts=vl.load_current_counts_fingerprint(counts))
+    _write_report(
+        report,
+        {"results": [{"path": "index.html", **row}]},
+        overall_ok=False,
+        expected_counts=vl.load_current_counts_fingerprint(counts),
+    )
     with pytest.raises(SystemExit, match="hard failures"):
         vl.main(["--check"], current_counts_json=counts, report_dir=report.parent)
 
 
 def test_pending_flag_alone_cannot_defer_same_candidate_404():
-    payload = {"overall_ok": False, "github_pages": {"ok": True, "status": "built"},
-               "results": [{"path": "index.html", "status": 404, "ok": False,
-                            "local_exists": True, "deployment_pending": True}]}
+    payload = {
+        "overall_ok": False,
+        "github_pages": {"ok": True, "status": "built"},
+        "results": [
+            {
+                "path": "index.html",
+                "status": 404,
+                "ok": False,
+                "local_exists": True,
+                "deployment_pending": True,
+            }
+        ],
+    }
     assert vl.hard_failures(payload)[0]["path"] == "index.html"
 
 
@@ -379,25 +447,49 @@ def live_candidate(tmp_path, monkeypatch):
     counts = tmp_path / "data/current-counts.json"
     _write_current_counts(counts)
     (tmp_path / "index.html").write_text("candidate heading", encoding="utf-8")
-    run = {"workflow_run_id": 101, "workflow_name": "Deploy bounded GitHub Pages artifact",
-           "workflow_path": ".github/workflows/pages.yml", "head_sha": "a" * 40,
-           "head_branch": "main", "status": "completed", "conclusion": "success"}
-    response = {"status": 200, "ok": True, "text": "candidate heading", "headers": {},
-                "bytes": 17, "elapsed_ms": 1, "error": ""}
-    monkeypatch.setattr(vl, "load_dynamic_checks", lambda _: [{"path": "", "markers": ["candidate heading"]}])
+    run = {
+        "workflow_run_id": 101,
+        "workflow_name": "Deploy bounded GitHub Pages artifact",
+        "workflow_path": ".github/workflows/pages.yml",
+        "head_sha": "a" * 40,
+        "head_branch": "main",
+        "status": "completed",
+        "conclusion": "success",
+    }
+    response = {
+        "status": 200,
+        "ok": True,
+        "text": "candidate heading",
+        "headers": {},
+        "bytes": 17,
+        "elapsed_ms": 1,
+        "error": "",
+    }
+    monkeypatch.setattr(
+        vl,
+        "load_dynamic_checks",
+        lambda _: [{"path": "", "markers": ["candidate heading"]}],
+    )
     monkeypatch.setattr(vl, "fetch_with_retries", lambda *_: response)
     monkeypatch.setattr(vl, "pages_status", lambda _: {"ok": True, "status": "built"})
     monkeypatch.setattr(vl, "latest_deployment_run", lambda *_: run)
     monkeypatch.setattr(vl, "local_source_commit", lambda *_: "a" * 40)
-    monkeypatch.setattr(vl, "source_worktree_state", lambda *_: {"source_worktree_clean": True})
+    monkeypatch.setattr(
+        vl, "source_worktree_state", lambda *_: {"source_worktree_clean": True}
+    )
     return tmp_path, counts, run, response
 
 
 def test_same_candidate_built_deployment_missing_route_is_hard_failure(live_candidate):
     root, counts, _, response = live_candidate
     response.update(status=404, ok=False, text="not found")
-    report = vl.build_report(1, repo_root=root, current_counts_json=counts,
-                             expected_commit="a" * 40, deployment_run_id=101)
+    report = vl.build_report(
+        1,
+        repo_root=root,
+        current_counts_json=counts,
+        expected_commit="a" * 40,
+        deployment_run_id=101,
+    )
     assert report["deployment_binding"]["ok"]
     assert not report["deployment_sha_mismatch"]
     assert not report["results"][0]["deployment_pending"]
@@ -416,7 +508,9 @@ def test_actual_predeploy_missing_route_remains_explicitly_pending(live_candidat
 
 
 @pytest.mark.parametrize("status", [0, 500])
-def test_build_report_keeps_transport_errors_hard_during_predeploy(live_candidate, status):
+def test_build_report_keeps_transport_errors_hard_during_predeploy(
+    live_candidate, status
+):
     root, counts, run, response = live_candidate
     run["head_sha"] = "b" * 40
     response.update(status=status, ok=False, text="failure")
@@ -428,39 +522,74 @@ def test_build_report_keeps_transport_errors_hard_during_predeploy(live_candidat
 def test_triggering_candidate_and_run_binding_passes(live_candidate, monkeypatch):
     root, counts, run, _ = live_candidate
     requested = []
-    monkeypatch.setattr(vl, "latest_deployment_run", lambda timeout, run_id: requested.append(run_id) or run)
-    report = vl.build_report(1, repo_root=root, current_counts_json=counts,
-                             expected_commit="a" * 40, deployment_run_id=101)
+    monkeypatch.setattr(
+        vl,
+        "latest_deployment_run",
+        lambda timeout, run_id: requested.append(run_id) or run,
+    )
+    report = vl.build_report(
+        1,
+        repo_root=root,
+        current_counts_json=counts,
+        expected_commit="a" * 40,
+        deployment_run_id=101,
+    )
     assert requested == [101]
     assert report["deployment_binding"]["ok"]
     assert report["overall_ok"]
     assert vl.hard_failures(report) == []
 
 
-@pytest.mark.parametrize("field,value", [
-    ("head_sha", "b" * 40), ("workflow_run_id", 102), ("head_branch", "feature"),
-    ("status", "in_progress"), ("conclusion", "failure"),
-    ("workflow_path", ".github/workflows/other.yml"), ("workflow_name", "Other workflow"),
-])
-def test_mismatched_deployment_identity_fails_even_when_routes_pass(live_candidate, field, value):
+@pytest.mark.parametrize(
+    "field,value",
+    [
+        ("head_sha", "b" * 40),
+        ("workflow_run_id", 102),
+        ("head_branch", "feature"),
+        ("status", "in_progress"),
+        ("conclusion", "failure"),
+        ("workflow_path", ".github/workflows/other.yml"),
+        ("workflow_name", "Other workflow"),
+    ],
+)
+def test_mismatched_deployment_identity_fails_even_when_routes_pass(
+    live_candidate, field, value
+):
     root, counts, run, _ = live_candidate
     run[field] = value
-    report = vl.build_report(1, repo_root=root, current_counts_json=counts,
-                             expected_commit="a" * 40, deployment_run_id=101)
+    report = vl.build_report(
+        1,
+        repo_root=root,
+        current_counts_json=counts,
+        expected_commit="a" * 40,
+        deployment_run_id=101,
+    )
     assert report["results"][0]["ok"]
     assert not report["deployment_binding"]["ok"]
     assert not report["overall_ok"]
-    assert any(item["path"] == "deployment binding" for item in vl.hard_failures(report))
+    assert any(
+        item["path"] == "deployment binding" for item in vl.hard_failures(report)
+    )
 
 
 def test_exact_run_lookup_does_not_select_floating_latest(monkeypatch):
     commands = []
-    run = {"id": 101, "name": "Deploy bounded GitHub Pages artifact", "head_sha": "a" * 40,
-           "path": ".github/workflows/pages.yml", "head_branch": "main", "status": "completed",
-           "conclusion": "success"}
+    run = {
+        "id": 101,
+        "name": "Deploy bounded GitHub Pages artifact",
+        "head_sha": "a" * 40,
+        "path": ".github/workflows/pages.yml",
+        "head_branch": "main",
+        "status": "completed",
+        "conclusion": "success",
+    }
+
     def run_api(command, **kwargs):
         commands.append(command)
-        return subprocess.CompletedProcess(command, 0, stdout=json.dumps(run), stderr="")
+        return subprocess.CompletedProcess(
+            command, 0, stdout=json.dumps(run), stderr=""
+        )
+
     monkeypatch.setattr(vl.subprocess, "run", run_api)
     observed = vl.latest_deployment_run(1, run_id=101)
     assert commands == [["gh", "api", "repos/docxology/docxology/actions/runs/101"]]
@@ -473,8 +602,18 @@ def test_failed_candidate_verification_retains_dedicated_receipt(live_candidate)
     response.update(status=404, ok=False, text="not found")
     output = root / "private-evidence/live.json"
     with pytest.raises(SystemExit, match="hard failures"):
-        vl.main(["--expected-commit", "a" * 40, "--deployment-run-id", "101", "--output", str(output)],
-                repo_root=root, current_counts_json=counts)
+        vl.main(
+            [
+                "--expected-commit",
+                "a" * 40,
+                "--deployment-run-id",
+                "101",
+                "--output",
+                str(output),
+            ],
+            repo_root=root,
+            current_counts_json=counts,
+        )
     payload = json.loads(output.read_text(encoding="utf-8"))
     assert payload["source_commit"] == "a" * 40
     assert not payload["overall_ok"]
@@ -482,42 +621,62 @@ def test_failed_candidate_verification_retains_dedicated_receipt(live_candidate)
 
 
 def test_non_object_live_json_records_failed_contract_instead_of_raising():
-    checks, observed = vl.parse_json_contract("data/works.json", '[]', {"works": 1})
+    checks, observed = vl.parse_json_contract("data/works.json", "[]", {"works": 1})
     assert checks == {"valid_json": True, "json_object": False}
     assert observed == {}
 
 
 def _successful_typed_report() -> dict:
     return {
-        "overall_ok": True, "source_dirty": False, "deployment_sha_mismatch": False,
+        "overall_ok": True,
+        "source_dirty": False,
+        "deployment_sha_mismatch": False,
         "source_worktree_clean": True,
         "github_pages": {"ok": True, "status": "built", "deployment_pending": False},
         "deployment_binding": {"required": False, "ok": True, "checks": {}},
-        "results": [{"path": "index.html", "status": 200, "ok": True,
-                     "deployment_pending": False, "local_exists": True,
-                     "markers": {"required heading": True},
-                     "json_checks": {"valid_json": True},
-                     "jsonld_types": {"WebPage": True}}],
+        "results": [
+            {
+                "path": "index.html",
+                "status": 200,
+                "ok": True,
+                "deployment_pending": False,
+                "local_exists": True,
+                "markers": {"required heading": True},
+                "json_checks": {"valid_json": True},
+                "jsonld_types": {"WebPage": True},
+            }
+        ],
     }
 
 
-@pytest.mark.parametrize("path,value", [
-    (("overall_ok",), "false"), (("overall_ok",), "true"), (("overall_ok",), 1),
-    (("overall_ok",), 0), (("overall_ok",), None),
-    (("source_dirty",), "false"), (("deployment_sha_mismatch",), 1),
-    (("source_worktree_clean",), "true"),
-    (("github_pages", "ok"), "true"), (("github_pages", "deployment_pending"), "false"),
-    (("results", 0, "ok"), 1), (("results", 0, "deployment_pending"), 0),
-    (("results", 0, "local_exists"), "true"),
-    (("results", 0, "markers", "required heading"), "false"),
-    (("results", 0, "markers", "required heading"), 1),
-    (("results", 0, "json_checks", "valid_json"), "true"),
-    (("results", 0, "jsonld_types", "WebPage"), "false"),
-    (("results", 0, "markers"), None),
-    (("deployment_binding", "required"), "false"), (("deployment_binding", "ok"), 1),
-    (("deployment_binding", "checks"), {"checkout_matches": "false"}),
-    (("github_pages",), []), (("deployment_binding",), None),
-])
+@pytest.mark.parametrize(
+    "path,value",
+    [
+        (("overall_ok",), "false"),
+        (("overall_ok",), "true"),
+        (("overall_ok",), 1),
+        (("overall_ok",), 0),
+        (("overall_ok",), None),
+        (("source_dirty",), "false"),
+        (("deployment_sha_mismatch",), 1),
+        (("source_worktree_clean",), "true"),
+        (("github_pages", "ok"), "true"),
+        (("github_pages", "deployment_pending"), "false"),
+        (("results", 0, "ok"), 1),
+        (("results", 0, "deployment_pending"), 0),
+        (("results", 0, "local_exists"), "true"),
+        (("results", 0, "markers", "required heading"), "false"),
+        (("results", 0, "markers", "required heading"), 1),
+        (("results", 0, "json_checks", "valid_json"), "true"),
+        (("results", 0, "jsonld_types", "WebPage"), "false"),
+        (("results", 0, "markers"), None),
+        (("deployment_binding", "required"), "false"),
+        (("deployment_binding", "ok"), 1),
+        (("deployment_binding", "checks"), {"checkout_matches": "false"}),
+        (("github_pages",), []),
+        (("deployment_binding",), None),
+    ],
+)
 def test_cached_malformed_boolean_fields_are_rejected_by_check(tmp_path, path, value):
     counts = tmp_path / "data/current-counts.json"
     _write_current_counts(counts)
@@ -527,7 +686,9 @@ def test_cached_malformed_boolean_fields_are_rejected_by_check(tmp_path, path, v
         record = record[part]
     record[path[-1]] = value
     report = tmp_path / "reports/live_site_verification_2026-06-16.json"
-    _write_report(report, payload, expected_counts=vl.load_current_counts_fingerprint(counts))
+    _write_report(
+        report, payload, expected_counts=vl.load_current_counts_fingerprint(counts)
+    )
     with pytest.raises(SystemExit, match="hard failures"):
         vl.main(["--check"], current_counts_json=counts, report_dir=report.parent)
 
@@ -537,22 +698,29 @@ def test_malformed_contract_cannot_hide_behind_valid_propagation_flags(tmp_path)
     _write_current_counts(counts)
     payload = _successful_typed_report()
     payload.update(overall_ok=False, source_dirty=True)
-    payload["results"][0].update(ok=False, deployment_pending=True,
-                                 markers={"required heading": "false"})
+    payload["results"][0].update(
+        ok=False, deployment_pending=True, markers={"required heading": "false"}
+    )
     report = tmp_path / "reports/live_site_verification_2026-06-16.json"
-    _write_report(report, payload, expected_counts=vl.load_current_counts_fingerprint(counts))
+    _write_report(
+        report, payload, expected_counts=vl.load_current_counts_fingerprint(counts)
+    )
     with pytest.raises(SystemExit, match="boolean values"):
         vl.main(["--check"], current_counts_json=counts, report_dir=report.parent)
 
 
 @pytest.mark.parametrize("checks", [{"checkout_matches": False}, {}])
-def test_required_binding_cannot_claim_success_with_failed_or_missing_checks(tmp_path, checks):
+def test_required_binding_cannot_claim_success_with_failed_or_missing_checks(
+    tmp_path, checks
+):
     counts = tmp_path / "data/current-counts.json"
     _write_current_counts(counts)
     payload = _successful_typed_report()
     payload["deployment_binding"] = {"required": True, "ok": True, "checks": checks}
     report = tmp_path / "reports/live_site_verification_2026-06-16.json"
-    _write_report(report, payload, expected_counts=vl.load_current_counts_fingerprint(counts))
+    _write_report(
+        report, payload, expected_counts=vl.load_current_counts_fingerprint(counts)
+    )
     with pytest.raises(SystemExit, match="deployment binding"):
         vl.main(["--check"], current_counts_json=counts, report_dir=report.parent)
 

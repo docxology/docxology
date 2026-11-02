@@ -21,6 +21,9 @@ def test_public_entry_navigation_check_passes():
 def test_public_entry_pages_have_visible_agent_map_links():
     for path in REPO_ROOT.glob("*.html"):
         text = path.read_text(encoding="utf-8", errors="replace")
-        if "<nav" not in text.lower() or 'name="robots" content="noindex' in text.lower():
+        if (
+            "<nav" not in text.lower()
+            or 'name="robots" content="noindex' in text.lower()
+        ):
             continue
         assert 'href="data/agent-index.json"' in text, path

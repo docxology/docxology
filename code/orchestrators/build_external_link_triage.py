@@ -33,7 +33,11 @@ def category(row: dict) -> str:
         return "ok"
     if status == 404:
         return "needs-replacement"
-    if status in {401, 402, 403, 429, 999} or host in {"linkedin.com", "www.linkedin.com", "www.researchgate.net"}:
+    if status in {401, 402, 403, 429, 999} or host in {
+        "linkedin.com",
+        "www.linkedin.com",
+        "www.researchgate.net",
+    }:
         return "bot-protected-or-rate-limited"
     if status in {500, 502, 503, 504}:
         return "upstream-transient"
@@ -44,7 +48,9 @@ def category(row: dict) -> str:
     return "review"
 
 
-def build(source: Path | None = None, *, repo_root: Path | None = None) -> tuple[dict, str]:
+def build(
+    source: Path | None = None, *, repo_root: Path | None = None
+) -> tuple[dict, str]:
     repo_root = REPO_ROOT if repo_root is None else repo_root
     source = source_report() if source is None else source
     payload = json.loads(source.read_text(encoding="utf-8"))
@@ -73,7 +79,9 @@ def build(source: Path | None = None, *, repo_root: Path | None = None) -> tuple
         "warnings": payload["checked_urls"] - counts["ok"],
         "categories": dict(sorted(counts.items())),
         "note": "Warnings classify observed network behavior; bot-protected and rate-limited sources are not automatically stale.",
-        "warnings_by_category": {key: value for key, value in sorted(by_category.items())},
+        "warnings_by_category": {
+            key: value for key, value in sorted(by_category.items())
+        },
     }
     lines = [
         "# External Link Triage",
@@ -100,28 +108,39 @@ def build(source: Path | None = None, *, repo_root: Path | None = None) -> tuple
         "review": "Unexpected status requiring manual review.",
     }
     for key, count in sorted(counts.items()):
-        lines.append(f"| `{key}` | {count} | {meanings.get(key, 'Manual review needed.')} |")
+        lines.append(
+            f"| `{key}` | {count} | {meanings.get(key, 'Manual review needed.')} |"
+        )
     for key, items in sorted(by_category.items()):
-        lines.extend(["", f"## {key}", "", "| Status | URL | Sources |", "| ---: | --- | --- |"])
+        lines.extend(
+            ["", f"## {key}", "", "| Status | URL | Sources |", "| ---: | --- | --- |"]
+        )
         for item in items[:80]:
             sources = ", ".join(item["sources"][:3])
             lines.append(f"| {item['status']} | <{item['url']}> | {sources} |")
     return triage, "\n".join(lines).rstrip() + "\n"
 
 
-def outputs(source: Path | None = None, *, repo_root: Path | None = None) -> dict[Path, str]:
+def outputs(
+    source: Path | None = None, *, repo_root: Path | None = None
+) -> dict[Path, str]:
     repo_root = REPO_ROOT if repo_root is None else repo_root
     payload, markdown = build(source, repo_root=repo_root)
     date = source_date(repo_root / payload["source"])
     return {
-        repo_root / "reports" / f"external_links_triage_{date}.json": json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
+        repo_root / "reports" / f"external_links_triage_{date}.json": json.dumps(
+            payload, indent=2, ensure_ascii=False
+        )
+        + "\n",
         repo_root / "reports" / f"external_links_triage_{date}.md": markdown,
     }
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if triage outputs are stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if triage outputs are stale"
+    )
     args = parser.parse_args()
     stale = []
     for path, content in outputs().items():

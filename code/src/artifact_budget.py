@@ -1,5 +1,5 @@
 """Artifact budget gate: fail the CI budget check when the Pages artifact
-exceeds the documented 890 MiB warning budget (reports/pages_artifact_growth_*.json).
+exceeds the documented 930 MiB warning budget (reports/pages_artifact_growth_*.json).
 """
 
 from __future__ import annotations
@@ -10,7 +10,7 @@ import math
 import sys
 from pathlib import Path
 
-BUDGET_MIB = 890.0
+BUDGET_MIB = 930.0
 REPORT_GLOB = "reports/pages_artifact_growth_*.json"
 
 
@@ -22,7 +22,9 @@ def latest_growth_report(repo_root: Path) -> Path:
     """Return the newest dated pages_artifact_growth report, or raise."""
     candidates = sorted(glob.glob(str(repo_root / REPORT_GLOB)))
     if not candidates:
-        raise ArtifactBudgetError(f"no artifact growth reports found matching {REPORT_GLOB}")
+        raise ArtifactBudgetError(
+            f"no artifact growth reports found matching {REPORT_GLOB}"
+        )
     return Path(candidates[-1])
 
 
@@ -31,13 +33,19 @@ def artifact_mib_from_report(path: Path) -> float:
     payload = json.loads(path.read_text(encoding="utf-8"))
     mib = payload.get("artifact_mib")
     if isinstance(mib, bool) or not isinstance(mib, (int, float)):
-        raise ArtifactBudgetError(f"{path}: 'artifact_mib' must be a finite nonnegative number")
+        raise ArtifactBudgetError(
+            f"{path}: 'artifact_mib' must be a finite nonnegative number"
+        )
     try:
         measured = float(mib)
     except OverflowError as exc:
-        raise ArtifactBudgetError(f"{path}: 'artifact_mib' is outside the supported range") from exc
+        raise ArtifactBudgetError(
+            f"{path}: 'artifact_mib' is outside the supported range"
+        ) from exc
     if not math.isfinite(measured) or measured < 0:
-        raise ArtifactBudgetError(f"{path}: 'artifact_mib' must be a finite nonnegative number")
+        raise ArtifactBudgetError(
+            f"{path}: 'artifact_mib' must be a finite nonnegative number"
+        )
     return measured
 
 

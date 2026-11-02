@@ -61,7 +61,12 @@ def ready_collection(page, base, suffix=""):
 @pytest.mark.parametrize(
     ("path", "asset", "app", "control"),
     [
-        ("collections.html", "collection-catalog.json", "collection-app", "collection-title"),
+        (
+            "collections.html",
+            "collection-catalog.json",
+            "collection-app",
+            "collection-title",
+        ),
         ("research-map.html", "research-map.json", "map-app", "map-search"),
     ],
 )

@@ -92,7 +92,10 @@ def _provenance_base(payload: dict, json_bytes: bytes) -> dict:
         "resume_pdf_url": RESUME_PDF_URL,
         "source_manifest": source,
         "resume_json": {"bytes": len(json_bytes), "sha256": _sha256_bytes(json_bytes)},
-        "source_manifest_matches_payload": payload.get("integrity", {}).get("source_manifest") == source,
+        "source_manifest_matches_payload": payload.get("integrity", {}).get(
+            "source_manifest"
+        )
+        == source,
     }
 
 
@@ -160,7 +163,9 @@ def _bold_markup(text: str, *, color: str = PDF_RED_DARK) -> str:
 def _label_value(label: str, value, style):
     if isinstance(value, list):
         value = "; ".join(str(item) for item in value)
-    return _markup_paragraph(f"{_bold_markup(label)} {_paragraph_markup(str(value))}", style)
+    return _markup_paragraph(
+        f"{_bold_markup(label)} {_paragraph_markup(str(value))}", style
+    )
 
 
 def _link_paragraph(label: str, target: str, style):
@@ -214,7 +219,9 @@ def _page_footer_factory(provenance: dict):
         canvas.setTitle("Daniel Ari Friedman - Public Structured CV")
         canvas.setAuthor("Daniel Ari Friedman")
         canvas.setSubject("Accessible, source-verified structured curriculum vitae")
-        canvas.setKeywords("Daniel Ari Friedman, CV, resume, publications, software, verification")
+        canvas.setKeywords(
+            "Daniel Ari Friedman, CV, resume, publications, software, verification"
+        )
         canvas.setCreator("docxology build_resume.py")
         if hasattr(canvas, "setLang"):
             canvas.setLang("en-US")
@@ -227,7 +234,9 @@ def _page_footer_factory(provenance: dict):
         canvas.line(doc.leftMargin, 47, page_width - doc.rightMargin, 47)
         canvas.setFont(PDF_FONT_BOLD, 6.6)
         canvas.setFillColor(colors.HexColor(PDF_RED_DARK))
-        canvas.drawString(doc.leftMargin, 34, f"Build {generated_at} | source sha256 {short_hash}")
+        canvas.drawString(
+            doc.leftMargin, 34, f"Build {generated_at} | source sha256 {short_hash}"
+        )
         canvas.setFont(PDF_FONT_REGULAR, 6.4)
         canvas.setFillColor(colors.HexColor(PDF_BODY))
         canvas.drawString(doc.leftMargin, 23, f"Verify: {VERIFY_URL}")
@@ -427,7 +436,9 @@ def _table(data, col_widths, *, header: bool = False, zebra: bool = True):
     from reportlab.lib import colors
     from reportlab.platypus import LongTable
 
-    table = LongTable(data, colWidths=col_widths, repeatRows=1 if header else 0, hAlign="LEFT")
+    table = LongTable(
+        data, colWidths=col_widths, repeatRows=1 if header else 0, hAlign="LEFT"
+    )
     commands = [
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("LEFTPADDING", (0, 0), (-1, -1), 4),
@@ -444,14 +455,30 @@ def _table(data, col_widths, *, header: bool = False, zebra: bool = True):
             ]
         )
         if zebra and len(data) > 1:
-            commands.append(("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, colors.HexColor("#FFF8F9")]))
+            commands.append(
+                (
+                    "ROWBACKGROUNDS",
+                    (0, 1),
+                    (-1, -1),
+                    [colors.white, colors.HexColor("#FFF8F9")],
+                )
+            )
     elif zebra:
-        commands.append(("ROWBACKGROUNDS", (0, 0), (-1, -1), [colors.white, colors.HexColor("#FFF8F9")]))
+        commands.append(
+            (
+                "ROWBACKGROUNDS",
+                (0, 0),
+                (-1, -1),
+                [colors.white, colors.HexColor("#FFF8F9")],
+            )
+        )
     table.setStyle(commands)
     return table
 
 
-def _section(story: list, title: str, styles: dict, *, count: int | None = None) -> None:
+def _section(
+    story: list, title: str, styles: dict, *, count: int | None = None
+) -> None:
     from reportlab.lib import colors
     from reportlab.lib.units import inch
     from reportlab.platypus import HRFlowable, KeepTogether, Spacer
@@ -474,7 +501,13 @@ def _section(story: list, title: str, styles: dict, *, count: int | None = None)
     story.append(Spacer(1, 0.015 * inch))
 
 
-def _record_flow(title: str, styles: dict, details: list[str] | None = None, *, note: str | None = None):
+def _record_flow(
+    title: str,
+    styles: dict,
+    details: list[str] | None = None,
+    *,
+    note: str | None = None,
+):
     flow = [_paragraph(title, styles["record_title"])]
     if note:
         flow.append(_paragraph(note, styles["small"]))
@@ -487,7 +520,9 @@ def _links_text(item: dict, *, prefix: str = "Source") -> str:
     links = item.get("links", [])
     if not links:
         return ""
-    return f"{prefix}: " + " | ".join(f"{link['label']} {link['url']}" for link in links)
+    return f"{prefix}: " + " | ".join(
+        f"{link['label']} {link['url']}" for link in links
+    )
 
 
 def _record_flow_with_links(
@@ -505,11 +540,15 @@ def _record_flow_with_links(
     return flow
 
 
-def _metric_card(label: str, value: str, note: str, styles: dict, *, note_url: str | None = None) -> list:
+def _metric_card(
+    label: str, value: str, note: str, styles: dict, *, note_url: str | None = None
+) -> list:
     return [
         _paragraph(label, styles["metric_label"], linkify=False),
         _paragraph(value, styles["metric_value"], linkify=False),
-        _link_paragraph(note, note_url, styles["metric_note"]) if note_url else _paragraph(note, styles["metric_note"], linkify=False),
+        _link_paragraph(note, note_url, styles["metric_note"])
+        if note_url
+        else _paragraph(note, styles["metric_note"], linkify=False),
     ]
 
 
@@ -524,12 +563,34 @@ def _cover_page(story: list, payload: dict, styles: dict, provenance: dict) -> N
     json_hash = provenance["resume_json"]["sha256"]
     resume_source_count = sum(
         len(payload[key])
-        for key in ["education", "experience", "awards", "conferences", "media_outreach", "service", "art_uses"]
+        for key in [
+            "education",
+            "experience",
+            "awards",
+            "conferences",
+            "media_outreach",
+            "service",
+            "art_uses",
+        ]
     )
 
-    story.append(_paragraph("PUBLIC STRUCTURED CV", styles["cover_kicker"], linkify=False))
-    story.append(_paragraph(f"{profile['name']}, {profile['credential']}", styles["cover_title"], linkify=False))
-    story.append(_paragraph(f"{profile['headline']} | {profile['location']}", styles["subtitle"], linkify=False))
+    story.append(
+        _paragraph("PUBLIC STRUCTURED CV", styles["cover_kicker"], linkify=False)
+    )
+    story.append(
+        _paragraph(
+            f"{profile['name']}, {profile['credential']}",
+            styles["cover_title"],
+            linkify=False,
+        )
+    )
+    story.append(
+        _paragraph(
+            f"{profile['headline']} | {profile['location']}",
+            styles["subtitle"],
+            linkify=False,
+        )
+    )
     story.append(
         HRFlowable(
             width="100%",
@@ -545,26 +606,40 @@ def _cover_page(story: list, payload: dict, styles: dict, provenance: dict) -> N
             _paragraph("Verify", styles["table_header"], linkify=False),
             [
                 _link_paragraph("resume/verify.html", VERIFY_URL, styles["repo"]),
-                _paragraph("QR target, public hashes, source files, and artifact sizes.", styles["small"], linkify=False),
+                _paragraph(
+                    "QR target, public hashes, source files, and artifact sizes.",
+                    styles["small"],
+                    linkify=False,
+                ),
             ],
         ],
         [
             _paragraph("Source", styles["table_header"], linkify=False),
             [
-                _paragraph(f"manifest sha256 {source_hash[:16]}", styles["repo"], linkify=False),
-                _paragraph("resume/source.json + canonical data exports", styles["small"], linkify=False),
+                _paragraph(
+                    f"manifest sha256 {source_hash[:16]}", styles["repo"], linkify=False
+                ),
+                _paragraph(
+                    "resume/source.json + canonical data exports",
+                    styles["small"],
+                    linkify=False,
+                ),
             ],
         ],
         [
             _paragraph("Output", styles["table_header"], linkify=False),
             [
-                _paragraph(f"json sha256 {json_hash[:16]}", styles["repo"], linkify=False),
+                _paragraph(
+                    f"json sha256 {json_hash[:16]}", styles["repo"], linkify=False
+                ),
                 _link_paragraph("data/resume.json", RESUME_JSON_URL, styles["small"]),
                 _link_paragraph("resume/resume.pdf", RESUME_PDF_URL, styles["small"]),
             ],
         ],
     ]
-    verify_table = _table(verify_rows, [0.82 * inch, 4.08 * inch], header=False, zebra=False)
+    verify_table = _table(
+        verify_rows, [0.82 * inch, 4.08 * inch], header=False, zebra=False
+    )
     verify_table.setStyle(
         TableStyle(
             [
@@ -595,15 +670,30 @@ def _cover_page(story: list, payload: dict, styles: dict, provenance: dict) -> N
             ]
         )
     )
-    dashboard = _table([[verify_table, qr_panel]], [5.0 * inch, 2.1 * inch], zebra=False)
-    dashboard.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("INNERGRID", (0, 0), (-1, -1), 0, colors.white)]))
+    dashboard = _table(
+        [[verify_table, qr_panel]], [5.0 * inch, 2.1 * inch], zebra=False
+    )
+    dashboard.setStyle(
+        TableStyle(
+            [
+                ("VALIGN", (0, 0), (-1, -1), "TOP"),
+                ("INNERGRID", (0, 0), (-1, -1), 0, colors.white),
+            ]
+        )
+    )
     story.append(dashboard)
     story.append(Spacer(1, 0.09 * inch))
 
     metric_table = _table(
         [
             [
-                _metric_card("Curated Works", str(metrics["works"]), "data/works.json", styles, note_url="https://danielarifriedman.com/data/works.json"),
+                _metric_card(
+                    "Curated Works",
+                    str(metrics["works"]),
+                    "data/works.json",
+                    styles,
+                    note_url="https://danielarifriedman.com/data/works.json",
+                ),
                 _metric_card(
                     "Software Rows",
                     str(metrics["software_catalogued"]),
@@ -618,11 +708,25 @@ def _cover_page(story: list, payload: dict, styles: dict, provenance: dict) -> N
                     styles,
                     note_url=metrics["google_scholar"]["profile_url"],
                 ),
-                _metric_card("Resume Records", str(resume_source_count), "verify page", styles, note_url=VERIFY_URL),
+                _metric_card(
+                    "Resume Records",
+                    str(resume_source_count),
+                    "verify page",
+                    styles,
+                    note_url=VERIFY_URL,
+                ),
             ],
             [
-                _metric_card("Source Hash", source_hash[:12], "source manifest", styles),
-                _metric_card("JSON Hash", json_hash[:12], "data/resume.json", styles, note_url=RESUME_JSON_URL),
+                _metric_card(
+                    "Source Hash", source_hash[:12], "source manifest", styles
+                ),
+                _metric_card(
+                    "JSON Hash",
+                    json_hash[:12],
+                    "data/resume.json",
+                    styles,
+                    note_url=RESUME_JSON_URL,
+                ),
                 _metric_card(
                     "PDF Hash",
                     "verify page",
@@ -630,8 +734,14 @@ def _cover_page(story: list, payload: dict, styles: dict, provenance: dict) -> N
                     styles,
                     note_url=VERIFY_URL,
                 ),
-                _metric_card("Footer QR", "every page", "resume/verify.html", styles, note_url=VERIFY_URL),
-            ]
+                _metric_card(
+                    "Footer QR",
+                    "every page",
+                    "resume/verify.html",
+                    styles,
+                    note_url=VERIFY_URL,
+                ),
+            ],
         ],
         [1.78 * inch, 1.78 * inch, 1.78 * inch, 1.76 * inch],
         zebra=False,
@@ -653,24 +763,52 @@ def _cover_page(story: list, payload: dict, styles: dict, provenance: dict) -> N
         [
             _paragraph("Inputs", styles["table_header"], linkify=False),
             _paragraph("Generated JSON", styles["table_header"], linkify=False),
-            _paragraph("Public PDF + Verification", styles["table_header"], linkify=False),
+            _paragraph(
+                "Public PDF + Verification", styles["table_header"], linkify=False
+            ),
         ],
         [
             [
-                _link_paragraph("resume/source.json", "https://github.com/docxology/docxology/blob/main/resume/source.json", styles["repo"]),
-                _link_paragraph("data/works.json", "https://danielarifriedman.com/data/works.json", styles["small"]),
-                _link_paragraph("data/software.json", "https://danielarifriedman.com/data/software.json", styles["small"]),
-                _paragraph(f"source sha256 {source_hash[:16]}", styles["cover_hash"], linkify=False),
+                _link_paragraph(
+                    "resume/source.json",
+                    "https://github.com/docxology/docxology/blob/main/resume/source.json",
+                    styles["repo"],
+                ),
+                _link_paragraph(
+                    "data/works.json",
+                    "https://danielarifriedman.com/data/works.json",
+                    styles["small"],
+                ),
+                _link_paragraph(
+                    "data/software.json",
+                    "https://danielarifriedman.com/data/software.json",
+                    styles["small"],
+                ),
+                _paragraph(
+                    f"source sha256 {source_hash[:16]}",
+                    styles["cover_hash"],
+                    linkify=False,
+                ),
             ],
             [
                 _link_paragraph("data/resume.json", RESUME_JSON_URL, styles["repo"]),
-                _paragraph(f"{provenance['resume_json']['bytes']:,} bytes", styles["small"], linkify=False),
-                _paragraph(f"json sha256 {json_hash[:16]}", styles["cover_hash"], linkify=False),
+                _paragraph(
+                    f"{provenance['resume_json']['bytes']:,} bytes",
+                    styles["small"],
+                    linkify=False,
+                ),
+                _paragraph(
+                    f"json sha256 {json_hash[:16]}", styles["cover_hash"], linkify=False
+                ),
             ],
             [
                 _link_paragraph("resume/resume.pdf", RESUME_PDF_URL, styles["repo"]),
                 _link_paragraph("resume/verify.html", VERIFY_URL, styles["small"]),
-                _paragraph("PDF hash posted on verification page", styles["cover_hash"], linkify=False),
+                _paragraph(
+                    "PDF hash posted on verification page",
+                    styles["cover_hash"],
+                    linkify=False,
+                ),
             ],
         ],
     ]
@@ -690,7 +828,10 @@ def _cover_page(story: list, payload: dict, styles: dict, provenance: dict) -> N
     story.append(
         _table(
             [
-                [_paragraph(name, styles["record_title"], linkify=False), _paragraph(str(count), styles["date"], linkify=False)]
+                [
+                    _paragraph(name, styles["record_title"], linkify=False),
+                    _paragraph(str(count), styles["date"], linkify=False),
+                ]
                 for name, count in counts
             ],
             [5.95 * inch, 1.15 * inch],
@@ -699,12 +840,20 @@ def _cover_page(story: list, payload: dict, styles: dict, provenance: dict) -> N
     story.append(PageBreak())
 
 
-def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = None) -> bytes:
+def render_pdf(
+    payload: dict, variant: str = "full", provenance: dict | None = None
+) -> bytes:
     from reportlab import rl_config
     from reportlab.lib import colors
     from reportlab.lib.pagesizes import letter
     from reportlab.lib.units import inch
-    from reportlab.platypus import HRFlowable, PageBreak, SimpleDocTemplate, Spacer, TableStyle
+    from reportlab.platypus import (
+        HRFlowable,
+        PageBreak,
+        SimpleDocTemplate,
+        Spacer,
+        TableStyle,
+    )
 
     rl_config.invariant = 1
     _register_pdf_fonts()
@@ -713,12 +862,26 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
     profile = payload["profile"]
     contact = payload["contact"]
     metrics = payload["metrics"]
-    provenance = provenance or _provenance_base(payload, json_dumps(payload).encode("utf-8"))
+    provenance = provenance or _provenance_base(
+        payload, json_dumps(payload).encode("utf-8")
+    )
 
     _cover_page(story, payload, styles, provenance)
 
-    story.append(_paragraph(f"{profile['name']}, {profile['credential']}", styles["title"], linkify=False))
-    story.append(_paragraph(f"{profile['headline']} | {profile['location']}", styles["subtitle"], linkify=False))
+    story.append(
+        _paragraph(
+            f"{profile['name']}, {profile['credential']}",
+            styles["title"],
+            linkify=False,
+        )
+    )
+    story.append(
+        _paragraph(
+            f"{profile['headline']} | {profile['location']}",
+            styles["subtitle"],
+            linkify=False,
+        )
+    )
 
     contact_rows = [
         [
@@ -734,7 +897,11 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
             _label_value("ORCID", contact["orcid"], styles["contact"]),
         ],
         [
-            _label_value("Keybase / ENS", f"{contact['keybase']} / {contact['ens']}", styles["contact"]),
+            _label_value(
+                "Keybase / ENS",
+                f"{contact['keybase']} / {contact['ens']}",
+                styles["contact"],
+            ),
             _label_value("Art", contact["art_portfolio"], styles["contact"]),
         ],
     ]
@@ -763,12 +930,20 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
         [
             [
                 _paragraph("Curated Works", styles["metric_label"], linkify=False),
-                _paragraph(str(metrics["works"]), styles["metric_value"], linkify=False),
-                _paragraph("from data/works.json", styles["metric_note"], linkify=False),
+                _paragraph(
+                    str(metrics["works"]), styles["metric_value"], linkify=False
+                ),
+                _paragraph(
+                    "from data/works.json", styles["metric_note"], linkify=False
+                ),
             ],
             [
                 _paragraph("Software Rows", styles["metric_label"], linkify=False),
-                _paragraph(str(metrics["software_catalogued"]), styles["metric_value"], linkify=False),
+                _paragraph(
+                    str(metrics["software_catalogued"]),
+                    styles["metric_value"],
+                    linkify=False,
+                ),
                 _paragraph(
                     f"{metrics['owned_software_catalogued']} owned + {metrics['aii_software_catalogued']} AII",
                     styles["metric_note"],
@@ -777,7 +952,11 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
             ],
             [
                 _paragraph("Scholar Citations", styles["metric_label"], linkify=False),
-                _paragraph(str(metrics["google_scholar"]["citations"]), styles["metric_value"], linkify=False),
+                _paragraph(
+                    str(metrics["google_scholar"]["citations"]),
+                    styles["metric_value"],
+                    linkify=False,
+                ),
                 _paragraph(
                     f"h {metrics['google_scholar']['h_index']} / i10 {metrics['google_scholar']['i10_index']} as of {metrics['google_scholar']['as_of']}",
                     styles["metric_note"],
@@ -786,7 +965,9 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
             ],
         ]
     ]
-    metric_table = _table(metric_rows, [2.4 * inch, 2.45 * inch, 2.45 * inch], zebra=False)
+    metric_table = _table(
+        metric_rows, [2.4 * inch, 2.45 * inch, 2.45 * inch], zebra=False
+    )
     metric_table.setStyle(
         TableStyle(
             [
@@ -862,7 +1043,11 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
     story.append(
         _table(
             [
-                [_paragraph("Year", styles["table_header"], linkify=False), _paragraph("Award", styles["table_header"], linkify=False), _paragraph("Details", styles["table_header"], linkify=False)]
+                [
+                    _paragraph("Year", styles["table_header"], linkify=False),
+                    _paragraph("Award", styles["table_header"], linkify=False),
+                    _paragraph("Details", styles["table_header"], linkify=False),
+                ]
             ]
             + [
                 [
@@ -887,7 +1072,9 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
                     _paragraph("#", styles["table_header"], linkify=False),
                     _paragraph("Year", styles["table_header"], linkify=False),
                     _paragraph("Type", styles["table_header"], linkify=False),
-                    _paragraph("Title and Venue", styles["table_header"], linkify=False),
+                    _paragraph(
+                        "Title and Venue", styles["table_header"], linkify=False
+                    ),
                     _paragraph("Link", styles["table_header"], linkify=False),
                 ]
             ]
@@ -897,7 +1084,9 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
                     _paragraph(str(work["year"]), styles["tiny"], linkify=False),
                     _paragraph(work["type"], styles["tiny"], linkify=False),
                     _record_flow(f"{work['title']} | {work['venue']}", styles),
-                    _paragraph(work.get("doi") or work.get("url") or "", styles["tiny"]),
+                    _paragraph(
+                        work.get("doi") or work.get("url") or "", styles["tiny"]
+                    ),
                 ]
                 for work in works
             ],
@@ -915,16 +1104,28 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
                 [
                     _paragraph("Repository", styles["table_header"], linkify=False),
                     _paragraph("Stack", styles["table_header"], linkify=False),
-                    _paragraph("Description and Source Links", styles["table_header"], linkify=False),
+                    _paragraph(
+                        "Description and Source Links",
+                        styles["table_header"],
+                        linkify=False,
+                    ),
                 ]
             ]
             + [
                 [
                     [
-                        _paragraph(f"{row['owner']}/{row['name']}", styles["repo"], linkify=False),
+                        _paragraph(
+                            f"{row['owner']}/{row['name']}",
+                            styles["repo"],
+                            linkify=False,
+                        ),
                         _paragraph(row["url"], styles["tiny"]),
                     ],
-                    _paragraph(row.get("language") or "unspecified", styles["tiny"], linkify=False),
+                    _paragraph(
+                        row.get("language") or "unspecified",
+                        styles["tiny"],
+                        linkify=False,
+                    ),
                     [
                         _paragraph(row.get("description", ""), styles["body"]),
                         *(
@@ -933,8 +1134,12 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
                                     " | ".join(
                                         part
                                         for part in [
-                                            f"paper: {row['paper_path']}" if row.get("paper_path") else "",
-                                            f"zenodo: {row['zenodo_url']}" if row.get("zenodo_url") else "",
+                                            f"paper: {row['paper_path']}"
+                                            if row.get("paper_path")
+                                            else "",
+                                            f"zenodo: {row['zenodo_url']}"
+                                            if row.get("zenodo_url")
+                                            else "",
                                         ]
                                         if part
                                     ),
@@ -954,7 +1159,12 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
     )
 
     conferences = filter_items(payload["conferences"], variant)
-    _section(story, "Conferences, Posters, Seminars, Workshops", styles, count=len(conferences))
+    _section(
+        story,
+        "Conferences, Posters, Seminars, Workshops",
+        styles,
+        count=len(conferences),
+    )
     story.append(
         _table(
             [
@@ -964,7 +1174,17 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
                         f"{item['title']} | {item['event']}",
                         styles,
                         item,
-                        [" ".join(part for part in [item["type"], item.get("details", ""), item.get("date", "")] if part)],
+                        [
+                            " ".join(
+                                part
+                                for part in [
+                                    item["type"],
+                                    item.get("details", ""),
+                                    item.get("date", ""),
+                                ]
+                                if part
+                            )
+                        ],
                     ),
                 ]
                 for item in conferences
@@ -974,7 +1194,12 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
     )
 
     media = filter_items(payload["media_outreach"], variant)
-    _section(story, "Science Engagement, Outreach, Quotes, Articles", styles, count=len(media))
+    _section(
+        story,
+        "Science Engagement, Outreach, Quotes, Articles",
+        styles,
+        count=len(media),
+    )
     story.append(
         _table(
             [
@@ -984,7 +1209,17 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
                         item["name"],
                         styles,
                         item,
-                        [" | ".join(part for part in [item["type"], item.get("source", ""), item.get("details", "")] if part)],
+                        [
+                            " | ".join(
+                                part
+                                for part in [
+                                    item["type"],
+                                    item.get("source", ""),
+                                    item.get("details", ""),
+                                ]
+                                if part
+                            )
+                        ],
                     ),
                 ]
                 for item in media
@@ -994,13 +1229,23 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
     )
 
     service = filter_items(payload["service"], variant)
-    _section(story, "Professional Participation, Engagement, and Service", styles, count=len(service))
+    _section(
+        story,
+        "Professional Participation, Engagement, and Service",
+        styles,
+        count=len(service),
+    )
     story.append(
         _table(
             [
                 [
                     _paragraph(date_range(item), styles["date"], linkify=False),
-                    _record_flow_with_links(f"{item['group']} | {item['type']}", styles, item, [item["description"]]),
+                    _record_flow_with_links(
+                        f"{item['group']} | {item['type']}",
+                        styles,
+                        item,
+                        [item["description"]],
+                    ),
                 ]
                 for item in service
             ],
@@ -1009,13 +1254,21 @@ def render_pdf(payload: dict, variant: str = "full", provenance: dict | None = N
     )
 
     if variant == "full":
-        _section(story, "Art Portfolio and Uses", styles, count=len(payload["art_uses"]))
+        _section(
+            story, "Art Portfolio and Uses", styles, count=len(payload["art_uses"])
+        )
         story.append(
             _table(
                 [
                     [
-                        _paragraph(str(item["year"]) if item["year"] is not None else "All", styles["date"], linkify=False),
-                        _record_flow_with_links(item["name"], styles, item, [item["description"]]),
+                        _paragraph(
+                            str(item["year"]) if item["year"] is not None else "All",
+                            styles["date"],
+                            linkify=False,
+                        ),
+                        _record_flow_with_links(
+                            item["name"], styles, item, [item["description"]]
+                        ),
                     ]
                     for item in payload["art_uses"]
                 ],
@@ -1069,7 +1322,7 @@ def _html_links(item: dict) -> str:
             target = f"https://doi.org/{target}"
         if _html_href(target):
             rendered.append(_html_link(label, target))
-    return " <span aria-hidden=\"true\">·</span> ".join(rendered)
+    return ' <span aria-hidden="true">·</span> '.join(rendered)
 
 
 def _html_contact_value(value: object, *, mailto: bool = False) -> str:
@@ -1079,12 +1332,22 @@ def _html_contact_value(value: object, *, mailto: bool = False) -> str:
         text = str(raw or "")
         target = f"mailto:{text}" if mailto else text
         rendered.append(_html_link(text, target))
-    return " <span aria-hidden=\"true\">·</span> ".join(rendered)
+    return ' <span aria-hidden="true">·</span> '.join(rendered)
 
 
-def _html_record(title: object, details: list[object], links: str = "", *, date: object = "") -> str:
-    detail_html = "".join(f"<p>{_html_escape(detail)}</p>" for detail in details if str(detail or "").strip())
-    date_html = f'<p class="record-date">{_html_escape(date)}</p>' if str(date or "").strip() else ""
+def _html_record(
+    title: object, details: list[object], links: str = "", *, date: object = ""
+) -> str:
+    detail_html = "".join(
+        f"<p>{_html_escape(detail)}</p>"
+        for detail in details
+        if str(detail or "").strip()
+    )
+    date_html = (
+        f'<p class="record-date">{_html_escape(date)}</p>'
+        if str(date or "").strip()
+        else ""
+    )
     links_html = f'<p class="record-links">{links}</p>' if links else ""
     return f"<li><article>{date_html}<h3>{_html_escape(title)}</h3>{detail_html}{links_html}</article></li>"
 
@@ -1102,7 +1365,11 @@ def render_resume_html(payload: dict, variant: str = "full") -> bytes:
     education_rows = []
     for item in education:
         title = f"{item['degree']} — {item['institution']} — {item['location']}"
-        education_rows.append(_html_record(title, item.get("details", []), _html_links(item), date=date_range(item)))
+        education_rows.append(
+            _html_record(
+                title, item.get("details", []), _html_links(item), date=date_range(item)
+            )
+        )
     sections.append(
         f'<section aria-labelledby="education"><h2 id="education">Education <span>({len(education)})</span></h2>'
         f'<ol class="record-list">{"".join(education_rows)}</ol></section>'
@@ -1112,14 +1379,21 @@ def render_resume_html(payload: dict, variant: str = "full") -> bytes:
     for item in experience:
         title = f"{item['workplace']} — {', '.join(item['roles'])}"
         details = [item.get("description", ""), item.get("category", "")]
-        experience_rows.append(_html_record(title, details, _html_links(item), date=date_range(item)))
+        experience_rows.append(
+            _html_record(title, details, _html_links(item), date=date_range(item))
+        )
     sections.append(
         f'<section aria-labelledby="experience"><h2 id="experience">Experience <span>({len(experience)})</span></h2>'
         f'<ol class="record-list">{"".join(experience_rows)}</ol></section>'
     )
     awards = filter_items(payload["awards"], variant)
     award_rows = [
-        _html_record(item["name"], [item.get("details", "")], _html_links(item), date=item.get("year"))
+        _html_record(
+            item["name"],
+            [item.get("details", "")],
+            _html_links(item),
+            date=item.get("year"),
+        )
         for item in awards
     ]
     sections.append(
@@ -1133,7 +1407,11 @@ def render_resume_html(payload: dict, variant: str = "full") -> bytes:
         if str(target).startswith("10."):
             target = f"https://doi.org/{target}"
         title = _html_link(work.get("title", "Untitled work"), target)
-        venue = f" <span class=\"muted\">· {_html_escape(work.get('venue', ''))}</span>" if work.get("venue") else ""
+        venue = (
+            f' <span class="muted">· {_html_escape(work.get("venue", ""))}</span>'
+            if work.get("venue")
+            else ""
+        )
         work_items.append(
             f'<li><span class="record-date">[{_html_escape(work.get("num", ""))}] {_html_escape(work.get("year", ""))}</span> '
             f'<span class="work-type">{_html_escape(work.get("type", "Work"))}</span> {title}{venue}</li>'
@@ -1146,15 +1424,19 @@ def render_resume_html(payload: dict, variant: str = "full") -> bytes:
     software_items = []
     link_separator = ' <span aria-hidden="true">·</span> '
     for row in software:
-        links = [_html_link(row.get("owner", "") + "/" + row.get("name", ""), row.get("url", ""))]
+        links = [
+            _html_link(
+                row.get("owner", "") + "/" + row.get("name", ""), row.get("url", "")
+            )
+        ]
         if row.get("paper_path"):
             links.append(_html_link("paper", f"/{row['paper_path']}"))
         if row.get("zenodo_url"):
             links.append(_html_link("Zenodo", row["zenodo_url"]))
         software_items.append(
-            f'<li><article><h3>{link_separator.join(links)}</h3>'
+            f"<li><article><h3>{link_separator.join(links)}</h3>"
             f'<p>{_html_escape(row.get("description", ""))}</p><p class="record-links">'
-            f'{_html_escape(row.get("language") or "Unspecified")}</p></article></li>'
+            f"{_html_escape(row.get('language') or 'Unspecified')}</p></article></li>"
         )
     sections.append(
         f'<section aria-labelledby="software"><h2 id="software">Software <span>({len(software)})</span></h2>'
@@ -1168,12 +1450,30 @@ def render_resume_html(payload: dict, variant: str = "full") -> bytes:
         items = filter_items(payload[key], variant)
         rows = []
         for item in items:
-            title = item.get("title") or item.get("name") or item.get("description") or "Record"
-            details = [item.get("event", ""), item.get("source", ""), item.get("type", ""), item.get("details", ""), item.get("description", "")]
+            title = (
+                item.get("title")
+                or item.get("name")
+                or item.get("description")
+                or "Record"
+            )
+            details = [
+                item.get("event", ""),
+                item.get("source", ""),
+                item.get("type", ""),
+                item.get("details", ""),
+                item.get("description", ""),
+            ]
             group = item.get("group", "")
             if group:
                 title = f"{group} — {title}"
-            rows.append(_html_record(title, details, _html_links(item), date=item.get("year") or date_range(item)))
+            rows.append(
+                _html_record(
+                    title,
+                    details,
+                    _html_links(item),
+                    date=item.get("year") or date_range(item),
+                )
+            )
         sections.append(
             f'<section aria-labelledby="{key}"><h2 id="{key}">{_html_escape(heading)} <span>({len(items)})</span></h2>'
             f'<ol class="record-list">{"".join(rows)}</ol></section>'
@@ -1181,7 +1481,12 @@ def render_resume_html(payload: dict, variant: str = "full") -> bytes:
     if variant == "full":
         items = payload["art_uses"]
         art_rows = [
-            _html_record(item.get("name", ""), [item.get("description", "")], _html_links(item), date=item.get("year") or "All")
+            _html_record(
+                item.get("name", ""),
+                [item.get("description", "")],
+                _html_links(item),
+                date=item.get("year") or "All",
+            )
             for item in items
         ]
         sections.append(
@@ -1196,7 +1501,11 @@ def render_resume_html(payload: dict, variant: str = "full") -> bytes:
             "name": f"{profile['name']} — Public Structured CV",
             "url": RESUME_HTML_URL,
             "dateModified": payload["generated_at"],
-            "mainEntity": {"@type": "Person", "name": profile["name"], "url": "https://danielarifriedman.com/"},
+            "mainEntity": {
+                "@type": "Person",
+                "name": profile["name"],
+                "url": "https://danielarifriedman.com/",
+            },
         },
         ensure_ascii=False,
     ).replace("</", "<\\/")
@@ -1205,12 +1514,12 @@ def render_resume_html(payload: dict, variant: str = "full") -> bytes:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{_html_escape(profile['name'])} — Public Structured CV</title>
-    <meta name="description" content="Accessible, source-verified public curriculum vitae for {_html_escape(profile['name'])}.">
+    <title>{_html_escape(profile["name"])} — Public Structured CV</title>
+    <meta name="description" content="Accessible, source-verified public curriculum vitae for {_html_escape(profile["name"])}.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{RESUME_HTML_URL}">
     <meta property="og:type" content="profile">
-    <meta property="og:title" content="{_html_escape(profile['name'])} — Public Structured CV">
+    <meta property="og:title" content="{_html_escape(profile["name"])} — Public Structured CV">
     <meta property="og:description" content="Accessible, source-verified public curriculum vitae.">
     <meta property="og:url" content="{RESUME_HTML_URL}">
     <meta property="og:site_name" content="Daniel Ari Friedman">
@@ -1249,24 +1558,24 @@ def render_resume_html(payload: dict, variant: str = "full") -> bytes:
     <nav aria-label="Main navigation"><a class="nav-logo" href="/">Daniel Ari Friedman</a><div class="nav-links"><a href="/publications.html">Publications</a><a href="/software.html">Software</a><a href="/resume/resume.pdf">PDF</a><a href="/resume/verify.html">Verify</a></div></nav>
     <main id="main" class="cv-shell">
         <header class="cv-hero">
-            <p><strong>PUBLIC STRUCTURED CV · { _html_escape(variant) }</strong></p>
-            <h1>{_html_escape(profile['name'])}, {_html_escape(profile['credential'])}</h1>
-            <p>{_html_escape(profile['headline'])} · {_html_escape(profile['location'])}</p>
-            <p>{_html_escape(profile['summary'])}</p>
+            <p><strong>PUBLIC STRUCTURED CV · {_html_escape(variant)}</strong></p>
+            <h1>{_html_escape(profile["name"])}, {_html_escape(profile["credential"])}</h1>
+            <p>{_html_escape(profile["headline"])} · {_html_escape(profile["location"])}</p>
+            <p>{_html_escape(profile["summary"])}</p>
         </header>
         <section aria-labelledby="cv-links"><h2 id="cv-links">CV formats and verification</h2><div class="cv-tools">
             <p class="cv-card"><a href="/resume/resume.pdf">Download accessible-text PDF</a></p><p class="cv-card"><a href="/data/resume.json">Structured JSON</a></p><p class="cv-card"><a href="/resume/full.txt">Plain-text CV</a></p><p class="cv-card"><a href="/resume/verify.html">Verify source and artifact hashes</a></p>
         </div></section>
         <section aria-labelledby="contact"><h2 id="contact">Contact and identifiers</h2><div class="cv-contact">
-            <p class="cv-card"><strong>Email</strong><br>{_html_contact_value(contact.get('email', []), mailto=True)}</p>
-            <p class="cv-card"><strong>Sites</strong><br>{_html_contact_value(contact.get('personal_sites', []))}</p>
-            <p class="cv-card"><strong>Profiles</strong><br>{_html_link('GitHub', contact.get('github'))}<br>{_html_link('ORCID', 'https://orcid.org/' + str(contact.get('orcid', '')))}<br>{_html_link('Google Scholar', contact.get('google_scholar'))}</p>
+            <p class="cv-card"><strong>Email</strong><br>{_html_contact_value(contact.get("email", []), mailto=True)}</p>
+            <p class="cv-card"><strong>Sites</strong><br>{_html_contact_value(contact.get("personal_sites", []))}</p>
+            <p class="cv-card"><strong>Profiles</strong><br>{_html_link("GitHub", contact.get("github"))}<br>{_html_link("ORCID", "https://orcid.org/" + str(contact.get("orcid", "")))}<br>{_html_link("Google Scholar", contact.get("google_scholar"))}</p>
         </div></section>
         <section aria-labelledby="metrics"><h2 id="metrics">Current public metrics</h2><div class="cv-metrics">
-            <p class="cv-card"><span class="cv-metric">{metrics['works']}</span>curated works</p><p class="cv-card"><span class="cv-metric">{metrics['software_catalogued']}</span>catalogued software rows</p><p class="cv-card"><span class="cv-metric">{metrics['github_inventory']['docxology']} + {metrics['github_inventory']['ActiveInferenceInstitute']}</span>public GitHub repositories by account</p><p class="cv-card"><span class="cv-metric">{metrics['google_scholar']['citations']}</span>Google Scholar citations <small>(as of {_html_escape(metrics['google_scholar']['as_of'])})</small></p>
-        </div><p>Counts are generated from canonical exports. GitHub inventory generated {_html_escape(metrics['github_inventory']['generated_at'])}; Scholar metrics remain explicitly dated.</p></section>
-        {''.join(sections)}
-        <footer class="cv-footer"><p>Generated {_html_escape(payload['generated_at'])}. Source manifest: <code>{_html_escape(payload['integrity']['source_manifest']['sha256'])}</code>.</p><p>PDF rendering provides selectable text, embedded fonts, link annotations, language metadata, and deterministic hashes. It does not claim a fully tagged PDF/UA structure; use this semantic HTML view or plain text for maximum assistive-technology compatibility.</p></footer>
+            <p class="cv-card"><span class="cv-metric">{metrics["works"]}</span>curated works</p><p class="cv-card"><span class="cv-metric">{metrics["software_catalogued"]}</span>catalogued software rows</p><p class="cv-card"><span class="cv-metric">{metrics["github_inventory"]["docxology"]} + {metrics["github_inventory"]["ActiveInferenceInstitute"]}</span>public GitHub repositories by account</p><p class="cv-card"><span class="cv-metric">{metrics["google_scholar"]["citations"]}</span>Google Scholar citations <small>(as of {_html_escape(metrics["google_scholar"]["as_of"])})</small></p>
+        </div><p>Counts are generated from canonical exports. GitHub inventory generated {_html_escape(metrics["github_inventory"]["generated_at"])}; Scholar metrics remain explicitly dated.</p></section>
+        {"".join(sections)}
+        <footer class="cv-footer"><p>Generated {_html_escape(payload["generated_at"])}. Source manifest: <code>{_html_escape(payload["integrity"]["source_manifest"]["sha256"])}</code>.</p><p>PDF rendering provides selectable text, embedded fonts, link annotations, language metadata, and deterministic hashes. It does not claim a fully tagged PDF/UA structure; use this semantic HTML view or plain text for maximum assistive-technology compatibility.</p></footer>
     </main>
 </body>
 </html>
@@ -1310,7 +1619,9 @@ def render_verify_html(payload: dict, provenance: dict) -> bytes:
     )
     source_hash = provenance["source_manifest"]["sha256"]
     json_hash = provenance["resume_json"]["sha256"]
-    pdf_hash = provenance.get("resume_pdf", {}).get("sha256", "N/A (reportlab not installed)")
+    pdf_hash = provenance.get("resume_pdf", {}).get(
+        "sha256", "N/A (reportlab not installed)"
+    )
     content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1431,10 +1742,14 @@ def tracked_outputs(payload: dict) -> dict[Path, bytes]:
         outputs[path] = render_text(payload, variant).encode("utf-8")
     try:
         pdf_bytes = render_pdf(payload, "full", provenance)
-        provenance = {**provenance, "resume_pdf": {"bytes": len(pdf_bytes), "sha256": _sha256_bytes(pdf_bytes)}}
+        provenance = {
+            **provenance,
+            "resume_pdf": {"bytes": len(pdf_bytes), "sha256": _sha256_bytes(pdf_bytes)},
+        }
         outputs[FULL_PDF] = pdf_bytes
     except ImportError:
         import sys
+
         print("warning: reportlab not installed, skipping PDF check", file=sys.stderr)
     outputs[FULL_HTML] = render_resume_html(payload, "full")
     outputs[VERIFY_OUT] = render_verify_html(payload, provenance)
@@ -1451,7 +1766,9 @@ def selected_outputs(payload: dict, variant: str, fmt: str) -> dict[Path, bytes]
     if fmt == "pdf":
         target = FULL_PDF if variant == "full" else RESUME_DIR / f"{variant}.pdf"
         json_bytes = json_dumps(payload).encode("utf-8")
-        return {target: render_pdf(payload, variant, _provenance_base(payload, json_bytes))}
+        return {
+            target: render_pdf(payload, variant, _provenance_base(payload, json_bytes))
+        }
     if fmt == "html":
         return {FULL_HTML: render_resume_html(payload, variant)}
     raise ValueError(f"unknown format: {fmt}")
@@ -1473,18 +1790,30 @@ def write_outputs(outputs: dict[Path, bytes]) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--all", action="store_true", help="Regenerate all tracked resume outputs")
-    parser.add_argument("--check", action="store_true", help="Fail if tracked resume outputs are stale")
+    parser.add_argument(
+        "--all", action="store_true", help="Regenerate all tracked resume outputs"
+    )
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if tracked resume outputs are stale"
+    )
     parser.add_argument("--variant", choices=VARIANTS, default="full")
-    parser.add_argument("--format", choices=("json", "txt", "pdf", "html", "all"), default="all")
+    parser.add_argument(
+        "--format", choices=("json", "txt", "pdf", "html", "all"), default="all"
+    )
     args = parser.parse_args()
 
     generated_at = existing_generated_at() if args.check else None
     if not args.check:
         candidate = build_resume_payload(generated_timestamp(), REPO_ROOT)
-        generated_at = stable_generated_at(JSON_OUT, candidate) or candidate["generated_at"]
+        generated_at = (
+            stable_generated_at(JSON_OUT, candidate) or candidate["generated_at"]
+        )
     payload = build_resume_payload(generated_at or generated_timestamp(), REPO_ROOT)
-    outputs = tracked_outputs(payload) if args.all or args.check else selected_outputs(payload, args.variant, args.format)
+    outputs = (
+        tracked_outputs(payload)
+        if args.all or args.check
+        else selected_outputs(payload, args.variant, args.format)
+    )
 
     if args.check:
         stale = check_outputs(outputs)

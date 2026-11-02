@@ -25,8 +25,18 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-from docxology_tools.generated_outputs import read_generated_output_text, safe_generated_output_path, write_generated_output_text  # noqa: E402
-from docxology_tools.report_paths import dated_report_dir, generated_timestamp, latest_subdir_file, source_commit, source_worktree_state  # noqa: E402
+from docxology_tools.generated_outputs import (  # noqa: E402
+    read_generated_output_text,
+    safe_generated_output_path,
+    write_generated_output_text,
+)
+from docxology_tools.report_paths import (  # noqa: E402
+    dated_report_dir,
+    generated_timestamp,
+    latest_subdir_file,
+    source_commit,
+    source_worktree_state,
+)
 
 OUT_DIR = dated_report_dir("visual-qa")
 MANIFEST = OUT_DIR / "manifest.json"
@@ -132,7 +142,9 @@ def capture() -> dict:
                 "reviewed_at": None,
             },
         }
-        write_generated_output_text(REPO_ROOT, MANIFEST, json.dumps(manifest, indent=2) + "\n")
+        write_generated_output_text(
+            REPO_ROOT, MANIFEST, json.dumps(manifest, indent=2) + "\n"
+        )
         return manifest
     finally:
         server.terminate()
@@ -142,7 +154,9 @@ def capture() -> dict:
             server.kill()
 
 
-def _capture_errors(manifest: object, manifest_path: Path, repo_root: Path) -> list[str]:
+def _capture_errors(
+    manifest: object, manifest_path: Path, repo_root: Path
+) -> list[str]:
     """Return integrity and coverage errors before a screenshot set is approved."""
     if not isinstance(manifest, dict):
         return ["visual QA manifest must be a JSON object"]
@@ -150,9 +164,7 @@ def _capture_errors(manifest: object, manifest_path: Path, repo_root: Path) -> l
     if not isinstance(screenshots, list) or not screenshots:
         return ["visual QA manifest has no screenshots"]
     expected = {
-        (page, viewport, size)
-        for _name, page in PAGES
-        for viewport, size in VIEWPORTS
+        (page, viewport, size) for _name, page in PAGES for viewport, size in VIEWPORTS
     }
     observed: list[tuple[str, str, str]] = []
     errors: list[str] = []
@@ -166,7 +178,9 @@ def _capture_errors(manifest: object, manifest_path: Path, repo_root: Path) -> l
         if all(isinstance(value, str) and value for value in (page, viewport, size)):
             observed.append((page, viewport, size))
         else:
-            errors.append(f"screenshot {index} lacks page/viewport/size coverage fields")
+            errors.append(
+                f"screenshot {index} lacks page/viewport/size coverage fields"
+            )
         file_name = screenshot.get("file")
         if not isinstance(file_name, str) or not file_name:
             errors.append(f"screenshot {index} lacks a file path")
@@ -185,7 +199,9 @@ def _capture_errors(manifest: object, manifest_path: Path, repo_root: Path) -> l
         try:
             path.relative_to(manifest_path.parent)
         except ValueError:
-            errors.append(f"screenshot {index} is outside its manifest directory: {file_name}")
+            errors.append(
+                f"screenshot {index} is outside its manifest directory: {file_name}"
+            )
             continue
         try:
             relative = path.relative_to(repo_root)
@@ -198,15 +214,23 @@ def _capture_errors(manifest: object, manifest_path: Path, repo_root: Path) -> l
             if not stat.S_ISREG(entry.st_mode) or entry.st_nlink != 1:
                 raise OSError("screenshot is not a singly linked regular file")
         except OSError as exc:
-            errors.append(f"screenshot {index} is unsafe or missing: {file_name} ({exc})")
+            errors.append(
+                f"screenshot {index} is unsafe or missing: {file_name} ({exc})"
+            )
             continue
         digest = screenshot.get("sha256")
-        if not isinstance(digest, str) or len(digest) != 64 or any(char not in "0123456789abcdef" for char in digest):
+        if (
+            not isinstance(digest, str)
+            or len(digest) != 64
+            or any(char not in "0123456789abcdef" for char in digest)
+        ):
             errors.append(f"screenshot {index} lacks a valid SHA-256: {file_name}")
         elif sha256_file(path) != digest:
             errors.append(f"screenshot {index} digest mismatch: {file_name}")
     if set(observed) != expected or len(observed) != len(set(observed)):
-        errors.append("visual QA screenshot coverage does not match the current page/viewport contract")
+        errors.append(
+            "visual QA screenshot coverage does not match the current page/viewport contract"
+        )
     return errors
 
 
@@ -236,7 +260,10 @@ def check() -> None:
     manifest = _load_manifest(manifest_path, REPO_ROOT)
     errors = _capture_errors(manifest, manifest_path, REPO_ROOT)
     if errors:
-        raise SystemExit("Invalid visual QA capture:\n" + "\n".join(f"  - {error}" for error in errors))
+        raise SystemExit(
+            "Invalid visual QA capture:\n"
+            + "\n".join(f"  - {error}" for error in errors)
+        )
     print(f"checked {len(manifest['screenshots'])} visual QA screenshots")
 
 
@@ -249,16 +276,23 @@ def approve_existing(
     """Record review of the exact pending capture after validating its files."""
     reviewer = reviewed_by.strip()
     if not reviewer:
-        raise SystemExit("--reviewed-by must name the reviewer approving the existing capture")
+        raise SystemExit(
+            "--reviewed-by must name the reviewer approving the existing capture"
+        )
     path = manifest_path or _latest_manifest()
     path = path if path.is_absolute() else repo_root / path
     manifest = _load_manifest(path, repo_root)
     errors = _capture_errors(manifest, path, repo_root)
     if errors:
-        raise SystemExit("Cannot approve visual QA capture:\n" + "\n".join(f"  - {error}" for error in errors))
+        raise SystemExit(
+            "Cannot approve visual QA capture:\n"
+            + "\n".join(f"  - {error}" for error in errors)
+        )
     review = manifest.get("review")
     if not isinstance(review, dict) or review.get("status") != "pending":
-        raise SystemExit("Visual QA capture is not pending review; capture a new screenshot set before approval")
+        raise SystemExit(
+            "Visual QA capture is not pending review; capture a new screenshot set before approval"
+        )
     manifest["review"] = {
         "status": "reviewed",
         "reviewed_by": reviewer,
@@ -271,7 +305,11 @@ def approve_existing(
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     mode = parser.add_mutually_exclusive_group()
-    mode.add_argument("--check", action="store_true", help="Verify the existing manifest and screenshot files")
+    mode.add_argument(
+        "--check",
+        action="store_true",
+        help="Verify the existing manifest and screenshot files",
+    )
     mode.add_argument(
         "--approve-existing",
         action="store_true",
@@ -283,7 +321,9 @@ def main(argv: list[str] | None = None) -> None:
     )
     args = parser.parse_args(argv)
     if args.reviewed_by and not args.approve_existing:
-        parser.error("--reviewed-by requires --approve-existing after the capture has been inspected")
+        parser.error(
+            "--reviewed-by requires --approve-existing after the capture has been inspected"
+        )
     if args.approve_existing:
         if not args.reviewed_by:
             parser.error("--approve-existing requires --reviewed-by")

@@ -12,21 +12,35 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 
 from docxology_tools.biblio_table import BiblioRow  # noqa: E402
-from export_bibliography import author_names, bibtex_entry, csl_item, ris_record, row_to_work  # noqa: E402
+from export_bibliography import (  # noqa: E402
+    author_names,
+    bibtex_entry,
+    csl_item,
+    ris_record,
+    row_to_work,
+)
 
 
 def _work(authors_cell: str, work_type: str = "Paper"):
     row = BiblioRow(
-        num=1, year="2026", domain="🧠", typ=work_type,
-        title="Source-authority example", venue="Source venue",
-        link_cell="https://example.test/work", docs_cell="", authors_cell=authors_cell,
+        num=1,
+        year="2026",
+        domain="🧠",
+        typ=work_type,
+        title="Source-authority example",
+        venue="Source venue",
+        link_cell="https://example.test/work",
+        docs_cell="",
+        authors_cell=authors_cell,
     )
     return row_to_work(row, visible_source_paths=frozenset())
 
 
 @pytest.mark.parametrize("authors_cell", ["", "—", "-"])
 @pytest.mark.parametrize("work_type", ["Paper", "Book Chapter", "Course", "Series"])
-def test_unknown_authors_are_omitted_from_every_citation_format(authors_cell, work_type):
+def test_unknown_authors_are_omitted_from_every_citation_format(
+    authors_cell, work_type
+):
     work = _work(authors_cell, work_type)
     assert author_names(work) == []
     assert "  author =" not in bibtex_entry(work)
@@ -47,7 +61,11 @@ def test_confirmed_people_and_collective_authors_keep_their_source_order():
         {"literal": "Active Inference Institute"},
         {"family": "Friedman", "given": "Daniel Ari"},
     ]
-    assert [line.removeprefix("AU  - ") for line in ris_record(work).splitlines() if line.startswith("AU  - ")] == authors
+    assert [
+        line.removeprefix("AU  - ")
+        for line in ris_record(work).splitlines()
+        if line.startswith("AU  - ")
+    ] == authors
 
 
 def test_export_author_list_does_not_mutate_the_source_work():

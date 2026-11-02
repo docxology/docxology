@@ -151,7 +151,9 @@ def specific_method_details(methods: Iterable[Any] | None) -> list[tuple[str, st
     return details
 
 
-def specific_findings(findings: Iterable[Any] | None, *abstract_sources: Any) -> list[str]:
+def specific_findings(
+    findings: Iterable[Any] | None, *abstract_sources: Any
+) -> list[str]:
     """Return recorded findings that are neither placeholders nor abstract echoes.
 
     Several enrichment passes copied the first sentences of the abstract into
@@ -167,7 +169,9 @@ def specific_findings(findings: Iterable[Any] | None, *abstract_sources: Any) ->
             continue
         words = _words(text.rstrip(". "))
         # A truncated fragment ends in a partial word; compare without it.
-        probe = words.rsplit(" ", 1)[0] if text.endswith("..") and " " in words else words
+        probe = (
+            words.rsplit(" ", 1)[0] if text.endswith("..") and " " in words else words
+        )
         if probe and abstract_words and probe in abstract_words:
             continue
         if text not in kept:

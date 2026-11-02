@@ -54,7 +54,7 @@ def main_head_sha_from_checkout(repo_root: Path | None = None) -> str | None:
             check=True,
             timeout=30,
         )
-    except (OSError, subprocess.CalledProcessError):
+    except OSError, subprocess.CalledProcessError:
         return None
     return result.stdout.strip() or None
 

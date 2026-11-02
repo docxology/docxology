@@ -35,6 +35,15 @@ def test_public_integrity_checks_can_scan_a_narrow_fixture(tmp_path):
     assert "unsafe URL scheme" in errors[0]
 
 
+def test_windows_home_paths_are_detected_without_matching_json_newline_escapes():
+    import json
+
+    assert LOCAL_PATH_RE.search(r"C:\Users\example\private.txt")
+    assert LOCAL_PATH_RE.search(json.dumps({"path": r"C:\Users\example\private.txt"}))
+    assert not LOCAL_PATH_RE.search(json.dumps({"note": "A:\nB:\n"}))
+    assert not LOCAL_PATH_RE.search("https://example.org/Users/example/public.txt")
+
+
 def test_csp_data_source_is_not_treated_as_an_unsafe_link_scheme(tmp_path):
     fixture = tmp_path / "fixture.html"
     fixture.write_text('<meta content="img-src self data: https:">', encoding="utf-8")

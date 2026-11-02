@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "GNN-based active inference for Battleship"
+version: "0.5.0"
+date-released: 2026-10-26
+doi: 10.5281/zenodo.23670187
+url: "https://doi.org/10.5281/zenodo.23670187"
+repository-code: "https://github.com/ActiveInferenceInstitute/active_inference_battleship"
+authors:
+  - family-names: "Friedman"
+    given-names: "Daniel Ari"
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23670187"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.23670187"
+    description: "Canonical citation DOI resolver"
+  - type: url
+    value: "https://github.com/ActiveInferenceInstitute/active_inference_battleship/releases/tag/v0.5.0"
+    description: "GitHub release"

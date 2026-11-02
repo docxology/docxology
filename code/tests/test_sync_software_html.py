@@ -89,7 +89,9 @@ def test_generated_software_surfaces():
     assert 'src="/data/software-ld.json"' not in html
     assert '<script type="application/ld+json">' in html
     og_match = re.search(r'<meta property="og:description" content="([^"]*)">', html)
-    twitter_match = re.search(r'<meta name="twitter:description" content="([^"]*)">', html)
+    twitter_match = re.search(
+        r'<meta name="twitter:description" content="([^"]*)">', html
+    )
     assert og_match and twitter_match
     assert og_match.group(1) == twitter_match.group(1)
     description = og_match.group(1)
@@ -100,7 +102,9 @@ def test_generated_software_surfaces():
     assert len(ld["mainEntity"]) == expected_docx + expected_aii
 
 
-def _temporary_software_outputs(tmp_path: Path, rendered: dict[Path, str]) -> dict[Path, str]:
+def _temporary_software_outputs(
+    tmp_path: Path, rendered: dict[Path, str]
+) -> dict[Path, str]:
     """Map canonical source-rendered text to isolated real output files."""
     return {
         tmp_path / "software.html": rendered[SOFTWARE_HTML],
@@ -119,7 +123,9 @@ def test_render_and_check_detect_stale_repo_card_and_json_ld(tmp_path: Path):
         '<div class="repo-card">', '<div class="repo-card stale-card">', 1
     )
     assert stale_card != canonical_html
-    assert render_outputs_from_template(None, stale_card)[SOFTWARE_HTML] == canonical_html
+    assert (
+        render_outputs_from_template(None, stale_card)[SOFTWARE_HTML] == canonical_html
+    )
 
     stale_json_ld = rendered[SOFTWARE_LD_JSON].replace(
         '"CollectionPage"', '"StaleCollectionPage"', 1
@@ -137,7 +143,9 @@ def test_render_and_check_detect_stale_repo_card_and_json_ld(tmp_path: Path):
         try:
             for path, stale in changed.items():
                 path.write_text(stale, encoding="utf-8")
-            assert stale_output_paths(targets, repo_root=tmp_path) == tuple(changed), label
+            assert stale_output_paths(targets, repo_root=tmp_path) == tuple(changed), (
+                label
+            )
         finally:
             for path, content in original.items():
                 path.write_text(content, encoding="utf-8")
@@ -179,7 +187,9 @@ def test_apply_mapping_normalizes_software_targets(tmp_path: Path):
     targets = _temporary_software_outputs(tmp_path, render_outputs())
     write_output_texts(targets, repo_root=tmp_path)
     html_target, json_target = tuple(targets)
-    html_target.write_text(targets[html_target] + "\n<!-- stale -->\n", encoding="utf-8")
+    html_target.write_text(
+        targets[html_target] + "\n<!-- stale -->\n", encoding="utf-8"
+    )
     json_target.write_text("{}\n", encoding="utf-8")
 
     assert stale_output_paths(targets, repo_root=tmp_path) == (html_target, json_target)

@@ -10,13 +10,13 @@
 
 ## Abstract
 
-> FEP_Lean / FEP Formal v1.6.0 is a reproducible catalogue of 168 canonical Lean topic bodies in 22 reviewed families across the Free Energy Principle, Active Inference, Bayesian Mechanics, Information Geometry and Thermodynamics. Each topic retains its carrier, exact qualified statement, assumptions, non-vacuity boundary, semantic disposition and evidence requirements. Lean and Mathlib are pinned to 4.34.1.
+> FEP_Formal 2.1.0 is coordinated with Generalized_Notation_Notation 5.0.1. It retains the 168-topic Lean catalogue and explicit statement, assumption, semantic-maturity and evidence boundaries, using Lean 4.35.0 and Mathlib v4.35.0. Seven bounded composition proofs add temporal, risk, exponential-family, policy, reduction, consensus and geometric interfaces. The inventory distinguishes 32 formal relations, 118 theorem pairings and six conceptual relations.
 >
-> This version adds a greatly extended Supplement A, modular installed-package mathematical methods, source-grounded Lean statement and natural-language analysis, and reproducible publication figures and an offline explorer. It compares 22 FEP family context unions with twelve selected OpenAI mathematics result units in 30 explicitly authored binary coordinates. The deterministic MDS projection reports its spectrum, distance distortion, stress and axis ambiguity. The upstream corpus is pinned at adc7f1241b42e322a6451854ab7e4b4c146bf78a; its statements are reference comparisons, with no imported proof authority or runtime dependency.
+> This version adds independent replay of source-bound finite and passive linear-Gaussian GNN filtering evidence, with separate numerical, source-custody, program-execution and formal-compilation claims. Finite forward filtering and Kalman/Joseph updates compare admitted parameters, axes, conditioning, float64 posterior means and full covariance. Bounded Lean laws and Q7 coefficient/prediction statements do not prove the GNN parser, general multidimensional filtering, authenticated execution or universal translation equivalence.
 >
-> Compilation establishes the exact selected Lean bodies, not the Free Energy Principle as a physical theory. Semantic maturity is separate from compilation. Numerical and embedding visualizations are explanatory evidence. Frozen H3 primary execution, full seven-stage capture, Q7 generated-runner execution, provider runs and future empirical work retain their separate acceptance requirements.
+> Accepted FEP source: 96bf714d91c088e79b9dea54af0f9151f70de64f; tree: 15af656a15fc86b6d89804277ea030502a4f9168; tag: v2.1.0. Automatic PR, explicit full dual-shadow and fresh merged-main qualification retain distinct execution identities. The complete merged-main roster has 22 roles, including 15 wheel cells, 168 warning-strict native topics, 2060 audited declarations and the separately reviewed 390-page manuscript. Expected optional-profile skips remain exclusions. Ordinary wheel/source distributions and an isolated Python 3.14.9 installation passed independent content and RECORD reviews.
 >
-> The release includes the manuscript PDF, offline companion, Python wheel and source distribution, exact tagged repository source and SHA-256 checksums. Source: ActiveInferenceInstitute/fep_formal (https://github.com/ActiveInferenceInstitute/fep_formal). Release: v1.6.0 (https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.6.0). This manuscript continues scholarly concept DOI 10.5281/zenodo.19699233; GitHub software archives are maintained separately under concept DOI 10.5281/zenodo.23196891.
+> The accepted manuscript, offline companion, ordinary distributions, exact tagged source, citation, license, checksums and publication observation form a nine-file payload. Full provider execution, frozen H3 production capture, broader formal translation and other scientific extensions retain separate acceptance requirements. This scholarly version continues concept DOI 10.5281/zenodo.19699233. Software archives remain separate under concept DOI 10.5281/zenodo.23196891.
 
 ## Keywords
 
@@ -43,13 +43,13 @@ _Methods and findings are summarized from the full text; each item is backed by 
 ## Artifacts
 
 - GitHub repository: [ActiveInferenceInstitute/fep_formal](https://github.com/ActiveInferenceInstitute/fep_formal)
-- GitHub release: [v1.6.0](https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.6.0)
+- GitHub release: [v2.1.0](https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v2.1.0)
 - DOI: [10.5281/zenodo.19699233](https://doi.org/10.5281/zenodo.19699233)
 - Artifact DOI: [10.5281/zenodo.22072956](https://doi.org/10.5281/zenodo.22072956)
 - Zenodo record: [https://zenodo.org/records/19699233](https://zenodo.org/records/19699233)
+- PDF: [FEP_Formal-2.1.0.pdf](FEP_Formal-2.1.0.pdf)
 - PDF: [fep-lean-manuscript-1.1.0.pdf](fep-lean-manuscript-1.1.0.pdf)
 - PDF: [fep_lean-v1.6.0.pdf](fep_lean-v1.6.0.pdf)
-- PDF: [fep_lean_v1_04-24-2026.pdf](fep_lean_v1_04-24-2026.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/19699233)
 
 ## Citation

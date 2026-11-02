@@ -93,121 +93,502 @@ ASSET_AUDIT_INPUTS_EXCLUDE: tuple[str, ...] = (
 
 LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # Bibliography table -> citation exports + works.json (pure renderer).
-    GenerationStep("export-bibliography", "export_bibliography.py", (), ("--check",), "Bibliography exports and works projection", ("pages/BIBLIOGRAPHY.md", "data/work-identifiers.json", "data/work-authors.json", "code/src/work_identifiers.py")),
+    GenerationStep(
+        "export-bibliography",
+        "export_bibliography.py",
+        (),
+        ("--check",),
+        "Bibliography exports and works projection",
+        (
+            "pages/BIBLIOGRAPHY.md",
+            "data/work-identifiers.json",
+            "data/work-authors.json",
+            "code/src/work_identifiers.py",
+        ),
+    ),
     # Full re-render of publications.html + publications-ld.json from the
     # curated table and template. This first pass may legally read
     # one-step-behind state (current-counts, paper-folder flags); the final
     # instance below declares those inputs so one pass reaches the fixed point.
-    GenerationStep("sync-publications", "sync_publications_html.py", ("--apply",), ("--check",), "Publication HTML and JSON-LD", ("pages/BIBLIOGRAPHY.md", "data/work-identifiers.json", "data/work-authors.json", "code/src/work_identifiers.py", "code/src/author_entities.py", "code/templates/publications.html.tmpl", "code/orchestrators/export_bibliography.py", "code/orchestrators/build_work_pages.py")),
-    GenerationStep("sync-software", "sync_software_html.py", ("--apply",), ("--check",), "Software HTML and JSON-LD", ("pages/SOFTWARE.md", "code/templates/software.html.tmpl", "data/github-repositories.json")),
-    GenerationStep("github-inventory-pages", "render_github_inventory.py", (), ("--check",), "Cached GitHub inventory HTML pages", ("data/github-repositories.json", "code/orchestrators/build_github_inventory.py")),
+    GenerationStep(
+        "sync-publications",
+        "sync_publications_html.py",
+        ("--apply",),
+        ("--check",),
+        "Publication HTML and JSON-LD",
+        (
+            "pages/BIBLIOGRAPHY.md",
+            "data/work-identifiers.json",
+            "data/work-authors.json",
+            "code/src/work_identifiers.py",
+            "code/src/author_entities.py",
+            "code/templates/publications.html.tmpl",
+            "code/orchestrators/export_bibliography.py",
+            "code/orchestrators/build_work_pages.py",
+        ),
+    ),
+    GenerationStep(
+        "sync-software",
+        "sync_software_html.py",
+        ("--apply",),
+        ("--check",),
+        "Software HTML and JSON-LD",
+        (
+            "pages/SOFTWARE.md",
+            "code/templates/software.html.tmpl",
+            "data/github-repositories.json",
+        ),
+    ),
+    GenerationStep(
+        "github-inventory-pages",
+        "render_github_inventory.py",
+        (),
+        ("--check",),
+        "Cached GitHub inventory HTML pages",
+        (
+            "data/github-repositories.json",
+            "pages/SOFTWARE.md",
+            "code/orchestrators/build_github_inventory.py",
+        ),
+    ),
     # DERIVED (always-run): reads data/software.json — a projection agent-data
     # rewrites later in the same pass — while agent-data itself reads this
     # step's current-counts.json. That cross-pass cycle cannot be ordered
     # away, so gating here would mask the software.json refresh behind an
     # unchanged-inputs skip.
-    GenerationStep("current-counts", "build_current_counts.py", (), ("--check",), "Volatile count report"),
-    GenerationStep("blake-index", "build_blake_index.py", (), ("--check",), "Source-bound Blake publication pathway", ("data/works.json", "data/blake-review.json", "papers/*/full_text.md", "papers/*/metadata.json", "reports/publication_discovery_*.json")),
-    GenerationStep("coverage-exceptions", "build_coverage_exceptions.py", (), ("--check",), "Source coverage queue", ("data/works.json",)),
+    GenerationStep(
+        "current-counts",
+        "build_current_counts.py",
+        (),
+        ("--check",),
+        "Volatile count report",
+    ),
+    GenerationStep(
+        "blake-index",
+        "build_blake_index.py",
+        (),
+        ("--check",),
+        "Source-bound Blake publication pathway",
+        (
+            "data/works.json",
+            "data/blake-review.json",
+            "papers/*/full_text.md",
+            "papers/*/metadata.json",
+            "reports/publication_discovery_*.json",
+        ),
+    ),
+    GenerationStep(
+        "coverage-exceptions",
+        "build_coverage_exceptions.py",
+        (),
+        ("--check",),
+        "Source coverage queue",
+        ("data/works.json",),
+    ),
     # DERIVED (always-run): classifies from data/software.json, which
     # agent-data rewrites later in the same pass (same cross-pass cycle as
     # current-counts above).
-    GenerationStep("repository-classification", "classify_repositories.py", (), ("--check",), "Repository review queue"),
+    GenerationStep(
+        "repository-classification",
+        "classify_repositories.py",
+        (),
+        ("--check",),
+        "Repository review queue",
+    ),
     # DERIVED (always-run): in-place patcher — README.md, pages/*.md,
     # index.html, publications.html, and llms.txt are simultaneously the
     # surfaces it reads and the ones it rewrites, several hand-authored.
-    GenerationStep("scholar-metrics", "sync_scholar_metrics.py", (), ("--check",), "Snapshot-backed Scholar surfaces"),
-    GenerationStep("og-images", "generate_og_images.py", (), ("--check",), "Open Graph images", ("data/current-counts.json",)),
+    GenerationStep(
+        "scholar-metrics",
+        "sync_scholar_metrics.py",
+        (),
+        ("--check",),
+        "Snapshot-backed Scholar surfaces",
+    ),
+    GenerationStep(
+        "og-images",
+        "generate_og_images.py",
+        (),
+        ("--check",),
+        "Open Graph images",
+        ("data/current-counts.json",),
+    ),
     # Paper-folder presence (iterdir over papers/) is intentionally undeclared:
     # a new folder always arrives with bibliography/metadata edits, which this
     # input set already covers.
-    GenerationStep("agent-data", "export_agent_data.py", (), ("--check",), "Agent data exports", ("pages/SOFTWARE.md", "pages/BIBLIOGRAPHY.md", "data/works.json", "data/scholar-snapshot.json", "data/current-counts.json", "reports/public_source_snapshot_*.json"), index_inputs=("reports/**",)),
-    GenerationStep("resume", "build_resume.py", ("--all",), ("--check",), "Resume/CV exports", ("resume/source.json", "data/works.json", "data/software.json", "data/scholar-snapshot.json", "data/claims.json", "data/github-repositories.json")),
+    GenerationStep(
+        "agent-data",
+        "export_agent_data.py",
+        (),
+        ("--check",),
+        "Agent data exports",
+        (
+            "pages/SOFTWARE.md",
+            "pages/BIBLIOGRAPHY.md",
+            "data/works.json",
+            "data/scholar-snapshot.json",
+            "data/current-counts.json",
+            "reports/public_source_snapshot_*.json",
+        ),
+        index_inputs=("reports/**",),
+    ),
+    GenerationStep(
+        "resume",
+        "build_resume.py",
+        ("--all",),
+        ("--check",),
+        "Resume/CV exports",
+        (
+            "resume/source.json",
+            "data/works.json",
+            "data/software.json",
+            "data/scholar-snapshot.json",
+            "data/claims.json",
+            "data/github-repositories.json",
+        ),
+    ),
     # DERIVED (always-run): reads data/work-enrichment.json, which work-pages
     # rewrites later in the same pass (documented fixed-point two-pass
     # design); gating on the other inputs would mask enrichment refreshes
     # behind a skip.
-    GenerationStep("domain-pages", "build_domain_pages.py", (), ("--check",), "Domain landing pages"),
+    GenerationStep(
+        "domain-pages",
+        "build_domain_pages.py",
+        (),
+        ("--check",),
+        "Domain landing pages",
+    ),
     # DERIVED (always-run): renders entirely from in-script curated templates;
     # consumes no repository files.
-    GenerationStep("pillar-pages", "generate_pillar_pages.py", (), ("--check",), "Shared-rendered pillar pages", ("data/works.json", "code/src/pillar_content.py", "code/src/content_citations.py")),
-    GenerationStep("paper-documents", "regenerate_docs.py", ("--apply",), ("--check",), "Manifest-owned paper documentation", ("pages/BIBLIOGRAPHY.md", "data/work-authors.json", "data/work-identifiers.json", "papers/paper_metadata.json", "papers/*/metadata.json", "papers/generated-documents.json", "code/src/abstract_text.py")),
+    GenerationStep(
+        "pillar-pages",
+        "generate_pillar_pages.py",
+        (),
+        ("--check",),
+        "Shared-rendered pillar pages",
+        (
+            "data/works.json",
+            "code/src/pillar_content.py",
+            "code/src/content_citations.py",
+        ),
+    ),
+    GenerationStep(
+        "paper-documents",
+        "regenerate_docs.py",
+        ("--apply",),
+        ("--check",),
+        "Manifest-owned paper documentation",
+        (
+            "pages/BIBLIOGRAPHY.md",
+            "data/work-authors.json",
+            "data/work-identifiers.json",
+            "papers/paper_metadata.json",
+            "papers/*/metadata.json",
+            "papers/generated-documents.json",
+            "code/src/abstract_text.py",
+        ),
+    ),
     # DERIVED (always-run): in-place patcher — rewrites each CITATION.cff's
     # DOI roles while preserving hand-maintained non-DOI fields read from the
     # same file it writes.
-    GenerationStep("citation-cff", "generate_citation_cff.py", ("--apply",), ("--check",), "Canonical/artifact DOI roles in paper CFF files"),
+    GenerationStep(
+        "citation-cff",
+        "generate_citation_cff.py",
+        ("--apply",),
+        ("--check",),
+        "Canonical/artifact DOI roles in paper CFF files",
+    ),
     # Paper-document rendering can create the README/AGENTS/SKILL files that
     # bibliography exports classify. Re-export before public work pages so a
     # first clean run reaches a fixed point instead of requiring a second pass.
-    GenerationStep("export-bibliography-final", "export_bibliography.py", (), ("--check",), "Bibliography exports after paper documents", ("pages/BIBLIOGRAPHY.md", "data/work-identifiers.json", "papers/*/README.md", "papers/*/AGENTS.md", "papers/*/SKILL.md", "papers/*/full_text.md", "papers/*/images/*")),
-    # Final pass adds the paper-documents outputs and current-counts so the
-    # fixed point (folder flags + "as of" month) is reached in one pass.
-    GenerationStep("sync-publications-final", "sync_publications_html.py", ("--apply",), ("--check",), "Publication HTML and JSON-LD after paper documents", ("pages/BIBLIOGRAPHY.md", "data/work-identifiers.json", "data/work-authors.json", "code/src/author_entities.py", "code/templates/publications.html.tmpl", "data/current-counts.json", "papers/*/README.md", "papers/*/AGENTS.md", "papers/*/SKILL.md", "papers/*/full_text.md", "papers/*/images/*", "code/orchestrators/export_bibliography.py", "code/orchestrators/build_work_pages.py")),
     GenerationStep(
-        "work-pages", "build_work_pages.py", (), ("--check",), "Per-work landing pages",
+        "export-bibliography-final",
+        "export_bibliography.py",
+        (),
+        ("--check",),
+        "Bibliography exports after paper documents",
         (
-            "data/works.json", "data/work-authors.json", "data/publishing-status.json", "bibliography.bib",
-            "papers/paper_metadata.json", "papers/*/metadata.json",
-            "papers/*/README.md", "papers/*/AGENTS.md", "papers/*/SKILL.md",
-            "papers/*/CITATION.cff", "papers/*/full_text.md",
-            "papers/*/*.[pP][dD][fF]", "papers/*/images/*", ".gitignore",
-            "code/orchestrators/build_work_pages.py", "code/src/paper_artifacts.py", "code/src/publication_revisions.py", "code/src/archive_projection.py", "data/pages-archive-documents.json",
-            "code/src/metadata_templates.py", "code/src/site_nav.py", "code/src/abstract_text.py",
+            "pages/BIBLIOGRAPHY.md",
+            "data/work-identifiers.json",
+            "papers/*/README.md",
+            "papers/*/AGENTS.md",
+            "papers/*/SKILL.md",
+            "papers/*/full_text.md",
+            "papers/*/images/*",
         ),
     ),
-    GenerationStep("video-pages", "build_video_pages.py", (), ("--check",), "Video landing pages and exports", ("data/works.json", "data/work-enrichment.json", "data/video-transcripts/*.txt", "code/data/youtube_*.json")),
-    GenerationStep("research-tools", "build_research_tools.py", (), ("--check",), "Reading lists, curated trails, metadata map and probability laboratory", ("data/works.json", "data/videos.json", "data/software.json", "data/research-trails-source.json", "bibliography.bib", "papers/*/metadata.json", "code/orchestrators/build_work_pages.py", "code/orchestrators/export_bibliography.py")),
+    # Final pass adds the paper-documents outputs and current-counts so the
+    # fixed point (folder flags + "as of" month) is reached in one pass.
+    GenerationStep(
+        "sync-publications-final",
+        "sync_publications_html.py",
+        ("--apply",),
+        ("--check",),
+        "Publication HTML and JSON-LD after paper documents",
+        (
+            "pages/BIBLIOGRAPHY.md",
+            "data/work-identifiers.json",
+            "data/work-authors.json",
+            "code/src/author_entities.py",
+            "code/templates/publications.html.tmpl",
+            "data/current-counts.json",
+            "papers/*/README.md",
+            "papers/*/AGENTS.md",
+            "papers/*/SKILL.md",
+            "papers/*/full_text.md",
+            "papers/*/images/*",
+            "code/orchestrators/export_bibliography.py",
+            "code/orchestrators/build_work_pages.py",
+        ),
+    ),
+    GenerationStep(
+        "work-pages",
+        "build_work_pages.py",
+        (),
+        ("--check",),
+        "Per-work landing pages",
+        (
+            "data/works.json",
+            "data/work-authors.json",
+            "data/publishing-status.json",
+            "bibliography.bib",
+            "papers/paper_metadata.json",
+            "papers/*/metadata.json",
+            "papers/*/README.md",
+            "papers/*/AGENTS.md",
+            "papers/*/SKILL.md",
+            "papers/*/CITATION.cff",
+            "papers/*/full_text.md",
+            "papers/*/*.[pP][dD][fF]",
+            "papers/*/images/*",
+            ".gitignore",
+            "code/orchestrators/build_work_pages.py",
+            "code/src/paper_artifacts.py",
+            "code/src/publication_revisions.py",
+            "code/src/archive_projection.py",
+            "data/pages-archive-documents.json",
+            "code/src/metadata_templates.py",
+            "code/src/site_nav.py",
+            "code/src/abstract_text.py",
+        ),
+    ),
+    GenerationStep(
+        "video-pages",
+        "build_video_pages.py",
+        (),
+        ("--check",),
+        "Video landing pages and exports",
+        (
+            "data/works.json",
+            "data/work-enrichment.json",
+            "data/video-transcripts/*.txt",
+            "code/data/youtube_*.json",
+        ),
+    ),
+    GenerationStep(
+        "research-tools",
+        "build_research_tools.py",
+        (),
+        ("--check",),
+        "Reading lists, curated trails, metadata map and probability laboratory",
+        (
+            "data/works.json",
+            "data/videos.json",
+            "data/software.json",
+            "data/research-trails-source.json",
+            "bibliography.bib",
+            "papers/*/metadata.json",
+            "code/orchestrators/build_work_pages.py",
+            "code/orchestrators/export_bibliography.py",
+        ),
+    ),
     # Artwork pages consume the (freshness-updated) Flickr export and the
     # curated ART_COLLECTIONS.md table; they run before the SEO/security
     # normalizer and the accessibility/asset audits so the emitted pages are
     # normalized and audited in the same pass.
-    GenerationStep("artwork-pages", "build_artwork_pages.py", (), ("--check",), "Per-artwork landing pages and curated collections", ("data/artworks.json", "pages/ART_COLLECTIONS.md")),
+    GenerationStep(
+        "artwork-pages",
+        "build_artwork_pages.py",
+        (),
+        ("--check",),
+        "Per-artwork landing pages and curated collections",
+        ("data/artworks.json", "pages/ART_COLLECTIONS.md"),
+    ),
     # DERIVED (always-run): in-place patcher — rewrites the marker-delimited
     # SSR tile block inside hand-authored art.html (its read scope is the
     # artwork export, its write scope is exactly the marker block).
-    GenerationStep("art-gallery-sync", "sync_art_gallery.py", (), ("--check",), "art.html SSR gallery floor"),
+    GenerationStep(
+        "art-gallery-sync",
+        "sync_art_gallery.py",
+        (),
+        ("--check",),
+        "art.html SSR gallery floor",
+    ),
     # DERIVED (always-run): in-place patcher — rewrites volatile counts,
     # dates, and latest-report pointers inside its own seven target surfaces
     # (index/publications/discovery/art/videos pages, DISCOVERY.md, llms.txt),
     # several of which are hand-authored shells.
-    GenerationStep("site-facts-first", "sync_site_facts.py", (), ("--check",), "Volatile public facts after content projections"),
+    GenerationStep(
+        "site-facts-first",
+        "sync_site_facts.py",
+        (),
+        ("--check",),
+        "Volatile public facts after content projections",
+    ),
     # DERIVED (always-run): start-here.html is hand-authored; the chain only
     # re-stamps its three generated counts (bibliography works, paper folders
     # and catalogued artworks; ``--sync-counts``, idempotent and date-free) so
     # a bibliography add, retirement or artwork resync no longer halts the
     # rebuild. The page is now written by the step, so it is not an input.
-    GenerationStep("start-here", "build_start_here.py", ("--sync-counts",), ("--check",), "Start Here curated reading paths page"),
     GenerationStep(
-        "paper-pages", "build_paper_pages.py", (), ("--check",), "Paper folder HTML pages",
+        "start-here",
+        "build_start_here.py",
+        ("--sync-counts",),
+        ("--check",),
+        "Start Here curated reading paths page",
+    ),
+    GenerationStep(
+        "paper-pages",
+        "build_paper_pages.py",
+        (),
+        ("--check",),
+        "Paper folder HTML pages",
         (
-            "data/works.json", "papers/paper_metadata.json", "papers/*/metadata.json",
-            "papers/*/README.md", "papers/*/AGENTS.md", "papers/*/SKILL.md",
-            "papers/*/CITATION.cff", "papers/*/full_text.md",
-            "papers/*/*.[pP][dD][fF]", "papers/*/images/*", ".gitignore",
-            "code/orchestrators/build_paper_pages.py", "code/src/paper_artifacts.py", "code/src/publication_revisions.py", "code/src/archive_projection.py", "data/pages-archive-documents.json",
-            "code/orchestrators/build_work_pages.py", "code/src/metadata_templates.py",
-            "code/src/site_nav.py", "code/src/abstract_text.py",
+            "data/works.json",
+            "papers/paper_metadata.json",
+            "papers/*/metadata.json",
+            "papers/*/README.md",
+            "papers/*/AGENTS.md",
+            "papers/*/SKILL.md",
+            "papers/*/CITATION.cff",
+            "papers/*/full_text.md",
+            "papers/*/*.[pP][dD][fF]",
+            "papers/*/images/*",
+            ".gitignore",
+            "code/orchestrators/build_paper_pages.py",
+            "code/src/paper_artifacts.py",
+            "code/src/publication_revisions.py",
+            "code/src/archive_projection.py",
+            "data/pages-archive-documents.json",
+            "code/orchestrators/build_work_pages.py",
+            "code/src/metadata_templates.py",
+            "code/src/site_nav.py",
+            "code/src/abstract_text.py",
         ),
     ),
     # DERIVED (always-run): renders from the centrally declared stub table in
     # code/src/redirect_stubs.py; consumes no repository files.
-    GenerationStep("redirect-stubs", "generate_redirect_stubs.py", ("--apply",), ("--check",), "Centrally rendered legacy redirects"),
+    GenerationStep(
+        "redirect-stubs",
+        "generate_redirect_stubs.py",
+        ("--apply",),
+        ("--check",),
+        "Centrally rendered legacy redirects",
+    ),
     # DERIVED (always-run): idempotent in-place CSP/referrer/rel="me"
     # normalization whose scan scope equals its write scope (every public
     # HTML file).
-    GenerationStep("seo-security", "deploy_seo_security.py", (), ("--check",), "Shared public head/security normalization"),
-    GenerationStep("exports-page", "build_exports_page.py", (), ("--check",), "Exports hub", ("data/works.json", "data/current-counts.json")),
-    GenerationStep("updates-page", "build_updates_page.py", (), ("--check",), "Updates page", ("CHANGELOG.md", "pages/THINKING_LOG.md")),
-    GenerationStep("evidence-page", "build_evidence_page.py", (), ("--check",), "Evidence page", ("data/claims.json", "data/current-counts.json", "reports/public_source_snapshot_*.json", "reports/public_source_inventory_*.json"), index_inputs=("reports/**",)),
-    GenerationStep("reproducibility", "build_reproducibility_ledger.py", (), ("--check",), "Reproducibility ledger", ("data/works.json", "data/software.json")),
+    GenerationStep(
+        "seo-security",
+        "deploy_seo_security.py",
+        (),
+        ("--check",),
+        "Shared public head/security normalization",
+    ),
+    GenerationStep(
+        "exports-page",
+        "build_exports_page.py",
+        (),
+        ("--check",),
+        "Exports hub",
+        ("data/works.json", "data/current-counts.json"),
+    ),
+    GenerationStep(
+        "updates-page",
+        "build_updates_page.py",
+        (),
+        ("--check",),
+        "Updates page",
+        ("CHANGELOG.md", "pages/THINKING_LOG.md"),
+    ),
+    GenerationStep(
+        "evidence-page",
+        "build_evidence_page.py",
+        (),
+        ("--check",),
+        "Evidence page",
+        (
+            "data/claims.json",
+            "data/current-counts.json",
+            "reports/public_source_snapshot_*.json",
+            "reports/public_source_inventory_*.json",
+        ),
+        index_inputs=("reports/**",),
+    ),
+    GenerationStep(
+        "reproducibility",
+        "build_reproducibility_ledger.py",
+        (),
+        ("--check",),
+        "Reproducibility ledger",
+        ("data/works.json", "data/software.json"),
+    ),
     # DERIVED (always-run): idempotent in-place Agent Map nav patch whose
     # scan scope equals its write scope (every public root HTML page).
-    GenerationStep("agent-navigation", "ensure_agent_navigation.py", (), ("--check",), "Visible Agent Map navigation"),
+    GenerationStep(
+        "agent-navigation",
+        "ensure_agent_navigation.py",
+        (),
+        ("--check",),
+        "Visible Agent Map navigation",
+    ),
     # Hash final work HTML only after all shared head/navigation normalizers.
-    GenerationStep("scholar-readiness", "build_scholar_readiness.py", (), ("--check",), "Offline Scholar prerequisite audit", ("data/works.json", "works/*.html", "papers/*/metadata.json", "papers/*/full_text.md", "papers/*/*.[pP][dD][fF]", ".gitignore")),
-    GenerationStep("reconciliation", "build_reconciliation_report.py", (), ("--check",), "Reconciliation report", ("data/works.json", "data/software.json", "data/claims.json", "reports/public_source_snapshot_*.json"), index_inputs=("reports/**",)),
-    GenerationStep("asset-audit-first", "audit_assets.py", (), ("--check",), "Asset-size report", ASSET_AUDIT_INPUTS, ASSET_AUDIT_INPUTS_EXCLUDE),
-    GenerationStep("accessibility-first", "accessibility_audit.py", (), ("--check",), "Static accessibility report", ("**/*.html", "code/orchestrators/deploy_seo_security.py")),
+    GenerationStep(
+        "scholar-readiness",
+        "build_scholar_readiness.py",
+        (),
+        ("--check",),
+        "Offline Scholar prerequisite audit",
+        (
+            "data/works.json",
+            "works/*.html",
+            "papers/*/metadata.json",
+            "papers/*/full_text.md",
+            "papers/*/*.[pP][dD][fF]",
+            ".gitignore",
+        ),
+    ),
+    GenerationStep(
+        "reconciliation",
+        "build_reconciliation_report.py",
+        (),
+        ("--check",),
+        "Reconciliation report",
+        (
+            "data/works.json",
+            "data/software.json",
+            "data/claims.json",
+            "reports/public_source_snapshot_*.json",
+        ),
+        index_inputs=("reports/**",),
+    ),
+    GenerationStep(
+        "asset-audit-first",
+        "audit_assets.py",
+        (),
+        ("--check",),
+        "Asset-size report",
+        ASSET_AUDIT_INPUTS,
+        ASSET_AUDIT_INPUTS_EXCLUDE,
+    ),
+    GenerationStep(
+        "accessibility-first",
+        "accessibility_audit.py",
+        (),
+        ("--check",),
+        "Static accessibility report",
+        ("**/*.html", "code/orchestrators/deploy_seo_security.py"),
+    ),
     # Renders the DataCatalog payload from dataset counts, the per-paper
     # extraction footprint, and latest-report path resolution. Outputs
     # data/catalog.json + catalog.html are release PAYLOAD:
@@ -217,77 +598,364 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # families are declared for path resolution; because pointer resolution
     # also depends on Git index membership; index_inputs invalidates a cached
     # render when an existing on-disk receipt is staged or untracked.
-    GenerationStep("catalog", "build_catalog.py", (), ("--check",), "Public data catalog", ("data/collection-catalog.json", "data/research-map.json", "data/research-trails.json", "data/works.json", "data/software.json", "data/videos.json", "data/scholar-readiness.json", "papers/*/full_text.md", "papers/*/images/*", "reports/public_source_inventory_*.json", "reports/public_source_snapshot_*.json", "reports/external_links_[0-9]*.json", "reports/external_links_triage_*.json", "reports/asset_size_*.json", "reports/live_site_verification_*.json", "reports/browser-smoke/*/manifest.json", "reports/browser-qa/*/manifest.json"), index_inputs=("reports/**",)),
-    GenerationStep("asset-audit-final", "audit_assets.py", (), ("--check",), "Final asset-size report after catalog", ASSET_AUDIT_INPUTS, ASSET_AUDIT_INPUTS_EXCLUDE),
-    GenerationStep("accessibility-final", "accessibility_audit.py", (), ("--check",), "Final accessibility report after catalog", ("**/*.html", "code/orchestrators/deploy_seo_security.py")),
+    GenerationStep(
+        "catalog",
+        "build_catalog.py",
+        (),
+        ("--check",),
+        "Public data catalog",
+        (
+            "data/collection-catalog.json",
+            "data/research-map.json",
+            "data/research-trails.json",
+            "data/works.json",
+            "data/software.json",
+            "data/videos.json",
+            "data/scholar-readiness.json",
+            "papers/*/full_text.md",
+            "papers/*/images/*",
+            "reports/public_source_inventory_*.json",
+            "reports/public_source_snapshot_*.json",
+            "reports/external_links_[0-9]*.json",
+            "reports/external_links_triage_*.json",
+            "reports/asset_size_*.json",
+            "reports/live_site_verification_*.json",
+            "reports/browser-smoke/*/manifest.json",
+            "reports/browser-qa/*/manifest.json",
+        ),
+        index_inputs=("reports/**",),
+    ),
+    GenerationStep(
+        "asset-audit-final",
+        "audit_assets.py",
+        (),
+        ("--check",),
+        "Final asset-size report after catalog",
+        ASSET_AUDIT_INPUTS,
+        ASSET_AUDIT_INPUTS_EXCLUDE,
+    ),
+    GenerationStep(
+        "accessibility-final",
+        "accessibility_audit.py",
+        (),
+        ("--check",),
+        "Final accessibility report after catalog",
+        ("**/*.html", "code/orchestrators/deploy_seo_security.py"),
+    ),
     # DERIVED (always-run): in-place patcher (same class as
     # site-facts-first); this second pass re-binds pointers to the reports
     # written since the first pass (reconciliation, asset/accessibility finals).
-    GenerationStep("site-facts-final", "sync_site_facts.py", (), ("--check",), "Final fact links to latest reports"),
+    GenerationStep(
+        "site-facts-final",
+        "sync_site_facts.py",
+        (),
+        ("--check",),
+        "Final fact links to latest reports",
+    ),
     # After the last README rewrite, so the mirror GitHub renders on the repo
     # page carries the final counts and links that resolve from .github/.
-    GenerationStep("github-readme", "build_github_readme.py", (), ("--check",), "GitHub-rendered README mirror", ("README.md",)),
+    GenerationStep(
+        "github-readme",
+        "build_github_readme.py",
+        (),
+        ("--check",),
+        "GitHub-rendered README mirror",
+        ("README.md",),
+    ),
     # Renders the site index from the dataset exports, per-paper extraction
     # presence/counts, and latest-report URL resolution. Outputs
-    GenerationStep("search-index", "build_search_index.py", (), ("--check",), "Site search index", ("data/works.json", "data/work-enrichment.json", "data/artworks.json", "data/software.json", "data/github-repositories.json", "data/videos.json", "data/people.json", "data/organizations.json", "data/claims.json", "data/resume.json", "papers/*/full_text.md", "papers/*/images/*", "reports/reconciliation_*.md", "reports/public_source_inventory_*.json", "reports/accessibility_static_*.json", "reports/external_links_[0-9]*.json", "reports/external_links_triage_*.md", "reports/asset_size_*.json", "reports/live_site_verification_*.json", "reports/visual-qa/*/manifest.json", "reports/browser-smoke/*/manifest.json"), index_inputs=("reports/**",)),
+    GenerationStep(
+        "search-index",
+        "build_search_index.py",
+        (),
+        ("--check",),
+        "Site search index",
+        (
+            "data/works.json",
+            "data/work-enrichment.json",
+            "data/artworks.json",
+            "data/software.json",
+            "data/github-repositories.json",
+            "data/videos.json",
+            "data/people.json",
+            "data/organizations.json",
+            "data/claims.json",
+            "data/resume.json",
+            "papers/*/full_text.md",
+            "papers/*/images/*",
+            "reports/reconciliation_*.md",
+            "reports/public_source_inventory_*.json",
+            "reports/accessibility_static_*.json",
+            "reports/external_links_[0-9]*.json",
+            "reports/external_links_triage_*.md",
+            "reports/asset_size_*.json",
+            "reports/live_site_verification_*.json",
+            "reports/visual-qa/*/manifest.json",
+            "reports/browser-smoke/*/manifest.json",
+        ),
+        index_inputs=("reports/**",),
+    ),
     # PAYLOAD: release_controls.is_control_path is False for all of them.
     # Pointer families carry the same index-membership dependency as catalog.
-    GenerationStep("feed", "generate_feed.py", (), ("--check",), "RSS feed", ("data/works.json", "data/site-updates.json")),
-    GenerationStep("domain-feeds", "build_domain_feeds.py", (), ("--check",), "Per-domain RSS feeds", ("data/works.json", "data/videos.json", "code/orchestrators/build_domain_pages.py")),
+    GenerationStep(
+        "feed",
+        "generate_feed.py",
+        (),
+        ("--check",),
+        "RSS feed",
+        ("data/works.json", "data/site-updates.json"),
+    ),
+    GenerationStep(
+        "domain-feeds",
+        "build_domain_feeds.py",
+        (),
+        ("--check",),
+        "Per-domain RSS feeds",
+        (
+            "data/works.json",
+            "data/videos.json",
+            "code/orchestrators/build_domain_pages.py",
+        ),
+    ),
     # DERIVED (always-run): <lastmod> derives from git commit dates, which no
     # drift, so a skip would silently strand the runbook's post-commit
     # sitemap re-render.
     GenerationStep("sitemap", "build_sitemap.py", (), ("--check",), "Sitemap"),
     # DERIVED (always-run): renders from the shared nav manifest in
     # code/src/site_nav.py; consumes no repository data files.
-    GenerationStep("404-page", "build_404_page.py", (), ("--check",), "GitHub Pages 404 page"),
-    GenerationStep("artwork-index", "build_artwork_index.py", (), ("--check",), "Compact artwork index", ("data/artworks.json",)),
+    GenerationStep(
+        "404-page", "build_404_page.py", (), ("--check",), "GitHub Pages 404 page"
+    ),
+    GenerationStep(
+        "artwork-index",
+        "build_artwork_index.py",
+        (),
+        ("--check",),
+        "Compact artwork index",
+        ("data/artworks.json",),
+    ),
     # DERIVED (always-run): projects the whole tracked tree into the Pages
     # artifact — no bounded input glob exists for its source set.
-    GenerationStep("pages-artifact", "build_pages_artifact.py", ("--write-manifest", "--allow-dirty-prepayload-evidence", "--check-size-only"), ("--check-size-only", "--check-manifest"), "Pages artifact manifest and budget"),
+    GenerationStep(
+        "pages-artifact",
+        "build_pages_artifact.py",
+        ("--write-manifest", "--allow-dirty-prepayload-evidence", "--check-size-only"),
+        ("--check-size-only", "--check-manifest"),
+        "Pages artifact manifest and budget",
+    ),
     # DERIVED (always-run): renders GENERATED.md + data/generated-manifest.json
     # from the in-script ARTIFACTS/UTILITIES tables; consumes no repo files.
-    GenerationStep("generated-manifest-first", "build_generated_manifest.py", (), ("--check",), "Generated artifact matrix before agent index"),
-    GenerationStep("agent-index", "build_agent_index.py", (), ("--check",), "Agent route manifest", ("data/collection-catalog.json", "data/research-map.json", "data/research-trails.json", "data/blake-index.json", "data/work-identifiers.json", "data/current-counts.json", "data/artworks.json", "data/artworks-index.json", "data/videos.json", "data/videos-index.json", "data/works.json", "data/software.json", "data/github-repositories.json", "data/claims.json", "data/scholar-verification-receipt.json", "search-index.json", "data/coverage-exceptions.json", "data/repository-classification.json", "data/people.json", "data/organizations.json", "data/work-enrichment.json", "data/catalog.json", "data/reconciliation.json", "data/reproducibility.json", "data/generated-manifest.json", "data/pages-artifact-manifest.json", "reports/live_site_verification_*.json"), index_inputs=("reports/**",)),
+    GenerationStep(
+        "generated-manifest-first",
+        "build_generated_manifest.py",
+        (),
+        ("--check",),
+        "Generated artifact matrix before agent index",
+    ),
+    GenerationStep(
+        "agent-index",
+        "build_agent_index.py",
+        (),
+        ("--check",),
+        "Agent route manifest",
+        (
+            "data/collection-catalog.json",
+            "data/research-map.json",
+            "data/research-trails.json",
+            "data/blake-index.json",
+            "data/work-identifiers.json",
+            "data/current-counts.json",
+            "data/artworks.json",
+            "data/artworks-index.json",
+            "data/videos.json",
+            "data/videos-index.json",
+            "data/works.json",
+            "data/software.json",
+            "data/github-repositories.json",
+            "data/claims.json",
+            "data/scholar-verification-receipt.json",
+            "search-index.json",
+            "data/coverage-exceptions.json",
+            "data/repository-classification.json",
+            "data/people.json",
+            "data/organizations.json",
+            "data/work-enrichment.json",
+            "data/catalog.json",
+            "data/reconciliation.json",
+            "data/reproducibility.json",
+            "data/generated-manifest.json",
+            "data/pages-artifact-manifest.json",
+            "reports/live_site_verification_*.json",
+        ),
+        index_inputs=("reports/**",),
+    ),
     # DERIVED (always-run): the envelope binds git deployment state (source
     # commit, worktree-vs-deployed diff) and generator-script hashes that no
     # content fingerprint captures; skipping could mint a stale-looking
     # integrity envelope.
-    GenerationStep("release-integrity", "build_release_integrity.py", (), ("--check",), "Pre-deploy integrity envelope"),
-    GenerationStep("generated-manifest-final", "build_generated_manifest.py", (), ("--check",), "Final generated artifact matrix"),
+    GenerationStep(
+        "release-integrity",
+        "build_release_integrity.py",
+        (),
+        ("--check",),
+        "Pre-deploy integrity envelope",
+    ),
+    GenerationStep(
+        "generated-manifest-final",
+        "build_generated_manifest.py",
+        (),
+        ("--check",),
+        "Final generated artifact matrix",
+    ),
 )
 
 
 EXCLUDED_OPERATIONS: tuple[ExcludedOperation, ...] = (
-    ExcludedOperation("audit_content_citations.py", "audit/network", "Read-only public content checks; optional reports and live external-link probes are deliberate audit operations."),
-    ExcludedOperation("profile_backend.py", "diagnostic/read-only", "Bounded Python 3.15 timing and tracing diagnostics write only new external JSON reports; they never certify release state."),
-    ExcludedOperation("review_citation_metadata.py", "network/manual-review", "Bounded Crossref citation proposals require review; the tool never applies source changes."),
-    ExcludedOperation("verify_deployed_artifact.py", "network/post-deploy", "SHA-bound technical acceptance of deployed routes and PDF artifacts; distinct from the human-reviewed full release attestation."),
-    ExcludedOperation("add_zenodo_only.py", "network/source-authoring/binary-intake/manual-review", "Zenodo intake can create bibliography rows, paper folders, and downloaded binaries."),
-    ExcludedOperation("audit_private_reconciliation.py", "manual-review", "Private/public comparison writes a dated decision receipt and must remain an explicit reconciliation action."),
-    ExcludedOperation("build_external_link_triage.py", "network-derived/review", "Triage derives a review queue from an explicitly refreshed external-link report."),
-    ExcludedOperation("build_public_source_review.py", "network-derived/manual-review", "Review records applied, deferred, and rejected findings without automatically changing curated source."),
-    ExcludedOperation("check_zenodo_uncatalogued.py", "network/manual-review", "Live Zenodo discovery produces curation candidates requiring review."),
-    ExcludedOperation("extract_paper_texts.py", "binary-intake/manual-review", "PDF extraction and image intake are explicitly deferred binary operations."),
-    ExcludedOperation("fetch_video_transcripts.py", "network/cache-refresh", "Caption intake is a deliberate network cache refresh."),
-    ExcludedOperation("fetch_work_authors.py", "network/manual-review", "DOI-agency author enrichment can alter curated bibliography source after review."),
-    ExcludedOperation("fetch_youtube_data.py", "network/cache-refresh/manual-review", "YouTube cache refresh is intentionally outside local regeneration and fails closed on incomplete tabs."),
-    ExcludedOperation("gsc_followup_preflight.py", "network/manual-review", "Search Console follow-up requires a signed-in human action."),
-    ExcludedOperation("reconcile_paper_dois.py", "manual-review/source-reconciliation", "DOI role changes require an approval-bound source reconciliation receipt."),
-    ExcludedOperation("record_scholar_observation.py", "source-authoring/manual-review", "An operator-attested direct authenticated Scholar observation cannot be derived locally, so recording it (snapshot history plus the SHA-256-bound receipt) stays an explicit action; sync_scholar_metrics.py remains the deterministic propagator."),
-    ExcludedOperation("refresh_public_sources.py", "network", "Public API evidence requires explicit review before curated claims change."),
-    ExcludedOperation("refresh_public_source_inventory.py", "network", "Public inventory fetch writes dated evidence and may expose review candidates."),
-    ExcludedOperation("build_github_inventory.py", "network", "GitHub inventory refresh is an explicit freshness operation."),
-    ExcludedOperation("sync_paired_publications.py", "network/manual-review", "Ambiguous DOI/release pairings must not be auto-promoted."),
-    ExcludedOperation("check_external_links.py", "network", "External link probing is a deliberate cached-evidence refresh."),
-    ExcludedOperation("browser_smoke.py", "browser", "Browser evidence is refreshed deliberately against the candidate revision."),
-    ExcludedOperation("browser_qa.py", "browser", "Interaction and accessibility evidence requires the browser runtime."),
-    ExcludedOperation("visual_qa.py", "browser/manual-review", "Screenshots require human visual review."),
-    ExcludedOperation("verify_live_site.py", "network/post-deploy", "Live-site verification must observe the deployed SHA."),
-    ExcludedOperation("attest_release.py", "post-deploy", "Release attestation is only valid after deployment and live verification."),
-    ExcludedOperation("build_work_pages.py --prune-owned", "destructive/manual-review", "Only an explicit manual invocation may remove renderer-owned orphan work pages; hand-authored pages are preserved."),
-    ExcludedOperation("prune_old_reports.py", "destructive/manual-review", "Deletion requires reviewed provenance records in data/report-retention.json."),
-    ExcludedOperation("sync_flickr_artworks.py", "network/freshness", "Flickr artwork export refresh is a deliberate network freshness step (docs/operations/publication-sync.md); rebuilds consume its output."),
+    ExcludedOperation(
+        "audit_content_citations.py",
+        "audit/network",
+        "Read-only public content checks; optional reports and live external-link probes are deliberate audit operations.",
+    ),
+    ExcludedOperation(
+        "profile_backend.py",
+        "diagnostic/read-only",
+        "Bounded Python 3.15 timing and tracing diagnostics write only new external JSON reports; they never certify release state.",
+    ),
+    ExcludedOperation(
+        "review_citation_metadata.py",
+        "network/manual-review",
+        "Bounded Crossref citation proposals require review; the tool never applies source changes.",
+    ),
+    ExcludedOperation(
+        "verify_deployed_artifact.py",
+        "network/post-deploy",
+        "SHA-bound technical acceptance of deployed routes and PDF artifacts; distinct from the human-reviewed full release attestation.",
+    ),
+    ExcludedOperation(
+        "add_zenodo_only.py",
+        "network/source-authoring/binary-intake/manual-review",
+        "Zenodo intake can create bibliography rows, paper folders, and downloaded binaries.",
+    ),
+    ExcludedOperation(
+        "audit_private_reconciliation.py",
+        "manual-review",
+        "Private/public comparison writes a dated decision receipt and must remain an explicit reconciliation action.",
+    ),
+    ExcludedOperation(
+        "build_external_link_triage.py",
+        "network-derived/review",
+        "Triage derives a review queue from an explicitly refreshed external-link report.",
+    ),
+    ExcludedOperation(
+        "build_public_source_review.py",
+        "network-derived/manual-review",
+        "Review records applied, deferred, and rejected findings without automatically changing curated source.",
+    ),
+    ExcludedOperation(
+        "check_zenodo_uncatalogued.py",
+        "network/manual-review",
+        "Live Zenodo discovery produces curation candidates requiring review.",
+    ),
+    ExcludedOperation(
+        "extract_paper_texts.py",
+        "binary-intake/manual-review",
+        "PDF extraction and image intake are explicitly deferred binary operations.",
+    ),
+    ExcludedOperation(
+        "fetch_video_transcripts.py",
+        "network/cache-refresh",
+        "Caption intake is a deliberate network cache refresh.",
+    ),
+    ExcludedOperation(
+        "fetch_work_authors.py",
+        "network/manual-review",
+        "DOI-agency author enrichment can alter curated bibliography source after review.",
+    ),
+    ExcludedOperation(
+        "fetch_youtube_data.py",
+        "network/cache-refresh/manual-review",
+        "YouTube cache refresh is intentionally outside local regeneration and fails closed on incomplete tabs.",
+    ),
+    ExcludedOperation(
+        "gsc_followup_preflight.py",
+        "network/manual-review",
+        "Search Console follow-up requires a signed-in human action.",
+    ),
+    ExcludedOperation(
+        "reconcile_paper_dois.py",
+        "manual-review/source-reconciliation",
+        "DOI role changes require an approval-bound source reconciliation receipt.",
+    ),
+    ExcludedOperation(
+        "record_scholar_observation.py",
+        "source-authoring/manual-review",
+        "An operator-attested direct authenticated Scholar observation cannot be derived locally, so recording it (snapshot history plus the SHA-256-bound receipt) stays an explicit action; sync_scholar_metrics.py remains the deterministic propagator.",
+    ),
+    ExcludedOperation(
+        "refresh_public_sources.py",
+        "network",
+        "Public API evidence requires explicit review before curated claims change.",
+    ),
+    ExcludedOperation(
+        "refresh_public_source_inventory.py",
+        "network",
+        "Public inventory fetch writes dated evidence and may expose review candidates.",
+    ),
+    ExcludedOperation(
+        "build_github_inventory.py",
+        "network",
+        "GitHub inventory refresh is an explicit freshness operation.",
+    ),
+    ExcludedOperation(
+        "sync_paired_publications.py",
+        "network/manual-review",
+        "Ambiguous DOI/release pairings must not be auto-promoted.",
+    ),
+    ExcludedOperation(
+        "check_external_links.py",
+        "network",
+        "External link probing is a deliberate cached-evidence refresh.",
+    ),
+    ExcludedOperation(
+        "browser_smoke.py",
+        "browser",
+        "Browser evidence is refreshed deliberately against the candidate revision.",
+    ),
+    ExcludedOperation(
+        "browser_qa.py",
+        "browser",
+        "Interaction and accessibility evidence requires the browser runtime.",
+    ),
+    ExcludedOperation(
+        "visual_qa.py",
+        "browser/manual-review",
+        "Screenshots require human visual review.",
+    ),
+    ExcludedOperation(
+        "verify_live_site.py",
+        "network/post-deploy",
+        "Live-site verification must observe the deployed SHA.",
+    ),
+    ExcludedOperation(
+        "attest_release.py",
+        "post-deploy",
+        "Release attestation is only valid after deployment and live verification.",
+    ),
+    ExcludedOperation(
+        "build_work_pages.py --prune-owned",
+        "destructive/manual-review",
+        "Only an explicit manual invocation may remove renderer-owned orphan work pages; hand-authored pages are preserved.",
+    ),
+    ExcludedOperation(
+        "prune_old_reports.py",
+        "destructive/manual-review",
+        "Deletion requires reviewed provenance records in data/report-retention.json.",
+    ),
+    ExcludedOperation(
+        "sync_flickr_artworks.py",
+        "network/freshness",
+        "Flickr artwork export refresh is a deliberate network freshness step (docs/operations/publication-sync.md); rebuilds consume its output.",
+    ),
 )
 
 
@@ -346,16 +1014,24 @@ def coverage_errors(
     # An excluded *sub-operation* such as ``build_work_pages.py --prune-owned``
     # may coexist with the safe normal writer. Only an exact script-level
     # exclusion conflicts with a generation step.
-    exact_excluded_scripts = {entry.script for entry in exclusions if " " not in entry.script}
+    exact_excluded_scripts = {
+        entry.script for entry in exclusions if " " not in entry.script
+    }
     overlap = sorted(step_scripts & exact_excluded_scripts)
     if overlap:
         errors.append("writer both generated and excluded: " + ", ".join(overlap))
     for script in sorted(excluded_scripts):
         if not (orchestrators_dir / script).is_file():
-            errors.append(f"excluded operation references missing orchestrator {script}")
-    unclassified = sorted(discovered_writer_scripts(orchestrators_dir) - step_scripts - excluded_scripts)
+            errors.append(
+                f"excluded operation references missing orchestrator {script}"
+            )
+    unclassified = sorted(
+        discovered_writer_scripts(orchestrators_dir) - step_scripts - excluded_scripts
+    )
     if unclassified:
-        errors.append("unclassified write-capable orchestrators: " + ", ".join(unclassified))
+        errors.append(
+            "unclassified write-capable orchestrators: " + ", ".join(unclassified)
+        )
     return errors
 
 
@@ -401,10 +1077,16 @@ def effective_step_inputs(step: GenerationStep) -> tuple[str, ...]:
     """
     if not step.inputs:
         return ()
-    return tuple(dict.fromkeys((
-        *step.inputs, f"code/orchestrators/{step.script}", *SHARED_IMPLEMENTATION_INPUTS,
-        *RUNTIME_INPUTS,
-    )))
+    return tuple(
+        dict.fromkeys(
+            (
+                *step.inputs,
+                f"code/orchestrators/{step.script}",
+                *SHARED_IMPLEMENTATION_INPUTS,
+                *RUNTIME_INPUTS,
+            )
+        )
+    )
 
 
 def regeneration_state_path(repo_root: Path = REPO_ROOT) -> Path:
@@ -421,7 +1103,7 @@ def load_regeneration_state(repo_root: Path = REPO_ROOT) -> dict[str, str]:
     path = regeneration_state_path(repo_root)
     try:
         payload = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, ValueError):
+    except OSError, ValueError:
         return {}
     if not isinstance(payload, dict):
         return {}
@@ -430,7 +1112,9 @@ def load_regeneration_state(repo_root: Path = REPO_ROOT) -> dict[str, str]:
     if type(version) is not int or version != REGENERATION_STATE_SCHEMA_VERSION:
         return {}
     if not isinstance(entries, dict) or any(
-        not isinstance(key, str) or not key or not isinstance(value, str)
+        not isinstance(key, str)
+        or not key
+        or not isinstance(value, str)
         or re.fullmatch(r"[0-9a-f]{64}", value) is None
         for key, value in entries.items()
     ):
@@ -449,8 +1133,12 @@ def save_regeneration_state(state: dict[str, str], repo_root: Path = REPO_ROOT) 
     temporary: Path | None = None
     try:
         with tempfile.NamedTemporaryFile(
-            mode="w", encoding="utf-8", dir=path.parent,
-            prefix=".regeneration-state-", suffix=".tmp", delete=False,
+            mode="w",
+            encoding="utf-8",
+            dir=path.parent,
+            prefix=".regeneration-state-",
+            suffix=".tmp",
+            delete=False,
         ) as handle:
             temporary = Path(handle.name)
             handle.write(json.dumps(payload, indent=2, sort_keys=True) + "\n")
@@ -484,7 +1172,9 @@ def input_fingerprint(
     for pattern in patterns:
         matches = []
         for path in sorted(repo_root.glob(pattern)):
-            if not path.is_file() or _FINGERPRINT_EXCLUDED_PARTS.intersection(path.parts):
+            if not path.is_file() or _FINGERPRINT_EXCLUDED_PARTS.intersection(
+                path.parts
+            ):
                 continue
             relative = path.relative_to(repo_root).as_posix()
             if relative not in excluded:
@@ -534,15 +1224,20 @@ def step_input_fingerprint(
     repo_root: Path = REPO_ROOT,
 ) -> str | None:
     """Hash the same complete source contract for recording and skipping."""
-    content = input_fingerprint(repo_root, effective_step_inputs(step), step.inputs_exclude)
+    content = input_fingerprint(
+        repo_root, effective_step_inputs(step), step.inputs_exclude
+    )
     if content is None or not step.index_inputs:
         return content
     try:
         result = subprocess.run(
             ["git", "ls-files", "--cached", "-z", "--", *step.index_inputs],
-            cwd=repo_root, capture_output=True, check=False, timeout=15,
+            cwd=repo_root,
+            capture_output=True,
+            check=False,
+            timeout=15,
         )
-    except (OSError, subprocess.TimeoutExpired):
+    except OSError, subprocess.TimeoutExpired:
         return None
     if result.returncode:
         return None

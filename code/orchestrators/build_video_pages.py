@@ -5,6 +5,7 @@ Sources: cached YouTube channel payloads (`code/data/youtube_*.json`), the
 transcript cache (`data/video-transcripts/*.txt`), `data/works.json`, and
 `data/work-enrichment.json`.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -26,7 +27,9 @@ DATA_OUT = REPO_ROOT / "data" / "videos.json"
 INDEX_OUT = REPO_ROOT / "data" / "videos-index.json"
 PAGE_MANIFEST_OUT = REPO_ROOT / "data" / "video-pages-manifest.json"
 TRANSCRIPT_DIR = REPO_ROOT / "data" / "video-transcripts"
-VIDEO_PAGE_MARKER = "<!-- docxology:generated-video-page; ownership=video-pages-manifest -->"
+VIDEO_PAGE_MARKER = (
+    "<!-- docxology:generated-video-page; ownership=video-pages-manifest -->"
+)
 VIDEO_PAGE_MANIFEST_VERSION = "VideoPages.v1"
 
 from docxology_tools.generated_outputs import (  # noqa: E402
@@ -246,7 +249,11 @@ def thumbnail_url(video_id: str) -> str:
 
 def iso_date(upload_date: str) -> str:
     """Convert a YYYYMMDD upload_date to YYYY-MM-DD, or '' if malformed."""
-    if not isinstance(upload_date, str) or len(upload_date) != 8 or not upload_date.isdigit():
+    if (
+        not isinstance(upload_date, str)
+        or len(upload_date) != 8
+        or not upload_date.isdigit()
+    ):
         return ""
     return f"{upload_date[:4]}-{upload_date[4:6]}-{upload_date[6:8]}"
 
@@ -300,14 +307,22 @@ def infer_topics(video: dict) -> list[dict]:
         rule = TOPIC_RULES[0]
         topics.append({"label": rule.label, "url": rule.url, "query": rule.query})
     elif not topics:
-        topics.append({"label": "Research Video Archive", "url": "videos.html", "query": "research video"})
+        topics.append(
+            {
+                "label": "Research Video Archive",
+                "url": "videos.html",
+                "query": "research video",
+            }
+        )
     return topics[:5]
 
 
 def read_transcript(video_id: str) -> tuple[str, str]:
     txt_path = TRANSCRIPT_DIR / f"{video_id}.txt"
     if txt_path.is_file():
-        return txt_path.read_text(encoding="utf-8", errors="ignore").strip(), f"data/video-transcripts/{video_id}.txt"
+        return txt_path.read_text(
+            encoding="utf-8", errors="ignore"
+        ).strip(), f"data/video-transcripts/{video_id}.txt"
     return "", ""
 
 
@@ -339,7 +354,9 @@ def load_work_enrichments() -> dict[str, dict]:
     return json.loads(path.read_text(encoding="utf-8")).get("works", {})
 
 
-def related_works(video: dict, works: list[dict], enrichments: dict[str, dict]) -> list[dict]:
+def related_works(
+    video: dict, works: list[dict], enrichments: dict[str, dict]
+) -> list[dict]:
     video_tokens = token_set(
         " ".join(
             [
@@ -367,12 +384,18 @@ def related_works(video: dict, works: list[dict], enrichments: dict[str, dict]) 
         )
         work_tokens = token_set(work_text)
         score = len(video_tokens & work_tokens)
-        if video.get("channel") == "institute" and "active" in work_tokens and "inference" in work_tokens:
+        if (
+            video.get("channel") == "institute"
+            and "active" in work_tokens
+            and "inference" in work_tokens
+        ):
             score += 1
         if score <= 0:
             continue
         scored.append((score, work))
-    scored.sort(key=lambda pair: (-pair[0], pair[1].get("year", 0), pair[1].get("title", "")))
+    scored.sort(
+        key=lambda pair: (-pair[0], pair[1].get("year", 0), pair[1].get("title", ""))
+    )
     return [
         {
             "title": work["title"],
@@ -437,7 +460,9 @@ def build_records(generated_at: str | None = None) -> dict:
     }
     return {
         "generated_at": generated_at or generated_timestamp(),
-        "source_files": [str(path.relative_to(REPO_ROOT)) for path in CHANNEL_FILES.values()],
+        "source_files": [
+            str(path.relative_to(REPO_ROOT)) for path in CHANNEL_FILES.values()
+        ],
         "transcript_dir": "data/video-transcripts",
         "count": counts["total"],
         "channels": channel_snapshots,
@@ -455,7 +480,10 @@ def compact_index(payload: dict) -> dict:
     should not download detail-only fields on first paint.
     """
     fields = ("id", "title", "channel", "upload_date", "year", "duration", "view_count")
-    videos = [{field: video.get(field) for field in fields} for video in payload.get("videos", [])]
+    videos = [
+        {field: video.get(field) for field in fields}
+        for video in payload.get("videos", [])
+    ]
     return {
         "schema_version": "VideoIndex.v1",
         "generated_at": payload.get("generated_at"),
@@ -474,9 +502,13 @@ def related_pages(video: dict) -> list[dict]:
     pages = [
         {"label": "Interactive video timeline", "url": "/videos.html"},
     ]
-    if any(topic["label"] == "Computational Methods" for topic in video.get("topics", [])):
+    if any(
+        topic["label"] == "Computational Methods" for topic in video.get("topics", [])
+    ):
         pages.append({"label": "Software catalog", "url": "/software.html"})
-    pages.append({"label": "Site search", "url": f"/search.html?q={quote_plus(video['title'])}"})
+    pages.append(
+        {"label": "Site search", "url": f"/search.html?q={quote_plus(video['title'])}"}
+    )
     seen = {item["url"] for item in pages}
     for topic in video.get("topics", []):
         url = "/" + topic["url"] if not topic["url"].startswith("/") else topic["url"]
@@ -508,7 +540,7 @@ def title_for_page(video: dict, max_len: int = 65) -> str:
         p_last = short_parts[-1]
         p_mids = short_parts[1:-1]
         p0_short = re.sub(r"Textbook Group", "TBG", p0)
-        
+
         cand4 = f"{p0_short} ~ " + " ~ ".join(p_mids) + f" ~ {p_last}"
         if len(cand4) <= max_len:
             return cand4
@@ -518,7 +550,7 @@ def title_for_page(video: dict, max_len: int = 65) -> str:
             if re.search(r"\b(session|chapter|lecture|part|pt)\b", m, re.I):
                 key_mid = m
                 break
-        
+
         if key_mid:
             other_mids = [m for m in p_mids if m != key_mid]
             other_mid_str = f" ~ {other_mids[0]}" if other_mids else ""
@@ -527,13 +559,15 @@ def title_for_page(video: dict, max_len: int = 65) -> str:
                 return cand_key
             avail = max_len - len(f"{p0_short}{other_mid_str} ~ ")
             if avail >= 8:
-                cut_k = key_mid[:avail - 1].rsplit(" ", 1)[0].rstrip(" ,;:.–—-~\"'")
+                cut_k = key_mid[: avail - 1].rsplit(" ", 1)[0].rstrip(" ,;:.–—-~\"'")
                 return f"{p0_short}{other_mid_str} ~ {cut_k}…"
 
         p_mid_all = " ~ ".join(p_mids)
         avail_mid = max_len - len(p0) - len(p_last) - 6
         if avail_mid >= 8:
-            cut_mid = p_mid_all[:avail_mid - 1].rsplit(" ", 1)[0].rstrip(" ,;:.–—-~\"'")
+            cut_mid = (
+                p_mid_all[: avail_mid - 1].rsplit(" ", 1)[0].rstrip(" ,;:.–—-~\"'")
+            )
             return f"{p0} ~ {cut_mid}… ~ {p_last}"
         elif len(p0) + len(p_last) + 3 <= max_len:
             return f"{p0} ~ {p_last}"
@@ -543,14 +577,14 @@ def title_for_page(video: dict, max_len: int = 65) -> str:
         p_rest = parts[1]
         avail_rest = max_len - len(p0) - 3
         if avail_rest >= 15:
-            cut = p_rest[:avail_rest - 1].rsplit(" ", 1)[0].rstrip(" ,;:.–—-~\"'")
+            cut = p_rest[: avail_rest - 1].rsplit(" ", 1)[0].rstrip(" ,;:.–—-~\"'")
             if not cut:
-                cut = p_rest[:avail_rest - 1]
+                cut = p_rest[: avail_rest - 1]
             cand = f"{p0} ~ {cut}…"
             if len(cand) <= max_len:
                 return cand
         elif avail_rest >= 5:
-            cut = p_rest[:avail_rest - 1].rstrip(" ,;:.–—-~\"'")
+            cut = p_rest[: avail_rest - 1].rstrip(" ,;:.–—-~\"'")
             cand = f"{p0} ~ {cut}…"
             if len(cand) <= max_len:
                 return cand
@@ -562,7 +596,7 @@ def title_for_page(video: dict, max_len: int = 65) -> str:
     tail = title[-tail_len:].split(" ", 1)[-1].lstrip(" ,;:.–—-~")
     cand = f"{head}…{tail}"
     if len(cand) > max_len:
-        cand = cand[:max_len-1] + "…"
+        cand = cand[: max_len - 1] + "…"
     return cand
 
 
@@ -601,7 +635,11 @@ def video_json_ld(video: dict, transcript: str) -> str:
     }
     if transcript:
         payload["transcript"] = clip_description(transcript, 5000)
-    return json.dumps({key: value for key, value in payload.items() if value}, indent=4, ensure_ascii=False)
+    return json.dumps(
+        {key: value for key, value in payload.items() if value},
+        indent=4,
+        ensure_ascii=False,
+    )
 
 
 def transcript_html(transcript: str, video: dict) -> str:
@@ -631,18 +669,24 @@ def render_video_page(video: dict, *, transcript: str | None = None) -> str:
     title = title_for_page(video)
     description = description_for_video(video)
     topics = "\n".join(
-        f'<a class="pill" href="../{h(topic["url"])}">{h(topic["label"])}</a>' for topic in video.get("topics", [])
+        f'<a class="pill" href="../{h(topic["url"])}">{h(topic["label"])}</a>'
+        for topic in video.get("topics", [])
     )
     related_pages = "\n".join(
-        f'<li><a href="..{h(page["url"])}">{h(page["label"])}</a></li>' for page in video.get("related_pages", [])
+        f'<li><a href="..{h(page["url"])}">{h(page["label"])}</a></li>'
+        for page in video.get("related_pages", [])
     )
-    related_works = "\n".join(
-        f'<li><a href="..{h(work["url"])}">{h(work["title"])}</a><span class="muted"> - {h(work["year"])} - {h(work["domain"])}</span></li>'
-        for work in video.get("related_works", [])
-    ) or '<li class="muted">No direct work match inferred from the current title metadata.</li>'
+    related_works = (
+        "\n".join(
+            f'<li><a href="..{h(work["url"])}">{h(work["title"])}</a><span class="muted"> - {h(work["year"])} - {h(work["domain"])}</span></li>'
+            for work in video.get("related_works", [])
+        )
+        or '<li class="muted">No direct work match inferred from the current title metadata.</li>'
+    )
     breadcrumb = breadcrumb_trail(video)
     json_ld = video_json_ld(video, transcript)
-    return f"""<!DOCTYPE html>
+    return (
+        f"""<!DOCTYPE html>
 {VIDEO_PAGE_MARKER}
 <html lang="en">
 <head>
@@ -651,7 +695,7 @@ def render_video_page(video: dict, *, transcript: str | None = None) -> str:
     <title>{h(title)}</title>
     <meta name="description" content="{h(description)}">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="{h(SITE_ORIGIN + video['page_path'])}">
+    <link rel="canonical" href="{h(SITE_ORIGIN + video["page_path"])}">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/json" href="/data/videos.json" title="Video metadata JSON">
@@ -659,11 +703,11 @@ def render_video_page(video: dict, *, transcript: str | None = None) -> str:
     <meta property="og:type" content="video.other">
     <meta property="og:title" content="{h(title)}">
     <meta property="og:description" content="{h(description)}">
-    <meta property="og:url" content="{h(SITE_ORIGIN + video['page_path'])}">
-    <meta property="og:image" content="{h(video['thumbnail_url'])}">
+    <meta property="og:url" content="{h(SITE_ORIGIN + video["page_path"])}">
+    <meta property="og:image" content="{h(video["thumbnail_url"])}">
     <meta property="og:image:width" content="480">
     <meta property="og:image:height" content="360">
-{social_meta_tags(title, description, video['thumbnail_url'], image_alt=title)}
+{social_meta_tags(title, description, video["thumbnail_url"], image_alt=title)}
     <link rel="stylesheet" href="../style.css?v=site-20261002b">
     <style>{BREADCRUMB_CSS}</style>
     <style>
@@ -690,27 +734,27 @@ def render_video_page(video: dict, *, transcript: str | None = None) -> str:
 {render_nav(active="videos", depth=1)}
 {render_breadcrumb(breadcrumb, depth=1)}
     <header class="page-hero">
-        <p class="eyebrow">{h(video['channel_label'])}</p>
-        <h1>{h(video['title'])}</h1>
-        <p class="sub">{h(video['date'])} - {h(video['duration_text'])} - {h(video['view_count'])} recorded YouTube views in the cached snapshot.</p>
+        <p class="eyebrow">{h(video["channel_label"])}</p>
+        <h1>{h(video["title"])}</h1>
+        <p class="sub">{h(video["date"])} - {h(video["duration_text"])} - {h(video["view_count"])} recorded YouTube views in the cached snapshot.</p>
         <div class="pill-row">{topics}</div>
     </header>
     <main id="main" class="main">
         <section class="section video-layout">
             <div>
                 <div class="video-embed">
-                    <iframe src="{h(video['embed_url'])}" title="{h(video['title'])}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe src="{h(video["embed_url"])}" title="{h(video["title"])}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-                <p class="section-note"><a href="{h(video['youtube_url'])}">Open on YouTube</a> - <a href="{h(video['channel_url'])}">{h(video['channel_label'])}</a> - <a href="../videos.html">interactive timeline</a></p>
+                <p class="section-note"><a href="{h(video["youtube_url"])}">Open on YouTube</a> - <a href="{h(video["channel_url"])}">{h(video["channel_label"])}</a> - <a href="../videos.html">interactive timeline</a></p>
             </div>
             <aside class="card">
                 <h2>Metadata</h2>
                 <ul class="meta-list">
-                    <li><strong>Video ID:</strong> {h(video['id'])}</li>
-                    <li><strong>Channel:</strong> {h(video['channel_name'])}</li>
-                    <li><strong>Upload date:</strong> {h(video['date'])}</li>
-                    <li><strong>Duration:</strong> {h(video['duration_text'])}</li>
-                    <li><strong>Transcript cached:</strong> {'yes' if transcript else 'no'}</li>
+                    <li><strong>Video ID:</strong> {h(video["id"])}</li>
+                    <li><strong>Channel:</strong> {h(video["channel_name"])}</li>
+                    <li><strong>Upload date:</strong> {h(video["date"])}</li>
+                    <li><strong>Duration:</strong> {h(video["duration_text"])}</li>
+                    <li><strong>Transcript cached:</strong> {"yes" if transcript else "no"}</li>
                 </ul>
             </aside>
         </section>
@@ -728,9 +772,14 @@ def render_video_page(video: dict, *, transcript: str | None = None) -> str:
         </section>
     </main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos/">Video index</a> - <a href="../data/videos.json">video metadata JSON</a></p>{footer_stamp_detail}</footer>
-""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
+"""
+        + INTERACTIVE_SCRIPTS
+        + "\n"
+        + MENU_ESC_SCRIPT
+        + """</body>
 </html>
 """
+    )
 
 
 # Crawler-visible static floor for videos/index.html: only the newest N video
@@ -757,22 +806,27 @@ def video_list_item_fields(video: dict) -> tuple[str, str, str]:
 
 def render_index(payload: dict) -> str:
     footer_stamp_index = footer_build_stamp_html()
-    videos = sorted(payload["videos"], key=lambda item: item["upload_date"], reverse=True)
+    videos = sorted(
+        payload["videos"], key=lambda item: item["upload_date"], reverse=True
+    )
     counts = payload["counts"]
     topic_links = "\n".join(
-        f'<a class="pill" href="../{h(rule.url)}">{h(rule.label)}</a>' for rule in TOPIC_RULES[:8]
+        f'<a class="pill" href="../{h(rule.url)}">{h(rule.label)}</a>'
+        for rule in TOPIC_RULES[:8]
     )
     # Server-render only the floor; the rest rides in a compact inline payload.
     rows = "\n".join(
         f"""<li>
-            <a href="{h(video_list_item_fields(video)[0])}">{h(video['title'])}</a>
+            <a href="{h(video_list_item_fields(video)[0])}">{h(video["title"])}</a>
             <span class="muted"> - {h(video_list_item_fields(video)[2])}</span>
         </li>"""
         for video in videos[:VIDEO_SSR_FLOOR_ROWS]
     )
     tail_payload = [
         {"u": url, "t": title, "m": meta}
-        for url, title, meta in (video_list_item_fields(video) for video in videos[VIDEO_SSR_FLOOR_ROWS:])
+        for url, title, meta in (
+            video_list_item_fields(video) for video in videos[VIDEO_SSR_FLOOR_ROWS:]
+        )
     ]
     item_list = {
         "@context": "https://schema.org",
@@ -796,7 +850,8 @@ def render_index(payload: dict) -> str:
         "linked to topics, papers, software, and transcripts when cached."
     )
     breadcrumb = [("Home", ""), ("Videos", "videos/")]
-    return f"""<!DOCTYPE html>
+    return (
+        f"""<!DOCTYPE html>
 {VIDEO_PAGE_MARKER}
 <html lang="en">
 <head>
@@ -840,7 +895,7 @@ def render_index(payload: dict) -> str:
     <header class="page-hero">
         <p class="eyebrow">YouTube Video Metadata</p>
         <h1>YouTube Video Index</h1>
-        <p class="sub">{h(counts['total'])} videos: {h(counts['personal'])} personal channel videos and {h(counts['institute'])} Active Inference Institute videos. {h(counts['with_transcripts'])} have cached transcript text.</p>
+        <p class="sub">{h(counts["total"])} videos: {h(counts["personal"])} personal channel videos and {h(counts["institute"])} Active Inference Institute videos. {h(counts["with_transcripts"])} have cached transcript text.</p>
         <div class="pill-row">{topic_links}</div>
     </header>
     <main id="main" class="main">
@@ -851,16 +906,21 @@ def render_index(payload: dict) -> str:
         <section class="section">
             <div class="section-header"><h2>All Video Pages</h2><p>Newest first; titles link to local indexable landing pages, not directly out to YouTube.</p><div class="section-divider"></div></div>
             <ol class="video-list">{rows}</ol>
-            <noscript><p class="muted">The complete list of {counts['total']} video pages, including the {len(tail_payload)} newest entries not shown above, is available in the <a href="../data/videos.json">video metadata JSON</a> and via the page's ItemList structured data.</p></noscript>
+            <noscript><p class="muted">The complete list of {counts["total"]} video pages, including the {len(tail_payload)} newest entries not shown above, is available in the <a href="../data/videos.json">video metadata JSON</a> and via the page's ItemList structured data.</p></noscript>
         </section>
     </main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos.html">timeline</a> - <a href="../data/videos.json">video metadata JSON</a></p>{footer_stamp_index}</footer>
-""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + f"""
+"""
+        + INTERACTIVE_SCRIPTS
+        + "\n"
+        + MENU_ESC_SCRIPT
+        + f"""
 <script type="application/json" id="video-tail-payload">{json.dumps(tail_payload, separators=(",", ":"), ensure_ascii=False)}</script>
 <script src="/js/videos-index.js?v=20260827" defer></script>
 </body>
 </html>
 """
+    )
 
 
 def existing_generated_at() -> str | None:
@@ -885,13 +945,17 @@ def _validate_page_manifest_path(value: object) -> str:
         raise ValueError(f"video-page manifest path must use '/' separators: {value!r}")
     path = PurePosixPath(value)
     if path.is_absolute() or len(path.parts) != 2 or path.parts[0] != "videos":
-        raise ValueError(f"video-page manifest path must be a direct videos/*.html path: {value!r}")
+        raise ValueError(
+            f"video-page manifest path must be a direct videos/*.html path: {value!r}"
+        )
     if path.suffix != ".html" or path.name in {"", ".", ".."}:
         raise ValueError(f"video-page manifest path must name an HTML page: {value!r}")
     return path.as_posix()
 
 
-def expected_video_page_paths(rendered_outputs: dict[Path, str], *, repo_root: Path = REPO_ROOT) -> set[str]:
+def expected_video_page_paths(
+    rendered_outputs: dict[Path, str], *, repo_root: Path = REPO_ROOT
+) -> set[str]:
     """Return all video HTML outputs from a rendered mapping as safe paths."""
     paths: set[str] = set()
     for path in rendered_outputs:
@@ -913,7 +977,9 @@ def render_video_page_manifest(paths: set[str]) -> str:
     return json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
 
 
-def load_video_page_manifest(path: Path, *, repo_root: Path = REPO_ROOT) -> tuple[set[Path], list[str]]:
+def load_video_page_manifest(
+    path: Path, *, repo_root: Path = REPO_ROOT
+) -> tuple[set[Path], list[str]]:
     """Load prior generator-owned pages without treating malformed data as safe.
 
     The return is intentionally an error list rather than a silent empty set:
@@ -926,7 +992,10 @@ def load_video_page_manifest(path: Path, *, repo_root: Path = REPO_ROOT) -> tupl
         payload = json.loads(content)
     except json.JSONDecodeError as exc:
         return set(), [f"invalid video-page manifest {path}: {exc}"]
-    if not isinstance(payload, dict) or payload.get("schema_version") != VIDEO_PAGE_MANIFEST_VERSION:
+    if (
+        not isinstance(payload, dict)
+        or payload.get("schema_version") != VIDEO_PAGE_MANIFEST_VERSION
+    ):
         return set(), [f"invalid video-page manifest schema: {path}"]
     entries = payload.get("pages")
     if not isinstance(entries, list):
@@ -951,7 +1020,7 @@ _LEGACY_VIDEO_FILENAME = re.compile(r"^(?:personal|institute)-[A-Za-z0-9_-]{3,}\
 _LEGACY_VIDEO_FINGERPRINTS = (
     '<meta name="description" content="Video metadata, YouTube link, related papers, and topic routes for ',
     'class="video-embed"',
-    '<strong>Video ID:</strong>',
+    "<strong>Video ID:</strong>",
     'href="../data/videos.json"',
 )
 
@@ -989,11 +1058,15 @@ def generated_video_page_orphans(
         content = read_generated_output_text(repo_root, candidate)
         if content is None:  # A concurrent deletion is ordinary stale state.
             continue
-        if VIDEO_PAGE_MARKER in content or is_legacy_generated_video_page(candidate, content):
+        if VIDEO_PAGE_MARKER in content or is_legacy_generated_video_page(
+            candidate, content
+        ):
             owned.add(candidate)
 
     expected = {
-        safe_generated_output_path(repo_root, repo_root / _validate_page_manifest_path(path))
+        safe_generated_output_path(
+            repo_root, repo_root / _validate_page_manifest_path(path)
+        )
         for path in expected_paths
     }
     orphans = tuple(
@@ -1023,14 +1096,24 @@ def check_interactive_page_integrity(
     post-hoc lint so every generator output is covered.
     """
     errors: list[str] = []
-    interactive_markers = ("/js/interactive.js", "/js/tts-controls.js", "/js/menu-esc.js")
-    for path, content in sorted(html_by_path.items(), key=lambda item: item[0].as_posix()):
+    interactive_markers = (
+        "/js/interactive.js",
+        "/js/tts-controls.js",
+        "/js/menu-esc.js",
+    )
+    for path, content in sorted(
+        html_by_path.items(), key=lambda item: item[0].as_posix()
+    ):
         if not path.suffix == ".html":
             continue
         loads = any(marker in content for marker in interactive_markers)
         links_stylesheet = 'rel="stylesheet"' in content and "style.css" in content
         if loads and not links_stylesheet:
-            relative = path.relative_to(repo_root).as_posix() if path.is_relative_to(repo_root) else path.as_posix()
+            relative = (
+                path.relative_to(repo_root).as_posix()
+                if path.is_relative_to(repo_root)
+                else path.as_posix()
+            )
             errors.append(
                 f"{relative}: loads interactive JS without linking style.css "
                 "(TTS panel / shortcuts overlay would render unstyled)"
@@ -1090,7 +1173,9 @@ def stale_video_outputs(
         for path in orphans
     )
     stale.extend(ownership_errors)
-    stale.extend(check_interactive_page_integrity(rendered_outputs, repo_root=repo_root))
+    stale.extend(
+        check_interactive_page_integrity(rendered_outputs, repo_root=repo_root)
+    )
     # Hand-authored root pages (art.html, videos.html, ...) are not generator
     # outputs, but they load the same interactive scripts. They are scanned
     # read-only so the same P0-2 invariant holds site-wide.
@@ -1101,13 +1186,17 @@ def stale_video_outputs(
         except OSError:
             continue
         public_root_pages[candidate] = text
-    stale.extend(check_interactive_page_integrity(public_root_pages, repo_root=repo_root))
+    stale.extend(
+        check_interactive_page_integrity(public_root_pages, repo_root=repo_root)
+    )
     return tuple(stale)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if generated video pages are stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if generated video pages are stale"
+    )
     args = parser.parse_args()
     generated_at = existing_generated_at() if args.check else None
     if not args.check:

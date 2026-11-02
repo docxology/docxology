@@ -24,9 +24,16 @@ from docxology_tools.private_reconciliation import (  # noqa: E402
 def test_classifier_keeps_paper_metadata_distinct_from_generated_and_binary_content():
     patterns = ("works/*.html", "og-*.jpg")
 
-    assert classify_path("papers/2025_OnTime/metadata.json", patterns) == "source_metadata"
-    assert classify_path("papers/2025_OnTime/full_text.md", patterns) == "derived_output"
-    assert classify_path("papers/2025_OnTime/images/page1.png", patterns) == "binary_intake"
+    assert (
+        classify_path("papers/2025_OnTime/metadata.json", patterns) == "source_metadata"
+    )
+    assert (
+        classify_path("papers/2025_OnTime/full_text.md", patterns) == "derived_output"
+    )
+    assert (
+        classify_path("papers/2025_OnTime/images/page1.png", patterns)
+        == "binary_intake"
+    )
     assert classify_path("works/Friedman2025Time017.html", patterns) == "derived_output"
     assert classify_path("og-active-inference.jpg", patterns) == "derived_output"
     assert classify_path("README.md", patterns) == "other_source"
@@ -52,10 +59,18 @@ def test_private_bibliography_agreement_is_a_deferred_doi_candidate():
     bibliography = bibliography_rows(
         "| 17 | 2025 | Art | Paper | On Time | Zenodo | [10.5281/zenodo.15168382](https://doi.org/10.5281/zenodo.15168382) | [folder](../papers/2025_OnTime/) | Friedman |\n"
     )
-    public = {"doi": "10.5281/zenodo.15168381", "zenodo_record": "https://zenodo.org/records/15168381"}
-    private = {"doi": "10.5281/zenodo.15168382", "zenodo_record": "https://zenodo.org/records/15168382"}
+    public = {
+        "doi": "10.5281/zenodo.15168381",
+        "zenodo_record": "https://zenodo.org/records/15168381",
+    }
+    private = {
+        "doi": "10.5281/zenodo.15168382",
+        "zenodo_record": "https://zenodo.org/records/15168382",
+    }
 
-    findings = source_backed_metadata_fields("2025_OnTime", public, private, bibliography)
+    findings = source_backed_metadata_fields(
+        "2025_OnTime", public, private, bibliography
+    )
 
     assert [item["field"] for item in findings] == ["doi"]
     assert findings[0]["decision"] == "defer"

@@ -61,21 +61,57 @@ ZENODO_DOI_PREFIX = "10.5281"
 
 # (key, label, one-line description of what a reader may independently do)
 SIGNALS: tuple[tuple[str, str, str], ...] = (
-    ("persistent_id", "Persistent identifier", "Resolve a DOI instead of trusting a live URL."),
-    ("public_archive", "Public archive", "Fetch a deposited copy from a third-party archive."),
-    ("open_full_text", "Open full text", "Read the full text without a paywall or request."),
-    ("source_documents", "Source documents", "Inspect the working folder behind the entry."),
-    ("executable_code", "Executable code", "Run the software that produced or accompanies it."),
-    ("agent_readable", "Agent-readable guidance", "Parse structured guidance without scraping prose."),
+    (
+        "persistent_id",
+        "Persistent identifier",
+        "Resolve a DOI instead of trusting a live URL.",
+    ),
+    (
+        "public_archive",
+        "Public archive",
+        "Fetch a deposited copy from a third-party archive.",
+    ),
+    (
+        "open_full_text",
+        "Open full text",
+        "Read the full text without a paywall or request.",
+    ),
+    (
+        "source_documents",
+        "Source documents",
+        "Inspect the working folder behind the entry.",
+    ),
+    (
+        "executable_code",
+        "Executable code",
+        "Run the software that produced or accompanies it.",
+    ),
+    (
+        "agent_readable",
+        "Agent-readable guidance",
+        "Parse structured guidance without scraping prose.",
+    ),
 )
 SIGNAL_KEYS: tuple[str, ...] = tuple(key for key, _, _ in SIGNALS)
 MAX_SCORE = len(SIGNAL_KEYS)
 
 # Score bands. Names describe reader effort, not research quality.
 BANDS: tuple[tuple[str, int, str], ...] = (
-    ("independently reproducible", 5, "Code, archive, and text are all reachable without contacting the author."),
-    ("independently checkable", 3, "Enough is public to confirm the record and read the argument."),
-    ("citable only", 1, "The record resolves, but little beyond it is machine-checkable."),
+    (
+        "independently reproducible",
+        5,
+        "Code, archive, and text are all reachable without contacting the author.",
+    ),
+    (
+        "independently checkable",
+        3,
+        "Enough is public to confirm the record and read the argument.",
+    ),
+    (
+        "citable only",
+        1,
+        "The record resolves, but little beyond it is machine-checkable.",
+    ),
     ("unverified", 0, "Nothing here is independently checkable from this site alone."),
 )
 
@@ -116,9 +152,11 @@ def evaluate(work: dict, repos_for_work: list[dict]) -> dict:
         "persistent_id": bool(doi),
         "public_archive": doi.startswith(ZENODO_DOI_PREFIX) or archived_repo,
         "open_full_text": bool(work.get("has_full_text")),
-        "source_documents": bool(work.get("has_paper_folder")) and bool(work.get("has_readme")),
+        "source_documents": bool(work.get("has_paper_folder"))
+        and bool(work.get("has_readme")),
         "executable_code": bool(repos_for_work),
-        "agent_readable": bool(work.get("has_agents_md")) or bool(work.get("has_skill_md")),
+        "agent_readable": bool(work.get("has_agents_md"))
+        or bool(work.get("has_skill_md")),
     }
     score = sum(1 for key in SIGNAL_KEYS if signals[key])
     band = next(name for name, floor, _ in BANDS if score >= floor)
@@ -139,10 +177,18 @@ def evaluate(work: dict, repos_for_work: list[dict]) -> dict:
 def build_ledger() -> dict:
     works = _load("works.json")["works"]
     repos_by_path = code_index()
-    entries = [evaluate(work, repos_by_path.get((work.get("docs_path") or "").strip().strip("/"), [])) for work in works]
+    entries = [
+        evaluate(
+            work,
+            repos_by_path.get((work.get("docs_path") or "").strip().strip("/"), []),
+        )
+        for work in works
+    ]
     entries.sort(key=lambda entry: (-entry["score"], entry["num"]))
 
-    totals = {key: sum(1 for entry in entries if entry["signals"][key]) for key in SIGNAL_KEYS}
+    totals = {
+        key: sum(1 for entry in entries if entry["signals"][key]) for key in SIGNAL_KEYS
+    }
     bands = Counter(entry["band"] for entry in entries)
     scores = Counter(entry["score"] for entry in entries)
     total = len(entries)
@@ -152,15 +198,23 @@ def build_ledger() -> dict:
         "sources": ["data/works.json", "data/software.json"],
         "measures": "artifact availability, not correctness or peer-review status",
         "signal_definitions": [
-            {"key": key, "label": label, "reader_action": action} for key, label, action in SIGNALS
+            {"key": key, "label": label, "reader_action": action}
+            for key, label, action in SIGNALS
         ],
-        "band_definitions": [{"band": name, "min_score": floor, "meaning": meaning} for name, floor, meaning in BANDS],
+        "band_definitions": [
+            {"band": name, "min_score": floor, "meaning": meaning}
+            for name, floor, meaning in BANDS
+        ],
         "max_score": MAX_SCORE,
         "work_count": total,
         "signal_totals": totals,
         "band_counts": {name: bands.get(name, 0) for name, _, _ in BANDS},
-        "score_histogram": {str(score): scores.get(score, 0) for score in range(MAX_SCORE + 1)},
-        "mean_score": round(sum(entry["score"] for entry in entries) / total, 3) if total else 0.0,
+        "score_histogram": {
+            str(score): scores.get(score, 0) for score in range(MAX_SCORE + 1)
+        },
+        "mean_score": round(sum(entry["score"] for entry in entries) / total, 3)
+        if total
+        else 0.0,
         "works": entries,
     }
 
@@ -171,7 +225,9 @@ def _pct(count: int, total: int) -> str:
 
 def weakest(ledger: dict, limit: int = 12) -> list[dict]:
     """Lowest-scoring works, worst first. Published deliberately."""
-    return sorted(ledger["works"], key=lambda entry: (entry["score"], entry["num"]))[:limit]
+    return sorted(ledger["works"], key=lambda entry: (entry["score"], entry["num"]))[
+        :limit
+    ]
 
 
 def render_html(ledger: dict) -> str:
@@ -179,22 +235,22 @@ def render_html(ledger: dict) -> str:
     total = ledger["work_count"]
     signal_rows = "\n".join(
         f"""                        <tr><th scope="row">{h(label)}</th>"""
-        f"""<td>{ledger['signal_totals'][key]} / {total}</td>"""
-        f"""<td>{h(_pct(ledger['signal_totals'][key], total))}</td>"""
+        f"""<td>{ledger["signal_totals"][key]} / {total}</td>"""
+        f"""<td>{h(_pct(ledger["signal_totals"][key], total))}</td>"""
         f"""<td>{h(action)}</td></tr>"""
         for key, label, action in SIGNALS
     )
     band_rows = "\n".join(
         f"""                        <tr><th scope="row">{h(name)}</th>"""
-        f"""<td>{ledger['band_counts'][name]}</td>"""
-        f"""<td>{h(_pct(ledger['band_counts'][name], total))}</td>"""
+        f"""<td>{ledger["band_counts"][name]}</td>"""
+        f"""<td>{h(_pct(ledger["band_counts"][name], total))}</td>"""
         f"""<td>{h(meaning)}</td></tr>"""
         for name, _, meaning in BANDS
     )
     gap_rows = "\n".join(
-        f"""                        <tr><td><a href="works/{h(entry['citation_key'])}.html">{h(entry['title'])}</a></td>"""
-        f"""<td>{h(entry['year'])}</td><td>{entry['score']} / {MAX_SCORE}</td>"""
-        f"""<td>{h(', '.join(label for key, label, _ in SIGNALS if not entry['signals'][key]) or '—')}</td></tr>"""
+        f"""                        <tr><td><a href="works/{h(entry["citation_key"])}.html">{h(entry["title"])}</a></td>"""
+        f"""<td>{h(entry["year"])}</td><td>{entry["score"]} / {MAX_SCORE}</td>"""
+        f"""<td>{h(", ".join(label for key, label, _ in SIGNALS if not entry["signals"][key]) or "—")}</td></tr>"""
         for entry in weakest(ledger)
     )
     hist = ledger["score_histogram"]
@@ -285,7 +341,7 @@ def render_html(ledger: dict) -> str:
             </table></div>
         </section>
         <section class="section">
-            <div class="section-header"><h2>Score distribution</h2><p>Mean score {ledger['mean_score']} of {MAX_SCORE}.</p><div class="section-divider"></div></div>
+            <div class="section-header"><h2>Score distribution</h2><p>Mean score {ledger["mean_score"]} of {MAX_SCORE}.</p><div class="section-divider"></div></div>
 {bars}
             <div class="repro-scroll mt-2"><table class="repro-table">
                 <thead><tr><th scope="col">Band</th><th scope="col">Works</th><th scope="col">Share</th><th scope="col">Meaning</th></tr></thead>
@@ -361,7 +417,9 @@ def render_md(ledger: dict) -> str:
     ]
     for key, label, action in SIGNALS:
         count = ledger["signal_totals"][key]
-        lines.append(f"| {label} | {count} / {total} | {_pct(count, total)} | {action} |")
+        lines.append(
+            f"| {label} | {count} / {total} | {_pct(count, total)} | {action} |"
+        )
     lines += [
         "",
         f"Mean score {ledger['mean_score']} of {MAX_SCORE}.",
@@ -385,7 +443,10 @@ def render_md(ledger: dict) -> str:
         "| --- | --- | --- | --- |",
     ]
     for entry in weakest(ledger):
-        missing = ", ".join(label for key, label, _ in SIGNALS if not entry["signals"][key]) or "—"
+        missing = (
+            ", ".join(label for key, label, _ in SIGNALS if not entry["signals"][key])
+            or "—"
+        )
         lines.append(
             f"| [{entry['title']}](../works/{entry['citation_key']}.html) | {entry['year']} | "
             f"{entry['score']} / {MAX_SCORE} | {missing} |"
@@ -444,6 +505,7 @@ def _comparable(path: Path, content: str) -> tuple[str, str]:
         # Stamp-reuse: a difference confined to the footer build stamp (commit
         # SHA at generation time) is not staleness - mirror generated_outputs.
         from docxology_tools.build_stamp import reuse_on_disk_stamp  # noqa: E402
+
         return on_disk, reuse_on_disk_stamp(content, on_disk)
     existing = json.loads(on_disk)
     fresh = json.loads(content)
@@ -453,8 +515,12 @@ def _comparable(path: Path, content: str) -> tuple[str, str]:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Build the per-work reproducibility ledger.")
-    parser.add_argument("--check", action="store_true", help="Fail if ledger outputs are stale")
+    parser = argparse.ArgumentParser(
+        description="Build the per-work reproducibility ledger."
+    )
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if ledger outputs are stale"
+    )
     args = parser.parse_args()
     stale: list[str] = []
     for path, content in outputs().items():

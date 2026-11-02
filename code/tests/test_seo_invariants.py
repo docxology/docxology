@@ -95,7 +95,10 @@ def test_no_tracked_html_ships_a_header_only_csp_directive():
     """
     tracked = subprocess.run(
         ["git", "ls-files", "*.html"],
-        cwd=REPO_ROOT, capture_output=True, text=True, check=True,
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        check=True,
     ).stdout.split()
     offenders = []
     for relative in tracked:
@@ -116,6 +119,7 @@ def test_no_tracked_html_ships_a_header_only_csp_directive():
 # These construct violated fixtures in tmp_path to prove each detector actually
 # flags a problem, rather than only asserting the already-clean repo returns [].
 # A detector that regressed to vacuously returning [] must fail these.
+
 
 def test_social_meta_flaggs_missing_twitter_card(tmp_path):
     (tmp_path / "index.html").write_text(
@@ -152,12 +156,18 @@ def test_sitemap_policy_flags_papers_url(tmp_path):
 def test_paper_pages_flags_json_ld(tmp_path):
     (tmp_path / "data").mkdir()
     (tmp_path / "data" / "works.json").write_text(
-        json.dumps({"works": [{"docs_path": "papers/2026_X", "citation_key": "Friedman2026X001"}]}),
+        json.dumps(
+            {
+                "works": [
+                    {"docs_path": "papers/2026_X", "citation_key": "Friedman2026X001"}
+                ]
+            }
+        ),
         encoding="utf-8",
     )
     (tmp_path / "papers" / "2026_X").mkdir(parents=True)
     (tmp_path / "papers" / "2026_X" / "index.html").write_text(
-        '<html><head>'
+        "<html><head>"
         '<meta name="robots" content="noindex, follow">'
         '<link rel="canonical" href="https://danielarifriedman.com/works/Friedman2026X001.html">'
         '<script type="application/ld+json">{}</script>'
@@ -171,7 +181,13 @@ def test_paper_pages_flags_json_ld(tmp_path):
 def test_paper_pages_require_noindex_follow(tmp_path):
     (tmp_path / "data").mkdir()
     (tmp_path / "data" / "works.json").write_text(
-        json.dumps({"works": [{"docs_path": "papers/2026_X", "citation_key": "Friedman2026X001"}]}),
+        json.dumps(
+            {
+                "works": [
+                    {"docs_path": "papers/2026_X", "citation_key": "Friedman2026X001"}
+                ]
+            }
+        ),
         encoding="utf-8",
     )
     page = tmp_path / "papers" / "2026_X" / "index.html"
@@ -181,7 +197,10 @@ def test_paper_pages_require_noindex_follow(tmp_path):
         encoding="utf-8",
     )
 
-    assert any("expected robots noindex, follow" in error for error in check_paper_pages(tmp_path))
+    assert any(
+        "expected robots noindex, follow" in error
+        for error in check_paper_pages(tmp_path)
+    )
 
 
 def test_page_cache_serves_repeat_reads_but_not_a_rewritten_file(tmp_path):
@@ -204,7 +223,7 @@ def test_page_cache_serves_repeat_reads_but_not_a_rewritten_file(tmp_path):
 
 
 def test_seo_metadata_reads_real_head_independent_of_attribute_format():
-    page = '''<html><head>
+    page = """<html><head>
       <!-- <link rel="canonical" href="https://wrong.example/"> -->
       <template><meta name="robots" content="noindex"></template>
       <LINK HREF='https://danielarifriedman.com/?a=1&amp;b=2' REL='canonical'>
@@ -212,57 +231,75 @@ def test_seo_metadata_reads_real_head_independent_of_attribute_format():
       <meta content='Methods &amp; Evidence' name='description'>
       <meta content='Methods &amp; Evidence' property='og:title'>
       </head><body><meta name="robots" content="noindex">
-      <link rel="canonical" href="https://wrong.example/"></body></html>'''
-    assert seo_invariants._canonical(page) == 'https://danielarifriedman.com/?a=1&b=2'
-    assert seo_invariants._meta_robots(page) == 'index, follow'
-    assert seo_invariants._meta_description(page) == 'Methods & Evidence'
-    assert seo_invariants._property_meta(page, 'og:title') == 'Methods & Evidence'
+      <link rel="canonical" href="https://wrong.example/"></body></html>"""
+    assert seo_invariants._canonical(page) == "https://danielarifriedman.com/?a=1&b=2"
+    assert seo_invariants._meta_robots(page) == "index, follow"
+    assert seo_invariants._meta_description(page) == "Methods & Evidence"
+    assert seo_invariants._property_meta(page, "og:title") == "Methods & Evidence"
 
 
 def test_seo_metadata_rejects_duplicate_elements_and_ignores_inert_spoofs():
-    assert seo_invariants._canonical('''<head>
+    assert (
+        seo_invariants._canonical("""<head>
       <link rel="canonical" href="https://danielarifriedman.com/">
       <link rel="canonical" href="https://other.example/">
-      </head>''') is None
-    assert seo_invariants._meta_robots('''<head>
+      </head>""")
+        is None
+    )
+    assert (
+        seo_invariants._meta_robots("""<head>
       <meta name="robots" content="index, follow">
       <meta name="robots" content="noindex">
-      </head>''') is None
-    assert seo_invariants._canonical('''<head>
+      </head>""")
+        is None
+    )
+    assert (
+        seo_invariants._canonical("""<head>
       <script>const example = '<link rel="canonical" href="https://fake.example/">';</script>
-      </head><body><head><link rel="canonical" href="https://fake.example/"></head>''') is None
-    assert seo_invariants._meta_description('''<head><meta name="description"
-      content="first" content="second"></head>''') == "first"
+      </head><body><head><link rel="canonical" href="https://fake.example/"></head>""")
+        is None
+    )
+    assert (
+        seo_invariants._meta_description("""<head><meta name="description"
+      content="first" content="second"></head>""")
+        == "first"
+    )
 
 
 def test_description_entities_are_decoded_exactly_once(tmp_path):
-    works = tmp_path / 'works'
+    works = tmp_path / "works"
     works.mkdir()
     # A visible literal entity is five characters; decoding twice hides a
     # description which actually exceeds the rendered-character limit.
-    (works / 'Example.html').write_text(
-        '<head><meta name="description" content="' + 'x' * 156 + '&amp;amp;"></head>'
+    (works / "Example.html").write_text(
+        '<head><meta name="description" content="' + "x" * 156 + '&amp;amp;"></head>'
     )
     assert check_work_descriptions(tmp_path)
 
 
-def test_canonical_gate_covers_all_public_families_and_ignores_dependency_html(tmp_path):
-    video = tmp_path / 'videos/one.html'
+def test_canonical_gate_covers_all_public_families_and_ignores_dependency_html(
+    tmp_path,
+):
+    video = tmp_path / "videos/one.html"
     video.parent.mkdir()
-    video.write_text('''<head>
+    video.write_text("""<head>
       <link rel="canonical" href="https://danielarifriedman.com/videos/one.html">
       <link rel="canonical" href="https://danielarifriedman.com/videos/two.html">
-      </head>''')
-    dependency = tmp_path / '.venv/diagnostic.html'
+      </head>""")
+    dependency = tmp_path / ".venv/diagnostic.html"
     dependency.parent.mkdir()
-    dependency.write_text('<html>not a public page</html>')
+    dependency.write_text("<html>not a public page</html>")
     assert seo_invariants.check_head_canonicals(tmp_path) == [
-        'videos/one.html: expected exactly one nonempty head canonical'
+        "videos/one.html: expected exactly one nonempty head canonical"
     ]
-    video.write_text('''<head><link rel="canonical" href="https://www.danielarifriedman.com/videos/one.html?q=1">
-      <meta name="robots" content="index"><meta name="robots" content="noindex"></head>''')
+    video.write_text("""<head><link rel="canonical" href="https://www.danielarifriedman.com/videos/one.html?q=1">
+      <meta name="robots" content="index"><meta name="robots" content="noindex"></head>""")
     errors = seo_invariants.check_head_canonicals(tmp_path)
-    assert len(errors) == 2 and 'apex HTTPS' in errors[0] and 'duplicate head robots' in errors[1]
+    assert (
+        len(errors) == 2
+        and "apex HTTPS" in errors[0]
+        and "duplicate head robots" in errors[1]
+    )
 
 
 def test_one_seo_pass_reads_each_page_once_across_the_eight_checks(monkeypatch):
@@ -290,42 +327,63 @@ def test_one_seo_pass_reads_each_page_once_across_the_eight_checks(monkeypatch):
     )
 
 
-def test_work_citation_identity_rejects_collapsed_doi_missing_author_and_wrong_pdf(tmp_path):
+def test_work_citation_identity_rejects_collapsed_doi_missing_author_and_wrong_pdf(
+    tmp_path,
+):
     from docxology_tools.seo_invariants import check_work_citations
 
-    subprocess.run(['git', 'init', '-q', str(tmp_path)], check=True)
-    (tmp_path / 'data').mkdir()
-    (tmp_path / 'works').mkdir()
-    folder = tmp_path / 'papers/2026_Example'
+    subprocess.run(["git", "init", "-q", str(tmp_path)], check=True)
+    (tmp_path / "data").mkdir()
+    (tmp_path / "works").mkdir()
+    folder = tmp_path / "papers/2026_Example"
     folder.mkdir(parents=True)
-    (folder / 'primary.pdf').write_bytes(b'%PDF-primary')
-    (folder / 'other.pdf').write_bytes(b'%PDF-other')
-    (folder / 'metadata.json').write_text(json.dumps({'primary_pdf': 'primary.pdf'}))
-    work = {'citation_key': 'Example', 'title': 'Methods & Evidence', 'year': 2026,
-            'doi': '10.5281/zenodo.12345', 'authors': ['First, Alice', 'Second, Bob'],
-            'docs_path': 'papers/2026_Example/'}
-    (tmp_path / 'data/works.json').write_text(json.dumps({'works': [work]}))
-    page = tmp_path / 'works/Example.html'
-    correct = '''<html><head><meta name="citation_title" content="Methods &amp; Evidence">
+    (folder / "primary.pdf").write_bytes(b"%PDF-primary")
+    (folder / "other.pdf").write_bytes(b"%PDF-other")
+    (folder / "metadata.json").write_text(json.dumps({"primary_pdf": "primary.pdf"}))
+    work = {
+        "citation_key": "Example",
+        "title": "Methods & Evidence",
+        "year": 2026,
+        "doi": "10.5281/zenodo.12345",
+        "authors": ["First, Alice", "Second, Bob"],
+        "docs_path": "papers/2026_Example/",
+    }
+    (tmp_path / "data/works.json").write_text(json.dumps({"works": [work]}))
+    page = tmp_path / "works/Example.html"
+    correct = """<html><head><meta name="citation_title" content="Methods &amp; Evidence">
     <meta name="citation_author" content="Alice First">
     <meta name="citation_author" content="Bob Second">
     <meta name="citation_publication_date" content="2026">
     <meta name="citation_doi" content="10.5281/zenodo.12345">
-    <meta name="citation_pdf_url" content="https://danielarifriedman.com/papers/2026_Example/primary.pdf"></head><body></body></html>'''
+    <meta name="citation_pdf_url" content="https://danielarifriedman.com/papers/2026_Example/primary.pdf"></head><body></body></html>"""
     page.write_text(correct)
     assert check_work_citations(tmp_path) == []
-    page.write_text(correct.replace('10.5281/zenodo.12345', '10.5281/zenodo.99999'))
-    assert any('citation_doi' in e for e in check_work_citations(tmp_path))
-    page.write_text(correct.replace('<meta name="citation_author" content="Bob Second">', ''))
-    assert any('citation_author' in e for e in check_work_citations(tmp_path))
-    page.write_text(correct.replace('/primary.pdf', '/other.pdf'))
-    assert any('citation_pdf_url' in e for e in check_work_citations(tmp_path))
-    page.write_text(correct.replace('<meta name="citation_author" content="Bob Second">', '<!-- <meta name="citation_author" content="Bob Second"> -->'))
-    assert any('citation_author' in e for e in check_work_citations(tmp_path))
-    page.write_text(correct.replace('</head>', '</head><meta name="citation_author" content="Fake Author">'))
-    assert check_work_citations(tmp_path) == []  # Body metadata cannot change head identity.
+    page.write_text(correct.replace("10.5281/zenodo.12345", "10.5281/zenodo.99999"))
+    assert any("citation_doi" in e for e in check_work_citations(tmp_path))
+    page.write_text(
+        correct.replace('<meta name="citation_author" content="Bob Second">', "")
+    )
+    assert any("citation_author" in e for e in check_work_citations(tmp_path))
+    page.write_text(correct.replace("/primary.pdf", "/other.pdf"))
+    assert any("citation_pdf_url" in e for e in check_work_citations(tmp_path))
+    page.write_text(
+        correct.replace(
+            '<meta name="citation_author" content="Bob Second">',
+            '<!-- <meta name="citation_author" content="Bob Second"> -->',
+        )
+    )
+    assert any("citation_author" in e for e in check_work_citations(tmp_path))
+    page.write_text(
+        correct.replace(
+            "</head>", '</head><meta name="citation_author" content="Fake Author">'
+        )
+    )
+    assert (
+        check_work_citations(tmp_path) == []
+    )  # Body metadata cannot change head identity.
     page.write_text(correct)
-    (folder / 'primary.pdf').unlink()
+    (folder / "primary.pdf").unlink()
     import pytest
-    with pytest.raises(ValueError, match='Unavailable primary_pdf'):
+
+    with pytest.raises(ValueError, match="Unavailable primary_pdf"):
         check_work_citations(tmp_path)

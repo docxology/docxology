@@ -20,6 +20,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 from docxology_tools.change_classifier import Classification, classify_paths  # noqa: E402
 
 from docxology_tools.release_controls import is_control_path  # noqa: E402
+
 # Replaces the manual sequence: payload commit, control-tail commit, then the
 # gate cascade by hand (docs/operations/settle.md).  Commits are split per the
 # release_controls.is_control_path semantics encoded in
@@ -32,14 +33,22 @@ CONTROL_TAIL_SUFFIX = " (control tail)"
 MAX_BINDER_PASSES = 4
 _LOCAL_PYTHON = ("uv", "run", "--no-sync", "python3")
 _BINDER_WRITERS = (
-    ("Pages manifest", "build_pages_artifact.py", ("--write-manifest", "--check-size-only")),
+    (
+        "Pages manifest",
+        "build_pages_artifact.py",
+        ("--write-manifest", "--check-size-only"),
+    ),
     ("generated manifest", "build_generated_manifest.py", ()),
     ("agent index", "build_agent_index.py", ()),
     ("release integrity", "build_release_integrity.py", ()),
     ("final generated manifest", "build_generated_manifest.py", ()),
 )
 _BINDER_CHECKS = (
-    ("Pages manifest", "build_pages_artifact.py", ("--check-size-only", "--check-manifest")),
+    (
+        "Pages manifest",
+        "build_pages_artifact.py",
+        ("--check-size-only", "--check-manifest"),
+    ),
     ("generated manifest", "build_generated_manifest.py", ("--check",)),
     ("agent index", "build_agent_index.py", ("--check",)),
     ("release integrity", "build_release_integrity.py", ("--check",)),
@@ -66,7 +75,14 @@ _REVIEW_INPUT_FLAGS = {
 _FAST_STEPS: tuple[tuple[str, tuple[str, ...]], ...] = (
     (
         "sitemap --check",
-        ("uv", "run", "--no-sync", "python3", "code/orchestrators/build_sitemap.py", "--check"),
+        (
+            "uv",
+            "run",
+            "--no-sync",
+            "python3",
+            "code/orchestrators/build_sitemap.py",
+            "--check",
+        ),
     ),
     (
         "artifact budget",
@@ -123,14 +139,19 @@ def _release_step() -> tuple[str, tuple[str, ...]]:
         check=False,
     )
     if head.returncode == 0:
-        attestation = Path("reports/deployment-attestations") / f"{head.stdout.strip()}.json"
+        attestation = (
+            Path("reports/deployment-attestations") / f"{head.stdout.strip()}.json"
+        )
         if attestation.is_file():
             command += ["--deployment-attestation", attestation.as_posix()]
     return ("validate_repo --release --strict-reports", tuple(command))
 
 
 def battery_for_tier(
-    tier: str, dirty: Iterable[str] | None = None, *, allow_dirty_prepayload_evidence: bool = False
+    tier: str,
+    dirty: Iterable[str] | None = None,
+    *,
+    allow_dirty_prepayload_evidence: bool = False,
 ) -> tuple[tuple[str, tuple[str, ...]], ...]:
     """Return the ordered battery for *tier*; release extends full.
 
@@ -144,11 +165,18 @@ def battery_for_tier(
     payload commit stales, so a payload change must ride the full tier.
     """
     if allow_dirty_prepayload_evidence:
-        if tier != "full" or dirty is None or not any(not is_control_path(Path(path)) for path in dirty):
-            raise ValueError("dirty prepayload evidence mode requires a full payload landing")
+        if (
+            tier != "full"
+            or dirty is None
+            or not any(not is_control_path(Path(path)) for path in dirty)
+        ):
+            raise ValueError(
+                "dirty prepayload evidence mode requires a full payload landing"
+            )
         return tuple(
             (label, command + ("--allow-dirty-prepayload-evidence",))
-            if (label, command) == _VALIDATE_STANDARD_STEP else (label, command)
+            if (label, command) == _VALIDATE_STANDARD_STEP
+            else (label, command)
             for label, command in _FULL_STEPS
         )
     if tier == "routine":
@@ -275,31 +303,48 @@ def run_steps(steps: Iterable[tuple[str, tuple[str, ...]]]) -> bool:
         # The outer runner retains this transcript; truncation loses failure
         # sites, while successful pytest output carries the actual case count.
         if result.stdout:
-            print("--- stdout ---\n" + result.stdout, end="" if result.stdout.endswith("\n") else "\n")
+            print(
+                "--- stdout ---\n" + result.stdout,
+                end="" if result.stdout.endswith("\n") else "\n",
+            )
         if result.stderr:
-            print("--- stderr ---\n" + result.stderr, end="" if result.stderr.endswith("\n") else "\n")
+            print(
+                "--- stderr ---\n" + result.stderr,
+                end="" if result.stderr.endswith("\n") else "\n",
+            )
         if result.returncode != 0:
             return False
     return True
 
 
-def run_battery(tier: str, dirty: Iterable[str], allow_dirty_prepayload_evidence: bool = False) -> bool:
+def run_battery(
+    tier: str, dirty: Iterable[str], allow_dirty_prepayload_evidence: bool = False
+) -> bool:
     """Run the tier battery in order; stop at the first failure."""
-    if not run_steps(battery_for_tier(tier, dirty, allow_dirty_prepayload_evidence=allow_dirty_prepayload_evidence)):
+    if not run_steps(
+        battery_for_tier(
+            tier, dirty, allow_dirty_prepayload_evidence=allow_dirty_prepayload_evidence
+        )
+    ):
         return False
     higher = sorted(
         (name for name in TIER_ORDER if TIER_ORDER[name] > TIER_ORDER[tier]),
         key=TIER_ORDER.__getitem__,
     )
     if higher:
-        print(f"skipped higher-tier checks ({', '.join(higher)}): effective tier is {tier}")
+        print(
+            f"skipped higher-tier checks ({', '.join(higher)}): effective tier is {tier}"
+        )
     return True
 
 
 def _git_paths(*args: str) -> set[str]:
     result = subprocess.run(
-        ["git", "ls-files", "-z", *args], cwd=REPO_ROOT,
-        capture_output=True, text=True, check=False,
+        ["git", "ls-files", "-z", *args],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
     )
     if result.returncode:
         raise SystemExit(f"git ls-files failed: {result.stderr.strip()}")
@@ -308,8 +353,11 @@ def _git_paths(*args: str) -> set[str]:
 
 def _head() -> str:
     result = subprocess.run(
-        ["git", "rev-parse", "--verify", "HEAD"], cwd=REPO_ROOT,
-        capture_output=True, text=True, check=False,
+        ["git", "rev-parse", "--verify", "HEAD"],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
     )
     if result.returncode:
         raise SystemExit(f"git HEAD lookup failed: {result.stderr.strip()}")
@@ -318,7 +366,9 @@ def _head() -> str:
 
 def _same_head(expected: str) -> bool:
     if _head() != expected:
-        print("settle refused: HEAD changed concurrently; review the new commit before continuing")
+        print(
+            "settle refused: HEAD changed concurrently; review the new commit before continuing"
+        )
         return False
     return True
 
@@ -332,7 +382,8 @@ def stage_paths(paths: Iterable[str]) -> bool:
     """
     indexed = _git_paths("--cached")
     stageable = sorted(
-        path for path in set(paths)
+        path
+        for path in set(paths)
         if path in indexed or os.path.lexists(REPO_ROOT / path)
     )
     if not stageable:
@@ -345,7 +396,10 @@ def stage_paths(paths: Iterable[str]) -> bool:
         return False
     staged = subprocess.run(
         ["git", "--literal-pathspecs", "add", "--all", "--", *stageable],
-        cwd=REPO_ROOT, capture_output=True, text=True, check=False,
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
     )
     if staged.returncode:
         print("staging selected paths ... FAIL")
@@ -361,13 +415,18 @@ def commit_paths(paths: list[str], message: str, label: str) -> bool:
         return False
     committed = subprocess.run(
         ["git", "--literal-pathspecs", "commit", "--only", "-m", message, "--", *paths],
-        cwd=REPO_ROOT, capture_output=True, text=True, check=False,
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
     )
     if committed.returncode != 0:
         print(f"commit {label} ... FAIL (git commit)")
         print(_tail((committed.stdout or "") + (committed.stderr or "")))
         return False
-    summary = committed.stdout.strip().splitlines() or committed.stderr.strip().splitlines()
+    summary = (
+        committed.stdout.strip().splitlines() or committed.stderr.strip().splitlines()
+    )
     print(f"commit {label} ... OK" + (f": {summary[0]}" if summary else ""))
     return True
 
@@ -386,20 +445,26 @@ def _path_state(paths: Iterable[str]) -> dict[str, str]:
         elif not path.exists():
             content = b"deleted"
         else:
-            raise SystemExit(f"cannot settle a directory/submodule path automatically: {name}")
+            raise SystemExit(
+                f"cannot settle a directory/submodule path automatically: {name}"
+            )
         state[name] = hashlib.sha256(content).hexdigest()
     return state
 
 
 def _control_state() -> dict[str, str]:
-    paths = _git_paths("--cached", "--others", "--exclude-standard") | set(dirty_paths())
+    paths = _git_paths("--cached", "--others", "--exclude-standard") | set(
+        dirty_paths()
+    )
     return _path_state(path for path in paths if is_control_path(Path(path)))
 
 
 def _payload_clean() -> bool:
     payload = [path for path in dirty_paths() if not is_control_path(Path(path))]
     if payload:
-        print("binder landing refused: payload paths changed; preserve and review them:")
+        print(
+            "binder landing refused: payload paths changed; preserve and review them:"
+        )
         print("\n".join(f"  - {path}" for path in payload))
         return False
     return True
@@ -425,7 +490,9 @@ def _safe_local_file(path: Path, *, required: bool) -> Path:
         except FileNotFoundError:
             if not required:
                 return path
-            raise ValueError(f"missing settle source/control path: {relative}") from None
+            raise ValueError(
+                f"missing settle source/control path: {relative}"
+            ) from None
         if stat.S_ISLNK(metadata.st_mode):
             raise ValueError(f"symlinked settle source/control path: {relative}")
         if leaf:
@@ -434,7 +501,9 @@ def _safe_local_file(path: Path, *, required: bool) -> Path:
             if metadata.st_nlink != 1:
                 raise ValueError(f"hard-linked settle source/control path: {relative}")
         elif not stat.S_ISDIR(metadata.st_mode):
-            raise ValueError(f"non-directory settle source/control ancestor: {relative}")
+            raise ValueError(
+                f"non-directory settle source/control ancestor: {relative}"
+            )
     return path
 
 
@@ -446,11 +515,14 @@ def _review_writer() -> tuple[str, str, tuple[str, ...]]:
     unusual/custom reports remain a deliberate manual review operation.
     """
     reports = sorted(
-        path for path in (REPO_ROOT / "reports").glob("public_source_review_*.json")
+        path
+        for path in (REPO_ROOT / "reports").glob("public_source_review_*.json")
         if is_control_path(path.relative_to(REPO_ROOT))
     )
     if not reports:
-        raise ValueError("missing dated public-source review; render it explicitly before settling")
+        raise ValueError(
+            "missing dated public-source review; render it explicitly before settling"
+        )
     report = reports[-1]
     _safe_local_file(report, required=True)
     markdown = report.with_suffix(".md")
@@ -469,27 +541,45 @@ def _review_writer() -> tuple[str, str, tuple[str, ...]]:
     if not isinstance(inputs, dict) or not isinstance(context, dict):
         raise ValueError("public-source review lacks recorded inputs/refresh context")
     if set(inputs) != set(_REVIEW_INPUT_FLAGS):
-        raise ValueError("public-source review input schema changed; review its replay explicitly")
+        raise ValueError(
+            "public-source review input schema changed; review its replay explicitly"
+        )
     indexed = _git_paths("--cached")
     args = ["--report", report.relative_to(REPO_ROOT).as_posix(), "--date", date]
     for name, flag in _REVIEW_INPUT_FLAGS.items():
         provenance = inputs[name]
         raw = provenance.get("path") if isinstance(provenance, dict) else None
         if not isinstance(raw, str) or not raw or "\\" in raw:
-            raise ValueError(f"cannot replay absent/invalid review input {name}; render it explicitly")
+            raise ValueError(
+                f"cannot replay absent/invalid review input {name}; render it explicitly"
+            )
         path = Path(raw)
-        if (not path.parts or path.is_absolute() or raw != path.as_posix() or ".." in path.parts
-                or path.parts[0] not in {"data", "reports"} or path.suffix != ".json"
-                or raw not in indexed):
+        if (
+            not path.parts
+            or path.is_absolute()
+            or raw != path.as_posix()
+            or ".." in path.parts
+            or path.parts[0] not in {"data", "reports"}
+            or path.suffix != ".json"
+            or raw not in indexed
+        ):
             raise ValueError(f"review input {name} is not a tracked local JSON path")
         _safe_local_file(REPO_ROOT / path, required=True)
         args.extend((flag, raw))
     status = context.get("pairing_refresh_status")
     note = context.get("pairing_refresh_note")
-    if not isinstance(status, str) or status not in {"auto", "failed"} or not isinstance(note, str):
+    if (
+        not isinstance(status, str)
+        or status not in {"auto", "failed"}
+        or not isinstance(note, str)
+    ):
         raise ValueError("invalid recorded pairing refresh context")
     args.extend(("--pairing-refresh-status", status, f"--pairing-refresh-note={note}"))
-    return "public-source review (recorded inputs)", "build_public_source_review.py", tuple(args)
+    return (
+        "public-source review (recorded inputs)",
+        "build_public_source_review.py",
+        tuple(args),
+    )
 
 
 def refresh_review() -> bool:
@@ -530,37 +620,63 @@ def rebind_controls(*, max_passes: int = MAX_BINDER_PASSES) -> bool:
             if script == "build_public_source_review.py":
                 try:
                     if _review_writer() != review_writer:
-                        raise ValueError("recorded public-source review inputs changed during landing")
+                        raise ValueError(
+                            "recorded public-source review inputs changed during landing"
+                        )
                 except (OSError, ValueError) as exc:
                     print(f"binder landing refused: {exc}")
                     return False
-            if not run_steps(((name, (*_LOCAL_PYTHON, f"code/orchestrators/{script}", *args)),)):
+            if not run_steps(
+                ((name, (*_LOCAL_PYTHON, f"code/orchestrators/{script}", *args)),)
+            ):
                 return False
             if not _same_head(head) or not _payload_clean():
                 return False
-            if not stage_paths(path for path in dirty_paths() if is_control_path(Path(path))):
+            if not stage_paths(
+                path for path in dirty_paths() if is_control_path(Path(path))
+            ):
                 return False
         current = _control_state()
-        changed = sorted(path for path in current.keys() | previous.keys()
-                         if current.get(path) != previous.get(path))
+        changed = sorted(
+            path
+            for path in current.keys() | previous.keys()
+            if current.get(path) != previous.get(path)
+        )
         if not changed:
             print(f"binder controls converged after {iteration} pass(es)")
             try:
                 if _review_writer() != review_writer:
-                    raise ValueError("recorded public-source review inputs changed before checks")
+                    raise ValueError(
+                        "recorded public-source review inputs changed before checks"
+                    )
             except (OSError, ValueError) as exc:
                 print(f"binder landing refused: {exc}")
                 return False
             name, script, args = review_writer
-            checks = ((name + " --check", (*_LOCAL_PYTHON, f"code/orchestrators/{script}", *args, "--check")),)
-            checked = run_steps((*checks, *(
-                (name + " --check", (*_LOCAL_PYTHON, f"code/orchestrators/{script}", *args))
-                for name, script, args in _BINDER_CHECKS
-            )))
+            checks = (
+                (
+                    name + " --check",
+                    (*_LOCAL_PYTHON, f"code/orchestrators/{script}", *args, "--check"),
+                ),
+            )
+            checked = run_steps(
+                (
+                    *checks,
+                    *(
+                        (
+                            name + " --check",
+                            (*_LOCAL_PYTHON, f"code/orchestrators/{script}", *args),
+                        )
+                        for name, script, args in _BINDER_CHECKS
+                    ),
+                )
+            )
             return checked and _same_head(head) and _payload_clean()
         print("binder controls changed: " + ", ".join(changed))
         previous = current
-    print(f"binder controls did not converge within {max_passes} passes; no control commit or push")
+    print(
+        f"binder controls did not converge within {max_passes} passes; no control commit or push"
+    )
     print("remaining changes: " + ", ".join(changed))
     return False
 
@@ -572,15 +688,23 @@ def validate_landing() -> bool:
         return False
     head = _head()
     name, script, args = _BINDER_CHECKS[0]
-    checked = run_steps((
-        (name + " (landed)", (*_LOCAL_PYTHON, f"code/orchestrators/{script}", *args)),
-        _VALIDATE_STANDARD_STEP,
-    ))
+    checked = run_steps(
+        (
+            (
+                name + " (landed)",
+                (*_LOCAL_PYTHON, f"code/orchestrators/{script}", *args),
+            ),
+            _VALIDATE_STANDARD_STEP,
+        )
+    )
     if not checked or not _same_head(head):
         return False
     pending = dirty_paths()
     if pending:
-        print("settle refused: paths changed during post-landing validation: " + ", ".join(pending))
+        print(
+            "settle refused: paths changed during post-landing validation: "
+            + ", ".join(pending)
+        )
         return False
     return True
 
@@ -627,15 +751,25 @@ def create_pr(title: str, tier: str, checks: int) -> bool:
 
 
 def print_plan(
-    args: argparse.Namespace, classification: Classification, tier: str, dirty: Iterable[str]
+    args: argparse.Namespace,
+    classification: Classification,
+    tier: str,
+    dirty: Iterable[str],
 ) -> None:
     """Print the settle plan without executing anything."""
     steps = battery_for_tier(
-        tier, dirty,
-        allow_dirty_prepayload_evidence=bool(classification.payload_paths) and not args.skip_commit and tier == "full",
+        tier,
+        dirty,
+        allow_dirty_prepayload_evidence=bool(classification.payload_paths)
+        and not args.skip_commit
+        and tier == "full",
     )
-    if not args.skip_commit and (classification.payload_paths or classification.control_paths):
-        print("preflight: replay existing public-source review with its recorded inputs")
+    if not args.skip_commit and (
+        classification.payload_paths or classification.control_paths
+    ):
+        print(
+            "preflight: replay existing public-source review with its recorded inputs"
+        )
     print(f"battery ({tier}, {len(steps)} checks, stop on first failure):")
     for index, (name, cmd) in enumerate(steps, start=1):
         print(f"  [{index}/{len(steps)}] {name}: {' '.join(cmd)}")
@@ -645,15 +779,21 @@ def print_plan(
         print("  skipped (--skip-commit)")
     else:
         if classification.payload_paths:
-            print(f"  payload commit: git commit --only -m {message!r} -- <payload paths>")
+            print(
+                f"  payload commit: git commit --only -m {message!r} -- <payload paths>"
+            )
             for path in classification.payload_paths:
                 print(f"    - {path}")
         else:
             print("  payload commit: skipped (no payload paths)")
         if classification.payload_paths or classification.control_paths:
-            print(f"  binder writers: converge controls in at most {MAX_BINDER_PASSES} passes")
+            print(
+                f"  binder writers: converge controls in at most {MAX_BINDER_PASSES} passes"
+            )
             print("  stage recognized controls after each writer; refuse payload drift")
-            print(f"  control-tail commit: git commit --only -m {(message + CONTROL_TAIL_SUFFIX)!r} -- <fresh control paths>")
+            print(
+                f"  control-tail commit: git commit --only -m {(message + CONTROL_TAIL_SUFFIX)!r} -- <fresh control paths>"
+            )
             for path in classification.control_paths:
                 print(f"    - {path}")
         else:
@@ -661,10 +801,17 @@ def print_plan(
         print("  confirm landed Pages manifest and standard validation before push")
     if args.skip_commit and args.push:
         print("  push requires a clean tree and fresh post-landing validation")
-    print("push: " + ("git push -u origin HEAD" if args.push else "skipped (--push not given)"))
+    print(
+        "push: "
+        + ("git push -u origin HEAD" if args.push else "skipped (--push not given)")
+    )
     print(
         "pull request: "
-        + (f"gh pr create --title {args.pr!r}" if args.pr else "skipped (--pr not given)")
+        + (
+            f"gh pr create --title {args.pr!r}"
+            if args.pr
+            else "skipped (--pr not given)"
+        )
     )
     print("dry-run: nothing was executed")
 
@@ -678,7 +825,10 @@ def main() -> None:
     print(f"dirty paths: {len(paths)} ({len(payload)} payload, {len(control)} control)")
     leftovers = sorted(set(paths) - set(payload) - set(control))
     if leftovers:
-        print("left uncommitted (classified into neither commit phase): " + ", ".join(leftovers))
+        print(
+            "left uncommitted (classified into neither commit phase): "
+            + ", ".join(leftovers)
+        )
     payload_dirty = any(not is_control_path(Path(path)) for path in paths)
     tier = resolve_tier(args.tier, classification.tiers, payload_dirty)
     derived = sorted(t for t in classification.tiers if t in TIER_ORDER)
@@ -702,15 +852,26 @@ def main() -> None:
     if not args.skip_commit and (payload or control):
         if not refresh_review():
             raise SystemExit(1)
-        current_payload = [path for path in dirty_paths() if not is_control_path(Path(path))]
-        if not _same_head(head_before) or _path_state(current_payload) != payload_before:
-            print("settle refused: payload changed during review preflight; review it and run again")
+        current_payload = [
+            path for path in dirty_paths() if not is_control_path(Path(path))
+        ]
+        if (
+            not _same_head(head_before)
+            or _path_state(current_payload) != payload_before
+        ):
+            print(
+                "settle refused: payload changed during review preflight; review it and run again"
+            )
             raise SystemExit(1)
-    if not run_battery(tier, paths, bool(payload) and not args.skip_commit and tier == "full"):
+    if not run_battery(
+        tier, paths, bool(payload) and not args.skip_commit and tier == "full"
+    ):
         raise SystemExit(1)
     payload_after = [path for path in dirty_paths() if not is_control_path(Path(path))]
     if not _same_head(head_before) or _path_state(payload_after) != payload_before:
-        print("settle refused: payload changed during the battery; review it and run again")
+        print(
+            "settle refused: payload changed during the battery; review it and run again"
+        )
         raise SystemExit(1)
     if args.skip_commit:
         print("commit chain skipped (--skip-commit)")
@@ -718,7 +879,9 @@ def main() -> None:
             raise SystemExit(1)
     else:
         if payload:
-            if not commit_paths(payload, args.commit_message or DEFAULT_COMMIT_MESSAGE, "payload"):
+            if not commit_paths(
+                payload, args.commit_message or DEFAULT_COMMIT_MESSAGE, "payload"
+            ):
                 raise SystemExit(1)
         else:
             print("payload commit skipped (no payload paths)")
@@ -729,7 +892,9 @@ def main() -> None:
                 raise SystemExit(1)
         control = [path for path in dirty_paths() if is_control_path(Path(path))]
         if control:
-            tail_message = (args.commit_message or DEFAULT_COMMIT_MESSAGE) + CONTROL_TAIL_SUFFIX
+            tail_message = (
+                args.commit_message or DEFAULT_COMMIT_MESSAGE
+            ) + CONTROL_TAIL_SUFFIX
             if not commit_paths(control, tail_message, "control tail"):
                 raise SystemExit(1)
         else:

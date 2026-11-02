@@ -7,6 +7,7 @@ Usage:
     python3 fetch_youtube_data.py --institute  # institute channel only
     python3 fetch_youtube_data.py --dry-run    # print stats from existing JSON
 """
+
 import argparse
 import logging
 import sys
@@ -106,7 +107,10 @@ def merge_videos(existing: list[dict], fetched: list[dict]) -> list[dict]:
                 by_id[video["id"]] = merged
             else:
                 by_id[video["id"]] = video
-    return sorted(by_id.values(), key=lambda video: (video.get("upload_date", ""), video.get("id", "")))
+    return sorted(
+        by_id.values(),
+        key=lambda video: (video.get("upload_date", ""), video.get("id", "")),
+    )
 
 
 def refresh_channel(
@@ -129,7 +133,9 @@ def refresh_channel(
     started = clock()
     try:
         fetch = fetcher(channel_url, channel_id, tabs=yf.FAST_TABS if fast else None)
-    except Exception as exc:  # pragma: no cover - defensive boundary for custom fetchers
+    except (
+        Exception
+    ) as exc:  # pragma: no cover - defensive boundary for custom fetchers
         return ChannelRefreshResult(
             channel_id=channel_id,
             channel_url=channel_url,
@@ -206,21 +212,31 @@ def refresh_channel(
         date_keys = ("upload_date", "year", "month", "day")
         exact_dates = {
             video["id"]: {key: video[key] for key in date_keys if video.get(key)}
-            for tab in fetch.tabs if tab.mode == "full"
+            for tab in fetch.tabs
+            if tab.mode == "full"
             for video in tab.videos
         }
         approximate_ids = {
             video["id"]
-            for tab in fetch.tabs if tab.mode == "approximate"
+            for tab in fetch.tabs
+            if tab.mode == "approximate"
             for video in tab.videos
         }
         cached_dates = {
             video["id"]: {key: video[key] for key in date_keys if video.get(key)}
-            for video in existing_videos if isinstance(video, dict) and video.get("id")
+            for video in existing_videos
+            if isinstance(video, dict) and video.get("id")
         }
         videos = [
-            {**video, **exact_dates.get(video["id"],
-                cached_dates.get(video["id"], {}) if video["id"] in approximate_ids else {})}
+            {
+                **video,
+                **exact_dates.get(
+                    video["id"],
+                    cached_dates.get(video["id"], {})
+                    if video["id"] in approximate_ids
+                    else {},
+                ),
+            }
             for video in videos
         ]
 
@@ -275,25 +291,35 @@ def fetch_and_save(
 
 def print_refresh_result(result: ChannelRefreshResult) -> None:
     """Render the structured result while preserving a machine-readable API."""
-    print(f"\n--- Fetching {result.channel_id} channel ({'fast' if result.fast else 'exact'}): {result.channel_url} ---")
+    print(
+        f"\n--- Fetching {result.channel_id} channel ({'fast' if result.fast else 'exact'}): {result.channel_url} ---"
+    )
     if result.fetch is None:
         if result.failure is None:
             print("  Refresh failed before a structured fetch result was available.")
         else:
-            print(f"  Refresh failed during {result.failure.stage}: {result.failure.error_type}: {result.failure.message}")
+            print(
+                f"  Refresh failed during {result.failure.stage}: {result.failure.error_type}: {result.failure.message}"
+            )
         return
 
     if not result.fetch.complete:
-        print(f"  Incomplete refresh after {result.elapsed_seconds:.1f}s; existing cache preserved.")
+        print(
+            f"  Incomplete refresh after {result.elapsed_seconds:.1f}s; existing cache preserved."
+        )
         for failure in result.fetch.failures:
             print(f"  {failure.tab}: {failure.error_type}: {failure.message}")
         return
 
     if result.failure is not None:
-        print(f"  Refresh failed during {result.failure.stage}: {result.failure.error_type}: {result.failure.message}")
+        print(
+            f"  Refresh failed during {result.failure.stage}: {result.failure.error_type}: {result.failure.message}"
+        )
         return
 
-    print(f"  {result.written_video_count or 0} videos saved ({result.elapsed_seconds:.1f}s)")
+    print(
+        f"  {result.written_video_count or 0} videos saved ({result.elapsed_seconds:.1f}s)"
+    )
     print(f"  Saved → {result.output_path}")
 
 
@@ -307,15 +333,25 @@ def dry_run(channel_id: str) -> None:
     videos = data["videos"]
     dates = [v["upload_date"] for v in videos] if videos else []
     date_range = f"{min(dates)[:4]}–{max(dates)[:4]}" if dates else "no videos"
-    print(f"  {channel_id}: {meta['video_count']} videos | {date_range} | fetched {meta['fetched_at'][:10]}")
+    print(
+        f"  {channel_id}: {meta['video_count']} videos | {date_range} | fetched {meta['fetched_at'][:10]}"
+    )
 
 
 def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Fetch YouTube channel metadata")
-    parser.add_argument("--personal", action="store_true", help="Fetch personal channel only")
-    parser.add_argument("--institute", action="store_true", help="Fetch institute channel only")
-    parser.add_argument("--dry-run", action="store_true", help="Print stats from existing JSON")
-    parser.add_argument("--fast", action="store_true", help="Use flat-playlist metadata for all tabs")
+    parser.add_argument(
+        "--personal", action="store_true", help="Fetch personal channel only"
+    )
+    parser.add_argument(
+        "--institute", action="store_true", help="Fetch institute channel only"
+    )
+    parser.add_argument(
+        "--dry-run", action="store_true", help="Print stats from existing JSON"
+    )
+    parser.add_argument(
+        "--fast", action="store_true", help="Use flat-playlist metadata for all tabs"
+    )
     args = parser.parse_args(argv)
 
     if args.personal and not args.institute:
@@ -335,7 +371,9 @@ def main(argv: Sequence[str] | None = None) -> int:
         results = [fetch_and_save(ch, fast=args.fast) for ch in targets]
         for result in results:
             print_refresh_result(result)
-        failed = [result for result in results if not result.complete or not result.saved]
+        failed = [
+            result for result in results if not result.complete or not result.saved
+        ]
         if failed:
             print("\nRefresh incomplete; no incomplete channel cache was written.")
             return 1

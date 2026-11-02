@@ -64,6 +64,7 @@ def _scholar_claim() -> dict:
         ),
     }
 
+
 from docxology_tools.report_paths import generated_timestamp, latest_source_report, rel  # noqa: E402
 
 
@@ -77,14 +78,20 @@ def _current_work_count() -> int:
         return int(payload.get("count") or len(payload.get("works", [])))
     rows = [
         line
-        for line in (REPO_ROOT / "pages" / "BIBLIOGRAPHY.md").read_text(encoding="utf-8").splitlines()
+        for line in (REPO_ROOT / "pages" / "BIBLIOGRAPHY.md")
+        .read_text(encoding="utf-8")
+        .splitlines()
         if re.match(r"\| \d+ \|", line)
     ]
     return len(rows)
 
 
 def _current_paper_folder_count() -> int:
-    return sum(1 for path in (REPO_ROOT / "papers").iterdir() if path.is_dir() and re.match(r"\d{4}_", path.name))
+    return sum(
+        1
+        for path in (REPO_ROOT / "papers").iterdir()
+        if path.is_dir() and re.match(r"\d{4}_", path.name)
+    )
 
 
 def _latest_snapshot_payload() -> dict:
@@ -127,14 +134,31 @@ def _require_static_counts_in_fragment(
         if not claim or f"{int(work_count or 0)} works" not in claim:
             errors.append("curated-work-count claim missing authoritative work count")
     elif claim_id == "paper-folder-count":
-        if not claim or f"{int(folder_count or 0)} per-paper documentation folders" not in claim:
-            errors.append("paper-folder-count claim missing authoritative paper-folder count")
+        if (
+            not claim
+            or f"{int(folder_count or 0)} per-paper documentation folders" not in claim
+        ):
+            errors.append(
+                "paper-folder-count claim missing authoritative paper-folder count"
+            )
     elif claim_id == "docxology-github-public-repos":
-        if docxology_public_repos is None or not claim or f"has {docxology_public_repos} public repositories" not in claim:
-            errors.append("docxology-github-public-repos claim missing authoritative repository count")
+        if (
+            docxology_public_repos is None
+            or not claim
+            or f"has {docxology_public_repos} public repositories" not in claim
+        ):
+            errors.append(
+                "docxology-github-public-repos claim missing authoritative repository count"
+            )
     elif claim_id == "aii-github-public-repos":
-        if aii_public_repos is None or not claim or f"has {aii_public_repos} public repositories" not in claim:
-            errors.append("aii-github-public-repos claim missing authoritative repository count")
+        if (
+            aii_public_repos is None
+            or not claim
+            or f"has {aii_public_repos} public repositories" not in claim
+        ):
+            errors.append(
+                "aii-github-public-repos claim missing authoritative repository count"
+            )
     return errors
 
 
@@ -159,25 +183,41 @@ def _stale_claim_fragment_errors(
         docxology_public_repos=docxology_public_repos,
         aii_public_repos=aii_public_repos,
     )
-    if checked_at and source_counts_timestamp and claim_id in {"curated-work-count", "paper-folder-count"}:
-        if _date_prefix(checked_at) and _date_prefix(checked_at) != _date_prefix(source_counts_timestamp):
+    if (
+        checked_at
+        and source_counts_timestamp
+        and claim_id in {"curated-work-count", "paper-folder-count"}
+    ):
+        if _date_prefix(checked_at) and _date_prefix(checked_at) != _date_prefix(
+            source_counts_timestamp
+        ):
             errors.append(
                 f"{claim_id} checked_at {checked_at} does not match source timestamp {source_counts_timestamp}"
             )
-    if checked_at and source_public_source_timestamp and claim_id in {
-        "docxology-github-public-repos",
-        "aii-github-public-repos",
-    }:
-        if _date_prefix(checked_at) and _date_prefix(checked_at) != _date_prefix(source_public_source_timestamp):
+    if (
+        checked_at
+        and source_public_source_timestamp
+        and claim_id
+        in {
+            "docxology-github-public-repos",
+            "aii-github-public-repos",
+        }
+    ):
+        if _date_prefix(checked_at) and _date_prefix(checked_at) != _date_prefix(
+            source_public_source_timestamp
+        ):
             errors.append(
                 f"{claim_id} checked_at {checked_at} does not match public-source timestamp {source_public_source_timestamp}"
             )
     return errors
 
+
 def _snapshot_value(snapshot: dict, label: str, key: str) -> int | str | None:
     for check in snapshot.get("checks", []):
         if check.get("label") == label:
-            result = check.get("result") if isinstance(check.get("result"), dict) else {}
+            result = (
+                check.get("result") if isinstance(check.get("result"), dict) else {}
+            )
             return result.get(key)
     return None
 
@@ -191,7 +231,9 @@ _GITHUB_ACCOUNT_PHRASES = {"Organization": "an Organization", "User": "a User ac
 def _aii_account_type(snapshot: dict) -> str | None:
     """The AII GitHub account `type` recorded in the public-source snapshot, or None."""
     value = _snapshot_value(snapshot, AII_GITHUB_LABEL, "type")
-    return value if isinstance(value, str) and value in _GITHUB_ACCOUNT_PHRASES else None
+    return (
+        value if isinstance(value, str) and value in _GITHUB_ACCOUNT_PHRASES else None
+    )
 
 
 def _aii_claim_texts(snapshot: dict, public_repos: int | str | None) -> dict[str, str]:
@@ -311,7 +353,9 @@ def _claims() -> list[dict]:
     snapshot = _latest_snapshot_payload()
     snapshot_ts = snapshot.get("generated_at")
     github_inventory = counts.get("github_inventory", {})
-    docx_public_repos = _snapshot_value(snapshot, "GitHub user docxology", "public_repos")
+    docx_public_repos = _snapshot_value(
+        snapshot, "GitHub user docxology", "public_repos"
+    )
     if docx_public_repos is None:
         docx_public_repos = github_inventory.get("docxology")
     aii_public_repos = _snapshot_value(snapshot, AII_GITHUB_LABEL, "public_repos")
@@ -329,7 +373,11 @@ def _claims() -> list[dict]:
             "id": "curated-work-count",
             "claim": f"The curated bibliography contains {work_count} works.",
             "status": "curated-local",
-            "sources": ["pages/BIBLIOGRAPHY.md", "publications.html", "data/works.json"],
+            "sources": [
+                "pages/BIBLIOGRAPHY.md",
+                "publications.html",
+                "data/works.json",
+            ],
             "checked_at": counts_ts or "2026-06-16T03:36:11+00:00",
             "confidence": "high",
             "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
@@ -352,7 +400,9 @@ def _claims() -> list[dict]:
             "claim": f"The docxology GitHub profile has {docx_public_repos} public repositories.",
             "status": "public-api",
             "sources": ["https://api.github.com/users/docxology", snapshot_source],
-            "checked_at": snapshot_ts or counts_ts or "2026-06-09T03:41:15.072709+00:00",
+            "checked_at": snapshot_ts
+            or counts_ts
+            or "2026-06-09T03:41:15.072709+00:00",
             "confidence": "high",
             "verification_method": "GitHub REST API user profile response.",
             "maintenance_owner": "INTEGRATOR",
@@ -364,9 +414,11 @@ def _claims() -> list[dict]:
             "status": "public-api",
             "sources": [
                 "https://api.github.com/users/ActiveInferenceInstitute",
-                snapshot_source
+                snapshot_source,
             ],
-            "checked_at": snapshot_ts or counts_ts or "2026-06-09T03:41:15.072709+00:00",
+            "checked_at": snapshot_ts
+            or counts_ts
+            or "2026-06-09T03:41:15.072709+00:00",
             "confidence": "high",
             "verification_method": aii_texts["verification_method"],
             "maintenance_owner": "INTEGRATOR",
@@ -402,7 +454,7 @@ def _claims() -> list[dict]:
                 "https://docs.curio.cards/faqs",
                 "https://www.christies.com/en/lot/lot-6337619",
                 "https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd",
-                "papers/2024_CurioCards/README.md"
+                "papers/2024_CurioCards/README.md",
             ],
             "checked_at": "2026-08-26",
             "confidence": "high",
@@ -419,7 +471,7 @@ def _claims() -> list[dict]:
                 "https://purl.stanford.edu/pb813wm1484",
                 "https://purl.stanford.edu/pb813wm1484.mods",
                 "papers/2019_PhDDissertation/README.md",
-                "pages/PROFILE.md"
+                "pages/PROFILE.md",
             ],
             "checked_at": "2026-08-26",
             "confidence": "high",
@@ -452,7 +504,7 @@ def _claims() -> list[dict]:
                 "https://activeinference.institute/structure/board-of-directors/",
                 "https://projects.propublica.org/nonprofits/organizations/882985125",
                 "pages/DISCOVERY.md",
-                "pages/PROFILE.md"
+                "pages/PROFILE.md",
             ],
             "checked_at": "2026-08-26",
             "confidence": "high",
@@ -467,7 +519,7 @@ def _claims() -> list[dict]:
             "sources": [
                 "https://activeinference.institute/structure/board-of-directors/",
                 "pages/LINKS.md",
-                "pages/WIKIPEDIA.md"
+                "pages/WIKIPEDIA.md",
             ],
             "checked_at": "2026-08-26",
             "confidence": "high",
@@ -482,7 +534,7 @@ def _claims() -> list[dict]:
             "sources": [
                 "https://activeinference.institute/structure/scientific-advisory-board/",
                 "pages/LINKS.md",
-                "pages/DISCOVERY.md"
+                "pages/DISCOVERY.md",
             ],
             "checked_at": "2026-10-06",
             "confidence": "medium",
@@ -497,7 +549,7 @@ def _claims() -> list[dict]:
             "sources": [
                 "https://activeinference.institute/projects/textbook-group/",
                 "README.md",
-                "pages/VIDEOS.md"
+                "pages/VIDEOS.md",
             ],
             "checked_at": "2026-10-06",
             "confidence": "medium",
@@ -509,7 +561,12 @@ def _claims() -> list[dict]:
             "id": "college-of-the-redwoods-teaching",
             "claim": "Profile teaching copy lists BIOL-1 at Pelican Bay for Spring and Fall 2026 and BIOL-8 Human Biology for Spring 2026.",
             "status": "principal-confirmed",
-            "sources": ["README.md", "index.html", "pages/PROFILE.md", "pages/VERIFICATION_LOG.md"],
+            "sources": [
+                "README.md",
+                "index.html",
+                "pages/PROFILE.md",
+                "pages/VERIFICATION_LOG.md",
+            ],
             "checked_at": "2026-08-26",
             "confidence": "medium",
             "verification_method": "Principal-confirmed instructor-of-record update supplied 2026-08-26 and synchronized across profile source surfaces.",
@@ -557,16 +614,28 @@ def _existing_generated_at(path: Path) -> str | None:
 
 def _hydrate_claim_checks(*, enforce_stale_checks: bool = True) -> list[dict]:
     claims = []
-    latest_snapshot = _latest_source("public_source_snapshot_*.json", "reports/public_source_snapshot_2026-05-15.json")
-    latest_inventory = _latest_source("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json")
+    latest_snapshot = _latest_source(
+        "public_source_snapshot_*.json",
+        "reports/public_source_snapshot_2026-05-15.json",
+    )
+    latest_inventory = _latest_source(
+        "public_source_inventory_*.json",
+        "reports/public_source_inventory_2026-05-15.json",
+    )
     snapshot = _latest_snapshot_payload()
     payload_json = _current_counts_payload()
     payload_counts = payload_json.get("counts", {})
     work_count = payload_counts.get("bibliography_works", _current_work_count())
-    folder_count = payload_counts.get("paper_folder_docs", _current_paper_folder_count())
+    folder_count = payload_counts.get(
+        "paper_folder_docs", _current_paper_folder_count()
+    )
     _, catalogued_aii = parse_software_catalog_counts()
-    counts_payload = _current_counts_payload().get("counts", {}).get("github_inventory", {})
-    docxology_public_repos = _snapshot_value(snapshot, "GitHub user docxology", "public_repos")
+    counts_payload = (
+        _current_counts_payload().get("counts", {}).get("github_inventory", {})
+    )
+    docxology_public_repos = _snapshot_value(
+        snapshot, "GitHub user docxology", "public_repos"
+    )
     if docxology_public_repos is None:
         docxology_public_repos = counts_payload.get("docxology")
     aii_public_repos = _snapshot_value(snapshot, AII_GITHUB_LABEL, "public_repos")
@@ -601,12 +670,24 @@ def _hydrate_claim_checks(*, enforce_stale_checks: bool = True) -> list[dict]:
     for claim in _claims():
         claim_copy = dict(claim)
         if claim_copy["id"] == "curated-work-count":
-            claim_copy["claim"] = f"The curated bibliography contains {work_count} works."
+            claim_copy["claim"] = (
+                f"The curated bibliography contains {work_count} works."
+            )
         elif claim_copy["id"] == "paper-folder-count":
-            claim_copy["claim"] = f"The repository contains {folder_count} per-paper documentation folders."
-        elif claim_copy["id"] == "docxology-github-public-repos" and docxology_public_repos is not None:
-            claim_copy["claim"] = f"The docxology GitHub profile has {docxology_public_repos} public repositories."
-        elif claim_copy["id"] == "aii-github-public-repos" and aii_public_repos is not None:
+            claim_copy["claim"] = (
+                f"The repository contains {folder_count} per-paper documentation folders."
+            )
+        elif (
+            claim_copy["id"] == "docxology-github-public-repos"
+            and docxology_public_repos is not None
+        ):
+            claim_copy["claim"] = (
+                f"The docxology GitHub profile has {docxology_public_repos} public repositories."
+            )
+        elif (
+            claim_copy["id"] == "aii-github-public-repos"
+            and aii_public_repos is not None
+        ):
             # Same helper as the static claim in _claims(): both read the account type from
             # the snapshot, so the hydrated and static texts cannot disagree.
             aii_texts = _aii_claim_texts(snapshot, aii_public_repos)
@@ -622,15 +703,20 @@ def _hydrate_claim_checks(*, enforce_stale_checks: bool = True) -> list[dict]:
         # manual review date). Overwriting it with "now" on every regen falsely implied
         # every claim had just been re-verified.
         claim_copy["sources"] = [
-            latest_snapshot if source.startswith("reports/public_source_snapshot_") else
-            latest_inventory if source.startswith("reports/public_source_inventory_") else source
+            latest_snapshot
+            if source.startswith("reports/public_source_snapshot_")
+            else latest_inventory
+            if source.startswith("reports/public_source_inventory_")
+            else source
             for source in claim_copy.get("sources", [])
         ]
         claims.append(claim_copy)
     return claims
 
 
-def render_outputs(generated_at: str | None = None, *, enforce_stale_checks: bool = True) -> dict[Path, str]:
+def render_outputs(
+    generated_at: str | None = None, *, enforce_stale_checks: bool = True
+) -> dict[Path, str]:
     software = parse_software()
     generated_at = generated_at or generated_timestamp()
     claims = _hydrate_claim_checks(enforce_stale_checks=enforce_stale_checks)
@@ -648,7 +734,11 @@ def render_outputs(generated_at: str | None = None, *, enforce_stale_checks: boo
         )
         + "\n",
         REPO_ROOT / "data" / "people.json": json.dumps(
-            {"generated_at": generated_at, "schema_ref": "/data/agent-index.json#schemas/Person", "people": PEOPLE},
+            {
+                "generated_at": generated_at,
+                "schema_ref": "/data/agent-index.json#schemas/Person",
+                "people": PEOPLE,
+            },
             indent=2,
             ensure_ascii=False,
         )
@@ -664,7 +754,11 @@ def render_outputs(generated_at: str | None = None, *, enforce_stale_checks: boo
         )
         + "\n",
         REPO_ROOT / "data" / "claims.json": json.dumps(
-            {"generated_at": generated_at, "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence", "claims": claims},
+            {
+                "generated_at": generated_at,
+                "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence",
+                "claims": claims,
+            },
             indent=2,
             ensure_ascii=False,
         )
@@ -674,17 +768,25 @@ def render_outputs(generated_at: str | None = None, *, enforce_stale_checks: boo
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if generated files are stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if generated files are stale"
+    )
     args = parser.parse_args()
 
-    generated_at = _existing_generated_at(REPO_ROOT / "data" / "claims.json") if args.check else None
+    generated_at = (
+        _existing_generated_at(REPO_ROOT / "data" / "claims.json")
+        if args.check
+        else None
+    )
     if not args.check:
         candidate_outputs = render_outputs(enforce_stale_checks=False)
         stable_values = [
             stable_generated_at(path, json.loads(content))
             for path, content in candidate_outputs.items()
         ]
-        if stable_values and all(value and value == stable_values[0] for value in stable_values):
+        if stable_values and all(
+            value and value == stable_values[0] for value in stable_values
+        ):
             generated_at = stable_values[0]
     outputs = render_outputs(generated_at, enforce_stale_checks=args.check)
     stale: list[str] = []

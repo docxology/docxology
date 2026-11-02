@@ -1,0 +1,106 @@
+{
+  "title": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.22409418",
+  "doi_url": "https://doi.org/10.5281/zenodo.22409418",
+  "zenodo_record": "https://zenodo.org/records/22409418",
+  "record_id": "22409419",
+  "publication_date": "2026-10-30",
+  "resource_type": {
+    "title": "Software",
+    "type": "software"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Language offers a testbed for cognitive models that connect uncertain perception,\nstructured representations and goal-directed action. AILM (Active Inference\nLanguage Model) explores this connection through explicit discrete generative\nmodels implemented in pymdp. Its six linguistic levels\nrepresent letters, phonemes, words, case roles, sentence types and document\nposition. Conditional probabilities, preferences, habits and policy precision\nhave declared meanings and inspectable parameter sources.\n\nAILM provides a bounded alternative to learned embedding representations for\nstudying specified linguistic mechanisms, and a potential complement to the\nbroader predictive capabilities of large language models. Its generative core\nuses no transformer, neural network or learned embedding. Generalized Notation\nNotation (GNN) specifies the models; pymdp executes their inference and, only\non the generation path, selects policies under expected free energy. A connected runtime exchanges conditional messages and supports\nnext-word policy selection. This composition does not establish a globally\nexact posterior, and the letter generator's expected-free-energy rule reduces\nto a preference-weighted softmax over the habit. These explicit mechanisms are\ncandidates for cognitive investigation, not evidence of human-like understanding.\n\nOn a locally frozen Georgetown University Multilayer (GUM) corpus population,\nthe connected comparison indicates\nlower integrated loss than disabling the named channels while retaining\nthe same train-fitted observation encoder. This result concerns normalized\nletters and token spaces; full-stream closed-vocabulary word loss remains\ninfinite because out-of-vocabulary tokens receive zero word probability. The comparison is local evidence for a fixed\ncomposition, not external replication or unrestricted language competence.\n\nSeparate component and intervention studies show that linguistic messages can\nhelp or harm a receiver; different insertion sites constrain their attribution.\nThe accompanying gate-audit method compares thresholds with trivial baselines,\ntyped comparators and deliberately broken variants, and binds numerical results\nto recorded runs through a claims ledger. Historical gates were largely repaired\nafter construction, and held-back findings retain their stated task and\nuncertainty limits. The contribution is an inspectable platform for testing\nlinguistic inference mechanisms together with an audit method that makes their\nfailures visible. External neural models serve as supplemental reference probes;\nintegration with them remains a proposal.",
+  "keywords": [
+    "active inference",
+    "Generalized Notation Notation",
+    "GNN",
+    "pymdp",
+    "discrete state space",
+    "language model",
+    "computational linguistics",
+    "hidden Markov model",
+    "gate audit",
+    "reproducibility"
+  ],
+  "files": [
+    {
+      "name": "AILM-1.0.0-renderer-build-support.zip",
+      "size_bytes": 14754,
+      "checksum": "md5:7fe6e74b916a8f12f5442a9035e3cede",
+      "download_url": "https://zenodo.org/api/records/22409419/files/AILM-1.0.0-renderer-build-support.zip/content"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size_bytes": 777,
+      "checksum": "md5:e430a4838fe536b6df133f2efbd608fa",
+      "download_url": "https://zenodo.org/api/records/22409419/files/SHA256SUMS/content"
+    },
+    {
+      "name": "AILM-1.0.0-software-verification.json",
+      "size_bytes": 18353,
+      "checksum": "md5:bdda6aeb7e43bac4bc4ebb14546d5727",
+      "download_url": "https://zenodo.org/api/records/22409419/files/AILM-1.0.0-software-verification.json/content"
+    },
+    {
+      "name": "ailm-1.0.0.tar.gz",
+      "size_bytes": 5315276,
+      "checksum": "md5:c33fbda34104e22767e47233a8e806f1",
+      "download_url": "https://zenodo.org/api/records/22409419/files/ailm-1.0.0.tar.gz/content"
+    },
+    {
+      "name": "ailm-1.0.0-py3-none-any.whl",
+      "size_bytes": 4578364,
+      "checksum": "md5:c52aa29660cc18e204c15c5837cdea8b",
+      "download_url": "https://zenodo.org/api/records/22409419/files/ailm-1.0.0-py3-none-any.whl/content"
+    },
+    {
+      "name": "AILM-1.0.0-source-tree-manifest.json",
+      "size_bytes": 186645,
+      "checksum": "md5:dcb2b81b7babab0c5a9faf1fdaf0a02c",
+      "download_url": "https://zenodo.org/api/records/22409419/files/AILM-1.0.0-source-tree-manifest.json/content"
+    },
+    {
+      "name": "AILM-1.0.0-manuscript.zip",
+      "size_bytes": 21857574,
+      "checksum": "md5:dd8564b8bd3f59e23b418a57a34c952f",
+      "download_url": "https://zenodo.org/api/records/22409419/files/AILM-1.0.0-manuscript.zip/content"
+    },
+    {
+      "name": "AILM-1.0.0-source.zip",
+      "size_bytes": 31021590,
+      "checksum": "md5:6d2d8d9f4f1974aa0c9deba1ca2802c8",
+      "download_url": "https://zenodo.org/api/records/22409419/files/AILM-1.0.0-source.zip/content"
+    },
+    {
+      "name": "Active_Inference_Language_Model_1.0.0.pdf",
+      "size_bytes": 12557861,
+      "checksum": "md5:0069da0ddc324090bd48f85a41908b1c",
+      "download_url": "https://zenodo.org/api/records/22409419/files/Active_Inference_Language_Model_1.0.0.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/ActiveInferenceInstitute/active_inference_language_model"
+    }
+  ],
+  "github_repo": "ActiveInferenceInstitute/active_inference_language_model",
+  "github_release_url": "https://github.com/ActiveInferenceInstitute/active_inference_language_model/releases/tag/v1.0.0",
+  "release_tag": "v1.0.0",
+  "release_name": "AILM 1.0.0",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked"
+  ],
+  "checked_at": "2026-11-01T01:04:10Z"
+}

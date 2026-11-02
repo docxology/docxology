@@ -69,7 +69,9 @@ def sha256(path: Path) -> str:
 
 
 def git_value(*args: str) -> str:
-    result = subprocess.run(["git", *args], cwd=REPO_ROOT, capture_output=True, text=True, check=False)
+    result = subprocess.run(
+        ["git", *args], cwd=REPO_ROOT, capture_output=True, text=True, check=False
+    )
     return result.stdout.strip() if result.returncode == 0 else "unknown"
 
 
@@ -110,7 +112,15 @@ def deployed_content_differs(deployed_commit: str) -> bool | None:
     if not deployed_commit or deployed_commit == "unknown":
         return None
     result = subprocess.run(
-        ["git", "diff", "--quiet", deployed_commit, "--", ".", *DEPLOYMENT_COMPARE_EXCLUDES],
+        [
+            "git",
+            "diff",
+            "--quiet",
+            deployed_commit,
+            "--",
+            ".",
+            *DEPLOYMENT_COMPARE_EXCLUDES,
+        ],
         cwd=REPO_ROOT,
         capture_output=True,
         check=False,
@@ -136,7 +146,9 @@ def deployment_pending_reasons(
     elif deployed_content_differs is True:
         reasons.append("tracked release content differs from the deployed commit")
     elif deployed_content_differs is None:
-        reasons.append("unable to compare tracked release content with the deployed commit")
+        reasons.append(
+            "unable to compare tracked release content with the deployed commit"
+        )
     if deployment.get("pages_status") != "built":
         reasons.append(f"Pages status is {deployment.get('pages_status') or 'unknown'}")
     if deployment.get("verification_overall_ok") is not True:
@@ -152,11 +164,25 @@ def validated_pages_source_commit(pages: dict) -> str:
 
 
 def build_payload() -> dict:
-    project = tomllib.loads((REPO_ROOT / "pyproject.toml").read_text(encoding="utf-8"))["project"]
-    current = json.loads((REPO_ROOT / "data/current-counts.json").read_text(encoding="utf-8"))
-    pages = json.loads((REPO_ROOT / "data/pages-artifact-manifest.json").read_text(encoding="utf-8"))
-    source_hashes = {path: sha256(REPO_ROOT / path) for path in SOURCE_FILES if (REPO_ROOT / path).is_file()}
-    generator_hashes = {path: sha256(REPO_ROOT / path) for path in GENERATOR_FILES if (REPO_ROOT / path).is_file()}
+    project = tomllib.loads((REPO_ROOT / "pyproject.toml").read_text(encoding="utf-8"))[
+        "project"
+    ]
+    current = json.loads(
+        (REPO_ROOT / "data/current-counts.json").read_text(encoding="utf-8")
+    )
+    pages = json.loads(
+        (REPO_ROOT / "data/pages-artifact-manifest.json").read_text(encoding="utf-8")
+    )
+    source_hashes = {
+        path: sha256(REPO_ROOT / path)
+        for path in SOURCE_FILES
+        if (REPO_ROOT / path).is_file()
+    }
+    generator_hashes = {
+        path: sha256(REPO_ROOT / path)
+        for path in GENERATOR_FILES
+        if (REPO_ROOT / path).is_file()
+    }
     source_commit = validated_pages_source_commit(pages)
     deployment_payload = {
         "status": "pending_post_deploy_attestation",
@@ -188,8 +214,12 @@ def build_payload() -> dict:
             "source_commit_at_generation": pages.get("source_commit_at_generation"),
             "artifact_file_count": pages.get("budget", {}).get("artifact_file_count"),
             "artifact_bytes": pages.get("budget", {}).get("artifact_bytes"),
-            "omitted_paper_image_count": pages.get("omitted_paper_images", {}).get("count"),
-            "omitted_superseded_report_count": pages.get("omitted_superseded_reports", {}).get("count"),
+            "omitted_paper_image_count": pages.get("omitted_paper_images", {}).get(
+                "count"
+            ),
+            "omitted_superseded_report_count": pages.get(
+                "omitted_superseded_reports", {}
+            ).get("count"),
         },
         "deployment": deployment_payload,
         "privacy": {
@@ -202,7 +232,9 @@ def build_payload() -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if release-integrity.json is stale")
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if release-integrity.json is stale"
+    )
     parser.add_argument(
         "--require-deployed",
         action="store_true",
@@ -210,7 +242,9 @@ def main() -> None:
     )
     args = parser.parse_args()
     payload = build_payload()
-    payload["generated_at"] = stable_generated_at(OUT, payload) or payload["generated_at"]
+    payload["generated_at"] = (
+        stable_generated_at(OUT, payload) or payload["generated_at"]
+    )
     rendered = json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
     if args.require_deployed:
         raise SystemExit(
@@ -219,7 +253,9 @@ def main() -> None:
         )
     if args.check:
         if not OUT.exists() or OUT.read_text(encoding="utf-8") != rendered:
-            raise SystemExit(f"stale release integrity manifest: {OUT.relative_to(REPO_ROOT)}")
+            raise SystemExit(
+                f"stale release integrity manifest: {OUT.relative_to(REPO_ROOT)}"
+            )
         print(f"checked {OUT.relative_to(REPO_ROOT)}")
         return
     OUT.write_text(rendered, encoding="utf-8")

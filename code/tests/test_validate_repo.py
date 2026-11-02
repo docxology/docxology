@@ -84,7 +84,9 @@ def test_live_site_check_mode_matches_validation_tier():
     ]
 
 
-def test_release_worktree_rejects_unrecognized_changes_but_allows_declared_receipts(tmp_path: Path):
+def test_release_worktree_rejects_unrecognized_changes_but_allows_declared_receipts(
+    tmp_path: Path,
+):
     repo = _fixture_repo(tmp_path)
     (repo / "source.txt").write_text("committed\n", encoding="utf-8")
     _git(repo, "add", "source.txt")
@@ -100,7 +102,9 @@ def test_release_worktree_rejects_unrecognized_changes_but_allows_declared_recei
     assert errors == ["release source worktree is not clean: README.md"]
 
 
-def test_all_declared_postdeploy_receipts_are_clean_but_unknown_report_is_source_drift(tmp_path: Path):
+def test_all_declared_postdeploy_receipts_are_clean_but_unknown_report_is_source_drift(
+    tmp_path: Path,
+):
     repo = _fixture_repo(tmp_path)
     (repo / "source.txt").write_text("committed\n", encoding="utf-8")
     _git(repo, "add", "source.txt")
@@ -141,7 +145,9 @@ def test_all_declared_postdeploy_receipts_are_clean_but_unknown_report_is_source
     ]
 
 
-def test_isolated_candidate_validation_reads_committed_source_not_fresh_receipts(tmp_path: Path):
+def test_isolated_candidate_validation_reads_committed_source_not_fresh_receipts(
+    tmp_path: Path,
+):
     """A real detached worktree must see HEAD, including same-path report bytes."""
     repo = _fixture_repo(tmp_path)
     report = repo / "reports" / "external_links_2026-08-25.json"
@@ -204,16 +210,23 @@ def _validate_json_files_in_empty_repo(tmp_path: Path, *, strict_reports: bool) 
         strict_reports,
         repo_root=tmp_path,
         required_json_files=[],
-        optional_report_patterns=[("accessibility_static_*.json", "accessibility static checks")],
+        optional_report_patterns=[
+            ("accessibility_static_*.json", "accessibility static checks")
+        ],
     )
 
 
-def test_validate_json_files_default_warns_on_missing_optional_artifacts(tmp_path: Path, capsys):
+def test_validate_json_files_default_warns_on_missing_optional_artifacts(
+    tmp_path: Path, capsys
+):
     _validate_json_files_in_empty_repo(tmp_path, strict_reports=False)
     output = capsys.readouterr().out
 
     assert "optional artifact warnings:" in output
-    assert "Optional accessibility static checks report missing: accessibility_static_*.json" in output
+    assert (
+        "Optional accessibility static checks report missing: accessibility_static_*.json"
+        in output
+    )
 
 
 def test_validate_json_files_strict_enforces_optional_artifacts(tmp_path: Path):
@@ -248,10 +261,10 @@ def test_paper_cff_validation_rejects_stale_doi_roles_and_accepts_rendered_outpu
     cff_path = paper / "CITATION.cff"
     cff_path.write_text(
         "cff-version: 1.2.0\n"
-        "title: \"Example work\"\n"
+        'title: "Example work"\n'
         "date-released: 2026-08-26\n"
         "doi: 10.5281/zenodo.101\n"
-        "url: \"https://doi.org/10.5281/zenodo.101\"\n",
+        'url: "https://doi.org/10.5281/zenodo.101"\n',
         encoding="utf-8",
     )
 
@@ -265,7 +278,11 @@ def test_paper_cff_validation_rejects_stale_doi_roles_and_accepts_rendered_outpu
 
 
 def test_release_cli_refuses_prepayload_override(monkeypatch):
-    monkeypatch.setattr(sys, "argv", ["validate_repo.py", "--release", "--allow-dirty-prepayload-evidence"])
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        ["validate_repo.py", "--release", "--allow-dirty-prepayload-evidence"],
+    )
     with pytest.raises(SystemExit):
         vr.parse_args()
     monkeypatch.setattr(sys, "argv", ["validate_repo.py"])

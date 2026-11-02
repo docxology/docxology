@@ -76,7 +76,9 @@ def parse_paper_folder_count(papers_readme: Path = PAPERS_README) -> int:
     raise ValueError(f"Could not parse paper folder count from {papers_readme}")
 
 
-def parse_software_catalog_counts(software_path: Path = SOFTWARE_PATH) -> tuple[int, int]:
+def parse_software_catalog_counts(
+    software_path: Path = SOFTWARE_PATH,
+) -> tuple[int, int]:
     docxology = 0
     aii = 0
     for line in software_path.read_text(encoding="utf-8").splitlines():
@@ -138,7 +140,9 @@ def _find_int(pattern: str, text: str) -> int | None:
     return int(m.group(1))
 
 
-def _append_if_mismatch(errors: list[str], label: str, value: int | None, expected: int) -> None:
+def _append_if_mismatch(
+    errors: list[str], label: str, value: int | None, expected: int
+) -> None:
     if value is not None and value != expected:
         errors.append(f"{label}: {value} (expected {expected})")
 
@@ -160,7 +164,9 @@ def _folder_links_in_bibliography(rows: list[dict[str, str]]) -> int:
     return sum(1 for row in rows if "../papers/" in row["docs"])
 
 
-def _software_json_counts(errors: list[str], expected_docx: int, expected_aii: int) -> None:
+def _software_json_counts(
+    errors: list[str], expected_docx: int, expected_aii: int
+) -> None:
     path = REPO_ROOT / "data" / "software.json"
     if not path.is_file():
         return
@@ -168,9 +174,21 @@ def _software_json_counts(errors: list[str], expected_docx: int, expected_aii: i
     repos = data.get("repositories", [])
     docx = sum(1 for repo in repos if repo.get("owner") == "docxology")
     aii = sum(1 for repo in repos if repo.get("owner") == "ActiveInferenceInstitute")
-    _append_if_mismatch(errors, "data/software.json count field", data.get("count"), expected_docx + expected_aii)
-    _append_if_mismatch(errors, "data/software.json repositories length", len(repos), expected_docx + expected_aii)
-    _append_if_mismatch(errors, "data/software.json docxology rows", docx, expected_docx)
+    _append_if_mismatch(
+        errors,
+        "data/software.json count field",
+        data.get("count"),
+        expected_docx + expected_aii,
+    )
+    _append_if_mismatch(
+        errors,
+        "data/software.json repositories length",
+        len(repos),
+        expected_docx + expected_aii,
+    )
+    _append_if_mismatch(
+        errors, "data/software.json docxology rows", docx, expected_docx
+    )
     _append_if_mismatch(errors, "data/software.json AII rows", aii, expected_aii)
 
     ld_path = REPO_ROOT / "data" / "software-ld.json"
@@ -184,7 +202,9 @@ def _software_json_counts(errors: list[str], expected_docx: int, expected_aii: i
         )
 
 
-def _github_inventory_counts(errors: list[str]) -> tuple[int | None, int | None, int | None]:
+def _github_inventory_counts(
+    errors: list[str],
+) -> tuple[int | None, int | None, int | None]:
     path = REPO_ROOT / "data" / "github-repositories.json"
     if not path.is_file():
         return None, None, None
@@ -209,29 +229,50 @@ def _github_inventory_counts(errors: list[str]) -> tuple[int | None, int | None,
     return docx, aii, total
 
 
-def _current_counts_report(errors: list[str], works: int, folders: int, software_docx: int, software_aii: int) -> None:
+def _current_counts_report(
+    errors: list[str], works: int, folders: int, software_docx: int, software_aii: int
+) -> None:
     json_path = REPO_ROOT / "data" / "current-counts.json"
     report_path = REPO_ROOT / "reports" / "current_counts.md"
     if not json_path.is_file():
-        errors.append("data/current-counts.json: missing generated volatile-count report")
+        errors.append(
+            "data/current-counts.json: missing generated volatile-count report"
+        )
         return
     if not report_path.is_file():
-        errors.append("reports/current_counts.md: missing generated volatile-count report")
+        errors.append(
+            "reports/current_counts.md: missing generated volatile-count report"
+        )
         return
 
     payload = json.loads(json_path.read_text(encoding="utf-8"))
     counts = payload.get("counts", {})
     software = counts.get("software", {})
     generated_exports = counts.get("generated_exports", {})
-    _append_if_mismatch(errors, "data/current-counts.json bibliography works", counts.get("bibliography_works"), works)
-    _append_if_mismatch(errors, "data/current-counts.json paper-folder docs", counts.get("paper_folder_docs"), folders)
+    _append_if_mismatch(
+        errors,
+        "data/current-counts.json bibliography works",
+        counts.get("bibliography_works"),
+        works,
+    )
+    _append_if_mismatch(
+        errors,
+        "data/current-counts.json paper-folder docs",
+        counts.get("paper_folder_docs"),
+        folders,
+    )
     _append_if_mismatch(
         errors,
         "data/current-counts.json bibliography docs links",
         counts.get("bibliography_docs_links"),
         folders,
     )
-    _append_if_mismatch(errors, "data/current-counts.json docxology software", software.get("docxology_owned"), software_docx)
+    _append_if_mismatch(
+        errors,
+        "data/current-counts.json docxology software",
+        software.get("docxology_owned"),
+        software_docx,
+    )
     _append_if_mismatch(
         errors,
         "data/current-counts.json AII software",
@@ -244,7 +285,12 @@ def _current_counts_report(errors: list[str], works: int, folders: int, software
         software.get("curated_total"),
         software_docx + software_aii,
     )
-    _append_if_mismatch(errors, "data/current-counts.json data/works.json", generated_exports.get("data_works_json"), works)
+    _append_if_mismatch(
+        errors,
+        "data/current-counts.json data/works.json",
+        generated_exports.get("data_works_json"),
+        works,
+    )
     _append_if_mismatch(
         errors,
         "data/current-counts.json data/publications-ld.json",
@@ -297,10 +343,14 @@ def _bibliography_prose_counts(errors: list[str], works: int, folders: int) -> N
         "../reports/current_counts.md",
     )
     if re.search(r"\.\.\.and \d+ more in the table above", text):
-        errors.append("pages/BIBLIOGRAPHY.md: residual domain counts should signpost current totals")
+        errors.append(
+            "pages/BIBLIOGRAPHY.md: residual domain counts should signpost current totals"
+        )
 
 
-def _software_prose_counts(errors: list[str], software_docx: int, software_aii: int) -> None:
+def _software_prose_counts(
+    errors: list[str], software_docx: int, software_aii: int
+) -> None:
     text = SOFTWARE_PATH.read_text(encoding="utf-8")
     hero_match = re.search(
         r"\*(\d+)\s+original repositories · (\d+)\s+catalogued Active Inference Institute contributions",
@@ -370,23 +420,48 @@ def collect_count_drift() -> list[str]:
     domain_payload = counts.get("domains", {}) or {}
     generated_counts = canonical_bibliography_snapshot()
 
-    _append_if_mismatch(errors, "data/current-counts.json bibliography works", counts.get("bibliography_works"), works)
-    _append_if_mismatch(errors, "data/current-counts.json paper-folder docs", counts.get("paper_folder_docs"), folders)
+    _append_if_mismatch(
+        errors,
+        "data/current-counts.json bibliography works",
+        counts.get("bibliography_works"),
+        works,
+    )
+    _append_if_mismatch(
+        errors,
+        "data/current-counts.json paper-folder docs",
+        counts.get("paper_folder_docs"),
+        folders,
+    )
     _append_if_mismatch(
         errors,
         "data/current-counts.json bibliography docs links",
         counts.get("bibliography_docs_links"),
         folders,
     )
-    _append_if_mismatch(errors, "data/current-counts.json docxology software", software.get("docxology_owned"), software_docx)
+    _append_if_mismatch(
+        errors,
+        "data/current-counts.json docxology software",
+        software.get("docxology_owned"),
+        software_docx,
+    )
     _append_if_mismatch(
         errors,
         "data/current-counts.json AII software",
         software.get("active_inference_institute"),
         software_aii,
     )
-    _append_if_mismatch(errors, "data/current-counts.json software total", software.get("curated_total"), software_total)
-    _append_if_mismatch(errors, "data/current-counts.json data/works.json", generated_exports.get("data_works_json"), works)
+    _append_if_mismatch(
+        errors,
+        "data/current-counts.json software total",
+        software.get("curated_total"),
+        software_total,
+    )
+    _append_if_mismatch(
+        errors,
+        "data/current-counts.json data/works.json",
+        generated_exports.get("data_works_json"),
+        works,
+    )
     _append_if_mismatch(
         errors,
         "data/current-counts.json data/publications-ld.json",
@@ -442,13 +517,22 @@ def collect_count_drift() -> list[str]:
     works_json = REPO_ROOT / "data" / "works.json"
     if works_json.is_file():
         data = json.loads(works_json.read_text(encoding="utf-8"))
-        _append_if_mismatch(errors, "data/works.json count field", data.get("count"), works)
-        _append_if_mismatch(errors, "data/works.json works length", len(data.get("works", [])), works)
+        _append_if_mismatch(
+            errors, "data/works.json count field", data.get("count"), works
+        )
+        _append_if_mismatch(
+            errors, "data/works.json works length", len(data.get("works", [])), works
+        )
 
     publications_ld = REPO_ROOT / "data" / "publications-ld.json"
     if publications_ld.is_file():
         ld_payload = json.loads(publications_ld.read_text(encoding="utf-8"))
-        _append_if_mismatch(errors, "data/publications-ld.json mainEntity length", len(ld_payload.get("mainEntity", [])), works)
+        _append_if_mismatch(
+            errors,
+            "data/publications-ld.json mainEntity length",
+            len(ld_payload.get("mainEntity", [])),
+            works,
+        )
 
     software_ld = REPO_ROOT / "data" / "software-ld.json"
     if software_ld.is_file():
@@ -462,20 +546,72 @@ def collect_count_drift() -> list[str]:
 
     prose_targets = [
         ("README.md", "README.md volatile-count signpost", "reports/current_counts.md"),
-        ("README.md", "README.md Scholar snapshot signpost", "data/scholar-snapshot.json"),
-        ("pages/README.md", "pages/README.md volatile-count signpost", CURRENT_COUNTS_SIGNPOST),
+        (
+            "README.md",
+            "README.md Scholar snapshot signpost",
+            "data/scholar-snapshot.json",
+        ),
+        (
+            "pages/README.md",
+            "pages/README.md volatile-count signpost",
+            CURRENT_COUNTS_SIGNPOST,
+        ),
         ("AGENTS.md", "AGENTS.md volatile-count signpost", CURRENT_COUNTS_SIGNPOST),
-        ("docs/AGENTS.md", "docs/AGENTS.md volatile-count signpost", CURRENT_COUNTS_SIGNPOST),
-        ("papers/AGENTS.md", "papers/AGENTS.md volatile-count signpost", CURRENT_COUNTS_SIGNPOST),
-        ("pages/DISCOVERY.md", "pages/DISCOVERY.md volatile-count signpost", CURRENT_COUNTS_SIGNPOST),
-        ("pages/LINKS.md", "pages/LINKS.md volatile-count signpost", CURRENT_COUNTS_SIGNPOST),
-        ("pages/PROFILE.md", "pages/PROFILE.md volatile-count signpost", CURRENT_COUNTS_SIGNPOST),
-        ("pages/WIKIPEDIA.md", "pages/WIKIPEDIA.md volatile-count signpost", CURRENT_COUNTS_SIGNPOST),
-        ("pages/COLLABORATORS.md", "pages/COLLABORATORS.md volatile-count signpost", CURRENT_COUNTS_SIGNPOST),
-        ("pages/MEDIA.md", "pages/MEDIA.md volatile-count signpost", CURRENT_COUNTS_SIGNPOST),
-        ("discovery.html", "discovery.html volatile-count signpost", CURRENT_COUNTS_SIGNPOST),
-        ("cite-verify.html", "cite-verify.html volatile-count signpost", CURRENT_COUNTS_SIGNPOST),
-        ("pages/SOFTWARE.md", "pages/SOFTWARE.md software hero", "Open-Source Repositories"),
+        (
+            "docs/AGENTS.md",
+            "docs/AGENTS.md volatile-count signpost",
+            CURRENT_COUNTS_SIGNPOST,
+        ),
+        (
+            "papers/AGENTS.md",
+            "papers/AGENTS.md volatile-count signpost",
+            CURRENT_COUNTS_SIGNPOST,
+        ),
+        (
+            "pages/DISCOVERY.md",
+            "pages/DISCOVERY.md volatile-count signpost",
+            CURRENT_COUNTS_SIGNPOST,
+        ),
+        (
+            "pages/LINKS.md",
+            "pages/LINKS.md volatile-count signpost",
+            CURRENT_COUNTS_SIGNPOST,
+        ),
+        (
+            "pages/PROFILE.md",
+            "pages/PROFILE.md volatile-count signpost",
+            CURRENT_COUNTS_SIGNPOST,
+        ),
+        (
+            "pages/WIKIPEDIA.md",
+            "pages/WIKIPEDIA.md volatile-count signpost",
+            CURRENT_COUNTS_SIGNPOST,
+        ),
+        (
+            "pages/COLLABORATORS.md",
+            "pages/COLLABORATORS.md volatile-count signpost",
+            CURRENT_COUNTS_SIGNPOST,
+        ),
+        (
+            "pages/MEDIA.md",
+            "pages/MEDIA.md volatile-count signpost",
+            CURRENT_COUNTS_SIGNPOST,
+        ),
+        (
+            "discovery.html",
+            "discovery.html volatile-count signpost",
+            CURRENT_COUNTS_SIGNPOST,
+        ),
+        (
+            "cite-verify.html",
+            "cite-verify.html volatile-count signpost",
+            CURRENT_COUNTS_SIGNPOST,
+        ),
+        (
+            "pages/SOFTWARE.md",
+            "pages/SOFTWARE.md software hero",
+            "Open-Source Repositories",
+        ),
         ("llms.txt", "llms.txt shape", "Current volatile totals"),
         ("publications.html", "publications.html shape", "<title>"),
         ("index.html", "index.html shape", "<title>"),

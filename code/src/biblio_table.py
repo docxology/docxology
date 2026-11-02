@@ -69,8 +69,13 @@ def bibliography_rows_from_lines(lines: Iterable[str]) -> Iterator[BiblioRow]:
         except ValueError:
             continue
         yield BiblioRow(
-            num=num, year=cells[1], domain=cells[2], typ=cells[3],
-            title=_strip_md_cell(cells[4]), venue=_strip_md_cell(cells[5]),
-            link_cell=cells[6], docs_cell=cells[7],
+            num=num,
+            year=cells[1],
+            domain=cells[2],
+            typ=cells[3],
+            title=_strip_md_cell(cells[4]),
+            venue=_strip_md_cell(cells[5]),
+            link_cell=cells[6],
+            docs_cell=cells[7],
             authors_cell=cells[8] if len(cells) > 8 else "",
         )

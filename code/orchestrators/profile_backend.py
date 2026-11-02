@@ -4,6 +4,7 @@
 Reports must be new files outside the repository. Tracing overhead is explicitly
 separate from ordinary timing. No network, writers or release attestations run.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -26,28 +27,58 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("workload", choices=backend_profiling.WORKLOADS)
     parser.add_argument("--mode", choices=("timing", "tracing"), default="timing")
     parser.add_argument("--repeats", type=int, default=3)
-    parser.add_argument("--timeout", type=int, default=180, help="Seconds per sample, including source binding (1–600)")
-    parser.add_argument("--output", type=Path, help="New JSON file outside this repository; stdout always emits JSON")
+    parser.add_argument(
+        "--timeout",
+        type=int,
+        default=180,
+        help="Seconds per sample, including source binding (1–600)",
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        help="New JSON file outside this repository; stdout always emits JSON",
+    )
     parser.add_argument("--worker", action="store_true", help=argparse.SUPPRESS)
     args = parser.parse_args(argv)
     try:
         if args.output is not None:
-            if args.worker or args.output.resolve().is_relative_to(REPO_ROOT) or args.output.exists():
+            if (
+                args.worker
+                or args.output.resolve().is_relative_to(REPO_ROOT)
+                or args.output.exists()
+            ):
                 raise ValueError("output must be a new external file for a parent run")
         if args.worker:
-            payload = {"schema_version": backend_profiling.SCHEMA_VERSION, "ok": True,
-                       "sample": backend_profiling.measure(args.workload, REPO_ROOT, args.mode)}
+            payload = {
+                "schema_version": backend_profiling.SCHEMA_VERSION,
+                "ok": True,
+                "sample": backend_profiling.measure(
+                    args.workload, REPO_ROOT, args.mode
+                ),
+            }
         else:
-            payload = backend_profiling.run_samples(Path(__file__).resolve(), REPO_ROOT, args.workload,
-                                                   args.mode, args.repeats, args.timeout)
+            payload = backend_profiling.run_samples(
+                Path(__file__).resolve(),
+                REPO_ROOT,
+                args.workload,
+                args.mode,
+                args.repeats,
+                args.timeout,
+            )
         if args.output:
             backend_profiling.write_report(args.output, REPO_ROOT, payload)
     except (OSError, ValueError, subprocess.SubprocessError) as exc:
         # No raw subprocess stderr/argv or absolute source paths in diagnostics.
-        payload = {"schema_version": backend_profiling.SCHEMA_VERSION, "ok": False,
-                   "error": "sample timed out" if isinstance(exc, subprocess.TimeoutExpired)
-                   else str(exc) if isinstance(exc, ValueError) else "profiling I/O failed",
-                   "validation": "not_run"}
+        payload = {
+            "schema_version": backend_profiling.SCHEMA_VERSION,
+            "ok": False,
+            "error": "sample timed out"
+            if isinstance(exc, subprocess.TimeoutExpired)
+            else str(exc)
+            if isinstance(exc, ValueError)
+            else "profiling I/O failed",
+            "validation": "not_run",
+        }
     print(json.dumps(payload, ensure_ascii=False))
     return 0 if payload["ok"] else 1
 

@@ -28,7 +28,9 @@ def latest_output_path(date: str | None = None) -> Path:
     return REPO_ROOT / "reports" / f"public_source_inventory_{report_date}.json"
 
 
-def fetch_json(url: str, timeout: int = 30, accept: str = "application/json") -> dict[str, Any]:
+def fetch_json(
+    url: str, timeout: int = 30, accept: str = "application/json"
+) -> dict[str, Any]:
     headers = {"Accept": accept, "User-Agent": USER_AGENT}
     if url.startswith("https://api.github.com/") and os.environ.get("GITHUB_TOKEN"):
         headers["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"
@@ -42,7 +44,13 @@ def safe(label: str, url: str, extractor) -> dict[str, Any]:
         data = fetch_json(url)
         return {"label": label, "url": url, "ok": True, "items": extractor(data)}
     except Exception as exc:  # pragma: no cover - network failures are report data
-        return {"label": label, "url": url, "ok": False, "error": f"{type(exc).__name__}: {exc}", "items": []}
+        return {
+            "label": label,
+            "url": url,
+            "ok": False,
+            "error": f"{type(exc).__name__}: {exc}",
+            "items": [],
+        }
 
 
 def orcid_works() -> dict[str, Any]:
@@ -54,10 +62,18 @@ def orcid_works() -> dict[str, Any]:
             summary = (group.get("work-summary") or [{}])[0]
             rows.append(
                 {
-                    "title": (((summary.get("title") or {}).get("title") or {}).get("value")),
-                    "year": (((summary.get("publication-date") or {}).get("year") or {}).get("value")),
+                    "title": (
+                        ((summary.get("title") or {}).get("title") or {}).get("value")
+                    ),
+                    "year": (
+                        ((summary.get("publication-date") or {}).get("year") or {}).get(
+                            "value"
+                        )
+                    ),
                     "type": summary.get("type"),
-                    "source": ((summary.get("source") or {}).get("source-name") or {}).get("value"),
+                    "source": (
+                        (summary.get("source") or {}).get("source-name") or {}
+                    ).get("value"),
                     "path": summary.get("path"),
                 }
             )
@@ -74,7 +90,9 @@ def crossref_orcid() -> dict[str, Any]:
             {
                 "title": (item.get("title") or [""])[0],
                 "doi": item.get("DOI", ""),
-                "published": item.get("published-print") or item.get("published-online") or item.get("issued"),
+                "published": item.get("published-print")
+                or item.get("published-online")
+                or item.get("issued"),
                 "container": (item.get("container-title") or [""])[0],
                 "type": item.get("type", ""),
             }
@@ -86,14 +104,25 @@ def crossref_orcid() -> dict[str, Any]:
 
 def pubmed_exact_author() -> dict[str, Any]:
     query = urllib.parse.urlencode(
-        {"db": "pubmed", "term": "Daniel Ari Friedman[Author]", "retmode": "json", "retmax": 100}
+        {
+            "db": "pubmed",
+            "term": "Daniel Ari Friedman[Author]",
+            "retmode": "json",
+            "retmax": 100,
+        }
     )
     url = f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?{query}"
-    return safe("PubMed exact author records", url, lambda data: data.get("esearchresult", {}).get("idlist", []))
+    return safe(
+        "PubMed exact author records",
+        url,
+        lambda data: data.get("esearchresult", {}).get("idlist", []),
+    )
 
 
 def europe_pmc_exact_author() -> dict[str, Any]:
-    query = urllib.parse.urlencode({"query": 'AUTH:"Daniel Ari Friedman"', "format": "json", "pageSize": 100})
+    query = urllib.parse.urlencode(
+        {"query": 'AUTH:"Daniel Ari Friedman"', "format": "json", "pageSize": 100}
+    )
     url = f"https://www.ebi.ac.uk/europepmc/webservices/rest/search?{query}"
 
     def extract(data: dict[str, Any]) -> list[dict[str, Any]]:
@@ -138,15 +167,29 @@ def zenodo_records(label: str, q: str) -> dict[str, Any]:
                         "title": meta.get("title", ""),
                         "doi": hit.get("doi", ""),
                         "publication_date": meta.get("publication_date", ""),
-                        "resource_type": (meta.get("resource_type") or {}).get("type", ""),
+                        "resource_type": (meta.get("resource_type") or {}).get(
+                            "type", ""
+                        ),
                         "version": meta.get("version", ""),
                     }
                 )
             if total is not None and len(rows) >= int(total):
                 break
-        return {"label": label, "url": first_url, "ok": True, "items": rows, "total": total}
+        return {
+            "label": label,
+            "url": first_url,
+            "ok": True,
+            "items": rows,
+            "total": total,
+        }
     except Exception as exc:  # pragma: no cover - network failures are report data
-        return {"label": label, "url": first_url, "ok": False, "error": f"{type(exc).__name__}: {exc}", "items": []}
+        return {
+            "label": label,
+            "url": first_url,
+            "ok": False,
+            "error": f"{type(exc).__name__}: {exc}",
+            "items": [],
+        }
 
 
 def wikidata_person() -> dict[str, Any]:
@@ -159,9 +202,21 @@ def wikidata_person() -> dict[str, Any]:
             {
                 "id": "Q138781444",
                 "label": (entity.get("labels", {}).get("en") or {}).get("value", ""),
-                "description": (entity.get("descriptions", {}).get("en") or {}).get("value", ""),
-                "orcid": (((claims.get("P496") or [{}])[0].get("mainsnak") or {}).get("datavalue") or {}).get("value"),
-                "website": (((claims.get("P856") or [{}])[0].get("mainsnak") or {}).get("datavalue") or {}).get("value"),
+                "description": (entity.get("descriptions", {}).get("en") or {}).get(
+                    "value", ""
+                ),
+                "orcid": (
+                    ((claims.get("P496") or [{}])[0].get("mainsnak") or {}).get(
+                        "datavalue"
+                    )
+                    or {}
+                ).get("value"),
+                "website": (
+                    ((claims.get("P856") or [{}])[0].get("mainsnak") or {}).get(
+                        "datavalue"
+                    )
+                    or {}
+                ).get("value"),
             }
         ]
 
@@ -180,7 +235,9 @@ def dblp_author_profile() -> dict[str, Any]:
 
 
 def researchgate_profile() -> dict[str, Any]:
-    return public_page("https://www.researchgate.net/profile/Daniel-Friedman-2", "ResearchGate profile")
+    return public_page(
+        "https://www.researchgate.net/profile/Daniel-Friedman-2", "ResearchGate profile"
+    )
 
 
 def sciprofiles_profile() -> dict[str, Any]:
@@ -188,7 +245,9 @@ def sciprofiles_profile() -> dict[str, Any]:
 
 
 def philpeople_profile() -> dict[str, Any]:
-    return public_page("https://philpeople.org/profiles/daniel-ari-friedman", "PhilPeople profile")
+    return public_page(
+        "https://philpeople.org/profiles/daniel-ari-friedman", "PhilPeople profile"
+    )
 
 
 def openalex_author_advisory() -> dict[str, Any]:
@@ -240,14 +299,25 @@ def public_page(url: str, label: str) -> dict[str, Any]:
         end = text.lower().find("</title>")
         if start >= 0 and end > start:
             title = text[start + 7 : end].strip()
-        return {"label": label, "url": url, "ok": True, "items": [{"status": response.status, "title": title}]}
+        return {
+            "label": label,
+            "url": url,
+            "ok": True,
+            "items": [{"status": response.status, "title": title}],
+        }
     except Exception as exc:  # pragma: no cover
-        return {"label": label, "url": url, "ok": False, "error": f"{type(exc).__name__}: {exc}", "items": []}
+        return {
+            "label": label,
+            "url": url,
+            "ok": False,
+            "error": f"{type(exc).__name__}: {exc}",
+            "items": [],
+        }
 
 
-
-
-def load_cached_sections(today: str, *, force: bool = False) -> tuple[list[dict[str, Any]], dict[str, Any] | None]:
+def load_cached_sections(
+    today: str, *, force: bool = False
+) -> tuple[list[dict[str, Any]], dict[str, Any] | None]:
     """Reuse a same-day inventory report's section payloads instead of re-fetching.
 
     Reuse requires a same-day ``public_source_inventory_*.json`` (keyed on its
@@ -263,14 +333,18 @@ def load_cached_sections(today: str, *, force: bool = False) -> tuple[list[dict[
         return [], None
     try:
         payload = json.loads(inventory_path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
+    except OSError, json.JSONDecodeError:
         return [], None
     generated_at = payload.get("generated_at", "")
     sections = payload.get("sections")
     if not isinstance(sections, list) or not generated_at:
         return [], None
     same_day = generated_at[:10] == today
-    warnings = [section.get("label") for section in sections if isinstance(section, dict) and not section.get("ok")]
+    warnings = [
+        section.get("label")
+        for section in sections
+        if isinstance(section, dict) and not section.get("ok")
+    ]
     if not same_day or warnings:
         if force:
             return sections, {
@@ -296,7 +370,7 @@ def load_cached_sections(today: str, *, force: bool = False) -> tuple[list[dict[
                 return [], None
             anchor["source_snapshot"] = str(snapshot_path.relative_to(REPO_ROOT))
             anchor["source_snapshot_generated_at"] = snapshot_at
-        except (OSError, json.JSONDecodeError):
+        except OSError, json.JSONDecodeError:
             return [], None
     return sections, anchor
 
@@ -314,7 +388,10 @@ def build_report(*, cache_reports: bool = False, force: bool = False) -> dict[st
             crossref_orcid(),
             pubmed_exact_author(),
             europe_pmc_exact_author(),
-            zenodo_records("Zenodo exact-name creator records", 'metadata.creators.person_or_org.name:"Friedman, Daniel Ari"'),
+            zenodo_records(
+                "Zenodo exact-name creator records",
+                'metadata.creators.person_or_org.name:"Friedman, Daniel Ari"',
+            ),
             zenodo_records(
                 "Zenodo ORCID-linked records",
                 f'metadata.creators.person_or_org.identifiers.identifier:"{ORCID}"',
@@ -329,29 +406,60 @@ def build_report(*, cache_reports: bool = False, force: bool = False) -> dict[st
             github_profile("docxology"),
             github_profile("ActiveInferenceInstitute"),
             public_page("https://activeinference.org/", "AII public landing page"),
-            public_page("https://activeinference.institute/structure/officers/", "AII officers page"),
-            public_page("https://activeinference.institute/structure/board-of-directors/", "AII board page"),
-            public_page("https://activeinference.institute/structure/scientific-advisory-board/", "AII SAB page"),
-            public_page("https://activeinference.institute/projects/textbook-group/", "AII textbook-group page"),
+            public_page(
+                "https://activeinference.institute/structure/officers/",
+                "AII officers page",
+            ),
+            public_page(
+                "https://activeinference.institute/structure/board-of-directors/",
+                "AII board page",
+            ),
+            public_page(
+                "https://activeinference.institute/structure/scientific-advisory-board/",
+                "AII SAB page",
+            ),
+            public_page(
+                "https://activeinference.institute/projects/textbook-group/",
+                "AII textbook-group page",
+            ),
         ]
     report = {
-        "generated_at": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+        "generated_at": dt.datetime.now(dt.timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z"),
         "source_commit": source_commit(),
         "date": today,
         "note": "Paginated public-source inventory for review. Use as discovery evidence, not automatic claim replacement.",
         "sections": sections,
-        "counts": {section["label"]: len(section.get("items", [])) for section in sections},
+        "counts": {
+            section["label"]: len(section.get("items", [])) for section in sections
+        },
     }
     if anchor:
         report["anchors"] = anchor
     return report
 
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", help="Optional output path. Defaults to reports/public_source_inventory_DATE.json")
-    parser.add_argument("--check", action="store_true", help="Validate cached inventory report")
-    parser.add_argument("--cache-reports", action="store_true", help="Reuse a same-day cached inventory report instead of refetching")
-    parser.add_argument("--force", action="store_true", help="With --cache-reports: reuse the cached report even if stale or warned")
+    parser.add_argument(
+        "--output",
+        help="Optional output path. Defaults to reports/public_source_inventory_DATE.json",
+    )
+    parser.add_argument(
+        "--check", action="store_true", help="Validate cached inventory report"
+    )
+    parser.add_argument(
+        "--cache-reports",
+        action="store_true",
+        help="Reuse a same-day cached inventory report instead of refetching",
+    )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="With --cache-reports: reuse the cached report even if stale or warned",
+    )
     args = parser.parse_args()
     if args.output:
         out = Path(args.output)
@@ -367,11 +475,17 @@ def main() -> None:
         payload = json.loads(out.read_text(encoding="utf-8"))
         if not payload.get("sections"):
             raise SystemExit("Public-source inventory report has no sections")
-        print(f"checked public-source inventory report ({len(payload['sections'])} sections)")
+        print(
+            f"checked public-source inventory report ({len(payload['sections'])} sections)"
+        )
         return
     payload = build_report(cache_reports=args.cache_reports, force=args.force)
-    out.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    failures = [section["label"] for section in payload["sections"] if not section.get("ok")]
+    out.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+    failures = [
+        section["label"] for section in payload["sections"] if not section.get("ok")
+    ]
     try:
         shown = out.relative_to(REPO_ROOT)
     except ValueError:
