@@ -51,7 +51,7 @@ jobs:
           # Freshness means "the live site serves the artifact that was just
           # deployed", not "the stamp equals main's HEAD": page stamps are
           # deliberately reused across non-rendering commits (see
-          # build_stamp.reuse_or_current), so the homepage stamp can trail
+          # build_stamp.reuse_on_disk_stamp), so the homepage stamp can trail
           # HEAD indefinitely while the deploy is perfectly fresh. The stable
           # expectation is the stamp embedded in the checked-out artifact
           # itself — the same build the deploy workflow just published.
