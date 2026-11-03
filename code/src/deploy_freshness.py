@@ -19,9 +19,18 @@ DEFAULT_GRACE_ATTEMPTS = 3
 DEFAULT_GRACE_SLEEP_SECONDS = 150
 GITHUB_REPO = "docxology/docxology"
 
-# Matches "build <short-sha> <YYYY-MM-DD>" as emitted by code/src/build_stamp.py,
-# inside either the plain or anchor-wrapped <p class="build-stamp"> markup.
-STAMP_RE = re.compile(r"build ([0-9a-f]{7,40}) \d{4}-\d{2}-\d{2}")
+# Matches the payload-build prefix of the labelled label emitted by
+# code/src/build_stamp.py — "build <short-sha> <YYYY-MM-DD> · generated <UTC>"
+# — inside either the plain or anchor-wrapped <p class="build-stamp"> markup.
+# Group 1 is always the payload short SHA. The prefix must stay contiguous and
+# first: relabelling the pair individually ("build payload <sha> committed
+# <date>") makes this regex return no match and silently disarms the alarm.
+# The suffix group is optional so a pre-suffix footer still parses during a
+# rolling deploy, when the live page and the deployed artifact can differ.
+STAMP_RE = re.compile(
+    r"build ([0-9a-f]{7,40}) \d{4}-\d{2}-\d{2}"
+    r"(?: · generated \d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z)?"
+)
 
 
 class DeployFreshnessError(RuntimeError):

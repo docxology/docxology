@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Propagate generated counts and freshness into hand-authored public surfaces."""
+"""Propagate generated counts and freshness into hand-authored public surfaces.
+
+Also refreshes the footer build stamp on a hand-authored page that carries one
+(``index.html`` does, for deploy-freshness verification), under the same
+migrate/reuse contract the page generators use.
+"""
 
 from __future__ import annotations
 
@@ -21,6 +26,11 @@ from docxology_tools.site_facts import (  # noqa: E402
     public_source_checked_date,
 )
 from docxology_tools.report_paths import latest_source_report, latest_source_subdir_file  # noqa: E402
+from docxology_tools.build_stamp import (  # noqa: E402
+    STAMP_HTML_RE,
+    footer_build_stamp_html,
+    reuse_on_disk_stamp,
+)
 
 TARGETS = [
     REPO_ROOT / "index.html",
@@ -70,6 +80,7 @@ def dataset_count(filename: str, key: str) -> int:
 
 def render(path: Path) -> str:
     text = path.read_text(encoding="utf-8")
+    original = text
     c = counts()
     date = generated_date()
     month = generated_month_year()
@@ -291,6 +302,20 @@ def render(path: Path) -> str:
                     f"reports/{prefix}/{snap_date}/manifest.json",
                     text,
                 )
+    # Hand-authored shells can carry the same footer stamp as generated pages
+    # (index.html does, so deploy freshness has a stamp to verify on the home
+    # page). This in-place patcher owns that stamp the same way the generators
+    # own theirs: a page whose non-stamp content changed gets the current
+    # payload anchor and rendering instant, while a page whose only difference
+    # would be the stamp keeps its on-disk stamp so routine runs stay
+    # byte-stable. Reuse is refused for a pre-suffix label, so a format change
+    # propagates here instead of leaking out only as the page happens to be
+    # edited.
+    if len(list(STAMP_HTML_RE.finditer(original))) == 1:
+        candidate = STAMP_HTML_RE.sub(
+            lambda _match: footer_build_stamp_html(), text, count=1
+        )
+        text = reuse_on_disk_stamp(candidate, original)
     return text
 
 

@@ -516,6 +516,34 @@ def validate_seo_invariants() -> None:
         )
 
 
+def validate_build_stamp_labels() -> None:
+    """Fail when a stamped page carries a pre-suffix footer label.
+
+    Every page that carries a build stamp must carry the current labelled
+    shape. A page with no stamp is exempt. This check exists because the drift
+    comparison forgives a differing stamp *value* on an unchanged page, so
+    without an explicit format check a site could be half old-format and half
+    new-format while ``--check`` stayed green.
+    """
+    from docxology_tools.build_stamp import find_stamp_label_problems
+
+    paths = [
+        path
+        for path in sorted(REPO_ROOT.rglob("*.html"))
+        if is_validation_source_path(path)
+    ]
+    problems = find_stamp_label_problems(paths)
+    if problems:
+        lines = [
+            f"{path.relative_to(REPO_ROOT)}: {label!r}"
+            for path, label in problems[:40]
+        ]
+        raise SystemExit(
+            "Build stamp label format violations:\n"
+            + "\n".join(f"  - {line}" for line in lines)
+        )
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -714,6 +742,7 @@ def run_standard_validation(
     validate_count_consistency()
     validate_sitemap_targets()
     validate_seo_invariants()
+    validate_build_stamp_labels()
     from docxology_tools.public_integrity import validate_public_files
 
     validate_public_files(REPO_ROOT)

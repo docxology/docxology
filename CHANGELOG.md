@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-11-03 — Labelled footer build stamps
+
+- The generated-page footer stamp now names both of its facts: the
+  payload-anchored build (`build <short-sha> <YYYY-MM-DD>`) and the UTC
+  rendering instant (`generated <ISO-8601>`). Previously the single bare date
+  left it ambiguous whether it was the payload commit's committer date or the
+  build time. The contiguous `build <sha> <date>` prefix stays first because
+  the deploy freshness alarm parses the payload SHA from it.
+- Stamp reuse now forgives a differing stamp value but not a differing stamp
+  format, so the new label propagates to every stamped page rather than only to
+  pages that happen to be edited. `validate_repo.py` fails on a pre-suffix
+  label, with a negative-control regression proving the check catches one.
+- `sync_site_facts.py` now owns the stamp on a hand-authored page that carries
+  one (`index.html`, for deploy-freshness verification). It migrates a legacy
+  label, reuses a current one when only the stamp would change, and refreshes
+  both facts when the page's content changes — the same contract the page
+  generators apply to generated pages.
+
 ## 2026-11-02 — Independent review corrections
 
 - Added the shared CSP policy to centrally generated legacy redirects and a

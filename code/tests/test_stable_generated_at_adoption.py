@@ -55,7 +55,8 @@ FRESH_TS = "2026-07-18T12:34:56Z"
 
 ALT_STAMP = (
     '<p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/'
-    'fffffffffff">build fffffffffff 2099-01-01</a></p>'
+    'fffffffffff">build fffffffffff 2099-01-01 · generated '
+    "2099-01-01T00:00:00Z</a></p>"
 )
 
 
