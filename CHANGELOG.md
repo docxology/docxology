@@ -17,6 +17,10 @@
   label, reuses a current one when only the stamp would change, and refreshes
   both facts when the page's content changes — the same contract the page
   generators apply to generated pages.
+- Every footer stamp must now be a current, parseable labelled anchor. A label
+  that lost the fixed `build ` prefix used to read as an *unstamped* page and
+  pass the check; it is now reported as a problem, as is a marker that is not a
+  parseable anchor at all. Regression tests cover both negative controls.
 
 ## 2026-11-02 — Independent review corrections
 

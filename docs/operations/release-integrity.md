@@ -135,9 +135,12 @@ while differences elsewhere cannot inherit an older footer. Reuse forgives a
 differing stamp *value* but never a differing stamp *format*: a label missing
 the labelled second fact is re-rendered, so a format change propagates to every
 stamped page instead of leaking out only as pages happen to be edited.
-`validate_repo.py` fails on a stamped page that carries a pre-suffix label
-(`find_stamp_label_problems`), and its regression test proves the negative
-control fails, so a half-migrated site cannot ship quietly.
+`validate_repo.py` fails on a footer stamp that is not a current, parseable
+labelled anchor (`find_stamp_label_problems`): a pre-suffix label is reported,
+and so is an anchor whose label lost the fixed `build ` prefix, or a marker that
+is not a parseable anchor at all — a stamp cannot hide as an unstamped page.
+Regression tests prove both negative controls fail, so a half-migrated site
+cannot ship quietly.
 This is generation provenance, not proof of the exact later deployment SHA
 or of a future commit that did not yet exist during a dirty-tree render.
 `BUILD_SHA`/`BUILD_DATE`/`BUILD_GENERATED_AT` allow explicit source-base and
