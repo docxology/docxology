@@ -36,12 +36,18 @@
     <meta name="twitter:description" content="Video metadata, YouTube link, related papers, and topic routes for #112 ~ Interplanetary (Personal Channel, 2020-04-21). Topics: Research Video Archive.">
     <meta name="twitter:image" content="https://img.youtube.com/vi/u7ydh52KQgs/hqdefault.jpg">
     <meta name="twitter:image:alt" content="#112 ~ Interplanetary">
-    <link rel="stylesheet" href="../style.css?v=site-20261002b">
+    <link rel="stylesheet" href="../style.css?v=site-20261103a">
     <style>.breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}</style>
     <style>
         .video-layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.6fr);gap:1.25rem;align-items:start}
-        .video-embed{aspect-ratio:16/9;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+        .video-embed{position:relative;aspect-ratio:16/9;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;overflow:hidden}
         .video-embed iframe{width:100%;height:100%;border:0}
+        .video-facade{position:absolute;inset:0;display:block;width:100%;height:100%;margin:0;padding:0;border:0;background:#000;cursor:pointer}
+        .video-facade img{display:block;width:100%;height:100%;object-fit:cover}
+        .video-facade-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:68px;height:48px;border-radius:10px;background:rgba(10,9,8,.72);border:1px solid var(--gold-40)}
+        .video-facade-play::after{content:"";position:absolute;top:50%;left:50%;transform:translate(-40%,-50%);border-style:solid;border-width:11px 0 11px 18px;border-color:transparent transparent transparent var(--gold-bright)}
+        .video-facade:hover .video-facade-play,.video-facade:focus-visible .video-facade-play{background:rgba(10,9,8,.92)}
+        .video-facade:focus-visible{outline:3px solid var(--gold-bright);outline-offset:2px}
         .meta-list{display:grid;gap:.55rem;margin:0;padding:0;list-style:none}
         .meta-list li{border-bottom:1px solid var(--border);padding-bottom:.45rem;color:var(--text-secondary)}
         .meta-list strong{color:var(--text-primary)}
@@ -159,7 +165,10 @@
         <section class="section video-layout">
             <div>
                 <div class="video-embed">
-                    <iframe src="https://www.youtube-nocookie.com/embed/u7ydh52KQgs" title="#112 ~ Interplanetary" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <a class="video-facade" href="https://www.youtube.com/watch?v=u7ydh52KQgs" target="_blank" rel="noopener" data-youtube-src="https://www.youtube-nocookie.com/embed/u7ydh52KQgs" data-youtube-title="#112 ~ Interplanetary" aria-label="Play video: #112 ~ Interplanetary">
+                        <img src="https://img.youtube.com/vi/u7ydh52KQgs/hqdefault.jpg" alt="Video thumbnail: #112 ~ Interplanetary" width="480" height="360" decoding="async">
+                        <span class="video-facade-play" aria-hidden="true"></span>
+                    </a>
                 </div>
                 <p class="section-note"><a href="https://www.youtube.com/watch?v=u7ydh52KQgs">Open on YouTube</a> - <a href="https://www.youtube.com/@danielarifriedman">Personal Channel</a> - <a href="../videos.html">interactive timeline</a></p>
             </div>
@@ -192,9 +201,9 @@
             <div class="transcript"><p>Caption transcript text has not been cached in this repository for this video. <a href="https://www.youtube.com/watch?v=u7ydh52KQgs">Open the YouTube page</a> for any captions YouTube exposes.</p></div>
         </section>
     </main>
-    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos/">Video index</a> - <a href="../data/videos.json">video metadata JSON</a></p><p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/0f17ff655">build 0f17ff655 2026-11-02 · generated 2026-11-03T02:15:17Z</a></p></footer>
-<script src="/js/search-utils.js?v=site-20261002b"></script>
+    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos/">Video index</a> - <a href="../data/videos.json">video metadata JSON</a></p><p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/a563fb19f">build a563fb19f 2026-11-02 · generated 2026-11-03T14:23:28Z</a></p></footer>
+<script src="/js/search-utils.js?v=site-20261103a"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
-<script src="/js/interactive.js?v=site-20261002b" defer></script>
+<script src="/js/interactive.js?v=site-20261103a" defer></script>
 <script src="/js/menu-esc.js?v=20260813" defer></script></body>
 </html>

@@ -388,7 +388,7 @@ def render_html(
     <meta name="twitter:description" content="{h(page_description)}">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-software.jpg">
     <meta name="twitter:image:alt" content="{h(page_title)}">
-    <link rel="stylesheet" href="style.css?v=site-20261002b">
+    <link rel="stylesheet" href="style.css?v=site-20261103a">
     <style>
         .inventory-controls{{display:flex;flex-wrap:wrap;gap:.65rem;align-items:center;margin:1rem 0}}
         .inventory-search{{flex:1 1 260px;min-width:0;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);padding:.75rem .9rem}}
