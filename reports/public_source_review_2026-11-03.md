@@ -2,7 +2,7 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `0b2f2c84e8d1106677c81c507569709d5bc6dc0b`
+Source commit: `1fb4abd636b2cf81d638281cee9eb9d3e69f77fc`
 
 ## Disposition summary
 

@@ -1459,7 +1459,7 @@
           "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
           "type": "Paper",
           "abstract_url": "https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative001.html",
-          "page_sha256": "22347d6c2d3180f87cb87ad9a134d09e4ae1fa440f29dfd7aeba777b3db555b3",
+          "page_sha256": "0be5ab42a71b72ed612e4b1316868e30ef1b7c810188e698a2d686a43943486e",
           "citation_tags": {
             "citation_title": [
               "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
@@ -1672,11 +1672,11 @@
         "release_hard_ceiling_bytes": 996147200,
         "safety_ceiling_bytes": 996147200,
         "warning_bytes": 975175680,
-        "source_bytes": 955143910,
+        "source_bytes": 956623968,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6143,
-        "artifact_bytes": 956230009
+        "artifact_file_count": 6144,
+        "artifact_bytes": 957710241
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -6297,7 +6297,7 @@
     "collection_catalog": "a0ae262894ad72d4e81939c3471b5c14d9d521d6f67a18a92a05e657c3cd0dda",
     "research_map": "e42e83bc1184f2ffb9ab7adf54d913bf7a57cd05ba4353cd5d5d70a5e27f8d84",
     "research_trails": "2e6a76a3974b495906a1764725835ffa3ef47065a304c812f7756fb17166d34e",
-    "scholar_readiness": "1bc0b596a80543a788ed5eeb604d1f8be266718232b45ed5b00824169eb150c8",
+    "scholar_readiness": "49d1e2c5a10bdd8b1f8e05e3beb1443ef92b8b5d8d74baaa85991e8acaac0a1e",
     "catalog": "c9de221affc02540b153488ce11df7f6c57a06f35821f548628c1fe9f32a936c",
     "reconciliation": "11d886ba28d53f2350e093f5504e75b2bcde59c04f7b622753502a149750ca1c",
     "reproducibility": "d706f76638645be0cd1f07681bdbec070deff9fe9f0e2c097a36d456121bc587",

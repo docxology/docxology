@@ -227,6 +227,36 @@ def test_render_video_page_uses_local_page_and_youtube_embed():
     assert "transcript body" in html
 
 
+def test_render_video_page_defers_the_player_behind_a_click_to_load_facade():
+    """The player iframe must not be server-rendered.
+
+    An eager iframe loads YouTube's player bundle during first paint; measured
+    live 2026-11-03, observed LCP was 2.4 s with the eager iframe against
+    0.26 s behind the facade on identical bytes.  The page ships a poster link
+    carrying the same embed URL, and the shared interactive module (CSP
+    script-src 'self' forbids inline handlers) replaces it with the iframe on
+    click.  The link's own href is the watch page, so a reader without
+    JavaScript, or with an older cached module, still gets a working click.
+    """
+    video = sample_video()
+    html = build_video_pages.render_video_page(video, transcript="transcript body")
+    assert "<iframe" not in html
+    assert 'class="video-facade"' in html
+    assert 'href="https://www.youtube.com/watch?v=abc123"' in html
+    assert 'target="_blank"' in html
+    assert 'data-youtube-src="https://www.youtube-nocookie.com/embed/abc123"' in html
+    assert 'data-youtube-title="pymdp Active Inference ModelStream with GNN"' in html
+    assert (
+        'aria-label="Play video: pymdp Active Inference ModelStream with GNN"' in html
+    )
+    assert "https://img.youtube.com/vi/abc123/hqdefault.jpg" in html
+    # The static accessibility audit requires a non-empty alt on every image.
+    assert 'alt="Video thumbnail: pymdp Active Inference ModelStream with GNN"' in html
+    assert 'class="video-facade-play" aria-hidden="true"' in html
+    # The click behaviour lives in the shared module every generated page loads.
+    assert "/js/interactive.js" in html
+
+
 def test_interactive_page_integrity_flags_missing_stylesheet(tmp_path: Path):
     """Negative fixture (P0-2): a page loading interactive JS without style.css
     must be rejected; linking the stylesheet must pass."""

@@ -38,7 +38,7 @@
     <meta name="twitter:description" content="Experiment with Bayesian updating and reinforcement using reproducible teaching models.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-index.jpg">
     <meta name="twitter:image:alt" content="Probability laboratory">
-    <link rel="stylesheet" href="style.css?v=site-20261002b">
+    <link rel="stylesheet" href="style.css?v=site-20261103a">
     <meta name="theme-color" content="#0c0c0e">
     <style>
 .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
@@ -124,10 +124,10 @@
 <section id="urn" class="tool-panel"><p class="tool-kicker">02 / REINFORCEMENT</p><h2>A reinforced urn</h2><p>Draw one token with probability proportional to its color's current count. Replace it and add r extra tokens of that color. With r = 0 the composition stays fixed. Every run uses the displayed 32-bit seed; identical inputs reproduce identical draws.</p>
 <div class="tool-grid"><label for="urn-amber">Initial amber tokens<input id="urn-amber" type="number" min="1" max="20" value="1"></label><label for="urn-blue">Initial blue tokens<input id="urn-blue" type="number" min="1" max="20" value="1"></label><label for="urn-reinforcement">Extra tokens r<input id="urn-reinforcement" type="number" min="0" max="5" value="1"></label><label for="urn-draws">Draws<input id="urn-draws" type="number" min="1" max="200" value="100"></label><label for="urn-seed">Seed (0–4294967295)<input id="urn-seed" type="number" min="0" max="4294967295" value="42"></label></div><div class="tool-toolbar"><button type="button" id="urn-run">Run urn</button><button type="button" id="urn-export">Download urn CSV</button></div><p id="urn-result" role="status">With one token of each color, the first draw has amber probability 0.50.</p><svg id="urn-chart" viewBox="0 0 800 280" role="img" aria-label="Amber fraction of the urn after each draw; exact values appear in the table"></svg><details><summary>Every draw and token count</summary><table><caption>Reinforced urn history</caption><thead><tr><th scope="col">Draw</th><th scope="col">Color</th><th scope="col">Amber</th><th scope="col">Blue</th><th scope="col">Amber fraction</th></tr></thead><tbody id="urn-history"></tbody></table></details><p>This stochastic urn illustrates reinforcement. It has no spatial interactions, physiology, pheromone dynamics or fitted biological parameters and is not an ant-colony model.</p><p><a href="https://djalil.chafai.net/blog/2015/11/30/back-to-basics-polya-urns/">Mathematical definition and analysis by Djalil Chafaï</a> · <a href="/computational-entomology.html">Related models and biological evidence</a></p></section>
 <noscript><p>The definitions and worked examples above remain readable without JavaScript. Interactive controls require JavaScript.</p></noscript></div>
-</main><footer><p><a href="/publications.html">Bibliography</a> · <a href="/exports.html">Citation exports</a> · <a href="/evidence.html">Evidence and source limits</a></p><p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/0f17ff655">build 0f17ff655 2026-11-02 · generated 2026-11-03T02:15:28Z</a></p></footer>
-<script src="/js/search-utils.js?v=site-20261002b"></script>
+</main><footer><p><a href="/publications.html">Bibliography</a> · <a href="/exports.html">Citation exports</a> · <a href="/evidence.html">Evidence and source limits</a></p><p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/a563fb19f">build a563fb19f 2026-11-02 · generated 2026-11-03T14:16:18Z</a></p></footer>
+<script src="/js/search-utils.js?v=site-20261103a"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
-<script src="/js/interactive.js?v=site-20261002b" defer></script>
+<script src="/js/interactive.js?v=site-20261103a" defer></script>
 <script src="/js/menu-esc.js?v=20260813" defer></script>
 <script src="/js/probability-lab.js?v=1" defer></script>
 </body></html>

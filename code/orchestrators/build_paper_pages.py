@@ -229,7 +229,7 @@ def render_page(work: dict) -> str:
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
-    <link rel="stylesheet" href="../../style.css?v=site-20261002b">
+    <link rel="stylesheet" href="../../style.css?v=site-20261103a">
 {HEAD_EXTRAS}
     <meta property="og:type" content="article">
     <meta property="og:title" content="{h(work["title"])} Documentation">

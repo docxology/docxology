@@ -332,7 +332,7 @@ def render_html(payload: dict) -> str:
     <meta name="twitter:description" content="Source-bound William Blake reading pathway across the public bibliography.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-cite-verify.jpg">
     <meta name="twitter:image:alt" content="William Blake Publication Pathway — Daniel Ari Friedman">
-    <link rel="stylesheet" href="style.css?v=site-20261002b">
+    <link rel="stylesheet" href="style.css?v=site-20261103a">
     <style>
         .pathway-table-wrap{{max-width:100%;overflow-x:auto}}
         .pathway-table-wrap:focus-visible{{outline:2px solid var(--red-bright);outline-offset:2px}}
