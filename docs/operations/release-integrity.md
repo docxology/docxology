@@ -123,13 +123,25 @@ chase that historically accompanied ordinary regeneration is therefore a
 release-gate-only phenomenon now: a routine re-render in payload-anchored
 mode never rewrites committed review history just because `HEAD` moved.
 
-The footer build stamp records the source revision available at the last
-content-changing render. Unchanged pages keep their previous stamp; a changed
-page gets the current payload-anchor stamp. Stamp-only differences never
-rewrite a page, while differences elsewhere cannot inherit an older footer.
+The footer build stamp carries two labelled facts: the payload-anchored build
+(`build <short-sha> <YYYY-MM-DD>` — the payload commit and that commit's
+committer date) and the rendering instant (`generated <UTC>`). The build prefix
+stays contiguous and first because `code/src/deploy_freshness.py:STAMP_RE`
+parses the payload SHA from exactly that text; only the suffix is additive. The
+stamp records the source revision available at the last content-changing
+render. Unchanged pages keep their previous stamp; a changed page gets the
+current payload-anchor stamp. Stamp-only differences never rewrite a page,
+while differences elsewhere cannot inherit an older footer. Reuse forgives a
+differing stamp *value* but never a differing stamp *format*: a label missing
+the labelled second fact is re-rendered, so a format change propagates to every
+stamped page instead of leaking out only as pages happen to be edited.
+`validate_repo.py` fails on a stamped page that carries a pre-suffix label
+(`find_stamp_label_problems`), and its regression test proves the negative
+control fails, so a half-migrated site cannot ship quietly.
 This is generation provenance, not proof of the exact later deployment SHA
 or of a future commit that did not yet exist during a dirty-tree render.
-`BUILD_SHA`/`BUILD_DATE` allow explicit source-base overrides. Exact deployed
+`BUILD_SHA`/`BUILD_DATE`/`BUILD_GENERATED_AT` allow explicit source-base and
+rendering-instant overrides. Exact deployed
 revision and live bytes are established separately by deployment acceptance
 and the release attestation. Generated manifest and integrity timestamps also
 refresh only when their substantive bodies change.

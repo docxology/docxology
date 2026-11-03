@@ -31,6 +31,37 @@ def test_extract_live_stamp_anchor_markup() -> None:
     assert extract_live_stamp(html) == "94bd369"
 
 
+def test_extract_live_stamp_labelled_suffix_plain_markup() -> None:
+    # The label carries a second, labelled fact after the payload build. The
+    # alarm must still read the payload SHA out of the contiguous prefix; a
+    # relabelled pair (for example "build payload <sha> committed <date>")
+    # would not match, which is why the prefix stays first and untouched.
+    html = (
+        '<p class="build-stamp">'
+        "build 94bd369 2026-08-28 · generated 2026-11-02T14:30:00Z</p>"
+    )
+    assert extract_live_stamp(html) == "94bd369"
+
+
+def test_extract_live_stamp_labelled_suffix_anchor_markup() -> None:
+    html = (
+        '<p class="build-stamp"><a href="https://github.com/docxology/docxology/'
+        'commit/94bd369">build 94bd369 2026-08-28 · generated '
+        "2026-11-02T14:30:00Z</a></p>"
+    )
+    assert extract_live_stamp(html) == "94bd369"
+
+
+def test_relabelled_pair_does_not_match_the_alarm() -> None:
+    # Documents the constraint that keeps the prefix contiguous: labelling the
+    # SHA and the committer date individually makes the alarm blind.
+    html = (
+        '<p class="build-stamp"><a href="https://github.com/docxology/docxology/'
+        'commit/94bd369">build payload 94bd369 committed 2026-08-28</a></p>'
+    )
+    assert extract_live_stamp(html) is None
+
+
 def test_extract_live_stamp_missing() -> None:
     assert extract_live_stamp("<html><body>no footer</body></html>") is None
 

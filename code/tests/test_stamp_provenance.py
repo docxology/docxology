@@ -24,7 +24,16 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 from docxology_tools import build_stamp  # noqa: E402
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 
+# The full labelled label: the payload-anchored build plus the rendering
+# instant. The build prefix stays first so deploy_freshness.STAMP_RE can still
+# parse the payload SHA from the live footer.
 FOOTER_STAMP_RE = re.compile(
+    r'<p class="build-stamp"><a href="https://github\.com/docxology/docxology/commit/'
+    r"([0-9a-f]{7,40})\">"
+    r"(build [0-9a-f]{7,40} \d{4}-\d{2}-\d{2} · generated "
+    r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z)</a></p>"
+)
+LEGACY_FOOTER_STAMP_RE = re.compile(
     r'<p class="build-stamp"><a href="https://github\.com/docxology/docxology/commit/'
     r"([0-9a-f]{7,40})\">(build [0-9a-f]{7,40} \d{4}-\d{2}-\d{2})</a></p>"
 )
@@ -111,14 +120,20 @@ def test_default_stamp_binds_payload_commit_not_head(tmp_path):
 
 def test_stamp_is_byte_stable_across_head_moves_on_the_same_payload_tree(tmp_path):
     repo, payload_commit, _head_commit = _payload_repo_with_control_tail(tmp_path)
-    # The stamp the payload commit itself would have produced (HEAD at the
-    # payload commit) must equal the stamp rendered after the control tail
-    # moved HEAD.
-    payload_stamp = (
+    # The build prefix the payload commit itself would have produced (HEAD at
+    # the payload commit) must not chase HEAD when a control tail moves it.
+    payload_build = (
         f"build {_git(repo, 'rev-parse', '--short', payload_commit)} "
         f"{_commit_date(repo, payload_commit)}"
     )
-    assert build_stamp.build_stamp_text(repo) == payload_stamp
+    label = build_stamp.build_stamp_text(repo)
+    build_part, separator, generated = label.partition(" · generated ")
+    assert build_part == payload_build, label
+    assert separator, f"label missing the labelled second fact: {label!r}"
+    assert re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z", generated), label
+    # A second render in the same process is byte-identical: the rendering
+    # instant is memoized per process, so moving HEAD does not churn bytes.
+    assert build_stamp.build_stamp_text(repo) == label
 
 
 def test_footer_stamp_url_points_at_the_payload_commit(tmp_path):
@@ -147,7 +162,19 @@ def test_stamp_raises_outside_a_git_checkout(tmp_path):
         build_stamp.build_stamp_info(empty)
 
 
-def _stamped_page(body: str, sha: str, date: str) -> str:
+def _stamped_page(
+    body: str, sha: str, date: str, generated: str = "2026-01-02T03:04:05Z"
+) -> str:
+    label = f"build {sha} {date} · generated {generated}"
+    return (
+        f"<main>{body}</main><footer>"
+        f'<p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/{sha}">'
+        f"{label}</a></p></footer>\n"
+    )
+
+
+def _legacy_stamped_page(body: str, sha: str, date: str) -> str:
+    """A page stamped before the label carried its second, labelled fact."""
     return (
         f"<main>{body}</main><footer>"
         f'<p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/{sha}">'
