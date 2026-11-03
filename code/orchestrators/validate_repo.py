@@ -517,13 +517,15 @@ def validate_seo_invariants() -> None:
 
 
 def validate_build_stamp_labels() -> None:
-    """Fail when a stamped page carries a pre-suffix footer label.
+    """Fail when a footer stamp is not a current, parseable labelled anchor.
 
     Every page that carries a build stamp must carry the current labelled
-    shape. A page with no stamp is exempt. This check exists because the drift
-    comparison forgives a differing stamp *value* on an unchanged page, so
-    without an explicit format check a site could be half old-format and half
-    new-format while ``--check`` stayed green.
+    shape. A page with no stamp is exempt, but an anchor whose label does not
+    parse is a problem rather than an absence, so a label that lost the fixed
+    ``build `` prefix cannot hide as an unstamped page. This check exists
+    because the drift comparison forgives a differing stamp *value* on an
+    unchanged page, so without an explicit format check a site could be half
+    old-format and half new-format while ``--check`` stayed green.
     """
     from docxology_tools.build_stamp import find_stamp_label_problems
 
