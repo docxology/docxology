@@ -1,22 +1,16 @@
-# AGENTS.md — `docxology/.github/workflows`
+# AGENTS.md — `.github/workflows/`
 
-## What this is
+The Actions workflows: `validate.yml` (the correctness gate —
+`code/orchestrators/validate_repo.py` plus the Python suite), `pages.yml` (Pages
+deploy), `browser-qa.yml`, `freshness.yml`, `live-verify.yml`, and
+`indexnow-on-push.yml`.
 
-GitHub Actions workflows for docxology (unverified — not run by this pass).
+- `validate.yml` is the gate to reproduce locally: `uv run python3
+  code/orchestrators/validate_repo.py`, `uv run python3 -m pytest code/tests -q`, and
+  `uv run --group lint ruff check code`. The workflow file itself is the authority on
+  what it runs; this guide is not updated with it.
+- The network-dependent workflows (freshness, live verification, IndexNow promotion)
+  cannot be reproduced offline; they leave dated evidence under `reports/`.
+- Secrets are configured in GitHub, never in the repository.
 
-## Layout
-
-- workflow YAMLs.
-
-## Invariants & gotchas
-
-- This is the public `docxology/docxology` repository. Follow the root
-  ownership and privacy rules; verify the Git destination before publishing.
-- Carry authorized changes through review and verification on a work branch.
-  Preserve concurrent edits and publish only reviewed public content.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls .github/workflows`
-- Follow the [root repository instructions](../../AGENTS.md) and nearer parent instructions.
+Repository rules: [root guide](../../AGENTS.md).

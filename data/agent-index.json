@@ -473,14 +473,14 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-11-02.json",
+      "path": "/reports/accessibility_static_2026-11-03.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-11-02.json",
+      "path": "/reports/asset_size_2026-11-03.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1672,11 +1672,11 @@
         "release_hard_ceiling_bytes": 996147200,
         "safety_ceiling_bytes": 996147200,
         "warning_bytes": 975175680,
-        "source_bytes": 954909818,
+        "source_bytes": 955061871,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
         "artifact_file_count": 6142,
-        "artifact_bytes": 955995656
+        "artifact_bytes": 956147855
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -6285,7 +6285,7 @@
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "bf6d1924e95dc4029483139401a4fd2558f436cf51d87e8716a6b35d55f4e1d2",
     "videos_index": "27a0baad9d08ffd2c3961ca20189575e0db0acd6c89ddf02a239799c85f47fab",
-    "search": "690cb89fde28b64b472d99004a798678ef36223f848ef9f2c457d0d1e3ba35e5",
+    "search": "03a274142d178e0532956dbfaa6f91f1e28f61837da85c5ebe4013e6395afed2",
     "claims": "1c52873b989d8405be0d4fcc6b071256d0a05bb02c952dda38ef9b7eda05253c",
     "scholar_verification_receipt": "889e829f258bfaaca0c17d3cc2eec68ac114152e41e32a31f75b6bb925f9b16d",
     "coverage_exceptions": "90379749c88843657df06e96096f7a6adc962b6ce5de159c7e41a7a715f73673",
@@ -6298,10 +6298,10 @@
     "research_map": "e42e83bc1184f2ffb9ab7adf54d913bf7a57cd05ba4353cd5d5d70a5e27f8d84",
     "research_trails": "2e6a76a3974b495906a1764725835ffa3ef47065a304c812f7756fb17166d34e",
     "scholar_readiness": "42e1697eee51764b4d8b70d3ec9448abc19d5778341efc6c3142cf9858b9d39b",
-    "catalog": "cb0588209887432d5bae7aba20a8ea8ccec91326a8eb647d16043f4807509488",
+    "catalog": "c9de221affc02540b153488ce11df7f6c57a06f35821f548628c1fe9f32a936c",
     "reconciliation": "11d886ba28d53f2350e093f5504e75b2bcde59c04f7b622753502a149750ca1c",
     "reproducibility": "d706f76638645be0cd1f07681bdbec070deff9fe9f0e2c097a36d456121bc587",
-    "generated_manifest": "f6f40718c20c8b1404f41d57c48d659ea4f012b8cd9e05b0462faa8648d04f06",
+    "generated_manifest": "d536a607e1e8525275853182831536911ee3d5bc5ad2c5c134ecdcbec908ef91",
     "current_counts": "349885a19cae9e06961bf183e4ce699e5f7b47d895fe67623b67c5fa97953449"
   },
   "source_provenance": {

@@ -1,22 +1,12 @@
-# AGENTS.md — `docxology/code/artifacts`
+# AGENTS.md — `code/artifacts/`
 
-## What this is
+A holding folder for generated artifacts that are not part of the site root; as of
+2026-11-02 it contains `publications-explorer/` only.
 
-Generated code artifacts (incl. `publications-explorer/`).
+- Generated output lives here when a generator produces something for direct use rather
+  than for publication at the site root. Its rebuild command belongs in
+  [`../../GENERATED.md`](../../GENERATED.md) with every other generated path; if it is
+  not there, the artifact has no recorded builder.
+- Do not edit artifacts here by hand; regenerate them.
 
-## Layout
-
-- artifacts + `publications-explorer/`.
-
-## Invariants & gotchas
-
-- This is the public `docxology/docxology` repository. Follow the root
-  ownership and privacy rules; verify the Git destination before publishing.
-- Carry authorized changes through review and verification on a work branch.
-  Preserve concurrent edits and publish only reviewed public content.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls code/artifacts`
-- Follow the [root repository instructions](../../AGENTS.md) and nearer parent instructions.
+Repository rules: [root guide](../../AGENTS.md).

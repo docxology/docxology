@@ -1,22 +1,13 @@
-# AGENTS.md — `docxology/code/tests/fixtures`
+# AGENTS.md — `code/tests/fixtures/`
 
-## What this is
+Test fixture data: `frozen-work-keys.json` freezes the bibliography's
+`num → citation_key` mapping so `code/tests/test_frozen_work_keys.py` can fail if an
+existing work is ever re-slugged.
 
-Test fixture data.
+- This is a contract, not a convenience: `works/{citation_key}.html` is a permanent
+  public URL, so a changed key is a 404 for anyone citing it. Update the fixture only
+  through the workflow that adds a new work, never by editing an existing entry.
+- The suite that reads it is the check; there is no separate schema validation of the
+  fixture.
 
-## Layout
-
-- fixtures.
-
-## Invariants & gotchas
-
-- This is the public `docxology/docxology` repository. Follow the root
-  ownership and privacy rules; verify the Git destination before publishing.
-- Carry authorized changes through review and verification on a work branch.
-  Preserve concurrent edits and publish only reviewed public content.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls code/tests/fixtures`
-- Follow the [root repository instructions](../../../AGENTS.md) and nearer parent instructions.
+Repository rules: [root guide](../../../AGENTS.md).

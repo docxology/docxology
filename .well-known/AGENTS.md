@@ -1,22 +1,12 @@
-# AGENTS.md — `docxology/.well-known`
+# AGENTS.md — `.well-known/`
 
-## What this is
+`security.txt`, the responsible-disclosure record served at
+`https://danielarifriedman.com/.well-known/security.txt`. It is plain text with no
+generator behind it: edit it directly.
 
-Well-known metadata served at the site root.
+- Keep the contact and the `Expires` field truthful. An expired record is a dead end
+  for whoever finds a vulnerability.
+- Nothing validates it: `validate_repo.py` covers the generated site layer, not
+  well-known metadata, and there is no CI check for this file.
 
-## Layout
-
-- well-known text files.
-
-## Invariants & gotchas
-
-- This is the public `docxology/docxology` repository. Follow the root
-  ownership and privacy rules; verify the Git destination before publishing.
-- Carry authorized changes through review and verification on a work branch.
-  Preserve concurrent edits and publish only reviewed public content.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls .well-known`
-- Follow the [root repository instructions](../AGENTS.md) and nearer parent instructions.
+Repository rules: [root guide](../AGENTS.md).

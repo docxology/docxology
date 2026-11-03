@@ -1,22 +1,11 @@
-# AGENTS.md — `docxology/blog/winged-snowflake-2021`
+# AGENTS.md — `blog/winged-snowflake-2021/`
 
-## What this is
+One hand-authored post, kept as its own folder with `index.html` beside the shared
+blog index. Nothing here is generated.
 
-Source folder for the 2021 "winged snowflake" post.
+- Edit the page directly; run the repository-wide validator afterwards
+  (`uv run python3 code/orchestrators/validate_repo.py`) because the page still has to
+  satisfy the site's canonical, CSP, and social-meta rules.
+- No test renders it: a broken link or missing asset is visible only on the page.
 
-## Layout
-
-- post source + assets.
-
-## Invariants & gotchas
-
-- This is the public `docxology/docxology` repository. Follow the root
-  ownership and privacy rules; verify the Git destination before publishing.
-- Carry authorized changes through review and verification on a work branch.
-  Preserve concurrent edits and publish only reviewed public content.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls blog/winged-snowflake-2021`
-- Follow the [root repository instructions](../../AGENTS.md) and nearer parent instructions.
+Repository rules: [root guide](../../AGENTS.md).

@@ -1,22 +1,12 @@
-# AGENTS.md — `docxology/data/video-transcripts`
+# AGENTS.md — `data/video-transcripts/`
 
-## What this is
+Video transcripts used when building the video surfaces, named by YouTube video id and
+refreshed by `code/orchestrators/fetch_video_transcripts.py`.
 
-Video transcript data feeding the site.
+- Fetched content, not prose to edit: refresh through the fetcher so the snapshot stays
+  attributable, and keep any caveat that came with it.
+- The video-page generator and its tests (`code/tests/test_build_video_pages.py`) are
+  the consumers; a missing transcript is a gap in a page, not a build failure.
+- Listing first: the transcripts present are whatever the last fetch produced.
 
-## Layout
-
-- transcript files.
-
-## Invariants & gotchas
-
-- This is the public `docxology/docxology` repository. Follow the root
-  ownership and privacy rules; verify the Git destination before publishing.
-- Carry authorized changes through review and verification on a work branch.
-  Preserve concurrent edits and publish only reviewed public content.
-- Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
-
-## Verify
-
-- `ls data/video-transcripts`
-- Follow the [root repository instructions](../../AGENTS.md) and nearer parent instructions.
+Repository rules: [root guide](../../AGENTS.md).
