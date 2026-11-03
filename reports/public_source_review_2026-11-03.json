@@ -18435,17 +18435,10 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "a563fb19f62839b997772649455944b78da470b4",
-  "source_tree_sha": "829408507a90ec4398eeac7e25af407d3db602dd",
-  "source_worktree_clean": false,
-  "source_worktree_dirty_paths": [
-    "CHANGELOG.md",
-    "code/orchestrators/validate_repo.py",
-    "code/src/build_stamp.py",
-    "code/tests/test_build_stamp.py",
-    "docs/operations/release-integrity.md",
-    "updates.html"
-  ],
+  "source_commit": "0b2f2c84e8d1106677c81c507569709d5bc6dc0b",
+  "source_tree_sha": "8ec29f404baead0e78aa0230f5d280d894afc879",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
   "summary": {
     "applied": 430,
     "categories": {
