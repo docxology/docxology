@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-03T02:33:42Z",
-  "source_commit_at_generation": "0f17ff6558d839d9cc542f9813f0a8189f56f43b",
+  "generated_at": "2026-11-03T03:02:36Z",
+  "source_commit_at_generation": "a563fb19f62839b997772649455944b78da470b4",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 955138399,
+    "source_bytes": 955139499,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 6142,
-    "artifact_bytes": 956224384
+    "artifact_bytes": 956225484
   },
   "included_files": [
     {
@@ -81,8 +81,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 150573,
-      "sha256": "ea23c9c85c916a5ed1bcb33ef75f96ce816c64443382124b8516161186b4dc71"
+      "bytes": 150923,
+      "sha256": "8d158119fc9a709ebdb578d6fbd7cb6bce9171a69e902e5035ae0b6b9410c61d"
     },
     {
       "path": "CITATION.cff",
@@ -10581,8 +10581,8 @@
     },
     {
       "path": "code/orchestrators/sync_site_facts.py",
-      "bytes": 14663,
-      "sha256": "6ce620d014897b2c2c11307a656a191488d69847a1ad19178d2a2c9924b7fd83"
+      "bytes": 14865,
+      "sha256": "4725fd65eb34898c0b30a494da50852a5387d044ac812a1d308d3c99ff2c5c3d"
     },
     {
       "path": "code/orchestrators/sync_software_html.py",
@@ -10596,8 +10596,8 @@
     },
     {
       "path": "code/orchestrators/validate_repo.py",
-      "bytes": 31018,
-      "sha256": "484a9701c8d5ad0c830e6155073d74fea0485d7e3d0d098684034c2d8ada7752"
+      "bytes": 31000,
+      "sha256": "15f29b789ee7c4b62b52354762641028d64396bb9a8c07a90a5cb659833ae0a2"
     },
     {
       "path": "code/orchestrators/verify_deployed_artifact.py",
@@ -10671,8 +10671,8 @@
     },
     {
       "path": "code/src/build_stamp.py",
-      "bytes": 10389,
-      "sha256": "7c286bc6adef6a41a0e759e42c755c1a34243dd0c9aa34c3dcc41d28bdd8c981"
+      "bytes": 10580,
+      "sha256": "741290ed054cfa9d8cea528cbb45b5e17d46ff9aaca87a58ac6ee21eab7f30ef"
     },
     {
       "path": "code/src/change_classifier.py",
@@ -23556,8 +23556,8 @@
     },
     {
       "path": "updates.html",
-      "bytes": 230432,
-      "sha256": "9d57a05f357101d770863176cb2e0618ef8c9461b111fa907ba8d6c601417a20"
+      "bytes": 230807,
+      "sha256": "0727d5c96cf48e3dd4de9283043e8c9581cbf6b680381aab55ae3e1d7ee5122f"
     },
     {
       "path": "uv.lock",
