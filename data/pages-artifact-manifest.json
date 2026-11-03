@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-02T20:14:02Z",
+  "generated_at": "2026-11-03T00:43:00Z",
   "source_commit_at_generation": "a8405c08f3bd7bc114ed6688b97be35d7f344fcc",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 955061267,
+    "source_bytes": 955061871,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 6142,
-    "artifact_bytes": 956147251
+    "artifact_file_count": 6143,
+    "artifact_bytes": 956147971
   },
   "included_files": [
     {
@@ -10117,7 +10117,7 @@
     {
       "path": "catalog.html",
       "bytes": 55884,
-      "sha256": "bdbda954557b9fdd8629043e7d10232623531a5eb8bc7f53e63e0bc5e05e3b90"
+      "sha256": "155e3bc91b9e4fd56042b5b5509f521c1f400eaf170abe6a15b0593c9b677c13"
     },
     {
       "path": "cite-verify.html",
@@ -11286,8 +11286,8 @@
     },
     {
       "path": "code/tests/test_lighthouse_budgets.py",
-      "bytes": 11081,
-      "sha256": "d54adc655174d3a35e89d051102b40b50a4050e0832c879d6fee1997c3f24f49"
+      "bytes": 11685,
+      "sha256": "4ec3ab4d866de451c3e848852a04734a3c3f2cef3645d54fedaa2d2074a688ad"
     },
     {
       "path": "code/tests/test_lighthouse_gate_contract.py",
@@ -11802,7 +11802,7 @@
     {
       "path": "data/catalog.json",
       "bytes": 35553,
-      "sha256": "cb0588209887432d5bae7aba20a8ea8ccec91326a8eb647d16043f4807509488"
+      "sha256": "615d99718cd3afd97e8dbe34a3d8c51f6731b564ee11c0f66ebbd5eab3fb9907"
     },
     {
       "path": "data/claims.json",
@@ -23422,7 +23422,7 @@
     {
       "path": "reproducibility.html",
       "bytes": 17550,
-      "sha256": "cdf09f732cc5a8023e20ff2972ed207ed4812b13358dca88226f09ff58b4ee1a"
+      "sha256": "712f39e75ad27388ecb64e8331b86d20adc9ba40bda2b5bf4c0bb86b5fa7bd2c"
     },
     {
       "path": "research-map.html",
@@ -23527,7 +23527,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 428742,
-      "sha256": "62227b9fa0654876b4275528768ee3aac437e30b87dcffa0ff45e18a871aff8c"
+      "sha256": "f8c9aa6833aeccbfd25246c0c6c66071025c2dd564d97ac813a88d6e1a4048e3"
     },
     {
       "path": "software.html",
@@ -30715,6 +30715,10 @@
       "role": "public control metadata"
     },
     {
+      "path": "reports/pages_artifact_growth_2026-11-03.json",
+      "role": "public control metadata"
+    },
+    {
       "path": "reports/public_source_review_2026-09-27.json",
       "role": "public control metadata"
     },
@@ -30819,5 +30823,5 @@
       "reports/accessibility_static_2026-06-30.json"
     ]
   },
-  "growth_report": "reports/pages_artifact_growth_2026-11-02.json"
+  "growth_report": "reports/pages_artifact_growth_2026-11-03.json"
 }
