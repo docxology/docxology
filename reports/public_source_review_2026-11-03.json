@@ -18437,8 +18437,15 @@
   "schema_version": "1.0",
   "source_commit": "a563fb19f62839b997772649455944b78da470b4",
   "source_tree_sha": "829408507a90ec4398eeac7e25af407d3db602dd",
-  "source_worktree_clean": true,
-  "source_worktree_dirty_paths": [],
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    "CHANGELOG.md",
+    "code/orchestrators/validate_repo.py",
+    "code/src/build_stamp.py",
+    "code/tests/test_build_stamp.py",
+    "docs/operations/release-integrity.md",
+    "updates.html"
+  ],
   "summary": {
     "applied": 430,
     "categories": {
