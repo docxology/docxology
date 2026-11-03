@@ -223,3 +223,57 @@ def test_validate_build_stamp_labels_accepts_current_and_unstamped_pages(
     monkeypatch.setattr(validator, "REPO_ROOT", tmp_path)
 
     validator.validate_build_stamp_labels()
+
+
+def _prefixless_stamped_page(body: str, sha: str) -> str:
+    """A stamped page whose label lost the fixed ``build `` prefix.
+
+    The anchor is structurally intact, so the page is not unstamped: it is
+    stamped with a label no consumer can parse.
+    """
+    return f'<html><main>{body}</main><footer><p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/{sha}">generated 2026-01-02T03:04:05Z</a></p></footer></html>'
+
+
+def test_validate_build_stamp_labels_rejects_a_prefixless_label(tmp_path, monkeypatch):
+    """An anchor whose label does not parse is a problem, not an absence.
+
+    ``STAMP_HTML_RE`` requires the fixed ``build `` prefix, so a prefixless
+    anchor is invisible to it and would otherwise read as an unstamped page.
+    The gate counts the raw marker against the anchors that parse, so the label
+    is reported instead of exempted.
+    """
+    validator = _load_validate_repo()
+    (tmp_path / "prefixless.html").write_text(
+        _prefixless_stamped_page("same body", "aaaaaaa"), encoding="utf-8"
+    )
+    monkeypatch.setattr(validator, "REPO_ROOT", tmp_path)
+
+    with pytest.raises(SystemExit) as excinfo:
+        validator.validate_build_stamp_labels()
+
+    assert "prefixless.html" in str(excinfo.value)
+
+
+def test_validate_build_stamp_labels_rejects_unparseable_anchor_markup(
+    tmp_path, monkeypatch
+):
+    """A marker that is not a parseable anchor is reported, not skipped."""
+    validator = _load_validate_repo()
+    (tmp_path / "broken.html").write_text(
+        '<html><footer><p class="build-stamp">build aaaaaaa 2026-01-02'
+        " · generated 2026-01-02T03:04:05Z</p></footer></html>",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(validator, "REPO_ROOT", tmp_path)
+
+    with pytest.raises(SystemExit) as excinfo:
+        validator.validate_build_stamp_labels()
+
+    assert "broken.html" in str(excinfo.value)
+
+
+def test_find_stamp_label_problems_ignores_pages_without_a_marker(tmp_path):
+    """A page with no stamp marker at all stays exempt."""
+    page = tmp_path / "plain.html"
+    page.write_text("<html><body>hand-authored</body></html>", encoding="utf-8")
+    assert build_stamp.find_stamp_label_problems([page]) == []

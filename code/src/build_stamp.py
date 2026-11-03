@@ -66,6 +66,17 @@ def label_has_current_shape(label: str) -> bool:
     return bool(STAMP_LABEL_RE.match(label))
 
 
+# Matches a footer stamp anchor whatever its label says. ``STAMP_HTML_RE``
+# requires the fixed ``build `` prefix, so on its own it cannot see an anchor
+# whose label lost that prefix: the page reads as "no stamp", which the
+# repo-wide assertion exempts. Counting the raw marker against the anchors that
+# parse under this pattern turns that into a reported problem instead.
+STAMP_ANY_ANCHOR_RE = re.compile(
+    r'<p class="build-stamp"><a href="[^"]*">([^<]*)</a></p>'
+)
+_STAMP_MARKER = 'class="build-stamp"'
+
+
 class BuildStampError(RuntimeError):
     """Raised when the build stamp cannot be derived from git or the environment."""
 
@@ -167,17 +178,22 @@ def reuse_on_disk_stamp(candidate: str, on_disk: str | None) -> str:
 
 
 def find_stamp_label_problems(paths: Iterable[Path]) -> list[tuple[Path, str]]:
-    """Return pages whose footer stamp label lacks the current labelled shape.
+    """Return pages whose footer stamp is not a current, parseable labelled anchor.
 
     A page that carries no stamp is not a problem: most hand-authored pages
     never get a footer stamp. A hand-authored page that does carry one
     (``index.html``, so deploy freshness has a stamp to verify on the home page)
-    must carry the same labelled shape as a generated page. A page that carries
-    a stamp in the pre-suffix format is a problem, because that format does not
-    say which of its two values is the payload commit's committer date and which
-    is the rendering instant. The format change is therefore detectable rather
-    than something the site can drift into a mixture of without any check
-    noticing.
+    must carry the same labelled shape as a generated page.
+
+    Two shapes are reported. A label in the pre-suffix format is a problem,
+    because that format does not say which of its two values is the payload
+    commit's committer date and which is the rendering instant. And an anchor
+    whose label does not parse at all is a problem rather than an absence: a
+    label that lost the fixed ``build `` prefix is reported instead of being
+    exempted as an unstamped page, and counting the raw marker against the
+    anchors that parse is what draws that line. The format change is therefore
+    detectable rather than something the site can drift into a mixture of
+    without any check noticing.
     """
     problems: list[tuple[Path, str]] = []
     for path in paths:
@@ -185,8 +201,19 @@ def find_stamp_label_problems(paths: Iterable[Path]) -> list[tuple[Path, str]]:
             text = path.read_text(encoding="utf-8")
         except (OSError, UnicodeDecodeError):
             continue
-        for match in STAMP_HTML_RE.finditer(text):
-            label = match.group(2)
+        anchors = list(STAMP_ANY_ANCHOR_RE.finditer(text))
+        markers = text.count(_STAMP_MARKER)
+        if markers != len(anchors):
+            problems.append(
+                (
+                    path,
+                    f"{markers} build-stamp marker(s) but "
+                    f"{len(anchors)} parseable anchor(s)",
+                )
+            )
+            continue
+        for match in anchors:
+            label = match.group(1)
             if not label_has_current_shape(label):
                 problems.append((path, label))
                 break
