@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-04T17:03:15Z",
-  "source_commit_at_generation": "39ef4dde5bea7d1313c9b9c8f5c2f9217cc71ce6",
+  "generated_at": "2026-11-04T20:27:04Z",
+  "source_commit_at_generation": "10bd59d4a440f59c205896396390d5897b2d7942",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 956633995,
+    "source_bytes": 956633994,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 6158,
-    "artifact_bytes": 957722563
+    "artifact_bytes": 957722562
   },
   "included_files": [
     {
@@ -10137,7 +10137,7 @@
     {
       "path": "catalog.html",
       "bytes": 55918,
-      "sha256": "8f4f19dcb7f450dd265af127ff3e112b92323efd8b365c27698a1c98675b6643"
+      "sha256": "bd9223a38d218c34aecdd2ea10ec25f90c4d5cadb2f005d3e6dc837f15330de0"
     },
     {
       "path": "cite-verify.html",
@@ -11847,7 +11847,7 @@
     {
       "path": "data/catalog.json",
       "bytes": 35553,
-      "sha256": "c9de221affc02540b153488ce11df7f6c57a06f35821f548628c1fe9f32a936c"
+      "sha256": "f19a80d77ed0140620855561750e73dc614b7b98d39ea62dad10f0336c601073"
     },
     {
       "path": "data/claims.json",
@@ -23497,7 +23497,7 @@
     {
       "path": "reproducibility.html",
       "bytes": 17584,
-      "sha256": "9adcfbd85bd45f0faf8af2326dcfe0688c26289e73132f2742828ebb397066d2"
+      "sha256": "ef99b42acd84d7466c78f35b4640b7a4a3e9614a62839f736f392d9e86f8e3e9"
     },
     {
       "path": "research-map.html",
@@ -23636,8 +23636,8 @@
     },
     {
       "path": "uv.lock",
-      "bytes": 36593,
-      "sha256": "a31e8ef189b3c0c92bc72998d580bae76b1889b3ca3f27306000b6306dca55cc"
+      "bytes": 36592,
+      "sha256": "c74cba60e380643748e9f4d2c71e73cdf8598e410b4181dbcbf6e092eed4ec45"
     },
     {
       "path": "videos.html",
