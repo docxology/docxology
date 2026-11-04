@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-04T16:55:47Z",
+  "generated_at": "2026-11-04T17:03:53Z",
   "source_commit_at_generation": "39ef4dde5bea7d1313c9b9c8f5c2f9217cc71ce6",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
@@ -31,9 +31,9 @@
     "data/current-counts.json": "349885a19cae9e06961bf183e4ce699e5f7b47d895fe67623b67c5fa97953449",
     "data/coverage-exceptions.json": "90379749c88843657df06e96096f7a6adc962b6ce5de159c7e41a7a715f73673",
     "data/repository-classification.json": "9af19b0c2621b0ac1f8d4ad6e93fd71e6fe31c7c3f4597bb12bce9cbc442339c",
-    "data/agent-index.json": "a2549aefea87db3b651a4f8eadfb073602d7e35f9222d6d51c0150c3e1f4107d",
-    "data/generated-manifest.json": "6e0ad4a67a261d4c5e7274022daecdf00688258ae4b4fa99344929c41ba8ef70",
-    "data/pages-artifact-manifest.json": "2c720ceca9ff523e04ec99e0ae73341dcc86b86c0de61098f60bbb65a74e5ffb"
+    "data/agent-index.json": "8e0f06161b538538011b22334d9cddcc97a10b2679278d2ed4818db05a78d988",
+    "data/generated-manifest.json": "17046360e62b69ce3941be80fc961a8573c6bfa968777667eed68b7b1992c843",
+    "data/pages-artifact-manifest.json": "59358875482a0e72121dbdb72997ccc8b15c7a346fdf86ce3f21734dd759b790"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
@@ -41,7 +41,7 @@
     "artifact_file_count": 6158,
     "artifact_bytes": 957722563,
     "omitted_paper_image_count": 8959,
-    "omitted_superseded_report_count": 727
+    "omitted_superseded_report_count": 729
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
