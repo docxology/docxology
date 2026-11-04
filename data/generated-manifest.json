@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T03:08:08Z",
+  "generated_at": "2026-11-04T17:02:53Z",
   "artifacts": [
     {
       "name": "Research exploration tools",
@@ -335,7 +335,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-11-03.json"
+        "reports/pages_artifact_growth_2026-11-04.json"
       ],
       "sources": [
         "tracked repository files",
@@ -779,8 +779,8 @@
     {
       "name": "Public-source review record",
       "outputs": [
-        "reports/public_source_review_2026-11-03.json",
-        "reports/public_source_review_2026-11-03.md"
+        "reports/public_source_review_2026-11-04.json",
+        "reports/public_source_review_2026-11-04.md"
       ],
       "sources": [
         "reports/public_source_snapshot_*.json",
