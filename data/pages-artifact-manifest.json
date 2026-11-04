@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-03T16:10:25Z",
-  "source_commit_at_generation": "1fb4abd636b2cf81d638281cee9eb9d3e69f77fc",
+  "generated_at": "2026-11-04T16:43:39Z",
+  "source_commit_at_generation": "39ef4dde5bea7d1313c9b9c8f5c2f9217cc71ce6",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 956623968,
+    "source_bytes": 956633995,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 6144,
-    "artifact_bytes": 957710241
+    "artifact_file_count": 6159,
+    "artifact_bytes": 957722679
   },
   "included_files": [
     {
@@ -143,6 +143,16 @@
       "path": "apple-touch-icon.png",
       "bytes": 40219,
       "sha256": "7ab5a4db5281f8118452fca9cebb910d9684c9a80a60ae9b16b3eb6c174c99d7"
+    },
+    {
+      "path": "art-collections/AGENTS.md",
+      "bytes": 1013,
+      "sha256": "0c05e53919c4f7be7c00c2da0786a9490edf07c4d7bf29f3d5c2b6064c6f1f0b"
+    },
+    {
+      "path": "art-collections/README.md",
+      "bytes": 714,
+      "sha256": "1894b68c811fce79a93a2a20428ea04d45963abfd5b79be268c90623c726dfb5"
     },
     {
       "path": "art-collections/active-inference.html",
@@ -9985,6 +9995,16 @@
       "sha256": "4eebc380644e733d599cc1160b7cbb3f8f824dc0d3cbb42daf4bee298db612b4"
     },
     {
+      "path": "artworks/AGENTS.md",
+      "bytes": 904,
+      "sha256": "88e4da20ed621e062fa4979df615049023acb238b2083e6b682a25ba020ec2ae"
+    },
+    {
+      "path": "artworks/README.md",
+      "bytes": 924,
+      "sha256": "6735a123ca404e1870a443cfd0a5413bcae0326ee3b921bf634e743979e527e4"
+    },
+    {
       "path": "artworks/index.html",
       "bytes": 146488,
       "sha256": "a95d038cb394a4b3a1ce4cd907e2796192efedce80f597773ca60741196225bb"
@@ -10713,6 +10733,16 @@
       "path": "code/src/deploy_freshness.py",
       "bytes": 5066,
       "sha256": "bc9de44124b0a7c8a139dc51c63534cf8882679a78a95c71d365ffa519fadb4e"
+    },
+    {
+      "path": "code/src/docxology_tools/AGENTS.md",
+      "bytes": 588,
+      "sha256": "66c5a3767b57b871b83fa85158370bb10d4e9c0e4a0fa54d281168fbe3194545"
+    },
+    {
+      "path": "code/src/docxology_tools/README.md",
+      "bytes": 562,
+      "sha256": "b11664d18dc93f3f4e675c9f57c901ac4a9e1966086f9d07b640fc2faf4cf8f9"
     },
     {
       "path": "code/src/docxology_tools/__init__.py",
@@ -11753,6 +11783,16 @@
       "path": "computational-entomology.html",
       "bytes": 24987,
       "sha256": "639557391f24d64c2fd69dc9211314bb02fa9420e7143082a42c5d4acb6c8272"
+    },
+    {
+      "path": "css/AGENTS.md",
+      "bytes": 850,
+      "sha256": "a7a335728c1baf4cdc69ecc8d66eeb076f829d464e3c8abb547d9417e59bad5c"
+    },
+    {
+      "path": "css/README.md",
+      "bytes": 746,
+      "sha256": "3c87812a24ee040baf180c421dc9d79d68cf1c1fd5c086dd7741384c8f4e6bbe"
     },
     {
       "path": "css/home.css",
@@ -22945,6 +22985,16 @@
       "sha256": "ba0e194e551b8f23a4430746df0824aa05bbfa777be9899c77f131cafacd443c"
     },
     {
+      "path": "reports/browser-qa/2026-10-05/AGENTS.md",
+      "bytes": 1139,
+      "sha256": "abef51ed1b33a493c3e416a4738e9de716ab06cdf30066678d28d5b1ddfbfd3e"
+    },
+    {
+      "path": "reports/browser-qa/2026-10-05/README.md",
+      "bytes": 68,
+      "sha256": "b6653f1d954d83f602aaded54b65b8abf362d0cdf3468e856570a28b5e02abe8"
+    },
+    {
       "path": "reports/browser-qa/2026-10-05/manifest.json",
       "bytes": 4331,
       "sha256": "d8370b8e140b9253994ea5372db7c583ca20ca998e5e5d5a360a12bf4c5114f7"
@@ -22958,6 +23008,16 @@
       "path": "reports/browser-qa/README.md",
       "bytes": 142,
       "sha256": "c1488ea8bb84cd98654b5b021efe2869c266ddfe60c0c1d4ca477fb9cf3733af"
+    },
+    {
+      "path": "reports/browser-smoke/2026-10-05/AGENTS.md",
+      "bytes": 1105,
+      "sha256": "3dc2d99913964d222b9b399e492b0bf0ed5c51f7075a10fa8fd9962825d6d74a"
+    },
+    {
+      "path": "reports/browser-smoke/2026-10-05/README.md",
+      "bytes": 71,
+      "sha256": "80dd08910878674042b27f92d87c1aedc888f93644f6f36951cc7f57ae111a73"
     },
     {
       "path": "reports/browser-smoke/2026-10-05/art.png",
@@ -23373,6 +23433,16 @@
       "path": "reports/source_coverage_2026-11-03.md",
       "bytes": 4629,
       "sha256": "59d1ef5b228fdb0b23b25484896207dead2898807bc40326a7c9bfd94051c553"
+    },
+    {
+      "path": "reports/visual-qa/2026-10-05/AGENTS.md",
+      "bytes": 1276,
+      "sha256": "6f4b044450522f69a1beda2eacab6ce876075dd95857d10a3e8b59a45e163591"
+    },
+    {
+      "path": "reports/visual-qa/2026-10-05/README.md",
+      "bytes": 67,
+      "sha256": "bfa032b28381f502e40004659050f6a66b536d3914d04ad92616a772ce780f03"
     },
     {
       "path": "reports/visual-qa/2026-10-05/manifest.json",
@@ -30720,6 +30790,10 @@
       "role": "public control metadata"
     },
     {
+      "path": "reports/pages_artifact_growth_2026-11-04.json",
+      "role": "public control metadata"
+    },
+    {
       "path": "reports/public_source_review_2026-09-27.json",
       "role": "public control metadata"
     },
@@ -30803,8 +30877,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 708,
-    "bytes": 200214396,
+    "count": 726,
+    "bytes": 200224231,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",
@@ -30828,5 +30902,5 @@
       "reports/accessibility_static_2026-06-30.json"
     ]
   },
-  "growth_report": "reports/pages_artifact_growth_2026-11-03.json"
+  "growth_report": "reports/pages_artifact_growth_2026-11-04.json"
 }
