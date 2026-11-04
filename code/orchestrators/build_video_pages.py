@@ -708,12 +708,18 @@ def render_video_page(video: dict, *, transcript: str | None = None) -> str:
     <meta property="og:image:width" content="480">
     <meta property="og:image:height" content="360">
 {social_meta_tags(title, description, video["thumbnail_url"], image_alt=title)}
-    <link rel="stylesheet" href="../style.css?v=site-20261002b">
+    <link rel="stylesheet" href="../style.css?v=site-20261103a">
     <style>{BREADCRUMB_CSS}</style>
     <style>
         .video-layout{{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.6fr);gap:1.25rem;align-items:start}}
-        .video-embed{{aspect-ratio:16/9;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;overflow:hidden}}
+        .video-embed{{position:relative;aspect-ratio:16/9;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;overflow:hidden}}
         .video-embed iframe{{width:100%;height:100%;border:0}}
+        .video-facade{{position:absolute;inset:0;display:block;width:100%;height:100%;margin:0;padding:0;border:0;background:#000;cursor:pointer}}
+        .video-facade img{{display:block;width:100%;height:100%;object-fit:cover}}
+        .video-facade-play{{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:68px;height:48px;border-radius:10px;background:rgba(10,9,8,.72);border:1px solid var(--gold-40)}}
+        .video-facade-play::after{{content:"";position:absolute;top:50%;left:50%;transform:translate(-40%,-50%);border-style:solid;border-width:11px 0 11px 18px;border-color:transparent transparent transparent var(--gold-bright)}}
+        .video-facade:hover .video-facade-play,.video-facade:focus-visible .video-facade-play{{background:rgba(10,9,8,.92)}}
+        .video-facade:focus-visible{{outline:3px solid var(--gold-bright);outline-offset:2px}}
         .meta-list{{display:grid;gap:.55rem;margin:0;padding:0;list-style:none}}
         .meta-list li{{border-bottom:1px solid var(--border);padding-bottom:.45rem;color:var(--text-secondary)}}
         .meta-list strong{{color:var(--text-primary)}}
@@ -743,7 +749,10 @@ def render_video_page(video: dict, *, transcript: str | None = None) -> str:
         <section class="section video-layout">
             <div>
                 <div class="video-embed">
-                    <iframe src="{h(video["embed_url"])}" title="{h(video["title"])}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <a class="video-facade" href="{h(video["youtube_url"])}" target="_blank" rel="noopener" data-youtube-src="{h(video["embed_url"])}" data-youtube-title="{h(video["title"])}" aria-label="Play video: {h(video["title"])}">
+                        <img src="{h(video["thumbnail_url"])}" alt="Video thumbnail: {h(video["title"])}" width="480" height="360" decoding="async">
+                        <span class="video-facade-play" aria-hidden="true"></span>
+                    </a>
                 </div>
                 <p class="section-note"><a href="{h(video["youtube_url"])}">Open on YouTube</a> - <a href="{h(video["channel_url"])}">{h(video["channel_label"])}</a> - <a href="../videos.html">interactive timeline</a></p>
             </div>
@@ -873,7 +882,7 @@ def render_index(payload: dict) -> str:
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 {social_meta_tags(title, clip_description(description, 155), SITE_ORIGIN + "og-media.jpg", image_alt=title)}
-    <link rel="stylesheet" href="../style.css?v=site-20261002b">
+    <link rel="stylesheet" href="../style.css?v=site-20261103a">
     <style>{BREADCRUMB_CSS}</style>
     <style>
         .pill-row{{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.75rem}}

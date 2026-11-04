@@ -376,6 +376,18 @@ def run_report() -> dict:
                         base + "/videos/personal-NWrGixOmW6k.html",
                         wait_until="domcontentloaded",
                     )
+                    facade = page.locator("[data-youtube-src]").first
+                    if facade.count() == 0:
+                        raise AssertionError("video page has no click-to-load facade")
+                    if page.locator("iframe").count() != 0:
+                        raise AssertionError("player iframe loaded before a click")
+                    watch_href = facade.get_attribute("href") or ""
+                    if not watch_href.startswith("https://www.youtube.com/watch?"):
+                        raise AssertionError(
+                            f"facade has no no-JavaScript watch fallback: {watch_href!r}"
+                        )
+                    facade.click()
+                    page.wait_for_selector("iframe")
                     iframe = page.locator("iframe").first
                     src = iframe.get_attribute("src") or ""
                     if not src.startswith("https://www.youtube-nocookie.com/embed/"):
@@ -391,6 +403,7 @@ def run_report() -> dict:
                     "forced_colors": True,
                     "iframe_origin": "www.youtube-nocookie.com",
                     "iframe_title": True,
+                    "facade_click": True,
                 }
 
             record(CHECK_NAMES[6], forced_colors_and_iframes)

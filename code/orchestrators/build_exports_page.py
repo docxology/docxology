@@ -259,7 +259,7 @@ def render() -> str:
     <meta name="twitter:description" content="Citation exports and JSON datasets for the public research index.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-cite-verify.jpg">
     <meta name="twitter:image:alt" content="Public Exports — Daniel Ari Friedman">
-    <link rel="stylesheet" href="style.css?v=site-20261002b">
+    <link rel="stylesheet" href="style.css?v=site-20261103a">
     <style>
         .export-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}}
         .export-card{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}}
