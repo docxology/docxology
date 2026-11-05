@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-05T03:12:50Z",
-  "source_commit_at_generation": "8cde9c623f2edc1d424b3f9b76010d29f62780d7",
+  "generated_at": "2026-11-05T03:43:27Z",
+  "source_commit_at_generation": "a51c49fce5c2928a37930c9850c396028a781ff2",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 967674558,
+    "source_bytes": 967712824,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 6208,
-    "artifact_bytes": 968772306
+    "artifact_file_count": 6210,
+    "artifact_bytes": 968810924
   },
   "included_files": [
     {
@@ -81,8 +81,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 153036,
-      "sha256": "3fa07293c30b8433a575ce8901cd993cbca00c3de2aadbf1bf407669a012f834"
+      "bytes": 153311,
+      "sha256": "8aef0f937a860aca1dd488b350971c07f1c1ecd41c1fcaa374e06fd9ceadcd96"
     },
     {
       "path": "CITATION.cff",
@@ -10466,8 +10466,8 @@
     },
     {
       "path": "code/orchestrators/fetch_work_authors.py",
-      "bytes": 25413,
-      "sha256": "d377febd5a49e59bc35fe2f6738c1b9eca91142a163b4b2076d6c08aba7500e5"
+      "bytes": 37297,
+      "sha256": "56508a450cbbee0e76b3b735c51c4a51d9a6fd07aff558b224a04d12276486d5"
     },
     {
       "path": "code/orchestrators/fetch_youtube_data.py",
@@ -10726,8 +10726,8 @@
     },
     {
       "path": "code/src/count_consistency.py",
-      "bytes": 20561,
-      "sha256": "e4a60f8377de2f075b4c46cc497775b6913047f9df4d1b160cc1424094232fe6"
+      "bytes": 20818,
+      "sha256": "7500c18326a628f223e1fefab642e23b95dfd110c1d139cac758db1ed3e0b295"
     },
     {
       "path": "code/src/deploy_freshness.py",
@@ -11166,8 +11166,8 @@
     },
     {
       "path": "code/tests/test_count_consistency.py",
-      "bytes": 1419,
-      "sha256": "be20d8d866831d87a95a2cdb29b4e67e5fd62df44b5417ee1bfb6a343659ef72"
+      "bytes": 2045,
+      "sha256": "57a313b5090d0122d647a3084299caa95c99a59a501f580207a50694027323fd"
     },
     {
       "path": "code/tests/test_deploy_freshness.py",
@@ -11183,6 +11183,11 @@
       "path": "code/tests/test_deployed_artifact.py",
       "bytes": 11825,
       "sha256": "f6a13db4e8ae8f39fac888dbcd9deb619075b939abd970da08d452196d7504f1"
+    },
+    {
+      "path": "code/tests/test_doi_document_authors.py",
+      "bytes": 9734,
+      "sha256": "56639a042abb981fdab019e789c4d2a9755b7b829484e7533d840d33156a561a"
     },
     {
       "path": "code/tests/test_domain_feeds.py",
@@ -12071,8 +12076,8 @@
     },
     {
       "path": "data/work-authors.json",
-      "bytes": 171414,
-      "sha256": "0c40cf4f630306de9fc0b2264de7ebdc59c582a62e80602be2e4985a0b3127df"
+      "bytes": 180394,
+      "sha256": "bf73d3507fa56e15126aa24fc4e08f3c0e676c8ec5b746215a3f394faa22f2d9"
     },
     {
       "path": "data/work-enrichment.json",
@@ -12331,8 +12336,8 @@
     },
     {
       "path": "docs/operations/publication-sync.md",
-      "bytes": 36711,
-      "sha256": "0a31e122e51f6d65cc6711482c052b1eb9279009019e38709b83616ac70b063f"
+      "bytes": 38301,
+      "sha256": "9d7ceb101ff4165030de4d9329dd7f57c7217e1c9c437b355ee184dce777cf93"
     },
     {
       "path": "docs/operations/regeneration.md",
@@ -23700,6 +23705,11 @@
       "sha256": "ba462e46c2ae016d9a280940b218dc339ffe8871dfada18c3d39e3640dc2d047"
     },
     {
+      "path": "reports/work_authors_review_2026-11-05.json",
+      "bytes": 4645,
+      "sha256": "9a211738de8e1e159635fe56ded7c0758f523d2613fd48dcddeb1c28592bd27f"
+    },
+    {
       "path": "reports/work_page_access_2026-10-01.md",
       "bytes": 4626,
       "sha256": "427212fdbb2a964f69f63713d22ce7ab031e170dbba07cbe09b88f82d0e9a45f"
@@ -23732,7 +23742,7 @@
     {
       "path": "reproducibility.html",
       "bytes": 17584,
-      "sha256": "86140cdc0a2dc6eb1600d11492098f763578812f60bdf68d1e489a19dfcd2fc1"
+      "sha256": "7ee290a45c4a2d61e87db4bee02bedd01983adaf8128aabd2ed4e2e59402ce42"
     },
     {
       "path": "research-map.html",
@@ -23866,8 +23876,8 @@
     },
     {
       "path": "updates.html",
-      "bytes": 233836,
-      "sha256": "529d4464e40c9adc4de622a2d32ac947f5e89e32917bea5dd0af87d85570d4cd"
+      "bytes": 234111,
+      "sha256": "c4dcd5c45ec3c7cfc11d3b2b0396ef45a6ed806772d755a1cb5d2caa9113168f"
     },
     {
       "path": "uv.lock",
