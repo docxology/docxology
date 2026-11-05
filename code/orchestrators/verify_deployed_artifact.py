@@ -3,7 +3,8 @@
 
 This is technical deployment evidence, not the human-reviewed release
 attestation. It checks the exact hosted manifest, every work page, critical
-shared assets, every archived paper PDF's HEAD contract, and three PDF hashes.
+shared assets, every archived paper PDF's HEAD contract, three archive PDF
+hashes, and every reserved Scholar PDF alias's exact bytes and media type.
 The receipt is intended for an Actions artifact, never a source-tree rewrite.
 """
 
@@ -27,6 +28,10 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 import docxology_tools  # noqa: E402,F401
 from docxology_tools.release_controls import source_payload_commit  # noqa: E402
+from docxology_tools.scholar_pdf_projection import (  # noqa: E402
+    PDF_BYTE_LIMIT,
+    PILOT_BYTE_LIMIT,
+)
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 ORIGIN = "https://danielarifriedman.com/"
@@ -198,7 +203,60 @@ def verify_file(
         result["expected_sha256"] = item["sha256"]
         result["hash_matches"] = result.get("sha256") == item["sha256"]
         result["ok"] = result["ok"] and result["hash_matches"]
+        if item["path"].lower().endswith(".pdf"):
+            result["type_matches"] = result.get("content_type") == "application/pdf"
+            result["ok"] = result["ok"] and result["type_matches"]
     return result
+
+
+def scholar_pdf_contracts(manifest: dict, by_path: dict) -> list[dict]:
+    """Bind every reserved web copy to its included original and required GET."""
+    declared = manifest.get("projected_scholar_pdfs", [])
+    if not isinstance(declared, list):
+        raise ValueError("invalid Scholar PDF manifest records")
+    copies = {}
+    total = 0
+    for record in declared:
+        if not isinstance(record, dict):
+            raise ValueError("invalid Scholar PDF manifest record")
+        digest = record.get("sha256")
+        path = record.get("path")
+        source_path = record.get("source_path")
+        size = record.get("bytes")
+        if (
+            not isinstance(digest, str)
+            or not re.fullmatch(r"[0-9a-f]{64}", digest)
+            or path != f"works/{digest}.pdf"
+            or path in copies
+            or not isinstance(source_path, str)
+            or not source_path.startswith("papers/")
+            or not source_path.lower().endswith(".pdf")
+            or type(size) is not int
+            or not 0 < size <= PDF_BYTE_LIMIT
+        ):
+            raise ValueError("invalid or duplicate Scholar PDF copy contract")
+        try:
+            safe_path(source_path)
+        except ValueError as exc:
+            raise ValueError("invalid Scholar PDF source path") from exc
+        for required in (path, source_path):
+            item = by_path.get(required)
+            if (
+                item is None
+                or type(item.get("bytes")) is not int
+                or any(item.get(key) != record[key] for key in ("bytes", "sha256"))
+            ):
+                raise ValueError("Scholar PDF copy and included original must agree")
+        copies[path] = by_path[path]
+        total += size
+    hosted = {
+        path
+        for path in by_path
+        if path.startswith("works/") and path.lower().endswith(".pdf")
+    }
+    if hosted != copies.keys() or total > PILOT_BYTE_LIMIT:
+        raise ValueError("Scholar PDF membership or reservation budget mismatch")
+    return [copies[path] for path in sorted(copies)]
 
 
 def acceptance_plan(manifest: dict) -> tuple[list[dict], list[dict], list[dict]]:
@@ -211,6 +269,7 @@ def acceptance_plan(manifest: dict) -> tuple[list[dict], list[dict], list[dict]]
     missing = CRITICAL_PATHS - by_path.keys()
     if missing:
         raise ValueError("missing critical assets: " + ", ".join(sorted(missing)))
+    scholar = scholar_pdf_contracts(manifest, by_path)
     works = [
         item
         for item in files
@@ -234,7 +293,7 @@ def acceptance_plan(manifest: dict) -> tuple[list[dict], list[dict], list[dict]]
     samples = [
         ordered_pdfs[index] for index in sorted({0, len(pdfs) // 2, len(pdfs) - 1})
     ]
-    return html, ordered_pdfs, samples
+    return html, ordered_pdfs, [*samples, *scholar]
 
 
 def require_committed_manifest(repo_root: Path, commit: str) -> None:
@@ -328,7 +387,9 @@ def check_deployment(
         "scope": {
             "work_and_critical_asset_hashes": len(html),
             "paper_pdf_heads": len(pdfs),
-            "sample_pdf_hashes": len(samples),
+            "sample_pdf_hashes": len(samples)
+            - len(manifest.get("projected_scholar_pdfs", [])),
+            "scholar_pdf_hashes": len(manifest.get("projected_scholar_pdfs", [])),
             "all_artifact_files": False,
             "human_visual_review": False,
             "full_release_attestation": False,

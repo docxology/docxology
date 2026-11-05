@@ -1,5 +1,28 @@
 # Changelog
 
+## 2026-11-05 — Evidence contracts, scholarly discovery and methods draft
+
+- Added a reviewed five-article same-directory PDF pilot, with exact source
+  identities, rights/byline/date evidence and complete author-written abstracts.
+  Content-addressed aliases are assembled only for Pages; original URLs remain
+  hosted and all reservations stay within a 5 MiB allowance. The whole-site
+  budget is unchanged. [Source review](reports/scholar_pdf_placement_review_2026-11-05.md).
+- Deployment acceptance now fetches every reserved PDF alias and checks exact
+  bytes and PDF media type. Malformed copy/original manifest contracts fail
+  before network requests; stale or absent aliases fail actual HTTP checks.
+- Migrated historical report consumers to existing pinned GitHub archives so
+  the declared omission policy can recover web capacity while preserving every
+  source report and its history.
+- Expanded the repository-methods draft with source custody, complete intake,
+  hosting/discovery contracts, evidence classes, failure controls and explicit
+  reproducibility limits. Repaired review-slide prose pagination and measured
+  linked-bullet overflow. Format review remains separate from human, editorial,
+  scientific and publication approval.
+- Recorded the signed-in [Search Console observation](reports/gsc_observations_2026-11-05.md):
+  the sitemap was successful; three new works were unknown to Google and the
+  selective indexing submission failed at the external service. Scholar metrics
+  and indexing status were not inferred from those observations.
+
 ## 2026-11-04 — Publication intake, software review and bounded PDF hosting
 
 - Added the distinct Observers Are All You Need component preprint, retaining

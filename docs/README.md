@@ -51,6 +51,6 @@ generated-layer rebuild ordering, canonical/reports). This README is the human m
   documented under [`security/`](security/).
 - Keep `TODO.md` limited to unfinished work. Do not copy completed maintenance-log entries into it.
 
-- [Scholar citation review and prerequisite audit](seo/scholar-inclusion.md): bounded source proposals and hash-bound local PDF findings, separate from actual indexing.
+- [Scholar citation review and prerequisite audit](seo/scholar-inclusion.md): bounded source proposals, reviewed same-directory PDF reservations and hash-bound findings, separate from actual indexing.
 
 - [Backend profiling](operations/backend-profiling.md): bounded Python 3.15 timing/tracing, stable source/runtime bindings and measured optimization scope.

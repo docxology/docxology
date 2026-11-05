@@ -175,6 +175,8 @@ The completed maintenance record is kept in [docs/operations/maintenance-log.md]
 - Prefer full-catalog regeneration of `software.html` from `pages/SOFTWARE.md` (all owned + AII catalog rows, not a highlight subset), mirroring the publications.html / `sync_publications_html.py` pattern.
 - For new publication editions, prefer the existing versioned Zenodo PDF archive and keep metadata, work/paper pages, available extracted text, and previews here. Curate `remote_primary_pdf` and independent `source_evidence` under the [PDF hosting policy](docs/operations/github-pages-artifact.md#primary-pdf-hosting-and-source-custody); preserve existing local originals, public PDF URLs, and historical extraction provenance. Hosting curation does not authorize bulk migration, deletion, repository creation, or budget increases.
 
+- Same-directory scholarly PDF aliases use the reviewed [reservation registry](data/scholar-pdf-projections.json) and [hosting contract](docs/seo/scholar-inclusion.md). Preserve retired reservations and original download routes; generated aliases belong to the Pages output, with source and deployment checks owned by their declared tools.
+
 ## Learned Workspace Facts
 
 - Repo `docxology/docxology` powers the profile site; GitHub Pages custom domain in root `CNAME` is `danielarifriedman.com` (apex, no `www`).

@@ -359,3 +359,106 @@ def test_whole_acceptance_deadline_stops_queued_requests_and_retries(
         for result in receipt["results"]
         if not result["attempted"]
     )
+
+
+def projected_pdf(deployed):
+    root, manifest_path, _ = deployed
+    manifest = json.loads(manifest_path.read_text())
+    source = next(
+        row for row in manifest["included_files"] if row["path"].endswith(".pdf")
+    )
+    alias = f"works/{source['sha256']}.pdf"
+    (root / alias).write_bytes((root / source["path"]).read_bytes())
+    manifest["included_files"].append({**source, "path": alias})
+    manifest["projected_scholar_pdfs"] = [
+        {**source, "path": alias, "source_path": source["path"]}
+    ]
+    manifest_path.write_text(json.dumps(manifest))
+    return alias
+
+
+def test_all_scholar_aliases_have_required_live_byte_acceptance(deployed):
+    alias = projected_pdf(deployed)
+    _, manifest_path, origin = deployed
+    receipt = verifier.check_deployment(
+        manifest_path, commit="b" * 40, attempts=1, origin=origin
+    )
+    assert receipt["overall_ok"]
+    assert receipt["scope"]["scholar_pdf_hashes"] == 1
+    assert receipt["scope"]["sample_pdf_hashes"] == 1
+    checks = [row for row in receipt["results"] if row["path"] == alias]
+    assert (
+        len(checks) == 1 and checks[0]["method"] == "GET" and checks[0]["hash_matches"]
+    )
+
+
+@pytest.mark.parametrize("missing", [False, True])
+def test_stale_or_missing_scholar_alias_fails_actual_http_acceptance(deployed, missing):
+    alias = projected_pdf(deployed)
+    root, manifest_path, origin = deployed
+    target = root / alias
+    if missing:
+        target.unlink()
+    else:
+        body = target.read_bytes()
+        target.write_bytes(body[:-1] + b"x")
+    receipt = verifier.check_deployment(
+        manifest_path, commit="b" * 40, attempts=1, origin=origin
+    )
+    assert not receipt["overall_ok"]
+    assert [row["path"] for row in receipt["results"] if not row["ok"]] == [alias]
+
+
+@pytest.mark.parametrize(
+    "mutation",
+    [
+        "missing_alias",
+        "missing_original",
+        "wrong_bytes",
+        "wrong_hash",
+        "duplicate",
+        "unknown_alias",
+        "wrong_shape",
+    ],
+)
+def test_scholar_acceptance_requires_exact_manifest_copy_contract(deployed, mutation):
+    alias = projected_pdf(deployed)
+    _, manifest_path, _ = deployed
+    manifest = json.loads(manifest_path.read_text())
+    record = manifest["projected_scholar_pdfs"][0]
+    if mutation in {"missing_alias", "missing_original"}:
+        remove = alias if mutation == "missing_alias" else record["source_path"]
+        manifest["included_files"] = [
+            row for row in manifest["included_files"] if row["path"] != remove
+        ]
+    elif mutation == "wrong_bytes":
+        record["bytes"] += 1
+    elif mutation == "wrong_hash":
+        record["sha256"] = "c" * 64
+    elif mutation == "duplicate":
+        manifest["projected_scholar_pdfs"].append(dict(record))
+    elif mutation == "unknown_alias":
+        manifest["projected_scholar_pdfs"] = []
+    else:
+        manifest["projected_scholar_pdfs"] = {}
+    with pytest.raises(ValueError, match="Scholar"):
+        verifier.acceptance_plan(manifest)
+
+
+def test_scholar_pdf_requires_pdf_response_type(deployed, monkeypatch):
+    alias = projected_pdf(deployed)
+    _, manifest_path, origin = deployed
+    item = next(
+        row
+        for row in json.loads(manifest_path.read_text())["included_files"]
+        if row["path"] == alias
+    )
+    monkeypatch.setattr(
+        SimpleHTTPRequestHandler,
+        "extensions_map",
+        {**SimpleHTTPRequestHandler.extensions_map, ".pdf": "text/plain"},
+    )
+    result = verifier.verify_file(item, origin=origin)
+    assert result["hash_matches"]
+    assert result["content_type"] == "text/plain"
+    assert result["ok"] is False

@@ -63,7 +63,7 @@ These are finite teaching processes with declared assumptions and deterministic 
 
 Local structural, generated-output, and browser checks have distinct scopes. The [release runbook](../operations/settle.md) separates reviewed payload commits from generated control binders. [Deployment verification](../operations/live-verification.md) binds fresh route checks to an expected source commit and a specific successful Pages run. [Release integrity](../operations/release-integrity.md) records the further requirements for human visual review and full release attestation.
 
-The [artifact verifier](../../code/orchestrators/verify_deployed_artifact.py) requires research-desk pages, citation/map/trail datasets and their runtime assets in its declared critical scope. Missing manifest entries and mismatched live bytes fail technical acceptance. This remains a targeted projection check rather than a claim that every archived object was fetched.
+The [artifact verifier](../../code/orchestrators/verify_deployed_artifact.py) requires research-desk pages, citation/map/trail datasets and their runtime assets in its declared critical scope. The same bounded verifier requires every reserved scholarly PDF alias's exact body hash and PDF media type, with matching included original/copy contracts. Missing manifest entries and mismatched live bytes fail technical acceptance. This remains a targeted projection check rather than a claim that every archived object was fetched.
 
 ## Search-engine discovery boundary
 

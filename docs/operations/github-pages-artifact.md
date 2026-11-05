@@ -142,7 +142,9 @@ remain separate from that deployed-byte scope. Follow
 After deployment, the Pages workflow runs `verify_deployed_artifact.py` and
 retains `deployment-acceptance-<full SHA>` as an Actions artifact for 90 days.
 It checks exact manifest and critical-asset/work-page hashes, all locally hosted
-paper PDF HEAD contracts, and three deterministic hosted PDF content hashes. Failed
+paper PDF HEAD contracts, three deterministic archive PDF content hashes, and
+every reserved Scholar alias's exact body hash and PDF media type. Alias/original
+manifest membership and byte contracts must agree before requests begin. Failed
 checks fail the workflow and retain diagnostics. This technical receipt is
 bounded to 12 minutes across requests and propagation retries, with a separate
 15-minute hosted step limit so an exhausted deadline can still retain its
