@@ -24,6 +24,17 @@ submission problem and inability to connect to the reCAPTCHA service. No
 accepted request was observed; no challenge was bypassed. The other two work
 routes were inspected without submitting requests.
 
+## Later same-day retry
+
+A second direct signed-in inspection still reported work 233 unknown to
+Google, with no crawl recorded. **Request indexing** reached the **Testing if
+live URL can be indexed** progress dialog. The inspection tab then became
+unavailable before a final result could be observed or recovered. This retry's
+submission outcome is **unconfirmed**; it must not be counted as an accepted
+request or as a confirmed rejection. No durable screenshot receipt was retained.
+No CAPTCHA was solved or bypassed. A future inspection should check the actual
+status before making another selective request.
+
 ## Expected exclusions and remaining checks
 
 `agent-verify.html` and `reports.html` were unknown to Google in the inspected
