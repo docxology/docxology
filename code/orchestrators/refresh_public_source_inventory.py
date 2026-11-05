@@ -21,6 +21,10 @@ ORCID = "0000-0001-6232-9096"
 USER_AGENT = "docxology-public-source-inventory/1.0 (+https://danielarifriedman.com/)"
 
 from docxology_tools.report_paths import latest_report, source_commit  # noqa: E402
+from docxology_tools.zenodo_pagination import (  # noqa: E402
+    exact_zenodo_total,
+    fetch_zenodo_search,
+)
 
 
 def latest_output_path(date: str | None = None) -> Path:
@@ -145,42 +149,25 @@ def zenodo_records(label: str, q: str) -> dict[str, Any]:
     base_params = {"q": q, "size": 25, "sort": "mostrecent"}
     first_url = "https://zenodo.org/api/records?" + urllib.parse.urlencode(base_params)
     rows: list[dict[str, Any]] = []
-    total = None
     try:
-        for page in range(1, 11):
-            params = {**base_params, "page": page}
-            url = "https://zenodo.org/api/records?" + urllib.parse.urlencode(params)
-            data = fetch_json(url)
-            hits = data.get("hits", {})
-            total_value = hits.get("total")
-            if isinstance(total_value, dict):
-                total = total_value.get("value")
-            elif total_value is not None:
-                total = total_value
-            batch = hits.get("hits", [])
-            if not batch:
-                break
-            for hit in batch:
-                meta = hit.get("metadata", {})
-                rows.append(
-                    {
-                        "title": meta.get("title", ""),
-                        "doi": hit.get("doi", ""),
-                        "publication_date": meta.get("publication_date", ""),
-                        "resource_type": (meta.get("resource_type") or {}).get(
-                            "type", ""
-                        ),
-                        "version": meta.get("version", ""),
-                    }
-                )
-            if total is not None and len(rows) >= int(total):
-                break
+        result = fetch_zenodo_search(q, fetch_json)
+        for hit in result.records:
+            meta = hit.get("metadata", {})
+            rows.append(
+                {
+                    "title": meta.get("title", ""),
+                    "doi": hit.get("doi", ""),
+                    "publication_date": meta.get("publication_date", ""),
+                    "resource_type": (meta.get("resource_type") or {}).get("type", ""),
+                    "version": meta.get("version", ""),
+                }
+            )
         return {
             "label": label,
             "url": first_url,
             "ok": True,
             "items": rows,
-            "total": total,
+            "total": result.total,
         }
     except Exception as exc:  # pragma: no cover - network failures are report data
         return {
@@ -315,6 +302,52 @@ def public_page(url: str, label: str) -> dict[str, Any]:
         }
 
 
+def _zenodo_inventory_errors(sections: list[dict[str, Any]]) -> list[str]:
+    """Reject purportedly complete Zenodo caches with unavailable row evidence.
+
+    A failed source section remains an explicit failure and may be deliberately
+    reused under the existing forced-cache policy. A successful section must
+    retain its exact count and distinct version-DOI identities; force cannot
+    make malformed or truncated successful evidence complete.
+    """
+    errors: list[str] = []
+    for section in sections:
+        label = str(section.get("label") or "")
+        url = str(section.get("url") or "")
+        if not (
+            label.casefold().startswith("zenodo ")
+            or url.startswith("https://zenodo.org/api/records")
+        ):
+            continue
+        if section.get("ok") is False:
+            continue
+        try:
+            if section.get("ok") is not True:
+                raise ValueError("successful section must explicitly set ok: true")
+            total = exact_zenodo_total(section.get("total"))
+            items = section.get("items")
+            if not isinstance(items, list) or len(items) != total:
+                raise ValueError("retained item count does not match the exact total")
+            identities: set[str] = set()
+            for item in items:
+                fields = ("title", "doi", "publication_date", "resource_type")
+                if not isinstance(item, dict) or any(
+                    not isinstance(item.get(field), str) for field in fields
+                ):
+                    raise ValueError("retained row does not match the summary schema")
+                if item.get("version") is not None and not isinstance(
+                    item["version"], str
+                ):
+                    raise ValueError("retained row version must be a string or null")
+                identity = item["doi"].strip().casefold()
+                if not identity or identity in identities:
+                    raise ValueError("retained row has a missing or duplicate DOI")
+                identities.add(identity)
+        except ValueError as exc:
+            errors.append(f"Zenodo inventory section {label!r}: {exc}")
+    return errors
+
+
 def load_cached_sections(
     today: str, *, force: bool = False
 ) -> tuple[list[dict[str, Any]], dict[str, Any] | None]:
@@ -322,6 +355,8 @@ def load_cached_sections(
 
     Reuse requires a same-day ``public_source_inventory_*.json`` (keyed on its
     ``generated_at`` date) whose sections carry no warnings (every section ok).
+    Zenodo successes also require exact retained counts and unique DOI rows;
+    malformed successes are never reusable, including with ``force``.
     When the optional same-day ``public_source_snapshot_*.json`` exists, its
     ``generated_at`` must also be same-day. ANY violation falls back to a live
     fetch; with ``force``, a stale or warned cache is reused as-is (an explicit
@@ -337,7 +372,13 @@ def load_cached_sections(
         return [], None
     generated_at = payload.get("generated_at", "")
     sections = payload.get("sections")
-    if not isinstance(sections, list) or not generated_at:
+    if (
+        not isinstance(sections, list)
+        or not all(isinstance(section, dict) and "label" in section for section in sections)
+        or not generated_at
+    ):
+        return [], None
+    if _zenodo_inventory_errors(sections):
         return [], None
     same_day = generated_at[:10] == today
     warnings = [
@@ -475,6 +516,14 @@ def main() -> None:
         payload = json.loads(out.read_text(encoding="utf-8"))
         if not payload.get("sections"):
             raise SystemExit("Public-source inventory report has no sections")
+        sections = payload["sections"]
+        if not isinstance(sections, list) or not all(
+            isinstance(section, dict) for section in sections
+        ):
+            raise SystemExit("Public-source inventory sections must be objects")
+        errors = _zenodo_inventory_errors(sections)
+        if errors:
+            raise SystemExit("; ".join(errors))
         print(
             f"checked public-source inventory report ({len(payload['sections'])} sections)"
         )

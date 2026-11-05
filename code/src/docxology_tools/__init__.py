@@ -102,6 +102,7 @@ MODULES: tuple[str, ...] = (
     "public_integrity",
     "public_source_review",
     "publication_pairing",
+    "zenodo_pagination",
     "redirect_stubs",
     "release_controls",
     "release_evidence",

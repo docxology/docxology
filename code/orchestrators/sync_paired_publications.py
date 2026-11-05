@@ -22,7 +22,6 @@ import json
 import os
 import re
 import sys
-import urllib.parse
 import urllib.request
 from copy import deepcopy
 from dataclasses import dataclass
@@ -58,6 +57,7 @@ from docxology_tools.publication_pairing import (  # noqa: E402
 
 from docxology_tools.publication_pairing import is_software_record  # noqa: E402
 from docxology_tools.software_table import software_catalog_dois  # noqa: E402
+from docxology_tools.zenodo_pagination import fetch_zenodo_search  # noqa: E402
 from docxology_tools.biblio_table import bibliography_rows_from_lines  # noqa: E402
 from docxology_tools.generated_outputs import read_generated_output_text  # noqa: E402
 from docxology_tools.public_integrity import LOCAL_PATH_RE, redact_local_paths  # noqa: E402
@@ -185,32 +185,9 @@ def fetch_github_releases(
     return releases, warnings
 
 
-def _zenodo_total(value: Any) -> int | None:
-    if isinstance(value, dict):
-        total = value.get("value")
-    else:
-        total = value
-    return int(total) if isinstance(total, int) else None
-
-
 def fetch_zenodo_query(query: str, *, size: int = 25) -> list[ZenodoRecord]:
-    records: list[ZenodoRecord] = []
-    total: int | None = None
-    for page in range(1, 20):
-        params = {"q": query, "size": size, "page": page, "sort": "mostrecent"}
-        url = "https://zenodo.org/api/records?" + urllib.parse.urlencode(params)
-        payload = fetch_json(url)
-        hits = payload.get("hits", {}) if isinstance(payload, dict) else {}
-        total = total if total is not None else _zenodo_total(hits.get("total"))
-        batch = hits.get("hits", [])
-        if not isinstance(batch, list) or not batch:
-            break
-        records.extend(
-            ZenodoRecord.from_api(item) for item in batch if isinstance(item, dict)
-        )
-        if total is not None and len(records) >= total:
-            break
-    return records
+    result = fetch_zenodo_search(query, fetch_json, size=size)
+    return [ZenodoRecord.from_api(item) for item in result.records]
 
 
 def fetch_zenodo_records() -> tuple[list[ZenodoRecord], list[str]]:
