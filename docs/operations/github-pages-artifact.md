@@ -10,7 +10,11 @@ reviewed versioned Zenodo deposits can hold new primary PDF editions.
 Pages artifact workflow. Deployment waits for both repository validation and
 the reusable required browser acceptance job in
 `.github/workflows/browser-qa.yml`; a failure in either blocks publication.
-The validation workflow calls that same browser job. It retains the public HTML, data exports, generated
+The validation workflow calls that same browser job and builds the candidate
+projection with the same assembler on every tested branch. This checks
+materialized PDF aliases, source/manifest agreement and dangling-report
+references before publication; its temporary output is not deployed.
+The Pages artifact retains the public HTML, data exports, generated
 work/paper pages, available full-text files, CV outputs, existing local PDFs, artwork assets, report
 manifests, and agent documentation. It omits duplicate binary files under
 `papers/**/images/`, dated visual-QA screenshot binaries under

@@ -54,6 +54,11 @@ jobs:
       - name: Artifact budget gate (930 MiB)
         run: uv run python3 code/src/artifact_budget.py
 
+      # Exercise the real Pages projection before main, including virtual PDF
+      # copies and the dangling-report guard. This job has no deploy permission.
+      - name: Assemble candidate Pages projection
+        run: uv run python3 code/orchestrators/build_pages_artifact.py --output "$RUNNER_TEMP/docxology-pages" --check-size --check-manifest
+
       - name: Generator drift review (video + work pages)
         run: |
           uv run python3 code/orchestrators/build_video_pages.py --check

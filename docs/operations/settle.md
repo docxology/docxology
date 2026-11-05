@@ -47,6 +47,14 @@ partitions core tests and required browser tests; its site jobs deselect the
 external native-render integration. Local full-suite evidence and hosted CI
 remain separate observations with different runtime and performance conditions.
 
+Branch validation also assembles the complete Pages projection with the
+authoritative builder. This exercises copied PDF aliases and the dangling-report
+guard before main; settle's manifest checks do not create that artifact. To
+reproduce this additional CI check locally, run `build_pages_artifact.py` with a
+fresh `--output` directory, `--check-size` and `--check-manifest`, following the
+[artifact runbook](github-pages-artifact.md). Candidate CI output is temporary
+and is not deployed.
+
 `routine` is the deliberate lighter contract for **control-only landings and
 clean-tree checks** ("is everything consistent right now?"): the fast floor
 plus standard validation and no pytest. Binder refreshes belong to the
