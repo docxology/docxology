@@ -11486,7 +11486,7 @@
           "folder": "2026_FEPLean",
           "review_decision": "accept",
           "reviewed_at": "2026-09-17T23:18:16Z",
-          "review_source": "agent:orchestrator: manual review of reports/paired_publications_2026-09-17.json — work already represented under the paired citation DOI (bibliography rows #113 / #168); release lacks cross-link evidence, recorded as version-history-only",
+          "review_source": "agent:orchestrator: manual review of the pinned source_report — work already represented under the paired citation DOI (bibliography rows #113 / #168); release lacks cross-link evidence, recorded as version-history-only",
           "source_report": "https://github.com/docxology/docxology/blob/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/paired_publications_2026-09-17.json"
         }
       ]
@@ -11517,7 +11517,7 @@
           "folder": "2026_GeneralizedNotationNotationGNN",
           "review_decision": "accept",
           "reviewed_at": "2026-09-17T23:18:16Z",
-          "review_source": "agent:orchestrator: manual review of reports/paired_publications_2026-09-17.json — work already represented under the paired citation DOI (bibliography rows #113 / #168); release lacks cross-link evidence, recorded as version-history-only",
+          "review_source": "agent:orchestrator: manual review of the pinned source_report — work already represented under the paired citation DOI (bibliography rows #113 / #168); release lacks cross-link evidence, recorded as version-history-only",
           "source_report": "https://github.com/docxology/docxology/blob/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/paired_publications_2026-09-17.json"
         }
       ]

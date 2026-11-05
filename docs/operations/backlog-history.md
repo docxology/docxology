@@ -123,7 +123,7 @@ evidence and belong in `CHANGELOG.md` at merge time:
   `untagged-ce7d…` v1.3.0) and R74 (GNN v3.2.0) as `superseded` /
   `bibliography-folder version-history-only` in
   `data/paired-publication-decisions.json`, verified against the regenerated
-  `reports/paired_publications_2026-09-07.json` (full-scope queue 5 → 4
+  [2026-09-07 pairing receipt](https://github.com/docxology/docxology/blob/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/paired_publications_2026-09-07.json) (full-scope queue 5 → 4
   unreviewed actions; an intermediate docxology-only rescan showed 2 but used
   a narrower owner scope than the 2026-09-04 baseline — see DOC-004). The
   cluster was fully resolved later the same day — see the DOC-004 closure.

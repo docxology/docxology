@@ -1204,7 +1204,7 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   recorded `superseded` / `bibliography-folder version-history-only` in
   `data/paired-publication-decisions.json`, each citing its curated
   bibliography folder; the refreshed full-scope
-  `reports/paired_publications_2026-09-07.json` (450 pairs) drops the queue
+  [2026-09-07 pairing receipt](https://github.com/docxology/docxology/blob/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/paired_publications_2026-09-07.json) (450 pairs) drops the queue
   to 4 unreviewed actions — the rotating-draft Codomyrmex URLs and the
   Cognitive Integrity cluster held for the principal (DOC-005 overlap).
 - **DOC-004 closed — the pairing queue reached zero:** the principal
@@ -1215,7 +1215,7 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   ActiveInferAnts and CEREBRUM releases as version-specific artifacts under
   the represented Cognitive Integrity Framework DOI (R77/R78), and directed
   that draft releases be skipped from pairing. The refreshed full-scope
-  `reports/paired_publications_2026-09-07.json` has **zero unreviewed
+  [2026-09-07 pairing receipt](https://github.com/docxology/docxology/blob/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/paired_publications_2026-09-07.json) has **zero unreviewed
   candidates** (447 pairs; the three skipped draft pairs account for the 450
   → 447 delta) and `classify_repositories.py` leaves one open primary
   (`docxology/dicklesworthstone_meta_operator`).
@@ -1343,8 +1343,8 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 - **DOC-005 triage pass - ten more repositories promoted to `pages/SOFTWARE.md`** after manual review of the authenticated inventory (forks cleared by the owner are now reflected; inventory is 241 public repos = 154 primary + 87 forks): the six research-practice line-set repos (`line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register`, new **Research Practice** summary category, 6), the DigiPPPiP computational companion `Digi-PPPiP` (Other), the whole-colony simulation scaffold `BeeStack` (Developer Tools), the `template_advanced_literature_review` exemplar (Developer Tools), and `crescent-city-intel` (Data & Policy). Owned repositories 95->**105**; curated total 133->**143**; `data/repository-classification.json` uncatalogued queue 112->**101** with 4 primary-review non-fork items remaining (`active_inference_power`, `Active_Inference_Un0`, `GrowthModel`, `multi-time` - all description-less, deferred for human review).
 - **DOC-004 decision R25 recorded** in `data/paired-publication-decisions.json`: the single new-candidate action from the paired-publication refresh (CogSecSkills v1.0.0 GitHub release paired with old concept `zenodo.20804585`) is **rejected** as a superseded-version false positive - bibliography row #174 already cites concept `zenodo.21513316`.
 - **DOC-004 decisions R26-R27 recorded** in `data/paired-publication-decisions.json`: the 9 CogSecSkills release pairs under concept `zenodo.21513316` (row #174) and 18 Codomyrmex release pairs under `zenodo.21750800` (row #206) are **superseded/version-history** relations; no duplicate bibliography rows were created.
-- **Authenticated GitHub inventory refresh** (241 repos, `data/github-repositories.json` 2026-08-07) and refreshed `reports/paired_publications_2026-08-07.json`; the curated flag is now computed against the full 143-row catalog.
-- **Authenticated paired-publication refresh** wrote `reports/paired_publications_2026-08-07.json`: 402 pairs, 1 new candidate, 38 updates, and 363 items still requiring manual review under DOC-004; no candidates were auto-promoted.
+- **Authenticated GitHub inventory refresh** (241 repos, `data/github-repositories.json` 2026-08-07) and refreshed [2026-08-07 pairing receipt](https://github.com/docxology/docxology/blob/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/paired_publications_2026-08-07.json); the curated flag is now computed against the full 143-row catalog.
+- **Authenticated paired-publication refresh** wrote [2026-08-07 pairing receipt](https://github.com/docxology/docxology/blob/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/paired_publications_2026-08-07.json): 402 pairs, 1 new candidate, 38 updates, and 363 items still requiring manual review under DOC-004; no candidates were auto-promoted.
 
 ## 2026-08-02
 
