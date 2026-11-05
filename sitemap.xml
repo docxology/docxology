@@ -28,21 +28,21 @@
   <url><loc>https://danielarifriedman.com/videos.html</loc><lastmod>2026-11-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://danielarifriedman.com/collaborators.html</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://danielarifriedman.com/media.html</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://danielarifriedman.com/software.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://danielarifriedman.com/repositories.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://danielarifriedman.com/repositories-forks.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.35</priority></url>
+  <url><loc>https://danielarifriedman.com/software.html</loc><lastmod>2026-11-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://danielarifriedman.com/repositories.html</loc><lastmod>2026-11-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://danielarifriedman.com/repositories-forks.html</loc><lastmod>2026-11-05</lastmod><changefreq>monthly</changefreq><priority>0.35</priority></url>
   <url><loc>https://danielarifriedman.com/search.html</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://danielarifriedman.com/catalog.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://danielarifriedman.com/catalog.html</loc><lastmod>2026-11-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://danielarifriedman.com/exports.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://danielarifriedman.com/updates.html</loc><lastmod>2026-11-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://danielarifriedman.com/discovery.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://danielarifriedman.com/blake-pathway.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://danielarifriedman.com/cite-verify.html</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://danielarifriedman.com/evidence.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://danielarifriedman.com/evidence.html</loc><lastmod>2026-11-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://danielarifriedman.com/reproducibility.html</loc><lastmod>2026-11-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://danielarifriedman.com/resume/resume.pdf</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://danielarifriedman.com/resume/resume.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://danielarifriedman.com/resume/verify.html</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://danielarifriedman.com/resume/resume.pdf</loc><lastmod>2026-11-05</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://danielarifriedman.com/resume/resume.html</loc><lastmod>2026-11-05</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://danielarifriedman.com/resume/verify.html</loc><lastmod>2026-11-05</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2015CommentaryPortugueseCryptoJews106.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2015CouldEhrlichialInfectionCause107.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2015LargeScaleCodingSequence108.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
@@ -136,7 +136,7 @@
   <url><loc>https://danielarifriedman.com/works/Friedman2024ChemicalTranscriptomicDiversityDo032.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2024CommentsNationalDigitalTwins033.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2024CommentsSubmittedByBlockScience162.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
-  <url><loc>https://danielarifriedman.com/works/Friedman2024EnhancingPopulationBasedSearch034.html</loc><lastmod>2026-11-04</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
+  <url><loc>https://danielarifriedman.com/works/Friedman2024EnhancingPopulationBasedSearch034.html</loc><lastmod>2026-11-05</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2024FarmWorksDecentralizedAIAgents035.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2024FederatedInferenceBeliefSharing036.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2024FourFoldFieldsQuantum037.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
@@ -165,7 +165,7 @@
   <url><loc>https://danielarifriedman.com/works/Friedman2025GraphspeakLanguageHandshake130.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2025IncreasingAccessibilityApplicabilityActive013.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2025MDKVMultitrackMarkdownContainer014.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
-  <url><loc>https://danielarifriedman.com/works/Friedman2025MarkdownDecisionProcessFramework015.html</loc><lastmod>2026-11-04</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
+  <url><loc>https://danielarifriedman.com/works/Friedman2025MarkdownDecisionProcessFramework015.html</loc><lastmod>2026-11-05</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2025QuadMathAnalyticalReview4D018.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2025ResNeiSolutionDesignDocument019.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2025SymergeticsSymbolicSynergeticsRational020.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
@@ -236,7 +236,7 @@
   <url><loc>https://danielarifriedman.com/works/Friedman2026LineSetHoldingInstruments201.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2026LivingMetaAnalysisArchitecture110.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2026LivingMetaAnalysisModafinil176.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
-  <url><loc>https://danielarifriedman.com/works/Friedman2026MappingWilliamBlakeS179.html</loc><lastmod>2026-11-04</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
+  <url><loc>https://danielarifriedman.com/works/Friedman2026MappingWilliamBlakeS179.html</loc><lastmod>2026-11-05</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2026MusicNeverStoppedGrateful150.html</loc><lastmod>2026-11-03</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2026ObserversAreAllYou235.html</loc><lastmod>2026-11-04</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
   <url><loc>https://danielarifriedman.com/works/Friedman2026ObserversWhoReadTheir230.html</loc><lastmod>2026-11-04</lastmod><changefreq>yearly</changefreq><priority>0.45</priority></url>
