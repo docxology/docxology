@@ -1,11 +1,11 @@
 {
   "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
-  "version": null,
+  "version": "0.5.0",
   "doi": "10.5281/zenodo.21047573",
   "doi_url": "https://doi.org/10.5281/zenodo.21047573",
   "zenodo_record": "https://zenodo.org/records/21047573",
-  "record_id": "21047574",
-  "publication_date": "2026-06-29",
+  "record_id": "23921364",
+  "publication_date": "2026-11-03",
   "resource_type": {
     "title": "Working paper",
     "type": "publication",
@@ -18,7 +18,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source code and project-authored aggregate analytics from provider-supplied source materials. This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the open-source software release bundle. The MIT license covers project code and project-authored outputs only; provider-supplied Blake Archive TEI, transcriptions, images, and fallback source texts are excluded and remain under their source-provider terms.",
+  "description": "William Blake's works survive across editions, copy records, image archives, museum catalogues, transcriptions, and finding aids. Computational coverage is difficult to assess without explicit units, source authority, and evidence boundaries. We present *blake*, a 7-phase pipeline that connects a 104-entry work-level target ledger with retained source records, local analysis, provenance, recoverability checks, and generated publication artifacts.\n\nThe saved offline run analyzes 727 local source/copy records. Its 6109 image associations reference 5975 distinct files. It represents 69 ledger targets (66.3%) and fully satisfies the declared evidence profile for 45 targets (43.3%). The text-bearing subset has 540 records and 682407 tokenizer-defined words. These exploratory text results include retained transcriptions with unverified authorship; they are not a Blake-authored language census. The top-level analysis ledger records 727/727 records analyzed and 0 top-level errors. Nested sub-analysis limitations are counted separately.\n\nLocal recovery preserves 8481 inventoried files and 5975/6003 discovered image identifiers, leaving 28 unresolved. Checksums and a corruption-detection restore drill establish recoverability of the captured inventory, not completeness of Blake's oeuvre. Quantitative prose, tables, and figures derive from saved artifacts. Public releases contain project-authored software, manuscript sources, aggregate evidence, and checksums; provider texts, XML, images, private indexes, backups, and source-image mosaics remain local. The contribution is an auditable corpus-governance and preservation method with explicit scholarly and distribution limits.\n\nThe implementation separates corpus custody from application policy. Portable source snapshots and explicit schema conversion preserve source identities and roles, while distinct retrieval profiles expose normalized-token, literal-casefold and regex contracts. Shared counting, hierarchy and evidence-admission methods support application papers without embedding their vocabularies or interpretations. Current source-derived diagrams identify those interfaces separately from the historical analytical producer.\n\nThis deposit pairs the 94-page manuscript edition 0.5.0 with Blake software release 0.7.0. Generic half-open interval methods preserve occupied support, multiplicity and overlapping record pairs while applications retain source grouping and domain judgments. Entomology and Federalism are independent applications, linked as related research objects rather than runtime dependencies.",
   "keywords": [
     "William Blake",
     "digital humanities",
@@ -28,10 +28,52 @@
   ],
   "files": [
     {
-      "name": "blake_working_paper.pdf",
-      "size_bytes": 11255591,
-      "checksum": "md5:ec897f65c5a85fb7e4393f8e67e8a2f3",
-      "download_url": "https://zenodo.org/api/records/21047574/files/blake_working_paper.pdf/content"
+      "name": "SHA256SUMS",
+      "size_bytes": 604,
+      "checksum": "md5:546134eda7ce928b7449c67c497db214",
+      "download_url": "https://zenodo.org/api/records/23921364/files/SHA256SUMS/content"
+    },
+    {
+      "name": "release-manifest.json",
+      "size_bytes": 2157,
+      "checksum": "md5:928a6363fc67449780fc3abdd615f84b",
+      "download_url": "https://zenodo.org/api/records/23921364/files/release-manifest.json/content"
+    },
+    {
+      "name": "Blake-0.5.0-reproduction.zip",
+      "size_bytes": 18100088,
+      "checksum": "md5:d90cc0ffc6a58efcf40ebcf463dad2f6",
+      "download_url": "https://zenodo.org/api/records/23921364/files/Blake-0.5.0-reproduction.zip/content"
+    },
+    {
+      "name": "FONT-NOTICES.zip",
+      "size_bytes": 15133,
+      "checksum": "md5:2aacfcdf5e32b15646462aff49583475",
+      "download_url": "https://zenodo.org/api/records/23921364/files/FONT-NOTICES.zip/content"
+    },
+    {
+      "name": "blake-0.7.0-py3-none-any.whl",
+      "size_bytes": 628977,
+      "checksum": "md5:7537000c98e8c9409da0bc909a6aaa19",
+      "download_url": "https://zenodo.org/api/records/23921364/files/blake-0.7.0-py3-none-any.whl/content"
+    },
+    {
+      "name": "Blake.pdf",
+      "size_bytes": 11762801,
+      "checksum": "md5:5b0d0daebe7fc0613e9e308f6a39e232",
+      "download_url": "https://zenodo.org/api/records/23921364/files/Blake.pdf/content"
+    },
+    {
+      "name": "blake-0.7.0.tar.gz",
+      "size_bytes": 596029,
+      "checksum": "md5:93b3cb80e6d121893f65d5c867fda294",
+      "download_url": "https://zenodo.org/api/records/23921364/files/blake-0.7.0.tar.gz/content"
+    },
+    {
+      "name": "source-map.json",
+      "size_bytes": 44760,
+      "checksum": "md5:aea6818565257c31728ea8192df55d85",
+      "download_url": "https://zenodo.org/api/records/23921364/files/source-map.json/content"
     }
   ],
   "related_resources": [
@@ -41,80 +83,93 @@
     }
   ],
   "github_repo": "docxology/blake",
-  "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.1.0",
-  "release_tag": "v0.1.0",
-  "release_name": "blake v0.1.0 — reproducible, rights-bounded Blake corpus workflow",
-  "pdf_sha256": "",
-  "pairing_confidence": "strong",
+  "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.7.0",
+  "release_tag": "v0.7.0",
+  "release_name": "blake v0.7.0",
+  "pdf_sha256": "812e53237b40f808b4502e3dd358cbee5cda7d587e493ba95e41f02c11ad03eb",
+  "pairing_confidence": "needs_review",
   "pairing_evidence": [
-    "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked"
   ],
-  "checked_at": "2026-09-24T18:29:57Z",
-  "domain": "Computational",
+  "checked_at": "2026-11-05T01:42:21Z",
+  "domain": "💻",
   "type": "Paper",
   "methods": [
     {
-      "name": "7-phase DAG pipeline (blake) from discovery to reports",
-      "description": "The corpus is built by a directed pipeline of discovery, acquisition, metadata, analysis, visualizations, export, and reports, whose JSON artifacts also populate the manuscript.",
-      "evidence": "The blake pipeline is organized as a 7-phase DAG: discovery, acquisition, metadata, analysis, visualizations, export, and reports."
+      "name": "Target-ledgered provenance pipeline",
+      "description": "Connect the 104-entry work-level ledger to source/copy evidence, analysis, recoverability and publication controls through seven phases.",
+      "evidence": "104-entry work-level target ledger"
     },
     {
-      "name": "Versioned canonical target ledger of 104 work-level Blake targets",
-      "description": "A ledger derived from Blake bibliographies, editions, Archive identifiers, and visual catalogues serves as the denominator for coverage claims.",
-      "evidence": "The completeness authority is the target ledger under the canonical profile, version 2026-06-22, with 104 work-level entries."
+      "name": "Separated custody and retrieval policy",
+      "description": "Retain source identities and roles while exposing distinct normalized-token, literal-casefold and regex retrieval contracts.",
+      "evidence": "literal-casefold"
     },
     {
-      "name": "Tiered source registry with the William Blake Archive as primary authority",
-      "description": "The registry holds the Blake Archive, Project Gutenberg, and Internet Archive, with the Archive given priority when sources disagree and others used as fallback or corroboration.",
-      "evidence": "The William Blake Archive is treated as the primary authority when sources disagree"
-    },
-    {
-      "name": "Descriptive text metrics: tokenization, type-token ratio, lexical sentiment",
-      "description": "Each text-bearing work is tokenized to compute word counts, sentiment, vocabulary richness, and themes, treated as descriptors rather than literary judgments.",
-      "evidence": "The text module tokenizes each text-bearing work, computes word and unique-word counts, estimates lexical sentiment, derives vocabulary richness as type-token ratio"
-    },
-    {
-      "name": "TF-IDF vectors with deterministic PCA/LSA projection over 162 works",
-      "description": "A 120-term TF-IDF vocabulary is built across text-bearing works and projected onto PCA/LSA axes as a reading instrument over local evidence.",
-      "evidence": "constructs a TF-IDF vocabulary of 120 retained terms across 162 text-bearing works, normalizes each work vector, and projects the centered matrix onto deterministic PCA/LSA axes."
+      "name": "Inventory-bounded recoverability",
+      "description": "Use checksums and a restore drill to assess the captured inventory rather than completeness of the oeuvre.",
+      "evidence": "corruption-detection restore drill"
     }
   ],
   "key_findings": [
-    "The saved run represents 102 of 104 ledger targets (98.1%) but fully meets the required text/image evidence profile for only 90 (86.5%); 12 are partial and 2 missing.",
-    "The text-bearing subset contains 156 works and 216878 words, and joint text-image diagnostics are available for 33 works.",
-    "The ontology module produced a work-theme graph of 356 nodes and 297 edges, including 16 theme nodes.",
-    "The local analysis ledger reports all 340 works analyzed with 0 recorded analysis errors.",
-    "The author frames the contribution as an auditable corpus-governance method, not a completed or exhaustive analysis of Blake's works."
+    "The saved run contains 727 local source/copy records and represents 69 of 104 work-level targets (66.3%); 45 targets (43.3%) fully meet the declared evidence profile.",
+    "The text subset contains 540 records and 682407 tokenizer-defined words, including retained transcriptions with unverified authorship.",
+    "Recovery preserves 8481 inventoried files and 5975 of 6003 discovered image identifiers, with 28 unresolved.",
+    "The text counts include unverified authorship and do not establish a census of Blake-authored language.",
+    "Image association counts do not establish an independent-image census or museum-wide completeness."
   ],
   "related_papers": [
-    "2023_NSFReporting",
-    "2023_NaturalAIBased",
-    "2025_AuBI"
+    "2026_BlakeanEntomology",
+    "2026_StatesChange"
   ],
   "related_software": [
     "docxology/blake"
   ],
   "key_findings_evidence": [
-    "It represents 102 of 104 ledger targets (98.1%) and fully satisfies the required text/image evidence profile for 90 targets (86.5%); 12 targets remain partial and 2 remain missing.",
-    "The text-bearing subset contains 156 works and 216878 words.",
-    "the manuscript reports the graph-level summary of 356 nodes and 297 edges, including 16 theme nodes.",
-    "The local analysis ledger reports 340/340 works analyzed with 0 recorded analysis errors.",
-    "The contribution is an auditable corpus-governance method, not a claim to have completed or exhaustively analyzed Blake’s works."
+    "727 local source/copy records",
+    "682407",
+    "8481 inventoried files",
+    "they are not a Blake-authored language census.",
+    "not an independent-image census."
   ],
   "summary_provenance": {
     "source": "full_text.md",
-    "date": "2026-10-01",
-    "work_kind": "software/methods",
-    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Computational humanities pipeline paper; counts are descriptive outputs of one saved run.",
-    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+    "date": "2026-11-05",
+    "method": "Curated summary matched to the verified current-edition extraction; each recorded evidence span checked after whitespace/ligature normalization.",
+    "notes": "Metadata/source text review; no independent computational reproduction or specialist visual review."
   },
-  "source_revision_review": {
-    "reviewed_at": "2026-10-19",
-    "repository": "docxology/blake",
-    "commit": "0e06527a4be239678c746d25e410d467cbad5c18",
-    "document": "docs/publication-consistency-review.md",
-    "summary": "The corrected manuscript derives saved-text and embedding counts from identified membership and reports missing, filtered and excluded works. Publication generation now rejects inconsistent coverage or implicit modality flags. The original historical run membership is unavailable; no replacement corpus count is asserted."
-  }
+  "artifact_doi": "10.5281/zenodo.23921364",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.23921364",
+  "remote_primary_pdf": {
+    "name": "Blake.pdf",
+    "url": "https://zenodo.org/api/records/23921364/files/Blake.pdf/content",
+    "version": "0.5.0",
+    "record_id": "23921364",
+    "bytes": 11762801,
+    "sha256": "812e53237b40f808b4502e3dd358cbee5cda7d587e493ba95e41f02c11ad03eb"
+  },
+  "pages": 94,
+  "manual_pair_review": {
+    "decision": "accept",
+    "reviewed_by": "Codex public-source curation",
+    "reviewed_at": "2026-11-05T01:42:21.179059+00:00",
+    "source_report": "reports/publication_intake_2026-11-05.json",
+    "record_id": "23921364",
+    "release_url": "https://github.com/docxology/blake/releases/tag/v0.7.0"
+  },
+  "rights_note": "Retain the source deposit and provider-specific terms. Public availability does not make all included materials open-licensed.",
+  "version_context": {
+    "manuscript": "0.5.0",
+    "software": "0.7.0",
+    "historical_analytical_producer": "0.2.0rc1"
+  },
+  "source_revision_history": [
+    {
+      "reviewed_at": "2026-10-19",
+      "repository": "docxology/blake",
+      "commit": "0e06527a4be239678c746d25e410d467cbad5c18",
+      "document": "docs/publication-consistency-review.md",
+      "summary": "The corrected manuscript derives saved-text and embedding counts from identified membership and reports missing, filtered and excluded works. Publication generation now rejects inconsistent coverage or implicit modality flags. The original historical run membership is unavailable; no replacement corpus count is asserted."
+    }
+  ]
 }

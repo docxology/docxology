@@ -6,14 +6,14 @@ Searchability, scholarly content, complete author-written abstracts/full text, a
 Source: [Google Scholar inclusion guidance](https://scholar.google.com/intl/en/scholar/inclusion.html).
 See [the placement policy](../docs/seo/scholar-inclusion.md) and [machine-readable results](../data/scholar-readiness.json).
 
-Audited works: 228. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
+Audited works: 230. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 
 | Local blocker | Works |
 | --- | ---: |
 | missing_citation_author | 11 |
-| no_selected_local_pdf | 25 |
-| pdf_directory_differs_from_abstract | 203 |
-| pdf_exceeds_byte_limit | 45 |
+| no_selected_local_pdf | 28 |
+| pdf_directory_differs_from_abstract | 202 |
+| pdf_exceeds_byte_limit | 44 |
 
 ## Work-level findings
 
@@ -194,7 +194,7 @@ Audited works: 228. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [A Living Meta-Analysis of the Modafinil Literature](../works/Friedman2026LivingMetaAnalysisModafinil176.html) | 7314033 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition](../works/Friedman2026RefinementGoldMetallurgicalAnalogy177.html) | 1019881 | pdf_directory_differs_from_abstract |
 | [AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference](../works/Friedman2026AlphaCOGANTRecursiveCorporateSelf178.html) | 2888068 | pdf_directory_differs_from_abstract |
-| [Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls](../works/Friedman2026MappingWilliamBlakeS179.html) | 11255591 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
+| [Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls](../works/Friedman2026MappingWilliamBlakeS179.html) | — | no_selected_local_pdf |
 | [Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation](../works/Friedman2026SortitionUpstreamNTQR180.html) | 4380836 | pdf_directory_differs_from_abstract |
 | [Exploratory Data Analysis: A Reproducible Notebook Template](../works/Friedman2026ExploratoryDataAnalysisReproducible181.html) | 158570 | pdf_directory_differs_from_abstract |
 | [A Domain Language for Specifying Controlled Methods](../works/Friedman2026DomainLanguageSpecifyingControlled182.html) | 144305 | pdf_directory_differs_from_abstract |
@@ -244,6 +244,8 @@ Audited works: 228. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision](../works/Friedman2026ActiveInferenceAsMeta227.html) | 5015269 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [Active Assembly Theory and Practice](../works/Friedman2026ActiveAssemblyTheoryPractice228.html) | 18929532 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness](../works/Friedman2026ThanksNothingGratitudeModel229.html) | 19287664 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
-| [Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics](../works/Friedman2026ObserversWhoReadTheir230.html) | 345225 | pdf_directory_differs_from_abstract |
+| [Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics](../works/Friedman2026ObserversWhoReadTheir230.html) | 354219 | pdf_directory_differs_from_abstract |
 | [Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method](../works/Friedman2026ActiveInferenceLanguageModel231.html) | 12557861 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [GNN-based active inference for Battleship](../works/Friedman2026GNNBasedActiveInference232.html) | 3928683 | pdf_directory_differs_from_abstract |
+| [Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention](../works/Friedman2026BlakeanEntomologySmallLives233.html) | — | no_selected_local_pdf |
+| [States Change: Blakean Federalism and composition without capture](../works/Friedman2026StatesChangeBlakeanFederalism234.html) | — | no_selected_local_pdf |

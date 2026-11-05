@@ -1,6 +1,6 @@
 {
   "schema_version": "BlakePassageReview.v1",
-  "metadata_source": "reports/publication_discovery_2026-10-22.json",
+  "metadata_source": "reports/publication_intake_2026-11-05.json",
   "method": "Passage-level classification of public extracted text; hashes bind classification to the inspected edition. Not a full-reading or independent citation validation ledger.",
   "reviews": {
     "2021_NarrativeEcosystems": {
@@ -97,6 +97,20 @@
       "note": "William Blake is an explicit subject in the publication title and text.",
       "full_text_sha256": "6293528eb77c417b2cea593b58c73fdbf05b6605564e76c2ae0af9b793db2372"
     },
+    "2026_BlakeanEntomology": {
+      "relation": "core_subject",
+      "note": "William Blake's small lives are the core subject of copy-specific readings, a bounded concordance, and explicit limits on biological classification.",
+      "full_text_sha256": "9a69f259caaa206222998c139267a892754b2d0548a5df1783743319481886d7",
+      "edition_note": "Reviewed extraction of version 1.0.0, Zenodo record 23900583.",
+      "anchors": [
+        "How do Blake’s small lives make another being’s needs matter?",
+        "records Blake’s expression first and biological classification, when warranted, separately."
+      ],
+      "evidence_lines": [
+        98,
+        122
+      ]
+    },
     "2026_CognitiveCaseDiagrams": {
       "relation": "other_person",
       "note": "Reference is Barry J. Blake on grammatical relations, not William Blake.",
@@ -130,12 +144,34 @@
     "2026_MappingWilliamBlake": {
       "relation": "title",
       "note": "William Blake is an explicit subject in the publication title and text.",
-      "full_text_sha256": "63e2b39398e938bebfa72cde08a5f0470f57b2cd435526daea4389f3acb68d47"
+      "full_text_sha256": "8be574e6259127db84b1b7dc9aea0c19540c23070be98b331d9c0ea683036d5c",
+      "edition_note": "Current passage review covers manuscript 0.5.0 (Zenodo 23921364), paired with software 0.7.0. The preserved blake_working_paper.pdf and full_text_v0.1.md describe the earlier edition.",
+      "anchors": [
+        "The saved offline run analyzes 727 local source/copy records."
+      ],
+      "evidence_lines": [
+        11,
+        79
+      ]
     },
     "2026_PriorCognitiveArt": {
       "relation": "no_match",
       "note": "No whole-word Blake match in this extracted version; the title alone does not establish a Blake citation.",
       "full_text_sha256": "26bddcd18c000d462c20c53f86a5523d6f91f72c666f8d0ba7a237915fcc14ea"
+    },
+    "2026_StatesChange": {
+      "relation": "core_subject",
+      "note": "Develops composition without capture through Blake's enduring persons and changing states; constructed institutional analyses are separated from a political program attributed to Blake.",
+      "full_text_sha256": "34055163c5647894ffff4818ca80faf5ff4d3197a3efe1e1d4898e562cd1ceb2",
+      "edition_note": "Reviewed extraction of version 1.0.0, Zenodo record 23900617.",
+      "anchors": [
+        "without capture through Blake’s distinction between enduring persons and changing states",
+        "program attributed to Blake."
+      ],
+      "evidence_lines": [
+        269,
+        279
+      ]
     }
   }
 }

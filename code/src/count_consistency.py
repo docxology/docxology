@@ -353,7 +353,7 @@ def _software_prose_counts(
 ) -> None:
     text = SOFTWARE_PATH.read_text(encoding="utf-8")
     hero_match = re.search(
-        r"\*(\d+)\s+original repositories · (\d+)\s+catalogued Active Inference Institute contributions",
+        r"\*(\d+)\s+(?:owned|original) repositories · (\d+)\s+catalogued Active Inference Institute contributions",
         text,
     )
     if hero_match:

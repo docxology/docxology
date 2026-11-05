@@ -17,6 +17,18 @@ identifiers:
   - type: url
     value: "https://doi.org/10.5281/zenodo.21047573"
     description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.23921364"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.23921364"
+    description: "Version/download DOI resolver (Zenodo artifact)"
+  - type: url
+    value: "https://zenodo.org/records/23921364"
+    description: "Version/download landing page (Zenodo artifact)"
   - type: url
     value: "https://github.com/docxology/blake/releases/tag/v0.1.0"
+    description: "GitHub release"
+  - type: url
+    value: "https://github.com/docxology/blake/releases/tag/v0.7.0"
     description: "GitHub release"

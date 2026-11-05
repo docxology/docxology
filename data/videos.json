@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T23:33:48Z",
+  "generated_at": "2026-11-05T02:00:27Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -6050,11 +6050,11 @@
           "url": "/works/Friedman2026ENTOENcryptedTypedOmnitrack167.html"
         },
         {
-          "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
-          "citation_key": "Friedman2026MappingWilliamBlakeS179",
+          "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
+          "citation_key": "Friedman2026SynthOBSFractiSynthGoldenRatio198",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026MappingWilliamBlakeS179.html"
+          "url": "/works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html"
         }
       ]
     },
@@ -87878,13 +87878,6 @@
       ],
       "related_works": [
         {
-          "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
-          "citation_key": "Friedman2026MappingWilliamBlakeS179",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026MappingWilliamBlakeS179.html"
-        },
-        {
           "title": "Partner Pen Play in Parallel (PPPiP): A New PPPiParadigm for Relationship Improvement",
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
           "year": 2018,
@@ -87904,6 +87897,13 @@
           "year": 2023,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2023OpenAccessScienceNeeds059.html"
+        },
+        {
+          "title": "Slides for Iris",
+          "citation_key": "Friedman2023SlidesIris139",
+          "year": 2023,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2023SlidesIris139.html"
         }
       ]
     },

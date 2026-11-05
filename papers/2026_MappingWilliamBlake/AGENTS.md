@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: 7-phase DAG pipeline (blake) from discovery to reports, Versioned canonical target ledger of 104 work-level Blake targets, Tiered source registry with the William Blake Archive as primary authority
-- Identifies findings: The saved run represents 102 of 104 ledger targets (98.1%) but fully meets the required text/image evidence profile for only 90 (86.5%); 12 are partial and 2 missing., The text-bearing subset contains 156 works and 216878 words, and joint text-image diagnostics are available for 33 works., The ontology module produced a work-theme graph of 356 nodes and 297 edges, including 16 theme nodes.
+- Extracts methods: Target-ledgered provenance pipeline, Separated custody and retrieval policy, Inventory-bounded recoverability
+- Identifies findings: The saved run contains 727 local source/copy records and represents 69 of 104 work-level targets (66.3%); 45 targets (43.3%) fully meet the declared evidence profile., The text subset contains 540 records and 682407 tokenizer-defined words, including retained transcriptions with unverified authorship., Recovery preserves 8481 inventoried files and 5975 of 6003 discovered image identifiers, with 28 unresolved.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -43,9 +43,8 @@
 ## Cross-References
 
 ### Related Papers
-- [2023_NSFReporting](../2023_NSFReporting/)
-- [2023_NaturalAIBased](../2023_NaturalAIBased/)
-- [2025_AuBI](../2025_AuBI/)
+- [2026_BlakeanEntomology](../2026_BlakeanEntomology/)
+- [2026_StatesChange](../2026_StatesChange/)
 
 ### Related Software
 - https://github.com/docxology/blake

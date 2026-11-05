@@ -6,7 +6,7 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2026 23:34:43 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 02:01:03 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
@@ -29,6 +29,20 @@
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
     </item>
     <item>
+      <title>States Change: Blakean Federalism and composition without capture</title>
+      <link>https://danielarifriedman.com/works/Friedman2026StatesChangeBlakeanFederalism234.html</link>
+      <guid isPermaLink="false">work-Friedman2026StatesChangeBlakeanFederalism234</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Art &amp; Synergetics · 2026</description>
+    </item>
+    <item>
+      <title>Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention</title>
+      <link>https://danielarifriedman.com/works/Friedman2026BlakeanEntomologySmallLives233.html</link>
+      <guid isPermaLink="false">work-Friedman2026BlakeanEntomologySmallLives233</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Entomology · 2026</description>
+    </item>
+    <item>
       <title>GNN-based active inference for Battleship</title>
       <link>https://danielarifriedman.com/works/Friedman2026GNNBasedActiveInference232.html</link>
       <guid isPermaLink="false">work-Friedman2026GNNBasedActiveInference232</guid>
@@ -43,7 +57,7 @@
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
-      <title>Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics</title>
+      <title>Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics</title>
       <link>https://danielarifriedman.com/works/Friedman2026ObserversWhoReadTheir230.html</link>
       <guid isPermaLink="false">work-Friedman2026ObserversWhoReadTheir230</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
@@ -188,20 +202,6 @@
       <guid isPermaLink="false">work-Friedman2026RobustBeliefSharingFederated210</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Active Inference · 2026</description>
-    </item>
-    <item>
-      <title>DigiPPPiP: Digital Partner Pen Play in Parallel</title>
-      <link>https://danielarifriedman.com/works/Friedman2026DigiPPPiPDigitalPartnerPen209.html</link>
-      <guid isPermaLink="false">work-Friedman2026DigiPPPiPDigitalPartnerPen209</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Cognitive Security · 2026</description>
-    </item>
-    <item>
-      <title>PROJECT BOND — The Special-Agent Operations Compendium</title>
-      <link>https://danielarifriedman.com/works/Friedman2026PROJECTBONDSpecialAgent208.html</link>
-      <guid isPermaLink="false">work-Friedman2026PROJECTBONDSpecialAgent208</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
     </item>
   </channel>
 </rss>

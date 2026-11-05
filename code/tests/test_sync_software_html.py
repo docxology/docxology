@@ -78,13 +78,13 @@ def test_collection_page_entity_count():
     validate_rows(rows)
     collection = build_collection_page(rows)
     assert len(collection["mainEntity"]) == expected_docx + expected_aii
-    assert f"{expected_docx} original repositories" in collection["description"]
+    assert f"{expected_docx} owned repositories" in collection["description"]
 
 
 def test_generated_software_surfaces():
     expected_docx, expected_aii = parse_software_catalog_counts()
     html = SOFTWARE_HTML.read_text(encoding="utf-8")
-    assert f"{expected_docx} original repositories" in html
+    assert f"{expected_docx} owned repositories" in html
     assert f"{expected_aii} catalogued" in html
     assert 'src="/data/software-ld.json"' not in html
     assert '<script type="application/ld+json">' in html

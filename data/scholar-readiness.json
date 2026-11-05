@@ -4,19 +4,19 @@
   "inclusion_guidance": "https://scholar.google.com/intl/en/scholar/inclusion.html",
   "pdf_byte_limit": 5000000,
   "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
-  "works_sha256": "d2ec70298d9d1816b600c644b0f402b03c1966f3a72e43f0e331dfa5249ed21c",
+  "works_sha256": "eff997fae1fab29bf0b57df4f0b706e9048a0ceb4ffb3e6e0b8c0b9880097029",
   "network_checked": false,
   "indexing_verified": false,
   "summary": {
-    "works": 228,
+    "works": 230,
     "local_status": {
-      "blocked": 228
+      "blocked": 230
     },
     "blockers": {
       "missing_citation_author": 11,
-      "no_selected_local_pdf": 25,
-      "pdf_directory_differs_from_abstract": 203,
-      "pdf_exceeds_byte_limit": 45
+      "no_selected_local_pdf": 28,
+      "pdf_directory_differs_from_abstract": 202,
+      "pdf_exceeds_byte_limit": 44
     }
   },
   "works": [
@@ -97,7 +97,7 @@
       "title": "Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026BeforePragmatismHadName003.html",
-      "page_sha256": "ced8428ed3ff5ae0b068a1a3054c42a41da277c0b9fcf19cb2a6200b36aa9944",
+      "page_sha256": "016bd2ee6c79984b119ee0bf7c1e33e7ce636586449fbec9ade3b723f6ca38ac",
       "citation_tags": {
         "citation_title": [
           "Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology"
@@ -141,7 +141,7 @@
       "title": "The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026GoldenCompassLunarFlux004.html",
-      "page_sha256": "e7a42488836e0866ec36fed546b37bf35d46f2a2fc7c4bb10c4db6192750f5e1",
+      "page_sha256": "11424a19dfed2eb2865f8027cc606e347b1aaac70ca0b48cc0d7c37df4a9f011",
       "citation_tags": {
         "citation_title": [
           "The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value"
@@ -653,7 +653,7 @@
       "title": "Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025MarkdownDecisionProcessFramework015.html",
-      "page_sha256": "73c7c3c46a1b15315eb2a44afa69b7b4e5009f05ead60db1697b6547d1b45e26",
+      "page_sha256": "43a579300414cae1c1f7f57ff070d94558d87ee4d4da47bf2254df1cf34d6b87",
       "citation_tags": {
         "citation_title": [
           "Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization"
@@ -1569,7 +1569,7 @@
       "title": "Enhancing Population-based Search with Active Inference",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2024EnhancingPopulationBasedSearch034.html",
-      "page_sha256": "cada2829bc3fb07c5afd02137313a3cd0cc5abbba882fbecc3e76cb99118342e",
+      "page_sha256": "5701cabd45b7a375b962f1dc5181231c9670e353b3ce253423b3780eabd33497",
       "citation_tags": {
         "citation_title": [
           "Enhancing Population-based Search with Active Inference"
@@ -2005,7 +2005,7 @@
       "title": "Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2024WayFindingInfiniteImaginarium042.html",
-      "page_sha256": "1837f005e20c5b9c1ce3ac452419206dd751906fbbb1d86d8eeae19b6bb37936",
+      "page_sha256": "190a60f0a4a7775167387337d95572e0157a0f8ed8c95f877480d3242bd9e395",
       "citation_tags": {
         "citation_title": [
           "Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes"
@@ -2260,7 +2260,7 @@
       "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2023SnapshotPipelineTissueSpecific047.html",
-      "page_sha256": "bc6922a4524a84ed8f0d2a12f1fea1df41473933aff10ce135669f635d3da608",
+      "page_sha256": "7abfa00bfc47e93fbff182a13db0f98e4413fc89cd9ec2b47f0e577293bc4164",
       "citation_tags": {
         "citation_title": [
           "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)"
@@ -5326,7 +5326,7 @@
       "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026EntoLinguisticsLanguageAmbiguity109.html",
-      "page_sha256": "37461bbf5b050809c54e3d0aa4f5bdd077af3438fd2f86168779fb74be54afab",
+      "page_sha256": "54aeeacfab3da030889a76e89ae0a564e243ba8d4eaaef3228ae8685c461cb3d",
       "citation_tags": {
         "citation_title": [
           "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology"
@@ -7325,7 +7325,7 @@
       "title": "Lessons from the colony",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2016LessonsFromColony155.html",
-      "page_sha256": "4e3571acf09f5569045cb31d731f60e7fe403dd61a9cf0e337bfe7254482f5a3",
+      "page_sha256": "ec194317bc66ff134f9608536e79dbff0c4c28a0c3d12e7b44857dab6f171b4a",
       "citation_tags": {
         "citation_title": [
           "Lessons from the colony"
@@ -8290,13 +8290,13 @@
       "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026MappingWilliamBlakeS179.html",
-      "page_sha256": "c07c074987951a1d2965428bfde8e4930bf0d09385a1d7ef6eda544b47bb1f13",
+      "page_sha256": "f7a5af3e5b9ddac9c1f34a9b9b38e4001a859d0b56ff8e3fb9f9ea1f448316c4",
       "citation_tags": {
         "citation_title": [
           "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls"
         ],
         "citation_publication_date": [
-          "2026/06/29"
+          "2026/11/03"
         ],
         "citation_author": [
           "Daniel Ari Friedman"
@@ -8305,23 +8305,14 @@
           "10.5281/zenodo.21047573"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2026_MappingWilliamBlake/blake_working_paper.pdf"
+          "https://zenodo.org/api/records/23921364/files/Blake.pdf/content"
         ]
       },
-      "primary_pdf": {
-        "path": "papers/2026_MappingWilliamBlake/blake_working_paper.pdf",
-        "url": "https://danielarifriedman.com/papers/2026_MappingWilliamBlake/blake_working_paper.pdf",
-        "selection_basis": "extracted-text source",
-        "bytes": 11255591,
-        "sha256": "b5a20713e45ad739e759648ea96442d86d3fddb9f886111d9c5675c21392161f",
-        "within_byte_limit": false,
-        "same_directory_as_abstract": false
-      },
-      "selection_issue": "",
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 0.5.0 is hosted at Zenodo. Local PDFs remain preserved historical archives. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
       "local_status": "blocked",
       "blockers": [
-        "pdf_directory_differs_from_abstract",
-        "pdf_exceeds_byte_limit"
+        "no_selected_local_pdf"
       ],
       "unverified_requirements": [
         "searchable_pdf",
@@ -8996,7 +8987,7 @@
       "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026FourfoldVisionWilliamBlake196.html",
-      "page_sha256": "93a860aae1f332b0d6e287a7a8382140ed116fdd5ac4c95db7ed3e0c1f49a6bb",
+      "page_sha256": "0acbb1534a3767f96f8b101d27da24a39acc63687f2e485f0b70c8cd8593a889",
       "citation_tags": {
         "citation_title": [
           "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing"
@@ -10514,13 +10505,13 @@
     },
     {
       "citation_key": "Friedman2026ObserversWhoReadTheir230",
-      "title": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+      "title": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ObserversWhoReadTheir230.html",
-      "page_sha256": "8417dc74af0628e02a7e842c351e363f6bd265ab35fdfce1d8d78d3d71a5625a",
+      "page_sha256": "101dfa41c6bd782f98d49d1c654345001d8b47dcbf70bfe68995b9d757c9a63d",
       "citation_tags": {
         "citation_title": [
-          "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics"
+          "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics"
         ],
         "citation_publication_date": [
           "2026"
@@ -10542,15 +10533,15 @@
           "Brieuc de La Fournière"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2026_ObserversReadUniverse/ObserversReadUniverse_r2052.pdf"
+          "https://danielarifriedman.com/papers/2026_ObserversReadUniverse/ObserversReadUniverse_r2061.pdf"
         ]
       },
       "primary_pdf": {
-        "path": "papers/2026_ObserversReadUniverse/ObserversReadUniverse_r2052.pdf",
-        "url": "https://danielarifriedman.com/papers/2026_ObserversReadUniverse/ObserversReadUniverse_r2052.pdf",
+        "path": "papers/2026_ObserversReadUniverse/ObserversReadUniverse_r2061.pdf",
+        "url": "https://danielarifriedman.com/papers/2026_ObserversReadUniverse/ObserversReadUniverse_r2061.pdf",
         "selection_basis": "declared primary",
-        "bytes": 345225,
-        "sha256": "e23da212840627f16e10ac05f7538eab10556702ceda8a404f8c32359e89b737",
+        "bytes": 354219,
+        "sha256": "26ad29e47334818cbf3e00741b87fc5b4defc229526c4b49d429ee4eac3ea6e6",
         "within_byte_limit": true,
         "same_directory_as_abstract": false
       },
@@ -10647,6 +10638,78 @@
       "local_status": "blocked",
       "blockers": [
         "pdf_directory_differs_from_abstract"
+      ],
+      "unverified_requirements": [
+        "searchable_pdf",
+        "scholarly_content",
+        "complete_author_written_abstract_or_full_text",
+        "actual_scholar_indexing"
+      ]
+    },
+    {
+      "citation_key": "Friedman2026BlakeanEntomologySmallLives233",
+      "title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+      "type": "Paper",
+      "abstract_url": "https://danielarifriedman.com/works/Friedman2026BlakeanEntomologySmallLives233.html",
+      "page_sha256": "3d10993137fe704fb362cc28529f1329bf6b88dbcbd32a25c14835966bf71d55",
+      "citation_tags": {
+        "citation_title": [
+          "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention"
+        ],
+        "citation_publication_date": [
+          "2026/11/03"
+        ],
+        "citation_author": [
+          "Daniel Ari Friedman"
+        ],
+        "citation_doi": [
+          "10.5281/zenodo.23900582"
+        ],
+        "citation_pdf_url": [
+          "https://zenodo.org/api/records/23900583/files/Blakean_Entomology.pdf/content"
+        ]
+      },
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 1.0.0 is hosted at Zenodo. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
+      "local_status": "blocked",
+      "blockers": [
+        "no_selected_local_pdf"
+      ],
+      "unverified_requirements": [
+        "searchable_pdf",
+        "scholarly_content",
+        "complete_author_written_abstract_or_full_text",
+        "actual_scholar_indexing"
+      ]
+    },
+    {
+      "citation_key": "Friedman2026StatesChangeBlakeanFederalism234",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "type": "Paper",
+      "abstract_url": "https://danielarifriedman.com/works/Friedman2026StatesChangeBlakeanFederalism234.html",
+      "page_sha256": "7ab97afbcc7d51f49fbfb703fae02466a6d88b144417658147a2ed52bf63a14d",
+      "citation_tags": {
+        "citation_title": [
+          "States Change: Blakean Federalism and composition without capture"
+        ],
+        "citation_publication_date": [
+          "2026/11/03"
+        ],
+        "citation_author": [
+          "Daniel Ari Friedman"
+        ],
+        "citation_doi": [
+          "10.5281/zenodo.23900616"
+        ],
+        "citation_pdf_url": [
+          "https://zenodo.org/api/records/23900617/files/Blakean_Federalism.pdf/content"
+        ]
+      },
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 1.0.0 is hosted at Zenodo. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
+      "local_status": "blocked",
+      "blockers": [
+        "no_selected_local_pdf"
       ],
       "unverified_requirements": [
         "searchable_pdf",

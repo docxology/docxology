@@ -1,5 +1,27 @@
 # Changelog
 
+## 2026-11-04 — Publication intake, software review and bounded PDF hosting
+
+- Added the Blakean Entomology and States Change / Blakean Federalism working
+  papers with permanent work identities, concept/version DOI roles, reviewed
+  source text and explicit limits. Updated Blake manuscript 0.5.0 / software
+  0.7.0 and the fourteen-author observer preprint to r2061, preserving earlier
+  source bytes and extraction history.
+- Catalogued four new research/civic repositories and the distinct PROJECT BOND
+  package family; refreshed public repository facts and current template, GNN,
+  daf-okn and daf-jev release links. The dated
+  [software review](reports/software_catalog_review_2026-11-05.json) records
+  individual source evidence and unavailable/historical references.
+- Added explicit versioned Zenodo primary-PDF declarations for new editions.
+  Download buttons, citation metadata and structured data select those editions;
+  existing local PDF URLs remain hosted. The
+  [storage review](reports/storage_review_2026-11-05.json) records the measured
+  baseline and verified binaries kept outside the Pages projection.
+- Replaced duplicate Zenodo pagination loops with one bounded completeness
+  reader; incomplete pages, changing totals, duplicate records and malformed
+  successful inventory caches now fail explicitly. Updated the intake,
+  classification, provenance and hosting runbooks and the Blake pathway.
+
 ## 2026-11-03 — Labelled footer build stamps
 
 - The generated-page footer stamp now names both of its facts: the

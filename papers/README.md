@@ -9,7 +9,7 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software triage, use the canonical publication intake runbook: [docs/operations/publication-sync.md](../docs/operations/publication-sync.md).
 
-## Papers (211)
+## Papers (213)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -225,6 +225,8 @@ For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software 
 
 | 210 | [2026_ActiveInferenceLanguage](2026_ActiveInferenceLanguage/) | ✅ | 2026 | ActiveInferenceLanguage |
 | 211 | [2026_GNNBasedActive](2026_GNNBasedActive/) | ✅ | 2026 | GNNBasedActive |
+| 212 | [2026_BlakeanEntomology](2026_BlakeanEntomology/) | ✅ | 2026 | BlakeanEntomology |
+| 213 | [2026_StatesChange](2026_StatesChange/) | ✅ | 2026 | StatesChange |
 ## Scripts
 
 All repository code lives under [`code/`](../code/); the per-folder docs in this directory are generated from `paper_metadata.json` by:

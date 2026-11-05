@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "evidence_kind": "public software-catalog fork identity review",
+  "reviewed_at": "2026-11-04T17:49:33-08:00",
+  "reviewed_on_local_date": "2026-11-04",
+  "reviewer": "Codex",
+  "scope": "Apply the existing standing fork policy to four non-curated public forks; preserve explicit catalog exceptions and prior identity evidence.",
+  "source_inventory": "data/github-repositories.json",
+  "source_inventory_generated_at": "2026-11-05T01:29:19Z",
+  "source_inventory_sha256": "2abc03af6a731eb04223511285c1679feec9e36cbbc1f21f09e21ecb9c90cbb9",
+  "previous_exclusions_sha256": "2c2616c123db91ee785daa7c4c2ce805a821456c0b6dd4461c8ff388792705e9",
+  "standing_policy": {
+    "source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+    "reviewed_by": "standing_policy",
+    "meaning": "Applies the previously recorded principal fork policy; does not assert a new individual principal review."
+  },
+  "append_entries": [
+    {
+      "full_name": "docxology/k",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-04",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Current public inventory identifies this archived repository as a fork. Apply the existing fork policy to the exact GitHub identity; this records policy application, not an individual principal review or a deletion decision.",
+      "github_id": 1442244047,
+      "github_node_id": "R_kgDOVfblzw",
+      "source_url": "https://github.com/docxology/k"
+    },
+    {
+      "full_name": "docxology/keepassxc",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-04",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Current public inventory identifies this repository as a fork. Apply the existing fork policy to the exact GitHub identity; this records policy application, not an individual principal review or a deletion decision.",
+      "github_id": 1446311511,
+      "github_node_id": "R_kgDOVjT2Vw",
+      "source_url": "https://github.com/docxology/keepassxc"
+    },
+    {
+      "full_name": "docxology/tiny-footprint-workstation",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-04",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Current public inventory identifies this repository as a fork. Apply the existing fork policy to the exact GitHub identity; this records policy application, not an individual principal review or a deletion decision.",
+      "github_id": 1444976634,
+      "github_node_id": "R_kgDOViCX-g",
+      "source_url": "https://github.com/docxology/tiny-footprint-workstation"
+    }
+  ],
+  "identity_replacement": {
+    "full_name": "docxology/FluSight-forecast-hub",
+    "previous_entry_preserved": {
+      "full_name": "docxology/FluSight-forecast-hub",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-06",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-28 with no description with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1393276879,
+      "github_node_id": "R_kgDOUwu3zw"
+    },
+    "current_entry": {
+      "full_name": "docxology/FluSight-forecast-hub",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-04",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Current public inventory identifies an archived fork created 2026-11-02 under this spelling, with immutable GitHub ID 1443301258. Apply the standing policy to this new identity; the previous acknowledgement covered ID 1393276879 and is retained in the dated review evidence. No repository deletion or individual principal review is asserted.",
+      "github_id": 1443301258,
+      "github_node_id": "R_kgDOVgcHig",
+      "source_url": "https://github.com/docxology/FluSight-forecast-hub"
+    },
+    "current_created_at": "2026-11-02T17:55:34Z",
+    "reason": "The current public repository has a different immutable GitHub ID and node ID. The prior same-spelling acknowledgement cannot authorize the new identity; one current entry replaces it while this report preserves its full original record."
+  },
+  "preserved_explicit_catalog_exception": {
+    "full_name": "docxology/enactive_inference_model",
+    "github_id": 1157353063,
+    "github_node_id": "R_kgDORPvOZw",
+    "source_url": "https://github.com/docxology/enactive_inference_model",
+    "metadata_source_url": "https://api.github.com/repos/docxology/enactive_inference_model",
+    "fork": true,
+    "archived": true,
+    "public": true,
+    "public_parent": {
+      "full_name": "prakash-kavi/enactive_inference_model",
+      "github_id": 1155673106,
+      "github_node_id": "R_kgDOROIsEg",
+      "source_url": "https://github.com/prakash-kavi/enactive_inference_model",
+      "public": true
+    },
+    "catalog_disposition": "Preserve the existing explicitly curated repository row; no not-curated exclusion is added."
+  },
+  "historical_public_reference": {
+    "full_name": "docxology/fuller-obsidian",
+    "source_url": "https://github.com/docxology/fuller-obsidian",
+    "anonymous_observation": "Exact public page returned HTTP 404 on 2026-11-04; no public redirect or replacement canonical name was observed.",
+    "scope": "Public anonymous availability only. No private repository contents or authenticated availability were requested, and privacy/deletion/renaming status is not inferred.",
+    "catalog_disposition": "Retain the historical public reference with a dated availability label; do not replace its URL by inference."
+  },
+  "preservation": "No repository content is removed. The complete public inventory remains complete; catalog acknowledgements change only for the exact recorded immutable identities.",
+  "source_inventory_observation": "reports/github_inventory_observation_2026-11-05.json"
+}

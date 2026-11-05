@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "source_pdf": {
+    "record_id": "23900583",
+    "doi": "10.5281/zenodo.23900582",
+    "version": "1.0.0",
+    "name": "Blakean_Entomology.pdf",
+    "url": "https://zenodo.org/api/records/23900583/files/Blakean_Entomology.pdf/content",
+    "bytes": 58073976,
+    "sha256": "fc99a3dd629646a6e7cb1b41e0b6290388cbb4a09d7c0f91526e0c413dddf73a",
+    "registry_checksum": "md5:8102fac6c68e1af4d193939da2a21741",
+    "pages": 42,
+    "extraction_sha256": "9a69f259caaa206222998c139267a892754b2d0548a5df1783743319481886d7",
+    "extraction_tool": "pypdf 6.16.2",
+    "verification_scope": "Streamed byte size and checksum verified; all pages extracted; source/version/title reviewed separately; no scientific replication or visual approval implied."
+  },
+  "extraction": {
+    "file": "full_text.md",
+    "sha256": "9a69f259caaa206222998c139267a892754b2d0548a5df1783743319481886d7",
+    "source_pdf_sha256": "fc99a3dd629646a6e7cb1b41e0b6290388cbb4a09d7c0f91526e0c413dddf73a",
+    "tool": "pypdf 6.16.2",
+    "method": "Each page extracted in order with PdfReader.page.extract_text; all pages retained."
+  },
+  "historical_sources": [],
+  "review_scope": "Streamed byte size and checksum verified; all pages extracted; source/version/title reviewed separately; no scientific replication or visual approval implied."
+}

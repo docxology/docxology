@@ -6,7 +6,7 @@
 
 This pathway references the existing bibliography identities. Citation DOIs identify the curated work; version DOIs and Zenodo record links identify a particular deposited artifact. A concept DOI may resolve to a newer version. An absent version label means the API did not supply one; consult the record page.
 
-The current scan covers **228 catalog works** and **205 local full texts**: **8 Blake-titled works**, **13 additional William Blake text matches**, and **0 unclassified matches**. These are indexing counts, not counts of papers read.
+The current scan covers **230 catalog works** and **207 local full texts**: **8 Blake-titled works**, **15 additional William Blake text matches**, and **0 unclassified matches**. These are indexing counts, not counts of papers read.
 
 ## Core treatments
 
@@ -16,11 +16,13 @@ The current scan covers **228 catalog works** and **205 local full texts**: **8 
 | [MathArt Stream #8 ~ William Blake and Active Inference](../works/Friedman2024MathArtStream8William038.html) | [10.5281/zenodo.13711301](https://doi.org/10.5281/zenodo.13711301) | [10.5281/zenodo.13711302](https://zenodo.org/records/13711302) | unspecified |
 | [Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology](../works/Friedman2026BeforePragmatismHadName003.html) | [10.5281/zenodo.18807970](https://doi.org/10.5281/zenodo.18807970) | [10.5281/zenodo.18984939](https://zenodo.org/records/18984939) | unspecified |
 | [Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing](../works/Friedman2026FourfoldVisionWilliamBlake196.html) | [10.5281/zenodo.21388456](https://doi.org/10.5281/zenodo.21388456) | [10.5281/zenodo.21388457](https://zenodo.org/records/21388457) | 0.3.0 |
-| [Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls](../works/Friedman2026MappingWilliamBlakeS179.html) | [10.5281/zenodo.21047573](https://doi.org/10.5281/zenodo.21047573) | [10.5281/zenodo.21047574](https://zenodo.org/records/21047574) | unspecified |
+| [Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls](../works/Friedman2026MappingWilliamBlakeS179.html) | [10.5281/zenodo.21047573](https://doi.org/10.5281/zenodo.21047573) | [10.5281/zenodo.23921364](https://zenodo.org/records/23921364) | 0.5.0 |
 | [The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision](../works/Friedman2026ArchitectureFalseGodsWilliam115.html) | [10.5281/zenodo.20144983](https://doi.org/10.5281/zenodo.20144983) | [10.5281/zenodo.20144984](https://zenodo.org/records/20144984) | v1 |
 | [The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing](../works/Friedman2026DoorsPerceptionAreThreshold007.html) | [10.5281/zenodo.18600040](https://doi.org/10.5281/zenodo.18600040) | [10.5281/zenodo.18600041](https://zenodo.org/records/18600041) | v1 |
 | [The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value](../works/Friedman2026GoldenCompassLunarFlux004.html) | [10.5281/zenodo.19335195](https://doi.org/10.5281/zenodo.19335195) | [10.5281/zenodo.19335196](https://zenodo.org/records/19335196) | v1 |
 | [Synthesis of Agent and Niche](../works/Friedman2025SynthesisAgentNiche021.html) | [10.5281/zenodo.17235137](https://doi.org/10.5281/zenodo.17235137) | [10.5281/zenodo.17243488](https://zenodo.org/records/17243488) | v2 |
+| [Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention](../works/Friedman2026BlakeanEntomologySmallLives233.html) | [10.5281/zenodo.23900582](https://doi.org/10.5281/zenodo.23900582) | [10.5281/zenodo.23900583](https://zenodo.org/records/23900583) | 1.0.0 |
+| [States Change: Blakean Federalism and composition without capture](../works/Friedman2026StatesChangeBlakeanFederalism234.html) | [10.5281/zenodo.23900616](https://doi.org/10.5281/zenodo.23900616) | [10.5281/zenodo.23900617](https://zenodo.org/records/23900617) | 1.0.0 |
 
 Core-subject classification also covers works whose subtitle or content explicitly develops Blake, even when the short catalog title omits his name.
 
@@ -43,7 +45,7 @@ The relation describes the located passage, including short quotations, referenc
 | [Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon](../works/Friedman2026EntomologicalLawFieldMap183.html) | Closing discussion quotes One law for the lion and ox; reference lists The Marriage of Heaven and Hell (1790). | [text, line 1160](https://github.com/docxology/docxology/blob/main/papers/2026_EntomologicalLaw/full_text.md?plain=1#L1160) |
 | [Introduction to Biology: A Generative Approach](../works/Friedman2026IntroductionBiologyGenerativeApproach117.html) | Opening epigraph attributes a quotation about nature and imagination to William Blake. | [text, line 37](https://github.com/docxology/docxology/blob/main/papers/2026_BiologyTextbook/full_text.md?plain=1#L37) |
 
-The pathway classifies **9 core treatments** and **12 related or peripheral works**. Core classification and title matching are separate fields in the JSON.
+The pathway classifies **11 core treatments** and **12 related or peripheral works**. Core classification and title matching are separate fields in the JSON.
 
 ## Deposited versions and printed DOI discrepancies
 
@@ -51,7 +53,10 @@ Printed cover or slide identifiers are preserved in the extraction. They can dif
 
 - **William Blake & Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity)**: The extracted deck prints version DOI 10.5281/zenodo.7514368; the catalog metadata and current primary record identify version 2, DOI 10.5281/zenodo.7519132. Printed DOI is preserved as historical source text.
 - **Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology**: The March 12, 2026 extracted cover prints DOI 10.5281/zenodo.18807971; primary version record 18984939 is dated March 12, 2026 (record page labels v2, API version is unset). Printed DOI does not determine the archived version identity.
+- **Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls**: Current passage review covers manuscript 0.5.0 (Zenodo 23921364), paired with software 0.7.0. The preserved blake_working_paper.pdf and full_text_v0.1.md describe the earlier edition.
 - **Synthesis of Agent and Niche**: Local extraction cover prints DOI 10.5281/zenodo.17235138 and date 2025-09-30. Catalog metadata and primary record 17243488 identify v2 dated 2025-10-01. These observations are kept separate; the cover alone cannot establish artifact identity.
+- **Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention**: Reviewed extraction of version 1.0.0, Zenodo record 23900583.
+- **States Change: Blakean Federalism and composition without capture**: Reviewed extraction of version 1.0.0, Zenodo record 23900617.
 
 ## Exclusions and search gaps
 
@@ -64,7 +69,7 @@ Printed cover or slide identifiers are preserved in the extraction. They can dif
 
 - Every included work has metadata and a local extracted full text; matching line numbers and text SHA-256 values are retained in the JSON pathway.
 - Passage classifications are bound to the reviewed text hash. Changed text requires renewed classification; new unclassified matches fail the check.
-- Primary publication metadata was compared with [the public discovery snapshot](../reports/publication_discovery_2026-10-22.json) observed 2026-10-22T14:58:54.064857+00:00; the JSON records metadata-match status per work.
+- Primary publication metadata was compared with [the public discovery snapshot](../reports/publication_intake_2026-11-05.json) observed 2026-11-05T01:17:28Z; the JSON records metadata-match status per work.
 - Located passages are distinct from sections read, complete texts read, and independently checked citation sources. This index makes no full-reading or independent citation-validation claim.
 - The search is limited to available local extractions. The [source coverage queue](../data/coverage-exceptions.json) identifies missing full text; image-only, OCR, spelling and edition differences can conceal further references.
 - Rebuild with `uv run python code/orchestrators/build_blake_index.py`; verify with the same command plus `--check`. The ordinary regeneration and validation plan includes this check.

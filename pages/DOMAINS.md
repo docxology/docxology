@@ -19,7 +19,7 @@ keywords: "Daniel Ari Friedman, research domains, Active Inference, entomology, 
 
 Ant colony behavior, physiology, transcriptomics, and computational models of collective cognition.
 
-- Works: 23
+- Works: 24
 - Selected repositories: 7
 - Collaborator context: Deborah Gordon, Karl Friston, Chris Fields
 
@@ -38,10 +38,10 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 
 - 2026 — [Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology](https://doi.org/10.5281/zenodo.19574117)
 - 2026 — [Illegal States, Mostly Unrepresentable](https://doi.org/10.5281/zenodo.21298885)
+- 2026 — [Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention](https://doi.org/10.5281/zenodo.23900582)
 - 2025 — [Computational Complexity and Energetics of the Ant Stack](https://doi.org/10.5281/zenodo.17238736)
 - 2025 — [The Ant Stack](https://doi.org/10.5281/zenodo.16782756)
 - 2025 — [Towards a Science of Consciousness and Social Complexity... For Ants](https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes)
-- 2024 — [Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea](https://doi.org/10.1002/ece3.70063)
 
 **Selected repositories**
 
@@ -89,7 +89,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 - [AgenticMesh](https://github.com/docxology/AgenticMesh) — Active Inference & Agentic Mesh — modular Python infrastructure for building agentic systems using free-energy-minimizing Active Inference principles
 - [ActiveInferAnts](https://github.com/docxology/ActiveInferAnts) — Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy
 - [Active_InferAnts](https://github.com/ActiveInferenceInstitute/Active_InferAnts) — Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
-- [Generalized_Notation_Notation](https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation) — GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Citation DOI · Current software v4.3.0 ·  · Earlier software archive
+- [Generalized_Notation_Notation](https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation) — GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Citation DOI · Current software version 5.0.3 · Earlier software version 4.3.0 ·  · Earlier software archive
 - [fep_formal](https://github.com/ActiveInferenceInstitute/fep_formal) — Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline ·  · Zenodo artifact v2.1.0 · Citation DOI · Zenodo software archive
 
 ## 🛡️ [Cognitive Security](../domain-cognitive-security.html)
@@ -130,7 +130,7 @@ Narrative ecosystems, information commons, digital rhetoric, and multiagent secu
 
 William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates, and synergetics.
 
-- Works: 16
+- Works: 17
 - Selected repositories: 6
 - Collaborator context: Buckminster Fuller source tradition, William Blake source tradition, Curio Cards artists
 
@@ -152,7 +152,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 - 2026 — [The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing](https://doi.org/10.5281/zenodo.18600040)
 - 2026 — [The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision](https://doi.org/10.5281/zenodo.20144983)
 - 2026 — [Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing](https://doi.org/10.5281/zenodo.21388456)
-- 2025 — [On Cognitive Art & Science: Toward Wholeness From Both Sides](https://doi.org/10.5281/zenodo.16740438)
+- 2026 — [States Change: Blakean Federalism and composition without capture](https://doi.org/10.5281/zenodo.23900616)
 
 **Selected repositories**
 
@@ -161,7 +161,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 - [ivm-xyz](https://github.com/docxology/ivm-xyz) — Python library for 3D and 4D Quadray/IVM (Isotropic Vector Matrix) geometry — coordinate conversion, volume calculations, and polyhedral operations
 - [godel_ivm](https://github.com/docxology/godel_ivm) — Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products
 - [symergetics](https://github.com/docxology/symergetics) — Symbolic Synergetics — computer algebra and formal symbolic systems for Buckminster Fuller's synergetics mathematics
-- [fuller-obsidian](https://github.com/docxology/fuller-obsidian) — Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science
+- [fuller-obsidian](https://github.com/docxology/fuller-obsidian) — Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science · Historical public reference: anonymous GitHub returned 404 on 2026-11-04; current contents and visibility are unverified
 
 ## 💻 [Computational Methods & Open Science](../domain-computational.html)
 
@@ -191,7 +191,7 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 
 **Selected repositories**
 
-- [template](https://github.com/docxology/template) — Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo
+- [template](https://github.com/docxology/template) — Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Earlier software v3.3.0 · Zenodo ·  · Software version 5.0.0 artifact
 - [mdkv](https://github.com/docxology/mdkv) — MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents
 - [markdown_decision_process](https://github.com/docxology/markdown_decision_process) — Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning
 - [steganographer](https://github.com/docxology/steganographer) — High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 484 tests, GStreamer integration

@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "source_pdf": {
+    "record_id": "23900617",
+    "doi": "10.5281/zenodo.23900616",
+    "version": "1.0.0",
+    "name": "Blakean_Federalism.pdf",
+    "url": "https://zenodo.org/api/records/23900617/files/Blakean_Federalism.pdf/content",
+    "bytes": 11412409,
+    "sha256": "14be777acc438a12b0b0077fe26aa0d0c57e7d8505274dfa30c3c1f05e809c52",
+    "registry_checksum": "md5:a572480e78d588e5908c2faf3d7c62c3",
+    "pages": 76,
+    "extraction_sha256": "34055163c5647894ffff4818ca80faf5ff4d3197a3efe1e1d4898e562cd1ceb2",
+    "extraction_tool": "pypdf 6.16.2",
+    "verification_scope": "Streamed byte size and checksum verified; all pages extracted; source/version/title reviewed separately; no scientific replication or visual approval implied."
+  },
+  "extraction": {
+    "file": "full_text.md",
+    "sha256": "34055163c5647894ffff4818ca80faf5ff4d3197a3efe1e1d4898e562cd1ceb2",
+    "source_pdf_sha256": "14be777acc438a12b0b0077fe26aa0d0c57e7d8505274dfa30c3c1f05e809c52",
+    "tool": "pypdf 6.16.2",
+    "method": "Each page extracted in order with PdfReader.page.extract_text; all pages retained."
+  },
+  "historical_sources": [],
+  "review_scope": "Streamed byte size and checksum verified; all pages extracted; source/version/title reviewed separately; no scientific replication or visual approval implied."
+}

@@ -1,44 +1,48 @@
-# 💻 Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics
+# 💻 Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics
 
 **Bernhard Mueller, Mario Poneder, Alexander Osika, Kai Xue, Ben Cassie, Peter Nguyen, Jinwook Kim, David Matscheko, Daniel Ari Friedman, Jonathan Hill, William T. Glynn, Maarten Antonie Visser, Kale Arnav Anirudha, Brieuc de La Fournière** (2026) · *PhilPapers (preprint)*
 
----
-
 ## Source and publication status
 
-Preprint, October 21, 2026, release **r2052**. [PhilPapers record](https://philpapers.org/rec/MUEFOC); [pinned public manuscript](https://raw.githubusercontent.com/FloatingPragma/observer-patch-holography/879ed37ad2c1933ecb6dd8f54271362ee3f4d41c/flagship/from_observer_consensus_to_standard_physics.pdf). The supplied PDF matches the pinned public r2052 flagship manuscript byte-for-byte (SHA-256 `e23da212840627f16e10ac05f7538eab10556702ceda8a404f8c32359e89b737`).
+Preprint, November 4, 2026, release **r2061**. [PhilPapers record](https://philpapers.org/rec/MUEFOC); [frozen release](https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2061); [pinned public manuscript](https://raw.githubusercontent.com/FloatingPragma/observer-patch-holography/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.pdf). The acquired flagship PDF matches the [release manifest](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/paper/paper_release_manifest.json): 354,219 bytes, SHA-256 `26ad29e47334818cbf3e00741b87fc5b4defc229526c4b49d429ee4eac3ea6e6`. pypdf reports **46 pages** and retains text from all pages; the extracted first page corroborates the title, fourteen-author byline and release date. [Source evidence](source_evidence.json) records these byte/text observations separately from rendered-page visual inspection and scientific validation.
 
-The PDF title page and embedded metadata list **David Matscheko** between Jinwook Kim and Daniel Ari Friedman. The supplied record listing omits him. This catalog follows the PDF's 14-author list; PhilPapers metadata could not be retrieved through its security challenge on October 23, 2026. No DOI or peer-reviewed venue has been verified.
+The [frozen author block](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex) preserves the catalog's fourteen-author list, including **David Matscheko** between Jinwook Kim and Daniel Ari Friedman. The title's subtitle is now **Finite Consensus and the Reconstruction of Standard Physics**. PhilPapers returned HTTP 403 during the November 4 source review; no DOI or peer-reviewed venue has been verified.
 
-Observer Patch Holography (OPH) is presented as a candidate construction. The paper explicitly distinguishes finite mathematical results, declared premises, executable tests and physical realization. This catalog entry records the paper's claims and limits; it does not independently certify its proofs, software or physical conclusions. The Computational domain reflects the executable-observer construction within this site's existing domain taxonomy.
+Observer Patch Holography is presented as a candidate framework. Its finite results and conditional constructions do not establish that it describes the physical universe. This catalog records the authors' claims and limits; it does not independently certify their proofs, software or physical conclusions. The Computational domain follows this site's existing taxonomy.
 
-## Abstract
+## Abstract summary
 
-> Observer Patch Holography (OPH) proposes that physics is what bounded observers can establish together: finite patches compare records on shared boundaries, repair disagreements, and treat as objective whatever survives every comparison. The universe, on this view, is a timeless self-referential structure whose observers recover its specification from their records and realize it, so that it reads itself into existence. Nothing lies outside to impose premises, so the recovered specification owes no a-priori justification; it has to run and reproduce what observers measure. That specification is a candidate, an executable observer: a twelve-port carrier, a native repair law, retained records and record-controlled feedback, joined in one interacting quantum process of electric flux, charged matter and a scalar field whose feedback response is certified nonzero in the infinite-occupation limit. Observers whose regions overlap on one carrier share a single complete law of fields, local event clocks and feedback, and on a refining spherical screen one repair history defines a common continuum operator for Gaussian fields, their decay and finite-speed waves. On a declared radial product over that screen, every finite menu of observer readouts admits, to any tolerance, one smooth static (1 + 3)-dimensional Lorentzian effective field theory. Finite theorems turn the specification’s readouts into familiar structure: schedule-independent public records, the Born rule and Tsirelson bound on completed records, a carrier whose slow response is exactly three-dimensional, the Standard Model gauge Lie algebra with an anomaly-free generation, a source-derived (1 + 3) causal precursor with proper-time ratios from record counts, and the Einstein equation from a realized null balance. We state the acceptance criteria of the construction, which premises it discharges, which it takes as declared inputs, and the frozen tests that can reject its branches.
+The authors propose Observer Patch Holography as a self-referential account in which observers recover and realize their world's rules. Finite comparisons and repairs establish shared records within the model. The abstract reports a finite consensus theorem, a three-direction slow response for a specified twelve-port carrier, and conditional links to gauge structure, quantum measurements, interacting finite energy levels, field theory and gravitational response. These results depend on stated mathematical structures and premises. Identifying the construction with the physical universe still requires a common interacting chiral 3+1-dimensional limit, the observed particle spectrum, responsive geometry and independent empirical agreement. The Introduction also distinguishes mathematical consistency from physical existence. This is a curated summary of the r2061 abstract and Introduction, not an independent verification of the paper's mathematics or physics.
 
 ## Keywords
 
-`foundations of physics` · `Observer Patch Holography` · `observer consensus` · `executable observer` · `self-reference` · `quantum records` · `gauge structure` · `Einstein field equation`
+`foundations of physics` · `Observer Patch Holography` · `finite consensus` · `self-reference` · `quantum records` · `gauge structure` · `particle physics` · `Einstein dynamics`
 
 ## Methods
 
-- **Finite observer patches and protected-record repair** — The manuscript constructs local patches that compare shared-boundary records and accept repairs preserving protected data (pp. 1-2).
-- **Executable observer specification** — The authors join a twelve-port carrier, native repair, retained records and record-controlled feedback in a candidate quantum process (p. 1).
+- **Finite consensus through comparisons and repair** — The authors model finite observers comparing overlapping records and repairing disagreements; the abstract reports a canonical consensus theorem (r2061 abstract).
+- **Conditional reconstruction from specified finite structures** — The paper relates a twelve-port carrier, supplied quantum structures and a specified finite source to gauge, measurement, field and geometric-response statements under declared premises (r2061 abstract and Introduction).
 
 ## Key Findings
 
-- The authors define objective facts operationally through records that survive authorized observer comparisons; this is a proposed foundation rather than an empirical confirmation (pp. 1-2).
-- The abstract reports conditional finite constructions for quantum records, gauge structure and effective spacetime, with declared inputs and rejection criteria (p. 1).
-- The manuscript explicitly states that its finite constructions do not establish physical realization or select a unique universe (p. 2).
+- The paper presents finite consensus and selected mathematical constructions within its proposed observer framework; catalog intake does not independently verify those results (r2061 abstract).
+- The authors distinguish a consistent mathematical construction from evidence that the construction physically exists (r2061 Introduction).
+- Identification with our universe remains conditional on an interacting chiral 3+1-dimensional limit, the observed particle spectrum, responsive geometry and independent empirical agreement (r2061 abstract).
 
-## Artifacts
+## Artifacts and version history
 
-- PDF: [ObserversReadUniverse_r2052.pdf](ObserversReadUniverse_r2052.pdf)
-- PDF SHA-256: e23da212840627f16e10ac05f7538eab10556702ceda8a404f8c32359e89b737
+- Current PDF: [ObserversReadUniverse_r2061.pdf](ObserversReadUniverse_r2061.pdf).
+- Current extraction: [full_text_r2061.md](full_text_r2061.md), SHA-256 `f6f9bfb98c054d6e61491b770c8af8bb839537c9434d223cc7084e6fb45b67e4`; `full_text.md` is the byte-identical canonical projection of that identified extraction.
+- Preserved r2052 PDF: [ObserversReadUniverse_r2052.pdf](ObserversReadUniverse_r2052.pdf), SHA-256 `e23da212840627f16e10ac05f7538eab10556702ceda8a404f8c32359e89b737`.
+- Preserved r2052 extraction: [full_text_r2052.md](full_text_r2052.md), SHA-256 `8fbadbdc1c82558d2cf18322c6438052c1083a826b2d63bc0ade130cabe23c2e`. Its old subtitle, abstract, page locators and supplied-record author discrepancy remain historical evidence.
+
+## License
+
+The [frozen license](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/LICENSE) assigns authored papers, documentation, figures and data **CC BY-NC-SA 4.0**, and software **Apache-2.0**. Quoted Particle Data Group measurements retain upstream terms. Preserve attribution, the license link and a statement of changes for reproduced material.
 
 ## Citation
 
-> Bernhard Mueller, Mario Poneder, Alexander Osika, Kai Xue, Ben Cassie, Peter Nguyen, Jinwook Kim, David Matscheko, Daniel Ari Friedman, Jonathan Hill, William T. Glynn, Maarten Antonie Visser, Kale Arnav Anirudha, Brieuc de La Fournière (2026). *Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics*. PhilPapers (preprint).
+> Bernhard Mueller, Mario Poneder, Alexander Osika, Kai Xue, Ben Cassie, Peter Nguyen, Jinwook Kim, David Matscheko, Daniel Ari Friedman, Jonathan Hill, William T. Glynn, Maarten Antonie Visser, Kale Arnav Anirudha, Brieuc de La Fournière (2026). *Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics*. PhilPapers (preprint).
 
 ## Related
 

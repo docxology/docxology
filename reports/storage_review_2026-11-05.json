@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "reviewed_on_local_date": "2026-11-04",
+  "baseline": {
+    "manifest": "data/pages-artifact-manifest.json",
+    "manifest_sha256": "c03cf928f16869c872235a2ce1df7ffbb6176d913ba9480836e16a8b192a00a6",
+    "source_commit": "10bd59d4a440f59c205896396390d5897b2d7942",
+    "artifact_bytes": 957722562,
+    "paper_pdf_mib": 766.59,
+    "other_content_mib": 146.77,
+    "art_directory_mib": 3.54,
+    "scope": "Retained pre-intake Pages projection; not canonical repository or Git-history size."
+  },
+  "decision": "Keep existing hosted PDFs and URLs. Store verified new/current PDF editions at their exact versioned Zenodo records; retain metadata, source evidence, extracted text and generated pages in the catalog.",
+  "remote_pdf_bytes_not_added_to_pages": 81249186,
+  "remote_pdf_sources": [
+    {
+      "record_id": "23900583",
+      "name": "Blakean_Entomology.pdf",
+      "url": "https://zenodo.org/api/records/23900583/files/Blakean_Entomology.pdf/content",
+      "version": "1.0.0",
+      "bytes": 58073976,
+      "sha256": "fc99a3dd629646a6e7cb1b41e0b6290388cbb4a09d7c0f91526e0c413dddf73a"
+    },
+    {
+      "record_id": "23900617",
+      "name": "Blakean_Federalism.pdf",
+      "url": "https://zenodo.org/api/records/23900617/files/Blakean_Federalism.pdf/content",
+      "version": "1.0.0",
+      "bytes": 11412409,
+      "sha256": "14be777acc438a12b0b0077fe26aa0d0c57e7d8505274dfa30c3c1f05e809c52"
+    },
+    {
+      "record_id": "23921364",
+      "name": "Blake.pdf",
+      "url": "https://zenodo.org/api/records/23921364/files/Blake.pdf/content",
+      "version": "0.5.0",
+      "bytes": 11762801,
+      "sha256": "812e53237b40f808b4502e3dd358cbee5cda7d587e493ba95e41f02c11ad03eb"
+    }
+  ],
+  "art_observation": "All artwork thumbnails and originals already use live.staticflickr.com. Moving art/ alone would recover only 3.54 MiB in this baseline.",
+  "limits": "No originals deleted, no repository created, no legacy PDF migrated, no budget widened. Remote availability and source-byte verification are separate from hosted deployment verification. Current candidate size is recorded by the generated Pages manifest/growth receipt.",
+  "official_sources": [
+    "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+    "https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases"
+  ]
+}

@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 228 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 230 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -9353,8 +9353,8 @@
         },
         {
             "@type": "ScholarlyArticle",
-            "name": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
-            "headline": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+            "name": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
+            "headline": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
             "datePublished": "2026",
             "author": [
                 {
@@ -9429,7 +9429,7 @@
             "url": "https://danielarifriedman.com/works/Friedman2026ObserversWhoReadTheir230.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026ObserversWhoReadTheir230.html",
             "sameAs": "https://philpapers.org/rec/MUEFOC",
-            "citation": "Mueller, Bernhard; Poneder, Mario; Osika, Alexander; Xue, Kai; Cassie, Ben; Nguyen, Peter; Kim, Jinwook; Matscheko, David; Friedman, Daniel Ari; Hill, Jonathan; Glynn, William T.; Visser, Maarten Antonie; Anirudha, Kale Arnav; de La Fournière, Brieuc. 2026. Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics. PhilPapers (preprint). URL: https://philpapers.org/rec/MUEFOC."
+            "citation": "Mueller, Bernhard; Poneder, Mario; Osika, Alexander; Xue, Kai; Cassie, Ben; Nguyen, Peter; Kim, Jinwook; Matscheko, David; Friedman, Daniel Ari; Hill, Jonathan; Glynn, William T.; Visser, Maarten Antonie; Anirudha, Kale Arnav; de La Fournière, Brieuc. 2026. Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics. PhilPapers (preprint). URL: https://philpapers.org/rec/MUEFOC."
         },
         {
             "@type": "ScholarlyArticle",
@@ -9498,6 +9498,74 @@
             },
             "sameAs": "https://doi.org/10.5281/zenodo.23670187",
             "citation": "Friedman, Daniel Ari. 2026. GNN-based active inference for Battleship. Zenodo. DOI: 10.5281/zenodo.23670187. URL: https://doi.org/10.5281/zenodo.23670187."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+            "headline": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🐜",
+            "@id": "https://danielarifriedman.com/works/Friedman2026BlakeanEntomologySmallLives233.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026BlakeanEntomologySmallLives233.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026BlakeanEntomologySmallLives233.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.23900582",
+                "url": "https://doi.org/10.5281/zenodo.23900582"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.23900582",
+            "citation": "Friedman, Daniel Ari. 2026. Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention. Zenodo. DOI: 10.5281/zenodo.23900582. URL: https://doi.org/10.5281/zenodo.23900582."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "States Change: Blakean Federalism and composition without capture",
+            "headline": "States Change: Blakean Federalism and composition without capture",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🎨",
+            "@id": "https://danielarifriedman.com/works/Friedman2026StatesChangeBlakeanFederalism234.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026StatesChangeBlakeanFederalism234.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026StatesChangeBlakeanFederalism234.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.23900616",
+                "url": "https://doi.org/10.5281/zenodo.23900616"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.23900616",
+            "citation": "Friedman, Daniel Ari. 2026. States Change: Blakean Federalism and composition without capture. Zenodo. DOI: 10.5281/zenodo.23900616. URL: https://doi.org/10.5281/zenodo.23900616."
         }
     ]
 }

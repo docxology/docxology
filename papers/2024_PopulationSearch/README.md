@@ -12,7 +12,7 @@
 
 The corrected source fixes graph symmetry, diagonal weights and tour accounting and supplies a new seeded paired-run protocol with raw execution evidence. The historical table-specific graph denominator remains unestablished; the new run does not reconstruct that table.
 
-The abstract, findings and downloadable publication describe the historical archive. Consult the corrected source before reusing its empirical claims. This review does not issue a new publication or DOI.
+This dated review concerns the earlier source edition identified in the pinned correction. Current summaries, downloads and extracted text each retain their own source provenance; this review does not certify a newer edition.
 
 [Read the pinned source correction](https://github.com/docxology/ActiveACO/blob/af126fd2752a0b6417c033defd44425567322d5e/PAPER_REVISION.md) (reviewed 2026-10-19).
 

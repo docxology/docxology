@@ -1,33 +1,29 @@
 ---
-name: "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics"
-description: "Use when citing or analyzing Observers Who Read Their Universe into Existence, Observer Patch Holography, or the r2052 executable-observer construction. Read the source and claim limits before reuse."
-tags: ["foundations-of-physics", "observer-patch-holography", "finite-consensus", "executable-observer", "quantum-records"]
+name: "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics"
+description: "Use when citing or analyzing Observer Patch Holography and its r2061 preprint. Read the frozen source, version history and physical-identification limits before reuse."
+tags: ["foundations-of-physics", "observer-patch-holography", "finite-consensus", "quantum-records"]
 domain: "Computational"
-citation: "Bernhard Mueller, Mario Poneder, Alexander Osika, Kai Xue, Ben Cassie, Peter Nguyen, Jinwook Kim, David Matscheko, Daniel Ari Friedman, Jonathan Hill, William T. Glynn, Maarten Antonie Visser, Kale Arnav Anirudha, Brieuc de La Fournière (2026). *Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics*. PhilPapers (preprint)."
+citation: "Bernhard Mueller, Mario Poneder, Alexander Osika, Kai Xue, Ben Cassie, Peter Nguyen, Jinwook Kim, David Matscheko, Daniel Ari Friedman, Jonathan Hill, William T. Glynn, Maarten Antonie Visser, Kale Arnav Anirudha, Brieuc de La Fournière (2026). *Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics*. PhilPapers (preprint)."
 ---
 
-# Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics
+# Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics
 
 **Bernhard Mueller, Mario Poneder, Alexander Osika, Kai Xue, Ben Cassie, Peter Nguyen, Jinwook Kim, David Matscheko, Daniel Ari Friedman, Jonathan Hill, William T. Glynn, Maarten Antonie Visser, Kale Arnav Anirudha, Brieuc de La Fournière** (2026) · Computational
 
 ## Context
 
-This work addresses topics in **Computational**: foundations of physics, Observer Patch Holography, observer consensus, executable observer.
+This co-authored preprint proposes an observer-based mathematical and computational framework. Current edition is r2061, dated November 4, 2026. Citation remains [PhilPapers MUEFOC](https://philpapers.org/rec/MUEFOC); no DOI has been verified. The exact title, byline and source limits are recorded in [README.md](README.md).
 
 ## Methods
 
-Primary methods and techniques applied in this work:
-
-- **Finite observer patches and protected-record repair** — The manuscript constructs local patches that compare shared-boundary records and accept repairs preserving protected data (pp. 1-2).
-- **Executable observer specification** — The authors join a twelve-port carrier, native repair, retained records and record-controlled feedback in a candidate quantum process (p. 1).
+- **Finite consensus through comparisons and repair** — The authors model finite observers comparing overlapping records and repairing disagreements; the abstract reports a canonical consensus theorem (r2061 abstract).
+- **Conditional reconstruction from specified finite structures** — The paper relates a twelve-port carrier, supplied quantum structures and a specified finite source to gauge, measurement, field and geometric-response statements under declared premises (r2061 abstract and Introduction).
 
 ## Key Findings
 
-Core contributions and results:
-
-- The authors define objective facts operationally through records that survive authorized observer comparisons; this is a proposed foundation rather than an empirical confirmation (pp. 1-2).
-- The abstract reports conditional finite constructions for quantum records, gauge structure and effective spacetime, with declared inputs and rejection criteria (p. 1).
-- The manuscript explicitly states that its finite constructions do not establish physical realization or select a unique universe (p. 2).
+- The paper presents finite consensus and selected mathematical constructions within its proposed observer framework; catalog intake does not independently verify those results (r2061 abstract).
+- The authors distinguish a consistent mathematical construction from evidence that the construction physically exists (r2061 Introduction).
+- Identification with our universe remains conditional on an interacting chiral 3+1-dimensional limit, the observed particle spectrum, responsive geometry and independent empirical agreement (r2061 abstract).
 
 ## Related Works
 
@@ -36,25 +32,17 @@ Core contributions and results:
 
 ## Validation
 
-Use the source and status note in [README.md](README.md) before citing. Preserve the PDF author list including David Matscheko. Attribute mathematical and physical conclusions to the manuscript; independent proof, model and physical validation have not been performed for this catalog intake.
-
-Verification points for this work:
-
-- Canonical DOI: Not assigned
-- PDF SHA-256: e23da212840627f16e10ac05f7538eab10556702ceda8a404f8c32359e89b737
-- Pairing confidence: unknown
-- Last checked: unknown
+The [frozen source](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex) and [manifest](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/paper/paper_release_manifest.json) identify the current edition. The acquired PDF matches the manifest digest and byte count; pypdf records 46 pages, with all-page text retained. Extracted first-page title, byline and date agree with the frozen source. This establishes no rendered-page visual approval, independent proof, executable-model certification or physical confirmation. Use [source_evidence.json](source_evidence.json) for actual readbacks and preserve the fourteen-author list.
 
 ## Prerequisites
 
-- Familiarity with foundations of physics, Observer Patch Holography, observer consensus
-- Background in Computational fundamentals
-- Access to source repository: N/A
+- Familiarity with finite consensus, quantum records and conditional mathematical models.
+- Access to the identified release and its retained source/extraction records.
 
 ## Instructions
 
-When working with this paper:
-
-1. Use the canonical citation above.
-2. Apply methods listed in the Methods section for related analysis.
-3. Validate findings against the original PDF and metadata.
+1. Cite the current title and all fourteen authors using the stable PhilPapers URL.
+2. Identify r2061 explicitly when discussing its current abstract and claims.
+3. Check statements against the frozen edition and retain the authors' premises and physical-identification requirements.
+4. Keep r2052 text and page evidence attached to the preserved historical edition.
+5. Retain CC BY-NC-SA 4.0 attribution for authored paper material and distinguish the repository's Apache-2.0 software license.

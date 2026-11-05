@@ -174,7 +174,7 @@ def main_entity_object(
 
 def collection_page_description(docx_count: int, aii_count: int) -> str:
     return (
-        f"{docx_count} original repositories and {aii_count} catalogued Active Inference Institute "
+        f"{docx_count} owned repositories and {aii_count} catalogued Active Inference Institute "
         "contributions spanning Active Inference, cognitive security, computational biology, and research tools."
     )
 
@@ -220,7 +220,7 @@ def render_docx_footer(docx_count: int) -> str:
     return (
         f'        <p class="text-center mt-2">'
         f'<a href="https://github.com/docxology" class="filter-btn">'
-        f"View all {docx_count} original repositories on GitHub</a> "
+        f"View all {docx_count} owned repositories on GitHub</a> "
         f'<a href="repositories.html" class="filter-btn">Search full generated inventory</a></p>'
     )
 

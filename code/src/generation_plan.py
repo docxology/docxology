@@ -175,6 +175,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
             "papers/*/full_text.md",
             "papers/*/metadata.json",
             "reports/publication_discovery_*.json",
+            "reports/publication_intake_*.json",
         ),
     ),
     GenerationStep(

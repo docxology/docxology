@@ -1,25 +1,17 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls"
-description: "A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source code and project-authored aggregate analytics fro..."
+description: "William Blake's works survive across editions, copy records, image archives, museum catalogues, transcriptions, and finding aids. Computational coverage is difficult to assess without explicit units, source authority, and evidence boundaries. We pres..."
 tags: ["william-blake", "digital-humanities", "corpus-acquisition", "source-provenance", "rights-bounded-release"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls*. Zenodo."
 doi: "10.5281/zenodo.21047573"
+artifact_doi: "10.5281/zenodo.23921364"
 ---
 
 # Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls
 
 **Daniel Ari Friedman** (2026) · Computational
-
-## Corrected source review
-
-The corrected manuscript derives saved-text and embedding counts from identified membership and reports missing, filtered and excluded works. Publication generation now rejects inconsistent coverage or implicit modality flags. The original historical run membership is unavailable; no replacement corpus count is asserted.
-
-The abstract, findings and downloadable publication describe the historical archive. Consult the corrected source before reusing its empirical claims. This review does not issue a new publication or DOI.
-
-[Read the pinned source correction](https://github.com/docxology/blake/blob/0e06527a4be239678c746d25e410d467cbad5c18/docs/publication-consistency-review.md) (reviewed 2026-10-19).
-
 
 ## Context
 
@@ -29,38 +21,36 @@ This work addresses topics in **Computational**: William Blake, digital humaniti
 
 Primary methods and techniques applied in this work:
 
-- **7-phase DAG pipeline (blake) from discovery to reports** — The corpus is built by a directed pipeline of discovery, acquisition, metadata, analysis, visualizations, export, and reports, whose JSON artifacts also populate the manuscript.
-- **Versioned canonical target ledger of 104 work-level Blake targets** — A ledger derived from Blake bibliographies, editions, Archive identifiers, and visual catalogues serves as the denominator for coverage claims.
-- **Tiered source registry with the William Blake Archive as primary authority** — The registry holds the Blake Archive, Project Gutenberg, and Internet Archive, with the Archive given priority when sources disagree and others used as fallback or corroboration.
-- **Descriptive text metrics: tokenization, type-token ratio, lexical sentiment** — Each text-bearing work is tokenized to compute word counts, sentiment, vocabulary richness, and themes, treated as descriptors rather than literary judgments.
-- **TF-IDF vectors with deterministic PCA/LSA projection over 162 works** — A 120-term TF-IDF vocabulary is built across text-bearing works and projected onto PCA/LSA axes as a reading instrument over local evidence.
+- **Target-ledgered provenance pipeline** — Connect the 104-entry work-level ledger to source/copy evidence, analysis, recoverability and publication controls through seven phases.
+- **Separated custody and retrieval policy** — Retain source identities and roles while exposing distinct normalized-token, literal-casefold and regex retrieval contracts.
+- **Inventory-bounded recoverability** — Use checksums and a restore drill to assess the captured inventory rather than completeness of the oeuvre.
 
 ## Key Findings
 
 Core contributions and results:
 
-- The saved run represents 102 of 104 ledger targets (98.1%) but fully meets the required text/image evidence profile for only 90 (86.5%); 12 are partial and 2 missing.
-- The text-bearing subset contains 156 works and 216878 words, and joint text-image diagnostics are available for 33 works.
-- The ontology module produced a work-theme graph of 356 nodes and 297 edges, including 16 theme nodes.
-- The local analysis ledger reports all 340 works analyzed with 0 recorded analysis errors.
-- The author frames the contribution as an auditable corpus-governance method, not a completed or exhaustive analysis of Blake's works.
+- The saved run contains 727 local source/copy records and represents 69 of 104 work-level targets (66.3%); 45 targets (43.3%) fully meet the declared evidence profile.
+- The text subset contains 540 records and 682407 tokenizer-defined words, including retained transcriptions with unverified authorship.
+- Recovery preserves 8481 inventoried files and 5975 of 6003 discovered image identifiers, with 28 unresolved.
+- The text counts include unverified authorship and do not establish a census of Blake-authored language.
+- Image association counts do not establish an independent-image census or museum-wide completeness.
 
 Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
 ## Related Works
 
-- [2023_NSFReporting](../2023_NSFReporting/)
-- [2023_NaturalAIBased](../2023_NaturalAIBased/)
-- [2025_AuBI](../2025_AuBI/)
+- [2026_BlakeanEntomology](../2026_BlakeanEntomology/)
+- [2026_StatesChange](../2026_StatesChange/)
 
 ## Validation
 
 Verification points for this work:
 
 - Canonical DOI: 10.5281/zenodo.21047573
-- PDF SHA-256: See zenodo_record
-- Pairing confidence: strong
-- Last checked: 2026-09-24T18:29:57Z
+- PDF SHA-256: 812e53237b40f808b4502e3dd358cbee5cda7d587e493ba95e41f02c11ad03eb
+- Pairing confidence: needs_review
+- Last checked: 2026-11-05T01:42:21Z
+- Artifact DOI: 10.5281/zenodo.23921364
 
 ## Prerequisites
 

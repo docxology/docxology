@@ -16,7 +16,7 @@ doi: "10.5281/zenodo.17244386"
 
 The corrected active manuscript withdraws unsupported numerical, model-comparison and participant-study claims. Its evaluation is prospective. Historical checkpoints, datasets and study observations have not been recovered.
 
-The abstract, findings and downloadable publication describe the historical archive. Consult the corrected source before reusing its empirical claims. This review does not issue a new publication or DOI.
+This dated review concerns the earlier source edition identified in the pinned correction. Current summaries, downloads and extracted text each retain their own source provenance; this review does not certify a newer edition.
 
 [Read the pinned source correction](https://github.com/docxology/markdown_decision_process/blob/7c21c57c34ac78998a94d6a1379803e380ff8505/paper/EVALUATION_EVIDENCE.md) (reviewed 2026-10-19).
 

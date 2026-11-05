@@ -7382,7 +7382,7 @@
   {
     "id": "Friedman2026ObserversWhoReadTheir230",
     "type": "article-journal",
-    "title": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+    "title": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
     "author": [
       {
         "family": "Mueller",
@@ -7504,5 +7504,55 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.23670187",
     "URL": "https://doi.org/10.5281/zenodo.23670187"
+  },
+  {
+    "id": "Friedman2026BlakeanEntomologySmallLives233",
+    "type": "article-journal",
+    "title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Entomology; Paper",
+    "note": "Catalog row 233; docs: papers/2026_BlakeanEntomology/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.23900582",
+    "URL": "https://doi.org/10.5281/zenodo.23900582"
+  },
+  {
+    "id": "Friedman2026StatesChangeBlakeanFederalism234",
+    "type": "article-journal",
+    "title": "States Change: Blakean Federalism and composition without capture",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Art & Synergetics; Paper",
+    "note": "Catalog row 234; docs: papers/2026_StatesChange/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.23900616",
+    "URL": "https://doi.org/10.5281/zenodo.23900616"
   }
 ]

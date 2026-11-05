@@ -3147,7 +3147,7 @@ AU  - Visser, Maarten Antonie
 AU  - Anirudha, Kale Arnav
 AU  - de La Fournière, Brieuc
 PY  - 2026
-TI  - Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics
+TI  - Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics
 T2  - PhilPapers (preprint)
 UR  - https://philpapers.org/rec/MUEFOC
 KW  - Computational
@@ -3177,4 +3177,28 @@ UR  - https://doi.org/10.5281/zenodo.23670187
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 232; docs: papers/2026_GNNBasedActive/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention
+T2  - Zenodo
+DO  - 10.5281/zenodo.23900582
+UR  - https://doi.org/10.5281/zenodo.23900582
+KW  - Entomology
+KW  - Paper
+N1  - Catalog row 233; docs: papers/2026_BlakeanEntomology/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - States Change: Blakean Federalism and composition without capture
+T2  - Zenodo
+DO  - 10.5281/zenodo.23900616
+UR  - https://doi.org/10.5281/zenodo.23900616
+KW  - Art & Synergetics
+KW  - Paper
+N1  - Catalog row 234; docs: papers/2026_StatesChange/
 ER  -

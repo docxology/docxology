@@ -34,6 +34,14 @@ def _latest_report(pattern: str, _fallback: str) -> str:
         ) from None
 
 
+def _blake_metadata_source() -> str:
+    """Use the pathway review's explicit primary-metadata selection."""
+    review = json.loads(
+        (REPO_ROOT / "data/blake-review.json").read_text(encoding="utf-8")
+    )
+    return review["metadata_source"]
+
+
 def _latest_subdir_manifest(prefix: str, fallback: str) -> str:
     try:
         latest = latest_source_subdir_file(prefix, "manifest.json")
@@ -86,7 +94,7 @@ ARTIFACTS = [
             "data/blake-review.json",
             "papers/*/full_text.md",
             "papers/*/metadata.json",
-            "reports/publication_discovery_2026-10-22.json",
+            _blake_metadata_source(),
         ],
         "command": "uv run python code/orchestrators/build_blake_index.py",
     },

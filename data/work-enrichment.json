@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-31T23:33:23Z",
+  "generated_at": "2026-11-05T02:00:09Z",
   "source": "papers/paper_metadata.json, papers/*/metadata.json, README.md and SKILL.md",
-  "count": 228,
+  "count": 230,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -6698,14 +6698,8 @@
     },
     "Friedman2026MappingWilliamBlakeS179": {
       "citation_key": "Friedman2026MappingWilliamBlakeS179",
-      "source_revision_review": {
-        "reviewed_at": "2026-10-19",
-        "repository": "docxology/blake",
-        "commit": "0e06527a4be239678c746d25e410d467cbad5c18",
-        "document": "docs/publication-consistency-review.md",
-        "summary": "The corrected manuscript derives saved-text and embedding counts from identified membership and reports missing, filtered and excluded works. Publication generation now rejects inconsistent coverage or implicit modality flags. The original historical run membership is unavailable; no replacement corpus count is asserted."
-      },
-      "abstract": "A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source code and project-authored aggregate analytics from provider-supplied source materials. This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the open-source software release bundle. The MIT license covers project code and project-authored outputs only; provider-supplied Blake Archive TEI, transcriptions, images, and fallback source texts are excluded and remain under their source-provider terms.",
+      "source_revision_review": null,
+      "abstract": "William Blake's works survive across editions, copy records, image archives, museum catalogues, transcriptions, and finding aids. Computational coverage is difficult to assess without explicit units, source authority, and evidence boundaries. We present *blake*, a 7-phase pipeline that connects a 104-entry work-level target ledger with retained source records, local analysis, provenance, recoverability checks, and generated publication artifacts.\n\nThe saved offline run analyzes 727 local source/copy records. Its 6109 image associations reference 5975 distinct files. It represents 69 ledger targets (66.3%) and fully satisfies the declared evidence profile for 45 targets (43.3%). The text-bearing subset has 540 records and 682407 tokenizer-defined words. These exploratory text results include retained transcriptions with unverified authorship; they are not a Blake-authored language census. The top-level analysis ledger records 727/727 records analyzed and 0 top-level errors. Nested sub-analysis limitations are counted separately.\n\nLocal recovery preserves 8481 inventoried files and 5975/6003 discovered image identifiers, leaving 28 unresolved. Checksums and a corruption-detection restore drill establish recoverability of the captured inventory, not completeness of Blake's oeuvre. Quantitative prose, tables, and figures derive from saved artifacts. Public releases contain project-authored software, manuscript sources, aggregate evidence, and checksums; provider texts, XML, images, private indexes, backups, and source-image mosaics remain local. The contribution is an auditable corpus-governance and preservation method with explicit scholarly and distribution limits.\n\nThe implementation separates corpus custody from application policy. Portable source snapshots and explicit schema conversion preserve source identities and roles, while distinct retrieval profiles expose normalized-token, literal-casefold and regex contracts. Shared counting, hierarchy and evidence-admission methods support application papers without embedding their vocabularies or interpretations. Current source-derived diagrams identify those interfaces separately from the historical analytical producer.\n\nThis deposit pairs the 94-page manuscript edition 0.5.0 with Blake software release 0.7.0. Generic half-open interval methods preserve occupied support, multiplicity and overlapping record pairs while applications retain source grouping and domain judgments. Entomology and Federalism are independent applications, linked as related research objects rather than runtime dependencies.",
       "keywords": [
         "William Blake",
         "digital humanities",
@@ -6714,18 +6708,16 @@
         "rights-bounded release"
       ],
       "findings": [
-        "The saved run represents 102 of 104 ledger targets (98.1%) but fully meets the required text/image evidence profile for only 90 (86.5%); 12 are partial and 2 missing.",
-        "The text-bearing subset contains 156 works and 216878 words, and joint text-image diagnostics are available for 33 works.",
-        "The ontology module produced a work-theme graph of 356 nodes and 297 edges, including 16 theme nodes.",
-        "The local analysis ledger reports all 340 works analyzed with 0 recorded analysis errors.",
-        "The author frames the contribution as an auditable corpus-governance method, not a completed or exhaustive analysis of Blake's works."
+        "The saved run contains 727 local source/copy records and represents 69 of 104 work-level targets (66.3%); 45 targets (43.3%) fully meet the declared evidence profile.",
+        "The text subset contains 540 records and 682407 tokenizer-defined words, including retained transcriptions with unverified authorship.",
+        "Recovery preserves 8481 inventoried files and 5975 of 6003 discovered image identifiers, with 28 unresolved.",
+        "The text counts include unverified authorship and do not establish a census of Blake-authored language.",
+        "Image association counts do not establish an independent-image census or museum-wide completeness."
       ],
       "methods": [
-        "7-phase DAG pipeline (blake) from discovery to reports — The corpus is built by a directed pipeline of discovery, acquisition, metadata, analysis, visualizations, export, and reports, whose JSON artifacts also populate the manuscript.",
-        "Versioned canonical target ledger of 104 work-level Blake targets — A ledger derived from Blake bibliographies, editions, Archive identifiers, and visual catalogues serves as the denominator for coverage claims.",
-        "Tiered source registry with the William Blake Archive as primary authority — The registry holds the Blake Archive, Project Gutenberg, and Internet Archive, with the Archive given priority when sources disagree and others used as fallback or corroboration.",
-        "Descriptive text metrics: tokenization, type-token ratio, lexical sentiment — Each text-bearing work is tokenized to compute word counts, sentiment, vocabulary richness, and themes, treated as descriptors rather than literary judgments.",
-        "TF-IDF vectors with deterministic PCA/LSA projection over 162 works — A 120-term TF-IDF vocabulary is built across text-bearing works and projected onto PCA/LSA axes as a reading instrument over local evidence."
+        "Target-ledgered provenance pipeline — Connect the 104-entry work-level ledger to source/copy evidence, analysis, recoverability and publication controls through seven phases.",
+        "Separated custody and retrieval policy — Retain source identities and roles while exposing distinct normalized-token, literal-casefold and regex retrieval contracts.",
+        "Inventory-bounded recoverability — Use checksums and a restore drill to assess the captured inventory rather than completeness of the oeuvre."
       ],
       "concepts": [],
       "sources": {
@@ -6738,8 +6730,7 @@
       "abstract_provenance": {},
       "summary_provenance": {
         "source": "full_text.md",
-        "date": "2026-10-01",
-        "work_kind": "software/methods"
+        "date": "2026-11-05"
       }
     },
     "Friedman2026SortitionUpstreamNTQR180": {
@@ -8756,25 +8747,25 @@
     "Friedman2026ObserversWhoReadTheir230": {
       "citation_key": "Friedman2026ObserversWhoReadTheir230",
       "source_revision_review": null,
-      "abstract": "Observer Patch Holography (OPH) proposes that physics is what bounded observers can establish together: finite patches compare records on shared boundaries, repair disagreements, and treat as objective whatever survives every comparison. The universe, on this view, is a timeless self-referential structure whose observers recover its specification from their records and realize it, so that it reads itself into existence. Nothing lies outside to impose premises, so the recovered specification owes no a-priori justification; it has to run and reproduce what observers measure. That specification is a candidate, an executable observer: a twelve-port carrier, a native repair law, retained records and record-controlled feedback, joined in one interacting quantum process of electric flux, charged matter and a scalar field whose feedback response is certified nonzero in the infinite-occupation limit. Observers whose regions overlap on one carrier share a single complete law of fields, local event clocks and feedback, and on a refining spherical screen one repair history defines a common continuum operator for Gaussian fields, their decay and finite-speed waves. On a declared radial product over that screen, every finite menu of observer readouts admits, to any tolerance, one smooth static (1 + 3)-dimensional Lorentzian effective field theory. Finite theorems turn the specification’s readouts into familiar structure: schedule-independent public records, the Born rule and Tsirelson bound on completed records, a carrier whose slow response is exactly three-dimensional, the Standard Model gauge Lie algebra with an anomaly-free generation, a source-derived (1 + 3) causal precursor with proper-time ratios from record counts, and the Einstein equation from a realized null balance. We state the acceptance criteria of the construction, which premises it discharges, which it takes as declared inputs, and the frozen tests that can reject its branches.",
+      "abstract": "The authors propose Observer Patch Holography as a self-referential account in which observers recover and realize their world's rules. Finite comparisons and repairs establish shared records within the model. The abstract reports a finite consensus theorem, a three-direction slow response for a specified twelve-port carrier, and conditional links to gauge structure, quantum measurements, interacting finite energy levels, field theory and gravitational response. These results depend on stated mathematical structures and premises. Identifying the construction with the physical universe still requires a common interacting chiral 3+1-dimensional limit, the observed particle spectrum, responsive geometry and independent empirical agreement. The Introduction also distinguishes mathematical consistency from physical existence. This is a curated summary of the r2061 abstract and Introduction, not an independent verification of the paper's mathematics or physics.",
       "keywords": [
         "foundations of physics",
         "Observer Patch Holography",
-        "observer consensus",
-        "executable observer",
+        "finite consensus",
         "self-reference",
         "quantum records",
         "gauge structure",
-        "Einstein field equation"
+        "particle physics",
+        "Einstein dynamics"
       ],
       "findings": [
-        "The authors define objective facts operationally through records that survive authorized observer comparisons; this is a proposed foundation rather than an empirical confirmation (pp. 1-2).",
-        "The abstract reports conditional finite constructions for quantum records, gauge structure and effective spacetime, with declared inputs and rejection criteria (p. 1).",
-        "The manuscript explicitly states that its finite constructions do not establish physical realization or select a unique universe (p. 2)."
+        "The paper presents finite consensus and selected mathematical constructions within its proposed observer framework; catalog intake does not independently verify those results (r2061 abstract).",
+        "The authors distinguish a consistent mathematical construction from evidence that the construction physically exists (r2061 Introduction).",
+        "Identification with our universe remains conditional on an interacting chiral 3+1-dimensional limit, the observed particle spectrum, responsive geometry and independent empirical agreement (r2061 abstract)."
       ],
       "methods": [
-        "Finite observer patches and protected-record repair — The manuscript constructs local patches that compare shared-boundary records and accept repairs preserving protected data (pp. 1-2).",
-        "Executable observer specification — The authors join a twelve-port carrier, native repair, retained records and record-controlled feedback in a candidate quantum process (p. 1)."
+        "Finite consensus through comparisons and repair — The authors model finite observers comparing overlapping records and repairing disagreements; the abstract reports a canonical consensus theorem (r2061 abstract).",
+        "Conditional reconstruction from specified finite structures — The paper relates a twelve-port carrier, supplied quantum structures and a specified finite source to gauge, measurement, field and geometric-response statements under declared premises (r2061 abstract and Introduction)."
       ],
       "concepts": [],
       "sources": {
@@ -8785,7 +8776,11 @@
       },
       "source": "papers/paper_metadata.json",
       "abstract_provenance": {},
-      "summary_provenance": {}
+      "summary_provenance": {
+        "source": "https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex",
+        "date": "2026-11-04",
+        "work_kind": "preprint"
+      }
     },
     "Friedman2026ActiveInferenceLanguageModel231": {
       "citation_key": "Friedman2026ActiveInferenceLanguageModel231",
@@ -8856,6 +8851,70 @@
       "source": "papers/paper_metadata.json",
       "abstract_provenance": {},
       "summary_provenance": {}
+    },
+    "Friedman2026BlakeanEntomologySmallLives233": {
+      "citation_key": "Friedman2026BlakeanEntomologySmallLives233",
+      "source_revision_review": null,
+      "abstract": "How do Blake's small lives make another being's needs matter? This article argues that provision, feeding and aggregation give different forms to that question: help can enable another life, appetite can use it, and a collective body can redistribute its powers. Copy-specific readings of four short poems, nine selected historical scans and bounded prophetic and prose passages test this account against symbolic, spiritual and human-centered alternatives. The emmet's offered route, the fly's reciprocal likeness and the Worm/infant comparison become visual arguments in which the complete impression remains beside the exact words, a rival reading and a limit on biological identification. A reproducible concordance supplies breadth without turning retrieval into a bestiary: 102 categories yield 36,039 category-source-span candidates in 2,067 captured units; 2,498 belong to 199 identified Blake-primary reading units. Within that scope, 82 name-family categories supply 1,239 candidates. Pooled and equal nonempty-group compositions differ by total variation 0.222387 across 26 positive groups. Source-role contrasts, finite proximity experiments and recorded reading windows expose dependence on particular inputs. The contextual ledger contains 47 authored decisions and leaves 35,992 candidates unreviewed. These measures describe a search and its selective examination, not animal prevalence or complete-oeuvre coverage. Baine's biological-symbolic scholarship, accessed here through a contemporary review, makes contextual variability a continuing challenge. The argument locates ethical force in particular acts of hearing, sustaining, injuring and joining; neither a shared name nor a modern lineage determines that force.",
+      "keywords": [
+        "William Blake",
+        "digital humanities",
+        "entomology",
+        "source provenance"
+      ],
+      "findings": [
+        "The contextual ledger contains 47 authored decisions; 35,992 candidates remain unreviewed.",
+        "The numerical retrieval scope does not establish animal prevalence or complete-oeuvre coverage."
+      ],
+      "methods": [
+        "Copy-specific close reading — Read poems, selected historical scans and bounded prophetic/prose passages while retaining rival interpretations and biological-identification limits.",
+        "Reproducible concordance with contextual review — Use a broad concordance as a retrieval surface and distinguish candidates from individually adjudicated readings."
+      ],
+      "concepts": [],
+      "sources": {
+        "abstract": "papers/paper_metadata.json",
+        "keywords": "papers/paper_metadata.json",
+        "methods": "papers/2026_BlakeanEntomology/metadata.json",
+        "findings": "papers/2026_BlakeanEntomology/metadata.json"
+      },
+      "source": "papers/paper_metadata.json",
+      "abstract_provenance": {},
+      "summary_provenance": {
+        "source": "full_text.md",
+        "date": "2026-11-05"
+      }
+    },
+    "Friedman2026StatesChangeBlakeanFederalism234": {
+      "citation_key": "Friedman2026StatesChangeBlakeanFederalism234",
+      "source_revision_review": null,
+      "abstract": "How can a federation sustain several nations without claiming the whole persons it governs? This article develops *composition without capture* through Blake's distinction between enduring persons and changing states, his accounts of national life, and the coercion that can accompany creative system-making. Close readings of *Milton*, *Jerusalem* and the Last Judgment prose ask who can create, interpret, contest and revise a common form. The institutional construction distinguishes affiliation, poetic interpretation and competence: shared histories and state readings do not themselves authorize an institution to impose a particular decision. A formal countermodel makes that gap explicit. Five hypothetical Xeno-California conflicts then test ten alternatives against fifteen stipulated safeguards. Their 40,960 intervention selections yield 31 distinct within-case records, exposing the difference between selecting a repair and changing a decision. Person-specific comparisons distinguish nested requirements from incomparable tradeoffs. An atlas of 21,454 timing configurations separates feasible filing, uncovered waiting and two consequence duties; eight pressure cases retain material support, reprisal, reviewer control and disputed jurisdiction beyond those interval calculations. These are constructed analyses, not observations of functioning institutions or a political program attributed to Blake. A separate corpus inquiry compares specified word forms across 199 primary extracts and 33 recorded source families, keeping copy repetition, weighting and source deletion visible. The resulting account ties shared rule to continuing provision and effective powers of challenge. A common world remains contestable when people can dispute both an act and its account of who they are while retaining the means to live and participate.",
+      "keywords": [
+        "William Blake",
+        "digital humanities",
+        "federalism",
+        "source provenance"
+      ],
+      "findings": [
+        "Ten alternatives are examined against fifteen stipulated safeguards in five hypothetical conflicts.",
+        "The constructed analyses do not describe functioning institutions or establish a political program attributed to Blake."
+      ],
+      "methods": [
+        "Close reading and institutional distinctions — Separate affiliation, poetic interpretation and institutional competence; retain powers to contest and revise common forms.",
+        "Constructed institutional stress cases — Study stipulated safeguards and timing constraints in hypothetical conflicts; do not treat these as field observations."
+      ],
+      "concepts": [],
+      "sources": {
+        "abstract": "papers/paper_metadata.json",
+        "keywords": "papers/paper_metadata.json",
+        "methods": "papers/2026_StatesChange/metadata.json",
+        "findings": "papers/2026_StatesChange/metadata.json"
+      },
+      "source": "papers/paper_metadata.json",
+      "abstract_provenance": {},
+      "summary_provenance": {
+        "source": "full_text.md",
+        "date": "2026-11-05"
+      }
     }
   }
 }

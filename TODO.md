@@ -8,7 +8,7 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-11-01; only unfinished work and recurring checks remain.
+- Last reviewed: 2026-11-04; only unfinished work and recurring checks remain.
   Completed implementation and source-review history lives in CHANGELOG.md and
   the linked dated reports. Effort estimates below are separate from priority.
 
@@ -66,7 +66,7 @@ Recurring checks below are operating obligations, not unfinished feature work.
   primary-repository promotion requires an individual source-backed decision.
   Review the current classification queue rather than relying on historical
   queue counts.
-- Open work: none. The 2026-10-31 refresh queued four new primary repositories
+- Open work: none from the reviewed November 4 intake. The new civic/audit repositories, two Blake application repositories and distinct PROJECT BOND packages are catalogued; current fork and historical-reference decisions remain explicit in the dated software review. The earlier 2026-10-31 refresh queued four new primary repositories
   (`rikishi`, `region-intel`, `davis-ca-intel`, and AII
   `active_inference_battleship`) and the fork `specification`; all were
   individually reviewed on 2026-11-01 and the four primaries were promoted
@@ -83,7 +83,8 @@ Recurring checks below are operating obligations, not unfinished feature work.
   restrictions permit; repeat source refreshes on their declared triggers.
   Refresh Scholar only after a direct authenticated observation. A live Flickr
   refresh needs its approved API-key workflow.
-- Latest reviewed refresh (2026-11-01): the 2026-10-31 public-source snapshot
+- Latest reviewed refresh (2026-11-04, reports dated 2026-11-05 UTC): the fresh 21-check snapshot, paginated source inventory, complete public GitHub inventory and individually reviewed GitHub/Zenodo candidates are recorded in the current source review. ResearchGate, SciProfiles and PhilPeople remain access-limited. Scholar metrics retain the direct authenticated 2026-11-01 observation; this pass does not claim a new Scholar observation.
+- Previous reviewed refresh (2026-11-01): the 2026-10-31 public-source snapshot
   and complete GitHub inventory are paired with the 2026-11-01 GitHub/Zenodo
   report and individual repository-promotion decisions. The retained paginated
   source inventory is dated 2026-10-23. The

@@ -1,0 +1,153 @@
+{
+  "title": "States Change: Blakean Federalism and composition without capture",
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.23900616",
+  "doi_url": "https://doi.org/10.5281/zenodo.23900616",
+  "zenodo_record": "https://zenodo.org/records/23900616",
+  "record_id": "23900617",
+  "publication_date": "2026-11-03",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "How can a federation sustain several nations without claiming the whole persons it governs? This article develops *composition without capture* through Blake's distinction between enduring persons and changing states, his accounts of national life, and the coercion that can accompany creative system-making. Close readings of *Milton*, *Jerusalem* and the Last Judgment prose ask who can create, interpret, contest and revise a common form. The institutional construction distinguishes affiliation, poetic interpretation and competence: shared histories and state readings do not themselves authorize an institution to impose a particular decision. A formal countermodel makes that gap explicit. Five hypothetical Xeno-California conflicts then test ten alternatives against fifteen stipulated safeguards. Their 40,960 intervention selections yield 31 distinct within-case records, exposing the difference between selecting a repair and changing a decision. Person-specific comparisons distinguish nested requirements from incomparable tradeoffs. An atlas of 21,454 timing configurations separates feasible filing, uncovered waiting and two consequence duties; eight pressure cases retain material support, reprisal, reviewer control and disputed jurisdiction beyond those interval calculations. These are constructed analyses, not observations of functioning institutions or a political program attributed to Blake. A separate corpus inquiry compares specified word forms across 199 primary extracts and 33 recorded source families, keeping copy repetition, weighting and source deletion visible. The resulting account ties shared rule to continuing provision and effective powers of challenge. A common world remains contestable when people can dispute both an act and its account of who they are while retaining the means to live and participate.",
+  "keywords": [
+    "William Blake",
+    "digital humanities",
+    "federalism",
+    "source provenance"
+  ],
+  "files": [
+    {
+      "name": "Blakean_Federalism-1.0.0-rendering-inputs.zip",
+      "size_bytes": 13695829,
+      "checksum": "md5:a1a19fe11e3b397dd31f6b26de951780",
+      "download_url": "https://zenodo.org/api/records/23900617/files/Blakean_Federalism-1.0.0-rendering-inputs.zip/content"
+    },
+    {
+      "name": "Blakean_Federalism.pdf",
+      "size_bytes": 11412409,
+      "checksum": "md5:a572480e78d588e5908c2faf3d7c62c3",
+      "download_url": "https://zenodo.org/api/records/23900617/files/Blakean_Federalism.pdf/content"
+    },
+    {
+      "name": "blakean_federalism-1.0.0.tar.gz",
+      "size_bytes": 2370500,
+      "checksum": "md5:a823d2bbd6f484990668dbf9d88e43f4",
+      "download_url": "https://zenodo.org/api/records/23900617/files/blakean_federalism-1.0.0.tar.gz/content"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size_bytes": 660,
+      "checksum": "md5:1ec1ce066fe05967f56d6a2a80a70b42",
+      "download_url": "https://zenodo.org/api/records/23900617/files/SHA256SUMS/content"
+    },
+    {
+      "name": "FONT-NOTICES.zip",
+      "size_bytes": 15133,
+      "checksum": "md5:2aacfcdf5e32b15646462aff49583475",
+      "download_url": "https://zenodo.org/api/records/23900617/files/FONT-NOTICES.zip/content"
+    },
+    {
+      "name": "blakean_federalism-1.0.0-py3-none-any.whl",
+      "size_bytes": 902609,
+      "checksum": "md5:9ba9db4cbdc77deee062dde2d66bbf87",
+      "download_url": "https://zenodo.org/api/records/23900617/files/blakean_federalism-1.0.0-py3-none-any.whl/content"
+    },
+    {
+      "name": "release-manifest.json",
+      "size_bytes": 2234,
+      "checksum": "md5:69086b8d6f893d82d1205e6eea07af49",
+      "download_url": "https://zenodo.org/api/records/23900617/files/release-manifest.json/content"
+    },
+    {
+      "name": "source-map.json",
+      "size_bytes": 53380,
+      "checksum": "md5:bf7b58c0d3759488f6baacbd0aea2de5",
+      "download_url": "https://zenodo.org/api/records/23900617/files/source-map.json/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/Blakean_Federalism"
+    }
+  ],
+  "github_repo": "docxology/Blakean_Federalism",
+  "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v1.0.0",
+  "release_tag": "v1.0.0",
+  "release_name": "Blakean_Federalism v1.0.0",
+  "pdf_sha256": "14be777acc438a12b0b0077fe26aa0d0c57e7d8505274dfa30c3c1f05e809c52",
+  "pairing_confidence": "needs_review",
+  "pairing_evidence": [
+    "github_repo_self_linked"
+  ],
+  "checked_at": "2026-11-05T01:42:21Z",
+  "domain": "🎨",
+  "artifact_doi": "10.5281/zenodo.23900617",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.23900617",
+  "remote_primary_pdf": {
+    "name": "Blakean_Federalism.pdf",
+    "url": "https://zenodo.org/api/records/23900617/files/Blakean_Federalism.pdf/content",
+    "version": "1.0.0",
+    "record_id": "23900617",
+    "bytes": 11412409,
+    "sha256": "14be777acc438a12b0b0077fe26aa0d0c57e7d8505274dfa30c3c1f05e809c52"
+  },
+  "pages": 76,
+  "manual_pair_review": {
+    "decision": "accept",
+    "reviewed_by": "Codex public-source curation",
+    "reviewed_at": "2026-11-05T01:42:21.179059+00:00",
+    "source_report": "reports/publication_intake_2026-11-05.json",
+    "record_id": "23900617",
+    "release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v1.0.0"
+  },
+  "related_papers": [
+    "2026_BlakeanEntomology",
+    "2026_MappingWilliamBlake"
+  ],
+  "related_software": [
+    "docxology/Blakean_Federalism"
+  ],
+  "rights_note": "Retain the source deposit and provider-specific terms. Public availability does not make all included materials open-licensed.",
+  "version_context": {
+    "manuscript": "1.0.0",
+    "software": "1.0.0",
+    "historical_analytical_producer": null
+  },
+  "methods": [
+    {
+      "name": "Close reading and institutional distinctions",
+      "description": "Separate affiliation, poetic interpretation and institutional competence; retain powers to contest and revise common forms.",
+      "evidence": "composition without capture"
+    },
+    {
+      "name": "Constructed institutional stress cases",
+      "description": "Study stipulated safeguards and timing constraints in hypothetical conflicts; do not treat these as field observations.",
+      "evidence": "Five hypothetical Xeno-California conflicts"
+    }
+  ],
+  "key_findings": [
+    "Ten alternatives are examined against fifteen stipulated safeguards in five hypothetical conflicts.",
+    "The constructed analyses do not describe functioning institutions or establish a political program attributed to Blake."
+  ],
+  "key_findings_evidence": [
+    "ten alternatives against fifteen stipulated safeguards",
+    "not observations of functioning institutions"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-11-05",
+    "method": "Curated summary matched to the verified current-edition extraction; each recorded evidence span checked after whitespace/ligature normalization.",
+    "notes": "Metadata/source text review; no independent computational reproduction or specialist visual review."
+  }
+}

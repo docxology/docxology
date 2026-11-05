@@ -1018,11 +1018,12 @@
       "full_name": "docxology/FluSight-forecast-hub",
       "reason": "fork_not_curated",
       "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-10-06",
+      "reviewed_at": "2026-11-04",
       "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork created 2026-09-28 with no description with no catalog role; excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1393276879,
-      "github_node_id": "R_kgDOUwu3zw"
+      "note": "Current public inventory identifies an archived fork created 2026-11-02 under this spelling, with immutable GitHub ID 1443301258. Apply the standing policy to this new identity; the previous acknowledgement covered ID 1393276879 and is retained in the dated review evidence. No repository deletion or individual principal review is asserted.",
+      "github_id": 1443301258,
+      "github_node_id": "R_kgDOVgcHig",
+      "source_url": "https://github.com/docxology/FluSight-forecast-hub"
     },
     {
       "full_name": "docxology/covid19-forecast-hub",
@@ -1103,6 +1104,39 @@
       "note": "Public fork created 2026-10-26 (Typed Context Protocol community-group draft); excluded by the standing fork policy, not by an individual review.",
       "github_id": 1434805739,
       "github_node_id": "R_kgDOVYVl6w"
+    },
+    {
+      "full_name": "docxology/k",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-04",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Current public inventory identifies this archived repository as a fork. Apply the existing fork policy to the exact GitHub identity; this records policy application, not an individual principal review or a deletion decision.",
+      "github_id": 1442244047,
+      "github_node_id": "R_kgDOVfblzw",
+      "source_url": "https://github.com/docxology/k"
+    },
+    {
+      "full_name": "docxology/keepassxc",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-04",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Current public inventory identifies this repository as a fork. Apply the existing fork policy to the exact GitHub identity; this records policy application, not an individual principal review or a deletion decision.",
+      "github_id": 1446311511,
+      "github_node_id": "R_kgDOVjT2Vw",
+      "source_url": "https://github.com/docxology/keepassxc"
+    },
+    {
+      "full_name": "docxology/tiny-footprint-workstation",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-04",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Current public inventory identifies this repository as a fork. Apply the existing fork policy to the exact GitHub identity; this records policy application, not an individual principal review or a deletion decision.",
+      "github_id": 1444976634,
+      "github_node_id": "R_kgDOViCX-g",
+      "source_url": "https://github.com/docxology/tiny-footprint-workstation"
     }
   ]
 }

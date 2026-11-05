@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-31T23:33:04Z",
+  "generated_at": "2026-11-05T01:59:59Z",
   "source": "data/works.json",
   "summary": {
     "no_paper_folder": 17,
@@ -469,7 +469,7 @@
     {
       "num": 230,
       "citation_key": "Friedman2026ObserversWhoReadTheir230",
-      "title": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+      "title": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
       "type": "Paper",
       "reasons": [
         "no_doi"

@@ -1,0 +1,120 @@
+{
+  "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+  "version": null,
+  "doi": "10.5281/zenodo.21047573",
+  "doi_url": "https://doi.org/10.5281/zenodo.21047573",
+  "zenodo_record": "https://zenodo.org/records/21047573",
+  "record_id": "21047574",
+  "publication_date": "2026-06-29",
+  "resource_type": {
+    "title": "Working paper",
+    "type": "publication",
+    "subtype": "workingpaper"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source code and project-authored aggregate analytics from provider-supplied source materials. This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the open-source software release bundle. The MIT license covers project code and project-authored outputs only; provider-supplied Blake Archive TEI, transcriptions, images, and fallback source texts are excluded and remain under their source-provider terms.",
+  "keywords": [
+    "William Blake",
+    "digital humanities",
+    "corpus acquisition",
+    "source provenance",
+    "rights-bounded release"
+  ],
+  "files": [
+    {
+      "name": "blake_working_paper.pdf",
+      "size_bytes": 11255591,
+      "checksum": "md5:ec897f65c5a85fb7e4393f8e67e8a2f3",
+      "download_url": "https://zenodo.org/api/records/21047574/files/blake_working_paper.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/blake"
+    }
+  ],
+  "github_repo": "docxology/blake",
+  "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.1.0",
+  "release_tag": "v0.1.0",
+  "release_name": "blake v0.1.0 — reproducible, rights-bounded Blake corpus workflow",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked"
+  ],
+  "checked_at": "2026-09-24T18:29:57Z",
+  "domain": "Computational",
+  "type": "Paper",
+  "methods": [
+    {
+      "name": "7-phase DAG pipeline (blake) from discovery to reports",
+      "description": "The corpus is built by a directed pipeline of discovery, acquisition, metadata, analysis, visualizations, export, and reports, whose JSON artifacts also populate the manuscript.",
+      "evidence": "The blake pipeline is organized as a 7-phase DAG: discovery, acquisition, metadata, analysis, visualizations, export, and reports."
+    },
+    {
+      "name": "Versioned canonical target ledger of 104 work-level Blake targets",
+      "description": "A ledger derived from Blake bibliographies, editions, Archive identifiers, and visual catalogues serves as the denominator for coverage claims.",
+      "evidence": "The completeness authority is the target ledger under the canonical profile, version 2026-06-22, with 104 work-level entries."
+    },
+    {
+      "name": "Tiered source registry with the William Blake Archive as primary authority",
+      "description": "The registry holds the Blake Archive, Project Gutenberg, and Internet Archive, with the Archive given priority when sources disagree and others used as fallback or corroboration.",
+      "evidence": "The William Blake Archive is treated as the primary authority when sources disagree"
+    },
+    {
+      "name": "Descriptive text metrics: tokenization, type-token ratio, lexical sentiment",
+      "description": "Each text-bearing work is tokenized to compute word counts, sentiment, vocabulary richness, and themes, treated as descriptors rather than literary judgments.",
+      "evidence": "The text module tokenizes each text-bearing work, computes word and unique-word counts, estimates lexical sentiment, derives vocabulary richness as type-token ratio"
+    },
+    {
+      "name": "TF-IDF vectors with deterministic PCA/LSA projection over 162 works",
+      "description": "A 120-term TF-IDF vocabulary is built across text-bearing works and projected onto PCA/LSA axes as a reading instrument over local evidence.",
+      "evidence": "constructs a TF-IDF vocabulary of 120 retained terms across 162 text-bearing works, normalizes each work vector, and projects the centered matrix onto deterministic PCA/LSA axes."
+    }
+  ],
+  "key_findings": [
+    "The saved run represents 102 of 104 ledger targets (98.1%) but fully meets the required text/image evidence profile for only 90 (86.5%); 12 are partial and 2 missing.",
+    "The text-bearing subset contains 156 works and 216878 words, and joint text-image diagnostics are available for 33 works.",
+    "The ontology module produced a work-theme graph of 356 nodes and 297 edges, including 16 theme nodes.",
+    "The local analysis ledger reports all 340 works analyzed with 0 recorded analysis errors.",
+    "The author frames the contribution as an auditable corpus-governance method, not a completed or exhaustive analysis of Blake's works."
+  ],
+  "related_papers": [
+    "2023_NSFReporting",
+    "2023_NaturalAIBased",
+    "2025_AuBI"
+  ],
+  "related_software": [
+    "docxology/blake"
+  ],
+  "key_findings_evidence": [
+    "It represents 102 of 104 ledger targets (98.1%) and fully satisfies the required text/image evidence profile for 90 targets (86.5%); 12 targets remain partial and 2 remain missing.",
+    "The text-bearing subset contains 156 works and 216878 words.",
+    "the manuscript reports the graph-level summary of 356 nodes and 297 edges, including 16 theme nodes.",
+    "The local analysis ledger reports 340/340 works analyzed with 0 recorded analysis errors.",
+    "The contribution is an auditable corpus-governance method, not a claim to have completed or exhaustively analyzed Blake’s works."
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-10-01",
+    "work_kind": "software/methods",
+    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+    "notes": "Computational humanities pipeline paper; counts are descriptive outputs of one saved run.",
+    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "source_revision_review": {
+    "reviewed_at": "2026-10-19",
+    "repository": "docxology/blake",
+    "commit": "0e06527a4be239678c746d25e410d467cbad5c18",
+    "document": "docs/publication-consistency-review.md",
+    "summary": "The corrected manuscript derives saved-text and embedding counts from identified membership and reports missing, filtered and excluded works. Publication generation now rejects inconsistent coverage or implicit modality flags. The original historical run membership is unavailable; no replacement corpus count is asserted."
+  }
+}

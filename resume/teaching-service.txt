@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-11-02T01:42:40Z
+Generated: 2026-11-05T02:01:15Z
 
-Current public metrics: 228 curated works; 172 catalogued software repositories (130 owned + 42 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 245 docxology + 46 AII public repositories (183 primary, 108 forks).
+Current public metrics: 230 curated works; 209 catalogued software repositories (167 owned + 42 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 273 docxology + 46 AII public repositories (215 primary, 104 forks).
 
 SUMMARY
 -------
@@ -100,7 +100,7 @@ AWARDS AND FELLOWSHIPS
   - Campus Community Service Silver Award and Stanley and Jacqueline Schilling Award for Service.
   - Sources: UC Davis: https://www.ucdavis.edu/
 
-WORKS AND PUBLICATIONS (85)
+WORKS AND PUBLICATIONS (86)
 ---------------------------
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
 [006] 2026 | Series | Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions | YouTube | https://www.youtube.com/@danielarifriedman/playlists
@@ -187,6 +187,7 @@ WORKS AND PUBLICATIONS (85)
 [222] 2026 | Paper | The Violet Line: A Consent Ledger of Affected Parties | Zenodo | 10.5281/zenodo.22833487
 [225] 2026 | Paper | Active Inference -- A Synthetic Overview | Zenodo | 10.5281/zenodo.23321280
 [227] 2026 | Paper | Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision | Zenodo | 10.5281/zenodo.23397452
+[233] 2026 | Paper | Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention | Zenodo | 10.5281/zenodo.23900582
 
 SOFTWARE (15)
 -------------
@@ -194,7 +195,7 @@ docxology/AGEINT | HTML | https://github.com/docxology/AGEINT | Agentic Intellig
 docxology/curriculum | HTML | https://github.com/docxology/curriculum | Curriculum development framework for interdisciplinary education in Active Inference, biology, and computational science
 docxology/steganographer | Rust | https://github.com/docxology/steganographer | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 484 tests, GStreamer integration
 docxology/biology_textbook | Python | https://github.com/docxology/biology_textbook | Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI | paper: papers/2026_BiologyTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20286477
-docxology/cognitive_case_diagrams | TeX | https://github.com/docxology/cognitive_case_diagrams | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript · · Zenodo | paper: papers/2026_CognitiveCaseDiagrams/ | zenodo: https://doi.org/10.5281/zenodo.19695259
+docxology/cognitive_case_diagrams | Python | https://github.com/docxology/cognitive_case_diagrams | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript · · Zenodo | paper: papers/2026_CognitiveCaseDiagrams/ | zenodo: https://doi.org/10.5281/zenodo.19695259
 docxology/biol-1 | HTML | https://github.com/docxology/biol-1 | BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 docxology/biol-8 | HTML | https://github.com/docxology/biol-8 | BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 docxology/course | Python | https://github.com/docxology/course | Course materials framework for structured interdisciplinary learning modules

@@ -1923,6 +1923,18 @@
       "url": "https://github.com/docxology/blake_jiang"
     },
     {
+      "id": "software:https://github.com/docxology/blakean_entomology",
+      "kind": "software",
+      "label": "docxology/Blakean_Entomology",
+      "url": "https://github.com/docxology/Blakean_Entomology"
+    },
+    {
+      "id": "software:https://github.com/docxology/blakean_federalism",
+      "kind": "software",
+      "label": "docxology/Blakean_Federalism",
+      "url": "https://github.com/docxology/Blakean_Federalism"
+    },
+    {
       "id": "software:https://github.com/docxology/bond",
       "kind": "software",
       "label": "docxology/bond",
@@ -2161,6 +2173,12 @@
       "kind": "software",
       "label": "docxology/thanks_for_nothing",
       "url": "https://github.com/docxology/thanks_for_nothing"
+    },
+    {
+      "id": "software:https://github.com/floatingpragma/observer-patch-holography",
+      "kind": "software",
+      "label": "FloatingPragma/observer-patch-holography",
+      "url": "https://github.com/FloatingPragma/observer-patch-holography"
     },
     {
       "id": "work:Friedman2015CommentaryPortugueseCryptoJews106",
@@ -3213,6 +3231,13 @@
       "year": 2026
     },
     {
+      "id": "work:Friedman2026BlakeanEntomologySmallLives233",
+      "kind": "work",
+      "label": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+      "url": "/works/Friedman2026BlakeanEntomologySmallLives233.html",
+      "year": 2026
+    },
+    {
       "id": "work:Friedman2026BlueLineStewardshipInstrument221",
       "kind": "work",
       "label": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
@@ -3523,7 +3548,7 @@
     {
       "id": "work:Friedman2026ObserversWhoReadTheir230",
       "kind": "work",
-      "label": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+      "label": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
       "url": "/works/Friedman2026ObserversWhoReadTheir230.html",
       "year": 2026
     },
@@ -3658,6 +3683,13 @@
       "kind": "work",
       "label": "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation",
       "url": "/works/Friedman2026SortitionUpstreamNTQR180.html",
+      "year": 2026
+    },
+    {
+      "id": "work:Friedman2026StatesChangeBlakeanFederalism234",
+      "kind": "work",
+      "label": "States Change: Blakean Federalism and composition without capture",
+      "url": "/works/Friedman2026StatesChangeBlakeanFederalism234.html",
       "year": 2026
     },
     {
@@ -9605,6 +9637,12 @@
       "provenance": "data/work-authors.json"
     },
     {
+      "source": "work:Friedman2026ObserversWhoReadTheir230",
+      "target": "software:https://github.com/floatingpragma/observer-patch-holography",
+      "relation": "Associated software",
+      "provenance": "papers/2026_ObserversReadUniverse/metadata.json"
+    },
+    {
       "source": "work:Friedman2026ActiveInferenceLanguageModel231",
       "target": "domain:computational",
       "relation": "Catalog domain",
@@ -9639,6 +9677,42 @@
       "target": "software:https://github.com/activeinferenceinstitute/active_inference_battleship",
       "relation": "Associated software",
       "provenance": "papers/2026_GNNBasedActive/metadata.json"
+    },
+    {
+      "source": "work:Friedman2026BlakeanEntomologySmallLives233",
+      "target": "domain:entomology",
+      "relation": "Catalog domain",
+      "provenance": "pages/BIBLIOGRAPHY.md"
+    },
+    {
+      "source": "work:Friedman2026BlakeanEntomologySmallLives233",
+      "target": "person:friedman, daniel ari",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman2026BlakeanEntomologySmallLives233",
+      "target": "software:https://github.com/docxology/blakean_entomology",
+      "relation": "Associated software",
+      "provenance": "papers/2026_BlakeanEntomology/metadata.json"
+    },
+    {
+      "source": "work:Friedman2026StatesChangeBlakeanFederalism234",
+      "target": "domain:art & synergetics",
+      "relation": "Catalog domain",
+      "provenance": "pages/BIBLIOGRAPHY.md"
+    },
+    {
+      "source": "work:Friedman2026StatesChangeBlakeanFederalism234",
+      "target": "person:friedman, daniel ari",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman2026StatesChangeBlakeanFederalism234",
+      "target": "software:https://github.com/docxology/blakean_federalism",
+      "relation": "Associated software",
+      "provenance": "papers/2026_StatesChange/metadata.json"
     }
   ]
 }

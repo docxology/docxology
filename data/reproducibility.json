@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T01:06:00Z",
+  "generated_at": "2026-11-05T02:00:46Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -61,17 +61,17 @@
     }
   ],
   "max_score": 6,
-  "work_count": 228,
+  "work_count": 230,
   "signal_totals": {
-    "persistent_id": 212,
-    "public_archive": 170,
-    "open_full_text": 205,
-    "source_documents": 211,
-    "executable_code": 81,
-    "agent_readable": 211
+    "persistent_id": 214,
+    "public_archive": 172,
+    "open_full_text": 207,
+    "source_documents": 213,
+    "executable_code": 83,
+    "agent_readable": 213
   },
   "band_counts": {
-    "independently reproducible": 168,
+    "independently reproducible": 170,
     "independently checkable": 43,
     "citable only": 8,
     "unverified": 9
@@ -83,9 +83,9 @@
     "3": 10,
     "4": 33,
     "5": 92,
-    "6": 76
+    "6": 78
   },
-  "mean_score": 4.781,
+  "mean_score": 4.791,
   "works": [
     {
       "num": 5,
@@ -1682,6 +1682,48 @@
       },
       "repositories": [
         "thanks_for_nothing"
+      ]
+    },
+    {
+      "num": 233,
+      "citation_key": "Friedman2026BlakeanEntomologySmallLives233",
+      "title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+      "year": 2026,
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "Blakean_Entomology"
+      ]
+    },
+    {
+      "num": 234,
+      "citation_key": "Friedman2026StatesChangeBlakeanFederalism234",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "year": 2026,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "Blakean_Federalism"
       ]
     },
     {
@@ -4244,7 +4286,7 @@
     {
       "num": 230,
       "citation_key": "Friedman2026ObserversWhoReadTheir230",
-      "title": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+      "title": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
       "year": 2026,
       "domain_name": "Computational",
       "type": "Paper",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T01:42:40Z",
+  "generated_at": "2026-11-05T02:01:15Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,9 +34,9 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 228,
-    "software_catalogued": 172,
-    "owned_software_catalogued": 130,
+    "works": 230,
+    "software_catalogued": 209,
+    "owned_software_catalogued": 167,
     "aii_software_catalogued": 42,
     "google_scholar": {
       "citations": 835,
@@ -47,13 +47,13 @@
     },
     "docxology_public_repositories_claim": {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 245 public repositories.",
+      "claim": "The docxology GitHub profile has 273 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-10-31.json"
+        "reports/public_source_snapshot_2026-11-05.json"
       ],
-      "checked_at": "2026-10-31T22:54:44.243374+00:00",
+      "checked_at": "2026-11-05T01:25:17.540856+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -65,30 +65,30 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-10-31.json"
+        "reports/public_source_snapshot_2026-11-05.json"
       ],
-      "checked_at": "2026-10-31T22:54:44.243374+00:00",
+      "checked_at": "2026-11-05T01:25:17.540856+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "The public-source snapshot records this account's type as Organization; the repository count is read from /users/ActiveInferenceInstitute, which serves Organization accounts as well as Users. Local software catalog tracks 42 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-10-31T22:54:44Z",
+      "generated_at": "2026-11-05T01:29:19Z",
       "source": "GitHub REST API /users/{owner}/repos",
-      "total": 291,
-      "public": 291,
-      "primary_total": 183,
-      "forks": 108,
-      "docxology": 245,
+      "total": 319,
+      "public": 319,
+      "primary_total": 215,
+      "forks": 104,
+      "docxology": 273,
       "ActiveInferenceInstitute": 46
     }
   },
   "integrity": {
     "schema_version": 1,
     "source_manifest": {
-      "bytes": 736,
-      "sha256": "10fbfbc93c399b4ae6793be2028477bf7ea67c3ad66f566e75167b52f3e9f3f0",
+      "bytes": 737,
+      "sha256": "ae602caca1b808999ad42c4159a8c14d7f5d158d4b219a387b96b640ee94b464",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 187738,
-          "sha256": "d2ec70298d9d1816b600c644b0f402b03c1966f3a72e43f0e331dfa5249ed21c"
+          "bytes": 189261,
+          "sha256": "eff997fae1fab29bf0b57df4f0b706e9048a0ceb4ffb3e6e0b8c0b9880097029"
         },
         {
           "path": "data/software.json",
-          "bytes": 86927,
-          "sha256": "c5f3703cf3fc11b63facfe06dbf4525eff91473c7f3dd8ae382abecec7324245"
+          "bytes": 104123,
+          "sha256": "aef2043bed99a1e45d1898c6dc6ad5b29a65c42f0d387383ea9945abef11f59e"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 12971,
-          "sha256": "1c52873b989d8405be0d4fcc6b071256d0a05bb02c952dda38ef9b7eda05253c"
+          "sha256": "419f70f9f75d5ca676754c6cb4dbe7cdec18b0d8ebc7856c9c093e8810dea1ea"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 337377,
-          "sha256": "ac444bdc1c958159f6fdad45d3d5d560be26cc71fd4a9b902d2d555799106a27"
+          "bytes": 366494,
+          "sha256": "aeb4824f7cc8a4d9019a1bd759e1433a0a3f688c75c1b1f45760e95f269b300b"
         }
       ]
     },
@@ -7939,7 +7939,7 @@
       "domain": "💻",
       "domain_name": "Computational",
       "type": "Paper",
-      "title": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+      "title": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
       "venue": "PhilPapers (preprint)",
       "url": "https://philpapers.org/rec/MUEFOC",
       "doi": "",
@@ -8013,6 +8013,52 @@
       "authors": [
         "Friedman, Daniel Ari"
       ]
+    },
+    {
+      "num": 233,
+      "citation_key": "Friedman2026BlakeanEntomologySmallLives233",
+      "year": 2026,
+      "domain": "🐜",
+      "domain_name": "Entomology",
+      "type": "Paper",
+      "title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.23900582",
+      "doi": "10.5281/zenodo.23900582",
+      "docs_path": "papers/2026_BlakeanEntomology/",
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_BlakeanEntomology/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 234,
+      "citation_key": "Friedman2026StatesChangeBlakeanFederalism234",
+      "year": 2026,
+      "domain": "🎨",
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.23900616",
+      "doi": "10.5281/zenodo.23900616",
+      "docs_path": "papers/2026_StatesChange/",
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_StatesChange/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     }
   ],
   "software": [
@@ -8021,10 +8067,10 @@
       "url": "https://github.com/docxology/template",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo",
+      "description": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Earlier software v3.3.0 · Zenodo · · Software version 5.0.0 artifact",
       "language": "Python",
-      "stars": 20,
-      "updated_or_year": "2026-10",
+      "stars": 23,
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_AutopoieticProjectGeneration/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20584820"
     },
@@ -8036,7 +8082,7 @@
       "description": "Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization",
       "language": "Python",
       "stars": 16,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8047,8 +8093,8 @@
       "catalog_section": "docxology",
       "description": "AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration · · Citation DOI",
       "language": "Python",
-      "stars": 11,
-      "updated_or_year": "2026-10",
+      "stars": 10,
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_Codomyrmex/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21750800"
     },
@@ -8060,7 +8106,7 @@
       "description": "Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond",
       "language": "Python",
       "stars": 8,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2021_ActiveInferants/",
       "zenodo_url": ""
     },
@@ -8071,8 +8117,8 @@
       "catalog_section": "docxology",
       "description": "Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world",
       "language": "JavaScript",
-      "stars": 7,
-      "updated_or_year": "2026-09",
+      "stars": 8,
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8082,9 +8128,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes · · Earlier archive · Citation DOI",
-      "language": "Python",
-      "stars": 7,
-      "updated_or_year": "2026-10",
+      "language": "HTML",
+      "stars": 9,
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_CogSecSkills/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21513316"
     },
@@ -8096,7 +8142,7 @@
       "description": "Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network",
       "language": "TypeScript",
       "stars": 4,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8108,7 +8154,7 @@
       "description": "Hybrid neuro-symbolic AI combining fractal symbolic representations with probabilistic neural models for enhanced reasoning; includes Unipixel fractal building blocks and PEFF ethical reasoning",
       "language": "Python",
       "stars": 3,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8120,7 +8166,7 @@
       "description": "Repository analysis and offline documentation toolkit; v1.1.0 repairs packaging, configuration and reproducible generation. Release verification used local Git/HTTP fixtures; live organization-wide discovery was not rerun",
       "language": "Python",
       "stars": 3,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8132,7 +8178,7 @@
       "description": "Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy",
       "language": "Python",
       "stars": 3,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2021_ActiveInferants/",
       "zenodo_url": ""
     },
@@ -8144,7 +8190,7 @@
       "description": "Dynamic Markov Blanket Detection (DMBD) — PyTorch-accelerated framework for identifying causal relationships in complex systems; static and temporal modes with cognitive-structure labeling",
       "language": "Python",
       "stars": 3,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-10",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8156,7 +8202,7 @@
       "description": "Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications",
       "language": "Python",
       "stars": 3,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8168,7 +8214,7 @@
       "description": "Analysis and tooling around FORMIS, the world's largest ant-literature database; bibliometric mining and structured index generation",
       "language": "Rich Text Format",
       "stars": 2,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8180,7 +8226,7 @@
       "description": "End-to-end pipeline for ingesting, parsing, and querying the Crescent City, CA municipal code; TypeScript-based legal-text processing",
       "language": "TypeScript",
       "stars": 2,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8192,7 +8238,7 @@
       "description": "Mathematical exposition of Quadray coordinate systems (4-vector tetrahedral coordinates); LaTeX documentation and computation library",
       "language": "TeX",
       "stars": 2,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8204,7 +8250,7 @@
       "description": "Active Inference for, with, and by Generative AI — Python implementations of free-energy-minimizing agents integrated with modern AI tooling",
       "language": "Python",
       "stars": 2,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2020_BehaviorEngineering/",
       "zenodo_url": ""
     },
@@ -8215,8 +8261,8 @@
       "catalog_section": "docxology",
       "description": "Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft · · Citation DOI",
       "language": "HTML",
-      "stars": 2,
-      "updated_or_year": "2026-09",
+      "stars": 4,
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_AGEINT/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20732274"
     },
@@ -8226,9 +8272,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "AutoScientists deterministic multi-agent scientific-discovery coordination harness · · Zenodo",
-      "language": "Python",
+      "language": "HTML",
       "stars": 2,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_DeterministicTestbedSelf/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20533669"
     },
@@ -8240,7 +8286,7 @@
       "description": "Python library for 3D and 4D Quadray/IVM (Isotropic Vector Matrix) geometry — coordinate conversion, volume calculations, and polyhedral operations",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8252,7 +8298,7 @@
       "description": "Active Inference & Agentic Mesh — modular Python infrastructure for building agentic systems using free-energy-minimizing Active Inference principles",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8264,7 +8310,7 @@
       "description": "Curriculum development framework for interdisciplinary education in Active Inference, biology, and computational science",
       "language": "HTML",
       "stars": 1,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8276,7 +8322,7 @@
       "description": "Lean/minimal niche-construction modeling — formal computational representations of ecological niche dynamics",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8288,7 +8334,7 @@
       "description": "Automated Obsidian vault construction from unstructured text — NLP pipelines to generate bidirectionally-linked knowledge graphs",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8300,7 +8346,7 @@
       "description": "QR code-based live protocol system for real-time data exchange and interactive session management",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8312,7 +8358,7 @@
       "description": "UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents",
       "language": "HTML",
       "stars": 1,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8324,7 +8370,7 @@
       "description": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 484 tests, GStreamer integration",
       "language": "Rust",
       "stars": 1,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8336,7 +8382,7 @@
       "description": "Verification-first webcam eye-movement analysis; package v0.5.0 with a separately corrected 2026-10-16 manuscript, without reference-device validation · · Citation DOI · Software archive",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_ITrace/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20614908"
     },
@@ -8348,7 +8394,7 @@
       "description": "Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_BiologyTextbook/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20286477"
     },
@@ -8357,10 +8403,10 @@
       "url": "https://github.com/docxology/enactive_inference_model",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Three-level hierarchical enactive inference model of mental action — focused-attention meditation with expert/novice profiles; reproducible simulations and figures",
+      "description": "Three-level hierarchical enactive inference model of mental action — focused-attention meditation with expert/novice profiles; reproducible simulations and figures · · Reviewed research dependency; GitHub currently marks this public repository as an archived fork",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-04",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2025_Thoughtseeds/",
       "zenodo_url": ""
     },
@@ -8372,7 +8418,7 @@
       "description": "Classic snake game implemented in Python — used for testing multi-agent and reinforcement learning algorithms",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8384,7 +8430,7 @@
       "description": "Golden-ratio OBS Studio broadcast console and FractiSynth transducer — Python reference engine, native `libobs` plugin, and `obspython` bridge driven by fail-closed solar telemetry",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8396,7 +8442,7 @@
       "description": "The Triplicate data-driven large-format newspaper layout engine · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_Triplicate/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20533675"
     },
@@ -8408,7 +8454,7 @@
       "description": "Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_RecoveringLLMPersona/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20498699"
     },
@@ -8420,7 +8466,7 @@
       "description": "Integration workspace aggregating and exercising the coasys (AD4M) agent-centric social-layer repositories",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8432,7 +8478,7 @@
       "description": "Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing · · Citation DOI",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_TemplateMadlib/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20786638"
     },
@@ -8444,7 +8490,7 @@
       "description": "PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8456,7 +8502,7 @@
       "description": "Computational simulation of ant pheromone trail dynamics and stigmergic communication",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8468,7 +8514,7 @@
       "description": "The Ant Stack — layered computational model of collective ant-colony intelligence",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2025_AntStack/",
       "zenodo_url": ""
     },
@@ -8480,7 +8526,7 @@
       "description": "Computational research on insect infrared sensing and olfaction modeling · · Zenodo · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_WhenDoBugs/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20450970"
     },
@@ -8492,7 +8538,7 @@
       "description": "Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_EntoLinguistics/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.19574117"
     },
@@ -8502,9 +8548,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript · · Zenodo",
-      "language": "TeX",
+      "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_CognitiveCaseDiagrams/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.19695259"
     },
@@ -8516,7 +8562,7 @@
       "description": "Active Inference-driven autonomous drone navigation in Microsoft AirSim simulation environment",
       "language": "Julia",
       "stars": 0,
-      "updated_or_year": "2025-04",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8528,7 +8574,7 @@
       "description": "BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content",
       "language": "HTML",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8540,7 +8586,7 @@
       "description": "BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content",
       "language": "HTML",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8552,7 +8598,7 @@
       "description": "Cascadia bioregion modeling and data analysis tools",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8564,7 +8610,7 @@
       "description": "Course materials framework for structured interdisciplinary learning modules",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8576,7 +8622,7 @@
       "description": "Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2025_EvoJump/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.22664675"
     },
@@ -8588,7 +8634,7 @@
       "description": "Lightweight Python tooling for rapid data flicking and processing pipelines",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8597,7 +8643,7 @@
       "url": "https://github.com/docxology/fuller-obsidian",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science",
+      "description": "Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science · Historical public reference: anonymous GitHub returned 404 on 2026-11-04; current contents and visibility are unverified",
       "language": "",
       "stars": 0,
       "updated_or_year": "2025-02",
@@ -8612,7 +8658,7 @@
       "description": "Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8624,7 +8670,7 @@
       "description": "Active Goference — production-ready Go framework for Active Inference autonomous agents; genuine variational inference, free energy minimization, POMDP policy planning via gonum",
       "language": "Go",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8636,7 +8682,7 @@
       "description": "Analysis of HHS (Department of Health and Human Services) open data — policy analytics and public-health data pipelines",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8648,7 +8694,7 @@
       "description": "The Music Never Stopped citation-bound Grateful Dead data compendium · · Zenodo · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_MusicNeverStopped/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20482026"
     },
@@ -8660,7 +8706,7 @@
       "description": "Infrastructure calculator for estimating resource requirements and costs in multi-agent and AI systems",
       "language": "JavaScript",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8672,7 +8718,7 @@
       "description": "Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2025_MarkdownDecisionProcess/",
       "zenodo_url": ""
     },
@@ -8684,7 +8730,7 @@
       "description": "MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2025_MDKV/",
       "zenodo_url": ""
     },
@@ -8694,9 +8740,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Properties, Processes, and Perspectives Inter-Framework (P3IF) — multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security",
-      "language": "Python",
+      "language": "HTML",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2023_P3IF/",
       "zenodo_url": ""
     },
@@ -8708,7 +8754,7 @@
       "description": "Service-layer infrastructure and API tooling for Python-based research applications",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8720,7 +8766,7 @@
       "description": "Modular fillable scaffold for book-length technical works · · Zenodo",
       "language": "HTML",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_TemplateTextbook/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20533125"
     },
@@ -8732,7 +8778,7 @@
       "description": "William Blake, Professor Jiang, and the Architecture of Intelligence — AI-augmented scholarly response to Game Theory #24 with Blake, Jiang, and Active Inference framing",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_BlakeJiang/",
       "zenodo_url": ""
     },
@@ -8744,7 +8790,7 @@
       "description": "Symbolic Synergetics — computer algebra and formal symbolic systems for Buckminster Fuller's synergetics mathematics",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8756,7 +8802,7 @@
       "description": "Transformer architecture explorations — attention mechanisms and architectural variants for Active Inference research",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8765,10 +8811,10 @@
       "url": "https://github.com/docxology/daf-jev",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Modular, composable Python client and decision toolkit for the TypeSafe Jev (System One) API — typed question primitives (noul/choice/score), concurrent batch evaluation, composition patterns, calibration statistics, CLI, and MCP server · Zenodo",
+      "description": "Modular, composable Python client and decision toolkit for the TypeSafe Jev (System One) API — typed question primitives (noul/choice/score), concurrent batch evaluation, composition patterns, calibration statistics, CLI, and MCP server · Zenodo · · Release 2026-11-04",
       "language": "Python",
       "stars": 7,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_JevPractice/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.22816187"
     },
@@ -8780,7 +8826,7 @@
       "description": "GNN-declared categorical and finite-model operational surrogates; v3.0.0 retains source-bound mathematical controls without physical quantum, clinical or practice-efficacy validation · Citation DOI · Software archive",
       "language": "Python",
       "stars": 2,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_RealizingEmptiness/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20834846"
     },
@@ -8792,7 +8838,7 @@
       "description": "Active inference multi-track exemplar releases · Zenodo",
       "language": "Python",
       "stars": 2,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_ActiveInferenceMulti/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20417021"
     },
@@ -8804,7 +8850,7 @@
       "description": "ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation. · Zenodo",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_ENTO/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20396328"
     },
@@ -8816,7 +8862,7 @@
       "description": "Sortition Upstream of NTQR: how panel formation and size shape ground-truth-free evaluation (deterministic synthetic instrument + single-model Gemma postdoctoral-review companion) · Zenodo",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_SortitionUpstreamNTQR/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21083779"
     },
@@ -8825,10 +8871,10 @@
       "url": "https://github.com/docxology/blake",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "William Blake · Zenodo",
+      "description": "Blake source/copy evidence, corpus custody and retrieval methods — manuscript 0.5.0 with software 0.7.0; the saved analytical producer remains 0.2.0rc1 · Citation DOI · Manuscript version 0.5.0 artifact · Software archive",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_MappingWilliamBlake/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21047573"
     },
@@ -8840,7 +8886,7 @@
       "description": "Active Inference Pocket Lab — portable simulation and learning environment for Active Inference experiments",
       "language": "JavaScript",
       "stars": 1,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8852,7 +8898,7 @@
       "description": "Correlating Github activity with Solar activity",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8864,7 +8910,7 @@
       "description": "Data Descriptor Template: schema, file inventory, provenance, and release-readiness contract for dataset papers. Exemplar from the docxology/template research monorepo.",
       "language": "HTML",
       "stars": 1,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8874,9 +8920,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template · Zenodo",
-      "language": "TeX",
+      "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_DomainLanguageSpecifying/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21086548"
     },
@@ -8886,9 +8932,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Private project mirror for archive/template_search_project in docxology/projects.",
-      "language": "TeX",
+      "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -8900,7 +8946,7 @@
       "description": "DigiPPPiP — Digital Partner Pen Play in Parallel: a composable, fully-tested computational companion for remote, semisynchronous, and asynchronous dyadic drawing · · Zenodo",
       "language": "TeX",
       "stars": 1,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_DigiPPPiP/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21815704"
     },
@@ -8912,7 +8958,7 @@
       "description": "Evidence-typed scaffold for whole-colony honeybee simulation · · Zenodo",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_BeeStack/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20420556"
     },
@@ -8924,7 +8970,7 @@
       "description": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments · · Zenodo",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_THALIA/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21763244"
     },
@@ -8936,7 +8982,7 @@
       "description": "Forensic audit of the MillenniumLean Clay-proof package (AIX Global): kernel claims reproduced, none of the six Clay Millennium Problems resolved by the theorem types · Citation DOI",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_MillenniumAudit/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.22243472"
     },
@@ -8948,7 +8994,7 @@
       "description": "Cognitive Integrity Framework (CIF) — formal security architecture for multiagent systems ·",
       "language": "Python",
       "stars": 1,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_CognitiveIntegrity/",
       "zenodo_url": ""
     },
@@ -8958,9 +9004,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "A source-anchored, reproducible field map of entomological law · Zenodo",
-      "language": "TeX",
+      "language": "HTML",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_EntomologicalLaw/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21137276"
     },
@@ -8972,7 +9018,7 @@
       "description": "Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_DuckRabbit/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21419693"
     },
@@ -8984,7 +9030,7 @@
       "description": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference — GNN-via-COGANT model of the AlphaFund Economic World Model · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_AlphaCOGANT/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20976824"
     },
@@ -8996,7 +9042,7 @@
       "description": "DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers. · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_DemoCreate/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20693216"
     },
@@ -9006,9 +9052,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "The Physics Engine for AI Coding Agents.",
-      "language": "",
+      "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9020,7 +9066,7 @@
       "description": "Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_TemplatePitchDeck/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21281509"
     },
@@ -9030,9 +9076,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869) · Zenodo",
-      "language": "TeX",
-      "stars": 0,
-      "updated_or_year": "2026-09",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_AutopoieticProjectGeneration/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21227869"
     },
@@ -9044,7 +9090,7 @@
       "description": "Template autoresearch project exemplar releases · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_BoundedAutoResearchTiny/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20417016"
     },
@@ -9056,7 +9102,7 @@
       "description": "Template code project exemplar releases · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_ConvergenceAnalysisGradient/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20417136"
     },
@@ -9066,9 +9112,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template · Zenodo",
-      "language": "TeX",
+      "language": "HTML",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_ExploratoryDataAnalysis/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21086292"
     },
@@ -9080,7 +9126,7 @@
       "description": "Illegal States, Mostly Unrepresentable: strongly typed multiagent colony exemplar (session-typed protocols, affine resource handles, Lean/TLA+ side-specs). From the docxology/template monorepo.",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9092,7 +9138,7 @@
       "description": "Public standalone template exemplar: template_gold_refinement",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9102,9 +9148,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Public standalone template exemplar: template_literature_meta_analysis · Zenodo",
-      "language": "Python",
+      "language": "TeX",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_LivingMetaAnalysis/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20931964"
     },
@@ -9114,9 +9160,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Pools, Rules, and Tools: a template-integrated resource architecture exemplar (fonds/rules/tools resource pools). From the docxology/template research monorepo.",
-      "language": "TeX",
+      "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9126,9 +9172,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Template prose project exemplar releases · Zenodo",
-      "language": "TeX",
+      "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_EditorialQualityAt/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20417104"
     },
@@ -9140,7 +9186,7 @@
       "description": "Redacted Report Template: disclosure control and release-audit exemplar (classification ceiling, redaction ledger, mosaic-risk checks). From the docxology/template monorepo.",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9152,7 +9198,7 @@
       "description": "Registered Report Template: preregistration, deviations, and claim boundaries for confirmatory research. From the docxology/template research monorepo.",
       "language": "HTML",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9164,7 +9210,7 @@
       "description": "SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia) · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_SelfImprovementAgent/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20453879"
     },
@@ -9174,9 +9220,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Standalone full-page illustrated storybook template from docxology/template · Zenodo",
-      "language": "TeX",
+      "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_ShapeBetween/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21176000"
     },
@@ -9186,9 +9232,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Template meta-research exemplar: self-documenting reproducible research repo · Zenodo",
-      "language": "TeX",
+      "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_TemplateApproachReproducible/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20419007"
     },
@@ -9200,7 +9246,7 @@
       "description": "template_bioinformatics_project — Active Inference / research exemplar repository",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9209,10 +9255,10 @@
       "url": "https://github.com/docxology/bond",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Top-level wrapper manuscript and reproducible 33-package special-agent operations compendium, with generated chapters, unified bibliography, deterministic regeneration, and tested release artifacts · · Zenodo",
-      "language": "Markdown/Python",
+      "description": "PROJECT BOND compendium importing manuscripts from the separately catalogued infrastructure and film-analysis packages, with a unified bibliography and deterministic generation · · Zenodo",
+      "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_PROJECTBONDSpecial/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21843592"
     },
@@ -9224,7 +9270,7 @@
       "description": "A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice; repository v0.5.0 · · Citation DOI · Zenodo artifact v0.1.0",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_LineSet/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21754243"
     },
@@ -9236,7 +9282,7 @@
       "description": "A positive operating discipline for concise, inspectable, revisable work; repository v0.5.0 · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_BlackLine/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21754235"
     },
@@ -9248,7 +9294,7 @@
       "description": "A typed ledger for the edge of a claim: absence, restraint, and the unknowable; repository v0.8.0 · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_WhiteLine/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21754241"
     },
@@ -9260,7 +9306,7 @@
       "description": "An aspirational thread and long-horizon direction for personal work; repository v0.5.0 · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_GoldenLine/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21754237"
     },
@@ -9272,7 +9318,7 @@
       "description": "A personal security boundary and explicit No document for dual-use development · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_PersonalRedLines/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21754239"
     },
@@ -9284,7 +9330,7 @@
       "description": "Co-registration without aggregation — the Witness Register holding instrument; repository v0.2.0 · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_WitnessRegister/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21754245"
     },
@@ -9296,7 +9342,7 @@
       "description": "A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work; repository v0.2.0 · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_BlueLine/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.22833489"
     },
@@ -9308,7 +9354,7 @@
       "description": "A capacity-under-development instrument: the green line of the docxology line set; repository v0.2.0 · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_GreenLine/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.22833491"
     },
@@ -9318,9 +9364,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse; repository v0.2.0 · · Citation DOI · Zenodo artifact v0.1.0",
-      "language": "Python",
+      "language": "HTML",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_SilverLine/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.22833485"
     },
@@ -9332,7 +9378,7 @@
       "description": "Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, and deterministic synthesis",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9344,7 +9390,7 @@
       "description": "Comprehensive local intelligence platform for Crescent City, CA — municipal code, real-time alerts, RAG chat, and analytics",
       "language": "TypeScript",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9356,7 +9402,7 @@
       "description": "Shared regional civic intelligence methods — verified acquisition, alert adapters, search, RAG, analytics, and publication/manuscript tooling",
       "language": "TypeScript",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9367,7 +9413,7 @@
       "catalog_section": "docxology",
       "description": "Davis and Yolo County civic intelligence — thin regional orchestration powered by region-intel",
       "language": "TeX",
-      "stars": 0,
+      "stars": 1,
       "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
@@ -9392,7 +9438,7 @@
       "description": "Structured, read-only Math4Wisdom Superhuman Docs archive",
       "language": "TypeScript",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9403,8 +9449,8 @@
       "catalog_section": "docxology",
       "description": "docxplus — the Intelligent Document Container: format, tools, and formal specification · · Zenodo",
       "language": "Python",
-      "stars": 0,
-      "updated_or_year": "2026-09",
+      "stars": 1,
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_DocxplusIntelligentDocument/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21983948"
     },
@@ -9416,7 +9462,7 @@
       "description": "Agentic Security and Operating Systems — deep review and prospectus of OpSec, Cognitive Security, and Agentic Cyber Security (paper source) · · Zenodo",
       "language": "TeX",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_AgenticSecurityOperating/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.22754351"
     },
@@ -9428,7 +9474,7 @@
       "description": "One portable agent SKILL per page of the SS Vibelandia Omniversal Canvas — Skillarum-rendered skill pages · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_FractiSkills/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.22712650"
     },
@@ -9440,7 +9486,7 @@
       "description": "Multi-frequency time-series analysis toolkit built on sktime — validates irregular series, tests stationarity and Granger causality, and evaluates forecasting models",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9450,9 +9496,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Meta-operator over the Dicklesworthstone GitHub corpus: clone, verify upstream sync, orchestrate, interpret, and dashboard the ~207-repo corpus",
-      "language": "HTML",
+      "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9464,7 +9510,7 @@
       "description": "Turns selected public website pages into portable SKILL.md documents for agent harnesses — five inspectable stages, provenance, safety-bounded crawling, evidence-gated research outputs (renders the FractiSkills skill pages) · · Citation DOI · Zenodo artifact v0.2.0",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_Skillarum/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.22663906"
     },
@@ -9476,7 +9522,7 @@
       "description": "Operator-gated wizard and tooling for migrating Nockchain wallets from legacy v0 notes to v1 P2PKH addresses (one-off functional tool, no paper)",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9488,7 +9534,7 @@
       "description": "Modular textbook project with computational models, deterministic figure generation, and manuscript validation; no publication DOI assigned at the source review",
       "language": "HTML",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9500,7 +9546,7 @@
       "description": "Configurable entropy and complexity methods for native multidimensional data, including HDSE, whole-observation inference, and reproducible synthetic studies; empirical replication and biological sample-size claims remain outside the demonstrated scope · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_Antropy/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.23306200"
     },
@@ -9512,7 +9558,7 @@
       "description": "Draft scientific review of Foundations of Reason 8.0 and Engineering of Reason 3.5, with a source-linked issue register and Python quotation, page-citation, numerical, and PDF-custody checks; open for author response",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9521,10 +9567,10 @@
       "url": "https://github.com/docxology/daf-okn",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Python package and CLI for Open Knowledge Network registry discovery, vault-to-graph export, graph analysis and visualization, and local RDF contribution packaging; packaging does not upload to the registry, and live endpoint coverage remains limited",
+      "description": "Python package and CLI for Open Knowledge Network registry discovery, vault-to-graph export, graph analysis and visualization, and local RDF contribution packaging; packaging does not upload to the registry, and live endpoint coverage remains limited · Release 2026-11-04",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9534,9 +9580,9 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Meta-pragmatic active inference with executable GNN models, exact categorical inference and bounded synthetic sensor/action studies · · Citation DOI",
-      "language": "Python",
-      "stars": 0,
-      "updated_or_year": "2026-10",
+      "language": "HTML",
+      "stars": 1,
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_ActiveInferenceAs/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.23397452"
     },
@@ -9547,8 +9593,8 @@
       "catalog_section": "docxology",
       "description": "Executable teaching paper with numerical demonstrations, selected Lean proofs and a twenty-minute lecture; public distribution 0.6.1 retains scientific package 0.5.0 · · Citation DOI",
       "language": "Python",
-      "stars": 0,
-      "updated_or_year": "2026-10",
+      "stars": 3,
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_ActiveInferenceSynthetic/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.23321280"
     },
@@ -9560,7 +9606,7 @@
       "description": "Assembly-to-inference research with authored fixtures, executable generative models, and bounded source-contract validation · · Citation DOI",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_ActiveAssemblyTheory/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.23484107"
     },
@@ -9570,11 +9616,455 @@
       "owner": "docxology",
       "catalog_section": "docxology",
       "description": "Finite-model research on gratitude, absence and model revisability; synthetic results retain explicit human and clinical validation limits · · Citation DOI",
-      "language": "Python",
+      "language": "HTML",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_ThanksNothing/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.23402516"
+    },
+    {
+      "name": "Blakean_Entomology",
+      "url": "https://github.com/docxology/Blakean_Entomology",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Blakean literary ecology — copy-specific readings and a bounded, source-role-aware concordance; retrieval candidates remain distinct from contextual judgments · Citation DOI",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "papers/2026_BlakeanEntomology/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.23900582"
+    },
+    {
+      "name": "Blakean_Federalism",
+      "url": "https://github.com/docxology/Blakean_Federalism",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Composition without capture — Blake close reading and constructed institutional/timing cases with explicit empirical limits · Citation DOI",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "papers/2026_StatesChange/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.23900616"
+    },
+    {
+      "name": "reno-nv-intel",
+      "url": "https://github.com/docxology/reno-nv-intel",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Composable Reno civic intelligence using region-intel, retained public evidence and reproducible template manuscripts",
+      "language": "HTML",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "WISLIM-audit",
+      "url": "https://github.com/docxology/WISLIM-audit",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Source-linked critical audit and red-team analysis of Life is Most Important in Life; findings remain reviewable claims rather than established conclusions",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-a_view_to_a_kill",
+      "url": "https://github.com/docxology/bond-a_view_to_a_kill",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "ZORIN — film-inspired supply-network, water-ingress and racing-market models with a shared mission adapter.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-api",
+      "url": "https://github.com/docxology/bond-api",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Shared mission protocol, immutable data objects, deterministic JSON codecs, provider discovery and registries.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-casino_royale_1967",
+      "url": "https://github.com/docxology/bond-casino_royale_1967",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "FIVE 00s — coordination, identity ambiguity, card-game and escalation models inspired by Casino Royale (1967).",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-casino_royale_2006",
+      "url": "https://github.com/docxology/bond-casino_royale_2006",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "LE CHIFFRE — card-game decision models, opponent inference, transaction analysis and route-planning demonstrations.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-cli",
+      "url": "https://github.com/docxology/bond-cli",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Terminal interface for package discovery, mission stages, orchestration, gadget listings and suite-status reports.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-coordinator",
+      "url": "https://github.com/docxology/bond-coordinator",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Package registry, mission-state ledger, measured gate-result integration and situation-room reports for the suite.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-diamonds_are_forever",
+      "url": "https://github.com/docxology/bond-diamonds_are_forever",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "CONFLICT STONE — custody, transport, transaction-network and optical scenario models inspired by Diamonds Are Forever.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-die_another_day",
+      "url": "https://github.com/docxology/bond-die_another_day",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "ICARUS — synthetic identity-forensics, thermal-environment and orbital-geometry scenario models.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-dr_no",
+      "url": "https://github.com/docxology/bond-dr_no",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "CRAB KEY — radiation-spectrum, decay, attenuation and environmental-transport demonstrations inspired by Dr. No.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-for_your_eyes_only",
+      "url": "https://github.com/docxology/bond-for_your_eyes_only",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "ATAC — threshold-key recovery, routing, underwater acoustics and constrained mission-planning demonstrations.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-from_russia_with_love",
+      "url": "https://github.com/docxology/bond-from_russia_with_love",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "LURES — synthetic allocation, communications, localization, scheduling and handoff-state-machine models.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-goldeneye",
+      "url": "https://github.com/docxology/bond-goldeneye",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "ARKANGEL — orbital geometry, electromagnetic-effects and infrastructure-resilience scenario models.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-goldfinger",
+      "url": "https://github.com/docxology/bond-goldfinger",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "GRAND SLAM — market, reserve, access-network and optical-thermal models inspired by Goldfinger.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-licence_to_kill",
+      "url": "https://github.com/docxology/bond-licence_to_kill",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "ROGUE — transaction-network, vessel-logistics and finite decision-process demonstrations.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-live_and_let_die",
+      "url": "https://github.com/docxology/bond-live_and_let_die",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "SAN MONIQUE — supply-network, classical-codec, economic-flow and terrain-routing demonstrations.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-moonraker",
+      "url": "https://github.com/docxology/bond-moonraker",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "DRAX — scheduling, orbital logistics, rendezvous and centrifuge-response scenario models.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-never_say_never_again",
+      "url": "https://github.com/docxology/bond-never_say_never_again",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "REMOUNT — deterministic scenario replay, outcome comparison, asset migration and resource-allocation models.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-no_time_to_die",
+      "url": "https://github.com/docxology/bond-no_time_to_die",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "HERACLES — synthetic exposure, toxicology and trace-analysis models inspired by No Time to Die.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-octopussy",
+      "url": "https://github.com/docxology/bond-octopussy",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "FABERGÉ — art-forensics, transport scheduling and synthetic detector-localization demonstrations.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-on_her_majestys_secret_service",
+      "url": "https://github.com/docxology/bond-on_her_majestys_secret_service",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "PIZ GLORIA — synthetic transport, alpine-routing, motion and identity-timeline scenario models.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-ops",
+      "url": "https://github.com/docxology/bond-ops",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Fleet inventory, repository health checks, aggregate quality-gate reporting and suite provisioning tools.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-orchestrator",
+      "url": "https://github.com/docxology/bond-orchestrator",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Mission dependency-graph execution with checkpoints, deterministic retries, stage planning and outcome provenance.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-quantum_of_solace",
+      "url": "https://github.com/docxology/bond-quantum_of_solace",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "QUANTUM — water-network, resource-control, pricing, resilience and cooperative-game models.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-skyfall",
+      "url": "https://github.com/docxology/bond-skyfall",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "SILVA — synthetic network-security, traffic-change, patch-scheduling and scene-geometry demonstrations.",
+      "language": "Python",
+      "stars": 1,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-spectre",
+      "url": "https://github.com/docxology/bond-spectre",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "NINE EYES — network structure, information-sharing, compartmentalization and sensor-allocation models.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-the_living_daylights",
+      "url": "https://github.com/docxology/bond-the_living_daylights",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "SNIPER'S NEST — scene-inspired geometry, visibility, routing and evidence-workflow models.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-the_man_with_the_golden_gun",
+      "url": "https://github.com/docxology/bond-the_man_with_the_golden_gun",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "SOLEX — solar geometry, graph routing and constrained scheduling demonstrations.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-the_spy_who_loved_me",
+      "url": "https://github.com/docxology/bond-the_spy_who_loved_me",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "LIPARUS — underwater acoustics, tracking, beamforming and vehicle-geometry demonstrations.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-the_world_is_not_enough",
+      "url": "https://github.com/docxology/bond-the_world_is_not_enough",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "ELEKTRA — linked graph, tracking, energy-network and bargaining models with authored psychological assumptions.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-thunderball",
+      "url": "https://github.com/docxology/bond-thunderball",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "DISCO VOLANTE — dive-profile, coverage, acoustic, current-navigation and vehicle-logistics demonstrations.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-tomorrow_never_dies",
+      "url": "https://github.com/docxology/bond-tomorrow_never_dies",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "CARVER — synthetic opinion-dynamics, radar, navigation-error and integrity-monitoring models.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-utilities",
+      "url": "https://github.com/docxology/bond-utilities",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Shared deterministic codenames, classical-cipher, scheduling, seeded-randomness and provenance primitives.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "bond-you_only_live_twice",
+      "url": "https://github.com/docxology/bond-you_only_live_twice",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "VOLCANO — orbital geometry, synthetic scene analysis, localization and route-planning demonstrations.",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
     },
     {
       "name": "ActiveInferenceJournal",
@@ -9583,8 +10073,8 @@
       "catalog_section": "active-inference-institute",
       "description": "Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output",
       "language": "HTML",
-      "stars": 44,
-      "updated_or_year": "2026-09",
+      "stars": 45,
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9595,8 +10085,8 @@
       "catalog_section": "active-inference-institute",
       "description": "Unofficial repo for materials and code related to \"Fundamentals of Active Inference\" (Namjoshi 2026).",
       "language": "Python",
-      "stars": 35,
-      "updated_or_year": "2026-08",
+      "stars": 37,
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9605,10 +10095,10 @@
       "url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Citation DOI · Current software v4.3.0 · · Earlier software archive",
+      "description": "GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Citation DOI · Current software version 5.0.3 · Earlier software version 4.3.0 · · Earlier software archive",
       "language": "Python",
-      "stars": 33,
-      "updated_or_year": "2026-10",
+      "stars": 35,
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_GeneralizedNotationNotationGNN/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.7803313"
     },
@@ -9618,9 +10108,9 @@
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework",
-      "language": "Jupyter",
+      "language": "Python",
       "stars": 32,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9631,8 +10121,8 @@
       "catalog_section": "active-inference-institute",
       "description": "Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference",
       "language": "Python",
-      "stars": 30,
-      "updated_or_year": "2026-09",
+      "stars": 31,
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9643,8 +10133,8 @@
       "catalog_section": "active-inference-institute",
       "description": "Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization",
       "language": "Python",
-      "stars": 22,
-      "updated_or_year": "2026-10",
+      "stars": 23,
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9656,7 +10146,7 @@
       "description": "Geospatial Active Inference — applying free energy minimization to geographic systems, spatial planning, and bioregional intelligence",
       "language": "HTML",
       "stars": 18,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9666,9 +10156,9 @@
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "Formal OWL/RDF ontology for Active Inference — defines classes, properties, and axioms for free energy principle concepts",
-      "language": "",
+      "language": "HTML",
       "stars": 16,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9680,7 +10170,7 @@
       "description": "Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo",
       "language": "Python",
       "stars": 14,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2025_CEREBRUM/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.15170907"
     },
@@ -9692,7 +10182,7 @@
       "description": "Applied Active Inference Symposium materials — talks, workshops, proceedings, and collaborative session artifacts from annual Applied AIF symposia",
       "language": "Python",
       "stars": 13,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9703,8 +10193,8 @@
       "catalog_section": "active-inference-institute",
       "description": "Structured Active Inference learning courses — cohort-based curriculum materials, exercises, and collaborative learning artifacts",
       "language": "HTML",
-      "stars": 12,
-      "updated_or_year": "2026-08",
+      "stars": 13,
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9716,7 +10206,7 @@
       "description": "Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release",
       "language": "HTML",
       "stars": 10,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": "https://doi.org/10.5281/zenodo.18686966"
     },
@@ -9728,7 +10218,7 @@
       "description": "Formal categorical foundations for Active Inference — string diagrams, functorial semantics, and compositional models using category theory",
       "language": "",
       "stars": 9,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9738,9 +10228,9 @@
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "Active Entity Ontology for Science — OWL ontology for representing active entities, their actions, and causal relationships in scientific models",
-      "language": "",
+      "language": "Python",
       "stars": 8,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9752,7 +10242,7 @@
       "description": "Active Inference Textbook Study Group — code, exercises, and reading notes accompanying Parr, Pezzulo & Friston (2022)",
       "language": "Julia",
       "stars": 7,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9764,7 +10254,7 @@
       "description": "AI-driven research synthesis and navigation — semantic search, citation graph analysis, and cross-domain connection discovery across the Active Inference literature",
       "language": "HTML",
       "stars": 6,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9776,7 +10266,7 @@
       "description": "Institute onboarding hub — getting-started guides, contributor pathways, project index, and orientation materials for new participants",
       "language": "Python",
       "stars": 6,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9786,9 +10276,9 @@
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus.",
-      "language": "TeX",
+      "language": "HTML",
       "stars": 6,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9798,9 +10288,9 @@
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "Knowledge engineering tools and workflows — ontology alignment, concept mapping, and structured knowledge-base construction for Active Inference",
-      "language": "Jupyter",
+      "language": "Jupyter Notebook",
       "stars": 6,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9811,8 +10301,8 @@
       "catalog_section": "active-inference-institute",
       "description": "Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline · · Zenodo artifact v2.1.0 · Citation DOI · Zenodo software archive",
       "language": "Python",
-      "stars": 5,
-      "updated_or_year": "2026-10",
+      "stars": 6,
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_FEPLean/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.19699233"
     },
@@ -9824,7 +10314,7 @@
       "description": "Bioregional Active Inference for organizational stewardship — applying free energy minimization to ecological and community governance systems",
       "language": "Python",
       "stars": 4,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9836,7 +10326,7 @@
       "description": "PyMCP — Model Context Protocol bridge for PyMDP, enabling Active Inference agents to interoperate with MCP-compatible AI tooling",
       "language": "Python",
       "stars": 3,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9848,7 +10338,7 @@
       "description": "Policy Entanglement in Active Inference v1.0.0 · Zenodo",
       "language": "Python",
       "stars": 3,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_PolicyEntanglementActive/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20418904"
     },
@@ -9860,7 +10350,7 @@
       "description": "On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release · · Zenodo artifact v1.0.2 · Citation DOI",
       "language": "Python",
       "stars": 3,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_PolicyDistillationAs/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20747834"
     },
@@ -9870,9 +10360,9 @@
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "Active Inference with RxInfer.jl — Julia-based reactive message passing for efficient Bayesian inference in Active Inference models",
-      "language": "",
+      "language": "Python",
       "stars": 2,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9883,8 +10373,8 @@
       "catalog_section": "active-inference-institute",
       "description": "Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · · Zenodo artifact v0.6.0 · Citation DOI",
       "language": "Python",
-      "stars": 2,
-      "updated_or_year": "2026-10",
+      "stars": 3,
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_COGANT/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.20705350"
     },
@@ -9896,7 +10386,7 @@
       "description": "Validated prerequisite graph, computational claim registry, and SkillTree delivery contract for Active Inference · · Zenodo",
       "language": "Python",
       "stars": 2,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_ActiveSkillference/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21865643"
     },
@@ -9906,9 +10396,9 @@
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "NoOrg is a Real Org — experimental organizational infrastructure and governance frameworks for decentralized scientific institutions",
-      "language": "HTML",
+      "language": "TypeScript",
       "stars": 1,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9918,9 +10408,9 @@
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "GEN-24 working project — collaborative generative systems research from the 2024 active inference cohort",
-      "language": "Jupyter",
+      "language": "Jupyter Notebook",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9930,9 +10420,9 @@
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "Learning and exploring probabilistic inference — beginner-accessible Jupyter notebooks for Active Inference from first principles",
-      "language": "Jupyter",
+      "language": "Jupyter Notebook",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9944,7 +10434,7 @@
       "description": "Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9956,7 +10446,7 @@
       "description": "Institute bot infrastructure — automation, notification, and community management bots for the Active Inference Institute's platforms",
       "language": "",
       "stars": 0,
-      "updated_or_year": "2022-12",
+      "updated_or_year": "2026-09",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9968,7 +10458,7 @@
       "description": "Interactive visualization garden — generative art and data-visualization experiments exploring Active Inference dynamics",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9980,7 +10470,7 @@
       "description": "GEN-25 working project — generative systems and collaborative research from the 2025 active inference cohort",
       "language": "",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -9992,7 +10482,7 @@
       "description": "International Society for the Systems Sciences collaboration — joint research and educational materials bridging Active Inference and systems science",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-08",
+      "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -10004,7 +10494,7 @@
       "description": "Active Inference for FractalRabbit · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-07",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_ActiveFractalRabbit/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21330636"
     },
@@ -10014,9 +10504,9 @@
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "Robust belief sharing in federated Active Inference — recovery-tested generalized-variational consensus · · Citation DOI",
-      "language": "Python",
+      "language": "HTML",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_RobustBeliefSharing/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21864003"
     },
@@ -10028,7 +10518,7 @@
       "description": "Conditional statistical power under controlled generative settings for Active Inference · · Zenodo",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-07",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_ActiveInferencePower/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21695160"
     },
@@ -10040,7 +10530,7 @@
       "description": "Public repository with no description, language, or committed contents at the 2026-08-26 review",
       "language": "",
       "stars": 0,
-      "updated_or_year": "2026-07",
+      "updated_or_year": "2026-09",
       "paper_path": "",
       "zenodo_url": ""
     },
@@ -10052,7 +10542,7 @@
       "description": "Active Inference Institute Working Groups: draft Charter, Operating Procedures, and the position paper Coordinating the Field · Zenodo version v1.0.0 · Citation DOI",
       "language": "",
       "stars": 0,
-      "updated_or_year": "2026-09",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_CoordinatingField/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.23066903"
     },
@@ -10061,10 +10551,10 @@
       "url": "https://github.com/ActiveInferenceInstitute/active_inference_language_model",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Active Inference Language Model — public repository with no committed contents at the 2026-10-06 review · Zenodo",
-      "language": "",
+      "description": "AILM — fully explicit discrete language stack in pymdp, from letters through document position, with a gate-audit method binding reported numbers to recorded runs · Citation DOI",
+      "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_ActiveInferenceLanguage/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.22409418"
     },
@@ -10076,7 +10566,7 @@
       "description": "GNN-based active inference for Battleship — playable dashboard, interpretable decisions, reproducible manuscript, and animated lecture · Citation DOI",
       "language": "TypeScript",
       "stars": 0,
-      "updated_or_year": "2026-10",
+      "updated_or_year": "2026-11",
       "paper_path": "papers/2026_GNNBasedActive/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.23670187"
     }
@@ -10084,14 +10574,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 228 works.",
+      "claim": "The curated bibliography contains 230 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-11-02T01:42:39+00:00",
+      "checked_at": "2026-11-05T02:01:11+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -10099,13 +10589,13 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 211 per-paper documentation folders.",
+      "claim": "The repository contains 213 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-11-02T01:42:39+00:00",
+      "checked_at": "2026-11-05T02:01:11+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -10113,13 +10603,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 245 public repositories.",
+      "claim": "The docxology GitHub profile has 273 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-10-31.json"
+        "reports/public_source_snapshot_2026-11-05.json"
       ],
-      "checked_at": "2026-10-31T22:54:44.243374+00:00",
+      "checked_at": "2026-11-05T01:25:17.540856+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -10131,9 +10621,9 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-10-31.json"
+        "reports/public_source_snapshot_2026-11-05.json"
       ],
-      "checked_at": "2026-10-31T22:54:44.243374+00:00",
+      "checked_at": "2026-11-05T01:25:17.540856+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",

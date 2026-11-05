@@ -1,8 +1,9 @@
 # Repository classification
 
 `data/github-repositories.json` is the complete generated public inventory. It is
-not the curated software catalog. `data/repository-classification.json` is the
-review queue for inventory rows that are not present in `pages/SOFTWARE.md`.
+not the curated software catalog. `data/repository-classification.json` classifies
+inventory rows outside that catalog, including deferred reviews and acknowledged
+exclusions.
 
 ## Refresh and inspect
 
@@ -33,9 +34,11 @@ publication-sync runbook for GitHub release + Zenodo evidence.
 
 ## Exclusion provenance
 
-`data/repository-exclusions.json` (schema 1.4) is how a repository leaves the
-review queue without entering the catalog. Every entry records *how* the
-decision was reached in `reviewed_by`, and the two values are never blurred:
+`data/repository-exclusions.json` (schema 1.4) records reviewed decisions to keep
+a repository outside the curated catalog. Acknowledged rows remain in the
+generated classification with `review_status: acknowledged`; they do not become
+software-catalog entries. Every entry records *how* the decision was reached in
+`reviewed_by`, and the two values are never blurred:
 
 | `reviewed_by` | Meaning | Extra requirement |
 | --- | --- | --- |
@@ -52,21 +55,27 @@ The standing policy in force is the principal's 2026-08-26 decision recorded in
 an inventory refresh may be recorded under it; anything else waits for a
 decision.
 
-## Operational notes (learned 2026-08-07)
+Each exclusion must record the inventory's `full_name`, `github_id`, and
+`github_node_id`, along with its declared reason, note, reviewer, and review date.
+The classifier acknowledges it only when the exact name and both immutable
+identities match and the reason fits the repository's fork/primary state. A
+transferred or recreated repository cannot inherit a decision from its path.
 
-- The `curated` flag lives in `data/github-repositories.json` and is computed at
-  build time from `data/software.json` (`curated_keys()` in
-  `build_github_inventory.py`). After promoting a repo in `pages/SOFTWARE.md` you
-  MUST rebuild the inventory before `classify_repositories.py` stops queueing it:
-  `GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/build_github_inventory.py`
-  (the script reads `GITHUB_TOKEN`, not `GH_TOKEN`; unauthenticated runs 403 after
-  ~60 requests/hour). The classifier preserves its `generated_at` when the body is
-  unchanged, so a stale-looking timestamp is expected for a stable queue.
-- `regenerate_all.py` runs `build_current_counts.py` and `classify_repositories.py`
-  BEFORE `export_agent_data.py` (which rewrites `data/software.json`), so on the
-  pass that changes SOFTWARE.md the recorded export counts / curated flags come
-  from the previous pass. After any SOFTWARE.md count change, run the pipeline
-  twice (or run `build_current_counts.py` + `classify_repositories.py` again
-  after `regenerate_all.py`) and then re-run `pytest code/tests` - the
-  `test_count_consistency` suite catches the one-pass drift
-  (`data_software_json` vs `curated_total`).
+## Local membership and ordered passes
+
+- The inventory's `curated` flag is derived directly from `pages/SOFTWARE.md`
+  (`curated_keys()` in `build_github_inventory.py`). After a catalog edit,
+  `render_github_inventory.py` refreshes those flags and counts and rebuilds both
+  inventory pages locally, preserving retained GitHub facts and their observation
+  timestamp. This step is included in `regenerate_all.py`; a new network fetch is
+  needed only when deliberately refreshing GitHub observations.
+- `classify_repositories.py` also reads `data/software.json` and omits a row when
+  either that export or the inventory marks it curated. Local regeneration can
+  therefore clear a catalog promotion without another GitHub request. The
+  classifier preserves `generated_at` when its body is unchanged; that timestamp
+  does not establish fresh network evidence.
+- The driver runs two ordered passes by default. They refresh consumers such as
+  current counts that run before `export_agent_data.py` produces updated software
+  data. Use one `regenerate_all.py --validate` invocation after a catalog edit;
+  an extra invocation is not part of the normal procedure. See
+  [regeneration.md](regeneration.md) for diagnostic pass counts and cache rules.

@@ -4,9 +4,9 @@
   "source_review_queue": "reports/paired_publications_review_queue_2026-06-04.md",
   "decision_summary": {
     "decision": "mixed",
-    "groups": 214,
-    "raw_candidates": 654,
-    "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated. R79 records the Cognitive Diagrams v2.5.0 release (2026-09-10 scan) as version-history-only under the already-cited concept DOI 10.5281/zenodo.19695259. R80 records the six GitHub release pairs (v0.3.0-v1) under the canonical curated EvoJump concept 10.5281/zenodo.22664675 as software-catalog (SOFTWARE.md already lists EvoJump; the citable paper remains bibliography row #12, concept 10.5281/zenodo.17229924), and R81 records the GitHub-Zenodo automated integration archive concept 10.5281/zenodo.22664645 (docxology/EvoJump-v0.5.2.zip, zip-only) as a superseded duplicate deposit. R82-R83 (2026-09-17 scan) record the fep_lean v1.2.0 and GeneralizedNotationNotation v3.4.0 releases as version-history-only under their already-cited citation DOIs (10.5281/zenodo.19699233 row #113 and 10.5281/zenodo.7803313 row #168), both pairs lacking github_release_mentions_doi cross-link evidence, so neither creates a duplicate bibliography row. The 2026-10-23 completion records 11 rejected cross-project archive matches, three acknowledged/superseded version-history relations, and three accepted current/existing work relations. Every outcome retains its individual actor, timestamp and rationale."
+    "groups": 268,
+    "raw_candidates": 703,
+    "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated. R79 records the Cognitive Diagrams v2.5.0 release (2026-09-10 scan) as version-history-only under the already-cited concept DOI 10.5281/zenodo.19695259. R80 records the six GitHub release pairs (v0.3.0-v1) under the canonical curated EvoJump concept 10.5281/zenodo.22664675 as software-catalog (SOFTWARE.md already lists EvoJump; the citable paper remains bibliography row #12, concept 10.5281/zenodo.17229924), and R81 records the GitHub-Zenodo automated integration archive concept 10.5281/zenodo.22664645 (docxology/EvoJump-v0.5.2.zip, zip-only) as a superseded duplicate deposit. R82-R83 (2026-09-17 scan) record the fep_lean v1.2.0 and GeneralizedNotationNotation v3.4.0 releases as version-history-only under their already-cited citation DOIs (10.5281/zenodo.19699233 row #113 and 10.5281/zenodo.7803313 row #168), both pairs lacking github_release_mentions_doi cross-link evidence, so neither creates a duplicate bibliography row. The 2026-10-23 completion records 11 rejected cross-project archive matches, three acknowledged/superseded version-history relations, and three accepted current/existing work relations. Every outcome retains its individual actor, timestamp and rationale. The 2026-11-05 intake individually reviews 49 new candidates: six accepted source/current-work relations, 36 superseded version/context relations and seven rejected cross-work matches; new PDF editions use explicit verified Zenodo downloads."
   },
   "groups": [
     {
@@ -15264,7 +15264,1967 @@
           "release_tag": "v0.2.0"
         }
       ]
+    },
+    {
+      "id": "review-2026-11-04-897e61d2200281a9",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.20417016",
+      "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/20417016",
+      "release_tag": "v5.0.0",
+      "folder": "2026_BoundedAutoResearchTiny",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task' is already represented by its own citation DOI and folder 2026_BoundedAutoResearchTiny. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 0.3.2 (record 20931907) and retains its own relation(s): isSupplementTo: https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.2. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/20931907 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20417016",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20417016",
+          "record_title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "20931907",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.20417016",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/20417016",
+        "docxology/template",
+        "bounded autoresearch for a tiny reproducible machine-learning task",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "897e61d2200281a9d20c4b78c481a558dea19310c8b871bd73837cdf9da1b76f",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-f33e7907471b4ea7",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.20417104",
+      "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/20417104",
+      "release_tag": "v5.0.0",
+      "folder": "2026_EditorialQualityAt",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'Editorial Quality at Scale: A Reproducible Prose-Review Pipeline' is already represented by its own citation DOI and folder 2026_EditorialQualityAt. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 0.4.2 (record 20932047) and retains its own relation(s): isSupplementTo: https://github.com/docxology/template_prose_project/releases/tag/v0.4.2. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/20932047 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20417104",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20417104",
+          "record_title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "20932047",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.20417104",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/20417104",
+        "docxology/template",
+        "editorial quality at scale: a reproducible prose-review pipeline",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "f33e7907471b4ea7ebb14067e503a70b97fa9d7a02de8b143cb297b4bc39f355",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-5c3e48ffe19b713f",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.20453879",
+      "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/20453879",
+      "release_tag": "v5.0.0",
+      "folder": "2026_SelfImprovementAgent",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'Self-Improvement Agent Harness: A Deterministic SIA Exemplar' is already represented by its own citation DOI and folder 2026_SelfImprovementAgent. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 0.1.2 (record 20932066) and retains its own relation(s): isSupplementTo: https://github.com/docxology/template_sia/releases/tag/v0.1.2. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/20932066 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20453879",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20453879",
+          "record_title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "20932066",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.20453879",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/20453879",
+        "docxology/template",
+        "self-improvement agent harness: a deterministic sia exemplar",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "5c3e48ffe19b713fab606f98c88a24d91389f61d321dfc558eb63d9d5de386c5",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-4f92ed6c77cf6b1c",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.20533125",
+      "title": "The Template Textbook",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/20533125",
+      "release_tag": "v5.0.0",
+      "folder": "2026_TemplateTextbook",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'The Template Textbook' is already represented by its own citation DOI and folder 2026_TemplateTextbook. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 0.1.2 (record 20932112) and retains its own relation(s): isSupplementTo: https://github.com/docxology/template_textbook/releases/tag/v0.1.2; references: https://github.com/docxology/template_textbook. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/20932112 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20533125",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20533125",
+          "record_title": "The Template Textbook",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "20932112",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.20533125",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/20533125",
+        "docxology/template",
+        "the template textbook",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "4f92ed6c77cf6b1ca5db663142158d2ad94603a8e73e3fc83b5b7a39f17ee154",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-a4894dcd1c69ea61",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.20533675",
+      "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/20533675",
+      "release_tag": "v5.0.0",
+      "folder": "2026_Triplicate",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine' is already represented by its own citation DOI and folder 2026_Triplicate. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 1.0.2 (record 20932039) and retains its own relation(s): isSupplementTo: https://github.com/docxology/template_newspaper/releases/tag/v1.0.2. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/20932039 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20533675",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20533675",
+          "record_title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "20932039",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.20533675",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/20533675",
+        "docxology/template",
+        "the triplicate: a data-driven large-format newspaper layout engine",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "a4894dcd1c69ea61d5fade76c15f5367541e5937730360a85aa5c5c40b24e6fc",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-bef1c50b9f6a6462",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.20931964",
+      "title": "A Living Meta-Analysis of the Modafinil Literature",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/20931964",
+      "release_tag": "v5.0.0",
+      "folder": "2026_LivingMetaAnalysis",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'A Living Meta-Analysis of the Modafinil Literature' is already represented by its own citation DOI and folder 2026_LivingMetaAnalysis. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 0.1.0 (record 20931965) and retains its own relation(s): isSupplementTo: https://github.com/docxology/template_literature_meta_analysis/releases/tag/v0.1.0; references: https://github.com/docxology/template_literature_meta_analysis. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/20931965 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20931964",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20931964",
+          "record_title": "A Living Meta-Analysis of the Modafinil Literature",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "20931965",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.20931964",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/20931964",
+        "docxology/template",
+        "a living meta-analysis of the modafinil literature",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "bef1c50b9f6a64623a70c3732ea734dfc73ca57e053239e05a6f63b8ecc34b43",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-58c93f1e165f90ee",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.21086292",
+      "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/21086292",
+      "release_tag": "v5.0.0",
+      "folder": "2026_ExploratoryDataAnalysis",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'Exploratory Data Analysis: A Reproducible Notebook Template' is already represented by its own citation DOI and folder 2026_ExploratoryDataAnalysis. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 1.0.0 (record 21086293) and retains its own relation(s): isSupplementTo: https://github.com/docxology/template_eda_notebook/releases/tag/v1.0.0. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/21086293 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21086292",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/21086292",
+          "record_title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "21086293",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.21086292",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/21086292",
+        "docxology/template",
+        "exploratory data analysis: a reproducible notebook template",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "58c93f1e165f90eea9a854c5431801403b082c6d6a652bb1216293a57426eecf",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-046f3c337c329896",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.21086548",
+      "title": "A Domain Language for Specifying Controlled Methods",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/21086548",
+      "release_tag": "v5.0.0",
+      "folder": "2026_DomainLanguageSpecifying",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'A Domain Language for Specifying Controlled Methods' is already represented by its own citation DOI and folder 2026_DomainLanguageSpecifying. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 1.0.0 (record 21086549) and retains its own relation(s): isSupplementTo: https://github.com/docxology/template_methods_paper/releases/tag/v1.0.0. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/21086549 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21086548",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/21086548",
+          "record_title": "A Domain Language for Specifying Controlled Methods",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "21086549",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.21086548",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/21086548",
+        "docxology/template",
+        "a domain language for specifying controlled methods",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "046f3c337c32989644a62613bf30c2e5352b67e8b42b644dabc66c079f0a760b",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-182fb48c2f5249fa",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.21176000",
+      "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/21176000",
+      "release_tag": "v5.0.0",
+      "folder": "2026_ShapeBetween",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'The Shape Between: A Full-Page Illustrated Storybook Template' is already represented by its own citation DOI and folder 2026_ShapeBetween. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 0.1.0 (record 21176001) and retains its own relation(s): isSupplementTo: https://github.com/docxology/template_storybook/releases/tag/v0.1.0; references: https://github.com/docxology/template_storybook. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/21176001 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21176000",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/21176000",
+          "record_title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "21176001",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.21176000",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/21176000",
+        "docxology/template",
+        "the shape between: a full-page illustrated storybook template",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "182fb48c2f5249fac0177e93ca6c06ea1479c1459c2ba22320af313cc2c4757f",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-9f3f13d109771986",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.20931955",
+      "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/20931955",
+      "release_tag": "v5.0.0",
+      "folder": "2026_RefinementGold",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition' is already represented by its own citation DOI and folder 2026_RefinementGold. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 0.1.0 (record 20938523) and retains its own relation(s): isSupplementTo: https://github.com/owner/repo/releases/tag/gold-refinement-v0.1.0-20260626-visual-integrity; references: https://github.com/docxology/template_gold_refinement. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/20938523 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20931955",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20931955",
+          "record_title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "20938523",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.20931955",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/20931955",
+        "docxology/template",
+        "refinement of gold: a metallurgical analogy for scientific manuscript composition",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "9f3f13d1097719865a5d3318dacf21b3fdd90493bc9e8890eebd664ce1ee1b5b",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-29447470683f650e",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.20417021",
+      "title": "Active Inference Multi-Track Exemplar",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/20417021",
+      "release_tag": "v5.0.0",
+      "folder": "2026_ActiveInferenceMulti",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'Active Inference Multi-Track Exemplar' is already represented by its own citation DOI and folder 2026_ActiveInferenceMulti. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 0.3.2 (record 20931870) and retains its own relation(s): isSupplementTo: https://github.com/docxology/template_active_inference/releases/tag/v0.3.2. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/20931870 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20417021",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20417021",
+          "record_title": "Active Inference Multi-Track Exemplar",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "20931870",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.20417021",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/20417021",
+        "docxology/template",
+        "active inference multi-track exemplar",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "29447470683f650e1b22d0b5a8c926411e02549d7494ba69b373d5068361b854",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-ef7890d9eaa57bbc",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.20417136",
+      "title": "Convergence Analysis of Gradient Descent Optimization",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/20417136",
+      "release_tag": "v5.0.0",
+      "folder": "2026_ConvergenceAnalysisGradient",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'Convergence Analysis of Gradient Descent Optimization' is already represented by its own citation DOI and folder 2026_ConvergenceAnalysisGradient. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 2.5.2 (record 20931934) and retains its own relation(s): isSupplementTo: https://github.com/docxology/template_code_project/releases/tag/v2.5.2. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/20931934 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20417136",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20417136",
+          "record_title": "Convergence Analysis of Gradient Descent Optimization",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "20931934",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.20417136",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/20417136",
+        "docxology/template",
+        "convergence analysis of gradient descent optimization",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "ef7890d9eaa57bbcf509f4e6d107af8a6b6ef46b079bc90df271e2691d396ea4",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-5f250f140367eedc",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.20533669",
+      "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/20533669",
+      "release_tag": "v5.0.0",
+      "folder": "2026_DeterministicTestbedSelf",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'A Deterministic Testbed for Self-Organizing Agent-Team Coordination' is already represented by its own citation DOI and folder 2026_DeterministicTestbedSelf. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 1.0.2 (record 20931927) and retains its own relation(s): isSupplementTo: https://github.com/docxology/template_autoscientists/releases/tag/v1.0.2. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/20931927 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20533669",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20533669",
+          "record_title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "20931927",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.20533669",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/20533669",
+        "docxology/template",
+        "a deterministic testbed for self-organizing agent-team coordination",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "5f250f140367eedc4683cfcbd62ddca512ea242c872f4d094c08eb41c1136f34",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-0aa35c9a65f5c41a",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.20786638",
+      "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/20786638",
+      "release_tag": "v5.0.0",
+      "folder": "2026_TemplateMadlib",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts' is already represented by its own citation DOI and folder 2026_TemplateMadlib. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 0.1.1 (record 20932025) and retains its own relation(s): isSupplementTo: https://github.com/docxology/template_madlib/releases/tag/v0.1.1; references: https://github.com/docxology/template_madlib. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/20932025 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20786638",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20786638",
+          "record_title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "20932025",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.20786638",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/20786638",
+        "docxology/template",
+        "template madlib: deterministic token injection for conditional imrad manuscripts",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "0aa35c9a65f5c41ab5f5056a393cdd9e75599ad5242e20d3d4630a784987af7d",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-1da807cae60ee800",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.20419007",
+      "title": "A template/ approach to Reproducible Generative Research",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/20419007",
+      "release_tag": "v5.0.0",
+      "folder": "2026_TemplateApproachReproducible",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'A template/ approach to Reproducible Generative Research' is already represented by its own citation DOI and folder 2026_TemplateApproachReproducible. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 1.0.9 (record 20976048) and retains its own relation(s): isSupplementTo: https://github.com/docxology/template_template/releases/tag/v1.0.9. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/20976048 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.20419007",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/20419007",
+          "record_title": "A template/ approach to Reproducible Generative Research",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "20976048",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.20419007",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/20419007",
+        "docxology/template",
+        "a template/ approach to reproducible generative research",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "1da807cae60ee8007cd2065612ac7e297b10c0ee5b548794e60b0db33d26e95e",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-4783afe14b1ca1cf",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.21227869",
+      "title": "Autopoietic Project Generation",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/21227869",
+      "release_tag": "v5.0.0",
+      "folder": "2026_AutopoieticProjectGeneration",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'Autopoietic Project Generation' is already represented by its own citation DOI and folder 2026_AutopoieticProjectGeneration. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 1.0.1 (record 21229620) and retains its own relation(s): isSupplementTo: https://github.com/docxology/template/releases/tag/v1.0.1. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/21229620 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21227869",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/21227869",
+          "record_title": "Autopoietic Project Generation",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "21229620",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.21227869",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/21227869",
+        "docxology/template",
+        "autopoietic project generation",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "4783afe14b1ca1cf89b908d5b22c3eef868b2a7e3b4c65307f04dff4732d0fb1",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-b957759fecf71ef1",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.21281509",
+      "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/21281509",
+      "release_tag": "v5.0.0",
+      "folder": "2026_TemplatePitchDeck",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'template_pitch_deck: Reproducible, Validated Pitch-Deck Generation' is already represented by its own citation DOI and folder 2026_TemplatePitchDeck. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 1.0.0 (record 21281510) and retains its own relation(s): isSupplementTo: https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.0. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/21281510 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21281509",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/21281509",
+          "record_title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "21281510",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.21281509",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/21281509",
+        "docxology/template",
+        "template_pitch_deck: reproducible, validated pitch-deck generation",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "b957759fecf71ef11bcfffd7a530cc8c151cf3f2f8311dade988aa4b39f5ae6e",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-13bbb292c02df273",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.21298883",
+      "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/21298883",
+      "release_tag": "v5.0.0",
+      "folder": "2026_DataDescriptorTemplate",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'Data Descriptor Template: Schema, Provenance, and Release Readiness' is already represented by its own citation DOI and folder 2026_DataDescriptorTemplate. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 0.1.0 (record 21298884) and retains its own relation(s): references: https://github.com/docxology/template/tree/main/projects/templates/template_data_descriptor. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/21298884 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21298883",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/21298883",
+          "record_title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "21298884",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.21298883",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/21298883",
+        "docxology/template",
+        "data descriptor template: schema, provenance, and release readiness",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "13bbb292c02df27325df4b776d4cdb7662357f472332effa63f87860ab8eaecf",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-e6c70e36a2e36ba8",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.21298890",
+      "title": "Redacted Report Template: Disclosure Control and Release Audit",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/21298890",
+      "release_tag": "v5.0.0",
+      "folder": "2026_RedactedReportTemplate",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'Redacted Report Template: Disclosure Control and Release Audit' is already represented by its own citation DOI and folder 2026_RedactedReportTemplate. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 0.1.0 (record 21298891) and retains its own relation(s): references: https://github.com/docxology/template/tree/main/projects/templates/template_redacted_report. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/21298891 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21298890",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/21298890",
+          "record_title": "Redacted Report Template: Disclosure Control and Release Audit",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "21298891",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.21298890",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/21298890",
+        "docxology/template",
+        "redacted report template: disclosure control and release audit",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "e6c70e36a2e36ba8e8714a43f2e7933928e6d6f53347ba6e50647c53d671f9da",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-123b7f9e6a7400cc",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.21298892",
+      "title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/21298892",
+      "release_tag": "v5.0.0",
+      "folder": "2026_RegisteredReportTemplate",
+      "representation": "version-history-only",
+      "rationale": "The distinct work 'Registered Report Template: Preregistration, Deviations, and Claim Boundaries' is already represented by its own citation DOI and folder 2026_RegisteredReportTemplate. The current root template v5.0.0 release supplies shared tooling context, not an archival version of every exemplar manuscript. The fetched record is version 0.1.0 (record 21298893) and retains its own relation(s): references: https://github.com/docxology/template/tree/main/projects/templates/template_registered_report. Do not relabel that historical artifact as root v5.0.0, merge distinct work identities, create a duplicate, or replace source-specific summaries. This exact new root-release candidate is superseded by the existing separately curated publication representation. Source: https://zenodo.org/records/21298893 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21298892",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/21298892",
+          "record_title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "21298893",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-exemplar-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.21298892",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/21298892",
+        "docxology/template",
+        "registered report template: preregistration, deviations, and claim boundaries",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "123b7f9e6a7400cc1765452b03b14e55e4e1b628c7fcb1a9b8295330ac6f1fae",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-850d9cc9bca4e571",
+      "decision": "reject",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.21388456",
+      "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+      "candidate_github_repo": "docxology/blake",
+      "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.7.0",
+      "zenodo_record_url": "https://zenodo.org/records/21388456",
+      "release_tag": "v0.7.0",
+      "folder": "2026_FourfoldVision",
+      "representation": "cross-project-reference-only",
+      "rationale": "Fourfold Vision is already represented by its own concept DOI 10.5281/zenodo.21388456 and folder 2026_FourfoldVision. The fetched record is paper version 0.3.0 / record 21388457 and references docxology/blake_fourfold_synergetics; blake v0.7.0 instead explicitly publishes Mapping William Blake's Works edition 0.5.0. Shared Blake naming or family context supplies no archive/version equivalence. Preserve both work identities and reject this exact cross-work match. Source: https://zenodo.org/records/21388457 and https://github.com/docxology/blake/releases/tag/v0.7.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21388456",
+          "github_repo": "docxology/blake",
+          "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.7.0",
+          "zenodo_record_url": "https://zenodo.org/records/21388456",
+          "record_title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
+          "release_tag": "v0.7.0",
+          "zenodo_version_record_id": "21388457",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "fourfold-false-family-match",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.21388456",
+        "https://github.com/docxology/blake/releases/tag/v0.7.0",
+        "https://zenodo.org/records/21388456",
+        "docxology/blake",
+        "fourfold vision: william blake, buckminster fuller, and the geometry of omnirational seeing",
+        "v0.7.0"
+      ],
+      "candidate_fingerprint_sha256": "850d9cc9bca4e57198800ed96c58feb166d6c3f66b8be0d2458a669658d990ad",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-ba07501b2fab9542",
+      "decision": "accept",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.7803313",
+      "title": "Generalized_Notation_Notation (GNN)",
+      "candidate_github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+      "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v5.0.3",
+      "zenodo_record_url": "https://zenodo.org/records/7803313",
+      "release_tag": "v5.0.3",
+      "folder": "2026_GeneralizedNotationNotationGNN",
+      "representation": "existing-work-current-software",
+      "rationale": "Zenodo version record 23902909 identifies the exact Generalized_Notation_Notation tree/v5.0.3, records version v5.0.3 and supplies the corresponding source ZIP. The exact GitHub release is public, published 2026-11-03T02:05:11Z; its changelog date 2026-10-31 is a separate source date. Existing bibliography row 168 retains concept DOI 10.5281/zenodo.7803313 and its separately extracted historical manuscript. Update current software/version metadata and the software link; do not create a second work, infer a new scientific result, or relabel the earlier manuscript as v5.0.3. Source: https://zenodo.org/records/23902909 and https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v5.0.3.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v5.0.3",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "release_tag": "v5.0.3",
+          "zenodo_version_record_id": "23902909",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "gnn-current-software",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.7803313",
+        "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v5.0.3",
+        "https://zenodo.org/records/7803313",
+        "activeinferenceinstitute/generalized_notation_notation",
+        "generalized_notation_notation (gnn)",
+        "v5.0.3"
+      ],
+      "candidate_fingerprint_sha256": "ba07501b2fab9542fd368ba3f7c22bb0d57dee62289517620f0b54389421a2f4",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-3b626764a860a5c5",
+      "decision": "accept",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900582",
+      "title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+      "candidate_github_repo": "docxology/Blakean_Entomology",
+      "github_release_url": "https://github.com/docxology/Blakean_Entomology/releases/tag/v1.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900582",
+      "release_tag": "v1.0.0",
+      "folder": "2026_BlakeanEntomology",
+      "representation": "bibliography-folder",
+      "rationale": "Manual exact-pair review accepts 'Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention' as a distinct working paper: the own-repository v1.0.0 release explicitly cites version DOI 10.5281/zenodo.23900583; the fetched Zenodo record 23900583 records version 1.0.0, date 2026-11-03 and an isSupplementTo relation to docxology/Blakean_Entomology. Repository publication.json and .zenodo.json bind the author-approved PDF, creator and version. Use the concept DOI as citation identity and the version DOI for artifact provenance. Parent must create the curated work/folder through reviewed Zenodo intake before treating this representation as applied. Public download remains other-closed / authored research rights reserved, with third-party rights retained; publication is not peer review or specialist certification. Source: https://zenodo.org/records/23900583, https://github.com/docxology/Blakean_Entomology/releases/tag/v1.0.0, https://github.com/docxology/Blakean_Entomology/blob/v1.0.0/publication.json.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900582",
+          "github_repo": "docxology/Blakean_Entomology",
+          "github_release_url": "https://github.com/docxology/Blakean_Entomology/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900582",
+          "record_title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+          "release_tag": "v1.0.0",
+          "zenodo_version_record_id": "23900583",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "blake-family-new-working-paper",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900582",
+        "https://github.com/docxology/Blakean_Entomology/releases/tag/v1.0.0",
+        "https://zenodo.org/records/23900582",
+        "docxology/blakean_entomology",
+        "blakean entomology: small lives, uncertain bodies, and the work of attention",
+        "v1.0.0"
+      ],
+      "candidate_fingerprint_sha256": "3b626764a860a5c5b01432908455c58b0c3d08ef157edd5c26ec023bec5b1698",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-a331e0100655d5d9",
+      "decision": "accept",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/Blakean_Federalism",
+      "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v1.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v1.0.0",
+      "folder": "2026_StatesChange",
+      "representation": "bibliography-folder",
+      "rationale": "Manual exact-pair review accepts 'States Change: Blakean Federalism and composition without capture' as a distinct working paper: the own-repository v1.0.0 release explicitly cites version DOI 10.5281/zenodo.23900617; the fetched Zenodo record 23900617 records version 1.0.0, date 2026-11-03 and an isSupplementTo relation to docxology/Blakean_Federalism. Repository publication.json and .zenodo.json bind the author-approved PDF, creator and version. Use the concept DOI as citation identity and the version DOI for artifact provenance. Parent must create the curated work/folder through reviewed Zenodo intake before treating this representation as applied. Public download remains other-closed / authored research rights reserved, with third-party rights retained; publication is not peer review or specialist certification. Source: https://zenodo.org/records/23900617, https://github.com/docxology/Blakean_Federalism/releases/tag/v1.0.0, https://github.com/docxology/Blakean_Federalism/blob/v1.0.0/publication.json.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/Blakean_Federalism",
+          "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v1.0.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "blake-family-new-working-paper",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/Blakean_Federalism/releases/tag/v1.0.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blakean_federalism",
+        "states change: blakean federalism and composition without capture",
+        "v1.0.0"
+      ],
+      "candidate_fingerprint_sha256": "a331e0100655d5d994c0bcf7cb6e6e02990c5ce9a19c5f8959ac476ce7cf2ce6",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-deaa1114f3339b28",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/Blakean_Federalism",
+      "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.14.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.14.0",
+      "folder": "2026_StatesChange",
+      "representation": "version-history-only",
+      "rationale": "This v0.14.0 GitHub release precedes the author-approved 1.0.0 working paper. The fetched Zenodo record 23900617 is explicitly edition 1.0.0 and does not assert that it archives v0.14.0. Preserve the original release and its evidence as version history under concept DOI 10.5281/zenodo.23900616; use the own-repository v1.0.0 pair for current intake. No rollback, duplicate work or relabeling of old bytes is warranted. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/Blakean_Federalism/releases/tag/v0.14.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/Blakean_Federalism",
+          "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.14.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.14.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "federalism-earlier-release",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.14.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blakean_federalism",
+        "states change: blakean federalism and composition without capture",
+        "v0.14.0"
+      ],
+      "candidate_fingerprint_sha256": "deaa1114f3339b2804d685760b75a975d9a7b427a5fb0795fe2ee386b7bb6b82",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-1adebaf77ead891a",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/Blakean_Federalism",
+      "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.13.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.13.0",
+      "folder": "2026_StatesChange",
+      "representation": "version-history-only",
+      "rationale": "This v0.13.0 GitHub release precedes the author-approved 1.0.0 working paper. The fetched Zenodo record 23900617 is explicitly edition 1.0.0 and does not assert that it archives v0.13.0. Preserve the original release and its evidence as version history under concept DOI 10.5281/zenodo.23900616; use the own-repository v1.0.0 pair for current intake. No rollback, duplicate work or relabeling of old bytes is warranted. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/Blakean_Federalism/releases/tag/v0.13.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/Blakean_Federalism",
+          "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.13.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.13.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "federalism-earlier-release",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.13.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blakean_federalism",
+        "states change: blakean federalism and composition without capture",
+        "v0.13.0"
+      ],
+      "candidate_fingerprint_sha256": "1adebaf77ead891aab6428d026369b7b2770b7a524dee80c9ad05388fe0094cc",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-d46fd670c9cec4e6",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/Blakean_Federalism",
+      "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.12.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.12.0",
+      "folder": "2026_StatesChange",
+      "representation": "version-history-only",
+      "rationale": "This v0.12.0 GitHub release precedes the author-approved 1.0.0 working paper. The fetched Zenodo record 23900617 is explicitly edition 1.0.0 and does not assert that it archives v0.12.0. Preserve the original release and its evidence as version history under concept DOI 10.5281/zenodo.23900616; use the own-repository v1.0.0 pair for current intake. No rollback, duplicate work or relabeling of old bytes is warranted. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/Blakean_Federalism/releases/tag/v0.12.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/Blakean_Federalism",
+          "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.12.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.12.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "federalism-earlier-release",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.12.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blakean_federalism",
+        "states change: blakean federalism and composition without capture",
+        "v0.12.0"
+      ],
+      "candidate_fingerprint_sha256": "d46fd670c9cec4e65fb3c217e4c79dac4df1bfcdd150a509b29713a3246ad01b",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-5c5b05a2fb10487b",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/Blakean_Federalism",
+      "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.11.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.11.0",
+      "folder": "2026_StatesChange",
+      "representation": "version-history-only",
+      "rationale": "This v0.11.0 GitHub release precedes the author-approved 1.0.0 working paper. The fetched Zenodo record 23900617 is explicitly edition 1.0.0 and does not assert that it archives v0.11.0. Preserve the original release and its evidence as version history under concept DOI 10.5281/zenodo.23900616; use the own-repository v1.0.0 pair for current intake. No rollback, duplicate work or relabeling of old bytes is warranted. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/Blakean_Federalism/releases/tag/v0.11.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/Blakean_Federalism",
+          "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.11.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.11.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "federalism-earlier-release",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.11.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blakean_federalism",
+        "states change: blakean federalism and composition without capture",
+        "v0.11.0"
+      ],
+      "candidate_fingerprint_sha256": "5c5b05a2fb10487bec5068e2b7cbddeb8ece1bfd00d815b503dc47a2eb4ae1c7",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-61c3dc76f73c5342",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/Blakean_Federalism",
+      "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.10.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.10.0",
+      "folder": "2026_StatesChange",
+      "representation": "version-history-only",
+      "rationale": "This v0.10.0 GitHub release precedes the author-approved 1.0.0 working paper. The fetched Zenodo record 23900617 is explicitly edition 1.0.0 and does not assert that it archives v0.10.0. Preserve the original release and its evidence as version history under concept DOI 10.5281/zenodo.23900616; use the own-repository v1.0.0 pair for current intake. No rollback, duplicate work or relabeling of old bytes is warranted. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/Blakean_Federalism/releases/tag/v0.10.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/Blakean_Federalism",
+          "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.10.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.10.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "federalism-earlier-release",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.10.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blakean_federalism",
+        "states change: blakean federalism and composition without capture",
+        "v0.10.0"
+      ],
+      "candidate_fingerprint_sha256": "61c3dc76f73c5342254a06b3a5d3a4e9d9b08aab86fc643d679ce088da361b91",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-6b23c57e5c8c2a0f",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/Blakean_Federalism",
+      "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.9.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.9.0",
+      "folder": "2026_StatesChange",
+      "representation": "version-history-only",
+      "rationale": "This v0.9.0 GitHub release precedes the author-approved 1.0.0 working paper. The fetched Zenodo record 23900617 is explicitly edition 1.0.0 and does not assert that it archives v0.9.0. Preserve the original release and its evidence as version history under concept DOI 10.5281/zenodo.23900616; use the own-repository v1.0.0 pair for current intake. No rollback, duplicate work or relabeling of old bytes is warranted. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/Blakean_Federalism/releases/tag/v0.9.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/Blakean_Federalism",
+          "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.9.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.9.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "federalism-earlier-release",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.9.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blakean_federalism",
+        "states change: blakean federalism and composition without capture",
+        "v0.9.0"
+      ],
+      "candidate_fingerprint_sha256": "6b23c57e5c8c2a0fb135287086bbaf5803feb874153e9d0854b38e6ea08f7e48",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-c332ebaa838e312d",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/Blakean_Federalism",
+      "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.8.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.8.0",
+      "folder": "2026_StatesChange",
+      "representation": "version-history-only",
+      "rationale": "This v0.8.0 GitHub release precedes the author-approved 1.0.0 working paper. The fetched Zenodo record 23900617 is explicitly edition 1.0.0 and does not assert that it archives v0.8.0. Preserve the original release and its evidence as version history under concept DOI 10.5281/zenodo.23900616; use the own-repository v1.0.0 pair for current intake. No rollback, duplicate work or relabeling of old bytes is warranted. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/Blakean_Federalism/releases/tag/v0.8.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/Blakean_Federalism",
+          "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.8.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.8.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "federalism-earlier-release",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.8.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blakean_federalism",
+        "states change: blakean federalism and composition without capture",
+        "v0.8.0"
+      ],
+      "candidate_fingerprint_sha256": "c332ebaa838e312d806f0ed2d8483fe6078269d25ddcf420e8487f74f61dbe4c",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-f4152c1cced66f50",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/Blakean_Federalism",
+      "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.7.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.7.0",
+      "folder": "2026_StatesChange",
+      "representation": "version-history-only",
+      "rationale": "This v0.7.0 GitHub release precedes the author-approved 1.0.0 working paper. The fetched Zenodo record 23900617 is explicitly edition 1.0.0 and does not assert that it archives v0.7.0. Preserve the original release and its evidence as version history under concept DOI 10.5281/zenodo.23900616; use the own-repository v1.0.0 pair for current intake. No rollback, duplicate work or relabeling of old bytes is warranted. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/Blakean_Federalism/releases/tag/v0.7.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/Blakean_Federalism",
+          "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.7.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.7.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "federalism-earlier-release",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.7.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blakean_federalism",
+        "states change: blakean federalism and composition without capture",
+        "v0.7.0"
+      ],
+      "candidate_fingerprint_sha256": "f4152c1cced66f5085a00406912e3599ac48836cdb05668a5355eccf871d6b8a",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-8aa1539b02908e0c",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/Blakean_Federalism",
+      "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.6.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.6.0",
+      "folder": "2026_StatesChange",
+      "representation": "version-history-only",
+      "rationale": "This v0.6.0 GitHub release precedes the author-approved 1.0.0 working paper. The fetched Zenodo record 23900617 is explicitly edition 1.0.0 and does not assert that it archives v0.6.0. Preserve the original release and its evidence as version history under concept DOI 10.5281/zenodo.23900616; use the own-repository v1.0.0 pair for current intake. No rollback, duplicate work or relabeling of old bytes is warranted. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/Blakean_Federalism/releases/tag/v0.6.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/Blakean_Federalism",
+          "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.6.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.6.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "federalism-earlier-release",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.6.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blakean_federalism",
+        "states change: blakean federalism and composition without capture",
+        "v0.6.0"
+      ],
+      "candidate_fingerprint_sha256": "8aa1539b02908e0c08d1edcfec8be4018717a9fc1ad98e20d089b941d15df725",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-fcedf41199eb92bb",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/Blakean_Federalism",
+      "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.5.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.5.0",
+      "folder": "2026_StatesChange",
+      "representation": "version-history-only",
+      "rationale": "This v0.5.0 GitHub release precedes the author-approved 1.0.0 working paper. The fetched Zenodo record 23900617 is explicitly edition 1.0.0 and does not assert that it archives v0.5.0. Preserve the original release and its evidence as version history under concept DOI 10.5281/zenodo.23900616; use the own-repository v1.0.0 pair for current intake. No rollback, duplicate work or relabeling of old bytes is warranted. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/Blakean_Federalism/releases/tag/v0.5.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/Blakean_Federalism",
+          "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.5.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.5.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "federalism-earlier-release",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.5.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blakean_federalism",
+        "states change: blakean federalism and composition without capture",
+        "v0.5.0"
+      ],
+      "candidate_fingerprint_sha256": "fcedf41199eb92bb3b3f06d3d1278aefbe3bafebec61dd224976e8c145366932",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-fd871ede3b2b8d5c",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/Blakean_Federalism",
+      "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.4.1",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.4.1",
+      "folder": "2026_StatesChange",
+      "representation": "version-history-only",
+      "rationale": "This v0.4.1 GitHub release precedes the author-approved 1.0.0 working paper. The fetched Zenodo record 23900617 is explicitly edition 1.0.0 and does not assert that it archives v0.4.1. Preserve the original release and its evidence as version history under concept DOI 10.5281/zenodo.23900616; use the own-repository v1.0.0 pair for current intake. No rollback, duplicate work or relabeling of old bytes is warranted. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/Blakean_Federalism/releases/tag/v0.4.1.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/Blakean_Federalism",
+          "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.4.1",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.4.1",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "federalism-earlier-release",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.4.1",
+        "https://zenodo.org/records/23900616",
+        "docxology/blakean_federalism",
+        "states change: blakean federalism and composition without capture",
+        "v0.4.1"
+      ],
+      "candidate_fingerprint_sha256": "fd871ede3b2b8d5c2bbc108c685fe8e28853f9f0ed8f125d7b8385d455c6de50",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-f5e2dc72f6ea947b",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/Blakean_Federalism",
+      "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.4.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.4.0",
+      "folder": "2026_StatesChange",
+      "representation": "version-history-only",
+      "rationale": "This v0.4.0 GitHub release precedes the author-approved 1.0.0 working paper. The fetched Zenodo record 23900617 is explicitly edition 1.0.0 and does not assert that it archives v0.4.0. Preserve the original release and its evidence as version history under concept DOI 10.5281/zenodo.23900616; use the own-repository v1.0.0 pair for current intake. No rollback, duplicate work or relabeling of old bytes is warranted. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/Blakean_Federalism/releases/tag/v0.4.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/Blakean_Federalism",
+          "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.4.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.4.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "federalism-earlier-release",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.4.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blakean_federalism",
+        "states change: blakean federalism and composition without capture",
+        "v0.4.0"
+      ],
+      "candidate_fingerprint_sha256": "f5e2dc72f6ea947b81085fff0d7086e4cbfa656669bc76716c2937bf42611f92",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-6c5f48153b698c2f",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/Blakean_Federalism",
+      "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.3.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.3.0",
+      "folder": "2026_StatesChange",
+      "representation": "version-history-only",
+      "rationale": "This v0.3.0 GitHub release precedes the author-approved 1.0.0 working paper. The fetched Zenodo record 23900617 is explicitly edition 1.0.0 and does not assert that it archives v0.3.0. Preserve the original release and its evidence as version history under concept DOI 10.5281/zenodo.23900616; use the own-repository v1.0.0 pair for current intake. No rollback, duplicate work or relabeling of old bytes is warranted. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/Blakean_Federalism/releases/tag/v0.3.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/Blakean_Federalism",
+          "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.3.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.3.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "federalism-earlier-release",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.3.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blakean_federalism",
+        "states change: blakean federalism and composition without capture",
+        "v0.3.0"
+      ],
+      "candidate_fingerprint_sha256": "6c5f48153b698c2f05c40f6db2a4c65b0e5c5c09003c8b77d46a88241ce56f2a",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-b9e9ea4baba7a735",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/Blakean_Federalism",
+      "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.2.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.2.0",
+      "folder": "2026_StatesChange",
+      "representation": "version-history-only",
+      "rationale": "This v0.2.0 GitHub release precedes the author-approved 1.0.0 working paper. The fetched Zenodo record 23900617 is explicitly edition 1.0.0 and does not assert that it archives v0.2.0. Preserve the original release and its evidence as version history under concept DOI 10.5281/zenodo.23900616; use the own-repository v1.0.0 pair for current intake. No rollback, duplicate work or relabeling of old bytes is warranted. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/Blakean_Federalism/releases/tag/v0.2.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/Blakean_Federalism",
+          "github_release_url": "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.2.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "federalism-earlier-release",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/Blakean_Federalism/releases/tag/v0.2.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blakean_federalism",
+        "states change: blakean federalism and composition without capture",
+        "v0.2.0"
+      ],
+      "candidate_fingerprint_sha256": "b9e9ea4baba7a735a2a693d4b579956bb1e9cd8431ba199f0e7b8408944c8129",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-0b49ba171f47f5a1",
+      "decision": "accept",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.21047573",
+      "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+      "candidate_github_repo": "docxology/blake",
+      "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.7.0",
+      "zenodo_record_url": "https://zenodo.org/records/21047573",
+      "release_tag": "v0.7.0",
+      "folder": "2026_MappingWilliamBlake",
+      "representation": "bibliography-folder",
+      "rationale": "This is the current manuscript edition of the existing Mapping William Blake's Works work (bibliography row 179). The own-repository v0.7.0 release explicitly cites version DOI 10.5281/zenodo.23921364; Zenodo record 23921364 records manuscript 0.5.0, date 2026-11-03 and the exact tree/v0.7.0 relation, and contains Blake.pdf plus reproduction materials. Preserve citation concept DOI 10.5281/zenodo.21047573 and the existing folder. Update artifact/version/release metadata separately: manuscript 0.5.0, software 0.7.0, historical analytical producer 0.2.0rc1. Preserve earlier PDFs and replace old findings only through exact-source review. No duplicate work or complete-oeuvre claim follows. Source: https://zenodo.org/records/23921364 and https://github.com/docxology/blake/releases/tag/v0.7.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21047573",
+          "github_repo": "docxology/blake",
+          "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.7.0",
+          "zenodo_record_url": "https://zenodo.org/records/21047573",
+          "record_title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+          "release_tag": "v0.7.0",
+          "zenodo_version_record_id": "23921364",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "blake-current-manuscript",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.21047573",
+        "https://github.com/docxology/blake/releases/tag/v0.7.0",
+        "https://zenodo.org/records/21047573",
+        "docxology/blake",
+        "mapping william blake's works: evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+        "v0.7.0"
+      ],
+      "candidate_fingerprint_sha256": "0b49ba171f47f5a18d7d39d650d2c5ceeb827f5736c26f4c20e0f8d28d9203b6",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-ff3fac0383736d6d",
+      "decision": "reject",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900582",
+      "title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+      "candidate_github_repo": "docxology/blake",
+      "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.7.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900582",
+      "release_tag": "v0.7.0",
+      "folder": "2026_BlakeanEntomology",
+      "representation": "cross-project-reference-only",
+      "rationale": "The fetched sibling paper 'Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention' identifies docxology/Blakean_Entomology as its isSupplementTo repository. Its references to Blake's DOI and the sibling DOI are research/SDK context, not evidence that the blake release archives this application paper. Keep this paper under its own concept DOI, repository and own v1.0.0 release; do not attach its DOI to blake v0.7.0 or create a duplicate. Source: https://zenodo.org/records/23900583 and https://github.com/docxology/blake/releases/tag/v0.7.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900582",
+          "github_repo": "docxology/blake",
+          "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.7.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900582",
+          "record_title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+          "release_tag": "v0.7.0",
+          "zenodo_version_record_id": "23900583",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "blake-sibling-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900582",
+        "https://github.com/docxology/blake/releases/tag/v0.7.0",
+        "https://zenodo.org/records/23900582",
+        "docxology/blake",
+        "blakean entomology: small lives, uncertain bodies, and the work of attention",
+        "v0.7.0"
+      ],
+      "candidate_fingerprint_sha256": "ff3fac0383736d6d4f6191e5ce17bbb9075b4e18125737515d31950ff9658ef5",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-00146d65b416f74f",
+      "decision": "reject",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900582",
+      "title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+      "candidate_github_repo": "docxology/blake",
+      "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.2.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900582",
+      "release_tag": "v0.2.0",
+      "folder": "2026_BlakeanEntomology",
+      "representation": "cross-project-reference-only",
+      "rationale": "The fetched sibling paper 'Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention' identifies docxology/Blakean_Entomology as its isSupplementTo repository. Its references to Blake's DOI and the sibling DOI are research/SDK context, not evidence that the blake release archives this application paper. Keep this paper under its own concept DOI, repository and own v1.0.0 release; do not attach its DOI to blake v0.2.0 or create a duplicate. Source: https://zenodo.org/records/23900583 and https://github.com/docxology/blake/releases/tag/v0.2.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900582",
+          "github_repo": "docxology/blake",
+          "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900582",
+          "record_title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+          "release_tag": "v0.2.0",
+          "zenodo_version_record_id": "23900583",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "blake-sibling-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900582",
+        "https://github.com/docxology/blake/releases/tag/v0.2.0",
+        "https://zenodo.org/records/23900582",
+        "docxology/blake",
+        "blakean entomology: small lives, uncertain bodies, and the work of attention",
+        "v0.2.0"
+      ],
+      "candidate_fingerprint_sha256": "00146d65b416f74fb2afd25e75b579668eaaeb96ed4bb93a6526be736377004c",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-61871c0463e92018",
+      "decision": "reject",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900582",
+      "title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+      "candidate_github_repo": "docxology/blake",
+      "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.1.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900582",
+      "release_tag": "v0.1.0",
+      "folder": "2026_BlakeanEntomology",
+      "representation": "cross-project-reference-only",
+      "rationale": "The fetched sibling paper 'Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention' identifies docxology/Blakean_Entomology as its isSupplementTo repository. Its references to Blake's DOI and the sibling DOI are research/SDK context, not evidence that the blake release archives this application paper. Keep this paper under its own concept DOI, repository and own v1.0.0 release; do not attach its DOI to blake v0.1.0 or create a duplicate. Source: https://zenodo.org/records/23900583 and https://github.com/docxology/blake/releases/tag/v0.1.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900582",
+          "github_repo": "docxology/blake",
+          "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900582",
+          "record_title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+          "release_tag": "v0.1.0",
+          "zenodo_version_record_id": "23900583",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "blake-sibling-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900582",
+        "https://github.com/docxology/blake/releases/tag/v0.1.0",
+        "https://zenodo.org/records/23900582",
+        "docxology/blake",
+        "blakean entomology: small lives, uncertain bodies, and the work of attention",
+        "v0.1.0"
+      ],
+      "candidate_fingerprint_sha256": "61871c0463e9201853f9d156176d762d27d1e47090c98541e00803316bb73cb9",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-8d02310cfdac72d7",
+      "decision": "reject",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/blake",
+      "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.7.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.7.0",
+      "folder": "2026_StatesChange",
+      "representation": "cross-project-reference-only",
+      "rationale": "The fetched sibling paper 'States Change: Blakean Federalism and composition without capture' identifies docxology/Blakean_Federalism as its isSupplementTo repository. Its references to Blake's DOI and the sibling DOI are research/SDK context, not evidence that the blake release archives this application paper. Keep this paper under its own concept DOI, repository and own v1.0.0 release; do not attach its DOI to blake v0.7.0 or create a duplicate. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/blake/releases/tag/v0.7.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/blake",
+          "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.7.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.7.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "blake-sibling-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/blake/releases/tag/v0.7.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blake",
+        "states change: blakean federalism and composition without capture",
+        "v0.7.0"
+      ],
+      "candidate_fingerprint_sha256": "8d02310cfdac72d771fc2622a287e67589fbd95306a7dbb19b243ae38e392569",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-8d25b72ea4f7fd14",
+      "decision": "reject",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/blake",
+      "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.2.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.2.0",
+      "folder": "2026_StatesChange",
+      "representation": "cross-project-reference-only",
+      "rationale": "The fetched sibling paper 'States Change: Blakean Federalism and composition without capture' identifies docxology/Blakean_Federalism as its isSupplementTo repository. Its references to Blake's DOI and the sibling DOI are research/SDK context, not evidence that the blake release archives this application paper. Keep this paper under its own concept DOI, repository and own v1.0.0 release; do not attach its DOI to blake v0.2.0 or create a duplicate. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/blake/releases/tag/v0.2.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/blake",
+          "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.2.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "blake-sibling-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/blake/releases/tag/v0.2.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blake",
+        "states change: blakean federalism and composition without capture",
+        "v0.2.0"
+      ],
+      "candidate_fingerprint_sha256": "8d25b72ea4f7fd14e9dd4389f8a4c0277999e0221a2a417fe42d1c2ebbd13a46",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-fc32c7a6b41aa599",
+      "decision": "reject",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "candidate_github_repo": "docxology/blake",
+      "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.1.0",
+      "zenodo_record_url": "https://zenodo.org/records/23900616",
+      "release_tag": "v0.1.0",
+      "folder": "2026_StatesChange",
+      "representation": "cross-project-reference-only",
+      "rationale": "The fetched sibling paper 'States Change: Blakean Federalism and composition without capture' identifies docxology/Blakean_Federalism as its isSupplementTo repository. Its references to Blake's DOI and the sibling DOI are research/SDK context, not evidence that the blake release archives this application paper. Keep this paper under its own concept DOI, repository and own v1.0.0 release; do not attach its DOI to blake v0.1.0 or create a duplicate. Source: https://zenodo.org/records/23900617 and https://github.com/docxology/blake/releases/tag/v0.1.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23900616",
+          "github_repo": "docxology/blake",
+          "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/23900616",
+          "record_title": "States Change: Blakean Federalism and composition without capture",
+          "release_tag": "v0.1.0",
+          "zenodo_version_record_id": "23900617",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "blake-sibling-reference",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23900616",
+        "https://github.com/docxology/blake/releases/tag/v0.1.0",
+        "https://zenodo.org/records/23900616",
+        "docxology/blake",
+        "states change: blakean federalism and composition without capture",
+        "v0.1.0"
+      ],
+      "candidate_fingerprint_sha256": "fc32c7a6b41aa599289f6454c4146085fbcd60d036e1eee8255b80949bde0519",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-2d2a04dec9b18376",
+      "decision": "accept",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23922457",
+      "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+      "candidate_github_repo": "docxology/blake",
+      "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.7.0",
+      "zenodo_record_url": "https://zenodo.org/records/23922457",
+      "release_tag": "v0.7.0",
+      "folder": "2026_MappingWilliamBlake",
+      "representation": "software-catalog",
+      "rationale": "Zenodo record 23922458 (concept 10.5281/zenodo.23922457) is a supplemental automatic source archive containing only docxology/blake-v0.7.0.zip and identifying tree/v0.7.0. Its upstream metadata says workingpaper/version 0.5.0; retain that observed type rather than falsely rewriting it as software. Link the archive from the existing blake software row alongside the already catalogued manuscript concept 10.5281/zenodo.21047573 and its current version 23921364. Same title does not make this a second manuscript work, and the ZIP is not evidence of a separately extracted PDF. Keep paper/software/archive identities and licenses explicit. Source: https://zenodo.org/records/23922458 and https://github.com/docxology/blake/releases/tag/v0.7.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23922457",
+          "github_repo": "docxology/blake",
+          "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.7.0",
+          "zenodo_record_url": "https://zenodo.org/records/23922457",
+          "record_title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+          "release_tag": "v0.7.0",
+          "zenodo_version_record_id": "23922458",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "blake-supplemental-source-archive",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23922457",
+        "https://github.com/docxology/blake/releases/tag/v0.7.0",
+        "https://zenodo.org/records/23922457",
+        "docxology/blake",
+        "mapping william blake's works: evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+        "v0.7.0"
+      ],
+      "candidate_fingerprint_sha256": "2d2a04dec9b183767de7d2e6b81957a37807b7d61ac419e96084c25be29e8944",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-8b3216c35d85ebc4",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23922457",
+      "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+      "candidate_github_repo": "docxology/blake",
+      "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.2.0",
+      "zenodo_record_url": "https://zenodo.org/records/23922457",
+      "release_tag": "v0.2.0",
+      "folder": "2026_MappingWilliamBlake",
+      "representation": "version-history-only",
+      "rationale": "This supplemental automatic source archive is version record 23922458, containing only docxology/blake-v0.7.0.zip and the exact tree/v0.7.0 relation. It cannot establish that older release v0.2.0 is the archived payload. Preserve this older release's history and original evidence; acknowledge the archive through the current v0.7.0 software row, not a new bibliography work or relabeled old artifact. Source: https://zenodo.org/records/23922458 and https://github.com/docxology/blake/releases/tag/v0.2.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23922457",
+          "github_repo": "docxology/blake",
+          "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/23922457",
+          "record_title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+          "release_tag": "v0.2.0",
+          "zenodo_version_record_id": "23922458",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "blake-source-archive-earlier-release",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23922457",
+        "https://github.com/docxology/blake/releases/tag/v0.2.0",
+        "https://zenodo.org/records/23922457",
+        "docxology/blake",
+        "mapping william blake's works: evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+        "v0.2.0"
+      ],
+      "candidate_fingerprint_sha256": "8b3216c35d85ebc430cd8a034d39a76cf72ac3b2666e74c19c3f29133329863a",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-d20c90f121c21506",
+      "decision": "superseded",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.23922457",
+      "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+      "candidate_github_repo": "docxology/blake",
+      "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.1.0",
+      "zenodo_record_url": "https://zenodo.org/records/23922457",
+      "release_tag": "v0.1.0",
+      "folder": "2026_MappingWilliamBlake",
+      "representation": "version-history-only",
+      "rationale": "This supplemental automatic source archive is version record 23922458, containing only docxology/blake-v0.7.0.zip and the exact tree/v0.7.0 relation. It cannot establish that older release v0.1.0 is the archived payload. Preserve this older release's history and original evidence; acknowledge the archive through the current v0.7.0 software row, not a new bibliography work or relabeled old artifact. Source: https://zenodo.org/records/23922458 and https://github.com/docxology/blake/releases/tag/v0.1.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23922457",
+          "github_repo": "docxology/blake",
+          "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/23922457",
+          "record_title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+          "release_tag": "v0.1.0",
+          "zenodo_version_record_id": "23922458",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "blake-source-archive-earlier-release",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23922457",
+        "https://github.com/docxology/blake/releases/tag/v0.1.0",
+        "https://zenodo.org/records/23922457",
+        "docxology/blake",
+        "mapping william blake's works: evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+        "v0.1.0"
+      ],
+      "candidate_fingerprint_sha256": "d20c90f121c2150636eb4d91b9dfbc32b5ff38c703077f4cab92365313ed788d",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-a7732cab968f5c75",
+      "decision": "accept",
+      "decided_at": "2026-11-05T01:21:43+00:00",
+      "decided_by": "Codex (public-source review)",
+      "doi": "10.5281/zenodo.16903351",
+      "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+      "candidate_github_repo": "docxology/template",
+      "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/16903351",
+      "release_tag": "v5.0.0",
+      "folder": "2026_ReproducibleResearch",
+      "representation": "software-catalog",
+      "rationale": "The current root template release is independently identified by the archive's exact tree/v5.0.0 isSupplementTo relation and version v5.0.0; version record 23955189 contains the root source ZIP. Concept DOI 10.5281/zenodo.16903351 already has a bibliography work and the template software row. Record this current software/source archive there, without creating another work or treating its ZIP as a new manuscript PDF. The older extracted manuscript evidence remains attached to its original source. Source: https://zenodo.org/records/23955189 and https://github.com/docxology/template/releases/tag/v5.0.0.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.16903351",
+          "github_repo": "docxology/template",
+          "github_release_url": "https://github.com/docxology/template/releases/tag/v5.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/16903351",
+          "record_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "release_tag": "v5.0.0",
+          "zenodo_version_record_id": "23955189",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "review_category": "template-current-source-archive",
+      "candidate_fingerprint": [
+        "10.5281/zenodo.16903351",
+        "https://github.com/docxology/template/releases/tag/v5.0.0",
+        "https://zenodo.org/records/16903351",
+        "docxology/template",
+        "a template/ approach to reproducible generative research: architecture and ergonomics from configuration through publication",
+        "v5.0.0"
+      ],
+      "candidate_fingerprint_sha256": "a7732cab968f5c75610398f4f50c534ea5f482fa48a3b4ece260ff2a5f7fcf6f",
+      "source_report": "reports/publication_intake_2026-11-05.json"
     }
   ],
-  "updated_at": "2026-11-01T00:00:00+00:00"
+  "updated_at": "2026-11-05T01:42:21.179059+00:00"
 }

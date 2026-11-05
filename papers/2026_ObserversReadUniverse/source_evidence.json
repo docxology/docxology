@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "reviewed_on_local_date": "2026-11-04",
+  "release_tag": "r2061",
+  "source_commit": "f50e4da10533b8f5d3bf92a711c07bf6d563fe74",
+  "citation_url": "https://philpapers.org/rec/MUEFOC",
+  "source_manifest_url": "https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/paper/paper_release_manifest.json",
+  "sources": [
+    {
+      "file": "ObserversReadUniverse_r2061.pdf",
+      "url": "https://raw.githubusercontent.com/FloatingPragma/observer-patch-holography/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.pdf",
+      "bytes": 354219,
+      "sha256": "26ad29e47334818cbf3e00741b87fc5b4defc229526c4b49d429ee4eac3ea6e6"
+    },
+    {
+      "file": "flagship_r2061.tex",
+      "url": "https://raw.githubusercontent.com/FloatingPragma/observer-patch-holography/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex",
+      "bytes": 178668,
+      "sha256": "6e9fe21cf176c53e0a54164df38363e62d0121f23ec3c4d1256fcf2ecf9136df"
+    },
+    {
+      "file": "LICENSE_r2061.txt",
+      "url": "https://raw.githubusercontent.com/FloatingPragma/observer-patch-holography/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/LICENSE",
+      "bytes": 3195,
+      "sha256": "7c5428d9a5ad103cf9fa09bae0a9c27f132c53de6d8c7671066173206f79f735"
+    }
+  ],
+  "extraction": {
+    "file": "full_text_r2061.md",
+    "source_pdf": "ObserversReadUniverse_r2061.pdf",
+    "source_pdf_sha256": "26ad29e47334818cbf3e00741b87fc5b4defc229526c4b49d429ee4eac3ea6e6",
+    "bytes": 164927,
+    "sha256": "f6f9bfb98c054d6e61491b770c8af8bb839537c9434d223cc7084e6fb45b67e4",
+    "pages": 46,
+    "method": "pypdf page.extract_text; all pages retained, visual/scientific verification separate",
+    "tool": "pypdf",
+    "tool_version": "Not recorded by the acquisition receipt.",
+    "canonical_projection": "full_text.md"
+  },
+  "sampled_source_review": {
+    "reviewer": "Codex (public-source bibliographic review)",
+    "sample": "Extracted first PDF page: title, all fourteen authors in order, release r2061 and date November 4, 2026.",
+    "corroboration": "Agrees with the frozen flagship TeX title/author metadata and paper/release_info.tex.",
+    "frozen_tex_url": "https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex",
+    "release_info_url": "https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/paper/release_info.tex"
+  },
+  "preserved_history": {
+    "release_tag": "r2052",
+    "source_commit": "879ed37ad2c1933ecb6dd8f54271362ee3f4d41c",
+    "pdf": "ObserversReadUniverse_r2052.pdf",
+    "pdf_sha256": "e23da212840627f16e10ac05f7538eab10556702ceda8a404f8c32359e89b737",
+    "full_text": "full_text_r2052.md",
+    "full_text_sha256": "8fbadbdc1c82558d2cf18322c6438052c1083a826b2d63bc0ade130cabe23c2e",
+    "scope": "Earlier source and intake evidence retain their original edition identity."
+  },
+  "license": {
+    "authored_paper": "CC-BY-NC-SA-4.0",
+    "software": "Apache-2.0",
+    "upstream_terms": "Quoted Particle Data Group measurements retain upstream terms.",
+    "source": "LICENSE_r2061.txt",
+    "frozen_source_url": "https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/LICENSE"
+  },
+  "verification_scope": "Acquired byte identity against a frozen release-manifest digest, retained all-page PDF text, and sampled first-page bibliographic corroboration. No rendered-page visual inspection, complete extraction-quality assessment, independent theorem/model audit, or physical/scientific confirmation is claimed."
+}

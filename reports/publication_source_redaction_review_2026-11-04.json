@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-11-04",
+  "review_timezone": "America/Los_Angeles",
+  "recorded_at": "2026-11-05T02:33:56Z",
+  "review_kind": "public-source-privacy-redaction",
+  "reason": "A colon-prefixed local filesystem path in captured upstream release prose was missed by the prior detector.",
+  "policy": "local-filesystem-paths-v1",
+  "source_release_url": "https://github.com/docxology/witness_register/releases/tag/v0.2.0",
+  "private_original_bytes_preserved": true,
+  "private_original_evidence_location_published": false,
+  "method": "Static byte-preserving source review, release-body-only redaction, and exact decision-source hash rebinding; no network intake, reclassification, new approval or source attestation.",
+  "artifacts": [
+    {
+      "path": "reports/paired_publications_2026-11-05.json",
+      "original_sha256": "a9eada0f18e509689ba6ba11d219902ae9a3aea99ff66613767bc808983c86df",
+      "cleaned_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+      "original_bytes": 7059605,
+      "cleaned_bytes": 7059960,
+      "observation_generated_at": "2026-11-05T01:17:28Z",
+      "release_body_occurrences_changed": 3
+    },
+    {
+      "path": "reports/publication_intake_2026-11-05.json",
+      "original_sha256": "a9eada0f18e509689ba6ba11d219902ae9a3aea99ff66613767bc808983c86df",
+      "cleaned_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+      "original_bytes": 7059605,
+      "cleaned_bytes": 7059960,
+      "observation_generated_at": "2026-11-05T01:17:28Z",
+      "release_body_occurrences_changed": 3
+    }
+  ],
+  "release_body_redactions": [
+    {
+      "report": "reports/paired_publications_2026-11-05.json",
+      "occurrences": [
+        {
+          "pointer": "/github_releases/103/body",
+          "release_url": "https://github.com/docxology/witness_register/releases/tag/v0.2.0",
+          "tag": "v0.2.0",
+          "original_body_sha256": "cbe32ea6fb2aca1df412fe076b0bb6ffd2581ecbda42c90ddaf550be8d63b3a9",
+          "cleaned_body_sha256": "672cf322d3eb495a26cf5456c58689c4b033f5b7bbf9536b354ef1396f70497a",
+          "redacted_path_count": 1,
+          "prior_body_redaction": null,
+          "body_redaction": {
+            "policy": "local-filesystem-paths-v1",
+            "source_sha256": "cbe32ea6fb2aca1df412fe076b0bb6ffd2581ecbda42c90ddaf550be8d63b3a9"
+          }
+        },
+        {
+          "pointer": "/pairs/488/release/body",
+          "release_url": "https://github.com/docxology/witness_register/releases/tag/v0.2.0",
+          "tag": "v0.2.0",
+          "original_body_sha256": "cbe32ea6fb2aca1df412fe076b0bb6ffd2581ecbda42c90ddaf550be8d63b3a9",
+          "cleaned_body_sha256": "672cf322d3eb495a26cf5456c58689c4b033f5b7bbf9536b354ef1396f70497a",
+          "redacted_path_count": 1,
+          "prior_body_redaction": null,
+          "body_redaction": {
+            "policy": "local-filesystem-paths-v1",
+            "source_sha256": "cbe32ea6fb2aca1df412fe076b0bb6ffd2581ecbda42c90ddaf550be8d63b3a9"
+          }
+        },
+        {
+          "pointer": "/pairs/489/release/body",
+          "release_url": "https://github.com/docxology/witness_register/releases/tag/v0.2.0",
+          "tag": "v0.2.0",
+          "original_body_sha256": "cbe32ea6fb2aca1df412fe076b0bb6ffd2581ecbda42c90ddaf550be8d63b3a9",
+          "cleaned_body_sha256": "672cf322d3eb495a26cf5456c58689c4b033f5b7bbf9536b354ef1396f70497a",
+          "redacted_path_count": 1,
+          "prior_body_redaction": null,
+          "body_redaction": {
+            "policy": "local-filesystem-paths-v1",
+            "source_sha256": "cbe32ea6fb2aca1df412fe076b0bb6ffd2581ecbda42c90ddaf550be8d63b3a9"
+          }
+        }
+      ]
+    },
+    {
+      "report": "reports/publication_intake_2026-11-05.json",
+      "occurrences": [
+        {
+          "pointer": "/github_releases/103/body",
+          "release_url": "https://github.com/docxology/witness_register/releases/tag/v0.2.0",
+          "tag": "v0.2.0",
+          "original_body_sha256": "cbe32ea6fb2aca1df412fe076b0bb6ffd2581ecbda42c90ddaf550be8d63b3a9",
+          "cleaned_body_sha256": "672cf322d3eb495a26cf5456c58689c4b033f5b7bbf9536b354ef1396f70497a",
+          "redacted_path_count": 1,
+          "prior_body_redaction": null,
+          "body_redaction": {
+            "policy": "local-filesystem-paths-v1",
+            "source_sha256": "cbe32ea6fb2aca1df412fe076b0bb6ffd2581ecbda42c90ddaf550be8d63b3a9"
+          }
+        },
+        {
+          "pointer": "/pairs/488/release/body",
+          "release_url": "https://github.com/docxology/witness_register/releases/tag/v0.2.0",
+          "tag": "v0.2.0",
+          "original_body_sha256": "cbe32ea6fb2aca1df412fe076b0bb6ffd2581ecbda42c90ddaf550be8d63b3a9",
+          "cleaned_body_sha256": "672cf322d3eb495a26cf5456c58689c4b033f5b7bbf9536b354ef1396f70497a",
+          "redacted_path_count": 1,
+          "prior_body_redaction": null,
+          "body_redaction": {
+            "policy": "local-filesystem-paths-v1",
+            "source_sha256": "cbe32ea6fb2aca1df412fe076b0bb6ffd2581ecbda42c90ddaf550be8d63b3a9"
+          }
+        },
+        {
+          "pointer": "/pairs/489/release/body",
+          "release_url": "https://github.com/docxology/witness_register/releases/tag/v0.2.0",
+          "tag": "v0.2.0",
+          "original_body_sha256": "cbe32ea6fb2aca1df412fe076b0bb6ffd2581ecbda42c90ddaf550be8d63b3a9",
+          "cleaned_body_sha256": "672cf322d3eb495a26cf5456c58689c4b033f5b7bbf9536b354ef1396f70497a",
+          "redacted_path_count": 1,
+          "prior_body_redaction": null,
+          "body_redaction": {
+            "policy": "local-filesystem-paths-v1",
+            "source_sha256": "cbe32ea6fb2aca1df412fe076b0bb6ffd2581ecbda42c90ddaf550be8d63b3a9"
+          }
+        }
+      ]
+    }
+  ],
+  "decision_source_rebinding": {
+    "path": "data/paired-publication-decisions.json",
+    "original_sha256": "eb39f3cc2b7d8ee1f6f3a6353713c5904e3f2dbc47a1cfe836ed077be6ffdee2",
+    "cleaned_sha256": "8ec005dfce0e33e71e052e48ae5f367954d1a9970a9e7679999bafe4e2fd46c5",
+    "source_report": "reports/publication_intake_2026-11-05.json",
+    "original_source_report_sha256": "a9eada0f18e509689ba6ba11d219902ae9a3aea99ff66613767bc808983c86df",
+    "cleaned_source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+    "changed_field_count": 49,
+    "changed_fields": [
+      "/groups/219/raw_candidates/0/source_report_sha256",
+      "/groups/220/raw_candidates/0/source_report_sha256",
+      "/groups/221/raw_candidates/0/source_report_sha256",
+      "/groups/222/raw_candidates/0/source_report_sha256",
+      "/groups/223/raw_candidates/0/source_report_sha256",
+      "/groups/224/raw_candidates/0/source_report_sha256",
+      "/groups/225/raw_candidates/0/source_report_sha256",
+      "/groups/226/raw_candidates/0/source_report_sha256",
+      "/groups/227/raw_candidates/0/source_report_sha256",
+      "/groups/228/raw_candidates/0/source_report_sha256",
+      "/groups/229/raw_candidates/0/source_report_sha256",
+      "/groups/230/raw_candidates/0/source_report_sha256",
+      "/groups/231/raw_candidates/0/source_report_sha256",
+      "/groups/232/raw_candidates/0/source_report_sha256",
+      "/groups/233/raw_candidates/0/source_report_sha256",
+      "/groups/234/raw_candidates/0/source_report_sha256",
+      "/groups/235/raw_candidates/0/source_report_sha256",
+      "/groups/236/raw_candidates/0/source_report_sha256",
+      "/groups/237/raw_candidates/0/source_report_sha256",
+      "/groups/238/raw_candidates/0/source_report_sha256",
+      "/groups/239/raw_candidates/0/source_report_sha256",
+      "/groups/240/raw_candidates/0/source_report_sha256",
+      "/groups/241/raw_candidates/0/source_report_sha256",
+      "/groups/242/raw_candidates/0/source_report_sha256",
+      "/groups/243/raw_candidates/0/source_report_sha256",
+      "/groups/244/raw_candidates/0/source_report_sha256",
+      "/groups/245/raw_candidates/0/source_report_sha256",
+      "/groups/246/raw_candidates/0/source_report_sha256",
+      "/groups/247/raw_candidates/0/source_report_sha256",
+      "/groups/248/raw_candidates/0/source_report_sha256",
+      "/groups/249/raw_candidates/0/source_report_sha256",
+      "/groups/250/raw_candidates/0/source_report_sha256",
+      "/groups/251/raw_candidates/0/source_report_sha256",
+      "/groups/252/raw_candidates/0/source_report_sha256",
+      "/groups/253/raw_candidates/0/source_report_sha256",
+      "/groups/254/raw_candidates/0/source_report_sha256",
+      "/groups/255/raw_candidates/0/source_report_sha256",
+      "/groups/256/raw_candidates/0/source_report_sha256",
+      "/groups/257/raw_candidates/0/source_report_sha256",
+      "/groups/258/raw_candidates/0/source_report_sha256",
+      "/groups/259/raw_candidates/0/source_report_sha256",
+      "/groups/260/raw_candidates/0/source_report_sha256",
+      "/groups/261/raw_candidates/0/source_report_sha256",
+      "/groups/262/raw_candidates/0/source_report_sha256",
+      "/groups/263/raw_candidates/0/source_report_sha256",
+      "/groups/264/raw_candidates/0/source_report_sha256",
+      "/groups/265/raw_candidates/0/source_report_sha256",
+      "/groups/266/raw_candidates/0/source_report_sha256",
+      "/groups/267/raw_candidates/0/source_report_sha256"
+    ],
+    "decision_group_ids": [
+      "review-2026-11-04-897e61d2200281a9",
+      "review-2026-11-04-f33e7907471b4ea7",
+      "review-2026-11-04-5c3e48ffe19b713f",
+      "review-2026-11-04-4f92ed6c77cf6b1c",
+      "review-2026-11-04-a4894dcd1c69ea61",
+      "review-2026-11-04-bef1c50b9f6a6462",
+      "review-2026-11-04-58c93f1e165f90ee",
+      "review-2026-11-04-046f3c337c329896",
+      "review-2026-11-04-182fb48c2f5249fa",
+      "review-2026-11-04-9f3f13d109771986",
+      "review-2026-11-04-29447470683f650e",
+      "review-2026-11-04-ef7890d9eaa57bbc",
+      "review-2026-11-04-5f250f140367eedc",
+      "review-2026-11-04-0aa35c9a65f5c41a",
+      "review-2026-11-04-1da807cae60ee800",
+      "review-2026-11-04-4783afe14b1ca1cf",
+      "review-2026-11-04-b957759fecf71ef1",
+      "review-2026-11-04-13bbb292c02df273",
+      "review-2026-11-04-e6c70e36a2e36ba8",
+      "review-2026-11-04-123b7f9e6a7400cc",
+      "review-2026-11-04-850d9cc9bca4e571",
+      "review-2026-11-04-ba07501b2fab9542",
+      "review-2026-11-04-3b626764a860a5c5",
+      "review-2026-11-04-a331e0100655d5d9",
+      "review-2026-11-04-deaa1114f3339b28",
+      "review-2026-11-04-1adebaf77ead891a",
+      "review-2026-11-04-d46fd670c9cec4e6",
+      "review-2026-11-04-5c5b05a2fb10487b",
+      "review-2026-11-04-61c3dc76f73c5342",
+      "review-2026-11-04-6b23c57e5c8c2a0f",
+      "review-2026-11-04-c332ebaa838e312d",
+      "review-2026-11-04-f4152c1cced66f50",
+      "review-2026-11-04-8aa1539b02908e0c",
+      "review-2026-11-04-fcedf41199eb92bb",
+      "review-2026-11-04-fd871ede3b2b8d5c",
+      "review-2026-11-04-f5e2dc72f6ea947b",
+      "review-2026-11-04-6c5f48153b698c2f",
+      "review-2026-11-04-b9e9ea4baba7a735",
+      "review-2026-11-04-0b49ba171f47f5a1",
+      "review-2026-11-04-ff3fac0383736d6d",
+      "review-2026-11-04-00146d65b416f74f",
+      "review-2026-11-04-61871c0463e92018",
+      "review-2026-11-04-8d02310cfdac72d7",
+      "review-2026-11-04-8d25b72ea4f7fd14",
+      "review-2026-11-04-fc32c7a6b41aa599",
+      "review-2026-11-04-2d2a04dec9b18376",
+      "review-2026-11-04-8b3216c35d85ebc4",
+      "review-2026-11-04-d20c90f121c21506",
+      "review-2026-11-04-a7732cab968f5c75"
+    ],
+    "group_count_preserved": 268,
+    "decisions_rationales_dates_and_pair_fingerprints_preserved": true,
+    "all_other_decision_bytes_preserved": true
+  },
+  "preserved_report_fields": [
+    "generated_at",
+    "source",
+    "owners",
+    "counts",
+    "warnings",
+    "actions",
+    "zenodo_records",
+    "applied",
+    "classification_cache"
+  ],
+  "existing_redaction_provenance_preserved": true,
+  "observation_and_apply_dates_preserved": true,
+  "new_publication_or_apply_approval_created": false,
+  "scope_limit": "Redaction repairs the retained public projection. It does not certify scientific claims, upstream source completeness or new collection freshness."
+}

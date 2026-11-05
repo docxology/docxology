@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "source_pdf": {
+    "record_id": "23921364",
+    "doi": "10.5281/zenodo.21047573",
+    "version": "0.5.0",
+    "name": "Blake.pdf",
+    "url": "https://zenodo.org/api/records/23921364/files/Blake.pdf/content",
+    "bytes": 11762801,
+    "sha256": "812e53237b40f808b4502e3dd358cbee5cda7d587e493ba95e41f02c11ad03eb",
+    "registry_checksum": "md5:5b0d0daebe7fc0613e9e308f6a39e232",
+    "pages": 94,
+    "extraction_sha256": "8be574e6259127db84b1b7dc9aea0c19540c23070be98b331d9c0ea683036d5c",
+    "extraction_tool": "pypdf 6.16.2",
+    "verification_scope": "Streamed byte size and checksum verified; all pages extracted; source/version/title reviewed separately; no scientific replication or visual approval implied."
+  },
+  "extraction": {
+    "file": "full_text.md",
+    "sha256": "8be574e6259127db84b1b7dc9aea0c19540c23070be98b331d9c0ea683036d5c",
+    "source_pdf_sha256": "812e53237b40f808b4502e3dd358cbee5cda7d587e493ba95e41f02c11ad03eb",
+    "tool": "pypdf 6.16.2",
+    "method": "Each page extracted in order with PdfReader.page.extract_text; all pages retained."
+  },
+  "historical_sources": [
+    {
+      "file": "full_text_v0.1.md",
+      "sha256": "63e2b39398e938bebfa72cde08a5f0470f57b2cd435526daea4389f3acb68d47",
+      "source_pdf": "blake_working_paper.pdf",
+      "edition": "0.1.0"
+    }
+  ],
+  "review_scope": "Streamed byte size and checksum verified; all pages extracted; source/version/title reviewed separately; no scientific replication or visual approval implied."
+}

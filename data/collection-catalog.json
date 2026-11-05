@@ -10300,7 +10300,7 @@
     },
     {
       "key": "Friedman2026ObserversWhoReadTheir230",
-      "title": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+      "title": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
       "authors": [
         "Mueller, Bernhard",
         "Poneder, Mario",
@@ -10319,12 +10319,12 @@
       ],
       "year": 2026,
       "url": "/works/Friedman2026ObserversWhoReadTheir230.html",
-      "bib": "@article{Friedman2026ObserversWhoReadTheir230,\n  title = {Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics},\n  author = {Mueller, Bernhard and Poneder, Mario and Osika, Alexander and Xue, Kai and Cassie, Ben and Nguyen, Peter and Kim, Jinwook and Matscheko, David and Friedman, Daniel Ari and Hill, Jonathan and Glynn, William T. and Visser, Maarten Antonie and Anirudha, Kale Arnav and de La Fournière, Brieuc},\n  year = {2026},\n  journal = {PhilPapers (preprint)},\n  url = {https://philpapers.org/rec/MUEFOC},\n  keywords = {Computational; Paper},\n  note = {Catalog row 230; docs: papers/2026_ObserversReadUniverse/}\n}",
-      "ris": "TY  - JOUR\nAU  - Mueller, Bernhard\nAU  - Poneder, Mario\nAU  - Osika, Alexander\nAU  - Xue, Kai\nAU  - Cassie, Ben\nAU  - Nguyen, Peter\nAU  - Kim, Jinwook\nAU  - Matscheko, David\nAU  - Friedman, Daniel Ari\nAU  - Hill, Jonathan\nAU  - Glynn, William T.\nAU  - Visser, Maarten Antonie\nAU  - Anirudha, Kale Arnav\nAU  - de La Fournière, Brieuc\nPY  - 2026\nTI  - Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics\nT2  - PhilPapers (preprint)\nUR  - https://philpapers.org/rec/MUEFOC\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 230; docs: papers/2026_ObserversReadUniverse/\nER  -",
+      "bib": "@article{Friedman2026ObserversWhoReadTheir230,\n  title = {Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics},\n  author = {Mueller, Bernhard and Poneder, Mario and Osika, Alexander and Xue, Kai and Cassie, Ben and Nguyen, Peter and Kim, Jinwook and Matscheko, David and Friedman, Daniel Ari and Hill, Jonathan and Glynn, William T. and Visser, Maarten Antonie and Anirudha, Kale Arnav and de La Fournière, Brieuc},\n  year = {2026},\n  journal = {PhilPapers (preprint)},\n  url = {https://philpapers.org/rec/MUEFOC},\n  keywords = {Computational; Paper},\n  note = {Catalog row 230; docs: papers/2026_ObserversReadUniverse/}\n}",
+      "ris": "TY  - JOUR\nAU  - Mueller, Bernhard\nAU  - Poneder, Mario\nAU  - Osika, Alexander\nAU  - Xue, Kai\nAU  - Cassie, Ben\nAU  - Nguyen, Peter\nAU  - Kim, Jinwook\nAU  - Matscheko, David\nAU  - Friedman, Daniel Ari\nAU  - Hill, Jonathan\nAU  - Glynn, William T.\nAU  - Visser, Maarten Antonie\nAU  - Anirudha, Kale Arnav\nAU  - de La Fournière, Brieuc\nPY  - 2026\nTI  - Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics\nT2  - PhilPapers (preprint)\nUR  - https://philpapers.org/rec/MUEFOC\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 230; docs: papers/2026_ObserversReadUniverse/\nER  -",
       "csl": {
         "id": "Friedman2026ObserversWhoReadTheir230",
         "type": "article-journal",
-        "title": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+        "title": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
         "author": [
           {
             "family": "Mueller",
@@ -10468,6 +10468,78 @@
         "publisher": "Zenodo",
         "DOI": "10.5281/zenodo.23670187",
         "URL": "https://doi.org/10.5281/zenodo.23670187"
+      }
+    },
+    {
+      "key": "Friedman2026BlakeanEntomologySmallLives233",
+      "title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ],
+      "year": 2026,
+      "url": "/works/Friedman2026BlakeanEntomologySmallLives233.html",
+      "bib": "@article{Friedman2026BlakeanEntomologySmallLives233,\n  title = {Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.23900582},\n  url = {https://doi.org/10.5281/zenodo.23900582},\n  keywords = {Entomology; Paper},\n  note = {Catalog row 233; docs: papers/2026_BlakeanEntomology/}\n}",
+      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention\nT2  - Zenodo\nDO  - 10.5281/zenodo.23900582\nUR  - https://doi.org/10.5281/zenodo.23900582\nKW  - Entomology\nKW  - Paper\nN1  - Catalog row 233; docs: papers/2026_BlakeanEntomology/\nER  -",
+      "csl": {
+        "id": "Friedman2026BlakeanEntomologySmallLives233",
+        "type": "article-journal",
+        "title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+        "author": [
+          {
+            "family": "Friedman",
+            "given": "Daniel Ari"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "genre": "Paper",
+        "keyword": "Entomology; Paper",
+        "note": "Catalog row 233; docs: papers/2026_BlakeanEntomology/",
+        "container-title": "Zenodo",
+        "publisher": "Zenodo",
+        "DOI": "10.5281/zenodo.23900582",
+        "URL": "https://doi.org/10.5281/zenodo.23900582"
+      }
+    },
+    {
+      "key": "Friedman2026StatesChangeBlakeanFederalism234",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ],
+      "year": 2026,
+      "url": "/works/Friedman2026StatesChangeBlakeanFederalism234.html",
+      "bib": "@article{Friedman2026StatesChangeBlakeanFederalism234,\n  title = {States Change: Blakean Federalism and composition without capture},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.23900616},\n  url = {https://doi.org/10.5281/zenodo.23900616},\n  keywords = {Art & Synergetics; Paper},\n  note = {Catalog row 234; docs: papers/2026_StatesChange/}\n}",
+      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - States Change: Blakean Federalism and composition without capture\nT2  - Zenodo\nDO  - 10.5281/zenodo.23900616\nUR  - https://doi.org/10.5281/zenodo.23900616\nKW  - Art & Synergetics\nKW  - Paper\nN1  - Catalog row 234; docs: papers/2026_StatesChange/\nER  -",
+      "csl": {
+        "id": "Friedman2026StatesChangeBlakeanFederalism234",
+        "type": "article-journal",
+        "title": "States Change: Blakean Federalism and composition without capture",
+        "author": [
+          {
+            "family": "Friedman",
+            "given": "Daniel Ari"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "genre": "Paper",
+        "keyword": "Art & Synergetics; Paper",
+        "note": "Catalog row 234; docs: papers/2026_StatesChange/",
+        "container-title": "Zenodo",
+        "publisher": "Zenodo",
+        "DOI": "10.5281/zenodo.23900616",
+        "URL": "https://doi.org/10.5281/zenodo.23900616"
       }
     }
   ]
