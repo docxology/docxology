@@ -140,3 +140,50 @@ A separate Codex reviewer freshly viewed **all 19 slide contact sheets**, the fu
 An independent private custody copy retains 71 selected evidence files totaling 16,131,165 bytes; every file was rehashed against custody manifest SHA-256 `2491c8878b0dc4ca07b77331eaa9ca27c329ae19c3abd20a990e5b328f8f02dc`. This records selected artifact custody, not a whole-repository backup, public download route or archival deposit.
 
 This is fresh assistant technical/format review of source 75e89661, not named human, editorial or scientific approval. The draft remains unpublished, without an assigned venue or manuscript DOI. Later report, cached-evidence or control-only commits are not new native renders: they may reuse this proof only after checking every named input and the pinned template identity. Changed render inputs require fresh applicable rendering and review. Whole-site acceptance, deployment, indexing and publication readiness remain separate gates.
+
+## Post-CI corrections and fresh transitive-source render — source 3a445fed
+
+The hosted core gate for candidate `e86e0a0a4e51f36e063daacdf04281220650c3d6` reported **57 failures in three groups**: 54 paper-page dependency fixtures omitted newly declared inputs and could not produce a cache fingerprint; two remote-edition notice cases still expected the superseded “earlier source edition” phrase; and one SEO case detected a second read of pilot metadata. A focused reproduction, execution `16337-488a1cfe3538465ca1583561c5925d92`, retained **57 failed / 2 passed** before editing. These failures were not waived.
+
+The correction populated the complete declared fixture inputs, aligned the two notice assertions with the existing linked-commit evidence boundary, and reused bounded, strict UTF-8 source reads across paper-resource and SEO validation. Historical review dates, source pins, document provenance and non-certification assertions remain checked. Scholar JSON validation retains duplicate-key detection, while source reads retain size bounds, path eligibility and freshness checks; the notice production wording did not need changing.
+
+Execution `16366-9ddc52c8620c4f7d80b9d0a0d1d5cdc5` then passed **192 related tests in 39.22 seconds**. This run recorded candidate e86e0a0a as HEAD with the six installed correction files dirty; it was not a clean-source or full-suite run at the later commit. The nine exact source/test inputs named by its intent were independently checked against committed source `3a445fed495d6f692254f698d227605edb65de87` and the worktree, with every digest matching. Whole-code Ruff also passed in execution `16380-3ad8622a9936482f9442eecc7df170c7`. Both executions reported source unchanged. These related gates do not establish complete-profile or hosted acceptance.
+
+### Fresh C3 render and expanded source binding
+
+A fresh native render was required because production reader dependencies changed outside the prior 17 direct render inputs. Qualified execution `16389-396a9641699b44efb5a77e87c802dfcc` ran at clean committed source `3a445fed495d6f692254f698d227605edb65de87` and passed **125 manuscript tests in 19.74 seconds**, including real four-format rendering, with **six retained dependency deprecation warnings**. Subsequent checks covered the scoped semantic and viewer inspections. Source was clean before and after the run, the backend reported source unchanged, no timeout occurred and no descendants remained. This was not a full repository, site-browser or Lighthouse run.
+
+The fresh source context additionally binds **all 138 committed production Python files under `code/src/` and `code/orchestrators/`** through an exact Git archive and independently enumerated tree membership. The archive SHA-256 is `edd4256781703a8916fba3b9ae0e1ccf1a921caf55d2eb7ab3d8bc3f7d651fe2`. Every member digest matched Git and working bytes before and after the gate. The independent reviewer recreated that exact archive and checked the full member map against the current worktree. All 17 direct render input digests also matched the reviewed Git objects and current bytes; their historical a69c6bbf bindings remain unchanged.
+
+The renderer, template and native tool pins remain as recorded above: renderer v5 SHA-256 `d62a7f0a8e870916303bc7214f43ef8bf9e6bf8cc488bfe245f992d19014e7d4`, template 4.0.2 at `3462d19761cc87d09a0b780ef978fa9efc142723`, template archive SHA-256 `b51a26aa354d31a627c730cb644a288aab240aaeb7877d6ed6e64dc1a5d70f21`. Fresh inspection used Python 3.15.2, LibreOffice 26.8.1.1 and PyMuPDF 1.28.2.
+
+### Fresh C3 artifact identities
+
+These are new outputs bound to source 3a445fed. The prior a69c6bbf and 75e89661 receipts, artifact identities and review scopes remain historical; no output has been relabeled as a render of a later candidate.
+
+| Fresh C3 object | SHA-256 |
+| --- | --- |
+| Render receipt | `2ca700132a6e199244a8c45764be88d35df3a303baa8b1a19888b597d25abe75` |
+| PowerPoint | `53839aeea759a9b9000f426387b0fe557929216596489a3bf5d3229d858eef88` |
+| Native PDF | `9ec103eff2ec4276a663b47ece88faf8b85c1a2b98c395f7d8237f0b071fc3d5` |
+| HTML | `8f1410d513e918b47946f18636a3b9eb304e884abd06961fa6a62ac350a48832` |
+| EPUB | `29578d8c3c775b0b7017c7798cf120d3d49b368a614cb25ae2fbabf39b9bc0fc` |
+| LibreOffice slide PDF | `45458796e93ad1febe16167c0b1de5376a1081ecf4950b956916a10f7e3b9721` |
+| Production source context | `f941ebf5814a8d34b937b0e47f9f23ed8e7bc93cbfe3d4f83ac5eb249eccd2ed` |
+| Native source context | `cb08302f92648bc7536fe8cf874366b8b7e42115352358b7b0d2d99817a90382` |
+| Current semantic proof | `0034206625e3ab3149f4c2b2885742d9dc6108b3d89df4d99c76656464843f08` |
+| Viewer body coverage | `eb85666e8ef907af2d86c7e830fb06ad9253edb381e0adb6f5f85da2c8e62027` |
+| Viewer word coverage | `2b783eb958c078b6824b8aa24b0833b6c3b4b3715a52f54250893c3dccb3fedb` |
+| Four-format inspection | `5621c3526f53ef9e345c7a7cc42c0710fc78136108b226efe027f468f3f0b7be` |
+
+### Fresh C3 inspection and independent disposition
+
+All 13 render-receipt artifacts matched their recorded sizes and hashes at independent review. The source/projection evidence retained **34,752 non-table body characters**, **151 link occurrences**, **42 table body rows**, all **four image bindings**, and **31 logical list items as 31 display fragments**, with internal anchors and other link targets checked separately.
+
+The actual deck has **148 slides**. Measured LibreOffice inspection checked **119 text body placeholder pages**, finding **zero outside-body text**, **zero body/body or body/title overlap**, and no detected page-edge text overflow. The unchanged bounded word-box detector found **zero substantial word overlaps across all 148 pages**, with known-negative mode disabled. The previously recorded detector exclusions and geometry limits still apply. Repaired slide **132** retains the expected indexing-caveat word sequence and **24.01-point** body font.
+
+A separate Codex reviewer freshly viewed **all 19 slide contact sheets**, full-size repaired slide **132**, both native PDF contact sheets covering **16 physical pages**, and the full HTML capture. No clipping, overprint or remaining layout blocker was observed within that coverage. HTML loaded all **four figures**, with its 1280-pixel document width matching the viewport. EPUB contained **13 valid XHTML documents**; package/shared-HTML checks do not replace reader-specific EPUB visual review.
+
+An independent private custody copy retains **73 selected evidence files totaling 16,151,857 bytes**. The reviewer rehashed every file against custody manifest SHA-256 `a7d6cea0375ced04ace6b755cf36337cbe7ef231ae57a49879fbdb54572a9e6e`, with no mismatch. This is selected evidence custody, not a whole-repository backup, public download route or archival deposit.
+
+This is assistant technical/format review of source 3a445fed. Named human approval, reader-specific EPUB visual review, editorial/scientific assessment and publication readiness remain pending. The draft is unpublished, without an assigned venue or manuscript DOI. Later metadata, report or control-only commits may reuse this C3 proof only after verifying the complete production-source member map, all 17 direct render inputs and the pinned template identity remain unchanged; they are not new native renders of those later commits. Changed bound sources require fresh applicable checks. Complete-profile tests, deployment and actual search-engine inclusion remain separate acceptance steps.

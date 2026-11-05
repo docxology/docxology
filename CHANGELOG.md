@@ -25,10 +25,16 @@
   reproducibility limits. Repaired review-slide prose pagination and measured
   linked-bullet overflow. Format review remains separate from human, editorial,
   scientific and publication approval.
+- Corrected page-cache dependency fixtures, reused bounded strict UTF-8 source
+  reads across paper-resource and SEO validation, and aligned historical-source
+  notice regressions with linked-commit evidence boundaries. The dated format
+  review records the selected regression gates and fresh C3 native rendering;
+  these do not substitute for complete-profile or hosted acceptance.
 - Recorded the signed-in [Search Console observation](reports/gsc_observations_2026-11-05.md):
-  the sitemap was successful; three new works were unknown to Google and the
-  selective indexing submission failed at the external service. Scholar metrics
-  and indexing status were not inferred from those observations.
+  the sitemap was successful and three new works were unknown to Google. The
+  first selective indexing request failed; a later live-test attempt had an
+  unconfirmed outcome, with no accepted request observed. Scholar metrics and
+  indexing status were not inferred from those observations.
 
 ## 2026-11-04 — Publication intake, software review and bounded PDF hosting
 
