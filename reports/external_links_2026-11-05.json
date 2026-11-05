@@ -76,10 +76,10 @@
     "videos.html"
   ],
   "note": "Network freshness report. HTTP 403/429 may indicate bot protection or rate limiting, not necessarily broken content.",
-  "total_unique_urls": 997,
-  "checked_urls": 997,
+  "total_unique_urls": 1003,
+  "checked_urls": 1003,
   "unchecked_urls": 0,
-  "ok": 829,
+  "ok": 835,
   "warnings": 168,
   "results": [
     {
@@ -5304,6 +5304,37 @@
       "category": "ok"
     },
     {
+      "url": "https://github.com/ActiveInferenceInstitute/.github",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/.github",
+      "error": "",
+      "elapsed_ms": 1210,
+      "observed_at": "2026-11-05T22:25:28.306691+00:00",
+      "sources": [
+        "pages/SOFTWARE.md",
+        "repositories.html",
+        "software.html",
+        "software.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/ActiveInferenceInstitute/.github#software",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/ActiveInferenceInstitute/.github#software",
+      "error": "",
+      "elapsed_ms": 369,
+      "observed_at": "2026-11-05T22:25:28.675915+00:00",
+      "sources": [
+        "software.html"
+      ],
+      "category": "ok"
+    },
+    {
       "url": "https://github.com/ActiveInferenceInstitute/AEOS",
       "ok": true,
       "status": 200,
@@ -10244,6 +10275,36 @@
       "category": "ok"
     },
     {
+      "url": "https://github.com/docxology/docxology/blob/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/paired_publications_2026-08-07.json",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/blob/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/paired_publications_2026-08-07.json",
+      "error": "",
+      "elapsed_ms": 1202,
+      "observed_at": "2026-11-05T22:25:29.878541+00:00",
+      "sources": [
+        "updates.html",
+        "updates.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/docxology/blob/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/paired_publications_2026-09-07.json",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/docxology/blob/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/paired_publications_2026-09-07.json",
+      "error": "",
+      "elapsed_ms": 895,
+      "observed_at": "2026-11-05T22:25:30.774296+00:00",
+      "sources": [
+        "updates.html",
+        "updates.html"
+      ],
+      "category": "ok"
+    },
+    {
       "url": "https://github.com/docxology/docxology/issues",
       "ok": true,
       "status": 200,
@@ -11638,6 +11699,20 @@
       "category": "ok"
     },
     {
+      "url": "https://github.com/docxology/koi-processor-node",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/koi-processor-node",
+      "error": "",
+      "elapsed_ms": 1061,
+      "observed_at": "2026-11-05T22:25:31.835935+00:00",
+      "sources": [
+        "repositories-forks.html"
+      ],
+      "category": "ok"
+    },
+    {
       "url": "https://github.com/docxology/lean_niche",
       "ok": true,
       "status": 200,
@@ -12292,6 +12367,20 @@
       "final_url": "https://github.com/docxology/pydymax",
       "error": "",
       "elapsed_ms": 1027,
+      "sources": [
+        "repositories-forks.html"
+      ],
+      "category": "ok"
+    },
+    {
+      "url": "https://github.com/docxology/pyhgf",
+      "ok": true,
+      "status": 200,
+      "method": "HEAD",
+      "final_url": "https://github.com/docxology/pyhgf",
+      "error": "",
+      "elapsed_ms": 1289,
+      "observed_at": "2026-11-05T22:25:33.125919+00:00",
       "sources": [
         "repositories-forks.html"
       ],
@@ -16836,6 +16925,25 @@
         "pages/PROFILE.md"
       ],
       "category": "ok"
+    }
+  ],
+  "incremental_observations": [
+    {
+      "observed_at": "2026-11-05T22:25:27.095720+00:00",
+      "source_commit": "75e896616b3c6e60994672ca7523cd51d549cf7a",
+      "prior_report_sha256": "c4065312d214d8088280b68963038df0c937ef357d7704fab00ff599f9a87d2f",
+      "prior_generated_at": "2026-11-05T03:06:41Z",
+      "observed_urls": [
+        "https://github.com/ActiveInferenceInstitute/.github",
+        "https://github.com/ActiveInferenceInstitute/.github#software",
+        "https://github.com/docxology/docxology/blob/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/paired_publications_2026-08-07.json",
+        "https://github.com/docxology/docxology/blob/d16205bec8d0907cfc429c9c8bb6ef7c4e12c4ad/reports/paired_publications_2026-09-07.json",
+        "https://github.com/docxology/koi-processor-node",
+        "https://github.com/docxology/pyhgf"
+      ],
+      "reused_http_results": 997,
+      "updated_source_mappings": [],
+      "note": "Only the six named URLs were checked in this incremental observation. Existing HTTP results retain the original report epoch; current source mapping and complete coverage are not fresh HTTP observations of those reused rows."
     }
   ]
 }
