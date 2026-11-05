@@ -221,7 +221,11 @@ def test_earlier_source_review_does_not_classify_or_certify_a_newer_edition(rend
     assert summary in notice
     assert "2026-10-19" in notice
     assert "https://github.com/docxology/example/blob/" + "1" * 40 + "/docs/review.md" in notice
-    assert "earlier source edition" in notice
+    assert "This review is bound to the linked source commit." in notice
     assert "retain their own source provenance" in notice
-    assert "does not certify a newer edition" in notice
+    assert "these corrections do not recover missing historical evidence" in notice
+    assert "or constitute a newly deposited publication edition" in notice
+    assert "earlier source edition" not in notice
+    assert "2026-11-04" not in notice
+    assert REMOTE["url"] not in notice
     assert "describe the historical archive" not in notice
