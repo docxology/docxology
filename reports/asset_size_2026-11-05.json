@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-05T03:40:44Z",
+  "generated_at": "2026-11-05T21:09:35Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
-  "asset_count": 130,
+  "asset_count": 131,
   "budget_exceptions": {
     "publications.html": {
       "budget_bytes": 600000,
@@ -10,7 +10,7 @@
     }
   },
   "warnings": 0,
-  "total_bytes": 19456267,
+  "total_bytes": 19531259,
   "largest": [
     {
       "path": "data/videos.json",
@@ -33,7 +33,7 @@
     {
       "path": "data/paired-publication-decisions.json",
       "kind": "json-data",
-      "bytes": 898210,
+      "bytes": 898172,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -42,7 +42,7 @@
     {
       "path": "data/work-enrichment.json",
       "kind": "json-data",
-      "bytes": 839219,
+      "bytes": 843082,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -76,20 +76,20 @@
       "ok": true
     },
     {
-      "path": "resume/resume.pdf",
-      "kind": "resume-export",
-      "bytes": 415937,
-      "baseline_budget_bytes": 5000000,
-      "budget_bytes": 5000000,
+      "path": "data/scholar-readiness.json",
+      "kind": "json-data",
+      "bytes": 438193,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
       "budget_exception": null,
       "ok": true
     },
     {
-      "path": "data/scholar-readiness.json",
-      "kind": "json-data",
-      "bytes": 400197,
-      "baseline_budget_bytes": 4000000,
-      "budget_bytes": 4000000,
+      "path": "resume/resume.pdf",
+      "kind": "resume-export",
+      "bytes": 416543,
+      "baseline_budget_bytes": 5000000,
+      "budget_bytes": 5000000,
       "budget_exception": null,
       "ok": true
     },
@@ -109,7 +109,7 @@
     {
       "path": "data/resume.json",
       "kind": "json-data",
-      "bytes": 369807,
+      "bytes": 370287,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -118,7 +118,7 @@
     {
       "path": "data/github-repositories.json",
       "kind": "json-data",
-      "bytes": 366494,
+      "bytes": 369313,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -154,7 +154,7 @@
     {
       "path": "software.html",
       "kind": "html",
-      "bytes": 285130,
+      "bytes": 286179,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,
@@ -163,7 +163,7 @@
     {
       "path": "repositories.html",
       "kind": "html",
-      "bytes": 272784,
+      "bytes": 273618,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,
@@ -172,7 +172,7 @@
     {
       "path": "updates.html",
       "kind": "html",
-      "bytes": 234111,
+      "bytes": 237796,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T03:12:32Z",
+  "generated_at": "2026-11-05T19:35:28Z",
   "artifacts": [
     {
       "name": "Research exploration tools",
@@ -338,6 +338,11 @@
         "reports/pages_artifact_growth_2026-11-05.json"
       ],
       "sources": [
+        "data/scholar-pdf-projections.json",
+        "data/work-identifiers.json",
+        "pages/BIBLIOGRAPHY.md",
+        "papers/paper_metadata.json",
+        "code/src/scholar_pdf_projection.py",
         "tracked repository files",
         "code/src/release_controls.py",
         "code/orchestrators/build_pages_artifact.py",
@@ -524,6 +529,10 @@
         "data/work-enrichment.json"
       ],
       "sources": [
+        "data/scholar-pdf-projections.json",
+        "data/work-identifiers.json",
+        "pages/BIBLIOGRAPHY.md",
+        "code/src/scholar_pdf_projection.py",
         "data/works.json",
         "data/publishing-status.json",
         "data/work-authors.json",
@@ -561,6 +570,11 @@
         "reports/scholar_readiness.md"
       ],
       "sources": [
+        "data/scholar-pdf-projections.json",
+        "data/work-identifiers.json",
+        "pages/BIBLIOGRAPHY.md",
+        "papers/paper_metadata.json",
+        "code/src/scholar_pdf_projection.py",
         "data/works.json",
         "works/*.html",
         "papers/*/metadata.json",
@@ -622,6 +636,10 @@
         "papers/*/index.html"
       ],
       "sources": [
+        "data/scholar-pdf-projections.json",
+        "data/work-identifiers.json",
+        "pages/BIBLIOGRAPHY.md",
+        "code/src/scholar_pdf_projection.py",
         "data/works.json",
         "papers/paper_metadata.json",
         "papers/*/metadata.json",

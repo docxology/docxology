@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-11-05T03:08:05Z",
+      "generated_at": "2026-11-05T21:08:26Z",
       "path": "data/claims.json",
-      "sha256": "a07d7f25b0d46e405af1f160a13c2132b0227685b7ecc665a0c034b711268df6",
+      "sha256": "dae97a303f802a28b87fba2ab236350fc2667eee1562d7e785ad8b141e52f15b",
       "source_commit": null
     },
     "doi_role_review": {
@@ -23,7 +23,7 @@
     "paired_publication_decisions": {
       "generated_at": "2026-09-24T18:45:00Z",
       "path": "data/paired-publication-decisions.json",
-      "sha256": "07e18a1346b656e5b328a7e9028fca71b45bb0c8bbebd92946ca0665bf33f02f",
+      "sha256": "0309ffcf40baee8fba8ad00baa8f354cb18169d66ffd5d4ee63b7c997554dc67",
       "source_commit": null
     },
     "paired_publications": {
@@ -57,9 +57,9 @@
       "source_commit": "5f4fa6d8e6f3b01c2bbb3e6b47fbd0c8018b40d2"
     },
     "repository_classification": {
-      "generated_at": "2026-11-05T02:00:00Z",
+      "generated_at": "2026-11-05T20:46:40Z",
       "path": "data/repository-classification.json",
-      "sha256": "49af67443a5ad60cadf39d052a1e58b06b2aa53e243023e2db6862961fcd35de",
+      "sha256": "8fdcefab905fec0464dd24ca4753e21686bb08a6526fcd3d057f252a4f17f04a",
       "source_commit": null
     },
     "scholar_snapshot": {
@@ -1925,7 +1925,7 @@
     {
       "candidate": {
         "acknowledged_reason": "fork_not_curated",
-        "archived": true,
+        "archived": false,
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
@@ -3274,6 +3274,25 @@
     {
       "candidate": {
         "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/koi-processor-node",
+        "html_url": "https://github.com/docxology/koi-processor-node",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/koi-processor-node",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
         "archived": true,
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
@@ -3607,6 +3626,25 @@
       },
       "category": "repository_classification",
       "id": "repository:docxology/pydymax",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/pyhgf",
+        "html_url": "https://github.com/docxology/pyhgf",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/pyhgf",
       "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
       "sources": [
         "data/repository-classification.json"
@@ -19653,12 +19691,12 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "a51c49fce5c2928a37930c9850c396028a781ff2",
-  "source_tree_sha": "47de35a86f450c41d020277896252c84ef4c402e",
+  "source_commit": "4366246695170d6fa1b4f4e0f16a5f983996f807",
+  "source_tree_sha": "b6410b1e03141e1f35f28fc5f90cc934b24b0a6c",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
-    "applied": 466,
+    "applied": 468,
     "categories": {
       "ambiguous_doi_change": {
         "applied": 64,
@@ -19676,7 +19714,7 @@
         "rejected": 0
       },
       "repository_classification": {
-        "applied": 111,
+        "applied": 113,
         "deferred": 0,
         "rejected": 0
       },
@@ -19692,7 +19730,7 @@
       }
     },
     "deferred": 0,
-    "items": 801,
+    "items": 803,
     "rejected": 335,
     "review_required": false
   }

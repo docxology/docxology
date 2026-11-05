@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-11-05T03:08:02+00:00",
+  "generated_at": "2026-11-05T21:08:19+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -333,12 +333,12 @@
     },
     "software": {
       "path": "/data/software.json",
-      "count": 209,
+      "count": 210,
       "schema": "SoftwareRepository"
     },
     "repositories": {
       "path": "/data/github-repositories.json",
-      "count": 319,
+      "count": 322,
       "schema": "Repository"
     },
     "artworks": {
@@ -383,7 +383,7 @@
     },
     "repository_classification": {
       "path": "/data/repository-classification.json",
-      "count": 111,
+      "count": 113,
       "schema": "RepositoryClassification"
     },
     "pages_artifact": {
@@ -1037,8 +1037,8 @@
         "schema_version": "1.0",
         "network_checked": "false",
         "indexing_verified": "false",
-        "summary": "local blockers only",
-        "works": "per-work source hashes, citation tags, selected PDF size/placement, and unverified requirements"
+        "summary": "local blockers; reviewed prerequisites remain separate from unverified indexing",
+        "works": "per-work source hashes, citation tags, selected PDF size/placement, reviewed content/rights prerequisites, static visible-abstract measurement and unverified indexing"
       }
     },
     "WorkEnrichment": {
@@ -1354,40 +1354,31 @@
     },
     "Repository": [
       {
-        "github_id": 1204226043,
-        "github_node_id": "R_kgDOR8cH-w",
-        "name": "act_inf_metaanalysis",
-        "full_name": "ActiveInferenceInstitute/act_inf_metaanalysis",
+        "github_id": 1447254859,
+        "github_node_id": "R_kgDOVkNbSw",
+        "name": ".github",
+        "full_name": "ActiveInferenceInstitute/.github",
         "owner": "ActiveInferenceInstitute",
-        "html_url": "https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis",
-        "description": "A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus.",
+        "html_url": "https://github.com/ActiveInferenceInstitute/.github",
+        "description": "Organization profile and default community health files for the Active Inference Institute",
         "homepage": "",
-        "language": "HTML",
-        "stars": 6,
-        "forks": 1,
-        "watchers": 6,
-        "open_issues": 2,
+        "language": "",
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "open_issues": 0,
         "visibility": "public",
         "private": false,
         "fork": false,
         "archived": false,
         "disabled": false,
         "is_template": false,
-        "topics": [
-          "active-inference",
-          "bibliometrics",
-          "free-energy-principle",
-          "knowledge-graph",
-          "llm",
-          "meta-analysis",
-          "nanopublications",
-          "reproducible-research"
-        ],
-        "license": "NOASSERTION",
+        "topics": [],
+        "license": "",
         "default_branch": "main",
-        "created_at": "2026-04-07T20:10:34Z",
-        "updated_at": "2026-11-03T03:45:56Z",
-        "pushed_at": "2026-11-03T15:21:21Z",
+        "created_at": "2026-11-05T16:40:30Z",
+        "updated_at": "2026-11-05T16:42:43Z",
+        "pushed_at": "2026-11-05T16:42:38Z",
         "curated": true,
         "recently_updated": true
       }
@@ -1402,7 +1393,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-11-05T03:08:02+00:00",
+        "checked_at": "2026-11-05T21:08:19+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1439,17 +1430,19 @@
       "pdf_byte_limit": 5000000,
       "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
       "works_sha256": "67b67db4fbf45350214b7923e5c2fee43545ae705b03bfdd5b96aa0ed7a75c34",
+      "projection_registry_sha256": "21ae02d3ab2c8cf5b039722149a57b956adb6968e3b84d287fbc61d15a342567",
       "network_checked": false,
       "indexing_verified": false,
       "summary": {
         "works": 231,
         "local_status": {
-          "blocked": 231
+          "blocked": 226,
+          "requires_review": 5
         },
         "blockers": {
           "missing_citation_author": 11,
           "no_selected_local_pdf": 29,
-          "pdf_directory_differs_from_abstract": 202,
+          "pdf_directory_differs_from_abstract": 197,
           "pdf_exceeds_byte_limit": 44
         }
       },
@@ -1491,6 +1484,9 @@
           "blockers": [
             "pdf_directory_differs_from_abstract"
           ],
+          "visible_complete_author_abstract": null,
+          "reviewed_prerequisites": {},
+          "projection": null,
           "unverified_requirements": [
             "searchable_pdf",
             "scholarly_content",
@@ -1583,26 +1579,26 @@
         "full_text_papers": 208,
         "generated_exports": {
           "data_publications_ld_main_entity": 231,
-          "data_software_json": 209,
-          "data_software_ld_main_entity": 209,
+          "data_software_json": 210,
+          "data_software_ld_main_entity": 210,
           "data_works_json": 231
         },
         "github_inventory": {
-          "ActiveInferenceInstitute": 46,
-          "archived": 97,
-          "curated": 208,
-          "docxology": 273,
+          "ActiveInferenceInstitute": 47,
+          "archived": 96,
+          "curated": 209,
+          "docxology": 275,
           "fork_ActiveInferenceInstitute": 2,
-          "fork_docxology": 102,
-          "forks": 104,
-          "primary_ActiveInferenceInstitute": 44,
+          "fork_docxology": 104,
+          "forks": 106,
+          "primary_ActiveInferenceInstitute": 45,
           "primary_docxology": 171,
-          "primary_total": 215,
+          "primary_total": 216,
           "private": 0,
-          "public": 319,
-          "recently_updated": 317,
-          "total": 319,
-          "uncataloged": 111
+          "public": 322,
+          "recently_updated": 320,
+          "total": 322,
+          "uncataloged": 113
         },
         "paired_publication_decisions": {
           "decision": "mixed",
@@ -1634,8 +1630,8 @@
           "Zenodo exact-name creator records": 83
         },
         "software": {
-          "active_inference_institute": 42,
-          "curated_total": 209,
+          "active_inference_institute": 43,
+          "curated_total": 210,
           "docxology_owned": 167
         },
         "types": {
@@ -1648,7 +1644,7 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-11-05T03:08:02+00:00",
+      "generated_at": "2026-11-05T21:08:19+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
@@ -1672,11 +1668,11 @@
         "release_hard_ceiling_bytes": 996147200,
         "safety_ceiling_bytes": 996147200,
         "warning_bytes": 975175680,
-        "source_bytes": 967712824,
+        "source_bytes": 961632606,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6210,
-        "artifact_bytes": 968810924
+        "artifact_file_count": 6220,
+        "artifact_bytes": 962735298
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -6340,30 +6336,30 @@
     "blake_index": "5f75ec16d9c13a2c460c2a83e2a75ad48a8a8363891669c643aee3722464283b",
     "works": "67b67db4fbf45350214b7923e5c2fee43545ae705b03bfdd5b96aa0ed7a75c34",
     "work_identifiers": "e30baac9337fb6c914d9234794e0ed8a4996b6d3026e2968fb3dff99f5b9ad08",
-    "software": "430b6260746f9a035761cb538bc6ed6f2f2238d942bf8cdb4b131865f2c860a7",
-    "repositories": "aeb4824f7cc8a4d9019a1bd759e1433a0a3f688c75c1b1f45760e95f269b300b",
+    "software": "a50bb5547302b63b81154db4f950357f72a03dc0fbd0f26db886d11c914b0a68",
+    "repositories": "b3ecd0c58d43138cb760d0bbf51cf93270e96c375b31d156e10d438d6b38bb8f",
     "artworks_index": "29270719124f00fb4d9c2729262c33318c82e9dbb114ec8b0f777436bb270769",
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "102f2513e455708f39b39f70cdd1c56a0933fb081e6b1ec60d4cb114736d9e1e",
     "videos_index": "513d358fa05ce0d9c1f42eaff8ce5f47eecf1d66361ead7ca854aa256be87531",
-    "search": "ce3bd64675cb0aade14d63a2b432214d4f3ba39f25be87f660aa5c9902efcd0a",
-    "claims": "a07d7f25b0d46e405af1f160a13c2132b0227685b7ecc665a0c034b711268df6",
+    "search": "c82223b9b37a9b08c990ffc2bb06ffa4459f8c727bbbbbb4299aeaf64b147047",
+    "claims": "dae97a303f802a28b87fba2ab236350fc2667eee1562d7e785ad8b141e52f15b",
     "scholar_verification_receipt": "889e829f258bfaaca0c17d3cc2eec68ac114152e41e32a31f75b6bb925f9b16d",
     "coverage_exceptions": "0cc5702e6d4dfe16d150efe04187078a194b2107155598230c59271f1b72b997",
-    "repository_classification": "49af67443a5ad60cadf39d052a1e58b06b2aa53e243023e2db6862961fcd35de",
-    "people": "e4c767170a7b7fd64b9327e12549a4ffd7e4bf00109a9c1ebf97d944168d11b8",
-    "organizations": "1f31039502a839e5c7fcbd3142503727d8975db1be3f85d27b3635f706326f63",
-    "resume": "890c6d0d9d6f23ee49112b2b437b4c980eacfdc4e54c12c1a38aa3708a6a53dd",
-    "work_enrichment": "736a810352f2747ec7cf1c1ec92ae5a5b6bea9096c1c982ae499a0941b3c35d6",
+    "repository_classification": "8fdcefab905fec0464dd24ca4753e21686bb08a6526fcd3d057f252a4f17f04a",
+    "people": "6e00eaa2e64ff204919de650f8eecaf58fb648264b75805c16d2eeb6d03fd3fa",
+    "organizations": "33956c0957482ddda82e10b4f499a5786d2e96694338b8cfca4e28e01a9ad1b8",
+    "resume": "2cdb3445c62cc23e2616f5f4bfa0f35df82025a2e000f93004505b5f04ba6db2",
+    "work_enrichment": "a3d694907fb3113c7c5eb01454e5aa2187a831c8f7590bf14df9f15e99c5768f",
     "collection_catalog": "d64371e4efaabbdac808c44e37e3113f72616106e743ef3eafb5dd1b2c0fefe1",
     "research_map": "8ab3f846cc259a321b9e5325fb78b721ed66e7eefdc65d71dd5a5d5407a9ab32",
     "research_trails": "2e6a76a3974b495906a1764725835ffa3ef47065a304c812f7756fb17166d34e",
-    "scholar_readiness": "d5773ec98500d4634ffe4ef6194e3c462e5ca4a004bc2fe940d6464e3149817e",
-    "catalog": "39d48bbcadf3b380e6fef886edcdd842bb6bfe64e7f33a4180b247a4c58c7771",
-    "reconciliation": "ecaae05eb7e62f5d698a06690f3417a67dd350848b5fe52ca5bac9472ebcd8db",
+    "scholar_readiness": "2c523109e70a94d96a1d4866fc1521d43ce8769083e5ed92af63f62de8d7e679",
+    "catalog": "069af257f16f1c22393b2772b2caff210a22bc1292b2db8c8550d30923fc15ad",
+    "reconciliation": "614b886672928487b94b26271342296e7122b00101bed1ba66ba47536e371ae3",
     "reproducibility": "445822ddbe4672f84671cf7472c45bd5bb6ad670324dadbd7f77c3e33a8f1c03",
-    "generated_manifest": "06d38c67bf8373eca3d9225f622043f6eddb283937d9bde49356b43245f97a92",
-    "current_counts": "74da40a21132e99262cd99e407cc0387beeebcc8763fe55616f3c6b9d30183f2"
+    "generated_manifest": "25dd1543d5b894f9e983ac1271e398e93020ae01d3b7ac8c7ef9cef13c036ac5",
+    "current_counts": "7cd7bcfc23f67f6ce40b43e684f4805cd884e590f90dcc4f94abc1769a89a1df"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -6408,26 +6404,26 @@
     "full_text_papers": 208,
     "generated_exports": {
       "data_publications_ld_main_entity": 231,
-      "data_software_json": 209,
-      "data_software_ld_main_entity": 209,
+      "data_software_json": 210,
+      "data_software_ld_main_entity": 210,
       "data_works_json": 231
     },
     "github_inventory": {
-      "ActiveInferenceInstitute": 46,
-      "archived": 97,
-      "curated": 208,
-      "docxology": 273,
+      "ActiveInferenceInstitute": 47,
+      "archived": 96,
+      "curated": 209,
+      "docxology": 275,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 102,
-      "forks": 104,
-      "primary_ActiveInferenceInstitute": 44,
+      "fork_docxology": 104,
+      "forks": 106,
+      "primary_ActiveInferenceInstitute": 45,
       "primary_docxology": 171,
-      "primary_total": 215,
+      "primary_total": 216,
       "private": 0,
-      "public": 319,
-      "recently_updated": 317,
-      "total": 319,
-      "uncataloged": 111
+      "public": 322,
+      "recently_updated": 320,
+      "total": 322,
+      "uncataloged": 113
     },
     "paired_publication_decisions": {
       "decision": "mixed",
@@ -6459,8 +6455,8 @@
       "Zenodo exact-name creator records": 83
     },
     "software": {
-      "active_inference_institute": 42,
-      "curated_total": 209,
+      "active_inference_institute": 43,
+      "curated_total": 210,
       "docxology_owned": 167
     },
     "types": {
