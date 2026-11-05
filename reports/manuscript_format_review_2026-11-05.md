@@ -101,3 +101,42 @@ The repaired Scholar bullet is now slide **132**. Its indexing caveat retains th
 A separate Codex reviewer independently verified all 26 inspected source hashes against exact Git objects and all 13 output hashes, viewed **all 19 contact sheets covering 148 slides**, final full-size slide **132**, both native PDF contact sheets covering **16 pages**, and the full HTML capture. The reviewer found the repaired bullet clearly readable at the preserved 24.01-point size, with all three sentences and linked labels retained, and observed no other clipping or overprint in that scope. The reviewer also read the source/projection, body and word coverage scopes and cleared the final format evidence with the limits stated here. A second independent Codex reviewer, who had also cleared the exact source hashes statically, separately viewed all 19 final slide contact sheets, both native PDF contact sheets, the full HTML, repaired slide 132, method slides 40/41/57 and former-orphan slides 10/18/32/37/62. That reviewer verified six supplied JSON/receipt/viewer-PDF hashes and found no clipping or overlap blocker in that technical format scope. These overlapping review scopes are not additional test counts.
 
 This assistant technical/format evidence does not supply named human, editorial or scientific approval. Render receipts keep those review fields pending and do not assess scientific validity or publication readiness. Deployment, indexing and the complete-profile release binder remain separate gates. Later publication commits may retain this review only after verifying that every named native input hash still matches this reviewed source; changed inputs require the applicable checks again.
+
+
+## Fresh regeneration — source 75e89661
+
+This follow-up records a fresh native render at committed source `75e896616b3c6e60994672ca7523cd51d549cf7a`. The earlier `a69c6bbf09c3c7d8d55aebe7c752b73444a44437` review and the failed intermediate attempts above remain historical observations with their original hashes. The earlier a69c6bbf raw execution artifacts were unavailable for rechecking when this follow-up began; this fresh artifact set does not recreate their custody or replace those historical records.
+
+Qualified execution `15880-02685613871a461a9aa3899e3ddb354b` completed successfully with **125 manuscript tests passed in 47.36 seconds** and **six retained dependency deprecation warnings**. The worktree was clean before and after the run, the backend reported source unchanged, no timeout occurred, and no descendants remained. The pytest selection covered the two manuscript test files, including real four-format rendering. Subsequent checks covered the scoped semantic/viewer inspections. This was not a full repository, site-browser or Lighthouse run.
+
+All **17 named render inputs** matched their exact Git objects at both the historical a69c6bbf source and the fresh 75e89661 source, and matched the checked-out bytes at independent review. The renderer remains `coherent-list-paragraph-pagination-v5`, SHA-256 `d62a7f0a8e870916303bc7214f43ef8bf9e6bf8cc488bfe245f992d19014e7d4`. The template remains version 4.0.2 at `3462d19761cc87d09a0b780ef978fa9efc142723`, with archive SHA-256 `b51a26aa354d31a627c730cb644a288aab240aaeb7877d6ed6e64dc1a5d70f21`; declared native tool pins are unchanged. The fresh inspection records Python 3.15.2, LibreOffice 26.8.1.1 and PyMuPDF 1.28.2.
+
+### Fresh artifact identities
+
+These hashes belong to the new 75e89661 render and its source-link binding. They must not be substituted for the a69c6bbf artifact hashes above.
+
+| Fresh object | SHA-256 |
+| --- | --- |
+| Render receipt | `e566fdbb553aff2f7d5e035de5e6dd607efe309abbf8fd299a94698f5ad1adc2` |
+| PowerPoint | `020cec272d58bb3d07a47c2810b7d983678aed41eccd37fe40478ede64ac83c8` |
+| Native PDF | `db5d5a8f84e9defee994b758d9978531426bea32aa5e2ab4f0a900a1f063ce06` |
+| HTML | `2e9d95a1948b17398885faf4f229cfb98f7abf9f072317af86e38219906df646` |
+| EPUB | `36e1f64c5b8be99e4289f83734dca9e616c3d637102abb3a40a71eb7559756b5` |
+| LibreOffice slide PDF | `73c91d922114c216cbe86367fc6df26f166463515390bc3bd0ed6988d01baf83` |
+| Native source context | `40657ebd14b193627c10d0a8a7bb728caf6cd9995e98ef75aa15e6a19b812944` |
+| Current semantic proof | `a97e00fe0c0902d3120d22fff4b14aab7a2f5cd94f8e3025f3536212dbc20902` |
+| Viewer body coverage | `74972bac3b1a944ab210b91d8ad7baf05d8c8fc3c5b619985031259bef579548` |
+| Viewer word coverage | `15f1c599064bd94d4891a4761d6672877f6f7c3eb65e448ef44976b42b7959e4` |
+| Four-format inspection | `729d8cd4f955d76541b15c7d8c47af59aab452884dc1aebcab81c049f690cb27` |
+
+### Fresh inspection and independent disposition
+
+The new deck has **148 slides**. The current source/projection proof preserves **34,752 non-table body characters**, **151 link occurrences**, **42 table body rows**, all **four image bindings**, and **31 logical list items as 31 display fragments**, with internal anchors and other link targets checked separately. All 13 render-receipt artifacts matched their recorded sizes and hashes at independent review.
+
+Actual LibreOffice inspection found **119 text body placeholder pages**, **zero outside-body text**, **zero body/body or body/title overlap**, and no detected page-edge text overflow. The unchanged bounded word-box detector found **zero substantial word overlaps across all 148 pages**, with the known-negative mode disabled. Its previously stated exclusions and geometry limits still apply; it is not a universal readability proof. Repaired slide **132** retains its contiguous indexing-caveat word sequence and **24.01-point** body font.
+
+A separate Codex reviewer freshly viewed **all 19 slide contact sheets**, the full-size repaired slide **132**, both native PDF contact sheets covering **16 physical pages**, and the full HTML capture. No clipping, overprint or remaining layout blocker was observed within that coverage. The HTML inspection loaded all **four figures** with a 1280-pixel document width matching its viewport. The EPUB contained **13 valid XHTML documents**; reader-specific EPUB visual review remains pending.
+
+An independent private custody copy retains 71 selected evidence files totaling 16,131,165 bytes; every file was rehashed against custody manifest SHA-256 `2491c8878b0dc4ca07b77331eaa9ca27c329ae19c3abd20a990e5b328f8f02dc`. This records selected artifact custody, not a whole-repository backup, public download route or archival deposit.
+
+This is fresh assistant technical/format review of source 75e89661, not named human, editorial or scientific approval. The draft remains unpublished, without an assigned venue or manuscript DOI. Later report, cached-evidence or control-only commits are not new native renders: they may reuse this proof only after checking every named input and the pinned template identity. Changed render inputs require fresh applicable rendering and review. Whole-site acceptance, deployment, indexing and publication readiness remain separate gates.
