@@ -49,9 +49,9 @@ def revision_notice_html(metadata: dict) -> str:
         '<section class="section" aria-label="Corrected source review">'
         '<div class="work-detail"><h2>Corrected source review</h2>'
         f"<p>{escape(item['summary'])}</p>"
-        "<p>This dated review concerns the earlier source edition identified in the pinned correction. "
-        "Current summaries, downloads and extracted text each retain their own source provenance; "
-        "this review does not certify a newer edition.</p>"
+        "<p>This review is bound to the linked source commit. "
+        "Current summaries, downloads and extracted text retain their own source provenance; "
+        "these corrections do not recover missing historical evidence or constitute a newly deposited publication edition.</p>"
         f'<p><a href="{escape(item["url"], quote=True)}">Read the pinned source correction</a> '
         f"(reviewed {escape(item['reviewed_at'])}).</p></div></section>"
     )
@@ -63,9 +63,9 @@ def revision_notice_markdown(metadata: dict) -> str:
         return ""
     return (
         "## Corrected source review\n\n" + escape(item["summary"]) + "\n\n"
-        "This dated review concerns the earlier source edition identified in the pinned correction. "
-        "Current summaries, downloads and extracted text each retain their own source provenance; "
-        "this review does not certify a newer edition.\n\n"
+        "This review is bound to the linked source commit. "
+        "Current summaries, downloads and extracted text retain their own source provenance; "
+        "these corrections do not recover missing historical evidence or constitute a newly deposited publication edition.\n\n"
         f"[Read the pinned source correction]({item['url']}) "
         f"(reviewed {item['reviewed_at']}).\n\n"
     )

@@ -47,6 +47,11 @@ are recognized precisely by link and SEO checks, then copied and hashed by
 the artifact builder under the unchanged 930 MiB CI budget and 950 MiB hard
 ceiling. The assembled manifest records alias membership and source custody.
 
+Local HTTP route checks must serve the assembled Pages output, for example
+after `uv run python3 code/orchestrators/build_pages_artifact.py --output <fresh-output> --check-size`.
+The reserved `works/<sha256>.pdf` files are materialized in that output and do
+not exist in the source checkout.
+
 The [October proposal](../../reports/scholar_pdf_placement_proposal_2026-10-13.md)
 is historical planning evidence. The current registry and dated review own the
 implemented pilot. Other works can retain cross-directory archival links or
@@ -115,7 +120,9 @@ After the changes land and deploy, verify the new work pages and PDFs directly,
 then use the signed-in [Search Console runbook](gsc-followup.md) to submit the
 sitemap and inspect selected work URLs. Scholar profile membership and indexing
 must be checked separately. The [2026-11-05 signed-in Search Console observation](../../reports/gsc_observations_2026-11-05.md)
-records successful sitemap discovery and the external service failure during
-one selective indexing request. It is separate from Scholar review.
+records successful sitemap discovery, an initial indexing-request service
+failure, and a later live-test attempt with an unconfirmed outcome. No accepted
+indexing request was observed. Actual indexing and Scholar review remain
+separate checks.
 Keep `data/scholar-snapshot.json` and its receipt unchanged until a direct
 authenticated observation is recorded through the declared tool.

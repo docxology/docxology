@@ -24,13 +24,17 @@ def metadata():
     }
 
 
-def test_pinned_source_and_archive_boundary_are_visible():
+@pytest.mark.parametrize("reviewed_at", ["2026-10-19", "2026-11-05"])
+def test_pinned_source_and_archive_boundary_are_visible(reviewed_at):
     data = metadata()
+    data["source_revision_review"]["reviewed_at"] = reviewed_at
     assert "/blob/" + "a" * 40 + "/PAPER_REVISION.md" in revision_notice(data)["url"]
     for rendered in (revision_notice_html(data), revision_notice_markdown(data)):
         assert "&lt;scoring&gt;" in rendered
-        assert "earlier source edition identified in the pinned correction" in rendered
-        assert "does not certify a newer edition" in rendered
+        assert "This review is bound to the linked source commit." in rendered
+        assert "do not recover missing historical evidence" in rendered
+        assert "or constitute a newly deposited publication edition" in rendered
+        assert reviewed_at in rendered
     assert revision_notice_html({}) == ""
 
 
