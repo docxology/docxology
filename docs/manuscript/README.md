@@ -86,15 +86,25 @@ review. The declared body-diagram registry is integrated; arbitrary images and M
 HTML, EPUB3, and PowerPoint retain the Pandoc/citeproc renderer. All four formats
 are manual review artifacts, excluded from normal site regeneration. PowerPoint
 is an unabridged paginated review deck: cross-references and citations resolve
-before a presentation-only layout separates bounded text, figures, captions and
-simple table segments. Short figure labels fit beside the images; full captions
+before a presentation-only layout packs coherent prose and list items within
+subsections, with bounded figures, captions and simple table segments. Sentence
+boundaries are preferred; otherwise tiny continuations are rebalanced without
+dropping or summarizing any inline content. Short figure labels fit beside the images; full captions
 follow on separate slides. Container anchors retain the subsection target and
 remap equivalent internal links to its slide, so bibliography entries and images
 reach the PPTX writer. Tables
 support at most three columns, unspanned cells and no body headers or footers;
 oversized indivisible text, code or unsupported blocks fail explicitly. The
-text budget is a conservative input bound; inspect actual layout in each
-requested presentation viewer. Native integration also checks all registered
+indivisible-inline, table and code text bound remains 450 characters. Prose
+uses a separate 600-character ceiling and a conservative nine-line envelope
+at 60 characters per estimated line (narrower for lists), including gaps
+between display blocks. Images, full captions, code and table segments keep
+their dedicated slides. Bullet bodies reserve a 0.5-inch right inset inside
+the existing placeholder to prevent measured linked/bold text wrapping beyond
+its edge; OOXML text, relationships, media and non-bullet geometry are preserved.
+These are input bounds for the pinned 16:9 layout,
+not a guarantee of identical typography across viewers; inspect actual layout
+in each requested presentation viewer. The render receipt records every bound. Native integration also checks all registered
 figure embeds and the rendered bibliography entry.
 
 Manuscript text and original figures use CC BY 4.0; archived papers, software, artwork, and

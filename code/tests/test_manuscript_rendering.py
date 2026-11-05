@@ -119,7 +119,8 @@ def test_slide_pagination_preserves_long_prose_and_links():
     assert len(paragraphs) >= 3
     assert [inline for block in paragraphs for inline in block["c"]] == inlines
     assert all(
-        rendering._slide_text_size(block) <= rendering.SLIDE_TEXT_LIMIT
+        rendering._slide_text_size(block) <= rendering.SLIDE_PROSE_LIMIT
+        and rendering._slide_text_fits([block])
         for block in paragraphs
     )
     headers = [block for block in output["blocks"] if block["t"] == "Header"]
@@ -458,7 +459,9 @@ def test_real_four_format_render_and_receipt(tmp_path):
         "cover",
         "figure",
     }
-    assert receipt["bibliography_entries"] == 1
+    from docxology_tools.manuscript_validation import validate_manuscript
+
+    assert receipt["bibliography_entries"] == validate_manuscript(root)["citation_count"]
     assert receipt["license"] == "CC-BY-4.0"
     assert receipt["human_visual_review"] == "pending"
     assert receipt["editorial_review"] == "pending"
@@ -467,6 +470,10 @@ def test_real_four_format_render_and_receipt(tmp_path):
     assert receipt["slide_layout"] == {
         "producer": rendering.SLIDE_LAYOUT,
         "text_budget": rendering.SLIDE_TEXT_LIMIT,
+        "prose_budget": rendering.SLIDE_PROSE_LIMIT,
+        "line_width": rendering.SLIDE_LINE_WIDTH,
+        "line_limit": rendering.SLIDE_LINE_LIMIT,
+        "bullet_right_inset_emu": rendering.SLIDE_BULLET_RIGHT_INSET,
     }
     import zipfile
     import xml.etree.ElementTree as ET
@@ -474,6 +481,20 @@ def test_real_four_format_render_and_receipt(tmp_path):
     with zipfile.ZipFile(tmp_path / "review" / rendering.OUTPUTS["slides"]) as package:
         media = [name for name in package.namelist() if name.startswith("ppt/media/")]
         assert len(media) == len(rendering.FIGURES)
+        padded_bodies = 0
+        ns = {"p": "http://schemas.openxmlformats.org/presentationml/2006/main", "a": "http://schemas.openxmlformats.org/drawingml/2006/main"}
+        for name in package.namelist():
+            if not (name.startswith("ppt/slides/slide") and name.endswith(".xml")):
+                continue
+            for shape in ET.fromstring(package.read(name)).findall(".//p:sp", ns):
+                ph = shape.find(".//p:ph", ns)
+                if ph is None or ph.get("idx") != "1":
+                    continue
+                if any((style := paragraph.find("a:pPr", ns)) is None or style.find("a:buNone", ns) is None for paragraph in shape.findall(".//a:p", ns)):
+                    assert int(shape.find("p:txBody/a:bodyPr", ns).get("rIns")) >= rendering.SLIDE_BULLET_RIGHT_INSET
+                    padded_bodies += 1
+        assert padded_bodies > 0
+
         runs = [
             node.text or ""
             for name in package.namelist()
@@ -677,3 +698,152 @@ def test_only_declared_diagram_targets_reach_rendered_images(tmp_path):
         rendering.rebase_links(
             node, tmp_path, "a" * 40, {target: "figures/diagram.png"}
         )
+
+
+def _layout_prose(text):
+    import re
+    return {"t": "Para", "c": [
+        {"t": "Space"} if token.isspace() else {"t": "Str", "c": token}
+        for token in re.findall(r"\s+|\S+", text)
+    ]}
+
+
+def _layout_pages(document):
+    pages = []
+    for block in rendering.paginate_slides(document)["blocks"]:
+        if block["t"] == "Header":
+            pages.append([])
+        else:
+            pages[-1].append(block)
+    return [page for page in pages if page]
+
+
+@pytest.mark.parametrize("filename,needle", [
+    ("01_introduction.md", "A scholarly profile"),
+    ("02_system_context.md", "The public repository"),
+    ("03_methods.md", "The checkout-local"),
+    ("03_methods.md", "The shared [paper-resource"),
+    ("03_methods.md", "timing and tracing workloads"),
+    ("06_limitations_and_next_steps.md", "Capacity planning"),
+])
+def test_actual_manuscript_paragraphs_do_not_orphan_their_final_words(filename, needle):
+    """These paragraphs produced the observed 1–5-word frozen LO slides."""
+    import re
+    root = Path(__file__).resolve().parents[2]
+    source = (root / "docs/manuscript" / filename).read_text()
+    paragraph = next(value for value in source.split("\n\n") if needle in value)
+    # Isolate visible prose for this allocation regression. Rich inline identity
+    # and resolved link/citation retention have separate AST/native regressions.
+    paragraph = re.sub(r"\[([^]]+)\]\([^)]*\)", r"\1", paragraph)
+    paragraph = paragraph.replace("[@docxologyIndex]", "(Friedman 2026)").replace("`", "")
+    paragraph = " ".join(paragraph.split())
+    original = _layout_prose(paragraph)
+    pages = _layout_pages({"meta": {}, "blocks": [original]})
+    assert len(pages) == 1, filename
+    assert pages[0] == [original]
+
+
+def test_long_prose_prefers_complete_sentence_boundaries_and_retains_every_inline():
+    sentences = [" ".join([word] * 24) + "." for word in ("Alpha", "Bravo", "Charlie", "Delta")]
+    original = _layout_prose(" ".join(sentences))
+    pages = _layout_pages({"meta": {}, "blocks": [original]})
+    paragraphs = [block for page in pages for block in page]
+    assert [inline for block in paragraphs for inline in block["c"]] == original["c"]
+    assert all("".join(node.get("c", " ") for node in block["c"]).rstrip().endswith(".") for block in paragraphs)
+    assert all(rendering._slide_text_size(block) >= 120 for block in paragraphs)
+
+
+def test_long_single_sentence_balances_tiny_tail_without_discarding_words():
+    original = _layout_prose(" ".join(["retained"] * 61) + ".")
+    pages = _layout_pages({"meta": {}, "blocks": [original]})
+    paragraphs = [block for page in pages for block in page]
+    assert len(pages) >= 2
+    assert [inline for block in paragraphs for inline in block["c"]] == original["c"]
+    assert min(rendering._slide_text_size(block) for block in paragraphs) >= 120
+
+
+def test_short_adjacent_paragraphs_pack_in_order_within_one_section():
+    originals = [_layout_prose(f"Paragraph {index} retains its own complete authored sentence.") for index in range(6)]
+    document = {"meta": {}, "blocks": [{"t": "Header", "c": [2, ["section", [], []], [{"t": "Str", "c": "Section"}]]}, *originals]}
+    pages = _layout_pages(document)
+    assert len(pages) < len(originals)
+    assert any(len(page) > 1 for page in pages)
+    assert [block for page in pages for block in page] == originals
+
+
+def test_packing_keeps_section_boundaries_and_co_located_anchor_aliases():
+    def header(identity):
+        return {"t": "Header", "c": [2, [identity, [], []], [{"t": "Str", "c": identity}]]}
+    first, second = _layout_prose("First complete paragraph."), _layout_prose("Second complete paragraph.")
+    nested = {"t": "Div", "c": [["inner", [], []], [second]]}
+    jumps = {"t": "Para", "c": [{"t": "Link", "c": [["", [], []], [{"t": "Str", "c": "Jump"}], ["#inner", ""]]}]}
+    output = rendering.paginate_slides({"meta": {}, "blocks": [header("one"), first, nested, header("two"), jumps]})
+    assert [block["c"][1][0] for block in output["blocks"] if block["t"] == "Header"] == ["one", "two"]
+    assert output["blocks"][1:3] == [first, second]
+    assert output["blocks"][-1]["c"][0]["c"][-1][0] == "#one"
+    assert jumps["c"][0]["c"][-1][0] == "#inner"
+
+
+def test_explicit_line_breaks_prevent_false_compact_packing():
+    originals = [{"t": "Para", "c": [{"t": "Str", "c": "line"}, {"t": "LineBreak"}] * 6} for _ in range(2)]
+    pages = _layout_pages({"meta": {}, "blocks": originals})
+    assert len(pages) >= 2
+    assert [inline for page in pages for block in page for inline in block["c"]] == [inline for block in originals for inline in block["c"]]
+
+
+def test_nested_list_packing_accounts_for_every_indentation_level():
+    body = _layout_prose(" ".join(["word"] * 37) + ".")
+    nested = {"t": "BulletList", "c": [[{"t": "BulletList", "c": [[body]]}]]}
+    originals = [nested, nested]
+    pages = _layout_pages({"meta": {}, "blocks": originals})
+    assert len(pages) == 2
+    assert [block for page in pages for block in page] == originals
+
+
+def test_bullet_body_inset_preserves_text_links_media_and_nonbullet_geometry(tmp_path):
+    import zipfile
+    from xml.etree import ElementTree as ET
+    source = b'''<p:sld xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"><p:cSld><p:spTree><p:sp><p:nvSpPr><p:nvPr><p:ph idx="1"/></p:nvPr></p:nvSpPr><p:txBody><a:bodyPr/><a:p><a:pPr lvl="0"/><a:r><a:t>Static navigation and progressive search. Source: nav-toggle.js</a:t></a:r></a:p></p:txBody></p:sp><p:sp><p:nvSpPr><p:nvPr><p:ph idx="1"/></p:nvPr></p:nvSpPr><p:txBody><a:bodyPr rIns="91440"/><a:p><a:pPr><a:buNone/></a:pPr><a:r><a:t>Ordinary prose remains unchanged.</a:t></a:r></a:p></p:txBody></p:sp></p:spTree></p:cSld></p:sld>'''
+    path = tmp_path / "review.pptx"
+    untouched = {"ppt/slides/_rels/slide1.xml.rels": b"exact link relationship bytes", "ppt/media/figure.png": b"exact image bytes"}
+    with zipfile.ZipFile(path, "w") as package:
+        package.writestr("ppt/slides/slide1.xml", source)
+        for name, raw in untouched.items():
+            package.writestr(name, raw)
+    assert rendering.pad_slide_bullet_bodies(path) == 1
+    with zipfile.ZipFile(path) as package:
+        actual = package.read("ppt/slides/slide1.xml")
+        for name, raw in untouched.items():
+            assert package.read(name) == raw
+    assert actual == source.replace(b"<a:bodyPr/>", b'<a:bodyPr rIns="457200"/>', 1)
+    ns = {"a": "http://schemas.openxmlformats.org/drawingml/2006/main"}
+    assert [node.text for node in ET.fromstring(actual).findall(".//a:t", ns)] == [node.text for node in ET.fromstring(source).findall(".//a:t", ns)]
+    once = path.read_bytes()
+    assert rendering.pad_slide_bullet_bodies(path) == 0
+    assert path.read_bytes() == once
+
+
+def test_bullet_inset_refuses_malformed_package_without_replacing_original(tmp_path):
+    import zipfile
+    path = tmp_path / "bad.pptx"
+    with zipfile.ZipFile(path, "w") as package:
+        package.writestr("ppt/slides/slide1.xml", b"<broken")
+    before = path.read_bytes()
+    with pytest.raises(ValueError):
+        rendering.pad_slide_bullet_bodies(path)
+    assert path.read_bytes() == before
+
+
+@pytest.mark.parametrize("attribute", [b"rIns='91440'", b"rIns = '91440'", b'rIns = "91440"'])
+def test_bullet_inset_preserves_valid_xml_quote_and_spacing_forms(tmp_path, attribute):
+    import zipfile
+    from xml.etree import ElementTree as ET
+    source = b'<p:sld xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"><p:cSld><p:spTree><p:sp><p:nvSpPr><p:nvPr><p:ph idx="1"/></p:nvPr></p:nvSpPr><p:txBody><a:bodyPr '+attribute+b'/><a:p><a:pPr/><a:r><a:t>Reviewed bullet.</a:t></a:r></a:p></p:txBody></p:sp></p:spTree></p:cSld></p:sld>'
+    path = tmp_path / "quoted.pptx"
+    with zipfile.ZipFile(path, "w") as package:
+        package.writestr("ppt/slides/slide1.xml", source)
+    assert rendering.pad_slide_bullet_bodies(path) == 1
+    with zipfile.ZipFile(path) as package:
+        actual = package.read("ppt/slides/slide1.xml")
+    assert actual == source.replace(attribute, attribute.replace(b"91440", b"457200"))
+    assert ET.fromstring(actual) is not None
