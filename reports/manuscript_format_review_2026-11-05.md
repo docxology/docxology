@@ -52,3 +52,52 @@ All 137 viewer pages retain the expected text in order. **108 actual text body p
 A separate Codex reviewer cleared the final source statically, reviewed all 137 preliminary slides and the 16-page native PDF/HTML/figures, then inspected final full-size slides 10, 18, 32, 37, 58, 103 and repaired 113 plus final slides 105–128. The reviewer verified the final receipt/artifact bindings and successful body-box/text coverage evidence, finding no observed clipping, overlap or remaining prose-pagination blocker in that scope.
 
 This is assistant source/format review, not named human/editorial/scientific approval. Reader-specific EPUB visual review and other presentation viewers remain pending. Artifact receipts retain their pending human/editorial review fields and do not assess scientific validity or publication readiness. Full-profile generation, deployment, release and the later integrated candidate's format proof remain separate acceptance steps. Original manuscript prose and retained publication sources were not edited by this layout correction.
+
+
+## Integrated follow-up — source a69c6bbf, layout v5
+
+This later review applies to committed source `a69c6bbf09c3c7d8d55aebe7c752b73444a44437`, including the scholarly PDF pilot and the final linked-bullet correction. The preceding 137-slide review remains historical evidence for `476fbb85ae30edf499b0742253228c8f5e047b7e`; its counts and artifacts have not been relabeled as this candidate.
+
+Qualified execution `15024-8405211232564f72ae8aa1562950f142` succeeded with **125 manuscript tests passed in 38.49 seconds**, including the real four-format render. Six dependency deprecation warnings were retained. The run did not time out, left no remaining descendants and reported source unchanged. Every named native input matched its exact Git object at the reviewed commit and remained unchanged afterward. The worktree was explicitly recorded as dirty solely for the unrelated `reports/asset_size_2026-11-05.json` control receipt. This is a manuscript gate, not whole-repository acceptance.
+
+### Earlier failures remain evidence
+
+The attempt at `54bf5bc0e7da14dc7abaa850d20502f1445000d9`, receipt `14695-95c4c2ae9c474cbb94b8dbaa22574093`, retained **101 passed / 5 failed**. Its four-format render passed, but ordinary non-Git manuscript fixtures reached a Git-backed PDF lookup before their link checks. The committed repair defers that lookup only when no projection registry is declared; malformed JSON and dangling registry symlinks still refuse. A focused gate passed 82 checks, including those five fixtures and the deployed/projection suites. Those counts overlap other checks and are not added to the manuscript total.
+
+The intermediate `cc33754e68c00bc6ca86eda4a61f3278cd44c160` render, receipt `14755-6e146db651924b398e4602b65a458717`, passed 106 automated checks and produced 141 slides, but **failed independent visual review**: slide 125 overprinted the final Scholar-readiness sentence inside a valid body box. Text-presence and aggregate body bounds did not detect it. The later negative-control measurement `14949-c03ff8f77f93406eb7d37e207bdb00cb` detected **15 substantial word overlaps**, all on that slide, despite preserved extractable words and the original body font. That intermediate artifact is not format-cleared. The integrating assistant separately viewed its full-size slides 40, 41 and 57 and found no issue on those three pages. That limited intermediate observation remains separate from the failed whole-deck visual result and the later full-deck review below.
+
+Private measured variants retained the failed input. Complete sentence continuations within one logical bullet repaired the observed layout. The production rule groups linked-list sentences, retains a short emphasized label with its opening sentence, and accounts for each paragraph gap before packing. Generated nonbullet continuations keep their explicit margins and inherit the original active bullet level's font. No manuscript prose, source URLs, global fonts or allocation budgets were changed. This is observed behavior of this generated deck in the named viewer; no matching upstream defect or universal viewer claim is asserted.
+
+The actual tests-first source gate retained 13 initial failures, followed by a narrow whitespace-only geometry failure. The final core gate passed 122 checks with lint clean; the final native gate above includes those cases and three native checks. The counts describe separate, overlapping scopes.
+
+### Final artifact and receipt identities
+
+| Observed object | SHA-256 |
+| --- | --- |
+| Render receipt | `df965384a80b9f518227b6ec4cd1f3c33d89c7c5fb64032b96887f9039edb7b8` |
+| PowerPoint | `782e3f1f1de91b90f8a9b36a72a543b5f03b9f7248e398e53ad44bd794756fb8` |
+| Native PDF | `2ea28625bd51d328512a346c3ddd9a03041d33b0dad52bb61f15d54e601d862f` |
+| HTML | `87b1a22924706142d0e9990c4ddce0b50756bb64730d8dc9ebf4a77ea0ae987f` |
+| EPUB | `0b7eddb874734ae23418e3213f65e7c9cfba01235a25fc5e34db24e55cd990a5` |
+| LibreOffice slide PDF | `efc10b635050316dfdf8ccd3599cbdfa973c0b5ac89c4199d0f0055fc57a25ff` |
+| Native source context | `dc171aa0892ab58f62fa4a62ac660fa0de547efe98b4fda91f35ac8a5b4b0d31` |
+| Current semantic proof | `c4c843b4242012776fa5469181133cf0860ac75e02c87beb519cf73c0277a004` |
+| Viewer body coverage | `9962f4ee046ee6c7348a7e1e4a4182c0c29c133f19fb77a8ba0f3014d013b1f6` |
+| Viewer word coverage | `d0dc8200ff0beccaf24215e41c7659c74aeec6a313f6ba3076cecb39ad884a5b` |
+| Four-format inspection | `10364b103dd5459f5690266e6728fdd94a2ae63ac2a5474891c8406e6dc95ca8` |
+
+The producer is `coherent-list-paragraph-pagination-v5`, renderer source SHA-256 `d62a7f0a8e870916303bc7214f43ef8bf9e6bf8cc488bfe245f992d19014e7d4`. The declared 450-character indivisible/table/code budget, 600-character prose budget, 60-character line estimate, nine-line envelope and 457200-EMU bullet inset remain unchanged. Native tools and template remain pinned as above. Actual viewing used LibreOffice 26.8.1.1, executable SHA-256 `ddd0f0491a12ca2bec285ecf4b1244c3618fc6cb51f529769424c86d956283c3`, and PyMuPDF 1.28.2.
+
+### Final preservation and layout result
+
+The actual deck has **148 slides**. A private observational wrapper called the unchanged paginator and captured the resolved current manuscript and its unchanged returned projection. The check retained **34,752 non-table body characters**, **151 link occurrences**, all **42 table body rows**, code, document metadata, every source heading and all four image bindings. Original logical list boundaries and ordered starting/style attributes were preserved: **31 logical items remained 31 display fragments**. Repeated table headers matched their original column/header/footer structures. Internal link remapping resolved to actual output anchors; other link labels, targets and occurrences remained exact. Complete figure captions remain present, while the existing presentation policy uses shorter image labels.
+
+The actual PowerPoint non-heading body matched projected prose, tables and code after whitespace normalization. All embedded figure payloads matched their fresh render hashes. Complete PowerPoint text was then found in the actual LibreOffice PDF in order, allowing automatic list labels and normalized punctuation/whitespace. Source/projection custody and viewer verification are separate checks.
+
+All **119 text body placeholder pages** were measured against actual inherited slide/layout/master geometry, with **zero outside-body text**, **zero body/body or body/title overlap**, and no text beyond page edges. The new bounded word-box helper also found **zero substantial word overlaps across all 148 pages**. It refuses malformed, nonfinite, nonpositive or unbounded geometry and flags overlap greater than 40% of the smaller rectangle for words with at least two alphanumeric characters. Isolated symbols and one-character words are outside this detector; it supplements visual reading rather than certifying universal typography.
+
+The repaired Scholar bullet is now slide **132**. Its indexing caveat retains the contiguous expected word sequence, and its body font measures **24.01 points**, matching the original observed size. All 19 slide contact sheets were produced. The native PDF remains **16 physical pages** without detected page-edge text overflow; HTML loaded all four figures without horizontal overflow; EPUB retained **13 valid XHTML documents**. Reader-specific EPUB visual review remains pending.
+
+A separate Codex reviewer independently verified all 26 inspected source hashes against exact Git objects and all 13 output hashes, viewed **all 19 contact sheets covering 148 slides**, final full-size slide **132**, both native PDF contact sheets covering **16 pages**, and the full HTML capture. The reviewer found the repaired bullet clearly readable at the preserved 24.01-point size, with all three sentences and linked labels retained, and observed no other clipping or overprint in that scope. The reviewer also read the source/projection, body and word coverage scopes and cleared the final format evidence with the limits stated here. A second independent Codex reviewer, who had also cleared the exact source hashes statically, separately viewed all 19 final slide contact sheets, both native PDF contact sheets, the full HTML, repaired slide 132, method slides 40/41/57 and former-orphan slides 10/18/32/37/62. That reviewer verified six supplied JSON/receipt/viewer-PDF hashes and found no clipping or overlap blocker in that technical format scope. These overlapping review scopes are not additional test counts.
+
+This assistant technical/format evidence does not supply named human, editorial or scientific approval. Render receipts keep those review fields pending and do not assess scientific validity or publication readiness. Deployment, indexing and the complete-profile release binder remain separate gates. Later publication commits may retain this review only after verifying that every named native input hash still matches this reviewed source; changed inputs require the applicable checks again.

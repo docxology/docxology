@@ -18,7 +18,7 @@ criteria, and dependencies. Re-review this file before each public release.
 | --- | --- | --- |
 | Minor | Search Console cleanup and selected URL inspections; retry unavailable source queries | Signed-in owner access, public source availability |
 | Medium | Named visual review and revision-bound release attestation; current-candidate Lighthouse review; Pages growth/retention review; deployed Scholar-pilot routes and later index observations | Reviewer/access, measured candidate evidence, reviewed source/projection contract |
-| Major | Deferred licensed full-text acquisition and originating-paper corrections; manuscript format inspection and editorial review; managed-profile security scan and finding disposition | Rights holders, depositors/authors, editorial decisions, required scan runtime |
+| Major | Deferred licensed full-text acquisition and originating-paper corrections; manuscript human/editorial review; managed-profile security scan and finding disposition | Rights holders, depositors/authors, editorial decisions, required scan runtime |
 
 The [reviewed Scholar pilot](reports/scholar_pdf_placement_review_2026-11-05.md)
 implements bounded, byte-identical same-directory aliases while preserving
@@ -217,9 +217,10 @@ Recurring checks below are operating obligations, not unfinished feature work.
   - Request indexing for selected indexable canonical work and video detail
     pages, spread across days for the quota; never the noindex `videos/` index
     or redirect stubs.
-  - Retry the selective indexing request when Google's submission service is
-    available. The November 5 request failed; none was accepted. Recheck Page
-    indexing weekly and retain the report's scope/date when comparing counts.
+  - Inspect actual status before another selective indexing request. The
+    initial November 5 request failed; a later live-test retry is unconfirmed.
+    No accepted request was observed. Recheck Page indexing weekly and retain
+    the report's scope/date when comparing counts.
   - Follow [gsc-followup.md](docs/seo/gsc-followup.md); never recreate or resubmit
     the retired image sitemap.
 
