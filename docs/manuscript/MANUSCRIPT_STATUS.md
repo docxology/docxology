@@ -1,37 +1,11 @@
 # Manuscript status — docxology
 
-Source version 0.6.0-draft, dated 2026-10-23, is a source-backed repository-methods draft describing
-the public research/software/citation index and its static website. Archived
-research publications remain separate under [papers/](../../papers/).
+Source version 0.7.0-draft, dated 2026-11-05, is a repository-methods draft about the public research, software and citation index. It describes implemented mechanisms and documented maintenance cases. It has no assigned venue, manuscript DOI, comparative experiment, or new empirical research results. Archived research publications under [papers/](../../papers/) retain their separate identities and bytes.
 
-Numbered sections describe source authority, stable identities, shared policy,
-ordered generation, progressive discovery, agent inspection, and revision-bound
-evidence. Implementation claims link repository sources and runbooks; volatile
-totals belong in generated or dated evidence. The bibliography identifies the
-repository from `CITATION.cff`; no manuscript DOI or comparative study is assigned.
+This revision expands the source-to-projection method with complete-or-error intake, document-byline review, selected-edition custody, bounded hosting, search-engine readiness, explicit responsibility states, a claim-to-evidence map, failure controls and a reproducibility protocol. Primary external references provide provenance context and official hosting/indexing requirements; they do not validate this implementation or establish standards conformance. The supplement maps claims to source owners and regression tests.
 
-`validate_manuscript.py` is the structural source gate. The explicit renderer
-uses the committed docxology/template 4.0.2 combined-PDF API, Pandoc, crossref,
-XeLaTeX, and BibTeX. It produces an informative vector cover and four body diagrams from declared
-offline producers. HTML, EPUB, and PowerPoint use the existing Pandoc/citeproc pipeline.
-The [render command](README.md) writes a new external review directory and binds
-source, tool, template export, external Python runtime, cover, and output hashes.
-Prior review directories are preserved on failure. Template code and the reviewed
-LaTeX preamble execute as trusted inputs; process isolation is not an OS sandbox.
+The [structural validator](../../code/orchestrators/validate_manuscript.py) checks manuscript inputs; it does not render or assess publication readiness. The [rendering guide](README.md) pins the committed docxology/template 4.0.2 API, Pandoc/crossref pair, XeTeX, BibTeX, external dependency interpreter, cover and body-diagram producers. Explicit rendering writes a new external review directory and binds source, runtime, tools, transformations, figures and output hashes. Prior attempts are preserved. Trusted template code and TeX execute; process controls alone are not an OS sandbox.
 
-Manuscript text and original figures use CC BY 4.0. Archived publications and
-third-party material retain their own rights. Automated rendering, package/text
-checks, and assistant page inspection remain separate from named human visual
-approval, editorial review, scientific validity, and publication readiness.
-The current revision adds browser-local selections, explained research discovery,
-teaching-model replay, package identity and critical deployment coverage.
-The [dated assistant format inspection](../../reports/manuscript_format_review_2026-10-23.md)
-records frozen draft hashes, complete capture coverage, corrections and retained
-failed attempts. A later source candidate requires its own render receipt;
-named human and editorial approvals remain pending.
+Current-source rendering and assistant format inspection must be recorded for this revision before claiming those checks passed. The [2026-10-23 format review](../../reports/manuscript_format_review_2026-10-23.md) remains historical evidence for its own frozen source and cannot approve this draft. Human visual approval, editorial review, scientific validity and publication readiness are separate and remain pending unless their own identified records exist.
 
-Historical evidence: the native four-format integration passed on 2026-10-18; assistant inspection
-covered every page of the earlier eight-page PDF. The revised ten-page prototype adds architecture, loading, evidence, and release diagrams; final candidate verification remains separate. No text
-blocks escaped page bounds. This records draft layout inspection only.
-Named human and editorial approvals remain pending. Outputs are review drafts and are not new
-research bibliography entries or Zenodo deposits.
+Manuscript text and original figures use CC BY 4.0. Archived papers and provider material retain their own terms. Review outputs are not new bibliography entries or archival deposits.

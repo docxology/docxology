@@ -4,7 +4,7 @@ This directory contains a source-backed technical draft for:
 
 **docxology: Research, Software, and Citation Index**
 
-A public profile repository indexing bibliography, software, generated GitHub inventory, and research documentation across entomology, active inference, cognitive security, and art/synergetics. The draft describes this repository system; archived publications remain under [`papers/`](../../papers/).
+A public profile repository indexing bibliography, software, generated GitHub inventory, and research documentation across entomology, active inference, cognitive security, and art/synergetics. The draft describes this repository system. Retained local publication sources and per-work evidence remain under [`papers/`](../../papers/); selected versioned editions may be hosted externally. Draft 0.7.0 adds explicit intake, custody, failure-control and evaluation methods. The [evidence map](04_artifacts_and_evidence.md) states the claim supported by each check.
 
 Read [`MANUSCRIPT_STATUS.md`](MANUSCRIPT_STATUS.md) for the evidence and rendering boundary. The architecture and configuration map is in [`development.md`](../operations/development.md).
 
@@ -33,7 +33,7 @@ Read [`MANUSCRIPT_STATUS.md`](MANUSCRIPT_STATUS.md) for the evidence and renderi
 | Surface | Role |
 |---|---|
 | [`pages/`](../../pages/) | Curated bibliography, software catalog, profile, and discovery documentation |
-| [`papers/`](../../papers/) | Archived source documents, extracted text, and per-paper documentation |
+| [`papers/`](../../papers/) | Retained local documents, edition-specific source evidence, available extracted text, and per-paper documentation |
 | [`code/`](../../code/) | Executable generation, validation, intake, and browser tests |
 | [`reports/`](../../reports/) | Dated source observations and scoped QA evidence |
 | [`resume/`](../../resume/) | Structured CV authority and generated exports |

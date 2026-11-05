@@ -10,6 +10,12 @@ The repository connects authored source, machine-readable discovery exports, sta
 
 This draft explains those mechanisms using local source references. It is an account of the implemented design with verification boundaries; it does not report a comparison with other scholarly-profile systems.
 
+## Questions and contribution boundary
+
+The practical questions are how to preserve an indexed work's identity as its title or edition changes; how to prevent a partial external observation from becoming a complete-looking catalog; how to publish useful discovery surfaces within a finite hosting budget; and how to state exactly what a check establishes. The contribution is the inspectable integration of these mechanisms in a maintained repository, with explicit source owners and refusal behavior. It is not a claim of a new provenance standard or priority over other repository systems.
+
+Provenance can describe entities, producing activities, and responsible agents [@provOverview]. Here, manifests, source observations, review decisions, generation steps, and acceptance receipts record related information through repository-specific contracts. The project does not currently export a conformant PROV representation; the conceptual correspondence is orientation rather than interoperability evidence.
+
 ## Reader orientation
 
 System boundaries are defined in @sec:system_context. Methods and reproducibility commands follow in @sec:methods and @sec:reproducibility. The evidence map in @sec:artifacts_evidence identifies what each check can establish. The supplement links source owners so future changes can update the narrative alongside the implementation.

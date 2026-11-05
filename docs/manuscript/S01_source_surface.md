@@ -37,6 +37,14 @@ This supplement maps statements to the source owners that should be inspected wh
 
 - **Critical deployment coverage.** Source: [artifact verifier](../../code/orchestrators/verify_deployed_artifact.py). Verification: [real HTTP regressions](../../code/tests/test_deployed_artifact.py), including stale research-desk assets.
 
+- **Complete external intake.** Source: [Zenodo pagination](../../code/src/zenodo_pagination.py). Verification: [completion and refusal tests](../../code/tests/test_zenodo_pagination.py), [paired-reader tests](../../code/tests/test_check_zenodo_uncatalogued.py).
+
+- **Selected editions and document bylines.** Source: [paper resources](../../code/src/paper_artifacts.py). Verification: [artifact tests](../../code/tests/test_paper_artifacts.py), [PDF safety tests](../../code/tests/test_zenodo_pdf_safety.py), [document authority tests](../../code/tests/test_doi_document_authors.py).
+
+- **Pinned archive custody and reference protection.** Source: [archive projection](../../code/src/archive_projection.py), [report references](../../code/src/report_references.py). Verification: [archive regression tests](../../code/tests/test_archive_projection.py), [hosting policy](../operations/github-pages-artifact.md).
+
+- **Scholar technical readiness.** Source: [readiness policy](../../code/src/scholar_readiness.py). Verification: [readiness tests](../../code/tests/test_scholar_readiness.py), [follow-up runbook](../seo/gsc-followup.md). Actual indexing requires an independent observation.
+
 ## Expansion checklist
 
 - Identify authored source and generated projections separately.

@@ -107,10 +107,11 @@ def _draw(name: str) -> bytes:
             83,
             454,
             133,
-            "REPOSITORY ARCHIVE",
+            "SOURCE CUSTODY",
             [
-                "Original documents and dated evidence",
-                "Source custody and historical revisions",
+                "Local originals + dated evidence",
+                "Versioned external editions by reference",
+                "Source custody + historical revisions",
             ],
         )
         box(

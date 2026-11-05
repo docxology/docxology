@@ -3,6 +3,9 @@
 | Term | Meaning in this repository |
 | --- | --- |
 | Authored authority | Reviewed input such as the bibliography table or resume source, rather than its generated projection |
+| Selected edition | The particular local or versioned remote document selected for current download/citation metadata |
+| Source evidence | An identified observation or extraction with object hashes and a stated review scope |
+| Exact membership | Agreement on object identities and roles, stronger than matching aggregate counts |
 | Projection | Derived HTML, data, citation export, report, or bounded hosting artifact |
 | Work identity | A reserved citation key and permanent work URL recorded in the identity registry |
 | Shared namespace | The checkout-local package that keeps canonical and compatibility imports attached to one module object |

@@ -14,7 +14,8 @@ After an authorized source edit, rebuild the declared projections and check the 
 
 ```bash
 uv run python3 code/orchestrators/regenerate_all.py --validate
-uv run python3 -m pytest code/tests -q
+uv run --all-extras python3 -m pytest code/tests -q -m "not lighthouse"
+uv run --all-extras python3 -m pytest code/tests -q -m lighthouse
 ```
 
 Regeneration writes checked-in outputs. Standard validation includes cached evidence and freshness gates, so a failing gate must be diagnosed rather than treated as permission to rewrite its evidence. Source refreshes and clean payload/control-binder landing are documented in [evidence-refresh.md](../operations/evidence-refresh.md) and [settle.md](../operations/settle.md).
@@ -28,6 +29,12 @@ The [checkout-local package guide](../../code/src/README.md) defines the canonic
 The [accessibility fixture](../../code/tests/test_accessibility_refinements.py) reuses a browser process within its module while creating a fresh context for every test. Storage, cookies, pages and service-worker state remain isolated. The runtime capability probe completes before the persistent synchronous browser driver starts. Performance measurements remain a separate serial test selection.
 
 A surrounding admission wrapper can select its own Python environment. Bind the child command to this checkout's environment and verify both interpreter prefixes before source work, as described in the [development guide](../operations/development.md). Installed tools, a successful import and a qualified runtime remain different observations.
+
+## Source and execution bindings
+
+For a reproducibility record, identify the repository revision, dirty-source status, exact command, input bytes, lock file, interpreter and optional tool versions. A receipt should record the selected scope and actual exit status, including interrupted or failed attempts. Source changes after a run require a fresh applicable gate; copying a passing receipt's timestamp does not bind the new source. Surrounding host admission and process supervision are operational controls and must be described separately from what the repository's tests establish.
+
+A reader can check local invariants before relying on a projection: a reserved key resolves to one active identity; a selected document agrees with its recorded object fields; generated output passes its producer's no-write check; and a deployed check names the expected candidate. Count agreement alone is weaker than exact member agreement. A digest identifies bytes, while a manifest's membership and producing method explain which objects were counted. These checks do not recover missing experimental inputs.
 
 ## Replay inputs
 

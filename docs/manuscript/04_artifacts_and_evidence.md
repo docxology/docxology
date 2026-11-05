@@ -1,34 +1,45 @@
 # Artifacts and Evidence {#sec:artifacts_evidence}
 
-## Evidence inventory
+## Claim-to-evidence map
 
-- [Curated bibliography](../../pages/BIBLIOGRAPHY.md), [identity registry](../../data/work-identifiers.json) support reviewed catalog entries and persistent route reservations. It does not establish completeness of all external indexes.
+A verification result is useful only with the question it addresses. The repository records the following separate classes; passing one class does not promote an observation into a stronger claim.
 
-- [Generated manifest](../../data/generated-manifest.json) and producer no-write checks support declared output ownership and current source/projection agreement. It does not establish fresh external observations or deployed bytes.
-
-- [Scholar snapshot](../../data/scholar-snapshot.json) and [verification receipt](../../data/scholar-verification-receipt.json) support a dated directly observed metric bound to exact snapshot bytes. It does not establish a continuously current count or independent assessment of research quality.
-
-- [Browser tests](../../code/tests/) and [QA reports](../../reports/) support behavior in the tested runtime and scenarios. It does not establish every device, network, assistive technology, or human visual approval.
-
-- [Pages artifact manifest](../../data/pages-artifact-manifest.json) supports declared web projection, hashes, omissions, and source binding. It does not establish every live response body or archive licensing.
-
-- [Deployed artifact verifier](../../code/orchestrators/verify_deployed_artifact.py) supports the targeted technical checks listed in its fresh receipt. It does not establish full-site body verification or full release attestation.
-
-- [Visual QA runbook](../operations/accessibility-qa.md) supports separate capture, hash-bound review, and approval procedures. It does not establish review from screenshot generation alone.
-
-- [Manuscript validator](../../code/orchestrators/validate_manuscript.py) supports source/configuration consistency and reference resolution. It does not establish complete BibTeX grammar, rendering, scientific validity, or editorial approval.
-
+| Claim and source owner | Evidence to inspect | Interpretation limit |
+| --- | --- | --- |
+| Reviewed identity: [bibliography](../../pages/BIBLIOGRAPHY.md) and [reservations](../../data/work-identifiers.json) | Curated row, stable key and explicit review history | No complete external-index or scientific-quality claim |
+| Selected PDF edition: [resolver](../../code/src/paper_artifacts.py) | Exact object fields and independent per-paper source evidence | A declaration is not a remote fetch, extraction audit or rights determination |
+| Source/projection agreement: [generation plan](../../code/src/generation_plan.py) | Declared writer, inputs and independent no-write check | No fresh remote observation or live-byte proof |
+| Dated metrics: [Scholar snapshot](../../data/scholar-snapshot.json) and [receipt](../../data/scholar-verification-receipt.json) | Direct authenticated observation bound to exact snapshot bytes | No continuously current metric or research-quality assessment |
+| Tested behavior: [tests](../../code/tests/) and [QA](../../reports/) | Runtime, selected scenarios, source binding and failures | No coverage of every device, network or assistive technology |
+| Hosted projection: [Pages manifest](../../data/pages-artifact-manifest.json) | Included objects, hashes, explicit omissions and source anchor | No availability guarantee for omitted or external objects |
+| Targeted live acceptance: [artifact verifier](../../code/orchestrators/verify_deployed_artifact.py) | Expected candidate, deployment run and fetched/HEAD contracts | No full-site body verification or human sign-off |
+| Review: [visual QA procedure](../operations/accessibility-qa.md) | Identified captures, hashes, reviewer and review scope | Capture alone is not approval; layout approval is not scientific replication |
+| Manuscript structure: [validator](../../code/orchestrators/validate_manuscript.py) | Configuration, references, section structure and resolved tokens | No rendering, full citation grammar, editorial approval or publication readiness |
 
 ![Evidence classes answer different questions. Byte identity, generation agreement, browser behavior, deployed contracts, and named review each retain their own scope.](../output/figures/evidence-boundaries.png){#fig:evidence_boundaries}
 
+## Evaluation protocol
+
+The implemented design is evaluated through contract tests and candidate-bound gates, rather than a new comparative experiment. For a changed mechanism, identify its source owner, valid fixture, invalid fixture and expected refusal before editing the implementation. Exercise the same public entry point used by its callers where practical. Temporary fixtures avoid changing tracked evidence. A failure produced by unavailable tools or network access must remain distinct from an assertion failure.
+
+| Mechanism | Positive check | Negative control |
+| --- | --- | --- |
+| Paginated intake | Distinct records exactly satisfy the observed total | Truncated, duplicate, malformed or changing pages refuse |
+| Edition/byline binding | Reviewed edition and evidence hashes agree | Changed evidence or mismatched document/registry baseline refuses |
+| Archive routing | Local bytes agree with the pinned committed object | Source drift or a surviving local download reference refuses |
+| Stable discovery | Reserved work identity resolves in generated exports | Missing identity or unresolved trail/citation reference fails |
+| Deployment acceptance | Expected source/run and declared object contracts agree | Stale revision, absent critical entry or mismatched fetched bytes fails |
+
+Use the focused regressions named in @sec:source_surface, then the declared generation checks and relevant full selections. Deterministic generation is assessed by repeat execution and unchanged substantive outputs. Runtime performance is assessed separately with matched workloads and conditions; a faster cached pass alone is not a comparative result. Reports must identify deselection, missing capabilities and pending manual review. This draft does not report fresh test counts or timing estimates as manuscript results.
+
+## Maintenance cases and unresolved evidence
+
+The [publication consistency review](../../reports/publication_consistency_review_2026-10-13.json) and [corrected-source review](../../reports/publication_source_corrections_2026-10-19.json) document why an active manuscript, archived edition and implementation check can disagree. MarkdownDecisionProcess's corrected evaluation is prospective because original empirical provenance was unavailable. PopulationSearch's new seeded protocol does not reconstruct a historical table denominator. Blake's identified current epoch must be distinguished from unrecovered historical membership. These are documented correction cases, not a replication study or a representative sample of research reliability.
+
+A current source correction should identify an immutable originating revision and its scoped verification, retain the prior correction history, and update the profile's interpretation boundary. It must not rewrite an archived PDF or imply a new archival deposit. Recovering an old observation requires the actual identified records; a new run cannot silently take its place.
+
+Visitor state is a different evidence class again. A saved reading list records a reader's selection; a share URL carries keys and a title. Selected exports inherit the catalog's metadata limits. A teaching-model trace records computation under stated assumptions and parameters. Neither source creates new authorship, citation support, or empirical validity.
+
 ## Current evidence status
 
-Visitor state adds a separate evidence class: a saved list records a reader's selection, and a share URL records portable keys and a title. Neither creates authorship, citation support or a new bibliography authority. Selected exports inherit the catalog's metadata limits. A teaching-model trace records computation under its stated assumptions and parameters, without establishing empirical validity.
-
-This draft binds architecture statements to repository sources and gives commands that can be rerun against a chosen candidate. It does not repeat historical test totals or deployment results as current measurements. Dated evidence belongs in the corresponding report and release records; a later reader must inspect the candidate and scope of each receipt.
-
-The architecture diagram in [development.md](../operations/development.md) is a documentation aid. The native PDF cover and body diagrams explain architecture, loading decisions, evidence boundaries, and release verification. They describe source-backed contracts rather than experimental results. Explicit rendering produces external review artifacts with hash-bound receipts.
-
-## Claim discipline
-
-A supporting source must match the kind of claim being made. Deterministic rendering supports source/output agreement; an external citation supports attribution; a browser observation supports its tested behavior. None substitutes for the others. Future benchmark tables must name their runtime, candidate, inputs, measurement procedure, failures, and retained raw observations.
+This draft binds architecture statements to source owners and provides commands against a chosen candidate. Dated implementation or deployment results remain in their corresponding reports, where a reader can inspect revision, runtime and scope. A later source candidate needs its own applicable acceptance. The architecture diagram in [development.md](../operations/development.md), the cover and the body figures explain the system; their successful production does not constitute an experiment or human visual approval.

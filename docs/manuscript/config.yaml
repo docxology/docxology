@@ -1,8 +1,8 @@
 paper:
   title: 'docxology: Research, Software, and Citation Index'
-  subtitle: Source authority, progressive discovery, and commit-bound release evidence
-  version: 0.6.0-draft
-  date: '2026-10-23'
+  subtitle: Reviewed source custody, bounded discovery, and revision-bound evidence
+  version: 0.7.0-draft
+  date: '2026-11-05'
   cover:
     producer: repository-source-flow-v1
     alt: Reviewed sources pass through shared identity and parsing policy into generated

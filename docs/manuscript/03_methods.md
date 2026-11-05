@@ -8,6 +8,20 @@ Runnable commands live in `code/orchestrators/`. Reusable parsing, rendering, id
 
 The checkout-local [shared package](../../code/src/README.md) preserves one module object across canonical namespace imports and legacy flat imports. This matters for exception catching, class identity and module state. Registration is explicit and regression checks compare the registry with shared source files. Importing the package does not eagerly load its optional rendering or browser dependencies. The project metadata declares a repository-local application rather than an installable wheel.
 
+## Complete intake and reviewed bylines
+
+The shared [Zenodo reader](../../code/src/zenodo_pagination.py) supplies complete-or-error pagination to its callers while leaving transport and report ownership with them. It requires bounded page shapes, a consistent exact total and distinct numeric record identities; an early short page, duplicate identity, changed total or exhausted bound raises an error instead of returning a partial catalog. Its [regressions](../../code/tests/test_zenodo_pagination.py) include the failure paths. These checks establish the reader's completion contract for the returned observation; they do not create a transactional snapshot of a remote service or prove that a query found every relevant work.
+
+Publication intake remains a separate review. A DOI identifies a registry record; a versioned PDF identifies a document edition. Their creator lists may differ. The [document-byline regressions](../../code/tests/test_doi_document_authors.py) require reviewed document evidence and frozen registry/document baselines before applying a document-order decision. A later registry refresh reports drift or unavailability while preserving a valid reviewed byline. It cannot silently substitute an unreviewed creator order. Editors, contributors, representative lists and depositors retain their declared roles instead of being inferred to be document authors.
+
+## Edition selection and bounded hosting
+
+The shared [paper-resource resolver](../../code/src/paper_artifacts.py) selects either an available local PDF or an explicitly reviewed remote primary. The remote declaration binds filename, exact versioned Zenodo file URL, version, record identity, byte count and SHA-256. A separate source-evidence record identifies what was actually fetched or extracted. Declaring a digest does not itself verify remote bytes, and text extracted from an older local PDF cannot be presented as the new edition's extraction.
+
+The [artifact builder](../../code/orchestrators/build_pages_artifact.py) constructs a finite web projection under local budgets. GitHub documents an independent published-site limit [@githubPagesLimits]; local headroom is a project policy. Existing hosted PDFs and permanent work routes remain preserved. Reviewed supporting Office files can use an exact committed Git object after local/object byte agreement and reference checks, implemented by [archive projection](../../code/src/archive_projection.py). Historical report selection also protects referenced evidence. A capacity change therefore needs both object custody and consumer-link verification; moving a folder name alone does not establish a working archive route.
+
+The repository, its Git history, the deployed projection, and external providers have different availability properties. Each manifest must state its own scope. Neither a small deployment nor a successful local hash check demonstrates the durability of every external source.
+
 ## Progressive browser discovery
 
 The [search runtime](../../js/search-page.js) starts an unfiltered visit with a compact preview, then loads the full core for a query or scoped selection. Work and video text segments load for relevant nonempty searches. Late responses cannot restore an older query. Missing data exposes fallback or retry behavior instead of implying that a partial result set is complete.
@@ -48,6 +62,12 @@ These are finite teaching processes with declared assumptions and deterministic 
 Local structural, generated-output, and browser checks have distinct scopes. The [release runbook](../operations/settle.md) separates reviewed payload commits from generated control binders. [Deployment verification](../operations/live-verification.md) binds fresh route checks to an expected source commit and a specific successful Pages run. [Release integrity](../operations/release-integrity.md) records the further requirements for human visual review and full release attestation.
 
 The [artifact verifier](../../code/orchestrators/verify_deployed_artifact.py) requires research-desk pages, citation/map/trail datasets and their runtime assets in its declared critical scope. Missing manifest entries and mismatched live bytes fail technical acceptance. This remains a targeted projection check rather than a claim that every archived object was fetched.
+
+## Search-engine discovery boundary
+
+Work landing pages, sitemaps and citation metadata expose reviewed records to crawlers. Google Scholar's inclusion guidance distinguishes scholarly content, immediately available full text or complete author-written abstracts, searchable PDF files, and compatible article metadata [@scholarInclusion]. A local readiness check can identify missing inputs and inconsistent links. It cannot establish actual indexing, resolve crawler scheduling, or turn a generated synopsis into an author-written abstract.
+
+The [readiness policy](../../code/src/scholar_readiness.py) and [follow-up guide](../seo/gsc-followup.md) keep technical readiness separate from observations in a signed-in search console. Copying a PDF requires rights, a source hash, a stable destination and a measured budget. The size or host eligibility of one edition must not be generalized to another. Authenticated Scholar metric observations use their own snapshot-and-receipt process and do not measure index completeness.
 
 ## Manuscript construction method
 
