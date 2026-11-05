@@ -6,12 +6,12 @@ Searchability, scholarly content, complete author-written abstracts/full text, a
 Source: [Google Scholar inclusion guidance](https://scholar.google.com/intl/en/scholar/inclusion.html).
 See [the placement policy](../docs/seo/scholar-inclusion.md) and [machine-readable results](../data/scholar-readiness.json).
 
-Audited works: 230. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
+Audited works: 231. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 
 | Local blocker | Works |
 | --- | ---: |
 | missing_citation_author | 11 |
-| no_selected_local_pdf | 28 |
+| no_selected_local_pdf | 29 |
 | pdf_directory_differs_from_abstract | 202 |
 | pdf_exceeds_byte_limit | 44 |
 
@@ -249,3 +249,4 @@ Audited works: 230. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [GNN-based active inference for Battleship](../works/Friedman2026GNNBasedActiveInference232.html) | 3928683 | pdf_directory_differs_from_abstract |
 | [Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention](../works/Friedman2026BlakeanEntomologySmallLives233.html) | — | no_selected_local_pdf |
 | [States Change: Blakean Federalism and composition without capture](../works/Friedman2026StatesChangeBlakeanFederalism234.html) | — | no_selected_local_pdf |
+| [Observers are all you need](../works/Friedman2026ObserversAreAllYou235.html) | — | no_selected_local_pdf |

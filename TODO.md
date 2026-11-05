@@ -221,7 +221,10 @@ Recurring checks below are operating obligations, not unfinished feature work.
 - Priority: P1
 - Owner: MAINTAINER
 - Trigger: every Pages deployment and monthly size review
-- Deliverable: keep the repository as the complete archive and Pages as the bounded projection; apply the declared projection policy for extracted images, QA screenshots, and superseded reports
+- Deliverable: preserve existing repository originals and history while keeping
+  Pages bounded; keep reviewed new/current PDF editions at exact versioned
+  Zenodo URLs with source-evidence sidecars, and apply the declared projection
+  policy for extracted images, QA screenshots, and superseded reports
 - Acceptance: artifact remains below the safety ceiling, manifest preserves GitHub tree/raw fallbacks, and retention changes are recorded
 - Dependencies: `build_pages_artifact.py`, `docs/operations/github-pages-artifact.md`
 

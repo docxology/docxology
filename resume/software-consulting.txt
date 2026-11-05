@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-11-05T02:01:15Z
+Generated: 2026-11-05T02:53:20Z
 
-Current public metrics: 230 curated works; 209 catalogued software repositories (167 owned + 42 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 273 docxology + 46 AII public repositories (215 primary, 104 forks).
+Current public metrics: 231 curated works; 209 catalogued software repositories (167 owned + 42 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 273 docxology + 46 AII public repositories (215 primary, 104 forks).
 
 SUMMARY
 -------
@@ -54,7 +54,7 @@ EXPERIENCE
 AWARDS AND FELLOWSHIPS
 ----------------------
 
-WORKS AND PUBLICATIONS (222)
+WORKS AND PUBLICATIONS (223)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [003] 2026 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | Zenodo | 10.5281/zenodo.18807970
@@ -278,6 +278,7 @@ WORKS AND PUBLICATIONS (222)
 [232] 2026 | Paper | GNN-based active inference for Battleship | Zenodo | 10.5281/zenodo.23670187
 [233] 2026 | Paper | Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention | Zenodo | 10.5281/zenodo.23900582
 [234] 2026 | Paper | States Change: Blakean Federalism and composition without capture | Zenodo | 10.5281/zenodo.23900616
+[235] 2026 | Paper | Observers are all you need | Zenodo (preprint) | 10.5281/zenodo.18288113
 
 SOFTWARE (209)
 --------------

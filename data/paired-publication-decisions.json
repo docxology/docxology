@@ -4,9 +4,9 @@
   "source_review_queue": "reports/paired_publications_review_queue_2026-06-04.md",
   "decision_summary": {
     "decision": "mixed",
-    "groups": 268,
-    "raw_candidates": 703,
-    "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated. R79 records the Cognitive Diagrams v2.5.0 release (2026-09-10 scan) as version-history-only under the already-cited concept DOI 10.5281/zenodo.19695259. R80 records the six GitHub release pairs (v0.3.0-v1) under the canonical curated EvoJump concept 10.5281/zenodo.22664675 as software-catalog (SOFTWARE.md already lists EvoJump; the citable paper remains bibliography row #12, concept 10.5281/zenodo.17229924), and R81 records the GitHub-Zenodo automated integration archive concept 10.5281/zenodo.22664645 (docxology/EvoJump-v0.5.2.zip, zip-only) as a superseded duplicate deposit. R82-R83 (2026-09-17 scan) record the fep_lean v1.2.0 and GeneralizedNotationNotation v3.4.0 releases as version-history-only under their already-cited citation DOIs (10.5281/zenodo.19699233 row #113 and 10.5281/zenodo.7803313 row #168), both pairs lacking github_release_mentions_doi cross-link evidence, so neither creates a duplicate bibliography row. The 2026-10-23 completion records 11 rejected cross-project archive matches, three acknowledged/superseded version-history relations, and three accepted current/existing work relations. Every outcome retains its individual actor, timestamp and rationale. The 2026-11-05 intake individually reviews 49 new candidates: six accepted source/current-work relations, 36 superseded version/context relations and seven rejected cross-work matches; new PDF editions use explicit verified Zenodo downloads."
+    "groups": 273,
+    "raw_candidates": 708,
+    "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated. R79 records the Cognitive Diagrams v2.5.0 release (2026-09-10 scan) as version-history-only under the already-cited concept DOI 10.5281/zenodo.19695259. R80 records the six GitHub release pairs (v0.3.0-v1) under the canonical curated EvoJump concept 10.5281/zenodo.22664675 as software-catalog (SOFTWARE.md already lists EvoJump; the citable paper remains bibliography row #12, concept 10.5281/zenodo.17229924), and R81 records the GitHub-Zenodo automated integration archive concept 10.5281/zenodo.22664645 (docxology/EvoJump-v0.5.2.zip, zip-only) as a superseded duplicate deposit. R82-R83 (2026-09-17 scan) record the fep_lean v1.2.0 and GeneralizedNotationNotation v3.4.0 releases as version-history-only under their already-cited citation DOIs (10.5281/zenodo.19699233 row #113 and 10.5281/zenodo.7803313 row #168), both pairs lacking github_release_mentions_doi cross-link evidence, so neither creates a duplicate bibliography row. The 2026-10-23 completion records 11 rejected cross-project archive matches, three acknowledged/superseded version-history relations, and three accepted current/existing work relations. Every outcome retains its individual actor, timestamp and rationale. The 2026-11-05 intake individually reviews 49 new candidates: six accepted source/current-work relations, 36 superseded version/context relations and seven rejected cross-work matches; new PDF editions use explicit verified Zenodo downloads. Five additional exact current work/release candidates were independently acknowledged as already represented without a new source update or apply operation."
   },
   "groups": [
     {
@@ -17224,7 +17224,202 @@
       ],
       "candidate_fingerprint_sha256": "a7732cab968f5c75610398f4f50c534ea5f482fa48a3b4ece260ff2a5f7fcf6f",
       "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-existing-eb19d10e2286a5bf",
+      "decision": "acknowledged",
+      "decided_at": "2026-11-05T02:56:36.115807+00:00",
+      "decided_by": "Codex public-source review, independently checked by docs reviewer",
+      "doi": "10.5281/zenodo.23321280",
+      "title": "Active Inference -- A Synthetic Overview",
+      "candidate_github_repo": "docxology/ActiveInferenceSynthetic",
+      "github_release_url": "https://github.com/docxology/ActiveInferenceSynthetic/releases/tag/synthetic-public-v0.6.1",
+      "zenodo_record_url": "https://zenodo.org/records/23321280",
+      "release_tag": "synthetic-public-v0.6.1",
+      "folder": "2026_ActiveInferenceSynthetic",
+      "representation": "already-represented-no-source-change",
+      "rationale": "The exact current metadata source fields, version record, release URL/tag, bibliography identity, paper index and existing document/software links already represent this candidate. Independent source review found no new fact to apply. Acknowledge the exact relation without restamping checked_at, minting an apply receipt, downloading another PDF or creating a new work.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23321280",
+          "github_repo": "docxology/ActiveInferenceSynthetic",
+          "github_release_url": "https://github.com/docxology/ActiveInferenceSynthetic/releases/tag/synthetic-public-v0.6.1",
+          "zenodo_record_url": "https://zenodo.org/records/23321280",
+          "record_title": "Active Inference -- A Synthetic Overview",
+          "release_tag": "synthetic-public-v0.6.1",
+          "zenodo_version_record_id": "23396307",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23321280",
+        "https://github.com/docxology/ActiveInferenceSynthetic/releases/tag/synthetic-public-v0.6.1",
+        "https://zenodo.org/records/23321280",
+        "docxology/activeinferencesynthetic",
+        "active inference -- a synthetic overview",
+        "synthetic-public-v0.6.1"
+      ],
+      "candidate_fingerprint_sha256": "eb19d10e2286a5bffea7b3b72f0456da8889de555a51abd264ffd28a301b8af9",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-existing-2dfedd2837f9fb90",
+      "decision": "acknowledged",
+      "decided_at": "2026-11-05T02:56:36.115807+00:00",
+      "decided_by": "Codex public-source review, independently checked by docs reviewer",
+      "doi": "10.5281/zenodo.23397452",
+      "title": "Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision",
+      "candidate_github_repo": "docxology/active_inference_meta_pragmatic",
+      "github_release_url": "https://github.com/docxology/active_inference_meta_pragmatic/releases/tag/v1.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/23397452",
+      "release_tag": "v1.0.0",
+      "folder": "2026_ActiveInferenceAs",
+      "representation": "already-represented-no-source-change",
+      "rationale": "The exact current metadata source fields, version record, release URL/tag, bibliography identity, paper index and existing document/software links already represent this candidate. Independent source review found no new fact to apply. Acknowledge the exact relation without restamping checked_at, minting an apply receipt, downloading another PDF or creating a new work.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23397452",
+          "github_repo": "docxology/active_inference_meta_pragmatic",
+          "github_release_url": "https://github.com/docxology/active_inference_meta_pragmatic/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/23397452",
+          "record_title": "Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision",
+          "release_tag": "v1.0.0",
+          "zenodo_version_record_id": "23397453",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23397452",
+        "https://github.com/docxology/active_inference_meta_pragmatic/releases/tag/v1.0.0",
+        "https://zenodo.org/records/23397452",
+        "docxology/active_inference_meta_pragmatic",
+        "active inference as a meta-pragmatic framework: executable models, evidence, and the discipline of revision",
+        "v1.0.0"
+      ],
+      "candidate_fingerprint_sha256": "2dfedd2837f9fb9034c4880b0267b5838e4f82017906876ad7cf5a2af26a6811",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-existing-edb758428ade38a7",
+      "decision": "acknowledged",
+      "decided_at": "2026-11-05T02:56:36.115807+00:00",
+      "decided_by": "Codex public-source review, independently checked by docs reviewer",
+      "doi": "10.5281/zenodo.19699233",
+      "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+      "candidate_github_repo": "ActiveInferenceInstitute/fep_formal",
+      "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v2.1.0",
+      "zenodo_record_url": "https://zenodo.org/records/19699233",
+      "release_tag": "v2.1.0",
+      "folder": "2026_FEPLean",
+      "representation": "already-represented-no-source-change",
+      "rationale": "The exact current metadata source fields, version record, release URL/tag, bibliography identity, paper index and existing document/software links already represent this candidate. Independent source review found no new fact to apply. Acknowledge the exact relation without restamping checked_at, minting an apply receipt, downloading another PDF or creating a new work.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.19699233",
+          "github_repo": "ActiveInferenceInstitute/fep_formal",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v2.1.0",
+          "zenodo_record_url": "https://zenodo.org/records/19699233",
+          "record_title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "release_tag": "v2.1.0",
+          "zenodo_version_record_id": "23607007",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "candidate_fingerprint": [
+        "10.5281/zenodo.19699233",
+        "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v2.1.0",
+        "https://zenodo.org/records/19699233",
+        "activeinferenceinstitute/fep_formal",
+        "towards lean 4 formalization of the free energy principle: ai-driven theorem sketching and verification for active inference and bayesian mechanics",
+        "v2.1.0"
+      ],
+      "candidate_fingerprint_sha256": "edb758428ade38a76df7754db8581151bb62d232ee1f4986652250ae60cc6487",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-existing-8cde4966673c04be",
+      "decision": "acknowledged",
+      "decided_at": "2026-11-05T02:56:36.115807+00:00",
+      "decided_by": "Codex public-source review, independently checked by docs reviewer",
+      "doi": "10.5281/zenodo.23670187",
+      "title": "GNN-based active inference for Battleship",
+      "candidate_github_repo": "ActiveInferenceInstitute/active_inference_battleship",
+      "github_release_url": "https://github.com/ActiveInferenceInstitute/active_inference_battleship/releases/tag/v0.5.0",
+      "zenodo_record_url": "https://zenodo.org/records/23670187",
+      "release_tag": "v0.5.0",
+      "folder": "2026_GNNBasedActive",
+      "representation": "already-represented-no-source-change",
+      "rationale": "The exact current metadata source fields, version record, release URL/tag, bibliography identity, paper index and existing document/software links already represent this candidate. Independent source review found no new fact to apply. Acknowledge the exact relation without restamping checked_at, minting an apply receipt, downloading another PDF or creating a new work.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.23670187",
+          "github_repo": "ActiveInferenceInstitute/active_inference_battleship",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/active_inference_battleship/releases/tag/v0.5.0",
+          "zenodo_record_url": "https://zenodo.org/records/23670187",
+          "record_title": "GNN-based active inference for Battleship",
+          "release_tag": "v0.5.0",
+          "zenodo_version_record_id": "23676081",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "candidate_fingerprint": [
+        "10.5281/zenodo.23670187",
+        "https://github.com/ActiveInferenceInstitute/active_inference_battleship/releases/tag/v0.5.0",
+        "https://zenodo.org/records/23670187",
+        "activeinferenceinstitute/active_inference_battleship",
+        "gnn-based active inference for battleship",
+        "v0.5.0"
+      ],
+      "candidate_fingerprint_sha256": "8cde4966673c04be18c0c680ecd8fcb9a0f55af0d8243f51da0b42deb0700613",
+      "source_report": "reports/publication_intake_2026-11-05.json"
+    },
+    {
+      "id": "review-2026-11-04-existing-f8b371646a940a48",
+      "decision": "acknowledged",
+      "decided_at": "2026-11-05T02:56:36.115807+00:00",
+      "decided_by": "Codex public-source review, independently checked by docs reviewer",
+      "doi": "10.5281/zenodo.22409418",
+      "title": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+      "candidate_github_repo": "ActiveInferenceInstitute/active_inference_language_model",
+      "github_release_url": "https://github.com/ActiveInferenceInstitute/active_inference_language_model/releases/tag/v1.0.0",
+      "zenodo_record_url": "https://zenodo.org/records/22409418",
+      "release_tag": "v1.0.0",
+      "folder": "2026_ActiveInferenceLanguage",
+      "representation": "already-represented-no-source-change",
+      "rationale": "The exact current metadata source fields, version record, release URL/tag, bibliography identity, paper index and existing document/software links already represent this candidate. Independent source review found no new fact to apply. Acknowledge the exact relation without restamping checked_at, minting an apply receipt, downloading another PDF or creating a new work.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.22409418",
+          "github_repo": "ActiveInferenceInstitute/active_inference_language_model",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/active_inference_language_model/releases/tag/v1.0.0",
+          "zenodo_record_url": "https://zenodo.org/records/22409418",
+          "record_title": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+          "release_tag": "v1.0.0",
+          "zenodo_version_record_id": "22409419",
+          "source_report": "reports/publication_intake_2026-11-05.json",
+          "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+        }
+      ],
+      "candidate_fingerprint": [
+        "10.5281/zenodo.22409418",
+        "https://github.com/ActiveInferenceInstitute/active_inference_language_model/releases/tag/v1.0.0",
+        "https://zenodo.org/records/22409418",
+        "activeinferenceinstitute/active_inference_language_model",
+        "active inference language model: a fully explicit discrete language system and a gate-audit method",
+        "v1.0.0"
+      ],
+      "candidate_fingerprint_sha256": "f8b371646a940a485a9778e42e630054e5cc7496969097a128d7d34b0314490b",
+      "source_report": "reports/publication_intake_2026-11-05.json"
     }
   ],
-  "updated_at": "2026-11-05T01:42:21.179059+00:00"
+  "updated_at": "2026-11-05T02:56:36.115807+00:00"
 }

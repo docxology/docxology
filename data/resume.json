@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T02:01:15Z",
+  "generated_at": "2026-11-05T02:53:20Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,7 +34,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 230,
+    "works": 231,
     "software_catalogued": 209,
     "owned_software_catalogued": 167,
     "aii_software_catalogued": 42,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 737,
-      "sha256": "ae602caca1b808999ad42c4159a8c14d7f5d158d4b219a387b96b640ee94b464",
+      "sha256": "6105342a798301271089d40a928722566ae12bae015140d693e0deed586d3048",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 189261,
-          "sha256": "eff997fae1fab29bf0b57df4f0b706e9048a0ceb4ffb3e6e0b8c0b9880097029"
+          "bytes": 190140,
+          "sha256": "67b67db4fbf45350214b7923e5c2fee43545ae705b03bfdd5b96aa0ed7a75c34"
         },
         {
           "path": "data/software.json",
           "bytes": 104123,
-          "sha256": "aef2043bed99a1e45d1898c6dc6ad5b29a65c42f0d387383ea9945abef11f59e"
+          "sha256": "7858d5d7839cbb7975d1c58c1ed61cf90b2ea4fc9bb9ce61c210aff422996943"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 12971,
-          "sha256": "419f70f9f75d5ca676754c6cb4dbe7cdec18b0d8ebc7856c9c093e8810dea1ea"
+          "sha256": "afcb3ba3d2fa307c57b9870790ca7ff50389c868de6027e78926feaedb9e6982"
         },
         {
           "path": "data/github-repositories.json",
@@ -8059,6 +8059,35 @@
       "authors": [
         "Friedman, Daniel Ari"
       ]
+    },
+    {
+      "num": 235,
+      "citation_key": "Friedman2026ObserversAreAllYou235",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Observers are all you need",
+      "venue": "Zenodo (preprint)",
+      "url": "https://doi.org/10.5281/zenodo.18288113",
+      "doi": "10.5281/zenodo.18288113",
+      "docs_path": "papers/2026_ObserversAllYouNeed/",
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_ObserversAllYouNeed/full_text.md",
+      "authors": [
+        "Mueller, Bernhard",
+        "Poneder, Mario",
+        "Osika, Alexander",
+        "Xue, Kai",
+        "Cassie, Ben",
+        "Nguyen, Peter",
+        "Friedman, Daniel Ari"
+      ]
     }
   ],
   "software": [
@@ -10574,14 +10603,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 230 works.",
+      "claim": "The curated bibliography contains 231 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-11-05T02:01:11+00:00",
+      "checked_at": "2026-11-05T02:53:16+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -10589,13 +10618,13 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 213 per-paper documentation folders.",
+      "claim": "The repository contains 214 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-11-05T02:01:11+00:00",
+      "checked_at": "2026-11-05T02:53:16+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

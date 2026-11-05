@@ -12,7 +12,7 @@
     "scope": "Retained pre-intake Pages projection; not canonical repository or Git-history size."
   },
   "decision": "Keep existing hosted PDFs and URLs. Store verified new/current PDF editions at their exact versioned Zenodo records; retain metadata, source evidence, extracted text and generated pages in the catalog.",
-  "remote_pdf_bytes_not_added_to_pages": 81249186,
+  "remote_pdf_bytes_not_added_to_pages": 82266501,
   "remote_pdf_sources": [
     {
       "record_id": "23900583",
@@ -37,6 +37,14 @@
       "version": "0.5.0",
       "bytes": 11762801,
       "sha256": "812e53237b40f808b4502e3dd358cbee5cda7d587e493ba95e41f02c11ad03eb"
+    },
+    {
+      "name": "observers_are_all_you_need.pdf",
+      "url": "https://zenodo.org/api/records/23719196/files/observers_are_all_you_need.pdf/content",
+      "bytes": 1017315,
+      "sha256": "d88de3b37c7686d894a7a4e4ed731358f310888c00e9f4a33e6db824889dde68",
+      "record_id": "23719196",
+      "version": "r2054"
     }
   ],
   "art_observation": "All artwork thumbnails and originals already use live.staticflickr.com. Moving art/ alone would recover only 3.54 MiB in this baseline.",

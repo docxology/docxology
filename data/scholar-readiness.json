@@ -4,17 +4,17 @@
   "inclusion_guidance": "https://scholar.google.com/intl/en/scholar/inclusion.html",
   "pdf_byte_limit": 5000000,
   "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
-  "works_sha256": "eff997fae1fab29bf0b57df4f0b706e9048a0ceb4ffb3e6e0b8c0b9880097029",
+  "works_sha256": "67b67db4fbf45350214b7923e5c2fee43545ae705b03bfdd5b96aa0ed7a75c34",
   "network_checked": false,
   "indexing_verified": false,
   "summary": {
-    "works": 230,
+    "works": 231,
     "local_status": {
-      "blocked": 230
+      "blocked": 231
     },
     "blockers": {
       "missing_citation_author": 11,
-      "no_selected_local_pdf": 28,
+      "no_selected_local_pdf": 29,
       "pdf_directory_differs_from_abstract": 202,
       "pdf_exceeds_byte_limit": 44
     }
@@ -10508,7 +10508,7 @@
       "title": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ObserversWhoReadTheir230.html",
-      "page_sha256": "101dfa41c6bd782f98d49d1c654345001d8b47dcbf70bfe68995b9d757c9a63d",
+      "page_sha256": "4181478e37afea23279c317133338d69aad74bcde020a34513316d4b5822f995",
       "citation_tags": {
         "citation_title": [
           "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics"
@@ -10707,6 +10707,48 @@
       },
       "primary_pdf": null,
       "selection_issue": "Current PDF version 1.0.0 is hosted at Zenodo. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
+      "local_status": "blocked",
+      "blockers": [
+        "no_selected_local_pdf"
+      ],
+      "unverified_requirements": [
+        "searchable_pdf",
+        "scholarly_content",
+        "complete_author_written_abstract_or_full_text",
+        "actual_scholar_indexing"
+      ]
+    },
+    {
+      "citation_key": "Friedman2026ObserversAreAllYou235",
+      "title": "Observers are all you need",
+      "type": "Paper",
+      "abstract_url": "https://danielarifriedman.com/works/Friedman2026ObserversAreAllYou235.html",
+      "page_sha256": "456f746f5c84532a5a01942e09a9e3499166f265a0025e98eccf191bb85dd80a",
+      "citation_tags": {
+        "citation_title": [
+          "Observers are all you need"
+        ],
+        "citation_publication_date": [
+          "2026/10/28"
+        ],
+        "citation_author": [
+          "Bernhard Mueller",
+          "Mario Poneder",
+          "Alexander Osika",
+          "Kai Xue",
+          "Ben Cassie",
+          "Peter Nguyen",
+          "Daniel Ari Friedman"
+        ],
+        "citation_doi": [
+          "10.5281/zenodo.18288113"
+        ],
+        "citation_pdf_url": [
+          "https://zenodo.org/api/records/23719196/files/observers_are_all_you_need.pdf/content"
+        ]
+      },
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version r2054 is hosted at Zenodo. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
       "local_status": "blocked",
       "blockers": [
         "no_selected_local_pdf"

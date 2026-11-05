@@ -1,0 +1,157 @@
+{
+  "title": "Observers are all you need",
+  "version": "r2054",
+  "doi": "10.5281/zenodo.18288113",
+  "doi_url": "https://doi.org/10.5281/zenodo.18288113",
+  "zenodo_record": "https://zenodo.org/records/18288113",
+  "record_id": "23719196",
+  "publication_date": "2026-10-28",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Mueller, Bernhard",
+      "affiliation": "Information Physics Institute",
+      "orcid": "0009-0002-5638-6240"
+    },
+    {
+      "name": "Poneder, Mario",
+      "affiliation": null
+    },
+    {
+      "name": "Osika, Alexander",
+      "affiliation": null
+    },
+    {
+      "name": "Xue, Kai",
+      "affiliation": null
+    },
+    {
+      "name": "Cassie, Ben",
+      "affiliation": null
+    },
+    {
+      "name": "Nguyen, Peter",
+      "affiliation": null
+    },
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Observer Patch Holography models finite observer patches that retain records, compare overlap readbacks and repair disagreement. The deposited r2054 manuscript reports conditional thermodynamic, finite quantum, gauge-response and field constructions under stated repair-law, clock-and-energy calibration, quantum-algebra and matter premises. Its fine-structure comparisons are diagnostics; one executed interval excludes the measured value. The opening text explicitly states that the finite constructions do not establish physical realization or select a unique universe. This catalog summary does not independently verify the mathematics, software or physical claims.",
+  "keywords": [
+    "Emergent spacetime",
+    "Quantum gravity",
+    "Holographic principle",
+    "Observer-centric physics",
+    "Information-theoretic foundations",
+    "Emergent gravity",
+    "Entanglement entropy",
+    "Einstein equations derivation",
+    "Lorentz invariance emergence",
+    "Modular Hamiltonian",
+    "Modular flow",
+    "Null surfaces",
+    "Measurement problem",
+    "Born rule",
+    "Quantum information",
+    "Quantum Markov property",
+    "Algebraic quantum field theory",
+    "Operator algebras",
+    "Cosmological constant problem",
+    "de Sitter space",
+    "Horizon entropy",
+    "Cosmic horizons",
+    "Holographic cosmology",
+    "Black hole information paradox",
+    "Hawking radiation",
+    "Event horizons",
+    "Edge modes",
+    "Entanglement wedge",
+    "Gauge symmetry emergence",
+    "Standard Model structure",
+    "Tannaka–Krein reconstruction",
+    "Doplicher–Roberts reconstruction",
+    "Massless gauge bosons",
+    "Dark matter phenomenology",
+    "MOND",
+    "Emergent dark matter",
+    "Galaxy rotation curves",
+    "Observer-dependent reality",
+    "No global wavefunction",
+    "Relational physics",
+    "Foundations of quantum mechanics",
+    "Foundations of spacetime",
+    "Observer-based ontology",
+    "First-person perspective",
+    "Hard problem of consciousness",
+    "Information and consciousness"
+  ],
+  "files": [
+    {
+      "name": "observers_are_all_you_need.pdf",
+      "size_bytes": 1017315,
+      "checksum": "md5:c28482248292ff6727f9515f0c530c13",
+      "download_url": "https://zenodo.org/api/records/23719196/files/observers_are_all_you_need.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-11-05T02:52:11Z",
+  "remote_primary_pdf": {
+    "name": "observers_are_all_you_need.pdf",
+    "url": "https://zenodo.org/api/records/23719196/files/observers_are_all_you_need.pdf/content",
+    "bytes": 1017315,
+    "sha256": "d88de3b37c7686d894a7a4e4ed731358f310888c00e9f4a33e6db824889dde68",
+    "record_id": "23719196",
+    "version": "r2054"
+  },
+  "artifact_doi": "10.5281/zenodo.23719196",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.23719196",
+  "pages": 191,
+  "pdf_sha256": "d88de3b37c7686d894a7a4e4ed731358f310888c00e9f4a33e6db824889dde68",
+  "domain": "💻",
+  "related_papers": [
+    "2026_ObserversReadUniverse"
+  ],
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "rights_note": "The exact deposited record declares CC BY 4.0. Later repository manuscripts may have different terms; do not transfer those terms to this deposit.",
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-11-04",
+    "method": "Curated abstract summary checked against the acquired r2054 first-page extraction and page-2 realization caveat; no independent mathematical, empirical or visual verification."
+  },
+  "source_provenance": {
+    "record_url": "https://zenodo.org/records/23719196",
+    "source_report": "reports/publication_intake_2026-11-05.json",
+    "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+    "pdf_title": "Observers Are All You Need",
+    "pdf_release": "r2054",
+    "pdf_date": "2026-10-26",
+    "registry_date": "2026-10-28",
+    "registry_version": null,
+    "author_source": "Deposited PDF title-page byline in document order. The registry puts Friedman fourth and abbreviates his given names; the PDF puts Daniel Ari Friedman seventh. Raw registry creators and discrepancy are retained in source_evidence.json.",
+    "distinct_work_note": "Related OPH component manuscript, not a new version of the flagship and not a software source archive.",
+    "related_component_evidence": [
+      {
+        "url": "https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/paper/README.md",
+        "scope": "Separate flagship synthesis and Observers Are All You Need entries; component is layer 3 observers, records, quantum/thermodynamic identities and closure equations."
+      },
+      {
+        "url": "https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/docs/PAPER_SET.md",
+        "scope": "Distinct flagship versus observers-and-records contributions and retained-premise boundaries."
+      },
+      {
+        "url": "https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex",
+        "scope": "Flagship bibliography separately cites seven-author Observers Are All You Need; body calls component papers sources of longer proofs and implementation contracts."
+      }
+    ]
+  }
+}

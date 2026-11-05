@@ -3546,6 +3546,13 @@
       "year": 2026
     },
     {
+      "id": "work:Friedman2026ObserversAreAllYou235",
+      "kind": "work",
+      "label": "Observers are all you need",
+      "url": "/works/Friedman2026ObserversAreAllYou235.html",
+      "year": 2026
+    },
+    {
       "id": "work:Friedman2026ObserversWhoReadTheir230",
       "kind": "work",
       "label": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
@@ -9713,6 +9720,54 @@
       "target": "software:https://github.com/docxology/blakean_federalism",
       "relation": "Associated software",
       "provenance": "papers/2026_StatesChange/metadata.json"
+    },
+    {
+      "source": "work:Friedman2026ObserversAreAllYou235",
+      "target": "domain:computational",
+      "relation": "Catalog domain",
+      "provenance": "pages/BIBLIOGRAPHY.md"
+    },
+    {
+      "source": "work:Friedman2026ObserversAreAllYou235",
+      "target": "person:mueller, bernhard",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman2026ObserversAreAllYou235",
+      "target": "person:poneder, mario",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman2026ObserversAreAllYou235",
+      "target": "person:osika, alexander",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman2026ObserversAreAllYou235",
+      "target": "person:xue, kai",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman2026ObserversAreAllYou235",
+      "target": "person:cassie, ben",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman2026ObserversAreAllYou235",
+      "target": "person:nguyen, peter",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman2026ObserversAreAllYou235",
+      "target": "person:friedman, daniel ari",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
     }
   ]
 }

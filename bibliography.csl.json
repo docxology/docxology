@@ -7554,5 +7554,54 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.23900616",
     "URL": "https://doi.org/10.5281/zenodo.23900616"
+  },
+  {
+    "id": "Friedman2026ObserversAreAllYou235",
+    "type": "article-journal",
+    "title": "Observers are all you need",
+    "author": [
+      {
+        "family": "Mueller",
+        "given": "Bernhard"
+      },
+      {
+        "family": "Poneder",
+        "given": "Mario"
+      },
+      {
+        "family": "Osika",
+        "given": "Alexander"
+      },
+      {
+        "family": "Xue",
+        "given": "Kai"
+      },
+      {
+        "family": "Cassie",
+        "given": "Ben"
+      },
+      {
+        "family": "Nguyen",
+        "given": "Peter"
+      },
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 235; docs: papers/2026_ObserversAllYouNeed/",
+    "container-title": "Zenodo (preprint)",
+    "publisher": "Zenodo (preprint)",
+    "DOI": "10.5281/zenodo.18288113",
+    "URL": "https://doi.org/10.5281/zenodo.18288113"
   }
 ]

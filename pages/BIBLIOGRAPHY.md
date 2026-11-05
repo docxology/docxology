@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Publications and Research Outputs in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**230 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**231 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-835_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -32,9 +32,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical · 🔍 Other
 
-**209** Papers · **8** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series · **1** Report
+**210** Papers · **8** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series · **1** Report
 
-> **230** works in the table below **·** **213** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **231** works in the table below **·** **214** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -274,6 +274,7 @@ The contributor column lists authors unless otherwise specified: the contributor
 | 232 | 2026 | 💻 | Paper | GNN-based active inference for Battleship | *Zenodo* | [10.5281/zenodo.23670187](https://doi.org/10.5281/zenodo.23670187) | [📁](../papers/2026_GNNBasedActive/) | Friedman, Daniel Ari |
 | 233 | 2026 | 🐜 | Paper | Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention | *Zenodo* | [10.5281/zenodo.23900582](https://doi.org/10.5281/zenodo.23900582) | [📁](../papers/2026_BlakeanEntomology/) | Friedman, Daniel Ari |
 | 234 | 2026 | 🎨 | Paper | States Change: Blakean Federalism and composition without capture | *Zenodo* | [10.5281/zenodo.23900616](https://doi.org/10.5281/zenodo.23900616) | [📁](../papers/2026_StatesChange/) | Friedman, Daniel Ari |
+| 235 | 2026 | 💻 | Paper | Observers are all you need | *Zenodo (preprint)* | [10.5281/zenodo.18288113](https://doi.org/10.5281/zenodo.18288113) | [📁](../papers/2026_ObserversAllYouNeed/) | Mueller, Bernhard; Poneder, Mario; Osika, Alexander; Xue, Kai; Cassie, Ben; Nguyen, Peter; Friedman, Daniel Ari |
 ---
 
 ## Domain Index

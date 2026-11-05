@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 230 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 231 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -9566,6 +9566,64 @@
             },
             "sameAs": "https://doi.org/10.5281/zenodo.23900616",
             "citation": "Friedman, Daniel Ari. 2026. States Change: Blakean Federalism and composition without capture. Zenodo. DOI: 10.5281/zenodo.23900616. URL: https://doi.org/10.5281/zenodo.23900616."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Observers are all you need",
+            "headline": "Observers are all you need",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "name": "Bernhard Mueller",
+                    "@type": "Person"
+                },
+                {
+                    "name": "Mario Poneder",
+                    "@type": "Person"
+                },
+                {
+                    "name": "Alexander Osika",
+                    "@type": "Person"
+                },
+                {
+                    "name": "Kai Xue",
+                    "@type": "Person"
+                },
+                {
+                    "name": "Ben Cassie",
+                    "@type": "Person"
+                },
+                {
+                    "name": "Peter Nguyen",
+                    "@type": "Person"
+                },
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo (preprint)"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026ObserversAreAllYou235.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026ObserversAreAllYou235.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026ObserversAreAllYou235.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.18288113",
+                "url": "https://doi.org/10.5281/zenodo.18288113"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.18288113",
+            "citation": "Mueller, Bernhard; Poneder, Mario; Osika, Alexander; Xue, Kai; Cassie, Ben; Nguyen, Peter; Friedman, Daniel Ari. 2026. Observers are all you need. Zenodo (preprint). DOI: 10.5281/zenodo.18288113. URL: https://doi.org/10.5281/zenodo.18288113."
         }
     ]
 }

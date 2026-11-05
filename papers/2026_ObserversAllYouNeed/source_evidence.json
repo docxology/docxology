@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "source_pdf": {
+    "record_id": "23719196",
+    "concept_doi": "10.5281/zenodo.18288113",
+    "version": null,
+    "url": "https://zenodo.org/api/records/23719196/files/observers_are_all_you_need.pdf/content",
+    "name": "observers_are_all_you_need.pdf",
+    "bytes": 1017315,
+    "sha256": "d88de3b37c7686d894a7a4e4ed731358f310888c00e9f4a33e6db824889dde68",
+    "md5": "c28482248292ff6727f9515f0c530c13",
+    "pages": 191,
+    "text_sha256": "0e588a7706b155ae3e7cd4d503c10dcd8be9f81290a51143c01f56d0efd2945c",
+    "extractor": "pypdf",
+    "extractor_version": "6.21.4",
+    "source_report": "reports/publication_intake_2026-11-05.json",
+    "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+    "review_scope": "Streamed size/checksum and all-page extraction; no independent mathematical, scientific or visual verification."
+  },
+  "extraction": {
+    "file": "full_text.md",
+    "sha256": "0e588a7706b155ae3e7cd4d503c10dcd8be9f81290a51143c01f56d0efd2945c",
+    "source_pdf_sha256": "d88de3b37c7686d894a7a4e4ed731358f310888c00e9f4a33e6db824889dde68",
+    "tool": "pypdf 6.21.4",
+    "method": "All 191 pages extracted in order with page markers."
+  },
+  "registry_observation": {
+    "record_id": "23719196",
+    "doi": "10.5281/zenodo.23719196",
+    "conceptdoi": "10.5281/zenodo.18288113",
+    "title": "Observers are all you need",
+    "publication_date": "2026-10-28",
+    "version": null,
+    "creators": [
+      {
+        "name": "Mueller, Bernhard",
+        "affiliation": "Information Physics Institute",
+        "orcid": "0009-0002-5638-6240"
+      },
+      {
+        "name": "Poneder, Mario",
+        "affiliation": null
+      },
+      {
+        "name": "Osika, Alexander",
+        "affiliation": null
+      },
+      {
+        "name": "Friedman, Daniel",
+        "affiliation": "Active Inference Institute",
+        "orcid": "0000-0001-6232-9096"
+      },
+      {
+        "name": "Xue, Kai",
+        "affiliation": null
+      },
+      {
+        "name": "Cassie, Ben",
+        "affiliation": null
+      },
+      {
+        "name": "Nguyen, Peter",
+        "affiliation": null
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "record_json_sha256": "f44d68e5a9fde6f481bec81a8ea8f5c6372d61a46bd138185f7e22a3b8874f62"
+  },
+  "document_observation": {
+    "release": "r2054",
+    "date": "2026-10-26",
+    "byline": [
+      "Mueller, Bernhard",
+      "Poneder, Mario",
+      "Osika, Alexander",
+      "Xue, Kai",
+      "Cassie, Ben",
+      "Nguyen, Peter",
+      "Friedman, Daniel Ari"
+    ],
+    "note": "Deposited PDF title-page byline in document order. The registry puts Friedman fourth and abbreviates his given names; the PDF puts Daniel Ari Friedman seventh. Raw registry creators and discrepancy are retained in source_evidence.json."
+  },
+  "distinct_work_review": {
+    "folder": "2026_ObserversReadUniverse",
+    "bibliography_row": 230,
+    "citation_url": "https://philpapers.org/rec/MUEFOC",
+    "reason": "Frozen flagship explicitly cites Observers Are All You Need as a separate component manuscript; frozen paper index lists separate files, roles and entries."
+  },
+  "review_scope": "Streamed size/checksum and all-page extraction; no independent mathematical, scientific or visual verification."
+}

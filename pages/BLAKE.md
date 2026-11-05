@@ -6,7 +6,7 @@
 
 This pathway references the existing bibliography identities. Citation DOIs identify the curated work; version DOIs and Zenodo record links identify a particular deposited artifact. A concept DOI may resolve to a newer version. An absent version label means the API did not supply one; consult the record page.
 
-The current scan covers **230 catalog works** and **207 local full texts**: **8 Blake-titled works**, **15 additional William Blake text matches**, and **0 unclassified matches**. These are indexing counts, not counts of papers read.
+The current scan covers **231 catalog works** and **208 local full texts**: **8 Blake-titled works**, **15 additional William Blake text matches**, and **0 unclassified matches**. These are indexing counts, not counts of papers read.
 
 ## Core treatments
 

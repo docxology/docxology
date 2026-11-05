@@ -1,0 +1,247 @@
+{
+  "reviewed_on_local_date": "2026-11-04",
+  "decision": "add_distinct_work",
+  "source_report": "reports/publication_intake_2026-11-05.json",
+  "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+  "deposited_record": {
+    "record_id": "23719196",
+    "doi": "10.5281/zenodo.18288113",
+    "title": "Observers are all you need",
+    "publication_date": "2026-10-28",
+    "version": null,
+    "resource_type": {
+      "title": "Preprint",
+      "type": "publication",
+      "subtype": "preprint"
+    },
+    "creators": [
+      {
+        "name": "Mueller, Bernhard",
+        "affiliation": "Information Physics Institute",
+        "orcid": "0009-0002-5638-6240"
+      },
+      {
+        "name": "Poneder, Mario",
+        "affiliation": null
+      },
+      {
+        "name": "Osika, Alexander",
+        "affiliation": null
+      },
+      {
+        "name": "Friedman, Daniel",
+        "affiliation": "Active Inference Institute",
+        "orcid": "0000-0001-6232-9096"
+      },
+      {
+        "name": "Xue, Kai",
+        "affiliation": null
+      },
+      {
+        "name": "Cassie, Ben",
+        "affiliation": null
+      },
+      {
+        "name": "Nguyen, Peter",
+        "affiliation": null
+      }
+    ],
+    "description": "<p>Observer Patch Holography (OPH) models observers as finite patches that retain records, compare overlap readbacks, and repair disagreement. On one finite regulator stage, a registered repair law, a declared clock-and-energy calibration and a refinement-uniform gap family give the four laws of thermodynamics, fluctuation relations and the Landauer bound as one machine-checked conditional theorem, and the mean entropy production of one repair step equals the relative entropy from its input state to the repaired image. Convergent repair produces protected public normal forms. On a declared signed-record branch of the twelve-port carrier, the normalized response metric has an exact rank-three quotient and a continuous Euclidean completion. Authenticated read-from provenance generates finite informational posets, and modular screen geometry supplies Lorentz-frame kinematics and a conditional Einstein construction. Under complete reversible port response and endogenous observer transport, the response has the local Standard Model gauge Lie type, and under a specified matrix-current and fermionic matter contract anomaly balance and tensor descent determine the charges and maximal faithful matter image (SU(3) &times; SU(2) &times; U(1))/Z6. A supplied charged-scalar/Maxwell action with positive mass squared and nonnegative quartic coupling has a nonlinear real zero-current sector whose trajectories converge at first order to smooth Neumann continuum solutions under uniform refinement, and its declared Laplace&ndash;Beltrami Hamiltonian has a unique self-adjoint closure. Declared screen-cell maps for the fine-structure constant have interval-certified fixed points at inverse couplings 136.994835... and 137.035660...; an executed closure with measured hadronic spectral data gives 136.3827548 on an interval that excludes the measured value; these endpoint comparisons are diagnostics. A frozen primitive-port branch fixes three linked dispersion coefficients and a degree-six icosahedral angular shape.</p>",
+    "keywords": [
+      "Emergent spacetime",
+      "Quantum gravity",
+      "Holographic principle",
+      "Observer-centric physics",
+      "Information-theoretic foundations",
+      "Emergent gravity",
+      "Entanglement entropy",
+      "Einstein equations derivation",
+      "Lorentz invariance emergence",
+      "Modular Hamiltonian",
+      "Modular flow",
+      "Null surfaces",
+      "Measurement problem",
+      "Born rule",
+      "Quantum information",
+      "Quantum Markov property",
+      "Algebraic quantum field theory",
+      "Operator algebras",
+      "Cosmological constant problem",
+      "de Sitter space",
+      "Horizon entropy",
+      "Cosmic horizons",
+      "Holographic cosmology",
+      "Black hole information paradox",
+      "Hawking radiation",
+      "Event horizons",
+      "Edge modes",
+      "Entanglement wedge",
+      "Gauge symmetry emergence",
+      "Standard Model structure",
+      "Tannaka–Krein reconstruction",
+      "Doplicher–Roberts reconstruction",
+      "Massless gauge bosons",
+      "Dark matter phenomenology",
+      "MOND",
+      "Emergent dark matter",
+      "Galaxy rotation curves",
+      "Observer-dependent reality",
+      "No global wavefunction",
+      "Relational physics",
+      "Foundations of quantum mechanics",
+      "Foundations of spacetime",
+      "Observer-based ontology",
+      "First-person perspective",
+      "Hard problem of consciousness",
+      "Information and consciousness"
+    ],
+    "related_identifiers": [],
+    "files": [
+      {
+        "id": "ebc7129b-9df2-4c8f-adda-0a2ba28f536e",
+        "key": "observers_are_all_you_need.pdf",
+        "size": 1017315,
+        "checksum": "md5:c28482248292ff6727f9515f0c530c13",
+        "links": {
+          "self": "https://zenodo.org/api/records/23719196/files/observers_are_all_you_need.pdf/content"
+        }
+      }
+    ],
+    "html_url": "https://zenodo.org/records/23719196",
+    "doi_url": "https://doi.org/10.5281/zenodo.18288113",
+    "record_url": "https://zenodo.org/records/18288113"
+  },
+  "suggested_folder": "2026_ObserversAllYouNeed",
+  "suggested_domain": "💻",
+  "suggested_type": "Paper",
+  "suggested_venue": "Zenodo (preprint)",
+  "canonical_citation_doi": "10.5281/zenodo.18288113",
+  "download_record_id": "23719196",
+  "deposited_byline_order": [
+    "Mueller, Bernhard",
+    "Poneder, Mario",
+    "Osika, Alexander",
+    "Friedman, Daniel",
+    "Xue, Kai",
+    "Cassie, Ben",
+    "Nguyen, Peter"
+  ],
+  "identity_authority_note": "Use the retained deposited PDF title and seven-author byline in canonical document order. Preserve raw deposit creator spelling/order and its October28 publication date as separate registry evidence; its fourth-position Friedman differs from the PDF seventh-position Friedman. This is not the fourteen-author flagship.",
+  "distinct_from": {
+    "folder": "2026_ObserversReadUniverse",
+    "bibliography_row": 230,
+    "citation_url": "https://philpapers.org/rec/MUEFOC",
+    "reason": "Frozen flagship explicitly cites Observers Are All You Need as a separate component manuscript; frozen paper index lists separate files, roles and entries."
+  },
+  "relationship": "Related OPH component manuscript, not a new version of the flagship and not a software source archive.",
+  "primary_evidence": [
+    {
+      "url": "https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/paper/README.md",
+      "scope": "Separate flagship synthesis and Observers Are All You Need entries; component is layer 3 observers, records, quantum/thermodynamic identities and closure equations."
+    },
+    {
+      "url": "https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/docs/PAPER_SET.md",
+      "scope": "Distinct flagship versus observers-and-records contributions and retained-premise boundaries."
+    },
+    {
+      "url": "https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex",
+      "scope": "Flagship bibliography separately cites seven-author Observers Are All You Need; body calls component papers sources of longer proofs and implementation contracts."
+    },
+    {
+      "url": "https://zenodo.org/records/23719196",
+      "scope": "Exact deposit title, seven creators in deposit order, publication date 2026-10-28 and archived file metadata retained by frozen intake."
+    }
+  ],
+  "safe_summary": "Observer Patch Holography models finite observer patches that retain records, compare overlap readbacks and repair disagreement. The deposited r2054 manuscript reports conditional thermodynamic, finite quantum, gauge-response and field constructions under stated repair-law, clock-and-energy calibration, quantum-algebra and matter premises. Its fine-structure comparisons are diagnostics; one executed interval excludes the measured value. The opening text explicitly states that the finite constructions do not establish physical realization or select a unique universe. This catalog summary does not independently verify the mathematics, software or physical claims.",
+  "pdf_custody": {
+    "record_id": "23719196",
+    "concept_doi": "10.5281/zenodo.18288113",
+    "version": null,
+    "url": "https://zenodo.org/api/records/23719196/files/observers_are_all_you_need.pdf/content",
+    "name": "observers_are_all_you_need.pdf",
+    "bytes": 1017315,
+    "sha256": "d88de3b37c7686d894a7a4e4ed731358f310888c00e9f4a33e6db824889dde68",
+    "md5": "c28482248292ff6727f9515f0c530c13",
+    "pages": 191,
+    "text_sha256": "0e588a7706b155ae3e7cd4d503c10dcd8be9f81290a51143c01f56d0efd2945c",
+    "extractor": "pypdf",
+    "extractor_version": "6.21.4",
+    "source_report": "reports/publication_intake_2026-11-05.json",
+    "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+    "review_scope": "Streamed size/checksum and all-page extraction; no independent mathematical, scientific or visual verification."
+  },
+  "artifact_doi_status": "Confirm exact version DOI from raw Zenodo record during governed intake; normalized frozen record supplies the concept DOI and version record id separately.",
+  "rights_status": "Frozen current r2061 repository terms distinguish authored papers CC BY-NC-SA 4.0 from software Apache-2.0. The deposited PDF license must be confirmed from its own record; do not infer its terms solely from a later repository revision.",
+  "source_availability": "Zenodo HTML/API could not be retrieved through the web tool during this independent review; metadata above is bound to the warning-free frozen API intake. Exact frozen public GitHub indexes were retrieved successfully.",
+  "application": "Use add_zenodo_only on record23719196 to create a separate source-owned folder/row, then curate conditional summary and source evidence after governed byte acquisition. Preserve row230 and its PhilPapers citation. Do not add an exclusion or rename/merge the flagship.",
+  "observed_document_title": "Observers Are All You Need",
+  "observed_document_byline_order": [
+    "Mueller, Bernhard",
+    "Poneder, Mario",
+    "Osika, Alexander",
+    "Xue, Kai",
+    "Cassie, Ben",
+    "Nguyen, Peter",
+    "Friedman, Daniel Ari"
+  ],
+  "observed_document_release": "r2054",
+  "observed_document_release_date": "2026-10-26",
+  "deposit_publication_date": "2026-10-28",
+  "upstream_registry_version": null,
+  "recommended_remote_version_label": "Zenodo record 23719196 (2026-10-28)",
+  "metadata_discrepancies": {
+    "authors": {
+      "registry": [
+        "Mueller, Bernhard",
+        "Poneder, Mario",
+        "Osika, Alexander",
+        "Friedman, Daniel",
+        "Xue, Kai",
+        "Cassie, Ben",
+        "Nguyen, Peter"
+      ],
+      "deposited_pdf": [
+        "Mueller, Bernhard",
+        "Poneder, Mario",
+        "Osika, Alexander",
+        "Xue, Kai",
+        "Cassie, Ben",
+        "Nguyen, Peter",
+        "Friedman, Daniel Ari"
+      ],
+      "disposition": "Canonical document citation follows the deposited PDF; registry order retained verbatim as provenance, no silent agreement claim."
+    },
+    "dates": {
+      "registry_publication_date": "2026-10-28",
+      "deposited_pdf_release_date": "2026-10-26",
+      "disposition": "Retain both labeled dates; deposit publication date and printed document release date are separate observations."
+    },
+    "version": {
+      "registry_version": null,
+      "deposited_pdf_release": "r2054",
+      "disposition": "Do not attribute r2061 or infer a registry version; remote label names the exact version record/date."
+    }
+  },
+  "extraction": {
+    "file": "full_text.md",
+    "sha256": "0e588a7706b155ae3e7cd4d503c10dcd8be9f81290a51143c01f56d0efd2945c",
+    "source_pdf_sha256": "d88de3b37c7686d894a7a4e4ed731358f310888c00e9f4a33e6db824889dde68",
+    "tool": "pypdf",
+    "tool_version": "6.21.4",
+    "pages": 191,
+    "method": "All pages extracted in order; first two extracted pages reviewed for bibliographic identity and conditional scientific scope."
+  },
+  "summary_evidence": [
+    "one machine-checked conditional theorem",
+    "these endpoint comparisons are diagnostics",
+    "neither the schematic equation nor the finite constructions establish this physical realization or select a unique universe"
+  ],
+  "reviewed_source_scope": "Acquired byte/checksum receipt and all-page extraction; first two extracted pages corroborate exact title, seven-author document order, release r2054/date and stated physical-realization limits. No rendered-page inspection or independent mathematical, software or scientific verification.",
+  "artifact_doi": "10.5281/zenodo.23719196",
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "applied_authority": "Deposited PDF title-page author order; registry discrepancy retained in source_evidence.json.",
+  "applied_folder": "2026_ObserversAllYouNeed",
+  "applied_catalog_number": 235
+}

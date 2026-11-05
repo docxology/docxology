@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-05T02:00:53Z",
+  "generated_at": "2026-11-05T02:54:05Z",
   "scope": "All public HTML page families; complements, but does not replace, browser-based accessibility testing.",
-  "page_count": 2622,
-  "passing": 2622,
+  "page_count": 2624,
+  "passing": 2624,
   "results": [
     {
       "path": "404.html",
@@ -28906,6 +28906,31 @@
     },
     {
       "path": "papers/2026_MusicNeverStopped/index.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "papers/2026_ObserversAllYouNeed/index.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -64631,6 +64656,31 @@
     },
     {
       "path": "works/Friedman2026MusicNeverStoppedGrateful150.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "works/Friedman2026ObserversAreAllYou235.html",
       "ok": true,
       "checks": {
         "lang": true,

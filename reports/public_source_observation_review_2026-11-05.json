@@ -1,0 +1,492 @@
+{
+  "schema_version": "1.0",
+  "previous_ledger_sha256": "c34a5118b0e04189584596c989d278dab8f71b83262987f2e69138dcd9ebacd6",
+  "current_snapshot": "reports/public_source_snapshot_2026-11-05.json",
+  "previous_snapshot": "reports/public_source_snapshot_2026-10-31.json",
+  "decisions": [
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveBlockference",
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveBlockference",
+      "previous_sha256": "6e7f81278a46eaafc53728663e8d0ccac6985dd52d30dc2f9bc35133a1e4ad57",
+      "current_sha256": "ae4157fff9037fba7f3d1b8b2c5da137da8c20c4dc6d4a9e3aaebc8d7f45ea61",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.250935+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferAnts",
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveInferAnts",
+      "previous_sha256": "954352888f64bd3d61ac9f7d153505fae358f6076ff9f7f06031d4ad23cd550c",
+      "current_sha256": "894ff25d43a422eec24decd4ec66d1a0c16fb51438ea95f317e9467173867d8b",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251069+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal",
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal",
+      "previous_sha256": "8ed91f5883fbe082336367211fbcb53fc7518cefdd2ecdfba6f38316b77ed321",
+      "current_sha256": "dfa1ede7a2d2f89415118abbbd2d2d75b3a46dcf6fe49323c8ea07624ad6e8e8",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251072+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/CEREBRUM",
+      "label": "GitHub repo ActiveInferenceInstitute/CEREBRUM",
+      "previous_sha256": "e2b20aca402ae9174bd522a01b523d52feced3063237d0158fddcb04954d5a29",
+      "current_sha256": "8ed33a8c4c41579ae860c207f23c59af231c48a02c6ce6c4258b76600cfaa770",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251073+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "previous_sha256": "601d93edbd110e9e28a2cc7598f6e66b5b1174e912e71c11c7efe2e3b6b29337",
+      "current_sha256": "c35a82ceed878e4d3466c31b55b123f1e4f77ee9c94f2cecf1643ae51f634cb1",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251074+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/Journal-Utilities",
+      "label": "GitHub repo ActiveInferenceInstitute/Journal-Utilities",
+      "previous_sha256": "12e8505465952b911087ca382bfefcddebff7cda29e2d3fe71581933574daa92",
+      "current_sha256": "5f4320df08fa3a62227dc41045388317f9e279b5a1c041ea4fa9b4642c70370a",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251075+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/cognitive",
+      "label": "GitHub repo ActiveInferenceInstitute/cognitive",
+      "previous_sha256": "af5a37248917f673eaf9c01995a719663aa9d20476cf02a8cfb87a99e411502b",
+      "current_sha256": "659171b396251a155c62891a1f8fa018436660b780d973d2f05fcba875906211",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251076+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/fep_lean",
+      "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
+      "previous_sha256": "168d089c4634696a85ee77e0219decb668744565ba110910bb2d58a618d6bcbd",
+      "current_sha256": "299bf3b77da36f7c0dde6964e6173e10ecf5877e4c621a5c9c1e4c3802cf9bdd",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251077+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub user docxology",
+      "label": "GitHub user docxology",
+      "previous_sha256": "a019f282654d2fe394d3582bb29ab1f5f3c2a79cc5fde9ade7f905acca89568f",
+      "current_sha256": "a0e2fc12273d90327eea1cc3f910f1486e324a0a273bd8932bbaf5ac3f11a7f9",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251078+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:Zenodo ORCID-linked records",
+      "label": "Zenodo ORCID-linked records",
+      "previous_sha256": "c46a3853a9a72d661431f90320c034d8a40e9c29f6c2ceaf9d58e56341d5681e",
+      "current_sha256": "3546561a3ee6e214948da5c6c4c2798b1c1d96f780337f282ec9fc8ae49e95d4",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251080+00:00",
+      "rationale": "Reviewed the changed record/query facts against the warning-free frozen intake and exact pair decisions. Concept/version/source-archive roles stay separate; two distinct works and the current Blake edition are curated. Registry record totals include software and versions and are not equated with bibliography work counts.",
+      "curated_targets": [
+        "pages/BIBLIOGRAPHY.md",
+        "pages/SOFTWARE.md",
+        "reports/publication_intake_2026-11-05.json",
+        "data/paired-publication-decisions.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:Zenodo exact-name creator records",
+      "label": "Zenodo exact-name creator records",
+      "previous_sha256": "8d3987344b3863bede60a5f39fcf55a27df3c450161676450989ca60fedfc721",
+      "current_sha256": "e5b40777d8920e05574f74a25da37d18ae00483d37f0b6232db747fc7b09e493",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251081+00:00",
+      "rationale": "Reviewed the changed record/query facts against the warning-free frozen intake and exact pair decisions. Concept/version/source-archive roles stay separate; two distinct works and the current Blake edition are curated. Registry record totals include software and versions and are not equated with bibliography work counts.",
+      "curated_targets": [
+        "pages/BIBLIOGRAPHY.md",
+        "pages/SOFTWARE.md",
+        "reports/publication_intake_2026-11-05.json",
+        "data/paired-publication-decisions.json"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveBlockference",
+      "previous": {
+        "full_name": "ActiveInferenceInstitute/ActiveBlockference",
+        "stargazers_count": 32,
+        "language": "Python",
+        "updated_at": "2026-09-22T17:46:58Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/ActiveBlockference"
+      },
+      "current": {
+        "full_name": "ActiveInferenceInstitute/ActiveBlockference",
+        "stargazers_count": 32,
+        "language": "Python",
+        "updated_at": "2026-11-05T01:15:42Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/ActiveBlockference"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveInferAnts",
+      "previous": {
+        "full_name": "ActiveInferenceInstitute/Active_InferAnts",
+        "stargazers_count": 31,
+        "language": "Python",
+        "updated_at": "2026-10-22T03:00:49Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts"
+      },
+      "current": {
+        "full_name": "ActiveInferenceInstitute/Active_InferAnts",
+        "stargazers_count": 31,
+        "language": "Python",
+        "updated_at": "2026-11-04T22:57:54Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal",
+      "previous": {
+        "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal",
+        "stargazers_count": 45,
+        "language": "HTML",
+        "updated_at": "2026-10-22T03:09:22Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal"
+      },
+      "current": {
+        "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal",
+        "stargazers_count": 45,
+        "language": "HTML",
+        "updated_at": "2026-11-03T18:44:26Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/CEREBRUM",
+      "previous": {
+        "full_name": "ActiveInferenceInstitute/CEREBRUM",
+        "stargazers_count": 14,
+        "language": "Python",
+        "updated_at": "2026-10-08T22:12:07Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/CEREBRUM"
+      },
+      "current": {
+        "full_name": "ActiveInferenceInstitute/CEREBRUM",
+        "stargazers_count": 14,
+        "language": "Python",
+        "updated_at": "2026-11-04T23:38:28Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/CEREBRUM"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "previous": {
+        "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+        "stargazers_count": 34,
+        "language": "Python",
+        "updated_at": "2026-10-30T22:38:44Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation"
+      },
+      "current": {
+        "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+        "stargazers_count": 35,
+        "language": "Python",
+        "updated_at": "2026-11-05T00:34:03Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/Journal-Utilities",
+      "previous": {
+        "full_name": "ActiveInferenceInstitute/Journal_Utilities",
+        "stargazers_count": 10,
+        "language": "HTML",
+        "updated_at": "2026-09-25T13:54:57Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities"
+      },
+      "current": {
+        "full_name": "ActiveInferenceInstitute/Journal_Utilities",
+        "stargazers_count": 10,
+        "language": "HTML",
+        "updated_at": "2026-11-04T18:22:34Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/cognitive",
+      "previous": {
+        "full_name": "ActiveInferenceInstitute/cognitive",
+        "stargazers_count": 23,
+        "language": "Python",
+        "updated_at": "2026-10-23T23:26:33Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/cognitive"
+      },
+      "current": {
+        "full_name": "ActiveInferenceInstitute/cognitive",
+        "stargazers_count": 23,
+        "language": "Python",
+        "updated_at": "2026-11-05T01:19:05Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/cognitive"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
+      "previous": {
+        "full_name": "ActiveInferenceInstitute/fep_formal",
+        "stargazers_count": 6,
+        "language": "Python",
+        "updated_at": "2026-10-30T21:52:45Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/fep_formal"
+      },
+      "current": {
+        "full_name": "ActiveInferenceInstitute/fep_formal",
+        "stargazers_count": 6,
+        "language": "Python",
+        "updated_at": "2026-11-04T15:42:37Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/fep_formal"
+      }
+    },
+    {
+      "label": "GitHub user docxology",
+      "previous": {
+        "login": "docxology",
+        "type": "User",
+        "public_repos": 245,
+        "updated_at": "2026-10-05T21:44:09Z",
+        "html_url": "https://github.com/docxology"
+      },
+      "current": {
+        "login": "docxology",
+        "type": "User",
+        "public_repos": 273,
+        "updated_at": "2026-11-02T18:14:20Z",
+        "html_url": "https://github.com/docxology"
+      }
+    },
+    {
+      "label": "Zenodo ORCID-linked records",
+      "previous": {
+        "total": 169,
+        "first_title": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+        "first_doi": "10.5281/zenodo.22409419"
+      },
+      "current": {
+        "total": 172,
+        "first_title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+        "first_doi": "10.5281/zenodo.23922458"
+      }
+    },
+    {
+      "label": "Zenodo exact-name creator records",
+      "previous": {
+        "total": 80,
+        "first_title": "Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method",
+        "first_doi": "10.5281/zenodo.22409419"
+      },
+      "current": {
+        "total": 83,
+        "first_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+        "first_doi": "10.5281/zenodo.23955189"
+      }
+    }
+  ],
+  "superseded_decisions": [
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveBlockference",
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveBlockference",
+      "previous_sha256": "1dc123dc0edad8cfec8949ac5e198b50897abb0466f81c9356064468c3ff5ffd",
+      "current_sha256": "6e7f81278a46eaafc53728663e8d0ccac6985dd52d30dc2f9bc35133a1e4ad57",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-10-06T16:25:51Z",
+      "rationale": "Changed updated_at (activity telemetry or an upstream rename); no curated claim or catalog change is required. Reviewed for issue #12 against the last reviewed baseline (public_source_snapshot_2026-08-26); approved under the principal's 'proceed with all' on 2026-10-06.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferAnts",
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveInferAnts",
+      "previous_sha256": "351a2922a4cf08a4406b922dcadeb7d586fbb2664b815b6f9fde9f8311522d64",
+      "current_sha256": "954352888f64bd3d61ac9f7d153505fae358f6076ff9f7f06031d4ad23cd550c",
+      "decision": "acknowledged",
+      "decided_by": "Codex assistant",
+      "decided_at": "2026-11-01T22:35:29Z",
+      "rationale": "Reviewed the recorded stargazers_count, updated_at changes. Canonical repository name, URL, and primary language are unchanged; the fresh primary API observation agrees on identity. These are activity/star observations and require no scientific or catalog-identity change. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal",
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal",
+      "previous_sha256": "6d0348a93d5db51583ac06717ac59994bc07c86fb8d9513403cf1a203f3d1283",
+      "current_sha256": "8ed91f5883fbe082336367211fbcb53fc7518cefdd2ecdfba6f38316b77ed321",
+      "decision": "acknowledged",
+      "decided_by": "Codex assistant",
+      "decided_at": "2026-11-01T22:35:29Z",
+      "rationale": "Reviewed the recorded stargazers_count, updated_at changes. Canonical repository name, URL, and primary language are unchanged; the fresh primary API observation agrees on identity. These are activity/star observations and require no scientific or catalog-identity change. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/CEREBRUM",
+      "label": "GitHub repo ActiveInferenceInstitute/CEREBRUM",
+      "previous_sha256": "eb0499466c79fd2541a5c35ab279c72fd63b28d2b13008bac538a8d8fc7eb801",
+      "current_sha256": "e2b20aca402ae9174bd522a01b523d52feced3063237d0158fddcb04954d5a29",
+      "decision": "acknowledged",
+      "decided_by": "Codex",
+      "decided_at": "2026-10-12T18:51:42Z",
+      "rationale": "GitHub REST evidence changes repository activity/star telemetry only; retain canonical repository identity and curated scientific claims.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/Journal-Utilities",
+      "label": "GitHub repo ActiveInferenceInstitute/Journal-Utilities",
+      "previous_sha256": "59ce10310939eb701652a52a9c20dd5d1b0011bc447b954b3294d4a27bb4c101",
+      "current_sha256": "12e8505465952b911087ca382bfefcddebff7cda29e2d3fe71581933574daa92",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-10-06T16:25:51Z",
+      "rationale": "Changed full_name, html_url, updated_at (activity telemetry or an upstream rename); no curated claim or catalog change is required. Reviewed for issue #12 against the last reviewed baseline (public_source_snapshot_2026-08-26); approved under the principal's 'proceed with all' on 2026-10-06.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "previous_sha256": "f3d822ab108d6ae8fe4bd97ee9d475b99c109d5a9830e327e54f0dff83aadbc8",
+      "current_sha256": "601d93edbd110e9e28a2cc7598f6e66b5b1174e912e71c11c7efe2e3b6b29337",
+      "decision": "acknowledged",
+      "decided_by": "Codex assistant",
+      "decided_at": "2026-11-01T22:35:29Z",
+      "rationale": "Reviewed the recorded stargazers_count, updated_at changes. Canonical repository name, URL, and primary language are unchanged; the fresh primary API observation agrees on identity. These are activity/star observations and require no scientific or catalog-identity change. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/cognitive",
+      "label": "GitHub repo ActiveInferenceInstitute/cognitive",
+      "previous_sha256": "e6784afa19f630b38ad94dc06da2eac2af029fbfa73ebf5140ae035a5195535d",
+      "current_sha256": "af5a37248917f673eaf9c01995a719663aa9d20476cf02a8cfb87a99e411502b",
+      "decision": "acknowledged",
+      "decided_by": "Codex assistant",
+      "decided_at": "2026-11-01T22:35:29Z",
+      "rationale": "Reviewed the recorded stargazers_count, updated_at changes. Canonical repository name, URL, and primary language are unchanged; the fresh primary API observation agrees on identity. These are activity/star observations and require no scientific or catalog-identity change. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/fep_lean",
+      "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
+      "previous_sha256": "9680c73771939fd2efa596c13c2eb3f11375a16cab451cfcf21acee9aa78c4f1",
+      "current_sha256": "168d089c4634696a85ee77e0219decb668744565ba110910bb2d58a618d6bcbd",
+      "decision": "acknowledged",
+      "decided_by": "Codex assistant",
+      "decided_at": "2026-11-01T22:35:29Z",
+      "rationale": "Reviewed the recorded stargazers_count, updated_at changes. Canonical repository name, URL, and primary language are unchanged; the fresh primary API observation agrees on identity. These are activity/star observations and require no scientific or catalog-identity change. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub user docxology",
+      "label": "GitHub user docxology",
+      "previous_sha256": "6ee7f644681a4a35460851296694b214afd22bc8b81cd1bb3157fd7103a7625e",
+      "current_sha256": "a019f282654d2fe394d3582bb29ab1f5f3c2a79cc5fde9ade7f905acca89568f",
+      "decision": "acknowledged",
+      "decided_by": "Codex assistant",
+      "decided_at": "2026-11-01T22:35:29Z",
+      "rationale": "Reviewed public repository count 239 to 245; the complete cached inventory contains exactly 245 records for docxology, and the fresh API check agrees. Account identity and type are unchanged. Existing inventory-derived projections already reflect this refresh; no additional biographical interpretation is made. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "data/current-counts.json",
+        "reports/current_counts.md"
+      ]
+    },
+    {
+      "id": "public-source-observation:Zenodo ORCID-linked records",
+      "label": "Zenodo ORCID-linked records",
+      "previous_sha256": "f99be675c238193294f4c23dfe8d451b8258e698bda67ff5dd410df3bcfd5efe",
+      "current_sha256": "c46a3853a9a72d661431f90320c034d8a40e9c29f6c2ceaf9d58e56341d5681e",
+      "decision": "acknowledged",
+      "decided_by": "Codex assistant",
+      "decided_at": "2026-11-01T22:35:29Z",
+      "rationale": "Reviewed the changed discovery total and latest-record fields against the retained snapshots and fresh primary API check. The latest record is the already catalogued AILM v1.0.0 artifact (record 22409419), cited by its canonical concept DOI 10.5281/zenodo.22409418. ORCID-linked and exact-name query sets overlap and are not bibliography totals. Existing publication-pair decisions remain authoritative; no duplicate row or scientific claim is introduced. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json.",
+      "curated_targets": [
+        "pages/BIBLIOGRAPHY.md",
+        "papers/2026_ActiveInferenceLanguage/metadata.json",
+        "data/paired-publication-decisions.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:Zenodo exact-name creator records",
+      "label": "Zenodo exact-name creator records",
+      "previous_sha256": "8de32b75e48eb01bf0bd3fbbb5241768fb7bd755f11c9122119e032591beae2d",
+      "current_sha256": "8d3987344b3863bede60a5f39fcf55a27df3c450161676450989ca60fedfc721",
+      "decision": "acknowledged",
+      "decided_by": "Codex assistant",
+      "decided_at": "2026-11-01T22:35:29Z",
+      "rationale": "Reviewed the changed discovery total and latest-record fields against the retained snapshots and fresh primary API check. The latest record is the already catalogued AILM v1.0.0 artifact (record 22409419), cited by its canonical concept DOI 10.5281/zenodo.22409418. ORCID-linked and exact-name query sets overlap and are not bibliography totals. Existing publication-pair decisions remain authoritative; no duplicate row or scientific claim is introduced. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json.",
+      "curated_targets": [
+        "pages/BIBLIOGRAPHY.md",
+        "papers/2026_ActiveInferenceLanguage/metadata.json",
+        "data/paired-publication-decisions.json"
+      ]
+    }
+  ],
+  "review_scope": "Exact before/after public API facts reviewed; activity telemetry is not publication completeness or biographical evidence."
+}

@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Observers are all you need"
+version: "r2054"
+date-released: 2026-10-28
+doi: 10.5281/zenodo.18288113
+url: "https://doi.org/10.5281/zenodo.18288113"
+authors:
+  - family-names: "Mueller"
+    given-names: "Bernhard"
+    orcid: "https://orcid.org/0009-0002-5638-6240"
+  - family-names: "Poneder"
+    given-names: "Mario"
+  - family-names: "Osika"
+    given-names: "Alexander"
+  - family-names: "Xue"
+    given-names: "Kai"
+  - family-names: "Cassie"
+    given-names: "Ben"
+  - family-names: "Nguyen"
+    given-names: "Peter"
+  - family-names: "Friedman"
+    given-names: "Daniel Ari"
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.18288113"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.18288113"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.23719196"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.23719196"
+    description: "Version/download DOI resolver (Zenodo artifact)"
+  - type: url
+    value: "https://zenodo.org/records/23719196"
+    description: "Version/download landing page (Zenodo artifact)"

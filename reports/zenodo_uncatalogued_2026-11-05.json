@@ -1,0 +1,199 @@
+{
+  "generated_at": "2026-11-05T02:55:43Z",
+  "zenodo_records_fetched": 176,
+  "zenodo_records_source": {
+    "mode": "cached",
+    "source_report": "reports/paired_publications_2026-11-05.json"
+  },
+  "bibliography_dois": 215,
+  "uncatalogued_count": 0,
+  "software_catalogued_count": 3,
+  "reviewed_source_archive_count": 1,
+  "reviewed_source_archive_context": {
+    "schema_version": 1,
+    "records": [
+      {
+        "record_id": "23922458",
+        "doi": "10.5281/zenodo.23922457",
+        "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+        "publication_date": "2026-11-03",
+        "version": "0.5.0",
+        "resource_type": {
+          "title": "Working paper",
+          "type": "publication",
+          "subtype": "workingpaper"
+        },
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "description": "William Blake's works survive across editions, copy records, image archives, museum catalogues, transcriptions, and finding aids. Computational coverage is difficult to assess without explicit units, source authority, and evidence boundaries. We present *blake*, a 7-phase pipeline that connects a 104-entry work-level target ledger with retained source records, local analysis, provenance, recoverability checks, and generated publication artifacts.\n\nThe saved offline run analyzes 727 local source/copy records. Its 6109 image associations reference 5975 distinct files. It represents 69 ledger targets (66.3%) and fully satisfies the declared evidence profile for 45 targets (43.3%). The text-bearing subset has 540 records and 682407 tokenizer-defined words. These exploratory text results include retained transcriptions with unverified authorship; they are not a Blake-authored language census. The top-level analysis ledger records 727/727 records analyzed and 0 top-level errors. Nested sub-analysis limitations are counted separately.\n\nLocal recovery preserves 8481 inventoried files and 5975/6003 discovered image identifiers, leaving 28 unresolved. Checksums and a corruption-detection restore drill establish recoverability of the captured inventory, not completeness of Blake's oeuvre. Quantitative prose, tables, and figures derive from saved artifacts. Public releases contain project-authored software, manuscript sources, aggregate evidence, and checksums; provider texts, XML, images, private indexes, backups, and source-image mosaics remain local. The contribution is an auditable corpus-governance and preservation method with explicit scholarly and distribution limits.\n\nThe implementation separates corpus custody from application policy. Portable source snapshots and explicit schema conversion preserve source identities and roles, while distinct retrieval profiles expose normalized-token, literal-casefold and regex contracts. Shared counting, hierarchy and evidence-admission methods support application papers without embedding their vocabularies or interpretations. Current source-derived diagrams identify those interfaces separately from the historical analytical producer.\n\nThis deposit pairs the 94-page manuscript edition 0.5.0 with Blake software release 0.7.0. Generic half-open interval methods preserve occupied support, multiplicity and overlapping record pairs while applications retain source grouping and domain judgments. Entomology and Federalism are independent applications, linked as related research objects rather than runtime dependencies.",
+        "keywords": [
+          "William Blake",
+          "digital humanities",
+          "corpus acquisition",
+          "source provenance",
+          "rights-bounded release"
+        ],
+        "related_identifiers": [
+          {
+            "identifier": "https://github.com/docxology/blake/tree/v0.7.0",
+            "relation": "isSupplementTo",
+            "scheme": "url"
+          },
+          {
+            "identifier": "10.5281/zenodo.23900583",
+            "relation": "references",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.23900617",
+            "relation": "references",
+            "scheme": "doi"
+          }
+        ],
+        "files": [
+          {
+            "id": "1a208432-7f13-439a-ab50-7d3b853e6392",
+            "key": "docxology/blake-v0.7.0.zip",
+            "size": 46414221,
+            "checksum": "md5:4c813d8798b1444b4d4dc34d2b0fe50d",
+            "links": {
+              "self": "https://zenodo.org/api/records/23922458/files/docxology/blake-v0.7.0.zip/content"
+            }
+          }
+        ],
+        "html_url": "https://zenodo.org/records/23922458",
+        "doi_url": "https://doi.org/10.5281/zenodo.23922457",
+        "record_url": "https://zenodo.org/records/23922457"
+      }
+    ]
+  },
+  "reviewed_source_archives": [
+    {
+      "record_id": "23922458",
+      "concept_doi": "10.5281/zenodo.23922457",
+      "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+      "resource_type": {
+        "title": "Working paper",
+        "type": "publication",
+        "subtype": "workingpaper"
+      },
+      "software_row": "blake",
+      "paper_folder": "2026_MappingWilliamBlake",
+      "decision_group": "review-2026-11-04-2d2a04dec9b18376",
+      "decision_sha256": "7bdb544c7aed1ac69c57959768bea591a66405df2de729cb9920d17d9e74e43d",
+      "source_report": "reports/publication_intake_2026-11-05.json",
+      "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+      "record": {
+        "record_id": "23922458",
+        "doi": "10.5281/zenodo.23922457",
+        "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+        "publication_date": "2026-11-03",
+        "version": "0.5.0",
+        "resource_type": {
+          "title": "Working paper",
+          "type": "publication",
+          "subtype": "workingpaper"
+        },
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "description": "William Blake's works survive across editions, copy records, image archives, museum catalogues, transcriptions, and finding aids. Computational coverage is difficult to assess without explicit units, source authority, and evidence boundaries. We present *blake*, a 7-phase pipeline that connects a 104-entry work-level target ledger with retained source records, local analysis, provenance, recoverability checks, and generated publication artifacts.\n\nThe saved offline run analyzes 727 local source/copy records. Its 6109 image associations reference 5975 distinct files. It represents 69 ledger targets (66.3%) and fully satisfies the declared evidence profile for 45 targets (43.3%). The text-bearing subset has 540 records and 682407 tokenizer-defined words. These exploratory text results include retained transcriptions with unverified authorship; they are not a Blake-authored language census. The top-level analysis ledger records 727/727 records analyzed and 0 top-level errors. Nested sub-analysis limitations are counted separately.\n\nLocal recovery preserves 8481 inventoried files and 5975/6003 discovered image identifiers, leaving 28 unresolved. Checksums and a corruption-detection restore drill establish recoverability of the captured inventory, not completeness of Blake's oeuvre. Quantitative prose, tables, and figures derive from saved artifacts. Public releases contain project-authored software, manuscript sources, aggregate evidence, and checksums; provider texts, XML, images, private indexes, backups, and source-image mosaics remain local. The contribution is an auditable corpus-governance and preservation method with explicit scholarly and distribution limits.\n\nThe implementation separates corpus custody from application policy. Portable source snapshots and explicit schema conversion preserve source identities and roles, while distinct retrieval profiles expose normalized-token, literal-casefold and regex contracts. Shared counting, hierarchy and evidence-admission methods support application papers without embedding their vocabularies or interpretations. Current source-derived diagrams identify those interfaces separately from the historical analytical producer.\n\nThis deposit pairs the 94-page manuscript edition 0.5.0 with Blake software release 0.7.0. Generic half-open interval methods preserve occupied support, multiplicity and overlapping record pairs while applications retain source grouping and domain judgments. Entomology and Federalism are independent applications, linked as related research objects rather than runtime dependencies.",
+        "keywords": [
+          "William Blake",
+          "digital humanities",
+          "corpus acquisition",
+          "source provenance",
+          "rights-bounded release"
+        ],
+        "related_identifiers": [
+          {
+            "identifier": "https://github.com/docxology/blake/tree/v0.7.0",
+            "relation": "isSupplementTo",
+            "scheme": "url"
+          },
+          {
+            "identifier": "10.5281/zenodo.23900583",
+            "relation": "references",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.23900617",
+            "relation": "references",
+            "scheme": "doi"
+          }
+        ],
+        "files": [
+          {
+            "id": "1a208432-7f13-439a-ab50-7d3b853e6392",
+            "key": "docxology/blake-v0.7.0.zip",
+            "size": 46414221,
+            "checksum": "md5:4c813d8798b1444b4d4dc34d2b0fe50d",
+            "links": {
+              "self": "https://zenodo.org/api/records/23922458/files/docxology/blake-v0.7.0.zip/content"
+            }
+          }
+        ],
+        "html_url": "https://zenodo.org/records/23922458",
+        "doi_url": "https://doi.org/10.5281/zenodo.23922457",
+        "record_url": "https://zenodo.org/records/23922457"
+      }
+    }
+  ],
+  "reviewed_source_archive_drift_count": 0,
+  "reviewed_source_archive_drift": [],
+  "non_canonical_doi_count": 0,
+  "approved_version_specific_doi_exception_count": 2,
+  "version_specific_doi_exception_drift_count": 0,
+  "warnings": [],
+  "uncatalogued": [],
+  "software_catalogued": [
+    {
+      "record_id": "23631895",
+      "concept_doi": "10.5281/zenodo.23196891",
+      "title": "fep_formal: Towards Lean 4 Formalization of the Free Energy Principle",
+      "software_row": "fep_formal",
+      "paper_folder": "2026_FEPLean"
+    },
+    {
+      "record_id": "23404029",
+      "concept_doi": "10.5281/zenodo.23404028",
+      "title": "iTrace: verification-first webcam eye-movement analysis",
+      "software_row": "itrace",
+      "paper_folder": "2026_ITrace"
+    },
+    {
+      "record_id": "23383319",
+      "concept_doi": "10.5281/zenodo.23380253",
+      "title": "Realizing Emptiness",
+      "software_row": "realizing_emptiness",
+      "paper_folder": "2026_RealizingEmptiness"
+    }
+  ],
+  "non_canonical_doi": [],
+  "approved_version_specific_doi_exceptions": [
+    {
+      "record_id": "17982447",
+      "title": "The Active Inference Institute & Active Inference Ecosystem",
+      "concept_doi": "10.5281/zenodo.14108991",
+      "version_doi_in_bibliography": "10.5281/zenodo.17982447",
+      "reason": "AII Ecosystem v3 is a separately curated 2025 bibliographic snapshot, distinct from the earlier v2 concept record."
+    },
+    {
+      "record_id": "15168382",
+      "title": "On Time",
+      "concept_doi": "10.5281/zenodo.15168381",
+      "version_doi_in_bibliography": "10.5281/zenodo.15168382",
+      "reason": "On Time is a separately curated 2025 paper snapshot; all references were deliberately pointed at version record 15168382 in commit d086e7a3 (2026-08-22)."
+    }
+  ],
+  "version_specific_doi_exception_drift": []
+}

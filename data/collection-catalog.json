@@ -10541,6 +10541,72 @@
         "DOI": "10.5281/zenodo.23900616",
         "URL": "https://doi.org/10.5281/zenodo.23900616"
       }
+    },
+    {
+      "key": "Friedman2026ObserversAreAllYou235",
+      "title": "Observers are all you need",
+      "authors": [
+        "Mueller, Bernhard",
+        "Poneder, Mario",
+        "Osika, Alexander",
+        "Xue, Kai",
+        "Cassie, Ben",
+        "Nguyen, Peter",
+        "Friedman, Daniel Ari"
+      ],
+      "year": 2026,
+      "url": "/works/Friedman2026ObserversAreAllYou235.html",
+      "bib": "@article{Friedman2026ObserversAreAllYou235,\n  title = {Observers are all you need},\n  author = {Mueller, Bernhard and Poneder, Mario and Osika, Alexander and Xue, Kai and Cassie, Ben and Nguyen, Peter and Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo (preprint)},\n  doi = {10.5281/zenodo.18288113},\n  url = {https://doi.org/10.5281/zenodo.18288113},\n  keywords = {Computational; Paper},\n  note = {Catalog row 235; docs: papers/2026_ObserversAllYouNeed/}\n}",
+      "ris": "TY  - JOUR\nAU  - Mueller, Bernhard\nAU  - Poneder, Mario\nAU  - Osika, Alexander\nAU  - Xue, Kai\nAU  - Cassie, Ben\nAU  - Nguyen, Peter\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - Observers are all you need\nT2  - Zenodo (preprint)\nDO  - 10.5281/zenodo.18288113\nUR  - https://doi.org/10.5281/zenodo.18288113\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 235; docs: papers/2026_ObserversAllYouNeed/\nER  -",
+      "csl": {
+        "id": "Friedman2026ObserversAreAllYou235",
+        "type": "article-journal",
+        "title": "Observers are all you need",
+        "author": [
+          {
+            "family": "Mueller",
+            "given": "Bernhard"
+          },
+          {
+            "family": "Poneder",
+            "given": "Mario"
+          },
+          {
+            "family": "Osika",
+            "given": "Alexander"
+          },
+          {
+            "family": "Xue",
+            "given": "Kai"
+          },
+          {
+            "family": "Cassie",
+            "given": "Ben"
+          },
+          {
+            "family": "Nguyen",
+            "given": "Peter"
+          },
+          {
+            "family": "Friedman",
+            "given": "Daniel Ari"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "genre": "Paper",
+        "keyword": "Computational; Paper",
+        "note": "Catalog row 235; docs: papers/2026_ObserversAllYouNeed/",
+        "container-title": "Zenodo (preprint)",
+        "publisher": "Zenodo (preprint)",
+        "DOI": "10.5281/zenodo.18288113",
+        "URL": "https://doi.org/10.5281/zenodo.18288113"
+      }
     }
   ]
 }

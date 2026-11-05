@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T02:00:46Z",
+  "generated_at": "2026-11-05T02:54:00Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -61,17 +61,17 @@
     }
   ],
   "max_score": 6,
-  "work_count": 230,
+  "work_count": 231,
   "signal_totals": {
-    "persistent_id": 214,
-    "public_archive": 172,
-    "open_full_text": 207,
-    "source_documents": 213,
+    "persistent_id": 215,
+    "public_archive": 173,
+    "open_full_text": 208,
+    "source_documents": 214,
     "executable_code": 83,
-    "agent_readable": 213
+    "agent_readable": 214
   },
   "band_counts": {
-    "independently reproducible": 170,
+    "independently reproducible": 171,
     "independently checkable": 43,
     "citable only": 8,
     "unverified": 9
@@ -82,10 +82,10 @@
     "2": 4,
     "3": 10,
     "4": 33,
-    "5": 92,
+    "5": 93,
     "6": 78
   },
-  "mean_score": 4.791,
+  "mean_score": 4.792,
   "works": [
     {
       "num": 5,
@@ -3484,6 +3484,25 @@
       "repositories": [
         "active_inference_battleship"
       ]
+    },
+    {
+      "num": 235,
+      "citation_key": "Friedman2026ObserversAreAllYou235",
+      "title": "Observers are all you need",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
     },
     {
       "num": 23,
