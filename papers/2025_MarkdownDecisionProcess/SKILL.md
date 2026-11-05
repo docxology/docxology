@@ -14,11 +14,11 @@ doi: "10.5281/zenodo.17244386"
 
 ## Corrected source review
 
-The corrected active manuscript withdraws unsupported numerical, model-comparison and participant-study claims. Its evaluation is prospective. Historical checkpoints, datasets and study observations have not been recovered.
+The active manuscript removes unsupported calibration, comparison, optimality and participant-study claims. Direct assembly requires its evaluation-evidence appendix, and prospective evaluation has explicit acceptance criteria. Native conversion, model-state loading and CI contracts have regression tests. Historical model checkpoints, datasets and participant/statistical observations remain unrecovered.
 
-This dated review concerns the earlier source edition identified in the pinned correction. Current summaries, downloads and extracted text each retain their own source provenance; this review does not certify a newer edition.
+This review is bound to the linked source commit. Current summaries, downloads and extracted text retain their own source provenance; these corrections do not recover missing historical evidence or constitute a newly deposited publication edition.
 
-[Read the pinned source correction](https://github.com/docxology/markdown_decision_process/blob/7c21c57c34ac78998a94d6a1379803e380ff8505/paper/EVALUATION_EVIDENCE.md) (reviewed 2026-10-19).
+[Read the pinned source correction](https://github.com/docxology/markdown_decision_process/blob/45d00ebf8278d75c60f75190dd999fd180314695/paper/EVALUATION_EVIDENCE.md) (reviewed 2026-11-05).
 
 
 ## Context

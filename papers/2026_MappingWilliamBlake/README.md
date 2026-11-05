@@ -8,6 +8,15 @@
 
 ---
 
+## Corrected source review
+
+The current retained analytical epoch has an explicit membership audit with exact cross-artifact member, modality and byte bindings. Historical analytical, diagnostic and current exporter identities are reported separately. The older coverage/embedding discrepancy remains unrecovered; matching the retained run does not establish new inference, whole-oeuvre coverage or a revised deposited edition.
+
+This review is bound to the linked source commit. Current summaries, downloads and extracted text retain their own source provenance; these corrections do not recover missing historical evidence or constitute a newly deposited publication edition.
+
+[Read the pinned source correction](https://github.com/docxology/blake/blob/ce1622d623129a4f7bc2fc90a36206276d8c666f/docs/run-membership.md) (reviewed 2026-11-05).
+
+
 ## Abstract
 
 > William Blake's works survive across editions, copy records, image archives, museum catalogues, transcriptions, and finding aids. Computational coverage is difficult to assess without explicit units, source authority, and evidence boundaries. We present *blake*, a 7-phase pipeline that connects a 104-entry work-level target ledger with retained source records, local analysis, provenance, recoverability checks, and generated publication artifacts.

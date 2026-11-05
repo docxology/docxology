@@ -2,6 +2,13 @@
 
 ## 2026-11-05 — Evidence contracts, scholarly discovery and methods draft
 
+- Refreshed the [complete GitHub inventory and identity review](reports/github_inventory_review_2026-11-05.json): all prior repositories remain represented, two new forks retain the standing exclusion, and the individually approved AII `.github` entry describes organization/community infrastructure. ActiveACO’s maintained fork is unarchived; its originating source corrections retain separate commit evidence.
+
+- Linked [published originating-source corrections](reports/publication_source_corrections_2026-11-05.json)
+  for MarkdownDecisionProcess, ActiveACO/PopulationSearch and Blake. Current
+  implementation and exact retained-run evidence are validated separately from
+  missing historical scientific observations; prior review pins are preserved.
+
 - Added a reviewed five-article same-directory PDF pilot, with exact source
   identities, rights/byline/date evidence and complete author-written abstracts.
   Content-addressed aliases are assembled only for Pages; original URLs remain

@@ -10,11 +10,11 @@
 
 ## Corrected source review
 
-The corrected source fixes graph symmetry, diagonal weights and tour accounting and supplies a new seeded paired-run protocol with raw execution evidence. The historical table-specific graph denominator remains unestablished; the new run does not reconstruct that table.
+The maintained research fork validates the exact retained graphs, methods, run membership and paired denominators, with a separate versioned seeded protocol. The scalar-belief cancellation and elitist comparator confound are explicit. Historical Table 1 graph/run membership remains unrecovered; the retained small comparison and new protocol do not reconstruct it.
 
-This dated review concerns the earlier source edition identified in the pinned correction. Current summaries, downloads and extracted text each retain their own source provenance; this review does not certify a newer edition.
+This review is bound to the linked source commit. Current summaries, downloads and extracted text retain their own source provenance; these corrections do not recover missing historical evidence or constitute a newly deposited publication edition.
 
-[Read the pinned source correction](https://github.com/docxology/ActiveACO/blob/af126fd2752a0b6417c033defd44425567322d5e/PAPER_REVISION.md) (reviewed 2026-10-19).
+[Read the pinned source correction](https://github.com/docxology/ActiveACO/blob/dbf29a8f0106faf208ed55548277af0d43aa9bb1/PAPER_REVISION.md) (reviewed 2026-11-05).
 
 
 ## Abstract

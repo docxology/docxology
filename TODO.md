@@ -67,13 +67,12 @@ Recurring checks below are operating obligations, not unfinished feature work.
   primary-repository promotion requires an individual source-backed decision.
   Review the current classification queue rather than relying on historical
   queue counts.
-- Open work: none from the reviewed November 4 intake. The new civic/audit repositories, two Blake application repositories and distinct PROJECT BOND packages are catalogued; current fork and historical-reference decisions remain explicit in the dated software review. The earlier 2026-10-31 refresh queued four new primary repositories
-  (`rikishi`, `region-intel`, `davis-ca-intel`, and AII
-  `active_inference_battleship`) and the fork `specification`; all were
-  individually reviewed on 2026-11-01 and the four primaries were promoted
-  into `pages/SOFTWARE.md` with source-backed descriptions, while the fork was
-  acknowledged under the standing fork policy. Retain this as a
-  refresh-triggered classification check.
+- Open work: none from the reviewed November 5 inventory. The
+  [dated identity and classification review](reports/github_inventory_review_2026-11-05.json)
+  records the two new fork-policy decisions and individually approved AII
+  organization/community-infrastructure entry. Repeat this check on the next
+  inventory refresh; completed intake history remains in the changelog and
+  dated source reviews.
 
 ### DOC-006 — Refresh external evidence and coverage exceptions
 
@@ -134,8 +133,12 @@ Recurring checks below are operating obligations, not unfinished feature work.
   limits. Current work and paper pages label the preserved historical summaries
   and link to immutable corrected source. Remaining evidence work concerns
   MarkdownDecisionProcess checkpoint,
-  participant and statistical provenance; PopulationSearch's table-specific
-  graph/run denominator; and MappingWilliamBlake's historical run membership.
+  participant and statistical provenance; PopulationSearch's historical
+  table-specific graph/run membership; and MappingWilliamBlake's older
+  coverage/embedding discrepancy. The [November 5 source review](reports/publication_source_corrections_2026-11-05.json)
+  records completed current-source/test contracts and exact retained-run audits
+  at the published originating commits. Those repairs do not close the missing
+  historical-evidence questions.
   DopamineForaging is outside this revision scope; its published archive remains unchanged.
   Current compiler/test/source corrections do not establish broader scientific
   validity or revise archived PDFs. Any corrected archival publication needs

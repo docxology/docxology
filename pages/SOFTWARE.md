@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
  
- *167 owned repositories · 42 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+ *167 owned repositories · 43 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
  
  *[All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -268,6 +268,7 @@ The [PROJECT BOND compendium](https://github.com/docxology/bond) imports manuscr
 | [Working_Groups](https://github.com/ActiveInferenceInstitute/Working_Groups) | Active Inference Institute Working Groups: draft Charter, Operating Procedures, and the position paper Coordinating the Field · [Zenodo version v1.0.0](https://doi.org/10.5281/zenodo.23066904) · [Citation DOI](https://doi.org/10.5281/zenodo.23066903) · [📄](../papers/2026_CoordinatingField/) | — | 0 | 2026-11 |
 | [active_inference_language_model](https://github.com/ActiveInferenceInstitute/active_inference_language_model) | AILM — fully explicit discrete language stack in pymdp, from letters through document position, with a gate-audit method binding reported numbers to recorded runs · [Citation DOI](https://doi.org/10.5281/zenodo.22409418) · [📄](../papers/2026_ActiveInferenceLanguage/) | Python | 0 | 2026-11 |
 | [active_inference_battleship](https://github.com/ActiveInferenceInstitute/active_inference_battleship) | GNN-based active inference for Battleship — playable dashboard, interpretable decisions, reproducible manuscript, and animated lecture · [Citation DOI](https://doi.org/10.5281/zenodo.23670187) · [📄](../papers/2026_GNNBasedActive/) | TypeScript | 0 | 2026-11 |
+| [.github](https://github.com/ActiveInferenceInstitute/.github) | Organization profile, contributor/support/security guidance and default issue/pull-request templates for Institute repositories. | — | 0 | 2026-11 |
 
 ---
 
@@ -287,7 +288,7 @@ The [PROJECT BOND compendium](https://github.com/docxology/bond) imports manuscr
 | Computational Research | 4 | `thanks_for_nothing`, `active_assembly_theory_and_practice`, `Blakean_Entomology`, `Blakean_Federalism` |
 | PROJECT BOND packages | 33 | [Infrastructure and film-analysis catalog](#project-bond-software-family) |
 | **docxology subtotal** | **167** | |
-| **Grand Total** | **209** | |
+| **Grand Total** | **210** | |
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; GitHub reports the AII account as an **Organization** (observed 2026-10-06). See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 
 ---

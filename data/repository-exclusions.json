@@ -1137,6 +1137,26 @@
       "github_id": 1444976634,
       "github_node_id": "R_kgDOViCX-g",
       "source_url": "https://github.com/docxology/tiny-footprint-workstation"
+    },
+    {
+      "full_name": "docxology/koi-processor-node",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-05",
+      "policy_source": "Principal decision 2026-08-26, TODO.md DOC-005: public forks remain fork_not_curated.",
+      "note": "Public fork of DarrenZal/koi-processor-node; the standing fork policy does not establish an original software-catalog entry.",
+      "github_id": 1446406514,
+      "github_node_id": "R_kgDOVjZpcg"
+    },
+    {
+      "full_name": "docxology/pyhgf",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-05",
+      "policy_source": "Principal decision 2026-08-26, TODO.md DOC-005: public forks remain fork_not_curated.",
+      "note": "Public fork of ComputationalPsychiatry/pyhgf; the standing fork policy does not establish an original software-catalog entry.",
+      "github_id": 1447350639,
+      "github_node_id": "R_kgDOVkTRbw"
     }
   ]
 }

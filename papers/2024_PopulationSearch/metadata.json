@@ -79,10 +79,19 @@
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   },
   "source_revision_review": {
-    "reviewed_at": "2026-10-19",
+    "reviewed_at": "2026-11-05",
     "repository": "docxology/ActiveACO",
-    "commit": "af126fd2752a0b6417c033defd44425567322d5e",
+    "commit": "dbf29a8f0106faf208ed55548277af0d43aa9bb1",
     "document": "PAPER_REVISION.md",
-    "summary": "The corrected source fixes graph symmetry, diagonal weights and tour accounting and supplies a new seeded paired-run protocol with raw execution evidence. The historical table-specific graph denominator remains unestablished; the new run does not reconstruct that table."
-  }
+    "summary": "The maintained research fork validates the exact retained graphs, methods, run membership and paired denominators, with a separate versioned seeded protocol. The scalar-belief cancellation and elitist comparator confound are explicit. Historical Table 1 graph/run membership remains unrecovered; the retained small comparison and new protocol do not reconstruct it."
+  },
+  "source_revision_history": [
+    {
+      "reviewed_at": "2026-10-19",
+      "repository": "docxology/ActiveACO",
+      "commit": "af126fd2752a0b6417c033defd44425567322d5e",
+      "document": "PAPER_REVISION.md",
+      "summary": "The corrected source fixes graph symmetry, diagonal weights and tour accounting and supplies a new seeded paired-run protocol with raw execution evidence. The historical table-specific graph denominator remains unestablished; the new run does not reconstruct that table."
+    }
+  ]
 }

@@ -18,26 +18,26 @@
     "full_text_papers": 208,
     "generated_exports": {
       "data_publications_ld_main_entity": 231,
-      "data_software_json": 209,
-      "data_software_ld_main_entity": 209,
+      "data_software_json": 210,
+      "data_software_ld_main_entity": 210,
       "data_works_json": 231
     },
     "github_inventory": {
-      "ActiveInferenceInstitute": 46,
-      "archived": 97,
-      "curated": 208,
-      "docxology": 273,
+      "ActiveInferenceInstitute": 47,
+      "archived": 96,
+      "curated": 209,
+      "docxology": 275,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 102,
-      "forks": 104,
-      "primary_ActiveInferenceInstitute": 44,
+      "fork_docxology": 104,
+      "forks": 106,
+      "primary_ActiveInferenceInstitute": 45,
       "primary_docxology": 171,
-      "primary_total": 215,
+      "primary_total": 216,
       "private": 0,
-      "public": 319,
-      "recently_updated": 317,
-      "total": 319,
-      "uncataloged": 111
+      "public": 322,
+      "recently_updated": 320,
+      "total": 322,
+      "uncataloged": 113
     },
     "paired_publication_decisions": {
       "decision": "mixed",
@@ -69,8 +69,8 @@
       "Zenodo exact-name creator records": 83
     },
     "software": {
-      "active_inference_institute": 42,
-      "curated_total": 209,
+      "active_inference_institute": 43,
+      "curated_total": 210,
       "docxology_owned": 167
     },
     "types": {
@@ -83,7 +83,7 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-11-05T03:08:02+00:00",
+  "generated_at": "2026-11-05T21:08:19+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

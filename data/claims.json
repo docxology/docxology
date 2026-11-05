@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T03:08:05Z",
+  "generated_at": "2026-11-05T21:08:26Z",
   "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence",
   "claims": [
     {
@@ -11,7 +11,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-11-05T03:08:02+00:00",
+      "checked_at": "2026-11-05T21:08:19+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -25,7 +25,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-11-05T03:08:02+00:00",
+      "checked_at": "2026-11-05T21:08:19+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -57,7 +57,7 @@
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",
-      "caveat": "The public-source snapshot records this account's type as Organization; the repository count is read from /users/ActiveInferenceInstitute, which serves Organization accounts as well as Users. Local software catalog tracks 42 AII repositories with docxology contributions."
+      "caveat": "The public-source snapshot records this account's type as Organization; the repository count is read from /users/ActiveInferenceInstitute, which serves Organization accounts as well as Users. Local software catalog tracks 43 AII repositories with docxology contributions."
     },
     {
       "id": "orcid-canonical-identifier",

@@ -171,5 +171,12 @@
       "document": "docs/publication-consistency-review.md",
       "summary": "The corrected manuscript derives saved-text and embedding counts from identified membership and reports missing, filtered and excluded works. Publication generation now rejects inconsistent coverage or implicit modality flags. The original historical run membership is unavailable; no replacement corpus count is asserted."
     }
-  ]
+  ],
+  "source_revision_review": {
+    "reviewed_at": "2026-11-05",
+    "repository": "docxology/blake",
+    "commit": "ce1622d623129a4f7bc2fc90a36206276d8c666f",
+    "document": "docs/run-membership.md",
+    "summary": "The current retained analytical epoch has an explicit membership audit with exact cross-artifact member, modality and byte bindings. Historical analytical, diagnostic and current exporter identities are reported separately. The older coverage/embedding discrepancy remains unrecovered; matching the retained run does not establish new inference, whole-oeuvre coverage or a revised deposited edition."
+  }
 }

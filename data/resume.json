@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T03:08:05Z",
+  "generated_at": "2026-11-05T21:08:27Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -35,9 +35,9 @@
   },
   "metrics": {
     "works": 231,
-    "software_catalogued": 209,
+    "software_catalogued": 210,
     "owned_software_catalogued": 167,
-    "aii_software_catalogued": 42,
+    "aii_software_catalogued": 43,
     "google_scholar": {
       "citations": 835,
       "h_index": 14,
@@ -71,24 +71,24 @@
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",
-      "caveat": "The public-source snapshot records this account's type as Organization; the repository count is read from /users/ActiveInferenceInstitute, which serves Organization accounts as well as Users. Local software catalog tracks 42 AII repositories with docxology contributions."
+      "caveat": "The public-source snapshot records this account's type as Organization; the repository count is read from /users/ActiveInferenceInstitute, which serves Organization accounts as well as Users. Local software catalog tracks 43 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-11-05T01:29:19Z",
+      "generated_at": "2026-11-05T20:28:25Z",
       "source": "GitHub REST API /users/{owner}/repos",
-      "total": 319,
-      "public": 319,
-      "primary_total": 215,
-      "forks": 104,
-      "docxology": 273,
-      "ActiveInferenceInstitute": 46
+      "total": 322,
+      "public": 322,
+      "primary_total": 216,
+      "forks": 106,
+      "docxology": 275,
+      "ActiveInferenceInstitute": 47
     }
   },
   "integrity": {
     "schema_version": 1,
     "source_manifest": {
       "bytes": 737,
-      "sha256": "dfc2a14ce26d3e97ed9d9bf4bfb015eb49bd021a5853b640e3128adf0f6619e3",
+      "sha256": "1e8701b099e23bb8b520163c322de36ca2abb5a4907f3cc6c71445c59e60d683",
       "files": [
         {
           "path": "resume/source.json",
@@ -102,8 +102,8 @@
         },
         {
           "path": "data/software.json",
-          "bytes": 104123,
-          "sha256": "430b6260746f9a035761cb538bc6ed6f2f2238d942bf8cdb4b131865f2c860a7"
+          "bytes": 104603,
+          "sha256": "a50bb5547302b63b81154db4f950357f72a03dc0fbd0f26db886d11c914b0a68"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 12971,
-          "sha256": "a07d7f25b0d46e405af1f160a13c2132b0227685b7ecc665a0c034b711268df6"
+          "sha256": "dae97a303f802a28b87fba2ab236350fc2667eee1562d7e785ad8b141e52f15b"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 366494,
-          "sha256": "aeb4824f7cc8a4d9019a1bd759e1433a0a3f688c75c1b1f45760e95f269b300b"
+          "bytes": 369313,
+          "sha256": "b3ecd0c58d43138cb760d0bbf51cf93270e96c375b31d156e10d438d6b38bb8f"
         }
       ]
     },
@@ -10598,6 +10598,18 @@
       "updated_or_year": "2026-11",
       "paper_path": "papers/2026_GNNBasedActive/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.23670187"
+    },
+    {
+      "name": ".github",
+      "url": "https://github.com/ActiveInferenceInstitute/.github",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Organization profile, contributor/support/security guidance and default issue/pull-request templates for Institute repositories.",
+      "language": "",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
     }
   ],
   "claims": [
@@ -10610,7 +10622,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-11-05T03:08:02+00:00",
+      "checked_at": "2026-11-05T21:08:19+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -10624,7 +10636,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-11-05T03:08:02+00:00",
+      "checked_at": "2026-11-05T21:08:19+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -10656,7 +10668,7 @@
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",
-      "caveat": "The public-source snapshot records this account's type as Organization; the repository count is read from /users/ActiveInferenceInstitute, which serves Organization accounts as well as Users. Local software catalog tracks 42 AII repositories with docxology contributions."
+      "caveat": "The public-source snapshot records this account's type as Organization; the repository count is read from /users/ActiveInferenceInstitute, which serves Organization accounts as well as Users. Local software catalog tracks 43 AII repositories with docxology contributions."
     },
     {
       "id": "orcid-canonical-identifier",

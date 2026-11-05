@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-11-05",
+  "scope": "Current originating implementation/reporting contracts and exact retained-evidence audits. Historical publications, PDF bytes, literal extractions and DOIs keep their own source provenance.",
+  "corrections": [
+    {
+      "folder": "2025_MarkdownDecisionProcess",
+      "repository": "docxology/markdown_decision_process",
+      "commit": "45d00ebf8278d75c60f75190dd999fd180314695",
+      "document": "paper/EVALUATION_EVIDENCE.md",
+      "summary": "The active manuscript removes unsupported calibration, comparison, optimality and participant-study claims. Direct assembly requires its evaluation-evidence appendix, and prospective evaluation has explicit acceptance criteria. Native conversion, model-state loading and CI contracts have regression tests. Historical model checkpoints, datasets and participant/statistical observations remain unrecovered.",
+      "validation": {
+        "tests_passed": 281,
+        "tests_skipped": 5,
+        "scope": "Full implementation suite with benchmark calibration disabled; separately verified real Pandoc metadata/PDF dependencies, strict type/static checks, malicious legacy-pickle refusal and hosted platform checks. These checks do not recover historical scientific data."
+      },
+      "publication_verified_at": "2026-11-05T19:30:22.903039+00:00",
+      "publication_receipt_sha256": "3bef9e8d3fa07ab35004c36a572bd8397762a7d7c9b6fa6ed5a9ea2a6d11ddf3",
+      "public_commit_url": "https://github.com/docxology/markdown_decision_process/commit/45d00ebf8278d75c60f75190dd999fd180314695",
+      "previous_source_commit": "7c21c57c34ac78998a94d6a1379803e380ff8505"
+    },
+    {
+      "folder": "2024_PopulationSearch",
+      "repository": "docxology/ActiveACO",
+      "commit": "dbf29a8f0106faf208ed55548277af0d43aa9bb1",
+      "document": "PAPER_REVISION.md",
+      "summary": "The maintained research fork validates the exact retained graphs, methods, run membership and paired denominators, with a separate versioned seeded protocol. The scalar-belief cancellation and elitist comparator confound are explicit. Historical Table 1 graph/run membership remains unrecovered; the retained small comparison and new protocol do not reconstruct it.",
+      "validation": {
+        "tests_passed": 72,
+        "scope": "Strict validator/regression suite, actual retained six-graph/eighteen-observation audit and two byte-identical tiny versioned CLI runs; four historical producer Git blobs verified. Original retained result/receipt bytes are preserved."
+      },
+      "publication_verified_at": "2026-11-05T20:25:45.100239+00:00",
+      "publication_receipt_sha256": "c98039d9b7dfb73c685103d93174163c5e92e3d8c167059c92b30b4cc1cbebb1",
+      "public_commit_url": "https://github.com/docxology/ActiveACO/commit/dbf29a8f0106faf208ed55548277af0d43aa9bb1",
+      "previous_source_commit": "af126fd2752a0b6417c033defd44425567322d5e"
+    },
+    {
+      "folder": "2026_MappingWilliamBlake",
+      "repository": "docxology/blake",
+      "commit": "ce1622d623129a4f7bc2fc90a36206276d8c666f",
+      "document": "docs/run-membership.md",
+      "summary": "The current retained analytical epoch has an explicit membership audit with exact cross-artifact member, modality and byte bindings. Historical analytical, diagnostic and current exporter identities are reported separately. The older coverage/embedding discrepancy remains unrecovered; matching the retained run does not establish new inference, whole-oeuvre coverage or a revised deposited edition.",
+      "validation": {
+        "related_tests_passed": 157,
+        "closure_tests_passed": 44,
+        "counts_are_cumulative": false,
+        "scope": "Related implementation tests and a separate closure selection, current retained-run audit, CLI/static/link/source-hash checks. No model inference, provider acquisition, full model-dependent suite or archival deposit is claimed.",
+        "retained_membership": {
+          "total_records": 727,
+          "eligible_text": 540,
+          "embedded": 530,
+          "filtered": 10,
+          "missing": 0,
+          "excluded_cache": 0
+        },
+        "membership_receipt_sha256": "2da95b4fe508b88ce73333980ed5840c70838e93c6551cb7cc2811343830ccf4"
+      },
+      "publication_verified_at": "2026-11-05T17:46:28.890421+00:00",
+      "publication_receipt_sha256": "aa529afbb49fe723dd9b26b084439e5ca0f6f551e90c0a3a26eb8ef22fa1de61",
+      "public_commit_url": "https://github.com/docxology/blake/commit/ce1622d623129a4f7bc2fc90a36206276d8c666f",
+      "previous_source_commit": "0e06527a4be239678c746d25e410d467cbad5c18"
+    }
+  ],
+  "evidence_boundary": "Successful implementation, retained-membership and native/hosted checks do not recover missing historical observations, establish broader empirical validity, approve scientific/editorial conclusions or constitute a new journal/arXiv/Zenodo deposit.",
+  "out_of_scope": [
+    "DopamineForaging scientific content and publication archive"
+  ]
+}

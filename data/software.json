@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-05T03:08:05Z",
+  "generated_at": "2026-11-05T21:08:26Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 209,
+  "count": 210,
   "repositories": [
     {
       "name": "template",
@@ -2511,6 +2511,18 @@
       "updated_or_year": "2026-11",
       "paper_path": "papers/2026_GNNBasedActive/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.23670187"
+    },
+    {
+      "name": ".github",
+      "url": "https://github.com/ActiveInferenceInstitute/.github",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Organization profile, contributor/support/security guidance and default issue/pull-request templates for Institute repositories.",
+      "language": "",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "",
+      "zenodo_url": ""
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T18:00:58Z",
+  "generated_at": "2026-11-05T20:47:00Z",
   "source": "papers/paper_metadata.json, papers/*/metadata.json, README.md and SKILL.md",
   "count": 231,
   "works": {
@@ -542,11 +542,11 @@
     "Friedman2025MarkdownDecisionProcessFramework015": {
       "citation_key": "Friedman2025MarkdownDecisionProcessFramework015",
       "source_revision_review": {
-        "reviewed_at": "2026-10-19",
+        "reviewed_at": "2026-11-05",
         "repository": "docxology/markdown_decision_process",
-        "commit": "7c21c57c34ac78998a94d6a1379803e380ff8505",
+        "commit": "45d00ebf8278d75c60f75190dd999fd180314695",
         "document": "paper/EVALUATION_EVIDENCE.md",
-        "summary": "The corrected active manuscript withdraws unsupported numerical, model-comparison and participant-study claims. Its evaluation is prospective. Historical checkpoints, datasets and study observations have not been recovered."
+        "summary": "The active manuscript removes unsupported calibration, comparison, optimality and participant-study claims. Direct assembly requires its evaluation-evidence appendix, and prospective evaluation has explicit acceptance criteria. Native conversion, model-state loading and CI contracts have regression tests. Historical model checkpoints, datasets and participant/statistical observations remain unrecovered."
       },
       "abstract": "The Markdown Decision Process (MDP) framework treats Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, and optimization through probabilistic modeling. Drawing from Markov Decision Process and POMDP theory, the framework operates at Marr's three levels: computational, algorithmic, and implementational. Key innovations include MarkChain for document generation, PolicyOptimizer for reinforcement learning optimization, and BeliefUpdater for probabilisti",
       "keywords": [
@@ -1294,11 +1294,11 @@
     "Friedman2024EnhancingPopulationBasedSearch034": {
       "citation_key": "Friedman2024EnhancingPopulationBasedSearch034",
       "source_revision_review": {
-        "reviewed_at": "2026-10-19",
+        "reviewed_at": "2026-11-05",
         "repository": "docxology/ActiveACO",
-        "commit": "af126fd2752a0b6417c033defd44425567322d5e",
+        "commit": "dbf29a8f0106faf208ed55548277af0d43aa9bb1",
         "document": "PAPER_REVISION.md",
-        "summary": "The corrected source fixes graph symmetry, diagonal weights and tour accounting and supplies a new seeded paired-run protocol with raw execution evidence. The historical table-specific graph denominator remains unestablished; the new run does not reconstruct that table."
+        "summary": "The maintained research fork validates the exact retained graphs, methods, run membership and paired denominators, with a separate versioned seeded protocol. The scalar-belief cancellation and elitist comparator confound are explicit. Historical Table 1 graph/run membership remains unrecovered; the retained small comparison and new protocol do not reconstruct it."
       },
       "abstract": "We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation. Demonstrated with Ant Colony Optimization (ACO) on the Travelling Salesman Problem (TSP), experimental results indicate Active Inference yields improved solutions with marginal increase in computational cost, with performance patterns relating to graph topology.",
       "keywords": [
@@ -6708,7 +6708,13 @@
     },
     "Friedman2026MappingWilliamBlakeS179": {
       "citation_key": "Friedman2026MappingWilliamBlakeS179",
-      "source_revision_review": null,
+      "source_revision_review": {
+        "reviewed_at": "2026-11-05",
+        "repository": "docxology/blake",
+        "commit": "ce1622d623129a4f7bc2fc90a36206276d8c666f",
+        "document": "docs/run-membership.md",
+        "summary": "The current retained analytical epoch has an explicit membership audit with exact cross-artifact member, modality and byte bindings. Historical analytical, diagnostic and current exporter identities are reported separately. The older coverage/embedding discrepancy remains unrecovered; matching the retained run does not establish new inference, whole-oeuvre coverage or a revised deposited edition."
+      },
       "abstract": "William Blake's works survive across editions, copy records, image archives, museum catalogues, transcriptions, and finding aids. Computational coverage is difficult to assess without explicit units, source authority, and evidence boundaries. We present *blake*, a 7-phase pipeline that connects a 104-entry work-level target ledger with retained source records, local analysis, provenance, recoverability checks, and generated publication artifacts.\n\nThe saved offline run analyzes 727 local source/copy records. Its 6109 image associations reference 5975 distinct files. It represents 69 ledger targets (66.3%) and fully satisfies the declared evidence profile for 45 targets (43.3%). The text-bearing subset has 540 records and 682407 tokenizer-defined words. These exploratory text results include retained transcriptions with unverified authorship; they are not a Blake-authored language census. The top-level analysis ledger records 727/727 records analyzed and 0 top-level errors. Nested sub-analysis limitations are counted separately.\n\nLocal recovery preserves 8481 inventoried files and 5975/6003 discovered image identifiers, leaving 28 unresolved. Checksums and a corruption-detection restore drill establish recoverability of the captured inventory, not completeness of Blake's oeuvre. Quantitative prose, tables, and figures derive from saved artifacts. Public releases contain project-authored software, manuscript sources, aggregate evidence, and checksums; provider texts, XML, images, private indexes, backups, and source-image mosaics remain local. The contribution is an auditable corpus-governance and preservation method with explicit scholarly and distribution limits.\n\nThe implementation separates corpus custody from application policy. Portable source snapshots and explicit schema conversion preserve source identities and roles, while distinct retrieval profiles expose normalized-token, literal-casefold and regex contracts. Shared counting, hierarchy and evidence-admission methods support application papers without embedding their vocabularies or interpretations. Current source-derived diagrams identify those interfaces separately from the historical analytical producer.\n\nThis deposit pairs the 94-page manuscript edition 0.5.0 with Blake software release 0.7.0. Generic half-open interval methods preserve occupied support, multiplicity and overlapping record pairs while applications retain source grouping and domain judgments. Entomology and Federalism are independent applications, linked as related research objects rather than runtime dependencies.",
       "keywords": [
         "William Blake",

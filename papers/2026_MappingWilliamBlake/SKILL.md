@@ -13,6 +13,15 @@ artifact_doi: "10.5281/zenodo.23921364"
 
 **Daniel Ari Friedman** (2026) · Computational
 
+## Corrected source review
+
+The current retained analytical epoch has an explicit membership audit with exact cross-artifact member, modality and byte bindings. Historical analytical, diagnostic and current exporter identities are reported separately. The older coverage/embedding discrepancy remains unrecovered; matching the retained run does not establish new inference, whole-oeuvre coverage or a revised deposited edition.
+
+This review is bound to the linked source commit. Current summaries, downloads and extracted text retain their own source provenance; these corrections do not recover missing historical evidence or constitute a newly deposited publication edition.
+
+[Read the pinned source correction](https://github.com/docxology/blake/blob/ce1622d623129a4f7bc2fc90a36206276d8c666f/docs/run-membership.md) (reviewed 2026-11-05).
+
+
 ## Context
 
 This work addresses topics in **Computational**: William Blake, digital humanities, corpus acquisition, source provenance.

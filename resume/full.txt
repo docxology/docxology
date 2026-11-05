@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-11-05T03:08:05Z
+Generated: 2026-11-05T21:08:27Z
 
-Current public metrics: 231 curated works; 209 catalogued software repositories (167 owned + 42 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 273 docxology + 46 AII public repositories (215 primary, 104 forks).
+Current public metrics: 231 curated works; 210 catalogued software repositories (167 owned + 43 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 275 docxology + 47 AII public repositories (216 primary, 106 forks).
 
 SUMMARY
 -------
@@ -398,7 +398,7 @@ WORKS AND PUBLICATIONS (231)
 [234] 2026 | Paper | States Change: Blakean Federalism and composition without capture | Zenodo | 10.5281/zenodo.23900616
 [235] 2026 | Paper | Observers are all you need | Zenodo (preprint) | 10.5281/zenodo.18288113
 
-SOFTWARE (209)
+SOFTWARE (210)
 --------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Earlier software v3.3.0 · Zenodo · · Software version 5.0.0 artifact | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/cognitive | Python | https://github.com/docxology/cognitive | Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization
@@ -609,6 +609,7 @@ ActiveInferenceInstitute/Active_Inference_Un0 | unspecified | https://github.com
 ActiveInferenceInstitute/Working_Groups | unspecified | https://github.com/ActiveInferenceInstitute/Working_Groups | Active Inference Institute Working Groups: draft Charter, Operating Procedures, and the position paper Coordinating the Field · Zenodo version v1.0.0 · Citation DOI | paper: papers/2026_CoordinatingField/ | zenodo: https://doi.org/10.5281/zenodo.23066903
 ActiveInferenceInstitute/active_inference_language_model | Python | https://github.com/ActiveInferenceInstitute/active_inference_language_model | AILM — fully explicit discrete language stack in pymdp, from letters through document position, with a gate-audit method binding reported numbers to recorded runs · Citation DOI | paper: papers/2026_ActiveInferenceLanguage/ | zenodo: https://doi.org/10.5281/zenodo.22409418
 ActiveInferenceInstitute/active_inference_battleship | TypeScript | https://github.com/ActiveInferenceInstitute/active_inference_battleship | GNN-based active inference for Battleship — playable dashboard, interpretable decisions, reproducible manuscript, and animated lecture · Citation DOI | paper: papers/2026_GNNBasedActive/ | zenodo: https://doi.org/10.5281/zenodo.23670187
+ActiveInferenceInstitute/.github | unspecified | https://github.com/ActiveInferenceInstitute/.github | Organization profile, contributor/support/security guidance and default issue/pull-request templates for Institute repositories.
 
 CONFERENCES, POSTERS, SEMINARS, WORKSHOPS
 -----------------------------------------
