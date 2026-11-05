@@ -22,6 +22,9 @@ Two independent findings, not one:
   supplement: it is listed under ``software_catalogued`` and later releases
   under the same concept need no new entry. Any other record, including a
   software-typed one from a row without a catalogued paper, stays uncatalogued.
+  An exact accepted ``software-catalog`` review may instead classify one
+  version as a supplemental source archive. Its upstream type is retained;
+  frozen report bytes, the complete record and current catalog links must match.
 - ``non_canonical_doi``: the record IS represented, but only under its
   version-specific DOI, not the documented canonical concept DOI
   ("Canonical DOI = Zenodo concept DOI", docs/operations/publication-sync.md).
@@ -38,9 +41,11 @@ playbooks/video transcripts that were never given a paper folder).
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
+import re
 import sys
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
@@ -54,11 +59,25 @@ from docxology_tools.report_paths import (  # noqa: E402
     report_date_string,
 )
 
-from docxology_tools.publication_pairing import ZenodoRecord, is_software_record  # noqa: E402
-from docxology_tools.software_table import software_catalog_dois  # noqa: E402
+from docxology_tools.publication_pairing import (  # noqa: E402
+    ZenodoRecord,
+    canonical_pair_candidate_fingerprint,
+    decision_pair_candidate_fingerprint,
+    is_software_record,
+    release_identity_from_url,
+    reviewed_pair_decision_index,
+)
+from docxology_tools.software_table import (  # noqa: E402
+    iter_software_rows,
+    paper_path,
+    software_catalog_dois,
+    zenodo_link_dois,
+)
+from docxology_tools.public_integrity import redact_local_paths  # noqa: E402
 from sync_paired_publications import (  # noqa: E402
     fetch_zenodo_records,
     parse_bibliography_rows,
+    zenodo_record_from_payload,
     zenodo_records_from_payload,
 )
 
@@ -143,6 +162,8 @@ def uncatalogued_records(
     records: list[ZenodoRecord],
     catalogued_dois: set[str],
     software_dois: dict[str, dict[str, str]] | None = None,
+    *,
+    reviewed_archive_ids: set[str] | None = None,
 ) -> list[ZenodoRecord]:
     """Records cited nowhere: not in the bibliography and not a software-catalogued archive."""
     software_ids = {
@@ -157,7 +178,164 @@ def uncatalogued_records(
         if record.record_id not in KNOWN_STALE_RECORD_IDS
         and not _in_bibliography(record, catalogued_dois)
         and record.record_id not in software_ids
+        and record.record_id not in (reviewed_archive_ids or set())
     ]
+
+
+def _review_json(repo_root: Path, relative: str, limit: int) -> tuple[str, dict]:
+    """Read bounded, independent local evidence without following links."""
+    rel = PurePosixPath(relative)
+    if rel.is_absolute() or not rel.parts or ".." in rel.parts or "\\" in relative:
+        raise ValueError("invalid review evidence path")
+    root = repo_root.resolve()
+    if any((root / Path(*rel.parts[:i])).is_symlink() for i in range(1, len(rel.parts) + 1)):
+        raise ValueError("symlinked review evidence is unavailable")
+    path = root / relative
+    if not path.is_file() or path.stat().st_nlink != 1:
+        raise ValueError("review evidence must be an independent regular file")
+    with path.open("rb") as stream:
+        raw = stream.read(limit + 1)
+    if len(raw) > limit:
+        raise ValueError("review evidence exceeds its bounded reader")
+    payload = json.loads(raw)
+    if not isinstance(payload, dict):
+        raise ValueError("review evidence must be a JSON object")
+    return hashlib.sha256(raw).hexdigest(), payload
+
+
+def reviewed_source_archives(
+    repo_root: Path,
+    records: list[ZenodoRecord],
+    software_dois: dict[str, dict[str, str]],
+    *,
+    catalogued_dois: set[str] | None = None,
+) -> tuple[list[dict], list[dict]]:
+    """Resolve only exact accepted source-archive reviews, preserving API types.
+
+    A concept link, title, ZIP extension or historical pairing is insufficient.
+    Each grant binds a version record, full frozen record, candidate identity,
+    source-report bytes and the current software/bibliography relationship.
+    Historical decisions outside this observation, and records already covered
+    by ordinary catalog rules, do not require an exception or create drift.
+    """
+    catalogued = bibliography_doi_set(repo_root) if catalogued_dois is None else catalogued_dois
+    active = uncatalogued_records(records, catalogued, software_dois)
+    if not active:
+        return [], []
+    ledger_path = repo_root / "data/paired-publication-decisions.json"
+    if not ledger_path.exists() and not ledger_path.is_symlink():
+        return [], []
+    try:
+        _, ledger = _review_json(repo_root, "data/paired-publication-decisions.json", 4 * 1024 * 1024)
+        decisions = reviewed_pair_decision_index(ledger)
+        by_id = {record.record_id: record for record in active}
+        if len(by_id) != len(active):
+            raise ValueError("duplicate observed Zenodo record identities")
+        rows = list(iter_software_rows(repo_root / "pages/SOFTWARE.md"))
+    except (OSError, ValueError, TypeError, KeyError) as exc:
+        return [], [{"record_id": "decision-ledger", "reason": redact_local_paths(str(exc))}]
+
+    approved: dict[str, dict] = {}
+    blocked: set[str] = set()
+    drift: list[dict] = []
+    sources: dict[str, tuple[str, dict]] = {}
+    for group in ledger["groups"]:
+        if not isinstance(group, dict) or group.get("representation") != "software-catalog":
+            continue
+        candidates = group.get("raw_candidates")
+        if not isinstance(candidates, list):
+            continue
+        for raw in candidates:
+            if not isinstance(raw, dict) or not raw.get("zenodo_version_record_id"):
+                continue
+            record_id = raw["zenodo_version_record_id"]
+            if not isinstance(record_id, str) or record_id not in by_id:
+                # A durable decision is not an assertion that its historical
+                # record must appear in every later observation or query.
+                continue
+            fingerprint = decision_pair_candidate_fingerprint(raw, group)
+            decision = decisions.get(fingerprint)
+            if (
+                decision is None
+                or decision["group_id"] != group.get("id")
+                or decision["decision"] not in {"accept", "accepted"}
+            ):
+                continue
+            try:
+                if not isinstance(record_id, str) or not re.fullmatch(r"[1-9][0-9]*", record_id):
+                    raise ValueError("review must name an exact numeric version record")
+                record = by_id[record_id]
+                catalog = software_dois.get(record.doi.casefold())
+                if not catalog or group.get("folder") != catalog["paper_folder"]:
+                    raise ValueError("review no longer matches a catalogued paper/software link")
+                repository, tag = release_identity_from_url(fingerprint[1])
+                if repository.casefold() != fingerprint[3] or tag != fingerprint[5]:
+                    raise ValueError("reviewed repository/tag differs from its release URL")
+                if not any(
+                    f"{row.owner}/{row.name}".casefold() == fingerprint[3]
+                    and row.url.rstrip("/").casefold() == f"https://github.com/{fingerprint[3]}"
+                    and row.name == catalog["software_row"]
+                    and Path(paper_path(row.description_raw)).name == catalog["paper_folder"]
+                    and record.doi.casefold() in {doi.casefold() for doi in zenodo_link_dois(row.description_raw)}
+                    for row in rows
+                ):
+                    raise ValueError("reviewed repository does not own the current catalog row")
+                source = raw.get("source_report")
+                digest = raw.get("source_report_sha256")
+                if (
+                    not isinstance(source, str)
+                    or not re.fullmatch(r"reports/(?:publication_intake|paired_publications)_\d{4}-\d{2}-\d{2}\.json", source)
+                    or not isinstance(digest, str)
+                    or not re.fullmatch(r"[0-9a-f]{64}", digest)
+                ):
+                    raise ValueError("review requires an exact local source report and SHA-256")
+                if source not in sources:
+                    sources[source] = _review_json(repo_root, source, 32 * 1024 * 1024)
+                source_digest, payload = sources[source]
+                if source_digest != digest:
+                    raise ValueError("frozen source report SHA-256 changed")
+                if payload.get("source") != "GitHub Releases API + Zenodo Records API" or payload.get("warnings") != []:
+                    raise ValueError("frozen source report has unavailable scan evidence")
+                frozen = zenodo_records_from_payload(payload)
+                frozen_by_id = {item.record_id: item for item in frozen}
+                if len(frozen_by_id) != len(frozen):
+                    raise ValueError("frozen source report repeats a version record identity")
+                if record_id not in frozen_by_id or record.to_dict() != frozen_by_id[record_id].to_dict():
+                    raise ValueError("observed record or complete file manifest differs from the reviewed source")
+                pairs = payload.get("pairs")
+                matched = False
+                for pair in (pairs if isinstance(pairs, list) else []):
+                    if not isinstance(pair, dict):
+                        continue
+                    item, release = pair.get("record"), pair.get("release")
+                    if not isinstance(item, dict) or not isinstance(release, dict):
+                        continue
+                    candidate = canonical_pair_candidate_fingerprint(
+                        doi=pair.get("doi"), github_release_url=pair.get("github_release_url"),
+                        zenodo_record_url=pair.get("zenodo_record_url"), github_repo=pair.get("github_repo"),
+                        title=item.get("title"), release_tag=release.get("tag"),
+                    )
+                    if candidate == fingerprint and item == record.to_dict():
+                        matched = True
+                if not matched:
+                    raise ValueError("exact reviewed pairing candidate is absent from the frozen report")
+                if record_id in approved or record_id in blocked:
+                    raise ValueError("multiple accepted archive reviews name the same version record")
+                approved[record_id] = {
+                    "record_id": record_id, "concept_doi": record.doi, "title": record.title,
+                    "resource_type": record.resource_type, **catalog,
+                    "decision_group": decision["group_id"],
+                    "decision_sha256": hashlib.sha256(
+                        json.dumps(group, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
+                    ).hexdigest(),
+                    "source_report": source, "source_report_sha256": digest,
+                    "record": record.to_dict(),
+                }
+            except (OSError, ValueError, TypeError, KeyError) as exc:
+                blocked.add(str(record_id))
+                approved.pop(str(record_id), None)
+                drift.append({"record_id": str(record_id), "decision_group": decision["group_id"], "reason": redact_local_paths(str(exc))})
+    return [approved[key] for key in sorted(approved)], drift
 
 
 def non_canonical_doi_records(
@@ -264,7 +442,14 @@ def build_report(
     software_catalogued = software_catalogued_records(
         records, catalogued, software_dois
     )
-    missing = uncatalogued_records(records, catalogued, software_dois)
+    archive_observations = uncatalogued_records(records, catalogued, software_dois)
+    reviewed_archives, archive_drift = reviewed_source_archives(
+        repo_root, archive_observations, software_dois, catalogued_dois=catalogued
+    )
+    missing = uncatalogued_records(
+        records, catalogued, software_dois,
+        reviewed_archive_ids={item["record_id"] for item in reviewed_archives},
+    )
     version_only = non_canonical_doi_records(records, catalogued)
     approved_exceptions, exception_drift = approved_version_specific_doi_exceptions(
         records, catalogued
@@ -283,6 +468,14 @@ def build_report(
         "bibliography_dois": len(catalogued),
         "uncatalogued_count": len(missing),
         "software_catalogued_count": len(software_catalogued),
+        "reviewed_source_archive_count": len(reviewed_archives),
+        "reviewed_source_archive_context": {
+            "schema_version": 1,
+            "records": [record.to_dict() for record in archive_observations],
+        },
+        "reviewed_source_archives": reviewed_archives,
+        "reviewed_source_archive_drift_count": len(archive_drift),
+        "reviewed_source_archive_drift": archive_drift,
         "non_canonical_doi_count": len(non_canonical),
         "approved_version_specific_doi_exception_count": len(approved_exceptions),
         "version_specific_doi_exception_drift_count": len(exception_drift),
@@ -339,8 +532,10 @@ def write_report(
     return out
 
 
-def check_report(report_path: Path | None = None) -> list[str]:
-    """Return a list of human-readable problems for the latest report, empty if clean."""
+def check_report(
+    report_path: Path | None = None, *, repo_root: Path = REPO_ROOT
+) -> list[str]:
+    """Check reports; new manual grants re-resolve their saved observation context."""
     path = report_path or latest_report("zenodo_uncatalogued_*.json", required=False)
     if path is None:
         return [
@@ -373,6 +568,66 @@ def check_report(report_path: Path | None = None) -> list[str]:
         problems.append(
             f"{exception_drift_count} approved version-DOI exception(s) drifted: {record_ids}"
         )
+    archive_fields = {
+        "reviewed_source_archive_count", "reviewed_source_archives",
+        "reviewed_source_archive_context", "reviewed_source_archive_drift_count",
+        "reviewed_source_archive_drift",
+    }
+    if not archive_fields.intersection(payload):
+        return problems  # Historical reports retain the original contract.
+    if not archive_fields.issubset(payload):
+        problems.append("Reviewed source archive report is missing required context/receipt fields")
+        return problems
+    archive_drift = payload["reviewed_source_archive_drift_count"]
+    saved_drift = payload["reviewed_source_archive_drift"]
+    if (
+        isinstance(archive_drift, bool)
+        or not isinstance(archive_drift, int)
+        or archive_drift < 0
+        or not isinstance(saved_drift, list)
+        or archive_drift != len(saved_drift)
+    ):
+        problems.append("Reviewed source archive drift count/list is malformed")
+    if archive_drift:
+        problems.append(f"{archive_drift} reviewed source archive approval(s) drifted")
+    archived = payload["reviewed_source_archives"]
+    archive_count = payload["reviewed_source_archive_count"]
+    context = payload["reviewed_source_archive_context"]
+    if (
+        not isinstance(archived, list)
+        or isinstance(archive_count, bool)
+        or not isinstance(archive_count, int)
+        or archive_count != len(archived)
+    ):
+        problems.append("Reviewed source archive count/list is malformed")
+    elif (
+        not isinstance(context, dict)
+        or isinstance(context.get("schema_version"), bool)
+        or context.get("schema_version") != 1
+        or not isinstance(context.get("records"), list)
+    ):
+        problems.append("Reviewed source archive observation context is malformed")
+    else:
+        try:
+            records = []
+            for item in context["records"]:
+                if not isinstance(item, dict):
+                    raise ValueError("malformed saved archive observation")
+                records.append(zenodo_record_from_payload(item))
+            catalogued = bibliography_doi_set(repo_root)
+            software_dois = software_catalog_dois(repo_root)
+            current, drift = reviewed_source_archives(
+                repo_root, records, software_dois, catalogued_dois=catalogued
+            )
+            if drift or current != archived:
+                problems.append("Reviewed source archive evidence no longer matches its approval/source/catalog")
+            if uncatalogued_records(
+                records, catalogued, software_dois,
+                reviewed_archive_ids={item["record_id"] for item in current},
+            ):
+                problems.append("Reviewed source archive observation context contains unrepresented records")
+        except (OSError, ValueError, TypeError, KeyError) as exc:
+            problems.append(f"Reviewed source archive evidence is unavailable: {redact_local_paths(str(exc))}")
     return problems
 
 
@@ -474,6 +729,11 @@ def main() -> int:
         print(
             "Add real publications with: uv run python3 code/orchestrators/add_zenodo_only.py <record_id>"
         )
+    elif report["reviewed_source_archive_drift_count"]:
+        print(
+            f"wrote {out.relative_to(REPO_ROOT)}: 0 uncatalogued records; "
+            "reviewed source archive evidence requires attention"
+        )
     else:
         print(
             f"wrote {out.relative_to(REPO_ROOT)}: 0 uncatalogued records (bibliography is caught up)"
@@ -482,6 +742,13 @@ def main() -> int:
         print(
             f"  software-catalogued: {item['record_id']}  {item['concept_doi']}  via the {item['software_row']} row (supplements {item['paper_folder']})  {item['title']}"
         )
+    for item in report["reviewed_source_archives"]:
+        print(
+            f"  manually reviewed supplemental source archive: {item['record_id']}  "
+            f"{item['concept_doi']} via {item['software_row']} (decision {item['decision_group']})"
+        )
+    for item in report["reviewed_source_archive_drift"]:
+        print(f"  reviewed source archive drift: {item['record_id']}  {item['reason']}")
     if non_canonical_count:
         print(
             f"{non_canonical_count} record(s) cited only by version DOI, not the canonical concept DOI:"

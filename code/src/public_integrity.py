@@ -5,8 +5,13 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
+# This exported regex identifies candidates; public prose checks use the
+# URL-aware helpers below so complete HTTP(S) URLs remain unchanged.
 LOCAL_PATH_RE = re.compile(
-    r"""(?<![\w:/])(?:/(?:Users|home|Volumes)/|[A-Za-z]:[\\/]+Users[\\/]+|~/)[^\s`"'<>()[\]{}]+"""
+    r"""(?<![\w/])(?:/+(?:Users|home|Volumes)/|[A-Za-z]:[\\/]+Users[\\/]+|~/)[^\s`"'<>()[\]{}]+"""
+)
+_HTTP_URL_RE = re.compile(
+    r"""(https?://[^\s`"'<>\\]+)""", re.IGNORECASE
 )
 SECRET_PATTERNS = (
     re.compile(r"-----BEGIN (?:RSA |OPENSSH |EC |DSA )?PRIVATE KEY-----"),
@@ -37,9 +42,43 @@ CV_PUBLIC_FILES = (
 )
 
 
+def _http_url_end(text: str, start: int, end: int) -> int:
+    """Find a surrounding prose delimiter without trimming balanced URL text."""
+    previous = start - 1
+    while previous >= 0 and text[previous].isspace():
+        previous -= 1
+    opening = text[previous] if previous >= 0 else ""
+    closing = {"(": ")", "[": "]"}.get(opening)
+    if closing is None:
+        return end
+    depth = 0
+    for index in range(start, end):
+        character = text[index]
+        if character == opening:
+            depth += 1
+        elif character == closing:
+            if depth == 0:
+                return index
+            depth -= 1
+    return end
+
+
 def redact_local_paths(text: str) -> str:
-    """Remove local filesystem paths from public prose while preserving URLs."""
-    return LOCAL_PATH_RE.sub("[local path redacted]", text)
+    """Remove local filesystem paths while preserving public HTTP(S) URLs."""
+    parts: list[str] = []
+    cursor = 0
+    while match := _HTTP_URL_RE.search(text, cursor):
+        end = _http_url_end(text, match.start(), match.end())
+        parts.append(LOCAL_PATH_RE.sub("[local path redacted]", text[cursor:match.start()]))
+        parts.append(text[match.start():end])
+        cursor = end
+    parts.append(LOCAL_PATH_RE.sub("[local path redacted]", text[cursor:]))
+    return "".join(parts)
+
+
+def contains_local_paths(text: str) -> bool:
+    """Detect local paths using the same URL boundary as public redaction."""
+    return redact_local_paths(text) != text
 
 
 def scan_public_files(
@@ -53,7 +92,7 @@ def scan_public_files(
             errors.append(f"missing public integrity input: {relative}")
             continue
         text = path.read_text(encoding="utf-8", errors="replace")
-        if LOCAL_PATH_RE.search(text):
+        if contains_local_paths(text):
             errors.append(f"{relative}: local filesystem path detected")
         for pattern in SECRET_PATTERNS:
             if pattern.search(text):

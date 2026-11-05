@@ -60,7 +60,7 @@ from docxology_tools.software_table import software_catalog_dois  # noqa: E402
 from docxology_tools.zenodo_pagination import fetch_zenodo_search  # noqa: E402
 from docxology_tools.biblio_table import bibliography_rows_from_lines  # noqa: E402
 from docxology_tools.generated_outputs import read_generated_output_text  # noqa: E402
-from docxology_tools.public_integrity import LOCAL_PATH_RE, redact_local_paths  # noqa: E402
+from docxology_tools.public_integrity import contains_local_paths, redact_local_paths  # noqa: E402
 from docxology_tools.work_identifiers import (  # noqa: E402
     next_catalog_num,
     write_catalog_with_identifiers,
@@ -213,8 +213,7 @@ def fetch_zenodo_records() -> tuple[list[ZenodoRecord], list[str]]:
     return records, warnings
 
 
-def github_release_from_payload(payload: dict[str, Any]) -> GitHubRelease:
-    """Rebuild a GitHubRelease from a report payload's serialized release."""
+def _release_body_redaction(payload: dict[str, Any]) -> dict[str, str] | None:
     redaction = payload.get("body_redaction")
     if redaction is not None and (
         not isinstance(redaction, dict)
@@ -223,6 +222,12 @@ def github_release_from_payload(payload: dict[str, Any]) -> GitHubRelease:
         or set(redaction) != {"policy", "source_sha256"}
     ):
         raise ValueError("Invalid cached release body redaction provenance")
+    return redaction
+
+
+def github_release_from_payload(payload: dict[str, Any]) -> GitHubRelease:
+    """Rebuild a GitHubRelease from a report payload's serialized release."""
+    redaction = _release_body_redaction(payload)
     try:
         return GitHubRelease(
             owner=str(payload["owner"]),
@@ -1253,14 +1258,18 @@ def redact_report_release_bodies(payload: dict[str, Any]) -> dict[str, Any]:
     """Project upstream prose safely without changing observation/apply receipts."""
     projected = deepcopy(payload)
     for _, release in _report_release_objects(projected):
+        _release_body_redaction(release)
         body = release.get("body", "")
         redacted = redact_local_paths(body)
         if body != redacted:
             release["body"] = redacted
-            release["body_redaction"] = {
-                "policy": "local-filesystem-paths-v1",
-                "source_sha256": hashlib.sha256(body.encode("utf-8")).hexdigest(),
-            }
+            # Cached prose can expose another path under a broader detector.
+            # Its existing hash still binds the original upstream body.
+            if release.get("body_redaction") is None:
+                release["body_redaction"] = {
+                    "policy": "local-filesystem-paths-v1",
+                    "source_sha256": hashlib.sha256(body.encode("utf-8")).hexdigest(),
+                }
     return projected
 
 
@@ -1407,7 +1416,7 @@ def check_report(repo_root: Path = REPO_ROOT) -> None:
     if "actions" not in payload or "pairs" not in payload or "counts" not in payload:
         raise SystemExit("Paired publication report missing required keys")
     for pointer, release in _report_release_objects(payload):
-        if LOCAL_PATH_RE.search(release.get("body", "")):
+        if contains_local_paths(release.get("body", "")):
             raise SystemExit(
                 f"Paired publication report local filesystem path at {pointer}"
             )

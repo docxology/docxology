@@ -29,6 +29,23 @@ The safest default is: **scan live sources, inspect the report, apply only stron
 - **Canonical citation DOI = the DOI in `pages/BIBLIOGRAPHY.md`.** This is normally Zenodo's *concept* DOI (which resolves to the latest version), but a deliberately distinct work may use a version DOI to remain unique. Mirror that selected citation DOI in `metadata.json` as `doi`; retain a version/download record separately as optional `artifact_doi` and `artifact_doi_url`. Never replace the bibliography citation DOI merely because an artifact record has a different DOI.
 - Run `check_zenodo_uncatalogued.py` after a Zenodo refresh. Its dated report records any approved version-DOI exception with the exact record id, title, concept DOI, and bibliography DOI; a missing or changed approved exception, or any new version-only DOI citation, fails `--check` for explicit review.
 - A Zenodo **software** record that supplements an already catalogued work (typically the GitHub-release archive of that work's repository) is catalogued by linking its concept DOI from the repository's `pages/SOFTWARE.md` row, provided the row's `[📄]` paper folder is cited by a bibliography row. The check lists such records under `software_catalogued` with that folder, and later releases under the same concept need no further entry. Zenodo also types many paper repositories' own archives as software, so any other record, including a software-typed one from a row without a catalogued paper, is still reported as uncatalogued.
+- A differently typed record may be a **manually reviewed supplemental source
+  archive** of an existing paper. Preserve its observed upstream type. An
+  independent manual review must record an attributed `accept` decision with
+  `representation: software-catalog` in
+  [`data/paired-publication-decisions.json`](../../data/paired-publication-decisions.json).
+  The exception binds the exact version record, complete record/file manifest,
+  frozen source-report SHA-256 and GitHub release candidate, together with the
+  current repository URL, concept DOI and bibliography-linked paper folder.
+  The check lists it separately under `reviewed_source_archives`; a ZIP file,
+  title match or software link alone grants no exception or new bibliography row.
+- A reviewed archive exception applies only to its exact version record;
+  another version needs its own review. Historical decisions absent from the
+  current observation, and records already covered by ordinary bibliography or
+  software rules, do not create missing-record drift. New reports retain their
+  unrepresented observations separately from approval receipts. `--check`
+  re-resolves that context against current decisions, frozen evidence and
+  catalog links, refusing missing context, erased receipts or changed bindings.
 - Public APIs are freshness checks. Curated local rows remain the source of truth after review and application.
 - Public pairing reports redact local filesystem paths from captured release
   bodies. A `body_redaction` record retains the policy and SHA-256 of the

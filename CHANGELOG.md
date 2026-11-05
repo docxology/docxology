@@ -21,6 +21,9 @@
   reader; incomplete pages, changing totals, duplicate records and malformed
   successful inventory caches now fail explicitly. Updated the intake,
   classification, provenance and hosting runbooks and the Blake pathway.
+- Bound manually reviewed supplemental archives to exact records, source
+  manifests and current catalog links; strengthened shared path redaction while
+  preserving public URLs and original release-note provenance.
 
 ## 2026-11-03 — Labelled footer build stamps
 

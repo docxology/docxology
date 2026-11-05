@@ -987,6 +987,7 @@ def test_report_payload_roundtrips_releases_records_and_cache(tmp_path: Path):
     assert cache.inputs == classification_inputs(tmp_path)
 
 
+@pytest.mark.parametrize("prefix", ["", "source:", "file:"])
 @pytest.mark.parametrize(
     "local_path",
     [
@@ -997,11 +998,11 @@ def test_report_payload_roundtrips_releases_records_and_cache(tmp_path: Path):
     ],
 )
 def test_public_report_redacts_release_paths_and_rejects_reintroduced_paths(
-    tmp_path, local_path
+    tmp_path, local_path, prefix
 ):
     _write_minimal_repo(tmp_path)
     pair = _pair()
-    body = f"Built at `{local_path}`. Source: https://example.org/Users/example/release"
+    body = f"Built at `{prefix}{local_path}`. Source: https://example.org/docs:/Users/example/release"
     pair = replace(pair, release=replace(pair.release, body=body))
     report = tmp_path / "reports/paired_publications_2026-06-07.json"
     write_report(
@@ -1024,7 +1025,7 @@ def test_public_report_redacts_release_paths_and_rejects_reintroduced_paths(
     rebuilt = github_releases_from_payload(payload)[0]
     assert rebuilt.to_dict() == payload["github_releases"][0]
     check_report(repo_root=tmp_path)
-    payload["pairs"][0]["release"]["body"] += " " + local_path
+    payload["pairs"][0]["release"]["body"] += " " + prefix + local_path
     report.write_text(json.dumps(payload), encoding="utf-8")
     with pytest.raises(SystemExit, match="local filesystem path"):
         check_report(repo_root=tmp_path)
@@ -1035,7 +1036,7 @@ def test_redaction_cli_preserves_observation_and_apply_receipts_and_is_idempoten
 ):
     payload = _minimal_report_payload()
     payload["generated_at"] = "2026-01-01T00:00:00Z"
-    payload["github_releases"] = [{"body": "Built at `/Volumes/Work/private/release`."}]
+    payload["github_releases"] = [{"body": "Built at `source:/Volumes/Example/private/release`."}]
     payload["applied"] = [
         {"doi": "10.5281/zenodo.1234567", "provenance": {"action_sha256": "a" * 64}}
     ]
@@ -1062,6 +1063,83 @@ def test_redaction_cli_preserves_observation_and_apply_receipts_and_is_idempoten
     assert result.returncode == 2
     assert "cannot combine" in result.stderr
     assert report.read_bytes() == first
+
+
+def test_cached_body_cleanup_preserves_original_provenance_and_is_idempotent(tmp_path):
+    _write_minimal_repo(tmp_path)
+    original_body = (
+        "First `/Users/example/private.txt`; "
+        "second `source:/Volumes/Example/private.txt`. "
+        "Public: https://example.org/docs:/Users/example/public.txt"
+    )
+    cached_body = original_body.replace(
+        "/Users/example/private.txt", "[local path redacted]"
+    )
+    provenance = {
+        "policy": "local-filesystem-paths-v1",
+        "source_sha256": hashlib.sha256(original_body.encode()).hexdigest(),
+    }
+    pair = _pair()
+    pair = replace(
+        pair,
+        release=replace(
+            pair.release, body=cached_body, body_redaction=dict(provenance)
+        ),
+    )
+    report = tmp_path / "reports/paired_publications_2026-06-07.json"
+    write_report(
+        report, owners=["docxology"], releases=[pair.release],
+        records=[pair.record], pairs=[pair], actions=[], warnings=[],
+    )
+    payload = json.loads(report.read_text())
+    expected_body = cached_body.replace(
+        "/Volumes/Example/private.txt", "[local path redacted]"
+    )
+    for release in (payload["github_releases"][0], payload["pairs"][0]["release"]):
+        assert release["body"] == expected_body
+        assert release["body_redaction"] == provenance
+    assert pair.release.body == cached_body
+    assert pair.release.body_redaction == provenance
+    rebuilt = github_releases_from_payload(payload)[0]
+    assert rebuilt.to_dict() == payload["github_releases"][0]
+    assert sync_paired_publications.redact_report_release_bodies(payload) == payload
+    first = report.read_bytes()
+    assert not sync_paired_publications.redact_report_local_paths(report)
+    assert report.read_bytes() == first
+    check_report(repo_root=tmp_path)
+
+
+@pytest.mark.parametrize("provenance", [
+    {"policy": "unknown", "source_sha256": "a" * 64},
+    {"policy": "local-filesystem-paths-v1", "source_sha256": "invalid"},
+    {"policy": "local-filesystem-paths-v1", "source_sha256": "a" * 64, "extra": True},
+])
+def test_cached_replay_rejects_invalid_existing_redaction_provenance(provenance):
+    release = _pair().release.to_dict()
+    release["body_redaction"] = provenance
+    with pytest.raises(ValueError, match="Invalid cached release body redaction provenance"):
+        github_releases_from_payload({"github_releases": [release]})
+
+
+@pytest.mark.parametrize("provenance", [
+    {"policy": "unknown", "source_sha256": "a" * 64},
+    {"policy": "local-filesystem-paths-v1", "source_sha256": "invalid"},
+    {"policy": "local-filesystem-paths-v1", "source_sha256": "a" * 64, "extra": True},
+])
+def test_direct_cleanup_rejects_invalid_redaction_provenance_without_rewriting(
+    tmp_path, provenance
+):
+    payload = _minimal_report_payload()
+    payload["github_releases"] = [{
+        "body": "source:/Users/example/private.txt",
+        "body_redaction": provenance,
+    }]
+    report = tmp_path / "paired.json"
+    report.write_text(json.dumps(payload), encoding="utf-8")
+    original = report.read_bytes()
+    with pytest.raises(ValueError, match="Invalid cached release body redaction provenance"):
+        sync_paired_publications.redact_report_local_paths(report)
+    assert report.read_bytes() == original
 
 
 def test_load_cached_scan_payload_matches_fresh_classification(tmp_path: Path):
