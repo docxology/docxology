@@ -10,7 +10,26 @@
 
 ## Abstract
 
-> We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference. Protentions are future-directed expectations that shape perception and action; here we formalize how agents can develop shared protentions through coupled generative models, enabling coordinated anticipatory behavior in multi-agent systems.
+> In this paper, we unite concepts from Husserlian phenomenology, the active inference
+> framework in theoretical biology, and category theory in mathematics to develop a comprehensive
+> framework for understanding social action premised on shared goals. We begin with an overview
+> of Husserlian phenomenology, focusing on aspects of inner time-consciousness, namely, retention,
+> primal impression, and protention. We then review active inference as a formal approach to modeling
+> agent behavior based on variational (approximate Bayesian) inference. Expanding upon Husserl’s
+> model of time consciousness, we consider collective goal-directed behavior, emphasizing shared
+> protentions among agents and their connection to the shared generative models of active inference.
+> This integrated framework aims to formalize shared goals in terms of shared protentions, and thereby
+> shed light on the emergence of group intentionality. Building on this foundation, we incorporate
+> mathematical tools from category theory, in particular, sheaf and topos theory, to furnish a mathe-
+> matical image of individual and group interactions within a stochastic environment. Specifically, we
+> employ morphisms between polynomial representations of individual agent models, allowing pre-
+> dictions not only of their own behaviors but also those of other agents and environmental responses.
+> Sheaf and topos theory facilitates the construction of coherent agent worldviews and provides a way
+> of representing consensus or shared understanding. We explore the emergence of shared protentions,
+> bridging the phenomenology of temporal structure, multi-agent active inference systems, and cate-
+> gory theory. Shared protentions are highlighted as pivotal for coordination and achieving common
+> objectives. We conclude by acknowledging the intricacies stemming from stochastic systems and
+> uncertainties in realizing shared goals.
 
 ## Keywords
 

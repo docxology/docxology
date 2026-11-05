@@ -1,7 +1,7 @@
 # Scholar prerequisite audit
 
 Offline measurements only. Citation metadata, PDF placement, and size do not establish Scholar inclusion.
-Searchability, scholarly content, complete author-written abstracts/full text, and actual indexing require separate review.
+Per-work source/content/rights reviews are recorded separately from local placement and visible-abstract checks. Actual Scholar indexing remains unverified.
 
 Source: [Google Scholar inclusion guidance](https://scholar.google.com/intl/en/scholar/inclusion.html).
 See [the placement policy](../docs/seo/scholar-inclusion.md) and [machine-readable results](../data/scholar-readiness.json).
@@ -12,7 +12,7 @@ Audited works: 231. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | --- | ---: |
 | missing_citation_author | 11 |
 | no_selected_local_pdf | 29 |
-| pdf_directory_differs_from_abstract | 202 |
+| pdf_directory_differs_from_abstract | 197 |
 | pdf_exceeds_byte_limit | 44 |
 
 ## Work-level findings
@@ -57,7 +57,7 @@ Audited works: 231. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [Four-fold Fields of Quantum Dreams](../works/Friedman2024FourFoldFieldsQuantum037.html) | 1003135 | pdf_directory_differs_from_abstract |
 | [MathArt Stream #8 ~ William Blake and Active Inference](../works/Friedman2024MathArtStream8William038.html) | 5847019 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [Transcript of: "Sensemaking Federation: Exploring the Frontiers of Digital Innovation"](../works/Friedman2024SensemakingFederationExploringFrontiers039.html) | 281717 | pdf_directory_differs_from_abstract |
-| [Shared Protentions in Multi-Agent Active Inference](../works/Friedman2024SharedProtentionsMultiAgent040.html) | 325880 | pdf_directory_differs_from_abstract |
+| [Shared Protentions in Multi-Agent Active Inference](../works/Friedman2024SharedProtentionsMultiAgent040.html) | 325880 | Separate content and indexing review required |
 | [The Active Inference Institute & Active Inference Ecosystem](../works/Friedman2024ActiveInferenceInstituteActive041.html) | 7276750 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes](../works/Friedman2024WayFindingInfiniteImaginarium042.html) | 97657 | pdf_directory_differs_from_abstract |
 | [Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago](../works/Friedman2024WhyPaleolithicRockstarsWere043.html) | — | no_selected_local_pdf |
@@ -65,7 +65,7 @@ Audited works: 231. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [A guided tour through the spaces of particular “minds”: A Comment on “Path integrals, particular kinds, and strange things”](../works/Friedman2023GuidedTourThroughSpaces045.html) | 301601 | pdf_directory_differs_from_abstract |
 | [A single-pheromone model accounts for empirical patterns of ant colony foraging previously modeled using two pheromones](../works/Friedman2023SinglePheromoneModelAccounts046.html) | 3934724 | pdf_directory_differs_from_abstract |
 | [A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)](../works/Friedman2023SnapshotPipelineTissueSpecific047.html) | 693355 | pdf_directory_differs_from_abstract |
-| [A variational synthesis of evolutionary and developmental dynamics](../works/Friedman2023VariationalSynthesisEvolutionaryDevelopmental048.html) | 1488327 | pdf_directory_differs_from_abstract |
+| [A variational synthesis of evolutionary and developmental dynamics](../works/Friedman2023VariationalSynthesisEvolutionaryDevelopmental048.html) | 1488327 | Separate content and indexing review required |
 | [An Account of Active Inference Modeling](../works/Friedman2023AccountActiveInferenceModeling050.html) | 55132 | pdf_directory_differs_from_abstract |
 | [Cognitive Sovereignty & Active Inference in the State of Exception](../works/Friedman2023CognitiveSovereigntyActiveInference051.html) | 220677 | pdf_directory_differs_from_abstract |
 | [Comments on AI Accountability Policy Submitted to NTIA Docket 2023-0005-0001 by IRSIRI, AII, PFH, and COGSEC](../works/Friedman2023CommentsAIAccountabilityPolicy052.html) | 554792 | pdf_directory_differs_from_abstract |
@@ -91,7 +91,7 @@ Audited works: 231. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [Systems Modeling and Cognitive Audits for Hypercert Ecosystems](../works/Friedman2022SystemsModelingCognitiveAudits072.html) | 76972 | pdf_directory_differs_from_abstract |
 | [The Free Energy Principle & Active Inference: a Systematic Literature Analysis](../works/Friedman2022FreeEnergyPrincipleActive073.html) | 3254903 | pdf_directory_differs_from_abstract |
 | [TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims](../works/Friedman2022TrustFinderRecommendationsCommunityBased074.html) | 1666008 | pdf_directory_differs_from_abstract |
-| [Active Inferants: An Active Inference Framework for Ant Colony Behavior](../works/Friedman2021ActiveInferantsActiveInference075.html) | 1004293 | pdf_directory_differs_from_abstract |
+| [Active Inferants: An Active Inference Framework for Ant Colony Behavior](../works/Friedman2021ActiveInferantsActiveInference075.html) | 1004293 | Separate content and indexing review required |
 | [Active Inference in Modeling Conflict](../works/Friedman2021ActiveInferenceModelingConflict076.html) | 1025494 | pdf_directory_differs_from_abstract |
 | [Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse](../works/Friedman2021DigitalRhetoricalEcosystemAnalysis077.html) | 2259667 | pdf_directory_differs_from_abstract |
 | [Innovator's Digital Playbook](../works/Friedman2021InnovatorSDigitalPlaybook078.html) | — | no_selected_local_pdf |
@@ -102,7 +102,7 @@ Audited works: 231. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [Communication for Remote Teams](../works/Friedman2020CommunicationRemoteTeams083.html) | — | missing_citation_author, no_selected_local_pdf |
 | [Distributed physiology and the molecular basis of social life in eusocial insects](../works/Friedman2020DistributedPhysiologyMolecularBasis084.html) | 711416 | pdf_directory_differs_from_abstract |
 | [Emergent Teams for Complex Threats](../works/Friedman2020EmergentTeamsComplexThreats085.html) | 186028 | pdf_directory_differs_from_abstract |
-| [Gene expression variation in the brains of harvester ant foragers is associated with collective behavior](../works/Friedman2020GeneExpressionVariationBrains086.html) | 1115979 | pdf_directory_differs_from_abstract |
+| [Gene expression variation in the brains of harvester ant foragers is associated with collective behavior](../works/Friedman2020GeneExpressionVariationBrains086.html) | 1115979 | Separate content and indexing review required |
 | [How to use Keybase for remote teams](../works/Friedman2020HowUseKeybaseRemote087.html) | — | missing_citation_author, no_selected_local_pdf |
 | [Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies](../works/Friedman2020MeasurementNaturalVariationNeurotransmitter088.html) | 1521334 | pdf_directory_differs_from_abstract |
 | [The Great Preset: Remote Teams and Operational Art](../works/Friedman2020GreatPresetRemoteTeams089.html) | 5001516 | missing_citation_author, pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
@@ -120,7 +120,7 @@ Audited works: 231. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [The MutAnts are here](../works/Friedman2017MutAntsAreHere101.html) | 304596 | pdf_directory_differs_from_abstract |
 | [Two lineages that need each other](../works/Friedman2017TwoLineagesThatNeed102.html) | 167586 | pdf_directory_differs_from_abstract |
 | [Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior](../works/Friedman2016AntGeneticsReproductivePhysiology103.html) | 618023 | pdf_directory_differs_from_abstract |
-| [Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task](../works/Friedman2016ContextDependentExpressionForaging104.html) | 536684 | pdf_directory_differs_from_abstract |
+| [Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task](../works/Friedman2016ContextDependentExpressionForaging104.html) | 536684 | Separate content and indexing review required |
 | [Influence of nuclear structure on the formation of radiation-induced lethal lesions](../works/Friedman2016InfluenceNuclearStructureFormation105.html) | 1303015 | pdf_directory_differs_from_abstract |
 | [Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history](../works/Friedman2015CommentaryPortugueseCryptoJews106.html) | 167379 | pdf_directory_differs_from_abstract |
 | [Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?](../works/Friedman2015CouldEhrlichialInfectionCause107.html) | 224816 | pdf_directory_differs_from_abstract |

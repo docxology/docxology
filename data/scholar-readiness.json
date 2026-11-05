@@ -5,17 +5,19 @@
   "pdf_byte_limit": 5000000,
   "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
   "works_sha256": "67b67db4fbf45350214b7923e5c2fee43545ae705b03bfdd5b96aa0ed7a75c34",
+  "projection_registry_sha256": "21ae02d3ab2c8cf5b039722149a57b956adb6968e3b84d287fbc61d15a342567",
   "network_checked": false,
   "indexing_verified": false,
   "summary": {
     "works": 231,
     "local_status": {
-      "blocked": 231
+      "blocked": 226,
+      "requires_review": 5
     },
     "blockers": {
       "missing_citation_author": 11,
       "no_selected_local_pdf": 29,
-      "pdf_directory_differs_from_abstract": 202,
+      "pdf_directory_differs_from_abstract": 197,
       "pdf_exceeds_byte_limit": 44
     }
   },
@@ -57,6 +59,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -85,6 +90,9 @@
         "missing_citation_author",
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -129,6 +137,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -173,6 +184,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -217,6 +231,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -245,6 +262,9 @@
         "missing_citation_author",
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -289,6 +309,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -372,6 +395,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -419,6 +445,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -463,6 +492,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -507,6 +539,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -552,6 +587,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -597,6 +635,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -641,6 +682,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -685,6 +729,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -729,6 +776,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -773,6 +823,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -818,6 +871,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -866,6 +922,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -911,6 +970,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -955,6 +1017,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -999,6 +1064,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1058,6 +1126,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1133,6 +1204,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1177,6 +1251,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1227,6 +1304,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1290,6 +1370,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1332,6 +1415,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1389,6 +1475,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1453,6 +1542,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1513,6 +1605,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1557,6 +1652,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1602,6 +1700,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1654,6 +1755,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1720,6 +1824,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1765,6 +1872,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1810,6 +1920,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1854,6 +1967,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -1866,7 +1982,7 @@
       "title": "Shared Protentions in Multi-Agent Active Inference",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2024SharedProtentionsMultiAgent040.html",
-      "page_sha256": "da37852b9ade2556ebbabed7abbe0cecc395b41a4b9be6ef4904928d8186cba3",
+      "page_sha256": "48752bb4417396e67e378605285c8efb7b0bda553e0f95d9277c63a8f3024926",
       "citation_tags": {
         "citation_title": [
           "Shared Protentions in Multi-Agent Active Inference"
@@ -1901,28 +2017,62 @@
           "10.3390/e26040303"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2024_SharedProtentions/2024_SharedProtentions.pdf"
+          "https://danielarifriedman.com/works/0b40c6a4bc0d1dd0d2a9a4597b557132b01187327389c05c5455df713905f7d3.pdf"
         ]
       },
       "primary_pdf": {
         "path": "papers/2024_SharedProtentions/2024_SharedProtentions.pdf",
-        "url": "https://danielarifriedman.com/papers/2024_SharedProtentions/2024_SharedProtentions.pdf",
+        "url": "https://danielarifriedman.com/works/0b40c6a4bc0d1dd0d2a9a4597b557132b01187327389c05c5455df713905f7d3.pdf",
         "selection_basis": "extracted-text source",
         "bytes": 325880,
         "sha256": "0b40c6a4bc0d1dd0d2a9a4597b557132b01187327389c05c5455df713905f7d3",
         "within_byte_limit": true,
-        "same_directory_as_abstract": false
+        "same_directory_as_abstract": true
       },
       "selection_issue": "",
-      "local_status": "blocked",
-      "blockers": [
-        "pdf_directory_differs_from_abstract"
-      ],
+      "local_status": "requires_review",
+      "blockers": [],
+      "visible_complete_author_abstract": true,
+      "reviewed_prerequisites": {
+        "searchable_pdf": {
+          "first_page_text_sha256": "1bea968f9f778ef33ccb46296ba86010ab2b06714e8173f3558499959403fc18",
+          "method": "pypdf first two pages extracted; not OCR or visual inspection",
+          "nonblank_first_two_pages": true
+        },
+        "scholarly_content": {
+          "basis": "DOI/title, journal citation and publisher PDF reviewed; no Scholar indexing observation.",
+          "kind": "journal-article"
+        },
+        "redistribution_rights": {
+          "conditions": "Retain author/source attribution and license link; byte-identical copy.",
+          "evidence": "Copyright: © 2024 by the authors.\nLicensee MDPI, Basel, Switzerland.\nThis article is an open access article\ndistributed under the terms and\nconditions of the Creative Commons\nAttribution (CC BY) license (https://\ncreativecommons.org/licenses/by/\n4.0/).\nentropy\nArticle\nShared Protentions in Multi-Agent Active Inference\nMahault Albarracin1,2,*\n , Riddhi J. Pitliya1,3\n , T oby St. Clere Smithe1,4\n , Daniel Ari Friedman5\n , Karl Friston1,6\nand Maxwell J. D. Ramstead1,6\n1 VERSES Research Lab and Spatial Web Foundation, Los Angeles, CA90016, USA; riddhi.jain@verses.ai (R.J.P .);\nentropy@tsmithe.net (T.S.C.S.); k.friston@ucl.ac.uk (K.F.); maxwell.ramstead@verses.ai (M.J.D.R.)\n2 Département d’Informatique, l’Université du Québec à Montréal, Montreal, QC H3C 3P8, Canada\n3 Department of Experimental Psychology, University of Oxford, Oxford OX2 6GG, UK\n4 Topos Institute, Berkeley, CA 94704, USA\n5 Active Inference Institute, Davis, CA 95616, USA; daniel@activeinference.institute\n6 Wellcome Trust Centre for Neuroimaging, Institute of Neurology, University College London,\nLondon WC1N 3BG, UK\n* Correspondence: albarracin.mahault@courrier.uqam.ca\nAbstract: In this paper, we unite concepts from Husserlian phenomenology, the active inference\nframework in theoretical biology, and category theory in mathematics to develop a comprehensive\nframework for understanding social action premised on shared goals. We begin with an overview\nof Husserlian phenomenology, focusing on aspects of inner time-consciousness, namely, retention,\nprimal impression, and protention. We then review active inference as",
+          "evidence_page": 1,
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "complete_author_written_abstract": {
+          "complete_author_written": true,
+          "method": "Complete PDF author abstract passage reviewed; normalization ignores punctuation, whitespace and line-break hyphenation.",
+          "sha256": "666d4ac466b142c3c56b3254f60320ef6409c8fefd49bb72dbc3620dc5619fc2",
+          "source": "papers/paper_metadata.json"
+        },
+        "reviewed_by": "Codex (publication evidence review)",
+        "reviewed_at": "2026-11-05"
+      },
+      "projection": {
+        "path": "works/0b40c6a4bc0d1dd0d2a9a4597b557132b01187327389c05c5455df713905f7d3.pdf",
+        "source_path": "papers/2024_SharedProtentions/2024_SharedProtentions.pdf",
+        "bytes": 325880,
+        "sha256": "0b40c6a4bc0d1dd0d2a9a4597b557132b01187327389c05c5455df713905f7d3",
+        "citation_key": "Friedman2024SharedProtentionsMultiAgent040",
+        "num": 40,
+        "reviewed_at": "2026-11-05",
+        "reviewed_by": "Codex (publication evidence review)",
+        "license": "CC BY 4.0"
+      },
       "unverified_requirements": [
-        "searchable_pdf",
-        "scholarly_content",
-        "complete_author_written_abstract_or_full_text",
-        "actual_scholar_indexing"
+        "actual_scholar_indexing",
+        "deployed_route_verification"
       ]
     },
     {
@@ -1993,6 +2143,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2037,6 +2190,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2086,6 +2242,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2128,6 +2287,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2188,6 +2350,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2248,6 +2413,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2297,6 +2465,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2309,7 +2480,7 @@
       "title": "A variational synthesis of evolutionary and developmental dynamics",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2023VariationalSynthesisEvolutionaryDevelopmental048.html",
-      "page_sha256": "3bd7a9a7b1fc30e7eef92764ad56e443351d131adb02a50029d529cf606ee3ff",
+      "page_sha256": "4962f5581a9097d99e8fd065d62033afdb0ae0ff78d3c8c764ed62c9e387c611",
       "citation_tags": {
         "citation_title": [
           "A variational synthesis of evolutionary and developmental dynamics"
@@ -2345,28 +2516,62 @@
           "10.3390/e25070964"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2023_VariationalSynthesis/2023_VariationalSynthesis.pdf"
+          "https://danielarifriedman.com/works/665cb03933df668fdc11286d2c973c6ca4cf2300f4bb716c1e8130996832f364.pdf"
         ]
       },
       "primary_pdf": {
         "path": "papers/2023_VariationalSynthesis/2023_VariationalSynthesis.pdf",
-        "url": "https://danielarifriedman.com/papers/2023_VariationalSynthesis/2023_VariationalSynthesis.pdf",
+        "url": "https://danielarifriedman.com/works/665cb03933df668fdc11286d2c973c6ca4cf2300f4bb716c1e8130996832f364.pdf",
         "selection_basis": "extracted-text source",
         "bytes": 1488327,
         "sha256": "665cb03933df668fdc11286d2c973c6ca4cf2300f4bb716c1e8130996832f364",
         "within_byte_limit": true,
-        "same_directory_as_abstract": false
+        "same_directory_as_abstract": true
       },
       "selection_issue": "",
-      "local_status": "blocked",
-      "blockers": [
-        "pdf_directory_differs_from_abstract"
-      ],
+      "local_status": "requires_review",
+      "blockers": [],
+      "visible_complete_author_abstract": true,
+      "reviewed_prerequisites": {
+        "searchable_pdf": {
+          "first_page_text_sha256": "60a29bcc97bc17422532171e5f6acbc2051b8194de8252e3f7dba859fce1d5da",
+          "method": "pypdf first two pages extracted; not OCR or visual inspection",
+          "nonblank_first_two_pages": true
+        },
+        "scholarly_content": {
+          "basis": "DOI/title, journal citation and publisher PDF reviewed; no Scholar indexing observation.",
+          "kind": "journal-article"
+        },
+        "redistribution_rights": {
+          "conditions": "Retain author/source attribution and license link; byte-identical copy.",
+          "evidence": "Copyright: © 2023 by the authors. Li-\ncensee MDPI, Basel, Switzerland. \nThis article is an open access article \ndistributed under the terms and con-\nditions of the Creative Commons At-\ntribution (CC BY) license (https://cr e-\nativecommons.org/licenses/by/4.0/). \n",
+          "evidence_page": 1,
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "complete_author_written_abstract": {
+          "complete_author_written": true,
+          "method": "Complete PDF author abstract passage reviewed; normalization ignores punctuation, whitespace and line-break hyphenation.",
+          "sha256": "dd5ac31aed6742d6c141542f7b8259ab333b82a5175cb76084a92800f6bc16cc",
+          "source": "papers/paper_metadata.json"
+        },
+        "reviewed_by": "Codex (publication evidence review)",
+        "reviewed_at": "2026-11-05"
+      },
+      "projection": {
+        "path": "works/665cb03933df668fdc11286d2c973c6ca4cf2300f4bb716c1e8130996832f364.pdf",
+        "source_path": "papers/2023_VariationalSynthesis/2023_VariationalSynthesis.pdf",
+        "bytes": 1488327,
+        "sha256": "665cb03933df668fdc11286d2c973c6ca4cf2300f4bb716c1e8130996832f364",
+        "citation_key": "Friedman2023VariationalSynthesisEvolutionaryDevelopmental048",
+        "num": 48,
+        "reviewed_at": "2026-11-05",
+        "reviewed_by": "Codex (publication evidence review)",
+        "license": "CC BY 4.0"
+      },
       "unverified_requirements": [
-        "searchable_pdf",
-        "scholarly_content",
-        "complete_author_written_abstract_or_full_text",
-        "actual_scholar_indexing"
+        "actual_scholar_indexing",
+        "deployed_route_verification"
       ]
     },
     {
@@ -2406,6 +2611,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2450,6 +2658,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2497,6 +2708,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2546,6 +2760,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2590,6 +2807,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2645,6 +2865,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2690,6 +2913,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2735,6 +2961,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2780,6 +3009,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2825,6 +3057,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2870,6 +3105,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2934,6 +3172,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -2981,6 +3222,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3030,6 +3274,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3078,6 +3325,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3123,6 +3373,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3180,6 +3433,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3225,6 +3481,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3273,6 +3532,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3319,6 +3581,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3364,6 +3629,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3409,6 +3677,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3454,6 +3725,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3500,6 +3774,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3546,6 +3823,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3558,7 +3838,7 @@
       "title": "Active Inferants: An Active Inference Framework for Ant Colony Behavior",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2021ActiveInferantsActiveInference075.html",
-      "page_sha256": "8dd6d268e450384499876a6cc9ca6b3ffc91f3b093e855590984a69e072c0ab6",
+      "page_sha256": "e1b289fadadcbc3068f425068e3b5640a939787f089c7993a971b60470b16906",
       "citation_tags": {
         "citation_title": [
           "Active Inferants: An Active Inference Framework for Ant Colony Behavior"
@@ -3586,28 +3866,62 @@
           "10.3389/fnbeh.2021.647732"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2021_ActiveInferants/2021_ActiveInferants.pdf"
+          "https://danielarifriedman.com/works/6debf52e3c4fdce8330e5601ce3efb7f2c1d9ca3bbaddaf31cfb824ee96d30e4.pdf"
         ]
       },
       "primary_pdf": {
         "path": "papers/2021_ActiveInferants/2021_ActiveInferants.pdf",
-        "url": "https://danielarifriedman.com/papers/2021_ActiveInferants/2021_ActiveInferants.pdf",
+        "url": "https://danielarifriedman.com/works/6debf52e3c4fdce8330e5601ce3efb7f2c1d9ca3bbaddaf31cfb824ee96d30e4.pdf",
         "selection_basis": "extracted-text source",
         "bytes": 1004293,
         "sha256": "6debf52e3c4fdce8330e5601ce3efb7f2c1d9ca3bbaddaf31cfb824ee96d30e4",
         "within_byte_limit": true,
-        "same_directory_as_abstract": false
+        "same_directory_as_abstract": true
       },
       "selection_issue": "",
-      "local_status": "blocked",
-      "blockers": [
-        "pdf_directory_differs_from_abstract"
-      ],
+      "local_status": "requires_review",
+      "blockers": [],
+      "visible_complete_author_abstract": true,
+      "reviewed_prerequisites": {
+        "searchable_pdf": {
+          "first_page_text_sha256": "b35b10b92fc4274f07191597669b330a2d4638089689ded813b291efea483b09",
+          "method": "pypdf first two pages extracted; not OCR or visual inspection",
+          "nonblank_first_two_pages": true
+        },
+        "scholarly_content": {
+          "basis": "DOI/title, journal citation and publisher PDF reviewed; no Scholar indexing observation.",
+          "kind": "journal-article"
+        },
+        "redistribution_rights": {
+          "conditions": "Retain author/source attribution and license link; byte-identical copy.",
+          "evidence": "Copyright © 2021 Friedman, Tschantz, Ramstead, Friston and Const ant. This is an\nopen-access article distributed under the terms of the Creative Commons Attribution\nLicense (CC BY). The use, distribution or reproduction in ot her forums is permitted,\nprovided the original author(s) and the copyright owner(s) a re credited and that the\noriginal publication in this journal is cited, in accordanc e with accepted academic\npractice. No use, distribution or reproduction is permitte d which does not comply\nwith these terms.\nFrontiers in Behavioral Neuroscience | www.frontiersin.o rg 14 June 2021 | Volume 15 | Article 647732",
+          "evidence_page": 14,
+          "license": "CC BY",
+          "license_url": "https://creativecommons.org/licenses/by/"
+        },
+        "complete_author_written_abstract": {
+          "complete_author_written": true,
+          "method": "Complete PDF author abstract passage reviewed; normalization ignores punctuation, whitespace and line-break hyphenation.",
+          "sha256": "7d59786352876c8f80678727d89ef16573f591f1ba8c956b424aeac39bd67f54",
+          "source": "papers/paper_metadata.json"
+        },
+        "reviewed_by": "Codex (publication evidence review)",
+        "reviewed_at": "2026-11-05"
+      },
+      "projection": {
+        "path": "works/6debf52e3c4fdce8330e5601ce3efb7f2c1d9ca3bbaddaf31cfb824ee96d30e4.pdf",
+        "source_path": "papers/2021_ActiveInferants/2021_ActiveInferants.pdf",
+        "bytes": 1004293,
+        "sha256": "6debf52e3c4fdce8330e5601ce3efb7f2c1d9ca3bbaddaf31cfb824ee96d30e4",
+        "citation_key": "Friedman2021ActiveInferantsActiveInference075",
+        "num": 75,
+        "reviewed_at": "2026-11-05",
+        "reviewed_by": "Codex (publication evidence review)",
+        "license": "CC BY"
+      },
       "unverified_requirements": [
-        "searchable_pdf",
-        "scholarly_content",
-        "complete_author_written_abstract_or_full_text",
-        "actual_scholar_indexing"
+        "actual_scholar_indexing",
+        "deployed_route_verification"
       ]
     },
     {
@@ -3649,6 +3963,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3695,6 +4012,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3727,6 +4047,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3770,6 +4093,9 @@
         "missing_citation_author",
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3818,6 +4144,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3852,6 +4181,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3900,6 +4232,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3928,6 +4263,9 @@
         "missing_citation_author",
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -3986,6 +4324,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4031,6 +4372,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4043,7 +4387,7 @@
       "title": "Gene expression variation in the brains of harvester ant foragers is associated with collective behavior",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2020GeneExpressionVariationBrains086.html",
-      "page_sha256": "6b6528c148006840b56221bd4f59e7fc01b8af53fec78b079c086440334f8ad3",
+      "page_sha256": "fa646ab92d3a00c8e35387d6d7abef5f4cf02d56a3c452288fdfc0b04398e262",
       "citation_tags": {
         "citation_title": [
           "Gene expression variation in the brains of harvester ant foragers is associated with collective behavior"
@@ -4073,28 +4417,62 @@
           "10.1038/s42003-020-0813-8"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2020_GeneExpressionForagers/2020_GeneExpressionForagers.pdf"
+          "https://danielarifriedman.com/works/91160c7b340ea9fbd7740a18f968243546ca4dbc95dcfe27b411439fb5a93683.pdf"
         ]
       },
       "primary_pdf": {
         "path": "papers/2020_GeneExpressionForagers/2020_GeneExpressionForagers.pdf",
-        "url": "https://danielarifriedman.com/papers/2020_GeneExpressionForagers/2020_GeneExpressionForagers.pdf",
+        "url": "https://danielarifriedman.com/works/91160c7b340ea9fbd7740a18f968243546ca4dbc95dcfe27b411439fb5a93683.pdf",
         "selection_basis": "extracted-text source",
         "bytes": 1115979,
         "sha256": "91160c7b340ea9fbd7740a18f968243546ca4dbc95dcfe27b411439fb5a93683",
         "within_byte_limit": true,
-        "same_directory_as_abstract": false
+        "same_directory_as_abstract": true
       },
       "selection_issue": "",
-      "local_status": "blocked",
-      "blockers": [
-        "pdf_directory_differs_from_abstract"
-      ],
+      "local_status": "requires_review",
+      "blockers": [],
+      "visible_complete_author_abstract": true,
+      "reviewed_prerequisites": {
+        "searchable_pdf": {
+          "first_page_text_sha256": "ae7c80386280c209dff0ef132c757a85abf0667b7a70f8eb6141b9cb0cb5337d",
+          "method": "pypdf first two pages extracted; not OCR or visual inspection",
+          "nonblank_first_two_pages": true
+        },
+        "scholarly_content": {
+          "basis": "DOI/title, journal citation and publisher PDF reviewed; no Scholar indexing observation.",
+          "kind": "journal-article"
+        },
+        "redistribution_rights": {
+          "conditions": "Retain author/source attribution and license link; byte-identical copy. The publisher reserves third-party material identified by separate credit lines.",
+          "evidence": "Open Access This article is licensed under a Creative Commons\nAttribution 4.0 International License, which permits use, sharing,\nadaptation, distribution and reproduction in any medium or format, as long as you give\nappropriate credit to the original author(s) and the source, provide a link to the Creative\nCommons license, and indicate if changes were made. The images or other third party\nmaterial in this article are included in the article ’s Creative Commons license, unless\nindicated otherwise in a credit line to the material. If material is not included in the\narticle’s Creative Commons license and your intended use is not permitted by statutory\nregulation or exceeds the permitted use, you will need to obtain permission directly from\nthe copyright holder. To view a copy of this license, visit http://creativecommons.org/\nlicenses/by/4.0/.\n© The Author(s) 2020\nCOMMUNICATIONS BIOLOGY | https://doi.org/10.1038/s42003-020-0813-8 ARTICLE\nCOMMUNICATIONS BIOLOGY |           (2020) 3:100 | https://doi.org/10.1038/s42003-020-0813-8 | www.nature.com/commsbio 9",
+          "evidence_page": 9,
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "complete_author_written_abstract": {
+          "complete_author_written": true,
+          "method": "Complete PDF author abstract passage reviewed; normalization ignores punctuation, whitespace and line-break hyphenation.",
+          "sha256": "eb638271960db10990120e8538b870d123e6af5e59a0179b6385d97d6a4a438c",
+          "source": "papers/paper_metadata.json"
+        },
+        "reviewed_by": "Codex (publication evidence review)",
+        "reviewed_at": "2026-11-05"
+      },
+      "projection": {
+        "path": "works/91160c7b340ea9fbd7740a18f968243546ca4dbc95dcfe27b411439fb5a93683.pdf",
+        "source_path": "papers/2020_GeneExpressionForagers/2020_GeneExpressionForagers.pdf",
+        "bytes": 1115979,
+        "sha256": "91160c7b340ea9fbd7740a18f968243546ca4dbc95dcfe27b411439fb5a93683",
+        "citation_key": "Friedman2020GeneExpressionVariationBrains086",
+        "num": 86,
+        "reviewed_at": "2026-11-05",
+        "reviewed_by": "Codex (publication evidence review)",
+        "license": "CC BY 4.0"
+      },
       "unverified_requirements": [
-        "searchable_pdf",
-        "scholarly_content",
-        "complete_author_written_abstract_or_full_text",
-        "actual_scholar_indexing"
+        "actual_scholar_indexing",
+        "deployed_route_verification"
       ]
     },
     {
@@ -4118,6 +4496,9 @@
         "missing_citation_author",
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4183,6 +4564,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4227,6 +4611,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4273,6 +4660,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4319,6 +4709,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4365,6 +4758,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4406,6 +4802,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4469,6 +4868,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4527,6 +4929,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4593,6 +4998,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4638,6 +5046,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4684,6 +5095,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4745,6 +5159,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4810,6 +5227,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4874,6 +5294,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -4937,6 +5360,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5000,6 +5426,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5012,7 +5441,7 @@
       "title": "Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2016ContextDependentExpressionForaging104.html",
-      "page_sha256": "1432eaeb03f893568ef99cb4853d1142280b1f43c2f8db8ad15ec710a803f831",
+      "page_sha256": "c08ada1d2458a009bba27cf737371949bbca1b042236b64eca8a2075229e9cd5",
       "citation_tags": {
         "citation_title": [
           "Context-dependent expression of the foraging gene in field colonies of ants: the interacting roles of age, environment and task"
@@ -5047,28 +5476,62 @@
           "10.1098/rspb.2016.0841"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2016_ForagingGene/2016_ForagingGene.pdf"
+          "https://danielarifriedman.com/works/80b790681900c4f9d71b95057711e574664f17dfb9024a315bd28d4ab22530f6.pdf"
         ]
       },
       "primary_pdf": {
         "path": "papers/2016_ForagingGene/2016_ForagingGene.pdf",
-        "url": "https://danielarifriedman.com/papers/2016_ForagingGene/2016_ForagingGene.pdf",
+        "url": "https://danielarifriedman.com/works/80b790681900c4f9d71b95057711e574664f17dfb9024a315bd28d4ab22530f6.pdf",
         "selection_basis": "extracted-text source",
         "bytes": 536684,
         "sha256": "80b790681900c4f9d71b95057711e574664f17dfb9024a315bd28d4ab22530f6",
         "within_byte_limit": true,
-        "same_directory_as_abstract": false
+        "same_directory_as_abstract": true
       },
       "selection_issue": "",
-      "local_status": "blocked",
-      "blockers": [
-        "pdf_directory_differs_from_abstract"
-      ],
+      "local_status": "requires_review",
+      "blockers": [],
+      "visible_complete_author_abstract": true,
+      "reviewed_prerequisites": {
+        "searchable_pdf": {
+          "first_page_text_sha256": "6fc788bda6cf2c0208b33d6f49c6655279e7d3dcd615b4ea942c16a9a90b65e2",
+          "method": "pypdf first two pages extracted; not OCR or visual inspection",
+          "nonblank_first_two_pages": true
+        },
+        "scholarly_content": {
+          "basis": "DOI/title, journal citation and publisher PDF reviewed; no Scholar indexing observation.",
+          "kind": "journal-article"
+        },
+        "redistribution_rights": {
+          "conditions": "Retain author/source attribution and license link; byte-identical copy.",
+          "evidence": "& 2016 The Authors. Published by the Royal Society under the terms of the Creative Commons Attribution\nLicense http:/ /creativecommons.org/licenses/by/4.0/, which permits unrestricted use, provided the original\nauthor and source are credited.\n Downloaded from https://royalsocietypublishing.org/ on 09 June 2022 \n",
+          "evidence_page": 1,
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "complete_author_written_abstract": {
+          "complete_author_written": true,
+          "method": "Complete PDF author abstract passage reviewed; normalization ignores punctuation, whitespace and line-break hyphenation.",
+          "sha256": "f29ea47cad3b3655d1fe534b9c13941f52186676e7351f0e2b3ac9b5e15e90be",
+          "source": "papers/paper_metadata.json"
+        },
+        "reviewed_by": "Codex (publication evidence review)",
+        "reviewed_at": "2026-11-05"
+      },
+      "projection": {
+        "path": "works/80b790681900c4f9d71b95057711e574664f17dfb9024a315bd28d4ab22530f6.pdf",
+        "source_path": "papers/2016_ForagingGene/2016_ForagingGene.pdf",
+        "bytes": 536684,
+        "sha256": "80b790681900c4f9d71b95057711e574664f17dfb9024a315bd28d4ab22530f6",
+        "citation_key": "Friedman2016ContextDependentExpressionForaging104",
+        "num": 104,
+        "reviewed_at": "2026-11-05",
+        "reviewed_by": "Codex (publication evidence review)",
+        "license": "CC BY 4.0"
+      },
       "unverified_requirements": [
-        "searchable_pdf",
-        "scholarly_content",
-        "complete_author_written_abstract_or_full_text",
-        "actual_scholar_indexing"
+        "actual_scholar_indexing",
+        "deployed_route_verification"
       ]
     },
     {
@@ -5128,6 +5591,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5183,6 +5649,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5247,6 +5716,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5314,6 +5786,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5360,6 +5835,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5405,6 +5883,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5440,6 +5921,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5485,6 +5969,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5529,6 +6016,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5574,6 +6064,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5618,6 +6111,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5663,6 +6159,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5708,6 +6207,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5753,6 +6255,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5797,6 +6302,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5841,6 +6349,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5885,6 +6396,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5929,6 +6443,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -5973,6 +6490,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6019,6 +6539,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6065,6 +6588,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6109,6 +6635,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6144,6 +6673,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6189,6 +6721,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6234,6 +6769,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6279,6 +6817,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6324,6 +6865,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6369,6 +6913,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6413,6 +6960,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6480,6 +7030,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6530,6 +7083,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6576,6 +7132,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6621,6 +7180,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6665,6 +7227,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6699,6 +7264,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6737,6 +7305,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6785,6 +7356,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6821,6 +7395,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6857,6 +7434,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6905,6 +7485,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -6957,6 +7540,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7002,6 +7588,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7048,6 +7637,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7093,6 +7685,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7137,6 +7732,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7181,6 +7779,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7225,6 +7826,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7269,6 +7873,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7313,6 +7920,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7343,6 +7953,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7374,6 +7987,9 @@
         "missing_citation_author",
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7402,6 +8018,9 @@
         "missing_citation_author",
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7461,6 +8080,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7498,6 +8120,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7533,6 +8158,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7567,6 +8195,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7600,6 +8231,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7628,6 +8262,9 @@
         "missing_citation_author",
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7656,6 +8293,9 @@
         "missing_citation_author",
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7701,6 +8341,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7745,6 +8388,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7789,6 +8435,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7833,6 +8482,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7877,6 +8529,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7922,6 +8577,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -7967,6 +8625,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8011,6 +8672,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8055,6 +8719,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8099,6 +8766,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8144,6 +8814,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8189,6 +8862,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8233,6 +8909,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8278,6 +8957,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8314,6 +8996,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8358,6 +9043,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8402,6 +9090,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8446,6 +9137,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8490,6 +9184,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8534,6 +9231,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8578,6 +9278,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8622,6 +9325,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8666,6 +9372,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8710,6 +9419,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8754,6 +9466,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8798,6 +9513,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8842,6 +9560,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8886,6 +9607,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8930,6 +9654,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -8975,6 +9702,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9020,6 +9750,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9064,6 +9797,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9108,6 +9844,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9153,6 +9892,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9197,6 +9939,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9242,6 +9987,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9286,6 +10034,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9331,6 +10082,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9376,6 +10130,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9420,6 +10177,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9465,6 +10225,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9510,6 +10273,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9555,6 +10321,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9603,6 +10372,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9648,6 +10420,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9693,6 +10468,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9737,6 +10515,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9781,6 +10562,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9825,6 +10609,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9869,6 +10656,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9913,6 +10703,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -9957,6 +10750,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10001,6 +10797,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10045,6 +10844,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10089,6 +10891,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10133,6 +10938,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10177,6 +10985,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10221,6 +11032,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10272,6 +11086,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10317,6 +11134,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10361,6 +11181,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10406,6 +11229,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10451,6 +11277,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10496,6 +11325,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10550,6 +11382,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10595,6 +11430,9 @@
         "pdf_directory_differs_from_abstract",
         "pdf_exceeds_byte_limit"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10639,6 +11477,9 @@
       "blockers": [
         "pdf_directory_differs_from_abstract"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10675,6 +11516,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10711,6 +11555,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",
@@ -10753,6 +11600,9 @@
       "blockers": [
         "no_selected_local_pdf"
       ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
       "unverified_requirements": [
         "searchable_pdf",
         "scholarly_content",

@@ -10,7 +10,20 @@
 
 ## Abstract
 
-> This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic processes. The main result is a formulation of adaptive fitness as a path integral of phenotypic fitness, unifying evolutionary and developmental dynamics through the Free Energy Principle.
+> This paper introduces a variational formulation of natural selection, paying special atten-
+> tion to the nature of ‘things’ and the way that different ‘kinds’ of ‘things’ are individuated from —
+> and influence—each other. We use the Bayesian mechanics of particular partitions to understand
+> how slow phylogenetic processes constrain —and are constrained by —fast, phenotypic processes.
+> The main result is a formulation of adaptive fitness as a path integral of phenotypic fitness. Paths of
+> least action, at the phenotypic and phylogenetic scales, can then be read as inference and learning
+> processes, respectively. In this view, a phenotype actively infers the state of its econiche under a
+> generative model, whose parameters are learned via natural (Bayesian model) selection. The ensu-
+> ing variational synthesis features some unexpected aspects. Perhaps the most notable is that it is not
+> possible to describe or model a population of conspecifics per se. Rather, it is necessary to consider
+> populations of distinct natural kinds that influence each other. This paper is limited to a description
+> of the mathematical apparatus and accompanying ideas. Subsequent work will use these methods
+> for simulations and numerical analyses —and identify points of contact with related mathematical
+> formulations of evolution.
 
 ## Keywords
 

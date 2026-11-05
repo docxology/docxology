@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Shared Protentions in Multi-Agent Active Inference"
-description: "We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference. Protentions are future-directed expectations that shape perception and action; here we formalize how agents can develop shared protentions throug..."
+description: "In this paper, we unite concepts from Husserlian phenomenology, the active inference framework in theoretical biology, and category theory in mathematics to develop a comprehensive framework for understanding social action premised on shared goals. W..."
 tags: ["shared-protentions", "multi-agent", "active-inference", "anticipation", "coupled-generative-models", "coordination", "predictive-processing"]
 domain: "Active Inference"
 citation: "Mahault Albarracin, Riddhi J. Pitliya, Toby St. Clere Smithe, Daniel Ari Friedman, Karl Friston, Maxwell J. D. Ramstead (2024). *Shared Protentions in Multi-Agent Active Inference*. Entropy."
