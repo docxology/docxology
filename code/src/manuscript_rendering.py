@@ -45,7 +45,15 @@ TIMEOUT = 90
 MAX_OUTPUT_BYTES = 20 * 1024 * 1024
 
 SLIDE_TEXT_LIMIT = 450
-SLIDE_LAYOUT = "bounded-block-pagination-v2"
+# The pinned 16:9 PPTX body is 9in x 3.71in at 24pt. The frozen viewer showed
+# eight-line paragraphs split solely at 450 characters. Prose may use the
+# remaining area, bounded independently by conservative wrapping and line count.
+# Indivisible inlines, code, tables and figures retain their separate limits.
+SLIDE_PROSE_LIMIT = 600
+SLIDE_LINE_WIDTH = 60
+SLIDE_LINE_LIMIT = 9
+SLIDE_MIN_CONTINUATION = 120
+SLIDE_LAYOUT = "coherent-bounded-pagination-v3"
 
 
 def _slide_text_size(node) -> int:
@@ -68,29 +76,112 @@ def _slide_text_size(node) -> int:
     return _slide_text_size(content)
 
 
-def _slide_units(block):
-    """Yield bounded, separate display units without discarding authored content."""
+def _slide_visible_text(node) -> str:
+    if isinstance(node, list):
+        return "".join(_slide_visible_text(value) for value in node)
+    if not isinstance(node, dict):
+        return ""
+    kind, content = node.get("t"), node.get("c")
+    if kind == "Str":
+        return content
+    if kind in {"Space", "SoftBreak"}:
+        return " "
+    if kind == "LineBreak":
+        return "\n"
+    if kind in {"Code", "Math"}:
+        return content[-1]
+    if kind in {"Link", "Image"}:
+        return _slide_visible_text(content[1])
+    return _slide_visible_text(content)
+
+
+def _slide_text_unit(block) -> bool:
+    if isinstance(block, list):
+        return all(_slide_text_unit(value) for value in block)
+    if not isinstance(block, dict):
+        return True
+    if block.get("t") in {"Image", "Table", "CodeBlock", "Figure"}:
+        return False
+    return _slide_text_unit(block.get("c"))
+
+
+def _slide_text_lines(block, width):
+    import textwrap
+
+    if width < 12:
+        raise ValueError("Slide list nesting exceeds its line budget")
+    if block["t"] in {"BulletList", "OrderedList"}:
+        items = block["c"] if block["t"] == "BulletList" else block["c"][1]
+        return max(0, len(items) - 1) + sum(
+            max(0, len(item) - 1) + sum(_slide_text_lines(child, width - 6) for child in item)
+            for item in items
+        )
+    return sum(
+        max(1, len(textwrap.wrap(line, width=width, break_on_hyphens=False)))
+        for line in _slide_visible_text(block).split("\n")
+    )
+
+
+def _slide_text_fits(blocks, text_width=SLIDE_LINE_WIDTH) -> bool:
+    """Input envelope, not a claim that every presentation viewer lays out alike."""
+    if sum(_slide_text_size(block) for block in blocks) > SLIDE_PROSE_LIMIT:
+        return False
+    lines = max(0, len(blocks) - 1)  # conservative gap between display blocks
+    lines += sum(_slide_text_lines(block, text_width) for block in blocks)
+    return lines <= SLIDE_LINE_LIMIT
+
+
+def _slide_prose_chunks(kind, inlines, text_width=SLIDE_LINE_WIDTH):
+    """Prefer sentences, then rebalance an unavoidable short continuation."""
+    for inline in inlines:
+        if _slide_text_size(inline) > SLIDE_TEXT_LIMIT:
+            raise ValueError("Slide contains an indivisible inline exceeding its text budget")
+    if not inlines:
+        return
+    sentence_ends = {index + 1 for index, inline in enumerate(inlines)
+                     if re.search(r'[.!?][\u201d\u2019"\')\]]?$', _slide_visible_text(inline).rstrip())}
+    parts, start = [], 0
+    def fits(left, right):
+        return _slide_text_fits([{"t": kind, "c": inlines[left:right]}], text_width)
+    while start < len(inlines):
+        stop = start
+        while stop < len(inlines) and fits(start, stop + 1):
+            stop += 1
+        if stop == start:
+            raise ValueError("Slide contains an indivisible inline exceeding its line budget")
+        if stop < len(inlines):
+            sentences = [end for end in sentence_ends if start < end <= stop]
+            if sentences:
+                stop = max(sentences)
+        parts.append((start, stop))
+        start = stop
+    if len(parts) > 1 and _slide_text_size(inlines[parts[-1][0]:]) < SLIDE_MIN_CONTINUATION:
+        left, end = parts[-2][0], parts[-1][1]
+        choices = [middle for middle in range(left + 1, end)
+                   if _slide_text_size(inlines[left:middle]) >= SLIDE_MIN_CONTINUATION
+                   and _slide_text_size(inlines[middle:end]) >= SLIDE_MIN_CONTINUATION
+                   and fits(left, middle) and fits(middle, end)]
+        if choices:
+            middle = min(choices, key=lambda value: (value not in sentence_ends,
+                         abs(_slide_text_size(inlines[left:value]) - _slide_text_size(inlines[value:end]))))
+            parts[-2:] = [(left, middle), (middle, end)]
+    for left, right in parts:
+        yield {"t": kind, "c": inlines[left:right]}
+
+
+def _slide_units(block, text_width=SLIDE_LINE_WIDTH):
+    """Yield bounded display units without discarding authored content."""
     kind, content = block["t"], block.get("c")
     if kind in {"Para", "Plain"}:
-        chunk, size = [], 0
-        for inline in content:
-            cost = _slide_text_size(inline)
-            if cost > SLIDE_TEXT_LIMIT:
-                raise ValueError(
-                    "Slide contains an indivisible inline exceeding its text budget"
-                )
-            if chunk and size + cost > SLIDE_TEXT_LIMIT:
-                yield {"t": kind, "c": chunk}
-                chunk, size = [], 0
-            chunk.append(inline)
-            size += cost
-        if chunk:
-            yield {"t": kind, "c": chunk}
+        if _slide_text_unit(block):
+            yield from _slide_prose_chunks(kind, content, text_width)
+        else:
+            yield block
     elif kind in {"BulletList", "OrderedList"}:
         items = content if kind == "BulletList" else content[1]
         for index, item in enumerate(items):
             for child in item:
-                for unit in _slide_units(child):
+                for unit in _slide_units(child, max(12, text_width - 6)):
                     if kind == "BulletList":
                         yield {"t": kind, "c": [[unit]]}
                     else:
@@ -154,7 +245,7 @@ def _slide_units(block):
             yield {"t": kind, "c": [attr, [None, []], columns, head, [body], foot]}
     elif kind == "Div":
         for index, unit in enumerate(
-            unit for child in content[1] for unit in _slide_units(child)
+            unit for child in content[1] for unit in _slide_units(child, text_width)
         ):
             attributes = (
                 content[0] if index == 0 else ["", content[0][1], content[0][2]]
@@ -171,22 +262,39 @@ def _slide_units(block):
 
 
 def paginate_slides(document: dict) -> dict:
-    """Paginate the already cross-referenced/cited AST for presentation only."""
+    """Pack coherent text within an explicit envelope; preserve display barriers."""
     output = dict(document, blocks=[])
     title, attributes, count = [{"t": "Str", "c": "Review draft"}], ["", [], []], 0
-    pending_header = None
+    pending_header, packed = None, []
     aliases = {}
+
+    def flush():
+        nonlocal count, packed
+        if not packed:
+            return
+        count += 1
+        heading = title if count == 1 else [*title, {"t": "Space"}, {"t": "Str", "c": f"({count})"}]
+        attr = attributes if count == 1 else ["", [], []]
+        anchors = [anchor for _, values in packed for anchor in values]
+        if not attr[0] and anchors:
+            attr = [anchors[-1], [], []]
+        for anchor in anchors:
+            if anchor != attr[0]:
+                aliases[anchor] = attr[0]
+        output["blocks"].append({"t": "Header", "c": [2, attr, heading]})
+        output["blocks"].extend(unit for unit, _ in packed)
+        packed = []
+
     for block in document["blocks"]:
         if block["t"] == "Header":
+            flush()
             if pending_header is not None:
                 output["blocks"].append(pending_header)
             level, attributes, title = block["c"]
             if _slide_text_size(title) > 80:
                 raise ValueError("Slide heading exceeds its text budget")
             count = 0
-            pending_header = (
-                {"t": "Header", "c": [2, attributes, title]} if level > 1 else None
-            )
+            pending_header = {"t": "Header", "c": [2, attributes, title]} if level > 1 else None
             if level == 1:
                 output["blocks"].append(block)
                 attributes = ["", [], []]
@@ -194,25 +302,22 @@ def paginate_slides(document: dict) -> dict:
         for unit in _slide_units(block):
             pending_header = None
             anchors = []
-            # The PPTX writer drops generic Div containers. Transfer the
-            # deepest semantic anchor to the slide and emit its display block.
             while unit["t"] == "Div":
                 if unit["c"][0][0]:
                     anchors.append(unit["c"][0][0])
                 unit = unit["c"][1][0]
-            count += 1
-            heading = (
-                title
-                if count == 1
-                else [*title, {"t": "Space"}, {"t": "Str", "c": f"({count})"}]
-            )
-            attr = attributes if count == 1 else ["", [], []]
-            if not attr[0] and anchors:
-                attr = [anchors[-1], [], []]
-            for anchor in anchors:
-                if anchor != attr[0]:
-                    aliases[anchor] = attr[0]
-            output["blocks"].extend([{"t": "Header", "c": [2, attr, heading]}, unit])
+            isolated = block["t"] in {"Figure", "Table", "CodeBlock"} or not _slide_text_unit(unit)
+            if isolated:
+                flush()
+                packed.append((unit, anchors))
+                flush()
+            else:
+                if packed and not _slide_text_fits([*(value for value, _ in packed), unit]):
+                    flush()
+                if not _slide_text_fits([unit]):
+                    raise ValueError("Slide text unit exceeds its line or text budget")
+                packed.append((unit, anchors))
+    flush()
     if pending_header is not None:
         output["blocks"].append(pending_header)
 
@@ -726,7 +831,7 @@ def render_manuscript(
             "toolchain": tools,
             "template": template_receipt,
             "artifacts": artifacts,
-            "slide_layout": {"producer": SLIDE_LAYOUT, "text_budget": SLIDE_TEXT_LIMIT}
+            "slide_layout": {"producer": SLIDE_LAYOUT, "text_budget": SLIDE_TEXT_LIMIT, "prose_budget": SLIDE_PROSE_LIMIT, "line_width": SLIDE_LINE_WIDTH, "line_limit": SLIDE_LINE_LIMIT}
             if "slides" in formats
             else None,
             "figures": figure_receipt,

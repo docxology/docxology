@@ -119,7 +119,8 @@ def test_slide_pagination_preserves_long_prose_and_links():
     assert len(paragraphs) >= 3
     assert [inline for block in paragraphs for inline in block["c"]] == inlines
     assert all(
-        rendering._slide_text_size(block) <= rendering.SLIDE_TEXT_LIMIT
+        rendering._slide_text_size(block) <= rendering.SLIDE_PROSE_LIMIT
+        and rendering._slide_text_fits([block])
         for block in paragraphs
     )
     headers = [block for block in output["blocks"] if block["t"] == "Header"]
@@ -458,7 +459,9 @@ def test_real_four_format_render_and_receipt(tmp_path):
         "cover",
         "figure",
     }
-    assert receipt["bibliography_entries"] == 1
+    from docxology_tools.manuscript_validation import validate_manuscript
+
+    assert receipt["bibliography_entries"] == validate_manuscript(root)["citation_count"]
     assert receipt["license"] == "CC-BY-4.0"
     assert receipt["human_visual_review"] == "pending"
     assert receipt["editorial_review"] == "pending"
@@ -467,6 +470,9 @@ def test_real_four_format_render_and_receipt(tmp_path):
     assert receipt["slide_layout"] == {
         "producer": rendering.SLIDE_LAYOUT,
         "text_budget": rendering.SLIDE_TEXT_LIMIT,
+        "prose_budget": rendering.SLIDE_PROSE_LIMIT,
+        "line_width": rendering.SLIDE_LINE_WIDTH,
+        "line_limit": rendering.SLIDE_LINE_LIMIT,
     }
     import zipfile
     import xml.etree.ElementTree as ET
@@ -677,3 +683,103 @@ def test_only_declared_diagram_targets_reach_rendered_images(tmp_path):
         rendering.rebase_links(
             node, tmp_path, "a" * 40, {target: "figures/diagram.png"}
         )
+
+
+def _layout_prose(text):
+    import re
+    return {"t": "Para", "c": [
+        {"t": "Space"} if token.isspace() else {"t": "Str", "c": token}
+        for token in re.findall(r"\s+|\S+", text)
+    ]}
+
+
+def _layout_pages(document):
+    pages = []
+    for block in rendering.paginate_slides(document)["blocks"]:
+        if block["t"] == "Header":
+            pages.append([])
+        else:
+            pages[-1].append(block)
+    return [page for page in pages if page]
+
+
+@pytest.mark.parametrize("filename,needle", [
+    ("01_introduction.md", "A scholarly profile"),
+    ("02_system_context.md", "The public repository"),
+    ("03_methods.md", "The checkout-local"),
+    ("03_methods.md", "The shared [paper-resource"),
+    ("03_methods.md", "timing and tracing workloads"),
+    ("06_limitations_and_next_steps.md", "Capacity planning"),
+])
+def test_actual_manuscript_paragraphs_do_not_orphan_their_final_words(filename, needle):
+    """These paragraphs produced the observed 1–5-word frozen LO slides."""
+    import re
+    root = Path(__file__).resolve().parents[2]
+    source = (root / "docs/manuscript" / filename).read_text()
+    paragraph = next(value for value in source.split("\n\n") if needle in value)
+    # Isolate visible prose for this allocation regression. Rich inline identity
+    # and resolved link/citation retention have separate AST/native regressions.
+    paragraph = re.sub(r"\[([^]]+)\]\([^)]*\)", r"\1", paragraph)
+    paragraph = paragraph.replace("[@docxologyIndex]", "(Friedman 2026)").replace("`", "")
+    paragraph = " ".join(paragraph.split())
+    original = _layout_prose(paragraph)
+    pages = _layout_pages({"meta": {}, "blocks": [original]})
+    assert len(pages) == 1, filename
+    assert pages[0] == [original]
+
+
+def test_long_prose_prefers_complete_sentence_boundaries_and_retains_every_inline():
+    sentences = [" ".join([word] * 24) + "." for word in ("Alpha", "Bravo", "Charlie", "Delta")]
+    original = _layout_prose(" ".join(sentences))
+    pages = _layout_pages({"meta": {}, "blocks": [original]})
+    paragraphs = [block for page in pages for block in page]
+    assert [inline for block in paragraphs for inline in block["c"]] == original["c"]
+    assert all("".join(node.get("c", " ") for node in block["c"]).rstrip().endswith(".") for block in paragraphs)
+    assert all(rendering._slide_text_size(block) >= 120 for block in paragraphs)
+
+
+def test_long_single_sentence_balances_tiny_tail_without_discarding_words():
+    original = _layout_prose(" ".join(["retained"] * 61) + ".")
+    pages = _layout_pages({"meta": {}, "blocks": [original]})
+    paragraphs = [block for page in pages for block in page]
+    assert len(pages) >= 2
+    assert [inline for block in paragraphs for inline in block["c"]] == original["c"]
+    assert min(rendering._slide_text_size(block) for block in paragraphs) >= 120
+
+
+def test_short_adjacent_paragraphs_pack_in_order_within_one_section():
+    originals = [_layout_prose(f"Paragraph {index} retains its own complete authored sentence.") for index in range(6)]
+    document = {"meta": {}, "blocks": [{"t": "Header", "c": [2, ["section", [], []], [{"t": "Str", "c": "Section"}]]}, *originals]}
+    pages = _layout_pages(document)
+    assert len(pages) < len(originals)
+    assert any(len(page) > 1 for page in pages)
+    assert [block for page in pages for block in page] == originals
+
+
+def test_packing_keeps_section_boundaries_and_co_located_anchor_aliases():
+    def header(identity):
+        return {"t": "Header", "c": [2, [identity, [], []], [{"t": "Str", "c": identity}]]}
+    first, second = _layout_prose("First complete paragraph."), _layout_prose("Second complete paragraph.")
+    nested = {"t": "Div", "c": [["inner", [], []], [second]]}
+    jumps = {"t": "Para", "c": [{"t": "Link", "c": [["", [], []], [{"t": "Str", "c": "Jump"}], ["#inner", ""]]}]}
+    output = rendering.paginate_slides({"meta": {}, "blocks": [header("one"), first, nested, header("two"), jumps]})
+    assert [block["c"][1][0] for block in output["blocks"] if block["t"] == "Header"] == ["one", "two"]
+    assert output["blocks"][1:3] == [first, second]
+    assert output["blocks"][-1]["c"][0]["c"][-1][0] == "#one"
+    assert jumps["c"][0]["c"][-1][0] == "#inner"
+
+
+def test_explicit_line_breaks_prevent_false_compact_packing():
+    originals = [{"t": "Para", "c": [{"t": "Str", "c": "line"}, {"t": "LineBreak"}] * 6} for _ in range(2)]
+    pages = _layout_pages({"meta": {}, "blocks": originals})
+    assert len(pages) >= 2
+    assert [inline for page in pages for block in page for inline in block["c"]] == [inline for block in originals for inline in block["c"]]
+
+
+def test_nested_list_packing_accounts_for_every_indentation_level():
+    body = _layout_prose(" ".join(["word"] * 37) + ".")
+    nested = {"t": "BulletList", "c": [[{"t": "BulletList", "c": [[body]]}]]}
+    originals = [nested, nested]
+    pages = _layout_pages({"meta": {}, "blocks": originals})
+    assert len(pages) == 2
+    assert [block for page in pages for block in page] == originals
