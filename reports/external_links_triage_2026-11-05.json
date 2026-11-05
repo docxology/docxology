@@ -1,14 +1,14 @@
 {
   "generated_at": "2026-11-05T03:06:41Z",
   "source": "reports/external_links_2026-11-05.json",
-  "checked_urls": 997,
-  "ok": 829,
+  "checked_urls": 1003,
+  "ok": 835,
   "warnings": 168,
   "categories": {
     "bot-protected-or-rate-limited": 160,
     "connection-failure": 1,
     "needs-replacement": 2,
-    "ok": 829,
+    "ok": 835,
     "timeout": 4,
     "upstream-transient": 1
   },

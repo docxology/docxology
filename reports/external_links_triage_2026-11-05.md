@@ -3,8 +3,8 @@
 Scoped network-link triage for public-facing repository hubs.
 
 - Source report: `reports/external_links_2026-11-05.json`
-- Checked URLs: 997
-- OK: 829
+- Checked URLs: 1003
+- OK: 835
 - Warnings: 168
 
 ## Categories
@@ -14,7 +14,7 @@ Scoped network-link triage for public-facing repository hubs.
 | `bot-protected-or-rate-limited` | 160 | Likely blocks automated checks; verify manually before replacing. |
 | `connection-failure` | 1 | Could not connect during this run. |
 | `needs-replacement` | 2 | Returned 404 and should be replaced or removed if no longer valid. |
-| `ok` | 829 | Returned a 2xx/3xx response. |
+| `ok` | 835 | Returned a 2xx/3xx response. |
 | `timeout` | 4 | Timed out under the bounded checker timeout. |
 | `upstream-transient` | 1 | Server-side outage or temporary upstream failure. |
 
