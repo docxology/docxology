@@ -11,6 +11,7 @@ import json
 import re
 import subprocess
 from dataclasses import dataclass, replace
+from collections.abc import Callable
 from pathlib import Path, PurePosixPath
 from types import MappingProxyType
 from typing import TYPE_CHECKING
@@ -90,6 +91,31 @@ def source_file(
     return path if rel.as_posix() in visible else None
 
 
+def read_source_text(
+    path: Path, *, limit: int, reader: Callable[..., str] | None = None
+) -> str:
+    """Read eligible source text strictly and within its byte boundary.
+
+    Callers still own current source eligibility checks. A supplied reader may
+    reuse a version-aware text observation, but cannot waive the byte/type gate.
+    """
+    if path.stat().st_size > limit:
+        raise ValueError(f"Oversized public source input: {path}")
+    if reader is None:
+        with path.open("rb") as stream:
+            raw = stream.read(limit + 1)
+        if len(raw) > limit:
+            raise ValueError(f"Oversized public source input: {path}")
+        text = raw.decode("utf-8")
+    else:
+        text = reader(path, limit=limit)
+    if not isinstance(text, str):
+        raise TypeError("Public source reader must return text")
+    if len(text.encode("utf-8")) > limit:
+        raise ValueError(f"Oversized public source input: {path}")
+    return text
+
+
 @dataclass(frozen=True)
 class RemotePrimaryPDF:
     """An explicitly reviewed edition hosted at one exact Zenodo record."""
@@ -157,11 +183,13 @@ class PaperResources:
         repo_root: Path,
         docs_path: str,
         visible_paths: frozenset[str] | None = None,
+        *,
+        read_text: Callable[..., str] | None = None,
     ) -> PaperResources:
-        resources = cls._load(repo_root, docs_path, visible_paths)
+        resources = cls._load(repo_root, docs_path, visible_paths, read_text=read_text)
         from docxology_tools.scholar_pdf_projection import projection_for_resources
 
-        projection = projection_for_resources(resources, visible_paths)
+        projection = projection_for_resources(resources, visible_paths, read_text=read_text)
         return replace(resources, scholar_pdf=projection) if projection else resources
 
     @classmethod
@@ -170,6 +198,8 @@ class PaperResources:
         repo_root: Path,
         docs_path: str,
         visible_paths: frozenset[str] | None = None,
+        *,
+        read_text: Callable[..., str] | None = None,
     ) -> PaperResources:
         root = repo_root.resolve()
         if not docs_path:
@@ -211,7 +241,7 @@ class PaperResources:
             return cls(root)
         meta_path = folder / "metadata.json"
         meta = (
-            json.loads(meta_path.read_text(encoding="utf-8"))
+            json.loads(read_source_text(meta_path, limit=32 * 1024 * 1024, reader=read_text))
             if meta_path in files
             else {}
         )

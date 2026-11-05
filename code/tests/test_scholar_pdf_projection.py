@@ -553,3 +553,102 @@ def test_local_link_gate_refuses_malformed_declared_projection_registry(pilot, s
         registry.symlink_to("absent-review.json")
     with pytest.raises(ValueError):
         validator.validate_local_links()
+
+
+
+def _valid_seo_page(pilot):
+    page = pilot["root"] / "works/Example.html"
+    page.write_text(
+        page.read_text().replace(
+            "</head>",
+            '<meta name="citation_journal_title" content="Fixture Journal"></head>',
+        )
+    )
+
+
+def test_seo_projection_inputs_are_read_once_per_pass(pilot, monkeypatch):
+    from collections import Counter
+    from docxology_tools import seo_invariants
+
+    _valid_seo_page(pilot)
+    seo_invariants.clear_page_cache()
+    reads = Counter()
+    original_open = Path.open
+
+    def counting_open(path, mode="r", *args, **kwargs):
+        if "r" in mode and path.suffix in {".json", ".html"}:
+            reads[path] += 1
+        return original_open(path, mode, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "open", counting_open)
+    assert seo_invariants.check_work_citations(pilot["root"]) == []
+    assert pilot["folder"] / "metadata.json" in reads
+    assert reads and all(count == 1 for count in reads.values()), reads
+
+
+@pytest.mark.parametrize(
+    "change", ["same_size_abstract", "duplicate_key", "invalid_utf8", "symlink", "hardlink"]
+)
+def test_cached_seo_projection_inputs_are_revalidated(pilot, change):
+    import os
+    from docxology_tools import seo_invariants
+
+    _valid_seo_page(pilot)
+    seo_invariants.clear_page_cache()
+    assert seo_invariants.check_work_citations(pilot["root"]) == []
+    metadata = pilot["folder"] / "metadata.json"
+    before = metadata.stat()
+    raw = metadata.read_bytes()
+    if change == "same_size_abstract":
+        metadata.write_bytes(raw.replace(b"A complete", b"a complete", 1))
+        os.utime(metadata, ns=(before.st_atime_ns, before.st_mtime_ns))
+    elif change == "duplicate_key":
+        metadata.write_bytes(raw.replace(b'"doi":', b'"doi":"10.1234/other","doi":', 1))
+    elif change == "invalid_utf8":
+        metadata.write_bytes(raw.replace(b"Example article", b"\xffxample article", 1))
+    else:
+        saved = metadata.with_name("retained-metadata.json")
+        metadata.rename(saved)
+        if change == "symlink":
+            metadata.symlink_to(saved)
+        else:
+            metadata.hardlink_to(saved)
+    with pytest.raises((ValueError, UnicodeError)):
+        seo_invariants.check_work_citations(pilot["root"])
+
+
+def test_seo_rejects_an_oversized_cached_registry_before_reading_it(pilot, monkeypatch):
+    from docxology_tools import seo_invariants
+
+    _valid_seo_page(pilot)
+    seo_invariants.clear_page_cache()
+    assert seo_invariants.check_work_citations(pilot["root"]) == []
+    registry = pilot["root"] / REGISTRY
+    registry.write_bytes(b" " * (256 * 1024 + 1))
+    original_open = Path.open
+
+    def refuse_registry_read(path, *args, **kwargs):
+        assert path != registry, "oversized registry was opened before its byte gate"
+        return original_open(path, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "open", refuse_registry_read)
+    with pytest.raises(ValueError, match="Oversized"):
+        seo_invariants.check_work_citations(pilot["root"])
+
+
+@pytest.mark.parametrize("value", [b"{}", None, {}, 3])
+def test_projection_source_reader_requires_text(pilot, value):
+    from docxology_tools.scholar_pdf_projection import verified_projections
+
+    with pytest.raises(TypeError, match="must return text"):
+        verified_projections(pilot["root"], read_text=lambda path, **kwargs: value)
+
+
+def test_projection_source_reader_cannot_waive_the_byte_limit(pilot):
+    from docxology_tools.scholar_pdf_projection import verified_projections
+
+    def oversized(path, *, limit):
+        return " " * (limit + 1)
+
+    with pytest.raises(ValueError, match="Oversized"):
+        verified_projections(pilot["root"], read_text=oversized)

@@ -19,7 +19,7 @@ from urllib.parse import unquote, urlsplit
 from docxology_tools.biblio_table import iter_bibliography_rows
 from docxology_tools.bibliography_links import canonical_link_url
 from docxology_tools.citation_metadata import publication_date
-from docxology_tools.paper_artifacts import SITE_URL, source_file, source_paths
+from docxology_tools.paper_artifacts import SITE_URL, read_source_text, source_file, source_paths
 from docxology_tools.work_identifiers import validate_catalog, validate_registry
 
 REGISTRY = "data/scholar-pdf-projections.json"
@@ -39,15 +39,13 @@ def _object(pairs):
     return result
 
 
-def _json(root: Path, name: str, visible, *, limit=32 * 1024 * 1024):
+def _json(root: Path, name: str, visible, *, limit=32 * 1024 * 1024, read_text=None):
     path = source_file(root, name, visible)
     if path is None:
         raise ValueError(f"Missing public Scholar projection input: {name}")
-    with path.open("rb") as stream:
-        raw = stream.read(limit + 1)
-    if len(raw) > limit:
-        raise ValueError(f"Oversized Scholar projection input: {name}")
-    return json.loads(raw, object_pairs_hook=_object)
+    return json.loads(
+        read_source_text(path, limit=limit, reader=read_text), object_pairs_hook=_object
+    )
 
 
 def _text(value, label):
@@ -80,7 +78,7 @@ def _path(value):
     return value
 
 
-def declared_projections(root: Path, visible=None) -> dict:
+def declared_projections(root: Path, visible=None, *, read_text=None) -> dict:
     root = root.resolve()
     visible = source_paths(root) if visible is None else visible
     path = source_file(root, REGISTRY, visible)
@@ -92,7 +90,7 @@ def declared_projections(root: Path, visible=None) -> dict:
                 "Managed site is missing its Scholar PDF reservation registry"
             )
         return {"schema_version": SCHEMA_VERSION, "reservations": [], "selections": {}}
-    payload = _json(root, REGISTRY, visible, limit=256 * 1024)
+    payload = _json(root, REGISTRY, visible, limit=256 * 1024, read_text=read_text)
     if (
         not isinstance(payload, dict)
         or set(payload) != {"schema_version", "reservations", "selections"}
@@ -286,16 +284,16 @@ class ProjectedPDF:
 
 
 def verified_projections(
-    root: Path, visible=None, *, declared=None
+    root: Path, visible=None, *, declared=None, read_text=None
 ) -> dict[str, ProjectedPDF]:
     root = root.resolve()
     visible = source_paths(root) if visible is None else visible
-    payload = declared_projections(root, visible) if declared is None else declared
+    payload = declared_projections(root, visible, read_text=read_text) if declared is None else declared
     if not payload["reservations"]:
         return {}
-    identities = _json(root, "data/work-identifiers.json", visible)
+    identities = _json(root, "data/work-identifiers.json", visible, read_text=read_text)
     validate_registry(identities)
-    works = _json(root, "data/works.json", visible)["works"]
+    works = _json(root, "data/works.json", visible, read_text=read_text)["works"]
     if not isinstance(works, list):
         raise ValueError("Current Scholar works must be a list")
     by_key, by_num = {}, {}
@@ -319,7 +317,7 @@ def verified_projections(
     rows = list(iter_bibliography_rows(bibliography))
     validate_catalog(rows, identities)
     rows_by_num = {row.num: row for row in rows}
-    master = _json(root, "papers/paper_metadata.json", visible)
+    master = _json(root, "papers/paper_metadata.json", visible, read_text=read_text)
     result = {}
     from docxology_tools.paper_artifacts import PaperResources
 
@@ -368,8 +366,8 @@ def verified_projections(
                 raise ValueError(
                     "Scholar review DOI differs from the canonical bibliography"
                 )
-            resources = PaperResources._load(root, record["docs_path"], visible)
-            metadata = _json(root, record["docs_path"] + "metadata.json", visible)
+            resources = PaperResources._load(root, record["docs_path"], visible, read_text=read_text)
+            metadata = _json(root, record["docs_path"] + "metadata.json", visible, read_text=read_text)
             if (
                 resources.remote_primary_pdf
                 or resources.primary_pdf != artifact.source
@@ -406,7 +404,7 @@ def verified_projections(
     return result
 
 
-def projection_for_resources(resources, visible=None):
+def projection_for_resources(resources, visible=None, *, read_text=None):
     if resources.remote_primary_pdf or resources.folder is None:
         return None
     visible = source_paths(resources.repo_root) if visible is None else visible
@@ -414,7 +412,7 @@ def projection_for_resources(resources, visible=None):
         if (resources.repo_root / REGISTRY).exists():
             raise ValueError("Scholar registry is not an eligible public source")
         return None
-    payload = declared_projections(resources.repo_root, visible)
+    payload = declared_projections(resources.repo_root, visible, read_text=read_text)
     candidates = [
         item
         for item in payload["reservations"]
@@ -425,7 +423,7 @@ def projection_for_resources(resources, visible=None):
         return None
     if len(candidates) != 1:
         raise ValueError("Ambiguous current Scholar association for one paper folder")
-    return verified_projections(resources.repo_root, visible, declared=payload)[
+    return verified_projections(resources.repo_root, visible, declared=payload, read_text=read_text)[
         candidates[0]["alias"]
     ]
 

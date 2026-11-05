@@ -34,7 +34,7 @@ _SITEMAP_LOC = re.compile(r"<loc>(https://danielarifriedman\.com/[^<]*)</loc>")
 # atomic replacement and same-size edits with restored mtime. Recheck after
 # each fresh read so a concurrently changing page cannot enter the cache.
 _PAGE_CACHE_LIMIT = 4096
-_TEXT_CACHE: OrderedDict[str, tuple[tuple[int, ...], str]] = OrderedDict()
+_TEXT_CACHE: OrderedDict[tuple[str, bool], tuple[tuple[int, ...], str]] = OrderedDict()
 
 
 def clear_page_cache() -> None:
@@ -43,12 +43,18 @@ def clear_page_cache() -> None:
     _head.cache_clear()
 
 
-def _read(path: Path) -> str:
+def _read(path: Path, *, strict: bool = False, limit: int | None = None) -> str:
     try:
         info = path.stat()
     except OSError:
+        if strict:
+            from docxology_tools.paper_artifacts import read_source_text
+
+            return read_source_text(path, limit=limit or 32 * 1024 * 1024)
         return path.read_text(encoding="utf-8", errors="replace")
-    key = str(path)
+    if limit is not None and info.st_size > limit:
+        raise ValueError(f"Oversized public source input: {path}")
+    key = (str(path), strict)
     version = (
         info.st_dev,
         info.st_ino,
@@ -60,7 +66,12 @@ def _read(path: Path) -> str:
     if cached is not None and cached[0] == version:
         _TEXT_CACHE.move_to_end(key)
         return cached[1]
-    text = path.read_text(encoding="utf-8", errors="replace")
+    if strict:
+        from docxology_tools.paper_artifacts import read_source_text
+
+        text = read_source_text(path, limit=limit or 32 * 1024 * 1024)
+    else:
+        text = path.read_text(encoding="utf-8", errors="replace")
     after = path.stat()
     if version != (
         after.st_dev,
@@ -75,6 +86,10 @@ def _read(path: Path) -> str:
     while len(_TEXT_CACHE) > _PAGE_CACHE_LIMIT:
         _TEXT_CACHE.popitem(last=False)
     return text
+
+
+def _read_json(path: Path, *, limit: int = 32 * 1024 * 1024) -> str:
+    return _read(path, strict=True, limit=limit)
 
 
 @functools.lru_cache(maxsize=_PAGE_CACHE_LIMIT)
@@ -104,7 +119,7 @@ def _name_meta(html: str, name: str) -> str | None:
 
 
 def _works_by_docs_path(repo_root: Path) -> dict[str, dict]:
-    works = json.loads(_read(repo_root / "data" / "works.json"))["works"]
+    works = json.loads(_read_json(repo_root / "data" / "works.json"))["works"]
     out: dict[str, dict] = {}
     for work in works:
         path = str(work.get("docs_path") or "").strip().rstrip("/")
@@ -174,7 +189,7 @@ def check_work_citations(repo_root: Path) -> list[str]:
     from docxology_tools.scholar_pdf_projection import abstract_visible
 
     errors: list[str] = []
-    works = json.loads(_read(repo_root / "data/works.json"))["works"]
+    works = json.loads(_read_json(repo_root / "data/works.json"))["works"]
     visible = source_paths(repo_root)
     for work in works:
         rel = f"works/{work['citation_key']}.html"
@@ -185,7 +200,9 @@ def check_work_citations(repo_root: Path) -> list[str]:
         page_text = _read(path)
         parser = CitationHead.parse(page_text)
         tags = parser.tags
-        resources = PaperResources.load(repo_root, work.get("docs_path", ""), visible)
+        resources = PaperResources.load(
+            repo_root, work.get("docs_path", ""), visible, read_text=_read_json
+        )
         if resources.scholar_pdf and not abstract_visible(page_text, (resources.metadata or {}).get("abstract", "")):
             errors.append(f"{rel}: reviewed complete author abstract is not publicly visible")
         expected = {
