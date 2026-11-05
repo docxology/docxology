@@ -142,6 +142,7 @@ def audit_content(
     catalog = ContentCitations(works)
     parsed = {path: ContentPage(path.read_text(encoding="utf-8")) for path in paths}
     citations = []
+    from docxology_tools.scholar_pdf_projection import REGISTRY, resolve_alias
     external: dict[str, list[str]] = {}
     errors = []
     inputs = {}
@@ -196,7 +197,10 @@ def audit_content(
             if target.is_dir():
                 target /= "index.html"
             checked_links += 1
-            if not target.is_file():
+            if not target.is_file() and not (
+                (root / REGISTRY).exists()
+                and resolve_alias(root, target.relative_to(root).as_posix())
+            ):
                 errors.append(f"{location}: missing local target {link['href']}")
                 continue
             if (
@@ -223,7 +227,7 @@ def audit_content(
                     )
                     if fragment not in parsed_target_ids and not collection_state:
                         errors.append(f"{location}: missing fragment {link['href']}")
-            key = target.stem if target.parent == root / "works" else None
+            key = target.stem if target.parent == root / "works" and target.suffix == ".html" else None
             if key and key != "index":
                 if key not in catalog.works:
                     errors.append(f"{location}: unknown work target {key}")

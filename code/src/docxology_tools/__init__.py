@@ -108,6 +108,7 @@ MODULES: tuple[str, ...] = (
     "release_evidence",
     "report_paths",
     "research_connections",
+    "scholar_pdf_projection",
     "scholar_readiness",
     "report_references",
     "resume_data",

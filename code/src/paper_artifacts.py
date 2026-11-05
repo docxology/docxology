@@ -10,9 +10,13 @@ import hashlib
 import json
 import re
 import subprocess
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path, PurePosixPath
 from types import MappingProxyType
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from docxology_tools.scholar_pdf_projection import ProjectedPDF
 from urllib.parse import quote
 
 SITE_URL = "https://danielarifriedman.com/"
@@ -145,9 +149,23 @@ class PaperResources:
     selection_issue: str = ""
     extraction_source: str = ""
     remote_primary_pdf: RemotePrimaryPDF | None = None
+    scholar_pdf: ProjectedPDF | None = None
 
     @classmethod
     def load(
+        cls,
+        repo_root: Path,
+        docs_path: str,
+        visible_paths: frozenset[str] | None = None,
+    ) -> PaperResources:
+        resources = cls._load(repo_root, docs_path, visible_paths)
+        from docxology_tools.scholar_pdf_projection import projection_for_resources
+
+        projection = projection_for_resources(resources, visible_paths)
+        return replace(resources, scholar_pdf=projection) if projection else resources
+
+    @classmethod
+    def _load(
         cls,
         repo_root: Path,
         docs_path: str,
@@ -278,6 +296,8 @@ class PaperResources:
     def primary_pdf_url(self) -> str:
         if self.remote_primary_pdf:
             return self.remote_primary_pdf.url
+        if self.scholar_pdf:
+            return self.scholar_pdf.url
         return self.absolute_url(self.primary_pdf) if self.primary_pdf else ""
 
     @property

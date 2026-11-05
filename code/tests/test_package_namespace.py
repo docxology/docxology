@@ -15,6 +15,7 @@ sys.path.append(str(SRC))
 import docxology_tools  # noqa: E402
 
 NEW_MODULES = (
+    "scholar_pdf_projection",
     "art_collections",
     "artwork_pages",
     "content_audit",
@@ -45,6 +46,8 @@ assert flat is dotted
 assert getattr(package, name) is flat
 if name == 'content_audit':
     assert isinstance(flat.ContentPage('<main></main>'), dotted.ContentPage)
+if name == 'scholar_pdf_projection':
+    assert flat.ProjectedPDF is dotted.ProjectedPDF
 """
     subprocess.run(
         [sys.executable, "-c", script, module_name, first],

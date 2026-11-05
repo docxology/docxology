@@ -569,8 +569,8 @@ SCHEMAS = {
             "schema_version": "1.0",
             "network_checked": "false",
             "indexing_verified": "false",
-            "summary": "local blockers only",
-            "works": "per-work source hashes, citation tags, selected PDF size/placement, and unverified requirements",
+            "summary": "local blockers; reviewed prerequisites remain separate from unverified indexing",
+            "works": "per-work source hashes, citation tags, selected PDF size/placement, reviewed content/rights prerequisites, static visible-abstract measurement and unverified indexing",
         },
     },
     "WorkEnrichment": {

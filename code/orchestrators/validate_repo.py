@@ -412,6 +412,9 @@ def iter_local_links(
 
 
 def validate_local_links() -> None:
+    from docxology_tools.scholar_pdf_projection import verified_projections
+
+    projected = verified_projections(REPO_ROOT)
     manuscript_sections: set[Path] = set()
     generated_images: frozenset[str] = frozenset()
     if (REPO_ROOT / "docs/manuscript/config.yaml").exists():
@@ -466,7 +469,8 @@ def validate_local_links() -> None:
                 if link.startswith("/")
                 else (path.parent / link).resolve()
             )
-            if not target.exists():
+            virtual = target.is_relative_to(REPO_ROOT) and target.relative_to(REPO_ROOT).as_posix() in projected
+            if not target.exists() and not virtual:
                 try:
                     target_display = target.relative_to(REPO_ROOT)
                 except ValueError:

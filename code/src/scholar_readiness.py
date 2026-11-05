@@ -9,6 +9,7 @@ from pathlib import Path, PurePosixPath
 from urllib.parse import urlsplit
 
 from docxology_tools.citation_metadata import CitationHead
+from docxology_tools.scholar_pdf_projection import REGISTRY, abstract_visible
 from docxology_tools.paper_artifacts import (
     PaperResources,
     SITE_URL,
@@ -30,8 +31,9 @@ def assess_work(root: Path, work: dict, visible: frozenset[str]) -> dict:
     page = source_file(root, page_rel, visible)
     resources = PaperResources.load(root, work.get("docs_path", ""), visible)
     parser = CitationHead()
+    page_text = page.read_text(encoding="utf-8") if page else ""
     if page:
-        parser.feed(page.read_text(encoding="utf-8"))
+        parser.feed(page_text)
     tags = parser.tags
     blockers = []
     for field in ("citation_title", "citation_author", "citation_publication_date"):
@@ -54,7 +56,7 @@ def assess_work(root: Path, work: dict, visible: frozenset[str]) -> dict:
     if pdf is None:
         blockers.append("no_selected_local_pdf")
     else:
-        url = resources.absolute_url(pdf)
+        url = resources.primary_pdf_url
         size = pdf.stat().st_size
         same_directory = (
             PurePosixPath(urlsplit(url).path).parent
@@ -75,6 +77,11 @@ def assess_work(root: Path, work: dict, visible: frozenset[str]) -> dict:
             "within_byte_limit": size <= PDF_BYTE_LIMIT,
             "same_directory_as_abstract": same_directory,
         }
+    complete_visible = None
+    if resources.scholar_pdf:
+        complete_visible = abstract_visible(page_text, (resources.metadata or {}).get("abstract", ""))
+        if not complete_visible:
+            blockers.append("complete_author_abstract_not_visible")
     if page is None:
         blockers.append("missing_abstract_page")
     return {
@@ -88,12 +95,23 @@ def assess_work(root: Path, work: dict, visible: frozenset[str]) -> dict:
         "selection_issue": resources.selection_issue,
         "local_status": "blocked" if blockers else "requires_review",
         "blockers": blockers,
-        "unverified_requirements": [
+        "visible_complete_author_abstract": complete_visible,
+        "reviewed_prerequisites": (
+            {"searchable_pdf": resources.scholar_pdf.review["searchability"],
+             "scholarly_content": resources.scholar_pdf.review["scholarly_content"],
+             "redistribution_rights": resources.scholar_pdf.review["rights"],
+             "complete_author_written_abstract": resources.scholar_pdf.review["abstract"],
+             "reviewed_by": resources.scholar_pdf.review["reviewed_by"],
+             "reviewed_at": resources.scholar_pdf.review["reviewed_at"]}
+            if resources.scholar_pdf else {}
+        ),
+        "projection": resources.scholar_pdf.manifest_record() if resources.scholar_pdf else None,
+        "unverified_requirements": (["actual_scholar_indexing", "deployed_route_verification"] if resources.scholar_pdf else [
             "searchable_pdf",
             "scholarly_content",
             "complete_author_written_abstract_or_full_text",
             "actual_scholar_indexing",
-        ],
+        ]),
     }
 
 
@@ -111,6 +129,7 @@ def build_report(root: Path) -> dict:
         "pdf_byte_limit": PDF_BYTE_LIMIT,
         "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
         "works_sha256": fingerprint(works_path),
+        "projection_registry_sha256": fingerprint(source_file(root, REGISTRY, visible)) if source_file(root, REGISTRY, visible) else None,
         "network_checked": False,
         "indexing_verified": False,
         "summary": {
@@ -134,7 +153,7 @@ def render_markdown(report: dict) -> str:
         "# Scholar prerequisite audit",
         "",
         "Offline measurements only. Citation metadata, PDF placement, and size do not establish Scholar inclusion.",
-        "Searchability, scholarly content, complete author-written abstracts/full text, and actual indexing require separate review.",
+        "Per-work source/content/rights reviews are recorded separately from local placement and visible-abstract checks. Actual Scholar indexing remains unverified.",
         "",
         "Source: [Google Scholar inclusion guidance]("
         + report["inclusion_guidance"]

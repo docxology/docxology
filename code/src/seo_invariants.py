@@ -171,6 +171,7 @@ def check_work_citations(repo_root: Path) -> list[str]:
     )
     from docxology_tools.paper_artifacts import PaperResources, source_paths
     from build_work_pages import display_name
+    from docxology_tools.scholar_pdf_projection import abstract_visible
 
     errors: list[str] = []
     works = json.loads(_read(repo_root / "data/works.json"))["works"]
@@ -181,9 +182,12 @@ def check_work_citations(repo_root: Path) -> list[str]:
         if not path.is_file():
             errors.append(f"missing citation page: {rel}")
             continue
-        parser = CitationHead.parse(_read(path))
+        page_text = _read(path)
+        parser = CitationHead.parse(page_text)
         tags = parser.tags
         resources = PaperResources.load(repo_root, work.get("docs_path", ""), visible)
+        if resources.scholar_pdf and not abstract_visible(page_text, (resources.metadata or {}).get("abstract", "")):
+            errors.append(f"{rel}: reviewed complete author abstract is not publicly visible")
         expected = {
             "citation_title": [work["title"]],
             f"citation_{work.get('contributor_role', 'author')}": [

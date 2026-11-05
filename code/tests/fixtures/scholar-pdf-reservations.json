@@ -1,0 +1,37 @@
+{
+  "works/0b40c6a4bc0d1dd0d2a9a4597b557132b01187327389c05c5455df713905f7d3.pdf": {
+    "citation_key": "Friedman2024SharedProtentionsMultiAgent040",
+    "num": 40,
+    "source_pdf": "papers/2024_SharedProtentions/2024_SharedProtentions.pdf",
+    "bytes": 325880,
+    "sha256": "0b40c6a4bc0d1dd0d2a9a4597b557132b01187327389c05c5455df713905f7d3"
+  },
+  "works/665cb03933df668fdc11286d2c973c6ca4cf2300f4bb716c1e8130996832f364.pdf": {
+    "citation_key": "Friedman2023VariationalSynthesisEvolutionaryDevelopmental048",
+    "num": 48,
+    "source_pdf": "papers/2023_VariationalSynthesis/2023_VariationalSynthesis.pdf",
+    "bytes": 1488327,
+    "sha256": "665cb03933df668fdc11286d2c973c6ca4cf2300f4bb716c1e8130996832f364"
+  },
+  "works/6debf52e3c4fdce8330e5601ce3efb7f2c1d9ca3bbaddaf31cfb824ee96d30e4.pdf": {
+    "citation_key": "Friedman2021ActiveInferantsActiveInference075",
+    "num": 75,
+    "source_pdf": "papers/2021_ActiveInferants/2021_ActiveInferants.pdf",
+    "bytes": 1004293,
+    "sha256": "6debf52e3c4fdce8330e5601ce3efb7f2c1d9ca3bbaddaf31cfb824ee96d30e4"
+  },
+  "works/91160c7b340ea9fbd7740a18f968243546ca4dbc95dcfe27b411439fb5a93683.pdf": {
+    "citation_key": "Friedman2020GeneExpressionVariationBrains086",
+    "num": 86,
+    "source_pdf": "papers/2020_GeneExpressionForagers/2020_GeneExpressionForagers.pdf",
+    "bytes": 1115979,
+    "sha256": "91160c7b340ea9fbd7740a18f968243546ca4dbc95dcfe27b411439fb5a93683"
+  },
+  "works/80b790681900c4f9d71b95057711e574664f17dfb9024a315bd28d4ab22530f6.pdf": {
+    "citation_key": "Friedman2016ContextDependentExpressionForaging104",
+    "num": 104,
+    "source_pdf": "papers/2016_ForagingGene/2016_ForagingGene.pdf",
+    "bytes": 536684,
+    "sha256": "80b790681900c4f9d71b95057711e574664f17dfb9024a315bd28d4ab22530f6"
+  }
+}

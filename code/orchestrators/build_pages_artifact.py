@@ -14,7 +14,7 @@ older than that parent's newest date, stay committed in Git but leave the
 Pages projection; a report cited from a published page or data file is never
 omitted. Reviewed supporting Office sources also remain in Git and use pinned
 archive links after exact byte and local-reference checks. Assembly and size
-projection use the same selected paths. This keeps the site below GitHub's 1 GiB Pages limit
+projection use the same selected paths. This keeps the site below GitHub's documented 1 GB published-site cap
 without removing source data from the repository.
 """
 
@@ -40,6 +40,7 @@ from docxology_tools import release_controls  # noqa: E402
 from docxology_tools.release_evidence import is_ephemeral_release_evidence_path  # noqa: E402
 from docxology_tools import report_references  # noqa: E402
 from docxology_tools.archive_projection import declared_archives, verified_archives  # noqa: E402
+from docxology_tools.scholar_pdf_projection import resolve_alias, verified_projections  # noqa: E402
 
 # Re-export the shared policy for existing callers and focused contract tests.
 CONTROL_FILES = release_controls.CONTROL_FILES
@@ -483,14 +484,12 @@ def _relative_paths(*, archive_paths: set[Path] | None = None) -> list[Path]:
         if archive_paths is None
         else archive_paths
     )
-    return sorted(
-        (
-            path
-            for path in tracked_paths()
-            if is_published_path(path) and path not in superseded and path not in office
-        ),
-        key=lambda path: path.as_posix(),
-    )
+    physical = {
+        path for path in tracked_paths()
+        if is_published_path(path) and path not in superseded and path not in office
+    }
+    aliases = {Path(name) for name in verified_projections(REPO_ROOT)}
+    return sorted(physical | aliases, key=lambda path: path.as_posix())
 
 
 def source_path(relative: Path, *, repo_root: Path = REPO_ROOT) -> Path:
@@ -503,6 +502,8 @@ def source_path(relative: Path, *, repo_root: Path = REPO_ROOT) -> Path:
     """
     if relative.is_absolute() or ".." in relative.parts:
         raise SystemExit(f"unsafe Pages input path: {relative}")
+    if projection := resolve_alias(repo_root, relative.as_posix()):
+        return projection.source
     source = repo_root / relative
     try:
         metadata = source.lstat()
@@ -612,6 +613,7 @@ MANIFEST_COMPARISON_FIELDS = (
     "policy",
     "budget",
     "included_files",
+    "projected_scholar_pdfs",
     "control_files",
     "omitted_paper_images",
     "omitted_visual_qa_screenshots",
@@ -753,7 +755,7 @@ def _manifest_payload(
             "omitted_assets_fallback": "Use the GitHub tree/raw templates with the source commit and repository-relative path.",
             "superseded_report_policy": "Superseded dated reports (older-than-newest per report family) remain in the committed repository and are omitted from the Pages projection; any report referenced from a published page or data file is never omitted.",
             "visual_qa_screenshot_policy": "Visual-QA manifests remain in Pages with repository-relative paths and SHA-256 digests; screenshot binaries remain in the committed repository rather than the deploy artifact.",
-            "warning_policy": "At 930 MiB, review growth and report retention before deployment; 950 MiB is a release hard ceiling below the GitHub Pages 1 GiB platform limit.",
+            "warning_policy": "At 930 MiB, review growth and report retention before deployment; 950 MiB remains below GitHub's documented 1 GB published-site cap. The configured 1 GiB outer bound is internal, not that platform cap.",
         },
         "budget": {
             "hard_limit_bytes": HARD_ARTIFACT_BYTES,
@@ -767,6 +769,7 @@ def _manifest_payload(
             "artifact_bytes": 0,
         },
         "included_files": files,
+        "projected_scholar_pdfs": [item.manifest_record() for item in verified_projections(REPO_ROOT).values()],
         "control_files": [
             {"path": path.as_posix(), "role": "public control metadata"}
             for path in controls
@@ -904,6 +907,7 @@ def assemble(output: Path) -> tuple[int, int, list[str]]:
     # selection owns preview, manifest and actual copied output.
     office = {Path(name) for name in verified_archives(REPO_ROOT)}
     selected = _relative_paths(archive_paths=office)
+    projections = verified_projections(REPO_ROOT)
     omitted = [path.as_posix() for path in _omitted_paths(archive_paths=office)]
     if output.exists():
         shutil.rmtree(output)
@@ -914,9 +918,15 @@ def assemble(output: Path) -> tuple[int, int, list[str]]:
         source = source_path(relative)
         destination = output / relative
         destination.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(source, destination)
+        if projection := projections.get(relative.as_posix()):
+            data = projection.read_bytes()
+            destination.write_bytes(data)
+            size = len(data)
+        else:
+            shutil.copy2(source, destination)
+            size = source.stat().st_size
         copied += 1
-        bytes_copied += source.stat().st_size
+        bytes_copied += size
     return copied, bytes_copied, omitted
 
 

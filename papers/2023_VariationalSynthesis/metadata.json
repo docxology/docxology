@@ -26,7 +26,7 @@
     }
   ],
   "description": "This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic proc...",
-  "abstract": "This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic processes. The main result is a formulation of adaptive fitness as a path integral of phenotypic fitness, unifying evolutionary and developmental dynamics through the Free Energy Principle.",
+  "abstract": "This paper introduces a variational formulation of natural selection, paying special atten-\ntion to the nature of ‘things’ and the way that different ‘kinds’ of ‘things’ are individuated from —\nand influence—each other. We use the Bayesian mechanics of particular partitions to understand \nhow slow phylogenetic processes constrain —and are constrained by —fast, phenotypic processes. \nThe main result is a formulation of adaptive fitness as a path integral of phenotypic fitness. Paths of \nleast action, at the phenotypic and phylogenetic scales, can then be read as inference and learning \nprocesses, respectively. In this view, a phenotype actively infers the state of its econiche under a \ngenerative model, whose parameters are learned via natural (Bayesian model) selection. The ensu-\ning variational synthesis features some unexpected aspects. Perhaps the most notable is that it is not \npossible to describe or model a population of conspecifics per se. Rather, it is necessary to consider \npopulations of distinct natural kinds that influence each other. This paper is limited to a description \nof the mathematical apparatus and accompanying ideas. Subsequent work will use these methods \nfor simulations and numerical analyses —and identify points of contact with related mathematical \nformulations of evolution.",
   "keywords": [
     "variational synthesis",
     "natural selection",
@@ -101,5 +101,16 @@
     "pages": "964",
     "issn": "1099-4300",
     "publication_date": "2023-06-21"
+  },
+  "abstract_provenance": {
+    "source": "publisher_pdf",
+    "date": "2026-11-05",
+    "kind": "complete_author_abstract",
+    "url": "https://danielarifriedman.com/papers/2023_VariationalSynthesis/2023_VariationalSynthesis.pdf",
+    "source_pdf": "2023_VariationalSynthesis.pdf",
+    "source_pdf_sha256": "665cb03933df668fdc11286d2c973c6ca4cf2300f4bb716c1e8130996832f364",
+    "abstract_sha256": "dd5ac31aed6742d6c141542f7b8259ab333b82a5175cb76084a92800f6bc16cc",
+    "reviewed_by": "Codex (publication evidence review)",
+    "basis": "Complete author-written abstract transcribed from the exact retained publisher PDF; publisher-page access was unavailable, not inferred."
   }
 }

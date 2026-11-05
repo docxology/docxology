@@ -350,6 +350,10 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
         "Per-work landing pages",
         (
             "data/works.json",
+            "data/scholar-pdf-projections.json",
+            "data/work-identifiers.json",
+            "pages/BIBLIOGRAPHY.md",
+            "code/src/scholar_pdf_projection.py",
             "data/work-authors.json",
             "data/publishing-status.json",
             "bibliography.bib",
@@ -458,6 +462,10 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
         "Paper folder HTML pages",
         (
             "data/works.json",
+            "data/scholar-pdf-projections.json",
+            "data/work-identifiers.json",
+            "pages/BIBLIOGRAPHY.md",
+            "code/src/scholar_pdf_projection.py",
             "papers/paper_metadata.json",
             "papers/*/metadata.json",
             "papers/*/README.md",
@@ -556,6 +564,11 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
         "Offline Scholar prerequisite audit",
         (
             "data/works.json",
+            "data/scholar-pdf-projections.json",
+            "data/work-identifiers.json",
+            "pages/BIBLIOGRAPHY.md",
+            "papers/paper_metadata.json",
+            "code/src/scholar_pdf_projection.py",
             "works/*.html",
             "papers/*/metadata.json",
             "papers/*/full_text.md",

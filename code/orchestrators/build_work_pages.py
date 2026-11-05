@@ -848,8 +848,8 @@ def json_ld(work: dict) -> str:
         {
             "@type": "MediaObject",
             "encodingFormat": "application/pdf",
-            "contentUrl": resources.absolute_url(pdf),
-            "url": resources.absolute_url(pdf),
+            "contentUrl": resources.primary_pdf_url,
+            "url": resources.primary_pdf_url,
             "name": pdf.name,
             "contentSize": f"{pdf.stat().st_size} bytes",
         }
@@ -1018,6 +1018,14 @@ def pdf_downloads_html(resources: PaperResources) -> str:
     if not resources.pdfs and not resources.remote_primary_pdf:
         return ""
     rows = []
+    if projection := resources.scholar_pdf:
+        rights = projection.review["rights"]
+        rows.append(
+            f'<li><a href="{h(projection.url)}" type="application/pdf">Read publisher PDF</a>'
+            f'<span class="muted"> Byte-identical additional web route · '
+            f'<a href="{h(rights["license_url"])}">{h(rights["license"])}</a>; '
+            f'original <a href="{h(projection.source_url)}">publisher PDF archive</a> preserved.</span></li>'
+        )
     if remote := resources.remote_primary_pdf:
         rows.append(
             f'<li><a href="{h(remote.url)}" type="application/pdf">{h(remote.name)}</a>'
@@ -1064,6 +1072,13 @@ def pdf_downloads_html(resources: PaperResources) -> str:
 def render_work_page(work: dict) -> str:
     resources = resources_for(work)
     work = {**work, "_resources": resources}
+    if resources.scholar_pdf:
+        if not work.get("enrichment", {}).get("abstract"):
+            work["enrichment"] = enrichment_for(work, resources=resources)
+        import hashlib
+        abstract_source = work["enrichment"].get("abstract", "")
+        if hashlib.sha256(abstract_source.encode()).hexdigest() != resources.scholar_pdf.review["abstract"]["sha256"]:
+            raise ValueError("Pilot page abstract differs from its reviewed complete author abstract")
     footer_stamp = footer_build_stamp_html()
     doi_link = f"https://doi.org/{work['doi']}" if work.get("doi") else ""
     primary = work.get("url") or doi_link
@@ -1075,8 +1090,9 @@ def render_work_page(work: dict) -> str:
         )
     elif resources.primary_pdf:
         pdf = resources.primary_pdf
+        target = resources.scholar_pdf.url if resources.scholar_pdf else resources.url(pdf)
         actions.append(
-            f'<a class="btn btn-gold" href="{h(resources.url(pdf))}" download="{h(pdf.name)}" type="application/pdf">Download PDF</a>'
+            f'<a class="btn btn-gold" href="{h(target)}" download="{h(pdf.name)}" type="application/pdf">Download PDF</a>'
         )
     elif resources.pdfs:
         actions.append('<a class="btn btn-gold" href="#downloads">PDF downloads</a>')
@@ -1168,7 +1184,7 @@ def render_work_page(work: dict) -> str:
         )
         detail_sections += f"""
         <section class="section">
-            <div class="section-header"><h2>Overview</h2><div class="section-divider"></div></div>
+            <div class="section-header"><h2>{"Complete author-written abstract" if resources.scholar_pdf else "Overview"}</h2><div class="section-divider"></div></div>
             <div class="work-detail">{abstract_html}{keyword_row}{abstract_source_html(enrich)}</div>
         </section>"""
     cards = []
