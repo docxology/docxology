@@ -43,7 +43,7 @@ This supplement maps statements to the source owners that should be inspected wh
 
 - **Pinned archive custody and reference protection.** Source: [archive projection](../../code/src/archive_projection.py), [report references](../../code/src/report_references.py). Verification: [archive regression tests](../../code/tests/test_archive_projection.py), [hosting policy](../operations/github-pages-artifact.md).
 
-- **Scholar technical readiness.** Source: [readiness policy](../../code/src/scholar_readiness.py). Verification: [readiness tests](../../code/tests/test_scholar_readiness.py), [follow-up runbook](../seo/gsc-followup.md). Actual indexing requires an independent observation.
+- **Scholar technical readiness.** Source: [readiness policy](../../code/src/scholar_readiness.py), [PDF projection resolver](../../code/src/scholar_pdf_projection.py) and [reservation registry](../../data/scholar-pdf-projections.json). Verification: [readiness tests](../../code/tests/test_scholar_readiness.py), [follow-up runbook](../seo/gsc-followup.md). Actual indexing requires an independent observation.
 
 ## Expansion checklist
 

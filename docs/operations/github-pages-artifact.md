@@ -24,10 +24,9 @@ referenced from a published page or data file is never omitted. Every omitted
 file remains versioned in GitHub.
 
 Generated paper pages link extracted-image galleries to the canonical GitHub
-tree and use raw GitHub image URLs for previews. The image sitemap describes
-only images actually hosted by the site (the artwork gallery and its supported
-remote image sources), so no published sitemap entry points at an omitted
-Pages asset.
+tree and use raw GitHub image URLs for previews. The retired image sitemap is not recreated or submitted. Current sitemap
+entries describe hosted routes; extracted-image previews and archival fallbacks
+are checked separately, so a sitemap must not advertise an omitted Pages asset.
 
 The artifact builder emits a review warning at 930 MiB; ordinary CI enforces
 that 930 MiB budget. The projection growth target is at most 890 MiB, preserving
@@ -93,6 +92,20 @@ documents may instead use pinned GitHub source downloads, declared in
 a visible link to its original Office source archive. Archive routing requires
 exact source/committed-object byte agreement and rejects any surviving local
 download reference; it never deletes repository source bytes. No source evidence is deleted by this policy.
+
+## Scholarly discovery aliases
+
+The [reviewed projection registry](../../data/scholar-pdf-projections.json)
+reserves content-addressed `works/<sha256>.pdf` aliases beside selected abstract
+pages. The shared resolver verifies source hashes, exact identities, rights
+evidence and complete abstracts before the assembler copies bytes into its
+output. These are additional web routes, with no duplicate source PDFs in Git.
+All reservations, including retired associations, consume a 5 MiB aggregate
+allowance; each document is at most 5,000,000 bytes. Original download routes
+remain hosted and selected remote editions retain priority. Alias growth must
+also pass the unchanged whole-site budget. The manifest records each alias,
+source, hash, bytes and license evidence. See [Scholar inclusion](../seo/scholar-inclusion.md)
+for source review, exact local checks and separate deployed/indexing acceptance.
 
 ## Primary PDF hosting and source custody
 

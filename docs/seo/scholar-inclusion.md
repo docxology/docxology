@@ -17,29 +17,44 @@ with the curated citation year and DOI. Otherwise year-only precision is kept.
 `seo_invariants.check_work_citations` verifies title, all authors in order,
 DOI, date, journal fields, and the actual eligible primary PDF against sources.
 
-## Remaining Scholar requirements
+## Bounded same-directory PDF pilot
 
 [Google's inclusion guidance](https://scholar.google.com/intl/en/scholar/inclusion.html)
-requires the PDF specified by `citation_pdf_url` to be in the same subdirectory
-as its HTML abstract. This site currently serves canonical abstracts under
-`works/` and archival PDFs under `papers/`. The cross-directory links are
-valid site links but do not meet that placement requirement. Keep the existing
-permanent URLs and Pages artifact ceiling; do not copy the entire PDF archive
-into `works/` or claim this gap is resolved. A future proposal must preserve
-inbound links, bind projected files to source hashes, and pass the unchanged
-artifact budget before changing placement.
+requires the PDF selected by `citation_pdf_url` to share the abstract page's
+subdirectory. The reviewed pilot declares byte-identical, content-addressed
+`works/<sha256>.pdf` aliases for selected journal articles in
+[`data/scholar-pdf-projections.json`](../../data/scholar-pdf-projections.json).
+The [dated source review](../../reports/scholar_pdf_placement_review_2026-11-05.md)
+records the five selected documents, rights evidence, searchable first-page
+text, ordered bylines, dates and complete author-written abstracts. The two
+MDPI abstracts were adopted in full from the retained publisher PDFs.
 
-A [dated budget-safe pilot proposal](../../reports/scholar_pdf_placement_proposal_2026-10-13.md)
-now evaluates content-addressed, byte-identical web copies while preserving
-every inbound work and archive URL. It is not applied: per-document content
-review, a declared projection contract, fresh artifact measurements, and
-deployed old/new URL checks remain prerequisites.
+The shared [projection resolver](../../code/src/scholar_pdf_projection.py)
+validates exact work identity, source bytes, review bindings and immutable
+destination reservations. The Pages assembler creates aliases only in its
+output; no duplicate PDFs are added to the repository. Each file must be at
+most 5,000,000 bytes, and all reserved aliases together must stay within a
+5 MiB aggregate allowance. Retired reservations remain hosted and budgeted.
+Changing a selected edition never reassigns an existing alias to new bytes.
+Reviewed remote primaries retain priority over aliases; original `papers/`
+PDFs and their public URLs remain available.
 
-The guidance also requires searchable PDFs no larger than 5 MB, scholarly
-content, and freely visible full text or complete author-written abstracts.
-Those requirements are separate from valid HTML metadata. A generated summary,
-book, editorial, or oversized document is not automatically eligible. Do not
-compress or rewrite source PDFs merely to claim inclusion.
+The work-page citation tag, download link and structured data use the same
+selected resource. The readiness audit binds the selected bytes and checks
+that the complete reviewed abstract remains visible in static HTML. Hidden,
+collapsed or substituted summaries fail that contract. Declared alias paths
+are recognized precisely by link and SEO checks, then copied and hashed by
+the artifact builder under the unchanged 930 MiB CI budget and 950 MiB hard
+ceiling. The assembled manifest records alias membership and source custody.
+
+The [October proposal](../../reports/scholar_pdf_placement_proposal_2026-10-13.md)
+is historical planning evidence. The current registry and dated review own the
+implemented pilot. Other works can retain cross-directory archival links or
+reviewed remote editions; the pilot does not establish their eligibility.
+Google also requires scholarly content, searchable files and freely visible
+full text or complete author-written abstracts. Source review, generated-page
+agreement, deployment verification and actual indexing are separate checks.
+Do not compress or rewrite source PDFs merely to claim inclusion.
 
 The 2026-10-12 source pass populated citation metadata for 22 DOI/title-matched
 Crossref records, including 19 journal articles. Ten further requests returned
@@ -77,8 +92,9 @@ tags remain local blockers. Repeated ordered author tags are valid. This
 lightweight parser is not a complete HTML5 tree builder; the exact source
 identity gate and browser QA remain separate checks.
 
-Searchable PDF text, scholarly suitability, complete author-written abstracts
-or full text, and actual Scholar indexing remain explicitly unverified. The
+The configured pilot records reviewed searchable text, scholarly suitability
+and complete author-written abstracts as prerequisites. Those observations do
+not verify every catalog item or actual Scholar indexing. The
 catalog includes software, courses, books, and other material; a local blocker
 count is not an estimate of how many scholarly articles Google should index.
 The dataset is discoverable through the website data catalog and agent schema
@@ -98,7 +114,8 @@ PR content is live, that Google indexed a URL, or that Scholar merged versions.
 After the changes land and deploy, verify the new work pages and PDFs directly,
 then use the signed-in [Search Console runbook](gsc-followup.md) to submit the
 sitemap and inspect selected work URLs. Scholar profile membership and indexing
-must be checked separately. The available browser on 2026-10-12 was signed out;
-no property submission or authenticated Scholar metrics refresh was performed.
+must be checked separately. The [2026-11-05 signed-in Search Console observation](../../reports/gsc_observations_2026-11-05.md)
+records successful sitemap discovery and the external service failure during
+one selective indexing request. It is separate from Scholar review.
 Keep `data/scholar-snapshot.json` and its receipt unchanged until a direct
 authenticated observation is recorded through the declared tool.

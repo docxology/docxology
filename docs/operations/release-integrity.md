@@ -1,7 +1,10 @@
 # Release integrity and retention
 
-The repository is the complete archival source; GitHub Pages is the bounded
-navigable projection. A public release is not complete until the source,
+The repository is the curated catalog and archive of retained local sources;
+selected publication editions and provider media can remain at identified
+external archives. GitHub Pages is the bounded navigable projection. The
+[hosting policy](github-pages-artifact.md#primary-pdf-hosting-and-source-custody)
+defines edition-specific custody and source evidence. A public release is not complete until the source,
 generated layer, artifact, deployment, and live verification records agree.
 
 ## Ordered release gate

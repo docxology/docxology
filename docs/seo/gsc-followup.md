@@ -139,6 +139,7 @@ Meaningful count changes often take **1–4 weeks**.
 | A validation run fails | Inspect a failing sample URL; confirm 200 + `noindex` or a valid canonical target, and that the fix is live for **all** affected URLs, before re-validating. If the URL is a legitimate exclusion, stop — it needs no validation |
 | Alternate canonical persists | Expected for `papers/` pages — not an error. For any other page, re-request indexing on the canonical `works/` page and wait for recrawl |
 | Request indexing greyed out | Daily quota — retry tomorrow; prioritize `/` and `publications.html` |
+| Request indexing reports a service or reCAPTCHA connection error | Record the failed request, retry when the service is available, and retain an unsubmitted status until the UI confirms acceptance; do not bypass a challenge |
 | Sitemap couldn't fetch | If it is `sitemap.xml`, confirm [sitemap.xml](https://danielarifriedman.com/sitemap.xml) loads and retry. If it is a retired sitemap (Step 1b), remove it in GSC — do not recreate the file |
 | Unfamiliar referring page such as `github.global.ssl.fastly.net/...` | GitHub Pages’ legacy CDN host. Direct requests to it return 404 and the page self-canonicalizes to the apex. No action |
 
@@ -146,7 +147,7 @@ Meaningful count changes often take **1–4 weeks**.
 
 ## Observation log
 
-Dated Search Console observations (what was read, what was requested, the next recheck) live in `reports/gsc_observations_<date>.md`, not in this runbook. Latest: [gsc_observations_2026-10-05.md](../../reports/gsc_observations_2026-10-05.md).
+Dated Search Console observations (what was read, what was requested, the next recheck) live in `reports/gsc_observations_<date>.md`, not in this runbook. Latest: [gsc_observations_2026-11-05.md](../../reports/gsc_observations_2026-11-05.md).
 
 ---
 
@@ -161,5 +162,5 @@ See also [canonical-policy.md](canonical-policy.md) and [code/src/seo_invariants
 
 Google Scholar has separate article/PDF and metadata requirements. See
 [scholar-inclusion.md](scholar-inclusion.md) for the citation gate, reviewed
-journal fields, and the unresolved PDF directory constraint. Search Console
+journal fields, and the bounded same-directory PDF pilot. Search Console
 submission and IndexNow are not Scholar inclusion evidence.

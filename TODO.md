@@ -8,7 +8,7 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-11-04; only unfinished work and recurring checks remain.
+- Last reviewed: 2026-11-05; only unfinished work and recurring checks remain.
   Completed implementation and source-review history lives in CHANGELOG.md and
   the linked dated reports. Effort estimates below are separate from priority.
 
@@ -17,13 +17,14 @@ criteria, and dependencies. Re-review this file before each public release.
 | Effort | Unfinished work | Main dependency |
 | --- | --- | --- |
 | Minor | Search Console cleanup and selected URL inspections; retry unavailable source queries | Signed-in owner access, public source availability |
-| Medium | Named visual review and revision-bound release attestation; current-candidate Lighthouse review; Pages growth/retention consumer migration; Scholar pilot eligibility/projection review | Reviewer/access, measured candidate evidence, reviewed source/projection contract |
+| Medium | Named visual review and revision-bound release attestation; current-candidate Lighthouse review; Pages growth/retention review; deployed Scholar-pilot routes and later index observations | Reviewer/access, measured candidate evidence, reviewed source/projection contract |
 | Major | Deferred licensed full-text acquisition and originating-paper corrections; manuscript format inspection and editorial review; managed-profile security scan and finding disposition | Rights holders, depositors/authors, editorial decisions, required scan runtime |
 
-The Scholar same-directory PDF gap now has a [budget-safe pilot proposal](reports/scholar_pdf_placement_proposal_2026-10-13.md)
-preserving permanent URLs and the artifact limit. No files have been migrated;
-eligibility review and a validated projection contract precede implementation.
-Actual Scholar indexing remains unverified.
+The [reviewed Scholar pilot](reports/scholar_pdf_placement_review_2026-11-05.md)
+implements bounded, byte-identical same-directory aliases while preserving
+permanent URLs and the artifact limit. Retain exact deployed-route checks and
+later index observations as separate evidence. Actual Scholar indexing remains
+unverified.
 Recurring checks below are operating obligations, not unfinished feature work.
 
 ## P0 — Release and integrity
@@ -174,10 +175,16 @@ Recurring checks below are operating obligations, not unfinished feature work.
 - Deliverable: retain compact artwork and video indexes with lazy detail loading, document per-asset budgets, and review Pages growth trends
 - Acceptance: current HTML, JS, JSON, hero, thumbnail, CV, and generated-data budgets are measured and remain below documented thresholds; large interactive datasets do not load detail-only payloads before user need
 - Dependencies: Pages artifact manifest, asset audit, browser QA
-- Performance follow-up: use retained candidate-SHA Lighthouse diagnostics to
-  improve pages below the aspirational performance 85, accessibility 95, and
-  SEO 95 scores. Keep existing floors and measured results visible; passing
-  the ratchet does not establish that every aspirational target was met.
+- Candidate performance work from the November 4 refresh is complete in its
+  retained Lighthouse evidence. Repeat the same candidate-bound diagnostics
+  after relevant asset/runtime growth; do not carry that completed repair as
+  a current failing-page queue. Keep the aspirational performance 85,
+  accessibility 95 and SEO 95 targets alongside the enforced floors.
+- Capacity priority: measure the current Pages projection and preserve room
+  for reviewed scholarly discovery copies. New primary PDFs use reviewed
+  versioned archives where appropriate; report omission requires working
+  provenance consumers and pinned custody. Moving metadata-only art pages is
+  not a substitute for measuring the dominant byte categories.
 - Retained candidate review: commit `4b2af321e` reports performance 99 and
   130 ms blocking time for `art.html`; all eight sampled pages meet the
   aspirational category targets. The [exact-candidate review](reports/lighthouse_review_2026-10-17.json)
@@ -194,14 +201,15 @@ Recurring checks below are operating obligations, not unfinished feature work.
 - Deliverable: validate meta-policy limitations, CSP/URL/iframe/rel invariants, canonical and sitemap families, then record Search Console follow-up
 - Acceptance: no inline handlers/scripts or unsafe schemes; approved YouTube origin only; every public family has canonical, metadata, schema, and sitemap policy coverage
 - Dependencies: `seo_invariants.py`, `gsc_followup_preflight.py`, signed-in Search Console review
-- Scholar planning: keep permanent URLs and the artifact ceiling. Review the
-  [measured pilot proposal](reports/scholar_pdf_placement_proposal_2026-10-13.md)
-  before any same-directory web projection; no copies have been applied. Metadata
-  checks and the [prerequisite audit](reports/scholar_readiness.md) are implemented.
-  Content/PDF eligibility and actual indexing still require separate review;
+- Scholar follow-up: the reviewed five-document same-directory pilot is
+  implemented through immutable reservations and an unchanged hosting budget.
+  [The source review](reports/scholar_pdf_placement_review_2026-11-05.md) and
+  [prerequisite audit](reports/scholar_readiness.md) distinguish reviewed
+  content/rights evidence from actual deployment and indexing. Verify old/new
+  PDF byte identity after deployment, then monitor index inclusion separately;
   see [scholar-inclusion.md](docs/seo/scholar-inclusion.md).
-- Latest signed-in Search Console follow-up: 2026-11-01, recorded in
-  [the dated report](reports/gsc_observations_2026-11-01.md). Only the successful
+- Latest signed-in Search Console follow-up: 2026-11-05, recorded in
+  [the dated report](reports/gsc_observations_2026-11-05.md). Only the successful
   current sitemap remains submitted. Open actions:
   - Verify the three restored legacy work routes after deployment, then monitor
     Google's recrawl. Do not validate the whole 404 bucket while historical QA
@@ -209,8 +217,9 @@ Recurring checks below are operating obligations, not unfinished feature work.
   - Request indexing for selected indexable canonical work and video detail
     pages, spread across days for the quota; never the noindex `videos/` index
     or redirect stubs.
-  - Recheck Page indexing around 2026-11-02, then weekly. The observed All known
-    pages dataset was last updated 2026-10-22 and cannot certify current indexing.
+  - Retry the selective indexing request when Google's submission service is
+    available. The November 5 request failed; none was accepted. Recheck Page
+    indexing weekly and retain the report's scope/date when comparing counts.
   - Follow [gsc-followup.md](docs/seo/gsc-followup.md); never recreate or resubmit
     the retired image sitemap.
 
