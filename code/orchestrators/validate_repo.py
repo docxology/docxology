@@ -412,9 +412,15 @@ def iter_local_links(
 
 
 def validate_local_links() -> None:
-    from docxology_tools.scholar_pdf_projection import verified_projections
+    from docxology_tools.scholar_pdf_projection import REGISTRY, verified_projections
 
-    projected = verified_projections(REPO_ROOT)
+    # Ordinary documentation fixtures need no Git-backed PDF inventory. A
+    # declared registry, including a dangling symlink, must still be validated.
+    projected = (
+        verified_projections(REPO_ROOT)
+        if os.path.lexists(REPO_ROOT / REGISTRY)
+        else {}
+    )
     manuscript_sections: set[Path] = set()
     generated_images: frozenset[str] = frozenset()
     if (REPO_ROOT / "docs/manuscript/config.yaml").exists():

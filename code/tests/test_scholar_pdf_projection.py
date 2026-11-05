@@ -541,3 +541,15 @@ def test_replaced_pdf_is_refused_without_unbounded_read(pilot, monkeypatch):
     with pytest.raises(ValueError, match="reviewed bytes"):
         projection.read_bytes()
     assert sum(reads) <= projection.bytes + 1
+
+
+@pytest.mark.parametrize("shape", ["invalid_json", "dangling_symlink"])
+def test_local_link_gate_refuses_malformed_declared_projection_registry(pilot, shape):
+    registry = pilot["root"] / REGISTRY
+    if shape == "invalid_json":
+        registry.write_text("{not valid reviewed JSON")
+    else:
+        registry.unlink()
+        registry.symlink_to("absent-review.json")
+    with pytest.raises(ValueError):
+        validator.validate_local_links()
