@@ -80,6 +80,36 @@ before regenerating. Keep version-specific file metadata and preserved historica
 sources even when the full PDF remains external. The remote-primary backend
 currently accepts Zenodo file URLs; GitHub Releases support is a future option.
 
+## Authorship Authority
+
+The Authors column in [`pages/BIBLIOGRAPHY.md`](../../pages/BIBLIOGRAPHY.md)
+owns public bylines. Keep its reviewed contributor record in
+[`data/work-authors.json`](../../data/work-authors.json) under the permanent
+citation key. Ordinary `verified` records use title-matched registry evidence;
+`document_verified` remains restricted to works without a DOI.
+
+For a DOI-bearing work whose selected PDF byline differs from registry creator metadata,
+use `doi_document_verified` after explicit source review. Bind the work number,
+catalog DOI, paper folder and exact PDF record to the extracted `source`
+SHA-256, verbatim `evidence`, PDF SHA-256, and `source_evidence` sidecar SHA-256.
+Retain the raw `registry_baseline` and selected `document_baseline`, including
+their different order, dates or version information. The `review` records the
+reviewer, timezone-qualified time and reason; copy only observed ORCIDs.
+The selected byline applies to that reviewed edition.
+
+Registry refreshes preserve this selected byline and its frozen observations.
+They record a separate `registry_refresh` observation and expose drift or
+unavailable registry evidence for review, without turning a new fetch into a
+fresh document attestation. Drift, unavailable registry evidence or an invalid
+source binding fails `--check`. Check the evidence before applying author changes:
+
+```bash
+uv run python3 code/orchestrators/fetch_work_authors.py --check
+```
+
+Resolve changed bindings or reported drift explicitly; do not replace the
+reviewed PDF order with registry order automatically.
+
 ## Preconditions
 
 Use a GitHub token so rate limits do not truncate repository or release scans:

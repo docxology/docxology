@@ -4,6 +4,10 @@
 
 - Added the distinct Observers Are All You Need component preprint, retaining
   its r2054 document byline/date and the differing Zenodo registry observation.
+- Added reviewed PDF-byline authority for DOI-bearing manuscripts whose registry
+  creator metadata differs. Source hashes, quoted bylines and attributed reviews
+  preserve both observations; registry refreshes retain the selected author order
+  and report drift for review.
 - Added the Blakean Entomology and States Change / Blakean Federalism working
   papers with permanent work identities, concept/version DOI roles, reviewed
   source text and explicit limits. Updated Blake manuscript 0.5.0 / software

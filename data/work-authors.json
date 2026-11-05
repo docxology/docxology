@@ -5559,11 +5559,28 @@
     "Friedman2026ObserversWhoReadTheir230": {
       "num": 230,
       "doi": null,
-      "title": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+      "title": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
       "status": "document_verified",
-      "source": "papers/2026_ObserversReadUniverse/full_text.md",
-      "evidence": "Bernhard Mueller 1,2,* Mario Poneder Alexander Osika 3 Kai Xue\nBen Cassie Peter Nguyen Jinwook Kim 4 David Matscheko\nDaniel Ari Friedman 5,6 Jonathan Hill William T. Glynn Maarten Antonie Visser\nKale Arnav Anirudha Brieuc de La Fournière",
-      "source_pdf_sha256": "e23da212840627f16e10ac05f7538eab10556702ceda8a404f8c32359e89b737",
+      "source": "papers/2026_ObserversReadUniverse/full_text_r2061.md",
+      "evidence": "Observers Who Read Their Universe into Existence:\nFinite Consensus and the Reconstruction of Standard Physics\nBernhard Mueller 1,2,* Mario Poneder Alexander Osika 3 Kai Xue\nBen Cassie Peter Nguyen Jinwook Kim 4 David Matscheko\nDaniel Ari Friedman 5,6 Jonathan Hill William T. Glynn Maarten Antonie Visser\nKale Arnav Anirudha Brieuc de La Fournière\nNovember 4, 2026 · Paper release: r2061",
+      "source_pdf_sha256": "26ad29e47334818cbf3e00741b87fc5b4defc229526c4b49d429ee4eac3ea6e6",
+      "source_sha256": "f6f9bfb98c054d6e61491b770c8af8bb839537c9434d223cc7084e6fb45b67e4",
+      "source_document": {
+        "file": "papers/2026_ObserversReadUniverse/ObserversReadUniverse_r2061.pdf",
+        "release_tag": "r2061",
+        "date": "2026-11-04",
+        "source_commit": "f50e4da10533b8f5d3bf92a711c07bf6d563fe74",
+        "url": "https://raw.githubusercontent.com/FloatingPragma/observer-patch-holography/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.pdf",
+        "sha256": "26ad29e47334818cbf3e00741b87fc5b4defc229526c4b49d429ee4eac3ea6e6"
+      },
+      "source_evidence": "papers/2026_ObserversReadUniverse/source_evidence.json",
+      "source_evidence_sha256": "c2cd008ccd31732adadcc0b3a2a3e777725213d4110b8fdb4f311e7e89099d97",
+      "historical_authority_review": "reports/work_authors_review_2026-11-05.json",
+      "review": {
+        "reviewed_at": "2026-11-05T03:27:09Z",
+        "reviewed_by": "Codex docs_review",
+        "reason": "Bind the current bibliography title and unchanged fourteen-author order to the retained r2061 title page. Preserve the complete superseded r2052 contributor record and its versioned extraction/PDF bindings in the dated review report."
+      },
       "authors": [
         {
           "family": "Mueller",
@@ -5622,6 +5639,197 @@
           "given": "Brieuc"
         }
       ]
+    },
+    "Friedman2026BlakeanEntomologySmallLives233": {
+      "num": 233,
+      "doi": "10.5281/zenodo.23900582",
+      "title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+      "resolved_title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+      "title_similarity": 1,
+      "status": "verified",
+      "source_authority": "zenodo_api_creators",
+      "source": "reports/publication_intake_2026-11-05.json",
+      "source_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+      "source_record_id": "23900583",
+      "registry_baseline": {
+        "record_id": "23900583",
+        "doi": "10.5281/zenodo.23900582",
+        "title": "Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention",
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "version": "1.0.0",
+        "publication_date": "2026-11-03"
+      },
+      "source_evidence": "papers/2026_BlakeanEntomology/source_evidence.json",
+      "source_evidence_sha256": "1df7cba64844d37872d7371dd94b1eeccb00b04c55687e4e0fd97d2ce43b159b",
+      "source_pdf_sha256": "fc99a3dd629646a6e7cb1b41e0b6290388cbb4a09d7c0f91526e0c413dddf73a",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-11-05T03:21:46Z",
+        "reviewed_by": "Codex docs_review",
+        "reason": "The frozen Zenodo API observation title and sole creator match the catalogued work and the deposited PDF title-page byline; no DOI-agency fetch is claimed."
+      }
+    },
+    "Friedman2026StatesChangeBlakeanFederalism234": {
+      "num": 234,
+      "doi": "10.5281/zenodo.23900616",
+      "title": "States Change: Blakean Federalism and composition without capture",
+      "resolved_title": "States Change: Blakean Federalism and composition without capture",
+      "title_similarity": 1,
+      "status": "verified",
+      "source_authority": "zenodo_api_creators",
+      "source": "reports/publication_intake_2026-11-05.json",
+      "source_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+      "source_record_id": "23900617",
+      "registry_baseline": {
+        "record_id": "23900617",
+        "doi": "10.5281/zenodo.23900616",
+        "title": "States Change: Blakean Federalism and composition without capture",
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "version": "1.0.0",
+        "publication_date": "2026-11-03"
+      },
+      "source_evidence": "papers/2026_StatesChange/source_evidence.json",
+      "source_evidence_sha256": "5c39721a1ef768d1df213a6a6de9dfbaf0f5ed1970c3820440757cb64c216484",
+      "source_pdf_sha256": "14be777acc438a12b0b0077fe26aa0d0c57e7d8505274dfa30c3c1f05e809c52",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-11-05T03:21:46Z",
+        "reviewed_by": "Codex docs_review",
+        "reason": "The frozen Zenodo API observation title and sole creator match the catalogued work and the deposited PDF title-page byline; no DOI-agency fetch is claimed."
+      }
+    },
+    "Friedman2026ObserversAreAllYou235": {
+      "num": 235,
+      "doi": "10.5281/zenodo.18288113",
+      "title": "Observers are all you need",
+      "status": "doi_document_verified",
+      "source_authority": "deposited_pdf_title_page",
+      "source": "papers/2026_ObserversAllYouNeed/full_text.md",
+      "source_sha256": "0e588a7706b155ae3e7cd4d503c10dcd8be9f81290a51143c01f56d0efd2945c",
+      "evidence": "Bernhard Mueller 1∗ Mario Poneder Alexander Osika 2 Kai Xue Ben Cassie\nPeter Nguyen Daniel Ari Friedman 3,4",
+      "source_pdf_sha256": "d88de3b37c7686d894a7a4e4ed731358f310888c00e9f4a33e6db824889dde68",
+      "source_evidence": "papers/2026_ObserversAllYouNeed/source_evidence.json",
+      "source_evidence_sha256": "b2c1a676e70ee1b1a96c20afc8a4ff8ccf236f8c54daad608725fce10d1330bb",
+      "source_record_id": "23719196",
+      "registry_baseline": {
+        "record_id": "23719196",
+        "doi": "10.5281/zenodo.23719196",
+        "conceptdoi": "10.5281/zenodo.18288113",
+        "title": "Observers are all you need",
+        "publication_date": "2026-10-28",
+        "version": null,
+        "creators": [
+          {
+            "name": "Mueller, Bernhard",
+            "affiliation": "Information Physics Institute",
+            "orcid": "0009-0002-5638-6240"
+          },
+          {
+            "name": "Poneder, Mario",
+            "affiliation": null
+          },
+          {
+            "name": "Osika, Alexander",
+            "affiliation": null
+          },
+          {
+            "name": "Friedman, Daniel",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          },
+          {
+            "name": "Xue, Kai",
+            "affiliation": null
+          },
+          {
+            "name": "Cassie, Ben",
+            "affiliation": null
+          },
+          {
+            "name": "Nguyen, Peter",
+            "affiliation": null
+          }
+        ],
+        "license": {
+          "id": "cc-by-4.0"
+        },
+        "record_json_sha256": "f44d68e5a9fde6f481bec81a8ea8f5c6372d61a46bd138185f7e22a3b8874f62"
+      },
+      "document_baseline": {
+        "release": "r2054",
+        "date": "2026-10-26",
+        "byline": [
+          "Mueller, Bernhard",
+          "Poneder, Mario",
+          "Osika, Alexander",
+          "Xue, Kai",
+          "Cassie, Ben",
+          "Nguyen, Peter",
+          "Friedman, Daniel Ari"
+        ],
+        "note": "Deposited PDF title-page byline in document order. The registry puts Friedman fourth and abbreviates his given names; the PDF puts Daniel Ari Friedman seventh. Raw registry creators and discrepancy are retained in source_evidence.json."
+      },
+      "authors": [
+        {
+          "family": "Mueller",
+          "given": "Bernhard",
+          "orcid": "0009-0002-5638-6240"
+        },
+        {
+          "family": "Poneder",
+          "given": "Mario"
+        },
+        {
+          "family": "Osika",
+          "given": "Alexander"
+        },
+        {
+          "family": "Xue",
+          "given": "Kai"
+        },
+        {
+          "family": "Cassie",
+          "given": "Ben"
+        },
+        {
+          "family": "Nguyen",
+          "given": "Peter"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-11-05T03:21:46Z",
+        "reviewed_by": "Codex docs_review",
+        "reason": "Use the exact deposited r2054 PDF title-page byline in document order for this catalogued manuscript. The retained registry places Friedman fourth and calls him Daniel; the PDF places Daniel Ari Friedman seventh. Preserve both observations, the document date 2026-10-26 and deposit date 2026-10-28, the unspecified deposit version, the version/concept DOI relationship, and the observed ORCIDs. This override does not establish authorship for any other record, version or paper."
+      }
     }
   }
 }

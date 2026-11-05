@@ -152,6 +152,15 @@ def _require_contains(errors: list[str], label: str, text: str, needle: str) -> 
         errors.append(f"{label}: missing {needle}")
 
 
+def _require_software_hero(errors: list[str], text: str) -> None:
+    if not re.search(
+        r"^\s*\*\*(?:Open-Source|Owned|Public Software and Research) Repositories\b",
+        text,
+        re.MULTILINE | re.IGNORECASE,
+    ):
+        errors.append("pages/SOFTWARE.md software hero: missing repository heading")
+
+
 def _domain_counts(rows: list[dict[str, str]]) -> Counter[str]:
     return Counter(row["domain"] for row in rows)
 
@@ -607,11 +616,6 @@ def collect_count_drift() -> list[str]:
             "cite-verify.html volatile-count signpost",
             CURRENT_COUNTS_SIGNPOST,
         ),
-        (
-            "pages/SOFTWARE.md",
-            "pages/SOFTWARE.md software hero",
-            "Open-Source Repositories",
-        ),
         ("llms.txt", "llms.txt shape", "Current volatile totals"),
         ("publications.html", "publications.html shape", "<title>"),
         ("index.html", "index.html shape", "<title>"),
@@ -620,5 +624,6 @@ def collect_count_drift() -> list[str]:
     for rel, label, needle in prose_targets:
         text = (REPO_ROOT / rel).read_text(encoding="utf-8")
         _require_contains(errors, label, text, needle)
+    _require_software_hero(errors, SOFTWARE_PATH.read_text(encoding="utf-8"))
 
     return errors

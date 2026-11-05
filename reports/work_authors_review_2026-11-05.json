@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-11-05T03:27:09Z",
+  "reviewed_by": "Codex docs_review",
+  "citation_key": "Friedman2026ObserversWhoReadTheir230",
+  "num": 230,
+  "reason": "The catalogued flagship and canonical full_text.md advanced from r2052 to r2061, while this contributor record retained the earlier subtitle and PDF hash. Refresh the document authority to the frozen r2061 extraction without changing any of the fourteen authors or erasing the earlier record.",
+  "superseded_record": {
+    "num": 230,
+    "doi": null,
+    "title": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+    "status": "document_verified",
+    "source": "papers/2026_ObserversReadUniverse/full_text.md",
+    "evidence": "Bernhard Mueller 1,2,* Mario Poneder Alexander Osika 3 Kai Xue\nBen Cassie Peter Nguyen Jinwook Kim 4 David Matscheko\nDaniel Ari Friedman 5,6 Jonathan Hill William T. Glynn Maarten Antonie Visser\nKale Arnav Anirudha Brieuc de La Fournière",
+    "source_pdf_sha256": "e23da212840627f16e10ac05f7538eab10556702ceda8a404f8c32359e89b737",
+    "authors": [
+      {
+        "family": "Mueller",
+        "given": "Bernhard"
+      },
+      {
+        "family": "Poneder",
+        "given": "Mario"
+      },
+      {
+        "family": "Osika",
+        "given": "Alexander"
+      },
+      {
+        "family": "Xue",
+        "given": "Kai"
+      },
+      {
+        "family": "Cassie",
+        "given": "Ben"
+      },
+      {
+        "family": "Nguyen",
+        "given": "Peter"
+      },
+      {
+        "family": "Kim",
+        "given": "Jinwook"
+      },
+      {
+        "family": "Matscheko",
+        "given": "David"
+      },
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      },
+      {
+        "family": "Hill",
+        "given": "Jonathan"
+      },
+      {
+        "family": "Glynn",
+        "given": "William T."
+      },
+      {
+        "family": "Visser",
+        "given": "Maarten Antonie"
+      },
+      {
+        "family": "Anirudha",
+        "given": "Kale Arnav"
+      },
+      {
+        "family": "de La Fournière",
+        "given": "Brieuc"
+      }
+    ]
+  },
+  "superseded_source_binding": {
+    "release_tag": "r2052",
+    "source_commit": "879ed37ad2c1933ecb6dd8f54271362ee3f4d41c",
+    "extraction": {
+      "file": "papers/2026_ObserversReadUniverse/full_text_r2052.md",
+      "sha256": "8fbadbdc1c82558d2cf18322c6438052c1083a826b2d63bc0ade130cabe23c2e"
+    },
+    "pdf": {
+      "file": "papers/2026_ObserversReadUniverse/ObserversReadUniverse_r2052.pdf",
+      "sha256": "e23da212840627f16e10ac05f7538eab10556702ceda8a404f8c32359e89b737"
+    },
+    "original_source_pointer_note": "superseded_record.source retains its exact historical spelling. That unversioned full_text.md path now projects r2061; the versioned r2052 extraction above preserves the source that supported the superseded record."
+  },
+  "current_source_binding": {
+    "title": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
+    "source": "papers/2026_ObserversReadUniverse/full_text_r2061.md",
+    "source_sha256": "f6f9bfb98c054d6e61491b770c8af8bb839537c9434d223cc7084e6fb45b67e4",
+    "evidence": "Observers Who Read Their Universe into Existence:\nFinite Consensus and the Reconstruction of Standard Physics\nBernhard Mueller 1,2,* Mario Poneder Alexander Osika 3 Kai Xue\nBen Cassie Peter Nguyen Jinwook Kim 4 David Matscheko\nDaniel Ari Friedman 5,6 Jonathan Hill William T. Glynn Maarten Antonie Visser\nKale Arnav Anirudha Brieuc de La Fournière\nNovember 4, 2026 · Paper release: r2061",
+    "source_document": {
+      "file": "papers/2026_ObserversReadUniverse/ObserversReadUniverse_r2061.pdf",
+      "release_tag": "r2061",
+      "date": "2026-11-04",
+      "source_commit": "f50e4da10533b8f5d3bf92a711c07bf6d563fe74",
+      "url": "https://raw.githubusercontent.com/FloatingPragma/observer-patch-holography/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.pdf",
+      "sha256": "26ad29e47334818cbf3e00741b87fc5b4defc229526c4b49d429ee4eac3ea6e6"
+    },
+    "source_evidence": "papers/2026_ObserversReadUniverse/source_evidence.json",
+    "source_evidence_sha256": "c2cd008ccd31732adadcc0b3a2a3e777725213d4110b8fdb4f311e7e89099d97"
+  },
+  "review_scope": "Sampled bibliographic title-page review and observed source-byte identities only. The author's names/order are unchanged. No rendered-page visual inspection, complete extraction-quality assessment, independent theorem/model audit, or scientific confirmation is claimed."
+}
