@@ -473,6 +473,7 @@ def test_real_four_format_render_and_receipt(tmp_path):
         "prose_budget": rendering.SLIDE_PROSE_LIMIT,
         "line_width": rendering.SLIDE_LINE_WIDTH,
         "line_limit": rendering.SLIDE_LINE_LIMIT,
+        "bullet_right_inset_emu": rendering.SLIDE_BULLET_RIGHT_INSET,
     }
     import zipfile
     import xml.etree.ElementTree as ET
@@ -480,6 +481,20 @@ def test_real_four_format_render_and_receipt(tmp_path):
     with zipfile.ZipFile(tmp_path / "review" / rendering.OUTPUTS["slides"]) as package:
         media = [name for name in package.namelist() if name.startswith("ppt/media/")]
         assert len(media) == len(rendering.FIGURES)
+        padded_bodies = 0
+        ns = {"p": "http://schemas.openxmlformats.org/presentationml/2006/main", "a": "http://schemas.openxmlformats.org/drawingml/2006/main"}
+        for name in package.namelist():
+            if not (name.startswith("ppt/slides/slide") and name.endswith(".xml")):
+                continue
+            for shape in ET.fromstring(package.read(name)).findall(".//p:sp", ns):
+                ph = shape.find(".//p:ph", ns)
+                if ph is None or ph.get("idx") != "1":
+                    continue
+                if any((style := paragraph.find("a:pPr", ns)) is None or style.find("a:buNone", ns) is None for paragraph in shape.findall(".//a:p", ns)):
+                    assert int(shape.find("p:txBody/a:bodyPr", ns).get("rIns")) >= rendering.SLIDE_BULLET_RIGHT_INSET
+                    padded_bodies += 1
+        assert padded_bodies > 0
+
         runs = [
             node.text or ""
             for name in package.namelist()
@@ -783,3 +798,52 @@ def test_nested_list_packing_accounts_for_every_indentation_level():
     pages = _layout_pages({"meta": {}, "blocks": originals})
     assert len(pages) == 2
     assert [block for page in pages for block in page] == originals
+
+
+def test_bullet_body_inset_preserves_text_links_media_and_nonbullet_geometry(tmp_path):
+    import zipfile
+    from xml.etree import ElementTree as ET
+    source = b'''<p:sld xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"><p:cSld><p:spTree><p:sp><p:nvSpPr><p:nvPr><p:ph idx="1"/></p:nvPr></p:nvSpPr><p:txBody><a:bodyPr/><a:p><a:pPr lvl="0"/><a:r><a:t>Static navigation and progressive search. Source: nav-toggle.js</a:t></a:r></a:p></p:txBody></p:sp><p:sp><p:nvSpPr><p:nvPr><p:ph idx="1"/></p:nvPr></p:nvSpPr><p:txBody><a:bodyPr rIns="91440"/><a:p><a:pPr><a:buNone/></a:pPr><a:r><a:t>Ordinary prose remains unchanged.</a:t></a:r></a:p></p:txBody></p:sp></p:spTree></p:cSld></p:sld>'''
+    path = tmp_path / "review.pptx"
+    untouched = {"ppt/slides/_rels/slide1.xml.rels": b"exact link relationship bytes", "ppt/media/figure.png": b"exact image bytes"}
+    with zipfile.ZipFile(path, "w") as package:
+        package.writestr("ppt/slides/slide1.xml", source)
+        for name, raw in untouched.items():
+            package.writestr(name, raw)
+    assert rendering.pad_slide_bullet_bodies(path) == 1
+    with zipfile.ZipFile(path) as package:
+        actual = package.read("ppt/slides/slide1.xml")
+        for name, raw in untouched.items():
+            assert package.read(name) == raw
+    assert actual == source.replace(b"<a:bodyPr/>", b'<a:bodyPr rIns="457200"/>', 1)
+    ns = {"a": "http://schemas.openxmlformats.org/drawingml/2006/main"}
+    assert [node.text for node in ET.fromstring(actual).findall(".//a:t", ns)] == [node.text for node in ET.fromstring(source).findall(".//a:t", ns)]
+    once = path.read_bytes()
+    assert rendering.pad_slide_bullet_bodies(path) == 0
+    assert path.read_bytes() == once
+
+
+def test_bullet_inset_refuses_malformed_package_without_replacing_original(tmp_path):
+    import zipfile
+    path = tmp_path / "bad.pptx"
+    with zipfile.ZipFile(path, "w") as package:
+        package.writestr("ppt/slides/slide1.xml", b"<broken")
+    before = path.read_bytes()
+    with pytest.raises(ValueError):
+        rendering.pad_slide_bullet_bodies(path)
+    assert path.read_bytes() == before
+
+
+@pytest.mark.parametrize("attribute", [b"rIns='91440'", b"rIns = '91440'", b'rIns = "91440"'])
+def test_bullet_inset_preserves_valid_xml_quote_and_spacing_forms(tmp_path, attribute):
+    import zipfile
+    from xml.etree import ElementTree as ET
+    source = b'<p:sld xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"><p:cSld><p:spTree><p:sp><p:nvSpPr><p:nvPr><p:ph idx="1"/></p:nvPr></p:nvSpPr><p:txBody><a:bodyPr '+attribute+b'/><a:p><a:pPr/><a:r><a:t>Reviewed bullet.</a:t></a:r></a:p></p:txBody></p:sp></p:spTree></p:cSld></p:sld>'
+    path = tmp_path / "quoted.pptx"
+    with zipfile.ZipFile(path, "w") as package:
+        package.writestr("ppt/slides/slide1.xml", source)
+    assert rendering.pad_slide_bullet_bodies(path) == 1
+    with zipfile.ZipFile(path) as package:
+        actual = package.read("ppt/slides/slide1.xml")
+    assert actual == source.replace(attribute, attribute.replace(b"91440", b"457200"))
+    assert ET.fromstring(actual) is not None

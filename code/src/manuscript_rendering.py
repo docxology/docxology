@@ -53,7 +53,8 @@ SLIDE_PROSE_LIMIT = 600
 SLIDE_LINE_WIDTH = 60
 SLIDE_LINE_LIMIT = 9
 SLIDE_MIN_CONTINUATION = 120
-SLIDE_LAYOUT = "coherent-bounded-pagination-v3"
+SLIDE_BULLET_RIGHT_INSET = 457200  # 0.5in; measured linked-bullet layout reserve
+SLIDE_LAYOUT = "coherent-inset-pagination-v4"
 
 
 def _slide_text_size(node) -> int:
@@ -334,6 +335,86 @@ def paginate_slides(document: dict) -> dict:
         return node
 
     return remap(output)
+
+
+def pad_slide_bullet_bodies(path: Path) -> int:
+    """Reserve measured right-edge slack without rewriting OOXML namespaces.
+
+    Pandoc's inherited bullet style may wrap linked/bold text past the body
+    placeholder in LibreOffice. Only bullet bodyPr.rIns is increased; prose,
+    links, figures, table geometry and every unrelated package member survive.
+    """
+    from xml.etree import ElementTree as ET
+
+    ns = {"p": "http://schemas.openxmlformats.org/presentationml/2006/main",
+          "a": "http://schemas.openxmlformats.org/drawingml/2006/main"}
+    replacements = {}
+    changed = 0
+    try:
+        with zipfile.ZipFile(path) as source:
+            infos, comment = source.infolist(), source.comment
+            if len({info.filename for info in infos}) != len(infos):
+                raise ValueError("Duplicate slide package members")
+            if sum(info.file_size for info in infos) > MAX_OUTPUT_BYTES:
+                raise ValueError("Slide package exceeds its uncompressed byte budget")
+            payloads = {info.filename: source.read(info) for info in infos}
+        for name, raw in payloads.items():
+            if not re.fullmatch(r"ppt/slides/slide\d+\.xml", name):
+                continue
+            tree = ET.fromstring(raw)
+            properties = tree.findall(".//a:bodyPr", ns)
+            openings = list(re.finditer(rb"""<a:bodyPr\b(?:[^>"']|"[^"]*"|'[^']*')*>""", raw))
+            if len(properties) != len(openings):
+                raise ValueError("Unsupported slide body namespace serialization")
+            patches = []
+            for shape in tree.findall(".//p:sp", ns):
+                placeholder = shape.find(".//p:ph", ns)
+                if placeholder is None or placeholder.get("idx") != "1":
+                    continue
+                paragraphs = shape.findall(".//a:p", ns)
+                bullet = any((style := paragraph.find("a:pPr", ns)) is None
+                             or style.find("a:buNone", ns) is None for paragraph in paragraphs)
+                if not bullet:
+                    continue
+                prop = shape.find("p:txBody/a:bodyPr", ns)
+                if prop is None:
+                    raise ValueError("Missing slide body properties")
+                inset = max(int(prop.get("rIns", "91440")), SLIDE_BULLET_RIGHT_INSET)
+                if prop.get("rIns") == str(inset):
+                    continue
+                match = openings[properties.index(prop)]
+                tag = match.group()
+                value = str(inset).encode()
+                attribute = re.search(rb"""\brIns\s*=\s*(["'])(.*?)\1""", tag)
+                if "rIns" in prop.attrib:
+                    if attribute is None:
+                        raise ValueError("Unsupported existing slide inset serialization")
+                    tag = tag[:attribute.start(2)] + value + tag[attribute.end(2):]
+                else:
+                    closing = b"/>" if tag.endswith(b"/>") else b">"
+                    tag = tag[:-len(closing)].rstrip() + b' rIns="' + value + b'"' + closing
+                patches.append((match.start(), match.end(), tag))
+                changed += 1
+            for start, end, tag in sorted(patches, reverse=True):
+                raw = raw[:start] + tag + raw[end:]
+            if patches:
+                replacements[name] = raw
+    except (ET.ParseError, zipfile.BadZipFile, KeyError) as exc:
+        raise ValueError("Malformed slide package; previous bytes preserved") from exc
+    if not replacements:
+        return 0
+    with tempfile.NamedTemporaryFile(dir=path.parent, delete=False) as stream:
+        temporary = Path(stream.name)
+    try:
+        with zipfile.ZipFile(temporary, "w") as target:
+            target.comment = comment
+            for info in infos:
+                target.writestr(info, replacements.get(info.filename, payloads[info.filename]))
+        os.chmod(temporary, path.stat().st_mode & 0o777)
+        os.replace(temporary, path)
+    finally:
+        temporary.unlink(missing_ok=True)
+    return changed
 
 
 def digest(path: Path) -> str:
@@ -795,6 +876,7 @@ def render_manuscript(
                         root=root,
                         data=json.dumps(slides, ensure_ascii=False),
                     )
+                    pad_slide_bullet_bodies(scratch / OUTPUTS[format_name])
                     continue
             run(arguments, root=root, data=data)
         artifacts = validate_artifacts(scratch, formats)
@@ -831,7 +913,7 @@ def render_manuscript(
             "toolchain": tools,
             "template": template_receipt,
             "artifacts": artifacts,
-            "slide_layout": {"producer": SLIDE_LAYOUT, "text_budget": SLIDE_TEXT_LIMIT, "prose_budget": SLIDE_PROSE_LIMIT, "line_width": SLIDE_LINE_WIDTH, "line_limit": SLIDE_LINE_LIMIT}
+            "slide_layout": {"producer": SLIDE_LAYOUT, "text_budget": SLIDE_TEXT_LIMIT, "prose_budget": SLIDE_PROSE_LIMIT, "line_width": SLIDE_LINE_WIDTH, "line_limit": SLIDE_LINE_LIMIT, "bullet_right_inset_emu": SLIDE_BULLET_RIGHT_INSET}
             if "slides" in formats
             else None,
             "figures": figure_receipt,

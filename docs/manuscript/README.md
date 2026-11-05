@@ -99,7 +99,10 @@ indivisible-inline, table and code text bound remains 450 characters. Prose
 uses a separate 600-character ceiling and a conservative nine-line envelope
 at 60 characters per estimated line (narrower for lists), including gaps
 between display blocks. Images, full captions, code and table segments keep
-their dedicated slides. These are input bounds for the pinned 16:9 layout,
+their dedicated slides. Bullet bodies reserve a 0.5-inch right inset inside
+the existing placeholder to prevent measured linked/bold text wrapping beyond
+its edge; OOXML text, relationships, media and non-bullet geometry are preserved.
+These are input bounds for the pinned 16:9 layout,
 not a guarantee of identical typography across viewers; inspect actual layout
 in each requested presentation viewer. The render receipt records every bound. Native integration also checks all registered
 figure embeds and the rendered bibliography entry.
