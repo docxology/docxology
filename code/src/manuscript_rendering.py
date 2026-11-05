@@ -54,7 +54,7 @@ SLIDE_LINE_WIDTH = 60
 SLIDE_LINE_LIMIT = 9
 SLIDE_MIN_CONTINUATION = 120
 SLIDE_BULLET_RIGHT_INSET = 457200  # 0.5in; measured linked-bullet layout reserve
-SLIDE_LAYOUT = "coherent-inset-pagination-v4"
+SLIDE_LAYOUT = "coherent-list-paragraph-pagination-v5"
 
 
 def _slide_text_size(node) -> int:
@@ -170,6 +170,36 @@ def _slide_prose_chunks(kind, inlines, text_width=SLIDE_LINE_WIDTH):
         yield {"t": kind, "c": inlines[left:right]}
 
 
+def _slide_linked_sentences(block):
+    """Keep linked list sentences as readable, budgeted continuation paragraphs."""
+    def linked(node):
+        if isinstance(node, list):
+            return any(linked(value) for value in node)
+        return isinstance(node, dict) and (node.get("t") == "Link" or linked(node.get("c")))
+
+    if block["t"] not in {"Para", "Plain"} or not linked(block):
+        return [block]
+    inlines, ends = block["c"], set()
+    for index, inline in enumerate(inlines):
+        if not re.search(r'[.!?][\u201d\u2019"\')\]]?$', _slide_visible_text(inline).rstrip()):
+            continue
+        # A short emphasized item label belongs with its opening sentence.
+        if index == 0 and inline["t"] in {"Strong", "Emph"} and _slide_text_size(inline) < SLIDE_MIN_CONTINUATION:
+            continue
+        end = index + 1
+        while end < len(inlines) and inlines[end]["t"] in {"Space", "SoftBreak"}:
+            end += 1
+        if end < len(inlines) and _slide_visible_text(inlines[end])[:1].isupper():
+            ends.add(end)
+    if not ends:
+        return [block]
+    parts, start = [], 0
+    for end in [*sorted(ends), len(inlines)]:
+        parts.append({"t": block["t"], "c": inlines[start:end]})
+        start = end
+    return parts
+
+
 def _slide_units(block, text_width=SLIDE_LINE_WIDTH):
     """Yield bounded display units without discarding authored content."""
     kind, content = block["t"], block.get("c")
@@ -181,13 +211,30 @@ def _slide_units(block, text_width=SLIDE_LINE_WIDTH):
     elif kind in {"BulletList", "OrderedList"}:
         items = content if kind == "BulletList" else content[1]
         for index, item in enumerate(items):
+            def wrap(children):
+                if kind == "BulletList":
+                    return {"t": kind, "c": [children]}
+                attributes = [content[0][0] + index, *content[0][1:]]
+                return {"t": kind, "c": [attributes, [children]]}
+
+            packed = []
             for child in item:
-                for unit in _slide_units(child, max(12, text_width - 6)):
-                    if kind == "BulletList":
-                        yield {"t": kind, "c": [[unit]]}
-                    else:
-                        attributes = [content[0][0] + index, *content[0][1:]]
-                        yield {"t": kind, "c": [attributes, [[unit]]]}
+                for paragraph in _slide_linked_sentences(child):
+                    for unit in _slide_units(paragraph, max(12, text_width - 6)):
+                        if not _slide_text_unit(unit):
+                            if packed:
+                                yield wrap(packed)
+                                packed = []
+                            yield wrap([unit])
+                            continue
+                        if packed and not _slide_text_fits([wrap([*packed, unit])], text_width):
+                            yield wrap(packed)
+                            packed = []
+                        if not _slide_text_fits([wrap([unit])], text_width):
+                            raise ValueError("Slide list unit exceeds its line or text budget")
+                        packed.append(unit)
+            if packed:
+                yield wrap(packed)
     elif kind == "Figure":
         attributes, caption, body = content
         if (
@@ -341,8 +388,10 @@ def pad_slide_bullet_bodies(path: Path) -> int:
     """Reserve measured right-edge slack without rewriting OOXML namespaces.
 
     Pandoc's inherited bullet style may wrap linked/bold text past the body
-    placeholder in LibreOffice. Only bullet bodyPr.rIns is increased; prose,
-    links, figures, table geometry and every unrelated package member survive.
+    placeholder in the observed viewer. Continuation paragraphs retain the
+    active bullet level's font inheritance, with their explicit nonbullet and
+    margin properties preserved. Prose, links, figures, table geometry and
+    every unrelated package member survive.
     """
     from xml.etree import ElementTree as ET
 
@@ -366,6 +415,10 @@ def pad_slide_bullet_bodies(path: Path) -> int:
             openings = list(re.finditer(rb"""<a:bodyPr\b(?:[^>"']|"[^"]*"|'[^']*')*>""", raw))
             if len(properties) != len(openings):
                 raise ValueError("Unsupported slide body namespace serialization")
+            styles = tree.findall(".//a:pPr", ns)
+            style_openings = list(re.finditer(rb"""<a:pPr\b(?:[^>"']|"[^"]*"|'[^']*')*>""", raw))
+            if len(styles) != len(style_openings):
+                raise ValueError("Unsupported slide paragraph namespace serialization")
             patches = []
             for shape in tree.findall(".//p:sp", ns):
                 placeholder = shape.find(".//p:ph", ns)
@@ -380,21 +433,43 @@ def pad_slide_bullet_bodies(path: Path) -> int:
                 if prop is None:
                     raise ValueError("Missing slide body properties")
                 inset = max(int(prop.get("rIns", "91440")), SLIDE_BULLET_RIGHT_INSET)
-                if prop.get("rIns") == str(inset):
-                    continue
-                match = openings[properties.index(prop)]
-                tag = match.group()
-                value = str(inset).encode()
-                attribute = re.search(rb"""\brIns\s*=\s*(["'])(.*?)\1""", tag)
-                if "rIns" in prop.attrib:
-                    if attribute is None:
-                        raise ValueError("Unsupported existing slide inset serialization")
-                    tag = tag[:attribute.start(2)] + value + tag[attribute.end(2):]
-                else:
-                    closing = b"/>" if tag.endswith(b"/>") else b">"
-                    tag = tag[:-len(closing)].rstrip() + b' rIns="' + value + b'"' + closing
-                patches.append((match.start(), match.end(), tag))
-                changed += 1
+                changed_shape = False
+                if prop.get("rIns") != str(inset):
+                    match = openings[properties.index(prop)]
+                    tag = match.group()
+                    value = str(inset).encode()
+                    attribute = re.search(rb"""\brIns\s*=\s*(["'])(.*?)\1""", tag)
+                    if "rIns" in prop.attrib:
+                        if attribute is None:
+                            raise ValueError("Unsupported existing slide inset serialization")
+                        tag = tag[:attribute.start(2)] + value + tag[attribute.end(2):]
+                    else:
+                        closing = b"/>" if tag.endswith(b"/>") else b">"
+                        tag = tag[:-len(closing)].rstrip() + b' rIns="' + value + b'"' + closing
+                    patches.append((match.start(), match.end(), tag))
+                    changed_shape = True
+                active_level = None
+                for paragraph in paragraphs:
+                    style = paragraph.find("a:pPr", ns)
+                    level = int(style.get("lvl", "0")) if style is not None else 0
+                    if not 0 <= level <= 8:
+                        raise ValueError("Unsupported slide paragraph level")
+                    if style is None or style.find("a:buNone", ns) is None:
+                        active_level = level
+                    elif active_level is not None and level == active_level + 1 and style.get("indent") == "0":
+                        # Pandoc gives a same-item continuation the next level's
+                        # smaller font. Keep its nonbullet/indent/margin settings
+                        # while inheriting the actual bullet's original font.
+                        match = style_openings[styles.index(style)]
+                        tag = match.group()
+                        attribute = re.search(rb"""\blvl\s*=\s*(["'])(.*?)\1""", tag)
+                        if attribute is None:
+                            raise ValueError("Unsupported slide continuation serialization")
+                        tag = tag[:attribute.start(2)] + str(active_level).encode() + tag[attribute.end(2):]
+                        patches.append((match.start(), match.end(), tag))
+                        changed_shape = True
+                if changed_shape:
+                    changed += 1
             for start, end, tag in sorted(patches, reverse=True):
                 raw = raw[:start] + tag + raw[end:]
             if patches:
@@ -415,6 +490,46 @@ def pad_slide_bullet_bodies(path: Path) -> int:
     finally:
         temporary.unlink(missing_ok=True)
     return changed
+
+
+def slide_word_overlaps(words) -> list[dict]:
+    """Find >40% word-box overlaps in bounded actual viewer output.
+
+    A page accepts at most 1,000 finite positive rectangles. Words need at least
+    two alphanumeric characters; isolated symbols/punctuation are outside this
+    detector. This supplements visual review, not universal typography proof.
+    """
+    import math
+
+    if not isinstance(words, (list, tuple)) or len(words) > 1000:
+        raise ValueError("Viewer word geometry must be a bounded sequence")
+    checked = []
+    for index, word in enumerate(words):
+        if not isinstance(word, (list, tuple)) or not 5 <= len(word) <= 16:
+            raise ValueError("Malformed viewer word geometry")
+        coordinates, text = word[:4], word[4]
+        if not isinstance(text, str) or not text.strip() or len(text) > 4096:
+            raise ValueError("Invalid viewer word text")
+        try:
+            valid = all(type(value) in (int, float) and math.isfinite(value) for value in coordinates)
+            x0, y0, x1, y1 = coordinates
+            area = (x1 - x0) * (y1 - y0)
+            valid = valid and x1 > x0 and y1 > y0 and math.isfinite(area) and area > 0
+        except (TypeError, ValueError, OverflowError):
+            valid = False
+        if not valid:
+            raise ValueError("Viewer word rectangles must be finite and positive")
+        if sum(character.isalnum() for character in text) >= 2:
+            checked.append((index, coordinates, text, area))
+    overlaps = []
+    for position, (left, a, text, area) in enumerate(checked):
+        for right, b, other, other_area in checked[position + 1:]:
+            width = max(0, min(a[2], b[2]) - max(a[0], b[0]))
+            height = max(0, min(a[3], b[3]) - max(a[1], b[1]))
+            fraction = width * height / min(area, other_area)
+            if fraction > 0.4:
+                overlaps.append({"left": left, "right": right, "words": [text, other], "fraction": fraction})
+    return overlaps
 
 
 def digest(path: Path) -> str:

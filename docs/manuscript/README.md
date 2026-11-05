@@ -139,3 +139,7 @@ The receipt binds producer code, runtime versions and every asset hash. Unknown,
 remote or arbitrary image inputs remain unsupported. Install the `pdf-extraction`
 extra for the PNG rasterizer. These diagrams explain implementation contracts and
 are not measurements or scientific results.
+
+Linked list items keep complete sentences in continuation paragraphs, with short emphasized labels retained beside their opening sentence. Paragraph gaps and every indentation level are counted before packing. The generated nonbullet continuations inherit the active bullet's font level while retaining their explicit margins and nonbullet style. The original prose, inline objects, list identity and ordered starting value remain unchanged.
+
+Actual viewer inspection also uses `slide_word_overlaps()` on extracted word rectangles: more than 40% overlap of the smaller word box is a review failure. The helper refuses malformed, nonfinite, nonpositive or unbounded geometry; isolated symbols and one-character words are outside its scope. This supplements body bounds and visual reading, and does not certify universal typography or other viewers. The retained slide 125 counterexample showed substantial word overlap inside an otherwise valid body box.

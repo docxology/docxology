@@ -847,3 +847,120 @@ def test_bullet_inset_preserves_valid_xml_quote_and_spacing_forms(tmp_path, attr
         actual = package.read("ppt/slides/slide1.xml")
     assert actual == source.replace(attribute, attribute.replace(b"91440", b"457200"))
     assert ET.fromstring(actual) is not None
+
+
+def _actual_linked_scholar_bullet():
+    import re
+    source = (Path(__file__).resolve().parents[2] / "docs/manuscript/S01_source_surface.md").read_text()
+    text = next(line[2:] for line in source.splitlines() if line.startswith("- **Scholar technical readiness."))
+    inlines = []
+    for token in re.split(r"(\*\*[^*]+\*\*|\[[^]]+\]\([^)]+\))", text):
+        if token.startswith("**"):
+            inlines.append({"t": "Strong", "c": _layout_prose(token[2:-2])["c"]})
+        elif match := re.fullmatch(r"\[([^]]+)\]\(([^)]+)\)", token):
+            inlines.append({"t": "Link", "c": [["", [], []], _layout_prose(match[1])["c"], [match[2], ""]]})
+        else:
+            inlines.extend(_layout_prose(token)["c"])
+    return {"t": "Para", "c": inlines}
+
+
+@pytest.mark.parametrize("kind", ["BulletList", "OrderedList"])
+def test_actual_linked_bullet_keeps_complete_sentence_continuations_in_one_item(kind):
+    original = _actual_linked_scholar_bullet()
+    attributes = [7, {"t": "UpperRoman"}, {"t": "TwoParens"}]
+    content = [[original]] if kind == "BulletList" else [attributes, [[original]]]
+    source = {"t": kind, "c": content}
+    pages = _layout_pages({"meta": {}, "blocks": [source]})
+    assert len(pages) == 1
+    assert len(pages[0]) == 1
+    result = pages[0][0]
+    items = result["c"] if kind == "BulletList" else result["c"][1]
+    assert len(items) == 1
+    paragraphs = items[0]
+    assert len(paragraphs) == 3
+    assert [inline for part in paragraphs for inline in part["c"]] == original["c"]
+    assert rendering._slide_visible_text(paragraphs[0]).startswith("Scholar technical readiness. Source:")
+    assert rendering._slide_visible_text(paragraphs[1]).startswith("Verification:")
+    assert rendering._slide_visible_text(paragraphs[2]) == "Actual indexing requires an independent observation."
+    assert rendering._slide_text_fits([result])
+    if kind == "OrderedList":
+        assert result["c"][0] == attributes
+    assert original == _actual_linked_scholar_bullet()
+
+
+def test_linked_sentence_paragraph_gaps_are_budgeted_before_list_packing():
+    original = _layout_prose(" ".join([" ".join(["Retained"] * 20) + "."] * 5))
+    original["c"][:0] = [{"t": "Link", "c": [["", [], []], [{"t": "Str", "c": "Source"}], ["https://example.org/source", ""]]}, {"t": "Space"}]
+    pages = _layout_pages({"meta": {}, "blocks": [{"t": "BulletList", "c": [[original]]}]})
+    assert len(pages) >= 2
+    paragraphs = [child for page in pages for block in page for item in block["c"] for child in item]
+    assert len(paragraphs) == 5
+    assert [inline for child in paragraphs for inline in child["c"]] == original["c"]
+    assert all(rendering._slide_text_fits(page) for page in pages)
+
+
+@pytest.mark.parametrize("attribute", [b'lvl="1"', b"lvl='1'", b"lvl = '1'"])
+def test_bullet_continuations_inherit_active_level_without_changing_text_or_indents(tmp_path, attribute):
+    import zipfile
+    from xml.etree import ElementTree as ET
+    source = b'<p:sld xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"><p:cSld><p:spTree><p:sp><p:nvSpPr><p:nvPr><p:ph idx="1"/></p:nvPr></p:nvSpPr><p:txBody><a:bodyPr rIns="457200"/><a:p><a:pPr lvl="0"/><a:r><a:t>First sentence. </a:t></a:r></a:p><a:p><a:pPr lvl="1" indent="0" marL="342900"><a:buNone/></a:pPr><a:r><a:t xml:space="preserve">Verification sentence. </a:t></a:r></a:p></p:txBody></p:sp></p:spTree></p:cSld></p:sld>'
+    source = source.replace(b'lvl="1"', attribute)
+    path = tmp_path / "continuation.pptx"
+    with zipfile.ZipFile(path, "w") as package:
+        package.writestr("ppt/slides/slide1.xml", source)
+        package.writestr("ppt/slides/_rels/slide1.xml.rels", b"unchanged relationships")
+    assert rendering.pad_slide_bullet_bodies(path) == 1
+    with zipfile.ZipFile(path) as package:
+        actual = package.read("ppt/slides/slide1.xml")
+        assert package.read("ppt/slides/_rels/slide1.xml.rels") == b"unchanged relationships"
+    assert actual == source.replace(attribute, attribute.replace(b"1", b"0"))
+    ns = {"a": "http://schemas.openxmlformats.org/drawingml/2006/main"}
+    assert "".join(node.text or "" for node in ET.fromstring(actual).findall(".//a:t", ns)) == "First sentence. Verification sentence. "
+    once = path.read_bytes()
+    assert rendering.pad_slide_bullet_bodies(path) == 0
+    assert path.read_bytes() == once
+
+
+def test_viewer_word_overlap_catches_same_origin_words_and_tolerates_small_kerning():
+    # A worked geometry version of observed slide125: several complete words
+    # were drawn at the same origin, although its enclosing block stayed inside.
+    words = [(70, 176, 120, 200, "Actual"), (70, 176, 140, 200, "indexing")]
+    result = rendering.slide_word_overlaps(words)
+    assert [(row["left"], row["right"], row["words"]) for row in result] == [(0, 1, ["Actual", "indexing"])]
+    assert result[0]["fraction"] == 1.0
+    assert rendering.slide_word_overlaps([(0, 0, 10, 20, "normal"), (9, 0, 20, 20, "kerning")]) == []
+
+
+@pytest.mark.parametrize("words", [
+    [(0, 0, float("nan"), 20, "invalid")],
+    [(0, 0, float("inf"), 20, "invalid")],
+    [(10, 0, 0, 20, "reversed")],
+    [(0, 0, 0, 20, "empty")],
+    [(0, 0, 10, 20, "")],
+    [(0, 0, 10, 20, " ")],
+    [(0, 0, 10**1000, 20, "overflow")],
+    [(0, 0, 10, 20)],
+    [(0, 0, 10, 20, "bounded")] * 1001,
+])
+def test_viewer_word_overlap_refuses_invalid_or_unbounded_geometry(words):
+    with pytest.raises(ValueError):
+        rendering.slide_word_overlaps(words)
+
+
+@pytest.mark.parametrize("mutation", ["non_numeric", "outside_level", "alias_prefix"])
+def test_malformed_bullet_paragraph_refuses_before_replacing_package(tmp_path, mutation):
+    import zipfile
+    source = b'<p:sld xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:q="http://schemas.openxmlformats.org/drawingml/2006/main"><p:cSld><p:spTree><p:sp><p:nvSpPr><p:nvPr><p:ph idx="1"/></p:nvPr></p:nvSpPr><p:txBody><a:bodyPr rIns="457200"/><a:p><a:pPr lvl="0"/><a:r><a:t>Retained bullet.</a:t></a:r></a:p></p:txBody></p:sp></p:spTree></p:cSld></p:sld>'
+    if mutation == "non_numeric":
+        source = source.replace(b'lvl="0"', b'lvl="invalid"')
+    elif mutation == "outside_level":
+        source = source.replace(b'lvl="0"', b'lvl="9"')
+    else:
+        source = source.replace(b'<a:pPr ', b'<q:pPr ')
+    path = tmp_path / "unsupported.pptx"
+    with zipfile.ZipFile(path, "w") as package:
+        package.writestr("ppt/slides/slide1.xml", source)
+    original = path.read_bytes()
+    with pytest.raises(ValueError):
+        rendering.pad_slide_bullet_bodies(path)
+    assert path.read_bytes() == original
