@@ -173,6 +173,7 @@ The completed maintenance record is kept in [docs/operations/maintenance-log.md]
 - On SEO passes for `index.html`, remove legacy Twitter card meta and drop Twitter from Person `sameAs` when the user requests a Twitter-free head.
 - After substantive repo edits, run `uv run python3 -m pytest code/tests -q` (Python via `uv`) to confirm the suite still passes.
 - Prefer full-catalog regeneration of `software.html` from `pages/SOFTWARE.md` (all owned + AII catalog rows, not a highlight subset), mirroring the publications.html / `sync_publications_html.py` pattern.
+- For new publication editions, prefer the existing versioned Zenodo PDF archive and keep metadata, work/paper pages, available extracted text, and previews here. Curate `remote_primary_pdf` and independent `source_evidence` under the [PDF hosting policy](docs/operations/github-pages-artifact.md#primary-pdf-hosting-and-source-custody); preserve existing local originals, public PDF URLs, and historical extraction provenance. Hosting curation does not authorize bulk migration, deletion, repository creation, or budget increases.
 
 ## Learned Workspace Facts
 

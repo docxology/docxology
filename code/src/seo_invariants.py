@@ -195,10 +195,8 @@ def check_work_citations(repo_root: Path) -> list[str]:
         }
         if work.get("doi"):
             expected["citation_doi"] = [work["doi"]]
-        if resources.primary_pdf:
-            expected["citation_pdf_url"] = [
-                resources.absolute_url(resources.primary_pdf)
-            ]
+        if resources.primary_pdf_url:
+            expected["citation_pdf_url"] = [resources.primary_pdf_url]
         expected.update(
             {
                 f"citation_{name}": [value]

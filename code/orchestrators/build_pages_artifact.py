@@ -48,9 +48,9 @@ is_control_path = release_controls.is_control_path
 _latest_payload_commit = release_controls.latest_payload_commit
 
 DEFAULT_OUTPUT = REPO_ROOT / "_site"
-# 950 MiB is the repository's release hard ceiling; GitHub Pages itself has a
-# 1 GiB platform maximum.  Keep both values explicit so a warning is not
-# mistaken for permission to cross the release ceiling.
+# GitHub documents a 1 GB maximum. The 950 MiB release ceiling stays below it.
+# Preserve the separate configured 1 GiB outer bound in existing receipts;
+# a warning never permits crossing the lower release ceiling.
 MAX_ARTIFACT_BYTES = 950 * 1024 * 1024
 WARNING_ARTIFACT_BYTES = 930 * 1024 * 1024
 HARD_ARTIFACT_BYTES = 1024 * 1024 * 1024
@@ -746,9 +746,9 @@ def _manifest_payload(
             "raw_template": "https://raw.githubusercontent.com/docxology/docxology/{commit}/{path}",
         },
         "policy": {
-            "repository_role": "complete archival source",
+            "repository_role": "curated catalog, retained local archives, and version-bound external artifact references",
             "pages_role": "bounded navigable web projection",
-            "supporting_document_policy": "Only reviewed Office source documents with exact committed byte proofs and no current local references use pinned GitHub archives. PDFs and work URLs remain hosted.",
+            "supporting_document_policy": "Only reviewed Office source documents with exact committed byte proofs and no current local references use pinned GitHub archives. Existing hosted PDFs and work URLs remain hosted; explicitly selected PDF editions may link directly to reviewed Zenodo records.",
             "omitted_assets": "reviewed supporting Office source documents, duplicated extracted paper-image binaries, dated visual-QA screenshot binaries, and superseded dated reports (same-family files strictly older than the newest, except reports cited by published surfaces)",
             "omitted_assets_fallback": "Use the GitHub tree/raw templates with the source commit and repository-relative path.",
             "superseded_report_policy": "Superseded dated reports (older-than-newest per report family) remain in the committed repository and are omitted from the Pages projection; any report referenced from a published page or data file is never omitted.",

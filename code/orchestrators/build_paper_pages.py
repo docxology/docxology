@@ -101,11 +101,21 @@ def pdf_rows(folder: Path, resources: PaperResources | None = None) -> str:
     resources = resources or PaperResources.load(
         REPO_ROOT, folder.relative_to(REPO_ROOT).as_posix()
     )
-    if not resources.pdfs:
+    if not resources.pdfs and not resources.remote_primary_pdf:
         return '<li class="muted">No PDF file is archived in this folder.</li>'
     rows = []
+    if remote := resources.remote_primary_pdf:
+        rows.append(
+            f'<li><a href="{h(remote.url)}" type="application/pdf">{h(remote.name)}</a> '
+            f'<span class="muted">Zenodo version {h(remote.version)} · '
+            f'{remote.bytes:,} bytes</span></li>'
+        )
     for path in resources.pdfs:
-        label = f" · {resources.primary_basis}" if path == resources.primary_pdf else ""
+        label = ""
+        if resources.remote_primary_pdf:
+            label = " · preserved historical archive"
+        elif path == resources.primary_pdf:
+            label = f" · {resources.primary_basis}"
         rows.append(
             f'<li><a href="{h(resources.url(path, prefix="../../"))}" download="{h(path.name)}" type="application/pdf">'
             f'{h(path.name)}</a> <span class="muted">{path.stat().st_size:,} bytes{h(label)}</span></li>'
@@ -114,6 +124,8 @@ def pdf_rows(folder: Path, resources: PaperResources | None = None) -> str:
         rows.append(
             f'<li><a href="{h(item["url"])}">Original Office source (pinned GitHub archive)</a></li>'
         )
+    if resources.remote_primary_pdf and resources.selection_issue:
+        rows.append(f'<li class="muted">{h(resources.selection_issue)}</li>')
     return "\n".join(rows)
 
 
@@ -215,6 +227,11 @@ def render_page(work: dict) -> str:
         if domain_href
         else h(work["domain_name"])
     )
+    artifact_description = (
+        "Tracked documentation, preserved local archives, and the selected Zenodo edition."
+        if resources.remote_primary_pdf
+        else "Tracked documentation and PDFs served directly from this folder."
+    )
     return (
         f"""<!DOCTYPE html>
 <html lang="en">
@@ -268,7 +285,7 @@ def render_page(work: dict) -> str:
             <div class="overview-box">{summary_html}{abstract_source_html(work.get("_enrichment", {}), prefix="../../")}</div>
         </section>
         <section class="section">
-            <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation and PDFs served directly from this folder.</p><div class="section-divider"></div></div>
+            <div class="section-header"><h2>Artifacts</h2><p>{artifact_description}</p><div class="section-divider"></div></div>
             <div class="artifact-grid">
                 <div class="artifact-card"><strong>Documentation</strong><p>{required_links(folder, resources)}</p></div>
                 <div class="artifact-card"><strong>Document Files</strong><ul>{pdf_rows(folder, resources)}</ul></div>

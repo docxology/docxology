@@ -36,6 +36,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
 
 from docxology_tools.biblio_table import iter_bibliography_rows  # noqa: E402
+from docxology_tools.paper_artifacts import RemotePrimaryPDF  # noqa: E402
 from docxology_tools.publication_revisions import revision_notice_markdown  # noqa: E402
 from docxology_tools.abstract_text import abstract_display_text  # noqa: E402
 from docxology_tools.domain_inference import DOMAIN_TO_EMOJI, infer_domain_name  # noqa: E402
@@ -844,6 +845,7 @@ FOLDER_METADATA_FIELDS = (
     "release_tag",
     "release_name",
     "files",
+    "remote_primary_pdf",
     "methods",
     "key_findings",
     "summary_provenance",
@@ -1145,8 +1147,27 @@ def generate_readme(
         lines.append(f"- Zenodo record: {markdown_link(zenodo_record, zenodo_record)}")
 
     local_pdfs = sorted((paths.papers_dir / folder).glob("*.pdf"))
+    remote = (
+        RemotePrimaryPDF.from_value(meta["remote_primary_pdf"])
+        if meta.get("remote_primary_pdf") is not None
+        else None
+    )
     for pdf in local_pdfs[:3]:
-        lines.append(f"- PDF: {markdown_link(pdf.name, pdf.name)}")
+        label = "Historical local PDF" if remote else "PDF"
+        lines.append(f"- {label}: {markdown_link(pdf.name, pdf.name)}")
+
+    if remote:
+        lines.append(
+            f"- Current PDF (Zenodo, version {remote.version}): "
+            f"{markdown_link(remote.name, remote.url)}"
+        )
+        if local_pdfs:
+            lines.append("- Local PDFs remain preserved historical archives.")
+        if (paths.papers_dir / folder / "full_text.md").is_file():
+            lines.append(
+                "- Extracted text retains its own source provenance; "
+                "a matching filename does not establish edition identity."
+            )
 
     for file_info in meta.get("files", [])[:3]:
         name = file_info.get("name", "")
@@ -1154,6 +1175,7 @@ def generate_readme(
         if (
             name
             and download_url
+            and (remote is None or download_url != remote.url)
             and name.lower().endswith(".pdf")
             and not any(pdf.name == name for pdf in local_pdfs)
         ):

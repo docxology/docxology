@@ -73,6 +73,7 @@ class PaperMetadata:
     license_spdx: str | None = None
     reproducibility_artifacts: list[str] = field(default_factory=list)
     dataset_references: list[str] = field(default_factory=list)
+    remote_primary_pdf: dict[str, Any] | None = None  # Explicit versioned Zenodo edition
 
     @classmethod
     def from_json(cls, path: Path | str) -> "PaperMetadata":
@@ -107,6 +108,7 @@ class PaperMetadata:
             "keywords",
             "files",
             "primary_pdf",
+            "remote_primary_pdf",
             "related_resources",
             "venue",
             "github_repo",

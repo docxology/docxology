@@ -49,9 +49,9 @@ def revision_notice_html(metadata: dict) -> str:
         '<section class="section" aria-label="Corrected source review">'
         '<div class="work-detail"><h2>Corrected source review</h2>'
         f"<p>{escape(item['summary'])}</p>"
-        "<p>The abstract, findings, extracted text and downloadable publication below "
-        "describe the historical archive. Consult the corrected source before reusing "
-        "its empirical claims. This review does not issue a new publication or DOI.</p>"
+        "<p>This dated review concerns the earlier source edition identified in the pinned correction. "
+        "Current summaries, downloads and extracted text each retain their own source provenance; "
+        "this review does not certify a newer edition.</p>"
         f'<p><a href="{escape(item["url"], quote=True)}">Read the pinned source correction</a> '
         f"(reviewed {escape(item['reviewed_at'])}).</p></div></section>"
     )
@@ -63,9 +63,9 @@ def revision_notice_markdown(metadata: dict) -> str:
         return ""
     return (
         "## Corrected source review\n\n" + escape(item["summary"]) + "\n\n"
-        "The abstract, findings and downloadable publication describe the historical archive. "
-        "Consult the corrected source before reusing its empirical claims. "
-        "This review does not issue a new publication or DOI.\n\n"
+        "This dated review concerns the earlier source edition identified in the pinned correction. "
+        "Current summaries, downloads and extracted text each retain their own source provenance; "
+        "this review does not certify a newer edition.\n\n"
         f"[Read the pinned source correction]({item['url']}) "
         f"(reviewed {item['reviewed_at']}).\n\n"
     )

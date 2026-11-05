@@ -1,9 +1,9 @@
 # GitHub Pages artifact
 
 GitHub Pages is the public web projection of this repository, not the complete
-archive. GitHub documents a 1 GiB maximum for a published Pages site, while the
-canonical repository includes paper PDFs and extracted figure images for
-provenance and reproducibility.
+archive. GitHub documents a 1 GB maximum for a published Pages site. Existing
+paper PDFs and extracted figures remain in the repository for provenance;
+reviewed versioned Zenodo deposits can hold new primary PDF editions.
 
 `.github/workflows/pages.yml` therefore assembles a bounded artifact with
 `code/orchestrators/build_pages_artifact.py` and deploys it with the official
@@ -11,7 +11,7 @@ Pages artifact workflow. Deployment waits for both repository validation and
 the reusable required browser acceptance job in
 `.github/workflows/browser-qa.yml`; a failure in either blocks publication.
 The validation workflow calls that same browser job. It retains the public HTML, data exports, generated
-work/paper pages, full-text files, CV outputs, PDFs, artwork assets, report
+work/paper pages, available full-text files, CV outputs, existing local PDFs, artwork assets, report
 manifests, and agent documentation. It omits duplicate binary files under
 `papers/**/images/`, dated visual-QA screenshot binaries under
 `reports/visual-qa/*/` and the legacy `reports/YYYY-MM-DD/*` capture layout,
@@ -32,13 +32,12 @@ Pages asset.
 The artifact builder emits a review warning at 930 MiB; ordinary CI enforces
 that 930 MiB budget. The projection growth target is at most 890 MiB, preserving
 40 MiB of ordinary-CI headroom. The builder separately fails at the
-950 MiB release hard ceiling, and records GitHub's 1 GiB platform limit as a
-separate physical constraint. (Raised from the 850/890/900 MiB tiers on
+950 MiB release hard ceiling, and records a 1 GiB configured outer bound separately from GitHub's published
+1 GB limit. (Raised from the 850/890/900 MiB tiers on
 2026-10-31 after the versioned publication intake pushed the measured
-projection to 911.45 MiB; the owner chose to keep all paper PDFs hosted and
-widen the tiers rather than route current-version artifacts to GitHub
-downloads. The measured artifact must still stay below the ceiling before
-every deploy.) The current full server-rendered
+projection to 911.45 MiB; the owner retained the existing hosted PDFs and
+widened the tiers. New intake follows the PDF hosting policy below. The measured
+artifact must still stay below the ceiling before every deploy.) The current full server-rendered
 `publications.html` is allowed a 600 KB page-budget exception because it
 retains crawlable bibliography rows and inline collection JSON-LD; the asset
 audit records the exception and its reason. Run the artifact check locally with:
@@ -66,7 +65,7 @@ rules: [settle.md](settle.md) Notes, binder ordering);
 `--check-manifest` rejects a manifest that still names an older payload commit
 after a later content change.
 
-The repository remains the source of truth for all omitted files. The public
+The repository remains the source of truth for its omitted committed files. The public
 site's `data/agent-index.json` and `GENERATED.md` describe the canonical
 repository datasets and the generated web projection separately.
 
@@ -87,17 +86,50 @@ not deletion or report pruning.
 
 The legacy dated capture layout is matched only for real calendar dates and
 direct child image files; arbitrary report images and nested directories do
-not inherit the omission rule. All paper PDFs and full text remain hosted. Reviewed supporting Office
+not inherit the omission rule. Existing local PDFs and available full text remain
+hosted. Reviewed supporting Office
 documents may instead use pinned GitHub source downloads, declared in
 `data/pages-archive-documents.json`. The transcript has both a hosted PDF and
 a visible link to its original Office source archive. Archive routing requires
 exact source/committed-object byte agreement and rejects any surviving local
 download reference; it never deletes repository source bytes. No source evidence is deleted by this policy.
 
+## Primary PDF hosting and source custody
+
+For new publications and editions, prefer an existing versioned Zenodo PDF
+archive. Keep curated metadata, stable work/paper pages, available extracted text,
+and previews in this site. Existing local originals and their public URLs remain
+hosted; a reviewed remote primary selects the current edition while older local
+PDFs remain historical attachments. This policy does not authorize bulk migration,
+repository creation, deletion, or a budget increase.
+
+Declare a remote primary in the paper's `metadata.json` as `remote_primary_pdf`
+with `name`, `url`, `version`, `record_id`, `bytes`, and `sha256`. The shared
+[`PaperResources` resolver](../../code/src/paper_artifacts.py) owns validation and
+primary selection. Its current remote backend accepts only an exact versioned
+Zenodo file URL for the named record and file; a concept DOI or mutable latest
+link cannot select the bytes. GitHub Releases may be considered as a future
+backend, but are not accepted by this contract.
+
+Record the independent source observation in `source_evidence.json`: its
+`source_pdf` names the exact record, filename, URL, version, byte count, and
+SHA-256. An `extraction` names its text file and SHA-256 and binds
+`source_pdf_sha256` to the source PDF, with the tool and method; `review_scope`
+states what was checked, and `historical_sources` preserves prior editions.
+A declaration alone does not fetch the PDF or verify its remote bytes. Preserve
+historical originals and extraction provenance, and do not present text from a
+previous edition as the current remote PDF's extraction.
+
+Generated download links, citation PDF metadata, and JSON-LD use the selected
+primary through the shared resolver. The Pages manifest and deployed-artifact
+checks describe files hosted by this site; source evidence and remote availability
+remain separate from that deployed-byte scope. Follow
+[publication-sync.md](publication-sync.md#pdf-hosting-decision) for intake.
+
 After deployment, the Pages workflow runs `verify_deployed_artifact.py` and
 retains `deployment-acceptance-<full SHA>` as an Actions artifact for 90 days.
-It checks exact manifest and critical-asset/work-page hashes, all archived
-paper PDF HEAD contracts, and three deterministic PDF content hashes. Failed
+It checks exact manifest and critical-asset/work-page hashes, all locally hosted
+paper PDF HEAD contracts, and three deterministic hosted PDF content hashes. Failed
 checks fail the workflow and retain diagnostics. This technical receipt is
 bounded to 12 minutes across requests and propagation retries, with a separate
 15-minute hosted step limit so an exhausted deadline can still retain its

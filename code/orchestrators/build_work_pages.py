@@ -855,6 +855,18 @@ def json_ld(work: dict) -> str:
         }
         for pdf in ([resources.primary_pdf] if resources.primary_pdf else [])
     ]
+    if remote := resources.remote_primary_pdf:
+        encodings.append(
+            {
+                "@type": "MediaObject",
+                "encodingFormat": "application/pdf",
+                "contentUrl": remote.url,
+                "url": remote.url,
+                "name": remote.name,
+                "version": remote.version,
+                "contentSize": f"{remote.bytes} bytes",
+            }
+        )
     attachments = [
         {
             "@type": "MediaObject",
@@ -874,16 +886,23 @@ def json_ld(work: dict) -> str:
             "name": "Full text (extracted)",
         }
         if (
-            resources.primary_pdf
-            and resources.extraction_source
-            and resources.extraction_source != resources.primary_pdf.name
+            resources.remote_primary_pdf
+            or (
+                resources.primary_pdf
+                and resources.extraction_source
+                and resources.extraction_source != resources.primary_pdf.name
+            )
         ):
             attachments.append(
                 {
                     **text_encoding,
                     "@type": "MediaObject",
                     "contentUrl": text_encoding["url"],
-                    "name": f"Extracted text from {resources.extraction_source}",
+                    "name": (
+                        f"Extracted text from {resources.extraction_source}"
+                        if resources.extraction_source
+                        else "Extracted text (separate source provenance)"
+                    ),
                 }
             )
         else:
@@ -943,9 +962,9 @@ def page_head(work: dict) -> str:
     )
     if work.get("doi"):
         citation_meta.append(f'<meta name="citation_doi" content="{h(work["doi"])}">')
-    if resources.primary_pdf:
+    if resources.primary_pdf_url:
         citation_meta.append(
-            f'<meta name="citation_pdf_url" content="{h(resources.absolute_url(resources.primary_pdf))}">'
+            f'<meta name="citation_pdf_url" content="{h(resources.primary_pdf_url)}">'
         )
     citation_meta_html = "\n    ".join(citation_meta)
     return f"""<!DOCTYPE html>
@@ -996,12 +1015,22 @@ def page_head(work: dict) -> str:
 
 
 def pdf_downloads_html(resources: PaperResources) -> str:
-    if not resources.pdfs:
+    if not resources.pdfs and not resources.remote_primary_pdf:
         return ""
     rows = []
+    if remote := resources.remote_primary_pdf:
+        rows.append(
+            f'<li><a href="{h(remote.url)}" type="application/pdf">{h(remote.name)}</a>'
+            f'<span class="muted"> PDF · Zenodo version {h(remote.version)} · '
+            f'{remote.bytes / (1024 * 1024):.2f} MiB</span></li>'
+        )
     for pdf in resources.pdfs:
         size = pdf.stat().st_size / (1024 * 1024)
-        basis = f" · {resources.primary_basis}" if pdf == resources.primary_pdf else ""
+        basis = ""
+        if resources.remote_primary_pdf:
+            basis = " · preserved historical archive"
+        elif pdf == resources.primary_pdf:
+            basis = f" · {resources.primary_basis}"
         rows.append(
             f'<li><a href="{h(resources.url(pdf))}" download="{h(pdf.name)}" type="application/pdf">'
             f'{h(pdf.name)}</a><span class="muted"> PDF · {size:.2f} MiB{h(basis)}</span></li>'
@@ -1014,11 +1043,20 @@ def pdf_downloads_html(resources: PaperResources) -> str:
     if len(resources.pdfs) > 1:
         note = (
             (note + " " if note else "")
-            + "These files may be different versions or companion documents. The archive does not identify a latest edition."
+            + (
+                "Local files may be different historical versions or companion documents."
+                if resources.remote_primary_pdf
+                else "These files may be different versions or companion documents. The archive does not identify a latest edition."
+            )
         )
     note_html = f'<p class="muted">{h(note)}</p>' if note else ""
+    description = (
+        "The selected PDF is hosted at Zenodo; local files remain preserved archives."
+        if resources.remote_primary_pdf
+        else "PDFs are hosted here; supporting sources may use pinned archives."
+    )
     return f"""<section class="section" id="downloads" aria-labelledby="downloads-title">
-            <div class="section-header"><h2 id="downloads-title">Document downloads</h2><p>PDFs are hosted here; supporting sources may use pinned archives.</p><div class="section-divider"></div></div>
+            <div class="section-header"><h2 id="downloads-title">Document downloads</h2><p>{description}</p><div class="section-divider"></div></div>
             <div class="work-detail"><ul class="download-list">{"".join(rows)}</ul>{note_html}</div>
         </section>"""
 
@@ -1030,7 +1068,12 @@ def render_work_page(work: dict) -> str:
     doi_link = f"https://doi.org/{work['doi']}" if work.get("doi") else ""
     primary = work.get("url") or doi_link
     actions = []
-    if resources.primary_pdf:
+    if remote := resources.remote_primary_pdf:
+        actions.append(
+            f'<a class="btn btn-gold" href="{h(remote.url)}" type="application/pdf">'
+            f'Read PDF on Zenodo (version {h(remote.version)})</a>'
+        )
+    elif resources.primary_pdf:
         pdf = resources.primary_pdf
         actions.append(
             f'<a class="btn btn-gold" href="{h(resources.url(pdf))}" download="{h(pdf.name)}" type="application/pdf">Download PDF</a>'

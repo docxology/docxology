@@ -39,6 +39,30 @@ The safest default is: **scan live sources, inspect the report, apply only stron
   This mode performs no network intake or classification. `--check` rejects
   local paths reintroduced into release bodies.
 
+## PDF Hosting Decision
+
+For new works and editions, prefer the full PDF already archived in a versioned
+Zenodo record, with metadata, work/paper pages, available extracted text, and
+previews kept here. Preserve existing local PDFs and their published URLs. See
+[the artifact policy](github-pages-artifact.md#primary-pdf-hosting-and-source-custody)
+for the hosting boundary and unchanged size budgets.
+
+A paper's reviewed `remote_primary_pdf` declaration records `name`, `url`,
+`version`, `record_id`, `bytes`, and `sha256`. Use the exact version-specific
+Zenodo file URL and an independently observed byte count and SHA-256; a concept
+DOI remains the citation identity, not the selected file URL. Record that source
+observation and any source-bound extraction under `source_evidence`. The shared
+[`PaperResources` resolver](../../code/src/paper_artifacts.py) selects the remote
+primary while keeping local PDFs as historical attachments. A filename match
+does not establish that an existing extraction belongs to the selected edition.
+
+For the paired apply command, `--no-download-files` suppresses a duplicate local
+PDF download; it does not create the remote-primary declaration, verify external
+bytes, or approve the pair. Curate the declaration and evidence deliberately
+before regenerating. Keep version-specific file metadata and preserved historical
+sources even when the full PDF remains external. The remote-primary backend
+currently accepts Zenodo file URLs; GitHub Releases support is a future option.
+
 ## Preconditions
 
 Use a GitHub token so rate limits do not truncate repository or release scans:
@@ -139,8 +163,8 @@ Tags and scope:
 - `width`/`height` are deliberately not synced; the art grid contract is pinned by
   [`code/tests/test_art_thumb_dimensions.py`](../../code/tests/test_art_thumb_dimensions.py).
 
-Post-sync order: after the sync writes `data/artworks.json`, rebuild every dependent in one
-pass with `regenerate_all.py`, then review the diff.
+Post-sync order: after the sync writes `data/artworks.json`, rebuild every dependent with
+`regenerate_all.py`, then review the diff.
 
 ```bash
 uv run python3 code/orchestrators/sync_flickr_artworks.py             # 1. sync
@@ -240,27 +264,27 @@ Apply only strong create/update actions:
 GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/sync_paired_publications.py --include-aii --apply
 ```
 
-By default, apply mode downloads available Zenodo PDFs and updates curated/generated source surfaces. Use `--no-download-files` only when intentionally deferring PDFs.
+Apply mode retains its download-by-default behavior. For a reviewed externally
+hosted primary, use `--no-download-files` and record the declaration and source
+evidence described in [PDF Hosting Decision](#pdf-hosting-decision).
 
 Expected source-owned updates include:
 
 - bibliography rows in [`pages/BIBLIOGRAPHY.md`](../../pages/BIBLIOGRAPHY.md)
-- per-paper folders under [`papers/`](../../papers/) with `README.md`, `AGENTS.md`, `SKILL.md`, `metadata.json`, `CITATION.cff`, and PDFs when available
+- per-paper folders under [`papers/`](../../papers/) with `README.md`, `AGENTS.md`, `SKILL.md`, `metadata.json`, `CITATION.cff`, and reviewed local or remote PDF links
 - [`papers/paper_metadata.json`](../../papers/paper_metadata.json)
 - [`papers/README.md`](../../papers/README.md) and [`papers/AGENTS.md`](../../papers/AGENTS.md)
 - software cross-links in [`pages/SOFTWARE.md`](../../pages/SOFTWARE.md) when a paired repository should be catalogued
 
-Apply mode writes **folders and curated files only** — the inline
-13-generator regeneration run (`run_regeneration`) has been deleted; it no
-longer regenerates any generated surface itself. [`regenerate_all.py`](#regenerate-dependent-surfaces)
-is now the single regeneration driver, so the post-apply sequence below is
-unchanged in substance: apply, regenerate in one pass, then validate.
-Generation of the resume/CV exports, current counts, agent data (`claims.json`),
-the `exports`/`updates`/`evidence`/`reconciliation` pages, and the live-site
-verification snapshot still must go through `regenerate_all.py` — they will
-fail `validate_repo` until rebuilt. (Apply *does* keep the `**N** works` and
-`**N** indexed paper folders` prose counts in [`pages/BIBLIOGRAPHY.md`](../../pages/BIBLIOGRAPHY.md)
-in sync via `refresh_bibliography_counts`.)
+Apply mode writes **folders and curated files only**. Run
+[`regenerate_all.py`](#regenerate-dependent-surfaces) afterward for its two ordered
+local passes, then validate. Generation of the resume/CV exports, current counts,
+agent data (`claims.json`), and the `exports`/`updates`/`evidence`/`reconciliation`
+pages goes through that driver. Refresh the live-site verification snapshot
+separately when counts changed, as described below.
+Apply also keeps the `**N** works` and `**N** indexed paper folders` prose counts
+in [`pages/BIBLIOGRAPHY.md`](../../pages/BIBLIOGRAPHY.md) in sync via
+`refresh_bibliography_counts`.
 
 ## Fast Intake Path (Small, Data-Only Changes)
 
@@ -390,7 +414,7 @@ Record manual decisions in [`data/paired-publication-decisions.json`](../../data
 If the item is a real publication but cannot be safely auto-applied:
 
 1. Add or update the row in [`pages/BIBLIOGRAPHY.md`](../../pages/BIBLIOGRAPHY.md).
-2. Create or update the matching `papers/YYYY_Topic/` folder with `README.md`, `AGENTS.md`, `SKILL.md`, `metadata.json`, `CITATION.cff`, and any public PDF.
+2. Create or update the matching `papers/YYYY_Topic/` folder with `README.md`, `AGENTS.md`, `SKILL.md`, `metadata.json`, `CITATION.cff`, and reviewed local or remote artifact links.
 3. Update [`papers/paper_metadata.json`](../../papers/paper_metadata.json) and paper indexes if the folder set changed.
 4. Run the regeneration and validation commands below.
 
@@ -410,7 +434,7 @@ Use an optional domain override when inference is not safe:
 uv run python3 code/orchestrators/add_zenodo_only.py <record_id>:💻
 ```
 
-The helper fetches Zenodo metadata, creates the paper folder, downloads the first available PDF, appends the bibliography and papers index rows, and updates `papers/paper_metadata.json`. It does not replace review: confirm authorship, type, domain, title, DOI, and whether the record is a version of an already represented work before running it.
+The helper fetches Zenodo metadata, creates the paper folder, downloads the first available PDF, appends the bibliography and papers index rows, and updates `papers/paper_metadata.json`. It is a local-PDF intake path; for an externally hosted primary, use deliberate metadata-only curation and the declaration above. Confirm authorship, type, domain, title, DOI, and whether the record is a version of an already represented work before either path.
 
 After adding records it runs [`regenerate_all.py`](#regenerate-dependent-surfaces) automatically to rebuild the local generated layer (pass `--no-regenerate` to defer, e.g. when batching several adds). You still owe the network/validation follow-ups: refresh the live-site snapshot if counts changed, then run `validate_repo.py`. If the record also represents software, update [`pages/SOFTWARE.md`](../../pages/SOFTWARE.md) and re-run `regenerate_all.py` before the broad validation gate.
 
@@ -428,7 +452,7 @@ After a curated software edit, run:
 ```bash
 uv run python3 code/orchestrators/sync_software_html.py --apply
 uv run python3 code/orchestrators/export_agent_data.py
-GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/build_github_inventory.py
+uv run python3 code/orchestrators/render_github_inventory.py
 ```
 
 Then continue with the regeneration and validation commands below.
@@ -436,8 +460,8 @@ Then continue with the regeneration and validation commands below.
 ## Regenerate Dependent Surfaces
 
 After any apply or manual curation, rebuild the generated layer with the single
-dependency-ordered driver. It regenerates every locally-derived artifact in one pass
-(manifest last), so you reach a green validation instead of whack-a-mole:
+dependency-ordered driver. It runs two ordered local passes by default to refresh
+consumers of later-produced projections, then `--validate` checks the result:
 
 ```bash
 uv run python3 code/orchestrators/regenerate_all.py --validate
@@ -501,7 +525,7 @@ Before committing or pushing, confirm:
 
 - [`publications.html`](../../publications.html) includes each new or updated work.
 - [`data/works.json`](../../data/works.json) includes the canonical DOI and paper-folder path.
-- Each publication folder has `README.md`, `AGENTS.md`, `SKILL.md`, `metadata.json`, `CITATION.cff`, and at least one local artifact link when a PDF exists.
+- Each publication folder has `README.md`, `AGENTS.md`, `SKILL.md`, `metadata.json`, `CITATION.cff`, and a reviewed local or remote artifact link when a PDF exists. A remote primary has exact source evidence; historical local PDF links still resolve.
 - [`papers/<folder>/index.html`](../../papers/) exists for every bibliography row with a docs path.
 - [`sitemap.xml`](../../sitemap.xml), [`search-index.json`](../../search-index.json), [`GENERATED.md`](../../GENERATED.md), and [`data/generated-manifest.json`](../../data/generated-manifest.json) reflect the new public URLs.
 
@@ -512,7 +536,9 @@ curl -L -I https://danielarifriedman.com/publications.html
 curl -L -I https://danielarifriedman.com/data/works.json
 curl -L -I https://danielarifriedman.com/papers/<folder>/
 curl -L -I https://danielarifriedman.com/papers/<folder>/README.md
+# Check this route only for a PDF included in the Pages manifest.
 curl -L -I https://danielarifriedman.com/papers/<folder>/<paper>.pdf
+# For a remote primary, check the exact versioned URL recorded in metadata.json.
 ```
 
 

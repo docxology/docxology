@@ -29,8 +29,8 @@ def test_pinned_source_and_archive_boundary_are_visible():
     assert "/blob/" + "a" * 40 + "/PAPER_REVISION.md" in revision_notice(data)["url"]
     for rendered in (revision_notice_html(data), revision_notice_markdown(data)):
         assert "&lt;scoring&gt;" in rendered
-        assert "historical archive" in rendered
-        assert "new publication or DOI" in rendered
+        assert "earlier source edition identified in the pinned correction" in rendered
+        assert "does not certify a newer edition" in rendered
     assert revision_notice_html({}) == ""
 
 

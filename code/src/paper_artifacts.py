@@ -86,6 +86,52 @@ def source_file(
 
 
 @dataclass(frozen=True)
+class RemotePrimaryPDF:
+    """An explicitly reviewed edition hosted at one exact Zenodo record."""
+
+    name: str
+    url: str
+    version: str
+    record_id: str
+    bytes: int
+    sha256: str
+
+    def __post_init__(self) -> None:
+        if (
+            not isinstance(self.name, str)
+            or not self.name.lower().endswith(".pdf")
+            or "/" in self.name
+            or "\\" in self.name
+            or re.search(r"[\x00-\x1f\x7f]", self.name)
+            or not isinstance(self.version, str)
+            or not self.version.strip()
+            or re.search(r"[\x00-\x1f\x7f]", self.version)
+            or not isinstance(self.record_id, str)
+            or not re.fullmatch(r"[1-9][0-9]*", self.record_id)
+            or isinstance(self.bytes, bool)
+            or not isinstance(self.bytes, int)
+            or self.bytes <= 0
+            or not isinstance(self.sha256, str)
+            or not re.fullmatch(r"[0-9a-fA-F]{64}", self.sha256)
+        ):
+            raise ValueError("Invalid remote primary PDF identity or integrity metadata")
+        encoded = quote(self.name, safe="")
+        permitted = {
+            f"https://zenodo.org/records/{self.record_id}/files/{encoded}",
+            f"https://zenodo.org/api/records/{self.record_id}/files/{encoded}/content",
+        }
+        if not isinstance(self.url, str) or self.url not in permitted:
+            raise ValueError("Remote primary PDF requires its exact versioned Zenodo URL")
+
+    @classmethod
+    def from_value(cls, value: object) -> RemotePrimaryPDF:
+        fields = ("name", "url", "version", "record_id", "bytes", "sha256")
+        if not isinstance(value, dict) or not all(key in value for key in fields):
+            raise ValueError("Remote primary PDF declaration requires all edition fields")
+        return cls(**{key: value[key] for key in fields})
+
+
+@dataclass(frozen=True)
 class PaperResources:
     repo_root: Path
     docs_path: str = ""
@@ -97,6 +143,7 @@ class PaperResources:
     primary_basis: str = ""
     selection_issue: str = ""
     extraction_source: str = ""
+    remote_primary_pdf: RemotePrimaryPDF | None = None
 
     @classmethod
     def load(
@@ -181,6 +228,19 @@ class PaperResources:
                 )
         elif len(pdfs) == 1:
             primary, basis = pdfs[0], "only archived PDF"
+        remote = None
+        if meta.get("remote_primary_pdf") is not None:
+            remote = RemotePrimaryPDF.from_value(meta["remote_primary_pdf"])
+            primary = None
+            basis = "declared remote edition"
+            issue = f"Current PDF version {remote.version} is hosted at Zenodo."
+            if pdfs:
+                issue += " Local PDFs remain preserved historical archives."
+            if full_text in files:
+                issue += (
+                    " Extracted text retains its own source provenance;"
+                    " a matching filename does not establish edition identity."
+                )
         return cls(
             root,
             clean + "/",
@@ -192,6 +252,7 @@ class PaperResources:
             basis,
             issue,
             extracted,
+            remote,
         )
 
     def file(self, name: str) -> Path | None:
@@ -211,6 +272,12 @@ class PaperResources:
     @property
     def full_text(self) -> Path | None:
         return self.file("full_text.md")
+
+    @property
+    def primary_pdf_url(self) -> str:
+        if self.remote_primary_pdf:
+            return self.remote_primary_pdf.url
+        return self.absolute_url(self.primary_pdf) if self.primary_pdf else ""
 
     @property
     def images(self) -> tuple[Path, ...]:
