@@ -1,11 +1,13 @@
 # AGENTS.md — `papers/2026_MappingWilliamBlake/images/`
 
-Extracted figures for [Mapping William Blake's Works: Evidence ledgers, source
+Historical figures from manuscript edition **0.1.0** of
+[Mapping William Blake's Works: Evidence ledgers, source
 provenance, text-image diagnostics, and rights-bounded release controls](../README.md)
-(`2026_MappingWilliamBlake`). The paper's `../full_text.md` embeds all 19 of them as
-image links into this folder, so no captions survive extraction and the filename is the
-only stable ordering. The generated work pages carry a "Figures on GitHub" button to
-this folder, and the paper's own `../index.html` links it as well.
+(`2026_MappingWilliamBlake`). The preserved `../full_text_v0.1.md` embeds their
+image links. `../source_evidence.json` binds this gallery to that extraction's
+SHA-256, source PDF and edition. Captions did not survive extraction; filenames
+provide the retained ordering. Work and paper pages label this gallery as
+historical edition 0.1.0 while preserving its GitHub links.
 
 - The binaries are produced from the paper's archived PDF (`blake_working_paper.pdf`) by
   `code/orchestrators/extract_paper_texts.py`, which writes `pageN_imgM.<ext>` for each
@@ -21,12 +23,14 @@ this folder, and the paper's own `../index.html` links it as well.
   figure assets.
 
 - Extracted paper-image binaries are deliberately omitted from the deployed Pages
-  projection; the site links to them in the repository, and the paper's own PDF remains
-  the authoritative figure source.
+  projection; the site links to them in the repository. `blake_working_paper.pdf`
+  is this historical gallery's identified source. The selected current PDF and
+  its separate provenance are documented in the paper overview.
 
-- There is no test, CI job, or runnable gate for this folder. The repository-wide check
-  is `uv run python3 code/orchestrators/validate_repo.py`; it reports a broken link but
-  does not inspect image content or figure fidelity.
+- Shared gallery regressions check source bindings, edition labels and unchanged
+  image links. The repository-wide check is
+  `uv run python3 code/orchestrators/validate_repo.py`; these checks do not inspect
+  image content or figure fidelity.
 
 The paper-folder contract is in [`../../README.md`](../../README.md) and
 [`../../AGENTS.md`](../../AGENTS.md).

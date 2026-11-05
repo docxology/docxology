@@ -31,6 +31,8 @@ COMMON_INPUTS = (
     "papers/Example/SKILL.md",
     "papers/Example/CITATION.cff",
     "papers/Example/full_text.md",
+    "papers/Example/full_text_v0.1.md",
+    "papers/Example/source_evidence.json",
     "papers/Example/manuscript.PDF",
     "papers/Example/images/page1.png",
     "code/src/paper_artifacts.py",

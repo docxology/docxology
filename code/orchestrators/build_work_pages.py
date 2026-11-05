@@ -1106,9 +1106,20 @@ def render_work_page(work: dict) -> str:
             f'<a class="btn btn-outline" href="{h(resources.docs_url)}">Paper documentation</a>'
         )
     if resources.images:
-        extras.append(
-            f'<a class="btn btn-outline" href="{h(resources.github_url + "/images")}">Figures on GitHub</a>'
+        historical = resources.historical_image_source
+        label = (
+            f"Historical figures (edition {historical['edition']}) on GitHub"
+            if historical else "Figures on GitHub"
         )
+        extras.append(
+            f'<a class="btn btn-outline" href="{h(resources.github_url + "/images")}">{h(label)}</a>'
+        )
+        if historical:
+            extraction = resources.file(historical["file"])
+            extras.append(
+                f'<span class="muted">Image source: {h(historical["source_pdf"])}; '
+                f'<a href="{h(resources.url(extraction))}">{h(historical["file"])}</a>.</span>'
+            )
     source_repo = source_repository_url(work.get("docs_path", ""), resources)
     if source_repo:
         extras.append(

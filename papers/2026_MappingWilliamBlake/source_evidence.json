@@ -26,7 +26,8 @@
       "file": "full_text_v0.1.md",
       "sha256": "63e2b39398e938bebfa72cde08a5f0470f57b2cd435526daea4389f3acb68d47",
       "source_pdf": "blake_working_paper.pdf",
-      "edition": "0.1.0"
+      "edition": "0.1.0",
+      "images": "images/"
     }
   ],
   "review_scope": "Streamed byte size and checksum verified; all pages extracted; source/version/title reviewed separately; no scientific replication or visual approval implied."

@@ -140,6 +140,7 @@ def image_gallery_link(
     if not img_files:
         return ""
     count = len(img_files)
+    historical = resources.historical_image_source
     # Show up to 6 thumbnail previews
     thumbs = img_files[:6]
     # Alt text names the work itself (not the folder id) so screen-reader
@@ -149,10 +150,17 @@ def image_gallery_link(
     for img in thumbs:
         # Extract page number from filename like "page10_img1.png" or "slide1_img1.png"
         page_match = __import__("re").search(r"(page|slide)(\d+)", img.name)
-        if page_match:
-            alt_text = f"Figure from {folder_title}, {page_match.group(1)} {page_match.group(2)}"
+        if historical:
+            alt_text = (
+                f"Historical figure from {folder_title}, edition {historical['edition']}, "
+                f"source {historical['source_pdf']}"
+            )
         else:
-            alt_text = f"Figure from {folder_title} ({img.stem})"
+            alt_text = f"Figure from {folder_title}"
+        if page_match:
+            alt_text += f", {page_match.group(1)} {page_match.group(2)}"
+        else:
+            alt_text += f" ({img.stem})"
         raw_url = (
             "https://raw.githubusercontent.com/docxology/docxology/main/"
             + "/".join(
@@ -169,7 +177,17 @@ def image_gallery_link(
     tree_url = "https://github.com/docxology/docxology/tree/main/" + "/".join(
         quote(part) for part in (*folder.relative_to(REPO_ROOT).parts, "images")
     )
-    return f'<a class="btn btn-outline" href="{h(tree_url)}">Extracted Images ({count}) — GitHub</a>{more}{thumb_html}'
+    label = "Extracted Images"
+    source_note = ""
+    if historical:
+        label = f"Historical figures (edition {historical['edition']})"
+        extraction = resources.file(historical["file"])
+        source_note = (
+            f'<span class="muted"> Source PDF: {h(historical["source_pdf"])}; '
+            f'extraction: <a href="{h(resources.url(extraction, prefix="../../"))}">'
+            f'{h(historical["file"])}</a>.</span>'
+        )
+    return f'<a class="btn btn-outline" href="{h(tree_url)}">{h(label)} ({count}) — GitHub</a>{more}{source_note}{thumb_html}'
 
 
 def required_links(folder: Path, resources: PaperResources | None = None) -> str:

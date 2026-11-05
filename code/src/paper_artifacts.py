@@ -6,6 +6,7 @@ still commits those files before assembling the tracked-only Pages projection.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import subprocess
@@ -291,6 +292,51 @@ class PaperResources:
             if self.folder
             else ()
         )
+
+    @property
+    def historical_image_source(self) -> dict[str, str] | None:
+        """Resolve only an explicitly bound historical gallery, without guessing."""
+        evidence = self.file("source_evidence.json")
+        if not self.images or evidence is None:
+            return None
+        with evidence.open("rb") as stream:
+            raw = stream.read(65537)
+        if len(raw) > 65536:
+            raise ValueError("Historical image evidence exceeds its bounded reader")
+        payload = json.loads(raw)
+        if not isinstance(payload, dict) or not isinstance(payload.get("historical_sources", []), list):
+            raise ValueError("Invalid historical image evidence")
+        bindings = [
+            entry for entry in payload.get("historical_sources", [])
+            if isinstance(entry, dict) and "images" in entry
+        ]
+        if not bindings:
+            return None
+        if len(bindings) != 1 or bindings[0]["images"] != "images/":
+            raise ValueError("Historical image archive requires one exact images/ binding")
+        source = bindings[0]
+        for field, suffix in (("file", ".md"), ("source_pdf", ".pdf")):
+            name = source.get(field)
+            if (
+                not isinstance(name, str) or not name.lower().endswith(suffix)
+                or "/" in name or "\\" in name or re.search(r"[\x00-\x1f\x7f]", name)
+            ):
+                raise ValueError("Historical image source requires plain document filenames")
+        edition, digest = source.get("edition"), source.get("sha256")
+        if (
+            not isinstance(edition, str) or not edition.strip()
+            or re.search(r"[\x00-\x1f\x7f]", edition)
+            or not isinstance(digest, str) or not re.fullmatch(r"[0-9a-fA-F]{64}", digest)
+        ):
+            raise ValueError("Historical image source requires an edition and extraction SHA-256")
+        extraction = self.file(source["file"])
+        if extraction is None:
+            raise ValueError("Historical image extraction is unavailable")
+        with extraction.open("rb") as stream:
+            text = stream.read(32 * 1024 * 1024 + 1)
+        if len(text) > 32 * 1024 * 1024 or hashlib.sha256(text).hexdigest() != digest.casefold():
+            raise ValueError("Historical image extraction no longer matches its SHA-256")
+        return {key: source[key] for key in ("file", "source_pdf", "edition")}
 
     @property
     def github_url(self) -> str:
