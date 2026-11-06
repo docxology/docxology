@@ -46,7 +46,10 @@ JSON_OUT = REPO_ROOT / "data" / "reproducibility.json"
 HTML_OUT = REPO_ROOT / "reproducibility.html"
 MD_OUT = REPO_ROOT / "pages" / "REPRODUCIBILITY.md"
 
-from docxology_tools.build_stamp import footer_build_stamp_html  # noqa: E402
+from docxology_tools.build_stamp import (  # noqa: E402
+    footer_build_stamp_html,
+    reuse_on_disk_stamp,
+)
 from docxology_tools.report_paths import stable_generated_at  # noqa: E402
 from docxology_tools.site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
@@ -486,9 +489,10 @@ def outputs(
 ) -> dict[Path, str]:
     """Render the ledger for explicit output paths without writing them."""
     ledger = _preserve_generated_at(build_ledger(), json_out=json_out)
+    existing_html = html_out.read_text(encoding="utf-8") if html_out.exists() else None
     return {
         json_out: json.dumps(ledger, indent=2, ensure_ascii=False) + "\n",
-        html_out: render_html(ledger),
+        html_out: reuse_on_disk_stamp(render_html(ledger), existing_html),
         md_out: render_md(ledger),
     }
 
@@ -504,8 +508,6 @@ def _comparable(path: Path, content: str) -> tuple[str, str]:
     if path != JSON_OUT:
         # Stamp-reuse: a difference confined to the footer build stamp (commit
         # SHA at generation time) is not staleness - mirror generated_outputs.
-        from docxology_tools.build_stamp import reuse_on_disk_stamp  # noqa: E402
-
         return on_disk, reuse_on_disk_stamp(content, on_disk)
     existing = json.loads(on_disk)
     fresh = json.loads(content)

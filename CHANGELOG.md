@@ -2,6 +2,8 @@
 
 ## 2026-11-05 — Complete manuscript production-source custody
 
+The [cross-repository follow-up](reports/software_quality_followup_2026-11-05.md) records the source corrections, tests, native render custody, and remaining review limits.
+
 - Explicit manuscript draft renders now record a bounded, deterministic inventory
   of production Python sources and reject source-byte or membership changes before
   publishing review outputs. Direct manuscript hashes and pending human/editorial

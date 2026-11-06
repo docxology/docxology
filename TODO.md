@@ -267,7 +267,7 @@ Recurring checks below are operating obligations, not unfinished feature work.
 - Owner: RESEARCHER / MAINTAINER
 - Trigger: before any claim that the repository-methods draft is rendered, reviewed, or publication-ready
 - Deliverable: inspect the requested rendered formats and their cross-references; obtain editorial and human visual review before publication
-- Acceptance: a declared render command produces output whose figures and references have been inspected, changed bibliography entries pass a real-parser syntax check outside the structural gate, and a named editorial reviewer's decision is recorded; until then `validate_manuscript.py` is reported only as structural source validation
+- Acceptance: a declared render command binds direct inputs and the complete production-source inventory, produces output whose figures and references have been inspected, changed bibliography entries pass a real-parser syntax check outside the structural gate, and a named editorial reviewer's decision is recorded; until then `validate_manuscript.py` is reported only as structural source validation
 - Dependencies: `docs/manuscript/config.yaml`, `code/orchestrators/validate_manuscript.py`, [MANUSCRIPT_STATUS.md](docs/manuscript/MANUSCRIPT_STATUS.md)
 - Open work: obtain named editorial/human approval and repeat requested format
   checks after source changes. The [dated assistant format inspection](reports/manuscript_format_review_2026-10-23.md)

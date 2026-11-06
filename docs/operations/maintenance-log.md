@@ -18,3 +18,5 @@ When investigating an earlier change:
 
 Do not add completed work to [`TODO.md`](../../TODO.md); use the changelog and
 dated evidence instead.
+
+The [November 5 software-quality follow-up](../../reports/software_quality_followup_2026-11-05.md) records source-bound fixes across the profile, Blake, Markdown Decision Process, and ActiveACO.
