@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-06 — Deterministic reproducibility output and fresh source proof
+
+- Repeated reproducibility-ledger builds preserve the footer when substantive
+  content is unchanged, while changed content receives fresh metadata.
+- A [clean-source follow-up](reports/software_quality_followup_2026-11-06.md)
+  records the failing fixed-point comparison, corrective regressions, full core
+  gate, fresh four-format render and complete production-source binding.
+
 ## 2026-11-05 — Complete manuscript production-source custody
 
 The [cross-repository follow-up](reports/software_quality_followup_2026-11-05.md) records the source corrections, tests, native render custody, and remaining review limits.

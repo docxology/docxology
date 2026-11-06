@@ -8,28 +8,31 @@ The [structural validator](../../code/orchestrators/validate_manuscript.py) chec
 
 ## Current production-source custody
 
-The [software-quality follow-up](../../reports/software_quality_followup_2026-11-05.md)
-records the current source correction at clean commit
-`c82dd2dd0d8ef59ab7149b072b03f418d93b3234`. The canonical renderer now binds
-all production Python sources, including transitive readers, and rejects
-membership or byte changes before publishing review outputs. Its source snapshot
-is distinct from a runtime execution trace or a claim about an arbitrary dirty
-working tree.
+The [clean-source follow-up](../../reports/software_quality_followup_2026-11-06.md)
+records current checkpoint `cdca4d9056033532c2cefda2167034008d736e53`. Its core
+suite passed 2,598 tests and 13 subtests; a separate fresh four-format build
+passed 128 manuscript cases. Both actually ran at that clean commit, retained
+six dependency warnings, and reported unchanged source.
 
-A fresh four-format build at that exact commit passed 128 manuscript tests with
-six retained dependency warnings. Its canonical receipt SHA-256 is
-`3dda11333d1d5fdf025a8e040ba82671e5732ce922e514166066083948993152`;
-139 production members independently match committed Git bytes and the working
-tree. The report binds the 17 direct inputs, all output hashes and automated
-semantic/viewer checks. This is a new build, not a relabeling of the earlier
-C3 render or its assistant inspection. Human/editorial approval and
-reader-specific EPUB review remain pending.
+The canonical receipt SHA-256 is
+`edd567c53ec386adc9ce04d2c60a2f8213a5c84e55937ebe49fb33f3a056c60c`;
+139 production Python members independently match committed Git bytes and the
+working tree. The follow-up binds all 17 direct inputs, output hashes and
+automated semantic/viewer checks. This is a working-source content snapshot,
+not a runtime execution trace or proof about an arbitrary dirty checkout.
 
 Later documentation/control commits may reuse this proof only with unchanged
 production membership/bytes, direct render inputs and pinned template identity.
-They are not new renders of a later commit.
+They are not new renders of a later commit. Human/editorial approval and
+reader-specific EPUB review remain pending.
 
 ## Earlier source-bound formats
+
+The earlier [C82 production-custody build](../../reports/software_quality_followup_2026-11-05.md)
+at `c82dd2dd0d8ef59ab7149b072b03f418d93b3234` passed 128 manuscript tests and
+recorded receipt `3dda11333d1d5fdf025a8e040ba82671e5732ce922e514166066083948993152`.
+It remains evidence for that earlier source, followed by the separate fresh
+checkpoint above after the reproducibility generator changed.
 
 The [2026-11-05 format review](../../reports/manuscript_format_review_2026-11-05.md) preserves the historical a69c6bbf and 75e89661 renders and failed intermediate attempts. Following three groups of hosted-core failures, 192 related tests and whole-code Ruff passed on the installed corrections; the report distinguishes that selected dirty-source gate from clean-source or full-suite acceptance. The corrected source was committed as `3a445fed495d6f692254f698d227605edb65de87`.
 
