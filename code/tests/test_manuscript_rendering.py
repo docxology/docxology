@@ -341,7 +341,7 @@ def test_failed_tool_preserves_existing_review_output(tmp_path):
 
 
 @pytest.mark.parametrize(
-    "failure", ["renderer", "source_mutation", "crlf_source", "staged_mutation"]
+    "failure", ["renderer", "source_mutation", "crlf_source", "staged_mutation", "production_mutation", "production_added", "production_removed"]
 )
 def test_failure_during_render_never_publishes_misbound_outputs(
     tmp_path, monkeypatch, failure
@@ -406,6 +406,13 @@ def test_failure_during_render_never_publishes_misbound_outputs(
         Path(arguments[arguments.index("--output") + 1]).write_text(
             '<html><div id="refs">Reference</div></html>'
         )
+        dependency = root / "code/src/manuscript_template.py"
+        if failure == "production_mutation":
+            dependency.write_text("# Changed transitive source\n")
+        elif failure == "production_added":
+            (root / "code/src/new_policy.py").write_text("# New dependency\n")
+        elif failure == "production_removed":
+            dependency.unlink()
         if failure == "source_mutation":
             source.write_text(source.read_text() + "\nChanged during render.\n")
         return ""
@@ -426,6 +433,12 @@ def test_failure_during_render_never_publishes_misbound_outputs(
     )
     if failure == "crlf_source":
         receipt = rendering.render_manuscript(root, destination, **kwargs)
+        production = receipt["production_source"]
+        assert production["files_sha256"]["code/src/manuscript_template.py"] == hashlib.sha256(
+            (root / "code/src/manuscript_template.py").read_bytes()
+        ).hexdigest()
+        assert production["scope"] == ["code/src/**/*.py", "code/orchestrators/**/*.py"]
+        assert production["kind"] == "working source content snapshot"
         assert (
             receipt["source_sha256"]["docs/manuscript/00_abstract.md"]
             == hashlib.sha256(source.read_bytes()).hexdigest()

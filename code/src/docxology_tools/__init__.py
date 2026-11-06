@@ -74,6 +74,7 @@ MODULES: tuple[str, ...] = (
     "art_collections",
     "artwork_pages",
     "manuscript_rendering",
+    "manuscript_sources",
     "manuscript_figures",
     "publication_revisions",
     "manuscript_template",

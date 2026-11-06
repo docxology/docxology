@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-05 — Complete manuscript production-source custody
+
+- Explicit manuscript draft renders now record a bounded, deterministic inventory
+  of production Python sources and reject source-byte or membership changes before
+  publishing review outputs. Direct manuscript hashes and pending human/editorial
+  review retain their existing meanings.
+- The shared safe text reader supports an optional byte limit before decoding,
+  preserving newline behavior and link protections for existing callers.
+
 ## 2026-11-05 — Evidence contracts, scholarly discovery and methods draft
 
 - Refreshed the [complete GitHub inventory and identity review](reports/github_inventory_review_2026-11-05.json): all prior repositories remain represented, two new forks retain the standing exclusion, and the individually approved AII `.github` entry describes organization/community infrastructure. ActiveACO’s maintained fork is unarchived; its originating source corrections retain separate commit evidence.

@@ -15,6 +15,7 @@ import zipfile
 
 import yaml
 
+from docxology_tools.manuscript_sources import production_source_snapshot
 from docxology_tools.manuscript_figures import (
     FIGURES,
     PRODUCER,
@@ -756,6 +757,7 @@ def render_manuscript(
         source_hashes[path.relative_to(root).as_posix()] = hashlib.sha256(
             frozen[path].encode()
         ).hexdigest()
+    production_source = production_source_snapshot(root)
     tools = toolchain(root)
     commit = run(["git", "rev-parse", "HEAD"], root=root).strip()
     if not re.fullmatch(r"[0-9a-f]{40}", commit):
@@ -1020,11 +1022,16 @@ def render_manuscript(
             raise ValueError(
                 "Rendering sources changed; no review outputs were published"
             )
+        if production_source_snapshot(root) != production_source:
+            raise ValueError(
+                "Production rendering sources changed; no review outputs were published"
+            )
         receipt = {
             "schema_version": "1.0",
             "evidence_kind": "offline manuscript draft render",
             "source_sha256": source_hashes,
             "source_link_commit": commit,
+            "production_source": production_source,
             "toolchain": tools,
             "template": template_receipt,
             "artifacts": artifacts,

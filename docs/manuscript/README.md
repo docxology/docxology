@@ -81,7 +81,17 @@ execute; these controls are not a network or OS sandbox. Required tools and
 unresolved bibliography/reference diagnostics fail closed. The receipt binds
 template source/dependency metadata, the actual external runtime, staged
 transformations, source/tool/cover/output hashes, and pending human/editorial
-review. The declared body-diagram registry is integrated; arbitrary images and Mermaid require a separate reviewed producer.
+review. The additive `production_source` field conservatively inventories every
+Python file below `code/src/` and `code/orchestrators/`, including transitive
+policy readers and uncommitted source. It records relative names, exact UTF-8
+byte hashes, total bytes, and a deterministic inventory digest; it rechecks both
+membership and bytes before publishing outputs. Missing source directories,
+links, invalid UTF-8, and exceeded file/entry/byte bounds fail closed. Direct
+manuscript inputs remain in `source_sha256`. This is a working source content
+snapshot, not a runtime execution trace or proof that HEAD contains every
+working source byte. Run from a fresh process; retain separate clean-commit,
+toolchain, native-template and review evidence for release claims.
+The declared body-diagram registry is integrated; arbitrary images and Mermaid require a separate reviewed producer.
 
 HTML, EPUB3, and PowerPoint retain the Pandoc/citeproc renderer. All four formats
 are manual review artifacts, excluded from normal site regeneration. PowerPoint

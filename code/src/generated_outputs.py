@@ -19,6 +19,7 @@ from __future__ import annotations
 
 from collections.abc import Mapping
 from contextlib import contextmanager
+import io
 import json
 import os
 from pathlib import Path
@@ -414,8 +415,11 @@ def read_generated_output_text(
     encoding: str = "utf-8",
     errors: str | None = None,
     newline: str | None = None,
+    max_bytes: int | None = None,
 ) -> str | None:
-    """Read a generated output safely, returning ``None`` only when missing."""
+    """Read safely; an optional byte bound applies before decoding/newline conversion."""
+    if max_bytes is not None and (type(max_bytes) is not int or max_bytes < 1):
+        raise ValueError("Generated-output byte bound must be a positive integer")
     candidate = safe_generated_output_path(repo_root, target)
     try:
         with _parent_directory_fd(repo_root, candidate, create=False) as (
@@ -433,6 +437,16 @@ def read_generated_output_text(
                 ) from exc
             try:
                 _ensure_unlinked_regular_file_descriptor(fd, candidate)
+                if max_bytes is not None:
+                    with os.fdopen(fd, "rb") as handle:
+                        fd = -1
+                        raw = handle.read(max_bytes + 1)
+                    if len(raw) > max_bytes:
+                        raise ValueError("Generated-output byte bound exceeded")
+                    with io.TextIOWrapper(
+                        io.BytesIO(raw), encoding=encoding, errors=errors, newline=newline
+                    ) as handle:
+                        return handle.read()
                 with os.fdopen(
                     fd, "r", encoding=encoding, errors=errors, newline=newline
                 ) as handle:

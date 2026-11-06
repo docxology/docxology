@@ -15,6 +15,7 @@ sys.path.append(str(SRC))
 import docxology_tools  # noqa: E402
 
 NEW_MODULES = (
+    "manuscript_sources",
     "scholar_pdf_projection",
     "art_collections",
     "artwork_pages",
