@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-11-07T03:17:33+00:00",
+  "generated_at": "2026-11-07T22:09:45+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -333,7 +333,7 @@
     },
     "software": {
       "path": "/data/software.json",
-      "count": 210,
+      "count": 209,
       "schema": "SoftwareRepository"
     },
     "repositories": {
@@ -1393,7 +1393,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-11-07T03:17:33+00:00",
+        "checked_at": "2026-11-07T22:09:45+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1579,8 +1579,8 @@
         "full_text_papers": 211,
         "generated_exports": {
           "data_publications_ld_main_entity": 233,
-          "data_software_json": 210,
-          "data_software_ld_main_entity": 210,
+          "data_software_json": 209,
+          "data_software_ld_main_entity": 209,
           "data_works_json": 233
         },
         "github_inventory": {
@@ -1631,8 +1631,8 @@
         },
         "software": {
           "active_inference_institute": 43,
-          "curated_total": 210,
-          "docxology_owned": 167
+          "curated_total": 209,
+          "docxology_owned": 166
         },
         "types": {
           "Books": 6,
@@ -1644,7 +1644,7 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-11-07T03:17:33+00:00",
+      "generated_at": "2026-11-07T22:09:45+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
@@ -1668,11 +1668,11 @@
         "release_hard_ceiling_bytes": 996147200,
         "safety_ceiling_bytes": 996147200,
         "warning_bytes": 975175680,
-        "source_bytes": 967143483,
+        "source_bytes": 967135609,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
         "artifact_file_count": 6273,
-        "artifact_bytes": 968255835
+        "artifact_bytes": 968247961
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -6378,30 +6378,30 @@
     "blake_index": "7a5ed7826fe15b66fefa1d8591f4a2a617d9fb9ec0f486b85c72c2bd30121afe",
     "works": "43470ee1cf4edb703499e3fdc27d684c0f2c31fe3a34b05137af0432e3f1fc12",
     "work_identifiers": "8d56befd1e741321c720a778da4034731e564da22d4a87431cbf45643996bcd7",
-    "software": "1e302f52070071a8f6dddc22e05b12e8249f52fd2b33a802d3d8027dfb7a31fb",
+    "software": "1629b7d24030a8ea88cfa5016961589204393d9de1da3bc8481313ed2bd98502",
     "repositories": "ff8d4ac91e2c48c399d8ea790625463150e7b270800a1f7b6b4a4bc41fe21d3b",
     "artworks_index": "29270719124f00fb4d9c2729262c33318c82e9dbb114ec8b0f777436bb270769",
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "4ab5da15a6878393ece05d08c613d931968035eefbeb107d148cf8ff5ddfb687",
     "videos_index": "aef1cfda7fa82b229d97d49742fc04e417cd8fba6db97bda12fcc8a323470f10",
-    "search": "3b0e813cd1c165ffea18a410f2ec9efddf32d3f8a687623b53dc5725c58e1340",
-    "claims": "da4ff92e94cda71bbf7d224df7ab388a0d11619f90bc6f2398d35dac8d691b10",
+    "search": "6b1a450b67748b97229a598dee136630212924534b6427b3d0dcc93eb3f8e875",
+    "claims": "882b98e730e00227459666bf6cac7a07b4e97f0b1f790a62f8d3d0f63e8a012f",
     "scholar_verification_receipt": "889e829f258bfaaca0c17d3cc2eec68ac114152e41e32a31f75b6bb925f9b16d",
     "coverage_exceptions": "4e30caa4f1898236a05b27cdc922faaf0290baf2220e6ef6c46e84f19fbdc732",
     "repository_classification": "8fdcefab905fec0464dd24ca4753e21686bb08a6526fcd3d057f252a4f17f04a",
-    "people": "45c9dc290d059a6174a995ed08455c67b07f3cca49627f0bc2899c9cf26c962b",
-    "organizations": "b1dad9ea5587c6ddd2113cfc625bef0640dc275f0580996c16c60af6932e9342",
-    "resume": "40a6031f7bc5972abd87c746f66307da90a409ae1b79500647636fa57e227781",
+    "people": "e3b84bc975181d44c7bc3fe9cafeab1a8d675b4b40e813e9f38f95cb444c8f98",
+    "organizations": "caf6c32a4366edfbd15a0ab831d09b465091b8093c83ba5a0d8d219beb877641",
+    "resume": "45c4581dc854f1afb863b9e144f7beefac7f0705a41a71433c87a9d4ebccab82",
     "work_enrichment": "79d64d3d045ae26b07f4ce20a6114c22f7cca5fcba92645bb31da51202c299c5",
     "collection_catalog": "b0e08a313b3630cb8ca1f0cde09c678cf6e89250546686843db69ac11dc19921",
     "research_map": "27faba79085a8f64b414346fe06f4e9322f945493873244b66c7889ef1411348",
     "research_trails": "2e6a76a3974b495906a1764725835ffa3ef47065a304c812f7756fb17166d34e",
     "scholar_readiness": "ebd8a92655b1e1236117e3278013427ef4541f6590829e673bb36d7929337f36",
-    "catalog": "b2e495f55eecf709de554c50155e88a45f8f5ad140bcd127793a34eaca902256",
-    "reconciliation": "1aed07ca31bd9d8dad95836a069a3da6e4c01812943efa78c75d22e644eb98dd",
+    "catalog": "2ff8330d5b825005609906c7d9c791a2b1af0cd81167cf0b9e8e8a7b310446e2",
+    "reconciliation": "ccae7160c9f83ae748fbd790156c1f3c83f84af4a84e505f6d1b2455bd37cefa",
     "reproducibility": "84d589b0f1c6022462d195b6d7ddcc74a93b806a78fef43fe7ff45947de94f70",
     "generated_manifest": "16b7cce4e4a03328f4c76f03310f1fa5b52316b96807f5a6a4a3f3b1467341e0",
-    "current_counts": "21e90d73c36736214bfa83c305a3aa180dea35cab7376b7a8ede28b304522d84"
+    "current_counts": "336feacb1f882329db8cc14a46315e5fdac929f4a6a7c45193112139c4b702ed"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -6446,8 +6446,8 @@
     "full_text_papers": 211,
     "generated_exports": {
       "data_publications_ld_main_entity": 233,
-      "data_software_json": 210,
-      "data_software_ld_main_entity": 210,
+      "data_software_json": 209,
+      "data_software_ld_main_entity": 209,
       "data_works_json": 233
     },
     "github_inventory": {
@@ -6498,8 +6498,8 @@
     },
     "software": {
       "active_inference_institute": 43,
-      "curated_total": 210,
-      "docxology_owned": 167
+      "curated_total": 209,
+      "docxology_owned": 166
     },
     "types": {
       "Books": 6,
