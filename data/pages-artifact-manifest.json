@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-07T07:01:17Z",
-  "source_commit_at_generation": "b222fe2a48edcdbd9e9e8146f733d32496863d6a",
+  "generated_at": "2026-11-07T08:07:51Z",
+  "source_commit_at_generation": "e537bb33116073d1adb65654c1b4d728e20d3463",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 967157749,
+    "source_bytes": 967143483,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 6273,
-    "artifact_bytes": 968270103
+    "artifact_bytes": 968255835
   },
   "included_files": [
     {
@@ -76,8 +76,8 @@
     },
     {
       "path": "AGENT_START.md",
-      "bytes": 13634,
-      "sha256": "71a2eb892f099b53453815fa4744a3a2e7c4fe37b1ce8cc64b547dbc9190ab56"
+      "bytes": 13702,
+      "sha256": "ae253eb7d24fd0d94c8299bee1671c0c443d377b62e407bcf1f085b91727bc55"
     },
     {
       "path": "CHANGELOG.md",
@@ -10146,13 +10146,13 @@
     },
     {
       "path": "code/AGENTS.md",
-      "bytes": 12060,
-      "sha256": "7b16a074c903d79e57e923cdfe78d7851008ce75a8e140cbca2ab0a51b00e8c2"
+      "bytes": 12121,
+      "sha256": "bb61d551fadad1a125be0b7a96d6baa11071b06fb4d0e53dd94292d170ff9654"
     },
     {
       "path": "code/README.md",
-      "bytes": 8282,
-      "sha256": "fbf36e7c16e6977956ce4c7a943988be6ecd3faea4d00b4754b15d2a7c687af9"
+      "bytes": 8254,
+      "sha256": "fdc1daabb85a9a1ff6287e23465280cf46d09eec7d48697a1fc88372ea5955d8"
     },
     {
       "path": "code/artifacts/AGENTS.md",
@@ -10221,8 +10221,8 @@
     },
     {
       "path": "code/orchestrators/add_zenodo_only.py",
-      "bytes": 19021,
-      "sha256": "35e448d32c4b5e56f3b6e41eae6ace9d81b43b315b21e478930b4b3ba5ee2b5c"
+      "bytes": 855,
+      "sha256": "f2e0ae74edfe618750c630569997d003e266a734451e2187cd7c8715cbe8aa87"
     },
     {
       "path": "code/orchestrators/agent.py",
@@ -10331,8 +10331,8 @@
     },
     {
       "path": "code/orchestrators/build_generated_manifest.py",
-      "bytes": 44281,
-      "sha256": "ede0ffff0ac12a2a7f9d4f1d59b7c5e58f6ff8a41b0fe677a78d44bf7496a93a"
+      "bytes": 44325,
+      "sha256": "bd9dff742cf9b672eb853495dae6e75e195b8a8b871c9f4ef9bec4d961e72676"
     },
     {
       "path": "code/orchestrators/build_github_inventory.py",
@@ -10426,8 +10426,8 @@
     },
     {
       "path": "code/orchestrators/check_zenodo_uncatalogued.py",
-      "bytes": 35131,
-      "sha256": "cac63e2a9baceb6bf1cdcdec14f53b430fdeda9246180c5bb71190a5fc4e249b"
+      "bytes": 35126,
+      "sha256": "bf4ec4dcd7f92e782a5e011c7c74404df962fb9dcf0a6ac1766378e9a3c44a19"
     },
     {
       "path": "code/orchestrators/classify_repositories.py",
@@ -10586,8 +10586,8 @@
     },
     {
       "path": "code/orchestrators/sync_paired_publications.py",
-      "bytes": 81776,
-      "sha256": "c9da3d0e43522b42bd95477dc1bb2827b2826353d6006a898f8df2669eee9814"
+      "bytes": 84274,
+      "sha256": "f26b0e7c05f08dc673a3f26ace8f46fecced1f80c35b7ca64de653c2244721e6"
     },
     {
       "path": "code/orchestrators/sync_publications_html.py",
@@ -10761,8 +10761,8 @@
     },
     {
       "path": "code/src/generation_plan.py",
-      "bytes": 47090,
-      "sha256": "912c28b939e28564be1a0ef6a3f5507ead0f3aa74be2b5f90e111733b5a4fcd6"
+      "bytes": 47048,
+      "sha256": "3d3eb2a8c9ead46bd7c1cdfe50d5677862a3469f3873d89347bedbc150698e2e"
     },
     {
       "path": "code/src/manuscript_figures.py",
@@ -11006,8 +11006,8 @@
     },
     {
       "path": "code/tests/test_add_zenodo_only.py",
-      "bytes": 2577,
-      "sha256": "7c8cd9097fb9bceb053ab5f5b95f7305cec42b699a2304fd87867532a7c39b72"
+      "bytes": 1840,
+      "sha256": "89a7b38c09f237c28f442f759e12bf142b57efa19a1addeaf161dfd984ca6118"
     },
     {
       "path": "code/tests/test_agent_index.py",
@@ -11741,8 +11741,8 @@
     },
     {
       "path": "code/tests/test_sync_paired_publications.py",
-      "bytes": 99225,
-      "sha256": "b197ca4a30518d73bf0f8d95fac95bec7f07cbdbc0e428bbefff585cfa5cc6e1"
+      "bytes": 99650,
+      "sha256": "2922585fea9c6b142da37dec1c4202caa5c8ec0251bdf335b580022a6cbaff71"
     },
     {
       "path": "code/tests/test_sync_publications_html.py",
@@ -11816,8 +11816,8 @@
     },
     {
       "path": "code/tests/test_zenodo_pdf_safety.py",
-      "bytes": 2224,
-      "sha256": "c2b9f1667b687a5b7d6a17f5a8eadfc934db0950f6b3ce8e790e997e09a2e852"
+      "bytes": 2963,
+      "sha256": "0edb0084fb5c2db8b1e1d93947f7992be0300c970abac5b4a87a6efb43b0b576"
     },
     {
       "path": "code/tools/AGENTS.md",
@@ -12401,8 +12401,8 @@
     },
     {
       "path": "docs/operations/publication-sync.md",
-      "bytes": 46185,
-      "sha256": "25f389122dcdbce1a2031d423891d2c1fa6ad899c9f1d4a9c0019e5f1a6beadd"
+      "bytes": 47062,
+      "sha256": "b9d8ea5c39aaf0cda1d48ac366845902e78a14693b35ae14dfa7f998d76df1a0"
     },
     {
       "path": "docs/operations/regeneration.md",
