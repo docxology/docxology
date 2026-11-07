@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -331,6 +333,79 @@ def test_repository_link_gate_accepts_only_validated_virtual_manuscript_images(
             SystemExit, match="Invalid manuscript source|Missing local links"
         ):
             vr.validate_local_links()
+
+
+@pytest.mark.parametrize(
+    "case",
+    [
+        "verified",
+        "mismatch",
+        "unbound",
+        "malformed",
+        "authored",
+        "nested",
+        "linked_evidence",
+        "linked_extraction",
+        "hardlinked_extraction",
+        "ambiguous",
+        "duplicate_key",
+    ],
+)
+def test_repository_link_gate_requires_bound_dated_paper_extraction(
+    tmp_path, monkeypatch, case
+):
+    import validate_repo as vr
+
+    (tmp_path / "llms.txt").write_text("")
+    folder = tmp_path / "papers/2026_Example"
+    if case == "authored":
+        folder = tmp_path / "docs/Example"
+    elif case == "nested":
+        folder /= "notes"
+    folder.mkdir(parents=True)
+    filename = "full_text_before_2026-11-06.md"
+    extraction = folder / filename
+    text = "𝛽∶Type[MeasurableSpace𝛽](𝑐∶𝛽)\r\n".encode()
+    if case in {"linked_extraction", "hardlinked_extraction"}:
+        target = tmp_path / "extraction.txt"
+        target.write_bytes(text)
+        if case == "linked_extraction":
+            extraction.symlink_to(target)
+        else:
+            os.link(target, extraction)
+    else:
+        extraction.write_bytes(text)
+
+    binding = {"file": filename, "sha256": hashlib.sha256(text).hexdigest()}
+    if case == "mismatch":
+        binding["sha256"] = "0" * 64
+    elif case == "unbound":
+        binding["file"] = "full_text_before_2026-10-01.md"
+    historical_sources = [binding, binding] if case == "ambiguous" else [binding]
+    evidence = folder / "source_evidence.json"
+    if case == "linked_evidence":
+        target = tmp_path / "copied_evidence.json"
+        target.write_text(json.dumps({"historical_sources": historical_sources}))
+        evidence.symlink_to(target)
+    elif case == "malformed":
+        evidence.write_text("{malformed")
+    elif case == "duplicate_key":
+        evidence.write_text(
+            '{"historical_sources": [], "historical_sources": '
+            + json.dumps(historical_sources)
+            + "}"
+        )
+    else:
+        evidence.write_text(json.dumps({"historical_sources": historical_sources}))
+
+    monkeypatch.setattr(vr, "REPO_ROOT", tmp_path)
+    if case == "verified":
+        vr.validate_local_links()
+    else:
+        with pytest.raises(SystemExit, match="Missing local links") as raised:
+            vr.validate_local_links()
+        assert extraction.relative_to(tmp_path).as_posix() in str(raised.value)
+        assert "𝑐∶𝛽" in str(raised.value)
 
 
 @pytest.mark.parametrize("render", [None, True, []])

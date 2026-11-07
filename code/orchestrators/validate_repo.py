@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -13,6 +14,7 @@ import tempfile
 import urllib.parse
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
+from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
@@ -411,6 +413,56 @@ def iter_local_links(
     return md_link.findall(text) + html_link.findall(text)
 
 
+def _is_bound_historical_extraction(path: Path) -> bool:
+    """Recognize only a direct paper extraction with exact historical evidence."""
+    dated = re.fullmatch(r"full_text_before_([0-9]{4}-[0-9]{2}-[0-9]{2})\.md", path.name)
+    if dated is None:
+        return False
+    parts = path.relative_to(REPO_ROOT).parts
+    if len(parts) != 3 or parts[0] != "papers":
+        return False
+
+    from docxology_tools.generated_outputs import read_generated_output_text
+
+    def unique_object(pairs):
+        value = dict(pairs)
+        if len(value) != len(pairs):
+            raise ValueError("Duplicate historical source evidence key")
+        return value
+
+    try:
+        date.fromisoformat(dated[1])
+        evidence = read_generated_output_text(
+            REPO_ROOT, path.with_name("source_evidence.json"), max_bytes=65536
+        )
+        if evidence is None:
+            return False
+        payload = json.loads(evidence, object_pairs_hook=unique_object)
+        if not isinstance(payload, dict):
+            return False
+        sources = payload.get("historical_sources")
+        if not isinstance(sources, list) or not all(
+            isinstance(source, dict) for source in sources
+        ):
+            return False
+        matches = [source for source in sources if source.get("file") == path.name]
+        if len(matches) != 1:
+            return False
+        digest = matches[0].get("sha256")
+        if not isinstance(digest, str) or not re.fullmatch(r"[0-9a-fA-F]{64}", digest):
+            return False
+        # Latin-1 with untranslated newlines preserves every original byte.
+        extraction = read_generated_output_text(
+            REPO_ROOT, path, encoding="latin-1", newline="", max_bytes=32 * 1024 * 1024
+        )
+    except (OSError, ValueError, RecursionError):
+        return False
+    return (
+        extraction is not None
+        and hashlib.sha256(extraction.encode("latin-1")).hexdigest() == digest.lower()
+    )
+
+
 def validate_local_links() -> None:
     from docxology_tools.scholar_pdf_projection import REGISTRY, verified_projections
 
@@ -447,9 +499,8 @@ def validate_local_links() -> None:
     for path in files:
         if not is_validation_source_path(path):
             continue
-        # full_text.md files are extracted paper texts with internal academic references
-        # (to figures, source code, manuscript sections) that don't exist as local files.
-        if path.name == "full_text.md":
+        # Extracted texts can contain TeX or references to files in the original source.
+        if path.name == "full_text.md" or _is_bound_historical_extraction(path):
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")
         for raw in iter_local_links(

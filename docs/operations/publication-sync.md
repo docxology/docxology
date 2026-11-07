@@ -188,6 +188,8 @@ Keep a software archive DOI distinct from the paper's citation DOI. Generic cita
 
 After selecting a verified edition, bind its current extraction to the exact PDF bytes and record. Preserve older local PDFs, extracted text, image provenance and curated summaries as historical sources. Retain independently curated tags and relations. Review edition-sensitive abstracts, methods, findings and provenance before changing them; an apply operation must not silently discard curated extensions or transfer old prose to a new edition.
 
+For a retained raw extraction named `full_text_before_YYYY-MM-DD.md`, record its exact filename and SHA-256 in the paper's `source_evidence.json` under `historical_sources`. The local link audit recognizes the file as an extraction only when that binding matches its retained bytes. Unbound or changed files and ordinary paper documentation still receive the normal link check.
+
 Source-text checks and quoted evidence establish what the selected document reports. They do not independently reproduce its numerical, empirical, formal or software-test results. A retained GitHub release reference remains distinct from a selected PDF edition unless explicit release links or verified file evidence establish their association.
 
 ## Advisory Source Availability
