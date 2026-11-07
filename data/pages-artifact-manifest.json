@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-07T04:25:02Z",
-  "source_commit_at_generation": "6b952fc0e6191788aeccb759c753431c035d3b4b",
+  "generated_at": "2026-11-07T05:04:43Z",
+  "source_commit_at_generation": "cf142da95bc1c368b47b27ef4f1f67a019e1eb52",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 967141976,
+    "source_bytes": 967146794,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 6271,
-    "artifact_bytes": 968253977
+    "artifact_bytes": 968258795
   },
   "included_files": [
     {
@@ -10616,8 +10616,8 @@
     },
     {
       "path": "code/orchestrators/validate_repo.py",
-      "bytes": 31678,
-      "sha256": "56d2712d2bcbdedd5ad1e65b5f79b75594358c439307591cf96b3b96d98f17a6"
+      "bytes": 33629,
+      "sha256": "52947a822b4cab9feb64266d6e36b387c08b3b806d76259e3e7bf16cd028f091"
     },
     {
       "path": "code/orchestrators/verify_deployed_artifact.py",
@@ -11376,8 +11376,8 @@
     },
     {
       "path": "code/tests/test_manuscript_validation.py",
-      "bytes": 13148,
-      "sha256": "a7e7be18ad5d845376811dbb3efd82cb89009b7247c643569f266d73638e99a5"
+      "bytes": 15636,
+      "sha256": "868a0f379a8f353a3627415319215b5acf99efd8f9ed94f4877034226c7239fc"
     },
     {
       "path": "code/tests/test_nav_more_dropdown.py",
@@ -12391,8 +12391,8 @@
     },
     {
       "path": "docs/operations/publication-sync.md",
-      "bytes": 45806,
-      "sha256": "06ae6f906bb70f7ddfe3ba3f84bc69d62c467e8dec311920b2c51dd28c8b8807"
+      "bytes": 46185,
+      "sha256": "25f389122dcdbce1a2031d423891d2c1fa6ad899c9f1d4a9c0019e5f1a6beadd"
     },
     {
       "path": "docs/operations/regeneration.md",
