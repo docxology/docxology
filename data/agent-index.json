@@ -1668,11 +1668,11 @@
         "release_hard_ceiling_bytes": 996147200,
         "safety_ceiling_bytes": 996147200,
         "warning_bytes": 975175680,
-        "source_bytes": 967151501,
+        "source_bytes": 967157749,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6272,
-        "artifact_bytes": 968263679
+        "artifact_file_count": 6273,
+        "artifact_bytes": 968270103
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",

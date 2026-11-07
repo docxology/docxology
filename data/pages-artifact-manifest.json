@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-07T05:41:19Z",
-  "source_commit_at_generation": "d2b265b7920140f15846e2b09b2b0f71a0d66d13",
+  "generated_at": "2026-11-07T07:01:17Z",
+  "source_commit_at_generation": "b222fe2a48edcdbd9e9e8146f733d32496863d6a",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 967151501,
+    "source_bytes": 967157749,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 6272,
-    "artifact_bytes": 968263679
+    "artifact_file_count": 6273,
+    "artifact_bytes": 968270103
   },
   "included_files": [
     {
@@ -10141,8 +10141,8 @@
     },
     {
       "path": "cite-verify.html",
-      "bytes": 16785,
-      "sha256": "52f31b426bc20be7848206eab8d79ada1fb6bfc8e34cbf0db26dbaa561aa5ce6"
+      "bytes": 16796,
+      "sha256": "d643d9f79aaed41b530edaf463ffe287b885f34b6cd9255e7e757f137ef208db"
     },
     {
       "path": "code/AGENTS.md",
@@ -10316,8 +10316,8 @@
     },
     {
       "path": "code/orchestrators/build_evidence_page.py",
-      "bytes": 13221,
-      "sha256": "b47fcbdcda1c8426e0baadb59478ec697d3cd34ed33e923d84d7a025f0857f3d"
+      "bytes": 13236,
+      "sha256": "f3e93f4852624d4768d456a07eaca43ca02f48ffb65701eca5d9c4476e8ee18d"
     },
     {
       "path": "code/orchestrators/build_exports_page.py",
@@ -10406,8 +10406,8 @@
     },
     {
       "path": "code/orchestrators/build_updates_page.py",
-      "bytes": 10593,
-      "sha256": "19c77d970935ebe9e9c3d6b534b118816c58ebc41336fcec36506a14fb7497ce"
+      "bytes": 10652,
+      "sha256": "78ecd93665a975d8d6c5f158bef63dfc2f1497cbf0613e8c50b11a5381f9b961"
     },
     {
       "path": "code/orchestrators/build_video_pages.py",
@@ -11001,8 +11001,8 @@
     },
     {
       "path": "code/tests/test_accessibility_refinements.py",
-      "bytes": 18111,
-      "sha256": "ccfc0c88a7546ff867a3df3f8fbf79a2b472419d39df6bf84acdf83408970307"
+      "bytes": 20266,
+      "sha256": "5571f442e5f35035e9cd9c3311975f7304d929f5be2d11fae8da63ec49244735"
     },
     {
       "path": "code/tests/test_add_zenodo_only.py",
@@ -11760,6 +11760,11 @@
       "sha256": "11319a59ded2561d60f8031142be14224888b689a3bc860b96b91d92eb63a4f8"
     },
     {
+      "path": "code/tests/test_updates_layout_browser.py",
+      "bytes": 3683,
+      "sha256": "c0cb9c4fb9511e5906b56782fb2074ca601866e7388aba876454d900a8b37347"
+    },
+    {
       "path": "code/tests/test_validate_repo.py",
       "bytes": 10645,
       "sha256": "e334fdff30d5ef37b27e2dbbacbef580552f9b284d797042e5cf13f5825d89cc"
@@ -12341,8 +12346,8 @@
     },
     {
       "path": "docs/operations/accessibility-qa.md",
-      "bytes": 2957,
-      "sha256": "e1e1bfcb4215a1a0945f608d6f3c534bae70a40e3ce099537f5018f78d1ffe62"
+      "bytes": 3208,
+      "sha256": "0dd14ed2f6761489dd1f84770913fa9806a4d2c3a7b23270bec81f3b26af95ff"
     },
     {
       "path": "docs/operations/agent-interface.md",
@@ -12536,8 +12541,8 @@
     },
     {
       "path": "evidence.html",
-      "bytes": 21761,
-      "sha256": "072c6d7613858a0a74a5a3541800fc25c4838c22cdbfa84d6173439c8b6df7d6"
+      "bytes": 21776,
+      "sha256": "a59746c1534ff2ae11ccef40d944ce05e37a327f94d0976c85c0b0157adac788"
     },
     {
       "path": "exports.html",
@@ -24151,8 +24156,8 @@
     },
     {
       "path": "updates.html",
-      "bytes": 243079,
-      "sha256": "036c6e8af7f8ede70df52e92e157443a454cd83ba91e2b4ace15021f2c5cb09a"
+      "bytes": 243138,
+      "sha256": "5af0162ea8e1c9815dd34b67ec5b2649236cf69cb175643e2b12c665dbd91595"
     },
     {
       "path": "uv.lock",
