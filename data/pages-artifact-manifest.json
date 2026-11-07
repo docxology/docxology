@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-07T05:04:43Z",
-  "source_commit_at_generation": "cf142da95bc1c368b47b27ef4f1f67a019e1eb52",
+  "generated_at": "2026-11-07T05:41:19Z",
+  "source_commit_at_generation": "d2b265b7920140f15846e2b09b2b0f71a0d66d13",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 967146794,
+    "source_bytes": 967151501,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 6271,
-    "artifact_bytes": 968258795
+    "artifact_file_count": 6272,
+    "artifact_bytes": 968263679
   },
   "included_files": [
     {
@@ -11785,6 +11785,11 @@
       "sha256": "b65e067d20c7826be4b2e02164923d3e8c3f69e4024c8d4ead2f343917723f78"
     },
     {
+      "path": "code/tests/test_work_breadcrumb_browser.py",
+      "bytes": 4014,
+      "sha256": "b649fe26529ae10ebc05eefa837787dc6f800d6f2b2fd14b58ed8bbd176aa44d"
+    },
+    {
       "path": "code/tests/test_work_enrichment.py",
       "bytes": 15030,
       "sha256": "35d0efd4e449cea48e8174960d2bcb6c49576f99640778c1da021df144707e40"
@@ -12336,8 +12341,8 @@
     },
     {
       "path": "docs/operations/accessibility-qa.md",
-      "bytes": 2609,
-      "sha256": "733a67904e5b13b1c26e7c18a8ab920fc18e1f12e0beca5b111818c5cf7d14ee"
+      "bytes": 2957,
+      "sha256": "e1e1bfcb4215a1a0945f608d6f3c534bae70a40e3ce099537f5018f78d1ffe62"
     },
     {
       "path": "docs/operations/agent-interface.md",
@@ -24131,8 +24136,8 @@
     },
     {
       "path": "style.css",
-      "bytes": 75190,
-      "sha256": "b7715fc9d194a189ad20a938c7d26bfb0f5b33ff7a945a903c21e91b6c450d95"
+      "bytes": 75535,
+      "sha256": "75741f872d7e8cb3df14987a0af995e954bd8f290234d45f9ab2e9efb5044145"
     },
     {
       "path": "sw.js",
