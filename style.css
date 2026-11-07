@@ -1613,10 +1613,19 @@ section h2:hover .anchor-link,
 .artwork-list a{color:var(--silver-bright);text-decoration:none}
 /* Shared generated work and paper-folder pages. Keep artifact links readable
    at narrow widths; repeating these rules per page inflates the Pages artifact. */
+:is(.work-page, .paper-page) > .breadcrumb {
+    position: static;
+    margin-top: 74px;
+    padding: .25rem 2rem;
+    overflow-wrap: anywhere;
+}
+@media (max-width: 860px) {
+    :is(.work-page, .paper-page) > nav:not(.nav-enhanced) + .breadcrumb { margin-top: 0; }
+}
 .work-hero, .paper-hero {
     max-width: 980px;
     margin: 0 auto;
-    padding: 5rem 2rem 2rem;
+    padding: 1.5rem 2rem 2rem;
     text-align: left;
     overflow-wrap: anywhere;
 }
@@ -1676,6 +1685,7 @@ section h2:hover .anchor-link,
 .work-page .muted, .paper-page .muted, .summary-sources { color: var(--text-muted); font-size: .86rem; }
 .download-list span { display: block; }
 @media (max-width: 600px) {
-    .work-hero, .paper-hero { padding: 3rem 1rem 1.5rem; }
+    :is(.work-page, .paper-page) > .breadcrumb { padding-inline: 1rem; }
+    .work-hero, .paper-hero { padding: 1.25rem 1rem 1.5rem; }
     .work-actions .btn { max-width: 100%; }
 }

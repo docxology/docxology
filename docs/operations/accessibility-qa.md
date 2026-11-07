@@ -20,6 +20,12 @@ warnings. The known meta-CSP `frame-ancestors` limitation is retained as a
 warning because GitHub Pages does not provide response-header control; other
 console or page errors fail the report.
 
+Check generated work and paper pages with a long title at 320 and 412 pixels,
+with and without JavaScript. The breadcrumb stays in the page flow below the
+masthead so it can wrap without covering the heading or byline. Verify the
+desktop view as well, and confirm that the mobile menu can still open over the
+page and return focus when it closes.
+
 Focused startup tests additionally cover complete-catalog sorting before row
 batching, focus on the first added publication/gallery item, malformed catalog
 and detail responses, preservation of native artwork links, finite image
