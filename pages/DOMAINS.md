@@ -131,7 +131,7 @@ Narrative ecosystems, information commons, digital rhetoric, and multiagent secu
 William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates, and synergetics.
 
 - Works: 17
-- Selected repositories: 6
+- Selected repositories: 5
 - Collaborator context: Buckminster Fuller source tradition, William Blake source tradition, Curio Cards artists
 
 **Learning path**
@@ -143,7 +143,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 - Examine anticipatory epistemology in Before Pragmatism Had a Name: Blake's America A Prophecy.
 - Investigate tetrahedral geometry and coordinate systems in QuadMath: An Analytical Review of 4D and Quadray Coordinates.
 - Interact with 3D synergetics environments through QuadCraft and ivm-xyz.
-- Explore digital knowledge graphs of synergetics with fuller-obsidian.
+- The former fuller-obsidian listing is documented in the software catalog source under Historical repository references.
 
 **Selected works**
 
@@ -161,7 +161,6 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 - [ivm-xyz](https://github.com/docxology/ivm-xyz) — Python library for 3D and 4D Quadray/IVM (Isotropic Vector Matrix) geometry — coordinate conversion, volume calculations, and polyhedral operations
 - [godel_ivm](https://github.com/docxology/godel_ivm) — Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products
 - [symergetics](https://github.com/docxology/symergetics) — Symbolic Synergetics — computer algebra and formal symbolic systems for Buckminster Fuller's synergetics mathematics
-- [fuller-obsidian](https://github.com/docxology/fuller-obsidian) — Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science · Historical public reference: anonymous GitHub returned 404 on 2026-11-04; current contents and visibility are unverified
 
 ## 💻 [Computational Methods & Open Science](../domain-computational.html)
 

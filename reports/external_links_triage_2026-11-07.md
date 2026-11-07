@@ -3,9 +3,9 @@
 Scoped network-link triage for public-facing repository hubs.
 
 - Source report: `reports/external_links_2026-11-07.json`
-- Checked URLs: 1006
+- Checked URLs: 1004
 - OK: 839
-- Warnings: 167
+- Warnings: 165
 
 ## Categories
 
@@ -13,7 +13,6 @@ Scoped network-link triage for public-facing repository hubs.
 | --- | ---: | --- |
 | `bot-protected-or-rate-limited` | 160 | Likely blocks automated checks; verify manually before replacing. |
 | `connection-failure` | 1 | Could not connect during this run. |
-| `needs-replacement` | 2 | Returned 404 and should be replaced or removed if no longer valid. |
 | `ok` | 839 | Returned a 2xx/3xx response. |
 | `timeout` | 3 | Timed out under the bounded checker timeout. |
 | `upstream-transient` | 1 | Server-side outage or temporary upstream failure. |
@@ -108,13 +107,6 @@ Scoped network-link triage for public-facing repository hubs.
 | Status | URL | Sources |
 | ---: | --- | --- |
 | 0 | <https://wiki.santafe.edu/index.php/Daniel_Ari_Friedman> | pages/LINKS.md |
-
-## needs-replacement
-
-| Status | URL | Sources |
-| ---: | --- | --- |
-| 404 | <https://github.com/docxology/fuller-obsidian> | domain-art-synergetics.html, domain-art-synergetics.html, domain-art-synergetics.html |
-| 404 | <https://github.com/docxology/fuller-obsidian#software> | software.html |
 
 ## timeout
 

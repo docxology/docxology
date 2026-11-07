@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
  
- *167 owned repositories · 43 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+ *166 owned repositories · 43 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
  
  *[All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -84,7 +84,6 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [course](https://github.com/docxology/course) | Course materials framework for structured interdisciplinary learning modules | Python | 0 | 2026-11 |
 | [EvoJump](https://github.com/docxology/EvoJump) | Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics · [Zenodo](https://doi.org/10.5281/zenodo.22664675) · [📄](../papers/2025_EvoJump/) | Python | 0 | 2026-11 |
 | [flick](https://github.com/docxology/flick) | Lightweight Python tooling for rapid data flicking and processing pipelines | Python | 0 | 2026-11 |
-| [fuller-obsidian](https://github.com/docxology/fuller-obsidian) | Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science · Historical public reference: anonymous GitHub returned 404 on 2026-11-04; current contents and visibility are unverified | — | 0 | 2025-02 |
 | [godel_ivm](https://github.com/docxology/godel_ivm) | Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products | Python | 0 | 2026-11 |
 | [goference](https://github.com/docxology/goference) | Active Goference — production-ready Go framework for Active Inference autonomous agents; genuine variational inference, free energy minimization, POMDP policy planning via gonum | Go | 0 | 2026-11 |
 | [hhs-opendata](https://github.com/docxology/hhs-opendata) | Analysis of HHS (Department of Health and Human Services) open data — policy analytics and public-health data pipelines | Python | 0 | 2026-11 |
@@ -283,13 +282,21 @@ The [PROJECT BOND compendium](https://github.com/docxology/bond) imports manuscr
 | Developer Tools | 28 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `template_madlib`, `ntqr_llm`, `itrace`, `coasys`, `steganographer`, `SynthOBS`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake`, `thalia`, `bond`, `template_advanced_literature_review`, `BeeStack`, `docxplus`, `FractiSkills`, `dicklesworthstone_meta_operator`, `Skillarum`, `nockchain-migration`, `daf-jev`, `rikishi` |
 | Data & Policy | 8 | `hhs-opendata`, `crescent-city`, `grateful_data`, `crescent-city-intel`, `multi-time`, `region-intel`, `davis-ca-intel`, `reno-nv-intel` |
 | Education | 7 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook`, `AGEINT`, `OmniLatticeTextbook` |
-| Other | 6 | `cascadia`, `fuller-obsidian`, `service`, `flick`, `Digi-PPPiP`, `math4wisdom-superhuman-docs-archive` |
+| Other | 5 | `cascadia`, `service`, `flick`, `Digi-PPPiP`, `math4wisdom-superhuman-docs-archive` |
 | Research Practice | 9 | `line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register`, `blue_line`, `green_line`, `silver_line` |
 | Computational Research | 4 | `thanks_for_nothing`, `active_assembly_theory_and_practice`, `Blakean_Entomology`, `Blakean_Federalism` |
 | PROJECT BOND packages | 33 | [Infrastructure and film-analysis catalog](#project-bond-software-family) |
-| **docxology subtotal** | **167** | |
-| **Grand Total** | **210** | |
+| **docxology subtotal** | **166** | |
+| **Grand Total** | **209** | |
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; GitHub reports the AII account as an **Organization** (observed 2026-10-06). See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
+
+### Historical repository references
+
+The former `fuller-obsidian` listing described an Obsidian vault for
+Buckminster Fuller and synergetics. The public repository URL returned
+HTTP 200 on November 1, 2026 and HTTP 404 on November 7, 2026. Its current
+contents and visibility are unverified. This historical entry is outside
+the active software totals.
 
 ---
 

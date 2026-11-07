@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T04:22:26Z",
+  "generated_at": "2026-11-07T22:09:52Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -35,8 +35,8 @@
   },
   "metrics": {
     "works": 233,
-    "software_catalogued": 210,
-    "owned_software_catalogued": 167,
+    "software_catalogued": 209,
+    "owned_software_catalogued": 166,
     "aii_software_catalogued": 43,
     "google_scholar": {
       "citations": 835,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 737,
-      "sha256": "be693b057e69ae5406fb13d7a590645205053bcb213894a069f7c5485acb33b4",
+      "sha256": "ec8b786e584b0cb91898ce415974184e7f6eb885f9c66455a2de7715f3415ec2",
       "files": [
         {
           "path": "resume/source.json",
@@ -102,8 +102,8 @@
         },
         {
           "path": "data/software.json",
-          "bytes": 104764,
-          "sha256": "1e302f52070071a8f6dddc22e05b12e8249f52fd2b33a802d3d8027dfb7a31fb"
+          "bytes": 104215,
+          "sha256": "1629b7d24030a8ea88cfa5016961589204393d9de1da3bc8481313ed2bd98502"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 12971,
-          "sha256": "da4ff92e94cda71bbf7d224df7ab388a0d11619f90bc6f2398d35dac8d691b10"
+          "sha256": "882b98e730e00227459666bf6cac7a07b4e97f0b1f790a62f8d3d0f63e8a012f"
         },
         {
           "path": "data/github-repositories.json",
@@ -8766,18 +8766,6 @@
       "zenodo_url": ""
     },
     {
-      "name": "fuller-obsidian",
-      "url": "https://github.com/docxology/fuller-obsidian",
-      "owner": "docxology",
-      "catalog_section": "docxology",
-      "description": "Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science · Historical public reference: anonymous GitHub returned 404 on 2026-11-04; current contents and visibility are unverified",
-      "language": "",
-      "stars": 0,
-      "updated_or_year": "2025-02",
-      "paper_path": "",
-      "zenodo_url": ""
-    },
-    {
       "name": "godel_ivm",
       "url": "https://github.com/docxology/godel_ivm",
       "owner": "docxology",
@@ -10720,7 +10708,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-11-07T03:17:33+00:00",
+      "checked_at": "2026-11-07T22:09:45+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -10734,7 +10722,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-11-07T03:17:33+00:00",
+      "checked_at": "2026-11-07T22:09:45+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

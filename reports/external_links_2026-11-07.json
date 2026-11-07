@@ -67,12 +67,12 @@
     "updates.html",
     "videos.html"
   ],
-  "note": "Network freshness report. HTTP 403/429 may indicate bot protection or rate limiting, not necessarily broken content.",
-  "total_unique_urls": 1006,
-  "checked_urls": 1006,
+  "note": "Predeploy scope projection of a retained network observation. HTTP results, timestamps and observed source provenance are carried forward unchanged. No network requests were made for this projection. Run a new deployed-source scan for release attestation.",
+  "total_unique_urls": 1004,
+  "checked_urls": 1004,
   "unchecked_urls": 0,
   "ok": 839,
-  "warnings": 167,
+  "warnings": 165,
   "results": [
     {
       "url": "https://activeinference.institute/",
@@ -11942,40 +11942,6 @@
       "category": "ok"
     },
     {
-      "url": "https://github.com/docxology/fuller-obsidian",
-      "ok": false,
-      "status": 404,
-      "method": "GET",
-      "final_url": "https://github.com/docxology/fuller-obsidian",
-      "error": "",
-      "elapsed_ms": 1050,
-      "observed_at": "2026-11-07T04:06:05.626231+00:00",
-      "sources": [
-        "domain-art-synergetics.html",
-        "domain-art-synergetics.html",
-        "domain-art-synergetics.html",
-        "pages/DOMAINS.md",
-        "pages/SOFTWARE.md",
-        "software.html",
-        "software.html"
-      ],
-      "category": "needs-replacement"
-    },
-    {
-      "url": "https://github.com/docxology/fuller-obsidian#software",
-      "ok": false,
-      "status": 404,
-      "method": "GET",
-      "final_url": "https://github.com/docxology/fuller-obsidian#software",
-      "error": "",
-      "elapsed_ms": 951,
-      "observed_at": "2026-11-07T04:06:05.532421+00:00",
-      "sources": [
-        "software.html"
-      ],
-      "category": "needs-replacement"
-    },
-    {
       "url": "https://github.com/docxology/gfacs",
       "ok": true,
       "status": 200,
@@ -17946,5 +17912,17 @@
       ],
       "category": "ok"
     }
-  ]
+  ],
+  "scope_reconciliation": {
+    "kind": "cached_scope_projection",
+    "network_requests": 0,
+    "original_report": "reports/external_links_2026-11-07.json",
+    "original_report_sha256": "156958e3ebaab9ee21bd632fb2030c0c8f5cb34350dc8c6da1c470ce9b8edb22",
+    "original_report_retained_at_git_revision": "e724c9825fe3ffdfa20a2d327b6057b78561f3bc",
+    "retired_observed_404_urls": [
+      "https://github.com/docxology/fuller-obsidian",
+      "https://github.com/docxology/fuller-obsidian#software"
+    ],
+    "removed_source_occurrences": 8
+  }
 }

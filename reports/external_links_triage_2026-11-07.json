@@ -1,13 +1,12 @@
 {
   "generated_at": "2026-11-07T04:06:53Z",
   "source": "reports/external_links_2026-11-07.json",
-  "checked_urls": 1006,
+  "checked_urls": 1004,
   "ok": 839,
-  "warnings": 167,
+  "warnings": 165,
   "categories": {
     "bot-protected-or-rate-limited": 160,
     "connection-failure": 1,
-    "needs-replacement": 2,
     "ok": 839,
     "timeout": 3,
     "upstream-transient": 1
@@ -2404,34 +2403,6 @@
           "pages/LINKS.md"
         ],
         "error": "URLError"
-      }
-    ],
-    "needs-replacement": [
-      {
-        "url": "https://github.com/docxology/fuller-obsidian",
-        "status": 404,
-        "ok": false,
-        "category": "needs-replacement",
-        "sources": [
-          "domain-art-synergetics.html",
-          "domain-art-synergetics.html",
-          "domain-art-synergetics.html",
-          "pages/DOMAINS.md",
-          "pages/SOFTWARE.md",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/fuller-obsidian#software",
-        "status": 404,
-        "ok": false,
-        "category": "needs-replacement",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
       }
     ],
     "timeout": [

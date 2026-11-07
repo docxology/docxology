@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-07T03:25:56Z",
+  "generated_at": "2026-11-07T22:09:52Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 210,
+  "count": 209,
   "repositories": [
     {
       "name": "template",
@@ -577,18 +577,6 @@
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-11",
-      "paper_path": "",
-      "zenodo_url": ""
-    },
-    {
-      "name": "fuller-obsidian",
-      "url": "https://github.com/docxology/fuller-obsidian",
-      "owner": "docxology",
-      "catalog_section": "docxology",
-      "description": "Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science · Historical public reference: anonymous GitHub returned 404 on 2026-11-04; current contents and visibility are unverified",
-      "language": "",
-      "stars": 0,
-      "updated_or_year": "2025-02",
       "paper_path": "",
       "zenodo_url": ""
     },

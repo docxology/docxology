@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-11-07T04:22:26Z
+Generated: 2026-11-07T22:09:52Z
 
-Current public metrics: 233 curated works; 210 catalogued software repositories (167 owned + 43 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 275 docxology + 47 AII public repositories (216 primary, 106 forks).
+Current public metrics: 233 curated works; 209 catalogued software repositories (166 owned + 43 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 275 docxology + 47 AII public repositories (216 primary, 106 forks).
 
 SUMMARY
 -------
@@ -400,7 +400,7 @@ WORKS AND PUBLICATIONS (233)
 [236] 2026 | Paper | Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology | Zenodo (preprint) | 10.5281/zenodo.23987670
 [237] 2026 | Book | 2026 Active Inference Symposium — Presenter Program | Zenodo (presenter program) | 10.5281/zenodo.23986504
 
-SOFTWARE (210)
+SOFTWARE (209)
 --------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Earlier software v3.3.0 · Zenodo · · Software version 5.0.0 artifact | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/cognitive | Python | https://github.com/docxology/cognitive | Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization
@@ -450,7 +450,6 @@ docxology/cascadia | Python | https://github.com/docxology/cascadia | Cascadia b
 docxology/course | Python | https://github.com/docxology/course | Course materials framework for structured interdisciplinary learning modules
 docxology/EvoJump | Python | https://github.com/docxology/EvoJump | Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics · Zenodo | paper: papers/2025_EvoJump/ | zenodo: https://doi.org/10.5281/zenodo.22664675
 docxology/flick | Python | https://github.com/docxology/flick | Lightweight Python tooling for rapid data flicking and processing pipelines
-docxology/fuller-obsidian | unspecified | https://github.com/docxology/fuller-obsidian | Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science · Historical public reference: anonymous GitHub returned 404 on 2026-11-04; current contents and visibility are unverified
 docxology/godel_ivm | Python | https://github.com/docxology/godel_ivm | Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products
 docxology/goference | Go | https://github.com/docxology/goference | Active Goference — production-ready Go framework for Active Inference autonomous agents; genuine variational inference, free energy minimization, POMDP policy planning via gonum
 docxology/hhs-opendata | Python | https://github.com/docxology/hhs-opendata | Analysis of HHS (Department of Health and Human Services) open data — policy analytics and public-health data pipelines

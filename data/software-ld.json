@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Software",
-    "description": "167 owned repositories and 43 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
+    "description": "166 owned repositories and 43 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -760,17 +760,6 @@
             "dateCreated": "2025-03-30T21:34:16Z",
             "dateModified": "2026-11-03T04:14:38Z",
             "keywords": "api-client, archival, flickr, metadata, photo-backup, python, scraper"
-        },
-        {
-            "@type": "SoftwareSourceCode",
-            "@id": "https://github.com/docxology/fuller-obsidian#software",
-            "name": "fuller-obsidian",
-            "description": "Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science · Historical public reference: anonymous GitHub returned 404 on 2026-11-04; current contents and visibility are unverified",
-            "codeRepository": "https://github.com/docxology/fuller-obsidian",
-            "author": {
-                "@type": "Person",
-                "name": "Daniel Ari Friedman"
-            }
         },
         {
             "@type": "SoftwareSourceCode",

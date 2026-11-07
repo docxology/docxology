@@ -142,7 +142,6 @@ DOMAINS = [
             "ivm-xyz",
             "godel_ivm",
             "symergetics",
-            "fuller-obsidian",
         ),
         learning_path=(
             "Browse the curated visual archive on the <a href='art.html'>Visual Art Gallery</a> (940+ catalogued pen-and-ink drawings).",
@@ -152,7 +151,7 @@ DOMAINS = [
             "Examine anticipatory epistemology in <a href='works/Friedman2026BeforePragmatismHadName003.html'>Before Pragmatism Had a Name: Blake's America A Prophecy</a>.",
             "Investigate tetrahedral geometry and coordinate systems in <a href='works/Friedman2025QuadMathAnalyticalReview4D018.html'>QuadMath: An Analytical Review of 4D and Quadray Coordinates</a>.",
             "Interact with 3D synergetics environments through <a href='https://github.com/docxology/QuadCraft'>QuadCraft</a> and <a href='https://github.com/docxology/ivm-xyz'>ivm-xyz</a>.",
-            "Explore digital knowledge graphs of synergetics with <a href='https://github.com/docxology/fuller-obsidian'>fuller-obsidian</a>.",
+            "The former <code>fuller-obsidian</code> listing is documented in the <a href='pages/SOFTWARE.md'>software catalog source</a> under Historical repository references.",
         ),
         collaborators=(
             "Buckminster Fuller source tradition",
