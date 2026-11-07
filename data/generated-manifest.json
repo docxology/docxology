@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T01:16:06Z",
+  "generated_at": "2026-11-07T03:08:56Z",
   "artifacts": [
     {
       "name": "Research exploration tools",
@@ -194,8 +194,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-11-06.json",
-        "reports/source_coverage_2026-11-06.md"
+        "reports/source_coverage_2026-11-07.json",
+        "reports/source_coverage_2026-11-07.md"
       ],
       "sources": [
         "data/works.json",
@@ -335,7 +335,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-11-06.json"
+        "reports/pages_artifact_growth_2026-11-07.json"
       ],
       "sources": [
         "data/scholar-pdf-projections.json",
@@ -454,7 +454,7 @@
     {
       "name": "Paired publication sync report",
       "outputs": [
-        "reports/paired_publications_2026-11-05.json"
+        "reports/paired_publications_2026-11-07.json"
       ],
       "sources": [
         "GitHub Releases API",
@@ -473,7 +473,7 @@
         "reports/paired_publications_review_queue_2026-06-04.md"
       ],
       "sources": [
-        "reports/paired_publications_2026-11-05.json",
+        "reports/paired_publications_2026-11-07.json",
         "manual review decision"
       ],
       "command": "manual review; update data/paired-publication-decisions.json"
@@ -781,7 +781,7 @@
     {
       "name": "Public source snapshot",
       "outputs": [
-        "reports/public_source_snapshot_2026-11-05.json"
+        "reports/public_source_snapshot_2026-11-06.json"
       ],
       "sources": [
         "GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs"
@@ -791,7 +791,7 @@
     {
       "name": "Public source inventory",
       "outputs": [
-        "reports/public_source_inventory_2026-11-05.json"
+        "reports/public_source_inventory_2026-11-06.json"
       ],
       "sources": [
         "ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages"
@@ -801,8 +801,8 @@
     {
       "name": "Public-source review record",
       "outputs": [
-        "reports/public_source_review_2026-11-05.json",
-        "reports/public_source_review_2026-11-05.md"
+        "reports/public_source_review_2026-11-07.json",
+        "reports/public_source_review_2026-11-07.md"
       ],
       "sources": [
         "reports/public_source_snapshot_*.json",
@@ -832,7 +832,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-11-06.json"
+        "reports/asset_size_2026-11-07.json"
       ],
       "sources": [
         "root HTML pages",
@@ -846,7 +846,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-11-06.json"
+        "reports/accessibility_static_2026-11-07.json"
       ],
       "sources": [
         "root HTML pages",
