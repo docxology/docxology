@@ -417,6 +417,12 @@ Apply also keeps the `**N** works` and `**N** indexed paper folders` prose count
 in [`pages/BIBLIOGRAPHY.md`](../../pages/BIBLIOGRAPHY.md) in sync via
 `refresh_bibliography_counts`.
 
+For a manually composed addition, update the bibliography’s works, type and
+folder totals from the table. Add the new folders to the papers index and update
+its heading count before regenerating. Link externally hosted PDFs using their
+verified versioned URLs. The current-counts builder reads these source indexes;
+it does not rewrite them.
+
 ## Fast Intake Path (Small, Data-Only Changes)
 
 The full recipe above is the always-correct path. When the change is small and

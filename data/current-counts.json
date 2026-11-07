@@ -56,7 +56,7 @@
       "update_existing": 0,
       "zenodo_records": 179
     },
-    "paper_folder_docs": 214,
+    "paper_folder_docs": 216,
     "papers_with_images": 145,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
@@ -83,7 +83,7 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-11-07T01:38:48+00:00",
+  "generated_at": "2026-11-07T02:36:03+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

@@ -107,13 +107,19 @@ def software_archive_url(description_raw: str) -> str:
     """Select explicitly labelled software identity for SoftwareSourceCode.
 
     Citation consumers keep zenodo_url's established paper-citation priority.
-    Without an explicit software archive/DOI label, retain the legacy fallback.
+    A labelled linked-paper citation is not software identity. Otherwise,
+    without an explicit software archive/DOI label, retain the legacy fallback.
     """
     for label, url in MARKDOWN_LINK_RE.findall(description_raw):
         if re.search(r"\bsoftware\s+(?:archive|doi)\b", label, re.I) and _is_zenodo_url(
             url
         ):
             return url.rstrip(").,")
+    if paper_path(description_raw) and any(
+        CANONICAL_DOI_LABEL_RE.search(label) and _is_zenodo_url(url)
+        for label, url in MARKDOWN_LINK_RE.findall(description_raw)
+    ):
+        return ""
     return zenodo_url(description_raw)
 
 

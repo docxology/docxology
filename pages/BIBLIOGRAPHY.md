@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Publications and Research Outputs in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**231 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**233 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-835_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -32,13 +32,13 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical · 🔍 Other
 
-**210** Papers · **8** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series · **1** Report
+**211** Papers · **8** Presentations · **6** Books · **3** Courses · **2** Playbooks · **2** Series · **1** Report
 
-> **231** works in the table below **·** **214** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **233** works in the table below **·** **216** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
-The contributor column lists authors unless otherwise specified: the contributors to the edited volumes in rows 71, 79, and 89 are their editors. Rows 33 and 162 are the concept and version records of the same Digital Twins comments submission; catalog row totals include both records and do not represent a count of distinct publications. Row 143 catalogs discussion transcripts about a Bayesian mechanics paper, not the original sole-authored article. Permanent work URLs retain their original citation keys when titles or contributor information are corrected.
+The contributor column lists authors unless otherwise specified: the contributors to the edited volumes in rows 71, 79, and 89 are their editors. Rows 33 and 162 are the concept and version records of the same Digital Twins comments submission; catalog row totals include both records and do not represent a count of distinct publications. Row 143 catalogs discussion transcripts about a Bayesian mechanics paper, not the original sole-authored article. Permanent work URLs retain their original citation keys when titles or contributor information are corrected. Row 237 preserves the presenter program’s ordered registry credit labels, including institutional and composite credits.
 
 **Incomplete citation records:** the instructor lists for the two Udemy courses (rows 83 and 87), the contribution-specific byline for *Disinforge* (157), and the author/source details for the two *Cranial Letter* entries (163 and 164) remain unverified. Primary scans for the latter two are unavailable. A venue label or a link to a containing feature does not resolve these gaps.
 

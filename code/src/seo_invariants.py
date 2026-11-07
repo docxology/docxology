@@ -179,6 +179,7 @@ def check_work_citations(repo_root: Path) -> list[str]:
     This checks site integration, not Scholar inclusion. The same-directory
     PDF requirement remains a separately documented hosting constraint.
     """
+    from docxology_tools.author_entities import load_author_records, verified_author_types
     from docxology_tools.citation_metadata import (
         CitationHead,
         journal_fields,
@@ -190,6 +191,7 @@ def check_work_citations(repo_root: Path) -> list[str]:
 
     errors: list[str] = []
     works = json.loads(_read_json(repo_root / "data/works.json"))["works"]
+    author_records = load_author_records(repo_root)
     visible = source_paths(repo_root)
     for work in works:
         rel = f"works/{work['citation_key']}.html"
@@ -205,10 +207,12 @@ def check_work_citations(repo_root: Path) -> list[str]:
         )
         if resources.scholar_pdf and not abstract_visible(page_text, (resources.metadata or {}).get("abstract", "")):
             errors.append(f"{rel}: reviewed complete author abstract is not publicly visible")
+        author_types = verified_author_types(work, author_records)
         expected = {
             "citation_title": [work["title"]],
             f"citation_{work.get('contributor_role', 'author')}": [
-                display_name(name) for name in work.get("authors") or []
+                display_name(name, author_types.get(name))
+                for name in work.get("authors") or []
             ],
             "citation_publication_date": [
                 publication_date(work, resources.metadata or {}).replace("-", "/")

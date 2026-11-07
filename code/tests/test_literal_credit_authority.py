@@ -429,3 +429,29 @@ def test_saved_literal_registry_refresh_is_rederived_not_trusted(
     else:
         refresh["status"] = "registry_drift"
     assert fetch.document_evidence_errors(payload)
+
+
+@pytest.mark.parametrize("legacy_inversion", [False, True])
+def test_seo_checks_reviewed_literal_citation_credits(credited, monkeypatch, legacy_inversion):
+    import build_work_pages as pages
+    from docxology_tools.seo_invariants import check_work_citations
+
+    root, work, _ = credited
+    monkeypatch.setattr(pages, "REPO_ROOT", root)
+    (root / "data/works.json").write_text(json.dumps({"works": [work.__dict__]}))
+    head = pages.page_head(pages.load_works()[0])
+    page = root / f"works/{work.citation_key}.html"
+    page.parent.mkdir()
+    expected = []
+    if legacy_inversion:
+        for label, inverted in zip(
+            LABELS[1:], ("Daniel and Other Friedman", "Kevin Backhouse Dan Corva"), strict=True
+        ):
+            tag = f'<meta name="citation_author" content="{label}">'
+            assert tag in head
+            head = head.replace(tag, f'<meta name="citation_author" content="{inverted}">')
+        expected = [
+            f"works/{page.name}: citation_author differs from authoritative citation metadata"
+        ]
+    page.write_text(head)
+    assert check_work_citations(root) == expected

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T01:43:27Z",
+  "generated_at": "2026-11-07T02:45:30Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 737,
-      "sha256": "7a5d81ef6d32e856c38bfe71c1ad2d514c441e3d7468958a737ac1fb1b3f6846",
+      "sha256": "652dca9da177f57e76ad93f65aa60fbae70cb2f87677cfc6dfd653ce9c507365",
       "files": [
         {
           "path": "resume/source.json",
@@ -103,7 +103,7 @@
         {
           "path": "data/software.json",
           "bytes": 104764,
-          "sha256": "230f4836cd4eea057389dec32c6cba6e72b85b28e824d5a260d9fc600460da9d"
+          "sha256": "d6b4ea4e75918cf2358d21d21023b77e7a4443d23d00d3ecb8dc1a522a9699f8"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 12971,
-          "sha256": "b7d5a091be4a70f2f7e1ea1603fb896447abbd6bd07c4993baad2da02fccc446"
+          "sha256": "01519774d5012005abcf4504eb835b0257ede9c090ad5afaf2d464283ddf5311"
         },
         {
           "path": "data/github-repositories.json",
@@ -10720,7 +10720,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-11-07T01:38:48+00:00",
+      "checked_at": "2026-11-07T02:36:03+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -10728,13 +10728,13 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 214 per-paper documentation folders.",
+      "claim": "The repository contains 216 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-11-07T01:38:48+00:00",
+      "checked_at": "2026-11-07T02:36:03+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

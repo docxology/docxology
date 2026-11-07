@@ -56,8 +56,7 @@
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-05-16T17:45:28Z",
             "dateModified": "2026-11-06T16:37:39Z",
-            "keywords": "agents, ai-agents, automation, code-analysis, coding-agent, developer-tools, llm, mcp, mcp-server, model-context-protocol, multi-agent, orchestration, python, rag, security, static-analysis, uv, zero-mock",
-            "sameAs": "https://doi.org/10.5281/zenodo.21750800"
+            "keywords": "agents, ai-agents, automation, code-analysis, coding-agent, developer-tools, llm, mcp, mcp-server, model-context-protocol, multi-agent, orchestration, python, rag, security, static-analysis, uv, zero-mock"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -105,8 +104,7 @@
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2026-06-18T23:40:37Z",
             "dateModified": "2026-11-04T22:44:43Z",
-            "keywords": "agentic-ai, cognitive-security, counterintelligence, defensive-security, information-warfare, intelligence-analysis, multiharness, osint, python, skills, structured-analytic-techniques, tradecraft, zenodo",
-            "sameAs": "https://doi.org/10.5281/zenodo.21513316"
+            "keywords": "agentic-ai, cognitive-security, counterintelligence, defensive-security, information-warfare, intelligence-analysis, multiharness, osint, python, skills, structured-analytic-techniques, tradecraft, zenodo"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -277,8 +275,7 @@
             "programmingLanguage": "HTML",
             "dateCreated": "2026-05-24T23:28:57Z",
             "dateModified": "2026-11-04T23:51:29Z",
-            "keywords": "agentic-ai, ai-alignment, ai-governance, ai-safety, cognitive-security, curriculum, intelligence-analysis, mermaid, open-access, open-education, python, textbook",
-            "sameAs": "https://doi.org/10.5281/zenodo.20732274"
+            "keywords": "agentic-ai, ai-alignment, ai-governance, ai-safety, cognitive-security, curriculum, intelligence-analysis, mermaid, open-access, open-education, python, textbook"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -451,8 +448,7 @@
             "programmingLanguage": "Python",
             "dateCreated": "2026-05-21T22:57:17Z",
             "dateModified": "2026-11-05T01:04:16Z",
-            "keywords": "assessment, biology, labs, matplotlib, mermaid, oer, open-education, python, teaching, textbook",
-            "sameAs": "https://doi.org/10.5281/zenodo.20286477"
+            "keywords": "assessment, biology, labs, matplotlib, mermaid, oer, open-education, python, teaching, textbook"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -562,8 +558,7 @@
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-21T16:45:37Z",
             "dateModified": "2026-11-03T14:24:32Z",
-            "keywords": "determinism, imrad, manuscript, provenance, pytest, python, reproducible-research, research-template, uv, yaml",
-            "sameAs": "https://doi.org/10.5281/zenodo.20786638"
+            "keywords": "determinism, imrad, manuscript, provenance, pytest, python, reproducible-research, research-template, uv, yaml"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -657,8 +652,7 @@
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2026-03-15T15:58:51Z",
             "dateModified": "2026-11-04T23:07:49Z",
-            "keywords": "active-inference, case-grammar, category-theory, computational-linguistics, discopy, linguistics, python, string-diagrams, topos-theory",
-            "sameAs": "https://doi.org/10.5281/zenodo.19695259"
+            "keywords": "active-inference, case-grammar, category-theory, computational-linguistics, discopy, linguistics, python, string-diagrams, topos-theory"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1218,8 +1212,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-09-02T18:26:47Z",
-            "dateModified": "2026-11-03T04:17:08Z",
-            "sameAs": "https://doi.org/10.5281/zenodo.22243472"
+            "dateModified": "2026-11-03T04:17:08Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1609,8 +1602,7 @@
             "programmingLanguage": "Python",
             "dateCreated": "2026-07-28T11:45:46Z",
             "dateModified": "2026-11-01T22:45:47Z",
-            "keywords": "audit, cli, governance, python, registry, research-integrity, validation",
-            "sameAs": "https://doi.org/10.5281/zenodo.21754243"
+            "keywords": "audit, cli, governance, python, registry, research-integrity, validation"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1625,8 +1617,7 @@
             "programmingLanguage": "Python",
             "dateCreated": "2026-07-28T11:45:37Z",
             "dateModified": "2026-11-03T04:10:12Z",
-            "keywords": "audit, best-practices, evaluation, governance, ledger, python, research-integrity",
-            "sameAs": "https://doi.org/10.5281/zenodo.21754235"
+            "keywords": "audit, best-practices, evaluation, governance, ledger, python, research-integrity"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1657,8 +1648,7 @@
             "programmingLanguage": "Python",
             "dateCreated": "2026-07-28T11:45:40Z",
             "dateModified": "2026-11-02T17:49:33Z",
-            "keywords": "aspirations, audit, governance, ledger, python, research-integrity, values",
-            "sameAs": "https://doi.org/10.5281/zenodo.21754237"
+            "keywords": "aspirations, audit, governance, ledger, python, research-integrity, values"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1689,8 +1679,7 @@
             "programmingLanguage": "Python",
             "dateCreated": "2026-08-02T04:26:38Z",
             "dateModified": "2026-11-04T18:20:28Z",
-            "keywords": "accountability, append-only, audit, cli, governance, provenance, python, research-integrity",
-            "sameAs": "https://doi.org/10.5281/zenodo.21754245"
+            "keywords": "accountability, append-only, audit, cli, governance, provenance, python, research-integrity"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1735,8 +1724,7 @@
             "programmingLanguage": "HTML",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-09-05T19:02:53Z",
-            "dateModified": "2026-11-02T23:07:42Z",
-            "sameAs": "https://doi.org/10.5281/zenodo.22833485"
+            "dateModified": "2026-11-02T23:07:42Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1921,8 +1909,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-09-09T00:28:24Z",
-            "dateModified": "2026-11-04T22:50:26Z",
-            "sameAs": "https://doi.org/10.5281/zenodo.22663906"
+            "dateModified": "2026-11-04T22:50:26Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -2013,8 +2000,7 @@
             "programmingLanguage": "HTML",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2026-06-12T13:44:26Z",
-            "dateModified": "2026-11-03T14:12:00Z",
-            "sameAs": "https://doi.org/10.5281/zenodo.23397452"
+            "dateModified": "2026-11-03T14:12:00Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -2030,8 +2016,7 @@
             "license": "https://spdx.org/licenses/CC-BY-4.0.html",
             "dateCreated": "2026-07-08T15:43:38Z",
             "dateModified": "2026-11-05T01:25:32Z",
-            "keywords": "active-inference, computational-modeling, free-energy-principle, lean4, reproducible-research, scientific-computing",
-            "sameAs": "https://doi.org/10.5281/zenodo.23321280"
+            "keywords": "active-inference, computational-modeling, free-energy-principle, lean4, reproducible-research, scientific-computing"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -2046,8 +2031,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-13T15:57:18Z",
-            "dateModified": "2026-11-04T22:02:13Z",
-            "sameAs": "https://doi.org/10.5281/zenodo.23484107"
+            "dateModified": "2026-11-04T22:02:13Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -2062,8 +2046,7 @@
             "programmingLanguage": "HTML",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-10-22T21:11:49Z",
-            "dateModified": "2026-11-03T14:27:18Z",
-            "sameAs": "https://doi.org/10.5281/zenodo.23402516"
+            "dateModified": "2026-11-03T14:27:18Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -2078,8 +2061,7 @@
             "programmingLanguage": "Python",
             "dateCreated": "2026-10-28T17:35:41Z",
             "dateModified": "2026-11-03T20:24:59Z",
-            "keywords": "corpus-analysis, digital-humanities, entomology, invertebrates, literary-studies, reproducible-research, william-blake",
-            "sameAs": "https://doi.org/10.5281/zenodo.23900582"
+            "keywords": "corpus-analysis, digital-humanities, entomology, invertebrates, literary-studies, reproducible-research, william-blake"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -2094,8 +2076,7 @@
             "programmingLanguage": "Python",
             "dateCreated": "2026-10-23T22:04:12Z",
             "dateModified": "2026-11-03T20:25:23Z",
-            "keywords": "corpus-analysis, digital-humanities, federalism, non-domination, political-theory, reproducible-research, william-blake",
-            "sameAs": "https://doi.org/10.5281/zenodo.23900616"
+            "keywords": "corpus-analysis, digital-humanities, federalism, non-domination, political-theory, reproducible-research, william-blake"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -2993,8 +2974,7 @@
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-18T12:10:13Z",
             "dateModified": "2026-11-05T18:16:07Z",
-            "keywords": "active-inference, free-energy-principle, knowledge-distillation, pymdp, reinforcement-learning, variational-inference",
-            "sameAs": "https://doi.org/10.5281/zenodo.20747834"
+            "keywords": "active-inference, free-energy-principle, knowledge-distillation, pymdp, reinforcement-learning, variational-inference"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -3026,8 +3006,7 @@
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-15T15:28:56Z",
             "dateModified": "2026-11-05T06:42:42Z",
-            "keywords": "active-inference, code-analysis, free-energy-principle, generative-model, gnn, python, static-analysis",
-            "sameAs": "https://doi.org/10.5281/zenodo.20705350"
+            "keywords": "active-inference, code-analysis, free-energy-principle, generative-model, gnn, python, static-analysis"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -3197,8 +3176,7 @@
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-09T19:00:08Z",
             "dateModified": "2026-11-05T17:40:24Z",
-            "keywords": "active-inference, bayesian-inference, federated-learning, free-energy-principle, python, reproducible-research, variational-inference",
-            "sameAs": "https://doi.org/10.5281/zenodo.21864003"
+            "keywords": "active-inference, bayesian-inference, federated-learning, free-energy-principle, python, reproducible-research, variational-inference"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -3242,8 +3220,7 @@
             },
             "dateCreated": "2026-09-25T20:09:48Z",
             "dateModified": "2026-11-02T01:56:41Z",
-            "keywords": "active-inference, governance, open-science, technology-roadmapping, working-groups",
-            "sameAs": "https://doi.org/10.5281/zenodo.23066903"
+            "keywords": "active-inference, governance, open-science, technology-roadmapping, working-groups"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -3258,8 +3235,7 @@
             "programmingLanguage": "Python",
             "dateCreated": "2026-09-28T00:12:03Z",
             "dateModified": "2026-11-05T20:48:02Z",
-            "keywords": "active-inference, bayesian-inference, claims-ledger, computational-linguistics, discrete-state-space, free-energy-principle, gate-audit, generalized-notation-notation, generative-model, gnn, language-model, lean4, phonology, pymdp, reproducibility",
-            "sameAs": "https://doi.org/10.5281/zenodo.22409418"
+            "keywords": "active-inference, bayesian-inference, claims-ledger, computational-linguistics, discrete-state-space, free-energy-principle, gate-audit, generalized-notation-notation, generative-model, gnn, language-model, lean4, phonology, pymdp, reproducibility"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -3274,8 +3250,7 @@
             "programmingLanguage": "TypeScript",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-10-23T15:55:50Z",
-            "dateModified": "2026-11-05T02:09:46Z",
-            "sameAs": "https://doi.org/10.5281/zenodo.23670187"
+            "dateModified": "2026-11-05T02:09:46Z"
         },
         {
             "@type": "SoftwareSourceCode",

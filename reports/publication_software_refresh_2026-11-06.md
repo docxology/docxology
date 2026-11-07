@@ -1,12 +1,12 @@
 # Publication and software refresh — 2026-11-06
 
-This source review follows the completed [November 6 clean-source pass](software_quality_followup_2026-11-06.md). Acquisition dates describe actual observations; replay and rendering dates do not imply new network checks. Final integration, test and publication evidence is pending in this private proposal.
+This review follows the [November 6 clean-source pass](software_quality_followup_2026-11-06.md). The discovery dates identify when the public sources were observed. Local replay and regeneration use those retained observations.
 
 ## Discovery and identity
 
 The complete public GitHub acquisition covered 322 repositories across docxology and ActiveInferenceInstitute, with unchanged repository identities and membership. All 322 release endpoints completed: 338 published releases, three excluded unpublished rows and zero endpoint failures. Rikishi 1.1.0 and Symposium 3.2.0 were the two newly observed published releases. Repository activity and changed counters are not additional software versions.
 
-The author-query Zenodo acquisition returned 174 ORCID-linked and 85 exact-name records, deduplicated to 178 records. The two new records are the Rikishi software archive and its separate manuscript. The Symposium release explicitly links an additional institutional book outside those author queries; exact-record intake brings the retained pool to 179. These are newly discovered records, not a claim that they were deposited after the preceding pass finished.
+The author-query Zenodo acquisition returned 174 ORCID-linked and 85 exact-name records, deduplicated to 178 records. The Rikishi software archive and its separate manuscript are newly discovered in those results. The Symposium release links an institutional book outside the author searches. Exact-record intake brings the retained pool to 179. The [frozen observation](https://github.com/docxology/docxology/blob/ee837003a2328d28d8234ad5afdcfcd38419e90c/reports/paired_publications_2026-11-06.json) preserves the acquisition scope and the 613 observed release–record pairings. The [November 7 offline replay](paired_publications_2026-11-07.json) keeps all observed records, releases and pairings intact. It classifies 612 pairings as already reviewed and one as a catalogued software archive, with no new network observations or catalogue writes.
 
 The [21-check snapshot](public_source_snapshot_2026-11-06.json) and [20-section inventory](public_source_inventory_2026-11-06.json) retain original response times and hashes. ResearchGate, SciProfiles and PhilPeople returned access errors. DBLP and Semantic Scholar returned incomplete HTTP 202 responses and remain unavailable. ORCID, Crossref, PubMed and Europe PMC observations did not add a new catalogued work. Scholar metrics retain their separate authenticated November 1 observation.
 
@@ -50,10 +50,10 @@ Exact-edition review now binds an immutable record ID and complete normalized re
 
 Other repairs preserve cached GitHub release-asset URLs, reject malformed or duplicate GitHub rows and exhausted page budgets, retain curated paper-index extensions, support bounded explicit-record intake outside author searches, preserve reviewed literal bylines during registry refresh, and distinguish software archive DOIs from paper citations. Advisory pages require a complete usable response before being marked available.
 
-Current-edition decisions are separate attributed AI-assisted curation under the owner's authorization. They do not rewrite original decisions or imply human, scientific, editorial or release approval. The final exact decision counts and validation evidence will be recorded after the reviewed proposal has actually run.
+On November 7 UTC, Codex recorded 87 owner-authorized decisions about how the catalogue represents exact current editions. Of those, 79 mark an older context as superseded, four reject a pairing, two acknowledge a software archive, and two accept a bibliography work. Seventy-eight decisions identify the precise earlier decision they supersede. Nine cover contexts without an earlier match. The [decision ledger](../data/paired-publication-decisions.json) preserves all 273 prior groups and 675 earlier edition bindings. These decisions cover catalogue representation only.
 
-## Verification and publication
+## Verification
 
-Pending actual final integration: complete core/native/browser/style/standard gates; two canonical generation passes and exact fixed-point comparison; full outbound-link scan and triage; complete Pages assembly and size measurement; source-equivalent committed bindings; ordinary main publication; and actual hosted/deployed acceptance.
+After integrating the bibliography counts, literal-credit checks and browser test selection, both canonical regeneration passes completed all 53 steps on November 7 UTC. The generation results record successful execution. The separate source and artifact checks establish the evidence for the release candidate.
 
-Rikishi's current-source Pillow repair has separate originating-repository qualification. Historical archives and manuscript results remain unchanged. Its final native coverage, exact two-control qualification, publication and GitHub dependency observations will be recorded only after they execute.
+Rikishi’s current-source Pillow repair is tracked in the originating repository. The catalogue’s Rikishi record describes the archived 1.1.0 edition.

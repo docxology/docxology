@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T01:43:27Z",
+  "generated_at": "2026-11-07T02:45:29Z",
   "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence",
   "claims": [
     {
@@ -11,7 +11,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-11-07T01:38:48+00:00",
+      "checked_at": "2026-11-07T02:36:03+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -19,13 +19,13 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 214 per-paper documentation folders.",
+      "claim": "The repository contains 216 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-11-07T01:38:48+00:00",
+      "checked_at": "2026-11-07T02:36:03+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

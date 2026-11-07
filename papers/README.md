@@ -9,7 +9,9 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software triage, use the canonical publication intake runbook: [docs/operations/publication-sync.md](../docs/operations/publication-sync.md).
 
-## Papers (214)
+## Papers (216)
+
+Archive links open the selected versioned PDFs without duplicating them here.
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -228,6 +230,9 @@ For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software 
 | 212 | [2026_BlakeanEntomology](2026_BlakeanEntomology/) | ✅ | 2026 | BlakeanEntomology |
 | 213 | [2026_StatesChange](2026_StatesChange/) | ✅ | 2026 | StatesChange |
 | 214 | [2026_ObserversAllYouNeed](2026_ObserversAllYouNeed/) | — | 2026 | ObserversAllYouNeed |
+| 215 | [2026_Rikishi](2026_Rikishi/) | [Zenodo PDF](https://zenodo.org/api/records/23987671/files/rikishi-1.1.0-paper.pdf/content) | 2026 | Rikishi |
+| 216 | [2026_SymposiumPresenterProgram](2026_SymposiumPresenterProgram/) | [Zenodo PDF](https://zenodo.org/api/records/23986505/files/Active-Inference-Symposium-2026-Presenter-Program-v3.2.0.pdf/content) | 2026 | SymposiumPresenterProgram |
+
 ## Scripts
 
 All repository code lives under [`code/`](../code/); the per-folder docs in this directory are generated from `paper_metadata.json` by:

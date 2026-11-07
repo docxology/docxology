@@ -50,6 +50,20 @@ def _rows_with_authors():
     ]
 
 
+@pytest.fixture(scope="module")
+def bibliography_authority():
+    return regenerate_docs.parse_bibliography(
+        paths=regenerate_docs.DocumentPaths(
+            papers_dir=REPO_ROOT / "papers", bibliography_path=BIBLIOGRAPHY
+        )
+    )
+
+
+def _reviewed_literal_names(row, authority):
+    record = authority.get(row.folder, {})
+    return record.get("literal_authors", []) if record.get("num") == row.num else []
+
+
 def _family(name: str) -> str:
     return name.partition(",")[0].strip() if "," in name else name.strip()
 
@@ -57,7 +71,7 @@ def _family(name: str) -> str:
 # ── Repository invariants ───────────────────────────────────────────────────
 
 
-def test_paper_citation_cff_matches_bibliography_title_and_authors():
+def test_paper_citation_cff_matches_bibliography_title_and_authors(bibliography_authority):
     drift = []
     for row in _rows_with_authors():
         path = REPO_ROOT / "papers" / row.folder / "CITATION.cff"
@@ -65,7 +79,11 @@ def test_paper_citation_cff_matches_bibliography_title_and_authors():
             continue
         identity = cff._cff_citation_identity(path.read_text(encoding="utf-8"))
         expected = cff._bibliography_identity(
-            {"title": row.title.strip(), "authors": list(row.authors)}
+            {
+                "title": row.title.strip(),
+                "authors": list(row.authors),
+                "literal_authors": _reviewed_literal_names(row, bibliography_authority),
+            }
         )
         if identity != expected:
             drift.append(row.folder)
@@ -74,7 +92,7 @@ def test_paper_citation_cff_matches_bibliography_title_and_authors():
     )
 
 
-def test_paper_readme_byline_and_heading_follow_bibliography():
+def test_paper_readme_byline_and_heading_follow_bibliography(bibliography_authority):
     identifiers = json.loads(
         (REPO_ROOT / "data/work-identifiers.json").read_text(encoding="utf-8")
     )["identifiers"]
@@ -89,8 +107,11 @@ def test_paper_readme_byline_and_heading_follow_bibliography():
             continue  # hand-authored README: not owned by the generator
         byline = re.search(r"^\*\*(.+?)\*\* \(\d{4}\)", text, re.MULTILINE)
         heading = re.search(r"^# \S+ (.+)$", text, re.MULTILINE)
-        expected_authors = ", ".join(
-            regenerate_docs.display_author_name(a) for a in row.authors
+        literals = _reviewed_literal_names(row, bibliography_authority)
+        separator = "; " if literals else ", "
+        expected_authors = separator.join(
+            a if a in literals else regenerate_docs.display_author_name(a)
+            for a in row.authors
         )
         key = identifiers[str(row.num)]["citation_key"]
         record = contributors[key]
@@ -123,12 +144,15 @@ def test_generated_paper_docs_never_present_template_methods():
     )
 
 
-def test_bibliography_authors_are_inverted_person_names_for_the_owner():
-    """The owner's name must never ship uninverted (CSL would emit a literal)."""
+def test_bibliography_authors_are_inverted_person_names_for_the_owner(
+    bibliography_authority,
+):
+    """Require person-name structure outside reviewed literal credit units."""
     bad = []
     for row in iter_bibliography_rows(BIBLIOGRAPHY):
+        literals = _reviewed_literal_names(row, bibliography_authority)
         for name in row.authors:
-            if "Friedman" in name and not _family(name) == "Friedman":
+            if "Friedman" in name and _family(name) != "Friedman" and name not in literals:
                 bad.append((row.num, name))
     assert not bad, f"owner name not in 'Friedman, Given' form: {bad[:10]}"
 
