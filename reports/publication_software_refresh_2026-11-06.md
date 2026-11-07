@@ -54,6 +54,14 @@ On November 7 UTC, Codex recorded 87 owner-authorized decisions about how the ca
 
 ## Verification
 
-After integrating the bibliography counts, literal-credit checks and browser test selection, both canonical regeneration passes completed all 53 steps on November 7 UTC. The generation results record successful execution. The separate source and artifact checks establish the evidence for the release candidate.
+After the bibliography counts, literal-credit checks and browser test selection were integrated, both canonical regeneration passes completed all 53 steps on November 7 UTC. The later pairing replay and its dependent count and evidence outputs passed the recorded control checks.
+
+The [clean validation candidate](https://github.com/docxology/docxology/commit/4ca4da1edf2781290bf4a07e0b3ed0f9ed5d0c04) passed 2,800 core tests and 13 subtests, 153 browser interaction tests, and the serial Lighthouse test, with no test failures or skips. Its separate native manuscript gate passed 143 tests and produced the PDF, HTML, EPUB, slides, cover and four figure pairs. The layout inspection covered 17 PDF pages, 162 rendered slides, and seven HTML viewport captures. Human review and EPUB reader layout remain separate.
+
+Ruff, the canonical cached pairing check, and the local search-console preflight passed. The DOI audit reported zero conflicts. The local search-console preflight does not report indexing or a new Search Console observation.
+
+The [November 7 external-link scan](external_links_2026-11-07.json) checked all 1,006 URLs in the declared source scope. It classified 839 as reachable and recorded 167 warnings. The [triage](external_links_triage_2026-11-07.md) distinguishes 160 bot-protected or rate-limited observations, five transient or connection outcomes, and two 404s for the same previously labelled historical repository reference. The scan did not establish a replacement for that reference. The immutable pairing archive link returned HTTP 200 in a separate check.
+
+Current-facing reports use the newer pairing replay. The original 7,266,403-byte observation remains intact in Git and is omitted from the current Pages projection. See the [asset strategy](../docs/operations/asset-strategy-adr.md#current-asset-strategy-2026-11-07) for the review budget, edition-specific PDF links and the approach to media growth.
 
 Rikishi’s current-source Pillow repair is tracked in the originating repository. The catalogue’s Rikishi record describes the archived 1.1.0 edition.
