@@ -423,3 +423,54 @@ def test_404_footer_targets_are_large_enough(accessibility_server, browser_page,
     ), targets
     assert not relevant_axe_violations(page, accessibility_server)
     assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth")
+
+
+@pytest.mark.parametrize("width", [390, 1440])
+def test_works_json_export_card_keeps_both_links_clickable(
+    accessibility_server, browser_page, width
+):
+    page = browser_page
+    page.set_viewport_size({"width": width, "height": 900})
+    page.emulate_media(reduced_motion="reduce")
+    page.goto(f"{accessibility_server}/cite-verify.html", wait_until="load")
+    exports = page.locator("section").filter(
+        has=page.get_by_role("heading", name="Exports", exact=True)
+    )
+    works = exports.get_by_role("link", name="Works JSON", exact=True)
+    totals = exports.get_by_role("link", name="current totals", exact=True)
+    card = exports.locator(".cards > .card").filter(
+        has=page.get_by_role("link", name="Works JSON", exact=True)
+    )
+    assert card.count() == 1, "Works JSON must be inside a single export card"
+    assert card.locator("a[href]").evaluate_all(
+        "links => links.map(link => link.getAttribute('href'))"
+    ) == ["data/works.json", "reports/current_counts.md"]
+    assert card.locator("a a").count() == 0
+    assert card.get_by_text("Structured bibliography export", exact=False).is_visible()
+    works.click(trial=True)
+    totals.click(trial=True)
+
+
+@pytest.mark.parametrize(("width", "scheme"), [(390, "light"), (1440, "dark")])
+def test_evidence_claim_titles_use_current_theme_foreground(
+    accessibility_server, browser_page, width, scheme
+):
+    page = browser_page
+    page.set_viewport_size({"width": width, "height": 900})
+    page.emulate_media(color_scheme=scheme, reduced_motion="reduce")
+    page.goto(f"{accessibility_server}/evidence.html", wait_until="load")
+    titles = page.locator(".claim-card h3")
+    assert titles.count() > 0
+    expected = titles.first.evaluate("""heading => {
+        const probe = document.createElement('span');
+        probe.style.color = 'var(--text-primary)';
+        heading.append(probe);
+        try {
+            return getComputedStyle(probe).color;
+        } finally {
+            probe.remove();
+        }
+    }""")
+    assert titles.evaluate_all(
+        "nodes => [...new Set(nodes.map(node => getComputedStyle(node).color))]"
+    ) == [expected]

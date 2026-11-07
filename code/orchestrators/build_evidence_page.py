@@ -154,7 +154,7 @@ def render_html(claims: list[dict]) -> str:
     <style>
         .claim-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}}
         .claim-card{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;display:flex;flex-direction:column;gap:.75rem}}
-        .claim-card h3{{font-size:1rem;line-height:1.45;color:#fff}}
+        .claim-card h3{{font-size:1rem;line-height:1.45;color:var(--text-primary)}}
         .claim-card p{{font-size:.84rem;color:var(--text-secondary);line-height:1.6}}
         .claim-card dl{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem}}
         .claim-card dt{{font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted)}}

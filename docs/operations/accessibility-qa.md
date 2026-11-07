@@ -26,6 +26,11 @@ masthead so it can wrap without covering the heading or byline. Verify the
 desktop view as well, and confirm that the mobile menu can still open over the
 page and return focus when it closes.
 
+Check long update entries for horizontal overflow on mobile. Keep multiple
+links in an export card as separate anchors inside a non-link container so
+both remain reachable. Review evidence card headings against the card surface
+in both color themes.
+
 Focused startup tests additionally cover complete-catalog sorting before row
 batching, focus on the first added publication/gallery item, malformed catalog
 and detail responses, preservation of native artwork links, finite image
