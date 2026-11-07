@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T02:45:30Z",
+  "generated_at": "2026-11-07T04:22:26Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 737,
-      "sha256": "652dca9da177f57e76ad93f65aa60fbae70cb2f87677cfc6dfd653ce9c507365",
+      "sha256": "be693b057e69ae5406fb13d7a590645205053bcb213894a069f7c5485acb33b4",
       "files": [
         {
           "path": "resume/source.json",
@@ -103,7 +103,7 @@
         {
           "path": "data/software.json",
           "bytes": 104764,
-          "sha256": "d6b4ea4e75918cf2358d21d21023b77e7a4443d23d00d3ecb8dc1a522a9699f8"
+          "sha256": "1e302f52070071a8f6dddc22e05b12e8249f52fd2b33a802d3d8027dfb7a31fb"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 12971,
-          "sha256": "01519774d5012005abcf4504eb835b0257ede9c090ad5afaf2d464283ddf5311"
+          "sha256": "da4ff92e94cda71bbf7d224df7ab388a0d11619f90bc6f2398d35dac8d691b10"
         },
         {
           "path": "data/github-repositories.json",
@@ -10720,7 +10720,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-11-07T02:36:03+00:00",
+      "checked_at": "2026-11-07T03:17:33+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -10734,7 +10734,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-11-07T02:36:03+00:00",
+      "checked_at": "2026-11-07T03:17:33+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
