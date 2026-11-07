@@ -46,10 +46,10 @@
       "raw_candidates": 708
     },
     "paired_publications": {
-      "already_reviewed": 525,
-      "create_new": 2,
+      "already_reviewed": 612,
+      "create_new": 0,
       "github_releases": 338,
-      "needs_review": 85,
+      "needs_review": 0,
       "pairs": 613,
       "software_catalogued": 1,
       "strong_pairs": 75,
@@ -83,12 +83,12 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-11-07T02:36:03+00:00",
+  "generated_at": "2026-11-07T03:17:33+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",
     "paired_publication_decisions": "data/paired-publication-decisions.json",
-    "paired_publications": "reports/paired_publications_2026-11-06.json",
+    "paired_publications": "reports/paired_publications_2026-11-07.json",
     "paper_folders": "papers/README.md",
     "public_source_snapshot": "reports/public_source_snapshot_2026-11-06.json",
     "software_catalog": "pages/SOFTWARE.md",

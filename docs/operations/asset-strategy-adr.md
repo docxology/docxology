@@ -233,3 +233,43 @@ review headroom below the unchanged 900 MiB hard ceiling. Remaining levers
 if growth resumes: excluding the 4.7 MiB paired-publications scan payload
 from the Pages projection (repo-only evidence), and Option A (self-hosted
 thumbnails) under its existing triggers.
+
+## Current asset strategy (2026-11-07)
+
+The earlier entries record their own budgets and decisions. The current
+review gate is **930 MiB** for published content plus the manifest. The
+assembler enforces a **950 MiB** ceiling for the complete release artifact.
+The configured outer bound is **1 GiB**. GitHub documents a **1 GB** limit
+for the published site. [Pages artifact policy](github-pages-artifact.md)
+and [GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits).
+
+During the November 7 refresh, the projection counted 975,460,714 bytes
+against the review gate while it still carried both pairing reports. The
+7,266,403-byte November 6 observation was retained in Pages by a stale
+current-counts link copied into the agent index. The November 6 evidence
+remains in the repository, with immutable archive links from the review and
+paper evidence. Current-facing reports should point to the November 7
+classification replay. The current projection is recorded in the
+[Pages manifest](../../data/pages-artifact-manifest.json).
+
+For new papers and editions, use an existing reviewed versioned archive as
+the primary PDF when available. Keep original hosted PDF URLs and preserve
+exact archive record IDs, filenames, byte counts, SHA-256 hashes, and
+extraction bindings. A later edition gets its own source evidence.
+[Primary PDF hosting policy](github-pages-artifact.md#primary-pdf-hosting-and-source-custody).
+
+Flickr remains the gallery's image origin. Moving media to another repository
+leaves Pages size unchanged if the assembler still copies the same files.
+Savings require removing those copies from the Pages artifact and serving
+them from a separate media origin. Google permits cross-domain image
+sitemaps when both domains are verified in Search Console and the images
+are crawlable. [Google image-sitemap guidance](https://developers.google.com/search/docs/crawling-indexing/sitemaps/image-sitemaps).
+
+Keep current artwork URLs and hosting while measuring the byte and delivery
+cost of each asset class. First check the current artifact after evidence
+rollover and archive-first PDF intake. If that measurement identifies a
+material artwork delivery problem, evaluate a small representative set
+against the current Flickr baseline. Compare bytes transferred, image
+availability, loading performance, and accessible behavior. Review rights,
+URL continuity, and the cost of operating a separate origin before choosing
+whether to move any artwork.

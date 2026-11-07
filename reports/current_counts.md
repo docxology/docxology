@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-11-07T02:36:03+00:00`
+Generated: `2026-11-07T03:17:33+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -25,7 +25,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
 - public_source_snapshot: `reports/public_source_snapshot_2026-11-06.json`
-- paired_publications: `reports/paired_publications_2026-11-06.json`
+- paired_publications: `reports/paired_publications_2026-11-07.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
 ## Counts
@@ -107,9 +107,9 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - pairs: `613`
 - strong_pairs: `75`
 - software_catalogued: `1`
-- already_reviewed: `525`
-- needs_review: `85`
-- create_new: `2`
+- already_reviewed: `612`
+- needs_review: `0`
+- create_new: `0`
 - update_existing: `0`
 
 ### Paired Publication Decisions
