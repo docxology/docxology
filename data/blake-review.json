@@ -112,14 +112,50 @@
       ]
     },
     "2026_CognitiveCaseDiagrams": {
-      "relation": "other_person",
-      "note": "Reference is Barry J. Blake on grammatical relations, not William Blake.",
-      "full_text_sha256": "a198b77ca7241de1b83a7a463a604570c2ac185df7e16afbe545333ef9c3c97d"
+      "relation": "no_match",
+      "note": "No whole-word Blake match occurs in the current selected extraction. The prior Barry J. Blake reference belongs to the retained earlier extraction; this classification does not establish absence from text that extraction may have omitted.",
+      "full_text_sha256": "4ec4b2cf12dad61a40a1e28d79c6591a3356a27bb85dc2822817c891a0d8f819",
+      "edition_note": "Current passage review covers version 2.7.0, Zenodo record 22774403. The complete prior review and its independently preserved earlier extraction remain in review_history.",
+      "anchors": [],
+      "evidence_lines": [],
+      "reviewed_by": "Codex AI-assisted passage curator (owner-authorized)",
+      "reviewed_at": "2026-11-07T01:42:12.965672+00:00",
+      "review_history": [
+        {
+          "full_text_path": "papers/2026_CognitiveCaseDiagrams/full_text_before_2026-11-06.md",
+          "full_text_sha256": "a198b77ca7241de1b83a7a463a604570c2ac185df7e16afbe545333ef9c3c97d",
+          "review": {
+            "relation": "other_person",
+            "note": "Reference is Barry J. Blake on grammatical relations, not William Blake.",
+            "full_text_sha256": "a198b77ca7241de1b83a7a463a604570c2ac185df7e16afbe545333ef9c3c97d"
+          }
+        }
+      ]
     },
     "2026_CognitiveIntegrity": {
       "relation": "quotation",
-      "note": "Opening epigraph attributes Mental Fight to William Blake.",
-      "full_text_sha256": "c51561373f09f05d46bbb90849adc420a4afdadec383ede73fd353a2fe282ace"
+      "note": "The front-matter epigraph attributes Mental Fight and Sword lines to William Blake. This classifies the located attribution without independently validating the quotation source.",
+      "full_text_sha256": "3f85285b04dac4b0f77773c0646ec2a7a2d19444ef4c0de619f347ec4a869429",
+      "edition_note": "Current passage review covers the selected Part 1 version 2.0, Zenodo record 22134544. The complete prior review and its independently preserved earlier extraction remain in review_history.",
+      "anchors": [
+        "“I will not cease from Mental Fight,\nNor shall my Sword sleep in my hand:”\n— William Blake"
+      ],
+      "evidence_lines": [
+        815
+      ],
+      "reviewed_by": "Codex AI-assisted passage curator (owner-authorized)",
+      "reviewed_at": "2026-11-07T01:42:12.965672+00:00",
+      "review_history": [
+        {
+          "full_text_path": "papers/2026_CognitiveIntegrity/full_text_before_2026-11-06.md",
+          "full_text_sha256": "c51561373f09f05d46bbb90849adc420a4afdadec383ede73fd353a2fe282ace",
+          "review": {
+            "relation": "quotation",
+            "note": "Opening epigraph attributes Mental Fight to William Blake.",
+            "full_text_sha256": "c51561373f09f05d46bbb90849adc420a4afdadec383ede73fd353a2fe282ace"
+          }
+        }
+      ]
     },
     "2026_CrescentCity": {
       "relation": "other_person",

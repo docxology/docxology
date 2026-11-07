@@ -2,8 +2,6 @@
 
 > Extracted from `Skillarum_combined.pdf`
 
-> 12 figures extracted to `images/`
-
 ---
 
 ## Page 1
@@ -15,10 +13,8 @@ Daniel Ari Friedman
 Active Inference Institute
 daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
-DOI: 10.5281/zenodo.22663907
-2026-09-07
-
-![page1_img1.png](images/page1_img1.png)
+DOI: 10.5281/zenodo.23271010
+2026-10-09
 
 ## Page 2
 
@@ -80,13 +76,21 @@ Case studies
 Math 4 Wisdom
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 15
+7.1.1
+Targets derived from a site’s own index
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+7.1.2
+An authored investigation skill
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
 7.2
 Active Inference Institute
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-15
+16
 7.3
 Dated refresh and website inventories . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-15
+16
 8
 Related work and scholarly context
 16
@@ -95,19 +99,19 @@ Retrieval, form, and bounded source compilation . . . . . . . . . . . . . . . . 
 16
 8.2
 Web agents and executable skills . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-16
+17
 8.3
 Provenance, reproducibility, and human evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-17
+18
 8.4
 Security and responsible use . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-17
+18
 8.5
 Scope of comparison . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 18
 9
 Reproducibility, limitations, and future work
-18
+19
 10 References
 19
 
@@ -124,8 +128,8 @@ typed contracts and content-aware cache identities. Second, it treats scraped HT
 provider failure, truncation, and uncertainty visible rather than silently promoting them to instructions. Third, it
 defines an evidence-gated evaluation surface for reproducibility, provenance, fallback behavior, and human review of
 semantic and procedural usefulness.
-The current report summarizes 7 persisted observations from 2 source profiles and 7 target bundles. The package-
-valid rate among completed runs is 100.0%, with 0 recorded fallback observations and 5 truncated pages. These
+The current report summarizes 538 persisted observations from 3 source profiles and 535 target bundles. The package-
+valid rate among completed runs is 100.0%, with 0 recorded fallback observations and 21 truncated pages. These
 values are conditional on run completion; they are descriptive observations, not an end-to-end success probability or
 a population estimate. Human-review agreement is currently pending.
 2
@@ -151,7 +155,7 @@ generated code; and
 5. an evidence and publication layer that separates measured observations, live case studies, source citations,
 hypotheses, and pending claims.
 The 2 configured source areas are Math 4 Wisdom and the Active Inference Institute, with target bundles declared
-in their profiles. They are intentionally useful examples rather than a claim to have sampled the web generally.
+in 3 profiles. They are intentionally useful examples rather than a claim to have sampled the web generally.
 3
 Formal model and invariants
 3.1
@@ -285,9 +289,10 @@ is weaker than byte identity of a full research report.
 Methodology and system architecture
 4.1
 Declared acquisition design
-Profiles declare 7 target bundles across 2 source areas. The following table is generated from the current profile
-files. Its limits describe configured upper bounds; they are not counts of retrieved or available website pages. Target
-bundles may select overlapping source pages.
+Profiles declare 535 target bundles in 3 profiles across 2 source areas. A profile with many generated targets is
+summarized as one row. The following table is generated from the current profile files. Its limits describe configured
+upper bounds; they are not counts of retrieved or available website pages. Target bundles may select overlapping
+source pages.
 Area / target
 Seed URLs
 Page limit
@@ -320,37 +325,38 @@ Math4Wisdom / Minds-Research
 4
 10
 40000
+Math4Wisdom / math4wisdom-research (528 targets)
+528
+528
+40000
 4.2
 Compilation and orchestration
 Figure 1 summarizes the stage topology: untrusted source data enters at acquisition and stays delimited through
 preparation, generation, parsing, and rendering.
-Figure 1: Pipeline and trust boundaries. The diagram shows the five contract-defined Skillarum stages and the source-
-data trust boundary; it is generated from implementation contracts, not from the report’s measurements. Report
-context (metadata only): n=7 completed observations; evidence origins: live=7. The diagram is not a performance
-measurement or a claim about site coverage.
+Figure 1: Pipeline and trust boundaries. The diagram shows the five contract-defined Skillarum stages and the
+source-data trust boundary; it is generated from implementation contracts, not from the report’s measurements.
+Report context (metadata only): n=538 completed observations; evidence origins: live=538. The diagram is not a
+performance measurement or a claim about site coverage.
 The acquisition layer owns network behavior.
 It normalizes URLs, checks origin and public-host policy, reads
 robots.txt, applies shared rate limits, follows bounded redirects, streams response bodies under a byte limit, and
 records rejection reasons. It does not interpret page text as commands.
 The preparation layer removes configured presentation selectors, bounds each page, preserves source URLs and hashes,
 and wraps source material in a corpus contract — the bounded transformation of eq. 2. The process layer chooses a
-provider. Deterministic generation is the default; auto is explicitly opt-in and follows configured provider precedence
-before deterministic fallback. Provider retries cover only transient transport and HTTP failures. Malformed or
-unsafe output is not silently retried as if it were a network problem.
 5
-
-![page6_img1.png](images/page6_img1.png)
 
 ## Page 7
 
+provider. Deterministic generation is the default; auto is explicitly opt-in and follows configured provider precedence
+before deterministic fallback. Provider retries cover only transient transport and HTTP failures. Malformed or
+unsafe output is not silently retried as if it were a network problem.
 The parse and render layers validate required portable sections, enforce the requested target name, append prove-
 nance, produce the package contract of eq. 3, validate the package, and publish it transactionally. The discovery
 index is rebuilt only from complete packages.
 Figure 2 shows the persisted run lifecycle; failure is a diagnosable terminal state with sanitized diagnostics.
 Figure 2: Run states and recovery. The diagram shows the persisted lifecycle from planning to rendering and the
 recoverable failure boundary; it is generated from implementation contracts, not from the report’s measurements.
-Report context (metadata only): n=7 completed observations; evidence origins: live=7.
-It does not establish
+Report context (metadata only): n=538 completed observations; evidence origins: live=538. It does not establish
 reliability, recovery probability, or successful resumption under every failure mode.
 The filesystem layout is part of the method. Acquired bundles, prepared corpora, drafts, run state, failures, manifests,
 and rendered skills remain inspectable. This makes a run useful as both an operational artifact and an evaluation
@@ -358,7 +364,7 @@ observation.
 The scholarly build has a separate dependency order: validate claims and bibliography, collect completed observations,
 derive statistics, generate figures, verify retained website archives, and bind the manuscript. A failed step prevents
 a successful build receipt. Rendering and final artifact validation follow that build. The pipeline contract version is
-0.8 and the package version is 0.2.0; these identifiers are injected from the implementation.
+0.8 and the package version is 0.3.1; these identifiers are injected from the implementation.
 4.3
 Agent access and operator instructions
 The local MCP adapter exposes discovery, package inspection and validation, policy checks, and the current evaluation
@@ -374,15 +380,13 @@ preserves that distinction by requiring source text to be inspected as untrusted
 Threat model, provenance, and safety
 The principal adversary is untrusted source content. A page may contain text that looks like a system instruction,
 attempts to exfiltrate secrets, requests unsafe redirection, or embeds misleading navigation. This is the indirect
-prompt-injection setting in which retrieved data can alter the behavior of an LLM-integrated application [Greshake
-et al., 2023]. Skillarum therefore keeps source content inside a corpus delimiter, preserves it as evidence, and requires
-generated skills to distinguish source claims from agent reasoning.
 6
-
-![page7_img1.png](images/page7_img1.png)
 
 ## Page 8
 
+prompt-injection setting in which retrieved data can alter the behavior of an LLM-integrated application [Greshake
+et al., 2023]. Skillarum therefore keeps source content inside a corpus delimiter, preserves it as evidence, and requires
+generated skills to distinguish source claims from agent reasoning.
 The security taxonomy is intentionally aligned with practitioner guidance without treating a checklist as proof of
 safety. OWASP’s LLM application risks name prompt injection and insecure output handling as distinct failure
 modes [OWASP Gen AI Security Project, 2025]. NIST’s AI RMF frames AI risk management as voluntary, context-
@@ -412,16 +416,14 @@ rather than claiming immunity.
 Figure 3 traces the hash-dependency chain from profile and target configuration to the published discovery index.
 Figure 3: Cache identity and artifact integrity. The diagram shows the contract-defined hash dependencies from
 configuration through the published index; it is generated from implementation contracts, not from the report’s
-measurements. Report context (metadata only): n=7 completed observations; evidence origins: live=7. It is not an
-empirical collision or speed result.
+measurements. Report context (metadata only): n=538 completed observations; evidence origins: live=538. It is
+not an empirical collision or speed result.
 Pack checksums bind recorded archive members to hashes. The packer field is self-asserted metadata: no signing
-key or trusted identity authority is involved, so checksum verification must not be described as signer authentication.
 7
-
-![page8_img1.png](images/page8_img1.png)
 
 ## Page 9
 
+key or trusted identity authority is involved, so checksum verification must not be described as signer authentication.
 6
 Evaluation design and results
 The evaluation is deliberately divided into three evidence classes. Local fixture observations test behavior under
@@ -432,9 +434,9 @@ declarative bundles. Human ratings assess the usefulness and safety of the resul
 presented as live-site evidence, and live case studies are not treated as population samples.
 6.1
 Observation set and estimands
-The current report contains 7 completed observations across 7 target rows. 7 are labeled live. The package-valid
-rate is 100.0%. The run matrix recorded 0 fallback observations, 5 truncated pages, and a human-review status of
-pending. Evidence labels describe persisted acquisition declarations; a later --live flag cannot upgrade historical
+The current report contains 538 completed observations across 535 target rows. 538 are labeled live. The package-
+valid rate is 100.0%. The run matrix recorded 0 fallback observations, 21 truncated pages, and a human-review status
+of pending. Evidence labels describe persisted acquisition declarations; a later --live flag cannot upgrade historical
 observations. Older runs without declarations remain unknown. Telemetry availability is recorded separately from
 stored compatibility counters; an unavailable metric is not an observed zero.
 The primary observational unit is a completed run-target pair:
@@ -447,87 +449,79 @@ nested observations within that unit, not independent replicates. Thus, the live
 counts describe a bounded case-study design; they must not be read as a sample of independent websites or as
 a site-wide estimate. Repeated live runs would be needed before treating an observation-level rate as more than
 descriptive operational evidence.
-Recorded generator backends: deterministic. The package-valid numerator is 7 among 7 completed records; fallback
-telemetry is available for 7 records. The distinction between those denominators is preserved in every summary.
+Recorded generator backends: deterministic. The package-valid numerator is 538 among 538 completed records;
+fallback telemetry is available for 538 records. The distinction between those denominators is preserved in every
+summary.
 6.2
 Acquisition and operational diagnostics
 Figure 4 reports acquisition outcomes by source area.
-Figure 4: Acquisition outcomes by source area. For each declared area, grouped bars show six separately defined
-counts: accepted pages, rejected requests, redirects, pages carrying canonical links, duplicate pages, and truncated
-accepted pages. Each value is a within-area sum across completed observations (n=7 completed observations; evidence
-origins: live=7). The categories are not additive because one request can redirect or carry a canonical link while
-still producing an accepted page. This case-study matrix does not establish the number of pages available on either
-website, a site-wide coverage rate, or a causal effect of any crawler policy.
-Figure 5 summarizes provider fallback, failure, and retry counts per selected backend.
 8
-
-![page9_img1.png](images/page9_img1.png)
 
 ## Page 10
 
+Figure 4: Acquisition outcomes by source area. For each declared area, grouped bars show six separately defined
+counts: accepted pages, rejected requests, redirects, pages carrying canonical links, duplicate pages, and truncated
+accepted pages. Each value is a within-area sum across completed observations (n=538 completed observations;
+evidence origins: live=538). The categories are not additive because one request can redirect or carry a canonical
+link while still producing an accepted page. This case-study matrix does not establish the number of pages available
+on either website, a site-wide coverage rate, or a causal effect of any crawler policy.
+Figure 5 summarizes provider fallback, failure, and retry counts per selected backend.
 Figure 5: Provider fallback outcomes. For each selected backend, grouped bars separately count observations with
 fallback, recorded provider-failure attempts, and retry attempts. Fallback is a Boolean observation-level indicator;
-failures and retries are attempt-level counters. The aggregation is grouped sums over n=7 completed observations;
-evidence origins: live=7. A zero is an observed absence in this report, not a guarantee that providers cannot fail;
+failures and retries are attempt-level counters. The aggregation is grouped sums over n=538 completed observations;
+evidence origins: live=538. A zero is an observed absence in this report, not a guarantee that providers cannot fail;
 the plot does not measure output quality or provider reliability in the population.
 Figure 6 plots the individual generation-latency observations.
 9
-
-![page10_img1.png](images/page10_img1.png)
 
 ## Page 11
 
 Figure 6: Generation latency.
 Each bar identifies one area/target observation and shows the sum of persisted
 provider-attempt durations, including retry attempts. The unit is milliseconds and the aggregation is a run-level
-sum over attempts; n=7 completed observations; evidence origins: live=7.
-Cached drafts, when present, retain
+sum over attempts; n=538 completed observations; evidence origins: live=538. Cached drafts, when present, retain
 original attempt timings; reported durations are not end-to-end pipeline wall time. N/A denotes absent telemetry.
-The report also retains the median, range, and missingness for this metric. This operational telemetry is not a
-model-quality measure, does not isolate network/provider/cache components, and should not be generalized beyond
-these runs.
+The report also retains the median, range, and missingness for this metric. This operational telemetry is not a model-
+quality measure, does not isolate network/provider/cache components, and should not be generalized beyond these
+runs. Only declared evaluation cases are drawn; 528 further completed observations of undeclared (index-derived)
+targets are counted in the area-level figures and the report.
 Figure 7 counts observations passing each integrity check separately; these checks evaluate the provenance-
 completeness predicate of eq. 5.
 10
-
-![page11_img1.png](images/page11_img1.png)
 
 ## Page 12
 
 Figure 7: Artifact integrity checks. Bars count completed observations that pass three separately evaluated Boolean
 checks: page-level provenance completeness, required portable sections, and presence of an untrusted-source marker.
-The unit is observations and the aggregation is a sum of Boolean checks over n=7 completed observations; evidence
-origins: live=7. Numerators and denominators remain available in the report’s exact-binomial proportion records; the
-companion proportion-intervals figure draws those exact intervals with each row’s eligible denominator. These checks
-establish package structure and provenance handling; they do not establish the factual truth, semantic coverage, or
-usefulness of source claims.
+The unit is observations and the aggregation is a sum of Boolean checks over n=538 completed observations; evi-
+dence origins: live=538. Numerators and denominators remain available in the report’s exact-binomial proportion
+records; the companion proportion-intervals figure draws those exact intervals with each row’s eligible denominator.
+These checks establish package structure and provenance handling; they do not establish the factual truth, semantic
+coverage, or usefulness of source claims.
 Figure 8 compares source-mapping and truncation percentages per area.
 Figure 8: Source mapping and truncation rates. For each declared area, the first series is complete source-page
 mappings divided by observed source pages; the second is truncated accepted pages divided by accepted pages.
 Thus the two percentages have different denominators and are shown together for diagnostic comparison, not as
-complementary parts of one rate. The population is the completed observation set (n=7 completed observations;
-evidence origins: live=7). These case-study rates do not establish site-wide completeness, content quality, or the
+complementary parts of one rate. The population is the completed observation set (n=538 completed observations;
+evidence origins: live=538). These case-study rates do not establish site-wide completeness, content quality, or the
 probability that an unseen page would be truncated.
 Figure 9 reports request pressure per accepted page.
 11
-
-![page12_img1.png](images/page12_img1.png)
-
-![page12_img2.png](images/page12_img2.png)
 
 ## Page 13
 
 Figure 9: Request pressure per accepted page. Each area value is the total persisted request-attempt count divided
 by the total accepted-page count for that area; request attempts include robots checks, redirects, retries, and normal
-page requests when recorded. The unit is requests per accepted page and the aggregation is a ratio of area-level
-sums over the completed observation set (n=7 completed observations; evidence origins: live=7). This diagnostic
-does not establish network cost, crawler eﬀiciency, or the total number of pages on a source site.
+page requests when recorded. The unit is requests per accepted page and the aggregation is a ratio of area-level sums
+over the completed observation set (n=538 completed observations; evidence origins: live=538). This diagnostic does
+not establish network cost, crawler eﬀiciency, or the total number of pages on a source site.
 Figure 10 tabulates the skill catalog by declared source area.
 Figure 10: Skill catalog by source area. Each row is a declarative namespace rather than an inferred topic cluster.
 Columns report distinct target count, observation count, accepted pages, truncated accepted pages, and complete
 source-page mapping. Counts are within-area sums; mapping is complete pages divided by observed source pages.
-The population is the completed observation set (n=7 completed observations; evidence origins: live=7); it does not
-establish website completeness, semantic quality, comparative superiority, or equal acquisition effort between areas.
+The population is the completed observation set (n=538 completed observations; evidence origins: live=538); it does
+not establish website completeness, semantic quality, comparative superiority, or equal acquisition effort between
+areas.
 If two rating files with distinct rater IDs contain overlapping cases, the registry also emits the human-review-rub
 ric figure. That conditional figure reports criterion-wise descriptive scores on the 0–4 rubric and is withheld when
 agreement is pending; no empty agreement plot is manufactured for the current package.
@@ -536,10 +530,6 @@ Statistical policy
 The executable statistical policy supplies the following settings to both the analysis and this manuscript. Changing
 a setting requires rebuilding the report, figures, and manuscript together.
 12
-
-![page13_img1.png](images/page13_img1.png)
-
-![page13_img2.png](images/page13_img2.png)
 
 ## Page 14
 
@@ -595,29 +585,29 @@ Passing / eligible
 Rate
 Model interval
 fallback used
-0 / 7
+0 / 538
 0.0%
-0.0% to 41.0%
+0.0% to 0.7%
 package valid
-7 / 7
+538 / 538
 100.0%
-59.0% to 100.0%
+99.3% to 100.0%
 provenance complete
-7 / 7
+538 / 538
 100.0%
-59.0% to 100.0%
+99.3% to 100.0%
 required sections valid
-7 / 7
+538 / 538
 100.0%
-59.0% to 100.0%
+99.3% to 100.0%
 source coverage
-37 / 37
+574 / 574
 100.0%
-90.5% to 100.0%
+99.4% to 100.0%
 unsafe source preserved
-7 / 7
+538 / 538
 100.0%
-59.0% to 100.0%
+99.3% to 100.0%
 Figure 11 shows those same row-specific estimates and eligible denominators.
 Its horizontal intervals provide a
 reference for the binomial model; they do not turn this selected observation set into an independent sample.
@@ -628,9 +618,8 @@ reference for the binomial model; they do not turn this selected observation set
 Figure 11: Exact binomial intervals for reported proportions. Each row shows the observed rate as a dot with a
 capped line spanning its exact Clopper–Pearson 95% interval, annotated successes/denominator. Rows use their
 own eligible denominator: completed observations for the package checks, observations with fallback telemetry for
-the fallback row, and observed source pages for complete mapping (n=7 completed observations; evidence origins:
-live=7).
-Intervals are model-reference quantities under independent Bernoulli assumptions: targets share sites,
+the fallback row, and observed source pages for complete mapping (n=538 completed observations; evidence origins:
+live=538). Intervals are model-reference quantities under independent Bernoulli assumptions: targets share sites,
 robots policy, and crawl limits, repeated invocations overwrite stable run identities, and pages within a target are
 not independent, so interval coverage is not calibrated for these selected dependent records. The figure does not
 establish web-population rates, provider effects, semantic quality, or a significance test between rows; rows have
@@ -647,20 +636,20 @@ Missing
 Median
 Range
 Request attempts
-7
+538
 0
-6
-2 to 9
+1
+1 to 9
 Response bytes
-7
+538
 0
-323807
-39161 to 857827
+14045
+9783 to 857827
 Generation duration (ms)
-7
+538
 0
 0
-0 to 0
+0 to 1
 6.4
 Human review
 The current report contains 0 distinct rater identifiers and 0 shared cases. This status is an evidence gate, not a
@@ -672,8 +661,6 @@ rating files exist, agreement remains pending and no inter-rater statistic or sc
 pilot, if later supplied, will remain labeled pilot data rather than being silently promoted to two-rater evidence.
 Disagreements require an adjudication record that retains both rater IDs, the final score, rationale, adjudicator, and
 14
-
-![page15_img1.png](images/page15_img1.png)
 
 ## Page 16
 
@@ -711,9 +698,46 @@ Case studies
 7.1
 Math 4 Wisdom
 The canonical Three-Minds target selects one exact page from the Math 4 Wisdom wiki and uses the #wikitext
-extraction boundary [Math 4 Wisdom]. The expanded matrix adds a related exposition bundle and a small research-
-minds bundle. The resulting skills retain source URLs and content hashes, and they state that source-page instruc-
-tions are reference text rather than executable guidance.
+extraction boundary [Math 4 Wisdom, c].
+The expanded matrix adds a related exposition bundle and a small
+research-minds bundle. The resulting skills retain source URLs and content hashes, and they state that source-page
+instructions are reference text rather than executable guidance.
+7.1.1
+Targets derived from a site’s own index
+Hand-listing every page of a large wiki does not scale and invites silent omissions.
+The profile-from-index
+command reads a page the site’s author already maintains as a table of contents, keeps same-origin links under a
+path prefix in document order, and writes one exact-page target per link [Math 4 Wisdom, b]. The derived profiles
+currently hold 528 targets grouped under 42 index sections. Each target keeps the index’s own section label in an
+authored frontmatter description, and the profile records the index URL, retrieval time, and content hash, so the
+selection is itself traceable. Acquisition still goes through the crawler, so robots, origin, and request-budget rules
+apply to the index page as to any other. Block-preserving extraction keeps paragraph and list boundaries for these
+pages; it is opt-in so that earlier profiles keep their cache identities.
+7.1.2
+An authored investigation skill
+Generated skills are deliberately source-bounded: they say what pages state and nothing else. Some uses need more,
+such as checking a proposed mathematical reading of a source. The math4wisdom-cube skill is authored rather
+than generated. It concerns a correspondence proposed in Math 4 Wisdom between a cube’s vertices, edges, and
+faces and three tables of perspectives, together with three “languages” passing between them [Math 4 Wisdom, a].
+The skill keeps four ledgers that are never allowed to stand in for one another: what a source states, what follows
+mathematically, what someone proposes as interpretation, and what could be tested. Each mathematical item is
+recomputed by a standard-library script in the package. The skill is versioned, and its protocol asks independent
+15
+
+## Page 17
+
+investigators to reconstruct the correspondence before reading the skill’s own analysis, to verify and audit every
+identification, and to label their own additions.
+Three investigators audited the first version in separate sessions. None found a failing check. All three independently
+found that the skill had used two different symmetry groups as if they were one, and two found claims credited to
+the wrong source; the revised version records each change against the report that prompted it [Friedman, 2026]. Two
+of the three investigators shared a model family with the skill’s author, and one had not run on the model requested,
+which only its own provenance statement revealed. The convergence is therefore weak evidence of independence. The
+record shows what the ledger structure is for: disagreements arrived as specific, attributable, checkable statements.
+The same discipline applies to the investigators.
+One of their claims, adopted into the revision without being
+recomputed, was later found false; the next version of the skill strikes it through, keeps it visible, and adds a check
+for the corrected statement.
 7.2
 Active Inference Institute
 The canonical Institute-Overview target combines the public homepage, about, active-inference, learning, projects,
@@ -724,7 +748,7 @@ Both examples are snapshots. Retrieval timestamps and hashes are the evidence fo
 not assertions that the websites remain unchanged.
 7.3
 Dated refresh and website inventories
-The completed skill observations span 2026-09-08T19:06:50+00:00 to 2026-09-08T19:07:07+00:00 (UTC). Observa-
+The completed skill observations span 2026-09-08T19:06:50+00:00 to 2026-10-09T19:56:56+00:00 (UTC). Observa-
 tion times identify completed packages; page-level retrieval times in their manifests identify the corresponding source
 acquisitions. A fresh acquisition uses an empty output cache so that an earlier site’s response cannot become evidence
 for today’s refresh.
@@ -736,14 +760,6 @@ active-inference-institute
 899
 899
 0
-15
-
-## Page 17
-
-Website
-Retained HTML pages
-Discovered URLs
-Recorded warnings
 math4wisdom
 890
 1228
@@ -767,6 +783,10 @@ Retrieval, form, and bounded source compilation
 Retrieval-augmented generation makes the generator/evidence separation explicit [Lewis et al., 2020]. Skillarum
 shares that separation with a different artifact boundary: a declarative profile selects pages, a deterministic prepa-
 ration stage records page-local text, and the rendered skill carries URLs, hashes, retrieval times, and warnings.
+16
+
+## Page 18
+
 Retrieval is therefore an acquisition input, not a license to treat every retrieved sentence as an instruction or as
 verified truth.
 This distinction also follows the form/meaning caution in Bender and Koller [Bender and Koller, 2020]. A well-formed
@@ -796,10 +816,6 @@ HTTP/HTML and its output is a document for later agent use.
 SkillWeaver is the closest comparison.
 Its paper and implementation focus on web-agent exploration, practice
 trajectories, skill discovery, and reusable API or browser-agent behavior [OSU-NLP-Group, Zheng et al., 2025].
-16
-
-## Page 18
-
 Skillarum borrows the useful conceptual separation among knowledge, procedure, and verification, but changes the
 object being produced: a portable, source-bounded SKILL.md with a provenance manifest rather than an executable
 web interaction API. Thus the systems are complementary rather than direct baselines. Skillarum does not claim to
@@ -824,6 +840,10 @@ Index construction writes a local discovery file; MCP access is therefore not
 universally read-only. This distinction matters for risk analysis. An MCP tool can cross an execution boundary, while
 a Skillarum package is a static instruction document plus provenance. The shipped adapter exposes maintenance
 functions around that document contract; it is not an interactive browser-agent policy.
+17
+
+## Page 19
+
 8.3
 Provenance, reproducibility, and human evaluation
 The W3C PROV family supplies a vocabulary for entities, activities, and agents that produce artifacts [W3C, 2013].
@@ -855,10 +875,6 @@ The threat model is motivated by work showing that instructions embedded in retr
 integrated applications through indirect prompt injection [Greshake et al., 2023]. Skillarum responds with layered
 controls: source text is delimited and labeled untrusted, source instructions are preserved as evidence rather than
 promoted to generator directives, redirects and origins are constrained, credentials are excluded from manifests, and
-17
-
-## Page 19
-
 generated code is never executed. These controls reduce the attack surface of this static pipeline; they do not prove
 immunity for a downstream agent that later loads the skill or visits the source site.
 Practitioner security guidance reaches a similar conclusion from a different direction. OWASP’s guidance for large
@@ -879,6 +895,10 @@ semantic quality, reduces provider latency, provides complete website coverage, 
 runtime. Those propositions remain hypotheses until an adequately specified evaluation with independent raters,
 repeated runs, and a broader target matrix supplies evidence. The present paper reports implementation contracts,
 reproducible artifact checks, and two deliberately bounded public-source configurations.
+18
+
+## Page 20
+
 9
 Reproducibility, limitations, and future work
 The default path is offline after acquisition caches exist. Deterministic generation requires no credentials or model
@@ -909,10 +929,6 @@ the text: editing a value and recomputing the receipt hash cannot make it agree 
 metadata and mathematical definitions remain explicit declarations; they are not estimated results. The numeric-
 prose guard detects undeclared numerals outside defined syntax exemptions, but cannot establish the meaning or
 truth of a sentence.
-18
-
-## Page 20
-
 The ordered build holds an interprocess lock and compares input hashes before and after generation. A changed
 input prevents a successful receipt. Individual file replacements are atomic; the complete research directory is not
 published as one transaction. A final validation must therefore follow the last output writer, including the renderer
@@ -933,6 +949,10 @@ a. URL https://github.com/ActiveInferenceInstitute/institute_website. Software r
 Active Inference Institute. Active inference institute, b. URL https://activeinference.institute/. Source site, accessed
 2026-09-07.
 Agent Skills. Agent Skills specification. URL https://agentskills.io/specification. Specification, accessed 2026-09-07.
+19
+
+## Page 21
+
 John Attebury. SkillPress: package manager for Agent Skills across IDEs and agent surfaces, 2026. URL https:
 //github.com/attebury/skillpress. Software repository created 2026-07, accessed 2026-09-08.
 Emily M. Bender and Batya Friedman. Data statements for natural language processing: Toward mitigating system
@@ -951,6 +971,9 @@ Bootstrap methods: Another look at the jackknife.
 The Annals of Statistics, 7(1):1–26, 1979.
 doi:
 10.1214/aos/1176344552. URL https://doi.org/10.1214/aos/1176344552.
+Daniel Ari Friedman. Independent investigation of the Math4Wisdom cube correspondence (2026-10-09), 2026. URL
+https://github.com/docxology/Skillarum/tree/main/docs/investigations/2026-10-09-cube. Repository record,
+accessed 2026-10-09.
 Timnit Gebru, Jamie Morgenstern, Briana Vecchione, Jennifer Wortman Vaughan, Hanna Wallach, Hal Daumé III,
 and Kate Crawford. Datasheets for datasets. Communications of the ACM, 64(12):86–92, 2021. doi: 10.1145/34
 58723. URL https://dl.acm.org/doi/10.1145/3458723.
@@ -964,12 +987,12 @@ Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin
 Mike Lewis, Wen-tau Yih, Tim Rocktäschel, Sebastian Riedel, and Douwe Kiela. Retrieval-augmented generation
 for knowledge-intensive NLP tasks. 2020. doi: 10.48550/arXiv.2005.11401. URL https://arxiv.org/abs/2005.11401.
 Accepted at NeurIPS 2020.
-19
-
-## Page 21
-
-Math 4 Wisdom. StoryOfThreeMinds. URL https://www.math4wisdom.com/wiki/Exposition/StoryOfThreeMinds.
-Source page, accessed 2026-09-07.
+Math 4 Wisdom. Research/Overview, a. URL https://www.math4wisdom.com/wiki/Research/Overview. Source
+page, accessed 2026-10-09.
+Math 4 Wisdom. Research/Index, b. URL https://www.math4wisdom.com/wiki/Research/Index. Source page,
+accessed 2026-10-09.
+Math 4 Wisdom. StoryOfThreeMinds, c. URL https://www.math4wisdom.com/wiki/Exposition/StoryOfThreeMi
+nds. Source page, accessed 2026-09-07.
 Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer,
 Inioluwa Deborah Raji, and Timnit Gebru. Model cards for model reporting. In Proceedings of the Conference
 on Fairness, Accountability, and Transparency, pages 220–229, 2019.
@@ -982,6 +1005,10 @@ OSU-NLP-Group. SkillWeaver: Web agents can self-improve by discovering and honin
 .com/OSU-NLP-Group/SkillWeaver. Software repository, accessed 2026-07-14.
 OWASP Gen AI Security Project. OWASP top 10 for large language model applications, 2025. URL https://owasp.
 org/www-project-top-10-for-large-language-model-applications/. Accessed 2026-07-15.
+20
+
+## Page 22
+
 Geir Kjetil Sandve, Anton Nekrutenko, James Taylor, and Einar Hovig. Ten simple rules for reproducible compu-
 tational research. PLOS Computational Biology, 9(10):e1003285, 2013. doi: 10.1371/journal.pcbi.1003285. URL
 https://doi.org/10.1371/journal.pcbi.1003285.
@@ -1019,8 +1046,4 @@ Shuyan Zhou, Frank F. Xu, Hao Zhu, Xuhui Zhou, Robert Lo, Abishek Sridhar, Xiany
 Bisk, Daniel Fried, Uri Alon, and Graham Neubig.
 WebArena: A realistic web environment for building au-
 tonomous agents. 2023. doi: 10.48550/arXiv.2307.13854. URL https://arxiv.org/abs/2307.13854.
-20
-
-
----
-*Extraction method: pymupdf*
+21

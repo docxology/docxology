@@ -13,8 +13,8 @@
   "limits": "Available text and classified passages do not establish full-paper reading or independent verification of cited editions, quotations, historical claims, or scientific findings. Missing or imperfect extractions may hide further references.",
   "count": 23,
   "counts": {
-    "catalog_works": 231,
-    "scanned_full_texts": 208,
+    "catalog_works": 233,
+    "scanned_full_texts": 211,
     "title_matches": 8,
     "core_subjects": 11,
     "additional_text_matches": 15,
@@ -2499,21 +2499,21 @@
       "work_url": "/works/Friedman2026CognitiveIntegrityFrameworkFormal005.html",
       "citation_doi": "10.5281/zenodo.18364118",
       "citation_url": "https://doi.org/10.5281/zenodo.18364118",
-      "record_id": "18364119",
-      "version_doi": "10.5281/zenodo.18364119",
-      "record_url": "https://zenodo.org/records/18364119",
-      "version": "1",
-      "primary_metadata_matched": false,
+      "record_id": "22134544",
+      "version_doi": "10.5281/zenodo.22134544",
+      "record_url": "https://zenodo.org/records/22134544",
+      "version": "2.0",
+      "primary_metadata_matched": true,
       "relation": "quotation",
-      "note": "Opening epigraph attributes Mental Fight to William Blake.",
-      "edition_note": null,
+      "note": "The front-matter epigraph attributes Mental Fight and Sword lines to William Blake. This classifies the located attribution without independently validating the quotation source.",
+      "edition_note": "Current passage review covers the selected Part 1 version 2.0, Zenodo record 22134544. The complete prior review and its independently preserved earlier extraction remain in review_history.",
       "full_text_path": "papers/2026_CognitiveIntegrity/full_text.md",
-      "full_text_sha256": "c51561373f09f05d46bbb90849adc420a4afdadec383ede73fd353a2fe282ace",
+      "full_text_sha256": "3f85285b04dac4b0f77773c0646ec2a7a2d19444ef4c0de619f347ec4a869429",
       "matching_lines": [
-        20
+        815
       ],
       "evidence_lines": [
-        20
+        815
       ],
       "citation_sources_independently_checked": false,
       "title_match": false,
@@ -2824,19 +2824,13 @@
       "record_url": "https://zenodo.org/records/22774403",
       "version": "2.7.0",
       "primary_metadata_matched": true,
-      "relation": "other_person",
-      "note": "Reference is Barry J. Blake on grammatical relations, not William Blake.",
-      "edition_note": null,
+      "relation": "no_match",
+      "note": "No whole-word Blake match occurs in the current selected extraction. The prior Barry J. Blake reference belongs to the retained earlier extraction; this classification does not establish absence from text that extraction may have omitted.",
+      "edition_note": "Current passage review covers version 2.7.0, Zenodo record 22774403. The complete prior review and its independently preserved earlier extraction remain in review_history.",
       "full_text_path": "papers/2026_CognitiveCaseDiagrams/full_text.md",
-      "full_text_sha256": "a198b77ca7241de1b83a7a463a604570c2ac185df7e16afbe545333ef9c3c97d",
-      "matching_lines": [
-        592,
-        948,
-        6397
-      ],
-      "evidence_lines": [
-        592
-      ],
+      "full_text_sha256": "4ec4b2cf12dad61a40a1e28d79c6591a3356a27bb85dc2822817c891a0d8f819",
+      "matching_lines": [],
+      "evidence_lines": [],
       "citation_sources_independently_checked": false
     },
     {

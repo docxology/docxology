@@ -223,11 +223,23 @@ def bib_escape(value: str) -> str:
     return value.replace("\\", "\\\\").replace("{", "\\{").replace("}", "\\}")
 
 
-def bibtex_entry(work: Work, *, contributor_role: str = "author") -> str:
+def bibtex_entry(
+    work: Work,
+    *,
+    contributor_role: str = "author",
+    structured_authors: list[dict] | None = None,
+) -> str:
     entry_type = TYPE_TO_BIBTEX.get(work.type, "misc")
     fields = [
         ("title", work.title),
-        (contributor_role, " and ".join(author_names(work))),
+        (
+            contributor_role,
+            " and ".join(
+                "{" + bib_escape(a["literal"]) + "}" for a in structured_authors
+            )
+            if structured_authors is not None
+            else " and ".join(author_names(work)),
+        ),
         ("year", str(work.year)),
     ]
     if entry_type in {"article", "incollection"} and work.venue:
@@ -249,18 +261,35 @@ def bibtex_entry(work: Work, *, contributor_role: str = "author") -> str:
             ),
         ]
     )
-    body = ",\n".join(f"  {k} = {{{bib_escape(v)}}}" for k, v in fields if v)
+    body = ",\n".join(
+        f"  {k} = {{{v}}}"
+        if k == contributor_role and structured_authors is not None
+        else f"  {k} = {{{bib_escape(v)}}}"
+        for k, v in fields
+        if v
+    )
     return f"@{entry_type}{{{work.citation_key},\n{body}\n}}"
 
 
-def csl_item(work: Work, *, contributor_role: str = "author") -> dict:
+def csl_item(
+    work: Work,
+    *,
+    contributor_role: str = "author",
+    structured_authors: list[dict] | None = None,
+) -> dict:
     authors = author_names(work)
     item = {
         "id": work.citation_key,
         "type": TYPE_TO_CSL.get(work.type, "article-journal"),
         "title": work.title,
         **(
-            {contributor_role: [split_author(name) for name in authors]}
+            {
+                contributor_role: (
+                    [{"literal": a["literal"]} for a in structured_authors]
+                    if structured_authors is not None
+                    else [split_author(name) for name in authors]
+                )
+            }
             if authors
             else {}
         ),
@@ -319,12 +348,16 @@ def render_outputs(
     from docxology_tools.author_entities import (
         load_author_records,
         reviewed_contributor_role,
+        reviewed_literal_authors,
     )
 
     records = load_author_records(REPO_ROOT)
     roles = {
         work.citation_key: reviewed_contributor_role(asdict(work), records)
         for work in works
+    }
+    structured = {
+        w.citation_key: reviewed_literal_authors(asdict(w), records) for w in works
     }
     data_dir = REPO_ROOT / "data"
     works_json = {
@@ -346,7 +379,12 @@ def render_outputs(
     }
     return {
         REPO_ROOT / "bibliography.bib": "\n\n".join(
-            bibtex_entry(w, contributor_role=roles[w.citation_key]) for w in works
+            bibtex_entry(
+                w,
+                contributor_role=roles[w.citation_key],
+                structured_authors=structured[w.citation_key],
+            )
+            for w in works
         )
         + "\n",
         REPO_ROOT / "bibliography.ris": "\n\n".join(
@@ -354,7 +392,14 @@ def render_outputs(
         )
         + "\n",
         REPO_ROOT / "bibliography.csl.json": json.dumps(
-            [csl_item(w, contributor_role=roles[w.citation_key]) for w in works],
+            [
+                csl_item(
+                    w,
+                    contributor_role=roles[w.citation_key],
+                    structured_authors=structured[w.citation_key],
+                )
+                for w in works
+            ],
             indent=2,
             ensure_ascii=False,
         )

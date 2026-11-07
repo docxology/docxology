@@ -83,8 +83,7 @@ def zenodo_url(description_raw: str) -> str:
     """Return a catalog's canonical Zenodo citation link when one is labelled.
 
     A software row can intentionally contain both a citation DOI and a
-    version-specific artifact DOI.  The generic exported ``zenodo_url`` and
-    JSON-LD ``sameAs`` field represent the citation identity, so an explicit
+    version-specific artifact DOI.  The generic exported ``zenodo_url`` field represents the citation identity, so an explicit
     ``Citation DOI`` / ``Canonical DOI`` label wins even when the artifact is
     listed first for download convenience.
     """
@@ -102,6 +101,20 @@ def zenodo_url(description_raw: str) -> str:
     if m and "zenodo" in description_raw.lower():
         return f"https://doi.org/{m.group(1).rstrip(').,')}"
     return ""
+
+
+def software_archive_url(description_raw: str) -> str:
+    """Select explicitly labelled software identity for SoftwareSourceCode.
+
+    Citation consumers keep zenodo_url's established paper-citation priority.
+    Without an explicit software archive/DOI label, retain the legacy fallback.
+    """
+    for label, url in MARKDOWN_LINK_RE.findall(description_raw):
+        if re.search(r"\bsoftware\s+(?:archive|doi)\b", label, re.I) and _is_zenodo_url(
+            url
+        ):
+            return url.rstrip(").,")
+    return zenodo_url(description_raw)
 
 
 def _doi_from_resolver_url(url: str) -> str:

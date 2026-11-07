@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-05T01:59:59Z",
+  "generated_at": "2026-11-07T01:43:25Z",
   "source": "data/works.json",
   "summary": {
     "no_paper_folder": 17,
-    "no_full_text": 23,
+    "no_full_text": 22,
     "no_doi": 16,
     "no_canonical_url": 2,
-    "non_paper_record": 21
+    "non_paper_record": 22
   },
   "exceptions": [
     {
@@ -489,14 +489,14 @@
       "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
     },
     {
-      "num": 232,
-      "citation_key": "Friedman2026GNNBasedActiveInference232",
-      "title": "GNN-based active inference for Battleship",
-      "type": "Paper",
+      "num": 237,
+      "citation_key": "Friedman20262026ActiveInferenceSymposium237",
+      "title": "2026 Active Inference Symposium — Presenter Program",
+      "type": "Book",
       "reasons": [
-        "no_full_text"
+        "non_paper_record"
       ],
-      "review_status": "needs_review",
+      "review_status": "legitimate_gap",
       "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
     }
   ]

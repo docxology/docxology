@@ -3,6 +3,9 @@
     'use strict';
     const $ = id => document.getElementById(id);
     if (!$('map-app')) return;
+    const kinds = ['work', 'person', 'organization', 'contributor', 'software', 'domain'];
+    const kindLabel = kind => kind === 'contributor' ? 'contributor label' : kind;
+    const graphVersion = new URL(document.currentScript.src, location.origin).searchParams.get('v') || '1';
     const status = message => { $('map-status').textContent = message; };
     const make = (tag, text, attrs = {}) => {
         const node = document.createElement(tag); if (text !== undefined) node.textContent = text;
@@ -30,7 +33,7 @@
         for (const p of points) svg.appendChild(element('line', {x1: 400, y1: 250, x2: p.x, y2: p.y, class: 'graph-edge'}));
         const drawNode = (node, x, y, center = false) => {
             const url = new URL('/research-map.html', location.origin); url.searchParams.set('node', node.id);
-            const anchor = element('a', {href: url.pathname + url.search, 'aria-label': `Explore ${node.kind}: ${node.label}`});
+            const anchor = element('a', {href: url.pathname + url.search, 'aria-label': `Explore ${kindLabel(node.kind)}: ${node.label}`});
             anchor.appendChild(element('circle', {cx: x, cy: y, r: center ? 20 : 12, class: 'graph-node ' + node.kind}));
             const text = element('text', {x, y: y + 34, 'text-anchor': 'middle'}); text.textContent = node.label.length > 22 ? node.label.slice(0, 20) + '…' : node.label; anchor.appendChild(text);
             anchor.addEventListener('click', event => { if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return; event.preventDefault(); focusNode(node.id); }); svg.appendChild(anchor);
@@ -40,48 +43,63 @@
     }
     function show(message = '') {
         $('map-connections').replaceChildren();
-        if (!selected) { $('research-map-svg').replaceChildren(); $('map-title').textContent = 'No matching nodes'; $('map-summary').textContent = ''; $('map-more').hidden = true; status('No nodes match these controls.'); return; }
+        if (!selected) { $('research-map-svg').replaceChildren(); $('map-title').textContent = 'No matching nodes'; $('map-summary').textContent = ''; $('map-more').hidden = true; status(message || 'No nodes match these controls.'); return; }
         const node = nodes.get(selected); const connections = neighbors.get(selected);
         $('map-title').textContent = node.label;
-        $('map-summary').textContent = `${node.kind} · ${connections.length} recorded connection(s).`;
+        $('map-summary').textContent = `${kindLabel(node.kind)} · ${connections.length} recorded connection(s).`;
         diagram(connections);
         for (const edge of connections.slice(0, limit)) {
             const other = nodes.get(edge.other), row = make('li');
             const button = make('button', other.label, {type: 'button', class: 'connection-focus'}); button.addEventListener('click', () => focusNode(other.id)); row.appendChild(button);
-            row.appendChild(make('p', `${other.kind} · ${edge.relation}. Source: ${edge.provenance}`));
-            if (other.url) row.appendChild(make('a', 'Open ' + other.kind + ' resource', {href: safeURL(other.url)}));
+            row.appendChild(make('p', `${kindLabel(other.kind)} · ${edge.relation}. Source: ${edge.provenance}`));
+            if (other.url) row.appendChild(make('a', 'Open ' + kindLabel(other.kind) + ' resource', {href: safeURL(other.url)}));
             $('map-connections').appendChild(row);
         }
         $('map-more').hidden = connections.length <= limit;
         status(message || `Showing ${Math.min(limit, connections.length)} of ${connections.length} connections. The diagram shows up to twelve.`);
     }
-    function choices(preferred = selected) {
+    function choices(preferred = selected, allowFallback = true, message = '') {
         const q = $('map-search').value.toLocaleLowerCase().trim(), kind = $('map-kind').value;
         const matches = [...nodes.values()].filter(n => (kind === 'all' || n.kind === kind) && n.label.toLocaleLowerCase().includes(q));
         const select = $('map-node'); select.replaceChildren();
-        for (const node of matches) select.appendChild(make('option', `${node.kind} — ${node.label}`, {value: node.id}));
-        selected = matches.some(n => n.id === preferred) ? preferred : matches[0]?.id || '';
-        select.value = selected; limit = 40; show();
+        for (const node of matches) select.appendChild(make('option', `${kindLabel(node.kind)} — ${node.label}`, {value: node.id}));
+        selected = matches.some(n => n.id === preferred) ? preferred : (allowFallback ? matches[0]?.id || '' : '');
+        select.value = selected; limit = 40; show(message);
     }
     function focusNode(id) {
         $('map-search').value = ''; $('map-kind').value = 'all'; choices(id); writeURL(); $('map-title').tabIndex = -1; $('map-title').focus();
     }
     function restore() {
         const p = new URLSearchParams(location.search), kind = p.get('kind') || 'all';
-        $('map-kind').value = ['all', 'work', 'person', 'software', 'domain'].includes(kind) ? kind : 'all';
+        $('map-kind').value = ['all', ...kinds].includes(kind) ? kind : 'all';
         $('map-search').value = (p.get('q') || '').slice(0, 300);
-        const wanted = p.get('node') || [...nodes.values()].find(n => n.kind === 'domain')?.id;
-        choices(wanted);
-        if (p.has('node') && !nodes.has(p.get('node'))) status('Unknown map node in URL. Choose a recorded node from the controls.');
+        let wanted = p.get('node') || [...nodes.values()].find(n => n.kind === 'domain')?.id;
+        let message = '', allowFallback = !p.has('node');
+        if (p.has('node') && !nodes.has(wanted)) {
+            const suffix = wanted?.startsWith('person:') ? wanted.slice('person:'.length) : null;
+            const aliases = suffix === null ? [] : ['organization:', 'contributor:']
+                .map(prefix => nodes.get(prefix + suffix)).filter(Boolean);
+            if (aliases.length === 1) {
+                wanted = aliases[0].id;
+                if (kind === 'person') $('map-kind').value = aliases[0].kind;
+            } else {
+                wanted = '';
+                if (aliases.length > 1) {
+                    $('map-kind').value = 'all';
+                    message = 'Ambiguous legacy contributor link. Choose a recorded node from the controls.';
+                } else message = 'Unknown map node in URL. Choose a recorded node from the controls.';
+            }
+        }
+        choices(wanted, allowFallback, message);
     }
     async function start() {
         $('map-retry').hidden = true;
         try {
-            const response = await fetch('/data/research-map.json?v=1', {cache: 'no-store'});
+            const response = await fetch('/data/research-map.json?v=' + encodeURIComponent(graphVersion), {cache: 'no-store'});
             if (!response.ok) throw new Error('Graph HTTP ' + response.status);
             const data = await response.json();
             if (data.schema_version !== 1 || !Array.isArray(data.nodes) || !Array.isArray(data.edges)) throw new Error('Invalid graph schema.');
-            if (data.nodes.some(n => !n || typeof n.id !== 'string' || !['work', 'person', 'software', 'domain'].includes(n.kind) || typeof n.label !== 'string' || typeof n.url !== 'string')) throw new Error('Invalid graph node.');
+            if (data.nodes.some(n => !n || typeof n.id !== 'string' || !kinds.includes(n.kind) || typeof n.label !== 'string' || typeof n.url !== 'string')) throw new Error('Invalid graph node.');
             nodes = new Map(data.nodes.map(n => [n.id, n]));
             if (!nodes.size || nodes.size !== data.nodes.length) throw new Error('Empty or duplicate graph nodes.');
             nodes.forEach(n => safeURL(n.url));

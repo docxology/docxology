@@ -16,6 +16,11 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 from docxology_tools.research_connections import graph_catalog, valid_key  # noqa: E402
+from docxology_tools.author_entities import (  # noqa: E402
+    load_author_records,
+    reviewed_literal_authors,
+    verified_author_types,
+)
 from docxology_tools.site_nav import (  # noqa: E402
     INTERACTIVE_SCRIPTS,
     MENU_ESC_SCRIPT,
@@ -30,6 +35,7 @@ from export_bibliography import source_paths  # noqa: E402
 from export_bibliography import Work, csl_item, ris_record  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+RESEARCH_MAP_VERSION = "credit-types-20261106"
 ROUTES = (
     ("collections", "Reading lists"),
     ("trails", "Research trails"),
@@ -66,6 +72,7 @@ def page(
     head = head.replace(
         "</head>", '<link rel="stylesheet" href="/css/research-tools.css?v=1">\n</head>'
     )
+    script_version = RESEARCH_MAP_VERSION if script == "research-map.js" else "1"
     tools_nav = " · ".join(
         f'<a href="/{key}.html"'
         + (' aria-current="page"' if key == slug else "")
@@ -83,7 +90,7 @@ def page(
 </main><footer><p><a href="/publications.html">Bibliography</a> · <a href="/exports.html">Citation exports</a> · <a href="/evidence.html">Evidence and source limits</a></p>{footer_build_stamp_html()}</footer>
 {INTERACTIVE_SCRIPTS}
 {MENU_ESC_SCRIPT}
-{f'<script src="/js/{script}?v=1" defer></script>' if script else ""}
+{f'<script src="/js/{script}?v={script_version}" defer></script>' if script else ""}
 </body></html>\n'''
     )
 
@@ -108,9 +115,9 @@ def map_content(works: list[dict]) -> str:
         f'<li><a href="/publications.html?domain={h(next(w["domain"] for w in works if w["domain_name"] == name))}">{h(name)}</a></li>'
         for name in domains
     )
-    return f"""<p>Explore recorded authorship, catalog domains and associated software. These are metadata relationships, not citation links or causal claims. Author nodes group exact normalized names; homonyms may be grouped and spelling variants remain separate.</p>
+    return f"""<p>Explore recorded authorship, catalog domains and associated software. These are metadata relationships, not citation links or causal claims. Contributor nodes group exact normalized labels within each recorded entity type; homonyms may be grouped and spelling variants remain separate.</p>
 <details><summary>Browse domains without the interactive map</summary><ul>{fallback}</ul></details>
-<fieldset id="map-app" class="tool-app" disabled aria-busy="true"><legend>Research-map explorer</legend><div class="tool-toolbar"><label for="map-search">Find a node<input type="search" id="map-search" maxlength="300"></label><label for="map-kind">Node type<select id="map-kind"><option value="all">All types</option><option value="work">Works</option><option value="person">People</option><option value="software">Software</option><option value="domain">Domains</option></select></label><label for="map-node">Matching nodes<select id="map-node"></select></label></div>
+<fieldset id="map-app" class="tool-app" disabled aria-busy="true"><legend>Research-map explorer</legend><div class="tool-toolbar"><label for="map-search">Find a node<input type="search" id="map-search" maxlength="300"></label><label for="map-kind">Node type<select id="map-kind"><option value="all">All types</option><option value="work">Works</option><option value="person">People</option><option value="organization">Organizations</option><option value="contributor">Contributor labels</option><option value="software">Software</option><option value="domain">Domains</option></select></label><label for="map-node">Matching nodes<select id="map-node"></select></label></div>
 <h2 id="map-title">Connections</h2><p id="map-summary"></p><svg id="research-map-svg" viewBox="0 0 800 500" role="img" aria-label="Selected node and up to twelve adjacent nodes; the complete connections are listed below"></svg>
 <p>The diagram shows up to twelve neighbors. The list below reaches every recorded connection.</p><ul id="map-connections" class="connection-list"></ul><button type="button" id="map-more" hidden>Show more connections</button><p><a href="/data/research-map.json" download>Download the complete graph JSON</a></p></fieldset>
 <p id="map-status" role="status">Loading the research map…</p><button type="button" id="map-retry" hidden>Retry map</button>"""
@@ -208,13 +215,16 @@ def render_outputs() -> dict[Path, str]:
     trails = resolve_trails(source, works, videos, software)
     citations = load_bibtex_entries()
     allowed = {field.name for field in fields(Work)}
-    records, repositories = [], {}
+    records, repositories, author_types = [], {}, {}
+    authors = load_author_records(REPO_ROOT)
     visible = source_paths(REPO_ROOT)
     for work in works:
         if not valid_key(work["citation_key"]) or work["citation_key"] not in citations:
             raise ValueError("Missing or invalid citation: " + work["citation_key"])
         parsed = Work(**{key: value for key, value in work.items() if key in allowed})
         role = work.get("contributor_role", "author")
+        literal_authors = reviewed_literal_authors(work, authors)
+        author_types[work["citation_key"]] = verified_author_types(work, authors)
         records.append(
             {
                 "key": work["citation_key"],
@@ -224,7 +234,9 @@ def render_outputs() -> dict[Path, str]:
                 "url": "/works/" + work["citation_key"] + ".html",
                 "bib": citations[work["citation_key"]],
                 "ris": ris_record(parsed, contributor_role=role),
-                "csl": csl_item(parsed, contributor_role=role),
+                "csl": csl_item(
+                    parsed, contributor_role=role, structured_authors=literal_authors
+                ),
             }
         )
         resources = PaperResources.load(REPO_ROOT, work.get("docs_path", ""), visible)
@@ -246,7 +258,7 @@ def render_outputs() -> dict[Path, str]:
         ),
         "research-map": (
             "Research map",
-            "Explore the people, domains and software connected to the publication catalog.",
+            "Explore the contributors, domains and software connected to the publication catalog.",
             map_content(works),
             "research-map.js",
         ),
@@ -262,7 +274,7 @@ def render_outputs() -> dict[Path, str]:
     }
     for name, payload in (
         ("collection-catalog", {"schema_version": 1, "works": records}),
-        ("research-map", graph_catalog(works, repositories)),
+        ("research-map", graph_catalog(works, repositories, author_types=author_types)),
         ("research-trails", {"schema_version": 1, "trails": trails}),
     ):
         outputs[REPO_ROOT / "data" / (name + ".json")] = (

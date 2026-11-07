@@ -8,6 +8,8 @@ A verification result is useful only with the question it addresses. The reposit
 | --- | --- | --- |
 | Reviewed identity: [bibliography](../../pages/BIBLIOGRAPHY.md) and [reservations](../../data/work-identifiers.json) | Curated row, stable key and explicit review history | No complete external-index or scientific-quality claim |
 | Selected PDF edition: [resolver](../../code/src/paper_artifacts.py) | Exact object fields and independent per-paper source evidence | A declaration is not a remote fetch, extraction audit or rights determination |
+| Exact pair review: [pairing policy](../../code/src/publication_pairing.py) | Immutable record, complete normalized manifest hash and original review evidence | Concept identity or a cached status alone cannot approve a changed edition |
+| Literal credits: [author authority](../../code/src/author_entities.py) | Ordered labels, frozen registry/document evidence and separate refresh observation | A grouped label does not establish individual identity or an inferred contributor role |
 | Source/projection agreement: [generation plan](../../code/src/generation_plan.py) | Declared writer, inputs and independent no-write check | No fresh remote observation or live-byte proof |
 | Dated metrics: [Scholar snapshot](../../data/scholar-snapshot.json) and [receipt](../../data/scholar-verification-receipt.json) | Direct authenticated observation bound to exact snapshot bytes | No continuously current metric or research-quality assessment |
 | Tested behavior: [tests](../../code/tests/) and [QA](../../reports/) | Runtime, selected scenarios, source binding and failures | No coverage of every device, network or assistive technology |
@@ -26,6 +28,10 @@ The implemented design is evaluated through contract tests and candidate-bound g
 | --- | --- | --- |
 | Paginated intake | Distinct records exactly satisfy the observed total | Truncated, duplicate, malformed or changing pages refuse |
 | Edition/byline binding | Reviewed edition and evidence hashes agree | Changed evidence or mismatched document/registry baseline refuses |
+| Cached pair review | The durable ledger agrees with the exact observed edition | Changed record, manifest or ambiguous concept observations refuse |
+| Literal exports and DOI roles | Ordered credits and distinct paper/software identifiers agree | Drifted authority or substitution of a paper DOI for an explicit software archive fails |
+| Research credit consumers | Selected CSL and work-specific map types preserve reviewed credits | Invalid authority, unknown explicit type or ambiguous legacy identity refuses |
+| Generation invalidation | A warm cache rebuilds after an authority-only input change | A stale output cannot retain a cache hit when its declared authority changes |
 | Archive routing | Local bytes agree with the pinned committed object | Source drift or a surviving local download reference refuses |
 | Stable discovery | Reserved work identity resolves in generated exports | Missing identity or unresolved trail/citation reference fails |
 | Deployment acceptance | Expected source/run and declared object contracts agree | Stale revision, absent critical entry or mismatched fetched bytes fails |

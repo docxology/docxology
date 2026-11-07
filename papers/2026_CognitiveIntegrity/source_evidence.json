@@ -1,0 +1,253 @@
+{
+  "schema_version": "1.0",
+  "source_pdf": {
+    "record_id": "22134544",
+    "concept_doi": "10.5281/zenodo.18364118",
+    "artifact_doi": "10.5281/zenodo.22134544",
+    "version": "2.0",
+    "url": "https://zenodo.org/api/records/22134544/files/cogsec_multiagent_1_theory_combined.pdf/content",
+    "name": "cogsec_multiagent_1_theory_combined.pdf",
+    "bytes": 1649309,
+    "sha256": "a97b33c3c41784f706276f714659a777d939cd07d3a07a03c52c3cd3fd5f222d",
+    "md5": "84ac1407621721204444fd6529bb2823",
+    "pages": 133,
+    "storage": "remote primary; acquired review copy retained privately"
+  },
+  "extraction": {
+    "file": "full_text.md",
+    "sha256": "3f85285b04dac4b0f77773c0646ec2a7a2d19444ef4c0de619f347ec4a869429",
+    "source_pdf_sha256": "a97b33c3c41784f706276f714659a777d939cd07d3a07a03c52c3cd3fd5f222d",
+    "tool": "PyMuPDF 1.28.2",
+    "method": "All 133 pages extracted in document order with page markers. No OCR or new image extraction."
+  },
+  "registry_observation": {
+    "record_id": "22134544",
+    "doi": "10.5281/zenodo.22134544",
+    "conceptdoi": "10.5281/zenodo.18364118",
+    "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
+    "publication_date": "2026-08-26",
+    "version": "2.0",
+    "creators": [
+      {
+        "name": "Friedman, Daniel Ari",
+        "affiliation": "Active Inference Institute",
+        "orcid": "0000-0001-6232-9096"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "record_json_sha256": "fdde398f180861dbf3381937440c19b91187b97ca6ac1ba45d1661b414a8fe3d",
+    "record_json_serialization": "UTF-8 canonical JSON, sort_keys=True, separators comma/colon, ensure_ascii=False; exact record from the frozen paginated primary acquisition."
+  },
+  "document_observation": {
+    "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
+    "byline": [
+      "Friedman, Daniel Ari"
+    ],
+    "affiliation": "Active Inference Institute",
+    "orcid": "0000-0001-6232-9096",
+    "cover_text_sha256": "6db63a6a5f1eec596aadc89cb3c77b12beea9c27a6201f8ac972d4eff56b5d48",
+    "review_scope": "Root and curator source-text title/byline review; no full-document visual or scientific approval."
+  },
+  "historical_sources": [
+    {
+      "file": "full_text_before_2026-11-06.md",
+      "sha256": "c51561373f09f05d46bbb90849adc420a4afdadec383ede73fd353a2fe282ace",
+      "edition": "Retained extraction before 2026-11-06; version record not inferred",
+      "binding_basis": "Original extraction header and measured retained local bytes; no historical version ID inferred.",
+      "source_pdf": "2026_CognitiveIntegrity.pdf",
+      "source_pdf_sha256": "fc85eb88cd534afd39aaa3e962f2e04b8fc4d47a0c8508d65dd0ee069876cd28",
+      "source_pdf_bytes": 931657
+    }
+  ],
+  "retained_local_pdfs": [
+    {
+      "file": "2026_CognitiveIntegrity.pdf",
+      "bytes": 931657,
+      "sha256": "fc85eb88cd534afd39aaa3e962f2e04b8fc4d47a0c8508d65dd0ee069876cd28",
+      "relationship": "retained local PDF; version record not inferred"
+    }
+  ],
+  "historical_curation": {
+    "folder_metadata_preimage_sha256": "47a1d19714f971f0b8955c5299c27c8820b20d7c3b647a58383bd7152e6f25ba",
+    "folder_metadata": {
+      "title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security",
+      "version": "1",
+      "doi": "10.5281/zenodo.18364118",
+      "doi_url": "https://doi.org/10.5281/zenodo.18364118",
+      "zenodo_record": "https://zenodo.org/records/18364118",
+      "record_id": "18364119",
+      "publication_date": "2026-01-28",
+      "resource_type": {
+        "title": "Publication",
+        "type": "publication"
+      },
+      "creators": [
+        {
+          "name": "Friedman, Daniel Ari",
+          "affiliation": null,
+          "orcid": "0000-0001-6232-9096"
+        }
+      ],
+      "description": "Multiagent AI systems introduce cognitive attack surfaces absent in single-model inference. When agents delegate to agents, forming beliefs about beliefs through recursive trust hierarchies, manipulation of reasoning processes&mdash;rather than mere data corruption&mdash;becomes a primary security concern. This paper presents the Cognitive Integrity Framework (CIF), providing formal foundations for cognitive security in multiagent operators. We develop four interconnected theoretical contributions: a Trust Calculus with bounded delegation (exponential 𝛿𝑑 decay) that prevents trust amplification through delegation chains; a Defense Composition Algebra with series and parallel composition theorems establishing multiplicative detection bounds; Information-Theoretic Limits relating stealth constraints to maximum attack impact through a fundamental stealth-impact tradeoff; and a formal Adversary Hierarchy (&Omega;1&ndash;&Omega;5) characterizing external, peripheral, agent-level, coordination, and systemic threats with increasing capability and decreasing detectability. The framework provides complete coverage of the OWASP Top 10 for Agentic Applications through formal threat models grounded in cognitive state manipulation rather than traditional input/output filtering. CIF bridges classical security concepts with the cognitive requirements of agentic systems. We extend Byzantine fault tolerance to cognitive manipulation&mdash;agents that appear functional but hold corrupted beliefs&mdash;and adapt trust management systems to continuous trust evolution with provable decay bounds. The framework formalizes five architectural defense mechanisms (cognitive firewalls, belief sandboxing, behavioral tripwires, provenance tracking, Byzantine consensus) with composition rules enabling formal reasoning about layered security. Technical foundations include: operational semantics for message passing and trust updates; invariants for belief integrity, goal preservation, and trust boundedness; model checking configurations for safety property verification; and a complete notation system for attack parameterization, defense specification, and cognitive state representation. This is Part 1 of a three-part series: Part 1 (this paper, DOI: 10.5281/zenodo.18364119) presents formal foundations and theoretical analysis; Part 2 (DOI: 10.5281/zenodo.18364128) provides computational validation and implementation; Part 3 (DOI: 10.5281/zenodo.18364130) offers practical deployment guidance. The framework will continue to be developed and versioned at https://github.com/docxology/cognitive_integrity/ .",
+      "keywords": [
+        "Cognitive Security",
+        "Multiagent"
+      ],
+      "files": [
+        {
+          "name": "CogSec_MultiAgent_1_theory_DAF_Jan-28-2026.pdf",
+          "size_bytes": 931657,
+          "checksum": "md5:34baacc1f498f131a52f7f7c10516b4f",
+          "download_url": "https://zenodo.org/api/records/18364119/files/CogSec_MultiAgent_1_theory_DAF_Jan-28-2026.pdf/content"
+        },
+        {
+          "name": "CogSec_MultiAgent_1_theory_DAF_Jan-28-2026.tex",
+          "size_bytes": 274319,
+          "checksum": "md5:070633c7331f9741f24eb55f0a6651e9",
+          "download_url": "https://zenodo.org/api/records/18364119/files/CogSec_MultiAgent_1_theory_DAF_Jan-28-2026.tex/content"
+        }
+      ],
+      "related_resources": [],
+      "github_repo": "",
+      "source": "zenodo-only",
+      "checked_at": "2026-06-30T23:26:08Z",
+      "domain": "Cognitive Security",
+      "type": "Paper",
+      "methods": [
+        {
+          "name": "Trust Calculus with bounded, exponentially decaying delegation",
+          "description": "Formalizes delegated trust with decay factor δ per delegation step and proves bounds by induction on chain depth.",
+          "evidence": "a Trust Calculus with bounded dele- gation (exponential 𝛿𝑑decay) that prevents trust amplification through delegation chains"
+        },
+        {
+          "name": "Defense Composition Algebra (series/parallel detection)",
+          "description": "Derives detection rates for series and parallel composition of defenses, assuming independent detection events.",
+          "evidence": "Proof. Attack detected by first defense, or passes first and detected by second. Events are independent by design."
+        },
+        {
+          "name": "Information-theoretic attack/detection bounds",
+          "description": "Relates attack entropy, mutual information with detector output, and channel capacity to bound detection rate and attack impact.",
+          "evidence": "Information-Theoretic Limits relating stealth constraints to maximum attack impact through a fundamen- tal stealth-impact tradeoff"
+        },
+        {
+          "name": "Five-class adversary hierarchy (Ω1–Ω5)",
+          "description": "Defines external, peripheral, agent-level, coordination, and systemic adversary classes and maps them to multiagent architectures and OWASP Agentic Top 10.",
+          "evidence": "a formal Adversary Hierarchy (Ω1–Ω5) characterizing external, peripheral, agent-level, coordination, and systemic threats with increasing capability and decreasing detectability."
+        },
+        {
+          "name": "Operational semantics, invariants, and model-checking configurations",
+          "description": "Specifies operational semantics for message passing and trust updates, belief/goal/trust invariants, and model-checking setups for safety properties.",
+          "evidence": "Technical foundations include: operational semantics for message passing and trust updates; invariants for belief integrity, goal preservation, and trust boundedness; model checking configurations for safety property verification"
+        }
+      ],
+      "key_findings": [
+        "Trust Boundedness theorem: delegated trust over a chain of depth d is at most δ^d, so trust cannot be amplified and vanishes exponentially with depth.",
+        "The paper states a stealth-impact tradeoff as a theorem: high-impact attacks are easier to detect, while stealthy attacks have limited effect.",
+        "The framework formalizes five architectural defenses with composition rules for reasoning about layered security.",
+        "The author notes guarantees depend on assumptions (honest orchestrator, n ≥ 3f+1, authenticated channels) and that the O(n²) trust matrix limits deployment to moderate agent counts.",
+        "Semantic-equivalence attacks, sub-threshold progressive drift, and orchestrator compromise are identified as formally difficult to detect."
+      ],
+      "related_papers": [
+        "2020_EmergentTeams",
+        "2020_FacilitatorsCatechism",
+        "2020_GreatPreset"
+      ],
+      "key_findings_evidence": [
+        "Corollary 4.3. Trust cannot be amplified through delegation chains. Corollary 4.4. Trust vanishes exponentially",
+        "The following theorem captures the fundamental tradeoff facing attackers: high-impact attacks are easier to detect, while stealthy attacks have limited effect.",
+        "The framework formalizes five architectural defense mechanisms (cognitive firewalls, belief sandboxing, be- havioral tripwires, provenance tracking, Byzantine consensus) with composition rules",
+        "The quadratic trust matrix (Equation (141)) limits practical deployment to systems with moderate agent counts.",
+        "These are not implementation failures but formal limitations of the detection paradigm."
+      ],
+      "summary_provenance": {
+        "source": "full_text.md",
+        "date": "2026-10-01",
+        "work_kind": "theoretical",
+        "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+        "notes": "Part 1 of 3 (formal foundations only); computational validation is deferred to Part 2 and deployment to Part 3, so findings are theorems and stated limits rather than empirical results. The abstract's claim of 'complete coverage of the OWASP Top 10 for Agentic Applications' is the paper's own mapping claim and was not independently verified here.",
+        "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+      },
+      "abstract": "Multiagent AI systems introduce cognitive attack surfaces absent in single-model inference. When agents delegate to agents, forming beliefs about beliefs through recursive trust hierarchies, manipulation of reasoning processes—rather than mere data corruption—becomes a primary security concern. This paper presents the Cognitive Integrity Framework (CIF), providing formal foundations for cognitive security in multiagent operators. We develop four interconnected theoretical contributions: a Trust Calculus with bounded delegation (exponential 𝛿𝑑 decay) that prevents trust amplification through delegation chains; a Defense Composition Algebra with series and parallel composition theorems establishing multiplicative detection bounds; Information-Theoretic Limits relating stealth constraints to maximum attack impact through a fundamental stealth-impact tradeoff; and a formal Adversary Hierarchy (Ω1–Ω5) characterizing external, peripheral, agent-level, coordination, and systemic threats with increasing capability and decreasing detectability. The framework provides complete coverage of the OWASP Top 10 for Agentic Applications through formal threat models grounded in cognitive state manipulation rather than traditional input/output filtering. CIF bridges classical security concepts with the cognitive requirements of agentic systems. We extend Byzantine fault tolerance to cognitive manipulation—agents that appear functional but hold corrupted beliefs—and adapt trust management systems to continuous trust evolution with provable decay bounds. The framework formalizes five architectural defense mechanisms (cognitive firewalls, belief sandboxing, behavioral tripwires, provenance tracking, Byzantine consensus) with composition rules enabling formal reasoning about layered security. Technical foundations include: operational semantics for message passing and trust updates; invariants for belief integrity, goal preservation, and trust boundedness; model checking configurations for safety property verification; and a complete notation system for attack parameterization, defense specification, and cognitive state representation. This is Part 1 of a three-part series: Part 1 (this paper, DOI: 10.5281/zenodo.18364119) presents formal foundations and theoretical analysis; Part 2 (DOI: 10.5281/zenodo.18364128) provides computational validation and implementation; Part 3 (DOI: 10.5281/zenodo.18364130) offers practical deployment guidance. The framework will continue to be developed and versioned at https://github.com/docxology/cognitive_integrity/ .",
+      "abstract_provenance": {
+        "source": "papers/paper_metadata.json",
+        "date": "2026-10-01",
+        "basis": "Zenodo description checked against the document"
+      }
+    },
+    "master_metadata": {
+      "year": "2026",
+      "topic": "CognitiveIntegrity",
+      "name": "CognitiveIntegrity",
+      "description": "The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems. Part 1 of 3 covers theore...",
+      "authors": "Daniel Ari Friedman",
+      "abstract": "Multiagent AI systems introduce cognitive attack surfaces absent in single-model inference. When agents delegate to agents, forming beliefs about beliefs through recursive trust hierarchies, manipulation of reasoning processes—rather than mere data corruption—becomes a primary security concern. This paper presents the Cognitive Integrity Framework (CIF), providing formal foundations for cognitive security in multiagent operators. We develop four interconnected theoretical contributions: a Trust Calculus with bounded delegation (exponential 𝛿𝑑 decay) that prevents trust amplification through delegation chains; a Defense Composition Algebra with series and parallel composition theorems establishing multiplicative detection bounds; Information-Theoretic Limits relating stealth constraints to maximum attack impact through a fundamental stealth-impact tradeoff; and a formal Adversary Hierarchy (Ω1–Ω5) characterizing external, peripheral, agent-level, coordination, and systemic threats with increasing capability and decreasing detectability. The framework provides complete coverage of the OWASP Top 10 for Agentic Applications through formal threat models grounded in cognitive state manipulation rather than traditional input/output filtering. CIF bridges classical security concepts with the cognitive requirements of agentic systems. We extend Byzantine fault tolerance to cognitive manipulation—agents that appear functional but hold corrupted beliefs—and adapt trust management systems to continuous trust evolution with provable decay bounds. The framework formalizes five architectural defense mechanisms (cognitive firewalls, belief sandboxing, behavioral tripwires, provenance tracking, Byzantine consensus) with composition rules enabling formal reasoning about layered security. Technical foundations include: operational semantics for message passing and trust updates; invariants for belief integrity, goal preservation, and trust boundedness; model checking configurations for safety property verification; and a complete notation system for attack parameterization, defense specification, and cognitive state representation. This is Part 1 of a three-part series: Part 1 (this paper, DOI: 10.5281/zenodo.18364119) presents formal foundations and theoretical analysis; Part 2 (DOI: 10.5281/zenodo.18364128) provides computational validation and implementation; Part 3 (DOI: 10.5281/zenodo.18364130) offers practical deployment guidance. The framework will continue to be developed and versioned at https://github.com/docxology/cognitive_integrity/ .",
+      "keywords": [
+        "cognitive integrity",
+        "multiagent security",
+        "cognitive security",
+        "Active Inference",
+        "category theory",
+        "formal foundations",
+        "threat modeling"
+      ]
+    },
+    "current_quote_presence_against_old_items": {
+      "methods": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "key_findings_evidence": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    "scope": "Complete prior values retained as historical source/prose. Old version identifiers in metadata are observations, not inferred bindings of old PDF/image bytes."
+  },
+  "current_summary_review": {
+    "summary_provenance": {
+      "source": "full_text.md",
+      "date": "2026-11-06",
+      "source_pdf_sha256": "a97b33c3c41784f706276f714659a777d939cd07d3a07a03c52c3cd3fd5f222d",
+      "source_text_sha256": "3f85285b04dac4b0f77773c0646ec2a7a2d19444ef4c0de619f347ec4a869429",
+      "selected_record_id": "22134544",
+      "work_kind": "theoretical",
+      "method": "AI-assisted review of the selected deposited abstract, quoted passages and stated limitations. Every current method/finding quote is mechanically present in the selected extraction. This is source-text support, not new computational, mathematical, scientific or human verification.",
+      "reviewed_by": "Codex AI-assisted public-source curator",
+      "reviewed_at": "2026-11-06T19:09:15Z",
+      "historical_summary": "Complete prior folder metadata and master prose are preserved in source_evidence.json beside the retained historical extraction."
+    },
+    "old_items_retained": false,
+    "scope": "Only text-supported current statements retained; paper-reported counts/results are not fresh reproduction."
+  },
+  "release_reference_review": {
+    "retained_reference_before_refresh": {
+      "github_repo": ""
+    },
+    "selected_reference_scope": "Existing GitHub release fields are retained source references; generic repository/title or concept-DOI links do not establish the selected PDF edition.",
+    "frozen_pair_observation_sha256": "249b32b85678b497868e35d1f65c90cc80b7dc102e6648f8700f885fa3b94f00",
+    "frozen_pair_observation_url": "https://github.com/docxology/docxology/blob/ee837003a2328d28d8234ad5afdcfcd38419e90c/reports/paired_publications_2026-11-06.json"
+  },
+  "rights_observation": {
+    "registry_license": {
+      "id": "cc-by-4.0"
+    },
+    "scope": "The selected registry record declares this license; no additional third-party rights or scientific approval are inferred."
+  },
+  "source_acquisition_receipt_sha256": "b92a833dc89b1e7337dbf6b1d1d900ccbfa879c52869f497e2bae81308995b0c",
+  "reviewed_at": "2026-11-06T19:09:15Z",
+  "reviewed_by": "Codex AI-assisted public-source curator",
+  "review_scope": "Acquired byte integrity, all-page extraction, title/byline and source-quotation review only; no new scientific, computational, mathematical or named human approval.",
+  "privacy_scan": {
+    "contains_local_paths": false,
+    "secret_pattern_count": 0,
+    "source": "Canonical URL-aware scan of selected current text and proposed source evidence; historical text is separately reviewed."
+  }
+}

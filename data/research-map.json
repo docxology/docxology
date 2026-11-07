@@ -1,7 +1,319 @@
 {
   "schema_version": 1,
-  "description": "Catalog relationships, not a citation network or identity registry. Author nodes group exact normalized recorded names; homonyms may be grouped and name variants remain separate.",
+  "description": "Catalog relationships, not a citation network or identity registry. Contributor nodes group exact normalized recorded labels within each entity type; homonyms may be grouped and label variants remain separate.",
   "nodes": [
+    {
+      "id": "contributor:ahmad nazzal",
+      "kind": "contributor",
+      "label": "Ahmad Nazzal",
+      "url": ""
+    },
+    {
+      "id": "contributor:alexander sabine",
+      "kind": "contributor",
+      "label": "Alexander Sabine",
+      "url": ""
+    },
+    {
+      "id": "contributor:alison gopnik",
+      "kind": "contributor",
+      "label": "Alison Gopnik",
+      "url": ""
+    },
+    {
+      "id": "contributor:andrew pashea",
+      "kind": "contributor",
+      "label": "Andrew Pashea",
+      "url": ""
+    },
+    {
+      "id": "contributor:anna pereira",
+      "kind": "contributor",
+      "label": "Anna Pereira",
+      "url": ""
+    },
+    {
+      "id": "contributor:avel guénin—carlut",
+      "kind": "contributor",
+      "label": "Avel Guénin—Carlut",
+      "url": ""
+    },
+    {
+      "id": "contributor:bianca avanzo",
+      "kind": "contributor",
+      "label": "Bianca Avanzo",
+      "url": ""
+    },
+    {
+      "id": "contributor:bo lee",
+      "kind": "contributor",
+      "label": "Bo Lee",
+      "url": ""
+    },
+    {
+      "id": "contributor:bradly alicea",
+      "kind": "contributor",
+      "label": "Bradly Alicea",
+      "url": ""
+    },
+    {
+      "id": "contributor:bruce tisler",
+      "kind": "contributor",
+      "label": "Bruce Tisler",
+      "url": ""
+    },
+    {
+      "id": "contributor:cleber gomes",
+      "kind": "contributor",
+      "label": "Cleber Gomes",
+      "url": ""
+    },
+    {
+      "id": "contributor:colin turfus",
+      "kind": "contributor",
+      "label": "Colin Turfus",
+      "url": ""
+    },
+    {
+      "id": "contributor:dan corva, kevin backhouse",
+      "kind": "contributor",
+      "label": "Dan Corva, Kevin Backhouse",
+      "url": ""
+    },
+    {
+      "id": "contributor:daniel dragolich",
+      "kind": "contributor",
+      "label": "Daniel Dragolich",
+      "url": ""
+    },
+    {
+      "id": "contributor:daniel friedman",
+      "kind": "contributor",
+      "label": "Daniel Friedman",
+      "url": ""
+    },
+    {
+      "id": "contributor:diaconescu adrian-stelian",
+      "kind": "contributor",
+      "label": "Diaconescu Adrian-Stelian",
+      "url": ""
+    },
+    {
+      "id": "contributor:ed ober",
+      "kind": "contributor",
+      "label": "Ed Ober",
+      "url": ""
+    },
+    {
+      "id": "contributor:harshil shah, andrew pashea",
+      "kind": "contributor",
+      "label": "Harshil Shah, Andrew Pashea",
+      "url": ""
+    },
+    {
+      "id": "contributor:harshil shah, satyaki maitra",
+      "kind": "contributor",
+      "label": "Harshil Shah, Satyaki Maitra",
+      "url": ""
+    },
+    {
+      "id": "contributor:holly grimm, john h. clippinger, daniel ari friedman",
+      "kind": "contributor",
+      "label": "Holly Grimm, John H. Clippinger, Daniel Ari Friedman",
+      "url": ""
+    },
+    {
+      "id": "contributor:hongju pae",
+      "kind": "contributor",
+      "label": "Hongju Pae",
+      "url": ""
+    },
+    {
+      "id": "contributor:hyojun choi",
+      "kind": "contributor",
+      "label": "Hyojun Choi",
+      "url": ""
+    },
+    {
+      "id": "contributor:jean-françois cloutier",
+      "kind": "contributor",
+      "label": "Jean-François Cloutier",
+      "url": ""
+    },
+    {
+      "id": "contributor:john boik, glen ep ropella",
+      "kind": "contributor",
+      "label": "John Boik, Glen EP Ropella",
+      "url": ""
+    },
+    {
+      "id": "contributor:karl friston",
+      "kind": "contributor",
+      "label": "Karl Friston",
+      "url": ""
+    },
+    {
+      "id": "contributor:lancelot da costa",
+      "kind": "contributor",
+      "label": "Lancelot Da Costa",
+      "url": ""
+    },
+    {
+      "id": "contributor:luca possati",
+      "kind": "contributor",
+      "label": "Luca Possati",
+      "url": ""
+    },
+    {
+      "id": "contributor:majid d. beni",
+      "kind": "contributor",
+      "label": "Majid D. Beni",
+      "url": ""
+    },
+    {
+      "id": "contributor:matthew brown",
+      "kind": "contributor",
+      "label": "Matthew Brown",
+      "url": ""
+    },
+    {
+      "id": "contributor:michael lennon",
+      "kind": "contributor",
+      "label": "Michael Lennon",
+      "url": ""
+    },
+    {
+      "id": "contributor:michael walker",
+      "kind": "contributor",
+      "label": "Michael Walker",
+      "url": ""
+    },
+    {
+      "id": "contributor:mike levin",
+      "kind": "contributor",
+      "label": "Mike Levin",
+      "url": ""
+    },
+    {
+      "id": "contributor:montijn van loo",
+      "kind": "contributor",
+      "label": "Montijn van Loo",
+      "url": ""
+    },
+    {
+      "id": "contributor:nick hay, adam safron",
+      "kind": "contributor",
+      "label": "Nick Hay, Adam Safron",
+      "url": ""
+    },
+    {
+      "id": "contributor:patricia craja",
+      "kind": "contributor",
+      "label": "Patricia Craja",
+      "url": ""
+    },
+    {
+      "id": "contributor:paulo santiago",
+      "kind": "contributor",
+      "label": "Paulo Santiago",
+      "url": ""
+    },
+    {
+      "id": "contributor:rajkaushik borgohain",
+      "kind": "contributor",
+      "label": "Rajkaushik Borgohain",
+      "url": ""
+    },
+    {
+      "id": "contributor:robert worden",
+      "kind": "contributor",
+      "label": "Robert Worden",
+      "url": ""
+    },
+    {
+      "id": "contributor:ryan smith",
+      "kind": "contributor",
+      "label": "Ryan Smith",
+      "url": ""
+    },
+    {
+      "id": "contributor:sergio rubin",
+      "kind": "contributor",
+      "label": "Sergio Rubin",
+      "url": ""
+    },
+    {
+      "id": "contributor:sheena yap chan",
+      "kind": "contributor",
+      "label": "Sheena Yap Chan",
+      "url": ""
+    },
+    {
+      "id": "contributor:stell",
+      "kind": "contributor",
+      "label": "Stell",
+      "url": ""
+    },
+    {
+      "id": "contributor:steph macurdy",
+      "kind": "contributor",
+      "label": "Steph Macurdy",
+      "url": ""
+    },
+    {
+      "id": "contributor:takuya isomura",
+      "kind": "contributor",
+      "label": "Takuya Isomura",
+      "url": ""
+    },
+    {
+      "id": "contributor:tao gong",
+      "kind": "contributor",
+      "label": "Tao Gong",
+      "url": ""
+    },
+    {
+      "id": "contributor:ted j. vrioni",
+      "kind": "contributor",
+      "label": "Ted J. Vrioni",
+      "url": ""
+    },
+    {
+      "id": "contributor:tiga kailimai",
+      "kind": "contributor",
+      "label": "Tiga Kailimai",
+      "url": ""
+    },
+    {
+      "id": "contributor:tran hoang linh",
+      "kind": "contributor",
+      "label": "Tran Hoang Linh",
+      "url": ""
+    },
+    {
+      "id": "contributor:viraj deshwal",
+      "kind": "contributor",
+      "label": "Viraj Deshwal",
+      "url": ""
+    },
+    {
+      "id": "contributor:vitalii shapovalov",
+      "kind": "contributor",
+      "label": "Vitalii Shapovalov",
+      "url": ""
+    },
+    {
+      "id": "contributor:vitória de souza",
+      "kind": "contributor",
+      "label": "Vitória de Souza",
+      "url": ""
+    },
+    {
+      "id": "contributor:xin sun",
+      "kind": "contributor",
+      "label": "Xin Sun",
+      "url": ""
+    },
     {
       "id": "domain:active inference",
       "kind": "domain",
@@ -57,6 +369,12 @@
       "url": "/publications.html?domain=🔍"
     },
     {
+      "id": "organization:active inference institute",
+      "kind": "organization",
+      "label": "Active Inference Institute",
+      "url": ""
+    },
+    {
       "id": "person:abu-ghazaleh, jumana",
       "kind": "person",
       "label": "Abu-Ghazaleh, Jumana",
@@ -66,12 +384,6 @@
       "id": "person:achuthan, krishnashree",
       "kind": "person",
       "label": "Achuthan, Krishnashree",
-      "url": ""
-    },
-    {
-      "id": "person:active inference institute",
-      "kind": "person",
-      "label": "Active Inference Institute",
       "url": ""
     },
     {
@@ -1857,6 +2169,12 @@
       "url": "https://github.com/ActiveInferenceInstitute/policy_entanglement"
     },
     {
+      "id": "software:https://github.com/activeinferenceinstitute/symposium",
+      "kind": "software",
+      "label": "ActiveInferenceInstitute/Symposium",
+      "url": "https://github.com/ActiveInferenceInstitute/Symposium"
+    },
+    {
       "id": "software:https://github.com/activeinferenceinstitute/working_groups",
       "kind": "software",
       "label": "ActiveInferenceInstitute/Working_Groups",
@@ -2059,6 +2377,12 @@
       "kind": "software",
       "label": "docxology/realizing_emptiness",
       "url": "https://github.com/docxology/realizing_emptiness"
+    },
+    {
+      "id": "software:https://github.com/docxology/rikishi",
+      "kind": "software",
+      "label": "docxology/rikishi",
+      "url": "https://github.com/docxology/rikishi"
     },
     {
       "id": "software:https://github.com/docxology/skillarum",
@@ -3105,6 +3429,13 @@
       "year": 2025
     },
     {
+      "id": "work:Friedman20262026ActiveInferenceSymposium237",
+      "kind": "work",
+      "label": "2026 Active Inference Symposium — Presenter Program",
+      "url": "/works/Friedman20262026ActiveInferenceSymposium237.html",
+      "year": 2026
+    },
+    {
       "id": "work:Friedman2026AGEINTAgenticIntelligence170",
       "kind": "work",
       "label": "AGEINT: Agentic Intelligence",
@@ -3651,6 +3982,13 @@
       "year": 2026
     },
     {
+      "id": "work:Friedman2026RikishiReproducibleOperationAnalysis236",
+      "kind": "work",
+      "label": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+      "url": "/works/Friedman2026RikishiReproducibleOperationAnalysis236.html",
+      "year": 2026
+    },
+    {
       "id": "work:Friedman2026RobustBeliefSharingFederated210",
       "kind": "work",
       "label": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
@@ -3879,7 +4217,7 @@
     },
     {
       "source": "work:Friedman20255thAppliedActiveInference008",
-      "target": "person:active inference institute",
+      "target": "organization:active inference institute",
       "relation": "Recorded author",
       "provenance": "data/work-authors.json"
     },
@@ -4389,7 +4727,7 @@
     },
     {
       "source": "work:Friedman2025ActiveInferenceInstituteActive024",
-      "target": "person:active inference institute",
+      "target": "organization:active inference institute",
       "relation": "Recorded author",
       "provenance": "data/work-authors.json"
     },
@@ -5085,7 +5423,7 @@
     },
     {
       "source": "work:Friedman2024ActiveInferenceInstituteActive041",
-      "target": "person:active inference institute",
+      "target": "organization:active inference institute",
       "relation": "Recorded author",
       "provenance": "data/work-authors.json"
     },
@@ -5931,7 +6269,7 @@
     },
     {
       "source": "work:Friedman2023TranscriptChrisFieldsPhysics064",
-      "target": "person:active inference institute",
+      "target": "organization:active inference institute",
       "relation": "Recorded author",
       "provenance": "data/work-authors.json"
     },
@@ -9768,6 +10106,354 @@
       "target": "person:friedman, daniel ari",
       "relation": "Recorded author",
       "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman2026RikishiReproducibleOperationAnalysis236",
+      "target": "domain:computational",
+      "relation": "Catalog domain",
+      "provenance": "pages/BIBLIOGRAPHY.md"
+    },
+    {
+      "source": "work:Friedman2026RikishiReproducibleOperationAnalysis236",
+      "target": "person:friedman, daniel ari",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman2026RikishiReproducibleOperationAnalysis236",
+      "target": "software:https://github.com/docxology/rikishi",
+      "relation": "Associated software",
+      "provenance": "papers/2026_Rikishi/metadata.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "domain:media & teaching",
+      "relation": "Catalog domain",
+      "provenance": "pages/BIBLIOGRAPHY.md"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "organization:active inference institute",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:bradly alicea",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:dan corva, kevin backhouse",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:hongju pae",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:karl friston",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:alison gopnik",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:bianca avanzo",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:ed ober",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:john boik, glen ep ropella",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:luca possati",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:majid d. beni",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:mike levin",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:montijn van loo",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:ryan smith",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:sergio rubin",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:takuya isomura",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:ted j. vrioni",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:ahmad nazzal",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:alexander sabine",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:andrew pashea",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:anna pereira",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:avel guénin—carlut",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:bo lee",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:bruce tisler",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:cleber gomes",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:colin turfus",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:daniel dragolich",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:daniel friedman",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:diaconescu adrian-stelian",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:harshil shah, andrew pashea",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:harshil shah, satyaki maitra",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:holly grimm, john h. clippinger, daniel ari friedman",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:hyojun choi",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:jean-françois cloutier",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:lancelot da costa",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:matthew brown",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:michael lennon",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:michael walker",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:nick hay, adam safron",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:patricia craja",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:paulo santiago",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:rajkaushik borgohain",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:robert worden",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:sheena yap chan",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:stell",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:steph macurdy",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:tao gong",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:tiga kailimai",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:tran hoang linh",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:viraj deshwal",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:vitalii shapovalov",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:vitória de souza",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "contributor:xin sun",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman20262026ActiveInferenceSymposium237",
+      "target": "software:https://github.com/activeinferenceinstitute/symposium",
+      "relation": "Associated software",
+      "provenance": "papers/2026_SymposiumPresenterProgram/metadata.json"
     }
   ]
 }

@@ -45,6 +45,14 @@ This supplement maps statements to the source owners that should be inspected wh
 
 - **Scholar technical readiness.** Source: [readiness policy](../../code/src/scholar_readiness.py), [PDF projection resolver](../../code/src/scholar_pdf_projection.py) and [reservation registry](../../data/scholar-pdf-projections.json). Verification: [readiness tests](../../code/tests/test_scholar_readiness.py), [follow-up runbook](../seo/gsc-followup.md). Actual indexing requires an independent observation.
 
+- **Exact edition reviews and explicit intake.** Source: [pairing policy](../../code/src/publication_pairing.py), [paired intake](../../code/orchestrators/sync_paired_publications.py). Verification: [pairing regressions](../../code/tests/test_sync_paired_publications.py), [review renderer tests](../../code/tests/test_public_source_review.py).
+
+- **Literal credits and separate software identities.** Source: [author authority](../../code/src/author_entities.py), [software table](../../code/src/software_table.py). Verification: [literal authority tests](../../code/tests/test_literal_credit_authority.py), [software identity tests](../../code/tests/test_software_archive_identity.py).
+
+- **Selected credits, typed graph nodes and legacy links.** Source: [research generator](../../code/orchestrators/build_research_tools.py), [relationship policy](../../code/src/research_connections.py), [map runtime](../../js/research-map.js). Verification: [credit-consumer regressions](../../code/tests/test_research_credit_consumers.py), including actual browser ambiguity and history recovery.
+
+- **Reviewed-authority cache invalidation.** Source: [generation inputs](../../code/src/generation_plan.py). Verification: [cold/warm/mutation cache regressions](../../code/tests/test_generation_cache_sources.py); semantic authority checks remain separate.
+
 ## Expansion checklist
 
 - Identify authored source and generated projections separately.

@@ -8,6 +8,8 @@ on local release receipts.
 from __future__ import annotations
 
 import json
+import hashlib
+from pathlib import Path
 import re
 from dataclasses import asdict, dataclass
 from datetime import datetime
@@ -16,6 +18,7 @@ from typing import Any, Iterable, Mapping
 
 from domain_inference import contains_term, infer_domain_emoji_for_pair as infer_domain  # noqa: F401
 from report_paths import generated_timestamp
+from generated_outputs import read_generated_output_text
 
 ORCID = "0000-0001-6232-9096"
 
@@ -719,7 +722,7 @@ def find_publication_pairs(
 ) -> list[PublicationPair]:
     """Return best release/record pair candidates sorted by confidence and DOI."""
     pairs: list[PublicationPair] = []
-    seen: set[tuple[str, str]] = set()
+    seen: dict[tuple[str, str], dict[str, Any]] = {}
     records_list = list(records)
     for release in releases:
         for record in records_list:
@@ -727,9 +730,20 @@ def find_publication_pairs(
             if pair is None:
                 continue
             key = (pair.github_release_url, pair.doi)
+            observed = pair.record.to_dict()
             if key in seen:
+                if json.dumps(
+                    seen[key], sort_keys=True, separators=(",", ":"), ensure_ascii=False
+                ) != json.dumps(
+                    observed, sort_keys=True, separators=(",", ":"), ensure_ascii=False
+                ):
+                    raise ValueError(
+                        "Conflicting Zenodo editions for the same release and concept DOI; "
+                        "refetch an unambiguous observation and perform manual edition review "
+                        "under docs/operations/publication-sync.md"
+                    )
                 continue
-            seen.add(key)
+            seen[key] = observed
             pairs.append(pair)
     rank = {"strong": 0, "needs_review": 1}
     return sorted(
@@ -1010,3 +1024,267 @@ def is_software_record(record: ZenodoRecord) -> bool:
     """Whether Zenodo types the record as software (legacy ``type`` or RDM ``id``)."""
     kind = record.resource_type.get("type") or record.resource_type.get("id") or ""
     return str(kind).casefold() == "software"
+
+
+# Separate edition evidence supplements the stable six-field work/pair key.
+_EDITION_FIELDS = (
+    "record_id",
+    "doi",
+    "title",
+    "publication_date",
+    "version",
+    "resource_type",
+    "creators",
+    "description",
+    "keywords",
+    "related_identifiers",
+    "files",
+    "html_url",
+)
+_EDITION_REPORT_RE = re.compile(
+    r"reports/(?:publication_intake|paired_publications)_[A-Za-z0-9_.-]+\.json"
+)
+
+
+def publication_edition_sha256(record: ZenodoRecord | Mapping[str, Any]) -> str:
+    """Hash every normalized source field, independently of concept URLs."""
+    value = record.to_dict() if isinstance(record, ZenodoRecord) else record
+    if not isinstance(value, Mapping) or any(
+        name not in value for name in _EDITION_FIELDS
+    ):
+        raise ValueError(
+            "publication edition has incomplete normalized record evidence"
+        )
+    record_id = value["record_id"]
+    if not isinstance(record_id, str) or not re.fullmatch(r"[1-9][0-9]*", record_id):
+        raise ValueError("publication edition needs an exact numeric version record")
+    raw = json.dumps(
+        {name: value[name] for name in _EDITION_FIELDS},
+        sort_keys=True,
+        separators=(",", ":"),
+        ensure_ascii=False,
+        allow_nan=False,
+    )
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()
+
+
+def _edition_candidate_sha256(fingerprint: PairCandidateFingerprint) -> str:
+    return hashlib.sha256(
+        json.dumps(
+            list(fingerprint), ensure_ascii=False, separators=(",", ":")
+        ).encode()
+    ).hexdigest()
+
+
+def _edition_pair_fingerprint(
+    pair: Mapping[str, Any],
+) -> PairCandidateFingerprint | None:
+    record, release = pair.get("record"), pair.get("release")
+    if not isinstance(record, Mapping) or not isinstance(release, Mapping):
+        return None
+    return canonical_pair_candidate_fingerprint(
+        doi=pair.get("doi"),
+        github_release_url=pair.get("github_release_url"),
+        zenodo_record_url=pair.get("zenodo_record_url"),
+        github_repo=pair.get("github_repo"),
+        title=record.get("title"),
+        release_tag=release.get("tag"),
+    )
+
+
+def observed_pair_editions(
+    payload: Mapping[str, Any],
+) -> dict[PairCandidateFingerprint, dict[str, Any] | None]:
+    """Resolve unambiguous pair records against the same scan's record list."""
+    records, pairs = payload.get("zenodo_records"), payload.get("pairs")
+    if not isinstance(records, list) or not isinstance(pairs, list):
+        return {}
+    by_id: dict[str, tuple[str, dict[str, Any]]] = {}
+    bad_ids: set[str] = set()
+    for record in records:
+        try:
+            digest = publication_edition_sha256(record)
+            record_id = record["record_id"]
+        except ValueError, TypeError, KeyError:
+            continue
+        if record_id in by_id:
+            bad_ids.add(record_id)
+        else:
+            by_id[record_id] = (digest, dict(record))
+    result: dict[PairCandidateFingerprint, dict[str, Any] | None] = {}
+    for pair in pairs:
+        if not isinstance(pair, Mapping):
+            continue
+        fingerprint = _edition_pair_fingerprint(pair)
+        if fingerprint is None:
+            continue
+        record = pair.get("record")
+        resolved = None
+        try:
+            digest = publication_edition_sha256(record)
+            record_id = record["record_id"]
+            if record_id not in bad_ids and by_id.get(record_id, (None,))[0] == digest:
+                resolved = dict(record)
+        except ValueError, TypeError, KeyError:
+            pass
+        if fingerprint in result and result[fingerprint] != resolved:
+            result[fingerprint] = None
+        else:
+            result[fingerprint] = resolved
+    return result
+
+
+def _edition_json_pairs(rows):
+    result = {}
+    for key, value in rows:
+        if key in result:
+            raise ValueError("duplicate edition source JSON key")
+        result[key] = value
+    return result
+
+
+def _edition_source_json(repo_root: Path, source: str) -> tuple[str, dict[str, Any]]:
+    if not _EDITION_REPORT_RE.fullmatch(source):
+        raise ValueError("edition source must be an exact frozen report path")
+    text = read_generated_output_text(
+        repo_root, repo_root / source, newline="", max_bytes=32 * 1024 * 1024
+    )
+    if text is None:
+        raise ValueError("edition source is missing")
+    payload = json.loads(text, object_pairs_hook=_edition_json_pairs)
+    if not isinstance(payload, dict):
+        raise ValueError("edition source must be an object")
+    return hashlib.sha256(text.encode("utf-8")).hexdigest(), payload
+
+
+def publication_edition_source_sha256(repo_root: Path, source: str) -> str:
+    """Hash a bounded source only through the same safe reader as its evidence."""
+    return _edition_source_json(repo_root, source)[0]
+
+
+def _edition_blob_location_valid(source: Mapping[str, Any]) -> bool:
+    if "url" in source:
+        if "path" in source or not isinstance(source["url"], str):
+            return False
+        match = re.fullmatch(
+            r"https://github\.com/docxology/docxology/blob/([0-9a-f]{40})/(reports/(?:publication_intake|paired_publications)_[A-Za-z0-9_.-]+\.json)",
+            source["url"],
+        )
+        return bool(match and match[1] == source.get("commit"))
+    return isinstance(source.get("path"), str) and bool(
+        _EDITION_REPORT_RE.fullmatch(source["path"])
+    )
+
+
+def reviewed_pair_edition_index(
+    payload: object, *, repo_root: Path | None = None
+) -> dict[PairCandidateFingerprint, dict[str, str]]:
+    """Keep historical decisions, adding only validated original-edition evidence.
+
+    Inline evidence is a small curated derivation of a pinned historical blob;
+    it avoids requiring old Git objects or complete old reports in offline CI.
+    Legacy explicit local source bindings remain supported and hash-checked.
+    """
+    indexed = reviewed_pair_decision_index(payload)
+    sources: dict[str, tuple[str, dict[str, Any]] | None] = {}
+    observations: dict[str, dict] = {}
+    for group in payload["groups"]:
+        if not isinstance(group, Mapping):
+            continue
+        for raw in group.get("raw_candidates", []):
+            if isinstance(raw, str):
+                raw = {"github_release_url": raw}
+            if not isinstance(raw, Mapping):
+                continue
+            fingerprint = decision_pair_candidate_fingerprint(raw, group)
+            decision = indexed.get(fingerprint)
+            if decision is None or decision["group_id"] != group.get("id"):
+                continue
+            evidence = raw.get("edition_evidence", group.get("edition_evidence"))
+            resolved = None
+            if "edition_evidence" in raw or "edition_evidence" in group:
+                if isinstance(evidence, Mapping):
+                    source = evidence.get("source")
+                    record_id, digest = (
+                        evidence.get("record_id"),
+                        evidence.get("record_sha256"),
+                    )
+                    if (
+                        type(evidence.get("schema_version")) is int
+                        and evidence["schema_version"] == 1
+                        and isinstance(record_id, str)
+                        and re.fullmatch(r"[1-9][0-9]*", record_id)
+                        and isinstance(digest, str)
+                        and re.fullmatch(r"[0-9a-f]{64}", digest)
+                        and evidence.get("candidate_sha256")
+                        == _edition_candidate_sha256(fingerprint)
+                        and isinstance(source, Mapping)
+                        and source.get("kind") == "git_blob"
+                        and isinstance(source.get("commit"), str)
+                        and re.fullmatch(r"[0-9a-f]{40}", source["commit"])
+                        and isinstance(source.get("blob_oid"), str)
+                        and re.fullmatch(r"[0-9a-f]{40}", source["blob_oid"])
+                        and _edition_blob_location_valid(source)
+                        and isinstance(source.get("sha256"), str)
+                        and re.fullmatch(r"[0-9a-f]{64}", source["sha256"])
+                        and raw.get("zenodo_version_record_id") in (None, record_id)
+                        and raw.get("source_report_sha256") in (None, source["sha256"])
+                    ):
+                        resolved = (record_id, digest)
+            elif repo_root is not None:
+                source, expected = (
+                    raw.get("source_report"),
+                    raw.get("source_report_sha256"),
+                )
+                record_id = raw.get("zenodo_version_record_id")
+                if (
+                    isinstance(source, str)
+                    and _EDITION_REPORT_RE.fullmatch(source)
+                    and isinstance(expected, str)
+                    and re.fullmatch(r"[0-9a-f]{64}", expected)
+                    and isinstance(record_id, str)
+                    and re.fullmatch(r"[1-9][0-9]*", record_id)
+                ):
+                    if source not in sources:
+                        try:
+                            sources[source] = _edition_source_json(repo_root, source)
+                        except OSError, ValueError, TypeError, UnicodeError:
+                            sources[source] = None
+                    saved = sources[source]
+                    if (
+                        saved
+                        and saved[0] == expected
+                        and saved[1].get("source")
+                        == "GitHub Releases API + Zenodo Records API"
+                        and saved[1].get("warnings") == []
+                    ):
+                        if source not in observations:
+                            observations[source] = observed_pair_editions(saved[1])
+                        record = observations[source].get(fingerprint)
+                        if record and record["record_id"] == record_id:
+                            resolved = (record_id, publication_edition_sha256(record))
+            if resolved:
+                indexed[fingerprint] = {
+                    **decision,
+                    "edition_record_id": resolved[0],
+                    "edition_record_sha256": resolved[1],
+                    "edition_binding_state": "bound",
+                }
+            else:
+                indexed[fingerprint] = {**decision, "edition_binding_state": "unbound"}
+    return indexed
+
+
+def publication_edition_matches(
+    record: ZenodoRecord | Mapping[str, Any], decision: Mapping[str, str] | None
+) -> bool:
+    """A concept-level acknowledgement never approves another source edition."""
+    if decision is None or decision.get("edition_binding_state") != "bound":
+        return False
+    try:
+        value = record.to_dict() if isinstance(record, ZenodoRecord) else record
+        return value["record_id"] == decision.get(
+            "edition_record_id"
+        ) and publication_edition_sha256(value) == decision.get("edition_record_sha256")
+    except ValueError, TypeError, KeyError:
+        return False

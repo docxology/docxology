@@ -1,11 +1,12 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case"
-description: "Linguistic case offers a setting in which to examine how diagrams connect relational structure, compositional syntax, and uncertainty. This article reviews categorical approaches and supplies an executable collection of deliberately small examples. T..."
+description: "The deposited 2.7.0 manuscript reviews categorical approaches to linguistic case using deliberately small executable examples. It distinguishes generated derivations, finite score distributions, presentation statistics and model-unit prediction error..."
 tags: ["cognitivecasediagrams"]
 domain: "Active Inference"
 citation: "Daniel Ari Friedman (2026). *Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case*. Zenodo."
 doi: "10.5281/zenodo.19695259"
+artifact_doi: "10.5281/zenodo.22774403"
 ---
 
 # Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case
@@ -20,21 +21,15 @@ This work addresses topics in **Active Inference**: CognitiveCaseDiagrams.
 
 Primary methods and techniques applied in this work:
 
-- **Case systems formalized as categories with alignment types as functors** — Reviews case systems as categories whose objects are case roles and morphisms are grammatical relations, treating each alignment type as a structure-preserving functor.
-- **Case-typed DisCoCat/DisCoCirc string diagrams for sentence and discourse** — Extends DisCoCat with case-typed noun spaces and alignment-sensitive meaning functors, and uses DisCoCirc for discourse-level composition.
-- **[0,1]-enriched case categories and categorical magnitude** — Equips case categories with [0,1]-valued hom-objects and uses categorical magnitude as an invariant for comparing case systems.
-- **Integration with Distributional Active Inference to derive ERP predictions** — Embeds the case framework in a Distributional Active Inference model to state falsifiable predictions for P600, N400 and garden-path reanalysis.
-- **Open-source Python implementation with automated tests and generated figures** — Implements the formal structures in a src/ package with a no-mocks test suite and programmatically generated figures.
+- **Executable categorical and distributional examples** — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.
+- **Explicit comparison of constructions and assumptions** — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.
 
 ## Key Findings
 
 Core contributions and results:
 
-- The review captures nominative-accusative, ergative-absolutive, active-stative, tripartite and fluid-S alignment within one algebraic framework linked by alignment functors.
-- Within case-typed string diagrams, passivization reduces to a type permutation (a Swap in the pregroup category).
-- When multi-turn agent interactions are modeled as a fixed category of licensed morphisms, prompt injection can be analyzed as ill-typed role promotion (a functorial type violation): a specification target, not a guarantee on current LLM APIs.
-- The topos-theoretic equivalence chain across typological, type-logical, distributional and enriched case theories is presented as a research program, not a finished theorem.
-- The accompanying code has 1197 tests across 64 files at 95.96% line-and-branch coverage on src/, plus 30 programmatically generated figures.
+- A common diagrammatic vocabulary is not presented as proof that the constructions are equivalent.
+- The reported numerical illustrations are synthetic; cognitive, topos-transfer and authorization claims retain explicit validation requirements.
 
 Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
@@ -49,9 +44,10 @@ Methods and findings are summarized from the full text; each item is backed by a
 Verification points for this work:
 
 - Canonical DOI: 10.5281/zenodo.19695259
-- PDF SHA-256: See zenodo_record
+- PDF SHA-256: d5cc1413f8a2cc86d2d29e16db5a5d106e1e825d6f102ce339113207db7d186b
 - Pairing confidence: strong
-- Last checked: 2026-09-24T18:29:54Z
+- Last checked: 2026-11-06T18:26:53.054038+00:00
+- Artifact DOI: 10.5281/zenodo.22774403
 
 ## Prerequisites
 

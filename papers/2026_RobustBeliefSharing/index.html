@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus Documentation — Daniel Ari Friedman</title>
-    <meta name="description" content="Multi-agent active inference gives a natural account of belief sharing: agents hold local posteriors over a shared latent state, communicate those…">
+    <meta name="description" content="The selected Active Fedference 1.1.0 manuscript presents a discrete-categorical connection between active-inference belief sharing and a…">
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="https://danielarifriedman.com/works/Friedman2026RobustBeliefSharingFederated210.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -26,12 +26,12 @@
     <script src="/js/nav-toggle.js?v=nav-20261002"></script>
     <meta property="og:type" content="article">
     <meta property="og:title" content="Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus Documentation">
-    <meta property="og:description" content="Multi-agent active inference gives a natural account of belief sharing: agents hold local posteriors over a shared latent state, communicate those…">
+    <meta property="og:description" content="The selected Active Fedference 1.1.0 manuscript presents a discrete-categorical connection between active-inference belief sharing and a…">
     <meta property="og:url" content="https://danielarifriedman.com/works/Friedman2026RobustBeliefSharingFederated210.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus Documentation">
-    <meta name="twitter:description" content="Multi-agent active inference gives a natural account of belief sharing: agents hold local posteriors over a shared latent state, communicate those…">
+    <meta name="twitter:description" content="The selected Active Fedference 1.1.0 manuscript presents a discrete-categorical connection between active-inference belief sharing and a…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus">
     <style>
@@ -96,10 +96,10 @@
         </section>
         <section class="section section-alt">
             <div class="section-header"><h2>Overview</h2><p>Curated abstract when available.</p><div class="section-divider"></div></div>
-            <div class="overview-box"><p>Multi-agent active inference gives a natural account of belief sharing: agents hold local posteriors over a shared latent state, communicate those beliefs, and pool them into a colony-level consensus. The same mechanism is fragile when a member is miscalibrated, corrupted, or strategically wrong. Because the standard pool multiplies the reports together, a single confident-but-wrong broadcast that puts near-zero mass on the true state can pull the whole consensus off it, outweighing many honest members. The colony therefore needs a way to preserve the useful structure of belief sharing while limiting the influence of contaminated beliefs. This paper presents Active Fedference, a discrete-categorical framework that connects robust federated generalized variational inference with active inference belief sharing. The main bridge is structural: standard belief sharing appears as the non-robust corner of a broader generalized-Bayes family, while robust losses, conservative server fusion, and explicit aggregation diagnostics describe how the system moves away from that corner under declared contamination mechanisms. The result is not a replacement for belief sharing, but a containment result: ordinary belief sharing is recovered when robustness is turned off. Bounded-loss theory applies on the client axis, while the variational-server axis supplies an objective-backed redescending weight update. The manuscript separates three robustness axes that are often conflated. First, client-side generalized-Bayes updates change how each agent absorbs evidence; this is the rigorous axis, carrying FedGVI’s bounded-influence result only under the source theorem’s loss, model, and contamination assumptions. Second, a sharp server-side reweighting heuristic suppresses beliefs that pull away from the emerging consensus, while carrying only its recovery-limit guarantee — no proven objective and no bounded-influence bound. Third, a variational aggregation rule supplies a more conservative objective-backed server alternative, with a raw effective-weight bound but not an estimator-level bounded-influence proof for the normalized consensus. Keeping these axes separate lets the paper state exactly which claims are proven, which are empirical, and which remain engineering extensions. The study suite then exercises the framework as an end-to-end research system: recovery checks anchor the standard-Bayes limit, belief-sharing studies verify the communication baseline, contamination experiments test robust consensus, and extension studies probe moving agents, hierarchical latent structure, sensitivity to acuity and colony size, parameter recovery, and single-host socket-backed federation traces. All reported quantities are generated from deterministic analysis artifacts and injected into the manuscript by token, so the paper, figures, release package, and validation reports remain tied to the same execution record. The open-source repository is ActiveInferenceInstitute/Active_Fedference . The production Zenodo release DOI is 10.5281/zenodo.21864004, and the repository and deposited PDF point to each other through this DOI and the repository URL.</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
+            <div class="overview-box"><p>The selected Active Fedference 1.1.0 manuscript presents a discrete-categorical connection between active-inference belief sharing and a generalized-Bayes family. It separately assigns claims to source-conditional client updates, a recovery-only heuristic server rule and an objective-backed variational server rule; no robustness guarantee transfers between those axes. The manuscript reports recovery, contamination, sensitivity and socket-backed studies from deterministic artifacts. This catalog refresh does not reproduce those studies or establish general robustness or real-world deployment efficacy.</p><p class="summary-sources abstract-source">Overview source: <a href="../../papers/paper_metadata.json">Curated paper metadata</a>.</p></div>
         </section>
         <section class="section">
-            <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation and PDFs served directly from this folder.</p><div class="section-divider"></div></div>
+            <div class="section-header"><h2>Artifacts</h2><p>Tracked documentation, preserved local archives, and the selected Zenodo edition.</p><div class="section-divider"></div></div>
             <div class="artifact-grid">
                 <div class="artifact-card"><strong>Documentation</strong><p><a class="btn btn-outline" href="README.md">README</a>
 <a class="btn btn-outline" href="AGENTS.md">AGENTS</a>
@@ -107,7 +107,9 @@
 <a class="btn btn-outline" href="metadata.json">Metadata</a>
 <a class="btn btn-outline" href="full_text.md">Extracted text</a>
 <a class="btn btn-outline" href="CITATION.cff">Citation metadata</a></p></div>
-                <div class="artifact-card"><strong>Document Files</strong><ul><li><a href="../../papers/2026_RobustBeliefSharing/active_fedference_combined.pdf" download="active_fedference_combined.pdf" type="application/pdf">active_fedference_combined.pdf</a> <span class="muted">9,433,827 bytes · extracted-text source</span></li></ul></div>
+                <div class="artifact-card"><strong>Document Files</strong><ul><li><a href="https://zenodo.org/api/records/22149133/files/active_fedference_combined.pdf/content" type="application/pdf">active_fedference_combined.pdf</a> <span class="muted">Zenodo version 1.1.0 · 12,604,278 bytes</span></li>
+<li><a href="../../papers/2026_RobustBeliefSharing/active_fedference_combined.pdf" download="active_fedference_combined.pdf" type="application/pdf">active_fedference_combined.pdf</a> <span class="muted">9,433,827 bytes · preserved historical archive</span></li>
+<li class="muted">Current PDF version 1.1.0 is hosted at Zenodo. Local PDFs remain preserved historical archives. Extracted text retains its own source provenance; a matching filename does not establish edition identity.</li></ul></div>
                 <div class="artifact-card"><strong>Extracted Content</strong><p><span class="muted">No extracted figures are archived.</span></p></div>
             </div>
         </section>
@@ -115,7 +117,7 @@
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../../publications.html">Unified bibliography</a> · <a href="../../works/">Works index</a></p>
-        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/a563fb19f">build a563fb19f 2026-11-02 · generated 2026-11-03T14:16:33Z</a></p>
+        <p class="build-stamp"><a href="https://github.com/docxology/docxology/commit/49bc0c83e">build 49bc0c83e 2026-11-06 · generated 2026-11-07T01:44:14Z</a></p>
     </footer>
 <script src="/js/search-utils.js?v=site-20261103a"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

@@ -1,5 +1,29 @@
 # Changelog
 
+## 2026-11-06 — Exact publication editions, literal credits and software archives
+
+The [publication and software refresh](reports/publication_software_refresh_2026-11-06.md) records complete discovery, selected documents, preserved history and actual verification.
+
+- Added the archived Rikishi manuscript and the distinct 2026 Symposium working
+  program, with permanent work identities, reviewed text and versioned PDF
+  links. Software archives retain their separate DOI roles.
+- Updated twelve existing selected editions and source summaries while
+  preserving earlier local PDFs, extracted text, gallery images and complete
+  prior metadata. Documented results remain attributed to their source papers.
+- Bound pair acknowledgements to exact immutable record and file evidence;
+  preserved original review history and added separate current-edition decisions.
+  Cached reports recheck the durable ledger and retain release asset URLs.
+- Added bounded explicit-record intake for deposits outside author searches,
+  bounded GitHub pagination with explicit failures, and provenance-aware paper-index merges.
+- Preserved ordered institutional and grouped credits through exports, bylines
+  and refresh, and separated software archive identities from paper citations.
+- Preserved literal credits in selected CSL and work-specific research-map types;
+  retained exact legacy links and explicit ambiguity recovery. Author records and
+  evidence sidecars now invalidate the generation steps that consume them.
+- Refreshed complete public source observations, retaining failed and incomplete
+  advisory responses as unavailable. New full PDFs stay at versioned archives;
+  existing public PDF routes and Pages limits are preserved.
+
 ## 2026-11-06 — Deterministic reproducibility output and fresh source proof
 
 - Repeated reproducibility-ledger builds preserve the footer when substantive

@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Five-stage gold-refining analogy mapped to manuscript operations, Seeded SHA-256 mega-madlib token selection from a config-owned lexicon, Monotone-purity constraint enforced in code and tests
-- Identifies findings: The paper argues the analogy is load-bearing rather than only rhetorical, since each metallurgical stage corresponds to a real template-infrastructure operation., The exemplar pipeline reports a monotone purity sequence over 5 stages ending at the nine-nines certification stage., The token engine generated 8 tokens from seed 431 across 4 lexicon categories, each traceable in a provenance table.
+- Extracts methods: Deterministic source-owned token selection, Equation-backed formalisms and local claim assay
+- Identifies findings: The reported purity value is a local descriptive validation state, not an externally validated quality measurement., Empirical validation of manuscript-quality metrics against external standards remains listed as future work.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

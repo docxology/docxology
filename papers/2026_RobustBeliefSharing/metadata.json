@@ -1,11 +1,11 @@
 {
   "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "doi": "10.5281/zenodo.21864003",
   "doi_url": "https://doi.org/10.5281/zenodo.21864003",
-  "zenodo_record": "https://zenodo.org/records/21864003",
-  "record_id": "21864004",
-  "publication_date": "2026-08-10",
+  "zenodo_record": "https://zenodo.org/records/22149133",
+  "record_id": "22149133",
+  "publication_date": "2026-09-19",
   "resource_type": {
     "title": "Software",
     "type": "software"
@@ -17,7 +17,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "Multi-agent active inference gives a natural account of belief sharing: agents hold local posteriors over a shared latent state, communicate those beliefs, and pool them into a colony-level consensus. The same mechanism is fragile when a member is miscalibrated, corrupted, or strategically wrong. Because the standard pool multiplies the reports together, a single confident-but-wrong broadcast that puts near-zero mass on the true state can pull the whole consensus off it, outweighing many honest members. The colony therefore needs a way to preserve the useful structure of belief sharing while limiting the influence of contaminated beliefs. This paper presents Active Fedference, a discrete-categorical framework that connects robust federated generalized variational inference with active inference belief sharing. The main bridge is structural: standard belief sharing appears as the non-robust corner of a broader generalized-Bayes family, while robust losses, conservative server fusion, and explicit aggregation diagnostics describe how the system moves away from that corner under declared contamination mechanisms. The result is not a replacement for belief sharing, but a containment result: ordinary belief sharing is recovered when robustness is turned off. Bounded-loss theory applies on the client axis, while the variational-server axis supplies an objective-backed redescending weight update. The manuscript separates three robustness axes that are often conflated. First, client-side generalized-Bayes updates change how each agent absorbs evidence; this is the rigorous axis, carrying FedGVI’s bounded-influence result only under the source theorem’s loss, model, and contamination assumptions. Second, a sharp server-side reweighting heuristic suppresses beliefs that pull away from the emerging consensus, while carrying only its recovery-limit guarantee — no proven objective and no bounded-influence bound. Third, a variational aggregation rule supplies a more conservative objective-backed server alternative, with a raw effective-weight bound but not an estimator-level bounded-influence proof for the normalized consensus. Keeping these axes separate lets the paper state exactly which claims are proven, which are empirical, and which remain engineering extensions. The study suite then exercises the framework as an end-to-end research system: recovery checks anchor the standard-Bayes limit, belief-sharing studies verify the communication baseline, contamination experiments test robust consensus, and extension studies probe moving agents, hierarchical latent structure, sensitivity to acuity and colony size, parameter recovery, and single-host socket-backed federation traces. All reported quantities are generated from deterministic analysis artifacts and injected into the manuscript by token, so the paper, figures, release package, and validation reports remain tied to the same execution record. The open-source repository is ActiveInferenceInstitute/Active_Fedference . The production Zenodo release DOI is 10.5281/zenodo.21864004, and the repository and deposited PDF point to each other through this DOI and the repository URL.",
+  "description": "The selected Active Fedference 1.1.0 manuscript presents a discrete-categorical connection between active-inference belief sharing and a generalized-Bayes family. It separately assigns claims to source-conditional client updates, a recovery-only heuristic server rule and an objective-backed variational server rule; no robustness guarantee transfers between those axes. The manuscript reports recovery, contamination, sensitivity and socket-backed studies from deterministic artifacts. This catalog refresh does not reproduce those studies or establish general robustness or real-world deployment efficacy.",
   "keywords": [
     "active inference",
     "federated learning",
@@ -29,64 +29,80 @@
   "files": [
     {
       "name": "active_fedference_combined.pdf",
-      "size_bytes": 9433827,
-      "checksum": "md5:33d75159fc83b00e9ee130f24a6835b3",
-      "download_url": "https://zenodo.org/api/records/21864004/files/active_fedference_combined.pdf/content"
+      "size_bytes": 12604278,
+      "checksum": "md5:7e504dbef6e0e3d6572116580c719bce",
+      "download_url": "https://zenodo.org/api/records/22149133/files/active_fedference_combined.pdf/content"
     }
   ],
   "related_resources": [],
   "github_repo": "",
   "source": "manual-reviewed-paired-version",
-  "checked_at": "2026-08-26T18:01:35Z",
-  "artifact_doi": "10.5281/zenodo.21972644",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.21972644",
+  "checked_at": "2026-11-06T18:28:45.395544+00:00",
+  "artifact_doi": "10.5281/zenodo.22149133",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.22149133",
   "methods": [
     {
-      "name": "Discrete-categorical NumPy/SciPy reimplementation of FedGVI primitives",
-      "description": "FedGVI generalized-Bayes primitives (divergences, bounded losses, generalized posterior, cavity algebra, robust aggregation) were reimplemented for categorical beliefs.",
-      "evidence": "A typed, deterministic, pure-NumPy/ SciPy reimplementation of the FedGVI [ Mildner et al. , 2025b] generalized-Bayes primitives — divergences, bounded robust losses, the generalized posterior, the cavity/factor algebra, and robust aggregation"
+      "name": "Discrete-categorical generalized-Bayes belief sharing",
+      "description": "Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+      "evidence": "standard belief sharing appears as the non-robust corner"
     },
     {
-      "name": "Three-step federation protocol: local update, broadcast, server fusion",
-      "description": "Agents form generalized-Bayes posteriors against their cavity, broadcast them, and a server fuses them, with each agent's heard consensus excluding its own message.",
-      "evidence": "Agent 𝑛 observes 𝑜𝑛 and forms a local posterior 𝑞𝑛(𝑠)over the shared factor by a generalized-Bayes update against its own cavity"
-    },
-    {
-      "name": "Server rules: sharp reweighting heuristic and variational aggregate",
-      "description": "Two server aggregators are compared: a divergence-reweighting heuristic and an objective-backed variational_aggregate derived from an aggregation free energy.",
-      "evidence": "We derive an aggregation free energy eq. 8 whose exact block updates define the variational_aggregate rule"
-    },
-    {
-      "name": "Paired Wilcoxon tests with BH-FDR and bootstrap CIs over 960 trials",
-      "description": "Robust-vs-naive contrasts under contamination use matched-pairs Wilcoxon signed-rank tests deflated with Benjamini-Hochberg FDR and bootstrap confidence intervals.",
-      "evidence": "is produced only by a matched-pairs Wilcoxon signed-rank test [ Wilcoxon, 1945] deflated across the divergence family with Benjamini–Hochberg FDR"
-    },
-    {
-      "name": "Simulation study suite on a 7-agent, 9-location sentinel POMDP",
-      "description": "Studies run on a fixed ensemble of 7 agents sharing a 9-location factor (seed 0), plus acuity recovery, disjoint-observation and MLP-transfer extensions.",
-      "evidence": "The study is run over a fixed ensemble of 7 agents sharing a factor of 9 locations, with all randomness seeded at 0"
+      "name": "Separate robustness claim owners",
+      "description": "Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+      "evidence": "no robustness guarantee transferred between them"
     }
   ],
   "key_findings": [
-    "Recovery contract: KL/NLL client limits recover closed-form Bayes and the zero-robustness server branch recovers the log-linear pool, with maximum deviations of 5.55e-17 and 0.",
-    "Across 960 paired trials at the verdict contamination rate, the headline robust method (RKL) reached accuracy 0.9867 versus 0.9021 for the naive pool.",
-    "The server heuristic is regime-dependent: at the most severe swept rate the best robust mean reached 0.9880 versus 0.6928 for the standard pool, an operating-point contrast only.",
-    "In a disjoint-observation extension, communicating agents (0.493) outperformed isolated agents (0.326) across 128 seeds, framed as evidence for that configuration only.",
-    "The authors state the evidence does not establish universal Byzantine tolerance, truth recovery, calibration, or an optimal robustness parameter."
+    "The reported containment result recovers ordinary belief sharing when robustness is turned off.",
+    "Client, heuristic-server and variational-server statements are explicitly kept separate rather than inheriting one another's guarantees."
   ],
   "key_findings_evidence": [
-    "The KL/NLL client limits of the declared generalized-Bayes construction recover the closed- form Bayes update, while the zero-robustness server branch recovers the project log-linear pool, with maximum measured deviations of 5.55e-17 and 0",
-    "Across 960 paired trials the headline display method (RKL; tied set: RKL, AR, beta, rcce) reaches accuracy 0.9867 against the naive pool’s 0.9021 at the verdict rate",
-    "At the most severe swept rate, the highest pooled robust mean reaches 0.9880 against the standard pool’s 0.6928 (tbl. 3)",
-    "across 128 seeds isolated accuracy is 0.326 versus communicating 0.493, a reproducible margin under the declared matched-seed comparison",
-    "The evidence does not establish universal Byzantine tolerance, truth recovery, calibration, or an optimal robustness parameter."
+    "ordinary belief sharing is recovered when robustness is turned off",
+    "the paper keeps source-conditional client updates"
   ],
   "summary_provenance": {
     "source": "full_text.md",
-    "date": "2026-10-01",
+    "date": "2026-11-06",
+    "source_pdf_sha256": "8ca4d13e9316d4640184b8fdeb9300a000bf9e8203946b21aef1fe5c23caf729",
+    "source_text_sha256": "335f1cf5c76cb3d9b096853eca228fbdd025e73df26625a595dad0dcccdfe2b7",
+    "selected_record_id": "22149133",
     "work_kind": "theoretical",
-    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Theory plus simulation-only evaluation (synthetic categorical POMDP, declared contamination mechanisms); no real federated deployment. Paper explicitly separates theorem-bearing client-side results from the server-side heuristic, which carries only a recovery-limit guarantee. Some contribution text contains extraction-garbled residual values (e.g. '≤ 0 residual'), avoided in quotes.",
-    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
-  }
+    "method": "AI-assisted review of the selected deposited abstract, quoted passages and stated limitations. Every current method/finding quote is mechanically present in the selected extraction. This is source-text support, not new computational, mathematical, scientific or human verification.",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "historical_summary": "Complete prior folder metadata and master prose are preserved in source_evidence.json beside the retained historical extraction."
+  },
+  "pages": 90,
+  "pdf_sha256": "8ca4d13e9316d4640184b8fdeb9300a000bf9e8203946b21aef1fe5c23caf729",
+  "abstract": "The selected Active Fedference 1.1.0 manuscript presents a discrete-categorical connection between active-inference belief sharing and a generalized-Bayes family. It separately assigns claims to source-conditional client updates, a recovery-only heuristic server rule and an objective-backed variational server rule; no robustness guarantee transfers between those axes. The manuscript reports recovery, contamination, sensitivity and socket-backed studies from deterministic artifacts. This catalog refresh does not reproduce those studies or establish general robustness or real-world deployment efficacy.",
+  "abstract_provenance": {
+    "source": "full_text.md",
+    "source_text_sha256": "335f1cf5c76cb3d9b096853eca228fbdd025e73df26625a595dad0dcccdfe2b7",
+    "source_pdf_sha256": "8ca4d13e9316d4640184b8fdeb9300a000bf9e8203946b21aef1fe5c23caf729",
+    "date": "2026-11-06",
+    "kind": "curated_summary",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "scope": "Cautious source summary of the selected abstract and stated limitations; no independent reproduction or complete author-abstract claim."
+  },
+  "remote_primary_pdf": {
+    "name": "active_fedference_combined.pdf",
+    "url": "https://zenodo.org/api/records/22149133/files/active_fedference_combined.pdf/content",
+    "bytes": 12604278,
+    "sha256": "8ca4d13e9316d4640184b8fdeb9300a000bf9e8203946b21aef1fe5c23caf729",
+    "record_id": "22149133",
+    "version": "1.1.0"
+  },
+  "license": "MIT",
+  "license_url": "https://opensource.org/license/mit/",
+  "rights_note": "The selected registry record declares this license; no additional third-party rights or scientific approval are inferred.",
+  "source_release_review": {
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "selected_pdf_record": "22149133",
+    "selected_pdf_version": "1.1.0",
+    "retained_release_role": "Existing GitHub release fields are retained source references; generic repository/title or concept-DOI links do not establish the selected PDF edition.",
+    "scientific_or_runtime_reproduction": false,
+    "historical_text_file": "full_text_before_2026-11-06.md"
+  },
+  "document_title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus"
 }

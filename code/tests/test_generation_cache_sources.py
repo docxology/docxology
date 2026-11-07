@@ -223,3 +223,52 @@ def test_real_updates_renderer_rebuilds_from_changed_source_in_subprocess(
     assert after != before and new.encode() in after
     assert "(0, 1)" in run_driver()
     assert (tmp_path / "updates.html").read_bytes() == after
+
+
+# These readers validate the reviewed registry's independent per-paper evidence.
+# The research-tools entries accompany its reviewed literal-CSL/type consumer.
+REVIEWED_AUTHOR_EVIDENCE_INPUTS = (
+    ("export-bibliography", "papers/2026_Fixture/source_evidence.json"),
+    ("export-bibliography-final", "papers/2026_Fixture/source_evidence.json"),
+    ("sync-publications", "papers/2026_Fixture/source_evidence.json"),
+    ("sync-publications-final", "papers/2026_Fixture/source_evidence.json"),
+    ("paper-documents", "papers/2026_Fixture/source_evidence.json"),
+    ("research-tools", "papers/2026_Fixture/source_evidence.json"),
+    ("export-bibliography-final", "data/work-authors.json"),
+    ("research-tools", "data/work-authors.json"),
+)
+
+
+@pytest.mark.parametrize("identifier,changed_path", REVIEWED_AUTHOR_EVIDENCE_INPUTS)
+def test_reviewed_author_evidence_changes_rerun_cached_consumers(
+    tmp_path, identifier, changed_path
+):
+    """An evidence-only edit must reach the owning writer and its validator.
+
+    The runner seam isolates cache admission; author-evidence validation itself
+    is exercised by the source-bound literal-authority tests.
+    """
+    step = next(
+        step for step in LOCAL_GENERATION_STEPS if step.identifier == identifier
+    )
+    _seed_sources(tmp_path, step)
+    for relative in (
+        "data/work-authors.json",
+        "papers/2026_Fixture/source_evidence.json",
+    ):
+        source = tmp_path / relative
+        source.parent.mkdir(parents=True, exist_ok=True)
+        source.write_text(
+            '{"fixture": "original reviewed evidence"}\n', encoding="utf-8"
+        )
+    calls: list[str] = []
+    assert _run(step, tmp_path, calls) == (1, 0)
+    assert _run(step, tmp_path, calls) == (0, 1)
+
+    # Keep all generated projections and code fixed; only authority bytes change.
+    (tmp_path / changed_path).write_text(
+        '{"fixture": "corrected reviewed evidence"}\n', encoding="utf-8"
+    )
+    assert _run(step, tmp_path, calls) == (1, 0)
+    assert _run(step, tmp_path, calls) == (0, 1)
+    assert calls == [step.script, step.script]

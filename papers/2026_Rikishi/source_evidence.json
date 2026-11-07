@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "source_pdf": {
+    "record_id": "23987671",
+    "concept_doi": "10.5281/zenodo.23987670",
+    "artifact_doi": "10.5281/zenodo.23987671",
+    "version": "1.1.0",
+    "url": "https://zenodo.org/api/records/23987671/files/rikishi-1.1.0-paper.pdf/content",
+    "name": "rikishi-1.1.0-paper.pdf",
+    "bytes": 7559279,
+    "sha256": "0c4ced81075d3f4c6a5fae772b5497882dddc3fbae17fedce21e8b37336ada27",
+    "md5": "dbba80515a260e12b78a0617044e0175",
+    "pages": 54,
+    "text_sha256": "305d87a65fcb8e6a8b89315a5634e2a85863cdcc7c720d3d064a9102da5ed070",
+    "extractor": "pypdf",
+    "extractor_version": "6.21.4",
+    "review_scope": "Exact deposited-byte size/MD5/SHA-256 verification and all-page text extraction; no scientific, mathematical, visual or human approval."
+  },
+  "extraction": {
+    "file": "full_text.md",
+    "sha256": "305d87a65fcb8e6a8b89315a5634e2a85863cdcc7c720d3d064a9102da5ed070",
+    "source_pdf_sha256": "0c4ced81075d3f4c6a5fae772b5497882dddc3fbae17fedce21e8b37336ada27",
+    "tool": "pypdf 6.21.4",
+    "method": "All 54 pages extracted in document order with page markers; no OCR or bulk image extraction."
+  },
+  "document_observation": {
+    "first_page_text_sha256": "95253810f35f757f3bcc96e9ef4f39c001a730b555d5357702cc6ec3066241b3",
+    "title_words_matched": true,
+    "byline_text": "Daniel Ari Friedman",
+    "pages_with_license_terms": [
+      51
+    ],
+    "review_scope": "AI-assisted curator read of extracted title-page text corroborates the frozen configuration and exact deposited creator. No independent scientific or visual approval.",
+    "title": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+    "byline": [
+      "Friedman, Daniel Ari"
+    ],
+    "release": "1.1.0",
+    "date": "2026-11-06"
+  },
+  "rights_observation": {
+    "registry_license": "CC-BY-4.0",
+    "scope": "Original manuscript and figures; third-party excerpts and fonts retain original terms. Frozen source LICENSE-PAPER.md corroborates the declared grant; no third-party relicensing inferred."
+  },
+  "source_acquisition_receipt_sha256": "fdb9cdecc3b81e48f1918225da79832b0a2589f0cdc8cabe549f6fc6fa1fc09a",
+  "observed_at": "2026-11-06T17:48:04.837653+00:00",
+  "privacy_scan": {
+    "contains_local_paths": false,
+    "secret_pattern_matches": 0,
+    "scope": "Selected public full_text.md and serialized proposed source evidence."
+  },
+  "registry_observation": {
+    "record_id": "23987671",
+    "doi": "10.5281/zenodo.23987671",
+    "conceptdoi": "10.5281/zenodo.23987670",
+    "title": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+    "publication_date": "2026-11-06",
+    "version": "1.1.0",
+    "creators": [
+      {
+        "name": "Friedman, Daniel Ari",
+        "affiliation": "Active Inference Institute",
+        "orcid": "0000-0001-6232-9096"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "record_json_sha256": "e25d6908a4203d60b41017b827150e80296390b42488421c6710aa80e4bbebbd",
+    "record_url": "https://zenodo.org/records/23987671"
+  },
+  "curation_review": {
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "reviewed_at": "2026-11-06T18:45:07Z",
+    "scope": "Exact deposit, frozen release metadata and extracted title/byline/edition review. No scientific validation or named human approval."
+  }
+}

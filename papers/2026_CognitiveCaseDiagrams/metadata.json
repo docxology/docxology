@@ -3,7 +3,7 @@
   "version": "2.7.0",
   "doi": "10.5281/zenodo.19695259",
   "doi_url": "https://doi.org/10.5281/zenodo.19695259",
-  "zenodo_record": "https://zenodo.org/records/19695259",
+  "zenodo_record": "https://zenodo.org/records/22774403",
   "record_id": "22774403",
   "publication_date": "2026-09-15",
   "resource_type": {
@@ -18,7 +18,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "Linguistic case offers a setting in which to examine how diagrams connect relational structure, compositional syntax, and uncertainty. This article reviews categorical approaches and supplies an executable collection of deliberately small examples. The implementation includes case-role graphs, pregroup derivations, tensor contractions, synthetic similarity matrices, Bayesian filtering, quantile utilities, and positive-operator-valued measurements. These components share notation, but their mathematical relationships require separate assumptions; a common diagrammatic vocabulary does not establish their equivalence.\n\nThe principal contribution is an inspectable comparison of these constructions and their limits. We distinguish generated derivations from illustrative drawings, finite score distributions from Bellman return distributions, presentation statistics from topos invariants, and model-unit prediction errors from physiological measurements. The accompanying suite collects 1883 tests across 94 files; that is a collection count, and a separate source-bound quality receipt records 1883 passing tests with 92.13% line-and-branch coverage (Appendix C). The figure pipeline produces 33 figures from source. All numerical illustrations use synthetic inputs; no corpus study, participant experiment, EEG fit, quantum-hardware run, or deployed-agent security evaluation is reported. Topos-theoretic transfer, cognitive advantages of case diagrams, and case-based authorization remain research proposals with explicit validation requirements. This is working revision 2.7.0; its local validation does not constitute publication or independent mathematical certification.",
+  "description": "The deposited 2.7.0 manuscript reviews categorical approaches to linguistic case using deliberately small executable examples. It distinguishes generated derivations, finite score distributions, presentation statistics and model-unit prediction errors from stronger mathematical or physiological claims. It reports 1883 tests across 94 files and 33 source-generated figures, while all numerical illustrations use synthetic inputs. No corpus study, participant experiment, EEG fit, quantum-hardware run or deployed-agent security evaluation is reported; this catalog refresh does not reproduce the reported software results.",
   "keywords": [],
   "files": [
     {
@@ -54,42 +54,24 @@
   ],
   "github_repo": "docxology/cognitive_case_diagrams",
   "source": "zenodo-only",
-  "checked_at": "2026-09-24T18:29:54Z",
+  "checked_at": "2026-11-06T18:26:53.054038+00:00",
   "domain": "Active Inference",
   "type": "Paper",
   "methods": [
     {
-      "name": "Case systems formalized as categories with alignment types as functors",
-      "description": "Reviews case systems as categories whose objects are case roles and morphisms are grammatical relations, treating each alignment type as a structure-preserving functor.",
-      "evidence": "We review formalized linguistic case systems as categories whose objects are case roles and whose morphisms are grammatical relations"
+      "name": "Executable categorical and distributional examples",
+      "description": "Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+      "evidence": "The implementation includes case-role graphs"
     },
     {
-      "name": "Case-typed DisCoCat/DisCoCirc string diagrams for sentence and discourse",
-      "description": "Extends DisCoCat with case-typed noun spaces and alignment-sensitive meaning functors, and uses DisCoCirc for discourse-level composition.",
-      "evidence": "We extended the DisCoCat framework (section 8) with case-typed noun spaces and alignment-sensitive meaning functors"
-    },
-    {
-      "name": "[0,1]-enriched case categories and categorical magnitude",
-      "description": "Equips case categories with [0,1]-valued hom-objects and uses categorical magnitude as an invariant for comparing case systems.",
-      "evidence": "we showed that equipping case categories with [0, 1]-valued hom-objects yields a principled bridge between symbolic case grammar and statistical semantics."
-    },
-    {
-      "name": "Integration with Distributional Active Inference to derive ERP predictions",
-      "description": "Embeds the case framework in a Distributional Active Inference model to state falsifiable predictions for P600, N400 and garden-path reanalysis.",
-      "evidence": "three falsifiable ERP predictions (precision-weighted P600 amplitude, magnitude-change N400 proxy, garden-path reanalysis cost) that empirically test the framework"
-    },
-    {
-      "name": "Open-source Python implementation with automated tests and generated figures",
-      "description": "Implements the formal structures in a src/ package with a no-mocks test suite and programmatically generated figures.",
-      "evidence": "The framework is computationally implemented and verified through 1197 automated tests across 64 test files (sixty-four files)."
+      "name": "Explicit comparison of constructions and assumptions",
+      "description": "Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+      "evidence": "their mathematical relationships require separate assumptions"
     }
   ],
   "key_findings": [
-    "The review captures nominative-accusative, ergative-absolutive, active-stative, tripartite and fluid-S alignment within one algebraic framework linked by alignment functors.",
-    "Within case-typed string diagrams, passivization reduces to a type permutation (a Swap in the pregroup category).",
-    "When multi-turn agent interactions are modeled as a fixed category of licensed morphisms, prompt injection can be analyzed as ill-typed role promotion (a functorial type violation): a specification target, not a guarantee on current LLM APIs.",
-    "The topos-theoretic equivalence chain across typological, type-logical, distributional and enriched case theories is presented as a research program, not a finished theorem.",
-    "The accompanying code has 1197 tests across 64 files at 95.96% line-and-branch coverage on src/, plus 30 programmatically generated figures."
+    "A common diagrammatic vocabulary is not presented as proof that the constructions are equivalent.",
+    "The reported numerical illustrations are synthetic; cognitive, topos-transfer and authorization claims retain explicit validation requirements."
   ],
   "related_papers": [
     "2018_WoodliceAndMen",
@@ -99,24 +81,59 @@
   "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0",
   "release_tag": "v2.4.0",
   "release_name": "v2.4.0 — Synthetic studies and reproducible agent interfaces",
-  "pdf_sha256": "",
+  "pdf_sha256": "d5cc1413f8a2cc86d2d29e16db5a5d106e1e825d6f102ce339113207db7d186b",
   "pairing_confidence": "strong",
   "pairing_evidence": [
     "github_release_mentions_doi"
   ],
   "key_findings_evidence": [
-    "This formalization captures the full typological range of alignment systems—nominative-accusative, ergative- absolutive, active-stative, tripartite, and fluid-S—within a single algebraic framework",
-    "We further demonstrated that passivization reduces to a type permutation (a Swap operation in the pregroup category), making voice alternation visible as a topological feature of the string diagram.",
-    "prompt injection aligns with ill-typed role promotion and can be analyzed as a functorial type violation — an engi- neering and specification target, not an automatic guarantee, on present-day LLM APIs.",
-    "The schematic equivalence chain for typological, type-logical, distributional, and enriched case theories is a research program—not a single finished theorem covering all of linguistics",
-    "the manuscript is accompanied by 1197 executable tests across sixty-four test files at 95.96% line-and-branch coverage on src/ (from coverage.json) and 30 programmatically generated figures"
+    "a common diagrammatic vocabulary does not\nestablish their equivalence",
+    "All numerical\nillustrations use synthetic inputs"
   ],
   "summary_provenance": {
     "source": "full_text.md",
-    "date": "2026-10-01",
+    "date": "2026-11-06",
+    "source_pdf_sha256": "d5cc1413f8a2cc86d2d29e16db5a5d106e1e825d6f102ce339113207db7d186b",
+    "source_text_sha256": "4ec4b2cf12dad61a40a1e28d79c6591a3356a27bb85dc2822817c891a0d8f819",
+    "selected_record_id": "22774403",
     "work_kind": "review",
-    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Long theoretical review with an accompanying software implementation; ERP predictions are proposed, not tested against neurophysiological data, and the prompt-injection result is explicitly scoped to an idealised protocol category. The extraction header names the PDF title 'Compositional Approaches to Linguistic Case for Cognitive Modeling', while page 1 matches the bibliography title.",
-    "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
-  }
+    "method": "AI-assisted review of the selected deposited abstract, quoted passages and stated limitations. Every current method/finding quote is mechanically present in the selected extraction. This is source-text support, not new computational, mathematical, scientific or human verification.",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "historical_summary": "Complete prior folder metadata and master prose are preserved in source_evidence.json beside the retained historical extraction."
+  },
+  "artifact_doi": "10.5281/zenodo.22774403",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.22774403",
+  "pages": 47,
+  "abstract": "The deposited 2.7.0 manuscript reviews categorical approaches to linguistic case using deliberately small executable examples. It distinguishes generated derivations, finite score distributions, presentation statistics and model-unit prediction errors from stronger mathematical or physiological claims. It reports 1883 tests across 94 files and 33 source-generated figures, while all numerical illustrations use synthetic inputs. No corpus study, participant experiment, EEG fit, quantum-hardware run or deployed-agent security evaluation is reported; this catalog refresh does not reproduce the reported software results.",
+  "abstract_provenance": {
+    "source": "full_text.md",
+    "source_text_sha256": "4ec4b2cf12dad61a40a1e28d79c6591a3356a27bb85dc2822817c891a0d8f819",
+    "source_pdf_sha256": "d5cc1413f8a2cc86d2d29e16db5a5d106e1e825d6f102ce339113207db7d186b",
+    "date": "2026-11-06",
+    "kind": "curated_summary",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "scope": "Cautious source summary of the selected abstract and stated limitations; no independent reproduction or complete author-abstract claim."
+  },
+  "remote_primary_pdf": {
+    "name": "cognitive_case_diagrams-2.7.0.pdf",
+    "url": "https://zenodo.org/api/records/22774403/files/cognitive_case_diagrams-2.7.0.pdf/content",
+    "bytes": 15244209,
+    "sha256": "d5cc1413f8a2cc86d2d29e16db5a5d106e1e825d6f102ce339113207db7d186b",
+    "record_id": "22774403",
+    "version": "2.7.0"
+  },
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "rights_note": "The selected registry record declares this license; no additional third-party rights or scientific approval are inferred.",
+  "source_release_review": {
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "selected_pdf_record": "22774403",
+    "selected_pdf_version": "2.7.0",
+    "retained_release_role": "Existing GitHub release fields are retained source references; generic repository/title or concept-DOI links do not establish the selected PDF edition.",
+    "scientific_or_runtime_reproduction": false,
+    "historical_text_file": "full_text_before_2026-11-06.md"
+  },
+  "document_title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case"
 }

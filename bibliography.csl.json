@@ -7603,5 +7603,210 @@
     "publisher": "Zenodo (preprint)",
     "DOI": "10.5281/zenodo.18288113",
     "URL": "https://doi.org/10.5281/zenodo.18288113"
+  },
+  {
+    "id": "Friedman2026RikishiReproducibleOperationAnalysis236",
+    "type": "article-journal",
+    "title": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 236; docs: papers/2026_Rikishi/",
+    "container-title": "Zenodo (preprint)",
+    "publisher": "Zenodo (preprint)",
+    "DOI": "10.5281/zenodo.23987670",
+    "URL": "https://doi.org/10.5281/zenodo.23987670"
+  },
+  {
+    "id": "Friedman20262026ActiveInferenceSymposium237",
+    "type": "book",
+    "title": "2026 Active Inference Symposium — Presenter Program",
+    "author": [
+      {
+        "literal": "Active Inference Institute"
+      },
+      {
+        "literal": "Bradly Alicea"
+      },
+      {
+        "literal": "Dan Corva, Kevin Backhouse"
+      },
+      {
+        "literal": "Hongju Pae"
+      },
+      {
+        "literal": "Karl Friston"
+      },
+      {
+        "literal": "Alison Gopnik"
+      },
+      {
+        "literal": "Bianca Avanzo"
+      },
+      {
+        "literal": "Ed Ober"
+      },
+      {
+        "literal": "John Boik, Glen EP Ropella"
+      },
+      {
+        "literal": "Luca Possati"
+      },
+      {
+        "literal": "Majid D. Beni"
+      },
+      {
+        "literal": "Mike Levin"
+      },
+      {
+        "literal": "Montijn van Loo"
+      },
+      {
+        "literal": "Ryan Smith"
+      },
+      {
+        "literal": "Sergio Rubin"
+      },
+      {
+        "literal": "Takuya Isomura"
+      },
+      {
+        "literal": "Ted J. Vrioni"
+      },
+      {
+        "literal": "Ahmad Nazzal"
+      },
+      {
+        "literal": "Alexander Sabine"
+      },
+      {
+        "literal": "Andrew Pashea"
+      },
+      {
+        "literal": "Anna Pereira"
+      },
+      {
+        "literal": "Avel Guénin—Carlut"
+      },
+      {
+        "literal": "Bo Lee"
+      },
+      {
+        "literal": "Bruce Tisler"
+      },
+      {
+        "literal": "Cleber Gomes"
+      },
+      {
+        "literal": "Colin Turfus"
+      },
+      {
+        "literal": "Daniel Dragolich"
+      },
+      {
+        "literal": "Daniel Friedman"
+      },
+      {
+        "literal": "Diaconescu Adrian-Stelian"
+      },
+      {
+        "literal": "Harshil Shah, Andrew Pashea"
+      },
+      {
+        "literal": "Harshil Shah, Satyaki Maitra"
+      },
+      {
+        "literal": "Holly Grimm, John H. Clippinger, Daniel Ari Friedman"
+      },
+      {
+        "literal": "Hyojun Choi"
+      },
+      {
+        "literal": "Jean-François Cloutier"
+      },
+      {
+        "literal": "Lancelot Da Costa"
+      },
+      {
+        "literal": "Matthew Brown"
+      },
+      {
+        "literal": "Michael Lennon"
+      },
+      {
+        "literal": "Michael Walker"
+      },
+      {
+        "literal": "Nick Hay, Adam Safron"
+      },
+      {
+        "literal": "Patricia Craja"
+      },
+      {
+        "literal": "Paulo Santiago"
+      },
+      {
+        "literal": "Rajkaushik Borgohain"
+      },
+      {
+        "literal": "Robert Worden"
+      },
+      {
+        "literal": "Sheena Yap Chan"
+      },
+      {
+        "literal": "Stell"
+      },
+      {
+        "literal": "Steph Macurdy"
+      },
+      {
+        "literal": "Tao Gong"
+      },
+      {
+        "literal": "Tiga Kailimai"
+      },
+      {
+        "literal": "Tran Hoang Linh"
+      },
+      {
+        "literal": "Viraj Deshwal"
+      },
+      {
+        "literal": "Vitalii Shapovalov"
+      },
+      {
+        "literal": "Vitória de Souza"
+      },
+      {
+        "literal": "Xin Sun"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Book",
+    "keyword": "Media & Teaching; Book",
+    "note": "Catalog row 237; docs: papers/2026_SymposiumPresenterProgram/",
+    "container-title": "Zenodo (presenter program)",
+    "publisher": "Zenodo (presenter program)",
+    "DOI": "10.5281/zenodo.23986504",
+    "URL": "https://doi.org/10.5281/zenodo.23986504"
   }
 ]

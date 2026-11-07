@@ -1640,6 +1640,15 @@
       "path": "2026_ReproducibleResearch/SKILL.md"
     },
     {
+      "path": "2026_Rikishi/AGENTS.md"
+    },
+    {
+      "path": "2026_Rikishi/README.md"
+    },
+    {
+      "path": "2026_Rikishi/SKILL.md"
+    },
+    {
       "path": "2026_RobustBeliefSharing/AGENTS.md"
     },
     {
@@ -1683,6 +1692,15 @@
     },
     {
       "path": "2026_StatesChange/SKILL.md"
+    },
+    {
+      "path": "2026_SymposiumPresenterProgram/AGENTS.md"
+    },
+    {
+      "path": "2026_SymposiumPresenterProgram/README.md"
+    },
+    {
+      "path": "2026_SymposiumPresenterProgram/SKILL.md"
     },
     {
       "path": "2026_SynthOBSFractiSynth/AGENTS.md"

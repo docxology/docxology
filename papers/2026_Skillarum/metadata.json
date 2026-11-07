@@ -3,7 +3,7 @@
   "version": "0.3.1",
   "doi": "10.5281/zenodo.22663906",
   "doi_url": "https://doi.org/10.5281/zenodo.22663906",
-  "zenodo_record": "https://zenodo.org/records/22663906",
+  "zenodo_record": "https://zenodo.org/records/23271010",
   "record_id": "23271010",
   "publication_date": "2026-10-09",
   "resource_type": {
@@ -17,7 +17,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "Source code for Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation. Skillarum turns selected public website pages into portable SKILL.md documents for agent harnesses such as Codex, Claude Code, and Hermes, in five inspectable stages (acquire, prepare, process, parse, render) with provenance manifests and an evidence-gated research package. Release 0.3.0 added index-derived profiles (one skill per page listed on a site's own index; 528 Math 4 Wisdom Research pages), block-preserving extraction, authored target descriptions, and math4wisdom-cube, a versioned investigation skill with separate source, mathematics, interpretation, and test ledgers, audited by three independent AI investigators whose verbatim reports are included. Release 0.3.1 is a correction release: math4wisdom-cube 0.3.0 withdraws an investigator claim that 0.2.0 adopted without recomputation (1+3+3+1 is not the generic grading pattern) and adds a check for the corrected statement; the changelog's account of investigator independence and two documentation statements are corrected.",
+  "description": "The selected Skillarum manuscript describes a five-stage pipeline that compiles selected server-rendered website pages into portable SKILL.md artifacts with provenance, resumability and explicit provider/fallback histories. Its current report summarizes 538 persisted observations from three source profiles and 535 target bundles. A reported 100% package-valid rate applies only to completed runs and is not an end-to-end success probability or population estimate. Human-review agreement is pending, and this catalog refresh does not rerun or independently validate those observations.",
   "keywords": [
     "website extraction",
     "agent skills",
@@ -65,65 +65,48 @@
   "github_release_url": "https://github.com/docxology/Skillarum/releases/tag/v0.3.1",
   "release_tag": "v0.3.1",
   "release_name": "Skillarum 0.3.1",
-  "pdf_sha256": "",
+  "pdf_sha256": "97b26c9a8b558a280f804875c6023fbbd2db31a705f11874c5e993837336abee",
   "pairing_confidence": "strong",
   "pairing_evidence": [
     "github_release_mentions_doi",
     "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked"
   ],
-  "checked_at": "2026-10-12T18:48:29Z",
+  "checked_at": "2026-11-06T18:30:30.130532+00:00",
   "methods": [
     {
-      "name": "Five-stage pipeline: acquisition, preparation, generation, parsing, rendering",
-      "description": "Skillarum turns selected server-rendered pages into SKILL.md packages through separated stages that record page hashes, URLs, request events, provider attempts and integrity metadata.",
-      "evidence": "The system separates acquisition, preparation, generation (the 03_process stage), parsing, and rendering, while recording page hashes, canonical and final URLs, request events, provider attempts, fallback history, and artifact integrity metadata."
+      "name": "Separated acquisition-to-rendering pipeline with provenance",
+      "description": "Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+      "evidence": "The system separates acquisition, preparation, generation"
     },
     {
-      "name": "SHA-256 content-aware cache identities and provenance predicates",
-      "description": "Defines a formal model with hashed cache identities and a provenance-completeness predicate combining package-level provenance with pagewise lineage.",
-      "evidence": "𝐻denotes SHA-256 over the implementation’s defined serialization; hash-based integrity relies on its collision resistance and does not authenticate a source or operator."
-    },
-    {
-      "name": "Interchangeable generators with deterministic default and fallback",
-      "description": "Deterministic, OpenAI, Ollama, command and fallback generators with typed retry traces; all recorded backends in the reported runs were deterministic.",
-      "evidence": "interchangeable deterministic, OpenAI, Ollama, command, and fallback generators with typed retry traces and target-name enforcement;"
-    },
-    {
-      "name": "Live case studies on two configured website source areas",
-      "description": "Evaluation runs on Math 4 Wisdom and Active Inference Institute website profiles and their target bundles, alongside local fixture tests for redirects, robots, injection and caching.",
-      "evidence": "The 2 configured source areas are Math 4 Wisdom and the Active Inference Institute, with target bundles declared in their profiles."
-    },
-    {
-      "name": "Clopper–Pearson reference intervals and planned weighted Cohen kappa",
-      "description": "Reports rates with exact binomial reference intervals and a seeded bootstrap policy; human-review agreement is to use linear-weighted kappa once two raters exist.",
-      "evidence": "Exact Clopper–Pearson intervals [Clopper and Pearson, 1934] are provided as binomial-model reference intervals, assuming independent Bernoulli trials with a common probability."
+      "name": "Typed contracts and content-aware cache identities",
+      "description": "Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+      "evidence": "typed contracts and content-aware cache identities"
     }
   ],
   "key_findings": [
-    "Across 7 completed observations from 2 source profiles, the package-valid rate was 100.0%, with 0 fallback observations and 5 truncated pages.",
-    "The author stresses these rates are conditional on run completion and descriptive, not an end-to-end success probability or population estimate.",
-    "Source coverage was 37 of 37 page mappings, with a 95% model reference interval of 90.5% to 100.0%.",
-    "Human-review agreement is pending: the report contains no rater identifiers or shared cases, so no inter-rater statistic is reported.",
-    "The paper states it does not establish improved semantic quality, lower latency, complete coverage or downstream safety; these remain hypotheses."
+    "The current manuscript reports 538 observations, three source profiles and 535 target bundles, superseding the older seven-observation summary.",
+    "Completed-run package validity is descriptive and conditional; human-review agreement remains pending."
   ],
   "key_findings_evidence": [
-    "The current report summarizes 7 persisted observations from 2 source profiles and 7 target bundles. The package- valid rate among completed runs is 100.0%, with 0 recorded fallback observations and 5 truncated pages.",
-    "These values are conditional on run completion; they are descriptive observations, not an end-to-end success probability or a population estimate.",
-    "source coverage 37 / 37 100.0% 90.5% to 100.0%",
-    "The current report contains 0 distinct rater identifiers and 0 shared cases.",
-    "It does not establish that Skillarum improves semantic quality, reduces provider latency, provides complete website coverage, or is safer in every downstream agent runtime."
+    "The current report summarizes 538 persisted observations from 3 source profiles and 535 target bundles",
+    "Human-review agreement is currently pending"
   ],
   "summary_provenance": {
     "source": "full_text.md",
-    "date": "2026-10-01",
+    "date": "2026-11-06",
+    "source_pdf_sha256": "97b26c9a8b558a280f804875c6023fbbd2db31a705f11874c5e993837336abee",
+    "source_text_sha256": "557e08e35a74cfd09077fb852e91cda1380d204f4c9c75a380ea9e8eadabb2a1",
+    "selected_record_id": "23271010",
     "work_kind": "software/methods",
-    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Small bounded case-study evaluation (2 sites, 7 runs, deterministic backend only, server-rendered HTML only); no human evaluation yet. Metadata flag: the PDF title page gives DOI 10.5281/zenodo.22663907, while README/metadata.json/AGENTS.md use 10.5281/zenodo.22663906 (metadata.json record_id is 22663907); likely concept vs version DOI, worth confirming.",
-    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+    "method": "AI-assisted review of the selected deposited abstract, quoted passages and stated limitations. Every current method/finding quote is mechanically present in the selected extraction. This is source-text support, not new computational, mathematical, scientific or human verification.",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "historical_summary": "Complete prior folder metadata and master prose are preserved in source_evidence.json beside the retained historical extraction."
   },
-  "artifact_doi": "10.5281/zenodo.22663907",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.22663907",
+  "artifact_doi": "10.5281/zenodo.23271010",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.23271010",
   "concept_doi": "10.5281/zenodo.22663906",
   "doi_role_verification": {
     "date": "2026-10-01",
@@ -141,5 +124,37 @@
         ]
       }
     ]
-  }
+  },
+  "pages": 22,
+  "abstract": "The selected Skillarum manuscript describes a five-stage pipeline that compiles selected server-rendered website pages into portable SKILL.md artifacts with provenance, resumability and explicit provider/fallback histories. Its current report summarizes 538 persisted observations from three source profiles and 535 target bundles. A reported 100% package-valid rate applies only to completed runs and is not an end-to-end success probability or population estimate. Human-review agreement is pending, and this catalog refresh does not rerun or independently validate those observations.",
+  "abstract_provenance": {
+    "source": "full_text.md",
+    "source_text_sha256": "557e08e35a74cfd09077fb852e91cda1380d204f4c9c75a380ea9e8eadabb2a1",
+    "source_pdf_sha256": "97b26c9a8b558a280f804875c6023fbbd2db31a705f11874c5e993837336abee",
+    "date": "2026-11-06",
+    "kind": "curated_summary",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "scope": "Cautious source summary of the selected abstract and stated limitations; no independent reproduction or complete author-abstract claim."
+  },
+  "remote_primary_pdf": {
+    "name": "Skillarum_combined.pdf",
+    "url": "https://zenodo.org/api/records/23271010/files/Skillarum_combined.pdf/content",
+    "bytes": 3763934,
+    "sha256": "97b26c9a8b558a280f804875c6023fbbd2db31a705f11874c5e993837336abee",
+    "record_id": "23271010",
+    "version": "0.3.1"
+  },
+  "license": "MIT",
+  "license_url": "https://opensource.org/license/mit/",
+  "rights_note": "The selected registry record declares this license; no additional third-party rights or scientific approval are inferred.",
+  "source_release_review": {
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "selected_pdf_record": "23271010",
+    "selected_pdf_version": "0.3.1",
+    "retained_release_role": "Exact selected-record release crosslinks in both frozen source directions.",
+    "scientific_or_runtime_reproduction": false,
+    "historical_text_file": "full_text_before_2026-11-06.md"
+  },
+  "document_title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation"
 }

@@ -1,0 +1,347 @@
+{
+  "schema_version": "1.0",
+  "source_pdf": {
+    "record_id": "23986505",
+    "concept_doi": "10.5281/zenodo.23986504",
+    "artifact_doi": "10.5281/zenodo.23986505",
+    "version": "3.2.0",
+    "url": "https://zenodo.org/api/records/23986505/files/Active-Inference-Symposium-2026-Presenter-Program-v3.2.0.pdf/content",
+    "name": "Active-Inference-Symposium-2026-Presenter-Program-v3.2.0.pdf",
+    "bytes": 6704950,
+    "sha256": "cbb841093377dbeacdae95e8ac035c12be81d41bd59c66bdb6edf679febbf4a8",
+    "md5": "43c81ca91f4c7ed4321e8494ea612993",
+    "pages": 62,
+    "text_sha256": "4bda4fa49cecddab9e0f4f32444db3e49938c2c1870d4f57b22b84818417f331",
+    "extractor": "PyMuPDF",
+    "extractor_version": "1.28.2",
+    "review_scope": "Exact deposited-byte size/MD5/SHA-256 verification and all-page text extraction; no scientific, mathematical, visual or human approval."
+  },
+  "extraction": {
+    "file": "full_text.md",
+    "sha256": "4bda4fa49cecddab9e0f4f32444db3e49938c2c1870d4f57b22b84818417f331",
+    "source_pdf_sha256": "cbb841093377dbeacdae95e8ac035c12be81d41bd59c66bdb6edf679febbf4a8",
+    "tool": "PyMuPDF 1.28.2",
+    "method": "All 62 pages extracted in document order with page markers; no OCR or bulk image extraction."
+  },
+  "document_observation": {
+    "credit_labels": [
+      "Active Inference Institute",
+      "Bradly Alicea",
+      "Dan Corva, Kevin Backhouse",
+      "Hongju Pae",
+      "Karl Friston",
+      "Alison Gopnik",
+      "Bianca Avanzo",
+      "Ed Ober",
+      "John Boik, Glen EP Ropella",
+      "Luca Possati",
+      "Majid D. Beni",
+      "Mike Levin",
+      "Montijn van Loo",
+      "Ryan Smith",
+      "Sergio Rubin",
+      "Takuya Isomura",
+      "Ted J. Vrioni",
+      "Ahmad Nazzal",
+      "Alexander Sabine",
+      "Andrew Pashea",
+      "Anna Pereira",
+      "Avel Guénin—Carlut",
+      "Bo Lee",
+      "Bruce Tisler",
+      "Cleber Gomes",
+      "Colin Turfus",
+      "Daniel Dragolich",
+      "Daniel Friedman",
+      "Diaconescu Adrian-Stelian",
+      "Harshil Shah, Andrew Pashea",
+      "Harshil Shah, Satyaki Maitra",
+      "Holly Grimm, John H. Clippinger, Daniel Ari Friedman",
+      "Hyojun Choi",
+      "Jean-François Cloutier",
+      "Lancelot Da Costa",
+      "Matthew Brown",
+      "Michael Lennon",
+      "Michael Walker",
+      "Nick Hay, Adam Safron",
+      "Patricia Craja",
+      "Paulo Santiago",
+      "Rajkaushik Borgohain",
+      "Robert Worden",
+      "Sheena Yap Chan",
+      "Stell",
+      "Steph Macurdy",
+      "Tao Gong",
+      "Tiga Kailimai",
+      "Tran Hoang Linh",
+      "Viraj Deshwal",
+      "Vitalii Shapovalov",
+      "Vitória de Souza",
+      "Xin Sun"
+    ],
+    "credit_unit": "53 institutional, presenter and composite group display labels: AII plus 52 presenter/group labels; not a verified people count.",
+    "cover_text_sha256": "9b7fec59448a48c02eef8dc66c017eae7a1e402534e53dc3118f035d194aa50c",
+    "cover_preview_sha256": "14798e494ebdd95266937dca7779b6f6a782ec11e0f47a065ea8431edd43e795",
+    "cover_review": "AI-assisted inspection of the single cover preview and extracted cover labels. Published order and composite labels agree with the registry. No editor role inferred; no full-book visual review.",
+    "edition": "3.2.0",
+    "event_dates": "2026-11-12/2026-11-13",
+    "event_status": "Pre-event working program as of the November 5 deposit; no claim of attendance, completed talks or completed pending abstracts."
+  },
+  "rights_observation": {
+    "registry_license": "MIT",
+    "deposited_license_sha256": "757b4f0a698bc60665ab37f15c83a0834ce4c6f8b66d8794a614c00f6dd8e14b",
+    "publication_json_sha256": "55977a280c4720a1b90c637c8de470d21d308ff6ce28149834b1b2f66f8885bc",
+    "scope": "The registry, deposited LICENSE.txt and versioned release classify this book edition as MIT. Supplied abstracts and credits are reproduced as deposited; no broader third-party permissions or independent identity verification are inferred."
+  },
+  "source_acquisition_receipt_sha256": "7ae7fe250dcc5832e8b3674ab3887ceb8b5c886e7300a4a13129133e4f38c509",
+  "observed_at": "2026-11-06T17:59:20.521552+00:00",
+  "privacy_scan": {
+    "contains_local_paths": false,
+    "secret_pattern_matches": 0,
+    "scope": "Selected public full_text.md and serialized proposed source evidence."
+  },
+  "registry_observation": {
+    "record_id": "23986505",
+    "doi": "10.5281/zenodo.23986505",
+    "conceptdoi": "10.5281/zenodo.23986504",
+    "title": "2026 Active Inference Symposium — Presenter Program",
+    "publication_date": "2026-11-05",
+    "version": "3.2.0",
+    "creators": [
+      {
+        "name": "Active Inference Institute",
+        "affiliation": null
+      },
+      {
+        "name": "Bradly Alicea",
+        "affiliation": "Active Inference Institute (SAB)"
+      },
+      {
+        "name": "Dan Corva, Kevin Backhouse",
+        "affiliation": null
+      },
+      {
+        "name": "Hongju Pae",
+        "affiliation": null
+      },
+      {
+        "name": "Karl Friston",
+        "affiliation": null
+      },
+      {
+        "name": "Alison Gopnik",
+        "affiliation": null
+      },
+      {
+        "name": "Bianca Avanzo",
+        "affiliation": null
+      },
+      {
+        "name": "Ed Ober",
+        "affiliation": null
+      },
+      {
+        "name": "John Boik, Glen EP Ropella",
+        "affiliation": null
+      },
+      {
+        "name": "Luca Possati",
+        "affiliation": null
+      },
+      {
+        "name": "Majid D. Beni",
+        "affiliation": null
+      },
+      {
+        "name": "Mike Levin",
+        "affiliation": null
+      },
+      {
+        "name": "Montijn van Loo",
+        "affiliation": "Tilburg University",
+        "orcid": "0009-0003-0249-3240"
+      },
+      {
+        "name": "Ryan Smith",
+        "affiliation": null
+      },
+      {
+        "name": "Sergio Rubin",
+        "affiliation": null
+      },
+      {
+        "name": "Takuya Isomura",
+        "affiliation": null
+      },
+      {
+        "name": "Ted J. Vrioni",
+        "affiliation": "Junior Consultant at Vrioni Consulting"
+      },
+      {
+        "name": "Ahmad Nazzal",
+        "affiliation": "Zayed University",
+        "orcid": "0000-0002-6558-0734"
+      },
+      {
+        "name": "Alexander Sabine",
+        "affiliation": "Active Inference BoD",
+        "orcid": "0000-0001-8462-2656"
+      },
+      {
+        "name": "Andrew Pashea",
+        "affiliation": "Active Inference Institute (SAB)"
+      },
+      {
+        "name": "Anna Pereira",
+        "affiliation": null
+      },
+      {
+        "name": "Avel Guénin—Carlut",
+        "affiliation": null
+      },
+      {
+        "name": "Bo Lee",
+        "affiliation": null
+      },
+      {
+        "name": "Bruce Tisler",
+        "affiliation": null
+      },
+      {
+        "name": "Cleber Gomes",
+        "affiliation": null,
+        "orcid": "0009-0005-9134-2384"
+      },
+      {
+        "name": "Colin Turfus",
+        "affiliation": "https://substack.com/@colinturfus"
+      },
+      {
+        "name": "Daniel Dragolich",
+        "affiliation": null
+      },
+      {
+        "name": "Daniel Friedman",
+        "affiliation": "Active Inference Institute (Officer), College of the Redwoods"
+      },
+      {
+        "name": "Diaconescu Adrian-Stelian",
+        "affiliation": null
+      },
+      {
+        "name": "Harshil Shah, Andrew Pashea",
+        "affiliation": null
+      },
+      {
+        "name": "Harshil Shah, Satyaki Maitra",
+        "affiliation": null
+      },
+      {
+        "name": "Holly Grimm, John H. Clippinger, Daniel Ari Friedman",
+        "affiliation": null
+      },
+      {
+        "name": "Hyojun Choi",
+        "affiliation": null
+      },
+      {
+        "name": "Jean-François Cloutier",
+        "affiliation": null
+      },
+      {
+        "name": "Lancelot Da Costa",
+        "affiliation": null
+      },
+      {
+        "name": "Matthew Brown",
+        "affiliation": null
+      },
+      {
+        "name": "Michael Lennon",
+        "affiliation": null
+      },
+      {
+        "name": "Michael Walker",
+        "affiliation": null
+      },
+      {
+        "name": "Nick Hay, Adam Safron",
+        "affiliation": null
+      },
+      {
+        "name": "Patricia Craja",
+        "affiliation": null
+      },
+      {
+        "name": "Paulo Santiago",
+        "affiliation": null
+      },
+      {
+        "name": "Rajkaushik Borgohain",
+        "affiliation": null
+      },
+      {
+        "name": "Robert Worden",
+        "affiliation": null
+      },
+      {
+        "name": "Sheena Yap Chan",
+        "affiliation": null
+      },
+      {
+        "name": "Stell",
+        "affiliation": null
+      },
+      {
+        "name": "Steph Macurdy",
+        "affiliation": null
+      },
+      {
+        "name": "Tao Gong",
+        "affiliation": null
+      },
+      {
+        "name": "Tiga Kailimai",
+        "affiliation": null
+      },
+      {
+        "name": "Tran Hoang Linh",
+        "affiliation": null
+      },
+      {
+        "name": "Viraj Deshwal",
+        "affiliation": null
+      },
+      {
+        "name": "Vitalii Shapovalov",
+        "affiliation": null
+      },
+      {
+        "name": "Vitória de Souza",
+        "affiliation": null
+      },
+      {
+        "name": "Xin Sun",
+        "affiliation": null
+      }
+    ],
+    "license": {
+      "id": "mit-license"
+    },
+    "record_json_sha256": "4f54ccf2fb4ccc3b95a9e0c32855131007d07f3b340c241be5fc1927eaf95ba4",
+    "record_url": "https://zenodo.org/records/23986505"
+  },
+  "curation_review": {
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "reviewed_at": "2026-11-06T18:45:07Z",
+    "scope": "Exact deposit, frozen release metadata and extracted title/byline/edition review. No scientific validation or named human approval."
+  },
+  "alternative_extractions": [
+    {
+      "tool": "pypdf 6.21.4",
+      "sha256": "64677fc1fc204934b61726998364cf70e084e6afc50a30caa08b6a0cc04c53f8",
+      "status": "Retained privately; joined word spacing on cover. Selected full_text.md uses PyMuPDF instead."
+    }
+  ],
+  "review_scope": "Verified acquired size/MD5/SHA-256, all-page extracted text and cover-only AI-assisted image inspection. No full-book visual, human, scientific, contributor-identity or event-completion approval."
+}

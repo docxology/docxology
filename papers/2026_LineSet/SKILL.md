@@ -1,12 +1,12 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Line Set: Holding Instruments Apart"
-description: "A thin reader that declares what a set of small evaluative instruments is, reads whichever sibling packages are installed, and checks one narrow property: that no two of them have given the same spelling to different things. It adds no instrument of ..."
+description: "The selected deposit is a 248-page collected volume whose cover names nine works; the canonical registry citation remains The Line Set: Holding Instruments Apart. Its opening Line Set work describes eight instruments and a reader that checks declared..."
 tags: ["modularity", "information-hiding", "separation-of-concerns", "boundary-objects", "namespace-collision", "declarative-registry", "reproducible-review", "open-science"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *The Line Set: Holding Instruments Apart*. Zenodo."
 doi: "10.5281/zenodo.21754243"
-artifact_doi: "10.5281/zenodo.21754244"
+artifact_doi: "10.5281/zenodo.22833507"
 ---
 
 # The Line Set: Holding Instruments Apart
@@ -21,21 +21,15 @@ This work addresses topics in **Computational**: modularity, information hiding,
 
 Primary methods and techniques applied in this work:
 
-- **Declarative set registry: four LineEntry records plus one shared token** — Declares the set (Red, Black, Golden, White Line) as data, each entry naming its question, job, and what it must not become.
-- **Five-stage reader with fixed-precedence set statuses** — Reads installed sibling packages through resolve, bind, collide, declare and status stages, returning one of four SET_-prefixed readings.
-- **Enum-member name collision check across sibling package roots** — Collects enum member names each line publishes at its package root and flags any name carried by more than one line, unless declared and disambiguated.
-- **Seven offline structural checks plus a self-application check** — Runs seven declaration-only checks and an eighth that applies the package's own collision check to a declaration including itself.
-- **Executed extensibility example appending a fifth colour at runtime** — Appends a hypothetical green_line entry without editing the package and runs the battery and reader on the extended declaration.
+- **Declared instrument-vocabulary collision reader** — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.
+- **Five-stage reader and explicit status precedence** — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.
 
 ## Key Findings
 
 Core contributions and results:
 
-- On the review date the four packages yielded 81 line-and-name pairs spanning 80 distinct names, and the only shared name was the already-declared, disambiguated one.
-- The single shared name was OUTSIDE_SCOPE, carried by red_line and black_line.
-- Appending a fifth line whose package is not installed yielded SET_PARTIAL, which the author argues is the correct answer rather than a shortfall.
-- The author stresses that disjoint vocabularies are a necessary, not sufficient, condition: the check cannot detect conceptual overlap between instruments.
-- The paper states the set digest is a comparison handle only, not tamper evidence or a record of who changed what.
+- The current opening work describes eight sibling instruments and treats the Line Set as a ninth work with no instrument of its own.
+- Non-overlapping vocabulary does not establish conceptual non-overlap or that the instruments are correct or sufficient.
 
 Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
@@ -48,10 +42,10 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 Verification points for this work:
 
 - Canonical DOI: 10.5281/zenodo.21754243
-- PDF SHA-256: See zenodo_record
+- PDF SHA-256: deaac4ed4bb747b4fd7c97fe67535ff28fd65764b4ae9a45e2225ab589b69f25
 - Pairing confidence: unknown
-- Last checked: 2026-08-02T15:11:27Z
-- Artifact DOI: 10.5281/zenodo.21754244
+- Last checked: 2026-11-06T18:27:15.602557+00:00
+- Artifact DOI: 10.5281/zenodo.22833507
 
 ## Prerequisites
 

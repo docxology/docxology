@@ -1,11 +1,11 @@
 {
   "title": "The Witness Register: Co-Registration Without Aggregation",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "doi": "10.5281/zenodo.21754245",
   "doi_url": "https://doi.org/10.5281/zenodo.21754245",
-  "zenodo_record": "https://zenodo.org/records/21754245",
-  "record_id": "21754246",
-  "publication_date": "2026-08-02",
+  "zenodo_record": "https://zenodo.org/records/22833511",
+  "record_id": "22833511",
+  "publication_date": "2026-09-18",
   "resource_type": {
     "title": "Working paper",
     "type": "publication",
@@ -18,7 +18,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "A shared register that co-registers independent instruments' report envelopes without aggregating them. It stores each report's envelope verbatim, records cross-instrument relations as separate describing records, keeps history append-only and sealed, and — only when asked, for one declared next use — emits a bounded posture that always points back at the state that earned it. It never parses, compares, ranks, averages, or merges any instrument's native status. Subtitle: A shared register for line report envelopes that never ranks, merges, or overrides the instruments it holds Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+  "description": "The selected Witness Register edition describes a co-registration layer that retains line-report envelopes and authored cross-line relations without ranking or aggregating native statuses. It specifies digest-sealed chained states and a requested non-compensatory posture. The text distinguishes intake shape checks from truth checks, notes that the chain tip needs an external anchor, and denies that its posture supplies a decision or permission. These are manuscript-reported design boundaries, not newly executed software guarantees.",
   "keywords": [
     "co-registration",
     "append-only log",
@@ -31,63 +31,46 @@
   "files": [
     {
       "name": "witness_register_combined.pdf",
-      "size_bytes": 674133,
-      "checksum": "md5:39b992ddcfc27fad95fa150c9973303e",
-      "download_url": "https://zenodo.org/api/records/21754246/files/witness_register_combined.pdf/content"
+      "size_bytes": 674684,
+      "checksum": "md5:e5ad1aaddafab1d23af861432f7c2a00",
+      "download_url": "https://zenodo.org/api/records/22833511/files/witness_register_combined.pdf/content"
     }
   ],
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-08-02T15:11:22Z",
+  "checked_at": "2026-11-06T18:27:13.394678+00:00",
   "methods": [
     {
-      "name": "witness_register Python package with shape-check intake of envelopes",
-      "description": "A small Python package with no line-package imports accepts line.report-envelope/1.0 JSON envelopes by value after a schema shape check, storing native_status verbatim.",
-      "evidence": "The register lives as a Python package — witness_register — with no import dependencies on any line package. It never imports black_line, golden_line, red_line, or white_line."
+      "name": "Envelope co-registration with separate authored relations",
+      "description": "Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+      "evidence": "records cross-line relations as separate authored records"
     },
     {
-      "name": "SHA-256 sealed, prior_ref-chained append-only witness states",
-      "description": "Each state is sealed by SHA-256 over canonical JSON and chained to its predecessor; the prior seal is re-derived before extension so tampering fails closed.",
-      "evidence": "sealed by state_digest = SHA-256 over the canonical JSON of every other field including record order. States form a chain: a genesis state carries an empty prior_ref"
-    },
-    {
-      "name": "Non-compensatory -1/0/+1 projection with fixed precedence rules",
-      "description": "For a declared next use, a bounded posture is computed from relation records only: unresolved block forces -1, empty state is -1, any hold caps at 0.",
-      "evidence": "any non-compensatory block with no recorded human decision forces −1; an empty state is −1, because nothing to witness is not permission"
-    },
-    {
-      "name": "Formal definitions and propositions bound to named tests",
-      "description": "Definitions and propositions (append-only, non-compensatory, determinism, etc.) are each bound to a named test in the package's test suite.",
-      "evidence": "Every definition and proposition below is written from the module it describes and bound to the running package by a named test in tests/test_formalism.py"
-    },
-    {
-      "name": "3x3 canonical witness battery with falsification pass; real envelopes",
-      "description": "Nine constructed cases (positive, negative, adversarial) are run against the projection, with planted errors to confirm checks can fail; worked examples use real envelopes from four lines.",
-      "evidence": "three positive cases (the register should pass), three negative cases (it should hold), and three adversarial cases (it should reject)."
+      "name": "Canonical digest and prior-reference state chain",
+      "description": "Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+      "evidence": "States are sealed by\na digest over their complete canonical content"
     }
   ],
   "key_findings": [
-    "On four real envelopes describing different subjects, chain verification was clean, return recoverability and relation fidelity were 1.0, and the posture was held at 0.",
-    "In the same-subject example, meeting the return contract lifted only the return_due hold, and the posture stayed at 0 because one open question entered as an unresolved dependency.",
-    "A non-compensatory block forced -1 both alone and under fifty AGREES relations; an empty register was -1.",
-    "Every battery check passed on the real register, and every case raised BatteryError when its observed behaviour was deliberately falsified.",
-    "The author states limits: the chain tip is unbound without an external anchor, intake is a shape check not a truth check, and examples cover one date and nine constructed states."
+    "The manuscript explicitly distinguishes intake shape validation from a truth check.",
+    "The declared posture is not a decision, utility or boundary-owner permission, and the chain tip remains unbound without an external anchor."
   ],
   "key_findings_evidence": [
-    "intakes all four unmodified, builds the two-state chain, and measures: chain verification clean ( Proposition 1 ), return recoverability 1.0, relation fidelity 1.0",
-    "Completing the contract lifts exactly the return_due hold and nothing else — the incomparability relation still holds the first chain at 0",
-    "A non-compensatory block forces -1 alone and under fifty AGREES relations alike; an empty register is -1, not permission",
-    "every check passed on the real register, and — measured in the same build — every case raised BatteryError when its observed behaviour was deliberately falsified",
-    "The tip is unbound without an external anchor the chain does not control. Intake is a shape check, never a truth check."
+    "Intake is a shape check, never a truth check",
+    "The posture is not a decision, not a utility, and not permission from any boundary owner"
   ],
   "summary_provenance": {
     "source": "full_text.md",
-    "date": "2026-10-01",
+    "date": "2026-11-06",
+    "source_pdf_sha256": "78d34b5db3f603e4c65d17ae8511a78fe1356363611cbb1a4581c1126f4d1c44",
+    "source_text_sha256": "029c7259e01ac310494b81219e3a3fc5fe5975ceb8f5c7287f077a71d1a35ad5",
+    "selected_record_id": "22833511",
     "work_kind": "software/methods",
-    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Self-measures evaluate only the register's own bookkeeping; the same-subject example is a self-application (the register as its own subject), as the paper itself notes.",
-    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+    "method": "AI-assisted review of the selected deposited abstract, quoted passages and stated limitations. Every current method/finding quote is mechanically present in the selected extraction. This is source-text support, not new computational, mathematical, scientific or human verification.",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "historical_summary": "Complete prior folder metadata and master prose are preserved in source_evidence.json beside the retained historical extraction."
   },
   "latest_software_release": {
     "version": "v0.2.0",
@@ -96,5 +79,39 @@
     "source_report": "reports/publication_intake_2026-10-23.json",
     "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
     "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
-  }
+  },
+  "artifact_doi": "10.5281/zenodo.22833511",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.22833511",
+  "pages": 21,
+  "pdf_sha256": "78d34b5db3f603e4c65d17ae8511a78fe1356363611cbb1a4581c1126f4d1c44",
+  "abstract": "The selected Witness Register edition describes a co-registration layer that retains line-report envelopes and authored cross-line relations without ranking or aggregating native statuses. It specifies digest-sealed chained states and a requested non-compensatory posture. The text distinguishes intake shape checks from truth checks, notes that the chain tip needs an external anchor, and denies that its posture supplies a decision or permission. These are manuscript-reported design boundaries, not newly executed software guarantees.",
+  "abstract_provenance": {
+    "source": "full_text.md",
+    "source_text_sha256": "029c7259e01ac310494b81219e3a3fc5fe5975ceb8f5c7287f077a71d1a35ad5",
+    "source_pdf_sha256": "78d34b5db3f603e4c65d17ae8511a78fe1356363611cbb1a4581c1126f4d1c44",
+    "date": "2026-11-06",
+    "kind": "curated_summary",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "scope": "Cautious source summary of the selected abstract and stated limitations; no independent reproduction or complete author-abstract claim."
+  },
+  "remote_primary_pdf": {
+    "name": "witness_register_combined.pdf",
+    "url": "https://zenodo.org/api/records/22833511/files/witness_register_combined.pdf/content",
+    "bytes": 674684,
+    "sha256": "78d34b5db3f603e4c65d17ae8511a78fe1356363611cbb1a4581c1126f4d1c44",
+    "record_id": "22833511",
+    "version": "0.1.1"
+  },
+  "license": null,
+  "rights_note": "No license field was supplied by the selected frozen registry record. Paper rights are recorded as unknown; a repository/software license is not transferred to the paper.",
+  "source_release_review": {
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "selected_pdf_record": "22833511",
+    "selected_pdf_version": "0.1.1",
+    "retained_release_role": "Existing GitHub release fields are retained source references; generic repository/title or concept-DOI links do not establish the selected PDF edition.",
+    "scientific_or_runtime_reproduction": false,
+    "historical_text_file": "full_text_before_2026-11-06.md"
+  },
+  "document_title": "The Witness Register: Co-Registration Without Aggregation"
 }

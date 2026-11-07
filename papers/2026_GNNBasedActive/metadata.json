@@ -3,7 +3,7 @@
   "version": "0.5.0",
   "doi": "10.5281/zenodo.23670187",
   "doi_url": "https://doi.org/10.5281/zenodo.23670187",
-  "zenodo_record": "https://zenodo.org/records/23670187",
+  "zenodo_record": "https://zenodo.org/records/23676081",
   "record_id": "23676081",
   "publication_date": "2026-10-26",
   "resource_type": {
@@ -18,7 +18,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "An inspectable Generalized Notation Notation (GNN)-specified active inference Battleship implementation, manuscript, and reproducibility materials. Finite-catalog Bayesian inference and one-shot objectives; no unrestricted optimality or empirical efficacy claim. Version 0.5.0 is the organization and visual-explanation edition: transferred GitHub repository, updated DOI-bearing manuscript, enhanced dashboard explanations, and a captioned 20-minute lecture with slides and transcript. Scientific traces and statistical design are unchanged. Synthetic local Aiden narration; original script and artwork are CC BY 4.0.",
+  "description": "The selected 0.5.0 Battleship manuscript describes exact categorical Bayesian inference conditional on a reproducibly sampled finite fleet catalog and a one-step preference-and-information objective. It reports a prospectively specified 1280-search follow-up across 256 paired units and five strategies, with strategy comparisons limited to the declared generator and objectives. The text explicitly disclaims an unrestricted Battleship solver, a new inference principle or a validated educational intervention. This catalog refresh does not reproduce its seeded analyses or statistical results.",
   "keywords": [
     "active inference",
     "Battleship",
@@ -165,11 +165,77 @@
   "github_release_url": "https://github.com/ActiveInferenceInstitute/active_inference_battleship/releases/tag/v0.5.0",
   "release_tag": "v0.5.0",
   "release_name": "Active Inference Battleship v0.5.0 — organization edition",
-  "pdf_sha256": "",
+  "pdf_sha256": "185ef512d594656acfee81c14fdd8e280e7d4e837e2b27a8d0c597c46b3cde00",
   "pairing_confidence": "strong",
   "pairing_evidence": [
     "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked"
   ],
-  "checked_at": "2026-11-01T01:04:10Z"
+  "checked_at": "2026-11-06T18:30:37.911454+00:00",
+  "artifact_doi": "10.5281/zenodo.23676081",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.23676081",
+  "pages": 24,
+  "abstract": "The selected 0.5.0 Battleship manuscript describes exact categorical Bayesian inference conditional on a reproducibly sampled finite fleet catalog and a one-step preference-and-information objective. It reports a prospectively specified 1280-search follow-up across 256 paired units and five strategies, with strategy comparisons limited to the declared generator and objectives. The text explicitly disclaims an unrestricted Battleship solver, a new inference principle or a validated educational intervention. This catalog refresh does not reproduce its seeded analyses or statistical results.",
+  "methods": [
+    {
+      "name": "Finite-catalog Bayesian inference and one-step objective",
+      "description": "Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+      "evidence": "exact\ncategorical Bayesian inference conditional on a reproducibly sampled finite catalog"
+    },
+    {
+      "name": "Specified paired strategy comparison",
+      "description": "Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+      "evidence": "across 256 fresh\npaired catalog/truth units and five strategies"
+    }
+  ],
+  "key_findings": [
+    "The reported comparisons are scoped to the declared generator and objectives rather than a generally superior strategy.",
+    "The manuscript presents an inspectable implementation rather than an unrestricted solver or validated educational intervention."
+  ],
+  "key_findings_evidence": [
+    "These findings concern the declared generator and objectives, not a generally\nsuperior strategy",
+    "rather than a new\ninference principle, an unrestricted Battleship solver, or a validated educational intervention"
+  ],
+  "summary_provenance": {
+    "source": "full_text.md",
+    "date": "2026-11-06",
+    "source_pdf_sha256": "185ef512d594656acfee81c14fdd8e280e7d4e837e2b27a8d0c597c46b3cde00",
+    "source_text_sha256": "709b2c0e8b610e326423d3e6aa18ca7e83ce542fbe6feaf20356ec3ecdde4ec1",
+    "selected_record_id": "23676081",
+    "work_kind": "software/methods",
+    "method": "AI-assisted review of the selected deposited abstract, quoted passages and stated limitations. Every current method/finding quote is mechanically present in the selected extraction. This is source-text support, not new computational, mathematical, scientific or human verification.",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "historical_summary": "Complete prior folder metadata and master prose are preserved in source_evidence.json beside the retained historical extraction."
+  },
+  "abstract_provenance": {
+    "source": "full_text.md",
+    "source_text_sha256": "709b2c0e8b610e326423d3e6aa18ca7e83ce542fbe6feaf20356ec3ecdde4ec1",
+    "source_pdf_sha256": "185ef512d594656acfee81c14fdd8e280e7d4e837e2b27a8d0c597c46b3cde00",
+    "date": "2026-11-06",
+    "kind": "curated_summary",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "scope": "Cautious source summary of the selected abstract and stated limitations; no independent reproduction or complete author-abstract claim."
+  },
+  "remote_primary_pdf": {
+    "name": "active_inference_battleship_combined.pdf",
+    "url": "https://zenodo.org/api/records/23676081/files/active_inference_battleship_combined.pdf/content",
+    "bytes": 2810589,
+    "sha256": "185ef512d594656acfee81c14fdd8e280e7d4e837e2b27a8d0c597c46b3cde00",
+    "record_id": "23676081",
+    "version": "0.5.0"
+  },
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "rights_note": "The selected registry record declares this license; no additional third-party rights or scientific approval are inferred.",
+  "source_release_review": {
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "selected_pdf_record": "23676081",
+    "selected_pdf_version": "0.5.0",
+    "retained_release_role": "Existing GitHub release fields are retained source references; generic repository/title or concept-DOI links do not establish the selected PDF edition.",
+    "scientific_or_runtime_reproduction": false,
+    "historical_text_file": null
+  },
+  "document_title": "GNN-based active inference for Battleship"
 }

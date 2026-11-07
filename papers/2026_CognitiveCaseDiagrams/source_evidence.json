@@ -1,0 +1,427 @@
+{
+  "schema_version": "1.0",
+  "source_pdf": {
+    "record_id": "22774403",
+    "concept_doi": "10.5281/zenodo.19695259",
+    "artifact_doi": "10.5281/zenodo.22774403",
+    "version": "2.7.0",
+    "url": "https://zenodo.org/api/records/22774403/files/cognitive_case_diagrams-2.7.0.pdf/content",
+    "name": "cognitive_case_diagrams-2.7.0.pdf",
+    "bytes": 15244209,
+    "sha256": "d5cc1413f8a2cc86d2d29e16db5a5d106e1e825d6f102ce339113207db7d186b",
+    "md5": "002eb0a91d4d60fc3ff411afba186b29",
+    "pages": 47,
+    "storage": "remote primary; acquired review copy retained privately"
+  },
+  "extraction": {
+    "file": "full_text.md",
+    "sha256": "4ec4b2cf12dad61a40a1e28d79c6591a3356a27bb85dc2822817c891a0d8f819",
+    "source_pdf_sha256": "d5cc1413f8a2cc86d2d29e16db5a5d106e1e825d6f102ce339113207db7d186b",
+    "tool": "PyMuPDF 1.28.2",
+    "method": "All 47 pages extracted in document order with page markers. No OCR or new image extraction."
+  },
+  "registry_observation": {
+    "record_id": "22774403",
+    "doi": "10.5281/zenodo.22774403",
+    "conceptdoi": "10.5281/zenodo.19695259",
+    "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+    "publication_date": "2026-09-15",
+    "version": "2.7.0",
+    "creators": [
+      {
+        "name": "Friedman, Daniel Ari",
+        "affiliation": null,
+        "orcid": "0000-0001-6232-9096"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "record_json_sha256": "7bf4f4cad60bdc50c2b1c05f3a31883f7d55502ade749943438082db0a324e76",
+    "record_json_serialization": "UTF-8 canonical JSON, sort_keys=True, separators comma/colon, ensure_ascii=False; exact record from the frozen paginated primary acquisition."
+  },
+  "document_observation": {
+    "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+    "byline": [
+      "Friedman, Daniel Ari"
+    ],
+    "affiliation": "Active Inference Institute",
+    "orcid": "0000-0001-6232-9096",
+    "cover_text_sha256": "06955537932301fcc5998a6080093e07ec98ef147de8dfe61b961356abb71044",
+    "review_scope": "Root and curator source-text title/byline review; no full-document visual or scientific approval."
+  },
+  "historical_sources": [
+    {
+      "file": "full_text_before_2026-11-06.md",
+      "sha256": "a198b77ca7241de1b83a7a463a604570c2ac185df7e16afbe545333ef9c3c97d",
+      "edition": "Retained extraction before 2026-11-06; version record not inferred",
+      "binding_basis": "Original extraction header and measured retained local bytes; no historical version ID inferred.",
+      "source_pdf": "cognitive_case_diagrams_v1_DAF_04-23-2026.pdf",
+      "source_pdf_sha256": "3767c3c3090994c67bf9bbf5ddf47d38142a3c76ed859d56d36a052c6c9e284f",
+      "source_pdf_bytes": 13601721,
+      "images": "images/",
+      "image_files": [
+        {
+          "file": "images/page16_img1.png",
+          "bytes": 7284917,
+          "sha256": "275742d72a16236df7aaa9035eb2f00bfcaa6e370c749f03bffd5bab9ceb0cff"
+        },
+        {
+          "file": "images/page18_img1.png",
+          "bytes": 438311,
+          "sha256": "d7cedcdd8321a06532d28b75e2e20b54e9db1be5667a15d054bb87a6ca7b4e6b"
+        },
+        {
+          "file": "images/page19_img1.png",
+          "bytes": 216007,
+          "sha256": "a1efc695223691251f68d506cee1625f98ae48ece2ce12be6b632e6afa100d1b"
+        },
+        {
+          "file": "images/page20_img1.png",
+          "bytes": 122147,
+          "sha256": "fb7b4c4dbc8422ea03fae0ae442dd628c60c279b452faf866e442dfb3911c8c8"
+        },
+        {
+          "file": "images/page23_img1.png",
+          "bytes": 94696,
+          "sha256": "4d4644bc7c22bfba007d444f0a005f4253c6591451832e260211b2d820f8b759"
+        },
+        {
+          "file": "images/page24_img1.png",
+          "bytes": 38211,
+          "sha256": "046c663150dee9a159602633209842545d29295b8606194e25eb5eb04adecfcc"
+        },
+        {
+          "file": "images/page24_img2.png",
+          "bytes": 45613,
+          "sha256": "30c64410fbbab100a5b7363692db35dcf57451cf9a0235c575c919e16a8f8f20"
+        },
+        {
+          "file": "images/page26_img1.png",
+          "bytes": 35857,
+          "sha256": "c8e1fd91ddd6068af473289bb4ba6978e471a9f7155d8573d76fd1eff51d5715"
+        },
+        {
+          "file": "images/page26_img2.png",
+          "bytes": 260744,
+          "sha256": "2140703fdcf778fa9d68de56b1c9d30b847f484d9f90b63ccfd23213809c03f3"
+        },
+        {
+          "file": "images/page29_img1.png",
+          "bytes": 16225,
+          "sha256": "810cda713861dc1e30b175ec6968106ad8de007ee2e053e22294fdb195599245"
+        },
+        {
+          "file": "images/page32_img1.png",
+          "bytes": 26575,
+          "sha256": "8e8750085da29611f47bac3af4ed47198a8b71a6d79c46e78db19e9e82ee07d1"
+        },
+        {
+          "file": "images/page33_img1.png",
+          "bytes": 21691,
+          "sha256": "aa5c2cdef5152cd30d19b17d85badead7d48f449b0fbc2b1cfe306d468b48e61"
+        },
+        {
+          "file": "images/page34_img1.png",
+          "bytes": 20059,
+          "sha256": "76e991c2fb672584d238d867091ef71e89b36a1aeb49befbf366ea84ebc37304"
+        },
+        {
+          "file": "images/page34_img2.png",
+          "bytes": 187007,
+          "sha256": "b84e54903eb5ae18004777084b5bda41137f7d8a1bdd1751ae10ea7790c04a55"
+        },
+        {
+          "file": "images/page35_img1.png",
+          "bytes": 449924,
+          "sha256": "0bb52e86d481e325dd1ac805b7465dc7ac5584e200048d5ad334c96f7ecef621"
+        },
+        {
+          "file": "images/page37_img1.png",
+          "bytes": 24373,
+          "sha256": "38f150373a7bb6da093e447cd8048d2a682eaa97eac6e0a47616a3b515b60a61"
+        },
+        {
+          "file": "images/page38_img1.png",
+          "bytes": 104554,
+          "sha256": "016da3edeb4a74faba1164a97b345c8ab12e77c2f80730cf9f06c32b4d0a9a44"
+        },
+        {
+          "file": "images/page39_img1.png",
+          "bytes": 40820,
+          "sha256": "4a75ee0a79457016dfaa8153e1d4d9a4e40660940d4ebf599311ec84411a529c"
+        },
+        {
+          "file": "images/page40_img1.png",
+          "bytes": 287493,
+          "sha256": "b1a2ae600efb8c345451ed45b235a9f563b8ab8c12379cefd0c9ac80ee2546c8"
+        },
+        {
+          "file": "images/page44_img1.png",
+          "bytes": 344347,
+          "sha256": "68f630b9983b78a97942a4e77469668b8f37429aa2696266d30b6693b1432cf4"
+        },
+        {
+          "file": "images/page50_img1.png",
+          "bytes": 640822,
+          "sha256": "5f93e128c9c63bd163da354628be3b185bba7f593eab62ef8aa4db2e4b4c345d"
+        },
+        {
+          "file": "images/page55_img1.png",
+          "bytes": 439925,
+          "sha256": "b660da2fbab9213b27f6053ef28bfb498e87170439a26ec565d5bdf24046385c"
+        },
+        {
+          "file": "images/page62_img1.png",
+          "bytes": 498548,
+          "sha256": "dbd448459edd029e32bbcbb12d74d297f91790724795772811723889de53f7b4"
+        },
+        {
+          "file": "images/page63_img1.png",
+          "bytes": 506499,
+          "sha256": "d98914c7ecd6b0ce2f8ecd0cdf559e42f9781bdd4c93c4f8ac70eff0bf9b37a6"
+        },
+        {
+          "file": "images/page66_img1.png",
+          "bytes": 505177,
+          "sha256": "9cb8be2abd1a7df7ecb142b78ad0b2731bcfe77007df9d35ad37694e0de8b071"
+        },
+        {
+          "file": "images/page74_img1.png",
+          "bytes": 216883,
+          "sha256": "d50977182d28a7d962a3fe074350d07b291524145994a49bdd31d8d914484ed7"
+        },
+        {
+          "file": "images/page82_img1.png",
+          "bytes": 195552,
+          "sha256": "5d53334aace64f35f943bdb060b576df0368a8a175dfdfd43be3c625d0f1df49"
+        },
+        {
+          "file": "images/page83_img1.png",
+          "bytes": 299642,
+          "sha256": "012d8b79c8f1900b8bbe7ce84a4a4d50cd2e8e015e1d8baffb81d494a3ddc4b2"
+        },
+        {
+          "file": "images/page8_img1.png",
+          "bytes": 323982,
+          "sha256": "9378eea1b4202e0f33d27490aa8fc31461aaaaa8486da516194e24d7bdc6730e"
+        },
+        {
+          "file": "images/page94_img1.png",
+          "bytes": 350477,
+          "sha256": "d4288b95df259fdc2e8dc10c7bdf70514e493c3296f8b2b6c5a4f65190b78dab"
+        }
+      ],
+      "image_scope": "Preserved images remain associated with this historical extraction; no images were extracted from the newly selected PDF."
+    }
+  ],
+  "retained_local_pdfs": [
+    {
+      "file": "cognitive_case_diagrams-2.6.0.pdf",
+      "bytes": 15237745,
+      "sha256": "c9aa300dfd55604dd868f5df2df762b7ad5620db52431e6116e708c3e9d39e62",
+      "relationship": "retained local PDF; version record not inferred"
+    },
+    {
+      "file": "cognitive_case_diagrams_v1_DAF_04-23-2026.pdf",
+      "bytes": 13601721,
+      "sha256": "3767c3c3090994c67bf9bbf5ddf47d38142a3c76ed859d56d36a052c6c9e284f",
+      "relationship": "retained local PDF; version record not inferred"
+    }
+  ],
+  "historical_curation": {
+    "folder_metadata_preimage_sha256": "9c1310d5791e358d3271fb6e1a1956e2e56b5647f65cc849e52e5d6ac792374f",
+    "folder_metadata": {
+      "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+      "version": "2.7.0",
+      "doi": "10.5281/zenodo.19695259",
+      "doi_url": "https://doi.org/10.5281/zenodo.19695259",
+      "zenodo_record": "https://zenodo.org/records/19695259",
+      "record_id": "22774403",
+      "publication_date": "2026-09-15",
+      "resource_type": {
+        "title": "Preprint",
+        "type": "publication",
+        "subtype": "preprint"
+      },
+      "creators": [
+        {
+          "name": "Friedman, Daniel Ari",
+          "affiliation": null,
+          "orcid": "0000-0001-6232-9096"
+        }
+      ],
+      "description": "Linguistic case offers a setting in which to examine how diagrams connect relational structure, compositional syntax, and uncertainty. This article reviews categorical approaches and supplies an executable collection of deliberately small examples. The implementation includes case-role graphs, pregroup derivations, tensor contractions, synthetic similarity matrices, Bayesian filtering, quantile utilities, and positive-operator-valued measurements. These components share notation, but their mathematical relationships require separate assumptions; a common diagrammatic vocabulary does not establish their equivalence.\n\nThe principal contribution is an inspectable comparison of these constructions and their limits. We distinguish generated derivations from illustrative drawings, finite score distributions from Bellman return distributions, presentation statistics from topos invariants, and model-unit prediction errors from physiological measurements. The accompanying suite collects 1883 tests across 94 files; that is a collection count, and a separate source-bound quality receipt records 1883 passing tests with 92.13% line-and-branch coverage (Appendix C). The figure pipeline produces 33 figures from source. All numerical illustrations use synthetic inputs; no corpus study, participant experiment, EEG fit, quantum-hardware run, or deployed-agent security evaluation is reported. Topos-theoretic transfer, cognitive advantages of case diagrams, and case-based authorization remain research proposals with explicit validation requirements. This is working revision 2.7.0; its local validation does not constitute publication or independent mathematical certification.",
+      "keywords": [],
+      "files": [
+        {
+          "name": "cognitive_case_diagrams-2.6.0-synthetic-results.json",
+          "size_bytes": 132639,
+          "checksum": "md5:13f559e99c3e4842659bf2dbb8e2db6c",
+          "download_url": "https://zenodo.org/api/records/22774403/files/cognitive_case_diagrams-2.6.0-synthetic-results.json/content"
+        },
+        {
+          "name": "cognitive_case_diagrams-2.6.0.pdf",
+          "size_bytes": 15237745,
+          "checksum": "md5:f3c5deaa7a18b0eade5a94fe6aea3269",
+          "download_url": "https://zenodo.org/api/records/22774403/files/cognitive_case_diagrams-2.6.0.pdf/content"
+        },
+        {
+          "name": "cognitive_case_diagrams-2.7.0-synthetic-results.json",
+          "size_bytes": 145495,
+          "checksum": "md5:3068bc9e648a28dcacae2cf32064dfcc",
+          "download_url": "https://zenodo.org/api/records/22774403/files/cognitive_case_diagrams-2.7.0-synthetic-results.json/content"
+        },
+        {
+          "name": "cognitive_case_diagrams-2.7.0.pdf",
+          "size_bytes": 15244209,
+          "checksum": "md5:002eb0a91d4d60fc3ff411afba186b29",
+          "download_url": "https://zenodo.org/api/records/22774403/files/cognitive_case_diagrams-2.7.0.pdf/content"
+        }
+      ],
+      "related_resources": [
+        {
+          "type": "repository",
+          "url": "https://github.com/docxology/cognitive_case_diagrams"
+        }
+      ],
+      "github_repo": "docxology/cognitive_case_diagrams",
+      "source": "zenodo-only",
+      "checked_at": "2026-09-24T18:29:54Z",
+      "domain": "Active Inference",
+      "type": "Paper",
+      "methods": [
+        {
+          "name": "Case systems formalized as categories with alignment types as functors",
+          "description": "Reviews case systems as categories whose objects are case roles and morphisms are grammatical relations, treating each alignment type as a structure-preserving functor.",
+          "evidence": "We review formalized linguistic case systems as categories whose objects are case roles and whose morphisms are grammatical relations"
+        },
+        {
+          "name": "Case-typed DisCoCat/DisCoCirc string diagrams for sentence and discourse",
+          "description": "Extends DisCoCat with case-typed noun spaces and alignment-sensitive meaning functors, and uses DisCoCirc for discourse-level composition.",
+          "evidence": "We extended the DisCoCat framework (section 8) with case-typed noun spaces and alignment-sensitive meaning functors"
+        },
+        {
+          "name": "[0,1]-enriched case categories and categorical magnitude",
+          "description": "Equips case categories with [0,1]-valued hom-objects and uses categorical magnitude as an invariant for comparing case systems.",
+          "evidence": "we showed that equipping case categories with [0, 1]-valued hom-objects yields a principled bridge between symbolic case grammar and statistical semantics."
+        },
+        {
+          "name": "Integration with Distributional Active Inference to derive ERP predictions",
+          "description": "Embeds the case framework in a Distributional Active Inference model to state falsifiable predictions for P600, N400 and garden-path reanalysis.",
+          "evidence": "three falsifiable ERP predictions (precision-weighted P600 amplitude, magnitude-change N400 proxy, garden-path reanalysis cost) that empirically test the framework"
+        },
+        {
+          "name": "Open-source Python implementation with automated tests and generated figures",
+          "description": "Implements the formal structures in a src/ package with a no-mocks test suite and programmatically generated figures.",
+          "evidence": "The framework is computationally implemented and verified through 1197 automated tests across 64 test files (sixty-four files)."
+        }
+      ],
+      "key_findings": [
+        "The review captures nominative-accusative, ergative-absolutive, active-stative, tripartite and fluid-S alignment within one algebraic framework linked by alignment functors.",
+        "Within case-typed string diagrams, passivization reduces to a type permutation (a Swap in the pregroup category).",
+        "When multi-turn agent interactions are modeled as a fixed category of licensed morphisms, prompt injection can be analyzed as ill-typed role promotion (a functorial type violation): a specification target, not a guarantee on current LLM APIs.",
+        "The topos-theoretic equivalence chain across typological, type-logical, distributional and enriched case theories is presented as a research program, not a finished theorem.",
+        "The accompanying code has 1197 tests across 64 files at 95.96% line-and-branch coverage on src/, plus 30 programmatically generated figures."
+      ],
+      "related_papers": [
+        "2018_WoodliceAndMen",
+        "2020_BehaviorEngineering",
+        "2021_ModelingConflict"
+      ],
+      "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0",
+      "release_tag": "v2.4.0",
+      "release_name": "v2.4.0 — Synthetic studies and reproducible agent interfaces",
+      "pdf_sha256": "",
+      "pairing_confidence": "strong",
+      "pairing_evidence": [
+        "github_release_mentions_doi"
+      ],
+      "key_findings_evidence": [
+        "This formalization captures the full typological range of alignment systems—nominative-accusative, ergative- absolutive, active-stative, tripartite, and fluid-S—within a single algebraic framework",
+        "We further demonstrated that passivization reduces to a type permutation (a Swap operation in the pregroup category), making voice alternation visible as a topological feature of the string diagram.",
+        "prompt injection aligns with ill-typed role promotion and can be analyzed as a functorial type violation — an engi- neering and specification target, not an automatic guarantee, on present-day LLM APIs.",
+        "The schematic equivalence chain for typological, type-logical, distributional, and enriched case theories is a research program—not a single finished theorem covering all of linguistics",
+        "the manuscript is accompanied by 1197 executable tests across sixty-four test files at 95.96% line-and-branch coverage on src/ (from coverage.json) and 30 programmatically generated figures"
+      ],
+      "summary_provenance": {
+        "source": "full_text.md",
+        "date": "2026-10-01",
+        "work_kind": "review",
+        "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+        "notes": "Long theoretical review with an accompanying software implementation; ERP predictions are proposed, not tested against neurophysiological data, and the prompt-injection result is explicitly scoped to an idealised protocol category. The extraction header names the PDF title 'Compositional Approaches to Linguistic Case for Cognitive Modeling', while page 1 matches the bibliography title.",
+        "reviewed": "2026-10-01 independent review of every item against its quote and context; corrections applied"
+      }
+    },
+    "master_metadata": {
+      "year": "2026",
+      "topic": "CognitiveCaseDiagrams",
+      "name": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+      "description": "Linguistic case offers a setting in which to examine how diagrams connect relational structure, compositional syntax, and uncertainty. This article reviews categorical approaches and supplies an executable collection of deliberately small examples. The implementation includes case-role graphs, pregroup derivations, tensor contractions, synthetic similarity matrices, Bayesian filtering, quantile utilities, and positive-operator-valued measurements. These components share notation, but their mathematical relationships require separate assumptions; a common diagrammatic vocabulary does not establish their equivalence.\n\nThe principal contribution is an inspectable comparison of these constructions and their limits. We distinguish generated derivations from illustrative drawings, finite score distributions from Bellman return distributions, presentation statistics from topos invariants, and model-unit prediction errors from physiological measurements. The accompanying suite collects 1883 tests across 94 files; that is a collection count, and a separate source-bound quality receipt records 1883 passing tests with 92.13% line-and-branch coverage (Appendix C). The figure pipeline produces 33 figures from source. All numerical illustrations use synthetic inputs; no corpus study, participant experiment, EEG fit, quantum-hardware run, or deployed-agent security evaluation is reported. Topos-theoretic transfer, cognitive advantages of case diagrams, and case-based authorization remain research proposals with explicit validation requirements. This is working revision 2.7.0; its local validation does not constitute publication or independent mathematical certification.",
+      "authors": "Daniel Ari Friedman",
+      "abstract": "Linguistic case offers a setting in which to examine how diagrams connect relational structure, compositional syntax, and uncertainty. This article reviews categorical approaches and supplies an executable collection of deliberately small examples. The implementation includes case-role graphs, pregroup derivations, tensor contractions, synthetic similarity matrices, Bayesian filtering, quantile utilities, and positive-operator-valued measurements. These components share notation, but their mathematical relationships require separate assumptions; a common diagrammatic vocabulary does not establish their equivalence.\n\nThe principal contribution is an inspectable comparison of these constructions and their limits. We distinguish generated derivations from illustrative drawings, finite score distributions from Bellman return distributions, presentation statistics from topos invariants, and model-unit prediction errors from physiological measurements. The accompanying suite collects 1883 tests across 94 files; that is a collection count, and a separate source-bound quality receipt records 1883 passing tests with 92.13% line-and-branch coverage (Appendix C). The figure pipeline produces 33 figures from source. All numerical illustrations use synthetic inputs; no corpus study, participant experiment, EEG fit, quantum-hardware run, or deployed-agent security evaluation is reported. Topos-theoretic transfer, cognitive advantages of case diagrams, and case-based authorization remain research proposals with explicit validation requirements. This is working revision 2.7.0; its local validation does not constitute publication or independent mathematical certification.",
+      "keywords": [],
+      "doi": "10.5281/zenodo.19695259",
+      "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0"
+    },
+    "current_quote_presence_against_old_items": {
+      "methods": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "key_findings_evidence": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "scope": "Complete prior values retained as historical source/prose. Old version identifiers in metadata are observations, not inferred bindings of old PDF/image bytes."
+  },
+  "current_summary_review": {
+    "summary_provenance": {
+      "source": "full_text.md",
+      "date": "2026-11-06",
+      "source_pdf_sha256": "d5cc1413f8a2cc86d2d29e16db5a5d106e1e825d6f102ce339113207db7d186b",
+      "source_text_sha256": "4ec4b2cf12dad61a40a1e28d79c6591a3356a27bb85dc2822817c891a0d8f819",
+      "selected_record_id": "22774403",
+      "work_kind": "review",
+      "method": "AI-assisted review of the selected deposited abstract, quoted passages and stated limitations. Every current method/finding quote is mechanically present in the selected extraction. This is source-text support, not new computational, mathematical, scientific or human verification.",
+      "reviewed_by": "Codex AI-assisted public-source curator",
+      "reviewed_at": "2026-11-06T19:09:15Z",
+      "historical_summary": "Complete prior folder metadata and master prose are preserved in source_evidence.json beside the retained historical extraction."
+    },
+    "old_items_retained": false,
+    "scope": "Only text-supported current statements retained; paper-reported counts/results are not fresh reproduction."
+  },
+  "release_reference_review": {
+    "retained_reference_before_refresh": {
+      "github_repo": "docxology/cognitive_case_diagrams",
+      "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0",
+      "release_tag": "v2.4.0",
+      "release_name": "v2.4.0 — Synthetic studies and reproducible agent interfaces"
+    },
+    "selected_reference_scope": "Existing GitHub release fields are retained source references; generic repository/title or concept-DOI links do not establish the selected PDF edition.",
+    "frozen_pair_observation_sha256": "249b32b85678b497868e35d1f65c90cc80b7dc102e6648f8700f885fa3b94f00",
+    "frozen_pair_observation_url": "https://github.com/docxology/docxology/blob/ee837003a2328d28d8234ad5afdcfcd38419e90c/reports/paired_publications_2026-11-06.json"
+  },
+  "rights_observation": {
+    "registry_license": {
+      "id": "cc-by-4.0"
+    },
+    "scope": "The selected registry record declares this license; no additional third-party rights or scientific approval are inferred."
+  },
+  "source_acquisition_receipt_sha256": "b92a833dc89b1e7337dbf6b1d1d900ccbfa879c52869f497e2bae81308995b0c",
+  "reviewed_at": "2026-11-06T19:09:15Z",
+  "reviewed_by": "Codex AI-assisted public-source curator",
+  "review_scope": "Acquired byte integrity, all-page extraction, title/byline and source-quotation review only; no new scientific, computational, mathematical or named human approval.",
+  "privacy_scan": {
+    "contains_local_paths": false,
+    "secret_pattern_count": 0,
+    "source": "Canonical URL-aware scan of selected current text and proposed source evidence; historical text is separately reviewed."
+  }
+}

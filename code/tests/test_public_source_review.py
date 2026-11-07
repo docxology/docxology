@@ -31,6 +31,77 @@ def _write_json(path: Path, payload: dict) -> Path:
     return path
 
 
+def _bind_fixture_pair_edition(paired_path, decisions_path):
+    report = json.loads(paired_path.read_text())
+    decisions = json.loads(decisions_path.read_text())
+    report.setdefault("pairs", [])
+    report.setdefault("zenodo_records", [])
+    for group in decisions["groups"]:
+        candidate = group["raw_candidates"][0]
+        action = next(
+            (
+                a
+                for a in report["actions"]
+                if a.get("doi") == candidate.get("doi")
+                and a.get("github_release_url") == candidate.get("github_release_url")
+            ),
+            None,
+        )
+        if action is None:
+            continue
+        record_id = str(report["actions"].index(action) + 1)
+        record = {
+            "record_id": record_id,
+            "doi": action["doi"],
+            "title": action["title"],
+            "publication_date": "2026-08-25",
+            "version": "1.0.0",
+            "resource_type": {"type": "publication"},
+            "creators": [{"name": "Fixture author"}],
+            "description": "Captured fixture edition.",
+            "keywords": [],
+            "related_identifiers": [],
+            "files": [],
+            "html_url": action["zenodo_record_url"],
+        }
+        if not any(r["record_id"] == record_id for r in report["zenodo_records"]):
+            report["zenodo_records"].append(record)
+            report["pairs"].append(
+                {**action, "record": record, "release": {"tag": action["release_tag"]}}
+            )
+        fingerprint = [
+            action["doi"].casefold(),
+            action["github_release_url"].rstrip("/"),
+            action["zenodo_record_url"].rstrip("/"),
+            action["github_repo"].casefold(),
+            action["title"].casefold(),
+            action["release_tag"],
+        ]
+        candidate["edition_evidence"] = {
+            "schema_version": 1,
+            "record_id": record_id,
+            "record_sha256": hashlib.sha256(
+                json.dumps(
+                    record, sort_keys=True, separators=(",", ":"), ensure_ascii=False
+                ).encode()
+            ).hexdigest(),
+            "candidate_sha256": hashlib.sha256(
+                json.dumps(
+                    fingerprint, separators=(",", ":"), ensure_ascii=False
+                ).encode()
+            ).hexdigest(),
+            "source": {
+                "kind": "git_blob",
+                "commit": "c" * 40,
+                "blob_oid": "d" * 40,
+                "path": "reports/paired_publications_2026-08-25.json",
+                "sha256": "e" * 64,
+            },
+        }
+    _write_json(paired_path, report)
+    _write_json(decisions_path, decisions)
+
+
 def _inputs(root: Path) -> dict[str, Path]:
     reports = root / "reports"
     data = root / "data"
@@ -121,6 +192,7 @@ def _inputs(root: Path) -> dict[str, Path]:
             ],
         },
     )
+    _bind_fixture_pair_edition(paired, decisions)
     doi_review = _write_json(
         reports / "doi_role_reconciliation_2026-08-25.proposed.json",
         {
@@ -372,6 +444,9 @@ def test_durable_pair_decision_can_dispose_an_exact_ambiguous_candidate(
         }
     )
     _write_json(paths["pair_decisions_path"], decisions)
+    _bind_fixture_pair_edition(
+        paths["paired_publications_path"], paths["pair_decisions_path"]
+    )
 
     report = build_review_report(
         repo_root=tmp_path,

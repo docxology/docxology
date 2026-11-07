@@ -1,0 +1,324 @@
+{
+  "title": "2026 Active Inference Symposium — Presenter Program",
+  "version": "3.2.0",
+  "doi": "10.5281/zenodo.23986504",
+  "doi_url": "https://doi.org/10.5281/zenodo.23986504",
+  "zenodo_record": "https://zenodo.org/records/23986505",
+  "record_id": "23986505",
+  "publication_date": "2026-11-05",
+  "resource_type": {
+    "title": "Book",
+    "type": "publication",
+    "subtype": "book"
+  },
+  "creators": [
+    {
+      "name": "Active Inference Institute",
+      "affiliation": null
+    },
+    {
+      "name": "Bradly Alicea",
+      "affiliation": "Active Inference Institute (SAB)"
+    },
+    {
+      "name": "Dan Corva, Kevin Backhouse",
+      "affiliation": null
+    },
+    {
+      "name": "Hongju Pae",
+      "affiliation": null
+    },
+    {
+      "name": "Karl Friston",
+      "affiliation": null
+    },
+    {
+      "name": "Alison Gopnik",
+      "affiliation": null
+    },
+    {
+      "name": "Bianca Avanzo",
+      "affiliation": null
+    },
+    {
+      "name": "Ed Ober",
+      "affiliation": null
+    },
+    {
+      "name": "John Boik, Glen EP Ropella",
+      "affiliation": null
+    },
+    {
+      "name": "Luca Possati",
+      "affiliation": null
+    },
+    {
+      "name": "Majid D. Beni",
+      "affiliation": null
+    },
+    {
+      "name": "Mike Levin",
+      "affiliation": null
+    },
+    {
+      "name": "Montijn van Loo",
+      "affiliation": "Tilburg University",
+      "orcid": "0009-0003-0249-3240"
+    },
+    {
+      "name": "Ryan Smith",
+      "affiliation": null
+    },
+    {
+      "name": "Sergio Rubin",
+      "affiliation": null
+    },
+    {
+      "name": "Takuya Isomura",
+      "affiliation": null
+    },
+    {
+      "name": "Ted J. Vrioni",
+      "affiliation": "Junior Consultant at Vrioni Consulting"
+    },
+    {
+      "name": "Ahmad Nazzal",
+      "affiliation": "Zayed University",
+      "orcid": "0000-0002-6558-0734"
+    },
+    {
+      "name": "Alexander Sabine",
+      "affiliation": "Active Inference BoD",
+      "orcid": "0000-0001-8462-2656"
+    },
+    {
+      "name": "Andrew Pashea",
+      "affiliation": "Active Inference Institute (SAB)"
+    },
+    {
+      "name": "Anna Pereira",
+      "affiliation": null
+    },
+    {
+      "name": "Avel Guénin—Carlut",
+      "affiliation": null
+    },
+    {
+      "name": "Bo Lee",
+      "affiliation": null
+    },
+    {
+      "name": "Bruce Tisler",
+      "affiliation": null
+    },
+    {
+      "name": "Cleber Gomes",
+      "affiliation": null,
+      "orcid": "0009-0005-9134-2384"
+    },
+    {
+      "name": "Colin Turfus",
+      "affiliation": "https://substack.com/@colinturfus"
+    },
+    {
+      "name": "Daniel Dragolich",
+      "affiliation": null
+    },
+    {
+      "name": "Daniel Friedman",
+      "affiliation": "Active Inference Institute (Officer), College of the Redwoods"
+    },
+    {
+      "name": "Diaconescu Adrian-Stelian",
+      "affiliation": null
+    },
+    {
+      "name": "Harshil Shah, Andrew Pashea",
+      "affiliation": null
+    },
+    {
+      "name": "Harshil Shah, Satyaki Maitra",
+      "affiliation": null
+    },
+    {
+      "name": "Holly Grimm, John H. Clippinger, Daniel Ari Friedman",
+      "affiliation": null
+    },
+    {
+      "name": "Hyojun Choi",
+      "affiliation": null
+    },
+    {
+      "name": "Jean-François Cloutier",
+      "affiliation": null
+    },
+    {
+      "name": "Lancelot Da Costa",
+      "affiliation": null
+    },
+    {
+      "name": "Matthew Brown",
+      "affiliation": null
+    },
+    {
+      "name": "Michael Lennon",
+      "affiliation": null
+    },
+    {
+      "name": "Michael Walker",
+      "affiliation": null
+    },
+    {
+      "name": "Nick Hay, Adam Safron",
+      "affiliation": null
+    },
+    {
+      "name": "Patricia Craja",
+      "affiliation": null
+    },
+    {
+      "name": "Paulo Santiago",
+      "affiliation": null
+    },
+    {
+      "name": "Rajkaushik Borgohain",
+      "affiliation": null
+    },
+    {
+      "name": "Robert Worden",
+      "affiliation": null
+    },
+    {
+      "name": "Sheena Yap Chan",
+      "affiliation": null
+    },
+    {
+      "name": "Stell",
+      "affiliation": null
+    },
+    {
+      "name": "Steph Macurdy",
+      "affiliation": null
+    },
+    {
+      "name": "Tao Gong",
+      "affiliation": null
+    },
+    {
+      "name": "Tiga Kailimai",
+      "affiliation": null
+    },
+    {
+      "name": "Tran Hoang Linh",
+      "affiliation": null
+    },
+    {
+      "name": "Viraj Deshwal",
+      "affiliation": null
+    },
+    {
+      "name": "Vitalii Shapovalov",
+      "affiliation": null
+    },
+    {
+      "name": "Vitória de Souza",
+      "affiliation": null
+    },
+    {
+      "name": "Xin Sun",
+      "affiliation": null
+    }
+  ],
+  "description": "Presenter program and book of abstracts for the 6th Applied Active Inference Symposium, November 12–13, 2026 (UTC), prepared by the Active Inference Institute. The approved November 1, 2026 public program contains 57 contributions, 54 supplied abstracts and three explicitly pending abstracts. Presenter affiliations, ORCIDs and backgrounds are included only where supplied in the approved 2026 public sources; missing values and composite presenter credits are preserved without inferred identities. Participant information is limited to the designated public 2026 view, rechecked on November 5, 2026. Creator entries preserve the published presenter and group display credits, with Active Inference Institute first; they are not a verified count of individual people. Cover and page-two artwork are generated conceptual illustrations. Source, rendering methods and versioned release: ActiveInferenceInstitute/Symposium .",
+  "keywords": [
+    "active inference",
+    "symposium",
+    "book of abstracts",
+    "presenter program",
+    "2026"
+  ],
+  "files": [
+    {
+      "name": "publication.json",
+      "size_bytes": 1592,
+      "checksum": "md5:9ff5c7070150bc5f99a22170907c019f",
+      "download_url": "https://zenodo.org/api/records/23986505/files/publication.json/content"
+    },
+    {
+      "name": "Active-Inference-Symposium-2026-Presenter-Program-v3.2.0.pdf",
+      "size_bytes": 6704950,
+      "checksum": "md5:43c81ca91f4c7ed4321e8494ea612993",
+      "download_url": "https://zenodo.org/api/records/23986505/files/Active-Inference-Symposium-2026-Presenter-Program-v3.2.0.pdf/content"
+    },
+    {
+      "name": "LICENSE.txt",
+      "size_bytes": 1083,
+      "checksum": "md5:f9e25e44d5164c0cce34c32efca1f39d",
+      "download_url": "https://zenodo.org/api/records/23986505/files/LICENSE.txt/content"
+    },
+    {
+      "name": "Active-Inference-Symposium-2026-Presenter-Program-v3.2.0.docx",
+      "size_bytes": 7064799,
+      "checksum": "md5:54a82d8eb7ed1bda1eaf9ef3d154ce2a",
+      "download_url": "https://zenodo.org/api/records/23986505/files/Active-Inference-Symposium-2026-Presenter-Program-v3.2.0.docx/content"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size_bytes": 492,
+      "checksum": "md5:79d3ac7fa56456174b5424c6183da2ba",
+      "download_url": "https://zenodo.org/api/records/23986505/files/SHA256SUMS.txt/content"
+    },
+    {
+      "name": "README.md",
+      "size_bytes": 1259,
+      "checksum": "md5:82ca0a98af621703f128a5ad4898228f",
+      "download_url": "https://zenodo.org/api/records/23986505/files/README.md/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "ActiveInferenceInstitute/Symposium",
+  "source": "reviewed-publication-intake",
+  "checked_at": "2026-11-06T17:59:20.521552+00:00",
+  "artifact_doi": "10.5281/zenodo.23986505",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.23986505",
+  "github_release_url": "https://github.com/ActiveInferenceInstitute/Symposium/releases/tag/v3.2.0",
+  "release_tag": "v3.2.0",
+  "source_commit": "f2dbc37a40f5039b07622d2838befdfd8e4970fb",
+  "domain": "🎥",
+  "remote_primary_pdf": {
+    "name": "Active-Inference-Symposium-2026-Presenter-Program-v3.2.0.pdf",
+    "url": "https://zenodo.org/api/records/23986505/files/Active-Inference-Symposium-2026-Presenter-Program-v3.2.0.pdf/content",
+    "bytes": 6704950,
+    "sha256": "cbb841093377dbeacdae95e8ac035c12be81d41bd59c66bdb6edf679febbf4a8",
+    "record_id": "23986505",
+    "version": "3.2.0"
+  },
+  "pages": 62,
+  "pdf_sha256": "cbb841093377dbeacdae95e8ac035c12be81d41bd59c66bdb6edf679febbf4a8",
+  "license": "MIT",
+  "license_url": "https://opensource.org/license/mit/",
+  "rights_note": "The registry, deposited LICENSE.txt and versioned release classify this book edition as MIT. Supplied abstracts and credits are reproduced as deposited; no broader third-party permissions or independent identity verification are inferred.",
+  "related_papers": [
+    "2025_5thSymposium"
+  ],
+  "related_software": [
+    "ActiveInferenceInstitute/Symposium"
+  ],
+  "source_provenance": {
+    "record_url": "https://zenodo.org/records/23986505",
+    "record_json_sha256": "4f54ccf2fb4ccc3b95a9e0c32855131007d07f3b340c241be5fc1927eaf95ba4",
+    "source_release_commit": "f2dbc37a40f5039b07622d2838befdfd8e4970fb",
+    "author_source": "Deposited title-page/cover credit order corroborated against the exact registry record; see source_evidence.json.",
+    "scientific_verification": false,
+    "human_approval": false,
+    "local_pdf_retained": false
+  },
+  "credit_note": "53 institutional, presenter and composite group display labels: AII plus 52 presenter/group labels; not a verified people count.",
+  "abstract_provenance": {
+    "source": "deposited_registry_description",
+    "url": "https://zenodo.org/records/23986505",
+    "date": "2026-11-06",
+    "kind": "publisher_description",
+    "review_scope": "Pre-event program description, not a claim of a completed event or a research-study abstract."
+  }
+}

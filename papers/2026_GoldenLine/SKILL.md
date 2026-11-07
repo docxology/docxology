@@ -1,11 +1,12 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Golden Line: Toward What Matters"
-description: "A directional instrument for recording long-horizon aspirations and observable movement toward them. It returns one of four directional readings per aspiration against a versioned registry and deliberately computes no aggregate: there is no virtue sc..."
+description: "Golden Line describes an aspirational thread and a versioned nine-entry registry evaluated against recorded markers, counter-signals and review dates. Its directional readings are explicitly not compliance scores or certifications that work is good, ..."
 tags: ["aspiration", "long-horizon-work", "directional-assessment", "values-in-practice", "research-ethics", "open-science", "non-compensatory-reading"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *Golden Line: Toward What Matters*. Zenodo."
 doi: "10.5281/zenodo.21754237"
+artifact_doi: "10.5281/zenodo.22833506"
 ---
 
 # Golden Line: Toward What Matters
@@ -47,9 +48,10 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 Verification points for this work:
 
 - Canonical DOI: 10.5281/zenodo.21754237
-- PDF SHA-256: See zenodo_record
+- PDF SHA-256: be801cc282ada39af586c46b32e978231b922a4f95000c0c53866bbb8c1afab7
 - Pairing confidence: unknown
-- Last checked: 2026-08-02T15:12:53Z
+- Last checked: 2026-11-06T18:28:07.712051+00:00
+- Artifact DOI: 10.5281/zenodo.22833506
 
 ## Prerequisites
 

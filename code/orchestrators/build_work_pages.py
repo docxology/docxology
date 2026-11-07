@@ -118,9 +118,9 @@ def author_ld(work: dict) -> dict | list[dict] | None:
     return entities[0] if len(entities) == 1 else entities
 
 
-def display_name(name: str) -> str:
+def display_name(name: str, source_type: str | None = None) -> str:
     '"Family, Given" as a reader-facing "Given Family"; literals unchanged.'
-    if "," not in name:
+    if source_type in {"Organization", "Unspecified"} or "," not in name:
         return name
     family, _, given = name.partition(",")
     return f"{given.strip()} {family.strip()}".strip()
@@ -131,7 +131,9 @@ def byline_html(work: dict) -> str:
     if not names:
         return '<p class="byline">No individual contributor list is recorded. Consult the source before citing this catalog entry.</p>'
     role = "Edited by " if work.get("contributor_role") == "editor" else ""
-    return f'        <p class="byline">{role}{h(", ".join(display_name(n) for n in names))}</p>'
+    types = work.get("_author_types", {})
+    separator = "; " if "Unspecified" in types.values() else ", "
+    return f'        <p class="byline">{role}{h(separator.join(display_name(n, types.get(n)) for n in names))}</p>'
 
 
 def _github_repo(identifiers: dict) -> str:
@@ -885,13 +887,10 @@ def json_ld(work: dict) -> str:
             "url": resources.absolute_url(resources.full_text),
             "name": "Full text (extracted)",
         }
-        if (
-            resources.remote_primary_pdf
-            or (
-                resources.primary_pdf
-                and resources.extraction_source
-                and resources.extraction_source != resources.primary_pdf.name
-            )
+        if resources.remote_primary_pdf or (
+            resources.primary_pdf
+            and resources.extraction_source
+            and resources.extraction_source != resources.primary_pdf.name
         ):
             attachments.append(
                 {
@@ -953,7 +952,7 @@ def page_head(work: dict) -> str:
     ]
     role = work.get("contributor_role", "author")
     citation_meta.extend(
-        f'<meta name="citation_{role}" content="{h(display_name(name))}">'
+        f'<meta name="citation_{role}" content="{h(display_name(name, work.get("_author_types", {}).get(name)))}">'
         for name in work.get("authors") or []
     )
     citation_meta.extend(
@@ -1030,7 +1029,7 @@ def pdf_downloads_html(resources: PaperResources) -> str:
         rows.append(
             f'<li><a href="{h(remote.url)}" type="application/pdf">{h(remote.name)}</a>'
             f'<span class="muted"> PDF · Zenodo version {h(remote.version)} · '
-            f'{remote.bytes / (1024 * 1024):.2f} MiB</span></li>'
+            f"{remote.bytes / (1024 * 1024):.2f} MiB</span></li>"
         )
     for pdf in resources.pdfs:
         size = pdf.stat().st_size / (1024 * 1024)
@@ -1049,13 +1048,10 @@ def pdf_downloads_html(resources: PaperResources) -> str:
         )
     note = resources.selection_issue
     if len(resources.pdfs) > 1:
-        note = (
-            (note + " " if note else "")
-            + (
-                "Local files may be different historical versions or companion documents."
-                if resources.remote_primary_pdf
-                else "These files may be different versions or companion documents. The archive does not identify a latest edition."
-            )
+        note = (note + " " if note else "") + (
+            "Local files may be different historical versions or companion documents."
+            if resources.remote_primary_pdf
+            else "These files may be different versions or companion documents. The archive does not identify a latest edition."
         )
     note_html = f'<p class="muted">{h(note)}</p>' if note else ""
     description = (
@@ -1076,9 +1072,15 @@ def render_work_page(work: dict) -> str:
         if not work.get("enrichment", {}).get("abstract"):
             work["enrichment"] = enrichment_for(work, resources=resources)
         import hashlib
+
         abstract_source = work["enrichment"].get("abstract", "")
-        if hashlib.sha256(abstract_source.encode()).hexdigest() != resources.scholar_pdf.review["abstract"]["sha256"]:
-            raise ValueError("Pilot page abstract differs from its reviewed complete author abstract")
+        if (
+            hashlib.sha256(abstract_source.encode()).hexdigest()
+            != resources.scholar_pdf.review["abstract"]["sha256"]
+        ):
+            raise ValueError(
+                "Pilot page abstract differs from its reviewed complete author abstract"
+            )
     footer_stamp = footer_build_stamp_html()
     doi_link = f"https://doi.org/{work['doi']}" if work.get("doi") else ""
     primary = work.get("url") or doi_link
@@ -1086,11 +1088,13 @@ def render_work_page(work: dict) -> str:
     if remote := resources.remote_primary_pdf:
         actions.append(
             f'<a class="btn btn-gold" href="{h(remote.url)}" type="application/pdf">'
-            f'Read PDF on Zenodo (version {h(remote.version)})</a>'
+            f"Read PDF on Zenodo (version {h(remote.version)})</a>"
         )
     elif resources.primary_pdf:
         pdf = resources.primary_pdf
-        target = resources.scholar_pdf.url if resources.scholar_pdf else resources.url(pdf)
+        target = (
+            resources.scholar_pdf.url if resources.scholar_pdf else resources.url(pdf)
+        )
         actions.append(
             f'<a class="btn btn-gold" href="{h(target)}" download="{h(pdf.name)}" type="application/pdf">Download PDF</a>'
         )
@@ -1125,7 +1129,8 @@ def render_work_page(work: dict) -> str:
         historical = resources.historical_image_source
         label = (
             f"Historical figures (edition {historical['edition']}) on GitHub"
-            if historical else "Figures on GitHub"
+            if historical
+            else "Figures on GitHub"
         )
         extras.append(
             f'<a class="btn btn-outline" href="{h(resources.github_url + "/images")}">{h(label)}</a>'

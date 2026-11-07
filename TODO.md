@@ -8,7 +8,7 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-11-05; only unfinished work and recurring checks remain.
+- Last reviewed: 2026-11-06; only unfinished work and recurring checks remain.
   Completed implementation and source-review history lives in CHANGELOG.md and
   the linked dated reports. Effort estimates below are separate from priority.
 
@@ -67,23 +67,29 @@ Recurring checks below are operating obligations, not unfinished feature work.
   primary-repository promotion requires an individual source-backed decision.
   Review the current classification queue rather than relying on historical
   queue counts.
-- Open work: none from the reviewed November 5 inventory. The
-  [dated identity and classification review](reports/github_inventory_review_2026-11-05.json)
-  records the two new fork-policy decisions and individually approved AII
-  organization/community-infrastructure entry. Repeat this check on the next
-  inventory refresh; completed intake history remains in the changelog and
-  dated source reviews.
+- Open work: none from the complete November 6 inventory: repository IDs and
+  membership are unchanged from the previously reviewed inventory. The
+  [current refresh](reports/publication_software_refresh_2026-11-06.md) records
+  discovery; [the prior identity/classification review](reports/github_inventory_review_2026-11-05.json)
+  retains the fork-policy and individually approved organization-infrastructure
+  decisions. Repeat when the inventory changes.
 
 ### DOC-006 — Refresh external evidence and coverage exceptions
 
 - Priority: P1
 - Owner: RESEARCHER
 - Trigger: monthly, before a claim-sensitive release, or when the weekly `freshness.yml` run opens or comments on the "Public-source freshness drift detected" issue (the reviewed baseline `reports/public_source_snapshot_2026-10-07.json` resolved #44; a later drift opens a new issue, which is closed by hand once a reviewed refresh is the committed baseline)
-- Open work: review ResearchGate, SciProfiles, and PhilPeople when their access
-  restrictions permit; repeat source refreshes on their declared triggers.
+- Open work: review ResearchGate, SciProfiles, PhilPeople, DBLP and Semantic Scholar
+  when their unavailable or incomplete responses permit; repeat source refreshes on their declared triggers.
   Refresh Scholar only after a direct authenticated observation. A live Flickr
   refresh needs its approved API-key workflow.
-- Latest reviewed refresh (2026-11-04, reports dated 2026-11-05 UTC): the fresh 21-check snapshot, paginated source inventory, complete public GitHub inventory and individually reviewed GitHub/Zenodo candidates are recorded in the current source review. ResearchGate, SciProfiles and PhilPeople remain access-limited. Scholar metrics retain the direct authenticated 2026-11-01 observation; this pass does not claim a new Scholar observation.
+- Latest reviewed refresh (2026-11-06): the complete 21-check snapshot,
+  20-section source inventory, public repository/release inventories and
+  exact-edition decisions are recorded in the
+  [current source review](reports/publication_software_refresh_2026-11-06.md).
+  Five advisory observations remain unavailable, including incomplete HTTP202
+  responses; those are not successful profile checks. Scholar retains its
+  separate direct authenticated November 1 observation.
 - Previous reviewed refresh (2026-11-01): the 2026-10-31 public-source snapshot
   and complete GitHub inventory are paired with the 2026-11-01 GitHub/Zenodo
   report and individual repository-promotion decisions. The retained paginated
@@ -270,8 +276,9 @@ Recurring checks below are operating obligations, not unfinished feature work.
 - Acceptance: a declared render command binds direct inputs and the complete production-source inventory, produces output whose figures and references have been inspected, changed bibliography entries pass a real-parser syntax check outside the structural gate, and a named editorial reviewer's decision is recorded; until then `validate_manuscript.py` is reported only as structural source validation
 - Dependencies: `docs/manuscript/config.yaml`, `code/orchestrators/validate_manuscript.py`, [MANUSCRIPT_STATUS.md](docs/manuscript/MANUSCRIPT_STATUS.md)
 - Open work: obtain named editorial/human approval and repeat requested format
-  checks after source changes. The [dated assistant format inspection](reports/manuscript_format_review_2026-10-23.md)
-  records the inspected draft, rendering corrections and retained failures;
+  checks after source changes. [Current manuscript status](docs/manuscript/MANUSCRIPT_STATUS.md)
+  links exact source-bound rendering and format evidence, including retained
+  earlier attempts;
   automated and assistant checks remain separate from named human approval.
   The pinned render command, real-parser checks, and CC BY 4.0 manuscript license
   are declared in [the manuscript guide](docs/manuscript/README.md); repeat

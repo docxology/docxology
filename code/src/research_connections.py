@@ -126,9 +126,15 @@ def related_catalog(
     return result
 
 
-def graph_catalog(works: list[dict], repositories: dict[str, str]) -> dict:
+def graph_catalog(
+    works: list[dict],
+    repositories: dict[str, str],
+    *,
+    author_types: dict[str, dict[str, str]] | None = None,
+) -> dict:
     """Publish literal work/domain/byline/repository edges with source labels."""
     nodes, edges = {}, []
+    kinds = {"Person": "person", "Organization": "organization", "Unspecified": "contributor"}
     for work in works:
         key = work["citation_key"]
         wid = "work:" + key
@@ -155,8 +161,12 @@ def graph_catalog(works: list[dict], repositories: dict[str, str]) -> dict:
             }
         )
         for author in work.get("authors", []):
-            aid = "person:" + normalized(author)
-            nodes[aid] = {"id": aid, "kind": "person", "label": author, "url": ""}
+            source_type = (author_types or {}).get(key, {}).get(author, "Person")
+            if source_type not in kinds:
+                raise ValueError("Unsupported recorded contributor type: " + str(source_type))
+            kind = kinds[source_type]
+            aid = kind + ":" + normalized(author)
+            nodes[aid] = {"id": aid, "kind": kind, "label": author, "url": ""}
             role = (
                 "Recorded editor"
                 if work.get("contributor_role") == "editor"
@@ -189,7 +199,11 @@ def graph_catalog(works: list[dict], repositories: dict[str, str]) -> dict:
             )
     return {
         "schema_version": 1,
-        "description": "Catalog relationships, not a citation network or identity registry. Author nodes group exact normalized recorded names; homonyms may be grouped and name variants remain separate.",
+        "description": (
+            "Catalog relationships, not a citation network or identity registry. Contributor nodes group exact normalized recorded labels within each entity type; homonyms may be grouped and label variants remain separate."
+            if any(n["kind"] in {"organization", "contributor"} for n in nodes.values())
+            else "Catalog relationships, not a citation network or identity registry. Author nodes group exact normalized recorded names; homonyms may be grouped and name variants remain separate."
+        ),
         "nodes": sorted(nodes.values(), key=lambda n: n["id"]),
         "edges": edges,
     }

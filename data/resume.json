@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T21:08:27Z",
+  "generated_at": "2026-11-07T01:43:27Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,7 +34,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 231,
+    "works": 233,
     "software_catalogued": 210,
     "owned_software_catalogued": 167,
     "aii_software_catalogued": 43,
@@ -47,13 +47,13 @@
     },
     "docxology_public_repositories_claim": {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 273 public repositories.",
+      "claim": "The docxology GitHub profile has 275 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-11-05.json"
+        "reports/public_source_snapshot_2026-11-06.json"
       ],
-      "checked_at": "2026-11-05T01:25:17.540856+00:00",
+      "checked_at": "2026-11-06T17:57:11.092028+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -61,20 +61,20 @@
     },
     "aii_public_repositories_claim": {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (an Organization) has 46 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account (an Organization) has 47 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-11-05.json"
+        "reports/public_source_snapshot_2026-11-06.json"
       ],
-      "checked_at": "2026-11-05T01:25:17.540856+00:00",
+      "checked_at": "2026-11-06T17:57:11.092028+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "The public-source snapshot records this account's type as Organization; the repository count is read from /users/ActiveInferenceInstitute, which serves Organization accounts as well as Users. Local software catalog tracks 43 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-11-05T20:28:25Z",
+      "generated_at": "2026-11-06T17:22:16Z",
       "source": "GitHub REST API /users/{owner}/repos",
       "total": 322,
       "public": 322,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 737,
-      "sha256": "1e8701b099e23bb8b520163c322de36ca2abb5a4907f3cc6c71445c59e60d683",
+      "sha256": "7a5d81ef6d32e856c38bfe71c1ad2d514c441e3d7468958a737ac1fb1b3f6846",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 190140,
-          "sha256": "67b67db4fbf45350214b7923e5c2fee43545ae705b03bfdd5b96aa0ed7a75c34"
+          "bytes": 193172,
+          "sha256": "43470ee1cf4edb703499e3fdc27d684c0f2c31fe3a34b05137af0432e3f1fc12"
         },
         {
           "path": "data/software.json",
-          "bytes": 104603,
-          "sha256": "a50bb5547302b63b81154db4f950357f72a03dc0fbd0f26db886d11c914b0a68"
+          "bytes": 104764,
+          "sha256": "230f4836cd4eea057389dec32c6cba6e72b85b28e824d5a260d9fc600460da9d"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 12971,
-          "sha256": "dae97a303f802a28b87fba2ab236350fc2667eee1562d7e785ad8b141e52f15b"
+          "sha256": "b7d5a091be4a70f2f7e1ea1603fb896447abbd6bd07c4993baad2da02fccc446"
         },
         {
           "path": "data/github-repositories.json",
           "bytes": 369313,
-          "sha256": "b3ecd0c58d43138cb760d0bbf51cf93270e96c375b31d156e10d438d6b38bb8f"
+          "sha256": "ff8d4ac91e2c48c399d8ea790625463150e7b270800a1f7b6b4a4bc41fe21d3b"
         }
       ]
     },
@@ -8004,12 +8004,12 @@
       "doi": "10.5281/zenodo.23670187",
       "docs_path": "papers/2026_GNNBasedActive/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_GNNBasedActive/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -8087,6 +8087,104 @@
         "Cassie, Ben",
         "Nguyen, Peter",
         "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 236,
+      "citation_key": "Friedman2026RikishiReproducibleOperationAnalysis236",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+      "venue": "Zenodo (preprint)",
+      "url": "https://doi.org/10.5281/zenodo.23987670",
+      "doi": "10.5281/zenodo.23987670",
+      "docs_path": "papers/2026_Rikishi/",
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_Rikishi/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 237,
+      "citation_key": "Friedman20262026ActiveInferenceSymposium237",
+      "year": 2026,
+      "domain": "🎥",
+      "domain_name": "Media & Teaching",
+      "type": "Book",
+      "title": "2026 Active Inference Symposium — Presenter Program",
+      "venue": "Zenodo (presenter program)",
+      "url": "https://doi.org/10.5281/zenodo.23986504",
+      "doi": "10.5281/zenodo.23986504",
+      "docs_path": "papers/2026_SymposiumPresenterProgram/",
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_SymposiumPresenterProgram/full_text.md",
+      "authors": [
+        "Active Inference Institute",
+        "Bradly Alicea",
+        "Dan Corva, Kevin Backhouse",
+        "Hongju Pae",
+        "Karl Friston",
+        "Alison Gopnik",
+        "Bianca Avanzo",
+        "Ed Ober",
+        "John Boik, Glen EP Ropella",
+        "Luca Possati",
+        "Majid D. Beni",
+        "Mike Levin",
+        "Montijn van Loo",
+        "Ryan Smith",
+        "Sergio Rubin",
+        "Takuya Isomura",
+        "Ted J. Vrioni",
+        "Ahmad Nazzal",
+        "Alexander Sabine",
+        "Andrew Pashea",
+        "Anna Pereira",
+        "Avel Guénin—Carlut",
+        "Bo Lee",
+        "Bruce Tisler",
+        "Cleber Gomes",
+        "Colin Turfus",
+        "Daniel Dragolich",
+        "Daniel Friedman",
+        "Diaconescu Adrian-Stelian",
+        "Harshil Shah, Andrew Pashea",
+        "Harshil Shah, Satyaki Maitra",
+        "Holly Grimm, John H. Clippinger, Daniel Ari Friedman",
+        "Hyojun Choi",
+        "Jean-François Cloutier",
+        "Lancelot Da Costa",
+        "Matthew Brown",
+        "Michael Lennon",
+        "Michael Walker",
+        "Nick Hay, Adam Safron",
+        "Patricia Craja",
+        "Paulo Santiago",
+        "Rajkaushik Borgohain",
+        "Robert Worden",
+        "Sheena Yap Chan",
+        "Stell",
+        "Steph Macurdy",
+        "Tao Gong",
+        "Tiga Kailimai",
+        "Tran Hoang Linh",
+        "Viraj Deshwal",
+        "Vitalii Shapovalov",
+        "Vitória de Souza",
+        "Xin Sun"
       ]
     }
   ],
@@ -8576,7 +8674,7 @@
       "url": "https://github.com/docxology/cognitive_case_diagrams",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript · · Zenodo",
+      "description": "Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript · · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-11",
@@ -9308,7 +9406,7 @@
       "url": "https://github.com/docxology/black_line",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "A positive operating discipline for concise, inspectable, revisable work; repository v0.5.0 · · Zenodo",
+      "description": "A positive operating discipline for concise, inspectable, revisable work; repository v0.5.0 · · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-11",
@@ -9332,7 +9430,7 @@
       "url": "https://github.com/docxology/golden_line",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "An aspirational thread and long-horizon direction for personal work; repository v0.5.0 · · Zenodo",
+      "description": "An aspirational thread and long-horizon direction for personal work; repository v0.5.0 · · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-11",
@@ -9356,7 +9454,7 @@
       "url": "https://github.com/docxology/witness_register",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Co-registration without aggregation — the Witness Register holding instrument; repository v0.2.0 · · Zenodo",
+      "description": "Co-registration without aggregation — the Witness Register holding instrument; repository v0.2.0 · · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-11",
@@ -9452,12 +9550,12 @@
       "url": "https://github.com/docxology/rikishi",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "SUMO ontology operator, reasoning workbench, source-bound FEP connections, and reproducible manuscript",
+      "description": "SUMO ontology operator, reasoning workbench, source-bound FEP connections, and reproducible manuscript · · Citation DOI · Software archive",
       "language": "Python",
       "stars": 0,
-      "updated_or_year": "2026-10",
-      "paper_path": "",
-      "zenodo_url": ""
+      "updated_or_year": "2026-11",
+      "paper_path": "papers/2026_Rikishi/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.23987670"
     },
     {
       "name": "math4wisdom-superhuman-docs-archive",
@@ -10210,9 +10308,9 @@
       "catalog_section": "active-inference-institute",
       "description": "Applied Active Inference Symposium materials — talks, workshops, proceedings, and collaborative session artifacts from annual Applied AIF symposia",
       "language": "Python",
-      "stars": 13,
+      "stars": 15,
       "updated_or_year": "2026-11",
-      "paper_path": "",
+      "paper_path": "papers/2026_SymposiumPresenterProgram/",
       "zenodo_url": ""
     },
     {
@@ -10306,7 +10404,7 @@
       "catalog_section": "active-inference-institute",
       "description": "A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus.",
       "language": "HTML",
-      "stars": 6,
+      "stars": 7,
       "updated_or_year": "2026-11",
       "paper_path": "",
       "zenodo_url": ""
@@ -10615,14 +10713,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 231 works.",
+      "claim": "The curated bibliography contains 233 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-11-05T21:08:19+00:00",
+      "checked_at": "2026-11-07T01:38:48+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -10636,7 +10734,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-11-05T21:08:19+00:00",
+      "checked_at": "2026-11-07T01:38:48+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -10644,13 +10742,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 273 public repositories.",
+      "claim": "The docxology GitHub profile has 275 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-11-05.json"
+        "reports/public_source_snapshot_2026-11-06.json"
       ],
-      "checked_at": "2026-11-05T01:25:17.540856+00:00",
+      "checked_at": "2026-11-06T17:57:11.092028+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -10658,13 +10756,13 @@
     },
     {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (an Organization) has 46 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account (an Organization) has 47 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-11-05.json"
+        "reports/public_source_snapshot_2026-11-06.json"
       ],
-      "checked_at": "2026-11-05T01:25:17.540856+00:00",
+      "checked_at": "2026-11-06T17:57:11.092028+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",

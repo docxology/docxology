@@ -6,7 +6,7 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 02:54:14 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 01:44:43 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
@@ -27,6 +27,20 @@
       <guid isPermaLink="false">site-update-2026-05-13-works</guid>
       <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
+    </item>
+    <item>
+      <title>2026 Active Inference Symposium — Presenter Program</title>
+      <link>https://danielarifriedman.com/works/Friedman20262026ActiveInferenceSymposium237.html</link>
+      <guid isPermaLink="false">work-Friedman20262026ActiveInferenceSymposium237</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Book · Zenodo (presenter program) · Media &amp; Teaching · 2026</description>
+    </item>
+    <item>
+      <title>Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology</title>
+      <link>https://danielarifriedman.com/works/Friedman2026RikishiReproducibleOperationAnalysis236.html</link>
+      <guid isPermaLink="false">work-Friedman2026RikishiReproducibleOperationAnalysis236</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo (preprint) · Computational · 2026</description>
     </item>
     <item>
       <title>Observers are all you need</title>
@@ -188,20 +202,6 @@
       <guid isPermaLink="false">work-Friedman2026CognitiveIntegrityFrameworkComputational213</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Cognitive Security · 2026</description>
-    </item>
-    <item>
-      <title>docxplus — the Intelligent Document Container</title>
-      <link>https://danielarifriedman.com/works/Friedman2026DocxplusIntelligentDocumentContainer212.html</link>
-      <guid isPermaLink="false">work-Friedman2026DocxplusIntelligentDocumentContainer212</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract</title>
-      <link>https://danielarifriedman.com/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html</link>
-      <guid isPermaLink="false">work-Friedman2026ActiveSkillferenceValidatedPrerequisite211</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Active Inference · 2026</description>
     </item>
   </channel>
 </rss>

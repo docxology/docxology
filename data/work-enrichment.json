@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-05T20:47:00Z",
+  "generated_at": "2026-11-07T01:43:37Z",
   "source": "papers/paper_metadata.json, papers/*/metadata.json, README.md and SKILL.md",
-  "count": 231,
+  "count": 233,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -150,7 +150,7 @@
     "Friedman2026CognitiveIntegrityFrameworkFormal005": {
       "citation_key": "Friedman2026CognitiveIntegrityFrameworkFormal005",
       "source_revision_review": null,
-      "abstract": "Multiagent AI systems introduce cognitive attack surfaces absent in single-model inference. When agents delegate to agents, forming beliefs about beliefs through recursive trust hierarchies, manipulation of reasoning processes—rather than mere data corruption—becomes a primary security concern. This paper presents the Cognitive Integrity Framework (CIF), providing formal foundations for cognitive security in multiagent operators. We develop four interconnected theoretical contributions: a Trust Calculus with bounded delegation (exponential 𝛿𝑑 decay) that prevents trust amplification through delegation chains; a Defense Composition Algebra with series and parallel composition theorems establishing multiplicative detection bounds; Information-Theoretic Limits relating stealth constraints to maximum attack impact through a fundamental stealth-impact tradeoff; and a formal Adversary Hierarchy (Ω1–Ω5) characterizing external, peripheral, agent-level, coordination, and systemic threats with increasing capability and decreasing detectability. The framework provides complete coverage of the OWASP Top 10 for Agentic Applications through formal threat models grounded in cognitive state manipulation rather than traditional input/output filtering. CIF bridges classical security concepts with the cognitive requirements of agentic systems. We extend Byzantine fault tolerance to cognitive manipulation—agents that appear functional but hold corrupted beliefs—and adapt trust management systems to continuous trust evolution with provable decay bounds. The framework formalizes five architectural defense mechanisms (cognitive firewalls, belief sandboxing, behavioral tripwires, provenance tracking, Byzantine consensus) with composition rules enabling formal reasoning about layered security. Technical foundations include: operational semantics for message passing and trust updates; invariants for belief integrity, goal preservation, and trust boundedness; model checking configurations for safety property verification; and a complete notation system for attack parameterization, defense specification, and cognitive state representation. This is Part 1 of a three-part series: Part 1 (this paper, DOI: 10.5281/zenodo.18364119) presents formal foundations and theoretical analysis; Part 2 (DOI: 10.5281/zenodo.18364128) provides computational validation and implementation; Part 3 (DOI: 10.5281/zenodo.18364130) offers practical deployment guidance. The framework will continue to be developed and versioned at https://github.com/docxology/cognitive_integrity/ .",
+      "abstract": "This theoretical manuscript presents a Cognitive Integrity Framework for multiagent security through trust calculus, defense composition, information-theoretic limits and an adversary hierarchy. The selected Part 1 edition states formal models and assumptions; claims about computational validation and deployment belong to the separately identified Parts 2 and 3. Catalog review checks the source text and provenance, without independently certifying its theorems, security coverage or implementation.",
       "keywords": [
         "cognitive integrity",
         "multiagent security",
@@ -161,18 +161,12 @@
         "threat modeling"
       ],
       "findings": [
-        "Trust Boundedness theorem: delegated trust over a chain of depth d is at most δ^d, so trust cannot be amplified and vanishes exponentially with depth.",
-        "The paper states a stealth-impact tradeoff as a theorem: high-impact attacks are easier to detect, while stealthy attacks have limited effect.",
-        "The framework formalizes five architectural defenses with composition rules for reasoning about layered security.",
-        "The author notes guarantees depend on assumptions (honest orchestrator, n ≥ 3f+1, authenticated channels) and that the O(n²) trust matrix limits deployment to moderate agent counts.",
-        "Semantic-equivalence attacks, sub-threshold progressive drift, and orchestrator compromise are identified as formally difficult to detect."
+        "The manuscript describes five architectural defenses and composition rules; their stated guarantees remain conditional on its model and assumptions.",
+        "The selected work is the theoretical Part 1; computational validation and deployment are attributed to separate companion works."
       ],
       "methods": [
-        "Trust Calculus with bounded, exponentially decaying delegation — Formalizes delegated trust with decay factor δ per delegation step and proves bounds by induction on chain depth.",
-        "Defense Composition Algebra (series/parallel detection) — Derives detection rates for series and parallel composition of defenses, assuming independent detection events.",
-        "Information-theoretic attack/detection bounds — Relates attack entropy, mutual information with detector output, and channel capacity to bound detection rate and attack impact.",
-        "Five-class adversary hierarchy (Ω1–Ω5) — Defines external, peripheral, agent-level, coordination, and systemic adversary classes and maps them to multiagent architectures and OWASP Agentic Top 10.",
-        "Operational semantics, invariants, and model-checking configurations — Specifies operational semantics for message passing and trust updates, belief/goal/trust invariants, and model-checking setups for safety properties."
+        "Formal multiagent threat and defense framework — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+        "Operational semantics and invariant specifications — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method."
       ],
       "concepts": [],
       "sources": {
@@ -183,12 +177,13 @@
       },
       "source": "papers/paper_metadata.json",
       "abstract_provenance": {
-        "source": "papers/paper_metadata.json",
-        "date": "2026-10-01"
+        "source": "full_text.md",
+        "date": "2026-11-06",
+        "kind": "curated_summary"
       },
       "summary_provenance": {
         "source": "full_text.md",
-        "date": "2026-10-01",
+        "date": "2026-11-06",
         "work_kind": "theoretical"
       }
     },
@@ -4419,21 +4414,15 @@
     "Friedman2026CognitiveDiagramsReviewingCategorical112": {
       "citation_key": "Friedman2026CognitiveDiagramsReviewingCategorical112",
       "source_revision_review": null,
-      "abstract": "Linguistic case offers a setting in which to examine how diagrams connect relational structure, compositional syntax, and uncertainty. This article reviews categorical approaches and supplies an executable collection of deliberately small examples. The implementation includes case-role graphs, pregroup derivations, tensor contractions, synthetic similarity matrices, Bayesian filtering, quantile utilities, and positive-operator-valued measurements. These components share notation, but their mathematical relationships require separate assumptions; a common diagrammatic vocabulary does not establish their equivalence.\n\nThe principal contribution is an inspectable comparison of these constructions and their limits. We distinguish generated derivations from illustrative drawings, finite score distributions from Bellman return distributions, presentation statistics from topos invariants, and model-unit prediction errors from physiological measurements. The accompanying suite collects 1883 tests across 94 files; that is a collection count, and a separate source-bound quality receipt records 1883 passing tests with 92.13% line-and-branch coverage (Appendix C). The figure pipeline produces 33 figures from source. All numerical illustrations use synthetic inputs; no corpus study, participant experiment, EEG fit, quantum-hardware run, or deployed-agent security evaluation is reported. Topos-theoretic transfer, cognitive advantages of case diagrams, and case-based authorization remain research proposals with explicit validation requirements. This is working revision 2.7.0; its local validation does not constitute publication or independent mathematical certification.",
+      "abstract": "The deposited 2.7.0 manuscript reviews categorical approaches to linguistic case using deliberately small executable examples. It distinguishes generated derivations, finite score distributions, presentation statistics and model-unit prediction errors from stronger mathematical or physiological claims. It reports 1883 tests across 94 files and 33 source-generated figures, while all numerical illustrations use synthetic inputs. No corpus study, participant experiment, EEG fit, quantum-hardware run or deployed-agent security evaluation is reported; this catalog refresh does not reproduce the reported software results.",
       "keywords": [],
       "findings": [
-        "The review captures nominative-accusative, ergative-absolutive, active-stative, tripartite and fluid-S alignment within one algebraic framework linked by alignment functors.",
-        "Within case-typed string diagrams, passivization reduces to a type permutation (a Swap in the pregroup category).",
-        "When multi-turn agent interactions are modeled as a fixed category of licensed morphisms, prompt injection can be analyzed as ill-typed role promotion (a functorial type violation): a specification target, not a guarantee on current LLM APIs.",
-        "The topos-theoretic equivalence chain across typological, type-logical, distributional and enriched case theories is presented as a research program, not a finished theorem.",
-        "The accompanying code has 1197 tests across 64 files at 95.96% line-and-branch coverage on src/, plus 30 programmatically generated figures."
+        "A common diagrammatic vocabulary is not presented as proof that the constructions are equivalent.",
+        "The reported numerical illustrations are synthetic; cognitive, topos-transfer and authorization claims retain explicit validation requirements."
       ],
       "methods": [
-        "Case systems formalized as categories with alignment types as functors — Reviews case systems as categories whose objects are case roles and morphisms are grammatical relations, treating each alignment type as a structure-preserving functor.",
-        "Case-typed DisCoCat/DisCoCirc string diagrams for sentence and discourse — Extends DisCoCat with case-typed noun spaces and alignment-sensitive meaning functors, and uses DisCoCirc for discourse-level composition.",
-        "[0,1]-enriched case categories and categorical magnitude — Equips case categories with [0,1]-valued hom-objects and uses categorical magnitude as an invariant for comparing case systems.",
-        "Integration with Distributional Active Inference to derive ERP predictions — Embeds the case framework in a Distributional Active Inference model to state falsifiable predictions for P600, N400 and garden-path reanalysis.",
-        "Open-source Python implementation with automated tests and generated figures — Implements the formal structures in a src/ package with a no-mocks test suite and programmatically generated figures."
+        "Executable categorical and distributional examples — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+        "Explicit comparison of constructions and assumptions — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method."
       ],
       "concepts": [],
       "sources": {
@@ -4442,17 +4431,21 @@
         "findings": "papers/2026_CognitiveCaseDiagrams/metadata.json"
       },
       "source": "papers/paper_metadata.json",
-      "abstract_provenance": {},
+      "abstract_provenance": {
+        "source": "full_text.md",
+        "date": "2026-11-06",
+        "kind": "curated_summary"
+      },
       "summary_provenance": {
         "source": "full_text.md",
-        "date": "2026-10-01",
+        "date": "2026-11-06",
         "work_kind": "review"
       }
     },
     "Friedman2026TowardsLean4Formalization113": {
       "citation_key": "Friedman2026TowardsLean4Formalization113",
       "source_revision_review": null,
-      "abstract": "<p>FEP_Formal 2.1.0 is coordinated with Generalized_Notation_Notation 5.0.1. It retains the 168-topic Lean catalogue and explicit statement, assumption, semantic-maturity and evidence boundaries, using Lean 4.35.0 and Mathlib v4.35.0. Seven bounded composition proofs add temporal, risk, exponential-family, policy, reduction, consensus and geometric interfaces. The inventory distinguishes 32 formal relations, 118 theorem pairings and six conceptual relations.</p>\n<p>This version adds independent replay of source-bound finite and passive linear-Gaussian GNN filtering evidence, with separate numerical, source-custody, program-execution and formal-compilation claims. Finite forward filtering and Kalman/Joseph updates compare admitted parameters, axes, conditioning, float64 posterior means and full covariance. Bounded Lean laws and Q7 coefficient/prediction statements do not prove the GNN parser, general multidimensional filtering, authenticated execution or universal translation equivalence.</p>\n<p>Accepted FEP source: 96bf714d91c088e79b9dea54af0f9151f70de64f; tree: 15af656a15fc86b6d89804277ea030502a4f9168; tag: v2.1.0. Automatic PR, explicit full dual-shadow and fresh merged-main qualification retain distinct execution identities. The complete merged-main roster has 22 roles, including 15 wheel cells, 168 warning-strict native topics, 2060 audited declarations and the separately reviewed 390-page manuscript. Expected optional-profile skips remain exclusions. Ordinary wheel/source distributions and an isolated Python 3.14.9 installation passed independent content and RECORD reviews.</p>\n<p>The accepted manuscript, offline companion, ordinary distributions, exact tagged source, citation, license, checksums and publication observation form a nine-file payload. Full provider execution, frozen H3 production capture, broader formal translation and other scientific extensions retain separate acceptance requirements. This scholarly version continues concept DOI 10.5281/zenodo.19699233. Software archives remain separate under concept DOI 10.5281/zenodo.23196891.</p>",
+      "abstract": "The selected FEP_Formal 2.1.0 manuscript describes 168 stable Lean topics across five areas, using Lean 4.35.0 and Mathlib 4.35.0. It reports a semantic audit with 149 directly formalized rows at narrowed scopes and separates compilation maturity from scientific adequacy. Native receipt-backed compilation and optional Hermes/OpenGauss execution remain different evidence contracts. The manuscript does not prove the empirical FEP, generic Markov blankets or equivalence of its motivating formalisms; this catalog refresh does not rerun Lean, numerical examples or provider workflows.",
       "keywords": [
         "free energy principle",
         "active inference",
@@ -4471,18 +4464,12 @@
         "semantic visualization"
       ],
       "findings": [
-        "On the pinned Lean 4 / Mathlib4 v4.29.0 stack, the shipped catalog compiles 50/50 sorry-free.",
-        "The Hermes-assisted Gauss run run_20260424_064334 achieved 50/50 clean compiles with 0 sorry and 0 errors.",
-        "Constructions that already typecheck in today's Mathlib4 include finite-set probability, Bayesian updating, finite-space KL divergence and variational free-energy bounds.",
-        "The author cautions that the catalog covers definitional lemmas and structural identities rather than end-to-end FEP theorems, and many rows stop short of what the informal text proves.",
-        "Formal verification here establishes formal adequacy only; it provides no empirical confirmation that brains minimize variational free energy."
+        "The manuscript reports 149 of 168 rows as directly formalized at deliberately narrowed scopes, independently of compilation maturity.",
+        "The manuscript expressly declines empirical FEP, generic-blanket and broad-equivalence conclusions."
       ],
       "methods": [
-        "Curated catalog of 50 FEP topics as namespaced Lean 4 sketches against Mathlib4 — Compiled 50 topics across five pillars (FEP, Active Inference, Bayesian Mechanics, Information Geometry, Thermodynamics) as Lean 4 sketches from a single source of truth.",
-        "Native lake env lean verification on a pinned Lean/Mathlib v4.29.0 stack — Verified every reported compilation result with a real lake env lean invocation against the pinned toolchain, with no mocked compilers or synthetic success signals.",
-        "LLM-assisted commentary pipeline (Hermes/OpenGauss, kimi-k2.6 via OpenRouter) — Layered LLM drafting and commentary over the catalog, cached by Lean source hash, with the Lean kernel kept as sole ground truth for compilation claims.",
-        "Zero-mock test suite with coverage gate and SQLite run persistence — Ran 347 tests that each exercise real files, a real SQLite store, live compiler calls or actual HTTP calls, holding coverage above an 89% CI gate.",
-        "Three-level sorry-aware maturity taxonomy (real / partial / aspirational) — Introduced a classification intended to make incomplete formalization explicit; all current rows are tagged real."
+        "Typed catalog with explicit assumptions and semantic dispositions — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+        "Separate native and optional provider evidence contracts — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method."
       ],
       "concepts": [],
       "sources": {
@@ -4492,10 +4479,14 @@
         "findings": "papers/2026_FEPLean/metadata.json"
       },
       "source": "papers/paper_metadata.json",
-      "abstract_provenance": {},
+      "abstract_provenance": {
+        "source": "full_text.md",
+        "date": "2026-11-06",
+        "kind": "curated_summary"
+      },
       "summary_provenance": {
         "source": "full_text.md",
-        "date": "2026-10-01",
+        "date": "2026-11-06",
         "work_kind": "software/methods"
       }
     },
@@ -6625,7 +6616,7 @@
     "Friedman2026RefinementGoldMetallurgicalAnalogy177": {
       "citation_key": "Friedman2026RefinementGoldMetallurgicalAnalogy177",
       "source_revision_review": null,
-      "abstract": "This paper presents a metallurgical analogy for scientific manuscript composition, mapping gold-refining stages onto the template infrastructure pipeline. The refinery processes manuscript ore through 5 stages — from raw draft (9K, ~37.5% purity) through smelting, assaying, and cupellation — to nine-nines certification (99.9999999%), the ultra-high-purity standard of electronics-grade gold.\n\nThe analogy is load-bearing, not merely rhetorical: each metallurgical stage corresponds to a real template-infrastructure operation. Smelting removes dross (filler, unsupported claims); assaying tests claims against evidence; cupellation resolves cross-references; certification validates the full pipeline. The mega-madlib token engine selects 8 domain tokens deterministically via seeded SHA-256 digest over category inventories, ensuring every prose element is traceable and reproducible.\n\nResults: The refinery achieves final purity of 99.9999999% (nine-nines) (24K (nine-nines certified)) with a total purity gain of 90.00% across all stages. Nine-nines certification: Yes. The purity progression is shown in , and the karat grading scale in .\n\nKeywords: gold refining, manuscript composition, mega-madlib, token injection, scientific purity, assaying, karat grading\n\n---\nAssociated artifacts\nGitHub release: v0.1.0 (https://github.com/docxology/template_gold_refinement/releases/tag/v0.1.0)\nDOI: https://doi.org/10.5281/zenodo.20931955\nZenodo: https://zenodo.org/records/20931955\nPDF SHA-256: 3643178951b267632e607606b6daaba21ea75d8f7590899948b5999d1854198b",
+      "abstract": "This template exemplar maps gold-refining stages onto a scientific manuscript pipeline and describes deterministic token selection, equation-backed formalisms and a project-local claim assay. Its purity and karat vocabulary summarizes configured local validation states rather than external manuscript quality. The deposited edition reports its own contribution checks; external empirical validation of manuscript-quality metrics remains future work, and this catalog review does not rerun the pipeline.",
       "keywords": [
         "gold refining",
         "manuscript composition",
@@ -6636,17 +6627,12 @@
         "karat grading"
       ],
       "findings": [
-        "The paper argues the analogy is load-bearing rather than only rhetorical, since each metallurgical stage corresponds to a real template-infrastructure operation.",
-        "The exemplar pipeline reports a monotone purity sequence over 5 stages ending at the nine-nines certification stage.",
-        "The token engine generated 8 tokens from seed 431 across 4 lexicon categories, each traceable in a provenance table.",
-        "The paper explicitly does not claim empirical validation of manuscript quality metrics or generalizability of its purity fractions."
+        "The reported purity value is a local descriptive validation state, not an externally validated quality measurement.",
+        "Empirical validation of manuscript-quality metrics against external standards remains listed as future work."
       ],
       "methods": [
-        "Five-stage gold-refining analogy mapped to manuscript operations — Maps ore, smelting, assaying, cupellation, and certification onto manuscript template-infrastructure operations such as claim removal, evidence checks, and cross-reference resolution.",
-        "Seeded SHA-256 mega-madlib token selection from a config-owned lexicon — Selects domain vocabulary tokens deterministically from lexicon categories declared in config.yaml so every prose token is traceable to its config key.",
-        "Monotone-purity constraint enforced in code and tests — Stage purity values must strictly increase, enforced by assert_monotone_increase in src/refinery.py and covered by the test suite.",
-        "Karat grading of stage purities via karat_for_purity() — Maps each stage's purity fraction to a standard gold fineness grade (9K to 24K and nine-nines) in src/purity.py.",
-        "Deterministic seeded regeneration of all outputs — The pipeline regenerates figures, data, and reports from the same config and source code; the reported run used seed 431."
+        "Deterministic source-owned token selection — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+        "Equation-backed formalisms and local claim assay — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method."
       ],
       "concepts": [],
       "sources": {
@@ -6656,10 +6642,14 @@
         "findings": "papers/2026_RefinementGold/metadata.json"
       },
       "source": "papers/paper_metadata.json",
-      "abstract_provenance": {},
+      "abstract_provenance": {
+        "source": "full_text.md",
+        "date": "2026-11-06",
+        "kind": "curated_summary"
+      },
       "summary_provenance": {
         "source": "full_text.md",
-        "date": "2026-10-01",
+        "date": "2026-11-06",
         "work_kind": "software/methods"
       }
     },
@@ -7508,7 +7498,7 @@
     "Friedman2026WitnessRegisterCoRegistration200": {
       "citation_key": "Friedman2026WitnessRegisterCoRegistration200",
       "source_revision_review": null,
-      "abstract": "A shared register that co-registers independent instruments' report envelopes without aggregating them. It stores each report's envelope verbatim, records cross-instrument relations as separate describing records, keeps history append-only and sealed, and — only when asked, for one declared next use — emits a bounded posture that always points back at the state that earned it. It never parses, compares, ranks, averages, or merges any instrument's native status. Subtitle: A shared register for line report envelopes that never ranks, merges, or overrides the instruments it holds Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "abstract": "The selected Witness Register edition describes a co-registration layer that retains line-report envelopes and authored cross-line relations without ranking or aggregating native statuses. It specifies digest-sealed chained states and a requested non-compensatory posture. The text distinguishes intake shape checks from truth checks, notes that the chain tip needs an external anchor, and denies that its posture supplies a decision or permission. These are manuscript-reported design boundaries, not newly executed software guarantees.",
       "keywords": [
         "co-registration",
         "append-only log",
@@ -7519,18 +7509,12 @@
         "open science"
       ],
       "findings": [
-        "On four real envelopes describing different subjects, chain verification was clean, return recoverability and relation fidelity were 1.0, and the posture was held at 0.",
-        "In the same-subject example, meeting the return contract lifted only the return_due hold, and the posture stayed at 0 because one open question entered as an unresolved dependency.",
-        "A non-compensatory block forced -1 both alone and under fifty AGREES relations; an empty register was -1.",
-        "Every battery check passed on the real register, and every case raised BatteryError when its observed behaviour was deliberately falsified.",
-        "The author states limits: the chain tip is unbound without an external anchor, intake is a shape check not a truth check, and examples cover one date and nine constructed states."
+        "The manuscript explicitly distinguishes intake shape validation from a truth check.",
+        "The declared posture is not a decision, utility or boundary-owner permission, and the chain tip remains unbound without an external anchor."
       ],
       "methods": [
-        "witness_register Python package with shape-check intake of envelopes — A small Python package with no line-package imports accepts line.report-envelope/1.0 JSON envelopes by value after a schema shape check, storing native_status verbatim.",
-        "SHA-256 sealed, prior_ref-chained append-only witness states — Each state is sealed by SHA-256 over canonical JSON and chained to its predecessor; the prior seal is re-derived before extension so tampering fails closed.",
-        "Non-compensatory -1/0/+1 projection with fixed precedence rules — For a declared next use, a bounded posture is computed from relation records only: unresolved block forces -1, empty state is -1, any hold caps at 0.",
-        "Formal definitions and propositions bound to named tests — Definitions and propositions (append-only, non-compensatory, determinism, etc.) are each bound to a named test in the package's test suite.",
-        "3x3 canonical witness battery with falsification pass; real envelopes — Nine constructed cases (positive, negative, adversarial) are run against the projection, with planted errors to confirm checks can fail; worked examples use real envelopes from four lines."
+        "Envelope co-registration with separate authored relations — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+        "Canonical digest and prior-reference state chain — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method."
       ],
       "concepts": [],
       "sources": {
@@ -7540,17 +7524,21 @@
         "findings": "papers/2026_WitnessRegister/metadata.json"
       },
       "source": "papers/paper_metadata.json",
-      "abstract_provenance": {},
+      "abstract_provenance": {
+        "source": "full_text.md",
+        "date": "2026-11-06",
+        "kind": "curated_summary"
+      },
       "summary_provenance": {
         "source": "full_text.md",
-        "date": "2026-10-01",
+        "date": "2026-11-06",
         "work_kind": "software/methods"
       }
     },
     "Friedman2026LineSetHoldingInstruments201": {
       "citation_key": "Friedman2026LineSetHoldingInstruments201",
       "source_revision_review": null,
-      "abstract": "A thin reader that declares what a set of small evaluative instruments is, reads whichever sibling packages are installed, and checks one narrow property: that no two of them have given the same spelling to different things. It adds no instrument of its own and computes no aggregate; a legible reading says only that the declared vocabularies did not overlap. Subtitle: A Declaration, a Reader, and a Non-Overlap Contract for a Growing Set of Small Instruments Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "abstract": "The selected deposit is a 248-page collected volume whose cover names nine works; the canonical registry citation remains The Line Set: Holding Instruments Apart. Its opening Line Set work describes eight instruments and a reader that checks declared vocabulary collisions through resolve, bind, collide, declare and status stages. SET_LEGIBLE concerns non-overlapping declared names under exemptions, not conceptual independence, correctness, completeness or behavioral efficacy. The other collected works retain their own scopes; this catalog refresh does not reclassify the volume as nine new bibliography entries.",
       "keywords": [
         "modularity",
         "information hiding",
@@ -7562,18 +7550,12 @@
         "open science"
       ],
       "findings": [
-        "On the review date the four packages yielded 81 line-and-name pairs spanning 80 distinct names, and the only shared name was the already-declared, disambiguated one.",
-        "The single shared name was OUTSIDE_SCOPE, carried by red_line and black_line.",
-        "Appending a fifth line whose package is not installed yielded SET_PARTIAL, which the author argues is the correct answer rather than a shortfall.",
-        "The author stresses that disjoint vocabularies are a necessary, not sufficient, condition: the check cannot detect conceptual overlap between instruments.",
-        "The paper states the set digest is a comparison handle only, not tamper evidence or a record of who changed what."
+        "The current opening work describes eight sibling instruments and treats the Line Set as a ninth work with no instrument of its own.",
+        "Non-overlapping vocabulary does not establish conceptual non-overlap or that the instruments are correct or sufficient."
       ],
       "methods": [
-        "Declarative set registry: four LineEntry records plus one shared token — Declares the set (Red, Black, Golden, White Line) as data, each entry naming its question, job, and what it must not become.",
-        "Five-stage reader with fixed-precedence set statuses — Reads installed sibling packages through resolve, bind, collide, declare and status stages, returning one of four SET_-prefixed readings.",
-        "Enum-member name collision check across sibling package roots — Collects enum member names each line publishes at its package root and flags any name carried by more than one line, unless declared and disambiguated.",
-        "Seven offline structural checks plus a self-application check — Runs seven declaration-only checks and an eighth that applies the package's own collision check to a declaration including itself.",
-        "Executed extensibility example appending a fifth colour at runtime — Appends a hypothetical green_line entry without editing the package and runs the battery and reader on the extended declaration."
+        "Declared instrument-vocabulary collision reader — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+        "Five-stage reader and explicit status precedence — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method."
       ],
       "concepts": [],
       "sources": {
@@ -7583,10 +7565,14 @@
         "findings": "papers/2026_LineSet/metadata.json"
       },
       "source": "papers/paper_metadata.json",
-      "abstract_provenance": {},
+      "abstract_provenance": {
+        "source": "full_text.md",
+        "date": "2026-11-06",
+        "kind": "curated_summary"
+      },
       "summary_provenance": {
         "source": "full_text.md",
-        "date": "2026-10-01",
+        "date": "2026-11-06",
         "work_kind": "software/methods"
       }
     },
@@ -7682,7 +7668,7 @@
     "Friedman2026GoldenLineTowardWhat204": {
       "citation_key": "Friedman2026GoldenLineTowardWhat204",
       "source_revision_review": null,
-      "abstract": "A directional instrument for recording long-horizon aspirations and observable movement toward them. It returns one of four directional readings per aspiration against a versioned registry and deliberately computes no aggregate: there is no virtue score, and NOT_OBSERVED means no valid entry was admitted rather than that nobody looked. Subtitle: An Aspirational Thread for Long-Horizon Work Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "abstract": "Golden Line describes an aspirational thread and a versioned nine-entry registry evaluated against recorded markers, counter-signals and review dates. Its directional readings are explicitly not compliance scores or certifications that work is good, safe, lawful or complete. The retained methods and findings are statements in the selected manuscript and source-bound synthetic examples; this catalog refresh checks their quoted text but does not rerun the evaluator or verify observers' declarations.",
       "keywords": [
         "aspiration",
         "long-horizon work",
@@ -7714,17 +7700,21 @@
         "findings": "papers/2026_GoldenLine/metadata.json"
       },
       "source": "papers/paper_metadata.json",
-      "abstract_provenance": {},
+      "abstract_provenance": {
+        "source": "full_text.md",
+        "date": "2026-11-06",
+        "kind": "curated_summary"
+      },
       "summary_provenance": {
         "source": "full_text.md",
-        "date": "2026-10-01",
+        "date": "2026-11-06",
         "work_kind": "software/methods"
       }
     },
     "Friedman2026BlackLineStrongWork205": {
       "citation_key": "Friedman2026BlackLineStrongWork205",
       "source_revision_review": null,
-      "abstract": "A positive practice instrument for concise, inspectable, revisable work. It reads self-declared tags and evidence labels against a versioned practice registry and returns one of four statuses over declaration coverage. It measures whether the evidence a practice asks for was declared — never whether the work is true, good, or permitted; an ALIGNED reading authorizes nothing. Subtitle: A Positive Operating Discipline for Concise, Rigorous Research and Engineering Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "abstract": "Black Line describes an operating discipline implemented through eleven practices in six families and a staged evaluator of declared evidence labels. The selected manuscript states that ALIGNED concerns fresh declarations, not source truth, safety, accreditation or permission. It includes structural checks and adversarial self-declaration examples while explicitly reporting no user-study or outcome comparison. This catalog refresh checks source quotations without rerunning those software experiments.",
       "keywords": [
         "research practice",
         "declaration coverage",
@@ -7756,10 +7746,14 @@
         "findings": "papers/2026_BlackLine/metadata.json"
       },
       "source": "papers/paper_metadata.json",
-      "abstract_provenance": {},
+      "abstract_provenance": {
+        "source": "full_text.md",
+        "date": "2026-11-06",
+        "kind": "curated_summary"
+      },
       "summary_provenance": {
         "source": "full_text.md",
-        "date": "2026-10-01",
+        "date": "2026-11-06",
         "work_kind": "software/methods"
       }
     },
@@ -7936,7 +7930,7 @@
     "Friedman2026RobustBeliefSharingFederated210": {
       "citation_key": "Friedman2026RobustBeliefSharingFederated210",
       "source_revision_review": null,
-      "abstract": "Multi-agent active inference gives a natural account of belief sharing: agents hold local posteriors over a shared latent state, communicate those beliefs, and pool them into a colony-level consensus. The same mechanism is fragile when a member is miscalibrated, corrupted, or strategically wrong. Because the standard pool multiplies the reports together, a single confident-but-wrong broadcast that puts near-zero mass on the true state can pull the whole consensus off it, outweighing many honest members. The colony therefore needs a way to preserve the useful structure of belief sharing while limiting the influence of contaminated beliefs. This paper presents Active Fedference, a discrete-categorical framework that connects robust federated generalized variational inference with active inference belief sharing. The main bridge is structural: standard belief sharing appears as the non-robust corner of a broader generalized-Bayes family, while robust losses, conservative server fusion, and explicit aggregation diagnostics describe how the system moves away from that corner under declared contamination mechanisms. The result is not a replacement for belief sharing, but a containment result: ordinary belief sharing is recovered when robustness is turned off. Bounded-loss theory applies on the client axis, while the variational-server axis supplies an objective-backed redescending weight update. The manuscript separates three robustness axes that are often conflated. First, client-side generalized-Bayes updates change how each agent absorbs evidence; this is the rigorous axis, carrying FedGVI’s bounded-influence result only under the source theorem’s loss, model, and contamination assumptions. Second, a sharp server-side reweighting heuristic suppresses beliefs that pull away from the emerging consensus, while carrying only its recovery-limit guarantee — no proven objective and no bounded-influence bound. Third, a variational aggregation rule supplies a more conservative objective-backed server alternative, with a raw effective-weight bound but not an estimator-level bounded-influence proof for the normalized consensus. Keeping these axes separate lets the paper state exactly which claims are proven, which are empirical, and which remain engineering extensions. The study suite then exercises the framework as an end-to-end research system: recovery checks anchor the standard-Bayes limit, belief-sharing studies verify the communication baseline, contamination experiments test robust consensus, and extension studies probe moving agents, hierarchical latent structure, sensitivity to acuity and colony size, parameter recovery, and single-host socket-backed federation traces. All reported quantities are generated from deterministic analysis artifacts and injected into the manuscript by token, so the paper, figures, release package, and validation reports remain tied to the same execution record. The open-source repository is ActiveInferenceInstitute/Active_Fedference . The production Zenodo release DOI is 10.5281/zenodo.21864004, and the repository and deposited PDF point to each other through this DOI and the repository URL.",
+      "abstract": "The selected Active Fedference 1.1.0 manuscript presents a discrete-categorical connection between active-inference belief sharing and a generalized-Bayes family. It separately assigns claims to source-conditional client updates, a recovery-only heuristic server rule and an objective-backed variational server rule; no robustness guarantee transfers between those axes. The manuscript reports recovery, contamination, sensitivity and socket-backed studies from deterministic artifacts. This catalog refresh does not reproduce those studies or establish general robustness or real-world deployment efficacy.",
       "keywords": [
         "active inference",
         "federated learning",
@@ -7946,18 +7940,12 @@
         "FedGVI"
       ],
       "findings": [
-        "Recovery contract: KL/NLL client limits recover closed-form Bayes and the zero-robustness server branch recovers the log-linear pool, with maximum deviations of 5.55e-17 and 0.",
-        "Across 960 paired trials at the verdict contamination rate, the headline robust method (RKL) reached accuracy 0.9867 versus 0.9021 for the naive pool.",
-        "The server heuristic is regime-dependent: at the most severe swept rate the best robust mean reached 0.9880 versus 0.6928 for the standard pool, an operating-point contrast only.",
-        "In a disjoint-observation extension, communicating agents (0.493) outperformed isolated agents (0.326) across 128 seeds, framed as evidence for that configuration only.",
-        "The authors state the evidence does not establish universal Byzantine tolerance, truth recovery, calibration, or an optimal robustness parameter."
+        "The reported containment result recovers ordinary belief sharing when robustness is turned off.",
+        "Client, heuristic-server and variational-server statements are explicitly kept separate rather than inheriting one another's guarantees."
       ],
       "methods": [
-        "Discrete-categorical NumPy/SciPy reimplementation of FedGVI primitives — FedGVI generalized-Bayes primitives (divergences, bounded losses, generalized posterior, cavity algebra, robust aggregation) were reimplemented for categorical beliefs.",
-        "Three-step federation protocol: local update, broadcast, server fusion — Agents form generalized-Bayes posteriors against their cavity, broadcast them, and a server fuses them, with each agent's heard consensus excluding its own message.",
-        "Server rules: sharp reweighting heuristic and variational aggregate — Two server aggregators are compared: a divergence-reweighting heuristic and an objective-backed variational_aggregate derived from an aggregation free energy.",
-        "Paired Wilcoxon tests with BH-FDR and bootstrap CIs over 960 trials — Robust-vs-naive contrasts under contamination use matched-pairs Wilcoxon signed-rank tests deflated with Benjamini-Hochberg FDR and bootstrap confidence intervals.",
-        "Simulation study suite on a 7-agent, 9-location sentinel POMDP — Studies run on a fixed ensemble of 7 agents sharing a 9-location factor (seed 0), plus acuity recovery, disjoint-observation and MLP-transfer extensions."
+        "Discrete-categorical generalized-Bayes belief sharing — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+        "Separate robustness claim owners — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method."
       ],
       "concepts": [],
       "sources": {
@@ -7967,10 +7955,14 @@
         "findings": "papers/2026_RobustBeliefSharing/metadata.json"
       },
       "source": "papers/paper_metadata.json",
-      "abstract_provenance": {},
+      "abstract_provenance": {
+        "source": "full_text.md",
+        "date": "2026-11-06",
+        "kind": "curated_summary"
+      },
       "summary_provenance": {
         "source": "full_text.md",
-        "date": "2026-10-01",
+        "date": "2026-11-06",
         "work_kind": "theoretical"
       }
     },
@@ -8160,7 +8152,7 @@
     "Friedman2026ForensicAuditMillenniumLeanClay215": {
       "citation_key": "Friedman2026ForensicAuditMillenniumLeanClay215",
       "source_revision_review": null,
-      "abstract": "Statement-level forensic audit of the MillenniumLean package (AIX Global, Zenodo 10.5281/zenodo.22226553), which claims kernel-checked Lean 4 proofs of the six remaining Clay Millennium Problems. The audit independently reproduces every kernel-hygiene claim (clean build, zero sorry, zero project axioms) under the pinned toolchain, then audits what the theorem types actually say. Verdict: none of the six problems is resolved.",
+      "abstract": "This deposited report audits the MillenniumLean package's claims about six Clay Millennium Problems. It reports a pinned-toolchain examination of eleven files and fourteen itemized findings, distinguishing kernel acceptance from whether a theorem states and resolves the intended mathematical problem. The author's reported verdict is that none of the six problems is resolved by that package. This catalog refresh checks the deposited text and provenance; it does not independently rerun Lean or recertify either the package or the audit.",
       "keywords": [
         "lean-4",
         "formal-verification",
@@ -8170,36 +8162,36 @@
         "evidence-first"
       ],
       "findings": [
-        "The package's kernel claims hold and reproduce exactly: clean build, zero live sorry, zero project axioms, and only standard axiom footprints.",
-        "The claimed final theorems are evidentially void: conditional implications with unproved premises, definitions of the open statements, or true theorems about unrelated simple objects.",
-        "The 'universalization tower' certifying Hodge, BSD and Navier-Stokes proves only that 0 < n + 1 for all naturals.",
-        "Verdict: none of the six Clay problems is resolved; the audit disputes no kernel output, only what those outputs are claimed to demonstrate."
+        "The report distinguishes reproduced kernel-hygiene outputs from the mathematical content of the claimed final theorems.",
+        "The author's stated verdict is that the package resolves none of the six problems; this remains an attributed audit conclusion."
       ],
       "methods": [
-        "Independent kernel reproduction under the pinned Lean 4/mathlib toolchain — Rebuilt the MillenniumLean package with the exact pinned Lean toolchain and mathlib revision and re-ran its axiom report to check its kernel-hygiene claims.",
-        "Statement-level binder parsing compared against official Clay statements — Parsed each claimed final theorem with a binder extractor and classified it against the official Clay problem statements as conditional, definition-only, or off-topic.",
-        "Script-checked, line-anchored quotation of the package source — Verified all line-anchored quotations in the fourteen finding reports against the extracted package bytes by script, and disclosed an earlier failed draft.",
-        "Test suite asserting audit facts on real package bytes — Used fifteen test files that assert audit facts against the actual package bytes without mocks."
+        "Pinned-package source and theorem-statement audit — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+        "Itemized source quotes and probe reports — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method."
       ],
       "concepts": [],
       "sources": {
-        "abstract": "papers/2026_MillenniumAudit/README.md",
+        "abstract": "papers/paper_metadata.json",
         "keywords": "papers/paper_metadata.json",
         "methods": "papers/2026_MillenniumAudit/metadata.json",
         "findings": "papers/2026_MillenniumAudit/metadata.json"
       },
-      "source": "papers/2026_MillenniumAudit/README.md",
-      "abstract_provenance": {},
+      "source": "papers/paper_metadata.json",
+      "abstract_provenance": {
+        "source": "full_text.md",
+        "date": "2026-11-06",
+        "kind": "curated_summary"
+      },
       "summary_provenance": {
         "source": "full_text.md",
-        "date": "2026-10-01",
+        "date": "2026-11-06",
         "work_kind": "book/report"
       }
     },
     "Friedman2026SkillarumConditionallyReproducibleWebsite216": {
       "citation_key": "Friedman2026SkillarumConditionallyReproducibleWebsite216",
       "source_revision_review": null,
-      "abstract": "Source code for Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation. Skillarum turns selected public website pages into portable SKILL.md documents for agent harnesses such as Codex, Claude Code, and Hermes, in five inspectable stages (acquire, prepare, process, parse, render) with provenance manifests and an evidence-gated research package. Release 0.3.0 added index-derived profiles (one skill per page listed on a site's own index; 528 Math 4 Wisdom Research pages), block-preserving extraction, authored target descriptions, and math4wisdom-cube, a versioned investigation skill with separate source, mathematics, interpretation, and test ledgers, audited by three independent AI investigators whose verbatim reports are included. Release 0.3.1 is a correction release: math4wisdom-cube 0.3.0 withdraws an investigator claim that 0.2.0 adopted without recomputation (1+3+3+1 is not the generic grading pattern) and adds a check for the corrected statement; the changelog's account of investigator independence and two documentation statements are corrected.",
+      "abstract": "The selected Skillarum manuscript describes a five-stage pipeline that compiles selected server-rendered website pages into portable SKILL.md artifacts with provenance, resumability and explicit provider/fallback histories. Its current report summarizes 538 persisted observations from three source profiles and 535 target bundles. A reported 100% package-valid rate applies only to completed runs and is not an end-to-end success probability or population estimate. Human-review agreement is pending, and this catalog refresh does not rerun or independently validate those observations.",
       "keywords": [
         "website extraction",
         "agent skills",
@@ -8212,18 +8204,12 @@
         "Math 4 Wisdom"
       ],
       "findings": [
-        "Across 7 completed observations from 2 source profiles, the package-valid rate was 100.0%, with 0 fallback observations and 5 truncated pages.",
-        "The author stresses these rates are conditional on run completion and descriptive, not an end-to-end success probability or population estimate.",
-        "Source coverage was 37 of 37 page mappings, with a 95% model reference interval of 90.5% to 100.0%.",
-        "Human-review agreement is pending: the report contains no rater identifiers or shared cases, so no inter-rater statistic is reported.",
-        "The paper states it does not establish improved semantic quality, lower latency, complete coverage or downstream safety; these remain hypotheses."
+        "The current manuscript reports 538 observations, three source profiles and 535 target bundles, superseding the older seven-observation summary.",
+        "Completed-run package validity is descriptive and conditional; human-review agreement remains pending."
       ],
       "methods": [
-        "Five-stage pipeline: acquisition, preparation, generation, parsing, rendering — Skillarum turns selected server-rendered pages into SKILL.md packages through separated stages that record page hashes, URLs, request events, provider attempts and integrity metadata.",
-        "SHA-256 content-aware cache identities and provenance predicates — Defines a formal model with hashed cache identities and a provenance-completeness predicate combining package-level provenance with pagewise lineage.",
-        "Interchangeable generators with deterministic default and fallback — Deterministic, OpenAI, Ollama, command and fallback generators with typed retry traces; all recorded backends in the reported runs were deterministic.",
-        "Live case studies on two configured website source areas — Evaluation runs on Math 4 Wisdom and Active Inference Institute website profiles and their target bundles, alongside local fixture tests for redirects, robots, injection and caching.",
-        "Clopper–Pearson reference intervals and planned weighted Cohen kappa — Reports rates with exact binomial reference intervals and a seeded bootstrap policy; human-review agreement is to use linear-weighted kappa once two raters exist."
+        "Separated acquisition-to-rendering pipeline with provenance — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+        "Typed contracts and content-aware cache identities — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method."
       ],
       "concepts": [
         "website extraction",
@@ -8241,10 +8227,14 @@
         "concepts": "papers/2026_Skillarum/SKILL.md"
       },
       "source": "papers/paper_metadata.json",
-      "abstract_provenance": {},
+      "abstract_provenance": {
+        "source": "full_text.md",
+        "date": "2026-11-06",
+        "kind": "curated_summary"
+      },
       "summary_provenance": {
         "source": "full_text.md",
-        "date": "2026-10-01",
+        "date": "2026-11-06",
         "work_kind": "software/methods"
       }
     },
@@ -8840,7 +8830,7 @@
     "Friedman2026GNNBasedActiveInference232": {
       "citation_key": "Friedman2026GNNBasedActiveInference232",
       "source_revision_review": null,
-      "abstract": "An inspectable Generalized Notation Notation (GNN)-specified active inference Battleship implementation, manuscript, and reproducibility materials. Finite-catalog Bayesian inference and one-shot objectives; no unrestricted optimality or empirical efficacy claim. Version 0.5.0 is the organization and visual-explanation edition: transferred GitHub repository, updated DOI-bearing manuscript, enhanced dashboard explanations, and a captioned 20-minute lecture with slides and transcript. Scientific traces and statistical design are unchanged. Synthetic local Aiden narration; original script and artwork are CC BY 4.0.",
+      "abstract": "The selected 0.5.0 Battleship manuscript describes exact categorical Bayesian inference conditional on a reproducibly sampled finite fleet catalog and a one-step preference-and-information objective. It reports a prospectively specified 1280-search follow-up across 256 paired units and five strategies, with strategy comparisons limited to the declared generator and objectives. The text explicitly disclaims an unrestricted Battleship solver, a new inference principle or a validated educational intervention. This catalog refresh does not reproduce its seeded analyses or statistical results.",
       "keywords": [
         "active inference",
         "Battleship",
@@ -8849,8 +8839,14 @@
         "active sensing",
         "reproducible software"
       ],
-      "findings": [],
-      "methods": [],
+      "findings": [
+        "The reported comparisons are scoped to the declared generator and objectives rather than a generally superior strategy.",
+        "The manuscript presents an inspectable implementation rather than an unrestricted solver or validated educational intervention."
+      ],
+      "methods": [
+        "Finite-catalog Bayesian inference and one-step objective — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+        "Specified paired strategy comparison — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method."
+      ],
       "concepts": [
         "active inference",
         "Battleship",
@@ -8862,11 +8858,21 @@
       "sources": {
         "abstract": "papers/paper_metadata.json",
         "keywords": "papers/paper_metadata.json",
+        "methods": "papers/2026_GNNBasedActive/metadata.json",
+        "findings": "papers/2026_GNNBasedActive/metadata.json",
         "concepts": "papers/2026_GNNBasedActive/SKILL.md"
       },
       "source": "papers/paper_metadata.json",
-      "abstract_provenance": {},
-      "summary_provenance": {}
+      "abstract_provenance": {
+        "source": "full_text.md",
+        "date": "2026-11-06",
+        "kind": "curated_summary"
+      },
+      "summary_provenance": {
+        "source": "full_text.md",
+        "date": "2026-11-06",
+        "work_kind": "software/methods"
+      }
     },
     "Friedman2026BlakeanEntomologySmallLives233": {
       "citation_key": "Friedman2026BlakeanEntomologySmallLives233",
@@ -8993,6 +8999,65 @@
       },
       "source": "papers/paper_metadata.json",
       "abstract_provenance": {},
+      "summary_provenance": {}
+    },
+    "Friedman2026RikishiReproducibleOperationAnalysis236": {
+      "citation_key": "Friedman2026RikishiReproducibleOperationAnalysis236",
+      "source_revision_review": null,
+      "abstract": "The Suggested Upper Merged Ontology (SUMO) supplies general categories, relations and axioms for knowledge representation. Its source language, Standard Upper Ontology Knowledge Interchange Format (SUO-KIF), and its reasoning environment, Sigma Knowledge Engineering Environment (KEE), have different roles. Rikishi is a source-bound workbench for inspecting those commitments, submitting selected reasoning problems, and retaining their inputs and evidence. This paper asks how that infrastructure can make a scientific modeling connection inspectable. Prior Active Inference–SUMO alignment provides a direct precedent (Douglass et al., 2024; doi:10.5281/zenodo.11463326). One shared finite witness connects selected ontology expressions to probability models, numerical evaluation, pinned FEP_Formal Lean statements and synthetic observation histories. The ontology lane investigates declared model, representation, calculation and result roles. The mathematical lane supplies finite normalization, conditioning and information identities under stated hypotheses. The computational lane checks numerical outputs and generates trajectories from an explicit persistent-state model. Stable identifiers and common inputs join these lanes without treating their claims as interchangeable. Worked source formulas, direction-sensitive queries, numerical references and formal controls make the connections testable. Exact conditioning is separated from simulated frequencies, and variational inference from action selection and empirical model assessment. The resulting interface supports reproducible inspection of particular examples; it does not establish full-SUMO consistency, a general SUMO-to-Lean interpretation, verification of all Python execution, or biological validity of the Free Energy Principle (FEP).",
+      "keywords": [
+        "SUMO",
+        "SUO-KIF",
+        "ontology",
+        "automated theorem proving",
+        "Lean",
+        "Free Energy Principle",
+        "finite probability",
+        "reproducible research",
+        "provenance",
+        "Active Inference"
+      ],
+      "findings": [],
+      "methods": [],
+      "concepts": [],
+      "sources": {
+        "abstract": "papers/paper_metadata.json",
+        "keywords": "papers/paper_metadata.json"
+      },
+      "source": "papers/paper_metadata.json",
+      "abstract_provenance": {
+        "source": "deposited_registry_description",
+        "date": "2026-11-06",
+        "kind": "complete_author_abstract",
+        "url": "https://zenodo.org/records/23987671"
+      },
+      "summary_provenance": {}
+    },
+    "Friedman20262026ActiveInferenceSymposium237": {
+      "citation_key": "Friedman20262026ActiveInferenceSymposium237",
+      "source_revision_review": null,
+      "abstract": "Presenter program and book of abstracts for the 6th Applied Active Inference Symposium, November 12–13, 2026 (UTC), prepared by the Active Inference Institute. The approved November 1, 2026 public program contains 57 contributions, 54 supplied abstracts and three explicitly pending abstracts. Presenter affiliations, ORCIDs and backgrounds are included only where supplied in the approved 2026 public sources; missing values and composite presenter credits are preserved without inferred identities. Participant information is limited to the designated public 2026 view, rechecked on November 5, 2026. Creator entries preserve the published presenter and group display credits, with Active Inference Institute first; they are not a verified count of individual people. Cover and page-two artwork are generated conceptual illustrations. Source, rendering methods and versioned release: ActiveInferenceInstitute/Symposium .",
+      "keywords": [
+        "active inference",
+        "symposium",
+        "book of abstracts",
+        "presenter program",
+        "2026"
+      ],
+      "findings": [],
+      "methods": [],
+      "concepts": [],
+      "sources": {
+        "abstract": "papers/paper_metadata.json",
+        "keywords": "papers/paper_metadata.json"
+      },
+      "source": "papers/paper_metadata.json",
+      "abstract_provenance": {
+        "source": "deposited_registry_description",
+        "date": "2026-11-06",
+        "kind": "publisher_description",
+        "url": "https://zenodo.org/records/23986505"
+      },
       "summary_provenance": {}
     }
   }

@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.0",
+  "source_pdf": {
+    "record_id": "22833506",
+    "concept_doi": "10.5281/zenodo.21754237",
+    "artifact_doi": "10.5281/zenodo.22833506",
+    "version": "0.4.1",
+    "url": "https://zenodo.org/api/records/22833506/files/golden_line_combined.pdf/content",
+    "name": "golden_line_combined.pdf",
+    "bytes": 6628350,
+    "sha256": "be801cc282ada39af586c46b32e978231b922a4f95000c0c53866bbb8c1afab7",
+    "md5": "4f8417ef452dc51d283b473d4d7e5042",
+    "pages": 39,
+    "storage": "remote primary; acquired review copy retained privately"
+  },
+  "extraction": {
+    "file": "full_text.md",
+    "sha256": "948d67f55039b950b54433ed0cf94d9ea7a720e2e503caa5c399effa8c63db8e",
+    "source_pdf_sha256": "be801cc282ada39af586c46b32e978231b922a4f95000c0c53866bbb8c1afab7",
+    "tool": "PyMuPDF 1.28.2",
+    "method": "All 39 pages extracted in document order with page markers. No OCR or new image extraction."
+  },
+  "registry_observation": {
+    "record_id": "22833506",
+    "doi": "10.5281/zenodo.22833506",
+    "conceptdoi": "10.5281/zenodo.21754237",
+    "title": "Golden Line: Toward What Matters",
+    "publication_date": "2026-09-18",
+    "version": "0.4.1",
+    "creators": [
+      {
+        "name": "Friedman, Daniel Ari",
+        "affiliation": "Active Inference Institute",
+        "orcid": "0000-0001-6232-9096"
+      }
+    ],
+    "license": null,
+    "record_json_sha256": "5f10e7cb106ff5bf13fab99158d723765818044df36c783f0cf637f3f955acea",
+    "record_json_serialization": "UTF-8 canonical JSON, sort_keys=True, separators comma/colon, ensure_ascii=False; exact record from the frozen paginated primary acquisition."
+  },
+  "document_observation": {
+    "title": "Golden Line: Toward What Matters",
+    "byline": [
+      "Friedman, Daniel Ari"
+    ],
+    "affiliation": "Active Inference Institute",
+    "orcid": "0000-0001-6232-9096",
+    "cover_text_sha256": "ae0774e90c5eb05feadeac06159c2b19404112345d217953eaefad233f2e5221",
+    "review_scope": "Root and curator source-text title/byline review; no full-document visual or scientific approval."
+  },
+  "historical_sources": [
+    {
+      "file": "full_text_before_2026-11-06.md",
+      "sha256": "429848daf707e2e1a8e33bd656ac4e7d467ede9e38083c54c26b3d2baeb6b765",
+      "edition": "Retained extraction before 2026-11-06; version record not inferred",
+      "binding_basis": "Original extraction header and measured retained local bytes; no historical version ID inferred.",
+      "source_pdf": "golden_line_combined.pdf",
+      "source_pdf_sha256": "c1ea0f098c597d32e24facd66fc90dad1e89077d8712c7536904669da142a2b9",
+      "source_pdf_bytes": 6628468
+    }
+  ],
+  "retained_local_pdfs": [
+    {
+      "file": "golden_line_combined.pdf",
+      "bytes": 6628468,
+      "sha256": "c1ea0f098c597d32e24facd66fc90dad1e89077d8712c7536904669da142a2b9",
+      "relationship": "retained local PDF; version record not inferred"
+    }
+  ],
+  "historical_curation": {
+    "folder_metadata_preimage_sha256": "a4f59742cc3949f206bf472613e4b82617c1601b165c4fbf4702794ab7f2de24",
+    "folder_metadata": {
+      "title": "Golden Line: Toward What Matters",
+      "version": "0.4.0",
+      "doi": "10.5281/zenodo.21754237",
+      "doi_url": "https://doi.org/10.5281/zenodo.21754237",
+      "zenodo_record": "https://zenodo.org/records/21754237",
+      "record_id": "21754238",
+      "publication_date": "2026-08-02",
+      "resource_type": {
+        "title": "Working paper",
+        "type": "publication",
+        "subtype": "workingpaper"
+      },
+      "creators": [
+        {
+          "name": "Friedman, Daniel Ari",
+          "affiliation": "Active Inference Institute",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ],
+      "description": "A directional instrument for recording long-horizon aspirations and observable movement toward them. It returns one of four directional readings per aspiration against a versioned registry and deliberately computes no aggregate: there is no virtue score, and NOT_OBSERVED means no valid entry was admitted rather than that nobody looked. Subtitle: An Aspirational Thread for Long-Horizon Work Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "keywords": [
+        "aspiration",
+        "long-horizon work",
+        "directional assessment",
+        "values in practice",
+        "research ethics",
+        "open science",
+        "non-compensatory reading"
+      ],
+      "files": [
+        {
+          "name": "golden_line_combined.pdf",
+          "size_bytes": 6628468,
+          "checksum": "md5:de7e2adc0f0280885df2f58c5c9f3af9",
+          "download_url": "https://zenodo.org/api/records/21754238/files/golden_line_combined.pdf/content"
+        }
+      ],
+      "related_resources": [],
+      "github_repo": "",
+      "source": "zenodo-only",
+      "checked_at": "2026-08-02T15:12:53Z",
+      "methods": [
+        {
+          "name": "Python package with a versioned nine-entry aspiration registry",
+          "description": "Each aspiration pairs a thread and horizon with lists of Markers (signs of movement toward) and Counter-signals (signs of movement away).",
+          "evidence": "The executable instrument is a small Python package with a versioned aspiration registry of nine entries — four founding aspirations and five further ones — and a staged progress_report evaluator."
+        },
+        {
+          "name": "Staged progress_report evaluator (intake, matching, decision)",
+          "description": "Horizon entries are screened and normalized, matched against declared markers/counter-signals, and mapped to TOWARD, INQUIRY, DRIFTING, or NOT_OBSERVED without numeric scores.",
+          "evidence": "progress_report reads a batch of horizon entries against the versioned registry in three stages, and every finding it returns carries a full reasons trail plus structured derivation fields"
+        },
+        {
+          "name": "Formal definitions and propositions bound to named tests",
+          "description": "The evaluator's decision rule is restated as definitions and propositions matching the code, each tied to a test, plus seven structural invariants with planted-bad detection tests.",
+          "evidence": "records seven structural invariants, each proven by a planted-bad proof-of-detection test."
+        },
+        {
+          "name": "Descriptive analysis helpers and code-derived figures",
+          "description": "Pure read-only helpers (signal_inventory, horizon_distribution, temporal_currentness_sweep, report_overview) generate figures, several replaying the evaluator on synthetic entries.",
+          "evidence": "A small analysis module sits beside the evaluator and is deliberately weaker than it: every helper is pure, deterministic, and read-only, and none can change what a reading means."
+        },
+        {
+          "name": "Scholarship lineage for the founding aspirations",
+          "description": "Situates the four founding aspirations in a lineage from practical wisdom and practice-internal goods through capabilities, repair, commons governance, and metric hazards.",
+          "evidence": "in a lineage running from practical wisdom and goods internal to a practice through the capability approach, reflective practice, repair, commons governance, technical power"
+        }
+      ],
+      "key_findings": [
+        "Counter-signal precedence: any recorded declared counter-signal yields DRIFTING regardless of how many markers were observed or staleness.",
+        "TOWARD requires every declared marker and no counter-signal; there is no partial credit, so all-but-one marker reads the same as none.",
+        "Stale or date-unauditable fully-marked observations yield INQUIRY rather than DRIFTING; the currentness sweep shows an exclusive boundary (current at 90, stale at 91 days).",
+        "The shipped registry declares 18 markers and 9 counter-signals, all distinct; the paper stresses this counts vocabulary, not fulfilment.",
+        "The author acknowledges the instrument does not handle the adversarial case: an observer can file the tokens that produce a TOWARD."
+      ],
+      "key_findings_evidence": [
+        "the status is DRIFTING, regardless of how many markers were observed and regardless of staleness.",
+        "There is no partial credit: an entry recording every marker but one reads exactly as an entry recording none.",
+        "exposing the exclusive staleness boundary (current at age 90, stale at 91 for a 90-day window) as an observed trajectory rather than a claim.",
+        "for the shipped registry, 18 markers and 9 counter-signals, with every token distinct — describing the vocabulary the evaluator can match, never its fulfilment.",
+        "so an observer who wants a TOWARD can file the tokens that produce one, and no clause ordering prevents it."
+      ],
+      "summary_provenance": {
+        "source": "full_text.md",
+        "date": "2026-10-01",
+        "work_kind": "software/methods",
+        "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+        "notes": "Software/formal instrument paper; results are properties of the evaluator's own rules and synthetic replays, not empirical findings. The paper explicitly says a reading is not a compliance score or certification.",
+        "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+      },
+      "latest_software_release": {
+        "version": "v0.5.0",
+        "publication_date": "2026-10-21",
+        "github_release_url": "https://github.com/docxology/golden_line/releases/tag/v0.5.0",
+        "source_report": "reports/publication_intake_2026-10-23.json",
+        "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
+        "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
+      }
+    },
+    "master_metadata": {
+      "year": "2026",
+      "topic": "GoldenLine",
+      "name": "Golden Line: Toward What Matters",
+      "description": "A directional instrument for recording long-horizon aspirations and observable movement toward them. It returns one of four directional readings per aspiration against a versioned registry and deliberately computes no aggregate: there is no virtue score, and NOT_OBSERVED means no valid entry was admitted rather than that nobody looked. Subtitle: An Aspirational Thread for Long-Horizon Work Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "authors": "Daniel Ari Friedman",
+      "abstract": "A directional instrument for recording long-horizon aspirations and observable movement toward them. It returns one of four directional readings per aspiration against a versioned registry and deliberately computes no aggregate: there is no virtue score, and NOT_OBSERVED means no valid entry was admitted rather than that nobody looked. Subtitle: An Aspirational Thread for Long-Horizon Work Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "keywords": [
+        "aspiration",
+        "long-horizon work",
+        "directional assessment",
+        "values in practice",
+        "research ethics",
+        "open science",
+        "non-compensatory reading"
+      ],
+      "doi": "10.5281/zenodo.21754237"
+    },
+    "current_quote_presence_against_old_items": {
+      "methods": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "key_findings_evidence": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "scope": "Complete prior values retained as historical source/prose. Old version identifiers in metadata are observations, not inferred bindings of old PDF/image bytes."
+  },
+  "current_summary_review": {
+    "summary_provenance": {
+      "source": "full_text.md",
+      "date": "2026-11-06",
+      "source_pdf_sha256": "be801cc282ada39af586c46b32e978231b922a4f95000c0c53866bbb8c1afab7",
+      "source_text_sha256": "948d67f55039b950b54433ed0cf94d9ea7a720e2e503caa5c399effa8c63db8e",
+      "selected_record_id": "22833506",
+      "work_kind": "software/methods",
+      "method": "AI-assisted review of the selected deposited abstract, quoted passages and stated limitations. Every current method/finding quote is mechanically present in the selected extraction. This is source-text support, not new computational, mathematical, scientific or human verification.",
+      "reviewed_by": "Codex AI-assisted public-source curator",
+      "reviewed_at": "2026-11-06T19:09:15Z",
+      "historical_summary": "Complete prior folder metadata and master prose are preserved in source_evidence.json beside the retained historical extraction."
+    },
+    "old_items_retained": true,
+    "scope": "Only text-supported current statements retained; paper-reported counts/results are not fresh reproduction."
+  },
+  "release_reference_review": {
+    "retained_reference_before_refresh": {
+      "github_repo": ""
+    },
+    "selected_reference_scope": "Existing GitHub release fields are retained source references; generic repository/title or concept-DOI links do not establish the selected PDF edition.",
+    "frozen_pair_observation_sha256": "249b32b85678b497868e35d1f65c90cc80b7dc102e6648f8700f885fa3b94f00",
+    "frozen_pair_observation_url": "https://github.com/docxology/docxology/blob/ee837003a2328d28d8234ad5afdcfcd38419e90c/reports/paired_publications_2026-11-06.json"
+  },
+  "rights_observation": {
+    "registry_license": null,
+    "scope": "No license field was supplied by the selected frozen registry record. Paper rights are recorded as unknown; a repository/software license is not transferred to the paper."
+  },
+  "source_acquisition_receipt_sha256": "b92a833dc89b1e7337dbf6b1d1d900ccbfa879c52869f497e2bae81308995b0c",
+  "reviewed_at": "2026-11-06T19:09:15Z",
+  "reviewed_by": "Codex AI-assisted public-source curator",
+  "review_scope": "Acquired byte integrity, all-page extraction, title/byline and source-quotation review only; no new scientific, computational, mathematical or named human approval.",
+  "privacy_scan": {
+    "contains_local_paths": false,
+    "secret_pattern_count": 0,
+    "source": "Canonical URL-aware scan of selected current text and proposed source evidence; historical text is separately reviewed."
+  }
+}

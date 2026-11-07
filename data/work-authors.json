@@ -5830,6 +5830,477 @@
         "reviewed_by": "Codex docs_review",
         "reason": "Use the exact deposited r2054 PDF title-page byline in document order for this catalogued manuscript. The retained registry places Friedman fourth and calls him Daniel; the PDF places Daniel Ari Friedman seventh. Preserve both observations, the document date 2026-10-26 and deposit date 2026-10-28, the unspecified deposit version, the version/concept DOI relationship, and the observed ORCIDs. This override does not establish authorship for any other record, version or paper."
       }
+    },
+    "Friedman2026RikishiReproducibleOperationAnalysis236": {
+      "num": 236,
+      "doi": "10.5281/zenodo.23987670",
+      "title": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+      "status": "verified",
+      "resolved_title": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+      "registration_agency": "DataCite",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ],
+      "source_authority": "Exact public Zenodo record and deposited document credit order; no fresh DataCite API observation asserted."
+    },
+    "Friedman20262026ActiveInferenceSymposium237": {
+      "num": 237,
+      "doi": "10.5281/zenodo.23986504",
+      "title": "2026 Active Inference Symposium — Presenter Program",
+      "status": "verified",
+      "resolved_title": "2026 Active Inference Symposium — Presenter Program",
+      "registration_agency": "DataCite",
+      "authors": [
+        {
+          "literal": "Active Inference Institute",
+          "entity_type": "Organization"
+        },
+        {
+          "literal": "Bradly Alicea",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Dan Corva, Kevin Backhouse",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Hongju Pae",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Karl Friston",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Alison Gopnik",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Bianca Avanzo",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Ed Ober",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "John Boik, Glen EP Ropella",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Luca Possati",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Majid D. Beni",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Mike Levin",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Montijn van Loo",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Ryan Smith",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Sergio Rubin",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Takuya Isomura",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Ted J. Vrioni",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Ahmad Nazzal",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Alexander Sabine",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Andrew Pashea",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Anna Pereira",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Avel Guénin—Carlut",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Bo Lee",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Bruce Tisler",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Cleber Gomes",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Colin Turfus",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Daniel Dragolich",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Daniel Friedman",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Diaconescu Adrian-Stelian",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Harshil Shah, Andrew Pashea",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Harshil Shah, Satyaki Maitra",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Holly Grimm, John H. Clippinger, Daniel Ari Friedman",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Hyojun Choi",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Jean-François Cloutier",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Lancelot Da Costa",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Matthew Brown",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Michael Lennon",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Michael Walker",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Nick Hay, Adam Safron",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Patricia Craja",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Paulo Santiago",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Rajkaushik Borgohain",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Robert Worden",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Sheena Yap Chan",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Stell",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Steph Macurdy",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Tao Gong",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Tiga Kailimai",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Tran Hoang Linh",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Viraj Deshwal",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Vitalii Shapovalov",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Vitória de Souza",
+          "entity_type": "Unspecified"
+        },
+        {
+          "literal": "Xin Sun",
+          "entity_type": "Unspecified"
+        }
+      ],
+      "source_authority": "Exact public Zenodo record and deposited document credit order; no fresh DataCite API observation asserted.",
+      "registry_baseline": {
+        "creators": [
+          {
+            "name": "Active Inference Institute",
+            "affiliation": null
+          },
+          {
+            "name": "Bradly Alicea",
+            "affiliation": "Active Inference Institute (SAB)"
+          },
+          {
+            "name": "Dan Corva, Kevin Backhouse",
+            "affiliation": null
+          },
+          {
+            "name": "Hongju Pae",
+            "affiliation": null
+          },
+          {
+            "name": "Karl Friston",
+            "affiliation": null
+          },
+          {
+            "name": "Alison Gopnik",
+            "affiliation": null
+          },
+          {
+            "name": "Bianca Avanzo",
+            "affiliation": null
+          },
+          {
+            "name": "Ed Ober",
+            "affiliation": null
+          },
+          {
+            "name": "John Boik, Glen EP Ropella",
+            "affiliation": null
+          },
+          {
+            "name": "Luca Possati",
+            "affiliation": null
+          },
+          {
+            "name": "Majid D. Beni",
+            "affiliation": null
+          },
+          {
+            "name": "Mike Levin",
+            "affiliation": null
+          },
+          {
+            "name": "Montijn van Loo",
+            "affiliation": "Tilburg University",
+            "orcid": "0009-0003-0249-3240"
+          },
+          {
+            "name": "Ryan Smith",
+            "affiliation": null
+          },
+          {
+            "name": "Sergio Rubin",
+            "affiliation": null
+          },
+          {
+            "name": "Takuya Isomura",
+            "affiliation": null
+          },
+          {
+            "name": "Ted J. Vrioni",
+            "affiliation": "Junior Consultant at Vrioni Consulting"
+          },
+          {
+            "name": "Ahmad Nazzal",
+            "affiliation": "Zayed University",
+            "orcid": "0000-0002-6558-0734"
+          },
+          {
+            "name": "Alexander Sabine",
+            "affiliation": "Active Inference BoD",
+            "orcid": "0000-0001-8462-2656"
+          },
+          {
+            "name": "Andrew Pashea",
+            "affiliation": "Active Inference Institute (SAB)"
+          },
+          {
+            "name": "Anna Pereira",
+            "affiliation": null
+          },
+          {
+            "name": "Avel Guénin—Carlut",
+            "affiliation": null
+          },
+          {
+            "name": "Bo Lee",
+            "affiliation": null
+          },
+          {
+            "name": "Bruce Tisler",
+            "affiliation": null
+          },
+          {
+            "name": "Cleber Gomes",
+            "affiliation": null,
+            "orcid": "0009-0005-9134-2384"
+          },
+          {
+            "name": "Colin Turfus",
+            "affiliation": "https://substack.com/@colinturfus"
+          },
+          {
+            "name": "Daniel Dragolich",
+            "affiliation": null
+          },
+          {
+            "name": "Daniel Friedman",
+            "affiliation": "Active Inference Institute (Officer), College of the Redwoods"
+          },
+          {
+            "name": "Diaconescu Adrian-Stelian",
+            "affiliation": null
+          },
+          {
+            "name": "Harshil Shah, Andrew Pashea",
+            "affiliation": null
+          },
+          {
+            "name": "Harshil Shah, Satyaki Maitra",
+            "affiliation": null
+          },
+          {
+            "name": "Holly Grimm, John H. Clippinger, Daniel Ari Friedman",
+            "affiliation": null
+          },
+          {
+            "name": "Hyojun Choi",
+            "affiliation": null
+          },
+          {
+            "name": "Jean-François Cloutier",
+            "affiliation": null
+          },
+          {
+            "name": "Lancelot Da Costa",
+            "affiliation": null
+          },
+          {
+            "name": "Matthew Brown",
+            "affiliation": null
+          },
+          {
+            "name": "Michael Lennon",
+            "affiliation": null
+          },
+          {
+            "name": "Michael Walker",
+            "affiliation": null
+          },
+          {
+            "name": "Nick Hay, Adam Safron",
+            "affiliation": null
+          },
+          {
+            "name": "Patricia Craja",
+            "affiliation": null
+          },
+          {
+            "name": "Paulo Santiago",
+            "affiliation": null
+          },
+          {
+            "name": "Rajkaushik Borgohain",
+            "affiliation": null
+          },
+          {
+            "name": "Robert Worden",
+            "affiliation": null
+          },
+          {
+            "name": "Sheena Yap Chan",
+            "affiliation": null
+          },
+          {
+            "name": "Stell",
+            "affiliation": null
+          },
+          {
+            "name": "Steph Macurdy",
+            "affiliation": null
+          },
+          {
+            "name": "Tao Gong",
+            "affiliation": null
+          },
+          {
+            "name": "Tiga Kailimai",
+            "affiliation": null
+          },
+          {
+            "name": "Tran Hoang Linh",
+            "affiliation": null
+          },
+          {
+            "name": "Viraj Deshwal",
+            "affiliation": null
+          },
+          {
+            "name": "Vitalii Shapovalov",
+            "affiliation": null
+          },
+          {
+            "name": "Vitória de Souza",
+            "affiliation": null
+          },
+          {
+            "name": "Xin Sun",
+            "affiliation": null
+          }
+        ],
+        "title": "2026 Active Inference Symposium — Presenter Program"
+      },
+      "literal_credit_review": {
+        "schema_version": 1,
+        "source": "papers/2026_SymposiumPresenterProgram/source_evidence.json",
+        "source_sha256": "7d769aa69928cb78bf0f97f1ffbbfc3e819ee87668aa2bcc8a160e5bee588f34",
+        "record_id": "23986505",
+        "version": "3.2.0",
+        "creators_sha256": "349e4693d9a4a36e5607c559609692089381caa628e52649fc70535047300b31",
+        "reviewed_by": "Codex AI-assisted public-source curator",
+        "reviewed_at": "2026-11-06T18:45:07Z",
+        "reason": "Preserve the exact 53 published institutional/presenter/group credit units in source order. Cover and registry agree; no splitting into inferred persons or editor roles."
+      }
     }
   }
 }

@@ -1,11 +1,11 @@
 {
   "title": "Golden Line: Toward What Matters",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "doi": "10.5281/zenodo.21754237",
   "doi_url": "https://doi.org/10.5281/zenodo.21754237",
-  "zenodo_record": "https://zenodo.org/records/21754237",
-  "record_id": "21754238",
-  "publication_date": "2026-08-02",
+  "zenodo_record": "https://zenodo.org/records/22833506",
+  "record_id": "22833506",
+  "publication_date": "2026-09-18",
   "resource_type": {
     "title": "Working paper",
     "type": "publication",
@@ -18,7 +18,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "A directional instrument for recording long-horizon aspirations and observable movement toward them. It returns one of four directional readings per aspiration against a versioned registry and deliberately computes no aggregate: there is no virtue score, and NOT_OBSERVED means no valid entry was admitted rather than that nobody looked. Subtitle: An Aspirational Thread for Long-Horizon Work Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+  "description": "Golden Line describes an aspirational thread and a versioned nine-entry registry evaluated against recorded markers, counter-signals and review dates. Its directional readings are explicitly not compliance scores or certifications that work is good, safe, lawful or complete. The retained methods and findings are statements in the selected manuscript and source-bound synthetic examples; this catalog refresh checks their quoted text but does not rerun the evaluator or verify observers' declarations.",
   "keywords": [
     "aspiration",
     "long-horizon work",
@@ -31,15 +31,15 @@
   "files": [
     {
       "name": "golden_line_combined.pdf",
-      "size_bytes": 6628468,
-      "checksum": "md5:de7e2adc0f0280885df2f58c5c9f3af9",
-      "download_url": "https://zenodo.org/api/records/21754238/files/golden_line_combined.pdf/content"
+      "size_bytes": 6628350,
+      "checksum": "md5:4f8417ef452dc51d283b473d4d7e5042",
+      "download_url": "https://zenodo.org/api/records/22833506/files/golden_line_combined.pdf/content"
     }
   ],
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-08-02T15:12:53Z",
+  "checked_at": "2026-11-06T18:28:07.712051+00:00",
   "methods": [
     {
       "name": "Python package with a versioned nine-entry aspiration registry",
@@ -83,11 +83,15 @@
   ],
   "summary_provenance": {
     "source": "full_text.md",
-    "date": "2026-10-01",
+    "date": "2026-11-06",
+    "source_pdf_sha256": "be801cc282ada39af586c46b32e978231b922a4f95000c0c53866bbb8c1afab7",
+    "source_text_sha256": "948d67f55039b950b54433ed0cf94d9ea7a720e2e503caa5c399effa8c63db8e",
+    "selected_record_id": "22833506",
     "work_kind": "software/methods",
-    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Software/formal instrument paper; results are properties of the evaluator's own rules and synthetic replays, not empirical findings. The paper explicitly says a reading is not a compliance score or certification.",
-    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+    "method": "AI-assisted review of the selected deposited abstract, quoted passages and stated limitations. Every current method/finding quote is mechanically present in the selected extraction. This is source-text support, not new computational, mathematical, scientific or human verification.",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "historical_summary": "Complete prior folder metadata and master prose are preserved in source_evidence.json beside the retained historical extraction."
   },
   "latest_software_release": {
     "version": "v0.5.0",
@@ -96,5 +100,39 @@
     "source_report": "reports/publication_intake_2026-10-23.json",
     "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
     "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
-  }
+  },
+  "artifact_doi": "10.5281/zenodo.22833506",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.22833506",
+  "pages": 39,
+  "pdf_sha256": "be801cc282ada39af586c46b32e978231b922a4f95000c0c53866bbb8c1afab7",
+  "abstract": "Golden Line describes an aspirational thread and a versioned nine-entry registry evaluated against recorded markers, counter-signals and review dates. Its directional readings are explicitly not compliance scores or certifications that work is good, safe, lawful or complete. The retained methods and findings are statements in the selected manuscript and source-bound synthetic examples; this catalog refresh checks their quoted text but does not rerun the evaluator or verify observers' declarations.",
+  "abstract_provenance": {
+    "source": "full_text.md",
+    "source_text_sha256": "948d67f55039b950b54433ed0cf94d9ea7a720e2e503caa5c399effa8c63db8e",
+    "source_pdf_sha256": "be801cc282ada39af586c46b32e978231b922a4f95000c0c53866bbb8c1afab7",
+    "date": "2026-11-06",
+    "kind": "curated_summary",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "scope": "Cautious source summary of the selected abstract and stated limitations; no independent reproduction or complete author-abstract claim."
+  },
+  "remote_primary_pdf": {
+    "name": "golden_line_combined.pdf",
+    "url": "https://zenodo.org/api/records/22833506/files/golden_line_combined.pdf/content",
+    "bytes": 6628350,
+    "sha256": "be801cc282ada39af586c46b32e978231b922a4f95000c0c53866bbb8c1afab7",
+    "record_id": "22833506",
+    "version": "0.4.1"
+  },
+  "license": null,
+  "rights_note": "No license field was supplied by the selected frozen registry record. Paper rights are recorded as unknown; a repository/software license is not transferred to the paper.",
+  "source_release_review": {
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "selected_pdf_record": "22833506",
+    "selected_pdf_version": "0.4.1",
+    "retained_release_role": "Existing GitHub release fields are retained source references; generic repository/title or concept-DOI links do not establish the selected PDF edition.",
+    "scientific_or_runtime_reproduction": false,
+    "historical_text_file": "full_text_before_2026-11-06.md"
+  },
+  "document_title": "Golden Line: Toward What Matters"
 }

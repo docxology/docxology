@@ -22,7 +22,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-08-18T16:48:46Z",
-            "dateModified": "2026-11-05T20:14:12Z",
+            "dateModified": "2026-11-06T17:02:59Z",
             "keywords": "agents-md, ai-agents, computational-research, github-template, latex, multi-project, pandoc, pdf-generation, project-template, provenance, pytest, python, reproducible-research, research-template, steganography, uv, zenodo",
             "sameAs": "https://doi.org/10.5281/zenodo.20584820"
         },
@@ -55,7 +55,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-05-16T17:45:28Z",
-            "dateModified": "2026-11-05T14:46:57Z",
+            "dateModified": "2026-11-06T16:37:39Z",
             "keywords": "agents, ai-agents, automation, code-analysis, coding-agent, developer-tools, llm, mcp, mcp-server, model-context-protocol, multi-agent, orchestration, python, rag, security, static-analysis, uv, zero-mock",
             "sameAs": "https://doi.org/10.5281/zenodo.21750800"
         },
@@ -436,7 +436,7 @@
             "dateCreated": "2026-06-01T21:23:23Z",
             "dateModified": "2026-11-02T17:57:59Z",
             "keywords": "eye-tracking, gaze-estimation, mediapipe, microsaccades, neuroscience, numpy, psychophysics, pupillometry, python, saccades, streamlit, webcam",
-            "sameAs": "https://doi.org/10.5281/zenodo.20614908"
+            "sameAs": "https://doi.org/10.5281/zenodo.23404028"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -647,7 +647,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/cognitive_case_diagrams#software",
             "name": "cognitive_case_diagrams",
-            "description": "Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript ·  · Zenodo",
+            "description": "Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript ·  · Citation DOI",
             "codeRepository": "https://github.com/docxology/cognitive_case_diagrams",
             "author": {
                 "@type": "Person",
@@ -867,7 +867,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2025-04-24T21:53:54Z",
-            "dateModified": "2026-11-05T19:30:21Z",
+            "dateModified": "2026-11-06T00:44:13Z",
             "keywords": "document-analysis, markdown, markov-decision-process, networkx, pandoc, pomdp, python, reinforcement-learning"
         },
         {
@@ -1009,7 +1009,7 @@
             "dateCreated": "2026-06-13T15:57:37Z",
             "dateModified": "2026-11-03T14:16:58Z",
             "keywords": "active-inference, bayesian-model-reduction, buddhism, consciousness, criticality, free-energy-principle, pymdp, python, quantum-reference-frames",
-            "sameAs": "https://doi.org/10.5281/zenodo.20834846"
+            "sameAs": "https://doi.org/10.5281/zenodo.23380253"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1041,7 +1041,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-11T15:44:33Z",
-            "dateModified": "2026-11-04T22:38:43Z",
+            "dateModified": "2026-11-06T10:13:54Z",
             "keywords": "aes-gcm, archive, cryptography, data-standards, file-format, provenance, python, reproducible-research, research-data, zenodo",
             "sameAs": "https://doi.org/10.5281/zenodo.20396328"
         },
@@ -1074,9 +1074,9 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-09-15T17:49:35Z",
-            "dateModified": "2026-11-05T17:46:27Z",
+            "dateModified": "2026-11-06T04:04:27Z",
             "keywords": "archives, corpus, digital-humanities, literature, python, sqlite, text-analysis, visualization, william-blake",
-            "sameAs": "https://doi.org/10.5281/zenodo.21047573"
+            "sameAs": "https://doi.org/10.5281/zenodo.23922457"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1247,7 +1247,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2026-07-02T16:48:35Z",
-            "dateModified": "2026-11-02T18:12:08Z",
+            "dateModified": "2026-11-06T04:15:44Z",
             "keywords": "entomology, forensic-entomology, insects, law, legal-tech, python, reference, regulation, yaml",
             "sameAs": "https://doi.org/10.5281/zenodo.21137276"
         },
@@ -1616,7 +1616,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/black_line#software",
             "name": "black_line",
-            "description": "A positive operating discipline for concise, inspectable, revisable work; repository v0.5.0 ·  · Zenodo",
+            "description": "A positive operating discipline for concise, inspectable, revisable work; repository v0.5.0 ·  · Citation DOI",
             "codeRepository": "https://github.com/docxology/black_line",
             "author": {
                 "@type": "Person",
@@ -1648,7 +1648,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/golden_line#software",
             "name": "golden_line",
-            "description": "An aspirational thread and long-horizon direction for personal work; repository v0.5.0 ·  · Zenodo",
+            "description": "An aspirational thread and long-horizon direction for personal work; repository v0.5.0 ·  · Citation DOI",
             "codeRepository": "https://github.com/docxology/golden_line",
             "author": {
                 "@type": "Person",
@@ -1680,7 +1680,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/witness_register#software",
             "name": "witness_register",
-            "description": "Co-registration without aggregation — the Witness Register holding instrument; repository v0.2.0 ·  · Zenodo",
+            "description": "Co-registration without aggregation — the Witness Register holding instrument; repository v0.2.0 ·  · Citation DOI",
             "codeRepository": "https://github.com/docxology/witness_register",
             "author": {
                 "@type": "Person",
@@ -1800,7 +1800,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/rikishi#software",
             "name": "rikishi",
-            "description": "SUMO ontology operator, reasoning workbench, source-bound FEP connections, and reproducible manuscript",
+            "description": "SUMO ontology operator, reasoning workbench, source-bound FEP connections, and reproducible manuscript ·  · Citation DOI · Software archive",
             "codeRepository": "https://github.com/docxology/rikishi",
             "author": {
                 "@type": "Person",
@@ -1809,7 +1809,8 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-10-20T00:57:09Z",
-            "dateModified": "2026-11-03T14:19:03Z"
+            "dateModified": "2026-11-06T03:00:22Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.23987622"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -2631,7 +2632,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2022-11-07T14:26:39Z",
-            "dateModified": "2026-11-04T15:33:17Z",
+            "dateModified": "2026-11-05T23:06:50Z",
             "keywords": "active-inference, archive, dataset, open-data, speaker-diarization, video-transcripts, youtube"
         },
         {
@@ -2664,7 +2665,7 @@
             "dateCreated": "2023-04-02T19:45:34Z",
             "dateModified": "2026-11-05T18:33:46Z",
             "keywords": "active, active-inference, active-inference-notation, inference",
-            "sameAs": "https://doi.org/10.5281/zenodo.7803313"
+            "sameAs": "https://doi.org/10.5281/zenodo.19600217"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -2710,7 +2711,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-02-17T17:46:31Z",
-            "dateModified": "2026-11-05T17:50:57Z",
+            "dateModified": "2026-11-06T12:37:26Z",
             "keywords": "active-inference, expected-free-energy, free-energy-principle, generative-model, pomdp, python"
         },
         {
@@ -2772,7 +2773,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2024-11-05T19:42:21Z",
-            "dateModified": "2026-11-05T20:25:49Z",
+            "dateModified": "2026-11-05T23:08:52Z",
             "keywords": "active-inference, documentation, github-pages, llm, open-science, python, research, research-methods, scientific-workflows, symposium, visualization"
         },
         {
@@ -2803,7 +2804,7 @@
             "programmingLanguage": "HTML",
             "license": "https://spdx.org/licenses/CC0-1.0.html",
             "dateCreated": "2022-11-07T14:21:08Z",
-            "dateModified": "2026-11-05T01:49:37Z",
+            "dateModified": "2026-11-06T07:11:53Z",
             "keywords": "python, rag, transcription, video-processing, whisper, youtube",
             "sameAs": "https://doi.org/10.5281/zenodo.18686966"
         },
@@ -2835,7 +2836,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/CC-BY-4.0.html",
             "dateCreated": "2022-03-01T00:25:54Z",
-            "dateModified": "2026-11-02T04:08:39Z",
+            "dateModified": "2026-11-05T23:08:37Z",
             "keywords": "active-inference, decentralized-science, free-energy-principle, knowledge-graph, ontology, python, schema, yaml"
         },
         {
@@ -2850,7 +2851,7 @@
             },
             "programmingLanguage": "Julia",
             "dateCreated": "2022-04-29T13:45:33Z",
-            "dateModified": "2026-11-04T15:36:56Z",
+            "dateModified": "2026-11-05T23:07:03Z",
             "keywords": "active-inference, free-energy-principle, julia, jupyter, reading-group, textbook"
         },
         {
@@ -2865,7 +2866,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2025-03-14T16:00:58Z",
-            "dateModified": "2026-11-05T18:36:46Z",
+            "dateModified": "2026-11-05T23:07:08Z",
             "keywords": "knowledge-graph, llms, react, research-tools, typescript"
         },
         {
@@ -2910,7 +2911,7 @@
             },
             "programmingLanguage": "Jupyter Notebook",
             "dateCreated": "2022-02-09T13:07:24Z",
-            "dateModified": "2026-11-04T15:33:25Z",
+            "dateModified": "2026-11-05T23:06:09Z",
             "keywords": "active-inference, free-energy-principle, literature-review, ontology, pubmed, research-data"
         },
         {
@@ -2925,9 +2926,9 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-04-14T13:33:35Z",
-            "dateModified": "2026-11-05T17:39:38Z",
+            "dateModified": "2026-11-06T00:22:51Z",
             "keywords": "active-inference, bayesian-mechanics, formal-verification, free-energy-principle, information-geometry, lean4, theorem-proving",
-            "sameAs": "https://doi.org/10.5281/zenodo.19699233"
+            "sameAs": "https://doi.org/10.5281/zenodo.23196891"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -2958,7 +2959,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-05-12T14:40:06Z",
-            "dateModified": "2026-11-05T18:45:18Z",
+            "dateModified": "2026-11-05T23:07:16Z",
             "keywords": "active-inference, mcp-server, model-context-protocol, pymdp, python, rest-api"
         },
         {
@@ -3057,7 +3058,7 @@
             },
             "programmingLanguage": "TypeScript",
             "dateCreated": "2025-04-22T12:27:15Z",
-            "dateModified": "2026-11-04T15:52:07Z",
+            "dateModified": "2026-11-06T13:45:58Z",
             "keywords": "agents, llm, nodejs, orchestration, task-queue, typescript"
         },
         {
@@ -3103,7 +3104,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2024-08-21T20:33:41Z",
-            "dateModified": "2026-11-02T04:18:48Z",
+            "dateModified": "2026-11-05T23:05:42Z",
             "keywords": "graph-database, information-retrieval, knowledge-graph, knowledge-management, networkx, python, question-answering"
         },
         {
@@ -3131,7 +3132,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2023-04-15T17:32:25Z",
-            "dateModified": "2026-11-02T04:35:07Z",
+            "dateModified": "2026-11-05T23:06:55Z",
             "keywords": "collective-intelligence, discord-bot, language-model, nlp, openai, python"
         },
         {
@@ -3146,7 +3147,7 @@
             },
             "license": "https://spdx.org/licenses/CC0-1.0.html",
             "dateCreated": "2025-03-14T16:00:39Z",
-            "dateModified": "2026-11-04T15:37:15Z",
+            "dateModified": "2026-11-05T23:07:12Z",
             "keywords": "active-inference, documentation"
         },
         {
@@ -3162,7 +3163,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2024-03-22T16:46:52Z",
-            "dateModified": "2026-11-02T17:02:52Z",
+            "dateModified": "2026-11-05T23:06:05Z",
             "keywords": "data-pipeline, document-processing, ocr, python, web-scraping"
         },
         {
@@ -3256,7 +3257,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-09-28T00:12:03Z",
-            "dateModified": "2026-11-05T20:15:44Z",
+            "dateModified": "2026-11-05T20:48:02Z",
             "keywords": "active-inference, bayesian-inference, claims-ledger, computational-linguistics, discrete-state-space, free-energy-principle, gate-audit, generalized-notation-notation, generative-model, gnn, language-model, lean4, phonology, pymdp, reproducibility",
             "sameAs": "https://doi.org/10.5281/zenodo.22409418"
         },

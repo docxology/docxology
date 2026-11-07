@@ -21,6 +21,9 @@ from docxology_tools.software_table import software_catalog_dois
 from publication_pairing import (
     canonical_pair_candidate_fingerprint,
     reviewed_pair_decision_index,
+    reviewed_pair_edition_index,
+    publication_edition_matches,
+    observed_pair_editions,
 )
 
 
@@ -734,7 +737,12 @@ def paired_publication_items(
             )
         ]
 
-    reviewed = _pair_decisions(decisions or {})
+    decision_payload = decisions or {"groups": []}
+    reviewed = _pair_decisions(decision_payload)
+    edition_decisions = reviewed_pair_edition_index(
+        decision_payload, repo_root=repo_root
+    )
+    observed_editions = observed_pair_editions(report)
     items: list[dict[str, Any]] = []
     actions = report.get("actions", [])
     if not isinstance(actions, list):
@@ -759,6 +767,12 @@ def paired_publication_items(
             if candidate_fingerprint is not None
             else "deferred"
         )
+        observed_edition = observed_editions.get(candidate_fingerprint)
+        exact_edition = observed_edition is not None and publication_edition_matches(
+            observed_edition, edition_decisions.get(candidate_fingerprint)
+        )
+        if not exact_edition:
+            reviewed_status = "deferred"
         applied_receipt_valid = False
         applied_receipt_reason = ""
         historical_supersession_valid = False

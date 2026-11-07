@@ -17,3 +17,12 @@ identifiers:
   - type: url
     value: "https://doi.org/10.5281/zenodo.18364118"
     description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.22134544"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.22134544"
+    description: "Version/download DOI resolver (Zenodo artifact)"
+  - type: url
+    value: "https://zenodo.org/records/22134544"
+    description: "Version/download landing page (Zenodo artifact)"

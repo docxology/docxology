@@ -1,11 +1,12 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)"
-description: "Multiagent AI systems introduce cognitive attack surfaces absent in single-model inference. When agents delegate to agents, forming beliefs about beliefs through recursive trust hierarchies, manipulation of reasoning processes—rather than mere data c..."
+description: "This theoretical manuscript presents a Cognitive Integrity Framework for multiagent security through trust calculus, defense composition, information-theoretic limits and an adversary hierarchy. The selected Part 1 edition states formal models and as..."
 tags: ["cognitive-integrity", "multiagent-security", "cognitive-security", "active-inference", "category-theory", "formal-foundations", "threat-modeling"]
 domain: "Cognitive Security"
 citation: "Daniel Ari Friedman (2026). *Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)*. Zenodo."
 doi: "10.5281/zenodo.18364118"
+artifact_doi: "10.5281/zenodo.22134544"
 ---
 
 # Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)
@@ -20,21 +21,15 @@ This work addresses topics in **Cognitive Security**: cognitive integrity, multi
 
 Primary methods and techniques applied in this work:
 
-- **Trust Calculus with bounded, exponentially decaying delegation** — Formalizes delegated trust with decay factor δ per delegation step and proves bounds by induction on chain depth.
-- **Defense Composition Algebra (series/parallel detection)** — Derives detection rates for series and parallel composition of defenses, assuming independent detection events.
-- **Information-theoretic attack/detection bounds** — Relates attack entropy, mutual information with detector output, and channel capacity to bound detection rate and attack impact.
-- **Five-class adversary hierarchy (Ω1–Ω5)** — Defines external, peripheral, agent-level, coordination, and systemic adversary classes and maps them to multiagent architectures and OWASP Agentic Top 10.
-- **Operational semantics, invariants, and model-checking configurations** — Specifies operational semantics for message passing and trust updates, belief/goal/trust invariants, and model-checking setups for safety properties.
+- **Formal multiagent threat and defense framework** — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.
+- **Operational semantics and invariant specifications** — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Trust Boundedness theorem: delegated trust over a chain of depth d is at most δ^d, so trust cannot be amplified and vanishes exponentially with depth.
-- The paper states a stealth-impact tradeoff as a theorem: high-impact attacks are easier to detect, while stealthy attacks have limited effect.
-- The framework formalizes five architectural defenses with composition rules for reasoning about layered security.
-- The author notes guarantees depend on assumptions (honest orchestrator, n ≥ 3f+1, authenticated channels) and that the O(n²) trust matrix limits deployment to moderate agent counts.
-- Semantic-equivalence attacks, sub-threshold progressive drift, and orchestrator compromise are identified as formally difficult to detect.
+- The manuscript describes five architectural defenses and composition rules; their stated guarantees remain conditional on its model and assumptions.
+- The selected work is the theoretical Part 1; computational validation and deployment are attributed to separate companion works.
 
 Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
@@ -49,9 +44,10 @@ Methods and findings are summarized from the full text; each item is backed by a
 Verification points for this work:
 
 - Canonical DOI: 10.5281/zenodo.18364118
-- PDF SHA-256: See zenodo_record
+- PDF SHA-256: a97b33c3c41784f706276f714659a777d939cd07d3a07a03c52c3cd3fd5f222d
 - Pairing confidence: unknown
-- Last checked: 2026-06-30T23:26:08Z
+- Last checked: 2026-11-06T18:26:48.756018+00:00
+- Artifact DOI: 10.5281/zenodo.22134544
 
 ## Prerequisites
 

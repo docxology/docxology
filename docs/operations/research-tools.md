@@ -15,8 +15,11 @@ normalization and discovery. Follow [development.md](development.md) and
 [settle.md](settle.md) for regeneration and landing.
 
 The collection catalog reuses exact BibTeX entries and the bibliography's RIS
-and CSL renderers, including reviewed editor roles. Selected exports preserve
-reading order. The browser does not infer missing citation metadata.
+and CSL renderers, including reviewed editor roles. Selected CSL exports also
+use the same work-bound authority for literal organization and grouped credits
+as the complete bibliography. Invalid reviewed authority fails generation before
+writing the catalog. Selected exports preserve reading order; the browser does
+not infer missing citation metadata.
 
 Curate trails in `data/research-trails-source.json`. Work keys, video routes and
 software URLs must resolve in their authoritative catalogs; unknown resources
@@ -30,9 +33,20 @@ fallbacks are labelled; known canonical aliases and equal DOIs cannot recommend
 one another. Metadata overlap is not a citation or scientific equivalence.
 
 The map records work/domain, byline and explicit associated-software edges with
-provenance. Exact normalized author names group nodes; homonyms may be grouped
-and variants remain separate. The diagram displays at most twelve neighbors,
-while the paginated list and JSON preserve the complete graph.
+provenance. Reviewed author types distinguish people, organizations and
+unspecified contributor labels for each work. A label does not acquire a type
+from an unrelated work. Names are grouped only within their recorded type;
+homonyms may still be grouped and variants remain separate. This grouping does
+not establish an individual identity. The diagram displays at most twelve
+neighbors, while the paginated list and JSON preserve the complete graph.
+
+Existing exact node IDs take precedence when restoring a saved map link. A
+missing legacy person ID can resolve to a single organization or contributor
+label with the same normalized name. Two possible successors produce an
+explicit ambiguity and require a selection; neither is chosen by input order.
+Back/Forward restores that unresolved state or the selected node. A shared
+version query on the map script and its JSON request distinguishes the updated
+schema from the prior cached routes during ordinary online visits.
 
 ## Visitor state
 
@@ -79,6 +93,10 @@ controls, trail identities and generated-output safety.
 `test_research_tools_browser.py` checks URLs/history, saved order and downloads,
 preview/import boundaries, storage/network failures, graph completeness, CSV,
 no-JavaScript content, narrow/enlarged-text layouts, keyboard access and axe.
+`test_research_credit_consumers.py` covers literal credits in selected CSL,
+work-specific graph types, legacy map links and ambiguous recovery through the
+actual browser runtime. Generation-cache regressions separately require changes
+to author records and source-evidence sidecars to invalidate their consumers.
 
 ```bash
 uv run python3 -m pytest code/tests/test_research_tools.py code/tests/test_research_tools_browser.py -q

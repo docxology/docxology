@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0",
+  "source_pdf": {
+    "record_id": "22243473",
+    "concept_doi": "10.5281/zenodo.22243472",
+    "artifact_doi": "10.5281/zenodo.22243473",
+    "version": "1.0.0",
+    "url": "https://zenodo.org/api/records/22243473/files/Millennium_Audit_combined.pdf/content",
+    "name": "Millennium_Audit_combined.pdf",
+    "bytes": 67303,
+    "sha256": "b56db71bf6b31757e45cd3b19217b14f2acbb258d763d4d24ba5ab292074e4ae",
+    "md5": "25fe84fdb08768d5870b076838f25da1",
+    "pages": 12,
+    "storage": "remote primary; acquired review copy retained privately"
+  },
+  "extraction": {
+    "file": "full_text.md",
+    "sha256": "efca0f430983abbe35ad437b3b1c0db227980f685ba58161d8de67e1a0ed9a2a",
+    "source_pdf_sha256": "b56db71bf6b31757e45cd3b19217b14f2acbb258d763d4d24ba5ab292074e4ae",
+    "tool": "PyMuPDF 1.28.2",
+    "method": "All 12 pages extracted in document order with page markers. No OCR or new image extraction."
+  },
+  "registry_observation": {
+    "record_id": "22243473",
+    "doi": "10.5281/zenodo.22243473",
+    "conceptdoi": "10.5281/zenodo.22243472",
+    "title": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)",
+    "publication_date": "2026-09-01",
+    "version": "1.0.0",
+    "creators": [
+      {
+        "name": "Daniel Ari Friedman",
+        "affiliation": "Active Inference Institute",
+        "orcid": "0000-0001-6232-9096"
+      }
+    ],
+    "license": {
+      "id": "mit-license"
+    },
+    "record_json_sha256": "b991cefac19365e7b059e9d647a92b382edfc62b25c95e6472ab993f40f11fa7",
+    "record_json_serialization": "UTF-8 canonical JSON, sort_keys=True, separators comma/colon, ensure_ascii=False; exact record from the frozen paginated primary acquisition."
+  },
+  "document_observation": {
+    "title": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)",
+    "byline": [
+      "Friedman, Daniel Ari"
+    ],
+    "affiliation": "Active Inference Institute",
+    "orcid": "0000-0001-6232-9096",
+    "cover_text_sha256": "30edd293ea6f552c453d22dcc971de97a7885a5b3fa96f8659cf875437088b27",
+    "review_scope": "Root and curator source-text title/byline review; no full-document visual or scientific approval."
+  },
+  "historical_sources": [
+    {
+      "file": "full_text_before_2026-11-06.md",
+      "sha256": "68a36e849c07cd893b090c361a0044e1c9c8b167ef0592d36ce15a9037a8827c",
+      "edition": "Retained extraction before 2026-11-06; version record not inferred",
+      "binding_basis": "Original extraction header and measured retained local bytes; no historical version ID inferred."
+    }
+  ],
+  "retained_local_pdfs": [
+    {
+      "file": "Friedman_2026_MillenniumAudit.pdf",
+      "bytes": 69262,
+      "sha256": "c8125890cba1be893b86e2ec27212e5c0952a4edf212414a38bedb1a76836151",
+      "relationship": "retained local PDF; version record not inferred"
+    }
+  ],
+  "historical_curation": {
+    "folder_metadata_preimage_sha256": "8b9ae9d4f2a656c2f39373dd553e920b52f22ab5f6c0cc0411d0aac4bec3cc8a",
+    "folder_metadata": {
+      "title": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)",
+      "version": "1.0.0",
+      "doi": "10.5281/zenodo.22243472",
+      "doi_url": "https://doi.org/10.5281/zenodo.22243472",
+      "artifact_doi": "10.5281/zenodo.22243473",
+      "artifact_doi_url": "https://doi.org/10.5281/zenodo.22243473",
+      "zenodo_record": "https://zenodo.org/records/22243473",
+      "record_id": "22243473",
+      "publication_date": "2026-09-01",
+      "resource_type": {
+        "title": "Report",
+        "type": "publication",
+        "subtype": "report"
+      },
+      "license": "MIT",
+      "creators": [
+        {
+          "name": "Friedman, Daniel Ari",
+          "affiliation": "Active Inference Institute",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ],
+      "description": "Statement-level forensic audit of the MillenniumLean package (AIX Global, Zenodo 10.5281/zenodo.22226553), which claims kernel-checked Lean 4 proofs of the six remaining Clay Millennium Problems. The audit independently reproduces every kernel-hygiene claim (clean build, zero sorry, zero project axioms, axiom footprints within the classical trio) under the pinned toolchain, then audits what the theorem types actually say. Verdict: none of the six problems is resolved. Fourteen findings, all quotations line-anchored and byte-verified; audit doctrine, evidence receipts, and a 15-test zero-mock suite included.",
+      "keywords": [
+        "lean-4",
+        "formal-verification",
+        "millennium-prize-problems",
+        "claim-audit",
+        "adversarial-review",
+        "evidence-first",
+        "hilbert-polya",
+        "proof-assistant-forensics"
+      ],
+      "concept_doi": "10.5281/zenodo.22243472",
+      "methods": [
+        {
+          "name": "Independent kernel reproduction under the pinned Lean 4/mathlib toolchain",
+          "description": "Rebuilt the MillenniumLean package with the exact pinned Lean toolchain and mathlib revision and re-ran its axiom report to check its kernel-hygiene claims.",
+          "evidence": "re-derived every kernel-hygiene claim independently under the pinned toolchain (leanprover/lean4:v4.34.0-rc1; mathlib at the manifest-pinned revision d0be1efe9a)"
+        },
+        {
+          "name": "Statement-level binder parsing compared against official Clay statements",
+          "description": "Parsed each claimed final theorem with a binder extractor and classified it against the official Clay problem statements as conditional, definition-only, or off-topic.",
+          "evidence": "Each claimed \"final theorem\" was parsed from Millennium.lean by a balanced-parenthesis binder extractor (src/lean_parser.py) that records the declaration kind (theorem vs def) and every explicit premise binder"
+        },
+        {
+          "name": "Script-checked, line-anchored quotation of the package source",
+          "description": "Verified all line-anchored quotations in the fourteen finding reports against the extracted package bytes by script, and disclosed an earlier failed draft.",
+          "evidence": "All 259 line-anchored quotations in docs/audit/*.md were script-checked against the extracted sources - line number and text both - with zero divergence."
+        },
+        {
+          "name": "Test suite asserting audit facts on real package bytes",
+          "description": "Used fifteen test files that assert audit facts against the actual package bytes without mocks.",
+          "evidence": "All fifteen test files in tests/ assert audit facts against the real package bytes (no mocks; 15/15 pass)."
+        }
+      ],
+      "key_findings": [
+        "The package's kernel claims hold and reproduce exactly: clean build, zero live sorry, zero project axioms, and only standard axiom footprints.",
+        "The claimed final theorems are evidentially void: conditional implications with unproved premises, definitions of the open statements, or true theorems about unrelated simple objects.",
+        "The 'universalization tower' certifying Hodge, BSD and Navier-Stokes proves only that 0 < n + 1 for all naturals.",
+        "Verdict: none of the six Clay problems is resolved; the audit disputes no kernel output, only what those outputs are claimed to demonstrate."
+      ],
+      "key_findings_evidence": [
+        "The kernel claims are TRUE and reproduce byte-for-byte: clean build, zero live `sorry`, zero project axioms, axiom footprints inside {propext, Classical.choice, Quot.sound}.",
+        "They are also evidentially void: the \"final theorems\" are either implications whose unproved premise binders carry the entire mathematical content (Riemann, Yang-Mills, P vs NP), definitions of the open statements (Navier-Stokes, BSD)",
+        "\"universalization tower\" that certifies Hodge, BSD, and Navier-Stokes proves only that 0 < n + 1 for all naturals.",
+        "Verdict: none of the six problems is resolved. The audit disputes no kernel output of the package; it disputes what those outputs are claimed to demonstrate."
+      ],
+      "summary_provenance": {
+        "source": "full_text.md",
+        "date": "2026-10-01",
+        "work_kind": "book/report",
+        "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+        "notes": "Audit report of a third-party (AIX Global) Lean package; full text matches title.",
+        "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+      }
+    },
+    "master_metadata": {
+      "year": "2026",
+      "topic": "MillenniumAudit",
+      "name": "MillenniumAudit",
+      "description": "Statement-level forensic audit of the MillenniumLean package (AIX Global, Zenodo 10.5281/zenodo.22226553), which claims kernel-checked Lean 4 proofs of the six remaining Clay Millennium Problems. The audit independently reproduces every kernel-hygiene claim (clean build, zero sorry, zero project axioms) under the pinned toolchain, then audits what the theorem types actually say. Verdict: none of the six problems is resolved.",
+      "tags": [
+        "lean-4",
+        "formal-verification",
+        "millennium-prize-problems",
+        "claim-audit",
+        "adversarial-review",
+        "evidence-first"
+      ],
+      "authors": "Daniel Ari Friedman",
+      "status": "curated",
+      "title": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)",
+      "pdf": "Friedman_2026_MillenniumAudit.pdf",
+      "github_repo": "docxology/millennium_audit"
+    },
+    "current_quote_presence_against_old_items": {
+      "methods": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "key_findings_evidence": [
+        false,
+        false,
+        false,
+        true
+      ]
+    },
+    "scope": "Complete prior values retained as historical source/prose. Old version identifiers in metadata are observations, not inferred bindings of old PDF/image bytes."
+  },
+  "current_summary_review": {
+    "summary_provenance": {
+      "source": "full_text.md",
+      "date": "2026-11-06",
+      "source_pdf_sha256": "b56db71bf6b31757e45cd3b19217b14f2acbb258d763d4d24ba5ab292074e4ae",
+      "source_text_sha256": "efca0f430983abbe35ad437b3b1c0db227980f685ba58161d8de67e1a0ed9a2a",
+      "selected_record_id": "22243473",
+      "work_kind": "book/report",
+      "method": "AI-assisted review of the selected deposited abstract, quoted passages and stated limitations. Every current method/finding quote is mechanically present in the selected extraction. This is source-text support, not new computational, mathematical, scientific or human verification.",
+      "reviewed_by": "Codex AI-assisted public-source curator",
+      "reviewed_at": "2026-11-06T19:09:15Z",
+      "historical_summary": "Complete prior folder metadata and master prose are preserved in source_evidence.json beside the retained historical extraction."
+    },
+    "old_items_retained": false,
+    "scope": "Only text-supported current statements retained; paper-reported counts/results are not fresh reproduction."
+  },
+  "release_reference_review": {
+    "retained_reference_before_refresh": {},
+    "selected_reference_scope": "Existing GitHub release fields are retained source references; generic repository/title or concept-DOI links do not establish the selected PDF edition.",
+    "frozen_pair_observation_sha256": "249b32b85678b497868e35d1f65c90cc80b7dc102e6648f8700f885fa3b94f00",
+    "frozen_pair_observation_url": "https://github.com/docxology/docxology/blob/ee837003a2328d28d8234ad5afdcfcd38419e90c/reports/paired_publications_2026-11-06.json"
+  },
+  "rights_observation": {
+    "registry_license": {
+      "id": "mit-license"
+    },
+    "scope": "The selected registry record declares this license; no additional third-party rights or scientific approval are inferred."
+  },
+  "source_acquisition_receipt_sha256": "b92a833dc89b1e7337dbf6b1d1d900ccbfa879c52869f497e2bae81308995b0c",
+  "reviewed_at": "2026-11-06T19:09:15Z",
+  "reviewed_by": "Codex AI-assisted public-source curator",
+  "review_scope": "Acquired byte integrity, all-page extraction, title/byline and source-quotation review only; no new scientific, computational, mathematical or named human approval.",
+  "privacy_scan": {
+    "contains_local_paths": false,
+    "secret_pattern_count": 0,
+    "source": "Canonical URL-aware scan of selected current text and proposed source evidence; historical text is separately reviewed."
+  }
+}

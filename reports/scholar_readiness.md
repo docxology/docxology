@@ -6,14 +6,14 @@ Per-work source/content/rights reviews are recorded separately from local placem
 Source: [Google Scholar inclusion guidance](https://scholar.google.com/intl/en/scholar/inclusion.html).
 See [the placement policy](../docs/seo/scholar-inclusion.md) and [machine-readable results](../data/scholar-readiness.json).
 
-Audited works: 231. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
+Audited works: 233. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 
 | Local blocker | Works |
 | --- | ---: |
 | missing_citation_author | 11 |
-| no_selected_local_pdf | 29 |
-| pdf_directory_differs_from_abstract | 197 |
-| pdf_exceeds_byte_limit | 44 |
+| no_selected_local_pdf | 42 |
+| pdf_directory_differs_from_abstract | 186 |
+| pdf_exceeds_byte_limit | 41 |
 
 ## Work-level findings
 
@@ -23,7 +23,7 @@ Audited works: 231. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [Active Inference Journal — 500+ videos on Active Inference with transcripts](../works/Friedman2026ActiveInferenceJournal500002.html) | — | missing_citation_author, no_selected_local_pdf |
 | [Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology](../works/Friedman2026BeforePragmatismHadName003.html) | 1653944 | pdf_directory_differs_from_abstract |
 | [The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value](../works/Friedman2026GoldenCompassLunarFlux004.html) | 708881 | pdf_directory_differs_from_abstract |
-| [Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)](../works/Friedman2026CognitiveIntegrityFrameworkFormal005.html) | 931657 | pdf_directory_differs_from_abstract |
+| [Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)](../works/Friedman2026CognitiveIntegrityFrameworkFormal005.html) | — | no_selected_local_pdf |
 | [Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions](../works/Friedman2026PersonalYouTube200Livestreams006.html) | — | missing_citation_author, no_selected_local_pdf |
 | [The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing](../works/Friedman2026DoorsPerceptionAreThreshold007.html) | 4259955 | pdf_directory_differs_from_abstract |
 | [Abstract book for: 5th Applied Active Inference Symposium](../works/Friedman20255thAppliedActiveInference008.html) | 414282 | pdf_directory_differs_from_abstract |
@@ -128,8 +128,8 @@ Audited works: 231. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology](../works/Friedman2026EntoLinguisticsLanguageAmbiguity109.html) | 5889924 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring](../works/Friedman2026LivingMetaAnalysisArchitecture110.html) | 3137760 | pdf_directory_differs_from_abstract |
 | [Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences](../works/Friedman2026DynamicAttentionalAgentsFocused111.html) | — | no_selected_local_pdf |
-| [Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case](../works/Friedman2026CognitiveDiagramsReviewingCategorical112.html) | 13601721 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
-| [Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics](../works/Friedman2026TowardsLean4Formalization113.html) | 1908263 | pdf_directory_differs_from_abstract |
+| [Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case](../works/Friedman2026CognitiveDiagramsReviewingCategorical112.html) | — | no_selected_local_pdf |
+| [Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics](../works/Friedman2026TowardsLean4Formalization113.html) | 7885960 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [The Facilitator's Catechism](../works/Friedman2020FacilitatorSCatechism114.html) | 1981417 | pdf_directory_differs_from_abstract |
 | [The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision](../works/Friedman2026ArchitectureFalseGodsWilliam115.html) | 2476314 | pdf_directory_differs_from_abstract |
 | [Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast](../works/Friedman2026CrescentCityLivingWaves116.html) | 12468950 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
@@ -192,7 +192,7 @@ Audited works: 231. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [CogSecSkills: Multiharness Agentic Skills for Cognitive Security](../works/Friedman2026CogSecSkillsMultiharnessAgenticSkills174.html) | 3379139 | pdf_directory_differs_from_abstract |
 | [Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction](../works/Friedman2026RealizingEmptinessOperationalSurrogates175.html) | 15705414 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [A Living Meta-Analysis of the Modafinil Literature](../works/Friedman2026LivingMetaAnalysisModafinil176.html) | 7314033 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
-| [Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition](../works/Friedman2026RefinementGoldMetallurgicalAnalogy177.html) | 1019881 | pdf_directory_differs_from_abstract |
+| [Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition](../works/Friedman2026RefinementGoldMetallurgicalAnalogy177.html) | — | no_selected_local_pdf |
 | [AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference](../works/Friedman2026AlphaCOGANTRecursiveCorporateSelf178.html) | 2888068 | pdf_directory_differs_from_abstract |
 | [Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls](../works/Friedman2026MappingWilliamBlakeS179.html) | — | no_selected_local_pdf |
 | [Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation](../works/Friedman2026SortitionUpstreamNTQR180.html) | 4380836 | pdf_directory_differs_from_abstract |
@@ -214,23 +214,23 @@ Audited works: 231. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [DuckRabbit: Typed Multimodal Illusion Generator](../works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html) | 3937013 | pdf_directory_differs_from_abstract |
 | [SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer](../works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html) | 2985331 | pdf_directory_differs_from_abstract |
 | [Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings](../works/Friedman2026ActiveInferencePowerSuite199.html) | 11205677 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
-| [The Witness Register: Co-Registration Without Aggregation](../works/Friedman2026WitnessRegisterCoRegistration200.html) | 674133 | pdf_directory_differs_from_abstract |
-| [The Line Set: Holding Instruments Apart](../works/Friedman2026LineSetHoldingInstruments201.html) | 22672214 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
+| [The Witness Register: Co-Registration Without Aggregation](../works/Friedman2026WitnessRegisterCoRegistration200.html) | — | no_selected_local_pdf |
+| [The Line Set: Holding Instruments Apart](../works/Friedman2026LineSetHoldingInstruments201.html) | — | no_selected_local_pdf |
 | [White Line: A Typed Ledger for the Edge of the Claim](../works/Friedman2026WhiteLineTypedLedger202.html) | 4173908 | pdf_directory_differs_from_abstract |
 | [Personal Red Lines for Development](../works/Friedman2026PersonalRedLinesDevelopment203.html) | 6211544 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
-| [Golden Line: Toward What Matters](../works/Friedman2026GoldenLineTowardWhat204.html) | 6628468 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
-| [Black Line: Strong Work in Public](../works/Friedman2026BlackLineStrongWork205.html) | 3582188 | pdf_directory_differs_from_abstract |
+| [Golden Line: Toward What Matters](../works/Friedman2026GoldenLineTowardWhat204.html) | — | no_selected_local_pdf |
+| [Black Line: Strong Work in Public](../works/Friedman2026BlackLineStrongWork205.html) | — | no_selected_local_pdf |
 | [Codomyrmex: An Artificial Ecology for Agentic Software Development](../works/Friedman2026CodomyrmexArtificialEcologyAgentic206.html) | 6883385 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [THALIA: Typed Harness with Analytical Lexical-Integrated Architecture](../works/Friedman2026THALIATypedHarnessAnalytical207.html) | 5005902 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [PROJECT BOND — The Special-Agent Operations Compendium](../works/Friedman2026PROJECTBONDSpecialAgent208.html) | 10252200 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [DigiPPPiP: Digital Partner Pen Play in Parallel](../works/Friedman2026DigiPPPiPDigitalPartnerPen209.html) | 11418704 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
-| [Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus](../works/Friedman2026RobustBeliefSharingFederated210.html) | 9433827 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
+| [Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus](../works/Friedman2026RobustBeliefSharingFederated210.html) | — | no_selected_local_pdf |
 | [Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract](../works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html) | 5731097 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [docxplus — the Intelligent Document Container](../works/Friedman2026DocxplusIntelligentDocumentContainer212.html) | 3024717 | pdf_directory_differs_from_abstract |
 | [Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)](../works/Friedman2026CognitiveIntegrityFrameworkComputational213.html) | 1843333 | pdf_directory_differs_from_abstract |
 | [Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)](../works/Friedman2026CognitiveIntegrityFrameworkPractical214.html) | 1389206 | pdf_directory_differs_from_abstract |
-| [Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)](../works/Friedman2026ForensicAuditMillenniumLeanClay215.html) | 69262 | pdf_directory_differs_from_abstract |
-| [Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation](../works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html) | 3629479 | pdf_directory_differs_from_abstract |
+| [Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)](../works/Friedman2026ForensicAuditMillenniumLeanClay215.html) | — | no_selected_local_pdf |
+| [Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation](../works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html) | — | no_selected_local_pdf |
 | [FractiSkills: One Portable Agent Skill per Page](../works/Friedman2026FractiSkillsOnePortableAgent217.html) | 1862198 | pdf_directory_differs_from_abstract |
 | [Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security](../works/Friedman2026AgenticSecurityOperatingSystems218.html) | 4174222 | pdf_directory_differs_from_abstract |
 | [daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation](../works/Friedman2026JevPracticeComposablePython219.html) | 742862 | pdf_directory_differs_from_abstract |
@@ -246,7 +246,9 @@ Audited works: 231. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness](../works/Friedman2026ThanksNothingGratitudeModel229.html) | 19287664 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics](../works/Friedman2026ObserversWhoReadTheir230.html) | 354219 | pdf_directory_differs_from_abstract |
 | [Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method](../works/Friedman2026ActiveInferenceLanguageModel231.html) | 12557861 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
-| [GNN-based active inference for Battleship](../works/Friedman2026GNNBasedActiveInference232.html) | 3928683 | pdf_directory_differs_from_abstract |
+| [GNN-based active inference for Battleship](../works/Friedman2026GNNBasedActiveInference232.html) | — | no_selected_local_pdf |
 | [Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention](../works/Friedman2026BlakeanEntomologySmallLives233.html) | — | no_selected_local_pdf |
 | [States Change: Blakean Federalism and composition without capture](../works/Friedman2026StatesChangeBlakeanFederalism234.html) | — | no_selected_local_pdf |
 | [Observers are all you need](../works/Friedman2026ObserversAreAllYou235.html) | — | no_selected_local_pdf |
+| [Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology](../works/Friedman2026RikishiReproducibleOperationAnalysis236.html) | — | no_selected_local_pdf |
+| [2026 Active Inference Symposium — Presenter Program](../works/Friedman20262026ActiveInferenceSymposium237.html) | — | no_selected_local_pdf |

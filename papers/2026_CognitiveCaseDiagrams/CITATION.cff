@@ -17,6 +17,15 @@ identifiers:
   - type: url
     value: "https://doi.org/10.5281/zenodo.19695259"
     description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.22774403"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.22774403"
+    description: "Version/download DOI resolver (Zenodo artifact)"
+  - type: url
+    value: "https://zenodo.org/records/22774403"
+    description: "Version/download landing page (Zenodo artifact)"
   - type: url
     value: "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0"
     description: "GitHub release"

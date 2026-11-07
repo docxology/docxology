@@ -1,11 +1,11 @@
 {
   "title": "Black Line: Strong Work in Public",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "doi": "10.5281/zenodo.21754235",
   "doi_url": "https://doi.org/10.5281/zenodo.21754235",
-  "zenodo_record": "https://zenodo.org/records/21754235",
-  "record_id": "21754236",
-  "publication_date": "2026-08-02",
+  "zenodo_record": "https://zenodo.org/records/22833503",
+  "record_id": "22833503",
+  "publication_date": "2026-09-18",
   "resource_type": {
     "title": "Working paper",
     "type": "publication",
@@ -18,7 +18,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "A positive practice instrument for concise, inspectable, revisable work. It reads self-declared tags and evidence labels against a versioned practice registry and returns one of four statuses over declaration coverage. It measures whether the evidence a practice asks for was declared — never whether the work is true, good, or permitted; an ALIGNED reading authorizes nothing. Subtitle: A Positive Operating Discipline for Concise, Rigorous Research and Engineering Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+  "description": "Black Line describes an operating discipline implemented through eleven practices in six families and a staged evaluator of declared evidence labels. The selected manuscript states that ALIGNED concerns fresh declarations, not source truth, safety, accreditation or permission. It includes structural checks and adversarial self-declaration examples while explicitly reporting no user-study or outcome comparison. This catalog refresh checks source quotations without rerunning those software experiments.",
   "keywords": [
     "research practice",
     "declaration coverage",
@@ -31,15 +31,15 @@
   "files": [
     {
       "name": "black_line_combined.pdf",
-      "size_bytes": 3582188,
-      "checksum": "md5:d9cb49305bef8ba9885bd3fc4311bab2",
-      "download_url": "https://zenodo.org/api/records/21754236/files/black_line_combined.pdf/content"
+      "size_bytes": 3582078,
+      "checksum": "md5:0dcc7035ab6ad7cfc0370344dd550f47",
+      "download_url": "https://zenodo.org/api/records/22833503/files/black_line_combined.pdf/content"
     }
   ],
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-08-02T15:12:58Z",
+  "checked_at": "2026-11-06T18:28:38.106041+00:00",
   "methods": [
     {
       "name": "Versioned registry of eleven practices with coarse evidence labels",
@@ -83,11 +83,15 @@
   ],
   "summary_provenance": {
     "source": "full_text.md",
-    "date": "2026-10-01",
+    "date": "2026-11-06",
+    "source_pdf_sha256": "e0c5bf331a5b77a1d1436cbe288ea5e2a2183de81627203dc20ac96e04071c04",
+    "source_text_sha256": "0470e19376a6078b5d7775b60e06bc4297277593a7614cd36ccd8e7484fcf456",
+    "selected_record_id": "22833503",
     "work_kind": "software/methods",
-    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Second work in the author's four-line set (Red/Black/Golden/White Line); findings are about the instrument's behaviour, not effects on work quality.",
-    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+    "method": "AI-assisted review of the selected deposited abstract, quoted passages and stated limitations. Every current method/finding quote is mechanically present in the selected extraction. This is source-text support, not new computational, mathematical, scientific or human verification.",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "historical_summary": "Complete prior folder metadata and master prose are preserved in source_evidence.json beside the retained historical extraction."
   },
   "latest_software_release": {
     "version": "v0.5.0",
@@ -96,5 +100,39 @@
     "source_report": "reports/publication_intake_2026-10-23.json",
     "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
     "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
-  }
+  },
+  "artifact_doi": "10.5281/zenodo.22833503",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.22833503",
+  "pages": 42,
+  "pdf_sha256": "e0c5bf331a5b77a1d1436cbe288ea5e2a2183de81627203dc20ac96e04071c04",
+  "abstract": "Black Line describes an operating discipline implemented through eleven practices in six families and a staged evaluator of declared evidence labels. The selected manuscript states that ALIGNED concerns fresh declarations, not source truth, safety, accreditation or permission. It includes structural checks and adversarial self-declaration examples while explicitly reporting no user-study or outcome comparison. This catalog refresh checks source quotations without rerunning those software experiments.",
+  "abstract_provenance": {
+    "source": "full_text.md",
+    "source_text_sha256": "0470e19376a6078b5d7775b60e06bc4297277593a7614cd36ccd8e7484fcf456",
+    "source_pdf_sha256": "e0c5bf331a5b77a1d1436cbe288ea5e2a2183de81627203dc20ac96e04071c04",
+    "date": "2026-11-06",
+    "kind": "curated_summary",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "scope": "Cautious source summary of the selected abstract and stated limitations; no independent reproduction or complete author-abstract claim."
+  },
+  "remote_primary_pdf": {
+    "name": "black_line_combined.pdf",
+    "url": "https://zenodo.org/api/records/22833503/files/black_line_combined.pdf/content",
+    "bytes": 3582078,
+    "sha256": "e0c5bf331a5b77a1d1436cbe288ea5e2a2183de81627203dc20ac96e04071c04",
+    "record_id": "22833503",
+    "version": "0.4.1"
+  },
+  "license": null,
+  "rights_note": "No license field was supplied by the selected frozen registry record. Paper rights are recorded as unknown; a repository/software license is not transferred to the paper.",
+  "source_release_review": {
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "selected_pdf_record": "22833503",
+    "selected_pdf_version": "0.4.1",
+    "retained_release_role": "Existing GitHub release fields are retained source references; generic repository/title or concept-DOI links do not establish the selected PDF edition.",
+    "scientific_or_runtime_reproduction": false,
+    "historical_text_file": "full_text_before_2026-11-06.md"
+  },
+  "document_title": "Black Line: Strong Work in Public"
 }

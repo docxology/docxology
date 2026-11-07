@@ -1,12 +1,12 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics"
-description: "FEP_Formal 2.1.0 is coordinated with Generalized_Notation_Notation 5.0.1. It retains the 168-topic Lean catalogue and explicit statement, assumption, semantic-maturity and evidence boundaries, using Lean 4.35.0 and Mathlib v4.35.0. Seven bounded comp..."
+description: "The selected FEP_Formal 2.1.0 manuscript describes 168 stable Lean topics across five areas, using Lean 4.35.0 and Mathlib 4.35.0. It reports a semantic audit with 149 directly formalized rows at narrowed scopes and separates compilation maturity fro..."
 tags: ["free-energy-principle", "active-inference", "bayesian-mechanics", "information-geometry", "non-equilibrium-thermodynamics", "lean-4", "mathlib", "interactive-theorem-proving", "formal-verification", "theorem-proving"]
 domain: "Active Inference"
 citation: "Daniel Ari Friedman (2026). *Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics*. Zenodo."
 doi: "10.5281/zenodo.19699233"
-artifact_doi: "10.5281/zenodo.22072956"
+artifact_doi: "10.5281/zenodo.23607007"
 ---
 
 # Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics
@@ -21,21 +21,15 @@ This work addresses topics in **Active Inference**: free energy principle, activ
 
 Primary methods and techniques applied in this work:
 
-- **Curated catalog of 50 FEP topics as namespaced Lean 4 sketches against Mathlib4** — Compiled 50 topics across five pillars (FEP, Active Inference, Bayesian Mechanics, Information Geometry, Thermodynamics) as Lean 4 sketches from a single source of truth.
-- **Native lake env lean verification on a pinned Lean/Mathlib v4.29.0 stack** — Verified every reported compilation result with a real lake env lean invocation against the pinned toolchain, with no mocked compilers or synthetic success signals.
-- **LLM-assisted commentary pipeline (Hermes/OpenGauss, kimi-k2.6 via OpenRouter)** — Layered LLM drafting and commentary over the catalog, cached by Lean source hash, with the Lean kernel kept as sole ground truth for compilation claims.
-- **Zero-mock test suite with coverage gate and SQLite run persistence** — Ran 347 tests that each exercise real files, a real SQLite store, live compiler calls or actual HTTP calls, holding coverage above an 89% CI gate.
-- **Three-level sorry-aware maturity taxonomy (real / partial / aspirational)** — Introduced a classification intended to make incomplete formalization explicit; all current rows are tagged real.
+- **Typed catalog with explicit assumptions and semantic dispositions** — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.
+- **Separate native and optional provider evidence contracts** — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.
 
 ## Key Findings
 
 Core contributions and results:
 
-- On the pinned Lean 4 / Mathlib4 v4.29.0 stack, the shipped catalog compiles 50/50 sorry-free.
-- The Hermes-assisted Gauss run run_20260424_064334 achieved 50/50 clean compiles with 0 sorry and 0 errors.
-- Constructions that already typecheck in today's Mathlib4 include finite-set probability, Bayesian updating, finite-space KL divergence and variational free-energy bounds.
-- The author cautions that the catalog covers definitional lemmas and structural identities rather than end-to-end FEP theorems, and many rows stop short of what the informal text proves.
-- Formal verification here establishes formal adequacy only; it provides no empirical confirmation that brains minimize variational free energy.
+- The manuscript reports 149 of 168 rows as directly formalized at deliberately narrowed scopes, independently of compilation maturity.
+- The manuscript expressly declines empirical FEP, generic-blanket and broad-equivalence conclusions.
 
 Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 
@@ -50,10 +44,10 @@ Methods and findings are summarized from the full text; each item is backed by a
 Verification points for this work:
 
 - Canonical DOI: 10.5281/zenodo.19699233
-- PDF SHA-256: See zenodo_record
+- PDF SHA-256: ba7594ee91f1bc9adf3830ae32e915da9f956436965758381615129d90378953
 - Pairing confidence: strong
-- Last checked: 2026-11-01T01:04:10Z
-- Artifact DOI: 10.5281/zenodo.22072956
+- Last checked: 2026-11-06T19:09:15Z
+- Artifact DOI: 10.5281/zenodo.23607007
 
 ## Prerequisites
 

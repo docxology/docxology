@@ -30,7 +30,7 @@ from docxology_tools.software_table import (  # noqa: E402
     doi_role_label_errors,
     iter_software_rows,
     lang_css_class,
-    zenodo_url,
+    software_archive_url,
 )
 from docxology_tools.collection_jsonld import (  # noqa: E402
     display_paths,
@@ -166,7 +166,7 @@ def main_entity_object(
         topics = repo.get("topics")
         if isinstance(topics, list) and topics:
             obj["keywords"] = ", ".join(topics)
-    zenodo = zenodo_url(row.description_raw)
+    zenodo = software_archive_url(row.description_raw)
     if zenodo:
         obj["sameAs"] = zenodo
     return obj

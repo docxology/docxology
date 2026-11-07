@@ -56,6 +56,68 @@ The safest default is: **scan live sources, inspect the report, apply only stron
   This mode performs no network intake or classification. `--check` rejects
   local paths reintroduced into release bodies.
 
+## Exact Edition Review and Intake Limits
+
+The public pairing key keeps its six existing fields, including the canonical
+concept DOI and URL. An `already_reviewed` acknowledgement additionally requires
+the exact immutable Zenodo record ID and a SHA-256 of its complete normalized
+record, including version, creators, related identifiers and file manifest.
+Another record or a changed manifest returns to review even when its concept,
+title and GitHub release are unchanged. Differing complete observations of one
+concept in a release pool refuse classification; input order does not select
+an edition. Exact duplicate observations may be deduplicated. A cached assertion cannot replace the
+current decision ledger's edition binding.
+
+Historical actors, dates and rationales remain historical. Bind an original
+edition only from an explicitly frozen source report, or from a reviewed compact
+`edition_evidence` derivation that records its original Git commit, report path,
+blob object ID and SHA-256 plus the exact candidate and record hashes. Use an
+exact `https://github.com/docxology/docxology/blob/<commit>/reports/<report>.json`
+URL for the compact evidence location, so the archive reference does not request
+an extra current Pages copy. The URL must match the declared commit and report;
+foreign repositories, queries, fragments and mixed local/URL locations refuse. Missing,
+unsafe, ambiguous or unavailable evidence leaves the decision explicitly
+unbound; it grants no current-edition acknowledgement. New editions need their
+own attributed decision and exact supersession context. Offline checks use the
+curated compact evidence without fetching historical Git objects or republishing
+whole superseded reports.
+
+GitHub repository and release readers allow at most 20 pages of 100 rows per
+endpoint. They refuse malformed rows, repeated numeric identities and a full
+final-budget page whose completion cannot be proved. This accommodates the
+current inventories while keeping failures finite. A repository/profile count
+warning blocks inventory publication and preserves the prior output.
+
+Paired metadata updates merge generator-owned fields into the existing paper
+index; reviewed extensions remain intact. Invalid existing JSON refuses before
+apply changes publication files. A change to an abstract or keywords that already
+has source provenance also requires explicit provenance review before apply.
+
+## Explicit Zenodo Record Inclusion
+
+A source deposit outside the two author searches may be included deliberately:
+
+```bash
+uv run python3 code/orchestrators/sync_paired_publications.py --include-aii --zenodo-record 23986505
+```
+
+Repeat `--zenodo-record` for at most 20 unique positive ASCII record IDs. Live
+intake performs only those exact record GETs, validates the returned identities
+and complete normalized manifests, and merges an existing ID only when its
+normalized record agrees exactly. A failed GET, malformed response or conflict
+is an API warning that blocks report publication and apply. No latest-version
+guess, related-record crawl or review approval is implied.
+
+With `--cache-reports`, no GET occurs: every requested ID must already be present
+unambiguously in the verified same-day cached records (`--force` retains its
+existing stale-cache semantics). The optional report field
+`explicit_zenodo_record_ids` records declared inclusion, not a fresh retrieval
+time. Cached declarations are validated and retained. A frozen
+`source_observations` object is carried forward only when both serialized record
+and release pools match exactly; filtering the pool or a new live intake omits
+it. Keep actual capture times and receipt hashes separate from report generation.
+The option is rejected with `--check` and `--redact-local-paths`.
+
 ## PDF Hosting Decision
 
 For new works and editions, prefer the full PDF already archived in a versioned
@@ -109,6 +171,28 @@ uv run python3 code/orchestrators/fetch_work_authors.py --check
 
 Resolve changed bindings or reported drift explicitly; do not replace the
 reviewed PDF order with registry order automatically.
+
+## Literal Institutional and Grouped Credits
+
+Retain exact, ordered registry display labels when an institutional or grouped byline does not establish individual name structure. A reviewed literal-credit record binds the permanent work ID, current catalog DOI/title/byline, source-evidence SHA-256, immutable record/version and complete raw creator-list hash. Its source sidecar also records the observed document credit labels.
+
+Use `Organization` only for an established institutional label and `Unspecified` for unstructured labels whose person/group type is not established. Existing literal records retain their established compatibility behavior. Preserve raw ORCIDs in the frozen registry observation; do not assign one person's identifier to a composite label. Literal credits stay intact in CSL, protected BibTeX groups, CFF, generated documentation, visible bylines and citation metadata. An unspecified label produces a name-only JSON-LD object.
+
+A registry refresh retains the reviewed byline and its frozen baseline. It records a separate observation and derives matching, drift or unavailable status from that observation's DOI, work ID and ordered raw labels. Check the saved observation and timestamp instead of trusting its status string. A refresh does not create a fresh document attestation.
+
+## Citation and Software Identities
+
+Keep a software archive DOI distinct from the paper's citation DOI. Generic citation exports and the dual-role validator retain the explicitly labeled paper-citation priority. SoftwareSourceCode JSON-LD uses an explicitly labeled software archive/software DOI when present, with the established fallback for rows lacking that declaration. Link an event book through its paper folder without asserting that its DOI identifies the software package.
+
+## Existing-Edition Text and Curated Metadata
+
+After selecting a verified edition, bind its current extraction to the exact PDF bytes and record. Preserve older local PDFs, extracted text, image provenance and curated summaries as historical sources. Retain independently curated tags and relations. Review edition-sensitive abstracts, methods, findings and provenance before changing them; an apply operation must not silently discard curated extensions or transfer old prose to a new edition.
+
+Source-text checks and quoted evidence establish what the selected document reports. They do not independently reproduce its numerical, empirical, formal or software-test results. A retained GitHub release reference remains distinct from a selected PDF edition unless explicit release links or verified file evidence establish their association.
+
+## Advisory Source Availability
+
+A successful advisory-page observation needs HTTP 200, nonempty content and a usable title. HTTP 202 challenge/empty responses and access errors remain unavailable observations. Preserve their actual response status/time in the report; do not turn an unavailable profile into a successful identity or publication check.
 
 ## Preconditions
 
@@ -457,6 +541,13 @@ And a `data/` intake still auto-raises the settle tier to `full`
 For `needs_review` actions, inspect the GitHub release, Zenodo record, DOI, title, creator list, repository URL, and PDF before deciding.
 
 Record manual decisions in [`data/paired-publication-decisions.json`](../../data/paired-publication-decisions.json) and, when useful, in a dated review queue under [`reports/`](../../reports/). An `accept` or `superseded` decision records the GitHub release + Zenodo record relationship; it does not by itself require a new bibliography row when the record is software/version metadata, version history, or an already represented work. Exact reviewed pairs will be reported as `already_reviewed` on future scans.
+
+Use the [exact-edition rules](#exact-edition-review-and-intake-limits) above
+when recording a decision. A new raw candidate retains its
+`zenodo_version_record_id`, exact frozen `source_report` and
+`source_report_sha256`; the report must retain that candidate and its complete
+normalized record/file evidence. Compact historical evidence is a derivation
+of the original review, never a new approval.
 
 If the item is a real publication but cannot be safely auto-applied:
 

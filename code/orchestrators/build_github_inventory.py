@@ -90,19 +90,38 @@ def fetch_profile(owner: str) -> dict[str, Any]:
     }
 
 
+# Finite request budget, shared contract with paired-publication readers.
+MAX_GITHUB_PAGES = 20
+
+
 def fetch_repositories(owner: str) -> list[dict[str, Any]]:
     repos: list[dict[str, Any]] = []
-    page = 1
-    while True:
+    seen: set[int] = set()
+    for page in range(1, MAX_GITHUB_PAGES + 1):
         url = f"https://api.github.com/users/{owner}/repos?per_page=100&page={page}&sort=updated&direction=desc"
         batch = request_json(url)
-        if not isinstance(batch, list):
-            raise RuntimeError(f"Unexpected GitHub response for {owner}: {batch!r}")
+        if not isinstance(batch, list) or len(batch) > 100:
+            raise RuntimeError("GitHub repository page must be a bounded records list")
+        for item in batch:
+            if (
+                not isinstance(item, dict)
+                or type(item.get("id")) is not int
+                or item["id"] <= 0
+            ):
+                raise RuntimeError(
+                    "GitHub repository record needs an exact positive numeric identity"
+                )
+            if item["id"] in seen:
+                raise RuntimeError("GitHub repository pagination repeated an identity")
+            if not isinstance(item.get("name"), str) or not item["name"].strip():
+                raise RuntimeError("GitHub repository record needs a nonempty name")
+            seen.add(item["id"])
         repos.extend(batch)
         if len(batch) < 100:
-            break
-        page += 1
-    return repos
+            return repos
+    raise RuntimeError(
+        f"GitHub repository pagination reached its {MAX_GITHUB_PAGES}-page request bound incomplete"
+    )
 
 
 def curated_keys(path: Path = REPO_ROOT / "pages" / "SOFTWARE.md") -> set[str]:
@@ -750,6 +769,10 @@ def main() -> None:
         print("rendered GitHub repository inventory pages from cached data")
         return
     payload = build_payload()
+    if payload.get("warnings"):
+        raise SystemExit(
+            "Refusing GitHub inventory with source count warnings; previous outputs preserved"
+        )
     write_outputs(payload)
     counts = payload["counts"]
     print(

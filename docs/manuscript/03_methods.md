@@ -12,11 +12,19 @@ The checkout-local [shared package](../../code/src/README.md) preserves one modu
 
 The shared [Zenodo reader](../../code/src/zenodo_pagination.py) supplies complete-or-error pagination to its callers while leaving transport and report ownership with them. It requires bounded page shapes, a consistent exact total and distinct numeric record identities; an early short page, duplicate identity, changed total or exhausted bound raises an error instead of returning a partial catalog. Its [regressions](../../code/tests/test_zenodo_pagination.py) include the failure paths. These checks establish the reader's completion contract for the returned observation; they do not create a transactional snapshot of a remote service or prove that a query found every relevant work.
 
+The [paired intake command](../../code/orchestrators/sync_paired_publications.py) also admits a bounded list of explicit immutable records, because author queries can omit institutional or grouped-credit works. Requested identities and normalized manifests must agree with any already observed record. GitHub readers reject malformed pages, duplicate identities and a full final page at the request bound. These controls preserve finite observation scope rather than guaranteeing universal publication discovery.
+
 Publication intake remains a separate review. A DOI identifies a registry record; a versioned PDF identifies a document edition. Their creator lists may differ. The [document-byline regressions](../../code/tests/test_doi_document_authors.py) require reviewed document evidence and frozen registry/document baselines before applying a document-order decision. A later registry refresh reports drift or unavailability while preserving a valid reviewed byline. It cannot silently substitute an unreviewed creator order. Editors, contributors, representative lists and depositors retain their declared roles instead of being inferred to be document authors.
+
+Reviewed literal credits retain ordered institutional and unstructured display labels through [author authority](../../code/src/author_entities.py) and citation exports. Established organizations keep their type; unspecified labels produce name-only structured data. The review binds the work, catalogue byline, document sidecar and raw creator baseline. Registry refresh records a separate observation rather than rewriting that baseline. A person's identifier is not assigned to a composite label.
 
 ## Edition selection and bounded hosting
 
 The shared [paper-resource resolver](../../code/src/paper_artifacts.py) selects either an available local PDF or an explicitly reviewed remote primary. The remote declaration binds filename, exact versioned Zenodo file URL, version, record identity, byte count and SHA-256. A separate source-evidence record identifies what was actually fetched or extracted. Declaring a digest does not itself verify remote bytes, and text extracted from an older local PDF cannot be presented as the new edition's extraction.
+
+[Pair review](../../code/src/publication_pairing.py) keeps the stable concept/release key separate from an exact record and complete normalized manifest hash. A changed edition returns to review; conflicting editions cannot be selected by input order. Historical decisions retain their actors, times and rationales. Compact evidence may reference the exact original committed report without republishing its full bytes. A new current-edition decision is separately attributed. Paper-index updates preserve curated extensions and require review before replacing provenance-bearing abstract or keyword fields.
+
+A software archive and its manuscript retain distinct identities. [Software exports](../../code/src/software_table.py) preserve the paper's citation DOI while the software structured-data view prefers an explicitly labelled software archive DOI. Linking an event book to a repository does not make the book's DOI an identifier for that software.
 
 The [artifact builder](../../code/orchestrators/build_pages_artifact.py) constructs a finite web projection under local budgets. GitHub documents an independent published-site limit [@githubPagesLimits]; local headroom is a project policy. Existing hosted PDFs and permanent work routes remain preserved. Reviewed supporting Office files can use an exact committed Git object after local/object byte agreement and reference checks, implemented by [archive projection](../../code/src/archive_projection.py). Historical report selection also protects referenced evidence. A capacity change therefore needs both object custody and consumer-link verification; moving a folder name alone does not establish a working archive route.
 
@@ -34,7 +42,7 @@ The [gallery runtime](../../js/art-gallery.js) filters a complete compact catalo
 
 ## Local reading state and selected exports
 
-The [research-tools generator](../../code/orchestrators/build_research_tools.py) derives a citation catalog from the bibliography's authoritative export routines. The [reading-list runtime](../../js/collections.js) stores named, ordered citation-key selections in the visitor's browser. Selected BibTeX, RIS and Citation Style Language (CSL) exports retain authoritative records, contributor roles and reading order. Markdown provides a linked reading outline.
+The [research-tools generator](../../code/orchestrators/build_research_tools.py) derives a citation catalog from the bibliography's authoritative export routines. The [reading-list runtime](../../js/collections.js) stores named, ordered citation-key selections in the visitor's browser. Selected BibTeX, RIS and Citation Style Language (CSL) exports retain authoritative records, contributor roles and reading order. Selected CSL uses the same work-bound literal-credit authority as the complete bibliography; invalid authority fails generation before catalog bytes change. Markdown provides a linked reading outline.
 
 Shared URL fragments and imported JavaScript Object Notation (JSON) backups open previews. Explicit saving creates a new list. Malformed stored JSON preserves retrievable original text for recovery, unavailable storage leaves a session draft, and detected cross-tab changes stop overwriting. Unavailable work keys remain visible and block citation export. The [source auditor](../../code/src/content_audit.py) recognizes the bounded collection-state contract only on the collection route and continues to reject missing ordinary anchors.
 
@@ -51,7 +59,7 @@ The [research-tools guide](../operations/research-tools.md) records input bounds
 
 [Related-work ranking](../../code/src/research_connections.py) uses recorded method and topic phrases, distinguishing contributors and explicit software associations. Explanations preserve author/editor roles, label domain-only fallback matches and exclude known duplicate work identities. Metadata overlap is neither a citation relation nor evidence that two scientific claims are equivalent.
 
-The [research map](../../js/research-map.js) presents literal catalog, byline and software edges with provenance. The diagram bounds its displayed neighborhood; a complete list and JSON export retain the remaining edges. Exact normalized names may group homonyms and leave spelling variants separate. The [trail source](../../data/research-trails-source.json) declares editorial goals, prerequisites and linked work, software and video identities. Generation rejects unresolved references. Suggested study times are editorial estimates rather than measured completion times.
+The [research map](../../js/research-map.js) presents literal catalog, byline and software edges with provenance. The diagram bounds its displayed neighborhood; a complete list and JSON export retain the remaining edges. Reviewed work-specific types distinguish people, organizations and unspecified contributor labels without propagating a label's type to unrelated works. Exact normalized names within a type may group homonyms and leave spelling variants separate. Saved links prefer an existing exact identity; a missing legacy person identity resolves only to a sole typed successor, while ambiguity requires an explicit selection. The [trail source](../../data/research-trails-source.json) declares editorial goals, prerequisites and linked work, software and video identities. Generation rejects unresolved references. Suggested study times are editorial estimates rather than measured completion times.
 
 ## Reproducible teaching models
 
@@ -86,6 +94,7 @@ bytes, runtime, results, and index membership; changed inputs invalidate an
 observation. Timing comparisons require matched workload and tracing conditions.
 
 Generation cache inputs include the interpreter pin, project metadata, and lock
-file as well as declared sources. This allows dependency-only changes to trigger
-rebuilding. A cache hit is an execution decision and carries no independent
+file as well as declared sources. Citation and document consumers also declare
+the author records and source-evidence sidecars they actually read. This allows
+dependency-only or reviewed-authority changes to trigger rebuilding. A cache hit is an execution decision and carries no independent
 claim of scientific correctness or deployed freshness.

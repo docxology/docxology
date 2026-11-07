@@ -167,7 +167,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 70
+- Works: 71
 - Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 
@@ -272,7 +272,7 @@ Active Inference Institute programs, infrastructure, textbook cohorts, and organ
 
 Talks, courses, presentations, and media artifacts connected to the research and teaching program.
 
-- Works: 14
+- Works: 15
 - Selected repositories: 3
 - Collaborator context: Active Inference Institute educators, Course and media collaborators
 
@@ -289,10 +289,10 @@ Talks, courses, presentations, and media artifacts connected to the research and
 
 - 2026 — [Active Inference Journal — 500+ videos on Active Inference with transcripts](https://video.activeinference.institute/)
 - 2026 — [Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions](https://www.youtube.com/@danielarifriedman/playlists)
+- 2026 — [2026 Active Inference Symposium — Presenter Program](https://doi.org/10.5281/zenodo.23986504)
 - 2025 — [Abstract book for: 5th Applied Active Inference Symposium](https://doi.org/10.5281/zenodo.17555266)
 - 2025 — [Systems Processes, Active Inference, and Beyond](https://doi.org/10.5281/zenodo.17138223)
 - 2024 — [MathArt Stream #8 ~ William Blake and Active Inference](https://doi.org/10.5281/zenodo.13711301)
-- 2024 — [Transcript of: "Sensemaking Federation: Exploring the Frontiers of Digital Innovation"](https://doi.org/10.5281/zenodo.14574046)
 
 **Selected repositories**
 

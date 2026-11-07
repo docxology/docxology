@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Multiagent AI systems introduce cognitive attack surfaces absent in single-model inference. When agents delegate to agents, forming beliefs about beliefs through recursive trust hierarchies, manipulation of reasoning processes—rather than mere data corruption—becomes a primary security concern. This paper presents the Cognitive Integrity Framework (CIF), providing formal foundations for cognitive security in multiagent operators. We develop four interconnected theoretical contributions: a Trust Calculus with bounded delegation (exponential 𝛿𝑑 decay) that prevents trust amplification through delegation chains; a Defense Composition Algebra with series and parallel composition theorems establishing multiplicative detection bounds; Information-Theoretic Limits relating stealth constraints to maximum attack impact through a fundamental stealth-impact tradeoff; and a formal Adversary Hierarchy (Ω1–Ω5) characterizing external, peripheral, agent-level, coordination, and systemic threats with increasing capability and decreasing detectability. The framework provides complete coverage of the OWASP Top 10 for Agentic Applications through formal threat models grounded in cognitive state manipulation rather than traditional input/output filtering. CIF bridges classical security concepts with the cognitive requirements of agentic systems. We extend Byzantine fault tolerance to cognitive manipulation—agents that appear functional but hold corrupted beliefs—and adapt trust management systems to continuous trust evolution with provable decay bounds. The framework formalizes five architectural defense mechanisms (cognitive firewalls, belief sandboxing, behavioral tripwires, provenance tracking, Byzantine consensus) with composition rules enabling formal reasoning about layered security. Technical foundations include: operational semantics for message passing and trust updates; invariants for belief integrity, goal preservation, and trust boundedness; model checking configurations for safety property verification; and a complete notation system for attack parameterization, defense specification, and cognitive state representation. This is Part 1 of a three-part series: Part 1 (this paper, DOI: 10.5281/zenodo.18364119) presents formal foundations and theoretical analysis; Part 2 (DOI: 10.5281/zenodo.18364128) provides computational validation and implementation; Part 3 (DOI: 10.5281/zenodo.18364130) offers practical deployment guidance. The framework will continue to be developed and versioned at https://github.com/docxology/cognitive_integrity/ .
+> This theoretical manuscript presents a Cognitive Integrity Framework for multiagent security through trust calculus, defense composition, information-theoretic limits and an adversary hierarchy. The selected Part 1 edition states formal models and assumptions; claims about computational validation and deployment belong to the separately identified Parts 2 and 3. Catalog review checks the source text and provenance, without independently certifying its theorems, security coverage or implementation.
 
 ## Keywords
 
@@ -18,29 +18,27 @@
 
 ## Methods
 
-- **Trust Calculus with bounded, exponentially decaying delegation** — Formalizes delegated trust with decay factor δ per delegation step and proves bounds by induction on chain depth.
-- **Defense Composition Algebra (series/parallel detection)** — Derives detection rates for series and parallel composition of defenses, assuming independent detection events.
-- **Information-theoretic attack/detection bounds** — Relates attack entropy, mutual information with detector output, and channel capacity to bound detection rate and attack impact.
-- **Five-class adversary hierarchy (Ω1–Ω5)** — Defines external, peripheral, agent-level, coordination, and systemic adversary classes and maps them to multiagent architectures and OWASP Agentic Top 10.
-- **Operational semantics, invariants, and model-checking configurations** — Specifies operational semantics for message passing and trust updates, belief/goal/trust invariants, and model-checking setups for safety properties.
+- **Formal multiagent threat and defense framework** — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.
+- **Operational semantics and invariant specifications** — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.
 
 ## Key Findings
 
-- Trust Boundedness theorem: delegated trust over a chain of depth d is at most δ^d, so trust cannot be amplified and vanishes exponentially with depth.
-- The paper states a stealth-impact tradeoff as a theorem: high-impact attacks are easier to detect, while stealthy attacks have limited effect.
-- The framework formalizes five architectural defenses with composition rules for reasoning about layered security.
-- The author notes guarantees depend on assumptions (honest orchestrator, n ≥ 3f+1, authenticated channels) and that the O(n²) trust matrix limits deployment to moderate agent counts.
-- Semantic-equivalence attacks, sub-threshold progressive drift, and orchestrator compromise are identified as formally difficult to detect.
+- The manuscript describes five architectural defenses and composition rules; their stated guarantees remain conditional on its model and assumptions.
+- The selected work is the theoretical Part 1; computational validation and deployment are attributed to separate companion works.
 
 _Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 
 - DOI: [10.5281/zenodo.18364118](https://doi.org/10.5281/zenodo.18364118)
-- Zenodo record: [https://zenodo.org/records/18364118](https://zenodo.org/records/18364118)
-- PDF: [2026_CognitiveIntegrity.pdf](2026_CognitiveIntegrity.pdf)
-- PDF download: [CogSec_MultiAgent_1_theory_DAF_Jan-28-2026.pdf](https://zenodo.org/api/records/18364119/files/CogSec_MultiAgent_1_theory_DAF_Jan-28-2026.pdf/content)
-- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/18364118)
+- Artifact DOI: [10.5281/zenodo.22134544](https://doi.org/10.5281/zenodo.22134544)
+- Zenodo record: [https://zenodo.org/records/22134544](https://zenodo.org/records/22134544)
+- Historical local PDF: [2026_CognitiveIntegrity.pdf](2026_CognitiveIntegrity.pdf)
+- Current PDF (Zenodo, version 2.0): [cogsec_multiagent_1_theory_combined.pdf](https://zenodo.org/api/records/22134544/files/cogsec_multiagent_1_theory_combined.pdf/content)
+- Local PDFs remain preserved historical archives.
+- Extracted text retains its own source provenance; a matching filename does not establish edition identity.
+- PDF download: [CogSec_MultiAgent_1_theory_DAF_Jan-28-2026.pdf](https://zenodo.org/api/records/22134544/files/CogSec_MultiAgent_1_theory_DAF_Jan-28-2026.pdf/content)
+- PDF SHA-256: a97b33c3c41784f706276f714659a777d939cd07d3a07a03c52c3cd3fd5f222d
 
 ## Citation
 

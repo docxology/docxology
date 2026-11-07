@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 231 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 233 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -9624,6 +9624,224 @@
             },
             "sameAs": "https://doi.org/10.5281/zenodo.18288113",
             "citation": "Mueller, Bernhard; Poneder, Mario; Osika, Alexander; Xue, Kai; Cassie, Ben; Nguyen, Peter; Friedman, Daniel Ari. 2026. Observers are all you need. Zenodo (preprint). DOI: 10.5281/zenodo.18288113. URL: https://doi.org/10.5281/zenodo.18288113."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+            "headline": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo (preprint)"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026RikishiReproducibleOperationAnalysis236.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026RikishiReproducibleOperationAnalysis236.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026RikishiReproducibleOperationAnalysis236.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.23987670",
+                "url": "https://doi.org/10.5281/zenodo.23987670"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.23987670",
+            "citation": "Friedman, Daniel Ari. 2026. Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology. Zenodo (preprint). DOI: 10.5281/zenodo.23987670. URL: https://doi.org/10.5281/zenodo.23987670."
+        },
+        {
+            "@type": "Book",
+            "name": "2026 Active Inference Symposium — Presenter Program",
+            "headline": "2026 Active Inference Symposium — Presenter Program",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Organization",
+                    "name": "Active Inference Institute"
+                },
+                {
+                    "name": "Bradly Alicea"
+                },
+                {
+                    "name": "Dan Corva, Kevin Backhouse"
+                },
+                {
+                    "name": "Hongju Pae"
+                },
+                {
+                    "name": "Karl Friston"
+                },
+                {
+                    "name": "Alison Gopnik"
+                },
+                {
+                    "name": "Bianca Avanzo"
+                },
+                {
+                    "name": "Ed Ober"
+                },
+                {
+                    "name": "John Boik, Glen EP Ropella"
+                },
+                {
+                    "name": "Luca Possati"
+                },
+                {
+                    "name": "Majid D. Beni"
+                },
+                {
+                    "name": "Mike Levin"
+                },
+                {
+                    "name": "Montijn van Loo"
+                },
+                {
+                    "name": "Ryan Smith"
+                },
+                {
+                    "name": "Sergio Rubin"
+                },
+                {
+                    "name": "Takuya Isomura"
+                },
+                {
+                    "name": "Ted J. Vrioni"
+                },
+                {
+                    "name": "Ahmad Nazzal"
+                },
+                {
+                    "name": "Alexander Sabine"
+                },
+                {
+                    "name": "Andrew Pashea"
+                },
+                {
+                    "name": "Anna Pereira"
+                },
+                {
+                    "name": "Avel Guénin—Carlut"
+                },
+                {
+                    "name": "Bo Lee"
+                },
+                {
+                    "name": "Bruce Tisler"
+                },
+                {
+                    "name": "Cleber Gomes"
+                },
+                {
+                    "name": "Colin Turfus"
+                },
+                {
+                    "name": "Daniel Dragolich"
+                },
+                {
+                    "name": "Daniel Friedman"
+                },
+                {
+                    "name": "Diaconescu Adrian-Stelian"
+                },
+                {
+                    "name": "Harshil Shah, Andrew Pashea"
+                },
+                {
+                    "name": "Harshil Shah, Satyaki Maitra"
+                },
+                {
+                    "name": "Holly Grimm, John H. Clippinger, Daniel Ari Friedman"
+                },
+                {
+                    "name": "Hyojun Choi"
+                },
+                {
+                    "name": "Jean-François Cloutier"
+                },
+                {
+                    "name": "Lancelot Da Costa"
+                },
+                {
+                    "name": "Matthew Brown"
+                },
+                {
+                    "name": "Michael Lennon"
+                },
+                {
+                    "name": "Michael Walker"
+                },
+                {
+                    "name": "Nick Hay, Adam Safron"
+                },
+                {
+                    "name": "Patricia Craja"
+                },
+                {
+                    "name": "Paulo Santiago"
+                },
+                {
+                    "name": "Rajkaushik Borgohain"
+                },
+                {
+                    "name": "Robert Worden"
+                },
+                {
+                    "name": "Sheena Yap Chan"
+                },
+                {
+                    "name": "Stell"
+                },
+                {
+                    "name": "Steph Macurdy"
+                },
+                {
+                    "name": "Tao Gong"
+                },
+                {
+                    "name": "Tiga Kailimai"
+                },
+                {
+                    "name": "Tran Hoang Linh"
+                },
+                {
+                    "name": "Viraj Deshwal"
+                },
+                {
+                    "name": "Vitalii Shapovalov"
+                },
+                {
+                    "name": "Vitória de Souza"
+                },
+                {
+                    "name": "Xin Sun"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo (presenter program)"
+            },
+            "keywords": "🎥",
+            "@id": "https://danielarifriedman.com/works/Friedman20262026ActiveInferenceSymposium237.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman20262026ActiveInferenceSymposium237.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman20262026ActiveInferenceSymposium237.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.23986504",
+                "url": "https://doi.org/10.5281/zenodo.23986504"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.23986504",
+            "citation": "Active Inference Institute; Bradly Alicea; Dan Corva, Kevin Backhouse; Hongju Pae; Karl Friston; Alison Gopnik; Bianca Avanzo; Ed Ober; John Boik, Glen EP Ropella; Luca Possati; Majid D. Beni; Mike Levin; Montijn van Loo; Ryan Smith; Sergio Rubin; Takuya Isomura; Ted J. Vrioni; Ahmad Nazzal; Alexander Sabine; Andrew Pashea; Anna Pereira; Avel Guénin—Carlut; Bo Lee; Bruce Tisler; Cleber Gomes; Colin Turfus; Daniel Dragolich; Daniel Friedman; Diaconescu Adrian-Stelian; Harshil Shah, Andrew Pashea; Harshil Shah, Satyaki Maitra; Holly Grimm, John H. Clippinger, Daniel Ari Friedman; Hyojun Choi; Jean-François Cloutier; Lancelot Da Costa; Matthew Brown; Michael Lennon; Michael Walker; Nick Hay, Adam Safron; Patricia Craja; Paulo Santiago; Rajkaushik Borgohain; Robert Worden; Sheena Yap Chan; Stell; Steph Macurdy; Tao Gong; Tiga Kailimai; Tran Hoang Linh; Viraj Deshwal; Vitalii Shapovalov; Vitória de Souza; Xin Sun. 2026. 2026 Active Inference Symposium — Presenter Program. Zenodo (presenter program). DOI: 10.5281/zenodo.23986504. URL: https://doi.org/10.5281/zenodo.23986504."
         }
     ]
 }

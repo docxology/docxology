@@ -11,14 +11,14 @@
     "name": "Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-11-06",
+  "dateModified": "2026-11-07",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#works",
       "name": "Curated Works Bibliography",
-      "description": "231 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
+      "description": "233 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
       "url": "https://danielarifriedman.com/data/works.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -501,7 +501,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#full-text-corpus",
       "name": "Full-Text Extraction Corpus",
-      "description": "208 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 145 images/ subdirectories with 8,959 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
+      "description": "211 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 145 images/ subdirectories with 8,959 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
       "url": "https://danielarifriedman.com/papers/README.md",
       "encodingFormat": "text/markdown",
       "creator": {
@@ -594,7 +594,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-inventory",
       "name": "Public Source Inventory",
       "description": "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages.",
-      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-11-05.json",
+      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-11-06.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -608,7 +608,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-11-05.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-11-06.json",
         "encodingFormat": "application/json"
       }
     },
@@ -617,7 +617,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-snapshot",
       "name": "Public Source Snapshot",
       "description": "Current public API freshness snapshot with normalized drift-comparison facts.",
-      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-11-05.json",
+      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-11-06.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -631,7 +631,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-11-05.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-11-06.json",
         "encodingFormat": "application/json"
       }
     },

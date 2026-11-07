@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-11-05T21:08:27Z
+Generated: 2026-11-07T01:43:27Z
 
-Current public metrics: 231 curated works; 210 catalogued software repositories (167 owned + 43 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 275 docxology + 47 AII public repositories (216 primary, 106 forks).
+Current public metrics: 233 curated works; 210 catalogued software repositories (167 owned + 43 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 275 docxology + 47 AII public repositories (216 primary, 106 forks).
 
 SUMMARY
 -------
@@ -136,7 +136,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (231)
+WORKS AND PUBLICATIONS (233)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -369,8 +369,10 @@ WORKS AND PUBLICATIONS (231)
 [233] 2026 | Paper | Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention | Zenodo | 10.5281/zenodo.23900582
 [234] 2026 | Paper | States Change: Blakean Federalism and composition without capture | Zenodo | 10.5281/zenodo.23900616
 [235] 2026 | Paper | Observers are all you need | Zenodo (preprint) | 10.5281/zenodo.18288113
+[236] 2026 | Paper | Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology | Zenodo (preprint) | 10.5281/zenodo.23987670
+[237] 2026 | Book | 2026 Active Inference Symposium — Presenter Program | Zenodo (presenter program) | 10.5281/zenodo.23986504
 
-SOFTWARE (86)
+SOFTWARE (88)
 -------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Earlier software v3.3.0 · Zenodo · · Software version 5.0.0 artifact | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/codomyrmex | Python | https://github.com/docxology/codomyrmex | AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration · · Citation DOI | paper: papers/2026_Codomyrmex/ | zenodo: https://doi.org/10.5281/zenodo.21750800
@@ -389,7 +391,7 @@ docxology/template_madlib | Python | https://github.com/docxology/template_madli
 docxology/ant_stack | Python | https://github.com/docxology/ant_stack | The Ant Stack — layered computational model of collective ant-colony intelligence | paper: papers/2025_AntStack/
 docxology/cohereants | Python | https://github.com/docxology/cohereants | Computational research on insect infrared sensing and olfaction modeling · · Zenodo · Zenodo | paper: papers/2026_WhenDoBugs/ | zenodo: https://doi.org/10.5281/zenodo.20450970
 docxology/ento_linguistics | Python | https://github.com/docxology/ento_linguistics | Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring · · Zenodo | paper: papers/2026_EntoLinguistics/ | zenodo: https://doi.org/10.5281/zenodo.19574117
-docxology/cognitive_case_diagrams | Python | https://github.com/docxology/cognitive_case_diagrams | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript · · Zenodo | paper: papers/2026_CognitiveCaseDiagrams/ | zenodo: https://doi.org/10.5281/zenodo.19695259
+docxology/cognitive_case_diagrams | Python | https://github.com/docxology/cognitive_case_diagrams | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript · · Citation DOI | paper: papers/2026_CognitiveCaseDiagrams/ | zenodo: https://doi.org/10.5281/zenodo.19695259
 docxology/EvoJump | Python | https://github.com/docxology/EvoJump | Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics · Zenodo | paper: papers/2025_EvoJump/ | zenodo: https://doi.org/10.5281/zenodo.22664675
 docxology/grateful_data | Python | https://github.com/docxology/grateful_data | The Music Never Stopped citation-bound Grateful Dead data compendium · · Zenodo · Zenodo | paper: papers/2026_MusicNeverStopped/ | zenodo: https://doi.org/10.5281/zenodo.20482026
 docxology/markdown_decision_process | Python | https://github.com/docxology/markdown_decision_process | Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning | paper: papers/2025_MarkdownDecisionProcess/
@@ -425,14 +427,15 @@ docxology/template_storybook | Python | https://github.com/docxology/template_st
 docxology/template_template | Python | https://github.com/docxology/template_template | Template meta-research exemplar: self-documenting reproducible research repo · Zenodo | paper: papers/2026_TemplateApproachReproducible/ | zenodo: https://doi.org/10.5281/zenodo.20419007
 docxology/bond | Python | https://github.com/docxology/bond | PROJECT BOND compendium importing manuscripts from the separately catalogued infrastructure and film-analysis packages, with a unified bibliography and deterministic generation · · Zenodo | paper: papers/2026_PROJECTBONDSpecial/ | zenodo: https://doi.org/10.5281/zenodo.21843592
 docxology/line_set | Python | https://github.com/docxology/line_set | A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice; repository v0.5.0 · · Citation DOI · Zenodo artifact v0.1.0 | paper: papers/2026_LineSet/ | zenodo: https://doi.org/10.5281/zenodo.21754243
-docxology/black_line | Python | https://github.com/docxology/black_line | A positive operating discipline for concise, inspectable, revisable work; repository v0.5.0 · · Zenodo | paper: papers/2026_BlackLine/ | zenodo: https://doi.org/10.5281/zenodo.21754235
+docxology/black_line | Python | https://github.com/docxology/black_line | A positive operating discipline for concise, inspectable, revisable work; repository v0.5.0 · · Citation DOI | paper: papers/2026_BlackLine/ | zenodo: https://doi.org/10.5281/zenodo.21754235
 docxology/white_line | Python | https://github.com/docxology/white_line | A typed ledger for the edge of a claim: absence, restraint, and the unknowable; repository v0.8.0 · · Zenodo | paper: papers/2026_WhiteLine/ | zenodo: https://doi.org/10.5281/zenodo.21754241
-docxology/golden_line | Python | https://github.com/docxology/golden_line | An aspirational thread and long-horizon direction for personal work; repository v0.5.0 · · Zenodo | paper: papers/2026_GoldenLine/ | zenodo: https://doi.org/10.5281/zenodo.21754237
+docxology/golden_line | Python | https://github.com/docxology/golden_line | An aspirational thread and long-horizon direction for personal work; repository v0.5.0 · · Citation DOI | paper: papers/2026_GoldenLine/ | zenodo: https://doi.org/10.5281/zenodo.21754237
 docxology/red_line | Python | https://github.com/docxology/red_line | A personal security boundary and explicit No document for dual-use development · · Zenodo | paper: papers/2026_PersonalRedLines/ | zenodo: https://doi.org/10.5281/zenodo.21754239
-docxology/witness_register | Python | https://github.com/docxology/witness_register | Co-registration without aggregation — the Witness Register holding instrument; repository v0.2.0 · · Zenodo | paper: papers/2026_WitnessRegister/ | zenodo: https://doi.org/10.5281/zenodo.21754245
+docxology/witness_register | Python | https://github.com/docxology/witness_register | Co-registration without aggregation — the Witness Register holding instrument; repository v0.2.0 · · Citation DOI | paper: papers/2026_WitnessRegister/ | zenodo: https://doi.org/10.5281/zenodo.21754245
 docxology/blue_line | Python | https://github.com/docxology/blue_line | A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work; repository v0.2.0 · · Zenodo | paper: papers/2026_BlueLine/ | zenodo: https://doi.org/10.5281/zenodo.22833489
 docxology/green_line | Python | https://github.com/docxology/green_line | A capacity-under-development instrument: the green line of the docxology line set; repository v0.2.0 · · Zenodo | paper: papers/2026_GreenLine/ | zenodo: https://doi.org/10.5281/zenodo.22833491
 docxology/silver_line | HTML | https://github.com/docxology/silver_line | A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse; repository v0.2.0 · · Citation DOI · Zenodo artifact v0.1.0 | paper: papers/2026_SilverLine/ | zenodo: https://doi.org/10.5281/zenodo.22833485
+docxology/rikishi | Python | https://github.com/docxology/rikishi | SUMO ontology operator, reasoning workbench, source-bound FEP connections, and reproducible manuscript · · Citation DOI · Software archive | paper: papers/2026_Rikishi/ | zenodo: https://doi.org/10.5281/zenodo.23987670
 docxology/docxplus | Python | https://github.com/docxology/docxplus | docxplus — the Intelligent Document Container: format, tools, and formal specification · · Zenodo | paper: papers/2026_DocxplusIntelligentDocument/ | zenodo: https://doi.org/10.5281/zenodo.21983948
 docxology/agentic_os_security | TeX | https://github.com/docxology/agentic_os_security | Agentic Security and Operating Systems — deep review and prospectus of OpSec, Cognitive Security, and Agentic Cyber Security (paper source) · · Zenodo | paper: papers/2026_AgenticSecurityOperating/ | zenodo: https://doi.org/10.5281/zenodo.22754351
 docxology/FractiSkills | Python | https://github.com/docxology/FractiSkills | One portable agent SKILL per page of the SS Vibelandia Omniversal Canvas — Skillarum-rendered skill pages · · Zenodo | paper: papers/2026_FractiSkills/ | zenodo: https://doi.org/10.5281/zenodo.22712650
@@ -446,6 +449,7 @@ docxology/Blakean_Entomology | Python | https://github.com/docxology/Blakean_Ent
 docxology/Blakean_Federalism | Python | https://github.com/docxology/Blakean_Federalism | Composition without capture — Blake close reading and constructed institutional/timing cases with explicit empirical limits · Citation DOI | paper: papers/2026_StatesChange/ | zenodo: https://doi.org/10.5281/zenodo.23900616
 ActiveInferenceInstitute/Generalized_Notation_Notation | Python | https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Citation DOI · Current software version 5.0.3 · Earlier software version 4.3.0 · · Earlier software archive | paper: papers/2026_GeneralizedNotationNotationGNN/ | zenodo: https://doi.org/10.5281/zenodo.7803313
 ActiveInferenceInstitute/CEREBRUM | Python | https://github.com/ActiveInferenceInstitute/CEREBRUM | Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo | paper: papers/2025_CEREBRUM/ | zenodo: https://doi.org/10.5281/zenodo.15170907
+ActiveInferenceInstitute/Symposium | Python | https://github.com/ActiveInferenceInstitute/Symposium | Applied Active Inference Symposium materials — talks, workshops, proceedings, and collaborative session artifacts from annual Applied AIF symposia | paper: papers/2026_SymposiumPresenterProgram/
 ActiveInferenceInstitute/Journal_Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal_Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966
 ActiveInferenceInstitute/fep_formal | Python | https://github.com/ActiveInferenceInstitute/fep_formal | Formal mathematics catalog for FEP and Active Inference — Lean 4 / Mathlib4 compilation, qualified semantic review, drafting tools, and manuscript pipeline · · Zenodo artifact v2.1.0 · Citation DOI · Zenodo software archive | paper: papers/2026_FEPLean/ | zenodo: https://doi.org/10.5281/zenodo.19699233
 ActiveInferenceInstitute/policy_entanglement | Python | https://github.com/ActiveInferenceInstitute/policy_entanglement | Policy Entanglement in Active Inference v1.0.0 · Zenodo | paper: papers/2026_PolicyEntanglementActive/ | zenodo: https://doi.org/10.5281/zenodo.20418904

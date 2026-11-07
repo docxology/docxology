@@ -6,7 +6,7 @@
 
 This pathway references the existing bibliography identities. Citation DOIs identify the curated work; version DOIs and Zenodo record links identify a particular deposited artifact. A concept DOI may resolve to a newer version. An absent version label means the API did not supply one; consult the record page.
 
-The current scan covers **231 catalog works** and **208 local full texts**: **8 Blake-titled works**, **15 additional William Blake text matches**, and **0 unclassified matches**. These are indexing counts, not counts of papers read.
+The current scan covers **233 catalog works** and **211 local full texts**: **8 Blake-titled works**, **15 additional William Blake text matches**, and **0 unclassified matches**. These are indexing counts, not counts of papers read.
 
 ## Core treatments
 
@@ -41,7 +41,7 @@ The relation describes the located passage, including short quotations, referenc
 | [QuadMath: An Analytical Review of 4D and Quadray Coordinates](../works/Friedman2025QuadMathAnalyticalReview4D018.html) | Section 5.7 discusses fourfold vision and points to MathArt Stream #8 and Lives in Juxtaposition. | [text, line 2072](https://github.com/docxology/docxology/blob/main/papers/2025_QuadMath/full_text.md?plain=1#L2072) |
 | [The Active Inference Institute & Active Inference Ecosystem](../works/Friedman2025ActiveInferenceInstituteActive024.html) | Program overview mentions Blake; a contributor profile includes a Blake quotation. | [text, line 4913](https://github.com/docxology/docxology/blob/main/papers/2025_AII_v3/full_text.md?plain=1#L4913) |
 | [Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision](../works/Friedman2026ActiveInferenceAsMeta227.html) | Section 3.15 and references cite Before Pragmatism and Synthesis of Agent and Niche as conceptual context. | [text, line 326](https://github.com/docxology/docxology/blob/main/papers/2026_ActiveInferenceAs/full_text.md?plain=1#L326) |
-| [Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)](../works/Friedman2026CognitiveIntegrityFrameworkFormal005.html) | Opening epigraph attributes Mental Fight to William Blake. | [text, line 20](https://github.com/docxology/docxology/blob/main/papers/2026_CognitiveIntegrity/full_text.md?plain=1#L20) |
+| [Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)](../works/Friedman2026CognitiveIntegrityFrameworkFormal005.html) | The front-matter epigraph attributes Mental Fight and Sword lines to William Blake. This classifies the located attribution without independently validating the quotation source. | [text, line 815](https://github.com/docxology/docxology/blob/main/papers/2026_CognitiveIntegrity/full_text.md?plain=1#L815) |
 | [Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon](../works/Friedman2026EntomologicalLawFieldMap183.html) | Closing discussion quotes One law for the lion and ox; reference lists The Marriage of Heaven and Hell (1790). | [text, line 1160](https://github.com/docxology/docxology/blob/main/papers/2026_EntomologicalLaw/full_text.md?plain=1#L1160) |
 | [Introduction to Biology: A Generative Approach](../works/Friedman2026IntroductionBiologyGenerativeApproach117.html) | Opening epigraph attributes a quotation about nature and imagination to William Blake. | [text, line 37](https://github.com/docxology/docxology/blob/main/papers/2026_BiologyTextbook/full_text.md?plain=1#L37) |
 
@@ -56,12 +56,13 @@ Printed cover or slide identifiers are preserved in the extraction. They can dif
 - **Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls**: Current passage review covers manuscript 0.5.0 (Zenodo 23921364), paired with software 0.7.0. The preserved blake_working_paper.pdf and full_text_v0.1.md describe the earlier edition.
 - **Synthesis of Agent and Niche**: Local extraction cover prints DOI 10.5281/zenodo.17235138 and date 2025-09-30. Catalog metadata and primary record 17243488 identify v2 dated 2025-10-01. These observations are kept separate; the cover alone cannot establish artifact identity.
 - **Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention**: Reviewed extraction of version 1.0.0, Zenodo record 23900583.
+- **Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)**: Current passage review covers the selected Part 1 version 2.0, Zenodo record 22134544. The complete prior review and its independently preserved earlier extraction remain in review_history.
 - **States Change: Blakean Federalism and composition without capture**: Reviewed extraction of version 1.0.0, Zenodo record 23900617.
 
 ## Exclusions and search gaps
 
 - [Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021](../works/Friedman2021TranscriptKarlFriston1st146.html): Reference is A. Blake and A. Yuille, Active Vision, not William Blake.
-- [Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case](../works/Friedman2026CognitiveDiagramsReviewingCategorical112.html): Reference is Barry J. Blake on grammatical relations, not William Blake.
+- [Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case](../works/Friedman2026CognitiveDiagramsReviewingCategorical112.html): No whole-word Blake match occurs in the current selected extraction. The prior Barry J. Blake reference belongs to the retained earlier extraction; this classification does not establish absence from text that extraction may have omitted.
 - [Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast](../works/Friedman2026CrescentCityLivingWaves116.html): References cite Eric S. Blake and colleagues on storms and coastal hazards, not William Blake.
 - [Prior Cognitive Art](../works/Friedman2026PriorCognitiveArt194.html): No whole-word Blake match in this extracted version; the title alone does not establish a Blake citation.
 

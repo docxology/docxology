@@ -1,0 +1,301 @@
+{
+  "schema_version": "1.0",
+  "source_pdf": {
+    "record_id": "20938523",
+    "concept_doi": "10.5281/zenodo.20931955",
+    "artifact_doi": "10.5281/zenodo.20938523",
+    "version": "0.1.0",
+    "url": "https://zenodo.org/api/records/20938523/files/Friedman_2026_Refinement_946c484b.pdf/content",
+    "name": "Friedman_2026_Refinement_946c484b.pdf",
+    "bytes": 3207775,
+    "sha256": "946c484b6bc3e0b1d55be00c15eeb09936f4e52bdb2067d2bcde40c2bbea387f",
+    "md5": "885f35efe3feaa0fb5a3402383579d69",
+    "pages": 28,
+    "storage": "remote primary; acquired review copy retained privately"
+  },
+  "extraction": {
+    "file": "full_text.md",
+    "sha256": "86ba34df218ffc5271fd99788e3b1ff50d59a664b13b44448468389bbd7a23b0",
+    "source_pdf_sha256": "946c484b6bc3e0b1d55be00c15eeb09936f4e52bdb2067d2bcde40c2bbea387f",
+    "tool": "PyMuPDF 1.28.2",
+    "method": "All 28 pages extracted in document order with page markers. No OCR or new image extraction."
+  },
+  "registry_observation": {
+    "record_id": "20938523",
+    "doi": "10.5281/zenodo.20938523",
+    "conceptdoi": "10.5281/zenodo.20931955",
+    "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
+    "publication_date": "2026-06-25",
+    "version": "0.1.0",
+    "creators": [
+      {
+        "name": "Daniel Ari Friedman",
+        "affiliation": "Active Inference Institute",
+        "orcid": "0000-0001-6232-9096"
+      }
+    ],
+    "license": {
+      "id": "mit-license"
+    },
+    "record_json_sha256": "19aef03557d0dc15a13a9f83b89b7a52c33d70c65d9d575146790f66ffa7af58",
+    "record_json_serialization": "UTF-8 canonical JSON, sort_keys=True, separators comma/colon, ensure_ascii=False; exact record from the frozen paginated primary acquisition."
+  },
+  "document_observation": {
+    "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
+    "byline": [
+      "Friedman, Daniel Ari"
+    ],
+    "affiliation": "Active Inference Institute",
+    "orcid": "0000-0001-6232-9096",
+    "cover_text_sha256": "ff99267b7014eb8afa48b873db9dd3c86ccf011d9a213f76cce214ed7768e352",
+    "review_scope": "Root and curator source-text title/byline review; no full-document visual or scientific approval."
+  },
+  "historical_sources": [
+    {
+      "file": "full_text_before_2026-11-06.md",
+      "sha256": "70664513ee039922aaed1292427c916171ca8726b29b5693e10c53e8e9b46b48",
+      "edition": "Retained extraction before 2026-11-06; version record not inferred",
+      "binding_basis": "Original extraction header and measured retained local bytes; no historical version ID inferred.",
+      "source_pdf": "Friedman_2026_Refinement_36431789.pdf",
+      "source_pdf_sha256": "3643178951b267632e607606b6daaba21ea75d8f7590899948b5999d1854198b",
+      "source_pdf_bytes": 1019881,
+      "images": "images/",
+      "image_files": [
+        {
+          "file": "images/page11_img1.png",
+          "bytes": 104833,
+          "sha256": "9919ae685c20b5ceea0848d0d5cc3f3dae08ac14aa37e0ab62d869baf6f89082"
+        },
+        {
+          "file": "images/page12_img1.png",
+          "bytes": 196994,
+          "sha256": "8bb26de54a68f793644584e404a2bce858c37c9e2b3cccdcbc58ee115901bee4"
+        },
+        {
+          "file": "images/page7_img1.png",
+          "bytes": 204942,
+          "sha256": "50feb012815d10a57690b7057ce074f1fbe63cebfc934cfeffb1d6ca3764292f"
+        },
+        {
+          "file": "images/page8_img1.png",
+          "bytes": 131607,
+          "sha256": "c6f43d7c52ac968eb4c44a9addb216fee949796bd6946a3bf4369930ad95c273"
+        },
+        {
+          "file": "images/page9_img1.png",
+          "bytes": 153974,
+          "sha256": "9d8ad432c9f232daf75bfd006a4d9a6035162f44fc4457f25a1678b7a40df38c"
+        },
+        {
+          "file": "images/page9_img2.png",
+          "bytes": 112864,
+          "sha256": "36d752790cbe2e0b6723a5246b5232e749ff33c610c602e8afc55215f3dab772"
+        }
+      ],
+      "image_scope": "Preserved images remain associated with this historical extraction; no images were extracted from the newly selected PDF."
+    }
+  ],
+  "retained_local_pdfs": [
+    {
+      "file": "Friedman_2026_Refinement_36431789.pdf",
+      "bytes": 1019881,
+      "sha256": "3643178951b267632e607606b6daaba21ea75d8f7590899948b5999d1854198b",
+      "relationship": "retained local PDF; version record not inferred"
+    }
+  ],
+  "historical_curation": {
+    "folder_metadata_preimage_sha256": "657745436b8482aa4123167d7d25dec60754d3c2e5cee0ee76cb9dedeb05e110",
+    "folder_metadata": {
+      "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
+      "version": "0.1.0",
+      "doi": "10.5281/zenodo.20931955",
+      "doi_url": "https://doi.org/10.5281/zenodo.20931955",
+      "zenodo_record": "https://zenodo.org/records/20931955",
+      "record_id": "20931956",
+      "publication_date": "2026-06-25",
+      "resource_type": {
+        "title": "Journal article",
+        "type": "publication",
+        "subtype": "article"
+      },
+      "creators": [
+        {
+          "name": "Daniel Ari Friedman",
+          "affiliation": "Active Inference Institute",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ],
+      "description": "This paper presents a metallurgical analogy for scientific manuscript composition, mapping gold-refining stages onto the template infrastructure pipeline. The refinery processes manuscript ore through 5 stages — from raw draft (9K, ~37.5% purity) through smelting, assaying, and cupellation — to nine-nines certification (99.9999999%), the ultra-high-purity standard of electronics-grade gold.\n\nThe analogy is load-bearing, not merely rhetorical: each metallurgical stage corresponds to a real template-infrastructure operation. Smelting removes dross (filler, unsupported claims); assaying tests claims against evidence; cupellation resolves cross-references; certification validates the full pipeline. The mega-madlib token engine selects 8 domain tokens deterministically via seeded SHA-256 digest over category inventories, ensuring every prose element is traceable and reproducible.\n\nResults: The refinery achieves final purity of 99.9999999% (nine-nines) (24K (nine-nines certified)) with a total purity gain of 90.00% across all stages. Nine-nines certification: Yes. The purity progression is shown in , and the karat grading scale in .\n\nKeywords: gold refining, manuscript composition, mega-madlib, token injection, scientific purity, assaying, karat grading\n\n---\nAssociated artifacts\nGitHub release: v0.1.0 (https://github.com/docxology/template_gold_refinement/releases/tag/v0.1.0)\nDOI: https://doi.org/10.5281/zenodo.20931955\nZenodo: https://zenodo.org/records/20931955\nPDF SHA-256: 3643178951b267632e607606b6daaba21ea75d8f7590899948b5999d1854198b",
+      "keywords": [
+        "gold refining",
+        "manuscript composition",
+        "mega-madlib",
+        "token injection",
+        "scientific purity",
+        "assaying",
+        "karat grading"
+      ],
+      "files": [
+        {
+          "name": "Friedman_2026_Refinement_36431789.pdf",
+          "size_bytes": 1019881,
+          "checksum": "md5:44c260d587c6eb519af2bacdabeb4b53",
+          "download_url": "https://zenodo.org/api/records/20931956/files/Friedman_2026_Refinement_36431789.pdf/content"
+        }
+      ],
+      "related_resources": [
+        {
+          "type": "repository",
+          "url": "https://github.com/docxology/template_gold_refinement"
+        }
+      ],
+      "github_repo": "docxology/template_gold_refinement",
+      "github_release_url": "https://github.com/docxology/template_gold_refinement/releases/tag/v0.1.0",
+      "release_tag": "v0.1.0",
+      "release_name": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition (v0.1.0)",
+      "pdf_sha256": "3643178951b267632e607606b6daaba21ea75d8f7590899948b5999d1854198b",
+      "pairing_confidence": "strong",
+      "pairing_evidence": [
+        "github_release_mentions_zenodo_record",
+        "zenodo_related_identifier_mentions_release",
+        "github_repo_self_linked",
+        "title_overlap"
+      ],
+      "checked_at": "2026-06-26T15:16:06Z",
+      "domain": "Computational",
+      "type": "Paper",
+      "methods": [
+        {
+          "name": "Five-stage gold-refining analogy mapped to manuscript operations",
+          "description": "Maps ore, smelting, assaying, cupellation, and certification onto manuscript template-infrastructure operations such as claim removal, evidence checks, and cross-reference resolution.",
+          "evidence": "Smelting removes dross (filler, unsupported claims); assaying tests claims against evidence; cupellation resolves cross-references; certification validates the full pipeline."
+        },
+        {
+          "name": "Seeded SHA-256 mega-madlib token selection from a config-owned lexicon",
+          "description": "Selects domain vocabulary tokens deterministically from lexicon categories declared in config.yaml so every prose token is traceable to its config key.",
+          "evidence": "The manuscript’s domain vocabulary is not hand-authored prose but config-owned lexical data, selected deterministically by a seeded SHA-256 digest. The engine generates 8 tokens across 4 slots and 4 lexicon categories."
+        },
+        {
+          "name": "Monotone-purity constraint enforced in code and tests",
+          "description": "Stage purity values must strictly increase, enforced by assert_monotone_increase in src/refinery.py and covered by the test suite.",
+          "evidence": "Purity increases monotoni- cally — a constraint enforced by src/refinery.py::assert_monotone_increase and tested in tests/test_refinery.py."
+        },
+        {
+          "name": "Karat grading of stage purities via karat_for_purity()",
+          "description": "Maps each stage's purity fraction to a standard gold fineness grade (9K to 24K and nine-nines) in src/purity.py.",
+          "evidence": "The mapping is implemented in src/purity.py::karat_for_purity(). The karat grading chart is shown in fig. 2 (see sec. 4)."
+        },
+        {
+          "name": "Deterministic seeded regeneration of all outputs",
+          "description": "The pipeline regenerates figures, data, and reports from the same config and source code; the reported run used seed 431.",
+          "evidence": "The refinery pipeline is fully deterministic. Given the same manuscript/config.yaml and src/ code, every run produces identical output."
+        }
+      ],
+      "key_findings": [
+        "The paper argues the analogy is load-bearing rather than only rhetorical, since each metallurgical stage corresponds to a real template-infrastructure operation.",
+        "The exemplar pipeline reports a monotone purity sequence over 5 stages ending at the nine-nines certification stage.",
+        "The token engine generated 8 tokens from seed 431 across 4 lexicon categories, each traceable in a provenance table.",
+        "The paper explicitly does not claim empirical validation of manuscript quality metrics or generalizability of its purity fractions."
+      ],
+      "related_papers": [
+        "2023_NSFReporting",
+        "2023_NaturalAIBased",
+        "2025_AuBI"
+      ],
+      "related_software": [
+        "docxology/template_gold_refinement"
+      ],
+      "key_findings_evidence": [
+        "The analogy is load-bearing, not merely rhetorical: each metallurgical stage corresponds to a real template-infrastructure operation.",
+        "The refinery pipeline produces a monotonically increasing purity sequence across 5 stages, reaching final purity of 99.9999999% (nine-nines) (24K (nine-nines certified)).",
+        "The mega-madlib engine generated 8 tokens from seed 431 across 4 lexicon categories.",
+        "It does not claim: • Empirical validation of manuscript quality metrics against external standards • Generalizability of specific purity fractions to all scientific domains"
+      ],
+      "summary_provenance": {
+        "source": "full_text.md",
+        "date": "2026-10-01",
+        "work_kind": "software/methods",
+        "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+        "notes": "Template exemplar methods paper; the 'purity' values are configured stage targets (per the stage definitions table), not empirical measurements of manuscript quality, as the paper's own scope limitations state.",
+        "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+      }
+    },
+    "master_metadata": {
+      "year": "2026",
+      "topic": "RefinementGold",
+      "name": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
+      "description": "This paper presents a metallurgical analogy for scientific manuscript composition, mapping gold-refining stages onto the template infrastructure pipeline. The refinery processes manuscript ore through 5 stages — from raw draft (9K, ~37.5% purity) through smelting, assaying, and cupellation — to nine-nines certification (99.9999999%), the ultra-high-purity standard of electronics-grade gold.\n\nThe analogy is load-bearing, not merely rhetorical: each metallurgical stage corresponds to a real template-infrastructure operation. Smelting removes dross (filler, unsupported claims); assaying tests claims against evidence; cupellation resolves cross-references; certification validates the full pipeline. The mega-madlib token engine selects 8 domain tokens deterministically via seeded SHA-256 digest over category inventories, ensuring every prose element is traceable and reproducible.\n\nResults: The refinery achieves final purity of 99.9999999% (nine-nines) (24K (nine-nines certified)) with a total purity gain of 90.00% across all stages. Nine-nines certification: Yes. The purity progression is shown in , and the karat grading scale in .\n\nKeywords: gold refining, manuscript composition, mega-madlib, token injection, scientific purity, assaying, karat grading\n\n---\nAssociated artifacts\nGitHub release: v0.1.0 (https://github.com/docxology/template_gold_refinement/releases/tag/v0.1.0)\nDOI: https://doi.org/10.5281/zenodo.20931955\nZenodo: https://zenodo.org/records/20931955\nPDF SHA-256: 3643178951b267632e607606b6daaba21ea75d8f7590899948b5999d1854198b",
+      "authors": "Daniel Ari Friedman",
+      "abstract": "This paper presents a metallurgical analogy for scientific manuscript composition, mapping gold-refining stages onto the template infrastructure pipeline. The refinery processes manuscript ore through 5 stages — from raw draft (9K, ~37.5% purity) through smelting, assaying, and cupellation — to nine-nines certification (99.9999999%), the ultra-high-purity standard of electronics-grade gold.\n\nThe analogy is load-bearing, not merely rhetorical: each metallurgical stage corresponds to a real template-infrastructure operation. Smelting removes dross (filler, unsupported claims); assaying tests claims against evidence; cupellation resolves cross-references; certification validates the full pipeline. The mega-madlib token engine selects 8 domain tokens deterministically via seeded SHA-256 digest over category inventories, ensuring every prose element is traceable and reproducible.\n\nResults: The refinery achieves final purity of 99.9999999% (nine-nines) (24K (nine-nines certified)) with a total purity gain of 90.00% across all stages. Nine-nines certification: Yes. The purity progression is shown in , and the karat grading scale in .\n\nKeywords: gold refining, manuscript composition, mega-madlib, token injection, scientific purity, assaying, karat grading\n\n---\nAssociated artifacts\nGitHub release: v0.1.0 (https://github.com/docxology/template_gold_refinement/releases/tag/v0.1.0)\nDOI: https://doi.org/10.5281/zenodo.20931955\nZenodo: https://zenodo.org/records/20931955\nPDF SHA-256: 3643178951b267632e607606b6daaba21ea75d8f7590899948b5999d1854198b",
+      "keywords": [
+        "gold refining",
+        "manuscript composition",
+        "mega-madlib",
+        "token injection",
+        "scientific purity",
+        "assaying",
+        "karat grading"
+      ],
+      "doi": "10.5281/zenodo.20931955",
+      "github_release_url": "https://github.com/docxology/template_gold_refinement/releases/tag/v0.1.0"
+    },
+    "current_quote_presence_against_old_items": {
+      "methods": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "key_findings_evidence": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    "scope": "Complete prior values retained as historical source/prose. Old version identifiers in metadata are observations, not inferred bindings of old PDF/image bytes."
+  },
+  "current_summary_review": {
+    "summary_provenance": {
+      "source": "full_text.md",
+      "date": "2026-11-06",
+      "source_pdf_sha256": "946c484b6bc3e0b1d55be00c15eeb09936f4e52bdb2067d2bcde40c2bbea387f",
+      "source_text_sha256": "86ba34df218ffc5271fd99788e3b1ff50d59a664b13b44448468389bbd7a23b0",
+      "selected_record_id": "20938523",
+      "work_kind": "software/methods",
+      "method": "AI-assisted review of the selected deposited abstract, quoted passages and stated limitations. Every current method/finding quote is mechanically present in the selected extraction. This is source-text support, not new computational, mathematical, scientific or human verification.",
+      "reviewed_by": "Codex AI-assisted public-source curator",
+      "reviewed_at": "2026-11-06T19:09:15Z",
+      "historical_summary": "Complete prior folder metadata and master prose are preserved in source_evidence.json beside the retained historical extraction."
+    },
+    "old_items_retained": false,
+    "scope": "Only text-supported current statements retained; paper-reported counts/results are not fresh reproduction."
+  },
+  "release_reference_review": {
+    "retained_reference_before_refresh": {
+      "github_repo": "docxology/template_gold_refinement",
+      "github_release_url": "https://github.com/docxology/template_gold_refinement/releases/tag/v0.1.0",
+      "release_tag": "v0.1.0",
+      "release_name": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition (v0.1.0)"
+    },
+    "selected_reference_scope": "Existing GitHub release fields are retained source references; generic repository/title or concept-DOI links do not establish the selected PDF edition.",
+    "frozen_pair_observation_sha256": "249b32b85678b497868e35d1f65c90cc80b7dc102e6648f8700f885fa3b94f00",
+    "frozen_pair_observation_url": "https://github.com/docxology/docxology/blob/ee837003a2328d28d8234ad5afdcfcd38419e90c/reports/paired_publications_2026-11-06.json"
+  },
+  "rights_observation": {
+    "registry_license": {
+      "id": "mit-license"
+    },
+    "scope": "The selected registry record declares this license; no additional third-party rights or scientific approval are inferred."
+  },
+  "source_acquisition_receipt_sha256": "b92a833dc89b1e7337dbf6b1d1d900ccbfa879c52869f497e2bae81308995b0c",
+  "reviewed_at": "2026-11-06T19:09:15Z",
+  "reviewed_by": "Codex AI-assisted public-source curator",
+  "review_scope": "Acquired byte integrity, all-page extraction, title/byline and source-quotation review only; no new scientific, computational, mathematical or named human approval.",
+  "privacy_scan": {
+    "contains_local_paths": false,
+    "secret_pattern_count": 0,
+    "source": "Canonical URL-aware scan of selected current text and proposed source evidence; historical text is separately reviewed."
+  }
+}

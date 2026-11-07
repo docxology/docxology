@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Case systems formalized as categories with alignment types as functors, Case-typed DisCoCat/DisCoCirc string diagrams for sentence and discourse, [0,1]-enriched case categories and categorical magnitude
-- Identifies findings: The review captures nominative-accusative, ergative-absolutive, active-stative, tripartite and fluid-S alignment within one algebraic framework linked by alignment functors., Within case-typed string diagrams, passivization reduces to a type permutation (a Swap in the pregroup category)., When multi-turn agent interactions are modeled as a fixed category of licensed morphisms, prompt injection can be analyzed as ill-typed role promotion (a functorial type violation): a specification target, not a guarantee on current LLM APIs.
+- Extracts methods: Executable categorical and distributional examples, Explicit comparison of constructions and assumptions
+- Identifies findings: A common diagrammatic vocabulary is not presented as proof that the constructions are equivalent., The reported numerical illustrations are synthetic; cognitive, topos-transfer and authorization claims retain explicit validation requirements.
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR

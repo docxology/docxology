@@ -18,11 +18,11 @@ identifiers:
     value: "https://doi.org/10.5281/zenodo.21754243"
     description: "Canonical citation DOI resolver"
   - type: doi
-    value: "10.5281/zenodo.21754244"
+    value: "10.5281/zenodo.22833507"
     description: "Version/download DOI (Zenodo artifact)"
   - type: url
-    value: "https://doi.org/10.5281/zenodo.21754244"
+    value: "https://doi.org/10.5281/zenodo.22833507"
     description: "Version/download DOI resolver (Zenodo artifact)"
   - type: url
-    value: "https://zenodo.org/records/21754244"
+    value: "https://zenodo.org/records/22833507"
     description: "Version/download landing page (Zenodo artifact)"

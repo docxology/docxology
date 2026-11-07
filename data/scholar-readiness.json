@@ -4,21 +4,21 @@
   "inclusion_guidance": "https://scholar.google.com/intl/en/scholar/inclusion.html",
   "pdf_byte_limit": 5000000,
   "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
-  "works_sha256": "67b67db4fbf45350214b7923e5c2fee43545ae705b03bfdd5b96aa0ed7a75c34",
+  "works_sha256": "43470ee1cf4edb703499e3fdc27d684c0f2c31fe3a34b05137af0432e3f1fc12",
   "projection_registry_sha256": "21ae02d3ab2c8cf5b039722149a57b956adb6968e3b84d287fbc61d15a342567",
   "network_checked": false,
   "indexing_verified": false,
   "summary": {
-    "works": 231,
+    "works": 233,
     "local_status": {
-      "blocked": 226,
+      "blocked": 228,
       "requires_review": 5
     },
     "blockers": {
       "missing_citation_author": 11,
-      "no_selected_local_pdf": 29,
-      "pdf_directory_differs_from_abstract": 197,
-      "pdf_exceeds_byte_limit": 44
+      "no_selected_local_pdf": 42,
+      "pdf_directory_differs_from_abstract": 186,
+      "pdf_exceeds_byte_limit": 41
     }
   },
   "works": [
@@ -74,7 +74,7 @@
       "title": "Active Inference Journal — 500+ videos on Active Inference with transcripts",
       "type": "Series",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ActiveInferenceJournal500002.html",
-      "page_sha256": "af1e96c27282cce2329c1d0bdd7e4ddcb33d6bd8ddeb44f6cf58fbfa76e690da",
+      "page_sha256": "fd7bb9df24e00b3f6e164027a3fb9bebc4b2d9445824e55d06b9a245b481841a",
       "citation_tags": {
         "citation_title": [
           "Active Inference Journal — 500+ videos on Active Inference with transcripts"
@@ -199,13 +199,13 @@
       "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026CognitiveIntegrityFrameworkFormal005.html",
-      "page_sha256": "2ba4f10a5053ed3c53bba63806646565e508b30fea85f4068878034ebd0333da",
+      "page_sha256": "f35773ab2cd8b7e49e3c055f285f840d0fbbc4495531fbd99a9e7d1b5b5aa176",
       "citation_tags": {
         "citation_title": [
           "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)"
         ],
         "citation_publication_date": [
-          "2026/01/28"
+          "2026/08/26"
         ],
         "citation_author": [
           "Daniel Ari Friedman"
@@ -214,22 +214,14 @@
           "10.5281/zenodo.18364118"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2026_CognitiveIntegrity/2026_CognitiveIntegrity.pdf"
+          "https://zenodo.org/api/records/22134544/files/cogsec_multiagent_1_theory_combined.pdf/content"
         ]
       },
-      "primary_pdf": {
-        "path": "papers/2026_CognitiveIntegrity/2026_CognitiveIntegrity.pdf",
-        "url": "https://danielarifriedman.com/papers/2026_CognitiveIntegrity/2026_CognitiveIntegrity.pdf",
-        "selection_basis": "extracted-text source",
-        "bytes": 931657,
-        "sha256": "fc85eb88cd534afd39aaa3e962f2e04b8fc4d47a0c8508d65dd0ee069876cd28",
-        "within_byte_limit": true,
-        "same_directory_as_abstract": false
-      },
-      "selection_issue": "",
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 2.0 is hosted at Zenodo. Local PDFs remain preserved historical archives. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
       "local_status": "blocked",
       "blockers": [
-        "pdf_directory_differs_from_abstract"
+        "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
       "reviewed_prerequisites": {},
@@ -246,7 +238,7 @@
       "title": "Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions",
       "type": "Series",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026PersonalYouTube200Livestreams006.html",
-      "page_sha256": "4956ad74f0413f8cac28ba14b9d833d2a897df9c7f409d44be0c654d2e187c34",
+      "page_sha256": "3bfa95b17c72dafcc79cc05757026340d417f80ffb4e612f41cb0c96f5298112",
       "citation_tags": {
         "citation_title": [
           "Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions"
@@ -1935,7 +1927,7 @@
       "title": "Transcript of: \"Sensemaking Federation: Exploring the Frontiers of Digital Innovation\"",
       "type": "Presentation",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2024SensemakingFederationExploringFrontiers039.html",
-      "page_sha256": "83a22564ff4718e80e2b93a3a7e1264fa6f8e443850de6d5f255239e95f72565",
+      "page_sha256": "6a03f3005a16f6b12db5de38951afff93456f3fe4105b2b13767ca3001693290",
       "citation_tags": {
         "citation_title": [
           "Transcript of: \"Sensemaking Federation: Exploring the Frontiers of Digital Innovation\""
@@ -2976,7 +2968,7 @@
       "title": "Of Ants & Aging",
       "type": "Presentation",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2023AntsAging058.html",
-      "page_sha256": "103b5c7b73f7e8ff9ad9756396b6053092667b6789efaf5a28f59dc39d49b6c0",
+      "page_sha256": "90248fe26259b87e01aea28f01693449587bb44609694e9f0bee03ac7f575e9d",
       "citation_tags": {
         "citation_title": [
           "Of Ants & Aging"
@@ -3388,7 +3380,7 @@
       "title": "An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2022ActiveInferenceOntologyDecentralized066.html",
-      "page_sha256": "1e5948404fdec94a719ce85163c80c978de3106040ff669b139117089816276f",
+      "page_sha256": "91e75167ae35520bad3d009478550e69c3607811de3444e3b70b72865120f28d",
       "citation_tags": {
         "citation_title": [
           "An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons"
@@ -3740,7 +3732,7 @@
       "title": "The Free Energy Principle & Active Inference: a Systematic Literature Analysis",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2022FreeEnergyPrincipleActive073.html",
-      "page_sha256": "36335a19527d45465b8814c337de53113e56cd04505ca3eee7294b4ef278937e",
+      "page_sha256": "3016c69a8684099b1ad283f104595a67456df0ab287b6f5c0dddeda33357ed45",
       "citation_tags": {
         "citation_title": [
           "The Free Energy Principle & Active Inference: a Systematic Literature Analysis"
@@ -4247,7 +4239,7 @@
       "title": "Communication for Remote Teams",
       "type": "Course",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2020CommunicationRemoteTeams083.html",
-      "page_sha256": "cdbc200979efadc222e26a76abd824f40ecbb0fbb1d3521d398197e444b49581",
+      "page_sha256": "cd8723465b66a604bc5771a4c25efd01abb4de0ff023679f599b5930b1a9848d",
       "citation_tags": {
         "citation_title": [
           "Communication for Remote Teams"
@@ -4480,7 +4472,7 @@
       "title": "How to use Keybase for remote teams",
       "type": "Course",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2020HowUseKeybaseRemote087.html",
-      "page_sha256": "f3304d040b6a7815e493ad6bc5e4d3780a53ad39b5fdc505814f5ddcdf3d76ea",
+      "page_sha256": "502ced82dd428fca883070dae681f5c5ab9ac030deee705bea7308a21fa84e67",
       "citation_tags": {
         "citation_title": [
           "How to use Keybase for remote teams"
@@ -5936,7 +5928,7 @@
       "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026CognitiveDiagramsReviewingCategorical112.html",
-      "page_sha256": "fd4492c250a6b75e4fd10b5962d69a698351c517009b969ad51a2ded35a4b73e",
+      "page_sha256": "cdcf7d283e6f50ce3e35ae4e049ca9f39191f4c43c00ac4a8a04c33d8e5870d4",
       "citation_tags": {
         "citation_title": [
           "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case"
@@ -5951,23 +5943,14 @@
           "10.5281/zenodo.19695259"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2026_CognitiveCaseDiagrams/cognitive_case_diagrams_v1_DAF_04-23-2026.pdf"
+          "https://zenodo.org/api/records/22774403/files/cognitive_case_diagrams-2.7.0.pdf/content"
         ]
       },
-      "primary_pdf": {
-        "path": "papers/2026_CognitiveCaseDiagrams/cognitive_case_diagrams_v1_DAF_04-23-2026.pdf",
-        "url": "https://danielarifriedman.com/papers/2026_CognitiveCaseDiagrams/cognitive_case_diagrams_v1_DAF_04-23-2026.pdf",
-        "selection_basis": "extracted-text source",
-        "bytes": 13601721,
-        "sha256": "3767c3c3090994c67bf9bbf5ddf47d38142a3c76ed859d56d36a052c6c9e284f",
-        "within_byte_limit": false,
-        "same_directory_as_abstract": false
-      },
-      "selection_issue": "",
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 2.7.0 is hosted at Zenodo. Local PDFs remain preserved historical archives. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
       "local_status": "blocked",
       "blockers": [
-        "pdf_directory_differs_from_abstract",
-        "pdf_exceeds_byte_limit"
+        "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
       "reviewed_prerequisites": {},
@@ -5984,7 +5967,7 @@
       "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026TowardsLean4Formalization113.html",
-      "page_sha256": "62f2dc76a6c57ac1923cc45e5ced7962cb31b58ad5f26215922d3e459c14d25a",
+      "page_sha256": "4f710df00649cf01c67b811aa7711ee2bbb86bf3ae81aaa5c352a936e3b1f9b4",
       "citation_tags": {
         "citation_title": [
           "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics"
@@ -5999,22 +5982,23 @@
           "10.5281/zenodo.19699233"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2026_FEPLean/fep_lean_v1_04-24-2026.pdf"
+          "https://danielarifriedman.com/papers/2026_FEPLean/FEP_Formal-2.1.0.pdf"
         ]
       },
       "primary_pdf": {
-        "path": "papers/2026_FEPLean/fep_lean_v1_04-24-2026.pdf",
-        "url": "https://danielarifriedman.com/papers/2026_FEPLean/fep_lean_v1_04-24-2026.pdf",
-        "selection_basis": "extracted-text source",
-        "bytes": 1908263,
-        "sha256": "1cdb831fe6c9c46531f27b8aa661f9507b2a14664350ea5e3105311775e84526",
-        "within_byte_limit": true,
+        "path": "papers/2026_FEPLean/FEP_Formal-2.1.0.pdf",
+        "url": "https://danielarifriedman.com/papers/2026_FEPLean/FEP_Formal-2.1.0.pdf",
+        "selection_basis": "declared primary",
+        "bytes": 7885960,
+        "sha256": "ba7594ee91f1bc9adf3830ae32e915da9f956436965758381615129d90378953",
+        "within_byte_limit": false,
         "same_directory_as_abstract": false
       },
       "selection_issue": "",
       "local_status": "blocked",
       "blockers": [
-        "pdf_directory_differs_from_abstract"
+        "pdf_directory_differs_from_abstract",
+        "pdf_exceeds_byte_limit"
       ],
       "visible_complete_author_abstract": null,
       "reviewed_prerequisites": {},
@@ -6222,7 +6206,7 @@
       "title": "Policy Entanglement in Active Inference: A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026PolicyEntanglementActiveInference119.html",
-      "page_sha256": "f59e6f9822fc4d9876784b299373ec36ee64e885b6fe94fa025970e435a7f8e4",
+      "page_sha256": "c58bcbf1562df37b02d19e2a6f89bb903b5a92f1dcd904113b1a9db2db3336e5",
       "citation_tags": {
         "citation_title": [
           "Policy Entanglement in Active Inference: A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary"
@@ -6505,7 +6489,7 @@
       "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026BeeStackEvidenceTypedScaffold125.html",
-      "page_sha256": "a3a039148def3936b56c86b3f541794b2cfd55658249e0feab9ea24b95b82548",
+      "page_sha256": "55ba25ede6f0373c8d5d8941559e09dd64f7459910c07e1fff27ac66735806fa",
       "citation_tags": {
         "citation_title": [
           "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation"
@@ -6554,7 +6538,7 @@
       "title": "When do bugs see (infra)red?",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026WhenDoBugsSee126.html",
-      "page_sha256": "fe976e0e6487d8a037d03a8a8572505d8b1b504762db4905fd5293eb72ee5715",
+      "page_sha256": "b7dbd1761759ec16b772562ac16034e4c8403841c5be3647d32321f1d8f289e0",
       "citation_tags": {
         "citation_title": [
           "When do bugs see (infra)red?"
@@ -8877,7 +8861,7 @@
       "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026RefinementGoldMetallurgicalAnalogy177.html",
-      "page_sha256": "39edfaeacaeb55ffbecbde48a58d47f59990ddd917eb2eae6fc88504fbf56f50",
+      "page_sha256": "ecd2d8568a725fb66dc509984af79c51c1ccdc8d84664f636fce539ca55b37d8",
       "citation_tags": {
         "citation_title": [
           "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition"
@@ -8892,22 +8876,14 @@
           "10.5281/zenodo.20931955"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2026_RefinementGold/Friedman_2026_Refinement_36431789.pdf"
+          "https://zenodo.org/api/records/20938523/files/Friedman_2026_Refinement_946c484b.pdf/content"
         ]
       },
-      "primary_pdf": {
-        "path": "papers/2026_RefinementGold/Friedman_2026_Refinement_36431789.pdf",
-        "url": "https://danielarifriedman.com/papers/2026_RefinementGold/Friedman_2026_Refinement_36431789.pdf",
-        "selection_basis": "extracted-text source",
-        "bytes": 1019881,
-        "sha256": "3643178951b267632e607606b6daaba21ea75d8f7590899948b5999d1854198b",
-        "within_byte_limit": true,
-        "same_directory_as_abstract": false
-      },
-      "selection_issue": "",
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 0.1.0 is hosted at Zenodo. Local PDFs remain preserved historical archives. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
       "local_status": "blocked",
       "blockers": [
-        "pdf_directory_differs_from_abstract"
+        "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
       "reviewed_prerequisites": {},
@@ -9528,7 +9504,7 @@
       "title": "Illegal States, Mostly Unrepresentable",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026IllegalStatesMostlyUnrepresentable191.html",
-      "page_sha256": "a6105f4015d95af89e1e3b2b724d1c2773e9de8bd309c065c3e875838745482f",
+      "page_sha256": "f9301f3f93fddfe6dc598f91b77ddd036ffd73db11997fdb4ad47aa20da584b2",
       "citation_tags": {
         "citation_title": [
           "Illegal States, Mostly Unrepresentable"
@@ -9575,7 +9551,7 @@
       "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026DataDescriptorTemplateSchema192.html",
-      "page_sha256": "3f83576bbb884bbaafcde7e6f2d9d740852f65f3e359b03ba19301a20bb78cd3",
+      "page_sha256": "7adf5ecb305200305ce214e3f8c672713ca78899d146cc814f707d1d4162f042",
       "citation_tags": {
         "citation_title": [
           "Data Descriptor Template: Schema, Provenance, and Release Readiness"
@@ -9907,13 +9883,13 @@
       "title": "The Witness Register: Co-Registration Without Aggregation",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026WitnessRegisterCoRegistration200.html",
-      "page_sha256": "7d9a9e8e6a6036a3d396263d5af519e6528689b5171a4ca907c13dc310bfe540",
+      "page_sha256": "c6e89e57cc19b600ac3626a73ffb26604fe8ec8e970be782fab245a86a97b15c",
       "citation_tags": {
         "citation_title": [
           "The Witness Register: Co-Registration Without Aggregation"
         ],
         "citation_publication_date": [
-          "2026/08/02"
+          "2026/09/18"
         ],
         "citation_author": [
           "Daniel Ari Friedman"
@@ -9922,22 +9898,14 @@
           "10.5281/zenodo.21754245"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2026_WitnessRegister/witness_register_combined.pdf"
+          "https://zenodo.org/api/records/22833511/files/witness_register_combined.pdf/content"
         ]
       },
-      "primary_pdf": {
-        "path": "papers/2026_WitnessRegister/witness_register_combined.pdf",
-        "url": "https://danielarifriedman.com/papers/2026_WitnessRegister/witness_register_combined.pdf",
-        "selection_basis": "extracted-text source",
-        "bytes": 674133,
-        "sha256": "b50b8d1106003ce027caabb79fccadce650167795287ea75539c029cad958088",
-        "within_byte_limit": true,
-        "same_directory_as_abstract": false
-      },
-      "selection_issue": "",
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 0.1.1 is hosted at Zenodo. Local PDFs remain preserved historical archives. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
       "local_status": "blocked",
       "blockers": [
-        "pdf_directory_differs_from_abstract"
+        "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
       "reviewed_prerequisites": {},
@@ -9954,13 +9922,13 @@
       "title": "The Line Set: Holding Instruments Apart",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026LineSetHoldingInstruments201.html",
-      "page_sha256": "ecbec611d13d8cb9ea6f83628e418f4697fbc1745599b271783ab93c933add91",
+      "page_sha256": "1546f81f6be6f117f53584cb28021fa16886864cac944f457e15b2ff3bf9296d",
       "citation_tags": {
         "citation_title": [
           "The Line Set: Holding Instruments Apart"
         ],
         "citation_publication_date": [
-          "2026/08/02"
+          "2026/09/18"
         ],
         "citation_author": [
           "Daniel Ari Friedman"
@@ -9969,23 +9937,14 @@
           "10.5281/zenodo.21754243"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2026_LineSet/line_set_combined.pdf"
+          "https://zenodo.org/api/records/22833507/files/line_set_combined.pdf/content"
         ]
       },
-      "primary_pdf": {
-        "path": "papers/2026_LineSet/line_set_combined.pdf",
-        "url": "https://danielarifriedman.com/papers/2026_LineSet/line_set_combined.pdf",
-        "selection_basis": "extracted-text source",
-        "bytes": 22672214,
-        "sha256": "00fe16032bb4965b226a7770718177c6843ef0d08c413d7b82f4261b929b6838",
-        "within_byte_limit": false,
-        "same_directory_as_abstract": false
-      },
-      "selection_issue": "",
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 0.2.0 is hosted at Zenodo. Local PDFs remain preserved historical archives. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
       "local_status": "blocked",
       "blockers": [
-        "pdf_directory_differs_from_abstract",
-        "pdf_exceeds_byte_limit"
+        "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
       "reviewed_prerequisites": {},
@@ -10097,13 +10056,13 @@
       "title": "Golden Line: Toward What Matters",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026GoldenLineTowardWhat204.html",
-      "page_sha256": "5dd8d0de2d5f6d2c52aefad14f832bb34bb70430ffc7fef7306b1f972612037a",
+      "page_sha256": "20bc6d4bf68397e8207011e11ed9678a66962406a868e34e0b808e9084820a24",
       "citation_tags": {
         "citation_title": [
           "Golden Line: Toward What Matters"
         ],
         "citation_publication_date": [
-          "2026/08/02"
+          "2026/09/18"
         ],
         "citation_author": [
           "Daniel Ari Friedman"
@@ -10112,23 +10071,14 @@
           "10.5281/zenodo.21754237"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2026_GoldenLine/golden_line_combined.pdf"
+          "https://zenodo.org/api/records/22833506/files/golden_line_combined.pdf/content"
         ]
       },
-      "primary_pdf": {
-        "path": "papers/2026_GoldenLine/golden_line_combined.pdf",
-        "url": "https://danielarifriedman.com/papers/2026_GoldenLine/golden_line_combined.pdf",
-        "selection_basis": "extracted-text source",
-        "bytes": 6628468,
-        "sha256": "c1ea0f098c597d32e24facd66fc90dad1e89077d8712c7536904669da142a2b9",
-        "within_byte_limit": false,
-        "same_directory_as_abstract": false
-      },
-      "selection_issue": "",
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 0.4.1 is hosted at Zenodo. Local PDFs remain preserved historical archives. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
       "local_status": "blocked",
       "blockers": [
-        "pdf_directory_differs_from_abstract",
-        "pdf_exceeds_byte_limit"
+        "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
       "reviewed_prerequisites": {},
@@ -10145,13 +10095,13 @@
       "title": "Black Line: Strong Work in Public",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026BlackLineStrongWork205.html",
-      "page_sha256": "db2129ae7251db51f9e6dbf1314dfaef60d6e6c424d76fd2b990511ca2f77d1c",
+      "page_sha256": "cb78e8fe4a59efcc747673f0c75b6a759627ed0f446a1f0c749be9bb4952bfaa",
       "citation_tags": {
         "citation_title": [
           "Black Line: Strong Work in Public"
         ],
         "citation_publication_date": [
-          "2026/08/02"
+          "2026/09/18"
         ],
         "citation_author": [
           "Daniel Ari Friedman"
@@ -10160,22 +10110,14 @@
           "10.5281/zenodo.21754235"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2026_BlackLine/black_line_combined.pdf"
+          "https://zenodo.org/api/records/22833503/files/black_line_combined.pdf/content"
         ]
       },
-      "primary_pdf": {
-        "path": "papers/2026_BlackLine/black_line_combined.pdf",
-        "url": "https://danielarifriedman.com/papers/2026_BlackLine/black_line_combined.pdf",
-        "selection_basis": "extracted-text source",
-        "bytes": 3582188,
-        "sha256": "56c7c49bb1d52a7b76725288b50b315765ecbb8c5faac0eba01505acbc25497c",
-        "within_byte_limit": true,
-        "same_directory_as_abstract": false
-      },
-      "selection_issue": "",
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 0.4.1 is hosted at Zenodo. Local PDFs remain preserved historical archives. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
       "local_status": "blocked",
       "blockers": [
-        "pdf_directory_differs_from_abstract"
+        "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
       "reviewed_prerequisites": {},
@@ -10387,13 +10329,13 @@
       "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026RobustBeliefSharingFederated210.html",
-      "page_sha256": "3a2f8c18bb3ef14eda9c758fdba0e1afb22261a66783326dfd01734385f48229",
+      "page_sha256": "103f8fe9d022b041def215bfd124f45a1b591c14e375f2035acd377376fa237f",
       "citation_tags": {
         "citation_title": [
           "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus"
         ],
         "citation_publication_date": [
-          "2026/08/10"
+          "2026/09/19"
         ],
         "citation_author": [
           "Daniel Ari Friedman"
@@ -10402,23 +10344,14 @@
           "10.5281/zenodo.21864003"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2026_RobustBeliefSharing/active_fedference_combined.pdf"
+          "https://zenodo.org/api/records/22149133/files/active_fedference_combined.pdf/content"
         ]
       },
-      "primary_pdf": {
-        "path": "papers/2026_RobustBeliefSharing/active_fedference_combined.pdf",
-        "url": "https://danielarifriedman.com/papers/2026_RobustBeliefSharing/active_fedference_combined.pdf",
-        "selection_basis": "extracted-text source",
-        "bytes": 9433827,
-        "sha256": "78aef444aa56b584977e8ace939bd99c6b048b615f72fd042ffdf0a9d393be15",
-        "within_byte_limit": false,
-        "same_directory_as_abstract": false
-      },
-      "selection_issue": "",
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 1.1.0 is hosted at Zenodo. Local PDFs remain preserved historical archives. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
       "local_status": "blocked",
       "blockers": [
-        "pdf_directory_differs_from_abstract",
-        "pdf_exceeds_byte_limit"
+        "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
       "reviewed_prerequisites": {},
@@ -10435,7 +10368,7 @@
       "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html",
-      "page_sha256": "952cc4a95a05a2ee9d52e0bd53ce33b4ddebf3fcbe5a0e10562c918ba53fea2b",
+      "page_sha256": "da7013cf079add5aaf36070be74364f32062078c03aaf4a75e51277d77791e90",
       "citation_tags": {
         "citation_title": [
           "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract"
@@ -10624,7 +10557,7 @@
       "title": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)",
       "type": "Report",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ForensicAuditMillenniumLeanClay215.html",
-      "page_sha256": "2c88733dacb7089efd15ff5aebea783ca3db42042db22b917b7920273d94d9e3",
+      "page_sha256": "5305589607578ea3983df687fa5e9dca97b3113a21a1f95708bb175d6b6d3097",
       "citation_tags": {
         "citation_title": [
           "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)"
@@ -10639,22 +10572,14 @@
           "10.5281/zenodo.22243472"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2026_MillenniumAudit/Friedman_2026_MillenniumAudit.pdf"
+          "https://zenodo.org/api/records/22243473/files/Millennium_Audit_combined.pdf/content"
         ]
       },
-      "primary_pdf": {
-        "path": "papers/2026_MillenniumAudit/Friedman_2026_MillenniumAudit.pdf",
-        "url": "https://danielarifriedman.com/papers/2026_MillenniumAudit/Friedman_2026_MillenniumAudit.pdf",
-        "selection_basis": "only archived PDF",
-        "bytes": 69262,
-        "sha256": "c8125890cba1be893b86e2ec27212e5c0952a4edf212414a38bedb1a76836151",
-        "within_byte_limit": true,
-        "same_directory_as_abstract": false
-      },
-      "selection_issue": "",
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 1.0.0 is hosted at Zenodo. Local PDFs remain preserved historical archives. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
       "local_status": "blocked",
       "blockers": [
-        "pdf_directory_differs_from_abstract"
+        "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
       "reviewed_prerequisites": {},
@@ -10671,7 +10596,7 @@
       "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html",
-      "page_sha256": "9ebb0ffe96745a18859afa5188eba5534fb5e1ecebaec8e2386c2eaa264b6545",
+      "page_sha256": "46f927a95a8310d45dd9e1ab150798db5f5d536c2dcd13e56d7fc0283f499bdd",
       "citation_tags": {
         "citation_title": [
           "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation"
@@ -10686,22 +10611,14 @@
           "10.5281/zenodo.22663906"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2026_Skillarum/Skillarum_combined.pdf"
+          "https://zenodo.org/api/records/23271010/files/Skillarum_combined.pdf/content"
         ]
       },
-      "primary_pdf": {
-        "path": "papers/2026_Skillarum/Skillarum_combined.pdf",
-        "url": "https://danielarifriedman.com/papers/2026_Skillarum/Skillarum_combined.pdf",
-        "selection_basis": "extracted-text source",
-        "bytes": 3629479,
-        "sha256": "f3b3e1d8176bd0c148dd66f19202f321e0046e5bd89aa9953d9188fd370251fa",
-        "within_byte_limit": true,
-        "same_directory_as_abstract": false
-      },
-      "selection_issue": "",
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 0.3.1 is hosted at Zenodo. Local PDFs remain preserved historical archives. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
       "local_status": "blocked",
       "blockers": [
-        "pdf_directory_differs_from_abstract"
+        "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
       "reviewed_prerequisites": {},
@@ -10718,7 +10635,7 @@
       "title": "FractiSkills: One Portable Agent Skill per Page",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026FractiSkillsOnePortableAgent217.html",
-      "page_sha256": "40e827683b691e2d749f503dc38d027c1ee610e005c970e74655b89250dd770b",
+      "page_sha256": "f1969e2e025deb66f350dd10d6c03f83c97bca1ab6285daf736eedd13f1cd4c9",
       "citation_tags": {
         "citation_title": [
           "FractiSkills: One Portable Agent Skill per Page"
@@ -11445,7 +11362,7 @@
       "title": "GNN-based active inference for Battleship",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026GNNBasedActiveInference232.html",
-      "page_sha256": "7441c14e85331f530f64ba3c89bde83b34d32166a5034e5fb4377c0b96a18529",
+      "page_sha256": "63d989a6aae4741564c7fdc4aa076badf794019522514d879a64ba61f7e697c4",
       "citation_tags": {
         "citation_title": [
           "GNN-based active inference for Battleship"
@@ -11460,22 +11377,14 @@
           "10.5281/zenodo.23670187"
         ],
         "citation_pdf_url": [
-          "https://danielarifriedman.com/papers/2026_GNNBasedActive/Active_Inference_Battleship_slides.pdf"
+          "https://zenodo.org/api/records/23676081/files/active_inference_battleship_combined.pdf/content"
         ]
       },
-      "primary_pdf": {
-        "path": "papers/2026_GNNBasedActive/Active_Inference_Battleship_slides.pdf",
-        "url": "https://danielarifriedman.com/papers/2026_GNNBasedActive/Active_Inference_Battleship_slides.pdf",
-        "selection_basis": "only archived PDF",
-        "bytes": 3928683,
-        "sha256": "bf14c2d0ce35f6d7fa79e06493b5b8ae18de0cf8266afaf4cbb23bf6f1e1bdf4",
-        "within_byte_limit": true,
-        "same_directory_as_abstract": false
-      },
-      "selection_issue": "",
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 0.5.0 is hosted at Zenodo. Local PDFs remain preserved historical archives. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
       "local_status": "blocked",
       "blockers": [
-        "pdf_directory_differs_from_abstract"
+        "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
       "reviewed_prerequisites": {},
@@ -11596,6 +11505,136 @@
       },
       "primary_pdf": null,
       "selection_issue": "Current PDF version r2054 is hosted at Zenodo. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
+      "local_status": "blocked",
+      "blockers": [
+        "no_selected_local_pdf"
+      ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
+      "unverified_requirements": [
+        "searchable_pdf",
+        "scholarly_content",
+        "complete_author_written_abstract_or_full_text",
+        "actual_scholar_indexing"
+      ]
+    },
+    {
+      "citation_key": "Friedman2026RikishiReproducibleOperationAnalysis236",
+      "title": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+      "type": "Paper",
+      "abstract_url": "https://danielarifriedman.com/works/Friedman2026RikishiReproducibleOperationAnalysis236.html",
+      "page_sha256": "a2547a1dae4333d2aa979481ed3ccee9d447e47d6bfe3b9722b2c267cf767ab3",
+      "citation_tags": {
+        "citation_title": [
+          "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology"
+        ],
+        "citation_publication_date": [
+          "2026/11/06"
+        ],
+        "citation_author": [
+          "Daniel Ari Friedman"
+        ],
+        "citation_doi": [
+          "10.5281/zenodo.23987670"
+        ],
+        "citation_pdf_url": [
+          "https://zenodo.org/api/records/23987671/files/rikishi-1.1.0-paper.pdf/content"
+        ]
+      },
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 1.1.0 is hosted at Zenodo. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
+      "local_status": "blocked",
+      "blockers": [
+        "no_selected_local_pdf"
+      ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
+      "unverified_requirements": [
+        "searchable_pdf",
+        "scholarly_content",
+        "complete_author_written_abstract_or_full_text",
+        "actual_scholar_indexing"
+      ]
+    },
+    {
+      "citation_key": "Friedman20262026ActiveInferenceSymposium237",
+      "title": "2026 Active Inference Symposium — Presenter Program",
+      "type": "Book",
+      "abstract_url": "https://danielarifriedman.com/works/Friedman20262026ActiveInferenceSymposium237.html",
+      "page_sha256": "210d8d4c977fb1d87780b9adea40862caa3755c4e74349ee323787d3a7697c6c",
+      "citation_tags": {
+        "citation_title": [
+          "2026 Active Inference Symposium — Presenter Program"
+        ],
+        "citation_publication_date": [
+          "2026/11/05"
+        ],
+        "citation_author": [
+          "Active Inference Institute",
+          "Bradly Alicea",
+          "Dan Corva, Kevin Backhouse",
+          "Hongju Pae",
+          "Karl Friston",
+          "Alison Gopnik",
+          "Bianca Avanzo",
+          "Ed Ober",
+          "John Boik, Glen EP Ropella",
+          "Luca Possati",
+          "Majid D. Beni",
+          "Mike Levin",
+          "Montijn van Loo",
+          "Ryan Smith",
+          "Sergio Rubin",
+          "Takuya Isomura",
+          "Ted J. Vrioni",
+          "Ahmad Nazzal",
+          "Alexander Sabine",
+          "Andrew Pashea",
+          "Anna Pereira",
+          "Avel Guénin—Carlut",
+          "Bo Lee",
+          "Bruce Tisler",
+          "Cleber Gomes",
+          "Colin Turfus",
+          "Daniel Dragolich",
+          "Daniel Friedman",
+          "Diaconescu Adrian-Stelian",
+          "Harshil Shah, Andrew Pashea",
+          "Harshil Shah, Satyaki Maitra",
+          "Holly Grimm, John H. Clippinger, Daniel Ari Friedman",
+          "Hyojun Choi",
+          "Jean-François Cloutier",
+          "Lancelot Da Costa",
+          "Matthew Brown",
+          "Michael Lennon",
+          "Michael Walker",
+          "Nick Hay, Adam Safron",
+          "Patricia Craja",
+          "Paulo Santiago",
+          "Rajkaushik Borgohain",
+          "Robert Worden",
+          "Sheena Yap Chan",
+          "Stell",
+          "Steph Macurdy",
+          "Tao Gong",
+          "Tiga Kailimai",
+          "Tran Hoang Linh",
+          "Viraj Deshwal",
+          "Vitalii Shapovalov",
+          "Vitória de Souza",
+          "Xin Sun"
+        ],
+        "citation_doi": [
+          "10.5281/zenodo.23986504"
+        ],
+        "citation_pdf_url": [
+          "https://zenodo.org/api/records/23986505/files/Active-Inference-Symposium-2026-Presenter-Program-v3.2.0.pdf/content"
+        ]
+      },
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 3.2.0 is hosted at Zenodo. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
       "local_status": "blocked",
       "blockers": [
         "no_selected_local_pdf"

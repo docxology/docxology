@@ -3220,3 +3220,79 @@ KW  - Computational
 KW  - Paper
 N1  - Catalog row 235; docs: papers/2026_ObserversAllYouNeed/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology
+T2  - Zenodo (preprint)
+DO  - 10.5281/zenodo.23987670
+UR  - https://doi.org/10.5281/zenodo.23987670
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 236; docs: papers/2026_Rikishi/
+ER  -
+
+TY  - BOOK
+AU  - Active Inference Institute
+AU  - Bradly Alicea
+AU  - Dan Corva, Kevin Backhouse
+AU  - Hongju Pae
+AU  - Karl Friston
+AU  - Alison Gopnik
+AU  - Bianca Avanzo
+AU  - Ed Ober
+AU  - John Boik, Glen EP Ropella
+AU  - Luca Possati
+AU  - Majid D. Beni
+AU  - Mike Levin
+AU  - Montijn van Loo
+AU  - Ryan Smith
+AU  - Sergio Rubin
+AU  - Takuya Isomura
+AU  - Ted J. Vrioni
+AU  - Ahmad Nazzal
+AU  - Alexander Sabine
+AU  - Andrew Pashea
+AU  - Anna Pereira
+AU  - Avel Guénin—Carlut
+AU  - Bo Lee
+AU  - Bruce Tisler
+AU  - Cleber Gomes
+AU  - Colin Turfus
+AU  - Daniel Dragolich
+AU  - Daniel Friedman
+AU  - Diaconescu Adrian-Stelian
+AU  - Harshil Shah, Andrew Pashea
+AU  - Harshil Shah, Satyaki Maitra
+AU  - Holly Grimm, John H. Clippinger, Daniel Ari Friedman
+AU  - Hyojun Choi
+AU  - Jean-François Cloutier
+AU  - Lancelot Da Costa
+AU  - Matthew Brown
+AU  - Michael Lennon
+AU  - Michael Walker
+AU  - Nick Hay, Adam Safron
+AU  - Patricia Craja
+AU  - Paulo Santiago
+AU  - Rajkaushik Borgohain
+AU  - Robert Worden
+AU  - Sheena Yap Chan
+AU  - Stell
+AU  - Steph Macurdy
+AU  - Tao Gong
+AU  - Tiga Kailimai
+AU  - Tran Hoang Linh
+AU  - Viraj Deshwal
+AU  - Vitalii Shapovalov
+AU  - Vitória de Souza
+AU  - Xin Sun
+PY  - 2026
+TI  - 2026 Active Inference Symposium — Presenter Program
+T2  - Zenodo (presenter program)
+DO  - 10.5281/zenodo.23986504
+UR  - https://doi.org/10.5281/zenodo.23986504
+KW  - Media & Teaching
+KW  - Book
+N1  - Catalog row 237; docs: papers/2026_SymposiumPresenterProgram/
+ER  -

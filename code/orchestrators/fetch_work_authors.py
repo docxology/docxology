@@ -81,7 +81,9 @@ USER_AGENT = (
 # rather than demanding equality.
 TITLE_SIMILARITY_FLOOR = 0.80
 REQUEST_PAUSE_SECONDS = 0.2
-APPLIED_STATUSES = frozenset({"verified", "document_verified", "website_verified", "doi_document_verified"})
+APPLIED_STATUSES = frozenset(
+    {"verified", "document_verified", "website_verified", "doi_document_verified"}
+)
 TIMEOUT_SECONDS = 30
 
 
@@ -217,7 +219,7 @@ def fetch_crossref(doi: str) -> dict | None:
     return {"title": titles[0] if titles else "", "authors": authors}
 
 
-def fetch_datacite(doi: str) -> dict | None:
+def fetch_datacite(doi: str, *, preserve_creator_labels: bool = False) -> dict | None:
     status, body = _get(f"https://api.datacite.org/dois/{urllib.parse.quote(doi)}")
     if status != 200:
         return None
@@ -246,19 +248,30 @@ def fetch_datacite(doi: str) -> dict | None:
             record["orcid"] = orcid
         authors.append(record)
     titles = attributes.get("titles") or []
-    return {
+    result = {
         "title": (titles[0] or {}).get("title", "") if titles else "",
         "authors": authors,
     }
+    if preserve_creator_labels:
+        result["source_creator_names"] = [
+            entry.get("name") for entry in attributes.get("creators") or []
+        ]
+    return result
 
 
-def resolve(doi: str, catalogued_title: str) -> dict:
+def resolve(
+    doi: str, catalogued_title: str, *, preserve_creator_labels: bool = False
+) -> dict:
     agency = registration_agency(doi)
     record: dict = {"registration_agency": agency}
     if agency == "Crossref":
         resolved = fetch_crossref(doi)
     elif agency == "DataCite":
-        resolved = fetch_datacite(doi)
+        resolved = (
+            fetch_datacite(doi, preserve_creator_labels=True)
+            if preserve_creator_labels
+            else fetch_datacite(doi)
+        )
     elif agency is None:
         record["status"] = "doi_unresolved"
         return record
@@ -283,6 +296,8 @@ def resolve(doi: str, catalogued_title: str) -> dict:
         return record
     record["status"] = "verified"
     record["authors"] = resolved["authors"]
+    if preserve_creator_labels and "source_creator_names" in resolved:
+        record["source_creator_names"] = resolved["source_creator_names"]
     return record
 
 
@@ -420,17 +435,26 @@ def _norm_evidence(text: str) -> str:
     return " ".join(text.split())
 
 
-def _author_evidence_bytes(root: Path, relative: object, folder: str, limit: int) -> bytes:
+def _author_evidence_bytes(
+    root: Path, relative: object, folder: str, limit: int
+) -> bytes:
     if not isinstance(relative, str):
         raise ValueError("author evidence requires a relative source path")
     rel = PurePosixPath(relative)
     base = PurePosixPath("papers") / folder
     if (
-        rel.is_absolute() or ".." in rel.parts or "\\" in relative
+        rel.is_absolute()
+        or ".." in rel.parts
+        or "\\" in relative
         or not rel.is_relative_to(base)
-        or any((root / Path(*rel.parts[:i])).is_symlink() for i in range(1, len(rel.parts) + 1))
+        or any(
+            (root / Path(*rel.parts[:i])).is_symlink()
+            for i in range(1, len(rel.parts) + 1)
+        )
     ):
-        raise ValueError(f"author evidence must remain inside papers/{folder}/ without symlinks")
+        raise ValueError(
+            f"author evidence must remain inside papers/{folder}/ without symlinks"
+        )
     path = root / relative
     if not path.is_file() or path.stat().st_nlink != 1:
         raise ValueError("author evidence requires an independent regular source file")
@@ -454,31 +478,61 @@ def _frozen_registry_byline(entry: dict) -> list[str]:
     creators = baseline.get("creators") if isinstance(baseline, dict) else None
     if not isinstance(creators, list):
         return []
-    return [_norm_evidence(creator["name"]) for creator in creators if isinstance(creator, dict) and isinstance(creator.get("name"), str)]
+    return [
+        _norm_evidence(creator["name"])
+        for creator in creators
+        if isinstance(creator, dict) and isinstance(creator.get("name"), str)
+    ]
 
 
 def _registry_refresh_state(entry: dict, observation: object) -> str:
     if (
-        not isinstance(observation, dict) or observation.get("status") != "verified"
-        or not isinstance(observation.get("authors"), list) or not observation["authors"]
+        not isinstance(observation, dict)
+        or observation.get("status") != "verified"
+        or not isinstance(observation.get("authors"), list)
+        or not observation["authors"]
         or not isinstance(observation.get("resolved_title"), str)
     ):
         return "registry_unavailable"
     observed_doi, observed_num = observation.get("doi"), observation.get("num")
     if (
-        not isinstance(observed_doi, str) or not isinstance(entry.get("doi"), str)
+        not isinstance(observed_doi, str)
+        or not isinstance(entry.get("doi"), str)
         or observed_doi.casefold() != entry["doi"].casefold()
-        or isinstance(observed_num, bool) or not isinstance(observed_num, int)
+        or isinstance(observed_num, bool)
+        or not isinstance(observed_num, int)
         or observed_num != entry.get("num")
     ):
         return "registry_drift"
-    if title_similarity(entry["title"], observation["resolved_title"]) < TITLE_SIMILARITY_FLOOR:
+    if (
+        title_similarity(entry["title"], observation["resolved_title"])
+        < TITLE_SIMILARITY_FLOOR
+    ):
         return "registry_drift"
     try:
-        observed = [_norm_evidence(format_author(author)) for author in observation["authors"]]
-    except (AttributeError, TypeError, KeyError):
+        if "literal_credit_review" in entry:
+            labels = observation.get("source_creator_names")
+            if (
+                not isinstance(labels, list)
+                or not labels
+                or any(
+                    not isinstance(label, str) or not label.strip() for label in labels
+                )
+            ):
+                return "registry_unavailable"
+            observed = [_norm_evidence(label) for label in labels]
+        else:
+            observed = [
+                _norm_evidence(format_author(author))
+                for author in observation["authors"]
+            ]
+    except AttributeError, TypeError, KeyError:
         return "registry_unavailable"
-    return "matches_frozen_byline" if observed == _frozen_registry_byline(entry) else "registry_drift"
+    return (
+        "matches_frozen_byline"
+        if observed == _frozen_registry_byline(entry)
+        else "registry_drift"
+    )
 
 
 def _doi_document_errors(key: str, entry: dict, row, root: Path) -> list[str]:
@@ -486,70 +540,157 @@ def _doi_document_errors(key: str, entry: dict, row, root: Path) -> list[str]:
     try:
         doi = doi_from_url(canonical_link_url(row.link_cell, row.venue))
         if (
-            not doi or not isinstance(entry.get("doi"), str)
-            or entry["doi"].casefold() != doi.casefold() or entry.get("title") != row.title
-            or isinstance(entry.get("num"), bool) or not isinstance(entry.get("num"), int)
+            not doi
+            or not isinstance(entry.get("doi"), str)
+            or entry["doi"].casefold() != doi.casefold()
+            or entry.get("title") != row.title
+            or isinstance(entry.get("num"), bool)
+            or not isinstance(entry.get("num"), int)
         ):
-            raise ValueError("doi_document_verified must match the exact bibliography DOI and title")
+            raise ValueError(
+                "doi_document_verified must match the exact bibliography DOI and title"
+            )
         if entry.get("source_authority") != "deposited_pdf_title_page":
-            raise ValueError("DOI document authors require an explicit deposited-PDF authority")
+            raise ValueError(
+                "DOI document authors require an explicit deposited-PDF authority"
+            )
         review = entry.get("review")
-        if not isinstance(review, dict) or any(not isinstance(review.get(field), str) or not review[field].strip() for field in ("reviewed_by", "reason")):
-            raise ValueError("DOI document authors require an attributed review and reason")
+        if not isinstance(review, dict) or any(
+            not isinstance(review.get(field), str) or not review[field].strip()
+            for field in ("reviewed_by", "reason")
+        ):
+            raise ValueError(
+                "DOI document authors require an attributed review and reason"
+            )
         _author_review_time(review.get("reviewed_at"))
         evidence = entry.get("evidence")
-        if not isinstance(evidence, str) or not evidence.strip() or len(evidence) > 4096:
-            raise ValueError("DOI document authors require a bounded verbatim evidence quote")
+        if (
+            not isinstance(evidence, str)
+            or not evidence.strip()
+            or len(evidence) > 4096
+        ):
+            raise ValueError(
+                "DOI document authors require a bounded verbatim evidence quote"
+            )
         for field in ("source_sha256", "source_pdf_sha256", "source_evidence_sha256"):
-            if not isinstance(entry.get(field), str) or not re.fullmatch(r"[0-9a-f]{64}", entry[field]):
+            if not isinstance(entry.get(field), str) or not re.fullmatch(
+                r"[0-9a-f]{64}", entry[field]
+            ):
                 raise ValueError(f"DOI document authors require an exact {field}")
-        raw = _author_evidence_bytes(root, entry.get("source"), row.folder, 32 * 1024 * 1024)
+        raw = _author_evidence_bytes(
+            root, entry.get("source"), row.folder, 32 * 1024 * 1024
+        )
         if hashlib.sha256(raw).hexdigest() != entry["source_sha256"]:
-            raise ValueError("document extraction SHA-256 differs from its reviewed source")
+            raise ValueError(
+                "document extraction SHA-256 differs from its reviewed source"
+            )
         if _norm_evidence(evidence) not in _norm_evidence(raw.decode("utf-8")):
-            raise ValueError("document author evidence quote not found in the bound extraction")
+            raise ValueError(
+                "document author evidence quote not found in the bound extraction"
+            )
         expected_receipt = f"papers/{row.folder}/source_evidence.json"
         if entry.get("source_evidence") != expected_receipt:
-            raise ValueError("DOI author registry receipt must be the work's source_evidence.json")
-        receipt_bytes = _author_evidence_bytes(root, expected_receipt, row.folder, 128 * 1024)
+            raise ValueError(
+                "DOI author registry receipt must be the work's source_evidence.json"
+            )
+        receipt_bytes = _author_evidence_bytes(
+            root, expected_receipt, row.folder, 128 * 1024
+        )
         if hashlib.sha256(receipt_bytes).hexdigest() != entry["source_evidence_sha256"]:
-            raise ValueError("source evidence SHA-256 differs from the frozen registry receipt")
+            raise ValueError(
+                "source evidence SHA-256 differs from the frozen registry receipt"
+            )
         receipt = json.loads(receipt_bytes)
         if not isinstance(receipt, dict):
             raise ValueError("DOI author source evidence must be an object")
-        registry, document = receipt.get("registry_observation"), receipt.get("document_observation")
+        registry, document = (
+            receipt.get("registry_observation"),
+            receipt.get("document_observation"),
+        )
         pdf, extraction = receipt.get("source_pdf"), receipt.get("extraction")
-        if not all(isinstance(value, dict) for value in (registry, document, pdf, extraction)):
-            raise ValueError("DOI author receipt lacks registry, document or PDF/extraction observations")
+        if not all(
+            isinstance(value, dict) for value in (registry, document, pdf, extraction)
+        ):
+            raise ValueError(
+                "DOI author receipt lacks registry, document or PDF/extraction observations"
+            )
         record_id = entry.get("source_record_id")
-        if not isinstance(record_id, str) or not record_id.strip() or registry.get("record_id") != record_id or pdf.get("record_id") != record_id:
-            raise ValueError("DOI author version record does not match registry/PDF observations")
-        registry_dois = {value.casefold() for value in (registry.get("doi"), registry.get("conceptdoi")) if isinstance(value, str) and value}
+        if (
+            not isinstance(record_id, str)
+            or not record_id.strip()
+            or registry.get("record_id") != record_id
+            or pdf.get("record_id") != record_id
+        ):
+            raise ValueError(
+                "DOI author version record does not match registry/PDF observations"
+            )
+        registry_dois = {
+            value.casefold()
+            for value in (registry.get("doi"), registry.get("conceptdoi"))
+            if isinstance(value, str) and value
+        }
         if doi.casefold() not in registry_dois:
-            raise ValueError("bibliography DOI is absent from the frozen registry observation")
+            raise ValueError(
+                "bibliography DOI is absent from the frozen registry observation"
+            )
         version_doi = registry.get("doi", "")
-        if isinstance(version_doi, str) and version_doi.casefold().startswith("10.5281/zenodo.") and version_doi.casefold() != f"10.5281/zenodo.{record_id}":
+        if (
+            isinstance(version_doi, str)
+            and version_doi.casefold().startswith("10.5281/zenodo.")
+            and version_doi.casefold() != f"10.5281/zenodo.{record_id}"
+        ):
             raise ValueError("frozen Zenodo version DOI differs from its record ID")
         creators = registry.get("creators")
-        if not isinstance(creators, list) or not creators or any(not isinstance(creator, dict) or not isinstance(creator.get("name"), str) or not creator["name"].strip() for creator in creators):
+        if (
+            not isinstance(creators, list)
+            or not creators
+            or any(
+                not isinstance(creator, dict)
+                or not isinstance(creator.get("name"), str)
+                or not creator["name"].strip()
+                for creator in creators
+            )
+        ):
             raise ValueError("frozen registry receipt requires its raw creators")
-        source_in_folder = PurePosixPath(entry["source"]).relative_to(PurePosixPath("papers") / row.folder).as_posix()
+        source_in_folder = (
+            PurePosixPath(entry["source"])
+            .relative_to(PurePosixPath("papers") / row.folder)
+            .as_posix()
+        )
         if (
             extraction.get("file") != source_in_folder
             or extraction.get("sha256") != entry["source_sha256"]
             or extraction.get("source_pdf_sha256") != entry["source_pdf_sha256"]
             or pdf.get("sha256") != entry["source_pdf_sha256"]
         ):
-            raise ValueError("document/PDF hashes do not match the frozen extraction receipt")
-        if entry.get("registry_baseline") != registry or entry.get("document_baseline") != document:
-            raise ValueError("raw registry/document baselines differ from their frozen receipt")
+            raise ValueError(
+                "document/PDF hashes do not match the frozen extraction receipt"
+            )
+        if (
+            entry.get("registry_baseline") != registry
+            or entry.get("document_baseline") != document
+        ):
+            raise ValueError(
+                "raw registry/document baselines differ from their frozen receipt"
+            )
         selected = entry.get("authors")
-        if not isinstance(selected, list) or not selected or any(not isinstance(author, dict) for author in selected):
+        if (
+            not isinstance(selected, list)
+            or not selected
+            or any(not isinstance(author, dict) for author in selected)
+        ):
             raise ValueError("DOI document authors require an explicit author list")
         names = [format_author(author) for author in selected]
         byline = document.get("byline")
-        if not isinstance(byline, list) or not byline or any(not isinstance(name, str) or not name.strip() for name in byline) or names != byline:
-            raise ValueError("selected authors differ from the reviewed document byline/order")
+        if (
+            not isinstance(byline, list)
+            or not byline
+            or any(not isinstance(name, str) or not name.strip() for name in byline)
+            or names != byline
+        ):
+            raise ValueError(
+                "selected authors differ from the reviewed document byline/order"
+            )
         refresh = entry.get("registry_refresh")
         if refresh is not None:
             if not isinstance(refresh, dict):
@@ -557,9 +698,13 @@ def _doi_document_errors(key: str, entry: dict, row, root: Path) -> list[str]:
             _author_review_time(refresh.get("checked_at"))
             state = _registry_refresh_state(entry, refresh.get("observation"))
             if refresh.get("status") != state:
-                raise ValueError("registry refresh status differs from its observed byline")
+                raise ValueError(
+                    "registry refresh status differs from its observed byline"
+                )
             if state != "matches_frozen_byline":
-                raise ValueError(f"{state}: document byline retained; registry observation requires review")
+                raise ValueError(
+                    f"{state}: document byline retained; registry observation requires review"
+                )
     except (OSError, ValueError, TypeError, KeyError, AttributeError) as exc:
         return [f"{key}: {redact_local_paths(str(exc))}"]
     return []
@@ -572,6 +717,59 @@ def document_evidence_errors(payload: dict) -> list[str]:
     human review that establishes whether the quote supports the author list.
     """
     errors = []
+    literal_entries = [
+        (key, e) for key, e in payload["works"].items() if "literal_credit_review" in e
+    ]
+    if literal_entries:
+        from docxology_tools.author_entities import (
+            validate_literal_credit_review,
+            reviewed_literal_authors,
+        )
+
+        try:
+            identifiers = load_registry(
+                REPO_ROOT / "data/work-identifiers.json", repo_root=REPO_ROOT
+            )
+            rows = {
+                citation_key(row, registry=identifiers): row
+                for row in iter_bibliography_rows(BIBLIOGRAPHY)
+            }
+            for key, entry in literal_entries:
+                validate_literal_credit_review(REPO_ROOT, key, entry)
+                row = rows.get(key)
+                if row is None:
+                    raise ValueError(
+                        f"{key}: literal-credit work missing from bibliography"
+                    )
+                reviewed_literal_authors(
+                    {
+                        "citation_key": key,
+                        "num": row.num,
+                        "title": row.title,
+                        "doi": doi_from_url(
+                            canonical_link_url(row.link_cell, row.venue)
+                        ),
+                        "authors": list(row.authors),
+                        "docs_path": "papers/" + row.folder,
+                    },
+                    {key: entry},
+                )
+                if "registry_refresh" in entry:
+                    refresh = entry["registry_refresh"]
+                    if not isinstance(refresh, dict):
+                        raise ValueError("literal-credit registry refresh is malformed")
+                    _author_review_time(refresh.get("checked_at"))
+                    state = _registry_refresh_state(entry, refresh.get("observation"))
+                    if refresh.get("status") != state:
+                        raise ValueError(
+                            "literal-credit refresh status differs from its retained observation"
+                        )
+                    if state != "matches_frozen_byline":
+                        errors.append(
+                            f"{key}: literal-credit registry refresh requires review"
+                        )
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            errors.append(f"literal-credit evidence: {exc}")
     website_entries = [
         (key, entry)
         for key, entry in payload["works"].items()
@@ -640,7 +838,9 @@ def document_evidence_errors(payload: dict) -> list[str]:
         if entry.get("status") == "doi_document_verified":
             errors.extend(_doi_document_errors(key, entry, row, root))
             continue
-        if entry.get("doi") or doi_from_url(canonical_link_url(row.link_cell, row.venue)):
+        if entry.get("doi") or doi_from_url(
+            canonical_link_url(row.link_cell, row.venue)
+        ):
             errors.append(f"{key}: document_verified is only for works without a DOI")
             continue
         folder = root / "papers" / row.folder
@@ -686,13 +886,23 @@ def audit(payload: dict) -> int:
         print(f"document evidence: {error}")
     for key, entry in payload["works"].items():
         if entry.get("status") == "doi_document_verified":
-            print(f"  {key}: reviewed deposited-PDF byline; frozen registry receipt is not a fresh registry attestation")
-            if isinstance(entry.get("document_baseline"), dict) and isinstance(entry.get("registry_baseline"), dict):
-                if entry["document_baseline"].get("byline") != _frozen_registry_byline(entry):
-                    print("    reviewed document/registry author-order or name conflict retained")
+            print(
+                f"  {key}: reviewed deposited-PDF byline; frozen registry receipt is not a fresh registry attestation"
+            )
+            if isinstance(entry.get("document_baseline"), dict) and isinstance(
+                entry.get("registry_baseline"), dict
+            ):
+                if entry["document_baseline"].get("byline") != _frozen_registry_byline(
+                    entry
+                ):
+                    print(
+                        "    reviewed document/registry author-order or name conflict retained"
+                    )
             if entry.get("registry_refresh"):
                 refresh = entry["registry_refresh"]
-                print(f"    registry refresh: {refresh.get('status', 'malformed') if isinstance(refresh, dict) else 'malformed'}")
+                print(
+                    f"    registry refresh: {refresh.get('status', 'malformed') if isinstance(refresh, dict) else 'malformed'}"
+                )
     mismatches = [
         k for k, e in payload["works"].items() if e["status"] == "title_mismatch"
     ]
@@ -744,25 +954,57 @@ def main() -> int:
         )
         return 0
 
-    resolved: dict[str, dict] = {}
-    with_doi = [w for w in works if (w.get("doi") or "").strip()]
-    for index, work in enumerate(with_doi, 1):
-        doi = work["doi"].strip()
-        record = {"num": work["num"], "doi": doi, "title": work["title"]}
-        record.update(resolve(doi, work["title"]))
-        resolved[work["citation_key"]] = record
-        print(f"[{index:3}/{len(with_doi)}] {record['status']:20} {doi}")
-        time.sleep(REQUEST_PAUSE_SECONDS)
-
     previous = (
         json.loads(OUTPUT.read_text(encoding="utf-8"))["works"]
         if OUTPUT.is_file()
         else {}
     )
+    resolved: dict[str, dict] = {}
+    with_doi = [w for w in works if (w.get("doi") or "").strip()]
+    for index, work in enumerate(with_doi, 1):
+        doi = work["doi"].strip()
+        record = {"num": work["num"], "doi": doi, "title": work["title"]}
+        if "literal_credit_review" in previous.get(work["citation_key"], {}):
+            record.update(resolve(doi, work["title"], preserve_creator_labels=True))
+        else:
+            record.update(resolve(doi, work["title"]))
+        resolved[work["citation_key"]] = record
+        print(f"[{index:3}/{len(with_doi)}] {record['status']:20} {doi}")
+        time.sleep(REQUEST_PAUSE_SECONDS)
+
     for work in with_doi:
         key = work["citation_key"]
         kept = previous.get(key)
-        if not kept or kept.get("status") != "doi_document_verified":
+        if not kept:
+            continue
+        if "literal_credit_review" in kept:
+            from docxology_tools.author_entities import (
+                validate_literal_credit_review,
+                reviewed_literal_authors,
+            )
+
+            try:
+                validate_literal_credit_review(REPO_ROOT, key, kept)
+                reviewed_literal_authors(work, {key: kept})
+            except (OSError, ValueError, KeyError, TypeError) as exc:
+                print(
+                    f"Refusing registry refresh: invalid saved literal-credit authority: {exc}",
+                    file=sys.stderr,
+                )
+                return 1
+            candidate = dict(kept)
+            candidate["registry_refresh"] = {
+                "checked_at": datetime.now(timezone.utc)
+                .replace(microsecond=0)
+                .isoformat()
+                .replace("+00:00", "Z"),
+                "status": _registry_refresh_state(candidate, resolved[key]),
+                "comparison_scope": "Resolved registry author names/order only; frozen literal-credit review and source receipt are unchanged.",
+                "observation": resolved[key],
+            }
+            resolved[key] = candidate
+            continue
+        if kept.get("status") != "doi_document_verified":
             continue
         candidate = dict(kept)
         candidate.pop("registry_refresh", None)
@@ -770,11 +1012,17 @@ def main() -> int:
         if binding_errors:
             for error in binding_errors:
                 print(f"document evidence: {error}", file=sys.stderr)
-            print("Refusing registry refresh: saved document authority is invalid; previous author data preserved", file=sys.stderr)
+            print(
+                "Refusing registry refresh: saved document authority is invalid; previous author data preserved",
+                file=sys.stderr,
+            )
             return 1
         observation = resolved[key]
         candidate["registry_refresh"] = {
-            "checked_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+            "checked_at": datetime.now(timezone.utc)
+            .replace(microsecond=0)
+            .isoformat()
+            .replace("+00:00", "Z"),
             "status": _registry_refresh_state(candidate, observation),
             "comparison_scope": "Resolved author names/order only; frozen document and raw registry receipt remain unchanged.",
             "observation": observation,

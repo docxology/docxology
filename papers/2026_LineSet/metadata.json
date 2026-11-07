@@ -1,11 +1,11 @@
 {
   "title": "The Line Set: Holding Instruments Apart",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "doi": "10.5281/zenodo.21754243",
   "doi_url": "https://doi.org/10.5281/zenodo.21754243",
-  "zenodo_record": "https://zenodo.org/records/21754243",
-  "record_id": "21754244",
-  "publication_date": "2026-08-02",
+  "zenodo_record": "https://zenodo.org/records/22833507",
+  "record_id": "22833507",
+  "publication_date": "2026-09-18",
   "resource_type": {
     "title": "Working paper",
     "type": "publication",
@@ -18,7 +18,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "A thin reader that declares what a set of small evaluative instruments is, reads whichever sibling packages are installed, and checks one narrow property: that no two of them have given the same spelling to different things. It adds no instrument of its own and computes no aggregate; a legible reading says only that the declared vocabularies did not overlap. Subtitle: A Declaration, a Reader, and a Non-Overlap Contract for a Growing Set of Small Instruments Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+  "description": "The selected deposit is a 248-page collected volume whose cover names nine works; the canonical registry citation remains The Line Set: Holding Instruments Apart. Its opening Line Set work describes eight instruments and a reader that checks declared vocabulary collisions through resolve, bind, collide, declare and status stages. SET_LEGIBLE concerns non-overlapping declared names under exemptions, not conceptual independence, correctness, completeness or behavioral efficacy. The other collected works retain their own scopes; this catalog refresh does not reclassify the volume as nine new bibliography entries.",
   "keywords": [
     "modularity",
     "information hiding",
@@ -32,66 +32,49 @@
   "files": [
     {
       "name": "line_set_combined.pdf",
-      "size_bytes": 22672214,
-      "checksum": "md5:2368ccd965706d43be340c5e03d6f3f2",
-      "download_url": "https://zenodo.org/api/records/21754244/files/line_set_combined.pdf/content"
+      "size_bytes": 25165563,
+      "checksum": "md5:51440aad9385052f8f250b616c197a2a",
+      "download_url": "https://zenodo.org/api/records/22833507/files/line_set_combined.pdf/content"
     }
   ],
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-08-02T15:11:27Z",
+  "checked_at": "2026-11-06T18:27:15.602557+00:00",
   "methods": [
     {
-      "name": "Declarative set registry: four LineEntry records plus one shared token",
-      "description": "Declares the set (Red, Black, Golden, White Line) as data, each entry naming its question, job, and what it must not become.",
-      "evidence": "The package is pure standard library and depends on nothing. Its declaration is four LineEntry records and one shared token."
+      "name": "Declared instrument-vocabulary collision reader",
+      "description": "Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+      "evidence": "checks one narrow property"
     },
     {
-      "name": "Five-stage reader with fixed-precedence set statuses",
-      "description": "Reads installed sibling packages through resolve, bind, collide, declare and status stages, returning one of four SET_-prefixed readings.",
-      "evidence": "Its reader runs five recorded stages — resolve, bind, collide, declare, status — and returns one of four readings, in fixed precedence:"
-    },
-    {
-      "name": "Enum-member name collision check across sibling package roots",
-      "description": "Collects enum member names each line publishes at its package root and flags any name carried by more than one line, unless declared and disambiguated.",
-      "evidence": "collects the enum member names each of them publishes at its package root, and reports whether any name is carried by more than one line."
-    },
-    {
-      "name": "Seven offline structural checks plus a self-application check",
-      "description": "Runs seven declaration-only checks and an eighth that applies the package's own collision check to a declaration including itself.",
-      "evidence": "Seven structural checks run offline over the declaration alone; an eighth, which needs the siblings importable, applies this package’s own collision check to a declaration that includes this package"
-    },
-    {
-      "name": "Executed extensibility example appending a fifth colour at runtime",
-      "description": "Appends a hypothetical green_line entry without editing the package and runs the battery and reader on the extended declaration.",
-      "evidence": "Here is a fifth colour, appended at runtime and put through the whole battery. Nothing in the package was edited to run it."
+      "name": "Five-stage reader and explicit status precedence",
+      "description": "Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+      "evidence": "resolve, bind, collide, declare, status"
     }
   ],
   "key_findings": [
-    "On the review date the four packages yielded 81 line-and-name pairs spanning 80 distinct names, and the only shared name was the already-declared, disambiguated one.",
-    "The single shared name was OUTSIDE_SCOPE, carried by red_line and black_line.",
-    "Appending a fifth line whose package is not installed yielded SET_PARTIAL, which the author argues is the correct answer rather than a shortfall.",
-    "The author stresses that disjoint vocabularies are a necessary, not sufficient, condition: the check cannot detect conceptual overlap between instruments.",
-    "The paper states the set digest is a comparison handle only, not tamper evidence or a record of who changed what."
+    "The current opening work describes eight sibling instruments and treats the Line Set as a ninth work with no instrument of its own.",
+    "Non-overlapping vocabulary does not establish conceptual non-overlap or that the instruments are correct or sufficient."
   ],
   "key_findings_evidence": [
-    "the four packages between them put 81 line-and-name pairs in front of the reader, spanning 80 distinct names, and the single name carried by two lines was the one the set had already written down and disambiguated.",
-    "It is OUTSIDE_SCOPE, carried by red_line and black_line, and it is the one collision the set had already declared and disambiguated.",
-    "The reading is SET_PARTIAL, and that is the correct answer rather than a shortfall.",
-    "Disjoint vocabularies are a necessary condition for the separation I want, not a suﬀicient one.",
-    "It does not tell you which one is right, it does not record who changed what, and it is not tamper evidence."
+    "This ninth work adds no instrument of its own",
+    "It does not establish that the instruments are conceptually non-overlapping"
   ],
   "summary_provenance": {
     "source": "full_text.md",
-    "date": "2026-10-01",
+    "date": "2026-11-06",
+    "source_pdf_sha256": "deaac4ed4bb747b4fd7c97fe67535ff28fd65764b4ae9a45e2225ab589b69f25",
+    "source_text_sha256": "de1e5f5fc75320eae3b52c951d051ceb1a296e6cf56fa4675d813a929da5e2c2",
+    "selected_record_id": "22833507",
     "work_kind": "software/methods",
-    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "full_text.md (from line_set_combined.pdf) is 'The Line Set: The Collected Volume', compiling 5 works unchanged: The Line Set (sections 1-10) plus Personal Red Lines for Development, Black Line, Golden Line, and White Line. This summary covers only The Line Set work named in the bibliography. The PDF shows DOI 10.5281/zenodo.21754244 (collected volume) while README/metadata use 10.5281/zenodo.21754243; the bibliography entry may correspond to the compiled volume rather than the standalone paper.",
-    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+    "method": "AI-assisted review of the selected deposited abstract, quoted passages and stated limitations. Every current method/finding quote is mechanically present in the selected extraction. This is source-text support, not new computational, mathematical, scientific or human verification.",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "historical_summary": "Complete prior folder metadata and master prose are preserved in source_evidence.json beside the retained historical extraction."
   },
-  "artifact_doi": "10.5281/zenodo.21754244",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.21754244",
+  "artifact_doi": "10.5281/zenodo.22833507",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.22833507",
   "concept_doi": "10.5281/zenodo.21754243",
   "doi_role_verification": {
     "date": "2026-10-01",
@@ -117,5 +100,37 @@
     "source_report": "reports/publication_intake_2026-10-23.json",
     "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
     "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
-  }
+  },
+  "pages": 248,
+  "pdf_sha256": "deaac4ed4bb747b4fd7c97fe67535ff28fd65764b4ae9a45e2225ab589b69f25",
+  "abstract": "The selected deposit is a 248-page collected volume whose cover names nine works; the canonical registry citation remains The Line Set: Holding Instruments Apart. Its opening Line Set work describes eight instruments and a reader that checks declared vocabulary collisions through resolve, bind, collide, declare and status stages. SET_LEGIBLE concerns non-overlapping declared names under exemptions, not conceptual independence, correctness, completeness or behavioral efficacy. The other collected works retain their own scopes; this catalog refresh does not reclassify the volume as nine new bibliography entries.",
+  "abstract_provenance": {
+    "source": "full_text.md",
+    "source_text_sha256": "de1e5f5fc75320eae3b52c951d051ceb1a296e6cf56fa4675d813a929da5e2c2",
+    "source_pdf_sha256": "deaac4ed4bb747b4fd7c97fe67535ff28fd65764b4ae9a45e2225ab589b69f25",
+    "date": "2026-11-06",
+    "kind": "curated_summary",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "scope": "Cautious source summary of the selected abstract and stated limitations; no independent reproduction or complete author-abstract claim."
+  },
+  "remote_primary_pdf": {
+    "name": "line_set_combined.pdf",
+    "url": "https://zenodo.org/api/records/22833507/files/line_set_combined.pdf/content",
+    "bytes": 25165563,
+    "sha256": "deaac4ed4bb747b4fd7c97fe67535ff28fd65764b4ae9a45e2225ab589b69f25",
+    "record_id": "22833507",
+    "version": "0.2.0"
+  },
+  "license": null,
+  "rights_note": "No license field was supplied by the selected frozen registry record. Paper rights are recorded as unknown; a repository/software license is not transferred to the paper.",
+  "source_release_review": {
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "selected_pdf_record": "22833507",
+    "selected_pdf_version": "0.2.0",
+    "retained_release_role": "Existing GitHub release fields are retained source references; generic repository/title or concept-DOI links do not establish the selected PDF edition.",
+    "scientific_or_runtime_reproduction": false,
+    "historical_text_file": "full_text_before_2026-11-06.md"
+  },
+  "document_title": "The Line Set: The Collected Volume"
 }

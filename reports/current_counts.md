@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-11-05T21:08:19+00:00`
+Generated: `2026-11-07T01:38:48+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -24,24 +24,24 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - works_export: `data/works.json`
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
-- public_source_snapshot: `reports/public_source_snapshot_2026-11-05.json`
-- paired_publications: `reports/paired_publications_2026-11-05.json`
+- public_source_snapshot: `reports/public_source_snapshot_2026-11-06.json`
+- paired_publications: `reports/paired_publications_2026-11-06.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
 ## Counts
 
-- Bibliography works: `231`
+- Bibliography works: `233`
 - Paper-folder docs: `214`
-- Full-text extractions: `208`
+- Full-text extractions: `211`
 - Papers with image galleries: `145`
 - Total extracted images: `8959`
-- Bibliography docs links: `214`
+- Bibliography docs links: `216`
 
 ### Types
 
-- Books: `5`
+- Books: `6`
 - Courses: `3`
-- Papers: `210`
+- Papers: `211`
 - Playbooks: `2`
 - Presentations: `8`
 - Report: `1`
@@ -53,9 +53,9 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - Active Inference: `48`
 - Cognitive Security: `37`
 - Art & Synergetics: `17`
-- Computational: `70`
+- Computational: `71`
 - AII Ecosystem: `7`
-- Presentations & Media: `14`
+- Presentations & Media: `15`
 - Genetics & Biomedical: `13`
 
 ### Software
@@ -66,9 +66,9 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Generated Exports
 
-- data_works_json: `231`
+- data_works_json: `233`
 - data_software_json: `210`
-- data_publications_ld_main_entity: `231`
+- data_publications_ld_main_entity: `233`
 - data_software_ld_main_entity: `210`
 
 ### GitHub Inventory
@@ -91,25 +91,25 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Public Source Snapshot
 
-- GitHub user docxology: `273`
-- GitHub user ActiveInferenceInstitute: `46`
+- GitHub user docxology: `275`
+- GitHub user ActiveInferenceInstitute: `47`
 - ORCID work groups: `20`
 - PubMed exact author records: `8`
 - Europe PMC exact author records: `10`
 - Crossref ORCID DOI records: `15`
-- Zenodo exact-name creator records: `83`
-- Zenodo ORCID-linked records: `172`
+- Zenodo exact-name creator records: `85`
+- Zenodo ORCID-linked records: `174`
 
 ### Paired Publications
 
-- github_releases: `339`
-- zenodo_records: `176`
-- pairs: `604`
-- strong_pairs: `73`
+- github_releases: `338`
+- zenodo_records: `179`
+- pairs: `613`
+- strong_pairs: `75`
 - software_catalogued: `1`
-- already_reviewed: `603`
-- needs_review: `0`
-- create_new: `0`
+- already_reviewed: `525`
+- needs_review: `85`
+- create_new: `2`
 - update_existing: `0`
 
 ### Paired Publication Decisions

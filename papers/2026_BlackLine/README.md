@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> A positive practice instrument for concise, inspectable, revisable work. It reads self-declared tags and evidence labels against a versioned practice registry and returns one of four statuses over declaration coverage. It measures whether the evidence a practice asks for was declared — never whether the work is true, good, or permitted; an ALIGNED reading authorizes nothing. Subtitle: A Positive Operating Discipline for Concise, Rigorous Research and Engineering Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.
+> Black Line describes an operating discipline implemented through eleven practices in six families and a staged evaluator of declared evidence labels. The selected manuscript states that ALIGNED concerns fresh declarations, not source truth, safety, accreditation or permission. It includes structural checks and adversarial self-declaration examples while explicitly reporting no user-study or outcome comparison. This catalog refresh checks source quotations without rerunning those software experiments.
 
 ## Keywords
 
@@ -37,9 +37,13 @@ _Methods and findings are summarized from the full text; each item is backed by 
 ## Artifacts
 
 - DOI: [10.5281/zenodo.21754235](https://doi.org/10.5281/zenodo.21754235)
-- Zenodo record: [https://zenodo.org/records/21754235](https://zenodo.org/records/21754235)
-- PDF: [black_line_combined.pdf](black_line_combined.pdf)
-- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/21754235)
+- Artifact DOI: [10.5281/zenodo.22833503](https://doi.org/10.5281/zenodo.22833503)
+- Zenodo record: [https://zenodo.org/records/22833503](https://zenodo.org/records/22833503)
+- Historical local PDF: [black_line_combined.pdf](black_line_combined.pdf)
+- Current PDF (Zenodo, version 0.4.1): [black_line_combined.pdf](https://zenodo.org/api/records/22833503/files/black_line_combined.pdf/content)
+- Local PDFs remain preserved historical archives.
+- Extracted text retains its own source provenance; a matching filename does not establish edition identity.
+- PDF SHA-256: e0c5bf331a5b77a1d1436cbe288ea5e2a2183de81627203dc20ac96e04071c04
 
 ## Citation
 

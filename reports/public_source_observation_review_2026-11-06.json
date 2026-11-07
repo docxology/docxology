@@ -1,0 +1,565 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-11-06T20:02:57.872969+00:00",
+  "evidence_kind": "Exact before/after public-source observation curation; not runtime, human or scientific acceptance",
+  "previous_snapshot": "reports/public_source_snapshot_2026-11-05.json",
+  "previous_snapshot_sha256": "b5d115240d903723afa6c790c59c2dfba137b8b6d400c6483b95ad0915d96af2",
+  "current_snapshot": "reports/public_source_snapshot_2026-11-06.json",
+  "current_snapshot_sha256": "f5dfe3343933b06204876a5047829760d3d39bbe8a2839e0fd6074b5736c0710",
+  "previous_ledger_sha256": "b4d327852a4f22925a74d3e212093b83be4edb4717bf732e8f347f79bef741c7",
+  "prior_ledger_url": "https://github.com/docxology/docxology/blob/ee837003a2328d28d8234ad5afdcfcd38419e90c/data/public-source-observation-decisions.json",
+  "reviewed_observation_count": 12,
+  "observations": [
+    {
+      "decision": {
+        "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveBlockference",
+        "label": "GitHub repo ActiveInferenceInstitute/ActiveBlockference",
+        "previous_sha256": "ae4157fff9037fba7f3d1b8b2c5da137da8c20c4dc6d4a9e3aaebc8d7f45ea61",
+        "current_sha256": "7aa977b34c8232c7209abd302574cbc8c37174e390c470d0e1b9d53101926f03",
+        "decision": "acknowledged",
+        "decided_by": "Codex public-source curation (owner-authorized)",
+        "decided_at": "2026-11-06T20:02:57.872969+00:00",
+        "rationale": "The exact API facts differ only in updated_at. Full repository identity, language, stars and URL are unchanged and match the complete current inventory. Four retained endpoint aliases still resolve to their established same-ID repositories. This acknowledges source activity only; it establishes no new software version, work, biographical claim or scientific result.",
+        "curated_targets": [
+          "data/github-repositories.json",
+          "reports/publication_software_refresh_2026-11-06.md"
+        ]
+      },
+      "previous": {
+        "full_name": "ActiveInferenceInstitute/ActiveBlockference",
+        "stargazers_count": 32,
+        "language": "Python",
+        "updated_at": "2026-11-05T01:15:42Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/ActiveBlockference"
+      },
+      "current": {
+        "full_name": "ActiveInferenceInstitute/ActiveBlockference",
+        "stargazers_count": 32,
+        "language": "Python",
+        "updated_at": "2026-11-05T17:43:01Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/ActiveBlockference"
+      }
+    },
+    {
+      "decision": {
+        "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferAnts",
+        "label": "GitHub repo ActiveInferenceInstitute/ActiveInferAnts",
+        "previous_sha256": "894ff25d43a422eec24decd4ec66d1a0c16fb51438ea95f317e9467173867d8b",
+        "current_sha256": "8714954f55b466a8c81221d8cb51b7d6ce8d86ae6a179edb8f44393a454a2689",
+        "decision": "acknowledged",
+        "decided_by": "Codex public-source curation (owner-authorized)",
+        "decided_at": "2026-11-06T20:02:57.872969+00:00",
+        "rationale": "The exact API facts differ only in updated_at. Full repository identity, language, stars and URL are unchanged and match the complete current inventory. Four retained endpoint aliases still resolve to their established same-ID repositories. This acknowledges source activity only; it establishes no new software version, work, biographical claim or scientific result.",
+        "curated_targets": [
+          "data/github-repositories.json",
+          "reports/publication_software_refresh_2026-11-06.md"
+        ]
+      },
+      "previous": {
+        "full_name": "ActiveInferenceInstitute/Active_InferAnts",
+        "stargazers_count": 31,
+        "language": "Python",
+        "updated_at": "2026-11-04T22:57:54Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts"
+      },
+      "current": {
+        "full_name": "ActiveInferenceInstitute/Active_InferAnts",
+        "stargazers_count": 31,
+        "language": "Python",
+        "updated_at": "2026-11-05T17:30:15Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts"
+      }
+    },
+    {
+      "decision": {
+        "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal",
+        "label": "GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal",
+        "previous_sha256": "dfa1ede7a2d2f89415118abbbd2d2d75b3a46dcf6fe49323c8ea07624ad6e8e8",
+        "current_sha256": "432e6b36496134c1968e8c138a28f7abf7ca447d852946800a39446f6b4068db",
+        "decision": "acknowledged",
+        "decided_by": "Codex public-source curation (owner-authorized)",
+        "decided_at": "2026-11-06T20:02:57.872969+00:00",
+        "rationale": "The exact API facts differ only in updated_at. Full repository identity, language, stars and URL are unchanged and match the complete current inventory. Four retained endpoint aliases still resolve to their established same-ID repositories. This acknowledges source activity only; it establishes no new software version, work, biographical claim or scientific result.",
+        "curated_targets": [
+          "data/github-repositories.json",
+          "reports/publication_software_refresh_2026-11-06.md"
+        ]
+      },
+      "previous": {
+        "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal",
+        "stargazers_count": 45,
+        "language": "HTML",
+        "updated_at": "2026-11-03T18:44:26Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal"
+      },
+      "current": {
+        "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal",
+        "stargazers_count": 45,
+        "language": "HTML",
+        "updated_at": "2026-11-05T23:06:56Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal"
+      }
+    },
+    {
+      "decision": {
+        "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/CEREBRUM",
+        "label": "GitHub repo ActiveInferenceInstitute/CEREBRUM",
+        "previous_sha256": "8ed33a8c4c41579ae860c207f23c59af231c48a02c6ce6c4258b76600cfaa770",
+        "current_sha256": "615795daa15792ec4ab95e41f96841f9e34ceebe5022c105cc92713c0112c303",
+        "decision": "acknowledged",
+        "decided_by": "Codex public-source curation (owner-authorized)",
+        "decided_at": "2026-11-06T20:02:57.872969+00:00",
+        "rationale": "The exact API facts differ only in updated_at. Full repository identity, language, stars and URL are unchanged and match the complete current inventory. Four retained endpoint aliases still resolve to their established same-ID repositories. This acknowledges source activity only; it establishes no new software version, work, biographical claim or scientific result.",
+        "curated_targets": [
+          "data/github-repositories.json",
+          "reports/publication_software_refresh_2026-11-06.md"
+        ]
+      },
+      "previous": {
+        "full_name": "ActiveInferenceInstitute/CEREBRUM",
+        "stargazers_count": 14,
+        "language": "Python",
+        "updated_at": "2026-11-04T23:38:28Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/CEREBRUM"
+      },
+      "current": {
+        "full_name": "ActiveInferenceInstitute/CEREBRUM",
+        "stargazers_count": 14,
+        "language": "Python",
+        "updated_at": "2026-11-05T02:10:24Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/CEREBRUM"
+      }
+    },
+    {
+      "decision": {
+        "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+        "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+        "previous_sha256": "c35a82ceed878e4d3466c31b55b123f1e4f77ee9c94f2cecf1643ae51f634cb1",
+        "current_sha256": "56535e4001cfa7a68627cc55456c76763b773f1532d5b040903127b73adce3d6",
+        "decision": "acknowledged",
+        "decided_by": "Codex public-source curation (owner-authorized)",
+        "decided_at": "2026-11-06T20:02:57.872969+00:00",
+        "rationale": "The exact API facts differ only in updated_at. Full repository identity, language, stars and URL are unchanged and match the complete current inventory. Four retained endpoint aliases still resolve to their established same-ID repositories. This acknowledges source activity only; it establishes no new software version, work, biographical claim or scientific result.",
+        "curated_targets": [
+          "data/github-repositories.json",
+          "reports/publication_software_refresh_2026-11-06.md"
+        ]
+      },
+      "previous": {
+        "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+        "stargazers_count": 35,
+        "language": "Python",
+        "updated_at": "2026-11-05T00:34:03Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation"
+      },
+      "current": {
+        "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+        "stargazers_count": 35,
+        "language": "Python",
+        "updated_at": "2026-11-05T18:33:52Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation"
+      }
+    },
+    {
+      "decision": {
+        "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/Journal-Utilities",
+        "label": "GitHub repo ActiveInferenceInstitute/Journal-Utilities",
+        "previous_sha256": "5f4320df08fa3a62227dc41045388317f9e279b5a1c041ea4fa9b4642c70370a",
+        "current_sha256": "f017c527455a2840ef985492ebff022f1d49e034ab774a7e5ce64921d20cd1fa",
+        "decision": "acknowledged",
+        "decided_by": "Codex public-source curation (owner-authorized)",
+        "decided_at": "2026-11-06T20:02:57.872969+00:00",
+        "rationale": "The exact API facts differ only in updated_at. Full repository identity, language, stars and URL are unchanged and match the complete current inventory. Four retained endpoint aliases still resolve to their established same-ID repositories. This acknowledges source activity only; it establishes no new software version, work, biographical claim or scientific result.",
+        "curated_targets": [
+          "data/github-repositories.json",
+          "reports/publication_software_refresh_2026-11-06.md"
+        ]
+      },
+      "previous": {
+        "full_name": "ActiveInferenceInstitute/Journal_Utilities",
+        "stargazers_count": 10,
+        "language": "HTML",
+        "updated_at": "2026-11-04T18:22:34Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities"
+      },
+      "current": {
+        "full_name": "ActiveInferenceInstitute/Journal_Utilities",
+        "stargazers_count": 10,
+        "language": "HTML",
+        "updated_at": "2026-11-05T23:07:05Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities"
+      }
+    },
+    {
+      "decision": {
+        "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/cognitive",
+        "label": "GitHub repo ActiveInferenceInstitute/cognitive",
+        "previous_sha256": "659171b396251a155c62891a1f8fa018436660b780d973d2f05fcba875906211",
+        "current_sha256": "b70c9e959951339496cb61b6f25f30af0c8e2de745e1d0401f38c2ea45affbf2",
+        "decision": "acknowledged",
+        "decided_by": "Codex public-source curation (owner-authorized)",
+        "decided_at": "2026-11-06T20:02:57.872969+00:00",
+        "rationale": "The exact API facts differ only in updated_at. Full repository identity, language, stars and URL are unchanged and match the complete current inventory. Four retained endpoint aliases still resolve to their established same-ID repositories. This acknowledges source activity only; it establishes no new software version, work, biographical claim or scientific result.",
+        "curated_targets": [
+          "data/github-repositories.json",
+          "reports/publication_software_refresh_2026-11-06.md"
+        ]
+      },
+      "previous": {
+        "full_name": "ActiveInferenceInstitute/cognitive",
+        "stargazers_count": 23,
+        "language": "Python",
+        "updated_at": "2026-11-05T01:19:05Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/cognitive"
+      },
+      "current": {
+        "full_name": "ActiveInferenceInstitute/cognitive",
+        "stargazers_count": 23,
+        "language": "Python",
+        "updated_at": "2026-11-05T17:51:03Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/cognitive"
+      }
+    },
+    {
+      "decision": {
+        "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/fep_lean",
+        "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
+        "previous_sha256": "299bf3b77da36f7c0dde6964e6173e10ecf5877e4c621a5c9c1e4c3802cf9bdd",
+        "current_sha256": "ad2897ff26a575fefb6deaeed5baa411e1508b503e396ecaf007a3527c8c467f",
+        "decision": "acknowledged",
+        "decided_by": "Codex public-source curation (owner-authorized)",
+        "decided_at": "2026-11-06T20:02:57.872969+00:00",
+        "rationale": "The exact API facts differ only in updated_at. Full repository identity, language, stars and URL are unchanged and match the complete current inventory. Four retained endpoint aliases still resolve to their established same-ID repositories. This acknowledges source activity only; it establishes no new software version, work, biographical claim or scientific result.",
+        "curated_targets": [
+          "data/github-repositories.json",
+          "reports/publication_software_refresh_2026-11-06.md"
+        ]
+      },
+      "previous": {
+        "full_name": "ActiveInferenceInstitute/fep_formal",
+        "stargazers_count": 6,
+        "language": "Python",
+        "updated_at": "2026-11-04T15:42:37Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/fep_formal"
+      },
+      "current": {
+        "full_name": "ActiveInferenceInstitute/fep_formal",
+        "stargazers_count": 6,
+        "language": "Python",
+        "updated_at": "2026-11-06T00:22:56Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/fep_formal"
+      }
+    },
+    {
+      "decision": {
+        "id": "public-source-observation:GitHub user ActiveInferenceInstitute",
+        "label": "GitHub user ActiveInferenceInstitute",
+        "previous_sha256": "4e2bae10667122f05d6e86a6aec938e2991d39366cfe454f71d284caaa44ec35",
+        "current_sha256": "ed5dcb6f04e9646e956312d2735f2af053fb981d73b5ab89699da306de1e9bf1",
+        "decision": "acknowledged",
+        "decided_by": "Codex public-source curation (owner-authorized)",
+        "decided_at": "2026-11-06T20:02:57.872969+00:00",
+        "rationale": "The earlier November5 snapshot predates the complete reviewed inventory from later that day. The fresh complete inventory still has275 docxology and47 ActiveInferenceInstitute repositories with no added, missing or rebound identities against that retained inventory. The count difference is already represented by the two reviewed forks and individually approved organization/community infrastructure entry. Account type is unchanged; this does not add a new catalogue item or infer a conversion date.",
+        "curated_targets": [
+          "data/github-repositories.json",
+          "reports/github_inventory_review_2026-11-05.json",
+          "reports/publication_software_refresh_2026-11-06.md"
+        ]
+      },
+      "previous": {
+        "login": "ActiveInferenceInstitute",
+        "type": "Organization",
+        "public_repos": 46,
+        "updated_at": "2026-09-22T19:05:32Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute"
+      },
+      "current": {
+        "login": "ActiveInferenceInstitute",
+        "type": "Organization",
+        "public_repos": 47,
+        "updated_at": "2026-11-06T14:12:07Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute"
+      }
+    },
+    {
+      "decision": {
+        "id": "public-source-observation:GitHub user docxology",
+        "label": "GitHub user docxology",
+        "previous_sha256": "a0e2fc12273d90327eea1cc3f910f1486e324a0a273bd8932bbaf5ac3f11a7f9",
+        "current_sha256": "66c6092ba06f94ac139bb2f7db8d285b3ef28bcd27db13fc571b53dde9f08c13",
+        "decision": "acknowledged",
+        "decided_by": "Codex public-source curation (owner-authorized)",
+        "decided_at": "2026-11-06T20:02:57.872969+00:00",
+        "rationale": "The earlier November5 snapshot predates the complete reviewed inventory from later that day. The fresh complete inventory still has275 docxology and47 ActiveInferenceInstitute repositories with no added, missing or rebound identities against that retained inventory. The count difference is already represented by the two reviewed forks and individually approved organization/community infrastructure entry. Account type is unchanged; this does not add a new catalogue item or infer a conversion date.",
+        "curated_targets": [
+          "data/github-repositories.json",
+          "reports/github_inventory_review_2026-11-05.json",
+          "reports/publication_software_refresh_2026-11-06.md"
+        ]
+      },
+      "previous": {
+        "login": "docxology",
+        "type": "User",
+        "public_repos": 273,
+        "updated_at": "2026-11-02T18:14:20Z",
+        "html_url": "https://github.com/docxology"
+      },
+      "current": {
+        "login": "docxology",
+        "type": "User",
+        "public_repos": 275,
+        "updated_at": "2026-11-02T18:14:20Z",
+        "html_url": "https://github.com/docxology"
+      }
+    },
+    {
+      "decision": {
+        "id": "public-source-observation:Zenodo ORCID-linked records",
+        "label": "Zenodo ORCID-linked records",
+        "previous_sha256": "3546561a3ee6e214948da5c6c4c2798b1c1d96f780337f282ec9fc8ae49e95d4",
+        "current_sha256": "c1a6b2989ac313741567aa0b4c7ddacb52173d2faa66a8bd991a522eb6feed30",
+        "decision": "acknowledged",
+        "decided_by": "Codex public-source curation (owner-authorized)",
+        "decided_at": "2026-11-06T20:02:57.872969+00:00",
+        "rationale": "Both complete author queries added the same two Rikishi records: software archive23987623 and manuscript23987671. The178 unique queried records retain all prior176 normalized records unchanged. One manuscript work is identified separately from its software archive; the institutional2026 Symposium book is a separate explicit-record discovery outside these queries. Registry record totals are not bibliography work totals. No deposition after the preceding final verification is inferred.",
+        "curated_targets": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "data/paired-publication-decisions.json",
+          "reports/publication_software_refresh_2026-11-06.md"
+        ]
+      },
+      "previous": {
+        "total": 172,
+        "first_title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+        "first_doi": "10.5281/zenodo.23922458"
+      },
+      "current": {
+        "total": 174,
+        "first_title": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+        "first_doi": "10.5281/zenodo.23987671"
+      }
+    },
+    {
+      "decision": {
+        "id": "public-source-observation:Zenodo exact-name creator records",
+        "label": "Zenodo exact-name creator records",
+        "previous_sha256": "e5b40777d8920e05574f74a25da37d18ae00483d37f0b6232db747fc7b09e493",
+        "current_sha256": "2596414e6604884b775f5e275ca9cbbf4a2804f4a29c9f4ba9927aa359211457",
+        "decision": "acknowledged",
+        "decided_by": "Codex public-source curation (owner-authorized)",
+        "decided_at": "2026-11-06T20:02:57.872969+00:00",
+        "rationale": "Both complete author queries added the same two Rikishi records: software archive23987623 and manuscript23987671. The178 unique queried records retain all prior176 normalized records unchanged. One manuscript work is identified separately from its software archive; the institutional2026 Symposium book is a separate explicit-record discovery outside these queries. Registry record totals are not bibliography work totals. No deposition after the preceding final verification is inferred.",
+        "curated_targets": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "data/paired-publication-decisions.json",
+          "reports/publication_software_refresh_2026-11-06.md"
+        ]
+      },
+      "previous": {
+        "total": 83,
+        "first_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+        "first_doi": "10.5281/zenodo.23955189"
+      },
+      "current": {
+        "total": 85,
+        "first_title": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+        "first_doi": "10.5281/zenodo.23987671"
+      }
+    }
+  ],
+  "historical_decisions_preserved": [
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveBlockference",
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveBlockference",
+      "previous_sha256": "6e7f81278a46eaafc53728663e8d0ccac6985dd52d30dc2f9bc35133a1e4ad57",
+      "current_sha256": "ae4157fff9037fba7f3d1b8b2c5da137da8c20c4dc6d4a9e3aaebc8d7f45ea61",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.250935+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferAnts",
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveInferAnts",
+      "previous_sha256": "954352888f64bd3d61ac9f7d153505fae358f6076ff9f7f06031d4ad23cd550c",
+      "current_sha256": "894ff25d43a422eec24decd4ec66d1a0c16fb51438ea95f317e9467173867d8b",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251069+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal",
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal",
+      "previous_sha256": "8ed91f5883fbe082336367211fbcb53fc7518cefdd2ecdfba6f38316b77ed321",
+      "current_sha256": "dfa1ede7a2d2f89415118abbbd2d2d75b3a46dcf6fe49323c8ea07624ad6e8e8",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251072+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/CEREBRUM",
+      "label": "GitHub repo ActiveInferenceInstitute/CEREBRUM",
+      "previous_sha256": "e2b20aca402ae9174bd522a01b523d52feced3063237d0158fddcb04954d5a29",
+      "current_sha256": "8ed33a8c4c41579ae860c207f23c59af231c48a02c6ce6c4258b76600cfaa770",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251073+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "previous_sha256": "601d93edbd110e9e28a2cc7598f6e66b5b1174e912e71c11c7efe2e3b6b29337",
+      "current_sha256": "c35a82ceed878e4d3466c31b55b123f1e4f77ee9c94f2cecf1643ae51f634cb1",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251074+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/Journal-Utilities",
+      "label": "GitHub repo ActiveInferenceInstitute/Journal-Utilities",
+      "previous_sha256": "12e8505465952b911087ca382bfefcddebff7cda29e2d3fe71581933574daa92",
+      "current_sha256": "5f4320df08fa3a62227dc41045388317f9e279b5a1c041ea4fa9b4642c70370a",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251075+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/cognitive",
+      "label": "GitHub repo ActiveInferenceInstitute/cognitive",
+      "previous_sha256": "af5a37248917f673eaf9c01995a719663aa9d20476cf02a8cfb87a99e411502b",
+      "current_sha256": "659171b396251a155c62891a1f8fa018436660b780d973d2f05fcba875906211",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251076+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/fep_lean",
+      "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
+      "previous_sha256": "168d089c4634696a85ee77e0219decb668744565ba110910bb2d58a618d6bcbd",
+      "current_sha256": "299bf3b77da36f7c0dde6964e6173e10ecf5877e4c621a5c9c1e4c3802cf9bdd",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251077+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub user ActiveInferenceInstitute",
+      "label": "GitHub user ActiveInferenceInstitute",
+      "previous_sha256": "5cd80697510d0909b1d8555b986695809c8aa42cfdb61a5b164bd70d55661bd7",
+      "current_sha256": "4e2bae10667122f05d6e86a6aec938e2991d39366cfe454f71d284caaa44ec35",
+      "decision": "acknowledged",
+      "decided_by": "Codex assistant",
+      "decided_at": "2026-11-01T22:35:29Z",
+      "rationale": "Reviewed public repository count 45 to 46; the complete cached inventory contains exactly 46 records for ActiveInferenceInstitute, and the fresh API check agrees. Account identity and type are unchanged. Existing inventory-derived projections already reflect this refresh; no additional biographical interpretation is made. Review evidence and the immutable prior-ledger reference are retained in reports/public_source_observation_review_2026-11-01.json.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "data/current-counts.json",
+        "reports/current_counts.md"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub user docxology",
+      "label": "GitHub user docxology",
+      "previous_sha256": "a019f282654d2fe394d3582bb29ab1f5f3c2a79cc5fde9ade7f905acca89568f",
+      "current_sha256": "a0e2fc12273d90327eea1cc3f910f1486e324a0a273bd8932bbaf5ac3f11a7f9",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251078+00:00",
+      "rationale": "Reviewed exact GitHub API metadata against the prior snapshot and complete current public inventory. Matching software rows now use retained public languages, stars and observation months; new originals and fork identities have individual or standing-policy review. Activity timestamps and account repository totals are not publication counts or biographical claims.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/software_catalog_review_2026-11-05.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:Zenodo ORCID-linked records",
+      "label": "Zenodo ORCID-linked records",
+      "previous_sha256": "c46a3853a9a72d661431f90320c034d8a40e9c29f6c2ceaf9d58e56341d5681e",
+      "current_sha256": "3546561a3ee6e214948da5c6c4c2798b1c1d96f780337f282ec9fc8ae49e95d4",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251080+00:00",
+      "rationale": "Reviewed the changed record/query facts against the warning-free frozen intake and exact pair decisions. Concept/version/source-archive roles stay separate; two distinct works and the current Blake edition are curated. Registry record totals include software and versions and are not equated with bibliography work counts.",
+      "curated_targets": [
+        "pages/BIBLIOGRAPHY.md",
+        "pages/SOFTWARE.md",
+        "reports/publication_intake_2026-11-05.json",
+        "data/paired-publication-decisions.json"
+      ]
+    },
+    {
+      "id": "public-source-observation:Zenodo exact-name creator records",
+      "label": "Zenodo exact-name creator records",
+      "previous_sha256": "8d3987344b3863bede60a5f39fcf55a27df3c450161676450989ca60fedfc721",
+      "current_sha256": "e5b40777d8920e05574f74a25da37d18ae00483d37f0b6232db747fc7b09e493",
+      "decision": "acknowledged",
+      "decided_by": "Codex public-source review",
+      "decided_at": "2026-11-05T02:42:03.251081+00:00",
+      "rationale": "Reviewed the changed record/query facts against the warning-free frozen intake and exact pair decisions. Concept/version/source-archive roles stay separate; two distinct works and the current Blake edition are curated. Registry record totals include software and versions and are not equated with bibliography work counts.",
+      "curated_targets": [
+        "pages/BIBLIOGRAPHY.md",
+        "pages/SOFTWARE.md",
+        "reports/publication_intake_2026-11-05.json",
+        "data/paired-publication-decisions.json"
+      ]
+    }
+  ],
+  "unavailable_sources": [
+    "ResearchGate",
+    "SciProfiles",
+    "PhilPeople",
+    "DBLP",
+    "Semantic Scholar"
+  ],
+  "unavailable_policy": "Retain actual error/incomplete response observations. No bypass, identity inference, content claim or successful profile verification is made.",
+  "source_scripts_executed": false
+}

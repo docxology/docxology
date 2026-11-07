@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-05T21:08:26Z",
+  "generated_at": "2026-11-07T01:43:27Z",
   "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence",
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 231 works.",
+      "claim": "The curated bibliography contains 233 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-11-05T21:08:19+00:00",
+      "checked_at": "2026-11-07T01:38:48+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -25,7 +25,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-11-05T21:08:19+00:00",
+      "checked_at": "2026-11-07T01:38:48+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -33,13 +33,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 273 public repositories.",
+      "claim": "The docxology GitHub profile has 275 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-11-05.json"
+        "reports/public_source_snapshot_2026-11-06.json"
       ],
-      "checked_at": "2026-11-05T01:25:17.540856+00:00",
+      "checked_at": "2026-11-06T17:57:11.092028+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -47,13 +47,13 @@
     },
     {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (an Organization) has 46 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account (an Organization) has 47 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-11-05.json"
+        "reports/public_source_snapshot_2026-11-06.json"
       ],
-      "checked_at": "2026-11-05T01:25:17.540856+00:00",
+      "checked_at": "2026-11-06T17:57:11.092028+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",

@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "doi": "10.5281/zenodo.20931955",
   "doi_url": "https://doi.org/10.5281/zenodo.20931955",
-  "zenodo_record": "https://zenodo.org/records/20931955",
-  "record_id": "20931956",
+  "zenodo_record": "https://zenodo.org/records/20938523",
+  "record_id": "20938523",
   "publication_date": "2026-06-25",
   "resource_type": {
     "title": "Journal article",
@@ -18,7 +18,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "This paper presents a metallurgical analogy for scientific manuscript composition, mapping gold-refining stages onto the template infrastructure pipeline. The refinery processes manuscript ore through 5 stages — from raw draft (9K, ~37.5% purity) through smelting, assaying, and cupellation — to nine-nines certification (99.9999999%), the ultra-high-purity standard of electronics-grade gold.\n\nThe analogy is load-bearing, not merely rhetorical: each metallurgical stage corresponds to a real template-infrastructure operation. Smelting removes dross (filler, unsupported claims); assaying tests claims against evidence; cupellation resolves cross-references; certification validates the full pipeline. The mega-madlib token engine selects 8 domain tokens deterministically via seeded SHA-256 digest over category inventories, ensuring every prose element is traceable and reproducible.\n\nResults: The refinery achieves final purity of 99.9999999% (nine-nines) (24K (nine-nines certified)) with a total purity gain of 90.00% across all stages. Nine-nines certification: Yes. The purity progression is shown in , and the karat grading scale in .\n\nKeywords: gold refining, manuscript composition, mega-madlib, token injection, scientific purity, assaying, karat grading\n\n---\nAssociated artifacts\nGitHub release: v0.1.0 (https://github.com/docxology/template_gold_refinement/releases/tag/v0.1.0)\nDOI: https://doi.org/10.5281/zenodo.20931955\nZenodo: https://zenodo.org/records/20931955\nPDF SHA-256: 3643178951b267632e607606b6daaba21ea75d8f7590899948b5999d1854198b",
+  "description": "This template exemplar maps gold-refining stages onto a scientific manuscript pipeline and describes deterministic token selection, equation-backed formalisms and a project-local claim assay. Its purity and karat vocabulary summarizes configured local validation states rather than external manuscript quality. The deposited edition reports its own contribution checks; external empirical validation of manuscript-quality metrics remains future work, and this catalog review does not rerun the pipeline.",
   "keywords": [
     "gold refining",
     "manuscript composition",
@@ -30,10 +30,10 @@
   ],
   "files": [
     {
-      "name": "Friedman_2026_Refinement_36431789.pdf",
-      "size_bytes": 1019881,
-      "checksum": "md5:44c260d587c6eb519af2bacdabeb4b53",
-      "download_url": "https://zenodo.org/api/records/20931956/files/Friedman_2026_Refinement_36431789.pdf/content"
+      "name": "Friedman_2026_Refinement_946c484b.pdf",
+      "size_bytes": 3207775,
+      "checksum": "md5:885f35efe3feaa0fb5a3402383579d69",
+      "download_url": "https://zenodo.org/api/records/20938523/files/Friedman_2026_Refinement_946c484b.pdf/content"
     }
   ],
   "related_resources": [
@@ -46,7 +46,7 @@
   "github_release_url": "https://github.com/docxology/template_gold_refinement/releases/tag/v0.1.0",
   "release_tag": "v0.1.0",
   "release_name": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition (v0.1.0)",
-  "pdf_sha256": "3643178951b267632e607606b6daaba21ea75d8f7590899948b5999d1854198b",
+  "pdf_sha256": "946c484b6bc3e0b1d55be00c15eeb09936f4e52bdb2067d2bcde40c2bbea387f",
   "pairing_confidence": "strong",
   "pairing_evidence": [
     "github_release_mentions_zenodo_record",
@@ -54,41 +54,24 @@
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-06-26T15:16:06Z",
+  "checked_at": "2026-11-06T18:27:06.534923+00:00",
   "domain": "Computational",
   "type": "Paper",
   "methods": [
     {
-      "name": "Five-stage gold-refining analogy mapped to manuscript operations",
-      "description": "Maps ore, smelting, assaying, cupellation, and certification onto manuscript template-infrastructure operations such as claim removal, evidence checks, and cross-reference resolution.",
-      "evidence": "Smelting removes dross (filler, unsupported claims); assaying tests claims against evidence; cupellation resolves cross-references; certification validates the full pipeline."
+      "name": "Deterministic source-owned token selection",
+      "description": "Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+      "evidence": "The mega-madlib token engine selects 24 domain tokens deterministically"
     },
     {
-      "name": "Seeded SHA-256 mega-madlib token selection from a config-owned lexicon",
-      "description": "Selects domain vocabulary tokens deterministically from lexicon categories declared in config.yaml so every prose token is traceable to its config key.",
-      "evidence": "The manuscript’s domain vocabulary is not hand-authored prose but config-owned lexical data, selected deterministically by a seeded SHA-256 digest. The engine generates 8 tokens across 4 slots and 4 lexicon categories."
-    },
-    {
-      "name": "Monotone-purity constraint enforced in code and tests",
-      "description": "Stage purity values must strictly increase, enforced by assert_monotone_increase in src/refinery.py and covered by the test suite.",
-      "evidence": "Purity increases monotoni- cally — a constraint enforced by src/refinery.py::assert_monotone_increase and tested in tests/test_refinery.py."
-    },
-    {
-      "name": "Karat grading of stage purities via karat_for_purity()",
-      "description": "Maps each stage's purity fraction to a standard gold fineness grade (9K to 24K and nine-nines) in src/purity.py.",
-      "evidence": "The mapping is implemented in src/purity.py::karat_for_purity(). The karat grading chart is shown in fig. 2 (see sec. 4)."
-    },
-    {
-      "name": "Deterministic seeded regeneration of all outputs",
-      "description": "The pipeline regenerates figures, data, and reports from the same config and source code; the reported run used seed 431.",
-      "evidence": "The refinery pipeline is fully deterministic. Given the same manuscript/config.yaml and src/ code, every run produces identical output."
+      "name": "Equation-backed formalisms and local claim assay",
+      "description": "Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.",
+      "evidence": "6 equation-backed formalisms define purity"
     }
   ],
   "key_findings": [
-    "The paper argues the analogy is load-bearing rather than only rhetorical, since each metallurgical stage corresponds to a real template-infrastructure operation.",
-    "The exemplar pipeline reports a monotone purity sequence over 5 stages ending at the nine-nines certification stage.",
-    "The token engine generated 8 tokens from seed 431 across 4 lexicon categories, each traceable in a provenance table.",
-    "The paper explicitly does not claim empirical validation of manuscript quality metrics or generalizability of its purity fractions."
+    "The reported purity value is a local descriptive validation state, not an externally validated quality measurement.",
+    "Empirical validation of manuscript-quality metrics against external standards remains listed as future work."
   ],
   "related_papers": [
     "2023_NSFReporting",
@@ -99,17 +82,53 @@
     "docxology/template_gold_refinement"
   ],
   "key_findings_evidence": [
-    "The analogy is load-bearing, not merely rhetorical: each metallurgical stage corresponds to a real template-infrastructure operation.",
-    "The refinery pipeline produces a monotonically increasing purity sequence across 5 stages, reaching final purity of 99.9999999% (nine-nines) (24K (nine-nines certified)).",
-    "The mega-madlib engine generated 8 tokens from seed 431 across 4 lexicon categories.",
-    "It does not claim: • Empirical validation of manuscript quality metrics against external standards • Generalizability of specific purity fractions to all scientific domains"
+    "The value is descriptive: it summarizes local validation state rather than external quality",
+    "Empirical validation of manuscript quality metrics against external standards"
   ],
   "summary_provenance": {
     "source": "full_text.md",
-    "date": "2026-10-01",
+    "date": "2026-11-06",
+    "source_pdf_sha256": "946c484b6bc3e0b1d55be00c15eeb09936f4e52bdb2067d2bcde40c2bbea387f",
+    "source_text_sha256": "86ba34df218ffc5271fd99788e3b1ff50d59a664b13b44448468389bbd7a23b0",
+    "selected_record_id": "20938523",
     "work_kind": "software/methods",
-    "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
-    "notes": "Template exemplar methods paper; the 'purity' values are configured stage targets (per the stage definitions table), not empirical measurements of manuscript quality, as the paper's own scope limitations state.",
-    "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
-  }
+    "method": "AI-assisted review of the selected deposited abstract, quoted passages and stated limitations. Every current method/finding quote is mechanically present in the selected extraction. This is source-text support, not new computational, mathematical, scientific or human verification.",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "historical_summary": "Complete prior folder metadata and master prose are preserved in source_evidence.json beside the retained historical extraction."
+  },
+  "artifact_doi": "10.5281/zenodo.20938523",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20938523",
+  "pages": 28,
+  "abstract": "This template exemplar maps gold-refining stages onto a scientific manuscript pipeline and describes deterministic token selection, equation-backed formalisms and a project-local claim assay. Its purity and karat vocabulary summarizes configured local validation states rather than external manuscript quality. The deposited edition reports its own contribution checks; external empirical validation of manuscript-quality metrics remains future work, and this catalog review does not rerun the pipeline.",
+  "abstract_provenance": {
+    "source": "full_text.md",
+    "source_text_sha256": "86ba34df218ffc5271fd99788e3b1ff50d59a664b13b44448468389bbd7a23b0",
+    "source_pdf_sha256": "946c484b6bc3e0b1d55be00c15eeb09936f4e52bdb2067d2bcde40c2bbea387f",
+    "date": "2026-11-06",
+    "kind": "curated_summary",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "scope": "Cautious source summary of the selected abstract and stated limitations; no independent reproduction or complete author-abstract claim."
+  },
+  "remote_primary_pdf": {
+    "name": "Friedman_2026_Refinement_946c484b.pdf",
+    "url": "https://zenodo.org/api/records/20938523/files/Friedman_2026_Refinement_946c484b.pdf/content",
+    "bytes": 3207775,
+    "sha256": "946c484b6bc3e0b1d55be00c15eeb09936f4e52bdb2067d2bcde40c2bbea387f",
+    "record_id": "20938523",
+    "version": "0.1.0"
+  },
+  "license": "MIT",
+  "license_url": "https://opensource.org/license/mit/",
+  "rights_note": "The selected registry record declares this license; no additional third-party rights or scientific approval are inferred.",
+  "source_release_review": {
+    "reviewed_at": "2026-11-06T19:09:15Z",
+    "reviewed_by": "Codex AI-assisted public-source curator",
+    "selected_pdf_record": "20938523",
+    "selected_pdf_version": "0.1.0",
+    "retained_release_role": "Existing GitHub release fields are retained source references; generic repository/title or concept-DOI links do not establish the selected PDF edition.",
+    "scientific_or_runtime_reproduction": false,
+    "historical_text_file": "full_text_before_2026-11-06.md"
+  },
+  "document_title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition"
 }

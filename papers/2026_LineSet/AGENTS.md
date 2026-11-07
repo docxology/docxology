@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Declarative set registry: four LineEntry records plus one shared token, Five-stage reader with fixed-precedence set statuses, Enum-member name collision check across sibling package roots
-- Identifies findings: On the review date the four packages yielded 81 line-and-name pairs spanning 80 distinct names, and the only shared name was the already-declared, disambiguated one., The single shared name was OUTSIDE_SCOPE, carried by red_line and black_line., Appending a fifth line whose package is not installed yielded SET_PARTIAL, which the author argues is the correct answer rather than a shortfall.
+- Extracts methods: Declared instrument-vocabulary collision reader, Five-stage reader and explicit status precedence
+- Identifies findings: The current opening work describes eight sibling instruments and treats the Line Set as a ninth work with no instrument of its own., Non-overlapping vocabulary does not establish conceptual non-overlap or that the instruments are correct or sufficient.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

@@ -585,8 +585,9 @@ def parse_bibliography(
     from docxology_tools.author_entities import (
         bibliography_contributor_role,
         load_author_records,
+        reviewed_literal_authors,
     )
-    from docxology_tools.work_identifiers import load_registry
+    from docxology_tools.work_identifiers import load_registry, key_for_num
 
     bib = {}
     if not paths.bibliography_path.exists():
@@ -623,6 +624,20 @@ def parse_bibliography(
                 row.num, row.title, list(row.authors), records, identifiers
             ),
         }
+        if identifiers is not None:
+            structured = reviewed_literal_authors(
+                {
+                    "citation_key": key_for_num(row.num, identifiers),
+                    "num": row.num,
+                    "title": row.title,
+                    "authors": list(row.authors),
+                    "doi": bib[folder]["canonical_doi"],
+                    "docs_path": "papers/" + row.folder,
+                },
+                records,
+            )
+            if structured is not None:
+                bib[folder]["literal_authors"] = [a["literal"] for a in structured]
     log.info(f"Parsed {len(bib)} entries from BIBLIOGRAPHY.md")
     return bib
 
@@ -780,12 +795,14 @@ def work_title(folder: str, meta: dict, bib_entry: dict | None = None) -> str:
 def work_authors(meta: dict, bib_entry: dict | None = None) -> str:
     """Return the display author list: bibliography first, folder metadata as fallback."""
     names = [
-        display_author_name(name)
+        str(name)
+        if name in (bib_entry or {}).get("literal_authors", [])
+        else display_author_name(name)
         for name in (bib_entry or {}).get("authors") or []
         if str(name).strip()
     ]
     display = (
-        ", ".join(names)
+        ("; " if (bib_entry or {}).get("literal_authors") else ", ").join(names)
         if names
         else clean_markdown_text(meta.get("authors", "Daniel Ari Friedman"))
     )

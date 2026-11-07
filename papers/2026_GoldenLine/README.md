@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> A directional instrument for recording long-horizon aspirations and observable movement toward them. It returns one of four directional readings per aspiration against a versioned registry and deliberately computes no aggregate: there is no virtue score, and NOT_OBSERVED means no valid entry was admitted rather than that nobody looked. Subtitle: An Aspirational Thread for Long-Horizon Work Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.
+> Golden Line describes an aspirational thread and a versioned nine-entry registry evaluated against recorded markers, counter-signals and review dates. Its directional readings are explicitly not compliance scores or certifications that work is good, safe, lawful or complete. The retained methods and findings are statements in the selected manuscript and source-bound synthetic examples; this catalog refresh checks their quoted text but does not rerun the evaluator or verify observers' declarations.
 
 ## Keywords
 
@@ -37,9 +37,13 @@ _Methods and findings are summarized from the full text; each item is backed by 
 ## Artifacts
 
 - DOI: [10.5281/zenodo.21754237](https://doi.org/10.5281/zenodo.21754237)
-- Zenodo record: [https://zenodo.org/records/21754237](https://zenodo.org/records/21754237)
-- PDF: [golden_line_combined.pdf](golden_line_combined.pdf)
-- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/21754237)
+- Artifact DOI: [10.5281/zenodo.22833506](https://doi.org/10.5281/zenodo.22833506)
+- Zenodo record: [https://zenodo.org/records/22833506](https://zenodo.org/records/22833506)
+- Historical local PDF: [golden_line_combined.pdf](golden_line_combined.pdf)
+- Current PDF (Zenodo, version 0.4.1): [golden_line_combined.pdf](https://zenodo.org/api/records/22833506/files/golden_line_combined.pdf/content)
+- Local PDFs remain preserved historical archives.
+- Extracted text retains its own source provenance; a matching filename does not establish edition identity.
+- PDF SHA-256: be801cc282ada39af586c46b32e978231b922a4f95000c0c53866bbb8c1afab7
 
 ## Citation
 

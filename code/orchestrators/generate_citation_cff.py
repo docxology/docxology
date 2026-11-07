@@ -427,8 +427,11 @@ def bibliography_citations(
     from docxology_tools.author_entities import (
         bibliography_contributor_role,
         load_author_records,
+        reviewed_literal_authors,
     )
-    from docxology_tools.work_identifiers import load_registry
+    from docxology_tools.work_identifiers import load_registry, key_for_num
+    from docxology_tools.bibliography_links import canonical_link_url
+    from export_bibliography import doi_from_url
 
     root = bibliography_path.parent.parent
     records = load_author_records(root)
@@ -444,6 +447,24 @@ def bibliography_citations(
                 "title": row.title.strip(),
                 "authors": list(row.authors),
             }
+            if identifiers is not None:
+                structured = reviewed_literal_authors(
+                    {
+                        "citation_key": key_for_num(row.num, identifiers),
+                        "num": row.num,
+                        "title": row.title,
+                        "authors": list(row.authors),
+                        "doi": doi_from_url(
+                            canonical_link_url(row.link_cell, row.venue)
+                        ),
+                        "docs_path": "papers/" + row.folder,
+                    },
+                    records,
+                )
+                if structured is not None:
+                    citations[row.folder]["literal_authors"] = [
+                        a["literal"] for a in structured
+                    ]
             role = bibliography_contributor_role(
                 row.num, row.title, list(row.authors), records, identifiers
             )
@@ -456,12 +477,14 @@ def _is_daniel_friedman(family: str, given: str) -> bool:
     return family.casefold() == "friedman" and given.casefold().startswith("daniel")
 
 
-def render_cff_authors(names: list[str]) -> list[str]:
+def render_cff_authors(
+    names: list[str], *, literal_authors: list[str] | None = None
+) -> list[str]:
     """Render bibliography "Family, Given" names (or literals) as CFF authors."""
     lines = ["authors:\n"]
     for name in names:
         family, separator, given = name.partition(",")
-        if not separator:
+        if not separator or (literal_authors is not None and name in literal_authors):
             # A name the registry recorded without structure (a pseudonym,
             # collective, or unsplit personal name) is a CFF entity name.
             lines.append(f'  - name: "{_yaml_quoted(name.strip())}"\n')
@@ -514,7 +537,9 @@ def _bibliography_identity(
     for name in citation["authors"]:
         family, separator, given = name.partition(",")
         authors.append(
-            (family.strip(), given.strip()) if separator else (name.strip(), "")
+            (family.strip(), given.strip())
+            if separator and name not in citation.get("literal_authors", [])
+            else (name.strip(), "")
         )
     return citation["title"], authors
 
@@ -542,7 +567,11 @@ def reconcile_cff_bibliography(text: str, citation: dict[str, Any] | None) -> st
             index += 1
             continue
         if line.rstrip("\n") == "authors:":
-            out.extend(render_cff_authors(citation["authors"]))
+            out.extend(
+                render_cff_authors(
+                    citation["authors"], literal_authors=citation.get("literal_authors")
+                )
+            )
             saw_authors = True
             index += 1
             while index < len(lines) and (

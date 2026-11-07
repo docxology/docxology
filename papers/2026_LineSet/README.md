@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> A thin reader that declares what a set of small evaluative instruments is, reads whichever sibling packages are installed, and checks one narrow property: that no two of them have given the same spelling to different things. It adds no instrument of its own and computes no aggregate; a legible reading says only that the declared vocabularies did not overlap. Subtitle: A Declaration, a Reader, and a Non-Overlap Contract for a Growing Set of Small Instruments Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.
+> The selected deposit is a 248-page collected volume whose cover names nine works; the canonical registry citation remains The Line Set: Holding Instruments Apart. Its opening Line Set work describes eight instruments and a reader that checks declared vocabulary collisions through resolve, bind, collide, declare and status stages. SET_LEGIBLE concerns non-overlapping declared names under exemptions, not conceptual independence, correctness, completeness or behavioral efficacy. The other collected works retain their own scopes; this catalog refresh does not reclassify the volume as nine new bibliography entries.
 
 ## Keywords
 
@@ -18,29 +18,26 @@
 
 ## Methods
 
-- **Declarative set registry: four LineEntry records plus one shared token** — Declares the set (Red, Black, Golden, White Line) as data, each entry naming its question, job, and what it must not become.
-- **Five-stage reader with fixed-precedence set statuses** — Reads installed sibling packages through resolve, bind, collide, declare and status stages, returning one of four SET_-prefixed readings.
-- **Enum-member name collision check across sibling package roots** — Collects enum member names each line publishes at its package root and flags any name carried by more than one line, unless declared and disambiguated.
-- **Seven offline structural checks plus a self-application check** — Runs seven declaration-only checks and an eighth that applies the package's own collision check to a declaration including itself.
-- **Executed extensibility example appending a fifth colour at runtime** — Appends a hypothetical green_line entry without editing the package and runs the battery and reader on the extended declaration.
+- **Declared instrument-vocabulary collision reader** — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.
+- **Five-stage reader and explicit status precedence** — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.
 
 ## Key Findings
 
-- On the review date the four packages yielded 81 line-and-name pairs spanning 80 distinct names, and the only shared name was the already-declared, disambiguated one.
-- The single shared name was OUTSIDE_SCOPE, carried by red_line and black_line.
-- Appending a fifth line whose package is not installed yielded SET_PARTIAL, which the author argues is the correct answer rather than a shortfall.
-- The author stresses that disjoint vocabularies are a necessary, not sufficient, condition: the check cannot detect conceptual overlap between instruments.
-- The paper states the set digest is a comparison handle only, not tamper evidence or a record of who changed what.
+- The current opening work describes eight sibling instruments and treats the Line Set as a ninth work with no instrument of its own.
+- Non-overlapping vocabulary does not establish conceptual non-overlap or that the instruments are correct or sufficient.
 
 _Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
 ## Artifacts
 
 - DOI: [10.5281/zenodo.21754243](https://doi.org/10.5281/zenodo.21754243)
-- Artifact DOI: [10.5281/zenodo.21754244](https://doi.org/10.5281/zenodo.21754244)
-- Zenodo record: [https://zenodo.org/records/21754243](https://zenodo.org/records/21754243)
-- PDF: [line_set_combined.pdf](line_set_combined.pdf)
-- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/21754243)
+- Artifact DOI: [10.5281/zenodo.22833507](https://doi.org/10.5281/zenodo.22833507)
+- Zenodo record: [https://zenodo.org/records/22833507](https://zenodo.org/records/22833507)
+- Historical local PDF: [line_set_combined.pdf](line_set_combined.pdf)
+- Current PDF (Zenodo, version 0.2.0): [line_set_combined.pdf](https://zenodo.org/api/records/22833507/files/line_set_combined.pdf/content)
+- Local PDFs remain preserved historical archives.
+- Extracted text retains its own source provenance; a matching filename does not establish edition identity.
+- PDF SHA-256: deaac4ed4bb747b4fd7c97fe67535ff28fd65764b4ae9a45e2225ab589b69f25
 
 ## Citation
 

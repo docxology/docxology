@@ -22,3 +22,7 @@ dated evidence instead.
 The [November 5 software-quality follow-up](../../reports/software_quality_followup_2026-11-05.md) records source-bound fixes across the profile, Blake, Markdown Decision Process, and ActiveACO.
 
 The [November 6 clean-source follow-up](../../reports/software_quality_followup_2026-11-06.md) records the deterministic-ledger correction and fresh committed-source verification.
+
+The [November 6 publication/software refresh](../../reports/publication_software_refresh_2026-11-06.md) records exact-edition intake, literal credits, preserved source history and the corresponding verification.
+
+The same refresh covers selected citation exports, work-specific research-map credit types, legacy-link recovery and authority-dependent generation caching; their source owners and regression boundaries are in the [research-tools guide](research-tools.md).

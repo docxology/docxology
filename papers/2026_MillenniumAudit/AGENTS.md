@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Independent kernel reproduction under the pinned Lean 4/mathlib toolchain, Statement-level binder parsing compared against official Clay statements, Script-checked, line-anchored quotation of the package source
-- Identifies findings: The package's kernel claims hold and reproduce exactly: clean build, zero live sorry, zero project axioms, and only standard axiom footprints., The claimed final theorems are evidentially void: conditional implications with unproved premises, definitions of the open statements, or true theorems about unrelated simple objects., The 'universalization tower' certifying Hodge, BSD and Navier-Stokes proves only that 0 < n + 1 for all naturals.
+- Extracts methods: Pinned-package source and theorem-statement audit, Itemized source quotes and probe reports
+- Identifies findings: The report distinguishes reproduced kernel-hygiene outputs from the mathematical content of the claimed final theorems., The author's stated verdict is that the package resolves none of the six problems; this remains an attributed audit conclusion.
 - Maps contributions to 🔍 literature
 
 ### 🎓 EDUCATOR

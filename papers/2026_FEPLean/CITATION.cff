@@ -17,13 +17,13 @@ identifiers:
     value: "https://doi.org/10.5281/zenodo.19699233"
     description: "Canonical citation DOI resolver"
   - type: doi
-    value: "10.5281/zenodo.22072956"
+    value: "10.5281/zenodo.23607007"
     description: "Version/download DOI (Zenodo artifact)"
   - type: url
-    value: "https://doi.org/10.5281/zenodo.22072956"
+    value: "https://doi.org/10.5281/zenodo.23607007"
     description: "Version/download DOI resolver (Zenodo artifact)"
   - type: url
-    value: "https://zenodo.org/records/22072956"
+    value: "https://zenodo.org/records/23607007"
     description: "Version/download landing page (Zenodo artifact)"
   - type: url
     value: "https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.1.0"

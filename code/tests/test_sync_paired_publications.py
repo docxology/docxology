@@ -99,7 +99,11 @@ def _write_minimal_repo(root: Path) -> None:
 
 
 def _write_review_decision(
-    root: Path, pair: PublicationPair, *, folder: str = "2026_NewComputationalProject"
+    root: Path,
+    pair: PublicationPair,
+    *,
+    folder: str = "2026_NewComputationalProject",
+    edition_bound: bool = True,
 ) -> None:
     payload = {
         "generated_at": "2026-06-18T00:00:00Z",
@@ -144,6 +148,10 @@ def _write_review_decision(
             }
         ],
     }
+    if edition_bound:
+        proof = _inline_edition_evidence(pair)
+        payload["groups"][0]["edition_evidence"] = proof
+        payload["groups"][0]["raw_candidates"][0]["edition_evidence"] = proof
     (root / "data" / "paired-publication-decisions.json").write_text(
         json.dumps(payload, indent=2) + "\n", encoding="utf-8"
     )
@@ -334,6 +342,7 @@ def test_reviewed_decision_accepts_string_raw_candidates(tmp_path: Path):
         "groups": [
             {
                 "id": "R25",
+                "edition_evidence": _inline_edition_evidence(pair),
                 "decision": "rejected",
                 "decided_at": "2026-08-10T00:00:00Z",
                 "decided_by": "maintainer",
@@ -830,7 +839,7 @@ def test_classification_cache_reproduces_full_scan_classification(tmp_path: Path
     ]
 
 
-def test_classification_cache_hit_skips_decision_log_and_title_scans(tmp_path: Path):
+def test_classification_cache_hit_verifies_ledger_and_skips_title_scans(tmp_path: Path):
     _write_minimal_repo(tmp_path)
     pair = _pair()
     _write_review_decision(tmp_path, pair)
@@ -849,8 +858,10 @@ def test_classification_cache_hit_skips_decision_log_and_title_scans(tmp_path: P
 
     with (
         mock.patch.object(
-            sync_paired_publications, "reviewed_pair_decisions", _explode
-        ),
+            sync_paired_publications,
+            "reviewed_pair_decisions",
+            wraps=reviewed_pair_decisions,
+        ) as durable,
         mock.patch.object(
             sync_paired_publications, "existing_release_title_map", _explode
         ),
@@ -861,6 +872,7 @@ def test_classification_cache_hit_skips_decision_log_and_title_scans(tmp_path: P
         actions = build_sync_actions([pair], repo_root=tmp_path, cache=cache)
     assert actions[0].action_type == "already_reviewed"
     assert actions[0].folder == "2026_NewComputationalProject"
+    durable.assert_called_once_with(tmp_path)
 
 
 def test_classification_cache_falls_back_to_full_scan_when_decisions_drift(
@@ -1036,7 +1048,9 @@ def test_redaction_cli_preserves_observation_and_apply_receipts_and_is_idempoten
 ):
     payload = _minimal_report_payload()
     payload["generated_at"] = "2026-01-01T00:00:00Z"
-    payload["github_releases"] = [{"body": "Built at `source:/Volumes/Example/private/release`."}]
+    payload["github_releases"] = [
+        {"body": "Built at `source:/Volumes/Example/private/release`."}
+    ]
     payload["applied"] = [
         {"doi": "10.5281/zenodo.1234567", "provenance": {"action_sha256": "a" * 64}}
     ]
@@ -1088,8 +1102,13 @@ def test_cached_body_cleanup_preserves_original_provenance_and_is_idempotent(tmp
     )
     report = tmp_path / "reports/paired_publications_2026-06-07.json"
     write_report(
-        report, owners=["docxology"], releases=[pair.release],
-        records=[pair.record], pairs=[pair], actions=[], warnings=[],
+        report,
+        owners=["docxology"],
+        releases=[pair.release],
+        records=[pair.record],
+        pairs=[pair],
+        actions=[],
+        warnings=[],
     )
     payload = json.loads(report.read_text())
     expected_body = cached_body.replace(
@@ -1109,35 +1128,55 @@ def test_cached_body_cleanup_preserves_original_provenance_and_is_idempotent(tmp
     check_report(repo_root=tmp_path)
 
 
-@pytest.mark.parametrize("provenance", [
-    {"policy": "unknown", "source_sha256": "a" * 64},
-    {"policy": "local-filesystem-paths-v1", "source_sha256": "invalid"},
-    {"policy": "local-filesystem-paths-v1", "source_sha256": "a" * 64, "extra": True},
-])
+@pytest.mark.parametrize(
+    "provenance",
+    [
+        {"policy": "unknown", "source_sha256": "a" * 64},
+        {"policy": "local-filesystem-paths-v1", "source_sha256": "invalid"},
+        {
+            "policy": "local-filesystem-paths-v1",
+            "source_sha256": "a" * 64,
+            "extra": True,
+        },
+    ],
+)
 def test_cached_replay_rejects_invalid_existing_redaction_provenance(provenance):
     release = _pair().release.to_dict()
     release["body_redaction"] = provenance
-    with pytest.raises(ValueError, match="Invalid cached release body redaction provenance"):
+    with pytest.raises(
+        ValueError, match="Invalid cached release body redaction provenance"
+    ):
         github_releases_from_payload({"github_releases": [release]})
 
 
-@pytest.mark.parametrize("provenance", [
-    {"policy": "unknown", "source_sha256": "a" * 64},
-    {"policy": "local-filesystem-paths-v1", "source_sha256": "invalid"},
-    {"policy": "local-filesystem-paths-v1", "source_sha256": "a" * 64, "extra": True},
-])
+@pytest.mark.parametrize(
+    "provenance",
+    [
+        {"policy": "unknown", "source_sha256": "a" * 64},
+        {"policy": "local-filesystem-paths-v1", "source_sha256": "invalid"},
+        {
+            "policy": "local-filesystem-paths-v1",
+            "source_sha256": "a" * 64,
+            "extra": True,
+        },
+    ],
+)
 def test_direct_cleanup_rejects_invalid_redaction_provenance_without_rewriting(
     tmp_path, provenance
 ):
     payload = _minimal_report_payload()
-    payload["github_releases"] = [{
-        "body": "source:/Users/example/private.txt",
-        "body_redaction": provenance,
-    }]
+    payload["github_releases"] = [
+        {
+            "body": "source:/Users/example/private.txt",
+            "body_redaction": provenance,
+        }
+    ]
     report = tmp_path / "paired.json"
     report.write_text(json.dumps(payload), encoding="utf-8")
     original = report.read_bytes()
-    with pytest.raises(ValueError, match="Invalid cached release body redaction provenance"):
+    with pytest.raises(
+        ValueError, match="Invalid cached release body redaction provenance"
+    ):
         sync_paired_publications.redact_report_local_paths(report)
     assert report.read_bytes() == original
 
@@ -1395,3 +1434,1298 @@ def test_paired_intake_keeps_all_creators_and_existing_curated_byline(tmp_path):
     )
     assert row.endswith("| Existing curated byline |")
     assert "20990002" in row
+
+
+# Exact publication editions remain distinct under an unchanged concept DOI.
+def _version_bound_review_fixture(root):
+    _write_minimal_repo(root)
+    base = _pair()
+    concept = "10.5281/zenodo.20990000"
+    release = replace(
+        base.release,
+        body=f"DOI: https://doi.org/{concept}\nZenodo: https://zenodo.org/records/20990000\n",
+    )
+    record = replace(
+        base.record,
+        doi=concept,
+        record_id="20990001",
+        html_url="https://zenodo.org/records/20990001",
+        version="1.0.0",
+        files=[
+            {
+                "key": "paper.pdf",
+                "size": 1234,
+                "checksum": "md5:" + "a" * 32,
+                "links": {
+                    "self": "https://zenodo.org/api/records/20990001/files/paper.pdf/content"
+                },
+            }
+        ],
+    )
+    pair = replace(base, release=release, record=record)
+    apply_publication_pair(pair, repo_root=root, download_files=False)
+    _write_review_decision(root, pair, edition_bound=False)
+    frozen = {
+        "generated_at": "2026-06-18T00:00:00Z",
+        "source": "GitHub Releases API + Zenodo Records API",
+        "owners": ["docxology"],
+        "warnings": [],
+        "pairs": [pair.to_dict()],
+        "github_releases": [pair.release.to_dict()],
+        "zenodo_records": [pair.record.to_dict()],
+    }
+    frozen_path = root / "reports/publication_intake_2026-06-18.json"
+    frozen_bytes = (json.dumps(frozen, indent=2) + "\n").encode()
+    frozen_path.write_bytes(frozen_bytes)
+    ledger_path = root / "data/paired-publication-decisions.json"
+    ledger = json.loads(ledger_path.read_text())
+    group = ledger["groups"][0]
+    group["decision"] = "accept"
+    group["representation"] = "bibliography-folder"
+    candidate = group["raw_candidates"][0]
+    candidate.update(
+        review_decision="accept",
+        zenodo_version_record_id=pair.record.record_id,
+        source_report="reports/publication_intake_2026-06-18.json",
+        source_report_sha256=hashlib.sha256(frozen_bytes).hexdigest(),
+    )
+    ledger_path.write_text(json.dumps(ledger, indent=2) + "\n")
+    return pair, ledger
+
+
+def _changed_reviewed_edition(pair, change):
+    if change == "new_record":
+        return replace(
+            pair,
+            record=replace(
+                pair.record,
+                record_id="20990002",
+                version="2.0.0",
+                html_url="https://zenodo.org/records/20990002",
+            ),
+        )
+    if change == "version_metadata":
+        return replace(pair, record=replace(pair.record, version="1.0.1"))
+    assert change == "file_manifest"
+    files = json.loads(json.dumps(pair.record.files))
+    files[0]["checksum"] = "md5:" + "b" * 32
+    return replace(pair, record=replace(pair.record, files=files))
+
+
+def _review_cache(root, pair):
+    entries = []
+    actions = build_sync_actions(
+        [pair], repo_root=root, already_reviewed_entries=entries
+    )
+    assert actions[0].action_type == "already_reviewed"
+    payload = {
+        "classification_cache": classification_cache_payload(entries, repo_root=root)
+    }
+    cache = classification_cache_from_payload(payload)
+    assert cache is not None
+    return cache
+
+
+@pytest.mark.parametrize("cached", [False, True])
+def test_exact_bound_edition_keeps_existing_acknowledgement(tmp_path, cached):
+    pair, _ = _version_bound_review_fixture(tmp_path)
+    cache = _review_cache(tmp_path, pair) if cached else None
+    actions = build_sync_actions([pair], repo_root=tmp_path, cache=cache)
+    assert actions[0].action_type == "already_reviewed"
+
+
+@pytest.mark.parametrize("cached", [False, True])
+@pytest.mark.parametrize("change", ["new_record", "version_metadata", "file_manifest"])
+def test_changed_edition_cannot_inherit_concept_acknowledgement(
+    tmp_path, cached, change
+):
+    pair, _ = _version_bound_review_fixture(tmp_path)
+    cache = _review_cache(tmp_path, pair) if cached else None
+    changed = _changed_reviewed_edition(pair, change)
+    # The work-level citation DOI and public URL deliberately stay canonical.
+    assert changed.doi == pair.doi
+    assert changed.zenodo_record_url == pair.zenodo_record_url
+    before = {
+        p.relative_to(tmp_path): p.read_bytes()
+        for p in tmp_path.rglob("*")
+        if p.is_file()
+    }
+    actions = build_sync_actions([changed], repo_root=tmp_path, cache=cache)
+    assert actions[0].action_type != "already_reviewed"
+    assert actions[0].folder == "2026_NewComputationalProject"
+    assert {
+        p.relative_to(tmp_path): p.read_bytes()
+        for p in tmp_path.rglob("*")
+        if p.is_file()
+    } == before
+
+
+@pytest.mark.parametrize(
+    "change", [None, "new_record", "version_metadata", "file_manifest"]
+)
+def test_public_review_rechecks_exact_edition_even_if_report_says_reviewed(
+    tmp_path, change
+):
+    from docxology_tools.public_source_review import paired_publication_items
+
+    pair, ledger = _version_bound_review_fixture(tmp_path)
+    old_action = build_sync_actions([pair], repo_root=tmp_path)[0]
+    observed = _changed_reviewed_edition(pair, change) if change else pair
+    # A persisted old action cannot transfer its outcome to changed observed bytes.
+    report = {
+        "generated_at": "2026-06-18T01:00:00Z",
+        "warnings": [],
+        "actions": [old_action.to_dict()],
+        "pairs": [observed.to_dict()],
+        "zenodo_records": [observed.record.to_dict()],
+    }
+    items = paired_publication_items(
+        report,
+        ledger,
+        report_source="reports/paired_publications_2026-06-18.json",
+        decision_source="data/paired-publication-decisions.json",
+        snapshot_generated_at=None,
+        repo_root=tmp_path,
+    )
+    assert len(items) == 1
+    assert items[0]["status"] == ("deferred" if change else "applied")
+
+
+@pytest.mark.parametrize("asset_count", [1, 3])
+def test_release_asset_normalized_payload_roundtrip_keeps_complete_urls(asset_count):
+    from docxology_tools.publication_pairing import GitHubAsset
+
+    release = replace(
+        _pair().release,
+        assets=[
+            GitHubAsset(
+                f"artifact-{i}.pdf",
+                f"https://github.com/docxology/new_repo/releases/download/v1.0.0/artifact-{i}.pdf",
+                100 + i,
+            )
+            for i in range(asset_count)
+        ],
+    )
+    rebuilt = sync_paired_publications.github_release_from_payload(release.to_dict())
+    assert rebuilt.to_dict() == release.to_dict()
+
+
+def test_release_asset_cached_and_direct_pairing_payloads_are_identical():
+    from docxology_tools.publication_pairing import GitHubAsset
+
+    base = _pair()
+    release = replace(
+        base.release,
+        assets=[
+            GitHubAsset(
+                "paper.pdf",
+                "https://github.com/docxology/new_repo/releases/download/v1.0.0/paper.pdf",
+                1234,
+            )
+        ],
+    )
+    cached = github_releases_from_payload({"github_releases": [release.to_dict()]})
+    direct_pairs = find_publication_pairs([release], [base.record])
+    cached_pairs = find_publication_pairs(cached, [base.record])
+    assert [pair.to_dict() for pair in cached_pairs] == [
+        pair.to_dict() for pair in direct_pairs
+    ]
+
+
+def test_release_asset_legacy_api_payload_url_remains_supported():
+    payload = _pair().release.to_dict()
+    payload["assets"] = [
+        {
+            "name": "paper.pdf",
+            "size": 1234,
+            "browser_download_url": "https://github.com/docxology/new_repo/releases/download/v1.0.0/paper.pdf",
+        }
+    ]
+    release = sync_paired_publications.github_release_from_payload(payload)
+    assert (
+        release.assets[0].download_url == payload["assets"][0]["browser_download_url"]
+    )
+
+
+@pytest.mark.parametrize("cached", [False, True])
+@pytest.mark.parametrize("damage", ["missing", "tampered", "ambiguous"])
+def test_edition_review_fails_closed_for_unavailable_frozen_evidence(
+    tmp_path, cached, damage
+):
+    pair, ledger = _version_bound_review_fixture(tmp_path)
+    cache = _review_cache(tmp_path, pair) if cached else None
+    source = tmp_path / "reports/publication_intake_2026-06-18.json"
+    if damage == "missing":
+        source.unlink()
+    elif damage == "tampered":
+        source.write_text(source.read_text().replace("paper.pdf", "changed.pdf"))
+    else:
+        snapshot = json.loads(source.read_text())
+        changed = _changed_reviewed_edition(pair, "new_record")
+        snapshot["zenodo_records"].append(changed.record.to_dict())
+        snapshot["pairs"].append(changed.to_dict())
+        raw = (json.dumps(snapshot, indent=2) + "\n").encode()
+        source.write_bytes(raw)
+        ledger["groups"][0]["raw_candidates"][0]["source_report_sha256"] = (
+            hashlib.sha256(raw).hexdigest()
+        )
+        (tmp_path / "data/paired-publication-decisions.json").write_text(
+            json.dumps(ledger) + "\n"
+        )
+    actions = build_sync_actions([pair], repo_root=tmp_path, cache=cache)
+    assert actions[0].action_type != "already_reviewed"
+
+
+def _inline_edition_evidence(pair):
+    fields = (
+        "record_id",
+        "doi",
+        "title",
+        "publication_date",
+        "version",
+        "resource_type",
+        "creators",
+        "description",
+        "keywords",
+        "related_identifiers",
+        "files",
+        "html_url",
+    )
+    record = pair.record.to_dict()
+    fingerprint = [
+        pair.doi.casefold(),
+        pair.github_release_url.rstrip("/"),
+        pair.zenodo_record_url.rstrip("/"),
+        pair.github_repo.casefold(),
+        pair.record.title.casefold(),
+        pair.release.tag,
+    ]
+    frozen = {
+        "generated_at": "2026-06-18T00:00:00Z",
+        "source": "GitHub Releases API + Zenodo Records API",
+        "owners": ["docxology"],
+        "warnings": [],
+        "pairs": [pair.to_dict()],
+        "github_releases": [pair.release.to_dict()],
+        "zenodo_records": [pair.record.to_dict()],
+    }
+    frozen_sha = hashlib.sha256(
+        (json.dumps(frozen, indent=2) + "\n").encode()
+    ).hexdigest()
+    return {
+        "schema_version": 1,
+        "record_id": pair.record.record_id,
+        "record_sha256": hashlib.sha256(
+            json.dumps(
+                {key: record[key] for key in fields},
+                sort_keys=True,
+                separators=(",", ":"),
+                ensure_ascii=False,
+            ).encode()
+        ).hexdigest(),
+        "candidate_sha256": hashlib.sha256(
+            json.dumps(fingerprint, separators=(",", ":"), ensure_ascii=False).encode()
+        ).hexdigest(),
+        "source": {
+            "kind": "git_blob",
+            "commit": "c" * 40,
+            "blob_oid": "d" * 40,
+            "path": "reports/publication_intake_2026-06-18.json",
+            "sha256": frozen_sha,
+        },
+    }
+
+
+@pytest.mark.parametrize("changed", [False, True])
+def test_curated_original_blob_edition_evidence_needs_no_old_blob_or_report(
+    tmp_path, changed
+):
+    pair, ledger = _version_bound_review_fixture(tmp_path)
+    ledger["groups"][0]["raw_candidates"][0]["edition_evidence"] = (
+        _inline_edition_evidence(pair)
+    )
+    (tmp_path / "data/paired-publication-decisions.json").write_text(
+        json.dumps(ledger) + "\n"
+    )
+    (tmp_path / "reports/publication_intake_2026-06-18.json").unlink()
+    observed = _changed_reviewed_edition(pair, "new_record") if changed else pair
+    action = build_sync_actions([observed], repo_root=tmp_path)[0]
+    assert (action.action_type == "already_reviewed") is (not changed)
+
+
+def test_new_edition_explicit_supersession_preserves_history_without_old_ack_transfer(
+    tmp_path,
+):
+    pair, ledger = _version_bound_review_fixture(tmp_path)
+    original = json.loads(json.dumps(ledger["groups"][0]))
+    original["raw_candidates"][0]["edition_evidence"] = _inline_edition_evidence(pair)
+    ledger["groups"][0] = original
+    newer = _changed_reviewed_edition(pair, "new_record")
+    successor = json.loads(json.dumps(original))
+    successor.update(
+        id="R02", decided_by="Second reviewer", decided_at="2026-06-19T00:00:00Z"
+    )
+    successor["raw_candidates"][0]["edition_evidence"] = _inline_edition_evidence(newer)
+    successor["raw_candidates"][0]["zenodo_version_record_id"] = newer.record.record_id
+    successor["raw_candidates"][0]["source_report_sha256"] = successor[
+        "raw_candidates"
+    ][0]["edition_evidence"]["source"]["sha256"]
+    successor["supersession"] = {
+        "supersedes_group_id": "R01",
+        "authenticated": True,
+        "approved_by": "Second reviewer",
+        "approved_at": "2026-06-19T00:00:00Z",
+        "rationale": "Explicit review acknowledges the replacement deposited edition.",
+        "superseded_candidate": {
+            "doi": pair.doi,
+            "github_release_url": pair.github_release_url,
+            "zenodo_record_url": pair.zenodo_record_url,
+            "github_repo": pair.github_repo,
+            "title": pair.record.title,
+            "release_tag": pair.release.tag,
+        },
+    }
+    ledger["groups"].append(successor)
+    path = tmp_path / "data/paired-publication-decisions.json"
+    path.write_text(json.dumps(ledger) + "\n")
+    old_action, new_action = build_sync_actions([pair, newer], repo_root=tmp_path)
+    assert old_action.action_type != "already_reviewed"
+    assert new_action.action_type == "already_reviewed"
+    assert json.loads(path.read_text())["groups"][0] == original
+
+
+def test_cached_edition_binding_is_never_authority_over_durable_ledger(tmp_path):
+    pair, _ = _version_bound_review_fixture(tmp_path)
+    cache = _review_cache(tmp_path, pair)
+    newer = _changed_reviewed_edition(pair, "new_record")
+    cached = next(iter(cache.already_reviewed.values()))
+    cached.update(
+        edition_record_id=newer.record.record_id,
+        edition_record_sha256=_inline_edition_evidence(newer)["record_sha256"],
+        edition_binding_state="bound",
+    )
+    # Genuine current ledger/bibliography hashes do not authenticate a mutable cache row.
+    assert cache.inputs == classification_inputs(tmp_path)
+    assert (
+        build_sync_actions([newer], repo_root=tmp_path, cache=cache)[0].action_type
+        != "already_reviewed"
+    )
+
+
+def test_missing_edition_decisions_keep_observation_deferred(tmp_path):
+    from docxology_tools.public_source_review import paired_publication_items
+
+    pair, _ = _version_bound_review_fixture(tmp_path)
+    action = build_sync_actions([pair], repo_root=tmp_path)[0]
+    report = {
+        "generated_at": "2026-06-18T01:00:00Z",
+        "warnings": [],
+        "actions": [action.to_dict()],
+        "pairs": [pair.to_dict()],
+        "zenodo_records": [pair.record.to_dict()],
+    }
+    items = paired_publication_items(
+        report,
+        None,
+        report_source="reports/paired_publications_2026-06-18.json",
+        decision_source=None,
+        snapshot_generated_at=None,
+        repo_root=tmp_path,
+    )
+    assert len(items) == 1 and items[0]["status"] == "deferred"
+
+
+@pytest.mark.parametrize(
+    "change", [None, "new_record", "version_metadata", "file_manifest"]
+)
+def test_ambiguous_manual_review_rechecks_edition_evidence(tmp_path, change):
+    from docxology_tools.public_source_review import paired_publication_items
+
+    pair, ledger = _version_bound_review_fixture(tmp_path)
+    action = build_sync_actions([pair], repo_root=tmp_path)[0].to_dict()
+    action["action_type"] = "needs_review"
+    observed = _changed_reviewed_edition(pair, change) if change else pair
+    report = {
+        "generated_at": "2026-06-18T01:00:00Z",
+        "warnings": [],
+        "actions": [action],
+        "pairs": [observed.to_dict()],
+        "zenodo_records": [observed.record.to_dict()],
+    }
+    items = paired_publication_items(
+        report,
+        ledger,
+        report_source="reports/paired_publications_2026-06-18.json",
+        decision_source="data/paired-publication-decisions.json",
+        snapshot_generated_at=None,
+        repo_root=tmp_path,
+    )
+    assert len(items) == 1
+    assert items[0]["status"] == ("deferred" if change else "applied")
+
+
+def _github_api_rows(reader, start, count):
+    rows = []
+    for number in range(start, start + count):
+        row = {
+            "id": number,
+            "name": f"repo-{number}",
+            "full_name": f"example/repo-{number}",
+            "node_id": f"R_{number}",
+            "owner": {"login": "example"},
+            "html_url": f"https://github.com/example/repo-{number}",
+            "assets": [],
+            "tag_name": f"v{number}",
+            "published_at": "2026-11-06T00:00:00Z",
+        }
+        if reader == "pair-releases":
+            row["html_url"] = (
+                f"https://github.com/example/project/releases/tag/v{number}"
+            )
+        rows.append(row)
+    return rows
+
+
+def _github_public_reader(monkeypatch, reader, respond, limit=None):
+    import urllib.parse
+    import build_github_inventory as inventory
+
+    module = (
+        inventory if reader == "inventory-repositories" else sync_paired_publications
+    )
+    calls = []
+
+    def request(url, **kwargs):
+        page = int(urllib.parse.parse_qs(urllib.parse.urlsplit(url).query)["page"][0])
+        calls.append(page)
+        return respond(page)
+
+    monkeypatch.setattr(
+        module,
+        "request_json" if reader == "inventory-repositories" else "fetch_json",
+        request,
+    )
+    if limit is not None:
+        monkeypatch.setattr(module, "MAX_GITHUB_PAGES", limit, raising=False)
+
+    def call():
+        if reader == "inventory-repositories":
+            return inventory.fetch_repositories("example")
+        if reader == "pair-releases":
+            return sync_paired_publications.fetch_github_releases_for_repo(
+                "example", "project"
+            )
+        return sync_paired_publications.fetch_github_repositories("example")
+
+    return call, calls
+
+
+@pytest.mark.parametrize(
+    "reader", ["pair-repositories", "pair-releases", "inventory-repositories"]
+)
+@pytest.mark.parametrize(
+    "kind",
+    [
+        "non_object",
+        "missing_id",
+        "boolean_id",
+        "oversized",
+        "duplicate_in_page",
+        "duplicate_across_pages",
+        "missing_identity_name",
+    ],
+)
+def test_github_public_readers_refuse_malformed_or_repeated_rows(
+    monkeypatch, reader, kind
+):
+    first = _github_api_rows(reader, 1, 100 if kind == "duplicate_across_pages" else 1)
+    second = []
+    if kind == "non_object":
+        first = [None]
+    elif kind == "missing_id":
+        first[0].pop("id")
+    elif kind == "boolean_id":
+        first[0]["id"] = True
+    elif kind == "oversized":
+        first = _github_api_rows(reader, 1, 101)
+    elif kind == "duplicate_in_page":
+        first += json.loads(json.dumps(first))
+    elif kind == "duplicate_across_pages":
+        second = [first[-1], *_github_api_rows(reader, 101, 99)]
+    elif kind == "missing_identity_name":
+        first[0].pop("tag_name" if reader == "pair-releases" else "name")
+    call, _ = _github_public_reader(
+        monkeypatch,
+        reader,
+        lambda page: first if page == 1 else second if page == 2 else [],
+    )
+    with pytest.raises(RuntimeError, match="GitHub"):
+        call()
+
+
+@pytest.mark.parametrize(
+    "reader", ["pair-repositories", "pair-releases", "inventory-repositories"]
+)
+def test_github_public_readers_refuse_unproven_completion_at_request_bound(
+    monkeypatch, reader
+):
+    def respond(page):
+        assert page <= 2, "reader requested beyond its declared page budget"
+        return _github_api_rows(reader, (page - 1) * 100 + 1, 100)
+
+    call, calls = _github_public_reader(monkeypatch, reader, respond, limit=2)
+    with pytest.raises(RuntimeError, match="GitHub.*page"):
+        call()
+    assert calls == [1, 2]
+
+
+@pytest.mark.parametrize(
+    "reader", ["pair-repositories", "pair-releases", "inventory-repositories"]
+)
+@pytest.mark.parametrize("count", [0, 338])
+def test_github_public_readers_preserve_complete_bounded_order(
+    monkeypatch, reader, count
+):
+    rows = _github_api_rows(reader, 1, count)
+    call, calls = _github_public_reader(
+        monkeypatch, reader, lambda page: rows[(page - 1) * 100 : page * 100]
+    )
+    fetched = call()
+    assert len(fetched) == count
+    assert calls == ([1] if count == 0 else [1, 2, 3, 4])
+    if reader == "pair-releases":
+        assert [r.tag for r in fetched] == [r["tag_name"] for r in rows]
+    else:
+        assert fetched == rows
+
+
+@pytest.mark.parametrize(
+    "reader", ["pair-repositories", "pair-releases", "inventory-repositories"]
+)
+def test_github_public_readers_keep_nonlist_response_refusal(monkeypatch, reader):
+    call, _ = _github_public_reader(
+        monkeypatch, reader, lambda page: {"message": "unavailable"}
+    )
+    with pytest.raises(RuntimeError, match="GitHub"):
+        call()
+
+
+def _metadata_extension_fixture(root):
+    _write_minimal_repo(root)
+    pair = _pair()
+    applied = apply_publication_pair(pair, repo_root=root, download_files=False)
+    return (
+        pair,
+        applied.folder,
+        root / "papers/paper_metadata.json",
+        root / "papers" / applied.folder / "metadata.json",
+    )
+
+
+def test_publication_index_preserves_independently_curated_extensions(tmp_path):
+    pair, folder, index, _ = _metadata_extension_fixture(tmp_path)
+    data = json.loads(index.read_text())
+    extras = {
+        "tags": ["curated"],
+        "methods": ["source-backed method"],
+        "key_findings": ["retained finding"],
+        "abstract_provenance": {"source": "full_text.md", "sha256": "a" * 64},
+        "keywords_provenance": {"source": "metadata.json", "sha256": "b" * 64},
+    }
+    data[folder].update(extras)
+    index.write_text(json.dumps(data) + "\n")
+    revised = replace(pair, record=replace(pair.record, title="Updated reviewed title"))
+    sync_paired_publications.update_paper_metadata_index(revised, folder, [], tmp_path)
+    actual = json.loads(index.read_text())[folder]
+    assert {key: actual[key] for key in extras} == extras
+    assert actual["name"] == revised.record.title and actual["doi"] == pair.doi
+
+
+@pytest.mark.parametrize(
+    "field,provenance",
+    [("description", "abstract_provenance"), ("keywords", "keywords_provenance")],
+)
+def test_publication_apply_requires_review_before_replacing_provenance_bound_content(
+    tmp_path, field, provenance
+):
+    pair, folder, index, _ = _metadata_extension_fixture(tmp_path)
+    data = json.loads(index.read_text())
+    data[folder][provenance] = {"source": "full_text.md", "sha256": "a" * 64}
+    index.write_text(json.dumps(data) + "\n")
+    value = "Different abstract" if field == "description" else ["different keyword"]
+    revised = replace(pair, record=replace(pair.record, **{field: value}))
+    before = {
+        p.relative_to(tmp_path): p.read_bytes()
+        for p in tmp_path.rglob("*")
+        if p.is_file()
+    }
+    with pytest.raises(ValueError, match="provenance"):
+        apply_publication_pair(
+            revised, repo_root=tmp_path, download_files=False, folder=folder
+        )
+    assert {
+        p.relative_to(tmp_path): p.read_bytes()
+        for p in tmp_path.rglob("*")
+        if p.is_file()
+    } == before
+
+
+@pytest.mark.parametrize("target", ["index", "folder"])
+@pytest.mark.parametrize("malformed", ["{broken", "[]"])
+def test_publication_apply_refuses_bad_metadata_before_any_write(
+    tmp_path, target, malformed
+):
+    pair, folder, index, metadata = _metadata_extension_fixture(tmp_path)
+    path = index if target == "index" else metadata
+    path.write_text(malformed)
+    revised = replace(
+        pair,
+        release=replace(
+            pair.release,
+            html_url="https://github.com/docxology/new_repo/releases/tag/v2.0.0",
+        ),
+    )
+    before = {
+        p.relative_to(tmp_path): p.read_bytes()
+        for p in tmp_path.rglob("*")
+        if p.is_file()
+    }
+    with pytest.raises(ValueError):
+        apply_publication_pair(
+            revised,
+            repo_root=tmp_path,
+            download_files=False,
+            folder=folder,
+            refresh_docs=True,
+        )
+    assert {
+        p.relative_to(tmp_path): p.read_bytes()
+        for p in tmp_path.rglob("*")
+        if p.is_file()
+    } == before
+
+
+def test_publication_index_rejects_malformed_existing_folder_entry(tmp_path):
+    pair, folder, index, _ = _metadata_extension_fixture(tmp_path)
+    data = json.loads(index.read_text())
+    data[folder] = ["not an object"]
+    index.write_text(json.dumps(data) + "\n")
+    before = index.read_bytes()
+    with pytest.raises(ValueError):
+        sync_paired_publications.update_paper_metadata_index(pair, folder, [], tmp_path)
+    assert index.read_bytes() == before
+
+
+def test_github_inventory_cli_preserves_previous_outputs_on_count_warning(
+    tmp_path, monkeypatch
+):
+    import build_github_inventory as inventory
+
+    cache = tmp_path / "github-repositories.json"
+    cache.write_bytes(b"previous complete inventory\n")
+    payload = {
+        "warnings": ["example profile public_repos=2 but fetched1"],
+        "counts": {
+            "primary_total": 1,
+            "forks": 0,
+            "docxology": 1,
+            "ActiveInferenceInstitute": 0,
+        },
+    }
+    monkeypatch.setattr(inventory, "build_payload", lambda: payload)
+    writes = []
+
+    def write(partial):
+        writes.append(partial)
+        cache.write_bytes(b"partial inventory\n")
+
+    monkeypatch.setattr(inventory, "write_outputs", write)
+    monkeypatch.setattr(sys, "argv", ["build_github_inventory.py"])
+    with pytest.raises(SystemExit, match="warning"):
+        inventory.main()
+    assert writes == []
+    assert cache.read_bytes() == b"previous complete inventory\n"
+
+
+@pytest.mark.parametrize("damage", ["symlink", "ancestor_symlink", "hardlink"])
+def test_edition_cache_dependency_never_reads_unsafe_frozen_sources(tmp_path, damage):
+    pair, _ledger = _version_bound_review_fixture(tmp_path)
+    relative = "reports/publication_intake_2026-06-18.json"
+    source = tmp_path / relative
+    expected = hashlib.sha256(source.read_bytes()).hexdigest()
+    outside = tmp_path.parent / (tmp_path.name + "-external.json")
+    outside.write_bytes(source.read_bytes())
+    if damage == "ancestor_symlink":
+        archived_reports = tmp_path.parent / (tmp_path.name + "-external-reports")
+        (tmp_path / "reports").rename(archived_reports)
+        (tmp_path / "reports").symlink_to(archived_reports, target_is_directory=True)
+    else:
+        source.unlink()
+        if damage == "symlink":
+            source.symlink_to(outside)
+        else:
+            import os
+
+            os.link(outside, source)
+    assert classification_inputs(tmp_path)["edition_source:" + relative] != expected
+    assert (
+        build_sync_actions([pair], repo_root=tmp_path)[0].action_type
+        != "already_reviewed"
+    )
+
+
+# Explicit exact-record inclusion remains bounded and independent of author search.
+def _explicit_record_payload(record):
+    return {
+        "id": int(record.record_id),
+        "conceptdoi": record.doi,
+        "metadata": {
+            "title": record.title,
+            "publication_date": record.publication_date,
+            "version": record.version,
+            "resource_type": record.resource_type,
+            "creators": record.creators,
+            "description": record.description,
+            "keywords": record.keywords,
+            "related_identifiers": record.related_identifiers,
+        },
+        "files": record.files,
+        "links": {"html": record.html_url},
+    }
+
+
+def _explicit_cli_fixture(root, monkeypatch):
+    _write_minimal_repo(root)
+    pair = _pair()
+    monkeypatch.setattr(sync_paired_publications, "REPO_ROOT", root)
+    monkeypatch.setattr(
+        sync_paired_publications,
+        "fetch_github_releases",
+        lambda owners, since=None: ([pair.release], []),
+    )
+    # No optional parameters may be added to the ordinary author-search call.
+    monkeypatch.setattr(
+        sync_paired_publications, "fetch_zenodo_records", lambda: ([pair.record], [])
+    )
+    monkeypatch.setattr(
+        sync_paired_publications, "build_sync_actions", lambda pairs, **kwargs: []
+    )
+    monkeypatch.setattr(
+        sync_paired_publications, "classification_cache_from_report", lambda root: None
+    )
+    monkeypatch.setattr(
+        sync_paired_publications,
+        "classification_cache_payload",
+        lambda entries: {"inputs": classification_inputs(root), "already_reviewed": []},
+    )
+    return pair, root / "reports/paired_publications_2099-01-01.json"
+
+
+def test_explicit_record_cli_fetches_one_exact_record_and_preserves_full_manifest(
+    tmp_path, monkeypatch
+):
+    pair, report = _explicit_cli_fixture(tmp_path, monkeypatch)
+    extra = replace(
+        pair.record,
+        record_id="201",
+        doi="10.5281/zenodo.201",
+        html_url="https://zenodo.org/records/201",
+        title="Explicit extra source",
+    )
+    raw = _explicit_record_payload(extra)
+    calls = []
+
+    def fetch(url, **kwargs):
+        calls.append((url, kwargs))
+        return raw
+
+    monkeypatch.setattr(sync_paired_publications, "fetch_json", fetch)
+    assert (
+        sync_paired_publications.main(
+            [
+                "--report",
+                str(report),
+                "--zenodo-record",
+                "201",
+                "--zenodo-record",
+                "201",
+            ]
+        )
+        == 0
+    )
+    payload = json.loads(report.read_text())
+    assert calls == [("https://zenodo.org/api/records/201", {})]
+    assert payload["explicit_zenodo_record_ids"] == [201]
+    assert payload["zenodo_records"] == [pair.record.to_dict(), extra.to_dict()]
+    assert payload["warnings"] == [] and payload["applied"] == []
+
+
+def test_explicit_record_existing_exact_search_hit_is_not_duplicated(
+    tmp_path, monkeypatch
+):
+    pair, report = _explicit_cli_fixture(tmp_path, monkeypatch)
+    monkeypatch.setattr(
+        sync_paired_publications,
+        "fetch_json",
+        lambda url, **kwargs: _explicit_record_payload(pair.record),
+    )
+    assert (
+        sync_paired_publications.main(
+            ["--report", str(report), "--zenodo-record", pair.record.record_id]
+        )
+        == 0
+    )
+    payload = json.loads(report.read_text())
+    assert payload["zenodo_records"] == [pair.record.to_dict()]
+    assert payload["explicit_zenodo_record_ids"] == [int(pair.record.record_id)]
+
+
+@pytest.mark.parametrize(
+    "damage",
+    [
+        "wrong_id",
+        "bool_id",
+        "missing_metadata",
+        "missing_files",
+        "bad_creators",
+        "bad_keywords",
+        "conflict",
+        "get_failure",
+    ],
+)
+def test_explicit_record_failure_warns_and_preserves_previous_report_before_apply(
+    tmp_path, monkeypatch, damage
+):
+    pair, report = _explicit_cli_fixture(tmp_path, monkeypatch)
+    report.write_bytes(b"previous complete report\n")
+    raw = _explicit_record_payload(pair.record)
+    if damage == "wrong_id":
+        raw["id"] = 202
+    elif damage == "bool_id":
+        raw["id"] = True
+    elif damage == "missing_metadata":
+        raw.pop("metadata")
+    elif damage == "missing_files":
+        raw.pop("files")
+    elif damage == "bad_creators":
+        raw["metadata"]["creators"] = ["not an object"]
+    elif damage == "bad_keywords":
+        raw["metadata"]["keywords"] = "not an array"
+    elif damage == "conflict":
+        raw["metadata"]["title"] = "Conflicting current response"
+    calls = []
+
+    def fetch(url, **kwargs):
+        calls.append(url)
+        if damage == "get_failure":
+            raise OSError("synthetic exact-record unavailable")
+        return raw
+
+    monkeypatch.setattr(sync_paired_publications, "fetch_json", fetch)
+    monkeypatch.setattr(
+        sync_paired_publications,
+        "apply_publication_pair",
+        lambda *a, **kw: pytest.fail("warning reached apply"),
+    )
+    with pytest.raises(SystemExit, match="API warnings"):
+        sync_paired_publications.main(
+            [
+                "--apply",
+                "--report",
+                str(report),
+                "--zenodo-record",
+                pair.record.record_id,
+            ]
+        )
+    assert calls == ["https://zenodo.org/api/records/" + pair.record.record_id]
+    assert report.read_bytes() == b"previous complete report\n"
+
+
+def test_explicit_record_twenty_unique_limit_refuses_before_any_fetch(
+    tmp_path, monkeypatch
+):
+    _pair_value, report = _explicit_cli_fixture(tmp_path, monkeypatch)
+    monkeypatch.setattr(
+        sync_paired_publications,
+        "fetch_github_releases",
+        lambda *a, **kw: pytest.fail("over-limit reached fetch"),
+    )
+    args = ["--report", str(report)]
+    for record_id in range(1, 22):
+        args += ["--zenodo-record", str(record_id)]
+    with pytest.raises(SystemExit):
+        sync_paired_publications.main(args)
+    assert not report.exists()
+
+
+@pytest.mark.parametrize(
+    "record_id",
+    ["0", "-1", "+1", "01", "١", "１", "1/2", "https://zenodo.org/records/1"],
+)
+def test_explicit_record_cli_requires_positive_ascii_identity(
+    tmp_path, monkeypatch, record_id
+):
+    _pair_value, report = _explicit_cli_fixture(tmp_path, monkeypatch)
+    monkeypatch.setattr(
+        sync_paired_publications,
+        "fetch_github_releases",
+        lambda *a, **kw: pytest.fail("invalid ID reached fetch"),
+    )
+    with pytest.raises(SystemExit):
+        sync_paired_publications.main(
+            ["--report", str(report), "--zenodo-record", record_id]
+        )
+    assert not report.exists()
+
+
+def test_explicit_record_default_cli_keeps_existing_zero_argument_fetch_contract(
+    tmp_path, monkeypatch
+):
+    pair, report = _explicit_cli_fixture(tmp_path, monkeypatch)
+    monkeypatch.setattr(
+        sync_paired_publications,
+        "fetch_json",
+        lambda *a, **kw: pytest.fail("default requested an exact record"),
+    )
+    assert sync_paired_publications.main(["--report", str(report)]) == 0
+    payload = json.loads(report.read_text())
+    assert payload["zenodo_records"] == [pair.record.to_dict()]
+    assert "explicit_zenodo_record_ids" not in payload
+
+
+@pytest.mark.parametrize("requested", [False, True])
+def test_explicit_record_cached_replay_preserves_inclusion_without_any_get(
+    tmp_path, monkeypatch, requested
+):
+    pair, report = _explicit_cli_fixture(tmp_path, monkeypatch)
+    payload = _pairing_payload([pair.release], [pair.record])
+    payload["explicit_zenodo_record_ids"] = [int(pair.record.record_id)]
+    report.write_text(json.dumps(payload))
+    monkeypatch.setattr(
+        sync_paired_publications,
+        "fetch_json",
+        lambda *a, **kw: pytest.fail("cached replay performed GET"),
+    )
+    monkeypatch.setattr(
+        sync_paired_publications,
+        "fetch_github_releases",
+        lambda *a, **kw: pytest.fail("cached replay fetched releases"),
+    )
+    monkeypatch.setattr(
+        sync_paired_publications,
+        "fetch_zenodo_records",
+        lambda *a, **kw: pytest.fail("cached replay searched authors"),
+    )
+    args = ["--cache-reports", "--report", str(report)]
+    if requested:
+        args += ["--zenodo-record", pair.record.record_id]
+    assert sync_paired_publications.main(args) == 0
+    saved = json.loads(report.read_text())
+    assert saved["explicit_zenodo_record_ids"] == [int(pair.record.record_id)]
+    assert saved["zenodo_records"] == [pair.record.to_dict()]
+
+
+def test_explicit_record_cache_missing_requested_id_refuses_without_get_or_write(
+    tmp_path, monkeypatch
+):
+    pair, report = _explicit_cli_fixture(tmp_path, monkeypatch)
+    report.write_text(json.dumps(_pairing_payload([pair.release], [pair.record])))
+    original = report.read_bytes()
+    monkeypatch.setattr(
+        sync_paired_publications,
+        "fetch_json",
+        lambda *a, **kw: pytest.fail("missing cached ID performed GET"),
+    )
+    with pytest.raises(SystemExit, match="cached.*201|201.*cached"):
+        sync_paired_publications.main(
+            ["--cache-reports", "--report", str(report), "--zenodo-record", "201"]
+        )
+    assert report.read_bytes() == original
+
+
+@pytest.mark.parametrize(
+    "declared", [None, [True], ["20990001"], [0], [20990001, 20990001], [201]]
+)
+def test_explicit_record_cached_declaration_must_bind_unique_present_integer_records(
+    tmp_path, declared
+):
+    pair = _pair()
+    path = tmp_path / "cached.json"
+    payload = _pairing_payload([pair.release], [pair.record])
+    payload["explicit_zenodo_record_ids"] = declared
+    path.write_text(json.dumps(payload))
+    with pytest.raises(SystemExit, match="explicit"):
+        load_cached_scan_payload(path)
+
+
+@pytest.mark.parametrize(
+    "mode", [["--check"], ["--redact-local-paths", "--report", "unused.json"]]
+)
+def test_explicit_record_option_is_never_silently_ignored_by_non_intake_modes(mode):
+    with pytest.raises(SystemExit):
+        sync_paired_publications.main([*mode, "--zenodo-record", "201"])
+
+
+@pytest.mark.parametrize(
+    "damage",
+    [
+        None,
+        "commit",
+        "foreign_repo",
+        "query",
+        "fragment",
+        "userinfo",
+        "http",
+        "both_locations",
+    ],
+)
+def test_inline_blob_url_requires_exact_immutable_report_identity(tmp_path, damage):
+    pair, ledger = _version_bound_review_fixture(tmp_path)
+    evidence = _inline_edition_evidence(pair)
+    source = evidence["source"]
+    original_path = source.pop("path")
+    source["url"] = (
+        "https://github.com/docxology/docxology/blob/"
+        + source["commit"]
+        + "/"
+        + original_path
+    )
+    if damage == "commit":
+        source["url"] = source["url"].replace(source["commit"], "b" * 40)
+    elif damage == "foreign_repo":
+        source["url"] = source["url"].replace("docxology/docxology", "other/docxology")
+    elif damage == "query":
+        source["url"] += "?raw=1"
+    elif damage == "fragment":
+        source["url"] += "#report"
+    elif damage == "userinfo":
+        source["url"] = source["url"].replace("github.com", "user@github.com")
+    elif damage == "http":
+        source["url"] = source["url"].replace("https:", "http:")
+    elif damage == "both_locations":
+        source["path"] = original_path
+    ledger["groups"][0]["raw_candidates"][0]["edition_evidence"] = evidence
+    (tmp_path / "data/paired-publication-decisions.json").write_text(json.dumps(ledger))
+    (tmp_path / "reports/publication_intake_2026-06-18.json").unlink()
+    action = build_sync_actions([pair], repo_root=tmp_path)[0]
+    assert (action.action_type == "already_reviewed") is (damage is None)
+
+
+@pytest.mark.parametrize("mode", ["same_pool", "filtered_pool", "live_pool"])
+def test_explicit_record_capture_context_is_forwarded_only_for_exact_cached_pool(
+    tmp_path, monkeypatch, mode
+):
+    pair, report = _explicit_cli_fixture(tmp_path, monkeypatch)
+    payload = _pairing_payload([pair.release], [pair.record])
+    context = {
+        "captured_at": "2026-01-01T01:00:00Z",
+        "source_receipt_sha256": "a" * 64,
+        "scope": {"records": 1, "releases": 1},
+    }
+    payload["source_observations"] = context
+    report.write_text(json.dumps(payload))
+    args = ["--report", str(report)]
+    if mode != "live_pool":
+        args += ["--cache-reports"]
+        monkeypatch.setattr(
+            sync_paired_publications,
+            "fetch_json",
+            lambda *a, **kw: pytest.fail("cached context performed GET"),
+        )
+    if mode == "filtered_pool":
+        args += ["--since", "2099-01-01"]
+    assert sync_paired_publications.main(args) == 0
+    saved = json.loads(report.read_text())
+    if mode == "same_pool":
+        assert saved["source_observations"] == context
+        assert json.dumps(saved["source_observations"]) == json.dumps(context)
+    else:
+        assert "source_observations" not in saved
+
+
+def test_explicit_record_twenty_unique_ids_are_accepted_with_twenty_exact_gets(
+    tmp_path, monkeypatch
+):
+    pair, report = _explicit_cli_fixture(tmp_path, monkeypatch)
+    calls = []
+
+    def fetch(url, **kwargs):
+        record_id = url.rsplit("/", 1)[1]
+        calls.append(record_id)
+        return _explicit_record_payload(
+            replace(
+                pair.record,
+                record_id=record_id,
+                doi="10.5281/zenodo." + record_id,
+                html_url="https://zenodo.org/records/" + record_id,
+            )
+        )
+
+    monkeypatch.setattr(sync_paired_publications, "fetch_json", fetch)
+    args = ["--report", str(report)]
+    for record_id in range(1, 21):
+        args += ["--zenodo-record", str(record_id)]
+    assert sync_paired_publications.main(args) == 0
+    saved = json.loads(report.read_text())
+    assert calls == [str(i) for i in range(1, 21)]
+    assert saved["explicit_zenodo_record_ids"] == list(range(1, 21))
+    assert len(saved["zenodo_records"]) == 21
+    assert len({record["doi"] for record in saved["zenodo_records"]}) == 21
+
+
+def test_explicit_record_cache_can_declare_an_already_present_record_without_get(
+    tmp_path, monkeypatch
+):
+    pair, report = _explicit_cli_fixture(tmp_path, monkeypatch)
+    report.write_text(json.dumps(_pairing_payload([pair.release], [pair.record])))
+    monkeypatch.setattr(
+        sync_paired_publications,
+        "fetch_json",
+        lambda *a, **kw: pytest.fail("present cached ID performed GET"),
+    )
+    assert (
+        sync_paired_publications.main(
+            [
+                "--cache-reports",
+                "--report",
+                str(report),
+                "--zenodo-record",
+                pair.record.record_id,
+            ]
+        )
+        == 0
+    )
+    assert json.loads(report.read_text())["explicit_zenodo_record_ids"] == [
+        int(pair.record.record_id)
+    ]
+
+
+def test_explicit_record_persisted_check_refuses_a_declared_missing_record(tmp_path):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    path = tmp_path / "reports/paired_publications_2099-01-01.json"
+    write_report(
+        path,
+        owners=["docxology"],
+        releases=[pair.release],
+        records=[pair.record],
+        pairs=[pair],
+        actions=[],
+        warnings=[],
+    )
+    payload = json.loads(path.read_text())
+    payload["explicit_zenodo_record_ids"] = [201]
+    path.write_text(json.dumps(payload))
+    with pytest.raises(SystemExit, match="explicit"):
+        check_report(repo_root=tmp_path)
+
+
+@pytest.mark.parametrize(
+    "field,value",
+    [
+        ("creators", ["malformed creator"]),
+        ("resource_type", {}),
+        ("publication_date", "not a date"),
+        ("files", [{"key": "paper.pdf"}]),
+    ],
+)
+def test_explicit_record_cached_declaration_requires_complete_selected_record(
+    tmp_path, field, value
+):
+    pair = _pair()
+    payload = _pairing_payload([pair.release], [pair.record])
+    payload["explicit_zenodo_record_ids"] = [int(pair.record.record_id)]
+    payload["zenodo_records"][0][field] = value
+    path = tmp_path / "cached.json"
+    path.write_text(json.dumps(payload))
+    with pytest.raises(SystemExit, match="explicit"):
+        load_cached_scan_payload(path)
+
+
+def test_explicit_record_preserves_real_year_only_publication_date(tmp_path, monkeypatch):
+    _pair_value, report = _explicit_cli_fixture(tmp_path, monkeypatch)
+    fixture_path = Path(__file__).parent / "fixtures/zenodo-year-only-20804586.json"
+    fixture_bytes = fixture_path.read_bytes()
+    assert hashlib.sha256(fixture_bytes).hexdigest() == "2eba0c3c9c3b624d158c081f76865a0bd38cbf6f3891d885ae834f8d674d996f"
+    record = json.loads(fixture_bytes)["record"]
+    assert record["id"] == 20804586
+    assert record["metadata"]["publication_date"] == "2026"
+    calls = []
+
+    def fetch(url, **kwargs):
+        calls.append(url)
+        return record
+
+    monkeypatch.setattr(sync_paired_publications, "fetch_json", fetch)
+    assert sync_paired_publications.main(
+        ["--report", str(report), "--zenodo-record", "20804586"]
+    ) == 0
+    saved = json.loads(report.read_text())
+    observed = next(
+        row for row in saved["zenodo_records"] if row["record_id"] == "20804586"
+    )
+    assert observed["publication_date"] == "2026"
+    assert observed == ZenodoRecord.from_api(record).to_dict()
+    assert saved["explicit_zenodo_record_ids"] == [20804586]
+    assert calls == ["https://zenodo.org/api/records/20804586"]
+
+
+@pytest.mark.parametrize("change", ["record_id", "file_manifest", "title"])
+@pytest.mark.parametrize("reverse", [False, True])
+def test_pairing_refuses_differing_observed_editions_for_same_release_and_concept(change, reverse):
+    pair = _pair()
+    if change == "record_id":
+        conflicting = replace(
+            pair.record,
+            record_id="20990002",
+            html_url="https://zenodo.org/records/20990002",
+        )
+    elif change == "file_manifest":
+        files = [dict(row) for row in pair.record.files]
+        files[0] = {**files[0], "size": files[0]["size"] + 1}
+        conflicting = replace(pair.record, files=files)
+    else:
+        conflicting = replace(pair.record, title=pair.record.title + " — revised")
+    records = [pair.record, conflicting]
+    if reverse:
+        records.reverse()
+    with pytest.raises(ValueError, match="(?i)ambiguous|conflicting"):
+        find_publication_pairs([pair.release], records)
+
+
+def test_pairing_deduplicates_only_identical_record_payloads():
+    pair = _pair()
+    duplicate = replace(pair.record, files=[dict(row) for row in pair.record.files])
+    pairs = find_publication_pairs([pair.release], [pair.record, duplicate])
+    assert len(pairs) == 1
+    assert pairs[0].record.to_dict() == pair.record.to_dict()
+
+
+def test_explicit_record_ambiguous_concept_refuses_before_report_or_apply(tmp_path, monkeypatch):
+    pair, report = _explicit_cli_fixture(tmp_path, monkeypatch)
+    report.write_text(json.dumps(_pairing_payload([pair.release], [pair.record])))
+    previous = report.read_bytes()
+    newer = replace(
+        pair.record,
+        record_id="20990002",
+        html_url="https://zenodo.org/records/20990002",
+        version="2.0.0",
+    )
+    calls = []
+
+    def fetch(url, **kwargs):
+        calls.append(url)
+        return _explicit_record_payload(newer)
+
+    monkeypatch.setattr(sync_paired_publications, "fetch_json", fetch)
+    monkeypatch.setattr(
+        sync_paired_publications,
+        "apply_publication_pair",
+        lambda *args, **kwargs: pytest.fail("ambiguous editions reached apply"),
+    )
+    with pytest.raises(ValueError, match="(?i)ambiguous|conflicting"):
+        sync_paired_publications.main(
+            ["--apply", "--report", str(report), "--zenodo-record", "20990002"]
+        )
+    assert report.read_bytes() == previous
+    assert calls == ["https://zenodo.org/api/records/20990002"]

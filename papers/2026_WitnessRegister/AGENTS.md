@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: witness_register Python package with shape-check intake of envelopes, SHA-256 sealed, prior_ref-chained append-only witness states, Non-compensatory -1/0/+1 projection with fixed precedence rules
-- Identifies findings: On four real envelopes describing different subjects, chain verification was clean, return recoverability and relation fidelity were 1.0, and the posture was held at 0., In the same-subject example, meeting the return contract lifted only the return_due hold, and the posture stayed at 0 because one open question entered as an unresolved dependency., A non-compensatory block forced -1 both alone and under fifty AGREES relations; an empty register was -1.
+- Extracts methods: Envelope co-registration with separate authored relations, Canonical digest and prior-reference state chain
+- Identifies findings: The manuscript explicitly distinguishes intake shape validation from a truth check., The declared posture is not a decision, utility or boundary-owner permission, and the chain tip remains unbound without an external anchor.
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

@@ -10,7 +10,7 @@
 
 ## Abstract
 
-> Statement-level forensic audit of the MillenniumLean package (AIX Global, Zenodo 10.5281/zenodo.22226553), which claims kernel-checked Lean 4 proofs of the six remaining Clay Millennium Problems. The audit independently reproduces every kernel-hygiene claim (clean build, zero sorry, zero project axioms) under the pinned toolchain, then audits what the theorem types actually say. Verdict: none of the six problems is resolved.
+> This deposited report audits the MillenniumLean package's claims about six Clay Millennium Problems. It reports a pinned-toolchain examination of eleven files and fourteen itemized findings, distinguishing kernel acceptance from whether a theorem states and resolves the intended mathematical problem. The author's reported verdict is that none of the six problems is resolved by that package. This catalog refresh checks the deposited text and provenance; it does not independently rerun Lean or recertify either the package or the audit.
 
 ## Keywords
 
@@ -18,17 +18,13 @@
 
 ## Methods
 
-- **Independent kernel reproduction under the pinned Lean 4/mathlib toolchain** — Rebuilt the MillenniumLean package with the exact pinned Lean toolchain and mathlib revision and re-ran its axiom report to check its kernel-hygiene claims.
-- **Statement-level binder parsing compared against official Clay statements** — Parsed each claimed final theorem with a binder extractor and classified it against the official Clay problem statements as conditional, definition-only, or off-topic.
-- **Script-checked, line-anchored quotation of the package source** — Verified all line-anchored quotations in the fourteen finding reports against the extracted package bytes by script, and disclosed an earlier failed draft.
-- **Test suite asserting audit facts on real package bytes** — Used fifteen test files that assert audit facts against the actual package bytes without mocks.
+- **Pinned-package source and theorem-statement audit** — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.
+- **Itemized source quotes and probe reports** — Described in the selected deposited manuscript; source-text review does not re-execute or independently validate this method.
 
 ## Key Findings
 
-- The package's kernel claims hold and reproduce exactly: clean build, zero live sorry, zero project axioms, and only standard axiom footprints.
-- The claimed final theorems are evidentially void: conditional implications with unproved premises, definitions of the open statements, or true theorems about unrelated simple objects.
-- The 'universalization tower' certifying Hodge, BSD and Navier-Stokes proves only that 0 < n + 1 for all naturals.
-- Verdict: none of the six Clay problems is resolved; the audit disputes no kernel output, only what those outputs are claimed to demonstrate.
+- The report distinguishes reproduced kernel-hygiene outputs from the mathematical content of the claimed final theorems.
+- The author's stated verdict is that the package resolves none of the six problems; this remains an attributed audit conclusion.
 
 _Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`)._
 
@@ -38,8 +34,11 @@ _Methods and findings are summarized from the full text; each item is backed by 
 - DOI: [10.5281/zenodo.22243472](https://doi.org/10.5281/zenodo.22243472)
 - Artifact DOI: [10.5281/zenodo.22243473](https://doi.org/10.5281/zenodo.22243473)
 - Zenodo record: [https://zenodo.org/records/22243473](https://zenodo.org/records/22243473)
-- PDF: [Friedman_2026_MillenniumAudit.pdf](Friedman_2026_MillenniumAudit.pdf)
-- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/22243473)
+- Historical local PDF: [Friedman_2026_MillenniumAudit.pdf](Friedman_2026_MillenniumAudit.pdf)
+- Current PDF (Zenodo, version 1.0.0): [Millennium_Audit_combined.pdf](https://zenodo.org/api/records/22243473/files/Millennium_Audit_combined.pdf/content)
+- Local PDFs remain preserved historical archives.
+- Extracted text retains its own source provenance; a matching filename does not establish edition identity.
+- PDF SHA-256: b56db71bf6b31757e45cd3b19217b14f2acbb258d763d4d24ba5ab292074e4ae
 
 ## Citation
 

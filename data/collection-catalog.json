@@ -10607,6 +10607,285 @@
         "DOI": "10.5281/zenodo.18288113",
         "URL": "https://doi.org/10.5281/zenodo.18288113"
       }
+    },
+    {
+      "key": "Friedman2026RikishiReproducibleOperationAnalysis236",
+      "title": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ],
+      "year": 2026,
+      "url": "/works/Friedman2026RikishiReproducibleOperationAnalysis236.html",
+      "bib": "@article{Friedman2026RikishiReproducibleOperationAnalysis236,\n  title = {Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo (preprint)},\n  doi = {10.5281/zenodo.23987670},\n  url = {https://doi.org/10.5281/zenodo.23987670},\n  keywords = {Computational; Paper},\n  note = {Catalog row 236; docs: papers/2026_Rikishi/}\n}",
+      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology\nT2  - Zenodo (preprint)\nDO  - 10.5281/zenodo.23987670\nUR  - https://doi.org/10.5281/zenodo.23987670\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 236; docs: papers/2026_Rikishi/\nER  -",
+      "csl": {
+        "id": "Friedman2026RikishiReproducibleOperationAnalysis236",
+        "type": "article-journal",
+        "title": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+        "author": [
+          {
+            "family": "Friedman",
+            "given": "Daniel Ari"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "genre": "Paper",
+        "keyword": "Computational; Paper",
+        "note": "Catalog row 236; docs: papers/2026_Rikishi/",
+        "container-title": "Zenodo (preprint)",
+        "publisher": "Zenodo (preprint)",
+        "DOI": "10.5281/zenodo.23987670",
+        "URL": "https://doi.org/10.5281/zenodo.23987670"
+      }
+    },
+    {
+      "key": "Friedman20262026ActiveInferenceSymposium237",
+      "title": "2026 Active Inference Symposium — Presenter Program",
+      "authors": [
+        "Active Inference Institute",
+        "Bradly Alicea",
+        "Dan Corva, Kevin Backhouse",
+        "Hongju Pae",
+        "Karl Friston",
+        "Alison Gopnik",
+        "Bianca Avanzo",
+        "Ed Ober",
+        "John Boik, Glen EP Ropella",
+        "Luca Possati",
+        "Majid D. Beni",
+        "Mike Levin",
+        "Montijn van Loo",
+        "Ryan Smith",
+        "Sergio Rubin",
+        "Takuya Isomura",
+        "Ted J. Vrioni",
+        "Ahmad Nazzal",
+        "Alexander Sabine",
+        "Andrew Pashea",
+        "Anna Pereira",
+        "Avel Guénin—Carlut",
+        "Bo Lee",
+        "Bruce Tisler",
+        "Cleber Gomes",
+        "Colin Turfus",
+        "Daniel Dragolich",
+        "Daniel Friedman",
+        "Diaconescu Adrian-Stelian",
+        "Harshil Shah, Andrew Pashea",
+        "Harshil Shah, Satyaki Maitra",
+        "Holly Grimm, John H. Clippinger, Daniel Ari Friedman",
+        "Hyojun Choi",
+        "Jean-François Cloutier",
+        "Lancelot Da Costa",
+        "Matthew Brown",
+        "Michael Lennon",
+        "Michael Walker",
+        "Nick Hay, Adam Safron",
+        "Patricia Craja",
+        "Paulo Santiago",
+        "Rajkaushik Borgohain",
+        "Robert Worden",
+        "Sheena Yap Chan",
+        "Stell",
+        "Steph Macurdy",
+        "Tao Gong",
+        "Tiga Kailimai",
+        "Tran Hoang Linh",
+        "Viraj Deshwal",
+        "Vitalii Shapovalov",
+        "Vitória de Souza",
+        "Xin Sun"
+      ],
+      "year": 2026,
+      "url": "/works/Friedman20262026ActiveInferenceSymposium237.html",
+      "bib": "@book{Friedman20262026ActiveInferenceSymposium237,\n  title = {2026 Active Inference Symposium — Presenter Program},\n  author = {{Active Inference Institute} and {Bradly Alicea} and {Dan Corva, Kevin Backhouse} and {Hongju Pae} and {Karl Friston} and {Alison Gopnik} and {Bianca Avanzo} and {Ed Ober} and {John Boik, Glen EP Ropella} and {Luca Possati} and {Majid D. Beni} and {Mike Levin} and {Montijn van Loo} and {Ryan Smith} and {Sergio Rubin} and {Takuya Isomura} and {Ted J. Vrioni} and {Ahmad Nazzal} and {Alexander Sabine} and {Andrew Pashea} and {Anna Pereira} and {Avel Guénin—Carlut} and {Bo Lee} and {Bruce Tisler} and {Cleber Gomes} and {Colin Turfus} and {Daniel Dragolich} and {Daniel Friedman} and {Diaconescu Adrian-Stelian} and {Harshil Shah, Andrew Pashea} and {Harshil Shah, Satyaki Maitra} and {Holly Grimm, John H. Clippinger, Daniel Ari Friedman} and {Hyojun Choi} and {Jean-François Cloutier} and {Lancelot Da Costa} and {Matthew Brown} and {Michael Lennon} and {Michael Walker} and {Nick Hay, Adam Safron} and {Patricia Craja} and {Paulo Santiago} and {Rajkaushik Borgohain} and {Robert Worden} and {Sheena Yap Chan} and {Stell} and {Steph Macurdy} and {Tao Gong} and {Tiga Kailimai} and {Tran Hoang Linh} and {Viraj Deshwal} and {Vitalii Shapovalov} and {Vitória de Souza} and {Xin Sun}},\n  year = {2026},\n  howpublished = {Zenodo (presenter program)},\n  doi = {10.5281/zenodo.23986504},\n  url = {https://doi.org/10.5281/zenodo.23986504},\n  keywords = {Media & Teaching; Book},\n  note = {Catalog row 237; docs: papers/2026_SymposiumPresenterProgram/}\n}",
+      "ris": "TY  - BOOK\nAU  - Active Inference Institute\nAU  - Bradly Alicea\nAU  - Dan Corva, Kevin Backhouse\nAU  - Hongju Pae\nAU  - Karl Friston\nAU  - Alison Gopnik\nAU  - Bianca Avanzo\nAU  - Ed Ober\nAU  - John Boik, Glen EP Ropella\nAU  - Luca Possati\nAU  - Majid D. Beni\nAU  - Mike Levin\nAU  - Montijn van Loo\nAU  - Ryan Smith\nAU  - Sergio Rubin\nAU  - Takuya Isomura\nAU  - Ted J. Vrioni\nAU  - Ahmad Nazzal\nAU  - Alexander Sabine\nAU  - Andrew Pashea\nAU  - Anna Pereira\nAU  - Avel Guénin—Carlut\nAU  - Bo Lee\nAU  - Bruce Tisler\nAU  - Cleber Gomes\nAU  - Colin Turfus\nAU  - Daniel Dragolich\nAU  - Daniel Friedman\nAU  - Diaconescu Adrian-Stelian\nAU  - Harshil Shah, Andrew Pashea\nAU  - Harshil Shah, Satyaki Maitra\nAU  - Holly Grimm, John H. Clippinger, Daniel Ari Friedman\nAU  - Hyojun Choi\nAU  - Jean-François Cloutier\nAU  - Lancelot Da Costa\nAU  - Matthew Brown\nAU  - Michael Lennon\nAU  - Michael Walker\nAU  - Nick Hay, Adam Safron\nAU  - Patricia Craja\nAU  - Paulo Santiago\nAU  - Rajkaushik Borgohain\nAU  - Robert Worden\nAU  - Sheena Yap Chan\nAU  - Stell\nAU  - Steph Macurdy\nAU  - Tao Gong\nAU  - Tiga Kailimai\nAU  - Tran Hoang Linh\nAU  - Viraj Deshwal\nAU  - Vitalii Shapovalov\nAU  - Vitória de Souza\nAU  - Xin Sun\nPY  - 2026\nTI  - 2026 Active Inference Symposium — Presenter Program\nT2  - Zenodo (presenter program)\nDO  - 10.5281/zenodo.23986504\nUR  - https://doi.org/10.5281/zenodo.23986504\nKW  - Media & Teaching\nKW  - Book\nN1  - Catalog row 237; docs: papers/2026_SymposiumPresenterProgram/\nER  -",
+      "csl": {
+        "id": "Friedman20262026ActiveInferenceSymposium237",
+        "type": "book",
+        "title": "2026 Active Inference Symposium — Presenter Program",
+        "author": [
+          {
+            "literal": "Active Inference Institute"
+          },
+          {
+            "literal": "Bradly Alicea"
+          },
+          {
+            "literal": "Dan Corva, Kevin Backhouse"
+          },
+          {
+            "literal": "Hongju Pae"
+          },
+          {
+            "literal": "Karl Friston"
+          },
+          {
+            "literal": "Alison Gopnik"
+          },
+          {
+            "literal": "Bianca Avanzo"
+          },
+          {
+            "literal": "Ed Ober"
+          },
+          {
+            "literal": "John Boik, Glen EP Ropella"
+          },
+          {
+            "literal": "Luca Possati"
+          },
+          {
+            "literal": "Majid D. Beni"
+          },
+          {
+            "literal": "Mike Levin"
+          },
+          {
+            "literal": "Montijn van Loo"
+          },
+          {
+            "literal": "Ryan Smith"
+          },
+          {
+            "literal": "Sergio Rubin"
+          },
+          {
+            "literal": "Takuya Isomura"
+          },
+          {
+            "literal": "Ted J. Vrioni"
+          },
+          {
+            "literal": "Ahmad Nazzal"
+          },
+          {
+            "literal": "Alexander Sabine"
+          },
+          {
+            "literal": "Andrew Pashea"
+          },
+          {
+            "literal": "Anna Pereira"
+          },
+          {
+            "literal": "Avel Guénin—Carlut"
+          },
+          {
+            "literal": "Bo Lee"
+          },
+          {
+            "literal": "Bruce Tisler"
+          },
+          {
+            "literal": "Cleber Gomes"
+          },
+          {
+            "literal": "Colin Turfus"
+          },
+          {
+            "literal": "Daniel Dragolich"
+          },
+          {
+            "literal": "Daniel Friedman"
+          },
+          {
+            "literal": "Diaconescu Adrian-Stelian"
+          },
+          {
+            "literal": "Harshil Shah, Andrew Pashea"
+          },
+          {
+            "literal": "Harshil Shah, Satyaki Maitra"
+          },
+          {
+            "literal": "Holly Grimm, John H. Clippinger, Daniel Ari Friedman"
+          },
+          {
+            "literal": "Hyojun Choi"
+          },
+          {
+            "literal": "Jean-François Cloutier"
+          },
+          {
+            "literal": "Lancelot Da Costa"
+          },
+          {
+            "literal": "Matthew Brown"
+          },
+          {
+            "literal": "Michael Lennon"
+          },
+          {
+            "literal": "Michael Walker"
+          },
+          {
+            "literal": "Nick Hay, Adam Safron"
+          },
+          {
+            "literal": "Patricia Craja"
+          },
+          {
+            "literal": "Paulo Santiago"
+          },
+          {
+            "literal": "Rajkaushik Borgohain"
+          },
+          {
+            "literal": "Robert Worden"
+          },
+          {
+            "literal": "Sheena Yap Chan"
+          },
+          {
+            "literal": "Stell"
+          },
+          {
+            "literal": "Steph Macurdy"
+          },
+          {
+            "literal": "Tao Gong"
+          },
+          {
+            "literal": "Tiga Kailimai"
+          },
+          {
+            "literal": "Tran Hoang Linh"
+          },
+          {
+            "literal": "Viraj Deshwal"
+          },
+          {
+            "literal": "Vitalii Shapovalov"
+          },
+          {
+            "literal": "Vitória de Souza"
+          },
+          {
+            "literal": "Xin Sun"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "genre": "Book",
+        "keyword": "Media & Teaching; Book",
+        "note": "Catalog row 237; docs: papers/2026_SymposiumPresenterProgram/",
+        "container-title": "Zenodo (presenter program)",
+        "publisher": "Zenodo (presenter program)",
+        "DOI": "10.5281/zenodo.23986504",
+        "URL": "https://doi.org/10.5281/zenodo.23986504"
+      }
     }
   ]
 }

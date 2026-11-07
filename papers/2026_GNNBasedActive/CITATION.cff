@@ -18,6 +18,15 @@ identifiers:
   - type: url
     value: "https://doi.org/10.5281/zenodo.23670187"
     description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.23676081"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.23676081"
+    description: "Version/download DOI resolver (Zenodo artifact)"
+  - type: url
+    value: "https://zenodo.org/records/23676081"
+    description: "Version/download landing page (Zenodo artifact)"
   - type: url
     value: "https://github.com/ActiveInferenceInstitute/active_inference_battleship/releases/tag/v0.5.0"
     description: "GitHub release"

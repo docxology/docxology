@@ -51,7 +51,10 @@ from docxology_tools.publication_pairing import (  # noqa: E402
     render_citation,
     render_readme,
     render_skill,
-    reviewed_pair_decision_index,
+    reviewed_pair_edition_index,
+    publication_edition_matches,
+    publication_edition_source_sha256,
+    publication_edition_sha256,
     slug_topic,
 )
 
@@ -113,33 +116,58 @@ def fetch_json(url: str, *, timeout: int = 30, github: bool = False) -> Any:
         return json.loads(response.read().decode("utf-8"))
 
 
+# A full last-budget page cannot prove completion; reject rather than truncate.
+MAX_GITHUB_PAGES = 20
+
+
 def _paged_github(url_template: str) -> list[Any]:
     rows: list[Any] = []
-    page = 1
-    while True:
+    seen: set[int] = set()
+    for page in range(1, MAX_GITHUB_PAGES + 1):
         batch = fetch_json(url_template.format(page=page), github=True)
-        if not isinstance(batch, list):
-            raise RuntimeError(
-                f"Unexpected GitHub response from {url_template}: {batch!r}"
-            )
+        if not isinstance(batch, list) or len(batch) > 100:
+            raise RuntimeError("GitHub page must be a bounded records list")
+        for item in batch:
+            if (
+                not isinstance(item, dict)
+                or type(item.get("id")) is not int
+                or item["id"] <= 0
+            ):
+                raise RuntimeError(
+                    "GitHub page record needs an exact positive numeric identity"
+                )
+            if item["id"] in seen:
+                raise RuntimeError("GitHub pagination repeated a record identity")
+            seen.add(item["id"])
         rows.extend(batch)
         if len(batch) < 100:
             return rows
-        page += 1
+    raise RuntimeError(
+        f"GitHub pagination reached its {MAX_GITHUB_PAGES}-page request bound incomplete"
+    )
 
 
 def fetch_github_repositories(owner: str) -> list[dict[str, Any]]:
     url = f"https://api.github.com/users/{owner}/repos?per_page=100&page={{page}}&sort=updated&direction=desc"
-    return [repo for repo in _paged_github(url) if isinstance(repo, dict)]
+    repositories = _paged_github(url)
+    if any(
+        not isinstance(repo.get("name"), str) or not repo["name"].strip()
+        for repo in repositories
+    ):
+        raise RuntimeError("GitHub repository record needs a nonempty name")
+    return repositories
 
 
 def fetch_github_releases_for_repo(owner: str, repo: str) -> list[GitHubRelease]:
     url = f"https://api.github.com/repos/{owner}/{repo}/releases?per_page=100&page={{page}}"
-    return [
-        GitHubRelease.from_api(owner, repo, item)
-        for item in _paged_github(url)
-        if isinstance(item, dict)
-    ]
+    records = _paged_github(url)
+    if any(
+        not isinstance(item.get(key), str) or not item[key].strip()
+        for item in records
+        for key in ("tag_name", "html_url")
+    ):
+        raise RuntimeError("GitHub release record needs its tag and public URL")
+    return [GitHubRelease.from_api(owner, repo, item) for item in records]
 
 
 def _date_at_or_after(value: str, since: str | None) -> bool:
@@ -213,6 +241,175 @@ def fetch_zenodo_records() -> tuple[list[ZenodoRecord], list[str]]:
     return records, warnings
 
 
+MAX_EXPLICIT_ZENODO_RECORDS = 20
+
+
+def _positive_zenodo_record_id(value: str) -> int:
+    if not re.fullmatch(r"[1-9][0-9]*", value):
+        raise argparse.ArgumentTypeError(
+            "Zenodo record ID must be positive ASCII digits"
+        )
+    try:
+        return int(value)
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError(
+            "Zenodo record ID exceeds the integer bound"
+        ) from exc
+
+
+def _explicit_ids_for_records(value: object, records: list[ZenodoRecord]) -> list[int]:
+    if (
+        not isinstance(value, list)
+        or len(value) > MAX_EXPLICIT_ZENODO_RECORDS
+        or any(type(item) is not int or item <= 0 for item in value)
+        or len(set(value)) != len(value)
+    ):
+        raise ValueError(
+            "explicit Zenodo record IDs must be unique positive integers, at most 20"
+        )
+    for record_id in value:
+        matches = [record for record in records if record.record_id == str(record_id)]
+        if len(matches) != 1:
+            raise ValueError(
+                f"explicit Zenodo record {record_id} is missing or ambiguous in cached records"
+            )
+        record = matches[0].to_dict()
+        try:
+            _explicit_record_from_api(
+                {
+                    "id": record_id,
+                    "conceptdoi": record["doi"],
+                    "metadata": {
+                        key: record[key]
+                        for key in (
+                            "title",
+                            "publication_date",
+                            "version",
+                            "resource_type",
+                            "creators",
+                            "description",
+                            "keywords",
+                            "related_identifiers",
+                        )
+                    },
+                    "files": record["files"],
+                    "links": {"html": record["html_url"]},
+                },
+                record_id,
+            )
+        except ValueError as exc:
+            raise ValueError(
+                f"explicit Zenodo record {record_id} is incomplete: {exc}"
+            ) from exc
+    return list(value)
+
+
+def _explicit_record_from_api(payload: object, record_id: int) -> ZenodoRecord:
+    if (
+        not isinstance(payload, dict)
+        or type(payload.get("id")) is not int
+        or payload["id"] != record_id
+    ):
+        raise ValueError("exact Zenodo response identity differs from requested record")
+    meta = payload.get("metadata")
+    if not isinstance(meta, dict) or not all(
+        isinstance(meta.get(key), str)
+        for key in ("title", "publication_date", "description")
+    ):
+        raise ValueError("exact Zenodo response lacks complete text metadata")
+    if not meta["title"].strip() or not meta["publication_date"]:
+        raise ValueError("exact Zenodo response lacks its title or publication date")
+    # Zenodo permits year precision; validate it without inventing a month/day.
+    publication_date = meta["publication_date"]
+    if re.fullmatch(r"[0-9]{4}", publication_date):
+        if int(publication_date) == 0:
+            raise ValueError("exact Zenodo response has an invalid publication year")
+    else:
+        dt.date.fromisoformat(publication_date)
+    if meta.get("version") is not None and not isinstance(meta["version"], str):
+        raise ValueError("exact Zenodo response has malformed version")
+    creators = meta.get("creators")
+    if (
+        not isinstance(creators, list)
+        or not creators
+        or any(
+            not isinstance(c, dict)
+            or not isinstance(c.get("name"), str)
+            or not c["name"].strip()
+            for c in creators
+        )
+    ):
+        raise ValueError("exact Zenodo response has malformed creators")
+    if not isinstance(meta.get("resource_type"), dict) or not meta["resource_type"]:
+        raise ValueError("exact Zenodo response lacks its resource type")
+    if not isinstance(meta.get("keywords", []), list) or any(
+        not isinstance(k, str) for k in meta.get("keywords", [])
+    ):
+        raise ValueError("exact Zenodo response has malformed keywords")
+    if not isinstance(meta.get("related_identifiers", []), list) or any(
+        not isinstance(r, dict) for r in meta.get("related_identifiers", [])
+    ):
+        raise ValueError("exact Zenodo response has malformed related identifiers")
+    files = payload.get("files")
+    if not isinstance(files, list) or any(
+        not isinstance(f, dict)
+        or not isinstance(f.get("key"), str)
+        or not f["key"]
+        or type(f.get("size")) is not int
+        or f["size"] < 0
+        or not isinstance(f.get("checksum"), str)
+        or not f["checksum"]
+        or not isinstance(f.get("links"), dict)
+        for f in files
+    ):
+        raise ValueError("exact Zenodo response has an incomplete file manifest")
+    record = ZenodoRecord.from_api(payload)
+    if (
+        not re.fullmatch(r"10\.[0-9]{4,9}/[^\s]+", record.doi)
+        or record.html_url != f"https://zenodo.org/records/{record_id}"
+    ):
+        raise ValueError("exact Zenodo response lacks its DOI or exact record URL")
+    publication_edition_sha256(record)
+    return record
+
+
+def _include_explicit_zenodo_records(
+    records: list[ZenodoRecord], record_ids: list[int]
+) -> tuple[list[ZenodoRecord], list[str]]:
+    merged = list(records)
+    warnings: list[str] = []
+    for record_id in record_ids:
+        try:
+            record = _explicit_record_from_api(
+                fetch_json(f"https://zenodo.org/api/records/{record_id}"), record_id
+            )
+            existing = [row for row in merged if row.record_id == record.record_id]
+            if existing:
+                if any(
+                    publication_edition_sha256(row)
+                    != publication_edition_sha256(record)
+                    for row in existing
+                ):
+                    raise ValueError(
+                        "exact Zenodo response conflicts with the same-ID search record"
+                    )
+                first = next(
+                    index
+                    for index, row in enumerate(merged)
+                    if row.record_id == record.record_id
+                )
+                merged = [
+                    row
+                    for index, row in enumerate(merged)
+                    if row.record_id != record.record_id or index == first
+                ]
+            else:
+                merged.append(record)
+        except Exception as exc:
+            warnings.append(f"zenodo:record:{record_id}: {type(exc).__name__}: {exc}")
+    return merged, warnings
+
+
 def _release_body_redaction(payload: dict[str, Any]) -> dict[str, str] | None:
     redaction = payload.get("body_redaction")
     if redaction is not None and (
@@ -239,7 +436,17 @@ def github_release_from_payload(payload: dict[str, Any]) -> GitHubRelease:
             published_at=str(payload["published_at"]),
             body_redaction=deepcopy(redaction),
             assets=[
-                GitHubAsset.from_api(item)
+                GitHubAsset(
+                    name=str(item.get("name") or ""),
+                    download_url=str(
+                        item.get("download_url")
+                        or item.get("browser_download_url")
+                        or ""
+                    ),
+                    size=item.get("size")
+                    if isinstance(item.get("size"), int)
+                    else None,
+                )
                 for item in payload.get("assets", [])
                 if isinstance(item, dict)
             ],
@@ -431,7 +638,7 @@ def reviewed_pair_decisions(
         payload = json.loads(path.read_text(encoding="utf-8"))
     except json.JSONDecodeError:
         return {}
-    return reviewed_pair_decision_index(payload)
+    return reviewed_pair_edition_index(payload, repo_root=repo_root)
 
 
 def folder_for_pair(pair: PublicationPair, repo_root: Path = REPO_ROOT) -> str:
@@ -490,14 +697,40 @@ def _file_sha256(path: Path) -> str:
 def classification_inputs(repo_root: Path = REPO_ROOT) -> dict[str, str]:
     """Hash the curated inputs the already_reviewed classification depends on.
 
-    The class is fully determined by the durable decision log (fingerprinted
-    per candidate), but the bibliography hash joins the key so any curated
-    source drift invalidates the cache in the safe (full-rescan) direction.
+    The ledger, bibliography and explicit local edition-source files join
+    the key. Cached rows still require the durable ledger's edition binding;
+    source drift invalidates the shortcut in the full-rescan direction.
     """
-    return {
+    inputs = {
         "bibliography_sha256": _file_sha256(repo_root / BIBLIOGRAPHY),
         "decisions_sha256": _file_sha256(repo_root / PAIRED_PUBLICATION_DECISIONS),
     }
+    try:
+        ledger = json.loads(
+            (repo_root / PAIRED_PUBLICATION_DECISIONS).read_text(encoding="utf-8")
+        )
+        for group in ledger.get("groups", []):
+            for raw in (
+                group.get("raw_candidates", []) if isinstance(group, dict) else []
+            ):
+                source = (
+                    raw.get("source_report")
+                    if isinstance(raw, dict) and not raw.get("edition_evidence")
+                    else None
+                )
+                if isinstance(source, str) and re.fullmatch(
+                    r"reports/(?:publication_intake|paired_publications)_[A-Za-z0-9_.-]+\.json",
+                    source,
+                ):
+                    try:
+                        inputs["edition_source:" + source] = (
+                            publication_edition_source_sha256(repo_root, source)
+                        )
+                    except OSError, ValueError, TypeError, UnicodeError:
+                        inputs["edition_source:" + source] = ""
+    except OSError, ValueError, TypeError:
+        pass
+    return inputs
 
 
 def classification_cache_from_payload(payload: object) -> ClassificationCache | None:
@@ -528,7 +761,14 @@ def classification_cache_from_payload(payload: object) -> ClassificationCache | 
             or not isinstance(entry[1], dict)
             or not all(
                 isinstance(entry[1].get(key), str)
-                for key in ("group_id", "representation", "folder")
+                for key in (
+                    "group_id",
+                    "representation",
+                    "folder",
+                    "edition_record_id",
+                    "edition_record_sha256",
+                    "edition_binding_state",
+                )
             )
         ):
             return None
@@ -560,9 +800,10 @@ def build_sync_actions(
 ) -> list[SyncAction]:
     """Classify pairs into sync actions, optionally from a validated cache.
 
-    ``cache`` short-circuits the already_reviewed class only when its input
-    hashes still match the on-disk bibliography and decision log; any drift
-    falls back to the full classification. ``already_reviewed_entries``
+    ``cache`` may reuse resolved classification only when its input hashes
+    and edition binding match the durable ledger. A saved report is never
+    approval authority. Drift falls back to full classification.
+    ``already_reviewed_entries``
     collects the (fingerprint, decision) pairs that back the report's
     persisted classification cache.
     """
@@ -624,7 +865,23 @@ def build_sync_actions(
         release_title_folder: str | None = None
         repo_title_folder: str | None = None
         if use_cache and candidate_fingerprint is not None:
-            reviewed = cache.already_reviewed.get(candidate_fingerprint)
+            cached = cache.already_reviewed.get(candidate_fingerprint)
+            durable = decisions().get(candidate_fingerprint)
+            keys = (
+                "group_id",
+                "representation",
+                "folder",
+                "edition_record_id",
+                "edition_record_sha256",
+                "edition_binding_state",
+            )
+            reviewed = (
+                cached
+                if cached is not None
+                and durable is not None
+                and all(cached.get(key) == durable.get(key) for key in keys)
+                else durable
+            )
         if reviewed is not None:
             folder = reviewed.get("folder") or resolved_folder(pair)[0]
         else:
@@ -634,6 +891,11 @@ def build_sync_actions(
                 if candidate_fingerprint is not None
                 else None
             )
+        edition_drift = reviewed is not None and not publication_edition_matches(
+            pair.record, reviewed
+        )
+        if edition_drift:
+            reviewed = None
         if reviewed:
             action_type = "already_reviewed"
             representation = reviewed.get("representation") or "manual decision"
@@ -651,9 +913,15 @@ def build_sync_actions(
                             "group_id": group_id,
                             "representation": representation,
                             "folder": folder,
+                            "edition_record_id": reviewed["edition_record_id"],
+                            "edition_record_sha256": reviewed["edition_record_sha256"],
+                            "edition_binding_state": "bound",
                         },
                     )
                 )
+        elif edition_drift:
+            action_type = "needs_review"
+            reason = "historical pairing decision does not bind this exact observed edition; review immutable record/version/file evidence"
         elif pair.confidence != "strong":
             action_type = "needs_review"
             reason = "pair lacks DOI/release cross-link evidence required for automatic apply"
@@ -893,15 +1161,21 @@ def update_existing_citation(
     _write_if_changed(path, text, updated, repo_root)
 
 
+def _read_metadata_object(path: Path) -> dict[str, Any]:
+    try:
+        raw = path.read_text(encoding="utf-8")
+    except FileNotFoundError:
+        return {}
+    value = json.loads(raw)
+    if not isinstance(value, dict):
+        raise ValueError(f"metadata source must be a JSON object: {path.name}")
+    return value
+
+
 def update_metadata_json(
     path: Path, pair: PublicationPair, updated: list[str], repo_root: Path
 ) -> None:
-    existing: dict[str, Any] = {}
-    if path.exists():
-        try:
-            existing = json.loads(path.read_text(encoding="utf-8"))
-        except json.JSONDecodeError:
-            existing = {}
+    existing = _read_metadata_object(path)
     merged = {**existing, **metadata_payload(pair)}
     _write_if_changed(
         path,
@@ -1067,16 +1341,15 @@ def refresh_bibliography_counts(text: str) -> str:
     return text
 
 
-def update_paper_metadata_index(
-    pair: PublicationPair, folder: str, updated: list[str], repo_root: Path
-) -> None:
-    path = repo_root / PAPER_METADATA
-    try:
-        data = json.loads(_safe_read(path) or "{}")
-    except json.JSONDecodeError:
-        data = {}
+def _paper_metadata_index_payload(
+    pair: PublicationPair, folder: str, repo_root: Path
+) -> dict[str, Any]:
+    data = _read_metadata_object(repo_root / PAPER_METADATA)
+    existing = data.get(folder, {})
+    if not isinstance(existing, dict):
+        raise ValueError(f"paper metadata entry must be an object: {folder}")
     year, topic = folder.split("_", 1)
-    data[folder] = {
+    owned = {
         "year": year,
         "topic": topic,
         "name": pair.record.title,
@@ -1087,6 +1360,23 @@ def update_paper_metadata_index(
         "doi": pair.doi,
         "github_release_url": pair.github_release_url,
     }
+    for field, provenance in (
+        ("abstract", "abstract_provenance"),
+        ("keywords", "keywords_provenance"),
+    ):
+        if provenance in existing and existing.get(field) != owned[field]:
+            raise ValueError(
+                f"{folder}: changing {field} requires explicit provenance review"
+            )
+    data[folder] = {**existing, **owned}
+    return data
+
+
+def update_paper_metadata_index(
+    pair: PublicationPair, folder: str, updated: list[str], repo_root: Path
+) -> None:
+    path = repo_root / PAPER_METADATA
+    data = _paper_metadata_index_payload(pair, folder, repo_root)
     _write_if_changed(
         path, json.dumps(data, indent=2, ensure_ascii=False) + "\n", updated, repo_root
     )
@@ -1193,6 +1483,9 @@ def apply_publication_pair(
     folder = folder or folder_for_pair(pair, repo_root)
     folder_path = repo_root / "papers" / folder
     created = not folder_path.exists()
+    # Validate all existing JSON/provenance before touching README/CFF or metadata.
+    _read_metadata_object(folder_path / "metadata.json")
+    _paper_metadata_index_payload(pair, folder, repo_root)
     updated: list[str] = []
     folder_path.mkdir(parents=True, exist_ok=True)
 
@@ -1302,7 +1595,11 @@ def write_report(
     applied: list[AppliedPublication] | None = None,
     classification_cache: dict[str, Any] | None = None,
     previous_report: dict[str, Any] | None = None,
+    explicit_zenodo_record_ids: list[int] | None = None,
 ) -> None:
+    if explicit_zenodo_record_ids is not None:
+        _explicit_ids_for_records(explicit_zenodo_record_ids, records)
+    explicit_previous = previous_report is not None
     generated_at = generated_timestamp()
 
     def applied_payload(item: AppliedPublication) -> dict[str, Any]:
@@ -1384,9 +1681,21 @@ def write_report(
         if applied is None
         else [applied_payload(item) for item in applied],
     }
+    if explicit_zenodo_record_ids is not None:
+        payload["explicit_zenodo_record_ids"] = list(explicit_zenodo_record_ids)
     if classification_cache is not None:
         payload["classification_cache"] = classification_cache
     payload = redact_report_release_bodies(payload)
+    if (
+        explicit_previous
+        and isinstance(previous_report, dict)
+        and isinstance(previous_report.get("source_observations"), dict)
+        and previous_report.get("github_releases") == payload["github_releases"]
+        and previous_report.get("zenodo_records") == payload["zenodo_records"]
+    ):
+        payload["source_observations"] = deepcopy(
+            previous_report["source_observations"]
+        )
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
         json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
@@ -1420,6 +1729,16 @@ def check_report(repo_root: Path = REPO_ROOT) -> None:
             raise SystemExit(
                 f"Paired publication report local filesystem path at {pointer}"
             )
+    if "explicit_zenodo_record_ids" in payload:
+        try:
+            _explicit_ids_for_records(
+                payload["explicit_zenodo_record_ids"],
+                zenodo_records_from_payload(payload),
+            )
+        except ValueError as exc:
+            raise SystemExit(
+                f"Paired publication report explicit record declaration: {exc}"
+            ) from exc
     warnings = payload.get("warnings")
     if warnings:
         raise SystemExit(f"Paired publication report has API warnings: {len(warnings)}")
@@ -1532,6 +1851,15 @@ def parse_owners(raw: str, include_aii: bool) -> list[str]:
 def load_cached_scan_payload(
     path: Path, *, force: bool = False
 ) -> tuple[list[GitHubRelease], list[ZenodoRecord]]:
+    releases, records, _explicit_ids, _payload = _load_cached_scan_with_explicit_ids(
+        path, force=force
+    )
+    return releases, records
+
+
+def _load_cached_scan_with_explicit_ids(
+    path: Path, *, force: bool = False
+) -> tuple[list[GitHubRelease], list[ZenodoRecord], list[int] | None, dict[str, Any]]:
     """Reuse a prior pairing scan's fetched releases and records.
 
     Freshness keys on the source report's ``generated_at`` date, not file
@@ -1562,9 +1890,14 @@ def load_cached_scan_payload(
             "pass --force to reuse it anyway"
         )
     try:
-        return github_releases_from_payload(payload), zenodo_records_from_payload(
-            payload
+        releases = github_releases_from_payload(payload)
+        records = zenodo_records_from_payload(payload)
+        explicit_ids = (
+            _explicit_ids_for_records(payload["explicit_zenodo_record_ids"], records)
+            if "explicit_zenodo_record_ids" in payload
+            else None
         )
+        return releases, records, explicit_ids, payload
     except ValueError as exc:
         raise SystemExit(
             f"Cannot reuse cached scan payload from {path}: {exc}"
@@ -1600,6 +1933,13 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--apply", action="store_true", help="Apply strong create/update actions"
+    )
+    parser.add_argument(
+        "--zenodo-record",
+        action="append",
+        type=_positive_zenodo_record_id,
+        default=[],
+        help="Include an exact Zenodo record ID (repeatable, at most 20 unique IDs; no crawl)",
     )
     parser.add_argument(
         "--owners", default="docxology", help="Comma-separated GitHub owners to scan"
@@ -1642,6 +1982,12 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
+    requested_ids = sorted(set(args.zenodo_record))
+    if len(requested_ids) > MAX_EXPLICIT_ZENODO_RECORDS:
+        parser.error("--zenodo-record accepts at most 20 unique IDs")
+    if requested_ids and (args.check or args.redact_local_paths):
+        parser.error("--zenodo-record is only valid for live intake or cached replay")
+    explicit_ids = requested_ids or None
     if args.redact_local_paths:
         if not args.report or args.apply or args.check or args.cache_reports:
             parser.error(
@@ -1663,19 +2009,35 @@ def main(argv: list[str] | None = None) -> int:
     if not report.is_absolute():
         report = REPO_ROOT / report
 
+    cached_observation = None
     if args.cache_reports:
         source = Path(args.report) if args.report else latest_report(REPO_ROOT)
         if source is None or not Path(source).exists():
             raise SystemExit(
                 "--cache-reports found no paired publication report to reuse"
             )
-        releases, records = load_cached_scan_payload(Path(source), force=args.force)
+        releases, records, inherited_ids, cached_observation = (
+            _load_cached_scan_with_explicit_ids(Path(source), force=args.force)
+        )
+        if requested_ids or inherited_ids is not None:
+            explicit_ids = sorted(set(requested_ids + (inherited_ids or [])))
+            try:
+                _explicit_ids_for_records(explicit_ids, records)
+            except ValueError as exc:
+                raise SystemExit(
+                    f"Cannot reuse explicit cached Zenodo record: {exc}"
+                ) from exc
         github_warnings: list[str] = []
         zenodo_warnings: list[str] = []
         print(f"reusing cached scan payload from {display_report_path(Path(source))}")
     else:
         releases, github_warnings = fetch_github_releases(owners, since=args.since)
         records, zenodo_warnings = fetch_zenodo_records()
+        if requested_ids:
+            records, explicit_warnings = _include_explicit_zenodo_records(
+                records, requested_ids
+            )
+            zenodo_warnings.extend(explicit_warnings)
     if args.cache_reports and args.since:
         releases = [
             release
@@ -1724,6 +2086,8 @@ def main(argv: list[str] | None = None) -> int:
                 classification_cache=classification_cache_payload(
                     already_reviewed_entries
                 ),
+                explicit_zenodo_record_ids=explicit_ids,
+                previous_report=cached_observation,
             )
 
     write_report(
@@ -1736,6 +2100,8 @@ def main(argv: list[str] | None = None) -> int:
         warnings=warnings,
         applied=applied if args.apply else None,
         classification_cache=classification_cache_payload(already_reviewed_entries),
+        explicit_zenodo_record_ids=explicit_ids,
+        previous_report=cached_observation,
     )
     print(
         f"wrote {display_report_path(report)}: "

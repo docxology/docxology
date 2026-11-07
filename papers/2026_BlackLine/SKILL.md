@@ -1,11 +1,12 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Black Line: Strong Work in Public"
-description: "A positive practice instrument for concise, inspectable, revisable work. It reads self-declared tags and evidence labels against a versioned practice registry and returns one of four statuses over declaration coverage. It measures whether the evidenc..."
+description: "Black Line describes an operating discipline implemented through eleven practices in six families and a staged evaluator of declared evidence labels. The selected manuscript states that ALIGNED concerns fresh declarations, not source truth, safety, a..."
 tags: ["research-practice", "declaration-coverage", "evidence-discipline", "scientific-integrity", "reproducibility", "open-science", "engineering-practice"]
 domain: "Cognitive Security"
 citation: "Daniel Ari Friedman (2026). *Black Line: Strong Work in Public*. Zenodo."
 doi: "10.5281/zenodo.21754235"
+artifact_doi: "10.5281/zenodo.22833503"
 ---
 
 # Black Line: Strong Work in Public
@@ -47,9 +48,10 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 Verification points for this work:
 
 - Canonical DOI: 10.5281/zenodo.21754235
-- PDF SHA-256: See zenodo_record
+- PDF SHA-256: e0c5bf331a5b77a1d1436cbe288ea5e2a2183de81627203dc20ac96e04071c04
 - Pairing confidence: unknown
-- Last checked: 2026-08-02T15:12:58Z
+- Last checked: 2026-11-06T18:28:38.106041+00:00
+- Artifact DOI: 10.5281/zenodo.22833503
 
 ## Prerequisites
 

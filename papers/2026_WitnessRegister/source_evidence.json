@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.0",
+  "source_pdf": {
+    "record_id": "22833511",
+    "concept_doi": "10.5281/zenodo.21754245",
+    "artifact_doi": "10.5281/zenodo.22833511",
+    "version": "0.1.1",
+    "url": "https://zenodo.org/api/records/22833511/files/witness_register_combined.pdf/content",
+    "name": "witness_register_combined.pdf",
+    "bytes": 674684,
+    "sha256": "78d34b5db3f603e4c65d17ae8511a78fe1356363611cbb1a4581c1126f4d1c44",
+    "md5": "e5ad1aaddafab1d23af861432f7c2a00",
+    "pages": 21,
+    "storage": "remote primary; acquired review copy retained privately"
+  },
+  "extraction": {
+    "file": "full_text.md",
+    "sha256": "029c7259e01ac310494b81219e3a3fc5fe5975ceb8f5c7287f077a71d1a35ad5",
+    "source_pdf_sha256": "78d34b5db3f603e4c65d17ae8511a78fe1356363611cbb1a4581c1126f4d1c44",
+    "tool": "PyMuPDF 1.28.2",
+    "method": "All 21 pages extracted in document order with page markers. No OCR or new image extraction."
+  },
+  "registry_observation": {
+    "record_id": "22833511",
+    "doi": "10.5281/zenodo.22833511",
+    "conceptdoi": "10.5281/zenodo.21754245",
+    "title": "The Witness Register: Co-Registration Without Aggregation",
+    "publication_date": "2026-09-18",
+    "version": "0.1.1",
+    "creators": [
+      {
+        "name": "Friedman, Daniel Ari",
+        "affiliation": "Active Inference Institute",
+        "orcid": "0000-0001-6232-9096"
+      }
+    ],
+    "license": null,
+    "record_json_sha256": "1de41f573d86059ac7f92ebc3210906430f72c0cad6d2f1ca09cba2a2335539a",
+    "record_json_serialization": "UTF-8 canonical JSON, sort_keys=True, separators comma/colon, ensure_ascii=False; exact record from the frozen paginated primary acquisition."
+  },
+  "document_observation": {
+    "title": "The Witness Register: Co-Registration Without Aggregation",
+    "byline": [
+      "Friedman, Daniel Ari"
+    ],
+    "affiliation": "Active Inference Institute",
+    "orcid": "0000-0001-6232-9096",
+    "cover_text_sha256": "c2cd1ade91723abf46b06c02e7ae8b4338de71d2e51713511f768e7e900217bc",
+    "review_scope": "Root and curator source-text title/byline review; no full-document visual or scientific approval."
+  },
+  "historical_sources": [
+    {
+      "file": "full_text_before_2026-11-06.md",
+      "sha256": "de7946de730145150e5505c9c705b358d5068ac778b6d411904498bab669c78a",
+      "edition": "Retained extraction before 2026-11-06; version record not inferred",
+      "binding_basis": "Original extraction header and measured retained local bytes; no historical version ID inferred.",
+      "source_pdf": "witness_register_combined.pdf",
+      "source_pdf_sha256": "b50b8d1106003ce027caabb79fccadce650167795287ea75539c029cad958088",
+      "source_pdf_bytes": 674133
+    }
+  ],
+  "retained_local_pdfs": [
+    {
+      "file": "witness_register_combined.pdf",
+      "bytes": 674133,
+      "sha256": "b50b8d1106003ce027caabb79fccadce650167795287ea75539c029cad958088",
+      "relationship": "retained local PDF; version record not inferred"
+    }
+  ],
+  "historical_curation": {
+    "folder_metadata_preimage_sha256": "9dbe449e42bd6c4e94ad69a262e6d5d09559762e375542eca1a4fad19da60c91",
+    "folder_metadata": {
+      "title": "The Witness Register: Co-Registration Without Aggregation",
+      "version": "0.1.0",
+      "doi": "10.5281/zenodo.21754245",
+      "doi_url": "https://doi.org/10.5281/zenodo.21754245",
+      "zenodo_record": "https://zenodo.org/records/21754245",
+      "record_id": "21754246",
+      "publication_date": "2026-08-02",
+      "resource_type": {
+        "title": "Working paper",
+        "type": "publication",
+        "subtype": "workingpaper"
+      },
+      "creators": [
+        {
+          "name": "Friedman, Daniel Ari",
+          "affiliation": "Active Inference Institute",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ],
+      "description": "A shared register that co-registers independent instruments' report envelopes without aggregating them. It stores each report's envelope verbatim, records cross-instrument relations as separate describing records, keeps history append-only and sealed, and — only when asked, for one declared next use — emits a bounded posture that always points back at the state that earned it. It never parses, compares, ranks, averages, or merges any instrument's native status. Subtitle: A shared register for line report envelopes that never ranks, merges, or overrides the instruments it holds Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "keywords": [
+        "co-registration",
+        "append-only log",
+        "provenance",
+        "non-compensatory decision rules",
+        "boundary objects",
+        "research infrastructure",
+        "open science"
+      ],
+      "files": [
+        {
+          "name": "witness_register_combined.pdf",
+          "size_bytes": 674133,
+          "checksum": "md5:39b992ddcfc27fad95fa150c9973303e",
+          "download_url": "https://zenodo.org/api/records/21754246/files/witness_register_combined.pdf/content"
+        }
+      ],
+      "related_resources": [],
+      "github_repo": "",
+      "source": "zenodo-only",
+      "checked_at": "2026-08-02T15:11:22Z",
+      "methods": [
+        {
+          "name": "witness_register Python package with shape-check intake of envelopes",
+          "description": "A small Python package with no line-package imports accepts line.report-envelope/1.0 JSON envelopes by value after a schema shape check, storing native_status verbatim.",
+          "evidence": "The register lives as a Python package — witness_register — with no import dependencies on any line package. It never imports black_line, golden_line, red_line, or white_line."
+        },
+        {
+          "name": "SHA-256 sealed, prior_ref-chained append-only witness states",
+          "description": "Each state is sealed by SHA-256 over canonical JSON and chained to its predecessor; the prior seal is re-derived before extension so tampering fails closed.",
+          "evidence": "sealed by state_digest = SHA-256 over the canonical JSON of every other field including record order. States form a chain: a genesis state carries an empty prior_ref"
+        },
+        {
+          "name": "Non-compensatory -1/0/+1 projection with fixed precedence rules",
+          "description": "For a declared next use, a bounded posture is computed from relation records only: unresolved block forces -1, empty state is -1, any hold caps at 0.",
+          "evidence": "any non-compensatory block with no recorded human decision forces −1; an empty state is −1, because nothing to witness is not permission"
+        },
+        {
+          "name": "Formal definitions and propositions bound to named tests",
+          "description": "Definitions and propositions (append-only, non-compensatory, determinism, etc.) are each bound to a named test in the package's test suite.",
+          "evidence": "Every definition and proposition below is written from the module it describes and bound to the running package by a named test in tests/test_formalism.py"
+        },
+        {
+          "name": "3x3 canonical witness battery with falsification pass; real envelopes",
+          "description": "Nine constructed cases (positive, negative, adversarial) are run against the projection, with planted errors to confirm checks can fail; worked examples use real envelopes from four lines.",
+          "evidence": "three positive cases (the register should pass), three negative cases (it should hold), and three adversarial cases (it should reject)."
+        }
+      ],
+      "key_findings": [
+        "On four real envelopes describing different subjects, chain verification was clean, return recoverability and relation fidelity were 1.0, and the posture was held at 0.",
+        "In the same-subject example, meeting the return contract lifted only the return_due hold, and the posture stayed at 0 because one open question entered as an unresolved dependency.",
+        "A non-compensatory block forced -1 both alone and under fifty AGREES relations; an empty register was -1.",
+        "Every battery check passed on the real register, and every case raised BatteryError when its observed behaviour was deliberately falsified.",
+        "The author states limits: the chain tip is unbound without an external anchor, intake is a shape check not a truth check, and examples cover one date and nine constructed states."
+      ],
+      "key_findings_evidence": [
+        "intakes all four unmodified, builds the two-state chain, and measures: chain verification clean ( Proposition 1 ), return recoverability 1.0, relation fidelity 1.0",
+        "Completing the contract lifts exactly the return_due hold and nothing else — the incomparability relation still holds the first chain at 0",
+        "A non-compensatory block forces -1 alone and under fifty AGREES relations alike; an empty register is -1, not permission",
+        "every check passed on the real register, and — measured in the same build — every case raised BatteryError when its observed behaviour was deliberately falsified",
+        "The tip is unbound without an external anchor the chain does not control. Intake is a shape check, never a truth check."
+      ],
+      "summary_provenance": {
+        "source": "full_text.md",
+        "date": "2026-10-01",
+        "work_kind": "software/methods",
+        "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
+        "notes": "Self-measures evaluate only the register's own bookkeeping; the same-subject example is a self-application (the register as its own subject), as the paper itself notes.",
+        "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+      },
+      "latest_software_release": {
+        "version": "v0.2.0",
+        "publication_date": "2026-10-22",
+        "github_release_url": "https://github.com/docxology/witness_register/releases/tag/v0.2.0",
+        "source_report": "reports/publication_intake_2026-10-23.json",
+        "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
+        "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
+      }
+    },
+    "master_metadata": {
+      "year": "2026",
+      "topic": "WitnessRegister",
+      "name": "The Witness Register: Co-Registration Without Aggregation",
+      "description": "A shared register that co-registers independent instruments' report envelopes without aggregating them. It stores each report's envelope verbatim, records cross-instrument relations as separate describing records, keeps history append-only and sealed, and — only when asked, for one declared next use — emits a bounded posture that always points back at the state that earned it. It never parses, compares, ranks, averages, or merges any instrument's native status. Subtitle: A shared register for line report envelopes that never ranks, merges, or overrides the instruments it holds Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "authors": "Daniel Ari Friedman",
+      "abstract": "A shared register that co-registers independent instruments' report envelopes without aggregating them. It stores each report's envelope verbatim, records cross-instrument relations as separate describing records, keeps history append-only and sealed, and — only when asked, for one declared next use — emits a bounded posture that always points back at the state that earned it. It never parses, compares, ranks, averages, or merges any instrument's native status. Subtitle: A shared register for line report envelopes that never ranks, merges, or overrides the instruments it holds Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "keywords": [
+        "co-registration",
+        "append-only log",
+        "provenance",
+        "non-compensatory decision rules",
+        "boundary objects",
+        "research infrastructure",
+        "open science"
+      ],
+      "doi": "10.5281/zenodo.21754245"
+    },
+    "current_quote_presence_against_old_items": {
+      "methods": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "key_findings_evidence": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "scope": "Complete prior values retained as historical source/prose. Old version identifiers in metadata are observations, not inferred bindings of old PDF/image bytes."
+  },
+  "current_summary_review": {
+    "summary_provenance": {
+      "source": "full_text.md",
+      "date": "2026-11-06",
+      "source_pdf_sha256": "78d34b5db3f603e4c65d17ae8511a78fe1356363611cbb1a4581c1126f4d1c44",
+      "source_text_sha256": "029c7259e01ac310494b81219e3a3fc5fe5975ceb8f5c7287f077a71d1a35ad5",
+      "selected_record_id": "22833511",
+      "work_kind": "software/methods",
+      "method": "AI-assisted review of the selected deposited abstract, quoted passages and stated limitations. Every current method/finding quote is mechanically present in the selected extraction. This is source-text support, not new computational, mathematical, scientific or human verification.",
+      "reviewed_by": "Codex AI-assisted public-source curator",
+      "reviewed_at": "2026-11-06T19:09:15Z",
+      "historical_summary": "Complete prior folder metadata and master prose are preserved in source_evidence.json beside the retained historical extraction."
+    },
+    "old_items_retained": false,
+    "scope": "Only text-supported current statements retained; paper-reported counts/results are not fresh reproduction."
+  },
+  "release_reference_review": {
+    "retained_reference_before_refresh": {
+      "github_repo": ""
+    },
+    "selected_reference_scope": "Existing GitHub release fields are retained source references; generic repository/title or concept-DOI links do not establish the selected PDF edition.",
+    "frozen_pair_observation_sha256": "249b32b85678b497868e35d1f65c90cc80b7dc102e6648f8700f885fa3b94f00",
+    "frozen_pair_observation_url": "https://github.com/docxology/docxology/blob/ee837003a2328d28d8234ad5afdcfcd38419e90c/reports/paired_publications_2026-11-06.json"
+  },
+  "rights_observation": {
+    "registry_license": null,
+    "scope": "No license field was supplied by the selected frozen registry record. Paper rights are recorded as unknown; a repository/software license is not transferred to the paper."
+  },
+  "source_acquisition_receipt_sha256": "b92a833dc89b1e7337dbf6b1d1d900ccbfa879c52869f497e2bae81308995b0c",
+  "reviewed_at": "2026-11-06T19:09:15Z",
+  "reviewed_by": "Codex AI-assisted public-source curator",
+  "review_scope": "Acquired byte integrity, all-page extraction, title/byline and source-quotation review only; no new scientific, computational, mathematical or named human approval.",
+  "privacy_scan": {
+    "contains_local_paths": false,
+    "secret_pattern_count": 0,
+    "source": "Canonical URL-aware scan of selected current text and proposed source evidence; historical text is separately reviewed."
+  }
+}

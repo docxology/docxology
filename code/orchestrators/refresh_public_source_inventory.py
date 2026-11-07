@@ -281,11 +281,15 @@ def public_page(url: str, label: str) -> dict[str, Any]:
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(req, timeout=20) as response:
             text = response.read(200_000).decode("utf-8", errors="replace")
+        if response.status != 200 or not text.strip():
+            raise ValueError("Public page response is incomplete or unavailable")
         title = ""
         start = text.lower().find("<title>")
         end = text.lower().find("</title>")
         if start >= 0 and end > start:
             title = text[start + 7 : end].strip()
+        if not title:
+            raise ValueError("Public page response has no usable title")
         return {
             "label": label,
             "url": url,
