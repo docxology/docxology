@@ -1,0 +1,714 @@
+{
+  "generated_at": "2026-11-06T17:57:11.092028+00:00",
+  "source_commit": "d5508e52f5076e5044b17c7f9a7f13e6f9f3bdd7",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
+  "source_tree_sha": "5dacc09270b28c166ef6c4a80a905102eb06fd8d",
+  "date": "2026-11-06",
+  "note": "Public API freshness report only. Review before updating curated site claims. Composed without network from hash-verified primary responses acquired today; per-check source_observation preserves the actual GET URL and time.",
+  "facts": {
+    "GitHub user docxology": {
+      "login": "docxology",
+      "type": "User",
+      "public_repos": 275,
+      "updated_at": "2026-11-02T18:14:20Z",
+      "html_url": "https://github.com/docxology"
+    },
+    "GitHub user ActiveInferenceInstitute": {
+      "login": "ActiveInferenceInstitute",
+      "type": "Organization",
+      "public_repos": 47,
+      "updated_at": "2026-11-06T14:12:07Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute"
+    },
+    "ORCID work groups": {
+      "group_count": 20
+    },
+    "PubMed exact author records": {
+      "count": 8,
+      "ids": [
+        "40422414",
+        "38735269",
+        "38667857",
+        "37984119",
+        "34248515",
+        "33384362",
+        "33004499",
+        "32139795"
+      ]
+    },
+    "Europe PMC exact author records": {
+      "hit_count": 10
+    },
+    "Crossref ORCID DOI records": {
+      "total_results": 15
+    },
+    "Zenodo exact-name creator records": {
+      "total": 85,
+      "first_title": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+      "first_doi": "10.5281/zenodo.23987671"
+    },
+    "Zenodo ORCID-linked records": {
+      "total": 174,
+      "first_title": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+      "first_doi": "10.5281/zenodo.23987671"
+    },
+    "Zenodo record 18686966": {
+      "title": "ActiveInferenceInstitute/Journal_Utilities: v0.1.0: Hardened, Documented, and Feature-Complete",
+      "doi": "10.5281/zenodo.18686966",
+      "publication_date": "2026-02-18",
+      "resource_type": "Software",
+      "creators": [
+        "Holly Grimm",
+        "BazookamanPH",
+        "TheButtskie",
+        "Active Inference Institute",
+        "Daniel Ari Friedman"
+      ]
+    },
+    "Zenodo record 19600217": {
+      "title": "Generalized_Notation_Notation (GNN)",
+      "doi": "10.5281/zenodo.19600217",
+      "publication_date": "2026-04-16",
+      "resource_type": "Software",
+      "creators": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    "Zenodo record 19897664": {
+      "title": "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring",
+      "doi": "10.5281/zenodo.19897664",
+      "publication_date": "2026-04-30",
+      "resource_type": "Publication",
+      "creators": [
+        "Friedman, Daniel Ari",
+        "Dietz, Joel"
+      ]
+    },
+    "Zenodo record 14108992": {
+      "title": "The Active Inference Institute & Active Inference Ecosystem",
+      "doi": "10.5281/zenodo.14108992",
+      "publication_date": "2024-11-12",
+      "resource_type": "Publication",
+      "creators": [
+        "Active Inference Institute",
+        "Vyatkin, Alex",
+        "Mikhailova, Alexandra",
+        "Hiott, Andrea",
+        "Pashea, Andrew",
+        "Elers, Ben",
+        "Berkers, Bert",
+        "Knight, Bleu",
+        "Fields, Chris",
+        "Whittet, Dan",
+        "Friedman, Daniel",
+        "Ticklẽs, Déan",
+        "Paterson, Fraser",
+        "Stubbs, Gareth",
+        "Grimm, Holly",
+        "Smekal, Jakub",
+        "Cooper, Jeremy",
+        "Boik, John",
+        "Burian, Libor",
+        "Albarracin, Mahault",
+        "Iennaco, Maria Luiza",
+        "Brown, Matthew",
+        "Thacker, Mick",
+        "Gilli, Peter",
+        "Kaufmann, Rafael",
+        "Cordes, RJ",
+        "Henry, Ryan",
+        "Ramesh, Sandeep",
+        "David, Scott",
+        "Alvarado, Sebastian",
+        "Baker, Zach"
+      ]
+    },
+    "Zenodo record 17982447": {
+      "title": "The Active Inference Institute & Active Inference Ecosystem",
+      "doi": "10.5281/zenodo.17982447",
+      "publication_date": "2025-12-18",
+      "resource_type": "Publication",
+      "creators": [
+        "Active Inference Institute",
+        "Vyatkin, Alex",
+        "Mikhailova, Alexandra",
+        "Hiott, Andrea",
+        "Pashea, Andrew",
+        "Elers, Ben",
+        "Berkers, Bert",
+        "Knight, Bleu",
+        "Fields, Chris",
+        "Whittet, Dan",
+        "Friedman, Daniel",
+        "Ticklẽs, Déan",
+        "Paterson, Fraser",
+        "Stubbs, Gareth",
+        "Grimm, Holly",
+        "Smekal, Jakub",
+        "Cooper, Jeremy",
+        "Boik, John",
+        "Burian, Libor",
+        "Albarracin, Mahault",
+        "Iennaco, Maria Luiza",
+        "Brown, Matthew",
+        "Thacker, Mick",
+        "Gilli, Peter",
+        "Kaufmann, Rafael",
+        "Cordes, RJ",
+        "Henry, Ryan",
+        "Ramesh, Sandeep",
+        "David, Scott",
+        "Alvarado, Sebastian",
+        "Baker, Zach"
+      ]
+    },
+    "GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal": {
+      "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal",
+      "stargazers_count": 45,
+      "language": "HTML",
+      "updated_at": "2026-11-05T23:06:56Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal"
+    },
+    "GitHub repo ActiveInferenceInstitute/ActiveBlockference": {
+      "full_name": "ActiveInferenceInstitute/ActiveBlockference",
+      "stargazers_count": 32,
+      "language": "Python",
+      "updated_at": "2026-11-05T17:43:01Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute/ActiveBlockference"
+    },
+    "GitHub repo ActiveInferenceInstitute/ActiveInferAnts": {
+      "full_name": "ActiveInferenceInstitute/Active_InferAnts",
+      "stargazers_count": 31,
+      "language": "Python",
+      "updated_at": "2026-11-05T17:30:15Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts"
+    },
+    "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation": {
+      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+      "stargazers_count": 35,
+      "language": "Python",
+      "updated_at": "2026-11-05T18:33:52Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation"
+    },
+    "GitHub repo ActiveInferenceInstitute/fep_lean": {
+      "full_name": "ActiveInferenceInstitute/fep_formal",
+      "stargazers_count": 6,
+      "language": "Python",
+      "updated_at": "2026-11-06T00:22:56Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute/fep_formal"
+    },
+    "GitHub repo ActiveInferenceInstitute/cognitive": {
+      "full_name": "ActiveInferenceInstitute/cognitive",
+      "stargazers_count": 23,
+      "language": "Python",
+      "updated_at": "2026-11-05T17:51:03Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute/cognitive"
+    },
+    "GitHub repo ActiveInferenceInstitute/CEREBRUM": {
+      "full_name": "ActiveInferenceInstitute/CEREBRUM",
+      "stargazers_count": 14,
+      "language": "Python",
+      "updated_at": "2026-11-05T02:10:24Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute/CEREBRUM"
+    },
+    "GitHub repo ActiveInferenceInstitute/Journal-Utilities": {
+      "full_name": "ActiveInferenceInstitute/Journal_Utilities",
+      "stargazers_count": 10,
+      "language": "HTML",
+      "updated_at": "2026-11-05T23:07:05Z",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities"
+    }
+  },
+  "checks": [
+    {
+      "label": "GitHub user docxology",
+      "url": "https://api.github.com/users/docxology",
+      "ok": true,
+      "result": {
+        "login": "docxology",
+        "type": "User",
+        "public_repos": 275,
+        "updated_at": "2026-11-02T18:14:20Z",
+        "html_url": "https://github.com/docxology"
+      },
+      "source_observation": {
+        "response_url": "https://api.github.com/users/docxology",
+        "observed_at": "2026-11-06T17:22:17.411858+00:00",
+        "response_sha256": "6a6e0eced5c4ea2f344388f8f3e28b7a093b6398ea2016f4c70ea06999ab18f5",
+        "response_bytes": 1319,
+        "acquisition_receipt_sha256": "3344bead518acad5ec6727ff6d6c679329ff92617c3cc11dc2b85b83160cfd92"
+      }
+    },
+    {
+      "label": "GitHub user ActiveInferenceInstitute",
+      "url": "https://api.github.com/users/ActiveInferenceInstitute",
+      "ok": true,
+      "result": {
+        "login": "ActiveInferenceInstitute",
+        "type": "Organization",
+        "public_repos": 47,
+        "updated_at": "2026-11-06T14:12:07Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute"
+      },
+      "source_observation": {
+        "response_url": "https://api.github.com/users/ActiveInferenceInstitute",
+        "observed_at": "2026-11-06T17:22:21.154466+00:00",
+        "response_sha256": "997ef416d9c2556badd9985dd2aa177b8b159bc617f59146e8729cd70334e58e",
+        "response_bytes": 1592,
+        "acquisition_receipt_sha256": "3344bead518acad5ec6727ff6d6c679329ff92617c3cc11dc2b85b83160cfd92"
+      }
+    },
+    {
+      "label": "ORCID work groups",
+      "url": "https://pub.orcid.org/v3.0/0000-0001-6232-9096/works",
+      "ok": true,
+      "result": {
+        "group_count": 20
+      },
+      "source_observation": {
+        "response_url": "https://pub.orcid.org/v3.0/0000-0001-6232-9096/works",
+        "observed_at": "2026-11-06T17:23:13.179912+00:00",
+        "response_sha256": "7837444cb2e8ec712512df323ebec3b3c9a61cc687191fff59f46ffd1f42a5e3",
+        "response_bytes": 35951,
+        "acquisition_receipt_sha256": "32cb0e092f792bb56b8aec0b8c892ce88a74366594e57b35ba4f2155f271865b"
+      }
+    },
+    {
+      "label": "PubMed exact author records",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Daniel+Ari+Friedman%5BAuthor%5D&retmode=json&retmax=100",
+      "ok": true,
+      "result": {
+        "count": 8,
+        "ids": [
+          "40422414",
+          "38735269",
+          "38667857",
+          "37984119",
+          "34248515",
+          "33384362",
+          "33004499",
+          "32139795"
+        ]
+      },
+      "canonical_query_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Daniel+Ari+Friedman%5BAuthor%5D&retmode=json",
+      "source_observation": {
+        "response_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Daniel+Ari+Friedman%5BAuthor%5D&retmode=json&retmax=100",
+        "observed_at": "2026-11-06T17:23:14.639698+00:00",
+        "response_sha256": "6aec26d30d6ba2cda9bc6c72fcb40e1f12cc0882afde31e399b7afd9f2a9b2d9",
+        "response_bytes": 357,
+        "acquisition_receipt_sha256": "32cb0e092f792bb56b8aec0b8c892ce88a74366594e57b35ba4f2155f271865b",
+        "derivation": "Count/identifier facts derived from the complete same-query registry response; only pagination size differs."
+      }
+    },
+    {
+      "label": "Europe PMC exact author records",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=AUTH%3A%22Daniel+Ari+Friedman%22&format=json&pageSize=100",
+      "ok": true,
+      "result": {
+        "hit_count": 10
+      },
+      "canonical_query_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=AUTH%3A%22Daniel+Ari+Friedman%22&format=json&pageSize=1",
+      "source_observation": {
+        "response_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=AUTH%3A%22Daniel+Ari+Friedman%22&format=json&pageSize=100",
+        "observed_at": "2026-11-06T17:23:15.582628+00:00",
+        "response_sha256": "5b8b0021bdd1d32b5f83aeef1fe954b9b7ab186b855e77f27aab3a5a964c3ff5",
+        "response_bytes": 7944,
+        "acquisition_receipt_sha256": "32cb0e092f792bb56b8aec0b8c892ce88a74366594e57b35ba4f2155f271865b",
+        "derivation": "Count/identifier facts derived from the complete same-query registry response; only pagination size differs."
+      }
+    },
+    {
+      "label": "Crossref ORCID DOI records",
+      "url": "https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096&rows=100",
+      "ok": true,
+      "result": {
+        "total_results": 15
+      },
+      "canonical_query_url": "https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096&rows=0",
+      "source_observation": {
+        "response_url": "https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096&rows=100",
+        "observed_at": "2026-11-06T17:23:14.267795+00:00",
+        "response_sha256": "7e99789e2b2e0fca0c16f303d10c15d29b77d80fe9772b9314e39e4ace623f8c",
+        "response_bytes": 284694,
+        "acquisition_receipt_sha256": "32cb0e092f792bb56b8aec0b8c892ce88a74366594e57b35ba4f2155f271865b",
+        "derivation": "Count/identifier facts derived from the complete same-query registry response; only pagination size differs."
+      }
+    },
+    {
+      "label": "Zenodo exact-name creator records",
+      "url": "https://zenodo.org/api/records?q=metadata.creators.person_or_org.name%3A%22Friedman%2C+Daniel+Ari%22&size=1&sort=mostrecent",
+      "ok": true,
+      "result": {
+        "total": 85,
+        "first_title": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+        "first_doi": "10.5281/zenodo.23987671"
+      },
+      "source_observation": {
+        "response_url": "https://zenodo.org/api/records?q=metadata.creators.person_or_org.name%3A%22Friedman%2C+Daniel+Ari%22&size=1&sort=mostrecent",
+        "observed_at": "2026-11-06T17:32:36.467721+00:00",
+        "response_sha256": "aa833b6b67e9b7972f2d2fbb0aa404abe6d58fdb4bcc9849ad196f4134831404",
+        "response_bytes": 12315,
+        "acquisition_receipt_sha256": "9d96c307207a5a5fb905ead8cf40c9bb0f96a57cb91a490d7cdac07b88198503"
+      }
+    },
+    {
+      "label": "Zenodo ORCID-linked records",
+      "url": "https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22&size=1&sort=mostrecent",
+      "ok": true,
+      "result": {
+        "total": 174,
+        "first_title": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+        "first_doi": "10.5281/zenodo.23987671"
+      },
+      "source_observation": {
+        "response_url": "https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22&size=1&sort=mostrecent",
+        "observed_at": "2026-11-06T17:32:37.048704+00:00",
+        "response_sha256": "5be13476faf99d75aa109d276fd28b967f6e88f641b1b8412f58b18eae88c306",
+        "response_bytes": 12630,
+        "acquisition_receipt_sha256": "9d96c307207a5a5fb905ead8cf40c9bb0f96a57cb91a490d7cdac07b88198503"
+      }
+    },
+    {
+      "label": "Zenodo record 18686966",
+      "url": "https://zenodo.org/api/records/18686966",
+      "ok": true,
+      "result": {
+        "title": "ActiveInferenceInstitute/Journal_Utilities: v0.1.0: Hardened, Documented, and Feature-Complete",
+        "doi": "10.5281/zenodo.18686966",
+        "publication_date": "2026-02-18",
+        "resource_type": "Software",
+        "creators": [
+          "Holly Grimm",
+          "BazookamanPH",
+          "TheButtskie",
+          "Active Inference Institute",
+          "Daniel Ari Friedman"
+        ]
+      },
+      "source_observation": {
+        "response_url": "https://zenodo.org/api/records/18686966",
+        "observed_at": "2026-11-06T17:32:33.867541+00:00",
+        "response_sha256": "0095d814b1164b35a88c5c504c568bd49787288834764dde2437e288d3edcad5",
+        "response_bytes": 8708,
+        "acquisition_receipt_sha256": "9d96c307207a5a5fb905ead8cf40c9bb0f96a57cb91a490d7cdac07b88198503"
+      }
+    },
+    {
+      "label": "Zenodo record 19600217",
+      "url": "https://zenodo.org/api/records/19600217",
+      "ok": true,
+      "result": {
+        "title": "Generalized_Notation_Notation (GNN)",
+        "doi": "10.5281/zenodo.19600217",
+        "publication_date": "2026-04-16",
+        "resource_type": "Software",
+        "creators": [
+          "Friedman, Daniel Ari"
+        ]
+      },
+      "source_observation": {
+        "response_url": "https://zenodo.org/api/records/19600217",
+        "observed_at": "2026-11-06T17:32:34.135565+00:00",
+        "response_sha256": "da1663f0b2e8cbb8da42f501909ce5899d8cf7299d9f2a5516e8c90f0f44819b",
+        "response_bytes": 4981,
+        "acquisition_receipt_sha256": "9d96c307207a5a5fb905ead8cf40c9bb0f96a57cb91a490d7cdac07b88198503"
+      }
+    },
+    {
+      "label": "Zenodo record 19897664",
+      "url": "https://zenodo.org/api/records/19897664",
+      "ok": true,
+      "result": {
+        "title": "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring",
+        "doi": "10.5281/zenodo.19897664",
+        "publication_date": "2026-04-30",
+        "resource_type": "Publication",
+        "creators": [
+          "Friedman, Daniel Ari",
+          "Dietz, Joel"
+        ]
+      },
+      "source_observation": {
+        "response_url": "https://zenodo.org/api/records/19897664",
+        "observed_at": "2026-11-06T17:32:34.187384+00:00",
+        "response_sha256": "2673430d17a797bbc30e7c4b32a05356e598c56b5301076db236955634423509",
+        "response_bytes": 8508,
+        "acquisition_receipt_sha256": "9d96c307207a5a5fb905ead8cf40c9bb0f96a57cb91a490d7cdac07b88198503"
+      }
+    },
+    {
+      "label": "Zenodo record 14108992",
+      "url": "https://zenodo.org/api/records/14108992",
+      "ok": true,
+      "result": {
+        "title": "The Active Inference Institute & Active Inference Ecosystem",
+        "doi": "10.5281/zenodo.14108992",
+        "publication_date": "2024-11-12",
+        "resource_type": "Publication",
+        "creators": [
+          "Active Inference Institute",
+          "Vyatkin, Alex",
+          "Mikhailova, Alexandra",
+          "Hiott, Andrea",
+          "Pashea, Andrew",
+          "Elers, Ben",
+          "Berkers, Bert",
+          "Knight, Bleu",
+          "Fields, Chris",
+          "Whittet, Dan",
+          "Friedman, Daniel",
+          "Ticklẽs, Déan",
+          "Paterson, Fraser",
+          "Stubbs, Gareth",
+          "Grimm, Holly",
+          "Smekal, Jakub",
+          "Cooper, Jeremy",
+          "Boik, John",
+          "Burian, Libor",
+          "Albarracin, Mahault",
+          "Iennaco, Maria Luiza",
+          "Brown, Matthew",
+          "Thacker, Mick",
+          "Gilli, Peter",
+          "Kaufmann, Rafael",
+          "Cordes, RJ",
+          "Henry, Ryan",
+          "Ramesh, Sandeep",
+          "David, Scott",
+          "Alvarado, Sebastian",
+          "Baker, Zach"
+        ]
+      },
+      "source_observation": {
+        "response_url": "https://zenodo.org/api/records/14108992",
+        "observed_at": "2026-11-06T17:32:33.935500+00:00",
+        "response_sha256": "546f6bd8192b087998831c4d2335138c84fccde68c1fb101e2893e18b96cd116",
+        "response_bytes": 8833,
+        "acquisition_receipt_sha256": "9d96c307207a5a5fb905ead8cf40c9bb0f96a57cb91a490d7cdac07b88198503"
+      }
+    },
+    {
+      "label": "Zenodo record 17982447",
+      "url": "https://zenodo.org/api/records/17982447",
+      "ok": true,
+      "result": {
+        "title": "The Active Inference Institute & Active Inference Ecosystem",
+        "doi": "10.5281/zenodo.17982447",
+        "publication_date": "2025-12-18",
+        "resource_type": "Publication",
+        "creators": [
+          "Active Inference Institute",
+          "Vyatkin, Alex",
+          "Mikhailova, Alexandra",
+          "Hiott, Andrea",
+          "Pashea, Andrew",
+          "Elers, Ben",
+          "Berkers, Bert",
+          "Knight, Bleu",
+          "Fields, Chris",
+          "Whittet, Dan",
+          "Friedman, Daniel",
+          "Ticklẽs, Déan",
+          "Paterson, Fraser",
+          "Stubbs, Gareth",
+          "Grimm, Holly",
+          "Smekal, Jakub",
+          "Cooper, Jeremy",
+          "Boik, John",
+          "Burian, Libor",
+          "Albarracin, Mahault",
+          "Iennaco, Maria Luiza",
+          "Brown, Matthew",
+          "Thacker, Mick",
+          "Gilli, Peter",
+          "Kaufmann, Rafael",
+          "Cordes, RJ",
+          "Henry, Ryan",
+          "Ramesh, Sandeep",
+          "David, Scott",
+          "Alvarado, Sebastian",
+          "Baker, Zach"
+        ]
+      },
+      "source_observation": {
+        "response_url": "https://zenodo.org/api/records/17982447",
+        "observed_at": "2026-11-06T17:32:34.617017+00:00",
+        "response_sha256": "e439a2f1b4cbb73f44b9be0aa5cb2ca0a34672815f2de414b612f7f37c89a091",
+        "response_bytes": 8755,
+        "acquisition_receipt_sha256": "9d96c307207a5a5fb905ead8cf40c9bb0f96a57cb91a490d7cdac07b88198503"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal",
+      "url": "https://api.github.com/repos/ActiveInferenceInstitute/ActiveInferenceJournal",
+      "ok": true,
+      "result": {
+        "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal",
+        "stargazers_count": 45,
+        "language": "HTML",
+        "updated_at": "2026-11-05T23:06:56Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal"
+      },
+      "source_observation": {
+        "response_url": "https://api.github.com/repos/ActiveInferenceInstitute/ActiveInferenceJournal",
+        "observed_at": "2026-11-06T17:32:34.779310+00:00",
+        "response_sha256": "30a09666acab388f586f07ae8edc469ef5e168c9a7253f8e915871749f31c621",
+        "response_bytes": 8811,
+        "acquisition_receipt_sha256": "9d96c307207a5a5fb905ead8cf40c9bb0f96a57cb91a490d7cdac07b88198503"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveBlockference",
+      "url": "https://api.github.com/repos/ActiveInferenceInstitute/ActiveBlockference",
+      "ok": true,
+      "result": {
+        "full_name": "ActiveInferenceInstitute/ActiveBlockference",
+        "stargazers_count": 32,
+        "language": "Python",
+        "updated_at": "2026-11-05T17:43:01Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/ActiveBlockference"
+      },
+      "source_observation": {
+        "response_url": "https://api.github.com/repos/ActiveInferenceInstitute/ActiveBlockference",
+        "observed_at": "2026-11-06T17:32:35.566277+00:00",
+        "response_sha256": "296c7e02f774180026531645919901c526d8894278d65fe93b50c107bcbfff33",
+        "response_bytes": 8696,
+        "acquisition_receipt_sha256": "9d96c307207a5a5fb905ead8cf40c9bb0f96a57cb91a490d7cdac07b88198503"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveInferAnts",
+      "url": "https://api.github.com/repositories/782172228",
+      "ok": true,
+      "result": {
+        "full_name": "ActiveInferenceInstitute/Active_InferAnts",
+        "stargazers_count": 31,
+        "language": "Python",
+        "updated_at": "2026-11-05T17:30:15Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts"
+      },
+      "canonical_query_url": "https://api.github.com/repos/ActiveInferenceInstitute/ActiveInferAnts",
+      "source_observation": {
+        "response_url": "https://api.github.com/repositories/782172228",
+        "observed_at": "2026-11-06T17:37:09.845041+00:00",
+        "response_sha256": "5cd3c46240f4d7ff0f85eb1ec1356413eec106b31f5fef3a8da46ba159a3fead",
+        "response_bytes": 8563,
+        "acquisition_receipt_sha256": "c0e920e341803f0cb767725cd448e51fd6ef1d44e10f42b9626e90caada67343",
+        "requested_alias_url": "https://api.github.com/repos/ActiveInferenceInstitute/ActiveInferAnts",
+        "redirect_status": 301
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "url": "https://api.github.com/repositories/622673569",
+      "ok": true,
+      "result": {
+        "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+        "stargazers_count": 35,
+        "language": "Python",
+        "updated_at": "2026-11-05T18:33:52Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation"
+      },
+      "canonical_query_url": "https://api.github.com/repos/ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "source_observation": {
+        "response_url": "https://api.github.com/repositories/622673569",
+        "observed_at": "2026-11-06T17:37:09.810664+00:00",
+        "response_sha256": "d63da725cbbef37f9abe9c397bfed5a40f707e4e84e4ba91c73c46a69f0f6e1f",
+        "response_bytes": 8985,
+        "acquisition_receipt_sha256": "c0e920e341803f0cb767725cd448e51fd6ef1d44e10f42b9626e90caada67343",
+        "requested_alias_url": "https://api.github.com/repos/ActiveInferenceInstitute/GeneralizedNotationNotation",
+        "redirect_status": 301
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
+      "url": "https://api.github.com/repositories/1210503162",
+      "ok": true,
+      "result": {
+        "full_name": "ActiveInferenceInstitute/fep_formal",
+        "stargazers_count": 6,
+        "language": "Python",
+        "updated_at": "2026-11-06T00:22:56Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/fep_formal"
+      },
+      "canonical_query_url": "https://api.github.com/repos/ActiveInferenceInstitute/fep_lean",
+      "source_observation": {
+        "response_url": "https://api.github.com/repositories/1210503162",
+        "observed_at": "2026-11-06T17:37:09.880054+00:00",
+        "response_sha256": "a115e7c9a0db624b06be000439760bb91ddc5f1458fcacfe6735ee75609e4cbd",
+        "response_bytes": 8234,
+        "acquisition_receipt_sha256": "c0e920e341803f0cb767725cd448e51fd6ef1d44e10f42b9626e90caada67343",
+        "requested_alias_url": "https://api.github.com/repos/ActiveInferenceInstitute/fep_lean",
+        "redirect_status": 301
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/cognitive",
+      "url": "https://api.github.com/repos/ActiveInferenceInstitute/cognitive",
+      "ok": true,
+      "result": {
+        "full_name": "ActiveInferenceInstitute/cognitive",
+        "stargazers_count": 23,
+        "language": "Python",
+        "updated_at": "2026-11-05T17:51:03Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/cognitive"
+      },
+      "source_observation": {
+        "response_url": "https://api.github.com/repos/ActiveInferenceInstitute/cognitive",
+        "observed_at": "2026-11-06T17:32:35.846854+00:00",
+        "response_sha256": "05c95145f2824dc0928b997e856b0c86e59a6fa3a67e98690d9b7525071ff043",
+        "response_bytes": 8230,
+        "acquisition_receipt_sha256": "9d96c307207a5a5fb905ead8cf40c9bb0f96a57cb91a490d7cdac07b88198503"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/CEREBRUM",
+      "url": "https://api.github.com/repos/ActiveInferenceInstitute/CEREBRUM",
+      "ok": true,
+      "result": {
+        "full_name": "ActiveInferenceInstitute/CEREBRUM",
+        "stargazers_count": 14,
+        "language": "Python",
+        "updated_at": "2026-11-05T02:10:24Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/CEREBRUM"
+      },
+      "source_observation": {
+        "response_url": "https://api.github.com/repos/ActiveInferenceInstitute/CEREBRUM",
+        "observed_at": "2026-11-06T17:32:35.929103+00:00",
+        "response_sha256": "31d4796e072b0542f2cc7ca9a93e21669e6d59e563c992728fe6e12fbde98cc3",
+        "response_bytes": 8056,
+        "acquisition_receipt_sha256": "9d96c307207a5a5fb905ead8cf40c9bb0f96a57cb91a490d7cdac07b88198503"
+      }
+    },
+    {
+      "label": "GitHub repo ActiveInferenceInstitute/Journal-Utilities",
+      "url": "https://api.github.com/repositories/562914273",
+      "ok": true,
+      "result": {
+        "full_name": "ActiveInferenceInstitute/Journal_Utilities",
+        "stargazers_count": 10,
+        "language": "HTML",
+        "updated_at": "2026-11-05T23:07:05Z",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities"
+      },
+      "canonical_query_url": "https://api.github.com/repos/ActiveInferenceInstitute/Journal-Utilities",
+      "source_observation": {
+        "response_url": "https://api.github.com/repositories/562914273",
+        "observed_at": "2026-11-06T17:37:10.692443+00:00",
+        "response_sha256": "285c9e5341551f71d66363a9e113b6391448a163095be4de0e5fb2029bb13ae9",
+        "response_bytes": 8461,
+        "acquisition_receipt_sha256": "c0e920e341803f0cb767725cd448e51fd6ef1d44e10f42b9626e90caada67343",
+        "requested_alias_url": "https://api.github.com/repos/ActiveInferenceInstitute/Journal-Utilities",
+        "redirect_status": 301
+      }
+    }
+  ],
+  "acquisition_receipts": {
+    "primary": "32cb0e092f792bb56b8aec0b8c892ce88a74366594e57b35ba4f2155f271865b",
+    "inventory": "3344bead518acad5ec6727ff6d6c679329ff92617c3cc11dc2b85b83160cfd92",
+    "anchors1": "9d96c307207a5a5fb905ead8cf40c9bb0f96a57cb91a490d7cdac07b88198503",
+    "anchors2": "c0e920e341803f0cb767725cd448e51fd6ef1d44e10f42b9626e90caada67343"
+  },
+  "network_performed_during_composition": false
+}
