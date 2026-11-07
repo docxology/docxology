@@ -22,7 +22,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `orchestrators/build_resume.py` | Generate `data/resume.json`, a no-JavaScript semantic HTML CV, plaintext variants, verified PDF, and `resume/verify.html` |
 | `orchestrators/generate_og_images.py` | Generate `og-*.jpg` Open Graph previews with live counts from `data/current-counts.json` (`--check` validates against `data/og-image-counts.json`) |
 | `orchestrators/sync_paired_publications.py` | Dry-run/apply checker for paired GitHub release + Zenodo DOI publications |
-| `orchestrators/add_zenodo_only.py` | Backfill real Zenodo publication records that have no paired GitHub release |
+| `orchestrators/check_zenodo_uncatalogued.py` | Report Zenodo candidates that need a reviewed bibliography or software decision |
 | `orchestrators/audit_publication_skills.py` | Validate publication `SKILL.md` coverage, frontmatter, instructions, and canonical-link hygiene |
 | `orchestrators/build_domain_pages.py` | Generate `domains.html`, `domain-*.html`, and `pages/DOMAINS.md` |
 | `orchestrators/generate_pillar_pages.py` | Generate the 5 high-authority pillar content explainers with FAQ and defined-term schemas |
@@ -123,7 +123,7 @@ Use [GENERATED.md](../GENERATED.md) as the exhaustive rebuild matrix. Dependency
 4. Claims-only edits — `export_agent_data.py`, then evidence/catalog/search exports.
 5. Resume/CV exports — `build_resume.py --all` after changing `resume/source.json`, bibliography/software data, Scholar snapshot, or claim data.
 6. Paired GitHub + Zenodo publication checks — `sync_paired_publications.py` writes a dry-run report by default; use `--apply` only for strong pairs.
-7. Zenodo-only publication adds — `add_zenodo_only.py <record_id>` creates the paper folder and source rows; regenerate the dependent site outputs afterward.
+7. Zenodo-only publication intake — review `check_zenodo_uncatalogued.py` candidates and follow the [curation runbook](../docs/operations/publication-sync.md#zenodo-only-publications) before regeneration.
 8. Changelog or manifest changes — `build_updates_page.py` / `build_generated_manifest.py`.
 9. Freshness and QA — reports under [`reports/`](../reports/); triage bot-protection before copy changes.
 10. Health gate — `validate_repo.py` (includes count-consistency, publication-skill, and SEO checks).

@@ -11,7 +11,7 @@ Use this map before editing curated files:
 | Public record found | Integrate with | Rule |
 | --- | --- | --- |
 | GitHub release + matching Zenodo DOI | [`sync_paired_publications.py`](../../code/orchestrators/sync_paired_publications.py) | Dry-run first; apply only `create_new` / `update_existing` actions from a warning-free report. |
-| Zenodo DOI with no matching GitHub release | [`add_zenodo_only.py`](../../code/orchestrators/add_zenodo_only.py) | Use the Zenodo record id, then run the regeneration and validation chain. |
+| Zenodo DOI with no matching GitHub release | [Zenodo-only review](#zenodo-only-publications) | Observe the exact record, decide its representation, and curate approved source changes before regeneration. |
 | GitHub repository or release with no archival DOI | [`pages/SOFTWARE.md`](../../pages/SOFTWARE.md) and [`build_github_inventory.py`](../../code/orchestrators/build_github_inventory.py) | Catalog it as software only when it belongs in the curated software table; do not invent a bibliography row. |
 | New Zenodo version of an existing work | Existing row and folder | Update the current row/folder metadata; do not create a duplicate work unless it is intentionally distinct. |
 | Ambiguous match | [`data/paired-publication-decisions.json`](../../data/paired-publication-decisions.json) | Record the review decision; future scans should report the exact pair as `already_reviewed`. |
@@ -21,7 +21,7 @@ The safest default is: **scan live sources, inspect the report, apply only stron
 ## Source Contract
 
 - [`code/orchestrators/sync_paired_publications.py`](../../code/orchestrators/sync_paired_publications.py) is the canonical GitHub Releases + Zenodo Records pairing tool.
-- [`code/orchestrators/add_zenodo_only.py`](../../code/orchestrators/add_zenodo_only.py) is the companion tool for real Zenodo publications that do not have a paired GitHub release.
+- [`code/orchestrators/check_zenodo_uncatalogued.py`](../../code/orchestrators/check_zenodo_uncatalogued.py) reports Zenodo records for [reviewed intake](#zenodo-only-publications) even when no release pairing exists.
 - GitHub releases provide source-repository and release context. Zenodo records provide DOI, archival metadata, record URLs, and downloadable PDFs.
 - Strong `create_new` and `update_existing` actions may be applied automatically with `--apply`.
 - `needs_review` actions are review-only. Do not auto-apply them without manual curation.
@@ -134,6 +134,11 @@ observation and any source-bound extraction under `source_evidence`. The shared
 [`PaperResources` resolver](../../code/src/paper_artifacts.py) selects the remote
 primary while keeping local PDFs as historical attachments. A filename match
 does not establish that an existing extraction belongs to the selected edition.
+
+Paired intake requests a local PDF from its version-specific Zenodo content
+endpoint and verifies the declared size, checksum, and PDF header before
+changing catalog files. The automatic download is bounded to 128 MiB and
+publishes into a fresh path. Use the reviewed archive workflow for larger files.
 
 For the paired apply command, `--no-download-files` suppresses a duplicate local
 PDF download; it does not create the remote-primary declaration, verify external
@@ -568,21 +573,38 @@ Do not create duplicate rows for newer Zenodo versions of the same work; update 
 
 ## Zenodo-Only Publications
 
-When Zenodo has a real publication record but no matching GitHub release, use the Zenodo-only backfill helper instead of trying to force a paired-publication decision:
+Scan for candidates that have no matching GitHub release:
 
 ```bash
-uv run python3 code/orchestrators/add_zenodo_only.py <record_id>
+uv run python3 code/orchestrators/check_zenodo_uncatalogued.py
 ```
 
-Use an optional domain override when inference is not safe:
+Use `--records-from <paired_publications_report.json>` to review records from a
+retained pairing scan. For a known version record outside the author searches,
+use [explicit record inclusion](#explicit-zenodo-record-inclusion) in the
+report-only pairing command before reviewing the retained records. The scan
+writes a review report. Curated bibliography, paper, and software files change
+only through the following review steps.
 
-```bash
-uv run python3 code/orchestrators/add_zenodo_only.py <record_id>:💻
-```
+1. Identify the exact version record and confirm the title, type, authorship,
+   and relationship to the concept DOI. Apply the
+   [authorship rules](#authorship-authority) to individual, institutional, and
+   grouped credit. Preserve the citation identity and work number for an
+   edition of an existing work. Use the software catalog for an archive that
+   represents software rather than a separate publication.
+2. Follow the [manual curation steps](#manual-review-path-for-ambiguous-pairs)
+   for a reviewed publication. Choose its domain from the source and document
+   the selected edition using the [PDF hosting policy](#pdf-hosting-decision).
+   Bind any locally retained PDF or remote primary to reviewed file evidence.
+3. Register permanent identifiers for approved new bibliography rows with
+   `uv run python3 code/orchestrators/export_bibliography.py --register-new-identifiers`.
+   Run [regeneration and validation](#regenerate-dependent-surfaces) after
+   the curated edits.
 
-The helper fetches Zenodo metadata, creates the paper folder, downloads the first available PDF, appends the bibliography and papers index rows, and updates `papers/paper_metadata.json`. It is a local-PDF intake path; for an externally hosted primary, use deliberate metadata-only curation and the declaration above. Confirm authorship, type, domain, title, DOI, and whether the record is a version of an already represented work before either path.
-
-After adding records it runs [`regenerate_all.py`](#regenerate-dependent-surfaces) automatically to rebuild the local generated layer (pass `--no-regenerate` to defer, e.g. when batching several adds). You still owe the network/validation follow-ups: refresh the live-site snapshot if counts changed, then run `validate_repo.py`. If the record also represents software, update [`pages/SOFTWARE.md`](../../pages/SOFTWARE.md) and re-run `regenerate_all.py` before the broad validation gate.
+The former [`add_zenodo_only.py`](../../code/orchestrators/add_zenodo_only.py)
+command remains as a migration notice. `--help` describes the replacement.
+Former write invocations, including `<record_id>:<domain>` and
+`--no-regenerate`, exit with status 2 before doing network or repository work.
 
 ## GitHub-Only Records
 

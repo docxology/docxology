@@ -2729,3 +2729,11 @@ def test_explicit_record_ambiguous_concept_refuses_before_report_or_apply(tmp_pa
         )
     assert report.read_bytes() == previous
     assert calls == ["https://zenodo.org/api/records/20990002"]
+
+
+def test_invalid_paired_pdf_metadata_fails_before_catalog_writes(tmp_path):
+    _write_minimal_repo(tmp_path)
+    before = {path: path.read_bytes() for path in tmp_path.rglob("*") if path.is_file()}
+    with pytest.raises(ValueError, match="bounded size, and MD5"):
+        apply_publication_pair(_pair(), repo_root=tmp_path)
+    assert {path: path.read_bytes() for path in tmp_path.rglob("*") if path.is_file()} == before

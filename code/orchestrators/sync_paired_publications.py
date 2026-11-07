@@ -22,6 +22,9 @@ import json
 import os
 import re
 import sys
+import tempfile
+import time
+import urllib.parse
 import urllib.request
 from copy import deepcopy
 from dataclasses import dataclass
@@ -1199,25 +1202,81 @@ def _pdf_target(folder: Path, key: str) -> Path | None:
     return target if target.parent == base else None
 
 
-def download_zenodo_pdf(
-    pair: PublicationPair, folder_path: Path, updated: list[str], repo_root: Path
-) -> None:
+MAX_ZENODO_PDF_BYTES = 128 * 1024 * 1024
+ZENODO_PDF_SECONDS = 120
+
+
+class _NoZenodoPDFRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        return None
+
+
+def _read_zenodo_pdf(record_id: str, name: str, item: dict[str, Any]) -> bytes:
+    size, checksum = item.get("size"), item.get("checksum")
+    if (
+        not re.fullmatch(r"[0-9]+", record_id)
+        or Path(name).name != name
+        or "\\" in name
+        or type(size) is not int
+        or not 0 < size <= MAX_ZENODO_PDF_BYTES
+        or not isinstance(checksum, str)
+        or not re.fullmatch(r"md5:[0-9a-fA-F]{32}", checksum)
+    ):
+        raise ValueError("Zenodo PDF requires a record ID, basename, bounded size, and MD5")
+    encoded_name = urllib.parse.quote(name, safe="")
+    url = f"https://zenodo.org/api/records/{record_id}/files/{encoded_name}/content"
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    opener = urllib.request.build_opener(_NoZenodoPDFRedirect())
+    deadline = time.monotonic() + ZENODO_PDF_SECONDS
+    body = bytearray()
+    with opener.open(request, timeout=15) as response:
+        if response.status != 200:
+            raise ValueError("Zenodo PDF response did not return HTTP 200")
+        while len(body) <= size:
+            if time.monotonic() >= deadline:
+                raise TimeoutError("Zenodo PDF read exceeded its deadline")
+            chunk = response.read1(min(1024 * 1024, size + 1 - len(body)))
+            if not chunk:
+                break
+            body.extend(chunk)
+    if (
+        len(body) != size
+        or not body.startswith(b"%PDF-")
+        or hashlib.md5(body, usedforsecurity=False).hexdigest() != checksum[4:].lower()
+    ):
+        raise ValueError("Zenodo PDF bytes do not match the declared file")
+    return bytes(body)
+
+
+def _planned_zenodo_pdf(
+    pair: PublicationPair, folder: Path
+) -> tuple[Path, bytes] | None:
     for item in pair.record.files:
         name = str(item.get("key") or item.get("filename") or "")
-        target = _pdf_target(folder_path, name)
+        target = _pdf_target(folder, name)
         if target is None:
             continue
-        links = item.get("links") if isinstance(item.get("links"), dict) else {}
-        url = links.get("self") or links.get("download")
-        if not url:
+        links = item.get("links")
+        if not isinstance(links, dict) or not (links.get("self") or links.get("download")):
             continue
         if target.exists():
-            return
-        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-        with urllib.request.urlopen(req, timeout=120) as response:
-            target.write_bytes(response.read())
-        updated.append(str(target.relative_to(repo_root)))
-        return
+            return None
+        return target, _read_zenodo_pdf(pair.record.record_id, name, item)
+    return None
+
+
+def _publish_zenodo_pdf(target: Path, body: bytes) -> None:
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            dir=target.parent, prefix=".zenodo-pdf-", delete=False
+        ) as stream:
+            temporary = Path(stream.name)
+            stream.write(body)
+        os.link(temporary, target)
+    finally:
+        if temporary is not None:
+            temporary.unlink()
 
 
 def ensure_bibliography_row(
@@ -1481,13 +1540,26 @@ def apply_publication_pair(
     refresh_docs: bool = False,
 ) -> AppliedPublication:
     folder = folder or folder_for_pair(pair, repo_root)
-    folder_path = repo_root / "papers" / folder
+    papers = repo_root / "papers"
+    folder_path = papers / folder
+    if (
+        Path(folder).name != folder
+        or folder in {".", ".."}
+        or folder_path.is_symlink()
+        or papers.is_symlink()
+    ):
+        raise ValueError("Publication folder must be a real direct child of papers")
     created = not folder_path.exists()
     # Validate all existing JSON/provenance before touching README/CFF or metadata.
     _read_metadata_object(folder_path / "metadata.json")
     _paper_metadata_index_payload(pair, folder, repo_root)
+    pdf = _planned_zenodo_pdf(pair, folder_path) if download_files else None
     updated: list[str] = []
     folder_path.mkdir(parents=True, exist_ok=True)
+    if pdf is not None:
+        target, body = pdf
+        _publish_zenodo_pdf(target, body)
+        updated.append(str(target.relative_to(repo_root.resolve())))
 
     if created:
         _write_if_changed(
@@ -1520,8 +1592,6 @@ def apply_publication_pair(
         update_existing_citation(folder_path / "CITATION.cff", pair, updated, repo_root)
 
     update_metadata_json(folder_path / "metadata.json", pair, updated, repo_root)
-    if download_files:
-        download_zenodo_pdf(pair, folder_path, updated, repo_root)
     ensure_bibliography_row(pair, folder, updated, repo_root)
     update_paper_metadata_index(pair, folder, updated, repo_root)
     update_papers_readme(folder, pair, updated, repo_root)

@@ -859,8 +859,8 @@ EXCLUDED_OPERATIONS: tuple[ExcludedOperation, ...] = (
     ),
     ExcludedOperation(
         "add_zenodo_only.py",
-        "network/source-authoring/binary-intake/manual-review",
-        "Zenodo intake can create bibliography rows, paper folders, and downloaded binaries.",
+        "retired/read-only",
+        "Compatibility command that directs operators to reviewed Zenodo-only intake.",
     ),
     ExcludedOperation(
         "audit_private_reconciliation.py",

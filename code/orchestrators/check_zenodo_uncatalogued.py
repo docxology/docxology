@@ -14,8 +14,8 @@ Two independent findings, not one:
 
 - ``uncatalogued``: neither the record's concept DOI nor its version-specific
   DOI (``10.5281/zenodo.<record_id>``) appears anywhere in the bibliography --
-  a genuine gap. Belongs in the bibliography via
-  ``add_zenodo_only.py <record_id>`` (see docs/operations/publication-sync.md).
+  a candidate for review. Use the Zenodo-only path in
+  docs/operations/publication-sync.md to decide how to represent the record.
   A software-type record (a GitHub-release archive) whose concept DOI is
   linked from the ``pages/SOFTWARE.md`` row of a repository whose ``[📄]``
   paper folder the bibliography already cites is that work's software
@@ -727,7 +727,7 @@ def main() -> int:
         for item in report["uncatalogued"]:
             print(f"  {item['record_id']}  {item['doi']}  {item['title']}")
         print(
-            "Add real publications with: uv run python3 code/orchestrators/add_zenodo_only.py <record_id>"
+            "Review candidates using docs/operations/publication-sync.md#zenodo-only-publications."
         )
     elif report["reviewed_source_archive_drift_count"]:
         print(
