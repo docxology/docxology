@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T08:08:02Z",
+  "generated_at": "2026-11-08T21:52:30Z",
   "artifacts": [
     {
       "name": "Research exploration tools",
@@ -335,7 +335,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-11-07.json"
+        "reports/pages_artifact_growth_2026-11-08.json"
       ],
       "sources": [
         "data/scholar-pdf-projections.json",
@@ -801,8 +801,8 @@
     {
       "name": "Public-source review record",
       "outputs": [
-        "reports/public_source_review_2026-11-07.json",
-        "reports/public_source_review_2026-11-07.md"
+        "reports/public_source_review_2026-11-08.json",
+        "reports/public_source_review_2026-11-08.md"
       ],
       "sources": [
         "reports/public_source_snapshot_*.json",
@@ -832,7 +832,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-11-07.json"
+        "reports/asset_size_2026-11-08.json"
       ],
       "sources": [
         "root HTML pages",
