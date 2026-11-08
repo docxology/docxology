@@ -8,7 +8,7 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-11-06; only unfinished work and recurring checks remain.
+- Last reviewed: 2026-11-08; only unfinished work and recurring checks remain.
   Completed implementation and source-review history lives in CHANGELOG.md and
   the linked dated reports. Effort estimates below are separate from priority.
 
@@ -17,7 +17,7 @@ criteria, and dependencies. Re-review this file before each public release.
 | Effort | Unfinished work | Main dependency |
 | --- | --- | --- |
 | Minor | Search Console cleanup and selected URL inspections; retry unavailable source queries | Signed-in owner access, public source availability |
-| Medium | Named visual review and revision-bound release attestation; current-candidate Lighthouse review; Pages growth/retention review; deployed Scholar-pilot routes and later index observations | Reviewer/access, measured candidate evidence, reviewed source/projection contract |
+| Medium | Candidate Lighthouse review after relevant changes; Pages growth and retention review; later Scholar index observations | Reviewer/access, measured candidate evidence, reviewed source/projection contract |
 | Major | Deferred licensed full-text acquisition and originating-paper corrections; manuscript human/editorial review; managed-profile security scan and finding disposition | Rights holders, depositors/authors, editorial decisions, required scan runtime |
 
 The [reviewed Scholar pilot](reports/scholar_pdf_placement_review_2026-11-05.md)
@@ -37,12 +37,11 @@ Recurring checks below are operating obligations, not unfinished feature work.
 - Deliverable: run `regenerate_all.py --validate`, then verify the Pages artifact and live deployment before each release; a named human reviewer inspects the post-deploy desktop and mobile visual-QA captures and records the review (`visual_qa.py --approve-existing --reviewed-by <reviewer>`, see [accessibility-qa.md](docs/operations/accessibility-qa.md))
 - Acceptance: source hashes, generator metadata, Pages file/byte counts, omitted-image policy, deployment metadata, fresh revision-bound browser/link/source/live evidence, and a deployment-SHA attestation that includes the human visual-review record are present; a second offline regeneration pass produces no content changes
 - Dependencies: `regenerate_all.py`, Pages workflow, live verification
-- Status (2026-10-05): the human visual review and the full release attestation
-  are not done. The newest capture set (`reports/visual-qa/2026-10-05/`) records
-  `review.status: pending`. Automated browser, smoke, and hosted-artifact
-  receipts are separate evidence and stand in for neither; a release-ready claim
-  waits for `validate_repo.py --release` with the deployment attestation
-  ([release-integrity.md](docs/operations/release-integrity.md)).
+- On 2026-11-08, [`84f2a348`](https://github.com/docxology/docxology/commit/84f2a348358d92d03a2c7fbb34590593f4d3374f)
+  passed the full release gate after human review of all 26 screenshots.
+  The maintainer retains its revision-bound attestation and source receipts.
+  Repeat the [ordered release gate](docs/operations/release-integrity.md) for
+  each new deployment.
 
 ### DOC-003 — Public privacy and claim safety
 

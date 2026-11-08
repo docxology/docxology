@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T22:09:52Z",
+  "generated_at": "2026-11-08T21:07:14Z",
   "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence",
   "claims": [
     {
@@ -175,16 +175,16 @@
     },
     {
       "id": "aii-scientific-advisory-board-count",
-      "claim": "The Active Inference Institute site lists 32 current Scientific Advisory Board members.",
+      "claim": "On 2026-11-08, the Active Inference Institute site listed 31 current Scientific Advisory Board members.",
       "status": "public-profile",
       "sources": [
         "https://activeinference.institute/structure/scientific-advisory-board/",
         "pages/LINKS.md",
         "pages/DISCOVERY.md"
       ],
-      "checked_at": "2026-10-06",
+      "checked_at": "2026-11-08",
       "confidence": "medium",
-      "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 30 link to a public page.",
+      "verification_method": "The current Scientific Advisory Board section listed 31 members with public directory profiles and 30 additional public-page links.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "State this as the current public membership count, not a cohort announcement or a claim about any specific announcement month."
     },

@@ -156,11 +156,11 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 **Selected repositories**
 
-- [QuadCraft](https://github.com/docxology/QuadCraft) — Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
-- [QuadMath](https://github.com/docxology/QuadMath) — Mathematical exposition of Quadray coordinate systems (4-vector tetrahedral coordinates); LaTeX documentation and computation library
+- [QuadCraft](https://github.com/docxology/QuadCraft) — Tetrahedral voxel game in C++/OpenGL and a JavaScript browser game portfolio, with deterministic simulation, geometry-aware collision and picking, and conservative graph transport · Release v0.5.0
+- [QuadMath](https://github.com/docxology/QuadMath) — Quadray-coordinate computation and TeX research documentation, with exact rational geometry, harmonic extension, conservative graph transport, and selected Lean proofs · Release 0.6.0
 - [ivm-xyz](https://github.com/docxology/ivm-xyz) — Python library for 3D and 4D Quadray/IVM (Isotropic Vector Matrix) geometry — coordinate conversion, volume calculations, and polyhedral operations
 - [godel_ivm](https://github.com/docxology/godel_ivm) — Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products
-- [symergetics](https://github.com/docxology/symergetics) — Symbolic Synergetics — computer algebra and formal symbolic systems for Buckminster Fuller's synergetics mathematics
+- [symergetics](https://github.com/docxology/symergetics) — Computational synergetics for Quadray and IVM coordinates, with exact polyhedral metrics, solid mass centroids, and computed scientific visualizations · Release 1.3.0
 
 ## 💻 [Computational Methods & Open Science](../domain-computational.html)
 
@@ -193,7 +193,7 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 - [template](https://github.com/docxology/template) — Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Earlier software v3.3.0 · Zenodo ·  · Software version 5.0.0 artifact
 - [mdkv](https://github.com/docxology/mdkv) — MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents
 - [markdown_decision_process](https://github.com/docxology/markdown_decision_process) — Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning
-- [steganographer](https://github.com/docxology/steganographer) — High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 484 tests, GStreamer integration
+- [steganographer](https://github.com/docxology/steganographer) — Rust steganography and signed-media tools for image, audio, and video carriers, with native and WebAssembly builds, capacity checks, and bounded forensic analysis · Release v0.9.0
 - [timeline_generator](https://github.com/docxology/timeline_generator) — Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network
 - [codomyrmex](https://github.com/docxology/codomyrmex) — AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration ·  · Citation DOI
 - [biology_textbook](https://github.com/docxology/biology_textbook) — Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI

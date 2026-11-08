@@ -17,6 +17,12 @@ nav: ["Home](../README.md)", "Evidence](EVIDENCE.md)", "Cite & Verify](CITE_VERI
 > authoritative for the fact but no source independent of it corroborates the
 > specific identifier.
 
+## 2026-11-08 — Scientific Advisory Board roster
+
+| Claim | Verdict | Primary source | Notes |
+|-------|---------|----------------|-------|
+| AII Scientific Advisory Board | **First-party, dated** | [Scientific Advisory Board](https://activeinference.institute/structure/scientific-advisory-board/) | The current section listed 31 members with directory profiles and 30 additional public-page links. The earlier 32-member observation remains below. |
+
 ## 2026-08-26 — Review-gated primary-source refresh
 
 | Claim | Verdict | Primary source | Notes |

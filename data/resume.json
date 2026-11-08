@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T22:09:52Z",
+  "generated_at": "2026-11-08T21:07:16Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -74,7 +74,7 @@
       "caveat": "The public-source snapshot records this account's type as Organization; the repository count is read from /users/ActiveInferenceInstitute, which serves Organization accounts as well as Users. Local software catalog tracks 43 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-11-06T17:22:16Z",
+      "generated_at": "2026-11-08T20:58:55Z",
       "source": "GitHub REST API /users/{owner}/repos",
       "total": 322,
       "public": 322,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 737,
-      "sha256": "ec8b786e584b0cb91898ce415974184e7f6eb885f9c66455a2de7715f3415ec2",
+      "sha256": "d84d8d0060a00d9dd2f29e674eb4c8d7325f312007d4d2a78dd9a6e1fd4042e0",
       "files": [
         {
           "path": "resume/source.json",
@@ -102,8 +102,8 @@
         },
         {
           "path": "data/software.json",
-          "bytes": 104215,
-          "sha256": "1629b7d24030a8ea88cfa5016961589204393d9de1da3bc8481313ed2bd98502"
+          "bytes": 104325,
+          "sha256": "1340e71cefebfc1b5b8f82c61f5c543a56d76e12503fcf85fed7e5f251b8fd33"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -112,13 +112,13 @@
         },
         {
           "path": "data/claims.json",
-          "bytes": 12971,
-          "sha256": "882b98e730e00227459666bf6cac7a07b4e97f0b1f790a62f8d3d0f63e8a012f"
+          "bytes": 13016,
+          "sha256": "94ae341a7ea869e8700a79fca983810bbd3a806b99bc9252dc1f334a2720ce6e"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 369313,
-          "sha256": "ff8d4ac91e2c48c399d8ea790625463150e7b270800a1f7b6b4a4bc41fe21d3b"
+          "bytes": 369335,
+          "sha256": "40d9e5920f11e1c30c9d67c79d445796e31b0db6820cd1825dc326d9611f19bf"
         }
       ]
     },
@@ -8242,7 +8242,7 @@
       "url": "https://github.com/docxology/QuadCraft",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world",
+      "description": "Tetrahedral voxel game in C++/OpenGL and a JavaScript browser game portfolio, with deterministic simulation, geometry-aware collision and picking, and conservative graph transport · Release v0.5.0",
       "language": "JavaScript",
       "stars": 8,
       "updated_or_year": "2026-11",
@@ -8362,8 +8362,8 @@
       "url": "https://github.com/docxology/QuadMath",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Mathematical exposition of Quadray coordinate systems (4-vector tetrahedral coordinates); LaTeX documentation and computation library",
-      "language": "TeX",
+      "description": "Quadray-coordinate computation and TeX research documentation, with exact rational geometry, harmonic extension, conservative graph transport, and selected Lean proofs · Release 0.6.0",
+      "language": "Python",
       "stars": 2,
       "updated_or_year": "2026-11",
       "paper_path": "",
@@ -8494,7 +8494,7 @@
       "url": "https://github.com/docxology/steganographer",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 484 tests, GStreamer integration",
+      "description": "Rust steganography and signed-media tools for image, audio, and video carriers, with native and WebAssembly builds, capacity checks, and bounded forensic analysis · Release v0.9.0",
       "language": "Rust",
       "stars": 1,
       "updated_or_year": "2026-11",
@@ -8902,7 +8902,7 @@
       "url": "https://github.com/docxology/symergetics",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Symbolic Synergetics — computer algebra and formal symbolic systems for Buckminster Fuller's synergetics mathematics",
+      "description": "Computational synergetics for Quadray and IVM coordinates, with exact polyhedral metrics, solid mass centroids, and computed scientific visualizations · Release 1.3.0",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-11",
@@ -10872,16 +10872,16 @@
     },
     {
       "id": "aii-scientific-advisory-board-count",
-      "claim": "The Active Inference Institute site lists 32 current Scientific Advisory Board members.",
+      "claim": "On 2026-11-08, the Active Inference Institute site listed 31 current Scientific Advisory Board members.",
       "status": "public-profile",
       "sources": [
         "https://activeinference.institute/structure/scientific-advisory-board/",
         "pages/LINKS.md",
         "pages/DISCOVERY.md"
       ],
-      "checked_at": "2026-10-06",
+      "checked_at": "2026-11-08",
       "confidence": "medium",
-      "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 30 link to a public page.",
+      "verification_method": "The current Scientific Advisory Board section listed 31 members with public directory profiles and 30 additional public-page links.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "State this as the current public membership count, not a cohort announcement or a claim about any specific announcement month."
     },

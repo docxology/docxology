@@ -38,14 +38,17 @@
     {
       "id": "biographical-claim:aii-scientific-advisory-board-count",
       "claim_id": "aii-scientific-advisory-board-count",
-      "claim_sha256": "2cbd61bc920cd3b7e4f4ca6a201a47978554f32b64257a489beedd22cf288786",
-      "evidence_sha256": "696082534953d1f42556b5f9fb09a05bca0d4ab0e332cd731d25c00c2e86be17",
+      "claim_sha256": "3a583ac25ec5f9337a25b0f218e54367b9ff6247509aefa75f7a3acc49dcf007",
+      "evidence_sha256": "5f72f83f7325f79ecc4c4b9b4185a7d105540af43c599096acc361f45c94da97",
       "decision": "acknowledged",
       "decided_by": "user",
-      "decided_at": "2026-10-06T21:01:11Z",
-      "rationale": "Re-read the official Scientific Advisory Board page on 2026-10-06: it still states 32 current members and lists exactly 32 names (30 link to their own public page). The count is unchanged; checked_at advanced to 2026-10-06. Reviewed under the principal's 2026-10-06 instruction to re-read the pages.",
+      "decided_at": "2026-11-08T21:06:59Z",
+      "rationale": "The maintainer approved the dated correction. A fresh direct read of the official roster counted 31 distinct directory entries and 30 additional public-page links. The earlier count remains in the dated verification history.",
       "curated_targets": [
-        "code/orchestrators/export_agent_data.py"
+        "code/orchestrators/export_agent_data.py",
+        "pages/WIKIPEDIA.md",
+        "pages/VERIFICATION_LOG.md",
+        "data/verification-log.json"
       ]
     },
     {

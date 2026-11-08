@@ -3,6 +3,14 @@
   "description": "Dated source-grounded verification of load-bearing profile claims. It distinguishes independent, first-party, direct-authenticated, and principal-confirmed evidence. Human-readable companion: pages/VERIFICATION_LOG.md.",
   "passes": [
     {
+      "date": "2026-11-08",
+      "method": "Dated first-party observation of the official Scientific Advisory Board roster.",
+      "results": [
+        {"claim": "aii-sab-count", "verdict": "first-party-current", "value": {"current_members": 31, "additional_public_page_links": 30}, "independent_source": "https://activeinference.institute/structure/scientific-advisory-board/", "note": "Counted the current roster entries and additional public-page links. The earlier 32-member observation remains in the dated history."}
+      ],
+      "softened": []
+    },
+    {
       "date": "2026-08-26",
       "method": "Review-gated refresh against current primary records, a direct authenticated Scholar profile observation, and a principal-confirmed teaching update. First-party and principal-confirmed evidence is explicitly labeled rather than treated as independent corroboration.",
       "results": [
