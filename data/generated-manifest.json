@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T21:52:30Z",
+  "generated_at": "2026-11-08T22:16:03Z",
   "artifacts": [
     {
       "name": "Research exploration tools",
@@ -771,7 +771,7 @@
     {
       "name": "External link report",
       "outputs": [
-        "reports/external_links_2026-11-07.json"
+        "reports/external_links_2026-11-08.json"
       ],
       "sources": [
         "all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"
@@ -821,11 +821,11 @@
     {
       "name": "External link triage",
       "outputs": [
-        "reports/external_links_triage_2026-11-07.json",
-        "reports/external_links_triage_2026-11-07.md"
+        "reports/external_links_triage_2026-11-08.json",
+        "reports/external_links_triage_2026-11-08.md"
       ],
       "sources": [
-        "reports/external_links_2026-11-07.json"
+        "reports/external_links_2026-11-08.json"
       ],
       "command": "python3 code/orchestrators/build_external_link_triage.py"
     },
