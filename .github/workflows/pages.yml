@@ -98,10 +98,6 @@ jobs:
       - name: Deploy Pages artifact
         id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # actions/deploy-pages@v5.0.1
-        with:
-          # The ~0.9 GiB bounded artifact can sit in Pages' "syncing_files"
-          # state past the action's 10-minute default; allow 30 minutes.
-          timeout: 1800000
 
       - name: Verify deployed artifact against candidate SHA
         timeout-minutes: 15
