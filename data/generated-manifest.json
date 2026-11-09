@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T22:16:03Z",
+  "generated_at": "2026-11-09T18:38:23Z",
   "artifacts": [
     {
       "name": "Research exploration tools",
@@ -194,8 +194,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-11-07.json",
-        "reports/source_coverage_2026-11-07.md"
+        "reports/source_coverage_2026-11-09.json",
+        "reports/source_coverage_2026-11-09.md"
       ],
       "sources": [
         "data/works.json",
@@ -335,7 +335,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-11-08.json"
+        "reports/pages_artifact_growth_2026-11-09.json"
       ],
       "sources": [
         "data/scholar-pdf-projections.json",
@@ -771,7 +771,7 @@
     {
       "name": "External link report",
       "outputs": [
-        "reports/external_links_2026-11-08.json"
+        "reports/external_links_2026-11-09.json"
       ],
       "sources": [
         "all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"
@@ -821,18 +821,18 @@
     {
       "name": "External link triage",
       "outputs": [
-        "reports/external_links_triage_2026-11-08.json",
-        "reports/external_links_triage_2026-11-08.md"
+        "reports/external_links_triage_2026-11-09.json",
+        "reports/external_links_triage_2026-11-09.md"
       ],
       "sources": [
-        "reports/external_links_2026-11-08.json"
+        "reports/external_links_2026-11-09.json"
       ],
       "command": "python3 code/orchestrators/build_external_link_triage.py"
     },
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-11-08.json"
+        "reports/asset_size_2026-11-09.json"
       ],
       "sources": [
         "root HTML pages",
@@ -846,7 +846,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-11-07.json"
+        "reports/accessibility_static_2026-11-09.json"
       ],
       "sources": [
         "root HTML pages",

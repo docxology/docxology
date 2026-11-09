@@ -51,6 +51,10 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 > **Current catalog totals** are generated in [`reports/current_counts.md`](reports/current_counts.md). Canonical source tables are [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md), [`pages/SOFTWARE.md`](pages/SOFTWARE.md), [`papers/README.md`](papers/README.md), and [`data/github-repositories.json`](data/github-repositories.json).
 
+
+<details>
+<summary>Full repository map (click to expand)</summary>
+
 | Resource | What's Inside |
 |----------|---------------|
 | 📚 [**pages/BIBLIOGRAPHY.md**](pages/BIBLIOGRAPHY.md) | Unified sortable table of **all works** in the bibliography — DOI links, domain tags, and per-paper docs |
@@ -81,6 +85,8 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | ✅ [**agent-verify.html**](agent-verify.html) / [**about.html**](about.html) | **Agent verification & about** — agent-ready verification recipes and a short bio page |
 | 🛠️ [**code/**](code/) | **Repository Source Code** — `orchestrators/`, `src/`, and `tests/` directories containing executable pipelines and core functions |
 | 📖 [**docs/**](docs/) | **Central Documentation** — Repository-wide operational documentation |
+
+</details>
 
 ### By Domain
 
@@ -342,35 +348,7 @@ flowchart TD
 
 ---
 
-## 📊 GitHub Stats
-
 <div align="center">
-
-![](https://github-readme-stats.vercel.app/api?username=docxology&theme=dark&hide_border=true&include_all_commits=true&count_private=true)
-
-![](https://nirzak-streak-stats.vercel.app/?user=docxology&theme=dark&hide_border=true)
-
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=docxology&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
-
-</div>
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-
-![](https://github-profile-trophy.vercel.app/?username=docxology&theme=dark&no-frame=true&no-bg=true&margin-w=4)
-
-</div>
-
-### 🔝 Top Contributed Repo
-
-![](https://github-contributor-stats.vercel.app/api?username=docxology&limit=5&theme=dark&combine_all_yearly_contributions=true)
-
----
-
-<div align="center">
-
-[![](https://visitcount.itsvg.in/api?id=docxology&icon=0&color=4)](https://visitcount.itsvg.in)
 
 ### 💰 Support My Work
 
