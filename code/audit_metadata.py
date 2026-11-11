@@ -35,7 +35,9 @@ EMOJI_RX = re.compile(
     "\U0001f680-\U0001f6ff"  # transport & map
     "\U0001f1e0-\U0001f1ff"  # flags
     "\U00002702-\U000027b0"  # dingbats
-    "\U000024c2-\U0001f251"  # misc
+    "\U000024c2"  # circled M
+    "\U0001f170-\U0001f1df"  # enclosed alphanumeric supplement (before flags)
+    "\U0001f200-\U0001f251"  # enclosed ideographic supplement
     "]+"
 )
 
