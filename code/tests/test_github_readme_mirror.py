@@ -65,12 +65,25 @@ def test_absolute_and_anchor_targets_are_left_alone():
 
 
 def test_repo_relative_targets_are_relocated_to_the_repository_root():
-    assert mirror.relocate_target("publications.html") == "../publications.html"
     assert mirror.relocate_target("papers/") == "../papers/"
+    assert mirror.relocate_target("pages/PROFILE.md") == "../pages/PROFILE.md"
     assert (
         mirror.relocate_target(".well-known/security.txt")
         == "../.well-known/security.txt"
     )
+
+
+def test_html_pages_point_at_the_published_site():
+    """github.com renders a repo-relative .html link as source, not as a page."""
+    assert (
+        mirror.relocate_target("publications.html")
+        == mirror.SITE_ORIGIN + "publications.html"
+    )
+    assert (
+        mirror.relocate_target("domains.html#entomology")
+        == mirror.SITE_ORIGIN + "domains.html#entomology"
+    )
+    assert mirror.SITE_ORIGIN.startswith("https://")
 
 
 def test_render_carries_a_do_not_edit_marker():
