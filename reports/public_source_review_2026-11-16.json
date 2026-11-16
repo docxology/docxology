@@ -23,7 +23,7 @@
     "paired_publication_decisions": {
       "generated_at": "2026-09-24T18:45:00Z",
       "path": "data/paired-publication-decisions.json",
-      "sha256": "27f3ce3932e529bd290ee4b06ef4c56c15466c016a4db6b34c949787046464fa",
+      "sha256": "5c2e4b9f0f088d69af64781a3ceaca1fa1b65859ad23c9f0e3abb9af66f6c0ea",
       "source_commit": null
     },
     "paired_publications": {
@@ -47,7 +47,7 @@
     "public_source_observation_decisions": {
       "generated_at": null,
       "path": "data/public-source-observation-decisions.json",
-      "sha256": "574eb00a918e990198aefca851a3ff382e5345a53ced1bf85d1ae3d1eae2a0fa",
+      "sha256": "7a61b36e2530b38b5fe2b7b516065ee3274ebabad2d896019c3cee2c35cc2c30",
       "source_commit": null
     },
     "public_source_snapshot": {
@@ -8442,8 +8442,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "62710daea876893a7ea4ebe6dee442341ca7cbe7",
-  "source_tree_sha": "10c5d1424f9260ccbc69e0d500b8336021f95b11",
+  "source_commit": "577d3478e3bb543a90c9d30fc33da6c941127c4c",
+  "source_tree_sha": "22cf1a0b610a5904cd70baf9a0880a93fc269567",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {

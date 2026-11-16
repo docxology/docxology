@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Project newly imported repository links against the public GitHub inventory."""
+"""Project curated repository links against the public GitHub inventory."""
 import argparse
 import sys
 from pathlib import Path

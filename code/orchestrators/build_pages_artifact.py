@@ -39,6 +39,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 from docxology_tools import release_controls  # noqa: E402
 from docxology_tools.release_evidence import is_ephemeral_release_evidence_path  # noqa: E402
 from docxology_tools import report_references  # noqa: E402
+from docxology_tools.public_repository_links import evidence_entries, projected_report  # noqa: E402
 from docxology_tools.archive_projection import declared_archives, verified_archives  # noqa: E402
 from docxology_tools.scholar_pdf_projection import resolve_alias, verified_projections  # noqa: E402
 
@@ -472,9 +473,15 @@ def _superseded_report_paths() -> set[Path]:
     (``papers/`` included; inventory manifests and repo-only trees excluded), so
     a report referenced from any projected surface stays published.
     """
-    return superseded_dated_report_paths(
+    superseded = superseded_dated_report_paths(
         tracked_paths(), referenced_paths=_referenced_report_paths()
     )
+    for entry in evidence_entries(REPO_ROOT):
+        if "projection" in entry:
+            path = REPO_ROOT / entry["path"]
+            projected_report(path, REPO_ROOT)  # fail closed on either byte binding
+            superseded.add(Path(entry["path"]))
+    return superseded
 
 
 def _relative_paths(*, archive_paths: set[Path] | None = None) -> list[Path]:
@@ -949,6 +956,7 @@ _GUARD_SKIP_FILES = {
     "data/pages-artifact-manifest.json",
     "data/generated-manifest.json",
     "data/report-retention.json",
+    "data/public-link-evidence.json",
 }
 
 

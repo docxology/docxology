@@ -83,12 +83,13 @@ def existing_build_date() -> datetime | None:
         return None
 
 
-def item(title: str, link: str, guid: str, description: str, pub_date: datetime) -> str:
+def item(title: str, link: str, guid: str, description: str, pub_date: datetime | None) -> str:
+    date_xml = f"<pubDate>{format_datetime(pub_date)}</pubDate>" if pub_date else ""
     return f"""    <item>
       <title>{h(title)}</title>
       <link>{h(link)}</link>
       <guid isPermaLink="false">{h(guid)}</guid>
-      <pubDate>{format_datetime(pub_date)}</pubDate>
+      {date_xml}
       <description>{h(description)}</description>
     </item>"""
 
@@ -135,7 +136,7 @@ def render(build_date: datetime | None = None, *, repo_root: Path = REPO_ROOT) -
             date = publication_date(work, metadata)
             work_date = datetime.fromisoformat(date if len(date) == 10 else date + "-01-01").replace(tzinfo=timezone.utc)
         except ValueError, TypeError:
-            work_date = build_date
+            work_date = None
         entries.append(
             item(
                 work["title"],
@@ -145,6 +146,13 @@ def render(build_date: datetime | None = None, *, repo_root: Path = REPO_ROOT) -
                 work_date,
             )
         )
+    def entry_key(entry):
+        date = re.search(r"<pubDate>([^<]+)</pubDate>", entry)
+        guid = re.search(r"<guid[^>]*>([^<]+)</guid>", entry)
+        stamp = parsedate_to_datetime(date[1]) if date else datetime.min.replace(tzinfo=timezone.utc)
+        return stamp, guid[1] if guid else ""
+
+    entries.sort(key=entry_key, reverse=True)
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>

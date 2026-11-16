@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-16 — Metadata audit and public-link hardening
+
+- Replace emoji regular-expression ranges with Unicode codepoint checks and boundary tests.
+- Make profile README links absolute, align security-policy contacts, keep pre-deploy verification status separate from historical live reports, and order RSS entries by their source dates.
+- Project unavailable owned-repository links out of curated sources and public report copies; retain byte-bound historical observations and literal PDF extractions. Verified GitHub redirects remain public only while their numeric repository IDs remain in the public inventory.
+- Synchronize start-page counts from the canonical snapshot. Preserve document-verified COGSEC editor credits and the symposium's reviewed grouped byline.
+- See [the Wave 2A review](reports/wave2a_hardening_2026-11-16.md) for evidence boundaries and candidate validation limits.
+
 ## 2026-11-06 — Exact publication editions, literal credits and software archives
 
 The [publication and software refresh](reports/publication_software_refresh_2026-11-06.md) records complete discovery, selected documents, preserved history and actual verification.
@@ -1580,12 +1588,12 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-06-29
 
-- Added work **#179 "Mapping William Blake's Works"** (`zenodo.21047573`, `docxology/blake` v0.1.0) via the canonical `sync_paired_publications.py --apply` path, plus benign `checked_at` metadata bumps on existing rows. Full local regenerate (works.json, exports, publications, work/domain/paper pages, resume, claims, catalog, search index, feed, sitemap, counts) and live-site snapshot refresh; `validate_repo` + pytest green. Also fixed 32 malformed bare-domain markdown links in `reports/publishing_status_megaindex.md`.
+- Added work **#179 "Mapping William Blake's Works"** (`zenodo.21047573`, `docxology/blake` v0.1.0) via the canonical `sync_paired_publications.py --apply` path, plus benign `checked_at` metadata bumps on existing rows. Full local regenerate (works.json, exports, publications, work/domain/paper pages, resume, claims, catalog, search index, feed, sitemap, counts) and live-site snapshot refresh; `validate_repo` + pytest green. Also fixed 32 malformed bare-domain markdown links in the archived publishing-status megaindex.
 
 ## 2026-06-27
 
 - Added work **#178 "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference"** (`zenodo.20976824`, `docxology/alphacogant` v1.0.1) with paper folder, PDF, and work page; updated "A template/ approach to Reproducible Generative Research" to Zenodo version v1.0.9. Regenerated the dependent layer and refreshed the live-site verification snapshot.
-- `build_work_pages.py` now renders a **Platform availability card** on every canonical work page (Zenodo/GitHub/arXiv/OSF/HuggingFace/Software-Heritage/PyPI/site), driven by a new `data/publishing-status.json`; added `reports/publishing_status_megaindex.md`, a publishing-status mega-index across 272 items (works + software) with per-platform coverage and gaps. Began archiving origins to Software Heritage via anonymous Save Code Now.
+- `build_work_pages.py` now renders a **Platform availability card** on every canonical work page (Zenodo/GitHub/arXiv/OSF/HuggingFace/Software-Heritage/PyPI/site), driven by a new `data/publishing-status.json`; added the archived publishing-status megaindex, a publishing-status mega-index across 272 items (works + software) with per-platform coverage and gaps. Began archiving origins to Software Heritage via anonymous Save Code Now.
 
 ## 2026-06-26
 

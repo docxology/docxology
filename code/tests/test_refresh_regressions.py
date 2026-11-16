@@ -14,6 +14,18 @@ from docxology_tools.bibliography_links import canonical_link_url  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 
+
+@pytest.mark.parametrize("url", [
+    "https://github.com/ActiveInferenceInstitute/hidden",
+    "https://raw.githubusercontent.com/ActiveInferenceInstitute/hidden/main/README.md",
+    "https://api.github.com/repos/ActiveInferenceInstitute/hidden",
+    "https://github.com/docxology/hidden.git",
+])
+def test_private_owned_urls_are_projected_across_hosts(url):
+    from docxology_tools.public_repository_links import project_public_links
+    assert project_public_links(url, frozenset()) == "[non-public repository]"
+    assert project_public_links("https://github.com/independent/hidden", frozenset()) == "https://github.com/independent/hidden"
+
 @pytest.mark.parametrize("suffix", ["", ".", ",", ";", ":", "!", "?"])
 def test_doi_prose_punctuation(suffix):
     doi = "10.5281/zenodo.24069474"
@@ -95,15 +107,24 @@ def test_private_related_links_are_removed_without_mutating_observation():
 
 
 def test_shipped_sources_introduce_no_nonpublic_owned_repository_urls():
+    import hashlib
+    import json
     from docxology_tools.public_repository_links import URL_RX, owned_repository, public_repositories
-    # Historical public references stay only in their original published paths.
-    # This is not a public-visibility declaration or permission for new intake.
-    baseline = subprocess.run(["git", "grep", "-I", "-o", "-E", r"https?://(www\.)?github\.com/docxology/[A-Za-z0-9_.-]+", "c2523b1c51f6e506031ceb5b90a890956337ec7c", "--", "papers", "data", "pages", "reports", "*.html"], cwd=ROOT, stdin=subprocess.DEVNULL, capture_output=True, text=True, check=True)
-    historical = set()
-    for line in baseline.stdout.splitlines():
-        _, path, url = line.split(":", 2)
-        historical.add((path, owned_repository(url)))
-    names = subprocess.check_output(["git", "ls-files", "-z", "--", "papers", "data", "pages", "reports", "*.html"], cwd=ROOT, stdin=subprocess.DEVNULL).decode().split("\0")
+    ledger = ROOT / "data/public-link-evidence.json"
+    # Closed review set: additions or changed evidence require explicit review.
+    assert hashlib.sha256(ledger.read_bytes()).hexdigest() == "4e29317f8d1bf53e593d7056cde5d9a5a7af678b1fb5ed21ea82dcddb66841bd"
+    entries = json.loads(ledger.read_text())["entries"]
+    exemptions = {entry["path"]: entry for entry in entries}
+    assert len(exemptions) == len(entries)
+    included = {row["path"] for row in json.loads((ROOT / "data/pages-artifact-manifest.json").read_text())["included_files"]}
+    for name, entry in exemptions.items():
+        assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == entry["sha256"], name
+        if entry["class"] == "superseded-report":
+            assert name.startswith("reports/") and name not in included, name
+        else:
+            assert entry["class"] == "archived-document-extraction"
+            assert name.startswith("papers/") and Path(name).name.startswith("full_text")
+    names = subprocess.check_output(["git", "ls-files", "-z", "--", "papers", "data", "pages", "reports", "*.html", "README.md", "llms.txt", ".github/README.md"], cwd=ROOT, stdin=subprocess.DEVNULL).decode().split("\0")
     allowed = public_repositories(ROOT)
     failures = set()
     for name in names:
@@ -112,9 +133,59 @@ def test_shipped_sources_introduce_no_nonpublic_owned_repository_urls():
             continue
         for match in URL_RX.finditer(path.read_text(errors="replace")):
             repository = owned_repository(match.group())
-            if repository and repository not in allowed and (name, repository) not in historical:
+            if repository and repository not in allowed and name not in exemptions:
                 failures.add(name)
     assert not failures, sorted(failures)
+
+
+def test_report_projections_preserve_observation_bytes_and_record_counts():
+    import hashlib
+    import json
+    from docxology_tools.public_repository_links import evidence_entries, project_pairing_report, public_repositories
+    allowed = public_repositories(ROOT)
+    for entry in evidence_entries(ROOT):
+        if "projection" not in entry:
+            continue
+        source = ROOT / entry["path"]
+        target = ROOT / entry["projection"]
+        assert hashlib.sha256(target.read_bytes()).hexdigest() == entry["projection_sha256"]
+        if target.suffix == ".json":
+            raw = json.loads(source.read_text())
+            assert json.loads(target.read_text()) == project_pairing_report(raw, allowed, preserve_records=True)
+
+
+def test_retained_reports_are_not_linked_from_html():
+    from docxology_tools.public_repository_links import evidence_entries
+    from docxology_tools.report_references import local_report_paths
+    archived = {entry["path"] for entry in evidence_entries(ROOT) if entry["class"] == "superseded-report"}
+    from html.parser import HTMLParser
+
+    class LinkedPaths(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.targets = []
+
+        def handle_starttag(self, tag, attrs):
+            self.targets.extend(value for name, value in attrs if name in {"href", "src"} and value)
+
+    for path in [*ROOT.glob("*.html"), *(ROOT / "works").glob("*.html")]:
+        links = LinkedPaths()
+        links.feed(path.read_text())
+        assert not (local_report_paths("\n".join(links.targets)) & archived), path
+
+
+def test_public_redirects_require_the_same_public_repository_id(tmp_path):
+    import json
+    from docxology_tools.public_repository_links import public_repositories
+    data = tmp_path / "data"
+    data.mkdir()
+    (data / "github-repositories.json").write_text(json.dumps({"repositories": [{"full_name": "ActiveInferenceInstitute/current", "private": False, "github_id": 123}]}))
+    path = data / "public-repository-redirects.json"
+    path.write_text(json.dumps({"redirects": [{"alias": "ActiveInferenceInstitute/old", "github_id": 123}]}))
+    assert "activeinferenceinstitute/old" in public_repositories(tmp_path)
+    path.write_text(json.dumps({"redirects": [{"alias": "ActiveInferenceInstitute/old", "github_id": 124}]}))
+    with pytest.raises(ValueError, match="absent"):
+        public_repositories(tmp_path)
 
 
 
@@ -150,3 +221,18 @@ def test_pairing_report_writer_enforces_the_public_inventory(tmp_path, monkeypat
     saved = json.loads(report.read_text())
     assert saved["zenodo_records"][0]["related_identifiers"] == [{"identifier": "https://github.com/docxology/public-research"}]
     assert saved["public_link_projection"]["policy"] == "public-owned-repositories-v1"
+
+
+@pytest.mark.parametrize("text", [
+    "github.com/docxology/unlisted-research",
+    "www.github.com/docxology/unlisted-research",
+    "//github.com/docxology/unlisted-research",
+    "git@github.com:docxology/unlisted-research",
+    "ssh://git@github.com/docxology/unlisted-research",
+    "[github.com/docxology/unlisted-research](https://github.com/docxology/unlisted-research)",
+])
+def test_schemeless_private_repository_display_text_is_projected(text):
+    from docxology_tools.public_repository_links import project_public_links
+    projected = project_public_links(text, frozenset())
+    assert "github.com" not in projected
+    assert "[non-public repository]" in projected

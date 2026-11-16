@@ -239,7 +239,11 @@ def latest_source_report(
     """
     for path in _sorted_path_list(list(report_dir.glob(pattern))):
         if is_git_tracked(path, repo_root=repo_root):
-            return path
+            from docxology_tools.public_repository_links import projected_report
+            projected = projected_report(path, repo_root)
+            if projected != path and not is_git_tracked(projected, repo_root=repo_root):
+                raise ValueError("Public report projection must be tracked")
+            return projected
     if not required:
         return None
     raise FileNotFoundError(f"No tracked reports match: {report_dir / pattern}")

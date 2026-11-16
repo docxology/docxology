@@ -1,6 +1,6 @@
 {
   "schema_version": "BlakePassageReview.v1",
-  "metadata_source": "reports/publication_intake_2026-11-05.json",
+  "metadata_source": "reports/public_projection_publication_intake_2026-11-05.json",
   "method": "Passage-level classification of public extracted text; hashes bind classification to the inspected edition. Not a full-reading or independent citation validation ledger.",
   "reviews": {
     "2021_NarrativeEcosystems": {
@@ -209,5 +209,10 @@
         279
       ]
     }
+  },
+  "metadata_source_sha256": "c8f6f253a3311620a7080a0ffa77fb3088ccfbaa77c4a32e3833d14f18b6dd3c",
+  "source_report_projection": {
+    "policy": "public-owned-repositories-v1",
+    "original_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
   }
 }

@@ -5648,8 +5648,8 @@
       "title_similarity": 1,
       "status": "verified",
       "source_authority": "zenodo_api_creators",
-      "source": "reports/publication_intake_2026-11-05.json",
-      "source_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+      "source": "reports/public_projection_publication_intake_2026-11-05.json",
+      "source_sha256": "c8f6f253a3311620a7080a0ffa77fb3088ccfbaa77c4a32e3833d14f18b6dd3c",
       "source_record_id": "23900583",
       "registry_baseline": {
         "record_id": "23900583",
@@ -5679,6 +5679,10 @@
         "reviewed_at": "2026-11-05T03:21:46Z",
         "reviewed_by": "Codex docs_review",
         "reason": "The frozen Zenodo API observation title and sole creator match the catalogued work and the deposited PDF title-page byline; no DOI-agency fetch is claimed."
+      },
+      "source_report_projection": {
+        "policy": "public-owned-repositories-v1",
+        "original_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
       }
     },
     "Friedman2026StatesChangeBlakeanFederalism234": {
@@ -5689,8 +5693,8 @@
       "title_similarity": 1,
       "status": "verified",
       "source_authority": "zenodo_api_creators",
-      "source": "reports/publication_intake_2026-11-05.json",
-      "source_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+      "source": "reports/public_projection_publication_intake_2026-11-05.json",
+      "source_sha256": "c8f6f253a3311620a7080a0ffa77fb3088ccfbaa77c4a32e3833d14f18b6dd3c",
       "source_record_id": "23900617",
       "registry_baseline": {
         "record_id": "23900617",
@@ -5720,6 +5724,10 @@
         "reviewed_at": "2026-11-05T03:21:46Z",
         "reviewed_by": "Codex docs_review",
         "reason": "The frozen Zenodo API observation title and sole creator match the catalogued work and the deposited PDF title-page byline; no DOI-agency fetch is claimed."
+      },
+      "source_report_projection": {
+        "policy": "public-owned-repositories-v1",
+        "original_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
       }
     },
     "Friedman2026ObserversAreAllYou235": {
@@ -5733,7 +5741,7 @@
       "evidence": "Bernhard Mueller 1∗ Mario Poneder Alexander Osika 2 Kai Xue Ben Cassie\nPeter Nguyen Daniel Ari Friedman 3,4",
       "source_pdf_sha256": "d88de3b37c7686d894a7a4e4ed731358f310888c00e9f4a33e6db824889dde68",
       "source_evidence": "papers/2026_ObserversAllYouNeed/source_evidence.json",
-      "source_evidence_sha256": "b2c1a676e70ee1b1a96c20afc8a4ff8ccf236f8c54daad608725fce10d1330bb",
+      "source_evidence_sha256": "80c92c32b572df8c0d322c22e9f61233fe6a6d20919462980fcb091e1d10a6f9",
       "source_record_id": "23719196",
       "registry_baseline": {
         "record_id": "23719196",
@@ -5829,6 +5837,11 @@
         "reviewed_at": "2026-11-05T03:21:46Z",
         "reviewed_by": "Codex docs_review",
         "reason": "Use the exact deposited r2054 PDF title-page byline in document order for this catalogued manuscript. The retained registry places Friedman fourth and calls him Daniel; the PDF places Daniel Ari Friedman seventh. Preserve both observations, the document date 2026-10-26 and deposit date 2026-10-28, the unspecified deposit version, the version/concept DOI relationship, and the observed ORCIDs. This override does not establish authorship for any other record, version or paper."
+      },
+      "source_evidence_projection": {
+        "policy": "public-owned-repositories-v1",
+        "original_source_evidence_sha256": "b2c1a676e70ee1b1a96c20afc8a4ff8ccf236f8c54daad608725fce10d1330bb",
+        "reason": "Historical report citation pinned to its original commit; registry and document observations remain unchanged."
       }
     },
     "Friedman2026RikishiReproducibleOperationAnalysis236": {

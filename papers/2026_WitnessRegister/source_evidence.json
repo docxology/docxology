@@ -164,7 +164,7 @@
         "version": "v0.2.0",
         "publication_date": "2026-10-22",
         "github_release_url": "https://github.com/docxology/witness_register/releases/tag/v0.2.0",
-        "source_report": "reports/publication_intake_2026-10-23.json",
+        "source_report": "https://github.com/docxology/docxology/blob/d9a4d674e3efa1a8789e259e9172a30f1ee62b7f/reports/publication_intake_2026-10-23.json",
         "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
         "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
       }

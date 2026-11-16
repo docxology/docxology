@@ -1,0 +1,926 @@
+{
+  "schema_version": 1,
+  "policy": "public-owned-repositories-v1",
+  "entries": [
+    {
+      "path": "reports/content-external-links-2026-10-21.json",
+      "sha256": "e6046c184e1a567d06925e302bad9d62a2336e961d4f9184de1748a4c1e2576e",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16",
+      "projection": "reports/public_projection_content-external-links-2026-10-21.json",
+      "projection_sha256": "1cc067676535ebccd97c242b319af70ba266430ae3c4814072e91801540a7e08"
+    },
+    {
+      "path": "reports/external_links_2026-05-13.json",
+      "sha256": "e2b7e5000f99f79cef458952c03d9829c4305044d5e587a7ece6ac98fe206825",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-05-15.json",
+      "sha256": "13aa6dccbe1ebc76e30ea56b62a4a1a3069d097ca1eb1d328ca4d62552e19b44",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-08-26.json",
+      "sha256": "0a382640da22df3d369406089d35d740de507a7046d1102725639a8ccac91a76",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-08-27.json",
+      "sha256": "76334826524a93041a2bda74e472676008976d63d25d0135d2b71f51f145e3e3",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-08-28.json",
+      "sha256": "cf5d4002a045272fcc84ed2456aa890a14c25f5300a1391732aaa5182a7cf6dd",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-08-29.json",
+      "sha256": "75baeae262e23007b82716b378d15464245295761c66eb750365a57e48537c42",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-09-05.json",
+      "sha256": "511a2f3776da84e9deabb8767015b308801ae93eadf266f73a7374d51d814cde",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-09-07.json",
+      "sha256": "d60e944d0703c30d46a35288d4328fb07dff4c5680da3f1e7952cac155bc21b1",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-09-10.json",
+      "sha256": "e24217411823a06117fc0ee59f6f830f5ef60a070263abfb9cef462565e1090d",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-09-11.json",
+      "sha256": "af7ec8fd83ed75645cd56dcd3daac5421f083b4a19f7a6788e5bb6e3908d8f5e",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-09-14.json",
+      "sha256": "5cb208699fc5231d267cdfc280a8c96997f16b80891a0a95a921d7133f091178",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-09-15.json",
+      "sha256": "fc4a73939611d0c3aa2f65ded22932fe8c708ad2d68595ad2306480336c78578",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-09-16.json",
+      "sha256": "8d7a5595da45d7b7ca1b76055d3f018b4d955b73bb670ac250a8706651bbe7ce",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-09-17.json",
+      "sha256": "c13b9d6097c8cf6422416a371a7eefed5937d5157848994e3e7e2ba969c0b257",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-09-18.json",
+      "sha256": "c0850cbf8104beb3276eb67f82441816e848b5dc9f199481e00ea65b9ded3043",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-09-24.json",
+      "sha256": "7951652b1aeb4f5094f8d6b36a13429b5858e2e0bb7157f8e63eebe7227de5d6",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-09-25.json",
+      "sha256": "d8406c09c0f9c9a668675bdd7b6c6d75ca3cc03b745d1b5a57f53fad4733b626",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-09-29.json",
+      "sha256": "ec4c94ac748859b6b44f8227b5d68551a6b2ca46cd05d0856299bebbce757e6a",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-09-30.json",
+      "sha256": "8a66a96ea212488e511d8079aa127b51d1797a508d702edf6aebd5ee98309932",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-10-01.json",
+      "sha256": "e65ac549a469306a14fbe713547e91902c8608c24c9eb65e4480baea3f510c9d",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-10-02.json",
+      "sha256": "aa294d8218debbe072e3efa0594ee3ee99430fb1b5c4f51cd17950fe939084ad",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-10-05.json",
+      "sha256": "e2ef129b7aacae0a927773e3208b9377b41429b51393ee8cbd7e18cf46c4d299",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-10-06.json",
+      "sha256": "bd477c82bc87d79c41d634dfc5eb325e8fd3e51c865bc9f0f3ae837506dc42dc",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-10-07.json",
+      "sha256": "ec9298e2e551e9314aee8a95ce057d17c7843267e05509b4c87a77c14f5923c0",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-10-12.json",
+      "sha256": "80145fcc3955020b69a19723e2b8b10e89fe76413383e52810528802dfc35be2",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-10-13.json",
+      "sha256": "105f1e8a3c83a02721c1b4d1bd8effcbce037b0d548846e4021c22d70f30b303",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-10-17.json",
+      "sha256": "52e129113004b5ba320a309c029b836c0c5fb4fb2e9439fa19832088f9ce3050",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-10-22.json",
+      "sha256": "b85473826d7fd1f0e24a44aeb5c2ec63eeb8e6b1e80e3e144d72b662159f75a7",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-10-23.json",
+      "sha256": "06955234eec6f7fbf4275aa4f1c9bbc6b4f04c0a429ad08b9a26eecd0ce27cdf",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-10-24.json",
+      "sha256": "765e0b5054640ace5ec5291327ca82fe08e118bef369368a3f0496f3ad9b7137",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-10-31.json",
+      "sha256": "b170998dd67e547a3eccc66ee76be2b93b116e23e1f1fa5f28f5e08cc4799ba5",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-11-01.json",
+      "sha256": "ab7503ea17462c14c61120206bffb0d83cb89864e95728efcf1b2733bdbc1300",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-11-05.json",
+      "sha256": "ad78623a67f6d7e7f01feeddfc6a9c2dabef7819b198130abf97cb60e64ae58a",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-11-07.json",
+      "sha256": "49f98b80e93e5b2476db272fd32aa3ce04e4fba4c97a637b0892e05a41324ee9",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-11-08.json",
+      "sha256": "4679785dc7894471fc21d1315522c8bfd45439ac73db95e13a3a5dc30b79649a",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_2026-11-09.json",
+      "sha256": "66341500c5a16772dc4a57a376e82f350661dd788768a3132e1262e72e3f2ff2",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_triage_2026-11-05.json",
+      "sha256": "0515eb6daf23092f70142654a7ae1b3d9ca29a503aba7354d00d8fd4d010780d",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/external_links_triage_2026-11-05.md",
+      "sha256": "8479747d01942eab9352f703a90e7960dacc07fcbb2a18c99871285ea600b839",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/github_inventory_observation_2026-11-05.json",
+      "sha256": "2abc03af6a731eb04223511285c1679feec9e36cbbc1f21f09e21ecb9c90cbb9",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16",
+      "projection": "reports/public_projection_github_inventory_observation_2026-11-05.json",
+      "projection_sha256": "da7d4a9b7268d12f61594ea90144d9516c3cf4edc2b232eaa755f5a160fa04f4"
+    },
+    {
+      "path": "reports/paired_publications_2026-07-17.json",
+      "sha256": "6b4e9f84754815bfe7113b0edb093ac2a85be0351ae2d57f1dd4e02dce04cad9",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-08-07.json",
+      "sha256": "b53b288d66010d5abac963e6505def3bfc3f749c4493445865c43e3859962b3c",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-08-10.json",
+      "sha256": "5e3baf115d4b28355c39b94f8c31a9100b0f942c3327c7fa1667bfb6396a0a26",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-08-19.json",
+      "sha256": "4fe535b33fb9434dd30947f4de3ef21b669261982271a94f7b51a5c97820cb1b",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-08-26.json",
+      "sha256": "5ad2d4ef5db5637460a01d198334e6d77f8482dadfc8ac5a530e13b67a58cf0f",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-08-28.json",
+      "sha256": "a957158e3ccb74bfa8d8083d10d4e38d88c9cd901acb666549e609c1a02c490c",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-08-31.json",
+      "sha256": "01121e900e2aed76b2f3521f259c051b44252953abe472c71a09d4ff63430fe0",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-09-04.json",
+      "sha256": "82f5a3ff7e14900a4582eeb33f6a55dc417e0055e922aecfd717e776570e0110",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-09-07.json",
+      "sha256": "05e175224e9a612d84b2d0417f2dd5a33271a323619b33edefbc628265d87cdd",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-09-10.json",
+      "sha256": "1d336bab37c6027f13f3cee1b68de4f607fc7cde59c5ab5406c6cd9467b283f2",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-09-11.json",
+      "sha256": "1bc9e0053700a8eb8949fc68cadc1f896a39fdaa721220c4bbb541a08e77010e",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-09-14.json",
+      "sha256": "4cd81d592ea43761a72a6c0ecc7355fc056db0761c5ee9cb5279e3f2d28d8626",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-09-15.json",
+      "sha256": "e47e8266b9c71654c22a7ad60758f747e17376f2420b82e34637fd161f9ef9f2",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-09-17.json",
+      "sha256": "62064dfed694fbdd1ef4eb6b752c8f07e007afd11dcac10b8577088b478f1624",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-09-18.json",
+      "sha256": "2abef63357ae7039f3e2bfe4bbb44a50ef89be5253d891565ea3ef834aefd1af",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-09-24.json",
+      "sha256": "2f95360123cdc2d7f16021312a4e753603cbc37fa8f3b257082dbba988072388",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-10-12.json",
+      "sha256": "7815903f1978789ecfffae1c1bd6d8c52d01d881cb6968d442bfdd76a95d36ba",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-10-16.json",
+      "sha256": "a528b87be83f2bc7e9c5cac7a3b9be7c888e8327bff1376f767e0b8dd578a44d",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-10-18.json",
+      "sha256": "17ef7124956e984bf07c50327ef0405c7eff7c6e78120b7de05f1c9c0ea54636",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-10-23.json",
+      "sha256": "cdd139d4fed28440faf83b52cdc65128a1195fc102558ab14332903914f4b89c",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16",
+      "projection": "reports/public_projection_paired_publications_2026-10-23.json",
+      "projection_sha256": "344b348b1b41bfa86f97e28f43234c737aeddeb33b6069ea7e20ebc63887993d"
+    },
+    {
+      "path": "reports/paired_publications_2026-10-31.json",
+      "sha256": "b2818b4e98af92f62eb470b59941a107a500e11d751f50b2c002f680302936a7",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-11-01.json",
+      "sha256": "fb785fa4ad297dc2197aabb0201478351d4b2d57b77fbab5b9cf4271f70262ae",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-11-05.json",
+      "sha256": "1d2f82593e8c5e7623b3307e10a79eed25770a9870f0b20ad1a0e2b53f0dd607",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-11-06.json",
+      "sha256": "249b32b85678b497868e35d1f65c90cc80b7dc102e6648f8700f885fa3b94f00",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/paired_publications_2026-11-07.json",
+      "sha256": "05eda369765db8b21719cc86c0056efc4630cbe88c9053f1c0cad8c676e85303",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-08-25.json",
+      "sha256": "c10e09622942a23898d3db109cc89d6dae7ce0a7658a5251ed4cc2bf8bfe89ed",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-08-26.json",
+      "sha256": "2a949334478145b16658b789bd0715c6a79e3e56a8d6971cc28d8ea5d8caa97b",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-08-27.json",
+      "sha256": "6ff2e2c6898a3cc23956a4cc6a66fdeba9ba8ec3a63ad2f8c39d8ea3ecb91ea1",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-08-28.json",
+      "sha256": "198386526da9a6a17d7c91f1c691321ed040d0f1d25d2befda3747b13f45ce38",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-08-29.json",
+      "sha256": "deed90592dacb90b677843e00afe88f4f406d472677a1b0f3fa3a77c8447d997",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-04.json",
+      "sha256": "753f2f2fa1b82dbd1758458455f1a078423cc75144993c334e21a35dc3a7dabd",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-05.json",
+      "sha256": "6ce6752f4843def455747b1fa7a7f6cefd3e3f18c67e056f2ca5ce64e7486c7f",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-06.json",
+      "sha256": "9274ab3c2f9a9e2250e93238f699ab3fd5f4f9912acc0b439241a9ca0c3c4e46",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-07.json",
+      "sha256": "5bc487b5c5fb7ecc645ff72cabaa4dcae9f931d1592231c7b360cb9860c8c895",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-08.json",
+      "sha256": "7372db7c8e9347b65dfe2654fac1e61f30c98d88f3ac5c2b51b6a0d970a4ecab",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-10.json",
+      "sha256": "6674270bfe5afd6f4ecf5573e6042b50e278ea3f2d565a94ea667b63b1bfd841",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-11.json",
+      "sha256": "8c72b5a7ac60ec0ebd1801b7386d2f58cc380880f570d431c08c0724b7974f0b",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-12.json",
+      "sha256": "87c9ea458589a50306a9766252372b6eed222ecb1d931ae55db66a8e77e4c0ad",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-14.json",
+      "sha256": "69d7a204d45c271bd1b196ceeba0e5c3ab43707aee177151ff2c27aad255789b",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-15.json",
+      "sha256": "d793ed60a3b7affb197b3dd627758e4317546727ccdc7fb34f1a9f79f676ca5d",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-16.json",
+      "sha256": "336096ac913c35c6b5eaf0f8222cd78dfb771a3a8cdfa8470614d60d73e370e0",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-17.json",
+      "sha256": "9a9d0b60978e25e861b5cc3785f085c4c4a973fccf5c004d631ef5bc1ba87a41",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-18.json",
+      "sha256": "99ebcc3e0a4159d626753197636192781bea31f5edf1c8de00352fccd810f493",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-24.json",
+      "sha256": "e673b2602596262088d9e77941133f18296db436e44397f8b7937ee16e33a23f",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-25.json",
+      "sha256": "a1d0f5adaf87156b48d0e2aaa02547fda40d3fa4bab7d1115c0e6e6facd8ed85",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-26.json",
+      "sha256": "42a26841ddebe1ecbfc2e5f572947a34f7f480bbff3e201a0ab7fae2e0c43566",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-27.json",
+      "sha256": "bd559902eb62592b538eeeb95ac7721eb6f3705df0f70c4e58b0a9a0dee2d864",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-28.json",
+      "sha256": "62fbd24ec5798b0c5a2c34fb29e214f8ce02d09da5f3897b7c0a1058f25e6d8e",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-29.json",
+      "sha256": "d6a61350262d6a674e99af5423a7f809505631481533f6ad38fcc959c2cea4f2",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-30.json",
+      "sha256": "c40bed1c28010e87fbc04bd35b6f8040d870bfcfd198abfb30aeda3c74f43e0f",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-10-01.json",
+      "sha256": "ff6560fc0c2efcf9d9b1adebbd9cc5573d36583e1094eca602b254db17d875c1",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-10-06.json",
+      "sha256": "be69022c806409f2882a2c51dda81b50ab5a3a24002cedef5f3cee683cd1975f",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-10-07.json",
+      "sha256": "c8ae63ca988d8818c4abb0aead4dc2fcc9a2fb8522cb5cc7da8741d3210ad958",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-10-12.json",
+      "sha256": "662bebb30e8d38d2c11b124823d44b465ea00fb98b8b6729a3b329db9502504c",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-10-16.json",
+      "sha256": "38a442821c4030cde4847f931c85500fe3428cda407a7f6385ffe359428cf358",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-10-18.json",
+      "sha256": "9efeda2720f07e5473543c95f9e485f54cd41e385cfbebe9ed92827979fde5b3",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-10-23.json",
+      "sha256": "441d0915f6349982f8b06913820ca9e3ca3210292111c6db40ef470776506fb6",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-10-31.json",
+      "sha256": "7633b8da30a0384d241f45826399e00dc00c0d8a201e97755b8347017a481c63",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-11-01.json",
+      "sha256": "b029fdcbb10abaf93eda339697ab82d94e03226e7803491a3ec95f66afaeac7c",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-11-03.json",
+      "sha256": "ea2627dbd594329dfc474e4a3b8d82930f2aed8a288afb0229fce3904ef1eaa3",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-11-04.json",
+      "sha256": "cfadeeb3ff3ab30567b5530163f99ea4a52662b1eb72de7e616b5d777d9eeb14",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-11-05.json",
+      "sha256": "d30b08890a9ef1430e0bba5c4dbcade48e47304f40c134772ed001374f0d5b9a",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-11-07.json",
+      "sha256": "21c6e136318d5413f2a03e51471d09875b9645ac7dfbf68aa65df154d0abaf96",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/public_source_review_2026-11-08.json",
+      "sha256": "e87656ce2bed81578f2484d61c2277b8ac1cf26032c45c45ff8c870fd643c54b",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "reports/publication_discovery_2026-10-22.json",
+      "sha256": "170479f132a08aa6115d29c4cd97d12f2fb90c0a5b7b5f42e45b9411e51c42d5",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16",
+      "projection": "reports/public_projection_publication_discovery_2026-10-22.json",
+      "projection_sha256": "653173cce14833d8c771564908303ea6e15e3494aeb4bb3034fc5e95214208bc"
+    },
+    {
+      "path": "reports/publication_intake_2026-10-23.json",
+      "sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16",
+      "projection": "reports/public_projection_publication_intake_2026-10-23.json",
+      "projection_sha256": "c8dbf6e1a01400da7733b91a4b9a728c6428cea2580e8bf958ab1bd5dfdf1be1"
+    },
+    {
+      "path": "reports/publication_intake_2026-11-05.json",
+      "sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16",
+      "projection": "reports/public_projection_publication_intake_2026-11-05.json",
+      "projection_sha256": "c8f6f253a3311620a7080a0ffa77fb3088ccfbaa77c4a32e3833d14f18b6dd3c"
+    },
+    {
+      "path": "reports/publishing_status_megaindex.md",
+      "sha256": "bd90349bb4ebde59bce601bc991e666c09f809a0d2394b5cf38d13167dc7cc67",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16",
+      "projection": "reports/public_projection_publishing_status_megaindex.md",
+      "projection_sha256": "88aafa40cdf5eb805e67f5af29f2a1de4c47d47563be7239c000f29b74206f21"
+    },
+    {
+      "path": "reports/software_catalog_fork_review_2026-11-04.json",
+      "sha256": "0a9115e844dd6778d99356b250d79212f31a5e8f703ddbaea9b39a731be46bf9",
+      "class": "superseded-report",
+      "reason": "Retained literal historical observation; public consumers use a sanitized projection or an exact-commit archive citation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16",
+      "projection": "reports/public_projection_software_catalog_fork_review_2026-11-04.json",
+      "projection_sha256": "e468d7a62c3d76d27f1ac49b2fbe8622f7239ed7fdd3ef591d717207fae4f0d0"
+    },
+    {
+      "path": "papers/2026_FourfoldVision/full_text.md",
+      "sha256": "2d67f1238d76be9acab28d686721190c05693535d934b242f996f2d89163ab01",
+      "class": "archived-document-extraction",
+      "reason": "Verbatim PDF extraction, including line-wrapped or historical URLs; never a curated recommendation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "papers/2026_CognitiveIntegrityFramework/full_text.md",
+      "sha256": "9a6c0ff12a83755b7f8b9e006045a72e2a18c41a7c647fcc631d4ce4e3f34d52",
+      "class": "archived-document-extraction",
+      "reason": "Verbatim PDF extraction, including line-wrapped or historical URLs; never a curated recommendation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "papers/2026_CognitiveCaseDiagrams/full_text_before_2026-11-06.md",
+      "sha256": "a198b77ca7241de1b83a7a463a604570c2ac185df7e16afbe545333ef9c3c97d",
+      "class": "archived-document-extraction",
+      "reason": "Verbatim PDF extraction, including line-wrapped or historical URLs; never a curated recommendation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    },
+    {
+      "path": "papers/2026_Rikishi/full_text.md",
+      "sha256": "305d87a65fcb8e6a8b89315a5634e2a85863cdcc7c720d3d064a9102da5ed070",
+      "class": "archived-document-extraction",
+      "reason": "Verbatim PDF extraction, including line-wrapped or historical URLs; never a curated recommendation.",
+      "reviewed_by": "Docxology Maintainer; candidate subject to Docxology Reviewer gate",
+      "date": "2026-11-16"
+    }
+  ]
+}

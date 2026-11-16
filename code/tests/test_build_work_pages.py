@@ -64,6 +64,15 @@ def test_citation_does_not_invent_an_author_when_none_are_recorded():
     assert bwp.citation_text(_work()).startswith("2026. Example Work.")
 
 
+@pytest.mark.parametrize("num", [71, 79, 89])
+def test_cogsec_books_keep_document_verified_editor_credits(num):
+    work = next(work for work in bwp.load_works() if int(work["num"]) == num)
+    assert work["contributor_role"] == "editor"
+    rendered = bwp.render_work_page(work)
+    assert rendered.count('<meta name="citation_editor"') == len(work["authors"])
+    assert '<meta name="citation_author"' not in rendered
+
+
 def test_work_page_ownership_requires_an_explicit_renderer_marker(tmp_path: Path):
     manual = tmp_path / "curated.html"
     manual.write_text(
@@ -195,3 +204,14 @@ def test_journal_metadata_block_and_doi_types_fail_explicitly():
     ):
         with pytest.raises(ValueError, match="citation_metadata|citation DOI"):
             journal_fields(_work(), metadata)
+
+
+def test_redacted_repository_marker_never_becomes_a_platform_link():
+    work = _work(publishing={
+        "present_platforms": ["GitHub", "IPFS/Software-Heritage"],
+        "identifiers": {"github": "[non-public repository]"},
+    })
+    assert bwp.platform_link("GitHub", work) == ""
+    assert bwp.platform_link("IPFS/Software-Heritage", work) == ""
+    assert bwp.present_platform_urls(work) == []
+    assert "[non-public repository]" not in bwp.platform_availability_card(work)

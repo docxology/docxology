@@ -666,11 +666,6 @@ def payload() -> dict:
     reproducibility = load_json("data/reproducibility.json")
     generated_manifest = load_json("data/generated-manifest.json")
     pages_artifact = load_json("data/pages-artifact-manifest.json")
-    live_report_path = latest_report(
-        "live_site_verification_*.json",
-        "reports/live_site_verification_2026-05-15.json",
-    )
-    live_report = load_json(live_report_path.lstrip("/"))
     dataset_hashes = {
         key: sha256(REPO_ROOT / path)
         for key, path in DATASET_PATHS.items()
@@ -1270,12 +1265,15 @@ def payload() -> dict:
             "paper_image_fallback": "Use the Pages artifact manifest GitHub tree/raw templates for omitted extracted paper images.",
         },
         "verification_status": {
-            "live_report": live_report_path,
-            "generated_at": live_report.get("generated_at"),
-            "overall_ok": live_report.get("overall_ok"),
-            "passing": live_report.get("passing"),
-            "checked_urls": live_report.get("checked_urls"),
-            "pages_status": live_report.get("github_pages", {}).get("status"),
+            "status": "pending_post_deploy_attestation",
+            "live_report": None,
+            "generated_at": None,
+            "overall_ok": None,
+            "passing": None,
+            "checked_urls": None,
+            "pages_status": None,
+            "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
+            "policy": "This source manifest does not promote historical live reports into verification of the current candidate. Verify the deployed SHA through a post-deploy attestation.",
         },
         "counts": counts,
         "freshness": {

@@ -6,28 +6,7 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 03:52:22 +0000</lastBuildDate>
-    <item>
-      <title>Repository inventory and evidence layer refreshed</title>
-      <link>https://danielarifriedman.com/repositories.html</link>
-      <guid isPermaLink="false">site-update-2026-05-15-repositories</guid>
-      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <description>Full generated GitHub repository inventory, refreshed evidence ledger, and stable freshness fact comparison added.</description>
-    </item>
-    <item>
-      <title>Discovery, citation, evidence, and domain pages expanded</title>
-      <link>https://danielarifriedman.com/discovery.html</link>
-      <guid isPermaLink="false">site-update-2026-05-13-discovery</guid>
-      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
-      <description>New machine-readable exports, evidence ledger, domain pages, and agentic discovery metadata.</description>
-    </item>
-    <item>
-      <title>Per-work landing pages and search index generated</title>
-      <link>https://danielarifriedman.com/works/</link>
-      <guid isPermaLink="false">site-update-2026-05-13-works</guid>
-      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
-      <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
-    </item>
+    <lastBuildDate>Mon, 16 Nov 2026 19:17:59 +0000</lastBuildDate>
     <item>
       <title>Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics</title>
       <link>https://danielarifriedman.com/works/Friedman2026OPHFEPSynergeticsExecutable238.html</link>
@@ -36,11 +15,11 @@
       <description>Paper · GitHub release v0.1.0 · Active Inference · 2026</description>
     </item>
     <item>
-      <title>2026 Active Inference Symposium — Presenter Program</title>
-      <link>https://danielarifriedman.com/works/Friedman20262026ActiveInferenceSymposium237.html</link>
-      <guid isPermaLink="false">work-Friedman20262026ActiveInferenceSymposium237</guid>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
-      <description>Book · Zenodo (presenter program) · Media &amp; Teaching · 2026</description>
+      <title>Observers are all you need</title>
+      <link>https://danielarifriedman.com/works/Friedman2026ObserversAreAllYou235.html</link>
+      <guid isPermaLink="false">work-Friedman2026ObserversAreAllYou235</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo (preprint) · Computational · 2026</description>
     </item>
     <item>
       <title>Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology</title>
@@ -50,11 +29,11 @@
       <description>Paper · Zenodo (preprint) · Computational · 2026</description>
     </item>
     <item>
-      <title>Observers are all you need</title>
-      <link>https://danielarifriedman.com/works/Friedman2026ObserversAreAllYou235.html</link>
-      <guid isPermaLink="false">work-Friedman2026ObserversAreAllYou235</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo (preprint) · Computational · 2026</description>
+      <title>2026 Active Inference Symposium — Presenter Program</title>
+      <link>https://danielarifriedman.com/works/Friedman20262026ActiveInferenceSymposium237.html</link>
+      <guid isPermaLink="false">work-Friedman20262026ActiveInferenceSymposium237</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Book · Zenodo (presenter program) · Media &amp; Teaching · 2026</description>
     </item>
     <item>
       <title>States Change: Blakean Federalism and composition without capture</title>
@@ -71,13 +50,6 @@
       <description>Paper · Zenodo · Entomology · 2026</description>
     </item>
     <item>
-      <title>GNN-based active inference for Battleship</title>
-      <link>https://danielarifriedman.com/works/Friedman2026GNNBasedActiveInference232.html</link>
-      <guid isPermaLink="false">work-Friedman2026GNNBasedActiveInference232</guid>
-      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
       <title>Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method</title>
       <link>https://danielarifriedman.com/works/Friedman2026ActiveInferenceLanguageModel231.html</link>
       <guid isPermaLink="false">work-Friedman2026ActiveInferenceLanguageModel231</guid>
@@ -85,11 +57,11 @@
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
-      <title>Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics</title>
-      <link>https://danielarifriedman.com/works/Friedman2026ObserversWhoReadTheir230.html</link>
-      <guid isPermaLink="false">work-Friedman2026ObserversWhoReadTheir230</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · PhilPapers (preprint) · Computational · 2026</description>
+      <title>GNN-based active inference for Battleship</title>
+      <link>https://danielarifriedman.com/works/Friedman2026GNNBasedActiveInference232.html</link>
+      <guid isPermaLink="false">work-Friedman2026GNNBasedActiveInference232</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness</title>
@@ -106,6 +78,13 @@
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
+      <title>Active Inference -- A Synthetic Overview</title>
+      <link>https://danielarifriedman.com/works/Friedman2026ActiveInferenceSyntheticOverview225.html</link>
+      <guid isPermaLink="false">work-Friedman2026ActiveInferenceSyntheticOverview225</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Active Inference · 2026</description>
+    </item>
+    <item>
       <title>Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision</title>
       <link>https://danielarifriedman.com/works/Friedman2026ActiveInferenceAsMeta227.html</link>
       <guid isPermaLink="false">work-Friedman2026ActiveInferenceAsMeta227</guid>
@@ -120,45 +99,10 @@
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
-      <title>Active Inference -- A Synthetic Overview</title>
-      <link>https://danielarifriedman.com/works/Friedman2026ActiveInferenceSyntheticOverview225.html</link>
-      <guid isPermaLink="false">work-Friedman2026ActiveInferenceSyntheticOverview225</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Active Inference · 2026</description>
-    </item>
-    <item>
-      <title>Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference</title>
-      <link>https://danielarifriedman.com/works/Friedman2026CoordinatingFieldCaseEcosystem224.html</link>
-      <guid isPermaLink="false">work-Friedman2026CoordinatingFieldCaseEcosystem224</guid>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · AII Ecosystem · 2026</description>
-    </item>
-    <item>
-      <title>The Silver Line: A Memory-and-Succession Instrument</title>
-      <link>https://danielarifriedman.com/works/Friedman2026SilverLineMemorySuccession223.html</link>
-      <guid isPermaLink="false">work-Friedman2026SilverLineMemorySuccession223</guid>
-      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>The Violet Line: A Consent Ledger of Affected Parties</title>
-      <link>https://danielarifriedman.com/works/Friedman2026VioletLineConsentLedger222.html</link>
-      <guid isPermaLink="false">work-Friedman2026VioletLineConsentLedger222</guid>
-      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Active Inference · 2026</description>
-    </item>
-    <item>
-      <title>The Blue Line: A Stewardship Instrument for Maintained Commitments</title>
-      <link>https://danielarifriedman.com/works/Friedman2026BlueLineStewardshipInstrument221.html</link>
-      <guid isPermaLink="false">work-Friedman2026BlueLineStewardshipInstrument221</guid>
-      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Active Inference · 2026</description>
-    </item>
-    <item>
-      <title>Green Line: a capacity-under-development instrument</title>
-      <link>https://danielarifriedman.com/works/Friedman2026GreenLineCapacityUnder220.html</link>
-      <guid isPermaLink="false">work-Friedman2026GreenLineCapacityUnder220</guid>
-      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <title>Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation</title>
+      <link>https://danielarifriedman.com/works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html</link>
+      <guid isPermaLink="false">work-Friedman2026SkillarumConditionallyReproducibleWebsite216</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
@@ -169,24 +113,45 @@
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
+      <title>Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference</title>
+      <link>https://danielarifriedman.com/works/Friedman2026CoordinatingFieldCaseEcosystem224.html</link>
+      <guid isPermaLink="false">work-Friedman2026CoordinatingFieldCaseEcosystem224</guid>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · AII Ecosystem · 2026</description>
+    </item>
+    <item>
+      <title>The Violet Line: A Consent Ledger of Affected Parties</title>
+      <link>https://danielarifriedman.com/works/Friedman2026VioletLineConsentLedger222.html</link>
+      <guid isPermaLink="false">work-Friedman2026VioletLineConsentLedger222</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Active Inference · 2026</description>
+    </item>
+    <item>
+      <title>The Silver Line: A Memory-and-Succession Instrument</title>
+      <link>https://danielarifriedman.com/works/Friedman2026SilverLineMemorySuccession223.html</link>
+      <guid isPermaLink="false">work-Friedman2026SilverLineMemorySuccession223</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
+    </item>
+    <item>
+      <title>Green Line: a capacity-under-development instrument</title>
+      <link>https://danielarifriedman.com/works/Friedman2026GreenLineCapacityUnder220.html</link>
+      <guid isPermaLink="false">work-Friedman2026GreenLineCapacityUnder220</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
+    </item>
+    <item>
+      <title>The Blue Line: A Stewardship Instrument for Maintained Commitments</title>
+      <link>https://danielarifriedman.com/works/Friedman2026BlueLineStewardshipInstrument221.html</link>
+      <guid isPermaLink="false">work-Friedman2026BlueLineStewardshipInstrument221</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Active Inference · 2026</description>
+    </item>
+    <item>
       <title>Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security</title>
       <link>https://danielarifriedman.com/works/Friedman2026AgenticSecurityOperatingSystems218.html</link>
       <guid isPermaLink="false">work-Friedman2026AgenticSecurityOperatingSystems218</guid>
       <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>FractiSkills: One Portable Agent Skill per Page</title>
-      <link>https://danielarifriedman.com/works/Friedman2026FractiSkillsOnePortableAgent217.html</link>
-      <guid isPermaLink="false">work-Friedman2026FractiSkillsOnePortableAgent217</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation</title>
-      <link>https://danielarifriedman.com/works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html</link>
-      <guid isPermaLink="false">work-Friedman2026SkillarumConditionallyReproducibleWebsite216</guid>
-      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
@@ -202,6 +167,41 @@
       <guid isPermaLink="false">work-Friedman2026CognitiveIntegrityFrameworkPractical214</guid>
       <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Cognitive Security · 2026</description>
+    </item>
+    <item>
+      <title>Repository inventory and evidence layer refreshed</title>
+      <link>https://danielarifriedman.com/repositories.html</link>
+      <guid isPermaLink="false">site-update-2026-05-15-repositories</guid>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <description>Full generated GitHub repository inventory, refreshed evidence ledger, and stable freshness fact comparison added.</description>
+    </item>
+    <item>
+      <title>Per-work landing pages and search index generated</title>
+      <link>https://danielarifriedman.com/works/</link>
+      <guid isPermaLink="false">site-update-2026-05-13-works</guid>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
+    </item>
+    <item>
+      <title>Discovery, citation, evidence, and domain pages expanded</title>
+      <link>https://danielarifriedman.com/discovery.html</link>
+      <guid isPermaLink="false">site-update-2026-05-13-discovery</guid>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <description>New machine-readable exports, evidence ledger, domain pages, and agentic discovery metadata.</description>
+    </item>
+    <item>
+      <title>Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics</title>
+      <link>https://danielarifriedman.com/works/Friedman2026ObserversWhoReadTheir230.html</link>
+      <guid isPermaLink="false">work-Friedman2026ObserversWhoReadTheir230</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · PhilPapers (preprint) · Computational · 2026</description>
+    </item>
+    <item>
+      <title>FractiSkills: One Portable Agent Skill per Page</title>
+      <link>https://danielarifriedman.com/works/Friedman2026FractiSkillsOnePortableAgent217.html</link>
+      <guid isPermaLink="false">work-Friedman2026FractiSkillsOnePortableAgent217</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
     </item>
   </channel>
 </rss>

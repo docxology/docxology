@@ -58,18 +58,16 @@ def test_absolute_and_anchor_targets_are_left_alone():
         "https://example.org/x",
         "mailto:someone@example.org",
         "#section",
-        "/root-absolute.html",
-        "../already-relocated.md",
     ):
         assert mirror.relocate_target(target) == target
 
 
 def test_repo_relative_targets_are_relocated_to_the_repository_root():
-    assert mirror.relocate_target("papers/") == "../papers/"
-    assert mirror.relocate_target("pages/PROFILE.md") == "../pages/PROFILE.md"
+    assert mirror.relocate_target("papers/") == "https://github.com/docxology/docxology/tree/main/papers/"
+    assert mirror.relocate_target("pages/PROFILE.md") == "https://github.com/docxology/docxology/blob/main/pages/PROFILE.md"
     assert (
         mirror.relocate_target(".well-known/security.txt")
-        == "../.well-known/security.txt"
+        == "https://danielarifriedman.com/.well-known/security.txt"
     )
 
 
@@ -90,3 +88,11 @@ def test_render_carries_a_do_not_edit_marker():
     """A generated file that reads as hand-written invites a divergent edit."""
     assert mirror.render("# Title\n").startswith(mirror.GENERATED_MARKER)
     assert "build_github_readme.py" in mirror.GENERATED_MARKER
+
+
+def test_profile_targets_are_absolute_or_fragments():
+    for target in _TARGET.findall(mirror.render()):
+        assert target.startswith(("https://", "http://", "#", "mailto:", "tel:", "data:")), target
+        assert not target.startswith("../")
+    assert mirror.relocate_target("resume/resume.pdf") == mirror.SITE_ORIGIN + "resume/resume.pdf"
+    assert mirror.relocate_target("/index.html") == mirror.SITE_ORIGIN + "index.html"

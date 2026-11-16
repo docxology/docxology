@@ -130,8 +130,8 @@
   },
   "source_provenance": {
     "record_url": "https://zenodo.org/records/23719196",
-    "source_report": "reports/publication_intake_2026-11-05.json",
-    "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+    "source_report": "reports/public_projection_publication_intake_2026-11-05.json",
+    "source_report_sha256": "c8f6f253a3311620a7080a0ffa77fb3088ccfbaa77c4a32e3833d14f18b6dd3c",
     "pdf_title": "Observers Are All You Need",
     "pdf_release": "r2054",
     "pdf_date": "2026-10-26",
@@ -152,7 +152,11 @@
         "url": "https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex",
         "scope": "Flagship bibliography separately cites seven-author Observers Are All You Need; body calls component papers sources of longer proofs and implementation contracts."
       }
-    ]
+    ],
+    "source_report_projection": {
+      "policy": "public-owned-repositories-v1",
+      "original_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+    }
   },
   "prior_editions": [
     {

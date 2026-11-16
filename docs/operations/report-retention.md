@@ -29,6 +29,30 @@ report or screenshot directory is removed.
   [`data/report-retention.json`](../../data/report-retention.json) may be
   pruned. This does not authorize rewriting Git history.
 
+## Public repository-link projections
+
+`data/public-link-evidence.json` is a closed, SHA-256-bound inventory of literal
+historical reports and archived document extractions containing unavailable
+repository references. Curated metadata, generated HTML and ordinary prose
+have no historical-link exemption. The regression suite pins the ledger bytes;
+new entries require review of the exact path, class, hash, reason and date.
+
+An explicitly mapped report may have a public copy named
+`reports/public_projection_<original-name>`. Both original and copy hashes are
+bound in the ledger. The existing `public-owned-repositories-v1` projector
+preserves records in these copies, replacing unavailable URL text without
+changing observation dates, creator credits or recorded counts. These copies
+are public views, not new upstream observations. Historical decisions retain
+their original hashes and use exact-commit archive citations; current consumers
+bind the projection hash and record the original hash separately.
+
+The Pages builder omits mapped originals, including otherwise-current report
+families, only after verifying both hashes. Its dangling-reference gate and
+privacy regression reject published local links to omitted originals. The
+ledger is an inventory rather than a live citation, like the artifact and
+retention manifests. No original report, PDF or extraction is deleted or
+rewritten. Literal PDF extraction exemptions do not authorize curated links.
+
 ## Required provenance record
 
 Before running `prune_old_reports.py --apply`, add one entry per candidate to

@@ -367,7 +367,7 @@
           "curated_targets": [
             "pages/BIBLIOGRAPHY.md",
             "pages/SOFTWARE.md",
-            "reports/publication_intake_2026-11-05.json",
+            "reports/public_projection_publication_intake_2026-11-05.json",
             "data/paired-publication-decisions.json"
           ]
         },
@@ -383,7 +383,7 @@
           "curated_targets": [
             "pages/BIBLIOGRAPHY.md",
             "pages/SOFTWARE.md",
-            "reports/publication_intake_2026-11-05.json",
+            "reports/public_projection_publication_intake_2026-11-05.json",
             "data/paired-publication-decisions.json"
           ]
         }
