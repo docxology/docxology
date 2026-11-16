@@ -70,7 +70,7 @@ Printed cover or slide identifiers are preserved in the extraction. They can dif
 
 - Every included work has metadata and a local extracted full text; matching line numbers and text SHA-256 values are retained in the JSON pathway.
 - Passage classifications are bound to the reviewed text hash. Changed text requires renewed classification; new unclassified matches fail the check.
-- Primary publication metadata was compared with [the public discovery snapshot](../reports/publication_intake_2026-11-05.json) observed 2026-11-05T01:17:28Z; the JSON records metadata-match status per work.
+- Primary publication metadata was compared with [the public discovery snapshot](../reports/public_projection_publication_intake_2026-11-05.json) observed 2026-11-05T01:17:28Z; the JSON records metadata-match status per work.
 - Located passages are distinct from sections read, complete texts read, and independently checked citation sources. This index makes no full-reading or independent citation-validation claim.
 - The search is limited to available local extractions. The [source coverage queue](../data/coverage-exceptions.json) identifies missing full text; image-only, OCR, spelling and edition differences can conceal further references.
 - Rebuild with `uv run python code/orchestrators/build_blake_index.py`; verify with the same command plus `--check`. The ordinary regeneration and validation plan includes this check.

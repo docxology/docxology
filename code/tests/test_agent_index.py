@@ -86,3 +86,10 @@ def test_agent_index_check_command_passes():
         check=False,
     )
     assert result.returncode == 0, result.stdout + result.stderr
+
+
+def test_agent_index_does_not_claim_historical_verification_for_candidate():
+    payload = json.loads((REPO_ROOT / "data/agent-index.json").read_text())
+    status = payload["verification_status"]
+    assert status["status"] == "pending_post_deploy_attestation"
+    assert status["live_report"] is None and status["overall_ok"] is None

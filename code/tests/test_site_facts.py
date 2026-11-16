@@ -18,6 +18,25 @@ from docxology_tools import site_facts  # noqa: E402
 import sync_site_facts  # noqa: E402
 
 
+def test_start_page_counts_follow_canonical_snapshot(tmp_path, monkeypatch):
+    monkeypatch.setattr(sync_site_facts, "counts", lambda: {
+        "bibliography_works": 301, "paper_folder_docs": 290,
+        "full_text_papers": 280, "extracted_images": 12345,
+    })
+    page = tmp_path / "start-here.html"
+    page.write_text(
+        "a unified bibliography of 1 works; 2 folders under papers; "
+        "3 with full-text extraction and 4 extracted images"
+    )
+    rendered = sync_site_facts.render(page)
+    assert "301 works" in rendered
+    assert "290 folders under" in rendered
+    assert "280 with full-text extraction" in rendered
+    assert "12,345 extracted images" in rendered
+    page.write_text(rendered)
+    assert sync_site_facts.render(page) == rendered
+
+
 def test_generated_revision_date_is_deterministic_and_supports_all_calendar_months(
     tmp_path: Path,
 ):

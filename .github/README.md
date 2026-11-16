@@ -26,24 +26,24 @@
 
 </div>
 
-**Quick links:** [📚 Publications](https://danielarifriedman.com/publications.html) · [📄 Works](../works/) · [🔬 Research](https://danielarifriedman.com/research.html) · [🧭 Domains](https://danielarifriedman.com/domains.html) · [💻 Software](https://danielarifriedman.com/software.html) · [📁 Papers](../papers/) · [📊 Reports & Counts](https://danielarifriedman.com/reports.html) · [✅ Reproducibility](https://danielarifriedman.com/reproducibility.html) · [🔎 Search](https://danielarifriedman.com/search.html) · [🧾 Cite & Verify](https://danielarifriedman.com/cite-verify.html) · [🧭 Discovery](https://danielarifriedman.com/discovery.html) · [🗃️ Catalog](https://danielarifriedman.com/catalog.html) · [📝 Updates](https://danielarifriedman.com/updates.html) · [🖼️ Art](https://danielarifriedman.com/art.html) · [🪙 NFT](https://danielarifriedman.com/nft.html) · [🧘 Meditations](https://danielarifriedman.com/meditations.html) · [🎥 Media](https://danielarifriedman.com/media.html) · [📺 Videos](https://danielarifriedman.com/videos.html) · [👤 Profile](../pages/PROFILE.md) · [🤝 Collaborators](https://danielarifriedman.com/collaborators.html) · [ℹ️ About](https://danielarifriedman.com/about.html) · [🔗 All Links](../pages/LINKS.md) · [📄 Resume/CV](../resume/resume.pdf) · [🔊 Read Aloud](#) (press `T`)
+**Quick links:** [📚 Publications](https://danielarifriedman.com/publications.html) · [📄 Works](https://github.com/docxology/docxology/tree/main/works/) · [🔬 Research](https://danielarifriedman.com/research.html) · [🧭 Domains](https://danielarifriedman.com/domains.html) · [💻 Software](https://danielarifriedman.com/software.html) · [📁 Papers](https://github.com/docxology/docxology/tree/main/papers/) · [📊 Reports & Counts](https://danielarifriedman.com/reports.html) · [✅ Reproducibility](https://danielarifriedman.com/reproducibility.html) · [🔎 Search](https://danielarifriedman.com/search.html) · [🧾 Cite & Verify](https://danielarifriedman.com/cite-verify.html) · [🧭 Discovery](https://danielarifriedman.com/discovery.html) · [🗃️ Catalog](https://danielarifriedman.com/catalog.html) · [📝 Updates](https://danielarifriedman.com/updates.html) · [🖼️ Art](https://danielarifriedman.com/art.html) · [🪙 NFT](https://danielarifriedman.com/nft.html) · [🧘 Meditations](https://danielarifriedman.com/meditations.html) · [🎥 Media](https://danielarifriedman.com/media.html) · [📺 Videos](https://danielarifriedman.com/videos.html) · [👤 Profile](https://github.com/docxology/docxology/blob/main/pages/PROFILE.md) · [🤝 Collaborators](https://danielarifriedman.com/collaborators.html) · [ℹ️ About](https://danielarifriedman.com/about.html) · [🔗 All Links](https://github.com/docxology/docxology/blob/main/pages/LINKS.md) · [📄 Resume/CV](https://danielarifriedman.com/resume/resume.pdf) · [🔊 Read Aloud](#) (press `T`)
 
 ---
 
 ## 🔬 About — Computational Biologist & Active Inference Researcher
 
-I study **ants**, **Active Inference**, and **cognitive security** — and build open-source tools at the intersection of Bayesian modeling, computational biology, and information ecosystem design. [Full biography →](../pages/PROFILE.md)
+I study **ants**, **Active Inference**, and **cognitive security** — and build open-source tools at the intersection of Bayesian modeling, computational biology, and information ecosystem design. [Full biography →](https://github.com/docxology/docxology/blob/main/pages/PROFILE.md)
 
-- 🐜 **Entomologist** — PhD (Stanford, 2014–2019, advisor: [Deborah Gordon](../pages/COLLABORATORS.md#deborah-gordon-stanford-university)) on behavioral, physiological, and transcriptomic bases of collective behavior in harvester ants; NSF Postdoctoral Fellow ([award DBI-2010290](https://api.nsf.gov/services/v1/awards/2010290.json)) at UC Davis, 2020–2023 (official award dates: 2020-10-01 to 2023-09-30)
-- 🧠 **Active Inference Researcher** — President and co-founder of the **[Active Inference Institute](https://activeinference.org/)** (501(c)(3) non-profit; governance pages at [activeinference.institute](https://www.activeinference.institute/)); co-author with [Karl Friston](../pages/COLLABORATORS.md#karl-friston-ucl-london); builder of **CEREBRUM**, **GNN**, **InferAnts**, and **goference** frameworks
+- 🐜 **Entomologist** — PhD (Stanford, 2014–2019, advisor: [Deborah Gordon](https://github.com/docxology/docxology/blob/main/pages/COLLABORATORS.md#deborah-gordon-stanford-university)) on behavioral, physiological, and transcriptomic bases of collective behavior in harvester ants; NSF Postdoctoral Fellow ([award DBI-2010290](https://api.nsf.gov/services/v1/awards/2010290.json)) at UC Davis, 2020–2023 (official award dates: 2020-10-01 to 2023-09-30)
+- 🧠 **Active Inference Researcher** — President and co-founder of the **[Active Inference Institute](https://activeinference.org/)** (501(c)(3) non-profit; governance pages at [activeinference.institute](https://www.activeinference.institute/)); co-author with [Karl Friston](https://github.com/docxology/docxology/blob/main/pages/COLLABORATORS.md#karl-friston-ucl-london); builder of **CEREBRUM**, **GNN**, **InferAnts**, and **goference** frameworks
 - 🛡️ **Cognitive Security Researcher** — bibliography-indexed work on narrative ecosystems, digital rhetoric, and multiagent security at **[COGSEC.org](https://cogsec.org)**
-- 🎨 **Early NFT Artist** — Abstract pen drawings; [Curio Cards](https://curio.cards/artist/danielfriedman/) 24/25/26 (part of the collection that debuted on Ethereum May 9, 2017; [Christie's New York sale, September 2021](https://www.christies.com/en/lot/lot-6337619)); William Blake & Buckminster Fuller scholarship; [Art portfolio](https://danielarifriedman.com/art.html) · [Local Gallery](../art/README.md)
+- 🎨 **Early NFT Artist** — Abstract pen drawings; [Curio Cards](https://curio.cards/artist/danielfriedman/) 24/25/26 (part of the collection that debuted on Ethereum May 9, 2017; [Christie's New York sale, September 2021](https://www.christies.com/en/lot/lot-6337619)); William Blake & Buckminster Fuller scholarship; [Art portfolio](https://danielarifriedman.com/art.html) · [Local Gallery](https://github.com/docxology/docxology/blob/main/art/README.md)
 - 📺 **Educator** — 500+ Active Inference livestreams, 200+ personal streams, [AII Textbook Group](https://activeinference.org/) (nine completed 2022-textbook cohorts plus a live first 2026 Fundamentals cohort; [Parr, Pezzulo & Friston, 2022](https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind) · [Namjoshi, 2026](https://mitpress.mit.edu/9780262050951/fundamentals-of-active-inference/)), College of the Redwoods ([BIOL-1](https://github.com/docxology/biol-1) at Pelican Bay, Spring and Fall 2026; [BIOL-8](https://github.com/docxology/biol-8) Human Biology, Spring 2026), [Udemy courses](https://www.udemy.com/course/communication-for-remote-teams/), conference workshops
 - 🌐 **Community Builder** — Co-founder of [Complexity Weekend](https://www.complexityadventures.com/) (2019-2024); co-organized Stanford Complexity Group
 
-> **William Blake pathway**: [Core works, broader citations and quotations, version DOIs, and text evidence](../pages/BLAKE.md). [Complete bibliography](../pages/BIBLIOGRAPHY.md) · [Machine-readable Blake index](../data/blake-index.json).
+> **William Blake pathway**: [Core works, broader citations and quotations, version DOIs, and text evidence](https://github.com/docxology/docxology/blob/main/pages/BLAKE.md). [Complete bibliography](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md) · [Machine-readable Blake index](https://danielarifriedman.com/data/blake-index.json).
 
-> **Current generated totals**: see [`reports/current_counts.md`](../reports/current_counts.md) for bibliography, paper-folder, software, GitHub inventory, public-source snapshot, and paired-publication counts with generation metadata and rebuild commands. Scholar metrics are sourced from [`data/scholar-snapshot.json`](../data/scholar-snapshot.json) and propagated into the resume and claim exports.
+> **Current generated totals**: see [`reports/current_counts.md`](https://github.com/docxology/docxology/blob/main/reports/current_counts.md) for bibliography, paper-folder, software, GitHub inventory, public-source snapshot, and paired-publication counts with generation metadata and rebuild commands. Scholar metrics are sourced from [`data/scholar-snapshot.json`](https://danielarifriedman.com/data/scholar-snapshot.json) and propagated into the resume and claim exports.
 
 ---
 
@@ -51,7 +51,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ## 📁 Repository Map
 
-> **Current catalog totals** are generated in [`reports/current_counts.md`](../reports/current_counts.md). Canonical source tables are [`pages/BIBLIOGRAPHY.md`](../pages/BIBLIOGRAPHY.md), [`pages/SOFTWARE.md`](../pages/SOFTWARE.md), [`papers/README.md`](../papers/README.md), and [`data/github-repositories.json`](../data/github-repositories.json).
+> **Current catalog totals** are generated in [`reports/current_counts.md`](https://github.com/docxology/docxology/blob/main/reports/current_counts.md). Canonical source tables are [`pages/BIBLIOGRAPHY.md`](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md), [`pages/SOFTWARE.md`](https://github.com/docxology/docxology/blob/main/pages/SOFTWARE.md), [`papers/README.md`](https://github.com/docxology/docxology/blob/main/papers/README.md), and [`data/github-repositories.json`](https://danielarifriedman.com/data/github-repositories.json).
 
 
 <details>
@@ -59,34 +59,34 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 | Resource | What's Inside |
 |----------|---------------|
-| 📚 [**pages/BIBLIOGRAPHY.md**](../pages/BIBLIOGRAPHY.md) | Unified sortable table of **all works** in the bibliography — DOI links, domain tags, and per-paper docs |
-| 📄 [**works/**](../works/) | **Generated per-work landing pages** — one canonical HTML page per bibliography row with citation, DOI, primary source, and documentation link |
-| 🔎 [**search.html**](https://danielarifriedman.com/search.html) / [**opensearch.xml**](../opensearch.xml) | **Human and browser search** — searchable index over works, software, people, organizations, claims, and key pages |
-| 📝 [**updates.html**](https://danielarifriedman.com/updates.html) / [**CHANGELOG.md**](../CHANGELOG.md) | **Human-readable update history** — recent public-index and generated-site changes |
-| 🧭 [**domains.html**](https://danielarifriedman.com/domains.html) / [**pages/DOMAINS.md**](../pages/DOMAINS.md) | Domain landing-page hub — Entomology, Active Inference, Cognitive Security, Art & Synergetics, Computational, Presentations & Media, AII Ecosystem, Biomedicine ([each cluster has its own `domain-*.html`](https://danielarifriedman.com/domain-active-inference.html)) |
-| 💻 [**pages/SOFTWARE.md**](../pages/SOFTWARE.md) | Curated owned repos + Active Inference Institute contributions — AI frameworks, geometry engines, entomology tools, and developer infrastructure; see the [primary repository inventory](https://danielarifriedman.com/repositories.html) and [fork archive](https://danielarifriedman.com/repositories-forks.html) for public GitHub coverage |
-| 📁 [**papers/**](../papers/) | Per-paper folders — each with README.md, AGENTS.md, and Claude Code-compatible SKILL.md where a bibliography row has in-tree documentation |
-| 📄 [**pages/**](../pages/README.md) | **Documentation Hub** — Centralized directories for videos, courses, pathways, and repository integrations |
-| 🔗 [**pages/LINKS.md**](../pages/LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, courses, organizations |
-| 📖 [**pages/WIKIPEDIA.md**](../pages/WIKIPEDIA.md) | **Wikipedia presence** — Wikidata/Wikipedia entries and identity-graph links |
-| 🧭 [**pages/DISCOVERY.md**](../pages/DISCOVERY.md) | **Agentic discovery map** — canonical IDs, public APIs, source queries, and verification notes |
-| 🧾 [**cite-verify.html**](https://danielarifriedman.com/cite-verify.html) / [**evidence.html**](https://danielarifriedman.com/evidence.html) | **Citation and evidence layer** — preferred citation, public identifiers, source-of-truth rules, and claim ledger ([CITE_VERIFY](../pages/CITE_VERIFY.md) · [EVIDENCE](../pages/EVIDENCE.md)) |
-| 📄 [**resume/**](../resume/) / [**data/resume.json**](../data/resume.json) | **Structured resume/CV exports** — source-backed JSON, plaintext variants, and generated PDF built from canonical works, software, metrics, and resume-specific records |
-| ✅ [**pages/VERIFICATION_LOG.md**](../pages/VERIFICATION_LOG.md) | **Source-grounded verification log** — dated independent, first-party, direct-authenticated, and principal-confirmed evidence for load-bearing claims ([JSON](../data/verification-log.json)) |
-| 👤 [**pages/PROFILE.md**](../pages/PROFILE.md) | **Detailed biography** — education, research areas, organizations, teaching, awards, art, and key metrics |
-| 🤝 [**pages/COLLABORATORS.md**](../pages/COLLABORATORS.md) | **Research network** — key collaborators (Friston, Gordon, Albarracin, Fields, etc.) with joint publications and institutional map |
-| 🎥 [**pages/MEDIA.md**](../pages/MEDIA.md) | **Talks, podcasts & press** — conference presentations, podcast appearances, video series, courses, interviews, and press coverage |
-| 📚 [**pages/RESOURCES.md**](../pages/RESOURCES.md) / [**pages/VIDEOS.md**](../pages/VIDEOS.md) | **Resources & video index source** — curated resource compendium and the videos/courses catalogue |
-| 🖼️ [**art.html**](https://danielarifriedman.com/art.html) / [**nft.html**](https://danielarifriedman.com/nft.html) / [**meditations.html**](https://danielarifriedman.com/meditations.html) | **Art & creative portfolio** — gallery, NFT collectibles (Curio Cards), and meditations pages ([art/](../art/README.md) holds local gallery assets) |
-| 🤖 [**llms.txt**](../llms.txt) / [**CITATION.cff**](../CITATION.cff) / [**codemeta.json**](../codemeta.json) / [**search-index.json**](../search-index.json) / [**feed.xml**](../feed.xml) | **Machine-readable discovery metadata** — agent map, citation metadata, CodeMeta, search index, and RSS feed |
-| 🗃️ [**catalog.html**](https://danielarifriedman.com/catalog.html) / [**data/catalog.json**](../data/catalog.json) / [**GENERATED.md**](../GENERATED.md) | **Structured data and rebuild map** — Schema.org DataCatalog plus generated-artifact manifest and commands |
-| 📦 [**exports.html**](https://danielarifriedman.com/exports.html) / [**bibliography.bib**](../bibliography.bib) / [**bibliography.csl.json**](../bibliography.csl.json) / [**bibliography.ris**](../bibliography.ris) / [**data/**](../data/) | **Exports for citation managers and agents** — HTML export hub, BibTeX, CSL JSON, RIS, works/artworks/software/people/organization/claims/reconciliation JSON |
-| ✅ [**reports/**](../reports/) / [**CHANGELOG.md**](../CHANGELOG.md) / [**docs/**](../docs/README.md) | **Maintenance evidence & documentation** — source snapshots, reconciliation/accessibility/visual-QA reports, changelog, and the documentation index (architecture, operations, [canonical URL policy](../docs/seo/canonical-policy.md), design, security, releases) |
-| 📊 [**reports.html**](https://danielarifriedman.com/reports.html) / [**research.html**](https://danielarifriedman.com/research.html) / [**reproducibility.html**](https://danielarifriedman.com/reproducibility.html) | **Reports, research & reproducibility hub** — generated report index, research overview, and the reproducibility ledger ([Markdown](../pages/REPRODUCIBILITY.md)) |
-| 🧑‍🚀 [**AGENT_START.md**](../AGENT_START.md) / [**humans.txt**](../humans.txt) / [**.well-known/security.txt**](../.well-known/security.txt) | **Operational entrypoints** — agent task recipes, human credits/contact, and responsible disclosure metadata |
+| 📚 [**pages/BIBLIOGRAPHY.md**](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md) | Unified sortable table of **all works** in the bibliography — DOI links, domain tags, and per-paper docs |
+| 📄 [**works/**](https://github.com/docxology/docxology/tree/main/works/) | **Generated per-work landing pages** — one canonical HTML page per bibliography row with citation, DOI, primary source, and documentation link |
+| 🔎 [**search.html**](https://danielarifriedman.com/search.html) / [**opensearch.xml**](https://danielarifriedman.com/opensearch.xml) | **Human and browser search** — searchable index over works, software, people, organizations, claims, and key pages |
+| 📝 [**updates.html**](https://danielarifriedman.com/updates.html) / [**CHANGELOG.md**](https://github.com/docxology/docxology/blob/main/CHANGELOG.md) | **Human-readable update history** — recent public-index and generated-site changes |
+| 🧭 [**domains.html**](https://danielarifriedman.com/domains.html) / [**pages/DOMAINS.md**](https://github.com/docxology/docxology/blob/main/pages/DOMAINS.md) | Domain landing-page hub — Entomology, Active Inference, Cognitive Security, Art & Synergetics, Computational, Presentations & Media, AII Ecosystem, Biomedicine ([each cluster has its own `domain-*.html`](https://danielarifriedman.com/domain-active-inference.html)) |
+| 💻 [**pages/SOFTWARE.md**](https://github.com/docxology/docxology/blob/main/pages/SOFTWARE.md) | Curated owned repos + Active Inference Institute contributions — AI frameworks, geometry engines, entomology tools, and developer infrastructure; see the [primary repository inventory](https://danielarifriedman.com/repositories.html) and [fork archive](https://danielarifriedman.com/repositories-forks.html) for public GitHub coverage |
+| 📁 [**papers/**](https://github.com/docxology/docxology/tree/main/papers/) | Per-paper folders — each with README.md, AGENTS.md, and Claude Code-compatible SKILL.md where a bibliography row has in-tree documentation |
+| 📄 [**pages/**](https://github.com/docxology/docxology/blob/main/pages/README.md) | **Documentation Hub** — Centralized directories for videos, courses, pathways, and repository integrations |
+| 🔗 [**pages/LINKS.md**](https://github.com/docxology/docxology/blob/main/pages/LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, courses, organizations |
+| 📖 [**pages/WIKIPEDIA.md**](https://github.com/docxology/docxology/blob/main/pages/WIKIPEDIA.md) | **Wikipedia presence** — Wikidata/Wikipedia entries and identity-graph links |
+| 🧭 [**pages/DISCOVERY.md**](https://github.com/docxology/docxology/blob/main/pages/DISCOVERY.md) | **Agentic discovery map** — canonical IDs, public APIs, source queries, and verification notes |
+| 🧾 [**cite-verify.html**](https://danielarifriedman.com/cite-verify.html) / [**evidence.html**](https://danielarifriedman.com/evidence.html) | **Citation and evidence layer** — preferred citation, public identifiers, source-of-truth rules, and claim ledger ([CITE_VERIFY](https://github.com/docxology/docxology/blob/main/pages/CITE_VERIFY.md) · [EVIDENCE](https://github.com/docxology/docxology/blob/main/pages/EVIDENCE.md)) |
+| 📄 [**resume/**](https://github.com/docxology/docxology/tree/main/resume/) / [**data/resume.json**](https://danielarifriedman.com/data/resume.json) | **Structured resume/CV exports** — source-backed JSON, plaintext variants, and generated PDF built from canonical works, software, metrics, and resume-specific records |
+| ✅ [**pages/VERIFICATION_LOG.md**](https://github.com/docxology/docxology/blob/main/pages/VERIFICATION_LOG.md) | **Source-grounded verification log** — dated independent, first-party, direct-authenticated, and principal-confirmed evidence for load-bearing claims ([JSON](https://danielarifriedman.com/data/verification-log.json)) |
+| 👤 [**pages/PROFILE.md**](https://github.com/docxology/docxology/blob/main/pages/PROFILE.md) | **Detailed biography** — education, research areas, organizations, teaching, awards, art, and key metrics |
+| 🤝 [**pages/COLLABORATORS.md**](https://github.com/docxology/docxology/blob/main/pages/COLLABORATORS.md) | **Research network** — key collaborators (Friston, Gordon, Albarracin, Fields, etc.) with joint publications and institutional map |
+| 🎥 [**pages/MEDIA.md**](https://github.com/docxology/docxology/blob/main/pages/MEDIA.md) | **Talks, podcasts & press** — conference presentations, podcast appearances, video series, courses, interviews, and press coverage |
+| 📚 [**pages/RESOURCES.md**](https://github.com/docxology/docxology/blob/main/pages/RESOURCES.md) / [**pages/VIDEOS.md**](https://github.com/docxology/docxology/blob/main/pages/VIDEOS.md) | **Resources & video index source** — curated resource compendium and the videos/courses catalogue |
+| 🖼️ [**art.html**](https://danielarifriedman.com/art.html) / [**nft.html**](https://danielarifriedman.com/nft.html) / [**meditations.html**](https://danielarifriedman.com/meditations.html) | **Art & creative portfolio** — gallery, NFT collectibles (Curio Cards), and meditations pages ([art/](https://github.com/docxology/docxology/blob/main/art/README.md) holds local gallery assets) |
+| 🤖 [**llms.txt**](https://danielarifriedman.com/llms.txt) / [**CITATION.cff**](https://danielarifriedman.com/CITATION.cff) / [**codemeta.json**](https://danielarifriedman.com/codemeta.json) / [**search-index.json**](https://danielarifriedman.com/search-index.json) / [**feed.xml**](https://danielarifriedman.com/feed.xml) | **Machine-readable discovery metadata** — agent map, citation metadata, CodeMeta, search index, and RSS feed |
+| 🗃️ [**catalog.html**](https://danielarifriedman.com/catalog.html) / [**data/catalog.json**](https://danielarifriedman.com/data/catalog.json) / [**GENERATED.md**](https://github.com/docxology/docxology/blob/main/GENERATED.md) | **Structured data and rebuild map** — Schema.org DataCatalog plus generated-artifact manifest and commands |
+| 📦 [**exports.html**](https://danielarifriedman.com/exports.html) / [**bibliography.bib**](https://danielarifriedman.com/bibliography.bib) / [**bibliography.csl.json**](https://danielarifriedman.com/bibliography.csl.json) / [**bibliography.ris**](https://danielarifriedman.com/bibliography.ris) / [**data/**](https://github.com/docxology/docxology/tree/main/data/) | **Exports for citation managers and agents** — HTML export hub, BibTeX, CSL JSON, RIS, works/artworks/software/people/organization/claims/reconciliation JSON |
+| ✅ [**reports/**](https://github.com/docxology/docxology/tree/main/reports/) / [**CHANGELOG.md**](https://github.com/docxology/docxology/blob/main/CHANGELOG.md) / [**docs/**](https://github.com/docxology/docxology/blob/main/docs/README.md) | **Maintenance evidence & documentation** — source snapshots, reconciliation/accessibility/visual-QA reports, changelog, and the documentation index (architecture, operations, [canonical URL policy](https://github.com/docxology/docxology/blob/main/docs/seo/canonical-policy.md), design, security, releases) |
+| 📊 [**reports.html**](https://danielarifriedman.com/reports.html) / [**research.html**](https://danielarifriedman.com/research.html) / [**reproducibility.html**](https://danielarifriedman.com/reproducibility.html) | **Reports, research & reproducibility hub** — generated report index, research overview, and the reproducibility ledger ([Markdown](https://github.com/docxology/docxology/blob/main/pages/REPRODUCIBILITY.md)) |
+| 🧑‍🚀 [**AGENT_START.md**](https://github.com/docxology/docxology/blob/main/AGENT_START.md) / [**humans.txt**](https://danielarifriedman.com/humans.txt) / [**.well-known/security.txt**](https://danielarifriedman.com/.well-known/security.txt) | **Operational entrypoints** — agent task recipes, human credits/contact, and responsible disclosure metadata |
 | ✅ [**agent-verify.html**](https://danielarifriedman.com/agent-verify.html) / [**about.html**](https://danielarifriedman.com/about.html) | **Agent verification & about** — agent-ready verification recipes and a short bio page |
-| 🛠️ [**code/**](../code/) | **Repository Source Code** — `orchestrators/`, `src/`, and `tests/` directories containing executable pipelines and core functions |
-| 📖 [**docs/**](../docs/) | **Central Documentation** — Repository-wide operational documentation |
+| 🛠️ [**code/**](https://github.com/docxology/docxology/blob/main/code/) | **Repository Source Code** — `orchestrators/`, `src/`, and `tests/` directories containing executable pipelines and core functions |
+| 📖 [**docs/**](https://github.com/docxology/docxology/tree/main/docs/) | **Central Documentation** — Repository-wide operational documentation |
 
 </details>
 
@@ -94,12 +94,12 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 | Domain | Publications | Highlights | Software |
 |--------|:-----------:|------------|----------|
-| 🐜 Entomology | [works](../pages/BIBLIOGRAPHY.md#entomology) | [EntoLinguistics](../papers/2026_EntoLinguistics/) · [ActiveInferants](../papers/2021_ActiveInferants/) · [AntStack](../papers/2025_AntStack/) · [PhD](../papers/2019_PhDDissertation/) | [ento_linguistics](https://github.com/docxology/ento_linguistics) · [MetaInformAnt](https://github.com/docxology/MetaInformAnt) · [ant_stack](https://github.com/docxology/ant_stack) |
-| 🧠 Active Inference | [works](../pages/BIBLIOGRAPHY.md#active-inference) | [FEPLean](../papers/2026_FEPLean/) · [CognitiveCaseDiagrams](../papers/2026_CognitiveCaseDiagrams/) · [CEREBRUM](../papers/2025_CEREBRUM/) | [fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) · [cognitive_case_diagrams](https://github.com/docxology/cognitive_case_diagrams) · [goference](https://github.com/docxology/goference) |
-| 🛡️ Cognitive Security | [works](../pages/BIBLIOGRAPHY.md#cognitive-security) | [CognitiveIntegrity](../papers/2026_CognitiveIntegrity/) · [InformationCommons](../papers/2022_InformationCommons/) · [P3IF](../papers/2023_P3IF/) | [p3if](https://github.com/docxology/p3if) · [opentir](https://github.com/docxology/opentir) |
-| 🎨 Art & Synergetics | [works](../pages/BIBLIOGRAPHY.md#art-synergetics) | [BlakeJiang](../papers/2026_BlakeJiang/) · [DoorsOfPerception](../papers/2026_DoorsOfPerception/) · [BlakeFuller](../papers/2023_BlakeFuller/) · [QuadMath](../papers/2025_QuadMath/) | [QuadCraft](https://github.com/docxology/QuadCraft) · [symergetics](https://github.com/docxology/symergetics) · [ivm-xyz](https://github.com/docxology/ivm-xyz) |
-| 💻 Computational | [works](../pages/BIBLIOGRAPHY.md#computational) | [DeterministicTestbedSelf](../papers/2026_DeterministicTestbedSelf/) · [RecoveringLLMPersona](../papers/2026_RecoveringLLMPersona/) · [THALIA](../papers/2026_THALIA/) · [WitnessRegister](../papers/2026_WitnessRegister/) · [Triplicate](../papers/2026_Triplicate/) · [TemplateTextbook](../papers/2026_TemplateTextbook/) · [BiologyTextbook](../papers/2026_BiologyTextbook/) | [template](https://github.com/docxology/template) · [template_autoscientists](https://github.com/docxology/template_autoscientists) · [ntqr_llm](https://github.com/docxology/ntqr_llm) · [thalia](https://github.com/docxology/thalia) |
-| 🧬 Genetics & Biomedical | [works](../pages/BIBLIOGRAPHY.md#genetics-biomedical) | [HoneyBeeEvolution](../papers/2015_HoneyBeeEvolution/) · [NuclearStructure](../papers/2016_NuclearStructure/) · [DennettExplained](../papers/2019_DennettExplained/) | [FORMINDEX](https://github.com/docxology/FORMINDEX) |
+| 🐜 Entomology | [works](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md#entomology) | [EntoLinguistics](https://github.com/docxology/docxology/tree/main/papers/2026_EntoLinguistics/) · [ActiveInferants](https://github.com/docxology/docxology/tree/main/papers/2021_ActiveInferants/) · [AntStack](https://github.com/docxology/docxology/tree/main/papers/2025_AntStack/) · [PhD](https://github.com/docxology/docxology/tree/main/papers/2019_PhDDissertation/) | [ento_linguistics](https://github.com/docxology/ento_linguistics) · [MetaInformAnt](https://github.com/docxology/MetaInformAnt) · [ant_stack](https://github.com/docxology/ant_stack) |
+| 🧠 Active Inference | [works](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md#active-inference) | [FEPLean](https://github.com/docxology/docxology/tree/main/papers/2026_FEPLean/) · [CognitiveCaseDiagrams](https://github.com/docxology/docxology/tree/main/papers/2026_CognitiveCaseDiagrams/) · [CEREBRUM](https://github.com/docxology/docxology/tree/main/papers/2025_CEREBRUM/) | [fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) · [cognitive_case_diagrams](https://github.com/docxology/cognitive_case_diagrams) · [goference](https://github.com/docxology/goference) |
+| 🛡️ Cognitive Security | [works](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md#cognitive-security) | [CognitiveIntegrity](https://github.com/docxology/docxology/tree/main/papers/2026_CognitiveIntegrity/) · [InformationCommons](https://github.com/docxology/docxology/tree/main/papers/2022_InformationCommons/) · [P3IF](https://github.com/docxology/docxology/tree/main/papers/2023_P3IF/) | [p3if](https://github.com/docxology/p3if) · [opentir](https://github.com/docxology/opentir) |
+| 🎨 Art & Synergetics | [works](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md#art-synergetics) | [BlakeJiang](https://github.com/docxology/docxology/tree/main/papers/2026_BlakeJiang/) · [DoorsOfPerception](https://github.com/docxology/docxology/tree/main/papers/2026_DoorsOfPerception/) · [BlakeFuller](https://github.com/docxology/docxology/tree/main/papers/2023_BlakeFuller/) · [QuadMath](https://github.com/docxology/docxology/tree/main/papers/2025_QuadMath/) | [QuadCraft](https://github.com/docxology/QuadCraft) · [symergetics](https://github.com/docxology/symergetics) · [ivm-xyz](https://github.com/docxology/ivm-xyz) |
+| 💻 Computational | [works](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md#computational) | [DeterministicTestbedSelf](https://github.com/docxology/docxology/tree/main/papers/2026_DeterministicTestbedSelf/) · [RecoveringLLMPersona](https://github.com/docxology/docxology/tree/main/papers/2026_RecoveringLLMPersona/) · [THALIA](https://github.com/docxology/docxology/tree/main/papers/2026_THALIA/) · [WitnessRegister](https://github.com/docxology/docxology/tree/main/papers/2026_WitnessRegister/) · [Triplicate](https://github.com/docxology/docxology/tree/main/papers/2026_Triplicate/) · [TemplateTextbook](https://github.com/docxology/docxology/tree/main/papers/2026_TemplateTextbook/) · [BiologyTextbook](https://github.com/docxology/docxology/tree/main/papers/2026_BiologyTextbook/) | [template](https://github.com/docxology/template) · [template_autoscientists](https://github.com/docxology/template_autoscientists) · [ntqr_llm](https://github.com/docxology/ntqr_llm) · [thalia](https://github.com/docxology/thalia) |
+| 🧬 Genetics & Biomedical | [works](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md#genetics-biomedical) | [HoneyBeeEvolution](https://github.com/docxology/docxology/tree/main/papers/2015_HoneyBeeEvolution/) · [NuclearStructure](https://github.com/docxology/docxology/tree/main/papers/2016_NuclearStructure/) · [DennettExplained](https://github.com/docxology/docxology/tree/main/papers/2019_DennettExplained/) | [FORMINDEX](https://github.com/docxology/FORMINDEX) |
 
 ---
 
@@ -107,7 +107,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 🐜 Entomology & Social Insect Biology
 
-> Entomology domain works include peer-reviewed and Zenodo records on ant genetics, behavior, collective intelligence, and scientific language. Current domain totals live in [`reports/current_counts.md`](../reports/current_counts.md); [Full list in Bibliography →](../pages/BIBLIOGRAPHY.md#entomology)
+> Entomology domain works include peer-reviewed and Zenodo records on ant genetics, behavior, collective intelligence, and scientific language. Current domain totals live in [`reports/current_counts.md`](https://github.com/docxology/docxology/blob/main/reports/current_counts.md); [Full list in Bibliography →](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md#entomology)
 
 <details>
 <summary><b>Key publications (click to expand)</b></summary>
@@ -122,7 +122,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 2018 | The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants | *iScience* | [10.1016/j.isci.2018.09.001](https://doi.org/10.1016/j.isci.2018.09.001) |
 | 2016 | Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior | *Annual Review of Neuroscience* | [10.1146/annurev-neuro-070815-013927](https://doi.org/10.1146/annurev-neuro-070815-013927) |
 
-> 📁 **Paper folders**: [EntoLinguistics](../papers/2026_EntoLinguistics/) · [AntStack](../papers/2025_AntStack/) · [ActiveInferants](../papers/2021_ActiveInferants/) · [PhDDissertation](../papers/2019_PhDDissertation/) · [DopamineForaging](../papers/2018_DopamineForaging/) · [AntGenetics](../papers/2016_AntGenetics/)
+> 📁 **Paper folders**: [EntoLinguistics](https://github.com/docxology/docxology/tree/main/papers/2026_EntoLinguistics/) · [AntStack](https://github.com/docxology/docxology/tree/main/papers/2025_AntStack/) · [ActiveInferants](https://github.com/docxology/docxology/tree/main/papers/2021_ActiveInferants/) · [PhDDissertation](https://github.com/docxology/docxology/tree/main/papers/2019_PhDDissertation/) · [DopamineForaging](https://github.com/docxology/docxology/tree/main/papers/2018_DopamineForaging/) · [AntGenetics](https://github.com/docxology/docxology/tree/main/papers/2016_AntGenetics/)
 
 </details>
 
@@ -130,7 +130,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 🧠 Active Inference & Free Energy Principle
 
-> Theoretical, computational, and applied Active Inference works. Current domain totals live in [`reports/current_counts.md`](../reports/current_counts.md); [Full list in Bibliography →](../pages/BIBLIOGRAPHY.md#active-inference)
+> Theoretical, computational, and applied Active Inference works. Current domain totals live in [`reports/current_counts.md`](https://github.com/docxology/docxology/blob/main/reports/current_counts.md); [Full list in Bibliography →](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md#active-inference)
 
 <details>
 <summary><b>Key publications (click to expand)</b></summary>
@@ -145,7 +145,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 2023 | Generalized Notation Notation for Active Inference Models | *Zenodo* | [10.5281/zenodo.7803327](https://doi.org/10.5281/zenodo.7803327) |
 | 2018 | Of woodlice and men (with Karl Friston) | *ALIUS Bulletin* | [10.34700/h460-nz89](https://doi.org/10.34700/h460-nz89) |
 
-> 📁 **Paper folders**: [CEREBRUM](../papers/2025_CEREBRUM/) · [GNN](../papers/2023_GNN/) · [FederatedInference](../papers/2024_FederatedInference/) · [Thoughtseeds](../papers/2025_Thoughtseeds/) · [EvoJump](../papers/2025_EvoJump/)
+> 📁 **Paper folders**: [CEREBRUM](https://github.com/docxology/docxology/tree/main/papers/2025_CEREBRUM/) · [GNN](https://github.com/docxology/docxology/tree/main/papers/2023_GNN/) · [FederatedInference](https://github.com/docxology/docxology/tree/main/papers/2024_FederatedInference/) · [Thoughtseeds](https://github.com/docxology/docxology/tree/main/papers/2025_Thoughtseeds/) · [EvoJump](https://github.com/docxology/docxology/tree/main/papers/2025_EvoJump/)
 
 </details>
 
@@ -153,7 +153,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 🛡️ Cognitive Security & Information Ecosystems
 
-> Narrative security, memes, trust, and policy works. Current domain and type totals live in [`reports/current_counts.md`](../reports/current_counts.md); [Full list in Bibliography →](../pages/BIBLIOGRAPHY.md#cognitive-security)
+> Narrative security, memes, trust, and policy works. Current domain and type totals live in [`reports/current_counts.md`](https://github.com/docxology/docxology/blob/main/reports/current_counts.md); [Full list in Bibliography →](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md#cognitive-security)
 
 <details>
 <summary><b>Key publications (click to expand)</b></summary>
@@ -177,7 +177,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 2024 | FarmWorks: Decentralized AI Agents for Personalized Solutions | *Zenodo* | [10.5281/zenodo.13754585](https://doi.org/10.5281/zenodo.13754585) |
 | 2023 | Cognitive Sovereignty & Active Inference in the State of Exception | *Zenodo* | [10.5281/zenodo.10038231](https://doi.org/10.5281/zenodo.10038231) |
 
-> 📁 **Paper folders**: [CognitiveIntegrity](../papers/2026_CognitiveIntegrity/) · [InformationCommons](../papers/2022_InformationCommons/) · [NarrativeEcosystems](../papers/2021_NarrativeEcosystems/) · [FarmWorks](../papers/2024_FarmWorks/)
+> 📁 **Paper folders**: [CognitiveIntegrity](https://github.com/docxology/docxology/tree/main/papers/2026_CognitiveIntegrity/) · [InformationCommons](https://github.com/docxology/docxology/tree/main/papers/2022_InformationCommons/) · [NarrativeEcosystems](https://github.com/docxology/docxology/tree/main/papers/2021_NarrativeEcosystems/) · [FarmWorks](https://github.com/docxology/docxology/tree/main/papers/2024_FarmWorks/)
 
 </details>
 
@@ -185,7 +185,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 🎨 Art, Philosophy & Synergetics
 
-> Works on William Blake, Buckminster Fuller, visual art, and interdisciplinary philosophy. Current domain totals live in [`reports/current_counts.md`](../reports/current_counts.md); [Full list in Bibliography →](../pages/BIBLIOGRAPHY.md#art-synergetics)
+> Works on William Blake, Buckminster Fuller, visual art, and interdisciplinary philosophy. Current domain totals live in [`reports/current_counts.md`](https://github.com/docxology/docxology/blob/main/reports/current_counts.md); [Full list in Bibliography →](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md#art-synergetics)
 
 <details>
 <summary><b>Key publications (click to expand)</b></summary>
@@ -199,7 +199,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 2025 | QuadMath: An Analytical Review of 4D and Quadray Coordinates | *Zenodo* | [10.5281/zenodo.16887799](https://doi.org/10.5281/zenodo.16887799) |
 | 2023 | William Blake & Buckminster Fuller: Lives in Juxtaposition | *Zenodo* | [10.5281/zenodo.7514367](https://doi.org/10.5281/zenodo.7514367) |
 
-> 📁 **Paper folders**: [BlakeJiang](../papers/2026_BlakeJiang/) · [DoorsOfPerception](../papers/2026_DoorsOfPerception/) · [BeforePragmatism](../papers/2026_BeforePragmatism/) · [BlakeFuller](../papers/2023_BlakeFuller/) · [QuadMath](../papers/2025_QuadMath/) · [Symergetics](../papers/2025_Symergetics/)
+> 📁 **Paper folders**: [BlakeJiang](https://github.com/docxology/docxology/tree/main/papers/2026_BlakeJiang/) · [DoorsOfPerception](https://github.com/docxology/docxology/tree/main/papers/2026_DoorsOfPerception/) · [BeforePragmatism](https://github.com/docxology/docxology/tree/main/papers/2026_BeforePragmatism/) · [BlakeFuller](https://github.com/docxology/docxology/tree/main/papers/2023_BlakeFuller/) · [QuadMath](https://github.com/docxology/docxology/tree/main/papers/2025_QuadMath/) · [Symergetics](https://github.com/docxology/docxology/tree/main/papers/2025_Symergetics/)
 
 </details>
 
@@ -207,7 +207,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 💻 Computational Frameworks & Software
 
-> Computational works and software catalogs. Current bibliography, curated-software, and GitHub-inventory totals live in [`reports/current_counts.md`](../reports/current_counts.md); [Works in Bibliography →](../pages/BIBLIOGRAPHY.md#computational) · [Curated repos →](../pages/SOFTWARE.md) · [Primary inventory →](https://danielarifriedman.com/repositories.html)
+> Computational works and software catalogs. Current bibliography, curated-software, and GitHub-inventory totals live in [`reports/current_counts.md`](https://github.com/docxology/docxology/blob/main/reports/current_counts.md); [Works in Bibliography →](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md#computational) · [Curated repos →](https://github.com/docxology/docxology/blob/main/pages/SOFTWARE.md) · [Primary inventory →](https://danielarifriedman.com/repositories.html)
 
 <details>
 <summary><b>Key publications & repositories (click to expand)</b></summary>
@@ -230,7 +230,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 #### 🔬 Research-Practice Line Set
 
-> The DAF "line set" — six small evaluative instruments for research practice and evidence discipline (2026). A typed ledger for absence ([White Line](../papers/2026_WhiteLine/)), a directional long-horizon record ([Golden Line](../papers/2026_GoldenLine/)), an evidence-gated personal `No` ([Personal Red Lines](../papers/2026_PersonalRedLines/)), a concise-inspectable practice instrument ([Black Line](../papers/2026_BlackLine/)), a co-registration register ([Witness Register](../papers/2026_WitnessRegister/)), and a thin reader over the set ([Line Set](../papers/2026_LineSet/)).
+> The DAF "line set" — six small evaluative instruments for research practice and evidence discipline (2026). A typed ledger for absence ([White Line](https://github.com/docxology/docxology/tree/main/papers/2026_WhiteLine/)), a directional long-horizon record ([Golden Line](https://github.com/docxology/docxology/tree/main/papers/2026_GoldenLine/)), an evidence-gated personal `No` ([Personal Red Lines](https://github.com/docxology/docxology/tree/main/papers/2026_PersonalRedLines/)), a concise-inspectable practice instrument ([Black Line](https://github.com/docxology/docxology/tree/main/papers/2026_BlackLine/)), a co-registration register ([Witness Register](https://github.com/docxology/docxology/tree/main/papers/2026_WitnessRegister/)), and a thin reader over the set ([Line Set](https://github.com/docxology/docxology/tree/main/papers/2026_LineSet/)).
 
 | Year | Title | Venue | DOI |
 |------|-------|-------|-----|
@@ -254,7 +254,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | [thalia](https://github.com/docxology/thalia) | Typed agentic harness for reproducible long-context memory experiments |
 | [p3if](https://github.com/docxology/p3if) | Properties, Processes, and Perspectives Inter-Framework |
 
-> **Full curated software list**: [pages/SOFTWARE.md →](../pages/SOFTWARE.md). For public GitHub coverage, use the [primary repository inventory →](https://danielarifriedman.com/repositories.html); forks are separated into the [fork archive →](https://danielarifriedman.com/repositories-forks.html). Current totals live in [`reports/current_counts.md`](../reports/current_counts.md).
+> **Full curated software list**: [pages/SOFTWARE.md →](https://github.com/docxology/docxology/blob/main/pages/SOFTWARE.md). For public GitHub coverage, use the [primary repository inventory →](https://danielarifriedman.com/repositories.html); forks are separated into the [fork archive →](https://danielarifriedman.com/repositories-forks.html). Current totals live in [`reports/current_counts.md`](https://github.com/docxology/docxology/blob/main/reports/current_counts.md).
 
 </details>
 
@@ -262,7 +262,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 🌍 Active Inference Institute & Ecosystem
 
-> Institute snapshots, ecosystem maps, and organizational design works. Current domain totals live in [`reports/current_counts.md`](../reports/current_counts.md); [Full list in Bibliography →](../pages/BIBLIOGRAPHY.md#aii-ecosystem)
+> Institute snapshots, ecosystem maps, and organizational design works. Current domain totals live in [`reports/current_counts.md`](https://github.com/docxology/docxology/blob/main/reports/current_counts.md); [Full list in Bibliography →](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md#aii-ecosystem)
 
 <details>
 <summary><b>Institute ecosystem publications (click to expand)</b></summary>
@@ -274,7 +274,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 2024 | Aligning Active Inference Ontology to SUMO | *Zenodo* | [10.5281/zenodo.11459322](https://doi.org/10.5281/zenodo.11459322) |
 | 2023 | The Active Inference Institute and Active Inference Ecosystem (v1) | *Zenodo* | [10.5281/zenodo.8266280](https://doi.org/10.5281/zenodo.8266280) |
 
-> 📁 **Paper folders**: [AII_v3](../papers/2025_AII_v3/) · [AII_v2](../papers/2024_AII_v2/) · [AII_v1](../papers/2023_AII_v1/)
+> 📁 **Paper folders**: [AII_v3](https://github.com/docxology/docxology/tree/main/papers/2025_AII_v3/) · [AII_v2](https://github.com/docxology/docxology/tree/main/papers/2024_AII_v2/) · [AII_v1](https://github.com/docxology/docxology/tree/main/papers/2023_AII_v1/)
 
 </details>
 
@@ -282,7 +282,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 🎥 Presentations, Courses & Media
 
-> Livestreams, conference talks, courses, and collaborative media — [Full list in Bibliography →](../pages/BIBLIOGRAPHY.md#presentations-media)
+> Livestreams, conference talks, courses, and collaborative media — [Full list in Bibliography →](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md#presentations-media)
 
 <details>
 <summary><b>Presentations, courses, and media (click to expand)</b></summary>
@@ -309,7 +309,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ### 🧬 Genetics & Biomedical Research
 
-> Genetics, radiation biology, and biomedical research works. Current domain totals live in [`reports/current_counts.md`](../reports/current_counts.md); [Full list in Bibliography →](../pages/BIBLIOGRAPHY.md#genetics-biomedical)
+> Genetics, radiation biology, and biomedical research works. Current domain totals live in [`reports/current_counts.md`](https://github.com/docxology/docxology/blob/main/reports/current_counts.md); [Full list in Bibliography →](https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md#genetics-biomedical)
 
 <details>
 <summary><b>Earlier work in genetics, radiation biology, and biomedical research (click to expand)</b></summary>

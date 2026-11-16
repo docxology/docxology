@@ -107,9 +107,14 @@
     "decision": "accept",
     "reviewed_by": "Codex public-source curation",
     "reviewed_at": "2026-11-05T01:42:21.179059+00:00",
-    "source_report": "reports/publication_intake_2026-11-05.json",
+    "source_report": "reports/public_projection_publication_intake_2026-11-05.json",
     "record_id": "23900583",
-    "release_url": "https://github.com/docxology/Blakean_Entomology/releases/tag/v1.0.0"
+    "release_url": "https://github.com/docxology/Blakean_Entomology/releases/tag/v1.0.0",
+    "source_report_sha256": "c8f6f253a3311620a7080a0ffa77fb3088ccfbaa77c4a32e3833d14f18b6dd3c",
+    "source_report_projection": {
+      "policy": "public-owned-repositories-v1",
+      "original_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+    }
   },
   "related_papers": [
     "2026_StatesChange",

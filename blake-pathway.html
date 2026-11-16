@@ -173,7 +173,7 @@
             <ul>
                 <li>Every included work has metadata and a local extracted full text; matching line numbers and text SHA-256 values are retained in the JSON pathway.</li>
                 <li>Passage classifications are bound to the reviewed text hash. Changed text requires renewed classification; new unclassified matches fail the check.</li>
-                <li>Primary publication metadata was compared with <a href="/reports/publication_intake_2026-11-05.json">the public discovery snapshot</a> observed 2026-11-05T01:17:28Z; the JSON records metadata-match status per work.</li>
+                <li>Primary publication metadata was compared with <a href="/reports/public_projection_publication_intake_2026-11-05.json">the public discovery snapshot</a> observed 2026-11-05T01:17:28Z; the JSON records metadata-match status per work.</li>
                 <li>Located passages are distinct from sections read, complete texts read, and independently checked citation sources. This index makes no full-reading or independent citation-validation claim.</li>
                 <li>The search is limited to available local extractions. The <a href="/data/coverage-exceptions.json">source coverage queue</a> identifies missing full text; image-only, OCR, spelling and edition differences can conceal further references.</li>
                 <li>Rebuild with <code>uv run python code/orchestrators/build_blake_index.py</code>; verify with the same command plus <code>--check</code>. The ordinary regeneration and validation plan includes this check.</li>

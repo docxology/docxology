@@ -142,6 +142,7 @@ def build_payload(root: Path = REPO_ROOT) -> dict:
             "primary_metadata": review["metadata_source"],
         },
         "primary_metadata_sha256": digest(discovery_path),
+        "source_report_projection": review.get("source_report_projection"),
         "metadata_observed_at": discovery["generated_at"],
         "method": "Case-insensitive whole-word Blake search of every local papers/*/full_text.md; hash-bound passage classifications. Title matching is a separate subset.",
         "limits": "Available text and classified passages do not establish full-paper reading or independent verification of cited editions, quotations, historical claims, or scientific findings. Missing or imperfect extractions may hide further references.",

@@ -44,6 +44,7 @@ TARGETS = [
     REPO_ROOT / "media.html",
     REPO_ROOT / "search.html",
     REPO_ROOT / "videos.html",
+    REPO_ROOT / "start-here.html",
 ]
 
 MONTH_NAMES = (
@@ -131,6 +132,11 @@ def render(path: Path) -> str:
             "Highlights from the catalog across 8 research domains",
             text,
         )
+    elif path.name == "start-here.html":
+        text = re.sub(r"a unified bibliography of \d+ works", f"a unified bibliography of {works} works", text)
+        text = re.sub(r"\d+ folders under", f"{folders} folders under", text)
+        text = re.sub(r"\d+ with full-text extraction", f"{full_text} with full-text extraction", text)
+        text = re.sub(r"[\d,]+ extracted images", f"{images:,} extracted images", text)
     elif path.name == "publications.html":
         text = re.sub(
             r"<p class=\"sub\">\d+ works spanning",

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-16 — Metadata audit and public-link hardening
+
+- Replace emoji regular-expression ranges with Unicode codepoint checks and boundary tests.
+- Make profile README links absolute, align security-policy contacts, keep pre-deploy verification status separate from historical live reports, and order RSS entries by their source dates.
+- Project unavailable owned-repository links out of curated sources and public report copies; retain byte-bound historical observations and literal PDF extractions. Verified GitHub redirects remain public only while their numeric repository IDs remain in the public inventory.
+- Synchronize start-page counts from the canonical snapshot. Preserve document-verified COGSEC editor credits and the symposium's reviewed grouped byline.
+- See [the Wave 2A review](reports/wave2a_hardening_2026-11-16.md) for evidence boundaries and candidate validation limits.
+
 ## 2026-11-06 — Exact publication editions, literal credits and software archives
 
 The [publication and software refresh](reports/publication_software_refresh_2026-11-06.md) records complete discovery, selected documents, preserved history and actual verification.

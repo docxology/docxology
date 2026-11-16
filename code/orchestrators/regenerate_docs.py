@@ -1493,6 +1493,10 @@ def render_document(
         content = generate_skill(folder, meta, all_folders, bib_entry)
     else:
         raise ValueError(f"unsupported generated document: {filename}")
+    root = paths.papers_dir.parent
+    if (root / "data/github-repositories.json").is_file():
+        from docxology_tools.public_repository_links import project_public_links, public_repositories
+        content = project_public_links(content, public_repositories(root))
     return wrap_generated_document(filename, content)
 
 

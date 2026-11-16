@@ -8,7 +8,7 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-11-08; only unfinished work and recurring checks remain.
+- Last reviewed: 2026-11-16; only unfinished work and recurring checks remain.
   Completed implementation and source-review history lives in CHANGELOG.md and
   the linked dated reports. Effort estimates below are separate from priority.
 
@@ -37,6 +37,7 @@ Recurring checks below are operating obligations, not unfinished feature work.
 - Deliverable: run `regenerate_all.py --validate`, then verify the Pages artifact and live deployment before each release; a named human reviewer inspects the post-deploy desktop and mobile visual-QA captures and records the review (`visual_qa.py --approve-existing --reviewed-by <reviewer>`, see [accessibility-qa.md](docs/operations/accessibility-qa.md))
 - Acceptance: source hashes, generator metadata, Pages file/byte counts, omitted-image policy, deployment metadata, fresh revision-bound browser/link/source/live evidence, and a deployment-SHA attestation that includes the human visual-review record are present; a second offline regeneration pass produces no content changes
 - Dependencies: `regenerate_all.py`, Pages workflow, live verification
+- Wave 2A starts from `d9a4d674e3` (2026-11-16). Candidate validation and PR review do not establish deployment readiness; repeat the ordered release gate after integration.
 - On 2026-11-08, [`84f2a348`](https://github.com/docxology/docxology/commit/84f2a348358d92d03a2c7fbb34590593f4d3374f)
   passed the full release gate after human review of all 26 screenshots.
   The maintainer retains its revision-bound attestation and source receipts.

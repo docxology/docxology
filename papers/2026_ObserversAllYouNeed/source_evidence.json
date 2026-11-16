@@ -13,7 +13,7 @@
     "text_sha256": "0e588a7706b155ae3e7cd4d503c10dcd8be9f81290a51143c01f56d0efd2945c",
     "extractor": "pypdf",
     "extractor_version": "6.21.4",
-    "source_report": "reports/publication_intake_2026-11-05.json",
+    "source_report": "https://github.com/docxology/docxology/blob/d9a4d674e3efa1a8789e259e9172a30f1ee62b7f/reports/publication_intake_2026-11-05.json",
     "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
     "review_scope": "Streamed size/checksum and all-page extraction; no independent mathematical, scientific or visual verification."
   },

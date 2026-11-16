@@ -104,3 +104,18 @@ def test_missing_site_updates_still_emits_works(tmp_path: Path):
     xml = render(datetime(2026, 8, 13, tzinfo=timezone.utc), repo_root=tmp_path)
     assert "work-Alpha2026" in xml
     assert STABLE_GUIDS[0] not in xml
+
+
+def test_feed_orders_actual_dates_and_preserves_unknown_precision(tmp_path):
+    import xml.etree.ElementTree as ET
+    from email.utils import parsedate_to_datetime
+    _write_feed_inputs(tmp_path, site_updates=SITE_UPDATES)
+    xml = render(datetime(2026, 8, 13, tzinfo=timezone.utc), repo_root=tmp_path)
+    items = ET.fromstring(xml).findall("channel/item")
+    dates = [parsedate_to_datetime(node.findtext("pubDate")) for node in items if node.findtext("pubDate")]
+    assert dates == sorted(dates, reverse=True)
+    assert items[-1].findtext("guid") == "work-Undated"
+    assert items[-1].find("pubDate") is None
+    alpha = next(node for node in items if node.findtext("guid") == "work-Alpha2026")
+    assert parsedate_to_datetime(alpha.findtext("pubDate")) == datetime(2026, 1, 1, tzinfo=timezone.utc)
+    assert render(datetime(2026, 8, 13, tzinfo=timezone.utc), repo_root=tmp_path) == xml

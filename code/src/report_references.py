@@ -75,6 +75,7 @@ _GIT_GREP_EXCLUDES = (
     ":(exclude)data/pages-artifact-manifest.json",
     ":(exclude)data/generated-manifest.json",
     ":(exclude)data/report-retention.json",
+    ":(exclude)data/public-link-evidence.json",
 )
 
 _WORKING_TREE_SUFFIXES = {".html", ".json", ".md", ".xml", ".txt"}
@@ -83,6 +84,7 @@ _WORKING_TREE_SKIP_FILES = {
     "data/pages-artifact-manifest.json",
     "data/generated-manifest.json",
     "data/report-retention.json",
+    "data/public-link-evidence.json",
 }
 
 

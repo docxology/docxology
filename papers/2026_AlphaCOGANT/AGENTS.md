@@ -50,4 +50,4 @@
 ### Related Software
 - https://github.com/docxology/alphacogant
 - https://github.com/ActiveInferenceInstitute/COGANT
-- https://github.com/docxology/GeneralizedNotationNotationGNN
+- [non-public repository]

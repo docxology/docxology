@@ -140,7 +140,7 @@ def _github_repo(identifiers: dict) -> str:
     gh = identifiers.get("github")
     if isinstance(gh, list):
         gh = gh[0] if gh else ""
-    return str(gh or "")
+    return "" if gh == "[non-public repository]" else str(gh or "")
 
 
 def platform_link(status_label: str, work: dict) -> str:

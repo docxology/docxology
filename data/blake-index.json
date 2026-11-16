@@ -5,9 +5,13 @@
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "works": "data/works.json",
     "reviews": "data/blake-review.json",
-    "primary_metadata": "reports/publication_intake_2026-11-05.json"
+    "primary_metadata": "reports/public_projection_publication_intake_2026-11-05.json"
   },
-  "primary_metadata_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+  "primary_metadata_sha256": "c8f6f253a3311620a7080a0ffa77fb3088ccfbaa77c4a32e3833d14f18b6dd3c",
+  "source_report_projection": {
+    "policy": "public-owned-repositories-v1",
+    "original_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
+  },
   "metadata_observed_at": "2026-11-05T01:17:28Z",
   "method": "Case-insensitive whole-word Blake search of every local papers/*/full_text.md; hash-bound passage classifications. Title matching is a separate subset.",
   "limits": "Available text and classified passages do not establish full-paper reading or independent verification of cited editions, quotations, historical claims, or scientific findings. Missing or imperfect extractions may hide further references.",

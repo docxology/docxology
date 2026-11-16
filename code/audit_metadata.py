@@ -29,17 +29,21 @@ VALID_TYPES = frozenset(
 ISO_DT_RE = re.compile(
     r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$"
 )
-EMOJI_RX = re.compile(
-    "[\U0001f600-\U0001f64f"  # emoticons
-    "\U0001f300-\U0001f5ff"  # symbols & pictographs
-    "\U0001f680-\U0001f6ff"  # transport & map
-    "\U0001f1e0-\U0001f1ff"  # flags
-    "\U00002702-\U000027b0"  # dingbats
-    "\U000024c2"  # circled M
-    "\U0001f170-\U0001f1df"  # enclosed alphanumeric supplement (before flags)
-    "\U0001f200-\U0001f251"  # enclosed ideographic supplement
-    "]+"
+EMOJI_RANGES = (
+    (0x1F600, 0x1F64F),
+    (0x1F300, 0x1F5FF),
+    (0x1F680, 0x1F6FF),
+    (0x1F1E0, 0x1F1FF),
+    (0x2702, 0x27B0),
+    (0x24C2, 0x24C2),
+    (0x1F170, 0x1F1DF),
+    (0x1F200, 0x1F251),
 )
+
+
+def contains_emoji(text: str) -> bool:
+    """Check Unicode scalar values without regular-expression range parsing."""
+    return any(low <= ord(ch) <= high for ch in text for low, high in EMOJI_RANGES)
 
 
 def is_valid_iso(s):
@@ -50,13 +54,13 @@ def is_valid_iso(s):
         # Try parsing with various ISO formats
         datetime.fromisoformat(s.replace("Z", "+00:00"))
         return True
-    except ValueError, TypeError:
+    except (ValueError, TypeError):
         return False
 
 
 def has_emoji(s):
     """Check if string contains emoji characters."""
-    return bool(EMOJI_RX.search(s))
+    return contains_emoji(s)
 
 
 def check_paper(folder_name, paper_meta_keys):

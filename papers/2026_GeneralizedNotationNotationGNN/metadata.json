@@ -151,7 +151,12 @@
     "zenodo_record_url": "https://zenodo.org/records/23551166",
     "artifact_doi": "10.5281/zenodo.23551166",
     "citation_doi": "10.5281/zenodo.7803313",
-    "source_report": "reports/paired_publications_2026-10-23.json",
-    "scope": "Current software pointer only; the archived v3.6.0 manuscript, extraction, summaries, and provenance remain that earlier source snapshot."
+    "source_report": "reports/public_projection_paired_publications_2026-10-23.json",
+    "scope": "Current software pointer only; the archived v3.6.0 manuscript, extraction, summaries, and provenance remain that earlier source snapshot.",
+    "source_report_sha256": "344b348b1b41bfa86f97e28f43234c737aeddeb33b6069ea7e20ebc63887993d",
+    "source_report_projection": {
+      "policy": "public-owned-repositories-v1",
+      "original_report_sha256": "cdd139d4fed28440faf83b52cdc65128a1195fc102558ab14332903914f4b89c"
+    }
   }
 }

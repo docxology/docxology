@@ -5648,8 +5648,8 @@
       "title_similarity": 1,
       "status": "verified",
       "source_authority": "zenodo_api_creators",
-      "source": "reports/publication_intake_2026-11-05.json",
-      "source_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+      "source": "reports/public_projection_publication_intake_2026-11-05.json",
+      "source_sha256": "c8f6f253a3311620a7080a0ffa77fb3088ccfbaa77c4a32e3833d14f18b6dd3c",
       "source_record_id": "23900583",
       "registry_baseline": {
         "record_id": "23900583",
@@ -5679,6 +5679,10 @@
         "reviewed_at": "2026-11-05T03:21:46Z",
         "reviewed_by": "Codex docs_review",
         "reason": "The frozen Zenodo API observation title and sole creator match the catalogued work and the deposited PDF title-page byline; no DOI-agency fetch is claimed."
+      },
+      "source_report_projection": {
+        "policy": "public-owned-repositories-v1",
+        "original_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
       }
     },
     "Friedman2026StatesChangeBlakeanFederalism234": {
@@ -5689,8 +5693,8 @@
       "title_similarity": 1,
       "status": "verified",
       "source_authority": "zenodo_api_creators",
-      "source": "reports/publication_intake_2026-11-05.json",
-      "source_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+      "source": "reports/public_projection_publication_intake_2026-11-05.json",
+      "source_sha256": "c8f6f253a3311620a7080a0ffa77fb3088ccfbaa77c4a32e3833d14f18b6dd3c",
       "source_record_id": "23900617",
       "registry_baseline": {
         "record_id": "23900617",
@@ -5720,6 +5724,10 @@
         "reviewed_at": "2026-11-05T03:21:46Z",
         "reviewed_by": "Codex docs_review",
         "reason": "The frozen Zenodo API observation title and sole creator match the catalogued work and the deposited PDF title-page byline; no DOI-agency fetch is claimed."
+      },
+      "source_report_projection": {
+        "policy": "public-owned-repositories-v1",
+        "original_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645"
       }
     },
     "Friedman2026ObserversAreAllYou235": {

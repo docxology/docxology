@@ -5,4 +5,4 @@ Expires: 2027-09-14T23:59:59Z
 Preferred-Languages: en
 Canonical: https://danielarifriedman.com/.well-known/security.txt
 Canonical: https://danielarifriedman.com/security.txt
-Policy: https://github.com/docxology/docxology/issues/new/choose
+Policy: https://github.com/docxology/docxology/security/policy
