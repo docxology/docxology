@@ -1588,12 +1588,12 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-06-29
 
-- Added work **#179 "Mapping William Blake's Works"** (`zenodo.21047573`, `docxology/blake` v0.1.0) via the canonical `sync_paired_publications.py --apply` path, plus benign `checked_at` metadata bumps on existing rows. Full local regenerate (works.json, exports, publications, work/domain/paper pages, resume, claims, catalog, search index, feed, sitemap, counts) and live-site snapshot refresh; `validate_repo` + pytest green. Also fixed 32 malformed bare-domain markdown links in [the archived publishing-status megaindex](https://github.com/docxology/docxology/blob/d9a4d674e3efa1a8789e259e9172a30f1ee62b7f/reports/publishing_status_megaindex.md).
+- Added work **#179 "Mapping William Blake's Works"** (`zenodo.21047573`, `docxology/blake` v0.1.0) via the canonical `sync_paired_publications.py --apply` path, plus benign `checked_at` metadata bumps on existing rows. Full local regenerate (works.json, exports, publications, work/domain/paper pages, resume, claims, catalog, search index, feed, sitemap, counts) and live-site snapshot refresh; `validate_repo` + pytest green. Also fixed 32 malformed bare-domain markdown links in the archived publishing-status megaindex.
 
 ## 2026-06-27
 
 - Added work **#178 "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference"** (`zenodo.20976824`, `docxology/alphacogant` v1.0.1) with paper folder, PDF, and work page; updated "A template/ approach to Reproducible Generative Research" to Zenodo version v1.0.9. Regenerated the dependent layer and refreshed the live-site verification snapshot.
-- `build_work_pages.py` now renders a **Platform availability card** on every canonical work page (Zenodo/GitHub/arXiv/OSF/HuggingFace/Software-Heritage/PyPI/site), driven by a new `data/publishing-status.json`; added [the archived publishing-status megaindex](https://github.com/docxology/docxology/blob/d9a4d674e3efa1a8789e259e9172a30f1ee62b7f/reports/publishing_status_megaindex.md), a publishing-status mega-index across 272 items (works + software) with per-platform coverage and gaps. Began archiving origins to Software Heritage via anonymous Save Code Now.
+- `build_work_pages.py` now renders a **Platform availability card** on every canonical work page (Zenodo/GitHub/arXiv/OSF/HuggingFace/Software-Heritage/PyPI/site), driven by a new `data/publishing-status.json`; added the archived publishing-status megaindex, a publishing-status mega-index across 272 items (works + software) with per-platform coverage and gaps. Began archiving origins to Software Heritage via anonymous Save Code Now.
 
 ## 2026-06-26
 
