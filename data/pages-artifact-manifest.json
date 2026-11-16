@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-16T05:25:51Z",
+  "generated_at": "2026-11-16T05:39:00Z",
   "source_commit_at_generation": "2ca12af615de8701c37597ad111c20fefe331875",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
@@ -31535,11 +31535,11 @@
       "role": "public control metadata"
     },
     {
-      "path": "reports/public_source_review_2026-11-08.json",
+      "path": "reports/public_source_review_2026-11-16.json",
       "role": "public control metadata"
     },
     {
-      "path": "reports/public_source_review_2026-11-08.md",
+      "path": "reports/public_source_review_2026-11-16.md",
       "role": "public control metadata"
     }
   ],
@@ -31610,8 +31610,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 796,
-    "bytes": 255426329,
+    "count": 798,
+    "bytes": 256557641,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",

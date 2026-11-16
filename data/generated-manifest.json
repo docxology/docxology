@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T03:44:58Z",
+  "generated_at": "2026-11-16T05:38:45Z",
   "artifacts": [
     {
       "name": "Research exploration tools",
@@ -801,8 +801,8 @@
     {
       "name": "Public-source review record",
       "outputs": [
-        "reports/public_source_review_2026-11-08.json",
-        "reports/public_source_review_2026-11-08.md"
+        "reports/public_source_review_2026-11-16.json",
+        "reports/public_source_review_2026-11-16.md"
       ],
       "sources": [
         "reports/public_source_snapshot_*.json",
