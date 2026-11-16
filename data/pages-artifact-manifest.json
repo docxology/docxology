@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-16T20:22:21Z",
-  "source_commit_at_generation": "e9fbe5fdb44f706765ae52dfd28328129d261bf9",
+  "generated_at": "2026-11-16T20:44:52Z",
+  "source_commit_at_generation": "a8be77432112703448cad5baaa8a083f19094105",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 965966251,
+    "source_bytes": 965967118,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 6299,
-    "artifact_bytes": 967083348
+    "artifact_bytes": 967084215
   },
   "included_files": [
     {
@@ -81,8 +81,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 163778,
-      "sha256": "15cec177878a3bd3ed0dc6b559ba671497d08d3b657548e00f033f74d782d09e"
+      "bytes": 164032,
+      "sha256": "6926b07f20e48b03ccc5ad00ed74bea4f0f736426b06217a3b0de978a2913c49"
     },
     {
       "path": "CITATION.cff",
@@ -10351,8 +10351,8 @@
     },
     {
       "path": "code/orchestrators/build_pages_artifact.py",
-      "bytes": 46814,
-      "sha256": "729a09bb3f39b90a5ea182821011fc5adf2111e01c135c2767fccec1cc813f48"
+      "bytes": 46852,
+      "sha256": "d8c54563be37788c4c284726b43e152ab17109223efcdc98bbe549b32e2066d4"
     },
     {
       "path": "code/orchestrators/build_paper_pages.py",
@@ -11421,8 +11421,8 @@
     },
     {
       "path": "code/tests/test_pages_artifact.py",
-      "bytes": 47647,
-      "sha256": "2accd82f28b883d8202982aa171b66f5eea55c0999e20b23c9f2f28fad6d3e71"
+      "bytes": 47968,
+      "sha256": "e2091fed1c9ee0ad7598a91163bd38602d01a9f7faec9468cd8350fa5306c665"
     },
     {
       "path": "code/tests/test_pages_workflow.py",
@@ -24281,8 +24281,8 @@
     },
     {
       "path": "updates.html",
-      "bytes": 249693,
-      "sha256": "2e5c0e5d91642fb13bd10c39d07a1f47351beffae5e5edb6952517e08bb6045a"
+      "bytes": 249947,
+      "sha256": "7b780cba5afbf4d66996073e9fbb09184a869ff69df2246b3cabf8cf926d24fe"
     },
     {
       "path": "uv.lock",
